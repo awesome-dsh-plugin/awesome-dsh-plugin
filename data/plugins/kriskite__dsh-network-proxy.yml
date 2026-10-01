@@ -1,0 +1,6 @@
+url: https://github.com/kriskite/dsh-network-proxy
+name: kriskite/dsh-network-proxy
+category: dev
+description:
+  en: 'Network proxy manager for DeepSeek Harness: switch between system, manual, and direct modes from a live settings UI, applied instantly.'
+  zh: 'DeepSeek Harness 网络代理管理器：在设置界面即时切换跟随系统 / 手动 / 直连三种模式，立即生效。'

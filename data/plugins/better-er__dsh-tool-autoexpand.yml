@@ -1,0 +1,6 @@
+url: https://github.com/better-er/dsh-tool-autoexpand
+name: better-er/dsh-tool-autoexpand
+category: ui
+description:
+  en: 'Auto-expands newly arrived tool-call cards in the DSH Web UI, with a sidebar toggle cycling no-op/expand/collapse and the state persisted to localStorage.'
+  zh: '自动展开 DSH 界面里新到达的工具调用卡片，侧栏开关在不干预/展开/折叠三态间循环，档位持久化到 localStorage。'

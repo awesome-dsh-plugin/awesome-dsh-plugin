@@ -1,0 +1,6 @@
+url: https://github.com/AtinyFurina/dsh-memory-triage
+name: AtinyFurina/dsh-memory-triage
+category: memory
+description:
+  en: 'Memory triage for DeepSeek Harness: at the end of each turn it decides which entries to keep and which to archive, routes project-specific ones into a project bucket while global ones stay in the main store, merges near-duplicate entries, and falls back to an LLM when the rules are unsure — automatic actions are recoverable archives only, never deletions.'
+  zh: 'DeepSeek Harness 记忆分诊插件：每轮对话结束自动判断条目保留或归档，把项目条目迁入 project 桶、全局条目留在总体记忆，合并近义重复条目，规则拿不准时用 LLM 兜底；自动动作只做可恢复的归档，永不直接删除。'

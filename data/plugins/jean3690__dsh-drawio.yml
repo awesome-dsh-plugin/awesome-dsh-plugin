@@ -1,0 +1,6 @@
+url: https://github.com/jean3690/dsh-drawio
+name: jean3690/dsh-drawio
+category: tools
+description:
+  en: 'AI-driven drawio: four agent tools (validate, render to SVG/PNG, edit, template) plus a sidebar live board — zero-dependency mxfile-to-SVG preview, embedded diagrams.net editor with save bridge, and auto-open whenever the agent draws.'
+  zh: 'AI 驱动 drawio：四个画图工具（校验 / 渲染 SVG/PNG / 编辑 / 模板）+ 侧栏实时画板——零依赖 mxfile→SVG 预览、内嵌 diagrams.net 官方编辑器、AI 画图时自动弹出跟随。'

@@ -1,0 +1,6 @@
+url: https://github.com/LiZhenNet/dsh-antigravity
+name: LiZhenNet/dsh-antigravity
+category: model
+description:
+  en: Google Antigravity / Cloud Code Assist model provider with quota management and model selector.
+  zh: Google Antigravity / Cloud Code Assist 模型提供商插件，支持配额查看与模型选择管理。

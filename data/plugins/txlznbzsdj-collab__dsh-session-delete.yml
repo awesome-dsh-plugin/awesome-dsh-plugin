@@ -1,0 +1,6 @@
+url: https://github.com/txlznbzsdj-collab/dsh-session-delete
+name: txlznbzsdj-collab/dsh-session-delete
+category: session
+description:
+  en: Adds a "Delete" item to the sidebar session menu with a confirmation dialog, then hard-deletes the session.
+  zh: 在侧边栏会话菜单添加「删除」项，经二次确认后硬删除该会话。

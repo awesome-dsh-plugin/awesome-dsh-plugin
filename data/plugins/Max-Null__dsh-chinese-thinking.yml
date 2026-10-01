@@ -1,0 +1,6 @@
+url: https://github.com/Max-Null/dsh-chinese-thinking
+name: Max-Null/dsh-chinese-thinking
+category: session
+description:
+  en: Injects one fixed system-prompt section so the agent thinks and replies in Chinese, regardless of the user's language.
+  zh: 注入一条固定 system-prompt 段落，让 Agent 无论用户使用什么语言都始终用中文思考和回复。

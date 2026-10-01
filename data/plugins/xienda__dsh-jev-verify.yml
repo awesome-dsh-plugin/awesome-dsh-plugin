@@ -1,0 +1,6 @@
+url: https://github.com/xienda/dsh-jev-verify
+name: xienda/dsh-jev-verify
+category: tools
+description:
+  en: "TypeSafe Jev (System One decision model) for DeepSeek Harness, end to end: jev_decision (choice/score/noul, parallel, typed answers + confidence), a Settings > Plugins card for the API key and switches, inline tool views showing every decision in the conversation (answer, confidence, latency, cost), an auto-guard (deterministic + Jev risk/loop checks), a local /jev dashboard, and an online verification benchmark (96.3% on 27 labeled questions, median ~283 ms on jev-latest, 2026-09-21). Honest by design: real API only, no mock fallback."
+  zh: "为 DeepSeek Harness 端到端接入 TypeSafe Jev（System One 决策模型）：jev_decision（choice/score/noul 并行判定，类型化答案+置信度）、「设置 → 插件」配置卡片（API Key 与开关免命令行）、对话内联工具视图（每次判定直接显示答案、置信度、延迟与成本）、自动护栏（确定性规则 + Jev 风险/循环检测，失败时回退权限确认）、本地 /jev 仪表盘与在线验证基准（2026-09-21 实测 27 题准确率 96.3%、中位延迟约 283 ms）。诚实设计：只走真实 API，无 Mock 回退。"

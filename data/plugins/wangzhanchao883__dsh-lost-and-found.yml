@@ -1,0 +1,6 @@
+url: https://github.com/wangzhanchao883/dsh-lost-and-found
+name: wangzhanchao883/dsh-lost-and-found
+category: tools
+description:
+  en: 'Local file recall: indexes the folders you choose into one local SQLite database, so ''where did I put that file?'' is one query instead of a disk walk. Caches, VCS and program folders are pruned per directory; each folder keeps its own incremental anchor, so a folder added later is backfilled in full. Read-only: it never modifies, moves or deletes your files.'
+  zh: '本地文件记忆索引：把指定的文件夹记进本机一个 SQLite 库，忘了东西放哪问一句就能找回，不必翻硬盘；缓存、版本库与程序目录整棵跳过。每个目录各有独立增量锚点，后加入的目录首扫回填全部历史。只读，绝不修改、移动或删除你的文件。'

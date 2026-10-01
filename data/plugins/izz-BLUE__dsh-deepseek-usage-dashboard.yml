@@ -1,0 +1,6 @@
+url: https://github.com/izz-BLUE/dsh-deepseek-usage-dashboard
+name: izz-BLUE/dsh-deepseek-usage-dashboard
+category: usage
+description:
+  en: 'DeepSeek API usage dashboard for DSH Web: daily cache-hit/miss and output token statistics from session logs, per-model cost estimates, account balance, 7-day trends, and a composer usage summary.'
+  zh: DSH Web 的 DeepSeek API 用量仪表盘：基于会话日志统计每日缓存命中/未命中输入与输出 Token，并展示分模型费用估算、账户余额、7 日趋势和 composer 用量摘要。

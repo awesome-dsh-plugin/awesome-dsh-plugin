@@ -1,0 +1,6 @@
+url: https://github.com/Areium/dsh-fail-logger
+name: Areium/dsh-fail-logger
+category: dev
+description:
+  en: 'Auto-log failed tool calls across native tools, PTC run_code, and inline invocations: dedup and count root causes into a skill so repeated mistakes fade.'
+  zh: 全模式调用工具失败自动实录：把原生工具 / PTC run_code / 代码内嵌工具调用的失败错因去重计数后写入 skill，越用越少错。

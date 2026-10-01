@@ -1,0 +1,7 @@
+url: https://github.com/baisama-cloud/dsh-session-mover
+name: baisama-cloud/dsh-session-mover
+category: session
+tarball: https://github.com/baisama-cloud/dsh-session-mover/releases/download/v0.1.0/dsh-session-mover-0.1.0.tgz
+description:
+  en: "Move a session to another workspace by dragging it onto the target workspace header in the sidebar: the session is cloned with full history into the target workspace and the original is archived."
+  zh: "在侧边栏把会话直接拖到其他工作区的标题行即可移动：目标工作区生成携带完整历史的新会话，原会话归档。"

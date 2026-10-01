@@ -1,0 +1,6 @@
+url: https://github.com/kakajun/dsh-web-recorder
+name: kakajun/dsh-web-recorder
+category: browser
+description:
+  en: Records real clicks, inputs, navigation and network traffic in a user-guided browser session for DSH, then generates a Markdown timeline report (report.md + events.jsonl) to build API-level skills.
+  zh: 网页操作录制器：录制用户引导会话中的真实点击、输入、导航与网络请求，生成 Markdown 操作时间线报告（report.md + events.jsonl），用于沉淀接口级 skill。

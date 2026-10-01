@@ -1,0 +1,6 @@
+url: https://github.com/Jumqyc/dsh-wsl-gpufix
+name: Jumqyc/dsh-wsl-gpufix
+category: wsl
+description:
+  en: 'Adds /dev/dxg and /proc read-write grants to the DSH Landlock sandbox on WSL2, so CUDA is available inside a confined agent bash session.'
+  zh: '为 WSL2 上的 DSH Landlock 沙箱追加 /dev/dxg 与 /proc 的读写授权，使受限的 agent bash 会话中也能使用 CUDA。'

@@ -1,0 +1,6 @@
+url: https://github.com/delef/dsh-free-web-search
+name: delef/dsh-free-web-search
+category: browser
+description:
+  en: Free web search with 10 engines (Bing/DuckDuckGo/SearXNG/AnySearch free + Exa/Tavily/Keenable/Perplexity/DeepSeek paid), automatic fallback chain, time-filtered advanced search, platform search (GitHub/Reddit), web page fetching, LRU caching, and a settings UI. No API keys required for basic use.
+  zh: 免费网页搜索，支持 10 个引擎（Bing/DuckDuckGo/SearXNG/AnySearch 免费，Exa/Tavily/Keenable/Perplexity/DeepSeek 付费）、自动回退、按时间筛选的高级搜索、平台搜索（GitHub/Reddit）、网页内容抓取、LRU 缓存和设置界面。基本使用无需 API 密钥。

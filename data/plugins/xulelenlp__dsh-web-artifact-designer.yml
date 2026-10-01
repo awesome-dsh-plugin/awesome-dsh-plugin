@@ -1,0 +1,6 @@
+url: https://github.com/xulelenlp/dsh-web-artifact-designer
+name: xulelenlp/dsh-web-artifact-designer
+category: skill
+description:
+  en: 'Design-artifact skill adapted from Anthropic canvas-design / web-artifacts-builder: turns a design brief into a self-contained HTML/SVG artifact (posters, infographics, landing pages, charts, component mockups) with a pre-delivery quality checklist and an anti-AI-look pattern list.'
+  zh: '面向 DSH 的设计稿生成 skill（改编自 Anthropic canvas-design / web-artifacts-builder）：把设计需求做成可直接打开的自包含 HTML/SVG 设计稿（海报、信息图、落地页、图表、组件稿），内置交付前质量清单与「去 AI 味」反模式清单。'

@@ -1,0 +1,6 @@
+url: https://github.com/DZQJOKER/dsh-plugin-local-model
+name: DZQJOKER/dsh-plugin-local-model
+category: model
+description:
+  en: 'Local model plugin for DeepSeek Harness: manage GGUF models in settings, auto-launch llama.cpp on first message, and auto-unload after 5 minutes of idle time to free VRAM.'
+  zh: 'DeepSeek Harness 本地模型插件：在设置里管理 GGUF 模型，首条对话自动拉起 llama.cpp，空闲 5 分钟自动卸载释放显存。'

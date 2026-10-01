@@ -1,0 +1,6 @@
+url: https://github.com/lmmzss-jk/dsh-plugin-balance
+name: lmmzss-jk/dsh-plugin-balance
+category: ui
+description:
+  en: 'Balance and live session usage for the DSH web UI: header balance button (left of the Session log), dropdown with account balance, real-time token breakdown (cache miss/hit, cache write, output), cache hit rate, and official-rate cost estimates with peak/off-peak auto-switch.'
+  zh: 'DSH Web 余额与会话用量插件：头部余额按钮（Session log 左侧），下拉展示账户余额、实时 token 明细（缓存未命中/命中、缓存写入、输出）、缓存命中率，以及按官方峰谷价自动切换的费用估算。'

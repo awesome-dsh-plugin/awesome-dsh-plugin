@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-lan-share
+name: WODE25500/dsh-lan-share
+category: tools
+description:
+  en: "Share the DSH workspace over the local network: phones, tablets and other computers browse, download and upload files via browser with no DSH login. Token gate, path boundary, read-only mode and rate limit. Zero-dependency (node:http)."
+  zh: "通过浏览器把 DSH 工作区分享到局域网：手机、平板、其它电脑可浏览、下载、上传文件，无需 DSH 登录。带令牌门卫、路径边界、只读模式与速率限制，零依赖(node:http)。"

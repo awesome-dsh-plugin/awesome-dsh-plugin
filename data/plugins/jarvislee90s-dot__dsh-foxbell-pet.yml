@@ -1,0 +1,17 @@
+url: https://github.com/jarvislee90s-dot/dsh-foxbell-pet
+name: jarvislee90s-dot/dsh-foxbell-pet
+category: fun
+tarball: https://github.com/jarvislee90s-dot/dsh-foxbell-pet/releases/latest/download/dsh-foxbell-pet-2.0.0.tgz
+description:
+  zh: >-
+    多宠物桌宠系统：四盏状态灯实时监控所有活跃会话（红待审批/黄运行/绿完成未读/深红错误），点卡片直达对应会话；
+    四组状态语音随事件播报，字幕与音频时长对齐；外部宠物四来源导入（本地文件夹/zip/Codex 目录/Petdex 在线仓库），
+    卡片式热切换即时生效，激活守卫自动校验图集与语音完整性；五场景动作绑定、拖拽物理、三档缩放；
+    内置小狐狸 Foxbell 随包自带，装上即用。
+  en: >-
+    Multi-pet desktop companion: four MAM status lights watch every active session
+    (approval / running / done-unread / error) and each card click-through to its conversation;
+    four voice groups speak on state changes with duration-timed subtitles; import pets from
+    four sources (folder / zip / Codex dir / Petdex registry) with card-style hot-swap and an
+    integrity guard; five action bindings, drag physics, three scales. The built-in fox Foxbell
+    ships in the package — install and go.

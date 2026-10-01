@@ -1,0 +1,6 @@
+url: https://github.com/mienfong/dsh-session-mgr
+name: mienfong/dsh-session-mgr
+category: session
+description:
+  en: 'Move, archive, restore, portable backup/export and import sessions across workspaces in the DeepSeek Harness web UI.'
+  zh: '在 DeepSeek Harness 网页界面中跨工作区移动、归档、恢复、可携式备份/导出与导入会话。'

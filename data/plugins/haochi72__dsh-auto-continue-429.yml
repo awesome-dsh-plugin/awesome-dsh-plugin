@@ -1,0 +1,6 @@
+url: https://github.com/haochi72/dsh-auto-continue-429
+name: haochi72/dsh-auto-continue-429
+category: workflow
+description:
+  en: Automatically sends "continue" to recover from RATE_LIMIT (429) and QUOTA (insufficient_quota) errors. Per-session consecutive-failure counter (default 20, configurable 1-100), a toolbar on/off switch, and a settings-page card.
+  zh: 遇到 RATE_LIMIT（429）或配额耗尽（insufficient_quota）错误时自动发送 continue 恢复对话。每会话独立计数连续失败次数（默认 20，可设 1-100），带工具栏开关条与设置页配置卡片。

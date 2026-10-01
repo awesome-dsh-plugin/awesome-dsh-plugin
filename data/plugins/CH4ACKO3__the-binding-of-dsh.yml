@@ -1,0 +1,6 @@
+url: https://github.com/CH4ACKO3/the-binding-of-dsh
+name: CH4ACKO3/the-binding-of-dsh
+category: dev
+description:
+  en: 'Bidirectional RPC between DSH Host and Client through the native Connection and Typert Gateway, with targeted peer calls, cancellation, and connection lifecycle handling.'
+  zh: '通过原生 Connection 与 Typert Gateway 在 DSH Host 和 Client 之间提供双向 RPC，支持目标 Peer 调用、取消与连接生命周期处理。'

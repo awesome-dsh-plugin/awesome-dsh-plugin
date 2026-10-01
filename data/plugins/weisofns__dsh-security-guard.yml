@@ -1,0 +1,6 @@
+url: https://github.com/weisofns/dsh-security-guard
+name: weisofns/dsh-security-guard
+category: security
+description:
+  en: 'DSH plugin security guard: 28-rule static scanner, risk scoring, whitelist/blacklist policy, local web dashboard and in-DSH risk popups.'
+  zh: 'DSH 插件安全卫士：28 条规则静态扫描、风险评分、白名单/黑名单、本地 Web 仪表盘与 DSH 内风险弹窗。'

@@ -1,0 +1,7 @@
+url: https://github.com/F1star/dsh-research
+name: F1star/dsh-research
+category: tools
+description:
+  en: 'Adds local PDF reading, a durable paper library, traceable evidence records, and cross-paper comparison and synthesis tools.'
+  zh: '提供本地 PDF 阅读、持久论文库、可追溯证据记录，以及跨论文比较与综合工具。'
+tarball: https://github.com/F1star/dsh-research/releases/latest/download/dsh-research.tgz

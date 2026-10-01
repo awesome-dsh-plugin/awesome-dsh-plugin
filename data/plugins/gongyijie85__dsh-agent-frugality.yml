@@ -1,0 +1,6 @@
+url: https://github.com/gongyijie85/dsh-agent-frugality
+name: gongyijie85/dsh-agent-frugality
+category: tools
+description:
+  en: 'Multi-agent frugality defense plugin: read-ledger dedup metrics, compaction-immune rules, completion gate, cheap-model review lane.'
+  zh: '多智能体防内耗防御插件：读取台账去重度量、免疫压缩规则区、完成机械门禁、低成本审查 lane。'

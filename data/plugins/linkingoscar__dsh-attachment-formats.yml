@@ -1,0 +1,6 @@
+url: https://github.com/linkingoscar/dsh-attachment-formats
+name: linkingoscar/dsh-attachment-formats
+category: docs
+description:
+  en: DeepSeek Harness Web plugin — PDF text-layer and scanned-PDF OCR, Office docx/xlsx/pptx to Markdown, TIFF/epub and long-document index cards.
+  zh: DeepSeek Harness Web 插件——PDF 文字层与扫描件 OCR、Office 文档转 Markdown、TIFF/epub 与长文档索引卡。

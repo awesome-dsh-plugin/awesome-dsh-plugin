@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-live-canvas
+name: GooDAnDReaDY/dsh-live-canvas
+category: tools
+description:
+  en: "Renders HTML, React (JSX/TSX), Vue, SVG, Mermaid and Markdown written by the agent in an isolated iframe sandbox with SSE hot-reload, and adds a DOM click inspector, side-by-side visual diff, a responsive device matrix and one-click Vite ZIP export."
+  zh: "在隔离的 iframe 沙箱中实时渲染 Agent 生成的 HTML、React (JSX/TSX)、Vue、SVG、Mermaid 和 Markdown，支持 SSE 热重载，并提供 DOM 点击检查器、并排视觉对比、响应式设备矩阵和一键 Vite ZIP 导出。"

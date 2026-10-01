@@ -1,0 +1,6 @@
+url: https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/kit-settings
+name: hyzyn/dsh-plugin-kit#kit-settings
+category: ui
+description:
+  en: 'Host page for kit plugin configuration in the DSH Web GUI: registers a "Plugin configuration" section in Settings — peer to the built-in General section — through the official settings.section slot and declares a settings.kit.item child slot, which dsh-plugin-kit plugins render their own config cards into. Installing it alone shows an empty page; cards appear as slot-registering kit plugins are installed.'
+  zh: 'DSH Web GUI 中 kit 插件配置的宿主页：经官方 settings.section 扩展点在「设置」里注册一行与「通用设置」平级的「插件配置」页，并声明子 slot「settings.kit.item」，供 dsh-plugin-kit 各插件把自己的配置卡片渲染到该页。只装本包时该页显示「暂无可用配置项」，卡片随注册该 slot 的 kit 插件出现。'

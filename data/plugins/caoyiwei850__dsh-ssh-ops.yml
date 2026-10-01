@@ -1,0 +1,6 @@
+url: https://github.com/caoyiwei850/dsh-ssh-ops
+name: caoyiwei850/dsh-ssh-ops
+category: tools
+description:
+  en: 'SSH ops terminal for DSH Web UI: drive a connected server from the main conversation (ssh_connect/ssh_exec/ssh_read/ssh_write/ssh_disconnect) while keeping an interactive xterm.js terminal on the right.'
+  zh: DSH SSH 运维终端：在主对话中直接指挥已连接的服务器（ssh_connect/ssh_exec/ssh_read/ssh_write/ssh_disconnect），右侧保留可交互的 xterm.js 终端。

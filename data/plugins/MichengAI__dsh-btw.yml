@@ -1,0 +1,6 @@
+url: https://github.com/MichengAI/dsh-btw
+name: MichengAI/dsh-btw
+category: session
+description:
+  en: 'Adds /btw for one-off, context-aware side questions without tool execution, with independent answer bubbles that can be copied, collapsed, or closed without adding answers to the main conversation.'
+  zh: '提供 /btw 一次性上下文旁问，不执行工具；回答显示在可复制、折叠或关闭的独立气泡中，不写入主对话。'

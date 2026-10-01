@@ -1,0 +1,6 @@
+url: https://github.com/nononononofish/dsh-region
+name: nononononofish/dsh-region
+category: tools
+description:
+  en: Switches DSH's package download source between the npmmirror China mirror and the official npm registry on timeout or failure, with a Web UI to inspect and switch manually.
+  zh: 在下载超时或失败时，于 npmmirror 国内镜像与官方 npm 源之间自动切换下载源，并附带 Web UI 可手动查看与切换。

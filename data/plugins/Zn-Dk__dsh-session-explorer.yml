@@ -1,0 +1,6 @@
+url: https://github.com/Zn-Dk/dsh-session-explorer
+name: Zn-Dk/dsh-session-explorer
+category: session
+description:
+  en: Message-level full-text search across DSH sessions via an FTS5 trigram index (user / assistant / steering / tool with per-kind filters), deduplicated results across fork/continued sessions, read-only context preview with auto-scroll to the focused message, one-click jump to the real session, and incremental/full index rebuild with health check; zh/en i18n follows the Host locale service.
+  zh: DSH 会话消息级全文检索浏览器：FTS5 trigram 索引按消息检索（用户/助手/系统注入/工具四类，可按类型筛选），fork/续接会话结果自动去重，只读上下文预览自动滚动定位焦点消息，一键跳转真实会话；支持增量/全量重建索引与健康检查；界面中英双语跟随 Host locale 服务。

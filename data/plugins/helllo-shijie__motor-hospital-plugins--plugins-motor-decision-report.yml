@@ -1,0 +1,6 @@
+url: https://github.com/helllo-shijie/motor-hospital-plugins/tree/main/plugins/motor-decision-report
+name: helllo-shijie/motor-hospital-plugins#motor-decision-report
+category: tools
+description:
+  en: 'Summarises the case evidence, diagnosis, repair procedure, parts list and cost-option comparison for a motor into a Markdown repair recommendation report with data provenance.'
+  zh: '将案例依据、诊断结论、维修工序、配件清单与方案对比汇总为带数据溯源的 Markdown 维修建议书。'

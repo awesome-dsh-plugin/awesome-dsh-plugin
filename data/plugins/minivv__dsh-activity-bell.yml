@@ -1,0 +1,6 @@
+url: https://github.com/minivv/dsh-activity-bell
+name: minivv/dsh-activity-bell
+category: ui
+description:
+  en: 'Sidebar activity bell: a red badge counts sessions that finished, and clicking it swaps the sidebar list from workspace grouping to a day-grouped recent-activity list with a green dot on completions that have not been opened.'
+  zh: '侧边栏活动铃铛：会话跑完后铃铛显示红色角标，点一下把工作区列表换成按天分组的最近活动列表，尚未打开过的完成项带绿点。'

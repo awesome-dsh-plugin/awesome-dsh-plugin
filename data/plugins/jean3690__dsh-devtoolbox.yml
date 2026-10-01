@@ -1,0 +1,6 @@
+url: https://github.com/jean3690/dsh-devtoolbox
+name: jean3690/dsh-devtoolbox
+category: tools
+description:
+  en: 'Local toolbox for the DSH web GUI: 35 pure-client tools (text, encoding, hashing, extraction, conversion, reference tables) in a sidebar view, plus the /toolbox command and config-driven agent tool exposure.'
+  zh: 'DSH 本地工具箱：侧边栏独立页面内置 35 个纯本地小工具（文本、编码、哈希、提取、转换、速查表），另有 /toolbox 命令与配置驱动的 agent 工具注册。'

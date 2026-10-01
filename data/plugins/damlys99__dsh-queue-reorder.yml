@@ -1,0 +1,6 @@
+url: https://github.com/damlys99/dsh-queue-reorder
+name: damlys99/dsh-queue-reorder
+category: ui
+description:
+  en: 'Reorder the messages queued while a DSH agent is busy, from inside the official queue dock: a drag handle and per-row ↑ / ↓ buttons on the dock''s own rows, applied on the host as one concurrency-checked inbox splice. The dock is decorated rather than replaced, so previews, inline editing, steering, removal and attachments stay as shipped. A move is refused when the queue has changed since the caller last saw it, when the row is not a user prompt (a goal round prompt, for example), or when the queue belongs to a subagent session.'
+  zh: '在官方队列 dock 内直接重排忙碌时排队的消息：每一行带拖拽手柄与上下移动按钮，移动在宿主端以一次带并发校验的 inbox splice 完成。只装饰官方 dock 而不替换它，因此预览、行内编辑、插话、删除与附件保持原样。队列已变化、该行不是用户消息（例如目标轮次提示）、或队列属于子代理会话时，移动会被拒绝。'

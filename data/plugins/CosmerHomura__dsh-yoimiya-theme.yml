@@ -1,0 +1,6 @@
+url: https://github.com/CosmerHomura/dsh-yoimiya-theme
+name: CosmerHomura/dsh-yoimiya-theme
+category: theme
+description:
+  en: 'Genshin Impact Yoimiya theme: two hand-tuned palettes, a procedural fireworks particle layer, and a local music player that reads your own files — songs and covers are never uploaded. Warm syntax colors and a hand-drawn goldfish brand mark; apart from the wallpaper every pixel is CSS gradients and hand-written SVG.'
+  zh: '《原神》宵宫主题：严格核算过对比度的明暗双色板、程序化生成的烟花粒子层，以及一个读取你自己本地文件的播放器——歌曲与封面不上传到任何地方。语法高亮为暖色，标识为自绘金鱼；除壁纸外所有画面都由 CSS 渐变与手写 SVG 生成。'

@@ -1,0 +1,6 @@
+url: https://github.com/toddpan/dsh-xiaozhi
+name: toddpan/dsh-xiaozhi
+category: voice
+description:
+  en: 'Connects the Xiaozhi voice assistant to DSH Web over MCP: DSH is the tool provider, weaving 35 DSH Web endpoints into 16 voice-friendly tools for workspaces, sessions, chat, models, settings and files — outbound WebSocket to the Xiaozhi MCP access point by default (no public IP or port forwarding needed), several devices bound at once, plus a DSH settings page with live status.'
+  zh: '把小智语音助手接入 DSH Web：DSH 作为 MCP 工具提供方，把 35 个 DSH Web 接口封装成 16 个语音友好工具，覆盖工作区、会话、对话、模型、设置与文件；默认出站 WebSocket 连到小智 MCP 接入点（无需公网 IP 和端口转发），可同时绑定多台设备，并自带实时刷新状态的 DSH 设置页。'

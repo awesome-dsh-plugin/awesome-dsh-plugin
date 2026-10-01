@@ -1,0 +1,6 @@
+url: https://github.com/dearbld/dsh-living-memory
+name: dearbld/dsh-living-memory
+category: memory
+description:
+  en: Self-tending living memory in one local SQLite file — a nightly patrol dedupes, merges, decays and cross-links entries on its own, with seven-signal RRF hybrid recall (FTS5 + jieba Chinese-first tokenization, optional vector KNN, graph PPR), a typed knowledge graph, conflict detection instead of silent overwrites, and web telemetry panels.
+  zh: 单文件本地 SQLite 的自整理活记忆——夜巡引擎自动去重、合并、衰减、建链，七信号 RRF 混合检索（FTS5+jieba 中文优先分词、可选向量 KNN、图谱 PPR），带类型知识图谱，冲突检测标记矛盾而非静默覆写，Web 遥测面板。

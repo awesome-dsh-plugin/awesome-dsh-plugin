@@ -1,0 +1,6 @@
+url: https://github.com/Flandern1211/dsh-task-time
+name: Flandern1211/dsh-task-time
+category: notify
+description:
+  en: 'Reminders and task timing for DeepSeek Harness: interval alerts while the model runs and overdue alerts past the planned time, plus a persistent red decision alert when the model needs your input (in-app reminder cards with sound while you are in DSH, system toasts when you are away, configurable or keep-until-dismissed card dwell time, and clicking a card jumps to its session); plan time per session, count model runtime only, and report actual vs. planned when the task ends, with a task board and persistent local records.'
+  zh: DeepSeek Harness 提醒 + 任务计时插件：提醒——按累计运行间隔定时提醒、超过计划用时发超时提醒，模型需要你确定或选择时发红色常驻提醒（人在 DSH 里走界面提醒卡 + 提示音，不在 DSH 里发系统通知；卡片滞留时长可配置、可设为常驻不自动消散，点击卡片可跳转所属会话）；任务计时——为每个会话设置计划用时，仅模型运行时连续计时，任务结束自动统计实际用时与计划的差距，任务面板支持点击跳转会话，本地记录持久化。

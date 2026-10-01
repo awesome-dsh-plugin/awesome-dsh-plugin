@@ -1,0 +1,7 @@
+url: https://github.com/qimen039-code/dsh-consumer-audit
+name: qimen039-code/dsh-consumer-audit
+category: dev
+tarball: https://github.com/qimen039-code/dsh-consumer-audit/releases/latest/download/dsh-consumer-audit.tgz
+description:
+  en: 'Audits a DSH profile for capabilities nothing consumes: inventories the declared composition rows, counts how often each registered tool and skill is actually called in the session logs, separates calls that were made from calls that returned a result, and reports the ones with no observed consumer. Ships a skill that fixes the evidence-chain format for completion claims.'
+  zh: '审计 DSH profile 里没有消费者的能力：清点已声明的组成行，统计每个已注册工具与 skill 在会话日志里真正被调用的次数，把「发起过调用」与「返回了结果」分开，报告没有观察到消费者的那些；并附一份固定「完成声明」证据链格式的 skill。'

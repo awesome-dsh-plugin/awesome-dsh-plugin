@@ -1,0 +1,6 @@
+url: https://github.com/CAI-MH/dsh-steer
+name: CAI-MH/dsh-steer
+category: session
+description:
+  en: 'Inject steering or correction into a running session while the model is thinking, or cancel the current turn, from a floating browser panel.'
+  zh: '在模型思考过程中随时向当前会话注入纠偏/引导信息，或打断当前回合。'

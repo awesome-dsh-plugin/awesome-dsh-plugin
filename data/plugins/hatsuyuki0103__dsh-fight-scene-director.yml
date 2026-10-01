@@ -1,0 +1,6 @@
+url: https://github.com/hatsuyuki0103/dsh-fight-scene-director
+name: hatsuyuki0103/dsh-fight-scene-director
+category: skill
+description:
+  en: Registers the fight-scene-director skill for designing AI-video fight scenes, ported from the Codex skill of the same name. Emits structured Chinese prompts for Seedance 2.0/2.5 and MiniMax H3, plus trajectory-map and initial-position image prompts.
+  zh: 把 fight-scene-director 打戏设计技能注册进 DSH，移植自同名 Codex 技能。输出适配 Seedance 2.0/2.5 与 MiniMax H3 的结构化中文提示词，并支持轨迹图与初始站位图生图提示词。

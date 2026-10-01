@@ -1,0 +1,6 @@
+url: https://github.com/LWJ007/dsh-browser-tabs
+name: LWJ007/dsh-browser-tabs
+category: browser
+description:
+  en: "Type /tabs to pick a browser tab (via chrome-devtools-mcp) and auto-fill its URL into the composer."
+  zh: "输入 /tabs 弹出浏览器标签页选择器，点选后链接自动填入输入框。"

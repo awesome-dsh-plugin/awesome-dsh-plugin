@@ -1,0 +1,6 @@
+url: https://github.com/maxmilian/dsh-grafana-query
+name: maxmilian/dsh-grafana-query
+category: tools
+description:
+  en: 'Read-only Grafana tools that query metrics through the data source proxy: instance health, data source listing, instant and range PromQL queries, current alert state, and provisioned alert rules. Range queries downsample to a point budget; an explicitly supplied step that would exceed it is rejected rather than silently changed, so the model never receives data at a resolution it did not ask for.'
+  zh: '面向 Grafana 的只读工具，经数据源代理查询指标：实例健康、数据源列表、instant 与 range PromQL 查询、当前告警状态与已配置的告警规则。range 查询会按点数预算降采样；调用方显式指定的 step 若会超量则直接拒绝，而不是静默改写，避免模型拿到与预期不同分辨率的数据。'

@@ -1,0 +1,6 @@
+url: https://github.com/kaka-crypto/dsh-disk-guard
+name: kaka-crypto/dsh-disk-guard
+category: tools
+description:
+  en: 'Redirects DSH downloads, artifacts, caches and temp files to user-specified drives (auto-picks the largest non-C drive), injects a path-discipline prompt into every session, and ships a disk_guard tool for status and cleanup — keeps the C: drive from filling up.'
+  zh: '把 DSH 的下载、产物、缓存与临时文件重定向到用户指定目录（自动挑剩余空间最大的非 C 盘），向每个会话注入路径纪律提示词，并自带 disk_guard 工具做状态查看与清理——防止 C 盘被撑爆。'

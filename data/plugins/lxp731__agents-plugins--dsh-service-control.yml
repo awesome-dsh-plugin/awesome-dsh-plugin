@@ -1,0 +1,6 @@
+url: https://github.com/lxp731/agents-plugins/tree/main/dsh-service-control
+name: lxp731/agents-plugins#dsh-service-control
+category: dev
+description:
+  en: 'Manage the dsh service via `dsh --profile ctl`: systemd lifecycle (install, start, stop, restart, enable, disable, uninstall), persisted config, health probe and logs, plus shell completions and self-update.'
+  zh: '通过 `dsh --profile ctl` 管理 DSH 服务：systemd 生命周期（安装、启停、重启、自启、卸载）、持久化配置、健康探测与日志，附带 shell 补全与自更新。'

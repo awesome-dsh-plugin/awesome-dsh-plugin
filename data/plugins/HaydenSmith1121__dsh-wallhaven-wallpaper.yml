@@ -1,0 +1,6 @@
+url: https://github.com/HaydenSmith1121/dsh-wallhaven-wallpaper
+name: HaydenSmith1121/dsh-wallhaven-wallpaper
+category: ui
+description:
+  en: 'Searches wallhaven.cc from a settings page and sets any wallpaper as the DSH web GUI background, with opacity, blur and scrim controls, a sidebar shuffle button and one-click original download; all fetching runs in the host process, so the browser never needs to reach wallhaven.'
+  zh: '在设置页搜索 wallhaven.cc,把任意壁纸铺成 DSH Web GUI 背景,支持透明度、模糊与遮罩调节,侧边栏一键换图,可下载原图;图片全部由宿主进程取回,浏览器无需能访问 wallhaven。'

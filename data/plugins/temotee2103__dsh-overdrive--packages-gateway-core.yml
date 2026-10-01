@@ -1,0 +1,6 @@
+url: https://github.com/temotee2103/dsh-overdrive/tree/main/packages/gateway-core
+name: temotee2103/dsh-overdrive#gateway-core
+category: notify
+description:
+  en: 'DSH-side remote session driver for the dsh-overdrive chat gateway: exposes sessions, trajectory replay and tap-to-approve to Telegram / Discord / Slack / WhatsApp / Feishu / DingTalk / WeCom bridges. Requires running @dsh-overdrive/gateway alongside.'
+  zh: 'dsh-overdrive 聊天网关的 DSH 侧远程会话驱动：把 Telegram / Discord / Slack / WhatsApp / 飞书 / 钉钉 / 企业微信 的会话、轨迹回放与一键审批接入 Harness。需配套运行 @dsh-overdrive/gateway。'

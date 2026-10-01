@@ -1,0 +1,6 @@
+url: https://github.com/menotbobbybrown/dsh-plugin-memory
+name: menotbobbybrown/dsh-plugin-memory
+category: memory
+description:
+  en: 'Persistent long-term memory for DeepSeek Harness: a JSON store of typed entries (fact, preference, entity, rule, episodic) exposed as the memory_remember and memory_recall agent tools, with recall ranked by keyword overlap, importance and access frequency.'
+  zh: 'DeepSeek Harness 的长期持久记忆：以 JSON 保存事实／偏好／实体／规则／经历等分类条目，注册为 memory_remember 与 memory_recall 两个 agent 工具；召回按关键词重叠、重要度与访问频次排序。'

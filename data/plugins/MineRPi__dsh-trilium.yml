@@ -1,0 +1,6 @@
+url: https://github.com/MineRPi/dsh-trilium
+name: MineRPi/dsh-trilium
+category: memory
+description:
+  en: 'Connect Trilium notes to the DSH agent via ETAPI with 20 agent tools: durable memory (remember/recall + auto-injected index), note management (CRUD/clone/attributes/revisions), full-text search, weekly-report workflow, attachments, calendar notes, backup/import, and a settings card.'
+  zh: '通过 ETAPI 把 Trilium 笔记库接入 agent，提供 20 个工具：记忆读写（remember/recall + 自动注入索引）、笔记管理（CRUD/克隆/属性/修订）、全文搜索、周报工作流、附件、日历笔记、备份导入，独立设置卡片，配置 0600 落盘。'

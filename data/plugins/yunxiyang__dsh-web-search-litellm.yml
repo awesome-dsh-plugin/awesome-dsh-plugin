@@ -1,0 +1,6 @@
+url: https://github.com/yunxiyang/dsh-web-search-litellm
+name: yunxiyang/dsh-web-search-litellm
+category: tools
+description:
+  en: 'Web search provider for the ctx.web seam that routes the DeepSeek web_search tool through a LiteLLM proxy using the OpenAI Responses API, reusing LITELLM_API_KEY.'
+  zh: 'ctx.web 搜索提供方：通过 LiteLLM 代理走 OpenAI Responses API 调用 DeepSeek 原生服务端 web_search，复用 LITELLM_API_KEY，无需新密钥。'

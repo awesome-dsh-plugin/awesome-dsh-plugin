@@ -1,0 +1,6 @@
+url: https://github.com/tnnevol/fn-os-apps/tree/main/plugins/dsh-fnos-plugin
+name: tnnevol/fn-os-apps#dsh-fnos-plugin
+category: dev
+description:
+  en: 'fnOS 飞牛 NAS integration for DeepSeek Harness, working through the fnOS browser SDK when the Web UI runs inside an fnOS app frame: follows the NAS theme while DSH is set to system preference, lists and revokes authorized NAS directory grants in Settings, opens files and links in the matching fnOS app, and syncs the DSH page title to the fnOS app window. Install from npm with `dsh plugin --profile web add @tnnevol/dsh-fnos`.'
+  zh: '把 DeepSeek Harness 接进飞牛 fnOS：DSH 界面跑在 fnOS 应用框架里时通过 fnOS 浏览器 SDK 工作——DSH 设为跟随系统时读取并跟随 NAS 主题，在设置里列出和取消已授权的 NAS 目录，把文件与链接交给对应的 fnOS 应用打开，并把 DSH 页面标题同步到 fnOS 应用窗口。npm 安装：`dsh plugin --profile web add @tnnevol/dsh-fnos`。'

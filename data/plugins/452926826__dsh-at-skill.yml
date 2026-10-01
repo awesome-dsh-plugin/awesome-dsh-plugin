@@ -1,0 +1,6 @@
+url: https://github.com/452926826/dsh-at-skill
+name: 452926826/dsh-at-skill
+category: skill
+description:
+  en: Invoke user-accessible Skills with @name tokens and show matching Skill suggestions in the conversation composer.
+  zh: 通过 @名称 标记调用用户可用的 Skill，并在对话输入框中显示匹配的 Skill 候选项。

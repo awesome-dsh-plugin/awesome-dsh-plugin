@@ -1,0 +1,14 @@
+url: https://github.com/Saunato/dsh-mac-cua
+name: Saunato/dsh-mac-cua
+category: tools
+# Prebuilt tarball, attached to the v1.0.0 GitHub Release. This is what makes the
+# install work on networks where github.com is unreachable, and what skips pnpm's
+# build-approval step, since the native module ships prebuilt.
+#
+# The asset name is deliberately version-free: `latest/download/` resolves the
+# tag at request time but takes the filename literally, so a versioned name would
+# 404 the moment the next release is cut.
+tarball: https://github.com/Saunato/dsh-mac-cua/releases/latest/download/dsh-mac-cua.tgz
+description:
+  en: 'Computer Use for macOS desktop applications: reads any app''s accessibility tree as text with element indices, then clicks, types, pastes, scrolls, drags, selects text and sets values through it, plus screenshots read back as images. Driven by a persistent JavaScript REPL — the agent gets two tools (`js`, `js_reset`) and calls an `sky` API inside them, so state survives between calls and the tool schema stays fixed as capabilities grow. Accessibility trees come back as diffs after the first read; actions address elements by index and indices from a stale read are refused rather than misapplied; typing waits for keyboard focus and reads the field back; paste restores the clipboard. Requires macOS 14.4+, Accessibility permission (Screen Recording only for screenshots) and Node 20+; ships a prebuilt native module, so nothing compiles at install time.'
+  zh: 'macOS 桌面应用 Computer Use 插件：以文本读取任意应用的无障碍树与元素索引，并据此点击、输入、粘贴、滚动、拖拽、选择文本与赋值，截图可回传为图片。由常驻 JavaScript REPL 驱动——智能体只拿到两个工具（`js`、`js_reset`），在其中调用 `sky` API，因此状态跨调用保持、能力增长时工具 schema 保持稳定。无障碍树在首次读取后以 diff 返回；动作按索引寻址，过期索引会被拒绝而非错用；输入前等待键盘焦点并回读输入框；粘贴会恢复剪贴板。需 macOS 14.4+、辅助功能权限（截图另需屏幕录制）与 Node 20+；随包提供预编译原生模块，安装时不需编译。'

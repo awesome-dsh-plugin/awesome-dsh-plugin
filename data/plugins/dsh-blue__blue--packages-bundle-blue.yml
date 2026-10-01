@@ -1,0 +1,6 @@
+url: https://github.com/dsh-blue/blue/tree/master/packages/bundle/blue
+name: dsh-blue/blue#blue
+category: ui
+description:
+  en: Plugin-tree terminal UI for DeepSeek Harness — streaming markdown transcript, tool cards, fuzzy slash commands, and live theming, with every component a hot-swappable Cordis plugin.
+  zh: 插件树式终端界面：流式 markdown 会话流、工具卡片、模糊命令补全与主题热切换，每个界面组件都是可热替换的 Cordis 插件。

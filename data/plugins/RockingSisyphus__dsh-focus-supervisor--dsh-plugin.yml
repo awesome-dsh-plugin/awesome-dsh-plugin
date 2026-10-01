@@ -1,0 +1,7 @@
+url: https://github.com/RockingSisyphus/dsh-focus-supervisor/tree/main/dsh-plugin
+name: RockingSisyphus/dsh-focus-supervisor#dsh-plugin
+category: workflow
+tarball: https://github.com/RockingSisyphus/dsh-focus-supervisor/releases/latest/download/dsh-focus-supervisor.tgz
+description:
+  en: DSH self-discipline companion with recurring tasks, a gaze-tracking desktop mascot, evidence logs, final AI review, reminders, and window intervention on Windows and GNOME Wayland.
+  zh: 大肥鱼监工是 DSH 自制力助手：支持单次与循环预约、会看鼠标的桌面角色、采集证据与诊断日志、到点后的 AI 末轮验收，以及原生提醒和窗口干预；支持 Windows 与 GNOME Wayland。

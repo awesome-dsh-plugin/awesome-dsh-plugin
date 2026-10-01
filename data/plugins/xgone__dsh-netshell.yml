@@ -1,0 +1,6 @@
+url: https://github.com/xgone/dsh-netshell
+name: xgone/dsh-netshell
+category: remote
+description:
+  en: 'Local and remote SSH terminals for DeepSeek Harness Web with three permission levels, human approval for risky AI commands, and encrypted credential storage.'
+  zh: 'DeepSeek Harness Web 的本地与远程 SSH 终端：提供三级权限，危险 AI 命令需真人确认，凭据加密存储。'

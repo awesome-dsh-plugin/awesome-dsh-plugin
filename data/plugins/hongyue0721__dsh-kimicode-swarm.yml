@@ -1,0 +1,6 @@
+url: https://github.com/hongyue0721/dsh-kimicode-swarm
+name: hongyue0721/dsh-kimicode-swarm
+category: workflow
+description:
+  en: 'Kimi-Code-style swarm: batch-parallel subagent dispatch with adaptive scheduling, a /swarm command, and in-chat live progress rows.'
+  zh: Kimi Code 风格 swarm：批量并行子 Agent 调度（自适应并发）、/swarm 命令与聊天内实时进度条。

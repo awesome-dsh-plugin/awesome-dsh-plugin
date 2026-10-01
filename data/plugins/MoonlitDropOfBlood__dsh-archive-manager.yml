@@ -1,0 +1,6 @@
+url: https://github.com/MoonlitDropOfBlood/dsh-archive-manager
+name: MoonlitDropOfBlood/dsh-archive-manager
+category: session
+description:
+  en: 'Archived-session manager for DeepSeek Harness: grouped archive panel with restore and delete.'
+  zh: 'DeepSeek Harness 会话归档管理：分组归档面板，支持恢复与删除。'

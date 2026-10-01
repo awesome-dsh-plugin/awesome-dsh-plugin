@@ -1,0 +1,8 @@
+url: https://github.com/shengyvself/dsh-reading-pad
+name: shengyvself/dsh-reading-pad
+category: ui
+description:
+  en: >-
+    Immersive read-only reading panel for DSH — the model delivers pre-formatted Markdown to a native right-sidebar tab via `reading_pad_send`, with three low-blue-light themes and 30em measure typography; also browse manuscript chapters read-only.
+  zh: >-
+    DSH 沉浸式只读阅读板：模型用 `reading_pad_send` 把已排版 Markdown 推到原生右侧栏「📖 阅读板」tab，三套低蓝光主题、30em 限宽排版；也可只读浏览当前写作工程的章节。

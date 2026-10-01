@@ -1,0 +1,7 @@
+url: https://github.com/alllllinnrann/dsh-inapp-browser
+name: alllllinnrann/dsh-inapp-browser
+category: browser
+description:
+  en: 'Shared browser panel for DeepSeek Harness via Better Sidebar, with local Chromium, human and agent mouse and keyboard control, page snapshots, screenshots, and per-chat persistent profiles.'
+  zh: '通过 Better Sidebar 为 DeepSeek Harness 提供共享浏览器面板，支持本地 Chromium、人和 AI 的鼠标键盘操作、页面快照、截图及按聊天持久保存的浏览器资料。'
+tarball: https://github.com/alllllinnrann/dsh-inapp-browser/releases/download/v0.2.6/dsh-inapp-browser-0.2.6.tgz

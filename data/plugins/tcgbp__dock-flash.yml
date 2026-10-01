@@ -1,0 +1,7 @@
+url: https://github.com/tcgbp/dock-flash
+name: tcgbp/dock-flash
+category: ui
+description:
+  en: 'Quick Control panel for DSH Web: a docked or floating shortcut panel whose switches other plugins register through the quickControl service. Includes a theme and skin switcher plus fine-grained NO_PROXY proxy controls, and works with dock-base or standalone.'
+  zh: DSH Web 的快捷控制面板：可停靠或浮动，开关项可由其它插件通过 quickControl 服务注册；内置主题/皮肤切换与细粒度 NO_PROXY 代理控制，可搭配 dock-base 或独立运行。
+tarball: https://github.com/tcgbp/dock-flash/releases/latest/download/dock-flash.tgz

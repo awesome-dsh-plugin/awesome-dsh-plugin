@@ -1,0 +1,6 @@
+url: https://github.com/yakoylp/dsh-localnotify
+name: yakoylp/dsh-localnotify
+category: notify
+description:
+  en: 'In-app local notification center for DSH: a sidebar Notifications entry with unread badge, full-screen center with level color coding (info/success/warn/error), time/source filters, sorting, title/content search, read/unread, delete, detail popup with one-click copy, and pagination; written by the notify_add agent tool or the dsh-localnotify CLI (with auto-cleanup retention), page refreshes live, UI follows dsh web language (zh/en).'
+  zh: 'DSH 本地通知栏：侧边栏【通知】入口 + 未读徽标、全屏通知中心（级别视觉分级 info/success/warn/error、时间/来源筛选、排序、标题内容搜索、未读已读、删除、详情弹层一键复制、分页），notify_add agent 工具与 CLI 写入本地 JSON 文件（支持自动清理），页面实时刷新，界面跟随 dsh web 语言切换。'

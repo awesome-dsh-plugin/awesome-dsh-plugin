@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-dev/dsh-tool-schema
+name: omdsh-dev/dsh-tool-schema
+category: tools
+description:
+  en: 'JSON Schema validation: validate/paths/explain/normalize.'
+  zh: JSON Schema 验证：validate/paths/explain/normalize。

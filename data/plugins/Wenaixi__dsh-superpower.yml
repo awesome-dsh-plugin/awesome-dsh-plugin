@@ -1,0 +1,6 @@
+url: https://github.com/Wenaixi/dsh-superpower
+name: Wenaixi/dsh-superpower
+category: skill
+description:
+  en: 'Complete port of obra/superpowers for DeepSeek Harness: 14 methodology skills via a native SkillProvider (rank 550), covering brainstorming, planning, TDD, debugging, parallel agents and more, with Chinese-localized docs and zero-build install.'
+  zh: 'obra/superpowers 的 DSH 完整移植：通过原生 SkillProvider（rank 550）注入 14 个方法论技能，覆盖需求澄清、计划拆解、TDD、系统化调试、并行分发等，文档全中文化，开箱即用、零构建安装。'

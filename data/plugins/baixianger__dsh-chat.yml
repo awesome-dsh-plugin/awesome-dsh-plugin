@@ -1,0 +1,6 @@
+url: https://github.com/baixianger/dsh-chat
+name: baixianger/dsh-chat
+category: session
+description:
+  en: Group chat rooms for DSH sessions with explicit @mentions, cold-session wake-up delivery, and optional cross-host transport through dsh-weave.
+  zh: 面向 DSH 会话的群聊室：支持明确 @ 提及、冷会话唤醒投递，并可通过 dsh-weave 跨主机通信。

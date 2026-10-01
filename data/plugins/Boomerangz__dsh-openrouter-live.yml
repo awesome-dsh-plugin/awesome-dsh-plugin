@@ -1,0 +1,6 @@
+url: https://github.com/Boomerangz/dsh-openrouter-live
+name: Boomerangz/dsh-openrouter-live
+category: model
+description:
+  en: 'OpenRouter provider that reads the live /models list, so new models appear without a harness release: models sorted by name with input/output prices, per-model reasoning levels, image input, reasoning_details replay, Anthropic prompt caching, and actual spend per session including subagents from OpenRouter usage.cost, shown under the Web UI composer and by /cost.'
+  zh: '读取 OpenRouter 实时 /models 列表的模型提供商，新模型无需等待 harness 发版即可出现：模型按名称排序并显示输入/输出价格，按模型提供思考档位、图片输入、reasoning_details 回放、Anthropic 提示缓存，并按 OpenRouter usage.cost 统计本会话（含子代理）的实际花费，显示在 Web 输入框下方并可用 /cost 查看。'

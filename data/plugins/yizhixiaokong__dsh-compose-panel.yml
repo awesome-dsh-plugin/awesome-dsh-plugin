@@ -1,0 +1,6 @@
+url: https://github.com/yizhixiaokong/dsh-compose-panel
+name: yizhixiaokong/dsh-compose-panel
+category: dev
+description:
+  en: 'Lists the Docker Compose projects of your DSH workspaces in the right sidebar, one group per project directory, with container status, project- and service-level up/stop/restart, and streamed per-service logs.'
+  zh: '在右侧栏列出各 DSH 工作区中的 Docker Compose 项目，按项目目录分组，显示容器状态，支持项目级与服务级 up/stop/restart 以及单服务日志流。'

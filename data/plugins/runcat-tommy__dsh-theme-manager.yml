@@ -1,0 +1,6 @@
+url: https://github.com/runcat-tommy/dsh-theme-manager
+name: runcat-tommy/dsh-theme-manager
+category: theme
+description:
+  en: 'Two-level theme manager for the DSH Web UI: pick a culture / scene, a national flag, a developer palette, or a high-contrast pairing first, then a concrete style (58 built-in palettes, light and dark).'
+  zh: 'DSH Web 两级主题管理器：先选文化 / 场景、国旗、开发者配色或强烈对比配色，再选具体风格，内置 58 套浅色 / 深色配色。'

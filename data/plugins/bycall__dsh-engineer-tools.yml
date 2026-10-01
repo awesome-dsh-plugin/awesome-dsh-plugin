@@ -1,0 +1,16 @@
+# dshmarket submission entry for dsh-engineer-tools.
+# Copy to <fork-of-awesome-dsh-plugin>/data/plugins/bycall__dsh-engineer-tools.yml
+# and open a PR against https://github.com/awesome-dsh-plugin/awesome-dsh-plugin.
+#
+# Rules enforced by CI (pr-gate.yml / check-submission.mjs):
+#   - repo must contain a dsh.bundle declaration (package.json has dsh.bundle.patch) ✓
+#   - repo must be >= 1 day old
+#   - filename must equal slugFor(url): <owner>__<repo>.yml
+#   - only keys: url, name, category, description, tarball (no `npm:` key — npm
+#     mapping is resolved automatically from the repository)
+url: https://github.com/bycall/dsh-engineer-tools
+name: dsh-engineer-tools
+category: tools
+description:
+  en: "Engineering work-tools for DeepSeek Harness: registers two model-facing Host Tools — a scoped `git` runner, and a package-manager runner (`dev`) that detects npm/pnpm/yarn/bun from the workspace lockfile and picks the right verb per manager. Both run through dsh's sandboxed shell and return structured stdout/stderr/exitCode, so the agent gets focused, reviewable results instead of raw bash, and adding another tool is a copy-paste of one register block."
+  zh: "面向软件工程师的 DeepSeek Harness 插件：注册两个模型可直接调用的 Host Tool——受工作区约束的 `git` 运行器，以及按 lockfile 自动识别 npm/pnpm/yarn/bun 并选择正确动词的包管理器运行器（`dev`）。两者都经 dsh 沙箱 shell 执行，返回规整的 stdout/stderr/exitCode，让 agent 拿到聚焦、可复核的结果而不是裸 bash；再加一个工具只需复制一个 register 块。"

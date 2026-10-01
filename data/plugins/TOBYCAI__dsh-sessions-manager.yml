@@ -1,0 +1,6 @@
+url: https://github.com/TOBYCAI/dsh-sessions-manager
+name: TOBYCAI/dsh-sessions-manager
+category: session
+description:
+  en: 'Archive, restore, permanently delete, and move DeepSeek Harness sessions across workspaces from one unified settings panel.'
+  zh: '在统一设置面板中归档、恢复、彻底删除并跨工作区移动 DeepSeek Harness 会话。'

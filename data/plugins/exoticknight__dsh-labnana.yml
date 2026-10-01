@@ -1,0 +1,7 @@
+url: https://github.com/exoticknight/dsh-labnana
+name: exoticknight/dsh-labnana
+category: vision
+tarball: https://github.com/exoticknight/dsh-labnana/releases/download/v0.3.2/dsh-labnana-0.3.2.tgz
+description:
+  en: "Labnana image generation for DeepSeek Harness: text-to-image / image-to-image / precise editing with credits estimation, subscription balance and web settings UI."
+  zh: "为 DeepSeek Harness 接入 Labnana 图片生成：文生图 / 图生图 / 精准编辑，含积分预估、余额查询与网页设置界面。"

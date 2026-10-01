@@ -1,0 +1,6 @@
+url: https://github.com/Cheng-cheng9669/dsh-deepseek-vision
+name: Cheng-cheng9669/dsh-deepseek-vision
+category: vision
+description:
+  en: 'Reuses DeepSeek web''s built-in vision mode for text-only models: the deepseek_vision tool drives the local deepseek-vision-cli browser automation (manual login helper, deep-think enabled, auto-closes browser) and returns image descriptions as text.'
+  zh: 复用 DeepSeek 网页端识图模式给纯文本模型补上看图能力：deepseek_vision 工具调用本地 deepseek-vision-cli 浏览器自动化（手动登录助手、自动开启深度思考、用后自动关窗），把图片描述以文字返回给模型。

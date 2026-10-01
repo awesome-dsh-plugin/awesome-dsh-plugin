@@ -1,0 +1,7 @@
+url: https://github.com/songer522/dsh-launcher
+name: songer522/dsh-launcher
+category: tools
+tarball: https://github.com/songer522/dsh-launcher/releases/latest/download/dsh-menubar-launcher.tgz
+description:
+  en: 'macOS menu bar app for the DSH web server, plus the host plugin it reads: the plugin writes the running server''s port, PID and tokenized URL to ~/.config/dsh-launcher/runtime.json and removes it on shutdown, so start, open, restart and stop work from the status bar even for a server started from a terminal.'
+  zh: 'DSH Web 服务的 macOS 菜单栏应用，以及它所读取的 Host 插件：插件把运行中服务的端口、PID 与带 token 的 URL 写入 ~/.config/dsh-launcher/runtime.json，并在停止时删除，因此即使服务器是从终端启动的，也能在状态栏完成启动、打开、重启与停止。'

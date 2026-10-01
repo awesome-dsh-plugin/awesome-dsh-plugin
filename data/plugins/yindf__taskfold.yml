@@ -1,0 +1,7 @@
+url: https://github.com/yindf/taskfold
+name: yindf/taskfold
+category: session
+tarball: https://github.com/yindf/taskfold/releases/download/v0.31.1/dsh-taskfold-0.31.1.tgz
+description:
+  en: 'Wraps work in named tasks and, once a task closes, folds its whole span of messages into one summary at the next step boundary; the original content can be restored on demand.'
+  zh: '用命名任务包住工作过程；任务结束后，在下一个步骤边界把整段消息折叠成一段摘要，原文可随时还原。'

@@ -1,0 +1,6 @@
+url: https://github.com/zimai233/dsh-figma-to-lottie
+name: zimai233/dsh-figma-to-lottie
+category: tools
+description:
+  en: Compile SVG paths and keyframe specs into self-contained Lottie JSON animation files.
+  zh: 将 SVG 路径与关键帧参数编译成自包含的 Lottie JSON 动画文件。

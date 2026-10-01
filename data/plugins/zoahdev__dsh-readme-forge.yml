@@ -1,0 +1,7 @@
+url: https://github.com/zoahdev/dsh-readme-forge
+name: zoahdev/dsh-readme-forge
+category: dev
+description:
+  en: 'Generate README.md for dsh plugin repositories from package.json + cordis.patch.yml + source layout — install/CLI/tools/dev/license sections, deterministic, zero runtime deps, read-only by default. CLI plus an agent-callable readme_forge tool.'
+  zh: '为 dsh 插件仓库从 package.json + cordis.patch.yml + 源码布局生成 README.md——安装/CLI/工具/开发/许可证章节，确定性输出、零运行时依赖、默认只读。CLI + agent 可调用 readme_forge 工具。'
+# listing updated 2026-08-19 (repo hardened to 10+ commits; submission gate)

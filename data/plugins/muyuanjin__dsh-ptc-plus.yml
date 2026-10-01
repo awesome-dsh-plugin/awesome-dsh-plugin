@@ -1,0 +1,7 @@
+---
+url: https://github.com/muyuanjin/dsh-ptc-plus
+name: muyuanjin/dsh-ptc-plus
+category: dev
+description:
+  en: "Session-bound persistent TypeScript REPL for DSH PTC mode: bindings and imports stay live across run_code calls, edit_run_code replaces one line without resending the block, module import/export syntax is adapted via AST rewriting, and durable bindings are restored from the session journal after a cold restart."
+  zh: "把 DSH PTC 模式的顶层 run_code 变成会话绑定的持久 TypeScript REPL：变量与导入在多次 run_code 调用间保持可用，edit_run_code 只替换一行而无需重发整段，import/export 模块语法经 AST 改写适配，持久绑定在冷重启后由会话日志恢复。"

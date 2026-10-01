@@ -1,0 +1,6 @@
+url: https://github.com/SIMON-WORLD/dsh-journal-monitor
+name: SIMON-WORLD/dsh-journal-monitor
+category: tools
+description:
+  en: 'Economics-first journal/working-paper monitor for DeepSeek Harness: NBER RSS + arXiv econ (4 categories) + Chinese econ journals (Shi Jie Jing Ji via Magtech, Zhong Guo Nong Cun Guan Cha, Cai Mao Jing Ji, Zhong Guo Ren Kou Ke Xue, Jing Ji Guan Li via ajcass) fetch, keyword filter, dry-run/Webhook push, dedup persistence, and schedule_create-compatible briefing.'
+  zh: '经济学优先的期刊/工作论文监控插件：NBER RSS + arXiv 经济学（4 类目）+ 中文经管期刊（世界经济-玛格泰克平台，中国农村观察/财贸经济/中国人口科学/经济管理-ajcass 平台）抓取、关键词过滤、dry-run/Webhook 推送、去重持久化、定时简报（schedule_create 兼容）。'

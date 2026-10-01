@@ -1,0 +1,6 @@
+url: https://github.com/zlZayn/dsh-zhihu-search
+name: zlZayn/dsh-zhihu-search
+category: tools
+description:
+  en: Three Zhihu tools for DSH — in-site search, Zhihu's global web index with domain and date filters, and Zhida answers — with a native settings card and source-cited results.
+  zh: 为 DSH 增加三个知乎工具——站内问答与文章检索、知乎全网索引检索（可按域名与时间过滤）、直答——自带原生设置卡片，结果附来源可引用。

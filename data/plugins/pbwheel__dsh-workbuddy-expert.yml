@@ -1,0 +1,6 @@
+url: https://github.com/pbwheel/dsh-workbuddy-expert
+name: pbwheel/dsh-workbuddy-expert
+category: identity
+description:
+  en: 'Brings WorkBuddy desktop-app experts into DSH: a settings-page market scans the local WorkBuddy expert directory (experts land there after you summon them in WorkBuddy) read-only for browsing, search and category filtering, with one-click install (exported to ~/.dsh/experts/ as role prompt + skills + avatar), update and uninstall; a picker capsule next to the input box switches the current session''s expert — swapping role prompt, skills and an optional tool whitelist wholesale while keeping full session history, applied at the next model-request boundary.'
+  zh: 把 WorkBuddy 桌面端召唤落盘的本地专家带进 DSH：设置页市场只读扫描本地专家目录，卡片浏览/搜索/分类，一键安装（导出到 ~/.dsh/experts/，含角色描述、skills 与头像）、更新与卸载；输入框旁的专家胶囊为当前会话切换专家——整组替换角色描述与 skills（可选工具白名单），保留全部会话历史，在下一个模型请求边界生效。

@@ -1,0 +1,6 @@
+url: https://github.com/FishBottle7/opencode2dsh/tree/master/packages/plugin
+name: FishBottle7/opencode2dsh
+category: model
+description:
+  en: Exposes OpenCode Zen free models to DeepSeek Harness, with no API key.
+  zh: 将 OpenCode Zen 免费模型接入 DeepSeek Harness，无需 API Key。

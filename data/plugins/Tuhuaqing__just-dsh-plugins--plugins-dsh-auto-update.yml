@@ -1,0 +1,6 @@
+url: https://github.com/Tuhuaqing/just-dsh-plugins/tree/main/plugins/dsh-auto-update
+name: Tuhuaqing/just-dsh-plugins#dsh-auto-update
+category: usage
+description:
+  en: One-click upgrade to Deepseek Harness, with version number displayed in the sidebar.
+  zh: 一键升级Deepseek Harness, 支持侧边栏显示版本号.

@@ -1,0 +1,6 @@
+url: https://github.com/Electricitysheep/dsh-tool-turbo
+name: Electricitysheep/dsh-tool-turbo
+category: tools
+description:
+  en: Per-round reasoning_effort optimizer for dsh — auto-downgrades reasoning for simple tool calls and lifts back for heavy work, cutting thinking time between tool calls.
+  zh: dsh 每轮推理强度优化器——简单工具调用自动降档、重任务回升，削减工具调用间的思考时间。

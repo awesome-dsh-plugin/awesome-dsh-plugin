@@ -1,0 +1,6 @@
+url: https://github.com/Bcy2020/dsh-cc-ecosystem
+name: Bcy2020/dsh-cc-ecosystem
+category: dev
+description:
+  en: 'Load Claude Code assets into DSH at runtime — skills, slash commands, rules, permission rules (deny/ask/allow), subagents and hooks from .claude/ plus Claude Code plugins (plugin.json / marketplace / skills / agents / MCP), via a memory-IR parse layer that keeps .claude as the source of truth with no writes back. Six installable packages: loader, skills, permissions, agents, hooks, mcp.'
+  zh: '运行时把 Claude Code 全家桶原样加载进 DSH：.claude/ 的技能、斜杠命令、规则、权限（deny/ask/allow）、子代理与 hooks，以及 Claude Code 插件（plugin.json / marketplace / 技能 / 代理 / MCP）——内存 IR 解析层，.claude 始终是唯一事实来源，零回写。六个可安装包：loader、skills、permissions、agents、hooks、mcp。'

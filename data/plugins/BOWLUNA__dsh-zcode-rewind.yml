@@ -1,0 +1,6 @@
+url: https://github.com/BOWLUNA/dsh-zcode-rewind
+name: BOWLUNA/dsh-zcode-rewind
+category: session
+description:
+  en: 'Workspace checkpoints per tool call: records every file mutation inside the workspace (excluding .git and node_modules by default), including changes made by shell commands rather than by write/edit, and stores the previous content of each changed path in a content-addressed store kept outside the workspace. Restores have two modes — undo one record, or return to a point in time — with a line-level diff preview, a dry run by default, and a rescue record written before every restore so the restore itself can be undone.'
+  zh: '逐工具调用的工作区检查点:记录工作区内每一次文件改动(默认排除 .git 与 node_modules),包括由 shell 命令而非 write/edit 造成的改动,并把每个被改路径的旧内容存进工作区之外的内容寻址库。恢复有两种模式——撤销单条记录,或回到某个时间点——带行级 diff 预览、默认 dry run,且每次恢复前都先写保护快照,所以恢复本身也能被撤销。'

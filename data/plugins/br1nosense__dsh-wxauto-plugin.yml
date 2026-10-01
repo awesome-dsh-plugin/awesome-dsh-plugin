@@ -1,0 +1,6 @@
+url: https://github.com/br1nosense/dsh-wxauto-plugin
+name: br1nosense/dsh-wxauto-plugin
+category: notify
+description:
+  en: 'WeChat automation for DSH: push task progress to WeChat, listen for messages with keyword auto-reply, and a WeChat ↔ DSH two-way bridge controllable from the settings page, built on wxauto4.'
+  zh: '基于 wxauto4 的微信自动化插件：任务进度微信推送、消息监听（关键词自动回复）、微信⇄DSH 双向桥，设置页开关与配置。'

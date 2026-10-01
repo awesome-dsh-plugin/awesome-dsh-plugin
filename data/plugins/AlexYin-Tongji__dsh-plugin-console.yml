@@ -1,0 +1,6 @@
+url: https://github.com/AlexYin-Tongji/dsh-plugin-console
+name: AlexYin-Tongji/dsh-plugin-console
+category: market
+description:
+  en: Browse and manage the community plugin catalog from a first-level DeepSeek Harness Settings page, with verified installs and updates, removal, pause and resume, installed-package state, and sanitized README previews.
+  zh: 在 DeepSeek Harness 设置一级页面中浏览和管理社区插件目录，支持验证后安装与更新、删除、暂停与恢复、已安装状态查看及安全 README 预览。

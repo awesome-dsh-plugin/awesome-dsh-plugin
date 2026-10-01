@@ -1,0 +1,6 @@
+url: https://github.com/shangjian2023/dsh-rss-daily
+name: shangjian2023/dsh-rss-daily
+category: notify
+description:
+  en: "Daily news digest from 46 curated RSS sources, edited by the model already configured in dsh, delivered to your IM via webhook, and broadcast in the chat like a regular model reply with zero context cost."
+  zh: "每日要闻日报：46 个精选 RSS 源，用 dsh 里已配好的模型做主编式编辑，经 webhook 送到微信/Telegram，并以模型回答的样式插播在对话里，零上下文消耗。"

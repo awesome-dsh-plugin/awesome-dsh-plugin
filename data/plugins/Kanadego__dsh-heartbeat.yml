@@ -1,0 +1,6 @@
+url: https://github.com/Kanadego/dsh-heartbeat
+name: Kanadego/dsh-heartbeat
+category: agi
+description:
+  en: 'Heartbeat loop for DeepSeek Harness: every 20 minutes (by default) the agent wakes on its own to keep a local profile of your interests and preferences, search the web for things you care about, and keep what it finds. When it has something worth sharing, it sends a short package of notes to the sessions you link it to. A set of rules in code - quiet hours, busy windows, a daily limit, a cooldown - decides whether it may speak at all, and the agent in that session decides whether to actually say anything. Windows only.'
+  zh: '心跳循环：默认每 20 分钟自己醒一次——维护一份关于你兴趣与偏好的本地画像，按你设的兴趣范围上网搜新东西并存下来。攒到值得分享的内容，就向你绑定的会话送一份简短的素材包。能不能开口由代码里的规则决定（静默时段、忙时窗口、每日上限、冷却），说不说由那个会话里的 agent 自己判断。仅支持 Windows。'

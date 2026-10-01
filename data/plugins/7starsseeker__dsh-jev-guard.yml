@@ -1,0 +1,6 @@
+url: https://github.com/7starsseeker/dsh-jev-guard
+name: 7starsseeker/dsh-jev-guard
+category: security
+description:
+  en: 'Pre-execution safety valve for DSH that judges with TypeSafe Jev: it hooks tools/pre-execute and decides every bash/pwsh call by first applying offline static rules, then by asking the Jev model — the System One model from TypeSafe, which returns a structured decision instead of prose — one yes-no question ("will this command irreversibly delete or overwrite real data?"), turning the answer into allow, revise, block or escalate; revise hands the model a safer rewrite, escalate offers a one-shot human token; exhausted credit or a missing API key degrades loudly instead of failing silent, and a missing key is requested in the conversation itself (`guard key set`, read from stdin); every verdict is appended to a shared audit log and the text people read is bilingual zh-CN/en.'
+  zh: 'DSH 执行前安全阀门，用 TypeSafe Jev 模型做判定：挂载 tools/pre-execute，对每条 bash/pwsh 调用先过离线静态规则，再向 Jev 模型（TypeSafe 的 System One 模型，返回结构化判定而非散文）提一个是非问句——「这条命令会不可逆地删除或覆盖真实数据吗？」——把答案切成允许／修正／拦截／上报人工四态；修正给模型更安全的写法，上报提供一次性人工令牌；额度耗尽或没有可用密钥时大声降级而非静默失效，缺密钥时会直接在对话里要求录入（录入用 `guard key set`，只从标准输入读）；每条判定写入共享审计日志，面向人的文案中英双语。'

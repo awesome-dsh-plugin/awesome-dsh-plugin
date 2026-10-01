@@ -1,0 +1,6 @@
+url: https://github.com/kun2-5code/dsh-plugin-template
+name: kun2-5code/dsh-plugin-template
+category: dev
+description:
+  en: A starter template for dsh plugins covering config, tools, events, services, hooks, browser UI slots, and slash commands.
+  zh: dsh 插件开发模板，覆盖配置、工具、事件、服务、钩子、浏览器 UI 插槽与斜杠命令。

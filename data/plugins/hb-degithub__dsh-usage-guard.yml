@@ -1,0 +1,6 @@
+url: https://github.com/hb-degithub/dsh-usage-guard
+name: hb-degithub/dsh-usage-guard
+category: usage
+description:
+  en: 'Usage statistics panel: silent per-model token collection, activity heatmap, trend charts, cost estimation and daily-limit guard.'
+  zh: '用量统计面板：静默按模型采集 token、活跃热力图、趋势图、费用估算与每日超限守卫。'

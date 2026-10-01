@@ -1,0 +1,6 @@
+url: https://github.com/BOWLUNA/dsh-zcode-scribe
+name: BOWLUNA/dsh-zcode-scribe
+category: memory
+description:
+  en: 'Long-term memory for DeepSeek Harness, read-only as of 0.1.0: a scribe_recall tool that reads a plain-markdown memory room, path rules that refuse directory traversal, Unicode smuggling and NTFS alternate data streams, and a bounded index whose truncation is always reported rather than silent.'
+  zh: '给 DeepSeek Harness 的长期记忆（0.1.0 为只读）：用 scribe_recall 工具读取纯 markdown 记忆房间，路径规则拒绝目录穿越、Unicode 夹带与 NTFS 备用数据流，索引超限必定报告而不静默截断。'

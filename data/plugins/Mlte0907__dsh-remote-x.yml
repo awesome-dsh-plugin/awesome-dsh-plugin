@@ -1,0 +1,6 @@
+url: https://github.com/Mlte0907/dsh-remote-x
+name: Mlte0907/dsh-remote-x
+category: remote
+description:
+  en: 'Remote control and mobile overlay for DeepSeek Harness: LAN and public (cloudflared) tunnels with QR-code access, a phone-first mobile UI under 768px, and a LAN reverse-proxy CLI.'
+  zh: 'DeepSeek Harness 的远程控制与移动端覆盖层：局域网与公网（cloudflared）隧道 + 二维码接入、768px 以下的手机端界面，附局域网反向代理 CLI。'

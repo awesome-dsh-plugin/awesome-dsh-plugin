@@ -1,0 +1,6 @@
+url: https://github.com/eghrhegpe/dsh-connect-qoder
+name: eghrhegpe/dsh-connect-qoder
+category: model
+description:
+  en: 'Brings models from the Qoder app already signed in on this machine into DeepSeek Harness, with no token to configure, and shows each model rate and off-peak window on its settings card.'
+  zh: '把本机已登录的 Qoder 应用中的模型接入 DeepSeek Harness，无需配置任何令牌，并在设置卡片上显示每个模型的费率与错峰窗口。'

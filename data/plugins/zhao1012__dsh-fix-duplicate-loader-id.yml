@@ -1,0 +1,7 @@
+url: https://github.com/zhao1012/dsh-fix-duplicate-loader-id
+name: zhao1012/dsh-fix-duplicate-loader-id
+category: skill
+description:
+  en: 'Diagnoses and fixes "duplicate loader entry id" boot crashes - finds duplicate loader rows across profile bundles and converts them into id-targeted patches via a zero-dependency CLI (detect / preview / fix / verify).'
+  zh: '检测并修复 dsh 启动的 "duplicate loader entry id" 崩溃：扫描 profile 各 bundle 的重复 loader row，转换为 id-targeted patch，附带零依赖 CLI（检测/预览/修复/复检）。'
+# (resubmission: repo age gate now satisfied)

@@ -1,0 +1,6 @@
+url: https://github.com/a792883583/dsh-git-panel
+name: a792883583/dsh-git-panel
+category: git
+description:
+  en: "Git sidebar panel with commit graphs, ahead/behind tracking, branch operations, and one-click chat context injection."
+  zh: "Git 侧边栏面板：提交图谱、超前/落后跟踪、分支操作及改动 Diff 一键带入对话。"

@@ -1,0 +1,7 @@
+url: https://github.com/pinzza/dsh-git-statusline
+name: pinzza/dsh-git-statusline
+category: git
+tarball: https://github.com/pinzza/dsh-git-statusline/releases/latest/download/dsh-git-statusline.tgz
+description:
+  en: 'Compact Git status line for DSH Web: the current branch, staged and unstaged line changes, ahead/behind commit counts against upstream, and a clean-worktree marker — placeable in the sidebar footer, the session header, or above/below the composer, with the position switched on the settings page.'
+  zh: 'DSH Web 的紧凑 Git 状态行：显示当前分支、已暂存与未暂存的行数改动、相对 upstream 的领先/落后提交数以及工作区干净标记；可放在侧边栏底部、会话标题栏或输入框上方/下方，位置在设置页切换。'

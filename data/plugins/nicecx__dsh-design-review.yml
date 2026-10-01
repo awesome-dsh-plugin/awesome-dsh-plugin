@@ -1,0 +1,6 @@
+url: https://github.com/nicecx/dsh-design-review
+name: nicecx/dsh-design-review
+category: dev
+description:
+  en: 'Mandatory cross-review for design proposals and lessons-learned: auto-detects design doc writes and enqueues them (tier=review) into the task queue, delivers the external reviewer verdict back to the initiating session, and appends approved preventive measures to OPS-GUARDRAILS.md (append-only, conflict-checked).'
+  zh: '设计方案与事故教训强制交叉评审：自动识别设计文档写入并入队（tier=review），外部评审结论投递回发起会话，approved 的防复发措施以 append-only + 冲突检测方式追加到守则文件。'

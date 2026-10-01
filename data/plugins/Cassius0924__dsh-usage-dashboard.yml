@@ -1,0 +1,6 @@
+url: https://github.com/Cassius0924/dsh-usage-dashboard
+name: Cassius0924/dsh-usage-dashboard
+category: usage
+description:
+  en: 'DeepSeek usage dashboard for DSH Web: days-left estimate from recent average spend, daily/monthly/cumulative costs with period-over-period comparison, per-model cost ranking, cache savings, peak/off-peak pricing impact, and a draggable floating balance widget.'
+  zh: 'DSH Web 的 DeepSeek 用量仪表盘：按近期日均消耗估算可用天数，今日/本月/累计花费环比对照，分模型成本排行、缓存节省、峰谷定价影响，以及可拖动的悬浮余额窗。'

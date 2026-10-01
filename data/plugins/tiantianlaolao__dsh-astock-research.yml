@@ -1,0 +1,6 @@
+url: https://github.com/tiantianlaolao/dsh-astock-research
+name: tiantianlaolao/dsh-astock-research
+category: tools
+description:
+  en: 'China A-share stock research: ticker search, announcements over any date range, financial report cards, valuation profiles and signal-factor explanations (~5,000 stocks since 2011, public read-only data service), plus a link-out tool to an external trading-sandbox product.'
+  zh: 'A股个股研究：搜股票、查任意区间公告、财报卡、估值画像与交易信号科普（约 5000 只、2011 年至今，公共只读数据服务），另有一个跳转外部交易推演产品的链接工具。'

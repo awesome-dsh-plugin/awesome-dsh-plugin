@@ -1,0 +1,6 @@
+url: https://github.com/Illuminated2020/dsh-lark-claw
+name: Illuminated2020/dsh-lark-claw
+category: remote
+description:
+  en: 'Feishu/Lark gateway for DeepSeek Harness with topic-persistent conversations, live execution cards, image and file inputs, in-chat approvals and questions, source allowlists, and durable one-time or recurring agent tasks created in natural language.'
+  zh: 'DeepSeek Harness 的飞书/Lark 网关：按话题持久化会话、实时执行卡片、图片与文件输入、聊天内审批和提问、来源白名单，以及用自然语言创建可持久化的一次性或周期 Agent 任务。'

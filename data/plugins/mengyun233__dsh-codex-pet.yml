@@ -1,0 +1,6 @@
+url: https://github.com/mengyun233/dsh-codex-pet
+name: mengyun233/dsh-codex-pet
+category: ui
+description:
+  en: 'Auto-migrate Codex desktop-pet skins into DSH: an animated corner pet that mirrors agent state (thinking, tool use, awaiting approval, failed, done), with per-session frosted-glass dialogs and a full settings panel.'
+  zh: 把 Codex 桌宠皮肤自动迁移到 DSH：右下角动画桌宠随 agent 状态实时变化（思考/工具/等待批准/出错/完成），多会话毛玻璃对话框 + 完整设置面板。

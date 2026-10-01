@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-taskwatch
+name: dingchenhui0618-arch/dsh-taskwatch
+category: remote
+description:
+  en: 'Task monitor plus remote chat for DeepSeek Harness. Read sessions, background jobs, subagents, goal rounds, workflows and pending approvals from a phone-friendly page, and talk to any session from it: streamed replies, tool-call progress, stop at any time, switch sessions and models. Also ships a GUI sidebar panel.'
+  zh: 'DSH 任务监控 + 手机远程对话。既能在适配手机的页面上读会话、后台任务、子代理、目标轮次、工作流与待审批，也能直接和任意会话对话：逐字流式回复、工具调用进度、随时停止、切换会话与模型。另含 GUI 侧边栏面板。'

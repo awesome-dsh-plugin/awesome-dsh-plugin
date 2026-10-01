@@ -1,0 +1,6 @@
+url: https://github.com/helllo-shijie/motor-hospital-plugins/tree/main/plugins/motor-case-kb
+name: helllo-shijie/motor-hospital-plugins#motor-case-kb
+category: tools
+description:
+  en: 'Searches a database of past motor-repair cases by fault description, motor rating and brand, and lets new diagnoses be saved back for future retrieval.'
+  zh: '按故障描述、功率与品牌检索历史电机维修案例，支持将新诊断沉淀回写供后续检索。'

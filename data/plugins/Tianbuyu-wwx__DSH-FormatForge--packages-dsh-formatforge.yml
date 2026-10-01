@@ -1,0 +1,6 @@
+url: https://github.com/Tianbuyu-wwx/DSH-FormatForge/tree/main/packages/dsh-formatforge
+name: Tianbuyu-wwx/DSH-FormatForge#dsh-formatforge
+category: tools
+description:
+  en: 'FormatForge: forge 30+ file formats (PDF, DOCX, PPTX, XLSX, EML, EPUB, TOML, archives) into AI-readable text via a drag-and-drop inbox, ff_translate/ff_formats/ff_result tools and a CLI; scanned PDFs fall back to local OCR or an enhance hint for the session model.'
+  zh: 'FormatForge：把 30+ 种文件格式（PDF、DOCX、PPTX、XLSX、EML、EPUB、TOML、压缩包）锻造成 AI 可读文本——网页拖拽入箱自动转换，提供 ff_translate/ff_formats/ff_result 工具与 CLI；扫描件回退本地 OCR 或交给会话模型增强。'

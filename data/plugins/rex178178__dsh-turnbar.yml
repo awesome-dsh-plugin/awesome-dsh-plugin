@@ -1,0 +1,6 @@
+url: https://github.com/rex178178/dsh-turnbar
+name: rex178178/dsh-turnbar
+category: ui
+description:
+  en: 'Video-style turn navigation for the Web UI: full-map progress bar with hover preview cards (tools/files/tokens), drag scrub, ⌘K in-conversation search, ⌘↑/⌘↓ stepping, Esc-return. Event-log powered — works beyond the loaded window. Dual-half plugin on the official composer.dock slot.'
+  zh: '会话内轮次导航视频进度条：全图分段、悬停富元信息卡（工具/文件/token）、拖动 scrub、⌘K 全会话搜索、⌘↑/⌘↓ 逐轮跳转、Esc 返回原位——基于会话事件日志，超出已加载窗口仍可用。'

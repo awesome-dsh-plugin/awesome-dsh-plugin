@@ -1,0 +1,6 @@
+url: https://github.com/Yurzi/dsh-web-search-enhanced
+name: Yurzi/dsh-web-search-enhanced
+category: tools
+description:
+  en: Web search with Exa, Firecrawl, Tavily and Tinyfish, per-session search connection and freshness preferences, and a chat-toolbar selector.
+  zh: 集成 Exa、Firecrawl、Tavily 和 Tinyfish 的联网搜索，支持会话级搜索连接与实时性偏好，并提供聊天工具栏切换器。

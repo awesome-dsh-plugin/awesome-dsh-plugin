@@ -1,0 +1,6 @@
+url: https://github.com/lucky8197/dsh-doc-guard
+name: lucky8197/dsh-doc-guard
+category: dev
+description:
+  en: 'Document-code consistency guard: audits version headers / changelog tables / directory trees / module & test counts / cross-doc references for drift, with severity-sorted, read-only fix suggestions.'
+  zh: 文档与代码一致性守护：版本号/更新记录表/结构树/模块清单/测试计数/交叉引用漂移审计与修复建议，全程只读。

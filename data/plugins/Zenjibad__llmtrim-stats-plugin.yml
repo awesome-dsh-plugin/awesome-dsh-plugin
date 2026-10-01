@@ -1,0 +1,6 @@
+url: https://github.com/Zenjibad/llmtrim-stats-plugin
+name: Zenjibad/llmtrim-stats-plugin
+category: usage
+description:
+  en: 'Live llmtrim savings dashboard in the DSH web UI: Settings page with paid, would-have-cost, saved-today and saved-this-week cards plus per-model breakdown, and a configurable rotating or static stats strip under the composer.'
+  zh: 在 DSH 内实时展示 llmtrim 节省统计：设置页金额卡片（已支付、未压缩应付、今日与本周节省）与按模型明细，输入区可配置轮播或静态统计条。

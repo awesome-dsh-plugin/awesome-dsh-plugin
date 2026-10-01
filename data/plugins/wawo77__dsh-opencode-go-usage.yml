@@ -1,0 +1,6 @@
+url: https://github.com/wawo77/dsh-opencode-go-usage
+name: wawo77/dsh-opencode-go-usage
+category: usage
+description:
+  en: 'Plan-usage pet for the DSH web GUI: a floating skeletal-animated character reports quota in a speech bubble, auto-matching the configured provider (OpenCode Go, Command Code, DeepSeek) to show a plan percentage or an account balance, and falling back to local token stats when the provider API is unavailable; draggable, wheel-scalable (90-260px), synthesized click sounds, loopback-only routes.'
+  zh: 'DSH 网页界面的桌宠用量小窗：悬浮的骨骼动画角色用气泡报出套餐用量，按 DSH 里配置的 provider 自动匹配（OpenCode Go / Command Code / DeepSeek 官方），套餐制显示百分比、按量计费显示余额，取不到官方数字时降级为本地 token 统计；可拖动、滚轮缩放（90–260px），音效现场合成，HTTP 路由只开 loopback。'

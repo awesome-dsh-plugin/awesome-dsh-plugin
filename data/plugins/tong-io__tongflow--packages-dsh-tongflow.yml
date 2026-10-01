@@ -1,0 +1,6 @@
+url: https://github.com/tong-io/tongflow/tree/main/packages/dsh-tongflow
+name: tong-io/tongflow#dsh-tongflow
+category: workflow
+description:
+  en: 'TongFlow film-crew studio for image, voice, music and video production: the agent writes per-asset TongFlow workflow files (.tongflow.json) that run through TongFlow plugins, with an embedded workflow canvas, a shot/character/take project layout and a manga-drama template; sessions starting with @tongflow open the Studio view.'
+  zh: '基于 TongFlow 的“片场”插件，用于图片、配音、音乐与视频制作：agent 为每个资产生成 TongFlow 工作流文件（.tongflow.json）并通过 TongFlow 插件执行，内嵌工作流画布，按镜头/角色/take 组织项目，附漫剧模板；以 @tongflow 开头的会话进入 Studio 界面。'

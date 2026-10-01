@@ -1,0 +1,6 @@
+url: https://github.com/zhaenggg/dsh-ssh-remote
+name: zhaenggg/dsh-ssh-remote
+category: remote
+description:
+  en: 'SSH remote execution set: give a session an ssh:// workspace and every file, command, and shell operation runs on the remote host.'
+  zh: 'SSH 远程执行插件集：把会话工作区指向 ssh:// 目录，文件读写、命令与 shell 全部在远程主机上执行。'

@@ -1,0 +1,7 @@
+url: https://github.com/Shr-CS/dsh-wechat-channel
+name: Shr-CS/dsh-wechat-channel
+category: remote
+description:
+  en: 'WeChat Official Account channel for DSH — WeChat messages run agent turns and the answers are pushed back through the customer-service message API, with signature-checked callbacks and an openid allowlist.'
+  zh: 微信公众号通道：微信消息触发 DSH 会话，回答经客服消息接口推回微信，回调带签名校验与 openid 白名单。
+tarball: https://github.com/Shr-CS/dsh-wechat-channel/releases/download/v0.1.1/dsh-wechat-channel-0.1.1.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-ssh-pro
+name: WODE25500/dsh-ssh-pro
+category: remote
+description:
+  en: 'Enhanced SSH ops: connectivity testing, remote ls, ssh-config import, known_hosts fingerprint checks and multi-host exec.'
+  zh: 'SSH 增强运维：连接测试、远程目录、ssh-config 导入、指纹检查与多主机批量执行。'

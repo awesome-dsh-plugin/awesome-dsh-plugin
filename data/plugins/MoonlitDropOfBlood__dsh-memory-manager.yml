@@ -1,0 +1,6 @@
+url: https://github.com/MoonlitDropOfBlood/dsh-memory-manager
+name: MoonlitDropOfBlood/dsh-memory-manager
+category: memory
+description:
+  en: 'ZCode-style persistent project memory with a full settings manager, index-first injection and agent memory tools.'
+  zh: 'ZCode 风格持久化项目记忆：设置内完整管理页、索引式注入与 agent 记忆工具。'

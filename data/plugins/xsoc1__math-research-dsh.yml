@@ -1,0 +1,6 @@
+url: https://github.com/xsoc1/math-research-dsh
+name: xsoc1/math-research-dsh
+category: skill
+description:
+  en: 'Rigorous open mathematics research suite: four agent skills (rigorous-open-math-research, manage-math-research-program, math-research-workflow, lean-verify) for theorem solving with adversarial audit, research program management, pipeline orchestration, and Lean 4 formalization audit; CI-verified tests and mechanical upstream sync.'
+  zh: 严谨开放数学研究套件：4 个 agent skill（rigorous-open-math-research、manage-math-research-program、math-research-workflow、lean-verify），覆盖对抗性审计的定理求解、研究项目管理、流水线编排与 Lean 4 形式化审计；CI 测试与机械式上游同步。

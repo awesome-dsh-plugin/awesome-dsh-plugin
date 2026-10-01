@@ -1,0 +1,6 @@
+url: https://github.com/xingzhen199186/dsh-insight-tree
+name: xingzhen199186/dsh-insight-tree
+category: dev
+description:
+  en: 'Runtime observability and plugin operations panel for DeepSeek Harness: shows the profile plugin tree, real Loader fiber state, capabilities/dependencies/compatibility, current-session plugin activity and upstream source/version checks, with one-click enable/disable/update/uninstall plus a standalone startup-failure diagnostics page that works while DSH is not running.'
+  zh: 'DeepSeek Harness 的运行可观测与插件运维面板：展示 Profile 插件树、Loader 真实 fiber 状态、能力/依赖/兼容性、本轮会话插件活动与上游来源/版本核验，支持一键关闭/启用/更新/卸载，并提供 DSH 未运行时也能打开的独立启动失败诊断页。'

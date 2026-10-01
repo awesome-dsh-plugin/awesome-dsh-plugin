@@ -1,0 +1,6 @@
+url: https://github.com/NattoCB/dsh-plugin-petdex-market
+name: NattoCB/dsh-plugin-petdex-market
+category: fun
+description:
+  en: Browses the petdex.dev catalog in Settings and runs a floating macOS desktop pet that reacts to agent activity.
+  zh: 在设置中浏览 petdex.dev 宠物市集，并运行一只响应 agent 活动的 macOS 悬浮桌面宠物。

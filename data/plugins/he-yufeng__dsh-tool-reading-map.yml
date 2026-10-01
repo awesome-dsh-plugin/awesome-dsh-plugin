@@ -1,0 +1,6 @@
+url: https://github.com/he-yufeng/dsh-tool-reading-map
+name: he-yufeng/dsh-tool-reading-map
+category: tools
+description:
+  en: 'Give the agent a priority-ranked, coverage-honest map of any codebase before it edits.'
+  zh: '让 agent 在动一个陌生仓库之前，先拿到一份按优先级排序、覆盖率老实的仓库地图。'

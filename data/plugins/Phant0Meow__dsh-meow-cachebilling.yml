@@ -1,0 +1,6 @@
+url: https://github.com/Phant0Meow/dsh-meow-cachebilling
+name: Phant0Meow/dsh-meow-cachebilling
+category: usage
+description:
+  en: 'Per-round cache billing inside the composer context-meter popover: what the current call spends on cache hits, misses, and output in CNY, with automatic official peak/off-peak and per-model pricing; hidden on non-official DeepSeek routes.'
+  zh: '点开输入框旁的上下文圆环即见本轮账单：缓存命中/未命中/输出各花多少钱（¥），官方峰谷价与模型分价自动判定；非 DeepSeek 官方路由不显示。'

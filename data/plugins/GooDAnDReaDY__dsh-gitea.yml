@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-gitea
+name: GooDAnDReaDY/dsh-gitea
+category: git
+description:
+  en: "Gitea and Forgejo integration for DeepSeek Harness with issue, pull-request and worktree tools plus a Git status chip."
+  zh: "为 DeepSeek Harness 集成 Gitea 与 Forgejo，提供 issue、拉取请求和 worktree 工具及 Git 状态芯片。"

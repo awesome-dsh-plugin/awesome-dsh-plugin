@@ -1,0 +1,6 @@
+url: https://github.com/CH4ACKO3/bites-the-dsh
+name: CH4ACKO3/bites-the-dsh
+category: session
+description:
+  en: Adds read-only, scriptable playback to native DSH conversations, with simulated user typing, forward and reverse playback, event stepping, speed control, idle-gap compression, and direct seeking by event, turn, or recorded time.
+  zh: 为 DSH 原生会话加入完全只读、可脚本控制的历史回放，支持模拟用户输入、正放与倒放、逐事件移动、变速、空闲间隔压缩，以及按事件、轮次或记录时间直接跳转。

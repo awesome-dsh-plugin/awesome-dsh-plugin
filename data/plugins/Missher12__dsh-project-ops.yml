@@ -1,0 +1,7 @@
+url: https://github.com/Missher12/dsh-project-ops
+name: Missher12/dsh-project-ops
+category: workflow
+description:
+  en: Discover and run project tasks through Harness Jobs, inspect run receipts, and check project configuration with an Agent tool.
+  zh: 通过 Harness Jobs 发现和执行项目任务，检查运行回执，并使用 Agent 工具诊断项目配置。
+tarball: https://github.com/Missher12/dsh-project-ops/releases/download/v0.3.1/dsh-project-ops-0.3.1.tgz

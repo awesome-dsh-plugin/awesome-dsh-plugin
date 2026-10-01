@@ -1,0 +1,10 @@
+# Copy this file into the awesome-dsh-plugin/awesome-dsh-plugin catalog repo as:
+#   data/plugins/jujiujiang222-cell__dsh-archive-sessions.yml
+# then open a PR (one file per PR). CI requires the listed repository to be at
+# least 1 day old before it accepts the submission.
+url: https://github.com/jujiujiang222-cell/dsh-archive-sessions
+name: jujiujiang222-cell/dsh-archive-sessions
+category: session
+description:
+  en: 'Archived-session manager: an "Archived Sessions" settings page that lists archived sessions and lets you restore or permanently delete each one (two-step confirmation).'
+  zh: '归档会话管理：在设置页新增“归档会话”，列出所有已归档会话，支持恢复与二次确认后的永久删除。'

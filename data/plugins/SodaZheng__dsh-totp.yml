@@ -1,0 +1,6 @@
+url: https://github.com/SodaZheng/dsh-totp
+name: SodaZheng/dsh-totp
+category: security
+description:
+  en: 'TOTP-only access control for personal DeepSeek Harness Web instances, with in-app QR enrollment, single-use recovery codes, live protection controls and lock-all revocation of page access.'
+  zh: '面向个人 DeepSeek Harness Web 实例的纯 TOTP 访问验证，支持设置内扫码绑定、一次性恢复码、动态启停保护和撤销所有页面授权。'

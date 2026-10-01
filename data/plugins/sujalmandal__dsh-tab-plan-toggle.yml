@@ -1,0 +1,6 @@
+url: https://github.com/sujalmandal/dsh-tab-plan-toggle
+name: sujalmandal/dsh-tab-plan-toggle
+category: ui
+description:
+  en: Toggles plan mode from the DSH Web composer with the Tab key, following the composer plan chip state and leaving the / and @ suggestion menus alone.
+  zh: DSH Web 输入框中按 Tab 键切换 plan 模式，跟随输入框 plan 徽章的状态，且不影响 / 与 @ 候选菜单的 Tab 行为。

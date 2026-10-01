@@ -1,0 +1,6 @@
+url: https://github.com/Qing45/dsh-feishu-chat
+name: Qing45/dsh-feishu-chat
+category: notify
+description:
+  en: 'Two-way Feishu (Lark) chat bridge for DeepSeek Harness over the official WebSocket long connection: messages route to the bound workspace''s latest session and replies return automatically; bot credentials and workspace routing are configurable from the settings page.'
+  zh: 基于飞书官方 WebSocket 长连接的 DSH 双向聊天桥：消息路由到所选工作区的最新会话并自动回复，可在设置页切换机器人凭证与工作区。

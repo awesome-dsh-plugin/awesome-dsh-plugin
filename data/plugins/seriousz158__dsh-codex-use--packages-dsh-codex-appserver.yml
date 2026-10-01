@@ -1,0 +1,6 @@
+url: https://github.com/seriousz158/dsh-codex-use/tree/main/packages/dsh-codex-appserver
+name: seriousz158/dsh-codex-use#dsh-codex-appserver
+category: model
+description:
+  en: "Adds OpenAI Codex (ChatGPT) as a selectable DSH provider via the local Codex App Server."
+  zh: "通过本机 Codex App Server，将 OpenAI Codex（ChatGPT）作为可选 DSH Provider。"

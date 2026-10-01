@@ -1,0 +1,6 @@
+url: https://github.com/delock/dsh-whats-up
+name: delock/dsh-whats-up
+category: session
+description:
+  en: What's up - a zero-maintenance status board for your sessions. Scans every conversation on the host, extracts a goal + one-line status per session (multi-provider LLM, fingerprint-cached), surfaces half-done, unanswered and recent work in a sidebar panel, and jumps you back into any session with one click.
+  zh: What's up · 在忙啥——零维护的会话动态看板:host 端扫描全部会话,为每个会话提取「目标 + 一句话现状」(多 provider LLM、按指纹缓存),自动发现做到一半、问了没回、近期在推进的事,点卡片一键跳回会话。

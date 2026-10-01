@@ -1,0 +1,6 @@
+url: https://github.com/MAOLEIJIN/dsh-mattpocock-skills
+name: MAOLEIJIN/dsh-mattpocock-skills
+category: skill
+description:
+  en: 'DSH bundle that vendors the full mattpocock/skills tree, preserves upstream invocation policies, and applies an exact-match DSH semantic overlay checked during automatic upstream synchronization.'
+  zh: '将完整 mattpocock/skills 技能树打包为 DSH 插件，保留上游调用策略，并在自动同步上游时校验和应用精确匹配的 DSH 语义适配层。'

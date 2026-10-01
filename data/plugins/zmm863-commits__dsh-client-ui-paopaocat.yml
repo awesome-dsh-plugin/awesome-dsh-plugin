@@ -1,0 +1,6 @@
+url: https://github.com/zmm863-commits/dsh-client-ui-paopaocat
+name: zmm863-commits/dsh-client-ui-paopaocat
+category: theme
+description:
+  en: 'Fantasy glassmorphism skin for the DSH Web UI: a moonlit nether-forest scene with drifting teal clouds, red spider lilies spreading from the lower-left and a sleeping cat in the corner, drawn over a WebGL2 fluid background with its own wallpaper and video backgrounds. Ships two switchable variants (pale / saturated blue), three bundled background tracks plus uploads kept in local IndexedDB, and cat-paw, fish, bubble and starlight decorations. One switch restores the stock interface exactly.'
+  zh: '为 DSH Web 界面打造的奇幻玻璃拟态皮肤：月光冥界森林，青绿流云缓缓翻涌、绯红彼岸花自左下蔓延、角落里趴着一只睡猫，底层是 WebGL2 流体；另有自定义壁纸与视频背景。内置两套可一键切换的风格（淡雅 / 蓝色）、3 首背景音乐与可上传音乐（存本机 IndexedDB），并有猫爪、小鱼、泡泡、星光装饰。一个开关即可完全还原原生界面。'

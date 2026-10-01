@@ -1,0 +1,6 @@
+url: https://github.com/LuminariSoftwares/context-guardian
+name: LuminariSoftwares/context-guardian
+category: session
+description:
+  en: 'Compaction fallback for compaction-basic: when its LLM summary throws, comes back empty or cannot fit the window, the span is compiled deterministically with a seq pointer on every line (vendored dsh-compaction-instant compiler). Adds recall and search tools, /recall and /context commands, an idle trigger at 45% of the window and an on-disk span archive. The engine mounts as one row in the agent preset (docs/dsh-integration.md).'
+  zh: '为 compaction-basic 提供压缩兜底：当 LLM 摘要抛错、返回空内容或放不进上下文窗口时，改为确定性编译该区段，每行带 seq 指针（内置 dsh-compaction-instant 编译器）。提供 recall、search 工具与 /recall、/context 命令，占用超过窗口 45% 时空闲自动压缩，并将被压缩区段归档到磁盘。引擎以一行配置挂载到 agent preset（见 docs/dsh-integration.md）。'

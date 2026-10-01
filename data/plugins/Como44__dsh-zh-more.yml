@@ -1,0 +1,6 @@
+url: https://github.com/Como44/dsh-zh-more
+name: Como44/dsh-zh-more
+category: ui
+description:
+  en: 'Chinese-first UI enhancement: translates slash-command names and plugin-inventory cards with three display modes (Chinese only / Chinese + English / off), switching instantly without losing English.'
+  zh: 斜杠命令名与插件清单卡片中文化：三种显示模式（只显示中文 / 中英都显示 / 不翻译），中文为主、英文不丢，切换即时生效。

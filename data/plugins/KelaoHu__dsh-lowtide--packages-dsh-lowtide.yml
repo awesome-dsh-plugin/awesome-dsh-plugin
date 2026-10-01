@@ -1,0 +1,7 @@
+url: https://github.com/KelaoHu/dsh-lowtide/tree/main/packages/dsh-lowtide
+name: KelaoHu/dsh-lowtide#dsh-lowtide
+category: workflow
+tarball: https://github.com/KelaoHu/dsh-lowtide/releases/latest/download/dsh-lowtide.tgz
+description:
+  en: 'Lowtide (as in low tide) runs task batches automatically in off-peak hours — a highly customizable task framework with four execution strategies, L1–L3 semi/full-auto adjudication, in-place task editing and preflight checks, built on the Cordis microkernel, one build for both desktop and web.'
+  zh: 'lowtide（退潮）插件能够实现闲时自动批量跑任务——任务框架高度自定义，四种执行策略，L1–L3 半自动/全自动裁决，支持任务编辑与预检，Cordis 微内核集成，桌面网页端通用。'

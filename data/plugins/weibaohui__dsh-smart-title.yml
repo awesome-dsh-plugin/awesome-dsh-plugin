@@ -1,0 +1,6 @@
+url: https://github.com/weibaohui/dsh-smart-title
+name: weibaohui/dsh-smart-title
+category: session
+description:
+  en: "Smart session titles for DSH: after each conversation turn an independent auxiliary LLM call summarizes the full user+assistant transcript into a title that follows the session's real topic instead of echoing the first message; the first message is titled instantly, failed built-in titles auto-retry on later turns, manual renames are never overwritten, and subagent/fork sessions are skipped."
+  zh: 会话智能标题：每轮对话结束后用一次独立的辅助 LLM 调用对「用户消息+助手回答」的完整转写做总结，标题跟随会话真实主题而不是复述第一句话；首条消息即时出题、内置标题失败在后续轮次自动重试、用户手动改名绝不被覆盖、自动跳过子代理与 fork 会话。

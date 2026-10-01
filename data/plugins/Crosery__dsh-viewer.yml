@@ -1,0 +1,7 @@
+url: https://github.com/Crosery/dsh-viewer
+name: Crosery/dsh-viewer
+category: ui
+description:
+  en: 'Model-facing display_file tool that renders 36 file extensions inline in the web UI: images with a click-to-zoom lightbox, seekable video, audio, PDF, Office and OpenDocument files converted to PDF on the host via LibreOffice, and local HTML in a sandboxed frame; bytes stream from a signed HTTP route with range support, and PNG/JPEG/WebP/GIF also enter model context on image-capable routes.'
+  zh: '面向模型的 display_file 工具，在网页 UI 内联渲染 36 种扩展名：图片（点击开灯箱）、可拖进度条的视频、音频、PDF、经 LibreOffice 在 Host 转为 PDF 的 Office 与 OpenDocument 文件，以及沙箱 iframe 中的本地 HTML；字节由带 Range 支持的签名 HTTP 路由流式传输，PNG/JPEG/WebP/GIF 在支持图像输入的路由上同时进入模型上下文。'
+tarball: https://github.com/Crosery/dsh-viewer/releases/latest/download/dsh-viewer.tgz

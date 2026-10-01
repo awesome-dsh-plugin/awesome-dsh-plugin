@@ -1,0 +1,6 @@
+url: https://github.com/Hilbert-beinghappy/seektty
+name: Hilbert-beinghappy/seektty
+category: ui
+description:
+  en: Terminal workspace for DeepSeek Harness with local VS Code JSON/JSONC theme import, inherited terminal background effects, mouse text selection, structured tool and diff views, Session/Profile/plugin management, and Skill/MCP browsers.
+  zh: 面向 DeepSeek Harness 的终端工作区，支持导入本地 VS Code JSON／JSONC 主题、继承终端背景效果、鼠标文本选择、结构化工具与 Diff 视图、Session／Profile／插件管理，以及 Skill／MCP 浏览。

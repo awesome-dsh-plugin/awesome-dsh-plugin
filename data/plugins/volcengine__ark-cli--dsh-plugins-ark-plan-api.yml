@@ -1,0 +1,7 @@
+url: https://github.com/volcengine/ark-cli/tree/main/dsh-plugins/ark-plan-api
+name: volcengine/ark-cli#ark-plan-api
+category: model
+tarball: https://github.com/volcengine/ark-cli/releases/download/dsh-plugins%2Fv0.1.0/ark-plan-api.tgz
+description:
+  en: Registers Ark Agent Plan, Coding Plan and postpaid model routes in the native DSH model picker.
+  zh: 在 DSH 原生模型选择器中注册方舟 Agent Plan、Coding Plan 与后付费模型路由。

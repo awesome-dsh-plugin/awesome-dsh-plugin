@@ -1,0 +1,6 @@
+url: https://github.com/MaRi23333/dsh-serverchan-watchdog
+name: MaRi23333/dsh-serverchan-watchdog
+category: notify
+description:
+  en: 'Unofficial host-side ServerChan alerts for DeepSeek Harness: sends a mobile reminder when an approval, plan review, or question stays unanswered past a configurable threshold, even with the browser closed.'
+  zh: 'DeepSeek Harness 的第三方 Server酱提醒插件：在主机端监控审批、计划评审和问答，超过设定时间仍未处理时发送手机提醒，无需保持浏览器打开。'

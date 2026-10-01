@@ -1,0 +1,6 @@
+url: https://github.com/SISCHOI/daruma/tree/main/packages/dsh-daruma
+name: SISCHOI/daruma#dsh-daruma
+category: model
+description:
+  en: 'Keeps long DSH sessions alive when a model channel starts failing: daruma takes over after the in-box retry gives up, trips a self-healing circuit breaker on repeated 429/5xx or a terminal error, and moves the next request to another channel in your chain. A panel beside the composer picks the backup by hand, switches show up as rows in the conversation, and every decision lands in a durable JSONL audit log.'
+  zh: '渠道开始失败时不让长任务中断：内置重试放弃后 daruma 接管，对连续 429/5xx 或终止性错误跳闸自愈断路器，把下一个请求切到链上的其他渠道。输入框旁的面板可手动挑选备用渠道，切换会在会话里显示为提示行，每次决策都落盘成可审计的 JSONL 日志。'

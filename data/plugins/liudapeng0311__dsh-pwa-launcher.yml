@@ -1,0 +1,7 @@
+url: https://github.com/liudapeng0311/dsh-pwa-launcher
+name: liudapeng0311/dsh-pwa-launcher
+category: ui
+tarball: https://github.com/liudapeng0311/dsh-pwa-launcher/releases/download/v1.10.3/dsh-pwa-launcher-1.10.3.tgz
+description:
+  en: 'Turns the browser PWA shortcut already on your desktop into a real launcher: it adopts that shortcut and keeps its icon, then starts dsh web silently on double-click and opens the app window; adds restart and dsh self-update (with rollback) controls to the web UI. Windows only.'
+  zh: 接管你桌面上已有的浏览器 PWA 快捷方式（保留原图标），双击即静默拉起 dsh web 并以应用窗口打开界面；网页右上角提供重启与 dsh 自助升级（失败自动回滚）两个控件。仅 Windows。

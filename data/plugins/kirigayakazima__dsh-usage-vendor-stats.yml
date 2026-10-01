@@ -1,0 +1,6 @@
+url: https://github.com/kirigayakazima/dsh-usage-vendor-stats
+name: kirigayakazima/dsh-usage-vendor-stats
+category: usage
+description:
+  en: 'Vendor-based usage dashboard: per-provider token/cache/output KPI, a 53-week heatmap, trend chart with hourly "today" view, model drilldown, cost estimation, CSV export, and health cards (TTFT, generation speed, peak context, error rate).'
+  zh: 按厂商（订阅/官方API）统计用量看板：按供应商/模型拆分 Token、缓存、输出等 KPI，53 周热力图，趋势折线图（今天按小时），模型钻取，费用估算，CSV 导出，以及健康度卡片（TTFT、生成速度、峰值 Context、错误率）。

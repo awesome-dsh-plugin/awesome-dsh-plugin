@@ -1,0 +1,6 @@
+url: https://github.com/dingyi580/dsh-conversation-rail
+name: dingyi580/dsh-conversation-rail
+category: ui
+description:
+  en: 'Left-edge conversation rail for the Web UI: one bar per turn, length scaled to the turn text, hover for a question and answer preview, click to jump; bars come from a host-side outline of the whole session log, so turns outside the loaded window are drawn too and history is paged in on click.'
+  zh: '对话左缘的导航轨：一根杠一轮对话，杠长按该轮文字体量，悬停出提问与回答预览，点击跳转；杠来自 host 侧读整份会话日志折出的大纲，未加载进窗口的轮次也画得出来，点击时再翻页补历史。'

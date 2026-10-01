@@ -1,0 +1,6 @@
+url: https://github.com/PolinniZhong/dsh-session-workbench
+name: PolinniZhong/dsh-session-workbench
+category: session
+description:
+  en: 'Session Workbench: full-text search past sessions, recall up to 3 as @references, and manage conversation-view tabs (show/hide + drag reorder).'
+  zh: '会话工作台：全文搜索历史会话、一键 @引用 召回最多 3 个，并管理会话视图标签栏（显示/隐藏 + 拖拽排序）。'

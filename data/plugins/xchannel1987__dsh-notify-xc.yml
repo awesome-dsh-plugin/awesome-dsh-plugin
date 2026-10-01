@@ -1,0 +1,6 @@
+url: https://github.com/xchannel1987/dsh-notify-xc
+name: xchannel1987/dsh-notify-xc
+category: notify
+description:
+  en: "Browser notification plugin for DeepSeek Harness - system toasts when a task finishes, a run errors, or your input is needed (question / approval / plan review), click to open the session, per-type toggles, and no false 'done' while the main session waits on its subagents."
+  zh: "DSH 浏览器通知插件 - 任务完成 / 运行出错 / 需要你回答、批准、审阅计划时弹系统级通知，点击气泡直达会话，三类通知独立开关，主会话等子代理期间不误报完成。"

@@ -1,0 +1,6 @@
+url: https://github.com/Noelune/unified-agent-memory
+name: Noelune/unified-agent-memory
+category: memory
+description:
+  en: 'One shared Obsidian vault for every agent: dependency-free Python core (search/promote/adjudicate/forget), vault template, dsh plugin (memory_search/show/submit/status).'
+  zh: 多 Agent 共享一个 Obsidian vault：零依赖 Python core（检索/晋升/裁决/遗忘）+ vault 模板 + dsh 插件（memory_search/show/submit/status）。

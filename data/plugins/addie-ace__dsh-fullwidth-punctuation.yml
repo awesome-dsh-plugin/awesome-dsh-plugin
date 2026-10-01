@@ -1,0 +1,7 @@
+url: https://github.com/addie-ace/dsh-fullwidth-punctuation
+name: addie-ace/dsh-fullwidth-punctuation
+category: docs
+description:
+  en: Converts half-width punctuation in AI replies to full-width Chinese punctuation, so copied answers stay publication-ready.
+  zh: 将 AI 回答中的半角标点转换为中文全角标点，让复制的回答可直接用于公文材料。
+tarball: https://github.com/addie-ace/dsh-fullwidth-punctuation/releases/download/v0.1.0/dsh-fullwidth-punctuation-0.1.0.tgz

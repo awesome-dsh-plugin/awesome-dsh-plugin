@@ -1,0 +1,6 @@
+url: https://github.com/Yinxe/deepseek-harness-plugins/tree/main/plugins/vision-bridge
+name: Yinxe/deepseek-harness-plugins#vision-bridge
+category: vision
+description:
+  en: 'Let text-only models see images: when a picture arrives with a placeholder like [image omitted because this model accepts text only], the model calls the vision_describe tool and the plugin forwards the image reference plus the question to a multimodal model, retrying with a fallback model on failure. Configured in the settings page and persisted via the official settings API.'
+  zh: '让纯文本模型也能看图：消息中出现图片占位符时模型调用 vision_describe 工具，插件把本轮图片引用与提问一起转交给多模态视觉模型识别，主模型失败时自动用备用模型重试。配置在设置页完成并通过官方 settings API 持久化到 settings.yaml，热重载不丢。'

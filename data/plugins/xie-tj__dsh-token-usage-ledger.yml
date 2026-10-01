@@ -1,0 +1,6 @@
+url: https://github.com/xie-tj/dsh-token-usage-ledger
+name: xie-tj/dsh-token-usage-ledger
+category: usage
+description:
+  en: Persistent token-usage ledger and Web Usage dashboard for DeepSeek Harness.
+  zh: 为 DeepSeek Harness 提供持久化 token 用量账本和 Web Usage 仪表盘。

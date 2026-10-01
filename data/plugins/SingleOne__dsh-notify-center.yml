@@ -1,0 +1,6 @@
+url: https://github.com/SingleOne/dsh-notify-center
+name: SingleOne/dsh-notify-center
+category: notify
+description:
+  en: Native desktop and webhook notifications for turn completions, failures, and approval requests, with outcome filters, content rules, privacy controls, and retrying delivery.
+  zh: 回合完成、失败和待审批时发送跨平台本机通知与 Webhook，支持结果过滤、内容规则、隐私控制和失败重试。

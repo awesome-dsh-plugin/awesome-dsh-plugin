@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-model-fold
+name: loyalchiiina/dsh-model-fold
+category: model
+description:
+  en: 'Groups the model picker by provider: the menu lists sources first, and each source opens its models in a slide-in side panel (default) or inline below the title, switchable by double-clicking the source title.'
+  zh: '把模型选择菜单按来源（provider）分组：菜单先列出来源，点来源从右侧滑出子面板列出该来源的全部模型（默认），双击来源标题可切换为在列表内就地展开。'

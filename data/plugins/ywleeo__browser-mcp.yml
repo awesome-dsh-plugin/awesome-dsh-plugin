@@ -1,0 +1,6 @@
+url: https://github.com/ywleeo/browser-mcp
+name: ywleeo/browser-mcp
+category: browser
+description:
+  en: 'Drives a real Chrome through a local MCP server so the agent can search Google/Bing/Sogou, read any page including JS-rendered and login-only content, automate click/scroll/type/key-press/select in a background window, and run platform search/detail/comment/download for Zhihu, Xiaohongshu, Douyin, Bilibili, X and Reddit; resumable comments, SHA-256-verified downloads, cookies never returned, localhost only.'
+  zh: 通过本地 MCP server 驱动你真实的 Chrome：可搜索 Google/Bing/搜狗、读取任意页面（含 JS 渲染与登录后内容）、在后台窗口自动化点击/滚动/输入/按键/选择，并为知乎、小红书、抖音、Bilibili、X、Reddit 提供平台级搜索/详情/评论/下载；评论断点续抓、下载 SHA-256 校验、不返回 cookie、仅本地回环。

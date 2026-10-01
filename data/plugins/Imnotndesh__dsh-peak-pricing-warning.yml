@@ -1,0 +1,6 @@
+url: https://github.com/Imnotndesh/dsh-peak-pricing-warning
+name: Imnotndesh/dsh-peak-pricing-warning
+category: ui
+description:
+  en: 'Shows DeepSeek peak/off-peak pricing status, a countdown to the next rate change, and the estimated session cost as inline text beside the model selector.'
+  zh: '在模型选择器旁以行内文字显示 DeepSeek 峰谷定价状态、距下一次调价的倒计时，以及本次会话的预估费用。'

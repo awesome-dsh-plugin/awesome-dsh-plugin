@@ -1,0 +1,6 @@
+url: https://github.com/ciskonc/dsh-context-imports
+name: ciskonc/dsh-context-imports
+category: memory
+description:
+  en: Reads the files that AGENTS.md references with @path imports and injects their content into model context at session start, with byte budgets, compaction re-seeding and a six-language settings card.
+  zh: 把 AGENTS.md 里 @路径 引用的文件读出来，在会话启动时注入模型上下文；带字节预算、压缩后重新注入和六语言设置卡片。

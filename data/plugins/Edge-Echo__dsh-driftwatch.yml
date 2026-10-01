@@ -1,0 +1,6 @@
+url: https://github.com/Edge-Echo/dsh-driftwatch
+name: Edge-Echo/dsh-driftwatch
+category: session
+description:
+  en: "Behavior-drift reports for DSH sessions: compares two session logs and reports tool-sequence alignment, tool mix, reasoning volume, timing, retries and file targets, with an optional CI threshold gate. Zero dependencies."
+  zh: "DSH 会话的行为漂移报告：对比两份 session log，输出工具序列对齐、工具构成、推理量、耗时、重试与文件目标的差异，并支持可选的 CI 阈值门禁。零依赖。"

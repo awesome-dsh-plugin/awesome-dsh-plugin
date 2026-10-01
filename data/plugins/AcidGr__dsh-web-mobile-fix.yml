@@ -1,0 +1,6 @@
+url: https://github.com/AcidGr/dsh-web-mobile-fix
+name: AcidGr/dsh-web-mobile-fix
+category: ui
+description:
+  en: 'Mobile layout fixes for the Web UI on narrow screens: full-screen settings panel, one-row plugin nav, full-screen sidebar, centered popups, icon-only session-log button.'
+  zh: Web UI 移动端布局修复：窄屏下设置面板全屏化、插件导航单行排满、侧边栏全屏、弹层居中、会话日志按钮图标化。

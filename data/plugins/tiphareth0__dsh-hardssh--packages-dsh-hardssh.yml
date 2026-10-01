@@ -1,0 +1,6 @@
+url: https://github.com/tiphareth0/dsh-hardssh/tree/master/packages/dsh-hardssh
+name: tiphareth0/dsh-hardssh#dsh-hardssh
+category: remote
+description:
+  en: 'SSH workspace and operations for DeepSeek Harness: bind a server directory as a workspace whose fs/subprocess calls route to the remote host via cordis seam replacement, plus web terminal, file transfers, tunnels, cluster runs and host management.'
+  zh: '为 DeepSeek Harness 提供 SSH 工作区与运维：把服务器目录绑定为工作区，fs/命令经 cordis seam 替换透明路由到远端主机，并带 Web 终端、文件传输、隧道、集群执行与主机管理。'

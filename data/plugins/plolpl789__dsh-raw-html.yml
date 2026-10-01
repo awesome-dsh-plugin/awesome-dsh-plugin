@@ -1,0 +1,6 @@
+url: https://github.com/plolpl789/dsh-raw-html
+name: plolpl789/dsh-raw-html
+category: ui
+description:
+  en: Renders agent HTML output as real UI in the DeepSeek Harness web GUI, with visual cards, KaTeX math, Mermaid diagrams, built-in open-source fonts, and design-spec injection.
+  zh: 让 DeepSeek Harness Web GUI 把 agent 输出的 HTML 渲染成真实界面，支持视觉卡片、KaTeX 公式、Mermaid 图表与内置开源字体，并向 agent 注入设计规范。

@@ -1,0 +1,6 @@
+url: https://github.com/niyongsheng/free-vision-skill
+name: niyongsheng/free-vision-skill
+category: vision
+description:
+  en: 'Fully-local image understanding & OCR via macOS Vision Framework: `ocr_image` (text, table layout + coordinates) and `view_image` (scene, faces, QR) — paste multiple images into the web input box or pass path/URL/base64; images never leave your Mac.'
+  zh: 基于 macOS Vision Framework 的全本地识图插件：`ocr_image`（文字提取，表格结构+坐标）与 `view_image`（场景/人脸/二维码）；web 输入框可直接粘贴多张图片，图片永不离开你的 Mac。

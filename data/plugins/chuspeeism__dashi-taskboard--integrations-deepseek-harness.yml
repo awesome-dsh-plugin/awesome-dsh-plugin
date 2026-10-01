@@ -1,0 +1,6 @@
+url: https://github.com/chuspeeism/dashi-taskboard/tree/main/integrations/deepseek-harness
+name: chuspeeism/dashi-taskboard#deepseek-harness
+category: workflow
+description:
+  en: Embeds the active installed Codex Taskboard runtime in the DeepSeek Harness sidebar, using its launcher runtime descriptor instead of a fixed port.
+  zh: 把当前已安装并运行中的 Codex Taskboard 嵌入 DeepSeek Harness 侧边栏，并通过 Launcher 运行时描述文件连接，而不是使用固定端口。

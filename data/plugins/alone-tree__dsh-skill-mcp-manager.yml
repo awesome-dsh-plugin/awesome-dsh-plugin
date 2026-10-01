@@ -1,0 +1,6 @@
+url: https://github.com/alone-tree/dsh-skill-mcp-manager
+name: alone-tree/dsh-skill-mcp-manager
+category: tools
+description:
+  en: 'One-stop visual management of DSH Skills & MCP: on-demand MCP loading, in-session hot reload, SKILL & MCP descriptions viewable in the plugin.'
+  zh: '一站式可视化管理 DSH 的 SKILL 与 MCP：MCP按需加载、会话内热重载、SKILL与MCP描述可在插件内直接查看'

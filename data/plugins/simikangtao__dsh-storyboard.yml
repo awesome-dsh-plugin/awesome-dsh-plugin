@@ -1,0 +1,6 @@
+url: https://github.com/simikangtao/dsh-storyboard
+name: simikangtao/dsh-storyboard
+category: docs
+description:
+  en: 'End-of-chat visual storyboard: a storyboard tool renders a self-contained HTML card (inline SVG diagram, numbered flow, facts grid, timeline) from a JSON spec, writes it under ~/.dsh/storyboard/<session>/ and opens it in the sidebar; a system-prompt section and a /storyboard command trigger generation. Server-only, zero runtime dependencies.'
+  zh: '对话收尾可视化故事板：storyboard 工具把 JSON 规范渲染为自包含 HTML 卡片（内嵌 SVG 流程图、编号步骤、事实网格、时间线），写入 ~/.dsh/storyboard/<session>/ 并在侧边栏打开；系统提示词段落与 /storyboard 命令触发生成。纯服务端、零运行时依赖。'

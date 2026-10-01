@@ -1,0 +1,6 @@
+url: https://github.com/skyzhao1223/dsh-agent-token-stats
+name: skyzhao1223/dsh-agent-token-stats
+category: usage
+description:
+  en: 'Cross-agent token usage dashboard: aggregates local conversation logs from Claude Code, OpenCode, Cursor IDE, DSH, OpenClaw, CodeWhale, Hermes and more into a persistent ledger that survives log deletion, with cache-hit rate, cost estimation, period comparison and day drill-down analytics in a sidebar panel.'
+  zh: '跨 Agent 的 token 用量看板:聚合 Claude Code、OpenCode、Cursor、DSH、OpenClaw、CodeWhale、Hermes 等本地对话日志,台账持久化(删除聊天记录后历史仍留存),提供缓存命中率、成本估算、环比对比与当日下钻分析的侧边栏面板。'

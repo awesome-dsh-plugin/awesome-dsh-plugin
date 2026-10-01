@@ -1,0 +1,6 @@
+url: https://github.com/knighthongyu/dsh-handoff-compaction
+name: knighthongyu/dsh-handoff-compaction
+category: memory
+description:
+  en: Compresses older DSH context into a structured handoff, retains recent messages, and keeps session history searchable.
+  zh: 将较早的 DSH 上下文压缩为结构化交接，保留最近消息，并让会话历史保持可搜索。

@@ -1,0 +1,6 @@
+url: https://github.com/yxy050208/multisim-mcp/tree/main/integrations/deepseek-harness
+name: yxy050208/multisim-mcp#deepseek-harness
+category: tools
+description:
+  en: Connects DeepSeek Harness to Multisim MCP for circuit generation, simulation, diagnostics, design optimization, and experiment report export.
+  zh: 将 DeepSeek Harness 连接到 Multisim MCP，用于生成电路、运行仿真、诊断与优化设计，并导出实验报告。

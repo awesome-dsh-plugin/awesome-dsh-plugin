@@ -1,0 +1,6 @@
+url: https://github.com/yoshino-xiao7/dsh-codex
+name: yoshino-xiao7/dsh-codex
+category: model
+description:
+  en: 'Community Codex provider for DeepSeek Harness with ChatGPT OAuth, Codex models, image input, quota display, per-session Fast and transport controls, and safe stream recovery.'
+  zh: 'DeepSeek Harness 社区 Codex 模型接入：支持 ChatGPT OAuth、Codex 模型、图片输入、额度展示、单会话 Fast 与传输控制，以及安全的流式恢复。'

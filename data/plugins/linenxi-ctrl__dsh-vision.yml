@@ -1,0 +1,6 @@
+url: https://github.com/linenxi-ctrl/dsh-vision
+name: linenxi-ctrl/dsh-vision
+category: vision
+description:
+  en: 'External vision plugin for DeepSeek Harness: whale-button config panel, image recognition with auto-reply, and agent screenshot/recognize tools.'
+  zh: 外挂识图插件：鲸鱼按钮配置面板、图片识图自动回传、模型自主截图识图工具。

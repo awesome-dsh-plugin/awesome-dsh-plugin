@@ -1,0 +1,6 @@
+url: https://github.com/BOWLUNA/dsh-custom-mode/tree/main/editor
+name: BOWLUNA/dsh-custom-mode#editor
+category: identity
+description:
+  en: 'Custom modes / assistant manager: give each mode its own system prompt in the settings page — a custom prompt that is a plain file the agent loop re-reads before every model step, so an edit applies to the running session on its next step — and start it from the official standard / PTC / minimal / Cordis composition, toggling the plugin rows it mounts one by one (a custom plugin composition per mode), renaming it as you like. Several assistants coexist with their own prompts, so one machine can keep a coding assistant, a chat companion and a roleplay (RP) persona side by side — a multi-agent setup you pick from per new session. Rows left untouched stay byte-identical to the shipped ones, platform conditions included.'
+  zh: '自定义模式管理器 / 多助手管理器：在设置页里给每个模式写一份自己的系统提示词——自定义提示词就是普通文件，agent loop 每次模型调用前重新读取，改完对正在运行的会话下一步即生效；模式以官方 standard / PTC / 极简 / Cordis 的组成为底子，可逐行开关它挂载哪些插件，等于每个模式一份自定义插件组合，也能改模式名。多个助手可并存、各有各的提示词，所以一台机器上可以同时留一个编码助手、一个聊天搭子、一个角色扮演（RP）人格，新建会话时挑一个。没碰过的行与出厂行逐字节相同（含平台条件）。'

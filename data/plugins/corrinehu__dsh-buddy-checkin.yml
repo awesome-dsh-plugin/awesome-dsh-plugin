@@ -1,0 +1,6 @@
+url: https://github.com/corrinehu/dsh-buddy-checkin
+name: corrinehu/dsh-buddy-checkin
+category: ui
+description:
+  en: Runs the WorkBuddy (CN) daily check-in on DSH startup — discovers every account logged in on this machine, claims the daily credits, and shows a status entry on the session title line with a details panel and failed-account retry.
+  zh: DSH 启动时自动完成 WorkBuddy 国内版账号的每日签到：自动发现本机登录过的全部账号并领取积分，会话标题行显示状态入口，面板可查明细并重试失败账号。

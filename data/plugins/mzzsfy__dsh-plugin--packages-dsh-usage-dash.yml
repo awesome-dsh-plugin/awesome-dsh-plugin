@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-usage-dash
+name: mzzsfy/dsh-plugin#dsh-usage-dash
+category: usage
+description:
+  en: 'Session usage statistics panel: token and request stats at day/hour/minute granularity, an activity heatmap, bottom-bar session info takeover with per-turn cost chips, and cost estimation under multi-condition time-segmented pricing. Re-implemented from HaoyueQin/dsh-usage-statistics-panel with extensions.'
+  zh: '会话用量统计面板：天/小时/分钟三粒度 token 与请求统计、活跃热力图、会话底栏信息接管与回合费用芯片、多条件分时段定价费用估算；复刻自 HaoyueQin/dsh-usage-statistics-panel 并扩展。'
+

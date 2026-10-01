@@ -1,0 +1,6 @@
+url: https://github.com/runcat-tommy/dsh-chinese-poetry
+name: runcat-tommy/dsh-chinese-poetry
+category: ui
+description:
+  en: Token-free Chinese classical poetry tab in the DSH conversation view with search, filters, 飞花令, daily poem, favorites, festival topics and a share-card image; AI explanation reuses your own DSH session.
+  zh: 免 token 诗词查询插件，在会话页头新增「诗词」标签页，支持搜索、筛选、飞花令、每日一首、收藏、简繁、节日专题与分享卡片图；AI 解读复用 DSH 会话。

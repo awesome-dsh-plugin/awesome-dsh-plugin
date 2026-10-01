@@ -1,0 +1,7 @@
+url: https://github.com/hoyyang/dsh-android-pane
+name: hoyyang/dsh-android-pane
+category: tools
+tarball: https://github.com/hoyyang/dsh-android-pane/releases/download/v0.1.0/dsh-external-dsh-android-pane-0.1.0.tgz
+description:
+  zh: "在 DSH 对话旁打开 Android 设备实时画面面板：scrcpy-server H.264 串流（WebCodecs 硬解 30-60fps），agent 可点按/滑动/输入并自动回截图验证，uiautomator 控件树带点按坐标，host 托管录屏+logcat 调试会话；FLAG_SECURE 安全页面自动识别、缓解链与控件树文本降级。模拟器与 USB 真机通吃，人机共屏，会话隔离，仅限本机回环。"
+  en: "Live Android device pane next to your DSH conversation: scrcpy-server H.264 streaming (WebCodecs, 30-60 fps), agent tap/swipe/text with auto-screenshot verification, uiautomator element tree with tap coordinates, host-managed recording + logcat debug sessions. FLAG_SECURE pages are detected automatically with a mitigation chain and a tappable text-view fallback. Emulators and USB real phones, human+agent co-operation, session-isolated, loopback-only."

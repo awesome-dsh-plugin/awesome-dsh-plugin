@@ -1,0 +1,6 @@
+url: https://github.com/abbccdd/dsh-panel-tint
+name: abbccdd/dsh-panel-tint
+category: ui
+description:
+  en: Add independent opacity controls for the sidebar, message panels and composer in dsh web.
+  zh: 为 dsh web 的侧边栏、正文框和输入框提供独立的不透明度控制。

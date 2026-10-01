@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-subscriptions
+name: GooDAnDReaDY/dsh-subscriptions
+category: model
+description:
+  en: "Registers ChatGPT Codex, Claude, Grok and Antigravity subscriptions as DeepSeek Harness LLM providers through OAuth, so no API key is needed for them."
+  zh: "通过 OAuth 将 ChatGPT Codex、Claude、Grok 与 Antigravity 订阅注册为 DeepSeek Harness 的 LLM 提供方，无需为其配置 API Key。"

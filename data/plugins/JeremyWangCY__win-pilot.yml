@@ -1,0 +1,6 @@
+url: https://github.com/JeremyWangCY/win-pilot
+name: JeremyWangCY/win-pilot
+category: tools
+description:
+  en: "Windows computer-use plugin for AI agents with reusable window targets, UI Automation, window-bound screenshots, background-first verified input, isolated Chromium automation, MCP, CLI, and installable skills."
+  zh: "面向 AI Agent 的 Windows 电脑操控与 computer use 插件，支持可复用窗口目标、UIA 无障碍定位、窗口绑定截图、后台优先的验证输入、隔离 Chromium 自动化、MCP、CLI 和可安装 Skill。"

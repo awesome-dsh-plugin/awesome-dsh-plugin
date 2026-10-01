@@ -1,0 +1,6 @@
+url: https://github.com/Young4ever33/dsh-token-attention
+name: Young4ever33/dsh-token-attention
+category: usage
+description:
+  en: "Token attention management panel for DeepSeek Harness: per-task/day/week/month token usage and cost tracking (input hit/miss, output, reasoning), DeepSeek peak/off-peak pricing, task-type recognition, and advice on when to switch sessions, write a hand-off, or compact context."
+  zh: "Token 注意力管理面板：按任务/日/周/月记录 token 消耗与费用（命中/未命中/输出/推理四桶），支持 DeepSeek 峰谷计价与任务类型识别，并给出换对话、写 hand-off、压缩上下文的建议。"

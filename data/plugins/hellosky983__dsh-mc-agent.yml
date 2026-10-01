@@ -1,0 +1,6 @@
+url: https://github.com/hellosky983/dsh-mc-agent
+name: hellosky983/dsh-mc-agent
+category: fun
+description:
+  en: 'AI-assisted Minecraft for DeepSeek Harness: drive an autonomous Mineflayer agent (survival, mining, chat, live map) with vision/control tools, plus a built-in launcher (Microsoft sign-in, version download, game launch).'
+  zh: '面向 DeepSeek Harness 的 AI 辅助 Minecraft：驱动自主的 Mineflayer 代理（生存、挖矿、聊天、实时地图）与视觉/控制工具，另内置启动器（微软登录、版本下载、游戏启动）。'

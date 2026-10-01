@@ -1,0 +1,6 @@
+url: https://github.com/severin-ye/uagent-sync/tree/master/packages/dsh
+name: severin-ye/uagent-sync#packages/dsh
+category: workflow
+description:
+  en: Cross-device workspace backup, restore, and ecosystem update via the uagent-sync CLI.
+  zh: 工作区跨设备备份、恢复与扩展更新，经 uagent-sync CLI 桥接执行。

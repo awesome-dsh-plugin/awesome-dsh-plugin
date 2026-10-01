@@ -1,0 +1,6 @@
+url: https://github.com/fxylabs/superself/tree/main/apps/dsh-plugin
+name: fxylabs/superself#dsh-plugin
+category: workflow
+description:
+  en: Superself's self CLI as model-facing tools (project context, work units, reports, decisions) plus a /self command — cross-session, cross-project project state kept outside the code repo.
+  zh: 把 Superself 的 self CLI 暴露为模型工具（项目上下文、工作单元、报告、决策）并提供 /self 命令——跨会话、跨项目的项目状态，保存在代码仓库之外。

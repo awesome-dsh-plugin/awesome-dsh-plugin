@@ -1,0 +1,7 @@
+url: https://github.com/Raphaelutumn/dsh-change-budget
+name: Raphaelutumn/dsh-change-budget
+category: dev
+tarball: https://github.com/Raphaelutumn/dsh-change-budget/releases/download/v0.1.0/dsh-change-budget-0.1.0.tgz
+description:
+  en: Configurable per-turn budgets for supported file mutations, limiting distinct files, mutation calls, and UTF-8 payload bytes before tool execution.
+  zh: 为受支持的文件修改设置可配置的逐回合额度，在工具执行前限制不同文件数、修改调用数与 UTF-8 载荷字节数。

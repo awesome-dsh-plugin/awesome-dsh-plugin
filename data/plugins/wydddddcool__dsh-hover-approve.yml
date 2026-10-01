@@ -1,0 +1,6 @@
+url: https://github.com/wydddddcool/dsh-hover-approve
+name: wydddddcool/dsh-hover-approve
+category: ui
+description:
+  en: Anchors an approve/answer bubble to each DSH Web sidebar session row — one-click handling of authorization, questions, plan reviews and blocked goals without opening the conversation.
+  zh: DSH Web 侧边栏锚定气泡：会话待授权、提问、计划确认、目标阻断时在会话行旁自动弹出并一键处理，无需点进会话。

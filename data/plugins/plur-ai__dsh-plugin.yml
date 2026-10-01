@@ -1,0 +1,6 @@
+url: https://github.com/plur-ai/dsh-plugin
+name: plur-ai/dsh-plugin
+category: memory
+description:
+  en: PLUR memory rendered into the system prompt on each assembly rather than exposed as a tool call, so the block is replaced instead of appended and context stays flat across a session. Fully local hybrid search (BM25 + BGE fused with RRF), plain YAML storage you can edit, per-workspace scoping, and a /plur-memory browser.
+  zh: PLUR 记忆在每次组装时渲染进系统提示词，而非以工具调用形式暴露，因此记忆块是被替换而不是追加，整段会话的上下文长度保持不变。全本地混合检索（BM25 + BGE，RRF 融合）、可直接编辑的纯 YAML 存储、按工作区划分 scope，并提供 /plur-memory 浏览器界面。

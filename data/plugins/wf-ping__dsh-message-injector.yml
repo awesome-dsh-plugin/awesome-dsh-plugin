@@ -1,0 +1,6 @@
+url: https://github.com/wf-ping/dsh-message-injector
+name: wf-ping/dsh-message-injector
+category: ui
+description:
+  en: 'Presets message-injection content combos and auto-injects them into every message.'
+  zh: '预设消息注入内容组合，每条消息自动注入输入框首行。'

@@ -1,0 +1,6 @@
+url: https://github.com/ffyuuu/dsh-llm-longcat
+name: ffyuuu/dsh-llm-longcat
+category: model
+description:
+  en: 'LongCat-2.0 LLM adapter: 1M context, binary thinking mode, tool calling, and streaming over the OpenAI-compatible endpoint.'
+  zh: 'LongCat-2.0 模型适配器：100 万上下文、二元思考模式、工具调用，基于 OpenAI 兼容接口的流式输出。'

@@ -1,0 +1,6 @@
+url: https://github.com/Zoria-Lind/dsh-token-optimizer
+name: Zoria-Lind/dsh-token-optimizer
+category: usage
+description:
+  en: 'Token-cost pipeline for DeepSeek Harness: pressure-aware layered compaction (lossless projection below 40% context pressure, LLM summarization above), per-agent tool allowlisting, long-text-to-image with vision summarization, and a /token-status command tracking pressure, tiers, and saved tokens.'
+  zh: 'token 优化管道：按上下文压力分层压缩（40% 以下无损投影、以上 LLM 摘要）、按 agent 裁剪工具列表、长文本转图片视觉摘要、/token-status 查看压力与节省量。'

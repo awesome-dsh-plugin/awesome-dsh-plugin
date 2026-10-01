@@ -1,0 +1,6 @@
+url: https://github.com/iamfromchangsha/dsh-go-balance
+name: iamfromchangsha/dsh-go-balance
+category: usage
+description:
+  en: 'OpenCode Go balance pill at the right end of the composer tool row: rolling/weekly/monthly quota remaining straight from the Zen usage endpoint, with hover detail and warn/danger coloring.'
+  zh: 输入框工具行右侧的 OpenCode Go 余额胶囊：滚动/每周/每月配额剩余百分比（数据直接来自 Zen 用量接口），悬停查看明细，低余额自动变黄/变红。

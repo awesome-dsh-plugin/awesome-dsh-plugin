@@ -1,0 +1,6 @@
+url: https://github.com/CypherNaught-0x/DSH-Subagent-Model-Router
+name: CypherNaught-0x/DSH-Subagent-Model-Router
+category: model
+description:
+  en: 'Automatically and intelligently routes each delegated task to the best configured model using aliases, capability tags, and usage guidance—keeping routine work fast and affordable while sending complex work to stronger specialists. Configure your model team in the Web UI or guided setup, run specialists in parallel with reliable result joining, and see the chosen model at a glance in subagent views and inline in Better Sidebar''s Tasks tree.'
+  zh: 借助别名、能力标签和使用说明，将每项委派任务自动智能路由到最合适的已配置模型——常规工作更快、更省，复杂任务则交给更强的专用模型。可通过 Web 设置页或引导流程组建模型团队，让多个专家并行工作并可靠汇总结果；所选模型会显示在子代理视图中，并以内联标签无缝融入 Better Sidebar 的 Tasks 任务树。

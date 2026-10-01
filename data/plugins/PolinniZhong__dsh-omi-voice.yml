@@ -1,0 +1,6 @@
+url: https://github.com/PolinniZhong/dsh-omi-voice
+name: PolinniZhong/dsh-omi-voice
+category: voice
+description:
+  en: 'In-chat read-aloud for DeepSeek Harness: tap to read, pause and resume AI replies with natural Doubao TTS voices (BYOK), reading only the final answer with code, tables and diagrams filtered; local engine, plugin keeps no API key.'
+  zh: 'DeepSeek Harness 对话内朗读：点一下即可朗读、暂停、继续 AI 回复，豆包 TTS 自然音色（BYOK），只读最终回答并过滤代码、表格与图形，本地引擎，插件零 Key。'

@@ -1,0 +1,6 @@
+url: https://github.com/wangzhanchao883/dsh-hold-to-talk
+name: wangzhanchao883/dsh-hold-to-talk
+category: voice
+description:
+  en: 'One-handed, keyboard-free input for the composer: press and hold the mouse on the input box, speak, release — the text lands in the draft, and sliding up cancels without leaving a half sentence behind. No mic button to aim at and no shortcut to remember; the hand never has to leave the input area, which is the point when the other hand is busy. Recognition runs fully offline (SenseVoice via sherpa-onnx, no API key, audio never leaves the machine).'
+  zh: '输入框上的单手、免键盘输入：鼠标在输入框按住、说话、松手，文字直接进草稿；上滑取消，不留半句。不用去瞄麦克风按钮，也不用记快捷键，手始终不用离开输入区——另一只手正忙的时候，这一点才是关键。识别完全在本机完成（SenseVoice + sherpa-onnx），无需 API key，音频不出本机。'

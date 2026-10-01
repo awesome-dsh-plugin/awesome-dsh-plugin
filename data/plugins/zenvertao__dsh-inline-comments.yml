@@ -1,0 +1,6 @@
+url: https://github.com/zenvertao/dsh-inline-comments
+name: zenvertao/dsh-inline-comments
+category: ui
+description:
+  en: Annotate on selection, persist through refresh; send the notes with your message and the model answers each one.
+  zh: 选中即批注，刷新亦留存；随消息发送，模型逐条回应。

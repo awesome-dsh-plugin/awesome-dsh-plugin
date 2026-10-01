@@ -1,0 +1,6 @@
+url: https://github.com/STARDUSTLC666/dsh-rss
+name: STARDUSTLC666/dsh-rss
+category: tools
+description:
+  en: RSS/Atom subscription tools (list/add/remove/fetch/check/search/opml_import/opml_export/health) with cross-feed keyword search, cursor-based incremental fetch and OPML import/export, persisted to settings.
+  zh: RSS/Atom 订阅九工具（管理/校验/抓取解析/跨订阅搜索/增量抓取/OPML 导入导出/健康自检），游标增量抓取，订阅持久化到 settings。

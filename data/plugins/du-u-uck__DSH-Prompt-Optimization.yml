@@ -1,0 +1,6 @@
+url: https://github.com/du-u-uck/DSH-Prompt-Optimization
+name: du-u-uck/DSH-Prompt-Optimization
+category: ui
+description:
+  en: Adds a one-click prompt optimization button to the DSH composer, with undo and an optional dedicated optimizer model.
+  zh: 在 DSH 输入框旁添加一键提示词优化按钮，支持撤回，并可在设置中单独指定优化模型。

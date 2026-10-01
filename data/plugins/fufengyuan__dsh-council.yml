@@ -1,0 +1,6 @@
+url: https://github.com/fufengyuan/dsh-council
+name: fufengyuan/dsh-council
+category: workflow
+description:
+  en: 'Council of High Intelligence: assemble an 18-member think tank of historical figures for multi-perspective structured debate, with a live DAG side panel, SQLite run history, and per-project defaults via .council.yaml.'
+  zh: 高智议会：召集 18 位历史人物组成智囊团对复杂问题进行多视角结构化辩论，附带实时 DAG 右侧面板、SQLite 历史记录持久化，支持通过 .council.yaml 配置项目级默认面板与主席。

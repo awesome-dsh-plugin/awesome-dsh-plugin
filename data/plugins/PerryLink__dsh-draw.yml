@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-draw
+name: PerryLink/dsh-draw
+category: vision
+description:
+  en: 'Multi-engine text-to-image generation (OpenAI Images and Zhipu CogView presets) with per-session quota tracking, engine failover, credential-safe config, and a result card with regenerate.'
+  zh: '多引擎文生图（OpenAI Images 与智谱 CogView 预设）：按会话配额、引擎故障切换、凭证安全配置，结果卡片支持重新生成。'

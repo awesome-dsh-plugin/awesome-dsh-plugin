@@ -1,0 +1,6 @@
+url: https://github.com/jiazz197-cmyk/omd-dsh/tree/main/packages/omd-dsh
+name: jiazz197-cmyk/omd-dsh#packages/omd-dsh
+category: workflow
+description:
+  en: 'Seven agent-preset modes for DeepSeek Harness, each with a fixed tool boundary, per-mode model routing and fast/deep omd_task delegation tiers, plus a plan-to-execute loop (/mode, /start-work, goal-backed /ulw) and a settings page that remaps models per mode and per tier.'
+  zh: '为 DeepSeek Harness 提供 7 个 Agent 预设模式：每个模式固定工具边界、按模式路由模型，并以 fast/deep 档位委派 omd_task 子代理；含规划到执行闭环（/mode、/start-work、基于 goal 的 /ulw）与逐模式、逐档位重配模型的设置页。'

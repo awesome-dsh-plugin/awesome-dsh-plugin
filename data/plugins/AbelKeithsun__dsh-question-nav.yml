@@ -1,0 +1,6 @@
+url: https://github.com/AbelKeithsun/dsh-question-nav
+name: AbelKeithsun/dsh-question-nav
+category: ui
+description:
+  en: 'In-session question navigator for the DSH Web UI: a dot minimap on the conversation edge (left or right, configurable in settings), one dot per user question — hover shows the full question text, click jumps to it.'
+  zh: 'DSH Web UI 会话内提问导航：对话栏左/右缘（可在设置中切换）的圆点迷你地图，一个圆点对应一个用户提问——悬停显示全文，点击跳转到该提问。'

@@ -1,0 +1,6 @@
+url: https://github.com/bx33661/dsh-omv
+name: bx33661/dsh-omv
+category: tools
+description:
+  en: 'Evidence-first vulnerability research workbench for DeepSeek Harness: native audit views, 29 OMV tools, Evidence.v1 findings, reproducible runs, Campaign workflows, and isolated PoC evidence.'
+  zh: '面向 DeepSeek Harness 的证据优先漏洞研究工作台：原生审计视图、29 个 OMV 工具、Evidence.v1 Finding、可复现 Run、Campaign 工作流和隔离 PoC 证据。'

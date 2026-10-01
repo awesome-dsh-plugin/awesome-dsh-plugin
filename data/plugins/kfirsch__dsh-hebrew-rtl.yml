@@ -1,0 +1,6 @@
+url: https://github.com/kfirsch/dsh-hebrew-rtl
+name: kfirsch/dsh-hebrew-rtl
+category: ui
+description:
+  en: 'Hebrew RTL rendering for the web GUI: per-block direction by dominant script, bidi-safe input fields, and RTL-aware Cmd+Left/Right line navigation.'
+  zh: '为 Web 界面提供希伯来语 RTL 渲染：按主导文字判定每个块的方向，输入框的 bidi 处理，以及在 RTL 行上方向正确的 Cmd+左/右 行内跳转。'

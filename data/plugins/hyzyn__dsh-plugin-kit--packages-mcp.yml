@@ -1,0 +1,6 @@
+url: https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/mcp
+name: hyzyn/dsh-plugin-kit#mcp
+category: tools
+description:
+  en: 'MCP server configuration card for the DSH Web GUI: add / edit / enable / disable MCP servers over stdio (local subprocess) or streamable-http (remote), with js: prefixed expressions for env / header values, status badges, and hot-reload on save.'
+  zh: 'DSH Web GUI 的 MCP 服务器配置卡片：增删改查与启用/停用 MCP 服务器（stdio 本地子进程 / streamable-http 远程两种传输），env / headers 值支持 js: 前缀表达式，带状态徽标，保存即热生效。'

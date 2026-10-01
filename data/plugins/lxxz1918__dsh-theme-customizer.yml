@@ -1,0 +1,6 @@
+url: https://github.com/lxxz1918/dsh-theme-customizer
+name: lxxz1918/dsh-theme-customizer
+category: theme
+description:
+  en: Visual theme customizer for the DeepSeek Harness web UI — backgrounds, text colors, borders and details, all adjustable visually, with presets you can import and export, persisted across restarts.
+  zh: DeepSeek Harness Web 界面自定义主题插件：背景/文字/框线/细节全可视化调整，可导入导出预设，持久化保存。

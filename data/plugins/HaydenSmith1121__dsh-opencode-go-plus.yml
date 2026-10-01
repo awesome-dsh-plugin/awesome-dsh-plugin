@@ -1,0 +1,6 @@
+url: https://github.com/HaydenSmith1121/dsh-opencode-go-plus
+name: HaydenSmith1121/dsh-opencode-go-plus
+category: model
+description:
+  en: 'OpenCode Go subscription models as a DeepSeek Harness provider: re-resolves the live gateway catalog every few minutes, auto-adapts models the built-in table has not seen, and covers streaming, tool calls, image input and subscription usage. A maintained fork of dsh-opencode-go: a clash with the upstream package over the llm-opencode-go settings namespace makes it withdraw quietly instead of failing the whole plugin tree, and an already-claimed opencode-go route makes it serve on opencode-go-plus.'
+  zh: '把 OpenCode Go 订阅模型接入 DeepSeek Harness：每隔几分钟重新解析网关实时目录，内置表里没有的模型按同族自动适配，支持流式输出、工具调用、图片输入与订阅额度显示。这是 dsh-opencode-go 的维护分支：与上游包争用 llm-opencode-go 设置命名空间时安静退场，而不是让整棵插件树加载失败；opencode-go 路由已被占用时改用 opencode-go-plus 路由继续服务。'

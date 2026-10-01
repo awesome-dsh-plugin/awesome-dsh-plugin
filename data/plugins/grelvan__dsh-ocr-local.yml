@@ -1,0 +1,6 @@
+url: https://github.com/grelvan/dsh-ocr-local
+name: grelvan/dsh-ocr-local
+category: vision
+description:
+  en: 'Local OCR fallback for text-only routes: when the session model declares it cannot accept images, the attached image is cached locally and its path injected so the model can call ocr_image — PP-OCRv5 + ONNX Runtime on CPU, no API key, images never leave the machine. Silent when the model can see images.'
+  zh: '纯文本路由的本地 OCR 兜底：会话模型明确声明不接受图片时，把附件的图片存入本地缓存并注入路径，模型调 ocr_image 用 PP-OCRv5 + ONNX Runtime 在纯 CPU 上离线识别，无需 API key，图片不出本机；模型能看图时静默。'

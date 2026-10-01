@@ -1,0 +1,6 @@
+url: https://github.com/lyingice/dsh-client-ui-mc-skin
+name: lyingice/dsh-client-ui-mc-skin
+category: theme
+description:
+  en: 'Minecraft-styled skin for the DSH Web client: MC GUI palette and pixel bevels, a pixel logo, on/off switch art, two persistent toggles in Settings, and an optional 16 MB Minecraft AE pixel font served on demand by the host half.'
+  zh: '给 DSH Web 客户端用的 Minecraft 风格皮肤：MC 调色板与像素立体边框、像素标志图、开关图案、设置里两个可持久化的开关，以及由 Host 半边按需发货的 16 MB Minecraft AE 像素字体。'

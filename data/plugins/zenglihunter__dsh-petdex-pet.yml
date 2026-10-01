@@ -1,0 +1,6 @@
+url: https://github.com/zenglihunter/dsh-petdex-pet
+name: zenglihunter/dsh-petdex-pet
+category: fun
+description:
+  en: "A desktop pet in the DSH web GUI: floating, draggable sprite pet that animates with agent activity (thinking, idle, error, done, awaiting approval), with a settings page for size, switching, gallery search and one-click pet install. Ships 4 bundled Hunter x Hunter starter pets."
+  zh: "DSH Web 界面里的桌面宠物：右下角悬浮、可拖拽，随智能体活动切换精灵动画；设置页可管理大小、启停切换、图库搜索与一键安装宠物。内置 4 个全职猎人主角宠物包。"

@@ -1,0 +1,6 @@
+url: https://github.com/Azhe0306/dsh-connectors/tree/main/packages/browser-connector
+name: Azhe0306/dsh-connectors#browser-connector
+category: browser
+description:
+  en: 'Browser automation connector: drives the local Edge or Chrome over the DevTools Protocol with zero runtime dependencies — launch a headless throwaway-profile browser or attach to one started with --remote-debugging-port, then navigate, read page text and interactive elements, click, type, and screenshot through 11 agent tools.'
+  zh: '浏览器自动化连接器：用 DevTools 协议直接驱动本机 Edge/Chrome，零运行时依赖——可启动无头的一次性 profile 浏览器，也可接管用 --remote-debugging-port 启动的浏览器；通过 11 个工具完成打开页面、读取正文与可交互元素、点击、填表与截图。'

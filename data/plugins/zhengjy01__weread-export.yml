@@ -1,0 +1,6 @@
+url: https://github.com/zhengjy01/weread-export
+name: zhengjy01/weread-export
+category: tools
+description:
+  en: 'WeChat Reading (WeRead) multi-target export for DeepSeek Harness via the official Skills API gateway: browse your bookshelf, export highlights & thoughts to flomo, a local Markdown file, or Notion, optionally reworked by a configurable LLM prompt.'
+  zh: '微信读书多目标导出：通过官方 Skills API Key 查看书架、导出划线/想法到 flomo、本地 Markdown 或 Notion，可选按自定义 LLM prompt 整理后再导出。'

@@ -1,0 +1,6 @@
+url: https://github.com/causebefore/dsh-pomodoro
+name: causebefore/dsh-pomodoro
+category: ui
+description:
+  en: Pomodoro focus-and-break timer for DSH Web with configurable cycles, a draggable mini panel, and in-app, sound, and browser notifications.
+  zh: DSH Web 番茄钟：提供可配置专注/休息循环、可拖动迷你面板，以及站内提醒、提示音和浏览器通知。

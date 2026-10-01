@@ -1,0 +1,6 @@
+url: https://github.com/gcry13067381632-jpg/dsh-qqbot
+name: gcry13067381632-jpg/dsh-qqbot
+category: notify
+description:
+  en: 'QQ official bot channel for DeepSeek Harness (feature-rich fork of tencent-connect/dsh-qqbot): group and private chat with the full agent, sticker library with auto-tagging and AI meme replies, group management (join approval and mute), botplay interactive card events with paginated catalogs, user extension registry (custom slash commands and QQ tools), scheduled wakeups, remote approvals over QQ, and a floating dock web UI.'
+  zh: '接入 QQ 官方机器人的 DeepSeek Harness 通道(tencent-connect/dsh-qqbot 功能增强 fork): 群/私聊与完整 agent 对话、表情包图库(自动打标+AI 斗图)、群管理(入群审批/禁言)、botplay 互动事件卡与翻页目录、用户扩展注册表(自定义斜杠命令与 QQ 工具)、定时唤醒、QQ 远程审批、悬浮球 dock Web UI。'

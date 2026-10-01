@@ -1,0 +1,6 @@
+url: https://github.com/ciceroyang/dsh-report-studio
+name: ciceroyang/dsh-report-studio
+category: docs
+description:
+  en: 'Turn DeepSeek Harness sessions into daily, weekly, handoff and article reports, with a verifiable HTML export and a receipt that re-checks the saved file.'
+  zh: '把 DeepSeek Harness 会话整理成日报、周报、交接与文章稿件，支持可核验的 HTML 导出与复核收据。'

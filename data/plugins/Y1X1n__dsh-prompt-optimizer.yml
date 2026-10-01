@@ -1,0 +1,7 @@
+url: https://github.com/Y1X1n/dsh-prompt-optimizer
+name: Y1X1n/dsh-prompt-optimizer
+category: ui
+description:
+  en: Adds an optimize button beside the composer that analyzes and rewrites the prompt draft with SSE streaming, conversation-context awareness (template vs intent-polish strategies), an edit-continuity memory chain, undo, and model routing with fallback and a connectivity test.
+  zh: 在输入框旁加「优化」按钮：流式分析并改写提示词草稿，支持会话上下文感知（模板/润色双策略）、跨编辑记忆链与撤回，模型路由带 fallback 与连通性测试。
+tarball: https://github.com/Y1X1n/dsh-prompt-optimizer/releases/latest/download/dsh-prompt-optimizer.tgz

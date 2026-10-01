@@ -1,0 +1,6 @@
+url: https://github.com/TetraSsky/dsh-offpeak
+name: TetraSsky/dsh-offpeak
+category: usage
+description:
+  en: 'Holds DeepSeek model calls for the rest of each peak-hour window you configure instead of sending them, so they are billed at off-peak rates; also pauses active goals while it waits and shows the account balance with an 8-hour spend chart.'
+  zh: '在你配置的高峰时段内不发送 DeepSeek 模型调用，直到该时段结束再发出，从而按低谷价格计费；等待期间暂停进行中的目标，并显示账户余额与 8 小时消费图表。'

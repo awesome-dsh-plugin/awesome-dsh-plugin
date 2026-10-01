@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/file-planning
+name: JohnXu22786/file-planning
+category: workflow
+description:
+  en: 'Disk-persisted execution planning for DSH: milestone/step state machines, dependency gating, an audit event stream, and a deterministic completion gate via dsh tools, CLI, or skill.'
+  zh: '磁盘持久化的执行规划插件：以 .trail 目录承载里程碑/步骤状态机、依赖标注、审计事件与复盘纪要，提供 dsh 工具、CLI 与技能三种接口。'

@@ -1,0 +1,6 @@
+url: https://github.com/wowyuarm/dsh-agent-team
+name: wowyuarm/dsh-agent-team
+category: workflow
+description:
+  en: 'A persistent agent team for long-running collaboration in DeepSeek Harness: durable agent identities, per-project Workspaces, responsibility-bearing Channels, and Task Threads chaining session agents.'
+  zh: '给 DSH 一个可长期协作的持久 Agent 团队：Agent 是持久身份，Workspace 按项目组织，Channel 承载职责分派，Task Thread 串联多个 session agent 协作推进。'

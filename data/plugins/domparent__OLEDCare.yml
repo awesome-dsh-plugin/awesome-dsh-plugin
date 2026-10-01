@@ -1,0 +1,6 @@
+url: https://github.com/domparent/OLEDCare
+name: domparent/OLEDCare
+category: ui
+description:
+  en: OLED burn-in care for the Web GUI with pure-black surfaces, gamma-aware text dimming on an idle/focus ladder, a true-black nap screensaver with live agent status, and slow accent-hue rotation.
+  zh: 'Web GUI 的 OLED 烧屏防护：纯黑底色、按空闲/聚焦档位做伽马感知的文字调暗、带实时 agent 状态的纯黑小憩屏保，以及缓慢轮转的强调色。'

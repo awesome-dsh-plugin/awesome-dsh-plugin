@@ -1,0 +1,6 @@
+url: https://github.com/Jaylor-Wang/dsh-tool-antigravity
+name: Jaylor-Wang/dsh-tool-antigravity
+category: model
+description:
+  en: Connect Google Antigravity Code Assist OAuth accounts to DeepSeek Harness for Gemini and Claude streaming LLM routing and Nano Banana 2 image generation.
+  zh: 接入 Google Antigravity Code Assist OAuth 账号，为 DeepSeek Harness 提供 Gemini 与 Claude 流式模型路由及 Nano Banana 2 图像生成。

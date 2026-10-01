@@ -1,0 +1,7 @@
+url: https://github.com/nickkkkkk123123/dsh-resume-on-restart
+name: nickkkkkk123123/dsh-resume-on-restart
+category: session
+tarball: https://github.com/nickkkkkk123123/dsh-resume-on-restart/releases/download/v0.1.0/dsh-resume-on-restart-0.1.0.tgz
+description:
+  en: "Auto-wakes the main agent after a DSH service restart: compares last-run timestamps, posts a recovery notice with humanized downtime, and delivers it so interrupted work picks itself back up. Runs on plain cordis ctx, packaged-DSH-Desktop ready."
+  zh: "检测 DSH 服务重启后自动唤醒主 agent：对比上次运行时间、人性化播报中断时长，并把提示消息投递回来让中断的工作自动恢复。仅依赖 cordis ctx 服务，兼容 DSH Desktop 打包环境。"

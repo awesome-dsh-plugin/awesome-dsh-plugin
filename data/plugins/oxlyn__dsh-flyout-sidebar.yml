@@ -1,0 +1,6 @@
+url: https://github.com/oxlyn/dsh-flyout-sidebar
+name: oxlyn/dsh-flyout-sidebar
+category: ui
+description:
+  en: 'Flyout sidebar with a file tree, uncommitted-changes list and multi-tab file/diff previews; pops out into a standalone browser tab.'
+  zh: 可弹出侧边栏：文件树、Git 未提交变更列表与多标签文件/diff 预览，一键弹出为独立浏览器标签页。

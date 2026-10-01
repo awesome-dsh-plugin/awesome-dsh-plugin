@@ -1,0 +1,6 @@
+url: https://github.com/JingxuanC/causal-memory/tree/main/dsh-plugin
+name: JingxuanC/causal-memory#dsh-plugin
+category: memory
+description:
+  en: 'Causal memory for dsh: a zero-dependency MCP stdio bridge that mounts the 17 tools of the causal-memory server under clean names (no mcp__ prefix) — decision → outcome edges with typed relations (caused / enabled / prevented) in a local SQLite store that survives compaction — plus a pinned system-prompt section. Requires the causal-memory server binary on PATH (pip install causal-memory, or a prebuilt release).'
+  zh: '因果记忆插件：零依赖的 MCP stdio 桥，把 causal-memory 服务的 17 个工具以干净名（无 mcp__ 前缀）挂载——本地 SQLite 记录「决策 → 结果」因果边（caused / enabled / prevented），压缩后记忆仍存活——另注入一段常驻系统提示词。需先将 causal-memory 服务端装到 PATH（pip install causal-memory，或下载预编译包）。'

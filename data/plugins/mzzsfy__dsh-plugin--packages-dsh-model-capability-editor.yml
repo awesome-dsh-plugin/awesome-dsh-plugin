@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-model-capability-editor
+name: mzzsfy/dsh-plugin#dsh-model-capability-editor
+category: model
+description:
+  en: 'Model capability editor: edit each model reasoning-effort levels and image-input (multimodal) declarations inline in the official model page, written back to settings.yaml as a whole group, with a floating entry as fallback when the anchor breaks.'
+  zh: '模型能力编辑器：在官方模型页行内可视化编辑各模型的思考档位与图片输入（多模态）声明，整组写回 settings.yaml，锚点失效时浮动入口兜底。'
+

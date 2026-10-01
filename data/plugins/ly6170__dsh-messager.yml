@@ -1,0 +1,6 @@
+url: https://github.com/ly6170/dsh-messager
+name: ly6170/dsh-messager
+category: notify
+description:
+  en: Monitors session state in the DSH web app and sends desktop, browser, and third-party notifications for interactions, completions, and errors.
+  zh: 在 DSH Web 端监控会话状态，为需要交互、任务完成、任务出错发送桌面 / 浏览器 / 第三方通知。

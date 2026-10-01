@@ -1,0 +1,6 @@
+url: https://github.com/Nanmu-del/dsh-plan-toggle
+name: Nanmu-del/dsh-plan-toggle
+category: ui
+description:
+  en: 'Persistent plan-mode toggle button in the DSH Web composer: a two-state control (Plan / Plan ×) that turns plan mode on and off, replacing the shipped show-only-when-active badge.'
+  zh: 'DSH Web 输入框的常驻 plan 模式切换按钮：两态控件（Plan / Plan ×）一键开启或关闭 plan 模式，替代官方仅在开启时显示的关闭徽章。'

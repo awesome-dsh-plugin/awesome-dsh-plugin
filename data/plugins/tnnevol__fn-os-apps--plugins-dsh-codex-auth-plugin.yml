@@ -1,0 +1,6 @@
+url: https://github.com/tnnevol/fn-os-apps/tree/main/plugins/dsh-codex-auth-plugin
+name: tnnevol/fn-os-apps#dsh-codex-auth-plugin
+category: identity
+description:
+  en: 'ChatGPT account sign-in for DeepSeek Harness through a Codex browser OAuth flow with no API key and no workspace selection: subscribes the login to pi-ai''s Codex provider, lets you set the global default Codex model and reasoning effort for new sessions, refreshes the model list from the signed-in account''s own catalog endpoint, and shows the five-hour and weekly usage windows in the composer.'
+  zh: '为 DeepSeek Harness 提供 ChatGPT 账号登录：走 Codex 浏览器 OAuth，无需 API Key、无需选择工作空间；把登录结果接到 pi-ai 的 Codex provider，可设置新会话默认的 Codex 模型与思考强度，并按账号自己的目录接口刷新模型列表，在输入区展示 5 小时与每周用量窗口。'

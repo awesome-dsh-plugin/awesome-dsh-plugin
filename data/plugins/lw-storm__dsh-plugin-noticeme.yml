@@ -1,0 +1,6 @@
+url: https://github.com/lw-storm/dsh-plugin-noticeme
+name: lw-storm/dsh-plugin-noticeme
+category: notify
+description:
+  en: 'Background notification plugin: desktop notification, with a tab-title fallback, when an approval prompt or an ask-user-question card appears while the page is in a background tab. The host queues approval and question events behind a same-origin endpoint that the client polls every 3 seconds; clicking the notification focuses the page, and the tab title is restored once the page becomes visible.'
+  zh: 后台通知插件：页面处于后台时出现审批提示或提问卡片，即发送桌面通知（通知权限不可用时回退为标签页标题 ⚠ 前缀），点击通知聚焦页面；宿主将事件存入同源队列供前端每 3 秒轮询，页面恢复可见后标题自动还原。

@@ -1,0 +1,6 @@
+url: https://github.com/Schumchanvi/dsh-voice-input-cn
+name: Schumchanvi/dsh-voice-input-cn
+category: voice
+description:
+  en: "China-ready voice input for the composer. Requires a local Python bridge (pip install dashscope websockets, run bridge/voice-bridge.py) — the plugin alone does not work. Browser mic streams 16 kHz PCM to the bridge, which runs Alibaba Cloud DashScope ASR (paraformer-realtime-v2); interim text fills the draft at the cursor, silence auto-stop, optional auto-send."
+  zh: "国内可用的输入框语音输入。需要先启动本地 Python bridge（pip install dashscope websockets，运行 bridge/voice-bridge.py）——只装插件不可用。浏览器麦克风采集 16kHz PCM 流式转发给 bridge，由阿里云 DashScope ASR（paraformer-realtime-v2）识别；识别文字在光标处实时填入草稿，静音自动停止，可选识别后自动发送。"

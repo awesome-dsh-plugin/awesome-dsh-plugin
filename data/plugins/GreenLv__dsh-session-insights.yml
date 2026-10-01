@@ -1,0 +1,6 @@
+url: https://github.com/GreenLv/dsh-session-insights
+name: GreenLv/dsh-session-insights
+category: session
+description:
+  en: 'See how you have been using AI: `/session-insights` reviews your DSH sessions over time, shows what worked, which problems kept coming back, and what results were actually produced, then creates a retrospective report on your machine.'
+  zh: '回头看看你是怎么使用 AI 的：`/session-insights` 会整理一段时间内的 DSH 会话，找出哪些做法有效、哪些问题总在重复、最终真正留下了哪些成果，并生成一份保存在本机的复盘报告。'

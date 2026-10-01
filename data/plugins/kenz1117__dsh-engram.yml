@@ -1,0 +1,6 @@
+url: https://github.com/kenz1117/dsh-engram
+name: kenz1117/dsh-engram
+category: agi
+description:
+  en: 'Cross-session long-term memory under the "memory palace" metaphor: dual-scope SQLite stores (user + per-git-origin project), hybrid FTS5 + local-vector retrieval with RRF fusion and recency/proof ranking boost, automatic capture from the session log (including the final turn), provenance audit chains, consolidation distillation and decay forgetting, and a settings-page Memory Library panel with corridor topology, tour butler, and refurb list.'
+  zh: 跨会话长期记忆插件，以「记忆宫殿」隐喻重构 agent 长期记忆：双层 SQLite 分库（用户级 + 按 git origin 隔离的项目级）、FTS5 + 本地向量 RRF 融合与新鲜度/命中排序 boost、从会话日志自动摄取（含末轮）、来源审计链、巩固蒸馏与衰减遗忘，以及设置页「记忆库」面板（走廊拓扑、导览管家、翻新清单）。

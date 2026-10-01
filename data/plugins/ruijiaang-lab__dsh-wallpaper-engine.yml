@@ -1,0 +1,6 @@
+url: https://github.com/ruijiaang-lab/dsh-wallpaper-engine
+name: ruijiaang-lab/dsh-wallpaper-engine
+category: theme
+description:
+  en: 'Wallpaper backgrounds for the DSH web GUI. Windows: reads your Wallpaper Engine (Steam) library and plays video/web wallpapers behind the chat. macOS: scans the WaifuX download folder and loose media folders automatically — anything saved in WaifuX becomes a DSH background with zero setup. Liquid-glass blur, dim and border sliders.'
+  zh: DSH Web 聊天背景壁纸。Windows：直接读取你的 Wallpaper Engine（Steam）库，把视频/网页壁纸渲染到聊天界面背后。macOS：自动扫描 WaifuX 下载目录和媒体文件夹——在 WaifuX 里保存的壁纸零配置即可成为 DSH 背景，支持视频与图片。带毛玻璃模糊、压暗、边框调节滑块。

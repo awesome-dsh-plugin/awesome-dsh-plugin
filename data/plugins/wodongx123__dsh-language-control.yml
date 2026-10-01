@@ -1,0 +1,6 @@
+url: https://github.com/wodongx123/dsh-language-control
+name: wodongx123/dsh-language-control
+category: tools
+description:
+  en: 'Force the agent''s chain-of-thought, planning, tool-invocation reasoning, and internal deliberation to stay in Chinese — the language constraint is injected at the top of the system prompt before every reasoning step, so it cannot be diluted by tool-returned content. A settings panel lets you edit the constraint text on the fly.'
+  zh: '让 Agent 的思考过程也自动使用中文。在每步推理前向 System Prompt 最顶部注入语言约束，强制思维链、规划、工具调用推理全部使用中文，防止工具返回英文内容后发生语言漂移。支持在设置面板中实时编辑约束文本。'

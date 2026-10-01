@@ -1,0 +1,6 @@
+url: https://github.com/NormanFxxkingRockwell/dsh-auto-vision
+name: NormanFxxkingRockwell/dsh-auto-vision
+category: vision
+description:
+  en: 'Auto-discovery vision bridge for text-only DeepSeek Harness agents: automatically finds an image-capable model from your configured providers and returns picture descriptions as plain text via a vision tool.'
+  zh: 为纯文本 DeepSeek Harness 主模型搭视觉桥：自动从已配置模型中挑选多模态模型，通过 vision 工具把图片描述以纯文本返回。

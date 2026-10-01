@@ -1,0 +1,6 @@
+url: https://github.com/cheshireez/dsh-skill-hub
+name: cheshireez/dsh-skill-hub
+category: skill
+description:
+  en: 'In-GUI skill hub for DeepSeek Harness: browse, search, toggle, inspect, diagnose and scaffold local skills from the official ctx.skills registry, plus a skill market with tracked source sync and one-click update-all.'
+  zh: 'DSH Web GUI 技能中枢：基于官方 ctx.skills 注册表浏览、搜索、启停、查看、诊断并新建本地技能，附技能市场：来源快照跟踪、一键全量更新。'

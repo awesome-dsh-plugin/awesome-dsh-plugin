@@ -1,0 +1,6 @@
+url: https://github.com/cuhaitiang0405-collab/dsh-indexbookmark
+name: cuhaitiang0405-collab/dsh-indexbookmark
+category: ui
+description:
+  en: 'Conversation question index for the DSH Web UI: every question you asked in a session, searchable, paginated, with one-click jump to the exact message.'
+  zh: 'DSH 对话问题索引：列出会话中你提过的所有问题，支持搜索、分页与一键定位。'

@@ -1,0 +1,6 @@
+url: https://github.com/luumod/dsh-desktop-lifecycle
+name: luumod/dsh-desktop-lifecycle
+category: dev
+description:
+  en: Close and restart controls for DeepSeek Harness Desktop and Web on Windows, in Settings → General.
+  zh: 在 Windows 上为 DeepSeek Harness Desktop 与 Web 提供「关闭程序」和「重启程序」控制，位于「设置 → 通用设置」。

@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-mcp-panel
+name: PerryLink/dsh-mcp-panel
+category: dev
+description:
+  en: 'Read-only runtime management panel for the official DSH MCP client: connection status, registered tools, errors, and reconnect counts through the /mcp command and a Settings tab, with sanitized display and enable/disable patch suggestions.'
+  zh: 官方 MCP 客户端（dsh-mcp-client）的只读运行时管理面板：/mcp 命令与设置页 MCP 页签展示连接状态、已注册工具、错误与重连计数，脱敏展示并提供启停 patch 建议。

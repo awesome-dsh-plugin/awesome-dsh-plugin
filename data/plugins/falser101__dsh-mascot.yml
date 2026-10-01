@@ -1,0 +1,6 @@
+url: https://github.com/falser101/dsh-mascot
+name: falser101/dsh-mascot
+category: fun
+description:
+  en: Draggable floating cat-or-dog companion for the dsh web GUI that changes expression with the session and is configured on a Companion settings page.
+  zh: 可拖拽的猫狗悬浮伴侣，表情随当前会话变化，在 Companion 设置页里换皮肤。

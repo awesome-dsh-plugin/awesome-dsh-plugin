@@ -1,0 +1,7 @@
+url: https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-file-activity
+name: baosfeng/my-dsh-plugins#dsh-file-activity
+category: dev
+tarball: https://github.com/baosfeng/my-dsh-plugins/releases/download/dsh-file-activity@v0.5.1/dsh-file-activity-0.5.1.tgz
+description:
+  en: 'DSH sidebar file-activity tab: records file reads/creates/modifies by the agent and the sidebar (including file ops hidden inside bash commands), per-session isolation, survives restarts, click a file for a floating preview (npm: `dsh-file-activity`).'
+  zh: 'DSH 侧边栏文件活动页签：记录 agent 与侧边栏的文件读取/新增/修改事件（含 bash 命令中隐含的文件操作），按会话隔离、重启后恢复，点击文件浮窗预览（npm: `dsh-file-activity`）。'

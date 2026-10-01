@@ -1,0 +1,6 @@
+url: https://github.com/QWE13-ART/dsh-tool-folder
+name: QWE13-ART/dsh-tool-folder
+category: tools
+description:
+  en: 'Folds the tool-definition prompt surface when many MCP servers are installed: a static KV-cache-stable catalog plus BM25/bge-m3 hybrid tools_search and batch tools_schema expansion, so hundreds of tools stay discoverable without spending their full schemas every turn.'
+  zh: '装了大量 MCP 时折叠工具定义提示面：KV 缓存稳定的静态目录 + BM25/bge-m3 混合 tools_search + tools_schema 批量展开，几百个工具仍可检索，但不必每轮都付完整 schema 的 token。'

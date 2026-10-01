@@ -1,0 +1,7 @@
+url: https://github.com/tiantyu/dsh-skin-toggle
+name: tiantyu/dsh-skin-toggle
+category: theme
+description:
+  en: 'Skin manager for the DeepSeek Harness web GUI: a draggable whale button that restores the default look on left-click and switches between installed skins on right-click.'
+  zh: DSH 网页皮肤管理器：可拖动的鲸鱼按钮，左键恢复默认界面，右键列出并切换所有已安装皮肤。
+tarball: https://github.com/tiantyu/dsh-skin-toggle/releases/latest/download/dsh-skin-toggle.tgz

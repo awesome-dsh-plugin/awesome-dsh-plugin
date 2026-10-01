@@ -1,0 +1,6 @@
+url: https://github.com/itr-del/dsh-feishu
+name: itr-del/dsh-feishu
+category: notify
+description:
+  en: Feishu (Lark) IM bridge for DeepSeek Harness via `dsh plugin add`; one DM user to one persistent dsh session, with full debugging docs.
+  zh: DeepSeek Harness 的飞书/Lark 私聊桥接插件，支持 `dsh plugin add` 一键安装，配套完整调试文档。

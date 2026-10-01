@@ -1,0 +1,6 @@
+url: https://github.com/sudoprivacy/dsh-shareone-plugin
+name: sudoprivacy/dsh-shareone-plugin
+category: docs
+description:
+  en: Publish TXT, Markdown, HTML, PDF, Word, and PowerPoint files as ShareOne links with passwords, watermarks, text-page updates, and TXT/Markdown/HTML comments.
+  zh: 将 TXT、Markdown、HTML、PDF、Word 和 PowerPoint 文件发布为 ShareOne 分享链接，支持访问密码、水印、文本页面更新和 TXT/Markdown/HTML 评论。

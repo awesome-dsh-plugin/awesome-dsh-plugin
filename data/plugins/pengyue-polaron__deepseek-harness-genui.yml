@@ -1,0 +1,6 @@
+url: https://github.com/pengyue-polaron/deepseek-harness-genui
+name: pengyue-polaron/deepseek-harness-genui
+category: ui
+description:
+  en: Code-first React and TypeScript task apps rendered inline, in Canvas, full screen, or on localhost, with interaction state available to later agent turns and approval-gated MCP and API access.
+  zh: Code-first React + TypeScript 任务应用，支持 Inline、Canvas、全屏与 localhost；交互状态可供 Agent 后续轮次读取，MCP 和 API 访问在用户授权后执行。

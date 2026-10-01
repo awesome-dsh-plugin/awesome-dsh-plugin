@@ -1,0 +1,6 @@
+url: https://github.com/tr1v3r/dsh-quote-followup
+name: tr1v3r/dsh-quote-followup
+category: ui
+description:
+  en: Quote selected conversation text into the Web composer as native reference chips for focused follow-up turns.
+  zh: 在网页会话中划选文本，以原生引用 chip 插入输入框，进行针对性追问。

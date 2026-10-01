@@ -1,0 +1,6 @@
+url: https://github.com/pwping/moyu_games
+name: pwping/moyu_games
+category: fun
+description:
+  en: Five casual mini-games (sliding-number puzzle, Sudoku, snake, Schulte grid, number memory) that pop up when a turn starts, with auto-saved progress across sessions.
+  zh: 任务开始时自动弹出的 5 个休闲小游戏（数字华容道、数独、贪吃蛇、舒尔特方格、数字记忆），支持跨会话自动保存进度。

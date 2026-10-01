@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-think-expand
+name: mzzsfy/dsh-plugin#dsh-think-expand
+category: ui
+description:
+  en: 'Auto-expands streaming thinking: always keeps the latest thinking block expanded, manual actions take priority, only the last block expands when opening a session, and nothing remains after uninstall.'
+  zh: '流式思考自动展开：始终显示最新一条思考，手动操作优先，打开会话仅展开最后一条，卸载无残留。'
+

@@ -1,0 +1,6 @@
+url: https://github.com/baifagg/dsh-plugin-busy-workspace
+name: baifagg/dsh-plugin-busy-workspace
+category: ui
+description:
+  en: Pins workspaces holding a running session to the top of the sidebar session list, and draws the running session row with an accent frame and tinted title, plus a short settle animation when a session stops running. Colours come from the active theme's own tokens, with the running accent taken from the token the status dot paints ongoing with.
+  zh: 把含运行中会话的工作区提到侧栏会话列表最前，并为运行中的会话行加强调边框与着色标题；会话停止运行时播放一次短促的收敛动效。颜色取自当前主题自身的变量，其中运行中强调色用的是状态点绘制 ongoing 时的那个变量。

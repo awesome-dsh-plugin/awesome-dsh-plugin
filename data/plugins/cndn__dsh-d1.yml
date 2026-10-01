@@ -1,0 +1,6 @@
+url: https://github.com/cndn/dsh-d1
+name: cndn/dsh-d1
+category: tools
+description:
+  en: 'Cloudflare D1 tools for agents: d1_list/query/exec/schema/stats/health over the D1 HTTP API, read-only by default with a SQLite-accurate lexical guard, LIMIT row cap, CSV/JSON query output and an approval-gated write path.'
+  zh: 'Cloudflare D1 数据库工具：d1_list/query/exec/schema/stats/health，通过 D1 HTTP API 访问，默认只读（SQLite 语义的词法级只读保护）、LIMIT 行数上限、CSV/JSON 查询输出与写审批门。'

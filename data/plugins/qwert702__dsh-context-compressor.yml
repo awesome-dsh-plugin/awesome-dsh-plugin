@@ -1,0 +1,6 @@
+url: https://github.com/qwert702/dsh-context-compressor
+name: qwert702/dsh-context-compressor
+category: session
+description:
+  en: 'One-click context compression for the dsh web GUI: a 压缩 button on the session title bar summarizes the whole conversation into a few lines, opens a new session in the same workspace seeded with the summary, and switches to it — the original session stays untouched.'
+  zh: dsh 网页端一键上下文压缩：会话标题栏「压缩」按钮把整段对话总结成几句话，新建同工作区会话以摘要为第一条消息并自动切换，原会话原样保留。

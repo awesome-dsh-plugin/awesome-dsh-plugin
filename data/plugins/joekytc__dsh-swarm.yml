@@ -1,0 +1,6 @@
+url: https://github.com/joekytc/dsh-swarm
+name: joekytc/dsh-swarm
+category: workflow
+description:
+  en: 'A governed swarm of six specialist DSH agents — orchestrator, planner, knowledge-base bridge, developer and two reviewers — turns a requirement into a strict phase pipeline where every delivery must prove itself with structured evidence before the next phase may start; reviewers are read-only, code merges only after a review pass, and an append-only event log gives full replay and audit on a live kanban board. Its design draws inspiration from the Hermes Agent kanban.'
+  zh: '一个受管的智能体蜂群（swarm）：六种专职 DSH 智能体——编排、规划、知识库桥接、开发，以及方案评审与代码评审——把需求转化为严格阶段流水线；每阶段交付必须先以结构化证据自证，下一阶段才放行；评审只读、代码仅评审通过后合并，追加式事件日志支持全程回放与审计，实时看板同步展示。其设计灵感源自 Hermes Agent kanban。'

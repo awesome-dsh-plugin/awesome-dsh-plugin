@@ -1,0 +1,6 @@
+url: https://github.com/fuhefei/dsh-sentinel
+name: fuhefei/dsh-sentinel
+category: workflow
+description:
+  en: 'Condition-driven wakeup: durable file/command/http/process/webhook watches that wake the agent.'
+  zh: 条件驱动唤醒：file/command/http/process/webhook 持久监视，触发即唤醒 agent。

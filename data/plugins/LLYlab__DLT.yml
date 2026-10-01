@@ -1,0 +1,6 @@
+url: https://github.com/LLYlab/DLT
+name: LLYlab/DLT
+category: tools
+description:
+  en: "Six independently togglable modules in one DSH plugin: per-turn CNY cost, DeepSeek account balance, PDF/Word/Excel/CSV read-write tools with right-sidebar preview, a compiler/runtime environment registry, and run/build tools that execute a program or an MSBuild project by environment id. Toolchain paths are resolved at run time (Visual Studio install-root scan, %ProgramFiles%, PATH) and can be overridden per environment through plugin config, so nothing is pinned to the author's machine."
+  zh: "一个 DSH 插件里的六个可独立开关的模块：每轮对话的人民币成本、DeepSeek 账户余额、PDF/Word/Excel/CSV 直接读写工具与右栏预览、编译/运行环境表，以及按环境名执行程序或编译 MSBuild 工程的 run/build 工具。工具链路径在运行时解析（扫描 Visual Studio 安装根、%ProgramFiles%、PATH），并可在插件配置里逐个环境覆盖，没有写死在作者机器上的路径。"

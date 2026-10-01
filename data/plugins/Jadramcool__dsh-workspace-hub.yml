@@ -1,0 +1,6 @@
+url: https://github.com/Jadramcool/dsh-workspace-hub
+name: Jadramcool/dsh-workspace-hub
+category: usage
+description:
+  en: 'DSH workspace hub: organize workspaces into color-coded folders in the sidebar (three-level drag reorder for folders/workspaces/sessions, inline edit, one-click expand/collapse, dual-channel search) with per-workspace and per-session token usage and cost stats from real session logs (official DeepSeek peak/off-peak pricing for any deepseek model, three spend calibers, hover detail cards, overview panel) plus OpenCode Go plan usage; data persists to host disk and refreshes live every 30 s.'
+  zh: 'DSH 工作区中枢：侧边栏将工作区按彩色分组管理（分组/工作区/会话三级拖拽排序、内联编辑、一键展开折叠、标题+消息双通道搜索），基于真实会话日志统计每工作区与每会话的 Token 与花费（任意 deepseek 模型自动按官方峰谷价计费、三种时段口径、悬停明细卡、总览面板），另含 OpenCode Go 额度；分组与结果持久化到本机磁盘，30 秒实时刷新。'

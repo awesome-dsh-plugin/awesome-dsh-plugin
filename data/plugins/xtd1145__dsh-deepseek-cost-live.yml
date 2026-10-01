@@ -1,0 +1,6 @@
+url: https://github.com/xtd1145/dsh-deepseek-cost-live
+name: xtd1145/dsh-deepseek-cost-live
+category: usage
+description:
+  en: 'Real-time DeepSeek API balance (official endpoint) and today-spend estimate (this DSH instance session-log usage x per-model price table) for the DSH web: composer dock strip, always-on floating badge, full settings dashboard (7-day trend, per-model cost, editable price table and polling, history rescan). The API key never leaves the host.'
+  zh: 'DSH Web 实时显示 DeepSeek API 官方余额与今日花费(本机会话日志用量 x 分模型价格表的本地估算):输入框下方统计小条 + 右下角常驻悬浮徽标 + 设置页完整面板(近 7 日趋势、分模型花费、可编辑价格表/轮询、历史重扫)。API Key 不出宿主进程。'

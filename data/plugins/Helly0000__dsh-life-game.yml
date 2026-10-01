@@ -1,0 +1,6 @@
+url: https://github.com/Helly0000/dsh-life-game
+name: Helly0000/dsh-life-game
+category: fun
+description:
+  en: 'Conway''s Game of Life for DeepSeek Harness: a sidebar panel row opens a drawable centre-column board with four rules, seven stampable patterns and a population chart.'
+  zh: '给 DeepSeek Harness 的康威生命游戏：侧栏一行面板入口，打开一块可绘制的中央棋盘，含四套规则、七个可盖章的图案与一条种群曲线。'

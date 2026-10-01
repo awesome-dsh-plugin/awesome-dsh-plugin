@@ -1,0 +1,6 @@
+url: https://github.com/Lunatic029/dsh-clash-proxy
+name: Lunatic029/dsh-clash-proxy
+category: remote
+description:
+  en: "Routes DeepSeek Harness outbound traffic through a local Clash proxy, with automatic fallback to direct when the proxy is off."
+  zh: "让 DeepSeek Harness 的出网流量走本地 Clash 代理，代理关闭时自动回落直连。"

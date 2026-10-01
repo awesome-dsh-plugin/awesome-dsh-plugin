@@ -1,0 +1,6 @@
+url: https://github.com/wucl12/dsh-side-branch
+name: wucl12/dsh-side-branch
+category: ui
+description:
+  en: "Read-only side branch in the right sidebar: quote text to ask follow-ups without polluting the model context of the main session; every follow-up rebuilds the branch from the latest settled turns of the main session, and writes are refused at the tool-execution layer so the prompt prefix stays cacheable."
+  zh: "右侧栏的只读侧枝会话：划选文字即可追问，答案不进入主会话的模型上下文；每轮追问都用主会话最新的已结算内容重建，写操作在执行层被拒，以保住提示词前缀缓存。"

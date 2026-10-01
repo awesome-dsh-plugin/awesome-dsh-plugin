@@ -1,0 +1,6 @@
+url: https://github.com/ttmouse/dsh-model-picker
+name: ttmouse/dsh-model-picker
+category: ui
+description:
+  en: 'Model picker for the DSH web composer that replaces the model seat: a search-first popup whose left column indexes the suppliers and scrolls the grouped list, with a favorites group pinned at the top, image icons separating native from bridged vision input, and a reasoning-effort panel opened from the right zone of the trigger.'
+  zh: '顶替 DSH Web 编辑器模型座位的模型选择器：检索优先的弹层，左栏是供应商索引、点击滚动右侧分组列表，收藏组固定在首位，用图片图标区分原生与桥接的视觉输入，点触发器右区单独打开推理档位面板。'

@@ -1,0 +1,6 @@
+url: https://github.com/br1nosense/dsh-project-manager
+name: br1nosense/dsh-project-manager
+category: dev
+description:
+  en: 'Manage development projects from the DSH web UI in a draggable floating window: add/remove, one-click start/stop/restart, hot-reload restart on file changes, and real-time persistent logs.'
+  zh: '在 DSH Web 界面以悬浮窗口管理开发项目：添加/删除、一键启动/停止/重启、文件变更热重载自动重启、实时日志查看与持久化。'

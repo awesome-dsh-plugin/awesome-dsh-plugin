@@ -1,0 +1,6 @@
+url: https://github.com/Nagi-ovo/dsh-visualize
+name: Nagi-ovo/dsh-visualize
+category: ui
+description:
+  en: 'In-conversation generative UI: the model renders interactive HTML cards into the chat stream, with streaming preview and sandboxed rendering.'
+  zh: 对话内生成式 UI：模型把交互式 HTML 卡片直接画进会话流，带流式预览与沙箱渲染。

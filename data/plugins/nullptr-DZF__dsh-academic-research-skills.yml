@@ -1,0 +1,17 @@
+# Submission entry for awesome-dsh-plugin
+# File to add at: data/plugins/nullptr-DZF__dsh-academic-research-skills.yml
+# (in a fork of https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)
+#
+# Requirements checklist (all met by the plugin repo):
+#  - package.json declares dsh.bundle.patch  ✔ (see cordis.patch.yml)
+#  - real working code                       ✔ (registrar + 20 skills, tested)
+#  - repo age >= 1 day                       → wait 1 day after first push
+#  - commit count >= 10                      ✔ (12 commits)
+#  - dsh-plugin topic on the repo            → set when pushing (step below)
+
+url: https://github.com/nullptr-DZF/dsh-academic-research-skills
+name: nullptr-DZF/dsh-academic-research-skills
+category: skill
+description:
+  en: 'Ported from the ARS Claude Code plugin (44k+ stars on GitHub): academic research skills for DeepSeek Harness — a deep-research agent team, a paper-writing pipeline, a multi-perspective peer-review panel, and an end-to-end orchestrator, plus sixteen /ars-* commands.'
+  zh: '移植自 ARS Claude Code 插件（GitHub 44k+ stars）：面向 DeepSeek Harness 的学术研究技能套件——深度调研 agent 团队、论文写作流水线、多视角同行评审小组与端到端编排器，外加十六个 /ars-* 命令。'

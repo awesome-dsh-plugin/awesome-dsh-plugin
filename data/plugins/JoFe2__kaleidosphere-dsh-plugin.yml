@@ -1,0 +1,7 @@
+url: https://github.com/JoFe2/kaleidosphere-dsh-plugin
+name: JoFe2/kaleidosphere-dsh-plugin
+category: tools
+description:
+  en: Registers six native DeepSeek Harness tools for deterministic fixture-based or read-only Microsoft SQL Server and Oracle database analysis, planning, preview, and readback.
+  zh: 'KaleidoSphere 数据库分析插件：六个原生工具（状态/发现/分析/计划/预览/回读），针对只读的 Microsoft SQL Server 与 Oracle，默认走内置确定性 fixture，运行时随包分发、无需外部服务。'
+tarball: https://github.com/JoFe2/kaleidosphere-dsh-plugin/releases/download/v0.1.0-preview.2/kaleidosphere-dsh-plugin-0.1.0-preview.2.tgz

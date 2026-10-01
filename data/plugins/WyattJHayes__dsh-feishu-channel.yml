@@ -1,0 +1,6 @@
+url: https://github.com/WyattJHayes/dsh-feishu-channel
+name: WyattJHayes/dsh-feishu-channel
+category: security
+description:
+  en: 'Security-focused Feishu (Lark) channel for DeepSeek Harness: allowlisted remote-agent access with workspace-scoped paths, symlink checks, risk-based approvals, session isolation, redacted logs, and bounded message queues.'
+  zh: 面向安全的 DeepSeek Harness 飞书通道：提供白名单远程 Agent 访问、工作区路径与符号链接边界校验、风险分级审批、会话隔离、日志脱敏和有界消息队列。

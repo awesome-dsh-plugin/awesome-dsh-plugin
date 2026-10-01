@@ -1,0 +1,7 @@
+url: https://github.com/netori/galfree
+name: netori/galfree
+category: dev
+description:
+  en: 'Ren''Py galgame production workbench: a host-side project service (write gateway plus git snapshots, a dialogue/scene dialect parser, derived progress, human-only review stamps, pinned-SDK validation and playtest, local publish) behind one seam, driven by an embedded web panel and agent tools.'
+  zh: '在 DSH 里制作 Ren''Py galgame 的工作台：宿主侧项目服务（写网关 + git 快照、方言子集解析器、推导进度、只由人盖的审读戳、钉版 SDK 校验与试玩、本地发布）收在一条接缝后面，由内置 Web 工作台面板与 agent 工具驱动。'
+tarball: https://github.com/netori/galfree/releases/download/v0.1.2/dsh-galfree-0.1.2.tgz

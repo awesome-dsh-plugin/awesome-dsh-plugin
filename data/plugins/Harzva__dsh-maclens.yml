@@ -1,0 +1,6 @@
+url: https://github.com/Harzva/dsh-maclens
+name: Harzva/dsh-maclens
+category: vision
+description:
+  en: 'Apple on-device Vision tools for text-only dsh models: local OCR (zh-Hans + 30 langs), image classification, face detection, document layout, and a combined describe — 100% offline, no API key, tall-screenshot slicing.'
+  zh: '苹果设备端 Vision 工具：本地 OCR（含中文）、图像分类、人脸检测、文档版面分析与综合描述，100% 离线、无需 API key，支持长截图切片。'

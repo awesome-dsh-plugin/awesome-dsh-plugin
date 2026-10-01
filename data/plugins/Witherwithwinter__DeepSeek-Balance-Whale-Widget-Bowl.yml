@@ -1,0 +1,6 @@
+url: https://github.com/Witherwithwinter/DeepSeek-Balance-Whale-Widget-Bowl
+name: Witherwithwinter/DeepSeek-Balance-Whale-Widget-Bowl
+category: ui
+description:
+  en: 'A fixed-corner DeepSeek balance whale widget for the DSH web GUI: three switchable skins (default / bowl-on-head / bowl-in-hand), balance with today usage, per-turn cost popups, peak/off-peak price conversion, press sound effects and random talk lines. Modified from MeteorNOX/DeepSeek-Balance-Whale-Widget.'
+  zh: 'DSH Web 界面右下角的 DeepSeek 余额鲸鱼挂件：三套形象切换（默认 / 顶碗 / 拿碗）、余额与今日已用、每轮对话消耗提示、峰谷价换算、按压音效与随机台词。基于 MeteorNOX/DeepSeek-Balance-Whale-Widget 修改。'

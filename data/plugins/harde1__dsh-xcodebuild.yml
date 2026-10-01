@@ -1,0 +1,28 @@
+# Entry for https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+#
+# Copy this file into a clone of that repository as
+#   data/plugins/harde1__dsh-xcodebuild.yml
+# The `url` and `name` below are already filled in for this repository and must
+# match it exactly — CI fetches package.json from that URL to check for the
+# `dsh.bundle` manifest.
+#
+# This one file is the whole submission. Do not edit either README in that
+# repository: both are generated from data/plugins/*.yml after the PR merges.
+
+url: https://github.com/harde1/dsh-xcodebuild
+name: harde1/dsh-xcodebuild
+category: dev
+description:
+  # The description is read as a claim about the code and is checked against it,
+  # so it names only things that are actually there. It deliberately leads with
+  # what distinguishes this plugin from the two entries already on the list in
+  # this space (`ZSeven-W/dsh-ios` drives the simulator UI; `jihongboo/dsh-apple-mode`
+  # goes through Xcode's own MCP bridge): this one is the xcodebuild CLI loop,
+  # with real-device log channels down to iOS 16 and earlier. No numbers — a
+  # count here becomes a claim that has to stay in sync with the code forever.
+  #
+  # No ": " (colon + space) in these values, so they need no quotes. If you
+  # rewrite them and introduce one, wrap the whole value in single quotes or
+  # YAML reads it as a nested key and the parser fails.
+  en: Builds, tests, archives and runs an Xcode project or workspace on iOS or macOS through xcodebuild — a live filterable build log, scheme and destination pickers read from the project, and log streaming for simulators and USB devices, including iOS 16 and earlier over libimobiledevice, whose app logs stay readable while the device is locked. macOS only.
+  zh: 在 harness 中通过 xcodebuild 编译、测试、归档并运行 iOS 或 macOS 工程——实时可过滤的构建日志、从工程自身读取的 scheme 与目标设备选择，以及模拟器与 USB 真机的日志流，包含经 libimobiledevice 支持的 iOS 16 及更早设备，其 app 日志在设备锁屏时依然可读。仅限 macOS。

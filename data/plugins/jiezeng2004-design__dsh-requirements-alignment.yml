@@ -1,0 +1,6 @@
+url: https://github.com/jiezeng2004-design/dsh-requirements-alignment
+name: jiezeng2004-design/dsh-requirements-alignment
+category: workflow
+description:
+  en: Runtime requirement drift guard that keeps long-running DSH agents aligned with the user's approved goal, constraints, and decisions.
+  zh: 运行时需求漂移防护，在长任务执行过程中保持 DSH Agent 与用户确认的目标、约束和决策一致。

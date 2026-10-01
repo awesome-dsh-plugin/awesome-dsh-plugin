@@ -1,0 +1,6 @@
+url: https://github.com/zmm863-commits/dsh-dice-game
+name: zmm863-commits/dsh-dice-game
+category: fun
+description:
+  en: 🎲 Dice Battle — six classic dice games (Liar's Dice, Guess Red Dots, Red/Blue, Big/Small, Odd/Even, Straight) for the DSH web GUI. Single vs AI plus PeerJS WebRTC online play, fully bilingual zh/en, sidebar entry opens the game in the center column.
+  zh: 🎲 骰子大作战 — 六种经典骰子玩法（吹牛、猜红点、猜红蓝、猜大小、猜单双、猜顺子），单人 vs AI + PeerJS 联机，全量中英双语，侧边栏入口打开游戏面板。

@@ -1,0 +1,6 @@
+url: https://github.com/windrover/dsh-minimal-UI-panels
+name: windrover/dsh-minimal-UI-panels
+category: ui
+description:
+  en: 'Four right-Sidebar panels for the dsh web client — an artifacts browser, long-term memory, a terminal and notes — paired two per tab with a draggable split, so two panes show all four at once. Ships the host half as well: nine memory_* tools, artifacts_list, the /memory command, the /api/artifacts/* and /api/terminal-notes/* routes. The terminal runs one bash command per line, with a 120-second deadline and a stop button. Requires dsh 0.1.5 or newer, which is where the right Sidebar replaced the old details column.'
+  zh: '给 dsh web 客户端加四个右侧栏面板——产物浏览、长期记忆、终端、记事本——两两配成一个标签、中间可拖拽分栏，因此两个窗格就能同时看到四个面板。宿主侧一并提供：9 个 memory_* 工具、artifacts_list、/memory 命令，以及 /api/artifacts/* 与 /api/terminal-notes/* 路由。终端每行执行一条 bash 命令，带 120 秒期限与终止按钮。需要 dsh 0.1.5 或更新版本——右侧栏正是在那一版取代了旧的 details 列。'

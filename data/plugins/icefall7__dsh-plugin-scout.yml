@@ -1,0 +1,6 @@
+url: https://github.com/icefall7/dsh-plugin-scout
+name: icefall7/dsh-plugin-scout
+category: market
+description:
+  en: Scouts the deepseek-harness repo and every dsh-plugin-tagged repository to discover harnesses related to your goal, then judges each as worth trying, watching, or skipping.
+  zh: 侦察 deepseek-harness 官方仓库与所有 dsh-plugin topic 仓库，发现与目标相关的 harness，并判断每个值得试用、观望还是跳过。

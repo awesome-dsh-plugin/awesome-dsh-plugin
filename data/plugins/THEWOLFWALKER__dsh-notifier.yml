@@ -1,0 +1,6 @@
+url: https://github.com/THEWOLFWALKER/dsh-notifier
+name: THEWOLFWALKER/dsh-notifier
+category: notify
+description:
+  en: 'DSH notification & remote-control plane: one `notify()` API across 28 outbound channels, six inbound control channels, phone approvals/questions/task control, a Native DSH Notify & Control UI, live outbound hot-apply, multi-agent routing, and zero runtime dependencies.'
+  zh: 'DSH 通知与远程操作控制面：一个 `notify()` API 接入 28 个出站渠道，六条入站控制通道承载手机审批、提问与任务控制；提供 DSH 原生「通知与控制」UI、出站热生效、多 agent 路由，并保持零运行时依赖。'

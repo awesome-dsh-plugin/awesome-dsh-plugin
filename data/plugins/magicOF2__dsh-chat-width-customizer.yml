@@ -1,0 +1,6 @@
+url: https://github.com/magicOF2/dsh-chat-width-customizer
+name: magicOF2/dsh-chat-width-customizer
+category: ui
+description:
+  en: Session-header button that cycles the conversation width (748-1600px), widening the chat column, composer, and user bubbles together.
+  zh: 会话标题栏按钮循环切换对话宽度（748–1600px），消息区、输入框、用户气泡同步加宽。

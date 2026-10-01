@@ -1,0 +1,6 @@
+url: https://github.com/PensiveFei/dsh-voice-scribe
+name: PensiveFei/dsh-voice-scribe
+category: voice
+description:
+  en: 'Voice input for the web UI: tap Alt (or Alt+Space) to start/stop dictation, browser Web Speech (zero-config) or OpenAI-compatible cloud ASR, optional polish through DSH-configured LLM, settings UI.'
+  zh: '面向 Web UI 的语音输入插件：点按 Alt（或 Alt+空格）开始/停止听写，支持浏览器内置 Web Speech（零配置）或 OpenAI 兼容云端 ASR，可选经 DSH 已配置模型润色，带设置页。'

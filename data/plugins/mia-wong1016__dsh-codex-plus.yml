@@ -1,0 +1,7 @@
+url: https://github.com/mia-wong1016/dsh-codex-plus
+name: mia-wong1016/dsh-codex-plus
+category: model
+tarball: https://github.com/mia-wong1016/dsh-codex-plus/releases/download/v0.1.4/dsh-codex-plus-0.1.4.tgz
+description:
+  zh: "本机已登录的 Codex（ChatGPT Plus/Pro）订阅接入 DSH。用途：①在侧边栏展示 5 小时窗口与一周窗口的剩余额度、重置时间与剩余重置券数量，并支持一键消耗一张重置券重置额度；②读取额度时自动把订阅线路注册进 llm-pi-ai（openai-codex 路由），使 Codex 模型出现在模型选择器中；③access token 到期前自动续期并原子写回，无需手动更换密钥；④提供 codex 工具把任务委派给本机 Codex agent。无需填写任何 API key。"
+  en: "Brings the Codex (ChatGPT Plus/Pro) subscription already signed in on this machine into DSH. It (1) shows the 5-hour and weekly windows with their reset times and the remaining reset credits in a sidebar panel, with one-click reset that consumes a credit; (2) registers the subscription route in llm-pi-ai (openai-codex) when the quota is read, so the Codex models appear in the model picker; (3) refreshes the OAuth access token before expiry and writes it back atomically, so no key has to be replaced by hand; and (4) adds a codex tool that delegates a task to the local Codex agent. No API key has to be entered."

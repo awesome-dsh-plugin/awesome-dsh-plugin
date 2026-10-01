@@ -1,0 +1,6 @@
+url: https://github.com/anysearch-team/anysearch-dsh
+name: anysearch-team/anysearch-dsh
+category: tools
+description:
+  en: AnySearch-powered real-time web and vertical search provider for DeepSeek Harness.
+  zh: 基于 AnySearch 的实时网页与垂直搜索插件，为 DeepSeek Harness 提供搜索工具。

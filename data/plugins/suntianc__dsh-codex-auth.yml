@@ -1,0 +1,6 @@
+url: https://github.com/suntianc/dsh-codex-auth
+name: suntianc/dsh-codex-auth
+category: model
+description:
+  en: Reuses the Codex CLI ChatGPT login as an `openai-codex` LLM route and adds GPT Auth controls to DSH Web settings.
+  zh: 复用 Codex CLI 的 ChatGPT 登录态注册 `openai-codex` LLM 路由，并在 DSH Web 设置中提供 GPT Auth 控件。

@@ -1,0 +1,6 @@
+url: https://github.com/detongz/dsh-client-ui-obsidian-memory
+name: detongz/dsh-client-ui-obsidian-memory
+category: memory
+description:
+  en: 'Persistent AI memory backed by a local Obsidian/Codex vault: five obsidian_memory_* read/write/search tools plus a sidebar vault browser.'
+  zh: '基于本地 Obsidian/Codex 知识库的持久 AI 记忆：5 个 obsidian_memory_* 读写搜索工具，外加侧边栏知识库浏览器。'

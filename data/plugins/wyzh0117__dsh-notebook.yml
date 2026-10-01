@@ -1,0 +1,6 @@
+url: https://github.com/wyzh0117/dsh-notebook
+name: wyzh0117/dsh-notebook
+category: ui
+description:
+  en: 'Sidebar notebook with titled notes and inline images (videos rejected); click a title to copy its body to the clipboard, reference a note in the composer with @, and optionally open the notebook for every new session.'
+  zh: '侧边栏记事本：带标题与正文的记事，可插入图片（拒收视频）；点标题把正文复制到剪贴板；输入框里可用 @ 引用某条记事；可选在新会话时自动打开记事本。'

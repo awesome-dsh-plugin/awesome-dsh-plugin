@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-usage-guard
+name: GooDAnDReaDY/dsh-usage-guard
+category: usage
+description:
+  en: "Normalizes malformed token-usage samples so broken session histories remain loadable."
+  zh: "规范化异常的 Token 用量样本，使损坏的会话历史仍可加载。"

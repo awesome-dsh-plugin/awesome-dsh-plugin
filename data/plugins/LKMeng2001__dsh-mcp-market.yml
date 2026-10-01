@@ -1,0 +1,6 @@
+url: https://github.com/LKMeng2001/dsh-mcp-market
+name: LKMeng2001/dsh-mcp-market
+category: market
+description:
+  en: 'MCP server marketplace for DSH: browse a curated, npm-verified catalog and install MCP servers into the current profile with one click, live without restart.'
+  zh: DSH 的 MCP 服务器商场：浏览经过 npm 校验的精选目录，一键安装 MCP 服务器到当前 profile，免重启立即生效。

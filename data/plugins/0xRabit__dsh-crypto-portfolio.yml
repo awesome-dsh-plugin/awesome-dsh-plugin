@@ -1,0 +1,6 @@
+url: https://github.com/0xRabit/dsh-crypto-portfolio
+name: 0xRabit/dsh-crypto-portfolio
+category: tools
+description:
+  en: 'Self-hosted crypto portfolio dashboard: BTC, EVM (73 chains via DeBank), Solana, Dogecoin, Cardano, Hyperliquid L1, five exchanges (Binance, Bybit, Backpack, OKX, Bitget) and tokenised equities in one view, with multi-provider failover, custom asset labels, a tunable asset-health report, a shareable PNG card, per-source connection tests, multi-profile configs, scheduled refresh and zero-dependency charts (Python stdlib + vanilla JS, no CDN).'
+  zh: '自托管加密资产仪表盘：BTC、EVM（DeBank 73 条链）、Solana、狗狗币、艾达币、Hyperliquid L1、五家交易所（Binance / Bybit / Backpack / OKX / Bitget）与代币化股票统一视图；多数据源自动切换、自定义资产类别标签、可调阈值的资产健康度报告、可分享的 PNG 卡片、每个数据源独立连通性测试、多 Profile 配置、定时刷新、零依赖图表（Python 标准库 + 原生 JS，无 CDN）。'

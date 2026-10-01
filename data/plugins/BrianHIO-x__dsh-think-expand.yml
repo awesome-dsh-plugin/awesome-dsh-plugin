@@ -1,0 +1,6 @@
+url: https://github.com/BrianHIO-x/dsh-think-expand
+name: BrianHIO-x/dsh-think-expand
+category: ui
+description:
+  en: Auto-expands every Think row after switching sessions, with a header switch to turn it on or off.
+  zh: 切换会话后也会自动展开全部 Think 行，标题栏有开关可以打开或关闭。

@@ -1,0 +1,7 @@
+url: https://github.com/XINY11451/dsh-wsl
+name: XINY11451/dsh-wsl
+category: wsl
+tarball: https://github.com/XINY11451/dsh-wsl/releases/latest/download/dsh-wsl.tgz
+description:
+  en: 'WSL tools for DSH: run Linux commands, convert Windows/WSL paths, and summarize the WSL environment.'
+  zh: 'DSH 的 WSL 工具：执行 Linux 命令、转换 Windows/WSL 路径、汇总 WSL 环境。'

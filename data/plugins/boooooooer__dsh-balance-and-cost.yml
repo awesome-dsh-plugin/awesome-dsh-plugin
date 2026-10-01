@@ -1,0 +1,6 @@
+url: https://github.com/boooooooer/dsh-balance-and-cost
+name: boooooooer/dsh-balance-and-cost
+category: usage
+description:
+  en: DeepSeek account balance and model cost tracking with official peak/off-peak pricing, three-tier token billing (cache miss, cache hit, output), per-model and per-session breakdowns, a composer summary bar with hover details, CSV export, and a settings panel.
+  zh: DeepSeek 账户余额与模型消耗：官方价格表分高峰/空闲时段计价，三档计费口径（缓存未命中/命中/输出），按模型与会话统计，主页摘要条悬停明细，支持导出 CSV 与重置记录。

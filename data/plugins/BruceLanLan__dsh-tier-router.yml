@@ -1,0 +1,6 @@
+url: https://github.com/BruceLanLan/dsh-tier-router
+name: BruceLanLan/dsh-tier-router
+category: model
+description:
+  en: 'Two-tier model routing: a strong tier plans, advises and reviews while a cheap tier implements, with plan-mode-aware auto routing, a high-impact escalation guard, failure auto-escalation, and subagent tiering.'
+  zh: 双档模型路由：强档负责规划/咨询/评审、弱档负责实现；含计划模式自动路由、高危操作守卫、失败自动升级与子代理分层。

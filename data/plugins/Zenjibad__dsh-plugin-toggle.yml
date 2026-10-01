@@ -1,0 +1,6 @@
+url: https://github.com/Zenjibad/dsh-plugin-toggle
+name: Zenjibad/dsh-plugin-toggle
+category: dev
+description:
+  en: 'Enables or disables DSH plugins from Settings → Plugins: each toggle stops or starts the plugin immediately without a restart and the change persists across restarts.'
+  zh: 在 DSH 设置 → 插件页直接启用或停用插件：切换开关即时停止或启动插件（无需重启），并持久化，重启后依旧生效。

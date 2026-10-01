@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/context-pruner
+name: JohnXu22786/context-pruner
+category: memory
+description:
+  en: 'Session context triage for long DeepSeek Harness sessions: deterministic screeners trim stale, duplicate, failed, and oversized content through the official ctx.compaction seam.'
+  zh: '面向 DeepSeek Harness 长会话的上下文分诊插件：通过官方 ctx.compaction 接缝，用确定性规则筛查并裁剪过期、重复、失败与超大的上下文内容。'

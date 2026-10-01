@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-prime-memory
+name: drscrewdriver/dsh-prime-memory
+category: memory
+description:
+  en: 'Layered memory for DSH whose agent-facing surface is 10 tools: high-privilege writes (memory_add, memory_delete, memory_import), rumination controls (memory_ruminate, _cancel, _status), and a memory graph (memory_search_graph, memory_expand_graph_node), built over an L0-L3 distillation pipeline that recalls and injects relevant memories before each model step.'
+  zh: '分层记忆插件，面向 Agent 暴露 10 个工具：高权限写入（memory_add / memory_delete / memory_import）、反刍控制（memory_ruminate / _cancel / _status）与记忆图谱（memory_search_graph / memory_expand_graph_node），底层为 L0–L3 蒸馏管线，并在每步模型调用前召回注入相关记忆。'

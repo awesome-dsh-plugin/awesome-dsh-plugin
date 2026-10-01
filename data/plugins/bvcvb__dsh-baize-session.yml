@@ -1,0 +1,6 @@
+url: https://github.com/bvcvb/dsh-baize-session
+name: bvcvb/dsh-baize-session
+category: session
+description:
+  en: Moves selected messages from one conversation into another, and manages a workspace's conversations with archive, restore, delete and move between workspaces.
+  zh: 把选中的消息从一个对话迁移到另一个对话，并管理工作区的对话——支持归档、还原、删除和跨工作区迁移。

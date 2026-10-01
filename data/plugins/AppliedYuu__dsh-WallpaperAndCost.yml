@@ -1,0 +1,10 @@
+# ============================================================
+# 市场提交文件：放到 fork 仓库的 data/plugins/ 下
+# 文件名必须是：AppliedYuu__dsh-WallpaperAndCost.yml
+# ============================================================
+url: https://github.com/AppliedYuu/dsh-WallpaperAndCost
+name: AppliedYuu/dsh-WallpaperAndCost
+category: ui
+description:
+  en: "Merged plugin: wallpaper customization (original-resolution uploads, crop editor, per-area opacity, MP4/WebM dynamic wallpapers) + Steam Workshop wallpaper extraction (parses scene.pkg/.tex via a bundled Python script, preview/download) + DeepSeek balance & usage widget + OpenCode Go plan usage (rolling/weekly/monthly percents in a top header pill; expand for progress bars & reset countdowns). API keys are read from DSH's credential store by the host — never stored in source or the browser."
+  zh: "合并插件：壁纸定制（原图不压缩、裁剪编辑器、左/中/右分区不透明度、MP4/WebM 动态壁纸）＋ Steam 创意工坊壁纸提取（内置 scripts/extract_scene_pkg.py 解析 scene.pkg/.tex，支持预览/下载）＋ DeepSeek 余额与用量小组件 ＋ OpenCode Go 套餐用量（会话顶部药丸按钮显示滚动/周/月用量百分比，点开展开进度条与重置倒计时）。各 API key 均由 host 从 DSH 凭据库读取，不入源码/浏览器。"

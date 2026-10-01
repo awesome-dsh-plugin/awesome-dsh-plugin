@@ -1,0 +1,6 @@
+url: https://github.com/xiaozhe7772222/dsh-draw-router
+name: xiaozhe7772222/dsh-draw-router
+category: vision
+description:
+  en: 'Unified image generation router for DeepSeek Harness (DSH): auto-discovers image models from any OpenAI-compatible endpoint, provides draw_image and draw_list_sources tools, supports SenseNova, StepFun, Agnes, Qwen, Flux, SD, Imagen and more.'
+  zh: 'DeepSeek Harness 统一绘图路由器：自动识别任意 OpenAI 兼容接口的绘图模型，提供 draw_image 和 draw_list_sources 工具，支持商汤、阶跃、Agnes、千问、Flux、SD、Imagen 等。'

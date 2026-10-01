@@ -1,0 +1,6 @@
+url: https://github.com/Tkingxiao/I-am-Yuike
+name: Tkingxiao/I-am-Yuike
+category: identity
+description:
+  en: 'Strips the harness-injected prefix and suffix system prompts so the agent runs on the preset''s native prompt alone, for soft-jailbreak catgirl persona simulation: ships a bundled plugin that idempotently deploys the 猫娘 Yuike preset to ~/.dsh/.agent-presets/yuike/ and never overwrites an edited preset.'
+  zh: '通过自带插件去除 harness 前置与后置注入提示词，仅使用预设原生提示词运行，实现软破限与猫娘人格模拟：将猫娘 Yuike 预设幂等部署到 ~/.dsh/.agent-presets/yuike/，不覆盖已编辑的预设。'

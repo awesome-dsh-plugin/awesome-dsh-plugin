@@ -1,0 +1,6 @@
+url: https://github.com/Volta-ln/dsh-quick-ask
+name: Volta-ln/dsh-quick-ask
+category: ui
+description:
+  en: 'ChatGPT-style side chat for the DSH Web GUI: ask small questions about the current topic in a floating side panel, answered by an independent lightweight session over the official /api RPC — the main conversation is never touched. Streaming text, collapsible reasoning, tool chips, stop button, agent-preset selector, and an automatic context snapshot from the visible main chat.'
+  zh: 'ChatGPT 式侧边快速提问：在 DSH Web 聊天界面右侧悬浮面板中就当前话题提小问题，由独立轻量会话通过官方 /api RPC 回答，绝不写入、不影响主对话。流式正文、可折叠思考、工具 chips、停止按钮、agent 预设选择，自动抓取主对话最近内容作为背景。'

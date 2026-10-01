@@ -1,0 +1,6 @@
+url: https://github.com/huguangyu666/dsh-plugin-session-import
+name: huguangyu666/dsh-plugin-session-import
+category: session
+description:
+  en: 'Import claude-code / codex / reasonix / zcode chat history into dsh sessions: workspace binding, tool calls preserved, oversized-session protection, zcode compaction restore.'
+  zh: 把 claude-code / codex / reasonix / zcode 的聊天历史导入为 dsh 会话：工作区绑定、工具调用保留、超长会话保护、zcode 压缩还原。

@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-expose
+name: 173787247/dsh-wsl-expose
+category: wsl
+description:
+  en: 'Advises or applies allowlisted Windows portproxy for a WSL listen port, preferring the kit :3081 relay and launch token for local dsh UI.'
+  zh: '为 WSL 监听端口提供白名单 Windows portproxy 建议或应用；本机 dsh UI 优先用 kit 的 :3081 中继与 launch token。'

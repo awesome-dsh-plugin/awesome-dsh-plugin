@@ -1,0 +1,6 @@
+url: https://github.com/better-er/dsh-edit-diff
+name: better-er/dsh-edit-diff
+category: ui
+description:
+  en: 'Client-side re-render of edit/write tool cards with a near-linear line-level diff that drops duplicate unchanged lines and underlines the actual changed characters inside replaced lines.'
+  zh: '接管浏览器端 edit/write 工具卡片，用近线性行级 diff 只显示真正变化行，并对替换对做行内字符下划线高亮，消除内置 diff 对未变化相同行的重复渲染。'

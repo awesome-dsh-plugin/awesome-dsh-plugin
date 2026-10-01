@@ -1,0 +1,6 @@
+url: https://github.com/sumomok/dsh-plugins/tree/main/packages/quote-message
+name: sumomok/dsh-plugins#quote-message
+category: ui
+description:
+  en: 'Quote earlier content of the current session into the composer: select text in any message for a Quote pill, or type @ to pick a whole message; the quote travels as a native reference chip and is serialized into the prompt as a blockquote. Client-only, no host routes, no custom session events.'
+  zh: '把本会话里更早的内容引用进输入框：在任意消息里划选文字出现"引用"按钮，或输入 @ 选择整条消息；引用以原生 chip 形式存在，发送时序列化为引用块进入 prompt。纯客户端，无宿主路由，无自定义会话事件。'

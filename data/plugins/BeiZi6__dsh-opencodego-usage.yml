@@ -1,0 +1,6 @@
+url: https://github.com/BeiZi6/dsh-opencodego-usage
+name: BeiZi6/dsh-opencodego-usage
+category: usage
+description:
+  en: 'OpenCodeGo quota monitor for the DSH Web GUI: a breathing indicator at the input''s bottom-right (green/yellow/red by remaining share), a liquid-glass panel with rolling/weekly/monthly usage windows and reset times, auto-refreshing every 30 s; API key read from DSH credentials.'
+  zh: OpenCodeGo 剩余额度监视器：输入框右下角呼吸指示灯（按剩余额度绿/黄/红），液态玻璃面板显示滚动/周/月用量窗口与重置时间，每 30 秒自动刷新，API Key 自动读取 DSH 凭据。

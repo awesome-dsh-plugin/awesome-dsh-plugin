@@ -1,0 +1,6 @@
+url: https://github.com/keepermttl/dsh-archive-viewer
+name: keepermttl/dsh-archive-viewer
+category: session
+description:
+  en: 'Archived-session manager for the DSH Web GUI: search titles and message content, tag/filter sessions, read logs, restore sessions, and export ZIP archives.'
+  zh: DSH Web 归档会话管理器：支持标题/内容搜索、标签筛选、阅读日志、恢复会话与 ZIP 导出。

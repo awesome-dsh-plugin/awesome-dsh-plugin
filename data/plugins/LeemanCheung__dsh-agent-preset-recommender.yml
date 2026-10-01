@@ -1,0 +1,6 @@
+url: https://github.com/LeemanCheung/dsh-agent-preset-recommender
+name: LeemanCheung/dsh-agent-preset-recommender
+category: tools
+description:
+  en: 'Bounded, privacy-safe local scanner for Codex, Claude Code, WorkBuddy, and CodeBuddy metadata: atomically aggregates keyed evidence and deterministically advises built-in DSH presets and optional capabilities—without content retention, network access, or preset mutation.'
+  zh: 有界、隐私安全的本地扫描器：汇总 Codex、Claude Code、WorkBuddy、CodeBuddy 元数据，原子保存密钥化聚合证据，并确定性推荐 DSH 内置 preset 与可选能力；不保留正文、不联网、不修改 preset。

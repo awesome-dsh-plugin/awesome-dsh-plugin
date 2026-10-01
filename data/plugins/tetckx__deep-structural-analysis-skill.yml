@@ -1,0 +1,9 @@
+# Entry for awesome-dsh-plugin / plugin marketplace
+# This is the file to add in the awesome-dsh-plugin repo as:
+#   data/plugins/tetckx__deep-structural-analysis-skill.yml
+url: https://github.com/tetckx/deep-structural-analysis-skill
+name: tetckx/deep-structural-analysis-skill
+category: skill
+description:
+  en: 'Multi-lens structural analysis skill: adversarial-first analysis across 16 lenses in 4 categories with 10 structural tools, confidence calibration, and fact-bound layered output.'
+  zh: '多视角深层结构分析技能：16 透镜 4 类别、10 个结构工具，先攻击默认立场，产出置信度校准、事实绑定的分层结论。'

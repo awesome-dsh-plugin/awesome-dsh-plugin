@@ -1,0 +1,7 @@
+url: https://github.com/andyfan1094/dsh-winrm
+name: andyfan1094/dsh-winrm
+category: remote
+tarball: https://github.com/andyfan1094/dsh-winrm/releases/download/v0.1.5/dsh-winrm-0.1.5.tgz
+description:
+  en: Manage Windows hosts over WinRM from a web panel and seven agent tools with PowerShell exec, service and process control, SMB / chunked file transfer with SHA-256 verification, and cluster execution.
+  zh: 通过 WinRM 管理 Windows 主机，提供 PowerShell 执行、服务与进程管理、SMB/分块文件传输（SHA-256 校验）、集群并发，以及 GUI 面板和七个 agent 工具。

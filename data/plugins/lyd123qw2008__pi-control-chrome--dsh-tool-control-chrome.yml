@@ -1,0 +1,6 @@
+url: https://github.com/lyd123qw2008/pi-control-chrome/tree/main/dsh-tool-control-chrome
+name: lyd123qw2008/pi-control-chrome#dsh-tool-control-chrome
+category: browser
+description:
+  en: 'Chrome and Edge browser control that drives the real logged-in profile, tabs and cookies through an MV3 extension and a loopback Bridge, exposing browser_* tools, a Skill and /chrome commands.'
+  zh: '通过 MV3 扩展和本地 loopback Bridge 驱动用户已登录的真实 Chrome/Edge Profile、标签页与 Cookie，为 DSH 提供 browser_* 工具、Skill 和 /chrome 命令。'

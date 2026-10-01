@@ -1,0 +1,6 @@
+url: https://github.com/Q00/ouroboros/tree/main/integrations/dsh-plugin
+name: Q00/ouroboros#integrations/dsh-plugin
+category: workflow
+description:
+  en: 'Config-only bundle that mounts Ouroboros through the DSH MCP client, exposing 36 interview, Seed, execution, evaluation, and evolution workflow tools in DSH.'
+  zh: '通过 DSH MCP 客户端挂载 Ouroboros 的纯配置包，在 DSH 中提供 36 个涵盖需求访谈、Seed、执行、评估与演化流程的工具。'

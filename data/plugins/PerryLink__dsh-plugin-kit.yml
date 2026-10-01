@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-plugin-kit
+name: PerryLink/dsh-plugin-kit
+category: dev
+description:
+  en: 'Shared toolkit for authoring DeepSeek Harness plugins, published as @perrylink/dsh-plugin-kit: a pluggable provider registry seam, fail-closed approval and session-event gates, shared sanitize/pricing/judge modules and a new-plugin skeleton.'
+  zh: '编写 DeepSeek Harness 插件的共享工具包，发布为 @perrylink/dsh-plugin-kit：可插拔的 Provider 注册表接缝、失败即拒绝的审批与会话事件门、共享的脱敏/计价/裁决模块，以及新插件骨架。'

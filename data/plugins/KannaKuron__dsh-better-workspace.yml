@@ -1,0 +1,6 @@
+url: https://github.com/KannaKuron/dsh-better-workspace
+name: KannaKuron/dsh-better-workspace
+category: ui
+description:
+  en: 'Hierarchical workspace tree for the DSH sidebar: every slash in a workspace title becomes a virtual folder (arbitrarily deep), the add-workspace directory flow gains a parent-group popup, renames re-derive the tree instantly, sessions nest on the same rule with separate visual styling, and every row carries right-click actions plus per-row appearance customization (color, text-only glow, font weight, primitives-family icon).'
+  zh: 'DSH 侧边栏「工作区」列表的层级树插件：工作区与会话名称中的 / 即虚拟分组（任意多级），添加工作区的目录流附带「所属分组」弹窗，重命名即时重排；每层行均支持右键操作与外观自定义（颜色、文字发光、字体粗细、原版图标库图标）。'

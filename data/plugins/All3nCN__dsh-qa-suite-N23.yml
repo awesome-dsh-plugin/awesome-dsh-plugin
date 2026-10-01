@@ -1,0 +1,6 @@
+url: https://github.com/All3nCN/dsh-qa-suite-N23
+name: All3nCN/dsh-qa-suite-N23
+category: dev
+description:
+  en: 'Quality suite: background tsc --noEmit diagnostics fed back after the agent edits TypeScript, plus a /code-review command running five parallel review lenses with confidence scoring; absorbs dsh-code-check and dsh-command-code-review.'
+  zh: '质控套件：agent 编辑 TypeScript 后自动回喂 tsc --noEmit 诊断，另含 /code-review 命令（五镜头并行审查 + 置信度评分）；吸收合并 dsh-code-check 与 dsh-command-code-review。'

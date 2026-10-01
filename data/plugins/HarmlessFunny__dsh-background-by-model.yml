@@ -1,0 +1,6 @@
+url: https://github.com/HarmlessFunny/dsh-background-by-model
+name: HarmlessFunny/dsh-background-by-model
+category: theme
+description:
+  en: 'Per-model appearance for the DSH Web UI: an ordered rule list matched against the current session model name, each rule carrying its own wallpaper, theme colour, layout mode, framing and wallpaper opacity and blur, plus per-surface opacity and frosted-glass blur for the main background, left panel, right panel, cards and panels, input and controls, settings panel, conversation text frame and trajectory view.'
+  zh: '按模型切换 DSH Web 界面外观：有序规则列表按当前会话的模型名匹配，每条规则自带壁纸、主题色、布局模式、取景与背景透明度、模糊；另有主背景、左侧栏、右侧栏、卡片面板、输入框与控件、设置面板、对话文本框、轨迹页的分区透明度与毛玻璃模糊。'

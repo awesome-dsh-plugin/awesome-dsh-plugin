@@ -1,0 +1,6 @@
+url: https://github.com/zljr/dsh-share
+name: zljr/dsh-share
+category: session
+description:
+  en: Share the current session over the LAN as a read-only, token-guarded HTML snapshot with session stats and Markdown rendering.
+  zh: 将当前会话以只读、token 保护的 HTML 快照分享到局域网，附带会话统计与 Markdown 渲染。

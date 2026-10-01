@@ -1,0 +1,6 @@
+url: https://github.com/chenkai2/dsh-daemon
+name: chenkai2/dsh-daemon
+category: dev
+description:
+  en: 'Registers the DeepSeek Harness web server (dsh web) as an auto-start, self-healing background service — LaunchAgent / systemd / cron plus a 30s health-check watchdog — with seven dsh_daemon_* tools (install/uninstall/reinstall/status/start/stop/update).'
+  zh: 将 DeepSeek Harness 的 web 服务（dsh web）注册为自启动、自愈的后台服务：LaunchAgent / systemd / cron 加 30 秒健康检查 watchdog，并提供 7 个 dsh_daemon_* 工具（安装/卸载/重装/状态/启动/停止/更新）。

@@ -1,0 +1,6 @@
+url: https://github.com/balue8246-maker/dsDragPasteALL
+name: balue8246-maker/dsDragPasteALL
+category: ui
+description:
+  en: 'Drag or paste any local file onto the DSH page; it resolves the real absolute path (Spotlight + size/mtime + head/tail fingerprint match) and inserts it into the composer, with a content-cache fallback.'
+  zh: '把本机任意文件拖拽或粘贴到 DSH 页面，静默反查真实绝对路径并插入输入框（Spotlight + 大小/时间 + 首尾指纹校验），未找到时内容缓存兜底。'

@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-a2a
+name: kouyichi/dsh-plugins#dsh-a2a
+category: tools
+description:
+  en: 'Native A2A (Agent-to-Agent) server for dsh: expose this dsh as a callable agent over HTTP with JSON-RPC tasks.'
+  zh: 'dsh 原生 A2A 服务：通过 HTTP JSON-RPC 将本 dsh 暴露为可调用的代理。'

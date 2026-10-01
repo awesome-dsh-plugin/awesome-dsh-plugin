@@ -1,0 +1,6 @@
+url: https://github.com/kiligzzz/dsh-agent-dispatch
+name: kiligzzz/dsh-agent-dispatch
+category: tools
+description:
+  en: 'User-defined agents with automatic routing, model failover, and squad orchestration: six model tools (agent_dispatch / agent_followup / agent_list / agent_squad / agent_import_skill / agent_upsert), no built-in agents, a native right-tab panel (Overview / Agents / Squads / History), and a floating action ball.'
+  zh: '自定义 Agent + 自动路由 + 小队编排：六个模型工具（agent_dispatch / agent_followup / agent_list / agent_squad / agent_import_skill / agent_upsert），无内置 Agent，原生右 tab 主面板（总览 / Agent / 小队 / 历史）与悬浮活动球。'

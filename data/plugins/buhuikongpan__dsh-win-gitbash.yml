@@ -1,0 +1,6 @@
+url: https://github.com/buhuikongpan/dsh-win-gitbash
+name: buhuikongpan/dsh-win-gitbash
+category: tools
+description:
+  en: 'Git Bash shell tool for Windows: runs commands through the bash bundled with Git for Windows, with timeout, sandbox, output truncation, and background jobs, replacing the slow pwsh tool and the WSL-only bash tool.'
+  zh: 面向 Windows 的 Git Bash 工具：通过 Git for Windows 自带的 bash 执行命令，支持超时、沙箱、输出截断与后台任务，替代卡顿的 pwsh 工具与仅限 WSL 的 bash 工具。

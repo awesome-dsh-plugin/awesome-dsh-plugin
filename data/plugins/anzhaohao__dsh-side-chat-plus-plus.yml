@@ -1,0 +1,6 @@
+url: https://github.com/anzhaohao/dsh-side-chat-plus-plus
+name: anzhaohao/dsh-side-chat-plus-plus
+category: session
+description:
+  en: "Multi-tab side chat for DeepSeek Harness. Quote a whole message or text selected from a still-streaming reply into a side chat without waiting for the reply to finish, and dock the panel over the better-sidebar workbench or yield to the conversation depending on the sidebar state."
+  zh: "DeepSeek Harness 多标签侧聊增强：可引用整条消息，也可在回复生成中选中文本追问（无需等待回复完成）；右侧停靠面板随 better-sidebar 开关在覆盖与让位间自动切换。"

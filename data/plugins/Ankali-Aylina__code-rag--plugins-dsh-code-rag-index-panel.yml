@@ -1,0 +1,6 @@
+url: https://github.com/Ankali-Aylina/code-rag/tree/main/plugins/dsh-code-rag-index-panel
+name: Ankali-Aylina/code-rag#dsh-code-rag-index-panel
+category: dev
+description:
+  en: 'Code RAG semantic index panel and settings card: live index bar with start/rebuild/cancel, plus one-click detection and configuration.'
+  zh: 'Code RAG 语义索引面板与设置卡片：输入框上方的实时索引条（开始/全量重建/取消），以及一键检测与配置（Qdrant/Ollama/预设/ignore）。'

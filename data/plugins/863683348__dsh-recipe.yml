@@ -1,0 +1,6 @@
+url: https://github.com/863683348/dsh-recipe
+name: 863683348/dsh-recipe
+category: market
+description:
+  en: 'Scenario bundles of dsh plugins (插件界的 dotfiles): a recipe tool that lists, searches, applies and composes ready-made plugin environments with ordered install sequences.'
+  zh: '把 dsh 插件打包成场景配方（"插件界的 dotfiles"）：recipe 工具可列出、搜索、应用并组合现成插件环境，带有序安装序列。'

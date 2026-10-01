@@ -1,0 +1,6 @@
+url: https://github.com/ThinkofRain1213/deepseek-harness-wallet-patched
+name: ThinkofRain1213/deepseek-harness-wallet-patched
+category: usage
+description:
+  en: 'Maintained fork of feibi-mochi/deepseek-harness-control-center, which has not been updated since 2026-09-09. Pricing follows the official model pool instead of a hardcoded model prefix, so DeepSeek V4.1 Flash (`deepseek-flash`) is billed and shows its peak/off-peak clock, and the official price page is parsed structurally so a renamed or retired model no longer stops price sync. Adds an English interface beside the original Chinese. Otherwise the same plugin: balance, per-session cost and token breakdown, a 24-hour peak/off-peak clock, Z.ai plan quota, and a local usage ledger, following the host light/dark theme.'
+  zh: 'feibi-mochi/deepseek-harness-control-center 的维护分支，上游自 2026-09-09 起未再更新。计价改为跟随官方模型池、而非硬编码模型前缀，因此 DeepSeek V4.1 Flash（`deepseek-flash`）能正常计价并显示峰谷时钟；官方价格页改为结构化解析，模型改名或下架不再中断价格同步。界面在原有中文之外增加英文。其余与原插件一致：余额、本会话花费与 token 拆分、24 小时峰谷时钟、Z.ai 套餐额度与本机用量账本，并跟随宿主明暗主题。'

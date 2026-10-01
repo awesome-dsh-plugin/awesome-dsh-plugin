@@ -1,0 +1,6 @@
+url: https://github.com/Sycada/dsh-remote-ssh-tools
+name: Sycada/dsh-remote-ssh-tools
+category: remote
+description:
+  en: 'SSH session manager for DeepSeek Harness: saved profiles, agent ssh_run, interactive terminals, and SFTP with secrets kept in the DSH credential center.'
+  zh: 'DeepSeek Harness 的 SSH 会话管理：连接档案、Agent 远程执行、交互终端与 SFTP；秘密仅存于 DSH 凭据中心。'

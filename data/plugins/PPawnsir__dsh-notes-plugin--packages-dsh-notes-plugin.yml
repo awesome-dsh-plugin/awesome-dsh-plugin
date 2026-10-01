@@ -1,0 +1,6 @@
+url: https://github.com/PPawnsir/dsh-notes-plugin/tree/main/packages/dsh-notes-plugin
+name: PPawnsir/dsh-notes-plugin#dsh-notes-plugin
+category: workflow
+description:
+  en: "Session-aware local notes for DeepSeek Harness: capture notes and page selections in a floating Apple Notes style panel, let the LLM classify topics, auto-inject convention notes into the system prompt, and dispatch todos with recall context to active sessions."
+  zh: "DeepSeek Harness 的会话感知本地笔记：在 Apple Notes 风格浮窗里快速记录与选区摘录，由 LLM 自动分类主题，把约定类笔记自动注入系统提示，待办可携带召回上下文派发到活跃会话执行。"

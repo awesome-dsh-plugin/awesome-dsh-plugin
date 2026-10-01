@@ -1,0 +1,6 @@
+url: https://github.com/huzhengbang2007/dsh-orca-glass
+name: huzhengbang2007/dsh-orca-glass
+category: theme
+description:
+  en: 'DSH Web plugin that injects an SVG (feTurbulence + feDisplacementMap) refraction filter and applies it through backdrop-filter to panels, bubbles and the input card, and bundles the orca-scene skin with theme tokens plus light and dark backgrounds.'
+  zh: 'DSH 网页端插件：注入 SVG（feTurbulence + feDisplacementMap）折射滤镜，并用 backdrop-filter 作用到面板、气泡与输入卡上；同时附带 orca-scene 皮肤（主题 token 与明暗两套背景）。'

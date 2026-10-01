@@ -1,0 +1,6 @@
+url: https://github.com/zoahdev/dsh-shelf
+name: zoahdev/dsh-shelf
+category: session
+description:
+  en: 'Session lifecycle CLI: export (md/json/jsonl), archive/restore, trash, search, and stats. Read-only by default; nothing is ever deleted by the engine.'
+  zh: 会话生命周期 CLI：导出（md/json/jsonl）、归档/恢复、回收站、搜索与统计。默认只读；引擎从不删除任何东西。

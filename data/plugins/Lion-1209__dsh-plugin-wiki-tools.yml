@@ -1,0 +1,6 @@
+url: https://github.com/Lion-1209/dsh-plugin-wiki-tools
+name: Lion-1209/dsh-plugin-wiki-tools
+category: tools
+description:
+  en: 'Native tools for an Obsidian wiki vault: wiki_query, wiki_write, wiki_rename, wiki_scaffold, wiki_archive, and wiki_lint cover BM25 search with link-graph context, bookkeeping writes with sha256 source tracking, vault-wide renames, mode scaffolds, source archiving, and health checks — with cross-process locks and optional git auto-commit.'
+  zh: 'Obsidian wiki vault 原生工具：wiki_query、wiki_write、wiki_rename、wiki_scaffold、wiki_archive、wiki_lint 覆盖 BM25 链接图检索、带 sha256 源追踪的簿记式写入、全库改名、模式化脚手架、源归档与健康检查，并内置跨进程锁与可选 git 自动提交。'

@@ -1,0 +1,6 @@
+url: https://github.com/huashenglian/dsh-livechat
+name: huashenglian/dsh-livechat
+category: fun
+description:
+  en: 'Bilibili-style danmaku overlay for the DSH Web chat area: scroll, top and bottom tracks driven by agent events, three preset packs, optional LLM-generated comments, a draggable control ball, per-session pools with replay, and a settings card.'
+  zh: '给 DSH Web 对话区叠加 B 站风格弹幕：按 agent 事件生成滚动/顶部/底部三轨弹幕，三套预设包、可选 LLM 生成吐槽、可拖动控制球、分会话弹幕池与历史回放，以及完整设置卡。'

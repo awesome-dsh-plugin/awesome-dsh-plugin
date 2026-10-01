@@ -1,0 +1,6 @@
+url: https://github.com/xingyingyuzhui/dsh-session-actions
+name: xingyingyuzhui/dsh-session-actions
+category: session
+description:
+  en: 'Session row menu extras for DeepSeek Harness: pin sessions, copy session id, export structured Markdown, and permanently delete sessions.'
+  zh: 会话行菜单增强：置顶会话、复制会话 ID、导出结构化 Markdown、弹窗确认后永久删除会话。

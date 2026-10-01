@@ -1,0 +1,6 @@
+url: https://github.com/mengxiaoxian/lookover/tree/main/dsh-expmem
+name: mengxiaoxian/lookover#dsh-expmem
+category: memory
+description:
+  en: 'Personal-experience memory for DSH: turns solved tasks into sourced problem cases with condition-scoped claims, recalls them into new tasks via hidden pre-step injection, and makes corrections/deletes cascade to future recall.'
+  zh: '个人经验记忆：把真实解决过的问题存为带来源、可纠正、有适用条件的案例，新任务中自动召回复用，纠正与删除会级联影响后续召回。'

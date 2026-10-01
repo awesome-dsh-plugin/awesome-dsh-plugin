@@ -1,0 +1,6 @@
+url: https://github.com/ising-tech/isingq-toolkit/tree/main/packages/dsh-plugin
+name: ising-tech/isingq-toolkit#dsh-plugin
+category: tools
+description:
+  en: 'Native DeepSeek Harness plugin for IsingQ: guided QUBO modeling and validation on-device, then user-confirmed remote solving.'
+  zh: 'IsingQ 原生插件：引导式 QUBO 建模与本地校验，用户确认后提交远端求解。'

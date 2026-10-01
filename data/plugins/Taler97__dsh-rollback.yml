@@ -1,0 +1,6 @@
+url: https://github.com/Taler97/dsh-rollback
+name: Taler97/dsh-rollback
+category: tools
+description:
+  en: 'Observational file-mutation rollback for the fs tools: write/edit pre-images are checkpointed as git blobs or snapshots and restored through a model-facing rollback_files tool or a /rollback command.'
+  zh: 文件变更回滚：捕获 write/edit 工具调用的改前映像（git blob 或快照），通过面向模型的 rollback_files 工具或 /rollback 命令还原。

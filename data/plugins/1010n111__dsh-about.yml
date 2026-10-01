@@ -1,0 +1,6 @@
+url: https://github.com/1010n111/dsh-about
+name: 1010n111/dsh-about
+category: ui
+description:
+  en: Adds an "About" settings page to the DeepSeek Harness web interface, showing the running DSH version and recent release notes.
+  zh: 为 DeepSeek Harness Web 设置面板添加“关于”页，展示运行中的 DSH 版本与最近更新日志。

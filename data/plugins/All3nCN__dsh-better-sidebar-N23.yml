@@ -1,0 +1,6 @@
+url: https://github.com/All3nCN/dsh-better-sidebar-N23
+name: All3nCN/dsh-better-sidebar-N23
+category: ui
+description:
+  en: 'Full workbench fork of dsh-better-sidebar: explorer, editor, terminal, Git, browser and split panes, plus a VSCode-like shell refactor with a full-width compact header and activity rail; publishes as @all3cn/dsh-better-sidebar-n23 on npm.'
+  zh: 'dsh-better-sidebar 完整工作台 fork：资源管理器、编辑器、终端、Git、浏览器与分屏，外加仿 VSCode 外壳重构（全宽紧凑顶栏与活动栏）；npm 包名 @all3cn/dsh-better-sidebar-n23。'

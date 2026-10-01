@@ -1,0 +1,6 @@
+url: https://github.com/poplarity/dsh-science-workbench
+name: poplarity/dsh-science-workbench
+category: tools
+description:
+  en: 'Reproducible science workbench: agent-driven cells, inline figures with feedback/rerun, manifest provenance, environment snapshots, and publication-grade figure skills (9 bio_* tools + workbench UI).'
+  zh: '可复现科学分析工作台：agent 驱动的 cell、内联图形与反馈重画、manifest 溯源、环境快照与出版级出图技能（9 个 bio_* 工具 + 工作台界面）。'

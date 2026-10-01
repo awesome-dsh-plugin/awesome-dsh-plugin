@@ -1,0 +1,6 @@
+url: https://github.com/lalalaleo/dsh-draft
+name: lalalaleo/dsh-draft
+category: ui
+description:
+  en: 'A Markdown-based draft-board plugin for dsh: live-preview editing and local persistence.'
+  zh: 基于 Markdown 的 dsh 草稿板插件，支持实时预览编辑，本地持久化。
