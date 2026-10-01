@@ -1,0 +1,6 @@
+url: https://github.com/huangmiuXyz/dsh-edit-retry
+name: huangmiuXyz/dsh-edit-retry
+category: session
+description:
+  en: Right-click any user message to resend it as-is or edit it first; DSH forks a new session before that message, adopts the model the source session has selected now, sends the text, and can optionally delete the source session and inherit its name.
+  zh: 右键任意一条用户消息即可原样重发或先改再发：DSH 从这条消息之前分叉出新会话，继承源会话当前选中的模型后发送文本，还可选择删除源会话并继承它的名字。
