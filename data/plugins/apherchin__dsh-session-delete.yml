@@ -1,0 +1,6 @@
+url: https://github.com/apherchin/dsh-session-delete
+name: apherchin/dsh-session-delete
+category: session
+description:
+  en: "Session row menu actions that the Web UI does not ship: Delete conversation permanently removes the session directory, its projection cache and its archived/pinned bookkeeping in the workspace file, and cascades to the subagent sessions that session spawned; the delete is refused while the target session or any of its children is running. The same menu also copies the raw session id."
+  zh: "会话行菜单里的两个官方 Web UI 没有的动作：删除对话会永久清掉会话目录、投影缓存与工作区文件里的归档/置顶记账，并级联删除该会话派生的子代理会话；目标会话或其任一子会话仍在运行时拒绝删除。同一菜单还可复制原始会话 id。"
