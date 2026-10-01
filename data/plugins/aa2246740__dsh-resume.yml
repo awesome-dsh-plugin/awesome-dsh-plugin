@@ -1,0 +1,7 @@
+url: "https://github.com/aa2246740/dsh-resume"
+name: "aa2246740/dsh-resume"
+category: "session"
+description:
+  en: "Imports local coding-agent session histories so work can continue in DSH."
+  zh: "导入本地编程 Agent 的会话历史，在 DSH 中继续工作。"
+tarball: "https://github.com/aa2246740/dsh-resume/releases/download/v0.2.5/dsh-resume-0.2.5.tgz"
