@@ -1,0 +1,6 @@
+url: https://github.com/yuehancn/dsh-tool-invoice
+name: yuehancn/dsh-tool-invoice
+category: tools
+description:
+  en: Pull invoice number, date, parties, tax IDs and the amount/tax/total triplet out of text, then verify that amount plus tax really equals the total and flag documents that do not reconcile.
+  zh: 从文本中提取发票号码、日期、购销方、税号与金额/税额/合计，并验算「金额 + 税额 = 价税合计」是否成立，对不上就报出来。
