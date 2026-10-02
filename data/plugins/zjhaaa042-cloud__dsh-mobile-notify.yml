@@ -1,0 +1,6 @@
+url: https://github.com/zjhaaa042-cloud/dsh-mobile-notify
+name: zjhaaa042-cloud/dsh-mobile-notify
+category: notify
+description:
+  en: 'Mobile push when a DSH task goes idle, over 10 channels: ntfy, Bark, DingTalk, WeCom, Feishu, ServerChan, PushPlus, Telegram, Qmsg and generic webhooks. The message carries the session, workspace, elapsed time, turn number and a reply excerpt, and it runs host-side rather than in the browser page.'
+  zh: 'DSH 任务停下来时把通知推送到手机，支持 10 个渠道：ntfy、Bark、钉钉、企业微信、飞书、Server酱、PushPlus、Telegram、Qmsg 与通用 webhook；消息里带会话、目录、耗时、回合号与回复摘要，运行在 Host 侧而不是浏览器页面里。'
