@@ -1,0 +1,6 @@
+url: https://github.com/Lzcdebear/dsh-delete-session
+name: Lzcdebear/dsh-delete-session
+category: session
+description:
+  en: Deletes a conversation for real from the session menu, listing its subagent and forked conversations so you tick which of them go with it.
+  zh: 在会话菜单里真正删除对话：把它的子智能体会话与派生对话列出来，勾选哪些跟着一起删。
