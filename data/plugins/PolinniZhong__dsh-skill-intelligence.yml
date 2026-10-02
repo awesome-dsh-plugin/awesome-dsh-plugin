@@ -1,0 +1,6 @@
+url: https://github.com/PolinniZhong/dsh-skill-intelligence
+name: PolinniZhong/dsh-skill-intelligence
+category: skill
+description:
+  en: "Read-only Skill inspector for DeepSeek Harness. It shows which Skills a conversation actually loaded, how a single SKILL.md declares its own structure and workflow, and lets you read the body with an optional Chinese preview or clone a Skill into a local copy. It never writes back to the source Skill and never runs its scripts."
+  zh: "面向 DeepSeek Harness 的只读 Skill 检视器：看清一次对话到底加载了哪些 Skill、一份 SKILL.md 如何声明自己的结构与流程，并提供正文阅读、中文预览与复刻出一份本机副本。它不改写源 Skill，也不执行源里的脚本。"
