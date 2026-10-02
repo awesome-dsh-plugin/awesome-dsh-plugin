@@ -1,0 +1,6 @@
+url: https://github.com/haotian-lu-prog/dsh-archived-sessions-manager
+name: haotian-lu-prog/dsh-archived-sessions-manager
+category: session
+description:
+  en: 'Permanent deletion for archived sessions: takes over Settings → Archived sessions with per-row delete, clear all and a per-row disk footprint, removing the session log, the projection cache and the archive index together, and refusing sessions that are mid-turn.'
+  zh: '彻底删除已归档会话：接管「设置 → 已归档会话」，支持逐条删除、清空全部并标注每行磁盘占用，一次清掉会话日志、投影缓存与归档索引；正在生成回合的会话会被拒绝。'
