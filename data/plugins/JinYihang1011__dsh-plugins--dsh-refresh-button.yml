@@ -1,0 +1,6 @@
+url: https://github.com/JinYihang1011/dsh-plugins/tree/main/dsh-refresh-button
+name: JinYihang1011/dsh-plugins#dsh-refresh-button
+category: ui
+description:
+  en: 'Adds an interface menu under the composer with three actions that run immediately: reload the interface, restart DSH, close DSH. The Windows build ships no built-in reload or restart entry, so this adds one.'
+  zh: '在输入卡片下方加一个「界面」菜单：刷新界面 / 重启 DSH / 关闭 DSH，三项都即点即执行；Windows 版 DSH 没有内置的重载或重启入口，这里补上。'
