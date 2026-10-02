@@ -1,0 +1,5 @@
+url: https://github.com/173787247/dsh-wsl-winshot
+name: 173787247/dsh-wsl-winshot
+category: wsl
+description:
+  en: Capture a specific Windows window to a WSL file, by process id or window handle.
