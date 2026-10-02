@@ -1,0 +1,6 @@
+url: https://github.com/JauLukNgai/dsh-on-phone
+name: JauLukNgai/dsh-on-phone
+category: remote
+description:
+  en: 'Puts the DSH web UI on a phone browser over your own tailnet, with the remote channel built on Tailscale Serve. Both sides need only Tailscale: no dedicated app, no QR code, no login page, no account of its own, and no relay of your content. The desktop half runs on macOS, Windows or Linux.'
+  zh: '让手机浏览器直接使用电脑上的 DSH 网页界面，远程通道建立在 Tailscale Serve 之上。两边除了 Tailscale 不用再装任何东西：没有专用 App、没有二维码、没有登录页，插件不设账号，也不中转你的内容。电脑端支持 macOS、Windows 与 Linux。'
