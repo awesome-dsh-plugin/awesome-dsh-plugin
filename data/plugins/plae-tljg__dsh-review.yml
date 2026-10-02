@@ -1,0 +1,6 @@
+url: https://github.com/plae-tljg/dsh-review
+name: plae-tljg/dsh-review
+category: ui
+description:
+  en: 'An opencode-style Review panel for the web GUI''s right sidebar — uncommitted changes and per-conversation-round changes, each as a directory tree with +added/-removed counts, grand totals, and the selected file''s unified diff in red/green.'
+  zh: '为 Web GUI 右侧边栏提供的 opencode 风格审阅面板——未提交更改和每轮对话更改，以目录树形式展示，含 +added/-removed 计数、总计和所选文件的红绿统一 diff。'
