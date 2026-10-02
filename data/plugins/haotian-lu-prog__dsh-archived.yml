@@ -1,5 +1,5 @@
-url: https://github.com/haotian-lu-prog/dsh-archived-sessions-manager
-name: haotian-lu-prog/dsh-archived-sessions-manager
+url: https://github.com/haotian-lu-prog/dsh-archived
+name: haotian-lu-prog/dsh-archived
 category: session
 description:
   en: 'Archived page for DeepSeek Harness: per-row, batch and clear-all deletion that moves the session log, the projection cache and the archive index entry into a 30-day recycle bin with restore, keeps permanent deletion as a separate action, and refuses sessions that are running.'
