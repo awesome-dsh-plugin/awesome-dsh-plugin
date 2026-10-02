@@ -1,5 +1,5 @@
-url: https://github.com/dpskk2/dsh-sync-plugin
-name: dpskk2/dsh-sync-plugin
+url: https://github.com/dpskk2/dsh-chatsync
+name: dpskk2/dsh-chatsync
 category: session
 description:
   en: Two-way sync of DSH sessions, workspace mappings, settings and patches between machines through your own private GitHub repo (API keys stay machine-local).
