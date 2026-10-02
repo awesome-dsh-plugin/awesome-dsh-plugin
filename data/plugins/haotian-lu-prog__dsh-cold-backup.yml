@@ -1,0 +1,6 @@
+url: https://github.com/haotian-lu-prog/dsh-cold-backup
+name: haotian-lu-prog/dsh-cold-backup
+category: dev
+description:
+  en: 'Backup freshness for the Harness Web UI: shows whether your scheduled backup actually ran, and lists the specific reason whenever it looks wrong.'
+  zh: '在 Harness 的 Web UI 里查看定时备份的新鲜度：显示备份到底跑没跑，一旦有问题就逐条列出具体原因。'
