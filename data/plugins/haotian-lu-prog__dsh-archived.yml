@@ -1,0 +1,6 @@
+url: https://github.com/haotian-lu-prog/dsh-archived
+name: haotian-lu-prog/dsh-archived
+category: session
+description:
+  en: 'Archived page for DeepSeek Harness: per-row, batch and clear-all deletion that moves the session log, the projection cache and the archive index entry into a 30-day recycle bin with restore, keeps permanent deletion as a separate action, and refuses sessions that are running.'
+  zh: 'DSH 的「已归档」页：逐条、批量与清空删除已归档会话，把会话日志、投影缓存与归档索引一起移入 30 天回收站（可恢复），永久删除是独立动作；正在运行的会话会被拒绝。'
