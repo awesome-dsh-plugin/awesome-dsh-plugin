@@ -1,0 +1,7 @@
+url: https://github.com/MuFeng262/dsh-thinking-slider
+name: MuFeng262/dsh-thinking-slider
+category: ui
+description:
+  en: 'Replaces the composer model selector with a "model · reasoning level" trigger that opens a card holding the model-switch entry and a gradient particle slider for changing reasoning effort, and shows the model name alone when a model reports no reasoning levels.'
+  zh: '替换 composer 的模型选择器：「模型名 · 推理等级」触发区，点开是模型切换入口与渐变粒子滑块，用于切换推理强度；模型没有上报推理等级时只显示模型名。'
+tarball: https://github.com/MuFeng262/dsh-thinking-slider/releases/download/v0.1.0/dsh-thinking-slider-0.1.0.tgz
