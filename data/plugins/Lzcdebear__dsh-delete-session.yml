@@ -1,0 +1,6 @@
+url: https://github.com/Lzcdebear/dsh-delete-session
+name: Lzcdebear/dsh-delete-session
+category: session
+description:
+  en: Permanently delete DSH conversations from the sidebar instead of only archiving them, including sub-dialogue sub-agent.
+  zh: 在 DSH 侧边栏中永久删除会话，而不是仅将其归档，包括子对话子代理。
