@@ -1,6 +1,7 @@
-url: https://github.com/elk-9527/dsh-vscode/tree/main/packages/dsh-door
+url: https://github.com/elk-9527/dsh-vscode/tree/door-v0.2.0/packages/dsh-door
 name: elk-9527/dsh-vscode#dsh-door
 category: dev
+tarball: https://github.com/elk-9527/dsh-vscode/releases/download/door-v0.2.0/dsh-acp-door-0.2.0.tgz
 description:
-  en: 'Loopback-only ACP door for DeepSeek Harness: attach an external client (such as the DSH Panel VS Code extension) to the kernel you already have running, exposing session listing and permission presets.'
-  zh: 为正在运行的 DeepSeek Harness 内核新增一个仅监听本机回环地址的 ACP 接入点，供外部客户端（如 VS Code 的 DSH 面板）连接同一个内核，并接出会话列表与权限预设。
+  en: 'Loopback-only ACP access to a running DeepSeek Harness kernel, with session history, permission presets and authenticated IDE Bridge calls to registered plugin capabilities, including operation status, cancellation and reconnect recovery.'
+  zh: 为运行中的 DeepSeek Harness 内核提供本机 ACP 接入、会话历史与权限预设，并通过鉴权的 IDE Bridge 调用已注册的插件能力，支持运行查询、取消和断线恢复。
