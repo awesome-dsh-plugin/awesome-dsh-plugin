@@ -1,0 +1,6 @@
+url: https://github.com/AIcivilization/dsh-vps
+name: AIcivilization/dsh-vps
+category: remote
+description:
+  en: 'One-command VPS deployment for DeepSeek Harness: a zero-dependency login gateway with automatic HTTPS that proxies the native web UI, a token-protected setup wizard, and one-click DSH upgrades with automatic rollback; as a plugin it adds Settings → VPS Deploy to install DSH on (or remove it from) a VPS over SSH from a form, plus version, upgrade, gateway status and a QR code to add DSH to a phone''s home screen.'
+  zh: '一条命令把 DeepSeek Harness 部署到自有 VPS：零依赖登录网关加自动 HTTPS，反向代理原生 Web 界面，令牌保护的初始化向导，DSH 一键升级且失败自动回滚；作为插件在设置中新增「VPS 部署」页，可填表经 SSH 把 DSH 装到或卸出 VPS，并显示版本、升级、网关状态，以及扫码把 DSH 添加到手机桌面。'
