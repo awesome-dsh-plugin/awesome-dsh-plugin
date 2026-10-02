@@ -39,11 +39,13 @@ import { join } from 'node:path'
 import { execFile } from 'node:child_process'
 import { promisify } from 'node:util'
 import { readEntries } from './lib/entries.mjs'
-import { SCANNER_SCHEMA, factsFromScan, scanSourceFor, shouldRescan, subdirOf } from './lib/capabilities.mjs'
+import { SCANNER_SCHEMA, factsFromScan, rememberPrevious, scanSourceFor, shouldRescan, subdirOf } from './lib/capabilities.mjs'
 
 const OUT_FILE = 'data/capabilities.json'
 const NPM_MAP_FILE = 'data/npm-map.json'
 const TARBALLS_FILE = 'data/tarballs.json'
+// Move this to dsh-trust-check@0.2.0 in the same change as package.json and the
+// lockfile, after 0.2.0 is on npm. Until then the installed scanner is 0.1.13.
 const TOOL = process.env.CAPABILITY_SCANNER ?? 'dsh-trust-check@0.1.13'
 
 /**
@@ -66,6 +68,32 @@ function scannerArgs(packageDir, spec) {
     ? ['--yes', TOOL, '--dir', packageDir, '--spec', spec, '--json']
     : ['--dir', packageDir, '--spec', spec, '--json']
 }
+/** `npm:@scope/name@1.2.3` or `npm:name@1.2.3` → the package name. */
+function npmNameOf(spec) {
+  const raw = spec.startsWith('npm:') ? spec.slice(4) : spec
+  if (raw.startsWith('@')) {
+    const at = raw.indexOf('@', raw.indexOf('/') + 1)
+    return at === -1 ? raw : raw.slice(0, at)
+  }
+  const at = raw.lastIndexOf('@')
+  return at === -1 ? raw : raw.slice(0, at)
+}
+
+/**
+ * Registry provenance for an npm release. A failed import or lookup is omitted:
+ * "we could not ask" is not stored as "this version has no attestation".
+ */
+async function lookupProvenance(spec, version, payload) {
+  try {
+    const mod = await import('dsh-trust-check')
+    if (typeof mod.readNpmProvenance !== 'function') return undefined
+    const declared = payload.plugins?.find(plugin => plugin && typeof plugin === 'object')?.repository
+    return await mod.readNpmProvenance(npmNameOf(spec), version, { declaredRepository: declared })
+  } catch {
+    return undefined
+  }
+}
+
 const CONCURRENCY = Number(process.env.PROBE_CONCURRENCY ?? 6)
 const RECHECK_DAYS = Number(process.env.PROBE_RECHECK_DAYS ?? 7)
 const SCAN_TIMEOUT_MS = Number(process.env.PROBE_SCAN_TIMEOUT_MS ?? 120_000)
@@ -138,9 +166,13 @@ async function scanEntry(entry) {
     const { stdout: raw } = await run(scannerCommand(), scannerArgs(packageDir, source.spec),
       { encoding: 'utf8', timeout: SCAN_TIMEOUT_MS, maxBuffer: 8 * 1024 * 1024 })
     const payload = JSON.parse(raw)
-    const facts = factsFromScan(payload, {
+    if (source.kind === 'npm' && source.version !== null) {
+      const provenance = await lookupProvenance(source.spec, source.version, payload)
+      if (provenance !== undefined) payload.provenance = provenance
+    }
+    const facts = rememberPrevious(stored[entry.url], factsFromScan(payload, {
       spec: source.spec, version: source.version, tool: TOOL, now: new Date(now).toISOString(),
-    })
+    }))
     if (facts === null) {
       // Say WHICH nothing this was. Most of these are a package whose entry
       // file is a build product the repository does not ship — the scanner
