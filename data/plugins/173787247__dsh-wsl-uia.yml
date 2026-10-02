@@ -1,0 +1,5 @@
+url: https://github.com/173787247/dsh-wsl-uia
+name: 173787247/dsh-wsl-uia
+category: wsl
+description:
+  en: 'Windows UI Automation observation from WSL: enumerate top-level windows and read a bounded element tree with stable per-observation handles.'
