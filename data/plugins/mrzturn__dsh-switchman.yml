@@ -1,0 +1,6 @@
+url: https://github.com/mrzturn/dsh-switchman
+name: mrzturn/dsh-switchman
+category: agi
+description:
+  en: 'Six dispatch pools with model ranking and per-route reasoning-effort pins, plus context water-level control that backs up and compacts long sessions automatically.'
+  zh: '六泳道派发池，配模型排序与按路线思考强度钉选；上下文水位控制，长会话自动备份并压缩交接。'
