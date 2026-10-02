@@ -1,0 +1,5 @@
+url: https://github.com/173787247/dsh-wsl-wininput
+name: 173787247/dsh-wsl-wininput
+category: wsl
+description:
+  en: 'Targeted Windows input from WSL: invoke a UI Automation element, or send keys and clicks to a chosen window without stealing focus.'
