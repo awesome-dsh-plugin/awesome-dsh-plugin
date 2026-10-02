@@ -1,0 +1,6 @@
+url: https://github.com/chen112233usa/dsh-typesafe-ai-skill
+name: chen112233usa/dsh-typesafe-ai-skill
+category: skill
+description:
+  en: "Registers the TypeSafe/Jev (System One) skill into DeepSeek Harness's global skill layer, so every session can classify, route, score, extract and gate on confidence using typed judgments instead of prompt-and-parse. Ships no API key; the user supplies OPENROUTER_API_KEY."
+  zh: "把 TypeSafe / Jev（System One 判断模型）的构建技能注册进 DeepSeek Harness 的全局技能层，让每个会话都能用带类型的判断做分类、路由、打分、抽取和置信度门控，取代「调大模型再解析回复」。不含任何密钥，API key 由使用者通过 OPENROUTER_API_KEY 提供。"
