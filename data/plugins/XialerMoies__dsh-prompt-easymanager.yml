@@ -1,0 +1,7 @@
+url: https://github.com/XialerMoies/dsh-prompt-easymanager
+name: XialerMoies/dsh-prompt-easymanager
+category: session
+tarball: https://github.com/XialerMoies/dsh-prompt-easymanager/releases/download/v0.3.4/dsh-prompt-easymanager-0.3.4.tgz
+description:
+  en: Applies personal prompts and system-prompt edits at the global level or on a single session, so each session can work with its own prompt setup without touching the others.
+  zh: 可以自行选择在全局范围或单独会话中增加个人提示词、修改系统提示词来工作，各会话互不影响。
