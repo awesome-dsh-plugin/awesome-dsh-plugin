@@ -1,0 +1,6 @@
+url: https://github.com/1497105876/dsh-text-inject
+name: 1497105876/dsh-text-inject
+category: ui
+description:
+  en: 'Adds a "Text Injection" section to the DSH Settings sidebar: user-maintained blocks in a standalone Markdown file are injected into the system prompt every turn or into session context with keyword gating, with hot reload and automatic history backups.'
+  zh: '在 DSH 设置页左侧栏新增「文字注入」分区：独立 Markdown 文件中的文字块可注入系统提示词（每轮生效）或会话上下文（关键词门控、去重），支持热加载与自动历史备份。'
