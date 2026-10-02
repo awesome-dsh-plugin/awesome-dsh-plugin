@@ -1,0 +1,6 @@
+url: https://github.com/rasyidmmz/dsh-paper-search
+name: rasyidmmz/dsh-paper-search
+category: tools
+description:
+  en: 'Literature search across fourteen international sources (Crossref, ACM Digital Library, OpenAlex, DOAJ, Europe PMC, PubMed, PubMed Central, arXiv, Semantic Scholar, CORE, Zenodo, HAL, IACR ePrint, Unpaywall) and three Indonesian journal portals (Garuda, Sinta, IOS OneSearch), reporting failed sources separately from empty ones, plus citation-graph and open-access lookup tools, and full text: open-access PDFs are downloaded (arXiv first) and converted locally to Markdown so an agent can read the whole paper.'
+  zh: '面向 DeepSeek Harness 的学术文献检索：十四个国际来源（Crossref、ACM Digital Library、OpenAlex、DOAJ、Europe PMC、PubMed、PubMed Central、arXiv、Semantic Scholar、CORE、Zenodo、HAL、IACR ePrint、Unpaywall）与三个印尼期刊门户（Garuda、Sinta、IOS OneSearch），并把失败的来源与「零结果」分开报告；另有引文图谱与开放获取查询工具，以及全文功能：下载开放获取 PDF（优先 arXiv）并在本地转换为 Markdown，让智能体能够读完整篇论文。'
