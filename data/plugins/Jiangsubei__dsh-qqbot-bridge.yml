@@ -1,0 +1,6 @@
+url: https://github.com/Jiangsubei/dsh-qqbot-bridge
+name: Jiangsubei/dsh-qqbot-bridge
+category: remote
+description:
+  en: Remotely control DeepSeek Harness sessions and workspaces via QQ official bot with streaming, markdown, and approval forwarding.
+  zh: 通过 QQ 官方机器人远程控制 DeepSeek Harness 会话与工作区，支持流式输出、Markdown 渲染与审批转发。
