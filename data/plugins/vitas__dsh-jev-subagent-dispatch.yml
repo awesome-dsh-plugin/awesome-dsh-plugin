@@ -1,0 +1,6 @@
+url: https://github.com/vitas/dsh-jev-subagent-dispatch
+name: vitas/dsh-jev-subagent-dispatch
+category: model
+description:
+  en: 'Route each kind of task to a different model: per-role routing for subagents, a review role delegated to a separate model, and per-role settings.'
+  zh: 按任务类型把子代理路由到不同的模型：按角色分配模型、把评审交给另一个模型，以及每个角色各自的配置。
