@@ -2,5 +2,5 @@ url: https://github.com/d0ublecl1ck/dsh-hide-empty-workspace
 name: d0ublecl1ck/dsh-hide-empty-workspace
 category: ui
 description:
-  en: 'Auto-hide a sidebar workspace the moment its last unarchived session is archived, with right-click manual hiding and a restore entry at the bottom of the sidebar. It only toggles display and never archives, deletes or rewrites a workspace.'
-  zh: '某个工作区的未归档会话从 1+ 掉到 0 的那一刻自动隐藏它的侧栏行，另配右键手动隐藏与侧栏底部恢复入口。只切 display，不归档、不删除、不改写任何工作区。'
+  en: 'Auto-hide a sidebar workspace the moment its last unarchived session is archived, and add a "隐藏工作区" entry to each workspace row''s own "..." menu. The restore entry sits at the bottom of the sidebar. It only toggles display and never archives, deletes or rewrites a workspace.'
+  zh: '某个工作区的未归档会话从 1+ 掉到 0 的那一刻自动隐藏它的侧栏行，并在工作区行自带的「…」菜单里追加「隐藏工作区」，另配侧栏底部恢复入口。只切 display，不归档、不删除、不改写任何工作区。'
