@@ -1,7 +1,7 @@
 url: https://github.com/ltmroberthk915/dsh-computer-use
-name: ltmroberthk915/dsh-computer-use
+name: dsh-codex-style-computer-use
 category: tools
 tarball: https://github.com/ltmroberthk915/dsh-computer-use/releases/latest/download/dsh-computer-use.tgz
 description:
-  en: 'Windows desktop control for DeepSeek Harness: 18 desktop tools plus per-Agent activation, observed UI Automation targets with opt-in unique recovery, incremental observations with retained full snapshots, native screenshots, Set-of-Marks, serial batches, four approval modes, audit logs and human brakes. Uses a C# worker compiled on first use with the Windows compiler.'
-  zh: '面向 DeepSeek Harness 的 Windows 桌面操控：18 个桌面工具加按 Agent 激活入口，支持已观察 UIA 目标的显式唯一恢复、增量观察与完整快照取回、原生截图、Set-of-Marks、串行批量动作、四档审批、审计日志和人为刹车。C# worker 由 Windows 自带编译器在首次使用时编译。'
+  en: 'Codex-style Computer Use for DeepSeek Harness: control Windows apps with screenshots, UI Automation and 18 desktop tools plus per-Agent activation. Human input yields immediately and resumes after quiet time. Prebuilt native workers, approval gates and audit logs; install and update the npm package from dsh-market without PowerShell 7 or build commands.'
+  zh: 'Codex 风格 Computer Use：让模型看屏幕、点鼠标、敲键盘，操作 Windows 应用。18 个桌面工具加按 Agent 激活，支持 UIA 精确定位、截图、人机共用与自动续作、审批和审计。原生组件随包提供，dsh-market 内安装更新，无需 PowerShell 7 或编译命令。'
