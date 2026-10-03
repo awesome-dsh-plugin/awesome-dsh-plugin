@@ -1,0 +1,6 @@
+url: https://github.com/nydsg/dsh-mindmap
+name: nydsg/dsh-mindmap
+category: ui
+description:
+  en: 'Adds a Mind Map tab to the session header that draws the conversation as a left-to-right hierarchy: the first question is the single leftmost node, and each later turn either continues the previous turn or rejoins an earlier question whose wording it repeats (shared-signal threshold 0.50). Clicking a card shows the reply, the tool calls, keyword weights and suggested follow-ups for that turn, and a branch parent can be reassigned by hand. Branching is analysed in the browser with no network request and no model call by default; the optional model-judgment path, off by default, calls a model already configured in DSH through two local host routes.'
+  zh: '在会话顶部加一个「导图」页签，把对话画成从左到右的横向层级树：第 1 轮提问是唯一的最左节点，之后每一轮要么接上一轮，要么回到词面命中的更早提问（信号词阈值 0.50）。点卡片可看该轮的回复、工具调用、关键词权重与建议追问，父节点可手动改；分支判定默认在浏览器本地完成，不发网络请求也不调用模型，另有默认关闭的「模型判定」，点它时才经两条本地宿主路由调用你自己已配置的模型。'
