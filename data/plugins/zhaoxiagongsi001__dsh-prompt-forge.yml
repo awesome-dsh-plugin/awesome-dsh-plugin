@@ -1,0 +1,6 @@
+url: https://github.com/zhaoxiagongsi001/dsh-prompt-forge
+name: zhaoxiagongsi001/dsh-prompt-forge
+category: ui
+description:
+  en: 'Prompt optimizer for the composer: a button in the tool row rewrites your draft through a model channel you already configured, streaming into a panel that floats above the composer without taking up layout. Your draft changes only when you click Accept — and Accept is refused while the answer is still streaming, so a half-finished reply can never be written back. It asks first when the draft carries @ references or attachments, which a whole-draft replace would flatten into plain text. No global keyboard shortcuts, and no API key ever reaches the browser: the host half makes the call.'
+  zh: '输入框提示词优化：工具行一个按钮，用你已配置的模型渠道改写草稿，结果流式输出到贴着输入框上沿、不占布局的面板里。只有点「采纳」才会替换草稿，且生成中拒绝采纳——半截答案不会被写回；草稿含 @引用或附件时先确认一次，因为整段替换会把它们降级成纯文本。没有任何全局快捷键，密钥也不会进浏览器（模型调用在宿主半边完成）。'
