@@ -1,0 +1,6 @@
+url: https://github.com/KDDKBD/DeepSeek-splash-animation
+name: KDDKBD/DeepSeek-splash-animation
+category: ui
+description:
+  en: 'Plays a video while DSH opens, then dissolves over 0.3 seconds once it has played out. Ships with a default video so it works on install, and the path can be changed or cleared from the plugin settings page.'
+  zh: 给 DSH 加一段自定义开屏动画：自带默认视频，装好即可用；也能换成自己的视频，播完后 0.3 秒渐隐露出界面，并顶掉壳自己的加载画面。清空路径即彻底关闭。
