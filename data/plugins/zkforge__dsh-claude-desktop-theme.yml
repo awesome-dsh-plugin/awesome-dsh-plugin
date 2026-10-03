@@ -1,6 +1,7 @@
 url: https://github.com/zkforge/dsh-claude-desktop-theme
 name: zkforge/dsh-claude-desktop-theme
 category: theme
+tarball: https://github.com/zkforge/dsh-claude-desktop-theme/releases/download/v0.1.0/dsh-ccd-style-0.1.0.tgz
 description:
   en: Claude Code Desktop-style theme for DeepSeek Harness (DSH) Desktop 0.2.0-rc.2 on macOS and Windows, with compact sidebar and chat layouts, light and dark themes, model and reasoning-effort controls, and a decorative whale on new sessions.
   zh: 面向 macOS 与 Windows 的 DeepSeek Harness（DSH）Desktop 0.2.0-rc.2 的 Claude Code Desktop 风格主题，提供紧凑侧栏与会话布局、浅色与深色主题、模型与推理强度控件，以及新会话页的装饰小鲸鱼。
