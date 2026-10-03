@@ -1,0 +1,6 @@
+url: https://github.com/wojiao42/dsh-token-cost
+name: wojiao42/dsh-token-cost
+category: usage
+description:
+  en: 'Live token usage and estimated cost in the sidebar: the current task plus every session combined, with cache-hit rate and a per-session breakdown.'
+  zh: 侧栏里实时显示 token 用量与估算费用：当前任务与全部会话合计，含缓存命中率与逐会话明细。
