@@ -44,9 +44,7 @@ import { SCANNER_SCHEMA, factsFromScan, rememberPrevious, scanSourceFor, shouldR
 const OUT_FILE = 'data/capabilities.json'
 const NPM_MAP_FILE = 'data/npm-map.json'
 const TARBALLS_FILE = 'data/tarballs.json'
-// Move this to dsh-trust-check@0.2.0 in the same change as package.json and the
-// lockfile, after 0.2.0 is on npm. Until then the installed scanner is 0.1.13.
-const TOOL = process.env.CAPABILITY_SCANNER ?? 'dsh-trust-check@0.1.13'
+const TOOL = process.env.CAPABILITY_SCANNER ?? 'dsh-trust-check@0.2.0'
 
 /**
  * How to invoke the scanner.
