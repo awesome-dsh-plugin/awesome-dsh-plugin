@@ -1,0 +1,6 @@
+url: https://github.com/A42Null/dsh-opencode-zen-plugin
+name: A42Null/dsh-opencode-zen-plugin
+category: model
+description:
+  en: "OpenCode Console (Zen) models for DeepSeek Harness: paste a Console API key under Settings → Plugins and the Console's chat models become selectable, routed to the endpoints the official docs assign (Responses, Anthropic Messages, Google GenerateContent or chat completions), with the model catalog synced automatically. Free *-free models stay hidden because they only run inside the OpenCode client."
+  zh: "为 DeepSeek Harness 接入 OpenCode Console (Zen) 模型：在「设置 → 插件」粘贴 Console API Key 后即可选用 Console 的对话模型，并按官方文档端点表路由到对应端点（Responses、Anthropic Messages、Google GenerateContent 或 chat completions），模型目录自动同步。免费 *-free 模型默认不列出——它们只能在 OpenCode 客户端内运行。"
