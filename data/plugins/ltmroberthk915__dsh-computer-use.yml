@@ -3,5 +3,5 @@ name: dsh-codex-style-computer-use
 category: tools
 tarball: https://github.com/ltmroberthk915/dsh-computer-use/releases/latest/download/dsh-computer-use.tgz
 description:
-  en: 'Codex-style Computer Use for DeepSeek Harness: control Windows apps with screenshots, UI Automation and 18 desktop tools plus per-Agent activation. Human input yields immediately and resumes after quiet time. Prebuilt native workers, approval gates and audit logs; install and update the npm package from dsh-market without PowerShell 7 or build commands.'
-  zh: 'Codex 风格 Computer Use：让模型看屏幕、点鼠标、敲键盘，操作 Windows 应用。18 个桌面工具加按 Agent 激活，支持 UIA 精确定位、截图、人机共用与自动续作、审批和审计。原生组件随包提供，dsh-market 内安装更新，无需 PowerShell 7 或编译命令。'
+  en: 'Windows Computer Use for DeepSeek Harness with screenshots, UI Automation, 18 desktop tools, per-Agent activation, human-input handoff, approval prompts and prebuilt native workers.'
+  zh: 'Windows 桌面操控：让 DeepSeek 看屏幕、点鼠标、敲键盘。提供截图、UIA 定位、18 个桌面工具、按 Agent 激活、人机共用和操作审批，原生组件随包提供。'
