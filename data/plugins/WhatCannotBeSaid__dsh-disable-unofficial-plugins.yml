@@ -1,0 +1,6 @@
+url: https://github.com/WhatCannotBeSaid/dsh-disable-unofficial-plugins
+name: WhatCannotBeSaid/dsh-disable-unofficial-plugins
+category: ui
+description:
+  en: 'Adds a "Disable all unofficial plugins" button to the right end of the Installed group header on the Plugins page; after one confirmation it disables every installed non-@deepseek-ai/ bundle that can be disabled — disabling only, never uninstalling — and reports each failure with its reason.'
+  zh: '在「插件」页「已安装」分组标题行右端加一个「停用全部非官方插件」按钮：经一次确认后批量停用所有已安装且可停用的非 @deepseek-ai/ 组合包，只停用不卸载，并逐条报出失败项及原因。'
