@@ -1,0 +1,6 @@
+url: https://github.com/WhatCannotBeSaid/dsh-disable-unofficial-plugins
+name: WhatCannotBeSaid/dsh-disable-unofficial-plugins
+category: ui
+description:
+  en: 'Adds a "Disable unofficial plugins…" button to the right end of the Installed group header on the Plugins page: it opens a checklist of the unofficial plugins in the current direction, all checked by default, toggling only the ones you keep checked, and flips to enabling them once everything is disabled. Never uninstalls; a failed item shows its error code with the full diagnostic folded away.'
+  zh: '在「插件」页「已安装」分组标题行右端加一个「停用非官方插件…」按钮：点开是当前方向上非官方插件的勾选清单（默认全选），只切换保留勾选的那些；全部停用后按钮翻转为启用侧。只停用/只启用、从不卸载；失败项只显示错误码，完整诊断收进折叠区。'
