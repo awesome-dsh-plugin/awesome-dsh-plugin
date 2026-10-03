@@ -2,6 +2,5 @@ url: https://github.com/drscrewdriver/dsh-browser-cdp
 name: drscrewdriver/dsh-browser-cdp
 category: browser
 description:
-  en: 'Visible agent browser over CDP: 30+ bcdp_* automation tools, realtime SSE watch panel with direct click/scroll/IME input, element picking quoted into the composer as a balanced \"picks/….json\"
-reference, and human-verification notices.'
-  zh: '看得见的 Agent 浏览器（CDP 接入）：30+ bcdp_* 工具，实时观察窗支持直接点击/滚动/中文输入，点选元素以 picks/….json 引用投进输入框，人机验证提醒；DSH 0.1.5/0.1.7/0.2.0 宿主各有一条对应版本线。'
+  en: 'Visible agent browser over CDP: 30+ bcdp_* automation tools, realtime SSE watch panel with direct click/scroll/IME input, element picking quoted into the composer as balanced @"picks/*.json" references, and human-verification notices.'
+  zh: '看得见的 Agent 浏览器（CDP 接入）：30+ bcdp_* 工具，实时观察窗支持直接点击/滚动/中文输入，点选元素以 @"picks/*.json" 引用投进输入框，人机验证提醒；DSH 0.1.5/0.1.7/0.2.0 宿主各有一条对应版本线。'
