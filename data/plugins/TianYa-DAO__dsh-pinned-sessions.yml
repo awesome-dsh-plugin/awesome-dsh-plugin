@@ -1,0 +1,7 @@
+url: https://github.com/TianYa-DAO/dsh-pinned-sessions
+name: TianYa-DAO/dsh-pinned-sessions
+category: session
+description:
+  en: Keeps running, finished-but-unopened and currently open sessions in a pinned section above the workspace groups in the DSH Web sidebar; switched from Settings → General and shown only in the workspace-grouped views.
+  zh: 在 DSH Web 侧栏工作区分组上方固定显示运行中、跑完未点开和当前打开的会话；可在 设置→通用 关闭，仅在按工作区分组时显示。
+tarball: https://github.com/TianYa-DAO/dsh-pinned-sessions/releases/latest/download/dsh-pinned-sessions-0.1.0.tgz
