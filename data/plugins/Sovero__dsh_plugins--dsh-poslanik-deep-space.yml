@@ -1,0 +1,6 @@
+url: https://github.com/Sovero/dsh_plugins/tree/main/dsh-poslanik-deep-space
+name: Sovero/dsh_plugins#dsh-poslanik-deep-space
+category: theme
+description:
+  en: 'Deep space theme for DSH Web: three star layers, seven nebula masses, 14 constellations with silhouette hints, four star maps, 2–4 planets with relief, night-side city lights, axial rotation, satellites and their own gravity, ships that fly waypoint courses with inertia, comets that cross the sky in any direction, meteors, and black holes with a photon ring and an Einstein ring. Pointer movement applies an electromagnetic perturbation to space, the sky reacts to agent work, and the settings panel follows the interface language.'
+  zh: 'DSH Web 的深空主题：三层星场、七片星云、带轮廓提示的 14 个星座、四幅星图、2–4 颗带地形与夜面城市灯光的自转行星及其卫星和自身引力、按航点飞行且带惯性与尾迹的飞船、任意方向划过天空的彗星、流星，以及带光子环和爱因斯坦环的黑洞。鼠标移动会对星空施加电磁扰动，天空会对 Agent 的工作作出反应，设置面板跟随界面语言。'
