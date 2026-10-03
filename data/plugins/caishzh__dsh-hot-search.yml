@@ -3,5 +3,5 @@ name: caishzh/dsh-hot-search
 category: tools
 description:
   en: 'Resident search index living in the host process: hot_find (fuzzy filename and path match, with frecency and git status), hot_fuzzy (content search that tolerates typos, including in Chinese), hot_grep (literal and regex content search), hot_plan (groups hits per file so a batch of files can be read in order) and hot_stats. One in-memory line index is built once and rebuilt on demand, so a query does not spawn a process.'
-  zh: '娲诲湪瀹夸富杩涚▼閲岀殑甯搁┗妫€绱㈢储寮曪細hot_find锛堟枃浠跺悕涓庤矾寰勬ā绯婂尮閰嶏紝甯?frecency 涓?git 鐘舵€侊級銆乭ot_fuzzy锛堝唴瀹规绱紝涓枃閿欏瓧涔熻兘鍛戒腑锛夈€乭ot_grep锛堝瓧闈笌姝ｅ垯鍐呭妫€绱級銆乭ot_plan锛堟寜鏂囦欢鑱氬悎鍛戒腑锛屼究浜庢帓鎵归噺闃呰椤哄簭锛変笌 hot_stats銆備竴浠藉唴瀛樿绱㈠紩鍙缓涓€娆°€佹寜闇€閲嶅缓锛屽崟娆℃煡璇笉鍚姩杩涚▼銆?
+  zh: '活在宿主进程里的常驻检索索引：hot_find（文件名与路径模糊匹配，带 frecency 与 git 状态）、hot_fuzzy（内容检索，中文错字也能命中）、hot_grep（字面与正则内容检索）、hot_plan（按文件聚合命中，便于排批量阅读顺序）与 hot_stats。一份内存行索引只建一次、按需重建，单次查询不启动进程。'
 tarball: https://github.com/caishzh/dsh-hot-search/releases/download/v0.1.0/dsh-hot-search-0.1.0.tgz
