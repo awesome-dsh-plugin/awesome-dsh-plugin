@@ -3,5 +3,5 @@ name: shuiqian520/dsh-session-delete
 category: session
 tarball: https://github.com/shuiqian520/dsh-session-delete/releases/latest/download/dsh-session-delete.tgz
 description:
-  en: 'Permanently deletes one session from the sidebar session menu or many at once from a settings page — log directory, workspace membership, live Host instances and the client list row — sweeps rows whose log is already gone, and retries a user message or an assistant reply from the button right of Copy.'
-  zh: '在侧栏会话行的「…」菜单里永久删除单个会话,或在设置页批量删除多个会话(会话日志、工作区归属、宿主内存实例、客户端列表行一并清理);另可清理日志已不存在的残留行,用户消息与 AI 回复的复制按钮右侧各有「重试」。'
+  en: 'Permanently deletes one session from the sidebar session menu, or several at once by ticking checkboxes on the session rows themselves — log directory, workspace membership, live Host instances and the client list row — sweeps rows whose log is already gone, and retries a user message or an assistant reply from the button right of Copy.'
+  zh: '在侧栏会话行的「…」菜单里永久删除单个会话,或直接在会话列表里勾选多行批量删除(会话日志、工作区归属、宿主内存实例、客户端列表行一并清理);另可清理日志已不存在的残留行,用户消息与 AI 回复的复制按钮右侧各有「重试」。'
