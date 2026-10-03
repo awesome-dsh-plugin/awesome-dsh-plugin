@@ -1,0 +1,5 @@
+url: https://github.com/mpinaev/dsh-context-governor
+name: mpinaev/dsh-context-governor
+category: usage
+description:
+  en: 'Context chip for DeepSeek Harness: prompt size, per-step cost in USD split by cache bucket, cache-hit, cold input, context bands and a compaction threshold derived from the model window, plus DeepSeek balance, peak/off-peak tariff and a one-click handoff. It never calls a model.'
