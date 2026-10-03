@@ -2,5 +2,5 @@ url: https://github.com/dreamtao2199/dsh-colors
 name: dreamtao2199/dsh-colors
 category: theme
 description:
-  en: 22 light-only palettes and 14 composable surface effects for DeepSeek Harness, with twelve-shichen clock rotation, manual picks that lead until the next boundary, workspace binding, per-session colour marks and a main-column workbench.
-  zh: 22 套仅浅色配色与 14 种可叠加的表面效果，含十二时辰轮换、手动优先到时段边界、工作区绑定、会话颜色标记与主栏工作台。
+  en: 22 light-only palettes and 14 composable surface effects for DeepSeek Harness, with twelve-shichen clock rotation, manual picks that lead until the next boundary, workspace binding, per-session colour marks and a one-click entry in the sidebar footer.
+  zh: 22 套仅浅色配色与 14 种可叠加的表面效果，含十二时辰轮换、手动优先到时段边界、工作区绑定、会话颜色标记，以及与插件广场并排的一键入口。
