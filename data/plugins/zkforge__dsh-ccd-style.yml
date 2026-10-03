@@ -1,0 +1,6 @@
+url: https://github.com/zkforge/dsh-ccd-style
+name: zkforge/dsh-ccd-style
+category: theme
+description:
+  en: CCD-style skin for DeepSeek Harness Desktop 0.2.0-rc.2 on macOS and Windows, with compact sidebar and chat layouts, light and dark themes, model and effort controls, and a decorative whale on new sessions.
+  zh: 面向 macOS 与 Windows 的 DeepSeek Harness Desktop 0.2.0-rc.2 的 CCD 风格皮肤，提供紧凑侧栏与会话布局、浅色与深色主题、模型与 effort 控件，以及新会话页的装饰小鲸鱼。
