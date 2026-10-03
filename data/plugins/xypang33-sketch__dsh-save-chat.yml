@@ -1,6 +1,6 @@
 url: https://github.com/xypang33-sketch/dsh-save-chat
 name: xypang33-sketch/dsh-save-chat
-category: memory
+category: session
 tarball: https://github.com/xypang33-sketch/dsh-save-chat/releases/latest/download/dsh-save-chat.tgz
 description:
   en: 'Save whole turns — the question plus the full answer — as plain Markdown inside the session workspace, promote the good ones into a cross-project personal knowledge base, and let the model search it on demand. No database and no runtime dependencies.'
