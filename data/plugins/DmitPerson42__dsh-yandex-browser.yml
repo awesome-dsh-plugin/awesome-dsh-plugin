@@ -1,0 +1,7 @@
+url: https://github.com/DmitPerson42/dsh-yandex-browser
+name: DmitPerson42/dsh-yandex-browser
+category: browser
+description:
+  en: 'Launches Yandex Browser for the agent with a persistent signed-in profile and a CDP debugging port, and exposes three tools over that port: yandex_browser for lifecycle (start, open, list tabs, quit), yandex_page for reading a page (text, interactive elements, JavaScript evaluation, screenshots) and yandex_act for acting on it (navigate, click by selector or by visible text, type, key presses, tab management).'
+  zh: '为智能体启动带持久登录配置的 Yandex 浏览器并打开 CDP 调试端口，通过该端口提供三个工具：yandex_browser 管理浏览器生命周期（启动、打开、列出标签页、退出），yandex_page 读取页面（文本、可交互元素、JavaScript 求值、截图），yandex_act 操作页面（导航、按选择器或可见文本点击、输入、按键、管理标签页）。'
+tarball: https://github.com/DmitPerson42/dsh-yandex-browser/releases/latest/download/dsh-yandex-browser.tgz
