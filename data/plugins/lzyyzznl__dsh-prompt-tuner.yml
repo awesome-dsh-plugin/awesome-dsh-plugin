@@ -1,0 +1,6 @@
+url: https://github.com/lzyyzznl/dsh-prompt-tuner
+name: lzyyzznl/dsh-prompt-tuner
+category: ui
+description:
+  en: Rewrites the composer draft into a clearer prompt through a model you choose, with a review card in the composer dock that streams the result beside the draft and a settings page for the model, reasoning effort, rewrite style and optimization prompt.
+  zh: 用选定的模型把输入框草稿改写为更清晰的提示词——结果在输入框上方的预览卡片里流式显示并与原文并排，模型、思考强度、改写档位与优化提示词都在设置页里配置。
