@@ -1,0 +1,5 @@
+url: https://github.com/RoseSamaras/reaudit-ai-plugin/tree/main/packages/dsh-reaudit
+name: RoseSamaras/reaudit-ai-plugin#dsh-reaudit
+category: tools
+description:
+  en: 'Mounts the hosted Reaudit MCP server (https://mcp.reaudit.io/mcp) through the in-box @deepseek-ai/dsh-mcp-client bridge with a REAUDIT_API_KEY bearer token: 238 mcp__reaudit__* tools for brand visibility in AI answers (ChatGPT, Perplexity, Gemini, Google AI Overviews), competitor and citation analysis, site audits, content generation and social scheduling.'
