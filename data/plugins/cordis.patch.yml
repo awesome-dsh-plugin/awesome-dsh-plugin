@@ -1,0 +1,4 @@
+# Inserts this plugin's Host row into the profile's layer stack.
+- insert:
+    - id: better-dsh-session-deletetool
+      name: 'better-dsh-session-deletetool'
