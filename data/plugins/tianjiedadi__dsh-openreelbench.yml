@@ -1,0 +1,6 @@
+url: https://github.com/tianjiedadi/dsh-openreelbench
+name: tianjiedadi/dsh-openreelbench
+category: workflow
+description:
+  en: 'Gated four-stage video pipeline: brief, script, assets and compose, turning one sentence into a narrated explainer with ComfyUI workflows or image/video APIs and FFmpeg assembly.'
+  zh: '四段带审批闸的视频创作管线：立项、脚本、素材、合成，把一句话变成带配音、配图或视频和字幕的解说片；生成走 ComfyUI 工作流或图片/视频 API，合成走 FFmpeg。'
