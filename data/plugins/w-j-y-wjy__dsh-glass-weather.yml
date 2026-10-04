@@ -1,0 +1,6 @@
+url: https://github.com/w-j-y-wjy/dsh-glass-weather
+name: w-j-y-wjy/dsh-glass-weather
+category: ui
+description:
+  en: Glass weather pill in the session header with 23 weather states, each with its own tint, SVG icon and canvas particle layer, per-field visibility switches, and a get_weather tool backed by keyless Open-Meteo data.
+  zh: 会话顶栏的玻璃天气胶囊：23 种天气状态各自配色、SVG 图标与 canvas 粒子层，可按字段开关显示内容，并注册 get_weather 工具（Open-Meteo 免密钥数据）。
