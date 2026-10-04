@@ -4554,6 +4554,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zmm863-commits/dsh-dice-game](https://github.com/zmm863-commits/dsh-dice-game) - 🎲 Dice Battle — six classic dice games (Liar's Dice, Guess Red Dots, Red/Blue, Big/Small, Odd/Even, Straight) for the DSH web GUI. Single vs AI plus PeerJS WebRTC online play, fully bilingual zh/en, sidebar entry opens the game in the center column.
 - [zoahdev/dsh-pet-evolve](https://github.com/zoahdev/dsh-pet-evolve) - The pet that grows with your agent: 5 evolution stages earned from real signals (verified rules, completed sessions, tool calls, compactions), agent-state mirroring, and one-click growth share cards. Zero dependencies, 100% local.
 - [ZutoMayoo/totoTheCat](https://github.com/ZutoMayoo/totoTheCat) - Desktop pet for the DSH web UI: a draggable pixel-art cat with a pomodoro timer, XP levels, and 30 unlockable facts.
+- [wincu](https://github.com/dxxCaO/wincu) - Windows computer use for DeepSeek Harness: 16 merged MCP entries + hardened policy layer; fork of dsh-computer-use-win. MIT.
 <!-- END PLUGINS -->
 
 ## Contributing
