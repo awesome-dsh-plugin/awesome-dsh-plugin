@@ -3,6 +3,6 @@ name: benrong2048-boop/dsh-prompt-polish
 category: agi
 tarball: https://github.com/benrong2048-boop/dsh-prompt-polish/releases/download/v0.2.3/benrong-dsh-prompt-polish-0.2.3.tgz
 description:
-  zh: "在 DSH 输入框内润色提示词：点一下 ✨，把只有一句话的草稿补成带角色、目标、约束与输出格式的完整任务书，流式输出；支持系统/用户/迭代三种模式、结果复制/写回/发送、变量提取。历史采用本机授权制并带版本链，可三列对比与结构分析；每次润色的 token 消耗可见。数据不出本机。"
-  en: "Polish prompts inside the DSH composer: one click turns a one-line draft into a complete task brief with role, goal, constraints and output format, streamed in place. System/user/iterate modes, copy/write-back/send, variable extraction. Consent-gated local history with version chains, three-column comparison with local structural analysis, and per-run token usage. Nothing leaves the machine."
+  zh: "把 DSH 输入框里的一句话补成完整任务书（角色/目标/约束/输出格式）。引擎是 linshenkx/prompt-optimizer 的逐字节移植：三种优化模式、10 个模板与上游一致；历史为授权制、带版本链与结构对比；每次润色的 token 消耗可见。未经点击不写回、不发送。"
+  en: "Turns a one-line DSH draft into a complete task brief (role / goal / constraints / output format). The engine is a byte-verified port of linshenkx/prompt-optimizer (three modes, 10 templates identical to upstream); history is consent-gated with version chains and structural comparison; every run reports its token usage. Nothing is written back or sent without a click."
 # plugin repo declares dsh.bundle.patch; see benrong2048-boop/dsh-prompt-polish
