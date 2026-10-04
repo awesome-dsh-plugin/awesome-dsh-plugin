@@ -1,5 +1,5 @@
-url: https://github.com/Lzcdebear/dsh-delete-session
-name: Lzcdebear/dsh-delete-session
+url: https://github.com/Lzcdebear/better-dsh-session-deletetool
+name: Lzcdebear/better-dsh-session-deletetool
 category: session
 description:
   en: Permanently delete DSH conversations from the sidebar instead of only archiving them, including sub-dialogue sub-agent.
