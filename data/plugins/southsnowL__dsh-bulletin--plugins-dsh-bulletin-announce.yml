@@ -1,0 +1,6 @@
+url: https://github.com/southsnowL/dsh-bulletin/tree/main/plugins/dsh-bulletin-announce
+name: southsnowL/dsh-bulletin#dsh-bulletin-announce
+category: notify
+description:
+  en: An announcement file shared by several agent sessions on one machine. It is a plain text file the agents only append to; before each step a session receives the entries it has not seen yet, a new session catches up on the ones still in effect, and a session whose context was compacted gets them re-sent.
+  zh: 同一台电脑上多个会话共用的公告文件：一个只许追加的纯文本文件。每个会话在下一步之前收到自己还没见过的条目；新会话补看仍在有效期内的；上下文被压缩过的会话会收到一次重发。
