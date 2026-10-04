@@ -2,5 +2,5 @@ url: https://github.com/sailoumili/dsh-sidebar-plus
 name: sailoumili/dsh-sidebar-plus
 category: ui
 description:
-  en: A file-view enhancement plugin that extends the official DSH sidebar, providing source view, in-place editing, line number display, search, and font zoom.
-  zh: 基于 DSH 官方侧边栏的文件视图增强插件，提供源码视图、原位编辑、行号显示、搜索和字体缩放功能。
+  en: 'Sidebar file-view enhancement for DSH: source view with line numbers, in-file search, direct edit and save with automatic backups, a configurable backup folder, and a comparison-view toolbar.'
+  zh: 'DSH 侧边栏文件预览增强：源编辑视图与行号、文件内搜索、直接编辑保存并自动备份、备份路径可配置、对比视图工具条。'
