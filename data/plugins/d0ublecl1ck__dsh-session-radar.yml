@@ -1,0 +1,6 @@
+url: https://github.com/d0ublecl1ck/dsh-session-radar
+name: d0ublecl1ck/dsh-session-radar
+category: notify
+description:
+  en: 'Unread and pending-session radar for the DSH sidebar: a host-side ledger that survives restarts, ⌘⇧J / ⌘⇧I walks, a ⌘⇧K waiting overview, and a six-metric status readout.'
+  zh: 'DSH 侧边栏的未读与待办中枢：跨重启账本、⌘⇧J / ⌘⇧I 顺序定位、⌘⇧K 待办总览，以及一行六项会话状态读数。'
