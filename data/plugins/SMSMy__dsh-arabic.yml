@@ -1,0 +1,6 @@
+url: https://github.com/SMSMy/dsh-arabic
+name: SMSMy/dsh-arabic
+category: ui
+description:
+  en: 'Bidi-safe RTL rendering for mixed Arabic and English text, plus a full Arabic interface pack (3,228 strings) registered through the DSH locale service.'
+  zh: '让 DSH 界面支持阿拉伯语：混合阿拉伯文与英文的双向文本排版，并通过 DSH 官方语言服务注册完整阿拉伯语界面包（3,228 条）。'
