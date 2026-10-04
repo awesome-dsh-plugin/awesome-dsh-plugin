@@ -1,7 +1,7 @@
 url: https://github.com/Zilong6666/dsh-task-workspace
 name: Zilong6666/dsh-task-workspace
 category: workflow
-tarball: https://github.com/Zilong6666/dsh-task-workspace/releases/download/v0.2.1/dsh-task-workspace-0.2.1.tgz
+tarball: https://github.com/Zilong6666/dsh-task-workspace/releases/download/v0.3.0/dsh-task-workspace-0.3.0.tgz
 description:
-  en: 'Task workspace convention: one folder per task, one PROGRESS.md per task overwritten on each update, and per-task git once the task runs long.'
-  zh: '任务工作区约定：一个任务一个目录，一个任务一个 PROGRESS.md（每次修改整体覆盖更新），任务过长就在任务目录里建 git 仓库。'
+  en: 'Task workspace convention: one folder per session, one PROGRESS.md per task overwritten on each update, and per-task git once the task runs long.'
+  zh: '任务工作区约定：一个会话只用一个文件夹，一个任务一个 PROGRESS.md（每次修改整体覆盖更新），任务过长就在任务目录里建 git 仓库。'
