@@ -1,0 +1,7 @@
+url: https://github.com/ckanner/dsh-plugin-chatgpt
+name: ckanner/dsh-plugin-chatgpt
+category: model
+tarball: https://github.com/ckanner/dsh-plugin-chatgpt/releases/latest/download/dsh-plugin-chatgpt.tgz
+description:
+  en: Signs in to a ChatGPT account over OAuth and serves that plan's models as a DeepSeek Harness provider route, calling api.openai.com/v1/responses with the account's plan scope rather than the Codex backend.
+  zh: 通过 OAuth 登录 ChatGPT 账号，把该套餐的模型作为 DeepSeek Harness 的 provider 路由提供；调用 api.openai.com/v1/responses 并使用账号的套餐授权范围，而非 Codex 后端。
