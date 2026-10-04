@@ -1,5 +1,5 @@
 url: https://github.com/mokuyoaxis/agent-guard
-name: mokuyoaxis/agent-guard
+name: agent-guard-for-dsh
 category: security
 description:
   en: 'Recoverable file and Git operations for coding agents, with shared recovery and redaction tools, a DSH shell adapter and audit records; optional native text-read protection is off by default.'
