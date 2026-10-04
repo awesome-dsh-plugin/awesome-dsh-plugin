@@ -1,0 +1,6 @@
+url: https://github.com/d0ublecl1ck/dsh-unread-helper
+name: d0ublecl1ck/dsh-unread-helper
+category: ui
+description:
+  en: 'Sidebar unread and attention hub: a red badge counts sessions that finished and have not been opened, and Mod+Shift+J walks them in order; a yellow badge counts sessions waiting for your input (questions, approvals, plan reviews), and Mod+Shift+I walks the waiting queue then retraces the path back. A host-side ledger keeps the state across restarts.'
+  zh: '侧边栏未读与待办中枢：红色角标数「跑完没看」的会话，⌘⇧J 按顺序定位；黄色角标数等你输入的会话（提问/审批/计划审阅），⌘⇧I 先走等待队列、再沿原路返回；账本落在 host 半边，重启也不丢。'
