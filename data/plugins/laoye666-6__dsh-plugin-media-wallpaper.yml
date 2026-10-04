@@ -1,6 +1,6 @@
-- url: https://github.com/laoye666-6/dsh-plugin-media-wallpaper
-  name: laoye666-6/dsh-plugin-media-wallpaper
-  category: ui
-  description:
-    en: "Image and video wallpapers for the DSH web workspace: auto-detected GIF/APNG/animated WebP/PNG/JPEG/MP4/WebM backgrounds with blur, brightness and dimming, tint-following UI, per-component transparency, and one-click preset wallpapers."
-    zh: "为 DSH 提供图片/视频壁纸背景：GIF/APNG/动图 WebP/PNG/JPEG/MP4/WebM 魔数自动识别，压暗/亮度/高斯模糊，界面色调与字体颜色自动跟随背景，各组件独立透明度，预置壁纸一键应用。"
+url: https://github.com/laoye666-6/dsh-plugin-media-wallpaper
+name: laoye666-6/dsh-plugin-media-wallpaper
+category: ui
+description:
+  en: "Image and video wallpapers for the DSH web workspace: auto-detected GIF/APNG/animated WebP/PNG/JPEG/MP4/WebM backgrounds with blur, brightness and dimming, tint-following UI, per-component transparency, and one-click preset wallpapers."
+  zh: "为 DSH 提供图片/视频壁纸背景：GIF/APNG/动图 WebP/PNG/JPEG/MP4/WebM 魔数自动识别，压暗/亮度/高斯模糊，界面色调与字体颜色自动跟随背景，各组件独立透明度，预置壁纸一键应用。"
