@@ -1,0 +1,6 @@
+url: https://github.com/d0ublecl1ck/dsh-session-radar
+name: d0ublecl1ck/dsh-session-radar
+category: session
+description:
+  en: 'DSH sidebar hub for unread and waiting Sessions: a host-side ledger keeps unread state across restarts, J/I walk unread and waiting Sessions in order, and a sidebar-foot readout shows six Session counts.'
+  zh: 'DSH 侧边栏的未读 + 待办 + 状态读数中枢：host 半边持有跨重启的账本，J/I 顺序定位未读与等待处理的会话，侧栏底部另有六项会话状态读数。'
