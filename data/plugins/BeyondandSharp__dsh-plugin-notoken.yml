@@ -1,6 +1,0 @@
-url: https://github.com/BeyondandSharp/dsh-plugin-notoken
-name: BeyondandSharp/dsh-plugin-notoken
-category: security
-description:
-  en: !WARNING! this removes the authentication step !WARNING! Exchanges the process launch token for the browser-session cookie, so a first visit needs no ?token=... in the URL. 
-  zh: ！警告！这会移除认证步骤！警告！注册一个登录入口路由（默认 GET /__dsh_login），把进程里的登录 token 换成浏览器会话 cookie，让首次访问不用带 ?token=…。
