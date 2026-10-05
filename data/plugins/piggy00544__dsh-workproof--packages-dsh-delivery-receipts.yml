@@ -1,0 +1,7 @@
+url: https://github.com/piggy00544/dsh-workproof/tree/main/packages/dsh-delivery-receipts
+name: piggy00544/dsh-workproof#dsh-delivery-receipts
+category: workflow
+description:
+  en: 'Session-scoped delivery receipts for local artifacts: compare current file hashes with a recorded baseline, keep agent claims separate from explicit user acceptance, flag changed or unavailable files, and export a Markdown receipt through a tool, slash command, and conversation panel.'
+  zh: '为本地成果生成会话级交付回执：对比当前文件哈希与记录基线，将 Agent 自述与用户明确验收分开，标记已变化或无法核验的文件，并通过工具、斜杠命令和会话面板导出 Markdown 回执。'
+tarball: https://github.com/piggy00544/dsh-workproof/releases/download/v0.1.0/dsh-delivery-receipts-0.1.0.tgz
