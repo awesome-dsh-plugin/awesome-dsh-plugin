@@ -1,0 +1,6 @@
+url: https://github.com/yfwu2020/dsh-recent-sessions
+name: yfwu2020/dsh-recent-sessions
+category: ui
+description:
+  en: 'Opens the recent sessions in a sheet that floats over the sidebar workspace list, from one row above Settings: rows sorted by last activity with their run state, a draggable height, and a list that settles onto whole rows after stopping. The sheet paints no surface of its own, so it reads as part of the sidebar.'
+  zh: '在侧栏「设置」上方加一行入口，展开后最近会话以浮层压在工作区列表上方：按最后活动时间排序、每行带运行状态、高度可拖、滚动停下后自动对齐到整行。浮层不画自己的底色，展开后仍像侧栏的一部分。'
