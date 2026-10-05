@@ -1,0 +1,6 @@
+url: https://github.com/ltl0312/my-dsh-plugins/tree/main/packages/tlnotify
+name: ltl0312/my-dsh-plugins#tlnotify
+category: notify
+description:
+  zh: '把 DSH 会话事件推到手机 IM，并允许在那条消息下直接回复回注到正确会话。覆盖九类事件：任务完成、执行错误、执行被阻塞、手动中止、Token 达到上限、异常中断、等待我回答、权限请求、等待计划确认；通道支持 QQ 单聊机器人与飞书自建应用，两者均走 WebSocket 长连接，无需公网 IP、域名或内网穿透。可同时配置多台机器人，各自订阅自己关心的会话。审批与提问以可点按钮下发，回复按「按钮 → 引用回复 → 显式短 id 前缀」三层路由归位，兜底发给最近一条需人介入的通知并回显投递目标。'
+  en: 'Pushes DSH session events to phone IM and lets you reply straight under that message, injecting the text back into the right session. Covers nine event kinds: task completion, execution error, execution blocked, manual abort, token limit reached, abnormal interruption, waiting for your answer, permission request, and waiting for plan confirmation. Channels are QQ single-chat bots and Feishu custom apps, both over WebSocket long connections — no public IP, domain or tunneling needed. Several bots can be configured at once, each subscribing to the sessions it cares about. Approvals and questions arrive with tappable buttons, and replies route home through three layers (button, quoted reply, explicit short-id prefix), falling back to the most recent intervention-needed notification and echoing which session it went to.'
