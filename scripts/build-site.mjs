@@ -44,6 +44,9 @@ const tarballVerdicts = fs.existsSync(TARBALLS_FILE) ? JSON.parse(fs.readFileSyn
 // parsed out of the READMEs, which carry no file path; the added-date
 // derivation below needs one to ask git when an entry first appeared.
 const entryFiles = Object.fromEntries(readEntries().map((e) => [e.url, e.file]))
+// Authors may retire an npm package while continuing to maintain GitHub.
+// Ignore even an existing probe mapping so storefronts install the maintained source.
+const githubOnlyUrls = new Set(readEntries().filter((e) => e.installSource === 'github').map((e) => e.url))
 const tarballMap = Object.fromEntries(
   readEntries()
     .filter((e) => {
@@ -182,6 +185,10 @@ const downloadsMap = fs.existsSync('data/downloads.json') ? JSON.parse(fs.readFi
 // Capability disclosure (#401), from probe-capabilities.mjs. An entry absent
 // here was NOT scanned — the surfaces print that as 未检出, never as clean.
 const capabilitiesMap = fs.existsSync('data/capabilities.json') ? JSON.parse(fs.readFileSync('data/capabilities.json', 'utf8')) : {}
+// A previous npm scan describes the retired package, not the GitHub source.
+for (const url of githubOnlyUrls) {
+  if (capabilitiesMap[url]?.spec?.startsWith('npm:')) delete capabilitiesMap[url]
+}
 
 // Publishing is the last chance to notice that a data file arrived empty, and
 // the only one that matters to consumers: docs/ is deployed straight to Pages,
@@ -428,7 +435,7 @@ for (const e of ordered) {
   e.cmdGit = e.sub
     ? `dsh plugin --profile web add github:${e.repo}#path:/${e.sub}`
     : `dsh plugin --profile web add github:${e.repo}`
-  e.npm = npmMap[e.url]?.npm ?? null
+  e.npm = githubOnlyUrls.has(e.url) ? null : (npmMap[e.url]?.npm ?? null)
   // Optional author-declared prebuilt release tarball (data/plugins/*.yml).
   // Some plugins ship only a built tarball and are not installable from
   // source at all, so `github:owner/repo` would hand users a broken command.

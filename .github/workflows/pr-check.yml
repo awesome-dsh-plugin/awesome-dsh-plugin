@@ -209,6 +209,8 @@ jobs:
         run: npx awesome-lint
       - name: Added-date regression tests
         run: node --test scripts/added-dates.test.mjs
+      - name: Installation-source regression tests
+        run: node --test scripts/install-source.test.mjs
       - name: Capability-disclosure tests
         # Pure rules only — no downloads, no scanner, no token: which artifact
         # an entry is scanned from, when a record is stale, and which fields of

@@ -69,7 +69,7 @@ export function scanSourceFor(entry, npmMap = {}, tarballs = {}) {
   const mapped = npmMap[entry.url]
   const npmName = mapped?.npm ?? (typeof entry.npm === 'string' && entry.npm !== '' ? entry.npm : null)
   const npmVersion = mapped?.version ?? null
-  if (npmName !== null && npmName !== undefined) {
+  if (entry.installSource !== 'github' && npmName !== null && npmName !== undefined) {
     // The packument's own tarball URL shape; the version comes from the same
     // map the rest of the build reads, so this costs no extra request.
     const file = npmName.startsWith('@') ? npmName.split('/')[1] : npmName

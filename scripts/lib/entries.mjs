@@ -133,7 +133,7 @@ export function tarballProblem(value) {
 // but a reader could not have known that, and neither could the reviewer
 // without going to look. Refusing the key is how the file stays honest about
 // what it does.
-const ENTRY_KEYS = new Set(['url', 'name', 'category', 'description', 'tarball', 'file'])
+const ENTRY_KEYS = new Set(['url', 'name', 'category', 'description', 'tarball', 'installSource', 'file'])
 
 /** Validate shape. Returns an array of human-readable problems (empty = ok). */
 export function validateEntries(entries) {
@@ -142,6 +142,9 @@ export function validateEntries(entries) {
   for (const e of entries) {
     const at = e.file ?? e.url ?? '(unknown)'
     const extra = Object.keys(e).filter((k) => !ENTRY_KEYS.has(k))
+    if (e.installSource !== undefined && e.installSource !== 'github') {
+      problems.push(`${at}: "installSource" must be "github" when specified`)
+    }
     if (extra.length) {
       problems.push(
         `${at}: unknown field${extra.length > 1 ? 's' : ''} ${extra.map((k) => `"${k}"`).join(', ')} — `

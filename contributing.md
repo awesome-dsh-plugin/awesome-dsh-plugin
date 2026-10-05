@@ -83,6 +83,8 @@ Requirements / 要求：
 
 Maintainers also add notable plugins directly — the list grows through both community PRs and editorial curation. / 维护者也会主动收录值得关注的插件——列表由社区 PR 与编辑精选共同生长。
 
+If you no longer maintain your npm package, add `installSource: github` to your entry. The site and market will use GitHub (or your declared GitHub release tarball), even when the npm probe finds an older package. Omit this field to keep the default npm-first behaviour. / 如果已停止维护 npm 包，在条目中添加 `installSource: github`。即使探测到旧 npm 包，站点与市场也会使用 GitHub（或你声明的 GitHub Release 压缩包）。省略该字段则保持默认的 npm 优先行为。
+
 ### How submissions are reviewed / 收录如何评审
 
 A green CI run is the **precondition**, not the decision. CI verifies the shape of a submission — manifest, repo age, formatting, that the READMEs regenerate. It cannot tell whether a plugin does what its entry says, whether the category fits, or whether an entry duplicates one already on the list. A maintainer reads the target repository before merging.
