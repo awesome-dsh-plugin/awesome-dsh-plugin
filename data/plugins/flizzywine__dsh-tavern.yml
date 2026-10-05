@@ -1,7 +1,6 @@
 url: https://github.com/flizzywine/dsh-tavern
 name: flizzywine/dsh-tavern
 category: fun
-installSource: github
 description:
   en: A DSH Agent tavern for text roleplay, compatible with the SillyTavern ecosystem, with character card imports, multiple models and mobile access. Requires DSH 0.1.5-rc.2.
   zh: 基于 DSH 的 Agent 酒馆。类酒馆文字游戏 Agent，兼容 SillyTavern 生态，人物卡可直接导入，支持多种模型和手机访问。需使用 DSH 0.1.5-rc.2。
