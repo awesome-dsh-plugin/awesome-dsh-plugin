@@ -1,0 +1,7 @@
+url: https://github.com/flizzywine/dsh-tavern
+name: flizzywine/dsh-tavern
+category: fun
+installSource: github
+description:
+  en: A roleplay workspace for DeepSeek Harness with SillyTavern-compatible character cards, presets, worldbooks and scripts, plus background MVU variable updates and persistent status panels. Requires DSH 0.1.5-rc.2.
+  zh: 基于 DeepSeek Harness 的角色扮演工作区，支持兼容 SillyTavern 的角色卡、预设、世界书与脚本，以及后台 MVU 变量更新和常驻状态栏。需使用 DSH 0.1.5-rc.2。
