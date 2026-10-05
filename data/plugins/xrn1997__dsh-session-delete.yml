@@ -1,0 +1,6 @@
+url: https://github.com/xrn1997/dsh-session-delete
+name: xrn1997/dsh-session-delete
+category: session
+description:
+  en: Adds a Delete item to the session row menu and a Trash panel to the sidebar. Deleting archives the session, unlinks it from its workspace ledger, and renames the directory into `~/.dsh/session-trash/` — with the earlier steps rolled back if a later one fails. Restore puts it back under its original directory name and replays whether it was archived before deletion; permanent deletion and emptying are separate explicit actions, and a running session is refused with a reason.
+  zh: 在会话行的「…」菜单里加一项「删除」，并在侧栏加一个「回收站」面板。删除会把会话归档、从工作区账本里摘除，再把目录整体搬进 `~/.dsh/session-trash/`——后一步失败就把前几步退回去。「恢复」按原本的目录名放回会话目录，并还原它删除前是否处于归档态；「彻底删除」与「清空」是两个显式动作，正在运行的会话会被拒绝并说明原因。
