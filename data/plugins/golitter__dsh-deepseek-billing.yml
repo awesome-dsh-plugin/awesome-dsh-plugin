@@ -1,0 +1,6 @@
+url: https://github.com/golitter/dsh-deepseek-billing
+name: golitter/dsh-deepseek-billing
+category: usage
+description:
+  en: View DeepSeek API account balance and billing info in DSH, with a /billing slash command.
+  zh: 在 DSH 中查看 DeepSeek API 账户余额与计费信息，并提供 /billing 斜杠命令。
