@@ -1,0 +1,6 @@
+url: https://github.com/littlefish04/dsh-turn-price
+name: littlefish04/dsh-turn-price
+category: usage
+description:
+  en: 'Shows what each completed turn cost in CNY on its own row under the turn, with a click-to-open breakdown naming the tokens per category, the unit rate, the matched price rule and the billing instant; per-model rates are edited on a settings page inside DSH — four token categories plus weekly recurring peak/valley rules with arbitrary multipliers and absolute time-window promo prices that override them.'
+  zh: '在每个已完成回合的下方单独一行显示这一轮的花费金额（人民币），点击展开明细，列出各 token 类别的数量、单价、命中的价格规则与计费时刻；单价可在 DSH 设置页里按模型维护，含四类 token 单价、每周循环的峰谷规则（系数自定）与绝对时间区间的限时优惠价。'
