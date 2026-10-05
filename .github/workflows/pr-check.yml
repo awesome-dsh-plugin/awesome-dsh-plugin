@@ -214,6 +214,9 @@ jobs:
         # an entry is scanned from, when a record is stale, and which fields of
         # a scanner response are kept (the ranking ones are deliberately not).
         run: node --test scripts/capabilities.test.mjs
+      - name: Entry-field tests
+        # Pure rules only: which Profile an entry installs into.
+        run: node --test scripts/entry-profile.test.mjs
       - name: Discussion-adoption tests
         # Pure rules only, no token and no network: the shapes they encode were
         # read off the live repository (a hand-made thread, a thread the

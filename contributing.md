@@ -118,6 +118,11 @@ Recommended for a better install experience / 推荐（更好的安装体验）�
   ```yaml
   tarball: https://github.com/owner/repo/releases/latest/download/your-plugin.tgz
   ```
+- Shipping a complete Profile of its own rather than extending the everyday one? Declare it with an optional `profile:` field. Every listed command, and the `install` field storefronts read, then targets that Profile instead of `web`, and the detail page adds the command that starts it. Leave it out for an ordinary plugin — installing a whole-Profile bundle into `web` would reconfigure the user's main Profile. / 插件本身是一个完整的独立 Profile、而不是扩展日常使用的 web Profile？用可选的 `profile:` 字段声明。列表里的所有安装命令、以及市场读取的 `install` 字段都会改为装进该 Profile，详情页另附启动它的命令。普通插件不要写——把整套 Profile 装进 `web` 会改掉用户的主 Profile。
+
+  ```yaml
+  profile: tavern   # installs with `dsh plugin --profile tavern add …`, runs with `dsh --profile tavern`
+  ```
 
   Must be an `https` `.tgz` on GitHub's own release hosting — the list won't hand users a download link it can't vouch for. / 必须是 GitHub Release 托管的 `https` `.tgz`——列表不会给用户一个无法担保来源的下载链接。
 
