@@ -1,0 +1,6 @@
+url: https://github.com/yuloong07-star/dsh-prompt-system
+name: yuloong07-star/dsh-prompt-system
+category: tools
+description:
+  en: 'Prompt optimizer in the composer: rewrites the draft into an eleven-section analytical prompt using the conversation, workspace files and the session''s selected model, with one-click undo.'
+  zh: 输入框内的提示词优化器：结合对话历史、工作区文件与会话选定模型，把草稿改写为十一节分析式提示词，支持一键撤销。
