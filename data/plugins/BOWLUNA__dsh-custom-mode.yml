@@ -1,0 +1,6 @@
+url: https://github.com/BOWLUNA/dsh-custom-mode
+name: BOWLUNA/dsh-custom-mode
+category: identity
+description:
+  en: 'Custom modes and an assistant manager for dsh: give each mode its own system prompt, its base composition (standard / PTC / minimal / Cordis) and per-row plugin switches, all edited in a settings page that matches the official one — several assistants side by side, picked per new session.'
+  zh: 'dsh 自定义模式与多助手管理器：在设置页里给每个模式写自己的系统提示词、选基础组成（standard / PTC / 极简 / Cordis）、逐行开关插件；可并存多个助手，新建会话时挑一个。'
