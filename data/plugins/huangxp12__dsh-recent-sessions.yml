@@ -1,0 +1,7 @@
+url: https://github.com/huangxp12/dsh-recent-sessions
+name: huangxp12/dsh-recent-sessions
+category: session
+tarball: https://github.com/huangxp12/dsh-recent-sessions/releases/download/v0.1.1/dsh-recent-sessions-0.1.1.tgz
+description:
+  en: 'Lists recent sessions across every workspace in one panel, with time grouping, two sort orders, content search, reveal-in-file-manager, and local notes that offer to insert themselves into the draft.'
+  zh: '一块面板列出所有工作目录里的最近会话：时间分组、两种排序、内容检索、在文件管理器中显示目录，以及只存在本机、回到那个会话时提示填入草稿的想法。'
