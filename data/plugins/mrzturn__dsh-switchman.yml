@@ -2,5 +2,5 @@ url: https://github.com/mrzturn/dsh-switchman
 name: mrzturn/dsh-switchman
 category: agi
 description:
-  en: 'Six dispatch pools with model ranking and per-route reasoning-effort pins, plus context water-level control that backs up and compacts long sessions automatically.'
-  zh: '六泳道派发池，配模型排序与按路线思考强度钉选；上下文水位控制，长会话自动备份并压缩交接。'
+  en: 'Turns the main model into a dispatcher: six pools (economy/mechanical/main/hard/vision/review) route each subtask to the right model, with ranking and per-route reasoning-effort pins. A context watermark (50k/90k/130k) nudges delegation early and, at the force level, forks a backup session, writes a handover doc, compacts, and continues without losing in-flight subagent work. Optional Agent Teams mode adds persistent teammates and a shared task board; /vision lets text-only models handle images via the vision pool; tiered verification sends bigger diffs to a tester and an independent reviewer. Bilingual (zh/en) settings page follows the DSH UI locale. Bundles three skills: read-only MySQL/Redis verification, commit-message generation, and a requirements/design document convention.'
+  zh: '把主模型变成调度员：六个派发池（轻量/机械/主力/高难/多模态/复审）按活配模型，支持排序与按路线钉选思考强度。上下文水位（50k/90k/130k）先提醒委派，到顶自动 fork 备份会话、写交接文档、压缩后续跑，跑着的子智能体不丢。可选 Agent Teams 模式带来常驻队友与共享任务板；/vision 让纯文本模型也能看图；分级验证给大改动配 tester 和独立复审。中英双语设置页跟随 DSH 界面语言。内置三个技能：MySQL/Redis 只读核验、commit 文案生成、需求与设计文档规范。'
