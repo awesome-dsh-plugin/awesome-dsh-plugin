@@ -1,0 +1,6 @@
+url: https://github.com/mostkia/dsh-launcher
+name: mostkia/dsh-launcher
+category: ui
+description:
+  en: 'Adds a power button to the DSH sidebar - Shut down or Restart, each behind a confirmation - and ships a Windows tray launcher that starts DSH without a console window, supervises it so Restart can relaunch it, and offers the same start-at-logon switch.'
+  zh: '为 DSH 侧边栏加一个电源按钮——关机 / 重启（各自二次确认）；并自带 Windows 托盘启动器：无窗口启动 DSH、托管它以让「重启」能自动拉起，并提供同一个开机自启开关。'
