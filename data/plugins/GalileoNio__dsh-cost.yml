@@ -1,0 +1,6 @@
+url: https://github.com/GalileoNio/dsh-cost
+name: GalileoNio/dsh-cost
+category: usage
+description:
+  en: 'Composer-dock cost pill that prices each Session per segment from the model that served the request, with presets derived from the harness model catalog and per-model overrides in its settings.'
+  zh: '在输入框下方统计条显示当前会话花费，按每段实际服务的模型分别计价；单价预设取自 harness 内置模型目录，可在插件设置里按模型覆盖。'
