@@ -2,5 +2,5 @@ url: https://github.com/zczgagat/token2rice
 name: zczgagat/token2rice
 category: fun
 description:
-  en: 'Drops a bowl of white rice from the top of the DSH window for every N tokens you spend; the bowls fall under gravity, bounce, pile up along the bottom edge, and can be dragged, thrown, or replaced with your own image.'
-  zh: '每花掉 N token,就从 DSH 窗口顶端掉下一碗白米饭:米饭自由落体、落地弹跳,在底部边框堆成一排,还能拖着扔出去或换成自己的图片。'
+  en: 'Drops a bowl of white rice from the top of the DSH window for every N tokens you spend; the bowls fall and bounce under gravity, can be dragged and thrown, and a vortex button (with a sound effect) inhales them all — or just the one you drop on it. Threshold, bowl size, on-screen cap, auto-righting and artwork are adjustable in an in-app panel.'
+  zh: '每花掉 N token,就从 DSH 窗口顶端掉下一碗白米饭:米饭自由落体、落地弹跳,可以拖着扔出去;一个漩涡按钮(带音效)能把它们全部吸走,把某一碗拖上去松手则只吸那一碗。每碗额度、米饭大小、最多摆几碗、落地是否自动回正、米饭图都能在面板里调。'
