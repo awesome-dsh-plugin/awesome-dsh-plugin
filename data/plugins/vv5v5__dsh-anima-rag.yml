@@ -1,0 +1,7 @@
+url: https://github.com/vv5v5/dsh-anima-rag
+name: vv5v5/dsh-anima-rag
+category: memory
+tarball: https://github.com/vv5v5/dsh-anima-rag/releases/latest/download/dsh-anima-rag.tgz
+description:
+  zh: "Anima 式向量记忆：每轮把语义检索到的历史总结注入 system prompt，提供 anima_query 检索工具，向量库按周目隔离；SiliconFlow 嵌入（数组形状请求），嵌入超时/网络错分级如实写进注入格，绝不静默失败。"
+  en: "Anima-style vector memory for DSH: injects retrieved historical summaries into the system prompt each turn, exposes an anima_query semantic-search tool, and isolates the vector store per playthrough. SiliconFlow embeddings sent as array-shaped requests; timeouts and provider errors surface as honest, classified notes in the injection slot — never silent."
