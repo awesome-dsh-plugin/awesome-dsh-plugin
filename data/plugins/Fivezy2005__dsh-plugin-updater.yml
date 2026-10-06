@@ -1,0 +1,6 @@
+url: https://github.com/Fivezy2005/dsh-plugin-updater
+name: Fivezy2005/dsh-plugin-updater
+category: tools
+description:
+  en: Monitor and update every third-party plugin in the current DSH profile across npm, GitHub Releases, GitHub tags, and default-branch commits.
+  zh: 监控并更新当前 DSH profile 的全部第三方插件，覆盖 npm、GitHub Release、GitHub Tag 与默认分支提交。
