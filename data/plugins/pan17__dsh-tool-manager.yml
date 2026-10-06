@@ -2,5 +2,5 @@ url: https://github.com/pan17/dsh-tool-manager
 name: pan17/dsh-tool-manager
 category: tools
 description:
-  en: Configure tool availability for each DSH Agent Preset, group tools manually or with model suggestions, and expose on-demand groups through `tool_list` for the current session.
-  zh: 按 DSH Agent Preset 管理工具开关，手动或借助模型建议整理工具分组，并通过 `tool_list` 在当前会话中按需开放分组工具。
+  en: Manage tool availability and groups for each Agent Preset, load tools on demand like Skills, and reduce model context usage.
+  zh: DSH 工具管理插件：按 Agent Preset 开关和分组工具，像 Skill 一样按需加载工具，减少模型上下文占用。
