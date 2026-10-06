@@ -1,0 +1,6 @@
+url: https://github.com/WHC-wen/dsh-demo-myplugin
+name: WHC-wen/dsh-demo-myplugin
+category: tool
+description:
+  zh: 运行于 DeepSeek Harness 的提示词优化插件：在聊天输入框工具行右端嵌入一个常驻星星图标，点击即可读取当前草稿，调用 大模型润色 或 规则重写 增强提示词，以悬浮层预览、一键替换原文（或取消），全程不打断输入流程。
+  en: One-line English description of your plugin.
