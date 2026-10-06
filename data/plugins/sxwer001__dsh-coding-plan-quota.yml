@@ -1,0 +1,7 @@
+url: https://github.com/sxwer001/dsh-coding-plan-quota
+name: sxwer001/dsh-coding-plan-quota
+category: usage
+description:
+  en: Quota ring in the DSH composer bar that tracks OpenCode Go and 14 other coding-plan quotas or balances, cycles the 5-hour, weekly and monthly windows on click, colours itself by urgency, and switches the displayed source from its hover card.
+  zh: DSH 输入框工具行里的额度圆环，读取 OpenCode Go 等 15 个 coding plan 的用量或余额，点击循环 5 小时、每周、每月窗口，按紧急程度着色，并可在悬浮卡片里切换显示的来源。
+tarball: https://github.com/sxwer001/dsh-coding-plan-quota/releases/download/v0.2.0/dsh-coding-plan-quota-0.2.0.tgz
