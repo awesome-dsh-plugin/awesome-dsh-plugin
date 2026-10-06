@@ -1,0 +1,5 @@
+url: https://github.com/MrGnUm/dsh-image-webp-to-png
+name: MrGnUm/dsh-image-webp-to-png
+category: dev
+description:
+  en: 'Re-encodes WebP attachment images to PNG so alpha-channel images load on LLM backends that cannot decode WebP (e.g. llama.cpp).'
