@@ -1,0 +1,6 @@
+url: https://github.com/xraywu/dsh-service-monitor
+name: xraywu/dsh-service-monitor
+category: usage
+description:
+  en: 'Monitor the account balance for 3rd-party services those AI agents often uses'
+  zh: '监控 AI Agents 常用的第三方服务余额，如 Tavily、SerpAPI、Firecrawl 等'
