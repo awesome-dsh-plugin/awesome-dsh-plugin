@@ -1,0 +1,6 @@
+url: https://github.com/luoshuizhiwei/dsh-desktop-restart
+name: luoshuizhiwei/dsh-desktop-restart
+category: ui
+description:
+  en: 'Restarts the whole DeepSeek Harness desktop application from a conversation title-bar button, the /restart-desktop slash command, or a settings row, by having a detached helper end the Electron main process and relaunch it. Desktop only; on dsh web the status route reports desktop: false and the button is disabled.'
+  zh: '在会话标题栏按钮、/restart-desktop 斜杠命令与设置页入口三处重启整个 DeepSeek Harness 桌面应用：由分离的 helper 结束 Electron 主进程后重新拉起。仅适用于桌面版；在 dsh web 上状态路由如实报告 desktop: false 并禁用按钮。'
