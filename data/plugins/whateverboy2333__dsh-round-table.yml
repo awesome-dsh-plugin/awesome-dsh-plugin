@@ -1,0 +1,7 @@
+url: https://github.com/whateverboy2333/dsh-round-table
+name: whateverboy2333/dsh-round-table
+category: workflow
+description:
+  en: Round-table meetings for DeepSeek Harness 0.2.0-rc.2 on Windows desktop, reusing existing Agent sessions with discussion, editable task cards, sequential and parallel steps, shared meeting files, and secretary minutes.
+  zh: 面向 Windows 桌面版 DeepSeek Harness 0.2.0-rc.2 的圆桌会议，复用已有 Agent 会话，提供讨论、可编辑任务卡、顺序与并行步骤、会议文件归档及秘书纪要。
+tarball: https://github.com/whateverboy2333/dsh-round-table/releases/download/v0.1.18/dsh-round-table-0.1.18.tgz
