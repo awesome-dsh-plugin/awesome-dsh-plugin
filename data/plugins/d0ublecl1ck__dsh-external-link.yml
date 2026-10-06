@@ -1,0 +1,6 @@
+url: https://github.com/d0ublecl1ck/dsh-external-link
+name: d0ublecl1ck/dsh-external-link
+category: ui
+description:
+  en: 'Open http, https, mailto and tel anchor links in the OS default application instead of a window inside DSH, including localhost URLs the Electron shell would otherwise keep in-app.'
+  zh: '把 DSH Web GUI 里的 http/https/mailto/tel 链接交给系统默认应用打开，包括 Electron 外壳原本会留在应用内的 localhost 地址。'
