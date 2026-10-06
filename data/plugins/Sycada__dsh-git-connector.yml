@@ -1,0 +1,6 @@
+url: https://github.com/Sycada/dsh-git-connector
+name: Sycada/dsh-git-connector
+category: git
+description:
+  en: 'Git repository connector for DeepSeek Harness: saved repo profiles addressed by name, work-copy operations (clone/fetch/pull/push/commit), Gitea/Forgejo/GitHub API tools, keys in the DSH credential center, and per-repo safety flags (TLS bypass, overwrite, force push).'
+  zh: 'DeepSeek Harness 的 Git 仓库连接：按档案名操作仓库（clone/fetch/pull/push/commit）、Gitea/Forgejo/GitHub API、密钥存 DSH 凭据中心，并按仓库单独授权忽略证书/允许覆盖/force push 等危险开关。'
