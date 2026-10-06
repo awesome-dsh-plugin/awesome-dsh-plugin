@@ -48,7 +48,6 @@
  "https://github.com/Fishsb/dsh-prompt-enhancer": "2026-08-14",
  "https://github.com/FleetingEcho/dsh-handoff": "2026-08-15T01:22:41.608Z",
  "https://github.com/Flyvhidbwo/dsh-vision-proxy": "2026-08-14",
- "https://github.com/Fro2en12/dsh-download-progress": "2026-08-15T01:06:37.661Z",
  "https://github.com/FuRongJun-1999/dsh-memory": "2026-08-14",
  "https://github.com/GIT121995/dsh-memory-gate": "2026-08-14",
  "https://github.com/GLFzr/dsh-opencode-go-quota": "2026-08-14T17:49:55.495Z",
@@ -392,8 +391,6 @@
  "https://github.com/zimai233/dsh-image-search": "2026-08-14",
  "https://github.com/zimai233/dsh-video-downloader": "2026-08-14",
  "https://github.com/zimai233/dsh-wash-calendar": "2026-08-14",
- "https://github.com/zoumutou/dsh-cost-balance": "2026-08-14",
- "https://github.com/zoumutou/dsh-web-preview": "2026-08-14",
  "https://github.com/zp-home/dsh-recommend": "2026-08-14",
  "https://github.com/ztl34245881-commits/dsh-task-planner": "2026-08-14",
  "https://github.com/kun2-5code/dsh-plugin-template": "2026-08-16",
@@ -518,5 +515,7 @@
  "https://github.com/wangcangxing/ai-eight-honors-eight-shames": "2026-09-23",
  "https://github.com/itchenshi/dsh-gateway-models": "2026-09-23",
  "https://github.com/yunxiiQwQ/dsh-maid-whale-UI/tree/main/maid-whale-webui": "2026-08-15",
- "https://github.com/pgmi-builds/better-dsh/tree/main/better-dsh": "2026-08-29"
+ "https://github.com/pgmi-builds/better-dsh/tree/main/better-dsh": "2026-08-29",
+ "https://github.com/inclusionAI/Avernet/tree/dev/apps/bcs/crates/plugins/deepseek-harness-channel-bcn": "2026-09-03",
+ "https://github.com/BOWLUNA/dsh-custom-mode": "2026-09-18"
 }

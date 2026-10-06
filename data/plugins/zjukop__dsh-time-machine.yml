@@ -1,0 +1,6 @@
+url: https://github.com/zjukop/dsh-time-machine
+name: zjukop/dsh-time-machine
+category: dev
+description:
+  en: Creates local, content-addressed workspace checkpoints with diff previews and two-phase restore confirmation.
+  zh: 创建本地内容寻址工作区存档，提供差异预览和两阶段确认恢复。

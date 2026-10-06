@@ -1,0 +1,6 @@
+url: https://github.com/ardesp0630/dsh-work-progress
+name: ardesp0630/dsh-work-progress
+category: ui
+description:
+  en: 'Persistent work-progress row in the band below the composer: task completion, a progress bar, and what the agent is doing right now (generating a reply or running a tool), expandable into the full task list with turns, steps, timings and context usage.'
+  zh: '输入框下方常驻的工作进度行：任务完成度、进度条，以及此刻正在做什么（生成回复或执行工具）；展开可见完整任务清单与轮次、步骤、耗时、上下文占用。'

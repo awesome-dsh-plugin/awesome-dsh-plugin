@@ -1,0 +1,7 @@
+url: https://github.com/qcsjjjjj/dsh-planner
+name: qcsjjjjj/dsh-planner
+category: ui
+tarball: https://github.com/qcsjjjjj/dsh-planner/releases/download/v0.1.0/dsh-planner-0.1.0.tgz
+description:
+  en: 'A planner board as a third tab beside chat and trajectory: a Monday-first month calendar above per-day cards holding title, note, times, three importance levels and a completion checkbox. Plans repeat daily, weekly or on weekdays with an optional end date; editing or deleting asks this occurrence versus the whole series; completion is tracked per day; one button clears a day while only skipping recurrent series. Five model tools let the agent read, write, delete, clear and undo plans in conversation.'
+  zh: '在中间栏加一个“计划”标签（对话、轨迹的右侧）：周一起始的月历用于选日期，下方是当天的计划卡片，含标题、备注、起止时间、三档重要度与完成勾选框。计划可按每天、每周或工作日重复并带可选截止日期；编辑与删除会询问“仅此一次”还是“整个系列”；完成状态按天独立；一键躺平只跳过重复系列的当天。五个模型工具让 Agent 能在对话里读取、写入、删除、清空与撤销计划。'

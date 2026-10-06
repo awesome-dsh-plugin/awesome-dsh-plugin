@@ -1,0 +1,6 @@
+url: https://github.com/Centaurea5547196/dsh-page-zoom
+name: Centaurea5547196/dsh-page-zoom
+category: ui
+description:
+  en: 'Page zoom for the DSH Web UI: Ctrl+mouse wheel scales the entire interface in 5% steps (30%-200%), remembers the zoom level locally, and shows a magnifier with the percentage in the bottom-right corner.'
+  zh: 'DSH Web UI 页面缩放：Ctrl+鼠标滚轮以 5% 步长缩放整个界面（30%-200%），在本地记住缩放比例，并在右下角显示放大镜与百分比。'

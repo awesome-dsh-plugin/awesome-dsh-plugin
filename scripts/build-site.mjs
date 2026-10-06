@@ -11,6 +11,7 @@
  * Usage: node scripts/build-site.mjs
  */
 import fs from 'node:fs'
+import { createHash } from 'node:crypto'
 import { execSync } from 'node:child_process'
 import { Marked } from 'marked'
 import LOCALES from '../site/locales.mjs'
@@ -494,14 +495,29 @@ const byDownloads = (a, b) => {
   return (b.stars ?? -1) - (a.stars ?? -1)
 }
 
-// download-ranked card grid; `only` limits to one category (category pages)
-function buildRows(loc, only) {
-  const group = ordered
-    .filter((e) => !only || e.cat === only)
-    .slice()
-    .sort(byDownloads)
-  return group.map((e) => {
-    const cmd = e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit
+// The HTML grid is only the first screen (#6105). Mounting every card made a
+// ~7.6 MB document and froze low-end browsers; the rest of the list is windowed
+// at runtime from catalog.json. No-JS visitors still get this slice, in the
+// same order the full grid uses.
+const FALLBACK_CARDS = 24
+
+function ranked(only) {
+  return ordered.filter((e) => !only || e.cat === only).slice().sort(byDownloads)
+}
+
+// The install command the card shows. npm when the entry has a package, otherwise
+// the github: spec. Kept next to the catalog so the two cannot drift.
+function cardCmd(e) {
+  return e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit
+}
+
+// download-ranked card grid; `only` limits to one category (category pages).
+// `limit` is the no-JS / first-paint slice. Omit it and the grid is the whole list.
+function buildRows(loc, only, limit) {
+  const group = ranked(only)
+  const rows = limit ? group.slice(0, limit) : group
+  return rows.map((e) => {
+    const cmd = cardCmd(e)
     const short = shortName(e.name)
     // data-* carry what the in-page sort and filters need. Absent attribute,
     // not a zero: `downloads` is null for entries with no npm package at all,
@@ -543,6 +559,49 @@ function buildRows(loc, only) {
 // disambiguation. Titles lead with this: nobody searches the owner prefix,
 // and it costs a dozen characters of a budget that truncates around sixty.
 const shortName = (name) => (name.includes('/') ? name.slice(name.indexOf('/') + 1) : name)
+
+// One catalog per page. The homepage needs every category because its chips
+// filter in place; a category page only needs its own rows. Sharing the full
+// file made a small category download the whole list (~2 MB) to throw most of
+// it away. Card-chrome strings travel with the file: they are locale-specific
+// and must not be interpolated into the page script, where an apostrophe
+// would break the string.
+function catalogPayload(loc, only) {
+  return {
+    install: loc.strings.INSTALL_BTN,
+    market: loc.strings.MENU_MARKET,
+    marketHint: loc.strings.MENU_MARKET_HINT,
+    cli: loc.strings.MENU_CLI,
+    copy: loc.COPY_TEXT,
+    copyLabel: loc.COPY_LABEL,
+    dlTitle: loc.strings.P_DOWNLOADS,
+    items: ranked(only).map((e) => {
+      const short = shortName(e.name)
+      return {
+        cat: e.cat,
+        tag: loc.categories[e.cat],
+        dl: e.downloads,
+        stars: e.stars,
+        added: e.added,
+        npm: e.npm ? 1 : 0,
+        name: short.toLowerCase(),
+        owner: e.owner,
+        short,
+        slug: e.slug,
+        desc: e.descs[loc.code] || '',
+        cmd: cardCmd(e),
+        href: `${loc.urlPath}p/${e.slug}/`,
+      }
+    }),
+  }
+}
+
+// The query pins the CDN copy to this build. Pages caches the HTML briefly;
+// an unhashed catalog.json would keep serving the previous list after a deploy.
+function catalogHref(path, json) {
+  const v = createHash('sha256').update(json).digest('hex').slice(0, 8)
+  return `${path}?v=${v}`
+}
 
 // Highest-starred entries in a category, for its meta description. Stars come
 // from a probe that only runs in CI, so a local build ranks by list order
@@ -595,9 +654,12 @@ function langRedirect(current) {
 const master = fs.readFileSync('site/template.html', 'utf8')
 
 for (const loc of LOCALES) {
+  const catalog = catalogPayload(loc)
+  const catalogJson = JSON.stringify(catalog)
+  const catalogUrl = catalogHref(loc.urlPath + 'catalog.json', catalogJson)
   let page = master
   page = page.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, () => `<script type="application/ld+json">${ldSafe(jsonld(ORIGIN + loc.urlPath))}</script>`)
-  page = page.replace(/(<ol class="dex" id="dex">)[\s\S]*?(<\/ol>)/, (m, a, b) => `${a}\n\n${buildRows(loc)}\n\n  ${b}`)
+  page = page.replace(/(<ol class="dex" id="dex"[^>]*>)[\s\S]*?(<\/ol>)/, (m, a, b) => `${a}\n\n${buildRows(loc, null, FALLBACK_CARDS)}\n\n  ${b}`)
   page = page.replace(/(<div class="filters" id="filters">)[\s\S]*?(<\/div><!--\/filters-->)/, (m, a, b) => `${a}\n${buildChips(loc)}\n    ${b}`)
   page = page
     .replaceAll('__LANG__', () => loc.htmlLang)
@@ -612,16 +674,22 @@ for (const loc of LOCALES) {
     .replaceAll('__PRIVACY__', () => loc.privacyPath)
     .replaceAll('__LANG_REDIRECT__', () => langRedirect(loc))
     .replaceAll('__FEED__', () => loc.feed)
+    .replaceAll('__CATALOG__', () => catalogUrl)
     // Rendered server-side rather than left at 0 for the client to correct.
     // The counters sit inside the search bar and the line under the hero; going
     // from "0 / 0" to "2662 / 2662" on load widened both and reflowed the row
     // around them, which is what made #count the single largest contributor to
-    // this site's CLS. Same number either way — it just arrives before paint.
+    // this site's CLS. The hero total is the full list. The search counter
+    // starts at the baked slice so a no-JS visitor is not told every plugin is
+    // on the page; the script rewrites it to the full total before first paint.
     .replaceAll('__CARD_COUNT__', () => String(N))
+    .replaceAll('__FALLBACK_COUNT__', () => String(Math.min(FALLBACK_CARDS, N)))
     .replaceAll(AD_HEAD_TOKEN, () => adHead())
   for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
   fs.mkdirSync(loc.out.split('/').slice(0, -1).join('/'), { recursive: true })
   fs.writeFileSync(loc.out, page)
+  fs.writeFileSync(loc.out.replace(/index\.html$/, 'catalog.json'), catalogJson)
+  console.log(`catalog ${loc.code}: ${catalog.items.length} items, ${(catalogJson.length / 1024).toFixed(0)} KB`)
 }
 
 // Category pages: /{cat}/ per locale
@@ -634,9 +702,13 @@ const catJsonld = (url, id) => JSON.stringify({
   itemListElement: ordered.filter((e) => e.cat === id).map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name, url: e.url })),
 })
 for (const loc of LOCALES) {
+  const catBytes = []
   for (const id of CAT_IDS) {
     const n = ordered.filter((e) => e.cat === id).length
     if (!n) continue
+    const catCatalog = catalogPayload(loc, id)
+    const catCatalogJson = JSON.stringify(catCatalog)
+    const catCatalogUrl = catalogHref(`${loc.urlPath}${id}/catalog.json`, catCatalogJson)
     const url = `${ORIGIN}${loc.urlPath}${id}/`
     const catHreflangs = [
       ...LOCALES.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}${id}/">`),
@@ -644,7 +716,8 @@ for (const loc of LOCALES) {
     ].join('\n')
     let page = master
     page = page.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, () => `<script type="application/ld+json">${ldSafe(catJsonld(url, id))}</script>`)
-    page = page.replace(/(<ol class="dex" id="dex">)[\s\S]*?(<\/ol>)/, (m, a, b) => `${a}\n\n${buildRows(loc, id)}\n\n  ${b}`)
+    page = page.replace('data-only=""', `data-only="${id}"`)
+    page = page.replace(/(<ol class="dex" id="dex"[^>]*>)[\s\S]*?(<\/ol>)/, (m, a, b) => `${a}\n\n${buildRows(loc, id, FALLBACK_CARDS)}\n\n  ${b}`)
     page = page.replace(/(<div class="filters" id="filters">)[\s\S]*?(<\/div><!--\/filters-->)/, (m, a, b) => `${a}\n${buildChipLinks(loc, id)}\n    ${b}`)
     page = page
       .replaceAll('__LANG__', () => loc.htmlLang)
@@ -662,15 +735,24 @@ for (const loc of LOCALES) {
     .replaceAll('__PRIVACY__', () => loc.privacyPath)
       .replaceAll('__LANG_REDIRECT__', () => '')
       .replaceAll('__FEED__', () => loc.feed)
+      .replaceAll('__CATALOG__', () => catCatalogUrl)
       // A category page renders only its own rows, so its counters start from
       // that number, not the site total. See the index block for why these are
-      // server-rendered.
+      // server-rendered. The search counter starts at the baked slice.
       .replaceAll('__CARD_COUNT__', () => String(n))
+      .replaceAll('__FALLBACK_COUNT__', () => String(Math.min(FALLBACK_CARDS, n)))
       .replaceAll(AD_HEAD_TOKEN, () => adHead())
     for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
     const outDir = loc.out.replace(/index\.html$/, '') + id
     fs.mkdirSync(outDir, { recursive: true })
     fs.writeFileSync(`${outDir}/index.html`, page)
+    fs.writeFileSync(`${outDir}/catalog.json`, catCatalogJson)
+    catBytes.push(catCatalogJson.length)
+  }
+  if (catBytes.length) {
+    const min = Math.min(...catBytes)
+    const max = Math.max(...catBytes)
+    console.log(`category catalogs ${loc.code}: ${catBytes.length} files, ${(min / 1024).toFixed(0)}–${(max / 1024).toFixed(0)} KB`)
   }
 }
 

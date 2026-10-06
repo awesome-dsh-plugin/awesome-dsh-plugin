@@ -22,6 +22,7 @@ __HREFLANGS__
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
 <link rel="preload" href="/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="__CATALOG__" as="fetch" crossorigin>
 <script type="application/ld+json">{}</script>
 <style>
 /* Archivo is self-hosted, not loaded from Google Fonts: a webfont request
@@ -89,7 +90,7 @@ html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 ::selection{background:var(--cinnabar-soft);color:var(--ink)}
 :focus-visible{outline:2px solid var(--cinnabar);outline-offset:2px}
-html{scrollbar-color:var(--line-2) transparent}
+html{scrollbar-color:var(--line-2) transparent;scrollbar-gutter:stable}
 body{font-family:var(--sans);background:var(--paper);color:var(--ink);min-height:100vh;line-height:1.55;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none;touch-action:manipulation}
 button{touch-action:manipulation;-webkit-tap-highlight-color:transparent;font-family:inherit;cursor:pointer}
@@ -169,13 +170,20 @@ h1 em{font-style:normal;color:var(--cinnabar)}
 .toggle[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 
 /* ── card grid ── */
-ol.dex{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr));gap:1.05rem;padding-block:1.7rem 2.5rem}
+ol.dex{--dex-gap:1.05rem;--dex-min:19rem;list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--dex-min),1fr));gap:var(--dex-gap);padding-block:1.7rem 2.5rem}
+/* Windowed list (#6105). JS adds .virt and positions only the visible cards.
+   The baked cards stay visible until the catalog arrives. A min-height set
+   before first paint holds the panels and footer where the full list will be,
+   so they don't jump down when the window takes over. .legacy is the
+   fetch-failed path: those baked cards, filtered in place. */
+ol.dex.virt{display:block;position:relative;padding:0;margin-block:1.7rem 2.5rem}
+ol.dex.virt li.card{position:absolute;margin:0}
 li.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.2rem 1.25rem;
   display:flex;flex-direction:column;gap:.5rem;transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease;position:relative}
 li.card:hover{border-color:var(--line-2);box-shadow:0 3px 5px rgb(43 38 32 / .05),0 14px 34px rgb(43 38 32 / .08);transform:translateY(-2px)}
 li.card:has(.inst[open]){z-index:30}
 li.card .top{display:flex;align-items:baseline;gap:.5rem;min-width:0}
-li.card h3{font-size:.98rem;font-weight:680;letter-spacing:-.01em;overflow-wrap:anywhere;line-height:1.35}
+li.card h3{font-size:.98rem;font-weight:680;letter-spacing:-.01em;overflow-wrap:anywhere;line-height:1.35;min-width:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 li.card h3 a{transition:color .15s ease}
 li.card h3 a:hover{color:var(--cinnabar-deep)}
 li.card h3 .owner{color:var(--ink-3);font-weight:450}
@@ -196,6 +204,7 @@ li.card .tag{font-size:.72rem;color:var(--ink-3);background:var(--paper);border:
 li.card .tag:hover{color:var(--ink);border-color:var(--line-2)}
 li.hidden{display:none}
 .noresult{padding-block:3rem;color:var(--ink-3);text-align:center;display:none}
+.nojs{padding-block:0 1.5rem;color:var(--ink-3);text-align:center}
 .noresult button{background:none;border:none;color:var(--cinnabar);font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
 
 /* ── install dropdown ── */
@@ -296,7 +305,7 @@ __AD_HEAD__
     <div class="searchbar">
       <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>
       <input id="q" type="search" autocomplete="off" spellcheck="false" name="plugin-search" placeholder="__SEARCH_PH__" aria-label="__SEARCH_PH__">
-      <span class="count" id="count" aria-live="polite">__CARD_COUNT__ / __CARD_COUNT__</span>
+      <span class="count" id="count" aria-live="polite">__FALLBACK_COUNT__ / __CARD_COUNT__</span>
     </div>
     <div class="market">
       <svg aria-hidden="true" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.4"/><circle cx="19" cy="21" r="1.4"/><path d="M2.5 3h2l2.6 12.5a2 2 0 0 0 2 1.5h9.2a2 2 0 0 0 2-1.6L22 7H6"/></svg>
@@ -324,8 +333,9 @@ __AD_HEAD__
 </div></div>
 
 <main class="wrap">
-  <ol class="dex" id="dex">
+  <ol class="dex" id="dex" data-catalog="__CATALOG__" data-only="">
   </ol>
+  <noscript><p class="nojs">__T_NOJS__</p></noscript>
 
   <div class="noresult" id="noresult">
     __T_NORESULT__
@@ -362,44 +372,102 @@ const urlParams = new URLSearchParams(location.search);
 
 // filter = category chip × search text × npm/recent toggles; sort reorders.
 // URL reflects state (?cat=&q=&sort=&npm=1&new=1) — nothing is stored.
+//
+// The list is windowed (#6105). HTML ships only the first screen, so no-JS
+// visitors and the first paint still have cards, and the document is not
+// thousands of nodes. With JS, catalog.json is the list and only the rows
+// that intersect the viewport stay mounted. `paint` / `refresh` are filled
+// in once that file loads; until then they no-op and the baked cards stay put.
+document.documentElement.classList.add('js');
 const dex = document.getElementById('dex');
-const items = [...document.querySelectorAll('#dex li.card')];
 const count = document.getElementById('count');
 const noresult = document.getElementById('noresult');
 const total = document.getElementById('total');
-total.textContent = items.length;
+// No-JS markup says "24 / N" because only the first screen is in the document.
+// JS shows the whole list, so correct the counter before first paint — the
+// search bar must not reflow when the catalog arrives.
+const pageTotal = total.textContent.trim();
+count.textContent = `${pageTotal} / ${pageTotal}`;
+// Row slots use a fixed ceiling. The title clamps to two lines and the
+// description to three, so a later card cannot be taller than a full one, and
+// the footer can be reserved before the catalog arrives. The extra padding
+// matches the margin .virt applies later; clearing min-height then does not
+// move the footer.
+let seedRowH = 180;
+function linePx(cs, unitless) {
+  const n = parseFloat(cs.lineHeight);
+  if (n) return n;
+  return (parseFloat(cs.fontSize) || 16) * unitless;
+}
+function rowCeiling() {
+  const sample = dex.querySelector('li.card');
+  const root = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+  if (!sample) return Math.ceil(12 * root);
+  const cs = getComputedStyle(sample);
+  const h3 = sample.querySelector('h3');
+  const para = sample.querySelector('p');
+  const foot = sample.querySelector('.foot');
+  const pad = (parseFloat(cs.paddingTop) || 0) + (parseFloat(cs.paddingBottom) || 0);
+  const gap = parseFloat(cs.rowGap) || parseFloat(cs.gap) || 0;
+  const h3h = h3 ? linePx(getComputedStyle(h3), 1.35) * 2 : 0;
+  const ph = para ? linePx(getComputedStyle(para), 1.55) * 3 : 0;
+  const fcs = foot ? getComputedStyle(foot) : null;
+  const footPad = fcs ? (parseFloat(fcs.paddingTop) || 0) + (parseFloat(fcs.paddingBottom) || 0) : 0;
+  let footInner = 0;
+  if (foot) for (const el of foot.children) if (el.offsetHeight > footInner) footInner = el.offsetHeight;
+  const border = (parseFloat(cs.borderTopWidth) || 0) + (parseFloat(cs.borderBottomWidth) || 0);
+  let tallest = 0;
+  for (const li of dex.querySelectorAll('li.card')) if (li.offsetHeight > tallest) tallest = li.offsetHeight;
+  return Math.max(tallest, Math.ceil(pad + gap * 2 + h3h + ph + footPad + footInner + border));
+}
+(function reserveList() {
+  seedRowH = rowCeiling();
+  const n = parseInt(pageTotal, 10);
+  if (!n || !dex.clientWidth) return;
+  const root = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+  const cs = getComputedStyle(dex);
+  const gap = (parseFloat(cs.getPropertyValue('--dex-gap')) || 1.05) * root;
+  const minCol = (parseFloat(cs.getPropertyValue('--dex-min')) || 19) * root;
+  const cols = Math.max(1, Math.floor((dex.clientWidth + gap) / (minCol + gap)));
+  const rows = Math.ceil(n / cols);
+  const totalH = rows * seedRowH + (rows - 1) * gap;
+  const pad = (parseFloat(cs.paddingTop) || 0) + (parseFloat(cs.paddingBottom) || 0);
+  dex.style.minHeight = (totalH + pad) + 'px';
+})();
 let activeCat = urlParams.get('cat') || 'all';
 let query = (urlParams.get('q') || '').toLowerCase();
 let sortBy = urlParams.get('sort') || 'dl';
 let onlyNpm = urlParams.get('npm') === '1';
 let onlyNew = urlParams.get('new') === '1';
+// Category pages are already one slice. Their chips are links, so a ?cat=
+// left over from the homepage must not hide every row on top of that.
+const fixedCat = dex.dataset.only || '';
+if (fixedCat) activeCat = 'all';
+let refresh = () => {};
+let paint = () => {};
+let paintQueued = false;
 
 // Computed at load, not at build: a static page served for weeks would
 // otherwise keep filtering against the day it was generated.
 //
 // Seven days, not thirty. `added` derives from git history and this repository
-// was initialised 2026-08-13, so every one of the 2,143 entries currently
-// carries a date inside the last two weeks — a 30-day window matches all of
-// them and the button does nothing. Seven selects ~43% today and keeps
-// selecting a useful slice once the history is long enough for either to work.
+// was initialised 2026-08-13, so a 30-day window matched everything and the
+// button did nothing. Seven keeps selecting a useful slice as the list grows.
 const cutoff = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10);
 
-// `data-dl` is absent — never "0" — for entries with no npm package, so a
-// missing attribute means "not published", not "published and unused".
-// This must stay equivalent to byDownloads() in scripts/build-site.mjs, which
-// produces the server-rendered order; if they differ the grid visibly
-// reshuffles on load.
-const num = (li, k) => (k in li.dataset ? +li.dataset[k] : null);
+// Same ordering as byDownloads() in scripts/build-site.mjs. `dl` and `stars`
+// are null — never 0 — when the entry was not measured. Catalog items are
+// already in this order; this only recomputes it for the other sorts.
 const SORTS = {
   dl: (a, b) => {
-    const ad = num(a, 'dl'), bd = num(b, 'dl');
-    if ((ad === null) !== (bd === null)) return ad === null ? 1 : -1;
-    if (ad !== null && bd !== null && ad !== bd) return bd - ad;
-    return (num(b, 'stars') ?? -1) - (num(a, 'stars') ?? -1);
+    const ad = a.dl, bd = b.dl;
+    if ((ad == null) !== (bd == null)) return ad == null ? 1 : -1;
+    if (ad != null && bd != null && ad !== bd) return bd - ad;
+    return (b.stars ?? -1) - (a.stars ?? -1);
   },
-  stars: (a, b) => (num(b, 'stars') ?? -1) - (num(a, 'stars') ?? -1),
-  new: (a, b) => (a.dataset.added < b.dataset.added ? 1 : a.dataset.added > b.dataset.added ? -1 : 0),
-  name: (a, b) => a.dataset.name.localeCompare(b.dataset.name),
+  stars: (a, b) => (b.stars ?? -1) - (a.stars ?? -1),
+  new: (a, b) => (a.added < b.added ? 1 : a.added > b.added ? -1 : 0),
+  name: (a, b) => a.name.localeCompare(b.name),
 };
 
 function syncUrl() {
@@ -411,27 +479,6 @@ function syncUrl() {
   onlyNew ? p.set('new', '1') : p.delete('new');
   history.replaceState(null, '', p.size ? `?${p}` : location.pathname);
 }
-function applySort() {
-  // One fragment, one reflow. Appending 2,000+ nodes individually forces a
-  // layout per node and is visibly janky on a mid-range phone.
-  const frag = document.createDocumentFragment();
-  for (const li of [...items].sort(SORTS[sortBy] || SORTS.dl)) frag.appendChild(li);
-  dex.appendChild(frag);
-}
-function applyFilter() {
-  let shown = 0;
-  for (const li of items) {
-    const hit = (activeCat === 'all' || li.dataset.cat === activeCat)
-      && (!query || li.textContent.toLowerCase().includes(query))
-      && (!onlyNpm || 'npm' in li.dataset)
-      && (!onlyNew || li.dataset.added >= cutoff);
-    li.classList.toggle('hidden', !hit);
-    if (hit) shown++;
-  }
-  count.textContent = `${shown} / ${items.length}`;
-  noresult.style.display = shown ? 'none' : 'block';
-  syncUrl();
-}
 const q = document.getElementById('q');
 q.value = query;
 const SEARCH_DEBOUNCE_MS = 180;
@@ -439,27 +486,20 @@ let searchTimer;
 q.addEventListener('input', (e) => {
   query = e.target.value.trim().toLowerCase();
   clearTimeout(searchTimer);
-  if (!query) {
-    applyFilter();
-    return;
-  }
-  searchTimer = setTimeout(applyFilter, SEARCH_DEBOUNCE_MS);
+  if (!query) { refresh(); return; }
+  searchTimer = setTimeout(() => refresh(), SEARCH_DEBOUNCE_MS);
 });
 document.getElementById('filters').addEventListener('click', (e) => {
   const chip = e.target.closest('button.chip');
   if (!chip) return;
   activeCat = chip.dataset.cat;
-  for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c.dataset.cat === activeCat);
-  applyFilter();
+  for (const c of document.querySelectorAll('button.chip')) c.classList.toggle('active', c.dataset.cat === activeCat);
+  refresh();
 });
 const sortSel = document.getElementById('sort');
 sortSel.value = sortBy in SORTS ? sortBy : 'dl';
 sortBy = sortSel.value;
-sortSel.addEventListener('change', (e) => {
-  sortBy = e.target.value;
-  applySort();
-  syncUrl();
-});
+sortSel.addEventListener('change', (e) => { sortBy = e.target.value; refresh(); });
 
 const fNpm = document.getElementById('fNpm');
 const fNew = document.getElementById('fNew');
@@ -467,15 +507,17 @@ function paintToggles() {
   fNpm.setAttribute('aria-pressed', String(onlyNpm));
   fNew.setAttribute('aria-pressed', String(onlyNew));
 }
-fNpm.addEventListener('click', () => { onlyNpm = !onlyNpm; paintToggles(); applyFilter(); });
-fNew.addEventListener('click', () => { onlyNew = !onlyNew; paintToggles(); applyFilter(); });
+fNpm.addEventListener('click', () => { onlyNpm = !onlyNpm; paintToggles(); refresh(); });
+fNew.addEventListener('click', () => { onlyNew = !onlyNew; paintToggles(); refresh(); });
 
 document.getElementById('clearFilter').addEventListener('click', () => {
   activeCat = 'all'; query = ''; q.value = ''; onlyNpm = false; onlyNew = false;
-  for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c.dataset.cat === 'all');
+  for (const c of document.querySelectorAll('button.chip')) c.classList.toggle('active', c.dataset.cat === activeCat);
   paintToggles();
-  applyFilter();
+  refresh();
 });
+for (const c of document.querySelectorAll('button.chip')) c.classList.toggle('active', c.dataset.cat === activeCat);
+paintToggles();
 
 const live = document.getElementById('live');
 async function copyCmd(btn) {
@@ -518,17 +560,310 @@ document.addEventListener('keydown', (e) => {
 // CLI input: focus selects the whole command
 document.addEventListener('focusin', (e) => { if (e.target.matches('.cli input')) e.target.select(); });
 
-// back to top
+// back to top, and the windowed grid follows the same scroll.
 const toTop = document.getElementById('toTop');
-addEventListener('scroll', () => toTop.classList.toggle('show', scrollY > 600), { passive: true });
+addEventListener('scroll', () => {
+  toTop.classList.toggle('show', scrollY > 600);
+  if (paintQueued) return;
+  paintQueued = true;
+  requestAnimationFrame(() => { paintQueued = false; paint(); });
+}, { passive: true });
 toTop.addEventListener('click', () => scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }));
 
-// restore state from URL on load. applySort() runs only when the request
-// differs from the server-rendered order, so the common case touches no DOM.
-for (const c of document.querySelectorAll('.chip')) c.classList.toggle('active', c.dataset.cat === activeCat);
-paintToggles();
-if (sortBy !== 'dl') applySort();
-applyFilter();
+// Catalog failed to load: keep the baked cards and filter those. The hero
+// counter stays at the full total the build wrote; this count is the slice.
+function bootLegacy() {
+  paint = () => {};
+  dex.classList.add('legacy');
+  dex.style.minHeight = '';
+  dex.style.height = '';
+  const items = [...dex.querySelectorAll('li.card')];
+  const num = (li, k) => (k in li.dataset ? +li.dataset[k] : null);
+  const by = {
+    dl: (a, b) => {
+      const ad = num(a, 'dl'), bd = num(b, 'dl');
+      if ((ad === null) !== (bd === null)) return ad === null ? 1 : -1;
+      if (ad !== null && bd !== null && ad !== bd) return bd - ad;
+      return (num(b, 'stars') ?? -1) - (num(a, 'stars') ?? -1);
+    },
+    stars: (a, b) => (num(b, 'stars') ?? -1) - (num(a, 'stars') ?? -1),
+    new: (a, b) => (a.dataset.added < b.dataset.added ? 1 : a.dataset.added > b.dataset.added ? -1 : 0),
+    name: (a, b) => a.dataset.name.localeCompare(b.dataset.name),
+  };
+  refresh = () => {
+    const frag = document.createDocumentFragment();
+    for (const li of [...items].sort(by[sortBy] || by.dl)) frag.appendChild(li);
+    dex.appendChild(frag);
+    let shown = 0;
+    for (const li of items) {
+      const hit = (activeCat === 'all' || li.dataset.cat === activeCat)
+        && (!query || li.textContent.toLowerCase().includes(query))
+        && (!onlyNpm || 'npm' in li.dataset)
+        && (!onlyNew || li.dataset.added >= cutoff);
+      li.classList.toggle('hidden', !hit);
+      if (hit) shown++;
+    }
+    count.textContent = `${shown} / ${items.length}`;
+    noresult.style.display = shown ? 'none' : 'block';
+    syncUrl();
+  };
+  refresh();
+}
+
+function bootVirtual(data) {
+  const items = data.items.filter((e) => !fixedCat || e.cat === fixedCat);
+  for (const e of items) {
+    e.hay = `${e.owner}/${e.short} ${e.desc || ''} ${e.tag}`.toLowerCase();
+    if (e.stars != null) e.hay += ` ${e.stars}`;
+    if (e.dl != null) e.hay += ` ${e.dl}`;
+  }
+  total.textContent = String(items.length);
+  const fmtNum = (n) => Number(n).toLocaleString('en-US');
+  const mounted = new Map();
+  let view = [];
+  let gen = 0;
+  let rowH = seedRowH;
+  let lastKey = '';
+  const OVERSCAN = 3;
+
+  function hit(e) {
+    return (activeCat === 'all' || e.cat === activeCat)
+      && (!query || e.hay.includes(query))
+      && (!onlyNpm || e.npm)
+      && (!onlyNew || e.added >= cutoff);
+  }
+  function catHref(item) {
+    const i = item.href.indexOf('p/');
+    return (i === -1 ? '/' : item.href.slice(0, i)) + item.cat + '/';
+  }
+  function renderCard(item) {
+    const li = document.createElement('li');
+    li.className = 'card';
+    li.dataset.slug = item.slug;
+    const top = document.createElement('div');
+    top.className = 'top';
+    const h3 = document.createElement('h3');
+    const title = document.createElement('a');
+    title.href = item.href;
+    title.translate = false;
+    const owner = document.createElement('span');
+    owner.className = 'owner';
+    owner.textContent = item.owner + '/';
+    title.append(owner, document.createTextNode(item.short));
+    h3.append(title);
+    top.append(h3);
+    if (item.stars != null) {
+      const stars = document.createElement('span');
+      stars.className = 'stars';
+      stars.translate = false;
+      stars.textContent = String(item.stars);
+      top.append(stars);
+    }
+    if (item.dl != null) {
+      const dl = document.createElement('span');
+      dl.className = 'dl';
+      dl.translate = false;
+      dl.title = data.dlTitle;
+      dl.textContent = fmtNum(item.dl);
+      top.append(dl);
+    }
+    const desc = document.createElement('a');
+    desc.className = 'desc-link';
+    desc.href = item.href;
+    desc.tabIndex = -1;
+    const p = document.createElement('p');
+    p.textContent = item.desc || '';
+    desc.append(p);
+    const foot = document.createElement('div');
+    foot.className = 'foot';
+    const tag = document.createElement('a');
+    tag.className = 'tag';
+    tag.href = catHref(item);
+    tag.textContent = item.tag;
+    const details = document.createElement('details');
+    details.className = 'inst';
+    const summary = document.createElement('summary');
+    summary.setAttribute('aria-haspopup', 'menu');
+    summary.textContent = data.install + ' ▾';
+    const menu = document.createElement('div');
+    menu.className = 'menu';
+    menu.setAttribute('role', 'menu');
+    const market = document.createElement('button');
+    market.type = 'button';
+    market.setAttribute('role', 'menuitem');
+    market.dataset.cmd = 'dsh plugin --profile web add dshmarket';
+    const marketB = document.createElement('b');
+    marketB.textContent = data.market;
+    const marketS = document.createElement('small');
+    marketS.textContent = data.marketHint;
+    market.append(marketB, marketS);
+    const cli = document.createElement('div');
+    cli.className = 'mi-cli';
+    const cliB = document.createElement('b');
+    cliB.textContent = data.cli;
+    const cliSpan = document.createElement('span');
+    cliSpan.className = 'cli';
+    cliSpan.translate = false;
+    const input = document.createElement('input');
+    input.readOnly = true;
+    input.value = item.cmd;
+    input.spellcheck = false;
+    input.setAttribute('aria-label', data.copyLabel);
+    const copy = document.createElement('button');
+    copy.className = 'copy';
+    copy.type = 'button';
+    copy.dataset.cmd = item.cmd;
+    copy.setAttribute('aria-label', data.copyLabel);
+    copy.textContent = data.copy;
+    cliSpan.append(input, copy);
+    cli.append(cliB, cliSpan);
+    menu.append(market, cli);
+    details.append(summary, menu);
+    foot.append(tag, details);
+    li.append(top, desc, foot);
+    return li;
+  }
+  function geometry() {
+    const root = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+    const cs = getComputedStyle(dex);
+    const gap = (parseFloat(cs.getPropertyValue('--dex-gap')) || 1.05) * root;
+    const minCol = (parseFloat(cs.getPropertyValue('--dex-min')) || 19) * root;
+    const width = dex.clientWidth;
+    const cols = Math.max(1, Math.floor((width + gap) / (minCol + gap)));
+    const cardW = (width - gap * (cols - 1)) / cols;
+    const rowCount = view.length ? Math.ceil(view.length / cols) : 0;
+    const stride = rowH + gap;
+    const totalH = rowCount ? rowCount * rowH + (rowCount - 1) * gap : 0;
+    // The hero and filters sit above the list. Measuring the list's document
+    // position is what keeps the window from rendering the wrong rows — a fixed
+    // scroll offset would shift the whole grid by however tall that header is.
+    const listTop = dex.getBoundingClientRect().top + scrollY;
+    const y0 = scrollY - listTop;
+    const y1 = y0 + innerHeight;
+    let startRow = Math.floor(y0 / stride) - OVERSCAN;
+    let endRow = Math.ceil(y1 / stride) + OVERSCAN;
+    if (startRow < 0) startRow = 0;
+    if (endRow > rowCount) endRow = rowCount;
+    if (endRow < startRow) endRow = startRow;
+    // List still entirely below the viewport: keep the first rows mounted so
+    // the grid is not blank when the header is taller than one screen.
+    if (y1 < stride && rowCount) endRow = Math.max(endRow, Math.min(rowCount, OVERSCAN + 1));
+    return {
+      cols, gap, cardW, rowCount, totalH, stride,
+      start: startRow * cols,
+      end: Math.min(view.length, endRow * cols),
+    };
+  }
+  function indexOfSlug(slug) {
+    for (let i = 0; i < view.length; i++) if (view[i].slug === slug) return i;
+    return -1;
+  }
+  paint = (pass = 0) => {
+    if (!dex.clientWidth) return;
+    const g = geometry();
+    // A focused card, or one with its install menu open, stays mounted when it
+    // scrolls out of the window. Unmounting it drops keyboard focus to the body.
+    const keep = [];
+    const active = document.activeElement;
+    const focused = active && active.closest ? active.closest('#dex li.card') : null;
+    const focusedSlug = focused ? focused.dataset.slug : '';
+    if (focusedSlug && indexOfSlug(focusedSlug) >= 0) keep.push(focusedSlug);
+    for (const d of dex.querySelectorAll('details.inst[open]')) {
+      const slug = d.closest('li.card')?.dataset.slug;
+      if (slug && indexOfSlug(slug) >= 0 && !keep.includes(slug)) keep.push(slug);
+    }
+    const key = `${gen}|${g.cols}|${Math.round(g.cardW)}|${rowH}|${g.start}|${g.end}|${keep.join(',')}`;
+    if (key === lastKey) return;
+    lastKey = key;
+    dex.classList.add('virt');
+    dex.style.minHeight = '';
+    dex.style.height = g.totalH + 'px';
+    const need = new Set(keep);
+    for (let i = g.start; i < g.end; i++) need.add(view[i].slug);
+    for (const [slug, node] of mounted) {
+      if (!need.has(slug)) { node.remove(); mounted.delete(slug); }
+    }
+    if (focused && !dex.contains(focused)) document.getElementById('q').focus();
+    const place = (node, i) => {
+      const row = Math.floor(i / g.cols);
+      const col = i % g.cols;
+      node.style.top = (row * g.stride) + 'px';
+      node.style.left = (col * (g.cardW + g.gap)) + 'px';
+      node.style.width = g.cardW + 'px';
+    };
+    const mountAt = (i) => {
+      const item = view[i];
+      let node = mounted.get(item.slug);
+      if (!node) {
+        node = renderCard(item);
+        mounted.set(item.slug, node);
+        dex.appendChild(node);
+      }
+      place(node, i);
+    };
+    for (let i = g.start; i < g.end; i++) mountAt(i);
+    for (const slug of keep) {
+      const i = indexOfSlug(slug);
+      if (i >= 0 && (i < g.start || i >= g.end)) mountAt(i);
+    }
+    // Only grow, and keep growing when a newly mounted card is taller. A
+    // lifetime cap let a long title overlap the next row. Each pass adopts the
+    // current max; the card's own height does not depend on the slot, so this
+    // settles immediately. The pass limit only stops a runaway measurement.
+    let max = 0;
+    for (const node of mounted.values()) if (node.offsetHeight > max) max = node.offsetHeight;
+    if (max > rowH + 1 && pass < 4) {
+      rowH = max;
+      lastKey = '';
+      paint(pass + 1);
+    }
+  };
+  refresh = () => {
+    view = items.filter(hit).sort(SORTS[sortBy] || SORTS.dl);
+    count.textContent = `${view.length} / ${items.length}`;
+    noresult.style.display = view.length ? 'none' : 'block';
+    syncUrl();
+    gen++;
+    lastKey = '';
+    paint();
+  };
+  // Swap only after the window is ready to paint. Clearing first meant a throw
+  // inside render left bootLegacy with an empty list. Observe after that paint
+  // so a failed render never leaves a virtual painter attached to the list.
+  dex.replaceChildren();
+  refresh();
+  // Height changes are ours (the window sets it). Only a width change means the
+  // column count changed; reacting to height would repaint forever. Ignore a
+  // few pixels so a classic scrollbar appearing at a column boundary cannot
+  // flip the column count back and forth.
+  let lastWidth = dex.clientWidth;
+  new ResizeObserver(() => {
+    const w = dex.clientWidth;
+    if (Math.abs(w - lastWidth) < 16) return;
+    lastWidth = w;
+    rowH = seedRowH;
+    lastKey = '';
+    paint();
+  }).observe(dex);
+  addEventListener('pageshow', () => { lastKey = ''; paint(); });
+}
+
+const fallbackHTML = dex.innerHTML;
+fetch(dex.dataset.catalog).then((res) => {
+  if (!res.ok) throw new Error(String(res.status));
+  return res.json();
+}).then((data) => {
+  if (!data || !Array.isArray(data.items)) throw new Error('catalog');
+  try {
+    bootVirtual(data);
+  } catch {
+    dex.classList.remove('virt');
+    dex.style.height = '';
+    dex.style.minHeight = '';
+    dex.innerHTML = fallbackHTML;
+    bootLegacy();
+  }
+}).catch(() => bootLegacy());
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7723c30caf6949b6b95780fb3ed9f6ac"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
