@@ -1,0 +1,6 @@
+url: https://github.com/Helix3781/dsh-backup-manager
+name: Helix3781/dsh-backup-manager
+category: dev
+description:
+  en: Native SwiftUI backup manager for DSH desktop profiles. One-click rollback of package.json, pnpm-lock.yaml and cordis patches, batch backup management with notes, and a dependency-repair flow that re-aligns hand-placed @deepseek-ai core packages (dsh-tools forced to host generation) from the host app.asar, with a full plugin import smoke test.
+  zh: DSH 桌面 profile 的原生备份管理器。一键回滚 package.json、pnpm-lock.yaml 与 cordis 补丁，批量管理备份（备注置顶、改名、回收站式删除），并内置依赖修复流程——从宿主 app.asar 补齐被 pnpm 清掉的手工核心包（dsh-tools 强制宿主同代）并做全插件导入冒烟测试。
