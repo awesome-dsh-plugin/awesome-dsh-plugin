@@ -2,5 +2,5 @@ url: https://github.com/pk14742952-AD/dsh-host-rsi
 name: pk14742952-AD/dsh-host-rsi
 category: agi
 description:
-  en: 'DSH host plugin for local LLMs (Qwen3.8 27B, compatible with Qwen3.8 Flash): per-use continual self-improvement with counter-reason self-checks, critic escalation, inverted-index memory retrieval, coding-loop convergence steering, and a five-state delivery guard.'
-  zh: '面向本地大模型（支持 Qwen3.8 27B，兼容 Qwen3.8 Flash）的 DSH 宿主插件：每次使用持续自进化，带反问式自检、批评升级、倒排索引记忆检索、编码循环收敛提示与五态交付护栏。'
+  en: 'DSH host plugin for local and API LLMs: per-use continual self-improvement with counter-reason self-checks, critic escalation, inverted-index memory retrieval, coding-loop convergence steering, and a five-state delivery guard.'
+  zh: '面向本地与 API 大模型的 DSH 宿主插件：每次使用持续自进化，带反问式自检、批评升级、倒排索引记忆检索、编码循环收敛提示与五态交付护栏。'
