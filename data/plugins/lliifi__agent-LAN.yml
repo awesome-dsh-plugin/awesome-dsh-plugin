@@ -2,5 +2,5 @@ url: https://github.com/lliifi/agent-LAN
 name: lliifi/agent-LAN
 category: remote
 description:
-  en: Peer-to-peer messaging between DSH agents on two machines: Ed25519-signed requests with anti-downgrade, an offline queue with retries, a mailroom that wakes a session on the peer, read-only access to whitelisted folders, and a peer session catalog for delivering a message to one named conversation.
-  zh: 两台电脑上的 DSH agent 点对点通信：Ed25519 签名请求与反降级、离线队列与重试、收发室在对端唤醒一个会话、只读白名单目录，以及会话目录以把消息投进指定的那个对话。
+  en: 'Peer-to-peer messaging between DSH agents on two machines: Ed25519-signed requests with anti-downgrade, an offline queue with retries, a mailroom that wakes a session on the peer, read-only access to whitelisted folders, and a peer session catalog for delivering a message to one named conversation.'
+  zh: '两台电脑上的 DSH agent 点对点通信：Ed25519 签名请求与反降级、离线队列与重试、收发室在对端唤醒一个会话、只读白名单目录，以及会话目录以把消息投进指定的那个对话。'
