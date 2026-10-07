@@ -2,5 +2,5 @@ url: https://github.com/xraywu/dsh-service-monitor
 name: xraywu/dsh-service-monitor
 category: usage
 description:
-  en: 'Monitor the account balance for 3rd-party services those AI agents often uses, such as Tavily, SerpAPI, Firecrawl, etc.'
-  zh: '监控 AI Agents 常用的第三方服务余额，如 Tavily、SerpAPI、Firecrawl 等。'
+  en: 'Monitor the account balance for 3rd-party services those AI agents often use, such as Tavily, SerpAPI, Firecrawl, Bocha, Tinyfish, etc. Optionally you can select to inject the account balance or refill time into the system prompt, so the agent can use the services accordingly.'
+  zh: '监控 AI Agents 常用的第三方服务余额，如 Tavily、SerpAPI、Firecrawl、博查、Tinyfish 等。可选支持将服务的余额或重置时间注入 System Prompt，以便 Agent 合理使用相关服务。'
