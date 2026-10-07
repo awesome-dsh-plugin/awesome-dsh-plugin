@@ -1,0 +1,6 @@
+url: https://github.com/adesbusy/dsh-peak-indicator
+name: adesbusy/dsh-peak-indicator
+category: ui
+description:
+  en: 'A dot beside the Harness wordmark, coloured by the DeepSeek tariff in force — warn for peak, success for off-peak. Hovering it opens a dialog with the next switch in the viewer''s local time, in UTC and as a countdown, plus the standing weekly rule.'
+  zh: '在 Harness 品牌字标旁显示一个圆点，按当前 DeepSeek 峰谷时段着色——高峰为警告色，闲时为成功色。悬停展开对话框，显示下一次切换的本地时间、UTC 时间与倒计时，以及固定的每周规则。'
