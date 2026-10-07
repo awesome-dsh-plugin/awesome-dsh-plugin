@@ -1,0 +1,6 @@
+url: https://github.com/huaizhuanghub/dsh-persona-dafeiyu
+name: huaizhuanghub/dsh-persona-dafeiyu
+category: identity
+description:
+  en: 'Persona library for DeepSeek Harness: injects the selected persona into the system prompt, offering two built-ins plus import from a file or pasted text, applied either profile-wide or per session from a switcher above the composer.'
+  zh: '把选中的人设注入系统提示词的 DeepSeek Harness 插件：内置两套人设，支持从文件导入或粘贴自定义人设，并可按 profile 全局生效或按会话单独选择（输入框上方有切换条）。'
