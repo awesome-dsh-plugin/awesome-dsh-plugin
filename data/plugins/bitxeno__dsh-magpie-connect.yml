@@ -1,0 +1,6 @@
+url: https://github.com/bitxeno/dsh-magpie-connect
+name: bitxeno/dsh-magpie-connect
+category: model
+description:
+  en: 'Magpie LAN gateway provider for DSH: syncs gateway models into the picker with visibility control, image input and thinking levels.'
+  zh: 把 Magpie 局域网网关的模型接入 DSH 选择器，支持模型显隐管理、图片输入与思考档位。
