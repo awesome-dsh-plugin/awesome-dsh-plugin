@@ -1,0 +1,7 @@
+url: https://github.com/SuperWheel/cliworker-now
+name: SuperWheel/cliworker-now
+category: workflow
+description:
+  en: 'Multi-CLI worker sidebar for DeepSeek Harness 0.2.0-rc.2 on macOS, with task dispatch, live conversation views, stop and follow-up controls, and custom role presets.'
+  zh: '适用于 macOS 和 DeepSeek Harness 0.2.0-rc.2 的多 CLI 智能体侧栏插件，提供任务派遣、实时对话查看、停止与续聊及自定义角色预设。'
+tarball: https://github.com/SuperWheel/cliworker-now/releases/download/v0.6.5/dsh-cliworker-now-0.6.5.tgz
