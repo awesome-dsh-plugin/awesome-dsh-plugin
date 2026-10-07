@@ -1,0 +1,7 @@
+url: https://github.com/zhairy/dsh-agent-swarm
+name: zhairy/dsh-agent-swarm
+category: workflow
+tarball: https://github.com/zhairy/dsh-agent-swarm/releases/latest/download/dsh-agent-swarm.tgz
+description:
+  en: 'Chinese multi-agent orchestration: a Tian Shu preset delegates to 12 permission-scoped expert subagents with per-role model fallback chains, rule- and Jev-based triage, evidence gates before acceptance, 7 embedded Jev judgment tools, and in-chat display of the model and provider behind each call.'
+  zh: '中文多智能体编排：「天枢」预设把任务委派给 12 个按权限裁剪工具的专家子智能体，每个角色可配多层模型回退链；规则与 Jev 分流、验收前的证据门禁、7 个内嵌 Jev 判断工具，并在聊天窗口显示每次调用的模型与供应商。'
