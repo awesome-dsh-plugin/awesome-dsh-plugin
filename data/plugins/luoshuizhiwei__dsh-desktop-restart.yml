@@ -1,0 +1,6 @@
+url: https://github.com/luoshuizhiwei/dsh-desktop-restart
+name: luoshuizhiwei/dsh-desktop-restart
+category: dev
+description:
+  en: 'Restarts the whole DeepSeek Harness desktop app from a session-header button, a /restart-desktop slash command, or a Settings row, by handing the relaunch to a detached helper.'
+  zh: '从会话标题栏按钮、/restart-desktop 斜杠命令或设置页入口重启整个 DeepSeek Harness 桌面应用，把重新拉起交给一个分离的 helper。'
