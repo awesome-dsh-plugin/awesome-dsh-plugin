@@ -1,0 +1,6 @@
+url: https://github.com/liceses/dsh-wallpaper-rotator
+name: liceses/dsh-wallpaper-rotator
+category: theme
+description:
+  en: 'Rotates the DSH app background wallpaper from a folder on a timer with cross-fade transitions; falls back to four bundled SVG gradients when no folder is set, and adds background-opacity, wallpaper-dimming, blur and text-shadow controls so panels and text stay readable.'
+  zh: '按设定间隔从指定文件夹轮换 DSH 应用背景壁纸（带交叉淡化）；未配置文件夹时使用随插件分发的 4 张 SVG 渐变壁纸，并提供背景不透明度、壁纸压暗、毛玻璃模糊与文字阴影四个可读性调节，让面板与文字在花哨的图上仍然看得清。'
