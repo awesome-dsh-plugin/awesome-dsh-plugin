@@ -1,0 +1,6 @@
+url: https://github.com/mostkia/dsh-htmlui
+name: mostkia/dsh-htmlui
+category: ui
+description:
+  en: 'Renders agent-authored HTML/CSS/JS inside the conversation as sandboxed iframes, with POST and SSE back to the model and reusable templates.'
+  zh: '璁╂ā鍨嬪啓鍑?HTML/CSS/JS锛屽湪浼氳瘽閲屼互娌欑 iframe 娓叉煋锛屽苟閫氳繃 POST 涓?SSE 涓庢ā鍨嬩簰閫氾紝鏀寔妯℃澘澶嶇敤銆?
