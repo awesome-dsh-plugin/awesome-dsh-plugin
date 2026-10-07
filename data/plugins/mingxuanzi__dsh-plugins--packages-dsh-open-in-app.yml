@@ -1,0 +1,6 @@
+url: https://github.com/mingxuanzi/dsh-plugins/tree/main/packages/dsh-open-in-app
+name: mingxuanzi/dsh-plugins#dsh-open-in-app
+category: tools
+description:
+  en: 'Open the workspace directory in an installed editor, Git GUI, terminal, or file manager, self-contained with the fixes a stock desktop build needs to actually launch them.'
+  zh: '在已安装的编辑器 / Git GUI / 终端 / 文件管理器里打开工作目录，自带官方实现与桌面端修复，点了就能开。'
