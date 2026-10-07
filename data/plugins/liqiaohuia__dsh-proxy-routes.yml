@@ -1,7 +1,7 @@
 url: https://github.com/liqiaohuia/dsh-proxy-routes
 name: liqiaohuia/dsh-proxy-routes
-category: tools
+category: model
 tarball: https://github.com/liqiaohuia/dsh-proxy-routes/releases/download/v0.5.0/dsh-proxy-routes-0.5.0.tgz
 description:
-  zh: "按提供商（账号）分流的 SOCKS5/HTTP 代理池。基于 API 密钥识别账号实现精准分流，支持直连强制旁路与内置联网工具代理热装。配置在 DSH 设置页图形化管理，保存即热生效。"
+  zh: "按提供商（账号）分流的 SOCKS5/HTTP 代理池。基于 API 密钥识别账号实现精准分流，支持绝对直连（无视 DSH 全局代理）与内置联网工具代理热装。配置在 DSH 设置页图形化管理，保存即热生效。"
   en: "Per-provider (account) proxy routing for DSH. SOCKS5/HTTP proxy pool with account-level routing based on API keys. Supports forced direct connections and hot-swapping built-in web tools proxies. Managed via a graphical settings page in DSH."
