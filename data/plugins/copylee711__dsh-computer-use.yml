@@ -1,0 +1,6 @@
+url: https://github.com/copylee711/dsh-computer-use
+name: copylee711/dsh-computer-use
+category: tools
+description:
+  en: 'Computer use for Windows: screenshot, mouse, keyboard, clipboard and window tools with per-app access that goes through DSH approval; while the agent is in control the screen shows an orange glow and a status bar, and Esc pauses or resumes.'
+  zh: 'Windows 电脑控制：截图、鼠标、键盘、剪贴板和窗口工具，按应用授权并经 DSH 审批；操控期间屏幕显示橙色光晕和提示条，按 Esc 暂停或继续。'
