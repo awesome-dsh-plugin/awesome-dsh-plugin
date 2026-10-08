@@ -1,5 +1,5 @@
-url: https://github.com/wowyuarm/dsh-agent-team
-name: wowyuarm/dsh-agent-team
+url: https://github.com/Contexera/dsh-agent-team
+name: Contexera/dsh-agent-team
 category: workflow
 description:
   en: 'A persistent agent team for long-running collaboration in DeepSeek Harness: durable agent identities, per-project Workspaces, responsibility-bearing Channels, and Task Threads chaining session agents.'
