@@ -1,6 +1,0 @@
-url: https://github.com/day-day-dream/dsh-page-refresh
-name: day-day-dream/dsh-page-refresh
-category: ui
-description:
-  en: 'Adds a refresh button to the conversation header in DeepSeek Harness, reloading the current page in one click without losing the conversation. Desktop-first, client-only, zero tokens.'
-  zh: '在 DeepSeek Harness 会话头部加一个刷新按钮，一键原地重载页面且不丢会话数据。桌面端优先、纯客户端、零 token。'
