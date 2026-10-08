@@ -1,0 +1,6 @@
+url: https://github.com/wang6077/dsh-ide-vscode
+name: wang6077/dsh-ide-vscode
+category: ui
+description:
+  en: 'Workspace file tree and code editor in the DSH right sidebar: create files and folders, rename, delete, edit and save with Ctrl+S.'
+  zh: 'DSH 右侧栏里的工作区文件树与代码编辑器：新建文件与文件夹、重命名、删除、编辑并用 Ctrl+S 保存。'
