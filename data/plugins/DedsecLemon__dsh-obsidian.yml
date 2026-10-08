@@ -2,5 +2,5 @@ url: https://github.com/DedsecLemon/dsh-obsidian
 name: DedsecLemon/dsh-obsidian
 category: ui
 description:
-  en: "Your real Obsidian vault in the DSH right Sidebar: vault tree, full-vault search, notes rendered in the reading view's own typography, [[wikilink]] navigation, in-place editing, and a clickable outline."
-  zh: "把你真实的 Obsidian 知识库放进 DSH 右侧栏：目录树、全库搜索、按 Obsidian 阅读视图排版渲染笔记、[[双向链接]]跳转、就地编辑，以及可点击跳转的笔记大纲。"
+  en: 'Your real Obsidian vault in the DSH right Sidebar: the vault tree, full-vault search, notes rendered with read-view typography, wikilink navigation, in-place editing, and a clickable outline.'
+  zh: '把你真实的 Obsidian 知识库放进 DSH 右侧栏：目录树、全库搜索、按阅读视图排版渲染笔记、双向链接跳转、就地编辑，以及可点击跳转的笔记大纲。'
