@@ -1,5 +1,5 @@
-url: https://github.com/liceses/dsh-wallpaper-rotator
-name: liceses/dsh-wallpaper-rotator
+url: https://github.com/liceses/dsh-wallpaper-rotator/tree/main/wallpaper-rotator
+name: liceses/dsh-wallpaper-rotator#wallpaper-rotator
 category: theme
 description:
   en: 'Rotates the DSH app background wallpaper from a folder on a timer with cross-fade transitions; falls back to four bundled SVG gradients when no folder is set, and adds background-opacity, wallpaper-dimming, blur and text-shadow controls so panels and text stay readable.'
