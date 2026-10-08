@@ -1,0 +1,5 @@
+url: https://github.com/djasdh/interest-memory
+name: djasdh/interest-memory
+category: memory
+description:
+  en: 'Cross-session long-term memory backed by a local Go service (~50MB RAM, SQLite-vec + verify-augmented claims): zero-lag recall injection on every user message, session-end transcript ingest, and memory_search / memory_logs / memory_ingest tools. Install with `dsh plugin --profile web add @djasdh/interest-memory-dsh-bridge`.'
