@@ -1,0 +1,6 @@
+url: https://github.com/nnnanann/freeze-content-on-window-resize
+name: nnnanann/freeze-content-on-window-resize
+category: ui
+description:
+  en: 'Freezes the DSH Web GUI reading column at a fixed width and re-aligns the reading position after the window is resized or zoomed.'
+  zh: '固定 DSH Web GUI 的正文列宽度，并在窗口缩放后把阅读位置对回原处。'
