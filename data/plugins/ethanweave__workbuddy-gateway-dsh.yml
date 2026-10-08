@@ -1,0 +1,6 @@
+url: https://github.com/ethanweave/workbuddy-gateway-dsh
+name: ethanweave/workbuddy-gateway-dsh
+category: model
+description:
+  en: "Runs a local OpenAI-compatible gateway so DSH can use the model quota of a logged-in Tencent CodeBuddy (WorkBuddy) account: one-shot installer with SHA256 verification, logon scheduled task with duplicate-launch guard, manage.ps1 for status/start/stop/restart/logs/update/uninstall, and an agent skill that drives setup and troubleshooting."
+  zh: "在本机运行 OpenAI 兼容网关，让 DSH 使用已登录的腾讯 CodeBuddy（WorkBuddy）账号额度：一键安装脚本（含 SHA256 校验）、登录自启计划任务（带防重复启动）、manage.ps1 统一管理（status/start/stop/restart/logs/update/uninstall），并内置指导安装与排障的 Agent 技能。"
