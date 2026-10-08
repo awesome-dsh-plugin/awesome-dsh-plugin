@@ -1,0 +1,6 @@
+url: https://github.com/tom613951/dsh-font-override
+name: tom613951/dsh-font-override
+category: theme
+description:
+  en: 'Configurable interface and code font override: two rows in Settings - General set the interface and code font stacks, persisted to the host settings document, with no config file editing.'
+  zh: '可配置的界面与代码字体覆盖：在「设置 → 通用设置」用两行表单配置界面与代码字体栈，持久化到宿主设置文档，无需编辑任何配置文件。'
