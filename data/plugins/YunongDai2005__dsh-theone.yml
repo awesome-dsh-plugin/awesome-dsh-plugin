@@ -2,5 +2,5 @@ url: https://github.com/YunongDai2005/dsh-theone
 name: YunongDai2005/dsh-theone
 category: session
 description:
-  en: One main chat that routes each message to a per-topic background session with its own context, organizes existing DSH sessions into topic workspaces, and shares progress between related topics.
-  zh: 一个主聊天，把每条消息分到对应话题的后台会话（各自独立上下文），把已有 DSH 会话整理成话题工作区，并在相关话题之间共享进展。
+  en: "Talk about everything in one chat (the main chat): each message is routed automatically to the topic it belongs to, each topic runs in its own background session with its own context, and existing DSH chat history is organized into topics."
+  zh: 所有事在一个对话框（主聊天）里聊：每条消息自动分到所属话题，每个话题在后台有独立的会话和上下文；已有的 DSH 旧会话也会自动整理、分类成话题。
