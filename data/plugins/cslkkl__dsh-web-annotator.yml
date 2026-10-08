@@ -1,0 +1,7 @@
+url: https://github.com/cslkkl/dsh-web-annotator
+name: cslkkl/dsh-web-annotator
+category: browser
+tarball: https://github.com/cslkkl/dsh-web-annotator/releases/download/v0.2.0-alpha.10/dsh-web-annotator-0.2.0-alpha.10.tgz
+description:
+  en: 'Annotate pages inside the existing Harness Browser: click or drag to select, comment or ask, then send marked screenshots or DOM location details to the current session. While enabled it replaces the official Browser, Chat and Layout providers; targets Harness 0.2.0-rc.2.'
+  zh: '在 Harness 原有 Browser 内批注网页：点选或框选后就地评论、提问，可把标记截图或 DOM 定位资料发给当前会话；启用期间替换官方 Browser、Chat 与 Layout 提供方，精确支持 Harness 0.2.0-rc.2。'
