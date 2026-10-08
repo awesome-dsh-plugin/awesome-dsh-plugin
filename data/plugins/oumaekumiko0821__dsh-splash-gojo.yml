@@ -1,5 +1,5 @@
-url: https://github.com/k53689649-lab/dsh-splash-gojo
-name: k53689649-lab/dsh-splash-gojo
+url: https://github.com/oumaekumiko0821/dsh-splash-gojo
+name: oumaekumiko0821/dsh-splash-gojo
 category: ui
 description:
   en: 'Full-screen boot animation for the DSH web client: the boot HTML paints a cover-fit artwork on its first frame, adds a slow settle, a scanning light sweep and a progress HUD, then hands the viewport over when the app mounts. Click or press Esc / space / Enter to skip.'
