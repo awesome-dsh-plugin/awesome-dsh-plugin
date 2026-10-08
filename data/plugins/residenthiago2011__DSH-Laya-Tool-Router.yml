@@ -1,0 +1,5 @@
+url: https://github.com/residenthiago2011/DSH-Laya-Tool-Router
+name: residenthiago2011/DSH-Laya-Tool-Router
+category: tools
+description:
+  en: Hides tool schemas from the model's prefill and reveals one tool at a time through the Laya decision endpoint.
