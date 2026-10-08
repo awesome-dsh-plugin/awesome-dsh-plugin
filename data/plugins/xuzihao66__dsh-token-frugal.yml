@@ -1,0 +1,7 @@
+url: https://github.com/xuzihao66/dsh-token-frugal
+name: xuzihao66/dsh-token-frugal
+category: usage
+tarball: https://github.com/xuzihao66/dsh-token-frugal/releases/latest/download/dsh-token-frugal.tgz
+description:
+  en: 'Cuts session input tokens by compressing tool results at the source on `tools/post-execute`: lossless structure-aware transforms first, then a per-tool head/tail elision that always names a recovery path through the shared spill store; also hides configured tools per agent on `agent/created`. Measured 41.76% fewer prompt tokens over 149 recorded requests, with a bundled script that re-measures any profile.'
+  zh: '在 `tools/post-execute` 处对工具结果做源头压缩以削减会话输入 tokens：先做无损结构化变换，再做按工具的头尾裁剪，且每次裁剪都通过共享 spill store 给出可恢复路径；另可在 `agent/created` 处按 agent 隐藏指定工具。在 149 次真实请求上实测 prompt tokens 减少 41.76%，并附带可复测任意 profile 的测量脚本。'
