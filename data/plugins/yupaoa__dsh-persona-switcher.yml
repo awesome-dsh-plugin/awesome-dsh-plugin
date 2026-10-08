@@ -1,0 +1,6 @@
+url: https://github.com/yupaoa/dsh-persona-switcher
+name: yupaoa/dsh-persona-switcher
+category: identity
+description:
+  en: Switches the running session's persona and speaking style in place with `/role <id>`, replacing the head system prompt without touching tools or skills; roles are plain `ROLE.md` files and each switch is announced in the transcript.
+  zh: 用 `/role <id>` 就地切换当前会话的人设与说话风格，只替换 system prompt 头部，不动工具与技能；角色是角色库里的 `ROLE.md` 纯文本文件，切换后会在会话里声明一次。
