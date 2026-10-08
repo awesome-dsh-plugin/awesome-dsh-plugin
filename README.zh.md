@@ -4495,6 +4495,7 @@ dsh plugin --profile web add dshmarket
 - [luumod/dsh-achievements](https://github.com/luumod/dsh-achievements) — 成就与游戏化插件：按回合、工具调用、会话、连续天数与编码行为（编辑/读取/测试）解锁徽章，带徽章墙、解锁 toast 与 ctx.achievements SDK。
 - [luweiyabo/dsh-whale-pet](https://github.com/luweiyabo/dsh-whale-pet) — DeepSeek Harness Web UI 的精致悬浮鲸鱼桌宠，拥有 95 个分类透明动画、状态感知事件回应、可自定义动作与触发规则，并支持点击互动、拖拽和屏幕漫游。
 - [marvin9551/dynamic-schulte-dsh](https://github.com/marvin9551/dynamic-schulte-dsh) — 动态舒尔特方格等待小游戏：模型思考时，在静态网格或旋转轮盘上按顺序点击 1..N，边玩边等。
+- [Max-Null/dsh-jubensha](https://github.com/Max-Null/dsh-jubensha) — 一个人的剧本杀：AI 当主持人，AI 填满其余的椅子（各自只知道自己的角色本），留一个位子给你 —— 带阶段条、按座位归集的时间线与搜证页，而真相到复盘才解封。
 - [mekos2772/dsh-plugin-mimi](https://github.com/mekos2772/dsh-plugin-mimi) — DSH 的 Mimi 桌面伴侣，跟随工作会话状态显示动画反应和气泡，提供独立聊天模式，并内置 Windows Computer Use 以观察和操作桌面窗口。
 - [MichengAI/dsh-codex-pet](https://github.com/MichengAI/dsh-codex-pet) — DSH Web 页内宠物，提供多会话任务提醒，可打开任务、停止当前轮次，并处理受支持的审批和问答请求。
 - [miku00039-01/dsh-whale-pet](https://github.com/miku00039-01/dsh-whale-pet) — DeepSeek Harness 的鲸鱼娘桌面宠物，一键启动/停止/监测服务，双击唤起 GUI。
