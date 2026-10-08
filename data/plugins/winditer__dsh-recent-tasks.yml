@@ -1,0 +1,6 @@
+url: https://github.com/winditer/dsh-recent-tasks
+name: winditer/dsh-recent-tasks
+category: ui
+description:
+  en: 'An always-last, collapsible Recent tasks workspace group in the DSH sidebar: a sidebar entry and the Mod+Alt+N / Mod+Shift+N shortcut start a chat in a dedicated folder, so it lands in that group instead of 未分组. The group is a genuine workspace record rather than a plugin-drawn look-alike, so collapse, rename, search and drag order behave normally, and its folder, group name, pin-last and auto-repair are live settings.'
+  zh: 'DSH 侧边栏里常驻末位、可折叠的「最近任务」工作区分组：侧边栏入口与 Mod+Alt+N / Mod+Shift+N 快捷键在专用目录里开新对话，对话因此归入这个分组，而不是「未分组」。该分组是真正的工作区记录，而非插件画出来的仿制品，折叠、改名、搜索与拖拽排序都正常可用；目录、分组名、常驻末尾与自动重建都是实时设置。'
