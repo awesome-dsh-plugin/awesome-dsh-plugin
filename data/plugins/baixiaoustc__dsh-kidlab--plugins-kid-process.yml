@@ -1,0 +1,6 @@
+url: https://github.com/baixiaoustc/dsh-kidlab/tree/main/plugins/kid-process
+name: baixiaoustc/dsh-kidlab#kid-process
+category: fun
+description:
+  en: "Processes as little workers: how many, the busiest, the family tree and badges."
+  zh: "进程小工人：数量、谁最卖力、家族树、工牌。"
