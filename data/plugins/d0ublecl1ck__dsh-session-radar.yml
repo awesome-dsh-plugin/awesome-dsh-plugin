@@ -2,5 +2,5 @@ url: https://github.com/d0ublecl1ck/dsh-session-radar
 name: d0ublecl1ck/dsh-session-radar
 category: session
 description:
-  en: 'DSH sidebar hub for unread and waiting Sessions: a host-side ledger keeps unread state across restarts, J/I walk unread and waiting Sessions in order, and a sidebar-foot readout shows six Session counts.'
-  zh: 'DSH 侧边栏的未读 + 待办 + 状态读数中枢：host 半边持有跨重启的账本，J/I 顺序定位未读与等待处理的会话，侧栏底部另有六项会话状态读数。'
+  en: 'Sidebar unread and waiting-on-you hub for DSH Web: a bell jumps to the next unread session, a shortcut walks sessions waiting for input, and one overlay lists unread and pending sessions side by side; a host-side ledger keeps that account across restarts, and a startup dialog offers to re-send a continue message to sessions whose turn was cut off.'
+  zh: 'DSH Web 侧边栏的未读与待办中枢：铃铛按顺序定位未读会话，快捷键依次走到正在等你输入的会话，另有总览把未读与待决策会话分两区铺开；账本落在 host 半边，重启也不丢，启动时还会把上次被切断的会话列成清单，一键重发续跑消息。'
