@@ -1,0 +1,6 @@
+url: https://github.com/ruaibeite/dsh-undo
+name: ruaibeite/dsh-undo
+category: tools
+description:
+  en: 'Turn-level file undo for tool writes and edits: each file is snapshotted before the write lands, and the model can call an undo tool to roll back every file a turn changed.'
+  zh: '按轮次回退工具写入/编辑造成的文件改动：落盘前先快照，模型可调用 undo 工具一次退回一整轮改动过的所有文件。'
