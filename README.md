@@ -96,7 +96,6 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### UI Enhancements
 
-- [dsh-quick-input](https://github.com/cm860712ch-cloud/dsh-quick-input) — A 3×3 quick-phrase pad docked to the left of the composer: click a cell to insert your preset text at the caret. Bilingual (中文 / English).
 - [01Virex/dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator) - Rotates the dsh turn-status label through 1059 bilingual phrases with typewriter output, an animated rainbow gradient, danmaku, 12 toggleable theme packs, live placeholders and tab-title rotation. Two star packs ship disabled by default; the stargazer pack carries one phrase per stargazer, refreshed weekly by a workflow.
 - [0imzero/dsh-workspace-menu](https://github.com/0imzero/dsh-workspace-menu) - Workspace/chat context menu for the DSH home page: pin, rename, open in file explorer, archive, fork, copy, and open in a new window.
 - [0x7A7A6572/dsh-forge-studio#plugin-notes](https://github.com/0x7A7A6572/dsh-forge-studio/tree/main/packages/plugin-notes) - Sticky-notes board for DeepSeek Harness: a sidebar entry opens a Markdown note panel with auto-save, colors, image paste and task-list rendering.
