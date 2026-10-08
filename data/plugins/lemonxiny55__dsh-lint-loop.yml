@@ -2,5 +2,5 @@ url: https://github.com/lemonxiny55/dsh-lint-loop
 name: lemonxiny55/dsh-lint-loop
 category: dev
 description:
-  en: Regression-aware lint repair for DeepSeek Harness; fixes only lint regressions introduced or changed in the current Agent turn, re-lints with a bounded loop, and ignores pre-existing findings.
-  zh: 面向 DeepSeek Harness 的回归感知 lint 修复，只处理 Agent 本轮引入或改变的问题，在有界循环内重新 lint，并忽略历史问题。
+  en: 'Change-aware quality loop for DSH: fast lint feedback and safe regression-only repair, bounded completion checks for lint deltas, TypeScript and impacted Vitest/Jest tests, and a Quality Receipt that separates new regressions from historical debt.'
+  zh: '面向 DSH 的变更感知质量闭环：编辑后快速 lint 反馈与仅针对新增问题的安全修复，完成前有界验证 lint 增量、TypeScript 和受影响的 Vitest/Jest 测试，并生成区分新增回归与历史债务的 Quality Receipt。'
