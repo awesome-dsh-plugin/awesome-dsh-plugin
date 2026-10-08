@@ -1,5 +1,6 @@
 url: https://github.com/residenthiago2011/DSH-Laya-Tool-Router
 name: residenthiago2011/DSH-Laya-Tool-Router
 category: tools
+tarball: https://github.com/residenthiago2011/DSH-Laya-Tool-Router/releases/latest/download/laya-tool-router.tgz
 description:
   en: Hides tool schemas from the model's prefill and reveals one tool at a time through the Laya decision endpoint.
