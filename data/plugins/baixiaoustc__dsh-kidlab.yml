@@ -1,0 +1,6 @@
+url: https://github.com/baixiaoustc/dsh-kidlab
+name: baixiaoustc/dsh-kidlab
+category: fun
+description:
+  en: "A series of seven educational DeepSeek Harness plugins that introduce children to computers and programming: running code, memory, network, storage, security, processes and system monitoring, each showing host tools plus a Web card."
+  zh: "给小朋友的电脑启蒙插件系列：7 个插件，用模型工具加 Web 卡片讲代码运行、内存、网络、存储、安全、进程与系统监控。"
