@@ -1,0 +1,6 @@
+url: https://github.com/guzhou079-arch/dsh-plugin-android-vscreen
+name: guzhou079-arch/dsh-plugin-android-vscreen
+category: remote
+description:
+  en: Launch Android apps on a virtual display and drive them with screen reading, taps and swipes, leaving the main screen untouched.
+  zh: 在虚拟显示器上启动安卓应用，用读屏、点击与滑动驱动它们，主屏不受影响。
