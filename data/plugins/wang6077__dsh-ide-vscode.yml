@@ -2,5 +2,5 @@ url: https://github.com/wang6077/dsh-ide-vscode
 name: wang6077/dsh-ide-vscode
 category: ui
 description:
-  en: 'Workspace file tree and code editor in the DSH right sidebar: create files and folders, rename, delete, edit and save with Ctrl+S.'
-  zh: 'DSH 右侧栏里的工作区文件树与代码编辑器：新建文件与文件夹、重命名、删除、编辑并用 Ctrl+S 保存。'
+  en: 'Workspace file tree and code editor in the DSH right sidebar: browse the workspace of the session it belongs to, create, rename and delete files and folders (to a trash folder by default), edit in place with line numbers and syntax highlighting (Ctrl+S saves, Ctrl+D duplicates the current line), preview images and play audio or video, list and unpack archives or pack a folder into a .zip through the system tar, search by file name or jump by a pasted path, and draw file rows with the icons Windows itself uses (SHGetFileInfo, Windows only).'
+  zh: 'DSH 右侧栏里的工作区文件树与代码编辑器：跟随所在会话的工作区，新建 / 重命名 / 删除文件与文件夹（默认进回收站），带行号与语法高亮地编辑、Ctrl+S 保存、Ctrl+D 复制当前行，可预览图片、播放音频视频、查看并解压压缩包或用系统 tar 打包成 zip，能按文件名搜索或粘贴路径跳转，Windows 下图标用系统自己那套（SHGetFileInfo）。'
