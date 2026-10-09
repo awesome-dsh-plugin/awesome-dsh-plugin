@@ -1,0 +1,6 @@
+url: https://github.com/weimingyu9312/DSHDirect
+name: weimingyu9312/DSHDirect
+category: tools
+description:
+  en: "Direct MCP client and manager for DeepSeek Harness that runs every connection in a separate child process and never registers MCP tools into the host tool runtime (the built-in dsh-mcp-client registers them and OOM-crashes the Desktop host): add, probe, list, schema, call and remove streamable-http / stdio servers from a shared CLI and a Settings-page UI, with one servers.json, generated <name>-mcp commands and per-server skills."
+  zh: '为 DeepSeek Harness 打造的直连 MCP 客户端与管理器：所有连接在独立子进程中完成、绝不向宿主工具运行时注册任何 MCP 工具（内置 dsh-mcp-client 会注册并导致桌面宿主 OOM 崩溃）；CLI 与设置页界面共用同一份 servers.json，支持增删、探活、列表、schema、调用 streamable-http / stdio 服务器，并自动生成 <name>-mcp 命令与每台服务器的专属技能。'
