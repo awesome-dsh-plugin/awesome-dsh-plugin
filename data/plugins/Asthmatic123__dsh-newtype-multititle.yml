@@ -1,0 +1,6 @@
+url: https://github.com/Asthmatic123/dsh-newtype-multititle
+name: Asthmatic123/dsh-newtype-multititle
+category: ui
+description:
+  zh: "DSH 自由工作台插件：把对话区变成 tab 化、可自由分栏的多会话工作台。基于 trellis 的拖拽 dock（拖 tab 到边缘分栏、并入、双击聚焦），布局自动持久化；每个窗格都是宿主 conversation.content factory 渲染的原版对话框（markdown / 工具卡 / 输入框），不是自绘投影；另有产出物右栏、内置浏览器 tab、文件只读窗格与对话/轨迹切换。"
+  en: "Free-form workbench for DSH: turn the conversation area into a tabbed, freely splittable multi-session workspace. trellis-powered drag dock (drag tabs to edges to split, center to merge, double-click to zoom) with persistent layout. Every pane hosts the real native conversation via the host conversation.content factory (markdown / tool cards / composer), plus an artifacts rail, built-in browser tab, read-only file panes, and chat/trace switching."
