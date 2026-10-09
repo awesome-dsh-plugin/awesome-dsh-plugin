@@ -1,0 +1,6 @@
+url: https://github.com/westanke/dsh-remote-bridge
+name: westanke/dsh-remote-bridge
+category: remote
+description:
+  en: 'Turns the private remote protocol of DeepSeek Harness into a versioned REST API, so native clients such as the Android companion app can chat, work with files and manage device permissions while away from the machine; the desktop side adds a Phone-settings panel with an app-download QR code inside the DSH WebUI.'
+  zh: '把 DSH 内核的私有 remote 协议翻译成版本化 REST 接口，让 Android 伴侣端等原生客户端在离开电脑后仍能聊天、处理文件、管理设备权限；桌面端在你的 DSH 设置里提供「手机设置」，含扫码下载 App。'
