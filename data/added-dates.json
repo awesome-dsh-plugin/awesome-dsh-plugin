@@ -517,5 +517,11 @@
  "https://github.com/yunxiiQwQ/dsh-maid-whale-UI/tree/main/maid-whale-webui": "2026-08-15",
  "https://github.com/pgmi-builds/better-dsh/tree/main/better-dsh": "2026-08-29",
  "https://github.com/inclusionAI/Avernet/tree/dev/apps/bcs/crates/plugins/deepseek-harness-channel-bcn": "2026-09-03",
- "https://github.com/BOWLUNA/dsh-custom-mode": "2026-09-18"
+ "https://github.com/BOWLUNA/dsh-custom-mode": "2026-09-18",
+ "https://github.com/FNOSP/fnos-dsh/tree/main/plugins/dsh-codebuddy-plugin": "2026-09-08",
+ "https://github.com/FNOSP/fnos-dsh/tree/main/plugins/dsh-codex-auth-plugin": "2026-09-02",
+ "https://github.com/FNOSP/fnos-dsh/tree/main/plugins/dsh-fnos-plugin": "2026-09-18",
+ "https://github.com/FNOSP/fnos-dsh/tree/main/plugins/dsh-semi-ui-showcase-plugin": "2026-09-18",
+ "https://github.com/OMSociety/dsh-kimi-ppt": "2026-09-04",
+ "https://github.com/dpskk2/dsh-chatsync": "2026-09-10"
 }

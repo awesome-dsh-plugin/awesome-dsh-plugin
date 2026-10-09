@@ -1,0 +1,6 @@
+url: https://github.com/lilcandi/dsh-any-background-plus
+name: lilcandi/dsh-any-background-plus
+category: theme
+description:
+  en: "An enhanced fork of dsh-any-background. Its own work, from v0.4.0 onward, adds a dual-lane wallpaper: the same picture down each side of the window, split at the exact centre so the wallpaper stays visible beside the conversation column. Each lane can also read its own folder (one directory per side) while sharing a single rotation cadence and mode, and both lanes take identical edge feathering."
+  zh: "dsh-any-background 的增强分支。v0.4.0 起的改动为本 fork 自作，新增左右双图轮播：同一轮播在窗口两侧各推进一步，以绝对中心为分界，壁纸不再被会话区完全挡住。两条车道还可各读一个文件夹（左右各一），共用同一轮播频率与模式，左右边缘淡化效果完全一致。"

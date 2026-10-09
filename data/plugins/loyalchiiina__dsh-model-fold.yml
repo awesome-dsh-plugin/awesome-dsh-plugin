@@ -1,6 +1,7 @@
 url: https://github.com/loyalchiiina/dsh-model-fold
 name: loyalchiiina/dsh-model-fold
 category: model
+tarball: https://github.com/loyalchiiina/dsh-model-fold/releases/download/v0.4.7/dsh-model-fold-0.4.7.tgz
 description:
-  en: 'Groups the model picker by provider: the menu lists sources first, and each source opens its models in a slide-in side panel (default) or inline below the title, switchable by double-clicking the source title.'
-  zh: '把模型选择菜单按来源（provider）分组：菜单先列出来源，点来源从右侧滑出子面板列出该来源的全部模型（默认），双击来源标题可切换为在列表内就地展开。'
+  en: 'Groups the DSH model picker by provider: the menu lists sources with their model counts, and clicking a source slides that provider''s models out in a side panel (default) or expands them inline below the title, switchable by double-clicking the source title. The active model stays visible at a glance. Pure DOM enhancement with zero intrusion - the panel is plugin-owned DOM mounted on body and selection happens by programmatically clicking the real menu buttons, so no React-managed node is moved or removed, keeping the host rendering intact and coexisting with other UI plugins. Styling follows the host by reusing the official --dsw-* theme tokens, with an enforced opaque background, sufficient contrast, and one shared set of sizing and colour tokens for both menu levels. No network access and no telemetry. Built for DSH kernel 2.0.15-next.'
+  zh: '把 DSH 模型选择器按来源（provider）分组：菜单只列来源与其模型数，点来源在右侧滑出该来源的模型子面板（默认），或改为在列表内就地展开，双击来源标题即可切换；当前使用的模型一眼可见。纯 DOM 增强、零侵入——面板是插件自建 DOM 并挂载到 body，选择通过程序化点击原菜单真实按钮完成，不移动也不删除任何 React 管理的节点，因此不影响原组件渲染，并能与其他 UI 插件共存。配色与排版跟随宿主：复用官方 --dsw-* 主题变量，背景保证不透明、对比度充足，来源清单与子集清单共用同一套尺寸与色值令牌。不联网、无遥测。适配 DSH 内核 2.0.15-next。'

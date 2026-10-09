@@ -1,5 +1,5 @@
-url: https://github.com/tnnevol/fn-os-apps/tree/main/plugins/dsh-codebuddy-plugin
-name: tnnevol/fn-os-apps#dsh-codebuddy-plugin
+url: https://github.com/FNOSP/fnos-dsh/tree/main/plugins/dsh-codebuddy-plugin
+name: FNOSP/fnos-dsh#dsh-codebuddy-plugin
 category: model
 description:
   en: 'Tencent CodeBuddy model provider for DeepSeek Harness that signs in with browser OAuth instead of an API key, lists the CodeBuddy model catalog with the context, output, tool-calling, reasoning and image capabilities of each model, keeps multiple accounts with automatic failover to the next usable one, shows remaining quota in the composer with a token and credit usage panel, and completes automatable CodeBuddy growth tasks per account with an execution log. Install from npm with `dsh plugin --profile web add @tnnevol/dsh-codebuddy`.'
