@@ -2,5 +2,5 @@ url: https://github.com/yang1604454533-netizen/dsh-ASD-100
 name: yang1604454533-netizen/dsh-ASD-100
 category: docs
 description:
-  en: 'Forces ASD-STE100 Simplified Technical English on every reply and every document. Commands: /ste on, /ste off, /ste.'
-  zh: '强制所有回复和文档按 ASD-STE100 简化技术英语输出。命令：/ste on、/ste off、/ste。'
+  en: 'Forces ASD-STE100 Simplified Technical English on every reply and every document. Commands: /asd100 on, /asd100 off, /asd100.'
+  zh: '强制所有回复和文档按 ASD-STE100 简化技术英语输出。命令：/asd100 on、/asd100 off、/asd100。'
