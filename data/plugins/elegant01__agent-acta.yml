@@ -1,0 +1,6 @@
+url: https://github.com/elegant01/agent-acta
+name: elegant01/agent-acta
+category: dev
+description:
+  en: 'Local AI-agent request-log panel: aggregates local logs from atomcode, codebuddy, workbuddy, claude, codex, codearts, gemini, cursor, kimi and dsh, and shows per-round latency, tokens, cache, context and tool calls.'
+  zh: '本地 AI agent 请求日志面板：聚合 atomcode、codebuddy、workbuddy、claude、codex、codearts、gemini、cursor、kimi、dsh 等本地日志，查看每轮耗时、token、缓存、上下文与工具调用。'
