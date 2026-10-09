@@ -1,0 +1,6 @@
+url: https://github.com/yijiezhong/dsh-testhud
+name: yijiezhong/dsh-testhud
+category: tools
+description:
+  en: On-screen test-progress HUD for DSH — a click-through panel over the app under test showing each step's expectation vs actual, and whether the waiting human may take back the mouse and keyboard.
+  zh: 把自动测试的进展画在被测界面之上的浮层：每步的期待与实际，以及等待的人现在能不能动鼠标键盘。
