@@ -1,0 +1,6 @@
+url: https://github.com/agi321/dsh-temp-chat
+name: agi321/dsh-temp-chat
+category: session
+description:
+  en: 'Runs /single-turn and /multi-turn answers in isolated sub-agents so results stay in the current chat and never enter the main model context.'
+  zh: '用 /single-turn 与 /multi-turn 在独立子代理中作答，结果只留在当前对话，不进入主模型上下文。'
