@@ -1,0 +1,6 @@
+url: https://github.com/mazov2love/dsh-remote-control        # must match the repo exactly / 必须与仓库完全一致
+name: mazov2love/dsh-remote-control                          # link text shown in the list / 列表中显示的链接文字
+category: agi                              # see the category list below / 见下方分类列表
+description:
+  en: Let Agents directly control independent local DSH instances with zero intrusion—no plugins or components required on the target. Isolated environments enable autonomous configuration and testing, while Agents with different models and personalities can chat, role-play, or form nested control chains. Supports conversational setup, user-like operations, incremental reading, saved references, and remote session/workspace search.
+  zh: 为 Agent 提供直接操控本机完整 DSH 实例的能力：目标 DSH 无需安装任何插件或额外组件，零侵入，环境隔离便于用户直接让agent为另一环境进行修改配置到自主测试,也能让不同模型、不同人格的 Agent 互相聊天、角色扮演或层层套娃，探索趣味玩法，可通过对话由 Agent 自主配置连接，并支持接近用户的操作语义、增量读取、引用保存以及远端会话与工作区搜索。
