@@ -1,5 +1,5 @@
-url: https://github.com/ethanweave/workbuddy-gateway-dsh
-name: ethanweave/workbuddy-gateway-dsh
+﻿url: https://github.com/ethanweave/dsh-connect-workbuddy
+name: ethanweave/dsh-connect-workbuddy
 category: model
 description:
   en: "Runs a local OpenAI-compatible gateway so DSH can use the model quota of a logged-in Tencent CodeBuddy (WorkBuddy) account: one-shot installer with SHA256 verification, logon scheduled task with duplicate-launch guard, manage.ps1 for status/start/stop/restart/logs/update/uninstall, and an agent skill that drives setup and troubleshooting."
