@@ -1,0 +1,6 @@
+url: https://github.com/zi7tian/dsh-deepseek-billing-period
+name: zi7tian/dsh-deepseek-billing-period
+category: tools
+description:
+  en: 'DeepSeek API billing-period chip in the composer dock: shows whether the current time is peak or off-peak with a countdown to the next rate switch, opens the peak/off-peak window rules on click, and during peak hours intercepts sending to ask for confirmation first.'
+  zh: '在输入框下方显示 DeepSeek API 当前计费时段（高峰/空闲）与距下次切换的倒计时，点击可展开高峰/空闲时段规则；高峰时段发送消息前会先拦截并弹出确认。'
