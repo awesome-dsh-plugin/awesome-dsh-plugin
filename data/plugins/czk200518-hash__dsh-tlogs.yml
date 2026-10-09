@@ -1,0 +1,6 @@
+url: https://github.com/czk200518-hash/dsh-tlogs
+name: czk200518-hash/dsh-tlogs
+category: usage
+description:
+  en: "Sidebar footer token meter. Merges the DeepSeek platform account's usage and cost figures with local session logs day by day, so the official channel is counted once and third-party providers stay visible, and shows all-time, current-project, today, week and month totals in a compact bar, an expandable panel and a detail dialog with calendar, chart, model and provider tabs."
+  zh: "侧边栏页脚的 Token 用量组件：把 DeepSeek 平台账号的用量/金额与本机会话日志逐日合并（官方通道只计一次，第三方供应商不丢），显示总消耗、当前项目、今日、当周、当月，形态为紧凑条、展开面板，以及含日历/图表/模型/供应商页签的详细数据弹窗。"
