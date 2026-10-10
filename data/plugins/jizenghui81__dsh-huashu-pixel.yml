@@ -1,0 +1,7 @@
+# Re-checked after the 24h repository-age bar cleared (repo created 2026-10-03T07:09:52Z).
+url: https://github.com/jizenghui81/dsh-huashu-pixel
+name: jizenghui81/dsh-huashu-pixel
+category: theme
+description:
+  en: 'Warm pixel theme for the DSH Web UI: cream-paper and arcade-phosphor palettes, hard-edged pixel chrome with bundled pixel fonts, CRT motion on streaming and state changes, three intensity tiers, and a pixel loading bar while a turn runs.'
+  zh: 'DSH Web 界面的暖调像素主题：亮色暖米白纸面、暗色街机磷光；方角硬描边与偏移投影的像素控件、随包发布的像素字体，流式输出与状态变化带方块光标、扫描线与硬切闪帧；强度（轻/标准/浓）、动效、扫描线、像素字体四组档位在「设置 → 通用」里切换，输出时输入框上沿有一条像素加载条。'
