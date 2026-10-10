@@ -1,0 +1,6 @@
+url: https://github.com/WenOwen/dsh-your-turn
+name: '@wu5/dsh-your-turn'
+category: notify
+description:
+  en: 'Turn-handoff reminders in the DSH Web UI with a modal or top banner, six browser-synthesized chimes, configurable auto-dismiss, and a sidebar speaker toggle with an unread session list.'
+  zh: 'DSH Web 界面的回合交接提醒：居中弹窗或顶部横幅、六种浏览器合成提示音、可配置自动消失，以及带未读会话列表的侧栏喇叭开关。'
