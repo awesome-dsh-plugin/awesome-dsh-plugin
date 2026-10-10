@@ -1,0 +1,6 @@
+url: https://github.com/miiy/dsh-terminal-keybar
+name: miiy/dsh-terminal-keybar
+category: ui
+description:
+  en: On touch devices, supplies the keys a phone's soft keyboard lacks (Escape, Tab, Enter, Ctrl-C and the arrow keys) as a translucent on-screen column beside the active terminal.
+  zh: 在触屏设备上补齐手机软键盘缺少的按键（Esc、Tab、回车、Ctrl-C、方向键），以半透明按键列浮在活动终端旁。
