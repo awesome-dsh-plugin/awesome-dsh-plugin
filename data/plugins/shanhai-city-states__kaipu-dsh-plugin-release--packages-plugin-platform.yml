@@ -1,0 +1,6 @@
+url: https://github.com/shanhai-city-states/kaipu-dsh-plugin-release/tree/main/packages/plugin-platform
+name: shanhai-city-states/kaipu-dsh-plugin-release#plugin-platform
+category: workflow
+description:
+  en: 'An audit workspace for DeepSeek Harness: a multi-agent consultation venue where each review seat is filled by an agent, every judgment is routed to a named review face, and the whole run is kept as a traceable record.'
+  zh: '为 DeepSeek Harness 提供多人会商审校的「场地」——每个审核席位由一个 Agent 承担，判定逐面路由，全程留痕可回看。'
