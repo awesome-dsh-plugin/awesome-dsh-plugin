@@ -1,0 +1,7 @@
+url: https://github.com/samirliu/dsh-goalloop-agentteams
+name: samirliu/dsh-goalloop-agentteams
+category: agi
+tarball: https://github.com/samirliu/dsh-goalloop-agentteams/releases/download/v0.6.1/dsh-goalloop-agentteams-0.6.1.tgz
+description:
+  en: 'Deterministic goal-completion gate for DSH: a contract-first AC grammar with named failable check commands, a gate that re-runs every check itself (zero model trust), verdicts bound to a tree digest so file changes void passing verdicts, and a hard deny on false completion at update_goal via tools/pre-execute with a false-complete counter that blocks after two catches; scope-aware task-level claim handling (strict or goal-only) keeps multi-task Agent Teams loops from deadlocking.'
+  zh: '面向 DeepSeek Harness 的确定性目标门控插件：契约先行的 AC 文法（每条检查都是可失败的具名命令），门控自己重跑每条检查、零模型参与；verdict 绑定文件树摘要，文件改动即作废已过审结论；通过 tools/pre-execute 硬拦 update_goal 的完成声明，配合假完成计数，两次被抓住即 BLOCKED；任务级完成声明按作用域分级（strict/goal-only），多任务 Agent Teams 循环不会死锁。'
