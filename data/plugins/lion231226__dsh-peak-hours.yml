@@ -1,0 +1,7 @@
+url: https://github.com/lion231226/dsh-peak-hours
+name: lion231226/dsh-peak-hours
+category: usage
+tarball: https://github.com/lion231226/dsh-peak-hours/releases/download/v0.1.1/dsh-peak-hours-0.1.1.tgz
+description:
+  en: 'A composer switch between running always and running only in off-peak hours. In off-peak mode every task, including one already running, is held at its next agent step or tool dispatch when a Beijing peak window starts (Monday to Friday 09:00-12:00 and 14:00-18:00, statutory holidays excluded), and one timer releases it at the boundary; weekends and holidays are idle all day. The holiday calendar lists every statutory day off in 2025 and 2026 from the State Council notices, and a year with no data is reported as unknown rather than assumed to be a workday.'
+  zh: '在「全天运行」与「仅空闲时段运行」之间切换。选择空闲模式后，所有任务（含正在运行的）在进入北京高峰时段（周一至周五 09:00-12:00、14:00-18:00，法定节假日除外）时，会在下一个 agent 步进或工具分发边界被扣住，并由一个定时器在边界时刻精确放行；周末与法定节假日全天为空闲。内置 2025、2026 年国务院办公厅公布的逐日放假数据，无数据的年份如实标为未知，而不是默认按工作日处理。'
