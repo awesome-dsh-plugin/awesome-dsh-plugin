@@ -1,0 +1,7 @@
+url: https://github.com/LingYingNX/dsh-codex-parity
+name: LingYingNX/dsh-codex-parity
+category: git
+description:
+  en: 'Codex-style Git panel for DeepSeek Harness: a header button opens a menu with commit, push, branch switching and creation, and repository initialization; shows the current branch and the total additions and deletions of uncommitted files.'
+  zh: '为 DeepSeek Harness 提供 Codex 风格的 Git 面板：会话头部按钮打开菜单，提供提交、推送、切换分支、创建并切换与初始化仓库；显示当前分支与未提交文件的总增减。'
+tarball: https://github.com/LingYingNX/dsh-codex-parity/releases/latest/download/dsh-codex-parity-0.1.0.tgz
