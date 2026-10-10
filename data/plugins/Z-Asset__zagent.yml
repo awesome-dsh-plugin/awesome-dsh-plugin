@@ -1,0 +1,6 @@
+url: https://github.com/Z-Asset/zagent
+name: Z-Asset/zagent
+category: workflow
+description:
+  en: Zagent — unified three-role self-improvement loop with three operators. Data-RSI (daily cross-sectional cleaning: winsorize → cross-sectional standardization → median fill, plus experience extraction), Harness-RSI (evolves system prompt / memory / skills), and Model-RSI (evolves alpha training recipes via framework-native walk-forward with 2-day gap and multi-seed). Offline one-command run, GPU auto-detect. Ships one skill.
+  zh: Zagent——统一 RSI 三角色自改进闭环框架，三个算子：Data-RSI（逐日截面清洗：去极值→截面驻日标准化→中位数填充，加经验提取）、Harness-RSI（进化系统提示词/记忆/技能）、Model-RSI（进化 alpha 训练配方，框架内置 walk-forward，含 2 天空白与多 seed）。离线一条命令跑，GPU 自动走 CUDA。附带一个 skill。
