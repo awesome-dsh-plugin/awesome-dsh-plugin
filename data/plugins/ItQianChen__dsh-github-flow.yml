@@ -1,0 +1,6 @@
+url: https://github.com/ItQianChen/dsh-github-flow
+name: ItQianChen/dsh-github-flow
+category: git
+description:
+  en: 'Wraps the local GitHub CLI (gh) in five agent tools for pull requests, issues, Actions runs, repository search and raw API calls, plus /gh status and /gh help slash commands and two web panels (a global repository cockpit and a per-session workspace panel).'
+  zh: '把本机 GitHub CLI (gh) 包装成五个 Agent 工具：PR、Issue、Actions 运行、仓库检索与原始 API 调用；另提供 /gh status 与 /gh help 两个斜杠命令，以及全局仓库驾驶舱和会话工作区两个 Web 面板。'
