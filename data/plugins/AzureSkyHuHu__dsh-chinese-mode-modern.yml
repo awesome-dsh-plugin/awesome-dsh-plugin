@@ -1,0 +1,6 @@
+url: https://github.com/AzureSkyHuHu/dsh-chinese-mode-modern
+name: AzureSkyHuHu/dsh-chinese-mode-modern
+category: ui
+description:
+  en: Adds a Chinese-mode toggle beside the composer that opens a panel for switching reply, reasoning, and tool-narration language, persisted in the profile.
+  zh: 在输入框左侧加一个中文模式开关，点开可分别切换回复、思考与工具说明的语言，配置随 profile 持久化。
