@@ -44,6 +44,9 @@ const tarballVerdicts = fs.existsSync(TARBALLS_FILE) ? JSON.parse(fs.readFileSyn
 // parsed out of the READMEs, which carry no file path; the added-date
 // derivation below needs one to ask git when an entry first appeared.
 const entryFiles = Object.fromEntries(readEntries().map((e) => [e.url, e.file]))
+// url -> author-declared target Profile (data/plugins/*.yml `profile:`). Absent
+// means `web`, the Profile ordinary plugins extend.
+const profileMap = Object.fromEntries(readEntries().filter((e) => e.profile).map((e) => [e.url, e.profile]))
 const tarballMap = Object.fromEntries(
   readEntries()
     .filter((e) => {
@@ -425,15 +428,17 @@ for (const e of ordered) {
   const repoPath = e.url.replace('https://github.com/', '')
   e.repo = repoPath.split('/').slice(0, 2).join('/')
   e.sub = repoPath.includes('/tree/') ? repoPath.split('/tree/')[1].replace(/^[^/]+\//, '') : null
+  e.profile = profileMap[e.url] ?? 'web'
+  e.cmdAdd = `dsh plugin --profile ${e.profile} add`
   e.cmdGit = e.sub
-    ? `dsh plugin --profile web add github:${e.repo}#path:/${e.sub}`
-    : `dsh plugin --profile web add github:${e.repo}`
+    ? `${e.cmdAdd} github:${e.repo}#path:/${e.sub}`
+    : `${e.cmdAdd} github:${e.repo}`
   e.npm = npmMap[e.url]?.npm ?? null
   // Optional author-declared prebuilt release tarball (data/plugins/*.yml).
   // Some plugins ship only a built tarball and are not installable from
   // source at all, so `github:owner/repo` would hand users a broken command.
   e.tarball = tarballMap[e.url] ?? null
-  e.cmdTarball = e.tarball ? `dsh plugin --profile web add "${e.tarball}"` : null
+  e.cmdTarball = e.tarball ? `${e.cmdAdd} "${e.tarball}"` : null
   e.stars = starsMap[e.url]?.stars ?? null
   // Last-30-days npm downloads (probe-downloads.mjs), null for the ~60% of
   // entries with no npm package at all — a coverage gap, not a zero.
@@ -508,7 +513,7 @@ function ranked(only) {
 // The install command the card shows. npm when the entry has a package, otherwise
 // the github: spec. Kept next to the catalog so the two cannot drift.
 function cardCmd(e) {
-  return e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit
+  return e.npm ? `${e.cmdAdd} ${e.npm}` : e.cmdGit
 }
 
 // download-ranked card grid; `only` limits to one category (category pages).
@@ -906,9 +911,11 @@ for (const loc of LOCALES) {
     ].filter(Boolean).join('\n        ')
 
     const cmds = []
-    if (e.npm) cmds.push({ cmd: `dsh plugin --profile web add ${e.npm}`, note: loc.strings.NPM_C })
+    if (e.npm) cmds.push({ cmd: `${e.cmdAdd} ${e.npm}`, note: loc.strings.NPM_C })
     if (e.cmdTarball) cmds.push({ cmd: e.cmdTarball, note: loc.strings.TGZ_C })
     cmds.push({ cmd: e.cmdGit, note: loc.strings.GH_C })
+    // A standalone Profile is started on its own; installing it leaves `web` untouched.
+    if (e.profile !== 'web') cmds.push({ cmd: `dsh --profile ${e.profile}`, note: loc.strings.PROFILE_C })
     const install = cmds.map(({ cmd, note }) => `<p class="note" style="margin:.2rem 0 .45rem"># ${note}</p>
     <div class="cmd"><pre translate="no">${esc(cmd)}</pre><button type="button" data-cmd="${esc(cmd)}" aria-label="${loc.COPY_LABEL}">${loc.COPY_TEXT}</button></div>`).join('\n    ')
 
@@ -1130,7 +1137,11 @@ const registry = {
         capabilityRedLines: capabilitiesMap[e.url].redLines,
         capabilityCheckedAt: capabilitiesMap[e.url].scannedAt,
       }),
-      install: e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit),
+      install: e.npm ? `${e.cmdAdd} ${e.npm}` : (e.cmdTarball ?? e.cmdGit),
+      // The Profile `install` targets, when it is not `web`: the package is a
+      // standalone Profile and must not be added to the user's main one.
+      // Omitted for ordinary plugins, like `tarball`.
+      profile: e.profile === 'web' ? undefined : e.profile,
       added: e.added,
       // Optional, author-maintained (data/screenshots.json); omitted when
       // absent so the payload stays lean. Storefronts fall back to their own
