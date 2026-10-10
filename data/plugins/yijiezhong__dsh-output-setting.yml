@@ -1,0 +1,6 @@
+url: https://github.com/yijiezhong/dsh-output-setting
+name: yijiezhong/dsh-output-setting
+category: usage
+description:
+  en: 'Auto-expand reasoning and tool cards, tune code-block font size and line spacing, and choose the model output language (auto, Chinese or English).'
+  zh: '自动展开思考与工具卡片，调整代码块字号与行距，并可选择模型输出语言（自动、中文或 English）。'
