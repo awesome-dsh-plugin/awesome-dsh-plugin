@@ -1,0 +1,5 @@
+url: https://github.com/ags-neto/dsh-status-telemetry
+name: ags-neto/dsh-status-telemetry
+category: ui
+description:
+  en: Adds a session status pill to the composer dock that expands into a panel of turn, token, performance and context readings.
