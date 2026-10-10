@@ -1,0 +1,6 @@
+url: https://github.com/Yansera/dsh-living-memoir
+name: Yansera/dsh-living-memoir
+category: memory
+description:
+  en: 'Cross-session memory kept as a short Markdown living document that is rewritten in full at the end of every turn, written to by model tools, the page, and automatic rewriting alike.'
+  zh: '把跨会话记忆写成一份简短可读的 Markdown 活文档，每轮对话结束后整个重写；模型工具、页面手写与自动改写都写进同一批文件。'
