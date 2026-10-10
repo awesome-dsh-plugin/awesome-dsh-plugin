@@ -1,0 +1,5 @@
+url: https://github.com/first-fluke/oh-my-agent/tree/main/integrations/dsh
+name: first-fluke/oh-my-agent#dsh
+category: dev
+description:
+  en: Runs project OMA checks before and after tool execution and when a turn tries to finish.
