@@ -1,0 +1,6 @@
+url: https://github.com/youbaiyun/dsh-browser-crossplatform
+name: youbaiyun/dsh-browser-crossplatform
+category: browser
+description:
+  en: 'Connects the dsh browser extension to the desktop app, giving the model browser_* tools that read and operate the page you are already on, plus optional on-demand image recognition.'
+  zh: '把 dsh 浏览器扩展接到桌面端：模型获得 browser_* 工具，直接读取和操作你正在用的页面，另有可选的按需看图能力。'
