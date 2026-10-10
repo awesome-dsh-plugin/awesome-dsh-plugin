@@ -1,0 +1,7 @@
+url: https://github.com/3ChatAI-NCT/3chatai-deepseek-harness-plugin
+name: 3ChatAI-NCT/3chatai-deepseek-harness-plugin
+category: tools
+tarball: https://github.com/3ChatAI-NCT/3chatai-deepseek-harness-plugin/releases/latest/download/3chat-customer-growth.tgz
+description:
+  en: 'Connect DeepSeek Harness to 3Chat via OAuth for customer and conversation search, context retrieval, confirmed messaging, and batch-send tracking.'
+  zh: '通过 OAuth 将 DeepSeek Harness 接入 3Chat，查询客户与会话、读取沟通上下文、确认后发送消息并跟踪批次进度。'
