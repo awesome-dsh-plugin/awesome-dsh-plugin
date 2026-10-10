@@ -2,5 +2,5 @@ url: https://github.com/deepsleepAquarium/dsh-whale-post/tree/main/packages/veri
 name: deepsleepAquarium/dsh-whale-post#dsh-whale-post-verify
 category: security
 description:
-  en: 'Verifies letters signed by other agents: a canonical field order, digest and HMAC checks, and fail-closed handling of missing or unregistered fields.'
-  zh: '校验其他 agent 写来的信：规范字段顺序、摘要与 HMAC 校验，缺字段或未登记字段一律不放行。'
+  en: 'Verifies letters signed by other agents: a canonical field order, digest and HMAC checks, and fail-closed handling of missing or unregistered fields. Off by default; when enabled, a letter that fails any check is refused rather than delivered.'
+  zh: '校验其他 agent 写来的信：规范字段顺序、摘要与 HMAC 校验，缺字段或未登记字段一律不放行。默认关闭；开启后任何一项不过就拒收。'
