@@ -1,6 +1,0 @@
-url: https://github.com/LUDIWUSI12138/dsh-rewind
-name: LUDIWUSI12138/dsh-rewind
-category: session
-description:
-  en: Rewinds a session to before a chosen user turn — the model-visible surface is replaced in place and the interface hides the rewound turns, without modifying DSH or deleting the original session log.
-  zh: 把会话退回某一条提问发起之前——模型可见历史就地遮蔽，界面同步隐藏被回退的轮次，不改 DSH 本体源码、不删原始日志。
