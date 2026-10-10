@@ -1,0 +1,7 @@
+url: https://github.com/liancha22/dsh-puzzle-mode
+name: liancha22/dsh-puzzle-mode
+category: memory
+tarball: https://github.com/liancha22/dsh-puzzle-mode/releases/download/v0.24.2/dsh-puzzle-mode-0.24.2.tgz
+description:
+  en: 'Keeps project decisions in plain markdown instead of chat history: one main document plus per-module documents, every entry carrying a file:line citation. The agent interviews you to turn open questions into settled decisions, and a five-dimension score (task complexity, extensibility, maintainability, code quality, reusability) is derived from the documents and shown on a button beside the model picker. A session can bind several projects; projects are sized small/medium/large, which widens the entry limits, and a reusable-pipeline section in the main document is injected when its trigger words appear.'
+  zh: '把项目决策落成纯 markdown 而不是留在聊天记录里：一份主文档加若干模块文档，每条都带 文件:行 出处。AI 主动提问把悬而未决变成已定；五维健康性（任务复杂度 / 可拓展性 / 维护系数 / 代码质量 / 可复用性）由文档证据算出，显示在输入框模型选择器旁边的小按钮上。一个会话可同时绑多个项目；项目分小 / 中 / 大三档，条目上限随档位放宽；主文档里的标准化流水线小节在命中触发词时自动注入。'
