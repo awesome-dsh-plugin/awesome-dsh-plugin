@@ -1,0 +1,6 @@
+url: https://github.com/zhang-tod/dsh-win-notify
+name: zhang-tod/dsh-win-notify
+category: notify
+description:
+  en: 'Host-layer Windows toast notifications for DeepSeek Harness: agent turn done, error or interruption, subagent done, and background job done, plus alerts when the model asks you a question or a tool approval is pending. The notification logic runs in the DSH host process, so toasts still arrive with the tab or the browser closed; a Win32 foreground probe suppresses them while you are looking at DSH. Windows only.'
+  zh: 'DSH 宿主层 Windows 原生 Toast 通知：回合完成、出错或中断、子代理完成、后台任务完成，以及模型提问与工具审批待处理时的提醒。通知逻辑跑在 DSH 宿主进程里，标签页或浏览器关掉也照响；用 Win32 前台探测，正在看 DSH 时不打扰。仅支持 Windows。'
