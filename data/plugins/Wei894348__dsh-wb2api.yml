@@ -1,0 +1,6 @@
+url: https://github.com/Wei894348/dsh-wb2api
+name: Wei894348/dsh-wb2api
+category: model
+description:
+  en: Self-hosted gateway that registers a local WorkBuddy / CodeBuddy account pool as OpenAI-compatible model providers in DeepSeek Harness, with a web settings panel and a task-automation engine.
+  zh: 把本机 WorkBuddy / CodeBuddy 账号池接成 OpenAI 兼容模型 provider 的自托管网关，带 Web 设置面板与任务自动化引擎。
