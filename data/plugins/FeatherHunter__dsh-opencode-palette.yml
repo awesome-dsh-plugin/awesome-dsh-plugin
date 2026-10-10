@@ -4,4 +4,4 @@ category: theme
 description:
   en: "Ports all 38 opencode themes (33 TUI + 4 desktop 2.0 + system) into DeepSeek Harness: data-driven pipeline (JSON → color resolve → DSH override), per-browser persistence, monospace/proportional choice, five code fonts, and a system fallback that keeps typography only."
   zh: "将opencode 38 款主题完整搬到 DeepSeek Harness：提供赏心悦目的开发、学习、办公体验。为长时间办公护眼而生🌹"
-tarball: https://github.com/FeatherHunter/dsh-opencode-palette/releases/download/v1.7.1/dsh-opencode-palette-1.7.1.tgz
+tarball: https://github.com/FeatherHunter/dsh-opencode-palette/releases/download/v2.0.11/dsh-opencode-palette-2.0.11.tgz
