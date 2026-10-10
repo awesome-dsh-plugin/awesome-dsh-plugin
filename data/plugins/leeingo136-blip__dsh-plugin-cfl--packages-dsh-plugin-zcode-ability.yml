@@ -1,0 +1,6 @@
+url: https://github.com/leeingo136-blip/dsh-plugin-cfl/tree/main/packages/dsh-plugin-zcode-ability
+name: leeingo136-blip/dsh-plugin-cfl#dsh-plugin-zcode-ability
+category: workflow
+description:
+  en: 'ZCode capability port for DeepSeek Harness: an agent preset that assembles persona, skills-gate, plan and workflow discipline components with eight ported skills, plus a Z.ai (GLM) account plugin. The account card requires the account-hub plugin.'
+  zh: 'ZCode 能力移植容器：「zCode之剑」Agent 预设装配工作姿态、技能门禁、计划与工作流纪律组件，附 8 个移植技能，另含 Z.ai（GLM）账号组件。账号卡片依赖 account-hub 插件。'
