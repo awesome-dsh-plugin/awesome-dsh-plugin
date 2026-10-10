@@ -1,0 +1,6 @@
+url: https://github.com/hwangjunjie/dsh-session-move
+name: hwangjunjie/dsh-session-move
+category: session
+description:
+  en: 'Move a session to another folder, permanently delete it, or AI-rename it from the Web UI — by dragging a session row onto a folder title or from the session menu. Moving rewrites the session header cwd, relocates the persisted log and updates workspace accounting so history travels with it; deleting stops running agents and removes the log, projection-cache row and workspace accounting. The same three operations ship as agent tools: workbench_session_move, workbench_session_delete and workbench_session_rename_ai.'
+  zh: '在 Web UI 中把会话移动到其他文件夹、永久删除，或进行 AI 重命名——支持把会话行拖到文件夹标题上，也可从会话菜单操作。移动会重写会话头的 cwd、迁移持久化日志并更新工作区账目，历史随会话一起走；删除会先停止运行中的 agent，再移除日志、投影缓存行与工作区账目。同样提供三个 agent tools：workbench_session_move、workbench_session_delete、workbench_session_rename_ai。'
