@@ -1,0 +1,6 @@
+url: https://github.com/Very12345/dsh-lark-link
+name: Very12345/dsh-lark-link
+category: notify
+description:
+  en: "Feishu/Lark bridge fork with per-conversation reasoning-effort controls, multi-app isolation, and streamed task-status cards."
+  zh: "飞书/Lark 桥接分叉，提供每会话推理强度控制、多应用隔离和任务状态流式卡片。"
