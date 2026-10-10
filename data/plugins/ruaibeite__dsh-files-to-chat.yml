@@ -1,0 +1,6 @@
+url: https://github.com/ruaibeite/dsh-files-to-chat
+name: ruaibeite/dsh-files-to-chat
+category: ui
+description:
+  en: 'Right-click a file or folder in the right sidebar file tree to add it to the composer as an @ reference, with ⌘/Ctrl and Shift multi-select for batch insertion.'
+  zh: '在右侧栏文件树里右键把文件或文件夹作为 @ 引用加进输入框，支持 ⌘/Ctrl 与 Shift 多选后整批插入。'
