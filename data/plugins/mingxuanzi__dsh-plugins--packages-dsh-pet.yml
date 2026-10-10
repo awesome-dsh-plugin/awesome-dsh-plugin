@@ -1,0 +1,6 @@
+url: https://github.com/mingxuanzi/dsh-plugins/tree/main/packages/dsh-pet
+name: mingxuanzi/dsh-plugins#dsh-pet
+category: fun
+description:
+  en: 'A desktop pet in its own transparent always-on-top window that you can drag anywhere on screen and that reacts to what the agent is doing, with a codex-pets.net marketplace.'
+  zh: '一只住在独立透明置顶小窗里的桌宠，可以拖到屏幕任意位置，随 agent 状态联动，自带 codex-pets.net 桌宠市场。'

@@ -1,0 +1,6 @@
+url: https://github.com/mingxuanzi/dsh-plugins/tree/main/packages/dsh-wallpaper
+name: mingxuanzi/dsh-plugins#dsh-wallpaper
+category: theme
+description:
+  en: 'Global wallpaper from wallhaven.cc or a local image, re-composited so every surface shows the same image weight, with the Windows desktop titlebar following the wallpaper.'
+  zh: '全局壁纸：wallhaven.cc 图库或本地图片，按同一套合成让每个界面的透出权重一致，Windows 桌面端标题栏也跟随壁纸。'
