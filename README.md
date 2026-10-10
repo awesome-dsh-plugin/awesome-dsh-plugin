@@ -1113,6 +1113,8 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [Zoria-Lind/dsh-token-optimizer](https://github.com/Zoria-Lind/dsh-token-optimizer) - Token-cost pipeline for DeepSeek Harness: pressure-aware layered compaction (lossless projection below 40% context pressure, LLM summarization above), per-agent tool allowlisting, long-text-to-image with vision summarization, and a /token-status command tracking pressure, tiers, and saved tokens.
 - [zouxiaoyang/dsh-commandcode-usage](https://github.com/zouxiaoyang/dsh-commandcode-usage) - CommandCode usage & balance panel for DeepSeek Harness: API usage, credit balance, 5-hour/weekly windows from the sidebar footer.
 
+- [zhuzichen362/dsh-call-shrink](https://github.com/zhuzichen362/dsh-call-shrink) - Extreme LLM-call compression for DeepSeek Harness: title short-circuit, in-flight dedup, 24h replay cache, and batch-merging N parallel requests into 1 upstream call via a [[TASK n]]/[[ANSWER n]] delimiter protocol - fewer API calls, less spend, same answers.
+
 ### Themes & Appearance
 
 - [0nt-one/dsh-neo-skin](https://github.com/0nt-one/dsh-neo-skin) - Neo-brutalism skin with two switchable schemes (Blue Command / Aged Newspaper), hard shadows, sharp corners, and light/dark theme support.
