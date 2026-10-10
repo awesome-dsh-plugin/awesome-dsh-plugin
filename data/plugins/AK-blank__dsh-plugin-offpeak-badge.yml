@@ -1,0 +1,6 @@
+url: https://github.com/AK-blank/dsh-plugin-offpeak-badge
+name: AK-blank/dsh-plugin-offpeak-badge
+category: ui
+description:
+  en: Shows whether the DeepSeek API is currently billing at the off-peak or peak rate in the sidebar brand row, with the Chinese statutory-holiday calendar built in and zh/en copy.
+  zh: 在侧边栏品牌位显示 DeepSeek API 当前按空闲还是高峰时段计费，内置中国法定节假日与调休日历，中英双语。
