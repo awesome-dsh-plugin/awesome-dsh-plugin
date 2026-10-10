@@ -1,0 +1,6 @@
+url: https://github.com/Asheblog/dsh-ollama-cloud
+name: Asheblog/dsh-ollama-cloud
+category: model
+description:
+  en: Registers Ollama Cloud as a pi-ai provider with per-model reasoning-effort control, and reads the account's usage over the plugin's own host channel into a Models-page card and a sidebar quota progress bar.
+  zh: 把 Ollama Cloud 注册为 pi-ai 供应商，支持按模型调整思维链强度；账号用量经插件自己的宿主通道读取，显示在 Models 页卡片与侧边栏额度进度条上。
