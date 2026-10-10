@@ -1,0 +1,6 @@
+url: https://github.com/NIRVANA-APOC/dsh-api-cost
+name: NIRVANA-APOC/dsh-api-cost
+category: usage
+description:
+  en: 'Registers an apiCost session projection that estimates DeepSeek spend from reported token usage at published peak / off-peak rates, in CNY and USD, over self, delegation-tree or verified-team scopes: a composer-dock pill and its detail panel, the /cost command, a session_cost tool, and two GET routes for the view and the current rate card.'
+  zh: '注册 apiCost 会话投影，按官方公布的峰谷价目表把上报的 token 用量折算成 ¥/$ 花费，覆盖本会话、委派树与经校验的团队三种范围：输入框下方的胶囊与其详情面板、/cost 命令、session_cost 工具，以及读取视图与当前价目表的两条 GET 路由。'
