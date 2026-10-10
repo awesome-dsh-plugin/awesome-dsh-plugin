@@ -1,0 +1,6 @@
+url: https://github.com/irisblackwood/focus-guard/tree/main/packages/core
+name: irisblackwood/focus-guard#core
+category: security
+description:
+  en: 'Blocks AI coding agents from editing files without evidence and from running unapproved high-risk commands, and tells quoted dangerous strings apart from commands actually being executed.'
+  zh: '拦截 AI 编码智能体未取证就改文件、未获授权执行高危命令，并区分「被引用的危险字符串」与「真要执行的命令」。'
