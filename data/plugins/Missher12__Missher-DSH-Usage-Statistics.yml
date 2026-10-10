@@ -1,0 +1,7 @@
+url: https://github.com/Missher12/Missher-DSH-Usage-Statistics
+name: Missher12/Missher-DSH-Usage-Statistics
+category: usage
+description:
+  en: "Local session and Token statistics with daily and hourly activity charts for DeepSeek Harness."
+  zh: "汇总本地会话的 Token 用量、每日与小时活动，以及模型、工具和技能使用情况。"
+tarball: https://github.com/Missher12/Missher-DSH-Usage-Statistics/releases/download/v0.2.1/missher-dsh-usage-statistics-0.2.1.tgz
