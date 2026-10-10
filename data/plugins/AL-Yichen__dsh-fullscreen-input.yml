@@ -1,0 +1,6 @@
+url: https://github.com/AL-Yichen/dsh-fullscreen-input
+name: AL-Yichen/dsh-fullscreen-input
+category: ui
+description:
+  en: 'Adds a full-screen panel to the DSH composer for writing multi-line text, movable and resizable, sharing one draft with the composer; Enter inserts a newline and only Ctrl+Enter sends, so an IME cannot turn Shift+Enter into a send.'
+  zh: '给 DSH 的输入框加一个全屏输入面板，用于书写多行文本，可移动、可调整大小，与主输入框共用同一份草稿；Enter 只换行、仅 Ctrl+Enter 发送，因此中文输入法不会把 Shift+Enter 变成发送。'
