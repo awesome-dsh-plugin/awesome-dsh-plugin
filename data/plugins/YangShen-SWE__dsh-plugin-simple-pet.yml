@@ -1,0 +1,7 @@
+url: https://github.com/YangShen-SWE/dsh-plugin-simple-pet
+name: YangShen-SWE/dsh-plugin-simple-pet
+category: usage
+description:
+  en: A Windows desktop pet with optional quiet mode, classic/gentle feedback and independent reduced-motion/flash/floating-text controls, preserving classic defaults and updating real data without replaying old events. Includes five independent cardTheme palettes (default/original blue, forest/green, amber/brown, violet/purple-gray and paper/white) freely paired with six 2D character skins; each palette supports DeepSeek wallet, peak/off-peak pricing and cache information, or Codex 5-hour/weekly quotas and reset times. The host-native DSH settings gallery shows both modes and character/card combinations with clearly labeled synthetic preview values; explicit saves hot-reload without new model requests or account changes. Retains draggable positioning, inert right-click, four sizes, preferences/statistics, responsive light/dark settings, authenticated atomic saves, configurable quota polling and default-off deduplicated warm-up.
+  zh: Windows 桌宠支持可选安静模式、经典／温和反馈，以及减少动态、关闭闪光和飘字的独立舒适选项；默认保留经典，真实数据持续更新，退出静态状态不补播旧事件。信息框 cardTheme 可与六款 2D 人物 skin 任意搭配，提供海盐蓝（default，保留原色）、苔庭墨绿（forest）、焦糖暖棕（amber）、暮云紫灰（violet）、月笺雾白（paper）五版；每版均支持 DeepSeek 钱包、峰谷价牌与缓存信息，以及 Codex 5 小时／周额度与重置时间双模式。DSH 原生设置中的主题图库同时展示双模式及人物／信息框小组合预览，明确标注合成示例数字，点击保存后热更新，不新增模型请求或账号变更。保留拖动与独立坐标、右键无菜单或弹窗、四档尺寸、偏好／统计、深浅主题与窄屏适配、鉴权原子保存、可配置额度检测，以及默认关闭、持久去重的独立预热。
+tarball: https://github.com/YangShen-SWE/dsh-plugin-simple-pet/releases/latest/download/dsh-plugin-simple-pet.tgz
