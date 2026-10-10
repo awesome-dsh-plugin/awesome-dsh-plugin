@@ -1,0 +1,7 @@
+url: https://github.com/xianyuyijinban/boardwise/tree/main/dsh-plugin
+name: xianyuyijinban/boardwise#dsh-plugin
+category: tools
+description:
+  en: Offline schematic review for EasyEDA Pro, exposed to dsh as four tools — one-shot checkup reports, architecture skeletons, an install doctor, and a live-editor bridge that prefers read-only actions, all driven by the local boardwise CLI.
+  zh: 立创 EDA Pro（EasyEDA Pro）原理图离线审查，给 dsh 加四个工具——一次性 checkup 报告、架构骨架、本机安装体检，以及只读优先的在线编辑器桥，全部由本机 boardwise CLI 驱动。
+tarball: https://github.com/xianyuyijinban/boardwise/releases/download/v0.4.26/boardwise-dsh-0.1.1.tgz

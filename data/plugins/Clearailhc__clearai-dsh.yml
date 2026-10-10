@@ -1,0 +1,6 @@
+url: https://github.com/Clearailhc/clearai-dsh
+name: Clearailhc/clearai-dsh
+category: agi
+description:
+  en: 'An agent preset for evidence-checked research: every step advances only through system-verified observations, L3+ claims go to an independent evaluator, and the session folds into a replayable ledger that grows into a browsable domain ontology. Requires DSH >=0.1.7-alpha.1.'
+  zh: '以证据为准的研究用智能体预设：每一步只能靠系统核验过的观测推进，L3 以上的结论交给独立评估者，整场会话折成一份可重放的账本，并长成可浏览的领域本体。需要 DSH >=0.1.7-alpha.1。'
