@@ -2,5 +2,5 @@ url: https://github.com/BangBang-03/dsh-client-ui-quote
 name: BangBang-03/dsh-client-ui-quote
 category: ui
 description:
-  en: 'Select text in a DSH web conversation to quote or comment on it: a floating bar offers Comment and Add to chat, the quote goes into the composer as a native reference chip, and a sent quote stays a rounded capsule in the message that expands on click and can be copied.'
-  zh: '在 DSH 网页版对话里选中文字即可引用或评论：浮层提供「评论」与「添加到对话」，引用以原生 reference-chip 插入输入框，发送后仍以圆角胶囊留在消息里，可点击展开与复制。'
+  en: 'Select text in a DSH conversation to quote it: a floating bar offers Comment, Add to chat and Side chat. The quote - and the comment, kept in the same chip - is inserted into the composer as a native reference chip, and a sent quote stays one rounded capsule in the message that expands on click and can be copied. Side chat writes the quote into the composer of one dsh-better-sidebar side thread per conversation, without sending it.'
+  zh: '在 DSH 对话里选中文字即可引用：浮层提供「评论」「添加到对话」与「侧边对话」。引用以原生 reference-chip 插入输入框，评论与引用在同一颗芯片里；发送后消息里仍是一颗圆角胶囊，可点击展开、可复制。「侧边对话」把引用写进 dsh-better-sidebar 侧边线程的输入框（一条主会话一条线程），不替你发送。'
