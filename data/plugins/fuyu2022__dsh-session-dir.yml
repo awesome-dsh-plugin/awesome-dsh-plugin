@@ -1,0 +1,6 @@
+url: https://github.com/fuyu2022/dsh-session-dir
+name: fuyu2022/dsh-session-dir
+category: ui
+description:
+  en: 'Virtual-directory session manager for the DSH sidebar. It replaces a workspace''s session list with a tree of nested, user-created folders, supporting drag-and-drop to move sessions between folders and the root and to reorder them inside a folder, session rename and archive, and cross-workspace searching of sessions by title or by full conversation content. The tree is stored outside the workspace, under the harness home ($DSH_HOME or ~/.dsh); blank sessions are never placed in it.'
+  zh: 'DSH 侧边栏的虚拟目录会话管理器：把工作区的会话列表换成可嵌套的自建目录树，支持拖拽在目录与根目录之间移动会话、在目录内调整顺序，会话重命名与归档，以及跨工作区按标题或全部对话内容搜索会话。目录数据存放在工作区之外（harness home，$DSH_HOME 或 ~/.dsh）；空白会话不会进入目录树。'
