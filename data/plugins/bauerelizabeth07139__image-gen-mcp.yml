@@ -1,0 +1,6 @@
+url: https://github.com/bauerelizabeth07139/image-gen-mcp
+name: bauerelizabeth07139/image-gen-mcp
+category: tools
+description:
+  en: 'Configurable, provider-agnostic image generation: mounts the bundled MCP server behind an NDJSON bridge as mcp__image_generation__image_generate and mcp__image_generation__image_config_status, and registers the bundled image-generation skill.'
+  zh: '可配置、与供应商无关的图片生成:把随插件分发的 MCP 服务器挂在 NDJSON 桥后面,提供 mcp__image_generation__image_generate 与 mcp__image_generation__image_config_status,并注册 image-generation 技能。'
