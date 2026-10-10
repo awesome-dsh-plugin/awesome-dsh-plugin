@@ -1,0 +1,6 @@
+url: https://github.com/TLNing260310/dsh-compaction-fidelity
+name: TLNing260310/dsh-compaction-fidelity
+category: memory
+description:
+  en: "Cross-lingual context-compaction fidelity for dsh: deterministic fidelity fingerprints, loss compensation, folder-scoped architecture retrieval anchors, and a configurable absolute compaction line; targets DSH Desktop 2.0.17 with Harness 0.2.0-rc.2."
+  zh: "面向 DSH 的跨语言上下文压缩保真层：确定性保真指纹、缺失补偿、文件夹级架构回查锚点与可配置绝对压缩线；适配社区版 DSH Desktop 2.0.17 与内嵌 Harness 0.2.0-rc.2。"
