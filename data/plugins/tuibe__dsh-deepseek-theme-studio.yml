@@ -1,0 +1,6 @@
+url: https://github.com/tuibe/dsh-deepseek-theme-studio
+name: tuibe/dsh-deepseek-theme-studio
+category: theme
+description:
+  en: 'Client theme plugin for the DSH Web GUI: a fluid background, frosted glass panels and quantised shader effects, with 100 adjustable parameters persisted to a JSON file.'
+  zh: 'DSH Web GUI 客户端主题插件：流体背景、毛玻璃面板与量子化着色器效果，100 项参数可调并持久化到 JSON 文件。'
