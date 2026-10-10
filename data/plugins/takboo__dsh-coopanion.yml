@@ -1,0 +1,7 @@
+url: https://github.com/takboo/dsh-coopanion
+name: takboo/dsh-coopanion
+category: fun
+description:
+  en: Adds an animated desktop companion with task notifications, session chat, character packs, and native settings for DeepSeek Harness.
+  zh: 为 DeepSeek Harness 添加动画桌面伙伴，支持任务提醒、会话聊天、角色包和原生设置。
+tarball: https://github.com/takboo/dsh-coopanion/releases/latest/download/dsh-coopanion.tgz
