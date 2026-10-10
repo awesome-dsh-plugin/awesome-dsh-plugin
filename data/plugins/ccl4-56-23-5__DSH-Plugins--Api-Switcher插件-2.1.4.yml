@@ -1,0 +1,7 @@
+url: https://github.com/ccl4-56-23-5/DSH-Plugins/tree/main/Api-Switcher插件/2.1.4
+name: ccl4-56-23-5/DSH-Plugins#api-switcher
+category: model
+description:
+  en: Manage API providers and enabled models, with provider-grouped model switching and keyword search in the native model menu.
+  zh: 管理API供应商与启用模型，在原生模型菜单中按供应商分组切换并搜索模型。
+tarball: https://github.com/ccl4-56-23-5/DSH-Plugins/releases/download/api-switcher-v2.1.4/dsh-api-switcher-2.1.4.tgz
