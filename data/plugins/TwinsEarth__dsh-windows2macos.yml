@@ -1,0 +1,7 @@
+url: https://github.com/TwinsEarth/dsh-windows2macos
+name: TwinsEarth/dsh-windows2macos
+category: remote
+description:
+  en: Runs one command on every online Windows, macOS or Linux machine in your fleet, over a relay plus P2P hole punching, and compares the results against git anchors.
+  zh: 一条命令在你所有在线的 Windows / macOS / Linux 机器上执行：中继 + P2P 打洞，并用 git 三锚比对结果。
+tarball: https://github.com/TwinsEarth/dsh-windows2macos/releases/download/v0.4.3/twinsearth-w2m-dsh-plugin-0.4.3.tgz
