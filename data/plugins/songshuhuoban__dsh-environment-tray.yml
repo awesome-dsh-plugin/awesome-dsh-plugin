@@ -1,0 +1,6 @@
+url: https://github.com/songshuhuoban/dsh-environment-tray
+name: songshuhuoban/dsh-environment-tray
+category: dev
+description:
+  en: Manage environment variables, .env files, and credentials in DeepSeek Harness, including Windows user and system environment variables.
+  zh: 在 DeepSeek Harness 中管理环境变量、.env 文件和凭据，支持 Windows 用户级与系统级环境变量。
