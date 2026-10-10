@@ -1424,6 +1424,7 @@ dsh plugin --profile web add dshmarket
 - [roclee2692/dsh-model-groups](https://github.com/roclee2692/dsh-model-groups) — DeepSeek Harness 的平台与厂家折叠模型选择器，保留 provider/model 路由与思考等级。
 - [Saretheya/dsh-lantern](https://github.com/Saretheya/dsh-lantern) — 把本机 DeepSeek Harness 已配置的全部模型，以 OpenAI / Anthropic 兼容接口开放给同一局域网；自带 API Key、按 Key 限流、熔断、模型过滤与用量报告。
 - [Scorp1o117/dsh-reasoning-options](https://github.com/Scorp1o117/dsh-reasoning-options) — 通过 DSH 设置为自定义 pi-ai 模型补充缺失的推理强度声明，启用原生强度选择器，并自动处理后续添加的模型。
+- [seonzzy/dsh-zen-adapter](https://github.com/seonzzy/dsh-zen-adapter) — 把 OpenCode Zen 免费模型注册为原生 provider：目录由 opencode.ai 与 models.dev 价格实时取交集得出，详情页可重新拉取目录或逐个探测哪些模型能调通。不声明任何依赖，宿主自带的那份 pi-ai 始终是唯一一份。
 - [sequoiayunus-hue/dsh-subagent-model-config](https://github.com/sequoiayunus-hue/dsh-subagent-model-config) — 为 DSH 原生 Team 编队队员可视化配置专属模型与推理档位，运行时包装注入，不改官方任何文件。
 - [seriousz158/dsh-codex-use#dsh-codex-appserver](https://github.com/seriousz158/dsh-codex-use/tree/main/packages/dsh-codex-appserver) — 通过本机 Codex App Server，将 OpenAI Codex（ChatGPT）作为可选 DSH Provider。
 - [SeverusZh/dsh-plugin-subagent-director](https://github.com/SeverusZh/dsh-plugin-subagent-director) — 子代理 LLM 供应商/模型选择，支持角色模板。
