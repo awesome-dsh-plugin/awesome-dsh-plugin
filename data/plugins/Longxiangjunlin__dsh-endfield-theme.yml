@@ -1,0 +1,6 @@
+url: https://github.com/Longxiangjunlin/dsh-endfield-theme
+name: Longxiangjunlin/dsh-endfield-theme
+category: theme
+description:
+  en: 'Arknights: Endfield theme for the DeepSeek Harness Web GUI: charcoal and hazard-yellow industrial HUD, a boot splash injected ahead of the shell, a conversation backdrop, and a re-cut Windows title bar. Restyles the sidebar brand to 终末地工业 / ENDFIELD INDUSTRIES, which a URL flag reverts.'
+  zh: '《明日方舟：终末地》主题：炭黑与警戒黄的工业 HUD、在外壳渲染前注入的开屏动画、对话区背景，以及重新配色的 Windows 标题栏。侧栏品牌会改为「终末地工业 / ENDFIELD INDUSTRIES」，可用 URL 参数还原。'
