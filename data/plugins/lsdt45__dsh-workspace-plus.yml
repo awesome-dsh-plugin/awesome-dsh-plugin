@@ -1,0 +1,6 @@
+url: https://github.com/lsdt45/dsh-workspace-plus
+name: lsdt45/dsh-workspace-plus
+category: ui
+description:
+  en: 'Hierarchical workspace tree and multi-view manager for DSH: workspace and session naming creates virtual folders (/), multi-view support (workspace tree, flat workspaces, single list, time timeline), session pinning, and independent sections for workspaces and sessions.'
+  zh: 'DSH 侧边栏工作区层级树与视图增强：名称中的 / 自动解析为虚拟分组，提供按工作区树、按工作区、单列表与时间线四种视图，支持会话置顶与工作区/会话独立分区管理。'
