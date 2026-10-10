@@ -684,7 +684,7 @@ dsh plugin --profile web add dshmarket
 - [swenbo1-web/dsh-web-search-button](https://github.com/swenbo1-web/dsh-web-search-button) — DeepSeek Harness 的直接联网搜索按钮与 /search 斜杠命令插件。
 - [syx2bzd/dsh-ricewhale](https://github.com/syx2bzd/dsh-ricewhale) — DSH Web 界面的「鲸鱼女仆」物理挂件：拖拽投掷、吃 token 币计分、每满 500 个 token 冒一碗白饭。
 - [taxueseek/dsh-files](https://github.com/taxueseek/dsh-files) — 文件上传（彩色附件卡片、会话隔离存储、sha256 去重、TTL 清扫）+ 内容嗅探的 read_document 文档读取（PDF/DOCX/XLSX/TXT）。
-- [tcgbp/dock-flash](https://github.com/tcgbp/dock-flash) — DSH Web 的快捷控制面板：可停靠或浮动，开关项可由其它插件通过 quickControl 服务注册；内置主题/皮肤切换与细粒度 NO_PROXY 代理控制，可搭配 dock-base 或独立运行。
+- [tcgbp/dock-flash](https://github.com/tcgbp/dock-flash) — DSH 快捷控制面板的 dock-base 工作台适配器。面板本体（开关注册表、皮肤系统、i18n、告警面、host 路由）由 `dsh-flash` 核心单独提供；本包只负责把它挂进 dock-base：侧栏/浮动面板、活动栏 ⚡、编辑器视图与 dock-flash:openQuickControl 命令。需安装 dock-base；装错时会明确报错而不是静默失效。
 - [TecFancy/dsh-mobile](https://github.com/TecFancy/dsh-mobile) — DSH Web 移动端适配插件：侧边栏/详情抽屉浮层化、输入栏与设置页响应式适配，桌面零回归。
 - [TheGoodMorty/chat-pace](https://github.com/TheGoodMorty/chat-pace) — 可配置的聊天自动滚动——按节定速阅读（停顿时长与篇幅成比例）、平滑跟随、单步与固定模式，支持快捷键与按会话记忆打开位置。
 - [ThinkofRain1213/dsh-smooth-cursor-patched](https://github.com/ThinkofRain1213/dsh-smooth-cursor-patched) — DSH Web 输入框的彗星光标：发光拖尾随文字位置平滑滑动，可配置强调色、粗细、拖尾，并在静止 500ms 后呼吸。覆盖 ask-question 交互卡片的输入框，并修复空输入框或首次聚焦时光标消失、正向拖选不跟随鼠标、软换行按上一行测量、长内容滚动时光标绘制到输入框之外等问题。Lacquervii/smooth-cursor 的维护分支。
