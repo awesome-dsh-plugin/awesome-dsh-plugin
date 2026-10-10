@@ -1,0 +1,7 @@
+url: https://github.com/Mark-mph/dsh-kb-curator
+name: Mark-mph/dsh-kb-curator
+category: skill
+description:
+  en: Bundles the kb-curator skill, which keeps a local three-layer knowledge base and refuses to index anything the user has not approved.
+  zh: 捆绑 kb-curator 技能，用本地三层知识库保存资料，未获用户批准前不写入索引。
+tarball: https://github.com/Mark-mph/dsh-kb-curator/releases/download/v0.1.2/dsh-kb-curator-0.1.2.tgz
