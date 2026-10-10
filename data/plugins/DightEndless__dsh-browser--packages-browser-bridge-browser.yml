@@ -1,0 +1,7 @@
+url: https://github.com/DightEndless/dsh-browser/tree/main/packages/browser/bridge-browser
+name: DightEndless/dsh-browser#packages/browser/bridge-browser
+tarball: https://github.com/DightEndless/dsh-browser/releases/download/v0.2.0/dightendless-dsh-bridge-browser-0.2.0.tgz
+category: browser
+description:
+  en: 'Operates the Chrome or Edge tab you are already using, through an unpacked extension: no second browser window, no separate profile, no debug port — your logins, cookies and session stay exactly where they are, and pages reach the model as structured text with a numbered element list. A fork of omdsh-dev/dsh-browser that fills in what upstream lacks: hover, coordinate clicks, drag, batched action chains, whole-page screenshots, local file upload, image listing, and switching between several connected browsers. Actions are gated behind your approval, and sensitive fields stay masked. Ships as the bridge plugin; the extension comes from the same release.'
+  zh: '操作你**正在使用**的 Chrome 或 Edge 标签页，通过「加载已解压的扩展程序」直接接管：不另开浏览器窗口、不用第二个 profile、不用调试端口，登录态、Cookie 与会话原样保留，页面以带编号的结构化文本交给模型。这是 omdsh-dev/dsh-browser 的 fork，补齐了上游没有的能力：悬停、坐标点击、拖拽、批量动作链、整页截图、本地文件上传、图片地址列举，并可在多个已连接的浏览器之间切换。动作默认需要你批准，敏感字段始终以掩码呈现。发布的是桥接插件，配套扩展在同一 Release 里。'
