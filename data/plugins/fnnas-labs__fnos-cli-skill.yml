@@ -1,0 +1,6 @@
+url: https://github.com/fnnas-labs/fnos-cli-skill
+name: fnnas-labs/fnos-cli-skill
+category: skill
+description:
+  en: Registers the fnOS CLI Skill and provides a matching CLI for fnOS device operations, with interactive sign-in in the user's terminal.
+  zh: 注册 fnOS CLI Skill 并提供匹配版本的 CLI，用于管理 fnOS 设备，首次登录由用户在终端交互授权。
