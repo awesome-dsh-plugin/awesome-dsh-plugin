@@ -1,0 +1,6 @@
+url: https://github.com/hoshino114/dsh-skill-hub
+name: hoshino114/dsh-skill-hub
+category: skill
+description:
+  en: 'Skill center: browse and manage local Agent Skills, and search, preview and install skills from the ClawHub, ModelScope and QwenPaw marketplaces in one merged view with source and category filters; ships a `skill_hub` tool so the agent can install skills itself.'
+  zh: '技能中心：浏览与管理本地 Agent Skills，并在同一视图中搜索、预览、安装 ClawHub、ModelScope、QwenPaw 三个市场的技能，支持来源与分类筛选；同时提供 skill_hub 工具，让 agent 也能自助安装技能。'
