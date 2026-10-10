@@ -1,0 +1,7 @@
+url: https://github.com/overact/dsh-statusline-plus
+name: overact/dsh-statusline-plus
+category: ui
+tarball: https://github.com/overact/dsh-statusline-plus/releases/download/v0.1.1/dsh-statusline-plus-0.1.1.tgz
+description:
+  en: Displays account quotas, Git state, context usage, public API reference costs, Subagent activity, and streaming speed in DeepSeek Harness Web.
+  zh: 在 DeepSeek Harness Web 显示账户额度、Git 状态、上下文、公开 API 参考费用、Subagents 活动和生成速度。
