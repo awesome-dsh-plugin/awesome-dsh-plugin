@@ -1,0 +1,6 @@
+url: https://github.com/Seller-1990/dsh-model-smart-config
+name: Seller-1990/dsh-model-smart-config
+category: model
+description:
+  en: Recognizes a model ID in the DeepSeek Harness model catalog and fills that row's context window, input modalities and reasoning levels as editable suggestions, from a bundled offline rule table covering 33 vendors.
+  zh: 在 DeepSeek Harness 的模型目录里识别模型 ID，用内置的离线规则表（覆盖 33 家厂商）把该行的上下文窗口、输入模态与思考等级填成可修改的建议。
