@@ -1,0 +1,6 @@
+url: https://github.com/hedging8563/tokenlab-deepseek-harness-provider
+name: hedging8563/tokenlab-deepseek-harness-provider
+category: model
+description:
+  en: TokenLab model provider bundle for DeepSeek Harness with native Responses, Messages, and Chat Completions routes plus multimodal and async task tools.
+  zh: 为 DeepSeek Harness 提供原生 Responses、Messages 和 Chat Completions 路由，以及多模态和异步任务工具的 TokenLab 模型 provider 插件。
