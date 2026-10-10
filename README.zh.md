@@ -1313,6 +1313,8 @@ dsh plugin --profile web add dshmarket
 - [dat-lequoc/dsh-kiro](https://github.com/dat-lequoc/dsh-kiro) — Kiro 模型提供商，支持 Builder ID、Identity Center、Google、GitHub 与凭据导入登录、token 和 profile 自动刷新、账户用量、实时模型发现、推理档位选择、流式工具调用、上游结束原因与上下文溢出处理；token 统计在 Kiro 提供精确计数时直接采用，否则用它确实会发送的上下文占用百分比乘以模型公布的窗口换算。
 - [DavidRm1911/dsh-llm-subscription](https://github.com/DavidRm1911/dsh-llm-subscription) — 在 DSH 原生模型选择器里加入 Claude、Gemini 与本地 Ollama 模型，复用你已有的 Claude Code / Antigravity CLI 登录态而不是按量计费的 API Key，并为 Claude 提供可用的推理强度选择。
 - [dawnliming/dsh-chinese-mode](https://github.com/dawnliming/dsh-chinese-mode) — 全局中文模式：输入框旁的紧凑胶囊开关，开启后向任意预设（完整 persona 除外）的系统提示注入语言要求；回复、思考、工具区域可分别切换中英文，并兼容锚定预设。
+- [DeepseekDays/dsh-ofm-model-manager](https://github.com/DeepseekDays/dsh-ofm-model-manager) — DSH 全体模型管理：在「设置 → 模型」页底部加一块面板，管理所有 provider 的每一个模型——逐条启用/停用与改名。带搜索框、状态筛选（含计数）、提供商下拉、可折叠的 provider 分组与组级开关，批量操作只作用于当前筛选视图。停用的模型从模型选择器里消失，自定义名直接替换显示名；偏好持久化在 profile，改完立即生效，不用刷新页面、不用重启 DSH。
+- [DeepseekDays/dsh-provider-toggle](https://github.com/DeepseekDays/dsh-provider-toggle) — 在「设置 → 模型」每个提供商行的「编辑」左边加一个一键开关：关掉哪个提供商，它就从主界面模型选择栏里消失，打开即恢复。做法是包一层模型目录调用，因此只影响目录与选择器，不动路由、密钥与 provider 配置；已经选着该模型的旧会话照常工作。
 - [dingminhua/dsh-connect-trae](https://github.com/dingminhua/dsh-connect-trae) — 将本机登录的 Trae 中国区模型接入 DSH，支持由 DSH 执行工具调用、账号切换，以及 Work/通用积分展示。
 - [dingminhua/dsh-connect-workbuddy](https://github.com/dingminhua/dsh-connect-workbuddy) — 将本机登录的 WorkBuddy 模型接入 DSH，支持逐模型图片输入开关、账号切换，以及带每日签到的只读积分概览。
 - [dingminhua/dsh-subagent-default-model#plugin](https://github.com/dingminhua/dsh-subagent-default-model/tree/main/plugin) — 通过 settings.yaml 为子代理派发配置默认模型，支持单模型与多模型轮换/随机分配策略。
