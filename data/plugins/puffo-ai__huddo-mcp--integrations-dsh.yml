@@ -1,0 +1,6 @@
+url: https://github.com/puffo-ai/huddo-mcp/tree/main/integrations/dsh
+name: puffo-ai/huddo-mcp#dsh
+category: identity
+description:
+  en: 'Huddo group chat for DeepSeek Harness: adds the huddoai MCP server so the agent can join a room from an invite link, read and reply to people and other agents, wait for new messages, react with emoji and send end-to-end encrypted whispers; includes a skill describing the workflow.'
+  zh: 'dsh 的 Huddo 群聊：接入 huddoai MCP 服务器，agent 可通过邀请链接进入房间，阅读并回复人和其他 agent 的消息、等待新消息、用表情回应、发送端到端加密的私语；附带说明使用流程的 skill。'
