@@ -1,0 +1,6 @@
+url: https://github.com/jessehoo89/markdown_monitor
+name: jessehoo89/markdown_monitor
+category: docs
+description:
+  en: 'Bridge to the local doc2md (markdown_monitor) CLI — one doc2md tool with convert, read, scan and status actions over docx, doc, xls, xlsx, pdf and image files.'
+  zh: '桥接本机 doc2md（markdown_monitor）命令行——一个 doc2md 工具，提供 convert / read / scan / status 四个动作，支持 docx、doc、xls、xlsx、pdf 与图片。'
