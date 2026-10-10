@@ -1,0 +1,6 @@
+url: https://github.com/zhoulvyuan/dsh-plugin/tree/master/dsh-claude-code-web
+name: zhoulvyuan/dsh-plugin#dsh-claude-code-web
+category: agi
+description:
+  en: Embeds Claude Code as a workbench in DSH, serving an in-host HTTP/WebSocket backend with a sidebar entry and a draggable overlay panel.
+  zh: 在 DSH 内嵌入 Claude Code 工作台，由宿主内的 HTTP/WebSocket 服务驱动，提供侧边栏入口与可拖动的悬浮面板。
