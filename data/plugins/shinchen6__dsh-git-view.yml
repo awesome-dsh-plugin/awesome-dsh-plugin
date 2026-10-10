@@ -1,0 +1,7 @@
+url: https://github.com/shinchen6/dsh-git-view
+name: shinchen6/dsh-git-view
+category: git
+description:
+  en: 'Git tab in the DeepSeek Harness conversation view: change groups, whole-file / changes-only / side-by-side diffs, in-panel editing, and a push button that lists every commit it would publish.'
+  zh: 'DeepSeek Harness 对话页里的 Git 标签页：变更分组，整个文件 / 只看变动 / 并排三种差异看法，面板内直接编辑保存，以及推送前逐一列出将要发布的提交。'
+tarball: https://github.com/shinchen6/dsh-git-view/releases/latest/download/dsh-git-view.tgz
