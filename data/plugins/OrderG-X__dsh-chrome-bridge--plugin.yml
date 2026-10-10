@@ -1,0 +1,7 @@
+url: https://github.com/OrderG-X/dsh-chrome-bridge/tree/main/plugin
+name: OrderG-X/dsh-chrome-bridge#plugin
+category: browser
+tarball: https://github.com/OrderG-X/dsh-chrome-bridge/releases/latest/download/dsh-chrome-bridge.tgz
+description:
+  en: "Controls the Chrome you are already logged into, over native messaging and chrome.debugger instead of a listening port. Ships 9 browser_* tools and a cb CLI, dispatches real CDP input events, and draws an on-page cursor that also appears in screenshots."
+  zh: "操作你已经登录的 Chrome：走 native messaging 与 chrome.debugger，不开监听端口。提供 9 个 browser_* 原生工具和一个 cb 命令行，发送真实 CDP 输入事件，并绘制会出现在截图里的页内光标。"
