@@ -1,0 +1,7 @@
+url: "https://github.com/aa2246740/dsh-notch"
+name: "aa2246740/dsh-notch"
+category: "notify"
+description:
+  en: "Connects DSH session status, approvals and questions to a native macOS notch app; requires the native app and Focus companion."
+  zh: "将 DSH 会话状态、审批和问题同步到原生 macOS 刘海程序，需要原生程序及 Focus 同步助手。"
+tarball: "https://github.com/aa2246740/dsh-notch/releases/download/v0.3.4/dsh-notch-0.3.4.tgz"
