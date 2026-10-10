@@ -1,0 +1,6 @@
+url: https://github.com/floydc-sz/dsh-serial-debugger
+name: floydc-sz/dsh-serial-debugger
+category: tools
+description:
+  en: 'Windows serial-port monitor for DeepSeek Harness — port parameters, live text/hex receive and data sending.'
+  zh: 'DeepSeek Harness 的 Windows 串口调试面板：串口参数设置、文本/十六进制实时接收显示与数据发送。'
