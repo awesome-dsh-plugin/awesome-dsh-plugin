@@ -1,0 +1,5 @@
+url: https://github.com/JessenReinhart/dsh-poke-todo
+name: JessenReinhart/dsh-poke-todo
+category: workflow
+description:
+  en: Ports jcode's auto-poke so an idle agent keeps working while its session still has incomplete todos.
