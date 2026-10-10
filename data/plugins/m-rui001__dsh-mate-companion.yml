@@ -1,0 +1,6 @@
+url: https://github.com/m-rui001/dsh-mate-companion
+name: m-rui001/dsh-mate-companion
+category: memory
+description:
+  en: 'A companion kernel rather than a retrieval layer: Plutchik emotions, an Ornstein-Uhlenbeck mood and five drives advance on every message, offline gaps integrate in closed form, and the model files its own memories through mate_remember with ACT-R decay and consolidation at wake. A 60s heartbeat can voice an impulse as a message of its own. Affect is self-reported by the host model via mate_feel; this host has no live sleep, dreams or alarm.'
+  zh: '伴侣内核而不是检索层：Plutchik 情绪、OU 心境与五种驱力随每条消息推进，离线时间按闭式积分补齐，记忆由模型自己调 mate_remember 写入、按 ACT-R 衰减并在醒时巩固；60 秒心跳可把冲动作为一条独立消息说出。情绪变化由宿主模型通过 mate_feel 自报；该宿主暂无实时睡眠、梦与闹钟。'
