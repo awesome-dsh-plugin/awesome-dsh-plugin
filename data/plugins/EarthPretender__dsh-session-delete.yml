@@ -1,0 +1,7 @@
+url: https://github.com/EarthPretender/dsh-session-delete
+name: EarthPretender/dsh-session-delete
+category: session
+description:
+  en: 'Adds a red "Delete session" row beneath Archive in the sidebar session menu and permanently deletes that one session - its stored logs and its workspace account entry, written through the workspace registry itself. A second click confirms and the row leaves the list immediately; sessions opened this run are disposed from memory first so nothing resurrects them, and a session running work shows one extra warning whose click stops the task before deleting.'
+  zh: '在侧栏会话“…”菜单的“归档会话”下方新增红色“删除会话”行，永久删除该会话的日志与工作区账目（走 workspace registry 自己的持久化写）。第二次点击确认后该行立即从列表消失；当次启动使用过的会话会先从内存停用再删（不会复活）；正在跑任务的会话会再显示一次警告，点下去先停止任务再删除。'
+tarball: https://github.com/EarthPretender/dsh-session-delete/releases/latest/download/dsh-session-delete.tgz
