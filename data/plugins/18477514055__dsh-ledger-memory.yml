@@ -1,7 +1,7 @@
 url: https://github.com/18477514055/dsh-ledger-memory
 name: 18477514055/dsh-ledger-memory
 category: memory
-tarball: https://github.com/18477514055/dsh-ledger-memory/releases/download/v0.3.1/dsh-ledger-memory-0.3.0.tgz
+tarball: https://github.com/18477514055/dsh-ledger-memory/releases/download/v0.3.1/dsh-ledger-memory-0.3.1.tgz
 description:
   zh: "项目级记忆，核心是台账：台账的结构由 AI 按项目类型自行决定，插件只负责检测、注入、回写、归档与 Git 配合。压缩方式可选两个模式：正常推进（按位置只压最旧一段）与反复追究（压缩前先分三个桶 —— 留上下文的压缩后逐字注回、以后要查的落进项目 _stash/、已被取代的丢掉）。对话建在装着多个项目的总工作区上时，可以把它锁定到某个子项目（只存内存，不写任何文件）。另有活动日志 L0–L4，其中 L4 逐字存档用户原话（不注入上下文，可按需查）。每次压缩前把用户原话、报错原文、改过哪些文件落盘成一份逐字胶囊，重启不丢；再用交接单让新会话接上上一次的工作。14 个工具、11 个子命令、1 个设置页；纯本地运行，零运行时依赖。"
   en: "Project-level memory built around a ledger whose structure the AI designs per project; the plugin only handles detection, injection, write-back, archiving and git. Compaction has two modes: steady (positional, compresses only the oldest span) and surgical (the AI first sorts the work into three buckets - what must stay in context and is re-injected verbatim, what is written to the project's _stash/ for later lookup, and what is dropped). When a conversation is opened in a container workspace holding several projects, it can be locked to one sub-project (in memory only, writing no files). Also an activity log with five levels, where L4 stores the user's own words verbatim (never injected, queryable on demand). Before each compaction a verbatim capsule (user quotes, raw errors, changed files) is written to disk, so a restart loses nothing; a handoff document lets a new conversation resume the previous one. 14 tools, 11 subcommands, one settings page. Runs locally, no runtime dependencies."
