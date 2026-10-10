@@ -2,5 +2,5 @@ url: https://github.com/JochenYang/dsh-rewind-plugin
 name: JochenYang/dsh-rewind-plugin
 category: session
 description:
-  en: 'Recall a message you already sent: it leaves the model context, the recalled turns disappear from the transcript, its text returns to the composer, and the files it displaced wait in a quarantine you can review.'
-  zh: '撤回已发送的消息：该消息退出模型上下文、被撤回的回合从对话界面消失、原文回到输入框，被它移走的文件留在可查看的隔离区。'
+  en: 'Recall a message you already sent: the session log stays append-only and nothing is deleted, while the recalled turns leave the model context and the transcript, the text returns to the composer, and the files those turns changed wait in a quarantine you can review and clear from its own settings page.'
+  zh: '撤回已发送的消息：会话日志只追加、不删除任何东西，被撤回的回合退出模型上下文并从对话界面消失、原文回到输入框，被这些回合改动的文件留在隔离区里——设置里独立一页，可查看可清理。'
