@@ -1,0 +1,6 @@
+url: https://github.com/deepsleepAquarium/dsh-whale-post/tree/main/packages/bus
+name: deepsleepAquarium/dsh-whale-post#dsh-whale-post-bus
+category: session
+description:
+  en: 'File-backed post office between DeepSeek Harness sessions: a letter carries a signature and a digest, recipients come from a roster file, and delivery is offline-first, so a letter waits in the mailbox instead of being lost.'
+  zh: 'DeepSeek Harness 会话之间的文件信箱：每封信带签名与摘要，收件人由名单文件定义，默认离线投递——信在信箱里等人来收，不会丢。'
