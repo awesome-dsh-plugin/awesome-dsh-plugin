@@ -1,0 +1,14 @@
+url: https://github.com/ahian-lee/dsh-bliss-glass
+name: ahian-lee/dsh-bliss-glass
+category: theme
+description:
+  en: >-
+    Theme that pairs Windows XP-era scenery wallpapers with a modern frosted-glass
+    interface: a fixed background layer behind the DeepSeek Harness web UI, panel
+    styling applied through theme tokens, a wallpaper picker with custom image
+    import, and a light/dark toggle. Works on desktop and mobile web surfaces.
+  zh: >-
+    让 XP 时代的风景壁纸与现代磨砂玻璃界面同框的主题：DeepSeek Harness Web 界面
+    之下的固定壁纸底板、经主题 token 应用的面板玻璃样式、支持导入自定义图片的
+    壁纸选择器与明暗切换按钮——桌面与移动端均可使用。
+tarball: https://github.com/ahian-lee/dsh-bliss-glass/releases/latest/download/dsh-bliss-glass.tgz
