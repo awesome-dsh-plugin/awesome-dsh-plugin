@@ -1,0 +1,6 @@
+url: https://github.com/melo7up/dsh-git-change
+name: melo7up/dsh-git-change
+category: git
+description:
+  en: 'Git status badge in the composer tool row: a 14px branch glyph left of the model selector, with branch name, changed-file count and +added/-deleted lines on hover. Counts staged, unstaged and untracked files; nothing renders outside a git work tree.'
+  zh: '输入框工具行的 git 状态角标：模型选择器左侧一枚 14px 分支图标，悬停显示分支名、变更文件数与增删行数。统计含未跟踪文件；非 git 工作区不显示。'
