@@ -1,0 +1,6 @@
+url: https://github.com/himi-li/dsh-reasoning-loop-guard
+name: himi-li/dsh-reasoning-loop-guard
+category: dev
+description:
+  en: 'Aborts a DSH reasoning stream that starts repeating itself instead of letting the turn stall: five rules over the streamed reasoning text (periodic unit, repeated block, repeated line above a share floor, 64-gram density, and a long trailing run of punctuation or whitespace), plus a JSONL fire journal, a Web GUI log panel, and opt-in recovery that retries with a corrective message.'
+  zh: '在推理流开始自我重复时提前中断本轮，避免长时间卡死：对推理文本做五条判据（周期单元、重复块、带占比下限的重复行、64-gram 密度、末尾超长标点或空白段），并附带 JSONL 触发日志、Web GUI 日志面板，以及可选的重试恢复（带纠正消息）。'
