@@ -2,6 +2,6 @@ url: https://github.com/ruisenbai/dsh-annotation
 name: ruisenbai/dsh-annotation
 category: session
 description:
-  en: 'For DSH 0.1.7-rc.2: annotate selected assistant text, keep per-Session records, and attach or resend notes with composer text and attachments in one message.'
-  zh: '适用于 DSH 0.1.7-rc.2：选中助手回复正文添加注解，按会话保存记录，并通过官方输入框将注解与文字、附件一同发送或重新发送。'
+  en: 'Select text in replies, diffs, or files → annotate → send with a message; replies address each annotation in order, with source navigation for easy reference.'
+  zh: '选中正文、diff、文件的文字 → 批注 → 随消息发送，回复按批注逐条对照，并支持注解定位方便查询。'
 tarball: https://github.com/ruisenbai/dsh-annotation/releases/latest/download/dsh-annotation.tgz
