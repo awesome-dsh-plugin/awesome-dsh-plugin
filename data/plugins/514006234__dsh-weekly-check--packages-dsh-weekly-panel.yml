@@ -1,0 +1,6 @@
+url: https://github.com/514006234/dsh-weekly-check/tree/main/packages/dsh-weekly-panel
+name: 514006234/dsh-weekly-check#dsh-weekly-panel
+category: ui
+description:
+  en: 'Sidebar panel for a weekly, human-curated Chinese ranking of the DSH ecosystem: 31 tracked projects (17 installable plugins plus tools/skills) ranked by live GitHub stars with week-over-week deltas, and a real-call availability survey of the "free" models. Sponsor slots are labelled and sit outside the ranking.'
+  zh: '侧边栏面板：每周更新的中文 DSH 生态榜单——收录 31 个项目（其中 17 个是可安装插件，其余为周边工具/Skill），按实时星数排行并给出较上期涨星；另有「免费」模型的真实调用可用性实测。赞助位明确标注，且不参与排序。'
