@@ -1,0 +1,7 @@
+url: https://github.com/DightEndless/dsh-browser/tree/main/packages/browser/bridge-browser
+name: DightEndless/dsh-browser#packages/browser/bridge-browser
+tarball: https://github.com/DightEndless/dsh-browser/releases/download/v0.2.0/dightendless-dsh-bridge-browser-0.2.0.tgz
+category: browser
+description:
+  en: 'Open the extension side panel and it takes over the page you are browsing right now. On top of upstream it adds: hover, coordinate clicks, drag, batched action chains, whole-page screenshots, local file upload, image listing, and switching between several connected browsers. Pages reach the model as structured text with a numbered element list; actions wait for your approval and sensitive fields stay masked. Ships as the bridge plugin, with the extension in the same release. This project is a fork of omdsh-dev/dsh-browser: https://github.com/omdsh-dev/dsh-browser'
+  zh: '打开浏览器扩展侧边栏，就能原地接管你当前正在浏览的网页。在上游基础上补齐了：悬停、坐标点击、拖拽、批量动作链、整页截图、本地文件上传、图片地址列举，并可在多个已连接的浏览器之间切换。页面以带编号的结构化文本交给模型；动作默认需要你批准，敏感字段以掩码呈现。发布的是桥接插件，配套扩展在同一 Release 里。本项目是 omdsh-dev/dsh-browser 的 fork，原仓库：https://github.com/omdsh-dev/dsh-browser'
