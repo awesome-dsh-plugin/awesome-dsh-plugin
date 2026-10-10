@@ -1,0 +1,6 @@
+url: https://github.com/Z8906/dsh-plugin-office-markdown
+name: Z8906/dsh-plugin-office-markdown
+category: docs
+description:
+  en: 'Converts Office and PDF files in the DSH workspace to Markdown locally before the model reads them, writes each .md next to its source so only a file path enters the context, and returns byte size, line count, token estimate and a heading outline for a single file or a whole directory.'
+  zh: '在模型读取之前，把工作区里的 Office / PDF 文件在本机转成 Markdown，.md 写在源文件旁边，因此进入上下文的只是一个文件路径，并返回字节数、行数、token 估算与标题结构索引，支持单个文件或整个目录。'
