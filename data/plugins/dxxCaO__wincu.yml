@@ -1,0 +1,6 @@
+url: https://github.com/dxxCaO/wincu
+name: dxxCaO/wincu
+category: tool
+description:
+  en: 'Windows computer use for DeepSeek Harness: a persistent PowerShell UIA backend behind 16 merged MCP entries (read/click/type/observe/verify), a hardened policy layer (red lines, approvals, observation binding, point-ownership and focus guards) and a performance pass (prewarm, caching, pixel-hash stability probe). Fork of dsh-computer-use-win.'
+  zh: '给 DeepSeek Harness 用的 Windows 计算机操作插件：常驻 PowerShell UIA 后端，对外只有 16 个合并入口（读取/点击/输入/观测/验证）；带加固的策略层（红线拒绝、显式审批、观测绑定、落点归属与前台焦点守卫）与一轮性能优化（后端预热、缓存、像素哈希稳定探测）。fork 自 dsh-computer-use-win。'
