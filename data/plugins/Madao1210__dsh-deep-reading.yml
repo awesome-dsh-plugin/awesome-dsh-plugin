@@ -1,0 +1,6 @@
+url: https://github.com/Madao1210/dsh-deep-reading
+name: Madao1210/dsh-deep-reading
+category: workflow
+description:
+  en: 'Deep-reading workflow for books: import EPUB/Markdown/TXT/PDF into chapters, read one chapter per subagent so the source text never enters the main session, keep [n]-anchored chapter memories for cross-session continuation, and export notes or an EPUB.'
+  zh: '读书工作流：导入 EPUB/Markdown/TXT/PDF 拆章，逐章由子任务精读（原文不进主会话），保存带 [n] 定位的章节记忆、支持跨会话续读，可导出笔记或 EPUB。'
