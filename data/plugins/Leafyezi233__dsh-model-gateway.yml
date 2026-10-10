@@ -1,0 +1,24 @@
+url: https://github.com/Leafyezi233/dsh-model-gateway
+name: Leafyezi233/dsh-model-gateway
+category: model
+description:
+  en: >-
+    Exposes the models already configured in DeepSeek Harness through an
+    OpenAI-compatible gateway, so other local projects can call them with any
+    standard OpenAI client. Multiple provider candidates share one named group
+    with ordered, balanced or random dispatch; upstream failures before any
+    output switch to the next candidate transparently, and rate-limited
+    requests are retried after the provider's backoff. Per-candidate call
+    statistics (attempts, answers, failures, token/TTFT totals) appear as
+    badges in the settings page, and daily aggregates persist to a local file
+    with a 30-day heatmap and trend view. API access is protected by
+    SHA-256-hashed keys created in the UI. Runs on DSH 0.1.2-rc.1 through
+    0.1.7-alpha.1 and later.
+  zh: >-
+    把 DeepSeek Harness 里已配置好的模型通过 OpenAI 兼容网关中转出去，其他本地项目
+    用标准 OpenAI 客户端即可调用。多个供应商候选共享一个具名分组，支持顺序、均衡、
+    随机三种调度；上游在产出任何内容前失败时自动切换下一候选，客户端无感，被限流的
+    请求按供应商指示的退避时间自动重试。每条候选的调用统计（尝试、应答、失败、
+    token/TTFT 累计）以徽章形式显示在设置页，按天聚合的数据落盘为本地文件，附 30 天
+    热力图与趋势视图。API 访问由界面创建的 SHA-256 哈希密钥保护。支持
+    DSH 0.1.2-rc.1 至 0.1.7-alpha.1 及以后。
