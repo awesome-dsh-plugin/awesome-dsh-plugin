@@ -833,6 +833,7 @@ dsh plugin --profile web add dshmarket
 - [Yur0918/dsh-sidepanel](https://github.com/Yur0918/dsh-sidepanel) — DSH Web 界面的 Codex 式右侧面板——会话产物浏览（文件树、扫描收录、预览、访达定位）+ 继承当前会话上下文的侧聊，支持模型选择器、拟人化定时调用、发送吸顶与智能滚动。
 - [Yur0918/dsh-soul](https://github.com/Yur0918/dsh-soul) — DeepSeek Harness 个性化设置：9 种回复风格、自定义指令、人设卡、会话级切换、带审计的长期记忆。
 - [yusufameri/dsh-t3-model-picker](https://github.com/yusufameri/dsh-t3-model-picker) — 把 T3 Code 的模型选择器移植到 DSH 输入框：提供方侧栏、按提供方分组的搜索结果、浏览器本地收藏、不可用提供方标记，以及用 Cmd/Ctrl+1..9 直接选中可见列表的前九行。
+- [yusufameri/dsh-t3-session-ui](https://github.com/yusufameri/dsh-t3-session-ui) — 移植 T3 Code 的会话上下文界面：会话行悬浮卡显示机器、Git 分支、模型、代理预设、审批策略与 token 用量，状态标签覆盖待审批、等待输入、运行中、错误与子代理工作，另有提供方与模型标记、会话头部信息条、血缘面包屑、可复制上下文或执行 DSH 压缩的行菜单操作，以及位于 DSH 设置中用于选择显示哪些事实的偏好行。输入框区域不新增任何元素。
 - [Yuuhann1999/dsh-bloub-mood](https://github.com/Yuuhann1999/dsh-bloub-mood) — 动态心情图标：favicon、侧栏字标与首页标题随会话状态切换 bloub 表情动画（执行中 / 等输入 / 完成 / 空闲），8 种形状、12 种颜色与自定义文字均可在设置页配置。
 - [YZz-S/dsh-workspace-files-explorer](https://github.com/YZz-S/dsh-workspace-files-explorer) — 悬浮工作区文件树浏览器：带行号的代码语法高亮与 Markdown 富文本预览。
 - [zclDragon/dsh-side-chat](https://github.com/zclDragon/dsh-side-chat) — Codex 风格 /side 侧边对话插件：在当前对话旁开一个浮动分叉面板，继承上下文、不打断主任务。
@@ -3642,6 +3643,7 @@ dsh plugin --profile web add dshmarket
 - [cheesehaqi/dsh-qq-onebot-bridge](https://github.com/cheesehaqi/dsh-qq-onebot-bridge) — 基于 OneBot v11 反向 WebSocket 的 QQ 双向桥：每群/每私聊用户独立会话、@引用语音转文字、私聊图片/动画表情识图、表情与贴纸工具。
 - [chenweigao/dsh-perch-notify](https://github.com/chenweigao/dsh-perch-notify) — dsh 会话的 Webhook 通知：审批被请求或回合结束时发送 POST，可发往 ntfy、Bark、Slack/钉钉/企微机器人地址或任意 HTTPS 端点。
 - [chidaic/dsh-agent-notify](https://github.com/chidaic/dsh-agent-notify) — 任务完成或需要你输入/批准时弹出 Windows 系统通知（浏览器 Notification API）：完成/提问/审批/计划审阅提醒，点击气泡直达会话，支持后台模式，设置页在官方设置 → 任务提示。
+- [chintoleung/dsh-ping](https://github.com/chintoleung/dsh-ping) — 为 DeepSeek Harness 的提问、审批请求与回合完成发送 Telegram 通知。仅通知不改交互：单运行时文件、零运行时依赖、不自建问题卡片。
 - [chromoany/dsh-notify-me](https://github.com/chromoany/dsh-notify-me) — 消息提醒 / 桌面通知 / 后台回复完成提醒：模型需要你操作（审批、方案确认、提问）或后台回复完成时，弹出系统通知与提示音，并标记标签页标题；设置页可开关提醒、调音量、切换中英文通知语言。
 - [Cloudto1/dsh-approval-chime](https://github.com/Cloudto1/dsh-approval-chime) — DSH 请求审批时响一声提示音；音色、音量与开关在「设置 → 通知提醒」里调。
 - [dAI-aigc/dsh-wechat](https://github.com/dAI-aigc/dsh-wechat) — 基于腾讯 iLink 机器人通道的微信桥：每个联系人一个独立会话，支持入站文本/图片/文件，并在整轮运行期间显示微信原生“正在输入”。
