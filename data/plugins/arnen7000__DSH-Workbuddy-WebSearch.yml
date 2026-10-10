@@ -1,0 +1,6 @@
+url: https://github.com/arnen7000/DSH-Workbuddy-WebSearch
+name: arnen7000/DSH-Workbuddy-WebSearch
+category: tools
+description:
+  en: Makes the WorkBuddy desktop app's web search the dsh web_search provider, reusing the app's existing sign-in with no extra configuration.
+  zh: 把 WorkBuddy 桌面 App 的网络搜索作为 dsh 的 web_search 提供方，复用 App 已有的登录状态，无需额外配置。
