@@ -1,0 +1,6 @@
+url: https://github.com/vrvtvy/dsh-cache-hit-precision
+name: vrvtvy/dsh-cache-hit-precision
+category: usage
+description:
+  en: Refines the built-in cache-hit percentage to three decimals in place across the composer stats row and the token-usage dialog.
+  zh: 把内置缓存命中率在 composer 统计行与 Token 用量弹窗中原位精化为三位小数。
