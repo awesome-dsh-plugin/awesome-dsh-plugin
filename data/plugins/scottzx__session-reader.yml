@@ -1,0 +1,7 @@
+url: https://github.com/scottzx/session-reader
+name: scottzx/session-reader
+category: session
+description:
+  en: Search and read local Claude Code, Codex, Antigravity, Grok and DSH sessions from the 1session CLI or DSH Web history browser.
+  zh: 通过 1session 命令行或 DSH Web 历史浏览器搜索和读取 Claude Code、Codex、Antigravity、Grok 与 DSH 的本地编程会话。
+tarball: https://github.com/scottzx/session-reader/releases/download/v0.8.4/session-reader-0.8.4.tgz
