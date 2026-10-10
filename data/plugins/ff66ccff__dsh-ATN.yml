@@ -1,0 +1,6 @@
+url: https://github.com/ff66ccff/dsh-ATN
+name: ff66ccff/dsh-ATN
+category: agi
+description:
+  en: Adaptive topology multi-agent preset for DeepSeek Harness with peer messaging, a shared board, task handoff and live network visualization.
+  zh: 面向 DeepSeek Harness 的自适应拓扑多智能体预设，提供点对点通信、共享白板、任务交接和实时网络可视化。
