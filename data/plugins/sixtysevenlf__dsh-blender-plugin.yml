@@ -1,0 +1,6 @@
+url: https://github.com/sixtysevenlf/dsh-blender-plugin
+name: sixtysevenlf/dsh-blender-plugin
+category: tools
+description:
+  en: 'Lets a DSH agent drive a local Blender over a direct TCP channel with 15 tools: viewport frames, custom-angle renders, Python execution, headless and job offload, transaction rollback, and a planning layer of 183 ops across 28 families.'
+  zh: '让 DSH agent 通过直连 TCP 通道驱动本地 Blender，提供 15 个工具：视口帧、自定义视角渲染、Python 执行、无头与作业卸载、事务回滚，以及 28 个 family / 183 个 op 的规划层。'
