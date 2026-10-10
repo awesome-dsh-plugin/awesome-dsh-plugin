@@ -1,0 +1,7 @@
+url: https://github.com/18477514055/dsh-ledger-memory
+name: 18477514055/dsh-ledger-memory
+category: memory
+tarball: https://github.com/18477514055/dsh-ledger-memory/releases/download/v0.1.0/dsh-ledger-memory-0.1.0.tgz
+description:
+  zh: "项目级记忆，核心是台账：台账的结构由 AI 按项目类型自行决定，插件只负责检测、注入、回写、归档与 Git 配合。另有活动日志 L0–L4，其中 L4 逐字存档用户原话（不注入上下文，可按需查）。三层上下文压缩：常态只压最旧一段并保留最近，上下文到 70% 时做一次全量压缩并保留指向所需内容的指针，再靠交接单让新会话接上上一次的工作。每次压缩前把用户原话、报错原文、改过哪些文件落盘成一份逐字胶囊，重启不丢。12 个工具、9 个子命令、1 个设置页；纯本地运行，零运行时依赖。"
+  en: "Project-level memory built around a ledger whose structure the AI designs per project; the plugin only handles detection, injection, write-back, archiving and git. Also an activity log with five levels, where L4 stores the user's own words verbatim (never injected, queryable on demand). Three layers of context compaction: routine passes compress only the oldest span and keep recent turns, a full pass at 70% keeps pointers to what is needed, and a handoff document lets a new conversation resume the previous one. Before each compaction a verbatim capsule (user quotes, raw errors, changed files) is written to disk, so a restart loses nothing. 12 tools, 9 subcommands, one settings page. Runs locally, no runtime dependencies."
