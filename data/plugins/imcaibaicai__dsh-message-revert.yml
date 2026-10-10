@@ -1,0 +1,6 @@
+url: https://github.com/imcaibaicai/dsh-message-revert
+name: imcaibaicai/dsh-message-revert
+category: ui
+description:
+  en: Undo/revert sent messages in DSH chat, with same-origin RPC gate
+  zh: 在 DSH 聊天中撤回已发送消息，带同源 RPC 安全闸门
