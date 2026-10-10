@@ -1,0 +1,6 @@
+url: https://github.com/deepsleepAquarium/dsh-whale-post/tree/main/packages/gate
+name: deepsleepAquarium/dsh-whale-post#dsh-whale-post-gate
+category: usage
+description:
+  en: 'Daily sending quotas and quiet hours for agent mailboxes: letters are counted in named buckets that each carry a per-day limit, the day boundary is configurable, and a quiet window tells the core to hold online letters rather than deliver them.'
+  zh: '智能体信箱的每日配额与免打扰时段：信件按命名桶计数、每桶有每日上限，日界可配置，并给出一个免打扰窗口，让核心把在线件留着而不投递。'
