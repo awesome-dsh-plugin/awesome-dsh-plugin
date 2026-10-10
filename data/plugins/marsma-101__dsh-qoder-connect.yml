@@ -1,0 +1,6 @@
+url: https://github.com/marsma-101/dsh-qoder-connect
+name: marsma-101/dsh-qoder-connect
+category: model
+description:
+  en: 'Connects Qoder CN desktop app models to DeepSeek Harness with zero user interaction: decrypts local OSCrypt credentials, signs requests with the COSY scheme against the CN gateway, and lists 14 models with free-tier badges.'
+  zh: '将 Qoder CN 桌面版的模型接入 DeepSeek Harness，零用户交互：解密本地 OSCrypt 凭据，以 COSY 签名对接国内网关，14 个模型含免费额度标注。'
