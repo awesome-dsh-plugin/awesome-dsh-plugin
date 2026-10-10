@@ -348,6 +348,7 @@ dsh plugin --profile web add dshmarket
 - [He2way/dsh-task-console](https://github.com/He2way/dsh-task-console) — 把 DSH 页面翻到背面变成玻璃任务台（会话 / 后台任务 / 子代理 / 工作区卡片），并提供无限画布：能把卡片拆成可拖动的控件、内嵌网页应用，还能用对话框直接改画布。
 - [heiheiha798/dsh-plugin-response-window](https://github.com/heiheiha798/dsh-plugin-response-window) — Web UI 插件：以阶段性文字回复为界分段，把每段的 think 与工具调用收进限高可滚动、高度可配置的 slide 窗口，中间过程始终可见。
 - [hellofuture2068/dsh-simple-view](https://github.com/hellofuture2068/dsh-simple-view) — 简化 DSH 聊天界面：隐藏执行日志、收紧间距与字号、把消息做成气泡，并注入可编辑的“简洁回复”系统指令。
+- [HERO476/dsh-sidecard-ask](https://github.com/HERO476/dsh-sidecard-ask) — 在 DSH Web 界面划词就地追问（浮出按钮，或 Alt+Q 快捷键）：答案由不继承父上下文的独立子代理流式产出到侧边卡片，承载面为原生右侧栏 / dsh-better-sidebar / 内置浮层，也可把问题改为落回主对话。
 - [hg1048596-pixel/dsh-recall-unread](https://github.com/hg1048596-pixel/dsh-recall-unread) — 在输入框上方提供「未读消息」条带，可在模型读取前撤回已发送但尚未被读取的文字消息。
 - [hiJoeLee/dsh-suggest-actions](https://github.com/hiJoeLee/dsh-suggest-actions) — 在每条回复下方给出可点的下一步建议，点一下就把那句话作为你的消息发出去。
 - [Hilbert-beinghappy/seektty](https://github.com/Hilbert-beinghappy/seektty) — 面向 DeepSeek Harness 的终端工作区，支持导入本地 VS Code JSON／JSONC 主题、继承终端背景效果、鼠标文本选择、结构化工具与 Diff 视图、Session／Profile／插件管理，以及 Skill／MCP 浏览。
@@ -950,6 +951,7 @@ dsh plugin --profile web add dshmarket
 - [gdy01/dsh-token-cost](https://github.com/gdy01/dsh-token-cost) — 在 DSH Web 侧边栏按项目展示 LLM Token 用量与人民币花费，分别统计输入（未命中）、命中与输出，并按模型标准价格自动计价。
 - [gejiaju/dsh-balance](https://github.com/gejiaju/dsh-balance) — 显示 DeepSeek API 余额，并判断当前是否为高峰时段，实时倒计时到下次切换。
 - [Ghost011118/dsh-balance-meter](https://github.com/Ghost011118/dsh-balance-meter) — 输入框 dock 显示 DeepSeek 账户余额与会话花费，自动拉取官方定价，支持高峰/低谷计价。
+- [GIN0076/dsh-token-usage](https://github.com/GIN0076/dsh-token-usage) — DSH 设置面板词元用量统计：从会话日志折叠出日/周/月 × 模型（或按厂商合并）的词元统计，storage-domain 持久化、经同源 /token-usage-rpc 路由出数；SVG 折线图（十字线悬浮按日拆到每个模型）+ 占比排行（含可选金额）+ 缓存命中率与缓存读写卡片 + 用户自备的每百万 token 价目表 + 日/月预算告警 + 当前区间导出 CSV/JSON + 可见时自动刷新 + 预设与自定义起止日期 + 重建（存储里存在日志已不存在的历史时先要一次确认）。
 - [GLFzr/dsh-opencode-go-quota](https://github.com/GLFzr/dsh-opencode-go-quota) — 模型选择器左侧的 OpenCode Go 额度圆环：点击循环切换 5 小时/每周/每月用量窗口，按紧急程度着色（绿/蓝/橙/红），悬停显示百分比与重置倒计时。
 - [GooDAnDReaDY/dsh-cost-meter](https://github.com/GooDAnDReaDY/dsh-cost-meter) — 在 DeepSeek Harness 对话标题栏显示会话费用芯片：实时分桶 Token 用量、高峰/非高峰费率，以及到下次费率切换的倒计时。
 - [GooDAnDReaDY/dsh-key-limits](https://github.com/GooDAnDReaDY/dsh-key-limits) — 在 DSH 界面与设置中显示 API Key 和订阅账户的额度限制。
@@ -1869,6 +1871,7 @@ dsh plugin --profile web add dshmarket
 - [freehul/sgme](https://github.com/freehul/sgme) — 拾光记忆引擎（SGME）桥接：多智能体共享长期记忆（HTTP）—— L0/L1/L1.5/L2 分层提炼、按场景注入、统一检索、主动关怀信号（memory_search / wiki_search / signal_pull / signal_claim / signal_ack），npm 包名 `dsh-sgme`。
 - [Frog755/dsh-hybrid-memory](https://github.com/Frog755/dsh-hybrid-memory) — DSH 本地混合记忆插件：L1 快照（MEMORY.md/USER.md，由 memory_* 工具按需读取）+ L2 可检索知识库（facts + SQLite FTS5，滑窗分词支持中文检索）+ L3 从 Hermes/Claude Code/Codex/WorkBuddy 以及 Agent Hub 已批准文档（memory/global、memory/projects、accepted decisions）导入，内容哈希去重。v0.2.0 已移除全部自动注入：记忆只在模型调用 12 个 memory_* 工具之一时才进入上下文，数据全部留在本地。
 - [gezi-wen/sage-mem](https://github.com/gezi-wen/sage-mem) — 基于文件的跨会话记忆：纯 Markdown 记忆文件，检索结果自动注入；格式与 Claude Code 的 CLAUDE.md 及记忆文件兼容，迁移即手工复制文件。
+- [GIN0076/cross-session-memory](https://github.com/GIN0076/cross-session-memory) — 跨会话记忆「错题本」插件：每轮把 ≤2 KB 的记忆索引原文注入提示词；mem_recall / mem_save 模型工具，写入闸要求四段结构 + 可定位引用 + 人工批准才落盘；注册 /memory 命令；所有教训以零依赖 Markdown 条目存放在 .memory/ 目录。
 - [GIT121995/dsh-memory-gate](https://github.com/GIT121995/dsh-memory-gate) — 有界本地记忆 + CBDC 权威门控：SQLite + FTS5 claims，作用域召回并给出可解释的采用/核验/忽略决策与完整审计轨迹，/memory 命令，每次注入 ≤3 条/1200 字符，不增加额外模型调用。
 - [giter00/dsh-headroom](https://github.com/giter00/dsh-headroom) — 面向 DeepSeek Harness 的自动上下文压缩插件：在工具输出进入模型前压缩，并通过 CCR 检索工具保持所有有损压缩可逆。
 - [GodCC6/dsh-claude-memory](https://github.com/GodCC6/dsh-claude-memory) — 只读桥接 Claude Code 已有项目记忆到 DSH：按 git 仓库根解析、注入前脱敏、按需检索工具，零依赖。
