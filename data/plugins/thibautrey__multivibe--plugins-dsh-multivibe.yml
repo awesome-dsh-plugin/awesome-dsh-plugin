@@ -1,0 +1,6 @@
+url: https://github.com/thibautrey/multivibe/tree/main/plugins/dsh-multivibe
+name: thibautrey/multivibe#dsh-multivibe
+category: model
+description:
+  en: Connect DSH to a MultiVibe gateway and inspect available models and connection status.
+tarball: https://github.com/thibautrey/multivibe/releases/download/dsh-multivibe-v0.1.0/dsh-multivibe-0.1.0.tgz
