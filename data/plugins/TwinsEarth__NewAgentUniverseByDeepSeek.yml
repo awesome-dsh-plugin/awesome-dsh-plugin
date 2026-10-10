@@ -1,0 +1,29 @@
+# Submission to the DSH plugin market (`awesome-dsh-plugin`).
+#
+# The site states the rule exactly: "one YAML file under `data/plugins/` is the whole
+# submission; the READMEs and this site regenerate automatically."
+#
+# This file is kept in the repository rather than only in a pull request, so the entry that
+# describes this project is reviewable, diffable and reproducible like everything else here.
+# The copy that matters lives at:
+#   data/plugins/TwinsEarth__NewAgentUniverseByDeepSeek.yml
+# in https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+#
+# `npm` **and** `tarball`: both paths are published and both were verified.
+#
+# The catalogue accepts either (224 entries ship a tarball with no npm package). This project now
+# offers both, and they are not redundant: `npm` is what the market's one-click install prefers
+# -- "经仓库验证的 npm 包" first -- while the tarball is the release asset built by this
+# project's own publish step and needs no registry at all.
+#
+# Both were verified the same way, by installing from the published location into a profile
+# nothing had used: for `npm` that meant resolving the name from the public registry and then
+# importing the installed copy, and it registers all five tools and runs.
+url: https://github.com/TwinsEarth/NewAgentUniverseByDeepSeek
+name: TwinsEarth/NewAgentUniverseByDeepSeek
+category: tools
+npm: '@twinsearth/nau-dsh-plugin'
+tarball: https://github.com/TwinsEarth/NewAgentUniverseByDeepSeek/releases/download/v3.4.5/twinsearth-nau-dsh-plugin-3.4.5.tgz
+description:
+  zh: "把 NewAgentUniverseByDeepSeek 节点接入 DSH：五个只读工具，覆盖版本与上游出处、数据目录恢复状态与账本审计、一致性向量、精确十进制换算，以及节点可达性探测。刻意不暴露启动/停止守护进程、存款、发总线消息这类在本项目里受审计的特权操作。"
+  en: "NewAgentUniverseByDeepSeek nodes inside DSH: five read-only tools covering provenance (both upstream releases this build names), a data directory's restored state and ledger audit, the conformance vectors, exact decimal conversion, and node reachability. Driving the node -- starting or stopping a daemon, depositing funds, sending bus messages -- is deliberately not exposed, because those are audited privileged operations in this project."
