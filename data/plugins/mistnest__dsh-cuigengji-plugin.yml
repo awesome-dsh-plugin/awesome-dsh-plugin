@@ -1,5 +1,5 @@
 url: https://github.com/mistnest/dsh-cuigengji-plugin
-name: mistnest/dsh-cuigengji-plugin
+name: dsh-cuigengji-plugin
 category: ui
 description:
   en: A fiction-writing workbench for DSH with chapter editing, shared plot canvases, grouped character and world settings, writing presets, and scoped import/export for author-agent collaboration.
