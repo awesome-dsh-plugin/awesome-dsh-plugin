@@ -1,0 +1,6 @@
+url: https://github.com/baixiaoustc/dsh-kidlab/tree/main/plugins/kid-memory
+name: baixiaoustc/dsh-kidlab#kid-memory
+category: fun
+description:
+  en: "Explains computer memory as a workbench: current usage, memory pressure and top programs."
+  zh: "把内存讲成工作台：当前占用、内存压力、最占内存的程序。"
