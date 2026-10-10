@@ -1,0 +1,6 @@
+url: https://github.com/du-yuxuan/OneKey-Models
+name: du-yuxuan/OneKey-Models
+category: model
+description:
+  en: 'One-click TokenDance gateway access: OAuth sign-in stores the API key, a live 108-model catalog with per-model visibility, image generation, Jev tools and multimodal input.'
+  zh: '一键接入 TokenDance 聚合网关：OAuth 登录自动保存 API Key、实时 108 模型目录可逐个开关显隐，含生图、Jev 判断与多模态输入。'
