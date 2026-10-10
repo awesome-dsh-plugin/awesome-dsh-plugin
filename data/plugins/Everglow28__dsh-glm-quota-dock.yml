@@ -1,0 +1,6 @@
+url: https://github.com/Everglow28/dsh-glm-quota-dock
+name: Everglow28/dsh-glm-quota-dock
+category: usage
+description:
+  en: Shows GLM Coding Plan quota windows (5-hour, weekly, monthly tools) as independently colored percentages in the composer stats row, with a detail panel for limits, reset times and 24-hour per-model usage.
+  zh: 在输入框统计行常驻 GLM Coding Plan 额度 pill,5 小时/周/工具窗口独立着色,详情面板含限额进度条、重置时间与近 24 小时按模型用量。
