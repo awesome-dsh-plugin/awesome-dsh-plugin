@@ -1,0 +1,6 @@
+url: https://github.com/Dalizi2026/dsh-factory-provider
+name: Dalizi2026/dsh-factory-provider
+category: model
+description:
+  en: 'Brings a Factory (Droid) subscription into DSH as native LLM providers: three protocol routes (Anthropic Messages, OpenAI chat/completions, OpenAI responses) with streaming passthrough through a loopback gateway, a per-provider model catalog with thinking-intensity levels, a local API-key store with switching, and a settings page covering connection status, subscription quota, token counts and diagnostics.'
+  zh: '把 Factory (Droid) 订阅接入 DSH 作为原生 LLM provider：经回环网关透传三条协议路由（Anthropic Messages、OpenAI chat/completions、OpenAI responses）的流式响应，写入含思考档位的模型目录，支持本机存储与切换多个 API key，并提供连接状态、订阅额度、Token 统计与诊断日志的设置页。'
