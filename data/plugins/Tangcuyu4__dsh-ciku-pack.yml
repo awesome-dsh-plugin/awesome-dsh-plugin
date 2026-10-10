@@ -1,0 +1,6 @@
+url: https://github.com/Tangcuyu4/dsh-ciku-pack
+name: Tangcuyu4/dsh-ciku-pack
+category: identity
+description:
+  en: "Banter lexicon plugin: collects the words and angry quips the user said into banter ammo with add, list and random-pick tools, and injects the current ammo list into the prompt every turn."
+  zh: "斗嘴词库插件：把用户说过的粗口与气话收成斗嘴弹药，配收录、查看与随机抽取工具，弹药清单每轮自动注入提示词。"
