@@ -1,0 +1,6 @@
+url: https://github.com/jingyi0605/Codingns4DSH
+name: jingyi0605/Codingns4DSH
+category: workflow
+description:
+  en: Integrates coding agent CLIs, persistent terminals and remote workspaces into the native DeepSeek Harness interface.
+  zh: 将十几种编程助手 CLI、持久终端与远程工作区接入 DSH 原生界面。
