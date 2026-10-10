@@ -1,0 +1,6 @@
+url: https://github.com/ruaibeite/dsh-files-to-chat
+name: ruaibeite/dsh-files-to-chat
+category: ui
+description:
+  en: 'Right-click a file or folder row in the right sidebar file tree to add it to the conversation as an @ reference; Cmd/Ctrl-click and Shift-click build a multi-select, and the menu then inserts the whole batch (or the header chip inserts it in one click). Only the @path text is inserted — quoting for paths with spaces matches typing @ yourself, and file contents are never attached.'
+  zh: '在右侧栏文件树上右键文件或文件夹行，把它作为 @ 引用加进当前会话；⌘/Ctrl 点击与 Shift 点击可多选，菜单随后一次插入整批（表头芯片也能一键插入）。插入的只是 @path 文本 —— 含空格路径的引号写法与手打 @ 一致，且不会附带文件内容。'
