@@ -1,0 +1,6 @@
+url: https://github.com/letterk/dsh-adhd-mode
+name: letterk/dsh-adhd-mode
+category: skill
+description:
+  en: 'Injects an ADHD-friendly output ruleset as a system-prompt section, and switches it on and off from the Web UI: a settings page and an ADHD button in the composer tool row. The switch is profile-wide, applies on the next step, and persists across restarts.'
+  zh: '把一套面向 ADHD 读者的输出风格规则作为系统提示词段落注入，并在 Web 界面里随时开关：一个设置页，加输入框工具栏里的 ADHD 按钮。开关是全局的，改完下一轮生效，重启后保持。'
