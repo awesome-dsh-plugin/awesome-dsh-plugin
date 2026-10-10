@@ -1,0 +1,6 @@
+url: https://github.com/hawkongz/dsh-chat-locator
+name: hawkongz/dsh-chat-locator
+category: ui
+description:
+  en: 'Turn-rail settings for the DSH Web conversation locator: tick thickness, which side the rail sits on, a length gradient anchored on the hovered tick, and a plain-text hover preview whose line count, font size and width you control.'
+  zh: 'DSH Web 对话定位条的轮次轨道设置：刻度粗细、轨道靠哪一侧、锚在悬停那根上的长度渐变，以及行数、字号、宽度都可调的纯文本悬停预览。'
