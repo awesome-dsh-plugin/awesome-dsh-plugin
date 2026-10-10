@@ -1,0 +1,6 @@
+url: https://github.com/zepeng-jin/dsh-completion-notifier
+name: zepeng-jin/dsh-completion-notifier
+category: notify
+description:
+  en: Native macOS completion notifications and user approval alerts with Settings UI for DeepSeek Harness.
+  zh: DeepSeek Harness 原生任务完成通知与审批提醒插件，集成设置面板。
