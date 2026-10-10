@@ -1,0 +1,7 @@
+url: https://github.com/YaphetHayate/codeRDD/tree/master/dsh/dsh-rdd-explore
+name: YaphetHayate/codeRDD#dsh-rdd-explore
+category: tools
+tarball: https://github.com/YaphetHayate/codeRDD/releases/latest/download/dsh-rdd-explore.tgz
+description:
+  en: 'Cache-first code exploration: the rdd_explore tool queries the project''s .rdd/exploration index and, on a miss, dispatches a read-only worker subagent to explore and register findings.'
+  zh: '缓存优先的代码探索：rdd_explore 工具查询项目 .rdd/exploration 索引，未命中时派遣只读 worker 子代理探索并注册产物。'
