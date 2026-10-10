@@ -1,0 +1,6 @@
+url: https://github.com/weixshaw/dsh-rss
+name: weixshaw/dsh-rss
+category: tools
+description:
+  en: "RSS/Atom reader with grouped subscriptions and unread/total counts, FreshRSS account sync over the Google Reader API with read/star written back, local image proxy, optional BYOK AI summary/translate/Q&A, podcast audio playback and full-text fetch."
+  zh: "RSS/Atom 阅读器——分组订阅与未读/总数双计数、FreshRSS 账号同步（Google Reader API，已读/收藏双向写回）、图片本地代理、自带 Key 的 AI 摘要/翻译/单篇问答、播客音频与全文抓取。"
