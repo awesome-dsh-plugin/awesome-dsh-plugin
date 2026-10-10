@@ -1,0 +1,6 @@
+url: https://github.com/zqh260619/dsh-dupguard
+name: zqh260619/dsh-dupguard
+category: dev
+description:
+  en: 'Stops a streaming model call when the same string repeats ten times in a row (threshold configurable), keeps the partial answer as a normal assistant message, and shows a stop notice with the workspace, session name and the repeated string. Repeat counts can vary by unit length through a piecewise table or a JavaScript module, and code regions (fenced, inline, indented) use a relaxed threshold.'
+  zh: '同一字符串连续重复达到阈值（默认 10 次）时截停本次生成，已生成内容照常提交；截停后弹出通知，显示所属工作区、会话名称与重复的字符串。重复次数可按单元长度用分段表或 JS 模块决定，代码区域（围栏 / 行内 / 缩进）使用放宽的阈值。'
