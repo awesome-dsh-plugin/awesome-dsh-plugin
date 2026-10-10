@@ -1,0 +1,7 @@
+url: https://github.com/YV919/dmxapi-dsh
+name: YV919/dmxapi-dsh
+category: model
+description:
+  en: Configure DMXAPI Chat Completions, Responses, Anthropic Messages, and custom providers; edit models on existing preset routes.
+  zh: 配置 DMXAPI Chat、Responses、Anthropic 和自定义服务商，并直接编辑已有预设服务商的模型。
+tarball: https://github.com/YV919/dmxapi-dsh/releases/download/v0.2.0/dsh-dmxapi-0.2.0.tgz
