@@ -10,5 +10,5 @@ category: tools
 tarball: https://github.com/pearjelly/deep-blend/releases/latest/download/deepblend-bundle.tgz
 description:
   # Quoted one-line descriptions; keep the canonical text here and project it.
-  en: 'Create Blender product scenes in DSH from editable recipes or your own models: 17 tools for editing, previews and visual review; save original PNGs and deliver MP4s, with immutable revisions, an approval gate, read-only environment checks and recoverable creation.'
-  zh: '在 DSH 中从可编辑配方或自己的模型创建 Blender 产品场景；17 个工具支持编辑、预览与视觉评审，保存原图 PNG 并交付 MP4，保留不可变版本和审批闸门，支持只读环境检查与创建失败后继续。'
+  en: 'Create Blender product scenes in DSH from editable recipes or your own models: 17 tools for editing, previews and visual review; save original PNGs and deliver MP4s, with immutable revisions, an approval gate, read-only environment checks, browser-saved creation drafts and explicit creation recovery.'
+  zh: '在 DSH 中从可编辑配方或自己的模型创建 Blender 产品场景；17 个工具支持编辑、预览与视觉评审，保存原图 PNG 并交付 MP4，保留不可变版本和审批闸门，支持只读环境检查、浏览器创建草稿与明确重试恢复。'
