@@ -1,0 +1,6 @@
+url: https://github.com/shanhai-city-states/kaipu-dsh-plugin-release/tree/main/packages/plugin-wisdom
+name: shanhai-city-states/kaipu-dsh-plugin-release#plugin-wisdom
+category: workflow
+description:
+  en: 'Built-in wisdom-team module for the Kai Pu workspace: an optional panel of reviewer agents that drops into the venue out of the box, and can be replaced seat-by-seat when the user brings their own agents.'
+  zh: '山海·开铺的内置智囊团模块：可选的审核 Agent 组，开箱即用；用户自带 Agent 时，席位可逐个替换。'
