@@ -1,0 +1,6 @@
+url: https://github.com/xkjxziochu/dsh-input-optimizer
+name: xkjxziochu/dsh-input-optimizer
+category: ui
+description:
+  en: 'Rewrites the draft in the DSH composer into a clearer, more executable prompt through the harness''s own LLM routes, showing an original/optimized comparison before you adopt it.'
+  zh: '把 DSH 输入框里的草稿通过 harness 自身的 LLM 路由改写成更清晰、更可执行的提示词，采纳前先显示原文与优化后的对比。'
