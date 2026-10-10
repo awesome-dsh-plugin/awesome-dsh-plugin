@@ -1,0 +1,7 @@
+url: https://github.com/xypang33-sketch/dsh-save-chat
+name: xypang33-sketch/dsh-save-chat
+category: session
+tarball: https://github.com/xypang33-sketch/dsh-save-chat/releases/latest/download/dsh-save-chat.tgz
+description:
+  en: 'Save whole turns — the question plus the full answer — as plain Markdown inside the session workspace, promote the good ones into a cross-project personal knowledge base, and let the model search it on demand. No database and no runtime dependencies.'
+  zh: 把整轮问答（问题 + 完整回答）存成工作区里的纯 Markdown；把值得留的提升进跨项目个人知识库，模型可按需检索。无数据库、零运行时依赖。
