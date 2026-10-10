@@ -1,5 +1,5 @@
-url: https://github.com/weimingyu9312/DSHDirect
-name: weimingyu9312/DSHDirect
+url: https://github.com/weimingyu9312/DSHDirect/tree/main/packages/plugin
+name: weimingyu9312/DSHDirect#plugin
 category: tools
 description:
   en: "Direct MCP client and manager for DeepSeek Harness that runs every connection in a separate child process and never registers MCP tools into the host tool runtime (the built-in dsh-mcp-client registers them and OOM-crashes the Desktop host): add, probe, list, schema, call and remove streamable-http / stdio servers from a shared CLI and a Settings-page UI, with one servers.json, generated <name>-mcp commands and per-server skills."
