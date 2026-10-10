@@ -1,0 +1,6 @@
+url: https://github.com/cyh3436332528/dsh-plugin-session-purge/tree/main/plugin
+name: cyh3436332528/dsh-plugin-session-purge#plugin
+category: session
+description:
+  en: 'Permanently delete a DSH session — not just archive it — cascading over its log directory, projection cache, workspace bookkeeping and child (subagent) sessions. Adds a settings-page panel that groups sessions by workspace with size, age and live/archived/child markers, supports filtering and batch deletion, and confirms each deletion inline below the row.'
+  zh: '永久删除 DSH 会话（而非仅归档），级联清理它的日志目录、投影缓存、工作区记账与子会话（子代理）。提供设置页面板：按工作区分组，显示体积、时间与「打开中 / 已归档 / 子会话 N / 无工作区」标记，支持筛选与批量删除，每条删除都在行下方内联二次确认。'
