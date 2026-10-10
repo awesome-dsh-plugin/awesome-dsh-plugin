@@ -1372,5 +1372,13 @@
   "https://github.com/qinyre/dsh-plugin-archive-manager": [
     "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-rail.png",
     "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-archive.png"
+  ],
+  "https://github.com/webkubor/dsh-bloom-theme": [
+    "https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/main/assets/screenshots/ui-switcher.png",
+    "https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/main/assets/screenshots/ui-mist-light.png",
+    "https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/main/assets/screenshots/ui-mist-dark.png",
+    "https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/main/assets/screenshots/ui-petal-dark.png",
+    "https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/main/assets/screenshots/ui-amber-light.png",
+    "https://raw.githubusercontent.com/webkubor/dsh-bloom-theme/main/assets/screenshots/ui-lavender-dark.png"
   ]
 }
