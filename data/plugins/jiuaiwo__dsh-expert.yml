@@ -1,0 +1,6 @@
+url: https://github.com/jiuaiwo/dsh-expert
+name: jiuaiwo/dsh-expert
+category: agi
+description:
+  en: 'Expert roster for DeepSeek Harness: 623 experts across 22 divisions with full Chinese names and bios, summoned as subagents from the @ menu or by the model through list_t_experts / summon_t_expert / summon_t_experts, plus custom experts and a skill on/off switch.'
+  zh: 'DeepSeek Harness 的专家名册：22 个分类、623 位专家，中文名与简介全量覆盖；从 @ 菜单或由模型经 list_t_experts / summon_t_expert / summon_t_experts 三个工具召唤为子代理，另可自建专家，并带一个技能开关。'
