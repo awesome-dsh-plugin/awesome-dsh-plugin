@@ -1,0 +1,6 @@
+url: https://github.com/571242/dsh-armor-switch
+name: 571242/dsh-armor-switch
+category: session
+description:
+  en: 'Hot-toggleable delivery contract above the composer: rewrites prompt rules for operator authority and deliverable execution when enabled, and stays byte-identical to the stock prompt when off.'
+  zh: '输入框上方的热切换交付契约芯片：开启时重写操作者指令权威与交付规则，关闭时与官方提示词逐字节一致，无需重启即时生效。'
