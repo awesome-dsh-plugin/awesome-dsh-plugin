@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-fmea-table-check
+name: PerryLink/dsh-fmea-table-check
+category: tools
+description:
+  en: "Checks an FMEA worksheet for element completeness and for the arithmetic that follows from it - severity, occurrence and detection against the resulting risk priority number - following published FMEA method standards. Reports inconsistencies; it does not judge whether the ratings themselves are appropriate."
+  zh: "参照公开的 FMEA 方法标准，核对 FMEA 分析表的要素齐备性，以及严重度、发生度、探测度与风险顺序数之间的算术一致性。只报告不一致之处，不评价各项评分数值是否恰当。"
