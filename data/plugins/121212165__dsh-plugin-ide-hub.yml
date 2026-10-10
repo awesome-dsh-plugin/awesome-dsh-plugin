@@ -1,0 +1,7 @@
+url: https://github.com/121212165/dsh-plugin-ide-hub
+name: 121212165/dsh-plugin-ide-hub
+category: workflow
+tarball: https://github.com/121212165/dsh-plugin-ide-hub/releases/download/v0.7.0/dsh-plugin-ide-hub-0.7.0.tgz
+description:
+  en: "One hub over every coding IDE you run — dsh, Claude Code, Codex, ZCode, Qoder, CatPaw, Trae, OpenCode. Zero-API: it reads each tool's own on-disk state and gives a session inventory, per-IDE usage with cache-hit rates, one-line resume commands, and a single .hub/ rule body wired into all eight via marker-delimited pointer files. The domestic-IDE adapters (Trae/Qoder/CatPaw) were verified against the installed binaries — a gap no overseas tool covers."
+  zh: "一个入口管住所有编码 IDE（dsh/Claude Code/Codex/ZCode/Qoder/CatPaw/Trae/OpenCode）：零 API 读各自磁盘状态，出会话盘点、按 IDE 用量与缓存命中率、一键恢复命令，并用指针文件把一份规则本体接入全部 8 个工具。国产 IDE 适配位从本机安装的二进制里逐一逆向核实，补齐海外工具的空缺。"
