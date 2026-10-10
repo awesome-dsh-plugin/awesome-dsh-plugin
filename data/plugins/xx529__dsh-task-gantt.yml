@@ -1,0 +1,6 @@
+url: https://github.com/xx529/dsh-task-gantt
+name: xx529/dsh-task-gantt
+category: ui
+description:
+  en: Agent-team task Gantt chart for the DSH sidebar - one swimlane per teammate, real session-log time on the x-axis, and every shared task drawn with its title and summary.
+  zh: DSH 侧边栏的 agent team 任务甘特图：每个 teammate 一条泳道，横轴取自真实会话日志时间，条内显示共享任务的标题与简介。
