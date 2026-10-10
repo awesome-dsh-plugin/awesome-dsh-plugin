@@ -1,0 +1,6 @@
+url: https://github.com/Moolight/dsh-shader-workbench
+name: Moolight/dsh-shader-workbench
+category: ui
+description:
+  en: 'Node-based GLSL workbench: wire a shader graph on a canvas and preview it live. Compiles to Shadertoy-compatible GLSL with multi-pass buffers (BufferA–D), hot reload, and a local workspace for projects, materials, snapshots, texture slots and GLSL export. Ships 55 built-in nodes and 7 bundled examples; repetition is a repeatable group rather than duplicated nodes. Registers 9 tools so the agent can create projects, build graphs, compile, export and snapshot the same workspace the panel edits. No runtime dependencies.'
+  zh: '节点式 GLSL 工作台：在画布上连着色器图并实时预览，编译成 Shadertoy 兼容的 GLSL，支持 BufferA–D 多 Pass 反馈、热重载，以及项目 / 材质 / 快照 / 纹理槽位 / 导出 GLSL 的本地工作区。内置 55 个节点与 7 个自带示例；重复写成「重复组」而不是复制节点。注册 9 个工具，让 agent 能建项目、搭图、编译、导出、打快照，与面板共用同一份工作区。无运行时依赖。'
