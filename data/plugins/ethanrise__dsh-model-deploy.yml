@@ -1,0 +1,6 @@
+url: https://github.com/ethanrise/dsh-model-deploy
+name: ethanrise/dsh-model-deploy
+category: dev
+description:
+  en: Inspects ONNX models (inputs/outputs, shapes, opset, operators, size) and benchmarks them with ONNX Runtime on the local machine or on a remote target over SSH, reporting average/P50/P95/P99 latency, FPS and the execution provider actually used, with PASS/FAIL gates for FPS, P95 latency and model size.
+  zh: 检查 ONNX 模型（输入输出、形状、opset、算子、体积），并用 ONNX Runtime 在本机或通过 SSH 在远程设备上做基准测试，报告平均/P50/P95/P99 延迟、FPS 及实际使用的执行后端，可按 FPS、P95 延迟和模型体积设置 PASS/FAIL 部署门槛。
