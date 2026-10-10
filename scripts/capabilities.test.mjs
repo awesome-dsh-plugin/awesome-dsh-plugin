@@ -73,7 +73,7 @@ test('stores the capability shape the scanner printed, and nothing else', () => 
       score: 28,
       band: 'red',
     }],
-  }, { spec: 'fallback', version: null, tool: 'dsh-trust-check@0.1.13', now: '2026-09-24T12:00:00Z' })
+  }, { spec: 'fallback', version: null, tool: 'dsh-trust-check@0.2.1', now: '2026-09-24T12:00:00Z' })
 
   assert.deepEqual(facts, {
     version: '0.1.45',
@@ -81,7 +81,7 @@ test('stores the capability shape the scanner printed, and nothing else', () => 
     capabilities: ['shell', 'fs-write', 'fs-read', 'network', 'credentials', 'env', 'host-runtime'],
     redLines: ['reads credentials/secrets AND has network access'],
     scannedAt: '2026-09-24T12:00:00Z',
-    tool: 'dsh-trust-check@0.1.13',
+    tool: 'dsh-trust-check@0.2.1',
   })
   // `score` and `band` are dropped on purpose: upstream says the band is not a
   // pre-install verdict, and a number ranking plugins safe/unsafe is the badge
