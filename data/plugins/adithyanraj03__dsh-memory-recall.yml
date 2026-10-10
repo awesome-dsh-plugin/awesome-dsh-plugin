@@ -1,0 +1,6 @@
+url: https://github.com/adithyanraj03/dsh-memory-recall
+name: adithyanraj03/dsh-memory-recall
+category: memory
+tarball: https://github.com/adithyanraj03/dsh-memory-recall/releases/latest/download/plugin.tgz
+description:
+  en: "Persistent memory for dsh in the style of Hermes Agent: a memory tool that keeps a user profile and the model's own notes, delivered to every chat as a logged context message — at the start, after a change and after compaction — and a session_search tool that reads earlier chats only after the user approves, with a Memory panel to see and edit what is kept."
