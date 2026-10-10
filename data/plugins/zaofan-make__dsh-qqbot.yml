@@ -1,5 +1,5 @@
-url: https://github.com/gcry13067381632-jpg/dsh-qqbot
-name: gcry13067381632-jpg/dsh-qqbot
+url: https://github.com/zaofan-make/dsh-qqbot
+name: zaofan-make/dsh-qqbot
 category: notify
 description:
   en: 'QQ official bot channel for DeepSeek Harness (feature-rich fork of tencent-connect/dsh-qqbot): group and private chat with the full agent, sticker library with auto-tagging and AI meme replies, group management (join approval and mute), botplay interactive card events with paginated catalogs, user extension registry (custom slash commands and QQ tools), scheduled wakeups, remote approvals over QQ, and a floating dock web UI.'
