@@ -1,0 +1,6 @@
+url: https://github.com/cq-guojia/rulemux/tree/master/dsh-plugin
+name: cq-guojia/rulemux#dsh-plugin
+category: dev
+description:
+  en: 'DeepSeek Harness plugin for rulemux: reads the rule files rulemux syncs into <workspace>/.dsh/rules and injects them into the session at the first user turn, once per session.'
+  zh: 'rulemux 的 DeepSeek Harness 插件：读取 rulemux 同步到 <workspace>/.dsh/rules 的规则文件，在每次会话的首条用户消息时注入一次。'
