@@ -1,0 +1,7 @@
+url: https://github.com/Drkoh-wz/team-craft/tree/main/packages/team-flowise
+name: Drkoh-wz/team-craft#team-flowise
+category: workflow
+tarball: https://github.com/Drkoh-wz/team-craft/releases/latest/download/team-flowise.tgz
+description:
+  en: 'Dependency-ordered multi-agent team runner for DeepSeek Harness: define roles with their own model, persona and tools, run a node graph with an independent review gate and bounded rework, and watch progress in the web UI.'
+  zh: 'DSH 的多角色团队编排插件：给每个角色各自的模型、人设与工具，按依赖跑节点图，带独立评审与有上限的返工，并在界面里看进度。'
