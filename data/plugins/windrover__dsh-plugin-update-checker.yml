@@ -1,0 +1,6 @@
+url: https://github.com/windrover/dsh-plugin-update-checker
+name: windrover/dsh-plugin-update-checker
+category: tools
+description:
+  en: 'Adds a "Check updates" tab to the Built-in plugins settings: scans every installed bundle for the latest published version and DSH-runtime compatibility, with a per-plugin update action.'
+  zh: '在内置插件设置里新增「检查更新」标签页：扫描每个已安装插件的最新发布版本与 DSH 运行时兼容性，并提供逐插件更新操作。'
