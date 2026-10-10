@@ -1,0 +1,6 @@
+url: https://github.com/lifeopsgo/dsh-lark-session-monitor-plugin
+name: lifeopsgo/dsh-lark-session-monitor-plugin
+category: session
+description:
+  en: 'Watches Feishu (Lark) conversations with your own user identity and forwards new messages as prompts into a chosen DeepSeek Harness session: per-monitor sender filters, @bot-mention bypass and keyword allow/block lists, auto-created pinned target sessions, and cursor-based polling that re-reads messages after a failed delivery.'
+  zh: '以用户本人身份监听飞书会话，把新消息作为 prompt 投递到指定的 DeepSeek Harness 会话：每个监听支持发送者过滤、@机器人提及与关键词黑白名单，可自动创建并固定目标会话，游标式轮询在投递失败后会重读消息。'
