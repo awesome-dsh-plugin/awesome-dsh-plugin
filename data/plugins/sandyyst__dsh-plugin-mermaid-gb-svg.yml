@@ -1,0 +1,6 @@
+url: https://github.com/sandyyst/dsh-plugin-mermaid-gb-svg
+name: sandyyst/dsh-plugin-mermaid-gb-svg
+category: tools
+description:
+  en: Converts Mermaid flowcharts into GB/T 1526-1989 (ISO 5807) compliant SVG through one model-facing tool, with optional A4/A3 pagination.
+  zh: 把 Mermaid 流程图转成符合 GB/T 1526-1989（等同 ISO 5807）图形符号的 SVG，可选用 A4/A3 幅面自动分页。
