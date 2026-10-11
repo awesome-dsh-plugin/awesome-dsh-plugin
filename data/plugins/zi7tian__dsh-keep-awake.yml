@@ -1,0 +1,6 @@
+url: https://github.com/zi7tian/dsh-keep-awake
+name: zi7tian/dsh-keep-awake
+category: tools
+description:
+  en: Keeps the DSH host awake during active tasks using native power assertions and releases them when tasks finish.
+  zh: 在任务运行期间通过原生电源断言保持 DSH 主机亮屏与唤醒，并在任务结束后释放。
