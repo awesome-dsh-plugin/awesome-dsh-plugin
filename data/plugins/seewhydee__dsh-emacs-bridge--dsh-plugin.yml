@@ -1,0 +1,5 @@
+url: https://github.com/seewhydee/dsh-emacs-bridge/tree/main/dsh-plugin
+name: seewhydee/dsh-emacs-bridge#dsh-plugin
+category: notify
+description:
+  en: 'Two-way bridge between GNU Emacs and a running DeepSeek Harness session over loopback HTTP + SSE: submit prompts, stream replies, manage sessions and workspaces, and answer ask-user/approval prompts from Emacs, with a Plugins-page card that installs the Emacs package.'
