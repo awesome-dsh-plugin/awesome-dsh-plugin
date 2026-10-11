@@ -2,5 +2,5 @@ url: https://github.com/patrykorwat/open-dream-rsi/tree/main/plugins/deepseek_ha
 name: patrykorwat/open-dream-rsi#deepseek_harness
 category: tools
 description:
-  en: 'Brings the open-dream-rsi (ODR) self-improvement loop to DeepSeek Harness as MCP tools: ODR is an offline loop where the agent queues coding tasks, attempt cycles run against a sandbox model, only test-passing strategies survive as recipes and lessons, and those are fed back via odr_status, odr_recipes, odr_add_task, odr_run_once and odr_dream — so the agent gets measurably better at the next task; installable from npm as dsh-open-dream-rsi.'
-  zh: '将 open-dream-rsi（ODR）自我改进循环接入 DeepSeek Harness：ODR 是一个离线改进回路——agent 提交编码任务，尝试循环在沙箱模型中运行，只有通过测试的策略才会沉淀为配方（recipes）与经验（lessons），再通过 odr_status、odr_recipes、odr_add_task、odr_run_once、odr_dream 工具回喂给 agent，让它在下一个任务上切实变强；可从 npm 安装 dsh-open-dream-rsi。'
+  en: 'Brings the open-dream-rsi (ODR) self-improvement loop to DeepSeek Harness: the LLM stays frozen while everything around it improves — attempts run against a sandbox, only test-passing strategies survive as reusable recipes and lessons, and between runs the system dreams over recorded history at zero API cost; a Sentinel layer watches tool calls, classifies failures and gates the agent before it burns its budget; installable from npm as dsh-open-dream-rsi.'
+  zh: '将 open-dream-rsi（ODR）自我改进循环接入 DeepSeek Harness：LLM 保持冻结，改进发生在它周围——尝试在沙箱中运行，只有通过测试的策略沉淀为可复用的配方与经验，任务间歇系统在回放历史中"做梦"、零 API 成本；Sentinel 层监视工具调用、归类失败并在预算将尽时约束 agent；可从 npm 安装 dsh-open-dream-rsi。'
