@@ -1,0 +1,6 @@
+url: https://github.com/sixzjd/dsh-folder-attach
+name: sixzjd/dsh-folder-attach
+category: ui
+description:
+  en: 'Adds folders to the web composer: a host folder dialog, a /folder command, and folder drag or paste, all resolved into @path mentions with no build step.'
+  zh: '向网页端输入框添加文件夹：宿主文件夹选择器、/folder 命令与文件夹拖放粘贴，全部解析为 @路径 提及，无需构建。'
