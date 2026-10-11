@@ -1,0 +1,6 @@
+url: https://github.com/mangfufu/dsh-comfyui-web
+name: mangfufu/dsh-comfyui-web
+category: tools
+description:
+  en: 'Embed ComfyUI in the dsh web interface with MCP tools for reading, editing and running the current workflow, live canvas synchronization, generation previews and completion notifications.'
+  zh: '将 ComfyUI 嵌入 dsh 网页端，通过 MCP 读取、修改和运行当前工作流，支持画布实时同步、生成预览和完成通知。'
