@@ -1,0 +1,5 @@
+url: https://github.com/DenAbr/dsh-compact-selected-model
+name: DenAbr/dsh-compact-selected-model
+category: session
+description:
+  en: /compact and auto-compaction summarize with the model selected in the session, not the model that finished the last turn.
