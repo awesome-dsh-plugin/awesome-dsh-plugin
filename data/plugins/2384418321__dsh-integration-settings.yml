@@ -1,0 +1,6 @@
+url: https://github.com/2384418321/dsh-integration-settings
+name: 2384418321/dsh-integration-settings
+category: ui
+description:
+  en: 'Adds three visual pages to DSH Settings: MCP servers (managed by rewriting the profile patch managed block from a JSON source of truth, with YAML validation and timestamped backups), skills (browse, create, edit and delete across DSH global, shared .agents and Claude / Codex directories) and the global AGENTS.md persona (with one-click restore of the last three backups).'
+  zh: '在 DSH 设置里加三个可视化页面：MCP 服务器（以 JSON 为真理源整体重写 profile patch 受管区块，写入前做 YAML 结构校验与时间戳备份）、技能（浏览 / 新建 / 编辑 / 删除，覆盖 DSH 全局、共享 .agents 与 Claude / Codex 目录）、全局 AGENTS.md 人设（可一键载回最近 3 份备份）。'
