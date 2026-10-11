@@ -1,0 +1,6 @@
+url: https://github.com/Etheslay/dsh-token-dashboard
+name: Etheslay/dsh-token-dashboard
+category: usage
+description:
+  en: Codex-style token usage profile inside DSH Settings — lifetime tokens, a year of activity, cache hit rate and top models, read from local session logs.
+  zh: DSH 设置里的 Codex 风格用量档案 —— 累计 token、一年活动热力图、缓存命中率与最常用模型，只读本地会话日志。
