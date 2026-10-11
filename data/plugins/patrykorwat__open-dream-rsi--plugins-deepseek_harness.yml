@@ -1,0 +1,6 @@
+url: https://github.com/patrykorwat/open-dream-rsi/tree/main/plugins/deepseek_harness
+name: patrykorwat/open-dream-rsi#deepseek_harness
+category: tools
+description:
+  en: 'Runs the open-dream-rsi (ODR) self-improvement loop as MCP tools (odr_status, odr_recipes, odr_lessons, odr_add_task, odr_run_once, odr_dream): the agent queues coding tasks, grinds attempts in a sandbox, and reuses distilled test-passing recipes; installable from npm as dsh-open-dream-rsi.'
+  zh: '将 open-dream-rsi（ODR）自我改进循环接入 DeepSeek Harness：以 odr_status、odr_recipes、odr_lessons、odr_add_task、odr_run_once、odr_dream 工具形式暴露，agent 可提交编码任务、在沙箱中反复尝试并复用沉淀下来的通过测试的配方；可从 npm 安装 dsh-open-dream-rsi。'
