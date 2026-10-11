@@ -1,0 +1,25 @@
+# dsh-steer · awesome-dsh-plugin 收录条目（= DSH 插件市场 dshmarket 的数据源）
+#
+# 提交路径：data/plugins/<owner>__<repo>.yml —— 一个文件就是全部投稿，两个 README 由脚本生成、不要手改。
+# 文件名：lyonleeeee__dsh-steer.yml
+#
+# 闸门（2026-10-11 读上游源码实测）：仓库需「创建满 1 天」，由 pr-gate.yml 经 API 查 created_at。
+#   created_at = 2026-10-10T10:48:42Z → 达龄时刻 = 2026-10-11 18:48（北京时间）。
+#   这道闸门**不需要等**：上游 regate.yml 每 6 小时（cron `19 */6 * * *`）自动复检，
+#   未达龄的 PR 原样放着就会自行转绿 —— check-submission.mjs 原文明确要求作者
+#   「不要重开、不要重推、不要关掉再开」（"No need to resubmit, push, or close and reopen"）。
+#
+# 允许字段（scripts/lib/entries.mjs 的 ENTRY_KEYS）：url / name / category / description / tarball
+#   —— 未知字段会被直接判错；npm 包由上游从仓库自动映射，条目里不能写 npm: 键。
+# 其余硬性要求已逐条自查：dsh.bundle.patch ✓ · cordis.patch.yml 含 - insert: ✓ · dsh-plugin topic ✓ · 真实可用代码 ✓
+# 描述要求：只说功能、不带营销词；description.en 必填且以句号结尾；含「冒号+空格」时必须加引号（本条目没有）。
+
+url: https://github.com/lyonleeeee/dsh-steer
+name: lyonleeeee/dsh-steer
+category: ui
+description:
+  en: Adds a live status badge to the session header and delivers guidance added mid-task without interrupting the turn.
+  zh: 在会话头显示实时状态徽标，并在不打断当前回合的前提下投递运行中新增的指导。
+# 预构建包：钉住 release tag，永不失效。
+# （上游 probe-tarballs.mjs 会把「/releases/latest/download/ + 文件名含版本号」判为「下次发版必坏」的链接，故不用 latest 形式）
+tarball: https://github.com/lyonleeeee/dsh-steer/releases/download/v0.1.0/lyon-dsh-steer-0.1.0.tgz
