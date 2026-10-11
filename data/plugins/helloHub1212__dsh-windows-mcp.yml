@@ -1,0 +1,6 @@
+url: https://github.com/helloHub1212/dsh-windows-mcp
+name: helloHub1212/dsh-windows-mcp
+category: tools
+description:
+  zh: '通过官方 MCP 客户端桥接层把 CursorTouch/Windows-MCP 桌面自动化服务器接入 DSH，把截屏、UI 树快照、鼠标键盘输入、剪贴板、进程与注册表等工具注册成 mcp__windows__* 供模型调用，并附带 windows_mcp_doctor 诊断工具；Computer Use 默认关闭，需在插件面板里打开。'
+  en: 'Bridges the CursorTouch/Windows-MCP desktop automation server into DSH through the official MCP client bridge, registering its screenshot, UI tree snapshot, mouse and keyboard input, clipboard, process and registry tools as mcp__windows__* tools for the model, and adds a windows_mcp_doctor diagnostic tool. Computer Use is off by default and is switched on from the plugin panel.'
