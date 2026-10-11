@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-workbuddy-hub
+name: loyalchiiina/dsh-workbuddy-hub
+category: model
+description:
+  en: 'WorkBuddy bridge: registers the WorkBuddy LLM provider plus a multi-account ledger ball with realtime credits, daily auto check-in, rate-limit cooldown tracking and one-click account switching.'
+  zh: 'WorkBuddy 转接中枢：注册 WorkBuddy 模型 provider，并附多账号台账悬浮球——实时额度、每日自动签到、限流冷却追踪与一键切号。'
