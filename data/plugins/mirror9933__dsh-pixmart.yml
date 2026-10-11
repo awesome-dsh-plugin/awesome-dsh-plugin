@@ -1,0 +1,6 @@
+url: https://github.com/mirror9933/dsh-pixmart
+name: mirror9933/dsh-pixmart
+category: tools
+description:
+  en: 'E-commerce product image generation for DSH: 24 prompt modules covering main, detail and ad images, style transfer from a reference shot, batch runs, and a project gallery with live preview.'
+  zh: 'DSH 电商商品图生成：24 个提示词模块覆盖主图、详情图与广告图，支持参考图风格复刻、批量生成，以及作品库实时预览。'
