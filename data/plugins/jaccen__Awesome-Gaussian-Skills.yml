@@ -1,0 +1,11 @@
+url: https://github.com/jaccen/Awesome-Gaussian-Skills
+name: jaccen/Awesome-Gaussian-Skills
+category: skill
+description:
+  en: 3D Gaussian Splatting / NeRF / computer-graphics research skills — 15 AI skills (paper reader, method compare, experiment planner, code reviewer, training debugger, visualizer, MCP renderer…) over a curated 896-method catalog, plus a stdio MCP server for agent-driven 3DGS rendering.
+  zh: 3D 高斯泼溅 / NeRF / 图形学科研技能包——15 个 AI 技能（论文精读、方法对比、实验设计、代码审查、训练调试、可视化、MCP 渲染器…）覆盖 896 个方法的精选目录，并带一个 stdio MCP 服务供 Agent 驱动 3DGS 渲染。
+# Optional: point the DSH market at a slim prebuilt tarball so users don't
+# pull the full 40 MB+ repo (arxiv caches, xlsx, docx, png assets) at install.
+# Create the release by running `node scripts/build-dsh-bundle.mjs` and
+# uploading dist/awesome-gaussian-skills-bundle.tar.gz to a GitHub Release.
+tarball: https://github.com/jaccen/Awesome-Gaussian-Skills/releases/latest/download/awesome-gaussian-skills-bundle.tar.gz
