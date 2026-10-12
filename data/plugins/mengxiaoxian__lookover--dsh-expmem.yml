@@ -1,0 +1,7 @@
+url: https://github.com/mengxiaoxian/lookover/tree/main/dsh-expmem
+name: mengxiaoxian/lookover#dsh-expmem
+category: memory
+description:
+  en: "Saves problems, solutions, sources and applicability conditions for retrieval in later tasks, with correction and deletion. Pair with dsh-bubble for chat and dsh-look for current page context."
+  zh: "个人解决经验：保存问题、做法、来源和适用条件，下次相似任务检索复用，支持纠正与删除。搭配 dsh-bubble 提问、dsh-look 提供上下文。"
+tarball: https://github.com/mengxiaoxian/lookover/releases/download/lookover-2026.10.12/dsh-expmem-0.1.1.tgz

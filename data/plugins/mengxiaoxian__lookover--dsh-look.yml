@@ -1,0 +1,7 @@
+url: https://github.com/mengxiaoxian/lookover/tree/main/dsh-look
+name: mengxiaoxian/lookover#dsh-look
+category: vision
+description:
+  en: "On-demand macOS window context, selected text and local OCR for questions about the current page or error. Pair with dsh-bubble for chat beside your work and dsh-expmem for reusable experience."
+  zh: "macOS 页面上下文：按需读取窗口、选中文字或本地 OCR，让 DSH 理解“这个页面、这个报错”。搭配 dsh-bubble 就地提问、dsh-expmem 保存经验。"
+tarball: https://github.com/mengxiaoxian/lookover/releases/download/lookover-2026.10.12/dsh-look-0.1.1.tgz
