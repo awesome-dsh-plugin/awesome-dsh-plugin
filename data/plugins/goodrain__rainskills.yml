@@ -1,0 +1,6 @@
+url: https://github.com/goodrain/rainskills
+name: goodrain/rainskills
+category: skill
+description:
+  en: Registers the RainSkills bootstrap skill in DeepSeek Harness for deploying, troubleshooting, and verifying applications on Rainbond.
+  zh: 为 DeepSeek Harness 注册 RainSkills 引导技能，用于通过 Rainbond 部署、排障和验证应用。
