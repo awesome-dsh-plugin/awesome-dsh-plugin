@@ -1,0 +1,6 @@
+url: https://github.com/Arbeiter-bit/dsh-reedit
+name: Arbeiter-bit/dsh-reedit
+category: session
+description:
+  en: Double-click one of your own messages to rewrite it and continue in a new branch from that point.
+  zh: 双击自己发送的消息即可修改，并从该处开一条新分支继续。
