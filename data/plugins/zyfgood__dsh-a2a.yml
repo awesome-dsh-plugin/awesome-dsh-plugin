@@ -1,0 +1,6 @@
+url: https://github.com/zyfgood/dsh-a2a
+name: zyfgood/dsh-a2a
+category: remote
+description:
+  en: 'Agent2Agent (A2A) protocol bridge: serves an A2A endpoint with agent card, message/send, message/stream SSE, task lifecycle (get/cancel/resubscribe) and input-required continuation, plus a2a_discover/a2a_send/a2a_task_status/a2a_cancel tools for calling remote A2A agents.'
+  zh: 'Agent2Agent（A2A）协议桥：内置 A2A 服务端（agent card、message/send、message/stream SSE、任务 get/cancel/resubscribe、input-required 续答），并提供 a2a_discover/a2a_send/a2a_task_status/a2a_cancel 四个工具呼叫远端 A2A agent。'
