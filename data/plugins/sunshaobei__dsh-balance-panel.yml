@@ -1,0 +1,6 @@
+url: https://github.com/sunshaobei/dsh-balance-panel
+name: sunshaobei/dsh-balance-panel
+category: usage
+description:
+  en: Quota indicator docked into the composer bar — one circular progress ring per provider for the currently selected model, expanding into a full card with per-provider rows, settings (visibility, refresh interval, thresholds, proxy) and loopback RPC so API keys never reach the browser.
+  zh: 停靠在输入框工具条的额度指示器——为当前选中模型的每个供应商渲染一枚圆环进度，展开为完整卡片（分供应商余额/用量行），支持可见性、刷新间隔、告警阈值与代理设置；API Key 走本机回环 RPC，永不进入浏览器。
