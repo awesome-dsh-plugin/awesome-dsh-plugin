@@ -4,4 +4,4 @@ category: ui
 description:
   en: "macOS floating chat beside your work, sharing a session with the DSH main window. Pair with dsh-look for page context and dsh-expmem for reusable experience; targets official 0.2.0-rc.2 on arm64."
   zh: "macOS 悬浮对话：在工作页面旁提问，与 DSH 主窗口继续同一会话。搭配 dsh-look 看当前页面、dsh-expmem 复用经验。适配官方 0.2.0-rc.2／arm64。"
-tarball: https://github.com/mengxiaoxian/lookover/releases/download/lookover-2026.10.12/dsh-bubble-0.3.4.tgz
+tarball: https://github.com/mengxiaoxian/lookover/releases/download/lookover-2026.10.12/dsh-bubble-0.3.5.tgz
