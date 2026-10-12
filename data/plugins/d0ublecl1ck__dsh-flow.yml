@@ -1,0 +1,6 @@
+url: https://github.com/d0ublecl1ck/dsh-flow
+name: d0ublecl1ck/dsh-flow
+category: ui
+description:
+  en: 'Bring the everyday actions of DSH back in line with intuition: locate the open session, copy a session id, open off-origin links (including localhost) in the system default app, right-click inline code to open or copy, right-click an edited-file row to open it with the default app or an installed IDE, swap Enter with Cmd/Ctrl+Enter, recall sent messages with the arrow keys, show the workspace name inside the header "Open In" button, and add an Otty row to that menu.'
+  zh: 把 DSH 里那些与直觉相反的动作顺过来：定位当前会话、复制会话 ID、外链（含 localhost）交给系统默认程序、行内代码右键打开或复制、改动文件行右键用默认应用或已装 IDE 打开、Enter 与 ⌘/Ctrl+Enter 对调、用 ↑↓ 回填发过的消息、把当前工作区名写进标题行「打开」按钮，并在该按钮菜单里加一行 Otty。
