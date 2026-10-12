@@ -1,0 +1,7 @@
+url: https://github.com/korosu/dsh-web-search-ddg
+name: korosu/dsh-web-search-ddg
+category: browser
+description:
+  en: 'Keyless web search for DeepSeek Harness: swaps the backend of the built-in web_search tool for a scrape of DuckDuckGo static HTML results — no API key, no extra model turn per query; a failure budget opens a cooldown when DuckDuckGo challenges the client.'
+  zh: 'DSH 无密钥联网搜索：将内置 web_search 工具的后端替换为 DuckDuckGo 静态 HTML 结果页抓取——无需 API 密钥、每次查询不额外消耗模型轮次；被 DuckDuckGo 挑战时失败预算会进入冷却。'
+tarball: https://github.com/korosu/dsh-web-search-ddg/releases/latest/download/dsh-web-search-ddg.tgz
