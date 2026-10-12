@@ -1,0 +1,6 @@
+url: https://github.com/PC2005-cloud/cursorkit/tree/main/plugins/dsh-cursorkit
+name: PC2005-cloud/cursorkit#dsh-cursorkit
+category: ui
+description:
+  en: 'Cursor animation effects for the DSH Web UI: 25 canvas effects drawn above every panel, menu and dialog, switched from a dropdown in Settings, with the native cursor hidden while one is active.'
+  zh: 'DSH Web UI 的光标动效：25 套 Canvas 动效绘制在所有面板、菜单与对话框之上，在设置里下拉切换，启用时隐藏原生光标。'
