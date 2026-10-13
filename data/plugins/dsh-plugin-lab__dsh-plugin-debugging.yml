@@ -1,0 +1,6 @@
+url: https://github.com/dsh-plugin-lab/dsh-plugin-debugging
+name: dsh-plugin-lab/dsh-plugin-debugging
+category: dev
+description:
+  en: 'Runtime diagnostics for DSH plugin development: separates a change that is already live from one that needs a restart or a hot reload, tells "not running" apart from "not authenticated", and swaps a mounted entry to the code on disk without a restart.'
+  zh: '面向 DSH 插件开发的运行时诊断：把「已经生效」和「需要重启或热重载」分开，把「没在运行」和「没通过认证」分开，并能不停机把已挂载条目换到磁盘上的新代码。'
