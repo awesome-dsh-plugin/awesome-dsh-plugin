@@ -1,0 +1,6 @@
+url: https://github.com/niubi6668889595/dsh-autoupdater
+name: niubi6668889595/dsh-autoupdater
+category: dev
+description:
+  en: Scheduled update checks for DeepSeek Harness itself and installed plugins, applied only in idle windows — four schedule modes (daily, every N hours/days/minutes), bidirectional plugin whitelist, disk-verified installs, and a web settings panel with hot-reload config.
+  zh: DeepSeek Harness 定时自动更新插件：本体与已装插件一并检查，仅在空闲窗口执行。四种调度模式（每日/每N小时/每N天/每N分钟）、双向白名单、磁盘回读验证、内嵌设置面板热生效。
