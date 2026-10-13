@@ -1,0 +1,6 @@
+url: https://github.com/zhiqiangme/dsh-plugins/tree/main/dsh-autostart-workbuddy
+name: zhiqiangme/dsh-plugins#dsh-autostart-workbuddy
+category: model
+description:
+  en: Starts the WorkBuddy Panel backend (wb2api.exe from workbuddy2api-panel, Windows) with DSH and on exit stops only the process it launched; optionally syncs the backend's /v1/models into the workbuddy provider, and its settings card picks models, shows credit multipliers and installs, updates or rolls back the backend from checksum-verified GitHub releases.
+  zh: 随 DSH 启动 WorkBuddy Panel 后端（workbuddy2api-panel 的 wb2api.exe，Windows），退出时只停自己拉起的进程；可把后端 /v1/models 同步到 workbuddy 模型提供方，设置卡片可勾选模型、查看积分倍率，并从经校验和验证的 GitHub Release 安装、更新或回滚后端。
