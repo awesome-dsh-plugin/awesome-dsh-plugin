@@ -2,5 +2,5 @@ url: https://github.com/shZhang1614/dsh-float-lamp
 name: shZhang1614/dsh-float-lamp
 category: ui
 description:
-  en: "Windows floating expression lamp outside the DSH window: a borderless always-on-top card with an animated face — green smile with elastic squash-and-stretch while tasks run, orange worried-and-shaking for approval, blue curious for your input, sleepy grey idle, X-eyed dark grey host offline; hovering lists each session's latest task, drag to move, and the lamp self-extinguishes within seconds when the plugin is switched off."
-  zh: "悬浮在 DSH 应用之外的 Windows 表情状态灯：无边框置顶小卡片，灯芯是一张会动的脸——绿灯微笑并上下弹性伸缩、橙灯紧张发抖待授权、蓝灯挑眉待你交互、灰灯闭眼打盹、暗灰 X 眼宿主离线；悬停逐行列出各会话正在运行的任务，可拖动记忆位置，插件被关闭后数秒内自动熄灭。"
+  en: "Windows floating status lamp outside the DSH window: a borderless always-on-top glowing orb on a fully transparent background — green with elastic squash-and-stretch while tasks run, orange shaking for approval, blue floating for your input, dim grey idle, dark grey host offline; hovering lists each session's latest task, drag to move, and the lamp self-extinguishes within seconds when the plugin is switched off."
+  zh: "悬浮在 DSH 应用之外的 Windows 状态灯：无边框置顶发光圆灯，背景完全透明——绿灯弹性伸缩表示运行中、橙灯抖动待授权、蓝灯漂浮待你交互、灰灯空闲、暗灰宿主离线；悬停逐行列出各会话正在运行的任务，可拖动记忆位置，插件被关闭后数秒内自动熄灭。"
