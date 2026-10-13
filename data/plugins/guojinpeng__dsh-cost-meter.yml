@@ -4,4 +4,4 @@ category: usage
 description:
   en: 'Estimate session and per-turn costs with provider/model pricing, a local models.dev price cache, and price sync for configured models.'
   zh: '估算会话和每轮费用，支持按提供方与模型配置单价、models.dev 价格本地缓存，以及仅同步已配置模型的价格。'
-tarball: https://github.com/guojinpeng/dsh-cost-meter/releases/download/v0.1.2/guojinpeng-dsh-cost-meter-0.1.2.tgz
+tarball: https://github.com/guojinpeng/dsh-cost-meter/releases/latest/download/guojinpeng-dsh-cost-meter.tgz
