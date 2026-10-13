@@ -1,0 +1,6 @@
+url: https://github.com/chioplet/dsh-live-progress
+name: chioplet/dsh-live-progress
+category: ui
+description:
+  en: 'A real progress bar in the composer input row, driven only by host events (14 event types over HTTP + SSE): it shows a percentage only when a real denominator exists (a todo_write step plan or workflow phases), otherwise an indeterminate fill plus real counters. It does not move while the model is thinking, and reads 100% only when the run has actually ended. History-based estimates are labelled as estimates. Dependency-free; the host half is plain ESM and the browser half ships prebuilt.'
+  zh: '输入框上方的真实进度条，只由宿主事件驱动（14 类事件，走 HTTP + SSE）：只有当分母真实存在时才给百分比（todo_write 的步骤计划或工作流阶段），否则走不确定态动画并只报真实计数。模型思考时不推进，只有任务真的结束才 100%。基于历史的估算会明确标注为估算。零依赖，宿主半边为纯 ESM，浏览器半边为预构建 bundle。'
