@@ -3650,6 +3650,8 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Notifications & Integrations
 
+
+- [hsiu1214/dsh-a2a-notify](https://github.com/hsiu1214/dsh-a2a-notify) - Windows balloon notifications for session lifecycle events (new / running / finished / error) across all workspaces, with a session-store watch that catches headless and A2A dispatch sessions whose events never reach the host bus. Windows only.
 - [0QwQ0/dsh-discord-richpresence](https://github.com/0QwQ0/dsh-discord-richpresence) - Push vague or rich, user-configurable DSH interaction states to the local Discord client as Rich Presence — real-time, content-free, with a user-editable status list and an optional rich-mode toggle in Settings.
 - [534119219/chicheng-push](https://github.com/534119219/chicheng-push) - Multi-channel push for DeepSeek Harness: Server酱, PushPlus, Bark, DingTalk, WeCom, Telegram, Feishu, ntfy, custom webhooks and more, configurable from the settings panel and callable by other plugins via the pushNotifier service.
 - [534119219/dsh-messaging#messaging-core](https://github.com/534119219/dsh-messaging/tree/main/packages/messaging-core) - Unified messaging gateway for DeepSeek Harness: 27 IM platforms (Telegram, QQ, WeChat, Discord, WhatsApp, Feishu and more) in one plugin, with QR scan-to-authorize, per-platform workspaces, slash commands, and a web setup dialog.
