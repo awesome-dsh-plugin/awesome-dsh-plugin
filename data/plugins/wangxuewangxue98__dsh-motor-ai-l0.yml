@@ -1,0 +1,6 @@
+url: https://github.com/wangxuewangxue98/dsh-motor-ai-l0
+name: wangxuewangxue98/dsh-motor-ai-l0
+category: tools
+description:
+  zh: "电机 AI 辅助设计插件：需求解析 → 参数识别 → 候选矩阵 → Top10 校验。L0 纯 JS、零求解器依赖，毫秒级广筛候选并给出交给 L1/L2 精算工具的载荷；可作为本地 agent 预设与 Cordis 插件使用。L1（RMxprt）与 L2（Motor-CAD）在本版本中仅预留接口，层级总闸设为 l0 以上会立即报错。"
+  en: "Motor-design AI assistant plugin: requirement parsing → parameter identification → candidate matrix → Top10 verification. L0 is a millisecond-level broad filter (pure JS, zero solver dependency) that ranks candidates and emits the handoff payload for the L1/L2 precision tools; usable as a local agent preset and Cordis plugin. L1 (RMxprt) and L2 (Motor-CAD) are reserved in this version — the level gate fails fast above l0."
