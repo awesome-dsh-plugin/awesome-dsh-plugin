@@ -1,0 +1,6 @@
+url: https://github.com/wjh-ux/dsh-wechat-media
+name: wjh-ux/dsh-wechat-media
+category: notify
+description:
+  en: "Personal WeChat and WeCom (企业微信) bridge: QR pairing, one DSH conversation per chat, two-way text/image/video/document/archive transfer, remote approval by replying 1 or 2 in the chat, and a two-way WeCom intelligent robot over its long connection (no public URL or callback needed)."
+  zh: "个人微信 + 企业微信桥：扫码配对，每个会话各自一个独立 DSH 会话，文字/图片/视频/文档/压缩包双向传输，敏感操作可在聊天里回 1 或 2 远程审批，并支持双向的企业微信智能机器人长连接（无需公网地址或回调）。"
