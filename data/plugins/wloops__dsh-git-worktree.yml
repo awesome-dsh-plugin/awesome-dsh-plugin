@@ -1,6 +1,0 @@
-url: https://github.com/wloops/dsh-git-worktree
-name: wloops/dsh-git-worktree
-category: git
-description:
-  en: 'Git worktree Session Targets with isolated task sessions, Ready for Review, reversible Local Preview, human-confirmed delivery, environment retention and recovery, and same-session iteration.'
-  zh: 'Git Worktree Session Target：任务在隔离 Session 中运行，支持 Ready for Review、可撤回的 Local Preview、人工确认交付、环境保留与恢复，以及同一 Session 连续迭代。'

@@ -1,7 +1,0 @@
-url: https://github.com/dff652/deepseek-harness-community-plugins/tree/main/packages/dsh-agent-mail
-name: dff652/deepseek-harness-community-plugins#dsh-agent-mail
-category: tools
-description:
-  en: An AI collaboration mailbox in DeepSeek Harness for messaging, task handoffs and delivery receipts. One package includes MCP integration and a mailbox UI. Requires a separately installed Agent Mail 1.0.0-alpha.7 provider; no automatic model wake or continuous online status.
-  zh: DeepSeek Harness 中的 AI 协作邮箱，让 AI 工具互发消息、交接任务并查看收发回执。一个包包含 MCP 集成与邮箱界面，需要独立安装 Agent Mail 1.0.0-alpha.7；不提供自动唤醒模型或持续在线状态。
-tarball: https://github.com/dff652/deepseek-harness-community-plugins/releases/download/dsh-agent-mail-v0.2.1/dff652-dsh-agent-mail-0.2.1.tgz

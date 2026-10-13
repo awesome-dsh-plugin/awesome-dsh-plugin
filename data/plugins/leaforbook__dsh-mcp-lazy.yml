@@ -1,6 +1,0 @@
-url: https://github.com/leaforbook/dsh-mcp-lazy
-name: leaforbook/dsh-mcp-lazy
-category: tools
-description:
-  en: 'Lazy-loading router for MCP servers: auto-discovers compatible MCPs and keeps only a shared router in the tool catalog, revealing a server''s schemas when a turn needs them and hiding them again at turn end, so many installed MCPs stop costing context on every request. Falls open to normal visibility on any uncertainty, and the original MCP keeps ownership of execution, permissions and process lifecycle. Also supports explicit lazy connections with warm reuse, bounded reconnection, stdio and Streamable HTTP.'
-  zh: MCP 懒加载路由：自动发现可接管的 MCP，冷态只在工具目录里留一个共享路由，某轮需要哪个服务器才展开它的工具 Schema、轮次结束再收起，让装了很多 MCP 不再每次请求都吃上下文。命名异常、重名或状态不确定的 MCP 不接管；出现任何不确定即恢复原工具可见性，执行、权限与进程生命周期仍归原 MCP。也支持显式的连接层懒加载，含连接保温、有限重连、stdio 与 Streamable HTTP。
