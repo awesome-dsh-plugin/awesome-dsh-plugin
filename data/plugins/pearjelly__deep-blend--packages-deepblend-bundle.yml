@@ -10,5 +10,5 @@ category: tools
 tarball: https://github.com/pearjelly/deep-blend/releases/latest/download/deepblend-bundle.tgz
 description:
   # Quoted one-line descriptions; keep the canonical text here and project it.
-  en: 'Create editable Blender product models in DSH with linked cup dimensions and lamp shade diameter, saved multi-view inspection images with immutable revisions and an approval gate; 18 tools support modeling, previews, visual review and delivery.'
-  zh: '在 DSH 中创建可继续编辑的 Blender 产品模型，联动杯尺寸与台灯灯罩直径，返回已保存的多视图检查图并保留不可变历史版本和审批闸门；18 个工具支持建模、预览、视觉评审和交付。'
+  en: 'Create editable Blender product models in DSH with linked cup dimensions and linked large-shade lamp assembly, native saved-part dimensions and multi-view inspection images with immutable revisions and an approval gate; 18 tools support modeling, previews, visual review and delivery.'
+  zh: '在 DSH 中创建可继续编辑的 Blender 产品模型，联动杯尺寸与大灯罩支撑装配，读取已保存部件的原生尺寸与多视图检查图并保留不可变历史版本和审批闸门；18 个工具支持建模、预览、视觉评审和交付。'
