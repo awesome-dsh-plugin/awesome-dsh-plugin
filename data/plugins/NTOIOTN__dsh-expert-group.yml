@@ -1,0 +1,5 @@
+url: https://github.com/NTOIOTN/dsh-expert-group
+name: NTOIOTN/dsh-expert-group
+category: workflow
+description:
+  en: 'Role-based expert subagents for DeepSeek Harness with a task sidebar: explorer, librarian, oracle, designer and fixer delegate in parallel, each with its own model and reasoning depth.'
