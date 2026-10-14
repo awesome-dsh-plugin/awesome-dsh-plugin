@@ -1,0 +1,5 @@
+url: https://github.com/taxah92/dsh-pve-vm
+name: taxah92/dsh-pve-vm
+category: remote
+description:
+  en: 'Control Proxmox VE virtual machines from the conversation: 16 tools for the VM console over VNC (screenshots, mouse, keyboard, batched actions, Unicode text and clipboard) and for running commands and reading or writing files through the QEMU guest agent, all over one ssh connection to the node, so the host needs no X11 or Wayland.'
