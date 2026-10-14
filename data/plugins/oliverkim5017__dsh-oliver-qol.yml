@@ -1,0 +1,6 @@
+url: https://github.com/oliverkim5017/dsh-oliver-qol
+name: oliverkim5017/dsh-oliver-qol
+category: session
+description:
+  en: 'My personal quality-of-life build: four features I wanted in my daily setup, bundled as one plugin and claimed to solve nothing for anybody else. A "Delete session" item below Archive permanently removes a stored session, its subagent children and that session''s session_projcache rows and workspace accounting entry, naming the children before I confirm; an open session is stopped and released first. An Extend settings tab, last in the settings page, carries the default permission mode of newly created sessions, Full access included, and OpenCode Go web search: the built-in web_search tool routed through the Go endpoint with a pickable model and its own search-only proxy, off by default.'
+  zh: '我个人的自用效率插件：四件我在日常使用中想要的功能打进一个插件，不宣称能为别人解决什么。「删除会话」位于「归档会话」下方：永久删除一条已存储会话、它的 subagent 子会话，以及这条会话的 session_projcache 行与工作区账目——确认前会告知子会话数量；正在打开的会话会先被停止并释放。另有一个「扩展设置」标签页，位于设置页最后，其中的行分别设置新建会话的默认权限模式（含完全权限）与 OpenCode Go 网页搜索——把内置的 web_search 工具改走 Go 端点，附带可选搜索模型与只作用于该搜索请求的代理；默认关闭。'
