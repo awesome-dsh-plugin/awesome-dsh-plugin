@@ -1,0 +1,7 @@
+url: https://github.com/CosmoSail/dsh-bloomglass
+name: CosmoSail/dsh-bloomglass
+category: theme
+description:
+  en: A DSH Web theme with ten OKLCH Morandi palettes, plus an optional wallpaper behind frosted glass panels; light and dark still follow the official appearance, and both the palette and the wallpaper persist locally.
+  zh: DSH Web 主题：十套 OKLCH 莫兰迪配色打底，可选一张壁纸铺满窗口、界面以磨砂玻璃叠上去；浅色/深色仍跟随官方外观，配色与壁纸都本地持久化。
+tarball: https://github.com/CosmoSail/dsh-bloomglass/releases/latest/download/dsh-bloomglass.tgz
