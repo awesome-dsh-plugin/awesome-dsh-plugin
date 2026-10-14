@@ -1,0 +1,6 @@
+url: https://github.com/WiseXin/dsh-session-intent-title
+name: WiseXin/dsh-session-intent-title
+category: session
+description:
+  en: Automatically classifies conversation intent and names sessions with clean emoji prefixes.
+  zh: 会话意图自动分类命名插件（⚡ 优化 / 🐛 修复 / ✨ 功能）。
