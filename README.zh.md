@@ -2065,6 +2065,7 @@ dsh plugin --profile web add dshmarket
 - [super3ben/agent-feedback-loop#agent-feedback-loop-dsh](https://github.com/super3ben/agent-feedback-loop/tree/main/templates/dsh-plugin) — 把 dsh 的每一轮 prompt 送入本地 agent-feedback-loop 反馈记忆管线——捕获用户不满、离线评审沉淀为反思，并把编译好的复发规则上下文附着回当前轮次，从不阻塞 prompt。需要先安装 agent-feedback-loop 运行时；安装后执行 agent-feedback-loop install 会自动接线已有的 dsh profile。
 - [Swd146296/dsh-memos-bridge](https://github.com/Swd146296/dsh-memos-bridge) — 通过 MCP 桥接 MemOS 记忆服务：agent 获得 mcp__memos__* 记忆写入/检索/更新/删除、多 Cube 共享与记忆调度工具。
 - [symmetryseeker/dsh-akn-plugin](https://github.com/symmetryseeker/dsh-akn-plugin) — DeepSeek Harness 的本地优先 Agent 经验网络：从 trace 与实时 Manifest 蒸馏任务级经验，按 H0-H4 证据分级、按兼容性发现，经显式审阅后才晋升。
+- [syyr1987/dsh-linghun-memory](https://github.com/syyr1987/dsh-linghun-memory) — DeepSeek Harness 的记忆子系统：记忆完全本体化（event/fact/rule 三本体）+ 目标系统（goal.js）——belief 价值观写侧收录 + Bridge 触发词，读侧重匹配公式（0.25 域命中 + 0.35 触发词 + 0.40 相似度）补上 goal/value 语义远距联想；序时账留痕、情景归档、低置信降权遗忘；memory_append/read/consolidate + linghun_goal_update/get/state 读写沉淀闭环。独立于原 dsh-linghun 演进。LoCoMo-Plus 16/16 满分。
 - [tabilet/tabilet-skills](https://github.com/tabilet/tabilet-skills) — 共享工程技能、提供 SQLite 审计说明的只读记忆库仪表盘，以及 DSH 工作流请求预览。
 - [tancheng33/dsh-yogacara](https://github.com/tancheng33/dsh-yogacara) — 以唯识心所与种子藏记录 agent 的状态，并以第一人称倾向写回提示词。
 - [text2future/flowix#dsh-flowix-memory](https://github.com/text2future/flowix/tree/main/dsh-flowix-memory) — 将本地 flowix-cli 注册为 MCP 服务，让 agent 可以搜索、读取、创建和编辑 Flowix 备忘与思维导图产物。
