@@ -1,0 +1,7 @@
+url: https://github.com/qikairo7/dsh-web-search-fetch
+name: qikairo7/dsh-web-search-fetch
+category: browser
+description:
+  en: 'Multi-source search and webpage extraction for native web_search and web_fetch, with RRF ranking, block deduplication, complementary content, source-labelled text differences and a settings card.'
+  zh: '为原生 web_search 与 web_fetch 提供多来源搜索融合和网页正文整理，支持 RRF 排名、内容块去重与互补、带来源的文本差异记录及设置卡片。'
+tarball: https://github.com/qikairo7/dsh-web-search-fetch/releases/download/v0.2.3/dsh-web-search-fetch-0.2.3.tgz
