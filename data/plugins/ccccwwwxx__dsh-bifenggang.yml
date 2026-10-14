@@ -1,0 +1,6 @@
+url: https://github.com/ccccwwwxx/dsh-bifenggang
+name: ccccwwwxx/dsh-bifenggang
+category: model
+description:
+  en: 'Time-based model routing: a settings panel defines weekday peak/off-peak windows and the provider/model each window uses, the choices are read from the harness registry (API keys and subscription logins alike), and a global switch makes that policy decide the model and reasoning effort of every request, escalating to an advanced model when no strategy matches.'
+  zh: '按时间做模型路由：在设置页定义工作日峰谷时段与各时段使用的 Provider/模型（候选来自 harness 已注册的 API 与订阅账号），打开开关后由该策略决定每次请求的模型与思考档，所有策略都未命中时升维到高级模型支援。'
