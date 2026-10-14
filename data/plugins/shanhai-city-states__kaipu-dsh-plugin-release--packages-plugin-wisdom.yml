@@ -1,0 +1,7 @@
+url: https://github.com/shanhai-city-states/kaipu-dsh-plugin-release/tree/main/packages/plugin-wisdom
+name: shanhai-city-states/kaipu-dsh-plugin-release#plugin-wisdom
+category: tools
+description:
+  en: "Companion sidebar panel for the Kaipu site plugin. Installs and uninstalls on its own; the site plugin stays fully usable without it. Scaffold release."
+  zh: "山海·开铺 智囊团插件：配套侧边面板，可单独安装或卸载，卸掉它场地仍完整可用。当前为骨架版。"
+tarball: https://github.com/shanhai-city-states/kaipu-dsh-plugin-release/releases/latest/download/kaipu-wisdom-team.tgz
