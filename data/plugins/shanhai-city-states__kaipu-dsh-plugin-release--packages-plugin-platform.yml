@@ -1,0 +1,7 @@
+url: https://github.com/shanhai-city-states/kaipu-dsh-plugin-release/tree/main/packages/plugin-platform
+name: shanhai-city-states/kaipu-dsh-plugin-release#plugin-platform
+category: workflow
+description:
+  en: "Sidebar panel for store-opening audits in DeepSeek Harness: a scene/run list beside a run-view and report surface. Scaffold release, data wiring lands in a later version."
+  zh: "山海·开铺 场地插件：开铺审计的侧边面板，场景／运行记录与运行视图／报告两栏。当前为骨架版，数据接入在后续版本。"
+tarball: https://github.com/shanhai-city-states/kaipu-dsh-plugin-release/releases/latest/download/kaipu-platform.tgz
