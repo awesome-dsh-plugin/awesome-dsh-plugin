@@ -1,0 +1,6 @@
+url: https://github.com/semantic-craft/dsh-grokbot-dispatch/tree/main/plugin
+name: semantic-craft/dsh-grokbot-dispatch
+category: workflow
+description:
+  zh: "DSH 双向派活插件：为 Grok Bot / Yobiru 派入的任务打开可见的桌面会话；提供 /dispatch-grok、/dispatch-zcode 斜杠命令向外派活；会话结束时自动把结果回报给派活方（对端由用户自行配置，未配置时不对外发送）。"
+  en: "Bidirectional dispatch for DSH: opens visible desktop sessions for tasks dispatched in by Grok Bot / Yobiru, adds /dispatch-grok and /dispatch-zcode slash commands to send tasks out, and reports the session result back to the dispatching peer on completion (peers are user-configured; nothing is sent until configured)."
