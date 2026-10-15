@@ -1,0 +1,6 @@
+url: https://github.com/plyflai/dsh-ux-plus
+name: plyflai/dsh-ux-plus
+category: ui
+description:
+  en: 'Five web-chat conveniences in one plugin: chat-area font size and reading width under Settings → General → Chat area; a session-row menu that copies the session ID and inherits the conversation into a new session on a chosen model; workspace and session rows ordered by recent activity with 24-hour idle auto-collapse and age labels; settled ask_user_question cards left expanded; and a Settings → UX Plus page with one switch per feature, applied immediately.'
+  zh: 一个插件带来的五项 Web 对话界面增强：在设置 → 通用 → 对话区 调整对话字号与阅读宽度；会话行三点菜单可复制会话 ID，也能把当前对话继承到所选模型的新会话里继续；工作区与会话行按最近活跃排序，闲置超过 24 小时自动收起并显示上次更新时间；已结束的提问卡片默认展开；设置里新增 UX Plus 页面，五项功能各一个开关，改动即时生效。
