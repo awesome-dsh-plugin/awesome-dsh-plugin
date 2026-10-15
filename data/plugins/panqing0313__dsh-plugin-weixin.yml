@@ -1,5 +1,5 @@
-url: https://github.com/panqing0313/dsh-weixin
-name: panqing0313/dsh-weixin
+url: https://github.com/panqing0313/dsh-plugin-weixin
+name: panqing0313/dsh-plugin-weixin
 category: notify
 description:
   en: 'WeChat (personal WeChat, iLink Bot API) channel: chat with your DSH agent from WeChat, with images, files and voice-note transcription; also published to npm as dsh-plugin-weixin.'
