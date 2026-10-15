@@ -1,0 +1,6 @@
+url: https://github.com/bbskye5008/dsh-task-runner
+name: bbskye5008/dsh-task-runner
+category: workflow
+description:
+  en: 'Coordinates PUA and Completion Guard tasks from /task-run or a CLI, requiring frozen acceptance and a current candidate/Goal certificate before completion, with an 8-round and 90-minute ceiling. Verified on macOS Desktop 0.2.0-rc.2; requires PUA 0.3.27 and Completion Guard 0.9.0.'
+  zh: '通过 /task-run 或 CLI 协调 PUA 与 Completion Guard 长任务，冻结验收通过且当前候选与 Goal 证书有效后才允许完成，最多 8 轮、90 分钟。已验证 macOS Desktop 0.2.0-rc.2，需先安装 PUA 0.3.27 和 Completion Guard 0.9.0。'
