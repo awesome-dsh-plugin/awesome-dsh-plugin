@@ -1,0 +1,6 @@
+url: https://github.com/defaver04/opencodezen4dsh/tree/main/packages/plugin
+name: defaver04/opencodezen4dsh#plugin
+category: model
+description:
+  en: 'OpenCode Zen free models for DSH, forked with muse-spark models unblocked, xhigh/max thinking levels for all reasoning models, and a guard demoting identity-less tool calls to text.'
+tarball: https://github.com/defaver04/opencodezen4dsh/releases/download/v0.4.0-fork.3/opencodezen4dsh-dsh-plugin-0.4.0-fork.3.tgz
