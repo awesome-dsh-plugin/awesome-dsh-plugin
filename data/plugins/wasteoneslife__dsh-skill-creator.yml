@@ -1,0 +1,6 @@
+url: https://github.com/wasteoneslife/dsh-skill-creator
+name: wasteoneslife/dsh-skill-creator
+category: skill
+description:
+  en: "Skill-creation console for the Web UI: fetches the official creator skills, hands the requirements to the Huawei Cloud, generic, or REST API creator, then scores the generated skill against a 10-point rubric and returns the itemised deductions to the creator until it reaches 8.5/10."
+  zh: "Web 界面上的技能创建面板：拉取官方 creator 技能，把需求交给华为云 / 通用 / REST API 三个 creator 之一执行创建，随后按 10 分制评测产物，未达 8.5 分就把逐项扣分交回 creator 修改直到通过。"
