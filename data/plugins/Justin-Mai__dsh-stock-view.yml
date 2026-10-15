@@ -1,0 +1,6 @@
+url: https://github.com/Justin-Mai/dsh-stock-view
+name: Justin-Mai/dsh-stock-view
+category: ui
+description:
+  en: 'A collapsible, draggable popup in the top-right corner of the DSH web interface for watching A-shares, ETFs, Hong Kong and US stocks and OKX spot crypto side by side: real-time quotes, intraday and daily/weekly/monthly candlestick charts with moving averages, buy/sell target prices, group switching with drag-to-reorder, rename and delete, cross-market search, and light/dark themes. A fork of Awu12277/dsh-stock-watch that adds US quotes via Eastmoney and crypto via OKX.'
+  zh: A 股 / ETF / 港股 / 美股 / 加密货币行情盯盘插件：在 DeepSeek Harness（DSH）Web 界面右上角显示可折叠、可拖动的弹窗，同时盯多个市场——实时行情、分时与日/周/月 K 线（含均线）、买卖目标价、分组管理（切换、拖动排序、重命名、删除）、跨市场搜索、明暗主题。fork 自 Awu12277/dsh-stock-watch，新增东方财富美股行情与 OKX 现货加密货币行情。

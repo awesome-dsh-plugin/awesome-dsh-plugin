@@ -1,0 +1,6 @@
+url: https://github.com/lau4tin1/dsh-skill-router
+name: lau4tin1/dsh-skill-router
+category: skill
+description:
+  en: 'Skill routing for DeepSeek Harness: embeds skills and each user task with a local model, keeps the clearly-relevant skills with a gap-based selection rule, and auto-injects their full bodies into the prompt.'
+  zh: 'DeepSeek Harness 的 skill 路由插件：用本地模型为 skill 和用户任务生成向量，按基于分差的规则保留明确相关的 skill，并自动把它们的完整正文注入提示词。'

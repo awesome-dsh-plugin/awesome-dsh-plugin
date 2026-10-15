@@ -1,0 +1,6 @@
+url: https://github.com/shlouai/dsh-debate
+name: shlouai/dsh-debate
+category: tools
+description:
+  en: 'Answers hard questions by staging a formal debate: two adversarial subagents argue opposite sides with research, then the main agent rules on the transcript through the debate_open, debate_round, and debate_verdict tools.'
+  zh: '通过一场正式辩论来回答难题：两个对抗性子代理各自调研并论证对立立场，最后由主代理依据辩论记录作出裁决，提供 debate_open、debate_round、debate_verdict 三个工具。'

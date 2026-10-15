@@ -1,0 +1,6 @@
+url: https://github.com/shimingming520/dsh-audiogen
+name: shimingming520/dsh-audiogen
+category: voice
+description:
+  en: AI audio generation for the DeepSeek Harness web GUI — multi-vendor TTS, music, sound effects and voice design with a sidebar panel, model comparison, resource library and Agent tools.
+  zh: 面向 DeepSeek Harness Web 的 AI 音频插件 —— 多厂商 TTS、音乐、音效与音色设计，含侧边栏面板、模型对比、资源库与 Agent 工具。

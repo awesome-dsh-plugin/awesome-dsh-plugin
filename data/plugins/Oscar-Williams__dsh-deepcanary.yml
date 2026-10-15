@@ -1,0 +1,6 @@
+url: https://github.com/Oscar-Williams/dsh-deepcanary
+name: Oscar-Williams/dsh-deepcanary
+category: notify
+description:
+  en: "Evidence-first attention supervision for DeepSeek Harness with C0–C3 policy, deduplicated Inbox alerts, quiet hours, and redacted outcome records."
+  zh: "面向 DeepSeek Harness 的证据优先注意力监督，提供 C0–C3 策略、去重 Inbox 提醒、静默时段和脱敏结果记录。"

@@ -1,0 +1,6 @@
+url: https://github.com/OMSociety/dsh-kimi-ppt
+name: OMSociety/dsh-kimi-ppt
+category: skill
+description:
+  en: 'DSH plugin bundling the kimi-ppt skill: create, edit and export PPT slides and presentations as a locally generated .pptx with Pillow-rendered previews, no browser needed.'
+  zh: '内含 kimi-ppt 技能的 DSH 插件：创建、编辑与导出 PPT 幻灯片和演示文稿，本地生成 .pptx，Pillow 渲染预览图，不需要浏览器。'

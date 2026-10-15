@@ -1,0 +1,6 @@
+url: https://github.com/underworld-oddball/sh-volume-shuff
+name: underworld-oddball/sh-volume-shuff
+category: voice
+description:
+  en: Speaker button left of the model selector in the composer tool row — one click scrolls to the start of your newest question, marks it with a blinking caret and reads from there through the newest agent reply (dsh-tts, browser voice as fallback); press-and-hold the icon and then click anywhere on the page to pick another reading start position; press-and-drag-up opens a vertical mixer for in-page media volume and system output volume.
+  zh: 输入框工具行里、模型选择框左边的扬声器按钮——单击翻到「你最新提问的开头」并闪烁光标，从那里读到最新回复结尾（走 dsh-tts，回退浏览器语音）；按住图标后在页面上单击即可挑选任意朗读起点；按住上滑调出竖式混音台，分别控制页内媒体音量与系统输出音量。

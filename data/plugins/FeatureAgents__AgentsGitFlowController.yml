@@ -1,0 +1,6 @@
+url: https://github.com/FeatureAgents/AgentsGitFlowController
+name: FeatureAgents/AgentsGitFlowController
+category: git
+description:
+  en: 'Branch-role guard for AI coding agents: configurable integration/preview/production/archive roles, blocking direct push, force-push and delete on protected branches and agent merges into production/archive.'
+  zh: 'AI 编码智能体分支角色守卫：可配置集成/预览/生产/归档角色，拦截对受保护分支的直接推送、强推与删除，以及智能体对生产/归档分支的合并。'

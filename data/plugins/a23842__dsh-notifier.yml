@@ -1,0 +1,6 @@
+url: https://github.com/a23842/dsh-notifier
+name: a23842/dsh-notifier
+category: notify
+description:
+  en: 'Multi-channel notifications for DeepSeek Harness: registers a send_notification tool and a settings page fanning out to NotifyX, WeCom app webhook, WeCom group robot, email (Resend), SMTP, DingTalk, Feishu robot; plus browser notifications and automatic notification on task completion and blocking events.'
+  zh: 'DeepSeek Harness 多渠道通知插件：注册 send_notification 工具与设置页，向 NotifyX、企业微信应用通知、企业微信机器人、邮件（Resend/SMTP）、钉钉机器人、飞书机器人发送通知；支持浏览器通知、运行结束/阻塞/目标完成事件自动推送。'

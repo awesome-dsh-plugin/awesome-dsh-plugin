@@ -1,0 +1,6 @@
+url: https://github.com/WuJiaoJue/dsh-suggest-ghost
+name: WuJiaoJue/dsh-suggest-ghost
+category: ui
+description:
+  en: 'Input prediction for the DSH composer: your next prompt suggested as ghost text after each turn, accepted with Tab. (autocomplete / input prediction / prompt suggestion)'
+  zh: '给 DSH 输入框加上输入预测：回合结束后自动建议你的下一句话，Tab 一键采纳；输入时按会话历史做前缀补全。（输入预测 / 自动补全 / 提示词建议 / 补全）'

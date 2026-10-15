@@ -1,0 +1,6 @@
+url: https://github.com/idoall/dsh-notify
+name: idoall/dsh-notify
+category: notify
+description:
+  en: In-page task notifications with collapsible status toasts, sound, and session navigation.
+  zh: 带可折叠状态通知、提示音与会话跳转的页内任务通知插件。

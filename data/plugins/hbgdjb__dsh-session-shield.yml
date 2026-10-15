@@ -1,0 +1,6 @@
+url: https://github.com/hbgdjb/dsh-session-shield
+name: hbgdjb/dsh-session-shield
+category: session
+description:
+  en: 'Guards session logs from malformed model tool calls (empty id/name, non-string arguments) so a bad call can never make a session unloadable.'
+  zh: '让会话日志永远不会因为一次畸形 tool call 而打不开：坏调用自动修复，正常调用原样通过，历史永远可加载。'

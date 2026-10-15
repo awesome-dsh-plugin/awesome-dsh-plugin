@@ -1,0 +1,6 @@
+url: https://github.com/fallow5/dsh-pin-sessions
+name: fallow5/dsh-pin-sessions
+category: session
+description:
+  en: Pin and unpin sessions to the top of the Web sidebar with a dedicated pinned panel, archive section, and native three-dot menu integration.
+  zh: 把会话置顶到 Web 侧边栏顶部：独立置顶面板、归档区、原生三点菜单集成。

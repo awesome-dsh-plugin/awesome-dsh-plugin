@@ -1,0 +1,6 @@
+url: https://github.com/chengzhicao/llm-capture
+name: chengzhicao/llm-capture
+category: ui
+description:
+  en: 'Web UI for capturing and reviewing raw LLM requests, streamed responses, token usage and tool calls.'
+  zh: 用于捕获和查看原始 LLM 请求、流式响应、Token 用量和工具调用的 Web 界面。

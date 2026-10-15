@@ -1,0 +1,6 @@
+url: https://github.com/woodfood111/dsh-token-live
+name: woodfood111/dsh-token-live
+category: usage
+description:
+  en: 'Composer readouts for the DeepSeek Harness: CJK-weighted draft token count, session spend at official peak/idle rates, context occupancy, and what the same usage would have cost on the costliest other model; client-only, with no host half and no credential access.'
+  zh: 'DeepSeek Harness 输入框下方的实时草稿 token 数、按官方高峰/空闲费率计算的会话花费、上下文占用，以及同样的用量在最贵的另一个模型上会花多少；纯客户端，没有 host 半，不接触凭据。'

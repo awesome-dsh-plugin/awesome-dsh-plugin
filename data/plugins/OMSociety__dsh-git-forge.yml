@@ -1,0 +1,6 @@
+url: https://github.com/OMSociety/dsh-git-forge
+name: OMSociety/dsh-git-forge
+category: git
+description:
+  en: 'Project-scoped Git credentials for DeepSeek Harness: forge accounts (GitHub, Gitea, GitLab, Bitbucket or a custom host) live in the right-sidebar "Git Forge" tab, are granted per project, and reach the agent as an HTTPS credential helper so the token never enters the conversation. Pushes to a host the project has not granted are rejected.'
+  zh: '为 DeepSeek Harness 提供项目级 Git 凭据：forge 账号（GitHub、Gitea、GitLab、Bitbucket 或自定义域名）在右侧栏「Git 凭据」标签页里管理并可按项目授权，再由生成的凭据 helper 交给 agent 走 HTTPS 推送，token 不进对话；未授权 host 的推送会被拦截器直接拒绝。'

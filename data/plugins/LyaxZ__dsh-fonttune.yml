@@ -1,0 +1,7 @@
+url: https://github.com/LyaxZ/dsh-fonttune
+name: LyaxZ/dsh-fonttune
+category: ui
+tarball: https://github.com/LyaxZ/dsh-fonttune/releases/latest/download/dsh-fonttune.tgz
+description:
+  en: 'Font plugin for the DeepSeek Harness Web GUI: the conversation gets its own font, size, line height and weight, the interface has a font and a weight of its own and follows the conversation by default, code keeps its own axis with ligature control, and whole setups save as presets.'
+  zh: 'DeepSeek Harness 字体插件：对话拥有字体、字号、行高与字重，界面用字体与字重并默认跟随对话（也可独立设置，两边互不影响），代码独立成轴并支持连字，整套配置可存为预设方案。'

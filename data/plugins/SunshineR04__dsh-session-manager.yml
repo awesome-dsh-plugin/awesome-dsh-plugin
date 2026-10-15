@@ -1,0 +1,7 @@
+url: https://github.com/SunshineR04/dsh-session-manager
+name: SunshineR04/dsh-session-manager
+category: session
+tarball: https://github.com/SunshineR04/dsh-session-manager/releases/download/v0.3.0/dsh-session-manager-0.3.0.tgz
+description:
+  en: 'Settings-page manager for archived DeepSeek Harness sessions: restore an archived session to its previous workspace position or permanently delete it (direct physical deletion, no backup layer). Adds a red permanently-delete item to the session context menu and three agent tools. Deleting an open session works immediately; the leftover in-memory copy is hidden behind an archive tombstone until the next restart.'
+  zh: '在设置页管理已归档会话：恢复或彻底删除（直接物理删除，无备份层）。会话菜单新增红色彻底删除项，附三个 agent 工具。已打开的会话也能立即删除，残留内存副本以归档墓碑隐藏、重启后自动清理。'

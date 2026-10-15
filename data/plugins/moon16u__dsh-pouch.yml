@@ -1,0 +1,6 @@
+url: https://github.com/moon16u/dsh-pouch
+name: moon16u/dsh-pouch
+category: tools
+description:
+  en: 'A pouch of practical micro-plugins for DSH: per-turn wall-clock time injection, safe restart, session ID header badge, Tavily search provider, configurable LLM request-header routes, and an MCP server console managing the official @deepseek-ai/dsh-mcp-client at runtime — add/edit/enable/disable/reconnect, per-tool switches, live status over SSE, mcpServers JSON import, and auto-migration of profile-YAML MCP entries.'
+  zh: 'DSH 实用小插件锦囊：每轮真实时钟注入、安全自愈重启、顶栏会话 ID 复制、Tavily 真实搜索提供方、可配置的 LLM 请求头路由，以及运行时管理官方 @deepseek-ai/dsh-mcp-client 的 MCP 服务器控制台——增删改/启停/重连、工具级开关、SSE 实时状态、mcpServers JSON 导入、profile YAML 条目自动移植。'

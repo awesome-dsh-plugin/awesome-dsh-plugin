@@ -1,0 +1,6 @@
+url: https://github.com/LoveDoLove/Project-Memory-Agent/tree/main/dsh-plugin
+name: LoveDoLove/Project-Memory-Agent#dsh-plugin
+category: memory
+description:
+  en: DSH bundle plugin that mounts 8 Project Memory skills, bootstraps memory architecture on first use, and registers codebase-memory bridge tools.
+  zh: DSH 插件：挂载 8 个 Project Memory 技能，首次使用时引导记忆架构初始化，并注册 codebase-memory 桥接工具。

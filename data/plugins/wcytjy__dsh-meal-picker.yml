@@ -1,0 +1,6 @@
+url: https://github.com/wcytjy/dsh-meal-picker
+name: wcytjy/dsh-meal-picker
+category: fun
+description:
+  en: 'A draggable bubble that picks three dishes at a time from a local 4,423-dish library; the first two are always well-known mains, and picking costs no tokens.'
+  zh: '可拖动的悬浮气泡，从本地 4,423 道菜里一次挑三道：前两道必定是常见国民菜；挑菜本身不花 token。'

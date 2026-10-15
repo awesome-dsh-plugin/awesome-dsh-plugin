@@ -1,0 +1,7 @@
+url: https://github.com/Eapp1e/dsh-poker
+name: Eapp1e/dsh-poker
+category: fun
+tarball: https://github.com/Eapp1e/dsh-poker/releases/download/v0.2.0/dsh-plugin-poker-0.2.0.tgz
+description:
+  en: "Texas Hold'em table for DeepSeek Harness: model-callable poker tools, six heuristic opponents, an optional coach, and a browser table whose buttons never post a chat message."
+  zh: "DeepSeek Harness 的德州扑克插件：无限注规则、机器人对手、真实感牌桌，教练模式讲解打法与赔率。"

@@ -1,0 +1,6 @@
+url: https://github.com/XMoon/dsh-subagent-router
+name: XMoon/dsh-subagent-router
+category: workflow
+description:
+  en: 'Adds subagent_route and subagent_fork_route delegation tools where the model itself picks the provider/model route for each child; the deployment only sets the spawn/fork backend, background policy and allowedProviders allowlist, while continuable children and background jobs reuse the official send_message / job_output tools.'
+  zh: '新增 subagent_route 与 subagent_fork_route 委托工具：由模型自主为子代理挑选 provider/model 路由，部署方仅配置 spawn/fork 后端、调度策略与 allowedProviders 白名单；续聊子代理与后台任务复用官方 send_message / job_output 工具。'

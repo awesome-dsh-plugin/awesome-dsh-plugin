@@ -1,0 +1,6 @@
+url: https://github.com/kenny2077/dsh-web-search-doubao
+name: kenny2077/dsh-web-search-doubao
+category: browser
+description:
+  en: 'Doubao Search (Volcengine 豆包搜索) web search provider for the DeepSeek Harness — swaps the active web_search backend to the standalone Doubao Search API with its own key and billing (500 free searches per month), and ships a dedicated settings card that stores the key via the credentials service.'
+  zh: '为 DeepSeek Harness 提供豆包搜索（火山引擎）网络搜索提供方——把 web_search 的后端切换为独立的豆包搜索 API，密钥与计费独立（每月 500 次免费），并内置专用设置卡片，经凭据服务保存密钥。'

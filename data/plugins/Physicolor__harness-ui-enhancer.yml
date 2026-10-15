@@ -1,6 +1,0 @@
-url: https://github.com/Physicolor/harness-ui-enhancer
-name: Physicolor/harness-ui-enhancer
-category: ui
-description:
-  en: 'Web UI polish layer for DeepSeek Harness: normalizes unfinished or self-contradictory official UI, reconciles style conflicts between installed plugins, and unifies the visual language via official design tokens; live-customizable chat width, markdown font size, workspace scale and UI font stack.'
-  zh: DeepSeek Harness Web UI 强化层：规范化官方未完善、设计语言矛盾的界面，协调已装插件间的样式冲突并统一视觉语言（全部遵循官方设计令牌）；支持实时自定义对话宽度、markdown 字号、工作区缩放与 UI 字体。

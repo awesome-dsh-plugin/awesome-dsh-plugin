@@ -1,0 +1,6 @@
+url: https://github.com/PPawnsir/task-board-plugin/tree/main/packages/dsh-agent-board
+name: PPawnsir/task-board-plugin#dsh-agent-board
+category: workflow
+description:
+  en: "Kanban task board for DeepSeek Harness sessions: the main agent dispatches coding tasks to one-shot worker/verifier subagents, with dependency scheduling, pipeline tiers, escalation handling, and file/notes context injection."
+  zh: "DeepSeek Harness 会话任务看板：主窗口把任务派发给一次性 Worker/Verifier 子代理执行与验收，支持依赖调度、管线分档、歧义上报裁决与预研上下文注入。"

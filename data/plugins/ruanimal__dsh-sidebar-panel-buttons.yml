@@ -1,0 +1,6 @@
+url: https://github.com/ruanimal/dsh-sidebar-panel-buttons
+name: ruanimal/dsh-sidebar-panel-buttons
+category: ui
+description:
+  en: 'Collapses the DSH Web sidebar panel menu (plugins, extensions, scheduled tasks, IM) from a vertical labelled list into a horizontal row of 36×36 icon buttons with hover tooltips; a Settings → General option switches back to the list and is remembered per browser.'
+  zh: '把 dsh Web 侧边栏的全局面板菜单（插件、扩展管理、定时任务、IM）从竖排文字列表收起为一行 36×36 图标按钮，悬停显示名称；可在「设置 → 通用」里切回列表，选择按浏览器记忆。'

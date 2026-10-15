@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/auditrail
+name: JohnXu22786/auditrail
+category: tools
+description:
+  en: "Security auditing and session forensics for dsh: full tool-invocation-chain recording (who/which tool/files/timestamps), redacted playback, and rule-based scanning."
+  zh: "dsh 安全审计与会话取证：完整工具调用链录制（谁/哪个工具/涉及文件/时间戳），支持脱敏回放与规则扫描。"

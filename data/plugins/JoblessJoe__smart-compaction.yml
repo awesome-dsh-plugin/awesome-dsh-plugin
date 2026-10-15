@@ -1,0 +1,5 @@
+url: https://github.com/JoblessJoe/smart-compaction
+name: JoblessJoe/smart-compaction
+category: session
+description:
+  en: 'Lets the model trigger compaction itself at a safe point via a compact_now tool (works mid-turn), plus a context_status tool reporting real token usage against the session''s actual context window.'

@@ -1,0 +1,6 @@
+url: https://github.com/SLin-code/dsh-skill-manager
+name: SLin-code/dsh-skill-manager
+category: skill
+description:
+  en: View local Skills and edit automatic and /name invocation policies from DSH Web settings, with bundled and symbolic-link entries kept read-only.
+  zh: 在 DSH Web 设置中查看本地 Skills，并编辑自动调用与 /name 调用策略；内置和软链接条目保持只读。

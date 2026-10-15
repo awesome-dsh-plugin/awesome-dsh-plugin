@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-maintain
+name: mzzsfy/dsh-plugin#dsh-maintain
+category: dev
+description:
+  en: 'Version and maintenance suite for DSH itself: detects new host releases from npm dist-tags, upgrades with one click, restarts safely, and the web page auto-recovers once the host is back.'
+  zh: 'DSH 版本与运维一体化：自动发现新版本、一键升级、安全重启，重启后页面自动恢复。'
+

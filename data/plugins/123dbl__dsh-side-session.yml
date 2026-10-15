@@ -1,0 +1,6 @@
+url: https://github.com/123dbl/dsh-side-session
+name: 123dbl/dsh-side-session
+category: session
+description:
+  en: 'Launches a fresh, continuable parallel session from the composer command menu (/side-chat) while the main session keeps running.'
+  zh: '主会话进行中也能一键新开独立的可续聊旁会话：从输入框 ＋ 命令菜单选 side-chat 即开即用，主会话不受影响。'

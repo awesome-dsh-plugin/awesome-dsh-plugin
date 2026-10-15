@@ -1,0 +1,6 @@
+url: https://github.com/AliceLJY/dsh-thumb
+name: AliceLJY/dsh-thumb
+category: ui
+description:
+  en: 'A phone shell for the web GUI - the sidebar becomes an overlay drawer that closes when a session is tapped, the settings sheet goes full-screen single column, and the transcript is retuned for phone reading.'
+  zh: '网页版界面的手机外壳：侧栏改为覆盖式抽屉、点会话自动收起，设置面板改全屏单列，正文排版按手机阅读距离重调。'

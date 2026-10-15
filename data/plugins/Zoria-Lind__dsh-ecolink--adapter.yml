@@ -1,0 +1,6 @@
+url: https://github.com/Zoria-Lind/dsh-ecolink/tree/main/adapter
+name: Zoria-Lind/dsh-ecolink#adapter
+category: memory
+description:
+  en: 'DSH side of the dsh-ecolink memory ecosystem: bridges chat.deepseek.com and DeepSeek Harness through a browser extension that harvests DSM-format memory tags and injects recalled memories into web chats, a zero-dependency local service that writes a shared memory pool, and this adapter, which injects memories pre-step and offers /ecolink-push write-back; compression is transactional (staging pool with commit/rollback).'
+  zh: 'dsh-ecolink 记忆生态的 dsh 侧组件：浏览器扩展收割 DSM 格式记忆标签并向网页对话注入回忆、零依赖本地服务写入共享记忆池、本 adapter 负责 pre-step 注入与 /ecolink-push 写回，共同打通 chat.deepseek.com 与 DSH；压缩为事务化双池（暂存提交/回滚）。'

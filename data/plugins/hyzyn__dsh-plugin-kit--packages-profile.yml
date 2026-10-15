@@ -1,0 +1,6 @@
+url: https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/profile
+name: hyzyn/dsh-plugin-kit#profile
+category: dev
+description:
+  en: 'Profile management card for the DSH Web GUI: view, create (base / web / headless templates), copy, rename and delete DSH profiles under ~/.dsh/profiles, with per-profile port configuration and a copyable launch command.'
+  zh: 'DSH Web GUI 的 Profile 管理卡片：可视化查看、创建（base / web / headless 三种模板）、复制、重命名与删除 ~/.dsh/profiles 下的 profile，支持逐 profile 端口配置并复制带 --port 的启动命令。'

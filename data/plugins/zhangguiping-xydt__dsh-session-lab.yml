@@ -1,0 +1,7 @@
+url: https://github.com/zhangguiping-xydt/dsh-session-lab
+name: zhangguiping-xydt/dsh-session-lab
+category: skill
+description:
+  en: DSH session workflows for packaging verifiable capsules, evaluating reusable Skills, and comparing controlled session trajectories.
+  zh: 用于打包可验证会话、评测可复用技能和对比受控会话轨迹的 DSH 工作流。
+tarball: https://github.com/zhangguiping-xydt/dsh-session-lab/releases/download/v0.1.0/dsh-session-lab-v0.1.0.tgz

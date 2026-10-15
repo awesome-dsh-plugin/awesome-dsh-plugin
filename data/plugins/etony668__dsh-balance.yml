@@ -1,0 +1,6 @@
+url: https://github.com/etony668/dsh-balance
+name: etony668/dsh-balance
+category: usage
+description:
+  en: DeepSeek API balance badge in the sidebar footer beside Settings — reads the key DSH already stores, shows granted/topped-up breakdown on hover, flags a balance under ¥2, and refreshes every 60 seconds or on click.
+  zh: 侧边栏底部「设置」旁常驻显示 DeepSeek API 余额——读取 DSH 已保存的密钥，悬停查看赠送/充值明细，余额低于 ¥2 变红告警，每 60 秒自动刷新或点击刷新。

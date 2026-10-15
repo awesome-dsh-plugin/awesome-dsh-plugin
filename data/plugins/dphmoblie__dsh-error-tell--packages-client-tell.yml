@@ -1,0 +1,6 @@
+url: https://github.com/dphmoblie/dsh-error-tell/tree/main/packages/client-tell
+name: dphmoblie/dsh-error-tell#client-tell
+category: dev
+description:
+  en: 'Boot-time watchdog for DSH web: detects broken plugins, disables them persistently so the UI opens, with quarantine audit, automatic probe recovery, and one-click restore.'
+  zh: 'dsh web 启动看门狗：检测并持久化禁用问题插件，让界面正常打开，并提供隔离账本、探针自动恢复与一键恢复。'

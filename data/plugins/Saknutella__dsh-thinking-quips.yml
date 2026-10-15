@@ -1,0 +1,6 @@
+url: https://github.com/Saknutella/dsh-thinking-quips
+name: Saknutella/dsh-thinking-quips
+category: ui
+description:
+  en: 'Personalises the DSH running-turn status line: rotating bilingual quips, a configurable animated loading icon (5 styles x 3 sizes) and one-click matching to the active theme colour, all in a General-settings panel, plus a # Chinese / # English sectioned quips editor. Ships with no dependencies, no build step and no config file.'
+  zh: '为 DSH 运行中状态行做轻量个性化：可轮换的中英俏皮话、可配置的动态加载图标（5 种样式 x 3 档尺寸）、一键匹配当前主题色，全部集中在「通用设置」里，外加一个用 # Chinese / # English 分段的俏皮话编辑框。零依赖、无构建、不写配置文件。'

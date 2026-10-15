@@ -1,0 +1,6 @@
+url: https://github.com/Icstick/dsh-work-continuity
+name: Icstick/dsh-work-continuity
+category: workflow
+description:
+  zh: "跨会话工作状态显式持久化：目标、决策与下一步从宿主事件自动捕获，或由模型经 work_state 工具主动记录，/checkpoint 随时可查。"
+  en: "Explicit cross-session work state for DeepSeek Harness: goals, decisions and next steps captured automatically from host events or via a model-visible work_state tool, inspectable with /checkpoint."

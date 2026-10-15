@@ -1,0 +1,6 @@
+url: https://github.com/TGYD-helige/dsh-plugins/tree/main/packages/dsh-a2a
+name: TGYD-helige/dsh-plugins#dsh-a2a
+category: remote
+description:
+  en: 'A2A protocol server for dsh agents, with JSON-RPC tasks, SSE streaming, cancellation, and an agent card.'
+  zh: '为 dsh agent 提供 A2A 协议服务，支持 JSON-RPC 任务、SSE 流式输出、取消任务和 agent card。'

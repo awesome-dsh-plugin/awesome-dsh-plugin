@@ -1,0 +1,6 @@
+url: https://github.com/log-li/dsh-automode
+name: log-li/dsh-automode
+category: security
+description:
+  en: 'CC-style auto-approval for DeepSeek Harness: deterministic deny/allow rules plus a two-stage allow/reject classifier with a circuit breaker and denial guidance.'
+  zh: '为 DeepSeek Harness 提供 Claude Code 式自动审批：确定性 deny/allow 规则 + 两阶段 allow/reject 分类器，内置熔断器与拒绝引导。'

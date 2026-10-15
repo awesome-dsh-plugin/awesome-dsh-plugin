@@ -1,0 +1,6 @@
+url: https://github.com/zingzheng/dsh-gb
+name: zingzheng/dsh-gb
+category: remote
+description:
+  en: 'Use your phone as a DSH peripheral remote: send messages (typed or dictated with the phone keyboard), answer yes/no and choice prompts, browse messages and switch sessions on a Game Boy-style screen, paired over LAN QR or a built-in Cloudflare tunnel.'
+  zh: '把手机变成 DSH 的外设遥控台：发送消息（打字或用手机输入法语音转文字）、应答 yes/no 审批与选择题、浏览消息与切换会话，Game Boy 风格屏幕；局域网扫码或内置 Cloudflare 隧道连接。'

@@ -1,0 +1,6 @@
+url: https://github.com/zhqowo/dsh-whale-tray
+name: zhqowo/dsh-whale-tray
+category: ui
+description:
+  en: 'Whale tray launcher for DeepSeek Harness: a Windows system-tray app and a macOS menu-bar app that start/stop the dsh service, summon the Web UI, restart and top up — running independently of the dsh process, like a Steam launcher for dsh.'
+  zh: '大肥鱼 —— DeepSeek Harness 的托盘 / 菜单栏启动器：Windows 右下角托盘 + macOS 右上角菜单栏，一键开关 dsh 服务、唤起 Web、重启、充值，独立于 dsh 进程运行，类似 Steam 之于游戏。'

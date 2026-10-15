@@ -1,0 +1,7 @@
+
+url: https://github.com/phungthien269/dsh-token-stats
+name: phungthien269/dsh-token-stats
+category: usage
+description:
+  en: Token usage dashboard for the DSH web GUI — today/week/month totals, per-model breakdown and a stacked 30-day chart, with a 4-language UI.
+  zh: DSH Web GUI 的 Token 用量仪表盘 — 今日/本周/本月/累计汇总、按模型明细和堆叠柱状图，界面支持中/英/越/日。

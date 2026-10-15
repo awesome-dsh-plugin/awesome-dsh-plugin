@@ -1,0 +1,6 @@
+url: https://github.com/f-infinite-z/dsh-plugin-ops/tree/main/packages/bundle
+name: f-infinite-z/dsh-plugin-ops#dsh-plugin-ops-bundle
+category: market
+description:
+  en: 'Pre-boot health gate and repair for dsh plugin trees: seven static scan rules, fault attribution after failed boots, whitelisted reversible fixes, and a panel with plugin-row management plus a RAG knowledge base of past failures.'
+  zh: 'dsh 插件树的启动前体检与修复：七条静态扫描规则、启动失败后的故障归因、白名单内的可逆修复，以及带插件行管理面板和历次故障 RAG 知识库。'

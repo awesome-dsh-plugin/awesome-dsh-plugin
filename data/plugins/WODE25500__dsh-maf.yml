@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-maf
+name: WODE25500/dsh-maf
+category: dev
+description:
+  en: "Microsoft Agent Framework (MAF) plugin for DeepSeek Harness: validate, run, and scaffold declarative agents and workflows (YAML)."
+  zh: "DeepSeek Harness 的 Microsoft Agent Framework (MAF) 插件：验证、运行、搭建 declarative agents 与 workflows(YAML)。"

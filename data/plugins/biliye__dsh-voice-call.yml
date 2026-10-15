@@ -1,0 +1,7 @@
+url: https://github.com/biliye/dsh-voice-call
+name: biliye/dsh-voice-call
+category: voice
+tarball: https://github.com/biliye/dsh-voice-call/releases/latest/download/dsh-voice-call.tgz
+description:
+  en: 'Voice call assistant for the DSH Web GUI: a draggable floating call ball, browser-side VAD that sends each utterance after a pause, FunASR HTTP or streaming speech recognition, MiniMax or OpenAI-compatible TTS replies, an optional wake-word mode with auto-sleep, and task dispatch to separate subagent sessions with progress, stop, and spoken completion reports.'
+  zh: 'DSH Web GUI 的个人语音通话助手：可拖拽悬浮球通话面板、浏览器端 VAD（停顿自动发送）、FunASR HTTP 或流式语音识别、MiniMax / OpenAI 兼容 TTS 语音回复、可开关的唤醒词模式（沉默自动休眠），以及把任务分发给独立子代理会话并跟踪进度、停止与完成播报。'

@@ -1,7 +1,7 @@
 url: https://github.com/Lenonss/DSH_VsCodeMode
 name: Lenonss/DSH_VsCodeMode
 category: git
-tarball: https://github.com/Lenonss/DSH_VsCodeMode/releases/latest/download/dsh-vscode-mode-0.1.10.tgz
+tarball: https://github.com/Lenonss/DSH_VsCodeMode/releases/download/v0.1.36/dsh-vscode-mode-0.1.36.tgz
 description:
   en: "VSCode-style editing experience for DeepSeek Harness: a Monaco-based central file editor (tabs, Ctrl+P quick open, status bar) and interactive diff review of agent edit/write results with per-change Keep/Undo, rollback and archiving, persisted across restarts."
   zh: "为 DeepSeek Harness 提供类 VSCode 编码体验：基于 Monaco 的中央文件编辑器（文件页签、Ctrl+P 快速打开、状态栏），并对 Agent 的 edit/write 结果进行交互式差异审查（逐处采纳/拒绝、回滚、归档），状态跨重启持久化。"

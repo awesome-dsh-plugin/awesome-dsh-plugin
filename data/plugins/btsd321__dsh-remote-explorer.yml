@@ -1,0 +1,6 @@
+url: https://github.com/btsd321/dsh-remote-explorer
+name: btsd321/dsh-remote-explorer
+category: remote
+description:
+  en: 'Remote development launcher for DeepSeek Harness: provisions dsh on a remote host via SSH and connects from the local client, with LLM credentials proxied through a reverse tunnel so they never leave the local machine. Ships as both a standalone CLI and a dsh plugin with a session panel, /remote slash command and remote_* agent tools.'
+  zh: '远程开发启动器：通过 SSH 在远端引导安装 dsh，从本地客户端连接，LLM 凭据经反向隧道代理、不离开本机。同时提供独立 CLI 与 dsh 插件双形态，插件含远程会话面板、/remote 命令及 remote_* agent 工具。'

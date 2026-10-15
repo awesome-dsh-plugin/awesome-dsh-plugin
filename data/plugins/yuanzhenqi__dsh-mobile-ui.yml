@@ -1,0 +1,6 @@
+url: https://github.com/yuanzhenqi/dsh-mobile-ui
+name: yuanzhenqi/dsh-mobile-ui
+category: ui
+description:
+  en: Phone-first drawer shell for DSH Web. Collapses the session list into a tap-to-open drawer, keeps header plugin actions, and turns Settings into a full-width sheet.
+  zh: 为 DSH Web 做成真正的手机壳：会话列表收成抽屉，点会话自动收起且不弹键盘，设置页改为全宽 sheet。

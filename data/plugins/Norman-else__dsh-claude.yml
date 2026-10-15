@@ -1,0 +1,6 @@
+url: https://github.com/Norman-else/dsh-claude
+name: Norman-else/dsh-claude
+category: workflow
+description:
+  en: Runs Claude Code as a DSH conversation while preserving its native agent loop, tools, skills, hooks, and MCP integrations.
+  zh: 将 Claude Code 作为 DSH 会话运行，同时保留其原生智能体循环、工具、技能、钩子和 MCP 集成。

@@ -1,0 +1,6 @@
+url: https://github.com/linxuhao/Deepseek-Continuity
+name: linxuhao/Deepseek-Continuity
+category: vision
+description:
+  zh: "本地生成图像/配音/音乐/音效并听写，同一性锁定：角色、动物、道具与配音角色定妆定声一次，之后每次调用复用同一份参考；退化产物（接近纯色的图、静音的音频）被拒绝而不是当成成功返回；生成的台词可以听写回文字，好让吞掉结尾的克隆暴露出来。空闲时引擎卸载显存，生图与听写也可改指向任意 OpenAI 形状的 API 而不用本地 Vulkan 后端。"
+  en: "Local image, voice, music and SFX generation plus transcription, with pinned identity: characters, animals, objects and actor voices are defined once and reused on every later call, degenerate output (a near-flat image, silent audio) is rejected instead of returned as success, and a generated line can be read back as text so a clone that swallowed its ending becomes visible. The engines unload when idle, and image generation and transcription can each be pointed at an OpenAI-shaped API instead of the local Vulkan backend."

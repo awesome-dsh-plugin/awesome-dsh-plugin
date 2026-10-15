@@ -1,0 +1,7 @@
+url: https://github.com/QuantumKuba/dsh-webstack
+name: QuantumKuba/dsh-webstack
+category: browser
+tarball: https://github.com/QuantumKuba/dsh-webstack/releases/download/v0.1.0/dsh-webstack-0.1.0.tgz
+description:
+  en: 'SearXNG search and Scrapling multi-tier fetch provider bundle for DeepSeek Harness ctx.web with SSRF protection and markdown conversion.'
+  zh: '为 DeepSeek Harness (ctx.web) 提供 SearXNG 搜索与 Scrapling 多级抓取 Provider，支持 SSRF 防护与 Markdown 格式转换。'

@@ -1,6 +1,0 @@
-url: https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-git-graph
-name: zhu1090093659/dsh-web-ui#packages/dsh-git-graph
-category: git
-description:
-  en: 'Git branch selector and Git graph for the dsh web GUI: switch branches and explore branch-lane and commit history from the conversation header.'
-  zh: 输入框上方提供 Git 分支选择器，并把分支泳道与提交历史画成图谱，沿着时间线找到任意变更。

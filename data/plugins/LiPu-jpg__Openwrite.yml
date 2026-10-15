@@ -1,0 +1,7 @@
+url: https://github.com/LiPu-jpg/Openwrite
+name: LiPu-jpg/Openwrite
+category: workflow
+description:
+  en: 'Novel-writing workbench for DSH with an authoring preset, outline and character management, manuscript annotations, review workflows, and a managed local Python backend.'
+  zh: '面向 DSH 的小说创作工作台，提供创作预设、大纲与人物管理、正文批注、审稿流程和受管理的本地 Python 后端。'
+tarball: https://github.com/LiPu-jpg/Openwrite/releases/download/v0.2.8/dsh-openwrite-0.2.8.tgz

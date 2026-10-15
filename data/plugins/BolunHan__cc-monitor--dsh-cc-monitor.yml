@@ -1,0 +1,7 @@
+url: https://github.com/BolunHan/cc-monitor/tree/main/dsh-cc-monitor
+name: BolunHan/cc-monitor#dsh-cc-monitor
+category: notify
+description:
+  en: Reports DeepSeek Harness session activity to a self-hosted cc-monitor server, which surfaces Claude Code and DSH sessions as color-coded state cards in one web dashboard and pings your browser and Android app when a session needs attention.
+  zh: 将 DeepSeek Harness 会话活动上报到自托管的 cc-monitor 服务器：Claude Code 与 DSH 会话以彩色状态卡片出现在同一个 Web 仪表盘中，会话需要关注时通过浏览器与 Android 应用通知你。
+tarball: https://github.com/BolunHan/cc-monitor/releases/download/v0.7.4/dsh-cc-monitor.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/icearia0219/dsh-memory-spaces
+name: icearia0219/dsh-memory-spaces
+category: memory
+description:
+  en: Human-governed cross-session memory spaces with independent source and consumer relationships, provenance, versioning, and pre-send injection review.
+  zh: 用户治理的跨会话记忆空间，提供独立的来源与使用关系、来源追踪、版本管理和发送前注入检查。

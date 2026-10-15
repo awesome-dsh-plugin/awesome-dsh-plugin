@@ -1,0 +1,6 @@
+url: https://github.com/bailinghub/bailinghub-dsh-plugin
+name: bailinghub/bailinghub-dsh-plugin
+category: tools
+description:
+  en: Let a local DeepSeek Harness Agent use BailingHub to query data, update records, and run permitted actions in an online store, SaaS, or other admin system.
+  zh: 让本地 DeepSeek Harness 智能体通过 BailingHub，直接操作商城、SaaS 或其他业务系统后台，在现有账号权限内查询数据、修改资料并执行已开放的操作。

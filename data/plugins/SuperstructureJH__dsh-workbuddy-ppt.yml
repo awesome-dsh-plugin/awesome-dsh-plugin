@@ -1,0 +1,6 @@
+url: https://github.com/SuperstructureJH/dsh-workbuddy-ppt
+name: SuperstructureJH/dsh-workbuddy-ppt
+category: docs
+description:
+  en: 'Generates editable PPTX decks in DSH with a bundled authoring Skill, deterministic PPTD scene checks, native PowerPoint objects, and local PPTD source-project delivery.'
+  zh: 在 DSH 中使用包内编排 Skill、确定性 PPTD 场景检查和原生 PowerPoint 对象生成可编辑 PPTX，并在本地交付 PPTD 源项目。

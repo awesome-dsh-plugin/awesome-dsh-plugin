@@ -1,0 +1,7 @@
+url: https://github.com/tabilet/tabilet-skills
+name: tabilet/tabilet-skills
+tarball: https://github.com/tabilet/tabilet-skills/releases/download/v2.1.0/tabilet-skills-2.1.0.tgz
+category: memory
+description:
+  en: Shared engineering skills, a read-only memory-bank dashboard with SQLite audit guidance, and workflow request previews for DSH.
+  zh: 共享工程技能、提供 SQLite 审计说明的只读记忆库仪表盘，以及 DSH 工作流请求预览。

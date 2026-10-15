@@ -11,7 +11,7 @@ import { CAT_IDS, PLUGINS_DIR, slugFor, writeEntry } from './lib/entries.mjs'
 function parseReadme(loc) {
   const out = new Map()
   let cat = null
-  for (const line of fs.readFileSync(loc.readme, 'utf8').split('\n')) {
+  for (const line of fs.readFileSync(loc.readme, 'utf8').split(/\r?\n/)) {
     const h = line.match(/^#{2,3} (.+)$/)
     if (h) {
       cat = CAT_IDS.find((id) => h[1].includes(loc.categories[id])) ?? null

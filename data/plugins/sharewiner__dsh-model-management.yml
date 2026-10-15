@@ -1,0 +1,6 @@
+url: https://github.com/sharewiner/dsh-model-management
+name: sharewiner/dsh-model-management
+category: model
+description:
+  en: Manages the default DSH model, provider and model visibility, and optional OpenAI Responses web search.
+  zh: 管理 DSH 默认模型、Provider 与模型可见性，并支持可选的 OpenAI Responses 联网搜索。

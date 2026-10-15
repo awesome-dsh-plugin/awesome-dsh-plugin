@@ -1,0 +1,6 @@
+url: https://github.com/chen731215-dev/dsh-tavern-v2
+name: chen731215-dev/dsh-tavern-v2
+category: fun
+description:
+  en: 'Tavern management panel for DeepSeek Harness: character cards, worldbooks and presets with per-session isolation, memory summaries, a character relationship web, one-click plot options and an NSFW mode. The full experience also needs the companion plugins dsh-muv-engine and dsh-muv-table, which render the status bar, the plot options and the variable tables.'
+  zh: '酒馆管理面板：多角色卡、多世界书、多预设与会话级隔离，记忆总结、角色关系网、剧情选项一键发送，另有 NSFW 模式。完整效果需同时安装伴生插件 dsh-muv-engine 与 dsh-muv-table，用于渲染状态栏、剧情选项与变量表格。'

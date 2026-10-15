@@ -1,0 +1,6 @@
+url: https://github.com/James-web11/dsh-matlab-mcp
+name: James-web11/dsh-matlab-mcp
+category: tools
+description:
+  en: Registers the MathWorks MATLAB/Simulink MCP server into a dsh profile, so agent sessions get mcp__matlab__* tools for running MATLAB code and reading, editing and testing Simulink models.
+  zh: 把 MathWorks MATLAB/Simulink MCP 服务器注册进 dsh profile，让会话获得 mcp__matlab__* 工具，用于运行 MATLAB 代码以及读取、编辑与测试 Simulink 模型。

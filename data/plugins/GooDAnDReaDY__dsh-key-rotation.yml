@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-key-rotation
+name: GooDAnDReaDY/dsh-key-rotation
+category: model
+description:
+  en: "Keeps a pool of API keys per provider with auto-created clone routes, switches to the next key on quota or rate-limit errors, probes cooled keys for recovery, and exposes the pools, cooldown and switch codes in a Settings section."
+  zh: "为每个提供方维护 API Key 池并自动创建克隆路由，在配额或限流错误时切换到下一个 Key，主动探测冷却中的 Key 以便恢复，并在设置中提供 Key 池、冷却时间与切换状态码的编辑界面。"

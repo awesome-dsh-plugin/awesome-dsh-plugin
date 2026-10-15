@@ -1,6 +1,0 @@
-url: https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-skill-explorer
-name: zhu1090093659/dsh-web-ui#packages/dsh-skill-explorer
-category: skill
-description:
-  en: 'Skill center for the dsh web GUI: browse all loaded skills grouped by source, enable or disable model invocation, create new skills, and delete into a recoverable trash.'
-  zh: 技能中心：按来源分级浏览已加载的全部 skill，启用/禁用模型调用、创建新技能、删除进可恢复回收站。

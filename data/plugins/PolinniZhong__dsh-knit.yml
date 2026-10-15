@@ -1,0 +1,6 @@
+url: https://github.com/PolinniZhong/dsh-knit
+name: PolinniZhong/dsh-knit
+category: docs
+description:
+  en: "Lists the Markdown documents, images and video that already exist anywhere in the session workspace in the DSH sidebar, ranked by relevance to the current conversation: recent messages are matched locally against document title, summary and body with IDF weighting, with no model calls and no network. Because the list is scanned from the workspace instead of remembered, restarting DSH or starting a new session does not empty it. Images and video preview in place, with relative-path images resolved and video streamed over HTTP Range. A references bar under the preview header shows which documents cite the one being previewed and which it cites, with one click to jump between them. The same ranking is exposed to the agent as a knit_docs tool, which returns the most relevant documents along with the passage that matched in each, where one is found."
+  zh: "把会话工作区里已有的 Markdown 文档、图片与视频列进 DSH 侧边栏，按与当前对话的相关性排序：用最近几条消息在本地与文档标题、摘要、正文做带 IDF 权重的匹配，不调用模型，也没有网络出口。列表来自工作区扫描，而不是「最近打开记录」，所以重启 DSH 或新开会话都不会变空。图片与视频可就地预览，相对路径图片真实渲染，视频走 HTTP Range 流式播放。预览头下方的引用条显示当前这篇被哪些文档引用、又引用了哪些，点一项即可跳过去。同一份排序也作为 knit_docs 工具交给 agent：它返回最相关的若干篇，并附上每篇里命中的那段原文（有命中时才附）。"

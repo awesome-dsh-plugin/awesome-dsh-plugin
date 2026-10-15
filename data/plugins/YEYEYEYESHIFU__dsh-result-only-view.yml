@@ -2,5 +2,5 @@ url: https://github.com/YEYEYEYESHIFU/dsh-result-only-view
 name: YEYEYEYESHIFU/dsh-result-only-view
 category: ui
 description:
-  en: 'Results-only conversation toggle for the Web GUI: hides thinking and tool-call process rows, keeps one live status line while the agent works, restores working animations under prefers-reduced-motion, zh-CN/en localized.'
-  zh: Web 对话「只看结果」开关：隐藏思考与工具调用过程，运行中仅保留一条实时状态行，reduced-motion 环境下恢复活动光影，中英双语。
+  en: 'Results-only conversation toggle for the Web GUI: hides thinking and tool-call process rows, keeps one live status line while the agent works, restores working animations under prefers-reduced-motion, zh-CN/en localized. Works in the stock composer and inside dsh-split-screen panes; verified on DSH 0.1.1 and 0.1.5.'
+  zh: Web 对话「只看结果」开关：隐藏思考与工具调用过程，运行中仅保留一条实时状态行，reduced-motion 环境下恢复活动光影，中英双语。原生输入框与 dsh-split-screen 分屏面板内均可用；已适配 DSH 0.1.1 与 0.1.5。

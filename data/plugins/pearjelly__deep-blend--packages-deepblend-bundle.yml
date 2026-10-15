@@ -1,0 +1,14 @@
+url: https://github.com/pearjelly/deep-blend/tree/main/packages/deepblend/bundle
+name: pearjelly/deep-blend#bundle
+# `#bundle` rather than a prettier `#deepblend`: the gate's own rule is `owner/repo#<last segment of the
+# subdirectory the url points at>`, and its example is `…/packages/my-plugin` → `owner/repo#my-plugin`.
+# A nicer label would have to come from renaming the directory, which the rest of the repository pins.
+category: tools
+# The release asset `tools/build-release-tarball.mjs` builds and `gh release` attaches. `latest/download/` plus a
+# name with no version in it is what keeps this URL alive across releases; `--check` on that tool fails if a
+# version ever appears in the asset name.
+tarball: https://github.com/pearjelly/deep-blend/releases/latest/download/deepblend-bundle.tgz
+description:
+  # Quoted because it contains ": " — unquoted, the YAML parser trips on the colon.
+  en: 'Render and iterate on Blender scenes from DSH: 16 tools for scene specs, previews, visual review and delivery renders, with immutable revisions and an approval gate.'
+  zh: '在 DSH 里渲染并迭代 Blender 场景：16 个工具覆盖场景规格、预览、视觉评审与交付渲染，带不可变 revision 与审批闸门。'

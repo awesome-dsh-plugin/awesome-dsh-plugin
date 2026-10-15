@@ -2,5 +2,5 @@ url: https://github.com/ChongCyrus/Vibe-Mathematics
 name: ChongCyrus/Vibe-Mathematics
 category: workflow
 description:
-  en: 'Multi-agent math problem-solving & verification framework: brainstorm → solver iteration → multi-verifier debate → Verified knowledge base, with checkpoint resume and manual/auto intervention (also ships as an agent preset).'
-  zh: 多代理数学问题求解与验证框架：头脑风暴 → 求解迭代 → 多验证器辩论 → 可信知识库沉淀，支持断点续跑与人工/自动干预（同时提供 agent preset 与可安装 bundle）。
+  en: 'Installs four multi-agent math-research presets for DSH: v2 (probability-driven pipeline with multi-verifier debate), v3 (paper-style Markdown knowledge base with a planner agent and a reusable method library), v4 (persistent self-organizing residents that message and meet), and v5 (a research institute with an academician who decomposes and assigns work, voting researchers, temp workers, group chat and a compare-and-set task board); all four support checkpoint resume, human intervention, and an optional Lean formal-verification switch (off/encourage/require) whose passing proof turns the vote into a fidelity check of the Lean statements.'
+  zh: 为 DSH 安装四个多代理数学研究预设：v2（概率驱动流水线 + 多验证器辩论）、v3（论文式 Markdown 知识库 + 规划代理 + 可复用方法库）、v4（常驻自组织成员，靠留言与开会决定一切）、v5（研究所：院士拆解并分派任务、有表决权的研究员、临时工、群聊与 CAS 任务板）；四套均支持断点续跑、人工干预，以及可调档的 Lean 形式化验证（off/encourage/require，一旦跑通，表决转为对 Lean 陈述的忠实性核对）。

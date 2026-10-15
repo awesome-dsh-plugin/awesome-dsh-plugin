@@ -2,5 +2,5 @@ url: 'https://github.com/AmethystLuna/logicprobe'
 name: AmethystLuna/logicprobe
 category: skill
 description:
-  en: Claim-verification skill that checks design documents and plans against codebase facts, escalating behavioral claims to executable logic-primitive verification with structural checks and adversarial probes.
-  zh: 声称核查技能：将设计文档与计划中的每条声称对照代码库事实核验，行为类声称升级为可执行模型验证（结构检查与对抗探针）。
+  en: Claim-verification skill that checks design documents and plans against codebase facts, escalating behavioral claims to executable logic-primitive verification for state machines and data models, with before/after regression, domain constraints, and concurrency risk mining.
+  zh: 声称核查技能：将设计文档与计划中的每条声称对照代码库事实核验，行为类声称升级为状态机/数据模型逻辑原语验证，支持前后回归、领域约束与并发风险挖掘。

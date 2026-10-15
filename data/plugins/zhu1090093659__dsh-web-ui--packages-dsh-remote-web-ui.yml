@@ -1,6 +1,0 @@
-url: https://github.com/zhu1090093659/dsh-web-ui/tree/main/packages/dsh-remote-web-ui
-name: zhu1090093659/dsh-web-ui#packages/dsh-remote-web-ui
-category: remote
-description:
-  en: 'Remote control of a dsh web workspace from phone or PC: QR-code pairing through a token-gated channel, SSE real-time sync, and separate mobile and full desktop GUI modes.'
-  zh: 手机/PC 远程操控 dsh web 工作区：扫码配对、令牌门控通道、SSE 实时同步，提供移动端与完整桌面 GUI 两种远程形态。

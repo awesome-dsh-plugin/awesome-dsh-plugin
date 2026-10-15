@@ -1,0 +1,6 @@
+url: https://github.com/klingai-dev/deepseek-plugin
+name: klingai-dev/deepseek-plugin
+category: vision
+description:
+  en: Turn every idea into an image or video with Kling AI. In DeepSeek Harness, use natural language for text-to-image, image-to-image, text-to-video, image-to-video, reference-image creation, task tracking, and result previews.
+  zh: 一句话，让灵感从想法变成大片。在 DeepSeek Harness 中直接用自然语言调用可灵 AI，支持文生图、图生图、文生视频、图生视频、参考图创作、任务跟踪和结果预览。

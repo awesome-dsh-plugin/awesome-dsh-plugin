@@ -1,0 +1,6 @@
+url: https://github.com/hoyyang/dsh-glm-mode
+name: hoyyang/dsh-glm-mode
+category: model
+description:
+  en: 'GLM Mode agent preset for zhipuai/glm-5.3-flash: PTC/Code Mode tool presentation, a reasoning loop guard and a tool spin guard (live-incident driven), and GLM-specific auto-compaction at 75%/22%.'
+  zh: '为 zhipuai/glm-5.3-flash 调优的「GLM 模式」Agent 预设：PTC 程序化工具调用、思考死循环守卫与工具空转守卫双层防护（源自活体事故复盘）、GLM 专属自动压缩（75%/22%）。'

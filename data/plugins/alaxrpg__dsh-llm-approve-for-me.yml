@@ -1,0 +1,6 @@
+url: https://github.com/alaxrpg/dsh-llm-approve-for-me
+name: alaxrpg/dsh-llm-approve-for-me
+category: security
+description:
+  en: "Uses an isolated LLM review to approve or reject DSH sandbox permission requests."
+  zh: "使用隔离的 LLM 审查来批准或拒绝 DSH 沙箱权限请求。"

@@ -1,0 +1,6 @@
+url: https://github.com/w4xxx/dsh-xia-plugins/tree/main/packages/gameassist-knowledge
+name: w4xxx/dsh-xia-plugins#packages/gameassist-knowledge
+category: docs
+description:
+  en: 'Tree-shaped Markdown knowledge base for DSH agents: kb_list/kb_read/kb_write tools, tree/node HTTP routes, and a browser panel companion.'
+  zh: '树状 Markdown 知识库：为 DSH Agent 提供 kb_list/kb_read/kb_write 工具、目录/正文 HTTP 接口，并配套浏览器面板。'

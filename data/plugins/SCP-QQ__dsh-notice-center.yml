@@ -1,0 +1,6 @@
+url: https://github.com/SCP-QQ/dsh-notice-center
+name: SCP-QQ/dsh-notice-center
+category: notify
+description:
+  en: Turn the tab icon into a green/amber status light and send browser notifications when a session finishes or awaits your input, with 47 selectable notification sounds.
+  zh: 把标签页图标变成绿/琥珀状态灯，并在会话跑完或有交互待处理时发送浏览器通知，含 47 个可选音效。

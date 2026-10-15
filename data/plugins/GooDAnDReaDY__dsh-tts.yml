@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-tts
+name: GooDAnDReaDY/dsh-tts
+category: voice
+description:
+  en: "Speaks agent replies in the DeepSeek Harness web UI through a provider fallback chain (OpenAI, ElevenLabs, Google, Azure, Groq, Deepgram, OpenRouter, Edge, Piper, eSpeak), so a failing or rate-limited provider falls through to the next instead of going silent."
+  zh: "在 DeepSeek Harness 网页 UI 中朗读智能体回复，采用服务商回退链（OpenAI、ElevenLabs、Google、Azure、Groq、Deepgram、OpenRouter、Edge、Piper、eSpeak），某个服务商失败或被限流时自动切换到下一个，而不是直接静音。"

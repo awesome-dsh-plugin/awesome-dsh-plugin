@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-settings-nav-icons
+name: mzzsfy/dsh-plugin#dsh-settings-nav-icons
+category: ui
+description:
+  en: 'Section icons for the settings navigation: replaces the uniform gear icons with per-section glyphs and fills the plugin-market card avatar slot with each plugin icon; a page reload after uninstall restores the official icons.'
+  zh: '设置导航分区图标：把千篇一律的齿轮换成各分区专属图形，并为插件市场卡片头像槽提供插件图标，卸载后重载页面即恢复官方图标。'
+

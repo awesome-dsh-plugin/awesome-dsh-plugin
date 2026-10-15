@@ -1,0 +1,6 @@
+url: https://github.com/YiRan0/dsh-bangumi
+name: YiRan0/dsh-bangumi
+category: tools
+description:
+  en: 'Anime subscription manager for DeepSeek Harness: Bangumi metadata lookup, nyaa/dmhy torrent search, qBittorrent auto-download with RSS-based new-episode polling, local media-library dedup, and a calendar/progress sidebar GUI with 11 LLM tools (bangumi_lookup / bangumi_search / bangumi_subscribe / bangumi_unsubscribe / bangumi_list / bangumi_progress / bangumi_calendar / qb_status / qb_configure / qb_add_torrent / library_scan).'
+  zh: 'DSH 追番订阅管理器：Bangumi 查番、nyaa/dmhy 搜种、qBittorrent 自动下载（RSS 判新轮询）、本地媒体库查重，附日历/进度侧边栏 GUI 与 11 个 LLM 工具（bangumi_lookup / bangumi_search / bangumi_subscribe / bangumi_unsubscribe / bangumi_list / bangumi_progress / bangumi_calendar / qb_status / qb_configure / qb_add_torrent / library_scan）。'

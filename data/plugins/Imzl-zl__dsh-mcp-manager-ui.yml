@@ -1,0 +1,6 @@
+url: https://github.com/Imzl-zl/dsh-mcp-manager-ui
+name: Imzl-zl/dsh-mcp-manager-ui
+category: ui
+description:
+  en: "MCP management panel for the DSH web UI: per-server status, transport and full tool input schema, with add/edit/enable/disable/remove in global and project scopes, reconnect for global servers, a five-server built-in catalog, and config import from ten other clients with a preview. A project's MCP servers share one connection per (project, serverName) — the first session opens it and the last one closes it — so concurrent sessions reuse a single mcp-client instance; the panel shows how many sessions share it and marks a config change as pending until the connection is rebuilt."
+  zh: "DSH 网页的 MCP 管理面板：查看每个服务器的状态、传输方式与完整工具入参 Schema，在全局与项目两种作用域下新增/编辑/启停/移除（重连仅全局），可从 5 个内置服务器一键安装，或从另外 10 种客户端导入配置（预览后写入）。项目 MCP 按「项目目录 + serverName」共用一份连接：第一个会话建立、最后一个会话释放，同项目的并发会话因此复用同一个 mcp-client 实例；面板会标出当前有几个会话在共用它，以及配置改动是否待生效。"

@@ -1,0 +1,6 @@
+url: https://github.com/Rice00/dsh-job-progress
+name: Rice00/dsh-job-progress
+category: ui
+description:
+  en: 'Live progress for long-running background jobs in the DSH web GUI: a draggable floating ball in the session that owns the job, expanding into a panel with done/total, speed and ETA.'
+  zh: 'DSH Web 界面中长时间后台任务的实时进度：有任务的会话里浮着一个小球，可拖动，点开是含已完成/总量、速度与剩余时间的面板。'

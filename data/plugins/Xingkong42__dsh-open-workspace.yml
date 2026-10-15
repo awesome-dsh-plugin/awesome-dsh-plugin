@@ -1,0 +1,6 @@
+url: https://github.com/Xingkong42/dsh-open-workspace
+name: Xingkong42/dsh-open-workspace
+category: ui
+description:
+  en: 'Adds Open workspace entries to the sidebar session-row menu and the session header actions slot, opening the session workspace folder in the system file manager.'
+  zh: '在工作区侧边栏会话行菜单和会话顶部标题栏提供「打开工作区」入口，用系统文件管理器打开当前会话所属工作区文件夹。'

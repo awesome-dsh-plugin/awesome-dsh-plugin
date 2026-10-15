@@ -1,0 +1,6 @@
+url: https://github.com/Pudge1996/dsh-composer-stretch
+name: Pudge1996/dsh-composer-stretch
+category: ui
+description:
+  en: Expand button for the DSH Web UI composer — appears at 3+ lines, stretches to near-fullscreen height, auto-collapses on send, and Enter inserts newlines in expanded mode.
+  zh: 输入框全屏扩展按钮——内容达 3 行以上时出现，点击扩展至全屏高度，发送后自动折叠，扩展模式下 Enter 换行。

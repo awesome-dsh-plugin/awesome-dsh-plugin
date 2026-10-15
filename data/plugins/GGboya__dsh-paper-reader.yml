@@ -1,0 +1,7 @@
+url: https://github.com/GGboya/dsh-paper-reader
+name: GGboya/dsh-paper-reader
+category: docs
+description:
+  zh: "论文伴读工作台：文献库 + PDF 阅读器 + 教练式伴读。回答必带页码，点页码跳回 PDF 并高亮闪烁对应原文；选中即问不打断阅读；自带「严格师傅」preset——定阅读计划、逐节带读、出题批改，成绩跨会话累积；原文 ↔ 纯中文原地切换（babeldoc 零预装）。本地转录检索，文档不出本机。"
+  en: "Paper reading workbench: library + PDF reader + tutor-style companion. Answers cite clickable page numbers that jump back to the PDF and flash the exact passage; select-to-ask without leaving the paper; bundled strict-tutor preset (reading plan, section coaching, graded quizzes tracked across sessions); in-place original ↔ Chinese toggle (babeldoc, zero preinstall). Local transcription and search — documents never leave your machine."
+tarball: https://github.com/GGboya/dsh-paper-reader/releases/latest/download/dsh-paper-reader.tgz

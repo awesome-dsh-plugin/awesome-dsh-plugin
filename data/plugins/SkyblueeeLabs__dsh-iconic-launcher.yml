@@ -1,0 +1,6 @@
+url: https://github.com/SkyblueeeLabs/dsh-iconic-launcher
+name: SkyblueeeLabs/dsh-iconic-launcher
+category: ui
+description:
+  en: 'Customize the DeepSeek Harness desktop shortcut icon: pick a preset or upload an image, auto-remove the white backdrop, build a multi-size ICO, and write the shortcut in one click.'
+  zh: '自定义 DeepSeek Harness 桌面快捷方式图标：选预设或上传图片，自动去除白底、生成多尺寸 ICO，一键写入桌面快捷方式。'

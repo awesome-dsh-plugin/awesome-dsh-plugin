@@ -1,0 +1,6 @@
+url: https://github.com/MiHjy12138/dsh-memory-lite
+name: MiHjy12138/dsh-memory-lite
+category: memory
+description:
+  en: 'On-demand memory for DeepSeek Harness: session logs are distilled into layered markdown (a summary, an index and per-topic files), and a mem_query tool returns only the matched entries rather than the whole index. Nothing is injected per turn, there are no dependencies, and every entry keeps a source pointer back to the conversation it came from.'
+  zh: "给 DeepSeek Harness 的按需记忆库：会话日志提炼成分层 markdown（总览、索引与分主题明细），mem_query 只回命中条目而非整份索引。不每轮注入、零依赖，每条记忆都保留指回原对话的溯源标记。"

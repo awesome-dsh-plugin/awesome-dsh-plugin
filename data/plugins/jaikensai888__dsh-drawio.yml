@@ -1,0 +1,6 @@
+url: https://github.com/jaikensai888/dsh-drawio
+name: jaikensai888/dsh-drawio
+category: ui
+description:
+  en: 'A draw.io editor as a .drawio file viewer in the DSH sidebar: diagrams are ordinary workspace files (new ones default to docs/diagrams/), edits autosave, and a file changed outside the editor is refused with a conflict bar instead of being overwritten; the editor is downloaded once from a pinned upstream release with a SHA-256 check and then runs fully offline.'
+  zh: '把 draw.io 编辑器接进 DSH 侧边栏的 .drawio 文件预览器：图纸就是工作区里的普通文件（新建默认落在 docs/diagrams/），改动自动保存，文件被编辑器以外的东西改过时会拒绝覆盖并弹出冲突条；编辑器首次使用时从固定上游版本下载并校验 SHA-256，之后完全离线运行。'

@@ -1,7 +1,7 @@
 url: https://github.com/yihefeikong-rgb/dsh-cc-haha-memory
 name: yihefeikong-rgb/dsh-cc-haha-memory
 category: memory
-tarball: https://github.com/yihefeikong-rgb/dsh-cc-haha-memory/releases/latest/download/dsh-memory-0.1.0.tgz
+tarball: https://github.com/yihefeikong-rgb/dsh-cc-haha-memory/releases/download/v0.1.0/dsh-memory-0.1.0.tgz
 description:
   en: "Persistent memory for DeepSeek Harness: memory read/write/retrieve tools, per-turn auto-recording, project-scoped recall injection and a management UI, with non-destructive Claude Code memory import."
   zh: "DeepSeek Harness 持久记忆插件：记忆读写/检索工具、回合自动记录、项目作用域召回注入、管理界面，可非破坏导入 Claude Code 记忆。"

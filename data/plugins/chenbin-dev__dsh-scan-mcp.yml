@@ -1,0 +1,6 @@
+url: https://github.com/chenbin-dev/dsh-scan-mcp
+name: chenbin-dev/dsh-scan-mcp
+category: tools
+description:
+  en: 'Scans MCP servers configured in Claude Code, Codex and CodeBuddy and probes real connectivity via stdio and streamable-http initialize handshakes, with enable/disable toggles and a /mcp control panel.'
+  zh: 扫描 Claude Code / Codex / CodeBuddy 配置中的 MCP，通过 stdio 与 streamable-http initialize 握手检测真实连通性，支持启停开关与 /mcp 控制面板。

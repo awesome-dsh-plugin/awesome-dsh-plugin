@@ -1,0 +1,6 @@
+url: https://github.com/Icstick/dsh-context-maid
+name: Icstick/dsh-context-maid
+category: session
+description:
+  zh: "自动上下文策展：tool 输出内容感知瘦身、无效日志清理、用户要求与进行中工作钉扎保护、先归档后压缩，全程审计留痕。"
+  en: "Context curation for DeepSeek Harness: content-aware tool-output slimming, dead-log sweep, pinned user requirements and in-flight work, archive-then-compact with an audit trail."

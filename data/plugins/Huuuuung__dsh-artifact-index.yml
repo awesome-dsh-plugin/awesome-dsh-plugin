@@ -1,0 +1,6 @@
+url: https://github.com/Huuuuung/dsh-artifact-index
+name: Huuuuung/dsh-artifact-index
+category: ui
+description:
+  en: The missing backend for the dsh-artifacts sidebar tab — serves the /report artifact index and the artifact bytes it renders.
+  zh: 为 dsh-artifacts 侧边栏补上缺失的后端，提供 /report 产物索引与预览所需的文件内容。

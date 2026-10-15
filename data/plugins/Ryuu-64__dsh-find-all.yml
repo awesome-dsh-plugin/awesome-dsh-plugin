@@ -1,0 +1,6 @@
+url: https://github.com/Ryuu-64/dsh-find-all
+name: Ryuu-64/dsh-find-all
+category: ui
+description:
+  en: 'Adds a Cmd/Ctrl+F find bar to the DSH desktop app, and it searches the whole conversation: when a match sits in history that is not on screen yet, the plugin pages that history in and searches again, so the match count and the highlights cover the entire session instead of only the rendered messages.'
+  zh: '给 DSH 桌面 App 补上 Cmd/Ctrl+F 查找栏，搜的是整段会话：命中落在还没显示出来的历史里时，插件会把更早的消息分页加载进来再搜一遍，命中计数和高亮因此覆盖整段会话，而不只是屏幕上那一截。'

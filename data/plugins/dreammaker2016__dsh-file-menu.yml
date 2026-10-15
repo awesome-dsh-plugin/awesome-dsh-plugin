@@ -1,0 +1,7 @@
+url: https://github.com/dreammaker2016/dsh-file-menu
+name: dreammaker2016/dsh-file-menu
+category: ui
+description:
+  en: 'Right-click menus for the DSH Web UI — copy, cut, paste and select all on text and input areas, plus copy path, reveal in the file manager and open with the default app on file references and links.'
+  zh: '为 DSH Web 界面补上右键菜单：文字与输入框可复制/剪切/粘贴/全选，文件引用与链接可复制路径、在文件管理器中定位、用默认应用打开。'
+tarball: https://github.com/dreammaker2016/dsh-file-menu/releases/latest/download/dsh-file-menu.tgz

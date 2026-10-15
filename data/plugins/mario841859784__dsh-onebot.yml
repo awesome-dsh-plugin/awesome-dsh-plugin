@@ -1,0 +1,6 @@
+url: https://github.com/mario841859784/dsh-onebot
+name: mario841859784/dsh-onebot
+category: notify
+description:
+  en: 'QQ channel for dsh via OneBot 11 (NapCat and friends): reverse or forward WebSocket, DM and group chats, image and voice transcription, t2i text-image cards, merged forwards, and a settings page.'
+  zh: '给 dsh 加上 QQ 通道（OneBot 11，兼容 NapCat）：反向/正向 WS、私聊群聊、图片与语音转写、t2i 文字图卡片、合并转发、设置页可视化配置。'

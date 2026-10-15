@@ -1,0 +1,6 @@
+url: https://github.com/kober-basket/dsh-cachescope
+name: kober-basket/dsh-cachescope
+category: usage
+description:
+  en: Prompt-cache diagnostics dashboard showing provider-reported token usage, adjacent logical-input changes, and Call TTFT.
+  zh: 提示词缓存诊断页，展示 Provider 回传的 Token 用量、相邻逻辑输入变化与 Call TTFT。

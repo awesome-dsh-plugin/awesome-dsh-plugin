@@ -1,0 +1,6 @@
+url: https://github.com/SiriusWJ/dsh-lite-memory
+name: SiriusWJ/dsh-lite-memory
+category: memory
+description:
+  en: SQLite memory entries, a calendar with due-time reminders, and cron-scheduled agent tasks, with 13 model tools and a bilingual zh/en UI.
+  zh: SQLite 条目化记忆、日历到点提醒，以及 cron 驱动的定时 agent 任务；13 个模型工具，中英双语界面。
