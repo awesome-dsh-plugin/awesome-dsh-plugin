@@ -1,0 +1,6 @@
+url: https://github.com/hlyyh21201-prog/dsh-mcp-hub
+name: hlyyh21201-prog/dsh-mcp-hub
+category: ui
+description:
+  en: 'MCP server panel in DSH settings: list servers with live status and tool count, start/stop, add/edit/remove, probe by a real initialize handshake, and import configs from Codex TOML, mcpServers JSON and VS Code mcp.json.'
+  zh: 'DSH 设置里的 MCP 服务器面板：列出各服务器状态与工具数、启停、增删改、真实握手探测，并可导入 Codex TOML、mcpServers JSON 与 VS Code mcp.json 配置。'
