@@ -4683,6 +4683,7 @@ dsh plugin --profile web add dshmarket
 - [yabolee-kkk/dsh-streaming-mcp-bridge](https://github.com/yabolee-kkk/dsh-streaming-mcp-bridge) — DeepSeek Harness 流式 MCP 桥接：将实时会话事件作为 MCP 进度输出，并提供 cc-connect/飞书 ACP 适配器。
 - [yuunnn/dsh-on-imessage](https://github.com/yuunnn/dsh-on-imessage) — 在 iPhone 信息里直接和本机 DeepSeek Harness（dsh）对话：切换工作区/会话、开新会话、原生信息气泡回复，无需额外 App、服务器或云服务。
 - [Z-6354/dsh-mobile-hanui](https://github.com/Z-6354/dsh-mobile-hanui) — DSH Web 界面的移动端适配：窄屏下把桌面三栏布局改造成触屏友好的手机布局（覆盖式抽屉、可拖拽悬浮按钮、全屏弹窗、上滑加载历史），1024px 断点内生效，桌面端零影响。 — 基于 dsh-mobile-gate 的完整移动端 PWA：安全远程访问网关 + 可安装到主屏（manifest + service worker）+ 离线可用 + 触屏手势（下拉刷新/边缘返弹/捏合缩放字体）+ agent 完成推送 + 触屏优先布局，桌面零影响。
+- [zbzbhs/dsh-remote-agent](https://github.com/zbzbhs/dsh-remote-agent) — 把另一台电脑变成你的远程 Agent 同事：副机本地跑自己的 DSH 与完整 Agent 循环，所以链路断开时任务照常继续、模型凭证也永不离开那台机器。主机用 8 个 remote_* 工具派活，只收回 handoff 摘要与产物清单，成品按需拉取——中间产物留在副机。配对码接入，direct 或 relay 两种传输穿 NAT，两侧都有 Web 面板。
 - [zdx8637-gitdog/dshmobile#dshmobile-plugin](https://github.com/zdx8637-gitdog/dshmobile/tree/main/plugins) — 通过自建中继从手机访问 DSH（WSS 由你自己的 TLS 终止代理提供）：含桥接守护与扫码登录的 bundle 插件、原生 Android 应用，并支持服务端设备吊销。
 - [zexadev/dsh-tether](https://github.com/zexadev/dsh-tether) — 用 Android/iOS 手机远程使用电脑上的 dsh 完整网页界面,经 iroh 跨网点对点打洞直连,不用架任何服务器;打不通才退回 relay,relay 只见密文。
 - [zhaenggg/dsh-ssh-remote](https://github.com/zhaenggg/dsh-ssh-remote) — SSH 远程执行插件集：把会话工作区指向 ssh:// 目录，文件读写、命令与 shell 全部在远程主机上执行。
