@@ -1,0 +1,6 @@
+url: https://github.com/ymck-x/dsh-skill-starter
+name: ymck-x/dsh-skill-starter
+category: skill
+description:
+  en: Skill manager with 6 built-in skills and a 20-skill Chinese engineering pack, grouped by the situation you are in; the model can read and write the skill library in conversation, and upgrading a pack never overwrites files you edited.
+  zh: 技能管理器，自带 6 个基础技能与 20 个中文工程流程技能包，按「你遇到的问题」分组展示；模型可在对话里直接读写技能库，升级技能包不会覆盖你改过的文件。
