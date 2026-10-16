@@ -1,0 +1,7 @@
+url: https://github.com/Xiamen-Menggenda-Technology-Co-Ltd/DSH-Go-workspace
+name: Xiamen-Menggenda-Technology-Co-Ltd/DSH-Go-workspace
+category: remote
+tarball: https://github.com/Xiamen-Menggenda-Technology-Co-Ltd/DSH-Go-workspace/releases/download/v0.6.4-desktop.9/dsh-go-workspace-0.6.4-desktop.9.tgz
+description:
+  en: 'Connects a DSHarness Go Android App to a DeepSeek Harness workspace for sessions, messages, tasks and device pairing.'
+  zh: 将 DSHarness Go Android App 连接到 DeepSeek Harness 工作区，支持会话、消息、任务和设备配对。
