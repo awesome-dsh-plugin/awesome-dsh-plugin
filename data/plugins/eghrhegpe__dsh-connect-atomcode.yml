@@ -1,0 +1,31 @@
+# Submission draft for awesome-dsh-plugin.
+#
+# Copy this file to `data/plugins/eghrhegpe__dsh-connect-atomcode.yml` in a fork of
+# awesome-dsh-plugin/awesome-dsh-plugin and open a PR that adds only it. Do not edit that
+# repository's READMEs — both are generated from data/plugins/. Do not add an `npm:` field
+# (market CI rejects it); do not add screenshots here (the market reads this repo's root
+# screenshots.json instead).
+#
+# The description is read as a claim and checked against the code line by line, so every noun
+# below is one the source actually has:
+#   "locally signed-in AtomCode" — the bridge never asks for an API key: `atomcode_ask`
+#     authenticates with the local daemon token (~/.atomcode/daemon-13459.json), `atomcode_review`
+#     resolves providers from ~/.atomcode/config.toml. See README "无 API Key" and
+#     cordis.patch.yml "There is no BRIDGE-side API key".
+#   "two side tools" — `apply` in src/host/index.ts registers exactly two tools:
+#     atomcode_ask (side-conversation relay over daemon POST /chat SSE, with per-working_dir
+#     session continuity) and atomcode_review (one-shot bounded code review via the CLI `review`
+#     subcommand, round + wall-clock fuses, structured JSON findings).
+#   "no model takeover" — v0.3 deliberately DROPPED the original provider takeover; README
+#     "定位说明（v0.3 有意去接管）" and docs/DECISIONS.md state the reasons. What the plugin
+#     adds instead is a read-only CodingPlan quota read-out on the settings card (quota parsed
+#     from the daemon's POST /command {"command":"status"} localized text, src/host/quota.ts).
+#   "each tool names its own model default" — two SEPARATE knobs in cordis.patch.yml
+#     (default_provider for ask, review_default_provider for review): the ask path takes a model
+#     PROFILE name ("AtomGit-glm5.3-flash") while review takes a direct [providers.<name>] entry.
+url: https://github.com/eghrhegpe/dsh-connect-atomcode
+name: eghrhegpe/dsh-connect-atomcode
+category: tool
+description:
+  en: 'Bridges the AtomCode terminal AI coding assistant already signed in on this machine into DeepSeek Harness as two side tools: atomcode_ask (a side-conversation relay with per-working-directory session continuity) and atomcode_review (a one-shot, bounded code review with structured findings). No API key to configure and no model takeover — the settings card just adds a read-only CodingPlan quota read-out, and each tool names its own model default.'
+  zh: '把本机已登录的 AtomCode 终端 AI 编程助手接入 DeepSeek Harness，提供两个侧边工具：atomcode_ask（带按工作目录会话连续的侧边咨询）与 atomcode_review（有界的一次性代码评审、结构化 findings）。无需配置 API key、不接管模型——设置卡片只加一个只读的 CodingPlan 额度读数，且两个工具各自点名自己的模型默认值。'
