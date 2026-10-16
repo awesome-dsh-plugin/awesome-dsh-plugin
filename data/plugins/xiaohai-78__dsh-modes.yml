@@ -1,0 +1,6 @@
+url: https://github.com/xiaohai-78/dsh-modes
+name: xiaohai-78/dsh-modes
+category: workflow
+description:
+  en: 'Settings page for agent modes (presets): toggle the plugin rows each built-in or custom mode loads and restore built-in definitions; edit a mode''s system prompt (the persona prefix) with variable validation against the running dsh, a full-prompt preview, local drafts and save-conflict detection; create modes from four starter templates (develop, write, chat, read-only research) or by copying an existing mode; start a session with a mode or make it the default.'
+  zh: 'Agent 模式（预设）设置页：逐行开关内置或自定义模式加载的插件，并可恢复内置定义；编辑模式的系统提示词（persona 的 prefix），按当前 dsh 已注册的变量校验，支持完整提示词预览、本地草稿和保存冲突检测；用开发、写作、聊天、只读调研四个起步模板或复制现有模式来新建模式；用某个模式新建会话或设为默认。'
