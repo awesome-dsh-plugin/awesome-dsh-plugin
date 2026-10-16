@@ -1,0 +1,6 @@
+url: https://github.com/Why-147369/dsh-line-pool/tree/main/dsh-line-pool
+name: Why-147369/dsh-line-pool#dsh-line-pool
+category: dev
+description:
+  en: 'Outbound route pool for DeepSeek Harness: ships 15 seed routes plus a 20-entry candidate pool covering 7 target kinds (GitHub raw/codeload/main, npm registry, PyPI index, HuggingFace, general). Every route is verified with a real TCP handshake plus an HTTP request before it is used; failures advance a cooldown ladder of 2/5/15 minutes, and the fastest healthy route is picked per target kind. Routes are applied by rewriting the URL with one of four rules (prefix, registry, index, host-replace), and the chosen route is passed to git, pip, npm, pnpm, gh, curl and wget child processes without modifying any global config. A sidebar panel lists every route with latency, failure reason and cooldown countdown, supports per-route retest and enable/disable, and the candidate pool is re-verified every 24 hours so newly usable routes are added and dead ones dropped.'
+  zh: 'DSH 出站线路池：内置 15 条种子线路 + 20 条候选池，覆盖 7 类目标（GitHub raw/codeload/main、npm registry、PyPI index、HuggingFace、通用）。每条线路在投入使用前都经真实 TCP 握手 + HTTP 请求验证；失败会沿 2/5/15 分钟冷却阶梯递进，并按目标类型选最快的健康线路。线路通过四种改写规则之一生效（前缀、registry、index、域名替换），选定线路会传给 git、pip、npm、pnpm、gh、curl、wget 子进程，不改动任何全局配置。侧边栏面板列出每条线路的延迟、失败原因与冷却倒计时，支持单条重测与启停；候选池每 24 小时重新验证，自动纳入新可用线路、剔除失效线路。'
