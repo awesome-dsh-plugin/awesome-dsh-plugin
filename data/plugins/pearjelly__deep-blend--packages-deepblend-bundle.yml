@@ -10,5 +10,5 @@ category: tools
 tarball: https://github.com/pearjelly/deep-blend/releases/latest/download/deepblend-bundle.tgz
 description:
   # Quoted one-line descriptions; keep the canonical text here and project it.
-  en: 'Create editable Blender product models in DSH with linked speaker, cup and lamp dimensions; resize a moved or tilted handled cup while preserving placement and fitting its default hero camera to actual geometry. Inspect saved native size/origin changes, local wall/liner samples and multi-view images; complete speaker placement, immutable revisions and an approval gate preserve edits, with 18 tools for modeling, review and delivery.'
-  zh: '在 DSH 中创建可继续编辑的 Blender 产品模型，联动音箱、杯与灯具尺寸；移动或倾斜的带把手厚壁杯改尺寸时保留摆放，并按实际几何调整默认主镜头。对照保存版本的原生尺寸与部件原点变化，核对局部壁面/内衬采样及多视图；整套音箱摆放、不可变历史及审批闸门保留修改，18 个工具支持建模、评审与交付。'
+  en: 'Create editable Blender models in DSH with linked speaker, cup and lamp dimensions. Resize moved, tilted and animated speaker assemblies while retaining manual details, cameras and timing; author bounded control meshes, subdivision, repeated copies and seeded placement on closed static surfaces. Inspect native object-axis dimensions, local samples and subject-aware multi-view images; immutable revisions and an approval gate preserve edits, with 18 tools for modeling, review and delivery.'
+  zh: '在 DSH 中创建可编辑的 Blender 模型，联动音箱、杯与灯具尺寸。修改已移动、倾斜并带动画的音箱装配，保留手工细节、摄影和时序；支持有预算的控制网格、细分、重复副本及静态闭合表面确定性布置。核对原生物体轴尺寸、局部采样与指定主体多视图；不可变历史和审批闸门保留修改，18 个工具支持建模、评审与交付。'
