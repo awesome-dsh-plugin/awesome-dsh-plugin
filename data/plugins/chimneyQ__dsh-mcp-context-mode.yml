@@ -1,6 +1,0 @@
-url: https://github.com/chimneyQ/dsh-mcp-context-mode
-name: chimneyQ/dsh-mcp-context-mode
-category: tools
-description:
-  en: 'Registers the context-mode engine as native ctx_* tools, with no MCP child process and no mcp__ prefix: sandboxed code execution, an FTS5 knowledge base through ctx_index and ctx_search, and a routing gate that blocks curl and wget so raw page bytes stay out of the conversation. Repairs HTTPS fetching for both the host process and the Bun sandbox, and adds ctx_context_report for session context occupancy.'
-  zh: '把 context-mode 引擎以原生 ctx_* 工具注册，无 MCP 子进程、无 mcp__ 前缀：沙箱代码执行、ctx_index 与 ctx_search 的 FTS5 知识库，以及拦截 curl 与 wget 的路由门禁，让原始页面字节不进上下文。为宿主进程与 Bun 沙箱双路修复 HTTPS 抓取，并新增 ctx_context_report 报告会话上下文占用。'
