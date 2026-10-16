@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-turing-table
+name: dingchenhui0618-arch/dsh-turing-table
+category: fun
+description:
+  en: 'A social deduction game played against your own model configurations. A table has N seats (six by default, one of them yours) and some of the rest are played by agents bound to different provider, model, temperature, system prompt and disguise settings; you interrogate them and cross-check the answers to work out which seats are not human. Seat identity and each agent model configuration stay hidden in the host state until a seat is judged, then the disguise parameters are revealed. Every round exports a per-seat conversation JSONL plus the judgment record, and the same seed with the same move script replays byte-identical, so runs with different models or disguise strengths can be diffed.'
+  zh: '拿你自己的模型配置当对手玩的社交推理游戏。一张桌子有 N 个座位（默认 6 个，其中一个是你的），其余若干座位由绑定了不同 provider、model、temperature、system prompt 与伪装参数的 agent 扮演；你通过提问和交叉印证，判断哪些座位不是人。座位身份与每个 agent 的模型配置在判定前都不出现在 host 状态里，判定后才揭晓伪装参数。每局导出逐席位对话 JSONL 与判定记录，同一 seed 加同一份操作脚本可复现出逐字节相同的对局，于是换模型、换提示词、换伪装强度的几局可以直接 diff。'
