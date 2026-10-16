@@ -1,0 +1,6 @@
+url: https://github.com/lyhtakeashot/dsh-lucky-block
+name: lyhtakeashot/dsh-lucky-block
+category: fun
+description:
+  en: 'Appends a randomized option to every DSH multiple-choice question — it either picks one option or fuses several into a new plan — and saying "rollback" or running /rollback restores the previous version. Adds a draggable, lockable dice button that fires one of eight random events on a 1.4-second hold: write a paper from random keywords, fuse two Minecraft concepts, tell jokes, share trivia, summarize real news, tidy the workspace, show harmless popups, or display a 60-second blue screen. Two events are local-only, running with no session and no model call; joke and trivia corpora can be switched to a bundled offline library, and a persona layer addresses the user as "user" in the style of Cyberpunk 2077 Skippy. The block also snaps to screen edges and plays Minecraft dig and break sounds while held.'
+  zh: '在 DSH 的每道选择题后追加一个「幸运方块」选项：随机选中某一项，或把几项融合成新方案；不满意时输入「回滚」或执行 /rollback 即可回到上一版本。界面上另有一个可拖动、可锁定的骰子按钮，长按 1.4 秒挖穿后触发八种随机事件之一——随机选题写论文、合成两个《我的世界》概念、讲冷笑话、聊冷知识、播报真实时事新闻、整理工作区、弹无害弹窗、显示 60 秒蓝屏。其中两种为零 token 的本地视觉事件，不建会话、不调模型；冷笑话与冷知识可切换为随包离线语料库，并有致敬《赛博朋克 2077》四季宝的人格层，全程称呼用户为「用户」。方块按钮支持边缘吸附，长按期间播放《我的世界》挖掘与碎裂音效。'
