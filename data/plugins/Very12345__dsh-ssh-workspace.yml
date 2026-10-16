@@ -1,0 +1,6 @@
+url: https://github.com/Very12345/dsh-ssh-workspace
+name: Very12345/dsh-ssh-workspace
+category: remote
+description:
+  en: "SSH workspaces for Linux/macOS with SSH config import, remote folder selection, and file tools, Bash and persistent remote terminals following native DSH session permissions."
+  zh: "面向 Linux/macOS 的 SSH 工作区，支持导入 SSH config、选择远端目录，文件工具、Bash 与持久远程终端沿用 DSH 原生会话权限。"

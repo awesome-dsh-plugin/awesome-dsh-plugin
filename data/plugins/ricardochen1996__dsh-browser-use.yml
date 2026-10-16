@@ -1,0 +1,6 @@
+url: https://github.com/ricardochen1996/dsh-browser-use
+name: ricardochen1996/dsh-browser-use
+category: browser
+description:
+  en: 'Browser provider for DeepSeek Harness: hand it a web task — open a page, click, type, fill a form, read what is on it — and it drives a real browser step by step, seeing an indexed table of what can be done on the current page instead of raw HTML or screenshots. Each step is one bundled-Jev decision rather than a full model turn (1.1 s median per step versus 2.8–3.6 s for chat-model turns in the repo benchmark), and the main conversation receives only the conclusion, so its context does not grow with the page. Targets come from the page it just read and a changed page is re-read rather than clicked blind, and it runs in the browser that Session owns, leaving your everyday Chrome untouched unless you switch to attach mode.'
+  zh: 'DeepSeek Harness 浏览器插件：把网页任务交给它——打开页面、点击、输入、填表、读取页面内容——它会驱动真实浏览器一步步完成，每步只看到“当前页面能做什么”的索引表，而不是原始 HTML 或截图。每步由内置 Jev 引擎决策一次，而非大模型整轮推理（仓库基准中每步决策中位 1.1 秒，大模型整轮 2.8–3.6 秒）；主对话只收到结论，上下文不随页面变长。目标取自它刚读到的页面，页面变化就重新读取而非盲点；每个会话用自己的浏览器，不碰你日常的 Chrome（除非切到 attach 模式）。'

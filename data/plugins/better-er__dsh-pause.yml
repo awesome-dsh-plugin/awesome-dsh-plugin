@@ -1,0 +1,6 @@
+url: https://github.com/better-er/dsh-pause
+name: better-er/dsh-pause
+category: session
+description:
+  en: 'Pauses the agent right before it sends the next model request of a tool round while keeping the composer usable: a bare Enter or the resume button lets it continue, and text typed meanwhile is sent along as a steering message; the pause never interrupts an in-flight API call and the model does not notice it.'
+  zh: '在模型完成一轮工具交互、正要发出下一次请求之前暂停，输入框保持可用：裸回车或点按钮放行，草稿有字则随本次请求一并发出作为插话；不打断任何在途 API 调用，模型上下文完整、察觉不到暂停。'
