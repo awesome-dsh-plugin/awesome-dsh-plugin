@@ -1,0 +1,6 @@
+url: https://github.com/fishcg/cua-computer-use
+name: fishcg/cua-computer-use
+category: tools
+description:
+  en: 'Bridges the Cua Driver MCP server into DSH: resolves the cua-driver executable cross-platform, starts it over stdio through the in-box MCP client, and registers its accessibility-first window, input, menu, and browser tools alongside a bundled workflow skill.'
+  zh: '把 Cua Driver 的 MCP 服务器接入 DSH：跨平台定位 cua-driver 可执行文件，经内置 MCP 客户端以 stdio 启动，注册其无障碍优先的窗口、输入、菜单与浏览器工具，并附带一个工作流技能。'
