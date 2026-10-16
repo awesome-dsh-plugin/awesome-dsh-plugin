@@ -1,0 +1,6 @@
+url: https://github.com/huhu23333/dsh-reasoning-distill
+name: huhu23333/dsh-reasoning-distill
+category: usage
+description:
+  en: "Distill over-long model reasoning into its useful core, replay the compressed version on every later request, and report each session's cost and savings."
+  zh: "把过长的模型思考压缩成有用核心，之后每次请求重放压缩版，并给出每个会话的开销与节省报告。"
