@@ -1,0 +1,6 @@
+url: https://github.com/Gjs9178U/dsh-pet-indesktop
+name: Gjs9178U/dsh-pet-indesktop
+category: fun
+description:
+  en: 'Adds a small draggable whale to the DSH web GUI. It breathes, blinks and sways, remembers where you left it, and says one bilingual line when clicked. Drawn with inline SVG and CSS only: no images, no video, no network requests. NOTE - it has not been installed against a live DSH host; the repository verifiers check the artifact, the routes and the pet logic, not a real install.'
+  zh: '给 DSH 网页界面加一只可以拖动的小鲸鱼桌宠：会呼吸、会眨眼、会摆尾，记得你把它放在哪，点一下会说一句中英双语的话。纯内联 SVG + CSS，没有图片、没有视频、也没有网络请求。注意：尚未在真实的 DSH 宿主上安装验证过；仓库里的校验脚本检查的是产物、路由与桌宠逻辑，而不是一次真实安装。'
