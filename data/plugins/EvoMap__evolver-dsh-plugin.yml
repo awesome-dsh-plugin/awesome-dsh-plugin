@@ -2,5 +2,5 @@ url: https://github.com/EvoMap/evolver-dsh-plugin
 name: EvoMap/evolver-dsh-plugin
 category: memory
 description:
-  en: 'Self-evolving memory for dsh agents: before each prompt it injects one strategy that has worked before, then grades how it held up (a test that ran, edits kept or reverted by the next session, your next reply pushing back or approving) and reports the verdict to the EvoMap network, which weighs every report by its evidence. Adds 8 evolver_* tools and 8 /evolver-* commands to distill, solidify, review and roll back what was learned.'
-  zh: '会自我进化的智能体记忆：每条 prompt 前注入一条以前管用过的策略，回合结束后凭证据给它打分（有没有跑过测试、改动在下次会话里是保留还是被撤回、你的下一句是推翻还是认可），再把结论回报 EvoMap 网络，网络按证据为每份报告加权。附带 8 个 evolver_* 工具和 8 条 /evolver-* 命令，用于提炼、固化、审阅和回滚学到的经验。'
+  en: 'Lets your dsh agent evolve itself. Strategies that worked come back on the next similar task, and ones that failed lose weight, across your own sessions and the whole EvoMap network. The harness stops re-deriving fixes it already found and stops retrying approaches known to fail, so fewer tokens go into dead ends and more tasks land on the first pass.'
+  zh: 让 dsh 智能体自己进化。管用的策略会在下一次相似任务里回来，失败的策略会被降权，经验在你的每个会话和整个 EvoMap 网络之间流转。harness 不再从头推导已经找到过的解法，也不再重试已知会失败的路子，烧在弯路上的 token 更少，一次做对的任务更多。
