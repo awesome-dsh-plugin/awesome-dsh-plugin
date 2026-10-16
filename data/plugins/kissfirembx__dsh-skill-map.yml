@@ -1,0 +1,7 @@
+url: https://github.com/kissfirembx/dsh-skill-map
+name: kissfirembx/dsh-skill-map
+category: ui
+tarball: https://github.com/kissfirembx/dsh-skill-map/releases/download/v0.1.0/kissfire-dsh-skill-map-0.1.0.tgz
+description:
+  en: 'Files every loaded skill into categories you own in a right-sidebar tab: create, rename, reorder and delete categories in place, drag skills between them, click a row to copy its /skill-name, and hover a row to unfold the description the skill itself ships. Searches skill names and descriptions, and switches the description language from a settings view in the panel.'
+  zh: '在右侧栏用你自己的分类收纳全部已加载 skill：就地新建、改名、排序、删除分类，拖动 skill 改分类，点击行复制 /skill-name，悬停展开该 skill 自带的描述；可搜索名字与描述，并在面板设置里切换描述语言。'
