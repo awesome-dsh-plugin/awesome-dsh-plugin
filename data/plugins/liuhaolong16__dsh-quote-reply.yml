@@ -1,0 +1,6 @@
+url: https://github.com/liuhaolong16/dsh-quote-reply
+name: liuhaolong16/dsh-quote-reply
+category: ui
+description:
+  en: 'Keeps quotes out of the message body: quoting any passage from an assistant turn opens an editable quote tray above the composer, the quotes are injected into the next turn as system-prompt context (attributed with source and time), and an expandable quote row under that turn shows exactly which quotes were used. Quotes persist across page reloads and are claimed per turn; the host and client halves hand-shake on version and report a compatibility verdict.'
+  zh: '把引用与消息正文彻底分开：引用任意助手回合里的段落会打开输入框上方的引用行，随下一回合作为 system-prompt 上下文注入模型（带来源与时间标注），并在回合尾部以可展开的「引用(N)」行显示这一轮到底用了哪几条；引用本地落盘、刷新不丢、按回合认领；宿主与客户端两半体做版本握手并上报兼容结论。'
