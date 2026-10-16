@@ -1,0 +1,6 @@
+url: https://github.com/nanshang328/dsh-power
+name: nanshang328/dsh-power
+category: tools
+description:
+  en: "One draggable power card for the DSH page: left half shuts down, right half restarts; the first click only asks, the second click fires. Multi-instance-safe restart engine brings the new window to the foreground."
+  zh: "DSH 页面上的一个可拖动电源卡片：左半关机、右半重启，点一次只问一句、再点一下才执行。重启引擎只停本实例的进程树，完成后把新窗口顶到最前面。"
