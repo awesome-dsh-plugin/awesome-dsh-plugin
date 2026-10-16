@@ -1,0 +1,6 @@
+url: https://github.com/WihteCo/dsh-opencode-go-quota
+name: WihteCo/dsh-opencode-go-quota
+category: usage
+description:
+  en: 'OpenCode Go quota in the sidebar foot under the workspace list: one cell for the most constrained window plus a hover popover with the rolling 5-hour, weekly and monthly percents, each with a usage bar, an elapsed-time marker, the remaining share and a reset countdown, refreshed every 60 seconds from OpenCode''s official usage API using the key already in the DSH credential store.'
+  zh: 在侧边栏「工作区」列表下方显示 OpenCode Go 的滚动 5 小时 / 每周 / 每月额度百分比与重置倒计时，每档带用量条与时间进度标记，60 秒从 OpenCode 官方用量接口刷新，密钥复用 DSH 凭据库。

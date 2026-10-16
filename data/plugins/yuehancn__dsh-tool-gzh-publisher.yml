@@ -1,0 +1,6 @@
+url: https://github.com/yuehancn/dsh-tool-gzh-publisher
+name: yuehancn/dsh-tool-gzh-publisher
+category: tools
+description:
+  en: 'WeChat Official Account pipeline: validate a draft against a publish gate, then push it into the draft box.'
+  zh: '公众号发布管线：先按发布闸门校验草稿，再推送到草稿箱。'

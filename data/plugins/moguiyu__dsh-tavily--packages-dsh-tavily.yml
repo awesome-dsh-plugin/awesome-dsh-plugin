@@ -2,5 +2,5 @@ url: https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tavily
 name: moguiyu/dsh-tavily#packages/dsh-tavily
 category: browser
 description:
-  en: Tavily search with multiple API keys, key rotation and failover, a usage gauge, and a settings card.
-  zh: Tavily 多密钥搜索：支持密钥轮换/故障转移、用量仪表盘与设置卡片。
+  en: Tavily search, extract, map and crawl tools with multi-key rotation, failover on HTTP 401/429/432/433, and a load-balance mode that caps in-flight requests per Tavily account, plus a key and usage card on the Plugins page. The built-in web_search is never replaced.
+  zh: Tavily 搜索、提取、站点地图与爬取工具：多 Key 轮换，HTTP 401/429/432/433 故障转移，并提供按账号限制并发请求的负载均衡模式；插件配置页含密钥与用量卡片。内置 web_search 永不替换。

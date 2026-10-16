@@ -1,0 +1,6 @@
+url: https://github.com/Yangi-252410/dsh-import-repositories
+name: Yangi-252410/dsh-import-repositories
+category: git
+description:
+  en: 'Runs git in the Host process so push, pull and fetch work inside the agent sandbox; exposes 8 agent tools (status, diff, log, stage, commit, push, fetch, pull) and 11 slash commands including /git-status, /git-commit, /git-tag and /git-name-set.'
+  zh: '在宿主进程中执行 git，使 push、pull、fetch 在 agent 沙箱内可用；提供 8 个 agent 工具（status、diff、log、stage、commit、push、fetch、pull）与 11 个斜杠命令，包括 /git-status、/git-commit、/git-tag 与 /git-name-set。'

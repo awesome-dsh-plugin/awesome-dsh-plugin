@@ -1,0 +1,6 @@
+url: https://github.com/nanshang328/dsh-desk-card
+name: nanshang328/dsh-desk-card
+category: notify
+description:
+  en: Windows-only plugin that shows permission requests, waiting questions, task errors and finished turns as native card windows, and can allow a permission request straight from the card.
+  zh: 仅支持 Windows：把审批请求、待回答的提问、任务出错和轮次完成显示为原生卡片窗口，审批请求可直接在卡片上放行。
