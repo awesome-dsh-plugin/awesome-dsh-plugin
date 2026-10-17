@@ -1,0 +1,6 @@
+url: https://github.com/Num86/dsh-functions
+name: Num86/dsh-functions
+category: ui
+description:
+  en: 'Adds an extensible Functions menu to the DSH top bar, where plugins register one-click actions with staged confirmations, submenus and a pinned loader entry.'
+  zh: '给 DSH 顶端加一个可扩展的「功能」栏：插件注册的一键动作都在这里，支持分级确认、二级菜单，还有一条置顶的「加载功能」。'
