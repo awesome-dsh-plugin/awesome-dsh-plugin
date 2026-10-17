@@ -1,0 +1,6 @@
+url: https://github.com/Wanner122333/dsh-bulk-scrna-concordance
+name: Wanner122333/dsh-bulk-scrna-concordance
+category: tools
+description:
+  en: 'Compares bulk RNA-seq against scRNA-seq pseudo-bulk per group (Pearson r, Spearman rho, linear fit), and reports a discriminability matrix so a high correlation can be judged against the mismatched baseline rather than quoted alone.'
+  zh: '按分组比较 bulk RNA-seq 与 scRNA-seq pseudo-bulk 表达（Pearson r、Spearman rho、线性拟合），并给出判别度矩阵，让高相关性能与错配基线对照，而不是孤零零地报一个数字。'
