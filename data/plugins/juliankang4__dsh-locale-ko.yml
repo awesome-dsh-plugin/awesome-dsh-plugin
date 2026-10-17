@@ -1,0 +1,6 @@
+url: https://github.com/juliankang4/dsh-locale-ko
+name: juliankang4/dsh-locale-ko
+category: ui
+description:
+  en: 'Adds Korean (한국어) as a native option in Settings - General - Language and translates all 2,489 Web UI strings of dsh 0.2.0-rc.2; experimental features stay in English. Works in dsh web and the desktop app.'
+  zh: '给 DeepSeek Harness 的「设置 - 通用设置 - 语言」加入韩语（한국어），翻译 dsh 0.2.0-rc.2 Web UI 的全部 2,489 条文案，实验功能保持英文。dsh web 与桌面应用均可使用。'
