@@ -1,0 +1,6 @@
+url: https://github.com/fishcg/cua-computer-use
+name: fishcg/cua-computer-use
+category: tools
+description:
+  en: 'Bridges the Cua Driver MCP server into DSH: installs the cua-driver executable when it is missing, starts it over stdio through the in-box MCP client, and registers its 60 accessibility-first window, input, menu, and browser tools with a bundled workflow skill and one-time macOS permission guidance.'
+  zh: '把 Cua Driver 的 MCP 服务器接入 DSH：缺失时自动安装 cua-driver，经内置 MCP 客户端以 stdio 启动，注册其 60 个无障碍优先的窗口、输入、菜单与浏览器工具，并附带工作流技能与一次性的 macOS 权限引导。'
