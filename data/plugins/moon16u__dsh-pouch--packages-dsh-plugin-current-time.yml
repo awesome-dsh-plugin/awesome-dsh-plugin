@@ -1,6 +1,0 @@
-url: https://github.com/moon16u/dsh-pouch/tree/main/packages/dsh-plugin-current-time
-name: moon16u/dsh-pouch#dsh-plugin-current-time
-category: session
-description:
-  en: 'Per-turn wall-clock injection: appends one real date, time and timezone reading after the prompt on the first step of every turn, so a long-running session never reasons from a stale date.'
-  zh: '每轮真实时钟注入：在每轮第一步的 prompt 之后追加一条真实的日期、时间与时区读数，长会话跨天也不会按旧日期推理。'
