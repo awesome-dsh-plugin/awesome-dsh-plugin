@@ -3,4 +3,5 @@ name: residenthiago2011/DSH-Laya-Tool-Router
 category: tools
 tarball: https://github.com/residenthiago2011/DSH-Laya-Tool-Router/releases/latest/download/laya-tool-router.tgz
 description:
-  en: Hides tool schemas from the model's prefill and reveals one tool at a time through the Laya decision endpoint.
+  en: 'Hides tool schemas from the model''s prefill and reveals one tool at a time through the Laya decision endpoint. Requires a local Laya endpoint (http://127.0.0.1:8081/v1/systemone) running on the same machine and pnpm on PATH.'
+  zh: '通过 Laya 决策端点把工具 schema 从模型 prefill 中隐藏，每次按需揭示一个工具。需在本机运行 Laya endpoint（http://127.0.0.1:8081/v1/systemone），且 PATH 中有 pnpm。'
