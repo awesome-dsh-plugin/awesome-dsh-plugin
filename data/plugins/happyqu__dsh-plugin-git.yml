@@ -1,0 +1,6 @@
+url: https://github.com/happyqu/dsh-plugin-git
+name: happyqu/dsh-plugin-git
+category: ui
+description:
+  en: 'Git integration for the DSH home page: clone, pull, push, commit, and view changes.'
+  zh: DSH 主页 Git 集成：克隆、拉取、推送、提交和查看更改。
