@@ -1,0 +1,6 @@
+url: https://github.com/OMSociety/dsh-ppt-maker
+name: OMSociety/dsh-ppt-maker
+category: docs
+description:
+  en: 'DSH plugin bundling the ppt-maker skill and eleven ppt_* tools: create, edit, reverse-engineer, QA-check and export PowerPoint presentations, writing the .pptx locally with a TypeScript engine.'
+  zh: '内含 ppt-maker 技能与十一个 ppt_* 工具的 DSH 插件：创建、编辑、逆向、质检与导出 PPT 演示文稿，本地 TypeScript 引擎直接产出 .pptx。'
