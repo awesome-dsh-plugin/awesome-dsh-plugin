@@ -1,0 +1,6 @@
+url: https://github.com/439436269-ctrl/dsh-search
+name: 439436269-ctrl/dsh-search
+category: tools
+description:
+  en: 'Web search, page fetch and one-call research through DeepSeek''s official Search and Fetch API; needs a DeepSeek API key.'
+  zh: '通过 DeepSeek 官方 Search/Fetch 接口做网页搜索、单页抓取与一键调研；需要一个 DeepSeek API key。'
