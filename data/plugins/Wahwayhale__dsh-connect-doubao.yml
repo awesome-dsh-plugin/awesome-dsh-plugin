@@ -1,0 +1,6 @@
+url: "https://github.com/Wahwayhale/dsh-connect-doubao"
+name: "Wahwayhale/dsh-connect-doubao"
+category: model
+description:
+  en: 'Reuses the sign-in already held by the local Doubao desktop app as a DeepSeek Harness model provider, and adds a read-only quota view for the 5-hour and weekly windows.'
+  zh: '复用本机豆包桌面客户端已有的登录态，作为 DeepSeek Harness 的模型 provider，并提供 5 小时限额与周额度的只读额度概览。'
