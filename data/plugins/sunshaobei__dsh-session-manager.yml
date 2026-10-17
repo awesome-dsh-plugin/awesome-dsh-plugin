@@ -1,0 +1,6 @@
+url: https://github.com/sunshaobei/dsh-session-manager
+name: sunshaobei/dsh-session-manager
+category: session
+description:
+  en: Session manager with a recycle bin for DeepSeek Harness — a delete icon on every sidebar session, multi-select restore or permanent delete from the trash, and active-session protection. Renamed fork of Seetraum/harness-session-delete.
+  zh: DeepSeek Harness 的会话管理器（含回收站）——侧边栏每个会话提供删除图标，回收站支持多选还原/彻底删除，并保护活跃会话。基于 Seetraum/harness-session-delete 的更名分支。
