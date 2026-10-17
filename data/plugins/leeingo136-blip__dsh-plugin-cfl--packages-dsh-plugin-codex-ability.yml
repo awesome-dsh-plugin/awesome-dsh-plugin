@@ -1,0 +1,6 @@
+url: https://github.com/leeingo136-blip/dsh-plugin-cfl/tree/main/packages/dsh-plugin-codex-ability
+name: leeingo136-blip/dsh-plugin-cfl#dsh-plugin-codex-ability
+category: identity
+description:
+  en: 'Codex plugin container: ChatGPT subscription OAuth (authorization code with PKCE) and platform API key sign-in, a coding persona, cron scheduling tools, and the Codex agent preset assembling them. The account card requires the account-hub plugin.'
+  zh: 'Codex 容器：ChatGPT 订阅 OAuth（授权码+PKCE）与 Platform API Key 双模登录、工作姿态、定时任务工具，以及把这些装配起来的「Codex吐息」Agent 预设。账号卡片依赖 account-hub 插件。'

@@ -1,0 +1,6 @@
+url: https://github.com/leeingo136-blip/dsh-plugin-cfl/tree/main/packages/dsh-plugin-account-hub
+name: leeingo136-blip/dsh-plugin-cfl#dsh-plugin-account-hub
+category: identity
+description:
+  en: 'Account management hub for DeepSeek Harness: replaces the built-in account and model-settings surfaces with an extensible card UI, so external account plugins (DeepSeek, Qwen, Codex, Z.ai, local models) register into one settings page. Note: installing it hides the built-in DeepSeek account and the default DeepSeek API model group.'
+  zh: 'dsh 账号管理枢纽：以可扩展卡片界面接管官方账号与模型设置面，外部账号插件（DeepSeek/Qwen/Codex/Z.ai/本地模型）统一注册进一张设置页。注意：安装后会屏蔽 dsh 自带的 DeepSeek 账号与默认 DeepSeek API 模型组。'

@@ -1,0 +1,6 @@
+url: https://github.com/leeingo136-blip/dsh-plugin-cfl/tree/main/packages/dsh-plugin-qwen-ability
+name: leeingo136-blip/dsh-plugin-cfl#dsh-plugin-qwen-ability
+category: identity
+description:
+  en: 'Qwen plugin container: API-key account sign-in with plan/region endpoint presets, a coding persona, cron scheduling tools, and the Qwen agent preset assembling them. The account card requires the account-hub plugin.'
+  zh: 'Qwen 容器：API Key 账号登录（按套餐×区域分流端点预设）、工作姿态、定时任务工具，以及把这些装配起来的「Qwen的折扇」Agent 预设。账号卡片依赖 account-hub 插件。'

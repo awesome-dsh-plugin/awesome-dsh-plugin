@@ -1,0 +1,6 @@
+url: https://github.com/leeingo136-blip/dsh-plugin-cfl/tree/main/packages/dsh-plugin-deepseek-account
+name: leeingo136-blip/dsh-plugin-cfl#dsh-plugin-deepseek-account
+category: identity
+description:
+  en: 'DeepSeek account plugin: externalizes the official account component, supporting OAuth sign-in and platform API keys through credential injection. Requires the account-hub plugin.'
+  zh: 'DeepSeek 官方账号插件：将官方账号组件外部化，支持 OAuth 登录与平台 API Key（凭据注入）。依赖 account-hub 插件。'
