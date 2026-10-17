@@ -1,0 +1,6 @@
+url: https://github.com/kkwings/dsh-super-memory
+name: kkwings/dsh-super-memory
+category: memory
+description:
+  en: 'Cross-compaction memory for a long session: on compaction it stores what is being dropped, and at question time it injects a few relevant passages (or nothing) so the model can recall what you decided before.'
+  zh: '跨压缩记忆：压缩时把被压掉的内容存到本机，提问时只注入相关的那几段（没有就一点不注入），让模型重新想起你早先定过的事。'

@@ -1372,5 +1372,11 @@
   "https://github.com/qinyre/dsh-plugin-archive-manager": [
     "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-rail.png",
     "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-archive.png"
+  ],
+  "https://github.com/LFY-bot/dsh-api-probe": [
+    "https://raw.githubusercontent.com/LFY-bot/dsh-api-probe/main/assets/panel-form.png",
+    "https://raw.githubusercontent.com/LFY-bot/dsh-api-probe/main/assets/report-result.png",
+    "https://raw.githubusercontent.com/LFY-bot/dsh-api-probe/main/assets/report-failure.png",
+    "https://raw.githubusercontent.com/LFY-bot/dsh-api-probe/main/assets/report-metrics.png"
   ]
 }

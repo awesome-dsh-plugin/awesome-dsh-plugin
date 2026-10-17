@@ -1,0 +1,6 @@
+url: https://github.com/Ayelsh/dsh-zhipu-plan
+name: Ayelsh/dsh-zhipu-plan
+category: usage
+description:
+  en: Zhipu coding-plan sign-in, quota, usage and reset panel for DeepSeek Harness.
+  zh: 在 DeepSeek Harness 中登录智谱编程套餐，查看额度与用量并执行额度重置。

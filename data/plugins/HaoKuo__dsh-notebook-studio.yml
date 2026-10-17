@@ -1,0 +1,6 @@
+url: https://github.com/HaoKuo/dsh-notebook-studio
+name: HaoKuo/dsh-notebook-studio
+category: docs
+description:
+  en: 'Turns up to 30 uploaded PDF papers into prompt-driven literature reviews, key findings, research ideas and study designs, exported as page-cited reports (DOCX/PDF) or slide decks (PPTX/PDF).'
+  zh: 把最多 30 篇上传的 PDF 文献变成提示词驱动的文献综述、关键信息提取、研究思路与研究设计，并导出带页码引用的报告（DOCX/PDF）或演示文稿（PPTX/PDF）。

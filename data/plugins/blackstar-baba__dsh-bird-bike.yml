@@ -1,0 +1,6 @@
+url: https://github.com/blackstar-baba/dsh-bird-bike
+name: blackstar-baba/dsh-bird-bike
+category: fun
+description:
+  en: A helmeted pixel chicken rides a bicycle along a Minecraft-style pixel strip docked at the bottom of the app frame, with an 80-second day/night cycle, bell with note particles, jumps, a headlight, and ride stats. Creepers roam by day and zombies by night. Requires DSH >=0.2.1-alpha.
+  zh: 一只戴头盔的像素小鸡骑行在 GUI 底部的我的世界像素风骑行带里，带 80 秒昼夜循环、按铃音符、跳跃、车头灯与骑行统计。白天苦力怕出没，夜晚僵尸被撞飞。需要 DSH >=0.2.1-alpha。

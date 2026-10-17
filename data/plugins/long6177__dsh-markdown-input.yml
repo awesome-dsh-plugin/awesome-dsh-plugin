@@ -1,0 +1,6 @@
+url: https://github.com/long6177/dsh-markdown-input
+name: long6177/dsh-markdown-input
+category: ui
+description:
+  en: 'Markdown live rendering for the DSH Web UI composer: typed Markdown (bold, lists, code fences) renders as you type in a CodeMirror-based takeover composer; sent user messages render as Markdown; pasted rich text becomes clean Markdown.'
+  zh: DSH Web UI 输入区 Markdown 实时渲染：输入中的粗体/列表/代码块即时成型（CodeMirror 接管卡）；已发送的用户消息按 Markdown 呈现；粘贴富文本转为干净 Markdown。

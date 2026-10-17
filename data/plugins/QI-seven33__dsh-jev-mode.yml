@@ -1,0 +1,7 @@
+url: https://github.com/QI-seven33/dsh-jev-mode
+name: QI-seven33/dsh-jev-mode
+category: model
+description:
+  en: 'Optional JEV decision mode with deterministic project reads, bounded semantic selection, native authorization checks and desktop credential settings.'
+  zh: '可选 JEV 决策模式，提供代码优先项目读取、有限语义选择、原生授权检查与桌面密钥设置。'
+tarball: https://github.com/QI-seven33/dsh-jev-mode/releases/download/v0.4.2/dsh-jev-mode-0.4.2.tgz

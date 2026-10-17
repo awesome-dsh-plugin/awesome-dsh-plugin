@@ -1,0 +1,6 @@
+url: https://github.com/cm860712ch-cloud/dsh-quick-input
+name: cm860712ch-cloud/dsh-quick-input
+category: ui
+description:
+  en: "A 3×3 pad of saved phrases sitting to the left of the composer and tracking the input box's height: clicking a cell inserts its text at the caret as one undoable edit. Presets are editable in place, 9 cells per page up to 12 pages, and the UI follows the DSH language setting. Falls back to a panel above the composer when the window leaves no room."
+  zh: "输入框左侧的九宫格快捷短语面板，高度跟随输入框：点一格就把该条短语以一次可撤销的编辑插入光标处；面板内可就地编辑，每页 9 格、最多 12 页，界面跟随 DSH 语言设置。窗口放不下时退回输入框上方浮层。"

@@ -1,0 +1,6 @@
+url: https://github.com/IHS470/dsh-plugin-restart
+name: IHS470/dsh-plugin-restart
+category: dev
+description:
+  en: 'Restart button in the window caption band: one click closes the whole desktop app and relaunches it (the original v0.1.0 restart helper). The repository also ships a tool that patches the installed desktop shell so its tray menu carries a Restart item.'
+  zh: '窗口标题栏的重启按钮：点一下关闭整个桌面应用再重新拉起（沿用最初的 v0.1.0 重启逻辑）。仓库另附一个工具，可为已安装的桌面壳打补丁，使其托盘菜单里出现「重启」一项。'

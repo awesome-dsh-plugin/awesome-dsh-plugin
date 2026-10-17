@@ -1,0 +1,6 @@
+url: https://github.com/G57651/dsh-session-manager
+name: G57651/dsh-session-manager
+category: session
+description:
+  en: "Sidebar panel to browse, archive, soft-delete, and batch-manage DeepSeek Harness sessions with a restorable trash."
+  zh: "侧边栏会话管理面板：浏览、归档、软删除与批量管理 DeepSeek Harness 会话，附可恢复回收站。"

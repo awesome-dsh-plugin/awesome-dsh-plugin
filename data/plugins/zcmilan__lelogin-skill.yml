@@ -1,0 +1,7 @@
+url: https://github.com/zcmilan/lelogin-skill
+name: zcmilan/lelogin-skill
+category: skill
+description:
+  en: Provide a LeLogin skill for credential injection and authenticated business applications without exposing plaintext secrets.
+  zh: 提供 LeLogin 技能，用于凭据注入和已登录业务系统调用，避免向模型暴露明文秘密。
+tarball: https://github.com/zcmilan/lelogin-skill/releases/download/v0.1.1/lelogin-dsh-0.1.1.tgz

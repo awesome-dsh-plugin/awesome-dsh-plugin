@@ -1,0 +1,18 @@
+url: https://github.com/Ok541151/cwk
+name: dsh-agent-picker
+category: tools
+
+description:
+  en: >-
+    Agent mode picker for DSH: pick an external Agent CLI (Claude Code, Codex, Qwen Code,
+    Gemini CLI, Aider, Goose, Hermes…) as the session's default executor from a control
+    next to the input box, instead of editing configuration files. The agent roster is
+    data-driven, and installed CLIs are discovered automatically from PATH, the managed
+    CLI directory and a drop-in convention directory. Agents that are installed but still
+    missing credentials or a required background service are shown as "needs setup"
+    rather than silently hidden.
+  zh: >-
+    DSH 的 Agent 模式选择器：在输入框旁边直接选定一个外部 Agent CLI（Claude Code、Codex、
+    Qwen Code、Gemini CLI、Aider、Goose、Hermes…）作为当前会话的默认执行体，不必去改配置文件。
+    Agent 名册是数据驱动的，已安装的 CLI 会从 PATH、托管 CLI 目录和约定目录自动发现；装了但还缺
+    凭据或需要常驻服务的，会显示为「待配置」而不是被悄悄藏起来。

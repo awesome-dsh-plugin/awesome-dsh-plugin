@@ -1,0 +1,6 @@
+url: https://github.com/ljp888/dsh-session-delete-next
+name: ljp888/dsh-session-delete-next
+category: session
+description:
+  en: 'Adds a Delete session action to the sidebar session menu that permanently deletes the local records of that session, while refusing sessions that are running.'
+  zh: '在侧栏会话菜单中加入「删除会话」，永久删除该会话的本地记录；正在运行的会话会被拒绝。'

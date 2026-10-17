@@ -1,0 +1,6 @@
+url: https://github.com/Celebrate-W/dsh-topic-trail
+name: Celebrate-W/dsh-topic-trail
+category: ui
+description:
+  en: 'Turns each long dsh conversation into a three-level trail (topic to progress steps to milestone timeline) and shows it in a draggable overlay, where one click jumps back to the matching message in the transcript. Topics are distilled by the DeepSeek model with a zero-cost rule-based fallback, can be renamed, locked, merged by drag and drop, and support per-conversation notes plus a vector drawing board.'
+  zh: '把 dsh 的每次长对话实时提炼成「线索 → 进度步骤 → 阶段历程」三级结构，以可拖动的悬浮窗呈现，点一下就能跳回对话里的对应消息。线索由 DeepSeek 模型总结，模型不可用时自动回退到零成本的规则模式；支持重命名、锁定、拖拽合并，附带每个对话独立的笔记与矢量画笔。'

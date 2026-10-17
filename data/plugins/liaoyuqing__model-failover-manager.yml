@@ -1,0 +1,6 @@
+url: https://github.com/liaoyuqing/model-failover-manager
+name: liaoyuqing/model-failover-manager
+category: model
+description:
+  en: Adds routing groups to the session model picker and fails over to the next usable model once the current one exhausts every retry policy.
+  zh: 为会话模型选择位加入路由分组，当前模型重试耗尽后自动切换到组内下一个可用模型。

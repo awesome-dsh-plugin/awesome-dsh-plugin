@@ -1,0 +1,6 @@
+url: https://github.com/linner1224/dsh-video-coursemap
+name: linner1224/dsh-video-coursemap
+category: memory
+description:
+  en: 'Watches the foreground browser window, recognizes video courses, classifies them by subject, fetches Bilibili metadata/danmaku/comments, and generates Markdown + Mermaid knowledge maps and Word study manuals.'
+  zh: '定时观察浏览器前台窗口，识别视频课程并按学科分类，抓取 B 站简介/字幕/弹幕/评论，生成 Markdown + Mermaid 知识地图与 Word 学习手册。'

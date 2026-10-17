@@ -1,0 +1,6 @@
+url: https://github.com/huangxp12/dsh-plugin-search
+name: huangxp12/dsh-plugin-search
+category: ui
+description:
+  en: 'Search field on the DeepSeek Harness Plugins page that filters the installed and official plugin cards as you type, matching each card title, description and package name; space-separated keywords must all match.'
+  zh: '在 DeepSeek Harness「插件」页加一条关键词搜索框：边输入边过滤已安装与官方插件卡片，命中范围是卡片标题、描述与包名，空格分隔的多个关键词之间是 AND。'

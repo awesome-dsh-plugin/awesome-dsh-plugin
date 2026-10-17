@@ -1,0 +1,6 @@
+url: https://github.com/functy23/dsh-workbuddy-connect-functy
+name: functy23/dsh-workbuddy-connect-functy
+category: model
+description:
+  en: Functy fork of corrinehu/dsh-workbuddy-connect. Brings WorkBuddy desktop-app models into DeepSeek Harness with a dashboard UI, multi-account rotation, and sidebar credit.
+  zh: corrinehu/dsh-workbuddy-connect 的 Functy 分支。把 WorkBuddy 桌面 App 的模型接到 DeepSeek Harness，带仪表盘界面、多账号轮换和侧栏额度。

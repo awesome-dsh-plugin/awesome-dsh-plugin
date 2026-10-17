@@ -1,0 +1,6 @@
+url: https://github.com/LapStdy/dsh-dingtalk-notify
+name: LapStdy/dsh-dingtalk-notify
+category: notify
+description:
+  en: 'Posts DeepSeek Harness events to a DingTalk group robot when the agent asks a question, an approval is waiting, or a turn ends, and stays quiet while someone is watching the DSH page.'
+  zh: '把 DeepSeek Harness 的事件推送到钉钉群机器人：AI 提问、等待审批、一轮结束时各推一条；默认在有人正看着 DSH 页面时不发。'

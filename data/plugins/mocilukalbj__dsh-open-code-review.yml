@@ -1,0 +1,7 @@
+url: https://github.com/mocilukalbj/dsh-open-code-review
+name: mocilukalbj/dsh-open-code-review
+category: git
+description:
+  en: 'Alibaba Open Code Review for DSH: host-model delegation with native preview/rule tools and a review skill, plus optional OCR-managed reviews.'
+  zh: '将阿里 Open Code Review 接入 DSH：通过原生文件筛选、规则工具和审查技能复用当前会话模型，并提供可选的 OCR 独立审查模式。'
+tarball: https://github.com/mocilukalbj/dsh-open-code-review/releases/latest/download/dsh-open-code-review.tgz

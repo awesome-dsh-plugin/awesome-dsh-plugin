@@ -1,0 +1,6 @@
+url: https://github.com/hawkongz/dsh-task-reminder
+name: hawkongz/dsh-task-reminder
+category: notify
+description:
+  en: 'Windows toasts and a chime whenever a conversation task stops: task complete, the agent waiting on you (approval, question or plan review — approvals carry Approve / Reject in browser contexts), or an error stop, one reminder per stop with the error taking precedence. Clicking a toast opens that session at your last question and, in DSH Desktop, raises a minimized or tray-hidden window.'
+  zh: '对话任务停止时发一条 Windows 系统弹窗并响一声提示音：任务完成、等你操作（审批请求 / 提问 / 方案待确认，浏览器环境下审批通知上直接带「同意 / 拒绝」）、出错停止；一次停止只提醒一次，错误优先于完成。点通知回到对应会话并落到你这次提问的位置，桌面端还会把最小化或收进托盘的窗口拉回前台。'

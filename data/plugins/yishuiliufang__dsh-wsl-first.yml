@@ -1,0 +1,6 @@
+url: https://github.com/yishuiliufang/dsh-wsl-first
+name: yishuiliufang/dsh-wsl-first
+category: wsl
+description:
+  en: 'Publishes an ordered system prompt section that names wsl as the command executor to reach for first, so the agent prefers WSL over PowerShell on Windows. Registers no tools, and only advertises executors the agent can actually call.'
+  zh: '发布一段带顺序的系统提示词段，指定 wsl 为执行命令时优先选用的执行器，让模型在 Windows 上优先走 WSL 而不是 PowerShell。不注册任何工具，且只宣传模型真实可调用的执行器。'

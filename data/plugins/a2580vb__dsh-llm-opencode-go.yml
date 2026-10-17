@@ -1,0 +1,6 @@
+url: https://github.com/a2580vb/dsh-llm-opencode-go
+name: a2580vb/dsh-llm-opencode-go
+category: model
+description:
+  en: 'OpenCode Go in the DeepSeek Harness model list, providing subscription quota display, model discovery, session affinity, and more.'
+  zh: '把OpenCode Go接入DSH的模型列表，提供订阅额度显示、模型发现、会话亲和等功能。'

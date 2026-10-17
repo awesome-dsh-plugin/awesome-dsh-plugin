@@ -1,0 +1,6 @@
+url: https://github.com/lucky01222/dsh-workbench-shell
+name: lucky01222/dsh-workbench-shell
+category: ui
+description:
+  en: Compact 56px app navigation rail with a separate conversation list and sidebar collapse control for the DSH web UI; also hides embedding, rerank and image/video generation models from the chat model menu and /model.
+  zh: 为 DSH Web 提供 56px 紧凑应用导航栏、独立对话列表与侧栏展开/收起控制；并在对话模型菜单和 /model 中筛除向量、重排及生图/视频型号。

@@ -2,5 +2,5 @@ url: https://github.com/SciF-Lin/dsh-browsercontrol-mcp
 name: SciF-Lin/dsh-browsercontrol-mcp
 category: browser
 description:
-  en: "Mounts Microsoft's Playwright MCP through the official dsh-mcp-client, so the agent gets Playwright MCP's own browser tools over stdio and can attach over CDP to a browser you are already signed in to."
-  zh: "通过官方 dsh-mcp-client 挂载微软的 Playwright MCP，把 Playwright MCP 自带的浏览器工具以 stdio 接入智能体，并支持用 CDP 接管你已登录的浏览器。"
+  en: "Mounts Microsoft's Playwright MCP through the official dsh-mcp-client so the agent gets its browser tools over stdio; the one-time CDP authorization is guided by a prompt note, a call guard and the /bw-setup command."
+  zh: "通过官方 dsh-mcp-client 挂载微软的 Playwright MCP，把浏览器工具以 stdio 接入智能体；一次性的 CDP 授权由提示注入、调用拦截与 /bw-setup 命令引导完成。"

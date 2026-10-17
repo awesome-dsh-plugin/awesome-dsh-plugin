@@ -2,5 +2,5 @@ url: https://github.com/lemonxiny55/dsh-code-index
 name: lemonxiny55/dsh-code-index
 category: tools
 description:
-  en: 'Structural code index for DSH: Tree-sitter symbol search across 8 languages (including C/C++), a bounded repository map ranked by import-graph PageRank and injected into the system prompt, function-level call graph via code_refs, optional circular-dependency and orphan-module checks via code_health, plus working-tree change context and task-aware code context.'
-  zh: '结构化代码索引：基于 tree-sitter 的跨 8 种语言（含 C/C++）符号搜索、按 import-graph PageRank 排序并注入系统提示词的限量仓库地图、通过 code_refs 提供的函数级调用图、可选的 code_health 环依赖与孤儿模块检查，以及 working-tree 变更上下文和任务感知代码上下文。'
+  en: 'Local code context for DSH: ArkTS (.ets) plus eight existing languages, component and symbol navigation, static ETS/TS references, bounded Context Packs with source line ranges and relationship provenance, parse diagnostics, repo/worktree isolation and external-file refresh.'
+  zh: 'DSH 本地代码上下文：支持 ArkTS（.ets）及原有八种语言，提供组件与符号导航、静态 ETS/TS 引用、包含源码行号与关系来源的有界 Context Pack、解析诊断、仓库/worktree 隔离和外部文件刷新。'

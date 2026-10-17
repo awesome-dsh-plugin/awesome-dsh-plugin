@@ -1,0 +1,6 @@
+url: https://github.com/baixiaoustc/dsh-kidlab/tree/main/plugins/kid-network
+name: baixiaoustc/dsh-kidlab#kid-network
+category: fun
+description:
+  en: "Network explorer for kids: my identity, DNS lookup, a traceroute trip, speed test and who is home on the LAN."
+  zh: "网络小旅行：我的身份、DNS 查询、路由追踪、测速、谁在局域网。"

@@ -1,0 +1,7 @@
+url: https://github.com/moeform-re/dsh-review-md-preview
+name: moeform-re/dsh-review-md-preview
+category: ui
+description:
+  en: Markdown preview and rendered side-by-side compare for the changes-review tab.
+  zh: 评审页的 Markdown 预览与渲染态双栏对比。
+tarball: https://github.com/moeform-re/dsh-review-md-preview/releases/download/v0.1.0/dsh-review-md-preview-0.1.0.tgz

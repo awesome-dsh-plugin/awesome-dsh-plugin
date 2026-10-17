@@ -17,8 +17,13 @@
 //      future scanner is a change to this file rather than to the catalog
 //      data or to any surface reading it.
 
-/** The output shape this code understands. A different one is not read. */
-export const SCANNER_SCHEMA = 1
+/**
+ * Output shapes this code understands. 2 adds `facts[]` and `evidence[].rule`;
+ * the fields this file copies (`capabilities`, `redLines`) are the same in 1.
+ * A different shape is not read.
+ */
+export const SCANNER_SCHEMA = 2
+const READABLE_SCHEMAS = new Set([1, 2])
 
 /**
  * @typedef {object} CapabilityFacts
@@ -28,6 +33,8 @@ export const SCANNER_SCHEMA = 1
  * @property {string[]} redLines      Sentences naming a combination worth a look, e.g. credentials+network.
  * @property {string} scannedAt       ISO 8601, UTC — when this record was produced.
  * @property {string} tool            The scanner that produced it, so a later reader knows which one.
+ * @property {object} [provenance]    Optional npm attestation claim. Absence is "not checked", not "unsafe".
+ * @property {object} [previous]      Capabilities and red lines of the previous scanned version.
  */
 
 /** `owner/repo` for a catalog URL, dropping any `/tree/<ref>/<sub>` tail. */
@@ -126,14 +133,14 @@ export function shouldRescan(stored, source, now, recheckDays) {
  */
 export function factsFromScan(payload, fallback) {
   if (payload === null || typeof payload !== 'object' || Array.isArray(payload)) return null
-  if (payload.schemaVersion !== SCANNER_SCHEMA) return null
+  if (!READABLE_SCHEMAS.has(payload.schemaVersion)) return null
   const plugins = Array.isArray(payload.plugins) ? payload.plugins : []
   const first = plugins.find(plugin => plugin !== null && typeof plugin === 'object')
   if (first === undefined) return null
   const strings = (value) => Array.isArray(value)
     ? [...new Set(value.filter(item => typeof item === 'string' && item !== ''))]
     : []
-  return {
+  const record = {
     version: typeof first.version === 'string' && first.version !== '' ? first.version : fallback.version,
     spec: typeof first.spec === 'string' && first.spec !== '' ? first.spec : fallback.spec,
     capabilities: strings(first.capabilities),
@@ -141,4 +148,44 @@ export function factsFromScan(payload, fallback) {
     scannedAt: fallback.now,
     tool: fallback.tool,
   }
+  const provenance = copyProvenance(payload.provenance)
+  if (provenance !== undefined) record.provenance = provenance
+  return record
+}
+
+/**
+ * Keep the previous version's capabilities and red lines when the release changes.
+ * A rescan of the same version keeps an existing `previous`. This is bookkeeping,
+ * not a detection rule.
+ *
+ * @param {CapabilityFacts|undefined} stored
+ * @param {CapabilityFacts|null} facts
+ */
+export function rememberPrevious(stored, facts) {
+  if (facts === null) return null
+  if (stored === undefined) return facts
+  const sameRelease = stored.version != null && facts.version != null && stored.version === facts.version
+  if (!sameRelease && stored.version != null && facts.version != null) {
+    return {
+      ...facts,
+      previous: {
+        version: stored.version,
+        capabilities: Array.isArray(stored.capabilities) ? stored.capabilities : [],
+        redLines: Array.isArray(stored.redLines) ? stored.redLines : [],
+      },
+    }
+  }
+  if (stored.previous !== undefined) return { ...facts, previous: stored.previous }
+  return facts
+}
+
+function copyProvenance(value) {
+  if (typeof value !== 'object' || value === null || Array.isArray(value)) return undefined
+  if (typeof value.present !== 'boolean' || value.signatureChecked !== false) return undefined
+  const out = { present: value.present, signatureChecked: false }
+  for (const key of ['repository', 'commit', 'ref']) {
+    if (typeof value[key] === 'string' && value[key] !== '') out[key] = value[key]
+  }
+  if (typeof value.repositoryMatches === 'boolean') out.repositoryMatches = value.repositoryMatches
+  return out
 }

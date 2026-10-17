@@ -1,0 +1,7 @@
+url: https://github.com/zhang66633/dsh-pixel-ui
+name: zhang66633/dsh-pixel-ui
+category: theme
+tarball: https://github.com/zhang66633/dsh-pixel-ui/releases/latest/download/dsh-pixel-ui.tgz
+description:
+  en: Four-palette pixel-art skin for DSH Web (wood, parchment, warm, terminal green) with a bundled CJK pixel font served by the plugin's own host route, and a flat, shadow-free look.
+  zh: 四套配色的像素风 DSH Web 皮肤（木屋/羊皮纸/暖阳/终端绿）；中文像素字体由插件自身的 host 路由发货；完全平面、无阴影。

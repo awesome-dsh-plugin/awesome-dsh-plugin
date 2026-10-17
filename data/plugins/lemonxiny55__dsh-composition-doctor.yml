@@ -2,5 +2,5 @@ url: https://github.com/lemonxiny55/dsh-composition-doctor
 name: lemonxiny55/dsh-composition-doctor
 category: dev
 description:
-  en: 'Read-only DSH/Cordis composition doctor for plugin conflicts and upgrade rehearsal: scan profile manifests and patches, find duplicate rows, hook-order and UI ownership conflicts, compare redacted snapshots, diff plugin/row/hook changes, and preflight target DSH releases with explicit evidence boundaries — without mutating a real profile.'
-  zh: '只读的 DSH/Cordis 组合诊断与升级预检工具：扫描 profile manifest 与 patch，发现重复 row、hook 顺序和 UI 所有权冲突，比较脱敏快照，分析插件/row/hook 变化，并在明确证据边界的前提下预检目标 DSH release——不会修改真实 profile。'
+  en: 'Explain supported DSH plugin failures with composition source paths and manual next steps: duplicate insertions, missing bundle patches and peer mismatches; standalone CLI and report viewer, read-only diagnosis offline by default, with unobserved runtime left unknown.'
+  zh: '通过组合来源路径和人工下一步解释受支持的 DSH 插件故障：重复引入、bundle patch 缺失和 peer 不匹配；提供独立 CLI 与报告查看器，默认只读离线诊断，未观察的 runtime 保留 unknown。'

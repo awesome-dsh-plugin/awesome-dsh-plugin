@@ -1,0 +1,6 @@
+url: https://github.com/wangyemen/agnes-ai-for-dsh
+name: wangyemen/agnes-ai-for-dsh
+category: model
+description:
+  en: 'Agnes AI provider for llm-pi-ai: 4 multimodal chat models declared in the bundle patch, plus image and video generation tools.'
+  zh: 为 llm-pi-ai 预声明 Agnes AI 供应商：4 个多模态对话模型，以及图像与视频生成工具。

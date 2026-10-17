@@ -1,0 +1,6 @@
+url: https://github.com/GaoHu1997/dsh-model-think-level
+name: GaoHu1997/dsh-model-think-level
+category: model
+description:
+  en: 'Third-party model settings for DeepSeek Harness: pick a provider and a model in the composer menu, gate a model''s thinking level with one switch on the official Models page card, and configure per-route request headers.'
+  zh: 为 DeepSeek Harness 中的第三方模型设置思考等级：在输入框菜单里选择服务商与模型，在官方模型页卡片上用一个开关控制思考等级，并可配置按路由的请求头。

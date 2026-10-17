@@ -1,0 +1,6 @@
+url: https://github.com/zhangj1164/dsh-mega-plugins/tree/main/packages/memo/dsh-memo
+name: zhangj1164/dsh-mega-plugins#dsh-memo
+category: memory
+description:
+  en: "Week-keyed personal memo service: stores entries in ISO-week tables, resolves week/month/quarter/year navigation from one period calendar, runs AI analysis and Markdown report export, requires an explicit force flag to edit a past week, and turns telemetry failures into a GitHub issue report."
+  zh: 按 ISO 周组织的个人备忘服务：条目按周存储，周/月/季/年四种视图由同一份周期日历解析，支持 AI 分析与 Markdown 报告导出，修改非当前周需要显式确认，并可将遥测失败整理成 GitHub issue 报告。

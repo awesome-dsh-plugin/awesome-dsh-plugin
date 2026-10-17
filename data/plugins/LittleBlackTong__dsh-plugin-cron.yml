@@ -2,5 +2,5 @@ url: https://github.com/LittleBlackTong/dsh-plugin-cron
 name: LittleBlackTong/dsh-plugin-cron
 category: workflow
 description:
-  en: 'Cron scheduler for agent tasks: create jobs by natural language or a sidebar UI, inject a user message into a new or fixed session on schedule to trigger a full agent turn, with run history, manual trigger, and live SSE sync.'
-  zh: 'Agent 任务定时调度器：自然语言或侧栏 UI 创建任务，到点向新建/固定会话注入 user 消息触发完整 agent turn，带执行历史、手动触发与 SSE 实时同步。'
+  en: 'Cron scheduler for agent tasks: create jobs by natural language or a sidebar UI, inject a user message into a new or fixed session on schedule to trigger a full agent turn, with run history, manual trigger, and live SSE sync. Requires DSH session format v4 (official DeepSeek Harness 0.1.7+): injected messages declare the producer-owned source kind plugin:cron.'
+  zh: 'Agent 任务定时调度器：自然语言或侧栏 UI 创建任务，到点向新建/固定会话注入 user 消息触发完整 agent turn，带执行历史、手动触发与 SSE 实时同步。要求 DSH session format v4（官方 DeepSeek Harness 0.1.7+）：注入消息使用 producer-owned source kind plugin:cron。'
