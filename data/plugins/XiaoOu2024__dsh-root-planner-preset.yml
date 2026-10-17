@@ -1,0 +1,6 @@
+url: https://github.com/XiaoOu2024/dsh-root-planner-preset
+name: XiaoOu2024/dsh-root-planner-preset
+category: workflow
+description:
+  en: 'Agent preset for dsh that keeps planning and decisions in the root agent, hands reading and edits to subagents confined to their own _agents/ workspace, and refuses any write outside it.'
+  zh: 'dsh 的 agent preset：规划与决策留在根 agent，读取与修改下放给各自 _agents/ 工作区内的子代理，越界写入直接被拒。'
