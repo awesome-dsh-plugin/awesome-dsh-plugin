@@ -1,0 +1,6 @@
+url: https://github.com/bauerelizabeth07139/math-rigor
+name: bauerelizabeth07139/math-rigor
+category: tools
+description:
+  en: 'Auditable mathematical proving for DeepSeek Harness: a local stdio MCP server with 23 machine-checking tools, a bundled workflow skill, and the /prove and /audit-proof commands. proven, refuted and inconclusive are never conflated, and unproven steps are reported instead of hidden.'
+  zh: '给 DeepSeek Harness 的可审计数学证明:本地 stdio MCP 服务器(23 个机器校验工具)+ 工作流技能 + /prove、/audit-proof 命令。proven / refuted / inconclusive 绝不混淆,未证明的步骤如实报告而非隐藏。'
