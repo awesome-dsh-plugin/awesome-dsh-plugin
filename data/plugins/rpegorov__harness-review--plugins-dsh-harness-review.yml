@@ -1,0 +1,5 @@
+url: https://github.com/rpegorov/harness-review/tree/main/plugins/dsh-harness-review
+name: rpegorov/harness-review#dsh-harness-review
+category: skill
+description:
+  en: Skill that reviews your coding-agent session transcripts over the last two weeks and reports which skills, hooks and rules work, need attention or go unused.
