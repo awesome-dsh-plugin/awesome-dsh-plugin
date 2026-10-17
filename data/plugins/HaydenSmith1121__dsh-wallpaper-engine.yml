@@ -1,0 +1,6 @@
+url: https://github.com/HaydenSmith1121/dsh-wallpaper-engine
+name: HaydenSmith1121/dsh-wallpaper-engine
+category: ui
+description:
+  en: 'Browse and search the Wallpaper Engine Steam Workshop from a sidebar panel without logging into Steam: anonymous keyword search, a 14-value type filter (Scene/Video/Application/Web and genre tags), four sorts, a pager showing total entries and pages with jump-to-page, and a detail modal with subscriber/favorite/view counts, file size and tags. Subscribing hands off to Steam: the modal''s action opens steam://url/CommunityFilePage/<id> so the Steam client lands on the item directly, falling back to the workshop page in a browser. The host half reads only the persona name out of loginusers.vdf to report whether a session exists — it never reads tokens or credentials — and shows first-run guidance while signed out. The host fetches through a CONNECT tunnel with an optional per-plugin proxy, so the browser never has to reach steamcommunity.com.'
+  zh: '在侧栏面板里浏览和搜索 Wallpaper Engine 的 Steam 创意工坊，无需登录 Steam：匿名关键词搜索、14 项类型筛选（场景/视频/应用/网页及题材标签）、四种排序、显示总条目数与总页数并支持跳页的分页控件，以及带订阅数/收藏/浏览/文件大小/标签的详情弹窗。订阅动作交给 Steam：弹窗按钮打开 steam://url/CommunityFilePage/<id>，让 Steam 客户端直接落到该条目，失败时回退到浏览器打开工坊页。宿主半只从 loginusers.vdf 读取昵称以报告是否存在登录会话，从不读取令牌或凭据，未登录时显示首次使用引导。宿主半通过 CONNECT 隧道并支持按插件配置代理，浏览器无需直连 steamcommunity.com。'
