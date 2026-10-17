@@ -1,0 +1,7 @@
+url: https://github.com/Yanshi-Robotics/yanshifu-plugin-cn
+name: Yanshi-Robotics/yanshifu-plugin-cn
+category: skill
+tarball: https://github.com/Yanshi-Robotics/yanshifu-plugin-cn/releases/latest/download/yanshifu-plugin-cn.tgz
+description:
+  en: 'Adds two skills for the Let''s Build Robots SO-101 course: one reads the learner''s project files (environment, calibration, teleop logs, camera config, datasets, training checkpoints) and reports which lesson they are on and what to do next; the other answers questions from four handbooks.'
+  zh: '两个技能：yanshifu 读学员的项目产物（环境、校准、遥操日志、相机、数据集、训练检查点）判断他做到哪一集并给下一步；ask 只答《偃师傅的 SO-101 落地指南》等四份资料里的问题。'
