@@ -1,0 +1,19 @@
+# 提交给 awesome-dsh-plugin 的条目文件（已经按 Zyr147258 填好，可直接复制）。
+#
+# 上架仓库：https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+# 目标路径：data/plugins/Zyr147258__dsh-leike-pet.yml
+#   —— 文件名必须是 <owner>__<repo>.yml，一个 PR 只加这一个文件。
+#
+# 收录规则（摘自 contribution guide）：
+#   - package.json 必须声明 dsh.bundle（本项目已声明）
+#   - 仓库创建满 1 天，并带上 dsh-plugin topic
+#   - description 必须与代码一致，不能夸大
+#   - 不要手改 README（列表的 README 由脚本生成）
+#
+# category 取值见 guide；桌宠归 fun（娱乐）。
+url: https://github.com/Zyr147258/dsh-leike-pet
+name: Zyr147258/dsh-leike-pet
+category: fun
+description:
+  en: 'Pixel-art Little Red Riding Hood pet for the DSH session window: transparent and always on top, it walks back and forth along the composer, blinks, looks around, turns its head toward the cursor, sleeps on double-click, and scales from 2x to 7x in a right-click panel.'
+  zh: 会话窗口里的像素桌宠「小红帽蕾克」：透明无边框、始终置顶，在输入框上沿来回走动，会眨眼、张望、蹦跳，鼠标靠近会转头看你，双击原地睡觉，右键面板可调 2×~7× 大小。
