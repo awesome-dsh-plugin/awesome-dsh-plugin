@@ -1,0 +1,6 @@
+url: https://github.com/Wlaeg/dsh-pet-desktop-linux
+name: Wlaeg/dsh-pet-desktop-linux
+category: fun
+description:
+  en: A transparent always-on-top desktop pet for DSH on Linux (X11 / XWayland), driven by the session state. The pet lives outside the browser as its own window, follows the pointer with a distance and per-display limit, shows a live session-status bubble that lists each session task and state, and auto-starts with your session.
+  zh: Linux 桌面上的透明置顶 DSH 桌宠（独立于浏览器窗口运行）。桌宠会跟随鼠标目光，但带距离与屏幕限制；悬浮气泡实时列出每个会话的任务名与状态，点击即可跳转；支持随 DSH 会话自启动。
