@@ -1,0 +1,7 @@
+url: https://github.com/qiangweiliu/dsh-context/tree/main/plugin-skeleton
+name: qiangweiliu/dsh-context#plugin-skeleton
+category: session
+description:
+  en: 'Minimal installable reference plugin for context-length management in DeepSeek Harness: a /ctx command reports a session''s measured token usage against a configurable window budget with warn and error thresholds, an optional per-session budget override, and a read-only settings section fed by a status route. It reads measurements only — it does not compact or rewrite session history.'
+  zh: 'DeepSeek Harness 上下文长度管理的最小可安装参考插件：/ctx 命令按可配置的窗口预算报告会话实测 token 用量并给出警告／超限阈值，支持按会话临时覆盖预算，另有一个由状态路由驱动的只读设置面板。插件只读测量值，不做压缩、不改写会话历史。'
+
