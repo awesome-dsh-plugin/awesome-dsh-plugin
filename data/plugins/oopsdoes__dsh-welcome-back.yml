@@ -2,5 +2,5 @@ url: https://github.com/oopsdoes/dsh-welcome-back
 name: oopsdoes/dsh-welcome-back
 category: session
 description:
-  en: Welcome-back screen that rounds up today's active conversations after an idle period.
-  zh: 闲置一段时间回到 DSH 时，自动汇总今天还在进行的会话，欢迎回来。
+  en: Welcome-back card in the conversation you return to after an idle period, using only that conversation's last message.
+  zh: 闲置一段时间后回到会话时，在该会话里显示它的上一条消息，并提供断点恢复。
