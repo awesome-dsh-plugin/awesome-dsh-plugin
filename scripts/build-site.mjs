@@ -505,10 +505,11 @@ function ranked(only) {
   return ordered.filter((e) => !only || e.cat === only).slice().sort(byDownloads)
 }
 
-// The install command the card shows. npm when the entry has a package, otherwise
-// the github: spec. Kept next to the catalog so the two cannot drift.
+// Match the detail page: prefer a verified npm package, then the declared
+// prebuilt tarball, and use Git only when neither is available. Both static
+// cards and the virtual catalog use this function.
 function cardCmd(e) {
-  return e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit
+  return e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit)
 }
 
 // download-ranked card grid; `only` limits to one category (category pages).
