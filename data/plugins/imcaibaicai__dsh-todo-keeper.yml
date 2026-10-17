@@ -1,0 +1,6 @@
+url: https://github.com/imcaibaicai/dsh-todo-keeper
+name: imcaibaicai/dsh-todo-keeper
+category: workflow
+description:
+  en: Todo freshness reminders for DeepSeek Harness agents
+  zh: 为 DSH 会话中的待办项提供 freshness 提醒
