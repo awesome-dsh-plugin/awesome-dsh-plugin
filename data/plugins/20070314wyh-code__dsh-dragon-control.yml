@@ -1,0 +1,7 @@
+url: https://github.com/20070314wyh-code/dsh-dragon-control
+name: 20070314wyh-code/dsh-dragon-control
+category: browser
+tarball: https://github.com/20070314wyh-code/dsh-dragon-control/releases/download/v0.4.1/dsh-dragon-control-0.4.1.tgz
+description:
+  en: "Windows x64 only, 0.4.1 preview: two scoped tools (dragon_browser and dragon_desktop) that drive a visible browser through the DOM or CDP and Windows apps through UI Automation, with per-origin and per-executable read/control scopes, batch steps, a physical-Esc emergency stop and a redacted action log. It is not an OS sandbox; logins, admin windows and secure desktops stay with the user."
+  zh: "仅支持 Windows x64，0.4.1 预览版：两个受控工具（dragon_browser 与 dragon_desktop），网页走 DOM/CDP、桌面走 Windows UI Automation，按网站来源和可执行文件分 read/control 权限，支持多步 batch、物理 Esc 急停与脱敏动作日志。它不是系统沙箱，登录、管理员窗口和安全桌面仍由用户处理。"
