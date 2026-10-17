@@ -1,0 +1,7 @@
+url: https://github.com/zhuran305-web/dsh-feedback-combined
+name: zhuran305-web/dsh-feedback-combined
+category: ui
+tarball: https://github.com/zhuran305-web/dsh-feedback-combined/releases/download/v0.1.0/dsh-feedback-combined-0.1.0.tgz
+description:
+  en: 'One-click thumbs up/down rating UI plus a feedback bridge: ratings are collected to JSONL and a short summary of unconsumed feedback is injected into model context before each request.'
+  zh: '一键点赞/点踩评分 UI 加反馈桥接：评分采集落盘 JSONL，并在每次请求前把未消费的反馈摘要注入模型上下文。'
