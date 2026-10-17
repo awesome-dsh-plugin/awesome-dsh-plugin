@@ -1,0 +1,6 @@
+url: https://github.com/wshdp123/dsh-connect-qoder-pro
+name: wshdp123/dsh-connect-qoder-pro
+category: model
+description:
+  en: Connects DSH to Qoder desktop client authentication, providing native access to Qoder CN models (qmodel, qfmodel) and thinking levels.
+  zh: 连接 DSH 与本地 Qoder 桌面客户端登录态，原生接入 Qoder CN 官方模型与深度思考等级。
