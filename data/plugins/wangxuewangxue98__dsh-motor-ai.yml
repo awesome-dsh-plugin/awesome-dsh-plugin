@@ -1,0 +1,6 @@
+url: https://github.com/wangxuewangxue98/dsh-motor-ai
+name: wangxuewangxue98/dsh-motor-ai
+category: tools
+description:
+  zh: "电机电磁设计 AI 插件完整版：在 L0 毫秒级广筛之上补齐 L1（Ansys RMxprt）与 L2（Motor-CAD）精算层，形成 需求解析 → 参数识别 → 候选矩阵 → L0 预筛 → L1/L2 精算校核 的端到端设计链；需先安装 dsh-motor-ai-l0（共享核心）。完整版采用 PolyForm Noncommercial 许可，L1/L2 需激活码。"
+  en: "Full edition of the motor-design AI plugin for DeepSeek Harness: adds the L1 (Ansys RMxprt) and L2 (Motor-CAD) precision layers on top of the L0 millisecond-level broad filter, completing an end-to-end chain from requirement parsing to parameter identification, candidate matrix, L0 pre-screening and L1/L2 verification. Requires dsh-motor-ai-l0 (shared core) to be installed first. Distributed under the PolyForm Noncommercial licence; L1/L2 require an activation code."
