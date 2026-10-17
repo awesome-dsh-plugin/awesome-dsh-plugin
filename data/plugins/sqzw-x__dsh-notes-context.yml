@@ -1,0 +1,6 @@
+url: https://github.com/sqzw-x/dsh-notes-context
+name: sqzw-x/dsh-notes-context
+category: memory
+description:
+  en: 'Notes-backed context compression for DeepSeek Harness: replaces LLM-summarized compaction with a model-written persistent notebook plus recoverable raw history, so the rollover boundary itself costs zero model calls.'
+  zh: '为 DeepSeek Harness 提供笔记式上下文压缩：用模型维护的持久笔记本取代 LLM 摘要式压缩，并保留可恢复的原始历史，窗口边界本身不产生模型调用。'
