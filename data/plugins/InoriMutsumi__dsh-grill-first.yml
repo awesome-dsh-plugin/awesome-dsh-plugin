@@ -1,0 +1,6 @@
+url: https://github.com/InoriMutsumi/dsh-grill-first
+name: InoriMutsumi/dsh-grill-first
+category: workflow
+description:
+  en: 'Requirements interview before work starts: judges whether a request is clear, asks focused questions when it is not, in strict mode denies editing tools until the user confirms a four-part summary in chat, and keeps confirmed preferences in two-layer memory.'
+  zh: '开工前先做需求访谈：判定任务是否说清楚，没说清就分轮追问；strict 档位下用户未在对话中确认四段需求清单前，拦截编辑类工具；确认过的偏好写入两层记忆。'
