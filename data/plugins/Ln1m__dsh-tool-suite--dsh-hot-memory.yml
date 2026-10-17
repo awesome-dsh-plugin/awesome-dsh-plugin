@@ -1,0 +1,6 @@
+url: https://github.com/Ln1m/dsh-tool-suite/tree/main/dsh-hot-memory
+name: Ln1m/dsh-tool-suite#dsh-hot-memory
+category: memory
+description:
+  en: 'Projects Mnemon USER.md and MEMORY.md into every session system prompt.'
+  zh: '把 Mnemon 的 USER.md / MEMORY.md 投影进每个会话的 systemPrompt。'

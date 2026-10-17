@@ -1,0 +1,6 @@
+url: https://github.com/Ln1m/dsh-side-suite/tree/main/dsh-files-tree
+name: Ln1m/dsh-side-suite#dsh-files-tree
+category: ui
+description:
+  en: 'File tree tab in the left column plus a file picker in the composer @ menu.'
+  zh: '左栏文件 Tab，以及输入区 @ 列表里的文件选择。'

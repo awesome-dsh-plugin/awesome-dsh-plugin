@@ -1,0 +1,6 @@
+url: https://github.com/Ln1m/dsh-tool-suite/tree/main/dsh-literature-search
+name: Ln1m/dsh-tool-suite#dsh-literature-search
+category: tools
+description:
+  en: 'Model-callable literature search over OpenAlex (by citations) and arXiv (by relevance).'
+  zh: '模型可调用的文献检索：OpenAlex 按被引、arXiv 按相关度。'

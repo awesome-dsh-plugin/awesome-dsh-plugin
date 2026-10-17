@@ -1,0 +1,6 @@
+url: https://github.com/Ln1m/dsh-chrome-suite/tree/main/dsh-wallet
+name: Ln1m/dsh-chrome-suite#dsh-wallet
+category: usage
+description:
+  en: 'Wallet panel with balance, per-session cost and peak/off-peak pricing, plus a balance query tool.'
+  zh: '钱包面板：余额 / 本会话消耗 / 峰谷价，附余额查询工具。'

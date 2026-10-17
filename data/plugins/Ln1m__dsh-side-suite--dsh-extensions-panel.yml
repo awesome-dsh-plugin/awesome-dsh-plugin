@@ -1,0 +1,6 @@
+url: https://github.com/Ln1m/dsh-side-suite/tree/main/dsh-extensions-panel
+name: Ln1m/dsh-side-suite#dsh-extensions-panel
+category: ui
+description:
+  en: 'Tools tab in the left column with toggle cards for LAN services and mobile access.'
+  zh: '左栏「工具」Tab：局域网服务与移动端访问的开关卡片。'
