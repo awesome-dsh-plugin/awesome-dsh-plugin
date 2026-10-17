@@ -1,0 +1,6 @@
+url: https://github.com/OMSociety/dsh-ppt-maker
+name: OMSociety/dsh-ppt-maker
+category: docs
+description:
+  en: 'PPT workbench: eleven ppt_* tools create, edit, reverse-engineer, QA-check and export slides from a plain-text PPTD project; five design-system families, themes, animations, posters and infographics.'
+  zh: 'PPT 制作插件：十一个 ppt_* 工具创建、编辑、逆向、质检与导出演示文稿，内置五族设计系统与主题模板，支持幻灯片动画、海报与信息图。'
