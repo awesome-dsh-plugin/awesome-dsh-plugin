@@ -1,0 +1,15 @@
+# Marketplace entry for awesome-dsh-plugin.
+#
+# Copy this file, unchanged, to:
+#   data/plugins/liuyaguang8023__dsh-jcc-theme.yml
+# in a pull request against https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+#
+# The repository must be at least one day old and carry the `dsh-plugin` topic;
+# both are checked by the list's CI.
+url: https://github.com/liuyaguang8023/dsh-jcc-theme
+name: liuyaguang8023/dsh-jcc-theme
+category: theme
+description:
+  en: 'Unofficial Golden Spatula fan theme for the DSH Web GUI: a hextech gold and arcane token palette for light and dark schemes, a hex-board lattice behind the interface, and a floating hex-core panel that switches the accent and board texture and can turn the theme off without uninstalling.'
+  zh: '金铲铲同人风格的 DeepSeek Harness Web 界面主题：为浅色与深色外观提供海克斯金与奥术配色的令牌覆盖，界面底层铺六边形棋盘网格，右下角「海克斯核心」面板可切换强调色与棋盘纹理，并可一键关闭、即时还原原生界面；不含游戏素材。'
+tarball: https://github.com/liuyaguang8023/dsh-jcc-theme/releases/latest/download/dsh-jcc-theme.tgz
