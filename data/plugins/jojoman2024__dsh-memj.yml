@@ -1,0 +1,6 @@
+url: https://github.com/jojoman2024/dsh-memj
+name: jojoman2024/dsh-memj
+category: memory
+description:
+  en: 'A project-scoped memory plugin for DSH. Knowledge authoring and the plugin''s own prompts are open to editing, so users can redesign the library structure and how the model is driven without changing a line of code. By default the library is built on one core idea: a project document you design yourself (a handoff by default) is the project entity; the plugin detects which project a session belongs to, binds captured knowledge to that project, and promotes what generalizes into theme and global layers. The most natural logic there is does the pre-filtering of knowledge, with controllable compression and archiving of context.'
+  zh: '以项目为主线的 DSH 记忆插件。开放知识书写，以及插件提示词编辑，让用户不改一行代码就能重新设计记忆库结构与模型被驱动的方式。默认的记忆库核心设计在于，项目以一份你自己设计的项目文档（默认是一份交接文档）作为实体，插件自动识别会话所属项目、把沉淀的知识与项目绑定，并把可复用的部分升级进主题与全局层。用最自然的逻辑完成知识的初筛，上下文可控压缩和留档。'

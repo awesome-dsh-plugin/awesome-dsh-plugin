@@ -1,0 +1,6 @@
+url: https://github.com/Wanyi424/dsh-quick-translate
+name: Wanyi424/dsh-quick-translate
+category: tools
+description:
+  en: 'Quick translation using DSH models: streaming output, token usage details, and local history.'
+  zh: '快捷翻译：DSH 模型调用、流式输出、Token 用量与翻译详情、本地历史记录。'

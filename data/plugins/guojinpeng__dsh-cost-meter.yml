@@ -1,0 +1,6 @@
+url: https://github.com/guojinpeng/dsh-cost-meter
+name: guojinpeng/dsh-cost-meter
+category: usage
+description:
+  en: 'Estimate session and turn costs with model prices in USD or CNY and price sync from models.dev, OpenRouter, or DeepInfra.'
+  zh: '估算会话和每轮费用，按模型设置 USD 或 CNY 单价，并从 models.dev、OpenRouter 或 DeepInfra 同步价格。'

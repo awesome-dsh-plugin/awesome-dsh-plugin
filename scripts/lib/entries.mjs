@@ -65,6 +65,15 @@ export function slugFor(url) {
   return sub ? `${base}--${sub.replaceAll('/', '-')}` : base
 }
 
+// `file` is echoed into `::error file=…` annotations and compared against
+// `git diff --name-only` output, and both of those are POSIX on every
+// platform. `path.join` is not: on Windows it hands back
+// `data\plugins\x.yml`, which matches nothing git prints, so
+// check-submission.mjs answered "no entry files added or changed — nothing to
+// verify" for a pull request that plainly added one — a gate that cannot tell
+// "passed" from "never ran", which is the failure its own comment warns about.
+const toPosix = (p) => (path.sep === '/' ? p : p.split(path.sep).join('/'))
+
 export function readEntries(dir = PLUGINS_DIR) {
   if (!fs.existsSync(dir)) return []
   const out = []
@@ -93,7 +102,7 @@ export function readEntries(dir = PLUGINS_DIR) {
         : ''
       throw new Error(`${full}: invalid YAML — ${e.reason ?? e.message}${hint}`)
     }
-    out.push({ ...doc, file: full })
+    out.push({ ...doc, file: toPosix(full) })
   }
   return out
 }

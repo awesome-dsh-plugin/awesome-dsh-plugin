@@ -1,0 +1,6 @@
+url: https://github.com/john-walks-slow/dsh-session-prefix
+name: john-walks-slow/dsh-session-prefix
+category: session
+description:
+  en: 'Session state badges for DeepSeek Harness: prefix a session title with a customizable emoji or text badge (default wip 🚧, blocked ⏸️, review 👀, done ✅, plan 💡, bug 🐛) so the sidebar list shows each session''s project phase at a glance. New sessions get a configurable default state, the session_prefix model tool lets the agent move the badge on its own as phases change, /state inspects, sets or clears it by key, and a settings page edits the state list (badge, key, label, description). The badge is purely visual — no other behavior changes.'
+  zh: '会话状态标记：用可自定义的 Emoji / 文本前缀给会话标题打上项目状态（默认 wip 🚧、blocked ⏸️、review 👀、done ✅、plan 💡、bug 🐛），侧边栏一眼看清每个会话处于哪个阶段。新会话可自动带上默认状态，模型工具 session_prefix 让 Agent 按阶段自主切换，/state 命令按 key 查看、设置或清除，设置页可视化增删改状态表（前缀 / key / 名称 / 说明）。纯视觉标记，不改变任何其他行为。'

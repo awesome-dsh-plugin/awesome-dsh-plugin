@@ -1,0 +1,6 @@
+url: https://github.com/sixzjd/dsh-folder-attach
+name: sixzjd/dsh-folder-attach
+category: ui
+description:
+  en: "Drag folders into the DeepSeek Harness web composer instead of hitting 'only the desktop app supports folders'. Adds a host folder dialog, /folder, and drag/paste into @path mentions. Plain browser, no desktop app."
+  zh: "在 DeepSeek Harness 网页版直接拖文件夹进输入框，不再提示「只有桌面端支持添加文件夹」。新增主机文件夹选择框、/folder 命令，拖入/粘贴自动解析为 @路径 引用。纯浏览器可用，无需桌面端。"

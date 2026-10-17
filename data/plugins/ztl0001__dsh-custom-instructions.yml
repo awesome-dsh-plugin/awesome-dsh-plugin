@@ -1,0 +1,6 @@
+url: https://github.com/ztl0001/dsh-custom-instructions
+name: ztl0001/dsh-custom-instructions
+category: identity
+description:
+  en: 'One standing system prompt for every workspace: a Custom instructions page in DSH''s own Settings panel whose text is added to the system prompt of every session, subagents included, and stored in the profile instead of any project.'
+  zh: '所有工作区共用的长期系统提示词：在 DSH 自己的设置面板里新增「自定义指令」页，文本会加入每个会话（含子代理）的系统提示词，并保存在 profile 而不是任何项目里。'

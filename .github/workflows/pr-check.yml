@@ -219,6 +219,11 @@ jobs:
         # read off the live repository (a hand-made thread, a thread the
         # catalog's lowercasing era filed under another case).
         run: node --test scripts/adopt-discussions.test.mjs
+      - name: Entry-path tests
+        # Pure rules only, no token and no network: readEntries must report the
+        # path `git diff --name-only` prints, so the diff/entry comparison in
+        # check-submission.mjs matches on every host separator.
+        run: node --test scripts/entries-path.test.mjs
       - name: Build (locale parity, date derivation, templates)
         # probes are skipped on purpose: the build tolerates missing probe
         # data, and this keeps the check token-free and fork-safe.

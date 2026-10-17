@@ -1,0 +1,6 @@
+url: https://github.com/statedock/statedock-plugins/tree/main/adapters/deepseek-harness
+name: statedock/statedock-plugins#deepseek-harness
+category: workflow
+description:
+  en: 'Provides shared plan, context pickup, and progress update Skills through StateDock Remote MCP without executing tasks or scheduling agents; targets Harness 0.2.0-rc.2.'
+  zh: '通过 StateDock Remote MCP 提供共享计划、上下文恢复与进度更新 Skills，不执行任务或调度 Agent；适配 Harness 0.2.0-rc.2。'

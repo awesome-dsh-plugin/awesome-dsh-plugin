@@ -1,0 +1,6 @@
+url: https://github.com/1687210989/agent-clinic
+name: 1687210989/agent-clinic
+category: usage
+description:
+  en: 'Read-only clinic for DSH session logs: 22 named diagnostics (token waste, retry and failure loops, context bloat, cross-session amnesia, idle MCP servers and skills), each reported with a replayable evidence locator such as session.v4.jsonl.zstd#L101-L110, and each finding turned into an executable prescription — a profile-patch YAML snippet or a command with current to suggested values, risk, verification and source — plus a feedback command that retires a prescription you reject, after which the report states it was removed by your feedback. Zero dependencies, default zero egress, session files are never written.'
+  zh: 'DSH 会话日志的只读体检诊所：22 项具名诊断（token 浪费、重试与失败循环、上下文膨胀、跨会话失忆、闲置的 MCP 服务器与 skill 等），每条都附可复核的证据定位符（如 session.v4.jsonl.zstd#L101-L110）；每个问题给一条可执行处方（profile patch 片段或命令，含当前值到建议值、风险与验证方式），并支持标记「已拒绝」让该处方不再出现（报告会写明是你撤掉的）。零依赖、默认零外发、会话文件只读。'

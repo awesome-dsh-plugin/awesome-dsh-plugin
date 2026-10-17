@@ -1,0 +1,6 @@
+url: https://github.com/guhanfei-ai/dsh-zterm
+name: guhanfei-ai/dsh-zterm
+category: dev
+description:
+  en: 'SSH and JumpServer terminal plugin: real-machine read tools, human-initiated read-write operations, and session management from inside DSH.'
+  zh: 'SSH 与 JumpServer 终端插件：真实机器读工具、人工发起的读写操作，以及 DSH 内的会话管理。'

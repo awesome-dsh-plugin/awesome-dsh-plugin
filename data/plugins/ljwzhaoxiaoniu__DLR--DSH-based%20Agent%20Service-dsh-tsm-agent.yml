@@ -1,0 +1,6 @@
+url: https://github.com/ljwzhaoxiaoniu/DLR/tree/2.0/DSH-based%20Agent%20Service/dsh-tsm-agent
+name: ljwzhaoxiaoniu/DLR#dsh-tsm-agent
+category: tools
+description:
+  en: Mounts the tsm-core-dlr semantic service (LanceDB vectors + graph) as MCP tools and ships the scenario-independent DLR/TSM modeling skill, a service-status overlay and the agent rules; the service is a hard dependency and must be running before the bundle activates.
+  zh: 把 tsm-core-dlr 语义服务（LanceDB 向量 + 图）挂为 MCP 工具，并携带与场景无关的 DLR/TSM 建模技能、服务状态浮层与 agent 规则；该服务是硬依赖，须先运行、bundle 才能激活。

@@ -1,0 +1,6 @@
+url: https://github.com/ymck-x/dsh-session-continuity
+name: ymck-x/dsh-session-continuity
+category: session
+description:
+  en: Injects a small continuity pointer at the start of a new session, naming the previous session and any handoff file, and reuses DSH's own compaction summary when there is no handoff file.
+  zh: 新会话开始时注入一条很小的接续指针，说明上一个会话是谁、工作区有没有交接文档；没有交接文档时复用 DSH 已有的压缩摘要。

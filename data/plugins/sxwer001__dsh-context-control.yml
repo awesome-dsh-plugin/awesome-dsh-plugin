@@ -1,0 +1,7 @@
+url: https://github.com/sxwer001/dsh-context-control
+name: sxwer001/dsh-context-control
+category: memory
+description:
+  en: 'A context usage ring with configurable character-based automatic compaction, manual compaction, protected user requirements and recoverable original history for DSH 0.2.0-rc.2.'
+  zh: '上下文用量环，支持按字符自定义自动压缩阈值、手动压缩、保留用户要求和回查原文，适配 DSH 0.2.0-rc.2。'
+tarball: https://github.com/sxwer001/dsh-context-control/releases/download/v0.1.2/dsh-context-control-0.1.2.tgz

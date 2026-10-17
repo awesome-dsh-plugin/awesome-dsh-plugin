@@ -1,0 +1,6 @@
+url: https://github.com/dotdance/dsh-skill-scope
+name: dotdance/dsh-skill-scope
+category: skill
+description:
+  en: 'One-click toggles for skills and MCP at both global and project scope.'
+  zh: 'Skill 与 MCP 的全局 + 项目粒度一键启停开关。'
