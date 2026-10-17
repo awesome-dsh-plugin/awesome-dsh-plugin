@@ -1,0 +1,6 @@
+url: https://github.com/xrn1997/dsh-session-delete
+name: xrn1997/dsh-session-delete
+category: session
+description:
+  en: Adds a trash for DSH sessions.
+  zh: 给 DSH 会话提供一个回收站功能。
