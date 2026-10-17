@@ -1,0 +1,6 @@
+url: https://github.com/JinYihang1011/dsh-plugins/tree/main/dsh-win-notify
+name: JinYihang1011/dsh-plugins#dsh-win-notify
+category: notify
+description:
+  en: 'Sends a Windows notification when DSH raises an approval request or asks the user a question.'
+  zh: 'DSH 出现审批请求或用户问询时，发送一条 Windows 系统通知。'

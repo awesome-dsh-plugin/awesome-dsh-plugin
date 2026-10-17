@@ -1,0 +1,6 @@
+url: https://github.com/JinYihang1011/dsh-plugins/tree/main/dsh-tiger-talisman
+name: JinYihang1011/dsh-plugins#dsh-tiger-talisman
+category: dev
+description:
+  en: 'Read-only audit of plugin coexistence in DSH: which plugins occupy each slot, whether a slot is a list, an exclusive seat or a keyed one, what each plugin puts into head style sheets, which z-index layers are taken, and whether a plugin is mounted twice. Conflicts are reported; nothing is changed.'
+  zh: 'DSH 插件共存体检（只读）：谁占了哪个插槽、插槽是列表/独占/键控中的哪一类、各插件往 head 里放了什么样式、占了哪些 z-index 层级、有没有被重复挂载；只报告冲突，不改动任何东西。'
