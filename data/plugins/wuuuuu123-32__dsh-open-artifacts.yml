@@ -1,0 +1,6 @@
+url: https://github.com/wuuuuu123-32/dsh-open-artifacts
+name: wuuuuu123-32/dsh-open-artifacts
+category: ui
+description:
+  en: 'Adds an action to the session menu and the session title bar that opens the artifacts folder of that conversation: it reads the session log, works out which directories the conversation wrote files to, and opens them in Explorer.'
+  zh: '在会话列表菜单和会话标题栏加一个动作：直接打开这个对话的产物文件夹。它读会话日志算出该对话往哪些目录写过文件，再用资源管理器打开，不必自己翻工作区根目录。'
