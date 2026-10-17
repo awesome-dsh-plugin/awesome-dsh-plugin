@@ -1,5 +1,5 @@
-url: https://github.com/nnnanann/freeze-content-on-window-resize
-name: nnnanann/freeze-content-on-window-resize
+url: https://github.com/nnnanann/Deepseek-harness-freeze-content-on-window-resize
+name: nnnanann/Deepseek-harness-freeze-content-on-window-resize
 category: ui
 description:
   en: 'Freezes the DSH Web GUI reading column at a fixed width and re-aligns the reading position after the window is resized or zoomed.'
