@@ -1,0 +1,6 @@
+url: https://github.com/lzqzm/dsh-magical-lowcode-project
+name: lzqzm/dsh-magical-lowcode-project
+category: dev
+description:
+  en: 'Low-code project mode for DeepSeek Harness: browse a MagicalCoder-style project tree, track page/api push status, run source-*.js project scripts, assemble a sandbox page preview, lint before pushing, and import/export .dshpreset preset packages.'
+  zh: '低代码工程模式：在 DSH 里浏览低代码工程目录、查看 page/api 推送状态、运行 source-*.js 工程脚本、装配页面预览沙箱、推送前跑静态校验，并支持 Agent 预设包 .dshpreset 的导入导出。'
