@@ -2,5 +2,5 @@ url: https://github.com/OMSociety/dsh-ppt-maker
 name: OMSociety/dsh-ppt-maker
 category: docs
 description:
-  en: 'DSH plugin bundling the ppt-maker skill and eleven ppt_* tools: create, edit, reverse-engineer, QA-check and export PowerPoint presentations, writing the .pptx locally with a TypeScript engine.'
-  zh: '内含 ppt-maker 技能与十一个 ppt_* 工具的 DSH 插件：创建、编辑、逆向、质检与导出 PPT 演示文稿，本地 TypeScript 引擎直接产出 .pptx。'
+  en: 'DeepSeek Harness PowerPoint workbench: eleven ppt_* tools create, edit, undo/redo, QA-check, render and export presentations (.pptx) from a plain-text PPTD project, reverse-engineer an existing .pptx into PPTD, or patch one in place. Bundles the ppt-maker skill with five design-system families (academic, consulting, finance, promo, work), themes, layouts, animations and transitions, posters and infographics — for decks, slides, answer talks, reports and lecture handouts.'
+  zh: 'DeepSeek Harness 的 PPT 工作台：十一个 ppt_* 工具在纯文本 PPTD 工程上创建、编辑、撤销/重做、质检、渲染与导出 PowerPoint 演示文稿（.pptx），可把既有 .pptx 逆向成工程，或就地轻改（改字/换图/调页序）。内置 ppt-maker 技能与五族设计系统（学术、咨询、金融、促销、工作）、主题、版式、动画与转场，支持海报与信息图——适用于 PPT、幻灯片、答辩、汇报、讲义与演示文稿。'
