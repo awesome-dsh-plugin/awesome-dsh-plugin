@@ -1,0 +1,6 @@
+url: https://github.com/Su-1003/dsh-notify-sound
+name: Su-1003/dsh-notify-sound
+category: notify
+description:
+  en: Chimes and shows a toast in the top-right corner when a task finishes, waits for approval, or fails, in the DeepSeek Harness web GUI.
+  zh: 在 DeepSeek Harness 网页界面里，任务完成、等待授权或出错中断时响一声提示音，并在右上角弹出一条通知。
