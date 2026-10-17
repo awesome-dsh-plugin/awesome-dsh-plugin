@@ -1,0 +1,7 @@
+url: https://github.com/qiangweiliu/dsh-context/tree/main/plugin-skeleton
+name: qiangweiliu/dsh-context#plugin-skeleton
+category: session
+description:
+  en: 'Context-length monitoring and control for DeepSeek Harness. The host half is read-only: a /ctx command reports a session''s measured token usage against a configurable window budget with warn and error thresholds (plus /ctx <tokens> for a per-session override) and a settings section fed by a status route. The opt-in control half, mounted as one row inside an agent preset, enforces the budget through the official ctx.compaction seam — compacting at turn end or at step boundaries — and adds /ctx-compact. Nothing rewrites session history outside that seam.'
+  zh: 'DeepSeek Harness 的上下文长度监控与控制。宿主半侧只读：/ctx 按可配置的窗口预算报告会话实测 token 用量并给出警告／超限阈值（/ctx <tokens> 可按会话临时覆盖），另有由状态路由驱动的设置面板。可选的控制半侧以一行挂进 agent preset，通过官方 ctx.compaction seam 执行预算（轮末或 step 边界压缩），并提供 /ctx-compact。除该 seam 外不改写会话历史。'
+
