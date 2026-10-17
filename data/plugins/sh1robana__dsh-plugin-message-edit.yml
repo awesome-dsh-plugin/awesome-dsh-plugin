@@ -1,0 +1,7 @@
+url: https://github.com/sh1robana/dsh-plugin-message-edit
+name: sh1robana/dsh-plugin-message-edit
+category: session
+description:
+  en: 'Message and attachment editing with save-only updates, forked regeneration, and a version timeline for DSH desktop.'
+  zh: '面向 DSH 桌面端的消息与附件编辑，支持原地保存、分支重生成和版本时间线。'
+tarball: https://github.com/sh1robana/dsh-plugin-message-edit/releases/download/v0.3.0/dsh-plugin-message-edit-0.3.0.tgz

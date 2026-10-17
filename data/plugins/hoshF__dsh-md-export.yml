@@ -1,0 +1,6 @@
+url: https://github.com/hoshF/dsh-md-export
+name: hoshF/dsh-md-export
+category: session
+description:
+  en: 'Export the current session to clean Markdown from a button in the session header, through the native save dialog, with a CLI and an HTTP route over the same renderer; reads session logs directly (formats v0, v3 and v4) and declares no @deepseek-ai peer dependencies.'
+  zh: '在会话标题栏加入「导出 MD」按钮，经系统原生保存窗口把当前会话导出为干净的 Markdown，并提供共用同一渲染核心的命令行与 HTTP 路由；直接读取会话日志（支持 v0、v3、v4 格式），且不声明任何 @deepseek-ai peer 依赖。'

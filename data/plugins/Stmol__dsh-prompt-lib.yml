@@ -1,0 +1,6 @@
+url: https://github.com/Stmol/dsh-prompt-lib
+name: Stmol/dsh-prompt-lib
+category: session
+description:
+  en: 'Prompt library stored in the plugin config, with a Settings page and a composer picker: the ticked prompts are injected into every model step of that session, and a subagent inherits the selection of its nearest ancestor session.'
+  zh: '提示词库存放在插件配置中，含 Settings 页面与输入框选择器：勾中的提示词注入该会话的每一步模型调用，subagent 继承其最近祖先会话的选择。'

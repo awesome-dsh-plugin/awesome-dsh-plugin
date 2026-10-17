@@ -1,0 +1,6 @@
+url: https://github.com/xxszyh/dsh-gui-handoff
+name: xxszyh/dsh-gui-handoff
+category: skill
+description:
+  en: 'Hand a command-line-verified operation over to the GUI: drive it once, verify with ground truth, and hand back a self-contained illustrated tutorial.'
+  zh: '把命令行验证过的操作交接给图形界面：自己驱动一遍、用地面真值验证，并产出人能照着做的自包含带图教程。'

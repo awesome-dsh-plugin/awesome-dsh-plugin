@@ -3,3 +3,4 @@ name: JoblessJoe/smart-compaction
 category: session
 description:
   en: 'Lets the model trigger compaction itself at a safe point via a compact_now tool (works mid-turn), plus a context_status tool reporting real token usage against the session''s actual context window.'
+  zh: '让模型自己挑安全时机触发压缩：提供 compact_now 工具（回合进行中也能用），另有 context_status 工具，按会话真实的上下文窗口报告 token 占用。'
