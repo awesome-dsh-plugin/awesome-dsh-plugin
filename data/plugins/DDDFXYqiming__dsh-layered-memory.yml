@@ -1,0 +1,6 @@
+url: https://github.com/DDDFXYqiming/dsh-layered-memory
+name: DDDFXYqiming/dsh-layered-memory
+category: memory
+description:
+  en: "Cross-session memory for DeepSeek Harness. Facts and procedures live in Markdown files, project and global indexes stay in context, and entries carry structured identity and evidence."
+  zh: 为 DeepSeek Harness 提供跨会话记忆。事实与操作流程存在 Markdown 文件里，项目与全局索引常驻上下文，条目带结构标识与证据。

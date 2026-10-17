@@ -1,0 +1,6 @@
+url: https://github.com/DDDFXYqiming/dsh-session-recap
+name: DDDFXYqiming/dsh-session-recap
+category: session
+description:
+  en: "Generates a short recap when the DeepSeek Harness window loses focus or you switch sessions, shown above the composer when you return."
+  zh: 在 DeepSeek Harness 窗口失焦或切换会话时自动生成简短回顾，切回后在输入框上方显示当前任务、关键进展与下一步动作。
