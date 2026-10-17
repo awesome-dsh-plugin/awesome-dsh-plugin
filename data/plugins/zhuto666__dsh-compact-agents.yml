@@ -1,0 +1,6 @@
+url: https://github.com/zhuto666/dsh-compact-agents
+name: zhuto666/dsh-compact-agents
+category: session
+description:
+  en: 'Model-callable force compaction: squeeze every live session in the process (main session, sub-agents, AgentTeams members) past the automatic pressure threshold, queue busy targets, and auto-continue after an output-limit truncation.'
+  zh: 模型可调用的强制压缩：无视自动压力阈值压缩进程内所有活会话（主会话、子代理、AgentTeams 成员），忙则排队补压，被输出上限截断后自动续写。
