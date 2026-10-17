@@ -2,5 +2,5 @@ url: https://github.com/xrn1997/dsh-session-delete
 name: xrn1997/dsh-session-delete
 category: session
 description:
-  en: A recoverable trash for DSH sessions, with an explicit permanent delete. Deleting archives a visible session, unlinks it from its workspace ledger and moves the directory into `~/.dsh/session-trash/`, undoing the earlier steps if the move fails; restore returns it under its original directory name and archived state, or to the ungrouped list when its workspace no longer exists. Sessions can be batch-deleted from the DSH session list and batch-restored from the sidebar trash panel, which also shows each entry's on-disk size and detail. A parent session's subagent sessions move with it as one group, a running member refuses the whole group, and permanent delete and empty trash remain separate explicit actions.
-  zh: DSH 会话的可恢复回收站，另设显式的彻底删除。删除会归档可见会话、从工作区账本摘除并把目录整体搬进 `~/.dsh/session-trash/`，搬运失败时退回前面的改动；恢复按原目录名与删除前的归档态放回，原工作区已不存在时归入未分组。DSH 会话列表支持批量删除，侧栏回收站面板支持批量恢复，并显示每条会话的磁盘占用与详情。父会话的子会话整组跟随，任一成员在跑则整组拒绝；彻底删除与清空回收站是两个独立动作。
+  en: Adds a trash for DSH sessions.
+  zh: 给 DSH 会话提供一个回收站功能。
