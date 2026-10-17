@@ -119,6 +119,18 @@ export function tarballProblem(value) {
   return null
 }
 
+/** Returns a problem description, or null when the value is a usable Profile name. */
+export function profileProblem(value) {
+  if (typeof value !== 'string' || !/^[a-z0-9][a-z0-9-]{0,63}$/.test(value)) return 'must be a Profile name: lowercase letters, digits and hyphens'
+  if (value === 'web') return 'is the default — omit the field instead'
+  return null
+}
+
+/** The Profile an entry installs into. */
+export function profileFor(e) {
+  return e.profile ?? 'web'
+}
+
 // Every key an entry file may carry. `file` is added by readEntries, not by
 // the author.
 //
@@ -133,7 +145,7 @@ export function tarballProblem(value) {
 // but a reader could not have known that, and neither could the reviewer
 // without going to look. Refusing the key is how the file stays honest about
 // what it does.
-const ENTRY_KEYS = new Set(['url', 'name', 'category', 'description', 'tarball', 'file'])
+const ENTRY_KEYS = new Set(['url', 'name', 'category', 'description', 'tarball', 'profile', 'file'])
 
 /** Validate shape. Returns an array of human-readable problems (empty = ok). */
 export function validateEntries(entries) {
@@ -213,6 +225,16 @@ export function validateEntries(entries) {
       const bad = tarballProblem(e.tarball)
       if (bad) problems.push(`${at}: "tarball" ${bad}`)
     }
+
+    // Optional target Profile. Most plugins extend the everyday `web` Profile,
+    // which is what every listed command installs into. A package that is a
+    // complete Profile of its own (a different app built on dsh) must not be
+    // added to `web`: its bundle patch would reconfigure the user's main Profile.
+    // Like `tarball`, only the value comes from the entry; the build owns the command.
+    if (e.profile !== undefined) {
+      const bad = profileProblem(e.profile)
+      if (bad) problems.push(`${at}: "profile" ${bad}`)
+    }
   }
   return problems
 }
@@ -232,6 +254,7 @@ export function dumpEntry(e) {
   )
   const doc = { url: e.url, name: e.name, category: e.category, description }
   if (e.tarball) doc.tarball = e.tarball
+  if (e.profile) doc.profile = e.profile
   return yamlDump(doc, { lineWidth: -1, noRefs: true, quotingType: '"', forceQuotes: false })
 }
 

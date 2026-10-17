@@ -1,0 +1,7 @@
+url: https://github.com/flizzywine/dsh-tavern
+name: flizzywine/dsh-tavern
+category: fun
+description:
+  en: 'Standalone tavern Profile for SillyTavern-style text roleplay: imports character cards, world books, presets, regex scripts and MVU status bars, with multiple model providers and phone access. Requires exactly DSH 0.1.5-rc.2 and refuses to start on any other DSH version. Installs into its own `tavern` Profile and runs with `dsh --profile tavern`; it does not change the `web` Profile.'
+  zh: '独立的酒馆 Profile，用于 SillyTavern 式文字角色扮演：可导入人物卡、世界书、预设、正则脚本与 MVU 状态栏，支持多种模型服务和手机访问。仅适配 DSH 0.1.5-rc.2，其他版本的 DSH 上会拒绝启动。安装到独立的 `tavern` Profile，用 `dsh --profile tavern` 启动，不改动 `web` Profile。'
+profile: tavern
