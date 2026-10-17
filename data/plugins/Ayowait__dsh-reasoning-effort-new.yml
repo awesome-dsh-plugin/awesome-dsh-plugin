@@ -2,5 +2,5 @@ url: https://github.com/Ayowait/dsh-reasoning-effort-new
 name: Ayowait/dsh-reasoning-effort-new
 category: model
 description:
-  en: Two-level model picker that exposes a fixed five-level reasoning effort (off / low / medium / xhigh / max), with a purple glow effect at the highest level.
-  zh: 涓ょ骇妯″瀷閫夋嫨鍣紝鍥哄畾灞曠ず浜旀。鎺ㄧ悊寮哄害锛坥ff / low / medium / xhigh / max锛夛紝鏈€楂樻。甯︾传鑹茶緣鍏夌壒鏁堛€?
+  en: 'Fork of dsh-reasoning-effort with a two-level model picker in the composer: a provider list, a model pane that slides out beside it, search, and compact rows, alongside the reasoning-effort slider and its max-level effects.'
+  zh: 'dsh-reasoning-effort 的分支：输入框里的两级模型选择器（Provider 列表 + 右侧滑出的模型栏）、搜索与紧凑行，并保留推理强度滑块与最高档特效。'
