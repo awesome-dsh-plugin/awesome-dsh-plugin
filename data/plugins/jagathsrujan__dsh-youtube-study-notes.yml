@@ -1,0 +1,5 @@
+url: https://github.com/jagathsrujan/dsh-youtube-study-notes
+name: jagathsrujan/dsh-youtube-study-notes
+category: skill
+description:
+  en: 'Turns a YouTube link into study notes: pulls the captions the video already publishes, optionally reads on-screen content with a vision model, then asks for your own notes and merges everything into one document.'
