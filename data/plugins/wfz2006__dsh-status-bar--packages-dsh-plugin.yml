@@ -1,0 +1,7 @@
+url: https://github.com/wfz2006/dsh-status-bar/tree/main/packages/dsh-plugin
+name: wfz2006/dsh-status-bar#dsh-plugin
+category: ui
+description:
+  en: 'Floating glass status bar for DeepSeek Harness: a frameless always-on-top window that shows the running session progress, the current step and pending approvals or questions, then sends your click back to the host instead of deciding for you.'
+  zh: 'DSH 的桌面悬浮玻璃状态栏：常驻小窗显示当前会话的进度、正在执行的步骤与待处理的审批或提问，点一下把决定交回 DSH，不代你放行。'
+tarball: https://github.com/wfz2006/dsh-status-bar/releases/latest/download/dsh-glass-plugin.tgz
