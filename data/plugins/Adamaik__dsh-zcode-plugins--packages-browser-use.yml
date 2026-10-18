@@ -1,0 +1,6 @@
+url: https://github.com/Adamaik/dsh-zcode-plugins/tree/main/packages/browser-use
+name: Adamaik/dsh-zcode-plugins#browser-use
+category: browser
+description:
+  en: Playwright-backed browser tools ported from ZCode, bundling the control-browser and web-gui-tester skills and a real browser mounted in the DSH Desktop right sidebar for login-gated and anti-bot pages.
+  zh: 由 ZCode 移植的 Playwright 浏览器工具，附带 control-browser 与 web-gui-tester 技能，并在 DSH Desktop 右侧栏挂载真实浏览器，可处理需登录或有反爬的页面。
