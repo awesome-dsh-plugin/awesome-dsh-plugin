@@ -1,0 +1,6 @@
+url: https://github.com/WLX2007/DSH-SkillsHub
+name: WLX2007/DSH-SkillsHub
+category: skill
+description:
+  en: Skill center panel for the DSH web GUI - search online skill registries (SkillHub, skills.sh, GitHub), install skills to user or project roots, and manage local skills with enable, create, edit, delete and preview.
+  zh: DSH Web GUI 的技能中心面板——搜索网络技能市场（SkillHub、skills.sh、GitHub），一键安装技能到用户或项目根，并管理本地技能（启停、创建、编辑、删除、预览）。
