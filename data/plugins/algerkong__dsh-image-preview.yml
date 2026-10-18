@@ -1,0 +1,6 @@
+url: https://github.com/algerkong/dsh-image-preview
+name: algerkong/dsh-image-preview
+category: vision
+description:
+  en: 'Image previews for DSH sessions: read_image thumbnails plus user, assistant, Markdown and present images in a lightbox with zoom, rotate, pan, download, sidebar and native file actions.'
+  zh: '统一接管 DSH 会话里的图片预览：read_image 缩略图，以及用户、助手、Markdown 和 present 图片，支持缩放、旋转、拖动、下载、侧栏和原生文件操作的 Lightbox。'
