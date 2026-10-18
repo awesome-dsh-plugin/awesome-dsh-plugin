@@ -1,7 +1,7 @@
 url: https://github.com/azkbzxf/dsh-vscode-scrollbar
 name: azkbzxf/dsh-vscode-scrollbar
 category: ui
-tarball: https://github.com/azkbzxf/dsh-vscode-scrollbar/releases/download/v1.1.2/dsh-vscode-scrollbar-1.1.2.tgz
+tarball: https://github.com/azkbzxf/dsh-vscode-scrollbar/releases/download/v1.1.3/dsh-vscode-scrollbar-1.1.3.tgz
 description:
   en: "Gives the DSH conversation the Visual Studio Code editor chrome: a 14px always-visible scrollbar with a flat, translucent thumb in hover and drag states, plus a minimap preview column on the right that shows the whole conversation scaled down with a draggable viewport slider."
   zh: "把 DSH 对话界面改成 Visual Studio Code 编辑器风格：14px 常驻滚动条、扁平半透明滑块，并在右侧加上 Minimap（小地图）预览条，按比例显示整段对话，提供可拖动的视口滑块。"
