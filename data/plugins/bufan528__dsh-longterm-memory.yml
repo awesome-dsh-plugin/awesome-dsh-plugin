@@ -1,0 +1,6 @@
+url: https://github.com/bufan528/dsh-longterm-memory
+name: bufan528/dsh-longterm-memory
+category: memory
+description:
+  en: 'Local-first long-term memory stored as an Obsidian-compatible Markdown vault, with a sidebar management page, token-budgeted recall, a crash-safe journal, and four model tools.'
+  zh: '把长期记忆持久化为 Obsidian 兼容的 Markdown 仓库，提供侧边栏管理页面、按 token 预算的召回、可崩溃恢复的 journal 与四个模型工具。'
