@@ -1,7 +1,7 @@
 url: https://github.com/woshipixiu1234/dsh-invest-bundle
 name: woshipixiu1234/dsh-invest-bundle
 category: skill
-tarball: https://github.com/woshipixiu1234/dsh-invest-bundle/releases/download/v0.1.0/dsh-invest-bundle.tgz
+tarball: https://github.com/woshipixiu1234/dsh-invest-bundle/releases/download/v0.1.1/dsh-invest-bundle.tgz
 description:
   en: "Investment research pipeline with 6 tools (search, page fetch, source audit, claim verification, numeric rigor, channel health) and 22 skills — 21 adapted from ai-berkshire plus one orchestration skill."
   zh: "投研流水线：6 个工具（检索、正文抓取、来源审计、断言核验、数值严谨、通道体检），外加 22 个技能——21 个改造自 ai-berkshire，1 个总控编排技能。"
