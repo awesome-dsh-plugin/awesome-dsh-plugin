@@ -867,6 +867,7 @@ dsh plugin --profile web add dshmarket
 - [siberiah2o/dsh-plugin-terminal](https://github.com/siberiah2o/dsh-plugin-terminal) — 底部多标签终端面板（node-pty + xterm.js）：贴底全宽，输入框始终在终端上方。
 - [SiriLee/dsh-approval-hotkeys](https://github.com/SiriLee/dsh-approval-hotkeys) — Web UI 面板快捷键：在审批、提问、计划审查等交互面板上，Enter 触发确认操作、Esc 触发取消操作。
 - [sixzjd/dsh-folder-attach](https://github.com/sixzjd/dsh-folder-attach) — 在 DeepSeek Harness 网页版直接拖文件夹进输入框，不再提示「只有桌面端支持添加文件夹」。新增主机文件夹选择框、/folder 命令，拖入/粘贴自动解析为 @路径 引用。纯浏览器可用，无需桌面端。
+- [sjrslh/dsh-ui-zoom](https://github.com/sjrslh/dsh-ui-zoom) — Ctrl+滚轮整页缩放（60%–180%，记住比例），字体与界面等比放大；右下角常驻「设置」入口，Ctrl+0 复位。
 - [SkyblueeeLabs/dsh-iconic-launcher](https://github.com/SkyblueeeLabs/dsh-iconic-launcher) — 自定义 DeepSeek Harness 桌面快捷方式图标：选预设或上传图片，自动去除白底、生成多尺寸 ICO，一键写入桌面快捷方式。
 - [skyhancloud/dsh-client-ui-quote](https://github.com/skyhancloud/dsh-client-ui-quote) — 在网页聊天输入框上方为选中的 AI 回复内容添加可移除的引用横幅，随下一条消息一并发送。
 - [SmailPang/dsh-effort-slider](https://github.com/SmailPang/dsh-effort-slider) — 在原位置将 DSH 原生推理等级选项替换为可拖动的 Off、Low、High、Max 滑块，并保留官方模型选择流程。
