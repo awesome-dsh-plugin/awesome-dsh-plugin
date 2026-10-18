@@ -1,0 +1,6 @@
+url: https://github.com/watershow666/dsh-sidebar-icon-row
+name: watershow666/dsh-sidebar-icon-row
+category: ui
+description:
+  en: Turns the DeepSeek Harness sidebar panel entries and footer entries into one row of icon-only squares with hover names, adds four icon-size presets, and lists every sidebar entry with its own show/hide switch.
+  zh: 把 DSH 侧栏的面板入口与底部入口改成只显示图标的并排方块，悬停显示名称；提供四档图标大小，并把每个入口列进配置页逐一开关。
