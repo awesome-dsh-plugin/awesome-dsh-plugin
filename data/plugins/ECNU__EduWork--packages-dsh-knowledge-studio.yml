@@ -1,0 +1,6 @@
+url: https://github.com/ECNU/EduWork/tree/main/packages/dsh-knowledge-studio
+name: ECNU/EduWork#dsh-knowledge-studio
+category: docs
+description:
+  en: 'A workspace-based Studio for source-grounded reports, slides, tables, mind maps, quizzes, flashcards, audio and video, using DSH models and shared artifact services.'
+  zh: '基于工作区资料的 Studio，复用 DSH 模型与共享成果服务，制作报告、演示文稿、表格、思维导图、测验、闪卡及音视频。'
