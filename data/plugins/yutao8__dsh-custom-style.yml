@@ -2,5 +2,5 @@ url: https://github.com/yutao8/dsh-custom-style
 name: yutao8/dsh-custom-style
 category: ui
 description:
-  en: Adds a Custom CSS section to the DeepSeek Harness settings dialog, where the CSS files under $DSH_HOME/dsh-custom-style can be listed, edited, created and deleted, and dialog width, navigation width and body text size can be set with a few numbers. The stylesheet is re-applied about every two seconds, without patching the app.
-  zh: 在 DeepSeek Harness 的设置界面里加一栏「自定义样式」：列出、编辑、新建、删除 $DSH_HOME/dsh-custom-style 下的 CSS 文件，并用几个数字设置弹窗宽度、导航宽度与正文字号；样式约每两秒重新应用，无需改动应用本体。
+  en: Adds a Custom CSS section to Settings for adjusting dialog dimensions, font sizes, full-window wallpapers, and inspecting stable selectors.
+  zh: 在设置界面中调节弹窗尺寸、字号、全屏背景图与选择器速查，热注入自定义 CSS。
