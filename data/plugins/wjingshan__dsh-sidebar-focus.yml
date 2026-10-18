@@ -2,5 +2,5 @@ url: https://github.com/wjingshan/dsh-sidebar-focus
 name: wjingshan/dsh-sidebar-focus
 category: ui
 description:
-  en: Orders and folds the DSH left sidebar by what is actually running — a workspace floats to the top when one of its sessions starts and keeps that place when the session finishes, an idle workspace folds only after a short grace period, and six switches on the plugin's own page control each rule.
-  zh: 按实际运行状态排序与折叠 DSH 左侧栏：有会话开跑的工作区浮到最前，会话跑完仍留在原位，空闲的工作区要等一小段宽限才会折叠；六条规则各有开关，位于插件自己的详情页。
+  en: Orders and folds the DSH left sidebar by what is actually running — a workspace floats to the top when one of its sessions starts and keeps that place when the session finishes, only the N most recently active workspaces stay expanded, and six switches plus one count control each rule.
+  zh: 按实际运行状态排序与折叠 DSH 左侧栏：有会话开跑的工作区浮到最前，会话跑完仍留在原位，只有最近活跃的 N 个工作区保持展开；六个开关加一个数量控制各条规则。
