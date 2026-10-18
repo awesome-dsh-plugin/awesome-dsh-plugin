@@ -3,4 +3,4 @@ name: xiezouqu12/agent-trees
 category: ui
 description:
   en: Live multi-way tree of the current session's agents in the DeepSeek Harness conversation view and right sidebar, with status, plan progress, tokens, cost, and runtime on every card.
-  zh: 鍦?DeepSeek Harness 鐨勫璇濋〉鍜屽彸渚ц竟鏍忎腑浠ュ鍙夋爲灞曠ず褰撳墠浼氳瘽鐨勬櫤鑳戒綋宸ヤ綔娴侊紝姣忎釜鍗＄墖鏄剧ず鐘舵€併€佽鍒掕繘搴︺€乀oken銆佽垂鐢ㄥ拰杩愯鏃堕棿銆?
+  zh: 在 DeepSeek Harness 的对话页和右侧边栏中以多叉树展示当前会话的智能体工作流，每个卡片显示状态、计划进度、Token、费用和运行时间。
