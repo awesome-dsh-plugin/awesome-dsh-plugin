@@ -3,5 +3,5 @@ name: pk14742952-AD/dsh-host-rsi
 category: agi
 tarball: https://github.com/pk14742952-AD/dsh-host-rsi/releases/latest/download/dsh-host-rsi.tgz
 description:
-  en: 'DSH host plugin for local and API LLMs: per-use continual self-improvement with counter-reason self-checks, critic escalation, inverted-index memory retrieval, coding-loop convergence steering, and a five-state delivery guard.'
-  zh: '面向本地与 API 大模型的 DSH 宿主插件：每次使用持续自进化，带反问式自检、批评升级、倒排索引记忆检索、编码循环收敛提示与五态交付护栏。'
+  en: 'Reflective self-evolution plugin tuned for local Qwen3.8 27B/3.8 Flash and online APIs: (1) fixes the runaway deep-thinking ("thunderous overthinking") of Qwen3.8 27B/Flash to accelerate convergence and cut thinking time; (2) extensive monitoring and repairs for stuck states and infinite loops; (3) mostly general-purpose compatible with online APIs; (4) per-use continual self-improvement with counter-reason self-checks, critic escalation, inverted-index memory retrieval, coding-loop convergence steering, and a five-state delivery guard.'
+  zh: '面向本地QWEN3.8 27B/3.8FLASH以及线上API的优化反思进化插件：1解决QWEN3.8 27B/FLASH的雷霆大思考的问题，加速收敛，减少思考时间 2对部分卡住，死循环等情况做了大量的监控并修复 3 线上API 大多数可以通用 4每次使用持续自进化，带反问式自检、批评升级、倒排索引记忆检索、编码循环收敛提示与五态交付护栏。'
