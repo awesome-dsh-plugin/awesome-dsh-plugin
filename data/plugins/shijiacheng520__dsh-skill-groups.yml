@@ -1,0 +1,6 @@
+url: https://github.com/shijiacheng520/dsh-skill-groups
+name: shijiacheng520/dsh-skill-groups
+category: ui
+description:
+  en: Grouped skill picker for the composer. A button beside the input box opens a panel that browses every installed skill by scene (research, office, data, writing, media, dev), with auto-classification for new skills, Chinese annotations, search and drill-down; picking one inserts the /skill-name gesture.
+  zh: 输入框技能分组选择器：🧩按钮弹出按场景分组（科研、办公、数据、写作、媒体、开发）的技能面板，新装技能自动分类，中文说明、搜索与双层下钻，点选即插入 /技能名 手势。
