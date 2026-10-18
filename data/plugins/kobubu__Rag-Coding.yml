@@ -1,0 +1,5 @@
+url: https://github.com/kobubu/Rag-Coding
+name: kobubu/Rag-Coding
+category: memory
+description:
+  en: Local code memory with automatic source context, symbol lookup, vector search, and dependency graphs for JavaScript and TypeScript projects.
