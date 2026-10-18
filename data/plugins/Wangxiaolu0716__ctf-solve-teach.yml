@@ -1,0 +1,6 @@
+url: https://github.com/Wangxiaolu0716/ctf-solve-teach
+name: Wangxiaolu0716/ctf-solve-teach
+category: skill
+description:
+  en: 'Teaching-first CTF solving skill: narrates each step''s pattern, tool choice and underlying mechanism, then writes a reproducible writeup under solves/<challenge>/ gated by a nine-section check.'
+  zh: '教学式 CTF 解题技能：每步讲清套路、工具选型与底层原理，收尾在 solves/<题目名>/ 生成可复现 Writeup，并用九章质量门校验。'
