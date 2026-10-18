@@ -1,0 +1,6 @@
+url: https://github.com/xkk6663/dsh-live2d-mao
+name: xkk6663/dsh-live2d-mao
+category: fun
+description:
+  en: 'DSH desktop Live2D pet that needs no API key or token. 12-phase real-time state (planning/thinking/executing-tool/streaming/waiting-input/awaiting-approval/complete/error), tool-status bubble naming the tool in use, token-by-token streaming strip with code highlighting and scrollback, phase-coloured head badge with per-phase custom colours, per-model motion/expression slot binding, 8 built-in models, drag inertia, lock position, Shift-drag, 10-100% opacity, eye tracking, 7 event sounds.'
+  zh: 'DSH 桌面右下角的 Live2D 桌宠，无需 API Key/token：12 态实时工作状态(规划/思考中/执行工具/回复中/聆听中/待确认/完成/出错)、工具气泡(点名正在用的工具)、逐 token 流式横条(代码高亮/历史滚动)、状态徽标(每态颜色可自定义)、逐模型动作表情绑定、8 款内置模型、拖拽惯性/锁定位置/Shift 防误拖/不透明度/视线跟随、7 类音效。'
