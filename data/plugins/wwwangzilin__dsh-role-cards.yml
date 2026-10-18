@@ -1,0 +1,6 @@
+url: https://github.com/wwwangzilin/dsh-role-cards
+name: wwwangzilin/dsh-role-cards
+category: ui
+description:
+  en: 'Replaces the new-session hero with a combined picker: role cards for the agent presets and a workspace card, collapsed into capsule buttons that expand into two scrollable rows.'
+  zh: '把新建会话界面的选择器换成组合面板：角色预设卡与工作区卡各自成排，折叠时是胶囊按钮，展开后是两行可滚动的紧凑卡片。'
