@@ -1,0 +1,7 @@
+url: https://github.com/zirscard/dsh-ocr
+name: zirscard/dsh-ocr
+category: vision
+description:
+  en: 'Registers one `doc_ocr` tool for scanned PDFs and images: it returns per-page text with confidence, financial-table rows with a balance-sheet tie-out check, or contract-clause hits (type, page, quote). Runs locally on RapidOCR (PaddleOCR PP-OCRv4 ONNX models), discovers an OCR-capable Python, limits concurrent OCR processes, and marks numbers that fail the tie-out instead of inventing them.'
+  zh: '注册一个 `doc_ocr` 工具处理扫描件 PDF 与图片：返回逐页文本与置信度、带资产负债表平衡勾稽的财务报表行，或合同条款命中（类型/页码/引用）。本机 RapidOCR（PaddleOCR PP-OCRv4 ONNX 模型）运行，自动选择可用的 Python、限制并发 OCR 进程，勾稽不平的数字只标出、不编造。'
+tarball: https://github.com/zirscard/dsh-ocr/releases/download/v0.1.0/dsh-ocr.tgz
