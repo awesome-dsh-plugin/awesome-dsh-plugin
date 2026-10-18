@@ -1,0 +1,7 @@
+url: https://github.com/azkbzxf/dsh-vscode-scrollbar
+name: azkbzxf/dsh-vscode-scrollbar
+category: ui
+tarball: https://github.com/azkbzxf/dsh-vscode-scrollbar/releases/download/v1.0.0/dsh-vscode-scrollbar-1.0.0.tgz
+description:
+  en: "Restyles the DSH conversation scrollbar to match the Visual Studio Code editor: a 14px always-visible bar with a flat, translucent thumb plus hover and drag states, in light and dark mode."
+  zh: "把 DSH 对话界面的滚动条改成 Visual Studio Code 编辑器样式：14px 常驻滚动条、扁平半透明滑块，带悬停与拖动态，浅色与深色主题分别配色。"
