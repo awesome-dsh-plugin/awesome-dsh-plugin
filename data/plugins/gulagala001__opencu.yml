@@ -1,0 +1,7 @@
+url: https://github.com/gulagala001/opencu
+name: gulagala001/opencu
+category: browser
+description:
+  en: "Computer use with browser automation, native monitoring, approvals, and image annotations for DSH."
+  zh: "为 DSH 提供浏览器操作、原生监看、审批与图像批注。"
+tarball: https://github.com/gulagala001/opencu/releases/download/v2.0.1-dsh.0.2.1-rc.2/opencu-2.0.1-dsh.0.2.1-rc.2.tgz
