@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-site-log-check
+name: PerryLink/dsh-site-log-check
+category: tools
+description:
+  en: "Checks supervision logs for cross-day continuity and for on-site supervision coverage, against GB/T 50319-2013 and other published documents. Reports gaps and coverage differences for a human to review."
+  zh: "依据 GB/T 50319-2013 等公开文件，核对监理日志的跨日连续性，以及旁站监理的覆盖情况。列出缺漏与覆盖差异供人复核。"

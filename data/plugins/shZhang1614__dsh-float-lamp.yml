@@ -1,0 +1,6 @@
+url: https://github.com/shZhang1614/dsh-float-lamp
+name: shZhang1614/dsh-float-lamp
+category: ui
+description:
+  en: "Windows floating status lamp outside the DSH window: a borderless always-on-top glowing orb on a fully transparent background — green with a breathing halo while tasks run, orange shaking for approval, blue floating for your input, dim grey idle, dark grey host offline; hovering lists each session's latest task, drag to move, and the lamp self-extinguishes within seconds when the plugin is switched off."
+  zh: "悬浮在 DSH 应用之外的 Windows 状态灯：无边框置顶发光圆灯，背景完全透明——绿灯光晕呼吸表示运行中、橙灯抖动待授权、蓝灯漂浮待你交互、灰灯空闲、暗灰宿主离线；悬停逐行列出各会话正在运行的任务，可拖动记忆位置，插件被关闭后数秒内自动熄灭。"

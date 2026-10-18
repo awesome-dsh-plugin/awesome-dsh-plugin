@@ -1,0 +1,6 @@
+url: https://github.com/xfy2412/dsh-time-reminder
+name: xfy2412/dsh-time-reminder
+category: tools
+description:
+  en: 'Gives the agent its own clock: per-session time readings whose precision the agent can change at runtime, elapsed-time counters, and one-shot countdowns that survive a host restart.'
+  zh: 为 agent 提供它自己的时钟：按会话注入时间读数且精度可由 agent 运行时调整，并附带累计计时器与跨宿主重启可靠的一次性倒计时。

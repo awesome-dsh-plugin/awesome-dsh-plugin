@@ -1,0 +1,6 @@
+url: https://github.com/Firefox2100/dsh-ai-providers/tree/main/packages/dsh-ai-localai
+name: Firefox2100/dsh-ai-providers#localai
+category: model
+description:
+  en: LocalAI provider for language models, embeddings, reranking, speech, and image generation with LocalAI-specific controls in DSH. Requires Firefox2100/dsh-ai-providers#runtime to be installed and enabled.
+  zh: 为 DSH 提供语言模型、嵌入、重排序、语音和图像生成能力及 LocalAI 专用控制项的 LocalAI 提供商。需要安装并启用 Firefox2100/dsh-ai-providers#runtime。

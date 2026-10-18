@@ -1,0 +1,6 @@
+url: https://github.com/zongyanbai/dsh-context-continuum
+name: zongyanbai/dsh-context-continuum
+category: session
+description:
+  en: 'Replaces rolling narrative summaries with an append-only session index, so early facts survive compaction verbatim and shadowed text stays retrievable by anchor.'
+  zh: '把上下文压缩从滚动重写的叙事摘要改为只追加的会话索引：早期事实逐字保留，被压缩掉的原文可按锚点取回。'

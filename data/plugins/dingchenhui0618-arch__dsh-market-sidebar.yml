@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-market-sidebar
+name: dingchenhui0618-arch/dsh-market-sidebar
+category: ui
+description:
+  en: 'Adds the dshmarket plugin market to the DSH sidebar as a panel of its own, ordered above the built-in Plugins entry. Clicking the entry renders the market through the client service dshmarket publishes for hosts, so the catalog, category filters, comments and install and update flows are the ones dshmarket ships rather than a copy of them. Nothing to learn or configure: the panel is the market, with its own sidebar entry, label in Chinese or English to match the interface language, and icon. If dshmarket is not loaded the panel says so instead of failing client composition, and its locale keys, slots and style tag are released when the plugin unloads.'
+  zh: '把 dshmarket 插件市场作为独立面板放进 DSH 侧边栏，排在「插件」之上。点击即通过 dshmarket 对外发布的 host 端 client service 渲染市场本身，因此目录、分类筛选、评论与安装/更新流程都是 dshmarket 自己的，而不是一份副本。无需学习或配置：这个面板就是市场，有自己的侧边栏条目、跟随界面语言的中英文名与图标。dshmarket 未加载时面板会明说，而不是让客户端组装失败；插件卸载时其语言键、插槽与 style 标签一并释放。'

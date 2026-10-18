@@ -1,0 +1,7 @@
+url: https://github.com/nico-zhuang/dsh-chat-file-actions
+name: nico-zhuang/dsh-chat-file-actions
+category: ui
+tarball: https://github.com/nico-zhuang/dsh-chat-file-actions/releases/download/v0.4.0/dsh-chat-file-actions-0.4.0.tgz
+description:
+  en: Open and copy local files and web links from a chat turn.
+  zh: 打开和复制本轮的本地文件与网页链接。

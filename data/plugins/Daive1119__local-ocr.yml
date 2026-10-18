@@ -1,0 +1,6 @@
+url: https://github.com/Daive1119/local-ocr
+name: Daive1119/local-ocr
+category: vision
+description:
+  en: 'Registers one `ocr` tool for text-only models: it runs the offline script bundled in the repo over a single image or PDF and returns the recognized text — Windows native OCR first, then RapidOCR, then Tesseract. Recognition runs locally with no network request and no API key. Needs Python 3.11 on PATH plus `pip install winocr pillow` (winocr is the preferred engine; RapidOCR and Tesseract are fallbacks). Per-line results for images, per-page results for PDFs.'
+  zh: '为纯文本模型注册一个 `ocr` 工具：调用仓库自带的离线脚本识别单张图片或 PDF 并返回文字——Windows 原生 OCR 优先，其次 RapidOCR，最后 Tesseract；识别过程在本机完成，不发网络请求、不需要 API key。需自备 PATH 上的 Python 3.11 并 `pip install winocr pillow`（winocr 为首选引擎，RapidOCR 与 Tesseract 为兜底）。图片返回逐行结果，PDF 返回逐页结果。'

@@ -1,0 +1,7 @@
+url: https://github.com/x-cores/dsh-chess-game/tree/main/packages/chess-float
+name: x-cores/dsh-chess-game#chess-float
+category: fun
+description:
+  en: Two-player chess in a draggable floating window with full rules, undo and PGN export.
+  zh: 可拖动悬浮窗双人国际象棋，完整规则、悔棋与 PGN 棋谱导出。
+tarball: https://github.com/x-cores/dsh-chess-game/releases/download/v1.2.0/dsh-chess-float-1.2.0.tgz

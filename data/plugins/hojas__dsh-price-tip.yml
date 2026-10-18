@@ -1,0 +1,6 @@
+url: https://github.com/hojas/dsh-price-tip
+name: hojas/dsh-price-tip
+category: usage
+description:
+  en: Keeps a pricing-period badge in the sidebar footer of the Web UI. It shows whether the DeepSeek API is currently in an off-peak or peak period, plus how long until the next switch. Click it to open the rules, the price table currently in force, and the balance of the signed-in DeepSeek account.
+  zh: 在 Web 界面侧栏底部常驻一个价格时段标记，显示 DeepSeek API 当前处于 空闲时段还是高峰时段、距下次切换还有多久；点开是规则说明、当前生效的价目表，以及已登录 DeepSeek 账户的余额。

@@ -1,0 +1,6 @@
+url: https://github.com/RestRegular/dsh-memory/tree/main/packages/dsh-memory
+name: RestRegular/dsh-memory#dsh-memory
+category: memory
+description:
+  en: 'All-in-one local memory: JSONL files per scope (session, project, global, or a custom name) with per-scope dedup, four model tools (memory_save, memory_search, memory_list, memory_forget), automatic recall injected into agent pre-step, and a settings panel. Retrieval combines lexical IDF with a local embedding backend, which the panel can install and manage itself.'
+  zh: 一体化本地记忆：按作用域（会话、项目、全局或自定义名）各一个 JSONL 文件、作用域内按内容去重，四个模型工具（memory_save / memory_search / memory_list / memory_forget），自动召回注入 agent 的 pre-step，并带一个设置面板。检索是词法 IDF 与本地向量后端的组合，向量后端可由面板一键安装并托管。

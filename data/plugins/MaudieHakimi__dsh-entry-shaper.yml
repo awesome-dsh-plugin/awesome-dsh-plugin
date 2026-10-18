@@ -1,0 +1,6 @@
+url: https://github.com/MaudieHakimi/dsh-entry-shaper
+name: MaudieHakimi/dsh-entry-shaper
+category: usage
+description:
+  en: 'Proxy provider that reshapes each outbound payload through a per-category op chain before forwarding upstream, keeping the prompt prefix monotonic between turns so unchanged history is not re-paid at full price; op names are transports (exec / http / inline) and accept user-defined algorithms.'
+  zh: '代理 provider：每次出网前按类别跑 op 链重塑 payload 再转交上游，使 prompt 前缀在回合之间保持单调、未变的历史不必按全价重付；op 名只表示传输方式（exec / http / inline），可接入用户自定义算法。'

@@ -1,0 +1,6 @@
+url: https://github.com/liumorrisclaw/dsh-composer-input-history
+name: liumorrisclaw/dsh-composer-input-history
+category: ui
+description:
+  en: Recalls messages you already sent in the DSH composer with ArrowUp, and restores the draft you were writing with ArrowDown.
+  zh: '在 DSH 输入框用 ↑ 调回本会话已发送的消息，用 ↓ 前翻并在末尾恢复原来正在写的草稿。'

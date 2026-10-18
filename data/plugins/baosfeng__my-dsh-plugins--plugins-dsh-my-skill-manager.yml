@@ -1,0 +1,6 @@
+url: https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-my-skill-manager
+name: baosfeng/my-dsh-plugins#dsh-my-skill-manager
+category: skill
+description:
+  en: 'Skill management: lists skills in global and per-project scopes and toggles each one per project; a disabled skill is not injected into that session (npm: `dsh-my-skill-manager`).'
+  zh: 'Skill 管理：按全局 / 项目两个范围查看 skill 列表，并按项目启用或禁用；被禁用的 skill 不会注入该会话（npm: `dsh-my-skill-manager`）。'

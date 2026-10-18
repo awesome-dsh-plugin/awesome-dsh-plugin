@@ -1,0 +1,6 @@
+url: https://github.com/fuqiancheng/dsh-commandcode-quota
+name: fuqiancheng/dsh-commandcode-quota
+category: usage
+description:
+  en: 'Command Code balance and quota panel: a status row under the composer showing the available balance and the 5-hour, weekly and monthly windows.'
+  zh: 'Command Code 余额与额度面板：在输入框下方显示可用余额，以及 5 小时、每周、每月三个额度窗口。'

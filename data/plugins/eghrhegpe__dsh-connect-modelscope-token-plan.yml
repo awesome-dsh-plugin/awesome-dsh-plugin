@@ -1,0 +1,6 @@
+url: https://github.com/eghrhegpe/dsh-connect-modelscope-token-plan
+name: eghrhegpe/dsh-connect-modelscope-token-plan
+category: usage
+description:
+  en: 'Shows ModelScope API-Inference free-tier usage as a plugin card on the DSH Plugins page: the official Magicube balance plus, for calls made through this plugin, per-model counts, a daily trend, and a 429 rate-limit and error event list. A default-off switch registers ModelScope models as a DSH LLM provider so they appear in the model picker.'
+  zh: '在 DSH 的 Plugins 页以插件卡显示魔搭 API-Inference 免费额度的使用情况：官方魔粒余额，加上经本插件的调用按模型的次数、按日趋势、429 限频与错误事件列表。另有一个默认关闭的开关，把魔搭模型注册为 DSH 的 LLM 提供方，注册后出现在模型选择器中。'

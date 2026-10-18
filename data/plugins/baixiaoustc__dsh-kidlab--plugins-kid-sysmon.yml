@@ -1,0 +1,6 @@
+url: https://github.com/baixiaoustc/dsh-kidlab/tree/main/plugins/kid-sysmon
+name: baixiaoustc/dsh-kidlab#kid-sysmon
+category: fun
+description:
+  en: "System monitor for kids: a single card summary of CPU, memory and disk."
+  zh: "系统小监控：一张卡片看 CPU、内存、磁盘概况。"
