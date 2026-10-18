@@ -2,6 +2,5 @@ url: https://github.com/qiangweiliu/dsh-context/tree/main/plugin-skeleton
 name: qiangweiliu/dsh-context#plugin-skeleton
 category: session
 description:
-  en: 'Context-length monitoring and control for DeepSeek Harness. The host half is read-only: a /ctx command reports a session''s measured token usage against a configurable window budget with warn and error thresholds (plus /ctx <tokens> for a per-session override) and a settings section fed by a status route. The opt-in control half, mounted as one row inside an agent preset, enforces the budget through the official ctx.compaction seam — compacting at turn end or at step boundaries — and adds /ctx-compact. Nothing rewrites session history outside that seam.'
-  zh: 'DeepSeek Harness 的上下文长度监控与控制。宿主半侧只读：/ctx 按可配置的窗口预算报告会话实测 token 用量并给出警告／超限阈值（/ctx <tokens> 可按会话临时覆盖），另有由状态路由驱动的设置面板。可选的控制半侧以一行挂进 agent preset，通过官方 ctx.compaction seam 执行预算（轮末或 step 边界压缩），并提供 /ctx-compact。除该 seam 外不改写会话历史。'
-
+  en: 'Context monitoring, compaction, and prompt/tool control for DeepSeek Harness: token breakdowns, trend/event views, budget-based auto-compaction, /ctx controls, and session/global toggles. Read-only monitoring; only the official seam rewrites history.'
+  zh: '为 DeepSeek Harness 提供上下文监控、压缩与提示词管理：用概览、趋势、事件视图查看 token 用量、提示词、工具、历史占比；按预算和阈值在轮末或 step 边界自动压缩，/ctx-compact 手动触发。支持 /ctx 查看用量、调整会话上限；按会话或全局开关提示词与工具，新增内容可追加到用户消息末尾或写入系统提示词。监控只读，压缩仅走官方 seam，不改写 seam 外历史。'
