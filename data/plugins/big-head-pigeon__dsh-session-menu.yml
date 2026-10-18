@@ -2,5 +2,5 @@ url: https://github.com/big-head-pigeon/dsh-session-menu
 name: big-head-pigeon/dsh-session-menu
 category: ui
 description:
-  en: Adds mark-unread, copy session info, reveal in Finder or open with your IDE, and permanent delete (with child sessions) to the DSH sidebar session menu, plus error and unread status dots, hover-card details, one-click delete for archived rows, and a settings panel that switches each menu item on or off.
-  zh: 给 DSH 侧边栏的会话右键菜单补上标记未读、复制会话信息、在访达中显示或换 IDE 打开、永久删除（连子会话一起删），并给会话行加上报错与未读状态点、悬浮卡信息、归档行的一键删除，以及一个可逐项开关菜单的设置面板。
+  en: Adds mark-unread, copy session info, reveal in Finder or open with your IDE, and permanent delete (with child sessions) to the DSH sidebar session menu, plus error and unread status dots, hover-card details, one-click delete for archived rows, and a settings panel that switches each menu item on or off; the interface is available in English and Chinese.
+  zh: 给 DSH 侧边栏的会话右键菜单补上标记未读、复制会话信息、在访达中显示或换 IDE 打开、永久删除（连子会话一起删），并给会话行加上报错与未读状态点、悬浮卡信息、归档行的一键删除，以及一个可逐项开关菜单的设置面板；界面提供中英文两套文案。
