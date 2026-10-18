@@ -667,11 +667,12 @@ function langRedirect(current) {
   return `\n<script>{const p=new URLSearchParams(location.search);const v=p.get('lang');${cases}}</script>`
 }
 
-const INDEX_PANEL = `    <section class="panel">
-      <h2>__T_INDEX_TITLE__</h2>
-      <p>__T_INDEX_BODY__</p>
-      <p class="note">__T_INDEX_NOTE__</p>
-    </section>`
+const INDEX_LINE = `    <div class="indexline">
+      <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8 13l2 2 4-4"/></svg>
+      <span class="lead">__T_INDEX_LEAD__ <code translate="no">awesome-dsh-plugin.com/index.json</code></span>
+      <button class="copy" type="button" data-cmd="https://awesome-dsh-plugin.com/index.json">__T_INDEX_COPY__</button>
+    </div>`
+
 
 const master = fs.readFileSync('site/template.html', 'utf8')
 
@@ -704,7 +705,7 @@ for (const loc of LOCALES) {
     // this site's CLS. The hero total is the full list. The search counter
     // starts at the baked slice so a no-JS visitor is not told every plugin is
     // on the page; the script rewrites it to the full total before first paint.
-    .replaceAll('__INDEX_PANEL__', () => indexBuilt ? INDEX_PANEL : '')
+    .replaceAll('__INDEX_LINE__', () => indexBuilt ? INDEX_LINE : '')
     .replaceAll('__CARD_COUNT__', () => String(N))
     .replaceAll('__FALLBACK_COUNT__', () => String(Math.min(FALLBACK_CARDS, N)))
     .replaceAll(AD_HEAD_TOKEN, () => adHead())
