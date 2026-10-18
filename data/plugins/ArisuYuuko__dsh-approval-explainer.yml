@@ -3,5 +3,5 @@ name: ArisuYuuko/dsh-approval-explainer
 category: security
 tarball: https://github.com/ArisuYuuko/dsh-approval-explainer/releases/latest/download/dsh-approval-explainer.tgz
 description:
-  en: 'Adds a model-written annotation to DSH escalation approval prompts explaining what the code does, what the model intends, how risky it is and why, and what each choice means, plus a diagnostics page at /dsh-approval/diag.'
-  zh: '为 DSH 的提权审批弹窗加一份由模型生成的注释，说明这段代码做什么、模型想达成什么、风险多大以及原因、每个选项意味着什么，并提供 /dsh-approval/diag 诊断页。'
+  en: 'Writes a model-generated annotation into every DSH escalation approval prompt — what the command does, what the model intends, how risky it is and why, and what each choice means — and keeps a searchable history of past approvals at /dsh-approval/history, with a diagnostics page at /dsh-approval/diag.'
+  zh: '为 DSH 的每一次提权审批弹窗加一份由模型生成的注释：这段代码做什么、模型想达成什么、风险多大以及原因、每个选项意味着什么；并提供 /dsh-approval/history 历史授权查询（可搜索、可筛选、记录当时选了什么）与 /dsh-approval/diag 诊断页。'
