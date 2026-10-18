@@ -1,0 +1,6 @@
+url: https://github.com/alexltr/dsh-vba-bridge
+name: alexltr/dsh-vba-bridge
+category: tools
+description:
+  en: 'Read, edit, export and verify Excel VBA projects through a real Excel COM instance: modules, UserForm code, procedure lists and .frm/.frx exports.'
+  zh: '通过真实 Excel COM 读写、导出并校验 Excel VBA 工程：模块、窗体代码、过程清单与 .frm/.frx 导出。'
