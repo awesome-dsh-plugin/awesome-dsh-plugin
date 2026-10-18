@@ -1,6 +1,0 @@
-url: https://github.com/moon16u/dsh-pouch/tree/main/packages/dsh-plugin-web-search-tavily
-name: moon16u/dsh-pouch#dsh-plugin-web-search-tavily
-category: tools
-description:
-  en: 'Real-time web search provider backed by the Tavily REST API, implementing the official ctx.web.registerSearchProvider contract with credentials resolved from TAVILY_API_KEY or the DSH credentials service.'
-  zh: '基于 Tavily REST API 的真实网络搜索提供方，标准实现官方 ctx.web.registerSearchProvider，凭据来自 TAVILY_API_KEY 或 DSH Credentials 服务。'
