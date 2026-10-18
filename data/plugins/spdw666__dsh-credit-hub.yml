@@ -1,0 +1,7 @@
+url: https://github.com/spdw666/dsh-credit-hub
+name: spdw666/dsh-credit-hub
+category: model
+description:
+  en: Native multi-platform accounts and model routing with staggered check-ins, event notifications, and quota forecasts.
+  zh: 原生多平台账号与模型路由管理，支持错峰签到、事件通知与额度预测。
+tarball: https://github.com/spdw666/dsh-credit-hub/releases/latest/download/dsh-credit-hub.tgz
