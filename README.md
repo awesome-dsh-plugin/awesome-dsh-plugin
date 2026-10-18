@@ -5295,7 +5295,6 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Security & Permissions
 
-- [xiezouqu12/dsh-info-records](https://github.com/xiezouqu12/dsh-info-records) - Encrypted local credential vault for DeepSeek Harness: a native sidebar panel for website and app logins, an `info_records` tool that looks up the right account before the agent signs in, opt-in capture from chat, per-record manual-only mode, and AES-256-GCM storage whose data key is kept in Windows DPAPI, the macOS Keychain, or the Linux Secret Service (a local key file is the documented fallback). No network access.
 - [030611/dsh-telemetry-redactor](https://github.com/030611/dsh-telemetry-redactor) - Redacts supported secret patterns from the `session-telemetry/record` export copy before configured telemetry backends receive it.
 - [030611/dsh-verification-receipt](https://github.com/030611/dsh-verification-receipt) - Writes local JSONL summaries of per-turn tool counts and coarse verification signals without storing prompts, tool arguments, or result text.
 - [030611/qiushi-dsh-evidence-audit](https://github.com/030611/qiushi-dsh-evidence-audit) - Appends local hash-chained JSONL receipts for tool results and session events without storing prompts, tool arguments, result text, or raw session IDs.
