@@ -1,0 +1,6 @@
+url: https://github.com/minutiae3/dsh-thinking-zh
+name: minutiae3/dsh-thinking-zh
+category: identity
+description:
+  en: Forces the model to write its internal reasoning in Simplified Chinese.
+  zh: 让模型的内部思考（reasoning）使用简体中文书写。
