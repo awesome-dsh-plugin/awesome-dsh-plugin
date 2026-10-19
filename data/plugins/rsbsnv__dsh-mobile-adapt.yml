@@ -2,5 +2,5 @@ url: https://github.com/rsbsnv/dsh-mobile-adapt
 name: rsbsnv/dsh-mobile-adapt
 category: ui
 description:
-  en: "Phone-friendly layout: the sidebar becomes a slide-out drawer with swipe gestures and adjustable width, layered back key, bigger tap targets, keyboard avoidance and a 15px font floor."
-  zh: "手机端适配：侧栏（侧边栏）变成可滑动的抽屉，支持手势开关与宽度调节；返回键逐层退出、按钮放大、键盘不挡输入框、字号不小于 15px。"
+  en: "Turns the desktop layout into a thumb-friendly one: swipe drawer sidebar with adjustable width, layered back key, bigger tap targets, keyboard avoidance and a 15px font floor."
+  zh: "把电脑版界面调成适合手指用的样子：侧栏变可滑动的抽屉、宽度可调、返回键逐层退出、按钮放大、键盘不挡输入框、字号不小于 15px。"
