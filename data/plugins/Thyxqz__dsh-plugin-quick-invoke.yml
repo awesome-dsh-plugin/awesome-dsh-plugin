@@ -1,0 +1,6 @@
+url: https://github.com/Thyxqz/dsh-plugin-quick-invoke
+name: Thyxqz/dsh-plugin-quick-invoke
+category: ui
+description:
+  en: 'Adds an installed-plugin picker beside the composer: drag a plugin name into the prompt at the drop point, open a draggable plugin rail in the right sidebar by double-clicking the entry, and choose which plugins (and remarks) appear in Settings.'
+  zh: '在输入框旁增加已安装插件选择器：把插件名拖到提示词的落点插入，双击入口在右侧边栏打开可拖动插件栏，并可在设置中选择显示哪些插件、填写备注。'
