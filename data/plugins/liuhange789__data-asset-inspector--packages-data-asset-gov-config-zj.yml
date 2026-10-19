@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/gov-config-zj
+name: liuhange789/data-asset-inspector#gov-config-zj
+category: tools
+description:
+  zh: "浙江省政务服务数据资产登记配置包，内嵌 GB/T 47949-2026 等浙江省相关政策依据，覆盖政务服务标准管理与办理流程要求。"
+  en: "Zhejiang government service config pack embedding GB/T 47949-2026 and Zhejiang provincial policy basis for registration compliance."
