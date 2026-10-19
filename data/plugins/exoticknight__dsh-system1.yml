@@ -2,5 +2,5 @@ url: https://github.com/exoticknight/dsh-system1
 name: exoticknight/dsh-system1
 category: tools
 description:
-  en: Provides a typed System One decision service and agent tool for yes/no checks, classification, and scoring.
-  zh: 为 DeepSeek Harness 提供类型化的 System One 判断服务与智能体工具，支持是非判断、分类和评分。
+  en: Asks System One models for yes/no, choice, score, and image-box judgments with probabilities, via an agent tool or a plugin service.
+  zh: 调用 System One 模型做是非、选择、评分和图片定位判断并返回概率，提供 agent 工具和插件服务。
