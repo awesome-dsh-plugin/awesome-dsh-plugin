@@ -2,5 +2,5 @@ url: https://github.com/eghrhegpe/dsh-connect-agnes-token-plan
 name: eghrhegpe/dsh-connect-agnes-token-plan
 category: usage
 description:
-  en: 'One-tap connect Agnes language, image-generation and video models into DSH, with image recognition and thinking level filled in automatically (off by default). After signing in, you can see the console quota windows (5-hour requests, weekly requests, daily images, video) and account-wide cumulative usage. AgnesCode desktop models can be connected too, with tokens re-signing in on expiry (needs AGNES_PASSWORD) and rate-limit hits backing off on their own.'
-  zh: '一键接入 Agnes 的语言、出图、视频模型到 DSH，自动填入图片识别与思考强度（默认关）；登录后，可看控制台额度窗口（5 小时请求、每周请求、每日图片、视频）、账号累计用量；也支持接入 AgnesCode 桌面端模型，令牌到期自动重登（需 AGNES_PASSWORD），撞限额自动退避重试。'
+  en: 'One-tap connect Agnes language, image and video models into DSH (off by default), with image recognition and thinking level filled in automatically. After signing in to the Agnes console, you can see the quota windows (5-hour requests, weekly requests, daily images, video), account-wide cumulative usage, and a usage pill beside the input box. AgnesCode desktop models can be connected too (Windows only), with tokens re-signing in on expiry (needs AGNES_PASSWORD) and rate-limit hits backing off on their own.'
+  zh: '一键接入 Agnes 的语言、生图、视频模型到 DSH（默认关），自动填入图片识别与思考强度；登录 Agnes 控制台后，可看额度窗口（5 小时请求、每周请求、每日图片、视频）、账号累计用量，以及输入框旁的用量胶囊；也支持接入 AgnesCode 桌面端模型（仅 Windows），令牌到期自动重登（需 AGNES_PASSWORD），撞限额自动退避重试。'
