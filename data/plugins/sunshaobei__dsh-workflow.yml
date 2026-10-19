@@ -1,0 +1,6 @@
+url: https://github.com/sunshaobei/dsh-workflow
+name: sunshaobei/dsh-workflow
+category: workflow
+description:
+  en: MCode workflow UI and runtime integration for DeepSeek Harness — declarative workflow runs inside sessions with a host-driver bridge, projection layer and a cordis profile patch for drop-in install.
+  zh: 面向 DeepSeek Harness 的 MCode 工作流 UI 与运行时集成——在会话内以声明式方式运行工作流，内置宿主驱动桥接（host-driver）、投影层（projection）与 cordis profile 补丁，安装即用。
