@@ -1,0 +1,6 @@
+url: https://github.com/JeffTsuiCUG/dsh-connect-minimaxcode
+name: JeffTsuiCUG/dsh-connect-minimaxcode
+category: model
+description:
+  en: Connects the locally signed-in MiniMax Code desktop app to DSH, reusing its sign-in for Anthropic-compatible model access with a dynamic model catalog.
+  zh: 将本机已登录的 MiniMax Code 桌面 App 模型接入 DSH，复用其登录态，提供 Anthropic 兼容接入与动态模型目录。
