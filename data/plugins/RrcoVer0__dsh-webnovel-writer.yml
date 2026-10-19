@@ -1,0 +1,6 @@
+url: https://github.com/RrcoVer0/dsh-webnovel-writer
+name: RrcoVer0/dsh-webnovel-writer
+category: skill
+description:
+  en: Adds file-backed Chinese web-fiction planning, chapter writing, consistency review, rollback, and style-profile skills.
+  zh: 为现有 Agent 添加基于文件记忆的中文网文策划、逐章写作、一致性审校、回滚与文风画像技能。

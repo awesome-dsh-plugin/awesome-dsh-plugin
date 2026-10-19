@@ -2,5 +2,5 @@ url: https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-pet-bridge
 name: wsxwj123/dsh-plugins#dsh-pet-bridge
 category: notify
 description:
-  en: 'Bridge dsh session status to the cc-pet desktop pet bubble: thinking, tool calls, and completion in real time.'
-  zh: dsh ↔ cc-pet 桌面宠物状态桥：把会话状态（思考中 / 读取文件 / 运行命令 / 完成）实时推送到桌面宠物气泡。
+  en: 'Bridge dsh session status to the cc-pet desktop pet bubble: thinking, tool calls, and completion in real time. Ships on npm as `dsh-pet-bridge`.'
+  zh: dsh ↔ cc-pet 桌面宠物状态桥：把会话状态（思考中 / 读取文件 / 运行命令 / 完成）实时推送到桌面宠物气泡。npm 包名 `dsh-pet-bridge`。

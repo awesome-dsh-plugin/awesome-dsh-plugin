@@ -1,0 +1,6 @@
+url: https://github.com/BOWLUNA/dsh-zcode-breaker
+name: BOWLUNA/dsh-zcode-breaker
+category: session
+description:
+  en: 'Rapid-refill circuit breaker for DeepSeek Harness automatic compaction. It refuses a compaction that would be futile — the context refilled within fewer than N tool turns M times in a row, which the unbounded step-pressure trigger cannot detect — and instead of burning a summarization call on every step it reports the situation with advice, usually that a single read or tool output was too large. Shows state and re-arms through /compaction-breaker, and injects one prompt section so the model relays it to the user. Covers host-plane sessions through its profile bundle; ordinary sessions need one row replaced inside an agent preset.'
+  zh: '自动压缩的 rapid-refill 熔断器。当上下文在连续 M 次压缩中、每次都于不足 N 个工具轮次内又满时，拒绝这次徒劳的压缩——无上限的步压力触发检测不到这种情形——并且不做「每一步都白烧一次摘要调用」的事，而是把情况连同建议一起报告出来，通常是一次读取或一份工具输出过大。用 /compaction-breaker 查看状态与重新武装，并注入一个 prompt 段让模型把它转述给用户。宿主平面会话由 profile bundle 覆盖；普通会话需要在 agent preset 里替换一行。'

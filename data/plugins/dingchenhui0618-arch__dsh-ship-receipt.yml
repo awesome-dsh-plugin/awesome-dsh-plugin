@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-ship-receipt
+name: dingchenhui0618-arch/dsh-ship-receipt
+category: tools
+description:
+  en: 'A shareable delivery receipt for a project hand-off. The `ship_receipt` tool measures what it can and records what it was told, then sorts every line into three zones: verified (evidence this run produced and that reproduces elsewhere — a command that actually ran with its exit code, a file hash for a file that is under version control, a scan that found files, a git ref present in the recorded remote), local-only (true on this machine alone — uncommitted changes, unpushed commits, an artifact no one else can see), and unverified (no evidence, including every sentence a human typed). A claim with no evidence keeps its label and leaves the body blank rather than printing the claim; declares the commit and branch, artifact byte sizes and sha256 with PNG dimensions, and the three pre-push checks.'
+  zh: '项目收尾时生成一张可公开的交付回执。`ship_receipt` 工具自己测量能测的、记录被告知的，再把每一条硬性分进三区：已验证（本次采集到、且能在别处复现的证据——真跑过的命令与退出码、已入版本库文件的哈希、确实扫到文件的扫描、本地记录的远端里存在的 git 引用）、仅本地（只在这台机器上成立——未提交改动、未推送提交、别人看不到的产物）、未验证（没有证据，包括人写的任何一句话）。没有证据的声明只留标签、正文留空，而不是把声明照原样印出来；回执里含分支与 commit、产物的字节数与 sha256（PNG 附带宽高），以及推送前三步检查的结论。'

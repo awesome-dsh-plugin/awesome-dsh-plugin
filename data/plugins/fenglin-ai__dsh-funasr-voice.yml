@@ -1,0 +1,6 @@
+url: https://github.com/fenglin-ai/dsh-funasr-voice
+name: fenglin-ai/dsh-funasr-voice
+category: voice
+description:
+  en: 'Offline voice input for the DSH Web UI: mic to local FunASR (SenseVoiceSmall), one-click install, no cloud.'
+  zh: 'DSH Web 本地离线语音输入：麦克风经本地 FunASR（SenseVoiceSmall）识别后填入输入框，支持一键安装，全程离线。'

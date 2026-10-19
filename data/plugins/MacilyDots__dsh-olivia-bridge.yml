@@ -1,0 +1,7 @@
+url: https://github.com/MacilyDots/dsh-olivia-bridge
+name: MacilyDots/dsh-olivia-bridge
+category: fun
+description:
+  en: 'Reimplements the shut-down BSide: Olivia Lin letter API on loopback so the game client keeps sending and receiving letters: every incoming letter is delivered to one persistent DSH agent session, and the reply is written back to the local letter store.'
+  zh: '在回环地址上复现已关停的《BSide: Olivia Lin》信件 API，让游戏客户端照常收发信件：每封来信投进同一个持久 DSH agent 会话，回信写回本地信件库。'
+tarball: https://github.com/MacilyDots/dsh-olivia-bridge/releases/latest/download/dsh-olivia-bridge.tgz

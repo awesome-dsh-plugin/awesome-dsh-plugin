@@ -1,0 +1,6 @@
+url: https://github.com/Yochor-Debug/dsh-float
+name: Yochor-Debug/dsh-float
+category: usage
+description:
+  en: 'Floating DeepSeek API balance capsule for the DSH Web GUI: a corner pill shows the remaining balance, clicking expands the total, granted and topped-up breakdown, double-clicking refreshes at once and the balance polls every 5 seconds; the host half proxies /user/balance so the key never reaches the browser.'
+  zh: 'DSH Web GUI 的 DeepSeek API 余额浮窗：角落胶囊显示余额，点击展开总额、赠金与充值明细，双击立即刷新且每 5 秒轮询一次；宿主侧代理 /user/balance，密钥不下发到浏览器。'

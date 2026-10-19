@@ -11,11 +11,15 @@
  * Usage: node scripts/build-site.mjs
  */
 import fs from 'node:fs'
+import { createHash } from 'node:crypto'
 import { execSync } from 'node:child_process'
 import { Marked } from 'marked'
 import LOCALES from '../site/locales.mjs'
 import COMMENTS from '../site/comments.mjs'
 import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
+import { buildMarketIndex } from './lib/market-index.mjs'
+import { firstAddedDate } from './lib/added-dates.mjs'
+import { slugOf, termOf } from './lib/terms.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
@@ -169,6 +173,23 @@ const N = ordered.length
 // ever written back; git history is the ledger.
 const dates = fs.existsSync(DATES_FILE) ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8')) : {}
 const npmMap = fs.existsSync(NPM_MAP_FILE) ? JSON.parse(fs.readFileSync(NPM_MAP_FILE, 'utf8')) : {}
+
+// The plugin market index (format 1) that hosts read as a market source.
+// Built here rather than in a second pass so the page can tell whether THIS
+// deploy actually carries one: a push build restores the probe cache, and a
+// cache from before the publish-time field existed lists nothing — in that
+// case the panel is left out instead of advertising a URL that 404s.
+const builtIndex = buildMarketIndex({ entries: readEntries(), npmMap, locales: LOCALES, origin: ORIGIN })
+const indexBuilt = builtIndex.index.plugins.length > 0
+// Minified, not pretty: the host that reads this has a fixed 15 s fetch
+// timeout (dsh 0.2.1 `fetchTimeoutMs`), and one-space indentation added 25%
+// to a document already close to that budget on slow networks.
+if (indexBuilt) fs.writeFileSync('docs/index.json', JSON.stringify(builtIndex.index) + '\n')
+{
+  const { index, skipped } = builtIndex
+  const unpublished = skipped.noNpm + skipped.noVersion
+  console.log(`index: ${index.plugins.length} listed (${unpublished} entries have no npm package or version yet${skipped.noPublishTime > 0 ? `, ${skipped.noPublishTime} await a publish-time probe` : ''})`)
+}
 const starsMap = fs.existsSync('data/stars.json') ? JSON.parse(fs.readFileSync('data/stars.json', 'utf8')) : {}
 // Missing (not yet bootstrapped, or an entry with no npm package) is a
 // normal, permanent state for most entries — unlike stars.json, absence
@@ -176,6 +197,9 @@ const starsMap = fs.existsSync('data/stars.json') ? JSON.parse(fs.readFileSync('
 // already refuses to WRITE the file on a bad run, so whatever is on disk is
 // the last known-good result, or nothing yet.
 const downloadsMap = fs.existsSync('data/downloads.json') ? JSON.parse(fs.readFileSync('data/downloads.json', 'utf8')) : {}
+// Capability disclosure (#401), from probe-capabilities.mjs. An entry absent
+// here was NOT scanned — the surfaces print that as 未检出, never as clean.
+const capabilitiesMap = fs.existsSync('data/capabilities.json') ? JSON.parse(fs.readFileSync('data/capabilities.json', 'utf8')) : {}
 
 // Publishing is the last chance to notice that a data file arrived empty, and
 // the only one that matters to consumers: docs/ is deployed straight to Pages,
@@ -211,13 +235,77 @@ if (process.env.SKIP_PUBLISH_CHECKS !== '1' && ordered.length && starsHave / ord
 if (ordered.some((e) => !dates[e.url])) {
   const log = execSync(`git log --reverse --date-order --format=%x01%cI -p -- ${LOCALES[0].readme}`,
     { encoding: 'utf8', maxBuffer: 1 << 28 })
+  // A `+` line is not by itself evidence of an addition. Editing an entry's
+  // description rewrites its README line, and the regeneration that follows
+  // shows the same URL as a removal AND a re-addition in one commit. When that
+  // rewritten line happens to be the first one the log ever shows, the entry
+  // gets dated to its last wording change.
+  //
+  // It happens whenever the original line arrived in a merge commit, whose diff
+  // `git log -p` does not emit — so the next REWRITE is the first visible `+`.
+  // Which means the bug fires precisely when a maintainer is working: merging a
+  // description update re-dates the entry it just touched. Measured on
+  // 2026-09-15, two entries moved to that day within one session
+  // (siyuan-codex-bridge 09-11 → 09-15, thinking-token-stat 09-06 → 09-15).
+  //
+  // So a commit that both removes and re-adds a URL is a MODIFICATION and may
+  // not claim the date; the entry is left for the yml ledger below, which knows
+  // when the entry's own file first appeared. Deliberately narrow: entries whose
+  // first visible `+` is a plain addition keep the value they already had
+  // published, even where the yml ledger would say something earlier.
+  const LINE = /^(-|\+)- \[[^\]]+\]\((https:\/\/github\.com\/[^)]+)\)\s*[-—]\s/
   let cur = null
-  for (const line of log.split('\n')) {
-    if (line.startsWith('\x01')) cur = new Date(line.slice(1).trim()).toISOString()
-    else if (line.startsWith('+') && !line.startsWith('+++')) {
-      const m = line.match(/^\+- \[[^\]]+\]\((https:\/\/github\.com\/[^)]+)\)\s*[-—]\s/)
-      if (m && !dates[m[1]]) dates[m[1]] = cur
+  // Within one commit's diff the `-` and its `+` can appear in either order, so
+  // both sides are collected first and judged once the commit ends.
+  let addedHere = new Set()
+  let removedHere = new Set()
+  const rewritten = new Set() // urls whose assigned commit was a rewrite
+  const flush = () => {
+    for (const url of addedHere) {
+      if (dates[url]) continue
+      dates[url] = cur
+      // Only when THIS commit supplied the date does its being a rewrite
+      // matter. A rewrite that lands after a genuine addition changes nothing,
+      // and flagging it would drag correct dates backwards.
+      if (removedHere.has(url)) rewritten.add(url)
     }
+    addedHere = new Set()
+    removedHere = new Set()
+  }
+  for (const line of log.split('\n')) {
+    if (line.startsWith('\x01')) {
+      flush()
+      cur = new Date(line.slice(1).trim()).toISOString()
+      continue
+    }
+    const m = line.match(LINE)
+    if (!m) continue
+    if (m[1] === '-') removedHere.add(m[2])
+    else addedHere.add(m[2])
+  }
+  flush()
+  // One `--name-only` pass builds the whole yml ledger, rather than a `git log`
+  // per entry, so the fallback below costs ~1.4s instead of minutes.
+  const ymlLog = execSync(
+    'git log --diff-merges=first-parent --diff-filter=A --format=%x01%cI --name-only -- data/plugins/',
+    { encoding: 'utf8', maxBuffer: 1 << 28 },
+  )
+  const ymlAdded = new Map()
+  let ymlCur = null
+  for (const line of ymlLog.split('\n')) {
+    if (line.startsWith('\x01')) { ymlCur = new Date(line.slice(1).trim()).toISOString(); continue }
+    // Newest → oldest, so later assignments overwrite earlier ones and the map
+    // settles on each file's oldest addition.
+    if (line.startsWith('data/plugins/')) ymlAdded.set(line, ymlCur)
+  }
+  // Only the rewritten ones consult it here — the rest keep whatever the README
+  // pass gave them, including the ~120 entries where the yml ledger would say
+  // something a day or two earlier. Those dates are already published, and
+  // re-dating them is a decision about published data, not a bug fix. This pass
+  // repairs the regression; it does not re-adjudicate the back catalogue.
+  for (const url of rewritten) {
+    const y = ymlAdded.get(entryFiles[url])
+    if (y && y < dates[url]) dates[url] = y
   }
   // Second source: the entry's own file under data/plugins/. The README line
   // used to be the only ledger because the README was the only thing a
@@ -238,10 +326,24 @@ if (ordered.some((e) => !dates[e.url])) {
       try {
         // Oldest "added" commit for that path. Not `-1`, which git applies
         // before --reverse and would hand back the newest instead.
-        const out = execSync(`git log --diff-filter=A --format=%cI -- ${JSON.stringify(file)}`,
-          { encoding: 'utf8' }).trim().split('\n').filter(Boolean)
-        const iso = out[out.length - 1]
-        if (iso) dates[e.url] = new Date(iso).toISOString()
+        // A canonical filename can first appear in a merge, whose diff the
+        // default log hides: `--diff-filter=A` cannot match a merge because
+        // git computes no diff for one unless asked. Merging #2662 renamed its
+        // three entry files to match their urls and regenerated their README
+        // lines inside the merge, so the files exist under those names in
+        // neither parent and the README pass above is blind to them too. Both
+        // ledgers came up empty and the build refused to run — correctly,
+        // since stamping "now" would make dates flap — which took main's site
+        // build down for four days and turned 130 unrelated pull requests red
+        // on a step no author controls.
+        //
+        // Diagnosed independently, before the maintainer got to it, in #4708,
+        // #4709, #4786, #4821 and #4871; #4821 named the cause down to the
+        // three renamed entries. The lookup itself now lives in
+        // lib/added-dates.mjs so #4756's regression tests can drive it —
+        // this path had no test at all when it took the site down.
+        const iso = firstAddedDate(file)
+        if (iso) dates[e.url] = iso
       } catch { /* not committed yet — falls through to the error below */ }
     }
     stillUndated = ordered.filter((e) => !dates[e.url])
@@ -355,7 +457,22 @@ for (const e of ordered) {
   // entries with no npm package at all — a coverage gap, not a zero.
   // Consumers must tell "not published" apart from "published, unused".
   e.downloads = downloadsMap[e.url]?.downloads ?? null
-  e.slug = e.sub ? `${e.repo}--${e.sub.replaceAll('/', '-')}` : e.repo
+  e.capabilities = capabilitiesMap[e.url]?.capabilities ?? null
+  e.capabilityRedLines = capabilitiesMap[e.url]?.redLines ?? null
+  e.capabilityCheckedAt = capabilitiesMap[e.url]?.scannedAt ?? null
+  // registry dist-tags.latest from probe-npm.mjs. null when not on npm, OR
+  // when probed but no latest tag was available. A published row whose map
+  // entry still lacks the `version` key has not been backfilled yet — after
+  // backfill the key is always present (string or null). Consumers: prefer
+  // `npm` for "on the registry"; treat missing/null version as "unknown",
+  // not as "github-only".
+  // Surfaced for dsh-market's discover list (dsh-market#348).
+  e.version = e.npm ? (npmMap[e.url]?.version ?? null) : null
+  // The detail-page path, the sitemap entry and the comment term all read
+  // this one derivation (scripts/lib/terms.mjs): the term is the join key a
+  // plugin's discussion is filed under, and it has to match the path the
+  // pages are published at, character for character.
+  e.slug = slugOf(e.url)
 }
 
 const hreflangs = [
@@ -396,14 +513,30 @@ const byDownloads = (a, b) => {
   return (b.stars ?? -1) - (a.stars ?? -1)
 }
 
-// download-ranked card grid; `only` limits to one category (category pages)
-function buildRows(loc, only) {
-  const group = ordered
-    .filter((e) => !only || e.cat === only)
-    .slice()
-    .sort(byDownloads)
-  return group.map((e) => {
-    const cmd = e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit
+// The HTML grid is only the first screen (#6105). Mounting every card made a
+// ~7.6 MB document and froze low-end browsers; the rest of the list is windowed
+// at runtime from catalog.json. No-JS visitors still get this slice, in the
+// same order the full grid uses.
+const FALLBACK_CARDS = 24
+
+function ranked(only) {
+  return ordered.filter((e) => !only || e.cat === only).slice().sort(byDownloads)
+}
+
+// Match the detail page: prefer a verified npm package, then the declared
+// prebuilt tarball, and use Git only when neither is available. Both static
+// cards and the virtual catalog use this function.
+function cardCmd(e) {
+  return e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit)
+}
+
+// download-ranked card grid; `only` limits to one category (category pages).
+// `limit` is the no-JS / first-paint slice. Omit it and the grid is the whole list.
+function buildRows(loc, only, limit) {
+  const group = ranked(only)
+  const rows = limit ? group.slice(0, limit) : group
+  return rows.map((e) => {
+    const cmd = cardCmd(e)
     const short = shortName(e.name)
     // data-* carry what the in-page sort and filters need. Absent attribute,
     // not a zero: `downloads` is null for entries with no npm package at all,
@@ -445,6 +578,49 @@ function buildRows(loc, only) {
 // disambiguation. Titles lead with this: nobody searches the owner prefix,
 // and it costs a dozen characters of a budget that truncates around sixty.
 const shortName = (name) => (name.includes('/') ? name.slice(name.indexOf('/') + 1) : name)
+
+// One catalog per page. The homepage needs every category because its chips
+// filter in place; a category page only needs its own rows. Sharing the full
+// file made a small category download the whole list (~2 MB) to throw most of
+// it away. Card-chrome strings travel with the file: they are locale-specific
+// and must not be interpolated into the page script, where an apostrophe
+// would break the string.
+function catalogPayload(loc, only) {
+  return {
+    install: loc.strings.INSTALL_BTN,
+    market: loc.strings.MENU_MARKET,
+    marketHint: loc.strings.MENU_MARKET_HINT,
+    cli: loc.strings.MENU_CLI,
+    copy: loc.COPY_TEXT,
+    copyLabel: loc.COPY_LABEL,
+    dlTitle: loc.strings.P_DOWNLOADS,
+    items: ranked(only).map((e) => {
+      const short = shortName(e.name)
+      return {
+        cat: e.cat,
+        tag: loc.categories[e.cat],
+        dl: e.downloads,
+        stars: e.stars,
+        added: e.added,
+        npm: e.npm ? 1 : 0,
+        name: short.toLowerCase(),
+        owner: e.owner,
+        short,
+        slug: e.slug,
+        desc: e.descs[loc.code] || '',
+        cmd: cardCmd(e),
+        href: `${loc.urlPath}p/${e.slug}/`,
+      }
+    }),
+  }
+}
+
+// The query pins the CDN copy to this build. Pages caches the HTML briefly;
+// an unhashed catalog.json would keep serving the previous list after a deploy.
+function catalogHref(path, json) {
+  const v = createHash('sha256').update(json).digest('hex').slice(0, 8)
+  return `${path}?v=${v}`
+}
 
 // Highest-starred entries in a category, for its meta description. Stars come
 // from a probe that only runs in CI, so a local build ranks by list order
@@ -494,12 +670,22 @@ function langRedirect(current) {
   return `\n<script>{const p=new URLSearchParams(location.search);const v=p.get('lang');${cases}}</script>`
 }
 
+const INDEX_LINE = `    <div class="indexline">
+      <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8 13l2 2 4-4"/></svg>
+      <span class="lead">__T_INDEX_LEAD__ <code translate="no">cdn.jsdelivr.net/npm/dsh-plugin-catalog/index.json</code></span>
+      <button class="copy" type="button" data-cmd="https://cdn.jsdelivr.net/npm/dsh-plugin-catalog/index.json">__T_INDEX_COPY__</button>
+    </div>`
+
+
 const master = fs.readFileSync('site/template.html', 'utf8')
 
 for (const loc of LOCALES) {
+  const catalog = catalogPayload(loc)
+  const catalogJson = JSON.stringify(catalog)
+  const catalogUrl = catalogHref(loc.urlPath + 'catalog.json', catalogJson)
   let page = master
   page = page.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, () => `<script type="application/ld+json">${ldSafe(jsonld(ORIGIN + loc.urlPath))}</script>`)
-  page = page.replace(/(<ol class="dex" id="dex">)[\s\S]*?(<\/ol>)/, (m, a, b) => `${a}\n\n${buildRows(loc)}\n\n  ${b}`)
+  page = page.replace(/(<ol class="dex" id="dex"[^>]*>)[\s\S]*?(<\/ol>)/, (m, a, b) => `${a}\n\n${buildRows(loc, null, FALLBACK_CARDS)}\n\n  ${b}`)
   page = page.replace(/(<div class="filters" id="filters">)[\s\S]*?(<\/div><!--\/filters-->)/, (m, a, b) => `${a}\n${buildChips(loc)}\n    ${b}`)
   page = page
     .replaceAll('__LANG__', () => loc.htmlLang)
@@ -514,10 +700,23 @@ for (const loc of LOCALES) {
     .replaceAll('__PRIVACY__', () => loc.privacyPath)
     .replaceAll('__LANG_REDIRECT__', () => langRedirect(loc))
     .replaceAll('__FEED__', () => loc.feed)
+    .replaceAll('__CATALOG__', () => catalogUrl)
+    // Rendered server-side rather than left at 0 for the client to correct.
+    // The counters sit inside the search bar and the line under the hero; going
+    // from "0 / 0" to "2662 / 2662" on load widened both and reflowed the row
+    // around them, which is what made #count the single largest contributor to
+    // this site's CLS. The hero total is the full list. The search counter
+    // starts at the baked slice so a no-JS visitor is not told every plugin is
+    // on the page; the script rewrites it to the full total before first paint.
+    .replaceAll('__INDEX_LINE__', () => indexBuilt ? INDEX_LINE : '')
+    .replaceAll('__CARD_COUNT__', () => String(N))
+    .replaceAll('__FALLBACK_COUNT__', () => String(Math.min(FALLBACK_CARDS, N)))
     .replaceAll(AD_HEAD_TOKEN, () => adHead())
   for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
   fs.mkdirSync(loc.out.split('/').slice(0, -1).join('/'), { recursive: true })
   fs.writeFileSync(loc.out, page)
+  fs.writeFileSync(loc.out.replace(/index\.html$/, 'catalog.json'), catalogJson)
+  console.log(`catalog ${loc.code}: ${catalog.items.length} items, ${(catalogJson.length / 1024).toFixed(0)} KB`)
 }
 
 // Category pages: /{cat}/ per locale
@@ -530,9 +729,13 @@ const catJsonld = (url, id) => JSON.stringify({
   itemListElement: ordered.filter((e) => e.cat === id).map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name, url: e.url })),
 })
 for (const loc of LOCALES) {
+  const catBytes = []
   for (const id of CAT_IDS) {
     const n = ordered.filter((e) => e.cat === id).length
     if (!n) continue
+    const catCatalog = catalogPayload(loc, id)
+    const catCatalogJson = JSON.stringify(catCatalog)
+    const catCatalogUrl = catalogHref(`${loc.urlPath}${id}/catalog.json`, catCatalogJson)
     const url = `${ORIGIN}${loc.urlPath}${id}/`
     const catHreflangs = [
       ...LOCALES.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}${id}/">`),
@@ -540,7 +743,8 @@ for (const loc of LOCALES) {
     ].join('\n')
     let page = master
     page = page.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, () => `<script type="application/ld+json">${ldSafe(catJsonld(url, id))}</script>`)
-    page = page.replace(/(<ol class="dex" id="dex">)[\s\S]*?(<\/ol>)/, (m, a, b) => `${a}\n\n${buildRows(loc, id)}\n\n  ${b}`)
+    page = page.replace('data-only=""', `data-only="${id}"`)
+    page = page.replace(/(<ol class="dex" id="dex"[^>]*>)[\s\S]*?(<\/ol>)/, (m, a, b) => `${a}\n\n${buildRows(loc, id, FALLBACK_CARDS)}\n\n  ${b}`)
     page = page.replace(/(<div class="filters" id="filters">)[\s\S]*?(<\/div><!--\/filters-->)/, (m, a, b) => `${a}\n${buildChipLinks(loc, id)}\n    ${b}`)
     page = page
       .replaceAll('__LANG__', () => loc.htmlLang)
@@ -558,11 +762,24 @@ for (const loc of LOCALES) {
     .replaceAll('__PRIVACY__', () => loc.privacyPath)
       .replaceAll('__LANG_REDIRECT__', () => '')
       .replaceAll('__FEED__', () => loc.feed)
+      .replaceAll('__CATALOG__', () => catCatalogUrl)
+      // A category page renders only its own rows, so its counters start from
+      // that number, not the site total. See the index block for why these are
+      // server-rendered. The search counter starts at the baked slice.
+      .replaceAll('__CARD_COUNT__', () => String(n))
+      .replaceAll('__FALLBACK_COUNT__', () => String(Math.min(FALLBACK_CARDS, n)))
       .replaceAll(AD_HEAD_TOKEN, () => adHead())
     for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
     const outDir = loc.out.replace(/index\.html$/, '') + id
     fs.mkdirSync(outDir, { recursive: true })
     fs.writeFileSync(`${outDir}/index.html`, page)
+    fs.writeFileSync(`${outDir}/catalog.json`, catCatalogJson)
+    catBytes.push(catCatalogJson.length)
+  }
+  if (catBytes.length) {
+    const min = Math.min(...catBytes)
+    const max = Math.max(...catBytes)
+    console.log(`category catalogs ${loc.code}: ${catBytes.length} files, ${(min / 1024).toFixed(0)}–${(max / 1024).toFixed(0)} KB`)
   }
 }
 
@@ -683,14 +900,23 @@ for (const loc of LOCALES) {
     // "conf…" is the one line a searcher reads before deciding to click. Prefer
     // ending on a sentence, else the last word; CJK has no spaces, so the word
     // fallback simply does not fire there and the hard cut stands.
-    const metaDesc = (() => {
-      if (desc.length <= 155) return desc
-      const head = desc.slice(0, 152)
+    const clampMeta = (s) => {
+      if (s.length <= 155) return s
+      const head = s.slice(0, 152)
       const stop = Math.max(head.lastIndexOf('. '), head.lastIndexOf('。'), head.lastIndexOf('；'), head.lastIndexOf('; '))
-      if (stop > 90) return desc.slice(0, stop + 1).trim()
+      if (stop > 90) return s.slice(0, stop + 1).trim()
       const space = head.lastIndexOf(' ')
       return (space > 90 ? head.slice(0, space) : head).trimEnd() + '…'
-    })()
+    }
+    // A twelve-character description is a fine list entry but a bare meta
+    // description — Bing flags 162 of them as too short. Below the threshold,
+    // wrap it in the locale's context sentence (what this is, what the page
+    // offers); at or above it, the description stands on its own as before.
+    const metaDesc = clampMeta(
+      desc.length < 60
+        ? loc.P_META_SHORT.replace('{DESC}', desc).replace('{NAME}', shortName(e.name)).replace('{CAT}', loc.categories[e.cat])
+        : desc,
+    )
 
     const short = shortName(e.name)
     const h1 = `<span class="owner">${esc(e.owner)}/</span><wbr><span class="name">${esc(short)}</span>`
@@ -736,7 +962,7 @@ for (const loc of LOCALES) {
       repoId: COMMENTS.repoId,
       category: COMMENTS.category,
       categoryId: COMMENTS.categoryId,
-      term: `plugin:${e.slug.toLowerCase()}`,
+      term: termOf(e.slug),
       lang: loc.giscusLang,
     } : null
     const commentsSection = commentsConfig ? `<section class="panel comments" aria-labelledby="${commentsId}-title">
@@ -802,9 +1028,17 @@ ${readmeHtml}
       .replaceAll('__P_README_SECTION__', () => readmeSection)
       .replaceAll('__P_COMMENTS_SECTION__', () => commentsSection)
       .replaceAll('__LANG__', () => loc.htmlLang)
-      .replaceAll('__TITLE__', () => esc(loc.P_TITLE
-        .replace('{NAME}', e.name)
-        .replace('{CAT}', loc.categories[e.cat])))
+      // Compound entry names (owner/repo#subpath) push some titles past what a
+      // result page shows — Bing flags them and search engines truncate mid-
+      // name. Fall back through progressively shorter forms of the name until
+      // the title fits: full name, then without the owner, then the bare
+      // package name after '#' — which is what plugin-name queries actually
+      // contain. The owner stays in the URL and on the page either way.
+      .replaceAll('__TITLE__', () => {
+        const render = (n) => loc.P_TITLE.replace('{NAME}', n).replace('{CAT}', loc.categories[e.cat])
+        const candidates = [e.name, short, short.split('#').pop()]
+        return esc(render(candidates.find((n) => render(n).length <= 65) ?? candidates[candidates.length - 1]))
+      })
       .replaceAll('__DESC__', () => esc(metaDesc))
       .replaceAll('__URL__', () => url)
       .replaceAll('__HREFLANGS__', () => dHreflangs)
@@ -907,8 +1141,22 @@ const registry = {
       // by parsing the command string is not a contract worth offering, so the
       // field is published directly. Omitted when absent, like `screenshots`.
       tarball: e.tarball ?? undefined,
+      // Current npm `latest` when known. null = github-only (`npm` null) or
+      // probed with no latest tag. Not the same signal as `downloads`.
+      version: e.version,
       stars: e.stars,
       downloads: e.downloads,
+      downloadsStart: downloadsMap[e.url]?.start ?? null,
+      downloadsEnd: downloadsMap[e.url]?.end ?? null,
+      downloadsCheckedAt: downloadsMap[e.url]?.checkedAt ?? null,
+      // Capability disclosure (#401). Omitted entirely when the entry was not
+      // scanned, so a consumer cannot read "absent" as "empty" — the market
+      // renders a missing pair as 未检出 / not checked.
+      ...(capabilitiesMap[e.url] === undefined ? {} : {
+        capabilities: capabilitiesMap[e.url].capabilities,
+        capabilityRedLines: capabilitiesMap[e.url].redLines,
+        capabilityCheckedAt: capabilitiesMap[e.url].scannedAt,
+      }),
       install: e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit),
       added: e.added,
       // Optional, author-maintained (data/screenshots.json); omitted when

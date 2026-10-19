@@ -1,0 +1,6 @@
+url: https://github.com/m1452700576/dsh-app-updater
+name: m1452700576/dsh-app-updater
+category: tools
+description:
+  en: Sidebar button that checks for DSH updates on startup, shows red dot for new versions, supports ignoring specific versions, and displays changelog preview with live download progress and GitHub mirror support for China.
+  zh: 侧边栏按钮：启动时自动检查DSH更新并显示红点提示，支持忽略特定版本、预览更新日志，带实时下载进度、国内镜像加速和下载安全校验。

@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-nurse-record-check
+name: PerryLink/dsh-nurse-record-check
+category: tools
+description:
+  en: "Checks nursing records for entry timing, signatures and assessment-form completeness, against 《病历书写基本规范》 and other published documents. Reports what is missing or out of sequence for a human to review."
+  zh: "依据《病历书写基本规范》等公开文件，核对护理记录的书写时限、签名，以及评估表的完整性。列出缺失或次序不符之处供人复核。"

@@ -46,6 +46,11 @@ const TOC_SHELL = {
   zh: { top: '插件', tail: ['徽章', '免责声明'] },
 }
 
+// Git may check text files out with CRLF on Windows. The generated blocks use
+// LF internally, so comparing the raw checkout would report a clean README as
+// stale even though Git sees no content diff. Compare logical text instead.
+const normalizeNewlines = (text) => text.replace(/\r\n?/g, '\n')
+
 function replaceBlock(text, [open, close], body, file) {
   const i = text.indexOf(open)
   const j = text.indexOf(close)
@@ -147,7 +152,7 @@ for (const loc of LOCALES) {
     })
     .join('\n\n')
 
-  const before = fs.readFileSync(loc.readme, 'utf8')
+  const before = normalizeNewlines(fs.readFileSync(loc.readme, 'utf8'))
   let after = replaceBlock(before, MARKERS.toc, toc, loc.readme)
   after = replaceBlock(after, MARKERS.plugins, plugins, loc.readme)
 

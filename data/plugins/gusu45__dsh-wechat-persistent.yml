@@ -1,0 +1,6 @@
+url: https://github.com/gusu45/dsh-wechat-persistent
+name: gusu45/dsh-wechat-persistent
+category: notify
+description:
+  en: "Persistent WeChat bridge for DSH: one WeChat user maps to one persistent agent session via the official iLink channel, with context and the user-to-session registry surviving restarts. There is no sender allowlist — anyone who can message the paired WeChat account can start a conversation with a session that has tool access, and the working directory defaults to the home directory; use a dedicated account and set WECHAT_PERSISTENT_CWD."
+  zh: "DSH 的持久微信桥：一个微信用户对应一个持久智能体会话，走官方 iLink 通道，上下文与用户→会话映射在重启后保留。没有发送者白名单——任何能给所配对微信号发消息的人都能发起对话并获得拥有工具权限的会话，工作目录默认是用户主目录；请使用专用账号并设置 WECHAT_PERSISTENT_CWD。"

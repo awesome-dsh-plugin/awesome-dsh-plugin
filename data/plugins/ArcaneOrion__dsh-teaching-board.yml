@@ -1,0 +1,6 @@
+url: https://github.com/ArcaneOrion/dsh-teaching-board
+name: ArcaneOrion/dsh-teaching-board
+category: ui
+description:
+  en: 'Teaching board view: agent-generated self-contained HTML is projected into a sandboxed iframe as a board, annotated by hand (brush, four colours, eraser, undo), extended in place across several tool calls, and screenshotted back into the conversation as a real user message.'
+  zh: 教学平面视图：agent 生成的自包含 HTML 投影进沙箱 iframe 当板书，可用画笔手写勾画（四色、橡皮、撤销）、在同一块板上增量续写，并把画面截图作为真实用户消息发回对话。

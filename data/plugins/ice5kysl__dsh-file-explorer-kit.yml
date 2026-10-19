@@ -1,0 +1,6 @@
+url: https://github.com/ice5kysl/dsh-file-explorer-kit
+name: ice5kysl/dsh-file-explorer-kit
+category: ui
+description:
+  en: In-session "Files" tab (conversation.view, order 20) for dsh Web that browses the active session's workspace directory with breadcrumbs and previews files inline — sanitized Markdown (marked + DOMPurify), images, line-numbered text and PDF — served by read-only /dsh-files host routes registered on ctx.webServer; no write endpoints. Bilingual zh/en.
+  zh: dsh Web 会话内「文件」页签（conversation.view，order 20）：以当前会话工作区为根的面包屑目录浏览，内联预览消毒渲染的 Markdown（marked + DOMPurify）、图片、带行号文本与 PDF；目录与读取全部经 ctx.webServer 注册的只读 /dsh-files 宿主路由，无任何写端点（中英双语）。

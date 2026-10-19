@@ -2,5 +2,5 @@ url: https://github.com/loyalchiiina/dsh-chat-image-lightbox
 name: loyalchiiina/dsh-chat-image-lightbox
 category: ui
 description:
-  zh: "聊天图片全屏查看器：点击对话中的图片打开灯箱，支持缩放、拖拽平移、滚轮缩放、文件名显示、下载保存，以及键盘方向键与移动端滑动切换。"
-  en: "Full-screen lightbox for chat images with zoom, drag pan, download, and keyboard or touch navigation."
+  zh: "聊天图片全屏查看器：点击对话中的图片打开灯箱，支持缩放、拖拽平移、滚轮缩放、文件名显示、下载保存，以及键盘方向键与移动端滑动切换；display_image 工具返回的图片可直接内联显示。"
+  en: "Full-screen lightbox for chat images with zoom, drag pan, download, and keyboard or touch navigation. Images returned by the display_image tool render inline in chat."

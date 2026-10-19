@@ -1,0 +1,6 @@
+url: https://github.com/Eternalloveone/dsh-palm/tree/main/packages/dsh-palm
+name: Eternalloveone/dsh-palm#dsh-palm
+category: remote
+description:
+  en: "Standalone mobile surface for dsh: scan-to-pair device trust, realtime SSE sync, three-channel completion notifications (in-app / Web Push / Server酱·Bark·Telegram), offline outbox, approval & question panels, per-provider usage meters, PWA; a native narrow-screen phone UI."
+  zh: "dsh 的独立手机端界面：扫码配对设备信任、实时 SSE 同步、三通道完成通知（应用内 / Web Push / Server酱·Bark·Telegram）、离线发件箱、审批与提问面板、多提供方用量卡、PWA；从零为窄屏设计的原生手机 UI。"

@@ -1,0 +1,6 @@
+url: https://github.com/techflag/workdsh/tree/main/packages/enterprise-connection
+name: techflag/workdsh#enterprise-connection
+category: identity
+description:
+  en: 'Enterprise login, colleague mentions, shared text and files, and authenticated business requests for WorkDSH Desktop 2.0.6-alpha.3+ with WorkDSH Admin; distributed as a release archive.'
+  zh: '面向 WorkDSH Desktop 2.0.6-alpha.3 及以上版本的企业连接插件，配合 WorkDSH Admin 提供成员登录、@同事分享正文与文件、业务插件认证复用，通过发行包安装。'

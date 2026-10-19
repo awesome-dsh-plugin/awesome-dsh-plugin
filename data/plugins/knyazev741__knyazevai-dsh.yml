@@ -1,0 +1,6 @@
+url: https://github.com/knyazev741/knyazevai-dsh
+name: knyazev741/knyazevai-dsh
+category: model
+description:
+  en: Adds the KnyazevAI API provider and its DeepSeek, GLM, and MiniMax model catalog to DeepSeek Harness.
+  zh: 为 DeepSeek Harness 添加 KnyazevAI API 提供方及 DeepSeek、GLM 和 MiniMax 模型目录。

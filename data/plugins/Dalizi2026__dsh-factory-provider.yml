@@ -1,0 +1,7 @@
+url: https://github.com/Dalizi2026/dsh-factory-provider
+name: Dalizi2026/dsh-factory-provider
+category: model
+tarball: https://github.com/Dalizi2026/dsh-factory-provider/releases/latest/download/dsh-factory-provider.tgz
+description:
+  en: 'Factory (Droid) subscription quota as native DSH model providers, with three protocol routes, your own API key through a loopback gateway, and a settings page for connection status, quota, per-model token statistics and key switching.'
+  zh: '把 Factory (Droid) 订阅额度接入 DSH 的原生模型 provider：三条协议路由、用你自己的 API key 经本机回环网关认证，并提供设置页查看连接状态、订阅额度、按模型的 token 统计与切换 key。'

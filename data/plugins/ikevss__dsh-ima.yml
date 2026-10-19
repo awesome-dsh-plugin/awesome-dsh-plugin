@@ -1,0 +1,7 @@
+url: https://github.com/ikevss/dsh-ima
+name: ikevss/dsh-ima
+category: docs
+tarball: https://github.com/ikevss/dsh-ima/releases/latest/download/dsh-ima.tgz
+description:
+  en: Browse Tencent ima knowledge bases in a DSH sidebar panel, preview PDF, Office, note and media files inline, and let the agent search and read them through five tools.
+  zh: 在 DSH 侧边栏浏览腾讯 ima 的知识库与文件，内置常见格式预览，并让 agent 用 5 个工具按名称或正文检索、读取库内资料。

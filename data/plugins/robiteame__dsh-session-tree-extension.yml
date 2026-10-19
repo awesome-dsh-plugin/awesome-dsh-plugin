@@ -1,0 +1,6 @@
+url: "https://github.com/robiteame/dsh-session-tree-extension"
+name: "robiteame/dsh-session-tree-extension"
+category: "tools"
+description:
+  en: "Pi-style append-only multi-branch session trees: fork or jump to any historical node without deleting history, clone a branch into a new session, and browse the tree in a WebUI panel. Works on stock Harness via graceful degradation."
+  zh: "Pi 风格的追加式多分支会话树:在任意历史节点开分支或跳转而不删除旧历史,可将分支克隆为新会话,并在 WebUI 树面板中浏览(明暗主题)。在原版 Harness 上优雅降级运行。"

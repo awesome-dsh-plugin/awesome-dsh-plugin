@@ -1,0 +1,6 @@
+url: https://github.com/duhu2000/dsh-form-fill-agent/tree/main/packages/dsh-form-fill-agent
+name: duhu2000/dsh-form-fill-agent#dsh-form-fill-agent
+category: tools
+description:
+  en: 'AI form filling and spreadsheet autofill for XLSX in DeepSeek Harness, using authorized Qichacha MCP facts with cell previews, user confirmation and export to a new copy.'
+  zh: 'AI填表智能体：支持自动填表、表格填充、表格补全、Excel填表与 Excel回填；使用企查查 MCP 填写 XLSX 空白字段，预览确认后导出新副本。'

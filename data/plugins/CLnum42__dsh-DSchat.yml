@@ -1,0 +1,7 @@
+url: https://github.com/CLnum42/dsh-DSchat
+name: CLnum42/dsh-DSchat
+category: browser
+tarball: https://github.com/CLnum42/dsh-DSchat/releases/download/v0.6.1/dsh-dschat-0.6.1.tgz
+description:
+  en: 'Chat with the DeepSeek web app (chat.deepseek.com) in a native DSH panel — a real browser drives the site on your existing web login, with streaming replies, deep-thinking and smart-search toggles, and image or document attachments. Conversations can be recovered from the web side, exported as Markdown, and distilled or replayed into a harness session, and the agent reaches the same web chat through five tools (dschat_status, dschat_send, dschat_recover, dschat_import, dschat_transfer).'
+  zh: '在 DSH 原生面板里聊 DeepSeek 网页端（chat.deepseek.com）——由真实浏览器以你已有的网页登录驱动，支持流式回复、深度思考与智能搜索开关，以及图片与文档附件。会话可从网页端恢复、导出为 Markdown，并蒸馏或原文迁移成 harness 会话；agent 另可通过 dschat_status、dschat_send、dschat_recover、dschat_import、dschat_transfer 五个工具使用同一套网页聊天。'

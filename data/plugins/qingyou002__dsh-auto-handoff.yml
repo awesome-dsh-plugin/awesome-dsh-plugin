@@ -1,0 +1,6 @@
+url: https://github.com/qingyou002/dsh-auto-handoff
+name: qingyou002/dsh-auto-handoff
+category: session
+description:
+  en: 'DSH plugin: hands a long session over to a fresh session in the same workspace on /handoff or at a token threshold, carrying the preset, model, permissions and plan mode across; the brief is written by the session''s own model and the switch waits for a step boundary instead of interrupting running work.'
+  zh: 'DSH 插件：通过 /handoff 或会话累计 Token 阈值把长会话交接给同工作区的新会话，并继承 preset、模型、权限与 Plan 模式；交接简报由会话自身的模型撰写，切换在 Step 边界发生，不中断正在执行的步骤。'

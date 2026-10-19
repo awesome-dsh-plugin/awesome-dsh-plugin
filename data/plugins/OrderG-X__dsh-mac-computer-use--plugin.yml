@@ -1,0 +1,7 @@
+url: https://github.com/OrderG-X/dsh-mac-computer-use/tree/main/plugin
+name: OrderG-X/dsh-mac-computer-use#plugin
+category: tools
+tarball: https://github.com/OrderG-X/dsh-mac-computer-use/releases/latest/download/dsh-mac-computer-use.tgz
+description:
+  en: "Vision-first Mac computer use, for when the accessibility tree is unavailable. Ships 11 desktop_* tools - window list, screenshots, OCR text targeting, numbered elements, coordinate clicks, typing, scrolling, drag - plus a Codex-style cursor overlay with spring animation. Clicks are delivered to the target process, so the real pointer never moves and nothing steals focus. In DSH it shows up as Mac Desktop Control with a settings page that checks the engine and the Screen Recording / Accessibility permissions, with a button that opens the matching System Settings pane. One-time prerequisite: no binary is bundled; clone the repo and run ./install.sh once to compile the dsh-cu engine and the overlay with swiftc (Xcode Command Line Tools - the script stops with a clear message when swiftc is missing or the system is not macOS). Until that is done the desktop_* tools fail with exactly these steps."
+  zh: "Mac 的视觉优先 computer use：无障碍树不可用时照样能干活。11 个 desktop_* 工具——窗口枚举、截图、OCR 找文字、元素编号、坐标点击、输入、滚动、拖拽，外加 Codex 风格的浮层光标（带弹簧动效）。点击投递给目标进程，不移动真实鼠标、不抢前台。DSH 插件页里显示为「Mac 桌面操作」，设置页会逐项检查命令行引擎和屏幕录制 / 辅助功能权限，缺哪个直接给按钮。一次性前置：本包不含编译好的二进制——clone 仓库跑一次 ./install.sh，用 swiftc 编译 dsh-cu 引擎与浮层（需要 Xcode 命令行工具；缺 swiftc 或非 macOS 时脚本会明确报错停下）。未装之前 desktop_* 会带着这几步明确报错。"

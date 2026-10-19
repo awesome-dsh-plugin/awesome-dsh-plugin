@@ -65,6 +65,15 @@ export function slugFor(url) {
   return sub ? `${base}--${sub.replaceAll('/', '-')}` : base
 }
 
+// `file` is echoed into `::error file=…` annotations and compared against
+// `git diff --name-only` output, and both of those are POSIX on every
+// platform. `path.join` is not: on Windows it hands back
+// `data\plugins\x.yml`, which matches nothing git prints, so
+// check-submission.mjs answered "no entry files added or changed — nothing to
+// verify" for a pull request that plainly added one — a gate that cannot tell
+// "passed" from "never ran", which is the failure its own comment warns about.
+const toPosix = (p) => (path.sep === '/' ? p : p.split(path.sep).join('/'))
+
 export function readEntries(dir = PLUGINS_DIR) {
   if (!fs.existsSync(dir)) return []
   const out = []
@@ -93,7 +102,7 @@ export function readEntries(dir = PLUGINS_DIR) {
         : ''
       throw new Error(`${full}: invalid YAML — ${e.reason ?? e.message}${hint}`)
     }
-    out.push({ ...doc, file: full })
+    out.push({ ...doc, file: toPosix(full) })
   }
   return out
 }
@@ -162,6 +171,20 @@ export function validateEntries(entries) {
       problems.push(`${at}: filename must match the url — expected ${want}.yml`)
     }
     if (typeof e.name !== 'string' || !e.name.trim()) problems.push(`${at}: "name" is required`)
+    // `name` is the link text in the list, so a name written as owner/repo is a
+    // claim about which repository the link goes to. #5756 found six entries
+    // whose name named a different repository than their url — five of them a
+    // repository that does not exist — each publishing a link labelled one
+    // thing and pointing at another. Only the owner/repo form is checked: a
+    // bare display name ("Session Lens") makes no such claim, and the part
+    // after `#` is a free-form label for monorepo subpaths.
+    else if (e.name.split('#')[0].includes('/')) {
+      const named = e.name.split('#')[0].trim().toLowerCase()
+      const actual = e.url.replace(/^https:\/\/github\.com\//, '').split('/').slice(0, 2).join('/').toLowerCase()
+      if (named !== actual) {
+        problems.push(`${at}: "name" says ${e.name.split('#')[0].trim()} but the url is ${e.url.replace(/^https:\/\/github\.com\//, '').split('/').slice(0, 2).join('/')} — the name is the link text, so it must name the repository the link goes to`)
+      }
+    }
     if (!CAT_IDS.includes(e.category)) {
       problems.push(`${at}: "category" must be one of ${CAT_IDS.join(', ')} (got ${JSON.stringify(e.category)})`)
     }

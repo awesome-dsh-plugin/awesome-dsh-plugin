@@ -1,0 +1,6 @@
+url: https://github.com/fomalhaut1998/dsh-ai-research/tree/main/packages/dsh-ai-research
+name: fomalhaut1998/dsh-ai-research#dsh-ai-research
+category: tools
+description:
+  en: 'AI research toolkit for DSH: a model release radar, a per-model benchmark and community report from 13 structured leaderboards plus Chinese and English community discussion, and an AI news radar over 46 feeds and 22 official X accounts; registers four tools and three skills and renders every report to Markdown with a generated table of contents.'
+  zh: 'DSH 的 AI 研究工具箱：模型发布雷达、单模型跑分与口碑体检（13 路结构化榜单 + 中英文社区讨论）、覆盖 46 个 Feed 与 22 个官方 X 账号的 AI 新闻雷达；注册 4 个工具 + 3 个技能，报告统一渲染为带目录的 Markdown。'

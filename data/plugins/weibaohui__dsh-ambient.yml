@@ -1,0 +1,6 @@
+url: https://github.com/weibaohui/dsh-ambient
+name: weibaohui/dsh-ambient
+category: fun
+description:
+  en: "White noise player: lays a layer of background sound (rain, streams, campfire, café) while AI codes, for flow and focus. Supports multiple playback modes (sequential / shuffle / single-loop / intermittent) and AI automatic background music download from Wikimedia Commons (CC0/PD/CC-BY)."
+  zh: 白噪音播放器：AI 编程时铺一层背景音（雨声、溪流、篝火、咖啡馆……），帮助进入心流状态、集中精力、高效思考。支持顺序/随机/单曲循环/间歇等多种播放模式。支持 AI 自动从 Wikimedia Commons 下载 CC0/PD/CC BY 背景音乐到对应场景文件夹。

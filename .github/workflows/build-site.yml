@@ -9,6 +9,27 @@ on:
         description: Re-probe every entry, ignoring cached verdicts
         type: boolean
         default: false
+      skip_probes:
+        description: Skip the probes and build from cached data (deploy or publish only)
+        type: boolean
+        default: false
+  # A push made with the default GITHUB_TOKEN does not trigger workflows —
+  # GitHub suppresses it to stop recursion — so the `push` trigger below never
+  # fires for sync-readme's own commit. That commit is the one that adds the
+  # README lines for the entries a merge just brought in, and the build reads
+  # the README, so without this the site stays exactly one merge behind until
+  # some human push happens to clear it. Measured 2026-09-20: main 4,014
+  # entries, published 4,012, no build-site run at all for the bot's sha
+  # (`actions/runs?head_sha=0b358926b` → total_count 0).
+  #
+  # workflow_run rather than having sync-readme dispatch this one: it needs no
+  # extra permission on a workflow whose whole privilege is `contents: write`,
+  # and it re-runs on every completion including the ones that find nothing to
+  # regenerate. Those extra runs redeploy identical bytes, which is the same
+  # trade the push trigger above already makes.
+  workflow_run:
+    workflows: ['Sync READMEs from data/plugins']
+    types: [completed]
   push:
     branches: [main]
     # No paths filter, deliberately: every push must either supersede the
@@ -65,6 +86,13 @@ jobs:
           # Needed by the catalog publish below; harmless for the site build.
           registry-url: https://registry.npmjs.org
       - run: npm ci
+        env:
+          # The lockfile pins registry.npmmirror.com URLs. On GitHub runners that CDN
+          # has repeatedly returned 503/504 and hung `npm ci` for tens of minutes
+          # (2026-10-19). Fetch from npmjs in CI; local installs keep their own registry.
+          npm_config_registry: https://registry.npmjs.org/
+          npm_config_replace_registry_host: always
+      - run: node --test scripts/download-window.test.mjs
       # Rolling probe cache: unique key so every run saves, restore-keys pulls
       # the most recent.
       #
@@ -137,7 +165,26 @@ jobs:
           # cache, so skipping the probes on a cold push build would publish
           # every entry with npm and downloads blank. Probing is slow; that is
           # cheaper than a wrong plugins.json.
-          if [ "${{ github.event_name }}" != "push" ] || [ ! -s data/npm-map.json ]; then
+          # Named events rather than "not push": when the only triggers were
+          # schedule, workflow_dispatch and push, the two spellings meant the
+          # same thing. They stopped meaning the same the moment a fourth
+          # trigger was added — `workflow_run` is not `push`, so every
+          # sync-readme completion ran the whole probe suite, and on
+          # 2026-09-22 one of those builds sat in this step for 40 minutes
+          # against the ~12 a deploy-only build takes. The concurrency group
+          # above and the publish conditions below were already written as an
+          # allowlist; this was the only denylist left.
+          case "${{ github.event_name }}" in
+            schedule) full_probe=1 ;;
+            workflow_dispatch)
+              # A manual run is normally a full re-probe, but the deploy-only
+              # path has to exist: it is how a fix reaches the site without
+              # waiting out an hour of probes (2026-10-18, when the index
+              # needed to ship while users were already adding it).
+              if [ "${{ inputs.skip_probes }}" = "true" ]; then full_probe=''; else full_probe=1; fi ;;
+            *) full_probe='' ;;
+          esac
+          if [ -n "$full_probe" ] || [ ! -s data/npm-map.json ]; then
             node scripts/probe-npm.mjs
             # After probe-npm.mjs, never before: this reads data/npm-map.json
             # to know which entries HAVE a package to probe. Reads and writes
@@ -153,9 +200,13 @@ jobs:
             # latest release plus a short commit tail, probed here once a day
             # so no end-user market ever has to ask GitHub itself — anonymous
             # REST quota is shared per egress IP and already unreliable.
-            # data/updates.json is committed AND cached above (same shape as
-            # downloads), and absence of notes is a normal state downstream,
-            # so this probe never blocks the build.
+            # data/updates.json is cache-only above (NOT committed — unlike
+            # stars/downloads, there is no committed floor), and absence of
+            # notes is a normal state downstream, so this probe must never
+            # block the build. probe-updates.mjs now exits 0 (leaving the file
+            # untouched) on a cold-cache + all-fail run instead of exit(1),
+            # which previously stranded the updates cache in a permanent miss
+            # and failed every nightly.
             node scripts/probe-updates.mjs
           else
             echo "push build with cached probe data — skipping probes"
@@ -171,6 +222,14 @@ jobs:
           # asked. Neither probe blocks the build: a dead URL is dropped from
           # the published data, not turned into a failure.
           node scripts/probe-screenshots.mjs
+          # Capability disclosure (#401): what each plugin touches — files,
+          # network, shell, credentials — scanned from the artifact a user
+          # would install. Runs every time, like the two probes above: it is
+          # incremental by RELEASE (a new npm version invalidates that entry's
+          # record) and by AGE for branch-sourced entries, so a normal push
+          # re-scans a handful. The scanner is pinned inside the script; it
+          # executes nothing from the scanned package and opens no sockets.
+          node scripts/probe-capabilities.mjs
           node scripts/build-site.mjs
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -182,7 +241,19 @@ jobs:
         # Losing that race must not abort the nightly before the two publish
         # steps below — they are the reason the run exists, and the site is
         # about to be redeployed by whichever push won anyway.
-        continue-on-error: ${{ github.event_name == 'schedule' }}
+        # workflow_dispatch is here for the same reason schedule is, and it was
+        # left out by oversight: a dispatch runs the identical probe-and-publish
+        # path, so a failed deploy costs it the identical work. On 2026-09-05 a
+        # dispatched run spent 36 minutes probing, then died here on a 403 —
+        # the App installation quota had been drained by approving a batch of
+        # queued workflow runs — and took the cache-save post-steps and both
+        # npm publish steps down with it. Nothing was banked; the probe had to
+        # be redone from scratch.
+        #
+        # Deploying is never the reason a probe run exists. Losing the deploy
+        # to a transient 403 is recoverable by the next push; losing the probe
+        # is not.
+        continue-on-error: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
 
       # The same plugins.json, published to npm — see
       # scripts/publish-catalog.mjs for why it has to exist in two places.

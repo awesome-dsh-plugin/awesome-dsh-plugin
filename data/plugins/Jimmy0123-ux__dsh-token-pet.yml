@@ -1,0 +1,7 @@
+url: https://github.com/Jimmy0123-ux/dsh-token-pet
+name: Jimmy0123-ux/dsh-token-pet
+category: usage
+description:
+  en: 'Floating DSH desktop pet with 12 authored state animations for requests, tools, compaction, archive and prompt enhancement; live context occupancy; a persistent cross-session Lifetime Ledger; per-provider/model totals, hourly trends and 7/30-day views; dark/light theme switching; optional cost estimates (off by default) with a visual price editor and monthly budget alert; client-side skin ZIP import; JSON/CSV usage export; snapshot-only panel reads with background incremental indexing; and opt-in prompt enhancement with editable preview and DSH composer submission.'
+  zh: 'DSH 悬浮桌面用量小宠物：用 12 个正式状态动作反馈请求、工具、上下文压缩、归档和提示词增强，展示实时上下文占用、跨会话终身用量账本、服务商/模型统计、小时趋势与近 7/30 日视图；支持深色/浅色主题切换；可选成本估算（默认关闭）与可视化价格表、月预算告警；客户端皮肤 ZIP 导入；JSON/CSV 用量导出；通过纯快照面板读取和后台增量索引避免打开面板时扫描历史，并提供用户主动触发、可编辑预览和直接发送的提示词增强。'
+tarball: https://github.com/Jimmy0123-ux/dsh-token-pet/releases/download/v0.4.2/dsh-token-pet-0.4.2.tgz

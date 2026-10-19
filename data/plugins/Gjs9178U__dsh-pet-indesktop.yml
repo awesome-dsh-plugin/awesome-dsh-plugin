@@ -1,0 +1,6 @@
+url: https://github.com/Gjs9178U/dsh-pet-indesktop
+name: Gjs9178U/dsh-pet-indesktop
+category: fun
+description:
+  en: 'Adds one draggable desktop pet called Big Fat Fish to the DSH web GUI, with eight switchable colour skins (deepsea, sakura, mint, twilight, caramel, silver, ink, ember): it bobs, sways and slowly breathes, remembers where you left it, and says one bilingual line when clicked. The skins are eight PNGs bundled with the plugin and served by the plugin itself, so there are no third-party requests. NOTE - the artwork carries an OleapCrow mark and was supplied by the repository owner, the eight skins are recolourings of that one drawing, and the plugin has not been installed against a live DSH host.'
+  zh: '给 DSH 网页界面加一只叫「大肥鱼」的桌宠，八种配色皮肤可以随时切换（深海蓝、樱花粉、薄荷绿、暮光紫、焦糖金、雪白银、墨黑、余烬红）：会上下浮动、左右摇摆、缓慢呼吸，记得你把它放在哪，点一下会说一句中英双语的话。八张皮肤图随插件分发、由插件自己提供，因此没有任何第三方请求。注意：画面带有 OleapCrow 标记、由仓库所有者提供，八种皮肤是同一张画的重新配色；本插件尚未在真实的 DSH 宿主上安装验证过。'

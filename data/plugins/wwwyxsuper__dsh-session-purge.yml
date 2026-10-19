@@ -1,0 +1,6 @@
+url: https://github.com/wwwyxsuper/dsh-session-purge
+name: wwwyxsuper/dsh-session-purge
+category: session
+description:
+  en: Adds a permanent-delete row to the sidebar menu of archived sessions, removing the session log, its projection cache and its workspace registration.
+  zh: 在侧栏「已归档」会话的菜单里加一行彻底删除，一次清掉会话日志、投影缓存与工作区登记。

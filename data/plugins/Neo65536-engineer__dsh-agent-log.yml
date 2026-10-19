@@ -1,0 +1,6 @@
+url: https://github.com/Neo65536-engineer/dsh-agent-log
+name: Neo65536-engineer/dsh-agent-log
+category: dev
+description:
+  en: 'Read-only work report rebuilt from local session logs: tools used and how often, commands run, files read and written, whether tests passed, failures and their causes, token usage, and whether the task finished.'
+  zh: 从本机会话日志只读还原的工作报告：用了哪些工具、各调用多少次、执行了哪些命令、读写哪些文件、测试有没有通过、失败了几次及原因、消耗多少 Token，以及最后完成了没有。

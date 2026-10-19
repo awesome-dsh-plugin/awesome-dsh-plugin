@@ -1,0 +1,6 @@
+url: https://github.com/Yinxe/deepseek-harness-plugins/tree/main/plugins/file-change-viewer
+name: Yinxe/deepseek-harness-plugins#file-change-viewer
+category: ui
+description:
+  en: 'Takes over the edit/write rows in the chat stream with the official native row shell and collapse behavior; expanding shows per-file code cards with file-type icon, add/delete stats, per-block collapse, highlight/plus-minus toggle, syntax-highlighted unified diff with real file line numbers, and a configurable context margin. Also ships a patch tool (beta, off by default) that applies multi-spot multi-file patches atomically via the *** Begin Patch envelope.'
+  zh: '接管对话流的 edit/write 行：外壳与折叠沿用官方原生行，展开后每个文件一张代码卡片——文件类型图标、增删统计、块级折叠、高亮/±差异切换、语法高亮统一 diff（行号为文件真实行号），改动两侧多显示可调的上下文行。另带 patch 工具（测试版，默认关）：一次调用把多处零散修改/多文件补丁原子化应用（*** Begin Patch 信封，全有或全无）。'

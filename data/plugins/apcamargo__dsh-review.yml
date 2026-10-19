@@ -1,0 +1,6 @@
+url: https://github.com/apcamargo/dsh-review
+name: apcamargo/dsh-review
+category: git
+description:
+  en: 'A code review workflow that reviews uncommitted changes, changes against a base branch, a single commit, a GitHub pull request, or a file.'
+  zh: '一种代码审查工作流，用于审查未提交的更改、相对于基础分支的更改、单个提交、GitHub Pull Request 或某个文件。'

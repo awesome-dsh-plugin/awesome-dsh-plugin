@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-lsp-packs/tree/main/dsh-lsp-kotlin
+name: 988hj7tczd-oss/dsh-lsp-packs#dsh-lsp-kotlin
+category: dev
+description:
+  en: 'Kotlin LSP configuration plugin for DeepSeek Harness using kotlin-language-server.'
+  zh: '基于 kotlin-language-server 为 DeepSeek Harness 提供 Kotlin 代码导航和语言服务配置。'

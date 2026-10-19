@@ -1,0 +1,7 @@
+url: https://github.com/jarvisluk/dsh-projectless-session
+name: jarvisluk/dsh-projectless-session
+category: session
+description:
+  en: Adds a Session without workspace entry to the DSH Workspace picker, creates isolated date-organized directories, and keeps started sessions resumable under Ungrouped.
+  zh: 在 DSH 工作区选择器中添加无工作区会话入口，创建按日期整理的独立目录，并让已开始的会话在未分组区域保持可恢复。
+tarball: https://github.com/jarvisluk/dsh-projectless-session/releases/latest/download/dsh-projectless-session.tgz

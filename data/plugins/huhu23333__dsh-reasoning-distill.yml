@@ -1,0 +1,6 @@
+url: https://github.com/huhu23333/dsh-reasoning-distill
+name: huhu23333/dsh-reasoning-distill
+category: usage
+description:
+  en: "Distill over-long model reasoning into its useful core, replay the compressed version on every later request, and report each session's cost and savings. Disabled by default: you must install and select one of the two rewrite backends (in-place needs 14 source patches and a rebuild; message-edit needs a third-party plugin)."
+  zh: "把过长的模型思考压缩成有用核心，之后每次请求重放压缩版，并给出每个会话的开销与节省报告。默认关闭：必须先装好并选中两个改写后端之一（in-place 需给 DSH 源码打 14 处补丁并重建，message-edit 需装第三方插件）。"

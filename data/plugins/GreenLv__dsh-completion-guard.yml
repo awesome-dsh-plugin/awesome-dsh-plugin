@@ -2,5 +2,5 @@ url: https://github.com/GreenLv/dsh-completion-guard
 name: GreenLv/dsh-completion-guard
 category: security
 description:
-  en: 'Task-contract and completion-certification layer: eight lifecycle hooks keep an immutable requirement ledger, restore the bounded contract after /compact or resume, and block unsupported completion claims with fail-closed evidence binding.'
-  zh: '任务合同与完成认证层:八个生命周期 hook 维护不可变需求账本,/compact 或会话恢复后重建有界合同,完成声明必须通过 checkpoint 绑定匹配证据,否则 fail-closed 阻止 Goal 与整任务完成。'
+  en: 'Keeps DSH agents from forgetting your requirements during long tasks. It saves important conditions and completion evidence locally, brings them back after context compaction or session resume, and stops partial work from being reported as the whole task done.'
+  zh: '避免 DSH Agent 在长任务中忘记你的要求：它会把重要条件和完成依据保存在本机，在上下文压缩或恢复会话后重新带回，防止漏掉关键限制，或只做完一部分就说整个任务已经完成。'

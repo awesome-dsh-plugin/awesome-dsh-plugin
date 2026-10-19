@@ -1,0 +1,6 @@
+url: https://github.com/po-et/dsh-http-probe
+name: po-et/dsh-http-probe
+category: tools
+description:
+  en: 'Adds an http_probe tool for endpoint health checks: status code, latency and key response headers, using HEAD with GET fallback; response bodies are never downloaded.'
+  zh: 为 agent 增加 http_probe 工具：探测 HTTP(S) 端点的状态码、延迟与关键响应头，HEAD 被拒时自动降级 GET，不下载响应体。

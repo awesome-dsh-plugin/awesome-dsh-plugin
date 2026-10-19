@@ -1,0 +1,6 @@
+url: https://github.com/zhengqiuyang/dsh-janitor
+name: zhengqiuyang/dsh-janitor
+category: dev
+description:
+  en: 'Registers a janitor_scan tool that returns a deterministic, reviewable cleanup plan for session debris (plan docs, scratch scripts) with per-file verdicts and evidence; scan-only, never deletes.'
+  zh: '注册 janitor_scan 工具：对会话遗留物（计划文档、临时脚本）给出确定性、可审阅的清理计划，逐文件裁决附证据；只扫描，永不删除。'

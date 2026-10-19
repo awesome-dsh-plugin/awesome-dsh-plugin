@@ -1,0 +1,6 @@
+url: https://github.com/bug-huntter/dsh-vision-plugin
+name: bug-huntter/dsh-vision-plugin
+category: vision
+description:
+  en: 'Configurable image recognition for text-only DSH models: attached images are preserved through the DSH 0.1.7-rc.2 adapter pipeline, transcribed by an OpenAI-compatible vision model, and passed to the main model as text. Supports selectable OpenAI, Anthropic, Gemini or Azure auth headers and reports a missing API key before sending a request.'
+  zh: 为纯文本 DSH 模型增加可配置识图能力：在 DSH 0.1.7-rc.2 中，上传图片会完整通过适配链路，由 OpenAI 兼容视觉模型转写为文字后交给主模型；支持 OpenAI / Anthropic / Gemini / Azure 风格密钥鉴权，缺少 API Key 时会在发起请求前明确提示。

@@ -1,0 +1,6 @@
+url: https://github.com/TC635807/better-crawler4agent
+name: TC635807/better-crawler4agent
+category: browser
+description:
+  en: "Registers a real-browser URL-to-text MCP server in a DSH profile: fetch_url and fetch_urls render JavaScript-heavy and anti-bot Chinese pages (Zhihu, CSDN, Juejin, cnblogs) and return clean article text as JSON with per-tier diagnostics, and crawler_status reports whether the browser is available. Needs a one-time Python dependency setup after install."
+  zh: 把真实浏览器抓取注册进 DSH profile：fetch_url 与 fetch_urls 渲染 JS 页面与中文反爬站点（知乎、CSDN、掘金、博客园），返回带分层诊断的干净正文 JSON，crawler_status 报告浏览器是否可用。装好后需要一次性安装 Python 依赖。

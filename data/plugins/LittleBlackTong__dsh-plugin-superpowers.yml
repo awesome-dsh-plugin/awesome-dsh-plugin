@@ -1,0 +1,6 @@
+url: https://github.com/LittleBlackTong/dsh-plugin-superpowers
+name: LittleBlackTong/dsh-plugin-superpowers
+category: skill
+description:
+  en: 'Ports the obra/superpowers methodology as 14 native DSH skills — brainstorming, writing-plans, executing-plans, subagent-driven development, test-driven development, systematic debugging, parallel agent dispatch, git worktrees, code review, verification before completion and skill authoring — served through the DSH skills registry with their scripts, references and cross-links intact (frontmatter folded into a manifest, prefixes realigned to DSH skill names). Requires DSH session format v4 (official DeepSeek Harness 0.1.7+): the /superpowers slash command declares the producer-owned source kind plugin:dsh-plugin-superpowers.'
+  zh: '将 obra/superpowers 方法论移植为 14 个原生 DSH 技能——头脑风暴、写计划、计划执行、subagent 驱动开发、TDD、系统化调试、并行派发、git worktree、代码评审、完成前验证、技能编写——经 DSH 技能注册表提供，脚本、参考资料与交叉引用原样保留（frontmatter 收进 manifest、前缀对齐 DSH 技能名）。要求 DSH session format v4（官方 DeepSeek Harness 0.1.7+）：/superpowers 斜杠命令使用 producer-owned source kind plugin:dsh-plugin-superpowers。'

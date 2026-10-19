@@ -1,0 +1,7 @@
+url: https://github.com/Han-1413141/dsh-wsl-native
+name: Han-1413141/dsh-wsl-native
+category: wsl
+description:
+  en: "Use Windows and native Linux DSH sessions in one Windows window, with WSL environment switching and bidirectional system tools."
+  zh: "在同一个 Windows 窗口中使用 Windows 与原生 Linux DSH 会话，支持 WSL 环境切换和双向系统操作。"
+tarball: https://github.com/Han-1413141/dsh-wsl-native/releases/download/v0.7.0/dsh-wsl-native-0.7.0.tgz

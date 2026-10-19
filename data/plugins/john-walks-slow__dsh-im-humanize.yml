@@ -1,0 +1,6 @@
+url: https://github.com/john-walks-slow/dsh-im-humanize
+name: john-walks-slow/dsh-im-humanize
+category: notify
+description:
+  en: 'Humanized fork of @xmanrui/dsh-im (base 4.21.2): humanized message delivery with send-delay and typing two-phase, message_break + streaming coexistence, status reactions, reply quotes, per-bot humanize overrides, and a no_reply reclaim tool — across WeChat, Feishu, DingTalk, WeCom, QQ, Telegram, Slack and WhatsApp channels.'
+  zh: '@xmanrui/dsh-im 的拟人化分支（基于上游 4.21.2）：人化消息发送（发送延迟 + 输入中两阶段）、message_break 与 streaming 共存、状态表情、回复引用、per-bot 全量拟人化覆盖、no_reply 回收工具，覆盖微信/飞书/钉钉/企业微信/QQ/Telegram/Slack/WhatsApp 全通道。'

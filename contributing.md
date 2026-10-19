@@ -72,7 +72,7 @@ Requirements / 要求：
         name: your-package-name
   ```
 - The repo contains real, working code — placeholder, name-squat, or README-only repos don't qualify. / 仓库需有真实可用的代码——占位仓库、纯 README 仓库不收。
-- The repo is at least **1 day old** and has **10 or more commits**. / 仓库**创建满 1 天**，且**提交数 ≥ 10**。
+- The repo is at least **1 day old**. (There is no commit-count bar: history length measures development habit, not quality — see #4196.) / 仓库**创建满 1 天**。（没有提交数门槛：历史长短反映的是开发习惯而非质量，见 #4196。）
 
   This is checked automatically. It isn't a judgement about your plugin — it filters out repos created minutes before the PR, which were the bulk of what had to be rejected by hand. If you're just under the bar, finish the work and resubmit; nothing is held against a resubmission. / 这一项由 CI 自动检查。它不是对插件质量的评价，只是为了过滤掉「PR 前几分钟才建好」的仓库——过去人工被迫拒掉的大多是这类。如果暂时没达标，把功能做完再提交即可，重新提交不会有任何影响。
 - The project is actively maintained. A periodic scan flags entries whose repo is gone, archived, or long dormant; they're collected in a tracking issue and removed after review. / 项目处于活跃维护状态。定期扫描会标记仓库消失、已归档或长期停更的条目，汇总到一个跟踪 issue，经确认后移除。
@@ -147,7 +147,7 @@ A pull request may add **at most 3 entries**. Over that, CI rejects it and asks 
 
 Reviewing a submission means reading the plugin's source and checking every claim in its description against it. That work is per-entry and does not get cheaper in bulk: a pull request carrying 127 entries is not one submission, it is 127 submissions wearing a coat, and the honest outcome is that none of them get read properly. / 评审一个投稿意味着读插件源码，并把描述里的每一句话对着代码核一遍。这是逐条的工作量，不会因为打包提交而变少：一个装了 127 条的 PR 不是一次投稿，而是 127 次投稿套了件外衣，诚实的结果是没有一条会被认真读完。
 
-Three is not a guess — of the last 100 merged pull requests, 92 added one entry and 8 added two; none added three. The allowance exists for the one shape that legitimately needs it: a monorepo whose subpackages are separately installable plugins. / 3 不是拍脑袋定的——最近 100 个已合并的 PR 里，92 个加了 1 条、8 个加了 2 条，没有一个加 3 条。留这个余量是为了一种确实需要它的情形：一个 monorepo 的多个子包各自是可独立安装的插件。
+Three is not a guess — when the allowance was set, of the last 100 merged pull requests 92 added one entry and 8 added two. Counted again on 2026-09-24, over the 100 most recent that added entries: 88 added one, 3 added two, 9 added three. The allowance exists for the one shape that legitimately needs it: a monorepo whose subpackages are separately installable plugins. / 3 不是拍脑袋定的——当初定下这个余量时，最近 100 个已合并的 PR 里 92 个加了 1 条、8 个加了 2 条。2026-09-24 重新数了一遍，最近 100 个「新增了条目」的 PR 里：88 个加 1 条、3 个加 2 条、9 个加 3 条。留这个余量是为了一种确实需要它的情形：一个 monorepo 的多个子包各自是可独立安装的插件。
 
 **If several plugins are yours, split *and* pick.** Send the ones you would keep if you could only keep a few, not everything that works. A reader opening a category needs "these are all worth a look", not "some of these are". / **如果多个插件都是你的，除了拆分还要挑。** 提交那些「如果只能留几个，你会留下的」，而不是所有能跑的。读者打开一个分类，需要的是「这些都值得一看」，而不是「这里面有几个值得一看」。
 
@@ -157,7 +157,7 @@ Every PR runs, in order / 每个 PR 依次运行：
 
 1. **Entry count** — at most 3 per PR (above). Checked first, before anything is fetched. / 每个 PR 最多 3 条（见上）。最先检查，早于任何网络请求。
 2. **`dsh.bundle`** — fetched from your repo's `package.json` (root, or a `packages/` · `plugins/` · `apps/` subpackage). Declaring only `dsh.client` fails here. / 从你仓库的 `package.json` 读取（根包，或 `packages/` · `plugins/` · `apps/` 子包）；只声明 `dsh.client` 会在这里失败。
-3. **Repo age and commit count** — the 1 day / 10 commits bar above. / 上面的 1 天 / 10 提交门槛。
+3. **Repo age** — the 1-day bar above. / 上面的 1 天年龄门槛。
 4. **`awesome-lint`** and the site build — locale parity, separators, dates, screenshots. / `awesome-lint` 与站点构建：双语一致性、分隔符、日期、截图。
 
 If a check fails it says exactly what to change. Push a fix to the same branch — no need to open a new PR. / 检查失败时会明确指出要改什么。在同一分支上推送修复即可，无需重开 PR。

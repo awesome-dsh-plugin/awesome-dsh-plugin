@@ -1,0 +1,6 @@
+url: https://github.com/nirvanaslash/dsh-bat2exe
+name: nirvanaslash/dsh-bat2exe
+category: dev
+description:
+  en: 'Compiles a Windows .bat/.cmd launcher into a real .exe from inside DSH: renders an icon from a built-in bitmap font, emits a C# wrapper that runs the batch file next to it, compiles with csc.exe (or dotnet build), and can write Start Menu / Desktop shortcuts.'
+  zh: '在 DSH 内把 Windows .bat/.cmd 启动器编译成真正的 .exe：用内置位图字体生成图标，生成调用同目录批处理的 C# 薄壳，经 csc.exe（或 dotnet build）编译，并可选写入开始菜单/桌面快捷方式。'

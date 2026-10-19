@@ -1,0 +1,6 @@
+url: https://github.com/EIGHTfs/dsh-session-migrate
+name: EIGHTfs/dsh-session-migrate
+category: session
+description:
+  en: 'Cross-version session migration for DSH: sweeps legacy session stores (v0 plaintext, .zstd and .zip exports), re-pins the header cwd to the target workspace and drops sessions in so the persistence layer upgrades them on open; settings sidebar with env/import/list/convert tabs plus a CLI (check / fix / import).'
+  zh: 'DSH 会话跨版本迁移：扫描旧版会话目录（v0 明文、.zstd 与 .zip 导出包），改写 header cwd 绑定目标工作区并落盘，打开会话时由持久化层自动完成版本升级；设置侧边栏（环境 / 导入 / 列表 / 转换）加 CLI（check / fix / import）。'

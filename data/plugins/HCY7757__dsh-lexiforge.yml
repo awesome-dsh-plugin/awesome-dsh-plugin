@@ -1,0 +1,6 @@
+url: https://github.com/HCY7757/dsh-lexiforge
+name: HCY7757/dsh-lexiforge
+category: tools
+description:
+  en: 'Language-pack framework that rewrites model replies: A is an independent LLM rewrite, B injects FTS5 terminology retrieval into that rewrite, C applies local dictionary and regex rules, and composite runs a pipeline such as B then A then C. Ships a GitHub pack marketplace, a ZIP installer with path, size and file-type checks, and a mandatory risk disclaimer gate.'
+  zh: '改写模型回复的语言包框架：A 为独立 LLM 改写，B 将 FTS5 术语检索注入改写请求，C 执行本地字典与正则规则，composite 按 B→A→C 等管线组合。附 GitHub 语言包市场、带路径/体积/文件类型校验的 ZIP 安装器，以及强制风险免责闸门。'

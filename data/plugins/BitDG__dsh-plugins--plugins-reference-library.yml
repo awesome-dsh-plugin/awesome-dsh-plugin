@@ -1,0 +1,7 @@
+url: https://github.com/BitDG/dsh-plugins/tree/main/plugins/reference-library
+name: BitDG/dsh-plugins#reference-library
+category: browser
+tarball: https://github.com/BitDG/dsh-plugins/releases/download/reference-library-v0.6.8/dship-reference-library-0.6.8.tgz
+description:
+  en: 'Adds CodePen, Pinterest, Z-Library, and GitHub data cards to the native @ reference menu, with Pinterest pagination and Z-Library sorting.'
+  zh: '在原生 @ 引用菜单中提供 CodePen、Pinterest、Z-Library 与 GitHub 数据卡片，并支持 Pinterest 分页和 Z-Library 排序。'

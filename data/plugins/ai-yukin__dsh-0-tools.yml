@@ -1,0 +1,6 @@
+url: https://github.com/ai-yukin/dsh-0-tools
+name: ai-yukin/dsh-0-tools
+category: model
+description:
+  en: 'One-click free-model setup for DSH web, built for coding beginners: one-click installer for Windows (install.bat) and macOS/Linux (install.sh, v1.7.0+); four permanently free channels — Zhipu GLM (text + image), SiliconFlow (Qwen3-8B plus 15+ sub-9B models), iFlytek Spark Lite and the OpenRouter free pool, which routes through openrouter/auto and picks from a pool that changes over time; bottom-left setup hint hides once any free model is connected; real-time DeepSeek peak/off-peak pricing reminder; bundled beginner help center.'
+  zh: 'DSH Web 小白零门槛零费用套件：一键安装支持 Windows（install.bat）和 macOS/Linux（install.sh，v1.7.0 起）；一键接入四款永久免费渠道——智谱 GLM（文本+图片）、硅基流动（Qwen3-8B 及 15+ 款 9B 以下小模型）、讯飞星火 Lite，以及 OpenRouter 免费池（一个 Key，经 openrouter/auto 自动挑选，池内模型随时变化）；接入任一免费模型后左下角配置提示自动隐藏；含 DeepSeek 计价时段提醒、内置新手帮助中心。'

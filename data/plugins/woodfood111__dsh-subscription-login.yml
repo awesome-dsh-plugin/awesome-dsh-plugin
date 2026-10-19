@@ -1,0 +1,6 @@
+url: https://github.com/woodfood111/dsh-subscription-login
+name: woodfood111/dsh-subscription-login
+category: identity
+description:
+  en: 'One settings page that lists every subscription sign-in the harness can offer and walks you through it — ChatGPT (Codex), Claude, GitHub Copilot, OpenRouter, Kimi and xAI — reading the list from the authorization seam instead of hardcoding providers, and showing credential records no registered flow claims any more.'
+  zh: '把所有订阅登录收进一个设置页：列表直接读授权 seam 上注册的流程，引导你走完 ChatGPT (Codex)、Claude、GitHub Copilot、OpenRouter、Kimi 与 xAI，并列出已无人认领的旧凭据记录。'

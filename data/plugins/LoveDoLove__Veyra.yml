@@ -1,0 +1,6 @@
+url: https://github.com/LoveDoLove/Veyra
+name: LoveDoLove/Veyra
+category: memory
+description:
+  en: Engineering intelligence for coding agents — persistent, evidence-aware, project-isolated engineering memory with unified hybrid search (memory + RAG documentation) for DeepSeek Harness.
+  zh: 面向编程代理的工程智能——为 DeepSeek Harness 提供持久化、证据感知、项目隔离的工程记忆，以及统一的混合搜索（记忆 + RAG 文档）。

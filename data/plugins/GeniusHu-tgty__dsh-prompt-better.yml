@@ -1,0 +1,6 @@
+url: https://github.com/GeniusHu-tgty/dsh-prompt-better
+name: GeniusHu-tgty/dsh-prompt-better
+category: ui
+description:
+  en: 'Adds a button to the composer that rewrites the current draft into a clearer, more specific prompt through a one-shot LLM call, with one-click revert and cancel.'
+  zh: '在输入框加一个按钮，一键调用 LLM 把当前草稿改写成更清晰具体的提示词，支持一键恢复原文与取消。'

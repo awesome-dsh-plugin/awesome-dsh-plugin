@@ -2,5 +2,5 @@ url: https://github.com/ZekaiShi/evo-subagent
 name: ZekaiShi/evo-subagent
 category: model
 description:
-  en: 'Maps a stable agent_key to an exact provider/model pair declared in role Markdown front matter, validates the pair against the live DSH model registry before spawning, and maintains per-workspace prefercmd and memory evolution files.'
-  zh: '将稳定的 agent_key 映射到角色 Markdown 文件 front matter 中声明的具体 provider/model 组合，spawn 前会对照 DSH 模型注册表校验该组合，并按工作区维护 prefercmd 与 memory 进化文件。'
+  en: 'Smart subagent routing and evolution: bind roles to any provider/model registered in DSH, including models supplied by Codex and Claude Code provider plugins, with workspace learning.'
+  zh: '智能子代理路由与进化：按角色绑定 DSH 已注册的 provider/model；配合 Codex、Claude Code 等 provider 插件，可路由任意已注册模型，并保存工作区经验。'

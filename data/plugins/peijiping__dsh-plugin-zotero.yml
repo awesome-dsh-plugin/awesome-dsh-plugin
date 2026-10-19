@@ -1,0 +1,7 @@
+url: https://github.com/peijiping/dsh-plugin-zotero
+name: peijiping/dsh-plugin-zotero
+category: tools
+tarball: https://github.com/peijiping/dsh-plugin-zotero/releases/latest/download/dsh-plugin-zotero.tgz
+description:
+  en: 'Zotero library in a read-only sidebar panel: browse collections, search items, read metadata and full text, and insert a single citation, a selected excerpt, or a whole collection into the conversation draft. A self-hosted bridge connects to the local Zotero integration MCP and registers its tools to the model as mcp__zotero__*, each one individually toggleable.'
+  zh: '把 Zotero 文献库放进只读右侧栏面板：浏览分类树、搜索条目、查看元数据与 PDF 全文，并把单条目引用、划词摘录或整目录引用写进会话草稿。插件自持连接本机 Zotero 集成 MCP，把工具以 mcp__zotero__* 注册给模型，可按工具逐个启用 / 禁用。'

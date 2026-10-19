@@ -1,0 +1,6 @@
+url: https://github.com/techflag/dsh-plugin-ssh
+name: techflag/dsh-plugin-ssh
+category: remote
+description:
+  en: 'SSH terminals, SFTP file transfer and text editing inside DeepSeek Harness, with server troubleshooting through host models.'
+  zh: '在 DeepSeek Harness 内使用 SSH 终端、SFTP 文件传输与文本编辑，并通过宿主模型排查服务器问题。'

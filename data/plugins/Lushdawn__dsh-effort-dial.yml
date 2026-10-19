@@ -1,0 +1,6 @@
+url: https://github.com/Lushdawn/dsh-effort-dial
+name: Lushdawn/dsh-effort-dial
+category: ui
+description:
+  en: 'Codex-style reasoning-effort card for the composer: takes over the model selector and shows the current level, the model row and a segmented slider over the model''s own adapter-provided levels, with a model list, a reset, and a purple aurora with twinkling particles at the maximum level.'
+  zh: '输入框里的 Codex 风格推理强度卡片：接管模型选择器，显示当前档位、模型行，以及覆盖模型适配器所报全部档位的分段滑块；另带模型列表、重置，以及最高档时的紫色极光与闪烁粒子。'

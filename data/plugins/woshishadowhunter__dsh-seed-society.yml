@@ -1,0 +1,6 @@
+url: https://github.com/woshishadowhunter/dsh-seed-society
+name: woshishadowhunter/dsh-seed-society
+category: memory
+description:
+  en: 'Memory consolidation tuning for dsh-mneme (autoDream enabled, schema-max output budget, deepseek-chat route) plus the llm-deepseek reasoning-effort fix, an MCP bridge to the auditable seed-society agent runtime, and six yogacara seed skills.'
+  zh: '面向 dsh-mneme 的记忆巩固调优（开启 autoDream、放大输出预算、deepseek-chat 路由）与 llm-deepseek 推理力度修复，附带可审计智能体运行时 seed-society 的 MCP 工具桥与六个唯识种子技能。'

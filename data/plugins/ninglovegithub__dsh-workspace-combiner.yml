@@ -1,0 +1,6 @@
+url: https://github.com/ninglovegithub/dsh-workspace-combiner
+name: ninglovegithub/dsh-workspace-combiner
+category: ui
+description:
+  en: 'Multi-workspace manager: bind a docs anchor plus ordered code-project repositories into one session, injecting their absolute paths, a recursive file index, a server/client endpoint index and optional coding standards, and syncing writable directories into the sandbox.'
+  zh: '多工作区管理器：把文档锚点目录与若干代码项目仓库组合进同一会话，注入绝对路径、递归文件索引、前后端端点落点索引与可选的开发规范，并把可写目录同步进沙盒。'

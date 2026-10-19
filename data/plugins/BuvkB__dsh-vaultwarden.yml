@@ -1,0 +1,7 @@
+url: https://github.com/BuvkB/dsh-vaultwarden
+name: BuvkB/dsh-vaultwarden
+category: security
+description:
+  en: 'Reads and writes a self-hosted Bitwarden/Vaultwarden vault from any session: nine bitwarden_* tools, real-time WebSocket sync with a polling fallback, and a settings panel with readonly, ask and auto write modes.'
+  zh: '让任意会话直接读写自建的 Bitwarden/Vaultwarden 保险库：九个 bitwarden_* 工具、WebSocket 实时同步（不可用时降级轮询），带 readonly/ask/auto 三档写权限的设置面板——可编辑五类条目，面板展示的密码与动态码会打码，对话里的工具卡片同样把密码等敏感值隐藏。'
+tarball: https://github.com/BuvkB/dsh-vaultwarden/releases/latest/download/dsh-vaultwarden.tgz

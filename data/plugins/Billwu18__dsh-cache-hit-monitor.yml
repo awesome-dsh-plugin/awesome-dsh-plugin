@@ -1,0 +1,6 @@
+url: https://github.com/Billwu18/dsh-cache-hit-monitor
+name: Billwu18/dsh-cache-hit-monitor
+category: usage
+description:
+  en: Live prompt-cache telemetry for the current session in the DSH right sidebar, drawn as a register bank and a reactor-core history board.
+  zh: 以寄存器阵列与反应堆芯历史盘面的形式，在 DSH 右侧栏实时显示当前会话的提示词缓存遥测。

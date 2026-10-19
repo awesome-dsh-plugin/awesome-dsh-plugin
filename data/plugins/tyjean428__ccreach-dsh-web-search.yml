@@ -1,0 +1,6 @@
+url: https://github.com/tyjean428/ccreach-dsh-web-search
+name: tyjean428/ccreach-dsh-web-search
+category: tools
+description:
+  en: CCReach capability-search provider for DeepSeek Harness, letting agents discover data sources, tools, APIs, MCP servers, skills and workflows.
+  zh: 让 DeepSeek Harness 的 Agent 检索 CCReach 能力目录（数据源、工具、API、MCP、技能与工作流）。

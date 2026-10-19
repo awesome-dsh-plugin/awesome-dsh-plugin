@@ -1,0 +1,7 @@
+url: https://github.com/volcengine/ark-cli/tree/main/dsh-plugins/ark-managed-agents
+name: volcengine/ark-cli#ark-managed-agents
+category: tools
+tarball: https://github.com/volcengine/ark-cli/releases/download/dsh-plugins%2Fv0.1.0/ark-managed-agents.tgz
+description:
+  en: Adds a Managed Agents settings tab and MCP tools to dispatch long-running agent tasks to Ark cloud Managed Agents.
+  zh: 新增 Managed Agents 设置页，并通过 MCP 工具向方舟云端 Managed Agents 派发长任务、取回轨迹与产物。

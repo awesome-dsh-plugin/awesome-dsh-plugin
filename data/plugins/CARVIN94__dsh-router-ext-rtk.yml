@@ -1,0 +1,6 @@
+url: https://github.com/CARVIN94/dsh-router-ext-rtk
+name: CARVIN94/dsh-router-ext-rtk
+category: tools
+description:
+  en: 'RTK (Rust Token Killer) extension for dsh-router: rewrites each bash tool call through `rtk rewrite` so the agent reads compressed command output, and falls back to the original command when rtk is missing or has no equivalent.'
+  zh: 'dsh-router 的 RTK(Rust Token Killer)扩展插件：把每次 bash 工具调用经 `rtk rewrite` 改写，让 agent 读到压缩后的命令输出；rtk 缺失或无等价改写时原样执行。'

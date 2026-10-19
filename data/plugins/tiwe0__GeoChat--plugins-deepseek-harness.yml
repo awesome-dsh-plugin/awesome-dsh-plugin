@@ -1,0 +1,7 @@
+url: https://github.com/tiwe0/GeoChat/tree/master/plugins/deepseek-harness
+name: tiwe0/GeoChat#deepseek-harness
+category: tools
+description:
+  en: 'Session-scoped GeoGebra canvas with 20 native tools for drawing, scene readback, text layout checks and animation capture, plus 55 mathematical skills and bundled offline applet assets.'
+  zh: '会话隔离的 GeoGebra 画布，提供 20 个原生工具用于作图、场景读回、文字排版检查与动画采样，并内置 55 个数学技能和离线 Applet 资源。'
+tarball: https://github.com/tiwe0/GeoChat/releases/download/dsh-plugin-v0.1.5/dsh-geochat-plugin-0.1.5.tgz

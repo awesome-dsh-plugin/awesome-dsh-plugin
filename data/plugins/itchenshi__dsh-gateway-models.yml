@@ -1,0 +1,7 @@
+url: https://github.com/itchenshi/dsh-gateway-models
+name: itchenshi/dsh-gateway-models
+category: model
+description:
+  en: 'Declares the OpenCode Go and Command Code route wire protocol and endpoint (so the API address never has to be typed), adds the DeepSeek V4.1 models to the OpenCode Go route and puts them first, completes the Command Code model list from its public catalog, and attaches a per-conversation x-opencode-session header to OpenCode requests (fixes 400 MissingSessionID).'
+  zh: '为 opencode-go 与 Command Code 路由声明 wire 协议和 API 地址（不用手填地址）；把 DeepSeek V4.1 模型补进 opencode-go 路由并排到最前；从公开目录补齐 Command Code 的模型清单；并为发往 OpenCode 的请求附加按会话的 x-opencode-session 头（修 400 MissingSessionID）。'
+tarball: https://github.com/itchenshi/dsh-gateway-models/releases/download/v0.2.0/dsh-gateway-models-0.2.0.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-lsp-packs/tree/main/dsh-lsp-php
+name: 988hj7tczd-oss/dsh-lsp-packs#dsh-lsp-php
+category: dev
+description:
+  en: 'PHP LSP configuration plugin for DeepSeek Harness using Intelephense.'
+  zh: '基于 Intelephense 为 DeepSeek Harness 提供 PHP 代码导航和语言服务配置。'

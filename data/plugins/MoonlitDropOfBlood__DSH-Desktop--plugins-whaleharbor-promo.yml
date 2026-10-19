@@ -1,0 +1,6 @@
+url: https://github.com/MoonlitDropOfBlood/DSH-Desktop/tree/master/plugins/whaleharbor-promo
+name: MoonlitDropOfBlood/DSH-Desktop#whaleharbor-promo
+category: ui
+description:
+  en: "Turns a plain-browser DSH session into the WhaleHarbor lite client: a standalone browser --app window with a client-style top bar and task notifications, while the full desktop installer downloads in the background (multi-source, SHA-256 verified) and an install prompt appears when ready."
+  zh: "把浏览器里的 DSH 会话变成鲸港简版客户端：独立 --app 窗口、客户端顶栏与任务通知；后台多源下载完整桌面安装包（SHA-256 校验），完成后提示安装。"

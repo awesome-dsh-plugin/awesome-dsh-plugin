@@ -1,0 +1,6 @@
+url: https://github.com/GitHub-Xzhi/dsh-simple-worktree-plus
+name: GitHub-Xzhi/dsh-simple-worktree-plus
+category: git
+description:
+  en: Manages Git worktrees in DeepSeek Harness with branch deletion controls and scoped workspace management.
+  zh: 为 DeepSeek Harness 管理 Git Worktree，提供分支删除控制和指定工作区管理。

@@ -1,0 +1,6 @@
+url: https://github.com/xyAxzy/dsh-conversation-map
+name: xyAxzy/dsh-conversation-map
+category: ui
+description:
+  en: 'A live conversation map for DeepSeek Harness web: real-time session tree with subagent lineage, running state, and one-click navigation.'
+  zh: 'DSH 对话地图：当前工作区全部会话的实时树状图，子代理谱系、运行状态一目了然，双击即跳转。'

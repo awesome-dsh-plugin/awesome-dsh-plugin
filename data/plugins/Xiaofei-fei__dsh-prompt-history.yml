@@ -2,5 +2,5 @@ url: https://github.com/Xiaofei-fei/dsh-prompt-history
 name: Xiaofei-fei/dsh-prompt-history
 category: ui
 description:
-  en: 'Terminal-style copy & paste plus bash-like prompt history for the DSH web composer: any selection auto-copies, right-click pastes the clipboard directly, and Up/Down arrows recall previously submitted messages — history sourced from the session''s own message log (zero config, zero extra storage).'
-  zh: '为 DSH Web 输入框提供终端式复制粘贴与类 Linux shell 的提示词历史：选中即自动复制、右键直接粘贴、↑/↓ 召回之前发送过的消息，历史取自会话自身的消息记录（零配置、零额外存储）。'
+  en: 'Terminal-style composer for the DSH web GUI: shell prompt history (↑/↓, prefix search, Ctrl+R), Codex-style completion and next-prompt prediction (Tab or → to accept), selection toolbar (copy / quote / ask in side chat), right-click paste, draggable chat TOC, and a parallel side-chat thread in the right sidebar.'
+  zh: '为 DSH Web 输入框提供终端式体验：↑/↓ 历史（前缀搜索、Ctrl+R）、Codex 风格的历史补全与下一句预测（Tab/→ 接受）、选中工具栏（复制/引用/侧聊追问）、右键直接粘贴、可拖动会话目录，以及能在右栏并行跑第二条 agent 线程的侧聊（fork 全上下文、浮动/分屏、双向桥接、并发写提醒）。'

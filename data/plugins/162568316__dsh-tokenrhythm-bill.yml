@@ -1,0 +1,6 @@
+url: https://github.com/162568316/dsh-tokenrhythm-bill
+name: 162568316/dsh-tokenrhythm-bill
+category: usage
+description:
+  en: 'Tokenrhythm (基元律动) finance dashboard for DeepSeek Harness: account balance & expiring credits, category-filtered model price cards (with discounted prices), service status and platform key management; login via platform account or session cookie — credentials stay on the local host.'
+  zh: '基元律动费用中心：账户余额与限时额度、按分类筛选的模型价格卡（含折扣价）、服务状态与平台密钥管理，支持平台账号或 Cookie 登录，凭据存本机 host。'

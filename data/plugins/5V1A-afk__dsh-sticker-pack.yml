@@ -1,0 +1,6 @@
+url: https://github.com/5V1A-afk/dsh-sticker-pack
+name: 5V1A-afk/dsh-sticker-pack
+category: fun
+description:
+  en: Adds a sticker pack to DeepSeek Harness replies. The plugin rolls the dice, the model attaches the chosen sticker at the end of its reply, and the pictures come from a remote pack.json you can host anywhere.
+  zh: 给 DeepSeek Harness 的回复加上表情包。贴不贴由插件掷骰决定，模型把选中的图放到回复末尾；图库来自一个可以自己托管的远端 pack.json。

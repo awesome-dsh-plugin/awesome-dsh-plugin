@@ -1,0 +1,6 @@
+url: https://github.com/Very12345/dsh-computer-use-windows
+name: Very12345/dsh-computer-use-windows
+category: tools
+description:
+  en: 'Windows desktop control with window-bound screenshots and accessibility state, text readback, DSH approvals, and activity overlays.'
+  zh: 'Windows 桌面操作插件，提供绑定窗口的截图与无障碍状态、文本回读、DSH 审批和操作提示层。'

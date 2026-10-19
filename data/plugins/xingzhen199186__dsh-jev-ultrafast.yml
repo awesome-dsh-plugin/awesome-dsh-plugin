@@ -1,0 +1,6 @@
+url: https://github.com/xingzhen199186/dsh-jev-ultrafast
+name: xingzhen199186/dsh-jev-ultrafast
+category: browser
+description:
+  en: 'Drive a browser from one natural-language goal: a decision service picks the next operation and target from an indexed element table, so a DSH session spends one tool call instead of one turn per click.'
+  zh: '给 DeepSeek Harness 一句话目标：决策服务从带编号的元素表里挑出下一步操作与目标元素，驱动真实浏览器把事办完，一趟多步任务只花一次工具调用。'

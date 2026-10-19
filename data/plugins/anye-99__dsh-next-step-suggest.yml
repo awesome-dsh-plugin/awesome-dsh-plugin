@@ -1,0 +1,6 @@
+url: https://github.com/anye-99/dsh-next-step-suggest
+name: anye-99/dsh-next-step-suggest
+category: ui
+description:
+  en: 'Next-step suggestions for the DSH composer: after each completed turn, one auxiliary call on the session''s current model returns 3 clickable follow-up suggestions above the input box, and clicking one fills the draft.'
+  zh: '下一步建议：每轮回答结束后，用会话当前模型做一次辅助调用提炼 3 条可点击的后续提问建议，显示在输入框上方，点击任意一条即填入草稿。'

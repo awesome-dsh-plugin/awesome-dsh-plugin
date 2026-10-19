@@ -1,0 +1,6 @@
+url: https://github.com/zxmqq1234/dsh-auto-retry
+name: zxmqq1234/dsh-auto-retry
+category: tools
+description:
+  en: Adds supplemental request retries, turn auto-continue and a no-response watchdog on top of built-in dsh retries, with a live countdown banner, toast notifications and a usage dashboard.
+  zh: 在 dsh 内置重试之上追加重试、回合自动继续与无响应看门狗，提供实时倒计时横幅、通知弹窗与统计看板。

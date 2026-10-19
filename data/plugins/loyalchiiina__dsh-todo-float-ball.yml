@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-todo-float-ball
+name: loyalchiiina/dsh-todo-float-ball
+category: ui
+description:
+  en: 'Floating progress ball for the AI agent todo checklist: six skins, live done/total ring, multi-session monitoring with pins, inline rename, capsule mode, draggable; realtime sync via the sessions service.'
+  zh: '悬浮球常驻显示 AI 会话的任务清单进度：六种皮肤（星云流光/宝石/顶弧、石墨、蓝宝石、玻璃）、外环进度环、多会话固定监控、面板内改名，数据实时同步。'

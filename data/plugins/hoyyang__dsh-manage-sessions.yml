@@ -1,0 +1,6 @@
+url: https://github.com/hoyyang/dsh-manage-sessions
+name: hoyyang/dsh-manage-sessions
+category: session
+description:
+  en: 'Native-feeling session manager: bulk archive/restore/hard-delete, two-stage force-stop with auto-resume, and instant copy-workspace-path.'
+  zh: '侧栏原生增强的会话管理：批量归档/恢复/永久删除，卡死会话两段式强停（自动复活/离线），工作区行一键复制绝对路径。'

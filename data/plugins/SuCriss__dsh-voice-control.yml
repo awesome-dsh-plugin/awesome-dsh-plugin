@@ -1,0 +1,6 @@
+url: https://github.com/SuCriss/dsh-voice-control
+name: SuCriss/dsh-voice-control
+category: voice
+description:
+  en: "Voice control for the DSH web composer: push-to-talk speech-to-text into the input box (with optional auto-send), spoken playback of assistant replies via the Web Speech API, right-click settings popover, and a global Ctrl+M hotkey."
+  zh: "DSH 网页端语音控制：按住说话将语音转文字输入发送框（可自动发送），用浏览器语音合成朗读助手回复；右键麦克风打开设置面板，支持 Ctrl+M 全局快捷键。"

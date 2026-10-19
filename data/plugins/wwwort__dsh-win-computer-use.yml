@@ -1,0 +1,7 @@
+url: https://github.com/wwwort/dsh-win-computer-use
+name: wwwort/dsh-win-computer-use
+category: tools
+description:
+  en: 'Windows-native computer use for DeepSeek Harness: two tools drive and read any desktop app. One batch call runs find, click, type, key, read, wait and screenshot steps in a single engine pass, so a task whose steps are known up front costs one model round trip; reading returns window text rather than an image, and input and capture prefer UI Automation patterns, Win32 messages and offscreen PrintWindow so the user''s focus and pointer stay untouched.'
+  zh: 'DSH 的 Windows 原生电脑操控：两个工具即可驱动并读取任意桌面应用。一次批量调用把找控件、点击、输入、按键、读取、等待、截图放进同一次引擎请求，步骤可事前确定的整件事只花一轮模型往返；读取返回窗口文本而非图像，输入与抓取优先走 UIA 模式、Win32 消息与 PrintWindow 离屏抓取，用户的焦点与鼠标全程不受打扰。'
+tarball: https://github.com/wwwort/dsh-win-computer-use/releases/latest/download/dsh-win-computer-use.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/MuFeng262/dsh-thinking-slider
+name: MuFeng262/dsh-thinking-slider
+category: ui
+description:
+  en: 'Replaces the composer model selector with a "model · reasoning level" trigger: a slider across every level a model reports, three switchable modes (the DSH native selector, a gradient particle rail, an energy-charge track), and a per-provider one-click fill for models that declare no reasoning levels.'
+  zh: '把 composer 的模型选择器换成「模型名 · 推理等级」触发区：滑块覆盖模型上报的全部等级，可切换三种模式（DSH 官方原生选择器、渐变粒子轨道、能量充能轨道），并可按代理商一键为未声明等级的模型补齐四档。'
+tarball: https://github.com/MuFeng262/dsh-thinking-slider/releases/download/v0.3.3/dsh-thinking-slider-0.3.3.tgz

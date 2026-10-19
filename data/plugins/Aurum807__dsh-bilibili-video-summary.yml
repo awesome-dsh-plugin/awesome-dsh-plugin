@@ -1,0 +1,6 @@
+url: https://github.com/Aurum807/dsh-bilibili-video-summary
+name: Aurum807/dsh-bilibili-video-summary
+category: tools
+description:
+  en: Downloads a Bilibili video with yt-dlp, produces a transcript and sampled key frames, and registers the skill the agent uses to write the summary; it activates when a user message contains nothing but the video link. Requires yt-dlp and ffmpeg on PATH.
+  zh: 用 yt-dlp 下载 B 站视频，产出转写稿与抽帧图，并注册写总结所需的技能；当用户消息只有一条视频链接时自动启用。需 PATH 上有 yt-dlp 与 ffmpeg。

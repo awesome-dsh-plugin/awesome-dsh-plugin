@@ -1,0 +1,7 @@
+url: https://github.com/oh-my-engine/dsh-plugin-oh-my-engine
+name: oh-my-engine/dsh-plugin-oh-my-engine
+category: workflow
+tarball: https://github.com/oh-my-engine/dsh-plugin-oh-my-engine/releases/download/v0.1.6/dsh-plugin-oh-my-engine-0.1.6.tgz
+description:
+  en: An approval-gated OME engineering delivery preset with session-isolated lifecycle evidence.
+  zh: 采用阶段审批门禁和会话隔离证据记录的 OME 工程交付 Agent 预设。

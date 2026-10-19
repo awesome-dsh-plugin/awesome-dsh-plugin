@@ -1,0 +1,7 @@
+url: https://github.com/ccll/dsh-advisor-flow
+name: ccll/dsh-advisor-flow
+category: agi
+tarball: https://github.com/ccll/dsh-advisor-flow/releases/download/v0.2.1/dsh-advisor-flow-0.2.1.tgz
+description:
+  en: "Executor/advisor workflow ported from pi-advisor-flow: the executor calls ask_advisor for a second opinion at key decisions, after repeated failures and before completion; equivalent repeated tool calls are intercepted before execution for an advisor review with a proceed/revise/blocked verdict, and hard mode force-reviews every turn before it closes. Per-call token and cost ledger with /advisor status readout, privacy tiers for repo context and file contents, six-shape secret redaction, and a web settings card; advisor failures never stall the main loop."
+  zh: "移植自 pi-advisor-flow 的执行者/顾问工作流：执行者经 ask_advisor 工具按需请求第二意见（可附问题、草稿、仓库上下文档位与点名文件）；等价工具调用重复达到阈值时在执行前拦截，由顾问以 proceed/revise/blocked 三值裁决，硬模式下回合收口前强制评审；提供逐次 token 与成本台账、/advisor status 状态读数、仓库上下文与文件内容分级授权、六类密钥形状脱敏与 web 设置卡；advisor 失败不停摆主循环。"

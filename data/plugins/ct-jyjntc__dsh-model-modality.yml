@@ -1,0 +1,6 @@
+url: https://github.com/ct-jyjntc/dsh-model-modality
+name: ct-jyjntc/dsh-model-modality
+category: model
+description:
+  en: "Declare whether a configured third-party model accepts image (multimodal) input; writes the modality into the owning provider settings and verifies it through runtime model resolution."
+  zh: "声明第三方模型是否支持图像（多模态）输入，写入所属提供方设置并通过运行时模型解析校验。"

@@ -1,0 +1,6 @@
+url: https://github.com/ECNU/EduWork/tree/main/packages/dsh-mail
+name: ECNU/EduWork#dsh-mail
+category: tools
+description:
+  en: 'Read-only IMAP search and attachments, plus SMTP sending under DSH permissions, with separate reading and sending switches and a credential-backed settings page.'
+  zh: '通过只读 IMAP 检索邮件与获取附件，按 DSH 权限发送 SMTP 邮件，提供独立收发开关和接入凭据存储的设置页。'

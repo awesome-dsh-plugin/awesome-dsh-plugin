@@ -1,0 +1,6 @@
+url: https://github.com/DWJZ/dsh-restart
+name: DWJZ/dsh-restart
+category: ui
+description:
+  en: 'Adds a Restart page to the DSH Web settings panel. The page shows the PID, port, start time and uptime of the running host and restarts it through a detached helper that waits until the port stops answering before replaying the same launch invocation; the page reloads itself once the replacement host answers with a new boot id.'
+  zh: '在 DSH Web 设置面板里增加一个「重启」页：显示当前宿主的 PID、端口、启动时间与运行时长，重启由分离的 helper 完成——等端口不再应答后再按同一启动命令拉起新进程；替代宿主返回新的 boot id 后页面自动刷新。'

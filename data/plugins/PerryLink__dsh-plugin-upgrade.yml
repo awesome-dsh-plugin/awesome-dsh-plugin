@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-plugin-upgrade
+name: PerryLink/dsh-plugin-upgrade
+category: skill
+description:
+  en: 'Plugin-author upgrade skill for DeepSeek Harness: one package carrying a corridor index, which detects the caller peer band and routes to the closed corridor card that matches it (0.1.3-alpha.1 -> 0.1.5-rc.1 as legs A+B, 0.1.5-rc.2 -> 0.1.6-alpha.2 as leg C), plus a zero-dependency seam scanner shipped as a bundle skill and an npx CLI.'
+  zh: 面向 DeepSeek Harness 插件作者的升级技能：一个包只放一份走廊索引，自动识别调用方的 peer 区间并路由到对应已封版的升级卡片（0.1.3-alpha.1 至 0.1.5-rc.1 为 A+B 两条腿，0.1.5-rc.2 至 0.1.6-alpha.2 为 C 腿），并附带以 bundle 技能与 npx CLI 两种形态提供的零依赖接缝扫描器。

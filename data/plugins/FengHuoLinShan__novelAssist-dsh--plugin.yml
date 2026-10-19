@@ -1,0 +1,6 @@
+url: https://github.com/FengHuoLinShan/novelAssist-dsh/tree/main/plugin
+name: FengHuoLinShan/novelAssist-dsh#novelcraft-dsh
+category: workflow
+description:
+  en: 'Long-form novel writing plugin: each book is a git repository of frontmatter files, with 39 DSH domain tools and a web writing UI. Deep import drafts candidates, AI adoption into canonical assets requires DSH approval, and deterministic continuity checks ship with a report-only benchmark. Independent open source (MIT), not an official DeepSeek product; requires Node >= 24.11.0 and currently targets DSH 0.1.2-rc.1.'
+  zh: '长篇小说写作插件：每本书一个 git 仓库，当前 39 个 DSH 领域工具 + Web 写作台；深度导入产候选草稿、AI 采用类写入正式资产前必过审批、确定性连续性检查（报告型）。独立开源（MIT），非 DeepSeek 官方产品；需 Node ≥ 24.11.0，当前适配 DSH 0.1.2-rc.1。'

@@ -1,0 +1,6 @@
+url: https://github.com/XinzeQing/dsh-user-memory
+name: XinzeQing/dsh-user-memory
+category: memory
+description:
+  en: User-authored long-term memory in four tiers (must-follow rules, behavior settings, user profile, optional rules), injected as a system-prompt section, with agent tools to propose edits and a Chinese panel where the user reviews and applies them.
+  zh: 四层用户自写的长期记忆（必须遵守／行为设定／用户画像／可选遵守），作为系统提示词的一节注入；AI 只能提议、不能直接写入，由中文面板确认后生效。

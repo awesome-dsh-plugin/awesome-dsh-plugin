@@ -1,0 +1,7 @@
+url: https://github.com/aadmin61-design/dsh-codex-dots
+name: aadmin61-design/dsh-codex-dots
+category: workflow
+description:
+  en: 'DeepSeek-led background orchestration of Codex and DSH subagents, with existing conversation handoff, Markdown history, quota pauses, and bounded decision retries.'
+  zh: '由 DeepSeek 主导后台调度 Codex 和 DSH 子对话，支持已有对话接管、Markdown 历史、额度暂停和有限决策重试。'
+tarball: https://github.com/aadmin61-design/dsh-codex-dots/releases/download/v2.3.2/local-dsh-codex-dots-2.3.2.tgz

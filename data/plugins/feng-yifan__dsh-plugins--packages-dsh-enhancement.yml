@@ -1,0 +1,6 @@
+url: https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-enhancement
+name: feng-yifan/dsh-plugins#dsh-enhancement
+category: remote
+description:
+  en: 'Web GUI enhancement bundle: a standalone password gateway with optional HTTPS for LAN and remote access, PWA install and icons, and desktop plus Web Push notifications, configured from a settings page.'
+  zh: 'DSH 增强套件：为 Web GUI 提供独立的密码访问网关（可选 HTTPS，适合局域网/远程访问），整合 PWA 安装与图标、桌面通知与 Web Push，并在设置页统一配置。'

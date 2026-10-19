@@ -1,6 +1,0 @@
-url: https://github.com/WSL043/dsh-deepseek-dashboard
-name: WSL043/dsh-deepseek-dashboard
-category: usage
-description:
-  en: Shows official DeepSeek API cash balance and private DSH-local request, token, cache, daily, and per-model usage charts.
-  zh: 展示 DeepSeek 官方 API 现金余额，以及私密的 DSH 本地请求、Token、缓存、每日和按模型用量图表。

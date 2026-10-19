@@ -1,0 +1,6 @@
+url: https://github.com/serra006/dsh-connect-opencode
+name: serra006/dsh-connect-opencode
+category: model
+description:
+  en: Expose every free model from a local opencode serve catalog — all providers, including your own custom ones — to DeepSeek Harness's model picker, with OpenCode's native tools denied so execution stays in DSH.
+  zh: 把本机 opencode serve 目录里的全部免费模型（覆盖所有 provider，含你自定义的 provider）接入 DeepSeek Harness 模型选择器，并禁用 OpenCode 原生工具，执行权留在 DSH。
