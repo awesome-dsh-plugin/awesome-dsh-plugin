@@ -1,0 +1,6 @@
+url: https://github.com/iStarryDust/dsh-prompt-enhance
+name: iStarryDust/dsh-prompt-enhance
+category: tools
+description:
+  en: 'Rewrites the composer draft in one turn with the session model via a star button, with editable prompt templates and a toggle back to the original text.'
+  zh: '发送框的星形按钮用当前会话模型单轮重写草稿，模板文件可编辑，并可切回原文。'
