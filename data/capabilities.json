@@ -43599,23 +43599,6 @@
   "scannedAt": "2026-09-24T17:41:52.360Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/xxww0098/dsh-plugin-oauth-subs": {
-  "version": "0.0.102",
-  "spec": "github:xxww0098/dsh-plugin-oauth-subs",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read",
-   "network",
-   "credentials",
-   "env"
-  ],
-  "redLines": [
-   "reads credentials/secrets AND has network access"
-  ],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/XXXXXQ-0206/dsh-prompt-for-me": {
   "version": "0.7.1",
   "spec": "github:XXXXXQ-0206/dsh-prompt-for-me",
