@@ -1,7 +1,7 @@
 url: https://github.com/hj9178/dsh-ottosmother
 name: hj9178/dsh-ottosmother
 category: identity
-tarball: https://github.com/hj9178/dsh-ottosmother/releases/download/v0.4.0/dsh-ottosmother-0.4.0.tgz
+tarball: https://github.com/hj9178/dsh-ottosmother/releases/download/v0.5.0/dsh-ottosmother-0.5.0.tgz
 description:
-  zh: "给模型一份私人词表：用户写「滚木」时按「没有」理解，写「棍母」时按「不存在」理解；模型要表达「没有 / 不存在」时，自己判断是否用这两个词把整句改写得自然通顺，而不是机械替换。插件只注册一个 system prompt 段落，不改写用户输入与模型输出。"
-  en: 'Gives the model a private glossary: it reads 「滚木」 as "none" and 「棍母」 as "doesn''t exist", and when it needs to say "there is none" it decides on its own whether to phrase the whole sentence naturally with those words instead of mechanically swapping tokens. Registers a single system-prompt section; user input and model output pass through untouched.'
+  zh: '给模型一份私密黑话词表：用户写「滚木」按「没有」理解、写「棍母」按「不存在」理解；模型要表达这些含义时，自己判断是否用词表里的词把整句组织得自然通顺。只注入一个 system prompt 段落，不改写输入输出；词表存在 glossary.yml 里可自由扩展，并提供提醒强度选项。'
+  en: 'Gives the model a private glossary: reads 「滚木」 as "none" and 「棍母」 as "doesn''t exist", and decides on its own whether to phrase a sentence with those words when expressing that meaning. Registers one system-prompt section and rewrites nothing; the word list lives in glossary.yml and is extensible, with a reminder-strength option.'
