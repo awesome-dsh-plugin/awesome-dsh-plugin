@@ -1,5 +1,5 @@
 url: https://github.com/xindong/dsh-client-canvas
-name: xindong/dsh-client-canvas
+name: DSH Canvas
 category: ui
 description:
   en: A persistent shared canvas for DSH Web and its agent, with a browser UI and tools to organize media, nodes, and connections.
