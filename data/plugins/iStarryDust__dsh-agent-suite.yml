@@ -1,0 +1,6 @@
+url: https://github.com/iStarryDust/dsh-agent-suite
+name: iStarryDust/dsh-agent-suite
+category: identity
+description:
+  en: 'Authors agents as directories under the harness home, giving each one its own identity, long-term memory and chat history, with a sidebar browser and edit-and-regenerate for user messages.'
+  zh: '把 Agent 做成目录：每个 Agent 有自己的身份、长期记忆与聊天记录，侧栏可浏览，用户消息支持编辑后重新生成。'
