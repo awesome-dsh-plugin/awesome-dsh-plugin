@@ -1372,5 +1372,9 @@
   "https://github.com/qinyre/dsh-plugin-archive-manager": [
     "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-rail.png",
     "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-archive.png"
+  ],
+  "https://github.com/lilcandi/dsh-session-live": [
+    "https://raw.githubusercontent.com/lilcandi/dsh-session-live/main/docs/shots/panel-in-context.png",
+    "https://raw.githubusercontent.com/lilcandi/dsh-session-live/main/docs/shots/settings.png"
   ]
 }
