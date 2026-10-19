@@ -1,6 +1,5 @@
-# 收录到 awesome-dsh-plugin（插件市场）用的一条条目。
-# 提 PR 时把本文件放到 data/plugins/<owner>__dsh-session-janitor.yml
-# —— 把下面两处 guokecloud 换成你的 GitHub 用户名（仓库所有者）。
+# 收录到 awesome-dsh-plugin（插件市场）的条目文件：
+#   data/plugins/guokecloud__dsh-session-janitor.yml
 url: https://github.com/guokecloud/dsh-session-janitor
 name: guokecloud/dsh-session-janitor
 category: session
