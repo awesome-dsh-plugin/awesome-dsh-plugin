@@ -3,5 +3,5 @@ name: yixing233/dsh-crabtodo
 category: workflow
 tarball: https://github.com/yixing233/dsh-crabtodo/releases/download/v0.1.0/dsh-crabtodo-0.1.0.tgz
 description:
-  en: 'Persistent todo manager for DeepSeek Harness: six model-facing tools (add, list, update, done, remove, clear) over a JSON store under the DSH home, plus a web sidebar page with a bottom-anchored composer, status tabs, project/global scoping resolved from the session workspace, and one-click task references into the composer.'
-  zh: 'DeepSeek Harness 的持久化待办管理：六个模型工具（增、列、改、完成、删、清）读写 DSH 主目录下的 JSON 存储，Web 侧边栏提供底部输入卡片、状态标签页、按会话工作区解析的项目/全局范围，以及一键把任务引用进输入框。'
+  en: 'A shared todo list for DeepSeek Harness: you manage tasks in a sidebar page, your agent manages the same tasks through todo tools, and everything survives restarts.'
+  zh: 'DeepSeek Harness 的人机共享待办清单：你在侧边栏页面管理任务，AI 通过待办工具管理同一份任务，数据重启不丢。'
