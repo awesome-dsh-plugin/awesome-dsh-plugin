@@ -1,0 +1,6 @@
+url: "https://github.com/7gzgn/dsh-file-handover"
+name: "dsh-file-handover"
+category: tools
+description:
+  en: "Hand a local file to any program's file picker: wait for the native Open dialog, paste the path through the clipboard, read it back to verify character by character, then confirm. The target is always explicit and every step leaves evidence. Windows only (EnumWindows / UI Automation)."
+  zh: 把本地文件交给任何程序的「打开文件」对话框：等对话框出现、走剪贴板填路径、读回来逐字核对、再点确认。目标必须显式给，每一步都留证据——文件上传、微信发文件、PS 打开都能用它代劳。仅 Windows（依赖 EnumWindows / UI Automation）。

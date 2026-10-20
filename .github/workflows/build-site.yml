@@ -86,6 +86,12 @@ jobs:
           # Needed by the catalog publish below; harmless for the site build.
           registry-url: https://registry.npmjs.org
       - run: npm ci
+        env:
+          # The lockfile pins registry.npmmirror.com URLs. On GitHub runners that CDN
+          # has repeatedly returned 503/504 and hung `npm ci` for tens of minutes
+          # (2026-10-19). Fetch from npmjs in CI; local installs keep their own registry.
+          npm_config_registry: https://registry.npmjs.org/
+          npm_config_replace_registry_host: always
       - run: node --test scripts/download-window.test.mjs
       # Rolling probe cache: unique key so every run saves, restore-keys pulls
       # the most recent.

@@ -2,5 +2,5 @@ url: https://github.com/2JumpSinA/dsh-context-guard
 name: 2JumpSinA/dsh-context-guard
 category: session
 description:
-  en: 'DSH context-pressure guard: shows session occupancy, warns at 45% and 60% to write the handoff and start a new session, and at 45% auto-drafts the handoff block into your working directory. Registers no tool and injects no prompt, so it costs no context.'
-  zh: 'DSH 上下文守卫：显示会话占用，在 45% 与 60% 提醒你写交接、换新会话，并在 45% 起自动把交接草稿写进你的工作目录。不注册工具、不注入提示词，因此不消耗上下文。'
+  en: 'DSH context-pressure guard: shows session occupancy, warns at 45% and 60% to write the handoff and start a new session. At 45% it auto-drafts a machine-facts handoff block into your working directory; on a level crossing the banner offers a one-click "write the handoff" that also hands you a copy-ready opener for the next session. When the platform compacts the context it leaves a pre-compaction snapshot (occupancy, spend, changed files) that would otherwise be unrecoverable. Registers no tool and injects no prompt, so it costs no context.'
+  zh: 'DSH 上下文守卫：显示会话占用，在 45% 与 60% 提醒你写交接、换新会话；45% 起自动把交接草稿写进你的工作目录。跨档时点一下「写好交接，我复制」就立刻写一份草稿，并得到可直接粘贴到新会话的开场白。平台压缩上下文时自动留一份「压缩前快照」（水位 / 花费 / 改过的文件）——这些数字压完就查不到了。不注册工具、不注入提示词，因此不消耗上下文。'

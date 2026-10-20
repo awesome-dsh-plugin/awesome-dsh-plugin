@@ -1,5 +1,5 @@
-url: https://github.com/alvinunreal/openpets/tree/main/packages/dsh
-name: alvinunreal/openpets#dsh
+url: https://github.com/OpenPetsHQ/openpets/tree/main/packages/dsh
+name: OpenPetsHQ/openpets#dsh
 category: notify
 description:
   en: Bridges DeepSeek Harness lifecycle status, errors, and approval requests to a locally running OpenPets desktop companion.

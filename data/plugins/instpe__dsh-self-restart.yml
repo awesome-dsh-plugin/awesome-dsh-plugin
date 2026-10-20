@@ -1,0 +1,6 @@
+url: https://github.com/instpe/dsh-self-restart
+name: instpe/dsh-self-restart
+category: dev
+description:
+  en: Adds a restart_self tool and /restart command that replace the DSH host process with the same command line and port, then deliver a message into the calling session so the agent picks the work back up by itself.
+  zh: 新增 restart_self 工具与 /restart 命令：以相同命令行与端口替换 DSH 宿主进程，重启完成后向发起会话投递一条消息，让智能体接着自己跑。

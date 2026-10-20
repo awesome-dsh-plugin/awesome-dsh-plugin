@@ -1,0 +1,7 @@
+url: https://github.com/it-glen/dsh-mcp-manager
+name: it-glen/dsh-mcp-manager
+category: tools
+tarball: https://github.com/it-glen/dsh-mcp-manager/releases/download/v0.3.1/it-glen-dsh-mcp-manager-0.3.1.tgz
+description:
+  en: 'MCP server manager for DSH: add, edit, enable and disable Model Context Protocol servers from a panel, with stdio and streamable-HTTP transports, per-server tool-call timeouts, live connection and tool-count status, and persistence to a project- or home-level mcp.json. Maintained fork of @wingsky-1/dsh-mcp-manager.'
+  zh: '面向 DSH 的 MCP 服务器管理器：在面板中增删改、启用或停用 Model Context Protocol 服务器，支持 stdio 与 streamable-HTTP 两种传输、按服务器设置工具调用超时、实时查看连接状态与工具数量，并持久化到项目级或主目录的 mcp.json。@wingsky-1/dsh-mcp-manager 的维护分支。'

@@ -3,5 +3,5 @@ name: nightosong/gord-dsh-saber-theme
 category: theme
 tarball: https://github.com/nightosong/gord-dsh-saber-theme/releases/latest/download/gord-dsh-saber-theme.tgz
 description:
-  en: Saber (Fate) theme with icy blue light and dark palettes and character backgrounds for DeepSeek Harness 0.2.0-rc.2 Desktop and Web.
-  zh: 面向 DeepSeek Harness 0.2.0-rc.2 桌面版和 Web 的 Saber（Fate）主题，提供冰蓝浅色、深色配色与角色背景。
+  en: Saber (Fate) theme for DeepSeek Harness Desktop and Web with light/dark palettes, 30 on-demand chat wallpapers rotating every five minutes, and a task attention tray below the right-side turn index, compatible with DSH 0.2.0-rc.2 and 0.2.1-rc.2.
+  zh: 面向 DeepSeek Harness 桌面版和 Web 的 Saber（Fate）主题，提供冰蓝浅色、深色配色、每五分钟随机切换的 30 张按需加载聊天背景，以及右侧对话索引下方的任务关注浮层，兼容 DSH 0.2.0-rc.2 和 0.2.1-rc.2。

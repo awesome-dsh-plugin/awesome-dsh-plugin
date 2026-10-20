@@ -1,0 +1,6 @@
+url: https://github.com/tbb051122/dsh-plugin-qq-bridge
+name: tbb051122/dsh-plugin-qq-bridge
+category: remote
+description:
+  en: 'Bridge an official QQ bot to DeepSeek Harness in-process: a QQ message starts or resumes a real DSH session inside the host (it appears in the desktop sidebar when its working directory is a registered workspace) and the answer is sent back to QQ as text, image or file. Requires a QQ official bot application (AppID + AppSecret).'
+  zh: '把 QQ 官方机器人接到 DSH 进程内：QQ 里发消息直接开一轮真实会话（工作目录是已登记工作区时，桌面端左侧能看到、能续聊），结果以文本、图片或文件回传 QQ。需一个 QQ 官方机器人应用（AppID + AppSecret）。'

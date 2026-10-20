@@ -2,5 +2,5 @@ url: https://github.com/eghrhegpe/dsh-connect-sensenova-token-plan
 name: eghrhegpe/dsh-connect-sensenova-token-plan
 category: usage
 description:
-  en: 'SenseNova Token Plan credit panel rendered as a config card on the Harness Plugins page: per-pool quota windows (5h and weekly), grant balance and per-model consumption from the SenseNova console API, with in-panel login and automatic token renewal. Three opt-in switches, off by default, register SenseNova models and the Xiaohuanxiong upstream as LLM providers and expose an image-generation tool to the agent.'
-  zh: '在 Harness 的 Plugins 页以插件卡显示商汤 SenseNova 控制台的 Token Plan 积分用量：各积分池额度窗口（5 小时与每周）、返赠余额与每模型消耗，支持面板内登录与令牌自动续期。另有三个默认关闭的可选开关，用于把商汤模型与小浣熊上游注册为 DSH 提供方，并向 agent 暴露出图工具。'
+  en: 'One-tap connect SenseNova Token Plan language and image models into DSH (off by default), with image recognition and thinking level filled in automatically. On a rate limit it backs off and retries on its own instead of misreading it as an exhausted quota. After signing in to the SenseNova console you can see the usage pill, credit pools and per-model consumption. Xiaohuanxiong can also be signed in by QR code, bringing in its models and their consumption multipliers, and taking over DSH web search.'
+  zh: '一键接入商汤 Token Plan的语言、生图模型到 DSH（默认关），自动填入图片识别与思考强度；限频时自动退避重试，不会误判为额度耗尽；登录商汤控制台后，可查看用量胶囊、积分池、每模型消耗。也支持扫码登录小浣熊，接入其模型，查看模型消耗倍率，使用联网搜索。'

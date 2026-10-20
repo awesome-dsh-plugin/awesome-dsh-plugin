@@ -1,0 +1,6 @@
+url: https://github.com/Jakcet/dsh-dschat
+name: Jakcet/dsh-dschat
+category: browser
+description:
+  en: "Embeds the DeepSeek web chat (chat.deepseek.com) in a DSH Desktop main panel through an Electron webview guest, with a back/forward/reload toolbar and a local snapshot of login-related localStorage restored on the next open."
+  zh: "在 DSH 桌面版主面板里通过 Electron webview 嵌入 DeepSeek 网页版聊天（chat.deepseek.com），带后退/前进/刷新工具栏，并把登录相关的 localStorage 快照存在本地、下次打开时回填。"

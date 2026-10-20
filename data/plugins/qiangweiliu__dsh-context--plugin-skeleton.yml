@@ -1,6 +1,0 @@
-url: https://github.com/qiangweiliu/dsh-context/tree/main/plugin-skeleton
-name: qiangweiliu/dsh-context#plugin-skeleton
-category: session
-description:
-  en: 'Context monitoring, compaction, and prompt/tool control for DeepSeek Harness: token breakdowns, trend/event views, budget-based auto-compaction, /ctx controls, and session/global toggles. Read-only monitoring; only the official seam rewrites history.'
-  zh: '为 DeepSeek Harness 提供上下文监控、压缩与提示词管理：用概览、趋势、事件视图查看 token 用量、提示词、工具、历史占比；按预算和阈值在轮末或 step 边界自动压缩，/ctx-compact 手动触发。支持 /ctx 查看用量、调整会话上限；按会话或全局开关提示词与工具，新增内容可追加到用户消息末尾或写入系统提示词。监控只读，压缩仅走官方 seam，不改写 seam 外历史。'

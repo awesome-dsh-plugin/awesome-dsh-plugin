@@ -1,0 +1,6 @@
+url: https://github.com/Ersith/akasha-book/tree/main/plugins/mcp-akasha
+name: Ersith/akasha-book#mcp-akasha
+category: memory
+description:
+  en: 'Registers the Akasha Book memory server over stdio and exposes its 22 akasha_* tools to DeepSeek Harness, covering lookup, briefs, revision chains, audits and session recall. Companions: Hindsight (repo memory), OpenViking (user memory), and the built-in session search (see repo README). Setup: clone the repo, copy core/ aside, then replace <AKASHA_DIR> in cordis.patch.yml with its absolute path (or set the AKASHA_DIR env var); plugins fail loudly while the placeholder remains.'
+  zh: '把阿卡夏之书外置记忆层以 stdio 注册进 DSH，暴露 22 个 akasha_* 工具：检索、主题简报、修订链、审计与会话回看。（配套：Hindsight 仓库记忆 / OpenViking 用户记忆 / 宿主会话检索；见仓库 README） 安装：clone 仓库并复制 core/，把 cordis.patch.yml 里的 <AKASHA_DIR> 换成实际路径（或设 AKASHA_DIR 环境变量）；占位符未替换时插件会明确报错。'

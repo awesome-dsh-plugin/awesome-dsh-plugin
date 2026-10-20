@@ -403,10 +403,6 @@
   "stars": 38,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/alvinunreal/openpets/tree/main/packages/dsh": {
-  "stars": 1081,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/AmeKrance/anan-thermal-monitor": {
   "stars": 2,
   "checkedAt": "2026-08-19"
@@ -5853,6 +5849,10 @@
  },
  "https://github.com/yunxiiQwQ/dsh-maid-whale-UI/tree/main/maid-whale-webui": {
   "stars": 14,
+  "checkedAt": "2026-08-19"
+ },
+ "https://github.com/OpenPetsHQ/openpets/tree/main/packages/dsh": {
+  "stars": 1081,
   "checkedAt": "2026-08-19"
  }
 }

@@ -1,0 +1,6 @@
+url: https://github.com/faxble/dsh-model-picker
+name: faxble/dsh-model-picker
+category: ui
+description:
+  en: 'Model quick picker for DeepSeek Harness: a button left of the model dropdown opens a full model-selection dialog with provider grouping, live search, provider filter, capability tags read from the user''s own input config, reasoning badges, recent-model shortcuts and a reasoning-effort picker; the choice writes back to the native dropdown immediately.'
+  zh: '模型速选器：在模型下拉框左侧添加按钮，弹出全量模型选择窗口（提供商分组、实时搜索、提供商筛选、读取用户配置的真实能力标签、推理徽章、最近使用与推理档位选择器），选中后立即回写原生下拉框并生效。'

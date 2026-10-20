@@ -2,5 +2,5 @@ url: https://github.com/lcy0121/dsh-plugin-compat-check/tree/main/plugin
 name: lcy0121/dsh-plugin-compat-check#plugin
 category: dev
 description:
-  en: 'Compatibility verdicts for installed DSH plugins on the plugin detail page: samples the current host''s service descriptors in-process, extracts each plugin''s calls into host services from source with a pinned Babel AST, and reports missing services or methods with file:line, a certainty of certain/suspected, and an impact basis, alongside coverage limits and observation age. Adds an agent tool, a skill provider and plugin-detail badges; the repository also ships a CLI.'
-  zh: '在插件详情页给出已装 DSH 插件的兼容性结论：在宿主进程内采样服务描述符，用固定版本 Babel AST 从源码提取每个插件对宿主服务的调用，逐条报出缺失的服务或方法及 file:line、确定度（certain/suspected）与影响依据，并给出覆盖限制与观测时效。另加 agent 工具、skill provider 与插件详情角标；仓库还提供 CLI。'
+  en: 'Checks installed DSH plugins for version-declaration and API risks against the current host, with source locations when available, certainty, impact basis and coverage limits. Adds a compatibility settings panel, plugin-detail findings/badges, a compat_check agent tool and a skill provider.'
+  zh: '检查已装 DSH 插件相对当前宿主的版本声明与 API 风险，报告可用源码位置、确定度、影响依据和覆盖限制。提供兼容性设置面板、插件详情发现与角标、compat_check 对话工具及 skill provider。'
