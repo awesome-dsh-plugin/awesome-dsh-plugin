@@ -1,0 +1,6 @@
+url: https://github.com/xiaoyi728/dsh-rule-proxy
+name: xiaoyi728/dsh-rule-proxy
+category: tools
+description:
+  en: 'Routes web_fetch, GitHub and optional SearXNG requests through an HTTP(S) proxy by hostname rule, falling back to a direct connection when the upstream proxy is unreachable; it owns its own transport and leaves model requests and the global fetch/dispatcher untouched.'
+  zh: '按主机名规则让 web_fetch、GitHub 与可选的 SearXNG 请求走指定 HTTP(S) 代理，上游代理不可达时自动回退直连；它自持独立传输，不修改模型请求与全局 fetch/dispatcher。'
