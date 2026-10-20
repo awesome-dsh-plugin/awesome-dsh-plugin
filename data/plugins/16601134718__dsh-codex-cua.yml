@@ -1,0 +1,6 @@
+url: https://github.com/16601134718/dsh-codex-cua
+name: 16601134718/dsh-codex-cua
+category: browser
+description:
+  en: 'Installs the codex-cua skill so DeepSeek Harness can use Codex computer use without extra setup: drives Chrome and native macOS apps, ships a persistent session client and a doctor self-check.'
+  zh: '安装 codex-cua 技能，让 DeepSeek Harness 无需额外配置即可使用 Codex computer use：操作 Chrome 与 macOS 原生应用，自带常驻会话客户端与 doctor 自检。'
