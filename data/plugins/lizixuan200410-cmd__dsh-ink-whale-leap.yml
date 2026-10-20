@@ -1,0 +1,6 @@
+url: https://github.com/lizixuan200410-cmd/dsh-ink-whale-leap
+name: lizixuan200410-cmd/dsh-ink-whale-leap
+category: ui
+description:
+  en: Plays a short ink-wash whale-leap animation over the DeepSeek Harness web UI when it loads, then fades out on its own.
+  zh: 网页加载时在 DeepSeek Harness 界面上播放一段水墨鲸跃动画，随后自行淡出。
