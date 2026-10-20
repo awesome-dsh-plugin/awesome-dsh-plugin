@@ -1,0 +1,6 @@
+url: https://github.com/eloimovo/better-dsh-codex-effort-slider
+name: eloimovo/better-dsh-codex-effort-slider
+category: ui
+description:
+  en: 'Replaces the reasoning-effort control in the DSH composer tool row with a continuous draggable slider: the fill runs blue to violet, higher levels add nebula and dust particles, and every level has its own color. Drag moves one level at a time, and picking a model in the same panel repositions the slider to that model''s middle level.'
+  zh: '把 DSH 输入框工具行的推理等级换成一条连续可拖动的滑条：填充由蓝渐变到紫罗兰，高档位带星云与星尘粒子，一档一色；拖动一档一格，在同一面板里换模型后滑条落到该模型的中间档。'
