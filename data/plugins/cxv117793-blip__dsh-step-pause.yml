@@ -1,0 +1,7 @@
+url: https://github.com/cxv117793-blip/dsh-step-pause
+name: cxv117793-blip/dsh-step-pause
+category: workflow
+description:
+  en: Counts agent steps and, every N of them, adds a progress-report instruction to the batch that is about to be sent, so the agent states what it is doing, what it finished and what comes next, then carries on without stopping for you. Interval, prompt text and a main-agent-only default are editable in its settings page.
+  zh: 按 agent 步骤计数，每满 N 步就在即将发出的那一批消息里追加一条汇报指令，让 agent 说明正在做什么、已完成什么、接下来做什么，说完继续，不停下来等你确认。间隔、提示词原文、以及「只在主智能体汇报」的默认值都能在设置页里改。
+tarball: https://github.com/cxv117793-blip/dsh-step-pause/releases/latest/download/dsh-step-pause.tgz
