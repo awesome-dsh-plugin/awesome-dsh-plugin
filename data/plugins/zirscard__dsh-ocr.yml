@@ -3,6 +3,6 @@ url: https://github.com/zirscard/dsh-ocr
 name: zirscard/dsh-ocr
 category: vision
 description:
-  en: 'Registers one `doc_ocr` tool for scanned PDFs and images: it returns per-page text with confidence, financial-table rows with a balance-sheet tie-out check, or contract-clause hits (type, page, quote). Runs locally on RapidOCR (PaddleOCR PP-OCRv4 ONNX models), discovers an OCR-capable Python, limits concurrent OCR processes, and marks numbers that fail the tie-out instead of inventing them.'
-  zh: '注册一个 `doc_ocr` 工具处理扫描件 PDF 与图片：返回逐页文本与置信度、带资产负债表平衡勾稽的财务报表行，或合同条款命中（类型/页码/引用）。本机 RapidOCR（PaddleOCR PP-OCRv4 ONNX 模型）运行，自动选择可用的 Python、限制并发 OCR 进程，勾稽不平的数字只标出、不编造。'
-tarball: https://github.com/zirscard/dsh-ocr/releases/download/v0.1.0/dsh-ocr.tgz
+  en: 'Registers two tools for DeepSeek Harness. `doc_ocr` turns scanned PDFs and images into structured text (per-page text, financial tables with a balance-sheet tie-out check, contract-clause hits) through a local RapidOCR engine or a Zhipu GLM-OCR cloud engine, and `doc_preprocess` turns a directory of raw files into an Obsidian-ready knowledge base through a seven-stage pipeline with backend routing and sha256-based incremental skipping. Numbers that fail the tie-out are reported, not invented.'
+  zh: '为 DeepSeek Harness 注册两个工具：`doc_ocr` 把扫描件 PDF 与图片转成结构化文本（逐页文本、带资产负债表平衡勾稽的财务报表行、合同条款命中），可用本机 RapidOCR 或智谱 GLM-OCR 云端引擎；`doc_preprocess` 用 7 阶段管线把一批原始文件整理成 Obsidian 可读知识库，含后端路由与 sha256 增量跳过。勾稽不平的数字只报出、不编造。'
+tarball: https://github.com/zirscard/dsh-ocr/releases/download/v0.3.0/dsh-ocr.tgz
