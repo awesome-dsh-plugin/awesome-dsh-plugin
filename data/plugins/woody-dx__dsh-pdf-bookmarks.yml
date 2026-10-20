@@ -1,0 +1,6 @@
+url: https://github.com/woody-dx/dsh-pdf-bookmarks
+name: woody-dx/dsh-pdf-bookmarks
+category: ui
+description:
+  en: 'PDF outline navigation and local reading bookmarks in the existing right-sidebar file preview; supports adding, renaming, deleting and revisiting page positions, with version and integrity guards. Verified on macOS Apple Silicon with dsh Desktop 0.2.1-rc.2.'
+  zh: '在现有右侧文件预览中提供 PDF 内嵌目录导航与本地阅读书签，可添加、改名、删除和跳回页内位置，并有版本与完整性保护。已验证 macOS Apple Silicon 上的 dsh Desktop 0.2.1-rc.2。'
