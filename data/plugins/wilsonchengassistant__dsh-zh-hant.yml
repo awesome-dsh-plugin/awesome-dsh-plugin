@@ -1,0 +1,6 @@
+url: https://github.com/wilsonchengassistant/dsh-zh-hant
+name: wilsonchengassistant/dsh-zh-hant
+category: theme
+description:
+  en: 'Adds a Traditional Chinese (zh-Hant) language to the web GUI, registered through the locale service with one dictionary per namespace and selectable in Settings, General, Language.'
+  zh: '為網頁介面加入繁體中文（zh-Hant）語言，經語言服務註冊，每個 namespace 各有一份字典，並可在「設定 → 一般 → 語言」揀選。'
