@@ -1,7 +1,7 @@
-url: https://github.com/good-saltfish/dsh-novel-reader
-name: good-saltfish/dsh-novel-reader
+url: https://github.com/good-saltfish/dsh-novel-shelf
+name: good-saltfish/dsh-novel-shelf
 category: usage
 description:
   en: 'Read local TXT novels inside the DSH right sidebar. Adds a bookshelf panel that lists the books in %APPDATA%\novel-reader, splits them into chapters, and renders one chapter at a time with adjustable font size and line height; annotations and reading progress are written back to the same files the novel-reader desktop app uses, so the two stay in sync. Ships five reading themes (day, eye, sepia, dark, black) that follow the same settings file, and the panel is fully localized in Chinese and English.'
   zh: '在 DSH 右侧栏里读本地 TXT 小说。书架面板读取 %APPDATA%\novel-reader 中的书目，按章切分并逐章阅读，可调字号与行距；批注与阅读进度写回与 novel-reader 桌面版相同的文件，两个应用数据互通。内置五套阅读主题（白昼、护眼、米黄、深灰、纯黑），与设置文件同步，界面提供中英双语。'
-tarball: https://github.com/good-saltfish/dsh-novel-reader/releases/latest/download/dsh-novel-reader.tgz
+tarball: https://github.com/good-saltfish/dsh-novel-shelf/releases/download/v0.1.0/dsh-novel-shelf-0.1.0.tgz
