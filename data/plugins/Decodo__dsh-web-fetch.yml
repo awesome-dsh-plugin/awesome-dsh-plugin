@@ -1,0 +1,5 @@
+url: https://github.com/Decodo/dsh-web-fetch
+name: Decodo/dsh-web-fetch
+category: browser
+description:
+  en: 'Decodo Web Scraping API as the fetch provider behind the built-in web_fetch tool: returns Markdown by default, pins fetchProvider to decodo, and enforces a configurable per-process fetch cap. Requires a Decodo API key; web_search is unchanged.'
