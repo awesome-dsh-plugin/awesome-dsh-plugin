@@ -1490,6 +1490,7 @@ dsh plugin --profile web add dshmarket
 - [v587d/dsh-opencode-go-usage](https://github.com/v587d/dsh-opencode-go-usage) — 在输入框上方 dock 显示 OpenCode Go 订阅用量（5h 滚动/每周/每月窗口与重置倒计时），内置凭据编辑器。
 - [Vast-Unhurried/dsh-toolkit#dsh-api-balance](https://github.com/Vast-Unhurried/dsh-toolkit/tree/main/packages/dsh-api-balance) — 在会话界面里直接显示 DeepSeek API 余额与每轮对话花费。
 - [vegerot/deepseek-harness-session-cost-pill](https://github.com/vegerot/deepseek-harness-session-cost-pill) — 在输入框底栏显示当前会话的预估花费，每一步都按其自身时间戳采用 DeepSeek 的峰时或非峰时单价计价。
+- [verneuil/dsh-opencode-go-usage](https://github.com/verneuil/dsh-opencode-go-usage) — DSH 悬浮窗插件：三环显示 OpenCode Go 的 5 小时 / 本周 / 本月用量，可选同时显示 DeepSeek 账户余额；悬停浮层列出各窗口与重置倒计时，极简模式把三环嵌套显示；设置页可调刷新间隔、进度口径、显示项与浮窗位置。
 - [vibeinging/dsh-agent-budget](https://github.com/vibeinging/dsh-agent-budget) — agent 树 token 预算管理。
 - [vinyumao/dsh-opencode-usage](https://github.com/vinyumao/dsh-opencode-usage) — OpenCode Go 套餐用量显示：输入框下方常驻徽章显示滚动 / 每周 / 每月用量百分比与重置倒计时，点击展开进度卡片；Agent 可经 `opencode_go_usage` 工具随时查询余额。
 - [vrvtvy/dsh-cache-hit-precision](https://github.com/vrvtvy/dsh-cache-hit-precision) — 把内置缓存命中率在 composer 统计行与 Token 用量弹窗中原位精化为三位小数。
