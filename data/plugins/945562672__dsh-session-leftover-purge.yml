@@ -1,0 +1,7 @@
+url: https://github.com/945562672/dsh-session-leftover-purge
+name: 945562672/dsh-session-leftover-purge
+category: session
+description:
+  en: 'Purges billion-context snapshots and cost-meter ledger rows left behind after a session is deleted in DeepSeek Harness.'
+  zh: '在 DeepSeek Harness 中删除会话后，清理 billion-context 快照与 cost-meter 账本里遗留的记录。'
+tarball: https://github.com/945562672/dsh-session-leftover-purge/releases/latest/download/dsh-session-leftover-purge.tgz
