@@ -13,22 +13,6 @@
   "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/01men/ybkk-AIOS": {
-  "version": "1.1.0",
-  "spec": "github:01men/ybkk-AIOS",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read",
-   "network",
-   "env"
-  ],
-  "redLines": [
-   "uses plaintext http:// to open-connector:3000"
-  ],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/01Virex/dsh-status-rotator": {
   "version": "0.26.0",
   "spec": "github:01Virex/dsh-status-rotator",
@@ -5056,19 +5040,6 @@
   "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-mermaid-render": {
-  "version": "0.1.11",
-  "spec": "github:baosfeng/my-dsh-plugins",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read",
-   "network"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-my-guardian": {
   "version": "0.4.2",
   "spec": "github:baosfeng/my-dsh-plugins",
@@ -5104,19 +5075,6 @@
    "fs-read",
    "network",
    "env"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-think-zh-expand": {
-  "version": "0.4.14",
-  "spec": "github:baosfeng/my-dsh-plugins",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read",
-   "network"
   ],
   "redLines": [],
   "scannedAt": "2026-09-24T17:02:46.730Z",
@@ -6026,20 +5984,6 @@
   ],
   "redLines": [],
   "scannedAt": "2026-09-24T17:41:52.360Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/BOWLUNA/dsh-custom-mode/tree/main/editor": {
-  "version": "1.9.12",
-  "spec": "github:BOWLUNA/dsh-custom-mode",
-  "capabilities": [
-   "dynamic-code",
-   "fs-write",
-   "fs-read",
-   "network",
-   "env"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
  },
  "https://github.com/BOWLUNA/dsh-zcode-breaker": {
@@ -9600,17 +9544,6 @@
   "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/dingchenhui0618-arch/dsh-taskwatch": {
-  "version": "1.0.2",
-  "spec": "npm:dsh-taskwatch@1.0.2",
-  "capabilities": [
-   "fs-read",
-   "network"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:41:52.360Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/dingminhua/dsh-connect-trae": {
   "version": "2.2.0",
   "spec": "npm:dsh-connect-trae@2.2.0",
@@ -9897,19 +9830,6 @@
   "capabilities": [
    "fs-read",
    "network",
-   "env"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/dpskk2/dsh-sync-plugin": {
-  "version": "0.12.4",
-  "spec": "github:dpskk2/dsh-sync-plugin",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read",
    "env"
   ],
   "redLines": [],
@@ -12483,29 +12403,6 @@
   "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/Frank-NF/dsh-drop-md": {
-  "version": "0.1.0",
-  "spec": "github:Frank-NF/dsh-drop-md",
-  "capabilities": [
-   "fs-read",
-   "network"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/Frank-NF/dsh-memory-nexus": {
-  "version": "0.1.0-alpha",
-  "spec": "github:Frank-NF/dsh-memory-nexus",
-  "capabilities": [
-   "fs-write",
-   "fs-read",
-   "network"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/franksong2702/dsh-codex-connect": {
   "version": "0.1.0-alpha.4.47",
   "spec": "github:franksong2702/dsh-codex-connect",
@@ -12567,19 +12464,6 @@
    "fs-read",
    "network",
    "env"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/Fro2en12/dsh-download-progress": {
-  "version": "0.1.2",
-  "spec": "github:Fro2en12/dsh-download-progress",
-  "capabilities": [
-   "shell",
-   "fs-read",
-   "network",
-   "host-runtime"
   ],
   "redLines": [],
   "scannedAt": "2026-09-24T17:02:46.730Z",
@@ -12933,22 +12817,6 @@
   "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/gcry13067381632-jpg/dsh-qqbot": {
-  "version": "1.5.9",
-  "spec": "npm:@zaofan/dsh-qqbot@1.5.9",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read",
-   "network",
-   "env"
-  ],
-  "redLines": [
-   "uses plaintext http:// to schemas.openxmlformats.org"
-  ],
-  "scannedAt": "2026-09-24T17:41:52.360Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/GDWhisper/dsh-web-startup-auth": {
   "version": "0.1.10",
   "spec": "github:GDWhisper/dsh-web-startup-auth",
@@ -13160,19 +13028,6 @@
   "version": "0.1.1",
   "spec": "github:gezi-wen/dsh-subagent-delegation",
   "capabilities": [],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/gezi-wen/sage-guikit": {
-  "version": "0.4.0",
-  "spec": "github:gezi-wen/sage-guikit",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read",
-   "env"
-  ],
   "redLines": [],
   "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
@@ -13886,19 +13741,6 @@
   "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/GooDAnDReaDY/dsh-model-search": {
-  "version": "0.1.11",
-  "spec": "github:GooDAnDReaDY/dsh-model-search",
-  "capabilities": [
-   "shell",
-   "fs-read",
-   "network",
-   "env"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/GooDAnDReaDY/dsh-model-sync": {
   "version": "0.4.7",
   "spec": "github:GooDAnDReaDY/dsh-model-sync",
@@ -14430,22 +14272,6 @@
   "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/H1Kariiiiiii/dsh-desktop-launcher2": {
-  "version": "1.0.0",
-  "spec": "github:H1Kariiiiiii/dsh-desktop-launcher2",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read",
-   "network",
-   "env"
-  ],
-  "redLines": [
-   "uses plaintext http:// to schemas.microsoft.com"
-  ],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/H2O-MERO/dsh-git-sidebar": {
   "version": "0.1.0",
   "spec": "github:H2O-MERO/dsh-git-sidebar",
@@ -14710,21 +14536,6 @@
   "capabilities": [
    "fs-read",
    "network",
-   "host-runtime"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/haotian-lu-prog/dsh-update-plugin/tree/main/plugin": {
-  "version": "0.3.1",
-  "spec": "github:haotian-lu-prog/dsh-update-plugin",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read",
-   "network",
-   "env",
    "host-runtime"
   ],
   "redLines": [],
@@ -17495,19 +17306,6 @@
   "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/itchenshi/dsh-opencode-go-path": {
-  "version": "0.1.4",
-  "spec": "github:itchenshi/dsh-opencode-go-path",
-  "capabilities": [
-   "fs-write",
-   "fs-read",
-   "env",
-   "llm"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/itongxiaojun/dsh-openrouter-free-models": {
   "version": "1.1.0",
   "spec": "github:itongxiaojun/dsh-openrouter-free-models",
@@ -17611,14 +17409,6 @@
  "https://github.com/izz-BLUE/dsh-devtools": {
   "version": "0.1.1",
   "spec": "npm:dsh-devtools@0.1.1",
-  "capabilities": [],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:41:52.360Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/J0ss077/dsh-always-require-tools-approval": {
-  "version": "1.1.1",
-  "spec": "npm:@j0ss077/dsh-always-require-tools-approval@1.1.1",
   "capabilities": [],
   "redLines": [],
   "scannedAt": "2026-09-24T17:41:52.360Z",
@@ -19202,38 +18992,11 @@
   "scannedAt": "2026-09-24T17:41:52.360Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/JohnXu22786/ci-runner": {
-  "version": "0.1.0",
-  "spec": "github:JohnXu22786/ci-runner",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read",
-   "env",
-   "llm"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/JohnXu22786/codegraph": {
   "version": "0.1.0",
   "spec": "github:JohnXu22786/codegraph",
   "capabilities": [
    "shell",
-   "env"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/JohnXu22786/command-scout": {
-  "version": "0.1.0",
-  "spec": "github:JohnXu22786/command-scout",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read",
    "env"
   ],
   "redLines": [],
@@ -19265,56 +19028,10 @@
   "scannedAt": "2026-09-24T17:41:52.360Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/JohnXu22786/docgen": {
-  "version": "1.0.0",
-  "spec": "github:JohnXu22786/docgen",
-  "capabilities": [
-   "fs-read"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/JohnXu22786/docs-retriever": {
-  "version": "unknown",
-  "spec": "github:JohnXu22786/docs-retriever",
-  "capabilities": [
-   "shell",
-   "fs-read",
-   "network",
-   "env"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/JohnXu22786/dsh-web-submit": {
-  "version": "0.1.0",
-  "spec": "github:JohnXu22786/dsh-web-submit",
-  "capabilities": [
-   "network"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/JohnXu22786/file-planning": {
   "version": "0.1.0",
   "spec": "github:JohnXu22786/file-planning",
   "capabilities": [
-   "fs-write",
-   "fs-read",
-   "env"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/JohnXu22786/github-mcp": {
-  "version": "1.0.1",
-  "spec": "github:JohnXu22786/github-mcp",
-  "capabilities": [
-   "shell",
    "fs-write",
    "fs-read",
    "env"
@@ -19385,14 +19102,6 @@
    "network",
    "env"
   ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/JohnXu22786/session-titler": {
-  "version": "0.1.0",
-  "spec": "github:JohnXu22786/session-titler",
-  "capabilities": [],
   "redLines": [],
   "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
@@ -20769,21 +20478,6 @@
   "spec": "github:KLRSL/dsh-biomemory",
   "capabilities": [
    "shell",
-   "fs-write",
-   "fs-read",
-   "network",
-   "env"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/KLRSL/dsh-fuse": {
-  "version": "1.2.4",
-  "spec": "github:KLRSL/dsh-fuse",
-  "capabilities": [
-   "shell",
-   "dynamic-code",
    "fs-write",
    "fs-read",
    "network",
@@ -25711,28 +25405,6 @@
   "scannedAt": "2026-09-24T17:41:52.360Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/maxwell-feng/dsh-searxng-web": {
-  "version": "0.9.0",
-  "spec": "npm:dsh-searxng-web@0.9.0",
-  "capabilities": [
-   "network"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:41:52.360Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/maxwell-feng/dsh-tesseract-ocr": {
-  "version": "0.7.0",
-  "spec": "npm:dsh-tesseract-ocr@0.7.0",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:41:52.360Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/maxwell-feng/dsh-tinyfish-search": {
   "version": "0.12.0",
   "spec": "npm:dsh-tinyfish-search@0.12.0",
@@ -25743,18 +25415,6 @@
   "redLines": [
    "reads credentials/secrets AND has network access"
   ],
-  "scannedAt": "2026-09-24T17:41:52.360Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/maxwell-feng/dsh-windows-ocr": {
-  "version": "0.7.0",
-  "spec": "npm:dsh-windows-ocr@0.7.0",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read"
-  ],
-  "redLines": [],
   "scannedAt": "2026-09-24T17:41:52.360Z",
   "tool": "dsh-trust-check@0.1.13"
  },
@@ -27129,24 +26789,6 @@
   "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/moon16u/dsh-pouch": {
-  "version": "0.4.2",
-  "spec": "github:moon16u/dsh-pouch",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read",
-   "network",
-   "credentials",
-   "env",
-   "llm"
-  ],
-  "redLines": [
-   "reads credentials/secrets AND has network access"
-  ],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/MoonCoder-HAPPY/SpecWorkflow": {
   "version": "0.1.0",
   "spec": "github:MoonCoder-HAPPY/SpecWorkflow",
@@ -27962,14 +27604,6 @@
   ],
   "redLines": [],
   "scannedAt": "2026-09-24T17:41:52.360Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/Nanmu-del/dsh-plan-toggle": {
-  "version": "1.0.0",
-  "spec": "github:Nanmu-del/dsh-plan-toggle",
-  "capabilities": [],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
  },
  "https://github.com/nanshan1995/DSH-Plugin-Market": {
@@ -29726,16 +29360,6 @@
    "fs-write",
    "fs-read",
    "network"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/OMSociety/kimi-ppt-skill": {
-  "version": "1.1.0",
-  "spec": "github:OMSociety/kimi-ppt-skill",
-  "capabilities": [
-   "fs-read"
   ],
   "redLines": [],
   "scannedAt": "2026-09-24T17:02:46.730Z",
@@ -34456,20 +34080,6 @@
   "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/shaun5297/dsh-launcher": {
-  "version": "0.2.0",
-  "spec": "github:shaun5297/dsh-launcher",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read",
-   "network",
-   "env"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/ShawnKung/dsh-balance-monitor": {
   "version": "0.1.16",
   "spec": "github:ShawnKung/dsh-balance-monitor",
@@ -37947,14 +37557,6 @@
   "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/tommyhedgerow/Mimir/tree/main/preset/mimir-skin": {
-  "version": "1.0.0",
-  "spec": "github:tommyhedgerow/Mimir",
-  "capabilities": [],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/tomowang/dsh-data-agent": {
   "version": "0.3.0",
   "spec": "npm:@tomowang/dsh-data-agent@0.3.0",
@@ -39372,16 +38974,6 @@
   "version": "1.0.7",
   "spec": "github:vvvspec/better-reasoning-slider",
   "capabilities": [],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/w2310670047-code/ai-eight-honors-eight-shames": {
-  "version": "0.1.0",
-  "spec": "github:w2310670047-code/ai-eight-honors-eight-shames",
-  "capabilities": [
-   "fs-read"
-  ],
   "redLines": [],
   "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
@@ -41516,21 +41108,6 @@
   "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/wowyuarm/dsh-agent-team": {
-  "version": "0.1.15",
-  "spec": "npm:@wowyuarm/dsh-agent-team@0.1.15",
-  "capabilities": [
-   "dynamic-code",
-   "fs-write",
-   "fs-read",
-   "network",
-   "env",
-   "llm"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:41:52.360Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/wpc0323/deepseek-web-import": {
   "version": "0.1.0",
   "spec": "github:wpc0323/deepseek-web-import",
@@ -41746,32 +41323,6 @@
   "capabilities": [
    "shell",
    "env"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/WuJiaoJue/dsh-later": {
-  "version": "1.0.0",
-  "spec": "github:WuJiaoJue/dsh-later",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read",
-   "env"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/WuJiaoJue/dsh-suggest-ghost": {
-  "version": "0.3.0",
-  "spec": "github:WuJiaoJue/dsh-suggest-ghost",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read",
-   "llm"
   ],
   "redLines": [],
   "scannedAt": "2026-09-24T17:02:46.730Z",
@@ -45143,21 +44694,6 @@
   "scannedAt": "2026-09-24T17:41:52.360Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/yunxiiQwQ/dsh-maid-whale-webUI/tree/main/maid-whale-webui": {
-  "version": "0.1.1",
-  "spec": "github:yunxiiQwQ/dsh-maid-whale-webUI",
-  "capabilities": [
-   "shell",
-   "dynamic-code",
-   "fs-write",
-   "fs-read",
-   "network",
-   "env"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/yunxiyang/dsh-loop-continue": {
   "version": "0.2.0",
   "spec": "github:yunxiyang/dsh-loop-continue",
@@ -47129,17 +46665,6 @@
   "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/zlZayn/dsh-zhihu-search": {
-  "version": "2.0.0",
-  "spec": "npm:dsh-zhihu-search@2.0.0",
-  "capabilities": [
-   "network",
-   "env"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:41:52.360Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/zmh2000829/DSH-agent-bridge": {
   "version": "0.3.4",
   "spec": "npm:dsh-grok-acp@0.3.4",
@@ -47377,32 +46902,6 @@
   ],
   "redLines": [],
   "scannedAt": "2026-09-24T17:41:52.360Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/zoumutou/dsh-cost-balance": {
-  "version": "0.1.0",
-  "spec": "github:zoumutou/dsh-cost-balance",
-  "capabilities": [
-   "network",
-   "credentials"
-  ],
-  "redLines": [
-   "reads credentials/secrets AND has network access"
-  ],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/zoumutou/dsh-web-preview": {
-  "version": "0.2.6",
-  "spec": "github:zoumutou/dsh-web-preview",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read",
-   "network"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
  },
  "https://github.com/zouxiaoyang/dsh-commandcode-usage": {
@@ -47658,18 +47157,6 @@
    "fs-write",
    "fs-read",
    "network",
-   "env"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/zzdhsxk/dsh-session-migration-repair": {
-  "version": "0.1.0",
-  "spec": "github:zzdhsxk/dsh-session-migration-repair",
-  "capabilities": [
-   "fs-write",
-   "fs-read",
    "env"
   ],
   "redLines": [],
