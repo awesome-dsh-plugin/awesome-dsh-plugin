@@ -1,0 +1,5 @@
+url: https://github.com/dadgrand/dsh-agent-teams-dashboard
+name: dadgrand/dsh-agent-teams-dashboard
+category: ui
+description:
+  en: "Adds a Teams sidebar dashboard that lists every Agent Teams chat with its roster and task roadmap, token spend in USD and RUB, work and online time, and an archive of older teams."
