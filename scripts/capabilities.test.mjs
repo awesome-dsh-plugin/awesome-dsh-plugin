@@ -1,8 +1,11 @@
 import assert from 'node:assert/strict'
+import fs from 'node:fs'
 import test from 'node:test'
+import { fileURLToPath } from 'node:url'
 import {
   SCANNER_SCHEMA, factsFromScan, rememberPrevious, repoOf, scanSourceFor, shouldRescan, subdirOf,
 } from './lib/capabilities.mjs'
+import { readEntries } from './lib/entries.mjs'
 
 // The values in these tests are not invented: the scanner responses are the
 // shape `dsh-trust-check@0.1.13 --json` actually printed for
@@ -189,4 +192,26 @@ test('cannot read a shape it does not understand, and says so by returning nothi
   assert.equal(factsFromScan({ schemaVersion: 1, errors: ['boom'] }, fallback), null)
   assert.equal(factsFromScan(null, fallback), null)
   assert.equal(factsFromScan('scan failed', fallback), null)
+})
+
+test('every stored capability record answers for an entry that still exists', () => {
+  // data/capabilities.json is keyed by the entry's url, and build-site.mjs looks
+  // a record up by the url the entry has NOW (`capabilitiesMap[e.url]`). A
+  // renamed entry therefore leaves its record addressing a url nothing points
+  // at: the entry silently loses its disclosure and the file keeps facts about
+  // a page that is gone. Deleting the old entry file, which is what a migration
+  // PR does, does not touch this file — so the record has to be moved to the
+  // new url (rename) or dropped (delisting) by hand, and the only thing that
+  // noticed the 41 that had accumulated by 2026-10-20 was a reader asking why
+  // the file was 5% larger than the catalog warranted.
+  const caps = JSON.parse(fs.readFileSync(new URL('../data/capabilities.json', import.meta.url), 'utf8'))
+  const entries = readEntries(fileURLToPath(new URL('../data/plugins', import.meta.url)))
+  const listed = new Set(entries.map(entry => entry.url))
+  const orphans = Object.keys(caps).filter(url => !listed.has(url))
+  assert.deepEqual(orphans, [], [
+    `${orphans.length} capability record(s) are keyed by a url no entry uses:`,
+    ...orphans.map(url => `  ${url}`),
+    '',
+    "A renamed entry carries its record to the new url; a delisted entry's record is dropped.",
+  ].join('\n'))
 })
