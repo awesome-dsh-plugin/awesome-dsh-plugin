@@ -1,0 +1,7 @@
+url: https://github.com/xiatian-wuhan/dsh-skills-hub
+name: xiatian-wuhan/dsh-skills-hub
+category: skill
+tarball: https://github.com/xiatian-wuhan/dsh-skills-hub/releases/latest/download/dsh-skills-hub.tgz
+description:
+  en: 'Shows what each installed skill costs in the model context and hides a skill from the catalog without deleting it. Lists every skill found on disk with the exact catalog line the model receives (description normalized and truncated at the catalog cap), its body size and token estimate; previews the catalog message byte-for-byte as the agent will receive it, compares that with the copy already published in the current session, and reports skills on disk that never reach the catalog (invalid frontmatter, or shadowed by a higher-priority root). Hiding writes disable-model-invocation into frontmatter and keeps the file, so the skill still works via /name. Also imports skills from ClawHub, Skills.sh and GitHub URLs and uninstalls user-owned ones.'
+  zh: '显示每个已安装 skill 在模型上下文中占多少，并能在不删除文件的前提下把它从目录里摘掉。按 DSH 的渲染规则给出模型实际看到的那一行（介绍归一化并按目录上限截断）、正文体积与 token 估算；可逐字预览模型将收到的目录消息，与会话里已发布的那份比对，并列出来自磁盘却进不了目录的 skill（frontmatter 无效，或被更高优先级的同名 skill 覆盖）。隐藏会写入 disable-model-invocation 并保留文件，skill 仍可通过 /名字 调用。同时支持从 ClawHub、Skills.sh 与 GitHub 链接导入，以及卸载用户目录下的 skill。'
