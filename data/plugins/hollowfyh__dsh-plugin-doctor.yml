@@ -1,0 +1,6 @@
+url: https://github.com/hollowfyh/dsh-plugin-doctor
+name: hollowfyh/dsh-plugin-doctor
+category: dev
+description:
+  en: 'Self-healing plugin doctor: detects failed DeepSeek Harness plugin rows, disables them automatically after backing up the profile patch, and reports diagnostics via /doctor.'
+  zh: '自愈插件医生：检测加载失败的 DSH 插件行，自动备份 profile patch 后禁用失败行，并通过 /doctor 汇报诊断。'
