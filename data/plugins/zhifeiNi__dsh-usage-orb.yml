@@ -1,0 +1,6 @@
+url: https://github.com/zhifeiNi/dsh-usage-orb
+name: zhifeiNi/dsh-usage-orb
+category: usage
+description:
+  en: 'Cross-session usage panel for DeepSeek Harness: an always-on usage ring plus a draggable panel that aggregates token usage, cache-hit rate, cost and balance from local session logs, with per-tool cost attribution, iOS-style tile layout editing and an optional animated companion face.'
+  zh: 'DeepSeek Harness 跨会话用量面板：常驻用量圆环 + 可拖动面板，从本地会话日志聚合 token 用量、缓存命中率、成本与余额，支持工具级成本归因、iOS 式磁贴布局编辑与可选表情伴侣；数据只在本机读取，不联网。'
