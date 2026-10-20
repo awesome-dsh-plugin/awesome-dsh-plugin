@@ -1,0 +1,7 @@
+url: https://github.com/meisijiya/omp-memory-dsh
+name: meisijiya/omp-memory-dsh
+category: memory
+tarball: https://github.com/meisijiya/omp-memory-dsh/releases/download/v0.2.0/omp-memory-dsh-0.2.0.tgz
+description:
+  en: "Share omp (oh-my-pi) project memory with DeepSeek Harness: DSH injects the same memory_summary.md and learned.md window omp reads, and its learn tool writes back to the very same learned.md. Conservative by default - never deletes, refuses to evict when omp's 100-lesson cap would be hit, byte-faithful writes with a CAS re-check, and it will not create omp's memory directory on its own. Verified black-box: one prompt sent to omp headless and to a one-shot DSH task yields the same answer, while a control run without memory abstains on both sides."
+  zh: "把 omp（oh-my-pi）的项目级记忆接入 DeepSeek Harness：DSH 注入的是 omp 读的那同一份 memory_summary.md 与 learned.md 窗口，其 learn 工具写回的也是同一个 learned.md。默认保守——绝不删除，撞到 omp 的 100 条封顶时拒绝淘汰，写入逐字节保真且写前 CAS 复核，也不会替 omp 静默新建记忆目录。已做黑盒对跑：同一句提示词分别喂给 omp 无头模式与 DSH 一次性任务，答案一致；无记忆的对照组两端都明确回答没有。"
