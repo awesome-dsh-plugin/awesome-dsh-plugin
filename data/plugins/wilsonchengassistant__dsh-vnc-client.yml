@@ -1,0 +1,6 @@
+url: https://github.com/wilsonchengassistant/dsh-vnc-client
+name: wilsonchengassistant/dsh-vnc-client
+category: remote
+description:
+  en: 'Adds a Remote desktop tab to the right Sidebar that connects to any VNC/RFB server through a WebSocket-to-TCP bridge running in the Host, with saved servers and a connection test.'
+  zh: '在右側欄加入「遠端桌面」分頁，經主機上嘅 WebSocket-to-TCP 橋接連接任何 VNC/RFB 伺服器，可儲存伺服器並測試連線。'
