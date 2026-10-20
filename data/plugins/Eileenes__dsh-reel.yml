@@ -1,0 +1,6 @@
+url: https://github.com/Eileenes/dsh-reel
+name: Eileenes/dsh-reel
+category: tools
+description:
+  en: Generates a promo video and a promo image from a DSH plugin repository with a local Remotion workflow.
+  zh: 用一个本地 Remotion 工作流，从 DSH 插件仓库生成宣传片和宣传图。
