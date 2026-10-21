@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-cn-appstore-preflight
+name: feely0208/dsh-cn-appstore-preflight
+category: security
+description:
+  en: 'Pre-flight checks for a Chinese app-store listing: filing, privacy policy, permissions, account deletion, minor protection and SDK inventory.'
+  zh: '国内应用市场上架预检：App 备案、隐私政策可达性、权限使用场景说明、账号注销入口、未成年人保护、第三方 SDK 清单 —— 从上架材料角度做一次体检，并生成材料清单骨架。'
