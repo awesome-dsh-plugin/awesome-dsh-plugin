@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-cn-log-retention
+name: feely0208/dsh-cn-log-retention
+category: security
+description:
+  en: 'Checks whether logging is enabled, records what it should and keeps the required six months.'
+  zh: '检查日志是否开启、是否记录了该记的、是否留够法定 6 个月'
