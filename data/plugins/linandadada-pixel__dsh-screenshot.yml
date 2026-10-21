@@ -1,0 +1,7 @@
+url: https://github.com/linandadada-pixel/dsh-screenshot
+name: linandadada-pixel/dsh-screenshot
+category: ui
+tarball: https://github.com/linandadada-pixel/dsh-screenshot/releases/download/v2.3.0/dsh-screenshot-2.3.0.tgz
+description:
+  en: "Native, instant region-screenshot button for the DeepSeek Harness composer: one click freezes the screen, a WeChat-style overlay (gray mask, green selection) appears, and the cropped PNG is inserted into the current draft. An optional eye toggle hides the whole DSH window before capturing, then restores it. No ms-screenclip, about 10 ms per drag frame, coexists with voice input. Windows 10/11 x64 only; the first capture compiles a helper with the built-in .NET Framework csc.exe."
+  zh: "输入框里的原生秒开截屏按钮：点一下冻结全屏，微信风格选区浮层（灰色遮罩、绿色边框），确认后截图自动插入当前会话草稿。相机旁的小眼睛可选「先隐藏整个 DSH 窗口再截屏」，截完自动恢复。不调用系统截图浮层，拖动约 10ms/帧，与语音输入并排共存。仅 Windows 10/11 x64；首次截屏会用系统自带的 .NET Framework csc.exe 编译辅助程序。"

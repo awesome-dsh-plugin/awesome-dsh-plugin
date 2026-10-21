@@ -1,0 +1,6 @@
+url: https://github.com/Bai-Ziyi/dsh-proxy-control
+name: Bai-Ziyi/dsh-proxy-control
+category: tools
+description:
+  en: "Pre-launch and runtime HTTP proxy control: writes the proxy into DSH's user-level .env so the launcher and the requests before any plugin loads use it, then keeps that file in sync from a switch in the Plugins page."
+  zh: "启动前与运行时的 HTTP 代理控制：把代理写入 DSH 用户级 .env，让启动器和任何插件加载前的请求也走代理，并在「插件」页用开关同步该文件。"

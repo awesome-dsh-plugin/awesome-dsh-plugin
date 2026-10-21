@@ -2,5 +2,5 @@ url: https://github.com/YSDLNGF/dsh-acrylic-light
 name: YSDLNGF/dsh-acrylic-light
 category: theme
 description:
-  zh: "让 DeepSeek Harness 桌面版透出桌面壁纸：主窗口启用 Windows Acrylic 材质负责模糊，页面按层分区处理——顶栏与主面板完全透明，输入栏与悬停预览保留雾面底色以保证文字清晰。支持实时调参。窗口材质需先用 apply-when-closed.ps1 对 app.asar 打一次补丁；只装插件只会改变页面样式。"
-  en: "Windows Acrylic window material for the DeepSeek Harness desktop app: the main window reveals the desktop wallpaper and Acrylic supplies the blur, while panels are layered by role (fully transparent chrome, frosted composer and hover previews so text stays readable). Live tuning included. Requires a one-time app.asar patch via apply-when-closed.ps1 for the window material; installing the plugin alone only styles the page."
+  en: "Windows Acrylic window material plus layered frosted panels for the DeepSeek Harness desktop app, with a liquid-glass composer whose opacity slider runs from fully transparent to fully opaque. The window material needs a one-time app.asar patch via apply-when-closed.ps1; installing the plugin alone only styles the page."
+  zh: 为 DeepSeek Harness 桌面版提供 Windows 亚克力窗口材质与分层雾面面板，输入栏为液态玻璃，不透明度可在全透明到全不透明之间连续调节。

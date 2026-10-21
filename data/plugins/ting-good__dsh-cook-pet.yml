@@ -1,0 +1,6 @@
+url: https://github.com/ting-good/dsh-cook-pet
+name: ting-good/dsh-cook-pet
+category: fun
+description:
+  en: Desktop pet "Zhaozhao" (照照) that floats above all apps in a transparent always-on-top window and mirrors DeepSeek Harness state — idle, cooking, serving and waiting-for-you animations, click reactions, drag, right-click resize, plus an auto-downloading Electron helper.
+  zh: 桌面宠物「照照」：透明置顶窗悬浮于所有应用之上，镜像 DeepSeek Harness 状态——待机、颠锅、上菜、托腮等你回话，支持点击回应、拖拽、右键调大小，Electron 运行时自动下载。

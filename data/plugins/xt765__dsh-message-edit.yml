@@ -1,0 +1,7 @@
+url: https://github.com/xt765/dsh-message-edit
+name: xt765/dsh-message-edit
+category: ui
+tarball: https://github.com/xt765/dsh-message-edit/releases/latest/download/dsh-message-edit.tgz
+description:
+  en: 'Inline user message editor: adds a pencil edit button next to Copy below sent user bubbles, switches the bubble in-place into a rounded editor card, and resends via session branch fork or in-session follow-up.'
+  zh: '用户消息原位编辑与重发插件：在已发送消息气泡下方复制按钮旁提供铅笔编辑图标，点击原位展开圆角内联编辑框，支持从上一轮末尾分叉回退重发或在当前会话直接追发。'

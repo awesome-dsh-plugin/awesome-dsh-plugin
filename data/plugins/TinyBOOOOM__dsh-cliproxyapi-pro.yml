@@ -1,0 +1,6 @@
+url: https://github.com/TinyBOOOOM/dsh-cliproxyapi-pro
+name: TinyBOOOOM/dsh-cliproxyapi-pro
+category: model
+description:
+  en: Connects one or more CLIProxyAPI servers to DeepSeek Harness, discovers each server's models and syncs the selected ones into the model picker, routing each model over its native protocol (Anthropic Messages, OpenAI Responses or OpenAI Chat) with per-model parameter overrides; it also checks for its own updates and installs them through dshmarket when that is present.
+  zh: 把一个或多个 CLIProxyAPI 服务接入 DeepSeek Harness，发现各服务的模型并把勾选的模型同步到模型选择器，每个模型按原生协议（Anthropic Messages、OpenAI Responses 或 OpenAI Chat）请求，并支持单模型参数覆盖；还能检查插件自身更新，装有 dshmarket 时通过它安装。

@@ -2,5 +2,5 @@ url: https://github.com/WhatCannotBeSaid/dsh-session-eva-status
 name: WhatCannotBeSaid/dsh-session-eva-status
 category: ui
 description:
-  en: 'Colors DSH sidebar Session rows by their official status, in an Evangelion-flavored palette: a blue left rail for a row awaiting interaction, red for the session open in the main view, purple for finished-but-unviewed, and a static rainbow title for pinned rows. Reads official Client services only — it owns no state, never polls, and ships no host-side half.'
-  zh: '按官方状态给 DSH 侧栏会话行染色，配色取自福音战士：等你处理的会话为蓝色左轨，主视图打开的那条为红色左轨，已结束但未查看为紫色左轨，置顶行的标题为静态彩虹。只读取官方 Client 服务，自身不持有状态、不轮询，也没有宿主侧代码。'
+  en: 'Colors DSH sidebar Session rows by their official status, in an Evangelion-flavored palette: a blue left rail for a row awaiting interaction, red for the session open in the main view, purple for finished-but-unviewed, and a static rainbow title for pinned rows. Every colour is mode-scoped — dark keeps the vivid stop, light takes a darker variant solved to clear 4.5:1 against the light wall — and the split reads DSH''s own dark marker. Reads official Client services only: it owns no state, never polls, and ships no host-side half.'
+  zh: '按官方状态给 DSH 侧栏会话行染色，配色取自福音战士：等你处理的会话为蓝色左轨，主视图打开的那条为红色左轨，已结束但未查看为紫色左轨，置顶行的标题为静态彩虹。左侧轨道按模式分档——暗档保留原色，亮档换成对浅底 ≥4.5:1 的压暗变体——分档读的是 DSH 自己的暗色标记；未读的紫色轨道两种模式共用。只读取官方 Client 服务，自身不持有状态、不轮询，也没有宿主侧代码。'

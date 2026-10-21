@@ -1,0 +1,6 @@
+url: https://github.com/chengzhao-dev/dsh-quarto-book
+name: chengzhao-dev/dsh-quarto-book
+category: skill
+description:
+  en: Quarto book writing and theme skills, with check scripts for chapter structure and Chinese prose. Requires the Quarto CLI and Python 3 for the check scripts.
+  zh: Quarto 书稿写作与主题技能，附带章节结构与中文行文的检查脚本。检查脚本需 Quarto CLI 与 Python 3。

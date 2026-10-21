@@ -1,0 +1,6 @@
+url: https://github.com/Arrosam/dsh-better-workspace-file-manager
+name: Arrosam/dsh-better-workspace-file-manager
+category: ui
+description:
+  en: 'Adds upload, download, new folder, delete, drag-to-move, drag-to-chat and in-place text editing with auto-save to the workspace Files tab and file previews.'
+  zh: '为工作区「文件」标签页和文件预览添加上传、下载、新建文件夹、删除、拖拽移动、拖入对话，以及支持自动保存的原地文本编辑。'

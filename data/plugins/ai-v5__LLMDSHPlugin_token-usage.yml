@@ -1,0 +1,6 @@
+url: https://github.com/ai-v5/LLMDSHPlugin_token-usage
+name: ai-v5/LLMDSHPlugin_token-usage
+category: usage
+description:
+  en: 'Local-only, read-only DSH token dashboard: provider-reported usage across all backends, all-time totals, a 365-day heatmap, input+output and cache read/write details, turn/step counts, average tok/s, and durable history after sessions are archived.'
+  zh: 仅本地、只读、不上传的 DSH Token 面板：按 provider 实际 usage 统计，所有后端统一汇总；含历史总量、365 天热力图、输入+输出与缓存读写明细、轮次/步骤、平均 tok/s，归档后仍保留历史。
