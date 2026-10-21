@@ -1,0 +1,6 @@
+url: https://github.com/sixzjd/dsh-opencode-connect
+name: sixzjd/dsh-opencode-connect
+category: model
+description:
+  en: 'OpenCode Zen models in DSH, including the free pool, with automatic fallback along the enabled catalog when a model throttles or is pulled.'
+  zh: '把 OpenCode Zen 模型（含免费模型池）接入 DSH，模型被限流或下架时沿已启用目录自动 fallback。'

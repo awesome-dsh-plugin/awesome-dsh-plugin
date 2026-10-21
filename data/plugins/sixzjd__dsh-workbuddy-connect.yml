@@ -1,0 +1,6 @@
+url: https://github.com/sixzjd/dsh-workbuddy-connect
+name: sixzjd/dsh-workbuddy-connect
+category: model
+description:
+  en: 'WorkBuddy models in DSH, international and China editions from one card: device sign-in or desktop-app import, live catalog, per-model toggles, and credits read from the cycle capacity rather than the pool.'
+  zh: '把 WorkBuddy 国际版 / 国内版模型接入 DSH：一张卡片两个页签，支持设备授权登录与桌面 App 一键导入、实时模型目录、逐模型开关，额度按周期而非池读取。'
