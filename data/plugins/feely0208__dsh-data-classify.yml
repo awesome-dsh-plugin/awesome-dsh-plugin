@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-data-classify
+name: feely0208/dsh-data-classify
+category: security
+description:
+  en: 'Checks for data classification labels and inventory, as required by China''s Data Security Law.'
+  zh: '查数据有没有分级标注与清单 —— 数据安全法 21 条要求建立分类分级制度'
