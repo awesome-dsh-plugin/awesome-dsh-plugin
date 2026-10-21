@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-sbom
+name: feely0208/dsh-sbom
+category: security
+description:
+  en: 'Generates a software bill of materials so you know what is actually inside a build.'
+  zh: '你的产物里到底有谁，清单说了算'
