@@ -2,5 +2,5 @@ url: https://github.com/lovy2004/dsh-molbio-tools
 name: lovy2004/dsh-molbio-tools
 category: tools
 description:
-  en: 'A group of DSH tools designing for molecular biology researchers.'
-  zh: '一组为分子生物学研究者设计的DSH插件工具。'
+  en: 'A bundle of molbio tools for molecular biology work:sequence analysis,primer and probe desigin (qPCR,TaqMan),in-silico PCR,cloning simulation,plasmid maps,sequencing validation,protein and CRISPR analysis,qPCR statistics,literature and lab records;installed as a preset-scoped bundle.'
+  zh: '一组molbio分子生物学工具，包含序列分析，引物和探针设计，体外PCR，克隆模拟，，质谱图谱，测序验证，蛋白与CRISPR分析，qPCR统计，文献与实验记录；随 bundle 以预设模式安装。'
