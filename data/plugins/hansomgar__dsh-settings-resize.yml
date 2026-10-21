@@ -1,0 +1,6 @@
+url: https://github.com/hansomgar/dsh-settings-resize
+name: hansomgar/dsh-settings-resize
+category: ui
+description:
+  en: 'Adjust the Settings dialog width, height and transparency from three sliders in General settings, saved across restarts.'
+  zh: 在「通用设置」里用三个滑动条调节设置弹窗的宽度、高度与透明度，重启后仍然保留。
