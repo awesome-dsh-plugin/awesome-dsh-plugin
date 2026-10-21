@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-content-trust
+name: feely0208/dsh-content-trust
+category: security
+description:
+  en: 'Checks whether an agent treats external content (web pages, files, mail) as instructions; indirect prompt injection.'
+  zh: '查 agent 有没有把外部内容（网页/文件/邮件）当指令信 —— 间接提示注入的入口'
