@@ -1,0 +1,6 @@
+url: https://github.com/caozixiong/dragonfly_chatbot
+name: caozixiong/dragonfly_chatbot
+category: tools
+description:
+  en: 'Searches bundled Prototype Apps manuals and locally imported Dragonfly documentation or Python source with version filters and source citations.'
+  zh: '检索内置 Prototype Apps 手册及本地导入的 Dragonfly 文档或 Python 源码，提供版本筛选和来源引用。'
