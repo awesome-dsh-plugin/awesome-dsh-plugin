@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-cn-filing
+name: feely0208/dsh-cn-filing
+category: security
+description:
+  en: 'Checks that an app shows its ICP/APP filing number, privacy-policy entry and operator information.'
+  zh: '查应用里有没有展示 ICP/APP 备案号、隐私政策入口、运营者信息 —— 都是法定义务'
