@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-phishing-guard
+name: feely0208/dsh-phishing-guard
+category: security
+description:
+  en: 'Checks whether content an agent reads contains instructions aimed at the agent.'
+  zh: 'agent 读到的内容里，有没有人在给它下命令'
