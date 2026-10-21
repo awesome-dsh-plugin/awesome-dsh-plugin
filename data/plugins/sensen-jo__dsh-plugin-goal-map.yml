@@ -1,0 +1,6 @@
+url: https://github.com/sensen-jo/dsh-plugin-goal-map
+name: sensen-jo/dsh-plugin-goal-map
+category: session
+description:
+  en: Show a read-only goal-to-plan progress route, session mindmap and step list using reported plan progress, without starting tasks or model calls.
+  zh: 只读展示目标到计划的进展路线、会话思维导图与步骤列表，按已报告计划计算进度，不启动任务或模型调用。
