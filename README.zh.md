@@ -410,6 +410,7 @@ dsh plugin --profile web add dshmarket
 - [PwnKY/dsh-session-link](https://github.com/PwnKY/dsh-session-link) — 复制、打开 `dsh://` 会话深链，或将其粘贴到另一对话中，注入被引用会话的受限只读快照。
 - [reinocheong/dsh-session-move](https://github.com/reinocheong/dsh-session-move) — 在 Web 侧边栏把会话移动到别的文件夹（拖拽或菜单选择），带风险确认地永久删除会话，以及 AI 重命名会话（总结整个对话并自动纠正错别字）；每个操作都提供 agent 工具。
 - [SaiSenBox/dsh-prompt-manager](https://github.com/SaiSenBox/dsh-prompt-manager) — 浏览器本地提示词库：在输入框选择器中同时注入多条会话级系统提示词，支持分支继承、中英界面、收藏与 JSON 备份。
+- [shrekcg/dsh-turn-rail](https://github.com/shrekcg/dsh-turn-rail) - 对话区左缘的轮次刻度滑轨：每条真实提问一根短横线，悬停预览、点击跳转（目标未加载时自动翻页），带当前位置高亮与滚动进度条。
 - [starslittle/dsh-queue-plus](https://github.com/starslittle/dsh-queue-plus) — DSH 排队消息增强面板，支持编辑、删除、插话、排序和批量删除。
 - [tuogusa/dsh-session-nav](https://github.com/tuogusa/dsh-session-nav) — 对话旁的悬浮按钮，打开当前会话全部提问的可搜索列表并快速跳转。
 - [tuogusa/dsh-session-tags](https://github.com/tuogusa/dsh-session-tags) — 为会话添加标签，并在 Web 设置面板中按标签搜索会话。
@@ -1135,7 +1136,6 @@ description:
 
 本仓库的 issue 只处理清单与网站本身。插件市场界面里的问题请提到 [dsh-market](https://github.com/dsh-market/dsh-market/issues)；`dsh` 本体的问题请提到 [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness/issues)；某个插件的 bug 请到该插件自己的仓库提。
 
-- [shrekcg/dsh-turn-rail](https://github.com/shrekcg/dsh-turn-rail) - 对话区左缘的轮次刻度滑轨：每条真实提问一根短横线，悬停预览、点击跳转（目标未加载时自动翻页），带当前位置高亮与滚动进度条。
 
 ### 🎨 UI 增强
 
