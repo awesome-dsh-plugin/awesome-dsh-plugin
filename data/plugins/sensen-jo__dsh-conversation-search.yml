@@ -1,0 +1,6 @@
+url: https://github.com/sensen-jo/dsh-conversation-search
+name: sensen-jo/dsh-conversation-search
+category: session
+description:
+  en: Search original user and assistant text in the current session or same-directory workspace, with source coordinates and context.
+  zh: 在当前会话或同目录工作区检索用户与助手原文，并查看来源坐标和上下文。
