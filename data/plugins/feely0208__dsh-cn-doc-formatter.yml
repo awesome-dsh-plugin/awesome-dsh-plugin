@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-cn-doc-formatter
+name: feely0208/dsh-cn-doc-formatter
+category: security
+description:
+  en: 'Generates Chinese official-document layout (.docx/.pdf/.txt) per GB/T 9704-2012; no font files bundled.'
+  zh: '中文公文排版：按 GB/T 9704-2012 生成 .docx / .pdf / .txt，附输出自检。不含字体文件，字体由用户自备。'
