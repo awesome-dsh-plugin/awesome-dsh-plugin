@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-consent-guard
+name: feely0208/dsh-consent-guard
+category: security
+description:
+  en: 'Checks consent mechanics: pre-ticked boxes, bundled consent and missing withdrawal entries.'
+  zh: '查同意机制是否合规：默认勾选、捆绑同意、没有撤回入口 —— 个保法有明确要求'
