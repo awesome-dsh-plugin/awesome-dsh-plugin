@@ -1,0 +1,6 @@
+url: https://github.com/AidenOrz/dsh-workbuddy-connect
+name: AidenOrz/dsh-workbuddy-connect
+category: model
+description:
+  en: Brings the models of a signed-in WorkBuddy or WorkBuddy AI desktop app into DSH as two separate provider groups, reusing the app's own sign-in and credit.
+  zh: 把已登录的 WorkBuddy / WorkBuddy AI 桌面应用中的模型接入 DSH，分成两个模型分组，并沿用各自 App 的登录与积分。
