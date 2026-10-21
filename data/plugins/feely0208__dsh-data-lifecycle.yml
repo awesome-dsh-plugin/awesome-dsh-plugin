@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-data-lifecycle
+name: feely0208/dsh-data-lifecycle
+category: security
+description:
+  en: 'Checks that data is deleted when it should be, rather than kept forever.'
+  zh: '数据不该永远躺着，该删的删了没'
