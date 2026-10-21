@@ -1,0 +1,6 @@
+url: https://github.com/mozhi66/dsh-plugin-categories
+name: mozhi66/dsh-plugin-categories
+category: market
+description:
+  en: Categorize the plugins installed in a DSH profile into groups (skins, MCP, tools, ...), with per-category batch enable/disable, drag reordering, and automatic skin detection.
+  zh: 把当前 profile 已安装的插件按分类整理（皮肤、MCP、工具……），支持分类批量启停、拖拽排序与皮肤自动识别。
