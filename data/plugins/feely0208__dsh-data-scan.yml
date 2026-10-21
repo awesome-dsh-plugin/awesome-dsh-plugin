@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-data-scan
+name: feely0208/dsh-data-scan
+category: security
+description:
+  en: 'Scans code and configuration for Chinese ID numbers, bank cards and phone numbers, with checksum validation to avoid false positives.'
+  zh: '扫出代码和配置里的身份证、银行卡、手机号 —— 带校验位验证，不误报'
