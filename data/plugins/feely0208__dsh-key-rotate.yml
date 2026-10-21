@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-key-rotate
+name: feely0208/dsh-key-rotate
+category: security
+description:
+  en: 'Checks how long keys and certificates have gone unchanged and whether a rotation policy exists.'
+  zh: '查密钥与证书多久没换了、有没有轮换制度 —— 长期不换的密钥往往没人注意，却是实打实的风险'
