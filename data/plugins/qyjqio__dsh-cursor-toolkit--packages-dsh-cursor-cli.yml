@@ -1,0 +1,6 @@
+url: https://github.com/qyjqio/dsh-cursor-toolkit/tree/main/packages/dsh-cursor-cli
+name: qyjqio/dsh-cursor-toolkit#cursor-cli
+category: tools
+description:
+  en: Run the local Cursor CLI agent on a coding task in a workspace and continue the run by chat id.
+  zh: 把编码任务交给本机 Cursor CLI 代理在工作目录中执行，并可按 chat id 续跑。

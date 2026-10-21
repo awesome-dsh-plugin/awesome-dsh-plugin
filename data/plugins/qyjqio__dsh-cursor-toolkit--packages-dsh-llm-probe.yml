@@ -1,0 +1,6 @@
+url: https://github.com/qyjqio/dsh-cursor-toolkit/tree/main/packages/dsh-llm-probe
+name: qyjqio/dsh-cursor-toolkit#llm-probe
+category: dev
+description:
+  en: List the LLM provider routes a running DSH process registered and run one real streamed call.
+  zh: 列出运行中 DSH 进程真实注册的 LLM 路由，并可跑一次真实流式调用。
