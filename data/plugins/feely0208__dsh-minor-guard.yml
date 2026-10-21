@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-minor-guard
+name: feely0208/dsh-minor-guard
+category: security
+description:
+  en: 'Checks guardian consent and age gates for personal data of children under 14.'
+  zh: '查不满 14 周岁个人信息有没有监护人同意、专门规则、年龄门槛 —— 个保法 31 条有硬要求'
