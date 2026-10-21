@@ -1,0 +1,6 @@
+url: https://github.com/Aegink/dsh-channel-qq
+name: Aegink/dsh-channel-qq
+category: notify
+description:
+  en: 'QQ channel plugin for DeepSeek Harness over OneBot v11/SnowLuma, with long-term memory, a knowledge base, proactive events, approvals and an admin panel.'
+  zh: 'DeepSeek Harness 的 QQ 渠道插件（OneBot v11 / SnowLuma）：长期记忆、知识库、主动行为、审批网关与管理后台。'
