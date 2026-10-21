@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-cn-compliance
+name: feely0208/dsh-cn-compliance
+category: security
+description:
+  en: 'Checks outward-facing Chinese content for regulated wording, advertising-law superlatives and leaked internal documents.'
+  zh: '中国大陆对外内容合规红线审核：扫描网络工具用语、广告法极限词、绝对化承诺、内部文件公网暴露，并给出修复原则。'
