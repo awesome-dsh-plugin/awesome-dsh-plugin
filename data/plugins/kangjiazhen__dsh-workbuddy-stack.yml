@@ -1,0 +1,6 @@
+url: https://github.com/kangjiazhen/dsh-workbuddy-stack
+name: kangjiazhen/dsh-workbuddy-stack
+category: model
+description:
+  en: 'Supervises the local wb2api gateway and the bundled Responses-to-chat-completions bridge that Codex CLI needs, reusing healthy instances that are already running and reporting both through a status tool.'
+  zh: '托管本地 wb2api 网关，以及 Codex CLI 所需的 Responses 到 chat/completions 转换桥，已在运行的健康实例直接复用，并通过状态工具汇报两者的状况。'
