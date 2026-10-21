@@ -1,6 +1,7 @@
 url: https://github.com/wangtheme-coder/dsh-dragon-control
 name: wangtheme-coder/dsh-dragon-control
 category: browser
+npm: dsh-dragon-control
 tarball: https://github.com/wangtheme-coder/dsh-dragon-control/releases/download/v0.5.4/dsh-dragon-control-0.5.4.tgz
 description:
   en: "Windows x64 only, 0.5.4 preview: two scoped tools (dragon_browser and dragon_desktop) that drive a visible browser through the DOM or CDP and Windows apps through UI Automation, with per-origin and per-executable read/control scopes, batch steps, a physical-Esc emergency stop and a redacted action log. 0.5.4 only widens the DSH compatibility range to 0.2.0-rc.2 through 0.2.1.x, because 0.5.3 pinned it to an exact DSH version and was silently skipped on DSH Desktop 0.2.1. Two long-lived native processes remove the per-action process spawn, so a single key step takes about 0.7 s on the same machine; when another window steals the foreground the step is aborted instead of typing into the wrong place. The browser side ships its own Edge/Chrome launcher and CDP client, so it no longer needs another browser plugin or the Electron runtime. It is not an OS sandbox; logins, admin windows and secure desktops stay with the user."
