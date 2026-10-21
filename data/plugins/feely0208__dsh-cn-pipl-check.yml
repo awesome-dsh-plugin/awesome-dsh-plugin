@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-cn-pipl-check
+name: feely0208/dsh-cn-pipl-check
+category: security
+description:
+  en: 'Cross-checks the privacy policy against the code: permissions, third-party SDKs, user-rights entries, sensitive-data consent, cross-border transfer and retention.'
+  zh: '个人信息保护合规：核对「隐私政策里承诺的」与「代码里真做的」是否一致 —— 权限、第三方 SDK、用��权利入口、敏感信息单独同意、数据跨境与留存。'
