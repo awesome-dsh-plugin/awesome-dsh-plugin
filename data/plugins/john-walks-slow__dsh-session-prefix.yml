@@ -1,0 +1,6 @@
+url: https://github.com/john-walks-slow/dsh-session-prefix
+name: john-walks-slow/dsh-session-prefix
+category: session
+description:
+  en: 'Auto-classify DeepSeek Harness sessions via Jev decision models or Agent tools, displayed as title emoji prefixes (wip 🚧, blocked ⏸️, review 👀, done ✅, plan 💡, bug 🐛). Features seamless lifecycle recovery, optional Jev inference (needs a Jev API key), model tool maintenance, and a visual settings panel.'
+  zh: '基于 Jev 决策模型或 Agent 工具为会话自动分类，并将任务阶段直观展示为标题前缀 Emoji（进行中 🚧、阻塞 ⏸️、待验收 👀、已完成 ✅、规划 💡、排障 🐛）。支持生命周期状态自愈、可选 Jev 决策推断（需配置 Jev API Key）、Agent 自主标记与可视化设置面板。'

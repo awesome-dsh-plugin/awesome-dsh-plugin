@@ -1,0 +1,6 @@
+url: https://github.com/Mr54233/dsh-restart-now
+name: Mr54233/dsh-restart-now
+category: dev
+description:
+  en: 'One-click full-app restart for the DSH desktop client: a sidebar footer button and a settings section with a live config form (master switch, confirm dialog, delay, target executable). Restart is performed by a detached helper that survives the process-tree kill, then respawns DeepSeek Harness.exe; requests are fenced to loopback same-origin.'
+  zh: 'DSH 桌面版一键完整重启：侧边栏底部按钮 + 设置页配置表单（总开关、二次确认、延时、目标程序路径）。重启由脱离进程树的独立助手执行——先杀进程树再自动拉起 DeepSeek Harness.exe；动作请求仅限本机同源。'

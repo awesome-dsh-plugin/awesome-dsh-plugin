@@ -1,0 +1,6 @@
+url: https://github.com/baixiaoustc/dsh-kidlab/tree/main/plugins/kid-storage
+name: baixiaoustc/dsh-kidlab#kid-storage
+category: fun
+description:
+  en: "Storage explorer: disk boxes, the home folder and the heaviest items."
+  zh: "存储小仓库：磁盘分区、主目录、最占空间的东西。"

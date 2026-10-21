@@ -1,0 +1,6 @@
+url: https://github.com/11111353535/dsh-folderwatch
+name: 11111353535/dsh-folderwatch
+category: workflow
+description:
+  en: 'Arms a watch on a directory and delivers a batched, deduplicated diff when the tree goes quiet, filtering out the writes the session made itself; delivery is per watch, either waking a new turn or queueing for the next step.'
+  zh: '监视目录，在文件树安静后投递批量合并、去重的变更清单，并过滤掉本会话自己的写入；投递方式按监视器选择，可起新回合或排队到下一步。'

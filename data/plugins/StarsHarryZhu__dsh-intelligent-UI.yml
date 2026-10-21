@@ -1,0 +1,6 @@
+url: https://github.com/StarsHarryZhu/dsh-intelligent-UI
+name: StarsHarryZhu/dsh-intelligent-UI
+category: ui
+description:
+  en: 'Interactive cards in replies, built from a fixed catalog of 31 components (sliders, inputs, sortable tables, charts, function plots, typeset formulas, tabs, checklists, flowcharts, quiz buttons, an animation player): controls recompute in the browser without another model call, and the model never writes HTML or JavaScript. Includes a calculus engine (integrals, derivatives, limits, sums, roots, Taylor polynomials) and a bundled skill that teaches the model when to use a card.'
+  zh: '渐进式交互：回复里的可交互卡片，由 31 个固定组件搭成（滑块、输入框、可排序表格、图表、函数图像、公式排版、分页、勾选清单、流程图、答题按钮、动画播放器）。调节控件在浏览器内重算，不再调用模型；模型不写任何 HTML 或 JavaScript。内置微积分引擎（定积分、导数、极限、求和、求根、泰勒多项式）和一个教模型何时用卡片的技能。'

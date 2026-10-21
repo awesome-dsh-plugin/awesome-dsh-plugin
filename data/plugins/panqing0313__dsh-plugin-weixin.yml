@@ -1,0 +1,6 @@
+url: https://github.com/panqing0313/dsh-plugin-weixin
+name: panqing0313/dsh-plugin-weixin
+category: notify
+description:
+  en: 'WeChat (personal WeChat, iLink Bot API) channel: chat with your DSH agent from WeChat, with images, files and voice-note transcription. One WeChat conversation can hold several DSH Sessions (/new, /list, /use) and every option is editable from the settings page. Also published to npm as dsh-plugin-weixin.'
+  zh: '微信（个人微信，iLink Bot API）通道：在微信里直接对话 DSH agent，支持图片、文件收发与语音转写。一个微信会话可挂多条 DSH 会话（/new、/list、/use 切换，切走不销毁），全部配置项都能在设置页里查看和修改。已上架 npm（dsh-plugin-weixin）。'

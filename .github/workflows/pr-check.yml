@@ -21,6 +21,12 @@ jobs:
         with:
           node-version: 22
       - run: npm ci
+        env:
+          # The lockfile pins registry.npmmirror.com URLs. On GitHub runners that CDN
+          # has repeatedly returned 503/504 and hung `npm ci` for tens of minutes
+          # (2026-10-19). Fetch from npmjs in CI; local installs keep their own registry.
+          npm_config_registry: https://registry.npmjs.org/
+          npm_config_replace_registry_host: always
       - name: Stale-fork guard
         # A fork behind main re-adds old entries (caught by the duplicate
         # check) or, worse, deletes recent ones — which every content check
@@ -219,6 +225,11 @@ jobs:
         # read off the live repository (a hand-made thread, a thread the
         # catalog's lowercasing era filed under another case).
         run: node --test scripts/adopt-discussions.test.mjs
+      - name: Entry-path tests
+        # Pure rules only, no token and no network: readEntries must report the
+        # path `git diff --name-only` prints, so the diff/entry comparison in
+        # check-submission.mjs matches on every host separator.
+        run: node --test scripts/entries-path.test.mjs
       - name: Build (locale parity, date derivation, templates)
         # probes are skipped on purpose: the build tolerates missing probe
         # data, and this keeps the check token-free and fork-safe.

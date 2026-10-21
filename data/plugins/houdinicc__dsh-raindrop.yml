@@ -1,0 +1,6 @@
+url: https://github.com/houdinicc/dsh-raindrop
+name: houdinicc/dsh-raindrop
+category: ui
+description:
+  en: Read-only Raindrop.io dashboard in the sidebar with collection and tag distribution, top source domains, content types, a 12-month trend and a cleanup backlog, plus two read-only agent tools for analyzing saved bookmarks. Requires a Raindrop.io API token (create an app and paste the token).
+  zh: 侧边栏里的 Raindrop.io 只读仪表盘：分类与标签分布、域名来源 Top、内容类型、近 12 个月趋势与待清理项，并提供两个只读 Agent 工具分析收藏。需 Raindrop.io API token（创建应用后粘贴）。

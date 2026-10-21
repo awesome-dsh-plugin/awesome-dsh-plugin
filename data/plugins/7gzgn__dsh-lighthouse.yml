@@ -1,0 +1,6 @@
+url: "https://github.com/7gzgn/dsh-lighthouse"
+name: "dsh-lighthouse"
+category: tools
+description:
+  en: "One screen for every work you have shipped: local project facts, GitHub stars and last push, whether the plugin market has picked it up and how many downloads it has, plus pending pull-request wait times against the upstream median."
+  zh: 一屏看清每个作品的现状：本地版本与文件数、GitHub star 与最后推送、市场是否已收录及下载量、收录 PR 等待时长对比上游中位数；全部只读、数字都来自 API，不经模型生成。

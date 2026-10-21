@@ -1,0 +1,6 @@
+url: https://github.com/neutronslime/dsh-preset-switcher-fork
+name: neutronslime/dsh-preset-switcher-fork
+category: session
+description:
+  en: 'Switch the current session''s agent preset (mode) at any time, including after the conversation has already started, from a session-header dropdown backed by a fenced POST /preset-switch/api route. The route also repairs sessions whose recorded preset was deleted. Fork of jeffcwj/dsh-preset-switcher updated for DSH 0.2.1.'
+  zh: '随时切换当前会话的代理预设（模式），对话开始后也能切：会话头下拉菜单，由受限的 POST /preset-switch/api 路由支撑；该路由还会修复记录中预设已被删除的会话。jeffcwj/dsh-preset-switcher 的分支，已适配 DSH 0.2.1。'

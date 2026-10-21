@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import {
-  SCANNER_SCHEMA, factsFromScan, repoOf, scanSourceFor, shouldRescan, subdirOf,
+  SCANNER_SCHEMA, factsFromScan, rememberPrevious, repoOf, scanSourceFor, shouldRescan, subdirOf,
 } from './lib/capabilities.mjs'
 
 // The values in these tests are not invented: the scanner responses are the
@@ -73,7 +73,7 @@ test('stores the capability shape the scanner printed, and nothing else', () => 
       score: 28,
       band: 'red',
     }],
-  }, { spec: 'fallback', version: null, tool: 'dsh-trust-check@0.1.13', now: '2026-09-24T12:00:00Z' })
+  }, { spec: 'fallback', version: null, tool: 'dsh-trust-check@0.2.1', now: '2026-09-24T12:00:00Z' })
 
   assert.deepEqual(facts, {
     version: '0.1.45',
@@ -81,7 +81,7 @@ test('stores the capability shape the scanner printed, and nothing else', () => 
     capabilities: ['shell', 'fs-write', 'fs-read', 'network', 'credentials', 'env', 'host-runtime'],
     redLines: ['reads credentials/secrets AND has network access'],
     scannedAt: '2026-09-24T12:00:00Z',
-    tool: 'dsh-trust-check@0.1.13',
+    tool: 'dsh-trust-check@0.2.1',
   })
   // `score` and `band` are dropped on purpose: upstream says the band is not a
   // pre-install verdict, and a number ranking plugins safe/unsafe is the badge
@@ -100,9 +100,90 @@ test('a quiet package stores empty lists, not a clean verdict', () => {
   // reason: it is not a claim that there is nothing to find.
 })
 
+test('copies a provenance claim and drops one that is not that shape', () => {
+  const fallback = { spec: 'npm:semver@7.8.5', version: '7.8.5', tool: 't', now: 'n' }
+  const claim = {
+    present: true,
+    signatureChecked: false,
+    repository: 'https://github.com/npm/node-semver',
+    commit: 'abc',
+    repositoryMatches: true,
+  }
+  const facts = factsFromScan({
+    schemaVersion: 1,
+    provenance: claim,
+    plugins: [{ version: '7.8.5', capabilities: [], redLines: [] }],
+  }, fallback)
+  assert.deepEqual(facts?.provenance, claim)
+  const dropped = factsFromScan({
+    schemaVersion: 1,
+    provenance: { present: true },
+    plugins: [{ version: '7.8.5', capabilities: [], redLines: [] }],
+  }, fallback)
+  assert.equal(dropped?.provenance, undefined)
+})
+
+test('a literal IP that is only compared is not an outbound target', () => {
+  // dsh-trust-check 0.2.1 on dsh-whale-widget@0.4.2 (2026-10-20): the address
+  // appears once, inside the SSRF deny branch, and the scanner itself marks
+  // its only site `usage: "compare"`. The string-matched red line reads the
+  // opposite of the code.
+  const fallback = { spec: 'npm:dsh-whale-widget@0.4.2', version: '0.4.2', tool: 'dsh-trust-check@0.2.1', now: 'n' }
+  const facts = factsFromScan({
+    schemaVersion: 2,
+    plugins: [{
+      version: '0.4.2',
+      capabilities: ['network', 'credentials'],
+      redLines: [
+        'reads credentials/secrets AND has network access',
+        'uses literal IP 100.100.100.200 for network access',
+        'uses literal IP 169.254.169.254 for network access',
+      ],
+      destinations: [
+        { kind: 'ip', value: '100.100.100.200', sites: [{ file: 'lib/index.js', line: 2236, usage: 'compare' }] },
+        { kind: 'ip', value: '169.254.169.254', sites: [{ file: 'lib/index.js', line: 2240, usage: 'assigned' }] },
+      ],
+    }],
+  }, fallback)
+  assert.deepEqual(facts?.redLines, [
+    'reads credentials/secrets AND has network access',
+    'uses literal IP 169.254.169.254 for network access',
+  ])
+  // A mix of compare and real use keeps the red line: the address is still dialled.
+  const mixed = factsFromScan({
+    schemaVersion: 2,
+    plugins: [{
+      version: '1', capabilities: ['network'], redLines: ['uses literal IP 10.0.0.1 for network access'],
+      destinations: [{ kind: 'ip', value: '10.0.0.1', sites: [{ usage: 'compare' }, { usage: 'assigned' }] }],
+    }],
+  }, fallback)
+  assert.deepEqual(mixed?.redLines, ['uses literal IP 10.0.0.1 for network access'])
+})
+
+test('a new release keeps the previous capabilities and red lines', () => {
+  const next = {
+    version: '1.1.0', spec: 'npm:x@1.1.0', capabilities: ['network'], redLines: [],
+    scannedAt: 'n', tool: 't',
+  }
+  const stored = {
+    version: '1.0.0', spec: 'npm:x@1.0.0', capabilities: ['shell'], redLines: ['runs code at install time (install)'],
+    scannedAt: 'o', tool: 't',
+  }
+  const remembered = rememberPrevious(stored, next)
+  assert.deepEqual(remembered?.previous, {
+    version: '1.0.0',
+    capabilities: ['shell'],
+    redLines: ['runs code at install time (install)'],
+  })
+  // Same release keeps the older previous instead of pointing at itself.
+  const again = rememberPrevious(remembered, { ...next, scannedAt: 'later' })
+  assert.equal(again?.previous?.version, '1.0.0')
+})
+
 test('cannot read a shape it does not understand, and says so by returning nothing', () => {
   const fallback = { spec: 's', version: null, tool: 't', now: 'n' }
-  assert.equal(factsFromScan({ schemaVersion: 2, plugins: [{}] }, fallback), null)
+  assert.equal(factsFromScan({ schemaVersion: 3, plugins: [{}] }, fallback), null)
+  assert.notEqual(factsFromScan({ schemaVersion: 2, plugins: [{ version: '1', capabilities: ['shell'], redLines: [] }] }, fallback), null)
   assert.equal(factsFromScan({ plugins: [{}] }, fallback), null)
   assert.equal(factsFromScan({ schemaVersion: 1, plugins: [] }, fallback), null)
   assert.equal(factsFromScan({ schemaVersion: 1, errors: ['boom'] }, fallback), null)

@@ -1,0 +1,6 @@
+url: https://github.com/Storm-Starlight/dsh-mcp-skills-board
+name: Storm-Starlight/dsh-mcp-skills-board
+category: ui
+description:
+  en: 'MCP server and skill management for DeepSeek Harness: a sidebar panel and a plugin-page config section with search, status lights, per-row switches, expandable details, and an add-server form following Codex mcp_servers fields.'
+  zh: 'DeepSeek Harness 的 MCP 服务器与技能管理面板：侧栏面板加插件页配置区，支持搜索、状态灯、逐行开关、详情，以及按 Codex mcp_servers 字段设计的添加服务器表单。'

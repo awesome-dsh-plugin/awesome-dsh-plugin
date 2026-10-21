@@ -1,0 +1,7 @@
+url: https://github.com/oldHan2423/dsh-everything-find
+name: oldHan2423/dsh-everything-find
+category: tools
+tarball: https://github.com/oldHan2423/dsh-everything-find/releases/download/v0.2.0-rc.2/dsh-everything-find-0.2.0-rc.2.tgz
+description:
+  en: 'Everything (voidtools) file-name search: everything_find queries the local Everything index to locate files and folders on any indexed drive in milliseconds, and adds a configuration card to the Plugins page.'
+  zh: '基于 Everything 索引的全盘文件名搜索：everything_find 工具毫秒级定位任意盘上的文件与文件夹，并在插件页提供配置卡片。'

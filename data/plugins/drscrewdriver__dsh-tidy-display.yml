@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-tidy-display
+name: drscrewdriver/dsh-tidy-display
+category: ui
+description:
+  en: 'Honest merge of two community plugins into one calmer display: the streaming reading view from dsh-better-display (fork) and the message rail from dsh-tidychat. For theme lovers it wraps reasoning prose and tool-call output in translucent message bubbles, so text no longer sits directly on busy wallpapers or skins where it is hard to read. Cross-version rc adaptation attempted across DSH 0.1.0-0.2.0 (all rc); no obvious problems so far.'
+  zh: '诚实说明：将两个社区插件合并为一个更安静的显示层——流式阅读视图来自 dsh-better-display（fork），消息轨道来自 dsh-tidychat。为主题爱好者把思考正文与工具调用输出包裹进半透明消息泡泡框，避免文字直接铺在复杂壁纸或皮肤上难以分辨。已在 DSH 0.1.0-0.2.0 各 rc 版本间尝试跨版本适配，目前无明显问题。'

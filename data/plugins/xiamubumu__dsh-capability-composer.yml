@@ -1,0 +1,7 @@
+url: https://github.com/xiamubumu/dsh-capability-composer
+name: xiamubumu/dsh-capability-composer
+category: tools
+description:
+  en: 'Composes tools, skills and MCP servers into switchable per-session sets, shrinking the resident tool surface and the system prompt on demand.'
+  zh: 能力组合：把工具、技能与 MCP 编成可切换的组合，按需缩小常驻工具面与系统提示。
+tarball: https://github.com/xiamubumu/dsh-capability-composer/releases/download/v1.0.0/dsh-capability-composer-1.0.0.tgz

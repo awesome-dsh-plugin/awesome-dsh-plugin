@@ -1,0 +1,7 @@
+url: https://github.com/woshipixiu1234/dsh-invest-bundle
+name: woshipixiu1234/dsh-invest-bundle
+category: skill
+tarball: https://github.com/woshipixiu1234/dsh-invest-bundle/releases/download/v0.2.0/dsh-invest-bundle.tgz
+description:
+  en: "Investment research bundle: 10 tools (search, page fetch, source audit, claim verification, numeric rigor, channel health, workflow loader, chart engine, PDF renderer, PDF gate) and 23 skills adapted from ai-berkshire. Runs a six-phase workflow where four parallel agents (Duan Yongping, Buffett, Munger, Li Lu) research a company, cross-examine each other, and ship a chart-rich PDF with cover, tables, captions and page numbers. Requires Python 3.10+; the chart and PDF tools also need python-docx and matplotlib."
+  zh: "投研插件：10 个工具（检索、正文抓取、来源审计、断言核验、数值严谨、通道体检、workflow 装载、图表引擎、PDF 渲染、PDF 准出），外加 23 个改造自 ai-berkshire 的技能。六阶段 workflow 让段永平/巴菲特/芒格/李录四个 Agent 并行研究、交叉质证，最终产出带封面、表格、图注与页码的图文 PDF。需 Python 3.10+；图表与 PDF 工具还需 python-docx 与 matplotlib。"

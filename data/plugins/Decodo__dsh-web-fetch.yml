@@ -1,0 +1,6 @@
+url: https://github.com/Decodo/dsh-web-fetch
+name: Decodo/dsh-web-fetch
+category: browser
+description:
+  en: 'Decodo Web Data API as the fetch provider behind the built-in web_fetch tool: returns Markdown by default, pins fetchProvider to decodo, and enforces a configurable per-process fetch cap. Requires a Decodo API key; web_search is unchanged.'
+  zh: '把内置 web_fetch 工具的抓取后端换成 Decodo Web Data API：默认返回 Markdown，并把 fetchProvider 固定为 decodo，可配置单进程抓取上限；需要 Decodo API Key，web_search 不受影响。'

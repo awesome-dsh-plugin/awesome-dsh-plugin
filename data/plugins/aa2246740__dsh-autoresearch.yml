@@ -1,0 +1,7 @@
+url: "https://github.com/aa2246740/dsh-autoresearch"
+name: "aa2246740/dsh-autoresearch"
+category: "workflow"
+description:
+  en: "Creates, runs and monitors persistent research experiment loops from the DSH Web UI."
+  zh: "在 DSH Web 界面创建、运行和监控可持久化的研究实验循环。"
+tarball: "https://github.com/aa2246740/dsh-autoresearch/releases/download/v1.0.10/dsh-autoresearch-1.0.10.tgz"

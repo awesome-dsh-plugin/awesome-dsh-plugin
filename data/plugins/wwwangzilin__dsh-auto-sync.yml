@@ -1,0 +1,6 @@
+url: https://github.com/wwwangzilin/dsh-auto-sync
+name: wwwangzilin/dsh-auto-sync
+category: session
+description:
+  en: 'Automatic, versioned backup of your DeepSeek Harness home — sessions, memories, settings and the profile plugin tree — to a private git remote you own, with commits and pushes on a schedule and every failure surfaced in the DSH log.'
+  zh: '把 DeepSeek Harness 的 home 自动、带版本地备份到自己的私有 git 仓库：会话记录、记忆文件、设置与 profile 插件树都会按计划提交并推送，失败一定会在 DSH 日志里报告。'

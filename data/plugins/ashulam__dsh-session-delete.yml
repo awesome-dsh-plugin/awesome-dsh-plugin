@@ -1,0 +1,6 @@
+url: https://github.com/ashulam/dsh-session-delete
+name: ashulam/dsh-session-delete
+category: session
+description:
+  en: 'Deletes a session from the sidebar session menu: its log and replay cache go to the Recycle Bin on Windows (a local trash folder elsewhere); a live session is queued for removal on the next start.'
+  zh: '在侧栏会话菜单里删除会话：日志与投影缓存移入回收站（Windows；其它平台移到本地回收目录）；正在使用的会话排队到下次启动时删除。'

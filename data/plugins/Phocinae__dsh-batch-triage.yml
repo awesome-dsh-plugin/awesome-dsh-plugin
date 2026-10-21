@@ -1,0 +1,6 @@
+url: https://github.com/Phocinae/dsh-batch-triage
+name: Phocinae/dsh-batch-triage
+category: workflow
+description:
+  en: 'Deterministic ticket triage: a rule prefilter classifies clear cases and returns everything else as needs_review instead of guessing.'
+  zh: '确定性工单分诊：规则先处理明确案例，放不下的统一返回 needs_review，而不是猜。'

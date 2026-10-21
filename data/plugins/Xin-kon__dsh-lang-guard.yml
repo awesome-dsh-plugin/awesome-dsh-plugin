@@ -1,0 +1,6 @@
+url: https://github.com/Xin-kon/dsh-lang-guard
+name: Xin-kon/dsh-lang-guard
+category: tools
+description:
+  en: 'Pins a Chinese (zh-CN) thinking and answering constraint into the system prompt, and registers a per-step runtime reminder so the agent does not drift back to English after tool output. Zero runtime dependencies, single file; falls back to a second registration path and only logs a warning when the host API changes.'
+  zh: '把「用中文思考和回答」钉进系统提示词，并每步注入一条运行时提醒，避免工具返回英文后语言漂移。零运行时依赖、单文件，带能力探测与降级注册，宿主 API 变更时仅记日志、不抛错。'

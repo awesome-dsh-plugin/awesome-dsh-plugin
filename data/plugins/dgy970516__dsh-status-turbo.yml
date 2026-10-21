@@ -1,0 +1,6 @@
+url: https://github.com/dgy970516/dsh-status-turbo
+name: dgy970516/dsh-status-turbo
+category: ui
+description:
+  en: 'A status bar in the composer footer showing the current phase, how long it has been running, the current step token count and a no-progress warning, projected from session logs without polling the host, plus a detail panel that opens on click.'
+  zh: '在输入框底栏显示当前阶段、阶段已耗时、本步 token 数与无进展告警的状态条（纯日志投影，不轮询宿主），点击可展开详情面板。'

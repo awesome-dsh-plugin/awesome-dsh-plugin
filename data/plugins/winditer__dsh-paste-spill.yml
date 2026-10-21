@@ -1,0 +1,6 @@
+url: https://github.com/winditer/dsh-paste-spill
+name: winditer/dsh-paste-spill
+category: ui
+description:
+  en: 'Folds each 4-50 KB paste in the DSH composer into its own chip (expand or delete it individually), and turns a paste of 50 KB or more into a real file attachment. Declares DSH >=0.1.7-rc.2 <0.3.0-0, so it stays visible on the 0.2 release line.'
+  zh: '把 DSH 输入框里每次 4–50 KB 的粘贴折叠成独立的一枚 chip（可单独展开或删除），50 KB 及以上的粘贴转成真附件。声明 DSH >=0.1.7-rc.2 <0.3.0-0，因此在 0.2 版本线上保持可见。'

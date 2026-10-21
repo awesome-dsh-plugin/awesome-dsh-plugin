@@ -1,0 +1,6 @@
+url: https://github.com/Yokira404/dsh-thinking-highlight
+name: Yokira404/dsh-thinking-highlight
+category: ui
+description:
+  en: 'Counts keywords inside thinking rows and highlights them once a row is expanded, with a count chip per keyword on the title line that doubles as an on/off switch for that word, per-keyword tint, text colour and text size (10-22px, the same range the host body-text setting uses), typeface, bold / italic / underline and whole-word matching, plus a dedicated settings section.'
+  zh: '统计思考行里的关键词并在展开后按词标红；标题行上每个词一个计数徽章，点徽章即单独开关这个词；每个词可设底色、文字颜色、字号（10-22px，与宿主正文尺寸同一区间）、字体、加粗/斜体/下划线与「完整词」匹配；插件有独立的设置分区。'

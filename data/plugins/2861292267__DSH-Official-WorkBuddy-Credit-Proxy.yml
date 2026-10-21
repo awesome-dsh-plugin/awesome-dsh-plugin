@@ -1,0 +1,6 @@
+url: https://github.com/2861292267/DSH-Official-WorkBuddy-Credit-Proxy
+name: 2861292267/DSH-Official-WorkBuddy-Credit-Proxy
+category: model
+description:
+  en: "Pools every WorkBuddy account signed in on this machine into one auto-failing-over provider, serving OpenAI Chat, OpenAI Responses and Anthropic Messages from the same pool, with model aliases, usage statistics and scheduled credit automation."
+  zh: "把本机已登录的 WorkBuddy 账号汇成一个自动故障转移的模型池，同一池子对外提供 OpenAI Chat、OpenAI Responses 与 Anthropic Messages 三种协议，并支持模型别名、用量统计与积分自动化。"

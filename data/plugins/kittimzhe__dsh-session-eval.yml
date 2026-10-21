@@ -1,0 +1,6 @@
+url: https://github.com/kittimzhe/dsh-session-eval
+name: kittimzhe/dsh-session-eval
+category: session
+description:
+  en: 'Retrospective agent-session evaluation: deterministic grade cards and cross-session regression diffs from persisted logs — no benchmark runs, no LLM judges.'
+  zh: '回溯式会话评估：从持久化日志生成确定性成绩卡与跨会话回归对比——不跑基准、不用 LLM 裁判。'

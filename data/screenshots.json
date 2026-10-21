@@ -509,9 +509,6 @@
   "https://github.com/coolbreezecoin/dsh-wechat-mp": [
     "https://raw.githubusercontent.com/coolbreezecoin/dsh-wechat-mp/main/assets/demo.gif"
   ],
-  "https://github.com/corrinehu/dsh-buddy-checkin": [
-    "https://raw.githubusercontent.com/corrinehu/dsh-buddy-checkin/main/assets/1.png"
-  ],
   "https://github.com/corrinehu/dsh-chat-imagine": [
     "https://raw.githubusercontent.com/corrinehu/dsh-chat-imagine/main/assets/1.png",
     "https://raw.githubusercontent.com/corrinehu/dsh-chat-imagine/main/assets/2.png",
@@ -1061,11 +1058,6 @@
   "https://github.com/acebang0303/dsh-quick-launch": [
     "https://raw.githubusercontent.com/acebang0303/dsh-quick-launch/main/docs/preview.png"
   ],
-  "https://github.com/corrinehu/dsh-workbuddy-connect": [
-    "https://raw.githubusercontent.com/corrinehu/dsh-workbuddy-connect/main/assets/1.png",
-    "https://raw.githubusercontent.com/corrinehu/dsh-workbuddy-connect/main/assets/2.png",
-    "https://raw.githubusercontent.com/corrinehu/dsh-workbuddy-connect/main/assets/3.png"
-  ],
   "https://github.com/tipoLi5890/dsh-file-mention": [
     "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-browse.png",
     "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-drag-drop.png",
@@ -1372,5 +1364,11 @@
   "https://github.com/qinyre/dsh-plugin-archive-manager": [
     "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-rail.png",
     "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-archive.png"
+  ],
+  "https://github.com/LFY-bot/dsh-api-probe": [
+    "https://raw.githubusercontent.com/LFY-bot/dsh-api-probe/main/assets/panel-form.png",
+    "https://raw.githubusercontent.com/LFY-bot/dsh-api-probe/main/assets/report-result.png",
+    "https://raw.githubusercontent.com/LFY-bot/dsh-api-probe/main/assets/report-failure.png",
+    "https://raw.githubusercontent.com/LFY-bot/dsh-api-probe/main/assets/report-metrics.png"
   ]
 }

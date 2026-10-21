@@ -1,0 +1,6 @@
+url: https://github.com/wilsonchengassistant/dsh-quick-workspace
+name: wilsonchengassistant/dsh-quick-workspace
+category: ui
+description:
+  en: 'Replaces the host-side folder chooser in the Add workspace flow with a name dialog, so a remote browser can create and open a workspace instead of an OS dialog appearing on the Host screen.'
+  zh: '將「新增工作區」流程中喺主機彈出嘅資料夾選擇器，改成輸入名稱嘅對話框，令遠端瀏覽器可以直接建立並開啟工作區。'

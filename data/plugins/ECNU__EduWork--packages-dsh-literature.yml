@@ -1,0 +1,6 @@
+url: https://github.com/ECNU/EduWork/tree/main/packages/dsh-literature
+name: ECNU/EduWork#dsh-literature
+category: tools
+description:
+  en: 'DBLP and arXiv literature search, BibTeX retrieval and full-text acquisition with session-owned background jobs; an EduWork-maintained fork of SihanLv/dsh-literature.'
+  zh: '检索 DBLP 与 arXiv 文献、获取 BibTeX 和全文，支持归属当前会话的后台任务；由 EduWork 接续维护的 SihanLv/dsh-literature 分支。'

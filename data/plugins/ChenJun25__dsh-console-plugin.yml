@@ -1,0 +1,6 @@
+url: https://github.com/ChenJun25/dsh-console-plugin
+name: ChenJun25/dsh-console-plugin
+category: remote
+description:
+  en: Pair a phone with this computer's DSH instance by QR code or a six-digit code, then drive it remotely — send instructions, view images, answer approvals — from the panel, with public-tunnel support for pairing across networks.
+  zh: 用二维码或六位配对码把手机连上这台电脑的 DSH，之后可远程发指令、看图片、回答审批；局域网内不依赖云端，异地走公网隧道。

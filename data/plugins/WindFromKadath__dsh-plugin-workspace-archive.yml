@@ -1,0 +1,6 @@
+url: https://github.com/WindFromKadath/dsh-plugin-workspace-archive
+name: WindFromKadath/dsh-plugin-workspace-archive
+category: session
+description:
+  en: 'Archives the sessions of a workspace when its folder is deleted or moved away, or when its registration is removed, and restores them when it returns: unarchives only the sessions it archived itself, re-attaches every member its ledger recorded (including sessions you archived manually, whose archived state is left unchanged), and adopts ungrouped sessions whose working directory is that workspace path.'
+  zh: '工作区文件夹被删除或移走、或工作区登记被移除时，自动归档其会话；目录或登记回归时恢复：只取消归档本插件归档过的会话，把台账记过的全部成员挂回分组（含你手动归档的会话，且不改其归档状态），并把「无项目」里工作目录正是该工作区路径的会话归位。'

@@ -1,0 +1,6 @@
+url: https://github.com/Maple-Yoli/dsh-notice-card
+name: Maple-Yoli/dsh-notice-card
+category: notify
+description:
+  en: Shows a focus-free notice card in the corner when a turn ends or DSH is waiting on an approval or a question.
+  zh: 任务跑完、等你审批或等你回答时，在屏幕角落弹出一张不抢焦点的通知卡。

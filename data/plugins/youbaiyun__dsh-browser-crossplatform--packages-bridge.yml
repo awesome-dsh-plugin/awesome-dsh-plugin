@@ -1,0 +1,6 @@
+url: https://github.com/youbaiyun/dsh-browser-crossplatform/tree/main/packages/bridge
+name: youbaiyun/dsh-browser-crossplatform#bridge
+category: browser
+description:
+  en: 'Desktop half of the dsh browser extension: mounts a token-authenticated WebSocket bridge on the dsh webserver and exposes the browser_* tools that let the model read the tab you are on as text and act on it, with image recognition off until the user enables it.'
+  zh: 'dsh 浏览器扩展的桌面端一半：在 dsh 自带的 webserver 上挂一个带令牌校验的 WebSocket 桥，向模型暴露 browser_* 工具，让它读取并操作用户当前标签页，图片识别默认关闭、需用户自行开启。'

@@ -1,0 +1,6 @@
+url: https://github.com/HEArtattaCK2332/dsh-text-explain
+name: HEArtattaCK2332/dsh-text-explain
+category: ui
+description:
+  zh: "在 DSH 对话里划词即得大白话解释，浮窗显示，并自动带上这段话所在的那条完整消息作为语境。三档讲解深度（小白 / 通识 / 专业），切换后当场重讲；可选联网搜索与本地文件查找（默认交给模型自己判断，也可一键强制查一次，查完只补充新内容而不复述）；可继续追问；还能把整段问答「待命式」交接给一个新会话——背景放好即止，不唤醒模型、不耗额度。设置保存在宿主侧 settings.json，不点保存不落盘。仓库内另含一个 OpenAI 兼容端点与一个浏览器扩展（源码）。"
+  en: "Select a passage in a DSH conversation and read a plain-language explanation in a floating panel, which carries the surrounding message as the context. Three explanation depths (plain / general / pro) that re-explain on the spot when switched; optional web search and local file lookup (the model decides by default, and a button can force one lookup that reports only what is new); follow-up questions; and a button that hands the whole exchange to a new session in standby mode - the background is queued without waking the model or spending tokens. Settings live on the host in settings.json, and nothing is written until you press save. The repository also ships an OpenAI-compatible endpoint and a browser extension (source)."

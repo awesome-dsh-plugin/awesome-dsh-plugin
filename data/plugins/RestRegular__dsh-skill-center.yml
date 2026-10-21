@@ -1,0 +1,6 @@
+url: https://github.com/RestRegular/dsh-skill-center
+name: RestRegular/dsh-skill-center
+category: skill
+description:
+  en: 'Skill Center panel for the current session: lists the visible skills with their provider and source root, renders each SKILL.md, toggles model and user invocation, and creates or soft-deletes skills; ships a skill-authoring skill and the skill_create tool.'
+  zh: '当前会话的技能中心面板：列出可见技能及其提供方与来源根目录，阅读 SKILL.md，开关模型/用户调用，并可创建、软删除技能；随包附带 skill-authoring 技能与 skill_create 工具。'

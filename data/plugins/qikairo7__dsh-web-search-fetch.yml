@@ -1,0 +1,6 @@
+url: https://github.com/qikairo7/dsh-web-search-fetch
+name: qikairo7/dsh-web-search-fetch
+category: browser
+description:
+  en: 'Aggregated web_search and web_fetch providers for DeepSeek Harness, sitting behind the built-in tools. Search fans one query out to AnySearch, Zhipu and Zhihu concurrently, dedupes URLs, fuses ranks with Reciprocal Rank Fusion and optionally reranks through SiliconFlow. Fetch is URL-aware: static pages pass through the built-in HTTP fetcher, dynamic ones fan out to Firecrawl and AnySearch extract and pick one body by quality. One shared circuit breaker skips an engine for the day after a quota or 429 signal, and a settings card keeps each engine API key in the credential store without ever showing its value.'
+  zh: '聚合型 web_search 与 web_fetch 提供方，接在 DSH 原生工具背后。搜索把一次查询并发分发给 AnySearch、智谱、知乎三路，URL 去重后用 RRF 融合排名，可选经硅基流动重排。抓取按 URL 感知分流：静态页走内置 HTTP 抓取，动态页并发 Firecrawl 与 AnySearch extract，再按质量择优返回一路正文。共用一个熔断器，某引擎触发配额或 429 信号后当日跳过该路；设置卡片把各引擎 API Key 存入凭证库，从不显示其值。'

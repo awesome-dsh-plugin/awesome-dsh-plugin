@@ -1,0 +1,6 @@
+url: https://github.com/copylee711/dsh-free-search
+name: copylee711/dsh-free-search
+category: browser
+description:
+  en: 'Web search provider with switchable engines, several usable without an API key (Bing, DuckDuckGo, SearXNG and others) and a fallback order between them; adds multi_search, platform_search, image_search with an in-chat image wall, page_images and save_images, plus a settings page for engines, keys and per-engine proxy.'
+  zh: '可切换引擎的联网搜索 provider，其中多个引擎无需 API key（Bing、DuckDuckGo、SearXNG 等），可设置回退顺序；另提供 multi_search、platform_search、带对话内图片墙的 image_search、page_images 和 save_images，以及配置引擎、密钥和按引擎代理的设置页。'

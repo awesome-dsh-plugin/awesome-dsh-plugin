@@ -1,0 +1,6 @@
+url: https://github.com/konnga/dsh-hud
+name: konnga/dsh-hud
+category: ui
+description:
+  en: "Read-only Git panel for the current workspace — branch, changed files, diffs and image before/after compare — plus three capsules above the composer (Git status, tool and skill activity, session running time) and per-session change attribution with review progress."
+  zh: "当前工作区的只读 Git 面板：分支、改动清单、差异与图片前后对比，外加输入框上方的三枚胶囊（Git 状态、工具与技能活动、会话运行时长），以及本会话改动归因与审阅进度。"

@@ -1,0 +1,6 @@
+url: https://github.com/htcqp802/dsh-web-search-openai
+name: htcqp802/dsh-web-search-openai
+category: browser
+description:
+  en: "OpenAI-compatible web search provider for the built-in web_search tool: one baseURL/apiKey/model config powers Qwen Token Plan, OpenAI and any Responses API gateway."
+  zh: "基于 OpenAI 兼容 Responses API 的通用联网搜索插件：配置 baseURL / API Key / 模型即可让内置 web_search 工具对接 Qwen Token Plan、OpenAI 等任意网关。"

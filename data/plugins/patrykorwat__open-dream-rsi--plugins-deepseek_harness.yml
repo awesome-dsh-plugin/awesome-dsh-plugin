@@ -1,0 +1,6 @@
+url: https://github.com/patrykorwat/open-dream-rsi/tree/main/plugins/deepseek_harness
+name: patrykorwat/open-dream-rsi#deepseek_harness
+category: tools
+description:
+  en: 'Not another memory plugin: ODR is an evolving-worlds self-improvement loop (Dream-RSI) — attempts are recorded into a Discovery Tree, and between runs thousands of strategy variants are replayed against that recorded world; a strategy, recipe or lesson is promoted only after surviving counterfactual replay, never on the model''s word alone, and Sentinel gates tool calls before the budget burns; the LLM stays frozen, installable from npm as dsh-open-dream-rsi.'
+  zh: '不是又一个记忆插件：ODR 是“演化世界”式（Dream-RSI）自我改进回路——每次尝试都记入发现树（Discovery Tree），任务间歇将数千个策略变体在这棵记录下来的世界上回放；策略、配方或经验只有通过反事实回放的考验才会晋升，绝不因模型自己说好就获得信任，Sentinel 还会在预算耗尽前拦截工具调用；LLM 保持冻结，可从 npm 安装 dsh-open-dream-rsi。'
