@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-tool-vet
+name: feely0208/dsh-tool-vet
+category: security
+description:
+  en: 'Inspects what a third-party plugin touches before you install it.'
+  zh: '装第三方插件之前，先看它会动什么'
