@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-pipia
+name: feely0208/dsh-pipia
+category: security
+description:
+  en: 'Checks whether a personal-information impact assessment was performed and retained as required.'
+  zh: '查是否按个保法 55 条做了影响评估、按 56 条留存三年 —— 敏感信息处理必须事前评估'
