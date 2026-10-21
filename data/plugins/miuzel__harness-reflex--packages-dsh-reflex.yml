@@ -1,0 +1,7 @@
+url: https://github.com/miuzel/harness-reflex/tree/main/packages/dsh-reflex
+name: miuzel/harness-reflex#dsh-reflex
+category: tools
+tarball: https://github.com/miuzel/harness-reflex/releases/download/v0.1.0/dsh-harness-reflex-0.1.0.tgz
+description:
+  en: "System One decision runtime for dsh. Ships fast non-generative tools (choice, score, screen, gate) on a local or hosted System One gateway, and — without the model calling anything — prunes oversized tool output segment by segment, refuses repeated identical calls once System One confirms stagnation, verifies completion claims against real tool evidence, and corrects failing retries. Published on npm as dsh-harness-reflex (plugin) and harness-reflex (core, also a stdio MCP server)."
+  zh: "面向 dsh 的 System One 决策运行时。提供不消耗生成 token 的快速工具（选择、评分、安全筛查、完成度核验），并在模型不调用任何工具的情况下自动干预：把超长工具输出逐段交给 System One 判定取舍后裁剪、在确认停滞时拒绝重复调用、用真实工具证据核验完成声明、对反复失败的重试给出纠正。npm 包为 dsh-harness-reflex（插件）与 harness-reflex（核心，同时是 stdio MCP server）。"
