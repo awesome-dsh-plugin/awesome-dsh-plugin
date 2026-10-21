@@ -1,0 +1,6 @@
+url: https://github.com/student-jia/dsh-plugin-genshin-paimon-theme
+name: student-jia/dsh-plugin-genshin-paimon-theme
+category: theme
+description:
+  en: 'Genshin Impact white-and-gold skin for the DSH web GUI: a random in-game landscape wallpaper on every page load, the Genshin UI font site-wide, a Paimon-style menu and a running-status element ring, and a switchable Paimon/Phanes assistant persona. The repository ships 262 wallpapers across eight regions at 1920x1080.'
+  zh: '把 DSH Web 界面换成原神白金风格：每次打开随机一张游戏内风景壁纸，全站使用原神界面字体，带派蒙风格菜单与运行状态元素环，可在派蒙/法涅斯两种人格间一键切换；仓库内置 262 张 1920x1080 壁纸，覆盖八个地区。'
