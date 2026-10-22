@@ -1,0 +1,6 @@
+url: https://github.com/SOVLOOKUP/dsh-cloud-download
+name: SOVLOOKUP/dsh-cloud-download
+category: ui
+description:
+  en: Adds download actions to DSH delivery cards, changed-file review, and the document preview, and hides native open controls that cannot work when the Host is remote or headless. Needs DSH Web; the native open controls are hidden by default and can be restored per browser.
+  zh: 在交付卡片、变更审查和文档预览上增加下载按钮，并隐藏 Host 远程或无桌面时无法生效的原生打开控件。需 DSH Web；原生打开控件默认隐藏，可在浏览器里恢复。

@@ -1,0 +1,6 @@
+url: https://github.com/SAXEM1997/dsh-ppt-master-wrapper
+name: SAXEM1997/dsh-ppt-master-wrapper
+category: skill
+description:
+  en: 'Wraps the upstream ppt-master presentation skill set as an installable DeepSeek Harness plugin: byte-for-byte vendored skills, three lifecycle tools (ppt_master_info, ppt_master_check_env, ppt_master_setup_deps), optional venv interpreter isolation, and a Plugins-page configuration card. Requires python3 ≥ 3.10 plus the pip dependencies installed via `ppt_master_setup_deps`.'
+  zh: 把上游 ppt-master 演示文稿技能集封装为可安装的 DeepSeek Harness 插件：逐字节 vendor 技能树，提供 ppt_master_info / ppt_master_check_env / ppt_master_setup_deps 三个生命周期工具、可选的 venv 解释器隔离与插件页配置卡片，需 python3 ≥ 3.10 + `ppt_master_setup_deps` 安装的 pip 依赖。

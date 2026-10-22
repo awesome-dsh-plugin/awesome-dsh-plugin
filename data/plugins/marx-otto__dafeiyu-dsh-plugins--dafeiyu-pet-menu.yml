@@ -1,0 +1,7 @@
+url: https://github.com/marx-otto/dafeiyu-dsh-plugins/tree/main/dafeiyu-pet-menu
+name: marx-otto/dafeiyu-dsh-plugins#dafeiyu-pet-menu
+category: fun
+description:
+  en: 'Adds a Screen-sense submenu (turn on, turn off, and an interval of 15, 30, 60 or 120 seconds) to the dsh-pet desktop right-click menu, forwarding each choice to dafeiyu-screensense. dsh-pet exposes no menu extension point, so this plugin appends a marked patch to its renderer.js after backing the original up to renderer.js.dafeiyu.bak; the patch is idempotent and is re-applied when dsh-pet is reinstalled.'
+  zh: '在 dsh-pet 桌宠的右键菜单里增加「识屏模式」子菜单（开启、关闭、识别间隔 15、30、60、120 秒），把选择转发给 dafeiyu-screensense。dsh-pet 没有菜单扩展接口，因此本插件在其 renderer.js 末尾追加一段带标记的补丁，首次修改前备份为 renderer.js.dafeiyu.bak；补丁幂等，dsh-pet 重装后会自动补回。'
+tarball: https://github.com/marx-otto/dafeiyu-dsh-plugins/releases/download/v1.1.0/dafeiyu-pet-menu-1.0.0.tgz

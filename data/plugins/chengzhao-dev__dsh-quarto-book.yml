@@ -1,0 +1,6 @@
+url: https://github.com/chengzhao-dev/dsh-quarto-book
+name: chengzhao-dev/dsh-quarto-book
+category: docs
+description:
+  en: 'Authors and checks Quarto Book chapters and maintains a reusable theme. The two skills load only inside a type: book repository. Requires Quarto CLI and Python 3.'
+  zh: '为 Quarto Book 写章节、校验结构并维护可复用主题。两个技能只在 type: book 的仓库里加载。需 Quarto CLI 与 Python 3。'

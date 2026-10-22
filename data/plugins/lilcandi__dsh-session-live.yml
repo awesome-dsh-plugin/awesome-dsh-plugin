@@ -1,0 +1,6 @@
+url: https://github.com/lilcandi/dsh-session-live
+name: lilcandi/dsh-session-live
+category: ui
+description:
+  en: 'Live preview inside the sidebar session hover card: what the session is doing right now (running tool with elapsed time, thinking, last tool duration), an attachment thumbnail with click-to-enlarge, the latest user prompt and assistant reply with injected system scaffolding stripped out, a recent-tool icon strip, turn count plus token totals plus model name on one line, and a 12-item settings page (11 switches plus a slider) persisted to the profile.'
+  zh: '侧边栏会话悬停卡片里的实时预览：这个会话此刻在干什么（正在跑的工具与已运行时长、思考中、上次工具耗时）、附件缩略图点击放大、剥掉注入壳子后的最近一问一答、最近工具图标条、轮数 · token 合计 · 模型名一行概况，外加一个写入 profile 的 12 项设置页。'

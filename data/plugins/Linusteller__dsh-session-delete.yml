@@ -1,0 +1,6 @@
+url: https://github.com/Linusteller/dsh-session-delete
+name: Linusteller/dsh-session-delete
+category: session
+description:
+  en: Adds a "Delete session" item beneath "Archive" in the sidebar session menu that permanently removes a session — stops its running work, detaches its workspace/archive/pin accounting, deletes its projection cache and log directory, then broadcasts removal so the row disappears immediately, instead of only archiving it.
+  zh: 在侧栏会话菜单的「归档会话」下方新增「删除会话」项，永久删除该会话——停止进行中的工作、摘除工作区/归档/置顶记账、删除投影缓存与日志目录，然后广播移除事件让该行立即消失，而不是只能归档。

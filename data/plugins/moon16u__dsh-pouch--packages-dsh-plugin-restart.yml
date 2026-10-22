@@ -1,6 +1,0 @@
-url: https://github.com/moon16u/dsh-pouch/tree/main/packages/dsh-plugin-restart
-name: moon16u/dsh-pouch#dsh-plugin-restart
-category: dev
-description:
-  en: 'Safe detached DSH restart: /restart and /dsh-restart slash commands with native candidate styling plus a dsh_restart agent tool; a detached worker restarts DSH after 3 seconds without freezing the session.'
-  zh: '安全的分离式 DSH 重启：/restart 与 /dsh-restart 斜杠命令（原生候选样式）加 dsh_restart Agent 工具；分离的 worker 在 3 秒后重启 DSH，会话不冻结。'

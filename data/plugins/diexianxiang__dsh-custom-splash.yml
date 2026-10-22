@@ -1,0 +1,7 @@
+url: https://github.com/diexianxiang/dsh-custom-splash
+name: diexianxiang/dsh-custom-splash
+category: ui
+description:
+  en: 'A customizable video splash screen plugin for DSH. Replace the default startup with your own local video.'
+  zh: '一个为 DSH 打造的自定义视频开屏插件，支持播放你自己的本地视频，完美兼容桌面端。'
+tarball: https://github.com/diexianxiang/dsh-custom-splash/releases/download/v1.0.0/dsh-custom-splash-1.0.0.tgz

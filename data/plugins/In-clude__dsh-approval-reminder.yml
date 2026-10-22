@@ -1,0 +1,6 @@
+url: https://github.com/In-clude/dsh-approval-reminder
+name: In-clude/dsh-approval-reminder
+category: notify
+description:
+  en: 'Sends an Edge/Windows desktop notification when a tool call waits for approval, and only while the DSH page is in the background or unfocused.'
+  zh: '工具调用等待审批时弹出 Edge/Windows 桌面通知，且只在你不在 DSH 页面上（后台或未聚焦）时提醒。'

@@ -1,0 +1,6 @@
+url: https://github.com/Hoemr/dsh-llm-cc-switch
+name: Hoemr/dsh-llm-cc-switch
+category: model
+description:
+  en: 'Exposes the accounts in a local CC Switch database to DeepSeek Harness: every account (Claude Code, Codex, OpenCode, Grok Build) becomes a model category in the picker, and the SQLite database is re-read on every model listing and request, so switching accounts in CC Switch needs no DSH restart. Requires CC Switch and the DSH desktop app.'
+  zh: '把本地 CC Switch 数据库里的账号接进 DeepSeek Harness：Claude Code、Codex、OpenCode、Grok Build 的每个账号在模型选择器里各成一类，列模型与发请求时都会重读 SQLite 数据库，在 CC Switch 里换账号不必重启 DSH。需 CC Switch 与 DSH 桌面端。'

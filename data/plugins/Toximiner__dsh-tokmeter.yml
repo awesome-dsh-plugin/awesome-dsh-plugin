@@ -1,0 +1,6 @@
+url: https://github.com/Toximiner/dsh-tokmeter
+name: Toximiner/dsh-tokmeter
+category: ui
+description:
+  en: Live decode speed (tok/s) pill in the composer status bar that tracks the currently streaming response.
+  zh: 在输入栏状态栏中实时显示当前流式响应解码速度（tok/s）的插件。

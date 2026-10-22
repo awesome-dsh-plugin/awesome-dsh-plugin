@@ -1,0 +1,6 @@
+url: https://github.com/iStarryDust/dsh-scheduled-tasks
+name: iStarryDust/dsh-scheduled-tasks
+category: workflow
+description:
+  en: 'Runs a prompt on a cron-like interval; every run opens a fresh session and the run history is kept.'
+  zh: '按周期定时执行提示词，每次触发都开启全新会话，并保留运行记录。'

@@ -1,0 +1,6 @@
+url: https://github.com/RGarrido03/dsh-telegram-notify
+name: dsh-telegram-notify
+category: notify
+description:
+  en: One-way Telegram notifications for DSH.
+  zh: 针对 DSH 的单向 Telegram 通知。

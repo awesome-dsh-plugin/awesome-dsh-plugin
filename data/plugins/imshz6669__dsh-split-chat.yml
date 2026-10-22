@@ -1,0 +1,6 @@
+url: https://github.com/imshz6669/dsh-split-chat
+name: imshz6669/dsh-split-chat
+category: session
+description:
+  en: "Opens any session as a second full chat tab in the right sidebar, with its own transcript and composer, while the main conversation stays put; a split right pane allows up to three concurrent conversations."
+  zh: "把任意会话作为第二个完整对话开在右侧栏（独立记录与输入框），主区对话保持不动；右栏分栏后最多可同时对话 3 个会话。"

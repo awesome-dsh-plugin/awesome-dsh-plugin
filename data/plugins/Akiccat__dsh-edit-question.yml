@@ -1,0 +1,7 @@
+url: https://github.com/Akiccat/dsh-edit-question
+name: Akiccat/dsh-edit-question
+category: session
+tarball: https://github.com/Akiccat/dsh-edit-question/releases/latest/download/dsh-edit-question.tgz
+description:
+  en: 'Adds an "edit question" action to every user message: editing re-sends the prompt from that turn, re-attaches the original images (extra ones can be pasted in), and optionally archives the original session.'
+  zh: '在每条用户提问旁加「编辑提问」入口：改完从该提问重新开始，原图一并重发（还可粘贴补充图），原会话可选保留或归档。'

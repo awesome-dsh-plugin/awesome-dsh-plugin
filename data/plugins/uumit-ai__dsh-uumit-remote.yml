@@ -1,0 +1,6 @@
+url: https://github.com/uumit-ai/dsh-uumit-remote
+name: uumit-ai/dsh-uumit-remote
+category: remote
+description:
+  en: 'Open dsh web from your phone or another computer through a UUMit account, without running your own server or installing another program: a built-in tunnel client connects to UUMit''s hosted tunnel, and a panel in the sidebar handles pairing and who can use it (only you, people you invite by link or phone number, or everyone), with revocation. Requires dsh web on DSH >=0.2.1-rc.2.'
+  zh: '用 UUMit 账号在手机或其他电脑上打开这台电脑的 dsh web，不用自建服务器、不装其他程序：插件内置通道客户端连接 UUMit 托管的通道，侧栏里的面板负责配对和选择谁能用（仅自己、通过邀请链接或手机号授权的人、所有人），可随时撤销。需 dsh web 且 DSH >=0.2.1-rc.2。'

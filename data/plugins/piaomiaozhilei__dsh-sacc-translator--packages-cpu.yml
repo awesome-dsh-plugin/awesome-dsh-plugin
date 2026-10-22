@@ -1,0 +1,7 @@
+url: https://github.com/piaomiaozhilei/dsh-sacc-translator/tree/main/packages/cpu
+name: piaomiaozhilei/dsh-sacc-translator#cpu
+category: docs
+tarball: https://github.com/piaomiaozhilei/dsh-sacc-translator/releases/download/v0.1.17/dsh-sacc-translator-cpu-0.1.17.tgz
+description:
+  en: 'Windows x64 CPU translation panel for text and original-format documents, using host model selection, voice input and document preview. CPU OCR without NVIDIA dependencies. The download is about 364 MB.'
+  zh: '翻译 CPU：Windows x64 文本与原格式文档翻译，复用宿主模型选择、语音输入及文档预览。使用 CPU OCR，不安装 NVIDIA 运行库。下载约 364 MB。'

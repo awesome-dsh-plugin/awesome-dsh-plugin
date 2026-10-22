@@ -1,0 +1,6 @@
+url: https://github.com/hoist-wen/dsh-trajectory-tool-insight
+name: hoist-wen/dsh-trajectory-tool-insight
+category: session
+description:
+  en: 'Adds an Insight tab next to the conversation and trajectory tabs in DSH: calls a model to interpret tool calls turn by turn, and supports a custom prompt.'
+  zh: '在 DSH 会话轨迹栏边新增「解读」标签：调用模型分轮次解读工具调用情况；允许自定义提示词。'

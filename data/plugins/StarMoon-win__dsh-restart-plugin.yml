@@ -1,0 +1,6 @@
+url: https://github.com/StarMoon-win/dsh-restart-plugin
+name: StarMoon-win/dsh-restart-plugin
+category: ui
+description:
+  en: "Adds a sidebar Restart button to DeepSeek Harness Desktop on Windows that stops the whole application process tree and reopens the app."
+  zh: "在 Windows 上的 DeepSeek Harness 桌面版侧边栏添加「重启」按钮：结束整个应用进程树并重新打开应用。"

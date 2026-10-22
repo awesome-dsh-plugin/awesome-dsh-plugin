@@ -1,0 +1,6 @@
+url: https://github.com/eloimovo/better-dsh-codex-effort-slider
+name: eloimovo/better-dsh-codex-effort-slider
+category: ui
+description:
+  en: 'Takes over the model button in the DSH composer and opens its own two-level panel (provider list, then model list with search) built around a continuous draggable reasoning-effort slider: the fill runs blue to violet, higher levels add nebula and dust particles, and every level has its own color. Drag moves one level at a time, and picking a model keeps the panel open and repositions the slider to that model''s middle level.'
+  zh: '接管 DSH 输入框的官方模型席按钮，点开是自建的两级面板（provider 列表 → 模型列表 + 搜索），核心是一条连续可拖动的推理等级滑条：填充由蓝渐变到紫罗兰，高档位带星云与星尘粒子，一档一色；拖动一档一格，点模型不关面板、滑条立刻落到该模型的中间档。'

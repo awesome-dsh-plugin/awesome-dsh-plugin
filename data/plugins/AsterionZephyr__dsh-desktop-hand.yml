@@ -1,0 +1,6 @@
+url: https://github.com/AsterionZephyr/dsh-desktop-hand
+name: AsterionZephyr/dsh-desktop-hand
+category: tools
+description:
+  en: 'Windows-only desktop control for DSH with six tools that list windows, capture occluded windows, focus windows, click by coordinate, inject Unicode keyboard input, and diagnose the desktop bridge.'
+  zh: 'DSH 的 Windows 桌面控制插件，六个工具：列出窗口、抓取被遮挡窗口、聚焦窗口、按坐标点击、注入 Unicode 键盘输入与诊断桌面桥接。'
