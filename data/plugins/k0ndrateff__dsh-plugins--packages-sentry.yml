@@ -1,0 +1,5 @@
+url: https://github.com/k0ndrateff/dsh-plugins/tree/main/packages/sentry
+name: k0ndrateff/dsh-plugins#sentry
+category: notify
+description:
+  en: 'Sentry for DeepSeek Harness: the tools of Sentry MCP server, a result card, and an issue panel with resolve, ignore and assign.'

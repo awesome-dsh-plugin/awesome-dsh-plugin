@@ -1,0 +1,5 @@
+url: https://github.com/k0ndrateff/dsh-plugins/tree/main/packages/atlassian
+name: k0ndrateff/dsh-plugins#atlassian
+category: notify
+description:
+  en: 'Jira and Confluence for DeepSeek Harness: the tools of Atlassian remote MCP server, a result card for issues and pages, and an issue panel.'

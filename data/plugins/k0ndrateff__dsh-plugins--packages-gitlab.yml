@@ -1,0 +1,5 @@
+url: https://github.com/k0ndrateff/dsh-plugins/tree/main/packages/gitlab
+name: k0ndrateff/dsh-plugins#gitlab
+category: git
+description:
+  en: 'Merge requests, review threads and pipeline job logs for GitLab over its REST API with a personal access token, in a side panel, with comment, reply, resolve and approve actions that wait for confirmation.'
