@@ -1,0 +1,7 @@
+url: https://github.com/maximehu97/dsh-meeting
+name: maximehu97/dsh-meeting
+category: workflow
+description:
+  en: "Multi-agent meeting negotiation over the LAN: each person runs their own assistant, and assistants find each other via mDNS and negotiate meetings, weekend outings and bubble tea votes through A2A messages. They share only availability (never the reasons) and ask the owner before giving up protected time. Ships a phone-style page in the DSH sidebar and a 13-person sample company. No authentication; trusted LANs only."
+  zh: "局域网多智能体会议协商：每人一个助理，助理通过 mDNS 互相发现，用 A2A 报文协商排会、周末团建和奶茶投票。对外只给忙闲不说原因，占用本人保护的时段前先问本人。DSH 侧栏自带手机样式页面和 13 人示例公司。无鉴权，仅限可信局域网。"
+tarball: https://github.com/maximehu97/dsh-meeting/releases/latest/download/dsh-meeting.tgz
