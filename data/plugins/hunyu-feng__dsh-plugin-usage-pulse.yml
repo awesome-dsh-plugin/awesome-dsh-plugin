@@ -1,5 +1,5 @@
-url: https://github.com/onfzi/dsh-plugin-usage-pulse
-name: onfzi/dsh-plugin-usage-pulse
+url: https://github.com/hunyu-feng/dsh-plugin-usage-pulse
+name: hunyu-feng/dsh-plugin-usage-pulse
 category: usage
 description:
   en: 'Live DeepSeek peak / off-peak pricing in the composer dock: countdown to the next switch, when the next off-peak window starts, token spend in CNY and hourly usage bars.'
