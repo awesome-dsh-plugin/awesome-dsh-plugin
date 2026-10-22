@@ -1,0 +1,5 @@
+url: https://github.com/martindye/dsh-voice
+name: martindye/dsh-voice
+category: voice
+description:
+  en: Two-way voice for the DSH web app: dictate with the unified composer, hear replies with speaker buttons and auto-read, on any device.
