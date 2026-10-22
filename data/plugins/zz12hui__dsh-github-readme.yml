@@ -1,0 +1,6 @@
+url: https://github.com/zz12hui/dsh-github-readme
+name: zz12hui/dsh-github-readme
+category: docs
+description:
+  en: 'Prepares a repository README before pushing: scans repo facts, renders banner and process-diagram images, lints layout and section numbering, then commits and pushes with retry.'
+  zh: '涓婁紶 GitHub 鍓嶄紭鍖栦粨搴?README锛氭壂鎻忎粨搴撲簨瀹炪€佹覆鏌撻鍥句笌杩囩▼鍥俱€佹牎楠屾帓鐗堝拰缂栧彿锛屾渶鍚庡甫閲嶈瘯鎻愪氦鎺ㄩ€併€?
