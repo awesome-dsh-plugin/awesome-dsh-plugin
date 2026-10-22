@@ -1,0 +1,7 @@
+url: https://github.com/Natsubrei/dsh-comfyui-panel
+name: Natsubrei/dsh-comfyui-panel
+category: ui
+tarball: https://github.com/Natsubrei/dsh-comfyui-panel/releases/latest/download/dsh-comfyui-panel.tgz
+description:
+  en: "Embeds the real ComfyUI editor as a side panel and gives each session model tools over the workflow on that canvas — read the graph, edit it, look up node types, queue a run and poll progress; the panel starts, stops and reaps its own ComfyUI."
+  zh: "把真正的 ComfyUI 编辑器嵌进侧边栏，并按会话向模型提供一组绑定当前画布工作流的工具——读图、改图、查节点类型、排队运行、查询进度；ComfyUI 进程由面板自行启动、停止与回收。"
