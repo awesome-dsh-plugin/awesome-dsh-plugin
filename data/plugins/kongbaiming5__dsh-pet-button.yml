@@ -2,5 +2,5 @@ url: https://github.com/kongbaiming5/dsh-pet-button
 name: kongbaiming5/dsh-pet-button
 category: ui
 description:
-  en: Desktop widget that toggles the dsh-pet desktop pet on and off, and can start DeepSeek Harness when it is not running.
-  zh: 桌面小部件：一键开关 dsh-pet 桌宠，Harness 未运行时还能顺手把它拉起来。
+  en: 'Desktop switch for the dsh-pet pet: one click to show or hide it, and it can start DeepSeek Harness when that is closed.'
+  zh: '桌宠开关：一键开/关桌面上的 dsh-pet 桌宠，Harness 关闭时还能顺手把它启动起来。'
