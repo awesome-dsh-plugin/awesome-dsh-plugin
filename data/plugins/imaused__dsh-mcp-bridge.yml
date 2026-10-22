@@ -1,0 +1,6 @@
+url: https://github.com/imaused/dsh-mcp-bridge
+name: imaused/dsh-mcp-bridge
+category: tools
+description:
+  en: 'Exposes a stdio MCP server as native DeepSeek Harness tools. Ships with the official Microsoft Playwright MCP preset, so the agent browses through the Edge or Chrome you already have open, with your logins intact; any other stdio MCP command can be configured instead. Host-only, no client bundle, no npm dependencies.'
+  zh: '把 stdio MCP 服务器变成 DeepSeek Harness 原生工具。默认接微软官方 Playwright MCP，agent 直接操作你已打开、已登录的 Edge 或 Chrome；也可换成任意 stdio MCP 命令。宿主侧插件，不带客户端包，无 npm 依赖。'
