@@ -1,5 +1,5 @@
-url: https://github.com/caozixiong/dragonfly_chatbot
-name: caozixiong/dragonfly_chatbot
+url: https://github.com/howpy/dragonfly_chatbot
+name: howpy/dragonfly_chatbot
 category: tools
 description:
   en: 'Searches bundled Prototype Apps manuals and locally imported Dragonfly documentation or Python source with version filters and source citations.'
