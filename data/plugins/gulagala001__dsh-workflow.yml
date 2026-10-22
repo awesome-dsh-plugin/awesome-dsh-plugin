@@ -1,0 +1,7 @@
+url: https://github.com/gulagala001/dsh-workflow
+name: gulagala001/dsh-workflow
+category: workflow
+description:
+  en: "Run structured workflows with project scripts, tool execution and budget controls."
+  zh: "Resumable JavaScript workflows, native subagents, token budgets and worktree isolation for DeepSeek Harness.。"
+tarball: https://github.com/gulagala001/dsh-workflow/releases/download/v0.1.2-dsh.0.2.1-rc.2/dsh-workflow-plus-0.1.2-dsh.0.2.1-rc.2.tgz
