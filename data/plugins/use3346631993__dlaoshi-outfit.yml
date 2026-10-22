@@ -3,4 +3,7 @@ name: use3346631993/dlaoshi-outfit
 category: fun
 description:
   en: 'Maid-outfit desktop pet for the DeepSeek Harness web GUI: four expressions that follow the turn (thinking / success / failure), free dragging with remembered position, click-to-cycle, a bottom-right standee that reports each turn''s token usage and think latency with its own balance bubble, a chat wallpaper, a liquid-glass composer, and a single switch in Settings to turn the whole look off.'
-  zh: '浜屾鍏冪敺鐗堝コ浠嗘瀹狅細鍥涚琛ㄦ儏璺熼殢瀵硅瘽鐘舵€侊紙鎬濊€?鎴愬姛/澶辫触锛夛紝鍙嚜鐢辨嫋鎷藉苟璁颁綇浣嶇疆锛岀偣鍑诲垏鎹㈣〃鎯咃紱鍙充笅瑙掔珛鐗屾瘡杞樉绀?token 娑堣€椾笌鎬濊€冩椂闂达紝鐐瑰嚮鏈?q 寮广€佹皵娉¤啘闊虫晥涓庣嫭绔嬩綑棰濇皵娉★紱鍙﹂檮鑱婂ぉ鑳屾櫙澹佺焊銆佹恫鎬佺幓鐠冭緭鍏ユ锛岃缃噷涓€涓紑鍏冲嵆鍙暣浣撳叧闂€?
+  zh: '二次元男版女仆桌宠：四种表情跟随对话状态（思考/成功/失败），可自由拖拽并记住位置，点击切换表情；右下角立牌每轮显示 token 消耗与思考时间，点击有 q 弹、气泡膜音效与独立余额气泡；另附聊天背景壁纸、液态玻璃输入框，设置里一个开关即可整体关闭。'
+screenshots:
+  - https://raw.githubusercontent.com/use3346631993/dlaoshi-outfit/HEAD/docs/preview.jpg
+  - https://raw.githubusercontent.com/use3346631993/dlaoshi-outfit/HEAD/docs/settings.png
