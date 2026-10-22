@@ -1,0 +1,6 @@
+url: https://github.com/puciguala/dsh-web-search-custom
+name: puciguala/dsh-web-search-custom
+category: tools
+description:
+  en: "Use configured DSH model providers and credentials for OpenAI Responses web search."
+  zh: "复用 DSH 已配置的模型提供商和凭据，通过 OpenAI Responses 进行网页搜索。"
