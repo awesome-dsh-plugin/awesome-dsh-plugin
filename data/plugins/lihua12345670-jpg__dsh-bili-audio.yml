@@ -1,0 +1,6 @@
+url: https://github.com/lihua12345670-jpg/dsh-bili-audio
+name: lihua12345670-jpg/dsh-bili-audio
+category: voice
+description:
+  en: Plays the audio of a Bilibili video from a floating bar in the DSH Web UI, with a queue, seek and speed controls, and a host-side reverse proxy for the CDN Referer check.
+  zh: 在 DSH Web 界面挂一个悬浮播放条，粘贴 BV 号或链接就能听 B 站视频的声音，带队列、进度与倍速，并由宿主反向代理绕开 CDN 的 Referer 校验。
