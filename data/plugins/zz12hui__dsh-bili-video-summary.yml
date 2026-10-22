@@ -1,0 +1,6 @@
+url: https://github.com/zz12hui/dsh-bili-video-summary
+name: zz12hui/dsh-bili-video-summary
+category: tools
+description:
+  en: 'Bilibili video summarizer: downloads the audio track, transcribes it locally with faster-whisper, then writes the analysis markdown and renders a one-page infographic PNG.'
+  zh: 'B 绔欒棰戜竴閿€荤粨锛氫笅杞介煶杞ㄥ苟鐢?faster-whisper 鏈湴杞啓锛岄殢鍚庣敓鎴愯В鏋?md 涓庝竴椤点€屼竴鍥捐鎳傘€峆NG銆?
