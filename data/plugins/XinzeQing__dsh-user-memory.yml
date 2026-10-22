@@ -2,5 +2,5 @@ url: https://github.com/XinzeQing/dsh-user-memory
 name: XinzeQing/dsh-user-memory
 category: memory
 description:
-  en: User-authored long-term memory in four tiers (must-follow rules, behavior settings, user profile, optional rules), injected as a system-prompt section, with agent tools to propose edits and a Chinese panel where the user reviews and applies them.
-  zh: 四层用户自写的长期记忆（必须遵守／行为设定／用户画像／可选遵守），作为系统提示词的一节注入；AI 只能提议、不能直接写入，由中文面板确认后生效。
+  en: "White-box memory in two parts: four user-authored long-term tiers (must-follow rules, behavior settings, user profile, optional rules) injected as one system-prompt section, plus a separate temporary working set (cross-session handoffs, stage goals, waiting items) with its own budget that stops being injected once an entry is done. Both are plain Markdown files the user can read and edit; the agent can only propose, and nothing is written until the user accepts it in the Chinese panel. No auto-capture, no background writes, no network."
+  zh: "白箱两段记忆：四层用户自写的长期记忆（必须遵守／行为设定／用户画像／可选遵守）注入为系统提示词的一节；另有「临时记忆」（跨对话交接／阶段目标／等待项）独立成节、各自一份预算，条目做完即停止注入。两者都是记忆目录里可读可改的 Markdown 文件；AI 只能提议，用户在中文面板点「采纳」才写入，不自动采集、不后台回写、不联网。"
