@@ -2,5 +2,5 @@ url: https://github.com/hige6/imgpost
 name: hige6/imgpost
 category: vision
 description:
-  en: Send and generate images in DeepSeek Harness, with external vision support for text-only models.
-  zh: 在 DeepSeek Harness 对话里发图、生图，让文本模型也能识图。
+  en: Let the DSH assistant send local, web, and AI-generated images directly to users in chat, with external vision support for text-only models.
+  zh: 让 DSH 助手把本地、网页和 AI 生成的图片直接发到聊天里给用户看，并为文本模型提供识图能力。
