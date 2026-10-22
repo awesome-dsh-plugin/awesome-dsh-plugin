@@ -1,0 +1,28 @@
+# 提交给 awesome-dsh-plugin 的条目文件
+# 放到 PR 里，路径必须是：data/plugins/<owner>__<repo>.yml
+# 规范：https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md
+#
+# 注意：
+#   1. description.en 含 ": "（冒号+空格）会被 YAML 当成嵌套键，必须加引号
+#   2. 两个 README 由脚本生成 —— 不要手改 README，只加这一个文件
+#   3. 仓库需要满 1 天，且已加上 dsh-plugin topic
+#   4. 描述必须属实：维护者会读源码逐句核对（v2.8.0 的能力见下方清单）
+#
+# v2.8.0 实际能力（对着代码核）：
+#   - 9 个工具：memory_write / memory_recall / memory_locate / memory_detail / memory_import /
+#     session_read / memory_index / memory_search / memory_forget
+#   - 注入：injectMode 四档，默认 hint 只注入一行提示（不再把目录塞进 prompt）
+#   - 段级引索：lib/segments.js（纯 CPU 的 BM25 + 中文 bigram）
+#   - 向量：本地 bge-small-zh-v1.5（512 维，ONNX q8），首次启动自动从 hf-mirror 下载
+#   - 噪音过滤：lib/noise.js（绝对底线 / 关键词硬特征 / 相对长尾 / 平局，四路信号）
+#   - 时间通道：lib/timehint.js（绝对日期、月日、今天/昨天/前天、N 天前）
+#   - 时区：lib/localtime.js（首次安装检测一次并落盘 memory.json）
+#   - 工具层守卫：lib/first-look.js（每个会话首次调 pwsh/read/glob 前，没查过记忆就 deny 一次）
+#   - 142 条单测（node --test tests/*.test.mjs）
+
+url: https://github.com/reaxlll/dsh-workspace-recollection
+name: reaxlll/dsh-workspace-recollection
+category: memory
+description:
+  en: 'Cross-session long-term memory for DeepSeek Harness, isolated per workspace: the prompt carries a single line pointing at the memory tools, while the directory index, a segment-level BM25 locator and a local vector store are read on demand — plus query-noise filtering, a calendar-date channel, a tool-layer guard that makes each session read the memory index before its first file exploration, and a local embedding model that downloads itself on first run.'
+  zh: '给 DeepSeek Harness 的跨会话长期记忆，按工作区隔离：system prompt 里只带一行指向记忆工具的提示，目录索引、段级 BM25 定位与本地向量库全部按需读取；另带检索噪音过滤、日历日期通道、一道「每个会话首次翻文件前先查记忆」的工具层守卫，以及首次启动自动下载的本地嵌入模型。'
