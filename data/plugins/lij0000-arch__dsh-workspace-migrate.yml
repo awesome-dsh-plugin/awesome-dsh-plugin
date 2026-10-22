@@ -2,6 +2,6 @@ url: https://github.com/lij0000-arch/dsh-workspace-migrate
 name: lij0000-arch/dsh-workspace-migrate
 category: session
 description:
-  en: 'Workspace-scoped DSH migration: pick projects and package their conversations, project files and image attachments into one portable folder, then restore them on another machine through the public session and workspace services with an editable old-to-new path map.'
-  zh: '按工作区迁移 DSH：勾选项目，把会话、项目文件与图片附件打成一个可搬运的文件夹，在新机器上经公开的会话/工作区服务还原，并可逐项填写旧路径到新路径的映射。'
+  en: 'Workspace-scoped DSH migration: package a project''s conversations, files and attachments, restore them on another machine into a chosen root with historical absolute paths rewritten, and re-sync only what changed afterwards.'
+  zh: '按工作区迁移 DSH：把一个项目的会话、文件与附件打包，在新机器上还原到指定根目录并重写历史绝对路径，之后只增量同步改动的文件。'
 tarball: https://github.com/lij0000-arch/dsh-workspace-migrate/releases/download/v0.3.0/dsh-workspace-migrate-0.3.0.tgz
