@@ -1,0 +1,6 @@
+url: https://github.com/yangzhenyu0817/dsh-session-color
+name: yangzhenyu0817/dsh-session-color
+category: ui
+description:
+  en: Right-click any session row in the DeepSeek Harness sidebar to color-tag it with a default red, ten palette colors or a custom picker, persisted locally.
+  zh: 给 DeepSeek Harness 侧栏会话行加右键标色：默认红色、十色色板与自定义取色，颜色本地持久化。
