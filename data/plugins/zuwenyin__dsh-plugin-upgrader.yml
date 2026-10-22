@@ -3,4 +3,4 @@ name: zuwenyin/dsh-plugin-upgrader
 category: market
 description:
   en: 'Adds a Versions tab to the Plugins page: one-click upgrade of all upgradable plugins or a multi-selected subset, version history back to any published release, and GitHub links for each repo and each version.'
-  zh: '鍦ㄣ€屾彃浠躲€嶉〉鏂板鐗堟湰椤碉細涓€閿崌绾у叏閮ㄥ彲鍗囩骇鎻掍欢鎴栧嬀閫夌殑瀛愰泦锛屾煡鐪嬪巻鍙茬増鏈苟鍥炴粴鍒颁换鎰忓凡鍙戝竷鐗堟湰锛屽苟涓烘瘡涓彃浠跺拰姣忎釜鐗堟湰鎻愪緵 GitHub 閾炬帴銆?
+  zh: '在「插件」页新增版本页：一键升级全部可升级插件或勾选的子集，查看历史版本并回滚到任意已发布版本，并为每个插件和每个版本提供 GitHub 链接。'
