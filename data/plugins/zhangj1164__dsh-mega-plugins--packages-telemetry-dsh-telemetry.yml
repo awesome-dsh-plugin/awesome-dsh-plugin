@@ -2,5 +2,5 @@ url: https://github.com/zhangj1164/dsh-mega-plugins/tree/main/packages/telemetry
 name: zhangj1164/dsh-mega-plugins#dsh-telemetry
 category: dev
 description:
-  en: "Local-only telemetry service for DSH plugins: records operation trails and error events into a storage-domain KV table, redacts configurable secret patterns before the write, and groups one plugin's failures by feature-code anchor, reporting the window it read, the route each group ran on, and the attempts recorded after its last failure."
-  zh: "面向 DSH 插件的本地遥测服务：把操作轨迹与错误事件写入 storage-domain KV 表，写入前按可配置的规则脱敏，并按功能码锚点聚合单个插件的失败事件，同时报告读取的时间窗口、每个失败组的模型路由，以及最近一次失败之后的尝试次数。"
+  en: "Local-only telemetry service for DSH plugins: records operation trails and error events into a storage-domain KV table, applies a configurable redaction rule set before the write and again when the analysis reads back a record stored before a rule existed, and groups one plugin's failures by feature-code anchor, reporting the window it read, the route each group ran on, and the attempts recorded after its last failure in write order."
+  zh: "面向 DSH 插件的本地遥测服务：把操作轨迹与错误事件写入 storage-domain KV 表，在写入前按可配置的规则集脱敏，并在分析读回早于规则存在的旧记录时再次按同一规则集脱敏，然后按功能码锚点聚合单个插件的失败事件，同时报告读取的时间窗口、每个失败组的模型路由，以及按写入顺序统计的最近一次失败之后的尝试次数。"
