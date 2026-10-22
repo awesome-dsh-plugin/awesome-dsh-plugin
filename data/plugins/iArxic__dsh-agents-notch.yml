@@ -1,0 +1,6 @@
+url: "https://github.com/iArxic/dsh-agents-notch"
+name: "iArxic/dsh-agents-notch"
+category: "notify"
+description:
+  en: "Always-on-top notch for Windows that shows which sessions are working, which need you, and which are done or failed: one bot per session, never takes focus, hides under full-screen apps, with its own settings page."
+  zh: "Windows 屏幕顶部始终置顶的刘海：每个会话一个小机器人，显示哪些在工作、哪些在等你、哪些已完成或失败；不抢焦点，全屏应用下自动隐藏，带独立设置页。"
