@@ -2,5 +2,5 @@ url: https://github.com/ppy-web/dsh-plugin-xiaomi-mimo-tts
 name: ppy-web/dsh-plugin-xiaomi-mimo-tts
 category: voice
 description:
-  en: Adds Xiaomi MiMo text-to-speech to DSH Web with assistant-message read-aloud, PCM streaming, preset and custom voice design, browser speech fallback, playback controls, and optional UI sounds.
-  zh: 为 DSH Web 添加 Xiaomi MiMo 语音朗读，支持助手消息朗读、PCM 流式播放、预置与自定义音色、浏览器语音兜底、播放控制和可选 UI 音效。
+  en: Adds Xiaomi MiMo, Doubao, and browser text-to-speech to DSH, with automatic read-aloud, custom voices, and optional UI sound effects.
+  zh: 为 DSH 提供小米 MiMo、豆包和浏览器本地语音朗读，支持自动播报、自定义音色与可选 UI 音效。
