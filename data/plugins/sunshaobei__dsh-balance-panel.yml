@@ -1,0 +1,6 @@
+url: https://github.com/sunshaobei/dsh-balance-panel
+name: sunshaobei/dsh-balance-panel
+category: usage
+description:
+  en: Provider quota and balance status widget for the DSH web UI, showing remaining quota, usage and rate-limit windows in the sidebar.
+  zh: DSH Web 端的供应商额度与余额状态小组件，在侧边栏展示剩余额度、用量与限流窗口。
