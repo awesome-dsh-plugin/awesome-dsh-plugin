@@ -1,0 +1,6 @@
+url: https://github.com/otvaket/dsh-delivery-native-open
+name: otvaket/dsh-delivery-native-open
+category: ui
+description:
+  en: Open a delivered file in its default desktop application from the delivery card, keeping a sidebar preview button.
+  zh: 点击交付卡片用本机默认程序打开文件，并保留侧栏预览按钮。
