@@ -1,0 +1,6 @@
+url: https://github.com/kiefeng/dsh-lan-memory
+name: kiefeng/dsh-lan-memory
+category: memory
+description:
+  en: 'Local-first memory and persona plugin for DeepSeek Harness: three file-backed memory layers, editable SOUL/MOOD persona, zero-LLM session capture, BM25 recall, a local web panel, and a themed mood card; no Python service, vector database, or API key.'
+  zh: '澜·轻量本地记忆与人格系统：三层文件记忆、可编辑 SOUL/MOOD 人格、零 LLM 捕获、BM25 检索、本地管理面板与状态池卡片；不依赖 Python 服务、向量库或 API Key。'
