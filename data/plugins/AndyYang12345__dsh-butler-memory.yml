@@ -1,0 +1,6 @@
+url: https://github.com/AndyYang12345/dsh-butler-memory
+name: AndyYang12345/dsh-butler-memory
+category: memory
+description:
+  en: 'PostgreSQL-backed durable memory for DSH agents: MCP memory tools plus a Web panel for reviewing memories and candidates.'
+  zh: 'PostgreSQL 持久个人记忆：MCP 记忆工具 + 可查看记忆与候选的 Web 面板。'

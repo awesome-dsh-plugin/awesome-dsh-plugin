@@ -1,0 +1,6 @@
+url: https://github.com/CZ1900/suanzhang-dsh
+name: CZ1900/suanzhang-dsh
+category: usage
+description:
+  en: 'Trading-terminal style cost tracker for DeepSeek Harness: sidebar balance and today spend, per-step RMB cost table, auto-synced official pricing with peak/off-peak, cross-session and per-day summaries, tool-level attribution, and cost forecast.'
+  zh: 交易终端风格的 DeepSeek Harness 计费插件：侧边栏余额与今日消费、按步骤人民币费用表、官方价自动同步（含峰谷）、跨会话与按天汇总、工具级费用归属与成本预测。

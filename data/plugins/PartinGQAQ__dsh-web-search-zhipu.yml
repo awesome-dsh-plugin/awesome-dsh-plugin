@@ -1,0 +1,6 @@
+url: https://github.com/PartinGQAQ/dsh-web-search-zhipu
+name: PartinGQAQ/dsh-web-search-zhipu
+category: browser
+description:
+  en: 'GLM (Zhipu bigmodel) web search provider - routes ctx.web search through Zhipu''s Anthropic-compatible endpoint with the native web_search server tool, billing your existing GLM quota or Coding Plan instead of the DeepSeek platform. Includes a translation layer for Zhipu''s non-standard tool_result response layout.'
+  zh: 'GLM(智谱)网页搜索 provider——把 web_search 后端切到智谱 Anthropic 兼容端点的服务端搜索工具,直接复用你现有的 GLM 额度或 Coding Plan,替代 DeepSeek 官方搜索通道,并内置智谱私有响应格式的翻译层。'

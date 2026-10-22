@@ -1,0 +1,6 @@
+url: https://github.com/PKUfudawei/dsh-capability-menu
+name: PKUfudawei/dsh-capability-menu
+category: tools
+description:
+  en: 'View and manage an agent’s tools and skills in a visual menu. Set each capability to Resident, On-demand, or Disabled; agents can find and use on-demand capabilities while reducing context usage.'
+  zh: '以可视化菜单查看和管理 Agent 的工具与技能，按常驻、按需、禁用三档控制能力暴露；支持按需检索和使用，减少上下文占用。'

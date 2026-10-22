@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-k6
+name: WODE25500/dsh-k6
+category: dev
+description:
+  en: 'Load testing with Grafana k6: smoke-test first, then run scripts and read percentiles from the JSON summary.'
+  zh: 'Grafana k6 压测：先冒烟再跑脚本，从 JSON 汇总读百分位数。'

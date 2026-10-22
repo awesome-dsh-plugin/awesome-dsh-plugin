@@ -1,0 +1,6 @@
+url: https://github.com/MichengAI/dsh-skills-manager
+name: MichengAI/dsh-skills-manager
+category: dev
+description:
+  en: Manages local DeepSeek Harness skills in Settings and shows shared Agent skills as read-only.
+  zh: 在设置里管理本地 DSH 技能，并只读查看公共 Agent 技能。

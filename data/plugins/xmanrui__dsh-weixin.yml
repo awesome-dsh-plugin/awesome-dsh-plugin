@@ -1,0 +1,6 @@
+url: https://github.com/xmanrui/dsh-weixin
+name: xmanrui/dsh-weixin
+category: notify
+description:
+  en: Connect a Weixin bot to DeepSeek Harness by scanning a QR code.
+  zh: 通过微信扫码把微信机器人接入 DeepSeek Harness。

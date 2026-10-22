@@ -1,0 +1,6 @@
+url: https://github.com/hawkhai/win11-oneocr
+name: hawkhai/win11-oneocr
+category: vision
+description:
+  en: 'Local Windows 11 OneOCR tool for DSH: `oneocr_recognize` returns OCR text and structured line/word polygons, confidence, rotation, and handwriting style.'
+  zh: 'DSH 的本地 Windows 11 OneOCR 工具：`oneocr_recognize` 返回 OCR 文本，以及包含行/词多边形、置信度、旋转角度和手写体样式的结构化结果。'

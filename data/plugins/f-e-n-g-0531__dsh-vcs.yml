@@ -1,0 +1,6 @@
+url: https://github.com/f-e-n-g-0531/dsh-vcs
+name: f-e-n-g-0531/dsh-vcs
+category: git
+description:
+  en: 'Read-only Git and SVN change review inside DeepSeek Harness, with repository browsing and side-by-side diffs.'
+  zh: '在 DeepSeek Harness 内只读审阅 Git 与 SVN 变更，支持仓库浏览和并排差异对比。'

@@ -1,0 +1,6 @@
+url: https://github.com/TencentCloudBase/CloudBase-AI-Toolkit/tree/main/dsh-plugin
+name: TencentCloudBase/CloudBase-AI-Toolkit#dsh-plugin
+category: tools
+description:
+  en: 'Tencent CloudBase backend for DeepSeek Harness — scaffold and deploy full-stack apps from chat, render query results as table cards with paging, sorting and CSV export, preview a deployment on its domain, and call the CloudBase MCP toolset (`mcp__cloudbase__*`) with device-code login.'
+  zh: '把腾讯云 CloudBase 后端接入 DeepSeek Harness——在对话里搭好并部署全栈应用，查询结果渲染为表格卡片（分页、排序、导出 CSV），部署后可预览真实域名，并提供 CloudBase MCP 工具集（`mcp__cloudbase__*`），登录走 device-code 流程。'

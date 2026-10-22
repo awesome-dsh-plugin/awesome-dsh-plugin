@@ -1,0 +1,6 @@
+url: https://github.com/SeanWang114514/dsh-memo-notebook
+name: SeanWang114514/dsh-memo-notebook
+category: memory
+description:
+  en: Per-workspace memo/todo panel that auto-captures queued and running user instructions, marks preempted tasks as interrupted, and restores them to their previous state with one click.
+  zh: 按工作区记录未完成任务：自动捕获排队/执行中的用户指令，插队自动标记打断，一键按原状态恢复重发。

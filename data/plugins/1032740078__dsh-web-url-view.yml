@@ -1,0 +1,6 @@
+url: https://github.com/1032740078/dsh-web-url-view
+name: 1032740078/dsh-web-url-view
+category: remote
+description:
+  en: 'Adds a View URL page to Settings showing the running session tokenized Web address plus a stable fixed address that survives desktop restarts and is reachable from other devices on the same LAN.'
+  zh: '在设置页新增「查看 URL」：显示当前会话的临时访问地址，以及一个长期不变、局域网内其他设备也能直接打开的固定地址。'

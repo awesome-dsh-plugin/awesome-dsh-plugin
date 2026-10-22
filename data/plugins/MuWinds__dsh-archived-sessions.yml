@@ -1,0 +1,6 @@
+url: https://github.com/MuWinds/dsh-archived-sessions
+name: MuWinds/dsh-archived-sessions
+category: session
+description:
+  en: 'Archived-session management: browse archived sessions, unarchive them, or clear them out.'
+  zh: 归档会话管理：浏览已归档会话，支持恢复（取消归档）与清空。

@@ -1,0 +1,7 @@
+url: https://github.com/JNNarrator/dsh-deckseek
+name: JNNarrator/dsh-deckseek
+category: ui
+tarball: https://github.com/JNNarrator/dsh-deckseek/releases/download/v0.4.5/dsh-deckseek-0.4.5.tgz
+description:
+  en: A calmer reading view for DeepSeek Harness with auto-collapsing process, a minimap-style message navigation rail, in-page search, unified failure cards, and generative MCP Apps (SEP-1865) in sandboxed iframes.
+  zh: 阅读视图增强插件——执行过程自动收起、右缘消息导航导轨、页内查找、统一失败卡片，支持生成式 MCP Apps（SEP-1865）沙箱交互。

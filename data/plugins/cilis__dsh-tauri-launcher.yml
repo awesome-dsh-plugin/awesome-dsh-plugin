@@ -1,0 +1,6 @@
+url: https://github.com/cilis/dsh-tauri-launcher
+name: cilis/dsh-tauri-launcher
+category: dev
+description:
+  en: Tauri 2 desktop application for Windows that detects (or installs) the global @deepseek-ai/dsh package, launches the DSH Web server and embeds it in its own window, with system tray management, login autostart, a global hotkey and desktop shortcuts.
+  zh: 面向 Windows 的 Tauri 2 桌面应用：检测或自动安装全局 @deepseek-ai/dsh 包，启动 DSH Web 并嵌入自身窗口，支持系统托盘管理、登录自启、全局快捷键与桌面快捷方式。

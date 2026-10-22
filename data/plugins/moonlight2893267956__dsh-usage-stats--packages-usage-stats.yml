@@ -1,0 +1,7 @@
+url: https://github.com/moonlight2893267956/dsh-usage-stats/tree/main/packages/usage-stats
+name: moonlight2893267956/dsh-usage-stats#usage-stats
+category: usage
+description:
+  en: 'Token statistics for every stored DSH session: a Host service folds the durable session logs into a persisted checkpoint and serves them over one read-only HTTP route, and the Usage settings page paints the saved aggregate immediately, then updates it in the background. Days are bucketed by hour behind a date picker, next to a trailing window with per-model breakdowns, request and web-search counts; no cost or pricing model.'
+  zh: '统计所有已存 DSH 会话的 token 用量：Host 端把持久化会话日志折叠进检查点，并经一条只读 HTTP 路由提供；「用量」设置页先立即绘出已保存的聚合结果，再在后台更新。当日视图按小时分桶（带日期选择器），旁边是近 7/30 天窗口，含分模型明细、请求数与联网搜索次数；不含费用/定价模型。'
+tarball: https://github.com/moonlight2893267956/dsh-usage-stats/releases/download/v0.1.1/moonlight2893267956-dsh-usage-stats-0.1.1.tgz

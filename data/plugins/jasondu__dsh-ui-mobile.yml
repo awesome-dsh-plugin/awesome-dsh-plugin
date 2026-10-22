@@ -1,0 +1,6 @@
+url: https://github.com/jasondu/dsh-ui-mobile
+name: jasondu/dsh-ui-mobile
+category: ui
+description:
+  en: Mobile-first DeepSeek Harness UI with an installable PWA, responsive navigation, and Web Push notifications when an agent completes successfully.
+  zh: 面向手机的 DeepSeek Harness 界面，提供可安装 PWA、响应式导航，以及 Agent 成功完成时的 Web Push 通知。

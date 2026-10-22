@@ -1,0 +1,6 @@
+url: https://github.com/tianyaZTY/dsh-hot-plugin-host
+name: tianyaZTY/dsh-hot-plugin-host
+category: dev
+description:
+  en: 'Runtime plugin loading for the Web UI: a watched hot directory installs/updates client-plugin bundles live on every open page, no restart. Includes a right-column subagent dashboard example.'
+  zh: Web UI 运行时插件加载：监视热目录，运行中安装/更新客户端插件 bundle，所有页面即时生效，免重启。附子智能体看板示例。

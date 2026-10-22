@@ -1,0 +1,6 @@
+url: https://github.com/warmwine/dsh-ui-font
+name: warmwine/dsh-ui-font
+category: ui
+description:
+  en: 'Font engine for the Web GUI: system font enumeration, global and per-component font-size tuning with a Spy++-style picker, settings page.'
+  zh: 网页界面字体引擎：系统字体枚举、准星点选的全局与逐组件字号微调、设置页。老花眼友好，自定义字体和页面部件字体和字体大小，支持SPY模式扫UI和其他插件。

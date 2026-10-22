@@ -1,0 +1,6 @@
+url: https://github.com/yabolee-kkk/dsh-streaming-mcp-bridge
+name: yabolee-kkk/dsh-streaming-mcp-bridge
+category: remote
+description:
+  en: 'DeepSeek Harness streaming MCP bridge: live session events as MCP progress, plus ACP adapter for cc-connect/Feishu.'
+  zh: DeepSeek Harness 流式 MCP 桥接：将实时会话事件作为 MCP 进度输出，并提供 cc-connect/飞书 ACP 适配器。

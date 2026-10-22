@@ -1,0 +1,6 @@
+url: https://github.com/LinJohn8/dsh-model-group-collapse
+name: LinJohn8/dsh-model-group-collapse
+category: ui
+description:
+  en: "Makes the provider groups in the composer model menu collapsible, keeping only the provider of the current model expanded."
+  zh: "让输入框模型菜单的厂商分组可折叠，默认只展开当前模型所属厂商。"

@@ -1,0 +1,6 @@
+url: https://github.com/Ansonfishing/dsh-ca-ref
+name: Ansonfishing/dsh-ca-ref
+category: tools
+description:
+  en: 'Clean Architecture reference library for DSH: 8 pinned reference repos (Go, Java, C#, Python) indexed into a local FTS5 database, with assertion rules, a review ledger, and a read-only observation panel.'
+  zh: 'DSH 的 Clean Architecture 参考库:8 个钉版参考仓(Go / Java / C# / Python)索引进本地 FTS5,提供断言规则、审查台账与只读观察窗面板。'

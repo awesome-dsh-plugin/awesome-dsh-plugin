@@ -1,0 +1,6 @@
+url: https://github.com/creght-dev/skills
+name: creght-dev/skills
+category: skill
+description:
+  en: 'Skills for building websites on the Creght platform: CLI pull/push sync, page and component conventions, CMS, forms, auth, SEO, publishing and version rollback.'
+  zh: Creght 平台建站技能包：CLI 拉取/推送同步、页面与组件规范、CMS、表单、Auth、SEO、发布与版本回滚。

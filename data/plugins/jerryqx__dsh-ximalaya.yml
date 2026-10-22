@@ -1,0 +1,6 @@
+url: https://github.com/jerryqx/dsh-ximalaya
+name: jerryqx/dsh-ximalaya
+category: voice
+description:
+  en: 'Listen to Ximalaya podcasts and audiobooks inside the DSH web UI: search albums, browse paginated tracks, and play through a now-playing bar (prev/play/next, seek, volume, rate). After QR login the "Mine" page lists your liked tracks (click to play), subscribed albums with latest-episode hints, and followed anchors with their public albums; the host relays audio streams with Range support and registers an `ximalaya_play` tool so the agent can search and play on request.'
+  zh: 在 DSH Web 界面收听喜马拉雅播客/有声书：搜索专辑、分页浏览曲目，播放条支持上下集/进度/音量/倍速；扫码登录后「我的」页可看收藏的声音（点击即播）、我的订阅（带最新一集提示）与关注的主播（含其公开专辑）；Host 端音频流代理支持 Range 拖动，并注册 `ximalaya_play` 模型工具让 agent 按需搜索播放。

@@ -1,0 +1,6 @@
+url: https://github.com/1373700184/dsh-subagent
+name: 1373700184/dsh-subagent
+category: model
+description:
+  en: Registers local Qoder and QoderCN subscription CLIs as DSH subagent backends, with live progress, per-run credit display, a settings page, and /qoder and /qodercn commands.
+  zh: 把本机 Qoder 与 QoderCN 订阅 CLI 注册为 DSH 子代理后端，支持实时进度、单次额度显示、设置页以及 /qoder、/qodercn 斜杠指令。

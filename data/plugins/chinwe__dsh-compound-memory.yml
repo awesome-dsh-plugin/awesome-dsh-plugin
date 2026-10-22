@@ -1,0 +1,6 @@
+url: https://github.com/chinwe/dsh-compound-memory
+name: chinwe/dsh-compound-memory
+category: memory
+description:
+  en: Launches the local compound-memory MCP server through uvx and injects a short usage reminder once per session.
+  zh: 通过 uvx 启动本地 compound-memory MCP server，并在每个会话注入一次简短的使用提醒。

@@ -1,0 +1,6 @@
+url: https://github.com/ht719/dsh-session-categories
+name: ht719/dsh-session-categories
+category: session
+description:
+  en: Adds per-Workspace category trees to the Web sidebar, with nested categories, drag-and-drop session assignment, category-scoped session creation, and category deletion that archives contained sessions.
+  zh: 为 Web 侧边栏添加按 Workspace 隔离的分类树，支持嵌套分类、拖拽归类会话、在分类中新建会话，以及删除分类时归档其中的会话。

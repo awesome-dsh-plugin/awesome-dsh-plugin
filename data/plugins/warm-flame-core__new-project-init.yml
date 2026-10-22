@@ -1,0 +1,6 @@
+url: https://github.com/warm-flame-core/new-project-init
+name: warm-flame-core/new-project-init
+category: skill
+description:
+  en: 'Project documentation scaffolding skill: question-driven setup of project standards, AI-collaboration workflows, and memory discipline across DSH, Reasonix, Claude Code, and Codex.'
+  zh: '项目文档体系初始化 skill：提问驱动落实文档规范、固化 AI 协作工作流，跨 DSH / Reasonix / Claude Code / Codex 可用。'

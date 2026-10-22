@@ -1,0 +1,6 @@
+url: https://github.com/ishuowang/dsh-sideband
+name: ishuowang/dsh-sideband
+category: session
+description:
+  en: 'Hand off focused context without waiting for or interrupting the active Agent: freeze a bounded Session snapshot, summarize it asynchronously with an isolated no-tool LLM, and deliver a provenance-bearing capsule to another Session or an authorized Room—quiet by default for Sessions, with explicit wakeup available.'
+  zh: 无需等待或打断正在工作的 Agent：即时冻结有界 Session 快照，由隔离且无工具的 LLM 异步总结，再将带来源信息的上下文胶囊投递到另一 Session 或已授权 Room；对 Session 默认 quiet，也可显式 wakeup。

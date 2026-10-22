@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-turn-notify
+name: mzzsfy/dsh-plugin#dsh-turn-notify
+category: notify
+description:
+  en: 'Turn event notifications: six event classes (completed, error, interrupted, approval requested, AI question, limit reached) delivered via sound, system notification, in-page banner, webhook, IM and host desktop-notification channels; when several browser windows are open, only one rings.'
+  zh: '回合事件通知：完成/出错/被中断/等待审批/AI 提问/达到上限六类事件，经声音、系统弹窗、页内提示、webhook、IM、宿主桌面通知通道推送，多窗口只响一次。'
+

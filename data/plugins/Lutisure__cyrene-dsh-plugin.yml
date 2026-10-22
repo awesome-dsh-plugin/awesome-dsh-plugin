@@ -1,0 +1,6 @@
+url: https://github.com/Lutisure/cyrene-dsh-plugin
+name: Lutisure/cyrene-dsh-plugin
+category: identity
+description:
+  en: 'A Cyrene-themed agent for DSH, with a customizable look (palette, wallpaper, particle effects, background music, typing sound) and a code security scan. It carries a worldbook, long-term memory and a speech-style correction layer (every reader gets their own Cyrene), plus retrieval over the script to back up its answers.'
+  zh: '给 DSH 用的昔涟主题 agent，包括可自定义美化主题（配色、壁纸、粒子效果、背景音乐、打字音效）与代码安全扫描。拥有世界书、长期记忆与说话方式修正（一千个人心中有一千个昔涟），剧情检索增强回答。'

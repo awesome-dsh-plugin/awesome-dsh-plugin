@@ -1,0 +1,6 @@
+url: https://github.com/Chhlafiu4312/dsh-mcp-bridge
+name: Chhlafiu4312/dsh-mcp-bridge
+category: tools
+description:
+  en: Zero-dependency MCP client bridge that connects stdio and HTTP MCP servers and registers their tools as mcp_<server>_<tool> for the agent.
+  zh: 零依赖 MCP 客户端桥接，连接 stdio 与 HTTP MCP server，把其工具注册为 mcp_<server>_<tool> 供 agent 调用。

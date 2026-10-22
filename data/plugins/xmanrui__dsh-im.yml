@@ -1,0 +1,6 @@
+url: https://github.com/xmanrui/dsh-im
+name: xmanrui/dsh-im
+category: notify
+description:
+  en: 'Connect IM bots to DeepSeek Harness via QR codes or bot credentials (9 channels: Feishu, WeChat, DingTalk, WeCom, QQ, Slack, Telegram, Discord, and WhatsApp).'
+  zh: 通过二维码或机器人凭据将 IM 机器人接入 DeepSeek Harness（支持飞书、微信、钉钉、企业微信、QQ、Slack、Telegram、Discord 和 WhatsApp 共 9 种渠道）。

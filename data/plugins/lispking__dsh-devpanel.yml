@@ -1,0 +1,6 @@
+url: https://github.com/lispking/dsh-devpanel
+name: lispking/dsh-devpanel
+category: dev
+description:
+  en: "A developer toolkit for the DeepSeek Harness (DSH) web console: a real multi-tab PTY terminal docked under the composer plus an AI-output file browser sidebar with syntax highlighting, Markdown rendering and image preview."
+  zh: "DSH 网页控制台的开发者工具包：一个真实的多标签 PTY 终端（停靠在输入框下方），外加 AI 输出文件浏览器侧栏，支持语法高亮、Markdown 渲染与图片预览。"

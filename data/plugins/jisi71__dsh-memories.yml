@@ -1,0 +1,6 @@
+url: https://github.com/jisi71/dsh-memories
+name: jisi71/dsh-memories
+category: memory
+description:
+  zh: "双账本跨会话记忆：自动把对话中的长期事实提取进 MEMORY.md，并维护项目进度账本 PROGRESS.md，每个新会话自动召回两本账。"
+  en: "Dual-ledger cross-session memory: auto-extracts lasting facts from conversations into MEMORY.md and maintains a PROGRESS.md project ledger, recalling both into every new session."

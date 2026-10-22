@@ -1,0 +1,6 @@
+url: https://github.com/fancr-code/dsh-plugin-usage-meter
+name: fancr-code/dsh-plugin-usage-meter
+category: usage
+description:
+  en: 'Local-first usage and cost meter for the DSH web UI: composer button with live session cost and balance; panel with a stacked per-model daily/7-day chart priced per effective list-price interval (official pricing page synced daily), monthly usage tiers with a canvas share card, 30/50/85% context-pressure warnings with one-click /compact, budget alerts, and an in-panel npm update check with one-click update.'
+  zh: '本地优先的用量与费用仪表：输入框下方按钮显示实时费用与余额，面板含按模型堆叠的当日/近 7 天柱状图（按刊例价生效区间计价、官方定价页每日同步）、本月消耗段位与画布分享卡片、30/50/85% 上下文压力三档预警与一键 /compact、预算提醒，以及面板内 npm 检查更新与一键更新。'

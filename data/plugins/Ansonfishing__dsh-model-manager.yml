@@ -1,0 +1,6 @@
+url: https://github.com/Ansonfishing/dsh-model-manager
+name: Ansonfishing/dsh-model-manager
+category: model
+description:
+  en: 'Control panel for local LLM inference servers in the DSH web view: service registry with health checks and stop controls, named parameter profiles for llama.cpp, SGLang and vLLM with pre-save KV/VRAM validation, GPU detection, and tok/s benchmarks.'
+  zh: 'DSH Web 视图中的本地 LLM 推理服务控制面板:服务注册表与健康检查/停止控制、llama.cpp / SGLang / vLLM 命名参数 profile(保存前做 KV/显存校验)、GPU 探测与 tok/s 测速。'

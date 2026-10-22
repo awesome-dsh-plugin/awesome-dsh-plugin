@@ -1,0 +1,6 @@
+url: https://github.com/Fish121380/auto-mouse
+name: Fish121380/auto-mouse
+category: tools
+description:
+  en: 'Windows desktop UI context picker for Codex, DeepSeek Harness, and MCP clients: select windows, UI elements, or screen regions with hover highlighting, UI Automation, screenshots, and local OCR, then review and approve Markdown/JSON context before output.'
+  zh: '面向 Codex、DeepSeek Harness 和 MCP 客户端的 Windows 桌面 UI 上下文取景器：选择窗口、UI 元素或屏幕区域，使用悬停高亮、UI Automation、截图和本机 OCR，并在输出前确认 Markdown/JSON 上下文。'

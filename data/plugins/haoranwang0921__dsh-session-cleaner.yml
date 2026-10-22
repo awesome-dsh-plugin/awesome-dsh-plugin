@@ -1,0 +1,7 @@
+# dsh-session-cleaner: session management from the DSH web GUI settings page.
+url: https://github.com/haoranwang0921/dsh-session-cleaner
+name: haoranwang0921/dsh-session-cleaner
+category: session
+description:
+  en: "Manage conversation records from the DSH web GUI settings page: delete a whole session (archive plus physical log removal) or a single message (deleting a user message cascades to its assistant replies and tool results). Running and current sessions are protected."
+  zh: "在 DSH Web GUI 设置页管理对话记录：可删除整个会话（归档并物理删除日志），或按用户消息分组浏览并删除单条消息（删除用户消息会级联删除其引发的助手与工具消息）。运行中与当前会话受保护。"

@@ -1,0 +1,6 @@
+url: https://github.com/wss534857356/dsh-plugin-codex
+name: wss534857356/dsh-plugin-codex
+category: model
+description:
+  en: Codex App Server model provider using a local Codex login, with session reuse, Harness tool bridging, native action traces, and durable generated-image projection.
+  zh: 使用本地 Codex 登录的 Codex App Server 模型提供方，支持会话复用、Harness 工具桥接、原生动作轨迹和生成图片持久化。

@@ -1,0 +1,6 @@
+url: https://github.com/HAN-050917/dsh-plugin-dsweb-harness
+name: HAN-050917/dsh-plugin-dsweb-harness
+category: ui
+description:
+  en: "Use DeepSeek's web chat inside DSH: real chat history in the leftmost sidebar, a Chat/Work switch beside the agent mode, plus streaming answers, thinking, web search and file uploads."
+  zh: "在 DSH 中使用 DeepSeek 网页版对话：最左侧边栏显示真实聊天记录，Agent 模式旁提供 Chat/Work 切换，支持流式回答、深度思考、网页搜索和文件上传。"

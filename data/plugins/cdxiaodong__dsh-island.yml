@@ -1,0 +1,6 @@
+url: https://github.com/cdxiaodong/dsh-island
+name: cdxiaodong/dsh-island
+category: notify
+description:
+  en: Bridge DSH agent sessions, tool calls, and approvals to the CodeIsland macOS notch panel over a Unix socket, with in-panel allow/deny.
+  zh: 通过 Unix socket 把 DSH agent 的会话、工具调用与审批实时桥接到 CodeIsland macOS 刘海面板，可直接在面板上批准/拒绝。

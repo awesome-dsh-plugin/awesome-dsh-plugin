@@ -1,0 +1,6 @@
+url: https://github.com/cayan0x/dsh-fold-context
+name: cayan0x/dsh-fold-context
+category: ui
+description:
+  en: "Auto-fold context/system messages in DSH conversation — collapse think blocks, tool calls, and tool results into grouped expandable bars."
+  zh: "自动折叠 DSH 对话中的系统/上下文消息——将思考块、工具调用和工具结果合并为可展开的分组折叠条。"

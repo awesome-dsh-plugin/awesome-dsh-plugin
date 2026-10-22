@@ -1,0 +1,6 @@
+url: https://github.com/hi-wenw/dsh-telegram-channel
+name: hi-wenw/dsh-telegram-channel
+category: notify
+description:
+  en: 'Telegram mobile remote that attaches the phone to a live DeepSeek Harness Web session: workspace-then-session picker (/sessions), /last for the previous Q/A, /model switch, and native Rich Message replies.'
+  zh: Telegram 手机遥控器：附着本机正在跑的 Web 会话，支持 /sessions 工作区→会话选择、/last 查看上次问答、/model 切换模型，以及原生 Rich Message 回复。

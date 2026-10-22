@@ -1,0 +1,6 @@
+url: https://github.com/sunshaobei/dsh-session-review
+name: sunshaobei/dsh-session-review
+category: git
+description:
+  en: 'A strip above the composer listing files modified in the current session (collapsed by default), with a Review button opening a per-session change panel showing before/after hunks from the session''s own edit/write tool results, no git required.'
+  zh: '输入框上方的条带列出当前会话修改过的文件（默认折叠），Review 按钮打开会话变更面板，基于会话自身的 edit/write 工具结果展示前后差异块，无需 git。'

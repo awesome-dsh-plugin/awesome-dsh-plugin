@@ -1,0 +1,6 @@
+url: https://github.com/big0lives/dsh-web-window-companion
+name: big0lives/dsh-web-window-companion
+category: browser
+description:
+  en: Opens the dsh web GUI in a dedicated Edge/Chrome app-mode window on its own browser profile and gracefully stops the server when that window is closed.
+  zh: 在独立浏览器 profile 的 Edge/Chrome 应用模式窗口中打开 dsh web 界面，关闭窗口即优雅停止服务。

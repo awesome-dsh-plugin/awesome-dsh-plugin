@@ -1,0 +1,7 @@
+url: https://github.com/graydovee/dsh-browser/tree/main/packages/browser/bridge-browser
+name: graydovee/dsh-browser#packages/browser/bridge-browser
+tarball: https://github.com/graydovee/dsh-browser/releases/latest/download/dsh-bridge-browser.tgz
+category: browser
+description:
+  en: 'Side-panel Chrome and Firefox extension that lets DSH drive the tab you are on: pages reach the model as structured text with a numbered element list, and clicks, typing and navigation wait for your approval. Beyond upstream it adds viewport screenshots, opening a URL in a new window, scrolling inside nested scroll containers (chat transcripts, side panes, modal bodies), permission-mode, model and slash-command controls in the composer, and an opt-in developer-tools group (elements and CSS, page JavaScript, network requests) that is off by default and approved per call. The install is two halves: the bridge plugin comes from the prebuilt release tarball, and the companion extension ships as a tgz in the same release and is loaded unpacked, which is the only way Chrome accepts it. This project is a fork of omdsh-dev/dsh-browser: https://github.com/omdsh-dev/dsh-browser'
+  zh: '侧栏 Chrome/Firefox 扩展，让 DSH 直接操控你当前所在的标签页：页面以带编号的结构化文本交给模型，点击、输入与导航都要你批准后才执行。在上游基础上补了视口截图、在新窗口打开网址、滚动页面内的滚动容器（聊天记录、侧栏列表、弹窗正文等）、输入区的权限模式/模型/斜杠命令控件，以及默认关闭、每次调用单独审批的开发者工具组（元素与 CSS、页面 JavaScript、网络请求）。安装分两半：桥插件直接用 Release 里的预构建 tarball 装，配套的浏览器扩展是同一次 Release 里的 tgz，解压后在浏览器里以已解压扩展加载——Chrome 只接受这种装法。本项目是 omdsh-dev/dsh-browser 的 fork，原仓库：https://github.com/omdsh-dev/dsh-browser'

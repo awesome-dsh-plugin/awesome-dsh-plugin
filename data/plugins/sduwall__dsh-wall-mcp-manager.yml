@@ -1,0 +1,6 @@
+url: https://github.com/sduwall/dsh-wall-mcp-manager
+name: sduwall/dsh-wall-mcp-manager
+category: tools
+description:
+  en: A plugin for managing MCP servers in DeepSeek Harness.
+  zh: 在DeepSeek Harness内管理MCP服务的插件。

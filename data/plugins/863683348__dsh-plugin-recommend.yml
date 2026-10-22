@@ -1,0 +1,6 @@
+url: https://github.com/863683348/dsh-plugin-recommend
+name: 863683348/dsh-plugin-recommend
+category: market
+description:
+  en: 'Plugin recommender for DSH: search and rank plugins from an embedded 1100+ entry marketplace catalog by need description, category and tags, with match reasons and a live catalog refresh from the awesome-dsh-plugin README.'
+  zh: DSH 插件推荐器：按需求描述、分类与标签在 1100+ 条内嵌市场目录中搜索并排序插件，返回匹配理由，支持从 awesome-dsh-plugin README 在线刷新目录。

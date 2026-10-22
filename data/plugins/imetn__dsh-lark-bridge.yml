@@ -1,0 +1,6 @@
+url: https://github.com/imetn/dsh-lark-bridge
+name: imetn/dsh-lark-bridge
+category: notify
+description:
+  en: Bidirectional Lark/Feishu controller for DeepSeek Harness with project and session routing, interactive cards, approvals, attachments, and task controls.
+  zh: DeepSeek Harness 的飞书/Lark 双向控制器，支持 Project 与 Session 路由、交互卡片、审批、附件和任务控制。

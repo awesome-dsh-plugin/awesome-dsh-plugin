@@ -1,0 +1,7 @@
+url: https://github.com/hoyyang/dsh-concise
+name: hoyyang/dsh-concise
+category: session
+tarball: https://github.com/hoyyang/dsh-concise/releases/download/v0.11.3/dsh-concise-0.11.3.tgz
+description:
+  zh: "DeepSeek Harness 一键 Concise 输出风格开关：结果先行、少废话，工作深浅不变。每轮最终回答开头自动附「摘要」精华卡（划选即复制），按会话独立生效，headless/CLI 同样生效，支持 /concise 命令、style.md 自定义风格与本地 API。摘要卡内的链接与文件路径渲染为可点击 chip：网页跳转、本地文件用系统默认应用打开（v0.9+）。每步生成前自动重申摘要契约（v0.11.2+），实测根治审查报告/表格型回复的漏卡。"
+  en: "One-click Concise output style for DeepSeek Harness: results first, no filler, same work depth. Every final reply opens with a plain-language digest card (select text to copy), scoped per session, working in headless/CLI too, with /concise command, style.md overrides and a local API. Links and file paths inside the digest card render as clickable chips: URLs jump, local files open with the OS default app (v0.9+). A per-step pre-generation contract reminder (v0.11.2+) measurably fixes digest misses on audit-report/table-shaped replies."

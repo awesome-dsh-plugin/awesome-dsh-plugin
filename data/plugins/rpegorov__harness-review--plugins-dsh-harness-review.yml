@@ -1,0 +1,6 @@
+url: https://github.com/rpegorov/harness-review/tree/main/plugins/dsh-harness-review
+name: rpegorov/harness-review#dsh-harness-review
+category: skill
+description:
+  en: Skill that reviews your coding-agent session transcripts (Claude Code and Codex only; DSH's own transcripts are not supported) over the last two weeks and reports which skills, hooks and rules work, need attention or go unused. Requires Python 3.
+  zh: 技能：回看最近两周的编程助手会话记录（仅 Claude Code 与 Codex，不支持 DSH 自身会话），报告哪些技能、钩子和规则有效、需要关注或从未使用。需要 Python 3。

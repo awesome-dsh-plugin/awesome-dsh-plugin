@@ -1,0 +1,6 @@
+url: https://github.com/huhui-tech/dsh-host-notify
+name: huhui-tech/dsh-host-notify
+category: notify
+description:
+  en: 'Host-side macOS notifications for questions, approvals and finished replies — immune to hidden-renderer notification loss, with icon, sound and click-to-raise.'
+  zh: '宿主侧 macOS 系统通知：提问/审批/回复完成即时送达，免疫渲染层隐藏丢通知，带图标、提示音与点击抬窗。'

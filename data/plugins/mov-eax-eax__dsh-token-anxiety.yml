@@ -1,0 +1,6 @@
+url: https://github.com/mov-eax-eax/dsh-token-anxiety
+name: mov-eax-eax/dsh-token-anxiety
+category: usage
+description:
+  en: 'Live per-task token cost widget: peak/valley pricing windows, projected post-hike costs, sortable per-task cost table, multi-currency (COP/USD/CNY + ~40 more) with FX rates, and one-click streamed LLM explain of expensive tasks.'
+  zh: 实时按任务追踪 token 成本的小部件：高峰/低谷定价时段、涨价后预测成本、可排序的每任务成本表、多币种（默认 COP/USD/CNY，另有 40 余种）与汇率，以及一键流式解释高成本任务。

@@ -1,0 +1,6 @@
+url: https://github.com/pavangupta352/stalegreen/tree/main/dsh-plugin-stalegreen
+name: pavangupta352/stalegreen#dsh-plugin-stalegreen
+category: dev
+description:
+  en: 'Freshness gate for the agent''s test, typecheck, lint and build claims: each verification run becomes a receipt on tools/post-execute, file edits are tracked, and on agent/turn-stopping a claim whose latest receipt is stale, failed or has no readable result steers one more step naming the receipt and the files edited since.'
+  zh: '为智能体的测试、类型检查、lint 与构建结论提供新鲜度检查：每次验证运行在 tools/post-execute 上记录为凭据，文件修改被跟踪；在 agent/turn-stopping 时，若结论对应的最新凭据已过期、失败或没有可读结果，则引导再走一步，并指出凭据与其后被修改的文件。'

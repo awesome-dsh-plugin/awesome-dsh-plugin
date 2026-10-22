@@ -1,0 +1,7 @@
+url: https://github.com/Harzva/dsh-obsidian
+name: Harzva/dsh-obsidian
+category: tools
+description:
+  en: 'Bridge local projects into Obsidian: bounded manifest scanning, deterministic dependency/tech/topic edges, and wiki-linked notes written into a managed graph/ vault namespace via the Local REST API or the vault filesystem.'
+  zh: '把本机项目接入 Obsidian：有界的 manifest 扫描、确定性的依赖/技术栈/主题边，通过 Local REST API 或 vault 文件系统把带 wiki 链接的笔记写入托管的 graph/ 命名空间。'
+tarball: https://github.com/Harzva/dsh-obsidian/releases/latest/download/harness-flow-dsh-obsidian-0.1.0-alpha.0.tgz

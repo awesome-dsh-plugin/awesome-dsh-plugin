@@ -1,0 +1,6 @@
+url: https://github.com/yangshen830-eng/dsh-editor
+name: yangshen830-eng/dsh-editor
+category: ui
+description:
+  en: 'VS Code-style code editor: sidebar file tree over the workspace, Monaco editing, file read/write, Git status and diff, search, and Markdown preview.'
+  zh: 'VS Code 风格代码编辑器：侧边栏文件树浏览工作区，Monaco 编辑，文件读写，Git 状态与差异，搜索与 Markdown 预览。'

@@ -1,0 +1,6 @@
+url: https://github.com/fuxin123z/dsh-skill-manage
+name: fuxin123z/dsh-skill-manage
+category: skill
+description:
+  en: 'Agent-managed procedural memory: a skill_manage tool that creates, patches, disables and deletes the agent''s own skills in user or project scope, with delete guards (agent-created marker, pin, path confinement) and a trigger-discipline prompt.'
+  zh: '代理自管的程序性记忆：skill_manage 工具可创建、修补、禁用、删除 agent 自己的技能（用户级/项目级双作用域），带删除守卫（agent 创建标记、pin、路径限制）与触发纪律提示。'

@@ -1,0 +1,6 @@
+url: https://github.com/SLin-code/dsh-task-notice-board
+name: SLin-code/dsh-task-notice-board
+category: session
+description:
+  en: 'Task-scoped Workspace to Task to Session control center for DSH Web, with Session boards, archived conversation viewing, and bounded long-term memory shared across linked Sessions.'
+  zh: '面向 DSH Web 的任务级 Workspace 到 Task 到 Session 协作控制台，提供 Session 看板、归档对话查看，以及在关联 Session 之间共享的有界长期记忆。'

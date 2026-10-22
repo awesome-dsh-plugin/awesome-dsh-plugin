@@ -1,0 +1,6 @@
+url: https://github.com/appthin/dsh-mcp-manager-plus
+name: appthin/dsh-mcp-manager-plus
+category: ui
+description:
+  en: "MCP management page in DSH Settings: list, enable/disable, restart and delete MCP servers, edit them in form or JSON mode, expand a server to see the tools it registers, and paste-import MCP configs from 14 tools (Claude Code, Cursor, Codex, VS Code and more) in one go."
+  zh: "DSH 设置中的 MCP 管理页：列出、启停、重启、删除 MCP 服务器，表单与 JSON 双模式编辑，展开可查看各服务器注册的工具，并支持一次粘贴导入 Claude Code、Cursor、Codex、VS Code 等 14 种工具的 MCP 配置。"

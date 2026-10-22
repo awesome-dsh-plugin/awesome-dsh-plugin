@@ -1,0 +1,6 @@
+url: https://github.com/potoior/dsh-bull-bear
+name: potoior/dsh-bull-bear
+category: fun
+description:
+  en: 'Real-time quote bull/bear desk pet for DSH: a portfolio-average-driven pet that runs faster and jumps higher the closer gains reach 20%, with a watchlist panel for searching and adding stocks plus a live "race" of how each holding is moving.'
+  zh: 'DSH 的实时行情牛熊桌宠：由自选组合平均涨跌驱动，收益越接近 20% 跑得越猛；带自选面板可搜索添加股票，还有展示每只标的涨跌的实时赛跑。'

@@ -1,0 +1,6 @@
+url: https://github.com/GeekRicardo/dsh-balance
+name: GeekRicardo/dsh-balance
+category: ui
+description:
+  en: 'Composer-dock balance/usage readout for DeepSeek, Kimi Coding, OpenCode Go, Zhipu, MiniMax, OpenRouter and OpenAI Codex — provider-based, 2s polling, 5min cache.'
+  zh: '输入框下方按 provider 展示 DeepSeek、Kimi Coding、OpenCode Go、智谱、MiniMax、OpenRouter、OpenAI Codex 的余额/用量，2 秒轮询、5 分钟缓存。'

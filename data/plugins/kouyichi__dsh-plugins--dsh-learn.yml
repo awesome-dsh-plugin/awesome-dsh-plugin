@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-learn
+name: kouyichi/dsh-plugins#dsh-learn
+category: skill
+description:
+  en: 'Self-learning loop for dsh: record lessons, draft and promote skills, periodic curator review that corrects, consolidates, and retires skills.'
+  zh: 'dsh 自我学习闭环：记录经验、生成并发布技能，定期审查修正、合并与退役技能。'

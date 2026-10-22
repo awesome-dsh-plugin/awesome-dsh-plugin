@@ -1,0 +1,6 @@
+url: https://github.com/Xplore-LAB/dsh-plugin-asmemory
+name: Xplore-LAB/dsh-plugin-asmemory
+category: memory
+description:
+  en: 'Action-state time memory: record typed states and actions, then analyze trends, anomalies, and causality.'
+  zh: 动作-状态时序记忆：记录类型化的状态与动作，做趋势、异常与因果关联分析。

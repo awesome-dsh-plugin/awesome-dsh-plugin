@@ -1,0 +1,6 @@
+url: https://github.com/9Ashwin/dsh-session-rename
+name: 9Ashwin/dsh-session-rename
+category: session
+description:
+  en: Gives the model a rename_session tool, so the agent can retitle a session from inside the conversation.
+  zh: 给模型一个 rename_session 工具，让 agent 在对话中直接重命名会话。

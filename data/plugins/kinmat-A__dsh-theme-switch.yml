@@ -1,0 +1,6 @@
+url: https://github.com/kinmat-A/dsh-theme-switch
+name: kinmat-A/dsh-theme-switch
+category: market
+description:
+  en: 'One-click skin switching for DSH Web settings: auto-detects installed themes, keeps exactly one active at a time, and falls back to the official look when all are off. Changes apply instantly and survive restarts.'
+  zh: DSH 主题切换：自动检测已安装的皮肤/主题，在设置页一键互斥切换，全部停用时回退官方默认外观，切换即时生效并跨重启保留。

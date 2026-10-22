@@ -1,0 +1,7 @@
+url: https://github.com/chenzheshushi-commits/dsh-evolve
+name: chenzheshushi-commits/dsh-evolve
+category: memory
+tarball: https://github.com/chenzheshushi-commits/dsh-evolve/releases/latest/download/dsh-evolve.tgz
+description:
+  en: "Cross-session memory with zero-token deterministic recall (bigram-Jaccard fused with FTS5 BM25 via RRF, Chinese-aware tokenization), reinforcement that strengthens repeated observations, and procedures crystallized into SKILL.md files refined in place through an active-stale-archived lifecycle with reversible archive and rollback. Ingest and disposal each expose a user-chosen autonomy tier; conflicts and high-importance writes always go to human review, and nothing is ever auto-deleted. Requires Node 22.5+."
+  zh: "跨会话记忆，零 token 确定性召回（bigram-Jaccard 与 FTS5 BM25 经 RRF 融合，中文分词精确）；重复观察会强化已有理解而非堆叠重复；过程性知识结晶为 SKILL.md，就地精炼升级，走 active-stale-archived 生命周期治理，归档可逆、可回滚。摄入与处置各有一档用户可选的自治程度，冲突与高重要写入始终交人工复核，任何档位都不会自动删除。需要 Node 22.5+。"

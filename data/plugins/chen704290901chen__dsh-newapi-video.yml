@@ -1,0 +1,6 @@
+url: https://github.com/chen704290901chen/dsh-newapi-video
+name: chen704290901chen/dsh-newapi-video
+category: model
+description:
+  en: Call a new-api (one-api style) relay station's video model from the conversation with @-referenced image/video materials, supporting Seedance 2.0 and Happyhorse text-to-video and image-to-video across four relay protocols.
+  zh: 在对话中用 @ 引用素材调用 new-api 中转站的视频大模型生成视频，支持 Seedance 2.0 与快乐马的文生视频和图生视频，覆盖四种中转协议。

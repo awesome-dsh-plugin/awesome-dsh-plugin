@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-gongwen-word-check
+name: PerryLink/dsh-gongwen-word-check
+category: tools
+description:
+  en: "Checks an official document's type and reference number against the published party and government document format standard - including the bracket form the year is written in and the numbering pattern. Reports what does not match the format; it does not judge the document's content."
+  zh: "依据公开的党政机关公文格式标准，核对公文的文种与发文字号——包括年份所用的括号形式与编号格式。只报告与格式不符之处，不评价公文内容。"

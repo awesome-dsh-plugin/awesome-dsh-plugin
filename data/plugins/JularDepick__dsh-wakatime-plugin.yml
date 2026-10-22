@@ -1,0 +1,7 @@
+url: https://github.com/JularDepick/dsh-wakatime-plugin
+name: JularDepick/dsh-wakatime-plugin
+category: tools
+description:
+  en: 'A plugin for dsh: quantify every dsh Agent interaction as a visualized performance metric and automatically sync it to WakaTime, using data to showcase your productivity with Agent.'
+  zh: '一个 dsh 插件：将 DSH 的每一次 Agent 交互量化为可视化表现指标,自动同步至 WakaTime,用数据展示你与 Agent 协作的生产力。'
+tarball: https://github.com/JularDepick/dsh-wakatime-plugin/releases/download/v0.2.0/dsh-wakatime-plugin-0.2.0.tgz

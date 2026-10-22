@@ -1,0 +1,6 @@
+url: https://github.com/Minokun/dsh-quota
+name: Minokun/dsh-quota
+category: usage
+description:
+  en: Bottom-right quota pill and panel aggregating membership quotas across AI platforms (Kimi Code, DeepSeek, Zhipu Coding Plan, BigModel, Qwen, Scnet, TokenRouter, SupaWriter), auto-syncing API keys from the DSH credentials domain with colored usage bars.
+  zh: 右下角「会员额度」悬浮球与面板，聚合各 AI 平台套餐额度（Kimi Code、DeepSeek、智谱 Coding Plan、BigModel、通义千问、超算、TokenRouter、SupaWriter），API key 自动同步自 DSH 凭证域，彩色进度条展示用量。

@@ -1,0 +1,6 @@
+url: https://github.com/UnknowCao/dsh-dock
+name: UnknowCao/dsh-dock
+category: ui
+description:
+  en: 'Windows desktop launcher for DeepSeek Harness: a one-click whale icon plus a sidebar More menu with Settings / Restart-Refresh / graceful Full Exit, and a scrollable multi-DSH picker on the cold-start card.'
+  zh: 'DeepSeek Harness 的 Windows 桌面启动器：一键鲸鱼图标 + 侧栏「更多」菜单（设置 / 重启/刷新 / 优雅完全退出），冷启动卡片支持可滚动的多 DSH 候选选择。'

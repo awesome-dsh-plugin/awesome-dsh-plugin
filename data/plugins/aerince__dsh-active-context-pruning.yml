@@ -1,0 +1,6 @@
+url: https://github.com/aerince/dsh-active-context-pruning
+name: aerince/dsh-active-context-pruning
+category: memory
+description:
+  en: Model-authored context pruning for DeepSeek Harness through the official compaction API.
+  zh: 面向 DeepSeek Harness 的模型驱动上下文裁剪插件，通过官方 compaction API 释放上下文空间。

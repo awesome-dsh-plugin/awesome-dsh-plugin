@@ -1,0 +1,6 @@
+url: https://github.com/YiMlT/dsh-notify-yimit
+name: YiMlT/dsh-notify-yimit
+category: notify
+description:
+  en: 'Windows system and custom desktop notifications for DeepSeek Harness events: task completed, failed, running, awaiting approval, and awaiting answer. Click-to-jump to the session.'
+  zh: 'DeepSeek Harness事件的Windows系统和自定义桌面通知：任务已完成、失败、正在运行、等待批准和等待答复。单击以跳转到会话。'

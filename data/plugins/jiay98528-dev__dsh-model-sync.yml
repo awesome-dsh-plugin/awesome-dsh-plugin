@@ -1,0 +1,6 @@
+url: https://github.com/jiay98528-dev/dsh-model-sync
+name: jiay98528-dev/dsh-model-sync
+category: model
+description:
+  en: Writes live provider model lists into DSH settings and shows 5h/7d plan windows or metered balance for the current session model.
+  zh: 把各提供方线上模型列表写进 DSH 设置，输入框圆环显示当前会话模型的 5 小时/7 天窗口或按量剩余余额。

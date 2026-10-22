@@ -1,0 +1,6 @@
+url: https://github.com/sjh9714/dsh-movein
+name: sjh9714/dsh-movein
+category: dev
+description:
+  en: Imports Claude Code setup into DeepSeek Harness from a native settings screen or CLI, with dry-run previews for skills, commands, agents, hooks, permission rules, and MCP config. Codex and OpenCode remain supported as secondary origins, with collision-safe apply and post-move checks.
+  zh: 通过原生设置页或 CLI 将 Claude Code 配置迁入 DeepSeek Harness，可先预览技能、命令、代理、hooks、权限规则与 MCP 配置；Codex 和 OpenCode 作为次要来源继续支持，并提供目标冲突保护和迁移后检查。

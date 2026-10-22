@@ -1,0 +1,6 @@
+url: https://github.com/Eligahyu/dsh-sentinel-scanner
+name: Eligahyu/dsh-sentinel-scanner
+category: security
+description:
+  en: 'Static security scanner for DSH plugins: read-only audit (exec, credentials, exfiltration, obfuscation, install scripts, bundle manifest) with a 0-100 risk score.'
+  zh: 'DSH 插件安全扫描器：只读静态审计（执行、凭据、外传、混淆、安装脚本、bundle 清单），输出 0-100 风险分。'

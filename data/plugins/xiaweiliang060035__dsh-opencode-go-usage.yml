@@ -1,0 +1,6 @@
+url: https://github.com/xiaweiliang060035/dsh-opencode-go-usage
+name: xiaweiliang060035/dsh-opencode-go-usage
+category: usage
+description:
+  en: Floating widget showing real-time OpenCode Go subscription usage (rolling/weekly/monthly) for every API key, with rate-limit alerts and automatic key-pool discovery.
+  zh: 悬浮组件实时显示 OpenCode Go 各 key 用量（滚动/每周/每月），限流预警，自动发现 key 池。

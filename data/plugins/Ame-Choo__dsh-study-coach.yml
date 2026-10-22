@@ -1,0 +1,6 @@
+url: https://github.com/Ame-Choo/dsh-study-coach
+name: Ame-Choo/dsh-study-coach
+category: tools
+description:
+  en: 'Study coach for DeepSeek Harness: turns a course into a knowledge map of subject, module and unit, records mastery per unit in six stages, plans daily tasks against a materials index, keeps a wrong-answer book and spaced-repetition cards, and serves its own web panel.'
+  zh: 'DSH 的学习教练：把一门课拆成知识地图（大类 / 模块 / 最小单元），逐单元记六档掌握度，按资料索引排每日任务，带错题本与记忆卡，并自带一个网页面板。'

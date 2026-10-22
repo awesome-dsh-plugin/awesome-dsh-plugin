@@ -1,0 +1,8 @@
+url: https://github.com/shengyvself/narrative-prompt-polish
+name: shengyvself/narrative-prompt-polish
+category: workflow
+description:
+  en: >-
+    ✨ One-click prompt polisher for the DSH composer — an agent refines your rough draft in a side chat over multiple turns, and you copy the result back when you're happy.
+  zh: >-
+    DSH 主输入框旁的 ✨ 一键提示词打磨：点击后 Agent 在侧边对话多轮改写草稿，你满意后再手动回填。

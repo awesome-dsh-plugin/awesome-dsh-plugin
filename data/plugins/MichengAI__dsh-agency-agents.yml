@@ -1,0 +1,6 @@
+url: https://github.com/MichengAI/dsh-agency-agents
+name: MichengAI/dsh-agency-agents
+category: skill
+description:
+  en: Adds a summonable domain-expert roster that runs as subagents while the parent session keeps the task and final answer.
+  zh: 增加可召唤的领域专家名单，专家以子代理运行，主会话保留任务和最终答复。

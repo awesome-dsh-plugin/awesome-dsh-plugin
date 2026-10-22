@@ -1,0 +1,6 @@
+url: https://github.com/hongxin/dsh-tvision
+name: hongxin/dsh-tvision
+category: ui
+description:
+  en: 'Turbo Vision-style character-cell window manager for dsh agents: overlapping framed windows with drop shadows, a Borland menu bar, a function-key strip, mouse drag and resize, approvals as modal dialogs, and five skins including the classic Borland blue.'
+  zh: 'Turbo Vision 式字符窗口管理器：带投影的重叠窗口、Borland 菜单栏、功能键提示条、鼠标拖拽缩放、模态审批对话框，五套皮肤含经典 Borland 蓝。'

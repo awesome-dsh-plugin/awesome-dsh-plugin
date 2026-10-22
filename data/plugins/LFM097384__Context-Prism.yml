@@ -1,0 +1,7 @@
+# ContextPrism: project-level dynamic context window engine for DSH.
+url: https://github.com/LFM097384/Context-Prism
+name: LFM097384/Context-Prism
+category: memory
+description:
+  en: 'Project-level Local Context Engine for DeepSeek Harness: retrieval/compression/prioritization over history, code, files, user preferences and agent trajectories, producing a dynamic context window for any LLM.'
+  zh: '面向 DeepSeek Harness 的项目级本地上下文引擎：对历史、代码、文件、用户偏好和 Agent 轨迹做检索/压缩/优先级排序，为任意 LLM 生成动态上下文窗口。'

@@ -1,0 +1,6 @@
+url: https://github.com/luobosibing2/dsh-jev-plugin
+name: luobosibing2/dsh-jev-plugin
+category: tools
+description:
+  en: Integrates TypeSafe Jev for skill and file selection, task supervision, shared-finding corrections, tool-output filtering, approval assistance, and recorded-stage navigation in DeepSeek Harness; all features are disabled by default.
+  zh: 在 DeepSeek Harness 中集成 TypeSafe Jev，用于技能与文件选择、任务监督、共享结论纠错、工具输出过滤、审批辅助和历史步骤阶段导航；所有功能默认禁用。

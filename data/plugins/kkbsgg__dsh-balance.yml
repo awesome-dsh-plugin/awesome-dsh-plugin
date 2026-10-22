@@ -1,0 +1,6 @@
+url: https://github.com/kkbsgg/dsh-balance
+name: kkbsgg/dsh-balance
+category: ui
+description:
+  en: "Shows the selected model provider's account balance next to the composer's model seat once a model and reasoning effort are selected."
+  zh: "在选择模型与推理强度后，于输入框模型选择器旁显示当前模型提供方的账户余额。"

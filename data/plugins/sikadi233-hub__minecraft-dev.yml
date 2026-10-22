@@ -1,0 +1,6 @@
+url: https://github.com/sikadi233-hub/minecraft-dev
+name: sikadi233-hub/minecraft-dev
+category: skill
+description:
+  en: "Minecraft development skills and tools for DeepSeek Harness: 8 skills covering Paper/Spigot plugins, Fabric, Forge and NeoForge mods, addon development against major mods, and Gradle/JDK build setup across Minecraft 1.7.10 through 26.x; the mc_scaffold project generator and the mc_gradle Gradle runner; an intake skill that asks for missing version/platform details before starting; four built-in subagents; and a second Minecraft Architect preset whose mc_codex tool runs the user's own Codex CLI through the codex app-server protocol to draft the skeleton, after which DSH fills the marked method bodies and verifies the build."
+  zh: "面向 DeepSeek Harness 的 Minecraft 开发技能与工具：8 个技能覆盖 Paper/Spigot 插件、Fabric、Forge 与 NeoForge 模组、大型模组附属开发，以及 Minecraft 1.7.10 至 26.x 全时代的 Gradle/JDK 构建配置；另含 mc_scaffold 项目生成器与 mc_gradle 构建执行器、开工前先批量询问缺失版本/平台信息的 intake 技能、4 个内置子代理，以及第二个「Minecraft 架构师」预设——其 mc_codex 工具通过 codex app-server 协议驱动你自己的 Codex CLI 写出骨架，再由 DSH 填充标记处的方法体并验证构建。"

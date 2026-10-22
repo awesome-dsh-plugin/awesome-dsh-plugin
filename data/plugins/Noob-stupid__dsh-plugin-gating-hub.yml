@@ -1,0 +1,6 @@
+url: https://github.com/Noob-stupid/dsh-plugin-gating-hub
+name: Noob-stupid/dsh-plugin-gating-hub
+category: tools
+description:
+  en: 'Framework-upgrade safety and plugin gating for DSH: a pre-upgrade session-format contract preflight that adapts incompatible plugins and agent presets before you upgrade, automatic rollback on failure, auto-quarantine of plugins that broke a boot, plus environment fingerprinting and a public contract-rule pack. The built-in multi-source marketplace is a discovery layer only.'
+  zh: 'DSH 框架升级安全与插件升级门控：升级前跑「会话格式契约预检」（把不兼容的插件与 agent 预设扫出来先适配）、升级失败自动回滚、把拖垮过启动的插件自动隔离；另有环境指纹与公开契约规则库持续守门。内置多源插件市场只作发现层。'

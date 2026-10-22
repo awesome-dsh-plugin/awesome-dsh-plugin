@@ -1,0 +1,6 @@
+url: https://github.com/upJiang/dsh-cron-job
+name: upJiang/dsh-cron-job
+category: workflow
+description:
+  en: 'Scheduled DeepSeek Harness Agent tasks with mandatory end-to-end tests, run history, and bidirectional delivery through nine messaging channels.'
+  zh: 'DeepSeek Harness Agent 定时任务：创建前强制完成端到端测试，提供运行历史，并通过九种通讯渠道双向收发消息。'

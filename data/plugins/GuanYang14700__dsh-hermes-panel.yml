@@ -1,0 +1,6 @@
+url: https://github.com/GuanYang14700/dsh-hermes-panel
+name: GuanYang14700/dsh-hermes-panel
+category: ui
+description:
+  en: 'Hermes in the DSH sidebar: start and stop the gateway and dashboard, watch the dashboard beside the chat, and bridge DSH to Hermes. Windows only; requires an existing Hermes install.'
+  zh: '把 Hermes 放进 DSH 右侧栏：启停网关和 dashboard，聊天旁边就能看 dashboard，再把 DSH 和 Hermes 接起来。仅 Windows；需已安装 Hermes。'

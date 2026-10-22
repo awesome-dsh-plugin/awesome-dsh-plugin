@@ -1,0 +1,6 @@
+url: https://github.com/Ox0400/dsh-vault
+name: Ox0400/dsh-vault
+category: security
+description:
+  en: "Encrypted local credentials vault for the Harness: a web settings page and vault_* tools to store, search and copy passwords, API keys, TOTP secrets and card data, with health audits, expiry rotation, imports/exports and read-only/ask access modes."
+  zh: "Harness 的本地加密凭据保险库：Web 设置页与 vault_* 工具，可存取与复制密码、API 密钥、TOTP 与银行卡信息，支持健康审计、到期轮换、导入导出以及只读/询问访问模式。"

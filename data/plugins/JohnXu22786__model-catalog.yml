@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/model-catalog
+name: JohnXu22786/model-catalog
+category: tools
+description:
+  en: Auto-discovers model listings, pricing and capabilities from OpenAI-compatible API hosts, normalizes them, and emits ready-to-use model configs for dsh.
+  zh: 从 OpenAI 兼容 API 主机自动发现模型列表、定价与能力，归一化后生成 dsh 可直接使用的模型配置。

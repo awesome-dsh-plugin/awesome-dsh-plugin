@@ -1,0 +1,6 @@
+url: https://github.com/caihua8669/dsh-doc-review
+name: caihua8669/dsh-doc-review
+category: docs
+description:
+  en: 'Document review workbench: select text in a Markdown file, leave comments saved as MRSF sidecar files next to it, and let the agent read them with doc_review_* tools and propose edits you accept or reject.'
+  zh: '文档批注台：在 Markdown 文档上划词写批注，批注按 MRSF 侧车文件存在文档旁，Agent 用 doc_review_* 工具读取并登记改动提案，你在批注页逐条接受或拒绝。'

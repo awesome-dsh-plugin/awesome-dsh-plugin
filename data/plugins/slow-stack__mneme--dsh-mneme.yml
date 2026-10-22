@@ -1,0 +1,6 @@
+url: https://github.com/slow-stack/mneme/tree/main/dsh-mneme
+name: slow-stack/mneme#dsh-mneme
+category: memory
+description:
+  en: "The memory that dreams — cross-session memory for DeepSeek Harness: recalls you and your projects across sessions, consolidates memories while idle (autoDream), freezes conflicting memories for your review, and keeps a replayable audit trail. Memory stays on your machine as SQLite with human-editable Markdown mirrors; four-way recall (keyword, vector, BM25, entity graph) and an interactive memory panel ship with it, plus 10 model tools, an MCP server, an external API and a CLI. Summarization and consolidation run on the host model you already configured; with a local embedder, semantic search runs fully offline."
+  zh: "会做梦的记忆 — DeepSeek Harness 跨会话记忆插件：跨会话记住你与项目，空闲时自动巩固记忆（autoDream），冲突记忆先冻结待你裁决，全程可回放审计。记忆落在本机：SQLite 存储配可人工编辑的 Markdown 镜像；附带四路召回（关键词、向量、BM25、实体图谱）与交互式记忆库面板，另有 10 个模型工具、MCP 服务端、外部 API 与 CLI。摘要与巩固走你已配置的宿主模型；把嵌入换成本地模型后，语义检索可完全离线运行。"

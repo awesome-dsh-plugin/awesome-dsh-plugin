@@ -1,0 +1,6 @@
+url: https://github.com/DIAG5/dsh-better-input
+name: DIAG5/dsh-better-input
+category: ui
+description:
+  en: 'Input experience enhancement: voice input, AI polish, anti-overwrite, prompt optimization with diff preview, and auto locale switching following DSH UI language.'
+  zh: 输入体验增强插件，目前已实现语音输入、AI提示词润色（反覆盖保护、带差异预览的提示词优化）、跟随 DSH 界面语言自动切换中英文界面。

@@ -1,0 +1,6 @@
+url: https://github.com/miuzel/dsh-graph/tree/main/dsh-graph-host
+name: miuzel/dsh-graph#dsh-graph-host
+category: workflow
+description:
+  en: "Goal lifecycle management for dsh with an interactive kanban board: goals, criteria, attempts and reviews live in the workspace, driven by graph_* tools, with a two-lane board rendered in the conversation view."
+  zh: "dsh 目标生命周期管理与可视化看板：目标、判据、执行、评审都在项目内跟踪，由 graph_* 工具驱动，会话视图内渲染二维泳道看板。"

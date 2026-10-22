@@ -1,0 +1,6 @@
+url: https://github.com/LeemanCheung/dsh-agent-arena
+name: LeemanCheung/dsh-agent-arena
+category: dev
+description:
+  en: Compares coding agents in isolated Git worktrees with deterministic validation, scoring, and explicit winner application.
+  zh: 在隔离的 Git 工作树中比较编码智能体，并提供确定性验证、评分和显式胜者应用。

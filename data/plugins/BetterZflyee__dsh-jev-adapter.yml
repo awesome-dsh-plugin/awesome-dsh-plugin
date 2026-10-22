@@ -1,0 +1,6 @@
+url: https://github.com/BetterZflyee/dsh-jev-adapter
+name: BetterZflyee/dsh-jev-adapter
+category: tools
+description:
+  en: Use the Jev (System One) decision-model paradigm with any OpenAI-compatible LLM — no TypeSafe key required. Registers a jev_decide tool that returns probability-distributed answers to typed questions (choice/score/boolean) in one call.
+  zh: 用任意 OpenAI 兼容大模型跑 Jev 决策范式——无需 TypeSafe key。注册 jev_decide 工具，一次调用返回带概率分布的类型化答案（choice/score/boolean）。

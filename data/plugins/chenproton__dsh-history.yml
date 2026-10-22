@@ -1,0 +1,6 @@
+url: https://github.com/chenproton/dsh-history
+name: chenproton/dsh-history
+category: session
+description:
+  en: 'Browse every message you sent in the current session: full-history listing with newest-first sort, text filter, one-click copy, and jump to a message (auto-loads earlier history when the target is not yet loaded).'
+  zh: 会话历史消息查看：列出当前会话全部你发送的消息，支持排序、搜索、一键复制与点击跳转定位（目标未加载时自动加载更早历史）。

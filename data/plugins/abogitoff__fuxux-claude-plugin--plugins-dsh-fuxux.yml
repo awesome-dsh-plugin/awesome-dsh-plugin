@@ -1,0 +1,6 @@
+url: https://github.com/abogitoff/fuxux-claude-plugin/tree/main/plugins/dsh-fuxux
+name: abogitoff/fuxux-claude-plugin#dsh-fuxux
+category: tools
+description:
+  en: 'Connects DeepSeek Harness to Fuxux over MCP: list connected social media accounts and draft, schedule or publish posts to Instagram, Facebook, TikTok, YouTube, LinkedIn, X, Threads, Bluesky, Pinterest, Discord, Kick and Twitch; adds a fuxux workflow skill.'
+  zh: '通过 MCP 把 DeepSeek Harness 接到 Fuxux：列出已连接的社交媒体账号，起草、定时或直接发布到 Instagram、Facebook、TikTok、YouTube、LinkedIn、X、Threads、Bluesky、Pinterest、Discord、Kick 与 Twitch；并附带一个 Fuxux 工作流技能。'

@@ -1,0 +1,6 @@
+url: https://github.com/Kaiji-Z/dsh-plugin-lookatstudy
+name: Kaiji-Z/dsh-plugin-lookatstudy
+category: ui
+description:
+  en: 'A study tab with course-map, tutor and blackboard columns that turns markdown files, local folders or GitHub repos into guided courses, with lesson unlocking, mastery tracking, spaced repetition and a tutor-designed course import.'
+  zh: '学习页签（课程｜导师｜黑板三栏）：把 markdown 文件、本地文件夹或 GitHub 仓库变成导学课程，提供课时解锁、掌握度追踪、间隔重复和导师设计式课程导入。'

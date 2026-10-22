@@ -1,0 +1,6 @@
+url: https://github.com/Relistencode/dsh-recall
+name: Relistencode/dsh-recall
+category: memory
+description:
+  en: 'Conversation history recall for DSH: three-layer (literal/fuzzy/semantic) retrieval over every past session''s original text, fully local & offline — AI never forgets what you told it. One-command install via `dsh.bundle.patch`, semantic layer runs in a worker thread.'
+  zh: 对话历史回忆：字面/模糊/语义三层检索全部历史会话的原始文本，完全本地离线——AI 再也不会忘记你说的话。一条命令安装（自带 `dsh.bundle.patch`），语义推理跑在 worker 线程。

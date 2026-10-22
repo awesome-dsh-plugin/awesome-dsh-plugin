@@ -1,0 +1,6 @@
+url: https://github.com/yangzhe1991/dsh-code-review
+name: yangzhe1991/dsh-code-review
+category: git
+description:
+  en: 'One-click standalone two-column code review page for Git diffs in the conversation: line numbers, add/delete coloring, character-level highlight, hunk-aware per-file sections, a file nav sidebar and a stats bar; line comments submit back to the DSH composer, and the UI follows the DSH locale.'
+  zh: '把对话里的 git diff 一键打开为独立标签页的双列代码评审页：行号、增删配色、字符级高亮、hunk 感知的多文件分段、文件导航侧栏与统计条，行内评论可提交回 DSH 对话框，界面跟随 DSH 语言（中英）。'

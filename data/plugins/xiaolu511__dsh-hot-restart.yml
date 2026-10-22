@@ -1,0 +1,6 @@
+url: https://github.com/xiaolu511/dsh-hot-restart
+name: xiaolu511/dsh-hot-restart
+category: dev
+description:
+  en: One fixed button inside the DSH window that restarts DSH and reopens it automatically, with no console window; right-click it for a built-in self check that writes a single diagnostic report.
+  zh: DSH 窗口里的一个固定按钮，点一下就把 DSH 关掉并自动重开，全程没有控制台窗口；右键它还有内置自检，能生成一份自包含的诊断报告。

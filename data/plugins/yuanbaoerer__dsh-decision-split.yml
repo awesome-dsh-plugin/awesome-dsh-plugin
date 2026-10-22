@@ -1,0 +1,6 @@
+url: https://github.com/yuanbaoerer/dsh-decision-split
+name: yuanbaoerer/dsh-decision-split
+category: ui
+description:
+  en: "Decision split view for DSH web UI: a decision summary card in the main window plus the full plan in an independently scrollable side panel, so you can review the whole plan while writing decisions and send them back to the agent with one click."
+  zh: "决策分屏视图：主窗口显示决策摘要卡片，右侧详情栏独立滚动展示完整方案，边看全文边写决策，一键回传 agent。"

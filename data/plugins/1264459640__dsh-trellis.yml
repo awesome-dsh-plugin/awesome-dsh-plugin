@@ -1,0 +1,6 @@
+url: https://github.com/1264459640/dsh-trellis
+name: 1264459640/dsh-trellis
+category: workflow
+description:
+  en: 'Trellis-style workflow for DeepSeek Harness: per-turn phase breadcrumbs via agent/pre-step, bundled skill provider, and DSH-native task/phase state with git-cleanliness guardrails.'
+  zh: '为 DeepSeek Harness 打造的 Trellis 风格工作流：基于 agent/pre-step 的每轮速记注入、内置技能提供方，以及带 git 清洁度护栏的 DSH 原生任务与相位状态管理。'

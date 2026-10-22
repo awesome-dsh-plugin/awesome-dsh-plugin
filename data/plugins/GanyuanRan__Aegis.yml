@@ -1,0 +1,6 @@
+url: https://github.com/GanyuanRan/Aegis
+name: GanyuanRan/Aegis
+category: skill
+description:
+  en: Software-engineering method pack for coding agents, with skills for baseline-first planning, systematic debugging, prompt hygiene, verification before completion, and repair/retirement tracking.
+  zh: 面向编码 Agent 的软件工程方法包，提供基线优先规划、系统化调试、提示词卫生、完成前验证，以及修复/退役双轨跟踪技能。

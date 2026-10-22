@@ -1,0 +1,6 @@
+url: https://github.com/WilShi/dsh-skill-station
+name: WilShi/dsh-skill-station
+category: skill
+description:
+  en: 'Sidebar skill hub: scan Claude/Codex/Cursor/Gemini skill directories for one-click import, manage global/project skills (toggle, trash), and install from dropped folders, zip archives, or local paths of any size.'
+  zh: 侧边栏技能站：扫描 Claude/Codex/Cursor/Gemini 技能目录一键导入，管理全局与项目技能（启停、回收站），支持拖拽文件夹、zip 包与本地路径（不限大小）安装。

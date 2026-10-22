@@ -1,0 +1,6 @@
+url: https://github.com/HB00/dsh-llm-failover
+name: HB00/dsh-llm-failover
+category: model
+description:
+  en: 'Automatic provider failover on rate limits or quota exhaustion: switch between providers with configurable per-provider models, a cooldown, and a permanent last-entry fallback.'
+  zh: 限流或配额耗尽时自动切换模型提供方：可按提供方配置模型，带冷却机制与永久最终兜底。

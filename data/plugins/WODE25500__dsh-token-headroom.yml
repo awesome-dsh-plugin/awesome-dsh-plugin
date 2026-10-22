@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-token-headroom
+name: WODE25500/dsh-token-headroom
+category: skill
+description:
+  en: "Context compaction / headroom for DeepSeek Harness — compress the live context so the prompt stays small without losing the state that matters (layer 3)."
+  zh: "DeepSeek Harness 的上下文压缩/headroom——压缩在线上下文让 prompt 保持小，又不丢关键状态(layer 3)。"

@@ -1,0 +1,6 @@
+url: https://github.com/yeruizhi/dsh-lark-meeting-notifier
+name: yeruizhi/dsh-lark-meeting-notifier
+category: notify
+description:
+  en: 'Feishu meeting reminder: a dsh-plugin which has only side effect: reminding you, mid-flow with AI, that you "have to go meet carbon-based lifeforms".'
+  zh: 飞书会议提醒：一个只有副作用的 dsh-plugin，在你跟 AI 聊得神魂颠倒时提醒你「不得不去跟碳基生命开会了」。

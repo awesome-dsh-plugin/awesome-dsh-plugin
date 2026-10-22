@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-dev/dsh-session-health
+name: omdsh-dev/dsh-session-health
+category: dev
+description:
+  en: Frame-level scan diagnostics for session files (torn/corrupt/empty detection).
+  zh: 会话文件帧级扫描诊断（torn/损坏/空会话检测）。

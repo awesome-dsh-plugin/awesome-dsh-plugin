@@ -1,0 +1,6 @@
+url: https://github.com/oopsylol/dsh-waaagh-ork
+name: oopsylol/dsh-waaagh-ork
+category: fun
+description:
+  en: "A green pixel-Ork mascot for DSH Web that masks model thinking and output as Waaaaaaagh! until clicked to reveal, plus a random-length input mask."
+  zh: "给 DSH Web 加一个会眨眼的像素绿皮兽人：把模型思考与输出掩码成 Waaaaaaagh!（点击显示原文），并支持随机长度的输入掩码。"

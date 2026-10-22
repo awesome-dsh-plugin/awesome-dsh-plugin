@@ -1,0 +1,6 @@
+url: https://github.com/ZichengGurrr/dsh-window/tree/main/plugin
+name: ZichengGurrr/dsh-window#plugin
+category: ui
+description:
+  en: 'Native Windows desktop window (WebView2) for DSH: one-command install, auto-fetches the app zip from GitHub Releases, creates a desktop shortcut, and adds a desktop_launch tool to start it from chat.'
+  zh: DSH 的 Windows 原生窗口（WebView2）：一键安装，自动从 GitHub Releases 下载应用 zip、创建桌面快捷方式，并提供 desktop_launch 工具在对话中一键启动。

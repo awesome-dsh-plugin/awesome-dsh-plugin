@@ -1,0 +1,6 @@
+url: https://github.com/pyf2818/dsh-bili-widget
+name: pyf2818/dsh-bili-widget
+category: ui
+description:
+  en: Floating Bilibili video mini-player for DSH — always-on-top window with discover/search/follow-UP channels, auto-playlist, mini & focus modes, persisted watch history and window minimize-to-ball.
+  zh: DSH 里的 B站悬浮看片小窗：置顶窗口，含推荐/热门/排行/精选/关注/AI 频道与搜索，自动连播、迷你专注模式、历史持久化与最小化悬浮球。

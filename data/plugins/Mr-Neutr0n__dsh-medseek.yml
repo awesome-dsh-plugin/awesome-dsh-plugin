@@ -1,0 +1,16 @@
+url: https://github.com/Mr-Neutr0n/dsh-medseek
+name: Mr-Neutr0n/dsh-medseek
+category: tools
+description:
+  en: >-
+    Clinical documentation and reference bundle for healthcare professionals:
+    SOAP/APSO progress notes, admission H&P, SBAR/I-PASS handover, discharge
+    summaries, Safe Harbor de-identification, patient-instruction readability,
+    completeness checks, and cited lookups against FDA labels, MedlinePlus,
+    PubMed, and ClinicalTrials.gov. Draft-only with a PHI egress guard; not a
+    medical device.
+  zh: >-
+    面向临床人员的文档与参考工具包：SOAP/APSO 病程录、入院 H&P、SBAR/I-PASS 交接班、
+    出院小结、Safe Harbor 脱敏、患者须知可读性评分、完整性检查，以及来自 FDA 说明书、
+    MedlinePlus、PubMed 和 ClinicalTrials.gov 的带出处检索。仅起草不决定，
+    内置 PHI 外发守卫；非医疗器械。

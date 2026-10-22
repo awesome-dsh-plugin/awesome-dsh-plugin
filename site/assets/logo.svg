@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="awesome-dsh-plugin logo">
+  <title>awesome-dsh-plugin — a plugin sliding into the grid</title>
+  <rect width="512" height="512" rx="100" fill="#f6f2ea"/>
+  <g fill="#2b2620">
+    <rect x="112" y="112" width="88" height="88" rx="14"/>
+    <rect x="212" y="112" width="88" height="88" rx="14"/>
+    <rect x="112" y="212" width="88" height="88" rx="14"/>
+    <rect x="212" y="212" width="88" height="88" rx="14"/>
+    <rect x="112" y="312" width="88" height="88" rx="14"/>
+    <rect x="212" y="312" width="88" height="88" rx="14"/>
+    <rect x="312" y="212" width="88" height="88" rx="14"/>
+    <rect x="312" y="312" width="88" height="88" rx="14"/>
+  </g>
+  <rect x="346" y="78" width="88" height="88" rx="14" fill="#c0392b" transform="rotate(9 390 122)"/>
+</svg>

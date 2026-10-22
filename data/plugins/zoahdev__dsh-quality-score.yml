@@ -1,0 +1,8 @@
+url: https://github.com/zoahdev/dsh-quality-score
+name: zoahdev/dsh-quality-score
+category: dev
+description:
+  en: 'Plugin quality scorecard for DeepSeek Harness: 0-100 with grade, 6 components, fix suggestions per deduction, batch leaderboard - CLI plus an agent-callable quality_score tool.'
+  zh: 'dsh 插件质量评分卡：0-100 分 + 等级 + 六项分项，逐项修复建议，支持批量榜单 - CLI + agent 可调用 quality_score 工具。'
+
+# listing updated 2026-08-19 (repo hardened to 10+ commits; submission gate)

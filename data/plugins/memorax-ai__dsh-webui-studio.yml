@@ -1,0 +1,6 @@
+url: https://github.com/memorax-ai/dsh-webui-studio
+name: memorax-ai/dsh-webui-studio
+category: dev
+description:
+  en: 'Visual development studio for DSH WebUI plugins with isolated Git worktrees, live official-WebUI previews, source editing, patch inspection, builds, and validation.'
+  zh: '面向 DSH WebUI 插件的可视化开发工作室，提供隔离的 Git worktree、真实官方 WebUI 预览、源码编辑、Patch 检查、构建与验证。'

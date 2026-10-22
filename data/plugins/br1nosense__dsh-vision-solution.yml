@@ -1,0 +1,6 @@
+url: https://github.com/br1nosense/dsh-vision-solution
+name: br1nosense/dsh-vision-solution
+category: vision
+description:
+  en: 'Give DSH text-only models vision: an image/OCR/document recognition skill (race pool → custom channels → local) plus an idempotent host patch so image messages reach the model.'
+  zh: '为 DSH 纯文本模型补充视觉能力：识图技能（图片理解/OCR/文档解析，竞速池→自定义通道→本地）+ 幂等宿主补丁，让图片消息能送达模型侧。'

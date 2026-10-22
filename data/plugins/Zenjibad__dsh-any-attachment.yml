@@ -1,0 +1,6 @@
+url: https://github.com/Zenjibad/dsh-any-attachment
+name: Zenjibad/dsh-any-attachment
+category: ui
+description:
+  en: 'Lets the DSH web UI attach files of any type as pathless @-mentions: pick a workspace file from the @ menu or drop one into the composer, and the agent reads it directly.'
+  zh: 让 DSH 网页以无路径 @提及 附加任意类型文件：可从 @ 菜单挑选工作区文件，或拖入输入区，Agent 直接读取。

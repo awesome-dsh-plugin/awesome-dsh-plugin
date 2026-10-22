@@ -1,0 +1,6 @@
+url: https://github.com/myd74108520/cadence-skill
+name: myd74108520/cadence-skill
+category: dev
+description:
+  en: 'Cadence SKILL (Virtuoso Lisp) assistant for EDA engineers: official-doc-anchored API lookup (3557 entries across 5 IC6.1.8 manuals, signature confidence levels, never invents APIs) plus zero-execution static analysis driven by a lexical depth coordinate system — iterator-safe deletion with position-sensitive copy() protection, printf placeholder/argument reconciliation, in-loop nth O(N^2) detection, deprecated APIs with page refs, dangerous-intent interception and CIW error-log triage. Host half has zero third-party dependencies.'
+  zh: '面向 Cadence Virtuoso 版图工程师的 SKILL 脚本助手：官方文档锚定的 API 检索（5 本 IC6.1.8 手册 3557 条，签名带置信度，查不到绝不臆造）＋不执行代码的深度静态检查——词法深度坐标系可精确判定跨行循环体与同行闭合，覆盖迭代中删除（copy 位置敏感）、printf 占位符与实参对账、循环内 nth O(N^2)、废弃 API（带页码引用），另有危险需求拦截与 CIW 错误日志定位修复。宿主半区零第三方依赖。'

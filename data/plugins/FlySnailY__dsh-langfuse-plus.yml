@@ -1,0 +1,7 @@
+url: https://github.com/FlySnailY/dsh-langfuse-plus
+name: FlySnailY/dsh-langfuse-plus
+category: dev
+description:
+  en: 'Langfuse observability for DeepSeek Harness (DSH): per-turn trace trees aggregated by session id, with prompt versioning and evaluation.'
+  zh: 'DSH（DeepSeek Harness）的 Langfuse 可观测性插件：会话轮次映射为 Langfuse trace 树（同会话经 session id 聚合），提供 Prompt 版本管理与评测能力。'
+

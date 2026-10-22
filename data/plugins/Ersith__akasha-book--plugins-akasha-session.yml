@@ -1,0 +1,6 @@
+url: https://github.com/Ersith/akasha-book/tree/main/plugins/akasha-session
+name: Ersith/akasha-book#akasha-session
+category: session
+description:
+  en: 'Indexes session transcripts into the Akasha session layer as turns end, records successful compactions, and adds a per-turn rhythm line to the runtime context. Companions: Hindsight (repo memory), OpenViking (user memory), and the built-in session search (see repo README). Setup: clone the repo, copy core/ aside, then replace <AKASHA_DIR> in cordis.patch.yml with its absolute path (or set the AKASHA_DIR env var); plugins fail loudly while the placeholder remains.'
+  zh: '回合结束时把会话档案增量索引进阿卡夏会话层，记录压缩事件，并在运行时上下文里显示每回合节奏条。（配套：Hindsight 仓库记忆 / OpenViking 用户记忆 / 宿主会话检索；见仓库 README） 安装：clone 仓库并复制 core/，把 cordis.patch.yml 里的 <AKASHA_DIR> 换成实际路径（或设 AKASHA_DIR 环境变量）；占位符未替换时插件会明确报错。'

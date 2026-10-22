@@ -1,0 +1,6 @@
+url: https://github.com/yaopushen/dsh-plugin-background-tasks
+name: yaopushen/dsh-plugin-background-tasks
+category: workflow
+description:
+  en: 'Antigravity-style run_command for DSH: short commands return inline within a configurable wait window (default 10s) while longer ones auto-promote into ctx.jobs for later collection and completion notices — executed via ctx.shell under the session sandbox and approval pipeline.'
+  zh: Antigravity 式 run_command：短命令在可配置窗口（默认 10 秒）内同步返回结果，长命令自动晋升为 ctx.jobs 后台任务并推送完成通知——命令经 ctx.shell 执行，受会话沙箱与审批管线约束。

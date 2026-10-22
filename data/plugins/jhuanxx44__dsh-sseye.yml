@@ -1,0 +1,6 @@
+url: https://github.com/jhuanxx44/dsh-sseye
+name: jhuanxx44/dsh-sseye
+category: dev
+description:
+  en: 'LLM debug console for DeepSeek Harness: captures the full content of every model call at the llm/stream waterfall (options, stream chunks, usage, wire protocol) and shows it in a DevTools-style docked panel, with shared-prefix context diffing, wire-JSON reconstruction, JSON export and a runtime-tunable capture policy.'
+  zh: 'DeepSeek Harness 里的 LLM 调试台：在 llm/stream 层完整捕获每次模型调用（请求参数、流式块、用量、真实 wire 协议），以 DevTools 风格停靠面板展示，支持上下文共享前缀折叠对比、wire JSON 重建、JSON 导出与运行时可调的抓取策略。'

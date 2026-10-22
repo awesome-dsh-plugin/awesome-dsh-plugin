@@ -1,0 +1,6 @@
+url: https://github.com/Elohia/dsh-genome
+name: Elohia/dsh-genome
+category: dev
+description:
+  en: 'Capability transform & assembly engine (Qian Xuesen cybernetics/systems framework): static resident layer manages the skill/MCP/plugin registries, auto-absorbs skills and tool metrics, and drives a negative-feedback evolution loop (scan Sick/Weak → mutate → select promote/reject → 30s rollback); includes a Web UI panel and a GitHub dsh-plugin store bridge.'
+  zh: 能力转化与组装引擎（钱学森工程控制论/系统论框架）：静态常驻层管理 skill/MCP/插件三库、自动吸收技能与工具度量，驱动负反馈进化闭环（scan Sick/Weak → mutate → select 晋升/淘汰 → 30s 回滚）；含 Web UI 面板与 GitHub dsh-plugin 商店桥。

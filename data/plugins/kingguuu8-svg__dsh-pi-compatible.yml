@@ -1,0 +1,6 @@
+url: https://github.com/kingguuu8-svg/dsh-pi-compatible
+name: kingguuu8-svg/dsh-pi-compatible
+category: tools
+description:
+  en: 'Pi-compatible tool suite recreated inside DeepSeek Harness: installs lower-case read/write/edit/bash/find/grep/ls core tools while retaining DSH-backed web, task, plan, todo, think, and slash extensions.'
+  zh: '在 DeepSeek Harness 中复刻 Pi 工具组：安装小写 read/write/edit/bash/find/grep/ls 核心工具，并保留 DSH-backed 网页、任务、计划、todo、think 与 slash 扩展。'

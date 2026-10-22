@@ -1,0 +1,6 @@
+url: https://github.com/MYanhui/DSH-plug-in
+name: MYanhui/DSH-plug-in
+category: ui
+description:
+  en: 'Adds three settings pages to DeepSeek Harness: add, edit, enable and remove MCP servers; write agent skills by hand or install them from a GitHub repository; and keep a library of global personas with one active.'
+  zh: '给 DeepSeek Harness 增加三页设置界面：增删改查与启停 MCP 服务；手写 Skill 技能或从 GitHub 仓库安装；维护多人设库并启用其中一份。'

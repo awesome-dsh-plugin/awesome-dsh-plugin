@@ -1,0 +1,6 @@
+url: https://github.com/weibaohui/dsh-fireworks
+name: weibaohui/dsh-fireworks
+category: fun
+description:
+  en: "Fireworks celebration engine: floats fireworks above the chat window while the agent codes — welcome show, per-turn salutes, tool sparks, milestone celebrations, a finish finale and a dud on failure; each event type has its own fireworks card group with random variants, and token usage decides firework size, height and splendour."
+  zh: 烟花庆祝引擎：agent 编程时漂浮在对话窗口上空放烟花——开场迎宾、回合礼花、工具星花、里程碑大礼、收工终场、失败哑炮，每类事件一张烟花属性卡组，组内多变种随机抽取，token 用量决定烟花的大小、高度与绚烂程度。

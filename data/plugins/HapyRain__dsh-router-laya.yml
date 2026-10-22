@@ -1,0 +1,6 @@
+url: https://github.com/HapyRain/dsh-router-laya
+name: HapyRain/dsh-router-laya
+category: ui
+description:
+  zh: "为 DeepSeek Harness 提供自动思考档位路由：本地微调的 7 题分类模型（ModernBERT，842MB，CPU 推理 <1s）对无档位指令的消息自动选择 low/high/max；会话内检测到重试自动沿阶梯升档，受「别用 max」类排除约束压制；判定服务不可达时熔断降级，会话不断。前端档位芯片实时显示当前档位与最近 20 轮判断原因。判定全程本地推理，任务文本不出本机。"
+  en: "Auto thinking-effort routing for dsh: a locally fine-tuned 7-question classifier (ModernBERT, 842MB, <1s CPU inference) picks low/high/max for no-intent messages; in-session retries escalate the tier (low to high to max) under exclusion constraints; the judge service fails safe to low if unreachable. A tier chip in the input bar shows the live tier and the last 20 judgments. All inference is local - task text never leaves the machine."

@@ -1,0 +1,6 @@
+url: https://github.com/SeverusZh/dsh-plugin-subagent-director
+name: SeverusZh/dsh-plugin-subagent-director
+category: model
+description:
+  en: Per-subagent LLM provider/model selection with role templates.
+  zh: 子代理 LLM 供应商/模型选择，支持角色模板。

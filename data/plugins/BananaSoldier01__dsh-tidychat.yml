@@ -1,0 +1,6 @@
+url: https://github.com/BananaSoldier01/dsh-tidychat
+name: BananaSoldier01/dsh-tidychat
+category: session
+description:
+  en: 'Fold completed turns into their final conclusions, split thinking from prose with a divider, and jump between turns from a rail dockable left or right with line or dot marks, an optional ring and hover summaries; it can hide the host right-edge TurnNavigator, load earlier history, and open a pre-filled diagnostics issue.'
+  zh: '已完成轮次折叠成最终结论、思考与正文之间插入分隔线、可贴左缘或右缘的定位条（横线 / 圆点标记、可选外圈、悬停摘要 + 点击跳转）；还可隐藏宿主原生右缘 TurnNavigator、加载更早历史、一键打开预填好的诊断报告 issue。'

@@ -1,0 +1,6 @@
+url: https://github.com/TFboy1/dsh-minecraft-ui
+name: TFboy1/dsh-minecraft-ui
+category: theme
+description:
+  en: 'Presents DSH Web as a playable, full-screen first-person Minecraft-style voxel interface—not a color-only skin: users walk through a persistent Three.js block world and access native workspaces, sessions, conversations, tools, model selection, permissions, context information, and the composer through in-world facilities and a workbench.'
+  zh: '将 DSH Web 直接呈现为可游玩的全屏第一人称 Minecraft 风格体素界面，而非只更换颜色的皮肤：用户可以在可持久化的 Three.js 方块世界中移动，并通过游戏内设施和工作台使用原生工作区、会话、对话、工具、模型选择、权限、上下文信息与输入框。'

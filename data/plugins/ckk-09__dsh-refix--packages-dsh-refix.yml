@@ -1,0 +1,6 @@
+url: https://github.com/ckk-09/dsh-refix/tree/main/packages/dsh-refix
+name: ckk-09/dsh-refix#dsh-refix
+category: dev
+description:
+  en: 'Self-diagnosing, self-repairing watchdog for DSH plugins: 15s health patrol, version-switch repair with observe window and auto rollback, unknown symptoms escalated to human.'
+  zh: 'DSH 插件自诊断自修复看门狗：15 秒巡检、带观察窗与自动回退的版本切换修复、未知病症上报人工。'

@@ -1,0 +1,6 @@
+url: https://github.com/zhaoyuntao-wl/dsh-plugin-thread
+name: zhaoyuntao-wl/dsh-plugin-thread
+category: memory
+description:
+  en: 'Decision-and-goal memory with lineage: explicit commands and a model tool record decisions deterministically, a status card re-anchors them across compaction, a lossless event stream with BM25+jieba retrieval backs it, and a scenario-level fidelity regression suite gates releases.'
+  zh: 带血缘的决策与目标记忆：显式命令与模型工具确定性记录决策，状态卡跨压缩重锚定，无损事件流 + BM25 分词检索兜底，场景级保真回归集作发布门禁。

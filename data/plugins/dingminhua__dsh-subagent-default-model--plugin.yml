@@ -1,0 +1,6 @@
+url: https://github.com/dingminhua/dsh-subagent-default-model/tree/main/plugin
+name: dingminhua/dsh-subagent-default-model#plugin
+category: model
+description:
+  en: Configurable default model for subagent delegations via settings.yaml, with single-model and multi-model round-robin or random strategies.
+  zh: 通过 settings.yaml 为子代理派发配置默认模型，支持单模型与多模型轮换/随机分配策略。

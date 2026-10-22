@@ -1,0 +1,6 @@
+url: https://github.com/caisiyang123/dsh-tick-rail
+name: caisiyang123/dsh-tick-rail
+category: ui
+description:
+  en: 'Tick-rail conversation navigator: one tick per message you sent, a lit peak that follows the mouse with an even falloff, hover previews, click or keyboard to jump.'
+  zh: '会话刻度线导航条：你发的每条消息一格刻度，点亮峰值随鼠标移动、两侧均匀衰减，悬停预览消息摘要，点击或键盘跳转到对应位置。'

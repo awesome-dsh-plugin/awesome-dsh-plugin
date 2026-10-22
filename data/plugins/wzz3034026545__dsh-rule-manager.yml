@@ -1,0 +1,6 @@
+url: https://github.com/wzz3034026545/dsh-rule-manager
+name: wzz3034026545/dsh-rule-manager
+category: ui
+description:
+  en: Manage DSH rules from the web settings panel — edit global/project AGENTS.md, or auto-split pasted rules into layered AGENTS.md and skills via LLM.
+  zh: 在设置面板统一管理 DSH 规则：编辑全局/项目 AGENTS.md，或由 LLM 自动拆分粘贴的规则为分层 AGENTS.md 与技能。

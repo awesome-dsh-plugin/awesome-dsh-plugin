@@ -1,0 +1,6 @@
+url: https://github.com/xchannel1987/dsh-sdd-progress-xc
+name: xchannel1987/dsh-sdd-progress-xc
+category: ui
+description:
+  en: SDD task progress (todos) and progress ledger (sdd/progress.md) as a right-sidebar tab bound to the current session, rendered with the official MarkdownText, auto-refresh every 5s.
+  zh: 在右侧边栏以当前会话为维度展示 SDD 任务进度（todos）与进度台账（sdd/progress.md），采用官方 MarkdownText 渲染，每 5 秒自动刷新。

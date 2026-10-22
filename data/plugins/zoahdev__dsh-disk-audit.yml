@@ -1,0 +1,7 @@
+url: https://github.com/zoahdev/dsh-disk-audit
+name: zoahdev/dsh-disk-audit
+category: dev
+description:
+  en: 'Disk-usage audit for dsh data directories: total size, per-directory breakdown, largest files, oversized-file warnings (session logs can hit hundreds of MB) and cleanup suggestions — CLI plus an agent-callable disk_audit tool, dsh-disk-audit/v1 reports, zero runtime deps, read-only.'
+  zh: 'dsh 数据目录磁盘占用审计：总大小、按目录拆分、最大文件、超大文件告警（会话日志可达数百 MB）与清理建议——CLI + agent 可调用 disk_audit 工具，dsh-disk-audit/v1 报告，零运行时依赖、只读。'
+# listing updated 2026-08-19 (repo hardened to 10+ commits; submission gate)

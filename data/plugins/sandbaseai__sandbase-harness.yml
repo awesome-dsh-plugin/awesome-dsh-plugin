@@ -1,0 +1,6 @@
+url: https://github.com/sandbaseai/sandbase-harness
+name: sandbaseai/sandbase-harness
+category: workflow
+description:
+  en: 'Connects dsh to a local SandBase Harness runtime over stdio MCP for managing agents and sessions, streaming turns, inspecting artifacts and cancelling work.'
+  zh: '通过 stdio MCP 将 dsh 连接到本地 SandBase Harness 运行时，用于管理代理与会话、流式执行任务、检查产物和取消工作。'

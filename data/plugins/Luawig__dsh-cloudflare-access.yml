@@ -1,0 +1,6 @@
+url: https://github.com/Luawig/dsh-cloudflare-access
+name: Luawig/dsh-cloudflare-access
+category: security
+description:
+  en: Re-validates Cloudflare Access JWTs at the DSH origin so Settings, Credentials, Agent Preset management, and model discovery work from a remote hostname.
+  zh: 在 DSH Origin 校验 Cloudflare Access JWT，使 Settings、凭据、Agent Preset 管理与模型发现可在远程主机名下使用。

@@ -1,0 +1,6 @@
+url: https://github.com/dingminhua/dsh-connect-qoder
+name: dingminhua/dsh-connect-qoder
+category: model
+description:
+  en: Connects Qoder (Lingma CN / international) models to DSH through their PATs, with a per-region multi-account pool, daily check-in, automatic failover, and read-only credit visibility.
+  zh: 通过 PAT 将 Qoder（通义灵码国内版 / 国际版）模型接入 DSH，支持按区域的多账号池、每日签到、自动换号与只读积分展示。

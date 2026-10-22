@@ -1,0 +1,6 @@
+url: https://github.com/q862877400-ux/dsh-fuhuobi
+name: q862877400-ux/dsh-fuhuobi
+category: dev
+description:
+  en: 'Backs up DSH profiles and mints a desktop "revival coin" that restores the harness after a failed boot or install: a boot guard runs a two-phase health check (HTTP 200 plus client render), marks good boots, isolates or rolls back bad ones, and keeps 3 rotating snapshots. Cross-platform.'
+  zh: '备份 DSH 环境，启动或安装失败时通过桌面"复活币"一键恢复：内置启动守卫做两阶段健康检查（HTTP 200 + 客户端渲染），标记正常启动、隔离或回滚异常启动，并轮换保留 3 份快照。跨平台。'

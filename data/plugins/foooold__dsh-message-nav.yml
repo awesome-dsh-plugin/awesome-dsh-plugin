@@ -1,0 +1,6 @@
+url: https://github.com/foooold/dsh-message-nav
+name: foooold/dsh-message-nav
+category: ui
+description:
+  en: Adds a Codex-style message navigation rail for quickly locating earlier prompts in long DeepSeek Harness Web UI conversations.
+  zh: 为 DeepSeek Harness Web UI 添加 Codex 风格的消息导航轨道，方便在长会话中快速定位历史提问。

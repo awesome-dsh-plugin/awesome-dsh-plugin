@@ -1,0 +1,6 @@
+url: https://github.com/cerebrixos-org/tuning-engines-cli/tree/main/packages/tuningengines-dsh-plugin
+name: cerebrixos-org/tuning-engines-cli#tuningengines-dsh-plugin
+category: notify
+description:
+  en: Exports metadata-only DSH turn, model, tool, approval, retry, and error events to Tuning Engines for governed traces, policy evaluation, cost analysis, and Work Session review, with a disk-backed retry queue.
+  zh: 将不含原始内容的 DSH 回合、模型、工具、审批、重试和错误事件导出到 Tuning Engines，用于受治理的追踪、策略评估、成本分析和 Work Session 审阅，并提供磁盘持久化重试队列。

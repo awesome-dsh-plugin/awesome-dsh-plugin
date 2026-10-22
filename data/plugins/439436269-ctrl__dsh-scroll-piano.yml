@@ -1,0 +1,6 @@
+url: https://github.com/439436269-ctrl/dsh-scroll-piano
+name: 439436269-ctrl/dsh-scroll-piano
+category: fun
+description:
+  en: 'Turns the right edge of the chat scroll area into a theremin-style strip: the vertical mouse position picks the pitch (higher up, higher note), and blue ticks mark your own messages so you can click one to jump to it. Includes a draggable on/off pill and volume slider.'
+  zh: '把聊天区右边缘变成一条特雷门琴式的竖条：鼠标纵向位置决定音高；你发过的每条消息在对应位置有一根蓝杠，点一下跳到那条消息。左下角是可拖动的开关胶囊与音量滑块。'

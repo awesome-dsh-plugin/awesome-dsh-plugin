@@ -1,0 +1,7 @@
+url: https://github.com/hj9178/dsh-ottosmother
+name: hj9178/dsh-ottosmother
+category: identity
+tarball: https://github.com/hj9178/dsh-ottosmother/releases/download/v0.6.1/dsh-ottosmother-0.6.1.tgz
+description:
+  zh: '给模型一份私密黑话词表：用户写「滚木」按「没有」理解、写「棍母」按「不存在」理解；模型要表达这些含义时，自己判断是否用词表里的词把整句组织得自然通顺。只注入一个 system prompt 段落，不改写输入输出；词表按分类存在 YAML（moba/fps/comments/ai/dev/private），设置页里可开关词表、切换提醒强度、直达词表目录。'
+  en: 'Gives the model a private glossary: reads 「滚木」 as "none" and 「棍母」 as "doesn''t exist", and decides on its own whether to phrase a sentence with those words when expressing that meaning. Registers one system-prompt section and rewrites nothing; word lists ship as per-category YAML (moba/fps/comments/ai/dev/private) with a settings page to toggle files, change reminder strength and open the glossary folder.'

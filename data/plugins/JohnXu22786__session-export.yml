@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/session-export
+name: JohnXu22786/session-export
+category: dev
+description:
+  en: 'Session export and compliance archiving for DeepSeek Harness: deterministic redaction, Markdown/JSONL/PDF outputs, on-disk archive management, and a trend/audit view.'
+  zh: 'DeepSeek Harness 会话导出与合规归档：确定性脱敏、Markdown/JSONL/PDF 导出、磁盘归档管理与趋势/审计视图。'

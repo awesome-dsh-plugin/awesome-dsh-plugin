@@ -1,0 +1,6 @@
+url: https://github.com/WNLUO/dsh-mobile-plugin
+name: WNLUO/dsh-mobile-plugin
+category: remote
+description:
+  en: 'Endpoint of a companion mobile app that also runs headless, with no desktop shell or Electron required: it serves a restricted mobile API over a relay tunnel or LAN pairing, for listing, opening and driving DSH sessions, following the live device event stream, and authenticating with revocable per-device credentials.'
+  zh: '手机 App 的对端插件，自身可作无头宿主单独运行（不需要桌面外壳或 Electron）：经中转隧道或局域网配对提供受限的移动 API，用于列出、新建与操控 DSH 会话、订阅设备实时事件流，并以可吊销的设备凭据鉴权。'

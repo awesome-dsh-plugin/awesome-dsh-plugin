@@ -1,0 +1,6 @@
+url: https://github.com/sequoiayunus-hue/dsh-subagent-model-config
+name: sequoiayunus-hue/dsh-subagent-model-config
+category: model
+description:
+  en: Settings-UI editor that assigns per-teammate model and reasoning-effort rules for DSH native agent teams, resolved at spawn time by wrapping SubagentRuntime.startContinuable. No official files are modified.
+  zh: 为 DSH 原生 Team 编队队员可视化配置专属模型与推理档位，运行时包装注入，不改官方任何文件。

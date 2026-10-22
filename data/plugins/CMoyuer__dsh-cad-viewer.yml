@@ -1,0 +1,6 @@
+url: https://github.com/CMoyuer/dsh-cad-viewer
+name: CMoyuer/dsh-cad-viewer
+category: ui
+description:
+  en: Adds a 3D model library in its own conversation tab, where agents store models built from CadQuery scripts or supplied as tessellated meshes; the library previews them with three-cad-viewer, organises them into folders and exports them to 10 formats including STEP, BREP, STL and DXF.
+  zh: 在对话界面新增「3D模型」标签页作为模型库：agent 把 CadQuery 脚本或已剖分的网格存入服务端，标签页用 three-cad-viewer 预览、按文件夹整理，并可导出 STEP、BREP、STL、DXF 等 10 种格式。

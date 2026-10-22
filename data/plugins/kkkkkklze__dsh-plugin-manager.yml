@@ -1,0 +1,6 @@
+url: https://github.com/kkkkkklze/dsh-plugin-manager
+name: kkkkkklze/dsh-plugin-manager
+category: market
+description:
+  en: 'In-web plugin manager for DeepSeek Harness: categorized plugin list, preset bundles with one-click switching, import/export and failure auto-rollback, plugin market with one-click install.'
+  zh: '在 DeepSeek Harness 网页内管理插件：分类列表、预设整合包一键切换与导入导出、失败自动回退、插件市场一键安装。'

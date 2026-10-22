@@ -1,0 +1,6 @@
+url: https://github.com/melandlabs/opencontext/tree/main/plugins/dsh-opencontext
+name: melandlabs/opencontext#dsh-opencontext
+category: memory
+description:
+  en: DeepSeek Harness integration for OpenContext with durable cross-session memory, automatic prompt capture and recall, session summaries, structured insights, and document retrieval.
+  zh: 为 DeepSeek Harness 接入 OpenContext，提供跨会话持久记忆、提示词自动捕获与召回、会话摘要、结构化洞察和文档检索。

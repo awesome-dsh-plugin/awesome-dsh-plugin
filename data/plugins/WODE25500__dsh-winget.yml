@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-winget
+name: WODE25500/dsh-winget
+category: dev
+description:
+  en: 'Windows Package Manager: search, install, upgrade, uninstall, import/export and pin software through native tools.'
+  zh: 'Windows 包管理器：搜索、安装、升级、卸载、导入导出与版本固定。'

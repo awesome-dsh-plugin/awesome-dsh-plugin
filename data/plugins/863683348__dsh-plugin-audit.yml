@@ -1,0 +1,6 @@
+url: https://github.com/863683348/dsh-plugin-audit
+name: 863683348/dsh-plugin-audit
+category: market
+description:
+  en: 'Ecosystem-wide plugin health audit: syncs the dsh-plugin topic into a local scored catalog (maintenance / docs / npm + weekly downloads / ecosystem, 0-100, A-D), static security scan with high-finding grade veto, star history snapshots, web leaderboard and agent tools.'
+  zh: 插件生态体检：将 dsh-plugin 话题同步为本地评分目录（维护/文档/npm+周下载/生态四维，0-100 分 A-D 级），静态安全扫描高危一票否决，支持 star 历史快照、Web 榜单与 Agent 工具。

@@ -1,0 +1,6 @@
+url: https://github.com/Han-Yao94/dsh-session-toolkit
+name: Han-Yao94/dsh-session-toolkit
+category: session
+description:
+  en: 'Consolidated toolkit for session identity, global & workspace prompts with referenced files, session auto-resume, UAC-free web restart, and peer-session messaging.'
+  zh: '整合工具包：会话身份、全局/工作区提示词（含引用文件）、会话自动上线、免 UAC 网页重启、会话间消息。'

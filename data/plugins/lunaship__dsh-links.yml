@@ -1,0 +1,6 @@
+url: https://github.com/lunaship/dsh-links
+name: lunaship/dsh-links
+category: remote
+description:
+  en: 'Android companion bridge: QR-code LAN pairing with revocable device tokens and TLS fingerprints, a phone-connection and device-management panel, and an HTTPS access proxy serving sessions, live events and approvals to the paired native app.'
+  zh: Android 配套桥接：局域网扫码配对（可吊销的设备 Token 与 TLS 指纹）、手机连接与设备管理面板，以及向配对原生 App 提供会话、实时事件与审批的 HTTPS 接入代理。

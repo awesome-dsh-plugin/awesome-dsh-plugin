@@ -1,0 +1,7 @@
+url: https://github.com/NoProblUm/dsh-codexlike-projectless
+name: NoProblUm/dsh-codexlike-projectless
+category: session
+description:
+  en: 'Adds Codex-like projectless drafts with per-project draft switching and date-and-topic directories created on first send; supports Windows DSH Desktop 0.2.1-rc.2 without an archive patch or external installer.'
+  zh: '提供类似 Codex 的无项目草稿、各项目草稿切换及首次发送时按日期和主题创建目录的功能；支持 Windows DSH Desktop 0.2.1-rc.2，无需归档补丁或外部安装器。'
+tarball: https://github.com/NoProblUm/dsh-codexlike-projectless/releases/download/v1.0.1/dsh-codexlike-projectless-1.0.1.tgz

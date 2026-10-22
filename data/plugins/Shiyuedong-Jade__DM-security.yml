@@ -1,0 +1,6 @@
+url: https://github.com/Shiyuedong-Jade/DM-security
+name: Shiyuedong-Jade/DM-security
+category: security
+description:
+  en: Run a read-only security assessment of a Dameng DM8 database with 60 checks and produce an HTML report with GB/T 22239-2019 control mapping. Needs Java 8+ and a DmJdbcDriver jar you provide yourself.
+  zh: 只读安全评估达梦 DM8 数据库：60 项检查，附等保 2.0 控制点对照，生成 HTML 报告。需 Java 8+ 并自备达梦 DmJdbcDriver jar。

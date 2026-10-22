@@ -1,0 +1,6 @@
+url: https://github.com/shuxidemosheng/dsh-tool-todo-plus
+name: shuxidemosheng/dsh-tool-todo-plus
+category: tools
+description:
+  en: 'Drop-in enhanced fork of the official todo_write tool: priority tags on each task, full checklist rendering in the conversation, and a draggable in-session floating task panel with position memory, double-click reset and a live indicator of the action currently being executed.'
+  zh: '官方 todo_write 的增强 fork：任务项支持优先级标签、会话内完整清单渲染，并提供可拖动的会话内浮动任务面板（位置记忆 / 双击复位 / 当前动作显示）。'

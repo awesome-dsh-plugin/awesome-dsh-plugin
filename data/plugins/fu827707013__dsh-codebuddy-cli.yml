@@ -1,0 +1,6 @@
+url: https://github.com/fu827707013/dsh-codebuddy-cli
+name: fu827707013/dsh-codebuddy-cli
+category: model
+description:
+  en: Reuses the CodeBuddy CLI sign-in to bring its models into DeepSeek Harness, with a settings card showing account, token expiry, and remaining credit.
+  zh: 复用 CodeBuddy CLI 的登录态，把 CodeBuddy 包含的模型接入 DeepSeek Harness，设置卡片可查看账号、令牌有效期与剩余积分。

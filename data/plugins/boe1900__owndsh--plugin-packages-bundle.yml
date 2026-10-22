@@ -1,0 +1,7 @@
+url: https://github.com/boe1900/owndsh/tree/main/plugin/packages/bundle
+name: boe1900/owndsh#owndsh-plugin
+category: model
+description:
+  en: Early-stage plugin connecting DeepSeek Harness to a separately deployed, self-hosted OwnDsh server for team identity, model access control, quotas, and usage auditing.
+  zh: 早期开发中的团队管理插件，将 DeepSeek Harness 接入独立部署的自托管 OwnDsh 服务端，提供团队身份、模型授权、配额与用量审计。
+tarball: https://github.com/boe1900/owndsh/releases/download/v0.1.0-beta.2/owndsh-plugin-0.1.0-beta.2.tgz

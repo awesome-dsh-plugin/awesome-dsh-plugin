@@ -1,0 +1,6 @@
+url: https://github.com/badai147/dsh-ocgo-usage
+name: badai147/dsh-ocgo-usage
+category: usage
+description:
+  en: Shows OpenCode Go quota usage in the web sidebar's bottom-left corner — rolling/weekly/monthly progress with a hover card, plus a Beijing-time DeepSeek peak-hour timeline.
+  zh: 在 Web 侧边栏左下角显示 OpenCode Go 用量——滚动/本周/本月配额进度与悬停明细卡片，并附按北京时间标记的 DeepSeek 高峰时段进度条。

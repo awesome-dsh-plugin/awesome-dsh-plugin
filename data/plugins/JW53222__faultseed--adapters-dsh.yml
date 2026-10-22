@@ -1,0 +1,6 @@
+url: https://github.com/JW53222/faultseed/tree/main/adapters/dsh
+name: JW53222/faultseed#dsh
+category: security
+description:
+  en: 'Honesty guardrails on the tool pipeline: blocks a coding agent from weakening tests, swallowing errors, stubbing type checks, or deleting tests through the shell — nine deterministic hooks, each backed by a planted-failure test proving the guard can fail.'
+  zh: '工具流水线上的诚实性护栏：阻止编码 agent 弱化测试、吞掉错误、用桩替换类型检查或通过 shell 删除测试——九个确定性 hook，每个都配有植入失败的测试，证明该护栏确实会触发。'

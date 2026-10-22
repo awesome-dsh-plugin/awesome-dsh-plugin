@@ -1,0 +1,7 @@
+url: https://github.com/JayDong9130/dsh-evolution-lab
+name: JayDong9130/dsh-evolution-lab
+category: dev
+tarball: https://github.com/JayDong9130/dsh-evolution-lab/releases/download/v0.2.0/dsh-evolution-lab-0.2.0.tgz
+description:
+  en: 'Evidence-backed Skill self-evolution for DeepSeek Harness: redacted trajectory learning, quarantined proposals, arena validation, canary monitoring, automatic rollback.'
+  zh: '带证据的 Skill 自进化：脱敏轨迹学习、隔离提案、竞技场验证、金丝雀监控与自动回滚。'

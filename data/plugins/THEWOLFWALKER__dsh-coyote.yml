@@ -1,0 +1,6 @@
+url: https://github.com/THEWOLFWALKER/dsh-coyote
+name: THEWOLFWALKER/dsh-coyote
+category: fun
+description:
+  en: 'Agent- and GUI-controlled DG-LAB Coyote e-stim plugin: eight `coyote_*` tools plus a DSH web panel behind one safety envelope (soft limits, asymmetric rate limiter, session cooldown, playback caps, disconnect fail-safe); optional auto-stim layer maps agent events (tool calls, errors, turn end) to bounded pulses; official V3 socket protocol with QR pairing, programmable waveforms. Adults only.'
+  zh: Agent 与网页 GUI 双面控制的 DG-LAB 郊狼（Coyote）电击/电刺激插件：八个 `coyote_*` 工具 + DSH 网页面板，共用同一安全边界（软上限、非对称升速限流、会话冷却、播放硬上限、断连即停）；v0.2 起可选自动电击层，把 agent 事件（工具调用/报错/回合结束）映射为有界脉冲；官方 V3 socket 协议 + 二维码配对、可编程波形。仅限成年人。

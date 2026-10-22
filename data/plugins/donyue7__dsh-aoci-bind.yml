@@ -1,0 +1,6 @@
+url: https://github.com/donyue7/dsh-aoci-bind
+name: donyue7/dsh-aoci-bind
+category: tools
+description:
+  en: 'AOCI binding toolkit for DSH hosts: discover workspaces that have an AOCI index, diagnose and repair their MCP bindings, initialize unbound repos, and expose status and doctor tools.'
+  zh: 'DSH Host 侧 AOCI 接入工具：发现带 AOCI 索引的工作区、诊断与修复 MCP 绑定、初始化未接入仓库，并提供状态与体检工具。'

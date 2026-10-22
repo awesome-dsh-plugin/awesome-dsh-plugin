@@ -1,0 +1,7 @@
+url: https://github.com/aurumple/dsh-rea-toggle
+name: aurumple/dsh-rea-toggle
+category: tools
+tarball: https://github.com/aurumple/dsh-rea-toggle/releases/latest/download/dsh-rea-toggle.tgz
+description:
+  en: 'One switch that takes an MCP server''s tool schemas and its instructions block out of the model context for every agent, live and without a restart, built for the 207 tool schemas REA registers whether or not a task is reverse engineering. A pill in the composer dock, /rea on|off|status|toggle, and GET/POST /rea-toggle/state; the position is remembered across restarts and subagents are covered before their first step.'
+  zh: 一个开关，实时把某个 MCP 服务器的工具 schema 与说明块从每个 agent 的模型上下文中移除或放回，无需重启——针对 REA 在任何任务下都会注入的 207 个工具 schema 而做。输入框下方胶囊、/rea on|off|status|toggle 与 GET/POST /rea-toggle/state 三种驱动方式；位置跨重启保持，子智能体在第一步之前就被覆盖。

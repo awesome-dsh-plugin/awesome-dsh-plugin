@@ -1,0 +1,6 @@
+url: https://github.com/283Gawin/dsh-heatmap
+name: 283Gawin/dsh-heatmap
+category: usage
+description:
+  en: 'Activity heatmap in the DSH Web sidebar: GitHub-style grid of daily commits, token usage, and estimated spend, with a today stats line for all-session token totals, cache hit rate, and per-model auto-priced cost.'
+  zh: DSH Web 侧边栏活动热力图：GitHub 风格网格展示每日提交、Token 用量与估算花费，今日统计行显示全会话 Token 总量、缓存命中率与按模型自动计价的花费。

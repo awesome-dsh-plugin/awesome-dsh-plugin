@@ -1,0 +1,6 @@
+url: https://github.com/AlexPeng07/dsh-custom-plugin
+name: AlexPeng07/dsh-custom-plugin
+category: ui
+description:
+  en: Web GUI convenience suite with appearance controls, timeline navigation, project folders, prompts, conversation export, Mermaid rendering, quote reply, and DeepSeek balance and daily token usage.
+  zh: DSH Web GUI 便利套件，提供外观控制、时间线导航、项目文件夹、提示词、会话导出、Mermaid 渲染、引用回复，以及 DeepSeek 余额和每日 token 用量。

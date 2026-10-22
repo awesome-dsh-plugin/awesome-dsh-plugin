@@ -1,0 +1,6 @@
+url: https://github.com/Lzh3070/dsh-session-cost
+name: Lzh3070/dsh-session-cost
+category: usage
+description:
+  en: 'Composer cost chip: prices the current session DeepSeek API spend message-by-message with the official pricing table (incl. the 2026-08-17 peak/off-peak policy); hover for the breakdown, today (DSH) total and account balance. DeepSeek models only.'
+  zh: 输入框右侧会话成本芯片：按官方价表（含 2026-08-17 峰谷价）逐消息计价当前会话的 DeepSeek API 花费，悬停查看计价明细、今日(DSH) 消耗与账户余额；仅 DeepSeek 模型计价，其他模型不计价不显示。

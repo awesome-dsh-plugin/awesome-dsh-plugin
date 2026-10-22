@@ -1,0 +1,6 @@
+url: https://github.com/xiezouqu12/dsh-info-records
+name: xiezouqu12/dsh-info-records
+category: security
+description:
+  en: 'Encrypted local credential vault for DeepSeek Harness: sidebar record management, an info_records tool for pre-sign-in lookups, opt-in chat capture, per-record manual-only mode, and AES-256-GCM storage protected by Windows DPAPI, the macOS Keychain, or the Linux Secret Service.'
+  zh: '本机加密的 DeepSeek Harness 账密库：侧边栏管理记录，智能体登录前按站点取用；对话收录默认关闭，逐条可设仅手动；AES-256-GCM 加密，密钥由 Windows DPAPI / macOS 钥匙串 / Linux Secret Service 保护。'

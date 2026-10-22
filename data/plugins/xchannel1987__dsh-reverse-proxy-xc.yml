@@ -1,0 +1,6 @@
+url: https://github.com/xchannel1987/dsh-reverse-proxy-xc
+name: xchannel1987/dsh-reverse-proxy-xc
+category: remote
+description:
+  en: "LAN reverse proxy plugin for DeepSeek Harness - enables mobile/tablet access with full features, fixes settings panel inaccessible via reverse proxy."
+  zh: "DSH 局域网反向代理插件 - 让手机/平板访问 DSH 获得完整功能，修复反代访问时设置面板无法打开的问题。"

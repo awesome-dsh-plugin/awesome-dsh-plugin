@@ -1,0 +1,6 @@
+url: https://github.com/fengb3/dsh-session-icons
+name: fengb3/dsh-session-icons
+category: ui
+description:
+  en: 'Sidebar session-title icons: an auxiliary model call on the same route as title generation draws a 24x24 monochrome SVG metaphor shown before each session row title, with disk caching.'
+  zh: '侧边栏会话标题图标：标题生成时用同一路由的辅助模型调用画一枚 24×24 单色 SVG 隐喻图标，显示在每行标题左侧，带磁盘缓存。'

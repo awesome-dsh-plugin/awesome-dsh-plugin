@@ -1,0 +1,6 @@
+url: https://github.com/Mars-Sea/dsh-commandcode-provider
+name: Mars-Sea/dsh-commandcode-provider
+category: model
+description:
+  en: 'Unofficial Command Code LLM provider: registers a `commandcode` route with a live model catalog and reasoning-effort support.'
+  zh: 非官方 Command Code 模型接入插件：注册 `commandcode` 路由，带实时模型目录与推理强度支持。

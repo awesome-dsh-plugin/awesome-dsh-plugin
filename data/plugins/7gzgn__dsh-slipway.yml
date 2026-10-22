@@ -1,0 +1,6 @@
+url: "https://github.com/7gzgn/dsh-slipway"
+name: "dsh-slipway"
+category: tools
+description:
+  en: "Ship a local DSH plugin project to GitHub and the plugin market in one call: preflight, per-file upload with byte verification, the market registry PR, then pull every published file back and compare bytes."
+  zh: 一条命令把本地 DSH 插件工程发到 GitHub 并开市场收录 PR：逐文件上传带字节校验、市场条目 PR，最后把线上文件逐个拉回来比 sha256。

@@ -1,0 +1,7 @@
+url: https://github.com/squirrel20/dsh-cron
+name: squirrel20/dsh-cron
+category: workflow
+tarball: https://github.com/squirrel20/dsh-cron/releases/latest/download/dsh-cron.tgz
+description:
+  en: 'Host-side unattended job scheduler: runs one-shot agent tasks or shell commands on cron, interval, or one-time schedules, with persisted at-most-once dispatch state, overlap/misfire policies, and bounded run history.'
+  zh: '宿主侧无人值守定时任务：按 cron 表达式、固定间隔或一次性时点运行一次性 agent 任务或 shell 命令，调度状态持久化（至多一次语义），支持重叠/错过策略与有界运行历史。'

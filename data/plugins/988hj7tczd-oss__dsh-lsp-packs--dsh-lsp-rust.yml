@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-lsp-packs/tree/main/dsh-lsp-rust
+name: 988hj7tczd-oss/dsh-lsp-packs#dsh-lsp-rust
+category: dev
+description:
+  en: 'Rust LSP configuration plugin for DeepSeek Harness using rust-analyzer.'
+  zh: '基于 rust-analyzer 为 DeepSeek Harness 提供 Rust 代码导航和语言服务配置。'

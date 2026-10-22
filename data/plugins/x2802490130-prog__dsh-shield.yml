@@ -1,0 +1,6 @@
+url: https://github.com/x2802490130-prog/dsh-shield
+name: x2802490130-prog/dsh-shield
+category: dev
+description:
+  en: 'A hands-off safety net: directories the agent deletes go to a trash folder first and symlinks are never followed, with zero approvals.'
+  zh: 脱手模式安全网：agent 删除的目录先进回收站、链接绝不跟随，零审批。

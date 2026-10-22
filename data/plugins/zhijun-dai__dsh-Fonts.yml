@@ -1,0 +1,6 @@
+url: https://github.com/zhijun-dai/dsh-Fonts
+name: zhijun-dai/dsh-Fonts
+category: theme
+description:
+  en: 'Font system plugin: OFL webfont presets served offline from the plugin, user-imported custom woff2 fonts, and a ctx.fonts registry other plugins can extend.'
+  zh: 字体系统插件：随插件离线分发的 OFL 开源字体预设、自定义 woff2 字体导入，以及供其他插件扩展的 ctx.fonts 注册表。

@@ -1,0 +1,6 @@
+url: https://github.com/TaoruiLiu19/dsh-gsv
+name: TaoruiLiu19/dsh-gsv
+category: voice
+description:
+  en: 'Real-time local TTS for DeepSeek Harness: voice presets, auto-read, engine setup assistant, a read-aloud button, and a settings panel for the GSV-TTS-Lite engine.'
+  zh: '将本地高性能 TTS 引擎 GSV-TTS-Lite 实时接入 DeepSeek Harness：语音预设、自动朗读、引擎配置助手、朗读按钮与设置面板。'

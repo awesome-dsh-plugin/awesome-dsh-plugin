@@ -1,0 +1,6 @@
+url: https://github.com/Guard42/dsh-humanize
+name: Guard42/dsh-humanize
+category: workflow
+description:
+  en: 'Agent preset that turns multi-stage objectives into resumable flows: refereed stages, SHA-256 lock identity, an HMAC-signed terminal review gate and event-sourced run logs; ships 15 agent tools.'
+  zh: 把多阶段目标编排为可恢复 Flow 的 agent 预设：阶段带裁判、SHA-256 流锁身份、HMAC 终局评审门禁、事件溯源运行日志；附 15 个工具。

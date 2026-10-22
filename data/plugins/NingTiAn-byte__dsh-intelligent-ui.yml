@@ -1,0 +1,7 @@
+url: https://github.com/NingTiAn-byte/dsh-intelligent-ui
+name: NingTiAn-byte/dsh-intelligent-ui
+category: ui
+description:
+  en: 'Offline-replayable charts and interactive explanations in DSH rc.2 Web chat, with optional AMap itineraries, confirmed follow-ups, and HTML export.'
+  zh: '在 DSH rc.2 Web 对话中生成可离线重放的图表与交互式原理演示，支持可选高德行程、确认式追问和 HTML 导出。'
+tarball: https://github.com/NingTiAn-byte/dsh-intelligent-ui/releases/download/v1.2.1/dsh-intelligent-ui.tgz

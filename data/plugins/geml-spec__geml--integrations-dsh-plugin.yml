@@ -1,0 +1,6 @@
+url: https://github.com/geml-spec/geml/tree/main/integrations/dsh-plugin
+name: geml-spec/geml#integrations/dsh-plugin
+category: tools
+description:
+  en: 'Block-addressed document editing: an MCP server exposing geml_get / geml_set / geml_check and friends, so an agent reads or rewrites one addressed block of a Markdown or GEML document instead of the whole file. Ships the GEML authoring skill and a code-graph skill that builds and navigates a project call graph as GEML codemaps.'
+  zh: 按块寻址的文档读写：MCP server 提供 geml_get / geml_set / geml_check 等工具，Agent 只取回或改写 Markdown、GEML 文档中的某一个块，而不是整篇文件。另带 GEML 写作技能，以及把项目调用图构建为 GEML codemap 并浏览的代码图谱技能。

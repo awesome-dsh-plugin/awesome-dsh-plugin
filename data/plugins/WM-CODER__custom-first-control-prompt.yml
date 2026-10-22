@@ -1,0 +1,6 @@
+url: https://github.com/WM-CODER/custom-first-control-prompt
+name: WM-CODER/custom-first-control-prompt
+category: dev
+description:
+  en: Inject deployment-configured system-prompt sections and reference exchanges into every conversation request via stream interception, with a web settings panel.
+  zh: 通过流拦截将部署级系统提示词段落与参考对话注入每次对话请求，附带 Web 设置面板。

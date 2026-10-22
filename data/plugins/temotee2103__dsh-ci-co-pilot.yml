@@ -1,0 +1,6 @@
+url: https://github.com/temotee2103/dsh-ci-co-pilot
+name: temotee2103/dsh-ci-co-pilot
+category: git
+description:
+  en: 'GitHub CI co-pilot for DeepSeek Harness: PR review, CI failure fixing, issue triage and release notes.'
+  zh: '让 DeepSeek Harness Agent 化身 GitHub 副驾：PR 审查、CI 失败修复、Issue 分类与自动发版说明。'

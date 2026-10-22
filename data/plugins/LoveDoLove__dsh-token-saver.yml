@@ -1,0 +1,6 @@
+url: https://github.com/LoveDoLove/dsh-token-saver
+name: LoveDoLove/dsh-token-saver
+category: usage
+description:
+  en: 'DeepSeek Harness plugin that trims tool output (head/tail plus grep folding), adds optional prompt shaping (Caveman and Ponytail), instant local responses, RTK command-output compaction, context-pressure handling, optional LLM-summary compaction, stable prompt-cache layout, a Web settings UI, and persisted savings telemetry.'
+  zh: 'DeepSeek Harness 插件，可裁剪工具输出并折叠 grep 结果，提供可选的 Caveman 和 Ponytail 提示词精简、本地即时响应、RTK 命令输出压缩、上下文压力处理、可选的 LLM 摘要压缩、稳定的提示缓存布局、Web 设置界面及持久化节省统计。'

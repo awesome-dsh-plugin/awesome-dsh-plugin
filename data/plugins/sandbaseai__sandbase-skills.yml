@@ -1,0 +1,6 @@
+url: https://github.com/sandbaseai/sandbase-skills
+name: sandbaseai/sandbase-skills
+category: skill
+description:
+  en: 'Mounts 88 packaged research, social-intelligence, marketing and business Agent Skills into dsh through the filesystem Skill provider.'
+  zh: '通过文件系统 Skill provider 将 88 个研究、社交情报、营销与商业 Agent Skills 挂载到 dsh。'

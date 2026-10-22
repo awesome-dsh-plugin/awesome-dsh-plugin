@@ -1,0 +1,7 @@
+url: https://github.com/TikaFlow/dsh-model-fix
+name: TikaFlow/dsh-model-fix
+category: model
+tarball: https://github.com/TikaFlow/dsh-model-fix/releases/latest/download/dsh-model-fix.tgz
+description:
+  en: "Provides a better model experience, including but not limited to: filling model parameters in multiple ways, improving model compatibility, remembering reasoning efforts, subagents following the parent's model and reasoning effort in real time, and AI self-adjusting reasoning effort."
+  zh: "提供更好的模型使用体验，包括但不限于：多种方式填充模型参数、提升模型兼容性、记住推理级别、子智能体实时跟随模型和推理级别、AI 自主调节档位等。"

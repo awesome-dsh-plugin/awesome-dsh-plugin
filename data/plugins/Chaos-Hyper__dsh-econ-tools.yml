@@ -1,0 +1,8 @@
+# Submission entry for awesome-dsh-plugin.
+# File: data/plugins/Chaos-Hyper__dsh-econ-tools.yml
+url: https://github.com/Chaos-Hyper/dsh-econ-tools
+name: Chaos-Hyper/dsh-econ-tools
+category: tools
+description:
+  en: 'Econometrics research assistant: 6 tools covering method selection, data preparation, model specification, empirical analysis with Python/R/Stata code templates, robustness checks, and result reporting.'
+  zh: '计量经济学研究助手：6 个工具覆盖方法选择、数据预处理、模型设定、实证分析（含 Python/R/Stata 代码模板）、稳健性检验与结果报告。'

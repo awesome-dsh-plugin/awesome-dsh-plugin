@@ -1,0 +1,6 @@
+url: https://github.com/donoteatme/dsh-local-link
+name: donoteatme/dsh-local-link
+category: remote
+description:
+  en: 'Browser-first, LAN-only access to the current DeepSeek Harness Web UI with one-time QR pairing, revocable devices, event-driven diagnostics, and a slot-preserving mobile layout; no companion app, cloud relay, or remote tunnel.'
+  zh: '以浏览器为核心、仅限局域网访问当前 DeepSeek Harness Web UI，支持一次性二维码配对、设备撤销、事件驱动诊断和保留插槽的移动端布局；无需配套应用、云中继或远程隧道。'

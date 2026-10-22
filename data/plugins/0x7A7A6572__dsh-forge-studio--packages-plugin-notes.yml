@@ -1,0 +1,6 @@
+url: https://github.com/0x7A7A6572/dsh-forge-studio/tree/main/packages/plugin-notes
+name: 0x7A7A6572/dsh-forge-studio#plugin-notes
+category: ui
+description:
+  en: 'Sticky-notes board for DeepSeek Harness: a sidebar entry opens a Markdown note panel with auto-save, colors, image paste and task-list rendering.'
+  zh: 'dsh 便签插件：侧栏入口打开 Markdown 便签面板，支持自动保存、颜色标签、粘贴图片与任务清单。'

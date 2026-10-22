@@ -1,0 +1,6 @@
+url: https://github.com/lcthe/dsh-hermes-memory
+name: lcthe/dsh-hermes-memory
+category: memory
+description:
+  en: 'Scoped persistent memory for DSH: memory_save/search/replace/remove/list across global, user, project and failure scopes, DSH storage-domain persistence with secret and prompt-injection scanning, session-scope search, retention cleanup, and optional session-start injection; standing context via memory_pin/memory_pins/memory_unpin.'
+  zh: 'DSH 有界持久记忆：memory_save/search/replace/remove/list 覆盖全局、用户、项目、失败四类范围，基于 DSH storage-domain 持久化，写入前做密钥与提示注入扫描，支持会话范围检索、保留期清理与可选的会话开始注入；常驻上下文用 memory_pin/memory_pins/memory_unpin 管理。'

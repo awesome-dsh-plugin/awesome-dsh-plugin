@@ -1,0 +1,6 @@
+url: https://github.com/Blackman99/codsh/tree/main/packages/bundle
+name: Blackman99/codsh#codsh-bundle
+category: ui
+description:
+  en: 'Terminal coding agent for DeepSeek Harness with a full-screen alternate-screen UI, turn-aware session navigation, and a gated /ship workflow that takes one-line requirements through specification, TDD, and rerun acceptance checks.'
+  zh: '基于 DeepSeek Harness 的终端编码 Agent，提供全屏备用屏幕 UI、轮次感知的会话导航，以及将一句话需求经过规格、TDD 和验收复跑的分阶段 /ship 流程。'
