@@ -1,0 +1,6 @@
+url: https://github.com/datit309/dsh-live-inspector
+name: datit309/dsh-live-inspector
+category: ui
+description:
+  en: 'Real-time Git file change inspector and file tree in the DeepSeek Harness right sidebar with live agent activity tracking.'
+  zh: 'DeepSeek Harness 右侧边栏实时 Git 文件变更检查器与文件树，支持智能体活动实时追踪。'

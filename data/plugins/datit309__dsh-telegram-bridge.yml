@@ -1,0 +1,6 @@
+url: https://github.com/datit309/dsh-telegram-bridge
+name: datit309/dsh-telegram-bridge
+category: remote
+description:
+  en: 'Two-way Telegram remote cockpit for DeepSeek Harness: voice-to-text, screenshot vision, live progress tracking, git diffs, shell execution, and tool approvals.'
+  zh: 'DeepSeek Harness 双向 Telegram 远程控制台：语音转文字、截图识图、实时进度卡片、Git 差异对比、Shell 执行与工具审批。'
