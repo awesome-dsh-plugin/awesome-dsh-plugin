@@ -1,0 +1,6 @@
+url: https://github.com/zdkcomeon/dsh-mcp-link
+name: zdkcomeon/dsh-mcp-link
+category: tools
+description:
+  en: Scans MCP configurations from local AI clients and project workspaces, imports selected servers into the active DSH profile, and provides JSON import and visual add, edit and removal controls.
+  zh: 扫描本机 AI 客户端和项目工作区的 MCP 配置，将选中服务接入当前 DSH profile，并支持 JSON 导入及图形化新增、编辑和移除。
