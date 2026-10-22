@@ -1,0 +1,7 @@
+url: https://github.com/wangbobo-coder/dsh-mcp-manager
+name: wangbobo-coder/dsh-mcp-manager
+category: tools
+description:
+  en: One settings page for every MCP server on your machine. It reads the real config file of 17 other AI tools (Claude Desktop, Claude Code, Cursor, VS Code, Windsurf, OpenCode, Trae, Trae CN, Qoder, Gemini CLI, Qwen, Zed, Roo Code, Copilot CLI, Kiro, CodeBuddy, Continue) plus DeepSeek Harness itself, groups servers by the file that declares them, probes each one over JSON-RPC to see whether it starts and which tools it exposes, and gives every server a switch that mounts or unmounts it in DeepSeek Harness without editing the other tools' own files.
+  zh: 一个设置页管理本机所有 MCP 服务器。它读取另外 17 种 AI 工具的真实配置文件（Claude Desktop、Claude Code、Cursor、VS Code、Windsurf、OpenCode、Trae、Trae CN、Qoder、Gemini CLI、Qwen、Zed、Roo Code、Copilot CLI、Kiro、CodeBuddy、Continue）以及 DeepSeek Harness 自身，按声明它的文件分组展示，对每个服务器做一次真连 JSON-RPC 探活，看它能否启动、暴露了哪些工具，并给每个服务器一个开关，把它挂载进或卸载出 DeepSeek Harness —— 全程不改动其他工具自己的配置文件。
+tarball: https://github.com/wangbobo-coder/dsh-mcp-manager/releases/latest/download/dsh-mcp-manager.tgz
