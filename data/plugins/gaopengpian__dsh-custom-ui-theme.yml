@@ -1,0 +1,6 @@
+url: https://github.com/gaopengpian/dsh-custom-ui-theme
+name: gaopengpian/dsh-custom-ui-theme
+category: theme
+description:
+  en: 'Region-by-region UI customizer for DeepSeek Harness Desktop: background, border and text styles for every interface area, element picker, highest-priority overrides.'
+  zh: 'DeepSeek Harness 桌面端界面主题自定义：按界面区域配置背景、边框与文本样式，支持元素拾取器，优先级覆盖其他主题插件。'
