@@ -1,0 +1,7 @@
+url: https://github.com/seventeenlyc/dsh-rea-mcp-toggle
+name: REA MCP Toggle
+category: tools
+description:
+  en: "Enable or disable REA MCP tools in DeepSeek Harness from the Plugins page."
+  zh: "在 DeepSeek Harness 插件页面启用或关闭 REA MCP 工具。"
+tarball: https://github.com/seventeenlyc/dsh-rea-mcp-toggle/releases/download/v0.2.0/dsh-rea-mcp-toggle-0.2.0.tgz
