@@ -1,0 +1,6 @@
+url: https://github.com/sunshaobei/dsh-workflow
+name: sunshaobei/dsh-workflow
+category: workflow
+description:
+  en: Workflow engine for DeepSeek Harness rewritten from the MCode source, compiling user scripts into sandboxed step runs with a bundled compiler and engine.
+  zh: 以 MCode 源码为基准重写的 DSH 工作流插件：将用户脚本编译为沙箱化的步骤运行，内置编译器与引擎。
