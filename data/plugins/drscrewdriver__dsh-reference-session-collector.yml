@@ -1,5 +1,5 @@
 url: https://github.com/drscrewdriver/dsh-reference-session-collector
-name: drscrewdriver/dsh-reference-session-collector
+name: dsh-reference-session-collector (drsc)
 category: session
 description:
   en: 'Read-only session-log projector (DRS) for DSH: scans ~/.dsh/sessions/**, decodes zstd/tiled-frame logs with a vendored leaf decoder and rewrites per-session projections into its own SQLite (node:sqlite, segments / replaces + FTS5), exposed through a single fenced HTTP route — surface ledger, recall/compression pair accounting and Chinese-capable full-text search. Token counts share the exact DeepSeek-V4 tokenizer and formula as CCI verify, falling back to a labelled chars/4 basis when assets are absent. Never writes session files; all output lands in its own data directory. Serves three consumer plugins: context-compression-improved (surface marking + recall reconciliation), session-steward (search-corpus switch), prime-memory (historical anchor backfill). Hosts 0.1.0-rc.2 .. 0.2.1-rc.2 (17-tag exact engines.dsh enum). npm: dsh-reference-session-collector.'
