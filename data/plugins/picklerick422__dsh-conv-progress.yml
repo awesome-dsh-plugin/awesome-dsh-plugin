@@ -1,5 +1,5 @@
-url: https://github.com/picklerick422/dsh-conv-progress/tree/main/plugins/dsh-conv-progress
-name: picklerick422/dsh-conv-progress#dsh-conv-progress
+url: https://github.com/picklerick422/dsh-conv-progress
+name: picklerick422/dsh-conv-progress
 category: ui
 description:
   en: Live per-turn progress capsule with an empirical ETA table and a click-to-open turn history, docked under the composer.
