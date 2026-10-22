@@ -1,0 +1,4 @@
+url: https://github.com/matata2017/dsh-codex-hooks
+name: matata2017/dsh-codex-hooks
+category: workflow
+description: {en: "Codex-compatible lifecycle hooks for dsh. Reads hooks.json from config, plugins and projects, pins each hook's trust to a sha256 fingerprint, runs approved command and mcp_tool handlers on the matching events, and manages hooks from a Hooks settings section.", zh: "为 dsh 提供 Codex 兼容的生命周期 hooks。读取配置、插件与项目里的 hooks.json，把每个 hook 的信任绑定到 sha256 指纹，在匹配的事件上执行已批准的 command 与 mcp_tool 处理器，并在设置的 Hooks 页面统一管理。"}
