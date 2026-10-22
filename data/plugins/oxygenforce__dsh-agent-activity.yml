@@ -1,0 +1,7 @@
+url: https://github.com/oxygenforce/dsh-agent-activity
+name: oxygenforce/dsh-agent-activity
+category: ui
+description:
+  en: Live done/now/next card above the composer while the agent is still working.
+  zh: 输入框上方的「已做 / 正在做 / 接下来」实时卡片，回答还没出来时就能看到进度。
+tarball: https://github.com/oxygenforce/dsh-agent-activity/releases/download/v0.2.5/dsh-agent-activity-0.2.5.tgz
