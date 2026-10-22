@@ -8,10 +8,9 @@
  * rule set — an index is built, then validated with the same parser every
  * host uses, so a document that leaves here cannot be one DSH rejects.
  *
- * What can be listed: an entry needs an npm package, an exact version, and
- * that version's publish time. The GitHub-only half of the list cannot be
- * expressed yet — format 1 wants a commit SHA per Git version, and this
- * repository records none.
+ * npm entries use probed metadata. Git-only entries require a reviewed
+ * data/git-releases.json record with the real package name, release version,
+ * publication time and full immutable commit. Missing evidence stays omitted.
  */
 import semver from 'semver'
 import { parseMarketIndex } from '@deepseek-ai/dsh-plugin-market-index'
@@ -92,11 +91,12 @@ function localized(description) {
 /**
  * @param entries - one record per list entry (`url`, `name`, `category`, `description`).
  * @param npmMap - data/npm-map.json: url → { npm, version, publishedAt, enginesDsh }.
+ * @param gitMap - reviewed Git-only release identities, keyed by catalog URL.
  * @param locales - site/locales.mjs: category titles per language.
  * @param origin - the site the index is served from.
  * @returns the validated index plus coverage counts and per-entry refusals.
  */
-export function buildMarketIndex({ entries, npmMap, locales, origin = INDEX_ORIGIN }) {
+export function buildMarketIndex({ entries, npmMap, gitMap = {}, locales, origin = INDEX_ORIGIN }) {
   const categories = categoryDeclarations(locales)
   const spec = {
     format: 1,
@@ -113,7 +113,11 @@ export function buildMarketIndex({ entries, npmMap, locales, origin = INDEX_ORIG
   const refused = []
 
   for (const entry of entries) {
-    const record = npmMap[entry.url]
+    const git = gitMap[entry.url]
+    const npm = npmMap[entry.url]
+    const useGit = !npm?.npm && Boolean(git)
+    const record = npm?.npm ? npm : (git && { npm: git.name, version: git.version, publishedAt: git.publishedAt, enginesDsh: git.enginesDsh })
+    const repository = repositoryOf(entry.url)
     if (typeof record?.npm !== 'string' || record.npm === '') { skipped.noNpm += 1; continue }
     if (typeof record.version !== 'string' || record.version === '') { skipped.noVersion += 1; continue }
     if (!Number.isInteger(record.publishedAt)) { skipped.noPublishTime += 1; continue }
@@ -127,7 +131,7 @@ export function buildMarketIndex({ entries, npmMap, locales, origin = INDEX_ORIG
       title: entry.name,
       ...(description === undefined ? {} : { description }),
       homepage: `${origin}/p/${slugOf(entry.url)}/`,
-      repository: repositoryOf(entry.url),
+      repository,
       // Everything the format defaults is left out: `keywords: []` and
       // `engines: {}` cost bytes in every one of ~3,000 entries and say
       // nothing. The parser fills both back in.
@@ -135,7 +139,9 @@ export function buildMarketIndex({ entries, npmMap, locales, origin = INDEX_ORIG
       versions: [{
         version: record.version,
         publishTimestamp: record.publishedAt,
-        source: { type: 'npm' },
+        source: useGit
+          ? { type: 'git', url: repository.url, commit: git.commit, ...(repository.directory ? { directory: repository.directory } : {}) }
+          : { type: 'npm' },
         ...(dsh === undefined ? {} : { engines: { dsh } }),
       }],
     }
