@@ -1,0 +1,6 @@
+url: https://github.com/qian-dsh/dsh-outer-brain
+name: qian-dsh/dsh-outer-brain
+category: tools
+description:
+  en: 'A self-audit layer that gives agents a ledger, executable criteria and outside review, so "done" means a verifiable fact rather than a claim.'
+  zh: '给 agent 一个账本、可执行判据和外部审查层，让「做完了」成为可核事实，而不只是一句自述。'
