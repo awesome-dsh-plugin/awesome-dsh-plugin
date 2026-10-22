@@ -1,0 +1,5 @@
+url: https://github.com/ZhdanovDmitriy/dsh-pptx-builder
+name: ZhdanovDmitriy/dsh-pptx-builder
+category: tools
+description:
+  en: "PowerPoint deck builder for DeepSeek Harness agents with pastel palettes, nine slide templates, web images, Python charts, code cards and a Presentations mode."
