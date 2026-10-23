@@ -2,6 +2,6 @@ url: https://github.com/whh110112/human-writing-skills
 name: whh110112/human-writing-skills
 category: skill
 description:
-  en: Natural AI-assisted writing with multilingual editing, chunked long-form collaboration and continuity review. Requires Python 3.9+ on PATH.
-  zh: 让 AI 写作更自然：支持多语言润色、长文分块协作与上下文一致性审查。需要 PATH 上有 Python 3.9+。
-tarball: https://github.com/whh110112/human-writing-skills/releases/download/dsh-v0.3.0/dsh-advanced-human-writing.tgz
+  en: Multilingual writing, chunked long-form collaboration and continuity review, with on-demand DSH delegation discovery. Requires Python 3.9+ on PATH.
+  zh: 多语言润色、长文分块协作与上下文一致性审查，按需检查 DSH 智能体委派能力。需要 PATH 上有 Python 3.9+。
+tarball: https://github.com/whh110112/human-writing-skills/releases/download/dsh-v0.3.1/dsh-advanced-human-writing.tgz

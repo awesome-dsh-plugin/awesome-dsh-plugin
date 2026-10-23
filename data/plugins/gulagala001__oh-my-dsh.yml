@@ -4,4 +4,4 @@ category: workflow
 description:
   en: "Context summaries, optional memory caching, Ultra modes, CodeGraph, and bundled OpenCU computer use for DSH."
   zh: "为 DSH 提供上下文摘要、可选记忆缓存、Ultra、CodeGraph 与内置 OpenCU 电脑操作。"
-tarball: https://github.com/gulagala001/oh-my-dsh/releases/download/v0.2.1-rc.2.omd.0.18.7/trisoul_x-0.2.1-rc.2.omd.0.18.7.tgz
+tarball: https://github.com/gulagala001/oh-my-dsh/releases/download/v0.2.1-rc.2.omd.0.99.1/oh-my-dsh-0.2.1-rc.2.omd.0.99.1.tgz

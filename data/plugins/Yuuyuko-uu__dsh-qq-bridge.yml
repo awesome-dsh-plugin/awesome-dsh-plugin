@@ -1,0 +1,6 @@
+url: https://github.com/Yuuyuko-uu/dsh-qq-bridge
+name: Yuuyuko-uu/dsh-qq-bridge
+category: notify
+description:
+  en: Bridges a DSH session and QQ over NapCat HTTP, forwarding agent replies to QQ and feeding messages you send in QQ back into the session.
+  zh: 通过 NapCat HTTP 把 DSH 会话和 QQ 双向打通：AI 说完自动发到 QQ，你在 QQ 里说的话自动转进会话。

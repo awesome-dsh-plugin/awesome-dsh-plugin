@@ -1,6 +1,0 @@
-url: https://github.com/Kadima-code/dsh-subagent-fold
-name: Kadima-code/dsh-subagent-fold
-category: ui
-description:
-  en: 'Folds the built-in subagent dropdown into History / Today / Previous / Current groups by usage batch, keeping the current batch expanded; the original header is left untouched.'
-  zh: '把原生子代理下拉按使用批次折叠为 历史 / 今日 / 上次 / 本次 四组，本次始终展开；不改动原版头部。'

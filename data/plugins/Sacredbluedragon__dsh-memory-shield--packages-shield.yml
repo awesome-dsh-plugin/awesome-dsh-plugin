@@ -1,6 +1,0 @@
-url: https://github.com/Sacredbluedragon/dsh-memory-shield/tree/main/packages/shield
-name: Sacredbluedragon/dsh-memory-shield#shield
-category: memory
-description:
-  en: 'Hides other memory plugins'' context sections and tools inside a chosen DSH preset, so that session gets a clean context. Off by default; ships a read-only diagnostic tool.'
-  zh: '在指定 DSH preset 里挡掉其他记忆插件的上下文段与工具，让该会话拿到干净上下文。bundle 形态、默认关闭，带只读诊断工具。'

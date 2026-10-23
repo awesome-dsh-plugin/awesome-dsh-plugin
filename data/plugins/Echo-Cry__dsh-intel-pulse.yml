@@ -1,0 +1,7 @@
+url: https://github.com/Echo-Cry/dsh-intel-pulse
+name: Echo-Cry/dsh-intel-pulse
+category: notify
+description:
+  en: Windows only. Autonomous news briefing on user absence or continuous schedule, with native OS desktop alerts for AI completions, delivered to DSH sessions or IM bots.
+  zh: 仅 Windows。离席或持续自主资讯推送与 AI 会话完成原生桌面弹窗通知，支持投递至 DSH 会话与 IM 机器人。
+tarball: https://github.com/Echo-Cry/dsh-intel-pulse/releases/download/v0.8.7/dsh-intel-pulse-0.8.7.tgz

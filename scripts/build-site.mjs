@@ -45,6 +45,11 @@ const tarballVerdicts = fs.existsSync(TARBALLS_FILE) ? JSON.parse(fs.readFileSyn
 // parsed out of the READMEs, which carry no file path; the added-date
 // derivation below needs one to ask git when an entry first appeared.
 const entryFiles = Object.fromEntries(readEntries().map((e) => [e.url, e.file]))
+const iconMap = Object.fromEntries(
+  readEntries()
+    .filter((e) => e.icon !== undefined)
+    .map((e) => [e.url, e.icon]),
+)
 const tarballMap = Object.fromEntries(
   readEntries()
     .filter((e) => {
@@ -1159,6 +1164,9 @@ const registry = {
       }),
       install: e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit),
       added: e.added,
+      // Optional, author-declared storefront tile; omitted when absent so the
+      // payload stays lean and a consumer falls back to the owner avatar.
+      ...(iconMap[e.url] === undefined ? {} : { icon: iconMap[e.url] }),
       // Optional, author-maintained (data/screenshots.json); omitted when
       // absent so the payload stays lean. Storefronts fall back to their own
       // README extraction (dsh-market #61).

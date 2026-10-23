@@ -1,5 +1,5 @@
-url: https://github.com/wasteoneslife/dsh-skill-creator
-name: wasteoneslife/dsh-skill-creator
+url: https://github.com/wasteoneslife/scenes-skill-creator
+name: wasteoneslife/scenes-skill-creator
 category: skill
 description:
   en: "Skill-creation console for the Web UI: fetches the official creator skills, hands the requirements to the Huawei Cloud, generic, or REST API creator, then scores the generated skill against a 10-point rubric and returns the itemised deductions to the creator until it reaches 8.5/10."
