@@ -7,6 +7,7 @@ import { join } from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
 const scripts = fileURLToPath(new URL('.', import.meta.url))
+const FRESH_DATE = new Date().toISOString().slice(0, 10)
 const ROOT = 'https://github.com/Owner/repo'
 const SUB = `${ROOT}/tree/main/packages/plugin`
 const OTHER = 'https://github.com/Other/repo'
@@ -42,9 +43,9 @@ function fixture(t) {
 test('targeted npm refreshes root and subpackage versions, preserving unrelated cached rows', (t) => {
   const f = fixture(t)
   f.put('data/npm-map.json', {
-    [ROOT]: { npm: 'root-pkg', version: '1.0.0', checkedAt: '2026-10-23' },
-    [SUB]: { npm: 'sub-pkg', version: '1.0.0', checkedAt: '2026-10-23' },
-    [OTHER]: { npm: 'other-pkg', version: '9.0.0', checkedAt: '2026-10-23' },
+    [ROOT]: { npm: 'root-pkg', version: '1.0.0', checkedAt: FRESH_DATE },
+    [SUB]: { npm: 'sub-pkg', version: '1.0.0', checkedAt: FRESH_DATE },
+    [OTHER]: { npm: 'other-pkg', version: '9.0.0', checkedAt: FRESH_DATE },
     'https://github.com/Removed/repo': { npm: 'old-pkg', version: '3.0.0' },
   })
   f.put('replies.json', {
@@ -57,7 +58,7 @@ test('targeted npm refreshes root and subpackage versions, preserving unrelated 
   const map = f.get('data/npm-map.json')
   assert.equal(map[ROOT].version, '2.0.0')
   assert.equal(map[SUB].version, '2.1.0')
-  assert.deepEqual(map[OTHER], { npm: 'other-pkg', version: '9.0.0', checkedAt: '2026-10-23' })
+  assert.deepEqual(map[OTHER], { npm: 'other-pkg', version: '9.0.0', checkedAt: FRESH_DATE })
   assert.equal(map['https://github.com/Removed/repo'].version, '3.0.0')
   assert.equal(f.requests().length, 4)
 })
@@ -65,9 +66,9 @@ test('targeted npm refreshes root and subpackage versions, preserving unrelated 
 test('targeted README refreshes root and subpackage content, preserving unrelated rows', (t) => {
   const f = fixture(t)
   f.put('data/readmes.json', {
-    [ROOT]: { en: { md: 'old root' }, fetchedAt: '2026-10-23' },
-    [SUB]: { en: { md: 'old sub' }, fetchedAt: '2026-10-23' },
-    [OTHER]: { en: { md: 'other' }, fetchedAt: '2026-10-23' },
+    [ROOT]: { en: { md: 'old root' }, fetchedAt: FRESH_DATE },
+    [SUB]: { en: { md: 'old sub' }, fetchedAt: FRESH_DATE },
+    [OTHER]: { en: { md: 'other' }, fetchedAt: FRESH_DATE },
     'https://github.com/Removed/repo': { en: { md: 'removed' } },
   })
   f.put('replies.json', {
@@ -114,9 +115,9 @@ test('preflight rejects conflicting switches and missing cache before probing', 
 test('ordinary npm pass still removes unlisted rows and skips fresh published versions', (t) => {
   const f = fixture(t)
   f.put('data/npm-map.json', {
-    [ROOT]: { npm: 'root-pkg', version: '1.0.0', publishedAt: null, checkedAt: '2099-01-01' },
-    [SUB]: { npm: 'sub-pkg', version: '1.0.0', publishedAt: null, checkedAt: '2099-01-01' },
-    [OTHER]: { npm: 'other-pkg', version: '9.0.0', publishedAt: null, checkedAt: '2099-01-01' },
+    [ROOT]: { npm: 'root-pkg', version: '1.0.0', publishedAt: null, checkedAt: FRESH_DATE },
+    [SUB]: { npm: 'sub-pkg', version: '1.0.0', publishedAt: null, checkedAt: FRESH_DATE },
+    [OTHER]: { npm: 'other-pkg', version: '9.0.0', publishedAt: null, checkedAt: FRESH_DATE },
     'https://github.com/Removed/repo': { npm: 'old-pkg' },
   })
   f.put('replies.json', {})
@@ -131,9 +132,9 @@ test('ordinary npm pass still removes unlisted rows and skips fresh published ve
 test('ordinary README pass still removes unlisted rows and skips fresh content', (t) => {
   const f = fixture(t)
   f.put('data/readmes.json', {
-    [ROOT]: { en: { md: 'root' }, fetchedAt: '2099-01-01' },
-    [SUB]: { en: { md: 'sub' }, fetchedAt: '2099-01-01' },
-    [OTHER]: { en: { md: 'other' }, fetchedAt: '2099-01-01' },
+    [ROOT]: { en: { md: 'root' }, fetchedAt: FRESH_DATE },
+    [SUB]: { en: { md: 'sub' }, fetchedAt: FRESH_DATE },
+    [OTHER]: { en: { md: 'other' }, fetchedAt: FRESH_DATE },
     'https://github.com/Removed/repo': { en: { md: 'removed' } },
   })
   f.put('replies.json', {})
