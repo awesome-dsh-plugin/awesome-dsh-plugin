@@ -2,5 +2,5 @@ url: https://github.com/AidenOrz/dsh-workbuddy-connect
 name: AidenOrz/dsh-workbuddy-connect
 category: model
 description:
-  en: Brings the models of a signed-in WorkBuddy or WorkBuddy AI desktop app into DSH as two separate provider groups, reusing the app's own sign-in and credit.
-  zh: 把已登录的 WorkBuddy / WorkBuddy AI 桌面应用中的模型接入 DSH，分成两个模型分组，并沿用各自 App 的登录与积分。
+  en: Drop-in successor to the now-deleted corrinehu/dsh-workbuddy-connect, keeping its package name, config row id and provider ids so an existing install upgrades in place. Also fixes the 400/11128 channel check by neutralising the DSH identity sentences and scrubbing the product name from system messages, and reads the real Windows client and bundled CLI versions instead of a compiled constant, unlike the functy and community forks.
+  zh: 已 404 的 corrinehu/dsh-workbuddy-connect 的原地接管版，沿用原来的包名、配置行 id 与 provider id，已装用户可直接升级。同时修复 400/11128 渠道校验（归一化 DSH 身份句并清除 system 消息中的产品名），并改为读取真实的 Windows 客户端与内置 CLI 版本，不再使用编译常量，这一点与 functy、community 两个分叉不同。
