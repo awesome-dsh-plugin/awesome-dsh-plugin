@@ -1,0 +1,7 @@
+url: https://github.com/Anmulzhao/DSH-AGINT
+name: Anmulzhao/DSH-AGINT
+category: agi
+description:
+  en: 'Self-evolving agent framework on DeepSeek Harness (dsh): 40 Cordis plugins and 4 presets covering memory, reflection, gates, metrics and an auditable evolution loop.'
+  zh: '基于 DeepSeek Harness 的自进化智能体框架：40 个 Cordis 插件、4 套 preset，含记忆、反思、门禁、度量与可审计的进化闭环。'
+icon: https://raw.githubusercontent.com/Anmulzhao/DSH-AGINT/main/docs/assets/brand/png/agint-icon-256.png
