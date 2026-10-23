@@ -1,0 +1,7 @@
+url: https://github.com/ntesicn/dsh-screenshot-xn
+name: ntesicn/dsh-screenshot-xn
+category: vision
+description:
+  en: 'Full-screen screenshot panel for the DSH composer: marquee selection with rectangle, ellipse, arrow, pen, mosaic and text annotation, then insert into the conversation, copy or save. The selected region can also be recognized offline — PP-OCRv6 through onnxruntime-node, falling back to the built-in Windows OCR engine — and translated into nine languages with the model already configured in DSH. On Windows the marquee covers the whole screen including the taskbar and hides the DSH window first, so the capture is of the real desktop. The panel runs in an Edge or Chrome kiosk window, and falls back to an in-DSH capture flow when no browser can be launched. Note that DSH Desktop denies ordinary browser access by default, so the full-screen panel also needs "Allow opening this Profile in a browser" (compatibility mode) enabled in the profile settings; without it every capture goes through the in-DSH fallback.'
+  zh: 'DSH 输入框旁的整屏截图面板：框选后可标注矩形、椭圆、箭头、画笔、马赛克与文字，再插入对话、复制或另存为；框选区域可以用 PP-OCRv6（onnxruntime-node，模型未就绪时回落 Windows 自带 OCR 引擎）离线识别成文字，再用 DSH 里已配置好的模型翻译成九种语言。Windows 下框选覆盖含任务栏的整个屏幕，截图前会先隐藏 DSH 窗口，截到的是真实桌面；面板由 Edge 或 Chrome 的 kiosk 窗口承载，找不到可用浏览器时回退到 DSH 内截图。注意 DSH Desktop 默认不放行普通浏览器的访问，所以整屏面板还需要在 profile 设置里打开「允许在浏览器中打开」（兼容模式）；没打开时每次截图都走 DSH 内回退流程。'
+tarball: https://github.com/ntesicn/dsh-screenshot-xn/releases/latest/download/dsh-screenshot-xn.tgz
