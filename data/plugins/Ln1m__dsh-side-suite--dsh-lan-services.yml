@@ -1,0 +1,6 @@
+url: https://github.com/Ln1m/dsh-side-suite/tree/main/dsh-lan-services
+name: Ln1m/dsh-side-suite#dsh-lan-services
+category: remote
+description:
+  en: 'Probes ports 3090-3099, lists titles and LAN URLs, and starts or stops each local service.'
+  zh: '探测 3090~3099 端口的本地服务，列出标题与局域网网址，一键启停。'
