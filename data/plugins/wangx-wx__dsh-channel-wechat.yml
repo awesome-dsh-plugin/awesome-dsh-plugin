@@ -1,0 +1,6 @@
+url: https://github.com/wangx-wx/dsh-channel-wechat
+name: wangx-wx/dsh-channel-wechat
+category: remote
+description:
+  en: 'WeChat (Tencent iLink / ClawBot) channel for DeepSeek Harness: QR-code login, two-way text, image and file messaging, slash commands in WeChat including /cwd and /skills, approval and question cards answered from the chat, and reply sending that splits over-long answers and backs off on rate limits instead of dropping them.'
+  zh: '把微信（腾讯 iLink / ClawBot）接入 DeepSeek Harness 的通道插件：扫码登录，双向收发文本、图片与文件，微信内可用 /cwd、/skills 等命令，审批卡与提问卡在聊天里回答；回复侧会切分超长正文、对限流退避重试，而不是直接丢弃。'
