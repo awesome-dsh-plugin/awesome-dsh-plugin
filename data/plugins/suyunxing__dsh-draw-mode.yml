@@ -1,0 +1,7 @@
+url: https://github.com/suyunxing/dsh-draw-mode
+name: suyunxing/dsh-draw-mode
+category: tools
+description:
+  en: "Connects a local ComfyUI server to the agent through five draw_* tools (status, workflows, models, generate, reverse), a bundled workflow library for Anima, Krea 2 and Qwen-Image 2.1, LoRA injection, optional headless auto-start with idle shutdown, and a sidebar panel reporting the bridge state."
+  zh: "把本机 ComfyUI 接给 agent：五个 draw_* 工具（状态、工作流、模型、生图、反推）、Anima / Krea 2 / Qwen-Image 2.1 三族工作流库、LoRA 注入、可选无头自动启停，以及显示桥接状态的侧栏面板。"
+icon: https://raw.githubusercontent.com/suyunxing/dsh-draw-mode/main/icon-180.png
