@@ -1,0 +1,7 @@
+url: https://github.com/hulibuld/dsh-refresh-restart
+name: hulibuld/dsh-refresh-restart
+category: ui
+tarball: https://github.com/hulibuld/dsh-refresh-restart/releases/download/v0.2.0/dsh-refresh-restart-0.2.0.tgz
+description:
+  zh: "在 DSH 桌面版界面左上角「收起侧边栏」按钮旁加两个按钮。刷新只重载界面层，宿主里正在生成的回合不中断；重启会在二次确认后退出整个应用并自动重新打开，会话与工作区都在。重启是 POST，必须带宿主每次启动随机生成的一次性 token，只有回环地址伪造不成；插件不联网、不读会话内容、零运行时依赖。"
+  en: "Adds two buttons beside the sidebar toggle at the top-left of the DSH desktop UI. Reload refreshes only the UI layer while the turn already running keeps generating; restart confirms once, quits the whole app and reopens it with sessions and workspaces intact. Restart is a POST that must carry a per-boot random action token, so a loopback forger cannot trigger it. The plugin makes no network calls, reads no session content and has zero runtime dependencies."
