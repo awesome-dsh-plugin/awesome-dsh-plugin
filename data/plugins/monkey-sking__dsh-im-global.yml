@@ -1,0 +1,6 @@
+url: https://github.com/monkey-sking/dsh-im-global
+name: monkey-sking/dsh-im-global
+category: notify
+description:
+  en: Telegram, Discord, Slack, Mattermost, Zulip and Matrix channels in one plugin, with per-conversation sessions that survive restarts.
+  zh: 一个插件接入 Telegram、Discord、Slack、Mattermost、Zulip 与 Matrix，按对话隔离会话，重启后仍能续上。
