@@ -109,7 +109,35 @@ test('preflight rejects conflicting switches and missing cache before probing', 
   assert.notEqual(f.fail('check-probe-target.mjs', {}, ['--require-cache']).status, 0)
   f.put('data/npm-map.json', {})
   f.put('data/readmes.json', {})
+  assert.notEqual(f.fail('check-probe-target.mjs', {}, ['--require-cache']).status, 0)
+  f.put('data/npm-map.json', { [ROOT]: { npm: 'root-pkg' }, [SUB]: { npm: 'sub-pkg' } })
+  f.put('data/readmes.json', { [ROOT]: { en: { md: 'root' } }, [SUB]: { en: { md: 'sub' } } })
+  assert.notEqual(f.fail('check-probe-target.mjs', {}, ['--require-cache']).status, 0,
+    'a target-only cache would drop all unrelated data from publication')
+  f.put('data/npm-map.json', { [OTHER]: { npm: null, checkedAt: FRESH_DATE } })
+  f.put('data/readmes.json', { [OTHER]: { en: { md: 'other' }, fetchedAt: FRESH_DATE } })
   assert.equal(f.fail('check-probe-target.mjs', {}, ['--require-cache']).status, 0)
+  writeFileSync(join(f.dir, 'data/readmes.json'), '{')
+  assert.notEqual(f.fail('check-probe-target.mjs', {}, ['--require-cache']).status, 0)
+})
+
+test('preflight requires restored coverage while allowing sparse README caches', (t) => {
+  const f = fixture(t)
+  const otherUrls = Array.from({ length: 4 }, (_, i) => `https://github.com/Other/repo-${i}`)
+  writeFileSync(join(f.dir, 'README.md'), [ROOT, SUB, ...otherUrls]
+    .map((url) => `- [plugin](${url}) - Description.`).join('\n') + '\n')
+  f.put('data/npm-map.json', Object.fromEntries(otherUrls.map((url) => [url, { npm: null }])))
+  f.put('data/readmes.json', { [otherUrls[0]]: { en: { md: 'one' } } })
+  assert.notEqual(f.fail('check-probe-target.mjs', {}, ['--require-cache']).status, 0)
+  f.put('data/readmes.json', Object.fromEntries(otherUrls.slice(0, 2).map((url) => [url, { en: { md: 'content' } }])))
+  assert.equal(f.fail('check-probe-target.mjs', {}, ['--require-cache']).status, 0)
+  f.put('data/npm-map.json', Object.fromEntries(otherUrls.slice(0, 2).map((url) => [url, { npm: null }])))
+  assert.notEqual(f.fail('check-probe-target.mjs', {}, ['--require-cache']).status, 0)
+  f.put('data/npm-map.json', Object.fromEntries(otherUrls.map((url) => [url, { npm: null }])))
+  f.put('data/readmes.json', Object.fromEntries(otherUrls.map((url) => [url, { en: { md: '' } }])))
+  assert.notEqual(f.fail('check-probe-target.mjs', {}, ['--require-cache']).status, 0)
+  f.put('data/npm-map.json', ['not a cache map'])
+  assert.notEqual(f.fail('check-probe-target.mjs', {}, ['--require-cache']).status, 0)
 })
 
 test('ordinary npm pass still removes unlisted rows and skips fresh published versions', (t) => {
