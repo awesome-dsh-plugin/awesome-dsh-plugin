@@ -2,5 +2,5 @@ url: https://github.com/guhanfei-ai/dsh-model-http-proxy
 name: guhanfei-ai/dsh-model-http-proxy
 category: model
 description:
-  en: 'Wraps globalThis.fetch to route model-API requests through an HTTP/SOCKS proxy — auto-detected model gateways (official DeepSeek, DEEPSEEK_BASE_URL, llm-pi-ai providers) or explicit include/exclude host lists — while every other request stays direct; settings take effect on the next request without a restart.'
-  zh: '把 globalThis.fetch 包一层：模型 API 请求走 HTTP/SOCKS 代理（自动识别模型网关，或按域名名单精确控制），其余请求一律直连；设置下一次请求即生效，无需重启。'
+  en: 'Wraps globalThis.fetch to route chosen domains through one or more named HTTP/SOCKS proxies (exact host or *.suffix rules, per-card enable), with global direct rules that override every proxy; unmatched requests keep the host default network, and saved settings apply on the next request without a restart.'
+  zh: '把 globalThis.fetch 包一层：选中的域名走一个或多个命名 HTTP/SOCKS 代理（精确域名或 *.后缀 规则、按卡启停），全局直连规则优先于所有代理；未命中的请求照旧走本机默认网络，设置保存后下一次请求即生效，无需重启。'
