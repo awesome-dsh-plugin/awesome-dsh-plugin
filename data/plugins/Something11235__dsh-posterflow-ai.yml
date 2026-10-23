@@ -1,6 +1,0 @@
-url: https://github.com/Something11235/dsh-posterflow-ai
-name: Something11235/dsh-posterflow-ai
-category: ui
-description:
-  en: Adds a sidebar entry that plays a full-window transition clip and then opens the PosterFlow site in the browser.
-  zh: 在侧栏最后一行加入口，点击后播放铺满整窗的过场动画，然后跳转到 PosterFlow 网站。
