@@ -1,0 +1,7 @@
+url: https://github.com/Autumn984/dsh-remote
+name: Autumn984/dsh-remote
+category: remote
+description:
+  en: 'Control DeepSeek Harness from a phone via QR code: read chats, send messages, upload images, over LAN, IPv6, or a Cloudflare tunnel.'
+  zh: 扫码即可用手机远程控制 DeepSeek Harness：查看会话、发送消息、上传图片，支持局域网、IPv6 与 Cloudflare 隧道。
+tarball: https://github.com/Autumn984/dsh-remote/releases/latest/download/dsh-remote-1.2.0.tgz
