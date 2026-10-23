@@ -2,6 +2,6 @@ url: https://github.com/kx121/dsh-github-digest
 name: kx121/dsh-github-digest
 category: workflow
 description:
-  en: 'A timer wakes a DSH session to look over the GitHub repos and topics you follow, say which changes are actually worth your time, and write a dated report while keeping a table of what it already saw. Read-only.'
-  zh: 到点把会话叫醒，去翻你关注的 GitHub 仓库和主题，挑出真值得跟的变化，写一份当天第几轮的日报，顺手记下看过什么。只读，不写 GitHub。
+  en: 'A timer wakes a DSH session to read the GitHub repos and topics you follow, decide which changes are worth your time, and write a dated report while keeping a table of what it already saw. A sidebar panel keeps the run history and the GitHub trending list. Read-only.'
+  zh: 到点把会话叫醒，翻你关注的 GitHub 仓库和主题，判断哪些变化值得跟，写成一份日报，顺手记下看过什么；侧边栏能翻历史、看 GitHub 热门榜单。只读，不写 GitHub。
 tarball: https://github.com/kx121/dsh-github-digest/releases/download/v0.2.2/dsh-github-digest-0.2.2.tgz
