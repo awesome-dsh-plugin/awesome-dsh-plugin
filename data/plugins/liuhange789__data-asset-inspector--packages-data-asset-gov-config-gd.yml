@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/gov-config-gd
+name: liuhange789/data-asset-inspector#gov-config-gd
+category: tools
+description:
+  zh: "广东省政务服务数据资产登记配置包，内嵌 GB/T 47949-2026 等多项国家标准政策依据与核查密钥，助力省级登记合规。"
+  en: "Guangdong government service config pack embedding GB/T 47949-2026 and related national policy basis for registration compliance."

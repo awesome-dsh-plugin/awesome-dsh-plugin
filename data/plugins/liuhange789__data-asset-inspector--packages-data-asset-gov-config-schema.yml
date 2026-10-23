@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/gov-config-schema
+name: liuhange789/data-asset-inspector#gov-config-schema
+category: tools
+description:
+  zh: "数据资产登记配置 Schema 校验包，提供各省级配置包的 JSON Schema 结构化校验，保证登记数据符合国家标准字段约束。"
+  en: "JSON Schema validation pack for registration configs, enforcing national-standard field constraints across provincial config packs."
