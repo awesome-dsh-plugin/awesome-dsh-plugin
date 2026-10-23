@@ -1,0 +1,6 @@
+url: https://github.com/bauerelizabeth07139/opencode-tokenrhythm-image-mcp
+name: bauerelizabeth07139/opencode-tokenrhythm-image-mcp
+category: tools
+description:
+  en: 'Image generation through TokenRhythm: mounts a zero-dependency stdio MCP server as mcp__tokenrhythm_image__generate_image, producing images with qwen-image-2.0 or wan2.7-image and saving them to a directory you choose.'
+  zh: '用 TokenRhythm 生成图片:把零第三方依赖的 stdio MCP 服务器挂成 mcp__tokenrhythm_image__generate_image,用 qwen-image-2.0 或 wan2.7-image 生成并存到你指定的目录。'
