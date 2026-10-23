@@ -1,0 +1,6 @@
+url: https://github.com/1010231693/dsh-first-prompt-bar
+name: 1010231693/dsh-first-prompt-bar
+category: session
+description:
+  en: 'Pins the first prompt you sent in the current session in a scroll-proof bar above the conversation, with one-click copy and a collapsible panel listing every prompt you sent.'
+  zh: '把你在每个会话发的第一条提示词常驻显示、一键复制，并可展开面板查看本会话发过的全部提示词。'
