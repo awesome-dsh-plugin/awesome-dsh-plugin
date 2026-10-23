@@ -1,0 +1,7 @@
+url: https://github.com/nuolingmo/dsh-market-notes
+name: nuolingmo/dsh-market-notes
+category: market
+description:
+  en: Writes short plain-Chinese notes for installed dshmarket plugins that have none and shows them on the market cards; existing notes are never touched, and dshmarket is required.
+  zh: 给 dshmarket 里还没有备注的插件自动写一句中文说明，显示在市场卡片上；已有备注不会动，使用时需要先装好 dshmarket。
+tarball: https://github.com/nuolingmo/dsh-market-notes/releases/download/v1.0.1/dsh-market-notes-1.0.1.tgz
