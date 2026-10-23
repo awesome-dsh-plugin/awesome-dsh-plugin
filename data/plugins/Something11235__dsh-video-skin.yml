@@ -1,0 +1,6 @@
+url: https://github.com/Something11235/dsh-video-skin
+name: Something11235/dsh-video-skin
+category: theme
+description:
+  en: Uses a looping silent clip as the chat background with adjustable opacity, and plays a startup animation with sound.
+  zh: 把一段循环短片铺成聊天背景（可调透明度），启动时再播放一段有声片头动画。
