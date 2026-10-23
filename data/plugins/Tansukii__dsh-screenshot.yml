@@ -1,6 +1,7 @@
 url: https://github.com/Tansukii/dsh-screenshot
 name: Tansukii/dsh-screenshot
 category: ui
+tarball: https://github.com/Tansukii/dsh-screenshot/releases/download/v1.0.5/dsh-screenshot-1.0.5.tgz
 description:
   en: Region screenshot tool with annotations, a magnifier colour picker and clipboard output, following the DSH UI language.
   zh: 区域截图工具，支持标注、放大器取色与剪贴板输出，并跟随 DSH 界面语言。
