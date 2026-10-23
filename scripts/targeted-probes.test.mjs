@@ -29,11 +29,15 @@ function fixture(t) {
         json: async () => response.body, text: async () => response.body }
     }
   `)
+  // A manual workflow exports these switches to every step. The synthetic
+  // target should see only switches a test explicitly supplies.
+  const childEnv = (env) => ({ ...process.env, GITHUB_TOKEN: 'test-token', PROBE_TARGET_REPO: 'Owner/repo',
+    TARGET_PROBE_ALL: '', TARGET_SKIP_PROBES: '', PROBE_ALL: '', ...env })
   const run = (script, env = {}) => execFileSync(process.execPath, ['--import', pathToFileURL(join(dir, 'fetch-stub.mjs')).href, join(scripts, script)], {
-    cwd: dir, encoding: 'utf8', env: { ...process.env, GITHUB_TOKEN: 'test-token', PROBE_TARGET_REPO: 'Owner/repo', ...env },
+    cwd: dir, encoding: 'utf8', env: childEnv(env),
   })
   const fail = (script, env = {}, args = []) => spawnSync(process.execPath, [join(scripts, script), ...args], {
-    cwd: dir, encoding: 'utf8', env: { ...process.env, GITHUB_TOKEN: 'test-token', PROBE_TARGET_REPO: 'Owner/repo', ...env },
+    cwd: dir, encoding: 'utf8', env: childEnv(env),
   })
   const requests = () => readFileSync(join(dir, 'requests.jsonl'), 'utf8').trim().split('\n').filter(Boolean).map(JSON.parse)
   return { dir, run, fail, requests, put: (name, data) => writeFileSync(join(dir, name), JSON.stringify(data)),
