@@ -2,6 +2,6 @@ url: https://github.com/gulagala001/oh-my-dsh
 name: gulagala001/oh-my-dsh
 category: workflow
 description:
-  en: "Context summaries, optional memory caching, Ultra modes, CodeGraph, and bundled OpenCU computer use for DSH."
-  zh: "为 DSH 提供上下文摘要、可选记忆缓存、Ultra、CodeGraph 与内置 OpenCU 电脑操作。"
-tarball: https://github.com/gulagala001/oh-my-dsh/releases/download/v0.2.1-rc.2.omd.0.99.3/oh-my-dsh-0.2.1-rc.2.omd.0.99.3.tgz
+  en: "Long-context preparation, Dream memory, task verification, workflows and computer interaction for DSH."
+  zh: "长上下文预处理、Dream 记忆、任务验证、工作流与电脑操作。"
+tarball: https://github.com/gulagala001/oh-my-dsh/releases/download/v0.2.1-rc.2.omd.0.100.0/oh-my-dsh-0.2.1-rc.2.omd.0.100.0.tgz
