@@ -2,5 +2,5 @@ url: https://github.com/jcy0chenyuan0/dsh-debate-simulator
 name: jcy0chenyuan0/dsh-debate-simulator
 category: fun
 description:
-  en: Multi-agent Chinese debate simulator with eight debaters, live two-column discussion and draft notes, judges and scoreboard, single-side clocks, per-round ZIP archives, a training side that iterates until it leads, and a Word prep package.
-  zh: 多智能体中文辩论模拟：8 名辩手、实时双栏讨论与草稿纸、评委计分、单边计时、每轮 ZIP 归档、训练方迭代加赛与 Word 备赛包。
+  en: Multi-agent Chinese debate simulator with eight debaters, live two-column discussion and draft notes, judges and scoreboard, single-side clocks, per-round ZIP archives, a training side with a configurable end condition (win-rate threshold or fixed rounds), and a Word prep package.
+  zh: 多智能体中文辩论模拟：8 名辩手、实时双栏讨论与草稿纸、评委计分、单边计时、每轮 ZIP 归档、训练方可选胜率阈值或固定轮次收官，并生成 Word 备赛包。
