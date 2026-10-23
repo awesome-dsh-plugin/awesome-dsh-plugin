@@ -1,0 +1,6 @@
+url: https://github.com/GRmaid/dsh-LimBusCompany-dancinglyrics-toast
+name: GRmaid/dsh-LimBusCompany-dancinglyrics-toast
+category: notify
+description:
+  en: 'Limbus Company desktop-lyrics style toasts for session events: approval requests, turn start and turn end appear as per-character animated text above every window on Windows — ripple/drop entry and exit, jitter or wave motion, per-event glow colors, random left/right screen-side placement, {tool}/{outcome}/{title} message templates, all editable live from a settings page in the DSH GUI; the transparent companion overlay is auto-launched by the plugin host and respawned when it disappears.'
+  zh: '会话事件（权限请求、回合开始/结束）以 Limbus Company 桌面歌词风格的逐字动画浮在所有窗口之上：波纹/跌落入退场、抖动或波动律动、分事件光晕配色、屏幕两侧随机落位、{tool}/{outcome}/{title} 文案模板，全部参数在 DSH 设置页实时编辑；透明悬浮伴侣窗由宿主自动拉起、消失即守护重生。'
