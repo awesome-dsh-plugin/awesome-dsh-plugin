@@ -1,0 +1,6 @@
+url: https://github.com/2384418321/dsh-integration-settings
+name: 2384418321/dsh-integration-settings
+category: model
+description:
+  en: "DSH settings pages for MCP servers and thinking-level unlock. Detects which thinking levels and models a gateway really supports, previews the diff before writing, then applies levels and the model list in one atomic sync; MCP servers can be added by pasting an mcpServers JSON block after a preview."
+  zh: "DSH 设置页：MCP 服务器管理与思考档位解锁。自动识别网关真正支持的思考档位与可用模型，先预览差异再写入，思考档位与模型清单一次原子同步、同批生效；MCP 服务器支持粘贴 mcpServers JSON 先预览再新增。"
