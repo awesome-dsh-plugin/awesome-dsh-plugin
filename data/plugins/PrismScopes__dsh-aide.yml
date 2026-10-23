@@ -1,0 +1,6 @@
+url: https://github.com/PrismScopes/dsh-aide
+name: PrismScopes/dsh-aide
+category: ui
+description:
+  en: 'VS Code-style local IDE for DeepSeek Harness: Monaco editor, explorer, search, Git, terminal, and language services.'
+  zh: '在 DeepSeek Harness 中提供 VS Code 风格的本地 IDE：Monaco 编辑器、资源管理器、搜索、Git、终端与语言服务。'
