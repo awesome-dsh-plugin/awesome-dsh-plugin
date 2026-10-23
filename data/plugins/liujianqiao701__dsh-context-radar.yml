@@ -1,0 +1,6 @@
+url: https://github.com/liujianqiao701/dsh-context-radar
+name: liujianqiao701/dsh-context-radar
+category: usage
+description:
+  en: Breaks down exactly what is filling the context window — per instruction file, per skill and per tool result — with a bloat verdict and actionable suggestions.
+  zh: 拆出上下文里到底谁在吃 token —— 逐文件、逐 skill、逐条工具结果列出占比，并给出膨胀判定与可执行建议。
