@@ -1,0 +1,6 @@
+url: https://github.com/sunaono1/dsh-plugin-dual-brain
+name: sunaono1/dsh-plugin-dual-brain
+category: workflow
+description:
+  en: "Dual-brain agent presets for DSH: one model plans the framework and delegates execution to a subagent pinned to a second model. Ships brain-ds (DeepSeek-V4.1-Flash plans, MiMo-V2.6-Flash executes) and brain-mimo (the reverse), switchable per session."
+  zh: "双脑协作 agent 预设：主脑先出框架，再把执行步骤委派给锁定另一模型的子代理。内置 brain-ds（DeepSeek-V4.1-Flash 规划、MiMo-V2.6-Flash 执行）与 brain-mimo（反向），按会话切换。"
