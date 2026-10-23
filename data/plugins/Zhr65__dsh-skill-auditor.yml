@@ -1,0 +1,7 @@
+
+url: https://github.com/Zhr65/dsh-skill-auditor
+name: Zhr65/dsh-skill-auditor
+category: dev
+description:
+  en: 'Audits the skills and plugins you already installed: routes a task description to the tool it needs, flags version drift against the npm registry and runtime faults from host logs, and reports which of a plugin''s tools you never call. Registers 9 tools: can, find, status, recommend, check, scan, probe, run and suggest. Runs on Python 3.8+ with no third-party dependencies.'
+  zh: '审计你已装的 skill 与插件：按任务描述路由到该调的工具，对比 npm registry 发现版本落后、读宿主日志发现运行时故障，并报告插件的哪些工具你从没调用过。注册 9 个工具：can、find、status、recommend、check、scan、probe、run、suggest。基于 Python 3.8+，无第三方依赖。'
