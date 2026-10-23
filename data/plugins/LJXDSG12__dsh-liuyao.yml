@@ -1,0 +1,7 @@
+url: https://github.com/LJXDSG12/dsh-liuyao
+name: LJXDSG12/dsh-liuyao
+category: fun
+tarball: https://github.com/LJXDSG12/dsh-liuyao/releases/download/v0.2.0/dsh-liuyao-0.2.0.tgz
+description:
+  en: Six-yao (I Ching) divination for DeepSeek Harness — xiantian bagua backdrop, a Zhouyi opening verse, manual line entry or a simulated three-coin toss, najia charting (six relatives, six gods, void branches, hidden spirits, nayin, seasonal strength, transforming lines), an AI interpretation that cites its classical source for every statement, and a one-hexagram-one-question follow-up dialog. Zero npm dependencies; every request goes to the local DSH host, with no third-party network access.
+  zh: DeepSeek Harness 的六爻算卦插件——先天八卦盘背景、周易开场辞、手工输入爻象或模拟三枚铜钱摇卦、纳甲排盘（六亲、六神、旬空、伏神、纳音、旺衰、动变），断卦由模型逐条注明典籍出处，并可对同一卦追问（一卦一断）。零 npm 依赖；所有请求都发往本机 DSH 宿主，不访问第三方网络。
