@@ -1,0 +1,7 @@
+url: https://github.com/suyunxing/dsh-compact-sidebar
+name: suyunxing/dsh-compact-sidebar
+category: ui
+description:
+  en: "Draws the sidebar navigation as a compact two-column grid on narrow or short viewports so the workspace and session history keep their height, and repairs dsh-resource:// records whose protocol the browser URL parser reports as empty."
+  zh: "在窄屏或矮窗口下把侧栏导航压成紧凑双列网格，给工作区与会话历史留出高度；并修复浏览器把 dsh-resource:// 记录协议判空导致的资源不可用。"
+icon: https://raw.githubusercontent.com/suyunxing/dsh-compact-sidebar/main/icon-180.png
