@@ -1,0 +1,6 @@
+url: https://github.com/iStarryDust/dsh-assistant-profile
+name: iStarryDust/dsh-assistant-profile
+category: identity
+description:
+  en: 'Assistant profile: gives DSH one global persona (name, style, language, persona prompt) that every new session carries at the front of its system prompt, and shows the assistant name above the new-chat row.'
+  zh: '助理档案：给 DSH 一份全局人格（名称、风格、语言、人格提示词），每个新会话的系统提示都带着它；侧栏「新会话」上方显示助理名。'
