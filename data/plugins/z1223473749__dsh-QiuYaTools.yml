@@ -1,0 +1,7 @@
+url: https://github.com/z1223473749/dsh-QiuYaTools
+name: z1223473749/dsh-QiuYaTools
+category: ui
+description:
+  en: Adds TXT paste attachments, macOS session windows, batch archiving, plan comments, menu shortcuts, next-message suggestions and an optional illustrated Q theme. Suggestions use the current model with extra usage.
+  zh: 长文本附件、会话分窗、批量归档、计划批注、菜单增强和提示词建议，可单独开关；另有可选手绘 Q 主题。提示词建议使用当前会话模型，会产生少量额外用量。
+tarball: https://github.com/z1223473749/dsh-QiuYaTools/releases/latest/download/dsh-qiuya-tools.tgz
