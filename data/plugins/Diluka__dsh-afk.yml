@@ -1,0 +1,6 @@
+url: https://github.com/Diluka/dsh-afk
+name: Diluka/dsh-afk
+category: session
+description:
+  en: 'AFK controls for ask_user_question: profile-wide or per-session settings, configurable automatic replies or blocking new calls, and session-log question history with read tracking; does not approve permissions or plans.'
+  zh: '面向 ask_user_question 的 AFK 离开模式：当前 profile 全局或会话级设置，自定义自动应答或禁用新提问调用，基于会话日志的提问记录与已读状态；不批准权限或计划。'
