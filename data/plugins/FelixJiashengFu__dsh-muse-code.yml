@@ -1,0 +1,6 @@
+url: https://github.com/FelixJiashengFu/dsh-muse-code
+name: FelixJiashengFu/dsh-muse-code
+category: agi
+description:
+  en: 'Meta''s Muse Code CLI inside DSH: a composer switch starts muse serve, a right-sidebar panel and five chat tools (muse_open, muse_prompt, muse_read, muse_status, muse_interrupt) share one Muse session, approvals are decided only in the panel, and a local spend guard hard-stops at $10 by default.'
+  zh: 在 DSH 里使用 Meta 的 Muse Code CLI：输入框开关启动 muse serve，右侧边栏面板与五个聊天工具（muse_open、muse_prompt、muse_read、muse_status、muse_interrupt）共享同一个 Muse 会话，审批只能在面板里决定，本地花费护栏默认到 $10 硬停止。
