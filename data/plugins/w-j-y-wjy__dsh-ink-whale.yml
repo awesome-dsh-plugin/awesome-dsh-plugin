@@ -1,0 +1,6 @@
+url: https://github.com/w-j-y-wjy/dsh-ink-whale
+name: w-j-y-wjy/dsh-ink-whale
+category: ui
+description:
+  en: 'Handwritten ink splash screen on startup: writes your text stroke by stroke in one of 8 embedded pen fonts, settles on a whale lockup with a caption, then hands off to the main UI. Font, text and light/dark theme are configured in Settings.'
+  zh: '启动时的手写墨迹开屏：用 8 套内嵌手写体按真实笔顺逐笔写出你的文字，收在鲸鱼锁标与副标题上，再交接给主界面；字体、文字与深浅色都在设置里配置。'
