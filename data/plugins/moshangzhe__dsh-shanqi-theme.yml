@@ -2,6 +2,6 @@ url: https://github.com/moshangzhe/dsh-shanqi-theme
 name: moshangzhe/dsh-shanqi-theme
 category: theme
 description:
-  en: Hand-drawn mountain-lake pastoral theme with continuous local-time day/night scenes and a farmer who works while the displayed conversation is running.
-  zh: 手绘山湖田园主题：按本地时间连续呈现晨昏昼夜，并让农人随当前展示对话的任务运行状态进出田间。
+  en: Hand-drawn mountain-lake pastoral theme with continuous local-time day/night scenes and a farmer who works while the displayed conversation is running. Architecture reference: xikan0/dsh-outerwilds-theme.
+  zh: 手绘山湖田园主题：按本地时间连续呈现晨昏昼夜，并让农人随当前展示对话的任务运行状态进出田间。插件架构参考 xikan0/dsh-outerwilds-theme。
 tarball: https://github.com/moshangzhe/dsh-shanqi-theme/releases/latest/download/dsh-shanqi-theme.tgz
