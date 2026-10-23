@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-env-audit
+name: feely0208/dsh-env-audit
+category: security
+description:
+  en: 'Checks whether .env files are committed, correctly permissioned and free of plaintext secrets.'
+  zh: '.env 有没有被提交、权限对不对、里面是不是明文'

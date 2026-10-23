@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-mcp-audit
+name: feely0208/dsh-mcp-audit
+category: security
+description:
+  en: 'Audits MCP configuration: unpinned remote packages, plaintext endpoints and executable local servers.'
+  zh: '审计 MCP 配置：未锁定的远端包、明文端点、可执行本地服务 —— MCP 是 agent 的新攻击面'

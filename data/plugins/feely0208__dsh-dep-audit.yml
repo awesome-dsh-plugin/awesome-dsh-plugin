@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-dep-audit
+name: feely0208/dsh-dep-audit
+category: security
+description:
+  en: 'Audits dependency trees for install-time scripts, overly broad version ranges and non-registry sources.'
+  zh: '检查依赖树的投毒与风险面：装包即执行的脚本、过宽版本、非 registry 来源'

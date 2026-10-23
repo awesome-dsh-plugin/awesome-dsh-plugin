@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-alert-relay
+name: feely0208/dsh-alert-relay
+category: security
+description:
+  en: 'Checks the alerting path: whether alerts exist, where they go and whether secrets leak into them.'
+  zh: '检查告警链路：有没有告警、发到哪、有没有把敏感信息一起发出去'

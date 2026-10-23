@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-algorithm-filing
+name: feely0208/dsh-algorithm-filing
+category: security
+description:
+  en: 'Checks recommendation-algorithm filing, user disclosure and the required off switch.'
+  zh: '查算法推荐服务有没有备案、有没有告知、有没有【关闭选项】—— 第 17 条是硬要求'

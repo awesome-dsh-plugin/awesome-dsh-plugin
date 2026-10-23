@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-cn-crypto
+name: feely0208/dsh-cn-crypto
+category: security
+description:
+  en: 'Checks whether projects that should use Chinese national cryptographic algorithms still use foreign ones.'
+  zh: '该用国密的地方，有没有还在用国际算法'

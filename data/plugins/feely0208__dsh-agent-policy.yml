@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-agent-policy
+name: feely0208/dsh-agent-policy
+category: security
+description:
+  en: 'Checks whether an agent did what its policy said it would not, and whether its actions were disclosed.'
+  zh: '说好不干的事干了没，干了的有没有说'

@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-ai-output-trust
+name: feely0208/dsh-ai-output-trust
+category: security
+description:
+  en: 'Flags code that executes model output directly: eval/exec, SQL, shell and file paths.'
+  zh: '检查代码有没有直接执行 AI 输出 —— eval/exec/SQL/文件路径，这是 agent 里风险很高的一类'

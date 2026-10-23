@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-design-line
+name: feely0208/dsh-design-line
+category: security
+description:
+  en: 'Design pipelines for Photoshop, AutoCAD, 3ds Max and Blender: intent to steps to review to execution to verification to receipt.'
+  zh: '深鲸工序 · 设计插件线：PS / AutoCAD / 3ds Max / Blender 四条完整工序流水线（意图→工序→落盘审阅→执行→校验→回执），也是框架 —— 写一个适配器就能接入新软件'

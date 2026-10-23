@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-cn-data-export
+name: feely0208/dsh-cn-data-export
+category: security
+description:
+  en: 'Finds foreign endpoints and personal-data exports and checks for missing security-assessment notes.'
+  zh: '查代码与配置里的境外数据出口：境外端点、个人信息外发、缺安全评估说明'

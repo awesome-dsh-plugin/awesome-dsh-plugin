@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-least-privilege
+name: feely0208/dsh-least-privilege
+category: security
+description:
+  en: 'Checks for over-broad permissions: root containers, wildcard IAM, open CORS and admin-scoped tokens.'
+  zh: '查权限过宽：容器跑 root、IAM 通配、CORS 全开、令牌申请 admin —— 权限过宽是入侵的放大器'

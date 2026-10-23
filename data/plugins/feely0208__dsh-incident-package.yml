@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-incident-package
+name: feely0208/dsh-incident-package
+category: security
+description:
+  en: 'Checks incident readiness: plan, contacts, log preservation and reporting flow.'
+  zh: '查出了事能不能拿出证据：预案、联系人、日志保全、上报流程 —— 平时不备，事到临头就晚了'

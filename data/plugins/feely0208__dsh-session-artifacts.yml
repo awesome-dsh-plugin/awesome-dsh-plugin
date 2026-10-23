@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-session-artifacts
+name: feely0208/dsh-session-artifacts
+category: security
+description:
+  en: 'Collects each session''s artifacts into one folder, renames them by content and refreshes an index.'
+  zh: '会话产物归拢与命名：每个会话一个专属文件夹，收尾按实际内容改名并刷新索引 —— 解决「产物散落满目录」和「过段时间记不清是什么」。附三个不依赖 DSH 的纯 bash 脚本。'

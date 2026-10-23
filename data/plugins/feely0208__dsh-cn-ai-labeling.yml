@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-cn-ai-labeling
+name: feely0208/dsh-cn-ai-labeling
+category: security
+description:
+  en: 'Checks AI-generated content labelling against the Chinese labelling rules and GB 45438-2025.'
+  zh: 'AI 生成合成内容标识合规自检：对照《人工智能生成合成内容标识办法》与强制性国标 GB 45438—2025，逐条核对显式/隐式标识落实情况，并给出防误伤边界。'

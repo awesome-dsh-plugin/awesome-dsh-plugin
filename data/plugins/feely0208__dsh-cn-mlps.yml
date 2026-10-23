@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-cn-mlps
+name: feely0208/dsh-cn-mlps
+category: security
+description:
+  en: 'Maps statically detectable GB/T 22239-2019 (MLPS) requirements to project code and configuration.'
+  zh: '按 GB/T 22239-2019 逐项对照代码与配置里可静态发现的等保项'

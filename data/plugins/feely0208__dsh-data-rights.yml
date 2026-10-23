@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-data-rights
+name: feely0208/dsh-data-rights
+category: security
+description:
+  en: 'Checks that access, copy and deletion rights are actually implemented, not only promised.'
+  zh: '查查阅/复制/删除权有没有真的实现 —— 个保法第 45/47 条是明文要求'

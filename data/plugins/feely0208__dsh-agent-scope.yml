@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-agent-scope
+name: feely0208/dsh-agent-scope
+category: security
+description:
+  en: 'Audits an agent manifest for declared tool, file and network permissions and over-broad scopes.'
+  zh: '查 agent 的工具/文件/网络权限有没有声明、是不是过宽 —— agent 的权限就是它的爆炸半径'

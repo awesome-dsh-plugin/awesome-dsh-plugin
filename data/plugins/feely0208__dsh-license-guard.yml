@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-license-guard
+name: feely0208/dsh-license-guard
+category: security
+description:
+  en: 'Scans dependency trees for GPL/AGPL contamination and unknown licences.'
+  zh: '开源许可合规检查：扫描依赖树，找出 GPL/AGPL 传染、许可未知等风险 —— 发布前、开源前、被审计时跑一遍。'

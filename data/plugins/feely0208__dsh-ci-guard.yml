@@ -1,0 +1,6 @@
+url: https://github.com/feely0208/dsh-ci-guard
+name: feely0208/dsh-ci-guard
+category: security
+description:
+  en: 'Scans GitHub Actions workflows for exploitable configurations that enable supply-chain attacks.'
+  zh: '扫 GitHub Actions 工作流，找出可被利用的配置 —— 供应链攻击的主要入口'
