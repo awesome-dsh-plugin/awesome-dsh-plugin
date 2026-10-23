@@ -1,0 +1,6 @@
+url: https://github.com/laoer/dsh-public-access
+name: laoer/dsh-public-access
+category: remote
+description:
+  en: 'Public/LAN access for the built-in DSH web server, without a second proxy port: replaces the stock web-startup row so the server can bind 0.0.0.0, derives LAN trusted hosts, and puts a username/password login with 24-hour sessions in front of the UI.'
+  zh: '让 DSH 内置 Web 服务直接支持公网 / 局域网访问（不另开代理端口）：替换默认 web-startup 以解除 0.0.0.0 绑定限制、自动推导内网 trusted hosts，并叠加用户名密码登录（会话 24 小时有效）。'
