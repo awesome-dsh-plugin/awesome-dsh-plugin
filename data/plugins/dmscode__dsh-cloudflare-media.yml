@@ -1,0 +1,7 @@
+url: https://github.com/dmscode/dsh-cloudflare-media
+name: dmscode/dsh-cloudflare-media
+category: vision
+description:
+  en: Cloudflare Workers AI media tools for dsh - text-to-image, text-to-speech and speech-to-text. Per-model price badges, a native settings card, reuse of an existing Cloudflare account, and output files named after the model that made them.
+  zh: 把 Cloudflare Workers AI 的多媒体模型接进 dsh：生图、TTS、语音转写都有；每个模型标注价格档位，带原生设置页，复用已有的 Cloudflare 账号，输出文件带模型名。
+icon: https://raw.githubusercontent.com/dmscode/dsh-cloudflare-media/main/docs/images/icon.png
