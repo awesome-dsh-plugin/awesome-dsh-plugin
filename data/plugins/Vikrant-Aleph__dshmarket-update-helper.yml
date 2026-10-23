@@ -1,0 +1,6 @@
+url: https://github.com/Vikrant-Aleph/dshmarket-update-helper
+name: Vikrant-Aleph/dshmarket-update-helper
+category: market
+description:
+  en: 'Adds an independent settings page to update npm-stable dshmarket through the DSH plugin manager, with version verification and best-effort recovery on installation failure.'
+  zh: '提供独立设置页，通过 DSH 插件管理器更新 npm 稳定版 dshmarket，支持版本核对及安装失败时尝试恢复旧版。'
