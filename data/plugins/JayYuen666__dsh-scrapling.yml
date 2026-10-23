@@ -1,0 +1,6 @@
+url: https://github.com/JayYuen666/dsh-scrapling
+name: JayYuen666/dsh-scrapling
+category: browser
+description:
+  en: 'Wraps the Scrapling Python library in up to thirteen model tools, registered by probed capability: real-browser rendering for JavaScript-only pages, CSS/XPath extraction that returns data instead of Markdown, self-healing selectors, reusable login-state sessions, XHR capture and a domain-scoped crawler on the official job backend.'
+  zh: '把 Scrapling Python 库包成最多十三个模型工具，按探测到的能力注册：为纯 JavaScript 页面上真实浏览器渲染、用 CSS/XPath 取出结构化数据而不是 Markdown、选择器自愈、可复用的登录态会话、XHR 抓取，以及在官方作业后端上跑的限定域爬虫。'
