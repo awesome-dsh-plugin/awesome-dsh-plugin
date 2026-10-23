@@ -1,0 +1,6 @@
+url: https://github.com/matata2017/dsh-paste-collapse
+name: matata2017/dsh-paste-collapse
+category: ui
+description:
+  en: 'Codex-style paste collapse for the DeepSeek Harness composer: a paste of more than 1000 characters becomes a [Pasted Content N chars] placeholder, a second paste of the same size is numbered #2, and the host expands it back to the full text before the model reads it, so the model still receives every character. A pill on the top edge of the composer shows the preview, the sent message shows the same pill, and clicking either opens the whole paste in a side panel with a copy button. Pure in memory: nothing is written to disk and no token is saved.'
+  zh: 'Codex 同款粘贴折叠：DSH 输入框里超过 1000 字符的粘贴变成 [Pasted Content N chars] 占位符，同样长度再粘一次编成 #2；模型读到之前宿主把占位符换回全文，一个字符不少。输入框上沿留一枚胶囊显示预览，发出的消息里也是同一枚胶囊，点开在右侧抽屉看全文并复制。全部在内存里：不写磁盘，也不省 token。'
