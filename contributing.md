@@ -231,3 +231,18 @@ Entries under the **Themes & Appearance / 主题与外观** category automatical
 ## Removing or updating / 移除与更新
 
 PRs fixing descriptions, moving entries between categories, or removing dead projects are equally welcome. / 修正描述、调整分类、移除失效项目的 PR 同样欢迎。
+
+### Git-only versions in the host index / Git 版本索引
+
+The web catalog and the host's format-1 index are separate outputs. A Git-only
+entry needs a reviewed `data/git-releases.json` record keyed by its exact
+catalog URL: `name` (actual package name), `version`, `publishedAt` (Unix
+seconds), `commit` (full 40-character SHA), and optionally `enginesDsh`.
+Verify these against the published release and package.json at that commit.
+The source URL is derived from the catalog entry, not supplied by the record.
+Do not use branches, guessed timestamps, npm placeholders or another repo's
+index. Update the record for subsequent releases. npm records retain precedence.
+
+网页收录与宿主 format-1 索引分别生成。没有 npm 发布的插件，可提交上述 Git
+发行记录；需要核对发行时间、包名、版本及完整提交 SHA。源仓库由现有条目决定，
+不能换成其他仓库。新版本需更新记录；缺少证据的条目继续明确计入遗漏，不伪造版本。

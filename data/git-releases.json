@@ -1,0 +1,9 @@
+{
+  "https://github.com/kingcharleslzy-ai/dsh-purge": {
+    "name": "dsh-purge-community",
+    "version": "1.6.44",
+    "publishedAt": 1792667497,
+    "commit": "72d614f9121828d48ca67962d2f410138527c78d",
+    "enginesDsh": ">=0.2.1-rc.1 <0.2.2-0"
+  }
+}
