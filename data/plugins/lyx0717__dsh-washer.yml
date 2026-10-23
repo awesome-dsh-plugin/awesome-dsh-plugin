@@ -1,0 +1,6 @@
+url: https://github.com/lyx0717/dsh-washer
+name: lyx0717/dsh-washer
+category: ui
+description:
+  zh: "把 DeepSeek Harness 会话状态渲染成一台滚筒洗衣机：桌面浮窗用动画显示会话运行状态，三种皮肤（精密家电/动漫/像素）。浮窗支持两档尺寸、点击穿透，并跟随宿主应用的深浅色主题；设置面板内置于 DSH 界面，可开关浮窗与调整外观。"
+  en: "Renders DeepSeek Harness session state as a washing machine: a desktop floating widget animates live session activity, with three skins (precision, anime, pixel). The overlay offers two sizes, optional click-through, and follows the host app's dark mode. Settings live inside the DSH UI."
