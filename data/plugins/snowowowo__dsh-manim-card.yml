@@ -1,6 +1,7 @@
-url: https://github.com/snowowowo/dsh-manim-card
-name: snowowowo/dsh-manim-card
-category: ui
-description:
-  en: Adds a manim_card tool that renders Manim Python into a playable animation card in the chat stream; code runs in the browser via a bundled runtime, so no local Python is needed.
-  zh: 新增 manim_card 工具，把 Manim Python 渲染为聊天流中可播放的动画卡片；代码经随包分发的运行时在浏览器内执行，本机无需安装 Python。
+Update snowowowo/dsh-manim-card description for 0.2.0
+
+Adds the video-export capability, which 0.2.0 ships in two routes: the local
+manim CLI when installed, or frame-by-frame export in the browser otherwise.
+No other fields touched.
+
+描述补上 0.2.0 的导出能力（本机 CLI / 浏览器逐帧两条路），其余字段未动。
