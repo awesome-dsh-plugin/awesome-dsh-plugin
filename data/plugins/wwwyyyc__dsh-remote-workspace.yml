@@ -1,0 +1,14 @@
+url: https://github.com/wwwyyyc/dsh-remote-workspace
+name: wwwyyyc/dsh-remote-workspace
+category: remote
+description:
+  en: >-
+    Live SSH workspaces with a resident Python agent: pick a remote host in the
+    workspace dialog, execute shell, glob, and grep on the remote, and keep a
+    three-way-synced local mirror cache with inotify refresh, TOFU host-key
+    pinning, ProxyJump, and conflict backups.
+  zh: >-
+    基于常驻 Python 代理的实时 SSH 远程工作区：在创建项目对话框选择远程主机，将
+    Shell、Glob、Grep 直接路由到远程执行，并通过三方同步索引、inotify 增量刷新、TOFU
+    主机指纹固定、ProxyJump 跳板机与冲突备份维护本地镜像缓存。
+tarball: https://github.com/wwwyyyc/dsh-remote-workspace/releases/latest/download/dsh-remote-workspace.tgz
