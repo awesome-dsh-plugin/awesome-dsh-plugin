@@ -1,0 +1,6 @@
+url: https://github.com/infileap/Inimerse/tree/main/tools/dsh-inimerse
+name: infileap/Inimerse#tools/dsh-inimerse
+category: tools
+description:
+  en: Five tools that build, test and run the Inimerse engine, and drive its Verse layers over the server's line protocol.
+  zh: 五个工具，用于构建、测试与运行 Inimerse 引擎，并通过服务端行协议驱动其 Verse 层。
