@@ -1,0 +1,7 @@
+url: https://github.com/wenhaolin-svg/dsh-background
+name: wenhaolin-svg/dsh-background
+category: ui
+description:
+  en: Replace the DSH solid background with a local image, with a draggable editor for fit, blur, veil and interface opacity.
+  zh: 用本地图片替换 DSH 的纯色背景，并提供可拖动面板来调整铺满方式、模糊、遮罩和界面不透明度。
+tarball: https://github.com/wenhaolin-svg/dsh-background/releases/download/v1.1.1/dsh-background-studio-1.1.1.tgz
