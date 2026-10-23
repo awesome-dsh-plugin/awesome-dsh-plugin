@@ -1,0 +1,6 @@
+url: https://github.com/ethanchen669/dsh-plugin-fly-skins
+name: ethanchen669/dsh-plugin-fly-skins
+category: theme
+description:
+  en: 'Four palettes for the DeepSeek Harness web UI — solid, glass, volume and neon — each with light and dark halves. Neon adds a scene light field with a 46px circuit grid, a laser scan that sweeps the conversation column only while a turn is running, HUD-style workspace labels in the sidebar, embedded MiSans Latin chrome type, and a 125% sidebar type scale that stays fixed while the conversation area zooms.'
+  zh: 'DeepSeek Harness Web UI 的四套配色：实心 / 玻璃 / 体积 / 霓虹，各含明暗两半。霓虹版在整窗场景光场上叠 46px 电路网格，并在模型运行时让一条激光扫描线扫过对话列（停止即消失）；侧栏工作区名为青色 HUD 标牌，界面拉丁字体内置 MiSans，侧栏字号固定 125% 且不随对话区缩放。'

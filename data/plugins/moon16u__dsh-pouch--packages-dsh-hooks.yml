@@ -1,0 +1,6 @@
+url: https://github.com/moon16u/dsh-pouch/tree/main/packages/dsh-hooks
+name: moon16u/dsh-pouch#dsh-hooks
+category: security
+description:
+  en: 'File-defined command hooks across the session, prompt, tool, permission, Stop and PostCompact seams, with an approval-only GUI: no unapproved command runs, and approval binds the exact definition, canonical working directory and pinned watchFiles. Commands run as the DSH OS user without a hook sandbox, so the trust ledger is explicit.'
+  zh: '文件声明的命令钩子，覆盖会话、提问、工具、审批、Stop 与压缩后等事件，配套只读审批界面：未经批准的命令不执行，批准绑定精确定义、实际执行目录与 watchFiles 固定内容。命令以 DSH 系统用户身份运行且无独立沙箱，因此信任记录是显式的。'

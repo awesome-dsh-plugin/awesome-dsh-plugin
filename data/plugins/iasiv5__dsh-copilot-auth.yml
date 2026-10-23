@@ -1,0 +1,6 @@
+url: https://github.com/iasiv5/dsh-copilot-auth
+name: iasiv5/dsh-copilot-auth
+category: model
+description:
+  en: "Adds a web device-code sign-in and sign-out entry for the built-in GitHub Copilot provider in DSH, presets an out-of-the-box Copilot provider route, keeps credentials in the built-in credential store, and manages the model catalog as a first-login fallback that never overwrites customized model entries."
+  zh: '为 DSH 内置的 GitHub Copilot 通道补充网页设备码登录与注销入口，预置开箱即用的 Copilot 提供方路由，凭据存入内置凭据库，模型目录仅在首次登录兜底填充一次、永不覆盖已定制的模型条目。'

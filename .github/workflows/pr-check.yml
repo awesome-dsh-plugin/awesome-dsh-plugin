@@ -21,6 +21,12 @@ jobs:
         with:
           node-version: 22
       - run: npm ci
+        env:
+          # The lockfile pins registry.npmmirror.com URLs. On GitHub runners that CDN
+          # has repeatedly returned 503/504 and hung `npm ci` for tens of minutes
+          # (2026-10-19). Fetch from npmjs in CI; local installs keep their own registry.
+          npm_config_registry: https://registry.npmjs.org/
+          npm_config_replace_registry_host: always
       - name: Stale-fork guard
         # A fork behind main re-adds old entries (caught by the duplicate
         # check) or, worse, deletes recent ones — which every content check

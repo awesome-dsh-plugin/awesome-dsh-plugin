@@ -2,5 +2,5 @@ url: https://github.com/Azetus/dsh-quorfloat
 name: Azetus/dsh-quorfloat
 category: ui
 description:
-  en: 'System-level floating chat window for DeepSeek Harness with global hotkeys, workspace and session switching, and approval handling.'
-  zh: 'DeepSeek Harness 的系统级悬浮会话窗口，支持全局快捷键、工作区与会话切换及审批处理。'
+  en: 'System-level desktop floating-window plugin for DeepSeek Harness (DSH): a global hotkey opens a floating window; the plugin supports workspace and session switching, approval and follow-up handling, and export of its own diagnostic logs for plugin troubleshooting.'
+  zh: 'DeepSeek Harness（DSH）的系统级桌面悬浮窗插件：按下全局快捷键即可呼出桌面悬浮窗口，支持工作区与会话切换、审批与追问处理，以及插件自身的诊断日志导出。'

@@ -1,0 +1,7 @@
+url: https://github.com/JiewiW/dsh-derive-watcher
+
+name: JiewiW/dsh-derive-watcher
+category: memory
+description:
+  en: 'Semantic context watcher for DSH agents: maintains a journey ledger with flash summarization and MinHash novelty detection, folds milestones, and can inject long-term context with a three-level stall response; injection and the stall-2/3 responses are off by default.'
+  zh: DSH 语义上下文观察器，维护旅程台账并做闪存摘要与 MinHash 新颖度检测，支持里程碑折叠、长期上下文注入与三级停滞响应；注入与 stall-2/3 响应默认关闭。

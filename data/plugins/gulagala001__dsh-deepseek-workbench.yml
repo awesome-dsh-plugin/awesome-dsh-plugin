@@ -1,0 +1,7 @@
+url: https://github.com/gulagala001/dsh-deepseek-workbench
+name: gulagala001/dsh-deepseek-workbench
+category: ui
+description:
+  en: "Desktop only. Use DeepSeek website chats, temporary side conversations and imported chat history within DSH."
+  zh: "仅 Desktop。DeepSeek 网页聊天、临时侧栏聊天、API 开放平台与 DSH 会话迁移。"
+tarball: https://github.com/gulagala001/dsh-deepseek-workbench/releases/download/v0.1.1-dsh.0.2.1-rc.2/dsh-deepseek-workbench-0.1.1-dsh.0.2.1-rc.2.tgz

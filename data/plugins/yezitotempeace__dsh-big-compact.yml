@@ -1,0 +1,6 @@
+url: https://github.com/yezitotempeace/dsh-big-compact
+name: yezitotempeace/dsh-big-compact
+category: session
+description:
+  en: 'Chunked compaction for oversized sessions: takes over only when the live context exceeds 85% of the model window (or the request exceeds 4 MB), summarizes the history in 1.5 MB chunks and merges them; smaller sessions keep the built-in compaction.'
+  zh: '超大会话分块压缩：仅在实测上下文超过模型窗口 85%（或请求超过 4 MB）时接管，把历史按 1.5 MB 分块摘要再合并；小会话仍走 dsh 自带压缩。'

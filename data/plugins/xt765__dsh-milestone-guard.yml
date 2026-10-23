@@ -4,3 +4,4 @@ category: workflow
 description:
   en: 'Milestone progress soft-enforcement guard: injects persistent system-prompt rules and post-execute notices when tool calls omit visible progress text, with a Web settings form.'
   zh: '阶段性结论软强制守卫：常驻注入系统提示词规范，并在模型调用工具漏发可见结论时自动附加软强制纠偏提醒，支持 Web 设置表单。'
+tarball: https://github.com/xt765/dsh-milestone-guard/releases/latest/download/dsh-milestone-guard.tgz

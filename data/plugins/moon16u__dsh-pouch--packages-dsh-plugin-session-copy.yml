@@ -1,6 +1,0 @@
-url: https://github.com/moon16u/dsh-pouch/tree/main/packages/dsh-plugin-session-copy
-name: moon16u/dsh-pouch#dsh-plugin-session-copy
-category: ui
-description:
-  en: 'Native-styled Copy menu in the web session header: session title, session storage directory (home prefix abbreviated to ~) and working directory, with instant copied/failed feedback.'
-  zh: 'Web 会话顶栏原生风格「复制」菜单：会话标题、会话存储目录（home 前缀缩写为 ~）与工作目录，带即时的复制成功/失败反馈。'

@@ -2,6 +2,6 @@ url: https://github.com/gulagala001/oh-my-dsh
 name: gulagala001/oh-my-dsh
 category: workflow
 description:
-  en: 'Oh My DSH (OMD) adds context summaries with original-source recall, task-linked verification, prompt optimization, CodeGraph code navigation, OpenCU computer control, and four themes covering layout, sidebars, and settings.'
-  zh: 'Oh My DSH（OMD）提供可回查原文的上下文摘要、任务关联验证、提示词优化、CodeGraph 代码理解、OpenCU 电脑操作，以及四套覆盖布局、侧栏和设置的主题。'
-tarball: https://github.com/gulagala001/oh-my-dsh/releases/download/v0.1.6/trisoul_x-0.1.6.tgz
+  en: "Context summaries, optional memory caching, Ultra modes, CodeGraph, and bundled OpenCU computer use for DSH."
+  zh: "为 DSH 提供上下文摘要、可选记忆缓存、Ultra、CodeGraph 与内置 OpenCU 电脑操作。"
+tarball: https://github.com/gulagala001/oh-my-dsh/releases/download/v0.2.1-rc.2.omd.0.99.1/oh-my-dsh-0.2.1-rc.2.omd.0.99.1.tgz

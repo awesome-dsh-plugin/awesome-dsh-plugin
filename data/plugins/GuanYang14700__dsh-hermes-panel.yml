@@ -2,5 +2,5 @@ url: https://github.com/GuanYang14700/dsh-hermes-panel
 name: GuanYang14700/dsh-hermes-panel
 category: ui
 description:
-  en: 'A Hermes sidebar for DSH: finds your Hermes agent, starts and stops its gateway and dashboard, runs the health script Hermes ships itself, and carries the DSH ↔ Hermes bridge. Any installation will do — where those maintenance scripts do not exist, the three buttons politely decline and say why.'
-  zh: '把 Hermes 放进 DSH 的侧边栏：自己找到你的 Hermes，启停它的网关与 dashboard，跑 Hermes 自带的那份体检脚本，再捎上 DSH ↔ Hermes 的桥。任何装法都认——碰上没有那几个维护脚本的安装，三个按钮会礼貌地拒绝按下去，并说明原因。'
+  en: 'Hermes in the DSH sidebar: start and stop the gateway and dashboard, watch the dashboard beside the chat, and bridge DSH to Hermes. Windows only; requires an existing Hermes install.'
+  zh: '把 Hermes 放进 DSH 右侧栏：启停网关和 dashboard，聊天旁边就能看 dashboard，再把 DSH 和 Hermes 接起来。仅 Windows；需已安装 Hermes。'

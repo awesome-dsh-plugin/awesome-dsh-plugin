@@ -2,5 +2,5 @@ url: https://github.com/lemonxiny55/dsh-code-index
 name: lemonxiny55/dsh-code-index
 category: tools
 description:
-  en: 'Local code context for DSH: ArkTS (.ets) plus eight existing languages, component and symbol navigation, static ETS/TS references, bounded Context Packs with source line ranges and relationship provenance, parse diagnostics, repo/worktree isolation and external-file refresh.'
-  zh: 'DSH 本地代码上下文：支持 ArkTS（.ets）及原有八种语言，提供组件与符号导航、静态 ETS/TS 引用、包含源码行号与关系来源的有界 Context Pack、解析诊断、仓库/worktree 隔离和外部文件刷新。'
+  en: 'Local code intelligence for DSH: Impact X-Ray visualizes potential change impact with inspectable source evidence and uncertainty; also provides symbol navigation, bounded Context Packs and ArkTS support.'
+  zh: 'DSH 本地代码智能插件：Impact X-Ray 可视化展示潜在变更影响、源码证据与不确定性，并提供符号导航、有界 Context Pack 和 ArkTS 支持。'

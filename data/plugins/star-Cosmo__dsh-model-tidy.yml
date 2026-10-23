@@ -2,5 +2,5 @@ url: https://github.com/star-Cosmo/dsh-model-tidy
 name: star-Cosmo/dsh-model-tidy
 category: model
 description:
-  en: 'Model list control for DeepSeek Harness: hide any model from the selector, give it your own display name while keeping the provider billing rate, and arrange the order with arrows. Search, per-provider batch toggles, one-click restore. Display only — no provider configuration is rewritten.'
-  zh: 'DSH 模型列表整理：把任意模型从选择器隐藏、给它改一个自己的显示名（保留厂商计费倍率），并用箭头调整排序；支持搜索、渠道级批量开关与一键恢复。只改显示，不重写任何渠道配置。'
+  en: 'Model list control for DeepSeek Harness: hide any model, give it your own display name while keeping the provider billing rate, arrange models and providers with arrows, and check which shown models currently work. Search, per-provider batch toggles, one-click restore. Display only — no provider configuration is rewritten.'
+  zh: 'DSH 模型列表整理：隐藏任意模型、给它改一个自己的显示名（保留厂商计费倍率），用箭头调整模型与渠道排序，并检测当前显示的模型是否可用；支持搜索、渠道级批量开关与一键恢复。只改显示，不重写任何渠道配置。'

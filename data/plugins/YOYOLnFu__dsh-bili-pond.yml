@@ -1,0 +1,6 @@
+url: https://github.com/YOYOLnFu/dsh-bili-pond
+name: YOYOLnFu/dsh-bili-pond
+category: notify
+description:
+  en: 'Searches Bilibili on a schedule, reads each video''s actual subtitle (local faster-whisper transcription when none exists), filters by length, writes a daily Markdown digest, and can post one comment on a pick that @-mentions you. Five-gate scheduling with per-round and per-day quotas, a daily transcription cap, optional peak/off-peak windows, and a model route picked in the settings page. Commenting and private messaging are off by default; a DM can only ever go to one configured UID. Requires Node.js 22+, DSH >=0.1.7-rc.1, a Bilibili login, a model route configured in Settings, and a one-time Python environment on first transcription.'
+  zh: '按排班搜 B站，读每一条的字幕原文（没有字幕就本地转写），按时长过滤，写一份 markdown 日报，并对值得的几条发一条评论 @ 你。五级闸门排班（每轮/每天配额、每日转写熔断、可选的谷时窗口），模型线路在设置页里选。评论与私信默认关；私信只能发给设置里指定的那一个 UID。需 Node.js 22+、DSH >=0.1.7-rc.1、B 站登录态、在设置里配置模型线路，首次转写会创建 Python 环境。'

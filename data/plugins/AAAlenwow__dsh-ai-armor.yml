@@ -1,0 +1,6 @@
+url: https://github.com/AAAlenwow/dsh-ai-armor
+name: AAAlenwow/dsh-ai-armor
+category: tools
+description:
+  en: 'Five production-grade DSH tools bundled into one plugin (8 tool slots total): git regression finder (find introducer, recent changes, bisect, blame age), stack-trace decoder with local code context, YAML/ENV/properties config validator with typo suggestions, cross-platform shell escape (POSIX/PowerShell/cmd), and MyBatis Plus SQL static auditor (N+1, missing @Transactional, LIKE leading %, SELECT *, missing WHERE). Zero npm dependencies, all offline; concurrency-safe except the bisect tool (dsh-when-broke). Each sub-plugin is also installable standalone (dsh-when-broke, dsh-stackdecoder, dsh-config-guard, dsh-cmd-shield, dsh-mp-auditor).'
+  zh: '五个生产级 DSH 工具合一的 bundle（共 8 个 tool slot）：git 回归定位（引入者反查、最近改动、二分定位、blame 年龄）、带本地代码上下文的堆栈解码器、YAML/ENV/properties 配置校验器（带近似键名提示）、跨平台 shell 转义（POSIX/PowerShell/cmd）、MyBatis Plus SQL 静态审计器（N+1、缺 @Transactional、LIKE 前导 %、SELECT *、缺 WHERE）。零 npm 依赖，全离线；除 bisect 工具（dsh-when-broke）外并发安全。每个子插件也可单独安装（AAAlenwow/dsh-when-broke、dsh-stackdecoder、dsh-config-guard、dsh-cmd-shield、dsh-mp-auditor）。'

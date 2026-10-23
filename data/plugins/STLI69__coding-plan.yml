@@ -1,0 +1,6 @@
+url: https://github.com/STLI69/coding-plan
+name: STLI69/coding-plan
+category: model
+description:
+  en: Volcengine Ark Coding Plan provider route for DeepSeek Harness with all 15 Coding Plan models and per-model reasoning-effort control, generated from a single source and drift-checked weekly.
+  zh: 火山方舟 Ark Coding Plan 的 provider 路由：为 DeepSeek Harness 收录全部 15 个 Coding Plan 模型，每个模型可调思考强度；清单由单一数据源生成，并每周自动探测是否过期。

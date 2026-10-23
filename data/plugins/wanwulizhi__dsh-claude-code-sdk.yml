@@ -1,0 +1,6 @@
+url: https://github.com/wanwulizhi/dsh-claude-code-sdk
+name: wanwulizhi/dsh-claude-code-sdk
+category: tools
+description:
+  en: Requires Claude Code installed and signed in on this machine. Delegates a self-contained coding task to the local Claude Code agent through the Claude Agent SDK, prepends the current DSH conversation history, and keeps the worker's intermediate tool calls out of the main context.
+  zh: 需本机已安装并登录 Claude Code。通过 Claude Agent SDK 把自包含的编码任务委派给本机 Claude Code，附带当前 DSH 的对话历史，并让 worker 的中间工具调用不进入主上下文。

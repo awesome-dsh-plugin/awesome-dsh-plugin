@@ -1,0 +1,7 @@
+url: https://github.com/oxmumu3/dsh-plugin-finder
+name: oxmumu3/dsh-plugin-finder
+category: market
+description:
+  en: 'Confirms a task, searches live community plugin catalogs, reads author documentation, and proposes a minimal plugin plan with saved revisions and a user-confirmed draft for a native DSH conversation.'
+  zh: '确认需求、检索动态社区插件目录并阅读作者资料，给出最小插件方案，保存方案版本，再经用户确认把待发送草稿交给 DSH 原生会话。'
+tarball: https://github.com/oxmumu3/dsh-plugin-finder/releases/download/v0.3.0-preview.2/dsh-plugin-finder-0.3.0-preview.2.tgz

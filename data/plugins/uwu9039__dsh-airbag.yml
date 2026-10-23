@@ -1,0 +1,6 @@
+url: https://github.com/uwu9039/dsh-airbag
+name: uwu9039/dsh-airbag
+category: security
+description:
+  en: 'Blocks API keys pasted into the composer or written by tools, logs leak events, and scans the workspace for exposed secrets.'
+  zh: '拦截粘贴进输入框或被工具写入的 API 密钥，记录泄露事件，并扫描工作区中暴露的密钥。'

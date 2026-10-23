@@ -3,5 +3,5 @@ name: OrderG-X/dsh-video-preview
 category: ui
 tarball: https://github.com/OrderG-X/dsh-video-preview/releases/latest/download/dsh-video-preview.tgz
 description:
-  en: "Plays local video and audio inside the conversation. A play_video tool renders a native player at the tail of the turn - under the model's final output, no click needed - streamed over HTTP Range so long files seek instead of loading into memory. Also registers a sidebar media preview renderer, since the built-in previewer treats mp4 as unviewable."
-  zh: "在对话流里直接播放本地视频和音频。play_video 工具把原生播放器渲染在每轮输出的收尾区（模型回复正下方，不用点任何东西），走 HTTP Range 流式传输，长视频能拖进度条、不会整个读进内存。同时注册了侧边栏媒体预览渲染器——内置预览器把 mp4 当作不可预览。"
+  en: "Plays local video and audio inside the conversation. Media files the model writes during a turn - screen recordings, transcodes, voiceovers - get a player under its final reply automatically when their paths appear in its commands, the command output or the reply; the play_video tool plays any other file. Video shows as compact cards with a hover preview, audio as a slim seek bar, streamed over HTTP Range so long files seek instead of loading into memory. Also registers a sidebar media preview renderer, since the built-in previewer treats mp4 as unviewable."
+  zh: "在对话流里直接播放本地视频和音频。模型这一轮写出的媒体文件（录屏、转码、配音），只要路径出现在它跑的命令、命令输出或回复里，回合收尾时播放器就自动出现在回复正下方，不用调工具；别的文件用 play_video 工具播放。视频是带悬停预览的小卡片，音频是可拖进度的细条，走 HTTP Range 流式传输，长视频能拖进度条、不会整个读进内存。同时注册了侧边栏媒体预览渲染器——内置预览器把 mp4 当作不可预览。"
