@@ -3,5 +3,5 @@ name: hanmoxu9/dsh-taskbar-glow
 category: notify
 icon: https://raw.githubusercontent.com/hanmoxu9/dsh-taskbar-glow/main/assets/icon-180.png
 description:
-  en: Flashes the Windows taskbar icon in the DSH desktop app when a turn finishes in the background or an approval or question is waiting for you.
-  zh: DSH 桌面版在后台跑完一轮、或等你审批 / 回答时，闪烁 Windows 任务栏图标。
+  en: 'Flashes the Windows taskbar icon in the DSH desktop app when a turn finishes in the background or an approval or question is waiting for you.'
+  zh: 'DSH 桌面版在后台跑完一轮、或等你审批 / 回答时，闪烁 Windows 任务栏图标。'
