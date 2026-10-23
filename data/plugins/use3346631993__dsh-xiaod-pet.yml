@@ -1,0 +1,9 @@
+url: https://github.com/use3346631993/dsh-xiaod-pet
+name: use3346631993/dsh-xiaod-pet
+category: fun
+description:
+  en: 'Anime whale-boy in a maid outfit as a desktop pet for the DeepSeek Harness web GUI: four expressions follow the turn (thinking / success / failure), free dragging with remembered position, click-to-cycle, a bottom-right standee that reports each turn''s token usage and think latency with its own balance bubble, a chat wallpaper, a liquid-glass composer, a cute persona that calls you 主人 with 喵~ style particles, and a single switch in Settings to turn the whole look off.'
+  zh: '鲸鱼正太 × 女仆装 × 二次元的桌面桌宠：四种表情跟随对话状态，可拖拽、点击切换；右下角立牌每轮显示 token 消耗与思考时间，点击有 q 弹与独立余额气泡；另附聊天壁纸、液态玻璃输入框；人格自称小D，称呼你为主人并带喵~ 等语气词；设置里可一键开关，还能自定义称呼。'
+screenshots:
+  - https://raw.githubusercontent.com/use3346631993/dsh-xiaod-pet/HEAD/docs/preview.jpg
+  - https://raw.githubusercontent.com/use3346631993/dsh-xiaod-pet/HEAD/docs/settings.png
