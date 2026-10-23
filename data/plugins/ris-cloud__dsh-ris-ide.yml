@@ -1,0 +1,6 @@
+url: https://github.com/ris-cloud/dsh-ris-ide
+name: ris-cloud/dsh-ris-ide
+category: dev
+description:
+  en: 'Local dev panel for the DSH web GUI: follow service logs, start/stop workspace programs, debug Java over JDWP, browse and edit workspace files, and search file names.'
+  zh: 'DSH 网页版的本机开发面板：跟随服务日志、启停工作区程序、JDWP 调试 Java、浏览编辑工作区文件与文件名搜索。'
