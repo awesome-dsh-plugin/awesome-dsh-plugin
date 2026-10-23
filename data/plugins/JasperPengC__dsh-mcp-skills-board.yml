@@ -1,5 +1,5 @@
-url: https://github.com/Storm-Starlight/dsh-mcp-skills-board
-name: Storm-Starlight/dsh-mcp-skills-board
+url: https://github.com/JasperPengC/dsh-mcp-skills-board
+name: JasperPengC/dsh-mcp-skills-board
 category: ui
 description:
   en: 'MCP server and skill management for DeepSeek Harness: a sidebar panel and a plugin-page config section with search, status lights, per-row switches, expandable details, and an add-server form following Codex mcp_servers fields.'
