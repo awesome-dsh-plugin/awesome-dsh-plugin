@@ -1,0 +1,6 @@
+url: https://github.com/FutureHai/dsh-chat-plugin
+name: FutureHai/dsh-chat-plugin
+category: ui
+description:
+  en: 'Opens the official DeepSeek Chat website in a Harness Desktop main panel, with sidebar and Agent session header entries for switching between Chat and Agent.'
+  zh: '在 DeepSeek Harness Desktop 主面板打开官方 DeepSeek Chat 网页，并通过侧栏及 Agent 会话标题栏入口切换 Chat 与 Agent。'
