@@ -1,0 +1,6 @@
+url: https://github.com/coii08o0o/dsh-bot-board
+name: coii08o0o/dsh-bot-board
+category: ui
+description:
+  en: "A floating board over the chat for DS Bot's team: who is running and on which tool, who is waiting for another Bot to hand work back, who needs your approval or answer, and who failed, with a hand-off table grouped by sender, a per-Bot drawer showing the pending command or question, and a collapsed one-line pill. Read-only — it never writes to DS Bot's data."
+  zh: "DS Bot 团队的一块浮动看板：谁在跑、在跑什么工具，谁在等别的 Bot 交活，谁在等你批或等你答，谁报错了；带按发送方分组的交接表、显示待批命令或待答问题的单个 Bot 抽屉，收起后是一条状态胶囊。只读，不写 DS Bot 的数据。"
