@@ -1,6 +1,7 @@
 url: https://github.com/xingyueDanYang/dsh-puppet-memory
 name: xingyueDanYang/dsh-puppet-memory
 category: memory
+tarball: https://github.com/xingyueDanYang/dsh-puppet-memory/releases/latest/download/dsh-puppet-memory.tgz
 description:
   en: 'Cross-session memory for DeepSeek Harness: a three-tier store (behavior notes, deep details, session archive) plus a 600-character core card injected every step, work/companion/learning state lines, multi-person and multi-group records with visibility partitions, session-scoped suppression or deletion of memory fragments, summaries and fact candidates that can route to a separate model, and backup plus self-check tools. Data is plain text under the home directory, and entries can carry images and audio stored by content hash.'
   zh: '面向 DeepSeek Harness 的跨会话记忆：三层存储（行为笔记／深层细节／会话阵列）打底，加一张每步注入的 600 字核心卡、工作·陪伴·学习三线状态、多人多群记录与可见性分区、会话级记忆片段屏蔽与删除、可路由到独立模型的摘要与事实候选，以及备份与自检工具；数据全部是家目录下的纯文本文件，条目可附带按内容哈希落盘的图片与音频。'
