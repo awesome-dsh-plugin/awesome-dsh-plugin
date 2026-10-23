@@ -1,0 +1,6 @@
+url: https://github.com/vicTop-cw/FIST-Mbt
+name: vicTop-cw/FIST-Mbt
+category: workflow
+description:
+  en: 'FIST commander task orchestration as an MCP server: seven-state task lifecycle, hierarchical decomposition, DAG scheduling, self-driving loops and Omega verification, all in one SQLite ledger. Ships a prebuilt CLI, so installing it needs no build step.'
+  zh: '把 FIST 指挥官任务编排做成 MCP 服务：七态任务生命周期、层级拆解、DAG 排程、自驱闭环与 Omega 强验证，账本落在一个 SQLite 里；自带预构建 CLI，安装无需构建。'
