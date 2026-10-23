@@ -2,6 +2,6 @@ url: https://github.com/gulagala001/opencu
 name: gulagala001/opencu
 category: browser
 description:
-  en: "Computer use with browser automation, approvals and annotations for DSH; full desktop UI and native monitoring require matching host source adapters, patching and a host build."
-  zh: "为 DSH 提供浏览器操作、审批与批注；完整桌面界面与原生监看需匹配的宿主源码适配、补丁和构建。"
-tarball: https://github.com/gulagala001/opencu/releases/download/v2.0.8-dsh.0.2.1-rc.2/opencu-2.0.8-dsh.0.2.1-rc.2.tgz
+  en: "Browser and desktop application control with live previews, annotations and native Hyprland support."
+  zh: "浏览器与桌面应用控制，支持实时预览、标注和 Hyprland 原生操作。"
+tarball: https://github.com/gulagala001/opencu/releases/download/v2.1.0-dsh.0.2.1-rc.2/opencu-2.1.0-dsh.0.2.1-rc.2.tgz
