@@ -1,0 +1,6 @@
+url: https://github.com/wangxuewangxue98/dsh-daoyi-yijing
+name: wangxuewangxue98/dsh-daoyi-yijing
+category: tools
+description:
+  en: 'Yijing-based decision review plugin for DSH: six-layer weighted aggregation engine (384 yao to taiji) with strong-association veto rules, pure JS with zero solver dependencies.'
+  zh: '道一-易经推演：通用决策评审 DSH 插件（决策辅助，非迷信）。六层加权聚合引擎（384爻→64卦→8宫→四象→三才→两仪→太极），强关联一票否决，内置电机设计/股票趋势/商业成功率剧本，纯 JS 零求解器依赖。'
