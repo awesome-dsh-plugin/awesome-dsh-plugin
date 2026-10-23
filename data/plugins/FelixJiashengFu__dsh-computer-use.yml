@@ -1,0 +1,6 @@
+url: https://github.com/FelixJiashengFu/dsh-computer-use
+name: FelixJiashengFu/dsh-computer-use
+category: tools
+description:
+  en: 'Windows computer use behind a composer switch: ten tools let the model take desktop screenshots, click, type, press key combos, scroll, drag, list and focus windows, open files or URLs, and wait; the tools are registered only while the switch is on.'
+  zh: 输入框开关控制的 Windows 电脑操作：十个工具让模型截取桌面、点击、输入、按组合键、滚动、拖拽、列出并切换窗口、打开文件或网址、等待；开关关闭时这些工具不会注册。
