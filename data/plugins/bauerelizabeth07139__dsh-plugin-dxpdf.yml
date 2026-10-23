@@ -1,0 +1,6 @@
+url: https://github.com/bauerelizabeth07139/dsh-plugin-dxpdf
+name: bauerelizabeth07139/dsh-plugin-dxpdf
+category: tools
+description:
+  en: 'DOCX to PDF without Microsoft Office, LibreOffice or a network: converts a Word .docx with the dxpdf Rust/Skia engine, repairs the schema-invalid OOXML that WPS Office writes, and restores the blank pages Word inserts at odd/even section breaks.'
+  zh: '不依赖 Microsoft Office、LibreOffice 或网络的 DOCX 转 PDF:用 dxpdf(Rust/Skia)引擎转换 Word 文档,自动修复 WPS Office 写出的非法 OOXML,并补齐 Word 在奇偶页节分界处插入的空白页。'
