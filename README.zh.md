@@ -114,7 +114,7 @@ dsh plugin --profile web add dshmarket
 - [ws1234567891011/dsh-interim-narration](https://github.com/ws1234567891011/dsh-interim-narration) — 让 agent 边做边说：每轮先用一两句说明怎么理解消息、准备怎么做、第一步是什么，并在工具调用批次之间写过程叙述；插件页可直接调整详略、句数上限与开关。
 - [wuanthony397-hash/dsh-codex-peer](https://github.com/wuanthony397-hash/dsh-codex-peer) — 让 DeepSeek Harness agent 与本机 Codex CLI 对等协作：把目标拆成共享工作清单、派活与交接、互相审查，并把每一步的提示词、事件流与回答留档在本地。
 - [yunxiyang/dsh-loop-continue](https://github.com/yunxiyang/dsh-loop-continue) — 续跑「叙述了下一步动作却没调用工具」就结束的 agent 轮次：插件在 agent/turn-stopping 回放该轮日志，让裁判模型回答一次 true/false，命中的话把同一轮再推进一步。
-- [zhoulvyuan/dsh-plugin#dsh-claude-code-web](https://github.com/zhoulvyuan/dsh-plugin/tree/master/dsh-claude-code-web) — 在 DSH 内嵌入 Claude Code 工作台，由宿主内的 HTTP/WebSocket 服务驱动，提供侧边栏入口与可拖动的悬浮面板。
+- [zhoulvyuan/dsh-plugin#dsh-claude-code-web](https://github.com/zhoulvyuan/dsh-plugin/tree/master/dsh-claude-code-web) — 在 DSH 内提供 Claude Code 风格工作台：工作区/会话侧栏、流式文档式对话与统一工具卡、思考过程、Markdown 与 Mermaid 渲染、暗色主题，以及由宿主内 HTTP/WebSocket 服务驱动的可拖动悬浮面板。
 
 ### 🎨 UI 增强
 

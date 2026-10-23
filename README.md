@@ -114,7 +114,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [ws1234567891011/dsh-interim-narration](https://github.com/ws1234567891011/dsh-interim-narration) - Makes the agent narrate its process: every turn opens with how it reads the message and what it will do first, then short interim notes between tool-call batches, with in-app settings for style, sentence cap and toggles.
 - [wuanthony397-hash/dsh-codex-peer](https://github.com/wuanthony397-hash/dsh-codex-peer) - Peer collaboration between a DeepSeek Harness agent and the local Codex CLI: split a goal into a shared work list, hand tasks over, review what comes back, and keep every prompt, event stream, and answer on disk.
 - [yunxiyang/dsh-loop-continue](https://github.com/yunxiyang/dsh-loop-continue) - Resumes an agent turn that ended after narrating its next action without calling a tool: the guard replays the turn log on agent/turn-stopping, asks a judge model one true/false question, and steers the same turn to run one more step.
-- [zhoulvyuan/dsh-plugin#dsh-claude-code-web](https://github.com/zhoulvyuan/dsh-plugin/tree/master/dsh-claude-code-web) - Embeds Claude Code as a workbench in DSH, serving an in-host HTTP/WebSocket backend with a sidebar entry and a draggable overlay panel.
+- [zhoulvyuan/dsh-plugin#dsh-claude-code-web](https://github.com/zhoulvyuan/dsh-plugin/tree/master/dsh-claude-code-web) - Claude Code-style workbench in DSH: workspace/session sidebar, streaming document-style transcript with unified tool cards and thinking, Markdown and Mermaid rendering, dark theme, and a draggable overlay panel backed by an in-host HTTP/WebSocket service.
 
 ### UI Enhancements
 
