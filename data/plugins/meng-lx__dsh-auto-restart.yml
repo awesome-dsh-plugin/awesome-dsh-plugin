@@ -1,0 +1,6 @@
+url: https://github.com/meng-lx/dsh-auto-restart
+name: meng-lx/dsh-auto-restart
+category: session
+description:
+  en: 'Restart DSH only after every agent and background job is idle, then wake the original session: a cancelable countdown, an occupancy check at the deadline, and a file handoff to a bundled PowerShell restart script.'
+  zh: '等所有 agent 与后台任务都空闲后再重启 DSH，并回到原会话：可取消倒计时、到点再判占用、与随包 PowerShell 重启脚本之间用交接文件通信。'
