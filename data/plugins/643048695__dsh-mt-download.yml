@@ -1,0 +1,6 @@
+url: https://github.com/643048695/dsh-mt-download
+name: 643048695/dsh-mt-download
+category: tools
+description:
+  en: "Adds a download_file tool that fetches a URL over 16 aria2c connections and falls back to a single stream when aria2 is unavailable."
+  zh: "新增 download_file 工具，用 16 路 aria2c 并发下载，aria2 不可用时自动退回单线程流式下载。"
