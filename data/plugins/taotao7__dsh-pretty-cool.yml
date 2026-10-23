@@ -2,6 +2,5 @@ url: https://github.com/taotao7/dsh-pretty-cool
 name: taotao7/dsh-pretty-cool
 category: ui
 description:
-  en: Compact DSH interface with borderless messages, composer controls, task entries, and adjustable corners.
-  zh: 紧凑的 DSH 界面，包含无边框消息、输入区控制、任务入口和可调圆角。
-tarball: https://github.com/taotao7/dsh-pretty-cool/releases/download/v1.4.11/local-dsh-linear-ui-1.4.11.tgz
+  en: Compact interface with borderless messages, a light queue, composer controls, and adjustable corners.
+  zh: 紧凑界面：无边框消息、轻量队列、输入区控制，以及可调圆角。
