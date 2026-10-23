@@ -1,0 +1,6 @@
+url: https://github.com/WalterYOO/dsh-web-search-yuanbao
+name: WalterYOO/dsh-web-search-yuanbao
+category: browser
+description:
+  en: 'Tencent Yuanbao Search provider for the ctx.web seam: one direct Search API request per query returns portable title, URL, snippet and ISO-8601 date, with credentials resolved per search and no auxiliary model turn.'
+  zh: '为 ctx.web 接入腾讯元宝搜索：每次查询只发一次直接检索请求，返回标题、URL、摘要与 ISO-8601 日期，凭证按每次搜索解析，不产生辅助模型轮次。'
