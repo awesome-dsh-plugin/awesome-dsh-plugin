@@ -2,5 +2,5 @@ url: https://github.com/nineoooo/dsh-qzone-echo
 name: nineoooo/dsh-qzone-echo
 category: memory
 description:
-  en: 'Archives the QQ Zone posts you published yourself into a local library, sorted into three columns — thoughts, dreams and reviews (book/film recommendations) — each of which you can correct by hand. Ships a private web viewer that can be locked with a password, repairs long posts that the upstream API truncates to its first ~500 characters, counts words by year and month, and backs up attached images for offline reading. The cookie is stored on the local machine only.'
-  zh: '把你本人发过的 QQ 空间说说收进本地库，自动分成「思考/感想」「梦记」「介绍/推荐」三栏，每一栏都能人工纠正；配一个可用口令锁住的私人网页查看器，会把被上游接口截到前 500 字左右的长说明确补回全文，按年月统计字数，并把配图备份到本地离线可读。Cookie 只存在本机。'
+  en: 'Archives the QQ Zone posts you published yourself into a local library, auto-sorted into three columns — thoughts, dreams and reviews (book/film recommendations) — all three of which can be corrected by hand, one column at a time, and undoing a correction never disturbs the other two. Ships a private web viewer that can be locked with a password, repairs long posts that the upstream API truncates to its first ~500 characters, counts words by year and month, and backs up attached images for offline reading. The cookie is stored on the local machine only.'
+  zh: '把你本人发过的 QQ 空间说说收进本地库，自动分成「思考/感想」「梦记」「介绍/推荐」三栏，三栏都能人工纠正 —— 逐条改，一条只动它自己那一栏，撤销也不会连累另外两栏。配一个可用口令锁住的私人网页查看器，会把被上游接口截到前 500 字左右的长说明确补回全文，按年月统计字数，并把配图备份到本地离线可读。Cookie 只存在本机。'
