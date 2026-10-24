@@ -1,0 +1,6 @@
+url: https://github.com/bushizhanghan/dsh-publish-gate
+name: bushizhanghan/dsh-publish-gate
+category: dev
+description:
+  en: 'Pre-publish gate for DSH plugins. Turns every silent failure in the publish path into a deterministic check: package.json completeness (missing exports["."], files omitting lib/ so the tarball is empty, no "type": "module", client declared without a ./client export), UTF-8 BOM, JSON/YAML parse errors, cordis.patch.yml insert rows written at the wrong indent (the bug that makes a plugin install and never mount), insert name mismatches, missing entry exports, require() inside ESM, missing LICENSE or README install line, missing tests, unscoped npm names that return a 403 no granular token can diagnose, versions already on the registry, and missing GitHub repos. Six agent tools; every finding carries its fix. Read-only, no LLM.'
+  zh: DSH 插件的发布门禁。把发布链路上的每个静默坑变成确定性检查：package.json 完整性（缺 exports["."]、files 漏了 lib/ 导致发空包、没写 "type": "module"、声明了 client 却没导出 ./client）、UTF-8 BOM、JSON/YAML 解析错误、cordis.patch.yml 的 insert 行缩进写错（正是让插件装上却永不挂载的那个 bug）、挂载名与 package.json 不一致、入口导出缺失、ESM 里调 require()、缺 LICENSE 或 README 安装行、缺测试、裸包名（granular token 收到无法诊断的 403）、版本已被 registry 占用、GitHub 仓库不存在。六个 agent 工具，每条 finding 都带修复文案。只读，不调 LLM。
