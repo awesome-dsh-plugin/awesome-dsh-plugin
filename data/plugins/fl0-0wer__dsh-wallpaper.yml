@@ -1,0 +1,6 @@
+url: https://github.com/fl0-0wer/dsh-wallpaper
+name: fl0-0wer/dsh-wallpaper
+category: theme
+description:
+  en: 'Photo wallpaper for the DeepSeek Harness web GUI: pick an image in the plugin own Settings section and the host serves it from ~/.dsh/wallpaper behind the whole window, while the surface tokens turn translucent and scrim, panel opacity, blur and saturation get their own sliders.'
+  zh: '给 DSH 换一张图片背景：在插件的设置页选一张图，宿主从 ~/.dsh/wallpaper 提供并铺在整个窗口后面，面板自动半透明，遮罩、面板透明度、模糊、饱和度各有滑杆。'
