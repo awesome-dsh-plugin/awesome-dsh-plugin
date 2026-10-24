@@ -4,4 +4,4 @@ category: usage
 description:
   en: Shows per-reply token usage, answer duration, and running session total under each reply.
   zh: 在每条回答下方显示本轮 Token 用量、回答耗时与会话累计 Token。
-tarball: https://github.com/oxygenforce/dsh-token-usage-badge/releases/download/v1.1.10/dsh-token-usage-badge-1.1.10.tgz
+tarball: https://github.com/oxygenforce/dsh-token-usage-badge/releases/download/v1.1.11/dsh-token-usage-badge-1.1.11.tgz
