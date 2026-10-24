@@ -1,0 +1,7 @@
+url: https://github.com/kdcadmin/dsh_douyin_tools
+name: kdcadmin/dsh_douyin_tools
+category: usage
+description:
+  en: 'Douyin assistant plugin: picks a daily round of videos, reads comments, writes a dated report, likes and comments with an @ mention, and publishes clips rendered by your own ComfyUI.'
+  zh: '抖音助手插件：每天刷一轮视频、读评论、写带日期的日报，可点赞、评论并 @ 你，还能发布你自己 ComfyUI 出的片子。'
+icon: https://raw.githubusercontent.com/kdcadmin/dsh_douyin_tools/main/assets/icon-180.png
