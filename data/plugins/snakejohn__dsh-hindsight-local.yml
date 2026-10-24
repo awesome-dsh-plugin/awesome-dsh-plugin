@@ -1,0 +1,6 @@
+url: https://github.com/snakejohn/dsh-hindsight-local
+name: snakejohn/dsh-hindsight-local
+category: memory
+description:
+  en: 'Long-term memory for dsh via a local Hindsight service: each turn is retained with local timestamps and relevant memories (time-aware, reranked) are recalled into context before replies; each workspace binds to one memory bank, several workspaces can share a bank, and banks can have Chinese names; what gets retained is configurable (default: user messages and AI replies); history is imported only when you choose to; includes a three-step setup page with one-click local deployment (uv + Python 3.12), a sidebar status card and a panel to browse and search memories.'
+  zh: 'dsh 长期记忆（基于本地 Hindsight 服务）：每轮对话带本地时间写入记忆库，回答前按问题与时间检索并经 reranker 排序后注入上下文；每个工作区绑定一个记忆库，多个工作区可共用同一个库，记忆库可起中文名；记住哪些内容可设置（默认只记用户消息与 AI 回复）；以前的对话不自动导入，由用户手动选择导入；提供三步设置页与一键本地部署（自动准备 uv 与 Python 3.12）、侧栏状态卡片及可浏览、搜索记忆的控制面板。'
