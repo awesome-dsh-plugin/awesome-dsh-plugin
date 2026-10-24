@@ -1,0 +1,7 @@
+url: https://github.com/yrsxy/dsh-warm-theme
+name: yrsxy/dsh-warm-theme
+category: theme
+description:
+  en: Five warm, low blue-light color themes that retint the whole DSH interface, including panels and native-leaving tokens, without touching layout.
+  zh: 五套低蓝光暖色配色，整体重着色 DSH 界面（含侧栏、浮层与阴影），零布局改动，卸载即还原。
+icon: https://raw.githubusercontent.com/yrsxy/dsh-warm-theme/main/assets/icon-180.png
