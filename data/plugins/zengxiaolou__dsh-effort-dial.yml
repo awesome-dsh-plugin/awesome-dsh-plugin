@@ -1,0 +1,6 @@
+url: https://github.com/zengxiaolou/dsh-effort-dial
+name: zengxiaolou/dsh-effort-dial
+category: model
+description:
+  en: A rheostat-style reasoning-effort slider in the composer, with Auto ranges and per-model routing, drawn as a whale mascot with a canvas glow.
+  zh: 输入框里的推理强度滑杆（表盘造型 + 鲸鱼娘 canvas 特效），支持 Auto 区间与按模型路由。
