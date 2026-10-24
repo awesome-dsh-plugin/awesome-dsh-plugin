@@ -1,0 +1,6 @@
+url: https://github.com/ck99998888/dsh-video-reader
+name: ck99998888/dsh-video-reader
+category: vision
+description:
+  en: 'Reads a video or audio file into metadata, sampled stills, subtitles and a multilingual speech transcript with speaker labels, captures the live desktop as frames or a recording, and installs its ffmpeg/whisper.cpp/sherpa-onnx toolchain on first use with per-file sha256 checks; all processing stays local.'
+  zh: '读取视频与音频文件的元数据、关键帧、字幕和带说话人标签的多语种转写；把实时桌面抓成帧序列或视频；首次使用时自动安装 ffmpeg / whisper.cpp / sherpa-onnx 并按文件校验 sha256，全部处理都在本机完成。'
