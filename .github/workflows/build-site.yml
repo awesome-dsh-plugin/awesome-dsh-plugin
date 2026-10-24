@@ -13,6 +13,12 @@ on:
         description: Skip the probes and build from cached data (deploy or publish only)
         type: boolean
         default: false
+      # Select one listed entry by its repository name or full URL. This mode needs the probe
+      # cache and cannot be combined with either boolean input.
+      target_repo:
+        description: Refresh one entry's npm metadata and README (owner/repo for a root entry, or its exact listed URL)
+        type: string
+        default: ''
   # A push made with the default GITHUB_TOKEN does not trigger workflows —
   # GitHub suppresses it to stop recursion — so the `push` trigger below never
   # fires for sync-readme's own commit. That commit is the one that adds the
@@ -73,6 +79,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      PROBE_TARGET_REPO: ${{ github.event_name == 'workflow_dispatch' && inputs.target_repo || '' }}
+      TARGET_PROBE_ALL: ${{ github.event_name == 'workflow_dispatch' && inputs.probe_all || '' }}
+      TARGET_SKIP_PROBES: ${{ github.event_name == 'workflow_dispatch' && inputs.skip_probes || '' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -85,6 +95,8 @@ jobs:
           node-version: 22
           # Needed by the catalog publish below; harmless for the site build.
           registry-url: https://registry.npmjs.org
+      - name: Validate targeted refresh input
+        run: node scripts/check-probe-target.mjs
       - run: npm ci
         env:
           # The lockfile pins registry.npmmirror.com URLs. On GitHub runners that CDN
@@ -92,7 +104,7 @@ jobs:
           # (2026-10-19). Fetch from npmjs in CI; local installs keep their own registry.
           npm_config_registry: https://registry.npmjs.org/
           npm_config_replace_registry_host: always
-      - run: node --test scripts/download-window.test.mjs
+      - run: node --test scripts/download-window.test.mjs scripts/targeted-probes.test.mjs
       # Rolling probe cache: unique key so every run saves, restore-keys pulls
       # the most recent.
       #
@@ -184,7 +196,11 @@ jobs:
               if [ "${{ inputs.skip_probes }}" = "true" ]; then full_probe=''; else full_probe=1; fi ;;
             *) full_probe='' ;;
           esac
-          if [ -n "$full_probe" ] || [ ! -s data/npm-map.json ]; then
+          if [ -n "$PROBE_TARGET_REPO" ]; then
+            node scripts/check-probe-target.mjs --require-cache
+            node scripts/probe-npm.mjs
+            node scripts/probe-readmes.mjs
+          elif [ -n "$full_probe" ] || [ ! -s data/npm-map.json ]; then
             node scripts/probe-npm.mjs
             # After probe-npm.mjs, never before: this reads data/npm-map.json
             # to know which entries HAVE a package to probe. Reads and writes
@@ -211,25 +227,16 @@ jobs:
           else
             echo "push build with cached probe data — skipping probes"
           fi
-          # Runs every time, not just nightly: a release-asset URL validated at
-          # submission can 404 later without anyone touching the entry, and the
-          # set is small enough that there is no reason to sample it (#1619).
-          node scripts/probe-tarballs.mjs
-          # Same reasoning, same shape, for screenshots. The PR check validates
-          # that an image URL is well-formed and on GitHub's hosting, never that
-          # it resolves — so a dead link merged clean and published as a broken
-          # picture in the storefront. 41 of 773 were dead the first time anyone
-          # asked. Neither probe blocks the build: a dead URL is dropped from
-          # the published data, not turned into a failure.
-          node scripts/probe-screenshots.mjs
-          # Capability disclosure (#401): what each plugin touches — files,
-          # network, shell, credentials — scanned from the artifact a user
-          # would install. Runs every time, like the two probes above: it is
-          # incremental by RELEASE (a new npm version invalidates that entry's
-          # record) and by AGE for branch-sourced entries, so a normal push
-          # re-scans a handful. The scanner is pinned inside the script; it
-          # executes nothing from the scanned package and opens no sockets.
-          node scripts/probe-capabilities.mjs
+          # The targeted dispatch updates only npm and README caches. Keep the
+          # other probes' usual cadence for normal dispatches and builds.
+          if [ -z "$PROBE_TARGET_REPO" ]; then
+            # Release-asset links can go dead after submission (#1619).
+            node scripts/probe-tarballs.mjs
+            # A valid GitHub-hosted screenshot URL can still return 404.
+            node scripts/probe-screenshots.mjs
+            # Capability disclosure scans install artifacts incrementally.
+            node scripts/probe-capabilities.mjs
+          fi
           node scripts/build-site.mjs
       - uses: actions/upload-pages-artifact@v3
         with:
