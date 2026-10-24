@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/Envoy/tree/main/integrations/dsh/envoy-dsh
+name: regrevia/Envoy#envoy-dsh
+category: browser
+description:
+  en: 'Envoy turns a multimodal link directly into AI-ready material — Markdown, a wiki page, a knowledge-base entry; articles, PDFs and audio take the same path. One skill, adapted for Codex, Claude Code and DeepSeek Harness; this entry is the DeepSeek Harness bundle.'
+  zh: 'Envoy 直接从多模态链接得到 AI 可消费素材——Markdown、wiki、知识库条目；文章、PDF、音频同理。同一套技能适配 Codex、Claude Code 与 DeepSeek Harness，本条目即 DeepSeek Harness 插件。'
+icon: https://raw.githubusercontent.com/regrevia/Envoy/main/integrations/dsh/envoy-dsh/icon.png
