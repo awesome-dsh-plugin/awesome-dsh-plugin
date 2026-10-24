@@ -1,0 +1,6 @@
+url: https://github.com/hzh5021/dsh-qq-voice
+name: hzh5021/dsh-qq-voice
+category: session
+description:
+  en: Mounts a per-channel speaking-rules file into the QQ preset's system prompt only, so that channel answers in one or two lines while every other channel stays untouched.
+  zh: 给 QQ 那一条线单独装一张嘴：把口径文件挂成那段会话的系统提示段，只挂 QQ，别的线一个字不动；改 md 就生效，不必重装插件。
