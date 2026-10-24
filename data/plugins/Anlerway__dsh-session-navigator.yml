@@ -1,0 +1,7 @@
+url: https://github.com/Anlerway/dsh-session-navigator
+name: Anlerway/dsh-session-navigator
+category: session
+description:
+  en: 'Manage DSH sessions the way Windows Explorer manages files: folder tree, tags, notes, recycle bin. Session files never move.'
+  zh: '像 Windows 资源管理器那样管理 DSH 的会话：目录树、标签、备注、回收站，不改动实际会话文件布局。'
+icon: https://raw.githubusercontent.com/Anlerway/dsh-session-navigator/main/assets/icon.png
