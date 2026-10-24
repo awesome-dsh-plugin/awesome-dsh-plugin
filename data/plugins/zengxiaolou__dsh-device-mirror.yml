@@ -1,0 +1,6 @@
+url: https://github.com/zengxiaolou/dsh-device-mirror
+name: zengxiaolou/dsh-device-mirror
+category: tools
+description:
+  en: Live iOS Simulator and Android emulator mirror in the sidebar or a floating overlay, with tap, drag, text input and screenshots relayed back to the device.
+  zh: iOS 模拟器 / 安卓模拟机的实时画面（侧栏或浮层），支持点按、拖动、文字回传与截图。
