@@ -1,0 +1,6 @@
+url: https://github.com/zengxiaolou/dsh-annotation
+name: zengxiaolou/dsh-annotation
+category: ui
+description:
+  en: 'Annotate quoted answer text in the transcript: each selection keeps its quote plus a note of your own, notes pile up as chips in the composer and travel with the message, and two or more also get a chip above the input to jump back or clear them.'
+  zh: '划选回答文字就地加注释：保留原文引用加自己写的备注，每条在草稿里变成一枚胶囊，多条一起随消息发出；两条以上时输入框上方会多一个胶囊用来跳回原文或全部清除。'
