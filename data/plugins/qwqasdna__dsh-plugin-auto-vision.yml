@@ -1,0 +1,6 @@
+url: https://github.com/qwqasdna/dsh-plugin-auto-vision
+name: qwqasdna/dsh-plugin-auto-vision
+category: vision
+description:
+  en: Automatically enriches vision-capable third-party models (Claude 3.5, GPT-4o, Gemini, Qwen-VL) with image input modality to resolve DSH image stripping and recognition failures.
+  zh: 自动为具备视觉能力的第三方模型（Claude 3.5、GPT-4o、Gemini、Qwen-VL 等）注入图片输入模态，根治 DSH 识图降级与无法查看图片问题。
