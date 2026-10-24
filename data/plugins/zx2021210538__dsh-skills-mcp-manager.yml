@@ -1,0 +1,7 @@
+url: https://github.com/zx2021210538/dsh-skills-mcp-manager
+name: zx2021210538/dsh-skills-mcp-manager
+category: ui
+tarball: https://github.com/zx2021210538/dsh-skills-mcp-manager/releases/download/v0.6.0/dsh-skills-mcp-manager-0.6.0.tgz
+description:
+  en: 'Manage skills and MCP servers from one DSH settings panel. Skills are read from disk: browse, search, preview the body, create, rename and delete, with a backup written before every removal. Global MCP servers are the real cordis.patch.yml loader rows; per-project entries mount only for sessions in that project. Each expanded card lists the tools that server actually registered, and a per-server allow/deny rule keeps only the ones you need — a blocked tool never enters the tool registry, so it costs no context on every turn. Every MCP card carries a connection status tag (connected with a tool count, retrying, gave up, activation failed, needs authorization) plus a one-click reconnect, so a server that fails at startup is visible instead of silently missing its tools. Imports existing configs from 26 other MCP clients.'
+  zh: '在 DSH 设置面板里一站式管理技能与 MCP 服务器。技能以磁盘为准：浏览、搜索、预览正文、新建、重命名、删除，删除前自动写一份备份。全局 MCP 就是 cordis.patch.yml 里的真实 Loader 行，项目级条目只挂到对应项目的会话。展开卡片会列出该服务器实际注册的工具，并可只保留需要的那些——被挡下的工具不进工具注册表，因此不占用每一轮的上下文。每张卡片带连接状态标签（已连接并显示工具数 / 重试中 / 已放弃重试 / 激活失败 / 需要授权）与一键重连，让启动时连不上、工具悄悄消失的服务器看得见。另可从 26 个 MCP 客户端导入既有配置。'
