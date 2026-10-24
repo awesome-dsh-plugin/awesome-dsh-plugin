@@ -1,0 +1,6 @@
+url: https://github.com/logb-1/dsh-course-assistant
+name: logb-1/dsh-course-assistant
+category: docs
+description:
+  en: 'Turns course files (PPTX/PDF/DOCX/MD/TXT) into a Markdown/PDF study report: detects the outline from bookmarks or slide titles, flags unreadable text before summarizing, summarizes each chapter into key points, and appends Bilibili course recommendations ranked by relevance and popularity. Zero npm dependencies.'
+  zh: '把课程文件（PPTX/PDF/DOCX/MD/TXT）变成 Markdown/PDF 学习报告：按书签或幻灯片标题识别目录，先判断文字是否可读再逐章提炼知识点并标注重点/难点，附录按相关度与播放量排序给出 B 站配套网课。零 npm 依赖。'
