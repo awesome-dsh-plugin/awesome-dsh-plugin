@@ -1,7 +1,7 @@
 url: https://github.com/ityyq777/dsh-progress-tick
 name: ityyq777/dsh-progress-tick
 category: agi
-tarball: https://github.com/ityyq777/dsh-progress-tick/releases/download/v0.2.1/dsh-progress-tick-0.2.1.tgz
+tarball: https://github.com/ityyq777/dsh-progress-tick/releases/download/v0.2.2/dsh-progress-tick-0.2.2.tgz
 description:
   en: 'Keeps the main agent reporting during long turns: when a turn has run for the configured interval without an informative report, it injects a user-role notice asking the agent to say what it is doing, what is done, and what comes next before continuing. A reply only counts as a report when it is substantive (minReportChars) or hits a marker keyword, so a quick "still working" cannot reset the timer. Adds exponential back-off, stuck detection (the same action repeated N times switches the notice to "are you stuck?"), recent-action summaries from the session log, subagent status, zh/en text, and a /progress command for on-demand reports. Subagents are never nudged and the timer restarts every turn. All 18 settings are volatile, so the settings page applies them live.'
   zh: '让主 agent 在长回合里持续汇报：回合运行到设定间隔仍没有实质汇报，就注入一条用户消息，要求它先说清在做什么、已完成什么、下一步做什么再继续。只有正文达到 minReportChars 字数或命中关键词才算"汇报过"，一句"继续处理中"骗不过计时器。另有指数退避、卡住检测（同一动作连续 N 次改问"卡在哪"）、最近动作摘要（取自会话日志）、子 agent 状态、中英文案，以及随时催报的 /progress 命令。子 agent 不打扰，计时每回合重置；18 个配置项均为 volatile，设置页改完即生效。'
