@@ -1,0 +1,7 @@
+url: https://github.com/Wfssll/dsh-three-pane
+name: Wfssll/dsh-three-pane
+category: ui
+description:
+  en: 'Adds an independently controlled native file explorer beside the conversation, with a folder toggle next to the history control and native previews in the right sidebar.'
+  zh: '在聊天左侧显示可独立开关的原生文件栏，在会话历史开关旁提供文件夹按钮，文件继续由右侧原生侧栏预览。'
+tarball: https://github.com/Wfssll/dsh-three-pane/releases/download/v0.3.0/dsh-three-pane-0.3.0.tgz
