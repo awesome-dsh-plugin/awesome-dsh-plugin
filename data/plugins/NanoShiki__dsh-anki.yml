@@ -1,0 +1,6 @@
+url: https://github.com/NanoShiki/dsh-anki
+name: NanoShiki/dsh-anki
+category: ui
+description:
+  en: 'Native Anki workspace backed by one real headless Anki collection: browse, edit, add and review notes, suspend cards, import and export APKG, and sync with AnkiWeb, with the same collection exposed to the anki AI tool. No Anki desktop app, AnkiConnect or Qt is started.'
+  zh: '原生 Anki 工作区，由真实的独立无界面 Anki 牌库驱动：浏览、编辑、添加与复习笔记，暂停卡片，导入导出 APKG，并与 AnkiWeb 同步；同一牌库同时提供给 anki AI 工具。不启动 Anki 桌面程序，也不依赖 AnkiConnect 或 Qt。'
