@@ -1,0 +1,6 @@
+url: https://github.com/WSNMM3/dsh-session-keeper
+name: WSNMM3/dsh-session-keeper
+category: session
+description:
+  en: 'A session manager for the DeepSeek Harness sidebar: per-workspace category trees with drag-and-drop ordering, pinned sessions hoisted above the categories (or kept inside them, switchable from the view options), an archive partition, and a delete bin where removed sessions keep their logs and can be restored or purged in batches. The host half owns the category and recycle data, the web half renders it; both ship as one plugin.'
+  zh: 'DeepSeek Harness 侧栏的会话管理插件：按工作区划分的分类树，支持拖拽排序；置顶会话可抬到分类上方，也可按开关留在所属分类内；另有归档分区，以及删除回收站——删掉的会话日志留存，可恢复或批量彻底清除。宿主半边掌管分类与回收站数据，网页半边负责渲染，两者作为一个插件一起发布。'
