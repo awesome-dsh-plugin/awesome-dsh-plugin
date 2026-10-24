@@ -1,0 +1,6 @@
+url: "https://github.com/7gzgn/dsh-frame"
+name: "dsh-frame"
+category: usage
+description:
+  en: "See what a conversation actually costs: how many model requests, how big the system prompt and tool table are, cumulative tokens, estimated spend, and how far you are from automatic context compaction. Reads the local session log only; never calls a model, never adds a word to the system prompt."
+  zh: 看清一场对话到底烧了多少：模型请求次数、system prompt 与工具表各占多少、累计 token、估算花费、离上下文自动压缩还有多远。只读本地会话日志，不调模型，不往 system prompt 加一个字。
