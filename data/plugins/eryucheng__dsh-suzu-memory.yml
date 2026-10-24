@@ -1,0 +1,7 @@
+url: https://github.com/eryucheng/dsh-suzu-memory
+name: eryucheng/dsh-suzu-memory
+category: memory
+description:
+  en: Per-session long-term memory for DeepSeek Harness, with memory management, persona settings, and compaction prompts.
+  zh: 为 DeepSeek Harness 提供会话独立的长期记忆、记忆管理、人设设置和压缩提示词。
+tarball: https://github.com/eryucheng/dsh-suzu-memory/releases/download/v0.4.1/dsh-suzu-memory-0.4.1.tgz
