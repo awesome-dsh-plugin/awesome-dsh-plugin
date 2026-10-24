@@ -3,5 +3,5 @@ name: wanted09527/dsh-progress-caption
 category: ui
 tarball: https://github.com/wanted09527/dsh-progress-caption/releases/download/v0.3.0/dsh-progress-caption-0.3.0.tgz
 description:
-  en: 'Progress caption above the composer while a turn runs: the step number, what it is doing (from tool calls, or a local 17-rule pass over the thinking text — never a model call), and running / succeeded / failed with a plain-language failure reason, including host-reported turn failures and retry backoff. Adds a per-turn summary line and a settings sheet for size, colour, animation, the Claude-style marker and a thinking sub-line. No network requests, no model calls, no writes to DSH data.'
-  zh: '本轮运行期间在输入框上方显示进度字幕：第几步、正在做什么（取自工具调用，或由 17 条本机规则从思考文本推断，两种都不调用模型）、进行中/成功/失败以及一句人话失败原因，包括宿主直接给出的回合级失败与上游退避重试。每轮结束另加一行小结，并提供设置面板调整字号、颜色、动画、Claude 三种状态标记与思考原话副行。不发起网络请求、不调用模型、不写入 DSH 数据。'
+  en: 'A one-line caption above the composer that tells you what the AI is doing right now: the step number, the action (e.g. running npm test), and whether it is still going, done, or failed with a short plain-language reason. Inferred locally from tool calls and the thinking text; no model calls, no network requests, no writes to DSH data.'
+  zh: '在输入框上方加一行小字，告诉你 AI 现在第几步、在做什么、成没成，比如「第 3 步 · 正在执行命令 npm test · 琢磨中」。全部靠本机规则推断，不调模型、不联网、不改 DSH 的任何数据。'
