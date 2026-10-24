@@ -1,0 +1,6 @@
+url: https://github.com/cogito0823/dsh-motion
+name: cogito0823/dsh-motion
+category: tools
+description:
+  en: Code-generated math and science animations: render Manim clips, probe frames, and verify formulas.
+  zh: 代码生成的数学与科普动画：渲染 Manim 片段、抽帧自检、公式校验。
