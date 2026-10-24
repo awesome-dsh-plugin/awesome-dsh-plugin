@@ -1,0 +1,7 @@
+url: https://github.com/opencamel/dsh-wx-archive
+name: opencamel/dsh-wx-archive
+category: tools
+tarball: https://github.com/opencamel/dsh-wx-archive/releases/download/v0.2.0/dsh-wx-archive-0.2.0.tgz
+description:
+  en: 'A wx_archive tool that turns a WeChat Official Account article link into a permanent Markdown snapshot via the 2100laike archive service: images are re-hosted so they never break, snapshots survive article deletion, resubmits dedup-hit and return the latest version without spending quota, a content_kind field tells text articles from sticker (image-post) messages, and refresh forces a refetch with a PAT.'
+  zh: 'wx_archive 工具：把公众号文章链接经 2100laike 存档服务转成永久 Markdown 快照——图片转存不裂链、删文后仍可读、重复提交去重秒回不耗额度、content_kind 区分图文与贴图（图片消息）、带 PAT 可 refresh 强制重抓。'

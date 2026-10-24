@@ -1,0 +1,6 @@
+url: https://github.com/opencamel/dsh-x-archive
+name: opencamel/dsh-x-archive
+category: tools
+description:
+  en: 'An x_archive tool that turns an X (Twitter) post link into a permanent Markdown snapshot via the 2100laike archive service: images are re-hosted so they never break, snapshots survive post deletion, resubmits dedup-hit and return the latest version without spending quota, and refresh forces a refetch with a PAT.'
+  zh: 'x_archive 工具：把 X（Twitter）推文链接经 2100laike 存档服务转成永久 Markdown 快照——图片转存不裂链、删帖后仍可读、重复提交去重秒回不耗额度、带 PAT 可 refresh 强制重抓。'
