@@ -1,0 +1,6 @@
+url: https://github.com/zengxiaolou/dsh-annotate-browser
+name: zengxiaolou/dsh-annotate-browser
+category: browser
+description:
+  en: 'Annotation browser in the DSH sidebar: a real Chrome page streamed over CDP with input forwarded, where picking an element or selecting text attaches its source location, component stack, styles and a crop to the chat input.'
+  zh: 'DSH 右侧栏里的标注浏览器：通过 CDP 推流并转发输入的实时页面，点选元素或划选文字后，把源码位置、组件栈、样式与裁图带进聊天输入框。'
