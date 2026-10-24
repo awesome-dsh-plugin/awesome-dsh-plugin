@@ -1,0 +1,6 @@
+url: https://github.com/hzh5021/dsh-memory-watch
+name: hzh5021/dsh-memory-watch
+category: memory
+description:
+  en: Warns the session to flush what matters before context compaction kicks in, and rolls a long-term ledger into a frozen archive with a one-line digest per moved section.
+  zh: 压缩之前先落盘：会话压力到线时先递一句话；另给长期账本做确定性滚动——最旧的几节搬进档案、原处留一行提要，不调模型、不猜内容。
