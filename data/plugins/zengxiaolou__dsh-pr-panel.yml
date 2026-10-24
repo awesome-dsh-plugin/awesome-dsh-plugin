@@ -1,0 +1,6 @@
+url: https://github.com/zengxiaolou/dsh-pr-panel
+name: zengxiaolou/dsh-pr-panel
+category: git
+description:
+  en: Pins the session's pull request in a floating panel and a right-column review pane, with CI, review comments and merge state visible at a glance.
+  zh: 把本会话刚提的 PR 常驻在界面上：浮窗 + 右列审阅面板，一眼看到 CI、评审意见与合并状态。
