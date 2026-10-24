@@ -1,0 +1,6 @@
+url: https://github.com/whybebabo/dsh-file-review-tab
+name: whybebabo/dsh-file-review-tab
+category: git
+description:
+  en: "Sidebar tab that lists a session's file changes by turn, expands line-level diffs and undoes them, with a matching review card at the end of each chat turn."
+  zh: '侧边栏「文件审查」标签页：按轮次列出本会话改动文件、展开行级 diff 并支持撤销，对话尾部同步显示同款审查卡片。'
