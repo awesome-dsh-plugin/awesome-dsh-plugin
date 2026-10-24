@@ -1,0 +1,7 @@
+url: https://github.com/hongdougao111/dsh-archive-trash
+name: hongdougao111/dsh-archive-trash
+category: session
+tarball: https://github.com/hongdougao111/dsh-archive-trash/releases/download/v0.3.2/dsh-archive-trash-0.3.2.tgz
+description:
+  en: Deletes any DSH session right from its sidebar row or in bulk, restores it from a recoverable trash, and applies both instantly without a restart — with ghost entries pruned automatically.
+  zh: 会话删除：任意会话行上直接删、批量清空、从回收站还原，删和还原都立刻生效不用重启；僵尸条目自动清理。
