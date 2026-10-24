@@ -1,0 +1,8 @@
+url: https://github.com/insideyou-0501/dsh-mech-workbench
+name: insideyou-0501/dsh-mech-workbench
+category: tools
+description:
+  en: A workbench for engineering and math problems, with nine tools for reading images, solving, plotting and verifying answers, plus four bundled skills.
+  zh: 工科与数学题解工作台：九个工具覆盖读题、求解、出图与校核，另附四个随包技能。
+icon: https://raw.githubusercontent.com/insideyou-0501/dsh-mech-workbench/main/assets/icon-180.png
+# ci-retrigger
