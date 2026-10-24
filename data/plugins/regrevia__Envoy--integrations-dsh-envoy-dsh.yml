@@ -2,6 +2,6 @@ url: https://github.com/regrevia/Envoy/tree/main/integrations/dsh/envoy-dsh
 name: regrevia/Envoy#envoy-dsh
 category: browser
 description:
-  en: 'DeepSeek Harness bundle for Envoy: mounts the Envoy MCP bridge with the bounded core toolset and registers the Envoy Agent Skill. Paste one Douyin or Bilibili share link — an image-note, a short video, a course episode — and Envoy reads it as traceable material with source locators, transcript timestamps and frames, then organizes it into the Markdown deliverable you asked for; articles, PDFs and audio work the same way. Long runs checkpoint every item, so an interrupted batch resumes instead of starting over.'
-  zh: 'Envoy 的 DeepSeek Harness 插件：挂载有界 core 工具集的 Envoy MCP 桥并注册 Envoy Agent Skill。粘一条抖音或 B 站的图文、短视频、课程分集分享链接，Envoy 就把它读成带来源定位的可追溯材料——转写时间戳、抽帧俱全——再整理成你要的 Markdown 干货稿；文章、PDF、音频同理。长任务逐条落检查点，中断后续跑，不必重来。'
+  en: 'DeepSeek Harness bundle for Envoy: one Douyin or Bilibili video or image-note link in, AI-ready source material out — Markdown, a wiki page, a knowledge-base entry, whatever the job needs. Any public article, PDF, or audio takes the same path.'
+  zh: 'Envoy 的 DeepSeek Harness 插件：一条抖音／B 站视频或图文链接进去，AI 能直接消费的带来源素材出来——Markdown、wiki 页面、知识库条目，包括但不限于这些。文章、PDF、音频同理。'
 icon: https://raw.githubusercontent.com/regrevia/Envoy/main/integrations/dsh/envoy-dsh/icon.png
