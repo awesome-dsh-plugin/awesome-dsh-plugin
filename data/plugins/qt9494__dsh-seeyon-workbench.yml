@@ -1,0 +1,6 @@
+url: https://github.com/qt9494/dsh-seeyon-workbench
+name: qt9494/dsh-seeyon-workbench
+category: ui
+description:
+  en: Seeyon workbench that mounts OA to-dos and meetings, the skill catalog, and one-click aTrust VPN in one panel. Its vendored modules replace the author's dsh-seeyon-todo, dsh-skillhub and dsh-vpn — install this bundle or those plugins, not both.
+  zh: 致远工作台：把 OA 待办、会议、技能市场和 aTrust VPN 一键登录合成一个面板。内含模块替代作者的 dsh-seeyon-todo / dsh-skillhub / dsh-vpn，二选一，不可同装。
