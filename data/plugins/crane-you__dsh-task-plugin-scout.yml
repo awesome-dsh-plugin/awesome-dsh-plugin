@@ -1,0 +1,6 @@
+url: https://github.com/crane-you/dsh-task-plugin-scout
+name: crane-you/dsh-task-plugin-scout
+category: tools
+description:
+  en: Ranks this DeepSeek Harness profile's installed, disabled and marketplace plugins for the task at hand, and prints the exact next step for each — enable, install, or nothing.
+  zh: 按任务排序本 profile 的插件（已启用 / 已安装但未启用 / 市场可安装），并给出每个候选的确切下一步——启用、安装，或无需操作。
