@@ -1,5 +1,5 @@
-url: https://github.com/caob23/dsh-browser-control
-name: caob23/dsh-browser-control
+url: https://github.com/angelky7/dsh-browser-control
+name: angelky7/dsh-browser-control
 category: browser
 description:
   en: "Controls your real Chrome from DSH over a local WebSocket bridge: tab management, navigation, DOM snapshots, page JS evaluation, clicks, typing, screenshots, waits and dialog handling behind a Settings toggle."
