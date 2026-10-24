@@ -2,5 +2,5 @@ url: https://github.com/pairun325/dsh-whale-sense
 name: pairun325/dsh-whale-sense
 category: vision
 description:
-  en: 'Screen companion for DeepSeek Harness on Windows: a background helper diffs periodic screenshots and, when the picture changes enough, queues a screenshot-backed note into the session so the assistant can look and answer through the subtitle window. Ships sense_state, sense_config and sense_snap tools plus a small panel; off by default, with cooldown, hourly cap and a window-title filter.'
-  zh: '给 DSH 配一个陪看的伴：后台定时截屏并比较画面差异，变化够大时把带截图的提示塞回会话，让助手看一眼再通过字幕说话。带 sense_state、sense_config、sense_snap 三个工具和小面板；默认关闭，有冷却、每小时上限和窗口标题过滤。'
+  en: 'Screen companion for DeepSeek Harness on Windows: a background helper diffs periodic screenshots and, when the picture changes enough, queues a screenshot-backed note into the session so the assistant can look and answer through the subtitle window. Ships sense_state, sense_config and sense_snap tools plus a small panel; off by default, with cooldown, hourly cap and a window-title filter. Requires Python 3 with Pillow (used by the watcher helper) and dsh-whale-voice for the subtitle window.'
+  zh: '给 DSH 配一个陪看的伴：后台定时截屏并比较画面差异，变化够大时把带截图的提示塞回会话，让助手看一眼再通过字幕说话。带 sense_state、sense_config、sense_snap 三个工具和小面板；默认关闭，有冷却、每小时上限和窗口标题过滤。需要 Python 3 + Pillow（截屏 helper 用）以及 dsh-whale-voice（字幕窗）。'
