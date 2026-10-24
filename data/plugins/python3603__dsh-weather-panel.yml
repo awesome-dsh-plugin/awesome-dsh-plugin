@@ -1,6 +1,7 @@
 url: https://github.com/python3603/dsh-weather-panel
 name: python3603/dsh-weather-panel
 category: ui
+icon: 'https://raw.githubusercontent.com/python3603/dsh-weather-panel/main/docs/assets/icon-256.png'
 description:
   en: 'Sidebar weather panel: current conditions, 5-day and 24-hour forecasts, an hourly rain chart, temperature history, CMA alerts with graded reminders and county-level matching, a radar mosaic, FY-4B satellite imagery, typhoon tracks, and ECMWF / NW Pacific sea surface temperature charts.'
   zh: '侧边栏天气面板：当前天气、5 天与 24 小时预报、逐小时降水、历史气温、中央气象台预警（分级提醒、区县级匹配）、雷达拼图、风云四号 B 星卫星云图、台风路径，以及 ECMWF 与西北太平洋海表温度专业图。'
