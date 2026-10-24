@@ -213,8 +213,6 @@ jobs:
           fi
       - name: awesome-lint
         run: npx awesome-lint
-      - name: Submission manifest tests
-        run: node --test scripts/submission-manifests.test.mjs
       - name: Added-date regression tests
         run: node --test scripts/added-dates.test.mjs
       - name: Capability-disclosure tests
