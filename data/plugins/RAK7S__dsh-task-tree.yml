@@ -1,0 +1,7 @@
+url: https://github.com/RAK7S/dsh-task-tree
+name: RAK7S/dsh-task-tree
+category: ui
+description:
+  en: A draggable task-tree panel inside the chat page: capture tasks by voice or text, drag to reorder, edge-snapping collapse, and a plain-text queue file you can edit or version yourself.
+  zh: 藏在页面里的任务树面板：语音或打字入库、拖动排序、贴边收起，数据是工作区里的纯文本 queue.md，随时可改可用 git 管。
+tarball: https://github.com/RAK7S/dsh-task-tree/releases/download/v0.1.0/dsh-task-tree-0.1.0.tgz
