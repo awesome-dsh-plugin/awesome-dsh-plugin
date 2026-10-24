@@ -1,0 +1,6 @@
+url: https://github.com/18383337799/dsh-conversation-aurora
+name: 18383337799/dsh-conversation-aurora
+category: ui
+description:
+  en: "Full-canvas animated backgrounds for the DSH conversation pane, with ten scenes: starfield, code rain, circuit, sword, cat, girl, fighter jet, racer, snow and bubbles. Effects run only while the agent is working; a center veil keeps message text readable, with light/dark palettes and reduced-motion support."
+  zh: "给 DSH 对话区加一层整屏动效背景，十种场景：星空跃迁、代码雨、电路脉冲、华山论剑、小猫散步、小女生、飞机大战、赛车、飘雪、肥皂泡。只在 Agent 工作时播放，中间留出正文可读的纱罩，自动适配明暗主题并支持减少动态效果。"
