@@ -1,0 +1,6 @@
+url: https://github.com/hzh5021/dsh-daily-read
+name: hzh5021/dsh-daily-read
+category: usage
+description:
+  en: Registers /daily, which sends the model to read the newest bili-scroll report and say what it understood instead of repeating the text; a sidebar panel runs the same command.
+  zh: 日报一键读：敲 /daily 就把「去读最新那篇刷B站日报」塞进当前会话——只给路径不给正文，让它自己读原文；侧栏面板发的是同一条命令。
