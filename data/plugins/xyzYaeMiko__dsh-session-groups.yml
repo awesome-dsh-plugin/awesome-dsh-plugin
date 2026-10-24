@@ -1,0 +1,7 @@
+url: https://github.com/xyzYaeMiko/dsh-session-groups
+name: xyzYaeMiko/dsh-session-groups
+category: ui
+icon: https://raw.githubusercontent.com/xyzYaeMiko/dsh-session-groups/main/assets/icon-180.png
+description:
+  en: Edge-style nested session groups for the DSH sidebar, with workspace tree, single-list view, recursive sorting, RGB color customization, and collapsed status summaries.
+  zh: DSH 侧栏会话分组插件，支持最多三层的组内分组、工作区树、单列表、递归排序、RGB 自定义颜色和折叠状态汇总。
