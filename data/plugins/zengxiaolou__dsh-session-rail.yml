@@ -1,0 +1,8 @@
+# Submission file for awesome-dsh-plugin (`data/plugins/<owner>__<repo>.yml`).
+# Copy it to `data/plugins/zengxiaolou__dsh-session-rail.yml` in that repo (or a PR does).
+url: https://github.com/zengxiaolou/dsh-session-rail
+name: zengxiaolou/dsh-session-rail
+category: session
+description:
+  en: Five-state session counters in the conversation header (running / asking / error / interrupted / unread), a pinnable detail panel, per-workspace badges in the left rail, and a Progress tab for long tasks.
+  zh: 对话页顶部五态会话计数（运行 / 询问 / 出错 / 中断 / 未读）、可钉住的明细浮层、左栏工作区徽标，以及右栏长任务进度视图；不展开文件夹就知道哪里在跑、哪里在等你回答。
