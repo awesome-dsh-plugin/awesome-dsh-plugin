@@ -1,5 +1,5 @@
-url: https://github.com/tuoLuoSuan/dsh-peak-badge
-name: tuoLuoSuan/dsh-peak-badge
+url: https://github.com/tuoLuoSuan/dsh-peak
+name: tuoLuoSuan/dsh-peak
 category: ui
 description:
   en: 'A chip at the left end of the composer tool row showing whether DeepSeek bills at peak or off-peak right now. Clicking it opens a card with the current state and rate, the next switch with a countdown, and why this instant is in that state: a weekend, a named statutory holiday, a 调休 make-up workday, or simply outside the peak windows. Times are resolved in Beijing time with an explicit UTC offset, so the verdict does not depend on the machine clock; a hard-coded 2026 Chinese holiday table carries the 33 holiday days and the six 调休 workdays, and a year beyond the table says so instead of guessing.'
