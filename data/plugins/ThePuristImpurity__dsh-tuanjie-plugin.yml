@@ -1,0 +1,6 @@
+url: https://github.com/ThePuristImpurity/dsh-tuanjie-plugin
+name: ThePuristImpurity/dsh-tuanjie-plugin
+category: tools
+description:
+  en: Drive the Tuanjie editor from DeepSeek Harness by connecting to the running editor's Codely bridge, creating and modifying GameObjects, editing component properties, running editor commands, and executing C# inside the editor process.
+  zh: 从 DeepSeek Harness 驱动团结引擎编辑器：连接已运行编辑器的 Codely 桥，创建与修改 GameObject、改组件属性、执行编辑器命令，并在编辑器进程里跑 C#。
