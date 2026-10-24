@@ -1,0 +1,6 @@
+url: https://github.com/xx529/dsh-capability-settings
+name: xx529/dsh-capability-settings
+category: ui
+description:
+  en: "Adds a capability panel to the DSH web GUI: browse, install (upload, zip, host path or URL), enable, edit and export skills, and add or edit Claude Code-compatible MCP servers, at global and per-project scope — with project copies, per-project shadow stubs, live mount status and a zero-side-effect connection probe. A session view toggles capabilities for the current conversation only, and a TypeSafe Jev tab scores skills and MCP servers for the session from the input draft. Requires the dsh web shell 0.2.0-rc.2 or later."
+  zh: "在 DSH Web GUI 中加入能力面板：浏览、安装（上传 / zip / 宿主路径 / URL）、启停、编辑与导出技能，新增与编辑 Claude Code 兼容的 MCP 服务器，覆盖全局与项目双作用域（项目副本、屏蔽占位、默认关闭声明），显示实时挂载状态并提供零副作用连通性探测；会话视图只对当前对话开关能力；「Jev 模型」Tab 用 TypeSafe Jev 按输入草稿为本会话技能与 MCP 打分。需 dsh Web 外壳 0.2.0-rc.2 及以上。"
