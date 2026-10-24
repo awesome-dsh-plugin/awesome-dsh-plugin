@@ -1,0 +1,7 @@
+url: https://github.com/vamyane/dsh-brain-viewer
+name: vamyane/dsh-brain-viewer
+category: ui
+description:
+  en: Brain-shaped relationship graph viewer for DeepSeek Harness with a Markdown knowledge-base pipeline that imports documents and builds the graph.
+  zh: 把 Markdown 笔记编译成脑形关系图谱的 DSH 侧栏查看器，附带文档导入与图谱构建管线。
+icon: https://raw.githubusercontent.com/vamyane/dsh-brain-viewer/main/assets/icon.png
