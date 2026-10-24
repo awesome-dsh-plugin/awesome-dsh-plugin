@@ -2,5 +2,5 @@ url: https://github.com/sweet560/dsh-plugin-deepseek-chat
 name: sweet560/dsh-plugin-deepseek-chat
 category: ui
 description:
-  en: 'Sidebar panel that opens chat.deepseek.com full-width in the DSH main area, remembers the last conversation, and contains embedded-page crashes.'
-  zh: '在 DSH 左侧栏加入 DeepSeek 聊天入口，主内容区全宽内嵌 chat.deepseek.com，记住上次会话，并把内嵌页崩溃限制在面板内。'
+  en: 'Sidebar panel that embeds chat.deepseek.com full-width in the DSH main area (desktop shell only), restores the last conversation, and keeps a crashed embedded page inside the panel.'
+  zh: '在 DSH 左侧栏加入 DeepSeek 聊天入口，主内容区全宽内嵌 chat.deepseek.com（仅桌面版），恢复上次会话，并把内嵌页崩溃限制在面板内。'
