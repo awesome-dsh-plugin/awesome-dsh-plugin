@@ -1,0 +1,7 @@
+url: https://github.com/Beership/dsh-download-progress
+name: Beership/dsh-download-progress
+category: ui
+description:
+  en: Live download progress in the DSH session header — percentage, transfer speed, ETA and phase per download, with file-size probing before a transfer starts and byte-range resume after an interruption.
+  zh: DSH 会话头里的下载进度：百分比、速率、剩余时间与阶段，下载前先探测文件大小，中断后按字节区间续传。
+tarball: https://github.com/Beership/dsh-download-progress/releases/download/v0.3.2/dsh-download-progress-0.3.2.tgz
