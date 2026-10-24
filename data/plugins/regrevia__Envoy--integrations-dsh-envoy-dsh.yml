@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/Envoy/tree/main/integrations/dsh/envoy-dsh
+name: regrevia/Envoy#envoy-dsh
+category: browser
+description:
+  en: 'DeepSeek Harness bundle for Envoy: mounts the Envoy MCP bridge with the bounded core toolset and registers the Envoy Agent Skill, so the links, videos, audio and PDFs you paste are read through Envoy and come back as traceable material with source locators instead of a duplicate full-page fetch.'
+  zh: 'Envoy 的 DeepSeek Harness 插件：挂载有界 core 工具集的 Envoy MCP 桥并注册 Envoy Agent Skill，把用户给的链接、视频、音频与 PDF 交给 Envoy 读取，返回带来源定位的可追溯材料，而不是让内置抓取重复拉整页。'
+icon: https://raw.githubusercontent.com/regrevia/Envoy/main/integrations/dsh/envoy-dsh/icon.png
