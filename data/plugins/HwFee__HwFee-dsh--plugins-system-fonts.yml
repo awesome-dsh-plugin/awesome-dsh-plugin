@@ -2,5 +2,5 @@ url: https://github.com/HwFee/HwFee-dsh/tree/master/plugins/system-fonts
 name: HwFee/HwFee-dsh#system-fonts
 category: ui
 description:
-  en: Separate font slots for content, code and terminal text, plus line height and letter spacing. Typography only — it never touches colour.
-  zh: 内容、代码与终端文字各一个字体槽，另加行距与字距。只改排印，不动配色。
+  en: 'Separate font slots for content, code and terminal text, plus an interface font, an interface-size stepper and an inline-code size stepper, with line-height and letter-spacing controls. Typography only — it never touches colour.'
+  zh: '内容、代码与终端文字各一个字体槽，另加界面字体、界面字号步进器与行内代码字号步进器，附行距与字距。只改排印，不动配色。'
