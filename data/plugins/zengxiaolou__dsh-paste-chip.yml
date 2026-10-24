@@ -1,0 +1,6 @@
+url: https://github.com/zengxiaolou/dsh-paste-chip
+name: zengxiaolou/dsh-paste-chip
+category: ui
+description:
+  en: Long pastes collapse into one expandable chip — hover for the full text, the draft expands in place on send, and long writes from other plugins are adopted too.
+  zh: 长文本粘贴自动折叠成可展开的胶囊，悬停看正文与上下文，发送时按原位展开；也接管其他插件写入的长文本。
