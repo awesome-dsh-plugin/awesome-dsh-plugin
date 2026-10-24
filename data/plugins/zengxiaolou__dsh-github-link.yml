@@ -1,0 +1,6 @@
+url: https://github.com/zengxiaolou/dsh-github-link
+name: zengxiaolou/dsh-github-link
+category: git
+description:
+  en: Turns GitHub, GitLab and Gitee links in replies into hover cards with stars, language and issue/PR status, one-click clone copy, and sidebar-browser opening.
+  zh: 把回复里的 GitHub / GitLab / Gitee 链接变成可悬停的仓库卡片：简介、星标、语言、issue/PR 状态，一键复制 clone，点击在右侧栏浏览器打开。
