@@ -1,0 +1,8 @@
+url: https://github.com/Eveneve-night/dsh-plugin-steward
+name: Eveneve-night/dsh-plugin-steward
+category: market
+description:
+  en: "Adds a plugin panel to the chat composer for managing the installed DeepSeek Harness plugins: list them, switch them on or off, edit a plugin's settings, and hide one plugin's tools or MCP servers from a single conversation."
+  zh: "在对话输入框上加入插件面板，用来管理本机已装的 DSH 插件：列出全部插件、全局启停、逐个编辑插件设置，并可把某个插件的工具或 MCP 服务器只在这一个对话里对模型隐藏。"
+icon: https://raw.githubusercontent.com/Eveneve-night/dsh-plugin-steward/main/assets/icon-180.png
+tarball: https://github.com/Eveneve-night/dsh-plugin-steward/releases/latest/download/dsh-plugin-steward.tgz
