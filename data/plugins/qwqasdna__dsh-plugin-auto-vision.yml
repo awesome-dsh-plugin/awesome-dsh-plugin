@@ -2,5 +2,5 @@ url: https://github.com/qwqasdna/dsh-plugin-auto-vision
 name: qwqasdna/dsh-plugin-auto-vision
 category: vision
 description:
-  en: Automatically enriches vision-capable third-party models (Claude 3.5, GPT-4o, Gemini, Qwen-VL) with image input modality to resolve DSH image stripping and recognition failures.
-  zh: 自动为具备视觉能力的第三方模型（Claude 3.5、GPT-4o、Gemini、Qwen-VL 等）注入图片输入模态，根治 DSH 识图降级与无法查看图片问题。
+  en: Finds image-capable models (Claude, GPT-4o, Gemini, Qwen-VL, ...) that are declared text-only, which makes DSH replace images with a placeholder, and writes input [text, image] into your own llm-pi-ai patch layer.
+  zh: 找出支持识图却被声明为纯文本的模型（Claude、GPT-4o、Gemini、Qwen-VL 等；DSH 会把图片替换成占位符），并把 input [text, image] 写入你自己的 llm-pi-ai 补丁层。
