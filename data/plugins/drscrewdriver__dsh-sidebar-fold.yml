@@ -1,7 +1,7 @@
 url: https://github.com/drscrewdriver/dsh-sidebar-fold
 name: drscrewdriver/dsh-sidebar-fold
 category: ui
-tarball: https://github.com/drscrewdriver/dsh-sidebar-fold/releases/download/v0.1.1/dsh-sidebar-fold-0.1.1.tgz
+tarball: https://github.com/drscrewdriver/dsh-sidebar-fold/releases/download/v0.1.2/dsh-sidebar-fold-0.1.2.tgz
 description:
   en: 'Folds the sidebar''s add-on panel rows (schedules, agent teams, plugin market, context pages, …) under the shipped "More" row: a 28x28 chevron toggle on that row collapses them into a single header line and expands them back, the fold state persists per window, the rows kept visible are chosen with per-row switches read from the live sidebar, and each managed row''s icon + label can be aligned left, centre or right. Client-only plugin: adds DOM, patches no host bundle, and uninstalls back to the shipped sidebar.'
   zh: 把侧边栏的加项面板行（自动化任务、agent 团队、插件市场、上下文页等）收进宿主「更多」行：在该行挂一个 28x28 箭头按钮，点一下把它们收成一行、再点复原；折叠状态按窗口持久化，保持可见的行用逐行开关从当前侧边栏实时枚举后选择，被管理行的图标与文字还能切换左/中/右对齐。纯 client 插件：只新增 DOM，不打宿主补丁，卸载后恢复原样。
