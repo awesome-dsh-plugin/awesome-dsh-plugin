@@ -1,0 +1,6 @@
+url: https://github.com/MingHuanYue/dsh-iter-memory
+name: MingHuanYue/dsh-iter-memory
+category: memory
+description:
+  en: "Iteration Memory: a state curve that drifts back to baseline on its own, plus occasional unprompted messages. Low state makes it more likely to stay quiet; speaking and being answered moves the state."
+  zh: "迭代记忆：一条会自己退回基线的状态曲线，加不定时自己开口。状态低时更容易忍住不说，说了有没有人应又会把状态改掉。"
