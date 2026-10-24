@@ -2,5 +2,5 @@ url: https://github.com/zz12hui/dsh-local-writing-suite
 name: zz12hui/dsh-local-writing-suite
 category: skill
 description:
-  en: Adds two audit tools and four skills for Chinese fiction drafting and document review — seven-dimension AI-flavor scoring with line-numbered blocking findings, plus file-backed continuity state for long manuscripts.
-  zh: 提供两个审查工具与四个技能，覆盖中文小说写作与文档审稿：七维 AI 味打分、带行号的阻断项，以及落盘的长篇连续性状态。
+  en: Adds two audit tools and four skills for Chinese medium-to-long texts (fiction among them) and document review — seven-dimension AI-flavor scoring with line-numbered blocking findings, plus file-backed continuity state for long manuscripts.
+  zh: 提供两个审查工具与四个技能，覆盖中长文本（例如小说）与文档审稿：七维 AI 味打分、带行号的阻断项，以及落盘的长篇连续性状态。
