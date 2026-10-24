@@ -1,0 +1,7 @@
+url: https://github.com/FujiwaraReisen/dsh-live2dwaifu
+name: FujiwaraReisen/dsh-live2dwaifu
+category: ui
+description:
+  en: 'Shows a Live2D character in the bottom-right corner of the DSH web UI — blinking, breathing, lip-syncing while it talks, with seven moods. Models are never bundled: every user drops in their own folder.'
+  zh: '在 DSH 网页右下角放一个 Live2D 角色：会眨眼、会呼吸、说话时嘴动、心情变了眉毛跟着动。模型不用内置，谁装谁放自己的文件夹。'
+icon: https://raw.githubusercontent.com/FujiwaraReisen/dsh-live2dwaifu/main/icon.png
