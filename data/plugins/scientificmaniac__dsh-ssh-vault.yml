@@ -1,0 +1,8 @@
+url: https://github.com/scientificmaniac/dsh-ssh-vault
+name: scientificmaniac/dsh-ssh-vault
+category: remote
+description:
+  en: Store SSH hosts in an AES-256-GCM vault and let the agent run commands on them by alias, with passwords handed to ssh through SSH_ASKPASS instead of the command line.
+  zh: 把 SSH 主机存进 AES-256-GCM 加密保险库，智能体按别名执行命令，口令经 SSH_ASKPASS 交给 ssh 而不进入命令行。
+icon: https://raw.githubusercontent.com/scientificmaniac/dsh-ssh-vault/main/assets/icon-180.png
+tarball: https://github.com/scientificmaniac/dsh-ssh-vault/releases/download/v1.14.2/dsh-ssh-vault-1.14.2.tgz
