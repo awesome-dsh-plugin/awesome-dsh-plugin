@@ -1,0 +1,6 @@
+url: https://github.com/hzh5021/dsh-qq
+name: hzh5021/dsh-qq
+category: remote
+description:
+  en: 'Bridges a OneBot QQ bot into DSH: the owner''s direct messages open a session on the same home, answers go back to QQ, and files named with [SEND_FILE: path] are delivered.'
+  zh: '把 QQ 接成一条能进来的路：主人私聊一到就地开一个会话（读同一个家、同一份起床包），答完发回去；正文带一行 [SEND_FILE: 绝对路径] 能把文件送到手机上。'
