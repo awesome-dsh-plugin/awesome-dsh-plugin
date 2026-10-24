@@ -1,0 +1,6 @@
+url: https://github.com/hzh5021/dsh-wakeup
+name: hzh5021/dsh-wakeup
+category: memory
+description:
+  en: Injects your home folder — identity, house rules, recent diary and ledger — into every new session before anyone speaks, and keeps that home writable so the agent can amend its own persona.
+  zh: 起床包：每开一段新对话，赶在人开口之前把家读一遍注入会话——身份、规矩、错题、日记和账；家还是可写的，对话里认下的东西当场写回去，人设由它自己改。
