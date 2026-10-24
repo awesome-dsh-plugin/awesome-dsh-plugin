@@ -1,0 +1,7 @@
+url: https://github.com/Windsander/Mebular/tree/main/packages/dsh-plugin
+name: Windsander/Mebular#packages/dsh-plugin
+category: memory
+icon: https://raw.githubusercontent.com/Windsander/Mebular/main/packages/dsh-plugin/assets/icon-180.png
+description:
+  en: 'Decentralized, offline-first graph memory and task graph for DSH, with signed facts, multi-device sync, and the shared Mebular Console embedded in a sidebar panel.'
+  zh: '去中心化、离线优先的 DSH 图式记忆与任务图：签名事实、多设备同步，并在侧边栏复用 Mebular 共享控制台。'
