@@ -1,0 +1,6 @@
+url: https://github.com/361533652/dsh-token-bi
+name: 361533652/dsh-token-bi
+category: usage
+description:
+  en: 'Cross-session token dashboard for DSH: daily stacked columns, hourly rhythm, model and workspace splits, call tree, and detailed per-turn/search timeline.'
+  zh: '跨会话 token 消耗看板：每日堆叠柱状、按小时节奏、模型与工作区分布、调用树，以及包含联网搜索与辅助调用的逐轮时间线。'

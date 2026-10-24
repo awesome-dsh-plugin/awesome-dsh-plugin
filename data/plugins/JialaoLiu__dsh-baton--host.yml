@@ -1,5 +1,5 @@
 url: https://github.com/JialaoLiu/dsh-baton/tree/main/host
-name: JialaoLiu/dsh-baton#host
+name: JialaoLiu/dsh-baton#dsh-baton
 category: workflow
 description:
   en: 'Takes tasks from Claude Code, Codex or any MCP client (through the dsh-baton-mcp server) over an owner-only local socket: creates or continues a specific Harness session, runs it live in the UI labelled with the sender, and hands the result back when the turn ends. 12 MCP tools cover workspaces, sessions and runs.'

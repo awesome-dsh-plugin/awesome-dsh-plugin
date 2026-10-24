@@ -2,5 +2,5 @@ url: https://github.com/Knight-Zjy/dsh-workspace-categories
 name: Knight-Zjy/dsh-workspace-categories
 category: ui
 description:
-  en: 'Category tree for the DSH sidebar workspace browser: workspaces and their sessions nest under user-made categories (collapsed state remembered), rows drag between categories, a new workspace can be created straight into one through the directory picker, categories rename and delete in place, and a footer toggle switches the panel back to the built-in list.'
-  zh: 'DSH 侧边栏工作区浏览器的分类树：工作区与其会话挂到自建分类下（折叠状态记忆），行可在分类间拖拽，新建工作区可直接落进某个分类（走系统目录选择器），分类可原地重命名与删除，底栏开关可把面板切回原生列表。'
+  en: 'Category tree for the DSH sidebar workspace browser: workspaces and their sessions nest under user-made categories (collapsed state remembered), rows drag between categories, a new workspace can be created straight into one through the directory picker, categories rename and delete in place, sessions archive and unarchive from their own row (the built-in browser''s stop-active-work confirmation included) alongside a hide / show / only-archived filter, row buttons carry the app''s own hover tooltips, and a footer toggle switches the panel back to the built-in list.'
+  zh: 'DSH 侧边栏工作区浏览器的分类树：工作区与其会话挂到自建分类下（折叠状态记忆），行可在分类间拖拽，新建工作区可直接落进某个分类（走系统目录选择器），分类可原地重命名与删除，会话行可归档 / 取消归档（运行中的会话走官方同款「停止并归档」确认）并配隐藏 / 含归档 / 仅归档三态筛选，行内按钮悬停有应用自带样式的提示，底栏开关可把面板切回原生列表。'

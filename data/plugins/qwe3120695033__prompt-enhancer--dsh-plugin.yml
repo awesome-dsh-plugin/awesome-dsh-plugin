@@ -4,4 +4,4 @@ category: ui
 description:
   en: 'Four-tier prompt enhancer for the composer — a button and a global shortcut rewrite the draft as a light tidy-up, a single paragraph, a five-section brief, or an eight-section system prompt, with a before/after panel, fill-back and undo. Never changes intent, never invents requirements.'
   zh: '输入框四档提示词增强——按钮或全局热键把草稿改写为轻量润色、单段提示词、五段任务书或八段系统提示词，支持前后对比、回填与撤销；不改变原意、不凭空编造需求。'
-tarball: https://github.com/qwe3120695033/prompt-enhancer/releases/download/v1.1.0/dsh-prompt-enhance-cn-0.3.0.tgz
+tarball: https://github.com/qwe3120695033/prompt-enhancer/releases/download/v1.2.0/dsh-prompt-enhance-cn-0.3.1.tgz

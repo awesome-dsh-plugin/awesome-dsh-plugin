@@ -2,6 +2,6 @@ url: https://github.com/gulagala001/dsh-intelligent-ui
 name: gulagala001/dsh-intelligent-ui
 category: ui
 description:
-  en: 'Interactive calculators, charts, forms, checklists, simulations and games in DSH replies, with local controls, native artifact expansion, and saved UI state.'
-  zh: '在 DSH 回复中呈现可本地操作的计算器、图表、表单、清单、模拟与小游戏，支持原生作品展开和界面状态保存恢复。'
-tarball: https://github.com/gulagala001/dsh-intelligent-ui/releases/download/v0.2.1-rc.2.iui.1.0.11/dsh-intelligent-ui-0.2.1-rc.2.iui.1.0.11.tgz
+  en: "Native interactive answers, editable cards and on-demand UI skills for DSH."
+  zh: "DSH 原生交互式回答、可编辑卡片与按需界面技能。"
+tarball: https://github.com/gulagala001/dsh-intelligent-ui/releases/download/v0.2.1-rc.2.iui.1.0.12/dsh-intelligent-ui-0.2.1-rc.2.iui.1.0.12.tgz

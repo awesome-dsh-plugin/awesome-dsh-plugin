@@ -2,7 +2,7 @@
 url: https://github.com/Uid-762/dsh-ai-workbench
 name: Uid-762/dsh-ai-workbench
 category: ui
-tarball: https://github.com/Uid-762/dsh-ai-workbench/releases/download/v0.8.2/dsh-ai-workbench.tgz
+tarball: https://github.com/Uid-762/dsh-ai-workbench/releases/download/v0.8.3/dsh-ai-workbench.tgz
 description:
   en: 'Turns one plain-language request into a live workbench window: a sidebar panel asks a few clarifying questions, the model writes a single-file HTML artifact, and the plugin mounts it in a resizable floating window or a standalone browser tab. Declared window actions are recorded as info-level project journal entries (without their payloads), and workbenches can be imported, exported, or installed from a market index.'
   zh: '用一句大白话换来一个能用的工作台窗口：侧边栏面板先问几个带推荐选项的问题，模型据此写一个单文件 HTML 产物，插件把它挂成可缩放的浮层窗口或独立标签页。窗口里声明的动作会以 info 级别记进项目日志（不含动作数据）；工作台还能导入、导出，或从市场索引一键安装。'

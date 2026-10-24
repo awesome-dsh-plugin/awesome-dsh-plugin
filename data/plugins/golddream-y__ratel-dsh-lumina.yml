@@ -2,5 +2,5 @@ url: https://github.com/golddream-y/ratel-dsh-lumina
 name: golddream-y/ratel-dsh-lumina
 category: ui
 description:
-  en: 'Customizable composer glow, send transitions and streaming feedback for DeepSeek Harness, with per-effect controls and reduced-motion support.'
-  zh: '为 DeepSeek Harness 提供可调节的输入框流光、发送转场与流式反馈，支持效果开关并跟随系统减少动态设置。'
+  en: 'Let interaction glow. A subtle layer of motion for DeepSeek Harness, with customizable effects and reduced-motion support.'
+  zh: '让交互，泛起流光。为 DeepSeek Harness 添一层恰到好处的动效，支持效果调整并跟随系统「减少动态效果」。'
