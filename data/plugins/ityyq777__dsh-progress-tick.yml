@@ -1,0 +1,7 @@
+url: https://github.com/ityyq777/dsh-progress-tick
+name: ityyq777/dsh-progress-tick
+category: agi
+tarball: https://github.com/ityyq777/dsh-progress-tick/releases/download/v0.1.0/dsh-progress-tick-0.1.0.tgz
+description:
+  en: 'Keeps the main agent reporting during long turns: once a turn has run for the configured interval with no progress report, it injects a user-role notice asking the agent to say what it is doing and what comes next before it continues. Subagents are skipped, the timer restarts every turn, and the interval (default 5 minutes, 10 seconds to 24 hours) is set on the plugin settings page and applied live.'
+  zh: '让主 agent 在长回合里持续汇报：一个回合连续运行到设定间隔仍没汇报，就注入一条用户消息，要求它先说清在做什么、下一步做什么再继续。子 agent 不打扰，计时每回合重置，间隔（默认 5 分钟，10 秒 ~ 24 小时）在插件设置页可改并即时生效。'
