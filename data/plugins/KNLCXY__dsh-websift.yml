@@ -1,0 +1,8 @@
+url: https://github.com/KNLCXY/dsh-websift
+name: KNLCXY/dsh-websift
+category: browser
+tarball: https://github.com/KNLCXY/dsh-websift/releases/download/v1.0.0/dsh-websift-1.0.0.tgz
+description:
+  en: 'Token-efficient web reading for DeepSeek Harness: one call fetches several pages through a real Chrome/Edge over CDP, gates them by relevance and returns a single digest, cutting context tokens by 80-98%. Real search URLs, login flow, screenshots, three proxy modes.'
+  zh: '省 token 的网页阅读：底层是真 Chrome/Edge（CDP），一次调用读完多个页面、按相关性筛掉不相关的，只回一段带账本的摘要（实测省 80–98% 上下文）。真实搜索链接、登录态、截图、三档代理。'
+icon: https://raw.githubusercontent.com/KNLCXY/dsh-websift/main/docs/icon.png
