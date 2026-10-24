@@ -1,0 +1,6 @@
+url: https://github.com/qian-dsh/dsh-session-map
+name: qian-dsh/dsh-session-map
+category: ui
+description:
+  en: "Adds a third tab to the DSH conversation view: a draggable, zoomable radial map of the session tree, so you can see which conversation branched off which and switch sessions by clicking a node."
+  zh: "给 DSH 的会话视图加第三个标签页：一张能拖能缩的会话树径向地图，看清哪段对话从哪分出来，点节点即切会话。"
