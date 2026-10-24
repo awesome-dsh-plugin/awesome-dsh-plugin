@@ -1,0 +1,6 @@
+url: https://github.com/bushizhanghan/dsh-openfoam-doctor
+name: bushizhanghan/dsh-openfoam-doctor
+category: dev
+description:
+  en: 'OpenFOAM case doctor for DeepSeek-Harness. Six agent tools: audit a case for 25 classes of silent failure (steadyState paired with timeStep writes, limiters set to 1 that let k/epsilon go negative, unbounded advection of transport scalars, nNonOrthogonalCorrectors 0 on a skewed mesh, loose solver tolerances, blockMesh vertex/block mismatch, stray time directories, purgeWrite 0); read any dictionary as JSON; survey a sweep of cases; run checkMesh/blockMesh/snappyHexMesh/foamRun inside WSL with log parsing; parse logs into the metrics that matter (aspect ratio, non-orthogonality, skewness, residual floor, fatal errors). Deterministic text analysis — no LLM — validated against a real 82k-cell street-canyon snappy case.'
+  zh: DeepSeek-Harness 的 OpenFOAM 算例医生。六个 agent 工具：体检算例的 25 类静默错误（steadyState 配 timeStep 写出海量时间目录、限幅器设 1 导致 k/epsilon 变负、输运标量无界对流、斜网格上非正交修正为 0、求解容差过松、blockMesh 顶点/块不匹配、残留时间目录、purgeWrite 0）；把任意字典读成 JSON；扫描参数化扫描目录；在 WSL 里跑 checkMesh/blockMesh/snappyHexMesh/foamRun 并解析日志；把日志解成关键指标（长宽比、非正交度、扭曲度、残差地板、致命错误）。纯确定性文本分析，不调 LLM，已在一台真机的 8.2 万单元格街道峡谷 snappy 算例上验证。
