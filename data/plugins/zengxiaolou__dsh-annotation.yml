@@ -1,0 +1,6 @@
+url: https://github.com/zengxiaolou/dsh-annotation
+name: zengxiaolou/dsh-annotation
+category: ui
+description:
+  en: Select text in a reply, attach a note to it, and send every note with the next message as compact chips.
+  zh: 划选回答文字打注释，输入框内以胶囊聚合，多条一起随消息发送。
