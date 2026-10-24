@@ -1,0 +1,7 @@
+url: https://github.com/27painter/dsh-sw-cad
+name: 27painter/dsh-sw-cad
+category: tools
+icon: https://raw.githubusercontent.com/27painter/dsh-sw-cad/main/assets/icon-180.png
+description:
+  en: Registers two MCP servers that drive the installed AutoCAD and SolidWorks desktop apps over COM on Windows, plus two on-demand skills. Each advertises two meta-tools instead of its full catalog (a discovery shim in this repo for SolidWorks, upstream DISCOVERY_MODE=search for AutoCAD), taking the tool schemas loaded before the first request from 23,404 to 256 tokens and from 83,921 to 356 respectively.
+  zh: 注册两个 MCP 服务器，在 Windows 上通过 COM 驱动本机安装的 AutoCAD 与 SolidWorks，另附两个按需加载的技能。两者都只广告两个元工具而非完整工具表（SolidWorks 走本仓库自带的 discovery 垫片，AutoCAD 走上游的 DISCOVERY_MODE=search），首次请求前加载的工具定义分别从 23,404 降到 256 token、从 83,921 降到 356 token。
