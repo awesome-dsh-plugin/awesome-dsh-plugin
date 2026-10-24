@@ -1,6 +1,0 @@
-url: https://github.com/tangyixiao/dsh-zcode-plan-bridge
-name: tangyixiao/dsh-zcode-plan-bridge
-category: model
-description:
-  en: 'Requires the ZCode CLI installed and signed in. Relays the ZCode CLI agent into DeepSeek Harness as a model provider. A resident app-server session streams each turn, and the model catalogue is read from the CLI at runtime, so context windows, image support and provider routes follow the installed CLI and account. Tool permission requests are denied by default; unknown approval or permission methods are always denied, and full-auto requires an explicit opt-in. DSH approval UI does not mediate this separately spawned app-server process, and the policy is not an OS sandbox.'
-  zh: '需已安装并登录 ZCode CLI。把 ZCode CLI agent 接入 DeepSeek Harness 作为模型提供方。常驻 app-server 会话逐回合流式转发，模型清单从 CLI 实时读取，因此上下文窗口、图片支持与 provider 路由都跟随已安装的 CLI 和账号。工具权限请求默认拒绝；未知的 approval/permission 方法始终拒绝，全自动需显式启用。DSH 自带的审批界面不会介入这个独立 spawn 的 app-server 进程，该策略也不构成操作系统沙箱。'
