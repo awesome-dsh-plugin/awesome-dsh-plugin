@@ -1,0 +1,7 @@
+url: https://github.com/cholot-Zhou/dsh-ui-overrides
+name: cholot-Zhou/dsh-ui-overrides
+category: ui
+description:
+  en: Inject user-owned CSS into the DeepSeek Harness Web UI to restyle any plugin's elements, including fully opaque floating panels.
+  zh: 把自定义 CSS 注入 DeepSeek Harness Web UI，可改任意插件界面的外观，包括把浮层设为完全不透明。
+icon: https://raw.githubusercontent.com/cholot-Zhou/dsh-ui-overrides/main/icon.png
