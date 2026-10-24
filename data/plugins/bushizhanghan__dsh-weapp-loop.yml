@@ -1,0 +1,6 @@
+url: https://github.com/bushizhanghan/dsh-weapp-loop
+name: bushizhanghan/dsh-weapp-loop
+category: workflow
+description:
+  en: 'WeChat Mini Program dev loop for DeepSeek-Harness: check IDE status, launch the DevTools project, trigger preview and get the QR code straight into the conversation, parse compile errors into file/line/column, and watch it all from a sidebar panel. Six agent tools over the official DevTools CLI — honest about needing a one-time scan-login, never fakes a preview.'
+  zh: '小程序开发闭环：查 IDE 状态、启动开发者工具并打开项目、触发预览把二维码直接贴进对话、把编译报错解析成文件/行/列，右栏面板常驻显示状态、二维码与错误清单。六个 agent 工具走官方 DevTools CLI，首次扫码登录的需求如实告知，绝不假装预览成功。'
