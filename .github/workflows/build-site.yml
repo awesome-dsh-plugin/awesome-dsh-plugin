@@ -13,10 +13,10 @@ on:
         description: Skip the probes and build from cached data (deploy or publish only)
         type: boolean
         default: false
-      # Use the repository name from a listed URL. This mode needs the probe
+      # Select one listed entry by its repository name or full URL. This mode needs the probe
       # cache and cannot be combined with either boolean input.
       target_repo:
-        description: Refresh npm metadata and README for one listed GitHub owner/repo (including listed subpackages)
+        description: Refresh one entry's npm metadata and README (owner/repo for a root entry, or its exact listed URL)
         type: string
         default: ''
   # A push made with the default GITHUB_TOKEN does not trigger workflows —
@@ -80,9 +80,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      PROBE_TARGET_REPO: ${{ inputs.target_repo }}
-      TARGET_PROBE_ALL: ${{ inputs.probe_all }}
-      TARGET_SKIP_PROBES: ${{ inputs.skip_probes }}
+      PROBE_TARGET_REPO: ${{ github.event_name == 'workflow_dispatch' && inputs.target_repo || '' }}
+      TARGET_PROBE_ALL: ${{ github.event_name == 'workflow_dispatch' && inputs.probe_all || '' }}
+      TARGET_SKIP_PROBES: ${{ github.event_name == 'workflow_dispatch' && inputs.skip_probes || '' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

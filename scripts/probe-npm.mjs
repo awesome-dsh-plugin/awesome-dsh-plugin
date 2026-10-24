@@ -29,6 +29,7 @@
  *
  * Usage: node scripts/probe-npm.mjs
  *        PROBE_TARGET_REPO=owner/repo node scripts/probe-npm.mjs
+ *        PROBE_TARGET_REPO=https://github.com/owner/repo/tree/main/packages/plugin node scripts/probe-npm.mjs
  */
 import fs from 'node:fs'
 import LOCALES from '../site/locales.mjs'
