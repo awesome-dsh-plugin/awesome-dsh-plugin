@@ -1,0 +1,7 @@
+url: https://github.com/mileioo1/dsh-media-preview
+name: mileioo1/dsh-media-preview
+category: ui
+description:
+  en: Previews video, audio, archives and binary files in the DeepSeek Harness sidebar, with Range-backed seeking, and an image editor that burns numbered notes into the exported image and can send the result to the conversation.
+  zh: 在 DeepSeek Harness 右侧栏预览视频、音频、压缩包与二进制文件（媒体按 Range 流式读取，可拖动进度条），内置图片编辑器会把编号备注烧进导出的图片，并可直接发送到对话。
+icon: https://raw.githubusercontent.com/mileioo1/dsh-media-preview/main/assets/icon-180.png
