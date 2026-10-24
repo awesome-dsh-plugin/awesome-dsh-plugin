@@ -1,6 +1,6 @@
 url: https://github.com/wuwo1979/dsh-qqbot-muu
 name: wuwo1979/dsh-qqbot-muu
-category: chat
+category: usage
 description:
   en: 'Extension pack and patch set for the community @zaofan/dsh-qqbot DSH plugin: a unified SQLite memory with per-scope isolation and group tiers, persona/worldbook injection, local-model quick replies with a single-brain guard, TTS outbox, sticker library, and an approval-gated Bilibili operations workflow (scripted video draft, comments, replies) with the owner as reviewer.'
   zh: '社区 @zaofan/dsh-qqbot 的扩展包与补丁集：统一 SQLite 记忆（按会话隔离 + 群分级）、人格/世界书注入、本地小模型代答与单脑仲裁、TTS 发件箱、表情包库，以及“主人审核”的 B 站运营流程（脚本成片草稿、评论/回复草稿）。'
