@@ -1,0 +1,6 @@
+url: https://github.com/kipozannaki/DSH-PDR-Plugin
+name: kipozannaki/DSH-PDR-Plugin
+category: security
+description:
+  en: 'Runtime plugin firewall: after install, every filesystem, network and subprocess call is attributed to the plugin that made it and judged against what that plugin declares, so a plugin doing its declared job stays silent and leaving it is recorded. Adds a pre-install health card (capability surface, red-line combinations, PASS/WARN/BLOCK), boundary judging, opt-in pre-execution blocking with a credential-exfil rule, update diff with sandboxed trial install, SARIF/CSV audit export, and multi-source aggregation. Local-only storage, no telemetry; the optional webhook is off by default.'
+  zh: '运行时插件防火墙：装上之后，每一次文件、网络、子进程调用都归属到发起它的插件，并用该插件自己声明的需求去衡量——本职范围内的行为零打扰，越出声明才被记录。附带装前体检卡（能力面、红线组合、PASS/WARN/BLOCK）、越界判定、可选的执行前拦截（含 credential-exfil 规则，凭据读取后紧接着外联当场拦下）、更新 diff 与沙盒试装、SARIF/CSV 审计导出与多源汇总。数据只存本机，无遥测；webhook 默认关闭。'
