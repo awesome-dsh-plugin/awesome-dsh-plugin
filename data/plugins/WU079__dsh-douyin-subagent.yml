@@ -1,0 +1,8 @@
+url: https://github.com/WU079/dsh-douyin-subagent
+name: WU079/dsh-douyin-subagent
+category: usage
+tarball: https://github.com/WU079/dsh-douyin-subagent/releases/download/v0.2.1/dsh-douyin-subagent-0.2.1.tgz
+icon: https://raw.githubusercontent.com/WU079/dsh-douyin-subagent/main/assets/icon-180.png
+description:
+  en: 'Runs a Douyin subagent that browses videos and reads comments in valley hours and reports back, with dy_* tools for publishing and replying (comments sent from the already-logged-in page with its own request signature, no IM ticket), a daily quota timer, and a settings panel under Settings → Douyin: master switch, auto mode, valley windows, rounds per day and report depth.'
+  zh: '让子代理在谷时刷抖音、读评论并汇报；附带发作品/回评论的 dy_* 工具（评论从已登录页面带签名直发，不依赖 IM ticket）、每日配额定时，以及设置页「刷抖音」里的控制面板（总开关、自动模式、谷时窗口、每天轮数、报告详细度）。'
