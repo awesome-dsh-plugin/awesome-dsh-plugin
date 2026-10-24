@@ -1,0 +1,6 @@
+url: https://github.com/hunyu-feng/dsh-context-handoff
+name: hunyu-feng/dsh-context-handoff
+category: session
+description:
+  en: "Live context-pressure meter in the composer dock. When usage nears the limit it asks the current model for a handoff brief, starts that brief in a fresh session and switches you there, so long work can continue without hitting the window."
+  zh: "输入框下方实时显示上下文占用；接近上限时让当前模型写一份交接摘要，开新会话继续干活并自动切过去，长任务不用怕撞上窗口上限。"

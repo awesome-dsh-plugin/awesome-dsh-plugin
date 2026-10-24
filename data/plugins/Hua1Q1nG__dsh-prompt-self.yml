@@ -1,0 +1,6 @@
+url: https://github.com/Hua1Q1nG/dsh-prompt-self
+name: Hua1Q1nG/dsh-prompt-self
+category: memory
+description:
+  en: Rewrites each request against a learned prompt profile and automatically updates habits, anti-hallucination rules, and learning records.
+  zh: 按学习到的 Prompt 画像改写每个请求，并自动更新习惯清单、防幻觉规则与学习记录。

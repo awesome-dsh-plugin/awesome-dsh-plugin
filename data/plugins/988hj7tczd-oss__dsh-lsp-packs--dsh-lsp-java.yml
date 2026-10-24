@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-lsp-packs/tree/main/dsh-lsp-java
+name: 988hj7tczd-oss/dsh-lsp-packs#dsh-lsp-java
+category: dev
+description:
+  en: 'Java LSP configuration plugin for DeepSeek Harness using the Eclipse JDT language server.'
+  zh: '基于 Eclipse JDT 语言服务器为 DeepSeek Harness 提供 Java 代码导航和语言服务配置。'

@@ -1,0 +1,6 @@
+url: https://github.com/anyuer678/dsh-logtimeline
+name: anyuer678/dsh-logtimeline
+category: tools
+description:
+  en: Query local log files with Chinese natural-language time expressions (e.g. "yesterday afternoon", "3 hours ago") — precise time range, matched lines, ERROR/WARN/INFO level stats, fully offline.
+  zh: 用中文自然语言时间描述查询本地日志（如「昨天下午」「3小时前」）——精确时间范围、匹配行、级别统计，完全离线。

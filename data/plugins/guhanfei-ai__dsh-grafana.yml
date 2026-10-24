@@ -1,0 +1,6 @@
+url: https://github.com/guhanfei-ai/dsh-grafana
+name: guhanfei-ai/dsh-grafana
+category: tools
+description:
+  en: 'Conversational Grafana operations: inspect live dashboard data across named sources, then make safe, reviewable dashboard changes with approval and version checks.'
+  zh: '对话式 Grafana 运维：跨多个命名源站查看实时大盘数据，再通过审批与版本校验安全、可审阅地修改大盘。'

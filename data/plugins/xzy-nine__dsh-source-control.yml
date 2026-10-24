@@ -1,0 +1,6 @@
+url: https://github.com/xzy-nine/dsh-source-control
+name: xzy-nine/dsh-source-control
+category: git
+description:
+  en: 'VSCode-style Source Control page in the DSH Web right sidebar: a paged commit lane graph with ref markers and per-commit diffs, grouped working-tree changes with stage/discard/unstage, a commit box with amend and AI-generated messages, a side-by-side and unified diff page, GitHub repository and pull request creation through the gh CLI, and bidirectional HTTPS/SSH remote switching.'
+  zh: 'DSH Web 右侧 Sidebar 中的类 VSCode 源代码管理页：带引用标记与分页的泳道提交图与逐提交差异、分组的工作区变更与暂存/丢弃/取消暂存，支持修补上一次提交与 AI 生成信息的提交框、并排与统一差异视图、通过 gh CLI 新建仓库与创建 Pull Request，以及 HTTPS 与 SSH 远程地址双向切换。'

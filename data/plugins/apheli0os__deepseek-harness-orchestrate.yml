@@ -1,0 +1,6 @@
+url: https://github.com/apheli0os/deepseek-harness-orchestrate
+name: apheli0os/deepseek-harness-orchestrate
+category: workflow
+description:
+  en: 'Declarative task-DAG orchestration for DSH: validates dependency graphs, runs topological task layers in parallel through workflow-backed subagents, and propagates failures deterministically.'
+  zh: DSH 声明式任务 DAG 编排：校验依赖图，通过工作流子智能体并行执行拓扑任务层，并确定性传播失败。

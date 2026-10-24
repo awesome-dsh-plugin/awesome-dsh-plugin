@@ -1,0 +1,6 @@
+url: https://github.com/MeshTok/dsh-plugin-yuantoutao
+name: MeshTok/dsh-plugin-yuantoutao
+category: tools
+description:
+  en: E-commerce plugin for DeepSeek Harness — product search, comparison and checkout across Taobao/JD/Pinduoduo, via the yuantoutao Streamable HTTP MCP server.
+  zh: 电商插件——一个 MCP 给你的 AI 加上商品搜索、比价与购买能力，覆盖淘宝/京东/拼多多，商品目录由源头淘 MCP 服务提供。

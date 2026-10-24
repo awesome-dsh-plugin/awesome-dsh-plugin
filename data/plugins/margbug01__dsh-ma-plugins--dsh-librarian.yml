@@ -1,0 +1,6 @@
+url: https://github.com/margbug01/dsh-ma-plugins/tree/main/dsh-librarian
+name: margbug01/dsh-ma-plugins#dsh-librarian
+category: git
+description:
+  en: Evidence-first GitHub research subagent with bounded tools and in-memory request caching.
+  zh: 带行号证据和内存缓存的 GitHub 只读调研子代理。

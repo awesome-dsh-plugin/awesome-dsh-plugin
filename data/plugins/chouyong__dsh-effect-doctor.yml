@@ -1,0 +1,6 @@
+url: https://github.com/chouyong/dsh-effect-doctor
+name: chouyong/dsh-effect-doctor
+category: dev
+description:
+  en: 'Verifies that Cordis-managed runtime resources return to baseline after isolated plugin teardown, with deterministic cleanup receipts.'
+  zh: 隔离插件卸载后验证 Cordis 管理的运行时资源是否回到基线，并生成确定性清理回执。

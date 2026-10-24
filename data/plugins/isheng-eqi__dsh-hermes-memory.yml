@@ -1,0 +1,6 @@
+url: https://github.com/isheng-eqi/dsh-hermes-memory
+name: isheng-eqi/dsh-hermes-memory
+category: memory
+description:
+  en: 'Faithful port of the hermes-agent MEMORY.md / USER.md mechanism for DSH: bounded dual-bank memory (2200/1375 chars), a single `memory` tool (add/replace/remove/batch), frozen-snapshot injection per session, nudge reminders, DSH-native JSON storage — zero external dependencies, zero LLM cost.'
+  zh: 'DSH 上 hermes-agent 记忆机制的忠实移植（MEMORY.md / USER.md）：有界双记忆库（2200/1375 字符）、单个 memory 工具（add/replace/remove/batch 全有或全无）、每会话冻结快照注入与 nudge 提醒、DSH 原生 JSON 存储——零外部依赖、零 LLM 成本。'

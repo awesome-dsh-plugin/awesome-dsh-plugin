@@ -1,0 +1,6 @@
+url: https://github.com/zhangj1164/dsh-mega-plugins/tree/main/packages/openwiki/dsh-openwiki-visualize
+name: zhangj1164/dsh-mega-plugins#dsh-openwiki-visualize
+category: docs
+description:
+  en: "Previews a workspace OpenWiki in the DSH Web right Sidebar: detects the wiki directory, serves it with the official `openwiki visualize` reader on a loopback port, and embeds it in its own tab, reporting the installed openwiki and DSH versions against configurable floors and checking the registry for its own updates."
+  zh: "在 DSH Web 右侧边栏预览工作区的 OpenWiki：识别 wiki 目录，用官方 `openwiki visualize` 阅读器在本地回环端口提供服务并嵌入自有标签页，同时对照可配置的版本下限报告 openwiki 与 DSH 版本，并向 registry 检查自身更新。"

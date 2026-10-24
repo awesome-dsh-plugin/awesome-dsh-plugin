@@ -1,0 +1,6 @@
+url: https://github.com/converk/dsh-tweaks/tree/main/plugins/git-bash-terminal-tool
+name: converk/dsh-tweaks#git-bash-terminal-tool
+category: ui
+description:
+  en: Replaces the terminal tool on Windows with Git Bash.
+  zh: 可将 Windows 环境下的终端工具替换为 Git Bash

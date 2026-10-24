@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-receipts
+name: 988hj7tczd-oss/dsh-receipts
+category: tools
+description:
+  en: "Mine local DSH session logs (JSONL) into personal usage & impact receipts: Markdown day/week/month reports plus a self-contained HTML receipt, cross-referenced with local git log — zero-network, privacy-first."
+  zh: "从本地 DSH 会话日志（JSONL）挖掘「使用与影响」报告：Markdown 日/周/月报 + 自包含 HTML receipt，交叉本机 git log；零联网、隐私优先。"

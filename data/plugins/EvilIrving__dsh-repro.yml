@@ -1,0 +1,6 @@
+url: https://github.com/EvilIrving/dsh-repro
+name: EvilIrving/dsh-repro
+category: dev
+description:
+  en: '/repro exports a minimal, secret-scrubbed, replayable problem bundle: the session log, failed commands, and Git diff.'
+  zh: /repro 导出最小可复现问题包：去 secret 的会话日志、失败命令与 git diff。

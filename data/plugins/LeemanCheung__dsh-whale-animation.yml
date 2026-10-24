@@ -1,0 +1,6 @@
+url: https://github.com/LeemanCheung/dsh-whale-animation
+name: LeemanCheung/dsh-whale-animation
+category: ui
+description:
+  en: 'A 60-frame theme-aware monochrome whale-dive animation with reactive water for the DSH Web turn status: embedded assets, seamless closed-loop playback, a reduced-motion PNG fallback, and lifecycle-clean removal.'
+  zh: DSH Web 回合状态旁的 60 帧随主题适配的单色鲸鱼深潜动画：传播式水面、无缝闭环、资源内嵌、减少动态效果 PNG 回退，且随生命周期完整清理。

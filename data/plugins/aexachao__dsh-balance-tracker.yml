@@ -1,0 +1,6 @@
+url: https://github.com/aexachao/dsh-balance-tracker
+name: aexachao/dsh-balance-tracker
+category: usage
+description:
+  en: Real DeepSeek account balance and official spend tracker in the session header, with peak/off-peak badge, monetary alert with auto-stop, and one-click top-up.
+  zh: 会话头部的真实 DeepSeek 余额与官方消费统计：高峰/空闲标签、按金额提醒与自动停止、一键充值。

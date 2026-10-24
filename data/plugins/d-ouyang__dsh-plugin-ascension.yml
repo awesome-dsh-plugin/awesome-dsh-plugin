@@ -1,0 +1,6 @@
+url: https://github.com/d-ouyang/dsh-plugin-ascension
+name: d-ouyang/dsh-plugin-ascension
+category: fun
+description:
+  en: 'A Wang Lin cultivation companion for dsh: watches your session state and acts it out with rich animations, and levels up as you cultivate.'
+  zh: '渡劫飞升：仙逆王林修炼伙伴。实时监控会话状态，用打坐、掐诀、御剑、雷龙等丰富交互动画演绎大模型的每一个动作，随使用修炼升境。'

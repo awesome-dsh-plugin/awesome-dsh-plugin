@@ -1,0 +1,6 @@
+url: https://github.com/Azzygoatcoder/agent-useful-skills
+name: Azzygoatcoder/agent-useful-skills
+category: skill
+description:
+  en: Modular AI research/engineering skill pack, installable via dsh plugin add — registers 27 skills (security audit, paper reading/writing, figure drawing, dev workflow, storage analysis) on ctx.skills.
+  zh: 模块化 AI 科研/工程技能包，dsh plugin add 一键安装——在 ctx.skills 注册 27 个技能（安全审计、论文读写、绘图、开发工作流、存储分析）。

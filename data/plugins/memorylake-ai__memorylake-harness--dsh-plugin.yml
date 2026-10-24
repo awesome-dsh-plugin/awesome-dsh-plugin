@@ -1,0 +1,6 @@
+url: https://github.com/memorylake-ai/memorylake-harness/tree/main/dsh-plugin
+name: memorylake-ai/memorylake-harness#dsh-plugin
+category: memory
+description:
+  en: 'Memory Lake as a persistent memory layer for dsh: memory_search, memory_remember, and memory_forget tools over the memorylake CLI, a session status line, and guided setup/diagnostic skills, sharing one ~/.memorylake identity and memory set with the Claude Code and Codex plugins.'
+  zh: '将 Memory Lake 作为 dsh 的持久记忆层：基于 memorylake CLI 的 memory_search、memory_remember、memory_forget 三个工具，会话状态行，以及引导安装/诊断 skills，与 Claude Code、Codex 插件共享同一 ~/.memorylake 身份与记忆。'

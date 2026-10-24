@@ -1,0 +1,6 @@
+url: https://github.com/LeemanCheung/dsh-vibe-pack
+name: LeemanCheung/dsh-vibe-pack
+category: market
+description:
+  en: Transactional data-only configuration pack manager with integrity, ownership, preview, diff, and rollback safeguards.
+  zh: 仅数据的事务式配置包管理器，提供完整性、归属、预览、差异和回滚保护。

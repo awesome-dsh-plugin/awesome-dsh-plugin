@@ -1,0 +1,7 @@
+# Math Agent Framework — real math engine for DeepSeek Harness (TS shell + Python engine)
+url: https://github.com/symmetryseeker/math-agent-framework/tree/main/dsh-plugin
+name: symmetryseeker/math-agent-framework#dsh-plugin
+category: skill
+description:
+  en: 'Math Agent Framework for DeepSeek Harness: symbolic derivation engine (CES / quadratic forms / ODE / PDE), SymPy verification, Lean 4 compiler-verified formal proofs, and QED-style multi-agent adversarial verification, exposed as native DSH tools through a TS shell bridging a Python engine. Requires cloning the math-agent-framework repo and `pip install -r requirements.txt`, with MATH_AGENT_HOME pointing at the repo root. Every result carries provenance (engine versions, seed, tolerances) and is marked untrusted data.'
+  zh: '数学 Agent 框架接入 DeepSeek Harness：符号推导引擎（CES/二次型/ODE/PDE）、SymPy 验证、Lean 4 真编译验证的形式化证明、QED 多 Agent 对抗验证，经 TS 壳桥接 Python 引擎暴露为 DSH 原生工具。需先克隆 math-agent-framework 仓库并 `pip install -r requirements.txt`，将 MATH_AGENT_HOME 指向仓库根目录。所有结果携带 provenance（引擎版本/seed/容差）并标记为不可信数据。'

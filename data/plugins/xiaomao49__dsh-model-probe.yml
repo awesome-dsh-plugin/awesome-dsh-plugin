@@ -1,0 +1,6 @@
+url: https://github.com/xiaomao49/dsh-model-probe
+name: xiaomao49/dsh-model-probe
+category: model
+description:
+  en: 'Measures what an llm-pi-ai endpoint really accepts — context window from its own model list, output-token limit and reasoning levels read out of its own range errors, image support from a generated test image — then reports declared values that contradict that evidence and rewrites them only after confirmation.'
+  zh: '直接实测 llm-pi-ai 端点真正接受的能力——从它自己的模型列表取上下文窗口，从它自己的报错反推输出上限与推理档位，用生成的测试图验证图像支持——再报告与证据不符的声明值，确认后才改写。'

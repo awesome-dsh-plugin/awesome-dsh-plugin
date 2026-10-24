@@ -1,0 +1,6 @@
+url: https://github.com/yfwu2020/dsh-think-flow
+name: yfwu2020/dsh-think-flow
+category: ui
+description:
+  en: 'Chain-of-thought panel for the DSH Web right sidebar: folds the live reasoning stream of each session into turn → step groups carrying the reasoning text and the tool calls made in that step. Only the newest turn is expanded by default and earlier turns collapse to one line; steps are grouped into activity phases by a local rule, the step waiting on a tool is marked, tool failures show their reason, full reasoning text is fetched per step on demand, an all-turn directory searches turn titles, user text and turn numbers locally, and a whole turn can be summarised into a Chinese title with one model call.'
+  zh: 'DSH Web 右侧栏的思维链面板：把每个会话的实时思考折成 turn → step 分组，每一步带该步的思考原文与工具调用。默认只展开最新一轮，更早的轮次收成一行；步骤按本地规则合并成阶段块，正在等工具的那一步单独标出，工具失败显示原因，思考原文按步按需取回，全轮目录在本地搜索轮次标题、用户原话与轮号，整轮可用一次模型调用生成中文标题。'

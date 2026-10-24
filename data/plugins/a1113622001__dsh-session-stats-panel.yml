@@ -1,0 +1,6 @@
+url: https://github.com/a1113622001/dsh-session-stats-panel
+name: a1113622001/dsh-session-stats-panel
+category: usage
+description:
+  en: A right-side session stats panel showing average cache-hit rate, session cost, runtime, request count, cumulative tokens and account balance.
+  zh: 右侧会话统计面板，展示平均缓存命中率、会话成本、运行时长、请求数、累计 token 与账户余额。

@@ -1,0 +1,6 @@
+url: https://github.com/mtty-ai/mmx-quota-tool
+name: mtty-ai/mmx-quota-tool
+category: usage
+description:
+  en: 'MiniMax token-plan quota dock for the Web UI: a drop-shape 5h-usage % chip in the conversation input area, click for a detail panel listing every model''s 5h & weekly usage and reset countdown, auto-hidden when the active default model is not a MiniMax model.'
+  zh: DSH 网页 MiniMax 配额悬浮卡：会话输入区显示水滴形 5h 已用百分比，点击展开详情面板，列出每个模型的 5h/周用量与重置倒计时，当前默认模型非 MiniMax 时自动隐藏。

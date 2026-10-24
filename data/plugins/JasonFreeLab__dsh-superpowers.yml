@@ -1,0 +1,6 @@
+url: https://github.com/JasonFreeLab/dsh-superpowers
+name: JasonFreeLab/dsh-superpowers
+category: skill
+description:
+  en: Ports the obra/superpowers methodology as 14 native DSH skills covering planning, TDD, debugging, and code review.
+  zh: 将 obra/superpowers 方法论移植为 14 个原生 DSH 技能，覆盖规划、TDD、调试与代码评审。

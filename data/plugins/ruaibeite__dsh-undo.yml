@@ -1,0 +1,6 @@
+url: https://github.com/ruaibeite/dsh-undo
+name: ruaibeite/dsh-undo
+category: tools
+description:
+  en: 'Turn-level file undo for tool writes and edits: each file is snapshotted before the write lands, and the model (an undo tool), the human (a /undo command) or a button in the assistant message action row can roll back every file a turn changed. Snapshots are written in-process rather than by shelling out, so it needs no extra sandbox permission in sessions confined to workspace-write.'
+  zh: '按轮次回退工具写入/编辑造成的文件改动：落盘前先快照，模型（undo 工具）、人（/undo 命令）或助手消息动作行里的按钮都能一次退回一整轮改动过的所有文件。快照在进程内写入、不 fork shell，因此在 workspace-write 这类受限会话里无需额外权限放宽。'

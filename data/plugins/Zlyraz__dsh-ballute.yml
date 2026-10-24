@@ -1,0 +1,6 @@
+url: https://github.com/Zlyraz/dsh-ballute
+name: Zlyraz/dsh-ballute
+category: dev
+description:
+  en: 'Crash protection for installed plugins: crash cards with one-click disable, static pre-flight inspection, black-box crash telemetry, and a safe-mode rescue profile for a broken UI.'
+  zh: 已装插件的崩溃防护：崩溃卡片一键停用、静态预检、黑匣子遥测，以及救援损坏 UI 的安全模式 profile。

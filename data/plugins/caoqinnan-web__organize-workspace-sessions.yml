@@ -1,0 +1,6 @@
+url: https://github.com/caoqinnan-web/organize-workspace-sessions
+name: caoqinnan-web/organize-workspace-sessions
+category: session
+description:
+  en: Organize DeepSeek Harness workspace sessions by renaming them as 类别｜主题 and reporting archive, rename, and review suggestions.
+  zh: 整理 DeepSeek Harness 工作区会话，按 类别｜主题 重命名并给出归档、改名与待判断建议。

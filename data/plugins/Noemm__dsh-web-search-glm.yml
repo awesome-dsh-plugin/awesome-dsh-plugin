@@ -1,0 +1,6 @@
+url: https://github.com/Noemm/dsh-web-search-glm
+name: Noemm/dsh-web-search-glm
+category: browser
+description:
+  en: "Zhipu GLM web search provider: registers as `glm` on the ctx.web seam and runs the native web_search server tool through GLM's Anthropic-compatible API (Coding Plan billing)."
+  zh: "智谱 GLM 联网搜索 provider：以 glm 注册到 ctx.web 缝，经 GLM 的 Anthropic 兼容 API 执行原生 web_search 服务端工具（走 Coding Plan 计费）。"

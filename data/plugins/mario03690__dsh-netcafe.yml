@@ -1,0 +1,6 @@
+url: https://github.com/mario03690/dsh-netcafe
+name: mario03690/dsh-netcafe
+category: tools
+description:
+  en: 'Hosted tool server over MCP: invoice and bank-statement extraction with in-code arithmetic checks, ledger reconciliation in integer cents, PDF and table conversion, SQL dialect transpiling, and mainland-China reachability probes run from a China Mobile network vantage point.'
+  zh: '托管工具服务器（MCP）：发票与银行流水提取并做代码内算术校验、按整数分对账、PDF 与表格转换、SQL 方言转写，以及从中国移动骨干网实测大陆可达性。'

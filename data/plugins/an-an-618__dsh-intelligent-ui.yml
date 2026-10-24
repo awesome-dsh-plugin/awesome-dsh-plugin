@@ -1,0 +1,7 @@
+url: https://github.com/an-an-618/dsh-intelligent-ui
+name: an-an-618/dsh-intelligent-ui
+category: ui
+description:
+  en: 'Declarative interactive cards for DSH: the model writes a spec, the Host compiles it into a JSON program, and the client renders forms, tables, charts and lists with local state and explicit submit.'
+  zh: 'DSH 的声明式交互卡片：模型写 spec，Host 编译成 JSON program，客户端渲染表单、表格、图表和列表，本地交互、显式提交。'
+tarball: https://github.com/an-an-618/dsh-intelligent-ui/releases/download/v6.5.0/an-an-618-dsh-intelligent-ui-6.5.0.tgz

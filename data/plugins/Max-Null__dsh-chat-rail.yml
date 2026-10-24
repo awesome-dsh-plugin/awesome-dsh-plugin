@@ -1,0 +1,6 @@
+url: https://github.com/Max-Null/dsh-chat-rail
+name: Max-Null/dsh-chat-rail
+category: ui
+description:
+  en: 'Scroll-painting message rail for DeepSeek Harness: a slim right-edge rail with one indicator per user message, scroll-spy follows the reading position, hover unfolds a canvas with full message previews, and clicking jumps to any history message; animates in sync with better-sidebar panels.'
+  zh: DeepSeek Harness 画卷式消息导航栏：会话面板右侧一条竖排导轨，每条用户消息一个指示点，scroll-spy 跟随阅读位置，hover 展开画卷查看完整消息预览，点击跳转任意历史消息；与 better-sidebar 面板动画同步避让。

@@ -1,0 +1,6 @@
+url: https://github.com/kirkchinese/claude2dsh
+name: kirkchinese/claude2dsh
+category: session
+description:
+  en: Import Claude Code sessions, skills and plugin assets into DSH as native resumable sessions, and export or sync DSH sessions back to Claude Code JSONL.
+  zh: 将 Claude Code 会话、技能与插件资产导入为 DSH 原生可续聊会话，并支持将 DSH 会话导出或同步回 Claude Code JSONL。

@@ -1,0 +1,6 @@
+url: https://github.com/franksong2702/dsh-codex-connect
+name: franksong2702/dsh-codex-connect
+category: model
+description:
+  en: Connect ChatGPT OAuth and OpenAI Codex models to DeepSeek Harness, with opt-in search and image tools.
+  zh: 通过 ChatGPT OAuth 将 OpenAI Codex 模型接入 DeepSeek Harness，并提供可选的搜索与图片工具。

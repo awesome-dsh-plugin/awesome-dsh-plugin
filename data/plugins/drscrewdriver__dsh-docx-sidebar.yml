@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-docx-sidebar
+name: drscrewdriver/dsh-docx-sidebar
+category: docs
+description:
+  en: 'A dsh-better-sidebar reading view for .docx files: headings from the style map, paragraphs, lists, real table cells, inline pictures and header notes. Ceilings on archive size, per-part inflated bytes and rendered blocks keep a document from freezing the tab.'
+  zh: 'dsh-better-sidebar 的 .docx 阅读视图：按样式表识别标题，还原段落、列表、真实表格单元格、内嵌图片与页眉注释。归档体积、单部件解压字节与渲染块数均有上限，文档不会卡死标签页。'

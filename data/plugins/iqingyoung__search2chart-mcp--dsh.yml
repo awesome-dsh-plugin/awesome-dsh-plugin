@@ -1,0 +1,6 @@
+url: https://github.com/iqingyoung/search2chart-mcp/tree/main/dsh
+name: iqingyoung/search2chart-mcp#dsh
+category: ui
+description:
+  en: Native DSH plugin that renders structured data as inline charts directly inside the conversation, with zero runtime dependencies.
+  zh: 原生 DSH 插件：把结构化数据渲染成对话流内联图表，零运行时依赖。

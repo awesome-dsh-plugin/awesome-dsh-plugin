@@ -1,0 +1,6 @@
+url: https://github.com/beijingwahw/dsh-proactive
+name: beijingwahw/dsh-proactive
+category: model
+description:
+  en: 'Proactive multi-model scheduling plugin: multi-source signal intake with dedup and urgency ranking, a four-way execute/defer/dismiss/ask-user decision engine, DAG plan generation with parallel model execution, quality reflection with automatic retry and model switch, long-term memory for task patterns and lessons, and strategy evolution via genetic algorithms with sandboxed evaluation and canary rollout.'
+  zh: '主动式多模型协同调度插件：多源信号接入（去重与紧急度排序），execute/defer/dismiss/ask-user 四级决策引擎，DAG 计划生成与多模型并行执行，质量反思自动重试与切换模型，任务模式与经验教训长期记忆，以及遗传算法策略进化（沙盒评估、金丝雀发布）。'

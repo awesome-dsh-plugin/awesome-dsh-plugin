@@ -1,0 +1,6 @@
+url: https://github.com/yuehancn/dsh-tool-podcast
+name: yuehancn/dsh-tool-podcast
+category: tools
+description:
+  en: Turn a raw recording into a published podcast with a local ffmpeg — detect chapter boundaries from silence, cut at those boundaries, normalise loudness to a broadcast target in two passes, and write an iTunes-compatible RSS feed whose enclosure byte lengths are measured from disk.
+  zh: 用本机 ffmpeg 把一期录音做成可发布的播客 —— 从静音里检出章节断点、按断点切段、两遍算法把响度归一化到广播目标，并写出 iTunes 兼容的 RSS（enclosure 字节长度实测自磁盘，避免客户端静默丢弃）。

@@ -1,0 +1,6 @@
+url: https://github.com/863683348/dsh-trend-radar
+name: 863683348/dsh-trend-radar
+category: dev
+description:
+  en: 'Ecosystem trend dashboard (行情面板): snapshot the dsh-plugin topic and the awesome list into local history, then report weekly trends — new plugins, star gainers, category heat, awesome coverage — plus a keyword radar for new plugins and star surges.'
+  zh: 生态行情面板：把 dsh-plugin topic 与 awesome 收录列表快照成本地历史，产出周报（新增插件、star 增速、类别热度、收录覆盖率），并支持关键词雷达监控新品与 star 突增。

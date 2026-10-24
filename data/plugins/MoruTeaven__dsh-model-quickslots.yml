@@ -1,0 +1,6 @@
+url: https://github.com/MoruTeaven/dsh-model-quickslots
+name: MoruTeaven/dsh-model-quickslots
+category: model
+description:
+  en: 'A row of model preset buttons above the composer: left-click switches the session to that preset''s provider, model and reasoning effort, right-click opens an editor for it, and each preset can carry a custom name instead of the model id. The editor reads the session''s live model catalog, and presets are stored locally.'
+  zh: '输入框上方的一排模型预设按钮：左键点击把当前会话切换到该预设的提供方、模型与思考强度，右键点击打开该预设的编辑弹窗，每个预设还可以自定义备注名称而不必使用模型名。编辑弹窗读取当前会话真实的模型目录，预设保存在本地。'

@@ -1,0 +1,6 @@
+url: https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-mobile-ui
+name: TZHR-invest/dsh-plugins#dsh-mobile-ui
+category: ui
+description:
+  en: 'Mobile UI for the Web GUI on narrow screens: full-width responsive layout, overlay session drawer, 44px touch targets, safe-area support, and reading enhancements with zero desktop impact.'
+  zh: Web GUI 移动端适配：窄屏全宽响应式布局、会话抽屉、44px 触摸目标、安全区适配与阅读增强，桌面端零影响。

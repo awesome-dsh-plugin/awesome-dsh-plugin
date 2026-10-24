@@ -1,0 +1,6 @@
+url: https://github.com/qgx1992/dsh-ui-tools
+name: qgx1992/dsh-ui-tools
+category: ui
+description:
+  en: 'Five web UI tools in one plugin: a provider + model two-button selector with reasoning-level control, collapse/expand-all for sidebar workspace groups, a session tab listing the files the session changed (needs kernel 0.1.2-alpha.1+, silently absent on older kernels), a workspace badge next to the session title, and a settings page that toggles them.'
+  zh: '一个插件装五个 Web UI 工具：供应商 + 模型双按钮选择器（含推理等级调节）、侧边栏工作区折叠/展开全部、会话「修改的文件」选项卡（需内核 0.1.2-alpha.1+，旧内核上静默缺席）、会话标题旁的工作区徽章，以及集中开关这些功能的设置页。'

@@ -1,0 +1,6 @@
+url: https://github.com/HongMing-Huang/dsh-file-upload
+name: HongMing-Huang/dsh-file-upload
+category: ui
+description:
+  en: Claude-style drag-and-drop/paperclip file upload with content sniffing, document-to-Markdown via Microsoft MarkItDown (built-in JS fallback), text inlining, and a read_document tool for agents.
+  zh: Claude 风格拖拽/回形针文件上传：内容嗅探、文档转 Markdown（微软 MarkItDown，内置 JS 兜底）、文本直插输入框、read_document 工具。

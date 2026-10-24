@@ -1,0 +1,6 @@
+url: https://github.com/NOirBRight/dsh-model-switch
+name: NOirBRight/dsh-model-switch
+category: model
+description:
+  en: 'Explicit model routing for Main, Subagents, web_search, and image generation, plus a catalog-driven Composer and Plan Review picker with Model, Effort, Context, Fast, and Thinking variants.'
+  zh: '显式路由 Main、Subagent、web_search 与图像生成，并提供由模型目录驱动的 Composer/Plan Review Picker，支持 Model、Effort、Context、Fast 与 Thinking 变体。'

@@ -1,0 +1,6 @@
+url: https://github.com/Debuger-114514/dsh-bili-jar
+name: Debuger-114514/dsh-bili-jar
+category: fun
+description:
+  en: 'A jar in the corner of the DSH web UI that picks what to watch on Bilibili: instead of the platform feed it searches your own interest axes, ranks by like, coin and favourite rate rather than view count, keeps a pool that accumulates across days, and has an LLM curate five picks with reasons that describe the content rather than the metrics.'
+  zh: 'DSH 网页角落里的一只罐子，替你挑今天看哪几条 B 站视频：不走平台推荐流，照你自己写的兴趣轴去搜，按点赞、投币、收藏率而不是播放量排序，攒进一个跨天累积的池子，最后让模型挑出五条并写一句讲内容、不讲数据的理由。'

@@ -1,0 +1,7 @@
+url: https://github.com/Lphehe/dsh-composer-assist
+name: Lphehe/dsh-composer-assist
+category: ui
+description:
+  en: "Predicts the next input, completes drafts, and polishes prompts in the DSH composer, with per-session suggestions accepted into the draft without sending. Source-available; modifications require prior written permission."
+  zh: "在 DSH 输入框中预测下一条输入、补全草稿并润色提示词；建议按会话保留，接受时只填入草稿、不自动发送。源码可见，修改须事先取得书面许可。"
+tarball: https://github.com/Lphehe/dsh-composer-assist/releases/download/v0.1.1/dsh-composer-assist.tgz

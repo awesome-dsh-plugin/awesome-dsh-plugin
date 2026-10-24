@@ -1,0 +1,6 @@
+url: https://github.com/dylanzhangzx/dknowc-dsh
+name: dylanzhangzx/dknowc-dsh
+category: skill
+description:
+  en: 'Trusted office suite for government/enterprise work by Beijing Caizhi Technology (深知可信智能): three skills — trusted consulting (policy/regulation Q&A with citation markers + provenance HTML), trusted search (authoritative policy/standard retrieval with traceable HTML + clean Markdown), and official-document writing (draft/rewrite/Word/red-head delivery); all interfaces go through the dknowc trusted workbench MCP (Bearer auth), products land in the session workspace, one-time key setup persists for later sessions; ships on npm as dknowc-dsh.'
+  zh: '彩智科技深知可信智能出品的可信办公全家桶 dsh 插件：包含深知可信咨询（政策/法规/办事问答，带真实来源角标 + 可点击溯源 HTML）、深知可信搜索（权威政策/标准检索与深度研究，溯源 HTML + 干净 Markdown）、深知公文写作（正式公文起草/改写/Word/红头交付）三个 Skill；接口统一经深知可信工作台 MCP 转接（Bearer 认证），产物写入会话工作区，API Key 一次配置长期免注册；已发布 npm 包 dknowc-dsh。'

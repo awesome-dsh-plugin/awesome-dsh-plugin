@@ -1,0 +1,6 @@
+url: https://github.com/TiantianFlow/dsh-one-gateway
+name: TiantianFlow/dsh-one-gateway
+category: remote
+description:
+  en: Private loopback DSH Web gateway for Tailscale Serve, Cloudflare Access, and Headscale TCP Serve, with exact principal allowlists and guided fail-closed setup.
+  zh: 为 DeepSeek Harness Web 提供仅回环的私有网关，支持 Tailscale Serve、Cloudflare Access 与 Headscale TCP Serve，精确主体白名单，引导式 fail-closed 配置。

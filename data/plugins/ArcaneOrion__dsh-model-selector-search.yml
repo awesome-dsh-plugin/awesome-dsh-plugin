@@ -1,0 +1,6 @@
+url: https://github.com/ArcaneOrion/dsh-model-selector-search
+name: ArcaneOrion/dsh-model-selector-search
+category: ui
+description:
+  en: 'Session model selector with search: two-stage loose matching (normalised substring first, subsequence as fallback, so glm53 finds GLM-5.3 and ds finds DeepSeek), providers with recent successful calls pinned first, and a reasoning-effort pane that remembers each model''s last explicitly chosen effort.'
+  zh: 搜索增强的会话模型选择器：两段式宽松匹配（先归一化子串，未命中再退子序列，glm53 命中 GLM-5.3、ds 命中 DeepSeek）、近七天成功调用过的供应商置顶，推理档位面板记住每个模型上次显式选择的档位。

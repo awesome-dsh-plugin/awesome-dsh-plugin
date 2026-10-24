@@ -1,0 +1,6 @@
+url: https://github.com/latte03/dsh-select-quote
+name: latte03/dsh-select-quote
+category: ui
+description:
+  en: 'Select text in the dsh web conversation to attach it as an annotation to your next message. The source text keeps a dashed highlight with an ordinal badge in place, and the composer summary lists, edits and jumps back to each annotation.'
+  zh: '在 dsh 网页版对话里划词，把选中文本作为批注附到下一条消息。原文位置保留虚线高亮和序号角标，输入框上方的批注摘要可查看、编辑并跳回每一条批注。'

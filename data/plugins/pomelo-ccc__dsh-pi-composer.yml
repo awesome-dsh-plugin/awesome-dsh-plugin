@@ -1,0 +1,7 @@
+url: https://github.com/pomelo-ccc/dsh-pi-composer
+name: pomelo-ccc/dsh-pi-composer
+category: ui
+description:
+  en: 'Swaps the composer''s model control for a PI-Desktop style picker: a two-pane menu with search and provider grouping, a reasoning-effort slider, ArrowUp/ArrowDown prompt-history recall, and a prompt-rewrite button with undo.'
+  zh: '把输入框的模型控件换成 PI-Desktop 风格的选择器：双栏菜单（搜索、按 provider 分组、上下文窗口与能力徽标）、推理强度滑块、↑/↓ 提示词历史回溯，以及带撤销的提示词改写按钮。'
+tarball: https://github.com/pomelo-ccc/dsh-pi-composer/releases/download/v1.1.2/dsh-pi-composer-1.1.2.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/LuckVd/dsh-btw
+name: LuckVd/dsh-btw
+category: session
+tarball: https://github.com/LuckVd/dsh-btw/releases/download/v0.2.1/dsh-btw-0.2.1.tgz
+description:
+  en: 'Side-ask drawer opened from a completed answer''s action row: follow-up questions run in an independent, auto-archived session seeded with the prior conversation text (read-only, capped at 48,000 characters), leaving the main session untouched. The side session inherits the main session''s model, switchable inside the drawer, with a context-usage ring.'
+  zh: '每条已完成回答操作行上的侧问抽屉：追问在独立且自动归档的会话中进行，携带此前的已完成对话文本（只读，上限 48000 字符）作为参考，主会话零写入；模型默认继承主会话并可在抽屉内切换，附上下文占用圈。'

@@ -1,0 +1,6 @@
+url: https://github.com/Dayi-Z/dsh-learn-wiki
+name: Dayi-Z/dsh-learn-wiki
+category: memory
+description:
+  en: 'Knowledge base with a corrective acquisition loop for DeepSeek Harness: when the agent keeps hitting the same failure, a background worker fetches the web under a rate limit, distills the result into a staging area, and only a two-stage commit makes it recallable — pages without sources are refused.'
+  zh: 'DSH 的纠错式补料知识库：agent 反复撞同一堵墙时，后台 worker 在限流下联网抓取、蒸馏结果先落暂存区，只有两段式 commit 才能进入召回——无来源的页面一律拒绝。'

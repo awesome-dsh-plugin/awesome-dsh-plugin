@@ -1,0 +1,6 @@
+url: https://github.com/CREAIT-nl/dsh-plugins/tree/main/web-fetch
+name: CREAIT-nl/dsh-plugins#web-fetch
+category: browser
+description:
+  en: 'A guarded local fetch provider for the ctx.web seam — the backend dsh does not ship for its own web_fetch tool. Every redirect hop is re-resolved and checked against the non-routable ranges, with a streamed size cap and a content-type allowlist.'
+  zh: 'ctx.web 接口的本地受控抓取提供方——dsh 自带完整的 web_fetch 工具，却没有随附后端。每一跳重定向都会重新解析并对照非公网地址段校验，另有流式大小上限与内容类型白名单。'

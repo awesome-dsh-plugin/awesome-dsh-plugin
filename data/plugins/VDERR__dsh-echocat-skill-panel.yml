@@ -1,0 +1,6 @@
+url: https://github.com/VDERR/dsh-echocat-skill-panel
+name: VDERR/dsh-echocat-skill-panel
+category: skill
+description:
+  en: 'Reports which skills each turn invoked (loaded by the model, typed as /name, or none) and manages the local skill directory: install from a pasted repository, folder, SKILL.md or zip address, set a Chinese display name in the skill meta.yaml, and remove a skill while keeping a backup.'
+  zh: 每轮对话报告本轮调用了哪些 skill（模型自动加载、用户输入 /name，或一个都没用），并管理本机 skill 目录：粘贴仓库、文件夹、SKILL.md 或 zip 地址即可安装，中文显示名写入该 skill 的 meta.yaml，删除时保留备份。

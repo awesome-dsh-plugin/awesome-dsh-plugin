@@ -1,0 +1,7 @@
+url: https://github.com/dsh-publish/dsh-pair-quick
+name: dsh-publish/dsh-pair-quick
+category: remote
+description:
+  en: 'Mints a fresh remote-web-ui pairing link and shows its QR in the dsh settings page.'
+  zh: '在 dsh 设置页直接铸造 remote-web-ui 远程访问配对链接并显示二维码。'
+tarball: https://github.com/dsh-publish/dsh-pair-quick/releases/download/v0.1.0/dsh-pair-quick-0.1.0.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/Martlet-Tech/dsh-approval-explain
+name: Martlet-Tech/dsh-approval-explain
+category: security
+description:
+  en: 'Adds an Explain button to the approval card: one model call returns exactly three lines reading the pending operation, covering what it does, which files or system state it reads, writes, modifies or executes, and a risky/attention/safe verdict with a one-sentence justification. It also renders the detail area for `write` and `edit` calls, which the shipped renderer leaves blank because it only reads a `command` field.'
+  zh: '在审批卡片上加一个「解释」按钮：一次模型调用返回固定三行解读——做什么、读写改了什么、是否安全（风险等级加一句理由）。同时补上 `write`/`edit` 类调用详情区留白的问题——官方渲染器只读 `command` 字段，那两类调用没有该字段。'

@@ -1,0 +1,7 @@
+url: https://github.com/ZHOUcourier/dsh-theme-whalegirl
+name: ZHOUcourier/dsh-theme-whalegirl
+category: theme
+description:
+  en: 'Whale Girl light theme for the DSH Web UI, ported from a DreamSkin skin package: registers one native runtime theme with a full --dsw-* token remap derived from the source palette, layers the artwork as an ambient fixed wallpaper behind a frosted UI, and pins the theme against appearance-preference resets.'
+  zh: '移植自 DreamSkin 皮肤包的鲸鱼娘亮色主题：在原生主题运行时注册一套完整 --dsw-* 令牌重映射，鲸鱼娘插画作为环境壁纸衬于磨砂玻璃界面之后，并通过主题变更守卫保持主题固定。'
+tarball: https://github.com/ZHOUcourier/dsh-theme-whalegirl/releases/latest/download/dsh-theme-whalegirl.tgz

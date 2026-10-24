@@ -1,0 +1,6 @@
+url: https://github.com/sryimnoob123/dsh-web-search-ollama
+name: sryimnoob123/dsh-web-search-ollama
+category: browser
+description:
+  en: Routes the DSH web_search tool through Ollama's web search API, reusing OLLAMA_API_KEY. No DeepSeek official key needed.
+  zh: 让 DSH 的 web_search 工具走 Ollama 联网搜索 API，复用 OLLAMA_API_KEY，无需 DeepSeek 官方 Key。

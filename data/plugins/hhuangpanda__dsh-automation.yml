@@ -1,0 +1,6 @@
+url: https://github.com/hhuangpanda/dsh-automation
+name: hhuangpanda/dsh-automation
+category: workflow
+description:
+  en: Runs one-time and recurring Agent tasks in fresh DSH sessions, with natural-language schedules, visual schedule editing and session-linked history. Supports custom models, skills, pause on failure, and permission settings.
+  zh: 在全新的 DSH 会话中运行单次或周期 Agent 任务，支持自然语言计划、可视化计划编辑和会话关联历史。支持自定义模型、技能、失败时暂停以及权限设置。

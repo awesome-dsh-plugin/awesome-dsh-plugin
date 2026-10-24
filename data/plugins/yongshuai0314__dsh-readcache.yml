@@ -1,0 +1,6 @@
+url: https://github.com/yongshuai0314/dsh-readcache
+name: yongshuai0314/dsh-readcache
+category: dev
+description:
+  en: 'Version-token-validated in-process result cache for the DSH read tool: repeated reads of unchanged files skip file I/O and line rendering, with a readcache tool for stats and clearing.'
+  zh: 为 DSH read 工具提供版本令牌校验的进程内结果缓存：未变更文件的重复读取跳过文件 I/O 与行渲染，附带 readcache 工具查看统计与清空。

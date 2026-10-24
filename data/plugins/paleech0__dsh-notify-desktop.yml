@@ -1,0 +1,6 @@
+url: https://github.com/paleech0/dsh-notify-desktop
+name: paleech0/dsh-notify-desktop
+category: notify
+description:
+  en: 'Windows toast notifications for DSH desktop sessions from the host process: turn ends, approvals, questions and a reminder for an unanswered wait, with a selectable sound per situation and imported custom sound files; clicking a toast raises the DSH window.'
+  zh: 'DSH 桌面端会话的 Windows 原生 Toast 通知（宿主侧）：回合结束、审批、提问与未应答催办，按情况可选音效并支持导入自定义音效；点击通知把 DSH 窗口拉回前台。'

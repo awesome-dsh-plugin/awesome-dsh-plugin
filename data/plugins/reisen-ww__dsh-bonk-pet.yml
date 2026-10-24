@@ -1,0 +1,6 @@
+url: https://github.com/reisen-ww/dsh-bonk-pet
+name: reisen-ww/dsh-bonk-pet
+category: fun
+description:
+  en: 'Whale-girl desk pet in the corner of the DSH Web GUI. It sings along to a bundled track while the agent works; when a tool call fails a steel pipe falls on its head. Click it to bonk the basin it wears, which costs 12 rice — knock enough and it gets hungry and wanders off to beg, and rice appears somewhere on the page for it to dash across and eat. Draggable within the viewport, wriggles and complains if grabbed mid-dash, volume and behaviour configurable from Settings. All artwork, sound effects and the song ship inside the package.'
+  zh: 'DSH Web GUI 角落里的悬浮鲸鱼娘。agent 干活时它跟着内置歌曲唱歌；工具报错时天上掉钢管砸它脑袋。点它敲头上的铁盆，每敲一次扣 12 米饭——敲多了就饿，饿了会去讨饭，米饭随机出现在页面某处，它咻地冲过去吃掉。可拖动且始终留在视口内，吃米途中被抓住会挣扎，音量与玩法在设置里可调。全部素材、音效与歌曲都打包在插件内。'

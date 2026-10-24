@@ -1,0 +1,7 @@
+url: https://github.com/wlc114514/dsh-upload-origin
+name: wlc114514/dsh-upload-origin
+category: tools
+description:
+  en: Resolves the original local path of files uploaded to .dsh-uploads by matching file name, size, and sha256.
+  zh: 通过文件名、大小和 sha256 反查上传到 .dsh-uploads 的文件在本地原始位置的绝对路径。
+tarball: https://github.com/wlc114514/dsh-upload-origin/releases/download/v0.1.0/dsh-upload-origin-0.1.0.tgz

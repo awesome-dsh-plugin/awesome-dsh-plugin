@@ -1,0 +1,6 @@
+url: https://github.com/ryubyte/dsh-a2a
+name: ryubyte/dsh-a2a
+category: dev
+description:
+  en: 'Agent2Agent protocol v1.0 for DSH: run a standard A2A server to let other agents call this instance, connect to remote A2A agents as clients, and manage both from a visual settings page.'
+  zh: '为 DSH 实现 Agent2Agent 协议 v1.0：以标准 A2A server 接收其他 Agent 的调用，以 A2A client 连接远程 Agent，并在可视化设置页统一管理连接。'

@@ -1,0 +1,6 @@
+url: https://github.com/Scorp1o117/dsh-tool-vision
+name: Scorp1o117/dsh-tool-vision
+category: vision
+description:
+  en: Send local images or HTTP(S) image URLs to a configured OpenAI-compatible vision endpoint with the inspect_image tool and return its text response to the conversation.
+  zh: 通过 inspect_image 工具将本地图片或 HTTP(S) 图片链接发送至配置的 OpenAI 兼容视觉端点，并将文字结果带回对话。

@@ -1,0 +1,6 @@
+url: https://github.com/superfish058/dsh-llm-proxy
+name: superfish058/dsh-llm-proxy
+category: model
+description:
+  en: 'Per-model proxy routing for LLM requests: selected models go through a proxy (Clash etc.) while the rest stay direct, with automatic retry on transport errors, 429 and 5xx, configured live from the settings page.'
+  zh: '按模型给 LLM 请求分流代理：勾选的模型走代理（Clash 等），其余直连；传输错误、429、5xx 自动重试，设置页实时生效。'

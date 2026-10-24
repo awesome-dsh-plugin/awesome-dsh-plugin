@@ -1,0 +1,6 @@
+url: https://github.com/xianshu-virtuous/dsh-whale-companion
+name: xianshu-virtuous/dsh-whale-companion
+category: session
+description:
+  en: Automatically starts a fresh Web session near the context limit with the last complete turn, and adds an editable additive whale-maid persona with on-demand reload.
+  zh: 接近上下文上限时自动创建新 Web 会话并只转移最后一个完整回合，同时提供可编辑的追加式鲸鱼娘人格与按需重读工具。

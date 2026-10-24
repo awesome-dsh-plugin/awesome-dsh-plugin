@@ -1,0 +1,6 @@
+url: https://github.com/RyensX/dsh-remote-gateway
+name: RyensX/dsh-remote-gateway
+category: remote
+description:
+  en: Provides a secure reverse proxy, enabling DeepSeek Harness to be accessed remotely and to converse with AI anytime, anywhere.
+  zh: 提供安全的反向代理，使DeepSeek Harness可以远程访问，随时随地和AI对话。

@@ -1,0 +1,6 @@
+url: https://github.com/better-er/dsh-live-token-stats
+name: better-er/dsh-live-token-stats
+category: usage
+description:
+  en: 'Live token stats under the DSH Web composer: streamed tokens/s, output token and first-byte latency, plus per-step estimate-vs-actual reconciliation using the official BPE tokenizer, to tell a slow stream from a stalled one.'
+  zh: '在输入框下方实时渲染 token 状态带：基于 DeepSeek 官方 BPE 分词表显示流式 token/s、输出 token 与首字延迟，并对比每次 step 的估算与实际偏差，用于判断生成是慢还是卡住。'

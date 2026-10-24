@@ -1,0 +1,6 @@
+url: https://github.com/suomir1995/dsh-notes
+name: suomir1995/dsh-notes
+category: memory
+description:
+  en: 'Keeps notes as local Markdown files grouped by directory under a root folder you choose, with a sidebar page, AGENTS-style rule files surfaced as writing context, and six agent tools.'
+  zh: '把笔记存成你选定根目录下按分组组织的本地 Markdown 文件，带侧栏页面，并把 AGENTS 等规则 md 作为写作上下文，另有六个 agent 工具。'

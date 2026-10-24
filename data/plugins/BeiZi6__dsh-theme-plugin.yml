@@ -1,0 +1,6 @@
+url: https://github.com/BeiZi6/dsh-theme-plugin
+name: BeiZi6/dsh-theme-plugin
+category: theme
+description:
+  en: 'Theme studio for the DSH Web GUI: five built-in presets plus fully customizable light/dark palettes (accent, background, foreground, UI and code fonts, translucent sidebar, contrast), hot-swapped instantly and persisted in localStorage.'
+  zh: DSH Web GUI 主题工作室：5 套内置预设 + 完全可自定义的浅/深配色（强调色、背景、前景、UI 与代码字体、半透明侧栏、对比度），即时热切换并持久化到 localStorage。

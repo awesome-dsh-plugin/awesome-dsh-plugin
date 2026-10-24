@@ -1,0 +1,6 @@
+url: https://github.com/yuanyiHY/deepseek-media-gallery
+name: yuanyiHY/deepseek-media-gallery
+category: ui
+description:
+  en: 'Sidebar button that opens a semi-transparent popup for browsing, previewing, downloading and deleting generated images and videos, with a settings page for the media, record and download directories.'
+  zh: '侧边栏按钮打开半透明弹窗，浏览、预览、下载和删除生成的图片与视频；设置页可改图片目录、记录目录与下载目录。'

@@ -1,0 +1,7 @@
+url: https://github.com/Snowball-labbot/Portfolio-OS/tree/main/plugins/dsh-portfolio-os
+name: Snowball-labbot/Portfolio-OS#dsh-portfolio-os
+category: tools
+description:
+  en: 'Self-contained personal portfolio and investment-research workspace for DSH with local registration, asset import and allocation views, market and news tracking, a research library, and optional user-configured AI briefs; ships a Windows runtime and stores data locally.'
+  zh: 'DSH 内的自包含个人资产与投研工作台：支持本地注册、资产导入与配置视图、市场和新闻跟踪、研究库及用户自行配置的 AI 简报；内置 Windows Runtime，数据保存在本机。'
+tarball: https://github.com/Snowball-labbot/Portfolio-OS/releases/download/v0.2.1/dsh-portfolio-os-0.2.1.tgz

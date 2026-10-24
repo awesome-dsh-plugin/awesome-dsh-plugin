@@ -1,0 +1,7 @@
+url: https://github.com/lsh2002/dsh-custom-fonts
+name: lsh2002/dsh-custom-fonts
+category: ui
+tarball: https://github.com/lsh2002/dsh-custom-fonts/releases/download/v1.1.0/dsh-custom-fonts-1.1.0.tgz
+description:
+  en: Customize the UI's Chinese and English fonts, code font, and global font-size offset on a settings page, with a live preview and one-click reset.
+  zh: 在设置页自定义界面中英文/代码字体与全局字号偏移，实时预览，一键恢复默认。

@@ -1,0 +1,6 @@
+url: https://github.com/AllenWES365/dsh-local-memory
+name: AllenWES365/dsh-local-memory
+category: memory
+description:
+  en: Project-isolated long-term memory for DeepSeek Harness that keeps one bank per project and adds a cross-project view; it can also seed a project's memory from its git history without opening a session there.
+  zh: 给 DeepSeek Harness 的跨项目长期记忆：每个项目各存各的库，另有一次性看遍全部的查询视图；还能不打开会话就直接从项目的 git 历史播种记忆。

@@ -1,0 +1,6 @@
+url: https://github.com/dengpeihua/dsh-browser-use
+name: dengpeihua/dsh-browser-use
+category: browser
+description:
+  en: 'Real browser tools for DeepSeek Harness: browse and extract web content, fill forms, manage multiple tabs, and execute multi-step tasks, with incremental DOM, session isolation, screenshots, action-result checks, and archived evidence recall.'
+  zh: '为 DeepSeek Harness 提供真实浏览器操作能力：网页浏览与信息提取、表单填写、多标签页协作和多步骤任务执行；支持增量 DOM、会话隔离、截图、操作结果检查与证据归档回读。'

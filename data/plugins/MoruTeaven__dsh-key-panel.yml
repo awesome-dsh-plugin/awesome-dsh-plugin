@@ -1,0 +1,6 @@
+url: https://github.com/MoruTeaven/dsh-key-panel
+name: MoruTeaven/dsh-key-panel
+category: security
+description:
+  en: 'A secret store for DSH Desktop that keeps API keys in one place and injects them into the assistant''s shell as $DSH_* variables.'
+  zh: '为 DSH Desktop 提供密钥库，集中保管 API 密钥并以 $DSH_* 变量注入助手的 shell 中。'

@@ -1,0 +1,6 @@
+url: https://github.com/alaxrpg/dsh-vision-bridge
+name: alaxrpg/dsh-vision-bridge
+category: vision
+description:
+  en: "Adds image input and recognition through configured DSH providers or an OpenAI-compatible endpoint."
+  zh: "通过已配置的 DSH Provider 或 OpenAI 兼容端点提供图片输入与识别。"

@@ -1,0 +1,6 @@
+url: https://github.com/qtaik/dsh-noname-kit
+name: qtaik/dsh-noname-kit
+category: dev
+description:
+  en: Noname (Sanguosha-like game) extension workshop. AI writes skill and card extensions behind confirmation gates, static validation and block-based safe writes.
+  zh: 无名杀扩展开发工坊。AI 在确认协议、校验门禁与区块化写入的保护下编写武将技能与卡牌扩展。

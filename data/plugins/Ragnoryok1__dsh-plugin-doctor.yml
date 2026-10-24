@@ -1,0 +1,6 @@
+url: https://github.com/Ragnoryok1/dsh-plugin-doctor
+name: Ragnoryok1/dsh-plugin-doctor
+category: dev
+description:
+  en: 'Plugin diagnostics for the dsh web GUI: finds plugins that failed to load, bundle rows that never started and broken file links, then reports the findings. Read-only: it does not repair, journal or undo anything.'
+  zh: 'dsh Web 界面的插件诊断：找出加载失败的插件、未启动的 bundle 行与失效的 file 链接，并报告扫描结果。只读：不修复、不写日志、不提供撤销。'

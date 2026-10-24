@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-perm-gate
+name: drscrewdriver/dsh-perm-gate
+category: security
+description:
+  en: P0–P4 deterministic-first permission gate with permissive tier, learning sedimentation and approval-history UI; hard-deny credentials and protected paths, auto-allow internal read-only tools.
+  zh: P0–P4 确定性优先权限门控，含 Permissive 档位、学习沉淀与审批历史 UI；凭据/受保护路径硬拒绝，内部只读工具自动放行。

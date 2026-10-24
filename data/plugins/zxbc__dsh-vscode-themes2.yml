@@ -1,0 +1,6 @@
+url: https://github.com/zxbc/dsh-vscode-themes2
+name: zxbc/dsh-vscode-themes2
+category: theme
+description:
+  en: 'Browse, search, install, and apply VS Code color themes to the DeepSeek Harness Web UI: bundles 14 curated themes with live color-swatch previews, searches the official VS Code Marketplace for more, and one-click installs map any theme''s palette onto the DSW design tokens with live switching and persisted selection.'
+  zh: '在 DeepSeek Harness Web UI 中浏览、搜索、安装并应用 VS Code 配色主题：内置 14 款精选主题并带实时色卡预览，可搜索官方 VS Code 插件市场安装更多主题，一键安装会把任意主题的调色板映射到 DSW 设计令牌，支持实时切换与选择持久化。'

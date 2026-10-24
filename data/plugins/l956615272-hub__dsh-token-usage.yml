@@ -1,0 +1,6 @@
+url: https://github.com/l956615272-hub/dsh-token-usage
+name: l956615272-hub/dsh-token-usage
+category: usage
+description:
+  en: Global token totals across every local DSH conversation, de-duplicated by message id, with custom date ranges and per-provider monthly quota tracking.
+  zh: 统计本机全部 DSH 会话的历史 token 消耗，按 message.id 去重，支持自定义日期区间与按接入方的月度额度剩余。

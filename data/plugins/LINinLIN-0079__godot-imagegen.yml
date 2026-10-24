@@ -1,0 +1,6 @@
+url: https://github.com/LINinLIN-0079/godot-imagegen
+name: LINinLIN-0079/godot-imagegen
+category: vision
+description:
+  en: 'Local art pipeline for DSH: drives the locally installed SD WebUI and ComfyUI backends through ten image_* tools and an Art Studio sidebar panel with an embedded ComfyUI canvas, post-processes with the Python shipped with those installs (rembg cutout, Real-ESRGAN upscale, seamless tiling), and writes Godot-ready assets with res:// paths once a project root is set.'
+  zh: '本机美术流水线：把本机已装的 SD WebUI 与 ComfyUI 接进 DSH——10 个 image_* 工具 + 「美术工坊」侧边栏面板（内嵌 ComfyUI 画布），用整合包自带的 Python 做抠图 / 放大 / 无缝平铺后处理；填写 Godot 项目根目录后，产物直接落成带 res:// 路径的游戏资产。'

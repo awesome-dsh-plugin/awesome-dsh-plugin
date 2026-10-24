@@ -1,0 +1,7 @@
+url: https://github.com/121212165/dsh-plugin-quota
+name: 121212165/dsh-plugin-quota
+category: usage
+tarball: https://github.com/121212165/dsh-plugin-quota/releases/download/v0.2.0/dsh-plugin-quota-0.2.0.tgz
+description:
+  en: "Live usage gauge injected into the system prompt every turn: session tokens and estimated spend, a next-turn estimate, and two predictions the model can act on — which step fills the context window and which step burns the budget. /qm panels, zero-config by default, optional price table, and it publishes a summary.json budget contract sibling plugins read."
+  zh: "实时用量仪表：每回合向系统提示注入一行 token/花费仪表，含下一步预估，以及模型可以自刹的两条预测——第几步撑满上下文、第几步烧穿预算。/qm 面板自查，零配置即用，价格表可选，并向家族发布 summary.json 预算契约供兄弟插件读取。"

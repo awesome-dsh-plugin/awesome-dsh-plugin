@@ -1,0 +1,6 @@
+url: https://github.com/yunxiyang/dsh-wide-conversation
+name: yunxiyang/dsh-wide-conversation
+category: ui
+description:
+  en: 'Sets the DSH web client conversation column to a percentage of its own width (40-100, default 100 = full width) instead of the built-in 680-920px reading measure, edited from a collapsible card under Settings > Plugins.'
+  zh: '把 DSH Web 客户端对话列宽度设为其自身宽度的百分比（40–100，默认 100 即铺满整列），取代内置的 680–920px 阅读宽度，并在「设置 > 插件」中提供可折叠的调整卡片。'

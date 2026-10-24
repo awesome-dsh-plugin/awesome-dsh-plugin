@@ -1,0 +1,6 @@
+url: https://github.com/sknagato/dsh-plugin-fc-emulator
+name: sknagato/dsh-plugin-fc-emulator
+category: fun
+description:
+  en: Floating FC/NES game hall for DSH Web with fceumm, local ROM upload, and GitHub online library.
+  zh: 在 DSH Web 右下角挂悬浮球打开 FC/NES 游戏厅（fceumm），支持本地上传与自填 GitHub 在线库。

@@ -1,0 +1,6 @@
+url: https://github.com/Hugo16/dsh-session-rotate-on-compact
+name: Hugo16/dsh-session-rotate-on-compact
+category: session
+description:
+  en: Rotate the outbound LLM session ID after each successful DSH compaction without creating a new DSH session.
+  zh: 在每次 DSH 成功 Compact 后轮换对外 LLM 会话 ID，而不创建新的 DSH 会话。

@@ -1,0 +1,6 @@
+url: https://github.com/rebornace/dsh-tracescope/tree/main/packages/dsh-tracescope
+name: rebornace/dsh-tracescope#dsh-tracescope
+category: tools
+description:
+  en: 'DSH right-sidebar plugin that compares two git commits, builds a manual-test checklist from the impact scope, and supports fail notes, screenshots, task attachments, and defect submission to Yunxiao, GitHub, GitLab, or a webhook.'
+  zh: 'DSH 右侧栏插件：对比两个 git 提交，根据影响面生成手测清单，支持失败备注、截图、任务附件，以及向云效 / GitHub / GitLab / Webhook 提交缺陷。'

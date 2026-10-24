@@ -1,0 +1,16 @@
+# dshmarket submission entry for dsh-consistency-guard.
+# Copy to <fork-of-awesome-dsh-plugin>/data/plugins/bycall__dsh-consistency-guard.yml
+# and open a PR against https://github.com/awesome-dsh-plugin/awesome-dsh-plugin.
+#
+# Rules enforced by CI (pr-gate.yml / check-submission.mjs):
+#   - repo must contain a dsh.bundle declaration (package.json has dsh.bundle.patch) ✓
+#   - repo must be >= 1 day old, >= 10 commits
+#   - filename must equal slugFor(url): <owner>__<repo>.yml
+#   - only keys: url, name, category, description, tarball (no `npm:` key — npm
+#     mapping is resolved automatically from the repository)
+url: https://github.com/bycall/dsh-consistency-guard
+name: dsh-consistency-guard
+category: docs
+description:
+  en: "Consistency guard for long-form writing: scans conversation prose for character, timeline and numeric setting conflicts across chapters, then jumps straight to the conflicting message."
+  zh: "长文创作一致性守卫：扫描会话正文，发现人物年龄、等级、境界、年份等设定跨章节矛盾，点击直接跳转到冲突原文位置。"

@@ -1,0 +1,6 @@
+url: https://github.com/MichaelShii/dsh-plugin-teamflow
+name: MichaelShii/dsh-plugin-teamflow
+category: workflow
+description:
+  en: 'Turn a one-line requirement into verified delivery. TeamFlow runs a multi-stage pipeline — triage, PRD, design, technical plan, parallel development, QA with defect rework, acceptance — and gives the model 12 `teamflow_*` tools plus a workbench with a live pipeline graph and a backlog kanban. Each requirement gets its own folder holding the PRD, design, technical plan, QA report and acceptance record.'
+  zh: '把一句话需求变成可验收的交付。TeamFlow 跑一条多阶段流水线——分诊、PRD、设计、技术方案、并行开发、带打回重修的 QA、验收——并给模型 12 个 `teamflow_*` 工具，以及带实时流水线图与 backlog 看板的工作台。每个需求一个专属目录，收着 PRD、设计、技术方案、QA 报告与验收记录。'

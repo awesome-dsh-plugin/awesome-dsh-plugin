@@ -1,0 +1,6 @@
+url: https://github.com/wulusai2333/mimo-vision
+name: wulusai2333/mimo-vision
+category: vision
+description:
+  en: '`describe_image` tool: a vision bridge that sends images to mimo-v2.5 through the opencode Zen API (credential `OPENCODE_GO_API_KEY`, free route first with paid fallback) and returns text descriptions for text-only models, with native passthrough and ImageMagick transcoding of SVG/TIFF/HEIC formats.'
+  zh: '`describe_image` 视觉桥：经 opencode Zen API（凭据 `OPENCODE_GO_API_KEY`，免费线路优先、付费兜底）把图片发给 mimo-v2.5、返回文字描述给纯文本模型，原生格式直发，SVG/TIFF/HEIC 等格式经 ImageMagick 自动转码。'

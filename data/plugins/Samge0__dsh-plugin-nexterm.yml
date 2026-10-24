@@ -1,0 +1,6 @@
+url: https://github.com/Samge0/dsh-plugin-nexterm
+name: Samge0/dsh-plugin-nexterm
+category: tools
+description:
+  en: 'Nexterm fleet maintenance in a DSH session: 6 agent tools (auth with password/TOTP/device-code login, fleet listing, single-host exec, parallel batch exec, preset health checks, CPU/memory/disk monitoring) over the Nexterm REST API, plus a minimal settings page; no SSH private keys needed on the DSH machine.'
+  zh: 在 DSH 会话中运维 Nexterm 托管的 SSH 机群：6 个 agent 工具（密码/TOTP/设备授权码登录认证、机群清单、单机执行、批量并行执行、预设健康检查、CPU/内存/磁盘监控），全走 Nexterm REST API，附极简设置页；DSH 机器上无需任何 SSH 私钥。

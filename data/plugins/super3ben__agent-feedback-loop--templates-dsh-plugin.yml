@@ -1,0 +1,6 @@
+url: https://github.com/super3ben/agent-feedback-loop/tree/main/templates/dsh-plugin
+name: super3ben/agent-feedback-loop#agent-feedback-loop-dsh
+category: memory
+description:
+  en: 'Feeds every dsh prompt into the local agent-feedback-loop feedback-memory pipeline — captures dissatisfaction, reviews it offline into reflections, and attaches the compiled recurrence-rule context back to the turn, never blocking a prompt. Requires the agent-feedback-loop runtime; running agent-feedback-loop install afterwards wires existing dsh profiles automatically.'
+  zh: '把 dsh 的每一轮 prompt 送入本地 agent-feedback-loop 反馈记忆管线——捕获用户不满、离线评审沉淀为反思，并把编译好的复发规则上下文附着回当前轮次，从不阻塞 prompt。需要先安装 agent-feedback-loop 运行时；安装后执行 agent-feedback-loop install 会自动接线已有的 dsh profile。'

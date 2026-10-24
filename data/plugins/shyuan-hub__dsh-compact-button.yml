@@ -1,0 +1,6 @@
+url: https://github.com/shyuan-hub/dsh-compact-button
+name: shyuan-hub/dsh-compact-button
+category: ui
+description:
+  en: 'Adds a Compact context button and a New session button to the context meter panel; compact submits /compact through the same command channel, and new session starts a fresh session in the same workspace.'
+  zh: '在上下文计量面板中添加「压缩上下文」与「新建会话」两个按钮：压缩按钮通过与手敲 /compact 相同的通道提交命令，新建会话按钮在同一 workspace 中开启新会话。'

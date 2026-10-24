@@ -1,0 +1,6 @@
+url: https://github.com/oumaekumiko0821/dsh-splash-gojo
+name: oumaekumiko0821/dsh-splash-gojo
+category: ui
+description:
+  en: 'Full-screen boot animation for the DSH web client: the boot HTML paints a cover-fit artwork on its first frame, adds a slow settle, a scanning light sweep and a progress HUD, then hands the viewport over when the app mounts. Click or press Esc / space / Enter to skip.'
+  zh: '用图片做全屏开机动画：启动 HTML 首帧即铺满画面并缓慢推近，横向光带扫过，左下进度与阶段提示，应用挂载完成后淡出。点击任意处或按 Esc / 空格 / 回车可跳过。'

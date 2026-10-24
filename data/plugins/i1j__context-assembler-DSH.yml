@@ -1,0 +1,6 @@
+url: https://github.com/i1j/context-assembler-DSH
+name: i1j/context-assembler-DSH
+category: session
+description:
+  en: 'Context Assembler plugin for DeepSeek Harness: topic-block context assembly, water-pressure topic splitting, tool trace/rewrite, reality recall injection and handoff planning.'
+  zh: 'DeepSeek Harness 上下文汇编插件：话题块上下文汇编、水位压力话题切割、工具轮压缩/改写、reality 召回注入与 handoff 规划。'

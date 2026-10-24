@@ -1,0 +1,6 @@
+url: https://github.com/Flan246/dsh-lit-search
+name: Flan246/dsh-lit-search
+category: tools
+description:
+  en: "Academic literature search and citation tools for DeepSeek Harness: paper search via Crossref and OpenAlex with no API key, related-works discovery, and citation formatting in GB/T 7714, APA and BibTeX."
+  zh: "为 DeepSeek Harness 提供的学术文献检索与引用工具：基于 Crossref 与 OpenAlex 检索论文（无需 API key），支持相关工作发现，并可按 GB/T 7714、APA 与 BibTeX 格式生成引用。"

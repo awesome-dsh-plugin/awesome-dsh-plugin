@@ -1,0 +1,6 @@
+url: https://github.com/zouxiaoyang/dsh-commandcode-usage
+name: zouxiaoyang/dsh-commandcode-usage
+category: usage
+description:
+  en: "CommandCode usage & balance panel for DeepSeek Harness: API usage, credit balance, 5-hour/weekly windows from the sidebar footer."
+  zh: "DSH 的 CommandCode 用量与余额面板：在侧边栏底部显示 API 用量、信用额度、5小时/每周窗口。"

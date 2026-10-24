@@ -1,0 +1,6 @@
+url: https://github.com/MrYangyt/dsh-k8s
+name: MrYangyt/dsh-k8s
+category: dev
+description:
+  en: 'Multi-cluster Kubernetes management panel powered by local kubectl, with resource filtering, YAML editing, live Pod logs, interactive container terminals, workload restart/scaling, and DSH theme synchronization; accessible from the sidebar or session view. Requires DSH 0.2.0-rc.2.'
+  zh: '基于本地 kubectl 的 Kubernetes 多集群管理面板：资源筛选、YAML 编辑、Pod 实时日志、交互式容器终端、工作负载重启与扩缩容，并同步 DSH 主题；支持侧栏入口和会话视图。需要 DSH 0.2.0-rc.2。'

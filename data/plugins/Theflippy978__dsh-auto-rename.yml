@@ -1,0 +1,6 @@
+url: https://github.com/Theflippy978/dsh-auto-rename
+name: Theflippy978/dsh-auto-rename
+category: session
+description:
+  en: 'Names a session from its first prompt, and streams AI title suggestions into the rename dialog.'
+  zh: '用首条消息为会话命名，并在重命名弹窗里流式给出 AI 标题建议。'

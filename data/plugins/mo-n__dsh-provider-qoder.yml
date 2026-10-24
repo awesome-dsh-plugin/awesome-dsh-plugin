@@ -1,0 +1,6 @@
+url: https://github.com/mo-n/dsh-provider-qoder
+name: mo-n/dsh-provider-qoder
+category: model
+description:
+  en: Connects Qoder subscriptions to DeepSeek Harness, supporting Global and China regions, multimodal input, and tool calls.
+  zh: 将 Qoder 订阅接入 DeepSeek Harness，支持国际版与中国区、多模态与工具调用。

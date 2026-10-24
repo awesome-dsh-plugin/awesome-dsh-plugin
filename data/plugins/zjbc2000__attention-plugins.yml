@@ -1,0 +1,7 @@
+url: https://github.com/zjbc2000/attention-plugins
+name: zjbc2000/attention-plugins
+category: notify
+tarball: https://github.com/zjbc2000/attention-plugins/releases/download/v0.2.0/attention-plugins-0.2.0.tgz
+description:
+  en: "Task-priority session notifications for DSH: main-line sessions alert immediately on completion or failure, side-line completions can be batched into one alert, and questions or permission requests alert as they arrive; supports multiple main-line markers and a balanced mode that treats every session as main-line while nothing is marked."
+  zh: "面向 DSH 的任务分级会话通知：主线任务完成或失败时立即提醒，支线可汇总为一声，提问与权限请求出现即提醒；支持同时标记多个主线，以及未标记主线时把所有会话视为主线的均衡模式。"

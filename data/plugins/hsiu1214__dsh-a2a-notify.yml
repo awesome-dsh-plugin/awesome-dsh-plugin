@@ -1,0 +1,6 @@
+url: https://github.com/hsiu1214/dsh-a2a-notify
+name: hsiu1214/dsh-a2a-notify
+category: notify
+description:
+  en: 'Windows balloon notifications for session lifecycle events (new / running / finished / error) across all workspaces, with a session-store watch that catches headless and A2A dispatch sessions whose events never reach the host bus. Windows only.'
+  zh: '会话生命周期事件（新建 / 运行中 / 完成 / 出错）的 Windows 气泡通知，覆盖所有工作区；还会监听会话存储，捕捉事件从不经过宿主总线的无头与 A2A 派发会话。仅支持 Windows。'

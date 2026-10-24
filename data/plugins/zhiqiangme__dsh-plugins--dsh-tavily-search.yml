@@ -1,0 +1,6 @@
+url: https://github.com/zhiqiangme/dsh-plugins/tree/main/dsh-tavily-search
+name: zhiqiangme/dsh-plugins#dsh-tavily-search
+category: browser
+description:
+  en: 'Tavily backend for the built-in web search: an in-process endpoint at 127.0.0.1:8787/v1 turns its requests into Tavily searches; up to 10 API keys stay in the DSH credential store, rotate per request and switch on auth, rate-limit or quota errors; a settings card manages keys, runs a test search and points web search at the endpoint.'
+  zh: 为内置网页搜索提供 Tavily 后端：在 DSH 进程内提供 127.0.0.1:8787/v1 接口，把搜索请求转成 Tavily 检索；最多 10 个 API Key 存在 DSH 凭据库，按请求轮换，遇鉴权、限流或额度错误自动换下一个；设置卡片可管理密钥、测试搜索并一键接入网页搜索。

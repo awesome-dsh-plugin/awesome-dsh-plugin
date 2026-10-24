@@ -1,0 +1,6 @@
+url: https://github.com/JesmonX/dsh-web-shell
+name: JesmonX/dsh-web-shell
+category: dev
+description:
+  en: 'Collapsible right-docked web terminal (xterm.js) bridged to a host PTY over WebSocket: bash/zsh switching, resizable panel, and fold/unfold that keeps the session alive.'
+  zh: 右侧停靠的可折叠 Web 终端（xterm.js），经 WebSocket 桥接宿主 PTY：支持 bash/zsh 切换、拖拽调宽，折叠时保留会话。

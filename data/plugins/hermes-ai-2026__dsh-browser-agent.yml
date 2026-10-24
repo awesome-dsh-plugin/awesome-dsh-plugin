@@ -1,0 +1,6 @@
+url: https://github.com/hermes-ai-2026/dsh-browser-agent
+name: hermes-ai-2026/dsh-browser-agent
+category: browser
+description:
+  en: "19 browser_* tools that let agents drive DeepSeek Harness's built-in sidebar browser over a loopback bridge: accessibility-tree reads with stable refs, real CDP clicks and keys, screenshots, network interception, device emulation, a cookie vault, document-start script injection, multiple browser instances, and raw CDP passthrough. Requires DSH launched with --remote-debugging-port=9222."
+  zh: "19 个 browser_* 工具，让 agent 通过回环桥驱动 DSH 内置的侧边栏浏览器：带稳定 ref 的无障碍树读取、CDP 真实点击与按键、截图、网络拦截、设备模拟、Cookie 保险库、document-start 脚本注入、多浏览器实例，以及任意 CDP 命令透传。需以 --remote-debugging-port=9222 启动 DSH。"

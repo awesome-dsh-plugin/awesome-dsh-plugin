@@ -1,0 +1,9 @@
+url: https://github.com/qcsjjjjj/dsh-hero-rightbar
+name: qcsjjjjj/dsh-hero-rightbar
+category: ui
+description:
+  en: Adds the right sidebar's expand trigger on pages with no conversation, matching the product's own control.
+  zh: 在没有对话的页面上补回右侧栏的展开入口，位置与外观对齐产品自带控件。
+# 可选（推荐）：把预构建 tarball 传成 Release 资产后取消注释。
+# 资产名必须不带版本号，否则 latest/download/ 在你下次发版时 404。
+tarball: https://github.com/qcsjjjjj/dsh-hero-rightbar/releases/latest/download/dsh-hero-rightbar.tgz

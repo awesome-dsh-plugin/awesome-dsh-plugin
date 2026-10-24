@@ -1,0 +1,6 @@
+url: https://github.com/0x7A7A6572/dsh-forge-studio/tree/main/packages/plugin-usage-billing
+name: 0x7A7A6572/dsh-forge-studio#plugin-usage-billing
+category: usage
+description:
+  en: 'Usage and cost view for DeepSeek Harness: aggregates real token usage from existing session logs, locks each cost at the price of its event time, and shows month and today spend against a budget from a sidebar card or an input-bar pill.'
+  zh: 'dsh 用量与费用视图：从既有会话日志聚合真实 token 用量，按事件发生时刻的价格写时锁定费用；侧栏卡片或输入框胶囊展示本月/今日花费与预算进度，设置页另有概览、趋势、明细三页。'

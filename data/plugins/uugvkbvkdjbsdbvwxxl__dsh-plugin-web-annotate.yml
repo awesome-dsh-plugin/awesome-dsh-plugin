@@ -1,0 +1,6 @@
+url: https://github.com/uugvkbvkdjbsdbvwxxl/dsh-plugin-web-annotate
+name: uugvkbvkdjbsdbvwxxl/dsh-plugin-web-annotate
+category: browser
+description:
+  en: Annotate elements in the built-in browser — click one, write a comment, then send the whole batch to the session in one message so the model can find and edit the matching source.
+  zh: 在内置浏览器里点选页面元素写批注，攒够后一次性发给会话，让模型直接定位并修改对应源码。

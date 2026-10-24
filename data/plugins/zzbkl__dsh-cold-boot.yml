@@ -1,0 +1,15 @@
+# 提给 awesome-dsh-plugin/awesome-dsh-plugin 的条目文件。
+# 目标路径：data/plugins/zzbkl__dsh-cold-boot.yml（一个 PR 只加这一个文件）
+#
+# 提之前必须满足：仓库创建满 1 天（CI 自动查）、仓库已加 topic `dsh-plugin`、
+# package.json 里有 dsh.bundle.patch（已有）。
+#
+# description 是会被逐字对着代码核的声明 —— 只写功能，不带营销词。
+
+url: https://github.com/zzbkl/dsh-cold-boot
+name: zzbkl/dsh-cold-boot
+category: fun
+description:
+  en: 'Plays a 44-second sci-fi cold-boot sequence over the DSH window on startup: terminal log, whale mark, four spoken lines, and a skip button. Pure DOM and CSS in one self-contained client bundle, no runtime dependencies.'
+  zh: '启动时在 DSH 窗口上播一段 44 秒的科幻冷启动序列：终端日志、鲸鱼标识、四句英文人声，外加一个跳过按钮。纯 DOM 与 CSS，单个自包含的客户端包，无运行时依赖。'
+tarball: https://github.com/zzbkl/dsh-cold-boot/releases/latest/download/dsh-cold-boot.tgz

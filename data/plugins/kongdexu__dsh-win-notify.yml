@@ -1,0 +1,6 @@
+url: https://github.com/kongdexu/dsh-win-notify
+name: kongdexu/dsh-win-notify
+category: notify
+description:
+  en: 'Real Windows OS toasts for DeepSeek Harness: task-finished, needs-input and needs-approval alerts that persist in Notification Center under DeepSeek branding. Windows-only, zero runtime dependencies.'
+  zh: '真正的 Windows 系统 Toast（通知中心持久、DeepSeek 品牌鲸鱼图标）：任务完成 / 需要输入 / 需要审批时提醒。仅支持 Windows，零运行时依赖。'

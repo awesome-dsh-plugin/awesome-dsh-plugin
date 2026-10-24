@@ -1,0 +1,6 @@
+url: https://github.com/zhangmiao03/cloakpack/tree/main/packages/dsh-cloak
+name: zhangmiao03/cloakpack#dsh-cloak
+category: security
+description:
+  en: "Context firewall for DeepSeek Harness: credentials in successful plain-text tool results become opaque ⟦cloak:category:n⟧ placeholders before they reach the model, with originals kept only in a process-memory, agent-scoped vault. 36 built-in signature families (shared with the cloakpack git pre-push guard), key-name rules for unknown formats, custom regex rules, dry-run mode, an audit log, and the /cloak command."
+  zh: "DeepSeek Harness 的上下文防火墙：成功的纯文本工具结果中的凭据在进入模型之前先变成不透明的 ⟦cloak:category:n⟧ 占位符，原值只保存在进程内存的 agent 级保险库中。36 类内置签名（与 cloakpack git pre-push 守卫共享同一引擎）、针对未知格式的键名规则、自定义正则、dry-run 模式、审计日志与 /cloak 命令。"

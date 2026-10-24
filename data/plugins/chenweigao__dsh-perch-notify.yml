@@ -1,0 +1,6 @@
+url: https://github.com/chenweigao/dsh-perch-notify
+name: chenweigao/dsh-perch-notify
+category: notify
+description:
+  en: 'Webhook notifications for dsh sessions: a POST when an approval is requested or a turn ends, to ntfy, Bark, a Slack/DingTalk/WeCom bot URL, or any HTTPS endpoint.'
+  zh: 'dsh 会话的 Webhook 通知：审批被请求或回合结束时发送 POST，可发往 ntfy、Bark、Slack/钉钉/企微机器人地址或任意 HTTPS 端点。'

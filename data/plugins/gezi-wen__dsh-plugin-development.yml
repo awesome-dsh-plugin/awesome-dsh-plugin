@@ -1,0 +1,6 @@
+url: https://github.com/gezi-wen/dsh-plugin-development
+name: gezi-wen/dsh-plugin-development
+category: skill
+description:
+  en: Ships a skill that documents how to build, debug and publish DSH plugins - host and client package skeleton, developing a forked plugin inside a throwaway profile, publishing to GitHub and npm, and the pitfalls found while shipping them. Installing the plugin registers the skill.
+  zh: 携带一份技能，讲怎么开发、调试、发布 DSH 插件——host/client 双半包骨架、把 fork 挂进丢弃式 profile 开发、发布到 GitHub 与 npm，以及发布过程中实际踩到的坑。安装插件即注册该技能。

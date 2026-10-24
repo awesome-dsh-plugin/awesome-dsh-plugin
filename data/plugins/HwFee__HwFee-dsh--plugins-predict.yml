@@ -1,0 +1,6 @@
+url: https://github.com/HwFee/HwFee-dsh/tree/master/plugins/predict
+name: HwFee/HwFee-dsh#predict
+category: ui
+description:
+  en: 'Next-prompt suggestions: after each answer it predicts your next message as grey ghost text in the composer. Tab fills it without sending, and the prediction model is selectable.'
+  zh: '下一句：每轮回答后预测你的下一条输入，以浅灰 ghost 文本显示在输入框。按 Tab 填入但不发送，预测模型可选。'

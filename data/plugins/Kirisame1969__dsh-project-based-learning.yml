@@ -1,0 +1,6 @@
+url: https://github.com/Kirisame1969/dsh-project-based-learning
+name: Kirisame1969/dsh-project-based-learning
+category: skill
+description:
+  en: 'Project-based learning coach: a subject-agnostic teaching engine plus swappable domain packs (Unity/C# included), shipped both as a DSH skill and as an installable bundle. The skill protocol enforces attempt-first teaching and graded hints; a zero-dependency validator rejects ability claims their evidence does not support and blocks stage acceptance while blockers are open.'
+  zh: 项目制教学教练：学科无关的教学引擎 + 可替换领域包（随包提供 Unity/C#），同时以 DSH 技能与可安装组合包分发。技能协议强制"先做后教"与分级提示；零依赖校验器会拒绝证据不支撑的能力结论，并在存在未解决阻塞项时阻止阶段通过。

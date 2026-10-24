@@ -1,0 +1,6 @@
+url: https://github.com/FeWOO/DeepSeek-meme
+name: FeWOO/DeepSeek-meme
+category: fun
+description:
+  en: 'Sticker library for DeepSeek Harness: a composer button opens two bundled packs (10 GPT-drawn plus 8 community fan-art), one click sends a 180px sticker, and a send_sticker tool lets the model understand and reply with stickers.'
+  zh: 'DSH 表情包库：输入区按钮打开默认表情（10 张 GPT 绘制）与社区二创梗图（8 张）两个包，点一下发送 180px 贴纸，模型也能通过 send_sticker 理解并回发表情。'

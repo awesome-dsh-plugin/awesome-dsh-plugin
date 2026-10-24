@@ -1,0 +1,6 @@
+url: https://github.com/XcodeFish/dsh-file-link-menu
+name: XcodeFish/dsh-file-link-menu
+category: ui
+description:
+  en: Adds a right-click menu on file references in chat output, listing registered applications with icons for open-with, revealing files in the file manager, and copying absolute or relative paths resolved against the session workspace, while code blocks, plain text and external links keep the native menu.
+  zh: 为聊天输出中的文件引用添加右键菜单，列出系统关联应用（带图标）供选择打开，在文件管理器中定位文件，并复制基于会话工作区解析的绝对或相对路径；代码块、普通文本与外部链接保持原生菜单。

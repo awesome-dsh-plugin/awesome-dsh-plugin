@@ -1,0 +1,7 @@
+url: https://github.com/xiex16070-jpg/dsh-prompt-enhance
+name: xiex16070-jpg/dsh-prompt-enhance
+category: ui
+description:
+  en: 'Adds an enhancement chip to the composer input action row, left of the model selector: it rewrites the draft in place using the model already selected in the session, in five styles, with one-click undo and an /enhance slash command.'
+  zh: '在输入框动作行的模型选择器左侧加一颗增强芯片：用当前会话已选的模型就地改写草稿，五种风格，可一键撤销，另有 /enhance 斜杠命令。'
+tarball: https://github.com/xiex16070-jpg/dsh-prompt-enhance/releases/latest/download/dsh-prompt-enhance.tgz

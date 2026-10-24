@@ -1,0 +1,7 @@
+url: https://github.com/exoticknight/dsh-theme-eink-retro
+name: exoticknight/dsh-theme-eink-retro
+category: theme
+tarball: https://github.com/exoticknight/dsh-theme-eink-retro/releases/download/v0.1.0/dsh-theme-eink-retro-0.1.0.tgz
+description:
+  en: 'A paper-and-ink client-side theme for the DeepSeek Harness Web UI: Balanced preserves semantic status colors, and Immersive maps supported surfaces to monochrome.'
+  zh: DeepSeek Harness Web UI 纸墨风客户端主题，提供保留语义状态色的平衡模式和黑白沉浸模式。

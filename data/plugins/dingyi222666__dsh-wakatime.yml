@@ -1,0 +1,6 @@
+url: https://github.com/dingyi222666/dsh-wakatime
+name: dingyi222666/dsh-wakatime
+category: usage
+description:
+  en: Tracks DSH's file reads, image views, and code edits in WakaTime, including exact counts of lines added and deleted by AI. Keeps activity tracking running while DSH responds, batches updates across files, and coordinates per-project reporting limits across parallel DSH processes. Automatically installs and updates wakatime-cli.
+  zh: 在 WakaTime 中记录 DSH 读取文件、查看图片和编辑代码的活动，并准确统计 AI 新增和删除的代码行数。DSH 回复期间持续记录活动，多个文件的记录批量上报，并在并行运行的 DSH 进程间统一控制各项目的上报频率。自动安装和更新 wakatime-cli。

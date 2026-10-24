@@ -1,0 +1,7 @@
+url: https://github.com/xinming-chenniang/dsh-button
+name: xinming-chenniang/dsh-button
+category: ui
+tarball: https://github.com/xinming-chenniang/dsh-button/releases/download/v1.2.3/dsh-button-1.2.3.tgz
+description:
+  en: 'Editable quick-action buttons beside the DSH composer: send 「继续」 or your own saved text, resend your last message, and hide or restore either preset. Text-only: sends text, runs no host commands, and never overwrites an existing draft.'
+  zh: 'DSH 输入框旁的可编辑快捷按钮：发送「继续」或自定义文字、重发上一条，并可隐藏/恢复预设。纯文字动作，不执行宿主命令；有草稿时不发送。'

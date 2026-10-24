@@ -1,0 +1,6 @@
+url: https://github.com/Anionex/dsh-turn-rewind
+name: Anionex/dsh-turn-rewind
+category: session
+description:
+  en: Rewind conversation and workspace state, powered by a persistent Change Ledger.
+  zh: 对话回退：基于持久 Change Ledger 回滚会话与工作区状态。

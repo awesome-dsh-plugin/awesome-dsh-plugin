@@ -1,0 +1,6 @@
+url: https://github.com/zhitiaojun/dsh-auto-git
+name: zhitiaojun/dsh-auto-git
+category: git
+description:
+  en: 'Runs git init in each newly registered DSH workspace, with an empty initial commit by default, so git-aware plugins have a repository to attach to; directories already inside a work tree are skipped.'
+  zh: '在 DSH 每次注册新工作区时自动 git init 并补一个空提交；已在工作树内的目录会被跳过。'

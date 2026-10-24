@@ -1,0 +1,6 @@
+url: https://github.com/liuwenji007/dsh-trust-check
+name: liuwenji007/dsh-trust-check
+category: security
+description:
+  en: 'Static capability disclosure for DeepSeek Harness plugins: a Settings page and CLI that list installed plugins'' capabilities, literal destinations, install scripts, and injection shapes (prompt registrations, shipped skill text, bundle patch), each with file:line evidence. Code-determined, reproducible, zero-token. Disclosure only — not a security verdict, never a safety claim.'
+  zh: DSH 插件静态能力披露：设置页与 CLI 列出已装插件的权限能力、字面量去向、安装脚本与注入形态（prompt 注册、自带 skill 文本、bundle patch），每条附文件:行号证据。代码判定、可复现、零 token。只做披露，不做安全承诺，不判定恶意。

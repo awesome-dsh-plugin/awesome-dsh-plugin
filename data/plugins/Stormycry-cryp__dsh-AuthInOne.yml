@@ -1,0 +1,7 @@
+url: https://github.com/Stormycry-cryp/dsh-AuthInOne
+name: Stormycry-cryp/dsh-AuthInOne
+category: model
+description:
+  en: Adds account login, API and custom Provider setup, model switching, image fallback for text-only models, and token/cost attribution to DeepSeek Harness 47f.
+  zh: 为 DeepSeek Harness 47f 提供账号登录、API 与自定义 Provider 配置、模型切换、纯文本模型图片兜底，以及 Token 与费用归因。
+tarball: https://github.com/Stormycry-cryp/dsh-AuthInOne/releases/download/v0.2.0-alpha.4/dsh-auth-in-one-0.2.0-alpha.4.tgz

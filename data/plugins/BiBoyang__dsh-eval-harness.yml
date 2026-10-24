@@ -1,0 +1,6 @@
+url: https://github.com/BiBoyang/dsh-eval-harness
+name: BiBoyang/dsh-eval-harness
+category: dev
+description:
+  en: 'Evaluation harness for DSH plugins: YAML cases drive real headless agent runs, assert on tool calls, args, results and token usage, with a baseline gate for CI regression.'
+  zh: DSH 插件评测框架：YAML 用例驱动真实 headless agent，断言工具调用/参数/返回与 token 用量，baseline 门禁做 CI 回归。

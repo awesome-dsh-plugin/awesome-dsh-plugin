@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/docindex
+name: JohnXu22786/docindex
+category: tools
+description:
+  en: "Local semantic index over workspace documents (MD/PDF/DOCX/TXT): FTS5 BM25 + local embedding hybrid retrieval, hit citations with line numbers, and incremental updates."
+  zh: "工作区文档的本地语义索引（MD/PDF/DOCX/TXT）：FTS5 BM25 与本地嵌入混合检索、带行号命中引用、增量更新。"

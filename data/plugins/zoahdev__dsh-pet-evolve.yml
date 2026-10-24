@@ -1,0 +1,6 @@
+url: https://github.com/zoahdev/dsh-pet-evolve
+name: zoahdev/dsh-pet-evolve
+category: fun
+description:
+  en: 'The pet that grows with your agent: 5 evolution stages earned from real signals (verified rules, completed sessions, tool calls, compactions), agent-state mirroring, and one-click growth share cards. Zero dependencies, 100% local.'
+  zh: 会随 agent 成长的宠物：真实信号（已验证规则/会话/工具调用/压缩）驱动 5 阶段进化、镜像 agent 状态、一键导出成长分享卡。零依赖、全本地。

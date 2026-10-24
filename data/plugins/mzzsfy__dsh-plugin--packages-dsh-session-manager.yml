@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-session-manager
+name: mzzsfy/dsh-plugin#dsh-session-manager
+category: session
+description:
+  en: 'Session management: auto-archives stale sessions on a configurable threshold, with an archive panel, unarchive, and recycle-bin deletion with restore.'
+  zh: '会话管理：超期会话自动归档（阈值可配），归档面板支持取消归档，删除移入系统回收站可还原。'
+

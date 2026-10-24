@@ -1,0 +1,7 @@
+url: "https://github.com/aa2246740/dsh-dragndrop-attachments"
+name: "aa2246740/dsh-dragndrop-attachments"
+category: "ui"
+description:
+  en: "Adds drag-and-drop attachments for local files, folders, ZIP archives and Office documents."
+  zh: "支持拖放本地文件、文件夹、ZIP 压缩包和 Office 文档作为附件。"
+tarball: "https://github.com/aa2246740/dsh-dragndrop-attachments/releases/download/v1.3.1/dsh-dragndrop-attachments-1.3.1.tgz"

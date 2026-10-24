@@ -1,0 +1,6 @@
+url: https://github.com/kaiwangleo/xiwen/tree/master/plugins/dsh-xiwen
+name: kaiwangleo/xiwen#dsh-xiwen
+category: tools
+description:
+  en: Semantic-layer analytics tool that uses curated table, column and metric metadata with Qdrant and Elasticsearch recall to generate, validate and execute MySQL analytical queries through the Xiwen service.
+  zh: 基于人工维护的表、字段和指标语义元数据，结合 Qdrant 与 Elasticsearch 召回，通过析问服务生成、校验并执行 MySQL 分析查询。

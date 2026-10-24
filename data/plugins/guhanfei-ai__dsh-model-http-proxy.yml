@@ -1,0 +1,6 @@
+url: https://github.com/guhanfei-ai/dsh-model-http-proxy
+name: guhanfei-ai/dsh-model-http-proxy
+category: model
+description:
+  en: 'Wraps globalThis.fetch to route chosen domains through one or more named HTTP/SOCKS proxies (exact host or *.suffix rules, per-card enable), with global direct rules that override every proxy; unmatched requests keep the host default network, and saved settings apply on the next request without a restart.'
+  zh: '把 globalThis.fetch 包一层：选中的域名走一个或多个命名 HTTP/SOCKS 代理（精确域名或 *.后缀 规则、按卡启停），全局直连规则优先于所有代理；未命中的请求照旧走本机默认网络，设置保存后下一次请求即生效，无需重启。'

@@ -1,0 +1,6 @@
+url: https://github.com/ShanJun-pro-max/dsh-novel-workbench
+name: ShanJun-pro-max/dsh-novel-workbench
+category: workflow
+description:
+  en: 'A full-screen novel-writing workbench: chapter board, draft candidates reviewed and merged paragraph by paragraph, plot summaries carrying an index header, and a writing pack assembled from the outline, character cards and earlier chapters. It also reads a shelf of finished books you import, extracts their writing habits in one run, merges them into a single style standard, and puts that standard in the prompt for every later generation.'
+  zh: '一页式小说创作工作台：章节看板、候选稿逐段评审与合稿、带索引头的剧情总结，以及由大纲、人物卡与前文拼成的写作包。还能导入几本成品书，一次跑完粗扫、精读、汇总并融合成一套写法标准，写进偏好档案，之后每次生成都照着它来。'

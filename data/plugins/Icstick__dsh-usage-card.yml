@@ -1,0 +1,6 @@
+url: https://github.com/Icstick/dsh-usage-card
+name: Icstick/dsh-usage-card
+category: usage
+description:
+  en: "Sidebar card that prices this session's tokens in RMB at official peak/off-peak rates and splits context share by source, with per-turn pricing and a Markdown/CSV history report."
+  zh: "侧栏常驻卡片：按 DeepSeek 官方价目（含峰谷与缓存差价）把本会话 token 折算成人民币，并按来源拆开上下文占比；逐轮计价，另附 Markdown/CSV 历史报告。"

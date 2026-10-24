@@ -1,0 +1,6 @@
+url: https://github.com/HaoyueQin/dsh-diff-stat
+name: HaoyueQin/dsh-diff-stat
+category: ui
+description:
+  en: "Inline +N −M badges on edit/write tool rows and a collapsible per-turn file-change summary card with aligned diffs, review and undo — covers native edit/write, str_replace_editor and Code Dispatch sub-calls, no git required."
+  zh: "在编辑/写入工具行内联 +N −M 徽标，每轮末尾给出可折叠的文件变更汇总卡：对齐差异、逐文件审查与撤销；覆盖原生 edit/write、str_replace_editor 与 Code Dispatch 子调用，不依赖 git。"

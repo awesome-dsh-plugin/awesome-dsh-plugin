@@ -1,0 +1,6 @@
+url: https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-web-ui-settings
+name: DamonKoy/dsh-web-ui#dsh-web-ui-settings
+category: ui
+description:
+  en: 'Web UI plugin group card in the dsh settings page: enable switches and config for the dsh-web-ui family.'
+  zh: dsh 设置页的 Web UI 插件组卡片：dsh-web-ui 全家插件的开关与配置。

@@ -1,0 +1,6 @@
+url: https://github.com/hanshanyike/dsh-yolo
+name: hanshanyike/dsh-yolo
+category: workflow
+description:
+  en: "Personal assistant for DeepSeek Harness that turns conversational commitments into cross-session plans, reminders, and an auditable dashboard."
+  zh: "面向 DeepSeek Harness 的个人助手：从对话中整理跨会话事项与计划，通过提醒和可审计的助手看板持续跟进。"

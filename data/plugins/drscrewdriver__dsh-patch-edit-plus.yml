@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-patch-edit-plus
+name: drscrewdriver/dsh-patch-edit-plus
+category: tools
+description:
+  en: 'Patch-style file editing: one apply_patch tool accepting git/unified diff (default) and Codex apply_patch syntax (opt-in), applying every change all-or-nothing after a full read-only verification pass, with sandbox-aware delete and move and a dry-run mode.'
+  zh: 补丁风格文件编辑：单个 apply_patch 工具，接受 git/unified diff（默认）与 Codex apply_patch 语法（可选开启），在完整只读校验后全量原子应用；删除与移动走沙箱感知路径，并提供 dry-run 模式。

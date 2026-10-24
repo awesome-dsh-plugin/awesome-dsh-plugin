@@ -1,0 +1,6 @@
+url: https://github.com/xing-shuyin/dsh-ui-tools
+name: xing-shuyin/dsh-ui-tools
+category: ui
+description:
+  en: 'Developer tools panel for the DSH web UI: file browser with preview, edit, and path-only file mentions; multi-tab terminals with quick commands; Git panel with commit, push, pull, and branch switching; and background job management. UI ported from pi-web-ui.'
+  zh: 'dsh Web UI 开发者工具面板：文件浏览/预览/编辑与路径式文件提及、多终端（快捷命令）、Git 面板（提交/推送/拉取/分支）与后台任务管理。UI 移植自 pi-web-ui。'

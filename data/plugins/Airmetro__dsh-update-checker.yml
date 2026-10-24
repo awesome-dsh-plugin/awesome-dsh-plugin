@@ -1,0 +1,6 @@
+url: https://github.com/Airmetro/dsh-update-checker
+name: Airmetro/dsh-update-checker
+category: dev
+description:
+  en: "Update management for DeepSeek Harness and its plugins: semver-aware dual-source (npm/GitHub) checks for the main program and every installed plugin, a locale-aware banner (zh/en) listing updatable items, one-click updates (the main program is backed up, integrity-checked and rolled back on failure; plugins install via a temp directory without touching other packages), and a watchdog-guarded restart after updating. The settings page adds per-plugin version lamps, live update progress, and banner/notification toggles."
+  zh: "DeepSeek Harness 主程序与插件更新管理：对主程序与每个已装插件做 npm/GitHub Release 双源 semver 比对，GUI 横幅按系统语言（中/英）列出可更新项；一键更新——主程序自动备份、完整性校验、失败回滚，插件经临时目录安装不碰其它包；更新后看门狗自动重启服务。「检查更新」设置页提供逐插件版本状态灯、实时更新进度与横幅/通知开关。"

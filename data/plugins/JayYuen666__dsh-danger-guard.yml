@@ -1,0 +1,6 @@
+url: https://github.com/JayYuen666/dsh-danger-guard
+name: JayYuen666/dsh-danger-guard
+category: security
+description:
+  en: 'Pre-execution guard: a `tools.guard` predicate decides allow, ask or refuse per permission preset for dangerous shell commands (git hook bypass, catastrophic `rm`, download-and-run, git history rewrites) and for edits to credential paths or to files the turn never read, and hands the model the reason plus a working alternative.'
+  zh: '执行前拦截：`tools.guard` 谓词按当前权限档位，对危险 shell 命令（跳过 git 钩子、灾难性 `rm`、下载即执行、重写 git 历史）与「写凭据路径」「没读过目标文件的首次编辑」逐条给出放行 / 询问 / 拒绝，并把成因与可行替代写法交回模型。'

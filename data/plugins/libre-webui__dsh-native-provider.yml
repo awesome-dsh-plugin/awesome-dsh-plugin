@@ -1,0 +1,6 @@
+url: https://github.com/libre-webui/dsh-native-provider
+name: libre-webui/dsh-native-provider
+category: model
+description:
+  en: "Use your DSH models in [Libre WebUI](https://github.com/libre-webui/libre-webui) for chat, sandboxed Work and usage tracking, with provider credentials kept in DSH. Requires Libre WebUI 0.37.0 or later."
+  zh: "在 [Libre WebUI](https://github.com/libre-webui/libre-webui) 中使用 DSH 模型进行聊天、沙箱 Work 任务和用量统计，提供商凭据保留在 DSH 中。需要 Libre WebUI 0.37.0 或更高版本。"

@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-token-rtk
+name: WODE25500/dsh-token-rtk
+category: skill
+description:
+  en: "Input redundancy pruning for DeepSeek Harness — drop repeated/redundant tokens before they reach the model (layer ②)."
+  zh: "DeepSeek Harness 的输入冗余剪枝——送进模型前剪掉重复/冗余 token(layer ②)。"

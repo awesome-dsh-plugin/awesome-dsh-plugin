@@ -1,0 +1,6 @@
+url: https://github.com/yongshuai0314/dsh-turnsnap
+name: yongshuai0314/dsh-turnsnap
+category: git
+description:
+  en: 'Zero-config per-turn git checkpoints: after every completed agent turn in a git workspace, stages all changes into one tagged [turnsnap] commit (serialized queue, sandbox-policy aware), so any turn is a rollback point.'
+  zh: '零配置的逐轮 git 检查点：在 git 工作区的每个 agent 轮结束后，把全部变更暂存为一条带 [turnsnap] 标记的提交（串行队列、感知沙箱策略），每一轮都是回滚点。'

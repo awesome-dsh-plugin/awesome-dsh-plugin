@@ -1,0 +1,6 @@
+url: https://github.com/zp-home/dsh-recommend
+name: zp-home/dsh-recommend
+category: tools
+description:
+  en: 'Transparent rankings and recommendations for the DSH plugin ecosystem: daily auto-fetched topic data, an open scoring model, and rank/search/recommend tools with a settings-page leaderboard.'
+  zh: DSH 插件透明排行与推荐：每日自动抓取 `dsh-plugin` 话题生态，公开评分模型，提供 rank/search/recommend 工具与设置页榜单。

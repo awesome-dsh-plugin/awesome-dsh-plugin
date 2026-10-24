@@ -1,0 +1,6 @@
+url: https://github.com/ccch713/deepddw/tree/main/plugins/ddw-teams-panel
+name: ccch713/deepddw#ddw-teams-panel
+category: memory
+description:
+  en: 'Adds a multi-user settings panel to the DSH web client: usage-mode selection, member management with online status and device binding, and switching or sharing of per-member memory and knowledge bases.'
+  zh: '为 DSH Web 客户端增加多用户设置面板：使用模式选择、成员管理与在线状态、一人多设备绑定，以及各成员记忆体和知识库的切换与共享。'

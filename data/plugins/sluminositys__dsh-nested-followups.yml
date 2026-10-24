@@ -1,0 +1,6 @@
+url: https://github.com/sluminositys/dsh-nested-followups
+name: sluminositys/dsh-nested-followups
+category: session
+description:
+  en: Keep branching from any completed answer at any depth while the main session stays untouched.
+  zh: 从任意层级的已完成回答持续创建隔离分支，主会话始终不受影响。

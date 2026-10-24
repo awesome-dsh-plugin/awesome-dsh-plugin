@@ -1,0 +1,7 @@
+url: https://github.com/gulagala001/dsh-theme-plugin
+name: gulagala001/dsh-theme-plugin
+category: theme
+description:
+  en: "Configure themes, colors and animated Glyph character appearance for the DSH workspace. Appearance is derived from gulagala001/oh-my-dsh."
+  zh: "为 DSH 工作区配置主题、配色与动态 Glyph 形象。外观源自 gulagala001/oh-my-dsh。"
+tarball: https://github.com/gulagala001/dsh-theme-plugin/releases/download/v0.2.2-dsh.0.2.1-rc.2/gulagala001-dsh-theme-plugin-0.2.2-dsh.0.2.1-rc.2.tgz

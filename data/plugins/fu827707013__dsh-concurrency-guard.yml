@@ -1,0 +1,6 @@
+url: https://github.com/fu827707013/dsh-concurrency-guard
+name: fu827707013/dsh-concurrency-guard
+category: dev
+description:
+  en: 'Concurrency guard and monitor for DeepSeek Harness: FIFO queue when concurrent model requests reach the limit, per-day persisted stats with error-kind classification, and interruption detection for abandoned streams.'
+  zh: 'DeepSeek Harness 并发监控与门闩：模型请求达上限时 FIFO 排队防锁号，按天持久化统计并做异常分类，检测流被弃用的回合中断。'

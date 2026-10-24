@@ -1,0 +1,7 @@
+url: https://github.com/MacilyDots/dsh-prompt-inject
+name: MacilyDots/dsh-prompt-inject
+category: identity
+description:
+  en: 'Registers a configurable prompt variable so an agent preset whose persona uses complete: true can still receive an injected text block; the plugin ships no content of its own and reads the text from its config.'
+  zh: '注册一个可配置的 prompt 变量，让使用 complete: true 人格的 agent 预设也能收到一段注入文本；插件本身不含内容，文本由配置提供。'
+tarball: https://github.com/MacilyDots/dsh-prompt-inject/releases/latest/download/dsh-prompt-inject.tgz

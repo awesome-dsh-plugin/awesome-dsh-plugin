@@ -1,0 +1,7 @@
+url: https://github.com/Asheblog/dsh-ollama-cloud
+name: Asheblog/dsh-ollama-cloud
+category: model
+description:
+  en: "Ollama Cloud provider for DeepSeek Harness that configures the route on install, publishes each model's own thinking levels for the composer effort control, and shows account usage with an API-key field in the Models page and sidebar."
+  zh: "Ollama Cloud 供应商：安装即配好路由，按 Ollama 模型自身元数据公布每个模型的思维链档位（供 composer 的推理强度选择），并在 Models 页与侧栏显示账号用量、提供 API Key 输入。"
+tarball: https://github.com/Asheblog/dsh-ollama-cloud/releases/latest/download/dsh-ollama-cloud.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/xinghe-1018/dsh-token-plan-quota
+name: xinghe-1018/dsh-token-plan-quota
+category: usage
+description:
+  en: 'Balance badge that follows the active model provider: official readings for DeepSeek, Qwen Token Plan and Aliyun BSS, plus Moonshot and OpenRouter endpoints not yet key-verified.'
+  zh: '跟随当前模型供应商的额度徽标：DeepSeek、千问 Token Plan、阿里云费用中心取官方真值，Moonshot / OpenRouter 已接官方端点但字段未用真 Key 核对；其余只报本实例实测。'

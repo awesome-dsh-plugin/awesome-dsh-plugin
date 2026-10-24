@@ -1,0 +1,6 @@
+url: https://github.com/we39/dsh-jumpserver
+name: we39/dsh-jumpserver
+category: security
+description:
+  en: 'Query and manage JumpServer through conversation: assets, users, accounts, permissions, sessions, command audit logs, command filters, and RBAC roles, authenticated with an AccessKeyID/AccessKeySecret pair (HTTP Signature).'
+  zh: '通过对话查询与管理 JumpServer：资产、用户、账号、授权、会话、命令审计、命令过滤与 RBAC 角色，使用 AccessKeyID/AccessKeySecret（HTTP 签名）鉴权。'

@@ -1,0 +1,6 @@
+url: https://github.com/ChenXu233/dsh-gemini-tool-schema
+name: ChenXu233/dsh-gemini-tool-schema
+category: tools
+description:
+  en: 'Normalizes every tool schema before it reaches the model, rewriting it into the strict OpenAPI 3.0 subset that Gemini function declarations accept — a type on every node, items on every array, no empty enum entry, $ref inlined — so a single offending MCP or built-in tool no longer fails the whole request with HTTP 400.'
+  zh: '把发给模型的工具 schema 统一归一化成 Gemini function declaration 能接受的 OpenAPI 3.0 子集：每个节点补 type、数组补 items、剔除空 enum 项、内联 $ref，让"任何一个 MCP 或内置工具不合规"不再把整包请求打成 HTTP 400。'

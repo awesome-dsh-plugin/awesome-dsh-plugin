@@ -1,0 +1,6 @@
+url: https://github.com/mercy719/dsh-client-ui-weather
+name: mercy719/dsh-client-ui-weather
+category: ui
+description:
+  en: Weather dashboard for the DeepSeek Harness Web GUI with city switching, current conditions, an eight-hour trend, and a five-day forecast.
+  zh: DeepSeek Harness Web GUI 天气看板，支持城市切换、当前天气、八小时趋势图和五日预报。

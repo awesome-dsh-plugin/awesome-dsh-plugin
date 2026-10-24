@@ -1,0 +1,6 @@
+url: https://github.com/ArtlexYoung/dsh-super-code
+name: ArtlexYoung/dsh-super-code
+category: workflow
+description:
+  en: A faster, more efficient, and more accurate coding Agent preset. On 100 hard SWE-bench Pro tasks selected using multidimensional difficulty criteria, average elapsed time decreased by 36%, average input tokens per task decreased by 17%, and accuracy increased by 5 percentage points.
+  zh: 提供一个更快、更节省、更准确的编码 Agent 预设。在按多维难度规则筛选的 SWE-bench Pro 高难度 100 题评测中，平均耗时减少 36%，平均每题输入 token 减少 17%，正确率提高 5 个百分点。

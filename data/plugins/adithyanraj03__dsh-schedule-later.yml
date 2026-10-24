@@ -1,0 +1,7 @@
+url: https://github.com/adithyanraj03/dsh-schedule-later
+name: adithyanraj03/dsh-schedule-later
+category: workflow
+tarball: https://github.com/adithyanraj03/dsh-schedule-later/releases/latest/download/plugin.tgz
+description:
+  en: "Schedule a message into a dsh chat for later: a Schedule button in the message box with a date and time picker, a sidebar panel of pending messages across chats, delivery as a normal user message even with the browser closed, and schedule_message, list_scheduled_messages and cancel_scheduled_message tools so the model can come back to a chat on its own."
+  zh: "把消息排进 dsh 会话稍后再发：消息框里带日期与时间选择器的「定时」按钮、跨会话列出待发消息的侧栏面板、浏览器关着也由宿主按时投递成一条普通用户消息，以及 schedule_message / list_scheduled_messages / cancel_scheduled_message 三个工具，模型因而能自己回到某个会话。"

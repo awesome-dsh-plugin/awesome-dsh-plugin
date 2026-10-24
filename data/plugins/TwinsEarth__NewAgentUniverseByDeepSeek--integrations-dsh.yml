@@ -1,0 +1,7 @@
+url: https://github.com/TwinsEarth/NewAgentUniverseByDeepSeek/tree/main/integrations/dsh
+name: TwinsEarth/NewAgentUniverseByDeepSeek#dsh
+category: tools
+description:
+  en: "NewAgentUniverseByDeepSeek nodes inside DSH: five read-only tools covering provenance (both upstream releases this build names), a data directory's restored state and ledger audit, the conformance vectors, exact decimal conversion, and node reachability. Driving the node -- starting or stopping a daemon, depositing funds, sending bus messages -- is deliberately not exposed, because those are audited privileged operations in this project."
+  zh: "把 NewAgentUniverseByDeepSeek 节点接入 DSH：五个只读工具，覆盖版本与上游出处、数据目录恢复状态与账本审计、一致性向量、精确十进制换算，以及节点可达性探测。刻意不暴露启动/停止守护进程、存款、发总线消息这类在本项目里受审计的特权操作。"
+tarball: https://github.com/TwinsEarth/NewAgentUniverseByDeepSeek/releases/download/v3.4.5/twinsearth-nau-dsh-plugin-3.4.5.tgz

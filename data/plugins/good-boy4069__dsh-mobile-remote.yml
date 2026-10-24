@@ -1,0 +1,6 @@
+url: https://github.com/good-boy4069/dsh-mobile-remote
+name: good-boy4069/dsh-mobile-remote
+category: notify
+description:
+  en: 'Drive your dsh agent from WeChat over the iLink gateway: two-way encrypted media transfer (auto-decrypt inbox + /send), proactive weixin_send tool, completion notifications, multi-session switching, and a health panel with file logging.'
+  zh: 微信遥控 DeepSeek Harness：iLink 双向加密文件收发（入站自动解密落盘 + /send 出站）、weixin_send 主动通知、完成通知、多会话切换、健康面板与文件日志。

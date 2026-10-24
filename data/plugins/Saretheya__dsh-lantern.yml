@@ -1,0 +1,6 @@
+url: https://github.com/Saretheya/dsh-lantern
+name: Saretheya/dsh-lantern
+category: model
+description:
+  en: 'Expose every model already configured in your local DeepSeek Harness to the LAN over OpenAI- and Anthropic-compatible endpoints, with API keys, per-key rate limits, a circuit breaker, model filters and usage reports.'
+  zh: '把本机 DeepSeek Harness 已配置的全部模型，以 OpenAI / Anthropic 兼容接口开放给同一局域网；自带 API Key、按 Key 限流、熔断、模型过滤与用量报告。'

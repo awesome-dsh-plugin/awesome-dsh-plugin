@@ -1,0 +1,6 @@
+url: https://github.com/jypjypjypjyp/dsh-music-studio
+name: jypjypjypjyp/dsh-music-studio
+category: voice
+description:
+  en: 'Music composition inside the conversation: the model writes a score against a bundled composing skill, and a play_score tool renders it as an inline card with a piano roll, Web Audio playback and WAV/JSON export.'
+  zh: '在对话里作曲：模型按内置作曲规范写出乐谱 JSON，play_score 工具校验后渲染成对话内的卡片，含卷帘图、Web Audio 实时播放与 WAV/JSON 导出。'

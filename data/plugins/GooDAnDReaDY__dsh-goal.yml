@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-goal
+name: GooDAnDReaDY/dsh-goal
+category: skill
+description:
+  en: "Goal mode and autonomous execution plugin for DeepSeek Harness: a sticky top banner keeps the current goal visible across turns while the agent works toward it autonomously."
+  zh: "DeepSeek Harness 的目标模式与自主执行插件：顶部吸附横幅在每轮对话中保持当前目标可见，同时 Agent 自主推进完成目标。"

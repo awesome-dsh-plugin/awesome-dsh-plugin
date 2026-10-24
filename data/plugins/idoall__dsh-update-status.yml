@@ -1,0 +1,7 @@
+url: https://github.com/idoall/dsh-update-status
+name: idoall/dsh-update-status
+category: ui
+tarball: https://github.com/idoall/dsh-update-status/releases/download/v0.1.1/dsh-update-status-0.1.1.tgz
+description:
+  en: Read-only DeepSeek Harness Web sidebar version chip that shows the running DSH version, npm latest/next/alpha channels, compatibility labels, and a copy-only upgrade command.
+  zh: 只读的 DeepSeek Harness Web 侧栏版本芯片，显示当前运行版本、npm latest/next/alpha 通道、兼容性标识，以及仅复制的升级命令。
