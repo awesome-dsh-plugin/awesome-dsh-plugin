@@ -1,6 +1,7 @@
 url: https://github.com/hongdougao111/dsh-archive-trash
 name: hongdougao111/dsh-archive-trash
 category: session
+tarball: https://github.com/hongdougao111/dsh-archive-trash/releases/download/v0.1.0/dsh-archive-trash-0.1.0.tgz
 description:
   en: Moves archived DSH sessions into a recoverable trash under $DSH_HOME and restores or purges them, from a settings panel with multi-select and per-item confirmation.
   zh: 把已归档的 DSH 会话移进可还原的回收站，或彻底删除；设置页内置面板，支持多选、还原与一键清空。
