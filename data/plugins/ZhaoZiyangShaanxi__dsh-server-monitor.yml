@@ -1,0 +1,6 @@
+url: https://github.com/ZhaoZiyangShaanxi/dsh-server-monitor
+name: ZhaoZiyangShaanxi/dsh-server-monitor
+category: dev
+description:
+  en: "In-app server monitor window for DSH that tunnels to a lightweight agent on your server: memory, swap, load, disk, per-container usage and QQ status, cache purge and container restarts, plus an embedded VNC desktop for manual QQ QR login and sign-out."
+  zh: "在 DSH 内直接打开服务器监控窗口，经 SSH 隧道读取内存、交换分区、负载、磁盘、各容器占用与 QQ 登录状态，并提供清理缓存与重启容器按钮，以及内嵌 VNC 的 QQ 客户端供手动扫码登录或退出账号。"
