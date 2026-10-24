@@ -1,0 +1,7 @@
+url: https://github.com/hongxin-y/codex-pet-Astra-Yao
+name: hongxin-y/codex-pet-Astra-Yao
+category: fun
+description:
+  en: An Astra Yao desktop pet for the DeepSeek Harness web GUI that renders the Codex v2 8x11 sprite atlas, follows session state through thinking, running, waiting and failed, shows a status bubble with the running tool and an optional DeepSeek balance readout, and quotes her own voice lines while idle.
+  zh: '把 Astra Yao（耀嘉音）的 Codex 桌宠图集搬进 DSH Web 界面：随会话状态切换到构思、执行、候场、破音等动作，头顶气泡显示正在跑的工具和可选余额，空闲时轮播她的官方台词。'
+icon: https://raw.githubusercontent.com/hongxin-y/codex-pet-Astra-Yao/main/assets/icon-180.png
