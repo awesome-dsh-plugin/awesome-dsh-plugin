@@ -1,0 +1,6 @@
+url: https://github.com/Gaudi-XIX/dsh-agy-provider
+name: Gaudi-XIX/dsh-agy-provider
+category: model
+description:
+  en: "Native DSH model provider for Google Antigravity CLI: full DSH-owned harness with zero credential exposure, non-rollback tail-streaming, turn-budgeted multimodal bridge, and real quota tracking."
+  zh: "将本机已登录的 Google Antigravity CLI 接入 DSH：DSH 全面接管 Harness、严格合规零凭据暴露、防回滚尾流式输出、按轮预算多模态与真实双窗口配额保活。"
