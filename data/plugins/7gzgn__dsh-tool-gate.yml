@@ -1,0 +1,6 @@
+url: "https://github.com/7gzgn/dsh-tool-gate"
+name: "dsh-tool-gate"
+category: tools
+description:
+  en: "Park whole tool packs out of the session's tool surface and mount them back with one command. Cuts the tool table from 99,789 to 48,082 characters (51.8%) without uninstalling plugins or restarting. Reversible per group, per agent."
+  zh: "把整包工具从会话的工具面上摘掉，要用时一条命令挂回来。工具表从 99,789 字符降到 48,082（51.8%），不用卸载插件、不用重启，按组可逆、按 agent 独立。"
