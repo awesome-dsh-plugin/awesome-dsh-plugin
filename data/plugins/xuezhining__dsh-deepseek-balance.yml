@@ -1,0 +1,6 @@
+url: https://github.com/xuezhining/dsh-deepseek-balance
+name: xuezhining/dsh-deepseek-balance
+category: usage
+description:
+  en: Shows the DeepSeek API account balance and live round-trip latency to the configured inference provider in one sidebar widget, with a configurable low-balance alert threshold.
+  zh: 一个侧边栏挂件同时显示 DeepSeek API 账户余额与当前推理服务商的实时往返延迟，并可自定义余额告警阈值。
