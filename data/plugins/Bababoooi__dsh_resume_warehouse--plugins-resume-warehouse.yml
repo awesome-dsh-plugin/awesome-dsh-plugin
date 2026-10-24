@@ -1,0 +1,6 @@
+url: https://github.com/Bababoooi/dsh_resume_warehouse/tree/main/plugins/resume-warehouse
+name: Bababoooi/dsh_resume_warehouse#resume-warehouse
+category: tools
+description:
+  en: 'Local-first resume warehouse for DeepSeek Harness: package your work into reusable bullets, import an existing resume into a template, analyse a job description (including the school-tier preference it implies), assemble a tailored Chinese or English resume and export a PDF named position-name-school — the bundled tool starts, stops and health-checks the local app, and nothing leaves the machine except the LLM calls you confirm.'
+  zh: '本地优先的简历仓库：把经历打包成可复用的表述、把现有简历拆成模板、分析岗位 JD（含其隐含的院校层次偏好）、组装中英双语定制简历并导出「岗位-姓名-学校」命名的 PDF；自带工具负责启动/停止本机应用并读取健康状态，除你确认过的 LLM 调用外数据不出本机。'
