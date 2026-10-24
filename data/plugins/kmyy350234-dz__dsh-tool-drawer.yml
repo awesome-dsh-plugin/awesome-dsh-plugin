@@ -1,0 +1,7 @@
+url: https://github.com/kmyy350234-dz/dsh-tool-drawer
+name: kmyy350234-dz/dsh-tool-drawer
+category: tools
+description:
+  en: "Keeps heavy tool groups out of every request and brings them back on demand, by keyword, or automatically at session start."
+  zh: "把重工具组从每一轮请求里收起来，需要时按需、按关键词或会话开始时自动恢复。"
+icon: https://raw.githubusercontent.com/kmyy350234-dz/dsh-tool-drawer/main/assets/icon-180.png
