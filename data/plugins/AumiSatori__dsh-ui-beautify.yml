@@ -1,0 +1,8 @@
+url: https://github.com/AumiSatori/dsh-ui-beautify
+name: AumiSatori/dsh-ui-beautify
+category: ui
+description:
+  en: 'Configurable DSH UI surfaces, overlay sidebars, task and Artifact cards, custom user-message bubbles, local media and particle backgrounds, welcome animations, and focus mode.'
+  zh: '为 DSH 提供独立界面材质、覆盖侧栏、任务与 Artifact 卡片、自定义用户气泡、本机媒体与粒子背景、开屏动效和专注模式。'
+icon: https://raw.githubusercontent.com/AumiSatori/dsh-ui-beautify/main/assets/icon.png
+tarball: https://github.com/AumiSatori/dsh-ui-beautify/releases/latest/download/dsh-ui-beautify.tgz

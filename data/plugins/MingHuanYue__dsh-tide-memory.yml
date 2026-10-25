@@ -1,0 +1,6 @@
+url: https://github.com/MingHuanYue/dsh-tide-memory
+name: MingHuanYue/dsh-tide-memory
+category: memory
+description:
+  en: 'Tide Memory: long-term memory for DeepSeek Harness that ebbs and flows — recall is gated by an evidence score (below 0.35 it never enters context), events and emotional entries have half-lives while facts never decay, superseded entries are kept, and a Settings page shows exactly what was recalled each turn.'
+  zh: '潮汐记忆：DSH 的长期记忆——证据分门禁（低于阈值直接不进上下文），事件与带情绪的记忆按半衰期淡忘、事实永不衰减，过时条目不删可回看，设置页能看见每轮到底注入了哪几句。'

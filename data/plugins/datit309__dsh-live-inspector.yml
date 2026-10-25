@@ -1,0 +1,6 @@
+url: https://github.com/datit309/dsh-live-inspector
+name: datit309/dsh-live-inspector
+category: ui
+description:
+  en: 'Real-time inspector of the files the agent reads and edits, with a file tree, in the DeepSeek Harness right sidebar: M/A/R badges, side-by-side diffs and live agent activity tracking.'
+  zh: 'DeepSeek Harness 右侧边栏实时文件变更检查器与文件树：根据智能体的读/写/编辑调用显示 M/A/R 标记与并排 diff，实时追踪智能体活动。'

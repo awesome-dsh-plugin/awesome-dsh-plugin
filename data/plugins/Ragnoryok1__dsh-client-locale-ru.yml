@@ -2,5 +2,5 @@ url: https://github.com/Ragnoryok1/dsh-client-locale-ru
 name: Ragnoryok1/dsh-client-locale-ru
 category: ui
 description:
-  en: 'Russian (ru) language pack for the dsh web GUI: 584 namespaces and 67724 strings, including 520 third-party plugin dictionaries and Russian plural forms.'
-  zh: '为 dsh Web 界面提供俄语 (ru) 语言包：584 个命名空间、67724 条文案，含 520 个第三方插件词典与俄语复数形式。'
+  en: 'Russian for the dsh web GUI: the whole interface plus the menus of 520 third-party plugins — 584 sections, 67,666 strings.'
+  zh: '为 dsh Web 界面提供俄语：整个界面，加上 520 个第三方插件的菜单——584 个分区、67 666 条文案。'

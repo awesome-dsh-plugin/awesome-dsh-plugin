@@ -1,0 +1,6 @@
+url: https://github.com/pawpress/office-ppt
+name: pawpress/office-ppt
+category: docs
+description:
+  en: 'Builds presentations by driving the LibreOffice installed on the machine over UNO instead of writing OOXML in JavaScript: `lo_build` opens a real Impress document from structured slides and lets LibreOffice export editable PPTX/ODP plus PDF and per-slide PNG, `lo_render` re-renders an existing PPTX/PPT/ODP, `lo_convert` converts between Office formats, `lo_probe` reports the detected soffice path, version and UNO bridge, and `lo_config` edits the stored settings. Needs a local LibreOffice (verified on 26.8.1.1); it uses the bundled Python, so no system Python is needed, and it keeps one warm soffice process between calls. Fully verified on Windows only; on Linux it falls back to the system python3, which needs python3-uno.'
+  zh: '通过 UNO 驱动本机安装的 LibreOffice 做 PPT，而不是用 JavaScript 写 OOXML：`lo_build` 用结构化幻灯片真开一份 Impress 文档，再由 LibreOffice 导出可编辑的 PPTX/ODP、PDF 与逐页 PNG；`lo_render` 重新渲染已有的 PPTX/PPT/ODP；`lo_convert` 做 Office 格式互转；`lo_probe` 报告探测到的 soffice 路径、版本与 UNO 桥状态；`lo_config` 修改已保存的配置。需要本机安装 LibreOffice（已在 26.8.1.1 验证），使用其自带 Python，无需系统 Python，并会在两次调用之间保留一个 soffice 热进程。仅在 Windows 上做过完整验证；Linux 上会退回系统 python3，需要 python3-uno。'
