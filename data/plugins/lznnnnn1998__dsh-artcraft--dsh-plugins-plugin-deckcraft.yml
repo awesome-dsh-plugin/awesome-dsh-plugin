@@ -1,0 +1,6 @@
+url: https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-deckcraft
+name: lznnnnn1998/dsh-artcraft#plugin-deckcraft
+category: tools
+description:
+  en: "Drive DeckCraft from the agent: create slides, apply layouts and themes, add shapes, pictures, tables and charts, then save a .pptx or export a PDF. Exposes DeckCraft's command ids and its MCP server."
+  zh: "让智能体驱动 DeckCraft：新建幻灯片、套用版式与主题、添加形状、图片、表格与图表，并保存为 .pptx 或导出 PDF。暴露 DeckCraft 的命令 id 与自带的 MCP server。"

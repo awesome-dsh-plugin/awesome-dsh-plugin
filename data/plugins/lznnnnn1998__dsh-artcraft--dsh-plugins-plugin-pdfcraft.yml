@@ -1,0 +1,6 @@
+url: https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-pdfcraft
+name: lznnnnn1998/dsh-artcraft#plugin-pdfcraft
+category: tools
+description:
+  en: "Drive PdfCraft from the agent: read and extract text, render pages to images, rotate, delete, reorder, combine or split pages, and audit faux redactions. Exposes PdfCraft's tool set as both commands and an MCP server."
+  zh: "让智能体驱动 PdfCraft：读取并提取文本、把页面渲染成图片、旋转/删除/重排/合并/拆分页面，并检查伪脱敏。以命令与 MCP server 两种形式暴露 PdfCraft 的工具集。"
