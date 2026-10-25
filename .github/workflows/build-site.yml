@@ -230,11 +230,24 @@ jobs:
           # The targeted dispatch updates only npm and README caches. Keep the
           # other probes' usual cadence for normal dispatches and builds.
           if [ -z "$PROBE_TARGET_REPO" ]; then
-            # Release-asset links can go dead after submission (#1619).
+            # Runs every time, not just nightly: a release-asset URL validated at
+            # submission can 404 later without anyone touching the entry, and the
+            # set is small enough that there is no reason to sample it (#1619).
             node scripts/probe-tarballs.mjs
-            # A valid GitHub-hosted screenshot URL can still return 404.
+            # Same reasoning, same shape, for screenshots. The PR check validates
+            # that an image URL is well-formed and on GitHub's hosting, never that
+            # it resolves — so a dead link merged clean and published as a broken
+            # picture in the storefront. 41 of 773 were dead the first time anyone
+            # asked. Neither probe blocks the build: a dead URL is dropped from
+            # the published data, not turned into a failure.
             node scripts/probe-screenshots.mjs
-            # Capability disclosure scans install artifacts incrementally.
+            # Capability disclosure (#401): what each plugin touches — files,
+            # network, shell, credentials — scanned from the artifact a user
+            # would install. Runs every time, like the two probes above: it is
+            # incremental by RELEASE (a new npm version invalidates that entry's
+            # record) and by AGE for branch-sourced entries, so a normal push
+            # re-scans a handful. The scanner is pinned inside the script; it
+            # executes nothing from the scanned package and opens no sockets.
             node scripts/probe-capabilities.mjs
           fi
           node scripts/build-site.mjs
