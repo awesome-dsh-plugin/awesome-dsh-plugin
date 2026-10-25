@@ -1,0 +1,6 @@
+url: "https://github.com/LeeeWM/dsh-session-notifier"
+name: "dsh-session-notifier"
+category: notify
+description:
+  en: "Windows 11 toast notification when a DSH session turn finishes, with focus-aware suppression."
+  zh: DSH 会话每轮结束时在 Windows 11 弹出通知，DSH 在前台时自动不打扰。
