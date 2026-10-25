@@ -1,0 +1,6 @@
+url: https://github.com/yitongli129ee/dsh-literature-skills
+name: yitongli129ee/dsh-literature-skills
+category: tools
+description:
+  zh: "三个文献调研技能打包成一个 DSH 插件：academic-web-research（轻量代理检索）、academic-literature-research（Scholar/IEEE/知网/万方/Sci-Hub 全流程）、off-campus-literature（校园 WebVPN/CARSI 校外访问）。安装即把三个 SKILL.md 落到 ~/.dsh/skills/，重启后 agent 可按名调用。"
+  en: "Three literature-research skills packaged as one DSH plugin: academic-web-research (lightweight proxy fetch), academic-literature-research (Scholar/IEEE/CNKI/Wanfang/Sci-Hub pipeline), off-campus-literature (campus WebVPN/CARSI access). Installing drops the three SKILL.md folders into ~/.dsh/skills/, so the agent can invoke them by name after a restart."
