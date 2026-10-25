@@ -1,0 +1,7 @@
+url: https://github.com/flowers-59f/dsh-petpal
+name: flowers-59f/dsh-petpal
+category: ui
+description:
+  en: 'Download pets from petdex.dev and keep one on the desktop, following the DSH session status; the appearance is adjustable and an enterprise WeChat bot can push a notification when the agent needs confirmation or finishes a turn.'
+  zh: '从 petdex.dev 下载宠物并常驻桌面，跟随 DSH 会话状态显示；外观可调，Agent 需要确认或一轮结束时可通过企业微信机器人推送通知。'
+icon: https://raw.githubusercontent.com/flowers-59f/dsh-petpal/main/docs/icon-180.png
