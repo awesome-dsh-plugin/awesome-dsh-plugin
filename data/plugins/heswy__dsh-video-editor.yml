@@ -1,0 +1,6 @@
+url: https://github.com/heswy/dsh-video-editor
+name: heswy/dsh-video-editor
+category: tools
+description:
+  en: AI video creation and editing inside DeepSeek Harness, with conversation-driven revisions, multitrack timelines, audio waveforms, and MP4 export.
+  zh: 在 DeepSeek Harness 内通过对话生成与续改视频，支持多轨剪辑、音频波形和 MP4 导出。
