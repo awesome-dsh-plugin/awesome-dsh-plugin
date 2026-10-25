@@ -4,4 +4,4 @@ category: dev
 description:
   en: Connects DSH to local HTTP proxies automatically via a loopback relay. No TUN, no env vars, zero-restart switching, with sidebar/composer dock controls and live topology.
   zh: DSH 自动代理：自动识别本机代理端口，固定本地入口无感热切换，免 TUN、免改环境变量、无需重启 DSH。支持侧栏、底栏工作台与输入框胶囊一键启停，内嵌链路拓扑图。
-tarball: https://github.com/murenyu1/dsh-auto-proxy/releases/download/v1.0.6/dsh-plugin-auto-proxy-1.0.6.tgz
+tarball: https://github.com/murenyu1/dsh-auto-proxy/releases/download/v1.0.7/dsh-plugin-auto-proxy-1.0.7.tgz

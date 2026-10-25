@@ -4,4 +4,4 @@ category: tools
 description:
   en: 'Create and edit Figma designs through natural-language requests in DSH, read existing UI frames to support frontend development, and capture screenshots or export assets. Requires a companion plugin running in Figma.'
   zh: '让 DSH 用自然语言创建和修改 Figma 设计，读取已有 UI 画板辅助前端开发，并支持画布截图与素材导出。需在 Figma 中运行配套插件。'
-tarball: https://github.com/Duoasa/DSH-to-Figma/releases/download/v0.2.2/dsh-to-figma-0.2.2.tgz
+tarball: https://github.com/Duoasa/DSH-to-Figma/releases/download/v0.2.3/dsh-to-figma-0.2.3.tgz

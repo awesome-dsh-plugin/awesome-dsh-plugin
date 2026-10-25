@@ -1,0 +1,6 @@
+url: https://github.com/EricWang1358/dsh-web-studyhub
+name: EricWang1358/dsh-web-studyhub
+category: tools
+description:
+  en: 'Study workspace for DeepSeek Harness: imports your own PDF, DOCX, PPTX and Markdown materials plus lecture recordings, turns them into source-cited flashcards, quizzes and open questions, and schedules SM-2 spaced review in a built-in web panel. Recording transcription needs your own SiliconFlow, Groq or Gemini key; requires DSH 0.2.0-rc.2 or later but below 0.3.'
+  zh: 'DSH 的学习工作台：导入自己的 PDF、DOCX、PPTX、Markdown 资料与课堂录音，生成带出处引用的卡片、测验与开放题，按 SM-2 安排间隔复习，自带网页面板。录音转写需要自备 SiliconFlow、Groq 或 Gemini 的密钥；需要 DSH 0.2.0-rc.2 及以上、0.3 以下。'
