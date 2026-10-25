@@ -1,0 +1,6 @@
+url: https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-effectcraft
+name: lznnnnn1998/dsh-artcraft#plugin-effectcraft
+category: tools
+description:
+  en: "Drive EffectCraft from the agent: build compositions, add layers, set properties and keyframes, evaluate expressions, then render frames or movies. Exposes EffectCraft's command ids and its MCP server."
+  zh: "让智能体驱动 EffectCraft：搭建合成、添加图层、设置属性与关键帧、计算表达式，并渲染单帧或视频。暴露 EffectCraft 的命令 id 与自带的 MCP server。"

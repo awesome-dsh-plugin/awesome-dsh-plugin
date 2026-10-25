@@ -1,0 +1,6 @@
+url: https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-lightcraft
+name: lznnnnn1998/dsh-artcraft#plugin-lightcraft
+category: tools
+description:
+  en: "Drive LightCraft from the agent: import photos, apply develop settings, and export JPEG or other formats from a photo library. Exposes LightCraft's command ids and its MCP server."
+  zh: "让智能体驱动 LightCraft：导入照片、应用冲图设置，并从照片库导出 JPEG 等格式。暴露 LightCraft 的命令 id 与自带的 MCP server。"
