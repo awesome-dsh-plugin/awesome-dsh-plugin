@@ -1,0 +1,6 @@
+url: https://github.com/ljz970803/dsh-voice-wake
+name: ljz970803/dsh-voice-wake
+category: voice
+description:
+  en: Local wake-word voice input for DSH. Say the wake word, wait for the chime, then speak; text is sent to a DSH session, and audio stays on the machine.
+  zh: DSH 本地语音唤醒。先说唤醒词，听到提示音后说内容，自动发进 DSH 会话；音频不出本机。
