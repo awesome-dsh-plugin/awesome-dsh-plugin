@@ -2,5 +2,5 @@ url: https://github.com/yimengsuper2432/dsh-agent-personality
 name: yimengsuper2432/dsh-agent-personality
 category: identity
 description:
-  en: 'Persona plugin: a signed -10..+10 emotion variable, worldview, per-turn diary, relationship network, and proactive messages.'
-  zh: '人格插件：-10~+10 的情感变量、世界观、每轮日记、关系网，以及主动找你说话。'
+  en: 'Persona plugin: a slowly moving 0-100 emotion meter, its own worldview, a per-turn diary, a relationship network, proactive messages, and an inner-voice line beside the cost row.'
+  zh: '人格插件：随对话缓慢变化的情感值、独立世界观、每轮日记、关系网、主动找你说话，以及费用行右侧的一句心里话。'
