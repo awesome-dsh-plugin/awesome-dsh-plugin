@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/dsh-unlag
+name: regrevia/dsh-unlag
+category: ui
+description:
+  en: 'One press applies edited plugin code and rebuilds a sluggish workbench without restarting; automatic reloading stays off, so a press is the only trigger, and running turns, queued messages and unsent input are kept.'
+  zh: '改完插件点一下就生效，界面卡了点一下就恢复；自动刷新默认关，只有按按钮才会刷新。正在跑的任务、排队的消息、没发的输入都不受影响，不用重启。'
+icon: https://raw.githubusercontent.com/regrevia/dsh-unlag/main/icon.svg
