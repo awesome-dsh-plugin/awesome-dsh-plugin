@@ -1,0 +1,6 @@
+url: https://github.com/chisato-lycoreco/dsh-serene
+name: chisato-lycoreco/dsh-serene
+category: identity
+description:
+  en: 'Persona, mood and memory for DSH: a PAD+ six-dimension mood spread over three layers (background, present, relationship) that decays on its own clock, follows a circadian rhythm and leaves permanent scars on the baseline; jsonl memories recalled by relevance × time-decay × importance; JSON personas, six tools, no daemon and no model calls.'
+  zh: '人格、情感与记忆插件：PAD+ 六维情绪分三层（底色 / 此刻 / 关系），自己会衰减、有昼夜节律、会在基线上留下永久的疤；记忆按相关度 × 时间衰减 × 重要度从 jsonl 里召回；人格是 JSON，6 个工具，无守护进程、不调模型。'
