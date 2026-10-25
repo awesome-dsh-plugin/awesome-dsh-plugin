@@ -1,0 +1,6 @@
+url: https://github.com/tianhengzhibei/dsh-approval-ding
+name: tianhengzhibei/dsh-approval-ding
+category: notify
+description:
+  en: Plays a short bell the moment DeepSeek Harness asks for tool approval, so a stalled turn gets noticed.
+  zh: DeepSeek Harness 璇锋眰瀹℃壒鏃跺搷涓€澹扳€滃彯鈥濓紝浜轰笉鍦ㄧ獥鍙ｅ墠涔熻兘绔嬪埢瀵熻銆?icon: https://raw.githubusercontent.com/tianhengzhibei/dsh-approval-ding/main/assets/icon-180.png
