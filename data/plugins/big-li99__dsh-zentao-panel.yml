@@ -1,0 +1,6 @@
+url: https://github.com/big-li99/dsh-zentao-panel
+name: big-li99/dsh-zentao-panel
+category: workflow
+description:
+  en: 'ZenTao work panel in the DSH left sidebar: lists tasks, bugs and stories assigned to you (web-login protocol, so instances where the RESTful v2 API is unavailable are supported — verified on ZenTao 18.13 open-source), inserts a card into the current chat or dispatches it to a new background session with workspace, model and reasoning-effort selection, turns screenshots inside ticket descriptions into real image attachments, and marks each card with the linked session''s live running / needs-decision / done status. Multi-account; read-only, no writes back to ZenTao.'
+  zh: 'DSH 左侧栏禅道工作面板：列出指派给你的任务、Bug 与需求（走网页登录协议，RESTful v2 API 不可用的实例也能用，已在禅道 18.13 开源版实测），卡片可插入当前对话，也可下发到新后台会话（可选工作区、模型与思考强度），工单描述里的截图会转成真实图片附件，卡片实时显示关联会话的 处理中/等你决策/已完成 状态。支持多账号；只读，不回写禅道。'
