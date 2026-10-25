@@ -1,0 +1,9 @@
+# Copy of this file goes to awesome-dsh-plugin/awesome-dsh-plugin
+#   data/plugins/suntham-t__super-cu.yml
+# Submission guide: https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md
+url: https://github.com/suntham-t/super-cu
+name: suntham-t/super-cu
+category: tools
+description:
+  en: 'Windows desktop control over UI Automation: a compact semantic snapshot with stable element ids (cu_show), batched mouse, keyboard, window and wait/assert actions (cu_do), and screenshot-based normalized coordinates as fallback.'
+  zh: '基于 UI Automation 的 Windows 桌面操作：紧凑的语义快照与稳定的元素编号（cu_show）、可批量的鼠标/键盘/窗口动作与等待断言（cu_do），以及基于截图的归一化坐标兜底。'
