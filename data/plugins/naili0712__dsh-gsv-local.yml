@@ -1,0 +1,6 @@
+url: https://github.com/naili0712/dsh-gsv-local
+name: naili0712/dsh-gsv-local
+category: voice
+description:
+  en: 'Local GPT-SoVITS voice for DeepSeek Harness: boots the engine with DSH and kills it on exit, speaks only the line marked for voice, and ships a default voice so it works out of the box.'
+  zh: '把本机 GPT-SoVITS 接进 DeepSeek Harness：随 DSH 启停引擎、只念该说出口的那一句；自带默认音色，装上就能说话。'
