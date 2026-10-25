@@ -1,0 +1,6 @@
+url: https://github.com/bingzhu44-blip/brutal-monkey
+name: bingzhu44-blip/brutal-monkey
+category: session
+description:
+  en: 'Brutal Monkey permanently deletes DSH sessions from disk — single-row or cross-workspace bulk delete, with Ctrl+A select-all and Delete shortcut, wiping transcripts, projection cache, workspace slots, attachments and subagent data. Irreversible.'
+  zh: '暴力猴：永久删除 DSH 会话的磁盘数据——单条删除或跨工作区批量删除，支持 Ctrl+A 全选与 Delete 快捷删除，彻底清理对话记录、投影缓存、工作区归属、附件与子会话，不可恢复。'
