@@ -1,0 +1,6 @@
+url: https://github.com/caimc21069065-prog/dsh-savvy-progress
+name: caimc21069065-prog/dsh-savvy-progress
+category: ui
+description:
+  en: "Live multi-agent progress for the DSH web UI: a band above the composer shows flow title/phase, task counts, running-agent count, elapsed time and estimated cost, and a right-sidebar tab lists every subagent with status, model, duration, step progress, token counts and cost, grouped running/failed/finished with a running-only filter and expandable detail rows. Read-only observation works with any subagent orchestration; optional savvy_progress/savvy_step tools let the orchestrator and workers report finer-grained progress. Bilingual (zh/en)."
+  zh: "DSH Web 界面的多代理实时进度可视化：输入框上方的进度条显示编排任务标题/阶段、任务数、运行中代理数、耗时与预估成本；右侧新增「代理进度」标签页，按运行中/失败/已完成分组列出每个子代理的状态、模型、时长、步骤进度、token 用量与成本，支持仅显示运行中与展开详情，可持续子代理可一键跳转会话。只读观察适配任意子代理编排；可选 savvy_progress / savvy_step 工具供编排者与 worker 上报更细粒度进度。中英双语。"
