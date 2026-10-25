@@ -1,0 +1,6 @@
+url: https://github.com/LCG24-ux/dsh-skill-market
+name: LCG24-ux/dsh-skill-market
+category: market
+description:
+  en: 'Skill marketplace for DeepSeek Harness: browse 1,196+ agent skills from 23 curated GitHub repos with repo-level stars/downloads, one-click install with live progress and cancel, URL import (whole repo / tree deep-link / single SKILL.md, hidden directories included), installed-skill management, bilingual UI, multi-route acceleration for mainland networks.'
+  zh: 'DeepSeek Harness 的 Skill 集市：聚合 23 个精选仓库的 1196+ 个 Agent 技能，星标/下载量一目了然，一键安装带实时进度与取消，URL 导入（整仓 / tree 深链 / 单文件，完整检索含隐藏目录），已装技能管理与卸载，中英双语界面，大陆网络多线路加速。'
