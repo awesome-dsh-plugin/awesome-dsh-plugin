@@ -1,0 +1,6 @@
+url: https://github.com/hui-xu-ai/wensu/tree/main/packages/dsh-wensu
+name: hui-xu-ai/wensu#dsh-wensu
+category: tools
+description:
+  en: "Read-only CNKI bibliographic search for DSH: four MCP tools (search, detail, export, status) drive your own Edge/Chrome through a native-messaging bridge, with no PDF downloads, a 3-second minimum interval and a 300-action daily cap."
+  zh: "只读的知网题录检索：四个 MCP 工具（search / detail / export / status）通过原生消息桥驱动你自己的 Edge/Chrome，不下载全文，最小间隔 3 秒，每日上限 300 次。"
