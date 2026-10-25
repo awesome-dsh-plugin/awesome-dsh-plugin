@@ -4,4 +4,4 @@ category: workflow
 description:
   en: Keeps a task tree with per-step status and serves it over HTTP/SSE, so a Windows node graph can be reviewed step by step.
   zh: 维护带逐步状态的任务树并通过 HTTP/SSE 对外提供，Windows 原生节点图可以逐颗审阅。
-tarball: https://github.com/liyangyu001-hue/dsh-work/releases/download/plugin-v0.1.0/dshwork-plugin-0.1.0.tgz
+tarball: https://github.com/liyangyu001-hue/dsh-work/releases/download/plugin-v0.1.0/ka-studio-dsh-work-0.1.0.tgz
