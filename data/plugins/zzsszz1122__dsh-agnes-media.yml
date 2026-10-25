@@ -1,0 +1,7 @@
+url: https://github.com/zzsszz1122/dsh-agnes-media
+name: zzsszz1122/dsh-agnes-media
+category: vision
+description:
+  en: 'Sidebar panel that generates Agnes images and videos from a DeepSeek Harness session. Generation runs in the Host process, so tasks keep running when the panel is closed or the page is reloaded; results and an 80-entry history are stored on disk.'
+  zh: '侧边栏生图生视频面板：生成任务在宿主进程后台执行，关闭面板或刷新页面都不中断，结果与最多 80 条历史保存在本机。'
+icon: https://raw.githubusercontent.com/zzsszz1122/dsh-agnes-media/main/assets/icon-180.png
