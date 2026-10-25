@@ -1,0 +1,6 @@
+url: https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-photocraft
+name: lznnnnn1998/dsh-artcraft#plugin-photocraft
+category: tools
+description:
+  en: "Drive PhotoCraft from the agent: open and create documents, work with layers and selections, apply adjustments and filters, run batch actions, then save or export PSD, PNG, JPG, TIFF or WebP. Exposes PhotoCraft's command ids and its MCP server."
+  zh: "让智能体驱动 PhotoCraft：打开与新建文档、操作图层与选区、应用调整与滤镜、执行批处理动作，并保存或导出 PSD、PNG、JPG、TIFF 或 WebP。暴露 PhotoCraft 的命令 id 与自带的 MCP server。"

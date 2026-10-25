@@ -1,0 +1,6 @@
+url: https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-vectorcraft
+name: lznnnnn1998/dsh-artcraft#plugin-vectorcraft
+category: tools
+description:
+  en: "Drive VectorCraft from the agent: create and edit paths and artboards, set text and effects, then export SVG, PDF, AI or EPS. Exposes VectorCraft's command ids and its MCP server."
+  zh: "让智能体驱动 VectorCraft：创建与编辑路径和画板、设置文字与效果，并导出 SVG、PDF、AI 或 EPS。暴露 VectorCraft 的命令 id 与自带的 MCP server。"
