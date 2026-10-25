@@ -1,0 +1,7 @@
+url: https://github.com/cailikelog/dsh-plugin-account-balance
+name: cailikelog/dsh-plugin-account-balance
+category: usage
+description:
+  en: Shows the remaining DeepSeek account balance in the composer dock, right after the cache-hit reading, and links to the Platform usage page.
+  zh: 在输入框底部统计行、紧挨「缓存命中」右侧显示账号剩余额度，点击打开平台用量页。
+icon: https://raw.githubusercontent.com/cailikelog/dsh-plugin-account-balance/main/docs/icon-180.png
