@@ -2,6 +2,6 @@ url: https://github.com/regrevia/Envoy/tree/main/integrations/dsh/envoy-dsh
 name: regrevia/Envoy#envoy-dsh
 category: browser
 description:
-  en: 'Reads a linked page, PDF, video or audio through Envoy and returns source-located Markdown, wiki pages or knowledge-base entries the harness can use directly. One skill, shared with Codex and Claude Code; this entry is the DeepSeek Harness bundle, which provisions its own Envoy runtime on first use.'
-  zh: '把链接直接变成可用的素材：网页、PDF、视频、音频交给 Envoy 读取，返回带来源定位的 Markdown、wiki 页或知识库条目，供 DeepSeek Harness 直接使用。同一套技能与 Codex、Claude Code 共用；本条目是 DeepSeek Harness 插件，首次使用时自行准备 Envoy 运行时。'
+  en: 'Reads a linked page, PDF, video or audio through Envoy and returns source-located Markdown, wiki pages or knowledge-base entries the harness can use directly. One skill, shared with Codex and Claude Code; this entry is the DeepSeek Harness bundle, which provisions its own Envoy runtime on first use. On 92 same-link turns, answers that cite the source link rose from 24% to 42% and empty answers fell from 4% to 0%.'
+  zh: '把链接直接变成可用的素材：网页、PDF、视频、音频交给 Envoy 读取，返回带来源定位的 Markdown、wiki 页或知识库条目，供 DeepSeek Harness 直接使用。同一套技能与 Codex、Claude Code 共用；本条目是 DeepSeek Harness 插件，首次使用时自行准备 Envoy 运行时。同链接、同模型实测 92 轮：回答带上原始链接的比例从 24% 升到 42%，空回答从 4% 降到 0%。'
 icon: https://raw.githubusercontent.com/regrevia/Envoy/main/integrations/dsh/envoy-dsh/icon.png
