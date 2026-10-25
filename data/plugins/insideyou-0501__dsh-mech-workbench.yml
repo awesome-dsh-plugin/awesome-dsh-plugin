@@ -1,5 +1,6 @@
 url: https://github.com/insideyou-0501/dsh-mech-workbench
 name: insideyou-0501/dsh-mech-workbench
+npm: dsh-mech-workbench
 category: tools
 description:
   en: A workbench for engineering and math problems, with nine tools for reading images, solving, plotting and verifying answers, plus four bundled skills. Needs Python with numpy and Pillow. Image reading, figure checking and formula typesetting rely on a vision provider you have configured a key for, so those images are sent to it, and without a key they fail while the other tools still work.
