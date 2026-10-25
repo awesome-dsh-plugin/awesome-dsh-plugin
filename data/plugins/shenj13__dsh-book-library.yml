@@ -1,0 +1,6 @@
+url: https://github.com/shenj13/dsh-book-library
+name: shenj13/dsh-book-library
+category: ui
+description:
+  en: Read books in the DSH sidebar - import EPUB/TXT/Markdown, get a five-part close reading for every chapter (paragraph summary, best sentences, what the author is doing, the AI's own opinion, what is missing), listen with TTS, ask questions while listening, and export the whole book to one HTML page.
+  zh: 在 DSH 左侧栏读书：导入 EPUB/TXT/Markdown，逐章给出五段式精读（本段落概括 / 文章美句 / 作者表达 / AI 观点 / AI 认为需要补充点），可朗读、边听边问，还能把整本讲解导出成一份网页。
