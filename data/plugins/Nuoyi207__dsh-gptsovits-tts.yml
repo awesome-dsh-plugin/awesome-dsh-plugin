@@ -1,0 +1,7 @@
+url: https://github.com/Nuoyi207/dsh-gptsovits-tts
+name: Nuoyi207/dsh-gptsovits-tts
+category: voice
+description:
+  en: "Local GPT-SoVITS text-to-speech for DSH: reads replies aloud, switches voices from the right sidebar, and trains a new voice from a dropped audio sample."
+  zh: "基于 GPT-SoVITS 的本地语音合成：朗读 DSH 回复、在右侧边栏换音色，拖一段声音就能训练新音色。"
+icon: https://raw.githubusercontent.com/Nuoyi207/dsh-gptsovits-tts/main/docs/assets/icon-180.png
