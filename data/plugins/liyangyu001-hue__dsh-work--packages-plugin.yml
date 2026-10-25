@@ -1,5 +1,5 @@
 url: https://github.com/liyangyu001-hue/dsh-work/tree/main/packages/plugin
-name: liyangyu001-hue/dsh-work#dshwork-plugin
+name: liyangyu001-hue/dsh-work#plugin
 category: workflow
 description:
   en: Keeps a task tree with per-step status and serves it over HTTP/SSE, so a Windows node graph can be reviewed step by step.
