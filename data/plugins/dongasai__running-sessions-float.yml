@@ -1,5 +1,5 @@
-url: https://github.com/dongasai/running-sessions-float/tree/main/running-sessions-float
-name: dongasai/running-sessions-float#running-sessions-float
+url: https://github.com/dongasai/running-sessions-float
+name: dongasai/running-sessions-float
 category: session
 description:
   en: 'Collects the sessions that need you into one dock at the bottom of the web GUI sidebar: running sessions, sessions waiting on an approval, plan review or answer, and finished runs whose result has not been opened yet. Rows are sorted by last update and clicking one switches the main view to that session; it reuses the shipped useSessions and useSessionStatus hooks rather than adding a data source, polls nothing, stores nothing and modifies no session. The header dot pulses while anything is running or waiting and settles to a static dot when every row is only a finished-but-unread reminder; with no such sessions the dock collapses to one quiet line, and a collapsed 56px sidebar shows a 36px badge with the count instead of the list. It registers in the sidebar footer slot, so it is part of the layout and does not overlay the conversation list, leaving the existing footer entries below it.'
