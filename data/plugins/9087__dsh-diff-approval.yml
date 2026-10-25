@@ -1,0 +1,6 @@
+url: https://github.com/9087/dsh-diff-approval
+name: 9087/dsh-diff-approval
+category: git
+description:
+  en: 'Pending-change review for DeepSeek Harness: every `edit`, `write` and `str_replace_editor` change is collected automatically into the file list, where a single change block, the blocks within a selection, or the whole file can be kept or reverted, and undo/redo is supported. It imports the workspace''s version-control changes, shows the diff in a single-column or side-by-side view, and provides a Markdown preview in which changes can also be kept or reverted, in-file search, block jumping and copyable line references; the diff data is stored persistently, so the review continues after a restart.'
+  zh: 'DeepSeek Harness 的待处理改动审查：每次 edit/write/str_replace_editor 改动都会自动汇总到文件列表，可对单个差异块、选区内的多块或整个文件执行保留/回退，支持撤销重做。还能导入工作区的版本控制改动，以单栏或左右对照视图展示差异，并提供亦能保留/回退差异的 Markdown 预览、文件内搜索、差异块跳转与可复制的行号引用；差异数据持久化存储，重启后可继续审查。'

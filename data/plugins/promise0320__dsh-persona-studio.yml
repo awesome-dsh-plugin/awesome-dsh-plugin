@@ -1,0 +1,6 @@
+url: https://github.com/promise0320/dsh-persona-studio
+name: promise0320/dsh-persona-studio
+category: identity
+description:
+  en: Compiles an LLM persona in DSH from six dimensions (identity, tone, creative habits, feedback style, boundaries, run parameters), injects the compiled text into the system prompt at the end, ships six built-in templates plus a drop-in templates folder, and drafts a persona from your own past messages — either by counting patterns in them or by having the current model read them and report its rationale. Adds a panel next to the composer and a /persona command.
+  zh: 在 DSH 里把 LLM 的人格拆成六个维度（身份、语气、创作习惯、反馈方式、边界、运行参数）编译成一段提示词，注入系统提示词末尾；内置六套模板并支持直接丢文件的模板目录；还能读你过往消息归纳出人格草案——或统计成文，或让当前模型深读并给出判断依据。附带输入框旁的悬浮面板与 /persona 命令。

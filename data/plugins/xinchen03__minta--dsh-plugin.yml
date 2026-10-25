@@ -1,0 +1,6 @@
+url: https://github.com/xinchen03/minta/tree/main/dsh-plugin
+name: xinchen03/minta#dsh-plugin
+category: memory
+description:
+  zh: 'Minta 记忆引擎的 DSH 原生接入层:合成官方 dsh-mcp-client 行、注册 minta-memory-governance 技能与 session-start 记忆预热,并提供 Minta agent 预设;19 个 MCP 工具由需单独部署的 Minta 引擎(Python/Docker)提供,未部署引擎则无法使用。'
+  en: 'DSH-native integration layer for the Minta memory engine: composes the official dsh-mcp-client row, registers the minta-memory-governance skill plus a session-start memory prewarm, and ships a Minta agent preset; requires the separately deployed Minta engine (Python/Docker) to provide the 19 MCP tools - not usable without it.'

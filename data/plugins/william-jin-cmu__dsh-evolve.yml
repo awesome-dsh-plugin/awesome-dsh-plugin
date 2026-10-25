@@ -1,0 +1,6 @@
+url: https://github.com/william-jin-cmu/dsh-evolve
+name: william-jin-cmu/dsh-evolve
+category: dev
+description:
+  en: 'Self-evolution: the agent hot-mounts/removes persistent plugins on itself mid-session.'
+  zh: 自进化：agent 在会话内给自己热挂载/卸载持久化插件。

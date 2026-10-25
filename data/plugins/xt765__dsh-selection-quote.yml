@@ -1,0 +1,6 @@
+url: https://github.com/xt765/dsh-selection-quote
+name: xt765/dsh-selection-quote
+category: ui
+description:
+  en: 'Cursor and GitHub PR Review style selection toolbar: quote selected text to chat (Cmd+L), write inline comments (Shift+Cmd+L), and batch-insert from a composer dock.'
+  zh: 'Cursor 与 GitHub PR Review 风格划词引用与批注插件：支持划词一键引用到对话（⌘L）、行内展开写批注（⇧⌘L）及输入框上方批注汇总栏一键插入。'

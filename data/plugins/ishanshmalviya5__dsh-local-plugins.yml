@@ -1,0 +1,6 @@
+url: https://github.com/ishanshmalviya5/dsh-local-plugins
+name: ishanshmalviya5/dsh-local-plugins
+category: dev
+description:
+  en: 'Keeps plugins you have edited (third-party or built-in) as local git repos: deploys an exact commit only after it builds and passes checks, reverts a change that crashes dsh right after it is applied, and merges origin updates (npm or git) into your edits.'
+  zh: '把你改过的插件（第三方或内置）保存为本地 git 仓库：只部署已构建并通过检查的指定提交，应用后导致 dsh 崩溃时自动回滚，并把 npm 或 git 源的更新合并进你的修改。'

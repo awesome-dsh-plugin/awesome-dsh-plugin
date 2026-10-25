@@ -1,0 +1,6 @@
+url: https://github.com/BestQ-A/dsh-session-tree
+name: BestQ-A/dsh-session-tree
+category: ui
+description:
+  en: Hierarchical session tree for the sidebar - native subagent trees plus an optional organization-derived hierarchy, with collapsed branch counters and orphan/cycle defense.
+  zh: 侧栏会话树 - 原生子代理树,外加可选的组织汇报层级;折叠分支计数,孤儿/环路防御。

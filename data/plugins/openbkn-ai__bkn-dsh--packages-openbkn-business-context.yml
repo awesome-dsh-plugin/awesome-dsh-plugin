@@ -1,0 +1,7 @@
+url: https://github.com/openbkn-ai/bkn-dsh/tree/main/packages/openbkn-business-context
+name: openbkn-ai/bkn-dsh#openbkn-business-context
+category: tools
+tarball: https://github.com/openbkn-ai/bkn-dsh/releases/download/openbkn-dsh-runtime-v0.1.6-alpha.2-openbkn.1/openbkn-dsh-business-context-0.1.5-rc.1.tgz
+description:
+  en: "Business knowledge-network context for DeepSeek Harness: bind a session to an OpenBKN knowledge network, query its objects and metrics through managed MCP tools, and open trace-backed provenance (execution facts and a business graph) for each answer. Ships with the OpenBKN Runtime; the provenance views need an OpenBKN enterprise license."
+  zh: "为 DeepSeek Harness 提供业务知识网络上下文：将会话绑定到 OpenBKN 知识网络，通过受管 MCP 工具查询对象与指标，并为每轮回答打开可溯源的执行事实与业务上下文图。随 OpenBKN Runtime 发布；溯源视图需企业版 License。"

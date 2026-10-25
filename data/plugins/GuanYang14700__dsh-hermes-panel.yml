@@ -1,0 +1,6 @@
+url: https://github.com/GuanYang14700/dsh-hermes-panel
+name: GuanYang14700/dsh-hermes-panel
+category: ui
+description:
+  en: 'A Hermes panel for DSH: point it at a runtime and a data directory, and it starts and stops the Hermes gateway and dashboard, runs the health script Hermes ships itself, and carries the DSH <-> Hermes bridge. Both directories are settings — nothing is guessed and no machine path is hard-coded.'
+  zh: '把 Hermes 放进 DSH 的侧边栏：给它两个目录——运行时和数据目录——它就来启停网关与 dashboard、跑 Hermes 自带的体检脚本，再捎上 DSH ↔ Hermes 的桥。两个目录都是设置项，不猜路径，也不写死任何一台机器。'

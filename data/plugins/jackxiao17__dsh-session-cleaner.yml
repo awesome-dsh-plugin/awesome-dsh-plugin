@@ -1,0 +1,6 @@
+url: https://github.com/jackxiao17/dsh-session-cleaner
+name: jackxiao17/dsh-session-cleaner
+category: session
+description:
+  en: 'Adds Delete to the DSH sidebar session menu, moving the session into a recycle bin, plus a sidebar bin panel with title and full-text search, workspace filter, sorting, per-session chat-log viewing, restore and permanent delete. Deleting also detaches the workspace slot and clears the pin, the archive flag and the projection-cache row, so a restore puts the session back at its original sidebar position; permanent deletion also clears the schedules bound to the session and removes its emptied project directory.'
+  zh: '在侧栏会话菜单中加入「删除」并移入回收站，并提供侧栏回收站面板：标题与正文搜索、工作区筛选、排序、查看对话记录、恢复与彻底删除。删除时同时摘掉工作区槽位、清掉置顶与归档标记以及投影缓存行，恢复时把会话放回侧栏原位；彻底删除时清掉绑定该会话的定时任务并删除空掉的工程目录。'

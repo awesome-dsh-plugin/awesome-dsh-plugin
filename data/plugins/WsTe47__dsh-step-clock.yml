@@ -1,0 +1,6 @@
+url: https://github.com/WsTe47/dsh-step-clock
+name: WsTe47/dsh-step-clock
+category: ui
+description:
+  en: 'Shows the running agent step above the web composer as a Chinese sentence: its step number, the tools it is running, and how long it has been going. A finished step keeps its duration on screen until the next one starts, so a slow step can be identified after the fact.'
+  zh: '在网页版输入框上方用一句中文显示当前正在执行的智能体步骤：步号、正在执行的工具、以及已运行多久。步骤结束后会保留该步用时，直到下一步开始，因此慢步骤事后也能查证。'

@@ -1,0 +1,7 @@
+url: https://github.com/geguanming/dsh-office-plugin
+name: geguanming/dsh-office-plugin
+category: ui
+description:
+  en: Renders live multi-agent session activity as a pixel-art office in a Web UI side panel - each session is an ox/horse worker typing at its desk when busy or wandering off when idle, with click-to-view work monitors and in-place approval cards.
+  zh: 把多 agent 会话的实时活动渲染成 Web UI 侧边栏里的像素风办公室--每个会话是一名牛/马员工，忙时伏案敲键盘、闲时起身摸鱼，支持点击查看工位监控、就地处理审批。
+tarball: https://github.com/geguanming/dsh-office-plugin/releases/latest/download/dsh-office-plugin.tgz

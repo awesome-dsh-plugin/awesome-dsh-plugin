@@ -1,0 +1,6 @@
+url: https://github.com/Odefined/dsh-mobile-webui
+name: Odefined/dsh-mobile-webui
+category: ui
+description:
+  en: 'Mobile-viewport fixes for the dsh web GUI: overlay drawer sidebar with swipe gestures, icon-only composer with a mode · model · effort status line, centered popovers, and horizontal-overflow/scrollbar centering fixes.'
+  zh: '修复 dsh web GUI 的手机视口体验：抽屉式侧栏与滑动手势、纯图标 composer 与「权限·模型·思考深度」状态行、浮窗居中、横向溢出与滚动条挤压居中修复。'

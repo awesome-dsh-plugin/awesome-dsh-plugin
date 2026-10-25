@@ -1,0 +1,6 @@
+url: https://github.com/lianzhimanye/dsh-bard-0.03
+name: lianzhimanye/dsh-bard-0.03
+category: fun
+description:
+  en: "Role-play plugin for DeepSeek Harness: imports SillyTavern character cards (JSON/PNG) and world books (lorebooks), binds DSH skills to a character, and registers the combination as a native agent preset."
+  zh: "DeepSeek Harness 角色扮演插件：导入 SillyTavern 角色卡（JSON/PNG）与世界书（lorebook），为角色绑定 DSH 技能，并注册为原生 agent preset。"

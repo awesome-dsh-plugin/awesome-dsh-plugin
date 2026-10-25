@@ -1,0 +1,6 @@
+url: https://github.com/Asianfleet/dsh-message-copy-enhance
+name: Asianfleet/dsh-message-copy-enhance
+category: session
+description:
+  en: Copy selections from assistant messages as Markdown, preserving links, LaTeX sources, and code-fence language info.
+  zh: 将助手消息中选中的内容复制为 Markdown，保留链接、LaTeX 源码与代码块语言信息。

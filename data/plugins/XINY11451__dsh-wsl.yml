@@ -1,0 +1,7 @@
+url: https://github.com/XINY11451/dsh-wsl
+name: XINY11451/dsh-wsl
+category: wsl
+tarball: https://github.com/XINY11451/dsh-wsl/releases/latest/download/dsh-wsl.tgz
+description:
+  en: 'WSL tools for DSH: Linux commands with exit codes, timeouts and spill files; background jobs; path conversion; environment and project checks. Per task: a long-lived session for multi-step work, a fresh shell otherwise, subtasks above the composer. It also works in a terminal you opened, read-only while it runs, one click to take back the keyboard. Destructive commands need consent; root is a switch. Commands run as you, below the DSH sandbox.'
+  zh: 'DSH 的 WSL 工具：Linux 命令（退出码、超时、输出落盘）、后台作业、路径互转、环境与项目体检。终端按任务自动选择：多步任务用长期终端（一个会话贯穿，子任务记录显示在输入框上方），自洽命令用一次性终端（每次全新 shell、可并行）。也可在你新建的终端里协作：工作期间只读，点击「接管输入」即可收回键盘。危险命令需明确同意，root 是一个开关；命令以你的身份运行，位于 DSH 沙箱之下。'

@@ -1,0 +1,7 @@
+url: https://github.com/WwW7olFWwW/dsh-codebase-watcher
+name: WwW7olFWwW/dsh-codebase-watcher
+category: dev
+tarball: https://github.com/WwW7olFWwW/dsh-codebase-watcher/releases/latest/download/dsh-codebase-watcher.tgz
+description:
+  en: 'Staleness keeper for the Codebase Memory knowledge graph: it compares the graph Branch node head_sha with git rev-parse HEAD and reports an exact behindBy, rebuilds only the stale projects through the codebase-memory-mcp CLI so the MCP tool 60-second cap does not apply, watches each project for edits, and mirrors the same state into a settings card and a REST control surface.'
+  zh: 'Codebase Memory 知識圖譜的保鮮插件：比對圖譜 Branch 節點的 head_sha 與 git rev-parse HEAD、給出精確的落後提交數，只重建落後的專案且走 codebase-memory-mcp CLI（不受 MCP 工具 60 秒上限約束），逐專案監看檔案變更，並把同一份狀態呈現在設定卡片與 REST 控制面。'

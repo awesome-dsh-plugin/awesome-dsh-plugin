@@ -1,0 +1,6 @@
+url: https://github.com/R-roker315/dsh-Alist-
+name: R-roker315/dsh-Alist-
+category: tools
+description:
+  zh: "AList v3 文件管理插件：浏览、搜索、上传（本地文件流式与 multipart）、离线下载、压缩包查看、任务轮询与控制，以及存储、用户、角色、元数据、站点设置、搜索索引、分享、标签等管理端操作，共 75 个工具；全部写操作强制走审批，密码与 Token 只写不读。"
+  en: "AList v3 file management: browse, search, upload (streamed and multipart), offline downloads, archive listing, task polling and control, plus admin tools for storages, users, roles, meta rules, settings, search index, shares and labels - 75 tools in total; every write goes through the approval flow and passwords are never read back."

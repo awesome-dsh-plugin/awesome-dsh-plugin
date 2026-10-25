@@ -1,0 +1,6 @@
+url: https://github.com/xiaobbl/dsh-opencode-go-model-list        # must match the repo exactly / 必须与仓库完全一致
+name: xiaobbl/dsh-opencode-go-model-list                          # link text shown in the list / 列表中显示的链接文字
+category: model                              # see the category list below / 见下方分类列表
+description:
+  en: Serves the live opencode Go model catalog from the harness's built-in opencode-go provider route.
+  zh: 让 DSH 自带的 opencode-go 供应商跟随 opencode Go 套餐的实时模型列表，opencode 上架新模型后无需改配置即可使用。

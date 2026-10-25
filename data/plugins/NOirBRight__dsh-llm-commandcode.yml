@@ -1,0 +1,6 @@
+url: https://github.com/NOirBRight/dsh-llm-commandcode
+name: NOirBRight/dsh-llm-commandcode
+category: model
+description:
+  en: 'Command Code Provider API chat for DSH with a Host-held API key, discovered model catalog, effort defaults, an optional zero-data-retention header, quota meters, and per-model OpenAI or Anthropic protocol selection.'
+  zh: 'DSH 的 Command Code Provider API 聊天：Host 持有 API key，支持模型发现、effort 默认值、可选零数据保留请求头、额度仪表，以及按模型选择 OpenAI 或 Anthropic 协议。'

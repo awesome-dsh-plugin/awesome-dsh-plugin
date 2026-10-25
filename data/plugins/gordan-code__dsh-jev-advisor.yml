@@ -1,0 +1,6 @@
+url: https://github.com/gordan-code/dsh-jev-advisor
+name: gordan-code/dsh-jev-advisor
+category: ui
+description:
+  en: 'Adds human-facing TypeSafe Jev advice to DSH multiple-choice prompts, with recommendations, probabilities, confidence, close-call warnings, copyable suggestions, one-click adoption, remembered card layout, temporary decision preferences, and optional request previews with common-credential masking.'
+  zh: '为 DSH 选择题提供面向用户的 TypeSafe Jev 第二意见卡片，展示推荐、概率和置信度，支持推荐分歧提示、复制建议、一键采纳、卡片位置记忆及临时决策偏好，并提供可选发送前预览和常见凭证遮盖。'

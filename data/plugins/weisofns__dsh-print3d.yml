@@ -1,0 +1,6 @@
+url: https://github.com/weisofns/dsh-print3d
+name: weisofns/dsh-print3d
+category: tools
+description:
+  en: '3D printing & additive manufacturing plugin for DeepSeek Harness: parametric STL generation, calibration G-code, STL/G-code analysis, toolpath rendering and PrusaSlicer bridge, plus 5 skills and a concise persona optimized for local models.'
+  zh: 'DeepSeek Harness 的 3D 打印与增材制造插件：参数化 STL 生成、校准 G-code、STL/G-code 分析、刀路可视化、PrusaSlicer 桥接，含 5 个技能与面向本地小模型的精简 persona。'

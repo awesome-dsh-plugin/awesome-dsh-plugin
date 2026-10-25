@@ -1,0 +1,6 @@
+url: https://github.com/zhengqiuyang/dsh-read-guard
+name: zhengqiuyang/dsh-read-guard
+category: security
+description:
+  en: 'Deterministic prompt-injection interception: tool results from file reads, repo searches and web fetches are scanned before they enter model context; high-severity findings quarantine-wrap or block, and credential-material files quarantine on the path alone.'
+  zh: '确定性注入拦截：文件读取、仓库搜索与网络抓取的工具结果在进入模型上下文前被扫描；高危发现隔离包裹或阻断，凭证类文件按路径即隔离。'

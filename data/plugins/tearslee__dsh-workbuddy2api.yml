@@ -1,0 +1,6 @@
+url: https://github.com/tearslee/dsh-workbuddy2api
+name: tearslee/dsh-workbuddy2api
+category: model
+description:
+  en: Supervises a local workbuddy2api gateway process and exposes its models as an LLM provider, reading context windows and reasoning efforts from the gateway's own model endpoint.
+  zh: 托管本地 workbuddy2api 网关进程，把它的模型注册为 dsh 的模型提供方，上下文窗口与思考档位均从网关自身的模型接口读取。

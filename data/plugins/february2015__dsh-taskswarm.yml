@@ -1,0 +1,6 @@
+url: https://github.com/february2015/dsh-taskswarm
+name: february2015/dsh-taskswarm
+category: workflow
+description:
+  en: 'DSH port of TaskPlane: dependency-ordered waves run in parallel git-worktree lanes, with task packets, cross-model review, and crash recovery.'
+  zh: TaskPlane 的 DSH 移植版：按依赖分波、多 lane 并行执行（git worktree 隔离），任务包 + 跨模型评审 + 崩溃可恢复。

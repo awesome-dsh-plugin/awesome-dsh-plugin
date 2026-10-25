@@ -1,0 +1,6 @@
+url: https://github.com/MuAllen/dsh-gateway-wallet
+name: MuAllen/dsh-gateway-wallet
+category: usage
+description:
+  en: Live remaining balance for the current API key from Sub2API, New API, or official DeepSeek, plus actual spend when the site publishes it, not a local token estimate.
+  zh: 读取当前 API key 在 Sub2API、New API 或 DeepSeek 官方账本上的剩余额度；站点公布实扣时才显示实扣，不是本地 token 估算。

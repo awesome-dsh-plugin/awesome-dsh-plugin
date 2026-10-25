@@ -1,0 +1,6 @@
+url: https://github.com/imtwa/dsh-recall
+name: imtwa/dsh-recall
+category: memory
+description:
+  en: 'Cross-session memory for DeepSeek Harness: list earlier sessions and load one on demand, so a new session can see what was already done without polluting the current context.'
+  zh: DeepSeek Harness 跨会话记忆：列出之前的会话并按需加载其中一个，让新会话知道之前做了什么，同时不污染当前上下文。

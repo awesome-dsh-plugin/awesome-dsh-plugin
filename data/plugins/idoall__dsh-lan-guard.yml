@@ -1,0 +1,6 @@
+url: https://github.com/idoall/dsh-lan-guard
+name: idoall/dsh-lan-guard
+category: remote
+description:
+  en: 'LAN access for the official DSH Web UI through a gated reverse proxy: DSH keeps its own loopback binding, and a second port adds a password gate, self-signed HTTPS and per-device pairing that can be revoked individually, with a QR code to open it from a phone.'
+  zh: '把官方 DSH Web UI 安全地开放到局域网：不改动 DSH 自身的回环绑定，另开一个带密码门禁、自签 HTTPS 与可逐个吊销的设备配对的反向代理端口，并提供手机扫码入口。'

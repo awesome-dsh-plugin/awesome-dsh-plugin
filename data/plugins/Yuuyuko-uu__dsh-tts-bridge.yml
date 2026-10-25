@@ -1,0 +1,6 @@
+url: https://github.com/Yuuyuko-uu/dsh-tts-bridge
+name: Yuuyuko-uu/dsh-tts-bridge
+category: voice
+description:
+  en: Reads DSH conversations aloud using the DeepSeek web page's built-in read-aloud, driven by a small browser extension.
+  zh: 用 DeepSeek 网页端自带的朗读，把 DSH 里的对话念出来，靠一个小浏览器扩展驱动。

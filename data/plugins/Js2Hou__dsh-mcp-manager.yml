@@ -1,0 +1,6 @@
+url: https://github.com/Js2Hou/dsh-mcp-manager
+name: Js2Hou/dsh-mcp-manager
+category: ui
+description:
+  en: 'Visual MCP manager for the DSH web UI: inspect, add, remove, enable/disable MCP servers and view their live connection status from Settings → MCP.'
+  zh: DSH 网页 MCP 可视化管理插件：在「设置 → MCP」中查看/新增/删除/启停 MCP 服务器，实时显示连接状态与工具数。

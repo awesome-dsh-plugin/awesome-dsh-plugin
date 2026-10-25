@@ -1,0 +1,6 @@
+url: https://github.com/yangdongzhen590/dsh-knj-extension-center
+name: yangdongzhen590/dsh-knj-extension-center
+category: skill
+description:
+  en: 'Skill center for DSH: browse skills by region, install them from a zip archive, and manage them afterwards with enable/disable, uninstall, trash restore and search.'
+  zh: '技能中心：按区域浏览技能、从 zip 安装，并支持启用停用、卸载、回收站恢复与搜索。'

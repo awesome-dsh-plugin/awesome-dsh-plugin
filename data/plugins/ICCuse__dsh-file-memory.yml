@@ -1,0 +1,6 @@
+url: https://github.com/ICCuse/dsh-file-memory
+name: ICCuse/dsh-file-memory
+category: memory
+description:
+  en: 'File-backed working memory: memorize/recall key premises verbatim in a session notes file so they survive context compaction losslessly.'
+  zh: 文件型工作记忆：memorize/recall 把关键前提逐字保存在会话笔记文件，无损挺过上下文压缩。

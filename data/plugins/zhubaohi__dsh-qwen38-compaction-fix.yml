@@ -1,0 +1,7 @@
+url: https://github.com/zhubaohi/dsh-qwen38-compaction-fix
+name: zhubaohi/dsh-qwen38-compaction-fix
+category: model
+description:
+  en: 'Compaction fix for NInfer-hosted qwen3.8-27b gateways: disables thinking on dsh context-compaction and session-title calls so xhigh reasoning stops burning the whole output budget; the same idea applies to other launch methods, this package targets NInfer only.'
+  zh: '针对 NInfer 托管的 qwen3.8-27b 网关的压缩修复：在 dsh 上下文压缩与会话标题调用中关闭思考，避免 xhigh 推理耗尽全部输出预算；同一思路适用于其他启动方式，本包仅面向 NInfer。'
+tarball: https://github.com/zhubaohi/dsh-qwen38-compaction-fix/releases/download/v1.1.0/dsh-qwen38-ninfer-compaction-fix-1.1.0.tgz

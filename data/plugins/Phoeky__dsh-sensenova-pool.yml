@@ -1,0 +1,6 @@
+url: https://github.com/Phoeky/dsh-sensenova-pool
+name: Phoeky/dsh-sensenova-pool
+category: model
+description:
+  en: 'Brings SenseNova (日日新) models into dsh with a per-key rotation pool: paste any number of API keys and requests rotate across them, a 429 rate-limit immediately retries on the next key with per-key exponential-backoff cooldown, local RPM pre-throttling avoids the limit instead of reacting to it, and an exhausted pool answers 503 with Retry-After so a 429 never reaches the caller. Ships a built-in model catalogue that works offline and refreshes from /v1/models, plus a settings card with masked keys, per-key probing and removal.'
+  zh: 把商汤日日新（SenseNova）模型接入 dsh，并提供按 Key 轮换的 Key 池：粘贴任意多把 API Key，请求在多把 Key 之间轮转；遇 429 限流立即换下一把 Key 重试，每把 Key 独立指数退避冷却；本地 RPM 预限流从源头避开限流，池子耗尽时回报 503 与 Retry-After，使 429 不会传到调用方。内置可离线使用的模型目录并从 /v1/models 刷新，设置卡片提供脱敏 Key 列表、单把探活与删除。

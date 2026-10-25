@@ -1,0 +1,6 @@
+url: https://github.com/Totoro-qaq/dsh-plugin-bridge
+name: Totoro-qaq/dsh-plugin-bridge
+category: session
+description:
+  en: Moves an existing DSH session to another agent preset through a previewable five-section handoff, preserving the source session and either pausing the target for confirmation or continuing immediately.
+  zh: 通过可预览的五段式交接，将已有 DSH 会话迁移到另一个 Agent Preset；保留源会话，并可让目标会话暂停等待确认或立即继续。

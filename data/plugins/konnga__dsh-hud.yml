@@ -1,0 +1,6 @@
+url: https://github.com/konnga/dsh-hud
+name: konnga/dsh-hud
+category: git
+description:
+  en: "Read-only Git panel for the current workspace: branch, changed files and diffs, plus which files this session changed, what has been reviewed, and which tools and skills it ran."
+  zh: "当前工作区的只读 Git 面板：分支、改动清单与差异，另有「这个会话改过哪些文件、审到哪了、跑了哪些工具与技能」。"

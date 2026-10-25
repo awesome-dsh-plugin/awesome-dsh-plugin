@@ -1,0 +1,6 @@
+url: https://github.com/L-ingqin12/dsh-redaction/tree/main/packages/dsh-plugin-redact
+name: L-ingqin12/dsh-redaction#dsh-plugin-redact
+category: security
+description:
+  en: 'In-place redaction and row-level rollback for session logs, preserving the seq-equals-row-index invariant that makes deleting a middle row corrupt the entire log. Originals are copied to a quarantine sibling before any write, and the reader''s own semantics are replayed as a pre-write gate.'
+  zh: '会话日志的原地脱敏与按行回退：守住「每行 seq 必须等于它的行号」这一不变式（删中间行会让整份日志打不开）。任何写入前先把原文复制成隔离备份，并以读取端自身的语义作为写前闸门。'

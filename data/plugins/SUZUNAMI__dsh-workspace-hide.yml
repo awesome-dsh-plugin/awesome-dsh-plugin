@@ -1,0 +1,6 @@
+url: https://github.com/SUZUNAMI/dsh-workspace-hide
+name: SUZUNAMI/dsh-workspace-hide
+category: ui
+description:
+  en: 'Hide chosen workspaces from the DSH sidebar and archive their sessions along with them, so those sessions never spill into the ungrouped list. Fully local and reversible; with dsh-archive-manager installed the archiving is real and undoable, otherwise it stays a display-only layer. Restore any hidden workspace from Settings.'
+  zh: '在 DSH 侧边栏隐藏指定工作区，并把它的会话一并归档，避免这些会话溢出到「未分组」列表。纯本地、完全可逆；装了 dsh-archive-manager 时执行真归档且可撤销，未装时退化为纯显示层。随时可在设置页恢复。'

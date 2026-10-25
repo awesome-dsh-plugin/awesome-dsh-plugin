@@ -1,0 +1,6 @@
+url: https://github.com/Sev7een/dsh-plugin-automations
+name: Sev7een/dsh-plugin-automations
+category: workflow
+description:
+  en: Settings-based scheduled tasks that run on time or during DeepSeek off-peak hours, with one-time and daily schedules backed by durable task state.
+  zh: 设置页定时任务：支持准点或 DeepSeek 谷时段执行、单次/每日重复，并持久化任务状态。

@@ -1,0 +1,6 @@
+url: https://github.com/bubbleptr/dsh-holdem
+name: bubbleptr/dsh-holdem
+category: fun
+description:
+  en: "Six-player no-limit Texas Hold'em for the dsh Web GUI. One human plays against five LLM agents that each see only their own hole cards. Adds a dedicated tab plus a draggable mini-window over the conversation area, per-browser sessions with CSRF protection, pot-relative raise sizing, three rebuys before elimination, and showdown reveals with board-card deal animations."
+  zh: "六人无限注德州扑克：1 名玩家对 5 位只能看到自己底牌的 LLM 智能体。在 Web GUI 中提供独立 Tab 与会话区可拖拽悬浮小窗，支持按浏览器隔离的牌局与 CSRF 防护、按底池倍数给出的加注尺度、每人 3 次买入后出局，以及摊牌亮牌与公共牌翻牌动效。"

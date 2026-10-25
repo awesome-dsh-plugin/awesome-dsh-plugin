@@ -1,0 +1,6 @@
+url: https://github.com/zerorigin-studio/dsh-desktop-shell
+name: zerorigin-studio/dsh-desktop-shell
+category: ui
+description:
+  en: 'A dsh web plugin that wraps the running Harness in a native Windows desktop window: it bundles a Wails v3 desktop client (so installing the plugin is enough), probes the web port and writes the ~/.dsh/dsh-web-port.json protocol file for the client, registers a system tray, desktop/Start Menu shortcuts and a startup autostart toggle, and the client can start dsh itself if it is not running.'
+  zh: 把 dsh web 界面封装成原生 Windows 桌面窗口，内置桌面客户端，带系统托盘、开机自启与协议文件分发。

@@ -1,0 +1,6 @@
+url: https://github.com/xxww0098/dsh-plugin-oauth-subs
+name: xxww0098/dsh-plugin-oauth-subs
+category: identity
+description:
+  en: Connect ChatGPT Codex, xAI Grok, Zhipu GLM, AWS Kiro, Google Antigravity, and Cursor subscriptions to DeepSeek Harness through OAuth and a local proxy.
+  zh: 通过 OAuth 和本地代理，将 ChatGPT Codex、xAI Grok、智谱 GLM、AWS Kiro、Google Antigravity 与 Cursor 订阅接入 DeepSeek Harness。

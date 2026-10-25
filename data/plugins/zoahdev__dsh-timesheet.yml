@@ -1,0 +1,7 @@
+url: https://github.com/zoahdev/dsh-timesheet
+name: zoahdev/dsh-timesheet
+category: dev
+description:
+  en: 'Turn-based time tracking from dsh session logs: totals, per-day/project/provider/source rollups, tool-call counts, failure rates, and time-to-first-token — CLI plus an agent-callable timesheet tool, dsh-timesheet/v1 reports, zero runtime deps.'
+  zh: '从 dsh 会话日志做基于 turn 的时间跟踪：总计、按天/项目/供应商/来源汇总、工具调用数、失败率与首 token 延迟——CLI + agent 可调用 timesheet 工具，dsh-timesheet/v1 报告，零运行时依赖。'
+# listing updated 2026-08-19 (repo hardened to 10+ commits; submission gate)

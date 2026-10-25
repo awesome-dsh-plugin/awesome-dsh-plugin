@@ -1,0 +1,6 @@
+url: https://github.com/Tencent/BrowserSkill/tree/main/packages/dsh-plugin-browserskill
+name: Tencent/BrowserSkill#dsh-plugin-browserskill
+category: browser
+description:
+  en: BrowserSkill bridge for controlling visible Chrome and Edge Agent Windows from DeepSeek Harness, with native browser tools, accessibility and VOM observations, screenshots, owned multi-session control, and a live Web UI overlay.
+  zh: BrowserSkill 的 DeepSeek Harness 浏览器自动化桥接插件，通过原生浏览器工具控制可见的 Chrome 和 Edge Agent Window，支持可访问性与 VOM 页面观察、截图、隔离的多会话控制和 Web UI 实时观察浮层。

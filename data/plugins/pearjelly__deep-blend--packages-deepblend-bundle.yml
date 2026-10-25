@@ -1,0 +1,14 @@
+url: https://github.com/pearjelly/deep-blend/tree/main/packages/deepblend/bundle
+name: pearjelly/deep-blend#bundle
+# `#bundle` rather than a prettier `#deepblend`: the gate's own rule is `owner/repo#<last segment of the
+# subdirectory the url points at>`, and its example is `…/packages/my-plugin` → `owner/repo#my-plugin`.
+# A nicer label would have to come from renaming the directory, which the rest of the repository pins.
+category: tools
+# The release asset `tools/build-release-tarball.mjs` builds and `gh release` attaches. `latest/download/` plus a
+# name with no version in it is what keeps this URL alive across releases; `--check` on that tool fails if a
+# version ever appears in the asset name.
+tarball: https://github.com/pearjelly/deep-blend/releases/latest/download/deepblend-bundle.tgz
+description:
+  # Quoted one-line descriptions; keep the canonical text here and project it.
+  en: 'Create editable Blender models in DSH with linked speaker, cup and lamp dimensions. Resize moved, tilted and animated speaker assemblies while retaining manual details, cameras and timing; author bounded control meshes, subdivision, repeated copies and seeded placement on closed static surfaces. Inspect native object-axis dimensions, local samples and subject-aware multi-view images; immutable revisions and an approval gate preserve edits, with 18 tools for modeling, review and delivery.'
+  zh: '在 DSH 中创建可编辑的 Blender 模型，联动音箱、杯与灯具尺寸。修改已移动、倾斜并带动画的音箱装配，保留手工细节、摄影和时序；支持有预算的控制网格、细分、重复副本及静态闭合表面确定性布置。核对原生物体轴尺寸、局部采样与指定主体多视图；不可变历史和审批闸门保留修改，18 个工具支持建模、评审与交付。'

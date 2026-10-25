@@ -1,0 +1,6 @@
+url: https://github.com/jide315/dsh-reasoning-language
+name: jide315/dsh-reasoning-language
+category: ui
+description:
+  en: Uses a configurable system-prompt section to request a chosen reasoning language (Simplified Chinese by default), and expands thinking rows by default while preserving rows the user manually collapses.
+  zh: 通过可配置的系统提示词章节要求模型使用指定语言推理（默认简体中文），并默认展开思考行，同时保留用户手动折叠的状态。

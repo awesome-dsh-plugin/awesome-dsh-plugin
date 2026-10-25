@@ -1,0 +1,6 @@
+url: https://github.com/bwndlct/dsh-session-export
+name: bwndlct/dsh-session-export
+category: session
+description:
+  en: Export the current session to portable, schema-versioned Markdown and JSON files via the `session_export` tool and slash commands, with cross-platform-safe filenames.
+  zh: 把当前会话导出为可移植、带 schema 版本的 Markdown 与 JSON 文件，提供 `session_export` 工具与斜杠命令两种入口，文件名跨平台安全。

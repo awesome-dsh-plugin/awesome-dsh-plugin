@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/docs-retriever
+name: JohnXu22786/docs-retriever
+category: tools
+description:
+  en: 'Doctrove: versioned library documentation retrieval MCP server for coding agents — catalog lookup, version selection and focus-ranked doc extraction, with zero runtime dependencies and a dsh bundle.'
+  zh: doctrove：面向编码 agent 的版本化库文档检索 MCP server——目录检索、版本选择与按主题提取带相关度排序的文档片段，零运行时依赖，dsh bundle 接入。

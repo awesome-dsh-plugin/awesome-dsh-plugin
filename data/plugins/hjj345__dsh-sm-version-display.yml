@@ -1,0 +1,6 @@
+url: https://github.com/hjj345/dsh-sm-version-display
+name: hjj345/dsh-sm-version-display
+category: dev
+description:
+  en: Shows the installed DeepSeek Harness version in the sidebar, checks npm and GitHub Releases for updates, and provides manual or confirmed update commands.
+  zh: 在侧边栏显示已安装的 DeepSeek Harness 版本，检查 npm 与 GitHub Releases 更新，并提供手动或确认后执行的更新命令。

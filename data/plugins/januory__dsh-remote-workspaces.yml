@@ -1,0 +1,6 @@
+url: https://github.com/januory/dsh-remote-workspaces
+name: januory/dsh-remote-workspaces
+category: remote
+description:
+  en: 'Open folders on remote hosts over SSH as Harness workspaces: file tools (read/write/edit/grep/glob) and shell commands run directly on the remote host over SFTP, ripgrep, and ssh2 exec, with no local mirroring, an encrypted multi-host registry, and the local sandbox policy still enforced.'
+  zh: '通过 SSH 把远程主机目录作为 Harness 工作区打开：read/write/edit/grep/glob 与 shell 命令经 SFTP、ripgrep、ssh2 exec 直接在远程主机执行，不做本地镜像；多主机注册表加密存储，本地沙箱策略依然生效。'

@@ -1,0 +1,6 @@
+url: https://github.com/zyd232/dsh-compaction-policy
+name: zyd232/dsh-compaction-policy
+category: session
+description:
+  en: 'Stops DeepSeek Harness from compacting (summarizing) your conversation far too early. Without it, compaction fires around half-full on smaller context windows; with it, compaction waits until the window is as full as you want (80% by default), settable per provider/model. It only changes when compaction happens — what a summary keeps is still DSH’s decision.'
+  zh: '让 DeepSeek Harness 不再过早压缩对话（把早期内容总结掉）。默认行为下，上下文窗口不大的模型（十几万 token 那种）常常在半满出头就开始压缩；装上它之后，压缩会等你设定的比例（默认 80%）到了才发生，并且可以按 provider/model 分别设置。它只改“什么时候压缩”，一次压缩保留哪些内容仍由 DSH 决定。'

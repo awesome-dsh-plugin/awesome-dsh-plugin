@@ -1,0 +1,6 @@
+url: https://github.com/yuehancn/dsh-tool-subtitle
+name: yuehancn/dsh-tool-subtitle
+category: tools
+description:
+  en: Read, write, convert and retime a subtitle track across SRT, WebVTT and ASS, audit it for over-long or unreadable cues, and transcribe audio through a configured speech recogniser.
+  zh: 读写互转 SRT/WebVTT/ASS 三种字幕并校正时间轴，出片前体检过长或读不过来的 cue，还能用已配置的识别引擎把音视频转成字幕。

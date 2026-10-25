@@ -1,0 +1,6 @@
+url: https://github.com/Vergil-long/dsh-custom-font
+name: Vergil-long/dsh-custom-font
+category: theme
+description:
+  en: 'Customize the interface font, size, weight, color and layout from the settings page, Word-style and WYSIWYG, auto-saved. Ships two bundled open-source fonts (STIX2Text, Latin Modern Mono Light) plus an author-recommended typography, and stores settings under ~/.dsh.'
+  zh: '在设置页里像 Word 一样改界面字体、字号、加粗、颜色与版式，所见即所得、自动保存。自带两套开源字体（STIX2Text、Latin Modern Mono Light）与一套作者推荐排版，设置存在 ~/.dsh（换桌面外壳不丢）。'

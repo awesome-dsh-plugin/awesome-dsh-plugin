@@ -1,0 +1,6 @@
+url: https://github.com/tinqiao-oss/clawtouch-mcp/tree/master/adapters/dsh/plugin
+name: tinqiao-oss/clawtouch-mcp#dsh-clawtouch
+category: tools
+description:
+  en: 'Computer use through an external USB HID device: name a target in plain language, a vision model locates it in a cropped window screenshot, and a Raspberry Pi Pico 2 moves the real mouse and types on the real keyboard. 7 tools. Windows has window listing, per-window cropping and automatic window raising; macOS needs pyobjc and has neither; Linux is unsupported.'
+  zh: '通过外接 USB HID 硬件做电脑控制：用一句话描述目标，视觉模型在裁剪后的窗口截图里定位，树莓派 Pico 2 驱动真实鼠标和键盘完成动作。7 个工具。Windows 支持窗口枚举、按窗口裁剪与自动抬窗；macOS 需 pyobjc 且不支持这两项；Linux 不支持。'

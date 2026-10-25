@@ -1,0 +1,6 @@
+url: https://github.com/Firefox2100/dsh-ai-providers/tree/main/packages/dsh-ai-providers
+name: Firefox2100/dsh-ai-providers#runtime
+category: model
+description:
+  en: AI provider runtime and configuration UI for shared credentials and embedding, reranking, speech, and image generation services in DSH.
+  zh: 为 DSH 提供共享凭据以及嵌入、重排序、语音和图像生成服务的 AI 提供商运行时与配置界面。

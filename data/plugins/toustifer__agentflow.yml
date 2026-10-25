@@ -1,0 +1,6 @@
+url: https://github.com/toustifer/agentflow
+name: toustifer/agentflow
+category: workflow
+description:
+  en: Lifecycle orchestration engine for AI agent teams with task-scoped Git worktree isolation, state-gated delivery transitions, and off-context memory.
+  zh: 基于 Git 工作树任务隔离、状态门禁交付与外置记忆的 AI 智能体软件生命周期编排引擎。

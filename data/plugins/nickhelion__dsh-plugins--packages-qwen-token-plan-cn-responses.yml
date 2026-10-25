@@ -1,0 +1,6 @@
+url: https://github.com/nickhelion/dsh-plugins/tree/main/packages/qwen-token-plan-cn-responses
+name: nickhelion/dsh-plugins#qwen-token-plan-cn-responses
+category: model
+description:
+  en: Qwen Token Plan CN Responses provider for DeepSeek Harness via the OpenAI Responses API, with Qwen server-side tools, DSH local function tools, text/reasoning/tool-call multi-turn history, persisted image attachments, and a per-release official model catalog snapshot.
+  zh: 面向 DeepSeek Harness 的千问 Token Plan 个人版 Responses API 提供方，保留 Qwen 服务端内置工具与 DSH 本地函数工具，多轮文本/推理/工具调用历史与图片附件均被支持，官方模型目录按 npm 版本冻结快照发布。

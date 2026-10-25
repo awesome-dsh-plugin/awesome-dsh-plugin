@@ -1,0 +1,6 @@
+url: https://github.com/Lzcdebear/better-dsh-session-deletetool
+name: Lzcdebear/better-dsh-session-deletetool
+category: session
+description:
+  en: Permanently delete DSH conversations with optional recursive deletion of forked and subagent sessions.
+  zh: 从 DSH 中永久删除会话，并可选择递归删除派生对话和子智能体会话。

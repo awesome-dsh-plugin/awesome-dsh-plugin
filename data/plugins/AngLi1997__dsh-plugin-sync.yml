@@ -1,0 +1,6 @@
+url: https://github.com/AngLi1997/dsh-plugin-sync
+name: AngLi1997/dsh-plugin-sync
+category: tools
+description:
+  en: Sync the installed DeepSeek Harness plugin manifest to a GitHub Gist (OAuth login, one-click export/import with automatic dependency install).
+  zh: 将已安装的 DeepSeek Harness 插件清单同步到 GitHub Gist（OAuth 登录、一键导出/导入并自动安装依赖）。

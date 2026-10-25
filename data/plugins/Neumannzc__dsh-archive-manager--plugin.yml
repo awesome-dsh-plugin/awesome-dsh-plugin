@@ -1,0 +1,6 @@
+url: https://github.com/Neumannzc/dsh-archive-manager/tree/main/plugin
+name: Neumannzc/dsh-archive-manager#plugin
+category: ui
+description:
+  en: Beautified archive-manager settings section listing archived sessions grouped by workspace, with a hover unarchive action and relative timestamps.
+  zh: 美化版归档管理设置页：按工作区分组展示归档会话，悬停即可取消归档，附相对时间显示。

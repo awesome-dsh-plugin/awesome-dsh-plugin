@@ -1,0 +1,6 @@
+url: https://github.com/troytse/dsh-plugin-subagent-roles
+name: troytse/dsh-plugin-subagent-roles
+category: model
+description:
+  en: "File-defined subagent roles for DeepSeek Harness: roles live in project and global .dsh/roles files, a delegating agent sees one catalog line per role, and each role's tool policy decides which tools its child can see."
+  zh: "用文件定义子代理角色：角色放在项目级与全局级 .dsh/roles 目录，委派方每个角色只看到一行目录，子代理可见的工具由角色自己的工具策略决定。"

@@ -1,0 +1,6 @@
+url: https://github.com/lninghaha/dsh-coding-subscription-oauth
+name: lninghaha/dsh-coding-subscription-oauth
+category: model
+description:
+  en: "Coding-subscription OAuth for SuperGrok/Grok Build, ChatGPT Plus Codex, Kimi Code and Claude Code, plus an opt-in loopback OpenAI/Anthropic gateway: local login without pasting tokens, AUTH refresh-and-retry, grok-4.6 xhigh, and API-key route coexistence."
+  zh: "编码订阅 OAuth，支持 SuperGrok / Grok Build、ChatGPT Plus Codex、Kimi Code、Claude Code，并提供可选 loopback OpenAI/Anthropic 网关：本地登录无需粘贴 token，支持 AUTH 刷新重试、grok-4.6 xhigh，并可与 API-key 路由共存。"

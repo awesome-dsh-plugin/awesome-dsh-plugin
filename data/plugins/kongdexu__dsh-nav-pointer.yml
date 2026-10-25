@@ -1,0 +1,6 @@
+url: https://github.com/kongdexu/dsh-nav-pointer
+name: kongdexu/dsh-nav-pointer
+category: ui
+description:
+  en: 'Vertical message pointer rail on the left edge of the chat: one dash per user message, click to scroll to that message, hover for a preview bubble.'
+  zh: 聊天区左侧的消息指针导轨：每条用户消息一个横条，点击滚动定位，悬停显示预览气泡。

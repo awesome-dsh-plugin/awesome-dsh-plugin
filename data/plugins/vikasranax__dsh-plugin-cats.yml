@@ -1,0 +1,6 @@
+url: https://github.com/vikasranax/dsh-plugin-cats
+name: vikasranax/dsh-plugin-cats
+category: tools
+description:
+  en: "Fetches random cat facts and images from public APIs for AI agents."
+  zh: "为 AI 代理从公开 API 获取随机猫咪冷知识与猫图。"

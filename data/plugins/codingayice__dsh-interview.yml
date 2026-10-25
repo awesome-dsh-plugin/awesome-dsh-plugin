@@ -1,0 +1,6 @@
+url: https://github.com/codingayice/dsh-interview
+name: codingayice/dsh-interview
+category: tools
+description:
+  en: 'AI interview practice for DeepSeek Harness Web: generates questions across four modes (concept review, mock interview, scenario, LeetCode Hot 100), scores answers, and provides explanations.'
+  zh: '面向 DeepSeek Harness Web 的 AI 面试陪练：支持背八股、模拟面试、场景题与力扣热题 100 四种模式，自动评分、点评并讲解知识点。'

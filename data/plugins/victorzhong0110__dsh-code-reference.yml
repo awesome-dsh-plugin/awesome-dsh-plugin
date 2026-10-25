@@ -1,0 +1,6 @@
+url: https://github.com/victorzhong0110/dsh-code-reference
+name: victorzhong0110/dsh-code-reference
+category: workflow
+description:
+  en: Surveys local code and GitHub/npm for reusable implementations before development, evaluates reuse versus rewrite, and checks architecture coupling.
+  zh: 在开发前检索本地代码与 GitHub/npm 的可复用实现，评估复用与重写成本，并检查架构耦合。

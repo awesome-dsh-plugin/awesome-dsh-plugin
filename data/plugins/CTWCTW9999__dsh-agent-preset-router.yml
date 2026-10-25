@@ -1,0 +1,6 @@
+url: https://github.com/CTWCTW9999/dsh-agent-preset-router
+name: CTWCTW9999/dsh-agent-preset-router
+category: workflow
+description:
+  en: 'Auto Mode for DSH: a flash-model router that auto-picks the best agent preset (standard/code/minimal/cordis) for each new session and executes immediately, no confirmation.'
+  zh: 'DSH 自动模式：用 Flash 模型为每个新会话自动判断最合适的 Agent 预设（标准/PTC/极简/创造）并直接执行，无需确认。'

@@ -1,0 +1,6 @@
+url: https://github.com/polohot/dsh-adrian-inject-context
+name: polohot/dsh-adrian-inject-context
+category: identity
+description:
+  en: Injects your own saved context entries as a Remember row after each user message, per turn or once per session, with a Settings editor and a manager page.
+  zh: '把你保存的上下文条目以「Remember」行的形式注入到每条用户消息之后，可按轮或按会话一次；带设置编辑器与管理页。'

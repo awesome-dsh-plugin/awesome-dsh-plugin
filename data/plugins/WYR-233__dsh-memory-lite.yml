@@ -1,0 +1,7 @@
+url: https://github.com/WYR-233/dsh-memory-lite
+name: WYR-233/dsh-memory-lite
+category: memory
+description:
+  en: 'Read-only enhancer for a file-based long-term memory library (markdown cards in git): a memory_find search tool, a small budgeted memory digest injected into the system prompt, and a settings page with library overview, health-check status and toggles.'
+  zh: '面向「纯文件（markdown 卡片 + git）长期记忆库」的只读增强插件：memory_find 检索工具、一小段受预算约束的记忆库摘要注入，以及带概览/健康/开关的设置页。'
+tarball: https://github.com/WYR-233/dsh-memory-lite/releases/latest/download/dsh-memory-lite.tgz

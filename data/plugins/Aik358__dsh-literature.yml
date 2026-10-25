@@ -1,0 +1,6 @@
+url: https://github.com/Aik358/dsh-literature
+name: Aik358/dsh-literature
+category: tools
+description:
+  en: 'Self-contained literature library for DSH with optional Zotero export: full-text PDF fetching (Unpaywall/arXiv/custom URL templates), loose Crossref-backed search, APA/GB-T 7714/MLA/Chicago citation generation, a side-panel PDF reader with highlights and notes, and AI-assisted Q&A/translation steered into the current conversation.'
+  zh: 'DSH 内置文献库（可选导出到 Zotero）：通过 Unpaywall/arXiv/自定义 URL 模板获取全文 PDF，Crossref 候选式宽松搜索，APA/GB-T 7714/MLA/Chicago 引用生成，侧窗 PDF 阅读器（高亮与笔记），以及注入当前对话的 AI 问答/翻译。'

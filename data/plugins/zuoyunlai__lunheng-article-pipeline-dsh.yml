@@ -1,0 +1,6 @@
+url: https://github.com/zuoyunlai/lunheng-article-pipeline-dsh
+name: zuoyunlai/lunheng-article-pipeline-dsh
+category: skill
+description:
+  en: 'DeepSeek Harness bundle registering one skill that turns long-form production (academic papers, industry analysis, business commentary) into a 9-role pipeline: T1 literature / T2 data / T3 case scouts running in parallel, T4 analyst, T5 writer, T6 critical companion, T7 auditor, T8 finalizer run by the coordinator, T9 peer reviewer — across 6 phases with triangular evidence verification, a 23-check M-gate, a G0-G14 audit including a Chinese AI-trace gate, peer-review scoring with journal matching, and 4 human checkpoints. Installs with `dsh plugin add lunheng-article-pipeline` (package.json#dsh.bundle.patch plus a lib/index.js entry that registers the skill); ships role cards for T1-T9, templates and 11 zero-dependency verification scripts, with five-language READMEs.'
+  zh: 'DSH bundle 技能包：把深度长文生产（学术论文 / 行业分析 / 商业评论）拆成 9 角色流水线——T1 文献 / T2 数据 / T3 案例三线并行检索、T4 分析、T5 写作、T6 批判伙伴、T7 审计、T8 终检（主控亲执行）、T9 同行评审，跨 6 个阶段，含三角验证、M 门 23 项机械终检、G0-G14 独立审计（含中文 AI 痕迹闸）、审稿评分与期刊匹配，以及 4 个人在环节点。以 bundle 分发（`package.json#dsh.bundle.patch` + `lib/index.js` 入口注册技能），`dsh plugin add lunheng-article-pipeline` 即装；随包 T1-T9 角色卡、模板与 11 个零依赖校验脚本，README 五语。'

@@ -1,0 +1,6 @@
+url: https://github.com/shuang-ying/dsh-ThirdApi-ThinkingMode
+name: shuang-ying/dsh-ThirdApi-ThinkingMode
+category: model
+description:
+  en: Reads each third-party endpoint's own model listing and keeps llm-pi-ai's per-model reasoningEfforts in sync, so the composer offers the thinking levels a model actually has.
+  zh: 读取每个第三方端点自己的模型列表，同步 llm-pi-ai 的逐模型 reasoningEfforts，让输入框提供模型真实支持的思考等级。

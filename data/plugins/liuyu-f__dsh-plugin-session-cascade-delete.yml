@@ -1,0 +1,6 @@
+url: https://github.com/liuyu-f/dsh-plugin-session-cascade-delete
+name: liuyu-f/dsh-plugin-session-cascade-delete
+category: session
+description:
+  en: 'Delete a session from the UI (session-header button or sidebar row menu) or with the session_delete tool: removes the log directory, projection cache and workspace accounting, cascades into the subagent sessions it owns while leaving forked branches untouched, and stops a running agent first.'
+  zh: '从界面删除会话（会话头部按钮或侧栏行菜单），或由 agent 调用 session_delete 工具：清理日志目录、投影缓存与工作区记账，级联删除它拥有的子代理会话（分叉分支不受影响），运行中的会话会先被停止。'

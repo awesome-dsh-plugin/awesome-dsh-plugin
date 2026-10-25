@@ -1,0 +1,6 @@
+url: https://github.com/439436269-ctrl/dsh-peak-runner
+name: 439436269-ctrl/dsh-peak-runner
+category: usage
+description:
+  en: 'A price-aware task runner for DeepSeek: during an off-peak pricing window a batch of prompts goes straight to deepseek-flash; near peak it queues the batch behind a self-held timer and runs it at the start of the next off-peak window. Exposes `peak_run`, `peak_schedule` and `peak_cancel`, with configurable peak windows and a lead time.'
+  zh: 'DeepSeek 峰谷价感知的任务执行器：平价时段把一批 prompt 直接交给 deepseek-flash；临近峰价时排队并用自持定时器在下一个平价时段开始执行。提供 peak_run / peak_schedule / peak_cancel 三个工具，峰谷时段与提前量可配置。'

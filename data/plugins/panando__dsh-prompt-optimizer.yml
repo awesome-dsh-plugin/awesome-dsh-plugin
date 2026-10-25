@@ -1,0 +1,6 @@
+url: https://github.com/panando/dsh-prompt-optimizer
+name: panando/dsh-prompt-optimizer
+category: ui
+description:
+  en: 'One-button prompt optimizer: rewrites the composer draft via a configurable strategy, with an editable template, few-shot examples, pinned models and reasoning effort.'
+  zh: '一键提示词优化：按可配置策略改写输入框草稿，提供可编辑模板、Few-shot 示例、指定模型与推理强度。'

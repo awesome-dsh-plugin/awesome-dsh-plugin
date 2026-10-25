@@ -1,0 +1,6 @@
+url: https://github.com/flashyiyi/dsh-voice-announcer
+name: flashyiyi/dsh-voice-announcer
+category: voice
+description:
+  en: 'Voice announcements when a conversation ends (session title, round, outcome) plus live sentence-by-sentence reading of replies, via built-in edge-tts with zero third-party dependencies.'
+  zh: '对话结束语音播报（会话名、轮数、结果），回复生成时实时逐句朗读；内置 edge-tts，零第三方依赖。'

@@ -1,0 +1,6 @@
+url: https://github.com/1na-ko/dsh-hdc-bridge
+name: 1na-ko/dsh-hdc-bridge
+category: tools
+description:
+  en: 'HarmonyOS device bridge: hdc screenshot/install/log/crash/UI automation loop with read_image, official-first versioned API knowledge (SDK .d.ts + offline bundled docs), and a DevEco CLI build/sign/lint lane.'
+  zh: 鸿蒙设备桥：hdc 截图/装包/日志/崩溃/UI 自动化闭环（配 read_image 看图），官方优先版本化 API 知识层（SDK .d.ts + 离线随包文档），以及 DevEco CLI 构建/签名/lint 通道。

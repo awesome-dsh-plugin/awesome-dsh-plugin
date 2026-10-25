@@ -1,0 +1,6 @@
+url: https://github.com/LucienLL/dsh-session-status
+name: LucienLL/dsh-session-status
+category: session
+description:
+  en: "Per-session status labels (built-in active/done/paused plus custom) shown in the sidebar, conversation header, and hover card, with editable colors."
+  zh: "为每个会话设置项目状态标签（内置进行中/已结项/搁置中+自定义标签，颜色可调），在侧栏、对话头部与悬停卡片中显示。"

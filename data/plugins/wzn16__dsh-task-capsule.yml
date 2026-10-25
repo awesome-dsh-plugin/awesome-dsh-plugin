@@ -1,0 +1,6 @@
+url: https://github.com/wzn16/dsh-task-capsule
+name: wzn16/dsh-task-capsule
+category: ui
+description:
+  en: 'Session-header task capsule with color-coded run states, click-to-jump and a multi-task dropdown, plus task notification cards (done / error / waiting-for-confirmation) with synthesized sound and optional system notifications.'
+  zh: '会话 header 常驻任务胶囊（圆点颜色分态、点击跳转、多任务下拉），任务完成、出错、等待确认时弹通知卡，支持合成提示音与可选系统通知。'

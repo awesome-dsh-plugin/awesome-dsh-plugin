@@ -1,0 +1,6 @@
+url: https://github.com/hmlyx/dsh-memory
+name: hmlyx/dsh-memory
+category: memory
+description:
+  en: 'Persistent conversation memory for DeepSeek Harness: memory tab, automatic AI naming, per-AI privacy isolation, sidebar AI names, and automatic experience archiving. A static profile plugin available in every preset without disappearing on restart.'
+  zh: '为 DeepSeek Harness 提供持久化对话记忆：记忆标签页、AI 自动命名、按 AI 隔离的隐私边界、侧栏显示 AI 名称与经验自动归档。以静态 profile 插件形式在所有预设中常驻，重启不丢。'

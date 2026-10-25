@@ -1,0 +1,6 @@
+url: https://github.com/EdwinDigital/dsh-web-search-microsoft-webiq
+name: EdwinDigital/dsh-web-search-microsoft-webiq
+category: browser
+description:
+  en: Microsoft Web IQ search provider for the built-in web_search tool, with a settings card for the API key, endpoint, language, region, passage length and SafeSearch.
+  zh: 基于 Microsoft Web IQ 的网页搜索提供方，接入内置 web_search 工具，并提供 API Key、端点、语言、地区、摘要长度与 SafeSearch 的设置卡片。

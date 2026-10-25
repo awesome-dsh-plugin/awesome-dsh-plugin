@@ -1,0 +1,6 @@
+url: https://github.com/xianrui69/dsh-quick-phrases
+name: xianrui69/dsh-quick-phrases
+category: ui
+description:
+  en: 'Adds a draggable, position-persisted chip bar of configurable quick phrases to DeepSeek Harness, plus a /-triggered phrase menu with per-phrase pin, slash-menu, bar-visibility, and click-to-send toggles.'
+  zh: '为 DeepSeek Harness 增加可拖拽、位置会记住的快捷短语条，以及 `/` 触发的短语菜单；每条短语可单独设置置顶、斜杠菜单、是否上条和点击即发送。'

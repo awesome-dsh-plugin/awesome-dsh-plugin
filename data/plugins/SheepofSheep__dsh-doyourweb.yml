@@ -1,0 +1,6 @@
+url: https://github.com/SheepofSheep/dsh-doyourweb
+name: SheepofSheep/dsh-doyourweb
+category: browser
+description:
+  en: 'Reference already-open Chrome and Edge tabs with @ mentions in DSH; reuse login state to read pages, run batched actions, take screenshots and call WebMCP tools on supported pages through a paired browser extension.'
+  zh: '通过 @ 引用已打开的 Chrome / Edge 标签页，配合浏览器扩展复用登录状态，读取页面、批量操作、截图，并在页面支持时调用 WebMCP 工具。'

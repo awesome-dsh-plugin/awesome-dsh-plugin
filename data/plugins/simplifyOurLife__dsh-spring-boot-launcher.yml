@@ -1,0 +1,6 @@
+url: https://github.com/simplifyOurLife/dsh-spring-boot-launcher
+name: simplifyOurLife/dsh-spring-boot-launcher
+category: dev
+description:
+  en: Launch and manage local Maven-based Spring Boot applications on Windows, with service controls and searchable logs in the DSH web interface.
+  zh: 在 Windows 上启动和管理本地 Maven Spring Boot 应用，并在 DSH Web 界面提供服务控制与日志搜索。

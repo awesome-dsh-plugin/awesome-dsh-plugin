@@ -1,0 +1,6 @@
+url: https://github.com/KIDLi1412/dsh-session-cost
+name: KIDLi1412/dsh-session-cost
+category: usage
+description:
+  en: Session cost estimate in a status bar at the bottom of the conversation (per-model token pricing, CNY) plus the live DeepSeek account balance via the official balance API.
+  zh: 对话底部的会话费用状态栏：按模型逐条计价估算 Token 费用（CNY），并实时显示 DeepSeek 账户余额（官方余额接口）。

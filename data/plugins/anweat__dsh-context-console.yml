@@ -1,0 +1,6 @@
+url: https://github.com/anweat/dsh-context-console
+name: anweat/dsh-context-console
+category: session
+description:
+  en: 'Inspect and simulate DSH context consumption with trajectory and inventory views, and create, inject, import, or safely repair session messages through the integrated Message Forge.'
+  zh: 上下文控制台：通过轨迹墙与库存视图检查并模拟 DSH 上下文消费，并由内置消息锻造台创建、注入、导入或安全修复会话消息。

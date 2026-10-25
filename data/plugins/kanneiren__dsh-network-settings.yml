@@ -1,0 +1,7 @@
+url: https://github.com/kanneiren/dsh-network-settings
+name: kanneiren/dsh-network-settings
+category: dev
+description:
+  en: Visualize the DSH process network path on Windows or WSL with layered DNS/TCP/TLS/HTTP probes, detect stale proxy configuration, and apply snapshot-guarded repairs.
+  zh: 可视化 DSH 进程在 Windows 或 WSL 上的网络链路（DNS/TCP/TLS/HTTP 分层探测），检测失效的代理配置，并提供带快照回滚的安全修复。
+tarball: https://github.com/kanneiren/dsh-network-settings/releases/download/v0.2.1/dsh-network-settings-0.2.1.tgz

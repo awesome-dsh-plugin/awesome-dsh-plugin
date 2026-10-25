@@ -1,0 +1,6 @@
+url: https://github.com/AIcivilization/dsh-model
+name: AIcivilization/dsh-model
+category: model
+description:
+  en: 'One authenticated OpenAI-compatible endpoint (built on CLIProxyAPI) for dsh and other tools: gathers WorkBuddy, OpenCode Zen, local Ollama / LM Studio and CLI subscriptions such as Codex and Kimi, signs in from the dsh page without installing their CLIs, and syncs the picked models into dsh grouped by source. The settings page has a switch per source with free / paid tags, plan usage, API keys with 24-hour stats, per-source model picking, and update / uninstall. Runs on macOS, Linux (including next to dsh-vps) and Windows.'
+  zh: '为 dsh 和其他软件提供一个带鉴权的 OpenAI 兼容地址（基于 CLIProxyAPI）：汇集 WorkBuddy、OpenCode Zen、本机 Ollama / LM Studio，以及 Codex、Kimi 等 CLI 订阅；在 dsh 页面上登录，不用装各家 CLI；挑选的模型按来源分组同步进 dsh。设置页提供每个来源的开关和免费 / 付费标签、套餐用量、带 24 小时统计的 API key、按来源挑选模型，以及更新和卸载。支持 macOS、Linux（含与 dsh-vps 同机部署）和 Windows。'

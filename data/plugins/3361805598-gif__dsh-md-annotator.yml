@@ -1,0 +1,7 @@
+url: https://github.com/3361805598-gif/dsh-md-annotator
+name: 3361805598-gif/dsh-md-annotator
+category: docs
+description:
+  en: Markdown sidebar preview and source editor for dsh-better-sidebar, with block- and text-range annotations that can be sent to the conversation as structured revision requests.
+  zh: 面向 dsh-better-sidebar 扩展的 Markdown 侧边栏预览与源码编辑器，支持块级和文本选区批注，并可将批注作为结构化修改请求发送到对话框。
+tarball: https://github.com/3361805598-gif/dsh-md-annotator/releases/download/v0.6.0/dsh-md-annotator-0.6.0.tgz

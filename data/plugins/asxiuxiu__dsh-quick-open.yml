@@ -1,0 +1,6 @@
+url: https://github.com/asxiuxiu/dsh-quick-open
+name: asxiuxiu/dsh-quick-open
+category: ui
+description:
+  en: 'Quick-open palette for the Web GUI: Ctrl+P fuzzy-searches an in-memory index of the session workspace (about 51k entries, median query 5 ms) with per-segment path anchoring, dir: and file: prefixes, Tab directory drilling and :line jumps, opens the picked file in the native right sidebar, and drops a file reference into the conversation draft with Ctrl+Enter. Also adds in-file find (Ctrl+F) and a selection-to-reference action to the built-in file preview.'
+  zh: 'Web GUI 的快速打开面板：Ctrl+P 在会话工作区的内存索引上做模糊检索（约 5.1 万条目，查询中位数 5 ms），支持逐段路径锚定、dir: 与 file: 前缀、Tab 目录下钻与 :行号 跳转；选中文件走 DSH 原生右栏打开，Ctrl+Enter 把文件引用放进会话草稿。另为内置文件预览补上文件内查找（Ctrl+F）与选中加入会话。'

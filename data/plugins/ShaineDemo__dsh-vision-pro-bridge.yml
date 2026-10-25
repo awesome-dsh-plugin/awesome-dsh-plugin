@@ -1,0 +1,6 @@
+url: https://github.com/ShaineDemo/dsh-vision-pro-bridge
+name: ShaineDemo/dsh-vision-pro-bridge
+category: vision
+description:
+  en: 'Vision bridge for text-only DeepSeek models: transcribes attached images with deepseek-v4-flash-vision-exp before they reach deepseek-v4-pro, with no third-party dependencies.'
+  zh: '视觉桥：贴图先经 deepseek-v4-flash-vision-exp 转写为文字，再交给纯文本的 deepseek-v4-pro 回答，零第三方依赖。'

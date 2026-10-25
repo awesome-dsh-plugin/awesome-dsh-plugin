@@ -1,0 +1,6 @@
+url: https://github.com/ChuanTianML/prompt-for-me
+name: ChuanTianML/prompt-for-me
+category: ui
+description:
+  en: Context-aware next-message suggestions in the DSH composer, with repeated Trigger cycling and explicit user review before sending.
+  zh: DSH 输入框的上下文感知下一句建议：重复 Trigger 可持续换一条，发送前始终由用户确认。

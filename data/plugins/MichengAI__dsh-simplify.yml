@@ -1,0 +1,6 @@
+url: https://github.com/MichengAI/dsh-simplify
+name: MichengAI/dsh-simplify
+category: dev
+description:
+  en: 'Adds a /simplify command that asks the agent to simplify code within a selected Git change scope, including staged changes, commits, and untracked files.'
+  zh: '提供 /simplify 命令，让 Agent 在选定的 Git 变更范围内简化代码，支持暂存变更、提交及未跟踪文件。'

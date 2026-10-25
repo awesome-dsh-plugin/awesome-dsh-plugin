@@ -1,0 +1,6 @@
+url: https://github.com/liushuchang-2012/dsh-skin-liquid-glass
+name: liushuchang-2012/dsh-skin-liquid-glass
+category: theme
+description:
+  en: 'iOS 26 liquid-glass skin: a frosted glass sheet over a neutral mesh wallpaper, system blue as the only accent, with separate light and dark palettes. Installs as a DSH client plugin (165 KB, no dependencies) that injects its own CSS, wallpaper and token overrides.'
+  zh: 'iOS 26 液态玻璃皮肤：整扇窗口是一块盖在中性灰场壁纸上的磨砂玻璃，唯一强调色是系统蓝，浅色/深色两套配色。以 DSH 客户端插件形式安装（165 KB、零依赖），自行注入 CSS、壁纸与 token 覆盖。'

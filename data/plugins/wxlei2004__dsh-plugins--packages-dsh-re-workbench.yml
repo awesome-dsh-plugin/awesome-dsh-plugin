@@ -1,0 +1,15 @@
+# dshmarket submission entry for dsh-re-workbench.
+# Copy to <fork-of-awesome-dsh-plugin>/data/plugins/wxlei2004__dsh-plugins--packages-dsh-re-workbench.yml
+# and open a PR against https://github.com/awesome-dsh-plugin/awesome-dsh-plugin.
+#
+# Rules enforced by CI (pr-gate.yml / check-submission.mjs):
+#   - repo must contain a dsh.bundle declaration (package.json has dsh.bundle.patch)
+#   - repo must be >= 1 day old
+#   - filename must equal slugFor(url): <owner>__<repo>--<subpath-with-dashes>.yml
+#   - only keys: url, name, category, description, tarball
+url: https://github.com/wxlei2004/dsh-plugins/tree/main/packages/dsh-re-workbench
+name: wxlei2004/dsh-plugins#dsh-re-workbench
+category: security
+description:
+  en: "Reverse-engineering workbench: bridges a local IDA Pro into DeepSeek Harness through @deepseek-ai/dsh-mcp-client, exposing the ida-pro-mcp toolset (decompile, xref, rename, comment) as mcp__ida__* tools. Auto-selects idalib headless mode (analyses a binary in-process, no IDA GUI) or GUI mode (connects to the IDA plugin RPC on port 13337). Adds re_check, re_open and re_status; the bundled MCP server is a zero-dependency stdio proxy usable from any MCP client."
+  zh: "逆向分析工作台：通过 @deepseek-ai/dsh-mcp-client 把本机 IDA Pro 桥接进 DSH，将 ida-pro-mcp 工具集（反编译、xref、重命名、注释）以 mcp__ida__* 注册给模型。自动选择 idalib 无头模式（进程内分析二进制，无需打开 IDA GUI）或 GUI 模式（连接 IDA 插件 RPC，默认 13337 端口）。附带 re_check、re_open、re_status 三个工具；内置 MCP server 为零依赖 stdio 代理，任意 MCP 客户端可直接挂载。"

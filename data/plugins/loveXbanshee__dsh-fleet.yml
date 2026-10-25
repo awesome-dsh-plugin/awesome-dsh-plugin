@@ -1,0 +1,6 @@
+url: https://github.com/loveXbanshee/dsh-fleet
+name: loveXbanshee/dsh-fleet
+category: remote
+description:
+  en: 'Fleet console for DeepSeek Harness: one local dsh page manages many remote dsh machines — live idle/running status, in-place switching without new tabs, keep-alive iframes, cross-device session reading, one-click refresh/restart, and a controller/managed role split.'
+  zh: 'DeepSeek Harness 多机指挥台：用一个本地 dsh 页面管理多台远程 dsh——实时查看远程忙闲、免切标签页原地切换与使用、远程页面保活秒开、跨设备读取历史会话、一键刷新/重启，并支持控制端/被控端角色。'

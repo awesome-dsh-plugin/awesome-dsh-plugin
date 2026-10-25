@@ -1,0 +1,7 @@
+url: https://github.com/jidekaixin2dian/dsh-team-flow
+name: jidekaixin2dian/dsh-team-flow
+category: workflow
+tarball: https://github.com/jidekaixin2dian/dsh-team-flow/releases/download/v0.2.0-alpha.4/dsh-team-flow-continuous-0.2.0-alpha.4.tgz
+description:
+  en: 'Alpha Agent Teams plugin for DSH 0.2.0-rc.2 and newer that lets same-session user Steer end the Lead’s current wait_agent call while teammates continue, with native message delivery and Node PTC continuation.'
+  zh: '适用于 DSH 0.2.0-rc.2 起版本的 Agent Teams 预览插件，让同会话用户 Steer 结束主代理当前的 wait_agent 等待，队友继续工作，并保留原生消息领取与 Node PTC 后续执行。'

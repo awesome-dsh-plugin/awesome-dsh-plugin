@@ -1,0 +1,6 @@
+url: https://github.com/zoahdev/dsh-cn-boot
+name: zoahdev/dsh-cn-boot
+category: dev
+description:
+  en: 'China-network bootstrap for dsh: probes npm/npmmirror/GitHub/HuggingFace/Gitee and local proxies, reads registry config, recommends mirrors/proxy, and generates a PowerShell + bash bootstrap script. Read-only by default; apply is explicit. CLI plus an agent-callable cn_boot tool.'
+  zh: 'dsh 国内网络引导：探测 npm/npmmirror/GitHub/HuggingFace/Gitee 与本地代理，读取注册表配置，推荐镜像/代理并生成 PowerShell + bash 引导脚本。默认只读，apply 显式。含 CLI 与 agent 可调用 cn_boot 工具。'

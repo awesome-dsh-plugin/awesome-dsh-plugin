@@ -1,0 +1,6 @@
+url: https://github.com/loongsuite/dsh-plugin
+name: loongsuite/dsh-plugin
+category: dev
+description:
+  en: Converts session, agent-loop, LLM, and tool lifecycle events into OpenTelemetry GenAI traces and metrics, exported over standard OTLP/HTTP to any compatible backend, with content capture off by default.
+  zh: 将会话、Agent 循环、LLM 与工具生命周期事件转换为 OpenTelemetry GenAI 调用链与指标，通过标准 OTLP/HTTP 导出到任意兼容后端，正文采集默认关闭。

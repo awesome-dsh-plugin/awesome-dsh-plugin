@@ -1,0 +1,7 @@
+url: https://github.com/Zian-anson/dsh-prompt-seed
+name: Zian-anson/dsh-prompt-seed
+category: ui
+tarball: https://github.com/Zian-anson/dsh-prompt-seed/releases/download/v0.9.3/dsh-prompt-seed-0.9.3.tgz
+description:
+  en: 'Elaborates a one-line seed into a concrete, executable prompt behind a semantic fidelity gate (five violation classes, targeted repair, unconditional re-audit); already-precise instructions pass through near-unchanged; bare signals like a number infer their pending anchor from the conversation or refuse to guess; short directives expand inside a degree contract; conversational messages get typo-only touch-up; one-click revert with version history.'
+  zh: '把一行种子展开成具体可执行的 prompt，语义保真闸门做五类越线判定、定向修复、无条件复核；已精确的指令近原样通过；纯信号（如数字）按上下文锚点推断、推不出就明说；短指令在度契约内有度展开；会话消息只做错字级轻润色；一键恢复原文，带版本历史。'

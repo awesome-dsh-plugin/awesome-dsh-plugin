@@ -1,0 +1,6 @@
+url: https://github.com/drshy-org/lightroom-py
+name: drshy-org/lightroom-py
+category: tools
+description:
+  en: 'Adobe Lightroom Classic as native dsh tools through the lightroom-py MCP server: read the catalog, apply develop settings and presets, export JPEG/TIFF/PSD/DNG, and write ratings, labels, keywords and IPTC — 15 tools driving the Lightroom Classic installed on the local machine, no cloud round-trip; the Python package is on PyPI and the Lightroom plugin installs with one command.'
+  zh: '通过 lightroom-py MCP 服务器把 Adobe Lightroom Classic 接入为 dsh 原生工具：读取目录、应用 develop 设置与预设、导出 JPEG/TIFF/PSD/DNG、写入星级/色标/关键词/IPTC——15 个工具，直接驱动本机安装的 Lightroom Classic，不经云端；Python 包在 PyPI 上，Lightroom 插件一条命令安装。'

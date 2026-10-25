@@ -1,0 +1,6 @@
+url: https://github.com/zimai233/dsh-exam-countdown
+name: zimai233/dsh-exam-countdown
+category: tools
+description:
+  en: Query 64 Chinese exams (高考/考研/四六级/CPA/法考…) with rule-aware date math (2nd-Saturday, 1st-Sunday) and countdowns.
+  zh: 查询 64 场中国考试（高考/考研/四六级/CPA/法考…）的规则日期（第二个周六、第一个周日）与倒计时。

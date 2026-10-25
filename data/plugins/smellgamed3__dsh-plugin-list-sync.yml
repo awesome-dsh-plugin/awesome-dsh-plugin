@@ -1,0 +1,6 @@
+url: https://github.com/smellgamed3/dsh-plugin-list-sync
+name: smellgamed3/dsh-plugin-list-sync
+category: workflow
+description:
+  en: Synchronizes DeepSeek Harness third-party plugin lists through S3-compatible storage with diff preview, local snapshots, rollback, and optional LLM provider configuration sync.
+  zh: 通过兼容 S3 的对象存储同步 DeepSeek Harness 第三方插件列表，提供差异预览、本地快照、回滚与可选的 LLM provider 配置同步。

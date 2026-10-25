@@ -1,0 +1,6 @@
+url: https://github.com/dennisrongo/dsh-plugins/tree/main/plugins/dsh-weather
+name: dennisrongo/dsh-plugins#dsh-weather
+category: ui
+description:
+  en: 'Draggable weather bar in the shell overlay with forecast and geocoding from Open-Meteo; the position persists across sessions.'
+  zh: 'shell 浮层中的可拖动天气条，预报与地理编码来自 Open-Meteo；位置跨会话持久保存。'

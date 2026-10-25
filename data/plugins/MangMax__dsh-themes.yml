@@ -1,0 +1,6 @@
+url: https://github.com/MangMax/dsh-themes
+name: MangMax/dsh-themes
+category: theme
+description:
+  en: 'Look & theme plugin for the DSH Web UI: built-in palettes, light/dark/follow-system appearance modes, Open VSX theme search & install, and VS Code theme import with a persisted theme library.'
+  zh: DSH Web UI 外观与主题插件：内置调色板、明 / 暗 / 跟随系统外观模式、Open VSX 主题搜索导入与 VS Code 主题导入，主题库持久化。

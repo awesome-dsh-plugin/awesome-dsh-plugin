@@ -1,0 +1,6 @@
+url: https://github.com/GodCC6/dsh-updater
+name: GodCC6/dsh-updater
+category: dev
+description:
+  en: Auto-update plugin for DeepSeek Harness — checks and updates a git-checkout or npm-global dsh plus integration repos, with ff-only pulls, automatic rollback, cancel, and an optional idle-aware auto-apply mode.
+  zh: DeepSeek Harness 自动更新插件：检查并更新 git checkout 或 npm 全局形态的 dsh 本体与 integrations 仓，仅快进合并、失败自动回滚、可随时取消，可选空闲感知自动应用。

@@ -1,0 +1,6 @@
+url: https://github.com/rj-jiangyichen/dsh-rules
+name: rj-jiangyichen/dsh-rules
+category: dev
+description:
+  en: 'Claude Code rules.md-style rule prompts: activate rule markdown files by glob-matching the files an agent reads or edits, with prompt injection and ordering support.'
+  zh: 类 Claude Code rules.md 的规则提示词：按智能体读取或编辑文件的 glob 匹配自动激活规则文档，支持提示词注入与排序。

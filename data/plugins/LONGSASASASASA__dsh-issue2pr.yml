@@ -1,0 +1,6 @@
+url: https://github.com/LONGSASASASASA/dsh-issue2pr
+name: LONGSASASASASA/dsh-issue2pr
+category: workflow
+description:
+  zh: "Issue-to-PR 可验证交付链：11 阶段流水线（分析→检索→理解→假设→规划→实现→补丁→测试→评审→归因→PR 构建），4 道人工复核闸门，GitHub/GitLab/CodeArts 凭据连接，5 页工作台与可拖拽智能助手浮窗。"
+  en: "Verifiable issue-to-PR delivery chain: an 11-stage pipeline (analysis, search, code understanding, hypothesis, planning, implementation, patch ledger, tests, review, failure classification, PR build) with 4 human review gates, GitHub/GitLab/CodeArts credential connections, a 5-page workbench and a draggable AI assistant panel."

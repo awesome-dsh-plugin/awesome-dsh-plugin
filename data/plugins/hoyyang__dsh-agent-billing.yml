@@ -1,0 +1,6 @@
+url: https://github.com/hoyyang/dsh-agent-billing
+name: hoyyang/dsh-agent-billing
+category: usage
+description:
+  en: 'Agent billing and usage observability for dsh web: session-log direct-scan recording (zstd, per-event timestamps, watermark + lastSeq double dedup), multi-account rate profiles per provider and model, per-window live badge reading the window session id via React fiber, full glassmorphism dashboard with 14-day sparkline, budget alerts, relay-station balance queries and a 332-model official price library.'
+  zh: 'dsh web 的 Agent 计费与用量可观测：会话日志直扫记账（zstd 解压、逐事件时间戳入账、水位+lastSeq 双防双计）、多账号按 provider/模型费率档案、per-window 实时徽标（React fiber 读窗口会话 id，切会话即切账单）、玻璃拟态面板（14 天趋势/预算告警/中转站余额/332 模型官方价库）。'

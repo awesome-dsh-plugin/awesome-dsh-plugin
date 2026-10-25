@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-meter
+name: kouyichi/dsh-plugins#dsh-meter
+category: tools
+description:
+  en: 'Token usage and cost metering for dsh: per-session and aggregate statistics with configurable pricing and reports.'
+  zh: 'dsh 用量计量：会话级与汇总 token 统计、可配置计价与报告。'

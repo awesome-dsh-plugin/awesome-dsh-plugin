@@ -1,0 +1,6 @@
+url: https://github.com/Andor-Z/dsh-turn-outline
+name: Andor-Z/dsh-turn-outline
+category: ui
+description:
+  en: Adds a sidebar tab that folds a session into user turns (input, tool steps, output) with one-click jump back into the conversation.
+  zh: 在侧边栏按用户轮次折叠会话（输入、工具步骤、输出），一键跳回对话原位。

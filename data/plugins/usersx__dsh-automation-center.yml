@@ -1,0 +1,6 @@
+url: https://github.com/usersx/dsh-automation-center
+name: usersx/dsh-automation-center
+category: workflow
+description:
+  en: Schedules workspace Agent runs in fresh Result Sessions with persistent audit history, using a stock DSH Conversation tab or a global Shell page when its slots are available.
+  zh: 面向 Workspace 调度 Agent 任务，每次运行创建全新 Result Session 并持久保留审计历史；原版 DSH 使用会话标签，存在对应 Slot 时使用全局 Shell 页面。

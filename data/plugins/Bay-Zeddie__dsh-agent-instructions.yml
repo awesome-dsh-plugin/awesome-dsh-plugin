@@ -1,0 +1,6 @@
+url: https://github.com/Bay-Zeddie/dsh-agent-instructions
+name: Bay-Zeddie/dsh-agent-instructions
+category: identity
+description:
+  en: "Panel to edit dsh's native AGENTS.md from the web settings page: every layer in the instruction chain is clickable, three activation scopes, and a visual budget meter."
+  zh: "在 dsh Web 设置页里编辑原生 AGENTS.md 的面板：指令链上每层可点选编辑，三种生效范围，并可视化官方指令预算。"

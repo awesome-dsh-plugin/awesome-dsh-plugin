@@ -1,0 +1,6 @@
+url: https://github.com/jockiller/dsh-translator
+name: jockiller/dsh-translator
+category: tools
+description:
+  en: 'Input-box floating translation widget for DSH: translate drafts via session model, Zhipu GLM, or custom endpoints, with preview/replace/append, connectivity testing, and recent history.'
+  zh: 'DSH 输入框悬浮快捷翻译挂件：支持当前会话模型、智谱 GLM 与自定义端点，提供预览/替换/追加、连通性测试及最近历史找回。'

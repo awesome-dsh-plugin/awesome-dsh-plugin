@@ -1,0 +1,6 @@
+url: https://github.com/Ansonfishing/dsh-cap-profile
+name: Ansonfishing/dsh-cap-profile
+category: usage
+description:
+  en: 'Per-model capability profiling for DSH: turns local session history into per-model dashboards of session counts, tool usage, error rates, and top error signatures, with time-range filters and multi-model comparison.'
+  zh: 'DSH 按模型的能力画像:把本地会话历史变成逐模型的会话数、工具使用、错误率与 Top 错误签名看板,支持时间范围过滤与多模型对比。'

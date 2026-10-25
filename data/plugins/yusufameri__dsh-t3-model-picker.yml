@@ -1,0 +1,7 @@
+url: https://github.com/yusufameri/dsh-t3-model-picker
+name: yusufameri/dsh-t3-model-picker
+category: ui
+tarball: https://github.com/yusufameri/dsh-t3-model-picker/releases/latest/download/dsh-t3-model-picker.tgz
+description:
+  en: 'A port of the T3 Code model picker into the composer: a provider rail, search results grouped under provider headings, favorites kept in the browser, unavailable-provider badges, and Cmd/Ctrl+1..9 jump shortcuts for the first nine rows of the visible list.'
+  zh: '把 T3 Code 的模型选择器移植到 DSH 输入框：提供方侧栏、按提供方分组的搜索结果、浏览器本地收藏、不可用提供方标记，以及用 Cmd/Ctrl+1..9 直接选中可见列表的前九行。'

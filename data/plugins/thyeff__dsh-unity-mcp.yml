@@ -1,0 +1,7 @@
+url: https://github.com/thyeff/dsh-unity-mcp
+name: thyeff/dsh-unity-mcp
+category: tools
+tarball: https://github.com/thyeff/dsh-unity-mcp/releases/download/v1.0.0/dsh-unity-mcp-1.0.0.tgz
+description:
+  en: 'One-shot mcp-unity integration for DeepSeek Harness: bundled MCP server with zero manual config lets the agent drive the Unity editor through 34 tools - scenes, game objects, transforms, materials, prefabs, menu items, play mode, tests and console logs - with auto-reconnect.'
+  zh: DeepSeek Harness 一键接入 mcp-unity：内置 MCP 服务端，零配置让 Agent 直接操控 Unity 编辑器——场景、GameObject、变换、材质、Prefab、菜单、播放模式、测试与控制台日志等 34 个工具，支持自动重连。完整中文文档。

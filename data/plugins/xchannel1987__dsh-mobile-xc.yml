@@ -1,0 +1,6 @@
+url: https://github.com/xchannel1987/dsh-mobile-xc
+name: xchannel1987/dsh-mobile-xc
+category: remote
+description:
+  en: "Mobile UI adaptation plugin for DeepSeek Harness - overlay drawer navigation, glassmorphism design, safe-area coverage, PWA support."
+  zh: "DSH 移动端 UI 适配插件 - Overlay 抽屉导航、玻璃卡片设计、Safe Area 全覆盖、PWA 支持。"

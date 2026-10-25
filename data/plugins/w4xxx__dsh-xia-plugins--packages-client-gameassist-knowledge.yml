@@ -1,0 +1,6 @@
+url: https://github.com/w4xxx/dsh-xia-plugins/tree/main/packages/client-gameassist-knowledge
+name: w4xxx/dsh-xia-plugins#packages/client-gameassist-knowledge
+category: ui
+description:
+  en: 'Knowledge-base browser panel: tree browsing plus drag-to-cite (path-only or full content) into the composer.'
+  zh: '知识库浏览器面板：目录浏览，支持把节点拖进输入框生成引用（仅路径或附全文）。'

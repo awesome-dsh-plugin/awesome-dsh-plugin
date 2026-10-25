@@ -1,0 +1,6 @@
+url: https://github.com/1321928757/dsh-prompt-polish
+name: 1321928757/dsh-prompt-polish
+category: ui
+description:
+  en: 'Input-bar prompt optimizer: rewrites drafts with 6 strategies × 3 languages plus custom instructions, optional goal/todo/compaction-summary/tool-result and chat context, a confirm dialog, last-5 history and three-tier settings persistence.'
+  zh: 输入栏提示词优化：6 种策略 × 3 种语言与自定义指令重写草稿，可选携带目标、任务清单、压缩摘要、工具结果与聊天上下文，附结果确认弹窗、最近 5 次历史与三级设置持久化。

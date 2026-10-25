@@ -1,0 +1,6 @@
+url: https://github.com/mux9056-bot/dsh-theme
+name: mux9056-bot/dsh-theme
+category: theme
+description:
+  en: 'Theme pack for the DSH Web UI: 30 drop-in CSS themes with light and dark variants, integrated into Settings → General with a programmatic API.'
+  zh: 'DSH Web UI 主题包：30 款即插即用的 CSS 主题，每款含浅色与深色变体，集成于「设置 → 通用」，并提供程序化 API。'

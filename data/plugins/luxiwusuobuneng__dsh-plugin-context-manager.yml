@@ -1,0 +1,6 @@
+url: https://github.com/luxiwusuobuneng/dsh-plugin-context-manager
+name: luxiwusuobuneng/dsh-plugin-context-manager
+category: memory
+description:
+  en: 'Context manager for DeepSeek Harness: auto-summarizes every turn into priority-sorted records, injects them plus pinned cross-session notes and custom text into each model request, and folds any-size real conversation ranges into summaries to save tokens. Persistent and restart-safe. NOTE: manual multi-step install — copy the three package folders into profiles/node_modules and add the provided cordis.patch.yml rows, then restart DSH; not a standard one-command install.'
+  zh: DeepSeek Harness 上下文管理：每轮对话自动总结为记录并按优先级排序注入，⭐ 置顶记录跨会话继承，自定义文本每轮注入；真实对话任意范围折叠成摘要真省 token，全状态持久化重启不丢。注意：非标准一键安装——需手动将三个包目录复制到 profiles/node_modules、粘贴 cordis.patch.yml 接线并重启 DSH。

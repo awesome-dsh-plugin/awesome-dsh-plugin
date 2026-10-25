@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-agent-loop-guard
+name: GooDAnDReaDY/dsh-agent-loop-guard
+category: security
+description:
+  en: "Fail-closed runtime tool-call loop guard for DeepSeek Harness."
+  zh: "为 DeepSeek Harness 提供故障关闭式运行时工具调用循环防护。"

@@ -1,0 +1,6 @@
+url: https://github.com/STARDUSTLC666/dsh-dream
+name: STARDUSTLC666/dsh-dream
+category: agi
+description:
+  en: 'Experience memory and reflection for DSH agents: automatically extracts candidate lessons after tasks and recalls user-reviewed lessons in relevant later tasks. Supports source provenance, project-scoped retrieval, conflict handling, usage feedback and expiry review; capture and recall have separate controls, and writing lessons to AGENTS.md requires preview and explicit application.'
+  zh: DSH 智能体经验记忆与反思插件：任务后自动整理候选经验，经用户审阅采纳后在相关任务中自动召回。支持来源追溯、按项目检索、冲突处理、使用反馈和到期复核；整理与召回可分别开关，写入 AGENTS.md 需预览并手动应用。

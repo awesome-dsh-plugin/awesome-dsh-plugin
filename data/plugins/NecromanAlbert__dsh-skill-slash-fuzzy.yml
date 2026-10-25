@@ -1,0 +1,6 @@
+url: https://github.com/NecromanAlbert/dsh-skill-slash-fuzzy
+name: NecromanAlbert/dsh-skill-slash-fuzzy
+category: skill
+description:
+  en: Resolves unique kebab-case skill substrings in slash tokens, so /oneshot can load game-package-oneshot.
+  zh: 用唯一 kebab 片段解析斜杠 skill，例如 /oneshot 可加载 game-package-oneshot。

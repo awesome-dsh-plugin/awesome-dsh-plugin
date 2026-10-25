@@ -1,0 +1,6 @@
+url: https://github.com/hajimimaodie8/DSH-Session-Sync
+name: hajimimaodie8/DSH-Session-Sync
+category: session
+description:
+  en: Bidirectionally synchronize sessions, workspaces, settings and plugins between the DSH web instance and the DSH Desktop instance.
+  zh: 双向同步网页版与 DSH Desktop 桌面版之间的会话、工作区、设置与插件。

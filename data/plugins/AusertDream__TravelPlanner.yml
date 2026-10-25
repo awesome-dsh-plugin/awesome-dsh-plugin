@@ -1,0 +1,6 @@
+url: https://github.com/AusertDream/TravelPlanner
+name: AusertDream/TravelPlanner
+category: tools
+description:
+  en: 'Trip-planning agent preset for mainland China that answers in Chinese: queries 12306 train availability, Fliggy and Tuniu flight and hotel prices, and real Amap transit routes, checks closures and weather, and delivers a single offline HTML roadbook with draggable maps, three hotel price tiers and an itemized budget. Ships 9 skills, an environment doctor that walks users through missing API keys, and a patch for the 12306 MCP server; it plans and queries but never books or pays.'
+  zh: '中文旅行规划 agent 预设「旅行规划助手」（面向国内行程）：实时查 12306 余票、飞猪 / 途牛机票与酒店价格、高德真实路线，核实闭馆与天气，交付一份可离线打开的单文件 HTML 路书（可拖动地图、三档酒店、分项预算）；附 9 个技能、引导用户补齐 Key 的环境自检，以及 12306 MCP 的预售期补丁；只规划查询，不代订代付。'

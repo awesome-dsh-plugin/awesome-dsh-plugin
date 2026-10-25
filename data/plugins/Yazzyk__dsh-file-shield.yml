@@ -1,0 +1,6 @@
+url: https://github.com/Yazzyk/dsh-file-shield
+name: Yazzyk/dsh-file-shield
+category: security
+description:
+  en: 'Blocks an agent from reading, searching, writing, or editing chosen files and directories, keeping their contents out of the conversation — including sensitive-word files whose text can make later provider requests fail with a 400. Rules are picked from a file/directory browser on the plugin page.'
+  zh: '屏蔽 agent 对指定文件或目录的读取、搜索、写入与编辑，使其内容不进入对话——含敏感词的文件也在其中，避免它们的文字让之后的 provider 请求以 400 失败。规则在插件页面上点选。'

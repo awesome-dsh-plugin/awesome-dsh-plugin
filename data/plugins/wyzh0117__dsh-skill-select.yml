@@ -1,0 +1,6 @@
+url: https://github.com/wyzh0117/dsh-skill-select
+name: wyzh0117/dsh-skill-select
+category: skill
+description:
+  en: 'Sidebar skill picker: lists installed skills with Global and repo badges, session checks plus persistent auto-start, optional Guard, Codex/Grok/Hermes user skills, and /skill injection.'
+  zh: 侧边栏技能选择器：列出已安装技能并标注 Global 与所属 repo，支持本会话勾选与常驻默认启动、可选 Guard、Codex/Grok/Hermes 用户技能，以及 /skill 注入。

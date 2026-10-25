@@ -1,0 +1,6 @@
+url: https://github.com/yeastcloud/dsh-anchor
+name: yeastcloud/dsh-anchor
+category: session
+description:
+  en: 'Session instruction anchor for DeepSeek Harness: the first step of a new session injects a freely composed instruction block as a plugin-sourced message, and it is re-anchored after a summarizing compaction, every N turns, or when metered context pressure crosses a threshold. An /anchor command re-anchors on demand without a model call; a settings page manages the paged preset library, injection order, re-anchor source and character limits.'
+  zh: 'DSH 会话指令定锚：新会话的第一个 step 把自由组合的指令块作为插件来源消息注入，之后在完成压缩、跨过设定轮数、或计量到的上下文压力越过阈值时重锚。`/anchor` 命令可按需定锚且不触发模型调用；设置页管理分页预设库、注入顺序、重锚来源与字数上限。'

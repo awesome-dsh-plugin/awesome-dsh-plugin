@@ -1,0 +1,7 @@
+url: https://github.com/gorban/dsh-job-stop
+name: gorban/dsh-job-stop
+category: ui
+tarball: https://github.com/gorban/dsh-job-stop/releases/latest/download/dsh-job-stop.tgz
+description:
+  en: 'Stop a running background job from the session-header job list, with a confirmation dialog that restates the full command.'
+  zh: '在会话头部的后台任务列表里停止正在运行的任务，确认弹窗会再次显示完整命令。'

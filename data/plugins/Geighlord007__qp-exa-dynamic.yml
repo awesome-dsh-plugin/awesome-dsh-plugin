@@ -1,0 +1,6 @@
+url: https://github.com/Geighlord007/qp-exa-dynamic
+name: Geighlord007/qp-exa-dynamic
+category: browser
+description:
+  en: 'Exa-backed web search provider for the ctx.web seam, with Exa Dynamic Highlights on by default and the Exa-Beta header that setting requires; exposes all eight Exa retrieval types, adds an /exa command to change highlights, search type and result count at runtime, and registers an exa_search tool that takes its own result count.'
+  zh: '基于 Exa 的网页搜索提供方：默认开启 Exa Dynamic Highlights（并带上该设置必需的 Exa-Beta 请求头），开放全部 8 种 Exa 检索类型，提供 /exa 命令在运行时改高亮、检索类型与返回条数，并注册一个可自行指定条数的 exa_search 工具。'

@@ -1,0 +1,6 @@
+url: https://github.com/STARDUSTLC666/dsh-remotion
+name: STARDUSTLC666/dsh-remotion
+category: skill
+description:
+  en: 'Twelve official Remotion skills synced from the official upstream (programmatic video with React: animation, audio, captions, 3D, maps, charts, render, Studio), plus a bundled-resource health check.'
+  zh: 'Remotion 官方 12 技能：React 编程式视频（动画/音频/字幕/3D/地图/图表/渲染/Studio），安装即用，附随包资源完整性自检。'

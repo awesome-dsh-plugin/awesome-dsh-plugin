@@ -1,0 +1,7 @@
+url: https://github.com/hasan-aghayev/dsh-task-orchestrator
+tarball: https://github.com/hasan-aghayev/dsh-task-orchestrator/releases/download/v1.0.5/dsh-task-orchestrator-1.0.5.tgz
+name: hasan-aghayev/dsh-task-orchestrator
+category: workflow
+description:
+  en: Automatically orchestrates complex DeepSeek Harness requests. It detects when delegation is useful, builds a dependency-aware plan, assigns bounded researcher, architect, backend, frontend, tester, and documentation workers, collects structured evidence, and sends the results to a final reviewer. The bundle atomically enables the workflow engine and model-facing subagent tools; disabling the plugin disables its complete tool group as well.
+  zh: 自动编排复杂的 DeepSeek Harness 请求：判断任务是否适合委派，创建考虑依赖关系的计划，分配受数量限制的 researcher、architect、backend、frontend、tester 和 documentation worker，收集结构化证据，并将结果交给最终 reviewer。该 bundle 会一起启用工作流引擎和面向模型的 subagent 工具；关闭插件时也会同时关闭完整的工具组。

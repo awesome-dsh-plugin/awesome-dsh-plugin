@@ -1,0 +1,6 @@
+url: https://github.com/1344738825/ai-residue-cleaner
+name: 1344738825/ai-residue-cleaner
+category: tools
+description:
+  en: 'Sweeps AI byproducts (scratch files, backups, logs, caches) into a reversible trash per project, and on project close classifies deliverables, archives reference results and writes a cleanup report.'
+  zh: '把 AI 会话留下的草稿、备份、日志、缓存收进可逆回收站；项目结项时归类成品、归档可引用结果并生成结项清理清单，未结项期间一切保留。'

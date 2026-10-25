@@ -1,0 +1,6 @@
+url: https://github.com/dennisrongo/dsh-plugins/tree/main/plugins/dsh-plan-board
+name: dennisrongo/dsh-plugins#dsh-plan-board
+category: workflow
+description:
+  en: 'Captures every plan the agent presents through exit_plan_mode as markdown under <workspace>/.dsh/plans, opens a review window, and keeps a Plans history tab recording the outcome of each plan.'
+  zh: '将智能体通过 exit_plan_mode 呈现的每个计划捕获为 <workspace>/.dsh/plans 下的 markdown，打开审阅窗口，并以 Plans 历史标签页记录每个计划的结果。'

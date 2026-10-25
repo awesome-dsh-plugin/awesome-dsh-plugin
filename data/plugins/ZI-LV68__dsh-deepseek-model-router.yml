@@ -1,0 +1,9 @@
+# Marketplace entry for dsh-deepseek-model-router.
+# One file per plugin in awesome-dsh-plugin's data/plugins/, named <owner>__<repo>.yml.
+# Keep in sync with the plugin's README; description must be factual, no marketing.
+url: https://github.com/ZI-LV68/dsh-deepseek-model-router
+name: ZI-LV68/dsh-deepseek-model-router
+category: tools
+description:
+  en: 'Auto-switch DeepSeek models: routes every request to the vision model when images are present, to the pro model for complex tasks, and to the fast model otherwise; includes a switch_model tool for manual overrides.'
+  zh: '自动切换 DeepSeek 模型：含图片时走视觉模型，复杂任务走 pro，常规任务走 fast；提供 switch_model 工具手动固定。'

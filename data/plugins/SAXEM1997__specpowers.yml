@@ -1,0 +1,6 @@
+url: https://github.com/SAXEM1997/specpowers
+name: SAXEM1997/specpowers
+category: skill
+description:
+  en: 'Registers six spec-driven + test-driven workflow skills for DeepSeek Harness: OpenSpec spec authoring fused with Superpowers TDD discipline into a Phase 0-4 pipeline with review gates. Zero runtime dependencies.'
+  zh: 为 DeepSeek Harness 注册 6 个 SDD+TDD 工作流技能：把 OpenSpec 规格编写与 Superpowers 测试驱动纪律衔接为带审查 Gate 的 Phase 0-4 流水线，零运行时依赖。

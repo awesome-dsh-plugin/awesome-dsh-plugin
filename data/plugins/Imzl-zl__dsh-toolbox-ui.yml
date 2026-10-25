@@ -1,0 +1,6 @@
+url: https://github.com/Imzl-zl/dsh-toolbox-ui
+name: Imzl-zl/dsh-toolbox-ui
+category: ui
+description:
+  en: "Toolbox panel for the DSH web UI: an MCP manager and a skills manager in one floating panel. MCP: per-server status and transport, add/edit/enable/disable/remove in global and project scopes, each tool's JSON Schema parameters rendered readably, reconnect that rebuilds a shared connection without affecting other sessions, a market of 47 services in 10 categories with search, sorting, a no-key filter and one-click install, and config import from ten other clients' config files with a preview before writing. A project's MCP servers share one connection per (project, serverName) — the first session opens it and the last one closes it — and the panel shows how many sessions are running. Skills: scopes with shadowing, enable/disable, model auto-invocation, and the skillhub.cn market. The project MCP config exports to JSON for backup or sharing, and the panel follows the host's UI language."
+  zh: "DSH 网页的组合面板，一个悬浮面板同时管 MCP 与技能。MCP：查看每个服务器的状态与传输方式，在全局与项目两种作用域下新增/编辑/启停/移除，每个工具的参数 JSON Schema 可读化展开，重连可重建共享连接且不影响其他会话；47 个服务、10 个分类的市场，支持搜索、排序、「只要免密钥」筛选与一键安装；可扫描另外 10 种客户端的配置文件，预览后写入。项目 MCP 按「项目目录 + serverName」共用一份连接：第一个会话建立、最后一个会话释放，面板会标出当前项目有几个会话在运行。技能：作用域与遮蔽、启停、模型自动调用，以及 skillhub.cn 市场。项目 MCP 配置可导出为 JSON 用于备份与分享；面板跟随宿主的界面语言。"

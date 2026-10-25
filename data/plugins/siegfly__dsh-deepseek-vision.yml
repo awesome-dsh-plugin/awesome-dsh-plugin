@@ -1,0 +1,6 @@
+url: https://github.com/siegfly/dsh-deepseek-vision
+name: siegfly/dsh-deepseek-vision
+category: vision
+description:
+  en: 'A vision-language gateway provider route: pasted images are described by a configurable VL model (Qwen-VL by default) before the DeepSeek wire.'
+  zh: 视觉语言网关：注册支持图片输入的 DeepSeek provider 路由，图片先由可配置 VL 模型（默认 Qwen-VL）描述成文字再发送。

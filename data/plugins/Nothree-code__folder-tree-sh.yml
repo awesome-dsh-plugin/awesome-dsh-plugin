@@ -1,0 +1,6 @@
+url: https://github.com/Nothree-code/folder-tree-sh
+name: Nothree-code/folder-tree-sh
+category: ui
+description:
+  en: 'Workspace file tree for the Web UI: multi-tab preview (text/DOCX/PDF/Markdown/CSV/images), inline Markdown editing, a Git changes panel, and file operations (rename/delete/copy/move/create) via context menu.'
+  zh: 工作区文件树插件：多标签预览（文本/DOCX/PDF/Markdown/CSV/图片）、Markdown 内联编辑、Git 变更面板与右键文件操作（重命名/删除/复制/移动/新建）。

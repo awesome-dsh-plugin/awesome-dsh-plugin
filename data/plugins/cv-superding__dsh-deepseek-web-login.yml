@@ -1,0 +1,6 @@
+url: https://github.com/cv-superding/dsh-deepseek-web-login
+name: cv-superding/dsh-deepseek-web-login
+category: model
+description:
+  en: Adds a deepseek-web provider that uses chat.deepseek.com web models in DSH, with browser login capture, PoW request signing, SSE streaming, and prompting-based tool calls.
+  zh: 新增 deepseek-web provider，把 chat.deepseek.com 网页端模型接入 DSH：浏览器登录抓取、PoW 请求签名、SSE 流式传输与基于提示词的工具调用。

@@ -1,0 +1,6 @@
+url: https://github.com/meihaoyidian/life-workbench
+name: meihaoyidian/life-workbench
+category: ui
+description:
+  en: 'Personal workbench panel with an overview dashboard, custom kanban boards, a note pad and a file library, persisted to local JSON by the host.'
+  zh: '个人工作台面板：总览仪表盘、自定义看板、随手记与资料库，数据由 Host 持久化到本地 JSON。'

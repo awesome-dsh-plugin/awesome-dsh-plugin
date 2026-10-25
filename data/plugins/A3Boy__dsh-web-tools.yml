@@ -1,0 +1,6 @@
+url: https://github.com/A3Boy/dsh-web-tools
+name: A3Boy/dsh-web-tools
+category: browser
+description:
+  en: 'Unified multi-provider web search and fetch: BYOK key pools, health monitoring, and deterministic fallback.'
+  zh: '统一的多供应商网络搜索与抓取：多 Key 轮询容灾、用量与健康监控、原生设置面板及搜索模式。'

@@ -1,0 +1,6 @@
+url: https://github.com/a981008/dsh-switch
+name: a981008/dsh-switch
+category: model
+description:
+  en: Mirrors cc-switch providers and models into DeepSeek Harness the moment they are saved, and shows each provider's plan windows, account balance, or custom usage script in the composer and the settings card.
+  zh: 把 cc-switch 的供应商与模型在保存的瞬间镜像进 DSH，并在输入框和设置卡片里显示各供应商的套餐窗口、账户余额或自定义用量脚本的结果。

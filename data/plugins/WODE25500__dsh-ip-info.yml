@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-ip-info
+name: WODE25500/dsh-ip-info
+category: tools
+description:
+  en: "IP/domain intelligence for DeepSeek Harness: ip_lookup, dns_lookup and whois_lookup tools via free no-key APIs (ipwho.is, Google DNS-over-HTTPS, RDAP)."
+  zh: "DeepSeek Harness 的 IP/域名情报：ip_lookup、dns_lookup、whois_lookup 工具，走免费免 key API(ipwho.is、Google DoH、RDAP)。"

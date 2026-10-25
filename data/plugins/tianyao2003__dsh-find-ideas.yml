@@ -1,0 +1,6 @@
+url: https://github.com/tianyao2003/dsh-find-ideas
+name: tianyao2003/dsh-find-ideas
+category: tools
+description:
+  en: 'Prior-art search for an idea: three tools find similar open-source projects on GitHub, rank them by a score computed in code from a relevance judgement and the star count, then read the chosen repositories (README, dependency manifest, directory tree, key files) and report the class and function declarations found in each file header; files_read lists what was actually fetched.'
+  zh: 动手造轮子之前先做同类调研：三个工具在 GitHub 上搜索与想法相似的开源项目，按代码根据相关性判断与 star 数算出的得分排序，再读取选中的仓库（README、依赖清单、目录树、关键文件），报告每个文件头里扫到的类与函数声明，并用 files_read 列出实际读了哪些文件。

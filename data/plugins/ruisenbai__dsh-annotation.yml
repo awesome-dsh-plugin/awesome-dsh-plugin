@@ -1,0 +1,7 @@
+url: https://github.com/ruisenbai/dsh-annotation
+name: ruisenbai/dsh-annotation
+category: session
+description:
+  en: 'Select text in replies, diffs, or files → annotate → send with a message; replies address each annotation in order, with source navigation for easy reference.'
+  zh: '选中正文、diff、文件的文字 → 批注 → 随消息发送，回复按批注逐条对照，并支持注解定位方便查询。'
+tarball: https://github.com/ruisenbai/dsh-annotation/releases/latest/download/dsh-annotation.tgz

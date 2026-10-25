@@ -1,0 +1,6 @@
+url: https://github.com/swyc520/dsh-plugin-model-whitelist
+name: swyc520/dsh-plugin-model-whitelist
+category: ui
+description:
+  en: Tick which models appear in the DSH model selector, and fold provider groups in the settings panel.
+  zh: 在设置里逐个勾选要显示的模型，未勾选的从模型选择器菜单中隐藏；provider 分组可在设置面板中折叠。

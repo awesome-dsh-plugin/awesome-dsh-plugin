@@ -1,0 +1,6 @@
+url: https://github.com/Len7183/DSH-Think-zh
+name: Len7183/DSH-Think-zh
+category: ui
+description:
+  en: 'Thinking-language control for DeepSeek Harness: two presets — Default English, which only makes replies follow the language of the question, and Simplified Chinese, which also pins thinking to Chinese — injected as a system-prompt section rendered first via a minimal order plus an assemble-pipeline reorder guard against plugins joining earlier or with smaller orders, with an optional per-turn user-message prepend carrying an idempotency marker; switched from the Settings → General page and applies live on hosts with schemastery >= 3.18.3.'
+  zh: '思考语言两档可控：默认英文档只让回复跟随提问语言，简体中文档同时锁定思考语言；指令以极小 order 注入 system prompt 并经 assemble 瀑布重排兜底置顶，防其他插件以更小 order 插队；可选开启每轮用户消息前置（带幂等标记）；在「设置 → 通用设置」切换档位，schemastery >= 3.18.3 的宿主上即时生效。'

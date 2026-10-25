@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-download
+name: 173787247/dsh-wsl-download
+category: wsl
+description:
+  en: Lists or copies files from the Windows Downloads folder into the WSL workspace.
+  zh: 列出或复制 Windows「下载」文件夹中的文件到 WSL 工作区。

@@ -1,0 +1,7 @@
+url: https://github.com/Jstn-1g/dsh-live-voice
+name: Jstn-1g/dsh-live-voice
+category: voice
+description:
+  en: 'Consent-bound one-turn voice preview for DSH Web with a credential-free local synthetic demo, optional Qwen Audio, exact Session isolation, and explicit transcript-to-draft handoff without automatic submission.'
+  zh: 'DSH Web 的会话绑定单轮语音预览：提供无需凭证的本地合成演示和可选的 Qwen Audio，保持精确会话隔离，并仅在明确操作后将转写写入草稿，不会自动提交。'
+tarball: https://github.com/Jstn-1g/dsh-live-voice/releases/download/v0.3.0-preview.5/dsh-live-voice-0.3.0-preview.5.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/Renzic-Stone/DSH-EasyRewrite
+name: Renzic-Stone/DSH-EasyRewrite
+category: session
+description:
+  en: Inline-edit and recall your own user messages in dsh web — lazily and seamlessly, with a version pager and per-session draft persistence.
+  zh: 在 dsh web 中内联编辑与撤回自己的消息——惰性、无痕，带版本翻页器与会话级草稿持久化。

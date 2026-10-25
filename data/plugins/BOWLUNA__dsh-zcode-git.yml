@@ -1,0 +1,6 @@
+url: https://github.com/BOWLUNA/dsh-zcode-git
+name: BOWLUNA/dsh-zcode-git
+category: git
+description:
+  en: 'Structured git tools for DeepSeek Harness agents: status, diff, log, branch, commit and stash. Output is pinned with ten `git -c` overrides so a user pager, colour or quotepath setting cannot reshape what the agent reads; every invocation is an argv array, so no shell ever parses an argument; and the mutating actions go through the harness approval service, refusing rather than proceeding when no approval service is mounted.'
+  zh: '给 DeepSeek Harness 智能体用的结构化 Git 工具：status、diff、log、branch、commit 与 stash。输出由十项 `git -c` 覆盖钉死，因此用户的 pager、颜色或 quotepath 设置无法改变智能体读到的东西；每次调用都是 argv 数组，任何 shell 都不解析参数；写入动作走 harness 的审批服务，没有装审批服务时拒绝执行而不是放行。'

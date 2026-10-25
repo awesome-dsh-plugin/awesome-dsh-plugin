@@ -1,0 +1,6 @@
+url: https://github.com/Minokun/dsh-serper-search
+name: Minokun/dsh-serper-search
+category: tools
+description:
+  en: 'Merged web search provider: every web_search fans out to serper.dev (Google SERP with answer box) and DeepSeek native search in parallel, unions the URL-deduped sources, and degrades to whichever backend answers. Plugins-page settings card with credentials-domain API key and a native-merge toggle.'
+  zh: 合并式网页搜索 provider：每次 web_search 并行查询 serper.dev（Google 搜索结果与答案框）与 DeepSeek 原生搜索，按 URL 去重合并来源，任一后端失败自动降级。插件页设置卡片支持凭证域 API key 与原生合并开关。

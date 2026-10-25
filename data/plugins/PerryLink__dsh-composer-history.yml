@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-composer-history
+name: PerryLink/dsh-composer-history
+category: ui
+description:
+  en: 'Terminal-style input history for the web composer: edge-first arrow-key recall with exact draft/caret restore, browser-local persisted history, Ctrl+R reverse search, and sliding-context awareness; 0.5.0 adds a smart input layer — cross-session snippets (/save, /load), prompt templates with variables, reuse insights, and compaction-summary highlighting.'
+  zh: Web 作曲器终端风格输入历史：边缘优先的方向键召回并精确还原草稿与光标、浏览器本地持久化历史、Ctrl+R 反向搜索，以及滑动上下文感知；0.5.0 再加智能输入层——跨会话片段库（/save、/load）、带变量的提示词模板、复用洞察与压缩摘要高亮。

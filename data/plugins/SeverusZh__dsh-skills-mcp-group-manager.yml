@@ -1,0 +1,6 @@
+url: https://github.com/SeverusZh/dsh-skills-mcp-group-manager
+name: SeverusZh/dsh-skills-mcp-group-manager
+category: ui
+description:
+  en: 'Group installed skills and manage MCP servers from a left-panel UI: filter the model skill catalog by enabled groups (union-deduped) and toggle MCP servers independently.'
+  zh: '将已安装的技能分组管理、独立开关 MCP 服务器：按启用分组过滤模型可见的技能目录（并集去重），全部操作集中在左侧面板。'

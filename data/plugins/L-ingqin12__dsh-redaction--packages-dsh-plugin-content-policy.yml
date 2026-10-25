@@ -1,0 +1,6 @@
+url: https://github.com/L-ingqin12/dsh-redaction/tree/main/packages/dsh-plugin-content-policy
+name: L-ingqin12/dsh-redaction#dsh-plugin-content-policy
+category: security
+description:
+  en: 'Preventive content policy for tool results: rewrites matched text, and drops or truncates whole fields by path before a result is normalised, rendered or persisted, so an unreviewed payload never enters it. Ships inert with no built-in category or domain blocklist.'
+  zh: '工具结果的预防式内容策略：改写命中文本，并按字段路径整段丢弃或截断，让未经审查的载荷在结果被规范化/渲染/落盘之前就进不去。随包为真空操作，不含任何内置的类别或域名黑名单。'

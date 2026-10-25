@@ -1,0 +1,6 @@
+url: https://github.com/ConsoleSun/Gemini-Eyes
+name: ConsoleSun/Gemini-Eyes
+category: vision
+description:
+  en: 'MCP bridge to gemini.google.com: vision analysis of images and videos, Imagen image and Veo video generation, and conversation management using the logged-in browser session with no API key.'
+  zh: 接入 gemini.google.com 的 MCP 桥：图片/视频视觉识别、Imagen 生图、Veo 生视频与历史对话管理，复用浏览器登录态，无需 API Key。

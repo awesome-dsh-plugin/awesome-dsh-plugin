@@ -1,0 +1,6 @@
+url: https://github.com/guo6x/dsh-palate
+name: guo6x/dsh-palate
+category: memory
+description:
+  en: 'An accumulated design-taste corpus for DSH agents: feed good and bad examples, distill principles, and review new designs against learned judgment rather than a fixed ruleset.'
+  zh: '给 DSH agent 的积累型设计品味语料库：喂好坏例子、提炼原则，用学到的判断评审新设计，而不是套固定规则。'

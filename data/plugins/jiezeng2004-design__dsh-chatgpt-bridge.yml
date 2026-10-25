@@ -1,0 +1,6 @@
+url: https://github.com/jiezeng2004-design/dsh-chatgpt-bridge
+name: jiezeng2004-design/dsh-chatgpt-bridge
+category: notify
+description:
+  en: MCP bridge that lets ChatGPT Web create, view, continue, and supervise DeepSeek Harness agent sessions and goals while preserving DSH's native approval, sandbox, and workspace security model.
+  zh: 通过 MCP 让 ChatGPT Web 创建、查看、继续和监督 DeepSeek Harness Agent 会话与 Goal，同时保留 DSH 原生的审批、沙箱与工作区安全模型。

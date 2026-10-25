@@ -1,0 +1,6 @@
+url: https://github.com/FeiZhuNiU-INFJA/dsh-stock-ticker
+name: FeiZhuNiU-INFJA/dsh-stock-ticker
+category: ui
+description:
+  en: A floating, semi-transparent market ticker for DeepSeek Harness showing real-time level and change percentage for the Shanghai Composite, ChiNext, STAR 50 and Hang Seng Tech indices.
+  zh: 一个悬浮的半透明行情小窗，实时显示上证指数、创业板指、科创50 与恒生科技的当前点位与涨跌幅。

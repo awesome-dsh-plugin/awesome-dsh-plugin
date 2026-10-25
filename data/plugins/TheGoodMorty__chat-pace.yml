@@ -1,0 +1,6 @@
+url: https://github.com/TheGoodMorty/chat-pace
+name: TheGoodMorty/chat-pace
+category: ui
+description:
+  en: 'Configurable chat auto-scroll — paced section-by-section reading with size-proportional pauses, smooth follow, step and hold modes, hotkeys, and per-session open positions.'
+  zh: '可配置的聊天自动滚动——按节定速阅读（停顿时长与篇幅成比例）、平滑跟随、单步与固定模式，支持快捷键与按会话记忆打开位置。'

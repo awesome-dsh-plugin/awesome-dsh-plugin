@@ -1,0 +1,6 @@
+url: https://github.com/Junkrat9527/dsh-autovision
+name: Junkrat9527/dsh-autovision
+category: vision
+description:
+  en: 'Vision for text-only dsh models: paste an image and a configured multimodal model transcribes it to text automatically — transparent twin routing, an agent-callable read-image tool, no built-in keys or relay.'
+  zh: 纯文本 dsh 模型的识图插件：粘贴图片自动由你配置的多模态模型转成文字——透明孪生路由、模型可自主调用识图工具、无内置密钥与中转。

@@ -1,0 +1,6 @@
+url: https://github.com/OMSociety/dsh-xiaoai-bridge
+name: OMSociety/dsh-xiaoai-bridge
+category: voice
+description:
+  en: 'Plugin that turns a XiaoAI (Xiaomi) smart speaker into a DeepSeek Harness voice assistant: hosts the local bridge process, listens for the wake word, runs speech recognition (ASR / STT) on what you say, keeps the conversation in a DSH session, and speaks the answer back through the speaker with text-to-speech (TTS) playback.'
+  zh: '把小爱音箱（小爱同学 / 小米智能音箱）接成 DeepSeek Harness 语音助手的插件：托管本地桥接器进程，听到唤醒词就收音、做语音识别（ASR / STT），把对话交给 DSH 会话，再用语音合成（TTS）把答案念回音箱播报。'

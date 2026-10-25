@@ -1,0 +1,6 @@
+url: https://github.com/coolbreezecoin/dsh-wechat-mp
+name: coolbreezecoin/dsh-wechat-mp
+category: tools
+description:
+  en: 'Turns markdown into a WeChat Official Account (微信公众号) draft: inlines every CSS rule onto its element because the editor discards `<style>` blocks and class names, uploads each local image through WeChat''s own endpoint so it is not filtered out, and creates the draft; it never broadcasts.'
+  zh: 把 markdown 变成排好版的微信公众号草稿：样式逐条内联到元素上（编辑器会丢弃 `<style>` 块和 class 名），每张本地图片走微信自己的上传接口以免被过滤，然后创建草稿；不做群发。

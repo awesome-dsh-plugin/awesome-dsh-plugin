@@ -1,0 +1,6 @@
+url: https://github.com/meyaomiao/dsh-graphmemory
+name: meyaomiao/dsh-graphmemory
+category: memory
+description:
+  en: 'DSH knowledge-graph memory with a better-sidebar tab and a standalone /graph-memory/app dashboard: extracts TASK/SKILL/EVENT nodes, recalls across sessions, and ships as the npm package dsh-graphmemory.'
+  zh: 'DSH 知识图谱记忆：better-sidebar「记忆图谱」页签与独立看板 /graph-memory/app；抽取任务/技能/事件节点并跨会话召回，npm 包名为 dsh-graphmemory。'

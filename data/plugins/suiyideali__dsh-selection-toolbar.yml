@@ -1,0 +1,9 @@
+# PR 收录草稿 — 按 awesome-dsh-plugin/awesome-dsh-plugin 的 contributing.md 格式
+# 目标路径：data/plugins/suiyideali__dsh-selection-toolbar.yml
+# 注意：描述必须与实际代码一致，禁止营销词；合并前维护者会对照源码核对。
+url: https://github.com/suiyideali/dsh-selection-toolbar
+name: suiyideali/dsh-selection-toolbar
+category: ui
+description:
+  en: Shows a floating toolbar above text selected in a conversation, with copy, quote, ask, explain, translate, summarize, and custom prompt actions.
+  zh: 在对话中选中文本时显示浮动工具栏，提供复制、引用、询问、解释、翻译、总结与自定义提问操作。
