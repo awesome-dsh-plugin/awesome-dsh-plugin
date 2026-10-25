@@ -1,0 +1,6 @@
+url: https://github.com/erty3244/dsh-feishu-bridge
+name: erty3244/dsh-feishu-bridge
+category: remote
+description:
+  en: 'Bridges DSH to Feishu (Lark) over a long connection: inbound messages, threaded replies, and an optional self-trigger.'
+  zh: '把 DSH 接到飞书长连接：接收消息、话题回复，另带可选的自触发。'
