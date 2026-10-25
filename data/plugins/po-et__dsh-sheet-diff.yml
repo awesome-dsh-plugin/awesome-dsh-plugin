@@ -1,0 +1,7 @@
+url: https://github.com/po-et/dsh-sheet-diff
+name: po-et/dsh-sheet-diff
+category: tools
+description:
+  en: Read-only CSV/XLSX comparison by business keys, with offline HTML review and exportable comments.
+  zh: 按业务主键对齐 CSV/XLSX 改动，生成本地 HTML 审阅报告并导出逐条评论。
+tarball: https://github.com/po-et/dsh-sheet-diff/releases/download/v0.1.0/dsh-sheet-diff-0.1.0.tgz

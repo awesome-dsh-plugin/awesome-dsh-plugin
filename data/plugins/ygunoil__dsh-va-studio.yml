@@ -1,0 +1,7 @@
+url: https://github.com/ygunoil/dsh-va-studio
+name: ygunoil/dsh-va-studio
+category: tools
+description:
+  en: 'VA Studio integration: ten tools that generate short dramas, images, videos, novels and screenplays, and reverse-engineer prompts from images or videos. Requires a running VA Studio backend.'
+  zh: '接入 VA Studio：10 个工具，生成短剧、图片、视频、小说与剧本，并从图片或视频反推提示词。需运行中的 VA Studio 后端。'
+tarball: https://github.com/ygunoil/dsh-va-studio/releases/download/v0.2.0/dsh-va-studio-0.2.0.tgz

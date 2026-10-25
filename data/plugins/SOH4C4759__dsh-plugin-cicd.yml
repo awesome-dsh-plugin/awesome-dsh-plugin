@@ -1,0 +1,7 @@
+url: https://github.com/SOH4C4759/dsh-plugin-cicd
+name: SOH4C4759/dsh-plugin-cicd
+category: dev
+description:
+  en: "Bring a DSH plugin repository's build and release pipeline into the app: a sidebar panel listing each repository's latest workflow run, its releases, and how far the local checkout has drifted from the last release, with buttons to trigger a build, cut a release, publish a draft, re-run, cancel, or read the failed-step log. Drives the workflows through the machine's authenticated gh CLI, so the plugin stores no credential of its own, and which repositories are tracked lives in a config file rather than the package."
+  zh: 把 DSH 插件仓库的持续构建与发布搬进应用：侧边栏面板逐仓库显示最近一次工作流运行、已发布与草稿 Release，以及本地检出相对上次发布的领先与未提交情况，并提供触发构建、发布、公开草稿、重跑、取消、查失败日志等按钮。通过本机已登录的 gh CLI 驱动工作流，插件自身不保存任何凭据，被监视的仓库列表放在配置文件里、不打进包。
+tarball: https://github.com/SOH4C4759/dsh-plugin-cicd/releases/download/v0.3.0/dsh-plugin-cicd-0.3.0.tgz

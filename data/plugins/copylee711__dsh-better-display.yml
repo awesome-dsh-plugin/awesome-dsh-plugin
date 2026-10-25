@@ -1,0 +1,6 @@
+url: https://github.com/copylee711/dsh-better-display
+name: copylee711/dsh-better-display
+category: ui
+description:
+  en: 'Renders assistant replies with numbered citation chips and a sources panel for web-search results, inline pictures with their source captions, and KaTeX formulas, Mermaid diagrams and highlighted code in streaming Markdown.'
+  zh: '为助手回答渲染带编号的引用角标和来源面板（针对联网搜索结果）、带来源说明的正文配图，并在流式 Markdown 中渲染 KaTeX 公式、Mermaid 图和代码高亮。'

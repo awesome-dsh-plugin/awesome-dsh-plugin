@@ -1,0 +1,6 @@
+url: https://github.com/AomiRaku/dsh-accountDisplayName-edit
+name: AomiRaku/dsh-accountDisplayName-edit
+category: ui
+description:
+  en: 'Replaces the sidebar account label — the phone number, email, username, or account name — and avatar with your own display name and image. A new "Edit display name" row in the account menu opens one dialog for both, so screenshots do not expose the original.'
+  zh: '把左下角账号处的文字（手机号/邮箱/用户名/账户名）和头像替换为你自定义的显示名称与图片。编辑入口是账号菜单里新增的「编辑显示名称」一行，同一个弹窗改这两项，避免截图泄露隐私。'

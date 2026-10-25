@@ -1,0 +1,6 @@
+url: https://github.com/bitxeno/dsh-git-plus
+name: bitxeno/dsh-git-plus
+category: git
+description:
+  en: 'Sidebar Git panel for the DSH web GUI: Local Changes and All Commits views, branch, tag and stash management with fetch, pull and push dialogs, merge with conflict handling, and a zsh-style branch marker in the input bar.'
+  zh: 'DSH 网页端的侧栏 Git 面板：Local Changes 与 All Commits 视图，分支、标签与 Stash 管理，fetch、pull、push 弹窗，带冲突处理的合并，以及输入框上的 zsh 风格分支标记。'

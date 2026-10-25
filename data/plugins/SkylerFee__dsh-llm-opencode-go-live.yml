@@ -1,0 +1,6 @@
+url: https://github.com/SkylerFee/dsh-llm-opencode-go-live
+name: SkylerFee/dsh-llm-opencode-go-live
+category: model
+description:
+  en: 'An OpenCode Go model source for DSH: it reads the opencode-go catalog from Models.dev and serves it on a separate opencode-go-live route, leaving the built-in opencode-go route in place. The catalog snapshot is cached under the DSH home and a failed refresh keeps the last successful one; its own Models settings card edits the route key and can render OpenCode Go subscription usage.'
+  zh: '为 DSH 提供 OpenCode Go 模型来源：从 Models.dev 读取 opencode-go 目录，在独立的 opencode-go-live 路由上提供，内置 opencode-go 路由保持原样。目录快照缓存在 DSH home 下，刷新失败时沿用上一次成功的目录；插件自带 Models 设置卡片用于填写该路由密钥，并可显示 OpenCode Go 订阅用量。'

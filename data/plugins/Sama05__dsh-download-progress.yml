@@ -1,0 +1,6 @@
+url: https://github.com/Sama05/dsh-download-progress
+name: Sama05/dsh-download-progress
+category: ui
+description:
+  en: "Shows download, install, fetch and search progress in a floating overlay or in a compact chip above the composer, and lists background jobs that have no progress to draw."
+  zh: "在浮层或输入框上方的胶囊里显示下载、安装、抓取、搜索的进度，并列出没有进度可画的后台任务。"

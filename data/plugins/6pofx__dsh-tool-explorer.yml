@@ -1,0 +1,6 @@
+url: https://github.com/6pofx/dsh-tool-explorer
+name: 6pofx/dsh-tool-explorer
+category: ui
+description:
+  en: 'Skills and MCP management console in the settings panel: merged skill catalog across every provider (hierarchical browse by source, online create/edit, independent model and user invocation switches, recoverable trash), GitHub install with multi-select batch install and update checks, MCP server add/edit/remove and enable/disable through the profile patch layer, cross-agent import from Claude Code, Cursor, Codex, Cline, Roo Code, Continue and Windsurf, and an independent SDK connection probe.'
+  zh: 设置面板里的技能与 MCP 管理控制台：跨全部来源合并的技能目录（按来源分级浏览、在线新建与编辑、模型 / 用户调用独立开关、可恢复回收站）、GitHub 安装（多选批量安装、检查更新）、通过 profile patch 层增删改与启停 MCP 服务器、从 Claude Code / Cursor / Codex / Cline / Roo Code / Continue / Windsurf 一键导入，以及独立的 SDK 连通性探测。

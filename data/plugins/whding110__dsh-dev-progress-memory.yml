@@ -1,0 +1,6 @@
+url: https://github.com/whding110/dsh-dev-progress-memory
+name: whding110/dsh-dev-progress-memory
+category: memory
+description:
+  en: 'Per-turn development progress memory: completed turns are classified into date-indexed Markdown files under doc/progress/ with a maintained INDEX.md, system-level bugs are kept in a cross-project SYSTEM_MEMORY.md and re-injected on error keywords, and a progress_read tool loads full documents on demand.'
+  zh: '逐轮开发进度记忆：每轮完成后分类写入 doc/progress/ 下按日期索引的 Markdown 文件并维护 INDEX.md，系统级问题记入跨项目 SYSTEM_MEMORY.md 并在出现报错关键词时重新注入，progress_read 工具可按需读取完整文档。'

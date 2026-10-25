@@ -1,0 +1,7 @@
+url: https://github.com/lyonleeeee/dsh-steer
+name: lyonleeeee/dsh-steer
+category: ui
+description:
+  en: Adds a live status badge to the session header and delivers guidance added mid-task without interrupting the turn.
+  zh: 在会话头显示实时状态徽标，并在不打断当前回合的前提下投递运行中新增的指导。
+tarball: https://github.com/lyonleeeee/dsh-steer/releases/download/v0.1.0/lyonleeeee-dsh-steer-0.1.0.tgz

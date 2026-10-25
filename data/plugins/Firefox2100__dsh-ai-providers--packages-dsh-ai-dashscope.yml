@@ -1,0 +1,6 @@
+url: https://github.com/Firefox2100/dsh-ai-providers/tree/main/packages/dsh-ai-dashscope
+name: Firefox2100/dsh-ai-providers#dashscope
+category: model
+description:
+  en: Alibaba Cloud DashScope provider for Qwen language models, embeddings, reranking, speech, and image generation through native APIs in DSH. Requires Firefox2100/dsh-ai-providers#runtime to be installed and enabled.
+  zh: 通过阿里云 DashScope 原生 API 为 DSH 提供通义千问语言模型、嵌入、重排、语音和图像生成能力。需要安装并启用 Firefox2100/dsh-ai-providers#runtime。

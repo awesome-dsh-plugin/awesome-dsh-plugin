@@ -1,0 +1,6 @@
+url: https://github.com/zhz8888/dsh-android-emulator-helper
+name: zhz8888/dsh-android-emulator-helper
+category: dev
+description:
+  en: "Android development toolchain inside DeepSeek Harness: 23 android_* tools that find the SDK, create and manage AVDs, start and stop emulators, scaffold a Kotlin/Compose project, build and run it with Gradle, then install, launch, screenshot, tail logcat and drive the UI. A settings page holds the SDK, emulator, API-level, build and output parameters."
+  zh: "在 DeepSeek Harness 里驱动 Android 开发工具链：23 个 android_* 工具负责探测 SDK、创建与管理 AVD、启停模拟器、生成 Kotlin/Compose 工程、用 Gradle 构建运行，并完成安装、启动、截图、logcat 与 UI 操作。设置页集中管理 SDK、模拟器、API 级别、构建与输出参数。"

@@ -1,0 +1,6 @@
+url: https://github.com/shuxidemosheng/dsh-tool-workflow-plus
+name: shuxidemosheng/dsh-tool-workflow-plus
+category: workflow
+description:
+  en: 'Drop-in enhanced fork of the official workflow tool: a verbatim fork of the stock tool plus a persisted saved-workflow library (workflow_save / workflow_list / workflow_get / workflow_delete / workflow_run_saved) backed by ctx.storageDomain, so scripts can be stored, retrieved and re-run with new arguments.'
+  zh: '官方 workflow 工具的 drop-in 增强版：在逐字 fork 的官方工具之上，用 ctx.storageDomain 提供持久化的 saved workflow 库（workflow_save / workflow_list / workflow_get / workflow_delete / workflow_run_saved），可把编排脚本存库、检索并带新参数重跑。'

@@ -1,0 +1,6 @@
+url: https://github.com/seonzzy/dsh-zen-adapter
+name: seonzzy/dsh-zen-adapter
+category: model
+description:
+  en: 'Registers OpenCode Zen free models as a native provider: the catalog is discovered live from opencode.ai intersected with models.dev pricing, and a detail page can re-fetch it or test which models answer. Declares no dependencies, so the host''s pi-ai stays the only one.'
+  zh: '把 OpenCode Zen 免费模型注册为原生 provider：目录由 opencode.ai 与 models.dev 价格实时取交集得出，详情页可重新拉取目录或逐个探测哪些模型能调通。不声明任何依赖，宿主自带的那份 pi-ai 始终是唯一一份。'

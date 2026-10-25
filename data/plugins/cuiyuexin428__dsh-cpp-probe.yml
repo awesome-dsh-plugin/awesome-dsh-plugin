@@ -1,0 +1,6 @@
+url: https://github.com/cuiyuexin428/dsh-cpp-probe
+name: cuiyuexin428/dsh-cpp-probe
+category: tools
+description:
+  en: "C++ runtime info probe for Windows via CDB: cpp_trace prints variables at multiple breakpoints in one session (replaces hand-written print), cpp_probe dumps the call stack at a conditional breakpoint. Install: dsh plugin --profile web add dsh-cpp-probe."
+  zh: "Windows + CDB 下的 C++ 运行时信息探针：cpp_trace 一次会话多断点打印变量（替换手打 print），cpp_probe 条件断点输出调用栈。安装：dsh plugin --profile web add dsh-cpp-probe。"

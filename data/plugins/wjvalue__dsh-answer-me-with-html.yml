@@ -1,0 +1,6 @@
+url: https://github.com/wjvalue/dsh-answer-me-with-html
+name: wjvalue/dsh-answer-me-with-html
+category: skill
+description:
+  en: 'Answers a hard question with a one-page visual HTML explainer: the model writes a short Markdown draft and the bundled dependency-free `am` CLI builds the layout, CSS and diagram coordinates. Vendors the upstream answer-me-with-html skill verbatim as a skill-only DSH bundle with no Host code.'
+  zh: '把复杂问题回答成一页可视化 HTML：模型只写简短的 Markdown 草稿，随包附带的零依赖 `am` 命令行负责排版、配色与图表坐标。以上游 answer-me-with-html 技能原样内置，是纯技能的 DSH bundle，不含 Host 代码。'

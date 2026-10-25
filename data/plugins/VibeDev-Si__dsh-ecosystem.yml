@@ -1,0 +1,6 @@
+url: https://github.com/VibeDev-Si/dsh-ecosystem
+name: VibeDev-Si/dsh-ecosystem
+category: market
+description:
+  en: 'Plugin center for VibeDev: describes the official VibeDev plugins and installs them in one click through the plugin manager (inspect, install disabled, then enable, with prerequisites). Also offers a suite install, migration of a renamed package, and a one-click install of the dshmarket plugin market.'
+  zh: 'VibeDev 插件中心：介绍 VibeDev 官方插件，并通过官方插件管理器一键安装（先检查、先不启用地安装、再启用，并带上前置依赖）。另提供套装安装、旧包名迁移，以及一键安装插件市场 dshmarket。'

@@ -1,0 +1,6 @@
+url: https://github.com/DeepseekDays/dsh-ofm-model-manager
+name: DeepseekDays/dsh-ofm-model-manager
+category: model
+description:
+  en: 'Per-model enable/disable and renaming for every provider in DeepSeek Harness: a panel at the bottom of Settings - Models with a search box, status chips with counts, a provider filter, collapsible provider groups with group-level switches, and batch actions scoped to the current view. Disabled models leave the model picker and custom names replace the built-in ones. Preferences persist in the profile and apply immediately, without reloading the page or restarting DSH.'
+  zh: 'DSH 全体模型管理：在「设置 → 模型」页底部加一块面板，管理所有 provider 的每一个模型——逐条启用/停用与改名。带搜索框、状态筛选（含计数）、提供商下拉、可折叠的 provider 分组与组级开关，批量操作只作用于当前筛选视图。停用的模型从模型选择器里消失，自定义名直接替换显示名；偏好持久化在 profile，改完立即生效，不用刷新页面、不用重启 DSH。'

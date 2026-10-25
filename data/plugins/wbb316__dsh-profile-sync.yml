@@ -1,0 +1,6 @@
+url: https://github.com/wbb316/dsh-profile-sync
+name: wbb316/dsh-profile-sync
+category: dev
+description:
+  en: 'Moves a plugin set between DSH profiles (web to desktop by default): diff, pre-checks, an offline script for CLI-owned profiles, and a post-restart verification. It installs nothing itself.'
+  zh: '在 DSH 的各 profile 之间迁移插件（默认 web → desktop）：算差异、预检、为 CLI 管的 profile 生成离线脚本、重启后核对。它自己不安装任何东西。'

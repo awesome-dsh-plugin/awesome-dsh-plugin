@@ -1,0 +1,6 @@
+url: https://github.com/KukaNo996/dsh-prompt-optimization
+name: KukaNo996/dsh-prompt-optimization
+category: ui
+description:
+  en: 'Composer prompt refinement for DSH: rewrites a rough draft into a structured, unambiguous prompt with one-click undo, reference-chip protection, three model sources (composer / account / any OpenAI-compatible endpoint) and disconnect-aware cancellation.'
+  zh: 'DSH 输入框提示词优化：把粗糙草稿改写成结构清晰、无歧义的提示词，支持一键撤回、引用芯片保护、三种模型来源与断连即停。'

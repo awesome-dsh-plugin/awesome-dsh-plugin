@@ -1,0 +1,7 @@
+url: "https://github.com/aa2246740/dsh-auto-review"
+name: "aa2246740/dsh-auto-review"
+category: "security"
+description:
+  en: "Adds Auto-review and Approve for me modes for DSH tool calls."
+  zh: "为 DSH 工具调用提供 Auto-review 和 Approve for me 模式。"
+tarball: "https://github.com/aa2246740/dsh-auto-review/releases/download/v0.4.2/dsh-approve-for-me-0.4.2.tgz"

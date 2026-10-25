@@ -1,0 +1,6 @@
+url: https://github.com/M1r0er/dsh-inkvault
+name: M1r0er/dsh-inkvault
+category: memory
+description:
+  en: 'Turns a local Markdown vault into two folders the user picks in Settings: a knowledge folder DSH writes notes into, and a memory folder used as the agent''s long-term memory with per-turn recall and end-of-turn capture. Pure Markdown with frontmatter, BM25 search, reversible archive, and path isolation that rejects traversal, absolute paths and symlink escapes.'
+  zh: '把本地 Markdown 库拆成两个由用户在设置页选择的文件夹：知识库由 DSH 在对话中写入笔记，记忆库作为 agent 的长期记忆，按回合召回、回合结束沉淀候选。纯 Markdown 加 frontmatter、BM25 检索、可逆归档，并用路径隔离拒绝穿越、绝对路径与符号链接逃逸。'

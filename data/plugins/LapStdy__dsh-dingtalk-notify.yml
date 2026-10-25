@@ -1,0 +1,6 @@
+url: https://github.com/LapStdy/dsh-dingtalk-notify
+name: LapStdy/dsh-dingtalk-notify
+category: notify
+description:
+  en: 'DingTalk alerts when the agent needs your choice or approval, or finishes a turn; it stays quiet while you are watching the DSH page.'
+  zh: '钉钉提醒：AI 需要你选择、审批或干完活时推送到钉钉群；有人正看着 DSH 页面就不发，没人看才提醒。'

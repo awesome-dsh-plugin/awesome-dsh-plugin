@@ -1,0 +1,6 @@
+url: https://github.com/dingminhua/dsh-service-portal
+name: dingminhua/dsh-service-portal
+category: remote
+description:
+  en: 'Exposes any local service on a LAN address and a public cloudflared quick-tunnel domain behind one password login, with per-route open/block gates managed from the plugin settings page. Requires Python 3 and cloudflared on the machine, and reports either of them being missing or misconfigured in the settings page before you start; LAN and local access are passwordless by default, while the public tunnel requires the passcode.'
+  zh: '把一个口令登录的内网地址与公网 cloudflared 快速隧道域名提供给本机任意服务，每条路由的开放/屏蔽闸门在插件设置页里管理。需本机有 Python 3 与 cloudflared，缺失或路径填错会在启动前的设置页里提示；内网与本机访问默认免密，公网隧道需要口令。'

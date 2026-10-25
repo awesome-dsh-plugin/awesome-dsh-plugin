@@ -1,0 +1,6 @@
+url: https://github.com/huangfuren/dsh-client-ui-balance
+name: huangfuren/dsh-client-ui-balance
+category: usage
+description:
+  en: 'DeepSeek account balance capsule in the conversation session header. A same-origin route registered by the package''s own host half resolves the API key from the credential service and calls api.deepseek.com/user/balance, so the key never reaches the page; the capsule polls every 60 seconds and expands into a panel with per-currency totals, granted and topped-up amounts, last-updated time and a manual refresh. Read-only UI: it never touches prompts, tool results or model traffic.'
+  zh: '会话标题栏里的 DeepSeek 账户余额胶囊。由本包自带的 host 半注册同源路由，从凭据服务解析 API Key 后查询 api.deepseek.com/user/balance，Key 始终不进页面；胶囊每 60 秒轮询，可展开明细面板，显示分币种总额、赠送与充值部分、更新时间与手动刷新。纯只读 UI：不接触提示词、工具结果与模型流量。'

@@ -1,0 +1,7 @@
+url: https://github.com/Zoragyx/dsh-phone-pair/tree/main/plugin/dsh-phone-pair-kit
+name: Zoragyx/dsh-phone-pair#dsh-phone-pair-kit
+category: remote
+tarball: https://github.com/Zoragyx/dsh-phone-pair/releases/latest/download/dsh-phone-pair-kit.tgz
+description:
+  en: 'Requires the phone app, not just this plugin: the phone half is a separate APK and must be installed first — download it from https://github.com/Zoragyx/dsh-phone-pair/releases — otherwise the computer side has nothing to pair with. This package is the computer half: it enables the upstream remote-web-ui pairing plugin with a Cloudflare quick tunnel and a fixed relay subdomain, so one scan keeps the phone connected from anywhere.'
+  zh: '需要先装手机端 App，光装这个插件没用：手机那一半是单独的 APK，必须先安装——下载地址 https://github.com/Zoragyx/dsh-phone-pair/releases ——否则电脑端装好了也没得配。本包是电脑那一半：开启上游远程访问插件、Cloudflare 快速隧道与固定中继域名，扫一次码之后在外面也能连回来。'

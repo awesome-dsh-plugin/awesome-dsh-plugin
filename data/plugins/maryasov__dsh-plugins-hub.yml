@@ -1,0 +1,6 @@
+url: https://github.com/maryasov/dsh-plugins-hub
+name: maryasov/dsh-plugins-hub
+category: market
+description:
+  en: "Plugin marketplace inside DeepSeek Harness: a sidebar catalog tab plus agent tools (mp_search, mp_similar, mp_details, mp_install, mp_trending) backed by dsh-plugins-mp.com."
+  zh: "DeepSeek Harness 内的插件市场：侧边栏目录标签页加一组代理工具（mp_search、mp_similar、mp_details、mp_install、mp_trending），数据来自 dsh-plugins-mp.com。"

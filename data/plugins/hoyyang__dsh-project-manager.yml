@@ -1,0 +1,6 @@
+url: https://github.com/hoyyang/dsh-project-manager
+name: hoyyang/dsh-project-manager
+category: workflow
+description:
+  en: 'Project board: kanban card groups with custom stages, cards linked to landfill-project memory, mounted repos and existing sessions; sessions opened from a card auto-load its memory.'
+  zh: '项目看板：卡片组泳道自定义阶段，卡片关联落盘项目记忆、挂载仓库与已有会话（可恢复归档）；从卡片开的会话自动读取项目记忆。'

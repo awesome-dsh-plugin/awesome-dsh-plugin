@@ -9,6 +9,10 @@ on:
         description: Re-probe every entry, ignoring cached verdicts
         type: boolean
         default: false
+      skip_probes:
+        description: Skip the probes and build from cached data (deploy or publish only)
+        type: boolean
+        default: false
   # A push made with the default GITHUB_TOKEN does not trigger workflows —
   # GitHub suppresses it to stop recursion — so the `push` trigger below never
   # fires for sync-readme's own commit. That commit is the one that adds the
@@ -82,6 +86,12 @@ jobs:
           # Needed by the catalog publish below; harmless for the site build.
           registry-url: https://registry.npmjs.org
       - run: npm ci
+        env:
+          # The lockfile pins registry.npmmirror.com URLs. On GitHub runners that CDN
+          # has repeatedly returned 503/504 and hung `npm ci` for tens of minutes
+          # (2026-10-19). Fetch from npmjs in CI; local installs keep their own registry.
+          npm_config_registry: https://registry.npmjs.org/
+          npm_config_replace_registry_host: always
       - run: node --test scripts/download-window.test.mjs
       # Rolling probe cache: unique key so every run saves, restore-keys pulls
       # the most recent.
@@ -165,7 +175,13 @@ jobs:
           # above and the publish conditions below were already written as an
           # allowlist; this was the only denylist left.
           case "${{ github.event_name }}" in
-            schedule|workflow_dispatch) full_probe=1 ;;
+            schedule) full_probe=1 ;;
+            workflow_dispatch)
+              # A manual run is normally a full re-probe, but the deploy-only
+              # path has to exist: it is how a fix reaches the site without
+              # waiting out an hour of probes (2026-10-18, when the index
+              # needed to ship while users were already adding it).
+              if [ "${{ inputs.skip_probes }}" = "true" ]; then full_probe=''; else full_probe=1; fi ;;
             *) full_probe='' ;;
           esac
           if [ -n "$full_probe" ] || [ ! -s data/npm-map.json ]; then

@@ -1,0 +1,6 @@
+url: https://github.com/LJY4-bilibili/dsh-message-reminder
+name: LJY4-bilibili/dsh-message-reminder
+category: notify
+description:
+  en: 'Raises a Windows desktop notification card when DSH asks you a question, and returns to the asking Session when the card is clicked.'
+  zh: DSH 向你提问时在屏幕右下角弹出毛玻璃通知卡片，点击卡片即恢复并置顶窗口、回到发起询问的会话。

@@ -1,0 +1,7 @@
+url: https://github.com/tangyixiao/dsh-workbuddy-connect-community
+name: tangyixiao/dsh-workbuddy-connect-community
+category: model
+description:
+  en: Community-maintained WorkBuddy and WorkBuddy AI model provider using local desktop sign-in, with model discovery and credit display. Built for DSH 0.2.1-rc.2, with a CN compatibility layer that differs from the functy23 fork.
+  zh: 复用本机桌面登录的 WorkBuddy 与 WorkBuddy AI 模型提供器社区分叉，提供模型发现和额度显示。面向 DSH 0.2.1-rc.2，CN 兼容层与 functy23 的分叉不同。
+tarball: https://github.com/tangyixiao/dsh-workbuddy-connect-community/releases/latest/download/dsh-workbuddy-connect-community.tgz

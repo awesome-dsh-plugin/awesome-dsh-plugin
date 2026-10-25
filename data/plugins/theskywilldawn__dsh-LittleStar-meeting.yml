@@ -1,0 +1,6 @@
+url: https://github.com/theskywilldawn/dsh-LittleStar-meeting
+name: theskywilldawn/dsh-LittleStar-meeting
+category: workflow
+description:
+  en: 'Cross-session meeting room for DSH: a host session opens a room with a topic and a round limit, invites other sessions in order, they speak one at a time, and the meeting closes with written minutes.'
+  zh: 跨会话会议室：主持人开房定题、定轮次，按顺序邀请其它会话，一位一位发言，轮次用满即收会出纪要。

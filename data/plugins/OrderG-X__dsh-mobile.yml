@@ -1,0 +1,7 @@
+url: https://github.com/OrderG-X/dsh-mobile
+name: OrderG-X/dsh-mobile
+category: remote
+tarball: https://github.com/OrderG-X/dsh-mobile/releases/latest/download/dsh-mobile.tgz
+description:
+  en: "Use DSH from a phone browser. Turn on phone access from the phone button in the session header (or the plugin card) and scan the QR code; the phone opens the official DSH web UI served by the desktop process, with the same sessions updating live, so you can follow a running task, reply and approve away from the computer. A gateway inside DSH (port 18765) proxies the web UI and handles the desktop login itself. One QR code works on Wi-Fi and on mobile data: turning access on also starts a free Cloudflare quick tunnel (cloudflared is downloaded from Cloudflare's GitHub releases if missing), and its address survives DSH restarts, so phones do not need to rescan. Pairing codes are one-time and expire in 10 minutes, each phone gets its own revocable credential, the header button shows when a phone is connected, and idle connections get keepalive pings."
+  zh: "在手机浏览器里用 DSH。点会话顶栏的手机按钮（或插件设置卡）打开手机访问、扫二维码，手机就打开电脑上 DSH 进程提供的官方网页界面，会话相同、实时同步，人不在电脑前也能跟进正在跑的任务、回消息、点批准。DSH 里内置一个网关（端口 18765）转发网页界面，并替手机处理桌面端登录。一个二维码在 Wi-Fi 和流量下都能扫：打开手机访问时顺带开 Cloudflare 免费快速隧道（没有 cloudflared 会从 Cloudflare 官方 GitHub 发布页下载），DSH 重启后地址不变，手机不用重扫。配对码一次性、10 分钟过期，每台手机一张凭证、可随时移除，顶栏按钮显示手机是否已连接，空闲连接自动保活。"

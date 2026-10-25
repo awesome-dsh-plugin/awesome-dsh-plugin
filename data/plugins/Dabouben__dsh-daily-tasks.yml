@@ -1,0 +1,6 @@
+url: https://github.com/Dabouben/dsh-daily-tasks
+name: Dabouben/dsh-daily-tasks
+category: workflow
+description:
+  en: "Daily and weekly task manager: startup popup reminder, a marquee strip above the composer, one-click circle completion, editable task cards, and a Sunday AI weekly summary, plus a sidebar DeepSeek API usage widget with balance card, today/cumulative tokens and cost, per-model breakdown and a 7-day chart. Persists as JSON under $DSH_HOME."
+  zh: "每日/每周任务管理：启动弹窗提醒、输入框上方滚动条、圆圈一键完成、任务卡片编辑、周日 AI 周总结；另附侧边栏 DeepSeek API 用量小部件（余额卡片、今日与累计 tokens 及费用、按模型明细、近 7 日柱状图）。数据以 JSON 存于 $DSH_HOME。"

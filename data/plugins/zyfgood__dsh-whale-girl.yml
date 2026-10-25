@@ -1,0 +1,6 @@
+url: https://github.com/zyfgood/dsh-whale-girl
+name: zyfgood/dsh-whale-girl
+category: fun
+description:
+  en: 'Whale-girl desktop pet for the DSH Web UI, drawn with hand-written SVG + CSS (no image or audio assets, zero runtime dependencies): swims while a turn runs, blows labeled bubbles on tool calls, taps the glass with an amber pulse when an approval is waiting, jumps with a turn duration/tool-count report on success and droops on failure, naps after dark or when idle. Click to poke, double-click to pet (affinity hearts), drag with remembered position, right-click menu (feed / mute / reset / hide), hover card with level, title, XP bar and per-turn stats. A `whale_say` tool lets the agent make her speak or act as a lightweight visible notification. Read-only over sessions and workspace; only ~/.dsh/whale-girl/state.json is written.'
+  zh: 'DSH Web 界面的鲸鱼女孩桌宠，手写 SVG + CSS 动画（无图片/音频素材，零运行时依赖）：任务运行中游泳，调工具时吐带标签的泡泡，等待审批时贴屏幕敲玻璃并伴随琥珀色脉冲，完成时跳一下并汇报本轮耗时与工具数，失败时下沉，闲置或深夜戴睡帽打盹。单击戳一戳，双击摸头涨好感，拖拽后记住位置，右键菜单可喂食/静音/回默认位置/隐藏，悬停显示等级、称号、经验条与本轮统计。`whale_say` 工具让 Agent 借她说话或做动作，作为轻量可见通知。只读会话与工作区，仅写入 ~/.dsh/whale-girl/state.json。'

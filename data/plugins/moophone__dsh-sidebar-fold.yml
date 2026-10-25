@@ -1,0 +1,6 @@
+url: https://github.com/moophone/dsh-sidebar-fold
+name: moophone/dsh-sidebar-fold
+category: ui
+description:
+  en: Folds every panel row in the sidebar (slot-registered and plugin-injected alike) into one Plugin Hub entry, giving the workspace list its vertical space back.
+  zh: 把侧边栏里所有面板行（slot 注册与插件直接注入两类）折叠成单独一行「插件大全」，把被挤掉的工作区高度还给会话列表。

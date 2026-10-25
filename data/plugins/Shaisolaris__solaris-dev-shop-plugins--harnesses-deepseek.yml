@@ -1,0 +1,6 @@
+url: https://github.com/Shaisolaris/solaris-dev-shop-plugins/tree/main/harnesses/deepseek
+name: Shaisolaris/solaris-dev-shop-plugins#deepseek
+category: workflow
+description:
+  en: Bundles 61 specialist workflows and a Chief of Staff coordinator in one plugin, with local intake, delivery, recovery, and evidence tools.
+tarball: https://github.com/Shaisolaris/solaris-dev-shop-plugins/releases/download/v0.66.0/solaris-dev-shop-deepseek-0.66.0.tgz

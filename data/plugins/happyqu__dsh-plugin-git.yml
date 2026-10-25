@@ -1,0 +1,6 @@
+url: https://github.com/happyqu/dsh-plugin-git
+name: happyqu/dsh-plugin-git
+category: git
+description:
+  en: 'Git workbench in the DSH session header and overlay: view changes, commit, fetch, pull, push, and browse branches and history in existing local repositories.'
+  zh: 在 DSH 会话标题栏与浮层工作台中管理已有本地仓库，支持查看改动、提交、获取、拉取、推送以及浏览分支和历史。

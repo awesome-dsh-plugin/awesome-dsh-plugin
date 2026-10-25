@@ -2,5 +2,5 @@ url: https://github.com/loyalchiiina/dsh-todo-float-ball
 name: loyalchiiina/dsh-todo-float-ball
 category: ui
 description:
-  en: 'Floating progress ball for the AI agent todo checklist: six skins, live done/total ring, multi-session monitoring with pins, inline rename, capsule mode, draggable; realtime sync via the sessions service.'
-  zh: '悬浮球常驻显示 AI 会话的任务清单进度：六种皮肤（星云流光/宝石/顶弧、石墨、蓝宝石、玻璃）、外环进度环、多会话固定监控、面板内改名，数据实时同步。'
+  en: 'Draggable floating ball showing the current DSH session todo checklist live: done/total on its face (capsule mode adds the running task title), a matching progress ring, click to expand or fold the list, right-click for capsule mode, and state colours (pulsing orange in progress, green done, blue pending, grey empty). Replaced plans are archived as history rows that can be hidden, cleared and restored instead of counting towards progress, other sessions can be pinned side by side, and the data comes from the runtime sessions projection first with the official todo panel as a fallback — so the full list survives even when the official strip is collapsed. 128 shared skins (plus the 6 classic ones), Shadow DOM isolation, position remembered per profile, identical on desktop and web.'
+  zh: '常驻可拖动悬浮球实时显示当前会话的 todo 清单：球面显示完成数/总数（胶囊模式另显示进行中任务名），外环进度环同步百分比；点击展开或收起完整清单，右键切胶囊模式，状态用颜色区分（进行中橙色脉动、完成绿、待办蓝、无清单灰）。被替换的旧计划自动归档成历史行（可逐行隐藏、批量清理、一键恢复），不再计入进度；其他会话可固定并排查看。数据以 runtime 的 sessions 投影为准，官方 todo 面板仅作兜底——所以官方计划条收起时球上仍是完整清单。128 款共享皮肤（另留 6 款经典），Shadow DOM 样式隔离，位置按 profile 记忆，桌面端与网页端表现一致。'

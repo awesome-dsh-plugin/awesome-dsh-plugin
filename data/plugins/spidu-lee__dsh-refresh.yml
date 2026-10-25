@@ -1,0 +1,6 @@
+url: https://github.com/spidu-lee/dsh-refresh
+name: spidu-lee/dsh-refresh
+category: ui
+description:
+  en: Make F5, Ctrl+F5, and Ctrl+Shift+R reload the DeepSeek Harness page.
+  zh: 让 F5、Ctrl+F5 和 Ctrl+Shift+R 都能刷新 DeepSeek Harness 页面。

@@ -1,0 +1,6 @@
+url: https://github.com/hiJoeLee/dsh-whale-brand
+name: hiJoeLee/dsh-whale-brand
+category: ui
+description:
+  en: 'Puts your own animated vector logo over the DSH brand mark in the sidebar and beside the start-page headline, taking over the three single slots sidebar.brand.mark, sidebar.brand.name and conversation.hero.brand.mark. The bundled patch only inserts the plugin into the loader — the official brand plugin (@deepseek-ai/dsh-client-ui-brand-official) holds those slots too, so you must disable it in the profile''s cordis.patch.yml and restart. Ships a swimming whale that follows light and dark themes through currentColor and is tuned to stay legible at the sidebar''s 24 px.'
+  zh: '把自己做的矢量 Logo 换到 DSH 侧栏与首屏标题旁，接管 sidebar.brand.mark / sidebar.brand.name / conversation.hero.brand.mark 这三个 single 槽位。包里自带的补丁只把自己插进 loader——这三个槽位同时被官方品牌插件 @deepseek-ai/dsh-client-ui-brand-official 占着，所以要先在 profile 的 cordis.patch.yml 里把它 disabled，再重启 DSH。默认那只鲸鱼会游动，用 currentColor 跟随明暗主题，动效按侧栏 24px 的可读性调过。'
