@@ -1,0 +1,8 @@
+url: https://github.com/scientificmaniac/dsh-code-highlight
+name: scientificmaniac/dsh-code-highlight
+category: docs
+description:
+  en: 'Syntax-highlighted code for reports via one highlight_code tool: 68 languages, 15 themes, 11 output formats (inline HTML, Word-ready SVG/PNG, LaTeX), incl. the classic SyntaxHighlighter themes.'
+  zh: '报告代码高亮：一个 highlight_code 工具，68 种语言、15 套主题、11 种输出（内联 HTML、Word 可插 SVG/PNG、LaTeX 等），含 codeinword.com 同款 SyntaxHighlighter 经典主题。'
+tarball: https://github.com/scientificmaniac/dsh-code-highlight/releases/download/v1.1.0/dsh-code-highlight-1.1.0.tgz
+ 
