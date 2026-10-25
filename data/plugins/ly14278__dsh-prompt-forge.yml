@@ -1,8 +1,0 @@
-url: https://github.com/ly14278/dsh-prompt-forge
-name: ly14278/dsh-prompt-forge
-category: ui
-icon: https://raw.githubusercontent.com/ly14278/dsh-prompt-forge/main/docs/images/logo.png
-tarball: https://github.com/ly14278/dsh-prompt-forge/releases/download/v0.1.0/dsh-prompt-forge-0.1.0.tgz
-description:
-  zh: "在输入框右侧加一个「优化」按钮：把你随手写的一句话改写成分层的产品需求（一句话定位、核心功能、视觉参考、设计规范），改写前后左右并排对照，可以接受回填输入框、重新生成一版，或取消保持原文不动。使用你自己的模型账号，不需要额外配置。"
-  en: "Adds an Optimize button to the composer: it rewrites a rough one-liner into a layered product brief (positioning, key features, visual references, design tokens), shows the original and the rewrite side by side, and lets you accept it into the input, regenerate another version, or cancel and keep your text untouched. Runs on your own model account, no extra configuration."
