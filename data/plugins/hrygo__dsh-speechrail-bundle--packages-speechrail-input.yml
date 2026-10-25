@@ -1,0 +1,7 @@
+url: https://github.com/hrygo/dsh-speechrail-bundle/tree/main/packages/speechrail-input
+name: hrygo/dsh-speechrail-bundle#speechrail-input
+category: voice
+tarball: https://github.com/hrygo/dsh-speechrail-bundle/releases/latest/download/dsh-speechrail-bundle.tgz
+description:
+  en: "Local voice input for the DeepSeek Harness composer: record in the browser, transcribe through your own loopback SpeechRail service or any other OpenAI-compatible engine, and insert the text into the draft. It reads the service capability snapshot for upload and duration limits, languages and the credential verdict, keeps a fail-closed gate for an upload whose outcome is unknown, and gives agents a read-only status tool."
+  zh: "在 DSH 输入框里直接说话：浏览器录音，交由本机 SpeechRail 服务（或回环上的任意 OpenAI 兼容引擎）转写并插入草稿。读取服务能力快照（上传与时长限额、语言、鉴权判定），对结局未知的上传保持未确认门禁，并给 Agent 一个只读状态工具。只连回环地址，不激活配置、不写凭据、不做真实录音。"
