@@ -1,0 +1,8 @@
+url: https://github.com/ccl4-56-23-5/DSH-Plugins/tree/main/DSH控制桥插件/1.0.0
+name: ccl4-56-23-5/DSH-Plugins#control-bridge
+category: remote
+description:
+  en: "Control DSH sessions, models, workspaces, plugins, and settings through host APIs and a DOM control tree."
+  zh: "通过宿主 API 与 DOM 控件树管理 DSH 会话、模型、工作区、插件和设置。"
+icon: https://raw.githubusercontent.com/ccl4-56-23-5/DSH-Plugins/main/DSH控制桥插件/1.0.0/lib/assets/icon.png
+tarball: https://github.com/ccl4-56-23-5/DSH-Plugins/releases/download/dsh-control-v1.0.0/dsh-control-bridge-1.0.0.tgz
