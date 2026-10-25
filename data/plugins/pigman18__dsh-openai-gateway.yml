@@ -1,0 +1,7 @@
+url: https://github.com/pigman18/dsh-openai-gateway
+name: pigman18/dsh-openai-gateway
+category: model
+description:
+  en: 'Exposes every model of every provider configured in DeepSeek Harness through one OpenAI-compatible endpoint on a fixed loopback port, with a sidebar page for the base URL, key, port and model ids.'
+  zh: 把 DeepSeek Harness 里已配置的全部 provider 与模型暴露成一个固定端口的 OpenAI 兼容接口，并在侧边栏提供地址、密钥、端口与模型 ID 的复制页面。
+icon: https://raw.githubusercontent.com/pigman18/dsh-openai-gateway/main/assets/icon-180.png

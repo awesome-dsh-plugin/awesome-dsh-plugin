@@ -1,0 +1,6 @@
+url: https://github.com/Setsuna-Kitahara/dsh-session-lock
+name: Setsuna-Kitahara/dsh-session-lock
+category: session
+description:
+  en: 'A lock button on every sidebar session row; archiving a locked session through the client-side workspaces.archiveSession — the ⋮ menu, or another plugin calling the same client method — is refused with a notice, the lock list is persisted on the host, and a host route bulk-archives inactive sessions while always skipping locked ones. Calls that reach the host registry directly are not intercepted.'
+  zh: '侧栏每个会话行上的锁按钮：锁定的会话经客户端 workspaces.archiveSession 归档时（⋮ 菜单，或其它插件调用的同一方法）会被拦下并提示；锁清单持久化在宿主侧，另有批量归档不活跃会话的宿主路由，永远跳过已锁定的会话。直接打到宿主注册表的调用不在拦截范围内。'

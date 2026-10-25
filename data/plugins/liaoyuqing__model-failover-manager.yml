@@ -3,5 +3,5 @@ name: liaoyuqing/model-failover-manager
 category: model
 tarball: https://github.com/liaoyuqing/model-failover-manager/releases/latest/download/model-failover-manager.tgz
 description:
-  en: Adds routing groups to the session model picker and fails over to the next usable model once the current one exhausts every retry policy.
-  zh: 为会话模型选择位加入路由分组，当前模型重试耗尽后自动切换到组内下一个可用模型。
+  en: "Model routing groups for the session model picker: bind a group to a session, and once a model exhausts every retry policy the plugin records the failure with its error code, switches to the next usable model in the group and continues the same turn. Groups carry per-model priority, Beijing-time active windows and expiry dates; subagents inherit their parent session's group and can also pick models or bind their own; models served by dsh-our-free-model retry another account before failing over."
+  zh: "为会话模型选择位提供路由分组：把分组绑定到会话后，某个模型在所有重试策略耗尽时插件会记录其失败原因与错误码、切换到组内下一个可用模型并继续本轮。分组支持模型优先级、按北京时间的生效时段与截止日；子代理继承父会话的分组，也可自行选模型或绑定自己的分组；属于 dsh-our-free-model 的模型会先换账号重试再兜底切换。"

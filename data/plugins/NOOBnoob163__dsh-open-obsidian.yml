@@ -2,5 +2,5 @@ url: https://github.com/NOOBnoob163/dsh-open-obsidian
 name: NOOBnoob163/dsh-open-obsidian
 category: notify
 description:
-  en: 'Opens the Obsidian vault a DSH session is working in, on the first human message — so your sync plugin (Nutstore sync, Obsidian Sync, Obsidian Git, …) starts running and the files the agent edits actually get synced. Skips a vault that is already open, and opens a new window behind the current one instead of stealing focus. Windows only.'
-  zh: '会话的第一条真人消息到达时，自动打开该会话工作目录所在的 Obsidian 库——这样你装的同步插件（坚果云同步、Obsidian Sync、Obsidian Git 等）就会开始工作，AI 在库里改的东西才能真正同步出去。已开着的库直接跳过；新开的窗口压到当前窗口后面而不抢焦点。仅支持 Windows。'
+  en: "Opens the Obsidian vault a DSH session is working in, on the first human message — so your sync plugin (Nutstore sync, Obsidian Sync, Obsidian Git, …) starts running and the files the agent edits actually get synced. Skips a vault that is already open, and opens a new window behind the current one instead of stealing focus. Also serializes writers per vault — a second conversation's write is refused before it runs and queued until the holder is done, so a sync client cannot splice two conversations' edits together. Windows only."
+  zh: "会话的第一条真人消息到达时，自动打开该会话工作目录所在的 Obsidian 库——这样你装的同步插件（坚果云同步、Obsidian Sync、Obsidian Git 等）就会开始工作，AI 在库里改的东西才能真正同步出去。已开着的库直接跳过；新开的窗口压到当前窗口后面而不抢焦点。同时保证同一个库同一时刻只有一个对话在写——第二个对话的写入会在执行前被拦下并排队，等前一个写完才放行，避免同步客户端把两个对话的改动拼在一起。仅支持 Windows。"

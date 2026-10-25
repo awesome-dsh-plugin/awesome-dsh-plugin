@@ -1,0 +1,6 @@
+url: https://github.com/kang200862/dsh-firefly-spring-skin
+name: kang200862/dsh-firefly-spring-skin
+category: theme
+description:
+  en: 'Firefly "Spring Missive" theme skin for the DeepSeek Harness web GUI. Overrides 74 --dsw-alias-* design tokens in matched light and dark sets, draws a spring-window backdrop with drifting petals and fireflies, places one character illustration on each side of the layout, and keeps the centre column legible with a radial spotlight scrim. Registers a Settings section with switches for the skin and for the artwork; both choices persist in localStorage.'
+  zh: '流萤「春日手信」主题皮肤。覆盖 74 个 --dsw-alias-* 官方设计令牌（明暗两套），绘制春日橱窗背景与飘落花瓣、萤火；布局两侧各放一张人物立绘，中央用径向聚光遮罩保证文字对比度；在设置里注册分区，提供皮肤与立绘两个开关，选择存在 localStorage。'

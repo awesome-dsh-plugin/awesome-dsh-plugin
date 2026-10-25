@@ -2,5 +2,5 @@ url: https://github.com/exoticknight/dsh-system1
 name: exoticknight/dsh-system1
 category: tools
 description:
-  en: Provides a typed System One decision service and agent tool for yes/no checks, classification, and scoring.
-  zh: 为 DeepSeek Harness 提供类型化的 System One 判断服务与智能体工具，支持是非判断、分类和评分。
+  en: Connects TypeSafe/Jev, Cloudflare/Clef, Nace/Drex, self-hosted Laya, and custom decision providers through one interface for agent and plugin classification, filtering, scoring, and image-object localization with structured results.
+  zh: 通过统一接口接入 TypeSafe/Jev、Cloudflare/Clef、Nace/Drex、本地 Laya 与自定义决策提供商，支持 Agent 和插件进行分类、筛选、评分与图片目标定位，并返回结构化结果。

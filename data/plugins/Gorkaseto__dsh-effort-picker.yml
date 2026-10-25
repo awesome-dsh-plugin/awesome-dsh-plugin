@@ -1,0 +1,6 @@
+url: https://github.com/Gorkaseto/dsh-effort-picker
+name: Gorkaseto/dsh-effort-picker
+category: ui
+description:
+  en: Adds a sticky effort slider inside the composer model menu to select reasoning levels, with generic stops for custom models.
+  zh: 在输入框模型菜单底部固定推理强度滑块，无需进入子菜单即可切换思考档位，并为自定义模型自动补齐通用档位。 

@@ -1,0 +1,8 @@
+url: https://github.com/FanXi1230/fanxi/tree/main/plugins/dsh-reasoning-effort-dock
+name: FanXi1230/fanxi#dsh-reasoning-effort-dock
+category: ui
+description:
+  en: Adds a draggable off / low / high / max reasoning-effort slider to the composer model row and applies the selected level to the current DSH session. The slider only appears for models that offer all four effort levels.
+  zh: 在输入框模型栏加入可拖拽吸附的 off / low / high / max 推理强度滑轨，并把选中档位应用到当前 DSH 会话。仅在模型同时提供这四个推理档位时才会显示滑轨。
+icon: https://raw.githubusercontent.com/FanXi1230/fanxi/main/plugins/dsh-reasoning-effort-dock/assets/icon-180.png
+tarball: https://github.com/FanXi1230/fanxi/releases/download/dsh-reasoning-effort-dock-v1.0.0/dsh-reasoning-effort-dock-1.0.0.tgz

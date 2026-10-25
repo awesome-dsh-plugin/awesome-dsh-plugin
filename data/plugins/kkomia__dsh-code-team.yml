@@ -1,0 +1,6 @@
+url: https://github.com/kkomia/dsh-code-team
+name: kkomia/dsh-code-team
+category: workflow
+description:
+  en: 'Project Development Mode preset plus an in-chat development board for DeepSeek Harness: the lead conversation clarifies requirements and delegates to an Agent Team, and the floating board tracks each user change request through dispatch, execution, testing and acceptance with 7 board tools.'
+  zh: 'DeepSeek Harness 的「项目开发模式」预设与聊天内开发看板：主对话只澄清需求并向 Agent Team 派活，悬浮看板把每个用户修改点按派单、执行、测试、验收追踪（含 7 个看板工具）。'

@@ -1,0 +1,6 @@
+url: https://github.com/zz12hui/dsh-bili-video-summary
+name: zz12hui/dsh-bili-video-summary
+category: tools
+description:
+  en: 'Windows only. Bilibili video summarizer: downloads the audio track, transcribes it locally with faster-whisper (Python + faster-whisper, about 725 MB of models on first run), then writes the analysis markdown and renders a one-page infographic PNG.'
+  zh: '仅 Windows。B 站视频一键总结：下载音轨并用 faster-whisper 本地转写（需 Python 与 faster-whisper，首次运行下载约 725 MB 模型），随后生成解析 md 与一页「一图读懂」PNG。'

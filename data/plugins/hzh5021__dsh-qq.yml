@@ -1,0 +1,6 @@
+url: https://github.com/hzh5021/dsh-qq
+name: hzh5021/dsh-qq
+category: remote
+description:
+  en: 'Bridges a OneBot QQ bot into DSH: the owner''s direct messages open a session on the same home, answers go back to QQ, and files named with [SEND_FILE: path] are delivered. Needs a OneBot v11 implementation with a forward WebSocket (such as NapCat) and ownerId set in the config, otherwise every message is ignored. The home it shares with the main session is provided by the separately installed dsh-wakeup plugin. It also runs an unauthenticated local status endpoint on 127.0.0.1:3002 with open CORS that returns the owner QQ number, the login QR code and recent log lines (including the first 60 characters of incoming messages).'
+  zh: '把 QQ 接成一条能进来的路：主人私聊一到就地开一个会话（读同一个家、同一份起床包），答完发回去；正文带一行 [SEND_FILE: 绝对路径] 能把文件送到手机上。需另行运行带正向 WebSocket 的 OneBot v11 实现（如 NapCat），并在配置里填 ownerId，否则所有消息一律忽略；所谓「同一个家」由另装的 dsh-wakeup 提供。另外它会在 127.0.0.1:3002 开一个无鉴权、允许任意跨域的本机状态口，返回主人 QQ 号、登录二维码和最近日志（含来信前 60 个字符）。'

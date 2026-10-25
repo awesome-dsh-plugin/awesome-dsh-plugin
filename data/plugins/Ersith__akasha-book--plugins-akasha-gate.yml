@@ -1,0 +1,6 @@
+url: https://github.com/Ersith/akasha-book/tree/main/plugins/akasha-gate
+name: Ersith/akasha-book#akasha-gate
+category: memory
+description:
+  en: 'Write guard for the Akasha Book store: blocks tool calls that write into the memory data directory, and injects the store usage contract and self-layer sections into the system prompt. Companions: Hindsight (repo memory), OpenViking (user memory), and the built-in session search (see repo README). Setup: clone the repo, copy core/ aside, then replace <AKASHA_DIR> in cordis.patch.yml with its absolute path (or set the AKASHA_DIR env var); plugins fail loudly while the placeholder remains.'
+  zh: '阿卡夏之书门控：拦截写入记忆数据目录的工具调用，并把库用法约定与自我层注入系统提示。（配套：Hindsight 仓库记忆 / OpenViking 用户记忆 / 宿主会话检索；见仓库 README） 安装：clone 仓库并复制 core/，把 cordis.patch.yml 里的 <AKASHA_DIR> 换成实际路径（或设 AKASHA_DIR 环境变量）；占位符未替换时插件会明确报错。'

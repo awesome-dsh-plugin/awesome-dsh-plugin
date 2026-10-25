@@ -1,0 +1,6 @@
+url: https://github.com/ECNU/EduWork/tree/main/packages/dsh-oidc
+name: ECNU/EduWork#dsh-oidc
+category: identity
+description:
+  en: 'Configurable OIDC login and token-authorized model access, including LiteLLM and opt-in oidc-llm integration, with a standalone DSH Web backend.'
+  zh: '可配置的 OIDC 登录与令牌授权模型接入，支持 LiteLLM 和显式启用的 oidc-llm 集成，提供独立 DSH Web 后端。'

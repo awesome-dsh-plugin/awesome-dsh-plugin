@@ -1,0 +1,6 @@
+url: https://github.com/sunshaobei/dsh-balance-panel
+name: sunshaobei/dsh-balance-panel
+category: usage
+description:
+  en: Provider quota and balance status widget for the DSH web UI, showing remaining quota, usage and rate-limit windows in a dock at the bottom of the composer. Local fork of wenzetan/dsh-quota-panel.
+  zh: DSH Web 端的供应商额度与余额状态小组件，在输入框底部的停靠区展示剩余额度、用量与限流窗口。wenzetan/dsh-quota-panel 的本地分叉。

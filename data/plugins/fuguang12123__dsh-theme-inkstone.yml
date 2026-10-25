@@ -1,0 +1,7 @@
+url: https://github.com/fuguang12123/dsh-theme-inkstone
+name: fuguang12123/dsh-theme-inkstone
+category: theme
+description:
+  en: 'Inkstone is a monochrome theme inspired by Obsidian Minimal E-ink, with inverted sidebar interactions, colored Markdown headings and locally installed LXGW WenKai font fallbacks; it preserves native font and appearance preferences and targets DSH 0.2.1-rc.2.'
+  zh: '墨白：参考 Obsidian Minimal E-ink 的黑白主题，提供侧栏黑白反色、彩色 Markdown 标题及本机霞鹜文楷字体回退，保留原生字体与外观设置，适用于 DSH 0.2.1-rc.2。'
+tarball: https://github.com/fuguang12123/dsh-theme-inkstone/releases/download/v0.1.4/dsh-theme-inkstone-0.1.4.tgz

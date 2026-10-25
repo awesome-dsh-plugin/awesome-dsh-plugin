@@ -4,4 +4,4 @@ category: workflow
 description:
   en: Persistent Bots and group rooms inside DSH — each Bot keeps its own model, permission preset, workspace and session across restarts, and every answer is a run written to a ledger the sidebar panel replays.
   zh: DSH 里的常驻 Bot 与群聊房间——每个 Bot 都有自己的模型、权限预设、工作区与重启后仍在的会话，每次回答都是一条写进运行记录的 run，侧栏面板据此回放。
-tarball: https://github.com/Leo-sail/dsh-plugin-agent-collaboration/releases/download/v0.1.2/dsh-plugin-agent-collaboration-0.1.2.tgz
+tarball: https://github.com/Leo-sail/dsh-plugin-agent-collaboration/releases/download/v0.3.5/dsh-plugin-agent-collaboration-0.3.5.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/bushizhanghan/dsh-workbuddy-harness
+name: bushizhanghan/dsh-workbuddy-harness
+category: model
+tarball: https://github.com/bushizhanghan/dsh-workbuddy-harness/releases/latest/download/dsh-workmate.tgz
+description:
+  en: Brings WorkBuddy's free and paid models (domestic and international) into DSH without the WorkBuddy desktop app; published as @bushizhanghan/dsh-workmate, installable on dsh 0.2.0-rc.2 through 0.2.1 including prereleases.
+  zh: 把 WorkBuddy 国内版和国际版的免费/付费模型接进 DSH，无需 WorkBuddy 桌面版；以 @bushizhanghan/dsh-workmate 发布，支持 dsh 0.2.0-rc.2 至 0.2.1（含预发布版本）。

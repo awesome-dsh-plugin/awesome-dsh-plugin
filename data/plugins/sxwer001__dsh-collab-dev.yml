@@ -1,0 +1,7 @@
+url: https://github.com/sxwer001/dsh-collab-dev
+name: sxwer001/dsh-collab-dev
+category: workflow
+tarball: https://github.com/sxwer001/dsh-collab-dev/releases/download/v1.0.0/dsh-collab-dev-1.0.0.tgz
+description:
+  en: Saves architecture and validated plans, runs native AgentTeams workers with approval, parallel coding and independent review, and summarizes progress and verification results.
+  zh: 保存架构和可校验计划，批准后通过原生 AgentTeams 并行开发与独立审查，并汇总进度、验证结果和交付阻塞。

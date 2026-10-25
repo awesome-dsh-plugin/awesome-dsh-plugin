@@ -1,0 +1,7 @@
+url: https://github.com/Shen-18/dsh-ofm-balance
+name: Shen-18/dsh-ofm-balance
+category: usage
+tarball: https://github.com/Shen-18/dsh-ofm-balance/releases/latest/download/dsh-ofm-balance.tgz
+description:
+  en: 'Per-channel credit balances for the Our Free Model gateway in the DSH sidebar: one always-on card covering the channels the gateway supports (unconfigured channels stay hidden), collapsed to the channel the current conversation uses, expanded to one row per channel with a bar and remaining amount, with per-channel visibility toggles on the plugin detail page.'
+  zh: '在 DSH 侧栏显示 Our Free Model 网关各渠道的剩余额度：一张常驻卡片覆盖网关支持的渠道（未配置的默认隐藏），折叠时显示当前对话所用渠道及其剩余百分比，展开后每个渠道一行含进度条与余量，并可在插件详情页按渠道开关显示。'

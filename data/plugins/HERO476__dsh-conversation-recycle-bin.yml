@@ -1,0 +1,6 @@
+url: https://github.com/HERO476/dsh-conversation-recycle-bin
+name: HERO476/dsh-conversation-recycle-bin
+category: session
+description:
+  en: Delete a DSH conversation from its sidebar menu or the conversation header, optionally cascading into that conversation's associated memory nodes when you tick the box (the confirmation dialog shows the hit count before you commit); deletes land in a plugin recycle bin with restore, every action is appended to an audit log, and batch deletes are rate-limited with per-conversation rollback.
+  zh: 在会话列表菜单或会话页头部删除对话，可勾选一并删除该对话关联的记忆节点（确认框先显示命中条数）；删除进入插件回收站可恢复，每次操作写入审计日志，批量删除有限流与逐会话回滚。

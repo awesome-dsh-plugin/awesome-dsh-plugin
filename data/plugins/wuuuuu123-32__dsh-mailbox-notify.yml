@@ -2,5 +2,5 @@ url: https://github.com/wuuuuu123-32/dsh-mailbox-notify
 name: wuuuuu123-32/dsh-mailbox-notify
 category: notify
 description:
-  en: 'Emails you when a long turn finishes or errors, when a goal completes or blocks, and when an approval or a question has waited past a timeout; each new notification deletes the previous one over IMAP, so the mailbox never piles up.'
-  zh: '耗时较长或工具调用较多的任务结束时发邮件到手机，出错、目标完成或目标受阻也发；审批或提问挂起超过设定时间没人处理会另外提醒（正文带问题原文与候选项，提醒不依赖任务档位）。每封新通知会通过 IMAP 删掉上一封，邮箱不会堆积。'
+  en: 'Emails you when a long turn finishes or errors, when a goal completes or blocks, and when an approval or a question has waited past a timeout; each new notification deletes the previous one from the inbox over IMAP, so the inbox holds at most one.'
+  zh: '耗时较长或工具调用较多的任务结束时发邮件到手机，出错、目标完成或目标受阻也发；审批或提问挂起超过设定时间没人处理会另外提醒（正文带问题原文与候选项，提醒不依赖任务档位）。每封新通知会通过 IMAP 删掉收件箱里的上一封，收件箱里最多留一封；其它文件夹不扫描。'

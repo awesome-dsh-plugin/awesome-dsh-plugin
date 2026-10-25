@@ -1,0 +1,6 @@
+url: https://github.com/yffo/dsh-engramory-recall
+name: yffo/dsh-engramory-recall
+category: memory
+description:
+  en: "Local BM25 auto-recall, a fail-closed write guard, a static doctor and a memory panel for an Engramory markdown store. No network, no daemon and no model calls unless you opt in; recall quality is measured by a reproducible benchmark in the repository."
+  zh: "给 Engramory 记忆库加本地 BM25 自动召回、写入闸门、静态体检与记忆面板。不联网、不起进程，默认不调模型；召回质量由仓库里的可复算基准量化。"

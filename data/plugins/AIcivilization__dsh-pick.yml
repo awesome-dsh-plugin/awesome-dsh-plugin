@@ -1,0 +1,6 @@
+url: https://github.com/AIcivilization/dsh-pick
+name: AIcivilization/dsh-pick
+category: market
+description:
+  en: 'Plugin advisor for DeepSeek Harness: describe what you need and it ranks the npm packages carrying the dsh-plugin keyword by denoised metrics (daily baseline, week-over-week growth, release cadence, freshness) into a first pick, alternates and plugins to avoid; ships a sidebar panel, four AI tools and one-click install.'
+  zh: 'DSH 插件选购顾问：说需求，从带 dsh-plugin 关键字的 npm 包里按去噪指标（日常基线、周环比、版本节奏、新鲜度）排出首选、备选和不推荐；提供右侧栏面板、4 个 AI 工具和一键安装。'

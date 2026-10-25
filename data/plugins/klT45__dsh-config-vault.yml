@@ -1,0 +1,7 @@
+url: https://github.com/klT45/dsh-config-vault
+name: klT45/dsh-config-vault
+category: dev
+tarball: https://github.com/klT45/dsh-config-vault/releases/latest/download/dsh-config-vault.tgz
+description:
+  en: 'Configuration vault for DeepSeek Harness: snapshot, diff and safely roll back profile patches, plugin manifests, skills and workspace lists, with credentials excluded by default.'
+  zh: 配置保险箱：为 DSH 配置创建快照、对比差异并安全回滚设置补丁、插件清单、技能与规则、工作区列表，凭据默认排除。

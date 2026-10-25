@@ -1,0 +1,6 @@
+url: https://github.com/sherconan/dsh-task-mascot
+name: sherconan/dsh-task-mascot
+category: fun
+description:
+  en: 'Web mascot that acts out each live tool call (read, write, edit, search, run, plan, sub-agent, wait, error) with matching step cards in chat; ships two swappable character packs.'
+  zh: '跟随 Agent 每一次工具调用（读、写、改、搜、运行、规划、子代理、等待、出错）实时切换动作的网页吉祥物，并在对话中显示对应步骤卡片；内置两套可切换角色包。'

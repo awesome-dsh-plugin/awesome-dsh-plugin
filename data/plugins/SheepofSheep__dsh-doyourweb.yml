@@ -2,5 +2,5 @@ url: https://github.com/SheepofSheep/dsh-doyourweb
 name: SheepofSheep/dsh-doyourweb
 category: browser
 description:
-  en: 'Reference already-open Chrome and Edge tabs with @ mentions in DSH; reuse login state to read pages, run batched actions, take screenshots and call WebMCP tools on supported pages through a paired browser extension.'
-  zh: '通过 @ 引用已打开的 Chrome / Edge 标签页，配合浏览器扩展复用登录状态，读取页面、批量操作、截图，并在页面支持时调用 WebMCP 工具。'
+  en: 'Reference logged-in Chrome/Edge tabs and authorized local HTML with @ for reading, batched actions, screenshots and WebMCP; collect annotations in chat drafts with a draggable toolbar. Select running Windows apps with icons, prefer a matching installed MCP or approve installation, then fall back to Cua Driver. Supports text and key chords, paged control handles, minimized-window checks and optional action readback. Includes guided browser pairing and refreshed annotation controls; background input depends on the app.'
+  zh: '用 @ 引用已登录的 Chrome / Edge 标签页和已授权的本地 HTML，读取、批量操作、截图并调用 WebMCP；拖动批注浮窗，将多条批注加入聊天草稿后统一发送。应用菜单显示运行中窗口和图标，优先连接匹配的本地 MCP，未安装先询问，无匹配时使用 Cua Driver。支持打字、快捷键、控件分页、最小化坐标检查及可选的操作后校验；连接页和批注界面已更新，后台输入能力取决于应用。'

@@ -1,0 +1,6 @@
+url: https://github.com/cheeseRatRat/dsh-buwang
+name: cheeseRatRat/dsh-buwang
+category: memory
+description:
+  en: A private memory library for DSH with customizable personas that only records when you ask, storing everything locally in Markdown.
+  zh: 不忘 —— 主动记录的私人记忆库，内置可修改的人格，只在你开口时才写；读取时每轮自动注入人格与记忆，纯本机 Markdown 不联网。
