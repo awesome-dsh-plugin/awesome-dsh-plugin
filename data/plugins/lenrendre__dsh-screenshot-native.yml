@@ -1,0 +1,6 @@
+url: https://github.com/lenrendre/dsh-screenshot-native
+name: lenrendre/dsh-screenshot-native
+category: ui
+description:
+  en: 'WeChat-style screenshot: freeze the desktop, drag a region or click a window, and the crop lands in the composer.'
+  zh: '微信式截图：点一下冻结桌面，框选区域或单击窗口，截图直接进输入框。'
