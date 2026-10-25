@@ -1,6 +1,7 @@
 url: https://github.com/ljxdsg12/dsh-composer-polish
 name: ljxdsg12/dsh-composer-polish
 category: ui
+tarball: https://github.com/ljxdsg12/dsh-composer-polish/releases/latest/download/dsh-composer-polish.tgz
 description:
   en: "Adds a Polish button to the composer tool row right of the permission control: it reads the draft you have already typed, has the current model infer your intent and rewrite the draft into a clearer prompt, then turns the button into Cancel so one click restores the exact pre-polish text."
   zh: "在对话框工具行「权限」按钮右侧加一个「润色」按钮：读取输入框里已写好的草稿，先让当前模型推断你的意图再改写成更清晰的提示词，润色完成后按钮变为「取消」，一键回退到润色前的原文。"
