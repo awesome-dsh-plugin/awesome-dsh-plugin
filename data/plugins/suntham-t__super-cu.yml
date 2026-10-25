@@ -7,3 +7,4 @@ category: tools
 description:
   en: 'Windows desktop control over UI Automation: a compact semantic snapshot with stable element ids (cu_show), batched mouse, keyboard, window and wait/assert actions (cu_do), and screenshot-based normalized coordinates as fallback.'
   zh: '基于 UI Automation 的 Windows 桌面操作：紧凑的语义快照与稳定的元素编号（cu_show）、可批量的鼠标/键盘/窗口动作与等待断言（cu_do），以及基于截图的归一化坐标兜底。'
+# resubmitted 2026-10-25 after the repository passed the 1-day age gate
