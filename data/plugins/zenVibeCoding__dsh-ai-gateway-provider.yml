@@ -1,0 +1,7 @@
+url: https://github.com/zenVibeCoding/dsh-ai-gateway-provider
+name: zenVibeCoding/dsh-ai-gateway-provider
+category: model
+description:
+  en: 'Any OpenAI-compatible gateway: probe it before saving, then manage its models, per-model parameters and tests. New API, LiteLLM and one-api-family backends also report quota; others work without it.'
+  zh: '任意 OpenAI 兼容网关：保存前先探测，之后管理模型清单、逐个调参并测试。New API、LiteLLM、one-api 系后端还会显示额度，其余网关没有额度也照常可用。'
+icon: https://raw.githubusercontent.com/zenVibeCoding/dsh-ai-gateway-provider/master/assets/icon-180.png
