@@ -1,0 +1,6 @@
+url: https://github.com/gitend/dsh-usd-brep
+name: gitend/dsh-usd-brep
+category: tools
+description:
+  en: NURBS BRep solid modeling studio with natural-language input, live 3D viewport (measure/wireframe/fit), STEP export, and agent tools driving NVIDIA usd-brep through a managed CPython venv.
+  zh: NURBS BRep 实体建模工作台：自然语言输入、实时 3D 视口（测量/线框/适合）、STEP 导出，并通过托管 CPython venv 驱动 NVIDIA usd-brep 的 agent 工具。
