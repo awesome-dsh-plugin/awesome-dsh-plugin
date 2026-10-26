@@ -1,0 +1,6 @@
+url: https://github.com/waning-sun/dsh-napcat-keeper
+name: waning-sun/dsh-napcat-keeper
+category: tools
+description:
+  en: 'Keeps the NapCat QQ backend alive next to DSH: probes the OneBot 11 HTTP port at startup, launches NapCat when the port does not answer, then rechecks every 45 seconds, kills duplicate process chains, hides the console window, creates the logon scheduled task, and adds a settings page plus napcat_status, napcat_restart and napcat_dedupe tools.'
+  zh: '让 NapCat 这个 QQ 后端跟着 DSH 一起活着：启动时探测 OneBot 11 的 HTTP 端口，连不上就拉起 NapCat，之后每 45 秒复查、清掉重复的进程链、隐藏控制台窗口、自动创建计划任务，并提供设置页以及 napcat_status、napcat_restart、napcat_dedupe 三个工具。'
