@@ -2,5 +2,5 @@ url: https://github.com/kennethfan/dsh-bailian-catalog
 name: kennethfan/dsh-bailian-catalog
 category: model
 description:
-  en: 'Bailian (DashScope / Model Studio) model catalog in the DSH settings page: lists every model the configured API key can reach, adds or removes individual models in the Bailian provider route, and shows the active session''s context window, tokens used and remaining budget. An sk- key has no balance endpoint, so quota here means context quota.'
-  zh: 'DSH 设置页里的百炼（DashScope / Model Studio）模型目录：列出当前 API Key 可用的全部模型，可把单个模型加入或移出百炼 provider 路由，并显示当前会话的上下文窗口、已用 tokens 与剩余额度。百炼 sk- Key 没有余额接口，因此这里的额度指上下文额度。'
+  en: 'Bailian (DashScope / Model Studio) model catalog in the DSH settings page: lists every model the configured API key can reach, groups them by model family, probes whether a model is actually callable (an unopened model answers 403, which DSH reports as an invalid key), refuses to add models that fail the probe, and shows the active session''s context window and remaining budget. An sk- key has no balance endpoint, so quota here means context quota.'
+  zh: 'DSH 设置页里的百炼（DashScope / Model Studio）模型目录：列出当前 API Key 可用的全部模型、按模型家族分组，可探测某模型是否真的可调用（未开通会返回 403，而 DSH 会把它显示成密钥无效），探测不通过的模型拒绝加入配置，并显示当前会话的上下文窗口与剩余额度。百炼 sk- Key 没有余额接口，因此这里的额度指上下文额度。'
