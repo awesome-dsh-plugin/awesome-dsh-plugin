@@ -1,0 +1,7 @@
+url: https://github.com/hulibuld/dsh-lifecard
+name: hulibuld/dsh-lifecard
+category: ui
+description:
+  en: 'Local-first character archive in the DSH sidebar: it interviews you about someone and writes the answers into Markdown cards, imports SillyTavern character cards, writes a novel chapter by chapter, and roleplays with a card plus its world book; anything written into a card has to be quotable from material you wrote.'
+  zh: '侧边栏里的本地优先人物档案：访谈你身边的人并写成 Markdown 卡，能导入酒馆角色卡，也能逐章写小说、拿角色卡和世界书演一段；写进卡的每一条都要能在你写过的材料里找到原句。'
+icon: https://raw.githubusercontent.com/hulibuld/dsh-lifecard/main/assets/icon-180.png
