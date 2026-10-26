@@ -1,0 +1,6 @@
+url: https://github.com/shudaozhang/dsh-connect-zcode
+name: shudaozhang/dsh-connect-zcode
+category: model
+description:
+  en: 'Requires the ZCode desktop client installed and signed in. Registers its bundled coding agent as a DeepSeek Harness model provider, so requests draw on the client account''s own Start Plan / Coding Plan quota with real streaming, image input and per-session resume, no API key. The client install and data directory are auto-discovered and the agent is launched the way the client launches it; the model catalogue is read from the installed client at runtime, so context windows and image support follow it. Models can be enabled or disabled per model from the plugin page, with edits drafted locally and committed on Save. Tool permission requests are denied by default and unknown approval methods are always denied; full auto mode requires an explicit opt-in. The policy is not an OS sandbox.'
+  zh: '需已安装并登录 ZCode 桌面客户端。把客户端自带的 coding agent 注册为 DeepSeek Harness 的模型提供方，请求直接消耗该客户端账号自己的 Start Plan / Coding Plan 额度，真流式、图片输入、会话续接，无需 API Key。自动发现客户端安装与数据目录，并按客户端自己的方式启动内置 agent；模型清单在运行时从已安装的客户端读取，因此上下文窗口与图片支持跟随它。可在插件页逐个模型启用/停用，改动先存为草稿、点保存才写入。工具权限请求默认拒绝，未知的审批方法始终拒绝，全自动需显式开启；该策略不构成操作系统沙箱。'
