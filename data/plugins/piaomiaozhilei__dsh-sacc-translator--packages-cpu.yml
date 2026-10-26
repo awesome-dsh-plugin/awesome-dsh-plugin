@@ -1,7 +1,7 @@
 url: https://github.com/piaomiaozhilei/dsh-sacc-translator/tree/main/packages/cpu
 name: piaomiaozhilei/dsh-sacc-translator#cpu
 category: docs
-tarball: https://github.com/piaomiaozhilei/dsh-sacc-translator/releases/download/v0.1.17/dsh-sacc-translator-cpu-0.1.17.tgz
+tarball: https://github.com/piaomiaozhilei/dsh-sacc-translator/releases/download/v0.2.2/dsh-sacc-translator-cpu-0.2.2.tgz
 description:
   en: Windows x64 translator with a dedicated sidebar entry and Workbench / Chat interface, side-by-side text and document translation, screen-region translation, recent history, and host model selection, voice input and preview. CPU OCR without NVIDIA dependencies.
   zh: 翻译 CPU：Windows x64 专属翻译界面，侧栏独立入口，支持工作台／聊天切换、原文与译文双栏、尽量保留原格式的文档翻译、屏幕框选翻译及最近记录，复用宿主模型、语音输入与预览。使用 CPU OCR，无需 NVIDIA 运行库。
