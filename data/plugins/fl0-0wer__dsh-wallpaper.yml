@@ -1,0 +1,7 @@
+url: https://github.com/fl0-0wer/dsh-wallpaper
+name: fl0-0wer/dsh-wallpaper
+category: theme
+icon: https://raw.githubusercontent.com/fl0-0wer/dsh-wallpaper/main/preview.jpg
+description:
+  en: "Puts a photo behind the whole DeepSeek Harness web window: the host half serves an image from the wallpaper folder inside the DSH home (it follows DSH_HOME, so a relocated install keeps its picture) and the client half paints it behind the shell while the surface tokens turn translucent; a Settings card picks a photo, toggles the wallpaper, restores the shipped default and gives scrim, panel opacity, blur and saturation their own sliders."
+  zh: "给 DSH 换一张整窗背景图：宿主从 DSH 家目录下的 wallpaper 文件夹读图并提供（目录跟随 DSH_HOME，装到别的盘也不会丢图），客户端把它铺在整个窗口后面、界面表层自动半透明；设置卡片里可以选图、开关壁纸、恢复自带默认图，遮罩、面板透明度、模糊、饱和度各有滑杆。"
