@@ -1,0 +1,6 @@
+url: https://github.com/iwanant/dsh-emotion-ball
+name: iwanant/dsh-emotion-ball
+category: ui
+description:
+  en: 'A 44x44 always-on-top desktop ball for DSH that reflects what the agent is actually doing (thinking, searching, web fetch, error, waiting for input) and shows an exclamation or question-mark badge when a task finishes or needs an answer while you are away. Windows only; it downloads its own Electron runtime on first use.'
+  zh: '给 DSH 的桌面情绪小球：44×44 置顶小挂件，实时反映 agent 正在做什么（思考、检索、联网、出错、等待输入）；任务在你不看时完成、或有问题等你回答时，右上角亮「!」「?」角标。仅 Windows；首次使用会自行下载 Electron 运行时。'
