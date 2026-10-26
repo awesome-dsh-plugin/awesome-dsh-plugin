@@ -2,5 +2,5 @@ url: https://github.com/xinspark/dsh-better-session-title
 name: xinspark/dsh-better-session-title
 category: ui
 description:
-  en: Replaces the session topbar title with a workspace and session breadcrumb, switching workspaces, sessions and subagents from dropdowns in the topbar.
-  zh: 把会话顶栏标题换成工作区与会话面包屑，可在顶栏下拉里切换工作区、会话与子智能体。
+  en: Replaces the session topbar title with a workspace and session breadcrumb, switching workspaces, sessions and subagents from topbar dropdowns; adding a workspace opens a dialog shaped like the native one, which can hand off to the system folder picker.
+  zh: 把会话顶栏标题换成工作区与会话面包屑，可在顶栏下拉里切换工作区、会话与子智能体；添加工作区使用与原生同度量的对话框，并可交给系统文件夹选择器。
