@@ -2,6 +2,6 @@ url: https://github.com/regrevia/Envoy/tree/main/integrations/dsh/envoy-dsh
 name: regrevia/Envoy#envoy-dsh
 category: browser
 description:
-  en: 'Reads a linked page, PDF, video or audio through Envoy and returns source-located Markdown, wiki pages or knowledge-base entries the harness can use directly. One skill, shared with Codex and Claude Code; this entry is the DeepSeek Harness bundle, which provisions its own Envoy runtime on first use. When a source needs a human step — fresh cookies, a one-time sign-in, or frames only the host can show — the result says so instead of passing off a cover image as the video.'
-  zh: '把链接直接变成可用的素材：网页、PDF、视频、音频交给 Envoy 读取，返回带来源定位的 Markdown、wiki 页或知识库条目，供 DeepSeek Harness 直接使用。同一套技能与 Codex、Claude Code 共用；本条目是 DeepSeek Harness 插件，首次使用时自行准备 Envoy 运行时。需要人类动作时（新鲜 cookie、一次性登录、必须由宿主展示的画面）结果会明说，而不是把封面当成视频。'
+  en: 'Paste a link, let the agent take it from there. Douyin, Xiaohongshu and Bilibili videos come back parsed — captions, chapters, timestamped frames — and articles, PDFs and audio become Markdown, wiki pages or knowledge-base entries the model can quote. A sign-in wall is one scan in place; nothing else to install. One skill across Codex, Claude Code and DeepSeek Harness.'
+  zh: '粘贴一条链接，剩下的交给 Agent。抖音、小红书、B 站的视频自动解析——字幕、分P、时间轴画面；文章、PDF、音频同样变成可直接引用的 Markdown、wiki 页和知识库条目。要登录就地扫码，不用再装第二个 CLI。同一套技能，Codex / Claude Code / DeepSeek Harness 通用。'
 icon: https://raw.githubusercontent.com/regrevia/Envoy/main/integrations/dsh/envoy-dsh/icon.png
