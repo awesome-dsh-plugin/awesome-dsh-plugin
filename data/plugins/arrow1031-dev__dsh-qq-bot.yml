@@ -3,5 +3,5 @@ name: @sputnikzaychik/dsh-qq-bot
 category: remote
 tarball: https://registry.npmjs.org/@sputnikzaychik/dsh-qq-bot/-/dsh-qq-bot-0.12.0.tgz
 description:
-  zh: "通过 OneBot 11/12、Satori、Milky 或 QQ 官方接口把 DeepSeek Harness 接到 QQ：十个分权工具、识图、两段式主动发言；编排工具（子代理 / 队友 / 工作流）不暴露给 QQ 会话，拥有者私聊里也要先过一次 30 秒 TOTP 动态码才放行，跑完自动把产物打包发回。"
-  en: "Bridges DeepSeek Harness to QQ over OneBot 11/12, Satori, Milky or the official QQ API: ten scoped tools, vision, a two-stage proactive chatter. Orchestration tools (subagent / teammates / workflow) are never exposed to QQ sessions; even in the owner's private chat they require a one-shot 30-second TOTP code first, and artifacts are packaged and delivered when the run finishes."
+  zh: "把 DeepSeek Harness 接到 QQ。支持 OneBot 11/12、Satori、Milky 与 QQ 官方机器人接口，群聊和私聊各有一条独立会话；内置十个工具：群管理、聊天记录与图片理解、联网搜索、网页抓取、图片反搜、生图等，另有按间隔自主接话的主动发言（判断与发言可分用两个模型）。模型、代理、白名单等全部在 DSH 设置页里配置，不需要改代码。"
+  en: "Connects DeepSeek Harness to QQ over OneBot 11/12, Satori, Milky or the official QQ bot API, with a separate session per group or private chat and ten built-in tools: group management, chat history with image understanding, web search, page fetching, reverse image search and image generation. Optional proactive chatter reads recent messages on an interval and decides whether to join in, with the judging and speaking stages able to use different models. Models, proxy and allowlists are configured in the DSH settings page."
