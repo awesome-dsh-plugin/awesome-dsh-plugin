@@ -1,0 +1,7 @@
+url: https://github.com/awaYFawa/dsh-plugins-folders
+name: awaYFawa/dsh-plugins-folders
+category: ui
+description:
+  en: 'Adds folders to the DSH Plugins page: group installed plugins, toggle a whole group, batch move with undo, search across groups, long-press drag to reorder, and reinstall removed plugins from their record.'
+  zh: '给 DSH 插件页加文件夹：把已装插件分组、整组开关、批量移动并可撤销、跨分组搜索、长按拖动排序，卸载后还能按记录一键装回。'
+icon: https://raw.githubusercontent.com/awaYFawa/dsh-plugins-folders/main/assets/icon-180.png
