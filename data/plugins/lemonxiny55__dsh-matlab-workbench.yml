@@ -1,0 +1,6 @@
+url: https://github.com/lemonxiny55/dsh-matlab-workbench
+name: lemonxiny55/dsh-matlab-workbench
+category: dev
+description:
+  en: "DSH Desktop workbench for official MATLAB MCP experiments, verified PNG figures, MATLAB-computed metrics, and PID parameter sweep comparisons."
+  zh: "在 DSH Desktop 中通过官方 MATLAB MCP 执行实验，校验 PNG 图像及 MATLAB 计算指标，并比较 PID 参数扫描结果。"
