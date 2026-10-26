@@ -2,5 +2,5 @@ url: https://github.com/liujianqiao701/dsh-cost-today
 name: liujianqiao701/dsh-cost-today
 category: usage
 description:
-  en: Shows today's spend under the message box and in the session header, read from the dsh-cost-meter ledger with local-day aggregation and currency conversion, plus a cost_today tool and a /cost command.
-  zh: 在输入框下方与会话头部显示今日花费，金额取自 dsh-cost-meter 的账本并按本地日汇总、换算币种；另提供 cost_today 工具与 /cost 命令。
+  en: Shows today's, this month's and cumulative spend under the message box and in the session header, read from the dsh-cost-meter ledger with local-day aggregation and currency conversion, plus a cost_today tool and a /cost command.
+  zh: 在输入框下方与会话头部显示今日、本月与累计花费，金额取自 dsh-cost-meter 的账本并按本地日汇总、换算币种；另提供 cost_today 工具与 /cost 命令。
