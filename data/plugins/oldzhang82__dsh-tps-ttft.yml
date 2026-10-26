@@ -1,0 +1,6 @@
+url: https://github.com/oldzhang82/dsh-tps-ttft
+name: oldzhang82/dsh-tps-ttft
+category: usage
+description:
+  en: 'Per-turn TPS and TTFT statistics for DeepSeek Harness: model time, tool time, time-to-first-token, and output speed per turn.'
+  zh: 为 DeepSeek Harness 提供每轮 TPS/TTFT 统计：模型耗时、工具耗时、首 token 延迟、输出速度。

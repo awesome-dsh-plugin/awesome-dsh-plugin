@@ -1,0 +1,6 @@
+url: https://github.com/M1r0er/dsh-modpack
+name: M1r0er/dsh-modpack
+category: tools
+description:
+  en: 'PCL-style modpack for DSH plugins: export a small .dshpack.zip manifest of the selected third-party plugins and their versions, then import it with a preview before reinstalling.'
+  zh: 'PCL 式 DSH 整合包：勾选已安装插件导出小体积 .dshpack.zip 与安装命令串，导入时先预览、确认后再按版本重新安装。'

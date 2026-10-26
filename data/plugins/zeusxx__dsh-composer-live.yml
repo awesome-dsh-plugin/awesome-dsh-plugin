@@ -1,0 +1,6 @@
+url: https://github.com/zeusxx/dsh-composer-live
+name: zeusxx/dsh-composer-live
+category: ui
+description:
+  en: Live Markdown rendering and typing enhancements for the DSH web composer - syntax-highlighted code blocks, list/quote continuation, format toolbars.
+  zh: DSH Web 输入框 Markdown 实时渲染与输入增强——代码块语法高亮、列表引用续项、格式工具栏。

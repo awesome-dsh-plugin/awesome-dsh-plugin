@@ -1,0 +1,6 @@
+url: https://github.com/GIN0076/dsh-token-usage
+name: GIN0076/dsh-token-usage
+category: usage
+description:
+  en: 'Token usage panel in DeepSeek Harness Settings: folds session logs into day, week and month totals per model or per provider, persisted in the plugin storage domain and served over a same-origin /token-usage-rpc route; SVG line chart with crosshair hover, ranking with share and optional cost, cache hit-rate and cache read/write cards, a user-supplied price table priced per million tokens, daily and monthly budget alerts, CSV or JSON export of the current range, auto-refresh while visible, preset and custom start/end date ranges, and a rebuild that asks for confirmation before dropping history whose session logs no longer exist.'
+  zh: 'DSH 设置面板词元用量统计：从会话日志折叠出日/周/月 × 模型（或按厂商合并）的词元统计，storage-domain 持久化、经同源 /token-usage-rpc 路由出数；SVG 折线图（十字线悬浮按日拆到每个模型）+ 占比排行（含可选金额）+ 缓存命中率与缓存读写卡片 + 用户自备的每百万 token 价目表 + 日/月预算告警 + 当前区间导出 CSV/JSON + 可见时自动刷新 + 预设与自定义起止日期 + 重建（存储里存在日志已不存在的历史时先要一次确认）。'

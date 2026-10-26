@@ -1,0 +1,10 @@
+# 提交方式：
+#   fork https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+#   把本文件复制为该仓库的 data/plugins/wct-lab__dsh-docchain.yml
+#   提交 PR（一个 PR 最多 3 条；CI 校验通过后维护者会读源码核对描述）
+url: https://github.com/wct-lab/dsh-docchain
+name: wct-lab/dsh-docchain
+category: docs
+description:
+  en: DocChain knowledge base and document conversion toolkit — filename, content and metadata search, topic listing, bulk document upload, document-to-Markdown conversion, image-similarity search, and a deep-research workflow. The configuration page keeps several docchain environments (each with its own address and credential), switches between them in one click, and pre-selects topics per environment. Needs a docchain service URL and API key (except doc2markdown).
+  zh: 知识库和文档转换插件：文档文件名、内容与元数据检索，主题查询，文档批量上传，文档转 Markdown，图搜图，并附带深度研究工作流。配置页可保存多个 docchain 环境（各带独立地址与凭据）并一键切换，还可按环境预选主题。除 doc2markdown 外需配置 docchain 服务地址与 API key。

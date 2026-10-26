@@ -1,0 +1,6 @@
+url: https://github.com/miku05231/dsh-provider-quote
+name: miku05231/dsh-provider-quote
+category: usage
+description:
+  zh: "查询 DSH 中已配置的各模型提供商的余额与 token 单价（不限厂商或中转站），兼容 cc-switch 的 usage_script，并在输入框下方显示当前会话所选提供商的余额。"
+  en: "Queries the balance and token prices of the model providers configured in DSH, whichever endpoint or relay they use, accepts cc-switch usage scripts, and shows the selected provider's balance under the composer."

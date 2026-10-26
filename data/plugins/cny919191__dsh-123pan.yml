@@ -1,0 +1,7 @@
+url: https://github.com/cny919191/dsh-123pan
+name: cny919191/dsh-123pan
+category: tools
+description:
+  en: "123 Cloud Drive (123pan) client: signs in with a phone number or email plus password, or a pasted token, browses and drag-drop uploads and downloads through a sidebar panel, backs up a workspace incrementally while keeping its directory tree, and exposes 15 tools for an agent to list, upload, download, rename, move and delete files. Network, MD5, 16MB multipart upload and token encryption run in a bundled statically linked C++ core, so it needs no Python or other runtime. Windows 10/11 x64 only."
+  zh: "123 云盘客户端：支持手机号或邮箱密码登录，也支持粘贴 token；侧栏面板可浏览、拖拽上传与下载，并能对工作区做保留目录结构的增量备份；同时提供 15 个工具供 agent 列目录、上传、下载、重命名、移动和删除文件。网络请求、MD5、16MB 分片上传与 token 加密都由随包的静态链接 C++ 核心完成，不需要 Python 或其他运行时。仅 Windows 10/11 x64。"
+tarball: https://github.com/cny919191/dsh-123pan/releases/latest/download/dsh-123pan.tgz

@@ -1,0 +1,9 @@
+url: https://github.com/AntonyLang/dsh-roam-planner
+name: AntonyLang/dsh-roam-planner
+category: tools
+tarball: https://github.com/AntonyLang/dsh-roam-planner/releases/download/v0.2.2/dsh-roam-planner-0.2.2.tgz
+description:
+  en: 'Trip planning workspace for DeepSeek Harness: a map page with day-by-day stops, roam_* tools that draft, review and adopt an itinerary, and optional MCP sidecars for rail tickets and Xiaohongshu notes.'
+  zh: '面向 DeepSeek Harness 的行程工作台：地图页按天展示站点，roam_* 工具负责起草、审阅与采用行程，可选接入火车票和小红书笔记的 MCP 数据源。'
+
+

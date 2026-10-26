@@ -1,0 +1,6 @@
+url: https://github.com/Imzl-zl/dsh-toolbox-ui
+name: Imzl-zl/dsh-toolbox-ui
+category: tools
+description:
+  en: "Floating panel for the DSH web UI managing MCP servers and skills: per-server deferred tool loading (ToolSearch, off by default) keeps a server's tools out of every turn's context — the prompt lists tool names only, and a tool's full schema enters the list once the model finds it with the built-in tool_search, so a turn stops paying for schemas it never calls. MCP servers live in a global scope or a project's own .dsh/mcp.json, with per-server enable/disable, a 47-service market and import from ten other clients; skills are auto-discovered across their real scopes with shadowing, and model auto-invocation versus manual-only is a switch per skill."
+  zh: "DSH 网页的悬浮面板，管 MCP 也管技能：逐服务器开启工具延迟加载（ToolSearch，默认关闭）——该服务器的工具不再每轮常驻上下文，提示词里只列工具名，模型用内置 tool_search 搜到哪个，哪个的完整参数 schema 才进工具列表，每一轮不再为没调用的 schema 付上下文。MCP 分全局与项目两级（项目写在它自己的 .dsh/mcp.json，只该项目会话可见），逐台启停，另有 47 个服务的市场与从 10 种其他客户端导入配置；技能由宿主自动发现，面板按真实作用域与同名遮蔽逐条列出，每个技能「模型自动调用 / 仅你手动调用」就地可拨。"

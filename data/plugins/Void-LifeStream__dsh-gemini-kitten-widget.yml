@@ -1,0 +1,6 @@
+url: https://github.com/Void-LifeStream/dsh-gemini-kitten-widget
+name: Void-LifeStream/dsh-gemini-kitten-widget
+category: ui
+description:
+  en: 'A Gemini kitten widget for the DSH Web UI: live Google Gemini API free-tier quota per model, a model switcher, color-coded warnings, drag-to-snap, and click-to-change lines.'
+  zh: 'DSH Web 界面的 Gemini 猫娘额度挂件：每个模型的 Gemini API 免费层配额实时显示、按型号切换、按额度变色预警、拖拽吸附、点击换台词。'

@@ -1,0 +1,6 @@
+url: https://github.com/huanglianqi/dsh-math-render
+name: huanglianqi/dsh-math-render
+category: ui
+description:
+  en: Renders LaTeX in the chat — formulas inside your own message bubble, plus a live preview of the composer draft while you type.
+  zh: 在聊天里渲染 LaTeX：你自己的消息气泡内联渲染公式，输入时还会实时预览草稿里的公式。

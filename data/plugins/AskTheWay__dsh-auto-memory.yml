@@ -1,0 +1,6 @@
+url: https://github.com/AskTheWay/dsh-auto-memory
+name: AskTheWay/dsh-auto-memory
+category: memory
+description:
+  en: 'Claude Code-style auto-memory, natively: typed memory files (user/feedback/project/reference) with a MEMORY.md index auto-injected into the system prompt (zero footprint when empty); memory_write/read/list/delete follow Claude Code write rules (dedupe-and-update, absolute dates, cross-links); workspace-scoped and user-scoped layers, cross-process file locking with orphan-lock recovery, plain Markdown on disk, no external services, no embeddings.'
+  zh: '原生实现 Claude Code 式自动记忆:类型化记忆文件(user/feedback/project/reference)+ 自动注入系统提示词的 MEMORY.md 索引,无记忆时零提示词占用;memory_write/read/list/delete 遵循 Claude Code 写入规则(查重更新、相对日期转绝对、交叉链接);项目级与用户级双层作用域,跨进程文件锁与孤儿锁自愈,记忆为磁盘纯 Markdown,无外部服务、无 embedding。'

@@ -1,0 +1,14 @@
+url: https://github.com/HildebrandYu/dsh-open-with
+name: HildebrandYu/dsh-open-with
+category: tools
+tarball: https://github.com/HildebrandYu/dsh-open-with/releases/latest/download/dsh-open-with.tgz
+description:
+  en: >-
+    Gives DSH its own per-extension "open with" map: delivery cards, the sidebar preview and change
+    review launch the app you pick, while macOS keeps its own default for Finder double-click. Rules
+    are edited in a Settings tab and stored in ~/.dsh/open-with.json; "show file location" still
+    reveals in Finder.
+  zh: >-
+    讓 DSH 擁有自己的「副檔名 → 開啟 app」規則：卡片、側邊預覽與變更審查用你指定的 app 開啟，
+    而 macOS 的 Finder 雙擊預設不受影響。規則在設定頁編輯、存於 ~/.dsh/open-with.json；
+    「顯示文件位置」仍走 Finder。

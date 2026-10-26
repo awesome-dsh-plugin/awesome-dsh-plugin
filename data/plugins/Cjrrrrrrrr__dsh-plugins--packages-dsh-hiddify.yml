@@ -1,0 +1,6 @@
+url: https://github.com/Cjrrrrrrrr/dsh-plugins/tree/main/packages/dsh-hiddify
+name: Cjrrrrrrrr/dsh-plugins#dsh-hiddify
+category: tools
+description:
+  en: 'Drives a local Hiddify installation from DeepSeek Harness without its GUI: seven tools to start and stop the core, switch split-tunnel modes (rebuilds the config and restarts the core), rotate exit nodes through the Clash control plane, and search or fetch pages through the proxy. Windows only.'
+  zh: '不打开 Hiddify 桌面版也能用它：七个工具起停内核、切换分流模式（重建配置并重启内核）（外网走代理／国内与内网直连）、经 Clash 控制面轮换出口节点，并经代理做多引擎检索与网页抓取。仅 Windows。'

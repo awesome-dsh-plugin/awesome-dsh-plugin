@@ -1,0 +1,6 @@
+url: https://github.com/raymondkm2025/dsh-go-game
+name: raymondkm2025/dsh-go-game
+category: fun
+description:
+  en: 'Go (weiqi) for the DeepSeek Harness: a full rules engine, a three-level built-in AI, a dead-stone estimator, optional LLM review, SGF import/export, and an optional KataGo GTP bridge.'
+  zh: '圍棋插件：完整規則引擎、三檔內建 AI、死子估算、可選 LLM 覆盤、SGF 匯入匯出，以及可選的 KataGo GTP 引擎橋接。'

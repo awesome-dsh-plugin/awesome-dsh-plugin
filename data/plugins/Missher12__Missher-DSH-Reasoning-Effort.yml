@@ -1,0 +1,7 @@
+url: https://github.com/Missher12/Missher-DSH-Reasoning-Effort
+name: Missher12/Missher-DSH-Reasoning-Effort
+category: model
+description:
+  en: "Adds a thinking-depth slider mapped to declared model levels, configuration guidance, and optional inline model settings."
+  zh: "按模型声明的能力提供思考深度滑块、配置指引与可选模型行设置。"
+tarball: https://github.com/Missher12/Missher-DSH-Reasoning-Effort/releases/download/v0.7.5-local.15/missher-dsh-reasoning-effort-0.7.5-local.15.tgz

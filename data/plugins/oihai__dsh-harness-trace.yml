@@ -1,0 +1,6 @@
+url: https://github.com/oihai/dsh-harness-trace
+name: oihai/dsh-harness-trace
+category: dev
+description:
+  en: Records every session as one readable Markdown timeline inside the session workspace - the full request sent to the model (system prompt and plugin injections included), user input, replies, reasoning, tool calls and results, file reads and writes, web searches, skill loads, command runs and token usage - with a review page, a per-session tab and configurable capture scope.
+  zh: 把每次会话记录成会话工作区内一份可读的 Markdown 时间线——发往模型的完整请求（含系统提示词与插件注入）、用户输入、模型回复、推理过程、工具调用与结果、文件读写、联网搜索、技能加载、命令执行与 token 用量，并带审阅页、会话内标签页与可配置的采集范围。

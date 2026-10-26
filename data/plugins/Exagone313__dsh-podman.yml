@@ -1,0 +1,6 @@
+url: https://github.com/Exagone313/dsh-podman
+name: Exagone313/dsh-podman
+category: dev
+description:
+  en: "Runs the agent's shell and file tools in disposable Podman containers, so its access is constrained to the workspace project by default, and adds container, image, volume and secret management with approval-gated control."
+  zh: "让 agent 的 shell 与文件工具在一次性 Podman 容器中运行，默认只能访问工作区项目；同时提供容器、镜像、卷与机密管理，部分操作需审批。"

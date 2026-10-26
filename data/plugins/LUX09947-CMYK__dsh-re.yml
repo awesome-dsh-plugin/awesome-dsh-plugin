@@ -1,0 +1,6 @@
+url: https://github.com/LUX09947-CMYK/dsh-re
+name: LUX09947-CMYK/dsh-re
+category: ui
+description:
+  en: 'Adds a refresh button to the DeepSeek Harness desktop title bar next to the Edit menu, reloading the interface without restarting the app.'
+  zh: '在 DeepSeek Harness 桌面端顶部标题栏「编辑」右边加一个「刷新」按钮，只重载界面、不重启应用。'

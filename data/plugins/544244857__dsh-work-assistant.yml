@@ -1,0 +1,8 @@
+url: https://github.com/544244857/dsh-work-assistant
+name: 544244857/dsh-work-assistant
+category: workflow
+tarball: https://github.com/544244857/dsh-work-assistant/releases/download/v0.5.4/dsh-work-assistant-0.5.4.tgz
+icon: https://raw.githubusercontent.com/544244857/dsh-work-assistant/main/assets/icon-180.png
+description:
+  en: "A work assistant for WeChat: it records what you tell it into a SQLite task ledger, ranks items by urgency, reminds you on schedule, extracts people and their relations from your notes, and hands tasks to separate assistant sessions. Ships its own WeChat bot channel (scan to log in; private chat only) and a full-page dashboard."
+  zh: "微信工作助理：把你交代的事记进 SQLite 任务账本，按紧急度排序，到点提醒，从笔记里抽取人物与关系，并把任务分派给独立的助手会话。自带微信机器人通道（扫码登录，仅私聊）与整页仪表盘。"

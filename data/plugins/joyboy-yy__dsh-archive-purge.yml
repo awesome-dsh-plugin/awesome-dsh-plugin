@@ -1,0 +1,6 @@
+url: https://github.com/joyboy-yy/dsh-archive-purge
+name: joyboy-yy/dsh-archive-purge
+category: session
+description:
+  en: 'Force-hides archived sessions from the DSH sidebar whatever the view filter is set to, and adds a panel that restores them or deletes them permanently - session log directory, archive and pin records, and projection cache.'
+  zh: '无论侧栏「归档显示」如何设置都强制隐藏已归档会话，并提供管理面板：取消归档，或彻底删除会话日志目录、归档与置顶登记及投影缓存。'

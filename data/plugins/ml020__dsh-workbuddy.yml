@@ -1,0 +1,6 @@
+url: https://github.com/ml020/dsh-workbuddy
+name: ml020/dsh-workbuddy
+category: ui
+description:
+  en: 'Reskins the DSH conversation hero — brand mark and workspace picker — with a Wordless-style landing view. The native composer stays untouched, and the picker still adds new workspaces (the entry declares its own directory-flow child hole, exactly like the shipped picker).'
+  zh: 为 DSH 会话首屏的品牌标识与工作区选择器换上 Wordless 风格的着陆视图。原生输入框保持不变；选择器仍可在弹窗内添加新工作区（本条目像原生选择器一样自带 directory-flow 子槽位）。

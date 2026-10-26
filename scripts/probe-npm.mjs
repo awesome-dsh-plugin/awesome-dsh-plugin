@@ -67,9 +67,18 @@ const needsFullProbe = (entry) =>
 // ongoing refresh — nightly PROBE_ALL already renews versions via full probe.
 const needsVersionBackfill = (entry) => Boolean(entry?.npm) && !hasVersionKey(entry)
 
+// One-shot backfill for rows recorded before the publish-time field existed.
+// `publishedAt` is what the plugin market index needs per version
+// (https://awesome-dsh-plugin.com/index.json), and the packument this probe
+// already reads carries `time` — so this costs no extra request beyond the
+// one the row needs anyway.
+const hasPublishKey = (entry) => Object.prototype.hasOwnProperty.call(entry ?? {}, 'publishedAt')
+const needsPublishBackfill = (entry) => Boolean(entry?.npm) && hasVersionKey(entry) && !hasPublishKey(entry)
+
 const pendingFull = urls.filter((url) => needsFullProbe(map[url]))
 const pendingVersion = urls.filter((url) => !needsFullProbe(map[url]) && needsVersionBackfill(map[url]))
-console.log(`${urls.length} listed, ${pendingFull.length} full probe(s), ${pendingVersion.length} version backfill(s)`)
+const pendingPublish = urls.filter((url) => !needsFullProbe(map[url]) && !needsVersionBackfill(map[url]) && needsPublishBackfill(map[url]))
+console.log(`${urls.length} listed, ${pendingFull.length} full probe(s), ${pendingVersion.length} version backfill(s), ${pendingPublish.length} publish-time backfill(s)`)
 
 async function fetchJson(url) {
   const res = await fetch(url, {
@@ -78,6 +87,26 @@ async function fetchJson(url) {
   })
   if (!res.ok) throw new Error(`HTTP ${res.status}`)
   return res.json()
+}
+
+/**
+ * Publish facts of the `latest` version, straight from the packument this
+ * probe already fetched: the market index needs a Unix-seconds publish time
+ * per version, and the Discover tab filters by the DSH range a package
+ * declares (`engines.dsh`). Absent values are recorded as null so a later
+ * pass can tell "known absent" from "not backfilled yet".
+ */
+function publishFields(meta, latest) {
+  if (latest === null) return { publishedAt: null, enginesDsh: null }
+  const iso = meta.time?.[latest]
+  const seconds = typeof iso === 'string' ? Math.floor(Date.parse(iso) / 1000) : NaN
+  const manifest = meta.versions?.[latest]
+  const engines = manifest?.engines
+  const dsh = typeof engines === 'object' && engines !== null && typeof engines.dsh === 'string' ? engines.dsh : null
+  return {
+    publishedAt: Number.isInteger(seconds) && seconds > 0 ? seconds : null,
+    enginesDsh: dsh,
+  }
 }
 
 async function probe(url) {
@@ -101,6 +130,7 @@ async function probe(url) {
     return {
       npm: name,
       version: latest ?? priorVersion(url),
+      ...publishFields(meta, latest),
       checkedAt: today,
     }
   } catch {
@@ -117,7 +147,7 @@ async function backfillVersion(url) {
     const latest = typeof meta['dist-tags']?.latest === 'string' ? meta['dist-tags'].latest : null
     // Write the key even when latest is missing (null), so push-time backfill
     // does not re-trigger forever on typeof-null checks.
-    return { npm: name, version: latest ?? priorVersion(url), checkedAt: today }
+    return { npm: name, version: latest ?? priorVersion(url), ...publishFields(meta, latest), checkedAt: today }
   } catch {
     return null
   }
@@ -139,6 +169,7 @@ async function runBatch(label, pending, worker) {
 
 await runBatch('full', pendingFull, probe)
 await runBatch('version-backfill', pendingVersion, backfillVersion)
+await runBatch('publish-backfill', pendingPublish, backfillVersion)
 
 const listed = new Set(urls)
 for (const k of Object.keys(map)) if (!listed.has(k)) delete map[k]

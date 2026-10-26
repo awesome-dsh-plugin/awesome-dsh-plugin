@@ -1,0 +1,6 @@
+url: https://github.com/CosmoSail/dsh-bloomglass
+name: CosmoSail/dsh-bloomglass
+category: theme
+description:
+  en: "A DeepSeek Harness Web theme: ten OKLCH Chinese-traditional-colour palettes that adapt to light and dark, plus an optional wallpaper behind frosted glass panels; tailored for the DS Bot (bot team) interface; the palette and wallpaper persist locally."
+  zh: "DeepSeek Harness Web 主题：十套 OKLCH 中国传统色配色、明暗自适应；可选一张壁纸铺满窗口、界面以磨砂玻璃叠上去；已适配 DS Bot（Bot 团队）界面；配色与壁纸都本地持久化。"

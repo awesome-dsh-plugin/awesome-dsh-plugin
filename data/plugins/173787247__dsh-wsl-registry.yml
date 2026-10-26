@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-registry
+name: 173787247/dsh-wsl-registry
+category: wsl
+description:
+  en: Read-only Windows registry access from WSL, restricted to an allowlist of key prefixes; list a key's values or its child keys.
+  zh: Windows 注册表只读：限定在允许的键前缀内，可列值或列子键。

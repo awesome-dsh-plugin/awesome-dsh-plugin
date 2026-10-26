@@ -1,0 +1,7 @@
+url: https://github.com/chengzhi-c/dsh-wtq-pool
+name: chengzhi-c/dsh-wtq-pool
+category: model
+description:
+  en: Brings the WorkBuddy, Trae and Qoder desktop logins on this machine into DeepSeek Harness as OpenAI-compatible local endpoints, with an account pool, automatic account switching when WorkBuddy is rate limited, and a settings panel.
+  zh: 把本机 WorkBuddy、Trae、Qoder 的桌面登录接进 DeepSeek Harness，每家一个 OpenAI 兼容的本地端点，带账号池、限流自动换号与设置面板。
+tarball: https://github.com/chengzhi-c/dsh-wtq-pool/releases/download/v1.0.2/dsh-wtq-pool-1.0.2.tgz

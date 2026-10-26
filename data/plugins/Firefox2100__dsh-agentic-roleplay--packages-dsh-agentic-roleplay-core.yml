@@ -1,0 +1,6 @@
+url: https://github.com/Firefox2100/dsh-agentic-roleplay/tree/main/packages/dsh-agentic-roleplay-core
+name: Firefox2100/dsh-agentic-roleplay#core
+category: fun
+description:
+  en: Agentic roleplay for DSH with structured worlds, autonomous characters, persistent sessions, world authoring, speech, and image generation. Requires Firefox2100/dsh-agentic-roleplay#state to be installed and enabled.
+  zh: 为 DSH 提供具有结构化世界、自主角色、持久会话、世界创作、语音与图像生成功能的智能体角色扮演系统。需要安装并启用 Firefox2100/dsh-agentic-roleplay#state。

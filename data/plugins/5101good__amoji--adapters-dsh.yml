@@ -1,0 +1,7 @@
+url: https://github.com/5101good/amoji/tree/main/adapters/dsh
+name: 5101good/amoji#amoji
+category: ui
+description:
+  en: 'AI-native expressions for two-way chat: people see images, while text-only models read fixed meanings; includes a picker, custom expressions, import/export, and two visual styles.'
+  zh: '用于双向聊天的 AI 原生表情：人看图片，纯文本模型读取固定语义；支持表情选择、自建表情、导入导出和两套画风。'
+tarball: https://github.com/5101good/amoji/releases/download/v1.0.0/amoji-dsh-1.0.0.tgz

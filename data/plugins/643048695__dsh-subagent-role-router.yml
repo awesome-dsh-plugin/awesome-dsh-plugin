@@ -1,0 +1,6 @@
+url: https://github.com/643048695/dsh-subagent-role-router
+name: 643048695/dsh-subagent-role-router
+category: model
+description:
+  en: "Route DSH subagent delegations to configured models with per-role routing for explore, plan and patch subagents, round-robin or random distribution, cross-provider failover, and active-window slicing of fork seeds."
+  zh: "为 DSH 子代理派发按角色（探索 / 规划 / 修补）分流到指定模型，支持轮换或随机分配、跨供应商故障转移，并对 fork 种子做活跃窗口切片。"

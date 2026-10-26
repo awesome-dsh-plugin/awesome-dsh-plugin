@@ -1,0 +1,6 @@
+url: https://github.com/Sacredbluedragon/dsh-bili-watch
+name: Sacredbluedragon/dsh-bili-watch
+category: tools
+description:
+  en: 'Reads Bilibili video content as text for DSH agents: metadata, subtitles, ASR, frame OCR, comments and danmaku. Frame OCR needs ffmpeg; the ASR/OCR venvs need Python 3.10+; AI subtitles need a Bilibili login.'
+  zh: '把 B 站视频内容读成文本：元数据、字幕、本地转写、抽帧 OCR、评论与弹幕。抽帧 OCR 需 ffmpeg；ASR/OCR 虚拟环境需 Python 3.10+；AI 字幕需登录 Bilibili。'

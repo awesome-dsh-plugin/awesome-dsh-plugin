@@ -1,0 +1,7 @@
+url: https://github.com/xinming-chenniang/dsh-button
+name: xinming-chenniang/dsh-button
+category: ui
+tarball: https://github.com/xinming-chenniang/dsh-button/releases/download/v1.3.0/dsh-button-1.3.0.tgz
+description:
+  en: 'Editable quick-action buttons beside the DSH composer: send preset text or insert it into the draft, then reorder, move, or resize the buttons. Text-only: runs no host commands and never overwrites an existing draft.'
+  zh: 'DSH 输入框旁的可编辑快捷按钮：发送预设文字，或只填入草稿；可排序、换位置、调大小。纯文字动作，不执行宿主命令；有草稿时不覆盖。'

@@ -1,0 +1,6 @@
+url: https://github.com/MaybeMeibeMaybi/dsh-harmonyos-hiboard
+name: MaybeMeibeMaybi/dsh-harmonyos-hiboard
+category: notify
+description:
+  en: 'Push DSH task results to the Huawei HarmonyOS assistant-today screen as service cards. After installing, enter the auth code on the plugin settings page: DSH top-left Plugins - dsh-harmonyos-hiboard.'
+  zh: '把DSH的任务结果，以服务卡片形式推送到华为鸿蒙负一屏。安装后请在插件设置页输入授权码，位置：主页面左上角「插件」→ 「dsh-harmonyos-hiboard」。'

@@ -1,0 +1,6 @@
+url: https://github.com/syzke/dsh-translate-on-select
+name: syzke/dsh-translate-on-select
+category: ui
+description:
+  en: Select foreign text in a DSH conversation and a Simplified Chinese translation card appears right below the selection.
+  zh: 在 DSH 里用鼠标选中外文，选区正下方就地浮出简体中文译文卡片。

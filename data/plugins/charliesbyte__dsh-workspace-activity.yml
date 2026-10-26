@@ -1,0 +1,6 @@
+url: https://github.com/charliesbyte/dsh-workspace-activity
+name: charliesbyte/dsh-workspace-activity
+category: ui
+description:
+  en: Shows a spinner on a sidebar workspace row while any of its sessions are running, and a short-lived finished mark after they stop.
+  zh: 侧边栏的工作区行会在其下会话运行时显示转圈，会话停止后短暂保留一个已完成标记。

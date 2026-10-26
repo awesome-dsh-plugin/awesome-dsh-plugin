@@ -1,0 +1,6 @@
+url: https://github.com/wilsonchengassistant/dsh-media-web-preview
+name: wilsonchengassistant/dsh-media-web-preview
+category: ui
+description:
+  en: 'Plays video and audio files in the right Sidebar preview pane, streamed over an authenticated HTTP Range route so a remote browser can play and seek a large file without launching a native player on the Host.'
+  zh: '在右側欄預覽區直接播放影片同音訊，經帶認證的 HTTP Range 路由串流，令遠端瀏覽器可以播放同跳轉大型檔案，唔使喺主機開原生播放器。'

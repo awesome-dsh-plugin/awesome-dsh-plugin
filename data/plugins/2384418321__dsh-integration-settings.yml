@@ -1,0 +1,6 @@
+url: https://github.com/2384418321/dsh-integration-settings
+name: 2384418321/dsh-integration-settings
+category: ui
+description:
+  en: 'Adds two visual pages to DSH Settings. MCP servers are kept as a JSON source of truth that rewrites the profile patch managed block, with YAML validation and timestamped backups, plus import of a pasted mcpServers JSON that first lists what will be added or overwritten. Thinking unlock probes each OpenAI-compatible gateway for the reasoning efforts it really declares and writes the per-level config back while leaving other hand-written YAML byte ranges untouched; the available model list syncs from a separate button that previews additions and removals, then writes levels and models in one atomic pass, and can also run on the page schedule.'
+  zh: '在 DSH 设置里加两个可视化页面。MCP 管理以 JSON 为真理源整体重写 profile patch 受管区块（写入前做 YAML 校验与时间戳备份），并支持粘贴 mcpServers JSON、先列出将新增/将覆盖的条目再写入。思考解锁对每个 OpenAI 兼容网关探测它真正声明的思考档位并逐模型写回，手写的其他 YAML 片段逐字节保留；可用模型清单由独立按钮同步，先预览将新增/将移除，确认后与思考档位同批写入，也可绑定页面上的定时更新。'

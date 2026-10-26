@@ -1,0 +1,6 @@
+url: https://github.com/zuihouye/dsh-agnes-tools
+name: zuihouye/dsh-agnes-tools
+category: tools
+description:
+  en: Agnes AI image and video generation tools for DeepSeek Harness, where long video jobs can be resumed in a later call. Requires an Agnes API key (AGNES_API_KEY).
+  zh: 把 Agnes AI 的生图 / 生视频接成 DSH 原生工具，长视频任务可稍后续查。需设置 Agnes API Key（AGNES_API_KEY）。

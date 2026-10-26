@@ -1,0 +1,6 @@
+url: https://github.com/yfwu2020/dsh-opencode-go-second
+name: yfwu2020/dsh-opencode-go-second
+category: model
+description:
+  en: Adds an independent OpenCode Go connection with credential settings, manual model discovery, and per-conversation session headers.
+  zh: 添加独立的 OpenCode Go 连接，支持密钥设置、手动获取模型和按会话发送标识。

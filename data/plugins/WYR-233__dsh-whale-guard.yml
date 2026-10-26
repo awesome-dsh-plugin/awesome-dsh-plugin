@@ -1,0 +1,7 @@
+url: https://github.com/WYR-233/dsh-whale-guard
+name: WYR-233/dsh-whale-guard
+category: security
+description:
+  en: 'Safety guard that makes self-killing commands impossible: a safe_kill tool that always excludes the caller and every ancestor process, a bash pre-execute check for pkill self-matches, sudo -S stdin grabs, rm -rf / and similar patterns, and an extensible rule library with block / warn / hint severities.'
+  zh: '防呆插件：safe_kill 工具（自动排除自身与全部祖先进程链），bash 命令预检（pkill 自匹配、sudo -S 抢 stdin、rm -rf / 等），以及可扩展规则库（block / warn / hint 三档）。'
+tarball: https://github.com/WYR-233/dsh-whale-guard/releases/latest/download/dsh-whale-guard.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/qipengxiang/dsh-cc-switch-bridge
+name: qipengxiang/dsh-cc-switch-bridge
+category: model
+description:
+  en: 'Bridges the third-party providers saved in a local cc-switch app into DeepSeek Harness: Anthropic-format tool groups become adapter routes, Codex groups are handed to the built-in pi-ai adapter, and a settings page picks which groups to import and in which order.'
+  zh: '把本机 cc-switch 里保存的第三方供应商接入 DeepSeek Harness：Anthropic 格式的工具分组注册为适配器路由，Codex 分组交给内置 pi-ai 适配器，并在设置页选择导入哪些分组以及它们的顺序。'

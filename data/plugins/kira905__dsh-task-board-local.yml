@@ -1,0 +1,6 @@
+url: https://github.com/kira905/dsh-task-board-local
+name: kira905/dsh-task-board-local
+category: workflow
+description:
+  en: Self-maintained DSH web task board with a human acceptance gate, card kinds and editable notes on executed cards.
+  zh: 自维护的 DSH 网页任务看板：带人工验收闸门、卡片类型与已执行卡片的可编辑备注。

@@ -1,0 +1,6 @@
+url: https://github.com/gongstudent/dsh-quote-to-agent
+name: gongstudent/dsh-quote-to-agent
+category: ui
+description:
+  en: 'Quote text selected in a DSH Web conversation, then either attach it to the current composer or dispatch it to a subagent session: the quote sits on a bar above the composer, or opens that subagent in a new pane on the right. When the target has no subagent yet, the quote is held and the composer is seeded with a spawn request, then picked up automatically once the new session appears. Client-only.'
+  zh: '在 DSH 网页版会话里划词后，把选中内容引用到当前输入框，或分派到子智能体会话：引用落在输入框正上方的引用条上，或在右侧新开一格打开该子智能体会话。目标还没有子智能体时先挂起这条引用，并在输入框写入派生请求，新子会话一出现就自动接续。纯客户端。'

@@ -1,0 +1,6 @@
+url: https://github.com/hasan-aghayev/dsh-pet-companion
+name: hasan-aghayev/dsh-pet-companion
+category: fun
+description:
+  en: A WSLg-compatible DSH desktop pet reacts to agent activity, lets you message the active session, and loads Hatch-Pet v2 atlases or transparent portraits.
+  zh: 兼容 WSLg 的 DSH 桌面宠物会根据代理活动切换动画，支持向当前会话发送消息，并可加载 Hatch-Pet v2 图集或透明肖像。

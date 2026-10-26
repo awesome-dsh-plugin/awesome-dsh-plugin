@@ -1,0 +1,6 @@
+url: https://github.com/Endless-zby/dsh-jenkins-plugin
+name: Endless-zby/dsh-jenkins-plugin
+category: dev
+description:
+  en: Jenkins CI integration with a live build-progress panel in the right sidebar, a multi-instance settings page, five model-facing tools (list jobs, build status, console log, workspace, trigger build), and a failure wake that hands a failed followed build to the conversation that followed it.
+  zh: Jenkins CI 集成：右侧栏实时构建进度面板、多实例设置页、五个面向模型的工具（列 job、构建状态、控制台日志、工作区、触发构建），以及构建失败时唤醒当初关注该 job 的那个会话。

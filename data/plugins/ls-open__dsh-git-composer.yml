@@ -1,0 +1,6 @@
+url: https://github.com/ls-open/dsh-git-composer
+name: ls-open/dsh-git-composer
+category: git
+description:
+  en: 'Claude-style Git branch and PR composer bar for DeepSeek Harness: quick branch switcher, native diff drawer integration, and adaptive PR creation with Actions CI status.'
+  zh: 'DSH 对话输入框 Git 状态胶囊条：极速切换分支、联动原生 Diff 抽屉、自适应 Commit/PR 及 Actions CI 状态追踪。'

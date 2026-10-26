@@ -1,0 +1,6 @@
+url: https://github.com/GreatArrow-ai/dsh-greatarrow
+name: GreatArrow-ai/dsh-greatarrow
+category: memory
+description:
+  en: 'Connects dsh to the GreatArrow.ai MCP server over Streamable HTTP, so the agent can search and save workspace memories, tasks and decisions shared with your other AI clients; a config-only bundle that reads the token from great-arrow.token in the dsh home, never from the environment.'
+  zh: '通过 Streamable HTTP 将 dsh 连接到 GreatArrow.ai MCP 服务器，让智能体检索和保存与你其他 AI 客户端共享的工作区记忆、任务与决策；纯配置包，从 dsh 主目录的 great-arrow.token 读取令牌，从不读取环境变量。'

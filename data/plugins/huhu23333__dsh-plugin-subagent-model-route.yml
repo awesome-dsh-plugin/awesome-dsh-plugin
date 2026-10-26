@@ -1,0 +1,6 @@
+url: https://github.com/huhu23333/dsh-plugin-subagent-model-route
+name: huhu23333/dsh-plugin-subagent-model-route
+category: ui
+description:
+  en: "Annotates every subagent with the model route it actually ran on: a badge line in each parent-catalog row and a readout in a child session's own header."
+  zh: "给每个子代理标注它实际运行使用的模型路由：父会话目录行增加「mode · 活动状态 · 模型」徽标行，子代理会话页头显示同一读数。"

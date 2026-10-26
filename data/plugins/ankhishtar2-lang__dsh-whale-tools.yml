@@ -1,6 +1,0 @@
-url: https://github.com/ankhishtar2-lang/dsh-whale-tools
-name: ankhishtar2-lang/dsh-whale-tools
-category: ui
-description:
-  en: "Replace the dsh-whale-widget mascot with your own image through a built-in cutout pipeline, plus a session-header restart button, a browser heartbeat, and an opt-in patch self-heal that is off by default."
-  zh: "给 dsh-whale-widget 换图的插件：内置抠图流水线把任意图片替换成小鲸鱼，另有会话头部重启按钮、浏览器心跳，以及默认关闭的挂件补丁自愈（需显式开启）。"

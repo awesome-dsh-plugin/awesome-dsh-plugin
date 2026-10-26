@@ -1,0 +1,6 @@
+url: https://github.com/19north/dsh-redstone-music
+name: 19north/dsh-redstone-music
+category: tools
+description:
+  en: 'Minecraft redstone music: rm_render renders instrument samples from a SoundFont and aligns every onset to within 3 ms, and rm_build compiles a song plus lane table into a datapack of scheduled mcfunction shards (optionally deployed over RCON).'
+  zh: 'Minecraft 红石音乐：rm_render 从 SoundFont 渲染乐器采样并把起音对齐到 3ms 内，rm_build 把谱面与轨表编译成分片 mcfunction 数据包（可选经 RCON 部署开建）。'

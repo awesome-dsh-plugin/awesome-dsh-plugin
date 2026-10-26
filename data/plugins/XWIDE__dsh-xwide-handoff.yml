@@ -1,0 +1,6 @@
+url: https://github.com/XWIDE/dsh-xwide-handoff
+name: XWIDE/dsh-xwide-handoff
+category: session
+description:
+  en: 'Generates a structured handoff card so a near-full conversation continues in a fresh zero-context session: /handoff writes the card with self-incrementing titles, pins it to the top of the sidebar and prepares the new session once the context nears its threshold.'
+  zh: '用 /handoff 生成交接卡，让快满的对话在全新零上下文会话里接着跑：标题自动递增编号、卡片在侧栏置顶，接近阈值时自动备好新会话。'

@@ -1,0 +1,6 @@
+url: https://github.com/yuehancn/dsh-tool-browser
+name: yuehancn/dsh-tool-browser
+category: tools
+description:
+  en: 'Open a page, wait for it the way it actually needs, extract the readable article, and take a screenshot. Playwright is optional: when it is absent the tools fall back to a static fetch and say so in the result, because a page whose JavaScript never ran means something different from one that rendered. Content is chosen by scoring candidate subtrees on prose density rather than on tag names, so a container loses to the article inside it instead of winning by containing more of the document.'
+  zh: '打开页面、按页面真正需要的方式等待、抽出可读正文、截图。Playwright 是可选依赖：没装时退回静态抓取并在结果里明确说明，因为「JavaScript 从未执行」的页面意味着的东西和渲染过的不同。正文靠给候选子树打正文密度分来选，而不是相信标签名，所以容器不会因为「包含的文档更多」而赢过它里面的正文。'

@@ -1,0 +1,7 @@
+url: https://github.com/Aisland-SJL/dsh-worktable/tree/main/01_content
+name: Aisland-SJL/dsh-worktable#01_content
+category: ui
+tarball: https://github.com/Aisland-SJL/dsh-worktable/releases/latest/download/dsh-worktable.tgz
+description:
+  en: 'Workbench plugin for the DeepSeek Harness web UI: collects your own projects and mounted plugin entries with rename, icon, sort, show/hide, project-to-session binding and a per-project file cabinet, adds a split-pane workspace engine with draggable panes, tabbed windows and built-in Explorer, terminal, browser, animation and custom panes, and auto-mounts an agent output into the matching window when it writes widget-result.json.'
+  zh: 'DeepSeek Harness 的工作台插件：收集自建项目与挂载的插件条目，支持改名、图标、排序、显示隐藏、项目与会话绑定和项目文件柜；内置自研分栏工作区引擎，窗格可拖拽分割、标签页管理，带资源管理器、终端、浏览器、动画与自定义窗口；项目内 agent 写完 widget-result.json 后，产物会自动挂载进对应窗口。'
