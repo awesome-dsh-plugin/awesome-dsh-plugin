@@ -1,0 +1,7 @@
+url: https://github.com/jin1254/dsh-annotations
+name: jin1254/dsh-annotations
+category: ui
+description:
+  en: Select completed assistant text, add comments, and send compact annotation labels with source navigation in official DSH 0.2.1-rc.2 Web; no host patches required.
+  zh: 在官方 DSH 0.2.1-rc.2 Web 中选中已完成的助手回复添加评论，以紧凑批注标签发送并跳转原文，无需修改主体。
+tarball: https://github.com/jin1254/dsh-annotations/releases/download/v0.1.0/jin1254-dsh-annotations-0.1.0.tgz
