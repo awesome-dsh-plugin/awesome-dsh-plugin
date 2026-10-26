@@ -1,0 +1,6 @@
+url: https://github.com/Cieux/dsh-zoom-scale
+name: Cieux/dsh-zoom-scale
+category: ui
+description:
+  en: 'Whole-interface zoom for the DSH Web UI, 75%–200% in 5% steps, via Ctrl/Command+wheel, a session-header stepper or a Settings row; a geometry shim converts rects, viewport units, media queries and pointer coordinates so fixed-position overlays stay anchored to their trigger.'
+  zh: 'DSH Web 界面整体缩放，75%–200%、5% 步进，可用 Ctrl/⌘+滚轮、会话头部步进器或「设置 → 通用设置」中的一行操作；几何 shim 换算 rect、视口单位、媒体查询与指针坐标，让 fixed 定位的浮层在任意缩放下仍贴住触发元素。'
