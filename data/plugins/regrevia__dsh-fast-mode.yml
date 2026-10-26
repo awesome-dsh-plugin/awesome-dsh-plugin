@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/dsh-fast-mode
+name: regrevia/dsh-fast-mode
+category: usage
+description:
+  en: Per-conversation fast mode for multi-step tasks that batches independent tool calls and drops redundant steps, measured at about 26% less total wall-clock time with hidden tests still passing.
+  zh: 单会话开关的快速模式，合并可并行的工具调用并减少冗余步骤；实测整任务总墙钟约快 26%，隐藏测试仍全绿。
+icon: https://raw.githubusercontent.com/regrevia/dsh-fast-mode/main/icon.png
