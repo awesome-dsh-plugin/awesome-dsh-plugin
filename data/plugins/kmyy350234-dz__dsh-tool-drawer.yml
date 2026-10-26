@@ -2,6 +2,6 @@ url: https://github.com/kmyy350234-dz/dsh-tool-drawer
 name: kmyy350234-dz/dsh-tool-drawer
 category: tools
 description:
-  en: "Keeps heavy tool groups out of every request and brings them back on demand, by keyword, or automatically at session start. Ships default groups for the cua_driver_native, dsh_browser and vision tool families only, so add your own groups in cordis.patch.yml for other tools."
-  zh: "把重工具组从每一轮请求里收起来，需要时按需、按关键词或会话开始时自动恢复。自带的默认分组只覆盖 cua_driver_native、dsh_browser 与 vision 三类工具，其他工具需在 cordis.patch.yml 里自行添加分组。"
+  en: "Keeps heavy tool groups out of every request and brings them back on demand, by keyword, or automatically at session start. Ships default groups for the cua_driver_native, dsh_browser and vision families, and auto-groups new families by tool-name prefix (autoGroups: off / suggest / on) — core tools are never grouped."
+  zh: "把重工具组从每一轮请求里收起来，需要时按需、按关键词或会话开始时自动恢复。自带 cua_driver_native、dsh_browser、vision 三类默认分组，并能按工具名前缀自动识别新家族建组（autoGroups: off / suggest / on），核心工具永不入组。"
 icon: https://raw.githubusercontent.com/kmyy350234-dz/dsh-tool-drawer/main/assets/icon-180.png
