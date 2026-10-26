@@ -1,0 +1,7 @@
+url: https://github.com/gghyoo/dsh-copy-image-menu
+name: gghyoo/dsh-copy-image-menu
+category: ui
+description:
+  en: Adds a Copy Markdown / Download PNG menu to assistant message copy buttons in the DSH Web UI.
+  zh: 在 DSH Web UI 的助手消息复制按钮上增加“复制 Markdown / 下载 PNG”菜单。
+icon: https://raw.githubusercontent.com/gghyoo/dsh-copy-image-menu/main/assets/icon-180.png
