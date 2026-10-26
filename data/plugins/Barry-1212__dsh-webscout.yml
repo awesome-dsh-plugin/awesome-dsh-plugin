@@ -1,0 +1,6 @@
+url: https://github.com/Barry-1212/dsh-webscout
+name: Barry-1212/dsh-webscout
+category: browser
+description:
+  en: 'Tavily-backed web search and page fetch for DeepSeek Harness: a Search provider, a Fetch provider with Tavily Extract, Firecrawl and direct HTTP modes, and a settings card.'
+  zh: '为 DeepSeek Harness 提供 Tavily 网页搜索与页面抓取：包含 Search provider、支持 Tavily Extract/Firecrawl/本地 HTTP 的 Fetch provider，以及设置卡片。'
