@@ -1,0 +1,6 @@
+url: https://github.com/yanlijin/dsh-qwen-balance
+name: yanlijin/dsh-qwen-balance
+category: usage
+description:
+  en: 'Alibaba Cloud / Qwen balance card above the Settings row in the DSH web sidebar: account available and cash balance, coupon balances with expiry dates (student vouchers included) read through the BSS OpenAPI, and OpenAI-compatible relay quota. An official DashScope sk- key has no balance endpoint at all, so real money and coupons require an Alibaba Cloud AccessKey with bss:DescribeCoupons + bss:DescribeAcccount (AliyunBSSReadOnlyAccess is enough); secrets stay in the host process, the browser only sees a masked AccessKey ID, and /api/dsh-qwen-balance/* is loopback-only.'
+  zh: 'DSH Web 侧栏「设置」行上方的阿里云 / Qwen 余额卡片：经 BSS OpenAPI 显示账户可用额度与现金余额、代金券余额与到期日（含学生 300 元券），以及 OpenAI 兼容中转站额度。官方百炼 / DashScope 的 sk- key 没有任何余额接口，想看真金白银与代金券必须用带 bss:DescribeCoupons + bss:DescribeAcccount（建议只挂 AliyunBSSReadOnlyAccess）的阿里云 AccessKey；密钥只留在宿主进程，浏览器只拿到掩码后的 AccessKey ID，/api/dsh-qwen-balance/* 仅允许环回访问。'

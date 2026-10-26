@@ -2,5 +2,5 @@ url: https://github.com/iStarryDust/dsh-prompt-enhance
 name: iStarryDust/dsh-prompt-enhance
 category: tools
 description:
-  en: 'The star button in the composer enhances the draft with the session model and toggles back to the original text; the enhancement template files are editable.'
-  zh: '发送框的星形按钮用当前会话模型增强提示词，并可切回原文；增强模板文件可编辑。'
+  en: 'Prompt enhancement: click the star button in the composer to have the current model rewrite the draft more clearly, with one click back to the original; the template is editable.'
+  zh: '增强提示词：点击发送框的星形按钮，用当前模型把草稿改写得更清晰，可一键切回原文；模板可编辑。'

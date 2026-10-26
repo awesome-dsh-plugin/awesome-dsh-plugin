@@ -1,0 +1,6 @@
+url: https://github.com/fangchenghao/dsh-web-search
+name: fangchenghao/dsh-web-search
+category: tools
+description:
+  en: Keyless web search that fuses eight engines, fetches page text through a proxy ladder, and adds eight vertical sources for packages, papers and questions.
+  zh: 免密钥的网页搜索：融合八个引擎、经代理梯队抓取正文，另有八个覆盖包、论文与问答的垂直来源。

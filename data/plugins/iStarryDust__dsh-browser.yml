@@ -2,5 +2,5 @@ url: https://github.com/iStarryDust/dsh-browser
 name: iStarryDust/dsh-browser
 category: browser
 description:
-  en: 'Gives the agent a real headed Chromium under the harness home, with browser_open and browser_interact tools that keep page state across calls.'
-  zh: '给 Agent 一个真实的有头 Chromium，提供 browser_open 与 browser_interact 工具，页面状态在多次调用之间保持。'
+  en: 'Built-in browser: gives the agent a real headed Chromium it can open, click, type and scroll in, keeping page state across calls.'
+  zh: '内置浏览器：给 Agent 一个真实的有头 Chromium，可打开网页并点击、输入、滚动，页面状态在多次调用之间保持。'

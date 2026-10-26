@@ -1,6 +1,0 @@
-url: https://github.com/Firefox2100/dsh-ai-providers/tree/main/packages/dsh-ai-jina-cohere
-name: Firefox2100/dsh-ai-providers#jina-cohere
-category: model
-description:
-  en: Reranking provider for Jina, Cohere, and compatible rerank APIs in DSH. Requires Firefox2100/dsh-ai-providers#runtime to be installed and enabled.
-  zh: 为 DSH 提供 Jina、Cohere 及兼容重排序 API 支持的重排序提供商。需要安装并启用 Firefox2100/dsh-ai-providers#runtime。

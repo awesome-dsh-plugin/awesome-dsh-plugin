@@ -1,0 +1,6 @@
+url: https://github.com/FrogFlaying/dsh-desktop-organizer
+name: FrogFlaying/dsh-desktop-organizer
+category: tools
+description:
+  en: 'Windows desktop organizer for DeepSeek Harness: it registers 1 agent tool (desktop_organize).'
+  zh: Windows 桌面整理：归类桌面快捷方式、发现未建快捷方式的程序、检测失效链接（1 个模型工具 desktop_organize）。

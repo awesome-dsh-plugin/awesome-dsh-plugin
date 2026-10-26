@@ -2,5 +2,6 @@ url: https://github.com/loshanvren/dsh-codex-reset-tracker
 name: loshanvren/dsh-codex-reset-tracker
 category: usage
 description:
-  en: Displays today's public Codex reset status and upcoming schedule in the DSH composer, with a read-only tool for status and paginated records.
-  zh: 在 DSH composer 中展示今天的公开 Codex 重置状态及下次排期，并提供只读状态与分页记录工具。
+  en: Reports Codex reset probabilities, completed resets and upcoming schedules in the DSH composer, with a read-only tool for status and paginated records.
+  zh: 在 DSH composer 中报道 Codex 重置概率、最近完成重置与下次排期，并提供只读状态与分页记录工具。
+tarball: https://github.com/loshanvren/dsh-codex-reset-tracker/releases/latest/download/dsh-codex-reset-tracker.tgz

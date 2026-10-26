@@ -1,0 +1,8 @@
+url: https://github.com/WU079/dsh-douyin-subagent
+name: WU079/dsh-douyin-subagent
+category: tools
+tarball: https://github.com/WU079/dsh-douyin-subagent/releases/download/v0.2.1/dsh-douyin-subagent-0.2.1.tgz
+icon: https://raw.githubusercontent.com/WU079/dsh-douyin-subagent/main/assets/icon-180.png
+description:
+  en: 'Runs a Douyin subagent that browses videos and reads comments in valley hours and reports back, with dy_* tools for publishing and replying (comments sent from the already-logged-in page with its own request signature, no IM ticket), a daily quota timer, and a settings panel under Settings → Douyin: master switch, auto mode, valley windows, rounds per day and report depth. Windows-oriented; needs the separate douyin-mcp binary (yunsur/douyin-mcp releases, path set via dy_config mcpExe) and an Edge/Chromium login; replying needs a logged-in browser on a CDP port; publishing needs extra credentials most accounts lack.'
+  zh: '让子代理在谷时刷抖音、读评论并汇报；附带发作品/回评论的 dy_* 工具（评论从已登录页面带签名直发，不依赖 IM ticket）、每日配额定时，以及设置页「刷抖音」里的控制面板（总开关、自动模式、谷时窗口、每天轮数、报告详细度）。偏 Windows；搜索与评论依赖另装的 douyin-mcp 可执行文件（yunsur/douyin-mcp 的 Release，路径经 dy_config 的 mcpExe 设置）及 Edge/Chromium 登录；回评论需要开了 CDP 端口的已登录浏览器；发作品还需多数账号没有的额外凭据。'

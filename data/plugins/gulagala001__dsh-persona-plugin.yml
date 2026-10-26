@@ -1,0 +1,7 @@
+url: https://github.com/gulagala001/dsh-persona-plugin
+name: gulagala001/dsh-persona-plugin
+category: identity
+description:
+  en: "Create, import and manage personality presets with global and per-conversation choices."
+  zh: "创建、导入和管理人格预设，支持全局与单会话选择。"
+tarball: https://github.com/gulagala001/dsh-persona-plugin/releases/download/v0.1.2-dsh.0.2.1-rc.3/gulagala001-dsh-persona-plugin-0.1.2-dsh.0.2.1-rc.3.tgz

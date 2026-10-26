@@ -517,7 +517,6 @@
  "https://github.com/pgmi-builds/better-dsh/tree/main/better-dsh": "2026-08-29",
  "https://github.com/inclusionAI/Avernet/tree/dev/apps/bcs/crates/plugins/deepseek-harness-channel-bcn": "2026-09-03",
  "https://github.com/BOWLUNA/dsh-custom-mode": "2026-09-18",
- "https://github.com/FNOSP/fnos-dsh/tree/main/plugins/dsh-codebuddy-plugin": "2026-09-08",
  "https://github.com/FNOSP/fnos-dsh/tree/main/plugins/dsh-codex-auth-plugin": "2026-09-02",
  "https://github.com/FNOSP/fnos-dsh/tree/main/plugins/dsh-fnos-plugin": "2026-09-18",
  "https://github.com/FNOSP/fnos-dsh/tree/main/plugins/dsh-semi-ui-showcase-plugin": "2026-09-18",
@@ -542,5 +541,16 @@
  "https://github.com/moon16u/dsh-pouch/tree/main/packages/dsh-restart": "2026-10-17",
  "https://github.com/moon16u/dsh-pouch/tree/main/packages/dsh-mcp-console": "2026-10-17",
  "https://github.com/moon16u/dsh-pouch/tree/main/packages/dsh-hooks": "2026-10-17",
- "https://github.com/AsterionZephyr/dsh-desktop-hand": "2026-10-22"
+ "https://github.com/AsterionZephyr/dsh-desktop-hand": "2026-10-22",
+ "https://github.com/wasteoneslife/scenes-skill-creator": "2026-10-17",
+ "https://github.com/Sacredbluedragon/dsh-memory-shield/tree/main/packages/dsh-memory-shield": "2026-10-22",
+ "https://github.com/Kadima-code/dsh-subagent-toolkit": "2026-10-22",
+ "https://github.com/bushizhanghan/dsh-workbuddy-harness": "2026-10-22",
+ "https://github.com/JasperPengC/dsh-mcp-skills-board": "2026-10-18",
+ "https://github.com/ZekaiShi/dsh-evo-subagent": "2026-08-26",
+ "https://github.com/qiangweiliu/dsh-context/tree/main/agent-embodiment": "2026-10-19",
+ "https://github.com/angelky7/dsh-origin-bridge": "2026-10-20",
+ "https://github.com/angelky7/dsh-browser-control": "2026-08-24",
+ "https://github.com/PlusQi/dsh-tokstats": "2026-10-23",
+ "https://github.com/tuoLuoSuan/dsh-peak": "2026-10-17"
 }

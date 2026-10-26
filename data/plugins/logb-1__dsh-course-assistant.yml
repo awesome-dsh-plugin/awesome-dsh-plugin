@@ -1,0 +1,6 @@
+url: https://github.com/logb-1/dsh-course-assistant
+name: logb-1/dsh-course-assistant
+category: docs
+description:
+  en: 'Turns course files (PPTX, PDF, DOCX, Markdown) into an outline, per-chapter key points with quoted evidence, Bilibili video picks, syllabus coverage, and Anki/JSON exports.'
+  zh: '把课程文件（PPTX、PDF、DOCX、Markdown）解析成目录、带原文引证的分章要点、B 站网课推荐与考纲覆盖检查，并可导出 Anki 卡片和 JSON。'

@@ -2,5 +2,5 @@ url: https://github.com/iStarryDust/dsh-skill-suite
 name: iStarryDust/dsh-skill-suite
 category: skill
 description:
-  en: 'Adds a Skills page for browsing, toggling and editing the user skill root, plus a save_skill tool so the agent can author skills itself.'
-  zh: '技能管理页可浏览、开关、编辑用户技能目录，并提供 save_skill 工具让 Agent 自行编写技能。'
+  en: 'Agent skills: browse, toggle and edit skills in the management page, and let the agent write new ones itself.'
+  zh: 'Agent技能：在管理页里浏览、开关、编辑技能，也能让 Agent 自己写新技能。'

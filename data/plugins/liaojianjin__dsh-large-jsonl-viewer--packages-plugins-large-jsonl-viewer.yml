@@ -2,6 +2,6 @@ url: https://github.com/liaojianjin/dsh-large-jsonl-viewer/tree/main/packages/pl
 name: liaojianjin/dsh-large-jsonl-viewer#large-jsonl-viewer
 category: docs
 description:
-  en: Read-only JSONL and NDJSON viewer with a byte index, record navigation, and streaming previews for large records.
-  zh: 使用字节索引逐条浏览 JSONL 与 NDJSON，支持物理行跳转和超长记录流式预览的只读查看器。
-tarball: https://github.com/liaojianjin/dsh-large-jsonl-viewer/releases/download/v0.1.1/dsh-large-jsonl-viewer-0.1.1.tgz
+  en: Read-only JSONL and NDJSON viewer with a byte index, record navigation, and streaming previews for large records. Requires DSH >=0.2.1-rc.2.
+  zh: 使用字节索引逐条浏览 JSONL 与 NDJSON，支持物理行跳转和超长记录流式预览的只读查看器。要求 DSH >=0.2.1-rc.2。
+tarball: https://github.com/liaojianjin/dsh-large-jsonl-viewer/releases/latest/download/dsh-large-jsonl-viewer.tgz

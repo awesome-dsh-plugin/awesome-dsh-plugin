@@ -1,0 +1,6 @@
+url: https://github.com/zuoyunlai/dsh-pet-plugin
+name: zuoyunlai/dsh-pet-plugin
+category: fun
+description:
+  en: 'A photo-real desk pet for the DSH window: four personas with five expression sprites each, whose dance, hair-flip and walk actions play as 24 fps VP9 alpha video clips; proactive lines with an optional edge-tts neural voice, ink / confetti / cloud / fog / bomb effects, a right-click menu and a /dsh-pet command, plus a small chat box that answers through a one-shot host model call without writing to your session. UI text ships in en, zh, es, pt and hi.'
+  zh: 'DSH 窗口里的超写实桌宠：四个形象各有五张表情立绘，跳舞、撩发、走路三套动作以 24fps VP9 alpha 视频片段播放；按活跃时段主动说话（可选 edge-tts 神经音色），带泼墨、撒花、乌云、起雾、炸弹特效、右键菜单与 /dsh-pet 斜杠命令，旁边的小输入框通过一次性宿主模型调用回话、不写进你的会话。界面文案内置中、英、西、葡、印五语。'

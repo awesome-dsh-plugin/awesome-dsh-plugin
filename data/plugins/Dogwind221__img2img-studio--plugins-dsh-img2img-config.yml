@@ -1,0 +1,6 @@
+url: https://github.com/Dogwind221/img2img-studio/tree/main/plugins/dsh-img2img-config
+name: Dogwind221/img2img-studio#dsh-img2img-config
+category: ui
+description:
+  en: 'Adds two UI surfaces: a composer image editor (numbered edit marks with per-mark instructions, solid-background removal, brush-mask erase, resize and crop presets; results return to the composer as attachments plus a manifest capsule) and a Settings → vision/generation provider panel (three priority tiers, drag reordering, per-channel model fallback chains, arrears-aware balance probing, ChatGPT-web account store) that writes the resolved providers back to the skills .env files.'
+  zh: '为 img2img-studio 提供两个界面：① 输入框上方的图片编辑器（编号标记 + 每处改法、纯色背景移除、涂抹掩码擦除、比例与尺寸调整，结果以附件 + manifest 清单胶囊回填输入框）；② 设置页「识图与生图」供应商面板（三级优先级、拖拽排序、每通道模型降级链、欠费探测自动关停、ChatGPT 网页出图账号库），保存后写回两个 skill 的 .env。'

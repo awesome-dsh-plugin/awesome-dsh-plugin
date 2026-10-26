@@ -1,6 +1,7 @@
 url: https://github.com/verneuil/dsh-opencode-go-usage
 name: verneuil/dsh-opencode-go-usage
 category: usage
+icon: https://raw.githubusercontent.com/verneuil/dsh-opencode-go-usage/main/assets/icon.png
 description:
   en: 'Floating pill for DeepSeek Harness that shows OpenCode Go usage for the 5-hour, weekly and monthly windows as three rings, optionally alongside the DeepSeek account balance; a hover popover lists each window with its reset countdown, and a minimal mode nests the rings. Settings cover refresh interval, progress basis, what the pill shows and its position.'
   zh: 'DSH 悬浮窗插件：三环显示 OpenCode Go 的 5 小时 / 本周 / 本月用量，可选同时显示 DeepSeek 账户余额；悬停浮层列出各窗口与重置倒计时，极简模式把三环嵌套显示；设置页可调刷新间隔、进度口径、显示项与浮窗位置。'

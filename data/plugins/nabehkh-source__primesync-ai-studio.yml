@@ -1,0 +1,6 @@
+url: https://github.com/nabehkh-source/primesync-ai-studio
+name: nabehkh-source/primesync-ai-studio
+category: tools
+description:
+  en: 'Hosted PrimeSync AI Studio strategy-research MCP configuration bundle using the official MCP client and mcp-remote OAuth bridge; eligible Studio access required. Experimental: OAuth consent and tool calls are not yet verified end-to-end. Complete manual CLI sign-in on the same computer before starting Harness; otherwise tools may be absent after startup. Targets DSH 0.2.1-rc.2 only; mcp-remote 0.15.2 is downloaded through npx on first launch.'
+icon: https://raw.githubusercontent.com/nabehkh-source/primesync-ai-studio/6e297f88c65ccf9a342e041b2d956fb2e5361f46/primesync-ai-studio-logo.png

@@ -1,0 +1,6 @@
+url: https://github.com/lchqi1998/dsh-n8n-plugin
+name: lchqi1998/dsh-n8n-plugin
+category: workflow
+description:
+  en: 'Operate n8n from DeepSeek Harness with a multi-instance registry, alias-addressed agent tools and a settings page.'
+  zh: 'DeepSeek Harness 的 n8n 工作流运维插件：多实例注册表、Agent 工具与设置页界面。'

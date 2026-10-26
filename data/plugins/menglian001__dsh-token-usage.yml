@@ -1,0 +1,7 @@
+url: https://github.com/menglian001/dsh-token-usage
+name: menglian001/dsh-token-usage
+category: usage
+description:
+  en: 'Per-request token ledger for DSH with four-bucket accounting, a 53-week heat map and a live concurrency gauge, plus an on-disk JSONL ledger that outlives the 600-row session projection window and is swept back from every stored session log at startup.'
+  zh: '逐请求 token 账本：四桶计量、53 周热力图与实时并发，并额外落一份 JSONL 账本——不受每会话 600 行投影窗口限制，启动时从全部会话日志回扫补齐。'
+icon: https://raw.githubusercontent.com/menglian001/dsh-token-usage/main/docs/icon-180.png
