@@ -554,5 +554,10 @@
  "https://github.com/tuoLuoSuan/dsh-peak": "2026-10-17",
  "https://github.com/maimaiqwe/prompt-enhancer/tree/main/dsh-plugin": "2026-10-23",
  "https://github.com/FanXi1230/fanxi/tree/main/plugins/dsh-nova": "2026-10-25",
- "https://github.com/drscrewdriver/dsh-manage-session": "2026-10-22"
+ "https://github.com/drscrewdriver/dsh-manage-session": "2026-10-22",
+ "https://github.com/Yinxe/deepseek-harness-plugins/tree/main/archive/token-meter": "2026-09-13",
+ "https://github.com/Yinxe/deepseek-harness-plugins/tree/main/archive/file-change-viewer": "2026-09-19",
+ "https://github.com/Yinxe/deepseek-harness-plugins/tree/main/archive/mcwiki-search": "2026-09-13",
+ "https://github.com/Yinxe/deepseek-harness-plugins/tree/main/archive/web-style": "2026-09-19",
+ "https://github.com/tszmzz1026/dsh-epindel-boot-animation/tree/main/packages/dsh-glass-aurum": "2026-10-22"
 }
