@@ -1,0 +1,6 @@
+url: https://github.com/ys118/harnmem/tree/master/packages/dsh-harnmem
+name: ys118/harnmem#dsh-harnmem
+category: memory
+description:
+  en: 'Agent memory for DSH: prompt-injected hot index, five harnmem_* tools, session-end extraction, and a read-only memory browser panel.'
+  zh: 'DSH 智能体记忆插件：系统提示注入热索引、五个 harnmem_* 工具、会话结束记忆提取，以及只读记忆浏览面板。'
