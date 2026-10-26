@@ -1,0 +1,7 @@
+url: https://github.com/hrygo/dsh-speechrail-bundle/tree/main/packages/voice-input
+name: hrygo/dsh-speechrail-bundle#voice-input
+category: voice
+icon: https://raw.githubusercontent.com/hrygo/dsh-speechrail-bundle/main/docs/market-submission/icon-256.png
+description:
+  en: 'Brings your own transcription engine to the DeepSeek Harness composer: record in the browser, send the audio to a loopback SpeechRail service or any other OpenAI-compatible engine you point it at, and insert the text into the draft. Transcripts are never sent as messages, and an upload whose outcome is unknown keeps a fail-closed gate until you acknowledge it.'
+  zh: '给 DSH 输入框接上你自己的转写引擎：浏览器录音，交给本机 SpeechRail 服务或回环上任意 OpenAI 兼容引擎转写并插入草稿。转写从不替你发送；结局未知的上传会保持未确认门禁，直到你确认。'
