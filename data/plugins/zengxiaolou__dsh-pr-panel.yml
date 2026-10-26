@@ -2,5 +2,5 @@ url: https://github.com/zengxiaolou/dsh-pr-panel
 name: zengxiaolou/dsh-pr-panel
 category: git
 description:
-  en: 'Keeps the pull requests raised in a session on screen: a floating panel plus a right-column review pane showing CI state, review comments and merge status for each PR.'
-  zh: '把本会话里提的 PR 常驻在界面上：浮窗加右列审阅面板，逐个显示 CI 状态、评审意见与合并状态。'
+  en: 'Trimmed fork of ItQianChen/dsh-github-flow: a floating panel plus a right-column review pane for the pull requests raised in a session, showing CI state, review comments and merge status. It also registers the github_* agent tools (PR merge and review, secrets, raw API), so do not install both.'
+  zh: 'fork 自 ItQianChen/dsh-github-flow 并裁剪：本会话 PR 的浮窗与右列审阅面板，显示 CI 状态、评审意见与合并状态；同时注册 github_* 工具（含合并/评审 PR、密钥、原始 API），勿与原版同装。'
