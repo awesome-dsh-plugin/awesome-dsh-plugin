@@ -1,0 +1,6 @@
+url: https://github.com/dhdkfkfkf/dsh-pull-to-send
+name: dhdkfkfkf/dsh-pull-to-send
+category: ui
+description:
+  en: 'Send by dragging instead of clicking. Press the composer and pull up to arm the gesture; releasing sends, dragging back into the composer cancels, and dragging outside the conversation area cancels on the spot. Mouse and pen only.'
+  zh: '用拖拽代替点击发送。按住输入框向上拉即武装：松手发送，拖回输入框取消，拖出对话区当场取消。仅响应鼠标与笔。'
