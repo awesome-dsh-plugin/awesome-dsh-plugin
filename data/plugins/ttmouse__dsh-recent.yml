@@ -1,0 +1,6 @@
+url: https://github.com/ttmouse/dsh-recent
+name: ttmouse/dsh-recent
+category: ui
+description:
+  en: 'Adds a 最近 (Recent) section below the workspace list in the DSH web sidebar that flattens the newest sessions of every workspace into one timeline, reusing the session rows and hover cards the shell already renders, paging in earlier sessions as you scroll, and folding the workspace list itself to the five folders with the newest history. Requires DSH ^0.2.0-rc.1.'
+  zh: '在 DSH Web 侧边栏的工作区列表下面加一个「最近」区块，把所有工作区的最新会话平铺成一条时间线，行与悬停卡片复用外壳自己渲染的会话行，滚到底继续加载更早的会话；同时把工作区列表本身折叠为最近有记录的 5 个文件夹。需要 DSH ^0.2.0-rc.1。'

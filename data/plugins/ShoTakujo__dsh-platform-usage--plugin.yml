@@ -1,0 +1,7 @@
+url: https://github.com/ShoTakujo/dsh-platform-usage/tree/main/plugin
+name: ShoTakujo/dsh-platform-usage#plugin
+category: usage
+description:
+  en: Account-level DeepSeek platform usage inside the DSH settings page — 52-week token heatmap, per-API-key and per-model breakdown, live balance.
+  zh: 在 DSH 设置页查看 DeepSeek 开放平台的账号级用量：52 周热力图、按 API Key 与模型的拆分、实时余额。
+tarball: https://github.com/ShoTakujo/dsh-platform-usage/releases/latest/download/dsh-official-usage.tgz

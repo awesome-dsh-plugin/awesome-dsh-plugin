@@ -1,0 +1,6 @@
+url: https://github.com/AFunDog/dsh-sidebar-git-graph
+name: AFunDog/dsh-sidebar-git-graph
+category: git
+description:
+  en: "Right-sidebar page for DSH that draws the current session's repository as a VS Code-style commit graph - colored branch/merge lanes, ref chips and per-commit details - with a working-tree Changes area above it (staged/unstaged sections with inline diffs) for every working tree of the repository; read-only, works with or without dsh-better-sidebar, and follows the session's worktree label when dsh-session-worktree is installed."
+  zh: "DSH 右侧边栏页：把当前会话的仓库画成 VS Code 风格的分支/合并提交图谱（彩色泳道、ref 徽章、提交详情），上方带工作区 Changes 区（staged/unstaged 分节、行内 diff），覆盖仓库的每个工作树；只读，装不装 dsh-better-sidebar 都能用，装了 dsh-session-worktree 时跟随会话的 worktree 标签。"

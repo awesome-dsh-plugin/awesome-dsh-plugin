@@ -1,0 +1,7 @@
+url: https://github.com/jidekaixin2dian/dsh-file-actions
+name: jidekaixin2dian/dsh-file-actions
+category: ui
+tarball: https://github.com/jidekaixin2dian/dsh-file-actions/releases/latest/download/dsh-file-actions.tgz
+description:
+  en: Right-click any file reference in the chat to open it, open it with an associated application, reveal it in the file manager, copy its path or contents, and save it.
+  zh: 右键聊天里的任意文件引用，即可打开、用系统关联应用打开、在文件管理器中定位、复制路径或文件内容、另存为。

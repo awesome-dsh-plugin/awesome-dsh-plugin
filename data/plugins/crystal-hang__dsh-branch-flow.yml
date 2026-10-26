@@ -1,0 +1,7 @@
+url: https://github.com/crystal-hang/dsh-branch-flow
+name: crystal-hang/dsh-branch-flow
+category: git
+description:
+  en: 'Branch panel for the composer: creates rule-checked branches from production6, validates commit messages against a type(scope) convention, and commits, pushes, or merges into stage in one click.'
+  zh: 输入框内的分支面板：按规范从 production6 切分支，按 type(scope) 约定校验提交信息，一键提交、推送并合并到 stage。
+icon: https://raw.githubusercontent.com/crystal-hang/dsh-branch-flow/main/assets/icon-180.png

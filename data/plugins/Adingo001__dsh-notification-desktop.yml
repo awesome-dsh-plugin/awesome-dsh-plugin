@@ -1,0 +1,6 @@
+url: https://github.com/Adingo001/dsh-notification-desktop
+name: Adingo001/dsh-notification-desktop
+category: notify
+description:
+  en: Turn-end reminders for DSH 0.2.x — the host folds each session's last completed turn into a projection and the desktop shell shows it as a real Windows toast, with per-outcome filters, background-only gating and a settings page. The Windows desktop shell must register its AUMID once before toasts appear.
+  zh: DSH 0.2.x 的完成提醒——宿主把每个会话最后一次 turn/end 折成投影，桌面端再发成真正的 Windows toast；带按结束原因过滤、仅后台提醒和设置页；Windows 桌面壳需先注册一次 AUMID，toast 才能弹出。

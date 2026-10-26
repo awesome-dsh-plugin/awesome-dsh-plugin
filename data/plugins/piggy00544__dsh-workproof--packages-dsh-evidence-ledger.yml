@@ -1,0 +1,7 @@
+url: https://github.com/piggy00544/dsh-workproof/tree/main/packages/dsh-evidence-ledger
+name: piggy00544/dsh-workproof#dsh-evidence-ledger
+category: workflow
+description:
+  en: 'Session-scoped research evidence ledger with sources, linked claims, open questions, and explicit user review; provides a tool, slash command, and conversation panel, with selected-claim Markdown export that omits excerpts, review notes, and local paths by default; does not fetch sources or verify their truth.'
+  zh: '会话级研究证据账本，整理来源、关联论点、待解问题与用户明确复核；提供工具、斜杠命令和会话面板，可按论点选择导出 Markdown，默认省略摘录、复核备注与本地路径；不抓取来源或判断内容真伪。'
+tarball: https://github.com/piggy00544/dsh-workproof/releases/download/v0.1.0/dsh-evidence-ledger-0.1.0.tgz

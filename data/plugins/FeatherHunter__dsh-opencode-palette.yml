@@ -2,6 +2,6 @@ url: https://github.com/FeatherHunter/dsh-opencode-palette
 name: FeatherHunter/dsh-opencode-palette
 category: theme
 description:
-  en: "Ports all 38 opencode themes (33 TUI + 4 desktop 2.0 + system) into DeepSeek Harness: data-driven pipeline (JSON → color resolve → DSH override), per-browser persistence, typography kept orthogonal (all text or code only, 11–24 px, seven code-font presets plus a searchable list of the fonts installed on your machine), and a system fallback that keeps typography only."
-  zh: "将opencode 38 款主题完整搬到 DeepSeek Harness：提供赏心悦目的开发、学习、办公体验。为长时间办公护眼而生🌹"
-tarball: https://github.com/FeatherHunter/dsh-opencode-palette/releases/download/v2.0.17/dsh-opencode-palette-2.0.17.tgz
+  en: "Port all 38 opencode themes into DeepSeek Harness, light and dark alike: quiet Tokyo Night, soft Catppuccin, easy on the eyes Zenburn. Plus 25 IP theme capsules: Genshin, Kuromi, Doraemon, Hello Kitty, Harry Potter, Cyberpunk 2077, Dragon Ball, Naruto, One Piece, Pokémon, Sailor Moon, Star Wars, Transformers, Ultraman, Zelda, Super Mario, Evangelion, LEGO, Marvel, DC, Disney, four of them in a second light/dark take, each with its own soul. And every theme is fully editable, so you can craft one that is entirely your own."
+  zh: "将opencode的38款主题搬进DSH，明暗兼收：东京之夜沉静、卡布奇诺轻柔、禅燃护眼；另备25款主题胶囊，原神、原神·夜航、库洛米、哆啦A梦、HelloKitty、哈利波特、赛博朋克2077、龙珠、火影忍者、火影忍者·暗部、海贼王、宝可梦、美少女战士、星球大战、变形金刚、奥特曼、塞尔达传说、超级马里奥、超级马里奥·夜行、新世纪福音战士、新世纪福音战士·晴空、乐高、漫威、DC、迪士尼，各有其魂；每款主题都可逐色细改，打造属于您的专属主题。"
+tarball: https://github.com/FeatherHunter/dsh-opencode-palette/releases/download/v2.1.10/dsh-opencode-palette-2.1.10.tgz

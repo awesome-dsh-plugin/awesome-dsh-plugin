@@ -1,0 +1,6 @@
+url: https://github.com/WiseXin/dsh-antigravity
+name: WiseXin/dsh-antigravity
+category: model
+description:
+  en: Google Antigravity and Cloud Code Assist model provider with Gemini 3.8 Flash, sandbox failover, and multi-account quota management.
+  zh: Google Antigravity 与 Cloud Code Assist 模型提供方插件，支持 Gemini 3.8 Flash、沙箱端点容灾与多账号配额管理。

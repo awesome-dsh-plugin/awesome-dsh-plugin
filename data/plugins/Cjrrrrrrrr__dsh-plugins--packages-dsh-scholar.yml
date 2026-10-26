@@ -1,0 +1,6 @@
+url: https://github.com/Cjrrrrrrrr/dsh-plugins/tree/main/packages/dsh-scholar
+name: Cjrrrrrrrr/dsh-plugins#dsh-scholar
+category: tools
+description:
+  en: 'Literature search tools for DeepSeek Harness: four model-facing tools — paper_search, paper_get, paper_citations and book_search — over OpenAlex, arXiv, Crossref, Semantic Scholar and PubMed, with open-access PDF resolution through Unpaywall.'
+  zh: 'DSH 学术检索工具：四个模型可用工具 paper_search / paper_get / paper_citations / book_search，覆盖 OpenAlex、arXiv、Crossref、Semantic Scholar、PubMed 五个库，并用 Unpaywall 解析开放获取 PDF。'

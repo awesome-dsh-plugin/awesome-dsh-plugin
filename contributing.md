@@ -15,6 +15,10 @@ category: ui                              # see the category list below / 见下
 description:
   en: One-line description ending with a period.
   zh: 一句话描述，以句号结尾。   # optional — a maintainer will add it / 可选，维护者会补
+# optional — GitHub-hosted raster image used as the storefront tile;
+# falls back to the owner's avatar when omitted
+# 可选——用 GitHub 托管的位图作为市场卡片图标；不写则回退到作者头像
+icon: https://raw.githubusercontent.com/owner/repo/main/assets/icon-180.png
 ```
 
 **Only `description.en` is required.** If you can't write the Chinese, leave `zh` out and a maintainer will add it — a missing translation is our work, not a reason to bounce your plugin. / **只有 `description.en` 是必填的。** 写不了中文就不写 `zh`，维护者会补上——缺翻译是我们的活，不该成为你的插件被打回的理由。
@@ -161,6 +165,12 @@ Every PR runs, in order / 每个 PR 依次运行：
 4. **`awesome-lint`** and the site build — locale parity, separators, dates, screenshots. / `awesome-lint` 与站点构建：双语一致性、分隔符、日期、截图。
 
 If a check fails it says exactly what to change. Push a fix to the same branch — no need to open a new PR. / 检查失败时会明确指出要改什么。在同一分支上推送修复即可，无需重开 PR。
+
+### Icon / 图标（optional / 可选）
+
+A storefront tile: one GitHub-hosted raster image (`png`, `jpg`, `jpeg`, `webp`), declared as `icon:` in your entry. It is drawn at ~96px, so a square image reads best. Omit it and storefronts fall back to the owner's GitHub avatar. SVG and third-party image hosts are refused — the listing does not make visitors fetch images from hosts it cannot vouch for.
+
+市场卡片图标：在条目里用 `icon:` 声明一张 **GitHub 托管的位图**（`png`/`jpg`/`jpeg`/`webp`）。卡片约 96px 显示，方形图最清楚；不写则回退到作者头像。SVG 与第三方图床会被拒绝——列表不会让访客去不可担保的图床取图。
 
 ### Screenshots / 截图（optional, recommended / 可选，推荐）
 

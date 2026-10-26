@@ -1,0 +1,6 @@
+url: https://github.com/QiYunqv-jxd/dsh-desktop-autostart
+name: QiYunqv-jxd/dsh-desktop-autostart
+category: wsl
+description:
+  en: 'Adds a logon autostart switch for the DeepSeek Harness desktop app on Windows. It manages a single shortcut in the user Startup folder: no registry writes, no admin rights, no extra background process.'
+  zh: '给 DeepSeek Harness 桌面版加一个登录自启开关：只管理用户启动文件夹里的一个快捷方式，不写注册表、不需要管理员权限、不额外常驻进程。'

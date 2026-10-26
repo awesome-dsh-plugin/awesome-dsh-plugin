@@ -1,0 +1,6 @@
+url: https://github.com/ris-cloud/dsh-ris-ide
+name: ris-cloud/dsh-ris-ide
+category: dev
+description:
+  en: 'Local dev panel for the DSH web GUI: follow service logs, start/stop workspace programs, debug Java over JDWP, browse and edit workspace files, and search file names. Needs DSH 0.2.0-rc.2 or later; starting or debugging Java programs needs a local JDK and Maven, and starting front-end programs needs Node.'
+  zh: 'DSH 网页版的本机开发面板：跟随服务日志、启停工作区程序、JDWP 调试 Java、浏览编辑工作区文件与文件名搜索。需要 DSH 0.2.0-rc.2 或更高版本；启动或调试 Java 程序需要本机 JDK 与 Maven，启动前端程序需要 Node。'

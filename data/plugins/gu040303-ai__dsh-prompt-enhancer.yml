@@ -1,0 +1,7 @@
+url: https://github.com/gu040303-ai/dsh-prompt-enhancer
+name: gu040303-ai/dsh-prompt-enhancer
+category: ui
+tarball: https://github.com/gu040303-ai/dsh-prompt-enhancer/releases/download/v0.4.1/dsh-prompt-enhancer-0.4.1.tgz
+description:
+  en: One-click plain-text prompt enhancement with optional local checks and sentence review in DeepSeek Harness.
+  zh: 在 DeepSeek Harness 中一键优化纯文本提示词，并提供可选的本地检查和句级审阅。

@@ -17,6 +17,7 @@ import { Marked } from 'marked'
 import LOCALES from '../site/locales.mjs'
 import COMMENTS from '../site/comments.mjs'
 import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
+import { buildMarketIndex } from './lib/market-index.mjs'
 import { firstAddedDate } from './lib/added-dates.mjs'
 import { slugOf, termOf } from './lib/terms.mjs'
 
@@ -44,6 +45,11 @@ const tarballVerdicts = fs.existsSync(TARBALLS_FILE) ? JSON.parse(fs.readFileSyn
 // parsed out of the READMEs, which carry no file path; the added-date
 // derivation below needs one to ask git when an entry first appeared.
 const entryFiles = Object.fromEntries(readEntries().map((e) => [e.url, e.file]))
+const iconMap = Object.fromEntries(
+  readEntries()
+    .filter((e) => e.icon !== undefined)
+    .map((e) => [e.url, e.icon]),
+)
 const tarballMap = Object.fromEntries(
   readEntries()
     .filter((e) => {
@@ -172,6 +178,23 @@ const N = ordered.length
 // ever written back; git history is the ledger.
 const dates = fs.existsSync(DATES_FILE) ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8')) : {}
 const npmMap = fs.existsSync(NPM_MAP_FILE) ? JSON.parse(fs.readFileSync(NPM_MAP_FILE, 'utf8')) : {}
+
+// The plugin market index (format 1) that hosts read as a market source.
+// Built here rather than in a second pass so the page can tell whether THIS
+// deploy actually carries one: a push build restores the probe cache, and a
+// cache from before the publish-time field existed lists nothing — in that
+// case the panel is left out instead of advertising a URL that 404s.
+const builtIndex = buildMarketIndex({ entries: readEntries(), npmMap, locales: LOCALES, origin: ORIGIN })
+const indexBuilt = builtIndex.index.plugins.length > 0
+// Minified, not pretty: the host that reads this has a fixed 15 s fetch
+// timeout (dsh 0.2.1 `fetchTimeoutMs`), and one-space indentation added 25%
+// to a document already close to that budget on slow networks.
+if (indexBuilt) fs.writeFileSync('docs/index.json', JSON.stringify(builtIndex.index) + '\n')
+{
+  const { index, skipped } = builtIndex
+  const unpublished = skipped.noNpm + skipped.noVersion
+  console.log(`index: ${index.plugins.length} listed (${unpublished} entries have no npm package or version yet${skipped.noPublishTime > 0 ? `, ${skipped.noPublishTime} await a publish-time probe` : ''})`)
+}
 const starsMap = fs.existsSync('data/stars.json') ? JSON.parse(fs.readFileSync('data/stars.json', 'utf8')) : {}
 // Missing (not yet bootstrapped, or an entry with no npm package) is a
 // normal, permanent state for most entries — unlike stars.json, absence
@@ -505,10 +528,11 @@ function ranked(only) {
   return ordered.filter((e) => !only || e.cat === only).slice().sort(byDownloads)
 }
 
-// The install command the card shows. npm when the entry has a package, otherwise
-// the github: spec. Kept next to the catalog so the two cannot drift.
+// Match the detail page: prefer a verified npm package, then the declared
+// prebuilt tarball, and use Git only when neither is available. Both static
+// cards and the virtual catalog use this function.
 function cardCmd(e) {
-  return e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit
+  return e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit)
 }
 
 // download-ranked card grid; `only` limits to one category (category pages).
@@ -651,6 +675,13 @@ function langRedirect(current) {
   return `\n<script>{const p=new URLSearchParams(location.search);const v=p.get('lang');${cases}}</script>`
 }
 
+const INDEX_LINE = `    <div class="indexline">
+      <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8 13l2 2 4-4"/></svg>
+      <span class="lead">__T_INDEX_LEAD__ <code translate="no">cdn.jsdelivr.net/npm/dsh-plugin-catalog/index.json</code></span>
+      <button class="copy" type="button" data-cmd="https://cdn.jsdelivr.net/npm/dsh-plugin-catalog/index.json">__T_INDEX_COPY__</button>
+    </div>`
+
+
 const master = fs.readFileSync('site/template.html', 'utf8')
 
 for (const loc of LOCALES) {
@@ -682,6 +713,7 @@ for (const loc of LOCALES) {
     // this site's CLS. The hero total is the full list. The search counter
     // starts at the baked slice so a no-JS visitor is not told every plugin is
     // on the page; the script rewrites it to the full total before first paint.
+    .replaceAll('__INDEX_LINE__', () => indexBuilt ? INDEX_LINE : '')
     .replaceAll('__CARD_COUNT__', () => String(N))
     .replaceAll('__FALLBACK_COUNT__', () => String(Math.min(FALLBACK_CARDS, N)))
     .replaceAll(AD_HEAD_TOKEN, () => adHead())
@@ -1132,6 +1164,9 @@ const registry = {
       }),
       install: e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit),
       added: e.added,
+      // Optional, author-declared storefront tile; omitted when absent so the
+      // payload stays lean and a consumer falls back to the owner avatar.
+      ...(iconMap[e.url] === undefined ? {} : { icon: iconMap[e.url] }),
       // Optional, author-maintained (data/screenshots.json); omitted when
       // absent so the payload stays lean. Storefronts fall back to their own
       // README extraction (dsh-market #61).

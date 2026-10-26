@@ -1,0 +1,7 @@
+url: https://github.com/Plocr/dsh-commandcode
+name: Plocr/dsh-commandcode
+category: model
+description:
+  en: 'Command Code for DSH connects Go / GOAT / Pro / Max subscriptions through llm-pi-ai provider profiles, with model sync previews, favorites and hidden models, per-model reasoning presets, explicit request diagnostics, usage alerts, configuration import/export and web search.'
+  zh: 'Command Code for DSH｜订阅接入：通过 llm-pi-ai 供应商配置接入 Go / GOAT / Pro / Max 订阅，支持模型同步预览、收藏与隐藏、逐模型推理预设、主动调用诊断、用量提醒、配置导入导出和联网搜索。'
+tarball: https://github.com/Plocr/dsh-commandcode/releases/latest/download/dsh-commandcode-goat.tgz

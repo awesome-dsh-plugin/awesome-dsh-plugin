@@ -1,0 +1,6 @@
+url: https://github.com/zhishengplus/dsh-image-annotate
+name: zhishengplus/dsh-image-annotate
+category: ui
+description:
+  en: Draws circles, arrows, boxes and text on the DSH image preview, keeps every mark selectable so it can be dragged, scaled or re-edited later, and attaches the flattened PNG to the composer at the original image resolution.
+  zh: 在 DSH 的图片预览上圈选、画箭头、方框与文字，每一笔都能再选中拖动、缩放或改字，并把原分辨率的标注图作为附件放进输入框。

@@ -1,0 +1,6 @@
+url: https://github.com/rasyidmmz/dsh-ai-memory
+name: rasyidmmz/dsh-ai-memory
+category: memory
+description:
+  en: 'Closes ai-memory''s consolidation loop for DSH: when a DSH session ends it calls ai-memory finalize-session, so the observations DSH captured become wiki pages the other harnesses ai-memory serves can read. Skips subagents, queues concurrent session ends, and sweeps sessions abandoned by a forced restart.'
+  zh: '为 DSH 补上 ai-memory 的收敛闭环：DSH 会话结束时调用 ai-memory finalize-session，把本次捕获的观察整理成 wiki 页面，供 ai-memory 服务的其他 harness 读取；跳过子代理、串行化并发结束的会话，并补扫被强制重启遗留的会话。'

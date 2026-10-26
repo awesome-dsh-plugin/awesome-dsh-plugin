@@ -1,0 +1,7 @@
+url: https://github.com/Tests4gptplay/dsh-codex-native
+name: Tests4gptplay/dsh-codex-native
+category: model
+tarball: https://github.com/Tests4gptplay/dsh-codex-native/releases/download/v0.2.1-alpha.5/dsh-codex-native-0.2.1-alpha.5.tgz
+description:
+  en: "Uses OpenAI GPT via the official Codex app-server, with ChatGPT subscription login, DSH tools, native settings, quota and manual token usage history."
+  zh: "通过 OpenAI 官方 Codex app-server 将 GPT 接入 DSH 主模型，使用 ChatGPT 订阅登录，支持工具调用、原生设置、额度查询与手动 Token 历史用量统计。"

@@ -1,0 +1,7 @@
+url: https://github.com/takboo/dsh-session-bin
+name: takboo/dsh-session-bin
+category: session
+description:
+  en: Manage native archives by workspace, with search, unarchive, and permanent deletion of individual sessions or fixed batches.
+  zh: 按工作区管理原生归档，支持搜索、取消归档、单项和固定范围批量永久删除。
+tarball: https://github.com/takboo/dsh-session-bin/releases/latest/download/dsh-session-bin.tgz

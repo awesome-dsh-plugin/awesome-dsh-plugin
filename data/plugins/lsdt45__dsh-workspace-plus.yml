@@ -1,0 +1,6 @@
+url: https://github.com/lsdt45/dsh-workspace-plus
+name: lsdt45/dsh-workspace-plus
+category: ui
+description:
+  en: 'Hierarchical workspace tree plus browser-style session tabs for the DSH sidebar: a "/" in a workspace or session title creates a virtual folder, with sections, pinning, time buckets, drag ordering, unified 6px status dots, per-row appearance customization (colour, glow, weight, icon) and a floating full-text search over session titles and message bodies. Five settings switches restore any behaviour to the host default. Fork of KannaKuron/dsh-better-workspace.'
+  zh: 'DSH 侧边栏的工作区层级树与浏览器式会话标签页：工作区或会话标题中的 / 自动成为虚拟分组，另含分区、置顶、时间分桶、拖拽排序、统一 6px 状态点、按行定制外观（颜色 / 发光 / 字重 / 图标），以及覆盖会话标题与消息正文的浮层全文检索。设置页五个开关可把任一行为还原为宿主默认。fork 自 KannaKuron/dsh-better-workspace。'

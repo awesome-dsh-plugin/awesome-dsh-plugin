@@ -3,4 +3,4 @@ name: nightosong/gord-dsh-worktree
 category: git
 description:
   en: 'Git worktrees for DeepSeek Harness — isolate parallel work in its own directory and branch. Ships Fast mode (快速模式).'
-  zh: '为 DeepSeek Harness 提供 Git worktree 管理：把并行开发放进各自独立的目录与分支。随包发布快速模式（Fast mode）。'
+  zh: '为 DeepSeek Harness 管理 git worktree —— 让并行工作各自隔离在自己的目录与分支里。自带快速模式（Fast mode）。'

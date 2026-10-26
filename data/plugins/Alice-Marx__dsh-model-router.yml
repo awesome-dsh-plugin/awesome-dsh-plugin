@@ -1,0 +1,6 @@
+url: https://github.com/Alice-Marx/dsh-model-router
+name: Alice-Marx/dsh-model-router
+category: model
+description:
+  en: Routes DeepSeek Harness work across configured model APIs and supported vendor CLIs with dependency-aware packages and cost previews.
+  zh: 为 DeepSeek Harness 规划有依赖的工作包，将其分配给已配置的模型 API 或支持的厂商 CLI，并提供费用预览。

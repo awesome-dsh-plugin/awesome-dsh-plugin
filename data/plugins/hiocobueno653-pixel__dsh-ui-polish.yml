@@ -1,0 +1,6 @@
+url: https://github.com/hiocobueno653-pixel/dsh-ui-polish
+name: hiocobueno653-pixel/dsh-ui-polish
+category: ui
+description:
+  en: 'UI polish layer for the DSH web client: frosted-glass menu surfaces, a draggable reasoning-effort slider that replaces the level radio list, and model-menu navigation that reaches the model list in one click and closes on a single Esc.'
+  zh: 'DSH 网页端界面打磨层：补上浮层毛玻璃材质，用可拖动滑杆替换推理等级单选列表，模型菜单一次点击直达列表、Esc 一次关闭。'

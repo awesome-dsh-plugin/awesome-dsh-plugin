@@ -65,6 +65,15 @@ export function slugFor(url) {
   return sub ? `${base}--${sub.replaceAll('/', '-')}` : base
 }
 
+// `file` is echoed into `::error file=…` annotations and compared against
+// `git diff --name-only` output, and both of those are POSIX on every
+// platform. `path.join` is not: on Windows it hands back
+// `data\plugins\x.yml`, which matches nothing git prints, so
+// check-submission.mjs answered "no entry files added or changed — nothing to
+// verify" for a pull request that plainly added one — a gate that cannot tell
+// "passed" from "never ran", which is the failure its own comment warns about.
+const toPosix = (p) => (path.sep === '/' ? p : p.split(path.sep).join('/'))
+
 export function readEntries(dir = PLUGINS_DIR) {
   if (!fs.existsSync(dir)) return []
   const out = []
@@ -93,7 +102,7 @@ export function readEntries(dir = PLUGINS_DIR) {
         : ''
       throw new Error(`${full}: invalid YAML — ${e.reason ?? e.message}${hint}`)
     }
-    out.push({ ...doc, file: full })
+    out.push({ ...doc, file: toPosix(full) })
   }
   return out
 }
@@ -102,6 +111,27 @@ export function readEntries(dir = PLUGINS_DIR) {
 // and the list would be handing users a download link it can't vouch for —
 // the same reasoning that restricts screenshot hosts in build-site.mjs.
 const TARBALL_HOSTS = new Set(['github.com', 'objects.githubusercontent.com', 'release-assets.githubusercontent.com'])
+
+/** Storefront tiles are GitHub-hosted raster images, same trust boundary as screenshots. */
+const ICON_HOSTS = new Set(['raw.githubusercontent.com', 'user-images.githubusercontent.com', 'camo.githubusercontent.com', 'github.com'])
+const ICON_EXTENSIONS = ['.png', '.jpg', '.jpeg', '.webp']
+
+/** Returns a problem description, or null when the value is a usable icon URL. */
+export function iconProblem(value) {
+  if (typeof value !== 'string' || !value.trim()) return 'must be a URL string'
+  let u
+  try {
+    u = new URL(value)
+  } catch {
+    return `is not a valid URL: ${value}`
+  }
+  if (u.protocol !== 'https:') return 'must be https'
+  if (!ICON_HOSTS.has(u.hostname)) return `must be hosted on GitHub (got ${u.hostname})`
+  if (!ICON_EXTENSIONS.some((ext) => u.pathname.toLowerCase().endsWith(ext))) {
+    return `must point at a raster image (${ICON_EXTENSIONS.join(', ')})`
+  }
+  return null
+}
 
 /** Returns a problem description, or null when the value is a usable tarball URL. */
 export function tarballProblem(value) {
@@ -133,7 +163,7 @@ export function tarballProblem(value) {
 // but a reader could not have known that, and neither could the reviewer
 // without going to look. Refusing the key is how the file stays honest about
 // what it does.
-const ENTRY_KEYS = new Set(['url', 'name', 'category', 'description', 'tarball', 'file'])
+const ENTRY_KEYS = new Set(['url', 'name', 'category', 'description', 'icon', 'tarball', 'file'])
 
 /** Validate shape. Returns an array of human-readable problems (empty = ok). */
 export function validateEntries(entries) {
@@ -212,6 +242,14 @@ export function validateEntries(entries) {
     if (e.tarball !== undefined) {
       const bad = tarballProblem(e.tarball)
       if (bad) problems.push(`${at}: "tarball" ${bad}`)
+    }
+
+    // Optional storefront tile. Storefronts draw it at ~96px and fall back to
+    // the owner avatar, so a broken or foreign-host URL is refused here rather
+    // than becoming an <img> request on every visitor's machine.
+    if (e.icon !== undefined) {
+      const bad = iconProblem(e.icon)
+      if (bad) problems.push(`${at}: "icon" ${bad}`)
     }
   }
   return problems

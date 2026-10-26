@@ -1,0 +1,6 @@
+name: 985451842/dsh-snapshot-manager
+url: https://github.com/985451842/dsh-snapshot-manager
+category: session
+description:
+  en: 'Records session snapshots and supports rollback to previous states.'
+  zh: '记录会话快照并支持回滚到之前的状态。'

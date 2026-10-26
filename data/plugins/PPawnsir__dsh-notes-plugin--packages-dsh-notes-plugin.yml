@@ -2,5 +2,5 @@ url: https://github.com/PPawnsir/dsh-notes-plugin/tree/main/packages/dsh-notes-p
 name: PPawnsir/dsh-notes-plugin#dsh-notes-plugin
 category: workflow
 description:
-  en: "Session-aware local notes for DeepSeek Harness: capture notes and page selections in a floating Apple Notes style panel, let the LLM classify topics, auto-inject convention notes into the system prompt, and dispatch todos with recall context to active sessions."
-  zh: "DeepSeek Harness 的会话感知本地笔记：在 Apple Notes 风格浮窗里快速记录与选区摘录，由 LLM 自动分类主题，把约定类笔记自动注入系统提示，待办可携带召回上下文派发到活跃会话执行。"
+  en: "Local Markdown notes as governable working memory for DeepSeek Harness agents: dual-mode source/WYSIWYG editor with images, convention or reference notes auto-inject into the system prompt with sensitive values masked, plus snapshot version history, recycle bin, undoable archiving, AI reorganization, backlinks and full-text search. Compatible with DSH 0.1.7-0.2.x."
+  zh: "DeepSeek Harness 的可治理 Agent 工作记忆层，沉淀为本地 Markdown 笔记：双模式编辑器（源码⇄富文本，支持图片），约定/资料笔记自动注入系统提示（敏感值自动脱敏），另有快照版本历史、回收站、可撤销归档、AI 整理、双链与全文搜索。兼容 DSH 0.1.7～0.2.x。"

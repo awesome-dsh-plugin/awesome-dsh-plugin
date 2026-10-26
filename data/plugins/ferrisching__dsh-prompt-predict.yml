@@ -1,0 +1,6 @@
+url: https://github.com/ferrisching/dsh-prompt-predict
+name: ferrisching/dsh-prompt-predict
+category: ui
+description:
+  en: Predicts the user's next prompt after each assistant reply and shows it as gray ghost text inside the composer; accept it whole with Tab, accept it piece by piece with Alt+→, reroll it, or dismiss it with Esc.
+  zh: 助手回复结束后预测用户的下一句话，以灰色 ghost text 浮在输入框里；Tab 整条采纳、Alt+→ 逐段采纳、↻ 换一条、Esc 忽略。

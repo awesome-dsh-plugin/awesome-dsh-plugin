@@ -1,0 +1,6 @@
+url: https://github.com/timestatic/dsh-session-notebook
+name: timestatic/dsh-session-notebook
+category: memory
+description:
+  en: 'Notes taken from DeepSeek Harness conversations: quotes whole replies or selected passages, keeps highlights rendered at their original position in the session, attaches editable Markdown notes, tags them, filters by workspace or session, and exports Markdown or a full JSON backup stored as local JSON files.'
+  zh: '从 DSH 会话里记笔记：可收藏整条回复或选中片段，划线会持久重绘回原文位置，可为其补写可编辑的 Markdown 笔记、打标签，按工作区或会话筛选，并导出 Markdown 或完整 JSON 备份；数据以本机 JSON 文件存储。'

@@ -1,0 +1,6 @@
+url: https://github.com/Som2233/dsh-session-task-tags
+name: Som2233/dsh-session-task-tags
+category: session
+description:
+  en: 'Tag each session as a long-term or short-term task, record the agent mode it was created with, and auto-archive it once the archive window you set elapses.'
+  zh: '为每个会话标记长期任务或短期任务、记录创建时的 Agent 模式，并在你设定的归档时间窗结束后自动归档。'

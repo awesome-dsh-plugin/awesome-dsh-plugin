@@ -1,0 +1,6 @@
+url: https://github.com/LockyBee/dsh-douyin-agent
+name: LockyBee/dsh-douyin-agent
+category: browser
+description:
+  en: "Browses Douyin videos in a dedicated Edge browser with configurable time limits, shared local persona and interest memory, native settings, and Markdown viewing reports. Messaging, sharing, greetings, and public comments each require separate opt-in permissions."
+  zh: "通过专用 Edge 浏览器限时浏览抖音，提供共享本地人格与兴趣记忆、原生设置和 Markdown 观看日报。私信、分享、问候与公开评论分别需要开启许可。"

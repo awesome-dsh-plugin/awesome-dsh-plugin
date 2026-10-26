@@ -1,0 +1,6 @@
+url: https://github.com/tangu2023/dsh-menu
+name: tangu2023/dsh-menu
+category: ui
+description:
+  en: 'Adds a custom right-click context menu to the sidebar workspace files tree, with new folder, rename, reveal in file manager, open in browser, open in VS Code, copy path, streaming ZIP download, and delete.'
+  zh: '为侧边栏「工作区文件」树添加自定义右键菜单：新建文件夹、重命名、在文件管理器中显示、浏览器打开、VS Code 打开、复制路径、流式 ZIP 下载、删除。'

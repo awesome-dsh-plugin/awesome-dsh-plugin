@@ -152,6 +152,14 @@ h1 em{font-style:normal;color:var(--cinnabar)}
   border:none;border-radius:8px;padding:.42rem .9rem;transition:background .15s ease;white-space:nowrap;
   min-width:7rem;text-align:center}
 .market .go:hover{background:var(--cinnabar-deep)}
+/* The index-source line sits in the same band as the search and the market
+   install: it is a one-line statement with the address, not a section. */
+.indexline{max-width:38rem;display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;margin-top:.55rem;font-size:.8rem;color:var(--ink-3)}
+.indexline svg{color:var(--cinnabar);flex:none}
+.indexline code{font-family:var(--mono);font-size:.78rem;color:var(--ink-2)}
+.indexline .copy{margin-left:auto;flex:none;font-size:.78rem;color:var(--cinnabar-deep);background:none;border:1px solid var(--line);border-radius:999px;padding:.22rem .7rem;cursor:pointer}
+.indexline .copy:hover{border-color:var(--cinnabar)}
+.indexline .copy.done{color:var(--ink-3);border-color:var(--line)}
 
 /* ── chips ── */
 .filters-band{padding-block:1.5rem 0}
@@ -312,6 +320,7 @@ __AD_HEAD__
       <span class="lead">__T_MARKET_LEAD__</span>
       <button class="go" type="button" data-cmd="dsh plugin --profile web add dshmarket">__T_MARKET_GO__</button>
     </div>
+__INDEX_LINE__
   </div>
 </header>
 
@@ -536,7 +545,7 @@ document.addEventListener('click', async (e) => {
     setTimeout(() => { b.textContent = old; mi.classList.remove('done'); mi.closest('details').open = false; }, 900);
     return;
   }
-  const btn = e.target.closest('.cli .copy, .market .go');
+  const btn = e.target.closest('.cli .copy, .market .go, .indexline .copy');
   if (btn) {
     await copyCmd(btn);
     btn.classList.add('done');

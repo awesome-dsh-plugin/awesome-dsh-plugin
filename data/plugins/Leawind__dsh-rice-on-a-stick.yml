@@ -1,0 +1,6 @@
+url: https://github.com/Leawind/dsh-rice-on-a-stick
+name: Leawind/dsh-rice-on-a-stick
+category: remote
+description:
+  en: 'Expose control of dsh as MCP server and built-in dsh tools.'
+  zh: '将控制 dsh 的能力暴露为 MCP 和内置工具。'
