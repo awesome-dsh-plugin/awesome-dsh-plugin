@@ -2,6 +2,6 @@ url: https://github.com/regrevia/dsh-unlag
 name: regrevia/dsh-unlag
 category: dev
 description:
-  en: 'One press swaps plugin code and rebuilds a laggy UI in place: no process restart, no session lost, and work already running keeps going.'
-  zh: '改插件不用重启进程：按一下换掉代码、重建卡界面，正在跑的任务照常跑完。'
+  en: 'Many long sessions and the desktop app drags? One press. A plugin update wants a restart while tasks are running? One press: the tasks keep running, and most restart cases are gone. The desktop app has its own refresh button.'
+  zh: 'dsh 桌面端会话开多了、开久了卡了？点一下！插件更新要我重启？一堆任务在跑呢，咋办？直接点一下！一键刷新，任务照常跑完，大部分需要重启的场景就这么过去了。刷新解千愁 —— DSH 桌面端自己的刷新按钮。心动不如行动，赶紧来试试。'
 icon: https://raw.githubusercontent.com/regrevia/dsh-unlag/main/icon.png
