@@ -1,7 +1,6 @@
 url: https://github.com/yugejixian/vm-blackbox
 name: yugejixian/vm-blackbox
 category: tools
-npm: dsh-vm-tester
 tarball: https://github.com/yugejixian/vm-blackbox/releases/download/v0.1.3/dsh-vm-tester-0.1.3.tgz
 description:
   en: 'Black-box GUI testing for DeepSeek Harness: an AI tester drives a real Windows virtual machine using only screenshots and mouse/keyboard, so its verdicts rest on pixels instead of logs or source code. Ships the dsh-vm-tester plugin with eight vm_* tools (status, screenshot, click, type, type-secret, key, basic key, wait), a reverse-tunnel guest agent for Windows, and run verification scripts.'
