@@ -1,0 +1,6 @@
+url: https://github.com/zz12hui/dsh-local-writing-suite
+name: zz12hui/dsh-local-writing-suite
+category: skill
+description:
+  en: 'Writing and review suite: a long-form fiction pipeline (on-disk story state, pre-write gates, three-view review) plus document review for AI-sounding phrasing — seven dimensions, eight genres, blocking severity with line numbers — shipped as four skills and two tools.'
+  zh: '写作与审查套件：中长篇小说流水线（状态落盘、写前门禁、三视角审稿）+ 文档去 AI 味审查（七维评分、8 体裁、blocking 分级带行号），含 4 个技能与 2 个工具。'
