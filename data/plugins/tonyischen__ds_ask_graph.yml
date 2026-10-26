@@ -4,5 +4,5 @@ category: ui
 icon: https://raw.githubusercontent.com/tonyischen/ds_ask_graph/main/assets/icon-256.png
 tarball: https://github.com/tonyischen/ds_ask_graph/releases/download/v1.0.0/dsh-ask-graph-1.0.0.tgz
 description:
-  en: Interactive topic graph for DSH session history: groups questions into topics, drills into per-topic Q&A timelines, supports semantic regrouping, and exports HTML, SVG, and Bluepin vaults.
+  en: 'Interactive topic graph for DSH session history: groups questions into topics, drills into per-topic Q&A timelines, supports semantic regrouping, and exports HTML, SVG, and Bluepin vaults.'
   zh: 把 DSH 会话历史整理成可下钻的专题/问题图谱，支持语义整理，并可导出 HTML、SVG 和 Bluepin vault。
