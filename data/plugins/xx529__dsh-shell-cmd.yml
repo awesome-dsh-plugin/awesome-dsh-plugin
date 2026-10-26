@@ -1,0 +1,6 @@
+url: https://github.com/xx529/dsh-shell-cmd
+name: xx529/dsh-shell-cmd
+category: ui
+description:
+  en: '/cmd <command> in the composer runs that shell command in the session working directory, sends the command and its output to the model as a user message, renders this input as a terminal card with exit status, expandable output and copy buttons, and names the session after the command.'
+  zh: '在输入框用 /cmd <命令> 执行当前会话工作目录里的 shell 命令，把「命令 + 输出」作为一条 user 消息交给模型，并把这次输入渲染成带退出状态、可展开输出与复制按钮的终端卡片，同时用命令给当前会话命名。'
