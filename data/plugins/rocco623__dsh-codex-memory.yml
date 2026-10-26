@@ -1,0 +1,6 @@
+url: https://github.com/rocco623/dsh-codex-memory
+name: rocco623/dsh-codex-memory
+category: memory
+description:
+  en: 'Port of the V2 memory pipeline from OpenAI Codex to DeepSeek Harness: a background agent extracts each idle session, consolidation folds the extractions into one memory_summary.md behind a git baseline diff, new sessions get that summary injected, and cited memory flows back as usage counts. A Settings page chooses the model, each stage''s reasoning effort, and the idle, age, concurrency and timeout limits.'
+  zh: 'Codex V2 记忆流水线到 DeepSeek Harness 的移植：后台 agent 逐个抽取空闲会话，整合阶段在 git baseline diff 之后把它们合成一份 memory_summary.md，新会话注入这份摘要，被引用的记忆回流成使用计数。设置页可选模型、两个阶段的思考强度，以及空闲时长、保留天数、并发和超时等上限。'
