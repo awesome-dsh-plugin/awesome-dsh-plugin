@@ -1,0 +1,6 @@
+url: https://github.com/Arfrsa/dsh-sidebar-sections
+name: Arfrsa/dsh-sidebar-sections
+category: ui
+description:
+  en: Split the DSH sidebar workspace list into Active, Session tasks and Inactive sections with manual pins and an activity threshold, keeping the official search, archive filters, row menus and drag and drop, with a one-click switch back to the shipped list. The Session tasks section uses a fixed Windows workspace at D:\files\history-tasks; other platforms must create that directory manually.
+  zh: 把 DSH 侧栏工作区列表分为「活跃 / 会话任务 / 不活跃」三段，支持手动钉住与活跃阈值，保留官方搜索、归档筛选、行菜单与拖拽，并可一键切回官方列表。「会话任务」段固定用 Windows 路径 D:\files\history-tasks，其他平台需自行预建该目录。

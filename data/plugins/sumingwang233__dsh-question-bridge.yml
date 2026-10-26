@@ -1,0 +1,7 @@
+url: https://github.com/sumingwang233/dsh-question-bridge
+name: sumingwang233/dsh-question-bridge
+category: tools
+tarball: https://github.com/sumingwang233/dsh-question-bridge/releases/latest/download/dsh-question-bridge.tgz
+description:
+  en: 'Lets a DSH agent ask the user a structured question without blocking the turn: the ask_interactive_question tool returns a pending batch id at once, the answer arrives later as an ordinary user message, and pending batches sit in a browser inbox panel with optional system notifications.'
+  zh: '让 DSH agent 提问而不阻塞回合：ask_interactive_question 工具立刻返回待答批次号，答案稍后以普通用户消息送回会话，待答批次显示在浏览器内的待答面板，可选系统通知。'

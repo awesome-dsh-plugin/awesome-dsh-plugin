@@ -1,0 +1,7 @@
+url: https://github.com/gongfpp/dsh-novel-fish
+name: gongfpp/dsh-novel-fish
+category: fun
+tarball: https://github.com/gongfpp/dsh-novel-fish/releases/download/v0.1.4/gongfpp-dsh-novel-fish-0.1.4.tgz
+description:
+  en: "Read local EPUB, TXT and Markdown novels below selected native DSH chat regions on explicit expansion, preserving real reasoning and tool output without sending novel text to the model. Currently works only with DSH 0.2.1-rc.2."
+  zh: "小说摸鱼：主动展开选中的原生聊天区域时，在保留真实思考和工具输出的下方阅读本地 EPUB、TXT、Markdown 小说，小说不发送给模型。目前仅兼容 DSH 0.2.1-rc.2。"

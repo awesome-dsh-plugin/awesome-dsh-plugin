@@ -6042,72 +6042,6 @@
   "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/BOWLUNA/dsh-zcode-breaker": {
-  "version": "1.0.1",
-  "spec": "github:BOWLUNA/dsh-zcode-breaker",
-  "capabilities": [],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/BOWLUNA/dsh-zcode-farm": {
-  "version": "1.0.1",
-  "spec": "github:BOWLUNA/dsh-zcode-farm",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read",
-   "network",
-   "env"
-  ],
-  "redLines": [
-   "reads credentials/secrets AND has network access"
-  ],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/BOWLUNA/dsh-zcode-git": {
-  "version": "1.0.1",
-  "spec": "github:BOWLUNA/dsh-zcode-git",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read",
-   "network",
-   "env"
-  ],
-  "redLines": [
-   "reads credentials/secrets AND has network access"
-  ],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/BOWLUNA/dsh-zcode-rewind": {
-  "version": "1.0.0",
-  "spec": "github:BOWLUNA/dsh-zcode-rewind",
-  "capabilities": [
-   "fs-write",
-   "fs-read",
-   "env"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/BOWLUNA/dsh-zcode-scribe": {
-  "version": "1.0.0",
-  "spec": "github:BOWLUNA/dsh-zcode-scribe",
-  "capabilities": [
-   "shell",
-   "fs-write",
-   "fs-read",
-   "network",
-   "env"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/bpc-oss/chrome-faithful/tree/main/packages/dsh-plugin-chrome-faithful": {
   "version": "0.4.0",
   "spec": "github:bpc-oss/chrome-faithful",
@@ -6959,18 +6893,6 @@
   "spec": "github:cerebrixos-org/dsh-asimovbox",
   "capabilities": [
    "env"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/cerebrixos-org/tuning-engines-cli/tree/main/packages/tuningengines-dsh-plugin": {
-  "version": "0.1.0",
-  "spec": "github:cerebrixos-org/tuning-engines-cli",
-  "capabilities": [
-   "fs-write",
-   "fs-read",
-   "network"
   ],
   "redLines": [],
   "scannedAt": "2026-09-24T17:02:46.730Z",
@@ -8899,19 +8821,6 @@
   "capabilities": [
    "fs-write",
    "fs-read"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/dannyvan/dsh-file-drop": {
-  "version": "1.0.0",
-  "spec": "github:dannyvan/dsh-file-drop",
-  "capabilities": [
-   "fs-write",
-   "fs-read",
-   "network",
-   "env"
   ],
   "redLines": [],
   "scannedAt": "2026-09-24T17:02:46.730Z",
@@ -39183,14 +39092,6 @@
   "scannedAt": "2026-09-24T17:02:46.730Z",
   "tool": "dsh-trust-check@0.1.13"
  },
- "https://github.com/Vladimir-Human/humanizer-ru/tree/main/dsh": {
-  "version": "3.36.4",
-  "spec": "github:Vladimir-Human/humanizer-ru",
-  "capabilities": [],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
  "https://github.com/Vladimir-Human/ru-marketplace-mcp/tree/main/dsh": {
   "version": "2.4.2",
   "spec": "github:Vladimir-Human/ru-marketplace-mcp",
@@ -46799,18 +46700,6 @@
   "capabilities": [
    "shell",
    "fs-write",
-   "fs-read",
-   "network",
-   "env"
-  ],
-  "redLines": [],
-  "scannedAt": "2026-09-24T17:02:46.730Z",
-  "tool": "dsh-trust-check@0.1.13"
- },
- "https://github.com/ZiFan1117/dsh-atom-market": {
-  "version": "0.1.3",
-  "spec": "github:ZiFan1117/dsh-atom-market",
-  "capabilities": [
    "fs-read",
    "network",
    "env"

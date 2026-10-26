@@ -1,0 +1,7 @@
+url: https://github.com/zy12342/dsh-approval-toast
+name: zy12342/dsh-approval-toast
+category: notify
+description:
+  en: 'Windows toast notifications for DeepSeek Harness: approve or reject a pending approval from the notification while DSH is in the background, with an in-app fallback; also reports turn completion and errors.'
+  zh: 'DSH 的 Windows 授权通知：后台时可直接在通知上点「允许一次 / 拒绝」，前台时改走应用内审批框；另含完成 / 出错通知。'
+icon: https://raw.githubusercontent.com/zy12342/dsh-approval-toast/main/assets/icon.png

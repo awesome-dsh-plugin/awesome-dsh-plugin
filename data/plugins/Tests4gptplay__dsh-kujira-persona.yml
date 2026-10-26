@@ -1,7 +1,7 @@
 url: https://github.com/Tests4gptplay/dsh-kujira-persona
 name: Tests4gptplay/dsh-kujira-persona
 category: identity
-tarball: https://github.com/Tests4gptplay/dsh-kujira-persona/releases/download/v1.6.2/dsh-kujira-persona-1.6.2.tgz
+tarball: https://github.com/Tests4gptplay/dsh-kujira-persona/releases/download/v2.2.0/dsh-kujira-persona-2.2.0.tgz
 description:
-  en: "AI-gijinka roleplay with editable personas, model-based character switching, shared world lore, separate character memories and in-chat Markdown editing."
-  zh: "AI 拟人（AI 娘）人设与角色扮演：随模型切换角色，共享世界观、保留独立人物档案与记忆，支持自定义角色、模型绑定和对话编辑 Markdown 设定。"
+  en: "Model-linked AI personas and desktop pet for DSH, with shared world lore, separate editable memories, task animations, usage statistics, optional AI diaries and idle-time diary consolidation. The native pet window is Windows x64 only; sleep consolidation spends tokens in the background."
+  zh: "随 DSH 当前模型切换的 AI 角色人设与桌宠，支持共享世界观、独立可编辑记忆、任务动画、工作统计、可选 AI 日记及空闲时日记整理。原生桌宠窗口仅 Windows x64；睡眠整理会在后台调用模型并消耗 token。"

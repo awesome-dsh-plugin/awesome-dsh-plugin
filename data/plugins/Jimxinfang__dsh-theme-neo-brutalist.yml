@@ -1,0 +1,8 @@
+url: https://github.com/Jimxinfang/dsh-theme-neo-brutalist
+name: Jimxinfang/dsh-theme-neo-brutalist
+category: theme
+description:
+  en: 'Neo-brutalist theme for the DeepSeek Harness Web GUI with paper and ink palettes, 4px hard rules, 8px offset shadows, zero radius, hazard stripes, and an in-settings theme row that restores the factory appearance.'
+  zh: 'DeepSeek Harness Web GUI 的新粗野主义主题：白纸 / 黑板双配色，4px 硬边、8px 偏移硬阴影、零圆角、警示斜纹，设置页内置主题行，可一键切回出厂外观。'
+icon: https://raw.githubusercontent.com/Jimxinfang/dsh-theme-neo-brutalist/main/docs/icon-180.png
+tarball: https://github.com/Jimxinfang/dsh-theme-neo-brutalist/releases/download/v0.1.0/dsh-theme-neo-brutalist-0.1.0.tgz

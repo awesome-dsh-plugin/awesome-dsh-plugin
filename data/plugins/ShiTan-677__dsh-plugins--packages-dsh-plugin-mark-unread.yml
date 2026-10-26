@@ -1,0 +1,6 @@
+url: https://github.com/ShiTan-677/dsh-plugins/tree/main/packages/dsh-plugin-mark-unread
+name: ShiTan-677/dsh-plugins#dsh-plugin-mark-unread
+category: session
+description:
+  en: 'Adds a manual "mark as unread" action to workspace session rows, and retires itself once the harness exposes the same capability.'
+  zh: '给工作区会话行补一个手动「标记为未读」；官方支持同能力后自动退休。'

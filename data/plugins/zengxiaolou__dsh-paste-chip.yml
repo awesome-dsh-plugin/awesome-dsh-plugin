@@ -1,0 +1,6 @@
+url: https://github.com/zengxiaolou/dsh-paste-chip
+name: zengxiaolou/dsh-paste-chip
+category: ui
+description:
+  en: 'Collapses long pasted text into an expandable chip in the composer: hover shows the body and where it came from, sending expands it back in place, and long text written by other plugins is taken over the same way.'
+  zh: '长文本粘贴自动折叠成可展开的胶囊：悬停看正文与出处，发送时按原位展开；其他插件写入的长文本同样接管。'

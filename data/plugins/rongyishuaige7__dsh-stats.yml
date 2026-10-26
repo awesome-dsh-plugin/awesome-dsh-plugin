@@ -1,0 +1,6 @@
+url: https://github.com/rongyishuaige7/dsh-stats
+name: rongyishuaige7/dsh-stats
+category: usage
+description:
+  en: Per-project token, time and cost audit for DSH sessions, with project timelines, half-hour cost bars, a 26-week heatmap and account balance; unpriceable usage is flagged rather than estimated.
+  zh: 按项目审计 DSH 会话的 Token、开发时间与费用，含项目泳道时间线、半小时成本柱图、26 周热力图与账户余额；无法确认计价的部分会标注而非估算。

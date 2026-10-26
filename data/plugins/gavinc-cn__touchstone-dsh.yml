@@ -1,0 +1,6 @@
+url: https://github.com/gavinc-cn/touchstone-dsh
+name: gavinc-cn/touchstone-dsh
+category: workflow
+description:
+  en: 'AI-agent-driven automated testing platform for DeepSeek Harness (dsh): drives the harness agent through long-lived multi-round sessions to write and run Markdown test cases, file bug reports, fix the code and re-verify the fix, with a per-project serial queue, a development board and built-in load testing.'
+  zh: '面向 DeepSeek Harness（dsh）的 AI 智能体驱动自动化测试平台：以长期多轮会话驱动 agent 编写并执行 Markdown 用例、产出 bug 报告、修复代码并复验，配套按项目串行的统一队列、开发看板与内置压测。'

@@ -2,6 +2,6 @@ url: https://github.com/PlusQi/dsh-tokstats
 name: PlusQi/dsh-tokstats
 category: usage
 description:
-  en: 'A token toolbox for DSH: next-turn token forecast, a cross-session usage analytics panel built on the host session-projection unit, and prompt restructuring that writes back only when accepted.'
-  zh: 'DSH 的 token 工具集：下一轮 token 预告、基于宿主会话投影单元的跨会话用量分析面板，以及采纳才写回的提示词结构化重排。'
+  en: 'See where your tokens go: cross-session usage stats with model and workspace breakdowns, plus a next-turn forecast.'
+  zh: 'token 花在哪一目了然：跨会话用量统计、模型与工作区排行，附发送前预告与草稿整理。'
 icon: https://raw.githubusercontent.com/PlusQi/dsh-tokstats/master/docs/assets/icon-180.png

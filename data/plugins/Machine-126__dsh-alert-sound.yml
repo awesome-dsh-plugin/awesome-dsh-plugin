@@ -5,5 +5,5 @@ url: https://github.com/Machine-126/dsh-alert-sound
 name: Machine-126/dsh-alert-sound
 category: notify
 description:
-  en: 'Audio and voice alerts for the dsh web GUI: distinct tones and optional speech for approvals, questions, completions and errors.'
-  zh: '为 dsh 网页界面提供声音/语音提醒：审批、提问、完成、错误各有独立音色，可选语音朗读。'
+  en: 'Tone or voice alerts for DSH approvals, questions, completions, errors and stalls; reads out what is waiting and repeats until handled; no network requests.'
+  zh: 'DSH 提醒音：审批、提问、完成、错误、卡住各有音色；选「语音」会念出工具名、原因或问题原文；未处理会重复提醒，全程不联网。'

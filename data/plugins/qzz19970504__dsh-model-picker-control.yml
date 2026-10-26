@@ -1,0 +1,7 @@
+url: https://github.com/qzz19970504/dsh-model-picker-control
+name: qzz19970504/dsh-model-picker-control
+category: ui
+description:
+  en: 'Model picker control for the DSH composer: a settings section beside the built-in Models page renames model display names and provider group names, adds a short coloured suffix capsule after a name, groups models from different providers into a new partition, reorders provider groups by drag or keyboard, sorts models inside a group by catalog order or name, and hides a provider or a single model without removing it from the catalog. Edits stay in a draft until you press Save, and the built-in 1017 tag and a custom capsule can be shown side by side.'
+  zh: 'DSH 输入框模型选择器的总控：在与宿主「模型」页平级的设置分区里，可以改模型显示名与 provider 分组名、在名称后加一枚三色后缀胶囊、把不同 provider 的模型合并成新分区、用拖拽或键盘重排分组顺序、按目录原序或名称排序组内模型、隐藏整个 provider 或单个模型（不删除目录条目）。改动先进入草稿，按保存才生效；宿主自带 1017 标签与自定义胶囊可同时显示。'
+icon: https://raw.githubusercontent.com/qzz19970504/dsh-model-picker-control/main/assets/icon-180.png

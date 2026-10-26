@@ -1,0 +1,6 @@
+url: https://github.com/REALOIYO/dsh-ember
+name: REALOIYO/dsh-ember
+category: ui
+description:
+  en: 'Composer UI for DeepSeek Harness that does two things. The reasoning-effort row in the model menu becomes a continuous slider drawn on the row itself, with the rungs read live from the model adapter so any ladder length works; each rung paints its own ember plume into a canvas behind the knob. Separately, the permission trigger renders in the theme error colour whenever full access is the active preset, including its row in the permission menu.'
+  zh: 'DeepSeek Harness 的输入框增强，做两件事。模型菜单里的推理等级行变成直接画在该行上的连续滑块，档位实时读取模型适配器，因此档位数不限；每档会在旋钮背后的 canvas 上喷出各自的余烬尾焰。另外，只要当前是完全权限，权限触发器就用主题的错误色渲染，权限菜单里对应那一行同样变红。'

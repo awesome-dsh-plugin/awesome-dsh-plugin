@@ -1,0 +1,7 @@
+url: https://github.com/wuwen837/dsh-companion
+name: wuwen837/dsh-companion
+category: memory
+description:
+  en: Adds a Chat mode beside Work with a user-defined persona, long-term memory extracted after each turn and recalled by topic, and stickers it can save and send.
+  zh: 在「工作」之外加一个「聊天」模式：使用自定义人设，每轮自动提炼长期记忆并按话题召回，还能保存和发送表情包。
+icon: https://raw.githubusercontent.com/wuwen837/dsh-companion/main/assets/icon-180.png
