@@ -3,5 +3,5 @@ name: piaomiaozhilei/dsh-sacc-translator#cuda
 category: docs
 tarball: https://github.com/piaomiaozhilei/dsh-sacc-translator/releases/download/v0.1.17/dsh-sacc-translator-cuda-0.1.17.tgz
 description:
-  en: 'Windows x64 CUDA translation panel for text and original-format documents, using host model selection, voice input and document preview. Automatically installs its pinned CUDA/cuDNN component; falls back to CPU when no compatible GPU is available. The download is about 2.04 GB.'
-  zh: '翻译 CUDA：Windows x64 文本与原格式文档翻译，复用宿主模型选择、语音输入及文档预览。自动安装绑定的 CUDA/cuDNN 组件，无兼容 GPU 时回退 CPU。下载约 2.04 GB。'
+  en: Windows x64 translator with a dedicated sidebar entry and Workbench / Chat interface, side-by-side text and document translation, screen-region translation, recent history, and host model selection, voice input and preview. CUDA document OCR with CPU fallback; screen OCR uses CPU.
+  zh: 翻译 CUDA：Windows x64 专属翻译界面，侧栏独立入口，支持工作台／聊天切换、原文与译文双栏、尽量保留原格式的文档翻译、屏幕框选翻译及最近记录，复用宿主模型、语音输入与预览。文档 OCR 支持 CUDA 加速，无兼容 GPU 时回退 CPU；屏幕 OCR 使用 CPU。
