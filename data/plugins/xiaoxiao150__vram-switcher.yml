@@ -4,4 +4,4 @@ category: tools
 description:
   en: Coordinates local LLM, TTS and ComfyUI GPU workloads for AstrBot and DeepSeek Harness.
   zh: 为 AstrBot 与 DeepSeek Harness 协调本地 LLM、TTS 和 ComfyUI 的 GPU 任务。
-tarball: https://github.com/xiaoxiao150/vram-switcher/releases/download/v2.0.1/dsh-vram-switcher-2.0.1.tgz
+tarball: https://github.com/xiaoxiao150/vram-switcher/releases/download/v2.0.2/dsh-vram-switcher-2.0.2.tgz
