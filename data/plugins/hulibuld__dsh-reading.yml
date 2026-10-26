@@ -1,0 +1,6 @@
+url: https://github.com/hulibuld/dsh-reading
+name: hulibuld/dsh-reading
+category: ui
+description:
+  en: Reads EPUB, MOBI, AZW3, TXT and PDF books in a side panel with pagination, table-of-contents jumping, highlights, notes, bookmarks, full-text search, anchored AI questions and per-chapter distillation.
+  zh: 在侧边面板里读 EPUB、MOBI、AZW3、TXT、PDF 五种格式的书：分页、目录跳转、划线笔记与书签、全文搜索、带原文锚点的 AI 问答，以及按章蒸馏。
