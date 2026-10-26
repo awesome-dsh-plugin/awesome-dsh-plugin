@@ -6346,7 +6346,7 @@ dsh plugin --profile web add dshmarket
 - [BeyondandSharp/dsh-plugin-notoken](https://github.com/BeyondandSharp/dsh-plugin-notoken) — ！警告！这会移除认证步骤！警告！注册一个登录入口路由（默认 GET /__dsh_login），把进程里的登录 token 换成浏览器会话 cookie，让首次访问不用带 ?token=…。
 - [bigclawd/dsh-security-guard](https://github.com/bigclawd/dsh-security-guard) — dsh 安全守卫插件：基于规则的静态扫描覆盖恶意代码、提示词注入与令牌浪费，运行时拦截危险工具调用，提供 /scan 命令、plugin_scan 工具、Web 面板与白名单。
 - [BotonJ/dsh-plugin-sentinel](https://github.com/BotonJ/dsh-plugin-sentinel) — 插件安装前静态安全审计：生命周期脚本、动态执行、凭据外传组合特征与 patch 层风险；零依赖，tar 包全程内存解析不落盘。
-- [BuvkB/dsh-vaultwarden](https://github.com/BuvkB/dsh-vaultwarden) — 让任意会话直接读写自建的 Bitwarden/Vaultwarden 保险库：九个 bitwarden_* 工具、WebSocket 实时同步（不可用时降级轮询），带 readonly/ask/auto 三档写权限的设置面板——可编辑五类条目，面板展示的密码与动态码会打码，对话里的工具卡片同样把密码等敏感值隐藏。
+- [BuvkB/dsh-vaultwarden](https://github.com/BuvkB/dsh-vaultwarden) — 让任意会话直接读写自建的 Bitwarden/Vaultwarden 保险库：十一个 bitwarden_* 工具、WebSocket 实时同步（不可用时降级轮询）、readonly/ask/auto 三档写权限设置面板，以及可开启的本地脱敏——开启后密码默认以稳定占位符出现，需要时按条目+字段单次取回，落盘会话日志中的 bitwarden 明文也会被定期擦除；面板展示的密码与动态码会打码。
 - [cdxiaodong/dsh-guardian](https://github.com/cdxiaodong/dsh-guardian) — Agent 安全护栏：拦截并审计所有工具调用，命中敏感操作就要求人工确认。
 - [ChaoJie0/dsh-tm-guard](https://github.com/ChaoJie0/dsh-tm-guard) — macOS 上 DSH 智能体的零干预权限门 —— 安装即生效。可经本地 Git 或时间机器回滚的写操作自动放行并自动打快照，拦截网络、装包、进程 / 系统管理与敏感路径读取，并记录完整审计日志（可配置启用自动清理最旧审计记录）。
 - [ChenLaoshiYF/dsh-mcpguard](https://github.com/ChenLaoshiYF/dsh-mcpguard) — 扫描 skill 与 MCP 配置中的提示注入、同形字、Unicode 隐形字符、危险 shell 与凭据泄露。
