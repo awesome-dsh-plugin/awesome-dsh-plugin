@@ -1,0 +1,6 @@
+url: https://github.com/zhuzhaoyun/Molio/tree/main/packages/dsh-plugin-molio
+name: zhuzhaoyun/Molio#dsh-plugin-molio
+category: tools
+description:
+  en: "Read-only Molio knowledge base tools: list vaults, browse the file tree, full-text search and read documents, served over the local Molio daemon HTTP API, which must be running. Published on npm as dsh-plugin-molio."
+  zh: "Molio 本地知识库只读工具集：列知识库、浏览文件树、全文搜索、读取原文，经本机 Molio daemon HTTP API 取数（需 daemon 常驻运行）。npm 包名 dsh-plugin-molio，dsh plugin add 即装。"

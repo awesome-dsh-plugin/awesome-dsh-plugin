@@ -1,0 +1,6 @@
+url: https://github.com/perdakovich/dsh-prompt-edit
+name: perdakovich/dsh-prompt-edit
+category: ui
+description:
+  en: 'In-place prompt editing in the web chat: cleanly forks session history at the edited turn, preserves image and file attachments, and auto-archives the superseded branch.'
+  zh: 'DSH Web 聊天就地编辑历史提示词：在目标轮次干净分叉会话历史，原样保留图片与附件，并自动归档旧会话。'

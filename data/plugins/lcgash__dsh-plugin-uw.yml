@@ -1,0 +1,6 @@
+url: https://github.com/lcgash/dsh-plugin-uw
+name: lcgash/dsh-plugin-uw
+category: tools
+description:
+  en: 'Union workspaces: merge multiple directories into one session, manage unions from a settings panel, and read/write member files via uw_read/uw_write/uw_edit/uw_delete/uw_move tools.'
+  zh: '联合工作区：将多个目录合并到一个会话中，通过设置面板管理联合工作区，使用 uw_read/uw_write/uw_edit/uw_delete/uw_move 工具读写成员目录文件。'

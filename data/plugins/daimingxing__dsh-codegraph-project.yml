@@ -1,0 +1,6 @@
+url: https://github.com/daimingxing/dsh-codegraph-project
+name: daimingxing/dsh-codegraph-project
+category: tools
+description:
+  en: "Connects an existing local CodeGraph CLI to each session's indexed project, shares one MCP process per project, and updates session-scoped tools when the working directory or index changes."
+  zh: "将本机已安装的 CodeGraph CLI 接入各会话的已索引项目，同项目共享一个 MCP 进程，并在工作目录或索引变化时更新会话级工具。"

@@ -1,0 +1,6 @@
+url: https://github.com/wanjiaju3108/dsh-feishu-assistant
+name: wanjiaju3108/dsh-feishu-assistant
+category: remote
+description:
+  en: Ops request channel for a team over Feishu DMs — a colleague's message waits in a serial queue behind an approval card that the paired admin must accept, then runs in one shared DSH session with a persona attached, and the answer is posted back to the requester.
+  zh: 给同事的运维请求通道——同事在飞书私聊里提的事先排进串行队列，由已配对的管理员在审批卡上放行后才进入那条共享的 DSH 会话（带注入的人设执行），回答回到提交人。

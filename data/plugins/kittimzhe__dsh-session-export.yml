@@ -1,0 +1,6 @@
+url: https://github.com/kittimzhe/dsh-session-export
+name: kittimzhe/dsh-session-export
+category: session
+description:
+  en: 'Session evidence reports: /transcript writes styled HTML / Markdown / JSON reports from canonical logs, /stats prints a terminal stats card, /archive writes per-session ZIPs.'
+  zh: '会话证据报告：/transcript 从权威日志生成 HTML/Markdown/JSON 报告，/stats 输出终端统计卡，/archive 打包单会话 ZIP。'

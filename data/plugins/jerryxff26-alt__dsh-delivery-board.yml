@@ -1,0 +1,6 @@
+url: https://github.com/jerryxff26-alt/dsh-delivery-board
+name: jerryxff26-alt/dsh-delivery-board
+category: workflow
+description:
+  en: 'Delivery board for client-project teams: stage pipeline (default or governance template, or custom stages), cards with owner, due date, acceptance criteria and DoD, an automatic handoff audit log when a card changes stage, a progress/risk/blocker/decision log, a weekly Markdown client report, a loopback-only drag-and-drop board and a read-only HTML export; state lives in delivery.json in the workspace (11 delivery_* tools plus a /delivery command).'
+  zh: '面向客户项目交付团队的交付看板：阶段流水线（default 或 governance 模板，也可自定义阶段），卡片含负责人、截止日、验收标准与 DoD，卡片跨阶段时自动记录交接审计日志，进展/风险/阻塞/决策日志，Markdown 客户周报，仅绑定 127.0.0.1 的可拖拽本地看板与只读 HTML 导出；状态保存在工作区的 delivery.json（11 个 delivery_* 工具与 /delivery 命令）。'

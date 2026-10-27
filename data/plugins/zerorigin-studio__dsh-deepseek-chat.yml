@@ -1,0 +1,6 @@
+url: https://github.com/zerorigin-studio/dsh-deepseek-chat
+name: zerorigin-studio/dsh-deepseek-chat
+category: ui
+description:
+  en: 'Web chat entry for DeepSeek Harness: a sidebar button opening chat.deepseek.com in a dedicated desktop window under dsh-desktop, with in-webview fallback for plain web environments.'
+  zh: '网页对话入口插件：侧边栏一键打开 chat.deepseek.com 独立窗口（dsh-desktop 桥接），纯网页环境自动回退内嵌打开。'

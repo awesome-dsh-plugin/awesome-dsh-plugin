@@ -1,0 +1,6 @@
+url: https://github.com/yutingzhao1991/dsh-review
+name: yutingzhao1991/dsh-review
+category: git
+description:
+  en: Runs a diff past several reviewers at once — a CLI coding agent such as codex or claude, or a DSH subagent — and merges their separate sections into one report; reviewers and named review modes are configured in the settings UI.
+  zh: 把同一个 diff 同时交给多个评审者——已安装的 CLI 编程智能体（codex、claude 等）或 DSH 子智能体——各自成节，合并为一份报告；评审者与命名评审模式在设置界面里配置。

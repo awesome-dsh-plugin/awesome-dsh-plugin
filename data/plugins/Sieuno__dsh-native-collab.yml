@@ -1,0 +1,6 @@
+url: https://github.com/Sieuno/dsh-native-collab
+name: Sieuno/dsh-native-collab
+category: tools
+description:
+  en: 'Adds Team and subagent collaboration tools to DeepSeek Harness: persistent named Team members with a shared task board, scoped agent listing and waiting, and model selection across the conversation snapshot, current settings, or all available models.'
+  zh: '为 DeepSeek Harness 增加 Team 与子代理协作工具：持久命名的 Team 成员与共享任务板，可按范围列出与等待子代理，并支持按对话快照、当前设置或全部可用模型选择子代理模型。'

@@ -1,0 +1,7 @@
+url: https://github.com/HeliosTangDev/dsh-ops-conventions
+name: HeliosTangDev/dsh-ops-conventions
+category: workflow
+tarball: https://github.com/HeliosTangDev/dsh-ops-conventions/releases/latest/download/dsh-ops-conventions.tgz
+description:
+  zh: "每会话每版本注入一条极短的「操作约定」门铃（入口清单绝对路径 + 版本号）；约定版本一改，下一轮就重新注入（闲聊轮也算）。可选硬拦截：操作类轮次里未读索引前，拒绝 write/edit 等写类工具（闲聊轮与 shell 默认不拦）。清单可随包自带，也可指向自己的目录；零依赖、路径可配置。用于解决「约定记了但干活时不提就不用」。"
+  en: "Injects a very short conventions reminder (absolute INDEX path + version) once per session per version; when the conventions version changes, the next turn re-injects it (chat turns included). Optional hard guard: on operation-like turns, write/edit tools are rejected until the session has read the index (chat turns and shell are not blocked by default). Ships example checklists or points at your own directory; zero dependencies, configurable paths. Solves: conventions are written down but never pulled up when the work starts."

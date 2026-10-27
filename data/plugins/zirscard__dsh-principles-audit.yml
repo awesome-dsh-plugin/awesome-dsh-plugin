@@ -1,0 +1,8 @@
+# Entry for the awesome-dsh-plugin list.
+url: https://github.com/zirscard/dsh-principles-audit
+name: zirscard/dsh-principles-audit
+category: tools
+description:
+  en: 'Registers one `principles_audit` tool for DeepSeek Harness: it reviews a principle library for principle_id collisions and legacy ids, missing causal statements, boundaries, counter-examples or evidence, duplicate and near-duplicate principles, status-versus-confidence inconsistencies, long-stale entries and dimension-coverage gaps. Findings are severity-ranked and a hard gate turns them into pass, warn or fail, where every critical finding must be covered by a valid, unexpired exemption. The library is only read.'
+  zh: '为 DeepSeek Harness 注册一个 `principles_audit` 工具：审查原则库的 ID 冲突与旧版 ID、因果句/适用边界/反例/证据缺失、同名与近重复原则、状态与置信度不一致、长期未复核与维度覆盖缺口。问题按严重度分级，并用硬门禁给出 pass / warn / fail——严重项必须被有效且未过期的豁免覆盖。原则库只读不改。'
+tarball: https://github.com/zirscard/dsh-principles-audit/releases/download/v0.3.0/dsh-principles-audit.tgz

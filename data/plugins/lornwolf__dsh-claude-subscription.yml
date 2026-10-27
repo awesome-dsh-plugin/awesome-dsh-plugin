@@ -1,0 +1,6 @@
+url: https://github.com/lornwolf/dsh-claude-subscription
+name: lornwolf/dsh-claude-subscription
+category: model
+description:
+  en: 'Adds a Claude Pro/Max subscription model provider with OAuth login, multiple accounts, quota reporting and a settings panel. Requests are sent with the Claude Code client identity, and quota reporting uses an experimental endpoint.'
+  zh: '通过 OAuth 登录接入 Claude Pro/Max 订阅模型，支持多账号管理、额度查询和设置面板。请求使用 Claude Code 客户端身份发送，额度查询走实验性接口。'

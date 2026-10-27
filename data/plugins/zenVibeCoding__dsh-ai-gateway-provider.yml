@@ -1,0 +1,7 @@
+url: https://github.com/zenVibeCoding/dsh-ai-gateway-provider
+name: zenVibeCoding/dsh-ai-gateway-provider
+category: model
+description:
+  en: 'Connect OpenAI-compatible gateways with per-gateway model lists, reasoning controls, model tests and optional quota reporting. GPT speed tiers support per-conversation choices and custom service_tier mappings.'
+  zh: '接入 OpenAI 兼容网关，逐网关管理模型清单、推理等级和模型测试，支持部分网关的额度查询。GPT 速度档位支持会话内切换及自定义 service_tier 参数映射。'
+icon: https://raw.githubusercontent.com/zenVibeCoding/dsh-ai-gateway-provider/master/assets/icon-180.png

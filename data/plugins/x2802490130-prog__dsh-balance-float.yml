@@ -1,0 +1,6 @@
+url: https://github.com/x2802490130-prog/dsh-balance-float
+name: x2802490130-prog/dsh-balance-float
+category: usage
+description:
+  en: 'A floating balance widget for the Web UI: live DeepSeek account balance with manual refresh and a Y/N-confirmed graceful exit.'
+  zh: Web UI 右上角悬浮窗：实时显示 DeepSeek 余额，支持手动刷新与一键优雅退出（Y/N 快捷键确认）。

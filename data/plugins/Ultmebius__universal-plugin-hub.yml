@@ -1,0 +1,6 @@
+url: https://github.com/Ultmebius/universal-plugin-hub
+name: Ultmebius/universal-plugin-hub
+category: market
+description:
+  en: 'A visual plugin marketplace for DSH: browse multiple Git sources, install plugins with one click, and wire skills, subagents, MCP connectors, LSP servers and hooks into the harness automatically.'
+  zh: DSH 的可视化插件市场：多源浏览、一键安装，技能、子代理、MCP 连接器、LSP 服务器与 hooks 自动接入。

@@ -1,0 +1,6 @@
+url: https://github.com/taptap/instant-games-open-mcp/tree/main/packages/dsh-maker
+name: taptap/instant-games-open-mcp#packages/dsh-maker
+category: dev
+description:
+  en: 'TapTap Maker integration for DeepSeek Harness: bundled MCP tools, Maker workflow and feature skills, plus a packaged CLI path for project initialization and diagnostics.'
+  zh: 'DeepSeek Harness 的 TapTap Maker 集成：提供内置 MCP 工具、Maker 工作流与功能技能，以及用于项目初始化和诊断的随包 CLI 路径。'

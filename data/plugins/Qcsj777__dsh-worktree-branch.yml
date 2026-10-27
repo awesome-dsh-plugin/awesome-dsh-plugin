@@ -1,0 +1,6 @@
+url: https://github.com/Qcsj777/dsh-worktree-branch
+name: Qcsj777/dsh-worktree-branch
+category: git
+description:
+  en: 'Codex-style location, worktree and branch switchers on the New Session screen of DSH; all git work runs in the host half.'
+  zh: '在 DSH 新建会话页提供 Codex 风格的工作位置、worktree 与分支切换器，git 操作全部由 Host 半执行。'

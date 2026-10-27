@@ -1,0 +1,6 @@
+url: https://github.com/jianyuepei/dsh-session-mindmap
+name: jianyuepei/dsh-session-mindmap
+category: session
+description:
+  en: Turns a DSH session into a self-contained interactive HTML mind map of its topics, conclusions, decisions, todos and open questions, and reports what changed since the previous run.
+  zh: 把 DSH 会话整理成一张自包含的交互式 HTML 脑图（主题、结论、决策、待办、未决问题），并给出与上一次生成相比的变更。

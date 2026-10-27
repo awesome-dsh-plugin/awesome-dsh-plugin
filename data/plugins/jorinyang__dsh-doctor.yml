@@ -1,0 +1,6 @@
+url: https://github.com/jorinyang/dsh-doctor
+name: jorinyang/dsh-doctor
+category: dev
+description:
+  en: DSH environment diagnosis, graded repair with one-click rollback, and a runtime self-healing service.
+  zh: DSH 环境诊断、分级修复与一键回滚，附带运行时自愈服务。

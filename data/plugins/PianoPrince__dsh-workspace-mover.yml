@@ -1,0 +1,6 @@
+url: https://github.com/PianoPrince/dsh-workspace-mover
+name: PianoPrince/dsh-workspace-mover
+category: session
+description:
+  en: "Move sessions across workspaces by drag-and-drop with true in-place migration; recover orphaned or unregistered sessions; re-point stale workspaces after folder renames. IDs and history stay intact, with per-step backup and rollback."
+  zh: "拖拽跨工作区真迁移会话，找回失联与未记账会话，文件夹改名后一键原地重定向工作区；ID 与历史原样保留，步步备份回滚。"

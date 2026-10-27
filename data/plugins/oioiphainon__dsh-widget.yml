@@ -1,0 +1,7 @@
+url: https://github.com/oioiphainon/dsh-widget
+name: oioiphainon/dsh-widget
+category: ui
+description:
+  en: A transparent always-on-top desktop fish that mirrors the current DSH session - turn, step, tool calls, todos, background jobs and team tasks - with optional login autostart, an option to stay after DSH exits, and a right-click hide. Windows only.
+  zh: 常驻 Windows 桌面的透明置顶悬浮鱼，实时显示当前 DSH 会话的轮次、步骤、工具调用、todo、后台任务与团队任务；可选开机自启、DSH 退出后保留，右键可隐藏。仅支持 Windows。
+icon: https://raw.githubusercontent.com/oioiphainon/dsh-widget/main/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/lihongxu0221/dsh-workspace-browser
+name: lihongxu0221/dsh-workspace-browser
+category: ui
+description:
+  en: Replaces the shipped sidebar workspace browser with Recents, a project editor that adds extra source folders, and pin, rename, fork, and archive row actions.
+  zh: 替换出厂侧边栏工作区浏览器，补上最近会话、可添加额外源文件夹的项目编辑器，以及置顶、重命名、派生和归档行操作。

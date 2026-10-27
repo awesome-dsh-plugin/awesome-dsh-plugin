@@ -1,0 +1,6 @@
+url: https://github.com/CAI-MH/dsh-sysbrief
+name: CAI-MH/dsh-sysbrief
+category: workflow
+description:
+  en: 'Parse PRDs and PDFs, ask clarifying questions in batches, consolidate a BRIEF.md system brief, and package deliverables for upload.'
+  zh: '解析 PRD/PDF、分批追问澄清目标系统并沉淀 BRIEF.md，最终打包可上传交付物。'

@@ -1,0 +1,6 @@
+url: https://github.com/PiedPiper911/dsh-video-tools
+name: PiedPiper911/dsh-video-tools
+category: tools
+description:
+  en: Browser-local audio/video toolkit for DSH — extract frames, capture thumbnails, compress images, and convert clips to GIF with FFmpeg.wasm.
+  zh: 基于 FFmpeg.wasm 的浏览器端音视频工具集，支持抽帧、截图、图片压缩与视频转 GIF。

@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-computer-use
+name: 988hj7tczd-oss/dsh-computer-use
+category: tools
+description:
+  en: 'Cross-platform Computer Use for DeepSeek Harness: virtual-mouse human-like operation (screen_observe + computer_click + type + key + scroll + drag, 11 tools), AX-tree zero-vision-cost mode with free GLM-4V-Flash vision fallback, safety guards (snapshot TTL / app whitelist / dangerous-action approval / password-box protection).'
+  zh: 跨平台 Computer Use 插件：虚拟鼠标真人操作（screen_observe / computer_click / type / key / scroll / drag 共 11 个工具），AX 语义树零视觉成本 + GLM-4V-Flash 免费视觉兜底，安全护栏（快照 TTL / 应用白名单 / 危险操作审批 / 密码框保护）。

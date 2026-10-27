@@ -1,0 +1,7 @@
+url: https://github.com/QiaoSchoco/dsh-lit-shot
+name: QiaoSchoco/dsh-lit-shot
+category: ui
+description:
+  en: 'Screenshot button for the DSH composer on Windows: drag a region over the frozen screen and the picture lands in the draft as a normal image attachment, with a global hotkey and an editable shortcut.'
+  zh: '给 DSH 打字框加一个截图键：点剪刀、拖框选中屏幕区域，图片作为普通附件直接进草稿；另带全局热键与可自定义的快捷键，仅 Windows。'
+icon: https://raw.githubusercontent.com/QiaoSchoco/dsh-lit-shot/main/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/11111353535/dsh-which
+name: 11111353535/dsh-which
+category: dev
+description:
+  en: 'Command resolution forensics: which file a command actually runs, which PATH entry won, what it shadows, how many entries are duplicates or dead, and whether the copies behind one name report the same version.'
+  zh: '命令解析取证：一条命令实际会跑哪个文件、PATH 哪一条胜出、遮蔽了谁、有多少重复与死条目，以及同名副本报的版本是否一致。'

@@ -1,0 +1,6 @@
+url: https://github.com/wuanthony397-hash/dsh-codex-peer
+name: wuanthony397-hash/dsh-codex-peer
+category: agi
+description:
+  en: 'Peer collaboration between a DeepSeek Harness agent and the local Codex CLI: split a goal into a shared work list, hand tasks over, review what comes back, and keep every prompt, event stream, and answer on disk.'
+  zh: '让 DeepSeek Harness agent 与本机 Codex CLI 对等协作：把目标拆成共享工作清单、派活与交接、互相审查，并把每一步的提示词、事件流与回答留档在本地。'

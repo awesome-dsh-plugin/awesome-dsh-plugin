@@ -1,0 +1,6 @@
+url: https://github.com/S1n7T/dsh-everything
+name: S1n7T/dsh-everything
+category: tools
+description:
+  en: 'Whole-disk file search tool backed by the local Everything (voidtools) index: millisecond path queries for the agent over a loopback-only HTTP fast channel with es.exe fallback, plus verified auto-install of the latest stable Everything + ES CLI backend (signature-checked, proxy-aware). Windows only.'
+  zh: '基于本机 Everything（voidtools）索引的全盘文件搜索工具：通过仅回环监听的 HTTP 快速通道（es.exe 兜底）为 Agent 提供毫秒级路径查询；后端缺失时自动下载并校验安装最新稳定版 Everything 与 ES CLI（验签名、支持代理）。仅支持 Windows。'

@@ -1,0 +1,6 @@
+url: https://github.com/d0ublecl1ck/dsh-flow
+name: d0ublecl1ck/dsh-flow
+category: ui
+description:
+  en: 'Small DeepSeek Harness affordances for everyday actions — locate the current session from the sidebar header (Cmd/Ctrl+Shift+D), copy a session ID from the session row menu (Cmd/Ctrl+Shift+C), open links in the system default program including localhost, open or copy inline code from a context menu, open changed-file cards with a local IDE or reveal them in the file manager, swap Enter with Cmd/Ctrl+Enter, recall sent messages with Up/Down, and show the current workspace name inside the header open button; every one of them has its own switch in a Flow settings page.'
+  zh: 'DSH 的一组小改动，把日常动作改回直觉——侧栏标题行的定位当前会话按钮（⇧⌘D）、会话行菜单里的复制会话 ID（⇧⌘C）、链接交给系统默认程序打开（含 localhost）、行内代码的打开或复制右键菜单、改动文件卡片用本机 IDE 打开或在文件管理器中显示、Enter 与 ⌘/Ctrl+Enter 对调、↑↓ 回填发过的消息，以及把当前工作区名写进标题行「打开」按钮；每一项在设置的「心流」页各有一个开关。'

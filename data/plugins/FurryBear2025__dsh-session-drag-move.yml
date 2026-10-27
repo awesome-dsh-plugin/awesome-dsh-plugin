@@ -1,0 +1,6 @@
+url: https://github.com/FurryBear2025/dsh-session-drag-move
+name: FurryBear2025/dsh-session-drag-move
+category: ui
+description:
+  en: 'Drag a session onto another workspace in the DSH sidebar and it really moves: the session-log header cwd is rewritten and the log directory is re-homed under the target project, with a progress bar while it runs.'
+  zh: '在 DSH 左侧栏把会话拖到别的工作区，归属真的会变：改写会话日志 header 的 cwd 并把日志目录迁到目标项目下，迁移过程中显示进度条。'

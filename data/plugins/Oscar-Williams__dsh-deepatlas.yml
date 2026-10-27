@@ -1,0 +1,6 @@
+url: https://github.com/Oscar-Williams/dsh-deepatlas
+name: Oscar-Williams/dsh-deepatlas
+category: market
+description:
+  zh: "任务感知的 DSH 插件导航：聚合 GitHub topic 与社区清单建立本地索引，按 28 类中英能力检索；提供 commit 级静态风险审计、用户确认后的锁定版本安装、组合验证与恢复流程。"
+  en: "Task-aware DSH plugin navigator: builds a local index from GitHub topics and community lists, retrieves across 28 bilingual capability classes, and provides commit-level static risk audit, consent-gated pinned installation, composition checks, and recovery."

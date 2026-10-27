@@ -1,0 +1,6 @@
+url: https://github.com/longmiaoo/dsh-native-browser
+name: longmiaoo/dsh-native-browser
+category: browser
+description:
+  en: Controls user-authorized Chrome tabs from DeepSeek Harness through a local native-messaging broker, with semantic page reads, actions, screenshots, and explicit handoff.
+  zh: 通过本地原生消息 Broker，让 DeepSeek Harness 操作用户明确授权的 Chrome 标签页，支持语义化页面读取、交互、截图与显式交接。

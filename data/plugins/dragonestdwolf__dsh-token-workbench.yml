@@ -1,0 +1,7 @@
+url: https://github.com/dragonestdwolf/dsh-token-workbench
+name: dragonestdwolf/dsh-token-workbench
+category: usage
+tarball: https://github.com/dragonestdwolf/dsh-token-workbench/releases/download/v0.3.0/dsh-token-workbench-0.3.0.tgz
+description:
+  en: "Token usage workbench for token-plan users: folds assistant/message usage from the session log into per-day call-level detail (cross-session responseId dedupe keeps fork/resume copies counted once), converts local volume into plan credits against terms you enter (default 1M tokens = 0.2 credits, caps 600/2500/6000 for day/week/month, optionally scoped to selected channels), and shows a composer-dock readout plus a settings page with per-provider cost table, 7/30d bar and line trends and a rolling six-month heatmap. No credentials are read: the remaining percentage a provider keeps behind its control-plane API is replaced by a clearly labelled local conversion, and reference costs come from the public DeepSeek pricing page."
+  zh: "给 token plan 用户的 Token 用量工作台：把会话日志里的 assistant/message usage 折成按天分片的调用级明细（按跨会话 responseId 去重，fork/resume 复制的历史只算一次），并按你填写的套餐口径把本机用量换算成积分（默认 1M token = 0.2 积分，日 600 / 周 2500 / 月 6000，可只统计指定通道），在输入框下方给常驻读数、在设置页给分通道成本表、7/30 天柱状与折线趋势、近半年热力图。不读取任何凭据：厂商藏在控制面接口里的剩余百分比，用明确标注「本机换算」的本地口径替代；参考金额来自公开的 DeepSeek 定价页。"

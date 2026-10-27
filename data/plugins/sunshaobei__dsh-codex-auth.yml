@@ -1,0 +1,6 @@
+url: https://github.com/sunshaobei/dsh-codex-auth
+name: sunshaobei/dsh-codex-auth
+category: identity
+description:
+  en: Manage Codex subscription (ChatGPT OAuth) authorization from the DSH settings panel, so Codex GPT models work without an API key.
+  zh: 在 DSH 设置面板中管理 Codex 订阅（ChatGPT OAuth）授权，无需 API key 即可使用 Codex 内的 GPT 模型。

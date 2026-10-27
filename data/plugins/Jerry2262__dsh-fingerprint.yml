@@ -1,0 +1,6 @@
+url: https://github.com/Jerry2262/dsh-fingerprint
+name: Jerry2262/dsh-fingerprint
+category: model
+description:
+  en: Captures and compares single-token behavioral fingerprints of configured DSH model routes using the One Token Is Enough protocol.
+  zh: 使用《One Token Is Enough》论文协议，对 DSH 已配置的模型路由采集并比较单 token 行为指纹。

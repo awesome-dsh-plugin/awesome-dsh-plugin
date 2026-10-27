@@ -1,0 +1,6 @@
+url: https://github.com/bululuburuarua666/dsh-herald
+name: bululuburuarua666/dsh-herald
+category: notify
+description:
+  en: 'Tri-channel task notifications: in-page toasts with chimes, browser OS banners, and host-direct OS toasts that keep working with the browser closed, plus a bell panel with persistent history.'
+  zh: '三通道任务通知：页内浮层与提示音、浏览器系统横幅、宿主直发系统通知（浏览器关闭也送达），附铃铛面板与持久历史。'

@@ -1,0 +1,7 @@
+url: https://github.com/ZHUBAI0528/dsh-client-ui-aqua-community-fix
+name: ZHUBAI0528/dsh-client-ui-aqua-community-fix
+category: theme
+description:
+  en: 'Community-maintained Aqua glass theme for DeepSeek Harness 0.2.1-rc.3: one consistent layout instead of mode switching, adjustable blur and frost, a live fluid or image wallpaper behind the panels, page headers unified into a shared glass card, and a switch that restores the stock UI completely. Continues the Aqua theme by WYH66666666 (DSH-Transparent-UI-Plugin v1.3.0); do not install alongside the upstream.'
+  zh: 'Aqua 玻璃主题的社区维护分支，适配 DSH 0.2.1-rc.3：统一的一套玻璃布局（无需切换模式）、可调模糊与磨砂、面板后的实时流体或图片壁纸、页头统一为同一套玻璃卡片，以及一键完全还原原生界面的开关。承接 WYH66666666 的 Aqua 主题（DSH-Transparent-UI-Plugin v1.3.0），请勿与上游同装。'
+icon: https://raw.githubusercontent.com/ZHUBAI0528/dsh-client-ui-aqua-community-fix/main/assets/icon-180.png

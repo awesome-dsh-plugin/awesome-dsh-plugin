@@ -1,0 +1,6 @@
+url: https://github.com/ramwin/dsh-turn-music
+name: ramwin/dsh-turn-music
+category: notify
+description:
+  en: 'Turn-finished music reminder: when an agent turn ends, play a ringtone or any local audio file (bundled synthesised telephone ring, custom absolute path, or an in-page upload), with a floating chip to pause, resume or dismiss it and loop-until-paused playback; configured in Settings, defaults overridable per deployment.'
+  zh: '回合提醒音乐：对话（回合）结束时播放铃声或任意本地音频提醒你回来——内置合成的电话「叮铃铃」，也可填宿主机绝对路径或直接在设置页上传；右下角浮标可暂停/继续/关闭，默认循环响到你手动停；设置项在「设置 → 内置插件」里，部署级默认值可写进 cordis.patch.yml。'

@@ -1,0 +1,7 @@
+url: https://github.com/zhairy/dsh-agent-swarm
+name: zhairy/dsh-agent-swarm
+category: workflow
+tarball: https://github.com/zhairy/dsh-agent-swarm/releases/latest/download/dsh-agent-swarm.tgz
+description:
+  en: 'Chinese multi-agent workflow with per-role model fallback, versioned Mermaid task plans, independent Agent and Jev reviews, persistent expert collaboration, and pure-function calculation tools.'
+  zh: '中文多智能体工作流，支持按角色配置模型回退、版本化 Mermaid 任务规划、独立 Agent 与 Jev 审核、专家持久化协作和纯函数计算工具。'

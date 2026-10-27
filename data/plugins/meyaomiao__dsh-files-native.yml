@@ -1,0 +1,6 @@
+url: https://github.com/meyaomiao/dsh-files-native
+name: meyaomiao/dsh-files-native
+category: ui
+description:
+  en: 'Native-feel DSH attachments: official PNG/JPEG/WebP/GIF thumbs plus 64px cards for other files via drag, paste, or paperclip; non-images land in .dsh-uploads and sent cards sit on the user bubble.'
+  zh: '接近原生的 DSH 附件：PNG/JPEG/WebP/GIF 走官方缩略图，其它文件经拖入、粘贴或回形针变成 64px 卡片；非图片落到 .dsh-uploads，发送后贴在用户气泡旁。'

@@ -1,0 +1,6 @@
+url: https://github.com/99galaxy/dsh-plugin-market
+name: 99galaxy/dsh-plugin-market
+category: market
+description:
+  en: Browse the awesome-dsh-plugin catalog from a dedicated page opened through the DSH left sidebar. Search, filter by category or installed state, and sort by stars, downloads, name or date added. Three tabs show all, installed and updatable plugins, with a separate count when update status cannot be determined. Install into the active Web or Desktop profile using the package manager supplied by DSH, while preserving disabled bundles. Reload the profile through HMR when available, with restart guidance otherwise. Installed state is isolated per profile, installation and reload requests are mutually exclusive, and pagination keeps the submitted search. The catalog is cached locally for one hour, with mirror, CDN and npm fallbacks.
+  zh: 从 DSH 左侧栏打开独立的插件市场页面，浏览 awesome-dsh-plugin 目录。支持按分类或安装状态筛选、按名称或简介搜索，以及按 Star、下载量、名称或收录时间排序；三个标签分别显示全部插件、已安装插件和可更新插件，并单独提示无法判断更新状态的数量。自动识别当前 Web 或桌面 profile，使用 DSH 提供的包管理器一键安装和更新，保留其他插件的停用状态。支持通过 HMR 重载 profile，不可用时提示重启。各 profile 的安装状态独立，安装与重载互斥，分页保持已提交的搜索条件。目录在本地缓存一小时，官方源不可达时依次回退到镜像、CDN 与 npm。

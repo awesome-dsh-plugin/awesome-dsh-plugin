@@ -1,0 +1,6 @@
+url: https://github.com/Yubickari/dsh-semantic-drift
+name: Yubickari/dsh-semantic-drift
+category: tools
+description:
+  en: One versioned vocabulary of a project's business concepts, a read-only drift scan, and the same naming rules in every agent prompt.
+  zh: 一份按项目维护的业务概念词表、只读命名漂移扫描，以及注入每个 Agent 提示的同一套命名规则。

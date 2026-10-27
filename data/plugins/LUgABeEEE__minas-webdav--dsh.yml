@@ -1,0 +1,6 @@
+url: https://github.com/LUgABeEEE/minas-webdav/tree/master/dsh
+name: LUgABeEEE/minas-webdav#dsh
+category: tools
+description:
+  en: 'Registers the minas-webdav MCP server as one stdio row, giving the agent 14 tools for a Xiaomi Smart Storage (MINAS) NAS without mounting it: list, stat, tree, find, du, df, cat, upload, download, mkdir, move, copy, delete and a capability probe. The Python package behind it is installed separately with pipx.'
+  zh: '把 minas-webdav MCP server 注册成一行 stdio 配置，给 agent 14 个工具，不挂盘直接操作小米智能存储（MINAS）：列目录、stat、tree、find、du、df、cat、上传下载、mkdir、移动复制删除，另带能力探测。Python 包需另行 pipx 安装。'

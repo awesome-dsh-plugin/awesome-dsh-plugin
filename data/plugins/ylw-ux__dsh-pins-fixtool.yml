@@ -1,0 +1,6 @@
+url: https://github.com/ylw-ux/dsh-pins-fixtool
+name: ylw-ux/dsh-pins-fixtool
+category: ui
+description:
+  en: 'Pins passages selected in a conversation into a per-conversation right-sidebar panel, marks them in the transcript, jumps back to the source passage on click, and quotes a pinned passage into the composer from the selection toolbar or by typing @; the panel tags, searches, filters and exports the pins as a Markdown outline.'
+  zh: '把对话中划选的段落固定到按对话隔离的右侧栏面板，在正文里留下持久标记并可点击跳回原文；可从划选浮条或输入框 @ 把已固定的段落引用进消息，片段支持标签，面板可搜索、筛选并导出 Markdown 提纲。'

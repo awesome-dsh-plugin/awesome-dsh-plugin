@@ -1,0 +1,6 @@
+url: https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-liangshen
+name: DamonKoy/dsh-web-ui#dsh-liangshen
+category: ui
+description:
+  en: 'LiangShen (梁神) agent preset for the dsh web GUI: a two-phase anchored-standard preset.'
+  zh: dsh web GUI 的梁神 agent 预设：两阶段锚定标准预设。

@@ -1,0 +1,6 @@
+url: https://github.com/WJDdidi-1/ai-context-doctor/tree/main/plugin
+name: WJDdidi-1/ai-context-doctor#plugin
+category: usage
+description:
+  en: 'Scans a repository when a Harness agent starts working in it and, if more than a fifth of it is build output, lockfiles and logs, injects a note naming the largest offenders plus an .aiignore block that cuts them. Stays silent on clean repositories.'
+  zh: '在 Harness agent 开始处理某个仓库时扫描一次；若超过五分之一的体积是构建产物、锁文件和日志，就注入一条提示，点名最占空间的几项并给出一段可直接使用的 .aiignore；仓库干净则不打扰。'

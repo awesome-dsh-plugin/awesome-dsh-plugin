@@ -1,0 +1,7 @@
+url: https://github.com/Raphaelutumn/dsh-mood
+name: Raphaelutumn/dsh-mood
+category: ui
+tarball: https://github.com/Raphaelutumn/dsh-mood/releases/download/v0.1.0/dsh-external-dsh-mood-0.1.0.tgz
+description:
+  en: A tiny behavioral mood ring for AI coding agents — folds session behavior (consecutive failures, repeated calls, activity) into a four-state Mood (GOOD / CONFUSED / FRUSTRATED / OVERWHELMED) shown as a low-friction session-header status light.
+  zh: 给 AI 编程 Agent 的轻量心情指示器——把会话行为（连续失败、重复调用、活动强度）折叠成四态 Mood（顺利 / 困惑 / 受挫 / 过载），以低干扰的会话头部状态灯呈现。

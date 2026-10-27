@@ -1,0 +1,6 @@
+url: https://github.com/CodermanYHZ/dsh-node-flow
+name: CodermanYHZ/dsh-node-flow
+category: workflow
+description:
+  en: Visual node-based workflow canvas for DSH with sub-agent calls, code execution, branching, loops, scheduling, and workflow import/export.
+  zh: DSH 可视化节点工作流画布，支持子 Agent 调用、代码执行、条件分支、循环、定时任务及工作流导入导出。

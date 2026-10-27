@@ -1,0 +1,6 @@
+url: https://github.com/gx18391303625-afk/dsh-douyin-ip-report
+name: gx18391303625-afk/dsh-douyin-ip-report
+category: skill
+description:
+  en: "Douyin patent and trademark complaint workflow for DeepSeek Harness: checks user-supplied links, materials and organization identity in a dedicated browser, records each submission state, and queries platform history read-only; never discovers targets or submits without explicit authorization."
+  zh: "抖音专利/商标侵权举报技能包：用专用浏览器核对用户本次提供的链接、证明材料与组织身份，记录提交状态，并只读查询平台历史回执；不自动发现举报对象，未明确授权不提交。"

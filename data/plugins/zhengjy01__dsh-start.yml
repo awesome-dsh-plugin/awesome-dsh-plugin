@@ -1,0 +1,6 @@
+url: https://github.com/zhengjy01/dsh-start
+name: zhengjy01/dsh-start
+category: dev
+description:
+  en: 'One-click start/stop launcher for DSH Web on macOS — start (foreground/daemon), stop, status, duplicate-launch guard, auto browser open, plus a Dock-able DSH.app built by script.'
+  zh: macOS 上 DSH Web 的一键启停启动器：前台/后台启动、停止、状态、防重复启动、自动打开浏览器，并可用脚本构建程序坞版 DSH.app。

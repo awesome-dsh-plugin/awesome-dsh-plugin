@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-tender-requirements
+name: PerryLink/dsh-tender-requirements
+category: tools
+description:
+  en: 'Extracts deadlines, deposit, validity, ceiling, bid composition and copy counts from a tender document, and reports the items it did not find rather than omitting them.'
+  zh: '从招标文件提取截止时间、保证金、有效期、最高限价、投标文件组成与正副本份数；未找到的项也逐条报告，不省略。'

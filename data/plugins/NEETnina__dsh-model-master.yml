@@ -1,0 +1,8 @@
+url: https://github.com/NEETnina/dsh-model-master
+name: NEETnina/dsh-model-master
+category: model
+description:
+  en: 'Model selector for the DSH composer that keeps the native button and menu and takes over only when the small dropdown would open: search across providers, probe any model with a real streaming request to measure TTFT and TPS, and browse a leaderboard of up to 100 rows built from OpenRouter''s catalogue, where clicking a row searches local channels of that name.'
+  zh: 'DSH 输入框的模型选择器：保留原生按钮与菜单，只在小下拉列表即将弹出时接管；跨渠道搜索、对任意模型发起真实流式请求测出 TTFT 与 TPS，并可浏览由 OpenRouter 目录构建的最多 100 行榜单，点一行即搜索本机同名渠道。'
+icon: https://raw.githubusercontent.com/NEETnina/dsh-model-master/main/assets/icon-180.png
+tarball: https://github.com/NEETnina/dsh-model-master/releases/latest/download/dsh-model-master.tgz

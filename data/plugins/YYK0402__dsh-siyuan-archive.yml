@@ -1,0 +1,6 @@
+url: https://github.com/YYK0402/dsh-siyuan-archive
+name: YYK0402/dsh-siyuan-archive
+category: tools
+description:
+  en: 'Archives DSH conversation output into SiYuan notes: a single siyuan_archive call files content under `<archive path>/<year-month>/<type>/<date>_<time>_<topic>_<content>` with a metadata table and auto-maintains an index document at the notebook root; 6 siyuan_* host tools (list notebooks, full-text search, read document, archive, delete block, remove document) and a Web settings page for base URL with connection test, API token in the host credential store, archive target and title template, plus notebook/document-level read/write/delete permissions with default deny and child levels able to only tighten.'
+  zh: '把 DSH 对话产出归档到思源笔记：一次 siyuan_archive 调用按「<归档路径>/<年-月>/<类型>/<日期>_<时间>_<主题>_<内容>」写入并附元数据表，自动维护笔记本根的「索引与规范」索引文档；6 个 siyuan_* 宿主工具（列笔记本、全文检索、读文档、归档、删块、删文档）与 Web 设置页配置地址（含测试连接）、存宿主凭据库的 API token、归档目标与标题模板，以及按笔记本/文档的读写删权限（默认全拒、子级只能收紧）。'

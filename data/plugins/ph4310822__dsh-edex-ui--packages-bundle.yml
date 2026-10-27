@@ -1,0 +1,6 @@
+url: https://github.com/ph4310822/dsh-edex-ui/tree/main/packages/bundle
+name: ph4310822/dsh-edex-ui#bundle
+category: ui
+description:
+  en: 'eDEX-UI-style shell over the DSH web GUI: system-telemetry left bar with per-core CPU sparklines, encom-globe world-map right bar with up/down traffic chart, filesystem browser with file preview, and a terminal-styled composer that follows the active workspace.'
+  zh: '在 DSH Web 界面上叠加 eDEX-UI 风格外壳：左侧系统遥测栏（含每核 CPU 迷你趋势图）、右侧 encom-globe 世界地图与上下行流量图、左下文件系统浏览器（带文件预览），以及跟随当前工作区的终端风格输入框。'

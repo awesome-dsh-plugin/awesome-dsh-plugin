@@ -1,0 +1,9 @@
+# awesome-dsh-plugin 市场登记文件
+# 用法：fork https://github.com/awesome-dsh-plugin/awesome-dsh-plugin，
+# 把本文件以同名放进 data/plugins/，按 contributing.md 提 PR。
+url: https://github.com/zzx-dear/dsh-capybara-notify
+name: zzx-dear/dsh-capybara-notify
+category: notify
+description:
+  en: 'Capybara secretary for DSH: desktop pet notifications with ding sound, alert inbox API, session-aware alerts (turn done / approval needed / turn blocked), check scripts, and daily high-star plugin recommendations.'
+  zh: '水豚秘书：桌面宠物气泡+叮咚通知、告警收件箱 API、会话智能提醒（任务完成/需要确认/阻塞）、磁盘/HTTP/进程巡检脚本，以及每日高口碑插件推荐，另附 API 冒烟测试。'

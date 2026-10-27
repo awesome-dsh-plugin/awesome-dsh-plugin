@@ -1,0 +1,6 @@
+url: https://github.com/xi-kari/dsh-amphoreus
+name: xi-kari/dsh-amphoreus
+category: skill
+description:
+  en: 'Turns the 13 δ-me13 (Amphoreus) role skill cards into seat workspaces: per-seat theme and wallpaper, first-turn skill injection, chat stickers, per-seat memory notes and presets, Alt+digit seat switching, and an overview canvas for dispatch and handoff; the skill suite itself is read from a configurable local directory and is not bundled.'
+  zh: '把 δ-me13（翁法罗斯）的 13 张黄金裔角色技能卡变成席位工作区：逐席配色与壁纸、首轮自动注入技能卡、对话表情、每席记忆便签与预设、Alt+数字切席，以及用于派发与移交的总览画布；技能套件本身从可配置的本地目录读取，不随插件打包。'

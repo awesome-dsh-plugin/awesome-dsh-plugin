@@ -1,0 +1,7 @@
+url: https://github.com/Tests4gptplay/dsh-video-vision
+name: Tests4gptplay/dsh-video-vision
+category: vision
+tarball: https://github.com/Tests4gptplay/dsh-video-vision/releases/download/v0.9.1/dsh-video-vision-0.9.1.tgz
+description:
+  en: "Give DSH AI timestamped video frames, audio and lyric analysis for Bilibili, YouTube and local files, with browser-session import, optional built-in browser sync, continued viewing, saved site resolvers and native cache management. Requires FFmpeg and ffprobe on PATH or configured in the plugin settings."
+  zh: "让 DSH 中的 AI 结合时间戳画面、音频与歌词理解 B 站、YouTube 和本地视频，支持浏览器登录态导入、可选的内置浏览器同步、接续观看、站点解析扩展和原生缓存管理。需要把 FFmpeg 与 ffprobe 放进 PATH，或在插件设置中填写程序路径。"

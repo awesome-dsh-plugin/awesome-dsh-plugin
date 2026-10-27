@@ -1,0 +1,7 @@
+url: https://github.com/RexYoung000/rex-harness/tree/main/packages/ui-workflow
+name: RexYoung000/rex-harness#ui-workflow
+category: workflow
+tarball: https://github.com/RexYoung000/rex-harness/releases/latest/download/rex-harness-ui-workflow.tgz
+description:
+  en: Turns a product or UI request into an implementation-ready design spec with /ui-workflow and /ui-rerun. Analysts run through a read-only ui_analyst tool, and the lead agent writes docs/ui-workflow reports.
+  zh: 把产品或界面需求编排成可落地的设计规格，提供 /ui-workflow 与 /ui-rerun。分析师通过只读 ui_analyst 运行，主控把报告写入 docs/ui-workflow。

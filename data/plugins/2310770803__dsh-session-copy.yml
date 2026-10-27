@@ -1,0 +1,8 @@
+url: https://github.com/2310770803/dsh-session-copy
+name: 2310770803/dsh-session-copy
+category: session
+description:
+  en: Add one session-header button to copy the session deep link, the full conversation as Markdown, or the working directory.
+  zh: 在会话标题栏添加一个复制按钮，可复制会话深度链接、整段对话 Markdown 或工作目录。
+icon: https://raw.githubusercontent.com/2310770803/dsh-session-copy/main/assets/icon-180.png
+tarball: https://github.com/2310770803/dsh-session-copy/releases/latest/download/dsh-session-copy.tgz

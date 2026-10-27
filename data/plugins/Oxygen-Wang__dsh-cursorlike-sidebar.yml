@@ -1,0 +1,6 @@
+url: https://github.com/Oxygen-Wang/dsh-cursorlike-sidebar
+name: Oxygen-Wang/dsh-cursorlike-sidebar
+category: ui
+description:
+  en: A Cursor-like sidebar for DeepSeek Harness with file browsing, code editing, Git diffs, terminal, side chat, and Ctrl+L references.
+  zh: 为 DeepSeek Harness 提供类 Cursor 侧边栏，支持文件浏览、代码编辑、Git 差异、终端、侧边对话及 Ctrl+L 文件引用。

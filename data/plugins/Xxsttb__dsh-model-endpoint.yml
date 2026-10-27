@@ -1,0 +1,6 @@
+url: https://github.com/Xxsttb/dsh-model-endpoint
+name: Xxsttb/dsh-model-endpoint
+category: remote
+description:
+  en: 'Publishes whichever model the profile has selected in chat or on the Models page as an OpenAI-compatible HTTP endpoint: /v1/models, /v1/chat/completions (streaming SSE and non-streaming), /health. A request may name any routable model; one that omits `model` gets the current chat selection, so switching model in chat switches the endpoint. Switched on, it can also lend the model the Harness tools switched on individually, run those calls through the Harness tool runtime and feed results back up to a round limit. The listener is the plugin''s own, so 127.0.0.1, 0.0.0.0 and a NAT-forwarded port all behave the same with no change to the request path. Settings cover bind address, port, API key with a generator, fallback provider and model, reasoning effort, CORS origin and timeout.'
+  zh: '把当前在聊天或「模型」设置页选中的模型发布成 OpenAI 兼容 HTTP 端点：/v1/models、/v1/chat/completions（SSE 流式与非流式）、/health。请求可指定本 profile 能路由的任意模型；省略 model 时使用聊天中当前选中的模型，因此在聊天里换模型就等于换端点所服务的模型。开启后还可把 Harness 中逐个开关的工具借给模型，经 Harness 工具运行时执行并回填结果，往返次数可设上限。监听器由插件自身创建，绑定 127.0.0.1、0.0.0.0 或经 NAT 转发的端口行为一致，请求路径不变。设置项含绑定地址、端口、可随机生成的 API 密钥、备用提供方与模型、推理强度、CORS 来源与超时。'

@@ -1,0 +1,6 @@
+url: https://github.com/NattoCB/dsh-web-search-session-follow
+name: NattoCB/dsh-web-search-session-follow
+category: tools
+description:
+  en: "Drop-in web_search provider that follows the session's routed model: a runtime-editable priority chain with three wire dialects (Anthropic web search, OpenRouter online, Zhipu bigmodel), per-route endpoints and credentials, a Settings UI panel, local JSONL call audit, and built-in official fallback."
+  zh: "替换内置 web_search 的 provider：按会话当前路由的模型选择端点与凭据，运行时可编辑的优先级链支持 Anthropic web search、OpenRouter online、智谱 bigmodel 三种方言，设置 UI 面板可视化编辑，本地 JSONL 调用审计，链全失败回退内置官方方案。"

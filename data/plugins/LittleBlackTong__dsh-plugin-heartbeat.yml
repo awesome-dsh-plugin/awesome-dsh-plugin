@@ -1,0 +1,6 @@
+url: https://github.com/LittleBlackTong/dsh-plugin-heartbeat
+name: LittleBlackTong/dsh-plugin-heartbeat
+category: workflow
+description:
+  en: 'Interval heartbeat that wakes each root agent itself (followup injection) to proactively report progress, risks or blockers: busy-safe queuing, no stacking, auto-pauses when no human replies, re-arms on the next user message.'
+  zh: '定时心跳：用 followup 注入唤醒每个根 agent 主动汇报进展、风险与卡点——忙碌时排队不打断、最多保留一条、连续无人回应自动暂停，用户下一条消息即恢复。'

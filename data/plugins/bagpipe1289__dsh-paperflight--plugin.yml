@@ -1,0 +1,7 @@
+url: https://github.com/bagpipe1289/dsh-paperflight/tree/main/plugin
+name: bagpipe1289/dsh-paperflight#plugin
+category: ui
+description:
+  en: PaperFlight is an experimental future-retro DSH Web workbench with session management, file previews, approvals, and optional preset-scoped browser and terminal tools.
+  zh: 纸航 PaperFlight 是实验性的未来复古 DSH Web 工作台，提供会话管理、文件预览、审批和按预设启用的可选浏览器与终端工具。
+tarball: https://github.com/bagpipe1289/dsh-paperflight/releases/download/v0.1.0-preview.60/dsh-paperflight-0.1.0-preview.60.tgz

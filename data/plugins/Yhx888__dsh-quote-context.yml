@@ -1,0 +1,8 @@
+url: https://github.com/Yhx888/dsh-quote-context
+name: Yhx888/dsh-quote-context
+category: ui
+tarball: https://github.com/Yhx888/dsh-quote-context/releases/download/v0.1.1/dsh-quote-context-0.1.1.tgz
+icon: https://raw.githubusercontent.com/Yhx888/dsh-quote-context/main/docs/assets/icon-256.png
+description:
+  en: 'Chat quotes for DSH: select text in any message to quote or comment; quotes wait above the composer and become jump-back quote cards in the sent message.'
+  zh: '聊天引用：选中消息文字即可引用或评论，引用常驻输入卡上方，发送后变成可跳回的引用块。'

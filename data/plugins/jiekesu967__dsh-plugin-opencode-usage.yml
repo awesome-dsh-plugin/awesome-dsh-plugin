@@ -1,0 +1,6 @@
+url: https://github.com/jiekesu967/dsh-plugin-opencode-usage
+name: jiekesu967/dsh-plugin-opencode-usage
+category: usage
+description:
+  en: Shows OpenCode Go subscription usage (rolling, weekly and monthly used and remaining percentage with reset times) in a floating panel anchored to the bottom-left of the session window.
+  zh: 在会话窗口左下角的悬浮面板中显示 OpenCode Go 订阅用量（滚动/每周/每月的已用与剩余百分比及重置时间）。

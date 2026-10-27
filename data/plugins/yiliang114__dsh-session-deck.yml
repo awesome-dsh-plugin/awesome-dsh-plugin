@@ -1,0 +1,6 @@
+url: https://github.com/yiliang114/dsh-session-deck
+name: yiliang114/dsh-session-deck
+category: session
+description:
+  en: 'Adds Activity and Favorites views to the DSH sidebar for running, waiting, unread, recent, and natively pinned sessions across workspaces, while preserving the native workspace tree. Targets DSH 0.2.1-rc.2 only.'
+  zh: '在 DSH 侧栏添加 Activity 和 Favorites 视图，跨工作区查看运行中、等待回复、未读、最近及原生置顶会话，并保留原生工作区树。仅适配 DSH 0.2.1-rc.2。'

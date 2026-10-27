@@ -1,0 +1,6 @@
+url: https://github.com/bushizhanghan/dsh-profile-doctor
+name: bushizhanghan/dsh-profile-doctor
+category: dev
+description:
+  en: 'Read-only DSH profile doctor: the seven config-tree checks (config-clobber, dead-patch, tool-collision, plugin-not-mounted, plugin-stale, entry diff, explain) plus eight ecosystem checks learned from real failures — pnpm store version conflicts that break `dsh plugin add`, patch insert names node_modules cannot resolve, broken junctions, duplicate-capability plugins, orphan backup dirs, GitHub-source deps, npm publish-scope hints, and the minimumReleaseAgeExclude gap. Four agent tools; every finding carries its fix.'
+  zh: 只读的 DSH profile 医生：配置树七检（patch 丢字段、死 patch、工具重名、装了没挂载、停更、树 diff、组成解释）加八项生态检查——pnpm store 版本冲突（`dsh plugin add` 报 ERR_PNPM_UNEXPECTED_STORE 的根因）、patch insert 指向不存在的包、断裂的 junction、重复能力插件、孤儿 backup 目录、GitHub 源依赖、npm 发布权限提示、minimumReleaseAgeExclude 缺口。四个 agent 工具，每条 finding 都带修复文案。

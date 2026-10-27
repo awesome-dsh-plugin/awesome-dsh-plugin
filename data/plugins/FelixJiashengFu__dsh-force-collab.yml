@@ -1,0 +1,6 @@
+url: https://github.com/FelixJiashengFu/dsh-force-collab
+name: FelixJiashengFu/dsh-force-collab
+category: agi
+description:
+  en: 'Forced collaboration: a composer picker sets 0–6 sub-agents, and while it is on every hands-on task must be split across exactly that many child agents through a collab_fanout tool that has no count parameter, then merged by the main agent.'
+  zh: 强制协作：在输入框左侧选 0–6 个子 Agent，开启后每个动手的任务都必须通过没有数量参数的 collab_fanout 工具拆给正好这么多个子 Agent 并行，再由主 Agent 汇总。

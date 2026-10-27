@@ -1,0 +1,6 @@
+url: https://github.com/SISCHOI/daruma/tree/main/packages/dsh-daruma
+name: SISCHOI/daruma#dsh-daruma
+category: model
+description:
+  en: 'Keeps long DSH sessions alive when a model channel starts failing: daruma takes over after the in-box retry gives up, trips a self-healing circuit breaker on repeated 429/5xx or a terminal error, and moves the next request to another channel in your chain. Works on DSH 0.1.x and 0.2.x hosts, including 0.2.1-rc.2 with verified failover and backup-management RPC. The backup can be picked in Settings or from a panel beside the composer — both stay in sync — with a durable JSONL audit log for every switch. Channel switches are recorded in that audit log instead of as in-conversation notice rows, because a plugin session event of a type the host does not know makes it refuse to load the whole session.'
+  zh: '渠道开始失败时不让长任务中断：内置重试放弃后 daruma 接管，对连续 429/5xx 或终止性错误跳闸自愈断路器，把下一个请求切到链上的其他渠道。支持 DSH 0.1.x 与 0.2.x 宿主，含已实测故障转移与备用管理 RPC 的 0.2.1-rc.2。备用渠道可在设置页或输入框旁的面板挑选，两处即时同步；每次切换落盘成可审计的 JSONL 日志。切换只记入这份审计日志，不再写入会话内的提示行——宿主不认识的插件事件类型会让整段会话加载失败。'

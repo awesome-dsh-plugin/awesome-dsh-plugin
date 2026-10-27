@@ -1,0 +1,6 @@
+url: https://github.com/dongsheng123132/task-passport
+name: dongsheng123132/task-passport
+category: session
+description:
+  en: Carry durable task state across DeepSeek Harness, WorkBuddy, Claude Code and Codex with machine-readable checkpoints and optimistic locking.
+  zh: 通过机器可读检查点与乐观锁，在 DeepSeek Harness、WorkBuddy、Claude Code 和 Codex 之间交接持久任务状态。

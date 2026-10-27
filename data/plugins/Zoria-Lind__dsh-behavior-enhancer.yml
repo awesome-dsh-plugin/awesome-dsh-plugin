@@ -1,0 +1,6 @@
+url: https://github.com/Zoria-Lind/dsh-behavior-enhancer
+name: Zoria-Lind/dsh-behavior-enhancer
+category: tools
+description:
+  en: 'Tool-call discipline for DeepSeek Harness: injects a static behavior-constraint prompt section, drops the parallel pool to 1 after a tool failure (restoring after 3 consecutive successes), nudges the model to stop retrying after repeated failures, verifies writes with .bak rollback, gates high-risk commands, and tracks compliance stats via /behavior-status.'
+  zh: '工具调用纪律：注入静态行为约束段、工具失败后并行池收敛到 1（连续 3 次成功恢复）、连续失败提醒模型停止重试、写后检查与 .bak 回滚、高风险命令闸门、/behavior-status 遵守度统计。'

@@ -1,0 +1,6 @@
+url: https://github.com/3361805598-gif/dsh-workspace-archive
+name: 3361805598-gif/dsh-workspace-archive
+category: ui
+description:
+  en: 'Batch-archive or restore all conversations of a workspace from a sidebar panel or its row menu, hide a workspace from the sidebar once every conversation in it is archived, and pin workspaces to the top. Hiding never deletes logs, moves directories, or changes membership.'
+  zh: '在侧栏面板或会话行菜单里批量归档/恢复整个工作区的全部会话；工作区会话全部归档后从侧栏隐藏，恢复任一会话即重新出现；并支持工作区置顶。隐藏不删除日志、不移动目录、不改会话归属。'

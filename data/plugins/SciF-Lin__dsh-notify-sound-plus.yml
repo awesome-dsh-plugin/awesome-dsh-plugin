@@ -1,0 +1,7 @@
+url: https://github.com/SciF-Lin/dsh-notify-sound-plus
+name: SciF-Lin/dsh-notify-sound-plus
+category: notify
+tarball: https://github.com/SciF-Lin/dsh-notify-sound-plus/releases/latest/download/dsh-notify-sound-plus.tgz
+description:
+  en: 'Per-event sound alerts and system notifications for DeepSeek Harness. Four events — turn complete, question, approval and error — each get a switch, a sound picker with instant preview and a system-notification master switch. Nine built-in tones (four per-event defaults plus chime, bell, soft and alert, and a silent option) are synthesized at runtime with the Web Audio API, so no audio files ship with the package. A mode dropdown in General settings offers on, off and a smart mode that defers to the whale widget so the two never double up; the same row has a preview button and a gear opening a full settings dialog with volume, a skip-while-focused option and upload of your own audio up to 2 MB. A speaker button in the composer mutes sound without touching notifications. Works in the web GUI and the Electron desktop app.'
+  zh: 'DSH 逐事件提醒插件：任务完成 / 需要回答 / 需要授权 / 运行出错四类事件，各配一个开关、一个可即时试听的声音选择和一个系统通知总开关。内置 9 项音色（四个事件各自默认音，外加叮咚、铃音、轻柔、警示与静音各一），全部用 Web Audio 实时合成，不随包分发任何音频文件。通用设置那一行提供模式下拉（开启提醒 / 关闭提醒 / 智能判断，智能模式让开鲸鱼挂件已提醒的事件，避免重复），旁边有试听按钮与打开完整设置弹窗的齿轮；弹窗内含音量、前台运行时不提醒，以及上传自定义音频（单个不超过 2MB）。对话输入框左下角的喇叭可临时静音声音而不影响系统通知。网页端与桌面端（Electron）均可用。'

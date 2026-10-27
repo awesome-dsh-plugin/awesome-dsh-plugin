@@ -1,0 +1,6 @@
+url: https://github.com/MiraculousGarfield/dsh-ops-health
+name: MiraculousGarfield/dsh-ops-health
+category: dev
+description:
+  en: 'One-click health check for the DSH Web GUI: a sidebar button runs the ops kit''s check-health.ps1 through a plain HTTP route (independent of the tool registry) and renders a structured report card; colors follow the active theme, Windows/PowerShell.'
+  zh: 一键健康检查：侧边栏按钮经纯 HTTP 路由（独立于工具注册表）调用 check-health.ps1 并渲染结构化报告卡片；配色跟随当前主题，Windows/PowerShell。

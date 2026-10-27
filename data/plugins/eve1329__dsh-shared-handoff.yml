@@ -1,0 +1,6 @@
+url: https://github.com/eve1329/dsh-shared-handoff
+name: eve1329/dsh-shared-handoff
+category: skill
+description:
+  en: 'dsh port of the shared handoff kit: handoff and task-id-bootstrap skills plus host-side automation — baseline state injection, per-turn snapshots with an Auto Log trail, task=<id> routing, continuation re-injection, a compaction guard with clear-required alerts, and read-only subagent handling — all writing the same .agents/state/ as the Codex, Claude, and pi editions for one-repo multi-agent handoff.'
+  zh: '共享交接套件的 dsh 版:handoff 与 task-id-bootstrap 技能 + host 侧自动化——基线状态注入、每轮快照与 Auto Log 轨迹、task=<id> 路由、续接关键词重注入、达阈值报警的压缩守护、子代理只读保护;与 Codex、Claude、pi 版写同一份 .agents/state/,一个仓库多代理共享交接。'

@@ -1,0 +1,6 @@
+url: https://github.com/e2mcc/dsh-popout-sidebar
+name: e2mcc/dsh-popout-sidebar
+category: ui
+description:
+  en: 'Pop-out sidebar: lists artifacts and a file tree with multiple preview formats, pops out into a separate browser tab you can drag to another monitor, and coexists with other sidebar plugins simultaneously.'
+  zh: 可弹出式侧边栏：侧边栏展示产物与文件树，支持多种文件预览形式；并可弹出为独立浏览器标签页（可拖至另一显示器）；兼容其他sidebar插件，可以同时显示。

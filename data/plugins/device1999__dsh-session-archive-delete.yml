@@ -1,0 +1,6 @@
+url: https://github.com/device1999/dsh-session-archive-delete
+name: device1999/dsh-session-archive-delete
+category: session
+description:
+  en: 'Adds backup-then-delete and delete-only actions to the DSH session menu: the session directory, its projection cache and a metadata snapshot are copied to a local archive folder and checked file by file, then the originals are deleted to free disk space; subagent sessions it spawned are handled in the same run, and each backup folder keeps a RESTORE.txt with recovery steps.'
+  zh: '给 DSH 会话「…」菜单加「备份删除」与「彻底删除」两个入口：先把会话目录、投影缓存和元数据快照复制到本地归档文件夹并逐文件校验，通过后再删除原件以释放磁盘空间；派生的子代理会话一并处理，每个备份文件夹都带 RESTORE.txt 恢复步骤。'

@@ -1,0 +1,6 @@
+url: https://github.com/copylee711/dsh-academic
+name: copylee711/dsh-academic
+category: tools
+description:
+  en: 'Academic tools in TypeScript, no Python or MCP server: the Zotero library through its local API or zotero.org (search, annotations, full text, citation export; add by DOI / arXiv id, notes and tags when writing is turned on), starting Zotero when it is closed; paper search across arXiv, OpenAlex, Crossref, Semantic Scholar, PubMed and Europe PMC, plus CNKI and Google Scholar through a browser window; open-access full text, citations from the DOI registry, reference checking; 11 bundled skills.'
+  zh: '学术工具，TypeScript 实现，不需要 Python 或 MCP 服务：通过本地 API 或 zotero.org 访问 Zotero 文库（检索、批注、全文、导出引文；开启写入后可按 DOI / arXiv 编号入库、写笔记、改标签），Zotero 没开时自动启动；同时检索 arXiv、OpenAlex、Crossref、Semantic Scholar、PubMed、Europe PMC，并通过浏览器窗口检索知网和 Google Scholar；阅读开放获取全文、从 DOI 注册机构取引文、核验参考文献；内置 11 个学术技能。'

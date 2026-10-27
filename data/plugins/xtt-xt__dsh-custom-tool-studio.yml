@@ -1,0 +1,7 @@
+url: https://github.com/xtt-xt/dsh-custom-tool-studio
+name: xtt-xt/dsh-custom-tool-studio
+category: tools
+description:
+  en: 'Author Python tools in a web page or through an agent tool and register them as DSH tools without a restart; dangerous tools need built-in approval on every run, tools can be grouped into packs, and an optional unlock mode exposes them per conversation. Needs Python 3 on PATH.'
+  zh: 在网页或对话里编写 Python 工具，保存后免重启注册成 DSH 工具；危险工具每次执行都走内置审批，工具可分组成包，还可选「解锁模式」按对话逐步放出。需 PATH 中有 Python 3。
+tarball: https://github.com/xtt-xt/dsh-custom-tool-studio/releases/latest/download/dsh-custom-tool-studio.tgz

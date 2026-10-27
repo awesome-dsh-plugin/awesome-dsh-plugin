@@ -1,0 +1,6 @@
+url: https://github.com/ianho7/dsh-port-inspector
+name: ianho7/dsh-port-inspector
+category: dev
+description:
+  en: Track the origin of local development ports on Windows and safely manage verified DSH services.
+  zh: Windows 本地开发端口来源追踪与安全处理工具。

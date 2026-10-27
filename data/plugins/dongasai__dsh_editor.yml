@@ -1,0 +1,6 @@
+url: https://github.com/dongasai/dsh_editor
+name: dongasai/dsh_editor
+category: ui
+description:
+  en: 'The writable half of the right-sidebar document preview: edit and save any text file in place. Every save carries the version that was opened, so when the file changed on disk during the edit it stops and asks instead of overwriting. The preview toolbar gains an edit button and a two-step delete button. A separate File editor sidebar tool brings its own file tree: create, rename or move, copy, cut and paste (including a file taken from the system clipboard), delete, and drag to reorganize. Two renderer bands cover 107 plain-text, config and source extensions; the second is offered only as an open-with choice, leaving the shipped Markdown and highlighted-code views as the default. Mutations run through the plugin own trusted host routes, behind the connection fence, the workspace containment check and the sandbox policy.'
+  zh: '右侧栏文档预览的可写一半：编辑并原地保存任意文本文件。每次保存都带上「打开时的那一版」，编辑期间磁盘上的文件被改过就停下来问，不静默覆盖；预览工具栏多出「编辑」按钮和两步确认的「删除」按钮。另有一个「文件编辑」侧栏工具，自带文件树：新建、改名 / 移动、复制 / 剪切 / 粘贴（含把系统剪贴板里的文件粘进工作区）、删除、拖拽整理。两档文档渲染器共覆盖 107 个纯文本、配置与源码扩展名，其中第二档只作为「打开方式」出现，官方 Markdown 排版与代码高亮仍是默认视图。变更走插件自己的 Host 路由，过连接信任围栏、工作区包含性检查与沙箱策略三道闸。'

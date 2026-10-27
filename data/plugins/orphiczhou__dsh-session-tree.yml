@@ -1,0 +1,6 @@
+url: https://github.com/orphiczhou/dsh-session-tree
+name: orphiczhou/dsh-session-tree
+category: ui
+description:
+  en: "Replaces the left sidebar session list with a tree of every session and its nested subagent descendants, with click-through to each conversation's multi-turn history and a tree_send tool for messaging any continuable session anywhere in the tree."
+  zh: "把左侧栏的会话列表替换为完整会话树：展示全部会话及其多层子智能体，点击节点即可进入该会话的多轮对话；并附带 tree_send 工具，可向树中任意可续接的子会话投递消息。"

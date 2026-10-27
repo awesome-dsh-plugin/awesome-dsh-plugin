@@ -1,0 +1,6 @@
+url: https://github.com/zhouxin121/project-cross-migration
+name: zhouxin121/project-cross-migration
+category: skill
+description:
+  en: 'Registers the project-cross-migration skill for DSH: five-layer agent project migration (conversations, memory, persona, tools, environment) with entry validation, JSONL integrity checks and readable restore. 1,418-message real migration verified across three platforms; pure Python stdlib, MIT.'
+  zh: '为 DSH 注册 project-cross-migration 技能：对话/记忆/人格/工具/环境五层迁移，含入口校验、JSONL 完整性检查与可读还原。三平台 1418 条消息真实迁移实测；纯 Python 标准库，MIT。'

@@ -1,0 +1,6 @@
+url: https://github.com/liaoyonghong/dsh-workspace-api
+name: liaoyonghong/dsh-workspace-api
+category: dev
+description:
+  en: 'Exposes the DSH workspace as an HTTP API: browse, search and read files, and run natural-language agent tasks that answer with cited sources.'
+  zh: '把 DSH 工作区暴露为 HTTP API：浏览/搜索/读取文件，并支持自然语言任务（agent 查阅文档后带出处回答）。'

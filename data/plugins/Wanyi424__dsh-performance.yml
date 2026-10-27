@@ -1,0 +1,7 @@
+url: https://github.com/Wanyi424/dsh-performance
+name: Wanyi424/dsh-performance
+category: dev
+description:
+  en: 'Monitor CPU, memory, and UI responsiveness in DSH on Windows x64, inspect processes and sampled backend plugin resource usage, and copy diagnostic reports.'
+  zh: '查看 DSH 的 CPU、内存和界面响应，分析进程占用与后台插件采样数据，并复制诊断报告。支持 Windows x64。'
+tarball: https://github.com/Wanyi424/dsh-performance/releases/latest/download/dsh-performance.tgz

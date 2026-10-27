@@ -1,0 +1,6 @@
+url: https://github.com/Bob-Bo1/dsh-stock-watch
+name: Bob-Bo1/dsh-stock-watch
+category: fun
+description:
+  en: 'Local-first A-share portfolio and watchlist monitor for DSH: sidebar quotes, holdings P&L, browser add/edit/delete, and JSON persistence.'
+  zh: 'DSH 本地优先的 A 股持仓与自选监控：侧栏行情、持仓盈亏，以及网页添加、修改、删除和 JSON 保存。'

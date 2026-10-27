@@ -1,0 +1,6 @@
+url: https://github.com/AngleZhang-ZhangJiao/dsh-orchestrator2/tree/main/plugins/dsh-orchestrator2
+name: AngleZhang-ZhangJiao/dsh-orchestrator2#dsh-orchestrator2
+category: workflow
+description:
+  en: 'Agent preset: one session runs a three-phase auto-development pipeline — interactive design with parallel research subagents, goal-driven development with reviewer/developer subagents and per-package budget ledgers, then an acceptance fix loop.'
+  zh: 'Agent 预设：单会话跑三阶段自动开发流水线——并行研究员子代理交互设计、goal 驱动审核/开发子代理开发（按包预算台账硬上限）、验收修复循环。'

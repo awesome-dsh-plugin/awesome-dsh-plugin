@@ -1,0 +1,7 @@
+url: https://github.com/gulagala001/dsh-extensions
+name: gulagala001/dsh-extensions
+category: skill
+description:
+  en: "Manage skills, MCP servers, instruction files, custom commands and hooks."
+  zh: "管理 Skill、MCP 服务器、指令文件、自定义命令和 Hooks。"
+tarball: https://github.com/gulagala001/dsh-extensions/releases/download/v0.1.2-dsh.0.2.1-rc.3/dsh-extensions-0.1.2-dsh.0.2.1-rc.3.tgz

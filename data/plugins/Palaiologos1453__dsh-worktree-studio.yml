@@ -1,0 +1,7 @@
+url: https://github.com/Palaiologos1453/dsh-worktree-studio
+name: Palaiologos1453/dsh-worktree-studio
+tarball: https://github.com/Palaiologos1453/dsh-worktree-studio/releases/download/v0.1.1/dsh-worktree-studio-0.1.1.tgz
+category: git
+description:
+  en: Human-operated Git worktree task board for DeepSeek Harness with validation-bound merge delivery.
+  zh: 面向 DeepSeek Harness 的人工 Git worktree 任务工作台，将验证结果绑定到合并交付。

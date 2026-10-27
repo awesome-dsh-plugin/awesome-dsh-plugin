@@ -1,0 +1,7 @@
+url: https://github.com/18569663yz-web/dsh-plugin-crypto-ticker
+name: 18569663yz-web/dsh-plugin-crypto-ticker
+category: ui
+description:
+  en: 'A live crypto ticker card in the DeepSeek Harness sidebar footer, above the balance and Settings, showing BTC, ETH, SOL and JUP prices, 24-hour change and 24-point sparklines, with a pulse on each price tick, zero dependencies and no API key.'
+  zh: 'DSH 侧边栏左下角的实时加密货币行情卡片，位于余额与设置上方，显示 BTC、ETH、SOL、JUP 的价格、24 小时涨跌幅与 24 点迷你走势图，价格跳动时有脉冲反馈，零依赖、免密钥。'
+tarball: https://github.com/18569663yz-web/dsh-plugin-crypto-ticker/releases/download/v0.1.0/dsh-plugin-crypto-ticker-0.1.0.tgz

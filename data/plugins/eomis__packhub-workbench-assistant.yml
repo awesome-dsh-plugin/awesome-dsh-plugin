@@ -1,0 +1,7 @@
+url: https://github.com/eomis/packhub-workbench-assistant
+name: eomis/packhub-workbench-assistant
+category: ui
+description:
+  en: 'Adds quick installation and switching for workbench templates in DSH Desktop.'
+  zh: '为 DSH Desktop 提供工作台模板的快捷安装与切换。'
+tarball: https://github.com/eomis/packhub-workbench-assistant/releases/latest/download/packhub-workbench-assistant.tgz

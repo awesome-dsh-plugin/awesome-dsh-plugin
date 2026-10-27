@@ -1,0 +1,6 @@
+url: https://github.com/Shiyuedong-Jade/DM-recovery
+name: Shiyuedong-Jade/DM-recovery
+category: tools
+description:
+  en: Read-only assessment of whether a Dameng DM8 database can be recovered and to which point (LSN or time), across 16 recovery scenarios, with an HTML report. Needs Java 8+ and a Dameng JDBC driver jar (DmJdbcDriver8.jar) that you provide yourself.
+  zh: 只读评估达梦 DM8 数据库的可恢复能力：16 类恢复场景下能恢复到哪一点（LSN/时间）、要丢什么，并生成 HTML 报告。需 Java 8+，并自备达梦 DmJdbcDriver8.jar。

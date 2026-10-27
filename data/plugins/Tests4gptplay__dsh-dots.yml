@@ -1,0 +1,8 @@
+url: https://github.com/Tests4gptplay/dsh-dots
+name: Tests4gptplay/dsh-dots
+category: browser
+icon: https://raw.githubusercontent.com/Tests4gptplay/dsh-dots/main/assets/dots-market-icon.png
+tarball: https://github.com/Tests4gptplay/dsh-dots/releases/download/v1.0.9/dsh-dots-1.0.9.tgz
+description:
+  en: "Open ChatGPT Dots in a native DSH page: Desktop preloads it in the background and keeps the same page alive across panel switches, with a theme-aware toolbar, reload and external-browser controls."
+  zh: "在 DSH 原生页面中打开 ChatGPT Dots：Desktop 启动后台预加载，切换面板时保留同一个页面，并提供随主题适配的工具栏、刷新和外部浏览器入口。"

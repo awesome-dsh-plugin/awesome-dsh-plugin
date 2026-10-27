@@ -1,0 +1,6 @@
+url: https://github.com/Jaylor-Wang/dsh-tool-lsp
+name: Jaylor-Wang/dsh-tool-lsp
+category: tools
+description:
+  en: 'LSP action surface for DeepSeek Harness providing diagnostics, formatting, rename, code actions, and symbols over real language servers.'
+  zh: 'DeepSeek Harness 的通用 LSP 工具面，提供语言服务器诊断、格式化、重命名、代码动作与符号导航。'

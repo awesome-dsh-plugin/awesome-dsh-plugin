@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-cost-meter
+name: GooDAnDReaDY/dsh-cost-meter
+category: usage
+description:
+  en: "Session cost chip in the DeepSeek Harness conversation header showing live token usage by bucket, peak/off-peak tariff pricing, and a countdown to the next tariff switch."
+  zh: "在 DeepSeek Harness 对话标题栏显示会话费用芯片：实时分桶 Token 用量、高峰/非高峰费率，以及到下次费率切换的倒计时。"

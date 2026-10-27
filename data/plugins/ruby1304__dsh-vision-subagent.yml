@@ -1,0 +1,6 @@
+url: https://github.com/ruby1304/dsh-vision-subagent
+name: ruby1304/dsh-vision-subagent
+category: vision
+description:
+  en: 'Vision for any DSH route: paste images in the Web composer with intent-aware auto-analysis, delegate workspace image reads to a Kimi/MiniMax vision subagent, and materialize pasted originals for editing.'
+  zh: '为任意 DSH 路由装上眼睛：Web 输入框贴图按意图自动聚焦分析，视觉子代理代读工作区图片，原图可随时物化编辑。'

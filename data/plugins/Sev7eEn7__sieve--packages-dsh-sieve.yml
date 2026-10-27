@@ -1,0 +1,7 @@
+url: https://github.com/Sev7eEn7/sieve/tree/main/packages/dsh-sieve
+name: Sev7eEn7/sieve#dsh-sieve
+category: session
+description:
+  en: "Filters tool outputs, prunes stale context and discloses skills on demand for DSH 0.2.1-alpha.1."
+  zh: "为 DSH 0.2.1-alpha.1 过滤工具输出、裁剪陈旧上下文并按需披露技能。"
+tarball: https://github.com/Sev7eEn7/sieve/releases/download/v0.1.0/dsh-sieve-0.1.0.tgz

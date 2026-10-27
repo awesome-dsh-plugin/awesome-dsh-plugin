@@ -1,0 +1,6 @@
+url: https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/search
+name: hyzyn/dsh-plugin-kit#search
+category: session
+description:
+  en: 'Full-text global search for the DSH Web GUI: a sidebar search box that searches history sessions (via the sessionQuery index, with a per-session scan fallback) and settings panels, highlights matches, and jumps to the matching session or settings card.'
+  zh: 'DSH Web GUI 的全局搜索插件：侧边栏全局搜索框全文搜索历史会话（走 sessionQuery 全文索引，未启用时降级为逐会话扫描）与设置面板，关键词高亮，点击直达会话或对应设置卡片。'

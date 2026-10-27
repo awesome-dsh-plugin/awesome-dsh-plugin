@@ -1,0 +1,6 @@
+url: https://github.com/AhaCrazy/dsh-action-hub
+name: AhaCrazy/dsh-action-hub
+category: skill
+description:
+  en: 'A standard Agent Skill library for DSH. Each SKILL.md can run as a model-invocable Skill or a user-only Command; groups and project scopes choose availability, the palette inserts or expands entries, and import/export keep the standard directory format.'
+  zh: '面向 DSH 的标准 Agent Skill 库。同一份 SKILL.md 可作为模型调用的 Skill 或仅由用户调用的 Command；通过分组与项目范围控制可用性，面板负责插入或展开内容，导入导出保持标准目录格式。'

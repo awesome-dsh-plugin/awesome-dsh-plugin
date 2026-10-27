@@ -1,0 +1,6 @@
+url: https://github.com/callmesoul/deepseek-kanban-plugin
+name: callmesoul/deepseek-kanban-plugin
+category: workflow
+description:
+  en: 'Kanban board for DSH: task state machine with git branch isolation, agent auto-execution, and review-driven merge.'
+  zh: DSH 任务看板：任务状态机 + git 分支隔离，agent 自动执行、审核后自动合并回基础分支。

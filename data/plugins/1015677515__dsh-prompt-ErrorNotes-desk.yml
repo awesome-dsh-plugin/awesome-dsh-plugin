@@ -1,0 +1,6 @@
+url: https://github.com/1015677515/dsh-prompt-ErrorNotes-desk
+name: 1015677515/dsh-prompt-ErrorNotes-desk
+category: memory
+description:
+  en: 'Captures the agent''s own self-reported mistakes into a categorised lesson library that is re-injected into the system prompt every turn (each captured draft is confirmed or edited by the user before it is recorded), and adds two conversation-header panels for editing the cross-conversation global prompt and a per-session prompt.'
+  zh: '把 agent 自报的错误收进分类经验库，并每轮回注系统提示词（每条草稿都先经用户确认或修改）；同时在对话标题栏提供两个面板，用于编辑跨对话全局提示词与本次对话提示词。'

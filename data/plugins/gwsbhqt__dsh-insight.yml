@@ -1,0 +1,7 @@
+url: https://github.com/gwsbhqt/dsh-insight
+name: gwsbhqt/dsh-insight
+category: dev
+description:
+  en: 'Read-only insight panel for one profile: five views over the same data — config layers, plugin tree, services, tool names and models — each entry showing which layer inserted or disabled it and whether it is running.'
+  zh: 只读的 profile 洞察面板：同一份数据的五个视图——配置层、插件树、服务、工具名、模型，每一条都给出被哪一层插入或禁用、此刻在不在跑。
+tarball: https://github.com/gwsbhqt/dsh-insight/releases/latest/download/dsh-insight.tgz

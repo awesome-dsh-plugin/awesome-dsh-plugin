@@ -1,0 +1,7 @@
+url: https://github.com/Nihao7-L/dsh-prompt-chain
+name: Nihao7-L/dsh-prompt-chain
+category: ui
+description:
+  en: One-click prompt rewriting in the composer with up to 5 continue rounds, two regenerate modes, automatic version history with jump-back, line-by-line diff, and a customisable button icon.
+  zh: 输入框一键改写提示词，最多 5 轮继续生成，两种重新生成口径，自动存档历史可回退，逐行差异对比，按钮图标可自定。
+tarball: https://github.com/Nihao7-L/dsh-prompt-chain/releases/latest/download/dsh-prompt-chain.tgz

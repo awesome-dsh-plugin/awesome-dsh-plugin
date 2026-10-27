@@ -1,0 +1,6 @@
+url: https://github.com/xiazhi88/dshgo
+name: xiazhi88/dshgo
+category: remote
+description:
+  en: 'Proxies the loopback-only dsh web onto a LAN port so phones and other machines can reach it, with an optional access password that browsers type in and the bundled Android client unlocks with biometrics. Adds a LAN-access settings page with QR codes, inlines dsh-web-mobile (MIT, attribution kept) for the mobile layout, and the Android client in the same repository adds finish/approval notifications, voice input and a home-screen widget.'
+  zh: '把只监听 127.0.0.1 的 dsh web 转发到局域网端口，供手机等设备访问；可选访问密码——浏览器输入，同仓库的 Android 客户端用指纹或面部解锁。新增带二维码的「局域网访问」设置页，内联 dsh-web-mobile（MIT，保留署名）提供移动端布局；Android 客户端另加完成/审批通知、语音输入与主屏小组件。'

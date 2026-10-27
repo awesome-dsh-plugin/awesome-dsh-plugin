@@ -1,0 +1,6 @@
+url: https://github.com/WhatCannotBeSaid/EVA-Inspired-Theme
+name: WhatCannotBeSaid/EVA-Inspired-Theme
+category: theme
+description:
+  en: 'A Neon Genesis Evangelion-inspired skin for DeepSeek Harness: Title Card (light) and Central Dogma (dark) modes over one removable override layer, 55 measured color tokens, a wallpaper paint layer whose two surface alphas are solved against a WCAG contrast budget, a boot mask and a brand mark. It also rewrites the sidebar identity line, replaces the new-session heading, hides six official entries, and reshapes the composer control row. Unofficial fan work, non-commercial: the background pictures are fetched from third-party URLs at paint time, not shipped in the repository.'
+  zh: '基于《新世纪福音战士》的 DeepSeek Harness 皮肤：Title Card（亮色）与 Central Dogma（暗色）两套完整模式叠在一层可移除的覆盖层上，55 个实测色值，壁纸绘制层的两个表面 alpha 按 WCAG 对比度预算求解，另有开机遮罩与品牌标记。它还改写侧栏身份行、替换新会话页的标题、隐藏六处官方入口，并重排会话框控件行。非官方同人作品、非商业用途：背景图在绘制时从第三方 URL 拉取，不随仓库分发。'

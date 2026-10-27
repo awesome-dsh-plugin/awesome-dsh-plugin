@@ -1,0 +1,6 @@
+url: https://github.com/sanser9/dsh-opencode-connect
+name: sanser9/dsh-opencode-connect
+category: model
+description:
+  en: 'Brings the free models of a locally installed OpenCode CLI into DSH: starts or reuses a local opencode serve, discovers the live catalog and refreshes it every five minutes, and bridges the session event stream to OpenAI-compatible SSE through a loopback-only shim that validates Host and Origin.'
+  zh: '把本机已安装的 OpenCode CLI 免费模型接入 DSH：自动拉起或复用本地 opencode serve，读取实时模型目录并每五分钟刷新，再通过仅绑定回环、校验 Host 与 Origin 的 shim 把会话事件流转换为 OpenAI 兼容 SSE。'

@@ -1,0 +1,7 @@
+url: https://github.com/Tim5613/dsh-homepage-glass
+name: Tim5613/dsh-homepage-glass
+category: theme
+tarball: https://github.com/Tim5613/dsh-homepage-glass/releases/download/v1.3.1/dsh-homepage-glass-1.3.1.tgz
+description:
+  en: 'Fixed deep-blue gradient sidebar for the DSH Web UI plus three light-mode content backdrops (native white, a flowing blue WebGL shader ported from the deepseek.com homepage, or a muted blue), and brand-blue token overrides.'
+  zh: 'DSH Web 界面的固定深蓝渐变侧边栏（不跟随浅色/深色），外加浅色模式下的三档内容区底色（原生白 / 移植自 deepseek.com 首页的 WebGL 流动蓝 / 雾蓝），并覆盖品牌蓝 token。'

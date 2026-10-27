@@ -1,0 +1,6 @@
+url: https://github.com/zhuzichen362/dsh-call-shrink
+name: zhuzichen362/dsh-call-shrink
+category: usage
+description:
+  en: "Extreme LLM-call compression for DeepSeek Harness: title short-circuit, in-flight dedup, 24h replay cache, and batch-merging N parallel requests into 1 upstream call via a `[[TASK n]]`/`[[ANSWER n]]` delimiter protocol - fewer API calls, less spend, same answers."
+  zh: "DeepSeek Harness 的极端 LLM 调用压缩：标题生成短路、飞行中请求去重、24 小时回放缓存，并用 `[[TASK n]]`/`[[ANSWER n]]` 分隔协议把 N 个并行请求批量合并为 1 次上游调用——更少 API 调用、更低开销、相同答案。"

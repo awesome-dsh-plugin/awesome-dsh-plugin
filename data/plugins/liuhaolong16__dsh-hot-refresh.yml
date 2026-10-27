@@ -1,0 +1,6 @@
+url: https://github.com/liuhaolong16/dsh-hot-refresh
+name: liuhaolong16/dsh-hot-refresh
+category: dev
+description:
+  en: 'Panel entry for the official client-plugin hot reload that tells you what actually changed first: it diffs each row rev against the last seen state and reloads only the plugin bundles that changed, keeps whole-graph reloads behind an explicit confirmation (a bare call is refused and reports the affected row count), and reports replay counters so a silent no-op cannot hide.'
+  zh: '把官方客户端插件热重载做成面板入口，并且先告诉你「到底变了什么」：比对每行 rev 与上次所见后只重载 bundle 变化的那几个插件；整图重载必须显式二次确认（不带参数会被拒绝并回报受影响行数）；同时暴露重放计数，让「点了没反应」无法被静默掩盖。'

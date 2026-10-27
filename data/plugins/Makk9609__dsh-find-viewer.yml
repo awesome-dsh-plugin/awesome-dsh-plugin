@@ -1,0 +1,6 @@
+url: https://github.com/Makk9609/dsh-find-viewer
+name: Makk9609/dsh-find-viewer
+category: ui
+description:
+  en: Find bar in the sidebar text preview, with whole-file match counts for plain text and code, highlighted hits, and jumps between them.
+  zh: 侧边栏文本预览的查找栏：纯文本与代码按整份文件计数，命中高亮并可逐处跳转。

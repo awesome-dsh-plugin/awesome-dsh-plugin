@@ -1,0 +1,7 @@
+url: https://github.com/lingr7/dsh-reversed-chat
+name: lingr7/dsh-reversed-chat
+category: ui
+description:
+  en: Moves the composer to the top of an active conversation and renders the transcript plus the turn navigator newest-first, so replies appear right under the composer.
+  zh: 把活跃会话的输入框固定在视口顶部，转写列表与右侧回合导航按最新在上渲染，新回复紧贴输入框出现。
+icon: https://raw.githubusercontent.com/lingr7/dsh-reversed-chat/main/assets/icon-180.png

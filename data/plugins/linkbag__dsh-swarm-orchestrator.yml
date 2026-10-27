@@ -1,0 +1,6 @@
+url: https://github.com/linkbag/dsh-swarm-orchestrator
+name: linkbag/dsh-swarm-orchestrator
+category: workflow
+description:
+  en: "Role-based AI swarms for DeepSeek Harness: an architect plans, parallel builders execute, reviewers gate quality, and an integrator ships. Per-role model pinning with fallback chains, review loops, evidence contracts, human-gated reviews, quota-aware pause/resume, and a live kanban + flow chart in the web GUI. 40 tests; installs from GitHub or npm."
+  zh: "DeepSeek Harness 的角色化 AI 蜂群：架构师规划、多个建造者并行执行、评审代理把关、集成代理收尾。按角色钉选模型（含回退链），支持评审循环、证据合约、人工评审门、配额耗尽自动暂停与恢复，Web GUI 内置实时看板与任务流程图。40 个测试用例；支持 GitHub 或 npm 安装。"

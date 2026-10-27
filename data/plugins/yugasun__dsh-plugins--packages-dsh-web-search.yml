@@ -1,0 +1,6 @@
+url: https://github.com/yugasun/dsh-plugins/tree/main/packages/dsh-web-search
+name: yugasun/dsh-plugins#dsh-web-search
+category: browser
+description:
+  en: Registers Baidu, Doubao, Tavily, and Exa backends into ctx.web so official web_search can use them, and routes web_fetch through Tavily Extract or Exa Contents when that backend is active.
+  zh: 向 ctx.web 注册百度、豆包、Tavily、Exa 后端供官方 web_search 使用，并在 Tavily 或 Exa 生效时将 web_fetch 转到对应提取接口。

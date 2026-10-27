@@ -1,0 +1,6 @@
+url: https://github.com/anonamerjaxon-dev/dsh-preset-inspector
+name: anonamerjaxon-dev/dsh-preset-inspector
+category: tools
+description:
+  en: 'Read-only inventory of every agent preset for the Web GUI, with a matrix of which preset holds which tools, MCP servers and skills, plus CLIs that move a plugin between presets.'
+  zh: '面向 Web GUI 的 agent 预设只读清单：以矩阵展示每个预设包含哪些工具、MCP 服务器与技能，并提供在预设间迁移插件的命令行工具。'

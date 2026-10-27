@@ -1,0 +1,6 @@
+url: https://github.com/MingShi350/kiwix-wiki
+name: MingShi350/kiwix-wiki
+category: tools
+description:
+  en: 'Offline Wikipedia and ZIM lookups through your own kiwix-serve: the wiki_search, wiki_read and wiki_books tools run full-text search with snippets, read an article by exact title, and list the local ZIM library.'
+  zh: '通过你自己运行的 kiwix-serve 离线查询维基百科等 ZIM 数据包：wiki_search / wiki_read / wiki_books 三个工具分别做带摘要片段的全文搜索、按精确标题读取全文、列出本地 ZIM 书库。'

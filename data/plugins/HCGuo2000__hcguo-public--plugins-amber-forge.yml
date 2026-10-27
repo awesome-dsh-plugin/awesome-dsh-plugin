@@ -1,0 +1,6 @@
+url: https://github.com/HCGuo2000/hcguo-public/tree/main/plugins/amber-forge
+name: HCGuo2000/hcguo-public#amber-forge
+category: theme
+description:
+  en: 'Amber CRT-style skin for DeepSeek Harness: overrides 14 theme tokens and 23 static palette entries, forces a monospace font stack everywhere outside KaTeX math, adds scanlines and a screen vignette, replaces the brand emblem with an inner SVG gear-and-skull mark whose corners are transparent, rewrites the new-session slogan, and raises the agent-preset selector width by 10%.'
+  zh: 'DeepSeek Harness 的琥珀 CRT 风格皮肤：覆写 14 枚主题令牌与 23 枚静态调色板色值，在 KaTeX 公式之外将全站字体统一为等宽，叠加扫描线与屏幕暗角，以内嵌 SVG 齿轮骷髅圣徽（圆外透明）替代默认品牌标记，改写新会话口号，并把模式选择器长度上调 10%。'

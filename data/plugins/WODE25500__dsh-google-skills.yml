@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-google-skills
+name: WODE25500/dsh-google-skills
+category: skill
+description:
+  en: "Google's Agent Skills (google/skills) for DeepSeek Harness: 128 bundled SKILL.md skills for Google Cloud, BigQuery, GKE, Gemini, Firebase, ads and analytics."
+  zh: "Google 的 Agent Skills(google/skills)for DeepSeek Harness：128 个打包的 SKILL.md 技能，覆盖 Google Cloud、BigQuery、GKE、Gemini、Firebase、广告与分析。"

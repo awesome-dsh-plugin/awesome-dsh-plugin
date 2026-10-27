@@ -1,0 +1,6 @@
+url: https://github.com/bauerelizabeth07139/opencode-eyes
+name: bauerelizabeth07139/opencode-eyes
+category: vision
+description:
+  en: 'Eyes for text-only models: mounts the bundled stdio MCP server as mcp__opencode_eyes__describe_image, which sends an image file to StepFun step-3.7-flash and returns a detailed description.'
+  zh: '给不具备多模态能力的模型一双眼睛:把随插件分发的 stdio MCP 服务器挂成 mcp__opencode_eyes__describe_image,把图片交给 StepFun step-3.7-flash 并返回详细描述。'

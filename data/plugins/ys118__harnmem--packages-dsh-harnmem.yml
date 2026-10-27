@@ -1,0 +1,6 @@
+url: https://github.com/ys118/harnmem/tree/master/packages/dsh-harnmem
+name: ys118/harnmem#dsh-harnmem
+category: memory
+description:
+  en: 'Cross-harness agent memory for DSH: one plain-file store shared by the DSH and pi adapters and the harnmem CLI, so a memory written in one harness is available in another; injected as a byte-stable hot index, with five harnmem_* tools, session-end extraction, and a read-only memory browser panel.'
+  zh: 'DSH 跨 harness 全局记忆：DSH、pi 适配器与 harnmem CLI 共享同一份本地纯文件记忆库，在一个 harness 写入的记忆在另一个 harness 可用；以字节稳定的热索引注入系统提示，提供五个 harnmem_* 工具、会话结束记忆提取与只读记忆浏览面板。'

@@ -1,0 +1,6 @@
+url: https://github.com/AbcdefgXW/dsh-msg-hub
+name: AbcdefgXW/dsh-msg-hub
+category: notify
+description:
+  en: 'IM channel bridge: WeChat (ilinkai) / QQ / Feishu with proactive push — wake the channel bot from scheduled tasks and deliver AI replies to your phone.'
+  zh: IM 渠道桥：微信（ilinkai）/ QQ / 飞书接入，支持主动推送——定时任务可唤醒渠道 bot 并把 AI 回复推送到手机。

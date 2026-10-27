@@ -1,0 +1,7 @@
+url: https://github.com/ZilongYang/dsh-session-mng
+name: ZilongYang/dsh-session-mng
+category: session
+description:
+  en: 'One Settings page for every DeepSeek Harness session: browse active and archived sessions by workspace, generate a title from the whole conversation for live or archived sessions, archive or restore, move a cold session to another workspace, and permanently delete an archived session (with its subagent descendants after confirmation).'
+  zh: '在设置里管理全部 DeepSeek Harness 会话：按工作区分组浏览活跃与已归档会话，为活跃或已归档会话按整段对话生成标题，归档/恢复，把冷会话移动到其他工作区，并在确认后彻底删除已归档会话（含其子代理会话）。'
+icon: https://raw.githubusercontent.com/ZilongYang/dsh-session-mng/main/assets/icon-180.png

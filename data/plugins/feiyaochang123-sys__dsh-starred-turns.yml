@@ -1,0 +1,6 @@
+url: https://github.com/feiyaochang123-sys/dsh-starred-turns
+name: feiyaochang123-sys/dsh-starred-turns
+category: ui
+description:
+  en: "Right-click a dash in the conversation's right-edge turn rail to bookmark that turn: the dash grows to the rail's full width and takes the accent colour so it stays easy to find, and right-clicking again unbookmarks it. Bookmarks are scoped per conversation, keyed by the selected Session id, and persisted so they survive reloads. No layout shift - the rail keeps its fixed pitch."
+  zh: '在对话右侧轮次导航条上右键收藏某一轮：该短横线变为导航条满宽并换成强调色，便于之后一眼找到，再次右键取消。收藏按对话隔离（取当前选中会话 id）并持久保存，刷新后仍在；不引起布局跳动，导航条保持固定间距。'
