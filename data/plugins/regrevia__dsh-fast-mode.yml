@@ -4,16 +4,17 @@ category: usage
 description:
   en: >-
     Per-conversation fast mode for multi-step tasks that batches independent tool calls and
-    drops redundant steps. Pooled over 8 blocks and 128 valid paired runs it is about 19% less
-    total wall-clock time (0.809x, per-cell median 0.813x, 95% bootstrap interval 0.734-0.894)
-    and 15-30% faster on the shapes it fits (codeimpl median 0.709x, shellpipeline 0.844x),
-    with hidden tests still passing. Short repair tasks can be slower (debugfix median 1.183x,
-    but 0.651x in one later block), so try it once per task shape. The earlier "26-28%" claim
-    is retracted.
+    drops redundant steps. Pooled over 9 blocks and 132 valid paired runs it is about 18% less
+    total wall-clock time (0.825x, per-cell median 0.813x, 95% bootstrap interval 0.747-0.914)
+    and 15-25% faster on the shapes it fits (codeimpl median 0.709x, faster in 13 of 15 pairs;
+    shellpipeline median 0.844x), with hidden tests still passing. Short repairs and data
+    reshaping do not pay for the reminder (debugfix mean 1.287x with output 1.29x longer,
+    perfrefactor mean 1.140x), so try it once per task shape. The earlier "26-28%" claim is
+    retracted.
   zh: >-
-    单会话开关的快速模式，合并可并行的工具调用并减少冗余步骤。8 块 128 对有效配对的合池结果是
-    整任务总墙钟约快 19%（0.809×，逐格中位 0.813×，95% 自助区间 0.734–0.894），适合的形状快
-    15–30%（codeimpl 中位 0.709×、shellpipeline 0.844×），隐藏测试仍全绿。短改修任务可能更慢
-    （debugfix 中位 1.183×，但在后来一块里是 0.651×），所以按任务形状先试一次再定。
-    此前「约快 26%」的说法已撤回。
+    单会话开关的快速模式，合并可并行的工具调用并减少冗余步骤。9 块 132 对有效配对的合池结果是
+    整任务总墙钟约快 18%（0.825×，逐格中位 0.813×，95% 自助区间 0.747–0.914），适合的形状快
+    15–25%（codeimpl 中位 0.709×、15 对里 13 对更快；shellpipeline 中位 0.844×），隐藏测试仍
+    全绿。短改修与数据整形收不回提醒成本（debugfix 均值 1.287×、输出反而长 1.29×；
+    perfrefactor 均值 1.140×），所以按任务形状先试一次再定。此前「约快 26%」的说法已撤回。
 icon: https://raw.githubusercontent.com/regrevia/dsh-fast-mode/main/icon.png
