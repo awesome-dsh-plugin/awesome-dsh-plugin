@@ -1,0 +1,6 @@
+url: https://github.com/zeroed-07/dsh-memory-guard
+name: dsh-memory-guard
+category: dev
+description:
+  en: "Local-only memory guard for the DeepSeek Harness: host heap and session-log monitoring, oversized tool-argument interception, and dry-run by default session vacuum."
+  zh: "面向 DeepSeek Harness 的本地内存守护插件：监控 host 堆与会话日志体积、拦截超大工具参数，并提供默认 dry-run 的会话瘦身命令。"
