@@ -4,4 +4,4 @@ category: theme
 description:
   en: 'Claude-style dark and light skin for the DeepSeek panel of dsh-webchat: warm neutral palette, terracotta accents and Claude brand marks, applied as injected CSS with no guest DOM edits and no network requests.'
   zh: '为 dsh-webchat 的 DeepSeek 面板提供 Claude 风格深/浅色皮肤：暖中性色板、赤陶强调色与 Claude 品牌标识，以注入 CSS 实现，不修改访客页 DOM、不发网络请求。'
-tarball: https://github.com/dhdkfkfkf/dsh-deepseek-webchat-claude-skin/releases/download/v0.3.0/dsh-deepseek-webchat-claude-skin-0.3.0.tgz
+tarball: https://github.com/dhdkfkfkf/dsh-deepseek-webchat-claude-skin/releases/download/v0.3.1/dsh-deepseek-webchat-claude-skin-0.3.1.tgz
