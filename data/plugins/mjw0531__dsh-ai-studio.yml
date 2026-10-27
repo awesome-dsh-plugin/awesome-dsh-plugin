@@ -1,0 +1,7 @@
+url: https://github.com/mjw0531/dsh-ai-studio
+name: mjw0531/dsh-ai-studio
+category: workflow
+description:
+  en: 'Owner-facing AI studio for DeepSeek Harness: project roles, task acceptance, worktree-based agent runs, host verification, independent review, decision records, and human-triggered merges.'
+  zh: '面向项目所有者的 DeepSeek Harness AI 工作室：角色、任务验收、worktree 代理执行、Host 验证、独立评审、决策记录和人工触发合并。'
+tarball: https://github.com/mjw0531/dsh-ai-studio/releases/download/v2.5.3/dsh-ai-studio-2.5.3.tgz
