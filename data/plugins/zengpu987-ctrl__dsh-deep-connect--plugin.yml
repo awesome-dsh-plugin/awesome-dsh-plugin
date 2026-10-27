@@ -1,0 +1,6 @@
+url: https://github.com/zengpu987-ctrl/dsh-deep-connect/tree/main/plugin
+name: zengpu987-ctrl/dsh-deep-connect#plugin
+category: remote
+description:
+  en: 'Cross-device conversation and task sync for DSH: one machine generates a relay station and the others join with its invite link; every frame is end-to-end encrypted, so the relay routes a hashed channel it cannot read. Peers read each other''s full transcripts and task boards, interject into a turn that is running on the owning machine, send a work command that runs in a workspace of the target machine with the model strength chosen by the sender, and can copy a conversation into a new local session and keep working on it here. Ships a token-gated phone page for listing devices, reading tasks and sending a command.'
+  zh: '同账号多台 DSH 的会话与任务互通：一台机器生成中继站，其它机器用邀请链接加入；逐帧端到端加密，中继只路由哈希频道、读不到内容。对端可读完整对话与任务板，向拥有该会话的那台机器正在跑的一轮插话，按发送方选定的目标工作区与模型强度下发命令，也可把一条会话复制成本机新会话并继续在这里干活。另带令牌手机页，可查看设备、读取任务与下发命令。'
