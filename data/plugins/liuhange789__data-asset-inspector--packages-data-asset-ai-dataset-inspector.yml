@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/ai-dataset-inspector
+name: liuhange789/data-asset-inspector#ai-dataset-inspector
+category: tools
+description:
+  zh: "AI数据集质量巡检工具，自动检测数据集中的标注一致性、类别分布偏差与数据泄露风险。"
+  en: "AI dataset quality inspector for annotation consistency, class distribution bias and data leakage detection."
