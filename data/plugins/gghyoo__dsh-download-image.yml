@@ -1,7 +1,7 @@
-url: https://github.com/gghyoo/dsh-copy-image-menu
-name: gghyoo/dsh-copy-image-menu
+url: https://github.com/gghyoo/dsh-download-image
+name: gghyoo/dsh-download-image
 category: ui
 description:
   en: Adds a Download PNG button next to the assistant message copy button in the DSH Web UI.
   zh: 在 DSH Web UI 的助手消息复制按钮旁增加一个下载 PNG 按钮。
-icon: https://raw.githubusercontent.com/gghyoo/dsh-copy-image-menu/main/assets/icon-180.png
+icon: https://raw.githubusercontent.com/gghyoo/dsh-download-image/main/assets/icon-180.png
