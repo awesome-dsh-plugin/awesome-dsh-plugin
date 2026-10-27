@@ -1,0 +1,6 @@
+url: https://github.com/tdcq9594/dsh-roost
+name: tdcq9594/dsh-roost
+category: remote
+description:
+  en: 'Hosts QQ chats as DeepSeek Harness sessions: one QQ conversation maps to one DSH session that survives restarts, per-speaker tool permissions, three-layer memory with nightly consolidation, four-section personas, context compaction, a nine-page sidebar panel, and a setup wizard that installs the Roost kernel and ai-chat plugin.'
+  zh: '把 QQ 会话接进 DeepSeek Harness：一个 QQ 会话对应一个 DSH 会话、重启后映射保留，按说话人分档收放本地工具，三层记忆（事实 / 日记 / 图谱）+ 凌晨巩固，人格四段式，上下文压缩，侧栏九页面板，接入向导会自动装好 Roost 内核与 ai-chat 插件。'
