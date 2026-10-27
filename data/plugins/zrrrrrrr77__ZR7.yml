@@ -1,0 +1,6 @@
+url: https://github.com/zrrrrrrr77/ZR7
+name: zrrrrrrr77/ZR7
+category: ui
+description:
+  en: Adds a scissors button to the composer. It freezes the whole desktop, lets you drag a region, and inserts the crop into the prompt as an image attachment. Windows only.
+  zh: 在输入框旁加一个剪刀按钮：冻结整个桌面，拖框选取区域，松手后把该区域作为图片附件插入提示词框。仅 Windows。
