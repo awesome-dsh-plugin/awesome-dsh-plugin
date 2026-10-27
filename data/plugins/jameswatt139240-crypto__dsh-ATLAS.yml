@@ -2,5 +2,5 @@ url: https://github.com/jameswatt139240-crypto/dsh-ATLAS
 name: jameswatt139240-crypto/dsh-ATLAS
 category: ui
 description:
-  en: 'Type @ once and reference anything from the DSH composer: files, folders, skills, past chats, plugins, or any git repo — with line ranges like @src/a.ts:12-40, absolute paths outside the workspace, typo tolerance, and the token cost of each reference shown before you send, so a long draft never blows the context by accident. Third-party plugins register their own @ categories through one seam, so the menu grows with whatever you install.'
-  zh: '在 DSH 输入框里打一个 @ 就能引用任何东西：文件、文件夹、Skill、过往会话、插件，以及任意 git 仓库；支持行区间 @src/a.ts:12-40、工作区外绝对路径、错字容错，并在发送前显示每条引用要花多少 token，长草稿不会一不小心炸掉上下文。第三方插件通过一个 seam 注册自己的 @ 类别，菜单随你装的插件自动扩充。'
+  en: 'One @ for files, folders, skills, past chats, plugins and git — with line ranges, paths outside the workspace, typo tolerance, and token cost before you send.'
+  zh: '一个 @ 引用文件、文件夹、Skill、过往会话、插件和 git；支持行区间、工作区外绝对路径、错字容错，发送前显示每条引用的 token 成本；第三方插件可注册自己的 @ 类别。'
