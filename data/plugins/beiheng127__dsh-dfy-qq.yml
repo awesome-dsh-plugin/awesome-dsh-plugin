@@ -1,0 +1,6 @@
+url: https://github.com/beiheng127/dsh-dfy-qq
+name: beiheng127/dsh-dfy-qq
+category: remote
+description:
+  en: 'QQ chat behaviour layer for DeepSeek Harness over OneBot 11: persona files injected into every turn, a people file keyed by QQ number, sticker picking with probability and pity, optional non-mention replies, sub-personas distilled from group members, and scheduled messages.'
+  zh: 给 DeepSeek Harness 加一层 QQ 对话行为：人设文件注入每一轮、按 QQ 号认人的群友档案、带概率与大保底的表情包挑选、可选的主动接话、从群友原话蒸馏出的语气子人格，以及定时消息。
