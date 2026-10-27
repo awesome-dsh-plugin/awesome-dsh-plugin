@@ -2,5 +2,5 @@ url: https://github.com/xinspark/dsh-win-pwsh7
 name: xinspark/dsh-win-pwsh7
 category: dev
 description:
-  en: Reports which PowerShell the DSH pwsh executor rows actually run — enabled rows only, with version-numbered Store paths refused as pins — and installs the self-updating Microsoft Store package as a background job after reading the connection cost, because Windows defers Store downloads on a connection marked as metered. Two tools and a prompt section on the host side, plus a configuration card, a diagnostics section and a re-detect action in the Web UI; Windows only, no runtime dependencies.
-  zh: 报告 DSH pwsh 执行器各行实际运行的 PowerShell——只认启用中的行，拒绝把带版本号的商店路径当作 pin——并以后台任务安装会自动更新的微软商店版 PowerShell 7；动手前先读连接计费方式，因为 Windows 会推迟按流量计费连接上的商店下载。宿主侧两个工具加一个提示词区段，Web 界面里是配置卡片、诊断区段与重新检测按钮；仅 Windows，零运行时依赖。
+  en: Reports which PowerShell the DSH pwsh executor actually runs (enabled rows only; version-numbered Store paths are never recommended as pins), and installs a Store-managed PowerShell 7 through a scripted Store-page click or the manual Store path. Allows the pwsh tool only when the live executor resolves PowerShell 7+, with two host tools and a prompt section plus a native status card and overridePath configuration in the Web UI; Windows only, no runtime dependencies.
+  zh: 报告 DSH 的 pwsh 执行器实际运行的 PowerShell（只认启用中的行，带版本号的商店路径不会被推荐为 pin），并通过脚本点击商店页面或手动商店路径安装由商店管理的 PowerShell 7。只有实际执行器解析到 PowerShell 7+ 时才放行 pwsh 工具；宿主侧两个工具加提示词区段，Web 界面是原生状态卡片与 overridePath 配置；仅 Windows，零运行时依赖。
