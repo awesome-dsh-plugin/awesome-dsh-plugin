@@ -1,0 +1,6 @@
+url: https://github.com/yoyococo1234/dsh-drag-graft
+name: yoyococo1234/dsh-drag-graft
+category: session
+description:
+  en: 'Codex-style drag-to-reference for DeepSeek Harness: drag a conversation row from the sidebar onto the chat area and it becomes a native session-reference chip in the composer draft, so you can keep typing around it before sending. The reference cap comes from the host (3 by default) and is read at runtime instead of being hard-coded, so raising that cap on the host side (a host patch, not a feature of this plugin) lets one message carry more conversations. If the chip cannot be inserted, the plugin falls back to sending a reference-only message instead of failing silently.'
+  zh: 'Codex 同款拖拽引用对话：把侧栏的会话行拖到对话区，它就变成输入框里一枚原生会话引用 chip，可以继续打字再发送。引用条数由宿主决定（原版 3 条），插件在运行时从宿主读取该上限而不写死，所以把宿主上限调大（属于宿主侧改动，不是本插件的能力）就能让一条消息带上更多对话。chip 插不进时降级为直接发一条只含引用的消息，不会静默失败。'
