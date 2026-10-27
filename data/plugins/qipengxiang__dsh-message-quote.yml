@@ -1,0 +1,6 @@
+url: https://github.com/qipengxiang/dsh-message-quote
+name: qipengxiang/dsh-message-quote
+category: ui
+description:
+  en: 'Quote any message of the current conversation into the composer: pick one from the @ menu, click the quote button on a user or assistant message, or select text and use Quote in the right-click menu. Quotes show as numbered chips in the composer and as summary bubbles above it; after sending, each quote becomes a fenced block so the model can tell quoted text from new text.'
+  zh: '把本对话里的任意一条消息引用进输入框：@ 菜单选择，或点用户消息、AI 回复上的引用按钮，也可以选中文字后右键「引用」。引用在输入框里是带序号的芯片，上方浮出摘要气泡；发送后每条引用展开成独立块，模型能分清引用内容与新写内容。'
