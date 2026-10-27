@@ -1,7 +1,7 @@
 url: https://github.com/kw12121212/writing-anything/tree/main/plugins/dsh-writing-viewer
 name: kw12121212/writing-anything#dsh-writing-viewer
 category: ui
-tarball: https://github.com/kw12121212/writing-anything/releases/download/v0.9.0/dsh-writing-viewer-0.9.0.tgz
+tarball: https://github.com/kw12121212/writing-anything/releases/download/v0.9.2/dsh-writing-viewer-0.9.2.tgz
 description:
   en: 'Read-only writing-workspace panel for projects that contain a .writing-anything/ workspace: per-work overview cards, a unit tree, YAML artifact views as semantic cards or highlighted source, the source list and the decision/review queues, and in-panel unit review whose feedback is written back by wa-cli.'
   zh: 'writing-anything 工作区的只读写作面板：作品总览卡片、单元树、YAML 产物的语义卡片与源码高亮视图、素材清单与决策／复核清单，以及面板内单元审阅（反馈经 wa-cli 写回）。'
