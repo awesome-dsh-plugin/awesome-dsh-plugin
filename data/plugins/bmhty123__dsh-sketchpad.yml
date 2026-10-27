@@ -1,0 +1,7 @@
+url: https://github.com/bmhty123/dsh-sketchpad
+name: bmhty123/dsh-sketchpad
+category: ui
+description:
+  en: 'Handwriting and diagram whiteboard: sketch on a floating or sidebar canvas and attach the cropped image to your message.'
+  zh: '手写公式、画示意图的画板：浮动或侧栏画布，导出裁切后的图片作为消息附件。'
+icon: https://raw.githubusercontent.com/bmhty123/dsh-sketchpad/main/assets/icon-180.png

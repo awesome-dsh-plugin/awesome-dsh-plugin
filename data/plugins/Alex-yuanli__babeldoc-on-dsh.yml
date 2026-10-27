@@ -1,0 +1,6 @@
+url: https://github.com/Alex-yuanli/babeldoc-on-dsh
+name: Alex-yuanli/babeldoc-on-dsh
+category: docs
+description:
+  en: Translates PDFs with BabelDOC through an OpenAI-compatible endpoint while keeping the original layout, and returns both a bilingual and a translated-only PDF. Requires a one-time runtime setup and an OpenAI-compatible API key.
+  zh: 通过 OpenAI 兼容接口调用 BabelDOC 翻译 PDF，保留原排版，输出双语对照版与纯译文版。需先运行一次运行时安装脚本，并配置 OpenAI 兼容接口的 API Key。

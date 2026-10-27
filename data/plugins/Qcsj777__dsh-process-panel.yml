@@ -1,0 +1,6 @@
+url: https://github.com/Qcsj777/dsh-process-panel
+name: Qcsj777/dsh-process-panel
+category: ui
+description:
+  en: 'Adds a per-answer Process drawer that streams, in Simplified Chinese, the agent thinking, tool calls and errors for that turn.'
+  zh: '在每条回答旁加「进程」抽屉，用简体中文流式讲解该回合 agent 的思考、工具调用与报错。'

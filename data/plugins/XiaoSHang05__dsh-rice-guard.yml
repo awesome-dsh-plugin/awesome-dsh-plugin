@@ -2,5 +2,5 @@ url: https://github.com/XiaoSHang05/dsh-rice-guard
 name: XiaoSHang05/dsh-rice-guard
 category: security
 description:
-  en: Watches a turn's thinking and text streams and cancels the turn when the model starts repeating itself.
-  zh: 监控一轮对话的思考流与正文流，在模型开始自我复读时中断该轮。
+  en: "Watches a turn's thinking and output streams and cancels the turn when the model starts repeating itself. Four detectors: a verbatim cycle, a counting loop whose lines differ only by a number, repeated lines separated by other text, and a user-supplied phrase list. A catch raises a manual-dismiss alarm card in the global overlay with an optional tone, and a Monitor tab holds the switches, thresholds and hit history. Detection is local string comparison with no model calls, so it costs no tokens."
+  zh: "同时监视一轮对话的思考流与正文流，模型开始复读时中断该轮。四条检测规则：逐字周期重复、每行只换数字的计数循环、被其他文字隔开的重复行，以及用户自填的短语清单。命中后在全球浮层弹出必须手动关闭的报警卡（可带提示音），「监控」标签页里有开关、阈值与命中历史。检测是本机字符串比对、不调用模型，零 token 开销。"

@@ -1,0 +1,6 @@
+url: https://github.com/Midnight-1991/dsh-project-supervisor
+name: Midnight-1991/dsh-project-supervisor
+category: workflow
+description:
+  en: 'Beta: a project supervisor for DeepSeek Harness — standing rules plus a Web panel (three switches, dispatch modes) that splits a goal into parallel teammate dialogs, checks engineering baselines, interviews new-project requirements and protects beginners. The standing rules come from the repo kit installer, an optional separate step.'
+  zh: '测试中：DSH 项目主管——常驻规则 + 「主管」面板（三开关、派发模式），把目标拆成并行对话框，做工程底线自检、新项目需求追问与零基础保护。常驻规则由仓库的 kit 安装器另行写入工作区，是独立的可选步骤。'

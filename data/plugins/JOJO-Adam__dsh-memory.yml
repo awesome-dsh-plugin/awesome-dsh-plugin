@@ -1,0 +1,6 @@
+url: https://github.com/JOJO-Adam/dsh-memory
+name: JOJO-Adam/dsh-memory
+category: memory
+description:
+  en: "Three-layer memory for DeepSeek Harness — a small always-on core block plus on-demand topic files (profile, preferences, decisions, lessons), with source-annotated writes and supersede-not-overwrite history, so preferences and project constraints stop drifting between sessions. Local-first: no vector DB, no server, no outbound calls."
+  zh: "DeepSeek Harness 的三层记忆：常驻小索引加按需读取的主题文件（画像、偏好、决策、教训），写入带来源标注、冲突取代留痕，让偏好与项目约束跨会话不漂移。本地优先：无向量库、无服务端、零出站。"

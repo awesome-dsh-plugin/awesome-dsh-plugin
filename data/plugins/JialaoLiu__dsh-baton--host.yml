@@ -2,5 +2,5 @@ url: https://github.com/JialaoLiu/dsh-baton/tree/main/host
 name: JialaoLiu/dsh-baton#dsh-baton
 category: workflow
 description:
-  en: 'Takes tasks from Claude Code, Codex or any MCP client (through the dsh-baton-mcp server) over an owner-only local socket: creates or continues a specific Harness session, runs it live in the UI labelled with the sender, and hands the result back when the turn ends. 12 MCP tools cover workspaces, sessions and runs.'
-  zh: '通过本机仅限当前用户的 socket，接收 Claude Code、Codex 或任意 MCP 客户端（经 dsh-baton-mcp）交来的任务：新建或继续指定的 Harness 会话，在界面里实时运行并标注发送方，回合结束后把结果交回。12 个 MCP 工具覆盖工作区、会话和运行。'
+  en: 'Let Claude Code or Codex do the thinking: understand the request, write a clear prompt for DeepSeek Harness to do the work, and review the result. dsh-baton runs your tests itself, lists what changed, and has a sub-agent check every requirement, so your main model only reads the result and decides. On big jobs it saves most of your plan''s quota.'
+  zh: '让 Claude Code 或 Codex 负责动脑：理解需求，写好 prompt 交给 DeepSeek Harness 去干活，最后把关。dsh-baton 会自己跑测试、列出改了哪些文件，再派一个子代理逐条核对需求，你的主力模型只看结果拍板。大任务能省下大半订阅额度。'

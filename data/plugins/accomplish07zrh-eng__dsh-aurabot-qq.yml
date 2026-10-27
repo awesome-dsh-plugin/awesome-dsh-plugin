@@ -1,0 +1,6 @@
+url: https://github.com/accomplish07zrh-eng/dsh-aurabot-qq
+name: accomplish07zrh-eng/dsh-aurabot-qq
+category: identity
+description:
+  en: 'Puts the agent on QQ as a persona character through SnowLuma (OneBot v11): private and group chat, voice notes, stickers, Qzone diary, Bilibili browsing, song covers, image generation, long-term memory and mood. Every feature is a module you can switch off, replace or extend locally — hot-reloaded modules can also rewrite group-reply decisions, prompts, outgoing messages and per-chat model choice. Safe by default (master switch off, dry run on).'
+  zh: '通过 SnowLuma（OneBot v11）让 agent 以人设角色住进 QQ：私聊与群聊、语音条、表情包、QQ 空间日记、刷 B 站、翻唱、生图、长期记忆与心情。每项本事都是模块，可关闭、替换或在本地扩展——热重载的扩展模块还能改写群聊回不回、提示词、最终发出的消息和每个聊天用的模型。默认安全（总开关关、试运行开）。'

@@ -1,0 +1,14 @@
+url: https://github.com/bushizhanghan/dsh-context-budget
+name: bushizhanghan/dsh-context-budget
+category: dev
+description:
+  en: >-
+    Audit how each turn's context budget is spent. Breaks down what a turn pays for AGENTS.md, the skill
+    catalog, tool schemas and runtime context; flags repeated injection of unchanged content as pure waste;
+    ranks skill-catalog bloat (with 60+ skills installed, how many tokens of descriptions does the model read
+    every turn) and tool-schema inflation per plugin. Deterministic — no LLM, so a wrong answer is a rule bug
+    with a name. Four tools including a cross-session sweep.
+  zh: >-
+    每轮上下文预算审计：拆解一轮对话在 AGENTS.md、技能目录、工具 schema 与运行时上下文上各花了多少；把"内容
+    没变却每轮重发"标为纯浪费；排名技能目录膨胀（装 60+ 个技能时，模型每轮要读多少 token 的描述）与各插件的
+    工具 schema 占比。纯确定性，不调 LLM。四个工具，含跨会话扫描。

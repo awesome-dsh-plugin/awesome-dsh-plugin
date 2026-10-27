@@ -3,5 +3,5 @@ name: Aression/dsh-maend
 category: tools
 icon: https://raw.githubusercontent.com/Aression/dsh-maend/main/assets/icon-180.png
 description:
-  en: "Drives a local MaaEnd (MXU) client over its loopback HTTP API: 10 maend_* agent tools, a sidebar dashboard panel, and startup-mute / success-gated close-game steps in the task chain."
-  zh: "通过本机 MaaEnd（MXU）的 loopback HTTP API 驱动它：10 个 maend_* agent 工具、一个侧边栏看板面板，以及任务链里的启动静音与「全部成功后才关游戏」收尾。"
+  en: "Drives a local MaaEnd (MXU) client over its loopback HTTP API: 10 maend_* agent tools, a sidebar dashboard panel, and startup-mute / success-gated close-game steps in the task chain. Requires a local MaaEnd install with its MXU service running."
+  zh: "通过本机 MaaEnd（MXU）的 loopback HTTP API 驱动它：10 个 maend_* agent 工具、一个侧边栏看板面板，以及任务链里的启动静音与「全部成功后才关游戏」收尾。需先在本机安装 MaaEnd 并开启 MXU 服务。"

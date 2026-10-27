@@ -1,0 +1,6 @@
+url: https://github.com/Gaudi-XIX/dsh-agy-cli
+name: Gaudi-XIX/dsh-agy-cli
+category: model
+description:
+  en: "Windows-only model provider for Google Antigravity CLI, continuing Darkings/dsh-agy-provider (install as dsh-agy-cli; do not install alongside the original). It reads the Antigravity token from the Windows Credential Manager and sends it only to the Google Cloud Code endpoints, lets DSH own the harness tool policy, streams the tail without rollback, and tracks the real quota windows."
+  zh: "Windows 专用的 Google Antigravity CLI 模型提供方，接续自 Darkings/dsh-agy-provider（包名 dsh-agy-cli，请勿与原版同装）。从 Windows 凭据管理器读取 Antigravity 令牌并只发往 Google Cloud Code 端点；Harness 工具策略由 DSH 全权负责，尾流式输出防回滚，并跟踪真实配额窗口。"

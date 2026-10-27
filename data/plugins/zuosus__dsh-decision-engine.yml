@@ -2,8 +2,8 @@ url: https://github.com/zuosus/dsh-decision-engine        # must match the repo 
 name: zuosus/dsh-decision-engine                          # link text shown in the list / 列表中显示的链接文字
 category: workflow                              # see the category list below / 见下方分类列表
 description:
-  en: System-1 decision guard for DeepSeek Harness, 4 questions asked before tool calling (risk reversible, relevance, injection suspension) and allow/ask/reject action.
-  zh: 给 DeepSeek Harness 的 System-1 决策守卫：在每次工具调用前问模型四个问题 （风险、可逆性、任务相关性、注入嫌疑），据此放行、询问或拦截。   # optional — a maintainer will add it / 可选，维护者会补
+  en: System-1 decision guard for DeepSeek Harness, 4 questions asked before tool calling (risk reversible, relevance, injection suspension) and allow/ask/reject action. Needs an API key for a system-one compatible provider; decision requests are sent there.
+  zh: 给 DeepSeek Harness 的 System-1 决策守卫：在每次工具调用前问模型四个问题 （风险、可逆性、任务相关性、注入嫌疑），据此放行、询问或拦截。   # optional — a maintainer will add it / 可选，维护者会补需自备 system-one 兼容服务的 API Key，决策请求会发往该服务。
 # optional — GitHub-hosted raster image used as the storefront tile;
 # falls back to the owner's avatar when omitted
 # 可选——用 GitHub 托管的位图作为市场卡片图标；不写则回退到作者头像

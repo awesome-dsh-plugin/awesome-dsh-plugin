@@ -1,0 +1,7 @@
+url: https://github.com/suyunxing/dsh-draw-mode
+name: suyunxing/dsh-draw-mode
+category: tools
+description:
+  en: "Connects a ComfyUI server to the agent through five draw_* tools (status, workflows, models, generate, reverse) and a sidebar panel. It ships no workflows and assumes nothing about your models: every API-format JSON you drop into the workflow directory is inspected to find where prompt, negative, width, height, steps, cfg, seed and LoRA live, and a sidecar file can override what was detected. LoRA injection splices into any graph. All paths are configuration, editable from the panel and saved to a settings file, so it works against a remote or already-running ComfyUI. Headless auto-start and idle shutdown are opt-in and off by default."
+  zh: "把 ComfyUI 接给 agent：五个 draw_* 工具（状态、工作流、模型、生图、反推）与侧栏面板。插件本身不带任何工作流、也不假设你用什么模型：放进工作流目录的每个 API 格式 JSON 都会被自动检查，找出 prompt / 负向提示词 / 宽高 / steps / cfg / 种子 / LoRA 落位，可用同名 sidecar 文件覆盖检测结果；LoRA 能插进任意连线图。所有路径都可配置、可在面板里改并保存到设置文件，因此对着远程或已经开着的 ComfyUI 也能用。无头自动启动与空闲关闭默认关闭，需自行开启。"
+icon: https://raw.githubusercontent.com/suyunxing/dsh-draw-mode/main/icon-180.png

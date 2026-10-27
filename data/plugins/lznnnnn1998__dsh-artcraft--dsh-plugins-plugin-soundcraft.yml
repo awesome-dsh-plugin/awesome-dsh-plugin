@@ -1,0 +1,6 @@
+url: https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-soundcraft
+name: lznnnnn1998/dsh-artcraft#plugin-soundcraft
+category: tools
+description:
+  en: "Drive SoundCraft from the agent: load a session, set track and mixer levels, insert plugins, edit MIDI, and bounce audio without opening a window. Exposes the DAW's command ids and its MCP server. Requires the matching ArtCraft app CLI installed locally; it is not bundled."
+  zh: "让智能体驱动 SoundCraft：加载工程、设置轨道与混音电平、插入插件、编辑 MIDI，并在不打开窗口的情况下 bounce 音频。暴露这个 DAW 的命令 id 与自带的 MCP server。需本机安装对应的 ArtCraft 应用 CLI，插件不附带应用本体。"

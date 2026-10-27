@@ -2,5 +2,5 @@ url: https://github.com/meng-lx/dsh-auto-restart
 name: meng-lx/dsh-auto-restart
 category: session
 description:
-  en: 'Restart DSH only after every agent and background job is idle, then wake the original session: a cancelable countdown, an occupancy check at the deadline, and a file handoff to a bundled PowerShell restart script. Windows only; tested on the desktop app, not yet on dsh web.'
-  zh: '等所有 agent 与后台任务都空闲后再重启 DSH，并回到原会话：可取消倒计时、到点再判占用、与随包 PowerShell 重启脚本之间用交接文件通信。仅限 Windows；桌面端已实测，网页端尚未验证。'
+  en: 'Restart initiated by the agent itself, not by a button. The agent calls one tool, then the plugin takes over: it waits until every agent and background job on the host is idle, runs a visible ten-second countdown that a click, a scroll, or a key press cancels, then restarts DSH and wakes the original session so the agent carries on from its last sentence. No button, no manual entry: the tool is the only way in. Works on the official desktop app and the official web client; third-party shells are not supported out of the box. Windows only.'
+  zh: '由 agent 自己发起的重启，不是按钮。agent 调一个工具，之后由插件接管：等这台机器上所有 agent 与后台任务都空闲，走完十秒可见倒计时（点一下鼠标、滚一下滚轮、按任意键都会取消），再重启 DSH，并唤醒原会话让 agent 接着说下去。没有按钮、没有手动入口——工具是唯一入口。官方桌面端与官方网页端均已适配，第三方壳不在默认支持范围内。仅限 Windows。'

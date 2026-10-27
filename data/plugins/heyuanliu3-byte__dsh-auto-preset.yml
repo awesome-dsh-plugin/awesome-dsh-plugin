@@ -2,5 +2,5 @@ url: https://github.com/heyuanliu3-byte/dsh-auto-preset
 name: heyuanliu3-byte/dsh-auto-preset
 category: security
 description:
-  en: 'Restores the permission preset a session was last set to when that session is reopened; a session opened for the first time is left untouched.'
-  zh: '重新打开会话时恢复该会话上次设置的权限预设；首次打开不干预。'
+  en: 'Restores the permission preset a session was last set to when that session is reopened; a session opened for the first time is left untouched. Load it after dsh-experimental-auto-review to restore the auto preset.'
+  zh: '重新打开会话时恢复该会话上次设置的权限预设；首次打开不干预。需排在 dsh-experimental-auto-review 之后加载才能恢复 auto 预设。'

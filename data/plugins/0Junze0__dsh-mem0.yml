@@ -3,5 +3,5 @@ name: 0Junze0/dsh-mem0
 category: memory
 tarball: https://github.com/0Junze0/dsh-mem0/releases/download/v0.2.0/dsh-mem0-0.2.0.tgz
 description:
-  en: 'Long-term memory on top of mem0 and a local Chroma store: user profile and recalled facts injected through the system prompt, capture at session end, a nightly pass that dedupes, merges paraphrases and resolves contradictions, a persistent topic graph written as Markdown cards, periodic export to a git repository, and a full-page memory UI with search, bulk merge, snapshots and undo.'
-  zh: '基于 mem0 与本地 Chroma 的长期记忆：画像和相关事实经系统提示注入；会话结束自动捕获；夜间执行去重、近义归纳与矛盾处理；主题图持久化为 Markdown 主题卡；定期导出到 git 仓库；自带全屏记忆页，支持搜索、批量合并、快照与撤销。'
+  en: 'Long-term memory on top of mem0 and a local Chroma store: user profile and recalled facts injected through the system prompt, capture at session end, a nightly pass that dedupes, merges paraphrases and resolves contradictions, a persistent topic graph written as Markdown cards, periodic export to a git repository, and a full-page memory UI with search, bulk merge, snapshots and undo. Needs a manual Python venv setup plus LLM and embedding API keys before use.'
+  zh: '基于 mem0 与本地 Chroma 的长期记忆：画像和相关事实经系统提示注入；会话结束自动捕获；夜间执行去重、近义归纳与矛盾处理；主题图持久化为 Markdown 主题卡；定期导出到 git 仓库；自带全屏记忆页，支持搜索、批量合并、快照与撤销。使用前需自建 Python 虚拟环境并填入 LLM 与 embedding 两组 API Key。'

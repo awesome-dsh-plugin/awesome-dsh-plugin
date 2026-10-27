@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/dsh-unlag
+name: regrevia/dsh-unlag
+category: dev
+description:
+  en: 'Press once to refresh the interface and swap plugin code in place without restarting; running turns, queued messages and unsent drafts are kept.'
+  zh: '不重启进程即可刷新界面并替换插件代码，正在跑的回合、排队消息与未发送草稿都会保留。'
+icon: https://raw.githubusercontent.com/regrevia/dsh-unlag/main/icon.png
