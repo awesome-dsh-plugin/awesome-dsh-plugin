@@ -1,7 +1,7 @@
-url: https://github.com/dialling/dsh-graph-view
-name: dialling/dsh-graph-view
+url: https://github.com/dialling/dsh-galaxy-view
+name: dialling/dsh-galaxy-view
 category: ui
-icon: https://raw.githubusercontent.com/dialling/dsh-graph-view/main/assets/icon-180.png
+icon: https://raw.githubusercontent.com/dialling/dsh-galaxy-view/main/assets/icon-180.png
 description:
   en: 'Draws workspaces and conversations as a 3D star map in the stock panel slot: eight layouts (spiral, rings, armillary sphere, solar system, double helix, irregular web, cubic lattice, radial tree), eight colour themes, a memory-library map of instruction files, skills and skill calls, star-to-star fly-throughs, and a 中/EN switch. Links are drawn only where a workspace owns a conversation or one conversation descends from another.'
   zh: '把工作区与对话画成三维星空，占住原版面板槽位：八种布局（螺旋、星环、浑天仪球、太阳系、双螺旋、不规则星团、立体方阵、中心放射星树）、八套配色主题、一张把指令文件/技能/调用记录画成环的记忆库图、星体间飞行，以及中/EN 切换。连线只画真实的从属关系：工作区→对话，以及父→子。'
