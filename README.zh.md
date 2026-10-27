@@ -830,7 +830,7 @@ dsh plugin --profile web add dshmarket
 - [Lphehe/dsh-composer-assist](https://github.com/Lphehe/dsh-composer-assist) — DSH 输入助手：输入预测、草稿补全（自动补全）、提示词润色（prompt 优化）；根据对话给出下一句建议。Tab 接受只填入草稿、不自动发送，建议按会话保留。需配置模型，调用可能计费。源码可见，修改须事先取得书面许可。
 - [lrplrplrp/dsh-live2d](https://github.com/lrplrplrp/dsh-live2d) — dsh 的 Live2D 看板娘插件。
 - [lsdt45/dsh-plan-plus](https://github.com/lsdt45/dsh-plan-plus) — DeepSeek Harness Web 的计划评审增强：在评审卡片内直接回复意见让模型修订计划，并在全屏浮层中回看、对比、编辑和留档每一版计划。
-- [lsdt45/dsh-workspace-plus](https://github.com/lsdt45/dsh-workspace-plus) — DSH 侧边栏的工作区层级树与浏览器式会话标签页：工作区或会话标题中的 / 自动成为虚拟分组，另含分区、置顶、时间分桶、拖拽排序、统一 6px 状态点、按行定制外观（颜色 / 发光 / 字重 / 图标），以及覆盖会话标题与消息正文的浮层全文检索。设置页五个开关可把任一行为还原为宿主默认。fork 自 KannaKuron/dsh-better-workspace。
+- [lsdt45/dsh-workspace-plus](https://github.com/lsdt45/dsh-workspace-plus) — DSH 侧边栏的工作区层级树与浏览器式会话标签页：工作区或会话标题中的 / 自动成为虚拟分组，另含分区、置顶、时间分桶、拖拽排序、统一 6px 状态点、按行定制外观（颜色 / 发光 / 字重 / 图标），以及覆盖会话标题与消息正文的浮层全文检索。配置页多个开关可把任一行为还原为宿主默认；宿主侧另有永久删除会话的路由（DSH 只有归档）。fork 自 KannaKuron/dsh-better-workspace。
 - [lsh2002/dsh-custom-fonts](https://github.com/lsh2002/dsh-custom-fonts) — 在设置页自定义界面中英文/代码字体与全局字号偏移，实时预览，一键恢复默认。
 - [lsq-dsh-plugins/dsh-workbench-layout](https://github.com/lsq-dsh-plugins/dsh-workbench-layout) — 将 DSH Web 重排为三栏工作台，提供文件编辑、Git 视图、Markdown 预览和工作区终端。
 - [Luaphes/dsh-web-attention-badge](https://github.com/Luaphes/dsh-web-attention-badge) — 会话需要你时三处同时亮起：角标、标签页标题计数、按状态换色的鲸鱼 favicon。
