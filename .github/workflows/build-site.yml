@@ -147,6 +147,7 @@ jobs:
       - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.PROBE_TOKEN || secrets.GITHUB_TOKEN }}
+          SKIP_PUBLISH_CHECKS: ${{ github.repository != 'awesome-dsh-plugin/awesome-dsh-plugin' && '1' || '' }}
           # The nightly run is the authoritative refresh: it re-checks every
           # entry regardless of cached verdicts, so a plugin that publishes to
           # npm can never be stuck on a stale "not published" (see #487).
