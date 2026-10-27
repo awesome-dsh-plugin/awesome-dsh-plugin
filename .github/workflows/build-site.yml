@@ -185,7 +185,7 @@ jobs:
               if [ "${{ inputs.skip_probes }}" = "true" ]; then full_probe=''; else full_probe=1; fi ;;
             *) full_probe='' ;;
           esac
-if [ -n "$full_probe" ] || [ ! -s data/npm-map.json ]; then
+          if [ -n "$full_probe" ] || [ ! -s data/npm-map.json ]; then
             node scripts/probe-npm.mjs
             # After probe-npm.mjs, never before: this reads data/npm-map.json
             # to know which entries HAVE a package to probe. Reads and writes
