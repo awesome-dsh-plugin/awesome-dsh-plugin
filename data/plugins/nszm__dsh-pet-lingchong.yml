@@ -3,5 +3,5 @@ name: nszm/dsh-pet-lingchong
 category: fun
 icon: https://raw.githubusercontent.com/nszm/dsh-pet-lingchong/main/assets/icon-180.png
 description:
-  en: 'Desktop pet for DSH: a draggable cat, golden retriever or capybara floating on the overlay — tap to charge energy, blinking and emotes, naps, synthesized WebAudio sounds and particle effects. Import your own pet as a photo (2.5D cutout) or a GLB model (real 3D turntable rendered with three.js), resize it from 30% to 300%, and keep every bit of data on the local machine.'
-  zh: 'DSH 桌面灵宠：可拖动的布偶猫 / 金毛 / 水豚浮在整屏浮层上，轻叩蓄能、眨眼表情、打盹、WebAudio 合成音效与粒子；支持导入自己的照片（2.5D 立绘）或 GLB 模型（three.js 真 3D 转台），大小 30%–300% 无级调节，数据全部只存本机。'
+  en: 'Floating desktop companion for DSH: a draggable character on the overlay — tap to charge energy, blinking and emotes, naps, synthesized WebAudio sounds and particle effects. Bring your own: any photo (pet, portrait, anime art) becomes a 2.5D cutout with hand-marked eyes, and GLB / VRM models (characters, anime avatars, your own Blender work) render as a real 3D turntable with three.js. Resize from 30% to 300%; all data stays on the local machine.'
+  zh: 'DSH 桌面伴侣：整屏浮层上一只可拖动的角色，轻叩蓄能、眨眼表情、打盹、WebAudio 合成音效与粒子。放什么进去都行——照片（宠物 / 人像 / 动漫立绘）变 2.5D 立绘并可标眼睛；GLB / VRM（人物、动漫角色、自己的建模）用 three.js 渲染成真 3D 转台。大小 30%–300% 无级调节，数据只存本机。'
