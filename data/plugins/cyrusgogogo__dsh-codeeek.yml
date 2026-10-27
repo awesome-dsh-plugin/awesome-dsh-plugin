@@ -1,0 +1,7 @@
+url: https://github.com/cyrusgogogo/dsh-codeeek
+name: cyrusgogogo/dsh-codeeek
+category: dev
+description:
+  en: Read-only code-reading workspace with multi-repository projects, source-linked notes, code maps and Mermaid diagrams.
+  zh: 只读代码阅读工作台，支持多仓库项目、源码关联笔记、代码地图与 Mermaid 图表。
+tarball: https://github.com/cyrusgogogo/dsh-codeeek/releases/download/v0.1.8/dsh-code-reading-0.1.8.tgz
