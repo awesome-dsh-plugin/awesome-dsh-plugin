@@ -1,0 +1,7 @@
+url: "https://github.com/oxmumu3/dot-dsh-connector/tree/main/management-plugin"
+name: "oxmumu3/dot-dsh-connector#dot-dsh-management"
+category: "remote"
+description:
+  en: "Native Harness workbench and local gateway for Dot to read saved projects and conversations, dispatch native tasks, inspect progress, continue or cancel tasks, and manage connection authorization."
+  zh: "通过原生 Harness 工作台和本机网关，让 Dot 读取已保存项目与会话、派发原生任务、查看进度、继续或取消任务，并管理连接授权。"
+tarball: "https://github.com/oxmumu3/dot-dsh-connector/releases/download/v0.6.0-preview.19/dot-dsh-management-0.6.0-preview.19.tgz"
