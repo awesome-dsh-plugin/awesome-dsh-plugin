@@ -2,7 +2,7 @@ url: https://github.com/white-source/dsh-xiaoqi-pet
 name: white-source/dsh-xiaoqi-pet
 category: fun
 description:
-  en: A DSH companion with a native macOS desktop pet that shows task-specific checklist progress and concrete actions for running sessions, plus completion and attention notices.
-  zh: 带原生 macOS 桌面桌宠的 DSH 伴侣，显示运行中会话的任务清单进展、具体动作，以及完成和待处理通知。
+  en: A DSH companion with a native macOS desktop pet. Multiple running sessions fan out as compact drawers with task-specific checklist and action progress, plus completion and attention notices.
+  zh: 带原生 macOS 桌面桌宠的 DSH 伴侣。多个运行中会话以抽屉卡片同时展开，显示任务相关的清单和动作进展，并提供完成与待处理通知。
 icon: https://raw.githubusercontent.com/white-source/dsh-xiaoqi-pet/main/assets/icon-180.png
-tarball: https://github.com/white-source/dsh-xiaoqi-pet/releases/download/v1.0.0/dsh-xiaoqi-pet-1.0.0.tgz
+tarball: https://github.com/white-source/dsh-xiaoqi-pet/releases/download/v1.1.0/dsh-xiaoqi-pet-1.1.0.tgz
