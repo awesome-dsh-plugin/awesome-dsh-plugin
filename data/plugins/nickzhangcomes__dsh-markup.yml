@@ -1,5 +1,5 @@
-url: https://github.com/nickzhangcomes/dsh-doc-review
-name: nickzhangcomes/dsh-doc-review
+url: https://github.com/nickzhangcomes/dsh-markup
+name: nickzhangcomes/dsh-markup
 category: ui
 description:
   en: Review DeepSeek Harness responses with inline annotations, document reading, comment threads, and text revisions, then bring a reading summary back to the main conversation.
