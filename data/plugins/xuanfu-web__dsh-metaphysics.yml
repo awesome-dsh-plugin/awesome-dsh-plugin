@@ -2,5 +2,5 @@ url: https://github.com/xuanfu-web/dsh-metaphysics
 name: xuanfu-web/dsh-metaphysics
 category: ui
 description:
-  en: 'Divination panel and agent tool: BaZi with 42 shensha plus pattern, useful-god and luck scoring; Zi Wei Dou Shu with star brightness, 34 patterns, decade and annual/monthly/daily/hourly mutagen; LiuYao, MeiHua, Da Liu Ren and Tarot, plus ask-driven interpretation; charts are computed locally, with an optional Nominatim lookup for place names.'
-  zh: '命理排盘：八字 42 神煞并给出格局、用神与大运流年吉凶评分；紫微斗数 34 格局、主星庙旺、大限与流年流月流日流时四化；另有六爻、梅花易数、大六壬与塔罗，并可按所问之事生成解析；排盘在本机计算，地名解析可选走 Nominatim。'
+  en: 'Chinese metaphysics (xuanxue) plugin: seventeen systems in one — eight chart systems (BaZi with 42 shensha, pattern / useful-god and luck scoring; Zi Wei Dou Shu with star brightness, 34 patterns and decade / annual mutagen; LiuYao, MeiHua YiShu, Da Liu Ren, Qi Men Dun Jia, compatibility charts and Tarot) plus nine quick references (almanac, date selection, bone-weight fortune, Xiao Liu Ren, horoscope, numerology, life-curve, feng shui, name analysis). Ask-driven interpretation, evidence cards, DST correction, all computed locally with networking off by default.'
+  zh: '玄学命理排盘：十七套体系一站排盘——八套排盘（八字 42 神煞 + 格局用神与大运流年评分、紫微斗数主星庙旺 + 34 格局 + 大限与流年四化、六爻、梅花易数、大六壬、奇门遁甲、合盘、塔罗）加九套速查（黄历、择日、称骨、小六壬、星座、生命数字、人生K线、风水、起名）。可按所问之事生成解析，带证据卡与置信度，并自动校正 1986–1991 夏令时；纯本地计算、默认不联网。'
