@@ -1,0 +1,6 @@
+url: https://github.com/cp990207/dsh-usage-ledger
+name: cp990207/dsh-usage-ledger
+category: usage
+description:
+  en: Local usage ledger that reads this machine's session logs and reports per-day, per-model and per-workspace token consumption, cache hit rate, tool-vs-chat split and estimated cost, with an in-app editor for per-model prices.
+  zh: 本地用量账本：从本机会话日志统计每日、每模型、每工作区的 token 消耗、缓存命中率、工具请求占比与估算费用，并提供按模型编辑单价的设置面板。
