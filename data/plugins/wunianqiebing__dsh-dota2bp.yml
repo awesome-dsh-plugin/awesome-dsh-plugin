@@ -4,3 +4,4 @@ category: tools
 description:
   en: Dota 2 ranked no-ban 2-2-1 draft assistant with bracket and pro data sources, flexible player pools, in-game player selection, and a post-draft win probability estimate.
   zh: Dota 2 天梯无 Ban 2-2-1 征召助手，支持分段与职业数据口径、灵活分路成员池、参战勾选和 BP 后预测胜率。
+tarball: https://github.com/wunianqiebing/dsh-dota2bp/releases/download/v1.1.0/dsh-dota2bp-1.1.0.tgz
