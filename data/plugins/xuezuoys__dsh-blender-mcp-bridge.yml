@@ -1,0 +1,6 @@
+url: https://github.com/XuezuoYS/dsh-blender-mcp-bridge
+name: xuezuoys/dsh-blender-mcp-bridge
+category: tools
+description:
+  en: 'This project aims to bridge the Blender MCP Add-on, so that models on DSH can conveniently connect to the current user's working Blender to assist creation, while meeting basic security requirements.'
+  zh: '此项目旨在桥接 Blender MCP Add-on，使 DSH 上的模型可便捷对接接入当前用户工作的 Blender 以辅助创作，且满足基础安全需要。'
