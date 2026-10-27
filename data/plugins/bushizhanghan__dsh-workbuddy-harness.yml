@@ -3,5 +3,6 @@ name: bushizhanghan/dsh-workbuddy-harness
 category: model
 tarball: https://github.com/bushizhanghan/dsh-workbuddy-harness/releases/latest/download/dsh-workmate.tgz
 description:
-  en: Brings WorkBuddy's free and paid models (domestic and international) into DSH without the WorkBuddy desktop app; published as @bushizhanghan/dsh-workmate, installable on dsh 0.2.0-rc.2 through 0.2.1 including prereleases.
-  zh: 把 WorkBuddy 国内版和国际版的免费/付费模型接进 DSH，无需 WorkBuddy 桌面版；以 @bushizhanghan/dsh-workmate 发布，支持 dsh 0.2.0-rc.2 至 0.2.1（含预发布版本）。
+  # v1.2.7 (2026-10-27): relocate long system prompt past domestic gateway channel-risk classifier; rewrite DSH brand string; debug dump.
+  en: Brings WorkBuddy free/paid models (domestic + international) into DSH without the desktop app, published as @bushizhanghan/dsh-workmate. v1.2.7 relocates over-long system prompts past the domestic gateway channel-risk classifier, rewrites the DSH brand string, and adds a debug dump; supports dsh 0.2.0-rc.2 through 0.2.1 (incl. prereleases).
+  zh: 把 WorkBuddy 国内版和国际版的免费/付费模型接进 DSH，无需桌面端；以 @bushizhanghan/dsh-workmate 发布（v1.2.7：跨国内网关风控——长系统提示自动搬迁、出站体改写 DSH 字样、调试落盘），支持 dsh 0.2.0-rc.2 至 0.2.1（含预发布）。
