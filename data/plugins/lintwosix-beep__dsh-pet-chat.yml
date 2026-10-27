@@ -1,0 +1,7 @@
+url: https://github.com/lintwosix-beep/dsh-pet-chat
+name: lintwosix-beep/dsh-pet-chat
+category: fun
+description:
+  en: 'Desktop pet with a chat panel: QQ-style history, favorites, and branch threads that merge back into the log as a forward card; the panel docks beside the pet and resizes from its edges and corners.'
+  zh: '带聊天面板的桌宠：QQ 风格的历史记录、收藏，以及聊完会以合并转发卡片回到历史的支线对话；面板停靠在小女仆右侧，可从边缘与四角拖拽改大小。'
+icon: https://raw.githubusercontent.com/lintwosix-beep/dsh-pet-chat/main/assets/logo.png
