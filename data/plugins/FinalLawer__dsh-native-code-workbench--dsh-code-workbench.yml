@@ -1,0 +1,6 @@
+url: https://github.com/FinalLawer/dsh-native-code-workbench/tree/master/dsh-code-workbench
+name: FinalLawer/dsh-native-code-workbench#dsh-code-workbench
+category: ui
+description:
+  en: 'Code workbench in the right sidebar: a workspace file tree and a multi-tab Monaco editor with syntax highlighting and version-guarded saving, Tab completion from DeepSeek fill-in-the-middle, per-save checkpoints with rollback, codebase search (plus a codebase_search tool for the agent), and reference chips that insert a selection into the chat as an @path mention.'
+  zh: '右栏的代码工作台：工作区文件树 + 多标签 Monaco 编辑器（语法高亮、版本守卫保存），基于 DeepSeek FIM 的 Tab 补全，按次保存的检查点与回滚，代码库检索（另提供 codebase_search 工具给 Agent），以及把选中代码以 @路径 mention 插入对话的引用胶囊。'

@@ -37,6 +37,22 @@ import path from 'node:path'
 
 const PKG = 'dsh-plugin-catalog'
 const BUILT = 'docs/plugins.json'
+/**
+ * The market index rides along in the same package.
+ *
+ * It wanted to be its own package (`dsh-plugin-catalog-index`), and the
+ * first publish attempt failed with a 404: npm's trusted publishing is
+ * configured per package, and a package that does not exist yet cannot have
+ * that relationship set up from CI. Creating it needs a browser login on
+ * npmjs.com, so until someone does that the index ships here, where the
+ * publish already works.
+ *
+ * The cost is real and was measured: +684 KB gzipped on every catalog
+ * download (~2.3 MB of JSON). The catalog is cached and read once in a
+ * while, not per request, so it is acceptable — but splitting this file out
+ * is the right end state once the separate package exists.
+ */
+const INDEX_BUILT = 'docs/index.json'
 const REGISTRY = 'https://registry.npmjs.org'
 
 /** Content hash, so an unchanged catalog does not earn a version of its own. */
@@ -93,6 +109,13 @@ otherwise help refuse non-github.com hostnames.
 import catalog from 'dsh-plugin-catalog/plugins.json' with { type: 'json' }
 \`\`\`
 
+\`index.json\` in the same package is the list as a **plugin market index**
+(format 1, what dsh 0.2.1+ reads under Plugins → Discover → Index sources):
+
+\`\`\`
+https://cdn.jsdelivr.net/npm/dsh-plugin-catalog/index.json
+\`\`\`
+
 - **Entries:** ${entries}
 - **Version:** \`${version}\` (\`YYYY.MDD.BUILD\`, published only when the catalog changes)
 - **Source:** <https://github.com/awesome-dsh-plugin/awesome-dsh-plugin>
@@ -104,7 +127,10 @@ source repository. Published automatically; do not open pull requests here.
 }
 
 const built = fs.readFileSync(BUILT)
-const hash = sha256(built)
+const index = fs.readFileSync(INDEX_BUILT)
+// Both files, so a day that moves only the index still earns a version —
+// the hash is what tells tomorrow's run there is nothing new to publish.
+const hash = sha256(Buffer.concat([built, index]))
 if (hash === await publishedHash()) {
   console.log(`catalog unchanged (${hash.slice(0, 12)}) — nothing to publish`)
   process.exit(0)
@@ -114,6 +140,7 @@ const entries = JSON.parse(built.toString()).plugins.length
 const version = catalogVersion(new Date(), process.env.GITHUB_RUN_NUMBER ?? '0')
 const stage = fs.mkdtempSync(path.join(os.tmpdir(), 'dsh-catalog-'))
 fs.writeFileSync(path.join(stage, 'plugins.json'), built)
+fs.writeFileSync(path.join(stage, 'index.json'), index)
 fs.writeFileSync(path.join(stage, 'README.md'), readme(version, entries))
 fs.copyFileSync('LICENSE', path.join(stage, 'LICENSE'))
 fs.writeFileSync(path.join(stage, 'package.json'), JSON.stringify({
@@ -130,8 +157,8 @@ fs.writeFileSync(path.join(stage, 'package.json'), JSON.stringify({
   // The validator a consumer reads back on its next check, and what stops
   // this script republishing an identical catalog tomorrow.
   catalogSha: hash,
-  exports: { './plugins.json': './plugins.json' },
-  files: ['plugins.json'],
+  exports: { './plugins.json': './plugins.json', './index.json': './index.json' },
+  files: ['plugins.json', 'index.json'],
 }, null, 2) + '\n')
 
 console.log(`publishing ${PKG}@${version} — ${entries} entries, sha ${hash.slice(0, 12)}`)

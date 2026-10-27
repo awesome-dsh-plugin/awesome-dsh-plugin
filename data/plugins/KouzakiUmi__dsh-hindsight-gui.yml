@@ -1,0 +1,6 @@
+url: https://github.com/KouzakiUmi/dsh-hindsight-gui
+name: KouzakiUmi/dsh-hindsight-gui
+category: memory
+description:
+  en: 'Adds a Hindsight configuration and status dashboard to the DSH sidebar for connection, model, embedding and bank settings, with health checks and ownership-checked local service controls; memory tools are provided by the separate official integration. Hindsight itself is a separate service and is not installed by this plugin.'
+  zh: '在 DSH 侧边栏提供 Hindsight 配置与状态面板，管理连接、模型、向量和记忆库设置，支持健康检查及经归属核验的本机服务控制；记忆工具由独立的官方集成提供。Hindsight 服务需另行安装，本插件不负责部署。'

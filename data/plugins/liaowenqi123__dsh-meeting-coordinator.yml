@@ -1,0 +1,6 @@
+url: https://github.com/liaowenqi123/dsh-meeting-coordinator
+name: liaowenqi123/dsh-meeting-coordinator
+category: workflow
+description:
+  en: 'Meeting rooms for DSH sessions: joining a room grants the right to convene and the duty to attend, and a session belongs to at most one room. Convening forks each participant in with its own completed-turn context and with its tools stripped, a moderator that carries no context chooses the speakers, and every turn is appended to disk as it is spoken. After adjournment each participant receives its own minutes as a user turn and resumes work.'
+  zh: '给 DSH 会话装上会议室：加入会议室即同时获得召集权与参会义务，且一个会话只能属于一个会议室。召集时把每位参会者 fork 进场——带着它自己已完成的轮上下文，同时剥掉全部工具；主持人自身不带任何上下文，只负责挑下一位发言者；每条发言在说出的当下就落盘。散会后每人拿到一份只属于自己的纪要，作为一条用户输入送回工作区继续干活。'

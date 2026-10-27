@@ -1,0 +1,6 @@
+url: https://github.com/Meltllsy/dsh-todo-reminder
+name: Meltllsy/dsh-todo-reminder
+category: workflow
+description:
+  en: 'A global personal to-do list that is independent of any session: sidebar panel plus an edge dock that peeks on hover and pops open when a task is due, with desktop notification and custom sounds.'
+  zh: '全局个人待办（与任何会话无关）：侧边栏面板 + 贴边待办条（悬停探出、快到点自动弹开），到期桌面通知与自定义音效。'

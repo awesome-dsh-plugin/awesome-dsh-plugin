@@ -1,0 +1,6 @@
+url: https://github.com/zhengqiuyang/dsh-trust-panel
+name: zhengqiuyang/dsh-trust-panel
+category: security
+description:
+  en: 'Plain-language trust dashboard for the dsh trust family: aggregates the nine channels (injection interception, write denials, egress blocks, custody-chain verification, tool-surface and prompt drift, leftover scans, forgotten compaction constraints, profile composition) into one right-sidebar panel with a single status light and event cards that translate engine jargon into sentences a non-security user can act on; the read and egress engines run from the package''s own npm dependencies so those channels work even without the sibling plugins, and absent plugins simply show as not installed.'
+  zh: '信任面板：把 dsh 信任插件族九个通道（注入拦截、写拒绝、出网拦截、custody 链校验、工具面/系统提示词漂移、残留扫描、压缩遗忘约束、profile 组成）聚合成右侧栏一块仪表盘——一个状态灯 + 事件卡片，把引擎术语翻译成非安全背景用户能看懂并知道要不要处理的句子；read/egress 引擎随包自带 npm 依赖，未装兄弟插件也能工作，缺失的通道仅显示未安装。'

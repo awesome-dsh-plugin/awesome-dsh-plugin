@@ -1,0 +1,6 @@
+url: https://github.com/Shiyuedong-Jade/DM-inspect
+name: Shiyuedong-Jade/DM-inspect
+category: tools
+description:
+  en: Run a read-only Dameng DM8 database inspection with 85 checks and produce an HTML report.
+  zh: 只读巡检达梦 DM8 数据库：85 项检查项，生成 HTML 报告。

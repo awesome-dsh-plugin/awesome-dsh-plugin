@@ -1,0 +1,6 @@
+url: https://github.com/CXZAAA/dsh-radio
+name: CXZAAA/dsh-radio
+category: ui
+description:
+  en: Adds a 24px capsule to the composer status row that plays seven preset internet radio stations, with a live spectrum, now-playing metadata for Nightride FM and Radio Paradise, and remembered volume and station.
+  zh: 在 composer 状态行加一条 24px 胶囊，播放 7 个预置网络电台；带实时频谱、Nightride FM 与 Radio Paradise 的当前曲目，并记住音量和上次电台。

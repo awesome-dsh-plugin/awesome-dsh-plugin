@@ -1,0 +1,6 @@
+url: https://github.com/zyfgood/dsh-web-search-tavily
+name: zyfgood/dsh-web-search-tavily
+category: browser
+description:
+  en: 'Registers a Tavily search provider for the ctx.web seam and switches web_search to it, with a comma-separated apiKey list that rotates on 401/403/429/5xx and transport errors.'
+  zh: '为 ctx.web 接缝注册 Tavily 搜索 provider 并把 web_search 切到它；apiKey 支持逗号分隔多 key，遇到 401/403/429/5xx 与网络错误自动轮换。'

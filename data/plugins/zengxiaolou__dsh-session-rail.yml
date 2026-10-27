@@ -1,0 +1,6 @@
+url: https://github.com/zengxiaolou/dsh-session-rail
+name: zengxiaolou/dsh-session-rail
+category: session
+description:
+  en: 'Progress tab for the DSH right sidebar: the turn status of the session and the progress long-running tasks reported, in one tab beside the conversation.'
+  zh: 'DSH 右侧栏的进度页：会话每一轮的状态与长任务上报的进度集中在一个 tab 里，和对话并排看。'

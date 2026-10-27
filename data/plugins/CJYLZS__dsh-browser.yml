@@ -1,0 +1,6 @@
+url: https://github.com/CJYLZS/dsh-browser
+name: CJYLZS/dsh-browser
+category: browser
+description:
+  en: 'Give the dsh agent a real browser: each conversation gets its own Chrome or Edge process with its own profile and CDP port, driven by six tools and mirrored live in the right sidebar, where you can watch the work and take over by clicking or typing on the picture. Nothing else to install — it uses the Chrome or Edge already on the machine, downloads no browser, needs no companion app or extension, and keeps its tabs and sign-ins between tool calls.'
+  zh: '给 dsh agent 一个真正的浏览器：每个会话拥有自己的 Chrome 或 Edge 进程、独立 profile 与独立 CDP 端口，六个工具驱动它，右侧边栏实时镜像同一批页面，你既能看着它干活，也能直接在画面上点击、输入接管。除此之外无需再装东西——它驱动机器上已有的 Chrome 或 Edge，不下载浏览器，不需要配套应用或扩展，标签页与登录状态在工具调用之间一直保留。'

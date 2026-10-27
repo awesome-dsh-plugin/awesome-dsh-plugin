@@ -1,0 +1,6 @@
+url: https://github.com/DIPPER12138/dsh-mathtype
+name: DIPPER12138/dsh-mathtype
+category: skill
+description:
+  en: Windows only (desktop Word + full MathType 7 + Python 3.10+). Convert LaTeX placeholders in a Word .docx into real MathType OLE equations (Equation.DSMT4), preserving equation numbers, SEQ fields and cross-references.
+  zh: 仅 Windows（需桌面版 Word、完整版 MathType 7 与 Python 3.10+）。把 Word 文档中的 LaTeX 占位符转换为真正的 MathType OLE 公式（Equation.DSMT4），保留公式编号、SEQ 域与交叉引用。

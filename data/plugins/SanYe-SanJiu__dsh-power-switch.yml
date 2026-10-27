@@ -1,0 +1,6 @@
+url: https://github.com/SanYe-SanJiu/dsh-power-switch
+name: SanYe-SanJiu/dsh-power-switch
+category: ui
+description:
+  en: "Windows-only process control for the harness: a sidebar button that shuts DSH down through the host's own graceful exit path, an app-window / normal-tab switch on the Plugins card that rewrites the desktop shortcut and restarts, and advanced settings for the wait before exit, the process exit code and a force-quit option."
+  zh: "仅 Windows 的进程控制插件：侧边栏按钮经宿主的优雅退出通道关闭 DSH；插件卡片可切换「应用窗口 / 普通标签页」——会改写桌面快捷方式并重启；另有退出前等待、进程退出码与强制结束三项高级设置。"

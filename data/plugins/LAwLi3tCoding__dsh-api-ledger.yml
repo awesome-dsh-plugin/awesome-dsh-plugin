@@ -1,0 +1,6 @@
+url: https://github.com/LAwLi3tCoding/dsh-api-ledger
+name: LAwLi3tCoding/dsh-api-ledger
+category: usage
+description:
+  en: Tracks API token usage and estimated costs with per-route model pricing, optional billing groups, synchronized CNY/USD display, session reports, composer totals and a clickable daily sidebar total.
+  zh: 按 API 路由与模型配置单价，统计 Token 用量与估算费用，支持可选账单分组、同步切换 CNY/USD，以及会话报告、输入框费用和可点击的侧边栏今日金额。

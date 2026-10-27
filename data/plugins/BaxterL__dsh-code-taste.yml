@@ -1,0 +1,6 @@
+url: https://github.com/BaxterL/dsh-code-taste
+name: BaxterL/dsh-code-taste
+category: memory
+description:
+  en: Learns a user's coding conventions from instructions and corrections, stores them as confidence-scored rules in editable Markdown, and injects them as reference data into every session. Rules that decay out of range or contradict a newer rule stay visible for review instead of being applied.
+  zh: 从指令和纠正里学习编码习惯，存成带置信度、可手工编辑的 Markdown 规则，并在每个会话中作为参考数据注入。衰减出注入窗口或与更新规则冲突的条目会留在待审列表里，而不是继续生效。

@@ -1,0 +1,7 @@
+url: https://github.com/qiyuexue-xiyu/dsh-tool-cost-hint
+name: qiyuexue-xiyu/dsh-tool-cost-hint
+category: usage
+description:
+  en: 'Per-turn tool cost line in the chat stream: after each turn a collapsible row under the reply lists which tools ran, how many times, and how many tokens each tool injected into the context (input plus output), expandable to per-tool detail.'
+  zh: '每轮对话结束后在回复底部追加一行可折叠提示：列出这一轮调用了哪些工具、各几次、每个工具往上下文注入了多少 token（输入加输出），点开可看逐工具明细。'
+tarball: https://github.com/qiyuexue-xiyu/dsh-tool-cost-hint/releases/download/v0.2.0/dsh-tool-cost-hint-0.2.0.tgz

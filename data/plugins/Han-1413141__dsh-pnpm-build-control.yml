@@ -1,0 +1,7 @@
+url: https://github.com/Han-1413141/dsh-pnpm-build-control
+name: Han-1413141/dsh-pnpm-build-control
+category: dev
+description:
+  en: "Control pnpm build-script approval across DSH profiles from Add Plugin, and repair same-Git-URL updates on DSH 0.2.0-rc.2."
+  zh: "在“添加插件”中统一控制各 DSH 配置的 pnpm 构建脚本审批，并修复 DSH 0.2.0-rc.2 的同一 Git 地址更新问题。"
+tarball: https://github.com/Han-1413141/dsh-pnpm-build-control/releases/download/v0.1.4/dsh-pnpm-build-control-0.1.4.tgz

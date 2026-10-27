@@ -1,0 +1,6 @@
+url: https://github.com/wuuuuu123-32/dsh-tandem
+name: wuuuuu123-32/dsh-tandem
+category: workflow
+description:
+  en: 'Runs a second agent: hands independent subtasks to a local Codex CLI in parallel (up to three at a time), and asks it to review a design or a plan before the user sees it, returning conclusion, evidence, counterexamples and a verification step. A dispatch missing its timeout or its acceptance check is rejected by the plugin, not by the model remembering to check.'
+  zh: '双 agent 协作：把互不依赖的子任务并行交给本机 Codex（同时最多三路），并在方案交给你看之前先让它盲审一轮，必须回「结论 / 证据 / 反例 / 验证方式」四段；缺超时或缺验收判据的派活会被插件当场拒绝，不靠模型自己记得。'

@@ -1,0 +1,6 @@
+url: https://github.com/Synapse-ACh/dsh-subagent-cost
+name: Synapse-ACh/dsh-subagent-cost
+category: usage
+description:
+  en: Counts the subagent sessions a conversation spawned and shows their token usage and CNY cost in the composer dock, grouped by parent turn.
+  zh: 在输入框工具条上统计本会话派出的子智能体 token 用量与人民币花费，按 turn 分组。

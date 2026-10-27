@@ -1,0 +1,7 @@
+url: https://github.com/raven3005672/dsh-plugin-highlight-notes
+name: raven3005672/dsh-plugin-highlight-notes
+category: ui
+icon: https://raw.githubusercontent.com/raven3005672/dsh-plugin-highlight-notes/master/icon.png
+description:
+  en: Highlight or quote any passage of an answer, attach a note to it, then send the excerpt back to the composer as a quoted instruction.
+  zh: 在回答里标出任意一段文字、写上备注，再把引用放回输入框当作带上下文的指令发出。

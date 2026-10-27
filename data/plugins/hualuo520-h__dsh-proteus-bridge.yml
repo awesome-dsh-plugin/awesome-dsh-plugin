@@ -1,0 +1,6 @@
+url: https://github.com/hualuo520-h/dsh-proteus-bridge
+name: hualuo520-h/dsh-proteus-bridge
+category: tools
+description:
+  en: 'Drives Proteus 8/9 interactive simulation from the agent through eleven proteus_* tools: connect, simulation start/stop/status, probe readings, a project save that checks the file hash and mtime actually changed, and layout suggestions computed locally; on machines that register the Labcenter.InteractiveSimulation COM server it also places devices from a whitelist and queries and connects pins, while without COM it falls back to a keyboard-driven UI transport covering the simulation lifecycle and saving. Requires Windows with a local Proteus 8/9 installation.'
+  zh: '让 Agent 通过 11 个 proteus_* 工具控制 Proteus 8/9 交互仿真：连接、仿真启停与状态、探针读数、会校验文件哈希与 mtime 确已变化的工程保存、纯本地计算的布局建议；本机注册了 Labcenter.InteractiveSimulation COM 服务器时还可按白名单放置器件、查询引脚并连线，没有 COM 则降级到只覆盖仿真生命周期与保存的键盘驱动 UI 传输。需要 Windows 与本地安装的 Proteus 8/9。'

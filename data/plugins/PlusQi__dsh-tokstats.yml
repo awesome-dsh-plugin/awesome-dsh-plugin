@@ -1,0 +1,7 @@
+url: https://github.com/PlusQi/dsh-tokstats
+name: PlusQi/dsh-tokstats
+category: usage
+description:
+  en: 'See where your tokens go: cross-session usage stats with model and workspace breakdowns, plus a next-turn forecast.'
+  zh: 'token 花在哪一目了然：跨会话用量统计、模型与工作区排行，附发送前预告与草稿整理。'
+icon: https://raw.githubusercontent.com/PlusQi/dsh-tokstats/master/docs/assets/icon-180.png

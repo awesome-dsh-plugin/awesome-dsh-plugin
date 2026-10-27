@@ -309,9 +309,17 @@ if (pending.length && ok === 0) {
   console.warn(`every one of the ${pending.length} probe(s) failed — nothing refreshed this run`)
   console.warn('Usually an exhausted GitHub API quota or an API outage, not a data problem.')
 }
+// A cold cache (no committed data) plus an all-fail probe run must NOT block
+// the build. Per the file header, "absence of update notes is a normal state
+// downstream", and this step's `actions/cache` save only runs if the step
+// SUCCEEDS — so exiting 1 here strands the updates cache in a permanent miss
+// and makes every subsequent nightly fail too (the exact "always fails" loop).
+// Leave the file untouched and exit 0; the next successful run populates and
+// banks it. The graceful exit below already covers the same case for a warm
+// cache, so this is purely the cold-start safety valve.
 if (!have && urls.length) {
-  console.error(`refusing to replace ${OUT_FILE} with an empty map over ${urls.length} listed repos`)
-  process.exit(1)
+  console.warn(`no update data for any of the ${urls.length} listed repos (cold cache + failed probe) — leaving ${OUT_FILE} untouched, not failing the build`)
+  process.exit(0)
 }
 if (ok === 0 && pending.length) {
   console.log(`${OUT_FILE} left as-is (${have} repos, nothing new to record)`)

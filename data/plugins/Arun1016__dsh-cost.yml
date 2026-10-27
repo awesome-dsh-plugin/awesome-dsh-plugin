@@ -1,0 +1,7 @@
+url: https://github.com/Arun1016/dsh-cost
+name: Arun1016/dsh-cost
+category: usage
+description:
+  en: 'Account balance and cost statistics pill for DeepSeek Harness. It adds a pill at the right-hand end of the official stats row below the session composer, combining the billing period (peak/off-peak, colour-coded), the account balance and the current session cost; clicking it expands a per-session breakdown with cache-hit input, cache-miss input and output amounts, plus cost per model. The rate table is refreshed with plugin releases to follow official pricing.'
+  zh: 'DeepSeek Harness 的账户余额及费用统计胶囊。它在会话输入框下方的官方统计行右侧新增一枚胶囊，集成计费时段（高峰/低谷，用颜色区分）、账户余额与会话费用；点击展开可查看本次会话的详细费用统计，包括缓存命中输入、缓存未命中输入、输出三项金额，以及按模型拆分的花费。费率表随插件版本更新，以跟随官方调价。'
+tarball: https://github.com/Arun1016/dsh-cost/releases/latest/download/dsh-cost.tgz

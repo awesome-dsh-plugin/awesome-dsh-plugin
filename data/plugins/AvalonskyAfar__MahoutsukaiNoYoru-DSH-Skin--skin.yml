@@ -1,0 +1,6 @@
+url: https://github.com/AvalonskyAfar/MahoutsukaiNoYoru-DSH-Skin/tree/master/skin
+name: AvalonskyAfar/MahoutsukaiNoYoru-DSH-Skin#skin
+category: theme
+description:
+  en: A Witch on the Holy Night (Mahoutsukai no Yoru) visual-novel theme for the DeepSeek Harness Web UI, with original-style menus, three characters with personas, day and night playlists, and an ending sequence. The repo ships no assets of its own; the 380 files / 263 MiB it drives (136 sprites, 208 UI parts, 13 backgrounds, 23 audio) must be recovered from your own copy of the original game, and the screen stays largely empty until then. The 23 audio files are a header strip away from working OGG; the 357 images use proprietary .mzp/.cbg formats, so the per-file mapping guide offers two routes and one of them expects you to supply your own decoder.
+  zh: 《魔法使之夜》(Witch on the Holy Night) 风格的 DeepSeek Harness Web UI 整屏皮肤：原作式菜单、三角色与人格 skill、昼夜两套曲单、片尾演出。仓库自身不含素材——驱动它需要 380 个文件、263 MiB（立绘 136、UI 构件 208、背景 13、音频 23），须从你自己拥有的原著副本中还原，在此之前界面基本是空的。其中 23 个音频文件切掉 64 字节头就是合法 OGG；357 张图像是私有 .mzp/.cbg 格式，仓库附逐文件映射指南，给出两条路线，其中一条要你自备解码器。

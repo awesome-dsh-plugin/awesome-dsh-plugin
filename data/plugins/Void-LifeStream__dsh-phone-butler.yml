@@ -1,0 +1,6 @@
+url: https://github.com/Void-LifeStream/dsh-phone-butler
+name: Void-LifeStream/dsh-phone-butler
+category: tools
+description:
+  en: 'Inspect and tidy a real Android phone over adb: storage surveys, per-app data sizes read from dumpsys diskstats without root, cache clearing that preserves app data, directory measurements and screenshots — five tools; reads never modify anything, writes require explicit confirmation.'
+  zh: '用 adb 查看并打理一台真实的 Android 手机：存储体检、未 root 也能读到的逐应用数据大小（来自 dumpsys diskstats）、只清缓存不动数据的清理、目录统计与截图——共五个工具；读取永不改动任何东西，写入必须显式确认。'

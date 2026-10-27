@@ -1,0 +1,6 @@
+url: https://github.com/XIUDENBENNY/dsh-claude-quote
+name: XIUDENBENNY/dsh-claude-quote
+category: ui
+description:
+  en: 'Claude Code Desktop-style selection quoting: select text in a conversation to reply to that passage from a popover, or fork the session into a side chat in the right sidebar with the selection quoted. Quotes sit above the composer as removable cards, are sent as plain Markdown blockquotes in the same format as Claude Code Desktop, and render as clamped quote blocks in sent messages.'
+  zh: 'Claude Code Desktop 风格的选区引用：在对话里选中文字，可在弹窗里针对这段话回复，或把当前会话 fork 成右侧栏的侧边对话并带上引用。引用以可移除的卡片放在输入框上方，按与 Claude Code Desktop 相同的格式作为纯 Markdown 引用块发送，已发送消息里显示为可折叠的引用块。'

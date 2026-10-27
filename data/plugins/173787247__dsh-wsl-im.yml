@@ -2,5 +2,5 @@ url: https://github.com/173787247/dsh-wsl-im
 name: 173787247/dsh-wsl-im
 category: wsl
 description:
-  en: 'Bridges Feishu, WeCom aibot, DingTalk Stream and QQ Gateway chats into dsh agents over outbound long connections, with an im_status tool. Ships with an empty user allowlist, which means EVERYONE can drive your agent — set allowedUserIds before exposing a bot; IM input can run tools on the host.'
-  zh: '通过出站长连接把飞书、企微智能机器人、钉钉 Stream、QQ 官方 Gateway 的会话桥进 dsh agent，并提供 im_status 工具。用户白名单默认为空，即**任何人**都能驱动你的 agent——对外暴露机器人前请先设置 allowedUserIds；IM 输入可在宿主机上执行工具。'
+  en: 'Bridges Feishu, WeCom, DingTalk, QQ, Slack, Discord, Telegram and Mattermost into dsh agents (outbound WS/Stream/Gateway/long-poll/webhook), with im_status, optional local Whisper ASR, plain-text outbound for QQ/DingTalk/Telegram/Mattermost, and env CSV allowlists (DSH_IM_*_ALLOWED_USER_IDS). Empty allowedUserIds means EVERYONE can drive your agent — set a whitelist before exposing a bot.'
+  zh: '把飞书、企微、钉钉、QQ、Slack、Discord、Telegram、Mattermost 桥进 dsh agent（出站长连接/长轮询/Webhook），提供 im_status、可选本机 Whisper ASR、QQ/钉钉/TG/MM 纯文本出站，以及环境变量白名单（DSH_IM_*_ALLOWED_USER_IDS）。allowedUserIds 为空即任何人都能驱动 agent——对外暴露前请先设白名单。'

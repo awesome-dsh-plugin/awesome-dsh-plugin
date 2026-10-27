@@ -1,0 +1,6 @@
+url: https://github.com/ZeroKingHao/dsh-cleaner/tree/main/plugin
+name: ZeroKingHao/dsh-cleaner#plugin
+category: session
+description:
+  en: 'Session deletion for DeepSeek Harness: a sidebar menu item, a workspace-grouped batch cleanup panel and a session_delete tool (dry-run by default). Deletes session logs, projection cache, workspace-registry references and derived search indexes, and cascades to all subagent sessions.'
+  zh: '为 DeepSeek Harness 补上会话删除：侧边栏菜单项、按工作区分组的批量清理面板、默认 dry-run 的 session_delete 工具。删除会话日志、投影缓存、工作区注册表引用与派生搜索索引，并级联删除全部子代理会话。'

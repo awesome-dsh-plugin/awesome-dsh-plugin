@@ -1,0 +1,7 @@
+url: https://github.com/yusufameri/dsh-t3-new-session-screen
+name: yusufameri/dsh-t3-new-session-screen
+category: ui
+tarball: https://github.com/yusufameri/dsh-t3-new-session-screen/releases/latest/download/dsh-t3-new-session-screen.tgz
+description:
+  en: 'A T3 Code-style New Session screen for the composer: a "What should we build in <project>?" headline whose project name opens a workspace menu, a reasoning-effort picker in the composer tool row, and a git branch strip under the card that searches local and remote refs and switches with git checkout.'
+  zh: '把 T3 Code 的新会话界面移植到 DSH 输入框：标题「What should we build in <project>?」里的项目名可点开工作区菜单，工具栏里新增推理强度选择器，卡片下方新增 git 分支条，可搜索本地与远程引用并用 git checkout 切换。'

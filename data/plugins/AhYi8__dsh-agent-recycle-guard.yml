@@ -1,0 +1,6 @@
+url: https://github.com/AhYi8/dsh-agent-recycle-guard
+name: AhYi8/dsh-agent-recycle-guard
+category: security
+description:
+  en: 'Rewrites agent-issued delete commands (PowerShell `Remove-Item` and its aliases, Bash `rm`/`unlink`/`rmdir`, CMD `del`/`erase`/`rd`/`rmdir`) into system recycle-bin operations on Windows, Linux and macOS, best-effort checks scripts for the same operations before they run, and keeps no permanent-delete fallback.'
+  zh: '把 Agent 提交的删除命令（PowerShell `Remove-Item` 及别名、Bash `rm`/`unlink`/`rmdir`、CMD `del`/`erase`/`rd`/`rmdir`）改写为 Windows、Linux、macOS 的系统回收站操作，执行脚本前尽力检查其中的同类删除操作，且不提供永久删除兜底。'

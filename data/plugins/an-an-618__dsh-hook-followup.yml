@@ -1,0 +1,7 @@
+url: https://github.com/an-an-618/dsh-hook-followup
+name: an-an-618/dsh-hook-followup
+category: ui
+description:
+  en: 'Adds a lightweight follow-up row under each DSH answer: one anchor question plus 1-3 user-voice quick replies, so the next turn is one click away; supports always / balanced / conservative strategies and optional refusal or emotional-context skips.'
+  zh: '在每条 DSH 回答下方加一行轻量 follow：一句锚定正文的追问 + 1–3 条用户口吻快捷回复，让下一轮对话一键继续；支持 always / balanced / conservative 策略，并可跳过拒绝回答与情绪场景。'
+tarball: https://github.com/an-an-618/dsh-hook-followup/releases/download/v0.1.1/an-an-618-dsh-hook-followup-0.1.1.tgz

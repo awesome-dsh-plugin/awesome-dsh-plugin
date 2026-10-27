@@ -1,0 +1,6 @@
+url: https://github.com/koliy82/dsh-rustvy
+name: koliy82/dsh-rustvy
+category: model
+description:
+  en: "Vendor marks in the model picker plus a model list kept in step with the provider: mirrors the public catalog and logos to loopback, and regenerates the pi-ai route's models from that route's own endpoint, showing the drift before anything is written."
+  zh: "在模型选择器中显示厂商标志，并让模型列表与提供方保持同步：把公开目录与标志镜像到本地回环地址，再依据路由自身的接口重新生成 pi-ai 路由的模型列表，写入之前先显示差异。"

@@ -1,0 +1,7 @@
+url: https://github.com/yezitotempeace/dsh-job-progress
+name: yezitotempeace/dsh-job-progress
+category: ui
+tarball: https://github.com/yezitotempeace/dsh-job-progress/releases/latest/download/dsh-job-progress.tgz
+description:
+  en: 'Draggable floating card that follows background jobs: a progress bar and percentage parsed from wget/curl/apt/pip output, elapsed time, ETA when present, and the latest output line.'
+  zh: '可拖动的后台任务浮动卡片：从 wget/curl/apt/pip 等输出解析进度条与百分比，显示耗时、剩余时间（有则显示）和最新一行输出。'

@@ -117,10 +117,26 @@ jobs:
               for (const s of commit.checkSuites.nodes)
                 for (const r of s.checkRuns.nodes) if (!runs.has(r.name)) runs.set(r.name, r.conclusion)
               // `Submission gate` is the check that actually judges the
-              // submission, and it must be green. NEUTRAL is fail-open from an
-              // exhausted App quota, not a pass, so it is excluded here the
-              // same way it is excluded from a merge.
-              if (runs.get('Submission gate') !== 'SUCCESS') continue
+              // submission.
+              //
+              // NEUTRAL is excluded: that is the gate running and failing open
+              // on an exhausted App quota, not a pass, and it says nothing
+              // about the submission either way.
+              //
+              // ABSENT is a different state and used to be filtered along with
+              // it, by asking for `!== 'SUCCESS'`. A pull request whose branch
+              // conflicts with main has no merge ref, so GitHub never creates
+              // its `PR check` run and the gate never gets to run — both checks
+              // are simply missing. That is the one state an author cannot get
+              // out of by doing what they were asked: they can push a complete
+              // fix and still see no CI at all, and this list was the one place
+              // that could have said so. #2202 held a green verdict from the
+              // run before its branch went stale and then sat through four
+              // author follow-ups (08-31, 09-06, 09-08, 09-15) in silence. Its
+              // remedy is a maintainer rebase, not another push, so it belongs
+              // here more than a green gate does.
+              const gate = runs.get('Submission gate')
+              if (gate !== 'SUCCESS' && gate !== undefined) continue
 
               // `check` is reported, NOT required. Requiring it hid the
               // largest recoverable group in the queue: 21 held pull requests
@@ -170,6 +186,8 @@ jobs:
                 days: Math.floor((Date.now() - movedAt) / 86400000),
                 pings,
                 check,
+                // ✅ the gate ran and passed; — it never ran (see above).
+                gate: gate === 'SUCCESS' ? '✅' : '—',
               })
             }
 
@@ -182,13 +200,20 @@ jobs:
             const body = [
               MARKER,
               '',
-              'Open pull requests with a green `Submission gate` that still carry `held: author`',
-              'and have had a push or an author comment **since the label was applied**.',
+              'Open pull requests carrying `held: author` whose `Submission gate` is green **or',
+              'has never had the chance to run**, and that have had a push or an author comment',
+              '**since the label was applied**.',
               '',
               'Being listed here is not a verdict — it means the author believes the hold is',
               'addressed and nobody has re-read it yet. The label is never removed automatically:',
               'only a re-review can retire it. This list exists so the re-review starts from a',
               'list instead of from memory.',
+              '',
+              'A `—` in the `gate` column means the gate has never run, which almost always',
+              'means the branch conflicts with `main`: a conflicted pull request has no merge ref,',
+              'so GitHub never creates its `PR check` run at all. That is the one state an author',
+              'cannot fix by pushing — they can do everything that was asked and still see no CI —',
+              'so the remedy is a maintainer rebase onto `main`.',
               '',
               'The `check` column is informational. A red `check` is most often just the',
               '`READMEs match data/plugins` step on a branch whose README snapshot predates a',
@@ -197,10 +222,10 @@ jobs:
               '',
               rows.length
                 ? [
-                    '| PR | author | held since | moved | waiting | pings | check |',
-                    '|---|---|---|---|---|---|---|',
+                    '| PR | author | held since | moved | waiting | pings | gate | check |',
+                    '|---|---|---|---|---|---|---|---|',
                     ...rows.map((r) =>
-                      `| [#${r.number}](${r.url}) ${r.title.replace(/\|/g, '\\|').slice(0, 60)} | @${r.author} | ${r.held} | ${r.moved} | ${r.days}d | ${r.pings} | ${r.check === 'SUCCESS' ? '✅' : '⚠️ ' + r.check.toLowerCase()} |`),
+                      `| [#${r.number}](${r.url}) ${r.title.replace(/\|/g, '\\|').slice(0, 60)} | @${r.author} | ${r.held} | ${r.moved} | ${r.days}d | ${r.pings} | ${r.gate} | ${r.check === 'SUCCESS' ? '✅' : '⚠️ ' + r.check.toLowerCase()} |`),
                   ].join('\n')
                 : '_Nothing is waiting — every held pull request is still waiting on its author._',
               '',

@@ -1,0 +1,6 @@
+url: https://github.com/nishuoyang/dsh-wallpaper-bg
+name: nishuoyang/dsh-wallpaper-bg
+category: theme
+description:
+  en: 'Standalone wallpaper background for the DSH Web UI and desktop app: built-in wallpapers, local image/video uploads stored in IndexedDB, and a read-only local Wallpaper Engine library served by the bundled wallpaper-engine-api service in the repository; renders images, video and scene workshop previews, with light-fog/dark-overlay, blur, brightness and safe-zoom controls plus a read-only follow-desktop-wallpaper mode.'
+  zh: 'DSH 网页界面与桌面端的独立壁纸背景：内置壁纸、本地图片/视频上传（存 IndexedDB）、只读接入本机 Wallpaper Engine 壁纸库（需仓库自带的 wallpaper-engine-api 服务）；支持图片、视频与场景工坊预览渲染，可调浅色雾层/深色遮罩、模糊、亮度与安全放大，并可只读跟随桌面壁纸。'

@@ -1,0 +1,6 @@
+url: https://github.com/CAOGGL/dsh-port-token
+name: CAOGGL/dsh-port-token
+category: ui
+description:
+  en: 'Puts a key badge in the bottom-right corner of the dsh Web GUI that shows the port this instance is listening on and the remote-access token printed by dsh web at startup, with a copy button per value; clicking the badge rotates the key into a cross, and clicking it again or anywhere beside it collapses the panel.'
+  zh: 在 dsh Web 界面右下角放一个钥匙徽标，点开显示本实例的监听端口和 dsh web 启动时打印的远程访问令牌，每项都可一键复制；钥匙图标旋转成叉号，再点一次或点旁边空白即可收起。

@@ -1,0 +1,6 @@
+url: https://github.com/kangtsang/dsh-worktree-space
+name: kangtsang/dsh-worktree-space
+category: git
+description:
+  en: "Worktree Space: puts a workspace task that spans one or more Git repositories in its own task space directory - each repository in it gets its own worktree on one shared task branch; the space is registered as a DSH Workspace so sessions start right there, and multiple tasks run side by side without interfering. Finishing a task can merge the work back into each repository's target branch, remove the worktrees, and file whatever Git does not track in an archive directory you choose."
+  zh: "Worktree Space：将一个可包含多个 Git 仓库的工作区任务放进独立的任务空间目录——参与的每个仓库使用同一个任务分支各开一个 worktree；空间自动注册为 DSH 工作区，会话直接在其中开工，多个任务并行推进、互不干扰。收尾时可合并回各仓库目标分支、移除 worktree，并把 Git 未跟踪的文件归档到指定目录；结束任务时可选把未提交的变更和合并冲突交给 agent 处理。"

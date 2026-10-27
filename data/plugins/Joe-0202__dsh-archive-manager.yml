@@ -1,0 +1,6 @@
+url: https://github.com/Joe-0202/dsh-archive-manager
+name: Joe-0202/dsh-archive-manager
+category: session
+description:
+  en: 'Two-tab archive panel (archived / active) where every row offers archive or unarchive next to permanent delete; each row shows its bound workspace folder as a clickable path, and queued archive-entry cleanup keeps a deleted session from resurfacing in the active list.'
+  zh: 双 Tab 归档面板（已归档 / 活跃），每行的归档或取消归档与彻底删除并排；显示绑定的工作目录且可直接点击打开，删除后的归档记录进入待清理队列，避免已删会话重新出现在活跃列表。

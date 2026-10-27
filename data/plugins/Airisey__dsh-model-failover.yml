@@ -1,0 +1,6 @@
+url: https://github.com/Airisey/dsh-model-failover
+name: Airisey/dsh-model-failover
+category: tools
+description:
+  en: Model failover router that queues all connected DSH models, retries with continue text on failure, switches to next model, and quarantines failing models for the day.
+  zh: 模型接力路由器：将已接入 DSH 的全部模型排成优先级队列，失败时自动重试「继续」，不行则切换下一模型，并将故障模型隔离至次日。

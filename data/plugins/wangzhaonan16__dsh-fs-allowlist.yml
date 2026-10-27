@@ -1,6 +1,0 @@
-url: https://github.com/wangzhaonan16/dsh-fs-allowlist
-name: wangzhaonan16/dsh-fs-allowlist
-category: security
-description:
-  en: Approval-free writes into whitelisted directories — wraps the filesystem fence for write/edit tools and auto-answers bash sandbox escalations that touch whitelisted paths, with a settings GUI.
-  zh: 白名单目录写入免审批——write/edit 文件工具直通白名单栅栏，命中白名单的 bash 沙箱升权自动放行，设置页可视化管理目录与开关。

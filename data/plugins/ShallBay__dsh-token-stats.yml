@@ -1,0 +1,7 @@
+url: https://github.com/ShallBay/dsh-token-stats
+name: ShallBay/dsh-token-stats
+tarball: https://github.com/ShallBay/dsh-token-stats/releases/latest/download/dsh-token-stats.tgz
+category: usage
+description:
+  en: 'Token usage dashboard for the whole harness: billed tokens from every session are rolled up per session and turn (uncached input, cache read, cache write and output) with a peak/off-peak CNY cost estimate, and a "Token 用量" entry above Settings in the sidebar opens the dashboard at /token-stats, in a new tab on the web and in an in-app popup on the Desktop. The page recollects and repaints every 60 seconds while the tab is visible. Usage is read from the same session event stream dsh-token-meter consumes, accepting 0.1.x assistant/chunk and 0.2.x assistant/message and assistant/attempt, and counting an attempt repeated after an llm retry as its own billed call; cold history is seeded once from a persisted rollup file and afterwards only logs whose mtime or size changed are re-parsed. Host half and client half ship in the one package.'
+  zh: '整个 Harness 的 Token 用量看板：把全部会话的计费 token（未缓存输入、缓存读取、缓存写入、输出）按会话与轮次汇总，并给出高峰/低谷的人民币预估费用；侧边栏「Token 用量」入口（在设置上方）打开 /token-stats 看板，Web 端新标签页、桌面端应用内弹窗。标签页可见时每 60 秒自动重新采集并重绘。用量读取的是 dsh-token-meter 消费的同一条会话事件流，兼容 0.1.x 的 assistant/chunk 与 0.2.x 的 assistant/message、assistant/attempt；llm 重试后的再次采样按一次新的计费计入；冷历史只从持久化 rollup 文件播种一次，之后仅对 mtime/size 变化的日志做增量重解析。宿主半与客户端半在同一个包里。'

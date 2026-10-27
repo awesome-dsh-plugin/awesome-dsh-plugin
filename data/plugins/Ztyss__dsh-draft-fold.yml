@@ -1,0 +1,7 @@
+url: https://github.com/Ztyss/dsh-draft-fold
+name: Ztyss/dsh-draft-fold
+category: ui
+tarball: https://github.com/Ztyss/dsh-draft-fold/releases/latest/download/dsh-draft-fold.tgz
+description:
+  en: Folds long composer drafts into a compact summary card once a character threshold is reached, without changing message submission.
+  zh: 输入草稿超过阈值后自动折叠为摘要卡，不改变消息提交路径。

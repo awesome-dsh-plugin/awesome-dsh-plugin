@@ -1,0 +1,6 @@
+url: https://github.com/Firefox2100/dsh-agentic-roleplay/tree/main/packages/dsh-roleplay-state
+name: Firefox2100/dsh-agentic-roleplay#state
+category: memory
+description:
+  en: Persistent SQLite session state, story memory and recall, repositories, and model-facing record tools for DSH roleplay plugins.
+  zh: 为 DSH 角色扮演插件提供持久化 SQLite 会话状态、故事记忆与回忆、数据仓库以及面向模型的记录工具。

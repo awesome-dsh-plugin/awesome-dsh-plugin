@@ -2,5 +2,5 @@ url: https://github.com/g-yixuan/dsh-sidenote
 name: g-yixuan/dsh-sidenote
 category: ui
 description:
-  en: Codex-style side chat + selection annotations for DSH web.
-  zh: Codex 风格侧边聊天 + 划选注释的 DSH 插件。
+  en: Side chats and selection annotations for DeepSeek Harness, preserving full conversation history and bringing findings back to the main thread.
+  zh: 为 DeepSeek Harness 提供侧边追问与划选注释，保留完整对话历史，将结论带回主线。

@@ -1,0 +1,6 @@
+url: https://github.com/bennett-dsh/dsh-plugin-usage
+name: bennett-dsh/dsh-plugin-usage
+category: usage
+description:
+  en: A usage and reference-cost panel for DeepSeek Harness with today, 7-day, 30-day, all-time and custom ranges aggregated by hour or day; a model filter and a per-model breakdown of requests, input and output tokens, cache, reference cost and share; a model-share card showing the top four models by total tokens with the rest grouped as others; a configurable per-million-token price table seeded with DeepSeek's prices, with reference cost switchable between ¥ and $ at a fixed 1 USD = 7 CNY; and a yearly heatmap drawn only with theme variables, with no third-party chart library.
+  zh: DeepSeek Harness 的用量与参考成本面板，含今日 / 近 7 天 / 近 30 天 / 全部 / 自定义范围并按小时或天聚合；模型筛选与按模型明细（请求数、输入/输出 Token、缓存、参考成本、占比）；按总 Token 显示前 4 个模型、其余归入「其它」的模型占比卡；可配置的每百万 Token 价格表（内置 DeepSeek 常见模型价），参考成本可在 ¥ / $ 间按固定汇率 1 USD = 7 CNY 切换；年度热力图只用主题变量绘制，不引第三方图表库。

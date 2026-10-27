@@ -1,0 +1,7 @@
+url: https://github.com/Zeppeli777/idea-git
+name: Zeppeli777/idea-git
+category: git
+tarball: https://github.com/Zeppeli777/idea-git/releases/download/v1.0.1/zeppeli777-idea-git-1.0.1.tgz
+description:
+  en: 'IDEA-style Git workbench for the Web UI: commit graph with lanes and ref labels, log filters, commit details, split and unified diffs with per-hunk staging, a fine-grained zero-context mode, local changes with amend and sign-off, rename-following file history, per-line annotate, stash, branch operations, compare, tags, an interactive rebase planner and conflict resolution. Records which model produced a commit by stamping an Assisted-by trailer from the live session, and renders any existing commit trailers as chips, so AI-authored history stays traceable.'
+  zh: 'IDEA 风格的 Git 工作台：提交图（泳道与引用标签）、日志筛选、提交详情、并排与统一差异、按 hunk 暂存、零上下文的细粒度模式、本地更改（含修补与 sign-off）、跟随重命名的文件历史、逐行注解、Stash、分支操作、比较、标签、交互式变基与冲突解决。按活跃会话盖上 Assisted-by trailer 记录提交由哪个模型产生，并把已有的 trailer 渲染成标签，让 AI 参与的历史可追溯。'

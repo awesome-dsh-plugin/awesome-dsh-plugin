@@ -1,0 +1,6 @@
+url: https://github.com/Imzl-zl/dsh-redo
+name: Imzl-zl/dsh-redo
+category: session
+description:
+  en: "Adds Regenerate and Edit and resend to each message you already sent: Regenerate re-answers the same text in one click without going through the composer; Edit and resend retracts that message and everything after it in place — out of the transcript and out of the model context, in the same session with no new branch — then puts its text and images back into the composer, so the edited send rewrites the conversation from that point. Messages carrying files rather than images stay disabled."
+  zh: "给你发出的每条消息加上「重新生成」和「编辑重发」：重新生成一键用同样的文字重新回答，不经过输入框；编辑重发就地撤回这条消息及其之后的内容——从时间线和模型上下文里一起消失，不新建会话也不开新分支——再把文字和图片放回输入框，改完发送就从那一条重写对话。带文件（非图片）的消息两个操作置灰。"

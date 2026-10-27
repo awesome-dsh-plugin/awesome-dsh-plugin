@@ -1,0 +1,7 @@
+url: https://github.com/jidekaixin2dian/dsh-toolgate
+name: jidekaixin2dian/dsh-toolgate
+category: tools
+description:
+  en: Manage MCP servers and skills in DeepSeek Harness, and control which tools enter the next prompt.
+  zh: 管理 MCP 服务器与 Skill，并控制下一轮 prompt 带入哪些工具。
+

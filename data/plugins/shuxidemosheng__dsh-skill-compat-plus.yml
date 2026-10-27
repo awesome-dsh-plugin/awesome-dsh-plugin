@@ -1,0 +1,6 @@
+url: https://github.com/shuxidemosheng/dsh-skill-compat-plus
+name: shuxidemosheng/dsh-skill-compat-plus
+category: tools
+description:
+  en: 'Mounts external skill directories (Claude Code, Codex, ZCode) into DSH as read-only skill providers: frontmatter field mapping, name slug normalization and hot reload.'
+  zh: '技能兼容层：把 Claude Code / Codex / ZCode 的技能目录挂载为 dsh 的只读技能提供方——支持 frontmatter 字段映射、名称 slug 规范化与热重载。'

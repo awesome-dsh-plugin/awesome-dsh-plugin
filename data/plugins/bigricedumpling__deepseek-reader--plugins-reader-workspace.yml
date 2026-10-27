@@ -1,0 +1,7 @@
+url: https://github.com/bigricedumpling/deepseek-reader/tree/main/plugins/reader-workspace
+name: bigricedumpling/deepseek-reader#reader-workspace
+category: docs
+description:
+  en: Typocket reads, edits and organizes local documents in DSH and previews workspace Markdown.
+  zh: Typocket 在 DSH 中阅读、编辑和整理本机文档，并预览工作区 Markdown。
+tarball: https://github.com/bigricedumpling/deepseek-reader/releases/download/v0.2.0-preview.5/dsh-reader-workspace-0.2.0-preview.5.tgz

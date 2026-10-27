@@ -1,0 +1,6 @@
+url: https://github.com/dadgrand/dsh-agent-teams-dashboard
+name: dadgrand/dsh-agent-teams-dashboard
+category: ui
+description:
+  en: 'Adds a Teams sidebar dashboard that lists every Agent Teams chat with its roster and task roadmap, token spend in USD and RUB, work and online time, and an archive of older teams. Requires the Agent Teams plugin.'
+  zh: '在侧边栏加一个「团队」面板，列出每个 Agent Teams 会话的成员与任务路线图、按时间段统计的 token 消耗与美元/卢布成本、总工时与在线时长，并可归档旧团队。需先安装 Agent Teams 插件。'

@@ -1,0 +1,6 @@
+url: https://github.com/Willmylife/dsh-model-connection-test
+name: Willmylife/dsh-model-connection-test
+category: model
+description:
+  zh: "在设置 → 模型页底部增加连接测试面板：读取部署的模型目录，对每个已配置模型经宿主 LLM 服务发送一次最小对话请求（“ping”，小输出上限），以真实请求验证连通性。每行报告成功/失败、宿主失败码（NO_ADAPTER、MISSING_CREDENTIAL、AUTH、RATE_LIMIT、TIMEOUT 等）及首字/总耗时，支持单模型测试与全部测试（并发 3）。凭据只在宿主进程内解析，浏览器不可见；每模型一次独立请求，测试路由带同源围栏与请求体上限。纯 JS 免构建，MIT。"
+  en: "Adds a connection-test panel under Settings -> Models: reads the deployment's model catalog and probes each configured model with one minimal chat round-trip (a short \"ping\" with a small output cap) through the Host LLM service, verifying connectivity with a real request. Each row reports success/failure with the harness failure code (NO_ADAPTER, MISSING_CREDENTIAL, AUTH, RATE_LIMIT, TIMEOUT, ...) plus first-token/total latency; single-model and concurrent test-all (3) are supported. Credentials are resolved inside the Host process and never reach the browser; probes are independent per model behind a same-origin-fenced route with a body-size cap. Pure JS, no build step, MIT."

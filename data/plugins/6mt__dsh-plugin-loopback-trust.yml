@@ -1,0 +1,6 @@
+url: https://github.com/6mt/dsh-plugin-loopback-trust
+name: 6mt/dsh-plugin-loopback-trust
+category: remote
+description:
+  en: 'Restores Host-persisted settings when dsh web is reached through a reverse proxy on a non-loopback hostname: marks the page connection as host-owning so the Settings and model pages load instead of reporting "settings are unavailable in this browser". For dsh 0.1.7 – 0.2.x.'
+  zh: '反向代理域名访问 dsh web 时恢复设置页的 Host 持久化：将页面连接标记为宿主可信，设置与模型页正常加载，不再报 "settings are unavailable in this browser"。适用于 dsh 0.1.7 – 0.2.x。'

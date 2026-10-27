@@ -1,0 +1,6 @@
+url: https://github.com/lilcandi/dsh-continue-button
+name: lilcandi/dsh-continue-button
+category: ui
+description:
+  en: 'A continue button in the composer tool row, immediately left of the send key: one click writes an interruption-aware prompt into the draft and submits it, so an interrupted task resumes without retyping the context. The prompt names the interruption and appends the current task plus the tail of the last reply; Alt-click or right-click sends a bare 继续, and a non-empty draft is appended to rather than overwritten.'
+  zh: 输入框工具行里、紧挨发送键左侧的「继续」按钮：点一下就把续接指令写进草稿并提交，让中断的任务接着跑，不用重新交代上下文。指令会写明中断原因，并附上当前任务与上一轮回复的结尾片段；按住 Alt 点击或右键点击只发裸的「继续」，草稿非空时只追加不覆盖。

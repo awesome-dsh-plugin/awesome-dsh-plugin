@@ -1,0 +1,6 @@
+url: https://github.com/AAAlenwow/dsh-weknora-archive
+name: AAAlenwow/dsh-weknora-archive
+category: tools
+description:
+  en: 'Archive DeepSeek Harness sessions into a self-hosted WeKnora knowledge base with extraction, summarization and incremental dedup.'
+  zh: '把 DeepSeek Harness 会话归档进自建 WeKnora 知识库，含提取、总结与增量去重。'

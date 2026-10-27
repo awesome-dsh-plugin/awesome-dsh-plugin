@@ -1,0 +1,6 @@
+url: https://github.com/rg2304luyue/dsh-pa
+name: rg2304luyue/dsh-pa
+category: ui
+description:
+  en: A diamond button in the composer that rewrites your draft into a structured prompt and puts the original draft back when clicked again.
+  zh: '输入框里的菱形按钮：把草稿改写成结构化提示词，再点一次还原原始输入。'

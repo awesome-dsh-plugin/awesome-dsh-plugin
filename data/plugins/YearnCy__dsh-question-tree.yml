@@ -1,0 +1,6 @@
+url: https://github.com/YearnCy/dsh-question-tree
+name: YearnCy/dsh-question-tree
+category: ui
+description:
+  en: 'Selection-to-tree for DSH: selecting text in a conversation adds a node to a right-sidebar tree, the question is typed inline under it, the next selection nests under the current node by default, Alt+click creates a root node, Ctrl+click appends another passage to the same node, double-click jumps back to the quoted text, and a red/green dot marks each node as unresolved or understood. Nodes live in localStorage and nothing is injected into the prompt.'
+  zh: '把对话里划取的文字变成右栏问题树的一个节点，问题就地写在节点下；之后划取默认挂到当前节点，Alt 点一下新开根，Ctrl 点一下把新段落追加进同一节点；双击节点跳回原文，点左侧圆点标记「懂了」；节点只存在 localStorage，不进提示词。'

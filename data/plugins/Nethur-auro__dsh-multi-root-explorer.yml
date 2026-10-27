@@ -1,0 +1,6 @@
+url: https://github.com/Nethur-auro/dsh-multi-root-explorer
+name: Nethur-auro/dsh-multi-root-explorer
+category: ui
+description:
+  en: 'Replaces the sidebar workspace region with a two-tab browser: several workspace roots stay registered side by side while conversations are filed under the real working directory of each session, with a read-only resource tree that previews files in the right sidebar. Hiding is per tab, display-only and fully reversible; a resource folder or file can be copied as a path or dragged into the composer as a native reference, and @ completion covers every registered root rather than the working directory alone.'
+  zh: '把侧边栏的工作区区域换成双选项卡浏览器：多个工作区根并列登记、各自固定不变，对话按每个会话真实的工作目录归入目录树，资源是只读文件树、点击即用右侧栏预览。两个选项卡各自独立隐藏、只影响显示且完全可逆；资源文件夹或文件可复制路径，也可拖进输入框成为原生引用块；@ 补全覆盖全部已登记工作区，而不只是当前工作目录。'

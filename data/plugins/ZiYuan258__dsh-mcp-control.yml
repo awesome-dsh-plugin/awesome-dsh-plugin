@@ -1,0 +1,6 @@
+url: https://github.com/ZiYuan258/dsh-mcp-control
+name: ZiYuan258/dsh-mcp-control
+category: tools
+description:
+  en: 'Settings panel for MCP servers registered by @deepseek-ai/dsh-mcp-client: toggle each server on or off with live effect, see the registered tool count and estimated context-token cost of each server, and persist the choice to the home cordis.patch.yml with a timestamped backup before every write. Maintained fork of dsh-mcp-toggle.'
+  zh: '面向 @deepseek-ai/dsh-mcp-client 注册的 MCP 服务器的设置面板：逐个开关服务器（即时生效），显示各服务器的已注册工具数与预估上下文 token 开销，并将选择持久化到主目录 cordis.patch.yml，每次写入前保留带时间戳的备份。dsh-mcp-toggle 的维护分支。'

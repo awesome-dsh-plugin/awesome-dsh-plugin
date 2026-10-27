@@ -1,0 +1,6 @@
+url: https://github.com/Azhe0306/dsh-connectors/tree/main/packages/desktop-connector
+name: Azhe0306/dsh-connectors#desktop-connector
+category: tools
+description:
+  en: 'Windows desktop control connector: through 10 agent tools it captures the screen (including occluded and partially off-screen windows), lists and focuses windows, moves, clicks, drags and scrolls the mouse, and sends key chords or arbitrary Unicode text. Built on koffi FFI: no compiler, no per-call subprocess, and its own GDI screenshot plus PNG encoder.'
+  zh: 'Windows 桌面控制连接器：通过 10 个工具截屏（含被遮挡与半出屏窗口）、枚举与置顶窗口、移动/点击/拖拽/滚轮鼠标、发送组合键与任意中文文字。基于 koffi FFI：无需编译器、不每次起子进程，自带 GDI 截图与 PNG 编码。'

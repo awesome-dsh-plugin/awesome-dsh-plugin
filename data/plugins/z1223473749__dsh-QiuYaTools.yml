@@ -1,0 +1,7 @@
+url: https://github.com/z1223473749/dsh-QiuYaTools
+name: z1223473749/dsh-QiuYaTools
+category: ui
+description:
+  en: "Adds TXT attachments, session windows, batch archiving, plan comments, menu shortcuts, next-message suggestions and an optional Q theme. Computer use ships in 0.6.x, is on default and needs screen-recording and accessibility permission. Suggestions use the current model with extra usage."
+  zh: "长文本附件、会话分窗、批量归档、计划批注、菜单增强、提示词建议和可选 Q 主题。电脑操控已在 0.6.x 上线且默认开启，需授予屏幕录制与辅助功能权限；提示词建议使用当前模型，会产生少量额外用量。"
+tarball: https://github.com/z1223473749/dsh-QiuYaTools/releases/latest/download/dsh-qiuya-tools.tgz

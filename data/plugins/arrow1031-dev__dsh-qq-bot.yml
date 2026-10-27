@@ -1,0 +1,6 @@
+url: https://github.com/arrow1031-dev/dsh-qq-bot
+name: dsh-qq-bot
+category: remote
+description:
+  zh: "把 DeepSeek Harness 接到 QQ。支持 OneBot 11/12、Satori、Milky 与 QQ 官方机器人接口，群聊和私聊各有一条独立会话；内置九个工具：群管理、聊天记录与图片理解、联网搜索、网页抓取、图片反搜、生图等，另有按间隔自主接话的主动发言（判断与发言可分用两个模型）。模型、代理、白名单等全部在 DSH 设置页里配置，不需要改代码。白名单出厂为空：在填 group.allow、private.allow 或 owners 之前，任何私聊和任何 @ 机器人的群都会建立会话；访客只能使用访客工具白名单，qqbot 与 qqconfig 仅限拥有者。"
+  en: "Connects DeepSeek Harness to QQ over OneBot 11/12, Satori, Milky or the official QQ bot API, with a separate session per group or private chat and nine built-in tools: group management, chat history with image understanding, web search, page fetching, reverse image search and image generation. Optional proactive chatter reads recent messages on an interval and decides whether to join in, with the judging and speaking stages able to use different models. Models, proxy and allowlists are configured in the DSH settings page. The allowlists are empty by default, so every private chat and every group that mentions the bot gets a session until group.allow, private.allow or owners are set; guests only reach the guest tool allowlist while qqbot and qqconfig stay owner-only."

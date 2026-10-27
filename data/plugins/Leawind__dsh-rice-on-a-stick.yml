@@ -1,0 +1,11 @@
+url: https://github.com/Leawind/dsh-rice-on-a-stick
+name: Leawind/dsh-rice-on-a-stick
+category: session
+description:
+  en: >-
+    Rice on a Stick: Expose control over DeepSeek Harness (dsh) through MCP (Streamable HTTP) and dsh's native tools,
+    with a configurable list of allowed models. Long-tail host endpoints can be invoked via a generic, audited bridge. By default, it listens only on 127.0.0.1, with an optional access token.
+  zh: >-
+    白饭钓竿：把控制 DeepSeek Harness（dsh）的能力通过 MCP（Streamable HTTP）与 dsh 原生工具暴露出去，
+    可配置允许使用的模型清单。可通过带审计的通用桥调用宿主长尾端点。默认只监听 127.0.0.1，可选访问令牌。
+icon: https://raw.githubusercontent.com/Leawind/dsh-rice-on-a-stick/main/assets/icon-256.png

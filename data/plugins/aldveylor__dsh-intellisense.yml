@@ -1,0 +1,7 @@
+url: https://github.com/aldveylor/dsh-intellisense
+name: aldveylor/dsh-intellisense
+category: tools
+description:
+  en: A namespace management tool for toolsets that supports automatic discovery and integration, designed to help reduce token consumption. Also runs TypeScript and JavaScript in a restricted Node runtime for on-demand namespace calls.
+  zh: 一个用于管理工具集的命名空间管理工具，支持自动发现与集成，用于节省token的消耗还会在受限 Node 运行时执行 TypeScript 与 JavaScript，按需通过命名空间调用工具。
+icon: https://raw.githubusercontent.com/aldveylor/dsh-intellisense/refs/heads/master/docs/icon.png

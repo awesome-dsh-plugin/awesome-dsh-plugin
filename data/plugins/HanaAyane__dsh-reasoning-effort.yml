@@ -1,0 +1,6 @@
+url: https://github.com/HanaAyane/dsh-reasoning-effort
+name: HanaAyane/dsh-reasoning-effort
+category: ui
+description:
+  en: "Adds an animated DeepSeek Chan reasoning-effort slider to DSH's native model selector, following model-declared levels with a running animation that speeds up while dragging."
+  zh: "为 DSH 原生模型选择器加入大肥鱼思考强度滑块，按模型声明的档位调节推理强度，拖动时奔跑动画随之加速。"

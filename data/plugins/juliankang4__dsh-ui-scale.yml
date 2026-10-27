@@ -1,0 +1,6 @@
+url: https://github.com/juliankang4/dsh-ui-scale
+name: juliankang4/dsh-ui-scale
+category: ui
+description:
+  en: 'Scales the whole DeepSeek Harness interface from 50% to 200%, menus and pop-ups included, set from Settings - General with a slider, a percent field or presets. Works in dsh web and the desktop app, which has no zoom of its own.'
+  zh: '将 DeepSeek Harness 整个界面（包括菜单和弹窗）缩放到 50% 至 200%，在「设置 - 通用设置」中用滑块、百分比输入或预设调整。dsh web 与桌面应用均可使用，桌面应用本身没有缩放功能。'

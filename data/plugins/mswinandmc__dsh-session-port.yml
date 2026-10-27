@@ -1,0 +1,6 @@
+url: https://github.com/mswinandmc/dsh-session-port
+name: mswinandmc/dsh-session-port
+category: session
+description:
+  en: Export a session as a ZIP archive with its attachments, and import such an archive as a new standalone session in the current workspace.
+  zh: 把会话连同附件导出为压缩包，或把这样的压缩包导入为当前工作区里的新会话。
