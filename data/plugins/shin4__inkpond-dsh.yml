@@ -1,0 +1,7 @@
+url: https://github.com/shin4/inkpond-dsh
+name: shin4/inkpond-dsh
+category: theme
+description:
+  en: Interactive Chinese glyph ink-wash backgrounds for DSH conversations, with a lotus pond, misty hills and a Qingming handscroll.
+  zh: 为 DSH 会话提供可交互的汉字水墨背景，包含莲池、山水和清明上河三个场景。
+tarball: https://github.com/shin4/inkpond-dsh/releases/download/v0.1.0/dsh-inkpond-0.1.0.tgz
