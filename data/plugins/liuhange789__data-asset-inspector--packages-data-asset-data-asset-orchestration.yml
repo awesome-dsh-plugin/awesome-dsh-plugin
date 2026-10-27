@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-orchestration
+name: liuhange789/data-asset-inspector#data-asset-orchestration
+category: tools
+description:
+  zh: "数据资产编排引擎，统一调度数据入表、估值、流通等全生命周期任务。"
+  en: "Data asset orchestration engine for unified scheduling of capitalization, valuation and circulation tasks."
