@@ -7104,7 +7104,7 @@ dsh plugin --profile web add dshmarket
 - [pn1024/dsh-skill-market](https://github.com/pn1024/dsh-skill-market) — 技能市场插件，聚合 SkillHub 与 ClawHub 双源搜索，支持站内 README 预览、一键安装与卸载、已装技能列表，以及聊天栏技能选择器。
 - [publieople/dsh-plugin-autoupdate](https://github.com/publieople/dsh-plugin-autoupdate) — DSH 插件更新器：把版本决策交给 dsh CLI，继续受 pnpm 发布年龄策略约束；应用前先快照、可回滚、带锁定清单，用户打开开关后可定时检查或自动应用。
 - [qinyre/dsh-plugin-install](https://github.com/qinyre/dsh-plugin-install) — 设置 → 插件里的「安装」标签页：按 npm spec、`github:user/repo` 或本地路径安装、更新、卸载任意插件，走的都是 `dsh plugin add` 这条 CLI 路径；更新检查对照 npm latest 或 GitHub HEAD，带降级保护与装后版本核对，每次 add/remove 均附带 pnpm 11 发布冷静期豁免；服务重启在 DSH Desktop 由壳层执行，独立 `dsh web` 下由中转进程接力并交接回原终端。
-- [regrevia/dsh-install-check](https://github.com/regrevia/dsh-install-check) — 装插件前先替你撞一遍：工具名重了、依赖缺了才说话，一句结论配一条建议，装还是照装。
+- [regrevia/dsh-install-check](https://github.com/regrevia/dsh-install-check) — 装插件前先跟已装的比一遍，真会撞上才说一句：加载行、服务键、Web 路由、工具名、缺的依赖、重名的 skill、接管界面的写法。先说原因再给动作，装还是照装。
 - [Relistencode/dsh-extension-hub](https://github.com/Relistencode/dsh-extension-hub) — 设置页一体化扩展中心：管理技能/MCP/插件，内置插件市场（精选目录+GitHub 搜索、npm 一键安装），并提供附加功能区统一安装/停用/卸载、一起更新附属功能。
 - [sandbaseai/dsh-plugin-store](https://github.com/sandbaseai/dsh-plugin-store) — 在 DSH 设置中加入原生插件商店，支持目录搜索、标签筛选、排序、安装与已安装插件管理。
 - [Sanqi-normal/dsh-webui-market-plugin](https://github.com/Sanqi-normal/dsh-webui-market-plugin) — dsh Web GUI 内的社区插件市场：浏览 awesome-dsh-plugin.com 目录，从 设置 → 插件 → 插件市场 安装/卸载插件到 profile。
