@@ -1,5 +1,5 @@
-url: https://github.com/kialajin/DSH_Plus/tree/main/dsh-project-panel
-name: kialajin/DSH_Plus#dsh-project-panel
+url: https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-project-panel
+name: kialajin-l/DSH_Plus#dsh-project-panel
 category: dev
 description:
   en: "Project progress panel that scans a configurable root for local projects, infers activity from anchors and git evidence, and exports a self-contained dark HTML report."

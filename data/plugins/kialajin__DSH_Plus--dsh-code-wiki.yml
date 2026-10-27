@@ -1,5 +1,5 @@
-url: https://github.com/kialajin/DSH_Plus/tree/main/dsh-code-wiki
-name: kialajin/DSH_Plus#dsh-code-wiki
+url: https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-code-wiki
+name: kialajin-l/DSH_Plus#dsh-code-wiki
 category: docs
 description:
   en: "Builds a per-project code wiki: README summary, docs tree, tech stack, git activity and language composition, cached locally and exportable as Markdown."

@@ -1,5 +1,5 @@
-url: https://github.com/kialajin/DSH_Plus/tree/main/dsh-agent-checkup
-name: kialajin/DSH_Plus#dsh-agent-checkup
+url: https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-agent-checkup
+name: kialajin-l/DSH_Plus#dsh-agent-checkup
 category: dev
 description:
   en: "Read-only agent checkup with four probes (output repetition, error visibility, tool failure rate, context bloat) over recent local session logs, rendered as an HTML report."
