@@ -146,7 +146,7 @@ jobs:
           restore-keys: updates-v1-
       - name: Build
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PROBE_TOKEN || secrets.GITHUB_TOKEN }}
           # The nightly run is the authoritative refresh: it re-checks every
           # entry regardless of cached verdicts, so a plugin that publishes to
           # npm can never be stuck on a stale "not published" (see #487).
@@ -185,12 +185,7 @@ jobs:
               if [ "${{ inputs.skip_probes }}" = "true" ]; then full_probe=''; else full_probe=1; fi ;;
             *) full_probe='' ;;
           esac
-          # Forks do not have the GitHub API quota for full probes — skip entirely
-          if [ "${{ github.repository }}" != "awesome-dsh-plugin/awesome-dsh-plugin" ]; then
-            full_probe=''
-            echo "fork build — skipping probes, building from committed data"
-          fi
-          if [ -n "$full_probe" ] || ( [ "${{ github.repository }}" == "awesome-dsh-plugin/awesome-dsh-plugin" ] && [ ! -s data/npm-map.json ] ); then
+if [ -n "$full_probe" ] || [ ! -s data/npm-map.json ]; then
             node scripts/probe-npm.mjs
             # After probe-npm.mjs, never before: this reads data/npm-map.json
             # to know which entries HAVE a package to probe. Reads and writes
