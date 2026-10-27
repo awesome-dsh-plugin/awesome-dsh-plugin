@@ -1,0 +1,6 @@
+url: https://github.com/d342784178/dsh-opencli
+name: d342784178/dsh-opencli
+category: browser
+description:
+  en: 'Browser tools for DSH that POST to the local OpenCLI daemon instead of spawning the opencli CLI per command, avoiding its cold start: oc_status, oc_exec, oc_navigate, oc_snapshot and oc_tabs, with one persistent automation tab per session.'
+  zh: '把本机 OpenCLI daemon 当常驻服务直连的 DSH 浏览器工具，替代「每条命令起一次 opencli CLI」的冷启动：oc_status、oc_exec、oc_navigate、oc_snapshot、oc_tabs 五个工具，每个 session 一个常驻自动化标签页。'
