@@ -1,0 +1,6 @@
+url: https://github.com/thiscp/dsh-push/tree/main/host-plugin
+name: thiscp/dsh-push#host-plugin
+category: notify
+description:
+  en: 'Phone push for DeepSeek Harness: hooks the question seam in-process so a pending question is delivered to your phone through an ntfy relay, and the answer you send from the phone is fed back to the agent as a user message even after it has stopped waiting.'
+  zh: 'DSH 手机推送：进程内挂载提问 seam，把待答问题经 ntfy relay 推到手机；手机作答在该问题已超时后仍会以 user 消息回灌给 agent。'
