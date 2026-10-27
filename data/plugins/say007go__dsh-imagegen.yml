@@ -1,0 +1,7 @@
+url: https://github.com/say007go/dsh-imagegen
+name: say007go/dsh-imagegen
+category: vision
+description:
+  en: 'DSH text-to-image/image-to-image plugin: compatible with OpenAI-style image generation APIs, with 多米API as the default; standard OpenAI endpoints may require protocol, image-to-image mode and size adjustments; text-to-image and URL reference images do not use COS, while local reference images can be compressed and stored in COS; custom prompt suffixes are supported.'
+  zh: 'DSH文生图/图生图插件：兼容OpenAI风格生图接口，默认适配多米API；标准OpenAI需调整协议、图生图模式和尺寸；文生图和URL参考图无需COS，本地参考图可压缩后存COS；支持自定义提示词后缀。'
+icon: https://raw.githubusercontent.com/say007go/dsh-imagegen/main/assets/icon-180.png
