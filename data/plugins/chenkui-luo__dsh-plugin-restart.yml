@@ -1,0 +1,6 @@
+url: https://github.com/chenkui-luo/dsh-plugin-restart
+name: chenkui-luo/dsh-plugin-restart
+category: dev
+description:
+  en: 'Adds a Restart card to the harness settings: one click replaces the running web process that serves the page, and the page reconnects itself once the new instance answers.'
+  zh: 在设置页增加「重启」卡片：一键替换正在为页面提供服务的 web 进程，新实例就绪后页面自行重连。
