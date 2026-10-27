@@ -2,5 +2,5 @@ url: https://github.com/drscrewdriver/dsh-perm-gate
 name: drscrewdriver/dsh-perm-gate
 category: security
 description:
-  en: P0–P4 deterministic-first permission gate with permissive tier, learning sedimentation and approval-history UI; hard-deny credentials and protected paths, auto-allow internal read-only tools.
-  zh: P0–P4 确定性优先权限门控，含 Permissive 档位、学习沉淀与审批历史 UI；凭据/受保护路径硬拒绝，内部只读工具自动放行。
+  en: Shipped with cc-safety-net-style mechanical safety-net rules appended; supports both no-model and model-assisted security review, in modes such as 自动审查 (auto-review) and 机械直通 (mechanical pass-through). P0–P4 deterministic-first permission gate with permissive tier, learning sedimentation and approval-history UI; hard-deny credentials and protected paths, auto-allow internal read-only tools.
+  zh: 已追加 cc-safety-net 风格的机械安全网规则，同时支持无模型、有模型辅助方式的安全审查，模式为自动审查、机械直通等。P0–P4 确定性优先权限门控，含 Permissive 档位、学习沉淀与审批历史 UI；凭据/受保护路径硬拒绝，内部只读工具自动放行。
