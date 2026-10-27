@@ -3,5 +3,5 @@ name: nszm/dsh-pet-lingchong
 category: fun
 icon: https://raw.githubusercontent.com/nszm/dsh-pet-lingchong/main/assets/icon-180.png
 description:
-  en: 'Floating desktop companion for DSH: a draggable character on the overlay — tap to charge energy, blinking and emotes, naps, synthesized WebAudio sounds and particle effects. Bring your own: any photo (pet, portrait, anime art) becomes a 2.5D cutout with hand-marked eyes; GLB / VRM models (characters, anime avatars, your own Blender work) render as a real 3D turntable with three.js. No model? Generate one from a photo on meshy.ai, tripo3d.ai or Tencent Hunyuan 3D. Resize 30%-300%; data stays local.'
-  zh: 'DSH 桌面伴侣：整屏浮层上一只可拖动的角色，轻叩蓄能、眨眼表情、打盹、WebAudio 合成音效与粒子。放什么进去都行——照片（宠物 / 人像 / 动漫立绘）变 2.5D 立绘并可标眼睛；GLB / VRM（人物、动漫角色、自己的建模）用 three.js 渲染成真 3D 转台。没有模型可用 meshy.ai / tripo3d.ai / 腾讯混元 3D 从照片生成。大小 30%–300% 无级调节，数据只存本机。'
+  en: 'Floating desktop companion for DSH: a draggable character on the overlay — tap to charge energy, blinking and emotes, naps, synthesized WebAudio sounds and particle effects. Bring your own: any photo (pet, portrait, anime art) becomes a 2.5D cutout with hand-marked eyes, and 3D models (GLB, VRM, STL, OBJ, PLY) render as a real three.js turntable. Resize 30%-300%; data stays local.'
+  zh: 'DSH 桌面伴侣：整屏浮层上一只可拖动的角色，轻叩蓄能、眨眼表情、打盹、WebAudio 合成音效与粒子。放什么进去都行——照片（宠物 / 人像 / 动漫立绘）变 2.5D 立绘并可标眼睛；GLB / VRM / STL / OBJ / PLY 用 three.js 渲染成真 3D 转台。大小 30%–300% 无级调节，数据只存本机。'
