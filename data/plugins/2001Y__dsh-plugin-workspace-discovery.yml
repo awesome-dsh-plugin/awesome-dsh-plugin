@@ -1,0 +1,7 @@
+url: https://github.com/2001Y/dsh-plugin-workspace-discovery
+name: 2001Y/dsh-plugin-workspace-discovery
+category: dev
+description:
+  en: Discovers local git repositories under configurable roots and registers them as DeepSeek Harness workspaces in bulk, with a sidebar panel and model-facing tools.
+  zh: 扫描可配置根目录下的本地 Git 仓库，并将其批量注册为 DeepSeek Harness 工作区，提供侧边栏面板和模型工具。
+  ja: 設定したルート配下のローカルgitリポジトリを検出し、DeepSeek Harnessのワークスペースとして一括登録する。サイドバーパネルとモデル向けツールを備える。
