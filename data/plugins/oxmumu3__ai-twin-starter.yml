@@ -1,0 +1,7 @@
+url: "https://github.com/oxmumu3/ai-twin-starter"
+name: "oxmumu3/ai-twin-starter"
+category: "workflow"
+description:
+  en: "Native workbench to select project sources, distill and test capability candidates, configure scoped Slack access, and review approvals and persistent tasks."
+  zh: "原生分身工作台：选择项目资料、蒸馏并试跑能力候选、配置有范围的 Slack 访问，查看审批与持久任务。"
+tarball: "https://github.com/oxmumu3/ai-twin-starter/releases/download/v0.4.0-preview.3/dsh-agent-twin-0.4.0-preview.3.tgz"
