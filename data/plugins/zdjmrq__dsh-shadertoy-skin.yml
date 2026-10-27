@@ -4,3 +4,4 @@ category: theme
 description:
   en: 'ShaderToy backgrounds for DeepSeek Harness: a WebGL2 player with a background library and five bundled presets, adjustable opacity, brightness, resolution and frame rate, playback options, and an in-app editor for the running shader.'
   zh: '把 ShaderToy 作品作为 DeepSeek Harness 背景：WebGL2 播放器 + 背景库（含 5 个预设），可调界面不透明度、亮度、分辨率与帧率，支持画面循环与音乐播放设置，并能在设置页直接编辑当前着色器代码。'
+icon: https://raw.githubusercontent.com/zdjmrq/dsh-shadertoy-skin/main/assets/icon-180.png
