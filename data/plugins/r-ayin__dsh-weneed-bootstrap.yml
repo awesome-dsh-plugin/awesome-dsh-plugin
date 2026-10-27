@@ -1,0 +1,6 @@
+url: https://github.com/r-ayin/dsh-weneed-bootstrap
+name: r-ayin/dsh-weneed-bootstrap
+category: dev
+description:
+  en: 'Two-phase "We need" chain-of-thought anchoring: the session first turn runs a minimal reasoning protocol that demands a "We need" opener, then promotes back to the full system prompt after the first tool call; gated per preset prefix.'
+  zh: '两阶段「We need」思考链锚定：会话首轮改用极简推理协议，强制思考块以 We need 起手；首个工具调用后自动晋升回完整系统提示词；按预设前缀门禁，不影响其他预设。'
