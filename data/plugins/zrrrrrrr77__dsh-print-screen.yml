@@ -2,12 +2,13 @@ url: https://github.com/zrrrrrrr77/dsh-print-screen
 name: zrrrrrrr77/dsh-print-screen
 category: ui
 description:
-  zh: dsh-Print Screen：最有效率的DSH提示词框截图快捷按钮。不再需要费劲地粘贴图片。
-“Ctrl+Alt+1”一起按，自动隐藏DSH窗口截屏；同时按住“Shift+Ctrl+Alt+1”，不隐藏DSH截屏。
-“点击按钮”自动隐藏窗口截屏；“shift+点击按钮”不隐藏窗口。
-反复截屏：“按住Ctrl+Alt，反复点击”1“”
-按钮放在提示框第三位，防止误触，方便截图后直接修改提示词。
-截图默认保存到当前会话文件夹，文件名为秒级时间戳。
-！！！默认保存2份：当前对话文件夹+DSH自身附件库。（节约空间可修改成只保存到当前会话文件夹，会话选择引用文件）
-删除对话同时删除保存图片需要自行去“删除对话”插件中修改。
-  en: dsh-Print Screen adds a scissors button to the composer: freeze the whole desktop, drag a region, insert the crop as an image attachment. Windows only.
+  zh: |
+    最有效率的DSH提示词框截图快捷按钮。不再需要费劲地粘贴图片。
+    “Ctrl+Alt+1”一起按，自动隐藏DSH窗口截屏；同时按住“Shift+Ctrl+Alt+1”，不隐藏DSH截屏。
+    “点击按钮”自动隐藏窗口截屏；“shift+点击按钮”不隐藏窗口。
+    反复截屏：“按住Ctrl+Alt，反复点击”1“”
+    按钮放在提示框第三位，防止误触，方便截图后直接修改提示词。
+    截图默认保存到当前会话文件夹，文件名为秒级时间戳。
+    ！！！默认保存2份：当前对话文件夹+DSH自身附件库。（节约空间可修改成只保存到当前会话文件夹，会话选择引用文件）
+    删除对话同时删除保存图片需要自行去“删除对话”插件中修改。
+  en: Adds a scissors button to the DSH composer: freeze the desktop, drag a region, and insert the crop as an image attachment. Ctrl+Alt+1 captures with DSH hidden, Ctrl+Shift+Alt+1 keeps DSH visible. Windows only.
