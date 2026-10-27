@@ -2,6 +2,6 @@ url: https://github.com/XiangSu-ce/dsh-plugin-freecodego/tree/main/plugin/packag
 name: XiangSu-ce/dsh-plugin-freecodego#bundle-latest
 category: model
 description:
-  en: 'Unofficial FreeCodeGo for DeepSeek Harness: a managed free-model gateway and provider catalogs, image and video generation behind one settings switch, DeepSeek/Codex/Claude engine routing, an independent advisor reviewer, code review, code graphs, project memory, and an engineering team toolchain.'
-  zh: '面向 DeepSeek Harness 的非官方 FreeCodeGo：可托管的免费模型网关与供应商目录、由一个设置开关控制的生图与生视频、DeepSeek/Codex/Claude 引擎路由、独立 Advisor 评审、代码审查、代码图谱、工程记忆与工程团队工具链。'
-tarball: https://github.com/XiangSu-ce/dsh-plugin-freecodego/releases/download/freecodego-v0.1.7-alpha.2.1/freecodego-0.1.7-alpha.2.tgz
+  en: 'Unofficial FreeCodeGo for DeepSeek Harness: DeepSeek, Codex and Claude engines over one session and toolchain, with a 0-token free access channel for deepseek-v4.1-flash, deepseek-v4-pro, deepseek-v4-flash-free, glm-5.3-flash, grok-4.6, kimi-k3, nemotron-3-ultra-free, muse-spark-1.3, Qwen 3.8 Flash and mimo-v2.6-flash-free, plus a keyless private-key gateway.'
+  zh: '面向 DeepSeek Harness 的 FreeCodeGo：DeepSeek、Codex、Claude 三套引擎共用同一条会话与工具链，并为以下模型提供 0 token 免费使用渠道：deepseek-v4.1-flash、deepseek-v4-pro、deepseek-v4-flash-free、glm-5.3-flash、grok-4.6、kimi-k3、nemotron-3-ultra-free、muse-spark-1.3、Qwen 3.8 Flash、mimo-v2.6-flash-free，另有零注册的私钥网关。'
+tarball: https://github.com/XiangSu-ce/dsh-plugin-freecodego/releases/download/freecodego-v0.2.0-rc.2/freecodego-0.2.0-rc.2.tgz

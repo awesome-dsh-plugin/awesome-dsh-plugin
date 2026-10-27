@@ -1,0 +1,6 @@
+url: https://github.com/ags-neto/dsh-status-telemetry
+name: ags-neto/dsh-status-telemetry
+category: ui
+description:
+  en: Adds a session status pill to the composer dock that expands into a panel of turn, token, performance and context readings.
+  zh: 在输入框停靠区加一个会话状态胶囊，点开是一块面板，显示回合、token、性能与上下文读数。

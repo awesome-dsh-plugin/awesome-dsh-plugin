@@ -1,0 +1,7 @@
+url: https://github.com/EventHorizonXT/dsh-model-navigator
+name: EventHorizonXT/dsh-model-navigator
+category: ui
+description:
+  en: 'Replace the model picker with global search, favorites, recent selections, model-family navigation, and reasoning effort selection.'
+  zh: '替换模型选择器，提供全局搜索、收藏、最近使用、模型家族导航与思维强度选择。'
+tarball: https://github.com/EventHorizonXT/dsh-model-navigator/releases/download/v0.3.2/dsh-model-navigator-0.3.2.tgz

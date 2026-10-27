@@ -1,0 +1,7 @@
+url: "https://github.com/aa2246740/dsh-image-conatiner"
+name: "aa2246740/dsh-image-conatiner"
+category: "vision"
+description:
+  en: "Displays generated images in a conversation gallery with a lightbox viewer."
+  zh: "以对话内画廊和灯箱展示生成的图片。"
+tarball: "https://github.com/aa2246740/dsh-image-conatiner/releases/download/v0.2.3/dsh-image-conatiner-0.2.3.tgz"

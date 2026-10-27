@@ -2,5 +2,5 @@ url: https://github.com/173787247/dsh-mac-companion
 name: 173787247/dsh-mac-companion
 category: wsl
 description:
-  en: DeepSeek Harness to macOS companion daemon (notify / Shortcuts / clipboard).
-  zh: DeepSeek Harness 对接 macOS Companion（通知 / Shortcuts / 剪贴板）。
+  en: DeepSeek Harness to macOS companion daemon (notify / Shortcuts / clipboard read-write).
+  zh: DeepSeek Harness 对接 macOS Companion（通知 / Shortcuts / 剪贴板读写）。

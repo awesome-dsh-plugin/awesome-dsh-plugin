@@ -1,0 +1,6 @@
+url: https://github.com/senyayume/dsh-image-once
+name: senyayume/dsh-image-once
+category: session
+description:
+  en: Inlines an image block as base64 only in the one request where it first appears, and marks that same block offloaded on every later request so DSH's own image-offload projection renders it as the placeholder text carrying the read-only local path. An occurrence is keyed by session id, message id, content-tree path and attachment id, and a request is only counted after it produces its first chunk, so retries do not count as sent. Requests carrying a purpose are neither rewritten nor counted, a later read_image of the same file is a new occurrence and inlines once more, and only that request's copy is rewritten, so nothing is written back to the session.
+  zh: 同一张图片只在它第一次出现的那一次请求里以 base64 内联；之后的每次请求都携带被标记为 offloaded 的同一个块，由 DSH 自带的图片 offload 投影渲染成带本地只读路径的占位文字。记账键是会话 id、消息 id、内容树路径与 attachment id 的组合，且请求产生第一个 chunk 之后才记账，因此重试不会算作已发送。带 purpose 的辅助请求既不改写也不记账；事后再对同一文件调用 read_image 算一次新的 occurrence 并重新内联一次；插件只改写该次请求的副本，不写回会话。

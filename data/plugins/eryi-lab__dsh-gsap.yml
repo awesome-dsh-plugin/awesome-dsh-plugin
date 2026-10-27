@@ -1,0 +1,10 @@
+url: https://github.com/eryi-lab/dsh-gsap
+name: eryi-lab/dsh-gsap
+category: skill
+description:
+  en: Registers the eight official GSAP AI skills in DeepSeek Harness; the skill bodies ship inside the plugin, so it works after installing and restarting with no configuration, account or API key.
+  zh: 把 GSAP 官方的 8 个 AI 技能注册进 DeepSeek Harness；技能正文随包分发，装完重启即可使用，无需配置、账号或密钥。
+
+# 可选：预构建 tgz 挂到 GitHub Release 后，取消注释下一行，市场会优先给出该下载链接。
+# 注意 latest/download/ 的文件名不能带版本号，否则下次发版即 404。
+# tarball: https://github.com/eryi-lab/dsh-gsap/releases/latest/download/dsh-gsap.tgz

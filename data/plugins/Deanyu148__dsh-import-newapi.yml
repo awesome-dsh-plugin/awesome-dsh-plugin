@@ -1,0 +1,6 @@
+url: https://github.com/Deanyu148/dsh-import-newapi        # must match the repo exactly / 必须与仓库完全一致
+name: Deanyu148/dsh-import-newapi                          # link text shown in the list / 列表中显示的链接文字
+category: tools                              # see the category list below / 见下方分类列表
+description:
+  en: 'Import the copied connection information from the new API site with a single click.'
+  zh: '一键从new api站点导入复制的连接信息。'   # optional — a maintainer will add it / 可选，维护者会补

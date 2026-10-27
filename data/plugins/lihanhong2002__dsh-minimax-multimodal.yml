@@ -1,0 +1,6 @@
+url: https://github.com/lihanhong2002/dsh-minimax-multimodal
+name: lihanhong2002/dsh-minimax-multimodal
+category: tools
+description:
+  en: Add MiniMax image understanding, image generation, speech synthesis, and transcription tools to DeepSeek Harness.
+  zh: 为 DeepSeek Harness 添加 MiniMax 识图、文生图、语音合成和语音转写工具。

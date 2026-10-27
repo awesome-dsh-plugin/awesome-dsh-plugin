@@ -1,0 +1,6 @@
+url: https://github.com/Jiangsubei/dsh-qqbot-bridge
+name: Jiangsubei/dsh-qqbot-bridge
+category: remote
+description:
+  en: 'Remotely control DeepSeek Harness sessions and workspaces from QQ (official Bot API v2, direct chat only): list and switch workspaces, create sessions, compact history, switch models, with streaming, markdown and approval forwarding. Access is not gated per user — anyone who can message the bot controls these sessions, using your model quota and file permissions.'
+  zh: '通过 QQ（官方 Bot API v2，仅单聊）远程控制 DeepSeek Harness 会话与工作区：列出/切换工作区、新建会话、压缩历史、切换模型，支持流式输出、Markdown 与审批转发。未做按用户门禁——任何能给该机器人发消息的人都能控制这些会话，消耗你的模型额度与文件权限。'

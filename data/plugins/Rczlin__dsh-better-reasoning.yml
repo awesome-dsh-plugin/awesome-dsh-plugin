@@ -1,0 +1,6 @@
+url: https://github.com/Rczlin/dsh-better-reasoning
+name: Rczlin/dsh-better-reasoning
+category: model
+description:
+  en: 'Gives pi-ai routed models a reasoning-effort ladder without manual settings: falls back declared to models.dev to a 7-tier default, and replaces the composer model chip with a Codex-style vertical picker.'
+  zh: '让 pi-ai 路由的模型无需手写 settings 即可调节思考等级：按 已声明 → models.dev → 7 档兜底 的顺序回退，并把 composer 模型按钮换成 Codex 式竖向选择器。'

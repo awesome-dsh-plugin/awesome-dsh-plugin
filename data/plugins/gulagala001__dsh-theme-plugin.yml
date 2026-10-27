@@ -1,0 +1,7 @@
+url: https://github.com/gulagala001/dsh-theme-plugin
+name: gulagala001/dsh-theme-plugin
+category: theme
+description:
+  en: "Themes, color palettes, backgrounds and appearance customization for DeepSeek Harness."
+  zh: "为 DeepSeek Harness 提供主题、配色、背景与外观设置。"
+tarball: https://github.com/gulagala001/dsh-theme-plugin/releases/download/v0.2.6-dsh.0.2.1-rc.3/gulagala001-dsh-theme-plugin-0.2.6-dsh.0.2.1-rc.3.tgz

@@ -1,0 +1,8 @@
+url: https://github.com/Tests4gptplay/dsh-dots
+name: Tests4gptplay/dsh-dots
+category: browser
+icon: https://raw.githubusercontent.com/Tests4gptplay/dsh-dots/main/assets/dots-market-icon.png
+tarball: https://github.com/Tests4gptplay/dsh-dots/releases/download/v0.1.1/dsh-dots-0.1.1.tgz
+description:
+  en: "Open ChatGPT Dots in a DSH page using the Desktop host WebView, with a theme-aware toolbar, refresh and external-browser controls."
+  zh: "在 DSH 页面中通过 Desktop 宿主 WebView 打开 ChatGPT Dots，提供随主题适配的工具栏、刷新及外部浏览器打开入口。"

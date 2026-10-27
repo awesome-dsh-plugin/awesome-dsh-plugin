@@ -2,5 +2,5 @@ url: https://github.com/173787247/dsh-device-bridge
 name: 173787247/dsh-device-bridge
 category: wsl
 description:
-  en: Generic Companion-protocol bridge from DeepSeek Harness to phones/IoT/legacy agents.
-  zh: DeepSeek Harness 通用 Companion 桥：手机 / IoT / 旧世界薄 Agent。
+  en: Generic Companion-protocol bridge from DeepSeek Harness to phones/IoT/legacy agents (includes Termux companion example).
+  zh: DeepSeek Harness 通用 Companion 桥：手机 / IoT / 旧世界薄 Agent（含 Termux 样例）。

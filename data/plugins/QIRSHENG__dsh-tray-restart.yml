@@ -1,0 +1,6 @@
+url: https://github.com/QIRSHENG/dsh-tray-restart
+name: QIRSHENG/dsh-tray-restart
+category: ui
+description:
+  en: 'Adds Restart App and Host, Reload Page and Force Quit items to the Windows system tray of the official DSH desktop app by patching app.asar in place, and re-applies that patch after each desktop update.'
+  zh: '给官方桌面端的 Windows 系统托盘加「重启应用与 Host」「刷新页面」和「彻底退出 Harness」三项（原位修改 app.asar），并在桌面端每次更新覆盖后自动重打补丁。'

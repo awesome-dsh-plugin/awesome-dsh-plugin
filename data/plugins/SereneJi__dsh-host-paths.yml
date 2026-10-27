@@ -1,0 +1,6 @@
+url: https://github.com/SereneJi/dsh-host-paths
+name: SereneJi/dsh-host-paths
+category: ui
+description:
+  en: Publishes the desktop shell's file-path bridge as the host-path seam the composer reads, so files and folders dropped into the composer become @path references instead of uploaded copies (images still upload through the native image channel).
+  zh: 把桌面壳的文件路径桥接发布为输入框读取的 host-path 接口，让拖入输入框的文件与文件夹变成 @path 引用而不是上传副本（图片仍走原生图片通道上传）。

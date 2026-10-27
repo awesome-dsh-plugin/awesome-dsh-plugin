@@ -1,6 +1,7 @@
 url: https://github.com/kenz1117/dsh-engram
 name: kenz1117/dsh-engram
 category: agi
+icon: https://raw.githubusercontent.com/kenz1117/dsh-engram/main/docs/store/icon-180.png
 description:
-  en: 'Cross-session long-term memory under the "memory palace" metaphor: dual-scope SQLite stores (user + per-git-origin project), hybrid FTS5 + local-vector retrieval with RRF fusion and recency/proof ranking boost, automatic capture from the session log (including the final turn), provenance audit chains, consolidation distillation and decay forgetting, and a settings-page Memory Library panel with corridor topology, tour butler, and refurb list.'
-  zh: 跨会话长期记忆插件，以「记忆宫殿」隐喻重构 agent 长期记忆：双层 SQLite 分库（用户级 + 按 git origin 隔离的项目级）、FTS5 + 本地向量 RRF 融合与新鲜度/命中排序 boost、从会话日志自动摄取（含末轮）、来源审计链、巩固蒸馏与衰减遗忘，以及设置页「记忆库」面板（走廊拓扑、导览管家、翻新清单）。
+  en: 'Cross-session long-term memory as a local SQLite store: dual scopes (user + per-git-origin project), hybrid FTS5 + local-vector retrieval fused with RRF, an evidence gate that forces an explicit sufficiency judgement, provenance audit chains, SM-2 spaced-repetition review, consolidation distillation and decay forgetting, and a nine-view "Memory Palace" sidebar panel. 22 narrow-parameter tools, no external service, no API key, no Docker.'
+  zh: '跨会话长期记忆，纯本地 SQLite：双层分库（用户级 + 按 git origin 隔离的项目级）、FTS5 + 本地向量 RRF 融合检索、强制给出充分性判定的证据门、来源审计链、SM-2 间隔重复复习、巩固蒸馏与衰减遗忘，以及九视图「记忆宫殿」侧栏面板。22 个窄参数工具，无外部服务、无 API Key、无 Docker。'

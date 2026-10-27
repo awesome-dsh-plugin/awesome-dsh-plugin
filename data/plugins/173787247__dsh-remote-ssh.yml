@@ -2,5 +2,5 @@ url: https://github.com/173787247/dsh-remote-ssh
 name: 173787247/dsh-remote-ssh
 category: wsl
 description:
-  en: Allowlisted SSH into Unix/AIX/macOS from DeepSeek Harness (no shell; read-only by default).
-  zh: 从 DeepSeek Harness 白名单 SSH 接入 Unix/AIX/macOS（不走 shell；默认只读）。
+  en: Allowlisted SSH into Unix/AIX/macOS from DeepSeek Harness (no shell; read-only by default), with remote_ssh_probe OS-aware suite.
+  zh: 从 DeepSeek Harness 白名单 SSH 接入 Unix/AIX/macOS（不走 shell；默认只读），含 remote_ssh_probe 按系统探测套装。

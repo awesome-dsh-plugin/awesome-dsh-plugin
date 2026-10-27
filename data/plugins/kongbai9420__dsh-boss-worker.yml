@@ -1,0 +1,6 @@
+url: https://github.com/kongbai9420/dsh-boss-worker
+name: kongbai9420/dsh-boss-worker
+category: workflow
+description:
+  en: Hierarchical multi-agent team coordination with lead review gates, write-scope isolation, and floating workspace.
+  zh: 具备主控审查门禁、文件范围隔离与悬浮工作台的多模型主从协同插件。

@@ -1,0 +1,7 @@
+url: https://github.com/prettyfox/dsh-selection-quote-auto
+name: prettyfox/dsh-selection-quote-auto
+category: ui
+description:
+  en: Copies selected assistant text to the clipboard and shows a Comment chip that opens the inline comment box in DeepSeek Harness; the right-click quote menu and Cmd+L still work.
+  zh: 在 DeepSeek Harness 的助手消息里选中文字即自动复制，并弹出「注释」浮框，点开才是评论框；右键引用菜单与 ⌘L 仍然保留。
+tarball: https://github.com/prettyfox/dsh-selection-quote-auto/releases/download/v0.2.1/dsh-selection-quote-auto-0.2.1.tgz

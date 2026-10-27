@@ -1,0 +1,6 @@
+url: https://github.com/abbccdd/dsh-localtts
+name: abbccdd/dsh-localtts
+category: voice
+description:
+  en: Connects existing IndexTTS 2.5 and GPT-SoVITS installations for sentence-level assistant reading in Harness web, with local process launch and playback controls.
+  zh: 连接已有的 IndexTTS 2.5 和 GPT-SoVITS 安装，为 Harness 网页版回复提供逐句朗读、本地进程启动和播放控制。

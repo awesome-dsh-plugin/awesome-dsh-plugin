@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/dsh-fast-mode
+name: regrevia/dsh-fast-mode
+category: agi
+description:
+  en: 'Cuts whole-task wall clock by about a quarter by batching independent reads into one round; the model, the reasoning effort and the request body stay untouched.'
+  zh: '整任务快四分之一：只把互不依赖的读并成一批，模型、思考强度和请求体一动不动。'
+icon: https://raw.githubusercontent.com/regrevia/dsh-fast-mode/main/icon.png

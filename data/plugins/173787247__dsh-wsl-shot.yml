@@ -2,5 +2,5 @@ url: https://github.com/173787247/dsh-wsl-shot
 name: 173787247/dsh-wsl-shot
 category: wsl
 description:
-  en: Saves a Windows clipboard image into a WSL file.
-  zh: 将 Windows 剪贴板中的图片保存为 WSL 文件。
+  en: Saves a Windows clipboard image into a WSL file (clear ok:false + hint when clipboard has no image).
+  zh: 将 Windows 剪贴板图片存为 WSL 文件（无图时返回明确 ok:false 与 hint）。

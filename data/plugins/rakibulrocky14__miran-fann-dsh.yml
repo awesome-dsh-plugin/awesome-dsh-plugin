@@ -1,0 +1,6 @@
+url: https://github.com/rakibulrocky14/miran-fann-dsh
+name: rakibulrocky14/miran-fann-dsh
+category: tools
+description:
+  en: Motion graphics from a dsh session through the Miran Fann engine over MCP, with a Miran settings page and motion-design skills. Requires the Miran Fann engine installed separately (npx miran-fann setup) and a signed-in install.
+  zh: 通过 MCP 调用 Miran Fann 引擎，在 dsh 会话里做动态图形，附带 Miran 设置页与动效设计技能。需单独安装 Miran Fann 引擎（npx miran-fann setup）并登录。

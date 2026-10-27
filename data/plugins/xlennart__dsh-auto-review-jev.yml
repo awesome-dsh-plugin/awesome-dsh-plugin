@@ -1,0 +1,7 @@
+url: https://github.com/xlennart/dsh-auto-review-jev
+name: xlennart/dsh-auto-review-jev
+category: security
+description:
+  en: 'DeepSeek Harness approval guardian: a reviewer model decides permission requests before they reach you, with a System One decision-API backend (TypeSafe Jev, SiliconFlow, self-hosted Laya), a configurable low-confidence policy and an allow-rule whitelist.'
+  zh: DeepSeek Harness 审批守护者：权限请求先由审查模型裁决，支持 System One 决策 API 后端（TypeSafe Jev／硅基流动／自部署 Laya）、可配置的低置信度策略与免审白名单。
+tarball: https://github.com/xlennart/dsh-auto-review-jev/releases/download/v0.2.0-jev.0/dsh-auto-review-jev-0.2.0-jev.0.tgz

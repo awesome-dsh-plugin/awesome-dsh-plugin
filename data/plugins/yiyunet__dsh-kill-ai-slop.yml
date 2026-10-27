@@ -1,0 +1,6 @@
+url: https://github.com/yiyunet/dsh-kill-ai-slop
+name: yiyunet/dsh-kill-ai-slop
+category: docs
+description:
+  en: 'Kill AI Slop for DSH — score a received document on three weighted axes (expression, execution, decision), audit work-slop with a delivery-obligation ledger, and machine-verify every quote against the source. Reads docx, pptx, xlsx, pdf, txt, md, csv, json and html. Zero runtime dependencies, zero network, fully local.'
+  zh: 'AI垃圾过滤（Kill AI Slop）：给收到的文件打一个可回溯的体检得分（表达／执行／决策三维加权），用交付承接台账审查工作空转，每条引文回原文机器复核；支持 docx/pptx/xlsx/pdf/txt/md/csv/json/html。零运行依赖、零联网、纯本地计算。'

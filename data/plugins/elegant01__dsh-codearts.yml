@@ -1,0 +1,6 @@
+url: https://github.com/elegant01/dsh-codearts
+name: elegant01/dsh-codearts
+category: model
+description:
+  en: 'Connects Huawei Cloud CodeArts to DeepSeek Harness: built-in Huawei Cloud OAuth2 sign-in (PKCE + DPoP) or a pasted token, after which CodeArts models are available in the DSH conversation window, with local per-account request and token usage.'
+  zh: '把华为云 CodeArts 接入 DeepSeek Harness：内置华为云 OAuth2 登录（PKCE + DPoP），也支持粘贴 token；登录后即可在 DSH 对话窗口使用 CodeArts 提供的模型，并展示本机按账号统计的请求数与 token 用量。'

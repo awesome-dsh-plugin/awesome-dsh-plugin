@@ -1,0 +1,8 @@
+# File name: owner + __ + repo (literal double underscore), per awesome-dsh-plugin convention.
+# One file per plugin. PR reviewers merge file; READMEs regenerate from this.
+url: https://github.com/EvilJoker/dsh-experimental-computer-use-linux-nde-mcp
+name: EvilJoker/dsh-experimental-computer-use-linux-nde-mcp
+category: dev
+description:
+  en: "DSH Cordis computer-use provider for the ZTE Nde desktop. npm install auto-fetches the musl binary built by computer-use-linux-zte-nde (v0.7.7-nde.3) into the package's own bin/ via postinstall; resolveCommand() resolves the cordis command path against import.meta.url so the mount works regardless of dsh web's cwd. Reserves the shared computer-use slot via ctx.computerUse.register and exposes MCP tools under mcp__computer-use-linux-nde-mcp__* (screenshot, list_windows, click, type_text, doctor, etc.). Two notable Nde fixes upstream of this provider: KWin caption+coords fallback for window targeting, and SnapshotCache that keeps AT-SPI single-wake per (app, pid) so Chrome is not repeatedly disturbed."
+  zh: "为中兴 Nde 桌面定制的 DSH Cordis computer-use provider。npm install 完成后由 postinstall 钩子从 computer-use-linux-zte-nde v0.7.7-nde.3 release 自动下载 musl 静态二进制到包内 bin/，SHA 校验后 chmod +x；cordis patch 里的 command 用相对路径，由 provider 内部 resolveCommand() 依据 import.meta.url 解析为绝对路径，不依赖 dsh web 的 cwd。占用 DSH 一等公民 ctx.computerUse slot，工具命名空间为 mcp__computer-use-linux-nde-mcp__*（screenshot、list_windows、click、type_text、doctor 等）。binary 本身携带两个 Nde 适配修复：KWin 窗口寻址的 caption+coords 兜底，以及 SnapshotCache——同一 (app, pid) 5 秒内的 AT-SPI 树结果复用、避免 Chrome 反复被唤醒。"

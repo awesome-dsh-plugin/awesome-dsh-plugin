@@ -1,0 +1,7 @@
+url: https://github.com/AB-png123/dshplugin
+name: AB-png123/dshplugin
+category: theme
+description:
+  en: 'Imports wallpapers newly downloaded by the Hao Wallpaper app into the DSH wallpaper engine on startup, incrementally and idempotently. Requires the Hao Wallpaper app, Python 3.8+ and the dsh-plugin-wallpaper-engine plugin (elysia395/dsh-wallpaper-engine) installed first. macOS only.'
+  zh: 'DSH 启动时把 Hao Wallpaper 新下载的壁纸增量导入 DSH 壁纸引擎（幂等）。需要先装好 Hao Wallpaper 应用、Python 3.8+，以及 dsh-plugin-wallpaper-engine 插件（elysia395/dsh-wallpaper-engine）。仅支持 macOS。'
+tarball: https://github.com/AB-png123/dshplugin/releases/download/v1.2.0/dsh-hao-import-1.2.0.tgz

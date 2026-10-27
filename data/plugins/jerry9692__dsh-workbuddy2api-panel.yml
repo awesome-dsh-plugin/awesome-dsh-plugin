@@ -1,0 +1,6 @@
+url: https://github.com/jerry9692/dsh-workbuddy2api-panel
+name: jerry9692/dsh-workbuddy2api-panel
+category: model
+description:
+  en: 'Reads a running workbuddy2api-panel over its HTTP API and syncs its models into the DSH model picker with credit multipliers, CN/international realm labels and per-model reasoning-effort levels; also shows remaining credits and usage in a settings page and a sidebar badge.'
+  zh: '读取运行中的 workbuddy2api-panel 的 HTTP 接口，把面板模型连同倍率、国内/国际分区与逐模型思考档位同步进 DSH 的模型选择器，并在设置页与侧边栏徽标中显示剩余额度与用量。'

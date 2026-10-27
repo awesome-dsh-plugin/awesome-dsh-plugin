@@ -1,0 +1,18 @@
+# Entry for https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+#
+# Siblings in this space: `ZSeven-W/dsh-ios` drives the simulator UI
+# (accessibility identity / OCR, hot reload, sidebar panel) and
+# `harde1/dsh-xcodebuild` is the xcodebuild CLI loop. This entry is the port of
+# the official ZCode `ios-simulator` plugin, and leads with what that means for
+# a user: the original 20 tools keep their names and arguments, so a workflow
+# written for the `ios_simulator` MCP server migrates unchanged, and the whole
+# simulator lifecycle is wrapped in native DSH tools with a settings page.
+#
+# Both description values contain a colon, so they are quoted.
+
+url: https://github.com/zhz8888/dsh-ios-simulator-helper
+name: zhz8888/dsh-ios-simulator-helper
+category: dev
+description:
+  en: 'The official ZCode ios-simulator plugin ported to native DSH tools: the original 20 ios_* tools keep their names and arguments, plus ios_shutdown_simulator, covering Xcode project discovery and scaffolding, simulator boot and shutdown, build, install, launch and terminate, screenshots, log reading, an in-app settings page and optional idb UI automation. macOS only.'
+  zh: '把官方 ZCode ios-simulator 插件移植为 DSH 原生工具：原有 20 个 ios_* 工具的命名与参数保持不变，另加 ios_shutdown_simulator，覆盖 Xcode 工程发现与生成、模拟器启动与关闭、构建、安装、启动与结束进程、截图、日志读取，并提供应用内设置页与可选的 idb UI 自动化。仅支持 macOS。'

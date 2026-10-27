@@ -1,0 +1,6 @@
+url: https://github.com/converk/dsh-tweaks/tree/main/plugins/smart-list
+name: converk/dsh-tweaks#smart-list
+category: ui
+description:
+  en: Continues numbered and bulleted lists in the DSH composer, so Shift+Enter after "1. item" starts a new line with the next marker.
+  zh: 在 DSH 输入框里写列表时，Shift+Enter 换行后自动补上下一个编号（1. → 2.）或项目符号。

@@ -1,0 +1,8 @@
+url: https://github.com/jryang1997/dsh-ascii-whales
+name: jryang1997/dsh-ascii-whales
+category: theme
+description:
+  en: Overhead conversation background with five whale species formed from custom text or ASCII, shaded cells, frosted content cards, input-box avoidance, independent dives, spouts, ripples, wind, and cloud shadows.
+  zh: 海面正上方俯视的对话背景，支持用自定义文字或 ASCII 组成五种鲸类，含彩色字格、内容框毛玻璃、输入框避让、独立下潜、喷水、尾拍涟漪、风纹与云影。
+icon: https://raw.githubusercontent.com/jryang1997/dsh-ascii-whales/main/icon.png
+tarball: https://github.com/jryang1997/dsh-ascii-whales/releases/download/v0.14.0/local-dsh-ascii-ocean-0.14.0.tgz

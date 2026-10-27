@@ -1,0 +1,6 @@
+url: https://github.com/juliankang4/dsh-spark-scope
+name: juliankang4/dsh-spark-scope
+category: model
+description:
+  en: 'Shows a Spark Scope card at the bottom of the dsh sidebar: model server decode and prefill rates with sparklines, running and queued requests, KV cache, TTFT and TPOT p95, and GPU temperature, power, load and memory for each DGX Spark node. Read-only; needs a running Spark Scope server. Works in dsh web and the desktop app.'
+  zh: '在 dsh 侧边栏底部显示 Spark Scope 卡片：模型服务的 decode 与 prefill 速率及走势图、运行中与排队请求、KV 缓存、TTFT 与 TPOT p95，以及每个 DGX Spark 节点的 GPU 温度、功耗、负载和显存。只读，需要已运行的 Spark Scope 服务。dsh web 与桌面应用均可使用。'

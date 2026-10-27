@@ -1,0 +1,6 @@
+url: https://github.com/Ray144165154/dsh-memory-loom
+name: Ray144165154/dsh-memory-loom
+category: memory
+description:
+  en: 'Cross-session long-term memory: captures durable facts from each turn, auto-associates them by shared entity and tag, and recalls with BM25 plus spreading activation over the link graph.'
+  zh: '跨会话长期记忆：从每轮对话抽取持久事实、按共享标签与实体自动建立联想关联，并以 BM25 加关联图激活传播进行召回；提供六个模型可调用工具与一张设置卡片。'

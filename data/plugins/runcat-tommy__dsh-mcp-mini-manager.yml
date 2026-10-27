@@ -1,0 +1,6 @@
+url: https://github.com/runcat-tommy/dsh-mcp-mini-manager
+name: runcat-tommy/dsh-mcp-mini-manager
+category: dev
+description:
+  en: "MCP manager for DeepSeek Harness Web: a Settings page beside Plugins that lists the MCP servers the running loader tree actually holds, each with its config summary, endpoint and live state, and disables or restores any of them through a paired-marker block in the profile's cordis.patch.yml. Env values, header values and `!!js` sources reach the page only as key names or dot-paths."
+  zh: "DSH 的 MCP 极简管理：与「插件」同级的一页设置，列出运行中 Loader 树里真实存在的 MCP 服务器及其配置摘要、端点与实时状态，并通过 profile 的 cordis.patch.yml 成对标记块停用或恢复任一服务器；环境变量值、请求头值与 `!!js` 表达式只以键名或点路径的形式到达页面。"

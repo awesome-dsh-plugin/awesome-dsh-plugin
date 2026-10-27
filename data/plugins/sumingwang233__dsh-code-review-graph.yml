@@ -1,0 +1,6 @@
+url: https://github.com/sumingwang233/dsh-code-review-graph
+name: sumingwang233/dsh-code-review-graph
+category: dev
+description:
+  en: Graph-based code context, impact analysis, review workflows, interactive graphs, and permission-controlled refactoring for DSH using the code-review-graph engine.
+  zh: 基于 code-review-graph 引擎，为 DSH 提供代码图谱上下文、影响分析、审查工作流、交互式图谱和权限控制的重构。

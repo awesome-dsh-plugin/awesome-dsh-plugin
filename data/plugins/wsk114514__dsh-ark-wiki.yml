@@ -1,0 +1,6 @@
+url: https://github.com/wsk114514/dsh-ark-wiki
+name: wsk114514/dsh-ark-wiki
+category: tools
+description:
+  en: Queries PRTS Wiki for Arknights operators, items, stages, story pages and worldbook entries, and predicts unreleased characters, alters and banner schedules from story-cast statistics and banner history.
+  zh: 查询 PRTS Wiki 的《明日方舟》干员、物品、关卡、剧情与泰拉大典世界观条目，并基于剧情卡司统计与卡池历史预测未实装角色、异格与卡池排期。

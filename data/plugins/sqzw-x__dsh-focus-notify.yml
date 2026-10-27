@@ -1,0 +1,6 @@
+url: https://github.com/sqzw-x/dsh-focus-notify
+name: sqzw-x/dsh-focus-notify
+category: notify
+description:
+  en: 'Focus-aware notifications for DeepSeek Harness: approvals, questions, plan reviews and finished replies appear as one alert only when the conversation window loses focus; background conversations alert at any time and subagent sessions never do.'
+  zh: '焦点感知的 DeepSeek Harness 通知插件：审批、提问、方案确认与回复完成统一为一种提醒，当前对话在窗口失焦后才弹出，后台对话随时提醒，子代理会话不提醒。'

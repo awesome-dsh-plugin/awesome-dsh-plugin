@@ -1,0 +1,6 @@
+url: https://github.com/xindong/dsh-client-canvas
+name: DSH Canvas
+category: ui
+description:
+  en: "An AI-native multimodal canvas for DSH: preview images, video, audio, 3D models, PDFs, documents, and code; connect ideas and collaborate with agents in a persistent local workspace."
+  zh: "AI 原生多模态画布，支持图片、视频、音频、3D 模型、PDF、文档与代码等文件展示与预览；通过节点连线组织素材，与 Agent 共享上下文、协作编辑，内容持久保存在本机。"

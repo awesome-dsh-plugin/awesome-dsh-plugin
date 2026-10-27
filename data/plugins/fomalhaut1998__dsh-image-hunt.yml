@@ -1,0 +1,6 @@
+url: https://github.com/fomalhaut1998/dsh-image-hunt
+name: fomalhaut1998/dsh-image-hunt
+category: tools
+description:
+  en: Multi-source image search and download (14 engines + 7 aliases covering Baidu, Bing, 360, Duitang, Huaban, Iconify, DuckDuckGo, Yandex, Openverse, Wikimedia, Pixiv, Wallhaven, Konachan and Safebooru) that saves the picked images into the session workspace with a per-file meta.json and renders them inline in the conversation; ships a standalone CLI as well.
+  zh: 多图源搜图并下载（14 个图源 + 7 个别名，覆盖百度/必应/360/堆糖/花瓣/Iconify/DuckDuckGo/Yandex/Openverse/维基共享/Pixiv/Wallhaven/Konachan/Safebooru），落盘进会话工作区并逐张写 meta.json，图片直接在对话里显示；另附独立 CLI。

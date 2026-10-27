@@ -1,0 +1,6 @@
+url: https://github.com/k0ndrateff/dsh-plugins/tree/main/packages/atlassian
+name: k0ndrateff/dsh-plugins#atlassian
+category: tools
+description:
+  en: 'Jira and Confluence for DeepSeek Harness: the tools of Atlassian remote MCP server, a result card for issues and pages, and an issue panel.'
+  zh: '把 Jira 与 Confluence 接进 DeepSeek Harness：提供 Atlassian 远程 MCP 服务器的工具、问题与页面的结果卡片，以及问题面板。'

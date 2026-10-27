@@ -1,0 +1,6 @@
+url: https://github.com/KKUCODES/dshm-plugin
+name: KKUCODES/dshm-plugin
+category: remote
+description:
+  en: 'Connects the DSHM Android client to computer-hosted DeepSeek Harness sessions for remote chat, model switching, and approvals with device pairing and revocation.'
+  zh: '将 DSHM 安卓客户端连接到电脑上的 DeepSeek Harness 会话，支持远程续聊、模型切换、审批、设备配对与撤销。'

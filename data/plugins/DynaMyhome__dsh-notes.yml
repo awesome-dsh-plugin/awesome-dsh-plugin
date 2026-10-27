@@ -1,0 +1,6 @@
+url: https://github.com/DynaMyhome/dsh-notes
+name: DynaMyhome/dsh-notes
+category: docs
+description:
+  en: 'Notes workspace in the right sidebar: a notes tree beside a live-preview Markdown editor with tabs, split panes, outline and trash, over plain .md files plus a thin per-workspace index that agents organize through one `knowledge` tool.'
+  zh: '右侧栏的笔记工作区：笔记树 + 实时预览的 Markdown 编辑器（标签 / 分屏 / 大纲 / 回收站），笔记是普通 .md 文件，索引是按工作区的薄映射，Agent 侧只用一个 `knowledge` 工具整理。'

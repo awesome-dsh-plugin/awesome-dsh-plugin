@@ -2,5 +2,5 @@ url: https://github.com/173787247/dsh-wsl-vecmem
 name: 173787247/dsh-wsl-vecmem
 category: wsl
 description:
-  en: Tiny local vector memory via Ollama embeddings and ~/.dsh/vecmem.
-  zh: 本地向量小记：Ollama embedding + ~/.dsh/vecmem。
+  en: Tiny local vector memory via Ollama embeddings and ~/.dsh/vecmem (workspace namespaces; optional IM crumb via vecmemOnReply).
+  zh: 本地向量小记：Ollama embedding + ~/.dsh/vecmem（workspace 命名空间；可选 IM 回合摘要写入）。

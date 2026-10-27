@@ -1,0 +1,6 @@
+url: https://github.com/Noct2vis/dsh-mastery-loop
+name: Noct2vis/dsh-mastery-loop
+category: skill
+description:
+  en: Builds a Markdown knowledge base from your course materials, then drills you until every knowledge point reaches your target accuracy; each answer must include your reasoning.
+  zh: 从课程材料建一份 Markdown 知识库，然后出题刷到每个知识点都达到目标正确率；每题都必须写出思维链。

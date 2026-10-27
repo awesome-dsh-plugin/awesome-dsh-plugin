@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-paste-dock
+name: drscrewdriver/dsh-paste-dock
+category: ui
+description:
+  en: Turns large text pastes into pastes/*.txt attachments with a dock above the composer and a minimal, recognisable badge in the draft.
+  zh: 大段文本粘贴自动存为 pastes/*.txt 附件,输入框上方 dock 卡片管理,草稿内只留可辨识的最小徽标。

@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-warden
+name: dingchenhui0618-arch/dsh-warden
+category: security
+description:
+  en: 'Adversarial review gate for tool calls. It hooks `tools/pre-execute`: a local regex pass over destructive commands (`rm -rf`, `git push --force`, `git reset --hard`, `DROP TABLE`, `format`, disk writes) and sensitive paths (`.env`, `id_rsa`, `.ssh`, `.git/`, `$DSH_HOME`) runs first with no latency, and only a hit is escalated to one review-model call that returns allow or deny. Plain reads and ordinary writes never enter that path, so everyday work pays no added delay. Every verdict is shown live in the Web GUI.'
+  zh: '工具调用的对抗式审查门。它挂在 `tools/pre-execute` 上：先用本地正则零延迟筛破坏性命令（`rm -rf`、`git push --force`、`git reset --hard`、`DROP TABLE`、`format`、写盘）和敏感路径（`.env`、`id_rsa`、`.ssh`、`.git/`、`$DSH_HOME`），只有命中才升级给一次审查模型调用，返回 allow / deny。普通读取与普通写入完全不进这条路径，日常工作没有额外延迟；每次判定都在 Web GUI 里实时显示。'

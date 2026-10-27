@@ -2,5 +2,5 @@ url: https://github.com/loyalchiiina/dsh-lobsterai-daddy
 name: loyalchiiina/dsh-lobsterai-daddy
 category: ui
 description:
-  en: 'Drags the LobsterDaddy multi-account console onto the DSH window as a floating ball: drag it anywhere and the position persists, click to slide out a drawer that embeds the full web console through a loopback-only same-origin reverse proxy (so the panel stays byte-identical to the browser version), plus a resizable persisted drawer, a live online/offline dot and an account-count badge.'
-  zh: '把 LobsterDaddy 多账号控制台变成 DSH 界面上的悬浮球：可拖到任意位置并自动记忆坐标，点开以抽屉内嵌完整网页控制台（经由仅限本机的同源反向代理，界面与网页版保持一致），抽屉可拖动缩放并记忆尺寸，另有在线状态圆点与账号数徽标。'
+  en: 'Turns the LobsterDaddy multi-account console into a floating ball in the DSH window: drag it anywhere and the position persists, and the panel can be set to follow the ball. Clicking it slides out a drawer that renders the console as native DOM (no iframe) from the loopback-only same-origin proxy, showing action buttons, the account LobsterAI is currently signed in as, and a per-account list with balance, check-in state and last check-in time; a resizable persisted drawer, a live online/offline dot and an account-count badge are included.'
+  zh: '把 LobsterDaddy 多账号控制台变成 DSH 界面上的悬浮球：可拖到任意位置并自动记忆坐标，面板可设置为跟随悬浮球移动；点开以抽屉呈现控制台——界面由原生 DOM 渲染（不用 iframe），数据经仅限本机的同源反向代理获取，自上而下为操作按钮、当前登录账号、以及含积分余额与签到状态（附最近签到时间）的账号列表；抽屉可拖动缩放并记忆尺寸，另有在线状态圆点与账号数徽标。'

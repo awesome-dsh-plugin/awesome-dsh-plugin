@@ -1,0 +1,7 @@
+url: https://github.com/zhongyichang1998/dsh-mini-usage
+name: zhongyichang1998/dsh-mini-usage
+category: usage
+description:
+  en: Local token totals, per-model usage and a 12-week heatmap in a Chinese sidebar panel.
+  zh: 在中文侧栏面板中展示本地 Token 总量、模型用量与 12 周热力图。
+tarball: https://github.com/zhongyichang1998/dsh-mini-usage/releases/latest/download/dsh-mini-usage.tgz

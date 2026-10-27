@@ -1,0 +1,7 @@
+url: https://github.com/sjh9714/dsh-retry-guard
+name: sjh9714/dsh-retry-guard
+category: tools
+tarball: https://github.com/sjh9714/dsh-retry-guard/releases/download/v0.1.0-alpha.1/dsh-retry-guard-0.1.0-alpha.1.tgz
+description:
+  en: 'Observes consecutive identical tool failures and optionally pauses before the next model step, preserving original results and successful repeats, with an in-chat report in DSH Web.'
+  zh: '监视连续相同的工具失败，可在下一个模型步之前选择暂停；保留原始结果与成功的重复调用，并在 DSH Web 里出一份会话内报告。'

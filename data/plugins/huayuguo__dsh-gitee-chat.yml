@@ -1,0 +1,6 @@
+url: https://github.com/huayuguo/dsh-gitee-chat
+name: huayuguo/dsh-gitee-chat
+category: git
+description:
+  en: 'Gitee Enterprise project management inside the conversation: issues, pull requests, kanban and the Gitee MCP toolchain.'
+  zh: '在对话里管理 Gitee 企业版项目：issue、Pull Request、看板与 Gitee MCP 工具链。'

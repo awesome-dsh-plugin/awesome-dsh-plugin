@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-community-bench
+name: PerryLink/dsh-community-bench
+category: ui
+description:
+  en: 'Adds a Community Bench tab that reads the public task-conditioned registry and shows the same score everyone sees; it does not compute a local score.'
+  zh: '增加社区基准标签页，读取公开的、按任务条件计算的 registry，展示所有人看到的同一分数；不在本地计算分数。'

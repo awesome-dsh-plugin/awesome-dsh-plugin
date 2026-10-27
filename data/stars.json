@@ -403,10 +403,6 @@
   "stars": 38,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/alvinunreal/openpets/tree/main/packages/dsh": {
-  "stars": 1081,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/AmeKrance/anan-thermal-monitor": {
   "stars": 2,
   "checkedAt": "2026-08-19"
@@ -851,10 +847,6 @@
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/cerebrixos-org/tuning-engines-cli/tree/main/packages/tuningengines-dsh-plugin": {
-  "stars": 5,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/Ch0uHuaZ1/DeepSeek-Harness-Desktop/tree/main/packages/desktop-launcher-plugin": {
   "stars": 3,
   "checkedAt": "2026-08-19"
@@ -1137,10 +1129,6 @@
  },
  "https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-web-ui-settings": {
   "stars": 4,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/dannyvan/dsh-file-drop": {
-  "stars": 3,
   "checkedAt": "2026-08-19"
  },
  "https://github.com/Dariandai/dsh-starter-pack": {
@@ -1505,10 +1493,6 @@
  },
  "https://github.com/freehul/sgme": {
   "stars": 4,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/Fro2en12/dsh-download-progress": {
-  "stars": 3,
   "checkedAt": "2026-08-19"
  },
  "https://github.com/frozo-ai/dsh-worlds": {
@@ -2263,31 +2247,11 @@
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/JohnXu22786/command-scout": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/JohnXu22786/computer-control": {
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/JohnXu22786/context-pruner": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/JohnXu22786/docgen": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/JohnXu22786/docs-retriever": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/JohnXu22786/file-planning": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/JohnXu22786/github-mcp": {
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
@@ -2304,18 +2268,6 @@
   "checkedAt": "2026-08-19"
  },
  "https://github.com/JohnXu22786/secret-guard": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/JohnXu22786/session-titler": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/JohnXu22786/skill-framework": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/JohnXu22786/snippet-expander": {
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
@@ -3037,14 +2989,6 @@
  },
  "https://github.com/maxiaovivi/dsh-cloak-browser": {
   "stars": 4,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/maxwell-feng/dsh-tesseract-ocr": {
-  "stars": 2,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/maxwell-feng/dsh-windows-ocr": {
-  "stars": 6,
   "checkedAt": "2026-08-19"
  },
  "https://github.com/mayf3/dsh-session-doctor": {
@@ -4835,10 +4779,6 @@
   "stars": 1,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/Vladimir-Human/humanizer-ru/tree/main/dsh": {
-  "stars": 102,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/Vladimir-Human/ru-marketplace-mcp/tree/main/dsh": {
   "stars": 64,
   "checkedAt": "2026-08-19"
@@ -5471,10 +5411,6 @@
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/yunxiiQwQ/dsh-maid-whale-webUI/tree/main/maid-whale-webui": {
-  "stars": 14,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/yushi-xxh/dsh-homepage-skin": {
   "stars": 1,
   "checkedAt": "2026-08-19"
@@ -5759,14 +5695,6 @@
   "stars": 1,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/zoumutou/dsh-cost-balance": {
-  "stars": 3,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/zoumutou/dsh-web-preview": {
-  "stars": 2,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/zp-home/dsh-recommend": {
   "stars": 18,
   "checkedAt": "2026-08-19"
@@ -5905,6 +5833,14 @@
  },
  "https://github.com/zhengzeyong9527-droid/ai-input-enhancer": {
   "stars": 1,
+  "checkedAt": "2026-08-19"
+ },
+ "https://github.com/yunxiiQwQ/dsh-maid-whale-UI/tree/main/maid-whale-webui": {
+  "stars": 14,
+  "checkedAt": "2026-08-19"
+ },
+ "https://github.com/OpenPetsHQ/openpets/tree/main/packages/dsh": {
+  "stars": 1081,
   "checkedAt": "2026-08-19"
  }
 }

@@ -1,0 +1,7 @@
+url: https://github.com/sunrulin123/dsh-community-web-ui
+name: sunrulin123/dsh-community-web-ui
+category: remote
+tarball: https://github.com/sunrulin123/dsh-community-web-ui/releases/latest/download/dsh-community-web-ui.tgz
+description:
+  en: 'Standalone remote Web UI for DeepSeek Harness with mobile viewport, soft-keyboard and touch-target adaptations while leaving the native Desktop presentation unchanged.'
+  zh: 'DeepSeek Harness 独立远程 Web UI：适配手机视口、软键盘与触控热区，同时保持原生桌面端界面不变。'

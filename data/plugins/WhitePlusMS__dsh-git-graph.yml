@@ -2,5 +2,6 @@ url: https://github.com/WhitePlusMS/dsh-git-graph
 name: WhitePlusMS/dsh-git-graph
 category: git
 description:
-  en: 'Dedicated read-only Git Graph view beside Chat and Trajectory: commit topology, local/remote/tag refs, HEAD and working-tree status, search, filtering, first-parent mode, refresh, and load more.'
-  zh: Chat 和 Trajectory 旁的独立 Git Graph 视图：提交拓扑、本地/远程/tag 引用、HEAD 与工作区状态、搜索、筛选、首父模式、刷新和加载更多。
+  en: 'Read-only Git Graph in the native DSH Web sidebar, with commit history, branch and tag refs, file diffs, two-commit comparison, and full historical source.'
+  zh: 'DSH Web 原生右侧栏的只读 Git Graph，支持提交历史、分支与标签、文件 Diff、两提交比较和完整历史原文。'
+tarball: https://github.com/WhitePlusMS/dsh-git-graph/releases/download/v0.5.1/dsh-git-graph-0.5.1.tgz

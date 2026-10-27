@@ -1,0 +1,6 @@
+url: https://github.com/acdsh4869/dsh-aqua-theme
+name: acdsh4869/dsh-aqua-theme
+category: theme
+description:
+  en: 'Aqua glassmorphism theme for the DSH Web UI, adapted to DSH v0.2.x and desktop v0.22.3+: the header, sidebar, composer, stats line and trajectory view become frosted glass panes over a live WebGL fluid board or an image/video wallpaper, with mica and compatibility layouts, adjustable blur, frost, hue and brightness, marine decorations (particle whale, fish, mesh, cursor glow), a one-click reset-to-defaults button, and a master switch whose off state restores the stock UI exactly; adapted from WYH66666666''s original (0.1.x) and du-u-uck''s 0.1.1-rc.2 port.'
+  zh: 'Aqua 玻璃质感主题（适配 DSH v0.2.x 与桌面端 v0.22.3+）：顶栏、侧边栏、输入框、统计行与轨迹视图悬浮在 WebGL 流体板或图片/视频壁纸上的磨砂玻璃片，云母/兼容双布局，模糊、磨砂、色调、亮度可调，海洋装饰（粒子鲸鱼、小鱼、网状交互、鼠标辉光），一键恢复默认，总开关关闭即完全还原原生界面；承 WYH66666666 原作（0.1.x）与 du-u-uck 的 0.1.1-rc.2 适配。'

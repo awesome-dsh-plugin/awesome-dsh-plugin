@@ -1,0 +1,6 @@
+url: https://github.com/Shad0wwa1ker/dsh-browser-mode
+name: Shad0wwa1ker/dsh-browser-mode
+category: browser
+description:
+  en: 'Adds a visible-browser Agent preset (persona and toolset for navigating, filling forms, clicking and screenshotting through the Playwright MCP toolset) plus a gate that refuses every browser tool call in other presets until the user approves that Session through the bundled browser_access tool. The bundle mounts the Playwright MCP provider itself, and both a settings page in the Plugins view and the browser_source tool switch the browser at runtime between Microsoft Edge (default), the Chromium shipped with Playwright, and a CDP endpoint. Requires keeping the shared browser-use registration row in the profile (one provider per process).'
+  zh: '新增「浏览器操作」Agent 预设（基于 Playwright MCP 工具集的导航、填表、点击与截图规程），并加门禁：其他预设里的浏览器工具调用一律拒绝，直到用户通过内置的 browser_access 工具授权该会话。插件自带 Playwright MCP provider，插件页的设置页与 browser_source 工具都能在运行时把浏览器来源切换为 Microsoft Edge（默认）、Playwright 内置 Chromium 或 CDP 地址。需在 profile 里保留共享的 browser-use 注册表行（一个进程只能有一个 provider）。'
