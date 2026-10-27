@@ -1,6 +1,7 @@
 url: https://github.com/functy23/dsh-workbuddy-panel
 name: functy23/dsh-workbuddy-panel
 category: model
+icon: https://raw.githubusercontent.com/functy23/dsh-workbuddy-panel/main/docs/icon-512.png
 description:
   en: Hosts the WorkBuddy2API gateway in DSH with a native panel, a separately updatable kernel, and outbound fingerprint alignment with WorkBuddy Desktop 5.9.2.
   zh: 把 WorkBuddy2API 网关托管进 DSH，提供原生面板、可独立更新的内核，以及对齐 WorkBuddy Desktop 5.9.2 的出站指纹。
