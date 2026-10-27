@@ -72,6 +72,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'schedule' || github.repository == 'awesome-dsh-plugin/awesome-dsh-plugin'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -184,7 +185,12 @@ jobs:
               if [ "${{ inputs.skip_probes }}" = "true" ]; then full_probe=''; else full_probe=1; fi ;;
             *) full_probe='' ;;
           esac
-          if [ -n "$full_probe" ] || [ ! -s data/npm-map.json ]; then
+          # Forks do not have the GitHub API quota for full probes — skip entirely
+          if [ "${{ github.repository }}" != "awesome-dsh-plugin/awesome-dsh-plugin" ]; then
+            full_probe=''
+            echo "fork build — skipping probes, building from committed data"
+          fi
+          if [ -n "$full_probe" ] || ( [ "${{ github.repository }}" == "awesome-dsh-plugin/awesome-dsh-plugin" ] && [ ! -s data/npm-map.json ] ); then
             node scripts/probe-npm.mjs
             # After probe-npm.mjs, never before: this reads data/npm-map.json
             # to know which entries HAVE a package to probe. Reads and writes
