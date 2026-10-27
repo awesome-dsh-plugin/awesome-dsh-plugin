@@ -1,0 +1,7 @@
+url: https://github.com/chriswang/dsh-conversation-tree
+name: chriswang/dsh-conversation-tree
+category: ui
+description:
+  en: 'A collapsible column beside the conversation that organises conversations into a workspace/topic tree, opens the real sessions in place, and exposes the tree to the assistant through 9 model tools.'
+  zh: '会话列旁的可折叠栏：把对话按工作区与主题组织成树，就地打开真实会话，并通过 9 个模型工具让助手读写这棵树。'
+icon: https://raw.githubusercontent.com/chriswang/dsh-conversation-tree/main/assets/icon-180.png
