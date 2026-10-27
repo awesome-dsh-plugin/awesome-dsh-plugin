@@ -1,0 +1,7 @@
+url: https://github.com/reg4916/dsh-bar/tree/main/plugin
+name: reg4916/dsh-bar#plugin
+category: ui
+description:
+  en: "Host plugin for the macOS menu bar companion: live DeepSeek Harness session state, Approve/Deny for tool approvals, stop the current turn, open the exact session. The native app is a free universal build in GitHub Releases."
+  zh: "macOS 菜单栏伴侣的宿主插件：实时显示 DeepSeek Harness 会话状态，可直接批准/拒绝工具审批、停止当前回合、打开对应会话。原生应用以通用二进制免费发布于 GitHub Releases。"
+
