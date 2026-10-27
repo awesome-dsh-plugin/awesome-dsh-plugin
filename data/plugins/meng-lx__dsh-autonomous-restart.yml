@@ -1,5 +1,5 @@
-url: https://github.com/meng-lx/dsh-auto-restart
-name: meng-lx/dsh-auto-restart
+url: https://github.com/meng-lx/dsh-autonomous-restart
+name: meng-lx/dsh-autonomous-restart
 category: session
 description:
   en: 'Restart initiated by the agent itself, not by a button. The agent calls one tool, then the plugin takes over: it waits until every agent and background job on the host is idle, runs a visible ten-second countdown that a click, a scroll, or a key press cancels, then restarts DSH and wakes the original session so the agent carries on from its last sentence. No button, no manual entry: the tool is the only way in. Works on the official desktop app and the official web client; third-party shells are not supported out of the box. Windows only.'
