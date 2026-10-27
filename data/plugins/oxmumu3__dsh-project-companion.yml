@@ -4,4 +4,3 @@ category: "workflow"
 description:
   en: "Personal project assistant for bounded project context and memory, explicit task handoffs through an existing WeChat bridge, reminders, and source-linked summaries."
   zh: "个人项目助手：管理有界项目上下文和记忆，通过既有微信桥接明确交办任务、安排提醒并查看带来源的摘要。"
-tarball: "https://github.com/oxmumu3/dsh-project-companion/releases/download/v0.13.0-preview.2/dsh-project-companion-0.13.0-preview.2.tgz"
