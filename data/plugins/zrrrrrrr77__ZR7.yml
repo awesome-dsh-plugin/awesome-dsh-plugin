@@ -3,4 +3,10 @@ name: zrrrrrrr77/ZR7
 category: ui
 description:
   en: Adds a scissors button to the composer. It freezes the whole desktop, lets you drag a region, and inserts the crop into the prompt as an image attachment. Windows only.
-  zh: 在输入框旁加一个剪刀按钮：冻结整个桌面，拖框选取区域，松手后把该区域作为图片附件插入提示词框。仅 Windows。
+  zh: 最有效率的DSH提示词框截图快捷按钮。不再需要费劲地粘贴图片。
+“Ctrl+Alt+1”一起按，自动隐藏DSH窗口截屏；同时按住“Shift+Ctrl+Alt+1”，不隐藏DSH截屏。
+“点击按钮”自动隐藏窗口截屏；“shift+点击按钮”不隐藏窗口。
+为保留效率，选定截图范围框后不支持再次修改大小，图片直接进入提示词框。
+按钮放在提示框第三位，防止误触，方便截图后直接修改提示词。
+截图默认保存到当前会话文件夹，文件名为秒级时间戳。
+！！！默认保存2份：当前对话文件夹+DSH自身附件库。（节约空间可修改成只保存到当前会话文件夹，会话选择引用文件）
