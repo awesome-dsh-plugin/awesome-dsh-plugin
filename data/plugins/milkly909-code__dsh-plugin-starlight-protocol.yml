@@ -1,0 +1,7 @@
+url: https://github.com/milkly909-code/dsh-plugin-starlight-protocol
+name: milkly909-code/dsh-plugin-starlight-protocol
+category: theme
+tarball: https://github.com/milkly909-code/dsh-plugin-starlight-protocol/releases/download/v1.0.0/dsh-plugin-starlight-protocol-1.0.0.tgz
+description:
+  zh: "DeepSeek Harness 旗舰级综合外观与交互套件：集成全域深空动态天体引擎、赛博朋克 2077 夜之城战术 HUD 终端主题、特工开机冷启动认证序列，并彻底修复无边框环境下侧栏收起后的折叠按钮丢失痛点。"
+  en: "Flagship appearance suite for DeepSeek Harness: seamless dynamic deep-space starfield engine, Cyberpunk 2077 Night City HUD theme, agent startup authentication sequence, and dedicated tactical sidebar toggle fix."
