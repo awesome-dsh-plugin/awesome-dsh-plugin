@@ -1,0 +1,8 @@
+url: https://github.com/j1kwen/dsh-harness-sync
+name: j1kwen/dsh-harness-sync
+category: dev
+tarball: https://github.com/j1kwen/dsh-harness-sync/releases/latest/download/dsh-harness-sync.tgz
+icon: https://raw.githubusercontent.com/j1kwen/dsh-harness-sync/main/assets/icon-180.png
+description:
+  en: "Sync Harness profiles, plugin manifests, plugin settings and local plugin source across machines through a private Git repository, with per-item selection, three-way conflict handling and backups."
+  zh: "通过私有 Git 仓库在多台机器之间同步 Harness 配置、插件清单、插件设置与本地插件源码，支持逐项开关、三方冲突处理与覆盖前备份。"
