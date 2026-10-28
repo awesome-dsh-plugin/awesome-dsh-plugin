@@ -72,7 +72,6 @@ concurrency:
 
 jobs:
   build:
-    if: github.event_name != 'schedule' || github.repository == 'awesome-dsh-plugin/awesome-dsh-plugin'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -146,8 +145,7 @@ jobs:
           restore-keys: updates-v1-
       - name: Build
         env:
-          GITHUB_TOKEN: ${{ secrets.PROBE_TOKEN || secrets.GITHUB_TOKEN }}
-          SKIP_PUBLISH_CHECKS: ${{ github.repository != 'awesome-dsh-plugin/awesome-dsh-plugin' && '1' || '' }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # The nightly run is the authoritative refresh: it re-checks every
           # entry regardless of cached verdicts, so a plugin that publishes to
           # npm can never be stuck on a stale "not published" (see #487).
@@ -281,7 +279,7 @@ jobs:
       # in the runner's working copy and never committed, so the invariant at
       # the top of this file holds.
       - name: publish the catalog to npm
-        if: github.repository == 'awesome-dsh-plugin/awesome-dsh-plugin' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         # Trusted publishing (OIDC) — the id-token permission above is what
         # authorizes it, so there is no token to leak or rotate.
         run: |
@@ -294,7 +292,7 @@ jobs:
       # catalog tarball would multiply every consumer's daily download for
       # data most never request. See scripts/publish-updates.mjs.
       - name: publish the update notes to npm
-        if: github.repository == 'awesome-dsh-plugin/awesome-dsh-plugin' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           npm install -g npm@latest  # trusted publishing needs npm >= 11.5
           node scripts/publish-updates.mjs
