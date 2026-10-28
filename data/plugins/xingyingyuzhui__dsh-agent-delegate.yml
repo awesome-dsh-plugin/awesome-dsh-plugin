@@ -1,0 +1,6 @@
+url: https://github.com/xingyingyuzhui/dsh-agent-delegate
+name: xingyingyuzhui/dsh-agent-delegate
+category: workflow
+description:
+  en: Delegation broker for Claw agents, with depth caps, role attenuation, write-child git worktrees, and handoff accept or reject.
+  zh: Claw 委派：深度上限、角色衰减、写入型 child 的 Git worktree，以及 handoff 接受/拒绝。
