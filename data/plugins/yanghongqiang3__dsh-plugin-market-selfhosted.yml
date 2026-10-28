@@ -4,4 +4,4 @@ category: market
 description:
   en: Self-hosted plugin marketplace for DeepSeek Harness with accounts, groups, permissions, artifact storage, and install statistics; run the server with Docker and install this client bundle in DSH.
   zh: 面向团队的 DSH 自托管插件市场：账号、权限组、制品存储与安装统计；服务端用 Docker 运行，DSH 安装此客户端组合包。
-tarball: https://github.com/yanghongqiang3/dsh-plugin-market-selfhosted/releases/latest/download/dsh-plugin-market-internal.tgz
+tarball: https://github.com/yanghongqiang3/dsh-plugin-market-selfhosted/releases/latest/download/dsh-plugin-market-selfhosted.tgz
