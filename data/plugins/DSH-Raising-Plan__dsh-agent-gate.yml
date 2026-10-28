@@ -1,0 +1,6 @@
+url: https://github.com/DSH-Raising-Plan/dsh-agent-gate
+name: DSH-Raising-Plan/dsh-agent-gate
+category: security
+description:
+  en: Risk-tiered permission gate for DSH tools with path sandboxing, call quotas, and fail-closed audit.
+  zh: DSH 工具权限闸门：风险分级、路径沙箱、调用限额与 fail-closed 审计。
