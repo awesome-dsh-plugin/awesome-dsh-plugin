@@ -1,0 +1,6 @@
+url: https://github.com/xiaotuchu/dsh-file-tree
+name: xiaotuchu/dsh-file-tree
+category: ui
+description:
+  en: Adds a resizable workspace file tree beside the native preview, with directory expansion, filtering of loaded files, and refresh.
+  zh: 在原生预览旁添加可调整宽度的工作区文件树，支持目录展开、已加载文件筛选和刷新。
