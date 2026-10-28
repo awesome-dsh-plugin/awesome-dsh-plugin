@@ -1,0 +1,7 @@
+url: https://github.com/lishize20040802-rgb/dsh-deep-ptc-mode
+name: lishize20040802-rgb/dsh-deep-ptc-mode
+category: workflow
+icon: https://raw.githubusercontent.com/lishize20040802-rgb/dsh-deep-ptc-mode/main/assets/icon.png
+description:
+  en: 'Deep PTC mode is an open-source agent preset for DeepSeek Harness that keeps the built-in PTC tool surface and replaces the persona with a working contract: visible progress, confident tool use, early clarification, and an explicit unlimited-token-budget section that spends tokens on depth and verification instead of verbosity.'
+  zh: '深度PTC模式是 DeepSeek Harness 的开源 Agent preset：保留内置 PTC 的工具面，把人设换成一份工作契约——持续汇报进度、放心使用工具、需求不明确先问清楚，并明写 DeepSeek 无限 token 预算，把预算花在深度与验证上，不注水、不撑爆上下文。'
