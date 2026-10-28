@@ -1,0 +1,7 @@
+url: https://github.com/dragonsummer1/dsh-watermark-remover
+name: dragonsummer1/dsh-watermark-remover
+category: tools
+description:
+  en: "Structural lossless watermark removal for PDF and Word (DOCX) documents. Detects cross-page Form XObject watermark layers and Word header WordArt, then removes only the watermark layer — no re-rendering, no OCR, body text and images untouched."
+  zh: "结构级无损移除 PDF / Word 水印。探测跨页 Form XObject 水印层与 Word 页眉艺术字水印，只移除水印层——不栅格化、不 OCR、不动正文与图片。"
+icon: https://raw.githubusercontent.com/dragonsummer1/dsh-watermark-remover/main/assets/icon-180.png
