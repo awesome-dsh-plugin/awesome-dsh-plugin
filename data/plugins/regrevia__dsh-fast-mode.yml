@@ -3,18 +3,14 @@ name: regrevia/dsh-fast-mode
 category: usage
 description:
   en: >-
-    Per-conversation fast mode for multi-step tasks that batches independent tool calls and
-    drops redundant steps. Pooled over 9 blocks and 132 valid paired runs it is about 18% less
-    total wall-clock time (0.825x, per-cell median 0.813x, 95% bootstrap interval 0.747-0.914)
-    and 15-25% faster on the shapes it fits (codeimpl median 0.709x, faster in 13 of 15 pairs;
-    shellpipeline median 0.844x), with hidden tests still passing. Short repairs and data
-    reshaping do not pay for the reminder (debugfix mean 1.287x with output 1.29x longer,
-    perfrefactor mean 1.140x), so try it once per task shape. The earlier "26-28%" claim is
-    retracted.
+    DeepSeek Harness's own fast mode: a few configs that set how fast a task runs — bound where
+    thinking settles, bound the process narration, bound the steps per task — faster delivery
+    without touching the model or its thinking strength. Measured over 10 task families and 30
+    complete units: the default reaches 0.72x total time, 0.74x output tokens and 0.71x steps;
+    moving the "write it once" reminder from step 4 to step 2 gives debugfix 0.535x, ledger
+    0.506x, migrate 0.751x, and 0.625x pooled over 13 pairs with 0.614x output tokens (migrate
+    alone 0.509x with 0.528x output at step 3). Hidden tests passed in every pair. Short 1-5 step
+    repairs and data reshaping do not pay for the reminder, so try it once per task shape.
   zh: >-
-    单会话开关的快速模式，合并可并行的工具调用并减少冗余步骤。9 块 132 对有效配对的合池结果是
-    整任务总墙钟约快 18%（0.825×，逐格中位 0.813×，95% 自助区间 0.747–0.914），适合的形状快
-    15–25%（codeimpl 中位 0.709×、15 对里 13 对更快；shellpipeline 中位 0.844×），隐藏测试仍
-    全绿。短改修与数据整形收不回提醒成本（debugfix 均值 1.287×、输出反而长 1.29×；
-    perfrefactor 均值 1.140×），所以按任务形状先试一次再定。此前「约快 26%」的说法已撤回。
+    DeepSeek Harness 自己的快速模式：用几项配置控制任务的运行速度——限制思考在哪一步收敛、限制中间汇报的输出、限制最多几步，在不改变模型与思考强度的前提下把任务做快。实测 10 类任务 30 个完整单元：默认配置总耗时 0.72×、输出 token 0.74×、步数 0.71×；把「省着写」提醒从第 4 步提前到第 2 步，debugfix 0.535×、ledger 0.506×、migrate 0.751×，13 对合并 0.625×、输出 token 0.614×（第 3 步时 migrate 单族 0.509×、输出 0.528×）。每一对里两臂隐藏断言逐格相同、全绿。1–5 步的小改修与数据整形收不回提醒成本，按任务形状先试一次再定。
 icon: https://raw.githubusercontent.com/regrevia/dsh-fast-mode/main/icon.png
