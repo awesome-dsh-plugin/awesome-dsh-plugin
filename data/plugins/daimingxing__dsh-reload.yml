@@ -1,0 +1,6 @@
+url: https://github.com/daimingxing/dsh-reload
+name: daimingxing/dsh-reload
+category: dev
+description:
+  en: 'Hot reload and one-click restart for DSH plugin development. Reload uses DSH''s built-in reload instead of a private reimplementation, so it behaves the way the host expects: only changed plugins refresh, the rest keep running. Restart is the safe one - it runs outside the client, so it still brings the client back when the client is what changed; it refuses while a session or job runs; it confirms the client reopened. Lightweight: one tool, no arguments, nothing added to the model''s context, buttons off by default.'
+  zh: '面向 DSH 插件开发的热重载与一键重启。重载用 DSH 自带的重载，而不是另造一套，所以行为和宿主一致：只刷新有改动的插件，其余继续运行。重启是安全的那个：跑在客户端之外，所以即使要换掉的正是客户端本身也能重新拉起；有会话或后台任务在跑时直接拒绝；并确认客户端真的重新打开了。轻量：只多一个工具、不带参数、不向模型上下文注入内容，按钮默认不出现。'
