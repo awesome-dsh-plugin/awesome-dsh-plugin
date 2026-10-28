@@ -1,0 +1,6 @@
+url: https://github.com/DSH-Raising-Plan/dsh-video-storyboard-hp
+name: DSH-Raising-Plan/dsh-video-storyboard-hp
+category: vision
+description:
+  en: Turns a long video into one addressable storyboard grid with timestamps, dialogue, and an audio envelope.
+  zh: 把长视频压成一张带时间戳、台词和音频包络的可寻址宫格分镜。
