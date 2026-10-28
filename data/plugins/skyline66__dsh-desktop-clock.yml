@@ -1,0 +1,8 @@
+url: https://github.com/skyline66/dsh-desktop-clock
+name: skyline66/dsh-desktop-clock
+category: ui
+tarball: https://github.com/skyline66/dsh-desktop-clock/releases/latest/download/dsh-desktop-clock.tgz
+icon: https://raw.githubusercontent.com/skyline66/dsh-desktop-clock/main/assets/icon-180.png
+description:
+  en: A draggable floating clock for the DSH Web GUI with analog and digital faces, a focus timer, four themes, and persistent placement.
+  zh: 可拖动的 DSH 网页悬浮时钟：支持数字与指针表盘、专注计时、四套主题，并会记住窗口位置。
