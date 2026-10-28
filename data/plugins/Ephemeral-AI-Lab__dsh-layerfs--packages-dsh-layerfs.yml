@@ -1,0 +1,6 @@
+url: https://github.com/Ephemeral-AI-Lab/dsh-layerfs/tree/main/packages/dsh-layerfs
+name: Ephemeral-AI-Lab/dsh-layerfs#dsh-layerfs
+category: workflow
+description:
+  en: 'Binds a dsh session to a LayerFS project, so agents fork, test, merge and publish branches from bash with the layerfs command, and the conversation gains Work and History tabs that draw what each agent did, subagents included.'
+  zh: '把 dsh 会话绑定到 LayerFS 项目：agent 在 bash 里用 layerfs 命令分叉、测试、合并与发布分支，对话中新增 Work 与 History 两个页签，画出每个 agent（含子 agent）做了什么。'
