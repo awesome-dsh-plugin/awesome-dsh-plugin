@@ -1,0 +1,7 @@
+url: https://github.com/chjy090/dsh-auth-gate
+name: chjy090/dsh-auth-gate
+category: security
+description:
+  en: 'Front-door HTTPS authentication gateway for DeepSeek Harness: TOTP-authorised QR device pairing, username/password login, sliding sessions and a reverse proxy with WebSocket tunnelling to a local dsh.'
+  zh: 'DeepSeek Harness 的前置 HTTPS 认证网关：TOTP 授权的扫码设备配对、用户名密码登录、会话滑动续期，并把请求（含 WebSocket）反代到本地 dsh。'
+tarball: https://github.com/chjy090/dsh-auth-gate/releases/download/v0.7.1/dsh-auth-gate-0.7.1.tgz
