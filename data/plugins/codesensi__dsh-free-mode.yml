@@ -1,0 +1,6 @@
+url: https://github.com/codesensi/dsh-free-mode
+name: codesensi/dsh-free-mode
+category: agi
+description:
+  en: "Injects the 'Free Mode' agent preset scheme into DeepSeek Harness."
+  zh: "为 DeepSeek Harness 注入「破甲模式」的 Agent 预设方案。"
