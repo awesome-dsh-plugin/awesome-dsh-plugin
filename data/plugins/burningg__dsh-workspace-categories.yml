@@ -1,0 +1,6 @@
+url: https://github.com/burningg/dsh-workspace-categories
+name: burningg/dsh-workspace-categories
+category: ui
+description:
+  en: 'Sidebar category groups for DSH workspaces: the flat project list becomes collapsible named sections, workspaces re-file by dragging a row onto a group or picking one from a dropdown, one toolbar button collapses every group at once, an appearance panel sets font size, text color and background tint for each of the three levels, and Ctrl+Tab cycles recently opened sessions.'
+  zh: '给 DSH 侧边栏的工作区加自定义分类：平铺的项目列表变成可折叠的分组，工作区可拖到别的分组或在下拉框里改归类，工具栏一键收起全部分组，外观面板能分别调三层字号、文字颜色与底色，Ctrl+Tab 在最近打开的会话之间切换。'
