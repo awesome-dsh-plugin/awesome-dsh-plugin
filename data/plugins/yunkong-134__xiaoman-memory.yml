@@ -4,3 +4,4 @@ category: memory
 description:
   en: 'Plain-text memory for DSH where every event is one Markdown section with six fields, recall works by element association rather than vector search, at most two old titles surface per turn, and nothing calls a model or the network. Writing the library stays manual: you can open it, grep it, correct it and carry it to another machine.'
   zh: '纯文本记忆：一条事一节、六个字段，靠元素联想而不是向量检索，每轮最多交两条旧事；不调模型、不联网，写库留给人——库能直接打开、能 grep、能改、能整份拷走。'
+tarball: https://github.com/yunkong-134/xiaoman-memory/releases/download/v0.1.0/xiaoman-memory-0.1.0.tgz
