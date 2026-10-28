@@ -1,0 +1,7 @@
+url: https://github.com/liubaicai/dsh-codebuddy-link
+name: liubaicai/dsh-codebuddy-link
+category: model
+description:
+  en: 'Connects Tencent CodeBuddy CLI models to DeepSeek Harness, with DSH-managed tool calls, a standalone codebuddy_ask tool, and browser-based account login.'
+  zh: '通过腾讯 CodeBuddy CLI 接入模型，支持由 DSH 执行工具调用、codebuddy_ask 独立问答和浏览器账户授权。'
+icon: https://raw.githubusercontent.com/liubaicai/dsh-codebuddy-link/main/assets/workbuddy.webp
