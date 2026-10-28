@@ -2,6 +2,6 @@ url: https://github.com/MingoYung/dsh-awakening
 name: MingoYung/dsh-awakening
 category: ui
 description:
-  en: 'Responsive 22-second whale startup animation with a voiced welcome, playback settings and preview; optional first-screen install and restore for supported Windows DSH NEXT builds.'
-  zh: '22秒鲸鱼主题启动动画，支持窗口自适应、原声欢迎语、播放设置和预览；提供受支持Windows DSH NEXT构建的可选首屏安装与恢复。'
-tarball: https://github.com/MingoYung/dsh-awakening/releases/download/v0.5.0/dsh-awakening-0.5.0.tgz
+  en: 'Startup animation picker with a responsive whale sequence, local MP4/WebM imports and an in-app community library; optional first-screen install and restore for audited Windows DSH NEXT builds.'
+  zh: '可更换作品的启动动画，内置自适应鲸启动画，支持本地MP4/WebM导入和插件内社区动画库；提供已核验Windows DSH NEXT构建的可选首屏安装与恢复。'
+tarball: https://github.com/MingoYung/dsh-awakening/releases/download/v0.6.1/dsh-awakening-0.6.1.tgz
