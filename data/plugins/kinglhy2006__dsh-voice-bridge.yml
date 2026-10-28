@@ -1,0 +1,6 @@
+url: https://github.com/kinglhy2006/dsh-voice-bridge
+name: kinglhy2006/dsh-voice-bridge
+category: voice
+description:
+  en: 'Hands-free voice for DSH on Windows: local wake word, local Chinese speech-to-text inserted and sent into the composer, and spoken replies that can be interrupted and resumed.'
+  zh: 'Windows 上的免手语音：本地唤醒词、本地中文识别自动填入并发送、回答语音朗读，可打断与续播。'
