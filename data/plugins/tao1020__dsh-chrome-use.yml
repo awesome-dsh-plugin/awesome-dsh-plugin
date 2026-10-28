@@ -1,5 +1,5 @@
 url: https://github.com/tao1020/dsh-chrome-use
-name: dsh-chrome-use
+name: tao1020/dsh-chrome-use
 category: browser
 description:
   en: 'Codex-style browser control: drives your own Chrome through a local bridge, so the model can read pages, click, fill inputs, scroll, take screenshots, and inspect console and network logs.'
