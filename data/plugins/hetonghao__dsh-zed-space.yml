@@ -1,0 +1,8 @@
+url: https://github.com/hetonghao/dsh-zed-space
+name: Zed Space Skin
+category: theme
+description:
+  en: Ocean, dual-view cosmos and local video backgrounds with per-skin settings for DeepSeek Harness.
+  zh: 为 DeepSeek Harness 提供海洋、宇宙双视角与本地视频背景，支持各皮肤独立设置。
+icon: https://raw.githubusercontent.com/hetonghao/dsh-zed-space/main/extension/icons/icon128.png
+tarball: https://github.com/hetonghao/dsh-zed-space/releases/latest/download/dsh-zed-space.tgz
