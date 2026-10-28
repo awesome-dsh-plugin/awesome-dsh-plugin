@@ -1,0 +1,7 @@
+url: https://github.com/chopperH0824/dsh-annotate-sync
+name: chopperH0824/dsh-annotate-sync
+category: ui
+description:
+  en: 'Preview running local apps in the right sidebar, pick elements to leave pending or applied notes grouped by page, send them to the conversation, and let the agent read or resolve them through tools.'
+  zh: '在右侧栏预览本地运行的应用，点选元素写批注并按页面分组保存待处理/已处理状态，可发送到对话，也能被模型通过工具读取或标记处理。'
+icon: https://raw.githubusercontent.com/chopperH0824/dsh-annotate-sync/main/assets/icon-180.png
