@@ -4,4 +4,4 @@ category: security
 description:
   en: 'Device-pairing HTTPS gateway for DeepSeek Harness: TOTP-authorised QR device pairing, username/password login, sliding sessions (idle and absolute caps), and a reverse proxy with WebSocket tunnelling to a local dsh. Includes a browser setup wizard, an admin console (device revoke, password/TOTP rotation, audit) and public URL/certificate-fingerprint settings for frp or TLS-terminating proxies.'
   zh: 'DeepSeek Harness 的扫码设备配对 HTTPS 网关：TOTP 授权的配对二维码、用户名密码登录、会话滑动与绝对上限，并把请求（含 WebSocket）反代到本地 dsh。含浏览器初始化向导、管理面板（吊销设备、改密/重置 TOTP、审计）以及 frp/TLS 终止反代下的对外地址与证书指纹设置。'
-tarball: https://github.com/chjy090/dsh-pairing-gate/releases/download/v0.7.2/dsh-pairing-gate-0.7.2.tgz
+tarball: https://github.com/chjy090/dsh-pairing-gate/releases/download/v0.7.3/dsh-pairing-gate-0.7.3.tgz
