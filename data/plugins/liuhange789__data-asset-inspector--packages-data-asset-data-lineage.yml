@@ -2,5 +2,5 @@ url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data
 name: liuhange789/data-asset-inspector#data-lineage
 category: tools
 description:
-  zh: "数据血缘追踪工具，梳理数据从产生到流转的全链路，满足数据产权登记中的来源合法性审查要求。"
-  en: "Data lineage tracking tool, mapping the full lifecycle of data to meet source legality requirements."
+  zh: "数据血缘追踪插件 — 追踪数据从源头到消费端的完整流转路径"
+  en: "Data lineage tracking plugin that traces data flow from source to consumption."
