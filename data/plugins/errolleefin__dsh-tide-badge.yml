@@ -1,0 +1,6 @@
+url: https://github.com/errolleefin/dsh-tide-badge
+name: errolleefin/dsh-tide-badge
+category: usage
+description:
+  en: 'Peak/off-peak and balance pill for the DSH composer, forked from xiangrikuibaize/dsh-tide-badge. Unlike the original, the conversation cost is priced from that session''s token usage (uncached input, cache-read, cache-write and output tokens) against the official price table, so other conversations and API keys on the same account are not charged to it.'
+  zh: 'DSH 输入框下方的峰谷计费与余额药丸，基于 xiangrikuibaize/dsh-tide-badge 修改。与原版不同的是：本次对话花费按本会话的 token 用量（未命中 / 缓存命中 / 缓存写入 / 输出）乘官方价目表计算，而不是余额差值，因此同账号的其他对话与 API Key 消耗不会被算进来。'
