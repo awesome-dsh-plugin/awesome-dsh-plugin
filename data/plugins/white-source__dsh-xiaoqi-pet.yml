@@ -5,4 +5,4 @@ description:
   en: A DSH companion with a macOS native pet and a Windows/Linux Electron companion. Color-coded bordered task cards, per-task drawers, progress and notices.
   zh: 带 macOS 原生桌宠与 Windows/Linux Electron 桌宠的 DSH 伴侣。每个任务独立配色和细边框，支持多任务抽屉、进度与通知。
 icon: https://raw.githubusercontent.com/white-source/dsh-xiaoqi-pet/main/assets/icon-180.png
-tarball: https://github.com/white-source/dsh-xiaoqi-pet/releases/download/v1.5.0/dsh-xiaoqi-pet-1.5.0.tgz
+tarball: https://github.com/white-source/dsh-xiaoqi-pet/releases/download/v1.5.1/dsh-xiaoqi-pet-1.5.1.tgz
