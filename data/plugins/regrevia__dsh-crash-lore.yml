@@ -1,0 +1,24 @@
+url: https://github.com/regrevia/dsh-crash-lore
+name: regrevia/dsh-crash-lore
+category: dev
+description:
+  en: >-
+    Turns the host's own crash logs into 23 hard constraints and checks them before install. Its
+    static preflight walks a plugin source directory without executing it — 33 structural checks:
+    manifest and exports shape, `node --check` on entry files, duplicate patch ids, top-level throw
+    or bare await, `require`/`__dirname` in ESM, `process.exit`, and the mandatory
+    `tools.register` output contract that fails activation with `TypeError: tool "x" must declare
+    output`. Fatal or boot findings exit 1, so it can gate a publish script. When the host keeps
+    crashing, `doctor --auto` only quarantines a culprit after 3 crashes of the same plugin in 24
+    hours, writes a timestamped backup, and `restore` puts it back. Rules also land as a prompt
+    section so the constraints are visible while writing plugins; exporting them to memory is
+    opt-in.
+  zh: >-
+    把宿主自己的崩溃日志沉淀成 23 条硬约束，并在安装前逐一检查。静态预检不执行插件代码，走 33
+    项结构检查：manifest 与 exports 形态、对入口文件跑 `node --check`、patch 同 id 重复、顶层
+    throw 或裸 await、ESM 里写 `require`/`__dirname`、`process.exit`，以及 `tools.register`
+    必须声明 output 的契约——漏了它激活时会报 `TypeError: tool "x" must declare output`。有致命
+    或起不来项时退出码 1，可以直接卡在发布脚本里。宿主反复崩溃时，`doctor --auto` 只在同一插件
+    24 小时内崩满 3 次才隔离，先写带时间戳的备份，`restore` 可原样放回。规则同时作为提示词段
+    落下，写插件时就能看见；导出到长期记忆是可选动作，默认不写。
+icon: https://raw.githubusercontent.com/regrevia/dsh-crash-lore/main/icon.svg
