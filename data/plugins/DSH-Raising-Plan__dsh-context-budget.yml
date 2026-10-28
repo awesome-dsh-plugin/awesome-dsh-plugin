@@ -1,0 +1,6 @@
+url: https://github.com/DSH-Raising-Plan/dsh-context-budget
+name: DSH-Raising-Plan/dsh-context-budget
+category: memory
+description:
+  en: Keeps the persona prompt and drops the oldest turns to stay inside the context budget.
+  zh: 保留人设提示，按轮丢弃最旧对话，把上下文控制在预算内。
