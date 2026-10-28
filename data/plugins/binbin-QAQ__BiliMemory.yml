@@ -1,0 +1,7 @@
+url: https://github.com/binbin-QAQ/BiliMemory
+name: binbin-QAQ/BiliMemory
+category: tools
+tarball: https://github.com/binbin-QAQ/BiliMemory/releases/download/v0.2.0/dsh-bilimemory-0.2.0.tgz
+description:
+  en: 'Connect DSH to a local BiliMemory backend for Bilibili search, collection, status and login tasks, plus QQ link status, QQ user allowlists and QQ watcher restart. Requires Windows, Node.js 22+, Python 3.12, Playwright/Edge, FFmpeg, a running BiliMemory API, and MaiBot/NapCat for QQ. Voice, RVC and cover features are excluded.'
+  zh: '把本地 BiliMemory 接入 DSH，支持 B站搜索、视频采集、任务状态、登录管理，以及 QQ 链接监听状态、QQ 白名单和监听重启。需要 Windows、Node.js 22+、Python 3.12、Playwright/Edge、FFmpeg、运行中的 BiliMemory API，以及用于 QQ 的 MaiBot/NapCat。当前不包含语音、RVC 和翻唱功能。'
