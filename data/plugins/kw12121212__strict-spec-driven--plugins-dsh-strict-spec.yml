@@ -1,0 +1,6 @@
+url: https://github.com/kw12121212/strict-spec-driven/tree/main/plugins/dsh-strict-spec
+name: kw12121212/strict-spec-driven#dsh-plugin-strict-spec
+category: workflow
+description:
+  en: Strict workflow document viewer and lifecycle driver for DeepSeek Harness.
+  zh: 在 DeepSeek Harness 中查看和驱动严格规范与工作流文档的插件。
