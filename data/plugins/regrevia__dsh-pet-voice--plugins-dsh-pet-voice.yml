@@ -2,6 +2,6 @@ url: https://github.com/regrevia/dsh-pet-voice/tree/main/plugins/dsh-pet-voice
 name: regrevia/dsh-pet-voice#dsh-pet-voice
 category: voice
 description:
-  en: 'A pixel whale girl living in your computer. The phone is the screen and the microphone; the brain is a DeepSeek Harness session on your own machine. Call the wake word and talk — the pet answers out loud and acts out the reply while it is still being generated. No accounts, no cloud transcript: pair a 30 MB Android app over LAN or your own tunnel. ASR uses the phone speech service, TTS defaults to Edge voice and can be swapped for local.'
-  zh: '一只住在你电脑里的像素鲸鱼娘。手机当屏幕和麦克风，大脑跑在本机 DSH 会话里——叫一声唤醒词就能说话，边生成边念出来、边做动作。不注册账号、不上传会话：装个 30 MB 的 Android App，用局域网或你自己的隧道配对。识别走手机系统语音服务，合成默认 Edge 免费音色，也能换成本地。'
+  en: 'The DSH app also doubles as a desktop pet: wake it with your voice, talk out loud, and give orders by speaking. Reach the DeepSeek Harness running on your own computer over LAN, your own domain, or a relay server — and chat with the little whale working in your project to put it to work. Travelling without your laptop is no longer a problem.'
+  zh: 'DSH 的 App 端还融合了桌宠玩法：语音唤醒、随口说话、语音指挥。远程操作电脑上的 DeepSeek Harness 有三种连法——局域网、自建域名、服务器中转；也能直接和工作在项目里的小鲸鱼聊天，一句话指挥它干活。出门在外，再也不用担心没带电脑。'
 icon: https://raw.githubusercontent.com/regrevia/dsh-pet-voice/main/assets/icon-180.png
