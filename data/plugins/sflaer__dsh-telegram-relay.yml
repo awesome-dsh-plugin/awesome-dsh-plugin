@@ -4,3 +4,4 @@ category: notify
 description:
   en: 'Telegram bridge for DeepSeek Harness: forwards agent questions (with inline buttons), tool approval requests, turn summaries and subagent messages to a Telegram bot, and takes the answer from Telegram or the DSH Web UI, whichever comes first. Ships a loopback control panel; host-only, no client UI.'
   zh: 'DeepSeek Harness 的 Telegram 桥：把代理提问（带内联按钮）、工具审批请求、回合摘要和子代理消息转发到 Telegram 机器人，答案可从 Telegram 或 DSH Web 界面给出，以先到者为准。自带本地控制面板，纯宿主插件，不含前端界面。'
+tarball: https://github.com/sflaer/dsh-telegram-relay/releases/latest/download/dsh-telegram-relay.tgz
