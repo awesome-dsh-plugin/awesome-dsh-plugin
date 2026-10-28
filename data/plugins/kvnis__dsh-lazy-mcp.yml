@@ -2,5 +2,5 @@ url: https://github.com/kvnis/dsh-lazy-mcp
 name: kvnis/dsh-lazy-mcp
 category: dev
 description:
-  en: "Lazy MCP client for dsh: caches each server's tool schemas on disk, registers the tools at boot without connecting, and connects only on the first call."
-  zh: "dsh 的懒加载 MCP 客户端：把每个 MCP 服务器的工具 schema 缓存到磁盘，启动时不连接即可注册工具，首次调用时才真正连接。"
+  en: "Lazy MCP client for dsh: caches each server's tool schemas on disk, registers the tools at boot without connecting, and connects on the first call, keeping that connection. Optional `tools` allowlist plus an `mcp__<server>__call` escape hatch keep large servers cheap."
+  zh: "dsh 的懒加载 MCP 客户端：把每个 MCP 服务器的工具 schema 缓存到磁盘，启动时不连接即可注册工具，首次调用时连接并保持。可用 `tools` 白名单和 `mcp__<server>__call` 逃生阀压低大服务器的开销。"
