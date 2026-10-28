@@ -1,0 +1,7 @@
+url: https://github.com/linglanxin/codex-dsh-bridge
+name: linglanxin/codex-dsh-bridge
+category: workflow
+tarball: https://github.com/linglanxin/codex-dsh-bridge/releases/download/v0.2.1-rc3-windows.6/dsh-desktop-mcp-bridge-0.2.1-rc3-windows.6.tgz
+description:
+  en: 'Experimental Windows bridge for Codex to supervise DSH Desktop 0.2.1-rc.3 tasks through local MCP, with blocking direction questions, plan checkpoints, review and revision, and named workspace routing.'
+  zh: '实验性 Windows 本机 MCP 桥接，让 Codex 监督 DSH Desktop 0.2.1-rc.3 任务，支持暂停回传方向问题、计划检查点、验收返工和指定工作区归属。'
