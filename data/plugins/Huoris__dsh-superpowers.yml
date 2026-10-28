@@ -2,6 +2,6 @@ url: https://github.com/Huoris/dsh-superpowers
 name: Huoris/dsh-superpowers
 category: skill
 description:
-  en: 'Superpowers skill library for the DeepSeek Harness: installs the 15 obra/superpowers process skills and injects the using-superpowers bootstrap at every session start.'
-  zh: '为 DeepSeek Harness 安装 obra/superpowers 技能库（15 个过程技能），并在每次会话开始自动注入 using-superpowers 引导。'
+  en: 'Superpowers methodology on DSH: all 15 obra/superpowers process skills (brainstorming, test-driven-development, systematic-debugging, writing/executing plans, code review, subagent-driven development, git worktrees, skill authoring) registered as runtime skills, plus the using-superpowers bootstrap injected as a system-prompt section at every session start with a DSH tool mapping. Vendored verbatim from obra/superpowers v7.0.1; zero dependencies.'
+  zh: 在 DSH 上运行 obra/superpowers 方法论：15 个过程技能（头脑风暴、测试驱动开发、系统化调试、编写与执行计划、代码评审、子代理驱动开发、git worktree、技能创作等）全部注册为 runtime 技能，并在每次会话开始把 using-superpowers 引导连同 DSH 工具映射注入系统提示。技能逐字取自 obra/superpowers v7.0.1，零依赖。
 icon: https://raw.githubusercontent.com/Huoris/dsh-superpowers/main/assets/icon-180.png
