@@ -1,0 +1,6 @@
+url: https://github.com/DSH-Raising-Plan/dsh-netease-cdp
+name: DSH-Raising-Plan/dsh-netease-cdp
+category: fun
+description:
+  en: Controls the NetEase Cloud Music desktop client over CDP without API keys or login.
+  zh: 通过 CDP 驱动网易云音乐桌面客户端，不碰 API、不需要登录。
