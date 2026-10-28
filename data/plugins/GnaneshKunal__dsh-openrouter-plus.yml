@@ -1,0 +1,6 @@
+url: https://github.com/GnaneshKunal/dsh-openrouter-plus
+name: GnaneshKunal/dsh-openrouter-plus
+category: model
+description:
+  en: 'Per-Session OpenRouter routing: a loopback relay writes `service_tier`, `provider.sort` and the `:floor` variant into each request from one of nine presets picked on the composer chip, with a pinned base URL per preset for route-level defaults.'
+  zh: '按会话切换 OpenRouter 路由：本地回环中继把 `service_tier`、`provider.sort` 与 `:floor` 变体写进每个请求，九个预设从输入框的按钮里选，每个预设另有固定的基址供整条路由使用。'

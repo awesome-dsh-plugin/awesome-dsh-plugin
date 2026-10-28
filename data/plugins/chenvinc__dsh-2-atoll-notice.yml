@@ -1,0 +1,7 @@
+url: https://github.com/chenvinc/dsh-2-atoll-notice
+name: chenvinc/dsh-2-atoll-notice
+category: notify
+description:
+  en: Mirrors DeepSeek Harness task state (failed, waiting for your answer, finished) into the macOS Atoll Dynamic Island as one status light with three counts.
+  zh: 把 DeepSeek Harness 的任务状态（失败、等待你处理、已完成）镜像到 macOS Atoll 灵动岛上的同一枚状态灯，并显示三种状态的计数。
+icon: https://raw.githubusercontent.com/chenvinc/dsh-2-atoll-notice/main/assets/icon-512.png

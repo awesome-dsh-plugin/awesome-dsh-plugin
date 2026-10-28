@@ -1,0 +1,6 @@
+url: https://github.com/Dobo233/dsh-claude-pilot
+name: Dobo233/dsh-claude-pilot
+category: tools
+description:
+  en: 'Runs the local Claude Code CLI from DSH as three tools (claude_run, claude_resume, claude_probe) that parse --output-format json and return the session id for follow-ups, plus a standalone loopback bridge.'
+  zh: '把本机 Claude Code CLI 接成 DSH 的三个工具（claude_run / claude_resume / claude_probe），解析 --output-format json 并返回可续接的 session id，另带独立回环桥。'

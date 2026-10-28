@@ -495,7 +495,6 @@
  "https://github.com/liguobao/ds-harness-remote": "2026-08-16",
  "https://github.com/nuaaweixinye/dsh-gme-test-generator": "2026-09-19",
  "https://github.com/CWNU-Open-Source-Community/dsh-webgate": "2026-08-16",
- "https://github.com/qinyre/dsh-plugin-archive-manager": "2026-08-24",
  "https://github.com/LoKiGGo/dsh-tools": "2026-08-17",
  "https://github.com/randomix777/dsh-plugin-subs": "2026-08-29",
  "https://github.com/rinDBeans/dsh-miraculous-standard": "2026-08-16",
@@ -559,5 +558,9 @@
  "https://github.com/Yinxe/deepseek-harness-plugins/tree/main/archive/file-change-viewer": "2026-09-19",
  "https://github.com/Yinxe/deepseek-harness-plugins/tree/main/archive/mcwiki-search": "2026-09-13",
  "https://github.com/Yinxe/deepseek-harness-plugins/tree/main/archive/web-style": "2026-09-19",
- "https://github.com/tszmzz1026/dsh-epindel-boot-animation/tree/main/packages/dsh-glass-aurum": "2026-10-22"
+ "https://github.com/tszmzz1026/dsh-epindel-boot-animation/tree/main/packages/dsh-glass-aurum": "2026-10-22",
+ "https://github.com/oxmumu3/dsh-workproof/tree/main/packages/dsh-delivery-receipts": "2026-10-16",
+ "https://github.com/oxmumu3/dsh-workproof/tree/main/packages/dsh-evidence-ledger": "2026-10-16",
+ "https://github.com/nickzhangcomes/dsh-markup": "2026-10-26",
+ "https://github.com/meng-lx/dsh-autonomous-restart": "2026-10-25"
 }

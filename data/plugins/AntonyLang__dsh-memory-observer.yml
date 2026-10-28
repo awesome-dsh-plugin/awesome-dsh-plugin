@@ -1,0 +1,6 @@
+url: https://github.com/AntonyLang/dsh-memory-observer
+name: AntonyLang/dsh-memory-observer
+category: memory
+description:
+  en: Distills long sessions into background observations and reflections, injects them as a system-prompt section, and renders compaction summaries from prepared memory; includes a Settings page and source-backed recall.
+  zh: 在后台把长会话提炼为观察与反思并注入系统提示，压缩时直接用预备记忆渲染摘要；提供设置页与可回溯原文的 memory_recall。

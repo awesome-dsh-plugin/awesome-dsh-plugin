@@ -1,0 +1,6 @@
+url: https://github.com/zrrrrrrr77/dsh-print-screen
+name: zrrrrrrr77/dsh-print-screen
+category: ui
+description:
+  en: 'Adds a scissors button to the DSH composer: freeze the desktop, drag a region, and insert the crop as an image attachment. Ctrl+Alt+1 captures with DSH hidden, Ctrl+Shift+Alt+1 keeps DSH visible. Windows only.'
+  zh: '最有效率的 DSH 提示词框截图快捷按钮，不必再粘贴图片：Ctrl+Alt+1 自动隐藏 DSH 窗口截屏；Shift+Ctrl+Alt+1 不隐藏截屏；点按钮自动隐藏窗口截屏，Shift+点击不隐藏。反复截屏时按住 Ctrl+Alt 连续点按钮。按钮放在提示框第三位防误触，截图后可直接改提示词。截图默认存到当前会话文件夹，文件名为秒级时间戳，并默认保存两份（会话文件夹 + DSH 附件库）；删除对话不会连带删图，需要自行在「删除对话」插件里处理。'

@@ -2,6 +2,6 @@ url: https://github.com/regrevia/dsh-install-check
 name: regrevia/dsh-install-check
 category: market
 description:
-  en: 'Before a plugin installs, checks it for tool-name collisions and missing peer dependencies: one sentence, one suggestion, and the install still finishes.'
-  zh: '装插件前先替你撞一遍：工具名重了、依赖缺了才说话，一句结论配一条建议，装还是照装。'
+  en: 'Before a plugin installs, checks it against what is already installed and says one sentence only when something really breaks: duplicate loader rows, service keys, web routes or tool names, missing peers, colliding skills, takeover UIs. Reason first, one fix, and the install still finishes.'
+  zh: '装插件前先跟已装的比一遍，真会撞上才说一句：加载行、服务键、Web 路由、工具名、缺的依赖、重名的 skill、接管界面的写法。先说原因再给动作，装还是照装。'
 icon: https://raw.githubusercontent.com/regrevia/dsh-install-check/main/icon.png

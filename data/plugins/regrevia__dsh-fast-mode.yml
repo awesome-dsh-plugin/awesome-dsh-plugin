@@ -1,7 +1,20 @@
 url: https://github.com/regrevia/dsh-fast-mode
 name: regrevia/dsh-fast-mode
-category: agi
+category: usage
 description:
-  en: 'Cuts whole-task wall clock by about a quarter by batching independent reads into one round; the model, the reasoning effort and the request body stay untouched.'
-  zh: '整任务快四分之一：只把互不依赖的读并成一批，模型、思考强度和请求体一动不动。'
+  en: >-
+    Per-conversation fast mode for multi-step tasks that batches independent tool calls and
+    drops redundant steps. Pooled over 9 blocks and 132 valid paired runs it is about 18% less
+    total wall-clock time (0.825x, per-cell median 0.813x, 95% bootstrap interval 0.747-0.914)
+    and 15-25% faster on the shapes it fits (codeimpl median 0.709x, faster in 13 of 15 pairs;
+    shellpipeline median 0.844x), with hidden tests still passing. Short repairs and data
+    reshaping do not pay for the reminder (debugfix mean 1.287x with output 1.29x longer,
+    perfrefactor mean 1.140x), so try it once per task shape. The earlier "26-28%" claim is
+    retracted.
+  zh: >-
+    单会话开关的快速模式，合并可并行的工具调用并减少冗余步骤。9 块 132 对有效配对的合池结果是
+    整任务总墙钟约快 18%（0.825×，逐格中位 0.813×，95% 自助区间 0.747–0.914），适合的形状快
+    15–25%（codeimpl 中位 0.709×、15 对里 13 对更快；shellpipeline 中位 0.844×），隐藏测试仍
+    全绿。短改修与数据整形收不回提醒成本（debugfix 均值 1.287×、输出反而长 1.29×；
+    perfrefactor 均值 1.140×），所以按任务形状先试一次再定。此前「约快 26%」的说法已撤回。
 icon: https://raw.githubusercontent.com/regrevia/dsh-fast-mode/main/icon.png

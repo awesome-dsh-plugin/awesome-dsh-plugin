@@ -1,0 +1,7 @@
+url: https://github.com/Rexopia/dsh-plugin-knowra
+name: Rexopia/dsh-plugin-knowra
+category: tools
+description:
+  en: 'Connects the hosted Knowra MCP server: search arXiv papers by topic, author or exact UTC dates without an account, and sign in with OAuth from the plugin page to read Scout reports on methods, evidence and limitations.'
+  zh: '接入 Knowra 托管 MCP：无需账号即可按主题、作者或精确 UTC 日期检索 arXiv 论文；在插件页用 OAuth 登录后可读取 Scout 报告（方法、证据与局限）。'
+icon: https://raw.githubusercontent.com/Rexopia/dsh-plugin-knowra/main/icon.png

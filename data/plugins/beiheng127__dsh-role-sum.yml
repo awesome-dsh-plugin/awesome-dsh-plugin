@@ -1,0 +1,6 @@
+url: https://github.com/beiheng127/dsh-role-sum
+name: beiheng127/dsh-role-sum
+category: identity
+description:
+  en: 'Character persona summaries for DeepSeek Harness: collects moegirl-first public sources, distills them into a reusable persona document through the csp workflow, and keeps a per-character asset library with quality checks, manual source attachment, version snapshots and a settings page.'
+  zh: 二次元角色人格总结：萌娘百科优先采集公开资料，按 csp 固定工作流蒸馏成可复用的人格文档，并用资产库管理每个角色的质检、手动资料、历史版本与删改。

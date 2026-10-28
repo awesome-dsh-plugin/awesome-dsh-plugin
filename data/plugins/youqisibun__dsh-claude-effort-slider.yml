@@ -1,0 +1,6 @@
+url: https://github.com/youqisibun/dsh-claude-effort-slider
+name: youqisibun/dsh-claude-effort-slider
+category: ui
+description:
+  en: A six-stop reasoning-effort slider for DeepSeek Harness, with a pixel-texture Ultracode mode that sweeps in from right to left and adapts to light and dark themes.
+  zh: 给 DeepSeek Harness 用的六档推理强度滑条，第六档 Ultracode 会在轨道上铺开一层向左流动的像素纹理，浮层与纹理跟随界面明暗自动切换。

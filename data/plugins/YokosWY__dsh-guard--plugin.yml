@@ -1,0 +1,6 @@
+url: https://github.com/YokosWY/dsh-guard/tree/main/plugin
+name: YokosWY/dsh-guard#plugin
+category: tools
+description:
+  en: A 护航 panel in the session header that switches the local dsh-guard watchdog on or off and shows whether scanning is enabled, whether the guard is alive and when it last scanned; the Python watchdog that does the watching is deployed separately and found through the DSH_GUARD_ROOT environment variable. The watchdog defaults to a Windows checkout (D:\AI\Projects\dsh-guard); set DSH_GUARD_ROOT to point at another directory.
+  zh: 会话头部的「护航」面板：启停本机 dsh-guard 守护，显示扫描开关、守护心跳与上次扫描时间；做监控的 Python 守护需单独部署，插件通过 DSH_GUARD_ROOT 环境变量定位它的目录。守护默认路径是 Windows 上的 D:\AI\Projects\dsh-guard，可用 DSH_GUARD_ROOT 指向别的目录。

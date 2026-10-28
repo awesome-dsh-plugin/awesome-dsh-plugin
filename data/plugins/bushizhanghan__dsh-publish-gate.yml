@@ -3,6 +3,7 @@ name: bushizhanghan/dsh-publish-gate
 category: dev
 description:
   en: >-
+    For DSH plugin AUTHORS: run this after you finish writing a plugin and it audits the entire publish path, then hands you the exact GitHub + npm + market commands.
     Pre-publish gate for DSH plugins. Turns every silent failure in the publish path into a deterministic check:
     package.json completeness (missing exports["."], files omitting lib/ so the tarball is empty, no
     "type": "module", client declared without a ./client export), UTF-8 BOM, JSON/YAML parse errors,
@@ -12,6 +13,7 @@ description:
     versions already on the registry, and missing GitHub repos. Six agent tools; every finding carries its
     fix. Read-only, no LLM.
   zh: >-
+    给插件作者用：写完插件后跑一遍，自动体检整条发布链路，然后给出 GitHub + npm + 市场三步的可照抄命令。
     DSH 插件的发布门禁。把发布链路上的每个静默坑变成确定性检查：package.json 完整性（缺 exports["."]、files
     漏了 lib/ 导致发空包、没写 "type": "module"、声明了 client 却没导出 ./client）、UTF-8 BOM、JSON/YAML
     解析错误、cordis.patch.yml 的 insert 行缩进写错（正是让插件装上却永不挂载的那个 bug）、挂载名与

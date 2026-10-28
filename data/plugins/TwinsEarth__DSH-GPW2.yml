@@ -1,7 +1,0 @@
-url: https://github.com/TwinsEarth/DSH-GPW2
-name: TwinsEarth/DSH-GPW2
-category: security
-tarball: https://github.com/TwinsEarth/DSH-GPW2/releases/download/v1.0.2/twinsearth-dsh-gpw2-1.0.2.tgz
-description:
-  zh: "全局权限看门狗：为审批请求设一道硬性总额度。滚动 60 秒内最多自动通过 10 次，且两次之间至少间隔 3 秒；超出任一上限的请求一律转交人工应答并等待。它从不拒绝、也不改变请求内容，只决定谁来答、答得多快。安装后默认关闭，需在插件管理器中手动开启。"
-  en: "A global permission watchdog: a hard budget on auto-approved permission requests. At most 10 per rolling 60 seconds, at least 3 seconds apart; anything past either limit is deferred to the human answerer and waits. It never refuses and never changes what is asked -- it only decides who answers and how fast. Installs disabled; enable it with the plugin manager toggle."

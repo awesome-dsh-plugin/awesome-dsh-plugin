@@ -1,0 +1,6 @@
+url: https://github.com/nickzhangcomes/dsh-markup
+name: nickzhangcomes/dsh-markup
+category: ui
+description:
+  en: Review DeepSeek Harness responses with inline annotations, document reading, comment threads, and text revisions, then bring a reading summary back to the main conversation.
+  zh: 为 DeepSeek Harness 的模型回复添加多处批注、文档阅读、评论线程和正文修订，并将阅读摘要带回主对话。

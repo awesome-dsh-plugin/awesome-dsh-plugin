@@ -1,0 +1,6 @@
+url: https://github.com/Qinling-Melon-Farmers/dsh-tutorloop
+name: Qinling-Melon-Farmers/dsh-tutorloop
+category: tools
+description:
+  en: 'Study companion for your materials with guided practice, evidence-grounded feedback, Leitner spaced review, 18 teacher tools, and a Chinese/English student panel using the current DSH session model; requires DSH >=0.2.1-rc.2 <0.3.0-0, Python 3.11+, and Python runtime dependencies.'
+  zh: '面向自选资料的学习陪练，使用当前 DSH 会话模型，提供引导练习、证据反馈、Leitner 间隔复习、18 个教师工具与中英双语学生面板；要求 DSH >=0.2.1-rc.2 <0.3.0-0、Python 3.11+ 及 Python 运行时依赖。'

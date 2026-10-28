@@ -1,7 +1,7 @@
 url: https://github.com/yugejixian/vm-blackbox
 name: yugejixian/vm-blackbox
 category: tools
-tarball: https://github.com/yugejixian/vm-blackbox/releases/download/v0.1.5/dsh-vm-tester-0.1.5.tgz
+tarball: https://github.com/yugejixian/vm-blackbox/releases/download/v0.1.7/dsh-vm-tester-0.1.7.tgz
 description:
-  en: 'Black-box GUI testing for DeepSeek Harness: an AI tester drives a real Windows virtual machine using only screenshots and mouse/keyboard, so its verdicts rest on pixels instead of logs or source code. Ships the dsh-vm-tester plugin with eight vm_* tools (status, screenshot, click, type, type-secret, key, basic key, wait), a reverse-tunnel guest agent for Windows, and run verification scripts. Needs Windows, VirtualBox 7 and a Windows guest VM with the bundled agent before any vm tool works.'
-  zh: '面向 DeepSeek Harness 的黑盒 GUI 测试：AI 测试员只靠截图与键鼠操作真实 Windows 虚拟机，判定必须由像素支撑，而不是读日志或源码。包含 dsh-vm-tester 插件的八个 vm_* 工具（状态、截图、点击、输入、凭据注入、按键、普通键、等待）、Windows 虚拟机内的反向隧道代理，以及运行体检与围观脚本。需要 Windows、VirtualBox 7 和装有内置代理的 Windows 虚拟机，vm 工具才可用。'
+  en: 'Black-box GUI testing for DeepSeek Harness: an AI tester drives a real Windows virtual machine using only screenshots and mouse/keyboard, so its verdicts rest on pixels instead of logs or source code. Ships the dsh-vm-tester plugin with twelve vm_* tools (status, UI tree, screenshot, click, type, type-secret, key, basic key, wait, snapshot, upload, download), a reverse-tunnel guest agent for Windows, and run verification scripts. Needs Windows, VirtualBox 7 and a Windows guest VM with the bundled agent before any vm tool works.'
+  zh: '面向 DeepSeek Harness 的黑盒 GUI 测试：AI 测试员只靠截图与键鼠操作真实 Windows 虚拟机，判定必须由像素支撑，而不是读日志或源码。包含 dsh-vm-tester 插件的十二个 vm_* 工具（状态、UI 元素树、截图、点击、输入、凭据注入、按键、普通键、等待、快照、上传、下载）、Windows 虚拟机内的反向隧道代理，以及运行体检与围观脚本。需要 Windows、VirtualBox 7 和装有内置代理的 Windows 虚拟机，vm 工具才可用。'

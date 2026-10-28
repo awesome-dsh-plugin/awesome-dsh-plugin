@@ -1,0 +1,7 @@
+url: 'https://github.com/zx2021210538/dsh-skills-mcp-manager'
+name: 'zx2021210538/dsh-skills-mcp-manager'
+category: ui
+tarball: 'https://github.com/zx2021210538/dsh-skills-mcp-manager/releases/download/v0.6.2/dsh-skills-mcp-manager-0.6.2.tgz'
+description:
+  en: 'Forked from j62268781-alt/dsh-skills-mcp-manager (MIT) at its 0.5.6 baseline and substantially reworked since; it registers the same plugin id, so it cannot be installed alongside the original. Adds lossless cordis.patch.yml writes (JS expression values preserved), save-gated per-tool filters, skills governance over the DSH roots plus 10 external agent directories with per-skill/per-source switches enforced through the agent-scope skills provider (disabling actually hides a skill from the model), categories and a restorable trash, GitHub-repository install/update/rollback, zip and SKILL.md import, skills.sh/ClawHub market, workspace view, sidebar panel, dark/light contrast fixes, and update checks against this repository GitHub Releases (npm publication carries OIDC provenance).'
+  zh: '本插件在 j62268781-alt/dsh-skills-mcp-manager（MIT）的 0.5.6 基线之上分叉并做了大幅重构；两者注册同一个插件 id，不能同时安装。相对基线新增：cordis.patch.yml 的无损写回（保留 JS 表达式值）、保存闸门式逐工具过滤、覆盖 DSH 原生根与 10 个外部 Agent 目录的技能治理与逐技能/逐来源启停（通过 agent-scope skills provider 真正让模型看不到被停用的技能）、分类与可恢复回收站、GitHub 仓库安装/更新/回滚、zip 与 SKILL.md 导入、skills.sh/ClawHub 市场、工作区视图、侧栏面板、亮/暗主题对比度修复，以及读取本仓库 Releases 的更新检查（npm 发布带 OIDC provenance）。'

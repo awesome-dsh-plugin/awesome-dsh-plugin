@@ -1,0 +1,7 @@
+url: https://github.com/charonpi/dsh-retro-crt-theme
+name: charonpi/dsh-retro-crt-theme
+category: theme
+description:
+  en: 'Retro CRT phosphor theme: pure-black Matrix green, 40K amber-green or TFEL amber screens with bold glowing text, a code-rain boot animation and a BIOS-style control panel.'
+  zh: '复古 CRT 磷光主题：纯黑底黑客帝国绿 / 40K 黄绿 / TFEL 琥珀三种屏种，粗胖发光字，附代码雨开机动画与 BIOS 风控制面板。'
+icon: https://raw.githubusercontent.com/charonpi/dsh-retro-crt-theme/main/assets/icon-180.png

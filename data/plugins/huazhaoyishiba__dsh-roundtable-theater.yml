@@ -1,0 +1,7 @@
+url: https://github.com/huazhaoyishiba/dsh-roundtable-theater
+name: huazhaoyishiba/dsh-roundtable-theater
+category: workflow
+description:
+  en: 'Native roundtable panel with a product manager, engineer and critical user, two discussion rounds, follow-up questions, votes, answer retries and summaries.'
+  zh: '在原生面板中让产品经理、程序员和挑刺用户进行两轮讨论，支持追问、投票、重答和结论整理。'
+tarball: https://github.com/huazhaoyishiba/dsh-roundtable-theater/releases/latest/download/dsh-roundtable-theater.tgz

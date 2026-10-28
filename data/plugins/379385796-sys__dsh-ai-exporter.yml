@@ -1,0 +1,7 @@
+url: https://github.com/379385796-sys/dsh-ai-exporter
+name: 379385796-sys/dsh-ai-exporter
+category: session
+description:
+  en: Export current or historical DSH conversations, including selected turns, to TXT, Markdown and searchable PDF through a Windows native save dialog.
+  zh: 通过 Windows 原生保存窗口，将当前或历史 DSH 会话及选定轮次导出为 TXT、Markdown 和可搜索 PDF。
+tarball: https://github.com/379385796-sys/dsh-ai-exporter/releases/download/v0.1.2/dsh-ai-exporter-0.1.2.tgz

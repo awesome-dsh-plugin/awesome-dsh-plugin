@@ -1,0 +1,8 @@
+url: https://github.com/zhdzh-good/multi-role-groupchat/tree/main/multi-role-groupchat
+name: zhdzh-good/multi-role-groupchat#multi-role-groupchat
+category: fun
+tarball: https://github.com/zhdzh-good/multi-role-groupchat/releases/download/v1.4.0/zhdzh-good-multi-role-groupchat-1.4.0.tgz
+description:
+  en: 'Multi-role group chat panel for DeepSeek Harness: join as one character, chat with 2-3 AI members, route replies by addressee with probabilistic bystanders, use @ handoffs, and keep private memory/relationships, a global character library, failure diagnostics, cross-tab sync, provider-catalog models, and JSON import/export.'
+  zh: 'DeepSeek Harness 多角色群聊面板：你以一个角色加入，和 2–3 个 AI 成员对话；支持按对话对象智能路由、其他人按概率接话、显式 @ 接话，以及全局角色库、失败诊断、多标签同步、私有记忆与私人关系、模型目录下拉和角色/群配置 JSON 导入导出。'
+icon: https://raw.githubusercontent.com/zhdzh-good/multi-role-groupchat/main/multi-role-groupchat/assets/icon-180.png

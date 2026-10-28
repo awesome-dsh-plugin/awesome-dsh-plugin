@@ -2,6 +2,6 @@ url: https://github.com/FeatherHunter/ilife/tree/master/packages/plugin-manager
 name: FeatherHunter/ilife#dsh-life-pack
 category: ui
 description:
-  en: 'iLife: one DSH settings card for the iLife home-life suite — memo, calorie, chef, home, schedule and bill in a tab bar — covering every part of your home life.'
-  zh: '爱生活-覆盖你居家生活的方方面面。'
+  en: '⚠️ Internal beta, do not download ⚠️ iLife: one DSH settings card for the iLife home-life suite — memo, calorie, chef, home, schedule and bill in a tab bar — covering every part of your home life.'
+  zh: '⚠️内测中勿下载⚠️爱生活-覆盖你居家生活的方方面面。'
 tarball: https://github.com/FeatherHunter/ilife/releases/latest/download/dsh-life-pack.tgz

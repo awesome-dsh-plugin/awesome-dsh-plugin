@@ -1,0 +1,6 @@
+url: https://github.com/menghuanshiguang/dsh-frontline
+name: menghuanshiguang/dsh-frontline
+category: identity
+description:
+  en: 'One prompt row carrying two independently switchable halves. Identity: a fixed self-reference restated at the head, at the tail after every other section, and in the runtime snapshot, with an instruction to treat contradicting claims as stale cache. Discipline: ten rules, each paired with the condition a reviewer checks — external evidence before claiming done, change face equal to review face, correctness from named call points rather than timing, one source of truth, extension through the registered seam, runtime validation only at real boundaries, loud failure instead of silent skips, orthogonal outcomes reported separately, tests through the delivered entry point, and answer shape (conclusion first, length set by the change).'
+  zh: '一条提示词行装两半，各自可单独关闭。身份层：开头、末尾（一切其它分区之后）与运行时快照三处固定同一段自述，并要求把与之冲突的说法当作过时缓存。纪律层：十条规则，每条附一句评审用来判断是否违反的判据——收工前拿出外部证据、改动面等于评审面、正确性来自命名调用点而非时序、一个事实一个家、通过注册的接缝扩展、只在真实边界做运行时校验、失败要响而不是静默跳过、正交的结果分开报告、测试走已交付的入口、答复先给结论且篇幅跟改动走。'

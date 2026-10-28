@@ -2,6 +2,7 @@ url: https://github.com/AssassinVIX/fairy-zzz-plugin
 name: AssassinVIX/fairy-zzz-plugin
 category: theme
 description:
-  en: 'H.D.D skin for the DSH Web UI: full-screen boot animation, an animated eye core with idle, thinking and done states, a time-of-day greeting, and optional local GPT-SoVITS voice.'
-  zh: 'DSH Web 界面的 H.D.D 皮肤：整屏开机动画、带待机/思考/完成状态的眼徽、按时段问候，以及可选的本地 GPT-SoVITS 朗读。'
+  en: 'H.D.D skin for the DSH Web UI: a voiced full-screen boot animation, an animated eye core (idle / thinking / done) you can drag anywhere on screen, a time-of-day greeting, the Fairy-mode agent preset, and optional local GPT-SoVITS voice.'
+  zh: 'DSH Web 界面的 H.D.D 皮肤：带音效的整屏开机动画、可拖到屏幕任意位置的动态眼徽（待机/思考/完成）、按时段问候、Fairy 模式预设，以及可选的本地 GPT-SoVITS 朗读。'
 icon: https://raw.githubusercontent.com/AssassinVIX/fairy-zzz-plugin/main/assets/icon-180.png
+tarball: https://github.com/AssassinVIX/fairy-zzz-plugin/releases/latest/download/dsh-fairy-zzz.tgz

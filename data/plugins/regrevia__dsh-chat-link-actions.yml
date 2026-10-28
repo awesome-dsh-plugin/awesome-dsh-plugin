@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/dsh-chat-link-actions
+name: regrevia/dsh-chat-link-actions
+category: ui
+description:
+  en: "Right-click a file link in the transcript: quote it into the composer as the same reference chip a drag-drop produces, or reveal the file in the OS file manager. The menu is drawn in the app's own style, not the system one."
+  zh: "对话里的文件路径右键就有动作：引用回输入框时插成和拖文件一样的引用芯片，或在文件管理器里直接选中。菜单跟着 App 的深浅色走，不是系统弹窗。"
+icon: https://raw.githubusercontent.com/regrevia/dsh-chat-link-actions/main/icon.png

@@ -1,0 +1,7 @@
+url: https://github.com/ghang/dsh-achievement-helper
+name: ghang/dsh-achievement-helper
+category: fun
+description:
+  en: 'Local themed achievements, badges and character collections for DeepSeek Harness.'
+  zh: '在本地记录 DeepSeek Harness 主题成就、勋章与角色收藏。'
+tarball: https://github.com/ghang/dsh-achievement-helper/releases/latest/download/dsh-achievement-helper.tgz
