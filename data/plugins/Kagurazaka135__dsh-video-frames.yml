@@ -1,0 +1,6 @@
+url: https://github.com/Kagurazaka135/dsh-video-frames
+name: Kagurazaka135/dsh-video-frames
+category: vision
+description:
+  en: 'Give a text-only agent video understanding: extract frames as timestamped contact sheets, sample only on scene changes, export GIF clips, probe metadata, and run a one-shot analyse over the frames. Five tools that shell out to a local ffmpeg through argv arrays rather than a shell string.'
+  zh: '给纯文本 agent 补上视频理解：抽帧成带时间码的网格拼图、只在场景切换时采样、导出 GIF 片段、探测元数据、并对关键帧做一次性分析。五个工具，通过 argv 数组调用本机 ffmpeg 而非拼接 shell 字符串。'
