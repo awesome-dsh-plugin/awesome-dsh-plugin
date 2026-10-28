@@ -1,6 +1,0 @@
-url: https://github.com/czdcm/dsh-plugin-corpus
-name: czdcm/dsh-plugin-corpus
-category: tools
-description:
-  en: Local knowledge base and document search for DeepSeek Harness with full-text search, PDF/Word/PowerPoint/Excel/Markdown import, OCR, ACL, and a Web panel.
-  zh: DeepSeek Harness 的本地知识库与文档检索插件：全文搜索、PDF/Word/PPT/Excel/Markdown 导入与按行读取、扫描件 OCR、ACL 和 Web 面板。
