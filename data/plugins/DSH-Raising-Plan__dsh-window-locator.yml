@@ -1,0 +1,6 @@
+url: https://github.com/DSH-Raising-Plan/dsh-window-locator
+name: DSH-Raising-Plan/dsh-window-locator
+category: tools
+description:
+  en: Exposes Windows display geometry and the foreground window rect in physical pixels.
+  zh: 提供 Windows 显示器几何与前台窗口的物理像素坐标。
