@@ -1,0 +1,7 @@
+url: https://github.com/scarf1985566475-cloud/dsh-voice
+name: scarf1985566475-cloud/dsh-voice
+category: voice
+tarball: https://github.com/scarf1985566475-cloud/dsh-voice/releases/download/v0.2.0/dsh-voice-interpreter-0.2.0.tgz
+description:
+  en: "Local English-to-Chinese simultaneous interpretation: on-device Qwen3-ASR bilingual captions with automatic language detection, crash-safe meeting records with minutes, and Obsidian export."
+  zh: 本机英译中同声传译：用 Qwen3-ASR 在本地识别中英文并生成双语字幕，同时存档会议记录、生成纪要与导出 Obsidian。
