@@ -1,0 +1,9 @@
+url: https://github.com/chendaleiQ/dsh-plugin-desktop-notify
+name: chendaleiQ/dsh-plugin-desktop-notify
+category: notify
+# 可选：市场卡片的方形图标（GitHub 托管的位图）。
+# 不写就会回退成作者头像，所以建议补上 assets/icon-180.png 再取消注释。
+icon: https://raw.githubusercontent.com/chendaleiQ/dsh-plugin-desktop-notify/main/assets/icon-180.png
+description:
+  en: 'Desktop notifications and an app-icon unread badge for DeepSeek Harness. A banner fires when a turn finishes, when an approval, question or plan confirmation is waiting, and when a turn fails; the badge shows how many sessions need you and clears once viewed, and clicking a banner switches to that session. Follows the DSH interface language, subagent sessions stay quiet by default, titles and body length are configurable, and a loopback HTTP interface lets scripts and other tools post notifications.'
+  zh: '给 DeepSeek Harness 加桌面通知与应用图标未读角标：一轮结束、等待审批／回答／计划确认、以及这一轮出错时各弹一条横幅；角标显示有几个会话需要你，看过之后清零，点横幅切到对应会话。文案跟随 DSH 界面语言，子智能体会话默认不提醒，标题与正文长度可配置；宿主还在回环地址上开了一个 HTTP 接口，供脚本和其它工具发通知。'
