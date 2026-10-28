@@ -3,5 +3,5 @@ name: Big Fat Fish Girl
 category: fun
 description:
   en: "An animated macOS desktop companion for DeepSeek Harness that follows work across chats, reacts to approvals and errors, takes snack breaks during long runs and naps when idle. Requires a separate shell app."
-icon: https://raw.githubusercontent.com/troodon/dsh-big-fat-fish-girl/cd82c2e956746985365637dc2b3f2c987cc22663/desktop/tauri/src-tauri/icons/128x128@2x.png
+icon: https://raw.githubusercontent.com/troodon/dsh-big-fat-fish-girl/cd82c2e956746985365637dc2b3f2c987cc22663/docs/preview/captures/lines/en/idle.png
 tarball: https://github.com/troodon/dsh-big-fat-fish-girl/releases/download/v0.8.0/big-fat-fish-girl-0.8.0.tgz
