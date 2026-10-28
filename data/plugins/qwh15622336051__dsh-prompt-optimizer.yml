@@ -3,5 +3,5 @@ name: qwh15622336051/dsh-prompt-optimizer
 category: ui
 icon: https://raw.githubusercontent.com/qwh15622336051/dsh-prompt-optimizer/main/assets/icon-180.png
 description:
-  en: 'Rewrites the composer draft into a precise prompt with a configurable model and a fully editable rewriting instruction; reads the content behind @file, @folder and @session references for context, keeps the reference chips intact, and lets you place the button in either composer toolbar and recolour or resize it.'
-  zh: '用可配置的模型和整段可改的改写指令，把输入框草稿改写成精确提示词；会读取 @文件、@文件夹、@会话 引用指向的内容作为上下文，改写后原样保留引用标记；按钮可放在输入框左侧或右侧工具栏，颜色与大小均可调整。'
+  en: 'Rewrites the composer draft into a precise prompt with a configurable model and a fully editable rewriting instruction; reads the content behind @file, @folder and @session references for context and keeps the reference chips intact; offers a one-click undo that restores the text you wrote yourself, and places the button in either composer toolbar with an adjustable colour and size.'
+  zh: '用可配置的模型和整段可改的改写指令，把输入框草稿改写成精确提示词；会读取 @文件、@文件夹、@会话 引用指向的内容作为上下文，并原样保留引用标记；支持一键撤销优化、恢复你自己敲的原文；按钮可放在输入框左侧或右侧工具栏，颜色与大小均可调整。'
