@@ -1,0 +1,6 @@
+url: https://github.com/saichao/dsh-clickhouse
+name: saichao/dsh-clickhouse
+category: tools
+description:
+  en: 'ClickHouse query tools for DSH, targeting ClickHouse alone: seven tools that list databases, tables and columns, sample rows, search columns by name, show EXPLAIN plans, and run single read-only SQL statements behind a client-side guard that rejects writes, multi-statement SQL and external table functions. Zero runtime dependencies; it tells the model to backtick non-ASCII aliases instead of failing with a bare syntax error on older servers.'
+  zh: 'DSH 的 ClickHouse 数据问答工具：七个工具负责列库表字段、抽样、按字段名反查、看 EXPLAIN 计划，以及执行带客户端只读护栏的单条 SQL（拒绝写操作、多语句与外部表函数）。零运行时依赖；遇到老版本服务器会提示中文别名要加反引号，而不是只报一个语法错误。'
