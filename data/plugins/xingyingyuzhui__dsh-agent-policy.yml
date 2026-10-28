@@ -1,0 +1,6 @@
+url: https://github.com/xingyingyuzhui/dsh-agent-policy
+name: xingyingyuzhui/dsh-agent-policy
+category: session
+description:
+  en: Policy schema and default templates for new Claw agents.
+  zh: Claw Agent 的策略 schema 与新建默认模板。

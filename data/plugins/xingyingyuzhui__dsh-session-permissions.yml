@@ -1,0 +1,6 @@
+url: https://github.com/xingyingyuzhui/dsh-session-permissions
+name: xingyingyuzhui/dsh-session-permissions
+category: security
+description:
+  en: 'Layered Claw session permissions: official intersect agent intersect session, with a session Permissions tab. Official workspace sessions stay on DSH permissions only.'
+  zh: Claw 会话分层权限（官方 ∩ Agent ∩ 本会话），会话「权限」tab。官方工作区会话只走 DSH 权限。
