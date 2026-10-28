@@ -1,0 +1,6 @@
+url: https://github.com/swenbo1-web/agents-learning
+name: swenbo1-web/agents-learning
+category: memory
+description:
+  en: Local SQLite project memory and work history plugin with progressive retrieval, bounded context injection, composer memory button, local WebUI review, and optional stage administrator.
+  zh: 本地 SQLite 项目记忆与工作历史插件，支持渐进式检索、有界上下文注入、聊天框知识库按键、本机 WebUI 审批与可选阶段管理员。
