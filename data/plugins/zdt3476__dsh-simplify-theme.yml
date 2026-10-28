@@ -1,7 +1,7 @@
 url: https://github.com/zdt3476/dsh-simplify-theme
 name: zdt3476/dsh-simplify-theme
 category: theme
-tarball: https://github.com/zdt3476/dsh-simplify-theme/releases/download/v0.3.2/dsh-simplify-theme-0.3.2.tgz
+tarball: https://github.com/zdt3476/dsh-simplify-theme/releases/download/v0.3.3/dsh-simplify-theme-0.3.3.tgz
 description:
   en: "Minimal theme for dsh that removes shadows, glass blur, and brand tinting while tightening radii, plus UI extras: sidebar archive tabs with type-to-filter, model and reasoning-effort controls under the composer, per-turn subagent topology cards, colored cache-hit and context meters, and per-turn duration."
   zh: "给 DeepSeek Harness 的极简主题：去投影去毛玻璃、收紧圆角、中性化气泡与交互态；并附带一组界面增强——侧栏归档分页与实时筛选、与输入卡片对齐的模型/思考等级控件、按回合绘制的子代理委派图、按数值着色的缓存命中与上下文占用、以及每轮回答的耗时。"
