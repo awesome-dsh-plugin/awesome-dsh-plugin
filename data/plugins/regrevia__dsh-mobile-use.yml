@@ -1,0 +1,6 @@
+url: https://github.com/regrevia/dsh-mobile-use
+name: regrevia/dsh-mobile-use
+category: remote
+description:
+  en: 'Android device workbench inside DSH: read the UI text tree, measure animation motion, tap/type/swipe by text, id or ref, mirror the screen into the right sidebar, and circle an area to send it back to the conversation.'
+  zh: 'DSH 里的安卓真机调试台：读界面文本树、量动效数据、按文字/资源 id/ref 点按输入滑动，画面推到右栏，圈一处再写一句话回到会话。'
