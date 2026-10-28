@@ -1,5 +1,5 @@
-url: https://github.com/kvnis/dsh-lazymcp
-name: kvnis/dsh-lazymcp
+url: https://github.com/kvnis/dsh-lazy-mcp
+name: kvnis/dsh-lazy-mcp
 category: dev
 description:
   en: "Lazy MCP client for dsh: caches each server's tool schemas on disk, registers the tools at boot without connecting, and connects only on the first call."
