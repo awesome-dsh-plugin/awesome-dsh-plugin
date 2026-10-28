@@ -1,0 +1,6 @@
+url: https://github.com/chenkui-luo/dsh-session-attachment-repair
+name: chenkui-luo/dsh-session-attachment-repair
+category: session
+description:
+  en: 'Settings card that lists sessions whose history references attachment objects missing from the local attachment store, then backs the log up and replaces those dangling references with text placeholders so the session can send again. The repair script needs Node 22.15 or newer, and the card has been exercised on Windows only.'
+  zh: 在设置页列出历史引用了本地附件库中已丢失对象的会话，先备份日志、再把悬空引用替换成文本占位，使这些会话能重新发送消息。修复脚本需要 Node 22.15 及以上；设置卡片目前仅在 Windows 上验证过。
