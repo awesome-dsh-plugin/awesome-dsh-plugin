@@ -2,5 +2,5 @@ url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data
 name: liuhange789/data-asset-inspector#data-masking
 category: tools
 description:
-  zh: "基于国家标准的自动化数据脱敏工具，自动识别身份证、手机号等敏感字段，支持完全匿名化与假名化分级策略，生成合规审计日志。"
-  en: "Automated data masking tool based on national standards, automatically identifying sensitive fields like ID cards and phone numbers."
+  zh: "数据脱敏插件 — 敏感字段识别+分级脱敏（部分脱敏/完全脱敏/哈希脱敏）"
+  en: "Data masking plugin for sensitive field identification and tiered masking (partial/complete/hash)."
