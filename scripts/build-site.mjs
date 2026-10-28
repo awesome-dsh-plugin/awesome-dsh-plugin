@@ -546,7 +546,10 @@ function buildRows(loc, only, limit) {
     // data-* carry what the in-page sort and filters need. Absent attribute,
     // not a zero: `downloads` is null for entries with no npm package at all,
     // and `data-dl="0"` would rank them alongside a published package nobody
-    // installs. The client reads presence, so omitting is the encoding.
+    // installs. The client reads presence, so omitting is the encoding. The
+    // visible figure is always rendered — cards report one metric, downloads,
+    // and an entry with no npm package shows 0 with a title saying why, so the
+    // row never looks like the field is missing.
     const attrs = [
       `data-cat="${e.cat}"`,
       e.downloads != null ? `data-dl="${e.downloads}"` : '',
@@ -558,8 +561,7 @@ function buildRows(loc, only, limit) {
     return `    <li class="card" ${attrs}>
       <div class="top">
         <h3><a href="${loc.urlPath}p/${e.slug}/" translate="no"><span class="owner">${esc(e.owner)}/</span>${esc(short)}</a></h3>
-        ${e.stars != null ? `<span class="stars" translate="no">${e.stars}</span>` : ''}
-        ${e.downloads != null ? `<span class="dl" translate="no" title="${loc.strings.P_DOWNLOADS}">${fmtNum(e.downloads)}</span>` : ''}
+        <span class="dl" translate="no" title="${e.downloads != null ? loc.strings.P_DOWNLOADS : loc.strings.P_NO_NPM}">${fmtNum(e.downloads ?? 0)}</span>
       </div>
       <a class="desc-link" href="${loc.urlPath}p/${e.slug}/" tabindex="-1"><p>${esc(e.descs[loc.code])}</p></a>
       <div class="foot">
@@ -599,6 +601,7 @@ function catalogPayload(loc, only) {
     copy: loc.COPY_TEXT,
     copyLabel: loc.COPY_LABEL,
     dlTitle: loc.strings.P_DOWNLOADS,
+    dlMissingTitle: loc.strings.P_NO_NPM,
     items: ranked(only).map((e) => {
       const short = shortName(e.name)
       return {

@@ -195,15 +195,12 @@ li.card h3{font-size:.98rem;font-weight:680;letter-spacing:-.01em;overflow-wrap:
 li.card h3 a{transition:color .15s ease}
 li.card h3 a:hover{color:var(--cinnabar-deep)}
 li.card h3 .owner{color:var(--ink-3);font-weight:450}
-li.card .stars{margin-left:auto;flex:none;font-family:var(--mono);font-size:.76rem;color:var(--ink-2)}
-li.card .stars::before{content:"★ ";color:var(--cinnabar)}
-/* Sits after stars and reads quieter: a download figure is only present for
-   the ~45% of entries published to npm, so it must not look like a field the
-   others are missing. `.stars` claims margin-left:auto; when a card has both,
-   only the first of them should. */
-li.card .dl{flex:none;font-family:var(--mono);font-size:.76rem;color:var(--ink-3)}
+/* One metric per card, always present: downloads. Entries with no npm package
+   show 0 and carry a title saying why, so no row reads as "field missing".
+   `data-dl` stays absent for those entries — the in-page sort still has to
+   tell "not on npm" apart from "published, nobody installs it". */
+li.card .dl{margin-left:auto;flex:none;font-family:var(--mono);font-size:.76rem;color:var(--ink-3)}
 li.card .dl::before{content:"↓ ";color:var(--ink-3)}
-li.card .dl:first-of-type{margin-left:auto}
 li.card .desc-link{display:block}
 li.card p{font-size:.86rem;color:var(--ink-2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:2.6em;transition:color .15s ease}
 li.card .desc-link:hover p{color:var(--ink)}
@@ -661,21 +658,12 @@ function bootVirtual(data) {
     title.append(owner, document.createTextNode(item.short));
     h3.append(title);
     top.append(h3);
-    if (item.stars != null) {
-      const stars = document.createElement('span');
-      stars.className = 'stars';
-      stars.translate = false;
-      stars.textContent = String(item.stars);
-      top.append(stars);
-    }
-    if (item.dl != null) {
-      const dl = document.createElement('span');
-      dl.className = 'dl';
-      dl.translate = false;
-      dl.title = data.dlTitle;
-      dl.textContent = fmtNum(item.dl);
-      top.append(dl);
-    }
+    const dl = document.createElement('span');
+    dl.className = 'dl';
+    dl.translate = false;
+    dl.title = item.dl != null ? data.dlTitle : data.dlMissingTitle;
+    dl.textContent = fmtNum(item.dl ?? 0);
+    top.append(dl);
     const desc = document.createElement('a');
     desc.className = 'desc-link';
     desc.href = item.href;
