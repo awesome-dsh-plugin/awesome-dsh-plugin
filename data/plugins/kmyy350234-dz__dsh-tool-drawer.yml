@@ -5,3 +5,4 @@ description:
   en: "Keeps heavy tool groups out of every request and brings them back on demand, by keyword, or automatically when a hidden tool is called. Works with tools from any plugin: auto-groups new families by name prefix, lets you list tools that share no prefix, or has the agent classify them once via lazy_tools_classify and store the result. Ships default groups for the cua_driver_native, dsh_browser and vision families. Its settings page talks to the host over a loopback route (127.0.0.1) only."
   zh: "把重工具组从每一轮请求里收起来，需要时按需、按关键词或调用被收起工具时自动放回。管的是任意插件的工具：能按名前缀自动识别新家族建组，也能手写没有共同前缀的工具名单，或让 AI 用 lazy_tools_classify 分一次、结果长期保存。自带 cua_driver_native、dsh_browser、vision 三类默认分组。设置页只通过本机回环（127.0.0.1）与宿主通信，不连外部地址。"
 icon: https://raw.githubusercontent.com/kmyy350234-dz/dsh-tool-drawer/main/assets/icon-180.png
+tarball: https://github.com/kmyy350234-dz/dsh-tool-drawer/releases/download/v0.14.5/dsh-tool-drawer-0.14.5.tgz
