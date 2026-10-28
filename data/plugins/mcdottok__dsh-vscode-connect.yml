@@ -1,0 +1,7 @@
+url: https://github.com/mcdottok/dsh-vscode-connect
+name: mcdottok/dsh-vscode-connect
+category: remote
+description:
+  en: "Connects DSH and VS Code for a Claude Code for VS Code style experience, continuing the same workspace and conversation right inside VS Code: install the DSH Coding Agent extension and the plugin discovers and connects automatically on the same Windows machine, or connect manually elsewhere by pasting the copied connection address."
+  zh: 把 DSH 和 VS Code 连接起来，提供类似 Claude Code for VS Code 的使用体验，直接在 VS Code 中接续同一工作区与同一会话：下载 VS Code 扩展 DSH Coding Agent，插件在 Windows 同机会自动发现并连接，其他平台可复制连接地址后手动连接。
+icon: https://raw.githubusercontent.com/mcdottok/dsh-vscode-connect/main/assets/vscode.png
