@@ -1,0 +1,7 @@
+url: https://github.com/Huoris/dsh-superpowers
+name: Huoris/dsh-superpowers
+category: skill
+description:
+  en: 'Superpowers skill library for the DeepSeek Harness: installs the 15 obra/superpowers process skills and injects the using-superpowers bootstrap at every session start.'
+  zh: '为 DeepSeek Harness 安装 obra/superpowers 技能库（15 个过程技能），并在每次会话开始自动注入 using-superpowers 引导。'
+icon: https://raw.githubusercontent.com/Huoris/dsh-superpowers/main/assets/icon-180.png
