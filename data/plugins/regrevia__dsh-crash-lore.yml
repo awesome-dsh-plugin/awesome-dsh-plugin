@@ -21,4 +21,4 @@ description:
     或起不来项时退出码 1，可以直接卡在发布脚本里。宿主反复崩溃时，`doctor --auto` 只在同一插件
     24 小时内崩满 3 次才隔离，先写带时间戳的备份，`restore` 可原样放回。规则同时作为提示词段
     落下，写插件时就能看见；导出到长期记忆是可选动作，默认不写。
-icon: https://raw.githubusercontent.com/regrevia/dsh-crash-lore/main/icon.svg
+icon: https://raw.githubusercontent.com/regrevia/dsh-crash-lore/main/icon.png
