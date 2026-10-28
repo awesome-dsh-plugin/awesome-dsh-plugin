@@ -1,0 +1,7 @@
+url: https://github.com/swimmwatch/dsh-tool-search
+name: swimmwatch/dsh-tool-search
+category: tools
+description:
+  en: Native discovery and per-agent loading of built-in, plugin and MCP tools, with BM25 and optional Ollama or OpenAI-compatible embeddings.
+icon: https://raw.githubusercontent.com/swimmwatch/dsh-tool-search/main/assets/logo.png
+tarball: https://github.com/swimmwatch/dsh-tool-search/releases/download/v1.0.0/swimmwatch-dsh-tool-search-1.0.0.tgz
