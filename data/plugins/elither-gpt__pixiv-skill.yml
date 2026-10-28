@@ -1,0 +1,6 @@
+url: https://github.com/elither-gpt/pixiv-skill
+name: elither-gpt/pixiv-skill
+category: skill
+description:
+  en: 'Bundled Pixiv skill backed by a Python CLI: search illustrations, manga and novels, browse daily/weekly/monthly/rookie/original/AI/R-18 rankings, look up works, novel series and artists, and download originals, with multi-page works merged into PDF, ugoira converted to GIF and novel series merged into TXT; requires Python 3.9+, and R-18 content needs your own Pixiv cookie.'
+  zh: 内置 Pixiv 技能，由 Python 命令行脚本实现：搜索插画、漫画、小说，查看日榜/周榜/月榜/新人榜/原创榜/AI 榜/R-18 榜，查询作品、小说系列和画师详情，下载原图，多页作品合成 PDF、动图转 GIF、小说系列合并成 TXT；需要 Python 3.9 以上，R-18 内容需要自己的 Pixiv Cookie。
