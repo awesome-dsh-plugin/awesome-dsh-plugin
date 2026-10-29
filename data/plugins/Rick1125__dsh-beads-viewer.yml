@@ -1,0 +1,6 @@
+url: https://github.com/Rick1125/dsh-beads-viewer
+name: Rick1125/dsh-beads-viewer
+category: ui
+description:
+  en: 'Beads issue browser in the right sidebar: filter and search the tracker with live ready and waiting counts, read issue Markdown with clickable project-file and issue links, and copy or insert the issue id.'
+  zh: '右侧栏的 Beads 议题浏览器：按可开工、受阻与各状态筛选并搜索 tracker，阅读渲染后的议题正文，其中的项目文件与议题 id 可直接点击，并可一键复制或插入 id。'
