@@ -2,6 +2,6 @@ url: https://github.com/huzhengcai471-crypto/cyber-red-ui
 name: huzhengcai471-crypto/cyber-red-ui
 category: theme
 description:
-  en: 'Long March Machine theme for DSH: crimson-neon tokens, a scanline decoration layer, a collapsible lab status rail with live system metrics, 8 built-in video wallpapers, 10 still wallpapers, a 15-track music player, and its own settings page that also accepts custom avatar and wallpaper uploads stored in IndexedDB.'
+  en: 'DSH 的长征机（Long March Machine）主题：黑底正红霓虹配色、扫描线装饰层、可收起的实验状态栏（实时系统指标）、8 段内置视频壁纸、10 张静态壁纸、15 首内置曲目的音乐播放器，并有独立设置页，可上传自定义头像与会话壁纸（存放在浏览器 IndexedDB）。'
   zh: 'DSH 的长征机（Long March Machine）主题：黑底正红霓虹配色、扫描线装饰层、可收起的实验状态栏（实时系统指标）、8 段内置视频壁纸、10 张静态壁纸、15 首内置曲目的音乐播放器，并有独立设置页，可上传自定义头像与会话壁纸（存放在浏览器 IndexedDB）。'
 tarball: https://github.com/huzhengcai471-crypto/cyber-red-ui/releases/download/v1.2.0/dsh-cyber-red-ui-1.2.0.tgz
