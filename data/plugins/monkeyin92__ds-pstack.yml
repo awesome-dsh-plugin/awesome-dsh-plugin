@@ -1,0 +1,6 @@
+url: https://github.com/monkeyin92/ds-pstack
+name: monkeyin92/ds-pstack
+category: skill
+description:
+  en: 'pstack for DeepSeek Harness: 58 agent-workflow skills plus a deterministic router that picks each subagent model from the models you checked for subagents.'
+  zh: '面向 DeepSeek Harness 的 pstack：58 个 agent 工作流技能，外加确定性路由器，按任务意图从你勾选的子 agent 模型池里选型。'
