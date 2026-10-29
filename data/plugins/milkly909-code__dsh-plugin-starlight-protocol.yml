@@ -3,5 +3,5 @@ name: milkly909-code/dsh-plugin-starlight-protocol
 category: theme
 tarball: https://github.com/milkly909-code/dsh-plugin-starlight-protocol/releases/download/v1.0.0/dsh-plugin-starlight-protocol-1.0.0.tgz
 description:
-  zh: "DeepSeek Harness 外观套件：深空动态天体背景、赛博朋克 2077 HUD 主题、开机认证序列，以及无边框窗口下的侧栏折叠按钮修复。"
-  en: "Appearance suite for DeepSeek Harness: deep-space starfield background, Cyberpunk 2077 HUD theme, startup authentication sequence, and a sidebar toggle fix for borderless windows."
+  zh: "DeepSeek Harness 外观套件：深空动态天体背景、赛博朋克 2077 HUD 主题、开机认证序列，以及无边框窗口下的侧栏折叠按钮。"
+  en: "Appearance suite for DeepSeek Harness: deep-space starfield background, Cyberpunk 2077 HUD theme, startup authentication sequence, and a sidebar toggle for borderless windows."
