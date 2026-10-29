@@ -122,10 +122,16 @@ export function buildMarketIndex({ entries, npmMap, locales, origin = INDEX_ORIG
       ? record.enginesDsh
       : undefined
     const description = localized(entry.description)
+    // Format 1 carries an optional `icon` per plugin, and it is what the market
+    // paints on a Discover card. The list already collects one for the storefront
+    // tile (entries.mjs: GitHub-hosted raster), and the format accepts any https
+    // URL, so the same image serves both surfaces instead of being dropped here.
+    const icon = typeof entry.icon === 'string' && entry.icon.trim() !== '' ? entry.icon.trim() : undefined
     const plugin = {
       name: record.npm,
       title: entry.name,
       ...(description === undefined ? {} : { description }),
+      ...(icon === undefined ? {} : { icon }),
       homepage: `${origin}/p/${slugOf(entry.url)}/`,
       repository: repositoryOf(entry.url),
       // Everything the format defaults is left out: `keywords: []` and
@@ -145,6 +151,21 @@ export function buildMarketIndex({ entries, npmMap, locales, origin = INDEX_ORIG
       parseMarketIndex({ ...spec, plugins: [plugin] }, indexUrl)
       spec.plugins.push(plugin)
     } catch (error) {
+      // A member the format refuses costs that member, not the row — the rule
+      // already applied to an inexpressible repository directory. An icon can
+      // still be refused here when the builder is handed raw records (format 1
+      // wants https or the index origin, not just "any URL"), and dropping the
+      // whole plugin over a decorative image would be the wrong trade.
+      if (icon !== undefined) {
+        const { icon: _refusedIcon, ...withoutIcon } = plugin
+        try {
+          parseMarketIndex({ ...spec, plugins: [withoutIcon] }, indexUrl)
+          spec.plugins.push(withoutIcon)
+          continue
+        } catch {
+          // Not the icon's fault: fall through and report the original refusal.
+        }
+      }
       skipped.refused += 1
       refused.push(`${entry.url}: ${error.message}`)
     }
