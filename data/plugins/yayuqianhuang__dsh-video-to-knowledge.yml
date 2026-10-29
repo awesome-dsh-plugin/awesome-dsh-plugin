@@ -1,0 +1,6 @@
+url: https://github.com/yayuqianhuang/dsh-video-to-knowledge
+name: yayuqianhuang/dsh-video-to-knowledge
+category: tools
+description:
+  en: Compile a video link into timestamped Markdown knowledge cards with back-links to the exact moment.
+  zh: 把视频链接编译成带时间戳、可回跳原片时刻的 Markdown 知识卡。
