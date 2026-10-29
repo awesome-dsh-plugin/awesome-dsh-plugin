@@ -4,4 +4,4 @@ category: memory
 description:
   en: Local code memory with automatic source context, symbol lookup, vector search, and dependency graphs for JavaScript and TypeScript projects.
   zh: 面向 JavaScript 与 TypeScript 项目的本地代码记忆：自动带上源码上下文，支持符号查找、向量检索与依赖图。
-tarball: https://github.com/kobubu/Rag-Coding/releases/download/v0.9.1/dsh-plugin-code-memory-0.9.1.tgz
+tarball: https://github.com/kobubu/Rag-Coding/releases/latest/download/dsh-plugin-code-memory.tgz
