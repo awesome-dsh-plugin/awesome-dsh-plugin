@@ -1,0 +1,6 @@
+url: https://github.com/fengxiforcy/dsh-surrogate-guard
+name: fengxiforcy/dsh-surrogate-guard
+category: session
+description:
+  en: Neutralizes lone UTF-16 surrogates in tool output before they reach the session log, preventing permanent 400 INVALID_REQUEST errors.
+  zh: 在工具输出写入会话日志前中和落单的 UTF-16 代理字符，避免会话永久 400 无法继续。
