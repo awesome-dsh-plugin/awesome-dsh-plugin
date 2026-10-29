@@ -1,0 +1,6 @@
+url: https://github.com/cloudoyx/any-audio
+name: cloudoyx/any-audio
+category: voice
+description:
+  en: 'Five tools for agent-driven audio: anyaudio_music renders note-level scores offline from local SoundFont banks, anyaudio_sfx offers 52 sampled presets plus 15 procedural generators, anyaudio_tts speaks through Edge or MiMo, anyaudio_mix ducks narration under the bed and normalizes peak level, and anyaudio_sources manages the shared sound-font library.'
+  zh: '五个工具做 agent 音频：anyaudio_music 从本地 SoundFont 离线渲染音符级乐谱，anyaudio_sfx 提供 52 条采样音效与 15 种程序化生成器，anyaudio_tts 走 Edge 或 MiMo 配音，anyaudio_mix 做旁白闪避与峰值归一，anyaudio_sources 管理共享音源库。'
