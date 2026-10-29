@@ -1,0 +1,7 @@
+url: https://github.com/huangzhilin-hzl/dsh-power-type
+name: huangzhilin-hzl/dsh-power-type
+category: fun
+icon: https://raw.githubusercontent.com/huangzhilin-hzl/dsh-power-type/main/assets/icon-512.png
+description:
+  en: 'Power Mode typing effects for the DSH web composer: caret particles and glowing character echoes, a heat ramp from amber to red with rising embers as the combo grows, a combo counter over visible glyphs, and a synthesized key tick with a heavier Enter impact.'
+  zh: 'DSH Web 输入框的 Power Mode 打字特效：光标粒子与发光残影，连击越高当前输入行越热（暖黄到红）并升起余烬，按可视字符累计的连击计数，以及合成的按键音与更重的回车冲击音。'
