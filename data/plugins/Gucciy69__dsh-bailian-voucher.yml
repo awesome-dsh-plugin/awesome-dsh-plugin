@@ -1,0 +1,9 @@
+url: https://github.com/Gucciy69/dsh-bailian-voucher
+name: Gucciy69/dsh-bailian-voucher
+category: usage
+description:
+  en: 'Shows the Alibaba Cloud Bailian voucher balance in the DSH sidebar footer: queries QueryCashCoupons with a read-only RAM AccessKey, draws a remaining-over-cap bar, and lists each voucher with its expiry date.'
+  zh: '在 DSH 侧边栏底部显示阿里云百炼代金券余额：用只读 RAM AccessKey 查询 QueryCashCoupons，画出剩余额度进度条，并列出每张券的余额与到期日。'
+icon: https://raw.githubusercontent.com/Gucciy69/dsh-bailian-voucher/main/assets/icon-180.png
+# 预构建包：市场会优先给这条安装命令，免构建、也不用 npm
+tarball: https://github.com/Gucciy69/dsh-bailian-voucher/releases/latest/download/dsh-bailian-voucher.tgz
