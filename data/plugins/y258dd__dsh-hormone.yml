@@ -1,0 +1,6 @@
+url: https://github.com/y258dd/dsh-hormone
+name: y258dd/dsh-hormone
+category: identity
+description:
+  en: 'Writes one short line into the system prompt only when a stress, energy or reward value crosses a threshold; the values rise on real session events and decay over time.'
+  zh: '压力、精力、爽度三个状态随真实会话事件涨落、随时间衰减，越界时才往系统提示里写一句话。'
