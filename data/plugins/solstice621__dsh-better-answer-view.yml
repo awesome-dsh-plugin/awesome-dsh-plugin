@@ -1,7 +1,7 @@
-url: https://github.com/solstice621/better-view-for-dsh
-name: solstice621/better-view-for-dsh
+url: https://github.com/solstice621/dsh-better-answer-view
+name: solstice621/dsh-better-answer-view
 category: ui
 description:
   en: 'Embeds charts, comparison tables, and interactive blocks between answer paragraphs, with locally saved state and revision history.'
   zh: '在回答段落之间嵌入图表、比较表和交互块，支持本地状态保存与历史版本。'
-tarball: https://github.com/solstice621/better-view-for-dsh/releases/download/v0.3.2/better-view-for-dsh-0.3.2.tgz
+tarball: https://github.com/solstice621/dsh-better-answer-view/releases/download/v0.3.3/dsh-better-answer-view-0.3.3.tgz
