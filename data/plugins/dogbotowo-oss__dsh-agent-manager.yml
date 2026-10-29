@@ -1,0 +1,6 @@
+url: https://github.com/dogbotowo-oss/dsh-agent-manager
+name: dogbotowo-oss/dsh-agent-manager
+category: workflow
+description:
+  en: 'Manage subagents and Agent Teams teammates in DeepSeek Harness: stop running instances, then really remove them by retiring their catalog and roster records with seq-preserving log tombstones and moving their session directories to a recoverable trash; model tools, a conversation-header panel and an offline CLI.'
+  zh: 'DeepSeek Harness 子代理 / 团队成员管理：停止运行实例，并以 seq 不变的方式在父会话日志中退役目录与花名册记录、把子会话目录移入可恢复回收站，从而真正移除；提供模型工具、会话头部面板与离线 CLI。'
