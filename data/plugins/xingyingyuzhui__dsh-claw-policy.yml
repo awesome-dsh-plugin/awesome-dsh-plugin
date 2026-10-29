@@ -1,0 +1,6 @@
+url: https://github.com/xingyingyuzhui/dsh-claw-policy
+name: xingyingyuzhui/dsh-claw-policy
+category: session
+description:
+  en: Policy schema and default templates for new Claw agents. Suite-internal library: installing alone has no visible UI; meant to ship with the other dsh-claw plugins.
+  zh: Claw Agent 的策略 schema 与新建默认模板。套件内部库：单独安装看不到界面，需与其他 dsh-claw 插件同装。
