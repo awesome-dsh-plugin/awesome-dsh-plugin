@@ -2,6 +2,6 @@ url: https://github.com/liyuxuan20111101/dsh-ui-stronger
 name: liyuxuan20111101/dsh-ui-stronger
 category: ui
 description:
-  en: Calm monochrome UI with lavender accents, startup and switching motion, a thinking workspace, scoped skills, and optional local voice and pet connections.
-  zh: 黑白灰淡紫界面、启动与切换动效、可纠正的思考工作台、按需技能，以及可选的本机语音与桌宠接入。
-tarball: https://github.com/liyuxuan20111101/dsh-ui-stronger/releases/download/v0.15.2/dsh-ui-stronger-0.15.2.tgz
+  en: Calm monochrome UI, purposeful motion, thinking workspace, bounded memory, scoped skills and configurable native agent collaboration.
+  zh: 黑白灰淡紫界面、克制动效、思考工作台、有界记忆、按需技能与可配置的原生多智能体协作。
+tarball: https://github.com/liyuxuan20111101/dsh-ui-stronger/releases/download/v0.16.0/dsh-ui-stronger-0.16.0.tgz
