@@ -2,5 +2,5 @@ url: https://github.com/ayuanxx-max/dsh-session-fork-tree
 name: ayuanxx-max/dsh-session-fork-tree
 category: session
 description:
-  en: 'Fork tree for the session sidebar: forks sit under their parent with an indent and a rounded connector, sessions that own forks carry a green "+" that collapses by default and expands level by level, and hovering a child highlights its ancestor chain.'
-  zh: 会话分叉树排列：分叉会话缩进排在父会话下方并绘制圆角连接线，有分叉的会话名字右侧带绿色“+”，默认收起、逐层展开，悬停子会话时祖先链高亮。
+  en: 'DSH Session Fork Tree Arrangement: forked sessions sit under their parent with an indent and a rounded connector, sessions that own forks carry a green "+" that collapses by default and expands level by level, and hovering a child highlights its ancestor chain.'
+  zh: DSH 会话分叉树排列功能：分叉会话缩进排在父会话下方并绘制圆角连接线，有分叉的会话名字右侧带绿色“+”，默认收起、逐层展开，悬停子会话时祖先链高亮。
