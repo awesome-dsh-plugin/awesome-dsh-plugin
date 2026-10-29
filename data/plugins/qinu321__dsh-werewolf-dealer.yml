@@ -1,0 +1,6 @@
+url: https://github.com/qinu321/dsh-werewolf-dealer
+name: qinu321/dsh-werewolf-dealer
+category: fun
+description:
+  en: 'Runs one-night werewolf games inside DSH: deterministic dealing, night order, card swaps, voting and settlement, with a room UI and private night prompts.'
+  zh: 在 DSH 里组织《新版一夜狼人杀》：确定性发牌、夜序、换卡、投票与结算，自带房间界面与夜间私聊提示。
