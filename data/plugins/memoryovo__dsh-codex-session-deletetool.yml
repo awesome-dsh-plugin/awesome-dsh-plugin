@@ -5,4 +5,4 @@ description:
   en: 'Bundles the Codex UI 1.1.49 sidebar inside the plugin so no upstream release can change it, provides the remote.workspaceRegistry.deleteSession service that makes the session menu show its delete row, unhides the per-session ... button, and permanently removes the session log, workspace records and projection cache, with subagent and forked conversations selectable in a family-tree dialog.'
   zh: '把 Codex UI 1.1.49 的侧边栏内置进插件，上游更新换不掉界面；提供 remote.workspaceRegistry.deleteSession 让会话菜单出现「删除会话」，放出被样式隐藏的「...」按钮，永久删除会话日志、工程记录与投影缓存，子智能体与派生对话可在家族树里逐项勾选。'
 icon: https://raw.githubusercontent.com/memoryovo/dsh-codex-session-deletetool/main/assets/icon-512.png
-tarball: https://github.com/memoryovo/dsh-codex-session-deletetool/releases/download/v0.3.1/dsh-codex-session-deletetool-0.3.1.tgz
+tarball: https://github.com/memoryovo/dsh-codex-session-deletetool/releases/download/v0.3.2/dsh-codex-session-deletetool-0.3.2.tgz
