@@ -4,3 +4,4 @@ category: docs
 description:
   en: 'Chat-driven image-deck workbench for DSH: intent to storyboard script, per-page prompts and AI image generation with page-level revisions, nine design-style presets, and PDF/PPTX export (one full-page image per slide).'
   zh: 'DSH 的 image deck 工作台：从意图到故事线脚本、逐页 prompt 与 AI 出图、按页版本留存、9 套预设设计风格，导出 PDF/PPTX（每页一张整页图）。'
+icon: https://raw.githubusercontent.com/yuna78/dsh-deck-studio/main/assets/logo/deckline-icon.png
