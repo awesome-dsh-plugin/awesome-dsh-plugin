@@ -1,0 +1,8 @@
+url: https://github.com/op7418/malfoy-desktop/tree/main/plugins/dsh-malfoy-desktop
+name: op7418/malfoy-desktop#dsh-malfoy-desktop
+category: theme
+tarball: https://github.com/op7418/malfoy-desktop/releases/latest/download/dsh-malfoy-desktop.tgz
+description:
+  en: 'Dark Slytherin theme with a live video of the common room behind the whole window: a Floo-fire transition reveals the interface on launch, the room blurs while you chat, and Miss Malfoy looks up with a subtitle line when the agent finishes a turn, asks for approval, or errors. A sidebar entry opens the room with an interactive story chapter, replays, a photo album and outfits. The videos ship only in the prebuilt release tarball (about 410 MB).'
+  zh: '斯莱特林暗色主题，整个窗口背后是公共休息室的动态视频：启动时一团飞路火烧出界面，对话时背景虚化，agent 做完一轮、等待批准或出错时，马尔福小姐会抬头说一句字幕台词。侧栏入口进入房间，内有一章互动剧情、回看、相册和换装。视频只在 Release 的预构建 tarball 里（约 410 MB）。'
+icon: https://raw.githubusercontent.com/op7418/malfoy-desktop/main/plugins/dsh-malfoy-desktop/icon.png
