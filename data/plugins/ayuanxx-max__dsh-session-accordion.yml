@@ -1,5 +1,5 @@
-url: https://github.com/ayuanxx-max/Jack.CaMps
-name: ayuanxx-max/Jack.CaMps
+url: https://github.com/ayuanxx-max/dsh-session-accordion
+name: ayuanxx-max/dsh-session-accordion
 category: ui
 description:
   en: 'Chat turn accordion: every interaction folds into one row with a time pill and question summary, only the newest turn stays open, and switching sessions or starting a new turn resets the open state; the execution process opens only on its own click.'
