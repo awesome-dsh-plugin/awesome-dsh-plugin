@@ -1,0 +1,6 @@
+url: https://github.com/QuaonY/dsh-mem-weave
+name: QuaonY/dsh-mem-weave
+category: memory
+description:
+  en: 'MemWeave (dsh-mem-weave) weaves memory into persona: layered memory and a persona editor in one DeepSeek Harness plugin, with a bounded per-turn injection budget, decay and consolidation, a candidate and conflict review queue, 24-hour undo, and calendar reminders, all stored in a local SQLite file.'
+  zh: '忆织 MemWeave（dsh-mem-weave）—— 把记忆编织进人格（记忆 × 人格一体 DSH 插件）：分层记忆与人格编辑，每轮注入有固定上限，记忆按层遗忘与整理，候选与冲突需人工确认，写入可在 24 小时内撤销，另有约定与纪念日提醒，全部数据存在本机 SQLite 文件里。'

@@ -1,5 +1,5 @@
-url: https://github.com/Natte/dsh-todolist
-name: Natte/dsh-todolist
+url: https://github.com/Natte/dsh-sidebar-todo
+name: Natte/dsh-sidebar-todo
 category: workflow
 description:
   en: Sidebar todo list for DeepSeek Harness — grouped buckets, recurring tasks with weekday or month-day rules, a month-view calendar, and an agent tool that reads and writes the same JSON file.

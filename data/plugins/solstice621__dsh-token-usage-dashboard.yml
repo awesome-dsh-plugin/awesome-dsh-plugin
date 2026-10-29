@@ -1,0 +1,6 @@
+url: https://github.com/solstice621/dsh-token-usage-dashboard
+name: solstice621/dsh-token-usage-dashboard
+category: usage
+description:
+  en: "Displays token usage statistics, daily and weekly heatmaps, activity insights, and model rankings from DSH session logs, with locally persisted aggregates."
+  zh: "根据 DSH 会话日志展示 Token 用量统计、每日与每周热力图、活跃情况和模型排名，并在本地持久保存汇总数据。"

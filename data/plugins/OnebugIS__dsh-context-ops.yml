@@ -2,5 +2,5 @@ url: https://github.com/OnebugIS/dsh-context-ops
 name: OnebugIS/dsh-context-ops
 category: session
 description:
-  en: 'Adds handoff, context-decision and context-diagnose skills, a self-contained pressure-reading tool, and slash commands.'
-  zh: '新增交接、上下文决策、上下文诊断三个技能，自带压力读数工具与斜杠命令。'
+  en: 'Adds handoff, context-decision and context-diagnose skills, self-contained context_pressure/context_history tools (peak tokens, compaction stats), per-route realWindows with windowSource evidence, routeKey, handoffAt forced-handoff line, and slash commands.'
+  zh: '新增交接、上下文决策、上下文诊断三个技能，自带 context_pressure/context_history 工具（峰值 token、压缩复盘），支持按线路实测窗口 realWindows（含 windowSource 证据）、routeKey 直出与 handoffAt 强制交接线，附斜杠命令。'

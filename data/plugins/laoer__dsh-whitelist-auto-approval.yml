@@ -1,0 +1,6 @@
+url: https://github.com/laoer/dsh-whitelist-auto-approval
+name: laoer/dsh-whitelist-auto-approval
+category: security
+description:
+  en: 'A per-command sandbox allow-list for the bash tool: a rule names a CLI and the writable roots it gets, so allow-listed programs such as lark-cli and gh run inside the kernel sandbox with the workspace plus those roots appended. Unlike plugins that answer the approval for you or that widen the writable set for every command, the grant here is scoped to the matched command, the workspace stays writable, and other commands keep their exact behaviour. Matching is by write footprint rather than by command string, so write-neutral pipes like `2>&1 | tail -N` still match; rules are edited from a Settings page or the Plugins row. Overlays cover Seatbelt, bubblewrap and Landlock; on Windows the writable root is swapped for $HOME instead.'
+  zh: '按命令生效的 bash 沙箱白名单：一条规则指定一个命令和它可用的可写根，命中的 lark-cli、gh 等在保留工作区的前提下于内核沙箱内直接执行。与「替你回答授权弹窗」或「对所有命令统一放宽可写范围」的做法不同，这里放行的只有命中的那条命令，工作区仍可写，其他命令行为完全不变。匹配依据是命令的「写足迹」而不是命令字符串，因此 `2>&1 | tail -N` 这类不写文件的管道仍能命中；规则可在设置页或插件行里编辑。macOS 用 Seatbelt、Linux 用 bubblewrap / Landlock，Windows 则退回把可写根换成 $HOME 的旧行为。'
