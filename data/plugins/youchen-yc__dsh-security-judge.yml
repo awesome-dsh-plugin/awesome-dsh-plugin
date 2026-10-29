@@ -1,0 +1,7 @@
+url: https://github.com/youchen-yc/dsh-security-judge
+name: youchen-yc/dsh-security-judge
+category: security
+description:
+  en: 'Code security defense review judge for DeepSeek Harness: detects sessions that are writing code, reviews them against the Code Security Defense Architecture Rules, recommends which security architectures the program needs (one or several), checks conflicts between them, teaches the session AI after repeated failures, and gates task completion until the review passes.'
+  zh: '代码安全防御规则评审判官：自动识别正在做代码的会话，按《代码安全防御架构规则》强制评审其安全防御措施与所采用的代码安全防御架构，推荐程序需要的架构（一种或多种）并检查架构之间是否冲突；连续不合格会进入教学模式要求重做，通过评审才算完成。'
+tarball: https://github.com/youchen-yc/dsh-security-judge/releases/download/v1.7.0/dsh-security-judge-1.7.0.tgz
