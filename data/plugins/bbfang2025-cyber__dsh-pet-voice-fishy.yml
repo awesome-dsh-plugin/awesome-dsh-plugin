@@ -2,7 +2,7 @@ url: https://github.com/bbfang2025-cyber/dsh-pet-voice-fishy
 name: bbfang2025-cyber/dsh-pet-voice-fishy
 category: voice
 icon: https://github.com/bbfang2025-cyber/dsh-pet-voice-fishy/raw/main/assets/icon.png
-tarball: https://github.com/bbfang2025-cyber/dsh-pet-voice-fishy/releases/download/v0.2.0/dsh-pet-voice-fishy-0.2.0.tgz
+tarball: https://github.com/bbfang2025-cyber/dsh-pet-voice-fishy/releases/download/v1.1.1/dsh-pet-voice-fishy-1.1.1.tgz
 description:
-  zh: "大肥鱼语音：让 DSH 网页桌宠开口说话。气泡/碎碎念出现时自动朗读，主动点碎碎念会读出气泡内容，点桌宠会回应「主人，小鱼在这呢」等互动台词。10 个音色：2 个在线 Breeze 自定义音色（自备 API Key）+ 8 个离线中文女声（萌系/御姐各 4 个，模型首次按需下载约 348MB，之后断网也能读）。自动朗读可设最小间隔（不限/30 秒/60 秒/3 分钟）。插件本体约 26KB，推理在 worker 线程，不修改 dsh-pet 的任何文件。"
-  en: "Big Fish Voice: makes the DSH web desktop pet speak. Whisper bubbles are read aloud automatically, clicking a bubble reads its text, and clicking the pet replies with lines like 「主人，小鱼在这呢」. 10 voices: 2 online Breeze custom voices (bring your own API key) plus 8 offline Chinese female voices (4 moe / 4 onee-san; models download on first use ~348MB, then work offline). Auto-reading can be throttled (unlimited / 30s / 60s / 3min). About 26KB package, inference in a worker thread, no dsh-pet files modified."
+  zh: "大肥鱼语音：让 DSH 网页桌宠开口说话。碎碎念气泡出现时自动朗读，左键点气泡朗读内容，右键/长按再读一遍，点桌宠回应「主人，小鱼在这呢」等互动台词。10 个音色：2 个在线 Breeze 自定义音色（自备 API Key）+ 8 个离线中文女声（萌系/御姐各 4 个，模型首次按需下载约 348MB，走国内加速线路，之后断网也能读）。自动朗读可设最小间隔（不限/30 秒/60 秒/3 分钟）。插件本体约 30KB，推理在 worker 线程，不修改 dsh-pet 的任何文件。"
+  en: "Big Fish Voice: makes the DSH web desktop pet speak. Whisper bubbles are read aloud automatically, left-clicking a bubble reads it, right-click/long-press reads it again, and clicking the pet replies with lines like 「主人，小鱼在这呢」. 10 voices: 2 online Breeze custom voices (bring your own API key) plus 8 offline Chinese female voices (4 moe / 4 onee-san; models download on first use ~348MB through China-accessible mirrors, then work offline). Auto-reading can be throttled (unlimited / 30s / 60s / 3min). About 30KB package, inference in a worker thread, no dsh-pet files modified."
