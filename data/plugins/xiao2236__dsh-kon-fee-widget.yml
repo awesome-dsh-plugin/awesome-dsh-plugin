@@ -1,0 +1,7 @@
+url: https://github.com/xiao2236/dsh-kon-fee-widget
+name: xiao2236/dsh-kon-fee-widget
+category: usage
+description:
+  en: "K-ON! themed tea-table widget: click it to see the DeepSeek balance, today's spend and peak-hour state; each finished turn pops a cost bubble; double-click shows zh/ja character lines."
+  zh: 《轻音少女》部费挂件：茶桌加五人，点一下看余额、今天花费与峰谷状态；每轮对话结束弹消耗气泡，双击出中日对照角色台词。
+icon: https://raw.githubusercontent.com/xiao2236/dsh-kon-fee-widget/main/icon.png
