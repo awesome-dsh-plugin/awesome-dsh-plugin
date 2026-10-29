@@ -1,6 +1,7 @@
 url: https://github.com/prgrmrwy/dsh-magpie-connector
 name: prgrmrwy/dsh-magpie-connector
 category: model
+tarball: https://github.com/prgrmrwy/dsh-magpie-connector/releases/download/v0.3.0/dsh-magpie-connector-0.3.0.tgz
 description:
-  en: 'Connect a self-hosted Magpie gateway as one provider route, with models and read-only usage cards grouped by upstream provider, per-model default effort, a per-session fast switch for priority-tier models, and optional Cloudflare Access.'
-  zh: '把自托管 Magpie 网关接入为单个 provider route，模型与只读用量卡片按上游 provider 分组，支持逐模型默认 effort、priority 档模型的会话级快速切换和可选 Cloudflare Access。'
+  en: 'Connect a self-hosted Magpie gateway with one provider route per upstream owner, so the stock model picker shows Magpie (Claude), Magpie (Codex) and other groups, plus automatic multi-line failover, read-only usage cards, per-model default effort, a per-session fast switch for priority-tier models, and optional Cloudflare Access.'
+  zh: '把自托管 Magpie 网关按上游归属接入为多个 provider route，原版模型选择器即显示 Magpie (Claude)、Magpie (Codex) 等分组；支持多线路自动切换、只读用量卡片、逐模型默认 effort、priority 档模型的会话级快速切换和可选 Cloudflare Access。'
