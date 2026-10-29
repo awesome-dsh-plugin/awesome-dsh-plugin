@@ -1,0 +1,7 @@
+url: https://github.com/catgrandfa/dsh-token-cost
+name: catgrandfa/dsh-token-cost
+category: usage
+description:
+  en: "Token spend panel for DeepSeek Harness: today and 7/30-day totals, natural month/quarter/year sums, cost split by cache-hit input, cache-miss input and output, per-model and per-session detail, daily and monthly budgets with a projected day-end spend, peak/off-peak pricing, CSV and JSON export, and a zero-dependency CLI report. Also prices GLM (Zhipu) and Kimi models shipped through third-party routes."
+  zh: "DSH 的 Token 花费面板：今日与近 7/30 天、自然月/季/年合计，按缓存命中输入、未命中输入与输出拆成本，按模型/会话明细，每日与月度预算加当日花费外推，峰谷分档计价，CSV/JSON 导出，另有零依赖 CLI 报表；同时按模型单价计 GLM（智谱）与 Kimi 等第三方路由。"
+tarball: https://github.com/catgrandfa/dsh-token-cost/releases/download/v0.3.7/dsh-token-cost.tgz
