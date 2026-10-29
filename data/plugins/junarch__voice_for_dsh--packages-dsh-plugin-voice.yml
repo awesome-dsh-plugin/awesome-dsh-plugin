@@ -3,5 +3,5 @@ name: junarch/voice_for_dsh#dsh-plugin-voice
 category: voice
 icon: https://raw.githubusercontent.com/junarch/voice_for_dsh/main/assets/icon-180.png
 description:
-  en: 'Reads each reply aloud after rewriting it into spoken style: system TTS, Doubao speech synthesis, or an optional local Kokoro model.'
-  zh: '把每轮回答改写成口语稿再朗读；支持系统朗读、豆包语音合成和可选的本地 Kokoro 模型。'
+  en: 'Reads each reply aloud after rewriting it into spoken style: system TTS, Doubao speech synthesis, or an optional local Kokoro model.Support 3 notification sound indicating "working","question" and "round finished" status.'
+  zh: '把每轮回答改写成口语稿再朗读；支持系统朗读、豆包agent plan和api语音合成,可选的本地 Kokoro 模型。支持设置"工作中""提问""工作结束"三种dsh工作状态提示音'
