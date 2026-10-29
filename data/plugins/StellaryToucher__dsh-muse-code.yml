@@ -1,0 +1,6 @@
+url: https://github.com/StellaryToucher/dsh-muse-code
+name: StellaryToucher/dsh-muse-code
+category: agi
+description:
+  en: 'Adds a `muse` subagent provider and the `subagent_muse` tool to DeepSeek Harness, so the main agent can hand one self-contained task to the Meta Muse Code CLI and get back only its final report. A patched fork of `@pascapone/dsh-muse-code` that loads on DSH 0.2.1: it carries local equivalents of the removed `settleRun` export and `subagents.start` method, and documents an optional proxy for the gateway stream-phase bug. Needs the `muse` CLI installed.'
+  zh: '为 DSH 增加 `muse` 子代理提供方与 `subagent_muse` 工具，主代理可把一整段任务外包给 Meta Muse Code CLI，只取回最终报告。这是 `@pascapone/dsh-muse-code` 的修补分叉，可在 DSH 0.2.1 上加载：内含被移除的 `settleRun` 导出与 `subagents.start` 方法的本地等价实现，并附网关流式 phase 缺陷的可选代理修正。需已安装 `muse` CLI。'
