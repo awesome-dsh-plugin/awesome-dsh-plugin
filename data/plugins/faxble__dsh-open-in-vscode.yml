@@ -1,0 +1,6 @@
+url: https://github.com/faxble/dsh-open-in-vscode
+name: faxble/dsh-open-in-vscode
+category: ui
+description:
+  en: "Adds a button left of the built-in Open In... in the session header that opens the current workspace directory in VS Code, fixing the desktop ELECTRON_RUN_AS_NODE environment leak that makes the built-in open-in-app fail with HTTP 502."
+  zh: "在会话头部「打开方式」左侧新增按钮，一键在 VS Code 中打开当前工作区目录，修复桌面宿主 ELECTRON_RUN_AS_NODE 环境变量泄漏导致内置 open-in-app 启动 VS Code 失败（HTTP 502）的问题。"
