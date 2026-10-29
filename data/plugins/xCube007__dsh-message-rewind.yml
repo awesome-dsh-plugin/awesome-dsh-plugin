@@ -1,0 +1,7 @@
+url: https://github.com/xCube007/dsh-message-rewind
+name: xCube007/dsh-message-rewind
+category: session
+tarball: https://github.com/xCube007/dsh-message-rewind/releases/latest/download/dsh-message-rewind.tgz
+description:
+  en: 'Adds edit and delete to your own message bubbles: editing truncates the following turns and resends the new text, deleting removes the message and those turns, and either can optionally roll back the recorded file changes of the removed turns (refusing when a file has changed since). The sidebar keeps a single conversation.'
+  zh: '给自己的消息气泡加「编辑 / 删除」：编辑会截断其后的轮次并重发新内容，删除会移除这条消息及其后的轮次；两者都可选择同时回滚被移除轮次记录到的文件改动（文件之后又被改过则拒绝回滚）。侧边栏始终只保留一条会话。'
