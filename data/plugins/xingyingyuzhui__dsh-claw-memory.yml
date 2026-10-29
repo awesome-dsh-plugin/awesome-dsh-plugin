@@ -1,0 +1,6 @@
+url: https://github.com/xingyingyuzhui/dsh-claw-memory
+name: xingyingyuzhui/dsh-claw-memory
+category: memory
+description:
+  en: Persistent Claw memory with a vault, daily notes, and turn review. Official workspace sessions do not receive Claw memory briefs. Hard deps (install together or single install fails): dsh-claw-identity, dsh-claw-observability, dsh-claw-permissions.
+  zh: Claw 持久记忆：金库、日记与回合回顾。官方工作区会话不注入 Claw 记忆摘要。硬依赖（需同装，否则单装会崩）：dsh-claw-identity、dsh-claw-observability、dsh-claw-permissions。
