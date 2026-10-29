@@ -1,0 +1,6 @@
+url: https://github.com/KB1SLN-Labs/dsh-ponytail
+name: KB1SLN-Labs/dsh-ponytail
+category: identity
+tarball: https://github.com/KB1SLN-Labs/dsh-ponytail/releases/download/v5.3.3-dsh.5/kb1slnlabs-dsh-ponytail.tgz
+description:
+  en: 'Unofficial Ponytail 5 adapter for DeepSeek Harness with minimal code rules, session modes, native settings, a composer status band, and a reported-usage dashboard.'
