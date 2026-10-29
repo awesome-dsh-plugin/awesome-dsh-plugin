@@ -1,0 +1,6 @@
+url: https://github.com/dogbotowo-oss/dsh-long-conversation-memory
+name: dogbotowo-oss/dsh-long-conversation-memory
+category: memory
+description:
+  en: 'Long-conversation memory for DeepSeek Harness (DSH): keeps enabled skill rules, data conventions and task state in context every step so they are not diluted across 100-1000+ turns, backed by a local SQLite evidence store.'
+  zh: 'DeepSeek Harness 长会话记忆插件：把已启用 skill 的规则、数据口径和任务状态按预算持续装配进每一步上下文，避免 100–1000+ 轮长会话中 skill 效果被稀释；底层为本地 SQLite 原始证据库。'
