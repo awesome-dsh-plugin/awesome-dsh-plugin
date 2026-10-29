@@ -1,0 +1,7 @@
+url: https://github.com/John-20260101/dsh-theme-atlas
+name: John-20260101/dsh-theme-atlas
+category: theme
+description:
+  en: Six material skins for the Web GUI (Ink Jade, Terracotta, Aurora, Abyss, Sakura Mist, Paper); each derives the 119 --dsw-* alias tokens from six colour inputs per appearance, in light and dark.
+  zh: DeepSeek Harness 网页端的六套材质皮肤（墨玉、赤陶、极光、深海、樱雾、素笺），每套由六个输入色推导全部 119 个 --dsw-* 别名 token，含深浅双版。
+icon: https://raw.githubusercontent.com/John-20260101/dsh-theme-atlas/main/assets/icon-180.png
