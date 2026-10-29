@@ -1,0 +1,7 @@
+url: https://github.com/sukirk/dsh-find-history
+name: sukirk/dsh-find-history
+category: session
+tarball: https://github.com/sukirk/dsh-find-history/releases/download/v1.0.1/dsh-find-history-1.0.1.tgz
+description:
+  en: 'Sidebar search over the messages you typed in every workspace: an inline result list with keyword highlighting and hover preview, an optional assistant-answer pool, workspace filter, grouping, time/relevance sort and pagination. Builds a per-session sidecar index incrementally from DSH session logs, so it needs no full-text index service or external process.'
+  zh: '在 DSH Web 侧栏「工作区」标题行加入检索入口，跨所有工作区搜索你输入过的内容：内联结果带关键词高亮与悬停预览，可加搜每轮最终回答，支持工作区筛选、按会话分组、时间/相关度排序与分页。按会话建立增量侧车索引，直接读取 DSH 的 zstd 会话日志，不需要全文索引服务或外部进程。'
