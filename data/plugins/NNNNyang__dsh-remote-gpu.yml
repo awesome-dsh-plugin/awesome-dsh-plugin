@@ -1,0 +1,6 @@
+url: https://github.com/NNNNyang/dsh-remote-gpu
+name: NNNNyang/dsh-remote-gpu
+category: remote
+description:
+  en: Shows how many GPUs on the dsh-remote host are free in the conversation header, and per-GPU utilization, memory, temperature and the owning user in a right-sidebar panel. Adds a remote_gpu tool that returns the same snapshot.
+  zh: 在会话顶栏显示 dsh-remote 所连服务器还有几张空闲显卡，右侧边栏面板展示每张卡的利用率、显存、温度与占用用户，并提供返回同一快照的 remote_gpu 工具。
