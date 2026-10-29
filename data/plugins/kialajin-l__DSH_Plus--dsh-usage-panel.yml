@@ -1,6 +1,0 @@
-url: https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-usage-panel
-name: kialajin-l/DSH_Plus#dsh-usage-panel
-category: usage
-description:
-  en: "Usage statistics settings page computed locally from session logs: 30-day daily list, per-model and per-session tables with provider-aware pricing (DeepSeek peak/off-peak, bundled TokenBom flat rates); skips inherited events of forked subagent sessions to avoid double-counting."
-  zh: "用量统计设置页：全部基于本地会话日志计算（近 30 天条形图 / 模型表 / 会话表），按服务商感知计价（官方峰谷、内置 TokenBom 平价表），并跳过子代理会话继承的历史事件避免重复计费。"

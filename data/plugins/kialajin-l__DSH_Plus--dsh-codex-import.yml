@@ -1,6 +1,0 @@
-url: https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-codex-import
-name: kialajin-l/DSH_Plus#dsh-codex-import
-category: session
-description:
-  en: "Import Codex and Claude Code session history into DeepSeek Harness: merges same-project sessions into existing workspaces by cwd, offers handoff summaries or full transcripts, and keeps a rollback ledger."
-  zh: "把 Codex / Claude Code 历史会话一键导入 DeepSeek Harness：同路径项目自动归并进现有工作区，支持交接书摘要或全量转录，导入历史可回滚。"
