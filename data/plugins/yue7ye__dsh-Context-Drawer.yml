@@ -1,0 +1,6 @@
+url: https://github.com/yue7ye/dsh-Context-Drawer
+name: yue7ye/dsh-Context-Drawer
+category: session
+description:
+  en: "Remove the finished turns of selected calendar dates from the model-visible context of a live DeepSeek Harness session, while the chat transcript and the append-only session log stay untouched."
+  zh: "按日期把已经结束的对话轮次从 DeepSeek Harness 会话的模型上下文里移走，聊天记录与只追加的会话日志保持原样。"
