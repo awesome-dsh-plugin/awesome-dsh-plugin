@@ -1,0 +1,6 @@
+url: https://github.com/hsushjk/dsh-aurachat
+name: hsushjk/dsh-aurachat
+category: identity
+description:
+  en: 'Hosts the agent as a persona on a self-hosted web page, with owner and guest accounts: a mood value that drifts back toward baseline over time, memory you can read and edit, a sticker library, diary posts that guests can comment on, idle small talk, voice notes, speech recognition and text to speech.'
+  zh: '让 agent 以人设住进自建网页，分主人和客人两种账号：会随着时间回落到平常值的心情、可查看可修改的记忆、表情库、客人能评论的空间动态、闲置搭话、语音条、语音识别与朗读。'
