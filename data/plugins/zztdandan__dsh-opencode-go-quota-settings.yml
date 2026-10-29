@@ -1,0 +1,6 @@
+url: https://github.com/zztdandan/dsh-opencode-go-quota-settings
+name: zztdandan/dsh-opencode-go-quota-settings
+category: usage
+description:
+  en: "Shows OpenCode GO plan quota (rolling 5-hour, weekly, monthly) on a DSH Settings page, reading the official usage API through a same-origin proxy; registers no sidebar widget."
+  zh: "在 DSH 设置页显示 OpenCode GO 套餐额度（5 小时滚动、每周、每月），通过同源代理读取官方用量接口；不注册侧栏组件。"
