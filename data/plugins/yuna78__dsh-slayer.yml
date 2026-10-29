@@ -1,0 +1,7 @@
+url: https://github.com/yuna78/dsh-slayer
+icon: https://raw.githubusercontent.com/yuna78/dsh-slayer/main/assets/icon-180.png
+name: yuna78/dsh-slayer
+category: workflow
+description:
+  en: 'Two DSH delegation presets — a fixed 8-seat crew, or up to 3 day-rate temps by convention — with call-time guards that refuse the other shape''s delegation tools.'
+  zh: 给 DSH 装两条干活形态——8 个固定工位的终身奴，或按约定一次最多点 3 个的日结奴；跨形态调用会在调用时被 guard 拒绝。
