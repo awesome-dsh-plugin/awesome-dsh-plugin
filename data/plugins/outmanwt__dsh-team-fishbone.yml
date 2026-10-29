@@ -1,0 +1,7 @@
+url: https://github.com/outmanwt/dsh-team-fishbone
+name: outmanwt/dsh-team-fishbone
+category: ui
+description:
+  en: 'Session-header fishbone panel for sub-agent assignments, live status, available token and duration metrics, shared task-board entries, and native child-session navigation.'
+  zh: '会话标题栏鱼骨图面板，展示子代理分工、实时状态、可用的 Token 与耗时指标及共享任务，并支持跳转子会话。'
+tarball: https://github.com/outmanwt/dsh-team-fishbone/releases/latest/download/dsh-team-fishbone.tgz
