@@ -1,6 +1,0 @@
-url: https://github.com/xingyingyuzhui/dsh-agent-identity
-name: xingyingyuzhui/dsh-agent-identity
-category: session
-description:
-  en: Injects SOUL, IDENTITY, AGENTS, and TOOLS into Claw session prompts.
-  zh: 把 SOUL、IDENTITY、AGENTS、TOOLS 注入 Claw 会话提示词。
