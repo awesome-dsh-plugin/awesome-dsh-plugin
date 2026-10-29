@@ -1,0 +1,6 @@
+url: https://github.com/beibing173/dsh-token-count
+name: beibing173/dsh-token-count
+category: usage
+description:
+  en: 'Token usage dashboard for DeepSeek Harness. A dedicated settings page shows cumulative input / output / cache-read / cache-write token totals, a green GitHub-style daily heatmap colored by usage, and a pie / bar chart toggle for the four bucket shares — all read from local session logs, no upstream API calls.'
+  zh: 'DeepSeek Harness 的 token 用量看板。在设置页单开一页：累计输入 / 输出 / 缓存读 / 缓存写四大桶总量、按天绿色热力网格（颜色随用量加深）、饼图 / 柱状图一键切换展示四桶占比；数据全部来自本地会话日志，不调上游 API。'
