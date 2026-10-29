@@ -1,0 +1,7 @@
+url: https://github.com/gogoulove1994-hue/opening-free-0.21.0/tree/master/plugin/dsh-opening
+name: gogoulove1994-hue/opening-free-0.21.0#dsh-opening
+category: ui
+description:
+  en: 'Full-screen boot animation for DeepSeek Harness: a wave sweeps the screen, a whale assembles from particles inside three breathing dot rings, and a four-language salute lands over a segmented progress bar; ships an 18-second cut and 3.8-4.5-second short cuts, a language picker in settings, and a four-language preview queue.'
+  zh: 'DeepSeek Harness 开机动画：水波扫过、粒子聚成鲸鱼、三层呼吸点阵圆环与四语问候落在分段进度条上；含 18 秒完整版与 3.8-4.5 秒简版、设置页语言选择与四语连播预览。'
+icon: https://raw.githubusercontent.com/gogoulove1994-hue/opening-free-0.21.0/master/plugin/dsh-opening/assets/whale.png
