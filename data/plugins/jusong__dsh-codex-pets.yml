@@ -2,6 +2,6 @@ url: https://github.com/jusong/dsh-codex-pets
 name: jusong/dsh-codex-pets
 category: fun
 description:
-  en: "macOS always-on-top desktop pet for DSH Desktop: a bundled DeepSeek whale sprite with Codex-compatible skins, Settings gallery install/import, a recent-session ball, and a first-run Electron download (~120 MB) into ~/.dsh."
-  zh: "DSH Desktop 的 macOS 置顶桌宠：内置 DeepSeek 鲸鱼精灵图，兼容 Codex 宠格式，可在设置页安装/导入，脚下有最近会话球；首次启动会把约 120 MB 的 Electron 下载到 ~/.dsh。"
+  en: "macOS always-on-top desktop pet for DSH Desktop: a bundled DeepSeek whale sprite with Codex-compatible skins, Settings gallery install/import, a recent-session ball, right-click New Session and a configurable global shortcut (default Command+Option+N) for a new-session ask box, and a first-run Electron download (~120 MB) into ~/.dsh."
+  zh: "DSH Desktop 的 macOS 置顶桌宠：内置 DeepSeek 鲸鱼精灵图，兼容 Codex 宠格式，可在设置页安装/导入，脚下有最近会话球；右键「新会话」与可配置全局快捷键（默认 Command+Option+N）可打开新会话输入框；首次启动会把约 120 MB 的 Electron 下载到 ~/.dsh。"
 icon: https://raw.githubusercontent.com/jusong/dsh-codex-pets/main/pets/deepseek-whale/preview.png
