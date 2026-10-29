@@ -1,0 +1,6 @@
+url: https://github.com/Andyfree-98/dsh-checkin-workbuddy
+name: Andyfree-98/dsh-checkin-workbuddy
+category: tools
+description:
+  en: 'One-click WorkBuddy daily check-in button pinned to the composer tool row. Clicking it calls the check-in route provided by dsh-connect-workbuddy for the currently selected account, and shows the result next to the button: already checked in, credits claimed, or streak days. The done state persists across sessions via a local date stamp and reconciles with the upstream status on load, flipping back automatically after midnight.'
+  zh: '常驻输入框工具行的 WorkBuddy 每日签到按钮，一键调用 dsh-connect-workbuddy 的签到路由为当前选中账号签到，并在按钮旁显示结果：已签到、签到成功加分或连签天数。已签状态通过本地日期戳跨会话保留，加载时与上游状态对账，跨天后自动复位。'
