@@ -1,6 +1,0 @@
-url: https://github.com/DSH-Raising-Plan/dsh-cognitive-memory
-name: DSH-Raising-Plan/dsh-cognitive-memory
-category: memory
-description:
-  en: Long-term cognitive memory for DSH with observations, context recall, feedback, and a local SQLite service.
-  zh: DSH 长期认知记忆：观察、上下文召回、反馈与本地 SQLite 服务。
