@@ -1,0 +1,7 @@
+url: https://github.com/wzciczw/dsh-explainer
+name: wzciczw/dsh-explainer
+category: ui
+description:
+  en: "Select text in the DSH chat and ask about it in place (floating pill, right-click, or Ctrl/Cmd+Shift+E), or open a quick-ask window from the composer: answers stream from a one-shot completion that follows the main window's model, inherits a read-only context snapshot, and reads files the question references. The window never writes to the main session."
+  zh: "在 DSH 对话里划词就地提问（浮出按钮、右键或 Ctrl/Cmd+Shift+E），也可从输入框打开快问窗口：答案由一次性 completion 流式产出，沿用主窗口模型，继承只读上下文快照，并读取问题中提到的文件；窗口不会写入主会话。"
+icon: https://raw.githubusercontent.com/wzciczw/dsh-explainer/main/assets/icon-180.png
