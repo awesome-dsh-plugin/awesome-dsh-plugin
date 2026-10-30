@@ -1,6 +1,7 @@
 url: https://github.com/zhuran305-web/dsh-cet-vocab
 name: zhuran305-web/dsh-cet-vocab
 category: ui
+tarball: https://github.com/zhuran305-web/dsh-cet-vocab/releases/download/v0.1.3/dsh-cet-vocab-0.1.3.tgz
 description:
   en: 'Floating CET-4/CET-6 vocabulary trainer: a draggable, minimizable overlay word card with 5,805 bundled words from ECDICT, card and multiple-choice modes with confusable-word distractors, Ebbinghaus-style spaced repetition, review and extra practice, pronunciation, and optional auto-open while the model is thinking.'
   zh: '四六级背单词悬浮窗：可拖动、可最小化，5805 词内嵌自 ECDICT，卡片与形近词干扰的选择题两种模式，艾宾浩斯间隔复习，复习/加练，发音，模型思考时自动弹出。'
