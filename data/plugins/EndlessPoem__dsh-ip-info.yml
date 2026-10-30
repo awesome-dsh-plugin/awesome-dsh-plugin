@@ -1,0 +1,6 @@
+url: https://github.com/EndlessPoem/dsh-ip-info
+name: EndlessPoem/dsh-ip-info
+category: ui
+description:
+  en: 'Shows the current public IP with its location, provider, ASN and local network interfaces, as a composer line or a draggable floating card.'
+  zh: '在输入框下方或悬浮窗里显示当前公网 IP、归属地、运营商、ASN 与本地网卡，字号跟随 Harness 设置。'
