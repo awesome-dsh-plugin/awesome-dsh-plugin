@@ -1,0 +1,6 @@
+url: https://github.com/bannerchi/dsh-yiyide-pdf
+name: bannerchi/dsh-yiyide-pdf
+category: docs
+description:
+  en: 'PDF translation for DeepSeek Harness through a yiyide.cc connector account: 12 tools covering authorization, upload with page-level pre-flight, a three-page preview, quote, a confirmation that freezes translation points, job polling, quality confirmation, and download of the translated or bilingual PDF to the local machine.'
+  zh: '在 DeepSeek Harness 里通过一译得连接器账号翻译 PDF：12 个工具覆盖授权、上传与页级预检、三页预览、报价、确认（冻结译点）、任务轮询、质量确认，以及把纯译文或双语对照 PDF 下载到本机。'

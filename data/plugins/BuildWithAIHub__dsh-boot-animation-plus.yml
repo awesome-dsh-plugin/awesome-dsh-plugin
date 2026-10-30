@@ -1,0 +1,6 @@
+url: https://github.com/BuildWithAIHub/dsh-boot-animation-plus
+name: BuildWithAIHub/dsh-boot-animation-plus
+category: ui
+description:
+  en: 'A fork of dsh-boot-animation that plays an intro clip when DSH opens, ships four embedded clips with an in-app library, and adds batch deletion for clips you added yourself. It reuses the same plugin id as upstream, so the two cannot be installed together.'
+  zh: 'dsh-boot-animation 的社区分支：打开 DSH 时播放片头动画，内置四段片头并可管理片库，新增片库批量删除（同步删除自己加入的视频文件）。沿用上游同一插件 id，不能与上游同装。'

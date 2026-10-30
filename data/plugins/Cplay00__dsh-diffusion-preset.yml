@@ -1,0 +1,7 @@
+url: https://github.com/Cplay00/dsh-diffusion-preset
+name: Cplay00/dsh-diffusion-preset
+category: workflow
+description:
+  en: 'Progressive disclosure agent preset and call directory tool that starts from a minimal baseline and unlocks tools, skills, and MCP servers on demand.'
+  zh: '渐进式展开 Agent 预设与调用目录工具，从极简模式起步，按需解锁挂载工具、技能与 MCP 服务。'
+icon: https://raw.githubusercontent.com/Cplay00/dsh-diffusion-preset/main/assets/icon-180.png

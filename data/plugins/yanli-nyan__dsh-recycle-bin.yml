@@ -1,0 +1,8 @@
+url: https://github.com/yanli-nyan/dsh-recycle-bin
+name: yanli-nyan/dsh-recycle-bin
+category: security
+description:
+  en: Sends file deletions to the Windows Recycle Bin, lists and restores them by id, and blocks permanent shell deletes.
+  zh: 把删除的文件送进 Windows 回收站，可按 id 列出与还原，并拦截 shell 通道的永久删除。
+icon: https://raw.githubusercontent.com/yanli-nyan/dsh-recycle-bin/main/icon.png
+tarball: https://github.com/yanli-nyan/dsh-recycle-bin/releases/download/v1.6.0/local-dsh-recycle-bin-1.6.0.tgz

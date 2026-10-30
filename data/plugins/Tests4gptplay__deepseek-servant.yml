@@ -1,0 +1,8 @@
+url: https://github.com/Tests4gptplay/deepseek-servant
+name: Tests4gptplay/deepseek-servant
+category: agi
+icon: https://raw.githubusercontent.com/Tests4gptplay/deepseek-servant/v0.3.6/icon.png
+tarball: https://github.com/Tests4gptplay/deepseek-servant/releases/download/v0.3.6/deepseek-servant-0.3.6.tgz
+description:
+  en: "Autonomous AI assistant with Foreground, Planner and Worker roles, persistent tasks, restart recovery, on-demand working memory, and optional private-Git collaboration."
+  zh: "自主 AI 助理，提供前台交流、Planner 与 Worker 分工、持久任务、重启接续、按需工作记忆及可选的私有 Git 协作。"

@@ -1,0 +1,7 @@
+url: https://github.com/WuHututu/dsh-side-chat
+name: WuHututu/dsh-side-chat
+category: ui
+description:
+  en: 'Opens a temporary side conversation in the right Sidebar that reuses the host conversation UI, so answers render with the same markdown, tool steps, timing and token usage as the main thread. The side chat runs on its own memory-only session: the parent snapshot is supplied as reference context, and nothing is written to the session log.'
+  zh: '在右侧边栏打开一个临时侧边对话，复用宿主原生会话界面，回答的 Markdown 渲染、工具步骤、用时与 Token 用量都与主对话一致。侧聊运行在独立的内存会话上：主对话快照只作为参考上下文，不写入会话日志。'
+icon: https://raw.githubusercontent.com/WuHututu/dsh-side-chat/main/assets/icon.png

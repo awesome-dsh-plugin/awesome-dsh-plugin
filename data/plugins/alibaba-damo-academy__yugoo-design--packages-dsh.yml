@@ -1,0 +1,8 @@
+url: https://github.com/alibaba-damo-academy/yugoo-design/tree/main/packages/dsh
+name: Yugoo Design
+category: workflow
+description:
+  en: Turns your AI agent application into an interactive workspace for ideation and design, with editable panels, structured knowledge and guided iteration.
+  zh: 将你的 AI 智能体应用升级为交互式构思设计工作台，通过可编辑面板、结构化知识与有目的的循环推荐，协作完成复杂任务。
+icon: https://raw.githubusercontent.com/alibaba-damo-academy/yugoo-design/0edfadac965f8dcd5bdf23f4aa58d0a5f5b3035d/docs/images/yugoo-design-icon.png
+tarball: https://github.com/alibaba-damo-academy/yugoo-design/releases/download/v0.1.2/dsh-design-system-dsh-0.1.2.tgz

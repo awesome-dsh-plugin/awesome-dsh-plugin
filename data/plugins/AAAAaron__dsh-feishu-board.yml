@@ -1,0 +1,6 @@
+url: https://github.com/AAAAaron/dsh-feishu-board
+name: AAAAaron/dsh-feishu-board
+category: notify
+description:
+  en: 'Host-side Feishu board for DeepSeek Harness: pushes a session''s ask_user_question to Feishu DM as plain text and sends a quoted reply back to the exact session that asked, archiving unmatched replies instead of guessing. Its lark-cli wrapper also suppresses an identical notification resent within three minutes.'
+  zh: '宿主侧飞书公告板：把会话的 ask_user_question 以纯文本推到飞书私聊，引用回复只投回提问的那个会话，匹配不上的回复存档不猜；lark-cli 发送包装会拦下三分钟内重复的同一通知。'

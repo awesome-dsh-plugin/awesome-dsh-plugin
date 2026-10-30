@@ -1,0 +1,6 @@
+url: https://github.com/SpaceRelay/dsh-subagent-control
+name: SpaceRelay/dsh-subagent-control
+category: tools
+description:
+  en: Three tools that let any agent, including a team member, list, steer and stop the subagents it started.
+  zh: 三个工具，让任意智能体（包括团队成员）能列出、追问并中止自己派出的子代理。

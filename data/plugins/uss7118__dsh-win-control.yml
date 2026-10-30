@@ -1,0 +1,7 @@
+url: https://github.com/uss7118/dsh-win-control
+name: uss7118/dsh-win-control
+category: tools
+tarball: https://github.com/uss7118/dsh-win-control/releases/latest/download/dsh-win-control.tgz
+description:
+  zh: "给 DeepSeek Harness 智能体用的 Windows 桌面控制：窗口与 UI Automation 自动化、本地 Windows OCR、通过 Chrome DevTools Protocol 直读浏览器 DOM 并执行 JS、拟人化鼠标键盘、浏览器标签页管理，以及一个实时控制面板。首次启动自动探测本机能力并写入配置，缺失的能力自动降级而非报错。仅支持 Windows 10/11。"
+  en: "Windows desktop control for DeepSeek Harness agents: window and UI Automation automation, local Windows OCR, direct browser reads over the Chrome DevTools Protocol (DOM text, JavaScript, selector clicks), humanised mouse and keyboard input, browser tab management, and a live control panel. It probes the machine on first run, writes its own config, and degrades gracefully when a capability is missing. Windows 10/11 only."

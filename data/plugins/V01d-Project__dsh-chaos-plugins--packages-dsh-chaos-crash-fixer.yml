@@ -1,0 +1,6 @@
+url: https://github.com/V01d-Project/dsh-chaos-plugins/tree/main/packages/dsh-chaos-crash-fixer
+name: V01d-Project/dsh-chaos-plugins#dsh-chaos-crash-fixer
+category: fun
+description:
+  en: 'Repairs dsh-chaos-rivals-crasher by disarming its exit trigger before it fires, so DSH survives when codex or Claude Code is detected. Warning: install it together with the crasher; it cannot revive a host that has already exited. Joke plugin.'
+  zh: '拆掉 dsh-chaos-rivals-crasher 的引信，让 DSH 在检测到 codex / Claude Code 时也不退出。警告：必须和一号插件一起装；宿主已经退出后它救不回来。玩笑插件。'

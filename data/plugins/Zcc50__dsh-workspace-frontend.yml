@@ -1,0 +1,6 @@
+url: https://github.com/Zcc50/dsh-workspace-frontend
+name: Zcc50/dsh-workspace-frontend
+category: session
+description:
+  en: Rebuilds the sidebar into a workspace / group / session tree with drag-to-group, per-row status and context rings, and resizable sidebars; the per-session cost column needs the dsh-claude-style plugin and shows — without it.
+  zh: 把左侧栏重做成「工作区 → 分组 → 会话」树，支持拖拽归组、行内状态环与上下文环，以及可拖拽调宽的侧栏把手；会话花费列依赖 dsh-claude-style 插件，未安装时显示 —。

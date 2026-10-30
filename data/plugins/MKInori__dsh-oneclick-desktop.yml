@@ -1,0 +1,6 @@
+url: https://github.com/MKInori/dsh-oneclick-desktop
+name: MKInori/dsh-oneclick-desktop
+category: ui
+description:
+  en: 'Windows desktop integration, a one-click launcher and tray controller for DSH, plus a sidebar button that puts DSH and a chat.deepseek.com window side by side with one shared taskbar button. Installing it writes a desktop shortcut and registers a dshsplit: protocol, both removed by lib/desktop.ps1 -Mode remove.'
+  zh: 'Windows 桌面集成：一键启动器 + 托盘控制器，另加侧边栏按钮把 DSH 和 chat.deepseek.com 并排放置并共用一个任务栏按钮。安装会写入桌面快捷方式并注册 dshsplit: 协议，两者都可用 lib/desktop.ps1 -Mode remove 清除。'

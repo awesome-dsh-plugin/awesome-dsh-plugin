@@ -1,0 +1,6 @@
+url: https://github.com/WhatCannotBeSaid/dsh-im-workspace-buttons
+name: WhatCannotBeSaid/dsh-im-workspace-buttons
+category: ui
+description:
+  en: 'Adds one 28x28 icon button per dsh-im channel that holds an account to the official Workspaces header row. Pressing one puts the sidebar into that channel''s view, drawing only its conversations and hiding every other row; pressing it again drops back to the official list. Buttons appear only for channels with a connected account.'
+  zh: '在官方「工作区」标题行上，为每个已接入账号的 dsh-im 通道添加一个 28x28 图标按钮。点击后侧栏切到该通道视图，只显示它的会话、隐藏其余所有行；再次点击回到官方列表。只有已接入账号的通道才会出现按钮。'

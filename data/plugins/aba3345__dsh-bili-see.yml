@@ -1,0 +1,6 @@
+url: https://github.com/aba3345/dsh-bili-see
+name: aba3345/dsh-bili-see
+category: tools
+description:
+  en: 'Bilibili autopilot run by a local Ollama model: it picks videos within per-topic quota, reads subtitles, hot comments and keyframes, decides whether a reply is warranted, then writes and posts one comment through a five-level safety gate. Triggered by dsh-schedule; write tools are not registered while commenting is disabled. v1.1 hardens the write path: revoking write access is a runtime state checked before every send, publishing is atomic, risk-control errors persist as a pause, and the final post re-checks persona style. Needs Python 3.10+ with the repo''s requirements.txt installed.'
+  zh: '本地模型刷 B 站：由 Ollama 小模型按题材配额挑片，读字幕、热评与关键帧，判断要不要评论，再经五档安全闸写出并发布。节奏由 dsh-schedule 触发；未开启写权限时不注册写工具。v1.1 收紧写路径：撤权改为运行时状态（每次发送前检查）、发布原子化、风控错误会持久化为暂停、发前复核人设风格。需 Python 3.10+ 并装好仓库里的 requirements.txt。'

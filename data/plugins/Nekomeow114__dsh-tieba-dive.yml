@@ -1,0 +1,6 @@
+url: https://github.com/Nekomeow114/dsh-tieba-dive
+name: Nekomeow114/dsh-tieba-dive
+category: fun
+description:
+  en: 'Tieba (Baidu forum) reader and companion for DSH: reads threads, writes daily digests, signs in, and builds a per-forum style library from high-liked replies. Optional replies to threads or to sub-replies under your own comments are off by default and limited per round and per day. Also ships a read-only MCP server for Codex, AstrBot and Claude Desktop.'
+  zh: 'DSH 泡贴吧插件：读帖、写日报、签到，并从高赞回复里按吧建立风格库；回帖与楼中楼默认关闭，受每轮/每日限额。另带只读 MCP server，可接 Codex、AstrBot、Claude Desktop。'

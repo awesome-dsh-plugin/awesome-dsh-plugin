@@ -1,0 +1,6 @@
+url: https://github.com/Midnight-1991/dsh-term-explainer
+name: Midnight-1991/dsh-term-explainer
+category: ui
+description:
+  en: 'Adds a "Terms" action to finished assistant answers that explains the computer-science terms it detects with Chinese definitions, occurrence counts, highlighted context snippets, and clickable nested explanations from a built-in offline dictionary, with no model calls.'
+  zh: '在每条已完成回答的操作条增加「术语」入口，用内置离线词典给出回答中计算机术语的中文释义、提及次数、高亮上下文，并支持点击释义中的术语展开次级解释，不调用模型。'

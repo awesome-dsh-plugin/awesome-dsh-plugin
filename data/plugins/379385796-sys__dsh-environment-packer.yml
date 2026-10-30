@@ -1,0 +1,7 @@
+url: https://github.com/379385796-sys/dsh-environment-packer
+name: 379385796-sys/dsh-environment-packer
+category: tools
+description:
+  en: Create verified local cold-backup ZIPs of a Windows DSH Profile and selected home data after DSH exits; restore only to a fresh target with a matching runtime, without certified cross-machine recovery.
+  zh: 在 DSH 退出后，为 Windows DSH Profile 及指定的主目录数据生成可校验的本地冷备份 ZIP；恢复仅限匹配运行时的全新目标，未经跨机器恢复认证。
+tarball: https://github.com/379385796-sys/dsh-environment-packer/releases/download/v0.4.2/dsh-environment-packer-0.4.2.tgz

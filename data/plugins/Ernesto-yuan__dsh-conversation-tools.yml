@@ -1,0 +1,7 @@
+url: https://github.com/Ernesto-yuan/dsh-conversation-tools
+name: Ernesto-yuan/dsh-conversation-tools
+category: ui
+description:
+  en: "A floating in-conversation find bar docked over the DSH composer (Ctrl/⌘+F or the magnifier beside the input): hits list with a match counter as you type, Enter jumps to the next hit, hovering a hit pops a scrollable full-text card with a one-click copy of the whole message, the up arrow in an empty composer recalls previously sent messages one at a time with their image and file attachments restored as drafts, hovering any image in the conversation shows a copy button that writes it to the clipboard as PNG, and every finished answer gains a regenerate button while the newest also gets continue. Client-side only, searches the messages already loaded in the conversation, and never jumps."
+  zh: "在 DSH 输入框上方加一条浮动的会话内查找（Ctrl/⌘+F 或输入框左侧放大镜打开）：输入即列命中并显示计数，回车跳到下一处，悬浮结果在面板侧边浮出可滚动的全文卡片，一键复制整条消息；空输入框按 ↑ 逐条取回发过的消息，图片与文件附件一并还原成草稿；悬浮对话里的任意图片出现【复制图片】，一键以 PNG 写入剪贴板；每条完成的回答下方补上【重新生成】，最新一条另有【继续生成】。纯客户端实现，只搜当前会话已加载的消息，不做跳转。"
+icon: https://raw.githubusercontent.com/Ernesto-yuan/dsh-conversation-tools/main/assets/icon-256.png

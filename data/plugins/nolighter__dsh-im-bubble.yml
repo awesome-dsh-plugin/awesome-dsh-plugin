@@ -1,0 +1,6 @@
+url: https://github.com/nolighter/dsh-im-bubble
+name: nolighter/dsh-im-bubble
+category: notify
+description:
+  en: 'Registers im_say, a tool that sends each call as its own IM message through dsh-im''s proactive delivery service, so a single reply can arrive as several bubbles instead of one block; im_targets and im_target_add list and create the delivery targets it sends to.'
+  zh: '注册 im_say 工具，调用一次就通过 dsh-im 的主动投递服务发出一条独立 IM 消息，让一条回复拆成多个气泡而不是一整块；另有 im_targets 与 im_target_add 查看和新建投递目标。'

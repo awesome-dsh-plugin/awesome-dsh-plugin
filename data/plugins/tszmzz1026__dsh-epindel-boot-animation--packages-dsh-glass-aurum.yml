@@ -1,0 +1,7 @@
+url: https://github.com/tszmzz1026/dsh-epindel-boot-animation/tree/main/packages/dsh-glass-aurum
+name: tszmzz1026/dsh-epindel-boot-animation#dsh-glass-aurum
+category: theme
+description:
+    en: Original CSS gold and purple glass theme with local avatar upload, crop controls, assistant naming and reading styles; no bundled game media. The package was renamed from dsh-glass-theme to dsh-glass-aurum because another author publishes an unrelated package under the old name; stop the old package before installing this one.
+    zh: 原创 CSS 金紫主题，支持本地头像上传与裁切、助手命名和阅读排版，不附带游戏素材。包名已从 dsh-glass-theme 改为 dsh-glass-aurum——旧名被另一位作者的无关插件占用；安装前请先停用旧包。
+tarball: https://github.com/tszmzz1026/dsh-epindel-boot-animation/releases/download/suite-v2.1.1/dsh-glass-aurum-1.1.1.tgz

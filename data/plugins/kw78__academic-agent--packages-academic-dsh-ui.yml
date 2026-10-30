@@ -1,0 +1,7 @@
+url: https://github.com/kw78/academic-agent/tree/main/packages/academic-dsh-ui
+name: kw78/academic-agent#academic-dsh-ui
+category: ui
+description:
+  en: "DSH sidebar and panel for courses, tasks, plans, connections, course materials, automation and settings."
+  zh: "DSH 侧边栏与面板：课程、任务、计划、连接、课程资料、自动化与设置。"
+tarball: https://github.com/kw78/academic-agent/releases/download/v0.1.0/academic-dsh-ui-0.1.0.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/MarkGaster/dafiyu-dream
+name: MarkGaster/dafiyu-dream
+category: fun
+description:
+  en: Sends excerpts from recent Chinese Markdown conversation exports to the DeepSeek API (API key required) to generate a dream, saved as a local Markdown file.
+  zh: 将近期中文 Markdown 对话导出文件中的片段发送给 DeepSeek API（需 API key），生成一场梦境并保存为本地 Markdown 文件。
+icon: https://raw.githubusercontent.com/MarkGaster/dafiyu-dream/main/docs/assets/icon-360.png

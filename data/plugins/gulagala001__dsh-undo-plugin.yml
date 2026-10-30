@@ -2,6 +2,6 @@ url: https://github.com/gulagala001/dsh-undo-plugin
 name: gulagala001/dsh-undo-plugin
 category: session
 description:
-  en: "Rewind complete conversation turns and checkpointed file edits, then restore the input draft."
-  zh: "回退整轮对话与检查点文件改动，并恢复输入框草稿。"
-tarball: https://github.com/gulagala001/dsh-undo-plugin/releases/download/v0.1.1-dsh.0.2.1-rc.2/gulagala001-dsh-undo-plugin-0.1.1-dsh.0.2.1-rc.2.tgz
+  en: "Rewind conversation turns and checkpointed file changes while restoring tasks and evidence at the same history boundary."
+  zh: "回退会话回合和文件检查点，并在同一历史截点恢复任务与证据。"
+tarball: https://github.com/gulagala001/dsh-undo-plugin/releases/download/v0.1.5-dsh.0.2.1-rc.3/gulagala001-dsh-undo-plugin-0.1.5-dsh.0.2.1-rc.3.tgz

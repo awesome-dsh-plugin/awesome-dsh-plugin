@@ -1,0 +1,6 @@
+url: https://github.com/fangchenghao/dsh-web-search
+name: fangchenghao/dsh-web-search
+category: tools
+description:
+  en: 'Keyless web search with one web_tools entry and eight actions for multi-query search, date windows, packages, papers, repositories, platforms, page reading, cited research, cache search and engine health; fuses eight engines and ships a stdio MCP server for other agents.'
+  zh: '免密钥网页搜索：一个 web_tools 入口、八个 action，覆盖多查询、日期窗口、包、论文、仓库、平台、正文读取、引用研究、缓存检索与引擎健康；融合八个引擎，并提供给其他 Agent 使用的 stdio MCP server。'

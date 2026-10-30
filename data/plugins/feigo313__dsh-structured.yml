@@ -1,7 +1,7 @@
 url: https://github.com/feigo313/dsh-structured
 name: feigo313/dsh-structured
 category: session
-tarball: https://github.com/feigo313/dsh-structured/releases/download/v0.8.3/dsh-structured-0.8.3.tgz
+tarball: https://github.com/feigo313/dsh-structured/releases/download/v0.9.9/dsh-structured-0.9.9.tgz
 description:
   en: "Structured output for DSH: a no-label title card, then tables/lists/steps; per-session toggle and style.md override."
   zh: "让 DSH 每条实质回复默认结构化：无标签标题卡 + 表格/清单/步骤；按会话开关，style.md 可覆盖。"

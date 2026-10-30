@@ -1,0 +1,8 @@
+url: https://github.com/WWFZS/dsh-plugin-startup-animation
+name: WWFZS/dsh-plugin-startup-animation
+category: ui
+description:
+  en: 'Full-screen boot animation covering the loading page until the app UI is ready. Ships a built-in video/wallpaper/audio library, accepts your own files, and adds uninstall and one-click update buttons on its settings page.'
+  zh: '全屏开机动画，盖住加载页直到应用就绪再淡出。内置视频、壁纸与开机音频素材库，支持上传自己的文件；设置页内带卸载与一键更新按钮。'
+icon: https://raw.githubusercontent.com/WWFZS/dsh-plugin-startup-animation/master/docs/avatar.png
+tarball: https://github.com/WWFZS/dsh-plugin-startup-animation/releases/latest/download/dsh-plugin-startup-animation.tgz

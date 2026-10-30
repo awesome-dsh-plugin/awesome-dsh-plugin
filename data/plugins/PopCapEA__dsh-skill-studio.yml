@@ -1,0 +1,7 @@
+url: https://github.com/PopCapEA/dsh-skill-studio
+name: dsh-skill-studio-codex
+category: skill
+tarball: https://github.com/PopCapEA/dsh-skill-studio/releases/download/v1.0.0/dsh-skill-studio-codex-1.0.0.tgz
+description:
+  en: Codex-compatible Skill Studio with a left-sidebar page for browsing, creating, editing, enabling, disabling, and invoking SKILL.md skills; bridges ~/.codex/skills and project .codex/skills into DSH and supports $skill-name invocation in chat.
+  zh: 带左侧栏页面的 Codex 兼容技能工作室：浏览、创建、编辑、启停并调用 SKILL.md 技能；把 ~/.codex/skills 与项目 .codex/skills 接入 DSH，并支持在对话中用 $技能名 调用。

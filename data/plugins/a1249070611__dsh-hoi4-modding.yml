@@ -1,0 +1,6 @@
+url: https://github.com/a1249070611/dsh-hoi4-modding
+name: a1249070611/dsh-hoi4-modding
+category: skill
+description:
+  en: 'DeepSeek Harness skill bundle for Hearts of Iron IV 1.19.3 modding: scaffold a mod, focus trees, events, decisions, ideas, characters, technologies, MIO, special projects, GUI, localisation, DDS, static verifier, installer and error.log triage. Bundled Python tools; no game assets.'
+  zh: '面向《钢铁雄心 IV》1.19.3 模组开发的 DSH 技能包：搭模组骨架、国策树、事件、决议、理念、人物、科技、MIO、特殊项目、界面、本地化、DDS、静态校验、安装器与 error.log 排查。随包提供 Python 工具，不含游戏素材。'

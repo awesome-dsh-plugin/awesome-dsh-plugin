@@ -1,0 +1,7 @@
+url: https://github.com/Natsubrei/dsh-mermaid-panel
+name: Natsubrei/dsh-mermaid-panel
+category: ui
+tarball: https://github.com/Natsubrei/dsh-mermaid-panel/releases/latest/download/dsh-mermaid-panel.tgz
+description:
+  en: "Renders the open conversation's Mermaid diagrams as a right-sidebar page, one card per diagram, each clickable to open full screen with zoom and pan; the chat's own code block is left untouched, so copying or quoting the source still works."
+  zh: "把当前对话里的 Mermaid 图表渲染成右侧栏的一个页面，一图一卡片；点击卡片可全屏查看并缩放、拖动，对话里的原始代码块保持不动，因此复制或引用源码照常可用。"

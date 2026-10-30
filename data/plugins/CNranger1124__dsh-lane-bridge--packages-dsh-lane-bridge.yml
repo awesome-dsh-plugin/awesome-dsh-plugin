@@ -1,0 +1,7 @@
+url: https://github.com/CNranger1124/dsh-lane-bridge/tree/main/packages/dsh-lane-bridge
+name: CNranger1124/dsh-lane-bridge#dsh-lane-bridge
+category: notify
+description:
+  en: 'Multi-channel IM bridge for DeepSeek Harness: each QQ (SnowLuma / OneBot v11, official QQ Bot) or Discord group and private chat becomes its own agent session, bound to a role card whose domain carries knowledge bases with draft approval, shared memory, a read-only GitHub reader and group trigger rules; two built-in personas (customer support, group chat), unified push with broadcast, and human hand-off.'
+  zh: 'DeepSeek Harness 的多渠道 IM 桥：QQ（SnowLuma / OneBot v11、官方 QQ Bot）与 Discord 的每个群、每个私聊都对应一个独立的 agent 会话，会话绑定角色卡、角色卡背后的领域承载知识库（含草稿审批）、共享记忆、只读 GitHub 查询与群聊触发策略；内置客服与群聊两套人格，支持统一推送（含广播）与人工接管。'
+tarball: https://github.com/CNranger1124/dsh-lane-bridge/releases/latest/download/dsh-lane-bridge.tgz

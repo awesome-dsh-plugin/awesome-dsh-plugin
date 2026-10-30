@@ -1,0 +1,6 @@
+url: https://github.com/2239058652/dsh-loomy-connect
+name: 2239058652/dsh-loomy-connect
+category: model
+description:
+  en: Registers the models bundled with the Xunfei Loomy desktop app as a `loomy` provider in DSH, reading the app's local sign-in session instead of an API key. Fork of gdrpzym/dsh-loomy-connect adapted to DSH 0.2.1, adding a per-model enable/disable switch. Requires the Loomy desktop app installed and signed in; it cannot be installed alongside gdrpzym/dsh-loomy-connect because both register the same `loomy` provider.
+  zh: 把讯飞 Loomy 桌面端内置的模型注册为 DSH 的 `loomy` 供应商，读取该应用的本地登录态而不使用 API Key。是 gdrpzym/dsh-loomy-connect 适配 DSH 0.2.1 的派生版本，新增逐模型启用/禁用开关。需本机安装并登录讯飞 Loomy 桌面端；与 gdrpzym/dsh-loomy-connect 注册同一个 `loomy` 供应商，不能同装。

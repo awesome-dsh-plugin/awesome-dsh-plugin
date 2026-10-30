@@ -1,0 +1,7 @@
+url: https://github.com/xinming-chenniang/dsh-outcomes
+name: xinming-chenniang/dsh-outcomes
+category: tools
+tarball: https://github.com/xinming-chenniang/dsh-outcomes/releases/download/v0.1.2/dsh-outcomes-0.1.2.tgz
+description:
+  en: 'Deliverables registry for DeepSeek Harness: agents register the final artifacts of a task (reports, pages, documents, sheets, images, datasets) into one settings section and manager page that store paths only, never copies, and remove recoverably; a standalone CLI (add, list, stats, check, remove, restore) reads and audits the same registry outside the app.'
+  zh: 'DSH 成果登记：agent 把一次任务的最终成果（报告、网页、文档、表格、图片、数据表）登记进设置页与管理页的同一份清单，只记路径、不搬文件，删除可撤销；独立 CLI（add/list/stats/check/remove/restore）在应用外也能查同一份清单，并核对登记的文件是否还在。'

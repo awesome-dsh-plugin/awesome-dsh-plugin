@@ -1,0 +1,6 @@
+url: https://github.com/guo120629-dotcom/dsh-send-timestamp
+name: guo120629-dotcom/dsh-send-timestamp
+category: session
+description:
+  en: 'Adds a Timestamp toggle to the composer; while it is on, each message you submit is followed by a hidden context message carrying the current local time, so the model knows when you sent it. The switch is remembered per conversation.'
+  zh: '在输入框工具栏加一个「时间戳」开关：开启后，你提交的每条消息后面会跟一条隐藏的上下文消息，携带发送时刻的本地时间，模型因此知道你是什么时候发的；开关按会话分别记住。'

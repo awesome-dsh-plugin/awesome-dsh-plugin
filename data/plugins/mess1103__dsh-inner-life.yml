@@ -2,5 +2,5 @@ url: https://github.com/mess1103/dsh-inner-life
 name: mess1103/dsh-inner-life
 category: memory
 description:
-  en: Eight zero-dependency tools that write an agent diary to a hash-derived daily path, with an index that stores no file paths.
-  zh: 八个零依赖工具，把 agent 的日记写到按日期哈希推导出的路径上，索引里不存文件路径。
+  en: 'A private diary for your agent: eight zero-dependency tools to write, amend, search and export daily entries kept on date-hashed paths the index never records (inner_find returns a day''s path on request).'
+  zh: '给 agent 的私人日记本：八个零依赖工具负责写、改、翻、导出，正文按日期哈希散落在看似随机的目录里，索引不记路径（需要时由 inner_find 按日给出路径）。'

@@ -1,0 +1,6 @@
+url: https://github.com/Thunderunruly/session-kanban
+name: Thunderunruly/session-kanban
+category: ui
+description:
+  en: "Session board in the left sidebar: every chat session's current work, todos and progress, with a searchable overview heatmap and one-click navigation back to the session."
+  zh: 在左侧栏提供会话看板：集中展示每个会话的当前工作、待办与进度，附带可搜索的概览热力图，点击卡片即可跳回会话。

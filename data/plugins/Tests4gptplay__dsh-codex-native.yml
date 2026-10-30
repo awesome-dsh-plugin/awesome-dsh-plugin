@@ -1,0 +1,8 @@
+url: https://github.com/Tests4gptplay/dsh-codex-native
+name: Tests4gptplay/dsh-codex-native
+category: model
+icon: https://raw.githubusercontent.com/Tests4gptplay/dsh-codex-native/main/docs/icons/chatgpt-auth.png
+tarball: https://github.com/Tests4gptplay/dsh-codex-native/releases/download/v0.2.1-alpha.9-http.10/dsh-codex-native-0.2.1-alpha.9-http.10.tgz
+description:
+  en: "Connect OpenAI Codex app-server as a DSH main model with ChatGPT sign-in, HTTP transport, automatic official Codex latest runtime updates, on-demand live Codex model catalog, native tools, settings, selectable questions and automatic chat replies, on-demand local and connector skills, Windows Computer Use recovery, context management, quota and Token usage history."
+  zh: "通过 ChatGPT 登录将 OpenAI Codex app-server 接入 DSH 主模型，支持 HTTP 连接、官方 Codex latest 运行时自动更新、按需实时同步 Codex 模型目录、原生工具与设置、选项问答与自动聊天回执、本地及连接器技能按需检索、Windows Computer Use 截图恢复、上下文管理、额度查询与 Token 历史用量统计。"

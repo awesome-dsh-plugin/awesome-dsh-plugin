@@ -1,0 +1,6 @@
+url: https://github.com/sldmn233/dsh-profile-share
+name: sldmn233/dsh-profile-share
+category: dev
+description:
+  en: Exports selected DSH plugins as one pasteable share code, applies the delta on another machine, and reports which credentials still need configuring.
+  zh: 把勾选的 DSH 插件导出成一条可粘贴的分享码，在另一台机器上应用差量，并列出仍需补齐的凭据。

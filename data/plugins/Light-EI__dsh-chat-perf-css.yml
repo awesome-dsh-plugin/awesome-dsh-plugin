@@ -1,0 +1,7 @@
+url: https://github.com/Light-EI/dsh-chat-perf-css
+name: Light-EI/dsh-chat-perf-css
+category: ui
+tarball: https://github.com/Light-EI/dsh-chat-perf-css/releases/latest/download/dsh-chat-perf-css.tgz
+description:
+  en: 'A long conversation that renders many LaTeX formulas at once can become laggy, because the browser keeps styling, laying out and painting content that is off screen. This plugin applies content-visibility: auto to the off-screen message bodies and block formulas, so that work is skipped and the lag is reduced.'
+  zh: '一段渲染了大量 LaTeX 公式的长会话容易卡顿：屏幕外的消息和公式仍会被浏览器反复计算样式、布局和绘制。本插件给屏幕外的消息体与块级公式加上 content-visibility: auto，让这部分工作被跳过，卡顿随之减少。'

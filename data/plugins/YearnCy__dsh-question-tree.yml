@@ -1,0 +1,6 @@
+url: https://github.com/YearnCy/dsh-question-tree
+name: YearnCy/dsh-question-tree
+category: ui
+description:
+  en: 'Tree-style questioning for DSH: click "Ask in tree" on a selection to add a node to the right-sidebar tree and ask inline under it; clicking another node makes it the current parent, so later selections nest there, Alt+click opens a root node, Ctrl+click appends another passage to the same node, double-click jumps back to the quoted text, a red/green dot marks each node as understood or not, and the panel switches between a list view and a horizontal branch graph. "Add to composer" instead puts the quote into the input box as a reference chip, without creating a node. Nodes live in localStorage and nothing is injected into the prompt.'
+  zh: '对话里划取文字后点「树形提问」，右栏问题树就多一个节点，问题直接写在节点下；单击别的节点就把它设为当前节点，之后再划取默认挂在它下面，「Alt + 树形提问」新开根节点，「Ctrl + 树形提问」把新段落追加进同一节点；双击节点跳回原文，点左侧圆点标记「懂了」；右上角可在列表与横向分支图之间切换。划取后点「添加到对话」则把引用以 chip 形式插进输入框，不建节点。节点只存在 localStorage，不进提示词。'

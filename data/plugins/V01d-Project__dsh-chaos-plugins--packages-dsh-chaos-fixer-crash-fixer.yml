@@ -1,0 +1,6 @@
+url: https://github.com/V01d-Project/dsh-chaos-plugins/tree/main/packages/dsh-chaos-fixer-crash-fixer
+name: V01d-Project/dsh-chaos-plugins#dsh-chaos-fixer-crash-fixer
+category: fun
+description:
+  en: 'Repairs dsh-chaos-fixer-crasher by disarming its exit trigger before it fires, keeping the four-plugin chaos chain stable. Warning: it only disarms this specific crash, not arbitrary uncaught exits. Joke plugin.'
+  zh: '拆掉 dsh-chaos-fixer-crasher 的引信，让四个插件互相咬的链子保持稳定。警告：它只拆这一种崩溃，不处理其它未捕获退出。玩笑插件。'

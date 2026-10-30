@@ -1,0 +1,6 @@
+url: https://github.com/tkaiz0406/dsh-subagent-route-pin
+name: tkaiz0406/dsh-subagent-route-pin
+category: model
+description:
+  en: 'Registers a wrapper provider that gives delegated subagents their own LLM route — one-off spawns through provider.start, Agent Teams members through a hook on startActivation — while the main agent keeps its model. Ships a Settings section for picking that route, a per-expert override file, a capability flag reporting which seams the hook caught, and a readiness record written at mount.'
+  zh: '注册一个包装 provider，让被委派的子代理走自己的 LLM 路由——单发子代理经 provider.start，Agent Teams 成员经 startActivation 上的钩子——主 agent 仍用自己的模型。附带设置页选择路由、按专家覆盖的配置文件、报告钩子挂在哪条缝上的能力标志，以及挂载时写下的就绪记录。'

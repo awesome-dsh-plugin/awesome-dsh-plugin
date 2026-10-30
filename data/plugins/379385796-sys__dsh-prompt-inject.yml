@@ -1,0 +1,7 @@
+url: https://github.com/379385796-sys/dsh-prompt-inject
+name: 379385796-sys/dsh-prompt-inject
+category: identity
+description:
+  en: MIT adaptation of H1a3x's prompt-template manager with native ConfigForms, revision-checked saves, global/workspace selection and verified Windows Desktop RC3 compatibility. Cannot be installed alongside the upstream H1a3x/dsh-prompt-inject.
+  zh: 基于 H1a3x 原作的 MIT 提示词模板管理适配版，采用原生 ConfigForms 和修订号校验保存，支持全局及工作区选择，已验证 Windows Desktop RC3 兼容性。不能与上游 H1a3x/dsh-prompt-inject 同装。
+tarball: https://github.com/379385796-sys/dsh-prompt-inject/releases/download/v0.1.1-rc.4/dsh-prompt-inject-0.1.1-rc.4.tgz

@@ -2,5 +2,5 @@ url: https://github.com/01men/ybkkasi
 name: 01men/ybkkasi
 category: usage
 description:
-  en: 'Asset governance console for self-hosted AI infrastructure. Registers MCP servers, skills, agents and AI apps in one ledger with a lifecycle state machine, per-tool RBAC permission points, department x agent x skill cost attribution, dependency topology and an append-only audit trail. Ships 27 plugin packages, 354 REST routes and 83 MCP tools; selftest runs 1486 end-to-end assertions. Not a hosted service, no cloud contract.'
-  zh: '自托管 AI 基础设施的资产治理控制台。把 MCP 服务 / Skill / Agent / AI 应用登记进同一台账，带生命周期状态机、逐工具 RBAC 权限点、部门 x Agent x Skill 三维成本归因、依赖拓扑与只追加审计日志。含 27 个插件包、354 条 REST 路由、83 个 MCP 工具，selftest 1486 项端到端断言全绿。非托管服务，无云端合约。'
+  en: 'Asset governance console for self-hosted AI infrastructure. Registers MCP servers, skills, agents, AI apps, model channels, SaaS connectors and NAS storage in one ledger with a lifecycle state machine, per-tool RBAC permission points, department x agent x skill cost attribution, dependency topology and an append-only audit trail. At v1.5.0: 29 plugin packages, 450 REST routes and 86 MCP tools, with 1610 end-to-end assertions green. Self-hosted, MIT, no hosted tier and no cloud contract.'
+  zh: '自托管 AI 基础设施的资产治理控制台。把 MCP 服务 / Skill / Agent / AI 应用 / 模型渠道 / SaaS 连接器 / NAS 存储登记进同一台账，带生命周期状态机、逐工具 RBAC 权限点、部门 x Agent x Skill 三维成本归因、依赖拓扑与只追加审计日志。v1.5.0 实测：29 个插件包、450 条 REST 路由、86 个 MCP 工具，1610 项端到端断言全绿。完全自托管，MIT，无托管版无云端合约。'

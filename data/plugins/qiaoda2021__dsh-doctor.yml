@@ -1,0 +1,7 @@
+url: https://github.com/qiaoda2021/dsh-doctor
+name: qiaoda2021/dsh-doctor
+category: dev
+description:
+  en: 'Check your DSH setup and fix supported problems after you approve.'
+  zh: '给 DSH 做体检，告诉你哪里有问题；你确认后再备份和修复。'
+tarball: https://github.com/qiaoda2021/dsh-doctor/releases/download/v0.9.0-beta.8/dsh-doctor-0.9.0-beta.8.tgz

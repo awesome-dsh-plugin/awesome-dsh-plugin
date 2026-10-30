@@ -2,6 +2,6 @@ url: https://github.com/gulagala001/dsh-workflow
 name: gulagala001/dsh-workflow
 category: workflow
 description:
-  en: "Run structured workflows with project scripts, tool execution and budget controls."
-  zh: "可续跑的 JavaScript 工作流：项目脚本、原生 subagent、token 预算与 worktree 隔离。"
-tarball: https://github.com/gulagala001/dsh-workflow/releases/download/v0.1.2-dsh.0.2.1-rc.2/dsh-workflow-plus-0.1.2-dsh.0.2.1-rc.2.tgz
+  en: "Resumable JavaScript workflows with native child tasks, shared budgets and worktree isolation."
+  zh: "可恢复的 JavaScript 工作流，支持原生子任务、共享预算与 worktree 隔离。"
+tarball: https://github.com/gulagala001/dsh-workflow/releases/download/v0.1.5-dsh.0.2.1-rc.3/dsh-workflow-plus-0.1.5-dsh.0.2.1-rc.3.tgz

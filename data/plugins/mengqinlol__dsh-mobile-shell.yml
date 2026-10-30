@@ -1,0 +1,6 @@
+url: https://github.com/mengqinlol/dsh-mobile-shell
+name: mengqinlol/dsh-mobile-shell
+category: ui
+description:
+  en: Adapts the DSH Web GUI for mobile screens and adds a workspace file browser with previews and downloads.
+  zh: 为 DSH Web 界面提供移动端适配，并增加支持预览和下载的工作区文件浏览器。

@@ -2,5 +2,5 @@ url: https://github.com/elegant01/dsh-honey-guard
 name: elegant01/dsh-honey-guard
 category: security
 description:
-  en: 'Replaces detected secrets (OpenAI, AWS, GitHub, PEM, Bearer) with deterministic, structurally valid honey tokens before they reach the model or the session file; adds manual marking for values the detectors miss, explicit user-visible restore, and a cross-session canary alarm.'
-  zh: '在密钥离开本机前，将其确定性地替换为结构合法的蜜罐假值（OpenAI、AWS、GitHub、PEM、Bearer 模式）；支持手动标记检测器认不出的值、用户可见的显式还原，以及蜜罐跨会话出现时的金丝雀告警。'
+  en: 'Replaces detected secrets (OpenAI, AWS, GitHub, PEM, Bearer) with deterministic, structurally valid honey tokens before they reach the model or the session file; adds manual marking for values the detectors miss, explicit user-visible restore, a cross-session canary alarm, and an opt-in JSONL log of substitution counts that never records the underlying values.'
+  zh: '在密钥离开本机前，将其确定性地替换为结构合法的蜜罐假值（OpenAI、AWS、GitHub、PEM、Bearer 模式）；支持手动标记检测器认不出的值、用户可见的显式还原、蜜罐跨会话出现时的金丝雀告警，以及可选的 JSONL 替换计数日志（只记来源与类别计数，绝不记录真实值）。'

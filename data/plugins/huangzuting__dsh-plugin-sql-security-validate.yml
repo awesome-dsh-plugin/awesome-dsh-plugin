@@ -1,0 +1,6 @@
+url: https://github.com/huangzuting/dsh-plugin-sql-security-validate
+name: huangzuting/dsh-plugin-sql-security-validate
+category: security
+description:
+  en: 'Refuses agent-generated SQL that reads tables or columns outside a configured blacklist or whitelist, returning a structured permission reason instead of rewriting the query.'
+  zh: '拒绝智能体生成的越权 SQL：读取的表或字段不在黑白名单策略内时直接拒绝，返回结构化权限原因，不改写查询。'

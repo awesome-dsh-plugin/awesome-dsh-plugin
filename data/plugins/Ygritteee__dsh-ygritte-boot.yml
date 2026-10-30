@@ -1,0 +1,9 @@
+# 提交位置：awesome-dsh-plugin/awesome-dsh-plugin
+#   仓库根 → data/plugins/Ygritteee__dsh-ygritte-boot.yml
+# 规则：一个插件一个文件；一个 PR 最多 3 条；不要手改仓库里生成的两个 README。
+url: https://github.com/Ygritteee/dsh-ygritte-boot
+name: Ygritteee/dsh-ygritte-boot
+category: ui
+description:
+  en: 'Full-screen ice-and-fire boot intro for DSH: a frost-to-ember boot sequence with typed bilingual logs and a hairline progress line, then Ygritte''s five-step identity authorization. Esc skips, Enter or click fast-forwards, and a settings page switches it off/quick/full or replays it; the host half paints the opening frame while the document parses, so the built-in loading card never shows.'
+  zh: '给 DSH 加一段「冰与火」全屏开机片头：冰霜→余烬的启动动画、双语打字机日志与发丝进度线，随后是 Ygritte 的五步身份授权。Esc 跳过，Enter/点击快进，设置页可切换关闭/简易/完整或随时重播；首帧由宿主半边在文档解析阶段就注入，DSH 自带的 Loading 卡片不会露脸。'

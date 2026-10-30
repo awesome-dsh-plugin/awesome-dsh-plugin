@@ -1,0 +1,6 @@
+url: https://github.com/MingoYung/dsh-Xiangxu-Persona
+name: MingoYung/dsh-Xiangxu-Persona
+category: memory
+description:
+  en: 'Persistent persona memory for DSH with a unified recent, long-term and archive timeline, bounded context loading, memory retrieval and isolated task delegation.'
+  zh: '为 DSH 提供持续人格记忆，统一短期、长期与归档时间线，支持有界上下文加载、记忆检索和独立任务委派。'

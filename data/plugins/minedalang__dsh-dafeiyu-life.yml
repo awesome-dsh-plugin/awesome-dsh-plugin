@@ -1,0 +1,6 @@
+url: https://github.com/minedalang/dsh-dafeiyu-life
+name: minedalang/dsh-dafeiyu-life
+category: memory
+description:
+  en: "A persistent AI companion for DSH that explores Bilibili, interacts with permission controls, and grows through evidence-backed life memories, evolving interests, simulated emotions, social relationships, and autonomous to-dos."
+  zh: "让 DSH AI 角色自主探索 B站并按权限互动，从真实经历中沉淀长期记忆，逐渐形成兴趣、模拟情绪和好友关系，同时管理自主待办。"

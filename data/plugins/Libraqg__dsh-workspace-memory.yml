@@ -1,0 +1,6 @@
+url: https://github.com/Libraqg/dsh-workspace-memory
+name: Libraqg/dsh-workspace-memory
+category: memory
+description:
+  en: "Explicit, project-scoped memory handoff: when you open a new conversation, one model call that you confirm curates the project's earlier conversations into a bounded brief and injects it into the conversation's first step. No silent background calls; a Memory panel shows the brief and lets you edit notes."
+  zh: "显式、按项目隔离的记忆交接：新开会话时，经你确认后只调用一次模型，把同一项目里之前的对话整理成有长度上限的摘要，注入到新会话的第一步；不会在后台偷偷调用模型。“记忆”面板可以查看摘要、编辑笔记。"

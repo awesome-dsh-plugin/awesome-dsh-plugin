@@ -1,0 +1,6 @@
+url: https://github.com/xinspark/dsh-better-session-topbar
+name: xinspark/dsh-better-session-topbar
+category: ui
+description:
+  en: "Better Session Topbar: replaces the session topbar title with a workspace and session breadcrumb, switching workspaces, sessions and subagents from topbar dropdowns; adding a workspace hands off to the host's own directory picker, which is the OS folder dialog on desktop."
+  zh: "更好的会话顶栏：把会话顶栏标题换成工作区与会话面包屑，可在顶栏下拉里切换工作区、会话与子智能体；添加工作区直接交给宿主的目录选择，桌面版就是系统文件夹对话框。"

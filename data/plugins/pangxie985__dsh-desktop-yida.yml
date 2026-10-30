@@ -1,0 +1,6 @@
+url: https://github.com/pangxie985/dsh-desktop-yida
+name: pangxie985/dsh-desktop-yida
+category: tools
+description:
+  en: Gives the agent 14 tools to create and edit DingTalk Yida apps (apps, forms, pages, schema, data) through the OpenYida CLI, plus a right-sidebar workbench that opens them in the built-in browser.
+  zh: 通过 OpenYida CLI 给 Agent 14 个创建、修改钉钉宜搭应用（应用、表单、页面、Schema、数据）的工具，并在右侧栏工作台里用内置浏览器打开查看。

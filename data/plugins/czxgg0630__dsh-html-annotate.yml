@@ -1,0 +1,6 @@
+url: https://github.com/czxgg0630/dsh-html-annotate
+name: czxgg0630/dsh-html-annotate
+category: ui
+description:
+  en: Preview local HTML in the right sidebar, annotate elements or regions, and send the selections with current and target styles into the current session.
+  zh: 在右侧栏预览本地 HTML，点选元素或框选区域写批注，把选中项、当前样式与目标样式一起发进当前会话。

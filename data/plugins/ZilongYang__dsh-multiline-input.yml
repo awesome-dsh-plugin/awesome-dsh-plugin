@@ -1,0 +1,7 @@
+url: https://github.com/ZilongYang/dsh-multiline-input
+name: ZilongYang/dsh-multiline-input
+category: ui
+description:
+  en: 'Single/multi-line composer toggle for the DSH Web GUI: an editable shortcut (registered through the harness shortcut service) — Cmd/Ctrl+E on desktop builds and Cmd/Ctrl+Shift+E in the browser, with Linux browsers unbound until you pick one — switches the composer between its native single-line shape and a four-line-plus draft area; a small tab on the composer shoulder always shows the current shortcut and target mode; while multi-line, Enter inserts a newline and Shift+Enter sends, and the mode is remembered per device.'
+  zh: 'DSH Web 输入框单行/多行切换：通过官方快捷键服务注册的可编辑快捷键（桌面版默认 Cmd/Ctrl+E，浏览器版默认 Cmd/Ctrl+Shift+E，Linux 浏览器默认未绑定） 在原生单行输入框与至少四行的多行输入框之间切换；输入框上沿的小 tab 常驻显示当前快捷键与目标模式；多行时 Enter 换行、Shift+Enter 发送，模式按设备记忆。'
+icon: https://raw.githubusercontent.com/ZilongYang/dsh-multiline-input/main/assets/icon-180.png

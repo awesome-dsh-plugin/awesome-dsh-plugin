@@ -1,0 +1,7 @@
+url: https://github.com/NICEGSP/call-map
+name: NICEGSP/call-map
+category: ui
+description:
+  en: 'Adds a conversation view that maps which skills, MCP tools and subagents a session actually used, with an attribution tree, a call table and an unused inventory.'
+  zh: '在会话中新增一个视图，用归因树展示本会话实际调用了哪些技能、MCP 工具与子代理，并附调用明细与未使用清单。'
+icon: https://raw.githubusercontent.com/NICEGSP/call-map/main/assets/icon-180.png

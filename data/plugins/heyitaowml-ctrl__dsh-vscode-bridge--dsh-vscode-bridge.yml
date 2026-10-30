@@ -1,0 +1,14 @@
+# 提交给 awesome-dsh-plugin 的条目，内容已填好，整份粘贴即可。
+# 文件名必须是（由 scripts/lib/entries.mjs 的规则算出）：
+#   heyitaowml-ctrl__dsh-vscode-bridge--dsh-vscode-bridge.yml
+#
+# url 指向子目录：插件包的 package.json 在仓库的 dsh-vscode-bridge/ 下，
+# 仓库根目录没有 package.json。这是官方文档支持的 monorepo 写法。
+
+url: https://github.com/heyitaowml-ctrl/dsh-vscode-bridge/tree/master/dsh-vscode-bridge
+name: heyitaowml-ctrl/dsh-vscode-bridge#dsh-vscode-bridge
+category: dev
+description:
+  en: "Sends a VS Code selection or file path into the open DSH conversation as an @path reference with its line range, inserted at the composer without sending it. Requires the companion VS Code extension shipped as a .vsix inside the bundle (one-click install from the composer, or install it by hand)."
+  zh: "把 VS Code 的选区或文件路径以 @路径（含行号范围）插入当前 DSH 对话的输入框，不自动发送；需安装随包附带的 VS Code 扩展（.vsix，可在输入框一键安装或手动安装）。"
+icon: https://raw.githubusercontent.com/heyitaowml-ctrl/dsh-vscode-bridge/master/dsh-vscode-bridge/assets/icon-180.png

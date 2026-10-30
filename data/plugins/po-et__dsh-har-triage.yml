@@ -4,4 +4,4 @@ category: tools
 description:
   en: Offline HAR diagnostics with endpoint aliases, original entry indexes and minimal HTML/JSON evidence; no recording or request replay.
   zh: 离线分析 HAR，以端点别名、原始条目索引和最小 HTML/JSON 证据定位请求问题；不录制或重放请求。
-tarball: https://github.com/po-et/dsh-har-triage/releases/download/v0.1.0/dsh-har-triage-0.1.0.tgz
+tarball: https://github.com/po-et/dsh-har-triage/releases/download/v0.1.2/dsh-har-triage-0.1.2.tgz
