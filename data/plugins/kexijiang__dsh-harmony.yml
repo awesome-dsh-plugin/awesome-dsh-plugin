@@ -1,0 +1,7 @@
+url: https://github.com/kexijiang/dsh-harmony
+name: kexijiang/dsh-harmony
+category: tools
+description:
+  en: HarmonyOS device workbench for DSH NEXT Desktop with a Better Sidebar tab, native floating mirror, theme sync, and agent device operations.
+  zh: 面向 DSH NEXT 桌面版的鸿蒙设备工作台，提供 Better Sidebar 标签页、原生悬浮投屏、主题同步和 Agent 设备操作。
+tarball: https://github.com/kexijiang/dsh-harmony/releases/latest/download/dsh-plugin-harmony.tgz
