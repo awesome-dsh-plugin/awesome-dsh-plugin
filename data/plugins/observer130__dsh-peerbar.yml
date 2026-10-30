@@ -1,0 +1,6 @@
+url: https://github.com/observer130/dsh-peerbar
+name: observer130/dsh-peerbar
+category: remote
+description:
+  en: 'Federates a local DeepSeek Harness and multiple remote hosts into the official sidebar: remote workspaces and sessions appear as native rows, open in the official chat pane, and execute entirely on the remote host over HTTP/TLS. Remote hosts need no plugin and the UI is not iframed.'
+  zh: '把本机与多台远端 DeepSeek Harness 聚合进官方侧栏：远端工作区/会话作为原生行出现、由官方中栏打开，执行始终留在远端，经 HTTP/TLS 直连。远端无需安装插件，界面不使用 iframe。'
