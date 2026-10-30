@@ -2,5 +2,5 @@ url: https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-nexus-memory
 name: kialajin-l/DSH_Plus#dsh-nexus-memory
 category: memory
 description:
-  en: "Long-term memory backed by a local SQLite store: project-scoped memory auto-injection with junk filtering, rule-based or model-assisted memory extraction from recent turns, write-side dedup and feedback-weighted ranking. Requires Python 3.8+ on PATH."
-  zh: "基于本地 SQLite 的长期记忆：新会话自动注入项目相关记忆（噪声过滤），支持轻量规则或模型辅助提取，写入去重与反馈加权排序。需要 PATH 中有 Python 3.8+。"
+  en: "Long-term memory backed by a local SQLite store: project-scoped memory auto-injection with junk filtering, rule-based or model-assisted memory extraction from recent turns, write-side dedup and feedback-weighted ranking. The Python bridge runs on $NEXUS_PYTHON or the DSH-bundled interpreter at <DSH home>/dsh-runtimes/dsh-primary-runtime/dependencies/python/ (Python 3.8+)."
+  zh: "基于本地 SQLite 的长期记忆：新会话自动注入项目相关记忆（噪声过滤），支持轻量规则或模型辅助提取，写入去重与反馈加权排序。Python 桥默认使用 $NEXUS_PYTHON 或 <DSH home>/dsh-runtimes/dsh-primary-runtime/dependencies/python/ 下的解释器（需 3.8+）。"

@@ -2,6 +2,6 @@ url: https://github.com/Eason-22/dsh-autorestart
 name: Eason-22/dsh-autorestart
 category: session
 description:
-  en: 'DeepSeek Harness plugin: restart without losing work, with an idle-aware graceful restart and automatic session resume after the host comes back. Built-in restart supports the Windows desktop app only; other setups must set restartCommand.'
-  zh: 'DeepSeek Harness 插件：重启不丢工作——等所有对话空闲后优雅重启，重启后自动接续被打断的会话。内置重启仅支持 Windows 桌面版，其他环境需自配 restartCommand。'
+  en: 'DeepSeek Harness plugin: restart without losing work. It waits until every conversation is idle, restarts the host, and picks the interrupted work back up instead of dying with it. Every restart is preceded by a snapshot of the configuration and the installed plugins; if the host does not come up, a one-shot watchdog restores that snapshot, starts the host once more, and records the outcome. Where a supervisor already manages the host it asks that supervisor instead of starting a second one. When the work is done it counts down and powers the machine off. It works on the Windows desktop client and on a hosted dsh web instance (Windows, WSL, Linux).'
+  zh: 'DeepSeek Harness 插件：重启不丢工作——等所有对话空闲后自动重启，重启后接着干活，不中断。每次重启前自动备份配置和已装插件；宿主起不来时，由一次性看门狗自动还原这份备份、再拉起一次，并把结果记录下来。已有守护的机器交给守护重启，绝不双开。所有工作完成后倒数关机，晚上无需人值守。桌面客户端与 dsh web 托管端（Windows / WSL / Linux）都通用。'
 icon: https://raw.githubusercontent.com/Eason-22/dsh-autorestart/main/assets/icon-180.png

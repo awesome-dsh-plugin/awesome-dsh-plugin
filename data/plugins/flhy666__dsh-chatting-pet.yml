@@ -1,0 +1,7 @@
+url: https://github.com/flhy666/dsh-chatting-pet
+name: flhy666/dsh-chatting-pet
+category: fun
+description:
+  en: 'Desktop pet for DSH with voice chat, personas, memory, Bilibili, QQ context, and command-gated computer control.'
+  zh: 'DSH 桌面宠物：语音聊天、多人设、聊天记忆、B 站视频与 QQ 群记忆（只读本地文件）；「电脑操作」需在面板里显式打开总开关后才响应语音指令。'
+icon: https://raw.githubusercontent.com/flhy666/dsh-chatting-pet/main/assets/logo.png

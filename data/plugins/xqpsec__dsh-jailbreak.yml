@@ -1,0 +1,6 @@
+url: https://github.com/xqpsec/dsh-jailbreak
+name: xqpsec/dsh-jailbreak
+category: model
+description:
+  en: 'Rewrites outgoing /chat/completions requests with an evolved chain-of-thought scaffold (nine-dimension genome, elitist selection with fragment crossover, one deterministic re-evaluation pass), scores answers against a fixed 20-objective baseline, and appends one line per rewrite to live-requests.jsonl in the plugin data root (default <cwd>/.aecot, overridable with AECOT_ROOT).'
+  zh: '在请求边界重写出站的 /chat/completions 请求体，注入进化出的九维思维链支架（精英保留、片段交叉、一次确定性复评），用固定 20 目标基线打分，每次改写追加一行到插件数据根目录下的 live-requests.jsonl（默认 <cwd>/.aecot，可用 AECOT_ROOT 覆盖）。'

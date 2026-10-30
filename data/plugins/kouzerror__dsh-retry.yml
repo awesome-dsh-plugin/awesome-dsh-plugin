@@ -1,0 +1,6 @@
+url: https://github.com/kouzerror/dsh-retry
+name: kouzerror/dsh-retry
+category: ui
+description:
+  en: 'Adds a native Restart DeepSeek Harness item to the Windows system tray menu and the account menu of the DSH desktop app: the plugin prepares a patched resources/app.asar at startup, a detached helper backs up the original and swaps it in after a normal exit, the patch is re-applied after each desktop update, and either item relaunches the app gracefully on the next launch. Windows desktop only; other hosts report 409 not_desktop.'
+  zh: '给 DSH 桌面端的 Windows 系统托盘菜单和账户菜单各加一项原生「重启 DeepSeek Harness」：插件启动时准备好补丁版 resources/app.asar，由一个分离的 helper 在正常退出后备份原文件并替换，桌面端每次更新覆盖后自动重打补丁，下次启动即可看到两个入口，点击走 app.relaunch() 优雅重启。仅支持 Windows 桌面端，其它宿主返回 409 not_desktop。'

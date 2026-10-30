@@ -1,5 +1,6 @@
 url: https://github.com/AhaCrazy/action-hub/tree/main/packages/dsh
 name: AhaCrazy/action-hub#dsh-action-hub
+tarball: https://github.com/AhaCrazy/action-hub/releases/latest/download/dsh-action-hub.tgz
 category: skill
 description:
   en: 'Action Hub for DSH: a standard Agent Skill library whose SKILL.md files can run as model-visible Skills or user-only Commands, with groups, project scopes, import/export and a native Alt+A palette.'

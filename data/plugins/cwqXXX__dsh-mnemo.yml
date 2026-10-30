@@ -1,0 +1,6 @@
+url: https://github.com/cwqXXX/dsh-mnemo
+name: cwqXXX/dsh-mnemo
+category: memory
+description:
+  en: 'Cross-session long-term memory for DeepSeek Harness: pinned rules injected every turn, the rest recalled by IDF-weighted keyword evidence, fact-key dedup, plain JSON storage, and a settings page to edit or delete entries.'
+  zh: '给 DeepSeek Harness 的跨会话长期记忆：规则和坑每轮注入，其余按 IDF 加权关键词召回；事实键去重、明文 JSON、设置页可增删改。'

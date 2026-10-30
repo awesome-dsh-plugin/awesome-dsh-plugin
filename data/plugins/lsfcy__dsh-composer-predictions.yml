@@ -1,0 +1,6 @@
+url: https://github.com/lsfcy/dsh-composer-predictions
+name: lsfcy/dsh-composer-predictions
+category: ui
+description:
+  en: Shows a dimmed suggestion of the user's next message in the empty composer after a settled turn; Tab accepts it into the draft and Escape or typing dismisses it.
+  zh: 在一轮对话结束后，用灰字在空的输入框里给出下一句建议；Tab 填入草稿，Esc 或打字忽略。
