@@ -1,0 +1,6 @@
+url: https://github.com/SteelUnion/dsh-wechat-queue
+name: SteelUnion/dsh-wechat-queue
+category: notify
+description:
+  en: 'WeChat (iLink) channel for DeepSeek Harness. Incoming messages are written to disk before handling, processed strictly one at a time, and the queue resumes where it stopped after a restart.'
+  zh: '把微信接入 DeepSeek Harness 的通道插件。消息先落盘再处理，严格串行，进程重启后接着跑。'
