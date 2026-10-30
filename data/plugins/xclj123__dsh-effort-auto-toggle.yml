@@ -1,0 +1,8 @@
+url: https://github.com/xclj123/dsh-effort-auto-toggle
+name: xclj123/dsh-effort-auto-toggle
+category: model
+description:
+  en: 'An Auto toggle next to the model selector that schedules reasoning_effort per request: complexity is scored by a MiniMax/OpenAI-compatible model with a zero-dependency heuristic fallback (fallbacks not cached), effort ladders adapt to each model real effort list (low/high/max, low/high/highx/max/ultra, ...), heavy tool calls upgrade the tier within the same session, the lit button and reply badges show the effort actually used, and every decision plus observed token usage lands in a JSONL ledger.'
+  zh: 输入栏模型选择器旁的「自动」按钮：按消息复杂度逐请求调度推理档位。档位表跟随各模型的真实分档（low/high/max 或 low/high/highx/max/ultra 等），MiniMax/OpenAI 兼容端点打分、失败回退零依赖启发式（回退结果不缓存）；同会话内出现重工具调用自动升档；点亮按钮与回复角标实时显示实际使用的档位；每次调度决策与实际 token 用量记入 JSONL 账本。
+icon: https://raw.githubusercontent.com/xclj123/dsh-effort-auto-toggle/main/docs/icon-180.png
+tarball: https://github.com/xclj123/dsh-effort-auto-toggle/releases/download/v0.2.0/dsh-effort-auto-toggle-0.2.0.tgz
