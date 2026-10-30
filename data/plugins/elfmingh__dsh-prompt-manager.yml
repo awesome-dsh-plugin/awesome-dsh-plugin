@@ -1,0 +1,7 @@
+url: https://github.com/elfmingh/dsh-prompt-manager
+name: elfmingh/dsh-prompt-manager
+category: identity
+icon: https://raw.githubusercontent.com/elfmingh/dsh-prompt-manager/main/assets/icon.png
+description:
+  en: 'Layered system-prompt profiles — global, per-workspace and per-session entries injected in order — where individual builtin sections and runtime contexts can be disabled or overridden, with a line-level diff of what an override changed; each entry carries a subagent scope that targets the main agent only, subagents only, or both; assembly snapshots record what each turn actually received, subagents included. Managed from a Web panel and a `prompt_manager` tool.'
+  zh: '分层提示词档案：全局、按工作区、按会话三级条目按序注入系统提示词；可单独禁用或覆盖内置段落与运行期 context，覆盖效果有逐行 diff 对照；每条条目可限定只注入主代理、只注入子代理，或两者都注入；装配快照记录每一轮实际收到的提示词，子代理也包括在内。由 Web 面板与 `prompt_manager` 工具管理。'
