@@ -1,0 +1,6 @@
+url: https://github.com/Macocin/dsh-gui-control
+name: Macocin/dsh-gui-control
+category: tools
+description:
+  en: 'Windows desktop control for DSH: screenshots, OCR, colour and grid sensing, mouse and keyboard input, and a Ctrl+Shift+C emergency stop that is checked before every action.'
+  zh: 'DSH 的 Windows 桌面操作插件：截图、OCR、找色与网格读屏、鼠标键盘输入，以及每次操作前都会检查的 Ctrl+Shift+C 急停。'
