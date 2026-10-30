@@ -1,0 +1,6 @@
+url: https://github.com/xzk-abao/dsh-notify-im
+name: xzk-abao/dsh-notify-im
+category: notify
+description:
+  en: 'Push DSH agent events (task completed, errors, pending approvals) to DingTalk, WeCom and Feishu webhooks.'
+  zh: '把 DSH 的任务完成、执行出错、等待审批三类事件推送到钉钉、企业微信、飞书群机器人。'
