@@ -1,6 +1,6 @@
-url: https://github.com/hunmer/dsh-team-control
-name: hunmer/dsh-team-control
+url: https://github.com/hunmer/dsh-team-control/tree/main/dsh-plugin
+name: hunmer/dsh-team-control#dsh-plugin
 category: workflow
 description:
-  en: "Agent-team orchestration sidecar: teams with a configurable member cap, real sub-agent members with per-member model routing, task DAGs that dispatch automatically when their dependencies finish, a broker that enforces fs/exec/net/env permissions, and a live web panel over SSE."
-  zh: "Agent 团队编排 sidecar：成员上限可配，成员是真实的 sub-agent 且可单独指定模型；任务按 DAG 依赖自动派发；fs/exec/net/env 四域权限由 broker 强制；运行过程通过 SSE 在 Web 面板实时查看。"
+  en: "Agent-team orchestration sidecar for DSH: teams with a configurable member cap, real sub-agent members with per-member model routing, task DAGs that dispatch automatically when their dependencies finish, a broker that enforces fs/exec/net/env permissions, and a live web panel over SSE."
+  zh: "DSH 的 Agent 团队编排 sidecar：成员上限可配，成员是真实的 sub-agent 且可单独指定模型；任务按 DAG 依赖自动派发；fs/exec/net/env 四域权限由 broker 强制；运行过程通过 SSE 在 Web 面板实时查看。"
