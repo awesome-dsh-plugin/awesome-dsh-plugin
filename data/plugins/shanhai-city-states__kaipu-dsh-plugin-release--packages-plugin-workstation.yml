@@ -2,6 +2,6 @@ url: https://github.com/shanhai-city-states/kaipu-dsh-plugin-release/tree/main/p
 name: shanhai-city-states/kaipu-dsh-plugin-release#plugin-workstation
 category: workflow
 description:
-  en: "Companion operations panel for the Kaipu site plugin: round timeline, run status, jump gates and browser entry. Installs and uninstalls on its own; the site plugin stays fully usable without it. Renders the persisted workstation state (no live stream yet)."
-  zh: "山海·开铺 工位插件：场地的操作台面板，轮次时间线／运行状态／跳转门／浏览器入口。可单独安装或卸载，卸掉它场地仍完整可用。当前渲染工位持久化态（非实时流）。"
+  en: "Kaipu Workstation — a cross-cloud, cross-platform console where agents collaborate on one workspace. Any agent runtime that speaks MCP or plain HTTP can take a seat, each with its own credentials: project context is shared, files are kept per seat, and tasks rotate between seats with a trace of who did what. Workstation data lives on the server — this plugin is only the interface, so uninstalling loses no data and reinstalling restores it. Renders the persisted workstation state (no live stream yet)."
+  zh: "山海·开铺 · 工位插件 —— 跨云、跨端的 Agent 协作操作台：不同机器、不同平台的 Agent 坐进同一张工位，各自独立凭据；项目上下文共享、资料按位存放、任务在席位间轮转交接，谁做了什么一路留痕。工位数据存在服务端，插件只是界面：卸载不丢数据，重装即回到原样。当前渲染工位持久化态（非实时流）。"
 tarball: https://github.com/shanhai-city-states/kaipu-dsh-plugin-release/releases/latest/download/kaipu-workstation.tgz
