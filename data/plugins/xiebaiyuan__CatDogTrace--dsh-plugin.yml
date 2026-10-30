@@ -1,5 +1,5 @@
-url: https://github.com/xiebaiyuan/DogCatTrace/tree/main/dsh-plugin
-name: xiebaiyuan/DogCatTrace#dsh-plugin
+url: https://github.com/xiebaiyuan/CatDogTrace/tree/main/dsh-plugin
+name: xiebaiyuan/CatDogTrace#dsh-plugin
 category: fun
 description:
   en: 'DogCatTrace attribution parody as a right-sidebar tab: draw three integer challenges, paste each model reply into one box at a time, read the 24-breed dog and cat ranking.'
