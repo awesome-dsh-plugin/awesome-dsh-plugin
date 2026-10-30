@@ -1,0 +1,6 @@
+url: https://github.com/liyown/dshx/tree/main/packages/plugin-marketplace
+name: liyown/dshx#plugin-marketplace
+category: market
+description:
+  en: 'Self-hosted plugin marketplace for DSH profiles: adds a Marketplace page under Settings and reads the Framework Hub installable catalog.'
+  zh: '面向 DSH Profile 的自托管插件市场：在设置里加入插件市场页，读取 Framework Hub 的可安装目录。'
