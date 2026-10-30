@@ -1,0 +1,7 @@
+url: https://github.com/HaoKuo/DSH-Paper-DeepRead
+name: HaoKuo/DSH-Paper-DeepRead
+category: docs
+description:
+  en: 'Bundles a deep-read paper library and the paper-deepread-html skill: a sidebar panel to browse interactive reading reports, upload PDFs into a managed library, deep-read them with an agent (or through an optional site auto-read worker), and manage or rebuild the library; ships the paper_deepread, paper_deepread_uploads and paper_deepread_reports model tools.'
+  zh: '把文献精读库与 paper-deepread-html 精读技能打包成 dsh 插件：侧边栏浏览交互式报告、上传 PDF 到托管书库、由 Agent 或可选接入的站点自动精读 worker 精读、管理或重建书库；提供 paper_deepread、paper_deepread_uploads、paper_deepread_reports 三个模型工具。'
+tarball: https://github.com/HaoKuo/DSH-Paper-DeepRead/releases/download/v1.5.2/dsh-paper-deepread-1.5.2.tgz
