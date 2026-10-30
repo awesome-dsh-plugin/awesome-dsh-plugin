@@ -1,0 +1,6 @@
+name: DSH Self Trigger
+url: https://github.com/erty3244/dsh-self-trigger
+category: tools
+description:
+  en: "Lets the agent inject one turn into a chosen session on its own when the host has been idle. Daily cap, active hours, weighted action lottery, per-activity budget, and a policy file re-read on every check. Disabled by default; sends no network requests."
+  zh: "宿主空闲时由 Agent 自己决定要不要往指定会话注入一轮：每日上限、活跃时段、按权重抽动作、单次预算，策略文件每次判定现读。默认关闭，不发任何网络请求。"

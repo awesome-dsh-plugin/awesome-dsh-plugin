@@ -1,0 +1,8 @@
+url: https://github.com/songni370/dsh-plugins-git-sync
+name: songni370/dsh-plugins-git-sync
+category: git
+tarball: https://github.com/songni370/dsh-plugins-git-sync/releases/latest/download/dsh-plugins-git-sync.tgz
+icon: https://raw.githubusercontent.com/songni370/dsh-plugins-git-sync/main/assets/icon.png
+description:
+  en: Back up, restore and two-way sync DSH plugins and configuration through your own Git repository, with conflict handling, snapshots and six agent tools.
+  zh: 用你自己的 Git 仓库备份、恢复并双向同步 DSH 插件与配置，支持冲突处理、快照与 6 个 Agent 工具。

@@ -1,0 +1,7 @@
+url: https://github.com/bilihave/dsh-whale-panel
+name: bilihave/dsh-whale-panel
+category: workflow
+icon: https://raw.githubusercontent.com/bilihave/dsh-whale-panel/main/assets/icon-180.png
+description:
+  en: 'Bilibili curation floating panel for DSH: learns your interests on a probability schedule and decays them by half-life, picks videos inside a token budget derived from a daily money cap, and mentions you only when a fit score passes a threshold. Comments are off by default; once enabled they run in draft-and-confirm or self-checked auto mode under a daily quota, with a hard no-comment rule for political, government and frontier-science topics, and comment text is scrubbed for account identifiers before it can be posted. It signs in through your own Bilibili account cookies; a separate posting account is recommended.'
+  zh: 'B站策展浮窗：按概率学习你的兴趣并按半衰期淡忘，把每日金额上限换算成 token 额度后挑片，契合度达标才 @ 你。评论默认关闭；开启后按「草稿待确认」或「自检后自动发」模式运作，有日上限，政治 / 政府 / 前沿科学三类话题一律不评价，正文发出前会脱敏账号痕迹。通过你自己的 B 站账号 Cookie 登录，建议单独准备一个发言号。'

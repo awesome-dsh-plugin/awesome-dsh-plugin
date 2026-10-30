@@ -1,0 +1,7 @@
+url: https://github.com/sunChargedd/dsh-plugins/tree/main/dsh-ssh-manage
+name: sunChargedd/dsh-plugins#dsh-ssh-manage
+category: remote
+description:
+  en: 'SSH host manager for DeepSeek Harness: browse ~/.ssh/config, store AES-256-GCM encrypted passwords, run batch commands and SFTP, and open interactive PTY terminals in persistent sidebar tabs.'
+  zh: 'DSH 的 SSH 主机管理插件：浏览 ~/.ssh/config，保存 AES-256-GCM 加密密码，执行批量命令与 SFTP，并在可保持的侧边栏标签页中打开交互式 PTY 终端。'
+icon: https://raw.githubusercontent.com/sunChargedd/dsh-plugins/main/dsh-ssh-manage/icon-180.png

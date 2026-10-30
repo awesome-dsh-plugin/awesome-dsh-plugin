@@ -1,0 +1,6 @@
+url: https://github.com/Mzgnk/dsh-bz
+name: Mzgnk/dsh-bz
+category: session
+description:
+  en: Three-scope rule injector for DeepSeek Harness that re-publishes the rules into long sessions, with a loop-breaker, dedupe by content fingerprint, per-session persistence, and a settings-panel editor.
+  zh: 三级规则注入器：长对话里反复重发规则，带熔断、内容指纹去重、会话持久化与设置面板编辑器。

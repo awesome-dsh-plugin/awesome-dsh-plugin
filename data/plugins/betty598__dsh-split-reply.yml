@@ -1,0 +1,6 @@
+url: https://github.com/betty598/dsh-split-reply
+name: betty598/dsh-split-reply
+category: session
+description:
+  en: "Splits a long QQ reply into separate messages sent a second apart, instead of one wall of text. Works only with the QQ channel streaming output turned off (im-qqbot streaming: false); with streaming on, replies bypass this plugin."
+  zh: "把 QQ 那边整段回复按标点拆成几句，隔一两秒一条条发出，而不是一次糊一大段。仅在 QQ 频道关闭流式输出（im-qqbot 设 streaming: false）时生效；流式开着时回复不经过本插件。"

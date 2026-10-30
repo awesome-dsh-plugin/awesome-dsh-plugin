@@ -1,0 +1,6 @@
+url: https://github.com/SOVLOOKUP/dsh-tunnel-preview
+name: SOVLOOKUP/dsh-tunnel-preview
+category: remote
+description:
+  en: 'Expose local listening ports as public HTTPS URLs via Cloudflare Tunnel, with automatic DNS management and one-click token template authorization.'
+  zh: '通过 Cloudflare Tunnel 将本地监听端口暴露为公网 HTTPS 预览链接，支持自动管理 DNS 记录与一键模板创建 API Token。'

@@ -1,0 +1,6 @@
+url: https://github.com/643048695/dsh-auto-retry
+name: 643048695/dsh-auto-retry
+category: model
+description:
+  en: "Retry failed model requests automatically: intercepts every request error and replays the same step after a 2s / 5s / 10s / 20s backoff ladder, so gateway blips and rate limits no longer end the turn."
+  zh: "模型请求失败自动重试：拦截每一次请求错误，按 2/5/10/20 秒的阶梯退避后重放同一个 step，中转站抖动与限流不再中断整轮对话。"

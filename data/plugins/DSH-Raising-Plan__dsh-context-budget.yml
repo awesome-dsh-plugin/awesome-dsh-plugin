@@ -1,0 +1,6 @@
+url: https://github.com/DSH-Raising-Plan/dsh-context-budget
+name: DSH-Raising-Plan/dsh-context-budget
+category: memory
+description:
+  en: 'Trim tools for long chats: trim_context / estimate_context_tokens keep the system persona and the last message, drop the oldest user/assistant pairs to fit a turn or token budget, and report before/after estimates; the conversation is not trimmed unless something calls the tools.'
+  zh: '长对话裁剪工具：trim_context / estimate_context_tokens 保留系统人设与最后一条消息，按轮丢弃最旧的用户/助手对话以压到轮数或 token 预算内，并回报裁剪前后的估算；不调用工具就不会自动裁剪。'

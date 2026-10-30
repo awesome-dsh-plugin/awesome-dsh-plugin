@@ -1,0 +1,9 @@
+# 提交到 awesome-dsh-plugin 的条目：data/plugins/yuna78__dsh-agent-tree.yml
+# 一个文件就是全部投稿，README 是生成物，不要手改。
+url: https://github.com/yuna78/dsh-agent-tree
+name: yuna78/dsh-agent-tree
+category: ui
+description:
+  en: "A tiny always-on floating tree of the DSH workspaces, conversations and subagents that are running, waiting on you or on a schedule — live running state, who is waiting for your call, per-row model, scheduled-run countdowns, and local claude/codex CLI processes with their codex subagent threads."
+  zh: "一张常驻角落的迷你 agent 树：按 workspace → 对话 → subagent 实时展示谁在跑，等你拍板的会话琥珀色置顶，行内显示模型与定时任务倒计时，并列出本机 claude/codex 进程及其子对话。"
+# icon: https://raw.githubusercontent.com/yuna78/dsh-agent-tree/main/docs/assets/screenshot.png

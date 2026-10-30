@@ -1,0 +1,6 @@
+url: https://github.com/songrui111/dsh-readprune
+name: songrui111/dsh-readprune
+category: usage
+description:
+  en: 'Saves tokens in DeepSeek Harness sessions by reading any file by line range or symbol mention instead of whole, and by bounding oversized tool results while keeping a recovery path. Pruning happens at the source, not after content reaches the context. Measured 43.9% fewer prompt tokens in a modelled 30-step session.'
+  zh: '为 DeepSeek Harness 会话节省 token：按行号或符号定位读取文件而不是整份读，并对过大的工具结果设上限且保留取回路径。修剪发生在源头，而不是内容进入上下文之后。在建模的 30 步会话上实测 prompt tokens 减少 43.9%。'

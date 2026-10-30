@@ -1,0 +1,6 @@
+url: https://github.com/baitouwuya/dsh-mcp-server
+name: baitouwuya/dsh-mcp-server
+category: tools
+description:
+  en: 'Publishes the running DSH host as a Model Context Protocol endpoint, so other harnesses such as Claude Code, Cursor, Codex or another DSH can start and continue sessions, read transcripts, wait on or cancel turns, and answer pending approvals; every call is attributed to its caller, and owner-scoped sessions keep callers apart.'
+  zh: '把正在运行的 DSH 宿主发布成 MCP 端点，让 Claude Code、Cursor、Codex、另一个 DSH 等 harness 可以创建与延续会话、读取对话记录、等待或取消回合、代答待决审批；每次调用都归因到发起方，会话按所有者隔离。'

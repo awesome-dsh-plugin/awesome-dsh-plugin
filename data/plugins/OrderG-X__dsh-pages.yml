@@ -1,0 +1,7 @@
+url: https://github.com/OrderG-X/dsh-pages
+name: OrderG-X/dsh-pages
+category: ui
+tarball: https://github.com/OrderG-X/dsh-pages/releases/latest/download/dsh-pages.tgz
+description:
+  en: "Lets the model turn an answer into a web page that lives right inside the chat. The show_page tool saves a page (comparisons, checklists, calculators, quizzes, charts) and it appears under the reply at its content height, interactive and following DSH's light/dark theme. The page's localStorage is stored in DSH per page, so what users tick or type survives reopening and new versions, and the same page open in the chat and the right sidebar stays in sync. Each edit is saved as a new version you can flip back to. After saving, the page is checked in a hidden local Chrome or Edge (script errors, horizontal overflow, dark mode not applied) and problems go back to the model. The right sidebar shows the page full-size with versions, a gallery of all pages and export to PNG, PDF or HTML. Pages run in a sandboxed, separate-origin frame with a strict CSP: no access to DSH data and no fetch, XHR or WebSocket. Works on phones with dsh-mobile."
+  zh: "让模型把回答做成一页网页，直接放在对话里。show_page 工具存一页（对比、清单、计算器、测验、图表），页面按内容高度嵌在回复下面，能点能用，深浅色跟着 DSH 走。页面里的 localStorage 按页面存在 DSH 里，勾过、填过的东西重开、改出新版本都还在；同一页同时开在对话里和右侧栏，两边实时同步。改一次存一版，旧版能翻。存好后在本机一个看不见的 Chrome / Edge 里体检（脚本报错、横向溢出、深色没跟上），问题交回模型改。右侧栏看整页、翻版本、看所有做过的页面，导出 PNG / PDF / HTML。页面跑在不同源的沙箱框里，CSP 很严：读不到 DSH 的数据，也不能联网取数据。配合 dsh-mobile 手机上也能用。"

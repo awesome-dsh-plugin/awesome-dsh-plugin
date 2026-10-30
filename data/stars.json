@@ -307,10 +307,6 @@
   "stars": 5,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/aerince/dsh-active-context-pruning": {
-  "stars": 1,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/aerince/dsh-models-dev-reasoning": {
   "stars": 2,
   "checkedAt": "2026-08-19"
@@ -4011,10 +4007,6 @@
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/says693/dsh-log-memory": {
-  "stars": 3,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/scd13150/dsh-cognition": {
   "stars": 0,
   "checkedAt": "2026-08-19"
@@ -5663,35 +5655,7 @@
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/zoahdev/dsh-github-intelligence": {
-  "stars": 6,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/zoahdev/dsh-github-release-radar": {
-  "stars": 2,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/zoahdev/dsh-pet-evolve": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/zoahdev/dsh-plugin-doctor": {
-  "stars": 4,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/zoahdev/dsh-poison-guard": {
-  "stars": 1,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/zoahdev/dsh-rule-evolve/tree/main/plugin": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/zoahdev/dsh-shelf": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/zoahdev/dsh-subscribe/tree/main/plugin": {
   "stars": 1,
   "checkedAt": "2026-08-19"
  },

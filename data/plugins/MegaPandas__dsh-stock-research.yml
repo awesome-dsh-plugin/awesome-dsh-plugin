@@ -1,0 +1,6 @@
+url: https://github.com/MegaPandas/dsh-stock-research
+name: MegaPandas/dsh-stock-research
+category: tools
+description:
+  en: Provides snapshot-based research and question answering for individual A-share and US stocks.
+  zh: 基于数据快照提供 A 股与美股的单股研究和问答。

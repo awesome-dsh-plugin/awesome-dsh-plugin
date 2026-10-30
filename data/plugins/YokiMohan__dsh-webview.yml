@@ -1,0 +1,18 @@
+url: https://github.com/YokiMohan/dsh-webview
+name: YokiMohan/dsh-webview
+category: browser
+description:
+  en: >-
+    Opens chat.deepseek.com inside DSH Desktop from a conversation view tab (next to Chat / Trajectory /
+    Context, scoped to the open conversation) and from a left-rail globe button — all entries share one
+    embedded page, so switching between them never reloads it. Keeps you signed in across restarts by
+    replaying a localStorage plus readable-cookie snapshot before the page's own scripts run, strips only
+    the Electron/<version> token from the user agent, and keeps navigation inside deepseek.com while
+    sending everything else to the system browser. Pure client code: no host-side script, no file access,
+    no credential service, no server route.
+  zh: >-
+    在 DSH 桌面端里打开 chat.deepseek.com：入口有两个——会话视图标签栏里的「网页端」（与「对话｜轨迹｜上下文」并列，
+    随当前会话走），以及左上角面板列的地球图标；两者共用同一个内嵌页面，切换入口不会重新加载。登录态可跨重启保留
+    （在页面自身脚本执行前回放 localStorage 与页面可读 cookie 的快照），UA 只剥离 Electron/<版本> 标记，
+    导航限制在 deepseek.com 内、其余链接交给系统浏览器。纯客户端实现：没有宿主侧脚本、不读文件、不走凭据服务、不开服务器路由。
+tarball: https://github.com/YokiMohan/dsh-webview/releases/latest/download/dsh-webview.tgz

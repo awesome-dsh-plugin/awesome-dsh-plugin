@@ -1,0 +1,6 @@
+url: https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-model-picker
+name: kialajin-l/DSH_Plus#dsh-model-picker
+category: model
+description:
+  en: "Codex-style model selector for the composer listing every provider/model in the profile, with four reasoning-effort levels and per-session persistence; disabling of the native selector ships inside the package."
+  zh: "输入框内的 Codex 风格模型选择器：列出 profile 全部 provider/model，四档推理力度，选择按会话记忆；原生选择器的禁用补丁随包内置。"

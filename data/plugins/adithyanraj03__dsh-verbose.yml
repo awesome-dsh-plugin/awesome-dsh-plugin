@@ -1,0 +1,8 @@
+url: https://github.com/adithyanraj03/dsh-verbose
+name: adithyanraj03/dsh-verbose
+category: ui
+tarball: https://github.com/adithyanraj03/dsh-verbose/releases/latest/download/plugin.tgz
+icon: https://raw.githubusercontent.com/adithyanraj03/dsh-verbose/main/assets/icon.png
+description:
+  en: "A session-header 3-dots menu: download the session log, switch each chat's transcript between Normal and Verbose, and define what Verbose expands (thinking blocks, tool calls, terminal output)."
+  zh: "会话标题栏的三点菜单：可下载会话日志，把每个会话的转录在普通与详细视图间切换，并自定义详细视图展开哪些内容（思考块、工具调用、终端输出）。"
