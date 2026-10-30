@@ -1,0 +1,7 @@
+url: https://github.com/solstice621/dsh-plugin-projectless
+name: solstice621/dsh-plugin-projectless
+category: session
+description:
+  en: "Starts chats without selecting a project folder, with a persistent per-chat working directory and native Harness session storage."
+  zh: "无需选择项目文件夹即可开始对话，为每次聊天分配持久工作目录，并沿用 Harness 原生会话存储。"
+tarball: https://github.com/solstice621/dsh-plugin-projectless/releases/download/v0.2.4/dsh-plugin-projectless-0.2.4.tgz
