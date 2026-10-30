@@ -187,9 +187,9 @@ Once a re-review finds your changes good, the label is retired and the PR re-ent
 
 ### Icon / 图标（optional / 可选）
 
-A storefront tile: one GitHub-hosted raster image (`png`, `jpg`, `jpeg`, `webp`), declared as `icon:` in your entry. It is drawn at ~96px, so a square image reads best. Omit it and storefronts fall back to the owner's GitHub avatar. SVG and third-party image hosts are refused — the listing does not make visitors fetch images from hosts it cannot vouch for.
+A storefront tile: one GitHub-hosted raster image (`png`, `jpg`, `jpeg`, `webp`), declared as `icon:` in your entry. It is drawn at ~96px, so a square image reads best. Omit it and storefronts fall back to the owner's GitHub avatar. SVG and third-party image hosts are refused — the listing does not make visitors fetch images from hosts it cannot vouch for. The same image is carried into the [published market index](https://awesome-dsh-plugin.com/index.json) as the plugin's `icon`, which is what DSH's Plugins → Discover cards and the `plugin_market` tool render.
 
-市场卡片图标：在条目里用 `icon:` 声明一张 **GitHub 托管的位图**（`png`/`jpg`/`jpeg`/`webp`）。卡片约 96px 显示，方形图最清楚；不写则回退到作者头像。SVG 与第三方图床会被拒绝——列表不会让访客去不可担保的图床取图。
+市场卡片图标：在条目里用 `icon:` 声明一张 **GitHub 托管的位图**（`png`/`jpg`/`jpeg`/`webp`）。卡片约 96px 显示，方形图最清楚；不写则回退到作者头像。SVG 与第三方图床会被拒绝——列表不会让访客去不可担保的图床取图。同一张图也会写进[发布的市场索引](https://awesome-dsh-plugin.com/index.json)作为插件 `icon`，DSH「插件 → 发现」卡片和 `plugin_market` 工具显示的就是它。
 
 ### Screenshots / 截图（optional, recommended / 可选，推荐）
 
