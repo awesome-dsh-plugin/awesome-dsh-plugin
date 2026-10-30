@@ -1,0 +1,6 @@
+url: https://github.com/xiebaiyuan/DogCatTrace/tree/main/dsh-plugin
+name: xiebaiyuan/DogCatTrace#dsh-plugin
+category: fun
+description:
+  en: 'DogCatTrace attribution parody as a right-sidebar tab: draw three integer challenges, paste each model reply into one box at a time, read the 24-breed dog and cat ranking.'
+  zh: '猫狗品种归因的侧栏插件：出三道整数挑战，逐段贴回模型回复，看 24 个品种的降序榜。'
