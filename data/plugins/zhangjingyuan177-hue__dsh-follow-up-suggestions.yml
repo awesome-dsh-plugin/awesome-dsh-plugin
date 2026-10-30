@@ -1,0 +1,7 @@
+url: https://github.com/zhangjingyuan177-hue/dsh-follow-up-suggestions
+name: zhangjingyuan177-hue/dsh-follow-up-suggestions
+category: session
+tarball: https://github.com/zhangjingyuan177-hue/dsh-follow-up-suggestions/releases/latest/download/dsh-follow-up-suggestions.tgz
+description:
+  zh: "每次 AI 回答后自动生成 3 条可点击追问（后续问题建议），点击即填入输入框并发送，降低输入成本、引导连续对话。宿主端通过 sessionQuery 读取会话上下文并调用 LLM 生成追问，经 Typert Remote 暴露给浏览器端，浏览器端注入 conversation.chat.turnTail 槽位渲染；追问条数、模型、温度、上下文窗口均可配置。"
+  en: "Offers 3 clickable follow-up question suggestions after every answer; clicking one fills the composer and sends it, lowering input cost and guiding continuous conversation. The host reads session context via sessionQuery and generates suggestions with the LLM, exposes them to the browser through a Typert Remote, and the browser renders them in the conversation.chat.turnTail slot. Count, model, temperature and context window are configurable."
