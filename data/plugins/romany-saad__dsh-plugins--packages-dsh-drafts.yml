@@ -1,0 +1,7 @@
+url: https://github.com/romany-saad/dsh-plugins/tree/main/packages/dsh-drafts
+name: romany-saad/dsh-plugins#dsh-drafts
+category: ui
+description:
+  en: 'Get back what you typed and walked away from: a new Web conversation you leave before sending never appears in the sidebar, so its draft is out of reach. This plugin lists those drafts above the composer of the next new conversation, newest first, with their workspace and time; Open takes you back with the text and chips in place, and Discard drops one, with Undo.'
+  zh: '找回打了字却没发送就离开的内容：未发送就离开的新 Web 对话不会出现在侧栏，里面的草稿也就找不到了。本插件在下一个新对话的输入框上方按时间倒序列出这些草稿，并显示所属工作区与时间；「打开」带你回到原对话，文字和引用条原样还在；「丢弃」可撤销地删除草稿。'
+icon: https://raw.githubusercontent.com/romany-saad/dsh-plugins/main/packages/dsh-drafts/docs/icon.png
