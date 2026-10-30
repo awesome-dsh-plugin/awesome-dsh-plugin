@@ -1,0 +1,6 @@
+url: https://github.com/caimc21069065-prog/dsh-persistent-board-plugin/tree/main/plugins/dsh-board
+name: caimc21069065-prog/dsh-persistent-board-plugin#plugins/dsh-board
+category: workflow
+description:
+  en: 'Persistent project kanban — tickets live as YAML-frontmatter Markdown files under .dsh-board/ and are managed through nine board_* MCP tools, the /board command family, session handovers, and a local read-only dashboard with SSE auto-refresh, so task state survives context compaction and new sessions.'
+  zh: 持久化项目看板：任务以 YAML frontmatter 的 Markdown 文件存放在 .dsh-board/ 目录，通过 9 个 board_* MCP 工具、/board 命令族、会话交接与本地只读看板（SSE 自动刷新）管理，任务状态在上下文压缩与新会话后依然保留。
