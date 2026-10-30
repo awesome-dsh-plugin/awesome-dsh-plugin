@@ -1,0 +1,6 @@
+url: https://github.com/LIHUALAO/dsh-workbuddy-switcher-plus
+name: LIHUALAO/dsh-workbuddy-switcher-plus
+category: model
+description:
+  en: "WorkBuddy account pool for DSH: switch accounts without reopening the client, pick the next one by remaining credits, disable an account permanently, and fail over automatically when the upstream restricts one. Fork of ddGuo/dsh-workbuddy-switcher (MIT) that also fixes a bug where international-build accounts never rotated."
+  zh: "在 DeepSeek Harness 里管理一组 WorkBuddy 账号：切换无需重开客户端，按剩余积分择优选号，可将账号永久移出轮换，账号被上游限制时自动改投其他账号。基于 ddGuo/dsh-workbuddy-switcher（MIT）修改，并修复了国际版账号从不参与轮换的缺陷。"
