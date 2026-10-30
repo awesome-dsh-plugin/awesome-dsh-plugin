@@ -1,0 +1,6 @@
+url: https://github.com/314857493/dsh-scoped-http-proxy
+name: 314857493/dsh-scoped-http-proxy
+category: dev
+description:
+  en: 'Opt-in HTTP proxy service for DSH plugins, with native address and port settings. Exposes scopedHttpProxy for explicit callers, applies address changes to subsequent requests, and leaves system proxies, environment variables and global network dispatchers unchanged.'
+  zh: '供 DSH 插件显式调用的独立 HTTP 代理服务，提供原生地址和端口设置。通过 scopedHttpProxy 服务接入，地址修改对后续请求生效，不修改系统代理、环境变量或全局网络连接器。'
