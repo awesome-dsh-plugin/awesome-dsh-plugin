@@ -1,0 +1,6 @@
+url: https://github.com/MonSp/dsh-analyze
+name: MonSp/dsh-analyze
+category: tools
+description:
+  en: 'Local dataset analysis tools for DSH: ingest CSV/JSONL once, then head, schema, stats_describe, transform_agg, list, export, and rm against a session-scoped store under .dsh-analyze/ with a sandboxed dsh-analyze CLI.'
+  zh: 'DSH 本地数据分析工具：CSV/JSONL 入库一次后，用 head、schema、stats_describe、transform_agg、list、export、rm 在会话隔离的 .dsh-analyze/ 存储上分析；配套路径沙箱 CLI。'
