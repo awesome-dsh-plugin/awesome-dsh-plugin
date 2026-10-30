@@ -1,0 +1,6 @@
+url: https://github.com/KB1SLN-Labs/dsh-linear
+name: KB1SLN-Labs/dsh-linear
+category: tools
+tarball: https://github.com/KB1SLN-Labs/dsh-linear/releases/download/v0.1.0/kb1slnlabs-dsh-linear.tgz
+description:
+  en: 'Linear tools for DeepSeek Harness with GraphQL issue workflows and a dynamically discovered hosted MCP bridge.'
