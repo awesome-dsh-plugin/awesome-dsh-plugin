@@ -1,0 +1,6 @@
+url: https://github.com/betty598/dsh-split-reply
+name: betty598/dsh-split-reply
+category: session
+description:
+  en: Splits a long QQ reply into separate messages sent a second apart, instead of one wall of text.
+  zh: 把 QQ 那边整段回复按标点拆成几句，隔一两秒一条条发出，而不是一次糊一大段。
