@@ -1,0 +1,6 @@
+url: https://github.com/marsma-101/dsh-tag-memory
+name: marsma-101/dsh-tag-memory
+category: memory
+description:
+  en: "Tag-based agent memory for DSH: an append-only CSV with four dimensions (type, depth, stability, distance), injected every turn as a dictionary plus a tiered memory snapshot (pinned in full, other projects as one-line index). Tools: memory_write, memory_recall (recap mode asks the user when a memory is missing), memory_supersede (append-only supersede), memory_review, memory_archive. Lazy decay with per-depth half-lives, promotion by independent projects, pre-execute isolation guard, write-ahead snapshots, automatic header migration for old libraries. 448 selftests."
+  zh: "DSH 的标签记忆插件：一张只追加的 CSV 记忆库（类型/深度/稳定性/距离四维），每轮自动注入标签字典与分层记忆快照（常驻全文、他项目仅一行索引）。工具齐全：memory_write / memory_recall（含复盘三段式，查不到先问用户）/ memory_supersede（追加式取代）/ memory_review（缺口立卡+四清单盘点）/ memory_archive（四判据复校）。惰性衰减按深度分半衰期、独立项目晋升、隔离守卫、写前快照、老库表头自动迁移。448 条自检。"
