@@ -1,0 +1,6 @@
+url: https://github.com/fj7937290-sys/dsh-video-eyes
+name: fj7937290-sys/dsh-video-eyes
+category: vision
+description:
+  en: 'Read a video with a text-only model: sample frames at a 0.1-10 second interval into contact sheets where every frame carries its real timecode, extract the audio track into a timestamped transcript, and describe each sheet with an image-capable model in the host, so the plugin works on its own without any other vision plugin. A composer slider sets the sampling interval, and pure audio files are transcribed without frame sampling.'
+  zh: '让纯文本模型看懂视频：按 0.1–10 秒的可调间隔抽帧拼成总览图，每格烧录该帧的真实时间码；提取音轨转写成带时间戳的台词；并自行调用宿主里的视觉模型逐页描述画面，因此不依赖任何其他视觉插件。输入框上方有抽帧间隔滑块，纯音频文件则跳过抽帧只做转写。'
