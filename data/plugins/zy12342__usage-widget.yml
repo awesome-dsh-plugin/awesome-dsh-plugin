@@ -5,3 +5,6 @@ description:
   en: 'Sidebar account-balance quick view for DeepSeek Harness: balance, bonus credit, current model and the official peak/off-peak pricing period, with ruby/amber/jade/gold tiers and a low-balance warning.'
   zh: 'DSH 侧边栏账户余额快捷查看：显示余额、赠送额度、当前模型和官方高峰 / 空闲计费时段，按余额分四档显示质感，余额过低时提醒。'
 icon: https://raw.githubusercontent.com/zy12342/usage-widget/main/assets/icon-round-512.png
+screenshots:
+  - https://raw.githubusercontent.com/zy12342/usage-widget/main/assets/screenshots/badge.png
+  - https://raw.githubusercontent.com/zy12342/usage-widget/main/assets/screenshots/card.png
