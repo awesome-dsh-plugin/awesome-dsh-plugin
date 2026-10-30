@@ -1,0 +1,6 @@
+url: https://github.com/arnen7000/dsh-workbuddy-model
+name: arnen7000/dsh-workbuddy-model
+category: model
+description:
+  en: Adds the models available in a signed-in WorkBuddy desktop app to DeepSeek Harness as a model provider, with the CN and international apps as separate groups.
+  zh: 把已登录的 WorkBuddy 桌面 App 中的模型接入 DeepSeek Harness，国内版与国际版各自成组。
