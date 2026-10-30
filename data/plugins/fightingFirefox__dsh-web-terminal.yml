@@ -1,0 +1,7 @@
+url: https://github.com/fightingFirefox/dsh-web-terminal
+name: fightingFirefox/dsh-web-terminal
+category: ui
+description:
+  en: 'Claude-styled terminal panel for the DSH web GUI: agent shell commands run in a persistent real PTY with a genuine prompt, echo and exit codes, auto-open in the right sidebar and are scoped per conversation; optional live_terminal_* tools for reading, searching and screenshotting.'
+  zh: 'DSH 网页版的 Claude 风格终端面板：agent 的 shell 命令跑在常驻真终端里（真提示符、真回显、真退出码），右侧栏自动弹出并按会话隔离；可选 live_terminal_* 工具用于读取、搜索与截屏。'
+icon: https://raw.githubusercontent.com/fightingFirefox/dsh-web-terminal/main/docs/icon-180.png
