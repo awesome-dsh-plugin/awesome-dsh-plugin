@@ -2,6 +2,6 @@ url: https://github.com/wei238982377/dsh-docdesk
 name: wei238982377/dsh-docdesk
 category: docs
 description:
-  en: An add-only Markdown library for DeepSeek Harness with a workspace file picker, bounded free-form icons, virtual folders, full-screen tabbed reading and a sidebar toggle.
-  zh: 只收主动加入的 Markdown 文档，支持从工作区挑选文件、固定桌面框内自由摆放、虚拟文件夹、全屏标签页阅读和侧栏收起手柄。
+  en: An add-only Markdown library for DeepSeek Harness with a workspace file picker, a fixed non-overlapping icon grid, virtual folders, full-screen tabbed reading and a sidebar toggle.
+  zh: 只收主动加入的 Markdown 文档，支持从工作区挑选文件、固定网格内对齐摆放（不重叠）、虚拟文件夹、全屏标签页阅读和侧栏收起手柄。
 icon: https://raw.githubusercontent.com/wei238982377/dsh-docdesk/main/docs/icon.png
