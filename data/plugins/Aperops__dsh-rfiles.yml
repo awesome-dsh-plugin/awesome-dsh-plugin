@@ -5,9 +5,4 @@ description:
   en: Adds chunked uploads with progress and resume, and native downloads of workspace files and the session log ZIP, to the DSH Web GUI, including sessions reached through a paired remote link.
   zh: 为 DSH Web GUI 增加带进度与续传的分块上传，以及工作区文件与会话日志 ZIP 的原生下载；通过配对远程链接访问的会话同样可用。
 icon: https://raw.githubusercontent.com/Aperops/dsh-rfiles/main/assets/icon.png
-# PLACEHOLDER: replace before opening the PR. Valid tarball URLs are https .tgz
-# assets on GitHub release hosting. Preferred shape (version-free asset name):
-#   https://github.com/Aperops/dsh-rfiles/releases/latest/download/dsh-rfiles.tgz
-# Pinned-tag form also works, and then a versioned filename is fine:
-#   https://github.com/Aperops/dsh-rfiles/releases/download/v0.1.0/dsh-rfiles-0.1.0.tgz
-tarball: <RELEASE_TARBALL_URL>
+tarball: https://github.com/Aperops/dsh-rfiles/releases/download/v0.1.0/dsh-rfiles-0.1.0.tgz
