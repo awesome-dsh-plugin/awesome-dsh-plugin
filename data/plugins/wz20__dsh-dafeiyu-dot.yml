@@ -1,0 +1,7 @@
+url: https://github.com/wz20/dsh-dafeiyu-dot
+name: wz20/dsh-dafeiyu-dot
+category: fun
+description:
+  en: "A whale companion with configurable roles, emotional speech through local TTS, persistent file-based memory, QQ messaging, and half-duplex voice calls."
+  zh: "提供角色配置、本地情绪语音、文件持久记忆、QQ 消息与半双工语音通话的鲸鱼娘陪伴插件。"
+icon: https://raw.githubusercontent.com/wz20/dsh-dafeiyu-dot/main/assets/icon.png
