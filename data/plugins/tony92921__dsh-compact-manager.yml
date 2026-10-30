@@ -1,0 +1,6 @@
+url: https://github.com/tony92921/dsh-compact-manager
+name: tony92921/dsh-compact-manager
+category: session
+description:
+  en: "Take over context compaction on both the manual and the automatic path, each runnable by a compaction model (falling back to a second model, or used directly) or by a mechanical fold that builds the summary card locally with no model call; the fold goes through the same official compaction transaction, so the replaced events stay in the append-only session log under their sequence numbers."
+  zh: "接管上下文压缩：手动与自动压缩都可选用模型压缩（支持备用模型兜底或直接使用备用模型），或选用机械折页——在本地把旧历史整理成摘要卡，不调用模型、不消耗 token；折页走官方压缩事务，被替换的原始事件仍以原序号留在只追加的会话日志里。"
