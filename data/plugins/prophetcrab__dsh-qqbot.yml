@@ -1,0 +1,7 @@
+url: https://github.com/prophetcrab/dsh-qqbot
+name: prophetcrab/dsh-qqbot
+category: identity
+description:
+  en: 'QQ bot control center for DeepSeek Harness: one-click NapCat/Koishi setup, live message monitor, group access control, and AI chat with persona cards and per-user long-term memory.'
+  zh: 'DeepSeek Harness 的 QQ 机器人控制中心：一键安装配置 NapCat/Koishi、实时消息监控、群权限管理，以及带人设卡与按 QQ 号长期记忆的 AI 聊天。'
+tarball: https://github.com/prophetcrab/dsh-qqbot/releases/latest/download/dsh-qqbot.tgz
