@@ -1,0 +1,6 @@
+url: https://github.com/yunfengnobug/dsh-qq-bot
+name: yunfengnobug/dsh-qq-bot
+category: notify
+description:
+  en: DSH plugin (fork of sj244/dsh-qq-bridge, MIT) that connects DSH sessions to QQ through OneBot/NapCat. Whitelist stays closed until filled in; @-mentions, nicknames and pokes always wake the model; other messages wake at a configurable probability. Cordis id remains qq-bridge.
+  zh: 把 DSH 会话接到 QQ（OneBot/NapCat）的插件（fork 自 sj244/dsh-qq-bridge，MIT）。白名单默认全关；被 @、叫到昵称或被戳一定叫醒，其余消息按可调概率抽样。Cordis 插件 id 仍是 qq-bridge。
