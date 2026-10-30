@@ -1,0 +1,6 @@
+url: https://github.com/AsakuraAOI/dsh-sidebrowser
+name: AsakuraAOI/dsh-sidebrowser
+category: browser
+description:
+  en: Read and operate the current DSH Desktop sidebar browser with structured snapshots, native input, screenshots, and post-action observations.
+  zh: 读取并操作当前 DSH Desktop 侧边栏浏览器，提供结构化快照、原生输入、截图与操作后观察。
