@@ -1,7 +1,7 @@
 url: https://github.com/wwwyyyc/dsh-ssh-agent-workspace
 name: dsh-ssh-agent-workspace
 category: remote
-tarball: https://github.com/wwwyyyc/dsh-ssh-agent-workspace/releases/download/v1.1.0/dsh-ssh-agent-workspace-1.1.0.tgz
+tarball: https://github.com/wwwyyyc/dsh-ssh-agent-workspace/releases/download/v1.1.1/dsh-ssh-agent-workspace-1.1.1.tgz
 description:
   en: Live remote SSH workspaces with a resident Python RPC agent, remote shell/glob/grep execution, SSH port forwarding, ~/.ssh/config import, ProxyJump, and conflict-safe three-way cache sync.
   zh: 基于常驻 Python RPC 代理的实时远程 SSH 工作区插件，支持远程执行命令与 Glob/Grep 搜索、SSH 端口转发、~/.ssh/config 一键导入、跳板机链及三方缓存同步。
