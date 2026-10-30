@@ -1,0 +1,6 @@
+url: https://github.com/leeingo136-blip/dsh-plugin-cfl/tree/main/packages/dsh-plugin-llama-local
+name: leeingo136-blip/dsh-plugin-cfl#dsh-plugin-llama-local
+category: model
+description:
+  en: 'Local GGUF models for DeepSeek Harness: runs llama.cpp in-process via node-llama-cpp with prebuilt binaries for macOS, Windows and Linux (backend auto-selected at runtime), no other application needed. Tool calling on xLAM models works through alias injection and output parsing. Requires the account-hub plugin for its settings card.'
+  zh: '本地 GGUF 模型插件：node-llama-cpp 在进程内运行 llama.cpp，预编译二进制覆盖 macOS/Windows/Linux（运行时自动选择后端），无需安装其他应用；xLAM 模型经别名注入与输出解析实现工具调用。设置卡片依赖 account-hub 插件。'
