@@ -1,0 +1,8 @@
+url: https://github.com/ridistant8-art/dsh-cookie-meter
+name: ridistant8-art/dsh-cookie-meter
+category: ui
+tarball: https://github.com/ridistant8-art/dsh-cookie-meter/releases/download/v0.1.0/dsh-cookie-meter-0.1.0.tgz
+icon: https://raw.githubusercontent.com/ridistant8-art/dsh-cookie-meter/main/assets/icon-180.png
+description:
+  zh: "DSH 桌面版 cookie 占用百分表：浮窗按 dsh-auth cookie 条数估算其占请求头的百分比，超过一半数字变红提醒，点一次即可安排在下一次启动时清空 cookie 库，避免启动约 72 次后被 431 挡住。"
+  en: "Floating percentage meter for the DSH desktop cookie jar. It estimates how much of the request-header budget the dsh-auth cookies occupy, turns red past half, and clears the jar on the next launch with one click, avoiding the lockout that hits after roughly 72 launches."
