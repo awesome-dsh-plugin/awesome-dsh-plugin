@@ -1,0 +1,7 @@
+url: https://github.com/wxfiveopps1102/pixel-usage-desk
+name: wxfiveopps1102/pixel-usage-desk
+category: usage
+description:
+  en: Retro pixel CRT overlay for DSH showing the DeepSeek account balance and live token usage.
+  zh: 复古像素 CRT 的 DSH 浮层，实时显示 DeepSeek 账户余额与 Token 用量。
+icon: https://raw.githubusercontent.com/wxfiveopps1102/pixel-usage-desk/main/assets/icon-180.png
