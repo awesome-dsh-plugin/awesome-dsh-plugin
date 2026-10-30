@@ -1,0 +1,6 @@
+url: https://github.com/Akashyc/dsh-moss-image
+name: Akashyc/dsh-moss-image
+category: tools
+description:
+  en: Moss text-to-image inside DSH — describe the picture in chat and get it back.
+  zh: DSH 的 Moss 文生图插件——在对话里说一句要画什么，就出一张图。
