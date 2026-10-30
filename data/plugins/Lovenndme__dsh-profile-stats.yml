@@ -1,0 +1,6 @@
+url: https://github.com/Lovenndme/dsh-profile-stats
+name: Lovenndme/dsh-profile-stats
+category: usage
+description:
+  en: 'Personal usage profile page in the DSH sidebar: cumulative tokens with an input / output / cache-hit split, peak day, longest task time, activity streaks, a 12-month token-activity heatmap whose cells show the day, the usage, the exact count and the request count on hover, and a per-provider billing breakdown for today or all time. Everything is folded from this machine''s own session logs through ctx.sessionQuery — no network calls, no telemetry, no credentials. It also documents why gateway consoles over-report tokens: their "total" adds cache hits on top of input, which already contains them.'
+  zh: 'DSH 侧栏的个人用量主页：累计 Token（输入/输出/缓存命中拆分）、单日峰值、最长任务用时、连续活跃天数、近 12 个月 Token 活动热力图（悬浮显示日期、当天用量、精确数字与请求数），以及按供应商的今日/累计账单拆分。全部由本机会话日志经 ctx.sessionQuery 折叠而来，不联网、不上报、不碰凭据；并说明网关面板为什么会把 token 算多——它的「总 Token」在已含缓存的「输入」之上又加了一次缓存命中。'
