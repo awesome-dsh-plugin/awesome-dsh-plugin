@@ -1,0 +1,6 @@
+url: https://github.com/terry2010/dsh-loop-recover
+name: terry2010/dsh-loop-recover
+category: session
+description:
+  en: 'Loop guard for DeepSeek Harness: detects and stops repeated output mid-stream, prunes and compacts context, then automatically resumes the task without a restart.'
+  zh: '模型死循环防护：自动检测并拦截重复输出，停止循环后恢复任务继续执行，无需重启或手动拉起；支持配置故障中断策略与救援参数。'
