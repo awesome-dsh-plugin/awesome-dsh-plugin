@@ -1,0 +1,6 @@
+url: https://github.com/Ln1m/dsh-input-suite/tree/main/dsh-skill-sets
+name: Ln1m/dsh-input-suite#dsh-skill-sets
+category: skill
+description:
+  en: 'Groups skills into task-type sets; switching a set swaps which skills are injected into the session.'
+  zh: '技能档：按任务类型给技能分档，切档即换本会话注入的技能清单。'

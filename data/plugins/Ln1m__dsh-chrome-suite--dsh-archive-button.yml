@@ -1,0 +1,6 @@
+url: https://github.com/Ln1m/dsh-chrome-suite/tree/main/dsh-archive-button
+name: Ln1m/dsh-chrome-suite#dsh-archive-button
+category: session
+description:
+  en: 'Two-click archive button that zips sessions idle for more than three days and deletes the originals after byte verification.'
+  zh: '两击确认归档：把空闲超过 3 天的会话压成逐字节校验的 zip 并删除原目录。'

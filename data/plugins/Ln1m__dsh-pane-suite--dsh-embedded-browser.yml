@@ -1,0 +1,6 @@
+url: https://github.com/Ln1m/dsh-pane-suite/tree/main/dsh-embedded-browser
+name: Ln1m/dsh-pane-suite#dsh-embedded-browser
+category: browser
+description:
+  en: 'Embedded browser in the right column whose picture is a native WebView2 child control, with a panel-drawn toolbar.'
+  zh: '右栏内嵌浏览器：画面是桌面外壳里的 WebView2 原生子控件，工具条由面板自绘。'
