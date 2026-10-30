@@ -1,0 +1,7 @@
+url: https://github.com/abbaababa/dsh-workplan
+name: abbaababa/dsh-workplan
+category: workflow
+tarball: https://github.com/abbaababa/dsh-workplan/releases/download/v1.5.0/dsh-workplan-1.5.0.tgz
+description:
+  en: 'Durable task-decomposition plans for DeepSeek Harness: the model submits a staged plan with acceptance criteria, every work item then runs on a real department subagent, and the progress panel draws the subtasks that are done, running or blocked as a ring, a stacked bar and per-stage steps instead of a single line of text.'
+  zh: '为 DeepSeek Harness 提供持久化的任务分解计划：先给出带验收标准的分阶段计划，每项工作交给真实的部门子 Agent 执行；进度面板用环形图、四段构成条与逐阶段步进条画出已完成、进行中与卡住的子任务，不再只有一行文字。'

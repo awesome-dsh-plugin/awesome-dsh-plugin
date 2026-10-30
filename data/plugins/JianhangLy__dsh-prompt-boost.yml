@@ -2,5 +2,5 @@ url: https://github.com/JianhangLy/dsh-prompt-boost
 name: JianhangLy/dsh-prompt-boost
 category: ui
 description:
-  en: 'Prompt enhancement for the DSH Web GUI composer: a sparkle button next to the send action rewrites the current draft into a structured prompt through the harness model, streaming the result into an inline preview (original vs enhanced), then fills it back with one click, keeps an undo bar, and offers a settings page for model route, temperature, length limits, system prompt, context awareness, undo-bar behavior and shortcuts.'
-  zh: DSH Web GUI 输入框旁的提示词增强插件：点 ✨ 把当前草稿交给宿主模型重写成结构化提示词，结果流式显示在原文/增强的对比预览里，一键回填并保留撤销条，设置页可调模型路由、温度、长度上限、系统提示词、上下文感知、撤销条行为与快捷键。
+  en: 'Prompt enhancement for the DSH Web GUI composer: pick a style before generating (logic-only, structured, or concise), or supply or clear a custom system prompt in settings; a sparkle button rewrites the current draft through the harness model, streams the result into an inline preview (original vs enhanced) with a live thinking timer, fills it back with one click, keeps an undo bar, and offers settings for model route, temperature, length limits, context awareness, undo-bar behavior and shortcuts.'
+  zh: 'DSH Web GUI 输入框旁的提示词增强插件：生成前可选仅优化逻辑、结构化重写或精简压缩，也可在设置页自定义或清空系统提示词；点 ✨ 把当前草稿交给宿主模型重写，结果流式显示在原文/增强的对比预览里并显示思考计时，一键回填并保留撤销条，设置页可调模型路由、温度、长度上限、上下文感知、撤销条行为与快捷键。'

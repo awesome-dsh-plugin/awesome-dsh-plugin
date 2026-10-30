@@ -1,0 +1,6 @@
+url: https://github.com/songrui111/dsh-token-frugal
+name: songrui111/dsh-token-frugal
+category: usage
+description:
+  en: 'Cuts what a long session pays for context: reads only the requested lines, keeps a prose head plus a heading digest for oversized pages, and keeps both ends of large shell output. Measured 91-99% fewer tokens on files, pages and command output.'
+  zh: '降低长会话的上下文开销：只读取指定行，对过大的网页保留正文头部与章节摘要，对过长的 shell 输出保留首尾两端。在文件、网页和命令输出上实测节省 91–99% 的 token。'

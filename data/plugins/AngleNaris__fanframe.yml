@@ -1,0 +1,7 @@
+url: https://github.com/AngleNaris/fanframe
+name: AngleNaris/fanframe
+category: ui
+description:
+  en: 'FanFrame refines DeepSeek Harness with sharp corners, readable chat, restrained motion, sidebar layout and plugin-list tools.'
+  zh: '繁界为 DeepSeek Harness 整理直角界面、聊天富文本、折叠与浮层动效、侧栏布局及插件列表工具。'
+icon: https://raw.githubusercontent.com/AngleNaris/fanframe/main/assets/icon-256.png

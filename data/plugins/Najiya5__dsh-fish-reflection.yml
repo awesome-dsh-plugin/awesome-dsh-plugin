@@ -1,0 +1,6 @@
+url: https://github.com/Najiya5/dsh-fish-reflection
+name: Najiya5/dsh-fish-reflection
+category: identity
+description:
+  en: 'A reflection layer for DSH sessions that slowly rewrites a 3-7 entry worldview across value, preference and habit layers, tracks spirit, health and account balance, ingests Bilibili/Douyin videos, and keeps an auditable growth archive. Video intake is optional and needs site cookies; Douyin parsing also needs Edge/Chrome and yt-dlp.'
+  zh: '给 DSH 主会话的人格反思层：每日把对话与视频素材沉淀成 3–7 条分层原则，跟踪精神、健康与账户余额，并保留可审计的成长档案；视频摄入为可选项，需站点 Cookie，抖音解析另需 Edge/Chrome 与 yt-dlp。'

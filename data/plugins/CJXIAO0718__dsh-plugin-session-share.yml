@@ -1,0 +1,6 @@
+url: https://github.com/CJXIAO0718/dsh-plugin-session-share
+name: CJXIAO0718/dsh-plugin-session-share
+category: session
+description:
+  en: Export any DeepSeek Harness session as a single self-contained HTML page that opens offline, with per-message picking, collapsed tool calls and default redaction of local paths and credentials.
+  zh: 把任意 DSH 会话导出为单文件、离线可打开的 HTML 分享页：可按单条消息挑选、工具调用折叠，并默认脱敏本机路径与密钥。

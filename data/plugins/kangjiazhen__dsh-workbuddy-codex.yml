@@ -1,6 +1,0 @@
-url: https://github.com/kangjiazhen/dsh-workbuddy-codex
-name: kangjiazhen/dsh-workbuddy-codex
-category: model
-description:
-  en: 'Registers the workbuddy model provider by mounting dsh-llm-workbuddy, supervises the local wb2api gateway, and runs a bundled Responses-to-chat-completions bridge so Codex CLI can use the same gateway. Skips work that is already running or already registered, and reports each part through a status tool. Requires a local wb2api gateway and a WorkBuddy account.'
-  zh: '通过挂载 dsh-llm-workbuddy 注册 workbuddy 模型 provider，托管本地 wb2api 网关，并内置 Responses 到 chat/completions 的转换桥，让 Codex CLI 也能用同一个网关。已在运行或已注册的部分会跳过，并通过状态工具汇报各环节状况。需本机有 wb2api 网关并有 WorkBuddy 账号。'

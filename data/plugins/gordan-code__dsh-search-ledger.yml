@@ -2,5 +2,5 @@ url: https://github.com/gordan-code/dsh-search-ledger
 name: gordan-code/dsh-search-ledger
 category: usage
 description:
-  en: Routes DSH web search and fetch through configured providers and records per-attempt usage and estimated costs. Requires Node.js >=22.19 and DSH 0.2.1-rc.2.
-  zh: 按已配置渠道路由 DSH 网页搜索与抓取，并记录每次尝试的用量和估算费用。需 Node.js >=22.19 与 DSH 0.2.1-rc.2。
+  en: Routes web search and fetch, records estimated costs, and provides local budgets, circuit breakers, and diagnostics. Requires Node.js >=22.19 and DSH 0.2.1-rc.2 or 0.2.1-rc.3.
+  zh: 路由网页搜索和抓取，记录估算费用，并提供本地预算、渠道熔断和诊断功能。需 Node.js >=22.19 与 DSH 0.2.1-rc.2 或 0.2.1-rc.3。

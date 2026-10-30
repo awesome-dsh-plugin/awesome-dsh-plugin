@@ -1,0 +1,7 @@
+url: https://github.com/xuedipiaofei/dsh-session-title-dated
+name: xuedipiaofei/dsh-session-title-dated
+category: session
+description:
+  en: "Names every new DSH session DATE | CATEGORY | NAME from the session model, with a deterministic local fallback."
+  zh: "用「日期 | 分类 | 名称」自动命名 DSH 新会话，模型不可用时本地降级。"
+icon: https://raw.githubusercontent.com/xuedipiaofei/dsh-session-title-dated/main/assets/icon-180.png
