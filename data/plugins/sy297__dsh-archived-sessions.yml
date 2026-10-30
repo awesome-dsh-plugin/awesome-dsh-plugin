@@ -1,0 +1,7 @@
+url: https://github.com/sy297/dsh-archived-sessions
+name: sy297/dsh-archived-sessions
+category: session
+description:
+  en: Archived conversations page in Settings with search and one-click restore to the original workspace.
+  zh: 设置中的已归档会话页面，支持搜索并一键恢复到原工作区。
+tarball: https://github.com/sy297/dsh-archived-sessions/releases/download/v1.0.0/dsh-archived-sessions-1.0.0.tgz
