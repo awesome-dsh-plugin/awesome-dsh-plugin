@@ -1,0 +1,6 @@
+url: https://github.com/caimc21069065-prog/dsh-shared-session
+name: caimc21069065-prog/dsh-shared-session
+category: session
+description:
+  en: "Share a live ZCode session over an invite link: the host's model and tools do all the work while guests watch prompts, replies, thinking and tool calls in real time, queue prompts that are injected as [GuestName]: text, and have write/shell/network requests gated by host approval (timeout denies). Ships a zero-dependency self-hostable relay and a browser viewer."
+  zh: "通过邀请链接共享实时 ZCode 会话——模型与工具全部在主机执行,客人实时旁观 prompt、回复、思考与工具调用,并以 [GuestName]: text 前缀注入 prompt;客人触发的写文件、shell 与网络请求需主机审批(超时视为拒绝)。附带零依赖可自建 relay 与浏览器观看页。"
