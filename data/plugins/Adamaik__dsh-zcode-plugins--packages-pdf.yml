@@ -1,0 +1,6 @@
+url: https://github.com/Adamaik/dsh-zcode-plugins/tree/main/packages/pdf
+name: Adamaik/dsh-zcode-plugins#pdf
+category: docs
+description:
+  en: PDF production skill for reports, creative visuals, LaTeX and existing-PDF processing, with bundled LibreOffice conversion.
+  zh: 用于报告、创意视觉、LaTeX 排版与既有 PDF 处理的 PDF 生产技能，内置 LibreOffice 转换。
