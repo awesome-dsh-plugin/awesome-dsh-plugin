@@ -2,6 +2,6 @@ url: https://github.com/lemonxiny55/dsh-kurowhale-pet
 name: lemonxiny55/dsh-kurowhale-pet
 category: fun
 description:
-  en: An unofficial Windows desktop pet that responds to DSH Agent activity; the plugin alone does not show the pet — download the official Neutralino 6.9.0 x64 runtime separately and set rendererEnabled, assetDirectory and runtimePath in %USERPROFILE%\.dsh\kurowhale-pet\local.json.
-  zh: 响应 DSH Agent 状态的非官方 Windows 桌宠；只装插件还看不到它——需另行下载官方 Neutralino 6.9.0 x64 运行时，并在 %USERPROFILE%\.dsh\kurowhale-pet\local.json 里配置 rendererEnabled、assetDirectory 与 runtimePath。
+  en: An unofficial Windows desktop pet. GitHub v0.1.2 discovers or verifies required assets and runtime automatically; npm v0.1.1 still needs manual setup. See the project README for availability and installation results.
+  zh: 非官方 Windows 桌宠。GitHub v0.1.2 自动发现或校验获取素材及运行时；npm v0.1.1 仍需手动配置。发行状态与安装验收见项目 README。
 icon: https://raw.githubusercontent.com/lemonxiny55/dsh-kurowhale-pet/main/docs/images/kurowhale-preview.png
