@@ -1,0 +1,7 @@
+url: https://github.com/Lukeknow0/dsh-privacy-shield
+name: Lukeknow0/dsh-privacy-shield
+category: security
+description:
+  en: 'Local HMAC-SHA256 secret & PII masking, streaming cross-chunk unmasking, and native visual security dashboard for DeepSeek Harness.'
+  zh: '基于本机 HMAC-SHA256 的密钥与多国隐私信息脱敏、流式跨 Chunk 无痕还原及原生可视化安全大盘。'
+icon: https://raw.githubusercontent.com/Lukeknow0/dsh-privacy-shield/main/assets/dashboard-preview.png
