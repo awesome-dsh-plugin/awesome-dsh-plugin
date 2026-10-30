@@ -1,0 +1,7 @@
+url: https://github.com/ph1996-cn/dsh-BMAD-Method
+name: ph1996-cn/dsh-BMAD-Method
+category: workflow
+description:
+  en: 'Runs BMAD-Method from dsh: installs and updates its seven modules with the bundled BMAD installer, ships the method''s 90 agent and workflow skills, and turns any module off by writing the disabled flag into the profile patch.'
+  zh: 在 dsh 里运行 BMAD-Method：用插件自带的 BMAD 安装器装齐并更新七个模块，随包提供 90 个 agent 与工作流 skill，模块开关通过写 profile 补丁里的 disabled 标记生效。
+icon: https://raw.githubusercontent.com/ph1996-cn/dsh-BMAD-Method/main/assets/icon-360.png
