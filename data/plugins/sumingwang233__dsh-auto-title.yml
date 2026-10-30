@@ -1,0 +1,6 @@
+url: https://github.com/sumingwang233/dsh-auto-title
+name: sumingwang233/dsh-auto-title
+category: session
+description:
+  en: 'Automatic session titles for DSH: names a session from its first prompt plus the first assistant reply ("project｜task") instead of truncating the prompt. Replaces the built-in session-title provider through a bundle patch, adds an "AI rename" entry to the session row menu with a preview dialog, and a settings page for the provider/model, the naming rules and a diagnostic event log. 49 unit tests.'
+  zh: '给 DSH 会话自动起名：首轮问答结束后用「项目｜具体任务」命名，而不是把提问截断。通过 bundle patch 顶替内置标题 provider，在会话行「…」菜单里加「AI 重命名」（先预览再应用），设置页可改 provider/model、命名规则并查看诊断日志。49 个单元测试。'
