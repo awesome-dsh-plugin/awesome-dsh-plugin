@@ -1,0 +1,6 @@
+url: https://github.com/KDreamelf/dsh-phoenix
+name: KDreamelf/dsh-phoenix
+category: dev
+description:
+  en: 'In-process crash guard: takes over the fatal-error handlers that would exit DSH, names the responsible plugin from the stack, and disables only that row in the home patch layer, leaving the profile and the provider config inside it untouched. The crash page offers retry, keep-disabled or uninstall, and opens a temporary safe-mode session when no culprit can be named (CLI and web launches only).'
+  zh: '进程内崩溃兜底：接管本该让 DSH 退出的致命错误处理器，从栈里认出是哪个插件，只在 home 层停用那一行——profile 与里面的供应商配置一个字节都不写。崩溃页给出恢复、保持禁用、卸载三个选择；认不出是谁时，开一个临时的安全模式会话（仅命令行与 web 启动）。'
