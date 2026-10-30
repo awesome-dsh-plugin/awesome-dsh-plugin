@@ -1,0 +1,6 @@
+url: https://github.com/Fourteenth-Night/dsh-aoci
+name: Fourteenth-Night/dsh-aoci
+category: tools
+description:
+  en: Governed, Git-versioned codebase and database cognition for coding agents; the /aoci command binds the nine AOCI MCP tools on demand and maintains the index incrementally.
+  zh: 为编码智能体提供受治理、Git 版本化的代码库与数据库认知；/aoci 命令按需接入 AOCI 九个 MCP 工具并增量维护索引。
