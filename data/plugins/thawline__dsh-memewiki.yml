@@ -1,0 +1,6 @@
+url: https://github.com/thawline/dsh-memewiki
+name: thawline/dsh-memewiki
+category: memory
+description:
+  en: 'Offline meme and slang dictionary: 6,668 built-in entries are looked up before a turn and injected only when a message looks like a meme question, with a search tool and a settings page for adding, editing and deleting entries.'
+  zh: '离线梗/黑话词典：内置 6668 条词条，只在消息像在问梗时才提前查好注入上下文，另带查询工具与可增删改词条的设置页。'
