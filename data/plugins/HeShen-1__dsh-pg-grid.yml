@@ -1,0 +1,7 @@
+url: https://github.com/HeShen-1/dsh-pg-grid
+name: HeShen-1/dsh-pg-grid
+category: tools
+tarball: https://github.com/HeShen-1/dsh-pg-grid/releases/download/v0.1.0/dsh-pg-grid-0.1.0.tgz
+description:
+  en: 'Read-only local PostgreSQL workbench for DSH Web with visual filters, sorting, same-database joins, computed columns, grouping, pivots and saved analysis views.'
+  zh: 'DSH Web 本机 PostgreSQL 只读工作区，支持可视化筛选、排序、同库关联、计算列、分组、透视和保存分析视图。'
