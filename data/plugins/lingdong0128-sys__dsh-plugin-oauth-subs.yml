@@ -1,0 +1,6 @@
+url: https://github.com/lingdong0128-sys/dsh-plugin-oauth-subs
+name: lingdong0128-sys/dsh-plugin-oauth-subs
+category: model
+description:
+  en: "Preservation backup of xxww0098/dsh-plugin-oauth-subs v0.0.110 (original repo offline, package not on npm). Wires ChatGPT Codex, Grok, GLM, Kiro, Antigravity, Cursor, Copilot, Kimi, Claude, Devin, Cline and Ollama Cloud subscriptions into DeepSeek Harness via a loopback proxy, with quota tracking and account import; OpenCode Go API keys route directly."
+  zh: "xxww0098/dsh-plugin-oauth-subs v0.0.110 的存档备份（原仓库已下线，npm 无此包）。通过本机回环代理把 ChatGPT Codex、Grok、GLM、Kiro、Antigravity、Cursor、Copilot、Kimi、Claude、Devin、Cline、Ollama Cloud 订阅接入 DeepSeek Harness，含额度跟踪与账号导入；OpenCode Go API Key 直连不走代理。"
