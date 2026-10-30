@@ -1,0 +1,6 @@
+url: https://github.com/pythoner1984/dsh-plugin-openai-quota
+name: pythoner1984/dsh-plugin-openai-quota
+category: usage
+description:
+  en: One-line notice at the top edge of the DSH window with your DeepSeek balance, the ChatGPT/Codex five-hour and weekly remaining quota and their reset times, and how many quota-reset cards are left plus the nearest expiry; the reset-card part links to the ChatGPT usage page in your browser.
+  zh: 在 DSH 窗口顶部边缘用一行提示显示 DeepSeek 余额、ChatGPT/Codex 五小时与每周剩余额度及其重置时间、剩余额度重置卡数量与最近到期时间；重置卡那一段是链接，会用浏览器打开 ChatGPT 使用情况页。
