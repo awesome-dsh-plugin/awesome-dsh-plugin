@@ -1,0 +1,6 @@
+url: https://github.com/alamsir/dsh-iab
+name: alamsir/dsh-iab
+category: browser
+description:
+  en: 'In-app browser for DSH: a dedicated Chromium rooted at a persistent profile so a Feishu or SSO login survives restarts, driven over CDP, exposing seven agent tools (status, open, eval, read, feishu, screenshot, tabs) and mirroring the page live in a right-sidebar panel that tool calls open by themselves. Also converts Feishu documents to Markdown by sweeping their virtual scroll.'
+  zh: 'DSH 内置浏览器：独立 Chromium 配合持久化 profile，飞书或 SSO 登录一次跨重启有效，经 CDP 驱动，提供七个 Agent 工具（status、open、eval、read、feishu、screenshot、tabs），并把页面实时镜像到右侧栏面板——工具调用时面板会自动打开。另可按虚拟滚动回扫把飞书文档转成 Markdown。'
