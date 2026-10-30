@@ -1,0 +1,11 @@
+url: https://github.com/JiahaoXxX/dsh-model-pool
+name: JiahaoXxX/dsh-model-pool
+category: model
+tarball: https://github.com/JiahaoXxX/dsh-model-pool/releases/latest/download/dsh-model-pool.tgz
+description:
+  en: >-
+    Declarative provider/model fallback chains for the model picker: an ordered
+    root chain plus named pools, failure-code triggered switching, per-model
+    cooldowns, time-slot presets, and subagent role routing.
+  zh: >-
+    模型选择器用的可配置降级链：有序主链加命名池，按失败码自动切换，支持按模型冷却、分时段预设与子代理角色路由。
