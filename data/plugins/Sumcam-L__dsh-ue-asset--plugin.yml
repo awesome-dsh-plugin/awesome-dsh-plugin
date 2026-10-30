@@ -1,0 +1,8 @@
+url: https://github.com/Sumcam-L/dsh-ue-asset/tree/main/plugin
+name: Sumcam-L/dsh-ue-asset#plugin
+category: dev
+description:
+  en: Browse, preview and export Unreal Engine 4/5 cooked assets from local PAK archives.
+  zh: 浏览、预览并导出本地 PAK 归档中的 UE4/5 烘焙资产。
+icon: https://raw.githubusercontent.com/Sumcam-L/dsh-ue-asset/main/assets/icon-180.png
+tarball: https://github.com/Sumcam-L/dsh-ue-asset/releases/latest/download/dsh-ue-asset.tgz
