@@ -1,0 +1,6 @@
+url: https://github.com/xuhairui-dzz/dsh-shengtu
+name: dsh-shengtu
+category: vision
+description:
+  en: "Multi-engine image generation inside the conversation: an agent tool plus a composer-dock panel with an on/off switch, engine presets (Volcengine Ark, SiliconFlow, OpenAI-compatible, custom) and local spend tracking."
+  zh: 会话内多引擎生图：agent 工具 + 输入框下方的停靠面板，带启用开关、引擎预设（火山方舟 / 硅基流动 / OpenAI 兼容 / 自定义）和本地消耗统计。
