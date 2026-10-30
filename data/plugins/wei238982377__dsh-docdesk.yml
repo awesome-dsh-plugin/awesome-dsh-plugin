@@ -1,0 +1,7 @@
+url: https://github.com/wei238982377/dsh-docdesk
+name: wei238982377/dsh-docdesk
+category: docs
+description:
+  en: A desktop-style panel for Markdown files created in DeepSeek Harness, with free icon placement, virtual folders, renaming, search and read-only preview.
+  zh: 把 DSH 生成的 Markdown 文档收进桌面式资料区，支持图标自由拖放、虚拟文件夹归类、重命名、搜索与只读预览。
+icon: https://raw.githubusercontent.com/wei238982377/dsh-docdesk/main/docs/icon.png
