@@ -1,0 +1,7 @@
+url: https://github.com/OldQin-Aurora001/dsh-breeze-tts
+name: OldQin-Aurora001/dsh-breeze-tts
+category: voice
+description:
+  en: 'DSH Breeze — local TTS for DeepSeek Harness: reads replies aloud and manages voice cloning, with an optional cross-machine mode.'
+  zh: DSH Breeze 本地语音插件：自动朗读回复、管理音色克隆，支持跨机部署。
+icon: https://raw.githubusercontent.com/OldQin-Aurora001/dsh-breeze-tts/main/icon.png
