@@ -1,0 +1,9 @@
+# 提交到 awesome-dsh-plugin 的条目文件
+# 放到 fork 里的路径：data/plugins/<owner>__dsh-effort-slider-universal.yml
+url: https://github.com/AkiNoYo-desu/dsh-effort-slider-universal
+name: AkiNoYo-desu/dsh-effort-slider-universal
+category: ui
+description:
+  en: 'Reasoning-effort slider in the model menu for DeepSeek Harness that also appears for providers and models with no declared effort metadata.'
+  zh: '在 DSH 模型菜单里提供推理等级滑条，未声明推理档位的 provider 与模型同样出现。'
+icon: https://raw.githubusercontent.com/AkiNoYo-desu/dsh-effort-slider-universal/main/assets/icon-180.png
