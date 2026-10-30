@@ -1,0 +1,6 @@
+url: https://github.com/zengxiangpeng123/dsh-our-free-model-balance-zxp
+name: zengxiangpeng123/dsh-our-free-model-balance-zxp
+category: usage
+description:
+  zh: "在 DSH 输入框旁显示 Our Free Model（OFM）当前渠道的剩余额度，点开可看全部已登录渠道；余额用尽时红底标注，切换模型会跟着切渠道。需先安装 dsh-our-free-model 并登录至少一个渠道。"
+  en: "Shows the remaining quota of the current Our Free Model (OFM) channel beside the DSH composer, with a panel listing every signed-in channel; exhausted channels are flagged and switching models switches the channel shown. Requires dsh-our-free-model with at least one channel signed in."
