@@ -1,0 +1,6 @@
+url: https://github.com/zdkcomeon/dsh-mcp-link
+name: zdkcomeon/dsh-mcp-link
+category: tools
+description:
+  en: "DeepSeek Harness plugin that scans the MCP configuration of 13 other clients, including Cursor, Claude Code, Codex CLI, Gemini CLI and VS Code, links the selected servers into the current DSH profile, and adds connection testing plus in-place reconnect for existing mcp-client entries."
+  zh: "DeepSeek Harness 插件：扫描 Cursor、Claude Code、Codex CLI、Gemini CLI、VS Code 等 13 种客户端的 MCP 配置，把选中的服务接入当前 DSH profile，并提供连接测试与已接入条目的原地重连。"
