@@ -1,0 +1,6 @@
+url: https://github.com/STofone/dsh-agent-roster
+name: STofone/dsh-agent-roster
+category: workflow
+description:
+  en: Defines multi-agent team rosters as YAML or JSON files, validates them, bridges each member into dsh-agent-teams member arguments, and verifies the result against the running team.
+  zh: 用 YAML/JSON 定义多智能体团队档案，校验后把成员桥接成 dsh-agent-teams 的建员参数，并对照运行中的团队核对结果。
