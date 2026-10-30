@@ -1,0 +1,6 @@
+url: https://github.com/OugeX/dsh-web-dev-mode
+name: OugeX/dsh-web-dev-mode
+category: workflow
+description:
+  en: A web development preset with 23 companion skills that asks five clarifying questions before writing code, delivers in three verifiable rounds, and encodes conventions from stack choice to deployment ops. Includes a searchable design-rule library (30 UX rules, 24 page layouts, 15 palettes) and covers admin panels, marketing sites, and mobile front-ends.
+  zh: Web 开发模式：写代码前先问五个澄清问题、分三轮可验证交付，内置 23个工程技能（表设计、后端分层、鉴权、前端架构、测试、部署、动效、i18n 等），并带一套可检索的设计规则库（30 条 UX 规则 / 24 种页面布局 / 15 套配色），覆盖后台管理、PC 官网与移动端前台。
