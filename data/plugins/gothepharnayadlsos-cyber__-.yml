@@ -3,4 +3,4 @@ name: gothepharnayadlsos-cyber/-
 category: workflow
 description:
   en: 'Logic-risk review before rewriting: audit the source, decide each fix, generate several drafts in parallel, and export with a per-draft audit report.'
-  zh: '鏀瑰啓鍓嶅厛鍋氶€昏緫浣撴锛氬鍘熸枃椋庨櫓銆侀€愭潯瑁佸喅锛屽啀骞惰鍑哄绋匡紝姣忕闄勫叚缁村鏍告姤鍛娿€?
+  zh: '改写前先做逻辑体检：审原文风险、逐条裁决，再并行出多稿，每稿附六维审核报告。'
