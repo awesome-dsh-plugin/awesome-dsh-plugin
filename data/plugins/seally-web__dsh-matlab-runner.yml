@@ -1,0 +1,6 @@
+url: https://github.com/seally-web/dsh-matlab-runner
+name: seally-web/dsh-matlab-runner
+category: dev
+description:
+  en: 'MATLAB in the sidebar: a VS Code-like .m editor backed by a persistent MATLAB session (12-84 ms per run, figures really open on the desktop), live workspace variables you can edit, .mlx preview, extra folder mounts, and an agent-facing matlab_run tool.'
+  zh: '侧栏里的 MATLAB IDE：类 VS Code 的 .m 编辑器，背后是常驻 MATLAB 会话（单次运行 12-84 毫秒，figure 真的会弹窗），可查看并编辑的实时工作区变量、.mlx 预览、多文件夹挂载，以及给 agent 用的 matlab_run 工具。'
