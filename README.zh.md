@@ -482,6 +482,7 @@ dsh plugin --profile web add dshmarket
 - [DreamLoomStudio/dsh-primitive-pulse](https://github.com/DreamLoomStudio/dsh-primitive-pulse) — 悬浮面板：把当前这段回答点亮了哪些 HowNet 语义基元实时画出来——脑形节点网络、脑电样式的多导联曲线、构成指纹卡。
 - [dreammaker2016/dsh-file-menu](https://github.com/dreammaker2016/dsh-file-menu) — 为 DSH Web 界面补上右键菜单：文字与输入框可复制/剪切/粘贴/全选，文件引用与链接可复制路径、在文件管理器中定位、用默认应用打开。
 - [drliuhuan/dsh-plugin-zoom](https://github.com/drliuhuan/dsh-plugin-zoom) — 在高 DPI 显示器上手动缩放 Harness Web UI（75%–200%）：设置行、Ctrl+滚轮与会话标题栏控件三种入口，让文字更清晰易读。
+- [drowsylazy/dsh-thinking-effort-rheostat](https://github.com/drowsylazy/dsh-thinking-effort-rheostat) — 借鉴 Claude Desktop 的思考强度滑块，在输入框中通过点击、拖拽或键盘调整模型推理档位。
 - [drscrewdriver/dsh-arrowkey-nav](https://github.com/drscrewdriver/dsh-arrowkey-nav) — DSH Web GUI 的方向键导航：上/下在当前工作区内切换会话，左/右切换工作区；会话身份来自客户端控制器而非 DOM；输入框存在草稿时把方向键交还给光标。
 - [drscrewdriver/dsh-brief-sidebar](https://github.com/drscrewdriver/dsh-brief-sidebar) — dsh-better-sidebar 扩展：把会话简报渲染成右侧栏「概要」tab——来自 `todos` 投影的进展看板，加上回合内产物列表——并在挂载期间遮蔽 composer 上方的官方 todo 面板。
 - [drscrewdriver/dsh-canvas-tsx-sidebar](https://github.com/drscrewdriver/dsh-canvas-tsx-sidebar) — dsh-better-sidebar 扩展：把 Qoder Canvas `*.canvas.tsx` 静态解析为结构化页面渲染在右侧栏（不执行源码，无 eval / bundler / 沙箱 iframe），并附带 `.tsx` 文件查看器接管与一个教 LLM 写该格式的 Skill。
