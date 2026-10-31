@@ -1,0 +1,7 @@
+url: https://github.com/zhaochengggg/dsh-a2ui-studio
+name: zhaochengggg/dsh-a2ui-studio
+category: ui
+tarball: https://github.com/zhaochengggg/dsh-a2ui-studio/releases/download/v0.3.2/dsh-control-studio-0.3.2.tgz
+description:
+  en: A2UI-inspired agent-authored application cards with a persistent machine directory, SSH probes, and reviewed monitoring and control actions. SSH probes require OpenSSH (ssh, ssh-keyscan, ssh-keygen).
+  zh: 受 A2UI 启发的模型生成应用卡片，提供持久机器目录、SSH 探测及经审阅授权的监控与控制操作。SSH 探测需 OpenSSH（ssh、ssh-keyscan、ssh-keygen）。

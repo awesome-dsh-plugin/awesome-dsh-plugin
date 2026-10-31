@@ -1,0 +1,6 @@
+url: https://github.com/EagleClark/dsh-genshin-account
+name: EagleClark/dsh-genshin-account
+category: fun
+description:
+  en: 'Reads one Genshin Impact account (characters, talents, weapons, artifacts, wish history) into a single snapshot, then exposes it as six agent tools and a six-tab panel. Artifact substats come from the public in-game character showcase; scoring ships both CV and per-character weight models with six grade tiers; wish analysis covers pity, luck tiers and per-pool progress. Needs a Miyoushe QR login to read characters, weapons and wish history; showcase data is public by UID.'
+  zh: '把原神账号读成一份快照（角色、天赋、武器、圣遗物、祈愿记录），对外给 6 个 agent 工具和一个六页签面板。圣遗物副词条取自游戏内公开的角色展柜；评分同时给 CV 与逐角色权重两套模型，各六档评级；抽卡分析包含保底、欧非分档与各池进度。读取角色、武器与祈愿需要米游社扫码登录；展柜数据按 UID 公开。'

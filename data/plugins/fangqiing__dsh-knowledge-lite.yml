@@ -1,0 +1,6 @@
+url: https://github.com/fangqiing/dsh-knowledge-lite
+name: fangqiing/dsh-knowledge-lite
+category: memory
+description:
+  en: 'Local knowledge base for DSH: one Markdown file per note, with tags, hierarchical folders, full-text search, attachment opening via the system default app, zero-dependency Office text extraction, and citation into the conversation. Built for host DSH 0.2.0-rc.2; on Windows the default root is E:/dsh-kb.'
+  zh: '本地知识库：每篇笔记一个 Markdown 文件，支持标签、层级目录、全文检索、附件用系统默认程序打开、Office 零依赖文本抽取，以及引用到对话。面向宿主 DSH 0.2.0-rc.2；Windows 下默认根目录为 E:/dsh-kb。'

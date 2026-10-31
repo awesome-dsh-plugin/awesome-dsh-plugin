@@ -1,0 +1,7 @@
+url: https://github.com/VioletEverGarden-zc/dsh-rea-mcp-toggle
+name: VioletEverGarden-zc/dsh-rea-mcp-toggle
+category: tools
+description:
+  en: 'Toggles the rea-mcp server on and off from the DSH Web UI session header or through the rea_mcp_toggle agent tool, so the 170 mcp__rea__* tool schemas stop being sent with every request while REA is off (the tools payload drops from about 722 KB to about 95 KB) and the REA child process exits; the choice is kept in a profile-scoped state file and restored at startup by a row-level disabled expression.'
+  zh: '在 DSH Web UI 会话标题栏或通过 rea_mcp_toggle 工具开关 rea-mcp 服务器：不用逆向时，170 个 mcp__rea__* 工具 schema 不再随每次请求发送（tools payload 由约 722 KB 降到约 95 KB），REA 子进程同时退出；选择存入 profile 级状态文件，重启后由行级 disabled 表达式恢复。'
+tarball: https://github.com/VioletEverGarden-zc/dsh-rea-mcp-toggle/releases/latest/download/dsh-rea-mcp-toggle.tgz

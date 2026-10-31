@@ -43,9 +43,13 @@ const catalogUrl = args.get('catalog-url')
 const catalogDir = args.get('catalog-dir')
 const tolerance = Number(args.get('tolerance') ?? 300)
 
-// A plugin page link, as both sites render it: href="/p/<slug>/". Anchored to
-// the exact path so a locale-prefixed link or an asset URL cannot inflate it.
-const PAGE_LINK = /href="\/p\/[^"#?]*"/g
+// Plugin pages are counted from sitemap.xml, not from the homepage's links.
+// The homepage is windowed (it renders a fixed slice of entries and loads the
+// rest on scroll), so counting href="/p/<slug>/" there measures the window,
+// not the site: on 2026-10-19 it reported 48 pages against a 5,945-entry
+// catalog and failed every day from at least 2026-10-10. The sitemap lists
+// every page in both locales, which is what this check actually wants.
+const PAGE_LOC = /<loc>([^<]+)<\/loc>/g
 
 function fail(lines) {
   console.error(`\nFAIL — site health check could not confirm the site is current.\n${lines}\n`)
@@ -70,8 +74,20 @@ async function fetchText(url, attempts = 3) {
   throw new Error(`${url} — ${last.message}`)
 }
 
-function countLivePages(html) {
-  return new Set(html.match(PAGE_LINK) ?? []).size
+function countLivePages(xml) {
+  const slugs = new Set()
+  for (const m of xml.matchAll(PAGE_LOC)) {
+    let pathname
+    try {
+      pathname = new URL(m[1]).pathname
+    } catch {
+      continue
+    }
+    if (pathname.startsWith('/zh/')) continue
+    const page = /^\/p\/(.+?)\/?$/.exec(pathname)
+    if (page) slugs.add(page[1])
+  }
+  return slugs.size
 }
 
 function countCatalog(dir) {
@@ -114,10 +130,10 @@ try {
 
 let actual
 try {
-  actual = countLivePages(await fetchText(live))
+  actual = countLivePages(await fetchText(new URL('/sitemap.xml', live).href))
 } catch (err) {
   fail(
-    `  what:  the live site could not be read — ${err.message}\n` +
+    `  what:  the live site's sitemap could not be read — ${err.message}\n` +
     `  why:   this check cannot tell a stale site from an unreachable one, so it\n` +
     `         reports the failure rather than passing silently.\n` +
     `  next:  confirm ${live} responds, then re-run this workflow.`

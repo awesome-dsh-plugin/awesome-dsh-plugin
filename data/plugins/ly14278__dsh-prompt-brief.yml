@@ -1,0 +1,8 @@
+url: https://github.com/ly14278/dsh-prompt-brief
+name: ly14278/dsh-prompt-brief
+category: ui
+icon: https://raw.githubusercontent.com/ly14278/dsh-prompt-brief/main/docs/images/logo.png
+tarball: https://github.com/ly14278/dsh-prompt-brief/releases/download/v0.1.1/dsh-prompt-brief-0.1.1.tgz
+description:
+  zh: "输入框右侧加一个「优化」按钮：把一句话的口语需求改写成结构化产品简报——一句话定位、3–6 条核心功能、视觉参考、设计规范（配色/尺寸等令牌），左右并排对照原文，可接受回填输入框、重新生成一版，或取消保持原文；不占布局、没有设置页，直接调用你已配置的模型渠道。"
+  en: "Adds an Optimize button to the composer that rewrites a one-line idea into a structured product brief: a positioning sentence, 3–6 key features, visual references and design tokens; it sits beside your original text in a compare dialog where you can accept it into the input, generate another version, or cancel and keep the draft untouched. No settings page and no API keys — it calls the model channel you already configured."

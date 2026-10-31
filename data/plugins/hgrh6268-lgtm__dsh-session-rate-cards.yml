@@ -1,0 +1,6 @@
+url: https://github.com/hgrh6268-lgtm/dsh-session-rate-cards
+name: hgrh6268-lgtm/dsh-session-rate-cards
+category: usage
+description:
+  en: 'Live CNY cost of the current session under the composer, priced per assistant message by the model that produced it and the peak or off-peak window of its own timestamp, with a Settings page that edits the six prices of every model and marks a model with no rate card with a leading tilde because it is costed from the Flash rates.'
+  zh: '在输入框下方实时显示当前会话的人民币费用，每条消息按其自身时间戳与该条所用模型的峰谷单价计价；设置页可编辑每个模型的六项单价，未定价的模型按 Flash 单价估算并以 ~ 标注。'

@@ -1,0 +1,6 @@
+url: https://github.com/SOVLOOKUP/dsh-settings-footer
+name: SOVLOOKUP/dsh-settings-footer
+category: ui
+description:
+  en: 'Moves Settings out of the sidebar footer account menu into its own row at the top of the sidebar, hides the 新会话 new-session button, and hides the sidebar footer: the account launcher, the footer settings cell, and the plugin-runtime badge. Cmd/Ctrl+N still starts a session and Settings is still reachable.'
+  zh: '把侧边栏「设置」从底部账号菜单移成顶部独立一行，隐藏「新会话」按钮，并隐藏侧边栏底部：账号菜单、底部设置单元与插件运行时条。Cmd/Ctrl+N 仍可新建会话，设置仍可打开。'

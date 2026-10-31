@@ -1,0 +1,7 @@
+url: https://github.com/gulagala001/opencu
+name: gulagala001/opencu
+category: browser
+description:
+  en: "Browser and desktop application control with live previews, annotations and native Hyprland support."
+  zh: "浏览器与桌面应用控制，支持实时预览、标注和 Hyprland 原生操作。"
+tarball: https://github.com/gulagala001/opencu/releases/download/v2.2.4-dsh.0.2.1-rc.5/opencu-2.2.4-dsh.0.2.1-rc.5.tgz

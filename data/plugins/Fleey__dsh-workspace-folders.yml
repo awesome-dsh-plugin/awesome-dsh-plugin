@@ -1,0 +1,6 @@
+url: https://github.com/Fleey/dsh-workspace-folders
+name: Fleey/dsh-workspace-folders
+category: tools
+description:
+  en: 'Adds extra working directories to a workspace, each read-write or read-only, from a folder button next to the composer or the `/add-dir`, `/remove-dir` and `/dirs` commands; the model sees them in its runtime context, and `write` and `edit` calls into read-write directories skip the sandbox escalation prompt by default while shell commands still ask.'
+  zh: '为工作区添加额外的工作目录，可设为读写或只读，可通过输入框旁的文件夹按钮或 `/add-dir`、`/remove-dir`、`/dirs` 命令管理；模型可在运行时上下文中看到这些目录，对读写目录的 `write` 与 `edit` 调用默认免去沙箱提权确认，终端命令仍会询问。'

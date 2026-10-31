@@ -131,6 +131,39 @@ export function shouldRescan(stored, source, now, recheckDays) {
  * @param {{spec: string, version: string|null, tool: string, now: string}} fallback
  * @returns {CapabilityFacts|null}
  */
+/**
+ * Drop "uses literal IP <addr> for network access" when the scanner's own
+ * `destinations` says that address is only ever compared, never dialled.
+ *
+ * The red line is generated from a string match, so an address inside an SSRF
+ * guard (`host === '100.100.100.200'` → throw) reads the same as an outbound
+ * target. `dsh-trust-check` already classifies each site with `usage`:
+ * `compare` is a comparison, `assigned`/`called` are real uses. Filtering on
+ * that keeps the disclosure honest without re-parsing the source here — and
+ * when the scanner stops emitting the red line, this becomes a no-op.
+ *
+ * @param {string[]} redLines
+ * @param {unknown} destinations
+ * @returns {string[]}
+ */
+function dropCompareOnlyIpRedLines(redLines, destinations) {
+  if (!Array.isArray(destinations)) return redLines
+  const compareOnly = new Set()
+  for (const destination of destinations) {
+    if (destination === null || typeof destination !== 'object') continue
+    if (destination.kind !== 'ip' || typeof destination.value !== 'string') continue
+    const sites = Array.isArray(destination.sites) ? destination.sites : []
+    if (sites.length > 0 && sites.every(site => site !== null && typeof site === 'object' && site.usage === 'compare')) {
+      compareOnly.add(destination.value)
+    }
+  }
+  if (compareOnly.size === 0) return redLines
+  return redLines.filter(line => {
+    const match = /^uses literal IP (\S+) for network access$/.exec(line)
+    return match === null || !compareOnly.has(match[1])
+  })
+}
+
 export function factsFromScan(payload, fallback) {
   if (payload === null || typeof payload !== 'object' || Array.isArray(payload)) return null
   if (!READABLE_SCHEMAS.has(payload.schemaVersion)) return null
@@ -144,7 +177,7 @@ export function factsFromScan(payload, fallback) {
     version: typeof first.version === 'string' && first.version !== '' ? first.version : fallback.version,
     spec: typeof first.spec === 'string' && first.spec !== '' ? first.spec : fallback.spec,
     capabilities: strings(first.capabilities),
-    redLines: strings(first.redLines),
+    redLines: dropCompareOnlyIpRedLines(strings(first.redLines), first.destinations),
     scannedAt: fallback.now,
     tool: fallback.tool,
   }

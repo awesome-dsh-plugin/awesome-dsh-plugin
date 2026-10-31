@@ -1,0 +1,7 @@
+url: https://github.com/cshengyi023-collab/dsh-deepsea-echo
+name: cshengyi023-collab/dsh-deepsea-echo
+category: ui
+tarball: https://github.com/cshengyi023-collab/dsh-deepsea-echo/releases/latest/download/dsh-deepsea-echo.tgz
+description:
+  en: 'Arknights-flavoured startup animation for the DSH Web GUI: a PRTS terminal boot, sonar scan, hologram lock-on and an operator-file splash that end in a deep-sea lockup, about 4.6 seconds, with four selectable original score presets (or sound off), skippable with a click or Esc and switchable, re-timed or replayed from Settings.'
+  zh: '明日方舟风格的 DSH 启动动画：PRTS 终端自检、声呐扫描、全息锁定、干员档案，最后定格在「深海回响」，约 4.6 秒，自带 4 套可切换的原创合成配乐（也可关闭音效）；点击或 Esc 跳过，并可在设置中改时长与重播。'

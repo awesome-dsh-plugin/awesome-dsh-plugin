@@ -2,5 +2,5 @@ url: https://github.com/Aurum807/dsh-bilibili-video-summary
 name: Aurum807/dsh-bilibili-video-summary
 category: tools
 description:
-  en: Downloads a Bilibili video with yt-dlp, produces a transcript and sampled key frames, and registers the skill the agent uses to write the summary; it activates when a user message contains nothing but the video link. Requires yt-dlp and ffmpeg on PATH.
-  zh: 用 yt-dlp 下载 B 站视频，产出转写稿与抽帧图，并注册写总结所需的技能；当用户消息只有一条视频链接时自动启用。需 PATH 上有 yt-dlp 与 ffmpeg。
+  en: Downloads a Bilibili video with yt-dlp, samples key frames, and transcribes it — from the site subtitles, or from a local faster-whisper install when there are none. Registers the skill the agent uses to write the summary; activates when a user message contains only a video link. Requires yt-dlp and ffmpeg on PATH; transcription needs faster-whisper.
+  zh: 用 yt-dlp 下载 B 站视频、抽帧并转写：优先用站方字幕，没有字幕时调用本机 faster-whisper。注册写总结所需的技能，当用户消息只有一条视频链接时自动启用。需 PATH 上有 yt-dlp 与 ffmpeg，转写另需 faster-whisper。

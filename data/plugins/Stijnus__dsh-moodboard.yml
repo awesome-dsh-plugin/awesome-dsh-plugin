@@ -1,0 +1,6 @@
+url: https://github.com/Stijnus/dsh-moodboard
+name: Stijnus/dsh-moodboard
+category: ui
+description:
+  en: 'Visual reference moodboard for DeepSeek Harness: drag-and-drop images with tags and notes, and pinned style guides the agent reads before it generates or restyles UI.'
+  zh: 'DeepSeek Harness 的可视化参考情绪板：拖入图片并打标签、写备注，固定风格指南，智能体在生成或改版界面之前先读取这些参考。'

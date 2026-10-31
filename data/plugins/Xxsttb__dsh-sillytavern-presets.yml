@@ -1,0 +1,7 @@
+url: https://github.com/Xxsttb/dsh-sillytavern-presets
+name: Xxsttb/dsh-sillytavern-presets
+category: ui
+description:
+  en: 'Imports SillyTavern AI presets as switchable, editable prompt layers: preserves the raw JSON, edits prompt order and sampler parameters, previews the injected System Prompt, exports back to SillyTavern-compatible JSON, and archives or permanently deletes presets with confirmation. Applies temperature and maximum output tokens to Harness requests; other sampler fields are preserved and exported but not applied.'
+  zh: '把 SillyTavern 的 AI 预设导入为可切换、可编辑的提示词层：保留原始 JSON，编辑提示词顺序与采样参数，预览最终注入的 System Prompt，导出为 SillyTavern 兼容 JSON，并支持归档或经二次确认永久删除。仅把 temperature 与最大输出 token 应用到 Harness 请求；其余采样字段只保留并随导出保存。'
+tarball: https://github.com/Xxsttb/dsh-sillytavern-presets/releases/download/v1.0.7/dsh-sillytavern-presets-1.0.7.tgz

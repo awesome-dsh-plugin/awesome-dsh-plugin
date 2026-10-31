@@ -1,0 +1,6 @@
+url: https://github.com/riverzhou/dsh-gitbash-new
+name: riverzhou/dsh-gitbash-new
+category: tools
+description:
+  en: 'Windows bash tool for DeepSeek Harness: replaces the preset pwsh with Git for Windows or MSYS2 (UCRT64/MINGW64/CLANG64/...) bash while keeping the official terminal contract — workdir, background jobs and timeout promotion, result markers, terminal cards — and adds a settings row that discovers and validates Git/MSYS2 installations.'
+  zh: 'DeepSeek Harness 的 Windows bash 工具：用 Git for Windows 或 MSYS2（UCRT64/MINGW64/CLANG64…）的 bash 替换预设里的 pwsh，保留官方终端契约（workdir、后台任务与超时转后台、结果标记、终端卡片），并提供一个可自动发现、校验 Git/MSYS2 安装的设置行。'

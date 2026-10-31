@@ -1,0 +1,6 @@
+url: https://github.com/Qiujiyuantiantian/dsh-vehicle-dynamics
+name: Qiujiyuantiantian/dsh-vehicle-dynamics
+category: skill
+description:
+  en: "Engineering checklists distilled from Gillespie's Fundamentals of Vehicle Dynamics: 164 cards over the book's ten chapters, one skill entry with two-level routing. Each card gives the inputs a computation needs, the procedure, the boundary conditions where the method stops being valid, and a page reference — the explanation itself stays in the book. No passage of the book's prose is reproduced; about 77 defects in the source (misprints, OCR damage, internal contradictions) are documented in the cards. A study aid, not a substitute for the book."
+  zh: "把 Gillespie《车辆动力学基础》整本书做成工程检查单：十章 164 张卡，单一入口两级路由。每张卡给出所需输入、执行步骤、方法失效的边界条件，以及回查用的页码——原理讲解仍在原书里。不复制原书任何连续段落；卡内记录了约 77 处原文缺陷（错印、OCR 损坏、前后矛盾）。本包是学习辅助，不能替代原书。"

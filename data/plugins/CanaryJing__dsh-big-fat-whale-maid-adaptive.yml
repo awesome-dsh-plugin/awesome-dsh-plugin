@@ -1,0 +1,7 @@
+url: https://github.com/CanaryJing/dsh-big-fat-whale-maid-adaptive
+name: CanaryJing/dsh-big-fat-whale-maid-adaptive
+category: agi
+description:
+  en: Agent preset with adaptive tool presentation and environment-aware shell routing. Ports modules from yjh051108/dsh-routing-suite and xiaobright/dsh-anchored-standard (the former is listed here), so do not enable it alongside those presets.
+  zh: 提供自适应工具呈现与环境适配 Shell 路由的智能体预设。复用了从 yjh051108/dsh-routing-suite 与 xiaobright/dsh-anchored-standard 移植的模块（前者已收录），不要与这两个预设同时启用。
+tarball: https://github.com/CanaryJing/dsh-big-fat-whale-maid-adaptive/releases/download/v3.2.2/dsh-preset-big-fat-whale-maid-adaptive-3.2.2.tgz

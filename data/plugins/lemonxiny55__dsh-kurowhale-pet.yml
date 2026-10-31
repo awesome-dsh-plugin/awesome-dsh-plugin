@@ -1,0 +1,7 @@
+url: https://github.com/lemonxiny55/dsh-kurowhale-pet
+name: lemonxiny55/dsh-kurowhale-pet
+category: fun
+description:
+  en: "KuroWhale is an unofficial dark-themed whale-girl desktop companion for Windows x64, inspired by the DeepSeek Harness icon, with nine animations that react to DSH Agent activity. Requires WebView2; the first launch downloads the official Neutralino 6.9.0 runtime and artwork over the network and verifies them by SHA-256."
+  zh: "KuroWhale 黑色系鲸鱼娘桌宠，参考 DeepSeek Harness 官方图标设计的非官方 Windows x64 桌宠，九种动画会随 DSH Agent 的工作状态作出反应；需要 WebView2，首次启动会联网下载官方 Neutralino 6.9.0 运行时与素材并做 SHA-256 校验。"
+icon: https://raw.githubusercontent.com/lemonxiny55/dsh-kurowhale-pet/main/docs/images/kurowhale-preview.png

@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/dsh-inner-browser-use
+name: regrevia/dsh-inner-browser-use
+category: browser
+description:
+  en: 'Drives the sidebar browser already open on the right: same cookies and same sign-in, a pointer you can watch, no second window.'
+  zh: '不另开窗口：用右栏内置浏览器，同一份 cookie、同一处登录，指针走到哪点到哪。'
+icon: https://raw.githubusercontent.com/regrevia/dsh-inner-browser-use/main/icon.png

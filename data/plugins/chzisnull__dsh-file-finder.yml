@@ -1,0 +1,6 @@
+url: https://github.com/chzisnull/dsh-file-finder
+name: chzisnull/dsh-file-finder
+category: ui
+description:
+  en: "File search palette for the DSH workspace: find files by name or content, open results in DSH's native right-sidebar preview, and edit text files inline with version-conflict checks."
+  zh: 工作区文件查找面板：按文件名或内容搜索，用 DSH 原生右侧栏预览打开结果，需要时在内置编辑器里修改文本，并在保存前检查版本冲突。

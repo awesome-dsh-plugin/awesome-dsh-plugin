@@ -1,0 +1,6 @@
+url: https://github.com/zys2026/dsh-theme-tide
+name: zys2026/dsh-theme-tide
+category: theme
+description:
+  en: 'Coastal light and dark palette for the DeepSeek Harness web GUI, built as a token-only ThemeRuntime overlay covering all 107 official alias tokens.'
+  zh: '海岸线明暗双色主题，只通过 ThemeRuntime 的 token 层叠加，覆盖全部 107 个官方 alias token。'

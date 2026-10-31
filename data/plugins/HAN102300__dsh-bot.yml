@@ -1,0 +1,9 @@
+url: https://github.com/HAN102300/dsh-bot
+name: HAN102300/dsh-bot
+category: workflow
+description:
+  en: 'Always-on AI teammate: hand it a recurring task in one sentence; dry-run rehearsal by default, snapshot before every real run, one-click rollback, CNY budget circuit-breaker, per-run cost transparency.'
+  zh: '常驻 AI 队友：一句自然语言交给它长期值守；默认演习、执行前后双快照、一键整单回滚、人民币预算熔断、逐轮费用透明。'
+icon: https://raw.githubusercontent.com/HAN102300/dsh-bot/main/assets/icon-180.png
+tarball: https://github.com/HAN102300/dsh-bot/releases/download/v0.3.3/zifeng1023-dsh-bot-0.3.3.tgz
+

@@ -1,0 +1,6 @@
+url: https://github.com/fotor-ai/dsh-fotor-plugin
+name: fotor-ai/dsh-fotor-plugin
+category: vision
+description:
+  en: Generate images and videos, edit images, remove backgrounds, upscale images, upload reference media, and check Fotor credits.
+  zh: 通过 Fotor 生成图片和视频、编辑图片、移除背景、放大图片、上传参考素材及查询积分。

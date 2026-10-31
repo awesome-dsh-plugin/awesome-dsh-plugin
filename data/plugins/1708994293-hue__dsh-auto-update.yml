@@ -1,0 +1,6 @@
+url: https://github.com/1708994293-hue/dsh-auto-update
+name: 1708994293-hue/dsh-auto-update
+category: market
+description:
+  en: On every DeepSeek Harness launch, checks the installed and enabled plugins for newer npm versions, lists them in the UI and updates them after confirmation.
+  zh: 每次启动 DeepSeek Harness 时检查已安装并启用的插件有没有新版本，在界面上列出并询问，确认后更新到最新版。

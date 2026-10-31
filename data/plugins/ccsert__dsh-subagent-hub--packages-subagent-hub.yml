@@ -1,0 +1,7 @@
+url: https://github.com/ccsert/dsh-subagent-hub/tree/main/packages/subagent-hub
+name: ccsert/dsh-subagent-hub#subagent-hub
+category: model
+description:
+  en: Named subagent presets bound to model-route allowlists, where an out-of-list child model is refused before a delegation starts and each child conversation shows the model its last request actually used.
+  zh: 为官方子智能体工具提供具名预设与模型路由白名单：越界的子模型在派发前被拒绝，子会话标题栏显示最近一次请求实际使用的模型。
+icon: https://raw.githubusercontent.com/ccsert/dsh-subagent-hub/main/docs/assets/icon.png

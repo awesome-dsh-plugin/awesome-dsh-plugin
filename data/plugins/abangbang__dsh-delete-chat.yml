@@ -1,0 +1,10 @@
+url: https://github.com/abangbang/dsh-delete-chat
+name: abangbang/dsh-delete-chat
+category: session
+icon: https://raw.githubusercontent.com/abangbang/dsh-delete-chat/main/assets/icon-180.png
+description:
+  en: 'Real session deletion for DSH: "Delete chat" in a session row moves its directory into ~/.dsh/session-trash, a Trash page in the sidebar lists, filters, restores and permanently deletes from there, and a CLI offers the same verbs without the GUI.'
+  zh: '给 DSH 补上真正的会话删除：「⋯」里的 Delete chat 把会话目录移进 ~/.dsh/session-trash，侧栏回收站页面负责筛选、恢复与永久删除，另有 CLI 用同样的动词、不用开 GUI。'
+# Optional: add once a GitHub Release exists. The asset name must stay
+# version-free, or this URL 404s the moment the next release is cut.
+# tarball: https://github.com/abangbang/dsh-delete-chat/releases/latest/download/dsh-delete-chat.tgz

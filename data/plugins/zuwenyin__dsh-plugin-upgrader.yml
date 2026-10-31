@@ -1,0 +1,6 @@
+url: https://github.com/zuwenyin/dsh-plugin-upgrader
+name: zuwenyin/dsh-plugin-upgrader
+category: market
+description:
+  en: 'Adds a Versions tab to the Plugins page: one-click upgrade of all upgradable plugins or a multi-selected subset, version history back to any published release, and GitHub links for each repo and each version.'
+  zh: '在「插件」页新增版本页：一键升级全部可升级插件或勾选的子集，查看历史版本并回滚到任意已发布版本，并为每个插件和每个版本提供 GitHub 链接。'

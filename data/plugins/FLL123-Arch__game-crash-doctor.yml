@@ -1,0 +1,6 @@
+url: https://github.com/FLL123-Arch/game-crash-doctor
+name: FLL123-Arch/game-crash-doctor
+category: tools
+description:
+  en: 'Windows-only game crash diagnosis from Event Log, WER reports and crash dumps, with a diagnose_game_crash tool and an optional background notifier.'
+  zh: '仅限 Windows：从事件日志、WER 报告和崩溃转储诊断游戏崩溃，提供 diagnose_game_crash 工具和可选的后台通知。'

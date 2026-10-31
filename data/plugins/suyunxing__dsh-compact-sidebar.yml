@@ -1,0 +1,7 @@
+url: https://github.com/suyunxing/dsh-compact-sidebar
+name: suyunxing/dsh-compact-sidebar
+category: ui
+description:
+  en: "Draws the sidebar navigation as a compact two-column grid at every viewport; on narrow, short or coarse-pointer screens it additionally caps the navigation at 34vh with scrolling so the workspace and session history keep a 38vh floor. Also repairs dsh-resource:// records whose protocol the browser URL parser reports as empty."
+  zh: "把侧栏导航在所有视口下都重画成紧凑双列网格；窄屏、矮窗口或粗指针设备上再加一层限制——导航最高 34vh 并允许滚动，给工作区与会话历史留出 38vh 下限。同时修复浏览器把 dsh-resource:// 记录协议判空导致的资源不可用。"
+icon: https://raw.githubusercontent.com/suyunxing/dsh-compact-sidebar/main/icon-180.png

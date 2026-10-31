@@ -1,0 +1,6 @@
+url: https://github.com/439436269-ctrl/dsh-preview-media
+name: 439436269-ctrl/dsh-preview-media
+category: ui
+description:
+  en: 'Play video and audio in the right-Sidebar document preview, streamed over an authenticated HTTP Range route with desktop seek.'
+  zh: '在右侧栏文档预览里播放视频/音频，经带鉴权的 HTTP Range 路由流式读取，桌面端可拖动进度。'

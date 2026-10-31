@@ -1,0 +1,6 @@
+url: https://github.com/iStarryDust/dsh-edit-regen
+name: iStarryDust/dsh-edit-regen
+category: session
+description:
+  en: 'Edit and regenerate: adds an edit action to user message bubbles, regenerating from that message with images and files carried over and the original model inherited.'
+  zh: '编辑重发：在用户消息气泡上多一个「编辑」，改完从那条消息重新生成，图片与文件随行重传，模型继承原会话。'

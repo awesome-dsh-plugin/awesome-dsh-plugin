@@ -1,0 +1,6 @@
+url: https://github.com/lerwa2025-a11y/dsh-plugin-groups
+name: lerwa2025-a11y/dsh-plugin-groups
+category: ui
+description:
+  en: 'Adds a My Groups tab to the DSH Installed plugins page: custom groups with drag reordering, colored text tags, Chinese notes, group locking, real enable switches, and two preset snapshot slots.'
+  zh: '在 DSH「已安装插件」页新增「我的分组」标签页：自定义分组与拖拽排序、彩色文字标签、中文备注、分组锁定、真实启停开关，以及两个预设快照槽位。'

@@ -1,0 +1,7 @@
+url: https://github.com/iypavlov/dsh-cat-pet
+name: iypavlov/dsh-cat-pet
+category: fun
+description:
+  en: An animated pixel cat that lives over the DSH web interface and follows what the agent is doing — sitting while the session is calm, lying down and falling asleep while a run is in progress, and waking when the turn returns or typing starts. It can be dragged anywhere, remembers its position, sleeps after a minute of inactivity, and offers an enable switch, four sizes and a status-reaction toggle in Settings.
+  zh: 一只住在 DSH 网页界面上的动画像素猫，会跟随 agent 的状态变化——会话平静时坐着，运行中躺下并入睡，回合结束或开始打字时醒来。可以拖到任意位置并记住坐标，闲置一分钟后入睡，设置里有开关、四档尺寸和状态联动选项。
+icon: https://raw.githubusercontent.com/iypavlov/dsh-cat-pet/master/assets/icon-180.png

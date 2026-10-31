@@ -1,0 +1,6 @@
+url: https://github.com/csuwzw/dsh-restart
+name: csuwzw/dsh-restart
+category: dev
+description:
+  en: 'Adds a Restart button to the DeepSeek Harness title bar so newly installed plugins can take effect. The first click arms the button and the second one ends the current desktop instance and relaunches the executable. The restart runs in a PowerShell script created through WMI, outside the application job object and without a console window, and every step is written to $DSH_HOME/logs/dsh-restart-plugin.log. Windows desktop app only.'
+  zh: '在 DeepSeek Harness 标题栏加一个重启按钮，让新安装的插件生效：第一次点击进入确认态，第二次点击结束当前桌面实例并重新拉起可执行文件。重启由 WMI 创建的 PowerShell 脚本执行，处于应用的 job object 之外，且不弹出控制台窗口；每一步写入 $DSH_HOME/logs/dsh-restart-plugin.log。仅支持 Windows 桌面版。'

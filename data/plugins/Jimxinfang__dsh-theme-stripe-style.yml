@@ -1,0 +1,8 @@
+url: https://github.com/Jimxinfang/dsh-theme-stripe-style
+name: Jimxinfang/dsh-theme-stripe-style
+category: theme
+description:
+  en: "Stripe Style theme for the DeepSeek Harness Web UI: a 40px purple grid, layered soft shadows, 12px cards, an 8px control scale, and an in-settings theme row with Daylight Violet and Midnight Navy palettes plus one-click factory restore."
+  zh: "DeepSeek Harness Web 的 Stripe 风格主题：40px 紫色网格、多级柔和阴影、12px 卡片与 8px 控件圆角，设置页内可直接切换「白昼紫 / 午夜蓝」双版本，并可一键恢复出厂外观。"
+icon: https://raw.githubusercontent.com/Jimxinfang/dsh-theme-stripe-style/main/docs/icon-180.png
+tarball: https://github.com/Jimxinfang/dsh-theme-stripe-style/releases/download/v0.1.0/dsh-theme-stripe-style-0.1.0.tgz

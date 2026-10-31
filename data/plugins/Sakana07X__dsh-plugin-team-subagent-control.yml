@@ -1,0 +1,6 @@
+url: https://github.com/Sakana07X/dsh-plugin-team-subagent-control
+name: Sakana07X/dsh-plugin-team-subagent-control
+category: model
+description:
+  en: 'Adds per-member model and reasoning-effort routing to DeepSeek Desktop Agent Teams, plus leader-initiated release of a teammate subagent run instance.'
+  zh: '为 DeepSeek Desktop 的 Agent Teams 提供成员级模型与思考强度路由，并允许主理人释放（删除）团队成员的子智能体运行实例。'

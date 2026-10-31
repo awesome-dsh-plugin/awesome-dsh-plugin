@@ -1,0 +1,7 @@
+url: https://github.com/RoderickWilliams/dsh-local-3d-studio
+name: RoderickWilliams/dsh-local-3d-studio
+category: tools
+description:
+  en: 'Local 3D studio orchestration: detects Blender, COLMAP and ComfyUI on every run and picks the route they support, and also ships a Three.js fallback that generates models from primitive specs, edits or scales GLB files, writes an offline viewer page and renders multi-view PNGs without Blender.'
+  zh: '本地三维工作室编排：每次调用都现场探测 Blender、COLMAP 与 ComfyUI 并按其支持情况选路线；另带 Three.js 兜底通道，可按图元描述生成模型、修改或缩放 GLB、生成离线预览页并在没有 Blender 时渲染多视角 PNG。'
+tarball: https://github.com/RoderickWilliams/dsh-local-3d-studio/releases/download/v0.3.1/dsh-local-3d-studio-0.3.1.tgz

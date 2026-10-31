@@ -1,0 +1,6 @@
+url: https://github.com/Asteroid-Code-Channel/dsh-workspace-atlas
+name: Asteroid-Code-Channel/dsh-workspace-atlas
+category: ui
+description:
+  en: 'AGENTS & Skills Studio: edit AGENTS.md, create spec-compliant SKILL.md files with structured frontmatter, manage and rename skill folders, and install from Anthropic, OpenAI, Cursor, and Matt Pocock catalogs.'
+  zh: 'AGENTS & Skills 工作台：编辑 AGENTS.md，按 Agent Skills 规范创建 SKILL.md，管理和重命名技能文件夹，并从 Anthropic、OpenAI、Cursor、Matt Pocock 四源技能目录安装技能。'

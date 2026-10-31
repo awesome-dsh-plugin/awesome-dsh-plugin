@@ -1,0 +1,6 @@
+url: https://github.com/muzapar00/united_nation_skin_deepseek_harness
+name: muzapar00/united_nation_skin_deepseek_harness
+category: theme
+description:
+  en: 'United Nations theme for the DSH Web GUI: UN blue over paper white, the official emblem, a slow rotation of credited UN peacekeeping photographs behind the conversation, Charter and UN-facts ribbons, and a 7,030-language picker (127 languages with a complete skin translation) that leaves every existing control untouched. Browser-side only; installers for Linux, macOS and Windows.'
+  zh: '联合国主题皮肤：白底联合国蓝、官方徽记、对话背景缓慢轮播带署名的联合国维和照片、宪章与联合国知识丝带，以及收录 7,030 种语言（127 种已完整翻译）的语言选择器，不改动任何原有按钮。纯浏览器侧实现，附 Linux/macOS/Windows 一键安装脚本。'

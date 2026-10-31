@@ -1,0 +1,7 @@
+url: https://github.com/maimaiqwe/prompt-enhancer/tree/main/dsh-plugin
+name: maimaiqwe/prompt-enhancer#dsh-prompt-enhance-cn
+category: ui
+description:
+  en: 'Four-tier prompt enhancer for the composer — the system tier always emits a LangGPT-structured system prompt (# Role / Profile / Skills / Rules / Workflows / Initialization), upgrading task drafts into the system prompt of the agent that runs them, while the other tiers rewrite as a light tidy-up, a single paragraph, or a five-section brief; the iterate workbench refines an editable base under an optional requirement, with fill-back and undo. Never changes intent, never invents requirements.'
+  zh: '输入框四档提示词增强——系统档无条件输出 # Role / Profile / Skills / Rules / Workflows / Initialization 的 LangGPT 结构化系统提示词（任务型草稿升格为对应智能体），其余三档改写为轻度整理、单段或五段任务书；迭代工作台以可编辑基准加可选要求继续改写，支持回填与撤销；不改变原意、不凭空编造需求。'
+tarball: https://github.com/maimaiqwe/prompt-enhancer/releases/download/v1.5.1/dsh-prompt-enhance-cn-0.3.5.tgz

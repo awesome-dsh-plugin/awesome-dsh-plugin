@@ -1,0 +1,6 @@
+url: https://github.com/zz12hui/dsh-github-readme
+name: zz12hui/dsh-github-readme
+category: docs
+description:
+  en: 'Prepares a repository README before pushing: scans repo facts, renders banner and process-diagram images (needs Pillow and the Microsoft YaHei font), lints layout and section numbering, then commits and pushes with retry.'
+  zh: '上传 GitHub 前优化仓库 README：扫描仓库事实、渲染首图与过程图（需 Pillow 与微软雅黑字体）、校验排版和编号，最后带重试提交推送。'

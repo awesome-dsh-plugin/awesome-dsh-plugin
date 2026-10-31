@@ -1,0 +1,8 @@
+url: https://github.com/proletari/shenshen-dsh-companion
+name: "proletari/shenshen-dsh-companion"
+category: fun
+description:
+  en: "A Shenshen desktop companion for DeepSeek Harness: transparent task-aware animations (idle, working, thinking, celebrate, failed), click-to-wave and drag-to-run interactions, plus the upstream API balance, local usage accounting, roles, bubbles and sound settings. A character branch of MeteorNOX/DeepSeek-Balance-Whale-Widget (dsh-whale-widget 0.4.2); do not install it alongside the upstream, or two pets and duplicate requests appear."
+  zh: "DSH 桌宠「深深」：跟随任务状态切换待机/敲键盘/思考/庆祝/失败，支持点击挥手、拖动左右奔跑，并保留 API 余额、本机用量记账、角色、气泡与音效设置。二创自 MeteorNOX/DeepSeek-Balance-Whale-Widget（dsh-whale-widget 0.4.2）；请勿与上游同时安装，否则会出现双角色与重复请求。"
+icon: https://raw.githubusercontent.com/proletari/shenshen-dsh-companion/main/icon.png
+tarball: https://github.com/proletari/shenshen-dsh-companion/releases/download/dsh-v0.1.1/dsh-shenshen-companion-0.1.1.tgz

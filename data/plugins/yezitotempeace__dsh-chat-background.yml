@@ -1,0 +1,6 @@
+url: https://github.com/yezitotempeace/dsh-chat-background
+name: yezitotempeace/dsh-chat-background
+category: theme
+description:
+  en: 'Chat wallpaper: use a local image, a local video or one of six preset gradients as the chat background, with clarity, opacity, zoom, position, dark veil, fit mode, motion and glass panels; files stay in IndexedDB and nothing is uploaded.'
+  zh: '聊天壁纸：用本地图片、本地视频或六套预设渐变做聊天背景，可调清晰度、透明度、缩放、位置、暗色遮罩、显示方式、动效与玻璃面板；文件只存在浏览器 IndexedDB，不上传。'

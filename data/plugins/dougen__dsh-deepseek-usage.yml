@@ -1,0 +1,6 @@
+url: https://github.com/dougen/dsh-deepseek-usage
+name: dougen/dsh-deepseek-usage
+category: usage
+description:
+  en: 'Shows a card in the sidebar footer with the DeepSeek account balance (read from the official /user/balance endpoint with the API key DSH already stores) and the unit prices of the active model — input, cache read and output — taken from a built-in snapshot of the official price table. A dot marks the current billing window and a countdown shows the time left until it flips: peak is Mon–Fri 9:00–12:00 and 14:00–18:00 Beijing Time, excluding Chinese public holidays, and everything else is off-peak. Prices and the dot appear only for official DeepSeek models; for any other model the card shows the balance alone. The card refreshes every 30 seconds, on click, and when the model changes, and follows the app theme and the DSH language.'
+  zh: '在侧边栏底部显示一张卡片：DeepSeek 账号余额（用 DSH 已保存的 API Key 调官方 /user/balance 接口获取），以及当前模型的档单价——输入、缓存读取、输出——取自内置的官方价格表快照。一个圆点标出当前计费时段，旁边是距离切换的倒计时：高峰为北京时间周一至周五 9:00–12:00、14:00–18:00（不含中国法定节假日），其余为空闲时段。档单价与圆点只对 DeepSeek 官方模型显示，其他模型只显示余额。卡片每 30 秒刷新一次，点击或切换模型时立即刷新，并跟随应用主题与 DSH 语言。'

@@ -1,0 +1,6 @@
+url: https://github.com/wafernm-crypto/dsh-memory-library
+name: wafernm-crypto/dsh-memory-library
+category: memory
+description:
+  en: Per-workspace memory library with manual per-chat opt-in, editable rules, three sharing modes, and continuous forgetting; cards stay readable Markdown.
+  zh: 按工作区隔离的记忆库，支持按对话手动开启、可编辑规则、三种共用模式和连续遗忘；记忆卡仍是可读的 Markdown。

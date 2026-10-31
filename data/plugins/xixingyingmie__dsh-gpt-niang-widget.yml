@@ -1,0 +1,6 @@
+url: https://github.com/xixingyingmie/dsh-gpt-niang-widget
+name: xixingyingmie/dsh-gpt-niang-widget
+category: ui
+description:
+  en: "A GPT/ChatGPT-persona desktop pet pinned to the bottom-right corner of the DSH web GUI — shows balance, today's usage, peak/off-peak pricing and per-turn cost, with editable bubbles (text, balance, usage, pricing, images, random lines and weighted choices), per-line styles and fonts, a floating quick editor, sound effects, custom character art/animation/audio, and snapping/flipping. 54 GPT-flavored lines across five groups. Its routes, bundle id and data files are namespaced so it can run alongside the whale and Xiaoke widgets. A derivative of MeteorNOX/DeepSeek-Balance-Whale-Widget (MIT)."
+  zh: "右下角的 GPT / ChatGPT 拟人桌宠「GPT娘」：显示余额、今日已用、峰谷定价与每轮消耗，泡泡内容可编辑（文本、余额、今日、峰谷、图片、随机语句与并列加权选择），支持逐行样式与字体、悬浮快捷编辑、音效、自定义角色图/动图/音效与吸附翻转，台词 54 条、分五组；路由、bundle id 与数据文件均与其它桌宠隔离，可与小鲸鱼、小克同时运行。二创自 MeteorNOX/DeepSeek-Balance-Whale-Widget（MIT）。"

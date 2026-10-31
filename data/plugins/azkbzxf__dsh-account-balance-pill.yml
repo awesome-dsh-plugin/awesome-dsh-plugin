@@ -1,0 +1,7 @@
+url: https://github.com/azkbzxf/dsh-account-balance-pill
+name: azkbzxf/dsh-account-balance-pill
+category: ui
+tarball: https://github.com/azkbzxf/dsh-account-balance-pill/releases/download/v1.0.0/dsh-account-balance-pill-1.0.0.tgz
+description:
+  en: "Shows the signed-in DeepSeek account's remaining balance in the DSH composer bottom bar, next to the shipped turn/step and token-usage pills, and refreshes it periodically and after each turn."
+  zh: "在 DSH 对话底栏（输入框下方的统计行）显示当前 DeepSeek 账户的剩余余额，定时刷新，并在每轮对话结束后立即更新。"

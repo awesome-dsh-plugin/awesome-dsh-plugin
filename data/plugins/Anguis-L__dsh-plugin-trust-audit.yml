@@ -1,0 +1,8 @@
+url: https://github.com/Anguis-L/dsh-plugin-trust-audit
+name: Anguis-L/dsh-plugin-trust-audit
+category: security
+tarball: https://github.com/Anguis-L/dsh-plugin-trust-audit/releases/download/v0.3.0/dsh-plugin-trust-audit-0.3.0.tgz
+description:
+  en: Read-only audit of whether a DSH plugin's HTTP routes are actually fenced, discovering the registered routes by reading plugin code and probing loopback only.
+  zh: 只读审计 DSH 插件的 HTTP 路由是否真的做了鉴权栅栏：读插件代码找出真正注册的路由，仅对回环地址发起探测。
+icon: https://raw.githubusercontent.com/Anguis-L/dsh-plugin-trust-audit/master/assets/icon-180.png

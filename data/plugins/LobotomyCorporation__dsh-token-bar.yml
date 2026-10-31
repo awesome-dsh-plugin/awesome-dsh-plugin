@@ -1,0 +1,6 @@
+url: https://github.com/LobotomyCorporation/dsh-token-bar
+name: LobotomyCorporation/dsh-token-bar
+category: usage
+description:
+  en: "A per-turn token usage strip in each reply's icon row: a grey/yellow/green segmented bar plus a legend giving that turn's uncached-input, cache-read and output split and each one's share."
+  zh: "在每条回复的图标行里画一条单轮用量条：灰/黄/绿分段条配百分比图例，显示该轮未缓存输入、缓存读取与输出的拆分与各自占比。"

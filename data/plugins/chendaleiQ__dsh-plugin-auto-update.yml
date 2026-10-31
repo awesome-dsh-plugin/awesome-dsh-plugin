@@ -1,0 +1,7 @@
+url: https://github.com/chendaleiQ/dsh-plugin-auto-update
+name: chendaleiQ/dsh-plugin-auto-update
+category: market
+icon: https://raw.githubusercontent.com/chendaleiQ/dsh-plugin-auto-update/main/assets/icon-180.png
+description:
+  en: 'Per-package automatic updates for the DeepSeek Harness plugins you choose. On a schedule it asks npm for the latest version of installed plugins, updates only the packages you check, and skips local link or file installs, pinned versions and packages with errors; upgrades stay inside the major version and skip prereleases by default. Updates go through the profile''s own plugin manager, so the profile write lock, pnpm step, bundle-patch validation and hot reload are the host''s, and a failed install puts the previous version back. Each cycle is appended to a JSON log.'
+  zh: '给 DeepSeek Harness 插件做按包白名单的自动更新：按计划去 npm 查已装插件的最新版本，只更新你勾选的包，本地 link／file 安装、锁定版本和出错的包一律跳过；默认不跨大版本、不装预发布。更新走 profile 里运行中的官方插件管理器，profile 写锁、pnpm 执行、bundle 补丁校验与热重载都由宿主负责，安装失败会把旧版本装回去。每轮结果追加到一份 JSON 日志。'

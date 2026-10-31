@@ -1,0 +1,6 @@
+url: https://github.com/439436269-ctrl/dsh-preview-blender
+name: 439436269-ctrl/dsh-preview-blender
+category: ui
+description:
+  en: 'Open .blend files in the right-Sidebar document preview: cached Blender headless GLB export plus a dependency-free WebGL viewport and scene statistics. Requires Blender 3.6 or later installed locally.'
+  zh: '在右侧栏文档预览里打开 .blend：Blender headless 导出缓存 GLB，零依赖 WebGL 视口与场景统计。需要本机安装 Blender 3.6 或更高版本。'

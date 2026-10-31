@@ -1,0 +1,6 @@
+url: https://github.com/111xjyuan/dsh-desktop-sidecar
+name: 111xjyuan/dsh-desktop-sidecar
+category: tools
+description:
+  en: "Native Windows desktop control for DSH: window enumeration, UIA control tree, in-process GDI window capture, offline OCR text finding and clicking, background UIA invocation without moving the cursor, clipboard-based CJK typing and key chords, plus a course-playback helper. Ten tools, no driver, no extra runtime."
+  zh: "原生 Windows 桌面控制：窗口枚举、UIA 控件树、进程内 GDI 截图、离线 OCR 找字点击、后台 UIA 调用（不移动光标）、剪贴板中文输入、按键组合，另带网课自动播放助手。共 10 个工具，无需驱动与额外运行时。"

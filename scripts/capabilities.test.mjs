@@ -123,6 +123,43 @@ test('copies a provenance claim and drops one that is not that shape', () => {
   assert.equal(dropped?.provenance, undefined)
 })
 
+test('a literal IP that is only compared is not an outbound target', () => {
+  // dsh-trust-check 0.2.1 on dsh-whale-widget@0.4.2 (2026-10-20): the address
+  // appears once, inside the SSRF deny branch, and the scanner itself marks
+  // its only site `usage: "compare"`. The string-matched red line reads the
+  // opposite of the code.
+  const fallback = { spec: 'npm:dsh-whale-widget@0.4.2', version: '0.4.2', tool: 'dsh-trust-check@0.2.1', now: 'n' }
+  const facts = factsFromScan({
+    schemaVersion: 2,
+    plugins: [{
+      version: '0.4.2',
+      capabilities: ['network', 'credentials'],
+      redLines: [
+        'reads credentials/secrets AND has network access',
+        'uses literal IP 100.100.100.200 for network access',
+        'uses literal IP 169.254.169.254 for network access',
+      ],
+      destinations: [
+        { kind: 'ip', value: '100.100.100.200', sites: [{ file: 'lib/index.js', line: 2236, usage: 'compare' }] },
+        { kind: 'ip', value: '169.254.169.254', sites: [{ file: 'lib/index.js', line: 2240, usage: 'assigned' }] },
+      ],
+    }],
+  }, fallback)
+  assert.deepEqual(facts?.redLines, [
+    'reads credentials/secrets AND has network access',
+    'uses literal IP 169.254.169.254 for network access',
+  ])
+  // A mix of compare and real use keeps the red line: the address is still dialled.
+  const mixed = factsFromScan({
+    schemaVersion: 2,
+    plugins: [{
+      version: '1', capabilities: ['network'], redLines: ['uses literal IP 10.0.0.1 for network access'],
+      destinations: [{ kind: 'ip', value: '10.0.0.1', sites: [{ usage: 'compare' }, { usage: 'assigned' }] }],
+    }],
+  }, fallback)
+  assert.deepEqual(mixed?.redLines, ['uses literal IP 10.0.0.1 for network access'])
+})
+
 test('a new release keeps the previous capabilities and red lines', () => {
   const next = {
     version: '1.1.0', spec: 'npm:x@1.1.0', capabilities: ['network'], redLines: [],

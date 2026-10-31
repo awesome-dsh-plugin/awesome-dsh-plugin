@@ -3,5 +3,5 @@ name: LyaxZ/dsh-quick-toc
 category: ui
 tarball: https://github.com/LyaxZ/dsh-quick-toc/releases/latest/download/dsh-quick-toc.tgz
 description:
-  en: 'Conversation outline for DeepSeek Harness: whole-session Markdown headings grouped by turn, in a side panel or a full-width curtain; hover previews that pin for side-by-side comparison; title, prompt, full-text and cross-session search with the recent queries kept; multiple jump actions, reading-position follow, adjustable outline density, and a Chinese/English interface; settings one click from the panel toolbar.'
-  zh: 'DeepSeek Harness 对话大纲：按回合整理整段会话的 Markdown 标题，侧边面板与全屏幕布两种视图；悬停预览可钉住对照；标题、提问、全文与跨会话四档检索，并保留最近搜索过的词；多种跳转、阅读位置跟随、可调大纲密度与中英双语界面；设置卡片从顶栏按钮直达。'
+  en: 'Conversation outline for DeepSeek Harness: the Markdown headings of the whole session, grouped by turn, in a side panel or a full-width curtain; hover previews can be pinned for comparison, bookmarks keep the places you come back to, and a right-click jumps to a section or copies a heading and the levels below it. Six theme colours and a translucent material, title/prompt/full-text/cross-session search, reading-position follow and a Chinese/English interface.'
+  zh: 'DeepSeek Harness 对话大纲：按回合整理整段会话的 Markdown 标题，侧边面板与全屏「幕布」两种视图；悬停预览可钉住对照，书签留住常回看的几处，右键即可跳转到某一节或复制标题及其下面所有层级。支持六种主题色与半透明材质、标题/提问/全文/跨会话搜索、阅读位置跟随与中英双语界面。'

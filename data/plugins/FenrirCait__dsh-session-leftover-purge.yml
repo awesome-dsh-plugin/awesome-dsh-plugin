@@ -1,0 +1,7 @@
+url: https://github.com/FenrirCait/dsh-session-leftover-purge
+name: FenrirCait/dsh-session-leftover-purge
+category: session
+description:
+  en: 'Purges billion-context snapshots left behind after a session is deleted in DeepSeek Harness, and can also clean up cost-meter ledger rows (off by default).'
+  zh: '在 DeepSeek Harness 中删除会话后，清理 billion-context 快照；cost-meter 账本记录的清理默认关闭，可在设置里打开。'
+tarball: https://github.com/FenrirCait/dsh-session-leftover-purge/releases/latest/download/dsh-session-leftover-purge.tgz

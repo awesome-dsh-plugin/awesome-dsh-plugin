@@ -1,0 +1,6 @@
+url: https://github.com/NingYuanLee/dsh-gui-auth-url
+name: NingYuanLee/dsh-gui-auth-url
+category: browser
+description:
+  en: 'Agent tool that returns the running DSH Web GUI URL including its per-process launch token, so browser automation can open the GUI instead of getting a 401.'
+  zh: '把当前 DSH Web GUI 的合法带 token 地址作为 agent 工具返回，浏览器自动化可直接打开 GUI，不再遇到 401。'

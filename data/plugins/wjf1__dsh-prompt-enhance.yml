@@ -1,0 +1,6 @@
+url: https://github.com/wjf1/dsh-prompt-enhance
+name: wjf1/dsh-prompt-enhance
+category: ui
+description:
+  en: 'Sparkle button immediately left of the model selector that rewrites the composer draft into an executable prompt in place, modelled on WorkBuddy: the host calls the conversation LLM with a prompt-engineering system prompt, multi-level undo keeps up to 8 previous drafts, and a token-level diff card shows added and removed spans, the number of changed spots and the net character delta. Runs on the session model, is disabled while the draft is empty, and keeps the browser-session cookie fence in front of the LLM call.'
+  zh: '模型选择器左侧的 ✨：把草稿原地改写成可执行的提示词（对标 WorkBuddy），调用在宿主侧完成；多层撤销最多保留 8 版，逐字差异卡标出新增与删除、改动处数与净增字数；增强跟随会话当前模型，草稿为空时自动置灰，调用前做浏览器会话 Cookie 校验。'

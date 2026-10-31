@@ -1,0 +1,7 @@
+url: https://github.com/reg4916/dsh-plugin-balance-badge
+name: reg4916/dsh-plugin-balance-badge
+category: usage
+description:
+  en: Always-visible account topped-up balance pill in the sidebar header, refreshed automatically and showing the same number as Settings → Account.
+  zh: 在侧边栏顶部常驻显示账户充值余额，自动刷新，数字与「设置 → 账户」一致。
+icon: https://raw.githubusercontent.com/reg4916/dsh-plugin-balance-badge/main/assets/icon.png

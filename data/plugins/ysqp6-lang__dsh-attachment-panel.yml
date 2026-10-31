@@ -1,0 +1,7 @@
+url: https://github.com/ysqp6-lang/dsh-attachment-panel
+name: ysqp6-lang/dsh-attachment-panel
+category: ui
+tarball: https://github.com/ysqp6-lang/dsh-attachment-panel/releases/download/v0.6.0/dsh-attachment-panel-0.6.0.tgz
+description:
+  en: 'Delivery panel in the DSH sidebar: indexes every image and file sent to the harness (content-addressed attachments plus @-mentioned local paths), rebuilds Taildrop send history per target device from tailscale file cp calls in the session logs, lists incoming files (the Tailscale inbox plus unmarked files in ~/Downloads), and sends new files to a device from the panel with online status and upload progress.'
+  zh: 'DSH 侧栏里的投送面板：索引所有发给 Harness 的图片与文件（内容寻址附件 + @ 引用过的本机路径），从会话日志里的 tailscale file cp 调用按目标设备还原 Taildrop 投送历史，列出收到的文件（Tailscale 收件箱 + ~/Downloads 里没有下载标记的文件），并能在面板里直接选设备发文件（显示在线状态与上传进度）。'

@@ -1,0 +1,8 @@
+# 收录到 awesome-dsh-plugin（插件市场）的条目文件：
+#   data/plugins/guokecloud__dsh-session-janitor.yml
+url: https://github.com/guokecloud/dsh-session-janitor
+name: guokecloud/dsh-session-janitor
+category: session
+description:
+  en: Lists DSH session records and archive caches on a sidebar page, moves deletions into a restorable recycle bin, and refuses sessions written within the last 10 minutes.
+  zh: 在侧边栏页面里列出 DSH 的会话记录与归档缓存，删除先移入可恢复的回收站，最近 10 分钟仍在写入的会话会被拒绝。

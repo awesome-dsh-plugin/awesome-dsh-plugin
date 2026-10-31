@@ -1,0 +1,8 @@
+url: https://github.com/cxv117793-blip/dsh-sidebar-overflow
+name: cxv117793-blip/dsh-sidebar-overflow
+category: ui
+description:
+  en: "Puts a More row at the end of the sidebar main panel list and lets you decide, entry by entry, which panels stay visible and which move into it: a menu lists every entry with a one-click switch in either direction, a search box filters long lists, and a single Restore all clears both kinds of key. Also hides the footer action buttons, keeps the plugins entry un-collapsible, and writes each choice to the profile config so it survives a restart."
+  zh: "在侧边栏主导航列表末尾放一行「更多」，每个入口单独决定留在外面还是收进去：菜单列出全部入口，一行一个开关，两个方向的切换都只要点一下；入口多了能用搜索框筛，一个「全部恢复」把两类键一起清空。底部工具区的按钮也能收，插件入口锁死不可收；选择写进 profile 配置，DSH 重启后照样生效。"
+tarball: https://github.com/cxv117793-blip/dsh-sidebar-overflow/releases/latest/download/dsh-sidebar-overflow.tgz
+icon: https://raw.githubusercontent.com/cxv117793-blip/dsh-sidebar-overflow/main/assets/icon-180.png

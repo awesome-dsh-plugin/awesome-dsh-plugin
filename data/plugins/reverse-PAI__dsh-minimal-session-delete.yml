@@ -1,0 +1,6 @@
+url: https://github.com/reverse-PAI/dsh-minimal-session-delete
+name: reverse-PAI/dsh-minimal-session-delete
+category: session
+description:
+  en: Permanently deletes a session from the sidebar, waiting for a running turn to stop and cascading to its subagent sessions.
+  zh: 从侧边栏永久删除会话：等待正在运行的回合停下，并级联删除其子代理会话。

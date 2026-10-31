@@ -1,0 +1,6 @@
+url: https://github.com/sakikoTGW/dsh-plugin-resolver
+name: sakikoTGW/dsh-plugin-resolver
+category: dev
+description:
+  en: 'Agent-facing plugin installer that resolves DSH-compatible versions, handles ambiguous names, and verifies the loader entry after install.'
+  zh: '面向 agent 的插件安装器：解析 DSH 兼容版本、处理同名歧义，并在安装后校验 loader 入口。'

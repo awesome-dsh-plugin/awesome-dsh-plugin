@@ -1,0 +1,6 @@
+url: https://github.com/710765989/dsh-sticker-dict
+name: 710765989/dsh-sticker-dict
+category: vision
+description:
+  en: Keeps a local sticker dictionary keyed by content hash so an image already described is recalled instead of re-read, and splits a GIF into evenly sampled frames laid out as one contact sheet so the whole animation is visible.
+  zh: 维护一本按内容哈希索引的本地表情包字典，看过的图直接复用描述而不再重复识图；同时把 GIF 均匀抽帧拼成一张联系表，让视觉模型看清整段动作。

@@ -1,0 +1,7 @@
+url: https://github.com/MarkTina/dsh-activity-heat
+name: MarkTina/dsh-activity-heat
+category: ui
+icon: https://raw.githubusercontent.com/MarkTina/dsh-activity-heat/main/assets/icon-180.png
+description:
+  en: 'Scores sessions and workspaces 0-100% by time since their last activity, then shows that heat as a sidebar icon, a small heat dot before every session title, a heat line in the session hover card, and a filterable sessions/workspaces panel that also totals the turns, steps, tokens and conversation time of each workspace.'
+  zh: '按距最后一次活动的时间给会话与工作区打 0–100% 热度分，并在侧边栏图标、会话标题前的小热度圆点、会话悬浮卡片和可筛选的会话/工作区面板中呈现；工作区卡片还汇总该工作区的轮次、步数、Token 与会话时长。'

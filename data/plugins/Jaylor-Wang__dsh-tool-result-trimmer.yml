@@ -1,0 +1,6 @@
+url: https://github.com/Jaylor-Wang/dsh-tool-result-trimmer
+name: Jaylor-Wang/dsh-tool-result-trimmer
+category: session
+description:
+  en: 'Eager, tail-heavy, line-aware tool result trimmer plugin: hooks into post-execution pipeline to trim oversized command outputs with smart semantic reducers and ANSI stripping.'
+  zh: '即时、尾部加权、行吸附的工具输出修剪插件：挂载于执行流水线即时截断超大命令输出，内置语义提纯器与 ANSI 剥离。'

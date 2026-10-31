@@ -1,7 +1,6 @@
 url: https://github.com/Bainianzzz/dsh-fork-worktree
 name: Bainianzzz/dsh-fork-worktree
 category: git
-tarball: https://github.com/Bainianzzz/dsh-fork-worktree/releases/latest/download/dsh-fork-worktree.tgz
 description:
   en: 'Fork and delete buttons on each workspace row of the Harness sidebar, plus a /fork-worktree command: fork creates a git worktree and registers it as a new workspace, delete removes the workspace folder through git worktree remove (asking again before discarding uncommitted work) and drops the registration.'
   zh: '在 Harness 侧边栏的每个工作区行加 fork 与删除按钮，并提供 /fork-worktree 命令：fork 创建 git worktree 并注册为新工作区，删除通过 git worktree remove 移除工作区文件夹（丢弃未提交内容前会再确认一次）并移除工作区登记。'

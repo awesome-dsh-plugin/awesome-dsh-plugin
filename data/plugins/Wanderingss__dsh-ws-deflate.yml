@@ -1,0 +1,6 @@
+url: https://github.com/Wanderingss/dsh-ws-deflate
+name: Wanderingss/dsh-ws-deflate
+category: remote
+description:
+  en: Enable permessage-deflate on DSH's WebSocket transport without modifying the DSH install tree.
+  zh: 在不修改 DSH 安装目录的前提下，为 DSH 的 WebSocket 传输启用 permessage-deflate。

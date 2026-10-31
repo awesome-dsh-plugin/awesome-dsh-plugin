@@ -1,0 +1,7 @@
+url: https://github.com/aadmin61-design/dsh-selection-chat
+name: aadmin61-design/dsh-selection-chat
+category: ui
+description:
+  en: 'Adds text-selection quote cards above the composer and temporary native sidebar chats, with a Save button to keep a chat in its source workspace.'
+  zh: '在输入框上方添加划词引用卡片，并提供临时原生侧边聊天，可通过保存按钮将会话保留到来源工作区。'
+tarball: https://github.com/aadmin61-design/dsh-selection-chat/releases/download/v1.2.0/local-dsh-selection-chat-1.2.0.tgz

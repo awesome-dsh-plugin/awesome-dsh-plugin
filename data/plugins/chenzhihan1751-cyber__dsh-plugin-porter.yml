@@ -1,0 +1,7 @@
+url: https://github.com/chenzhihan1751-cyber/dsh-plugin-porter
+name: chenzhihan1751-cyber/dsh-plugin-porter
+category: tools
+tarball: https://github.com/chenzhihan1751-cyber/dsh-plugin-porter/releases/download/v0.3.0/dsh-external-dsh-plugin-migrator-0.3.0.tgz
+description:
+  en: "Moves DSH plugins between machines and profiles: export a migration bundle where local plugins keep their source and remote ones reinstall by version, restore it elsewhere with the bundle's own restore.mjs, copy plugins to another profile, or pack the whole environment (config, memory, sessions, attachments, plugin sources) into checksummed volumes with a restore script."
+  zh: "把 DSH 插件搬到另一台机器或另一个 profile：导出迁移包（本地插件带源码、远程插件按版本重装），用包自带的 restore.mjs 在别处恢复，一键复制到其他 profile，或把配置/记忆/会话/附件/插件源码打成带校验分卷并附恢复脚本。"

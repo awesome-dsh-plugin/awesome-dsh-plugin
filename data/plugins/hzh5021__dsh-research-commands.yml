@@ -1,0 +1,6 @@
+url: https://github.com/hzh5021/dsh-research-commands
+name: hzh5021/dsh-research-commands
+category: skill
+description:
+  en: Registers fifteen slash commands (/idea, /review, /poster, ...) that inject the matching research skill's SKILL.md as a user message, so installed skills run without a marketplace. The skills are not bundled and must already be under ~/.dsh/skills or ~/.agents/skills, otherwise commands report skill not found.
+  zh: 把装好的研究技能变成斜杠命令：/idea、/novelty、/review、/poster……一共十五条，敲一下就把对应的 SKILL.md 塞进对话，照着跑那个技能。技能不随包提供，须已装在 ~/.dsh/skills 或 ~/.agents/skills 下，否则命令只提示找不到技能。

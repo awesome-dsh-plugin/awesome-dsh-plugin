@@ -1,0 +1,6 @@
+url: https://github.com/zsenpro/creating/tree/main/plugin
+name: zsenpro/creating#plugin
+category: voice
+description:
+  en: 'GPT-SoVITS voice output for DSH: a speak tool and /voice command, a read-aloud speaker button under each reply, and a settings tab to switch voices, tune synthesis, manage the local service and one-click install a voice pack. Windows only; needs a local GPT-SoVITS checkout with trained weights and its Python environment.'
+  zh: '把本机 GPT-SoVITS 音色接进 DSH：voice_speak 工具与 /voice 命令朗读，每条助手回复下方有喇叭按钮，设置页可切音色、调合成参数、管本地推理服务，并支持一键安装音色包。仅 Windows；需本机已有 GPT-SoVITS 仓库、训练好的权重与它的 Python 环境。'
