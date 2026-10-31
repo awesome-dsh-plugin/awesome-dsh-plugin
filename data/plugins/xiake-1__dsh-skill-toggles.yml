@@ -1,0 +1,6 @@
+url: https://github.com/xiake-1/dsh-skill-toggles
+name: xiake-1/dsh-skill-toggles
+category: skill
+description:
+  en: 'Whitelist-semantics on/off switches for the skills a DSH profile exposes, organised into groups: the effective set is the union of the groups that are switched on, so enabling another group can only add skills, and a built-in group whose membership is derived from the live catalog switches the skills shipped with the harness as a unit. A floating panel over the composer lists skills in sections by origin (plugin package, user, project, custom, other) with search and per-section bulk switches; the composer slash menu and the skill catalog given to the model follow changes without a restart, and nine skill_toggles_* tools expose the same operations to agents. State is one JSON file under DSH_HOME, migrated automatically from the older blacklist format.'
+  zh: '按分组开关 DSH 暴露的技能，白名单语义：生效集合是所有启用中分组的并集，多启用一个分组只会增加可用技能；成员由当前目录自动判定的内置分组，可以把随 harness 发布的自带技能整组开关。输入框上的悬浮面板按来源（插件包、用户、项目、自定义、其他）分节列出技能，支持搜索与整节启停；输入框的 / 菜单与给模型的技能目录随改动更新，无需重启；九个 skill_toggles_* 工具把同样的能力暴露给智能体。状态是 DSH_HOME 下的一个 JSON 文件，会从旧的黑名单格式自动迁移。'
