@@ -1,0 +1,8 @@
+url: https://github.com/yxie15022-debug/dsh-wife-memory
+name: yxie15022-debug/dsh-wife-memory
+category: memory
+tarball: https://github.com/yxie15022-debug/dsh-wife-memory/releases/download/v0.4.1/dsh-wife-memory-0.4.1.tgz
+icon: https://raw.githubusercontent.com/yxie15022-debug/dsh-wife-memory/main/assets/icon-180.png
+description:
+  zh: "只记关于主人的长期记忆：每轮抽出作息、喜好、雷点、情绪触发、在忙什么、约定与说话方式，把很短的摘要注入每轮提示；会按点主动开口或在回复里顺口关心一句，从短句里学作息，记忆攒多了自动整合——带有插件来源与对外发送动作识别、未核实记忆降权与一键撤回。"
+  en: "Long-term memory about the owner: extracts schedule, likes, dislikes, emotional triggers, current focus, promises and tone preferences from each turn, injects a short digest into every prompt, speaks up on a schedule or slips a caring line into replies, learns wake/work/sleep times from short messages, and compacts the memory automatically, with plugin-source and outbound-tool recognition, unverified-memory down-weighting and one-click retract."
