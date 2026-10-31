@@ -1,0 +1,7 @@
+url: https://github.com/levitate403/dsh-firefly-bg
+name: levitate403/dsh-firefly-bg
+category: theme
+description:
+  en: 'Firefly-themed wallpaper background for the DSH Web GUI: four hand-picked wallpapers behind the chat, a canvas firefly field on top, and sliders for veil, blur, particle count and panel transparency.'
+  zh: '给 DSH 的 Web 界面挂一张流萤壁纸，再撒一层萤火虫：四张壁纸可选，遮罩浓度、模糊、萤火虫数量、面板通透度、缓慢漂移都能在设置里调，深色和浅色主题各有两套参数。'
+icon: https://raw.githubusercontent.com/levitate403/dsh-firefly-bg/main/assets/icon-180.png
