@@ -1,0 +1,8 @@
+url: https://github.com/LFELKEEA/dsh-peak-valley
+name: DSH Peak Valley
+category: workflow
+description:
+  en: Stops the QQ bot runtime during Beijing work hours and brings it back off-peak, with holiday and weekend exemptions.
+  zh: 按北京时间工作日峰谷自动停/启 QQ 机器人运行时（SnowLuma、本地语音包、桥接），带法定节假日与周末豁免。
+icon: https://raw.githubusercontent.com/LFELKEEA/dsh-peak-valley/main/assets/icon-180.png
+tarball: https://github.com/LFELKEEA/dsh-peak-valley/releases/download/v0.3.2/dsh-peak-valley.tgz

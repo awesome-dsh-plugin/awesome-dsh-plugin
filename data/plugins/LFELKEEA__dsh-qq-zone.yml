@@ -1,0 +1,8 @@
+url: https://github.com/LFELKEEA/dsh-qq-zone
+name: DSH QQ Zone
+category: tools
+description:
+  en: Publishes and reads QQ Zone posts through OneBot, and lets the agent understand images with a vision model or Windows OCR.
+  zh: 通过 OneBot 发/看/删/赞/评论 QQ 空间说说，并让机器人用视觉模型或 Windows OCR 看懂图片。
+icon: https://raw.githubusercontent.com/LFELKEEA/dsh-qq-zone/master/assets/icon-180.png
+tarball: https://github.com/LFELKEEA/dsh-qq-zone/releases/download/v0.1.1/dsh-qq-zone.tgz
