@@ -1,7 +1,7 @@
 url: https://github.com/Yhx888/dsh-quote-context
 name: Yhx888/dsh-quote-context
 category: ui
-tarball: https://github.com/Yhx888/dsh-quote-context/releases/download/v0.2.2/dsh-quote-context-0.2.2.tgz
+tarball: https://github.com/Yhx888/dsh-quote-context/releases/download/v0.2.3/dsh-quote-context-0.2.3.tgz
 icon: https://raw.githubusercontent.com/Yhx888/dsh-quote-context/main/docs/assets/icon-256.png
 description:
   en: 'Chat quotes for DSH: select text in any message to quote or comment; the quote waits in a Chat quotes chip on the composer (never inside the draft), expands on hover into selected text and your comment, and folds into the message only when you send.'
