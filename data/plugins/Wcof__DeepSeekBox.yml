@@ -1,0 +1,6 @@
+url: https://github.com/Wcof/DeepSeekBox
+name: Wcof/DeepSeekBox
+category: market
+description:
+  en: 'A plugin center for DeepSeek Harness: install, update and enable DSH plugins, aggregate plugin index sources, and install from a git branch. Also publishes a subscribable format-1 plugin index.'
+  zh: 'DeepSeek Harness 插件中心：安装、更新与启停 DSH 插件，聚合插件索引源，支持按分支安装；同时发布可订阅的格式 1 插件索引。'
