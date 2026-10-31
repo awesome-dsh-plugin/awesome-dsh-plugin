@@ -4,5 +4,5 @@ category: vision
 description:
   en: 'Image Designer connects DSH to Shenhuo AI designers, with personal OAuth, material uploads, proposals, credit quote confirmation and local downloads.'
   zh: '神火设计师：连接神火 AI 完成图片设计，支持个人账号 OAuth、素材上传、需求匹配、设计提案、积分报价确认与作品下载。'
-icon: https://raw.githubusercontent.com/chenyth/dsh-image-designer/main/assets/icon.png
-tarball: https://github.com/chenyth/dsh-image-designer/releases/download/v0.1.1/dsh-image-designer-0.1.1.tgz
+icon: https://raw.githubusercontent.com/chenyth/dsh-image-designer/main/assets/icon-red-transparent.png
+tarball: https://github.com/chenyth/dsh-image-designer/releases/download/v0.1.2/dsh-image-designer-0.1.2.tgz
