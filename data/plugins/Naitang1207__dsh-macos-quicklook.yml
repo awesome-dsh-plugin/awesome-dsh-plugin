@@ -1,0 +1,6 @@
+url: https://github.com/Naitang1207/dsh-macos-quicklook
+name: Naitang1207/dsh-macos-quicklook
+category: ui
+description:
+  en: "Adds a space-key Quick Look preview to DSH deliverable cards. Hovering a card and pressing Space opens the native macOS QLPreviewPanel for the file, which covers docx, xlsx, pptx, pdf, images and media that the sidebar preview cannot render. The panel zooms out from the card's position, returns focus to the composer when closed, and exposes hover delay, focus-return and double-click behaviour in Settings > General."
+  zh: "给 DSH 的交付卡片加「按空格用 macOS 原生 Quick Look 预览」的入口。鼠标停在卡片上按空格即打开系统预览面板，覆盖侧栏预览渲染不了的 docx、xlsx、pptx、pdf、图片与音视频。面板从卡片位置放大出现，关闭后焦点回到输入框；悬停延迟、关闭后聚焦、双击预览三项可在设置 > 常规里调。"
