@@ -1,0 +1,8 @@
+```yaml
+url: https://github.com/gchen8102-ops/aurabot-novel
+name: gchen8102-ops/aurabot-novel
+category: usage
+description:
+  en: Aurabot extension module for novel reading, supporting EPUB/PDF.
+  zh: Aurabot 扩展模块，用于小说阅读，支持 EPUB/PDF 等格式。
+```
