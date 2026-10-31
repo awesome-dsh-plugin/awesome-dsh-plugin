@@ -1,0 +1,6 @@
+url: https://github.com/vaspike/dsh-web-fetch-fakeip
+name: vaspike/dsh-web-fetch-fakeip
+category: browser
+description:
+  en: Adds a second web fetch provider that accepts addresses inside a configured CIDR allow list (198.18.0.0/15 by default), so web_fetch works behind Clash, sing-box or Surge fake-ip while loopback, private and other reserved ranges stay blocked.
+  zh: 新增一个网页抓取 provider，接受配置的 CIDR 网段（默认 198.18.0.0/15），让 web_fetch 在 Clash、sing-box、Surge 的 fake-ip 模式下正常工作，同时回环、内网及其他保留网段仍被拦截。
