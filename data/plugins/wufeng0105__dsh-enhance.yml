@@ -1,0 +1,6 @@
+url: https://github.com/wufeng0105/dsh-enhance
+name: wufeng0105/dsh-enhance
+category: identity
+description:
+  en: Appends a text file you write (a persona, content rules, or prompt wording) to the end of the system prompt on every message, and adds three-state out-of-scope approval plus an optional preset whose sandbox is fully open while approval still asks.
+  zh: 把你自己写的一段文本（人设、内容规矩或提示词措辞）接在每条系统提示末尾，另带越界审批三态，以及一个可选的自定义权限档：沙箱全开、越界仍问人。
