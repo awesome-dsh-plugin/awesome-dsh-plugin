@@ -4,3 +4,5 @@ category: workflow
 description:
   en: Runs a project's Claude Code opening questions and plan, hands the task to DSH, and offers post-turn Claude review choices.
   zh: 让 Claude Code 负责项目首问与规划，把任务交接给 DSH，并在回合结束后提供 Claude 验收选项。
+icon: https://raw.githubusercontent.com/huajikano/claude-on-dsh/main/assets/icon-180.png
+tarball: https://github.com/huajikano/claude-on-dsh/releases/download/v1.2.7/claude-on-dsh-1.2.7.tgz
