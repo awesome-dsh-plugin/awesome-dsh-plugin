@@ -1,0 +1,8 @@
+url: https://github.com/MentholTea/dsh-sakurafrp
+name: MentholTea/dsh-sakurafrp
+category: remote
+tarball: https://github.com/MentholTea/dsh-sakurafrp/releases/latest/download/dsh-sakurafrp.tgz
+description:
+  en: 'SakuraFrp tunnel panel inside DSH: it supervises the frpc process itself, so the vendor launcher is not needed. Keeps the tunnel local port and the panel port in sync (probe-then-write in both directions), shows today traffic and remaining quota percentage, can create a TCP tunnel when the account has none, and gates public access behind an HMAC-cookie password page.'
+  zh: '在 DSH 里管理 SakuraFrp 内网穿透：自行托管 frpc 进程，不再需要开官方启动器。隧道「本地端口」与本机端口双向对齐（改前先试绑），显示本日流量与剩余配额百分比，账号没有隧道时可直接新建一条 TCP 隧道，公网入口走 HMAC 签名的密码门。'
+icon: https://raw.githubusercontent.com/MentholTea/dsh-sakurafrp/master/assets/icon-180.png
