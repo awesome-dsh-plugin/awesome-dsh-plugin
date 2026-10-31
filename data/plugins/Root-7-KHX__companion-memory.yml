@@ -2,7 +2,7 @@ url: https://github.com/Root-7-KHX/companion-memory
 name: Root-7-KHX/companion-memory
 category: memory
 icon: https://raw.githubusercontent.com/Root-7-KHX/companion-memory/main/assets/icon.png
-tarball: https://github.com/Root-7-KHX/companion-memory/releases/download/v1.1.3/companion-memory-1.1.3.tgz
+tarball: https://github.com/Root-7-KHX/companion-memory/releases/download/v1.2.0/companion-memory-1.2.0.tgz
 description:
-  en: 'Roleplay companion memory for DeepSeek Harness (short, human-like chat style by default): per-conversation editable persona documents with 1-100 weights per entry (AI may also refine them in small, story-driven steps), per-speaker favorability tracking (multi-person chats), AI self-evolution of traits and preferences, recent 48-hour transcript search, companion-style conversation compression that keeps long chats alive, and a date-archived local knowledge base with auto-packing by turns or tokens.'
-  zh: '《AI记忆》角色扮演伴侣记忆：每个对话独立的人格文档（每条设定可配 1~100 权重，默认允许 AI 小步润色角色性格与例句）、按说话人分别记录的好感度（多人对话）、AI 自我演化的性格/喜好/习惯、最近 48 小时对话检索、按伴侣记忆格式压缩长对话上下文的上下文压缩，以及按日期归档的本地知识库，支持按轮数或按 tokens 自动打包。'
+  en: 'Roleplay companion memory for DeepSeek Harness (short, human-like chat style by default): per-conversation editable persona documents with 1-100 weights per entry (AI may also refine them in small, story-driven steps), per-speaker favorability with per-member memories (multi-person chats), AI self-evolution of traits and preferences, life-log and habit memory, recent 48-hour transcript search, companion-style context compression that keeps long chats alive, a date-archived local knowledge base with auto-packing by turns or tokens, and a built-in app hub with an optional native QQ-bot bridge (per-chat routing to its own AI session, approval and question cards, offline voiceprint speaker recognition).'
+  zh: '《AI记忆》角色扮演伴侣记忆：每个对话独立的人格文档（每条设定可配 1~100 权重，默认允许 AI 小步润色角色性格与例句）、按说话人分别记录的好感度与独立记忆（多人对话）、AI 自我演化的性格/喜好/习惯、生活事件与对话人习惯两栏记忆、最近 48 小时对话检索、按伴侣记忆格式压缩长对话上下文的上下文压缩、按日期归档的本地知识库（支持按轮数或按 tokens 自动打包），并自带「接入软件」页：可选原生 QQ 机器人桥接（每个群聊/私聊路由到独立 AI 会话、审批与提问卡片、离线声纹认人）。'
