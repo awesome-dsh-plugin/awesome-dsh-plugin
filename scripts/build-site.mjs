@@ -177,6 +177,7 @@ const N = ordered.length
 // commit that first added its line to the default-locale README. Nothing is
 // ever written back; git history is the ledger.
 const dates = fs.existsSync(DATES_FILE) ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8')) : {}
+const gitMap = fs.existsSync('data/git-releases.json') ? JSON.parse(fs.readFileSync('data/git-releases.json', 'utf8')) : {}
 const npmMap = fs.existsSync(NPM_MAP_FILE) ? JSON.parse(fs.readFileSync(NPM_MAP_FILE, 'utf8')) : {}
 
 // The plugin market index (format 1) that hosts read as a market source.
@@ -184,7 +185,7 @@ const npmMap = fs.existsSync(NPM_MAP_FILE) ? JSON.parse(fs.readFileSync(NPM_MAP_
 // deploy actually carries one: a push build restores the probe cache, and a
 // cache from before the publish-time field existed lists nothing — in that
 // case the panel is left out instead of advertising a URL that 404s.
-const builtIndex = buildMarketIndex({ entries: readEntries(), npmMap, locales: LOCALES, origin: ORIGIN })
+const builtIndex = buildMarketIndex({ entries: readEntries(), npmMap, gitMap, locales: LOCALES, origin: ORIGIN })
 const indexBuilt = builtIndex.index.plugins.length > 0
 // Minified, not pretty: the host that reads this has a fixed 15 s fetch
 // timeout (dsh 0.2.1 `fetchTimeoutMs`), and one-space indentation added 25%
