@@ -1,0 +1,7 @@
+url: https://github.com/MingoYung/dsh-rea-gateway
+name: MingoYung/dsh-rea-gateway
+category: tools
+tarball: https://github.com/MingoYung/dsh-rea-gateway/releases/download/v0.1.0/dsh-rea-gateway-0.1.0.tgz
+description:
+  en: Provides a REA-focused MCP gateway with three fixed search, describe and call tools, cached schemas, session controls and native DSH result handling.
+  zh: 为 REA 提供按需 MCP 网关，通过三个固定的检索、参数查看与调用入口访问缓存工具定义，支持会话开关并复用 DSH 原生结果处理。
