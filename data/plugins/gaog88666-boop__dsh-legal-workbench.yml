@@ -1,0 +1,6 @@
+url: https://github.com/gaog88666-boop/dsh-legal-workbench
+name: gaog88666-boop/dsh-legal-workbench
+category: ui
+description:
+  en: "A right-sidebar workbench for legal practice backed by a folder of Markdown notes: SOP lookup, recordings with live transcription and line-level annotations, an inline glossary, and full-text search. Optional email rules library, Pkulaw points and usage badges. Everything stays on the local machine."
+  zh: "以 Markdown 笔记文件夹为事实源的法律实务工作台：SOP 速查、录音实时转写与逐句批注、可编辑术语表、全文搜索；可选邮件规则库、法宝积分与用量角标。所有数据只在本机。"
