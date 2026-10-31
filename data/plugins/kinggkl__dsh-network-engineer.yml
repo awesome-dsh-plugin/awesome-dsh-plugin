@@ -1,0 +1,6 @@
+url: https://github.com/kinggkl/dsh-network-engineer
+name: kinggkl/dsh-network-engineer
+category: skill
+description:
+  en: "Network Engineer Assistant preset plus a 12-vendor, 96-document switch/router/firewall command knowledge base skill (Huawei, H3C, Ruijie, DPtech, Cisco IOS/IOS-XE, Cisco NX-OS, Juniper Junos, Arista EOS, Fortinet FortiOS, ZTE ZXR10, VyOS, MikroTik RouterOS) with KB-first retrieval, cross-vendor command translation, topology and CLI screenshot reading, cited online manual lookup, and mandatory risk annotations for dangerous commands; answers networking topics only."
+  zh: "网络工程师助手预设 + 12 厂商 96 篇交换机/路由器/防火墙命令知识库技能（华为/新华三/锐捷/迪普/思科 IOS·NX-OS/Junos/Arista EOS/FortiOS/中兴/VyOS/MikroTik），支持知识库优先检索、跨厂商命令对照、拓扑与 CLI 截图识图、带引用的联网查手册，并对高危命令强制 ⚠️ 风险标注；仅回答网络工程主题。"
