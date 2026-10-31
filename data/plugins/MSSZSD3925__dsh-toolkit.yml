@@ -3,5 +3,5 @@ name: MSSZSD3925/dsh-toolkit
 category: tools
 description:
   en: "Five DSH utilities in one plugin: drive existing sessions over QQ, ask another session a question with a context guard, pause the running turn, restart DSH with optional auto-resume, and inject peak-hour token discipline."
-  zh: "浜斾釜 DSH 灏忓姛鑳藉悎涓€涓彃浠讹細鐢?QQ 杩滅▼椹鹃┒宸叉湁浼氳瘽銆佸悜鍙︿竴涓細璇濇彁闂紙甯︿笂涓嬫枃瀹堝崼锛夈€佺晫闈㈡殏鍋滄寜閽€侀噸鍚?DSH 骞跺彲閫夎嚜鍔ㄧ画璺戙€佽吹鏃舵绾緥娉ㄥ叆銆?
+  zh: "五个 DSH 小功能合一个插件：用 QQ 远程驾驶已有会话、向另一个会话提问（带上下文守卫）、界面暂停按钮、重启 DSH 并可选自动续跑、贵时段纪律注入。"
 tarball: https://github.com/MSSZSD3925/dsh-toolkit/releases/download/v0.4.1/dsh-toolkit-0.4.1.tgz
