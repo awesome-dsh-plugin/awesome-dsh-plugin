@@ -1,0 +1,6 @@
+url: https://github.com/zou-hong-run/dsh-deepseek-search
+name: zou-hong-run/dsh-deepseek-search
+category: browser
+description:
+  en: 'Registers DeepSeek Search and Fetch API providers for the ctx.web seam, replacing both the web_search and web_fetch backends with DeepSeek''s Search and Fetch JSON APIs, with configurable retries and backoff, settings that apply to the next call, and a configuration page on the bundle page.'
+  zh: '在 ctx.web 接缝上注册 DeepSeek Search / Fetch API 的搜索与抓取 provider，用 DeepSeek 的 Search / Fetch JSON API 替换 web_search 与 web_fetch 两个后端；支持可配置的重试与退避、下次调用即生效的实时设置，以及 bundle 详情页里的配置页。'
