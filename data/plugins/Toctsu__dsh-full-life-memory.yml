@@ -1,0 +1,6 @@
+url: https://github.com/Toctsu/dsh-full-life-memory
+name: Toctsu/dsh-full-life-memory
+category: memory
+description:
+  en: A biomimetic memory plugin for DSH that folds context into token clues and reconstructs memories on-demand.
+  zh: 记忆插件，将上下文折叠为Token线索并重建记忆，告别上下文溢出，给模型完整的一生。
