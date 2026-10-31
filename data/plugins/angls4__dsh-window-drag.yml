@@ -4,3 +4,4 @@ category: ui
 description:
   en: Restores title-bar window dragging and double-click zoom in DeepSeek Harness Desktop on macOS.
   zh: 恢复 DeepSeek Harness 桌面版（macOS）标题栏的窗口拖动与双击缩放。
+icon: https://raw.githubusercontent.com/angls4/dsh-window-drag/main/assets/icon.png
