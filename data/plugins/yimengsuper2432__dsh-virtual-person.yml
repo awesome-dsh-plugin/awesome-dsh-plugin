@@ -1,0 +1,6 @@
+url: https://github.com/yimengsuper2432/dsh-virtual-person
+name: yimengsuper2432/dsh-virtual-person
+category: identity
+description:
+  en: 'Persona and memory from a single AGENT.md: the whole file is injected as the system prompt in every session, a Settings page edits it, and per-turn diary lines are merged by similarity, grouped by how often they were recalled, and pruned only at a 2 MB cap.'
+  zh: '一份 AGENT.md 同时管人格与记忆：整份注入每个会话的系统提示，设置页直接编辑；每轮日记按相似度合并、按被提起的次数分节，只有到 2 MB 上限才淘汰。'
