@@ -1,0 +1,6 @@
+url: https://github.com/DongHua3/dsh-tokenrhythm
+name: DongHua3/dsh-tokenrhythm
+category: usage
+description:
+  en: 'Tokenrhythm billing center for DeepSeek Harness: account balance and expiring quota, model price cards, a 30-day usage heat calendar, connectivity checks and platform API-key management, with credentials kept on the local host.'
+  zh: '基元律动费用中心：账户余额与限时额度、模型价格卡、近 30 天用量热力日历、连通检测与平台密钥管理，凭据只存本机 host。'
