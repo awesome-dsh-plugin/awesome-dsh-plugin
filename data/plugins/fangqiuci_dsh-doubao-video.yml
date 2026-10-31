@@ -1,0 +1,7 @@
+url: https://github.com/fangqiuci/dsh-doubao-video
+name: fangqiuci/dsh-doubao-video
+category: video
+tarball: https://registry.npmjs.org/dsh-doubao-video/-/dsh-doubao-video-0.1.2.tgz
+description:
+  zh: "豆包视频工坊：把分镜脚本做成成片的全流程闸门。风格锁定、分镜 12 字段机检、角色卡与参考图分离、场景命名规范、首尾帧衔接校验；配 ffmpeg 做取帧、混音、字幕与拼接，支持把豆包网页的生成过程收进插件里跑。"
+  en: "Doubao video workshop: a gated pipeline from storyboard to finished cut. Locked art direction, 12-field shot validation, character-card vs reference-image separation, scene naming rules, and first/last-frame continuity checks; ffmpeg handles frame extraction, audio mixing, subtitles and concatenation, with the Doubao web UI driven from inside the plugin."
