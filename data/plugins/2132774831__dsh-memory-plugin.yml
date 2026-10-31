@@ -1,0 +1,7 @@
+url: https://github.com/2132774831/dsh-memory-plugin
+name: 2132774831/dsh-memory-plugin
+category: memory
+tarball: https://github.com/2132774831/dsh-memory-plugin/releases/latest/download/dsh-local-memory.tgz
+description:
+  en: 'Fully local long-term memory for dsh: cross-conversation and cross-project, stored as a single JSON file on your machine with no network calls, no model calls and no API key. Ships memory_save, memory_search, memory_list, memory_forget and memory_review tools, keyword-and-tag recall injected before each turn with adjustable ranking weights, Markdown import and export (including Kun and Hermes Agent formats), and a settings page to browse and edit memories.'
+  zh: '纯本地长期记忆：跨对话、跨项目，数据只存本机一个 JSON 文件，不联网、不调大模型、不需要 API key。提供 memory_save / memory_search / memory_list / memory_forget / memory_review 五个工具；每轮按关键词与标签检索并注入相关记忆，检索权重可调；支持 Markdown 导入导出（含 Kun 与 Hermes Agent 格式）；设置页可直接浏览与编辑记忆。'
