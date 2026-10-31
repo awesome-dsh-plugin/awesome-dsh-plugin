@@ -1,0 +1,7 @@
+url: https://github.com/4KAForever11/dsh-connect-gemini
+name: 4KAForever11/dsh-connect-gemini
+category: model
+description:
+  en: "Brings the Gemini desktop app's existing web login into DeepSeek Harness as a native model provider. The plugin decrypts the local session cookie (DPAPI + AES-256-GCM), so no API key or OAuth flow is needed, and registers four text models (3.5 Flash-Lite, 3.8 Flash, 3.1 Pro, 4 Argon) with per-model thinking levels. An always-on widget in the lower-right corner reads the live quota percentage and each pool's refresh countdown on every page load, the HTTP proxy is optional (leave it blank for a true direct connection that ignores HTTP_PROXY), and a one-click connectivity check reports data directory, cookie decryption, login state, and quota API step by step. Credentials stay in memory and never enter the repository."
+  zh: "把 Gemini 桌面客户端已登录的网页会话接入 DeepSeek Harness，作为原生模型提供方。插件解密本机登录 Cookie（DPAPI + AES-256-GCM），无需 API Key 或 OAuth 授权，注册四个文本模型（3.5 Flash-Lite、3.8 Flash、3.1 Pro、4 Argon）并支持按模型映射思考等级。页面右下角常驻挂件每次刷新都读取实时用量百分比与各额度池的刷新倒计时；HTTP 代理可选，留空即真正直连并显式忽略 HTTP_PROXY；一键连通性检测逐项报告数据目录、Cookie 解密、登录态与用量接口。凭据只存在内存里，绝不进入仓库。"
+icon: https://raw.githubusercontent.com/4KAForever11/dsh-connect-gemini/main/icons/icon-180.png
