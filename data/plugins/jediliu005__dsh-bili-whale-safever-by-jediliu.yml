@@ -1,0 +1,6 @@
+url: https://github.com/jediliu005/dsh-bili-whale-safever-by-jediliu
+name: jediliu005/dsh-bili-whale-safever-by-jediliu
+category: tools
+description:
+  en: 'Bilibili companion for DSH (MIT fork of dsh-bili-whale): wakes on a schedule, reads videos through subtitles, danmaku, hot comments and covers, writes two diaries, and shares at most one pick per day over Bilibili DM. Every Bilibili-sourced message is normalized and scanned for injected instructions before it reaches the model, and only the owner DM channel can carry an authorization prefix.'
+  zh: 'DSH 的 B 站养鱼插件（dsh-bili-whale 的 MIT 分叉）：按作息自己醒来，靠字幕、弹幕、热评与封面读懂视频，写两本日记，每天最多私信分享一条。所有 B 站来源的文字在进模型前先归一化、扫描可疑指令并加不可信边界；只有主人私信通道能携带授权前缀。'
