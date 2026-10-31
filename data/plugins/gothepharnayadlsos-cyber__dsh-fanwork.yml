@@ -1,6 +1,7 @@
-url: https://github.com/gothepharnayadlsos-cyber/-
-name: gothepharnayadlsos-cyber/-
+url: https://github.com/gothepharnayadlsos-cyber/dsh-fanwork
+name: gothepharnayadlsos-cyber/dsh-fanwork
 category: workflow
 description:
   en: 'Logic-risk review before rewriting: audit the source, decide each fix, generate several drafts in parallel, and export with a per-draft audit report.'
   zh: '改写前先做逻辑体检：审原文风险、逐条裁决，再并行出多稿，每稿附六维审核报告。'
+icon: https://raw.githubusercontent.com/gothepharnayadlsos-cyber/dsh-fanwork/main/assets/icon-180.png
