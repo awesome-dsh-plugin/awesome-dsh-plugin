@@ -2,5 +2,5 @@ url: https://github.com/wang111928/dsh-huawei-connect
 name: wang111928/dsh-huawei-connect
 category: model
 description:
-  en: Connect Huawei CodeArts and OfficeAce models to DeepSeek Harness: one sign-in, credit balances, per-model toggles, and official-client-shaped requests.
+  en: 'Connect Huawei CodeArts and OfficeAce models to DeepSeek Harness: one sign-in, credit budgets, per-model toggles, and official-client-shaped requests.'
   zh: 把华为「码道 CodeArts」与「果办 OfficeAce」两个平台的模型接入 DeepSeek Harness：一处登录、积分余量与模型勾选、官方客户端同形态的请求伪装。
