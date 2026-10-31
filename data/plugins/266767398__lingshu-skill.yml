@@ -1,0 +1,6 @@
+url: https://github.com/266767398/lingshu-skill
+name: 266767398/lingshu-skill
+category: memory
+description:
+  en: "Brain-inspired persistent memory, persona and growth system for AI coding agents. Short-term memory, dream-like consolidation, persona with rollback history, and a local visualization panel. Pure Python, zero dependencies, local-only."
+  zh: 类脑持久记忆、人格与成长系统——跨会话记忆、做梦式压缩巩固、可回滚的人格演化、本地可视化面板。纯 Python 零依赖，纯本地运行。
