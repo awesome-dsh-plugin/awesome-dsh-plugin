@@ -1,0 +1,6 @@
+url: https://github.com/HarryHeYu/figcraft
+name: HarryHeYu/figcraft
+category: tools
+description:
+  en: 'Scientific figures as code: agents create a versioned figure IR, patch it incrementally (one node at a time — untouched objects never move), and export publication-ready, true-vector SVG / PDF / PPTX. Seven papercanvas_* tools (create, get, patch, layout, lint, render, inspect) over a deterministic engine with FC001-FC008 quality lint and CJK-aware font resolution. Verified on DSH 0.1.5-rc.3 through 0.2.2-alpha.2. By the author of dsh-sessionflow.'
+  zh: '论文图即代码：Agent 创建版本化 Figure IR，经语义化 Patch 增量修改（单节点粒度——未指定的对象绝不动），确定性导出可编辑的 SVG / PDF / PPTX 真矢量图。七个 papercanvas_* 工具覆盖创建、读取、修改、布局、Lint（FC001–FC008 质量检查）、渲染与检视；中文标签自动使用系统 CJK 字体度量与嵌入。已验证 DSH 0.1.5-rc.3 至 0.2.2-alpha.2 各渠道。dsh-sessionflow 同作者作品。'
