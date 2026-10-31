@@ -1,0 +1,6 @@
+url: https://github.com/OverDustD7/thu-tok-auto
+name: OverDustD7/thu-tok-auto
+category: model
+description:
+  en: 'Fetches and renews Tsinghua MadModel API tokens on a 20-minute timer by replaying the saved SSO session, writes the token into the DSH credential MADMODEL_API_KEY and creates or reuses the madmodel model provider; a manual Get opens the campus login window and captures the session in one click.'
+  zh: '按 20 分钟定时用保存的 SSO 会话重放，刷新清华 MadModel 的 API token，写入 DSH 凭据 MADMODEL_API_KEY 并创建或复用 madmodel 模型 Provider；手动点 Get 会打开校内登录窗口，登录一次即自动捕获会话。'
