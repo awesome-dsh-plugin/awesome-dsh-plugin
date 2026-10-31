@@ -1,7 +1,7 @@
 url: https://github.com/HOPE-LGNF/dsh-state-notifier
 name: HOPE-LGNF/dsh-state-notifier
 category: notify
-tarball: https://github.com/HOPE-LGNF/dsh-state-notifier/releases/download/v0.3.1/dsh-state-notifier-0.3.1.tgz
+tarball: https://github.com/HOPE-LGNF/dsh-state-notifier/releases/download/v0.6.0/dsh-state-notifier-0.6.0.tgz
 description:
-  en: 'Five task-state reminders for DeepSeek Harness (completion, approval, question, block, error) with four synthesized browser sound presets, system notifications that open the right session, and a terminal-BEL fallback when no browser is ready.'
-  zh: '为 DeepSeek Harness 提供五类任务状态提醒（完成、审批、提问、受阻、出错）：四种浏览器合成音方案、可点击回到会话的系统通知，没有就绪浏览器时降级为终端 BEL。'
+  en: 'Five task-state reminders for DeepSeek Harness (completion, approval, question, block, error) with four synthesized browser sound presets, optional question text in the notification, an optional native Windows and WSL toast channel that bypasses Focus Assist, and a terminal-BEL fallback when no browser is ready.'
+  zh: '为 DeepSeek Harness 提供五类任务状态提醒（完成、审批、提问、受阻、出错）：四种浏览器合成音方案、可在通知中显示提问正文、可选的原生 Windows/WSL 通知通道（可越过专注助手），没有就绪浏览器时降级为终端 BEL。'
