@@ -1,0 +1,6 @@
+url: https://github.com/kanmanJO/dsh-task-sfx
+name: kanmanJO/dsh-task-sfx
+category: notify
+description:
+  en: 'Plays a random chime when a reply finishes, a one-shot reminder chime if the conversation stays quiet for a configurable number of seconds afterwards, and a chime the moment DSH needs you to step in: an approval request, a question, or a plan confirmation. Three independent switches and sound pools, persisted on disk.'
+  zh: '每轮回复结束随机播一声完成音效；之后若静默到设定秒数，再补响一次提醒；DSH 需要你出面（审批、提问、确认计划）时立刻响一声。三个独立开关与三个音效池，全部落盘持久化。'
