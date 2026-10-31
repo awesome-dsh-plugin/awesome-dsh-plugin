@@ -1,6 +1,0 @@
-url: https://github.com/Zzz11042/dsh-research-kit
-name: Zzz11042/dsh-research-kit
-category: usage
-description:
-  en: "Local-first research toolkit for DSH: registers kb_grep, kb_list, and kb_save model tools that read and write a markdown knowledge base (default ~/dsh-kb) through the scoped ctx.fs filesystem service, plus two skills (local-first-research protocol and session-memory protocol for querying prior DSH sessions). The plugin is pure Node ESM with zero runtime dependencies and ships a framework-free node test harness. Install via plugin_manager install_bundle; no client UI is bundled."
-  zh: "面向 DSH 的本地优先研究工具包：注册 kb_grep / kb_list / kb_save 三个模型工具，经由作用域化的 ctx.fs 文件系统服务读写 markdown 知识库（默认 ~/dsh-kb），并附带两个 skill（local-first-research 本地优先研究协议、session-memory 历史会话取证协议）。插件为纯 Node ESM、零运行时依赖，附无框架的 node 测试。通过 plugin_manager 的 install_bundle 安装；不含前端 UI。"
