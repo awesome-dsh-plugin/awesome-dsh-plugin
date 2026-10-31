@@ -1,0 +1,7 @@
+url: https://github.com/SMPcosy/dsh-easy2restart
+name: SMPcosy/dsh-easy2restart
+category: session
+description:
+  en: 'Asks before archiving a DeepSeek Harness session, then backs the archived copy up to a directory you choose — one folder per session with the session log, its attachments and the metadata, plus a manifest, a restore note and a Markdown ledger. Adds a right-sidebar browser for archived sessions and a one-click restart button that stays disabled while a session is running.'
+  zh: '归档 DeepSeek Harness 会话前先确认，归档后把副本自动备份到你指定目录：每个会话一个文件夹（会话日志、附件、元数据），另附清单、还原说明与 Markdown 台账。并提供右侧栏的已归档会话浏览器与一键重启按钮（会话运行中时按钮禁用）。'
+icon: https://raw.githubusercontent.com/SMPcosy/dsh-easy2restart/main/icon.png
