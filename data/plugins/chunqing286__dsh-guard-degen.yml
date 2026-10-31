@@ -1,0 +1,7 @@
+url: https://github.com/chunqing286/dsh-guard-degen
+name: chunqing286/dsh-guard-degen
+category: tools
+description:
+  en: Detect and contain runaway symbol streams at the model boundary in DeepSeek Harness, with tooling to repair polluted artifacts and sessions.
+  zh: 在模型输出边界检测并拦截退化符号流，并提供修复被污染工件与会话的工具。
+icon: https://raw.githubusercontent.com/chunqing286/dsh-guard-degen/main/assets/icon-180.png
