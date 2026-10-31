@@ -1,0 +1,6 @@
+url: https://github.com/snnnnke/dsh-folder-launcher
+name: snnnnke/dsh-folder-launcher
+category: ui
+description:
+  en: Adds folders to a running DSH Web workspace from the Windows Explorer context menu and starts dsh web automatically when needed.
+  zh: 从 Windows 资源管理器右键把文件夹加入正在运行的 DSH 网页版工作区，并在需要时自动启动 dsh web。
