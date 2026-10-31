@@ -1,0 +1,6 @@
+url: https://github.com/maxlee/dsh-pen-dev
+name: maxlee/dsh-pen-dev
+category: tools
+description:
+  en: Mounts the pen.dev desktop app MCP server in a DSH session so the model can read and edit the .pen document open in Pen through the get_app_state, read_skill, execute, get_style and browser tools; finds the server binary by probing the usual install paths, and adds a pen-dev skill plus a listener that turns pen.dev plan-limit failures into a short bilingual notice. Unofficial, and ships no pen.dev binaries.
+  zh: 把 pen.dev 桌面应用的 MCP 服务器挂进 DSH 会话，模型即可通过 get_app_state、read_skill、execute、get_style、browser 读取并修改 Pen 中打开的 .pen 文档；服务器二进制按常见安装路径探测定位，另附一个 pen-dev 技能，以及一个把 pen.dev 额度用尽错误改写成简短中英提示的监听器。非官方项目，不含 pen.dev 任何二进制。

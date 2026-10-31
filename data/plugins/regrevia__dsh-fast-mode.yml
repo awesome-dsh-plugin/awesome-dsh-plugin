@@ -1,7 +1,16 @@
 url: https://github.com/regrevia/dsh-fast-mode
 name: regrevia/dsh-fast-mode
-category: agi
+category: usage
 description:
-  en: 'Cuts whole-task wall clock by about a quarter by batching independent reads into one round; the model, the reasoning effort and the request body stay untouched.'
-  zh: '整任务快四分之一：只把互不依赖的读并成一批，模型、思考强度和请求体一动不动。'
+  en: >-
+    DeepSeek Harness's own fast mode: a few configs that set how fast a task runs — bound where
+    thinking settles, bound the process narration, bound the steps per task — faster delivery
+    without touching the model or its thinking strength. Measured over 10 task families and 30
+    complete units: the default reaches 0.72x total time, 0.74x output tokens and 0.71x steps;
+    moving the "write it once" reminder from step 4 to step 2 gives debugfix 0.535x, ledger
+    0.506x, migrate 0.751x, and 0.625x pooled over 13 pairs with 0.614x output tokens (migrate
+    alone 0.509x with 0.528x output at step 3). Hidden tests passed in every pair. Short 1-5 step
+    repairs and data reshaping do not pay for the reminder, so try it once per task shape.
+  zh: >-
+    DeepSeek Harness 自己的快速模式：用几项配置控制任务的运行速度——限制思考在哪一步收敛、限制中间汇报的输出、限制最多几步，在不改变模型与思考强度的前提下把任务做快。实测 10 类任务 30 个完整单元：默认配置总耗时 0.72×、输出 token 0.74×、步数 0.71×；把「省着写」提醒从第 4 步提前到第 2 步，debugfix 0.535×、ledger 0.506×、migrate 0.751×，13 对合并 0.625×、输出 token 0.614×（第 3 步时 migrate 单族 0.509×、输出 0.528×）。每一对里两臂隐藏断言逐格相同、全绿。1–5 步的小改修与数据整形收不回提醒成本，按任务形状先试一次再定。
 icon: https://raw.githubusercontent.com/regrevia/dsh-fast-mode/main/icon.png

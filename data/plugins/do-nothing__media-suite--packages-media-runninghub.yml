@@ -1,0 +1,7 @@
+url: https://github.com/do-nothing/media-suite/tree/main/packages/media-runninghub
+name: do-nothing/media-suite#media-runninghub
+category: vision
+description:
+  en: 'RunningHub media tools: synchronous image generation, plus a background workflow pool for image editing, video generation, voice cloning, digital humans, and music.'
+  zh: 'RunningHub 媒体工具：同步图片生成，以及覆盖图片编辑、视频生成、语音克隆、数字人与音乐的后台工作流任务池。'
+icon: https://raw.githubusercontent.com/do-nothing/media-suite/main/assets/icon-180.png

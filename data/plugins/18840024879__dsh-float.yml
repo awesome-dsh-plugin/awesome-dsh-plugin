@@ -1,0 +1,7 @@
+url: https://github.com/18840024879/dsh-float
+name: 18840024879/dsh-float
+category: ui
+description:
+  en: 'Windows desktop floating assistant for DeepSeek Harness: an always-on-top chat panel with streaming answers, model switching, and region-screenshot questions.'
+  zh: 'Windows 桌面悬浮助手：常驻置顶的对话面板，框选屏幕区域直接提问，支持流式回答、模型切换与历史记录。'
+icon: https://raw.githubusercontent.com/18840024879/dsh-float/main/assets/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/SQHLnb666/mindsea
+name: SQHLnb666/mindsea
+category: memory
+description:
+  en: 'A long-term memory plugin for DeepSeek Harness. Every turn is judged and stored into a local SQLite (utterance / event / version / stage / decision), with a browsable panel.'
+  zh: '给 DeepSeek Harness 的长期记忆插件。每轮聊完自动把话判一遍，存进本地 SQLite（话、事、版本、阶段、决定五层），带一块能翻能筛的面板。'

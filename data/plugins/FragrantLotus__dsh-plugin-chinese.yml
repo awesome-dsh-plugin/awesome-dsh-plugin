@@ -1,0 +1,6 @@
+url: https://github.com/FragrantLotus/dsh-plugin-chinese
+name: FragrantLotus/dsh-plugin-chinese
+category: ui
+description:
+  en: "Fills in a Chinese description for every installed DSH plugin that ships only an English one, at startup and again after each plugin change, and never rewrites a plugin name. Plugins that already export a locale folder show the new text on refresh; the rest are patched too — the in-memory layer shows Chinese immediately, and the on-disk locale pack it writes needs one restart."
+  zh: 给只提供英文简介的已安装 DSH 插件自动补上中文简介，启动时以及每次插件变动后各跑一次，插件名称一律不改。原本已导出语言包的插件刷新页面即生效，原本没有语言包导出的也会自动补上：内存注入层即时生效，写入磁盘的语言包需重启一次。

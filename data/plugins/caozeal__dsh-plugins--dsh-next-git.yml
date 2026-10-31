@@ -1,0 +1,7 @@
+url: https://github.com/caozeal/dsh-plugins/tree/main/dsh-next-git
+name: caozeal/dsh-plugins#dsh-next-git
+category: git
+description:
+  en: 'Git tab in the DSH web UI right sidebar for the current session repository — switches branches from a dropdown of local and remote branches (with ahead/behind counts), stages files in staged/unstaged/untracked/conflicted groups, commits, fetches, pulls and pushes with automatic upstream setup, drafts a Conventional Commits message from the staged diff with the default model and falls back to a plain chore message when none is available, and renders git log --graph with per-branch colors plus a word-level highlighted diff.'
+  zh: 'DSH Web 右侧边栏的 Git tab，跟随当前会话的仓库：下拉切换本地/远程分支（带 ahead/behind），按 staged/unstaged/untracked/conflicted 分组暂存，提交、fetch、pull、push（无 upstream 时自动建跟踪分支），用默认模型按已暂存 diff 起草约定式提交信息（模型不可用时降级为普通 chore 文案），并以每条分支一种颜色的形式渲染 git log --graph 和词级高亮的 diff。'
+icon: https://raw.githubusercontent.com/caozeal/dsh-plugins/main/dsh-next-git/icon.png

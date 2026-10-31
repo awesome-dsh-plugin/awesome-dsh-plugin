@@ -1,0 +1,8 @@
+url: https://github.com/clrockrock/dsh-graphify
+name: clrockrock/dsh-graphify
+category: tools
+icon: https://raw.githubusercontent.com/clrockrock/dsh-graphify/main/assets/icon-256.png
+tarball: https://github.com/clrockrock/dsh-graphify/releases/latest/download/dsh-graphify.tgz
+description:
+  en: 'Codebase knowledge graphs for DeepSeek Harness: seven graphify_* Agent tools, a /graphify command, and a Graphify page build and query a project graph locally with AST parsing (no API key), plus path/explain/god-node lookups and wiki/HTML/SVG/GraphML/Obsidian exports. Requires the graphify CLI (graphifyy); only full document/PDF/image extraction needs an LLM key.'
+  zh: '为 DeepSeek Harness 提供代码库知识图谱：7 个 graphify_* Agent 工具、/graphify 命令与 Graphify 页面，用本地 AST 解析构建并查询项目图谱（无需 API Key），支持路径 / 解释 / 枢纽节点查询与 wiki、HTML、SVG、GraphML、Obsidian 导出。需先安装 graphify CLI（graphifyy）；只有含文档 / PDF / 图片的完整抽取需要 LLM Key。'

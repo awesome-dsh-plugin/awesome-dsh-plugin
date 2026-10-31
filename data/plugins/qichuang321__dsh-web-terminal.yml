@@ -1,0 +1,6 @@
+url: https://github.com/qichuang321/dsh-web-terminal
+name: qichuang321/dsh-web-terminal
+category: ui
+description:
+  en: 'Windows terminal dock inside the DSH web GUI. It is the occupant of the shipped shell.bottom slot: showing it splits the screen (the columns shrink instead of being covered), hiding it returns the space and keeps the PTY session alive. Each session is a local ConPTY child spawned through node-pty and rendered by xterm.js over a loopback-fenced WebSocket (backpressure, debounced resize). Other plugins can add terminal or DOM views through a host registerView API and a window CustomEvent channel.'
+  zh: '嵌入 DSH Web GUI 的 Windows 终端 dock。它占用官方 shell.bottom 槽位：显示时真正分屏（三列高度自动让位而非被盖住），隐藏后空间归还且 PTY 会话不销毁。每个会话是 node-pty 起的本地 ConPTY 子进程，浏览器用 xterm.js 渲染，经 loopback 限定的 WebSocket 传输（带背压与 resize 去抖）。其他插件可通过宿主 registerView API 与 window CustomEvent 通道注册终端或 DOM 视图。'

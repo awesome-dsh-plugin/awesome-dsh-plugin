@@ -1,0 +1,6 @@
+url: https://github.com/kdcadmin/dsh_qzone_sticker
+name: kdcadmin/dsh_qzone_sticker
+category: tools
+description:
+  en: 'QQ Zone poster for DeepSeek Harness: scan a QQ login once, then let the model publish posts with mood-matched sticker images, with a daily cap and a silent headless Chrome session.'
+  zh: 'QQ 空间发说说插件：手机 QQ 扫一次码登录，之后由模型按心情挑表情包发说说，支持每天条数上限，静默 Chrome 不占屏。'

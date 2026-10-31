@@ -1,0 +1,6 @@
+url: https://github.com/dogbotowo-oss/dsh-long-conversation-memory
+name: dogbotowo-oss/dsh-long-conversation-memory
+category: memory
+description:
+  en: 'Long-conversation memory for DeepSeek Harness (DSH): keeps settled decisions, user corrections and exact numbers, with their conditions and sources, available across compaction and restarts in 100-1000+ turn sessions; one small budgeted evidence block per model step, with enabled skill rules re-applied in the same block.'
+  zh: 'DeepSeek Harness 长会话记忆插件：把已经定下来的决定、用户的纠正和精确数字连同统计口径与来源存下来，压缩或重启后仍能找回、复用，适合 100–1000+ 轮会话；每步只注入一小段有预算的证据块，已启用的 skill 规则也在这块里按任务重新装配。'

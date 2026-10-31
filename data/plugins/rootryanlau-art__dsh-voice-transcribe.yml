@@ -1,0 +1,6 @@
+url: https://github.com/rootryanlau-art/dsh-voice-transcribe
+name: rootryanlau-art/dsh-voice-transcribe
+category: voice
+description:
+  en: Transcribe local audio and video files offline with a composer panel, a CLI, and an agent skill, powered by SenseVoice int8.
+  zh: 在输入框面板、命令行与 agent 技能里离线转写本地音视频文件，引擎为 SenseVoice int8。

@@ -1,0 +1,7 @@
+url: https://github.com/ltmroberthk915/markpilot/tree/main/dsh-markdown-typora
+name: ltmroberthk915/markpilot#dsh-markdown-typora
+category: docs
+description:
+  en: 'Markdown editor for the DSH right sidebar with live math and Mermaid rendering, version-guarded saves, and selected text inserted directly into the chat.'
+  zh: 'DSH 右侧栏 Markdown 编辑面：实时渲染公式与 Mermaid，版本守卫保存，选中文段直接插入对话。'
+tarball: https://github.com/ltmroberthk915/markpilot/releases/download/dsh-markdown-typora-v0.3.1/dsh-markdown-typora-0.3.1.tgz

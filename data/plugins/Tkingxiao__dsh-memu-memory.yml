@@ -1,0 +1,7 @@
+url: https://github.com/Tkingxiao/dsh-memu-memory
+name: Tkingxiao/dsh-memu-memory
+category: memory
+description:
+  en: "Memory for long-form RP and companion chats: three fading layers, per-turn recall, source labels, character and world boundaries, a relationship graph, image attachments and a WebUI."
+  zh: "面向长篇 RP 与陪伴对话的记忆插件：三层记忆、逐轮召回、来源标注、角色与世界线边界、关系图、图片附件与独立 WebUI。"
+icon: https://raw.githubusercontent.com/Tkingxiao/dsh-memu-memory/main/assets/icon-256.png

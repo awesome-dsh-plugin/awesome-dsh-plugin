@@ -1,0 +1,6 @@
+url: https://github.com/Lloydly007/dsh-bark-notify
+name: Lloydly007/dsh-bark-notify
+category: notify
+description:
+  en: 'Bark push notifications for DeepSeek Harness: turn completion, waiting prompts and approvals, plus opt-in background-job cards. Devices and card settings are edited live, and each push checks the per-device result returned by the Bark server and retries transient failures.'
+  zh: '面向 DeepSeek Harness 的 Bark 推送：回合结束、等待选择/批准，以及可选的后台任务卡片；设备和卡片参数在设置里实时生效，每次推送按 Bark 服务器返回的设备结果逐台核对，瞬时失败会自动重试。'

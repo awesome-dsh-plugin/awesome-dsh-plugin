@@ -1,0 +1,6 @@
+url: https://github.com/rentaoyan0628-collab/dsh-bili-danmaku-lite
+name: rentaoyan0628-collab/dsh-bili-danmaku-lite
+category: notify
+description:
+  en: "Bilibili live-room danmaku for DSH: read live chat, send messages only after explicit confirm, hang out in a room in the background, optionally let the model decide whether to reply, and optionally transcribe stream audio to text; no video understanding. Setup needs a Python 3 venv with the bundled requirements plus Bilibili cookies; transcription additionally needs ffmpeg and a Whisper engine."
+  zh: "DSH 的 B 站直播弹幕插件：看弹幕、确认后才发弹幕、挂机听、可选 AI 自动接话与可选语音转写；不抽帧、不做视觉理解。使用前需自建 Python 3 虚拟环境并装好仓库里的 requirements，发弹幕需 B 站凭证；语音转写另需 ffmpeg 与 Whisper 引擎。"

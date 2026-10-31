@@ -1,0 +1,7 @@
+url: https://github.com/Clukay-Fun/dsh-gpt-link
+name: Clukay-Fun/dsh-gpt-link
+category: model
+description:
+  en: Signs in to ChatGPT by driving DSH's bundled pi-ai Codex OAuth flow from a settings page, revokes the session at OpenAI on sign-out, shows the signed-in account's five-hour and weekly quota, and limits the Codex route to seven GPT models with low, medium, high and xhigh reasoning (default low).
+  zh: 在设置页驱动 DSH 自带 pi-ai 的 Codex OAuth 登录 ChatGPT，退出时在 OpenAI 撤销会话，显示所登录账号的 5 小时与每周额度，并把 Codex 路由限定为 7 个 GPT 模型，统一 low、medium、high、xhigh 四档推理（默认 low）。
+icon: https://raw.githubusercontent.com/Clukay-Fun/dsh-gpt-link/main/assets/icon.png

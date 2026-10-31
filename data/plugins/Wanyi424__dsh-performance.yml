@@ -1,0 +1,7 @@
+url: https://github.com/Wanyi424/dsh-performance
+name: Wanyi424/dsh-performance
+category: dev
+description:
+  en: 'Lean and light? See DSH CPU, memory and UI stalls, broken down by plugin, terminal and MCP server, matched against stall times, and copy a diagnostic report. Windows x64 only.'
+  zh: '小而美？看清 DSH 的 CPU、内存与卡顿：按插件、终端、MCP 拆分占用，对照卡顿时刻，复制诊断报告。仅限 Windows x64。'
+tarball: https://github.com/Wanyi424/dsh-performance/releases/latest/download/dsh-performance.tgz

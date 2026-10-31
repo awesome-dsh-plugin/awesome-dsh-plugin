@@ -1,0 +1,6 @@
+url: https://github.com/JosephHy/dsh-md-plus
+name: JosephHy/dsh-md-plus
+category: ui
+description:
+  en: 'Markdown display enhancements for the DSH Web chat, applied on top of the host renderer rather than replacing it: code blocks become cards with a language label and icon-only wrap and copy buttons, long code blocks, tables and Mermaid diagrams fold behind an expand control, Mermaid fences render as SVG with a diagram and code toggle, a fullscreen viewer with wheel zoom, drag and double-click to fit, and SVG or PNG export, tables get a sticky header and CSV or Markdown copy buttons, and a settings panel adjusts the diagram palette, code font size, the default diagram view and the three fold thresholds.'
+  zh: 'DSH Web 会话的 Markdown 显示增强，在宿主渲染之上加样式与按钮而不替换渲染器：代码块变成带语言名和图标按钮（换行、复制）的卡片；超长的代码块、表格与 Mermaid 图会折叠，底部可展开收起；Mermaid 围栏渲染成 SVG，可在图形与代码间切换，支持全屏查看（滚轮缩放、拖拽、双击适应）以及导出 SVG 或 PNG；表格表头吸顶，并提供 CSV 或 Markdown 复制；设置面板可调图表配色、代码字号、图表默认视图和三类折叠阈值。'
