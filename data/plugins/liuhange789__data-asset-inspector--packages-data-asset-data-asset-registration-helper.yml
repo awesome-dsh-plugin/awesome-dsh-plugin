@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-registration-helper
+name: liuhange789/data-asset-inspector#data-asset-registration-helper
+category: tools
+description:
+  zh: "数据资产登记助手插件 — 自动生成登记卡+权属确认+资产编码分配"
+  en: "Data asset registration helper plugin — auto-generates registration cards, ownership confirmation, asset code allocation."
