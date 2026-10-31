@@ -1,0 +1,7 @@
+url: https://github.com/Yersi88/dsh-ollama-tool-guard
+name: Yersi88/dsh-ollama-tool-guard
+category: security
+icon: https://raw.githubusercontent.com/Yersi88/dsh-ollama-tool-guard/main/assets/icon.png
+description:
+  en: "Local tool guard that scores every DeepSeek Harness tool call with an Ollama decision model before it runs; risky calls come back as an approval prompt, and an unreachable model stops all calls."
+  zh: "每次工具调用前由本机 Ollama 决策模型判定：可疑调用升级为确认提示，模型不可达时停止所有调用。"
