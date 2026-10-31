@@ -1,7 +1,7 @@
 url: https://github.com/LeeScenic/dsh-sidebar-sections
 name: LeeScenic/dsh-sidebar-sections
 category: ui
-tarball: https://github.com/LeeScenic/dsh-sidebar-sections/releases/latest/download/dsh-sidebar-sections-1.0.3.tgz
+tarball: https://github.com/LeeScenic/dsh-sidebar-sections/releases/latest/download/dsh-sidebar-sections-1.0.4.tgz
 description:
-  en: 'Collapsible section headers for the DSH sidebar: fold the panel list, the workspace list and the footer status area independently, with the account and settings row pinned to the bottom of the sidebar; client-only DOM enhancement, no host patch.'
+  en: 'Collapsible section headers for the DSH sidebar: fold the functions list, the workspace list and the footer status area behind labelled header rows; sections are identified by position so cards the host or other plugins append to the footer join the status section automatically, and the account row stays pinned to the bottom (client-only DOM enhancement, no host patch).'
   zh: 'DSH 侧栏分区折叠：功能区、工作区、状态区三段各自独立收放，设置与账号那排钉死在最底部不随折叠移动；纯客户端 DOM 增强，不打宿主补丁。'
