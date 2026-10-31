@@ -1,6 +1,7 @@
 url: https://github.com/tokenaissance/dsh-excalidraw
 name: tokenaissance/dsh-excalidraw
 category: docs
+icon: https://raw.githubusercontent.com/tokenaissance/dsh-excalidraw/main/assets/icon-180.png
 description:
   en: 'Renders a live Excalidraw architecture scene inside DSH and refreshes it from Excalidraw+ over MCP: pan, zoom, select, and export SVG/PNG without leaving the conversation.'
   zh: '在 DSH 里渲染实时的 Excalidraw 架构图，并通过 MCP 从 Excalidraw+ 刷新；支持平移、缩放、选中与 SVG/PNG 导出，无需离开会话。'
