@@ -1,0 +1,6 @@
+url: https://github.com/2869949486/dsh-opencode-quota-router
+name: 2869949486/dsh-opencode-quota-router
+category: model
+description:
+  en: "Routes DeepSeek models in dsh through an OpenCode Go subscription and falls back to the DeepSeek account only for the model whose allowance ran out."
+  zh: "让 dsh 里的 DeepSeek 模型优先走 OpenCode Go 套餐额度，某个模型额度用尽时只把该模型切回 DeepSeek 账户，其它模型继续用套餐。"
