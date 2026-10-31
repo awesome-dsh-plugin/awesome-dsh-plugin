@@ -1,0 +1,7 @@
+url: https://github.com/jimmyalxe/nekowhale-meme
+name: jimmyalxe/nekowhale-meme
+category: fun
+description:
+  en: 'Local meme-sticker library: import from a file, a folder or the agent tool, tag images in a review queue you confirm yourself, group them, then let the agent search and send by mood.'
+  zh: 本地表情包库：从文件、文件夹或工具导入，在待识别队列里由你确认后才打标签，分组管理，再让 agent 按情绪检索发图。
+icon: https://raw.githubusercontent.com/jimmyalxe/nekowhale-meme/main/assets/icon-180.png
