@@ -1,0 +1,6 @@
+url: https://github.com/yimengsuper2432/dsh-auto-convert
+name: yimengsuper2432/dsh-auto-convert
+category: vision
+description:
+  en: 'Prepares images before read_image and the vision tools run: downscales anything over 2048 px or 8 MB, retries once at 1280 px in the same turn, resolves attachment ids to real files, and repairs mislabeled or BMP/TIFF uploads by sniffing the bytes.'
+  zh: '在 read_image 与 vision_* 读图前先把图处理好：长边超 2048 像素或体积超 8 MB 就降采样，同一轮还能降到 1280 再试一次；附件 id 落成真实文件，上传前按字节纠正标错的格式、把 BMP/TIFF 转成 PNG。'
