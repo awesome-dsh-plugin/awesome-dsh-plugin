@@ -1,0 +1,6 @@
+url: https://github.com/Weihao654/dsh-workflow/tree/main/plugins/l1-presets
+name: Weihao654/dsh-workflow#l1-presets
+category: workflow
+description:
+  en: Declares four agent presets (plan, work, code, review) that give each role its own tool matrix for a six-step multi-agent workflow.
+  zh: 声明 plan、work、code、review 四个 agent preset，为每个角色划定各自的工具集，服务一条六步多 Agent 工作流。
