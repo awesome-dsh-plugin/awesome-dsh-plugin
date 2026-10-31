@@ -1,0 +1,7 @@
+url: https://github.com/yinsang0910-star/dsh-feishu/tree/main/packages/dsh-plugin
+name: yinsang0910-star/dsh-feishu#dsh-plugin
+category: notify
+description:
+  en: Wire up Feishu/Lark from a four-step wizard that discovers your chats instead of asking for a 32-character id, creates the app by scan, and runs a nine-item live self-test that names the exact scope to enable when a check fails. It drives a companion MCP server of 25 tools, including ones that move local files into a chat and pull a message's attachments back to disk.
+  zh: 用四步向导把飞书接上：会话自动发现、不用手抄 32 位 id，扫码创建应用，再跑九项实时自检——哪项不通过就直接给出该开通的 scope。它驱动一个 25 工具的 MCP server，其中包括把本地文件发进会话、把消息附件取回本地。
+icon: https://raw.githubusercontent.com/yinsang0910-star/dsh-feishu/main/docs/assets/icon-180.png
