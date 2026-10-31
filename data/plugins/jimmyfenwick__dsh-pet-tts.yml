@@ -1,0 +1,8 @@
+url: https://github.com/jimmyfenwick/dsh-pet-tts
+name: jimmyfenwick/dsh-pet-tts
+category: voice
+icon: https://raw.githubusercontent.com/jimmyfenwick/dsh-pet-tts/main/assets/icon-180.png
+tarball: https://github.com/jimmyfenwick/dsh-pet-tts/releases/download/v0.1.0/dsh-pet-tts.tgz
+description:
+  en: "Reads dsh-pet speech bubbles aloud through Microsoft Edge's online neural voices — no local voice models to download. First use creates a private Python virtualenv with the edge-tts client; seven tuned presets match the pitch/rate values of the big-fish pet builds, and the host exposes /dsh-pet-tts/say (plus presets, voices and health) so scripts and other frontends can synthesize the same audio. Requires Python 3.9+ and network access; it does not read assistant replies, only the pet's own bubbles."
+  zh: "把 dsh-pet 的气泡台词用微软 Edge 在线神经音色念出来，不需要下载任何本地语音模型。首次使用时自动创建一个私有 Python 虚拟环境并安装 edge-tts 客户端；内置 7 个调好参数的预设，音高与语速与几只大肥鱼桌宠的默认值一致；宿主机提供 /dsh-pet-tts/say（以及 presets、voices、health）路由，脚本与其他前端也能合成同一份音频。需要 Python 3.9+ 与联网；只念桌宠气泡，不念助手回复。"
