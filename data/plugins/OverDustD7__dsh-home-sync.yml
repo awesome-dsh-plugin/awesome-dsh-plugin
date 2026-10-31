@@ -1,0 +1,6 @@
+url: https://github.com/OverDustD7/dsh-home-sync
+name: OverDustD7/dsh-home-sync
+category: tools
+description:
+  en: "Syncs the DSH home directory and Mnemon memory data through git, with two-way sync, cross-device migration, initialization backups, conflict detection and a web page for pulling and pushing."
+  zh: "用 git 同步 DSH 主目录与 Mnemon 记忆数据，支持双向同步、跨设备迁移、初始化备份、冲突检测，并可在网页上拉取和推送。"

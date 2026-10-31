@@ -1,0 +1,6 @@
+url: https://github.com/OverDustD7/thu-tok-auto
+name: OverDustD7/thu-tok-auto
+category: model
+description:
+  en: "Gets and auto-refreshes THU MadModel API tokens and writes them into the DSH model provider credential MADMODEL_API_KEY."
+  zh: "获取并自动续期清华 MadModel 的 API 令牌，直接写入 DSH 模型线路的凭据 MADMODEL_API_KEY。"

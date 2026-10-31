@@ -1,0 +1,6 @@
+url: https://github.com/OverDustD7/dsh-chat-digest
+name: OverDustD7/dsh-chat-digest
+category: tools
+description:
+  en: "Turns chat logs into a panel list maintained by a resident agent, with a zero-dependency core and an optional WeChat/QQ ingestion pipeline."
+  zh: "把聊天记录整理成由常驻 agent 维护的面板清单，核心零 npm 依赖，另带可选的微信/QQ 导入管线。"
