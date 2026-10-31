@@ -1,0 +1,6 @@
+url: https://github.com/yunling-bionic/dsh-rule-guard
+name: yunling-bionic/dsh-rule-guard
+category: dev
+description:
+  en: Reviews each file-writing tool call against the workspace rules in AGENTS.md and the latest user instruction, denying the call with the violated rule when a change leaves that scope.
+  zh: 在每次写文件前，用工作区 AGENTS.md 里的规则与最近一条用户指令复核这次改动；超出范围或跑偏时拦下，并指出违反了哪一条。
