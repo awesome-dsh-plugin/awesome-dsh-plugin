@@ -1,0 +1,6 @@
+url: https://github.com/BoltBlue121/dsh-moss-draw/tree/main/plugin
+name: 'BoltBlue121/dsh-moss-draw#plugin'
+category: tools
+description:
+  en: 'Adds seven `art_*` agent tools plus a right-sidebar drawing workbench (series, pages, revisions, regions, camera blockout) that submits ComfyUI graphs to a ComfyUI instance you host, for MOSS/K2 text-to-image, inpaint, character references, region editing and Qwen-Image edits, with up to four caller LoRAs stacked per request.'
+  zh: '给 Agent 增加 7 个 art_* 工具和一个右侧栏绘图工作台（系列、页、修订、区域、相机体块），把工作流提交到你自建的 ComfyUI：MOSS/K2 文生图、局部重绘、角色参考、区域编辑与 Qwen 图像编辑，单次请求可叠加最多 4 个自备 LoRA。'
