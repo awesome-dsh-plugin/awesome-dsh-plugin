@@ -1,0 +1,7 @@
+url: https://github.com/ypx01/dsh-auto-shutdown
+name: ypx01/dsh-auto-shutdown
+category: workflow
+description:
+  en: 'Per-session auto-shutdown switch in the session header: once every session that has it switched on has no turn, job, subagent or tool still running, a two-minute countdown starts and the machine powers off; clicking the countdown cancels it, and sessions without the switch never trigger anything.'
+  zh: '会话标题栏上的「任务完成后自动关机」开关：所有开启它的会话都不再有进行中的回合、任务、子代理时，开始两分钟倒计时，结束后关机；点倒计时即取消，没开这个开关的会话不会触发任何动作。'
+icon: https://raw.githubusercontent.com/ypx01/dsh-auto-shutdown/main/assets/icon-180.png
