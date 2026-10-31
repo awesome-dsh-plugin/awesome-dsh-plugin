@@ -1,0 +1,7 @@
+url: https://github.com/mmyddd/dsh-ccd
+name: mmyddd/dsh-ccd
+category: ui
+description:
+  en: 'Rewrites the reasoning row: instead of the raw chain of thought it shows first-person working notes, written segment by segment while the reasoning streams in, with a toggle back to the original. Notes are stored per session so history rows keep them after a reload, the note writer runs on a configured provider or a downloadable local llama.cpp model, and the model still reads the full reasoning.'
+  zh: '改写思考行：不显示原始思维链，而是随流按段写成第一人称的工作笔记，可随时切回原文。笔记按会话落盘，刷新后历史行仍有；写笔记可以用已配置的供应商，也可以下载本地 llama.cpp 模型；模型下一轮读到的仍是完整推理。'
+tarball: https://github.com/mmyddd/dsh-ccd/releases/latest/download/dsh-ccd.tgz
