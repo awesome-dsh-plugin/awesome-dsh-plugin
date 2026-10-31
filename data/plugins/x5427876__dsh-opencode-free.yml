@@ -1,0 +1,5 @@
+url: https://github.com/x5427876/dsh-opencode-free
+name: x5427876/dsh-opencode-free
+category: model
+description:
+  en: 'Free OpenCode Zen models in DeepSeek Harness, anonymous by default with an optional Zen key. The catalogue is read from Zen''s official model list at runtime, and anonymous requests are adapted to the free tier''s request checks, documented with dated measurements.'
