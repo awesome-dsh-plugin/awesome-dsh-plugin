@@ -1,0 +1,6 @@
+url: https://github.com/jitianjiyan/dsh-auth-cookie-guard
+name: jitianjiyan/dsh-auth-cookie-guard
+category: usage
+description:
+  en: "Raises the local Host's HTTP header budget to 64 KiB and retires stale dsh-auth-* launch cookies on each response, so a fixed profile cannot lock itself out of the desktop welcome handshake after roughly 72 restarts."
+  zh: "把本地 Host 的 HTTP 头部预算提升到 64 KiB，并在每次响应里清掉过期的 dsh-auth-* 启动 cookie，避免固定 profile 在约 72 次重启后卡在桌面端欢迎握手。"
