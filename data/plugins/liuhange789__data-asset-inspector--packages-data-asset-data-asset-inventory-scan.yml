@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-inventory-scan
+name: liuhange789/data-asset-inspector#data-asset-inventory-scan
+category: tools
+description:
+  zh: "数据资产盘点扫描插件 — 深度元数据扫描+三性检测，输出资产清单"
+  en: "Data asset inventory scan plugin — deep metadata scan + triple-condition check, outputs asset catalog."
