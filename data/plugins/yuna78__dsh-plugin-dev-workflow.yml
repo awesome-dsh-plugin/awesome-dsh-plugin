@@ -1,0 +1,6 @@
+url: https://github.com/yuna78/dsh-plugin-dev-workflow
+name: yuna78/dsh-plugin-dev-workflow
+category: workflow
+description:
+  en: 'Delivery workflow preset for DeepSeek Harness: an agent protocol plus seven tools that keep user requests verbatim, record feedback decisions, plan tasks with acceptance criteria, log real verification commands and exit codes, and write completion summaries as per-project JSONL files.'
+  zh: '面向 DSH 的研发交付工作流 preset：一段工作协议加七个工具，保留用户原话与验收条件、记录反馈决策、拆解带验收的任务、记录真实验证命令与退出码，并以项目隔离的 JSONL 记录完成总结。'
