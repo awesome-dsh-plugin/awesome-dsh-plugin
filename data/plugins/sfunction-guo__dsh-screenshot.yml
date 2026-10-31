@@ -1,0 +1,6 @@
+url: https://github.com/sfunction-guo/dsh-screenshot
+name: sfunction-guo/dsh-screenshot
+category: ui
+description:
+  en: 'Snipping tool for the composer: freeze the screen, drag a region, annotate it, and drop the result into the message box.'
+  zh: 输入框旁的截图标注工具：冻结屏幕、拖框选区、就地标注，完成后直接插入输入框。
