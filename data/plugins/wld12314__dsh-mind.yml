@@ -1,0 +1,6 @@
+url: https://github.com/wld12314/dsh-mind
+name: wld12314/dsh-mind
+category: identity
+description:
+  en: 'Adds a mood system to DeepSeek Harness — 33 named moods judged every 3-6 hours with small per-message adjustments, plus cross-session memory, an aesthetic taste library and an encrypted diary. The mood, memory, taste and diary tools are all callable by the model, and each of the five modules has its own switch. The diary is written only by the model; no summary template is generated.'
+  zh: '给 DeepSeek Harness 加一套心情系统：33 种心情，每 3~6 小时一次周期判定，并随消息小幅增减；另有跨会话记忆、审美品味库、加密日记。心情、记忆、品味、日记四个工具都可由模型调用，五个模块各有独立开关。日记只由模型自己写，不生成系统总结模板。'
