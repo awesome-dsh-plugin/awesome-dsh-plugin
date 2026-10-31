@@ -1,5 +1,5 @@
-url: https://github.com/SDSAEWQ/dsh-jieqi/tree/main/plugin
-name: SDSAEWQ/dsh-jieqi#plugin
+url: https://github.com/SDSAEWQ/dsh-jieqi
+name: SDSAEWQ/dsh-jieqi
 category: ui
 description:
   en: 'A solar-term card for the DSH Web UI: a dot under the conversation header unfolds into the current term, its three pentads, a year table of all 24 terms, and the message hexagram for the month; the jieqi skill is bundled.'
