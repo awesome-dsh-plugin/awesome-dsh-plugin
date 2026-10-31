@@ -118,6 +118,13 @@ export function buildMarketIndex({ entries, npmMap, gitMap = {}, locales, origin
     const useGit = !npm?.npm && Boolean(git)
     const record = npm?.npm ? npm : (git && { npm: git.name, version: git.version, publishedAt: git.publishedAt, enginesDsh: git.enginesDsh })
     const repository = repositoryOf(entry.url)
+    // A display-only repository may omit an unrepresentable subdirectory;
+    // an install source must never silently fall back to the repository root.
+    if (useGit && entry.url.includes('/tree/') && !repository.directory) {
+      skipped.refused += 1
+      refused.push(`${entry.url}: Git package directory cannot be represented in format 1`)
+      continue
+    }
     if (typeof record?.npm !== 'string' || record.npm === '') { skipped.noNpm += 1; continue }
     if (typeof record.version !== 'string' || record.version === '') { skipped.noVersion += 1; continue }
     if (!Number.isInteger(record.publishedAt)) { skipped.noPublishTime += 1; continue }
@@ -140,7 +147,7 @@ export function buildMarketIndex({ entries, npmMap, gitMap = {}, locales, origin
         version: record.version,
         publishTimestamp: record.publishedAt,
         source: useGit
-          ? { type: 'git', url: repository.url, commit: git.commit, ...(repository.directory ? { directory: repository.directory } : {}) }
+          ? { type: 'git', url: repository.url, commit: git.commit, ...(repository.directory ? { path: repository.directory } : {}) }
           : { type: 'npm' },
         ...(dsh === undefined ? {} : { engines: { dsh } }),
       }],
