@@ -1,0 +1,7 @@
+url: https://github.com/ShawnRen57/dsh-whoop-easy-connect
+name: ShawnRen57/dsh-whoop-easy-connect
+category: ui
+description:
+  en: Four-step WHOOP account connection with automatic sync on dashboard visits, plus recovery, strain, sleep and workout charts inside DeepSeek Harness.
+  zh: 四步连接 WHOOP 账号，打开看板即自动同步，在 DeepSeek Harness 中查看恢复、负荷、睡眠与训练图表。
+icon: https://raw.githubusercontent.com/ShawnRen57/dsh-whoop-easy-connect/main/assets/icon-180.png
