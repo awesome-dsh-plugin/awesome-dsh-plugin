@@ -1,0 +1,6 @@
+url: https://github.com/PinkyKan/dsh-plugin-readme-zh
+name: PinkyKan/dsh-plugin-readme-zh
+category: docs
+description:
+  en: 'Translate installed plugins'' documentation into Simplified Chinese: README sections are translated with a persistent section-level cache, and each Plugins list row gets a locale/zh.json sidecar so the list renders Chinese natively.'
+  zh: '把已安装插件的文档翻译成简体中文：README 按章节翻译并持久缓存，插件列表行写入 locale 中文侧文件，两者都原生渲染中文。'
