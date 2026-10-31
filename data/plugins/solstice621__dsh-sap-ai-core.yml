@@ -4,4 +4,4 @@ category: model
 description:
   en: SAP AI Core provider with shared OAuth, five Qwen model choices, thinking budgets, streaming, and tool calls; validated on cn40.
   zh: 接入 SAP AI Core，共用 OAuth 认证，支持五个 Qwen 模型、四档思考预算、流式输出和工具调用；已实测 cn40。
-tarball: https://github.com/solstice621/dsh-sap-ai-core/releases/download/v0.1.0-rc.2/dsh-sap-ai-core-0.1.0-rc.2.tgz
+tarball: https://github.com/solstice621/dsh-sap-ai-core/releases/download/v0.1.0-rc.3/dsh-sap-ai-core-0.1.0-rc.3.tgz
