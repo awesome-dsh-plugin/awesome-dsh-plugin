@@ -1,0 +1,6 @@
+url: https://github.com/iu3o3/dsh-archived-sessions
+name: iu3o3/dsh-archived-sessions
+category: usage
+description:
+  en: 'Manage and delete archived DSH conversations: a Settings page lists every archived session with per-row and bulk delete, and the sidebar session menu gains a Delete row next to Unarchive. Deletion is real — the session log, its projection cache and both indexes are cleaned up, not just an unarchive.'
+  zh: '管理并删除已归档的 DSH 对话：设置里新增「归档会话」页，列出所有归档会话，支持单条与批量删除；侧边栏会话「…」菜单在「取消归档」旁新增红色的「删除归档会话」。删除是真正的删除（会话日志、投影缓存与两套索引一起清理），不只是取消归档。'
