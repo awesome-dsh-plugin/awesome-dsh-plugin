@@ -1,0 +1,6 @@
+url: https://github.com/BigBugy/dsh-tool-session-message
+name: BigBugy/dsh-tool-session-message
+category: session
+description:
+  en: 'Cross-session messaging: deliver a user message to another DSH session by session id. Every message carries the sender session id and a reply hint, so windows can authenticate each other and hand work over.'
+  zh: '跨会话发消息：按 session id 把 user 消息投递到另一个 DSH 会话，消息自动附带发送方 Session ID 与回信提示，方便多窗口互相认证与接续任务。'
