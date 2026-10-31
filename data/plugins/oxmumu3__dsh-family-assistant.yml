@@ -1,0 +1,6 @@
+url: "https://github.com/oxmumu3/dsh-family-assistant"
+name: "oxmumu3/dsh-family-assistant"
+category: "workflow"
+description:
+  en: "Owner workbench for independently connected family WeChat assistants, per-member project and tool permissions, scheduled services and delivery status; API acceptance does not confirm receipt."
+  zh: "通过 Owner 工作台管理家人各自连接的微信助手、按人授予项目和工具权限、安排服务并查看投递状态；接口接受不代表手机实收。"

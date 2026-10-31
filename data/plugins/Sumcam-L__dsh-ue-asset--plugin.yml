@@ -1,0 +1,8 @@
+url: https://github.com/Sumcam-L/dsh-ue-asset/tree/main/plugin
+name: Sumcam-L/dsh-ue-asset#plugin
+category: dev
+description:
+  en: "Windows only (x64): browse, preview and export Unreal Engine 4/5 cooked assets from local PAK archives via CUE4Parse; Oodle-compressed archives need Epic's oo2core DLL, which is not bundled but can be downloaded from the settings page."
+  zh: "仅 Windows x64：浏览、预览并导出本地 PAK 归档中的 UE4/5 烘焙资产（CUE4Parse）；Oodle 压缩的归档需要 Epic 的 oo2core DLL，包内不含，可在设置页一键下载。"
+icon: https://raw.githubusercontent.com/Sumcam-L/dsh-ue-asset/main/assets/icon-180.png
+tarball: https://github.com/Sumcam-L/dsh-ue-asset/releases/latest/download/dsh-ue-asset.tgz

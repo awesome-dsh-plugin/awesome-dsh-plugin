@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/dsh-lifeguard
+name: regrevia/dsh-lifeguard
+category: dev
+description:
+  en: 'Turns real DSH crash logs into a short hard-constraint list: static preflight before a plugin installs, conflict check afterwards, controlled self-heal when the harness will not start — plus handing a huge session over to a fresh one, the brief written by a model that reads the original transcript.'
+  zh: '把 DSH 真实崩溃日志沉淀成精简硬约束：装插件前静态预检拦崩，装完体检冲突，起不来时受控自愈；大会话还能转世成新会话，交接单由模型读懂原会话后写。'
+icon: https://raw.githubusercontent.com/regrevia/dsh-lifeguard/main/icon.png

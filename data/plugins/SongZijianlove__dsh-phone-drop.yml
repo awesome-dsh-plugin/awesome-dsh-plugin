@@ -1,0 +1,6 @@
+url: https://github.com/SongZijianlove/dsh-phone-drop
+name: SongZijianlove/dsh-phone-drop
+category: tools
+description:
+  en: 'LAN phone drop: a QR code on the computer screen opens a page on the phone, and photos or scanned documents land in a computer folder over the local network, with no tunnel and no cloud in between. Document mode binarizes locally in the browser (adaptive threshold plus speckle removal and edge crop) so an ordinary phone photo comes out as a black-and-white scan. Adds a "phone drop" entry at the foot of the DSH sidebar that opens the QR page, plus a phone_drop tool for the assistant; the same CLI also runs standalone without DSH.'
+  zh: '局域网手机直传：电脑屏幕上出一个二维码，手机扫开就能拍照或扫描，文件直接落进电脑文件夹，全程局域网直连，不经过隧道也不经过云端。文档模式在手机浏览器里本地做自适应二值化、去噪、裁边，把普通照片变成黑白扫描件。插件会在 DSH 侧边栏底部加一个「手机直传」入口，点开就是二维码页；另有 phone_drop 工具供助手调用，同一个 CLI 也能脱离 DSH 独立运行。'

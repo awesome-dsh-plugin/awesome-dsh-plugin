@@ -1,0 +1,6 @@
+url: https://github.com/kanoonak/dsh-whale-catcher
+name: kanoonak/dsh-whale-catcher
+category: fun
+description:
+  en: "A two-minute whale-fishing mini game for the DSH web GUI. Catch fish whose numbers add to your score, avoid fish larger than you, eat rice bowls to heal, and grab coupons to ignore size on the next hook. Standalone HTML, no network, no telemetry."
+  zh: "DSH Web 界面里的两分钟小游戏：抓到的数字累加到身上，比自身大的鱼会掉一颗心，白饭回血，鲸元券让下一钩无视大小。单文件 HTML，不联网，无数据上报。"

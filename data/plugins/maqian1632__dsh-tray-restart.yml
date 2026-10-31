@@ -1,0 +1,7 @@
+url: https://github.com/maqian1632/dsh-tray-restart
+name: maqian1632/dsh-tray-restart
+category: ui
+description:
+  en: Adds a single “Restart DeepSeek Harness” item to the Windows system tray menu of the DSH desktop app by patching the installed app.asar in place and re-applying that patch after each desktop update; it needs a writable DSH installation directory and adds no other tray actions.
+  zh: 在 DSH 桌面端的 Windows 系统托盘菜单中只增加一个“重启 DeepSeek Harness”项，做法是原位修改已安装的 app.asar 并在桌面端每次更新后重打补丁；需要 DSH 安装目录可写，不添加其他托盘操作。
+icon: https://raw.githubusercontent.com/maqian1632/dsh-tray-restart/main/assets/icon-180.png

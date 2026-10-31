@@ -1,0 +1,6 @@
+url: https://github.com/Ayowait/dsh-task-dispatcher
+name: Ayowait/dsh-task-dispatcher
+category: tools
+description:
+  en: 'Registers a `dispatch_task` tool that hands scoped or routine work to an isolated subagent, waits for it to finish, then checks the expected files and runs an optional verification command before returning a short report to the main conversation.'
+  zh: '注册 `dispatch_task` 工具，把局部或例行任务交给隔离子 Agent 执行，等待其完成后检查预期文件并运行可选的验证命令，只向主会话返回一份简短报告。'

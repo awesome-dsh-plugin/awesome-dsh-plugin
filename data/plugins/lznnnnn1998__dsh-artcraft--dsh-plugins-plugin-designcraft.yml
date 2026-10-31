@@ -1,0 +1,6 @@
+url: https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-designcraft
+name: lznnnnn1998/dsh-artcraft#plugin-designcraft
+category: tools
+description:
+  en: "Drive DesignCraft from the agent: create pages, place and flow text, arrange frames and master pages, then export PDF. Exposes DesignCraft's command ids and its MCP server. Requires the matching ArtCraft app CLI installed locally; it is not bundled."
+  zh: "让智能体驱动 DesignCraft：创建页面、置入与排布文字、组织图文框与主页，并导出 PDF。暴露 DesignCraft 的命令 id 与自带的 MCP server。需本机安装对应的 ArtCraft 应用 CLI，插件不附带应用本体。"

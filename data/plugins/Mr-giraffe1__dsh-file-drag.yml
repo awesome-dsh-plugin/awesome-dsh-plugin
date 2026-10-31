@@ -1,0 +1,7 @@
+url: https://github.com/Mr-giraffe1/dsh-file-drag
+name: Mr-giraffe1/dsh-file-drag
+category: ui
+description:
+  en: Drag a file or folder from the right Sidebar's file tree onto the composer to insert an @ reference to it; also works while answering a question card.
+  zh: 从右侧文件栏把文件或文件夹拖进输入框，插入指向它的 @ 引用；回答提问卡片时也同样可用。
+icon: https://raw.githubusercontent.com/Mr-giraffe1/dsh-file-drag/main/assets/icon-180.png

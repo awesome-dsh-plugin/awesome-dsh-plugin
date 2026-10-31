@@ -1,0 +1,6 @@
+url: https://github.com/mr-mihu/dsh-dbhub-live
+name: mr-mihu/dsh-dbhub-live
+category: tools
+description:
+  en: 'Database access for DeepSeek Harness through the DBHub MCP server: configure MySQL, MariaDB, PostgreSQL, SQLite and SQL Server connections per workspace and environment, then let the agent configure, list, query and search SQLite objects through four fixed tools. Passwords and full connection strings are entered in the settings UI and never accepted as tool arguments, so the model only sees metadata such as mysql://host:3306/db; each environment can be read-only (the model may enable it but not clear it) or reached through a manual SSH tunnel. Every call runs its own short-lived dbhub process and dbhub installs itself when missing.'
+  zh: '把 DBHub MCP 服务器接入 DeepSeek Harness 的数据库插件：按工作区 × 环境配置 MySQL、MariaDB、PostgreSQL、SQLite 与 SQL Server 连接，让 Agent 通过固定 4 个工具配置连接、列出数据源、执行 SQL、搜索 SQLite 对象。密码与完整连接串由用户在设置界面输入、不作为工具参数接收，模型只看到 mysql://host:3306/db 这类元数据；每个环境可设为只读（模型只能开启、不能关闭）或经手动 SSH 隧道访问。每次调用独立启动一条用完即退的 dbhub 进程，未安装 dbhub 时自动安装。'

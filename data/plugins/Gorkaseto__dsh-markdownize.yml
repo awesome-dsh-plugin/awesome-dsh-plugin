@@ -1,0 +1,6 @@
+url: https://github.com/Gorkaseto/dsh-markdownize
+name: Gorkaseto/dsh-markdownize
+category: tools
+description:
+  en: Convert PDF, Word, PowerPoint, Excel, HTML, CSV, JSON and ZIP files to Markdown for the model, using a bundled JavaScript engine or Microsoft MarkItDown.
+  zh: 将 PDF、Word、PowerPoint、Excel、HTML、CSV、JSON、ZIP 等文档转换为 Markdown 供模型读取，内置 JavaScript 引擎，也可使用 Microsoft MarkItDown。

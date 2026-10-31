@@ -2,5 +2,5 @@ url: https://github.com/Tleon-H/dsh-next-prompt
 name: Tleon-H/dsh-next-prompt
 category: ui
 description:
-  en: After each reply, shows a gray next-prompt suggestion in the empty composer that Tab or → accepts, and ↑ in an empty composer recalls your last sent message; nothing is sent automatically.
-  zh: 回答结束后在空输入框里显示一条灰色的下一句建议，按 Tab 或 → 采纳；空输入框按 ↑ 填入上一次发送的内容；不会自动发送。
+  en: After each reply, shows a gray next-prompt suggestion in the empty composer that Tab or → accepts; in an empty composer, ↑ / ↓ browse the messages you sent in the session. Settings can be changed on the Plugins page; nothing is sent automatically.
+  zh: 回答结束后在空输入框里显示一条灰色的下一句建议，按 Tab 或 → 采纳；空输入框按 ↑ / ↓ 翻看本会话发送过的内容；可在插件页直接修改设置；不会自动发送。

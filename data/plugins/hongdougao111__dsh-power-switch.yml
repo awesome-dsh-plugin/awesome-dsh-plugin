@@ -1,0 +1,8 @@
+url: https://github.com/hongdougao111/dsh-power-switch
+name: hongdougao111/dsh-power-switch
+category: session
+description:
+  en: "Adds a power button to the session header with two actions, each requiring a second click to confirm. Restart terminates the Electron main process itself (taskkill /F without /T), so no crash dialog appears: the host then exits gracefully on its own once the IPC channel drops, and a detached helper relaunches the same executable after the single-instance lock is released, confirming the new instance by a real window handle. Shut down does the same without relaunching. Leftover GPU and renderer processes from the previous run are reaped best-effort. Windows desktop app."
+  zh: "会话头部的电源按钮，两个动作，都需再点一次确认。重启结束的是 Electron 主进程本身（taskkill /F 不带 /T），因此不会出现崩溃弹窗；宿主在 IPC 断开后自行优雅退出，分离的 helper 等单实例锁释放后重放同一可执行文件，并以真实窗口句柄确认新实例已启动。关闭同理但不重新拉起。上一轮残留的 GPU 与渲染器进程会被尽力清理。仅 Windows 桌面版。"
+icon: https://raw.githubusercontent.com/hongdougao111/dsh-power-switch/master/icon.png
+tarball: https://github.com/hongdougao111/dsh-power-switch/releases/download/v0.1.4/dsh-power-switch-0.1.4.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/AIcivilization/dsh-audiobook
+name: AIcivilization/dsh-audiobook
+category: voice
+description:
+  en: 'Search public-domain libraries (Project Gutenberg, Wikisource, Internet Archive, Standard Ebooks) by title, author, character or half-remembered plot, or import EPUB / PDF / TXT / DOCX / Markdown, and listen in the sidebar with Microsoft Edge neural voices, offline Kokoro or the device voices; keeps your position, takes voice notes anchored to what you just heard, and discusses the book with your DSH model.'
+  zh: '搜书听：按书名、作者、角色名或大概情节搜公版书（古腾堡、中英文维基文库、Internet Archive、Standard Ebooks），或导入 EPUB / PDF / TXT / DOCX / Markdown，在右侧栏用微软 Edge 神经网络语音、离线 Kokoro 或设备自带语音读给你听；自动记住听到哪，能语音记读书心得、和 AI 聊刚听到的内容。'

@@ -1,0 +1,6 @@
+url: https://github.com/ZeroClave/zeroclave-dsh-privacy
+name: ZeroClave/zeroclave-dsh-privacy
+category: security
+description:
+  en: 'Detect and redact sensitive message text before sending it to models, with local regex, browser BERT, or ZeroClave API detection and manual review.'
+  zh: '在消息发送给模型前检测和脱敏敏感文本，支持本地正则、浏览器 BERT 或 ZeroClave API 检测及人工审核。'

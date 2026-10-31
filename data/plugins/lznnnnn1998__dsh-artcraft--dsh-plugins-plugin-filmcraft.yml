@@ -1,0 +1,6 @@
+url: https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-filmcraft
+name: lznnnnn1998/dsh-artcraft#plugin-filmcraft
+category: tools
+description:
+  en: "Drive FilmCraft from the agent: build a project and sequences, import media, run edits as a script, then export with a preset or format. Exposes FilmCraft's command ids and its MCP server. Requires the matching ArtCraft app CLI installed locally; it is not bundled."
+  zh: "让智能体驱动 FilmCraft：创建工程与序列、导入素材、以脚本方式执行剪辑，并按预设或格式导出。暴露 FilmCraft 的命令 id 与自带的 MCP server。需本机安装对应的 ArtCraft 应用 CLI，插件不附带应用本体。"

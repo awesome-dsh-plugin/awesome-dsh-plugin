@@ -1,0 +1,6 @@
+url: https://github.com/hzh5021/dsh-progress
+name: hzh5021/dsh-progress
+category: workflow
+description:
+  en: Reminds the agent to speak up when it runs several model steps without emitting any text, so long tool runs stop going silent.
+  zh: 别憋着：连着几步模型输出里一个 text 都没有（心里的盘算不算说话），就往会话里塞一句提醒，下一个 step 落进它眼里。

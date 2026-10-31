@@ -1,0 +1,11 @@
+{
+  "url": "https://github.com/pixelligue/mcptender-plugins",
+  "name": "pixelligue/mcptender-plugins",
+  "category": "tools",
+  "description": {
+    "en": "Connects DeepSeek Harness to MCPTender public Russian procurement records, source documents and published contract suppliers using a personal service API key.",
+    "zh": "使用个人服务 API 密钥，将 DeepSeek Harness 连接到 MCPTender 的俄罗斯公开采购记录、来源文件及已公布合同供应商。"
+  },
+  "icon": "https://raw.githubusercontent.com/pixelligue/mcptender-plugins/main/assets/logo.png",
+  "tarball": "https://github.com/pixelligue/mcptender-plugins/releases/download/v1.0.0/dsh-plugin-mcptender-1.0.0.tgz"
+}

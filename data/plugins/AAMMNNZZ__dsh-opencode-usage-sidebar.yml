@@ -1,0 +1,7 @@
+url: https://github.com/AAMMNNZZ/dsh-opencode-usage-sidebar
+name: AAMMNNZZ/dsh-opencode-usage-sidebar
+category: usage
+description:
+  en: "Shows OpenCode Go subscription usage (5-hour, weekly and monthly) in the DSH sidebar footer, with a countdown to the 5-hour reset. Requires an OPENCODE_GO_API_KEY credential (Settings → Models, or a refs entry in ~/.dsh/.credentials.yaml); without it the card stays hidden."
+  zh: "在 DSH 侧栏底部显示 OpenCode Go 订阅的 5 小时、本周、本月用量，并倒计时到 5 小时窗口重置。需先在「设置 → 模型」或 ~/.dsh/.credentials.yaml 的 refs 中配置 OPENCODE_GO_API_KEY，否则卡片不显示。"
+tarball: https://github.com/AAMMNNZZ/dsh-opencode-usage-sidebar/releases/latest/download/dsh-opencode-usage-sidebar.tgz

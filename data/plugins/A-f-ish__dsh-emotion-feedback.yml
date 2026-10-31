@@ -1,0 +1,11 @@
+url: https://github.com/A-f-ish/dsh-emotion-feedback
+name: A-f-ish/dsh-emotion-feedback
+category: ui
+description:
+  en: >-
+    Judges the working model's own emotion each turn and silently re-injects it before the next turn,
+    closing a self-observation → state carry-over → behavior shift loop. Ships a host plugin plus a
+    composer-dock panel, a read-only emotion_status tool and an optional read-only HTTP route.
+  zh: >-
+    每回合判定工作模型自身的情绪，并在下一回合开始前静默回注给它，形成「自省 → 状态留存 → 行为调整」
+    的闭环。包含宿主插件、输入框上方的情绪面板、只读的 emotion_status 工具与可选的只读 HTTP 路由。

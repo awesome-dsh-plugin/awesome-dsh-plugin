@@ -1,0 +1,6 @@
+url: https://github.com/menghuanshiguang/dsh-sunder
+name: menghuanshiguang/dsh-sunder
+category: identity
+description:
+  en: 'Replaces the harness identity block with its own prompt pack: three system-prompt sections (identity, rules, footer) in full, concise and dev presets, a per-turn rule card appended as a real user message, a remote announcement feed that falls back to a bundled copy offline, a GitHub Releases update check with an apply command, five `sunder_*` tools, and a read-only status section in Settings.'
+  zh: '用自带的提示词包替换宿主身份块：identity、rules、footer 三个系统提示词分区，full/concise/dev 三档预设，每轮把一张规则卡片作为真实用户消息追加，公告源离线时回退到内置副本，检查 GitHub Releases 并可用命令应用更新，五个 `sunder_*` 工具，设置页里一个只读状态分区。'

@@ -1,0 +1,7 @@
+url: https://github.com/P1gG0dG0d/dsh-study-ask
+name: P1gG0dG0d/dsh-study-ask
+category: ui
+tarball: https://github.com/P1gG0dG0d/dsh-study-ask/releases/latest/download/dsh-study-ask.tgz
+description:
+  en: 'Opens a dedicated question chat in the right sidebar for text selected in a DSH conversation, so follow-up questions do not push the main conversation away and never appear in the session list.'
+  zh: '在 DSH 对话中选中一段文字，右侧栏即开出独立的提问对话，与主对话分屏并排，追问不会顶走正在学的内容，也不会出现在左侧会话列表里。'

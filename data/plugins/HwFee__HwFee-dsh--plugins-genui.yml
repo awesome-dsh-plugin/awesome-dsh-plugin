@@ -2,5 +2,5 @@ url: https://github.com/HwFee/HwFee-dsh/tree/master/plugins/genui
 name: HwFee/HwFee-dsh#genui
 category: ui
 description:
-  en: 'Generative UI: the model calls render_ui with a React snippet and the answer renders as an interactive card in the conversation. The snippet runs in a plugin-owned sandbox with storage, module loading and Function/eval blocked (network, timers and DOM globals remain available); a crashing card falls back to its source.'
-  zh: '生成式 UI：模型调用 render_ui 写一段 React，回答就地渲染成可交互卡片。代码在插件自己的沙箱里求值，屏蔽 storage、模块加载与 Function/eval（网络、定时器与 DOM 全局仍可用）；卡片崩溃时退回源码。'
+  en: 'Generative UI: the model calls render_ui with a React snippet and the answer renders as an interactive card in the conversation. The snippet runs in a sandboxed iframe with an opaque origin, so it cannot read the host page, its storage or its cookies, and the frame CSP blocks the network; a message from a card is only sent after the user confirms it, and a failing card shows its error with the source behind a toggle.'
+  zh: '生成式 UI：模型调用 render_ui 写一段 React，回答就地渲染成可交互卡片。代码跑在 opaque origin 的沙箱 iframe 里，读不到宿主页面、存储与 cookie，帧内 CSP 挡掉网络；卡片要发消息必须由用户确认，卡片出错时显示原因、源码放在开关后面。'

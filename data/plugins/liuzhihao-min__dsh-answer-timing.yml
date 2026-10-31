@@ -1,0 +1,6 @@
+url: https://github.com/liuzhihao-min/dsh-answer-timing
+name: liuzhihao-min/dsh-answer-timing
+category: usage
+description:
+  en: 'Per-answer timing breakdown: splits each reply into model, tool and other time, with first-token, decode and per-tool totals, and keeps a local JSONL ledger. Needs Node 24 or newer in the DSH runtime.'
+  zh: '逐次回答耗时拆解：把每次回复分成模型、工具与其它三段，给出首字、生成与各工具耗时，并在本地落一份 JSONL 账本。需要 DSH 运行时为 Node 24 或更新版本。'

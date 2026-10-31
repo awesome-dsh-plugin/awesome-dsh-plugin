@@ -1,0 +1,7 @@
+url: https://github.com/KouzakiUmi/dsh-code-pill
+name: KouzakiUmi/dsh-code-pill
+category: ui
+description:
+  en: 'Renders inline code in DSH chat as pills with syntax colours and optional file badges, styles chat file paths, and offers optional folded-row tinting and thinking-text ink, with a settings page for six presets, colours and fonts.'
+  zh: '把 DSH 对话中的行内代码渲染为带语法色和可选文件标记的胶囊，并处理聊天中的文件路径；可选折叠动作行着色与思考文字彩虹刷入，设置页提供六套预设、颜色与字体选项。'
+tarball: https://github.com/KouzakiUmi/dsh-code-pill/releases/latest/download/dsh-code-pill.tgz

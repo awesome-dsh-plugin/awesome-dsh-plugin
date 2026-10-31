@@ -2,5 +2,5 @@ url: https://github.com/jameswatt139240-crypto/dsh-ATLAS
 name: jameswatt139240-crypto/dsh-ATLAS
 category: ui
 description:
-  en: 'Unified @ mentions in the DeepSeek Harness web composer: five built-in categories (file, folder, skill, past chat, plugin) plus a data-source seam any plugin can register through, references to absolute paths outside the workspace, and a candidate menu that can be scoped by a folder named earlier in the draft and pages with PageUp/PageDown instead of hiding rows.'
-  zh: '在 DSH Web 输入框里统一 @ 提及：五个内置类别（文件、文件夹、Skill、过去的聊天、插件），任何插件都能注册的数据源 seam，工作区外绝对路径引用，以及可被草稿中先写下的文件夹限定作用域、并用 PageUp/PageDown 翻页而不隐藏候选行的菜单。'
+  en: 'Beyond the built-in @: line ranges (@src/a.ts:12-40), skills, plugins and any git repo — with the token cost of each reference shown before you send.'
+  zh: '在 DSH 内置 @ 引用之上扩展：精确到行的行区间（@src/a.ts:12-40）、Skill、插件与任意 git 仓库，并在发送前显示每条引用的 token 成本。'

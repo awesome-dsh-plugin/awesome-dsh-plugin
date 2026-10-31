@@ -2,5 +2,5 @@ url: https://github.com/KyoMio/dsh-zen-remote
 name: KyoMio/dsh-zen-remote
 category: remote
 description:
-  en: 'Phone-first mobile UI rework plus a pairing-code gateway: use DSH from anywhere as an installable PWA with Web Push, behind your own reverse proxy or Cloudflare Tunnel.'
-  zh: '手机优先的移动端界面重排 + 配对码网关：经自建反代或 Cloudflare Tunnel 把 DSH 变成可安装、带推送的 PWA。'
+  en: 'Pairing-code remote access for DSH: a phone-first PWA with Web Push, plus a client role that operates the host''s shared sessions in the native DSH interface, behind your own reverse proxy or Cloudflare Tunnel.'
+  zh: '配对码远程访问 DSH：手机端可安装 PWA、带 Web Push 推送；另一台设备作为客户端，在原生 DSH 界面里直接操作主机共享的会话，经自建反代或 Cloudflare Tunnel 接入。'

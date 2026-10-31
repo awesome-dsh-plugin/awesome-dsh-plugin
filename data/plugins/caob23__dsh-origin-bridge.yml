@@ -1,6 +1,0 @@
-url: https://github.com/caob23/dsh-origin-bridge
-name: caob23/dsh-origin-bridge
-category: tools
-description:
-  en: "Drive local Origin/OriginPro from chat via 27 MCP tools: import .dat/.csv/.txt and CHI workstation .bin files, plot, style, fit, and deliver PNG/TIF/SVG/PDF plus an editable .opju project, with read-back verification on plots, styles and exports. Requires Windows, Origin/OriginPro 2021+ and Python 3.10+, plus `pip install originpro numpy` into the interpreter dsh launches: without the package every tool answers `missing_originpro`, and without an interpreter on PATH no tools register at all."
-  zh: "通过 27 个 MCP 工具在对话里驱动本机 Origin/OriginPro：导入 .dat/.csv/.txt 与 CHI 工作站 .bin，绘图、改样式、拟合，交付 PNG/TIF/SVG/PDF 图片和可继续编辑的 .opju 工程；绘图、样式、导出都带读回验证。需要 Windows、Origin/OriginPro 2021+ 与 Python 3.10+，并把 `pip install originpro numpy` 装进 dsh 启动的那个解释器：缺包时每个工具都会返回 `missing_originpro`，PATH 上没有解释器时工具完全不注册。"

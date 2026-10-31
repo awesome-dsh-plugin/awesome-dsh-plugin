@@ -1,0 +1,6 @@
+url: https://github.com/CARVIN94/dsh-router-qoder
+name: CARVIN94/dsh-router-qoder
+category: model
+description:
+  en: 'Qoder supplier plugin for dsh-router, covering both the CN and international regions. Uses a personal access token for authentication, signs requests to the Qoder cosy gateway and converts upstream SSE to OpenAI SSE; the model list reports the upstream display name alongside the key, while account selection and cooldown stay in dsh-router core.'
+  zh: 'dsh-router 的 Qoder 供应商插件，同时覆盖国内版与国际版。以个人访问令牌认证、对 Qoder 的 cosy 网关签名请求，并把上游 SSE 转成 OpenAI SSE；模型列表同时上报上游显示名与 key，选号与冷却仍由 dsh-router 核心处理。'

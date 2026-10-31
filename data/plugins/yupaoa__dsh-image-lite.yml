@@ -1,0 +1,6 @@
+url: https://github.com/yupaoa/dsh-image-lite
+name: yupaoa/dsh-image-lite
+category: vision
+description:
+  en: 'Image generation for DSH in two modes — an image_generate_lite tool the model calls from chat, and a right-sidebar studio for manual runs; up to five reference images, the OpenAI images API format, keys kept in the DSH credential service.'
+  zh: 'DSH 生图插件，双模式：对话中由模型调用 image_generate_lite 工具出图，或在右侧栏「生图工作台」手动生图；最多 5 张参考图、支持 OpenAI images 接口格式，密钥存于 DSH 凭据服务。'

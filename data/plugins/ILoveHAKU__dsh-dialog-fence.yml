@@ -1,0 +1,6 @@
+url: https://github.com/ILoveHAKU/dsh-dialog-fence
+name: ILoveHAKU/dsh-dialog-fence
+category: dev
+description:
+  en: 'Per-conversation behavioral rule fence for DeepSeek Harness: rules live in one JSON file, are edited from a Settings page or the conversation panel, and every rule carries its own on/off switch so a single rule can be muted without deleting it (muted rules are skipped at injection and the remaining numbering stays contiguous); the enabled rules are injected as one runtime-context section at a fixed order so the system prompt prefix stays stable.'
+  zh: '给每个对话加一道行为围栏：规则存在一个 JSON 文件里，可在设置页或对话面板里编辑，每条规则右侧都有独立开关，可以随时单独停用某一条而不用删掉它（停用项不参与注入、剩余条目编号仍然连续），启用中的规则作为一段固定顺序的运行时上下文注入，不重写系统提示词前缀。'

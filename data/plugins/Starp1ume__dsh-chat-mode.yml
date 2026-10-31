@@ -1,0 +1,6 @@
+url: https://github.com/Starp1ume/dsh-chat-mode
+name: Starp1ume/dsh-chat-mode
+category: browser
+description:
+  en: "Adds a Chat/Work switch in the DSH Desktop titlebar: Chat embeds the DeepSeek web chat (chat.deepseek.com) in a native webview with no DSH API calls from the plugin and is the default on first launch, Work keeps the native agent UI, the page stays mounted across switches, and a confirm-first dialog can copy chat text into a work-mode draft without sending it."
+  zh: "在 DSH 桌面版标题栏加入聊天/工作切换：聊天模式用原生 webview 内嵌 DeepSeek 网页版（chat.deepseek.com），插件自身不调用 DSH API，首次启动默认进入聊天；工作模式保留原生 Agent 界面，切换时网页保持挂载；「带入工作」对话框需先确认，只会填入工作模式草稿、不自动发送。"

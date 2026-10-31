@@ -1,0 +1,7 @@
+url: https://github.com/Yuanawaqwq/dsh-columbina-pet
+name: Yuanawaqwq/dsh-columbina-pet
+category: fun
+description:
+  en: "A 2D-only fork of PC2005-cloud/dsh-pet (MIT) that drops upstream's 3D skins; it can be installed alongside dsh-pet."
+  zh: "PC2005-cloud/dsh-pet（MIT）的 2D 专用分支，去掉了上游的 3D 形象切换；可与 dsh-pet 同时安装。"
+tarball: https://github.com/Yuanawaqwq/dsh-columbina-pet/releases/download/v1.1.11/dsh-columbina-pet-1.1.11.tgz

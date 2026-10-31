@@ -1,0 +1,7 @@
+url: https://github.com/howpy/dragonfly_chatbot
+name: howpy/dragonfly_chatbot
+category: tools
+description:
+  en: 'Built for DSH 0.2.1-rc.2 (engines.dsh pins it exactly). Technical support for Dragonfly 3D World using 2027.1 help documents and read-only searches of a detected local installation, with an explicit help-only fallback.'
+  zh: '面向 DSH 0.2.1-rc.2（engines.dsh 精确钉版）。基于 Dragonfly 3D World 2027.1 帮助文档和本机安装源码的只读检索提供技术支持，未发现安装时明确提示仅帮助文档模式。'
+tarball: https://github.com/howpy/dragonfly_chatbot/releases/download/v0.2.0/dsh-dragonfly-chatbot-0.2.0.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/wangdapeng325/dsh-oi-coach
+name: wangdapeng325/dsh-oi-coach
+category: skill
+description:
+  en: 'Competitive-informatics coach plugin for DeepSeek Harness: coaching-rule prompts, learning roadmap, knowledge points, problem setting, real C++ judging with g++, and ima knowledge-base retrieval with four-notebook archiving, for GESP / CSP-J/S / NOIP / NOI teaching. Needs g++, and an ima account with ima-skill and the four notebooks configured; replies carry a WeChat-account promo and QR code by default.'
+  zh: 'DeepSeek Harness 信奥教练插件：教练规则提示词 + 学习路线图/知识点/命题/C++ 真评测（g++ 编译运行）+ ima 知识库检索与 4 笔记本归档，面向 GESP、CSP-J/S、NOIP、NOI 教学。需本机有 g++，并配置 ima 账号、ima-skill 与 4 个笔记本；回复默认附带公众号推广与二维码。'

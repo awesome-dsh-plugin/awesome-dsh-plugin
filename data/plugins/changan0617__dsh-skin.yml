@@ -1,0 +1,6 @@
+url: https://github.com/changan0617/dsh-skin
+name: changan0617/dsh-skin
+category: theme
+description:
+  en: 'Homepage-style chat background skin for DeepSeek Harness, ported line by line from deepseek.com/harness: WebGL fluid background (5-colour noise field, flow-field brush, light, bloom, vignette, grain), white 90px dot-line grid with mouse perturbation and spring return, and a digital point-cloud whale that assembles from particles, breathes, swims, is pushed radially by the cursor and brightened by a light beam. Dark theme only; disabled automatically under reduced-motion.'
+  zh: 'DeepSeek Harness 首页风格聊天背景皮肤，对照 deepseek.com/harness 首页逐行移植：WebGL 流体背景（5 色噪声场、流场笔刷、光源、辉光、暗角、颗粒）、白色 90px 点线网格（鼠标扰动 + 弹簧回弹）、数字点云鲸鱼（粒子聚形、呼吸游动、鼠标径向推开、光标光束提亮）。仅深色主题生效，系统开启减少动态效果时自动停用。'
