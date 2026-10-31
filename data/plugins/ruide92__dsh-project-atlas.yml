@@ -1,0 +1,7 @@
+url: https://github.com/ruide92/dsh-project-atlas
+name: ruide92/dsh-project-atlas
+category: ui
+description:
+  en: 'Project Atlas: a local-first visual workbench for DeepSeek Harness projects, skills, sessions, runtimes, and artifacts.'
+  zh: 'Project Atlas：本地优先的可视化项目工作台，把 DeepSeek Harness 的项目、技能、会话、运行状态与产出收进一张地图。'
+icon: https://raw.githubusercontent.com/ruide92/dsh-project-atlas/main/assets/icon-180.png
