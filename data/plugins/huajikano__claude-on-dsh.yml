@@ -5,4 +5,4 @@ description:
   en: "Runs a project's Claude Code opening questions and plan, hands the task to DSH, and offers post-turn Claude review choices. Windows only, and requires a locally installed Claude Code CLI (set claudeCliPath if it is not auto-detected). New sessions handed to DSH are switched to danger-full-access."
   zh: "让 Claude Code 负责项目首问与规划，把任务交接给 DSH，并在回合结束后提供 Claude 验收选项。仅 Windows 可用，且需本机已安装 Claude Code CLI（未自动探测到时请填 claudeCliPath）。它交给 DSH 的新会话会被自动切到 danger-full-access。"
 icon: https://raw.githubusercontent.com/huajikano/claude-on-dsh/main/assets/icon-180.png
-tarball: https://github.com/huajikano/claude-on-dsh/releases/download/v1.2.9/claude-on-dsh-1.2.9.tgz
+tarball: https://github.com/huajikano/claude-on-dsh/releases/download/v1.3.2/claude-on-dsh-1.3.2.tgz
