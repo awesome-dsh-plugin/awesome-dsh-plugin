@@ -1,0 +1,7 @@
+url: https://github.com/yuna78/dsh-plugin-dev-workflow
+name: yuna78/dsh-plugin-dev-workflow
+category: workflow
+description:
+  en: Auditable Request to Feedback to Task to Verify to Completion workflow for DSH.
+  zh: 面向 DSH 的可审计研发闭环：把需求、反馈、任务、验证与完成总结串起来。
+icon: https://raw.githubusercontent.com/yuna78/dsh-plugin-dev-workflow/main/assets/icon.svg
