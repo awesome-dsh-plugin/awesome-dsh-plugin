@@ -92,7 +92,7 @@ jobs:
           # (2026-10-19). Fetch from npmjs in CI; local installs keep their own registry.
           npm_config_registry: https://registry.npmjs.org/
           npm_config_replace_registry_host: always
-      - run: node --test scripts/download-window.test.mjs scripts/github-statistics.test.mjs scripts/release-manifest.test.mjs
+      - run: node --test scripts/download-window.test.mjs
       # Rolling probe cache: unique key so every run saves, restore-keys pulls
       # the most recent.
       #
@@ -143,11 +143,6 @@ jobs:
           path: data/updates.json
           key: updates-v1-${{ github.run_id }}
           restore-keys: updates-v1-
-      - uses: actions/cache@v4
-        with:
-          path: data/releases.json
-          key: releases-v1-${{ github.run_id }}
-          restore-keys: releases-v1-
       - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -220,10 +215,6 @@ jobs:
           # submission can 404 later without anyone touching the entry, and the
           # set is small enough that there is no reason to sample it (#1619).
           node scripts/probe-tarballs.mjs
-          # Own cache above: adding a path to probe-data would invalidate every
-          # established probe. Counts refresh daily; changed install tags are
-          # read on push as well, so version/host facts follow the pinned asset.
-          node scripts/probe-releases.mjs
           # Same reasoning, same shape, for screenshots. The PR check validates
           # that an image URL is well-formed and on GitHub's hosting, never that
           # it resolves — so a dead link merged clean and published as a broken
