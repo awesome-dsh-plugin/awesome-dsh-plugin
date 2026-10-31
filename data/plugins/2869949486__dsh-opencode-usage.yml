@@ -1,0 +1,6 @@
+url: https://github.com/2869949486/dsh-opencode-usage
+name: 2869949486/dsh-opencode-usage
+category: usage
+description:
+  en: "Adds an OpenCode Go usage page to dsh Settings with per-model 5-hour, weekly, and monthly spend and remaining allowance."
+  zh: "在 dsh 设置里新增 OpenCode Go 用量页，按模型显示 5 小时、本周、本月花费与剩余额度。"
