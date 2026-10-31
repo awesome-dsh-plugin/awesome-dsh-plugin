@@ -1,0 +1,6 @@
+url: https://github.com/aaz111/dsh-nx
+name: aaz111/dsh-nx
+category: tools
+description:
+  en: 'Siemens NX integration for dsh: 71 tools that build and edit solids, surfaces, sketches, holes and tubes, run NX Nastran statics and modal studies, roll up assembly BOMs with pairwise clearance checks, and print A3 sheets with a real GB frame to PDF, all in a background NX session driven by JSON commands.'
+  zh: '把 Siemens NX 接进 dsh：71 个工具覆盖实体建模、曲面闭环、同步建模、孔型与管路、Nastran 静力与模态、装配 BOM 与逐对间隙检查、A3 图纸与 GB 图框出 PDF，全部通过 JSON 命令驱动后台 NX 会话执行。'
