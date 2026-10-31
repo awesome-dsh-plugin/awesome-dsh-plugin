@@ -1,0 +1,6 @@
+url: https://github.com/backtomyfuture/dsh-resource-center
+name: backtomyfuture/dsh-resource-center
+category: model
+description:
+  en: DeepSeek Harness sidebar for LiteLLM models, MCP servers, skills, and spend.
+  zh: DeepSeek Harness 侧边栏面板，用于 LiteLLM 虚拟钥匙、动态模型注入、MCP 转发与花费统计。
