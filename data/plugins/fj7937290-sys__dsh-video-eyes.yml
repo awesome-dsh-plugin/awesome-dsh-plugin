@@ -1,0 +1,6 @@
+url: https://github.com/fj7937290-sys/dsh-video-eyes
+name: fj7937290-sys/dsh-video-eyes
+category: vision
+description:
+  en: 'Read a video with a text-only model: sample frames at a 0.1-10 second interval into contact sheets where every frame carries its real timecode, extract the audio track into a timestamped transcript, and describe each sheet with an image-capable model in the host, so the plugin works on its own without any other vision plugin. A composer slider sets the sampling interval, and pure audio files are transcribed without frame sampling.'
+  zh: '璁╃函鏂囨湰妯″瀷鐪嬫噦瑙嗛锛氭寜 0.1鈥?0 绉掔殑鍙皟闂撮殧鎶藉抚鎷兼垚鎬昏鍥撅紝姣忔牸鐑у綍璇ュ抚鐨勭湡瀹炴椂闂寸爜锛涙彁鍙栭煶杞ㄨ浆鍐欐垚甯︽椂闂存埑鐨勫彴璇嶏紱骞惰嚜琛岃皟鐢ㄥ涓婚噷鐨勮瑙夋ā鍨嬮€愰〉鎻忚堪鐢婚潰锛屽洜姝や笉渚濊禆浠讳綍鍏朵粬瑙嗚鎻掍欢銆傝緭鍏ユ涓婃柟鏈夋娊甯ч棿闅旀粦鍧楋紝绾煶棰戞枃浠跺垯璺宠繃鎶藉抚鍙仛杞啓銆?
