@@ -1,0 +1,6 @@
+url: https://github.com/pucco-OD/dsh-sumika-widget
+name: pucco-OD/dsh-sumika-widget
+category: fun
+description:
+  en: A desktop character for DeepSeek Harness that reads at the bookshelf when idle, types at a desk while the agent works, raises a question mark and a pixel-art card when it needs your answer, and stands up with an exclamation mark when the turn ends.
+  zh: DeepSeek Harness 的桌面角色：空闲时在书架前翻书，工作时坐在桌前打字，需要你回答时举起问号并弹出像素风提问卡片，回合结束时起身举起感叹号。
