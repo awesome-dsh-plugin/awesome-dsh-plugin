@@ -1,0 +1,6 @@
+url: https://github.com/nonefora11/dsh-intent-debt-radar
+name: nonefora11/dsh-intent-debt-radar
+category: session
+description:
+  en: 'Turns the promises a chat quietly drops into an interest-bearing ledger: every “later” becomes a card, older ones rank higher, and each card jumps back to the message that made it.'
+  zh: '把聊天里被顺口搁置的“回头再说”记成一份带利息的账本：每句承诺是一张卡，搁得越久排名越靠前，点一下跳回当初那句话。'
