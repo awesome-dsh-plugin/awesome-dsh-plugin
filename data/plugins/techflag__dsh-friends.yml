@@ -4,3 +4,4 @@ category: identity
 description:
   en: Public chat rooms with quoted replies and opt-in encrypted private text chat inside DeepSeek Harness, using a shared Nostr relay and locally protected identities.
   zh: 在 DeepSeek Harness 内进入公共聊天室交流，支持引用回复、私聊申请和加密文字聊天，通过共同 Nostr 中继互通，身份保存在本机受保护存储中。
+tarball: https://github.com/techflag/dsh-friends/releases/download/v0.1.0-alpha.10/dsh-friends-0.1.0-alpha.10.tgz
