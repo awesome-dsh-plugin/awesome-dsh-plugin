@@ -1,0 +1,7 @@
+url: https://github.com/19952730389/dsh-app-updater
+name: 19952730389/dsh-app-updater
+category: usage
+tarball: https://github.com/19952730389/dsh-app-updater/releases/latest/download/dsh-app-updater.tgz
+description:
+  en: Detect which installed Windows apps have a newer version in the winget catalog and update them with one click, by downloading each vendor's full installer from its official site and installing it silently.
+  zh: 检测本机已安装的 Windows 应用里哪些有可用新版本，并一键从各软件官网下载完整安装包静默更新，全程不需要打开被检测的软件。
