@@ -1,6 +1,0 @@
-url: https://github.com/zhxmt-xm/dsh-opencode-quota
-name: zhxmt-xm/dsh-opencode-quota
-category: usage
-description:
-  en: Sidebar panel for OpenCode Go quota, spend and usage trends in DeepSeek Harness, with multiple accounts, service-account filtering and English/Chinese UI.
-  zh: 在 DeepSeek Harness 侧栏查看 OpenCode Go 订阅额度、花费与用量趋势，支持多账户、服务账号筛选和中英界面。
