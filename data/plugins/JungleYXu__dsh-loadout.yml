@@ -1,0 +1,14 @@
+# Submission entry for the awesome-dsh-plugin list.
+#
+# This file is a copy of what goes into the list's repository as
+#   data/plugins/JungleYXu__dsh-loadout.yml
+# (filename = "<owner>__<repo>.yml"; one file is the whole submission).
+# See RELEASE.md for the PR procedure and the rules it has to satisfy.
+
+url: https://github.com/JungleYXu/dsh-loadout
+name: JungleYXu/dsh-loadout
+category: tools
+description:
+  en: "Per-conversation tool kits for DeepSeek Harness: pick one kit and only its tools reach the model, with three bases (All, built-in only, or a saved kit), add-ons for one-off combinations, and a token ledger estimating what the kit saves."
+  zh: "缁欐瘡涓璇濋€変竴濂楀伐鍏凤紙濂楄锛夛紝鍙妸鐢ㄥ緱涓婄殑宸ュ叿鎶曠粰妯″瀷锛氫笁妗ｅ簳搴э紙鍏ㄩ儴 / 浠呭唴缃?/ 鎴戠殑濂楄锛夈€佷竴娆℃€у姞鎸傘€乼oken 璐︽湰浼扮畻鐪佷笅鐨勫紑閿€锛屽苟鍙湪璁剧疆閲屾寚瀹氭柊瀵硅瘽鐨勯粯璁ゅ瑁呫€?
+icon: https://raw.githubusercontent.com/JungleYXu/dsh-loadout/main/docs/icon.png
