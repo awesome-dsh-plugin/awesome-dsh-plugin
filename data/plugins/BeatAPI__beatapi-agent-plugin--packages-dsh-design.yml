@@ -1,0 +1,7 @@
+url: https://github.com/BeatAPI/beatapi-agent-plugin/tree/main/packages/dsh-design
+name: BeatAPI/beatapi-agent-plugin#dsh-design
+category: vision
+description:
+  en: "Starts the published local BeatDesign workspace and connects 30 MCP tools for projects, Canvas, Assets and Timeline, with a shared-project Skill and remote-generation approval guidance."
+  zh: "启动已发布的本地 BeatDesign 工作台，接入项目、画布、素材和时间线的 30 个 MCP 工具，附带共享项目与远程生成确认流程。"
+tarball: https://github.com/BeatAPI/beatapi-agent-plugin/releases/download/harness-workspaces-v0.1.0/beatapi-dsh-design-0.1.0.tgz
