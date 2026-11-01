@@ -4,4 +4,4 @@ category: ui
 description:
   en: 'Adds a Ctrl+F-style find bar to the DSH interface: highlights every match in the conversation or on the current page, and steps between them.'
   zh: '给 DSH 界面加一条 Ctrl+F 式查找条：高亮会话或当前页面里的全部匹配，并逐条跳转。'
-icon: https://raw.githubusercontent.com/ACGNnsj/dsh-conversation-find/main/assets/icon-180.png
+icon: https://raw.githubusercontent.com/ACGNnsj/dsh-conversation-find/main/assets/icon-512.png
