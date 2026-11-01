@@ -1,0 +1,6 @@
+url: https://github.com/cmm00100/dsh-autocad-bridge/tree/main/bundle-autocad-ui
+name: cmm00100/dsh-autocad-bridge#bundle-autocad-ui
+category: tools
+description:
+  en: 'Drives the installed AutoCAD 2024 over COM and exposes it to the agent as 18 mcp__autocad__ tools: connect and status, list or create documents, save, create and list layers, draw lines, circles, rectangles, polylines, arcs and text, list entities, zoom to extents, and pass any native command through. A sidebar panel owns the Python bridge process — start, stop, restart, dependency bootstrap, live logs and crash recovery — and resolves every path at runtime, so the same bundle serves both the web app and the desktop app. Windows only, Python 3.10-3.12, AutoCAD 2022-2025.'
+  zh: '通过 COM 驱动本机安装的 AutoCAD 2024，把它暴露成 18 个 mcp__autocad__ 工具：连接与状态、列出或新建文档、保存、新建与列出图层、绘制直线/圆/矩形/多段线/圆弧/文字、列出图元、缩放到范围，以及透传任意 AutoCAD 原生命令。侧边栏面板托管驱动它的 Python 桥进程——启动、停止、重启、安装依赖、实时日志与崩溃自动重启——所有路径在运行时解析，同一个 bundle 在 Web 版与桌面版都能用。仅 Windows，Python 3.10-3.12，AutoCAD 2022-2025。'
