@@ -1,0 +1,8 @@
+url: https://github.com/2310770803/dsh-session-rewind
+name: 2310770803/dsh-session-rewind
+category: session
+description:
+  en: Rewinds a finished turn in place — a button next to your own message withdraws that message and everything after it from the model context, puts its text back in the composer for editing, and optionally restores the files the turn changed through the DSH filesystem service.
+  zh: 就地回退已完成的回合：点你自己消息旁的按钮即可把这条消息及之后的内容从模型上下文中撤回，原文回到输入框可直接改完重发，并可一并恢复该回合经 DSH 文件系统服务改动过的文件。
+icon: https://raw.githubusercontent.com/2310770803/dsh-session-rewind/main/assets/icon-180.png
+tarball: https://github.com/2310770803/dsh-session-rewind/releases/latest/download/dsh-session-rewind.tgz
