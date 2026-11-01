@@ -1,0 +1,7 @@
+url: https://github.com/huningsong/dsh-todos-diy
+name: huningsong/dsh-todos-diy
+category: ui
+icon: https://raw.githubusercontent.com/huningsong/dsh-todos-diy/main/assets/icon-180.png
+description:
+  en: "Work todo reminders in a sidebar panel with four stage tabs (not started, in progress, overdue, done) plus separate recurring and paused filters, priority derived from the end time in real time, pinning that survives overdue, and enable/disable for recurring tasks. Recurrence covers workdays (following China's statutory holidays and make-up workdays), selected weekdays, monthly dates with month-end rollover, and 5-field cron; one-off tasks default to start and end reminders (start optional, end required); meetings can disable the end reminder. Alerts appear in a page overlay with optional browser notifications, snooze and quiet hours. Twelve agent tools; weekly/monthly reports, natural-language quick add, and cross-view search; data is a single local JSON file with completed tasks archived per quarter."
+  zh: "侧边栏「工作待办」面板：未开始 / 进行中 / 已超期 / 已完成四阶段页签 + 循环任务与已暂停独立筛选，优先级按结束时间实时派生，置顶任务超期也不下沉，循环任务可随时启停。循环规则覆盖工作日（跟随中国法定节假日与调休）、指定星期、每月指定日期（月末顺延）与 5 段式 cron；单次任务在开始与结束两个时间点各提醒一次。提醒以页面浮层呈现，可选浏览器系统通知，支持稍后提醒与免打扰。提供 12 个 Agent 工具，支持周报/月报、自然语言快速新建与跨视图搜索；数据为本地单个 JSON 文件，已完成任务按季度归档。"

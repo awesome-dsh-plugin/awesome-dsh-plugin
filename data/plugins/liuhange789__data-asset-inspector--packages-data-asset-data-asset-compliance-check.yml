@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-compliance-check
+name: liuhange789/data-asset-inspector#data-asset-compliance-check
+category: tools
+description:
+  zh: "数据资产合规检查插件 — 检查来源合规性、处理合规性、使用合规性"
+  en: "Data asset compliance check plugin — checks source compliance, processing compliance, usage compliance."

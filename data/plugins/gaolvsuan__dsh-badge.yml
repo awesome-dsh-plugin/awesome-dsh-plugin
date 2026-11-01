@@ -1,0 +1,7 @@
+url: https://github.com/gaolvsuan/dsh-badge
+name: gaolvsuan/dsh-badge
+category: notify
+icon: https://raw.githubusercontent.com/gaolvsuan/dsh-badge/main/assets/icon-fluke-180.png
+description:
+  en: Unread count on the browser tab icon and the Windows taskbar button, with a chime when a turn finishes.
+  zh: 回合结束时在浏览器标签页图标和 Windows 任务栏图标上显示未读数，并播放提示音。

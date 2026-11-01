@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-circulation-assessor
+name: liuhange789/data-asset-inspector#data-circulation-assessor
+category: tools
+description:
+  zh: "数据流通评估插件：给数据集的可流通性打分，覆盖可信数据空间接入就绪度与交易合规预判，并给出改进建议。"
+  en: "Data-circulation assessor: scores how readily a dataset can circulate, covering trusted-data-space access readiness and transaction-compliance pre-checks, with improvement recommendations."

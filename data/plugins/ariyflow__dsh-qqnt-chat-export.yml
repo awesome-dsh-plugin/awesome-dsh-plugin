@@ -1,0 +1,6 @@
+url: https://github.com/ariyflow/dsh-qqnt-chat-export
+name: ariyflow/dsh-qqnt-chat-export
+category: tools
+description:
+  en: 'Reads the local NTQQ (QQ 9.9.x) message database on Windows and Linux and exports group and private chat history to txt, csv, json, md, html or sqlite. Ships eight model tools (qqnt_status, qqnt_extract_key, qqnt_list_groups, qqnt_list_chats, qqnt_search, qqnt_export_group, qqnt_export_chat, qqnt_export_batch) and a local web UI on 127.0.0.1:46728 with an incremental SQLite index, statistics, ZIP batch export, sender redaction, media bundling, per-day splitting, export presets and AES-256 password ZIPs. Needs python3 with sqlcipher3 (the settings page can create a private virtualenv), and the database key is read from the running, logged-in QQ client.'
+  zh: '读取 Windows / Linux 本机 NTQQ（QQ 9.9.x）聊天记录，把群聊与私聊的聊天记录导出成 txt、csv、json、md、html 或 sqlite。包含八个模型工具（qqnt_status、qqnt_extract_key、qqnt_list_groups、qqnt_list_chats、qqnt_search、qqnt_export_group、qqnt_export_chat、qqnt_export_batch），以及 127.0.0.1:46728 上的本地网页界面：增量 SQLite 索引、统计面板、批量导出 ZIP、昵称/QQ 脱敏、媒体打包、按天分文件、导出预设与 AES-256 密码压缩包。需要带 sqlcipher3 的 python3（设置页可一键创建独立虚拟环境），数据库密钥从正在登录的 QQ 客户端内存中读取。'

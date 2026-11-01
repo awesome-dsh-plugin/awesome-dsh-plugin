@@ -1,5 +1,5 @@
-url: https://github.com/Ayowait/dsh-task-dispatcher
-name: Ayowait/dsh-task-dispatcher
+url: https://github.com/Ayowait/dsh-subagent-dispatcher
+name: Ayowait/dsh-subagent-dispatcher
 category: tools
 description:
   en: 'Registers a `dispatch_task` tool that hands scoped or routine work to an isolated subagent, waits for it to finish, then checks the expected files and runs an optional verification command before returning a short report to the main conversation.'
