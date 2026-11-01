@@ -1,0 +1,5 @@
+url: https://github.com/lucagiftzek/dsh-phone
+name: lucagiftzek/dsh-phone
+category: tools
+description:
+  en: "A Phone tab in dsh-better-sidebar: SMS and calls over Twilio and SIP lines bridged through Asterisk, call audio through your server, Live, Voicemail and Do not disturb modes with live voicemail transcripts, a Telegram account with chats, voice messages and calls, and phone_* and telegram_* agent tools."
