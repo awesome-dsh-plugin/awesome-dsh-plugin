@@ -1,0 +1,6 @@
+url: https://github.com/xiangshu2026/dsh-scheduled-reports
+name: xiangshu2026/dsh-scheduled-reports
+category: workflow
+description:
+  en: "Registers one tool, report_health, that answers whether a scheduled report job actually ran. It judges by side effects rather than exit codes: how old the newest report folder is, how many documents it holds, whether more than one report category is present, whether the audit ledger was synced recently, and how long ago the last log was written. Exits nothing, calls no model, and reads only local paths you can override by config or environment variable."
+  zh: "只注册一个工具 report_health，回答「定时报告任务到底跑了没有」。它看副作用而不是退出码：最新报告目录有多旧、里面有几份文档、是否不止一个类别、审计账本上次同步是多久前、最后一条日志写了多久。不调用模型、不产生退出码，只读本地路径，可用配置或环境变量覆盖。"
