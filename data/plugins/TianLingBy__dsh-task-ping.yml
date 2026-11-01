@@ -1,7 +1,7 @@
 url: https://github.com/TianLingBy/dsh-task-ping
 name: TianLingBy/dsh-task-ping
 category: notify
-tarball: https://github.com/TianLingBy/dsh-task-ping/releases/download/v0.4.0/dsh-task-ping-0.4.0.tgz
+tarball: https://github.com/TianLingBy/dsh-task-ping/releases/download/v0.4.1/dsh-task-ping-0.4.1.tgz
 description:
   en: "Task alerts for DSH: a system toast when a turn finishes, or when an approval, question or plan review is waiting; a chime rendered on the Windows communications endpoint so the system ducks other media by its own setting and restores it afterwards, without anyone's volume being written; and an optional copy mailed to your phone over SMTP (465 implicit TLS, or STARTTLS where credentials go out only after the upgrade). No runtime dependency: the sound helper is a PowerShell script, the mail client is plain Node."
   zh: "DSH 任务提醒：每轮对话结束、或出现待审批 / 待回答 / 待确认计划时弹系统通知；提示音走 Windows 通信播放端点，由系统按「通信活动」自动压低其他媒体并在结束后恢复，不写任何应用的音量；可选再用 SMTP 发一封邮件到手机（465 隐式 TLS，或 STARTTLS 且仅在升级后才发送凭据）。无运行时依赖：声音助手是 PowerShell 脚本，邮件客户端是纯 Node 实现。"
