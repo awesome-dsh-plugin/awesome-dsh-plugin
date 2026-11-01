@@ -1,0 +1,7 @@
+url: https://github.com/DayuanJiang/next-ai-draw-io/tree/main/packages/dsh-plugin
+name: DayuanJiang/next-ai-draw-io#dsh-plugin
+category: tools
+description:
+  en: 'draw.io diagrams in DeepSeek Harness through the next-ai-drawio MCP server: the link in the reply opens a live preview in the right sidebar, you can edit the diagram by hand, and each AI change is a version you can restore.'
+  zh: 'dsh 的 draw.io 绘图插件：通过 next-ai-drawio MCP 服务器作图，点回复里的链接在右侧栏打开实时预览，可以手动修改图，AI 的每次修改都是可以恢复的版本。'
+icon: https://raw.githubusercontent.com/DayuanJiang/next-ai-draw-io/main/packages/dsh-plugin/icon.png
