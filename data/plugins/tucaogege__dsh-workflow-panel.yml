@@ -1,0 +1,6 @@
+url: https://github.com/tucaogege/dsh-workflow-panel
+name: tucaogege/dsh-workflow-panel
+category: workflow
+description:
+  en: "Read-only workflow panel for DSH: overview, six gates, milestones, org template, task flow and roster, all read from a project.json file. Ships as a Cordis bundle with two GET-only routes and writes nothing to the project or the DSH state file."
+  zh: "只读的 DSH 工作流面板：概览、六道门、里程碑、组织模板、任务流与人员卡，数据来自项目的 project.json。以 Cordis bundle 形式安装，只注册两条 GET 路由，不写入项目文件或 DSH 状态文件。"
