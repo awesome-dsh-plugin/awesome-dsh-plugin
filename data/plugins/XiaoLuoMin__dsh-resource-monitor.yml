@@ -1,0 +1,7 @@
+url: https://github.com/XiaoLuoMin/dsh-resource-monitor
+name: XiaoLuoMin/dsh-resource-monitor
+category: ui
+description:
+  en: 'Windows resource monitor for the DSH sidebar: samples CPU, memory and clock speed once a minute, keeps a 30-day history and draws separate 24h / 7d charts for CPU and memory (with 85% / 90% alert lines) plus a frequency chart that marks load-time throttling. Reports sustained CPU >= 85% (10 min), memory >= 90% (10 min) and frequency <= 70% of maximum clock under load (5 min).'
+  zh: 'DSH 侧栏的 Windows 资源监控：每 60 秒采集 CPU、内存与主频，保留 30 天历史，CPU 与内存各一张 24 小时 / 7 天独立曲线（带 85% / 90% 告警线），另有一张频率曲线标注有负载时的降频，并判定 CPU 持续 ≥ 85%（10 分钟）、内存持续 ≥ 90%（10 分钟）、有负载时频率 ≤ 最高频率 70%（5 分钟）三类异常。'
+tarball: https://github.com/XiaoLuoMin/dsh-resource-monitor/releases/latest/download/dsh-resource-monitor.tgz
