@@ -1,0 +1,9 @@
+# Submit only after the pinned GitHub Release URL below is publicly downloadable.
+url: https://github.com/MJ-CJM/DSH-Bot/tree/main/packages/dsh-bot
+name: MJ-CJM/DSH-Bot#dsh-bot
+category: workflow
+description:
+  en: Personal Bots with memory, workspace group chats and native background tasks for DeepSeek Harness.
+  zh: 在 DeepSeek Harness 中提供具备记忆的个人 Bot、工作区群聊和原生后台任务。
+icon: https://raw.githubusercontent.com/MJ-CJM/DSH-Bot/main/packages/dsh-bot/assets/icon-256.png
+tarball: https://github.com/MJ-CJM/DSH-Bot/releases/download/v0.6.3/dsh-bot-0.6.3.tgz
