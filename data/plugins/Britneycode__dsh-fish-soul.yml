@@ -2,5 +2,5 @@ url: https://github.com/Britneycode/dsh-fish-soul
 name: Britneycode/dsh-fish-soul
 category: identity
 description:
-  en: 'A single-character agent that lives across QQ, Bilibili and Douyin: persona cards with evolving traits, per-person memory with Ebbinghaus decay and correction, a virtual clock driving a daily routine, proactive messages, auto-extracted memories, forgettable via a tool, optional web search, and a settings page with 16 tabs.'
-  zh: '活在 QQ / B站 / 抖音三端的单角色智能体：人格卡与会长的人格、按人隔离的记忆（艾宾浩斯衰减、可纠正、聊完自动记）、虚拟时钟驱动的作息与主动开口、可选上网查，设置页 16 个标签。'
+  en: 'A single-character agent that lives across QQ, Bilibili and Douyin: persona cards with slowly evolving traits, per-person memory with Ebbinghaus decay and correction, a virtual clock driving a daily routine, proactive messages, auto-extracted memories, and a settings panel with ten tabs covering retrieval, persona, routine, memory inspection, channels, habits, models and usage.'
+  zh: '活在 QQ / B站 / 抖音三端的单角色智能体：人格卡与慢慢长出来的人格、按人隔离的记忆（艾宾浩斯衰减、可纠正、聊完自动记）、虚拟时钟驱动的作息与主动开口；设置面板共十个标签，覆盖检索、人格、自走、记忆检视、三端通道、习惯、模型与用量。'
