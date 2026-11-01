@@ -1,0 +1,6 @@
+url: https://github.com/Htao-uu/dsh-mobile-shell
+name: Htao-uu/dsh-mobile-shell
+category: ui
+description:
+  en: DeepSeek App-style mobile shell for the DSH Web UI with drawer navigation, app-like composer and settings, and Android back-stack handling.
+  zh: 为 DSH Web UI 提供接近 DeepSeek App 的移动端壳层：抽屉导航、App 风格输入与设置，以及 Android 返回栈处理。
