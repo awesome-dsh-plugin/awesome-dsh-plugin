@@ -1,0 +1,7 @@
+url: https://github.com/Huangzihengcmd/dsh-wechat-assistant
+name: Huangzihengcmd/dsh-wechat-assistant
+category: remote
+description:
+  en: 'Drive DeepSeek Harness from WeChat: scan a QR code to sign in, send instructions in WeChat, and the agent reply lands back in the same chat window.'
+  zh: '在微信里指挥 DeepSeek Harness：扫码登录后在微信里发指令，Agent 的回复实时回到同一个聊天窗口。'
+icon: https://raw.githubusercontent.com/Huangzihengcmd/dsh-wechat-assistant/main/assets/icon-180.png
