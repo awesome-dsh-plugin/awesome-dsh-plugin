@@ -1,0 +1,7 @@
+url: https://github.com/DDL095/dsh-moa-native
+name: DDL095/dsh-moa-native
+category: agi
+description:
+  en: 'Native generation-time Mixture-of-Agents: every turn, reference models run the same session context in parallel as pre-run drafts and one aggregator executes with full tooling; config-as-model recipes, F mirror / R trimmed views, subagent gating, derived per-recipe vision (vision refs relay image reads to text-only aggregators).'
+  zh: 原生生成时 MoA：每轮参考模型并行预演同一会话上下文产出草稿，单一聚合模型带完整工具循环执行；配置即模型配方、F 镜像 / R 裁剪双视野、子会话门控、按成分派生的配方级视觉（视觉参考路可为纯文本聚合转述图像）。
+icon: https://raw.githubusercontent.com/DDL095/dsh-moa-native/master/docs/assets/icon-180.png

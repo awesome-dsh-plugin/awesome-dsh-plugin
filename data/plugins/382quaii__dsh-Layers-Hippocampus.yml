@@ -1,0 +1,6 @@
+url: https://github.com/382quaii/dsh-Layers-Hippocampus
+name: 382quaii/dsh-Layers-Hippocampus
+category: memory
+description:
+  en: 'Layered long-term memory for DeepSeek Harness: append-only event log, rebuildable tag index, day diaries, semantic layer, trend quarantine, and an offline knowledge-graph panel.'
+  zh: '为 DeepSeek Harness 提供的分层长期记忆：追加式事件日志、可重建标签索引、按天日记、语义层、趋势隔离，以及离线知识图谱面板。'

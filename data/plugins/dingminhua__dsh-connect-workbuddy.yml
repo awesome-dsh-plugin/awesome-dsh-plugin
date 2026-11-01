@@ -1,6 +1,7 @@
 url: https://github.com/dingminhua/dsh-connect-workbuddy
 name: dingminhua/dsh-connect-workbuddy
 category: model
+icon: https://raw.githubusercontent.com/dingminhua/dsh-connect-workbuddy/main/icons/dsh-connect-workbuddy-128.png
 description:
-  en: Connects locally signed-in WorkBuddy models to DSH, supports per-model image input opt-in, account switching, and a read-only credits overview with daily check-in.
-  zh: 将本机登录的 WorkBuddy 模型接入 DSH，支持逐模型图片输入开关、账号切换，以及带每日签到的只读积分概览。
+  en: Connects locally signed-in WorkBuddy models, CN and international alike, to DSH, reading each model's credit multiplier from the upstream catalog on every refresh, with per-model image input toggles, account switching backed by an auto-failing-over pool, manual daily check-in, and read-only credit overviews shown as compact pills on the card and in the composer.
+  zh: 将本机登录的 WorkBuddy 模型（国内版与国际版）接入 DSH，每次刷新按上游目录读取每个模型的积分倍率，支持逐模型图片输入开关、带自动换号的账号池、手动每日签到，以及卡片与输入框里的只读积分胶囊读数。

@@ -1,0 +1,6 @@
+url: https://github.com/homily707/dsh-session-header
+name: homily707/dsh-session-header
+category: session
+description:
+  en: Injects an x-session-id HTTP header carrying the harness session id onto every LLM provider request, plus whitelisted gateway fetches during tool execution.
+  zh: 在每个 LLM 提供商请求上注入携带 harness 会话 ID 的 x-session-id 请求头，也覆盖工具执行期间白名单内的网关请求。

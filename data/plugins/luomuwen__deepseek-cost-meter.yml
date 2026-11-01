@@ -1,0 +1,7 @@
+url: https://github.com/luomuwen/deepseek-cost-meter
+name: DeepSeek Cost Meter（每轮费用）
+category: usage
+description:
+  en: Estimates per-turn model costs from recorded usage, with token breakdowns, retry accounting, price snapshots and session totals.
+  zh: 根据已记录用量估算每轮模型费用，展示 token 明细、重试计费、历史价格快照和会话累计费用。
+tarball: https://github.com/luomuwen/deepseek-cost-meter/releases/download/v0.1.0/local-deepseek-cost-meter-0.1.0.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/xiaoxin3309/dsh-mini
+name: xiaoxin3309/dsh-mini
+category: ui
+icon: https://raw.githubusercontent.com/xiaoxin3309/dsh-mini/main/assets/icon-180.png
+description:
+  en: 'Windows only (needs the Edge WebView2 Runtime): pop the current session into an always-on-top WebView2 mini window with a self-drawn title bar, free resizing and a jump back to the main window; adds full-screen and region screenshots that paste straight into the composer, a "ask about selection" pill for text selected in any application, global hotkeys and a settings section.'
+  zh: 仅 Windows（需要 Edge WebView2 运行时）：把当前会话一键弹出为常驻置顶的 WebView2 小窗（自绘标题栏、可自由缩放、可跳回主窗），并附整屏与框选截图直插输入框、任意程序划词后的「问大肥鱼」快捷按钮、全局快捷键与设置页。

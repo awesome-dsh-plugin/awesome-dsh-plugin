@@ -1,0 +1,6 @@
+url: https://github.com/swenbo1-web/agents-learning
+name: swenbo1-web/agents-learning
+category: memory
+description:
+  en: Project-scoped SQLite memory with progressive retrieval, bounded context, a composer button and visual review. Install the repository-root DSH bundle, then run /learning-init with an absolute project path using local Python 3.10+.
+  zh: 项目级 SQLite 记忆，支持渐进检索、有界上下文、聊天框按键与可视化审批。安装仓库根 DSH Bundle 后，用本机 Python 3.10+ 执行 /learning-init 加项目绝对路径完成初始化。

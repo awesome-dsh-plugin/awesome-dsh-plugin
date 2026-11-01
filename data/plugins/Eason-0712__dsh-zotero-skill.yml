@@ -1,0 +1,6 @@
+url: https://github.com/Eason-0712/dsh-zotero-skill
+name: Eason-0712/dsh-zotero-skill
+category: skill
+description:
+  en: 'Zotero literature skill for DeepSeek Harness: finds papers through OpenAlex, tracks new work in a field, ranks core papers, manages items (tags, collections, duplicate checks), builds multi-level folders by research direction, batch-reads a corpus into notes, charts the research landscape, and surfaces open gaps. It also exports BibTeX, inserts citations into LaTeX or Markdown drafts, and imports a ranked daily digest of new papers. Standard-library Python only, talking to the official local Zotero API and the Zotero Connector; writes need a one-time authorization. Adapted from OpenAI''s MIT-licensed Zotero plugin (openai/plugins); daily auto-import scheduling is Windows-only.'
+  zh: '为 DeepSeek Harness 打造的 Zotero 文献技能：通过 OpenAlex 找文献、追前沿、筛核心论文，管理条目（标签、归集、查重），按研究方向与类型/方法/数据组建多层文件夹，把一批论文整理成阅读笔记，提炼脉络并发现空白，另可导出 BibTeX、给 LaTeX 或 Markdown 草稿插入引用、按日自动收录新论文。纯 Python 标准库，只走 Zotero 官方本地 API 与 Connector；写操作需一次性授权。改编自 OpenAI 的 MIT Zotero 插件（openai/plugins）；每日自动导入的定时任务仅支持 Windows。'

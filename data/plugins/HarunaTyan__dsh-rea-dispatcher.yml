@@ -1,0 +1,7 @@
+url: https://github.com/HarunaTyan/dsh-rea-dispatcher
+name: HarunaTyan/dsh-rea-dispatcher
+category: tools
+description:
+  en: "Alternative front-end for the upstream REA (Reverse Engineer Anything) MCP server: instead of registering its 207 tools (about 775,000 bytes of tool schemas in every request), it exposes three calls — rea_tools lists the catalogue grouped by domain, rea_help returns one tool's schema, rea_call passes arguments through unchanged — and spills oversized results to files instead of truncating silently. Ships no engines: REA (rea-agents 6.x) and Ghidra 12.1.x must be installed separately, and the analysis itself is REA/Ghidra's, not the plugin's."
+  zh: "REA（逆向一切，上游 REA MCP 服务）的另一种接入方式：不把它的 207 个工具（每次请求约 77.5 万字节的工具表）直接挂进宿主，而是只暴露三个调用——rea_tools 按域列出目录、rea_help 取单个工具的 schema、rea_call 原样透传参数——超限结果落盘而不是静默截断。不代装引擎：需自行安装 REA（rea-agents 6.x）与 Ghidra 12.1.x；反编译质量由 REA/Ghidra 决定，不由插件决定。"
+tarball: https://github.com/HarunaTyan/dsh-rea-dispatcher/releases/latest/download/dsh-rea-dispatcher.tgz

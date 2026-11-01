@@ -1,0 +1,6 @@
+url: https://github.com/adamxu-git/dsh-ping-macos
+name: adamxu-git/dsh-ping-macos
+category: notify
+description:
+  en: 'macOS notifications with the standard Glass alert when a reply finishes or DSH needs your input.'
+  zh: '回复完成或需要用户介入时，用 macOS 系统通知 + Glass 提示音提醒，点通知回到对应会话。'

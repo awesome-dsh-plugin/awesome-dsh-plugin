@@ -1,0 +1,6 @@
+url: https://github.com/2239058652/dsh-mcp-workbench
+name: 2239058652/dsh-mcp-workbench
+category: tools
+description:
+  en: "MCP management console for DeepSeek Harness — a left-sidebar page that lists every configured MCP server, trial-calls its tools in place, restarts a single row when its transport dies or never synced, and probes reachability. A fork of PerryLink/dsh-mcp-panel; do not install it alongside the upstream plugin — both register the /mcp command."
+  zh: "DeepSeek Harness 的 MCP 管理控制台：左侧栏独立页面列出全部 MCP 服务器，可就地试用工具；传输断开或工具未同步时可单独重启某一行，并探测连通性。基于 PerryLink/dsh-mcp-panel 的分支；不能与上游插件同装——两者都注册 /mcp 命令。"

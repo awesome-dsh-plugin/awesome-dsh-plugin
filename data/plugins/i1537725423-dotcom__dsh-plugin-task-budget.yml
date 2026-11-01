@@ -1,0 +1,7 @@
+url: https://github.com/i1537725423-dotcom/dsh-plugin-task-budget
+name: i1537725423-dotcom/dsh-plugin-task-budget
+category: usage
+description:
+  en: Sets a CNY spending cap for each DeepSeek Harness turn (¥5 by default) and stops the run before the next model request once the cap is reached; the switch and amount sit at the right end of the composer dock.
+  zh: 给 DeepSeek Harness 每一轮对话设人民币花费上限（默认 5 元），到上限就在下一个模型请求发出前停下；开关与金额在输入框下方最右侧。
+tarball: https://github.com/i1537725423-dotcom/dsh-plugin-task-budget/releases/latest/download/dsh-plugin-task-budget.tgz

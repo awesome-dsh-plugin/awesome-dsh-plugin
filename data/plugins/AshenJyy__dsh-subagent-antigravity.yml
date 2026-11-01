@@ -1,0 +1,7 @@
+url: https://github.com/AshenJyy/dsh-subagent-antigravity
+name: AshenJyy/dsh-subagent-antigravity
+tarball: https://github.com/AshenJyy/dsh-subagent-antigravity/releases/download/v0.2.3/ashenjyy-dsh-subagent-antigravity-0.2.3-win32-x64.tgz
+category: tools
+description:
+  en: 'Windows x64 bundle with the official Antigravity ACP runtime included. Delegates one-shot text tasks with selectable authentication, model and thinking level; uses host peers for Harness >=0.2.1-rc.3 <0.2.2-0, including later 0.2.1 RCs and stable 0.2.1.'
+  zh: '内置 Google 官方 Antigravity ACP 运行时的 Windows x64 完整包，委派一次性文本任务，支持选择认证方式、模型和思考强度；复用宿主依赖，支持 Harness >=0.2.1-rc.3 <0.2.2-0，包含后续 0.2.1 RC 和 0.2.1 正式版。'

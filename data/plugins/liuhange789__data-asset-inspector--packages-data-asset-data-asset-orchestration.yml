@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-orchestration
+name: liuhange789/data-asset-inspector#data-asset-orchestration
+category: tools
+description:
+  zh: "数据资产编排引擎，把套件内工具串成预置流水线（脱敏→清洗→盘点→封装、鉴证、AI数据集体检、政务巡检、可流通性评估），支持增量与定时处理"
+  en: "Data asset orchestration engine that chains suite tools into preset pipelines (masking, cleaning, inventory, packaging, attestation, AI dataset health check, government inspection, circulation assessment), with incremental and scheduled processing."

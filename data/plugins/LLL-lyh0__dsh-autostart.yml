@@ -1,0 +1,8 @@
+url: https://github.com/LLL-lyh0/dsh-autostart
+name: LLL-lyh0/dsh-autostart
+category: dev
+icon: https://raw.githubusercontent.com/LLL-lyh0/dsh-autostart/main/docs/store/icon-180.png
+tarball: https://github.com/LLL-lyh0/dsh-autostart/releases/latest/download/dsh-autostart.tgz
+description:
+  en: 'Starts DSH at Windows logon by writing HKCU\Software\Microsoft\Windows\CurrentVersion\Run, and removes exactly that value when the plugin is disabled or uninstalled. 84 lines, no daemon, no background process, no service — the entry is written through execFileSync so a spaced install path stays quoted and actually launches.'
+  zh: '写 HKCU\Software\Microsoft\Windows\CurrentVersion\Run 让 DSH 在 Windows 登录时启动，插件被关闭或卸载时精确移除那一条。84 行，没有守护进程、没有后台进程、不装服务；通过 execFileSync 写入，安装路径含空格时仍保留引号，登录时确实能拉起。'

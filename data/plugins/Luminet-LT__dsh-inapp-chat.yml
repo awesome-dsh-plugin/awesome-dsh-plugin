@@ -1,0 +1,6 @@
+url: https://github.com/Luminet-LT/dsh-inapp-chat
+name: Luminet-LT/dsh-inapp-chat
+category: ui
+description:
+  en: 'Adds a sidebar entry that opens DeepSeek web chat in an in-app window for quick questions while working. Fork of zerorigin-studio/dsh-deepseek-chat (already listed); it uses its own settings namespace, so both can coexist. Needs the desktop bridge (window.dsh.desktop.openWindow).'
+  zh: '在侧边栏增加网页对话入口，将 DeepSeek 网页对话打开在应用内窗口中，方便工作时临时提问。基于 zerorigin-studio/dsh-deepseek-chat（已在目录内）的分支；使用独立设置命名空间，可与上游共存。需要桌面端桥（window.dsh.desktop.openWindow）。'

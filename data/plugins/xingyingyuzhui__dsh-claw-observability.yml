@@ -1,0 +1,6 @@
+url: https://github.com/xingyingyuzhui/dsh-claw-observability
+name: xingyingyuzhui/dsh-claw-observability
+category: dev
+description:
+  en: Shared diagnostic log used by the Claw agent governance plugins (dsh-claw suite).
+  zh: Claw Agent 治理插件共用的诊断日志（dsh-claw 套件）。

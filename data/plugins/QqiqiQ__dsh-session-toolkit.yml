@@ -1,0 +1,8 @@
+url: https://github.com/QqiqiQ/dsh-session-toolkit
+name: QqiqiQ/dsh-session-toolkit
+category: session
+description:
+  en: Adds header buttons that move a started session into another workspace and switch the Agent preset of a session that already began.
+  zh: 在会话头部添加按钮，可把已开始的会话迁移到另一个工作区，或切换已开始会话的 Agent 预设。
+icon: https://raw.githubusercontent.com/QqiqiQ/dsh-session-toolkit/main/icon.png
+tarball: https://github.com/QqiqiQ/dsh-session-toolkit/releases/latest/download/dsh-session-toolkit.tgz

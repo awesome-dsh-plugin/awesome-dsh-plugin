@@ -1,0 +1,10 @@
+url: https://github.com/cybtachyon/dsh-plugin-local-infer        # must match the repo exactly / 必须与仓库完全一致
+name: cybtachyon/dsh-plugin-local-infer                          # link text shown in the list / 列表中显示的链接文字
+category: model                                                  # see the category list below / 见下方分类列表
+description:
+  en: A DeepSeek Harness plugin that manages local inference engines.
+  zh: 一个 DeepSeek Harness 插件，用于管理本地推理引擎。            # optional — a maintainer will add it / 可选，维护者会补
+# optional — GitHub-hosted raster image used as the storefront tile;
+# falls back to the owner's avatar when omitted
+# 可选——用 GitHub 托管的位图作为市场卡片图标；不写则回退到作者头像
+# icon: https://raw.githubusercontent.com/owner/repo/main/assets/icon-180.png
