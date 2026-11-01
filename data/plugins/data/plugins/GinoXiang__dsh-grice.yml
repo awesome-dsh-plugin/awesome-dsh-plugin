@@ -1,0 +1,8 @@
+url: https://github.com/GinoXiang/dsh-grice
+name: GinoXiang/dsh-grice
+category: ui
+description:
+  en: "Adds a per-session Grice mode switch to the composer; while it is on, the assistant follows Grice's four maxims (quantity, quality, relation, manner) for concise, relevant replies."
+  zh: "在输入框加一个按会话生效的「格赖斯模式」开关，开启后助手按格赖斯四条语用准则（数量、质量、关系、方式）简洁、准确地回复。"
+icon: https://raw.githubusercontent.com/GinoXiang/dsh-grice/main/docs/icon-180.png
+tarball: https://github.com/GinoXiang/dsh-grice/releases/latest/download/dsh-grice.tgz
