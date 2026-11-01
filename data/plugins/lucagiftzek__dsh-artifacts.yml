@@ -1,0 +1,5 @@
+url: https://github.com/lucagiftzek/dsh-artifacts
+name: lucagiftzek/dsh-artifacts
+category: ui
+description:
+  en: "An Artifacts tab in the DSH sidebar that lists the files an agent produced and previews them in place with live reload, plus artifact template tools for agents."
