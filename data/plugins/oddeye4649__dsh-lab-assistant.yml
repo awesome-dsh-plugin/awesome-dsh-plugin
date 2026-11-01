@@ -1,0 +1,7 @@
+url: https://github.com/oddeye4649/dsh-lab-assistant
+name: oddeye4649/dsh-lab-assistant
+category: workflow
+description:
+  en: Desktop-pet lab assistant for DSH that keeps experiment records, accumulates per-software notes, and generates Word/Markdown lab reports from real step-by-step evidence.
+  zh: 面向高校实验课程的 DSH 桌宠式插件：保存实验档案、按软件累积经验、用真实步骤证据生成 Word/Markdown 实验报告，并提供黄色高框指引与「点一下自动判对错」的教学循环。
+icon: https://raw.githubusercontent.com/oddeye4649/dsh-lab-assistant/main/assets/icon.png
