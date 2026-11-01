@@ -2,6 +2,6 @@ url: https://github.com/Dusty-Dustin55/dsh-file-context-menu
 name: Dusty-Dustin55/dsh-file-context-menu
 category: ui
 description:
-  en: Right-click file references and web links in the DeepSeek Harness chat to reference, copy, preview, open in a chosen app or browser, reveal, or save them.
-  zh: 在 DSH 对话区右键文件引用和网页链接，可引用、复制、预览、用默认或选择的应用/浏览器打开、定位或另存为。
+  en: Right-click files, folders, web links, and workspaces in the DeepSeek Harness chat and sidebars to reference, copy, preview, open in a chosen app or browser, reveal, or save.
+  zh: 在 DSH 对话区和侧边栏右键文件、文件夹、网页链接和工作区：引用、复制、预览、用默认或选择的应用/浏览器打开、定位或另存为。
 icon: https://raw.githubusercontent.com/Dusty-Dustin55/dsh-file-context-menu/main/icon-180.png
