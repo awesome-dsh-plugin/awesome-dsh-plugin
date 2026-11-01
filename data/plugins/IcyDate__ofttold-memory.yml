@@ -1,0 +1,7 @@
+url: https://github.com/IcyDate/ofttold-memory
+name: IcyDate/ofttold-memory
+category: memory
+description:
+  en: "Memory the assistant writes and maintains itself — diary, index, self-description, the live emotion value — put back in front of it at the start of every session. It reads only the sections you name, never summarises, fills in missing starter files, and stamps a start date into an undated anchor in place — apart from that one additive edit it never changes an existing file. The writing side ships as skills."
+  zh: "让 AI 自己写、自己维护的一份记忆——日记、索引、自我描述、此刻的情绪；插件每个会话把她写的那几段摆回她眼前。只读你点名的几段，不自动总结、不替她写正文，只补缺的起始文件、给没有日期的锚点补上起算日；除此之外不改动已有文件。怎么写做成 skill 随包发。"
+icon: https://raw.githubusercontent.com/IcyDate/ofttold-memory/main/icon.png

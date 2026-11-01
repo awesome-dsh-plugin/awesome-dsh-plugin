@@ -1,0 +1,8 @@
+url: https://github.com/bilbillm/dsh-steam-startup-animation
+name: bilbillm/dsh-steam-startup-animation
+category: ui
+description:
+  en: Steam Big Picture-style six-second Canvas startup animation for DSH Desktop with a variable-width terminal-to-whale transition, optional stereo startup audio, volume controls, preview, Escape skip, and reduced-motion support.
+  zh: 为 DSH 桌面端加入 Steam 大屏幕风格的 6 秒 Canvas 开屏，粗细渐变的终端标志变为 DeepSeek 鲸鱼，支持可选双声道音效、音量设置、预览、Esc 跳过及减少动态效果。
+icon: https://raw.githubusercontent.com/bilbillm/dsh-steam-startup-animation/main/assets/icon.png
+tarball: https://github.com/bilbillm/dsh-steam-startup-animation/releases/latest/download/dsh-startup-animation.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/5530-ok/5530
+name: dsh-video-notes
+category: tools
+description:
+  zh: "把 B 站视频下载、本地 whisper.cpp 转写、再用 DSH 自身 LLM 生成结构化 Markdown 笔记（可打印为 PDF）的 agent 工具。仅支持 Windows：缺依赖时自动下载到数据目录——yt-dlp.exe 与 ffmpeg.exe（GitHub、gyan.dev）、whisper.cpp x64 二进制（GitHub）、约 547 MB 模型（hf-mirror 镜像）；PDF 由本机安装的 Edge/Chrome 无头打印。提供 video_to_notes 与 note_to_pdf 两个工具，纯 JS，无需额外 API key。"
+  en: "Agent tools that download a Bilibili video, transcribe it with a local whisper.cpp build, then write a structured Markdown note with DSH's own LLM (optionally printing it to PDF). Windows only: missing dependencies are auto-downloaded into the data directory — yt-dlp.exe and the ffmpeg.exe build from GitHub and gyan.dev, the whisper.cpp x64 binary from GitHub, and a ~547 MB model from the hf-mirror mirror; PDF export shells out to a locally installed Edge/Chrome. Two tools: video_to_notes and note_to_pdf. Pure JS, no extra API key."

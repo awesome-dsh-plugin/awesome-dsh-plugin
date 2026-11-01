@@ -1,0 +1,7 @@
+url: https://github.com/Larliers/dsh-skill-prompt-injector
+name: Larliers/dsh-skill-prompt-injector
+category: ui
+tarball: https://github.com/Larliers/dsh-skill-prompt-injector/releases/download/v0.1.1/dsh-skill-prompt-injector-0.1.1.tgz
+description:
+  en: "Adds a right-sidebar panel that lists the skills available to the current session, searches and tags them, combines them with your own saved prompts, and appends the selection to the composer in one click."
+  zh: "在右侧栏列出当前会话可用的 Skill，支持搜索与标签，可与你自存的提示词组合后一键追加到当前对话输入框。"

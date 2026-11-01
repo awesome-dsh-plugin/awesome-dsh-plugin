@@ -1,0 +1,7 @@
+url: https://github.com/Alone-show/dsh-quick-keys
+name: Alone-show/dsh-quick-keys
+category: ui
+description:
+  en: 'Two composer actions for the DSH Web UI: /new in the slash-command menu starts a new conversation without sending anything to the model, and Shift+Tab toggles plan mode while the conversation has focus.'
+  zh: 'DSH Web 输入框的两个操作：斜杠菜单里的 /new 新建对话且不向模型发送任何内容，对话区按 Shift+Tab 切换计划模式。'
+icon: https://raw.githubusercontent.com/Alone-show/dsh-quick-keys/main/assets/icon-180.png

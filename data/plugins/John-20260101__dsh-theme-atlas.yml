@@ -1,0 +1,8 @@
+url: https://github.com/John-20260101/dsh-theme-atlas
+name: John-20260101/dsh-theme-atlas
+category: theme
+description:
+  en: Nine skins for the Web GUI — six material studies and three Leshan photo skins (River Night, Lingyun Dusk, Emei Mist) that use the author's photographs as wallpapers; one engine derives the 119 --dsw-* alias tokens from six colour inputs per appearance, in light and dark.
+  zh: DeepSeek Harness 网页端的九套皮肤：六套材质研究 + 三套乐山照片皮肤（三江夜、凌云晚照、峨眉夜雾，照片直接作为壁纸）；一套引擎由六个输入色推导全部 119 个 --dsw-* 别名 token，含深浅双版。
+icon: https://raw.githubusercontent.com/John-20260101/dsh-theme-atlas/main/assets/icon-180.png
+tarball: https://github.com/John-20260101/dsh-theme-atlas/releases/latest/download/dsh-theme-atlas.tgz

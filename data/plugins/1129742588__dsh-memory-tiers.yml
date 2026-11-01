@@ -1,0 +1,6 @@
+url: https://github.com/1129742588/dsh-memory-tiers
+name: 1129742588/dsh-memory-tiers
+category: memory
+description:
+  en: Six-tier memory plugin that captures each conversation turn, injects a stable memory block as a user snapshot, and compacts the host's own history into a single placeholder without calling a model.
+  zh: 六层记忆插件：自动捕获每轮对话，以 user 快照形式注入稳定的记忆块，并把宿主自带历史压成一条占位（不调用模型）。

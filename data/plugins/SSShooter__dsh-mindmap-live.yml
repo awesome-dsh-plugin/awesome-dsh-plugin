@@ -1,0 +1,6 @@
+url: https://github.com/SSShooter/dsh-mindmap-live
+name: SSShooter/dsh-mindmap-live
+category: ui
+description:
+  en: 'Live, bidirectional mind map for DSH Web built on Mind Elixir: the agent and the user edit the same tree in real time in a docked panel or fullscreen, with PNG export and open-in-desktop.'
+  zh: 'DSH Web 实时双向思维导图：Agent 与用户共编同一棵树，改动即时互相同步，支持停靠分屏与全屏两种视图。'

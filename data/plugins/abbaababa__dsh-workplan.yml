@@ -1,0 +1,7 @@
+url: https://github.com/abbaababa/dsh-workplan
+name: abbaababa/dsh-workplan
+category: workflow
+tarball: https://github.com/abbaababa/dsh-workplan/releases/download/v1.8.3/dsh-workplan-1.8.3.tgz
+description:
+  en: 'Durable task-decomposition plans for DeepSeek Harness: the model submits a staged plan with acceptance criteria, every work item then runs on a real department subagent, and the progress panel draws done/running/blocked subtasks as a ring, a stacked bar and per-stage steps. Ships a public security self-assessment structured on ISO/IEC 15408:2026 (Common Criteria) — security target, vulnerability analysis, SBOM and a security policy — with an explicit "no certificate claimed" line, plus a published self-correction record of where v1.8.0 documentation overstated the code (fixed in 1.8.1). Every claim is checkable by the reader instead of taken on trust. One command to install, zero runtime dependencies.'
+  zh: '为 DeepSeek Harness 提供持久化的任务分解计划：先给出带验收标准的分阶段计划，每项工作交给真实的部门子 Agent 执行；进度面板用环形图、四段构成条与逐阶段步进条画出已完成、进行中与卡住的子任务。随包提供按 ISO/IEC 15408:2026（通用准则 CC）结构编写的公开安全自评估——安全目标、脆弱性分析、SBOM 与安全策略，并在首行明确写"未主张认证"；v1.8.0 中三处"文档说得比代码多"的地方已在 v1.8.1 公开更正，1.8.2 把两个卖点提到首页第一句，更正过程也写进仓库。每条声明都能被读者自己核对，而不是靠信任。一条命令安装，零运行时依赖。'

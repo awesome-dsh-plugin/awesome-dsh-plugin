@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-registration-helper
+name: liuhange789/data-asset-inspector#data-asset-registration-helper
+category: tools
+description:
+  zh: "数据资产登记助手：做禁用场景与权属纠纷预检，按数据类型和地区匹配登记机构，并给出含三审标准与七步流程的登记清单。"
+  en: "Data asset registration helper: runs a disallowed-scenario and ownership-dispute pre-check, matches a registration agency by data type and region, and returns a registration checklist with the triple-audit standard and seven-step flow."

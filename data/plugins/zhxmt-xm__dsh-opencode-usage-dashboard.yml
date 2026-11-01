@@ -1,0 +1,6 @@
+url: https://github.com/zhxmt-xm/dsh-opencode-usage-dashboard
+name: zhxmt-xm/dsh-opencode-usage-dashboard
+category: usage
+description:
+  en: 'Sidebar panel for OpenCode quota and usage in DeepSeek Harness: Go subscription windows, Console spend, trends, forecasts and model breakdown, with multiple accounts, service-account filtering and English/Chinese UI.'
+  zh: 在 DeepSeek Harness 侧栏查看 OpenCode 额度与用量：支持 Go 订阅窗口、Console 花费、趋势、预测和模型拆分，以及多账户、服务账号筛选和中英界面。

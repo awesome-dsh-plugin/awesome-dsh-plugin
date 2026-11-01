@@ -1,0 +1,6 @@
+url: https://github.com/a961282799-crypto/dsh-island
+name: a961282799-crypto/dsh-island
+category: notify
+description:
+  en: "A desktop dynamic island window for DSH (tested on Windows) that shows whether the agent is thinking, replying, running tools or waiting for approval; expanded, it shows plan progress, context and token usage, and lets you stop the task, approve permission requests and answer the agent's questions, with a separate usage window that estimates cost from DeepSeek's official prices. The island window needs an existing Electron runtime — reused from the dsh-orb plugin's downloaded runtime or pointed to by DSH_ISLAND_ELECTRON — and DSH Desktop 0.2.1-rc.5 on Windows; the package neither bundles nor downloads Electron."
+  zh: "DSH 桌面灵动岛悬浮窗（Windows 验证）：实时显示 Agent 正在思考、回答、执行工具或等待确认；展开后可查看计划进度、上下文与用量，停止任务、批准权限请求、回答 Agent 的提问；另有用量统计窗口，按 DeepSeek 官方价格估算费用。灵动岛窗口需复用本机已有的 Electron 运行时（沿用悬浮球插件 dsh-orb 下载的运行时，或用 DSH_ISLAND_ELECTRON 指定路径），并要求 Windows 版 DSH Desktop 0.2.1-rc.5；安装包不含、也不会自动下载 Electron。"
