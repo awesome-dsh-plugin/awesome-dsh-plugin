@@ -1,0 +1,6 @@
+url: https://github.com/John-20260101/zgs-ppt
+name: John-20260101/zgs-ppt
+category: skill
+description:
+  en: 'Deck-generation skill for the National College Student Career Planning Competition. It takes a contestant''s profile, materials and photographs, drafts a page-by-page outline for confirmation, then renders a 12-page-or-more reading-type PPTX using 17 page types, three built-in themes or a user-supplied template; the build audits the estimated layout (text overflow, per-page word count, missing evaluation dimensions, material gaps) and the rendered PDF is checked again for out-of-bounds and overlapping text.'
+  zh: '职规赛（全国大学生职业规划大赛）展示 PPT 生成技能：给出选手信息、材料与照片后先出逐页大纲待确认，再渲染成 12 页起的阅读型 PPTX（17 种页型、3 套主题，可套学校模板）；生成时审计估算版面（文字溢出、每页字数、评分维度覆盖、素材缺口），导出 PDF 后再复核一遍越界与压字。'
