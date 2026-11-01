@@ -1,6 +1,0 @@
-url: https://github.com/mouyu6508-hue/dsh-fusion
-name: mouyu6508-hue/dsh-fusion
-category: dev
-description:
-  en: 'Reports conflicting DeepSeek Harness plugin composition — duplicate loader names across bundles (install-shadow), one id given two names, enable/disable fights, and config keys silently overwritten by a later layer — then emits a patch with the final merged values. Ships a CLI that runs when DSH itself will not boot, plus a fusion_report tool that reads the live loader.'
-  zh: '检查 DeepSeek Harness 插件装配层的冲突：跨 bundle 重复的 loader 名（install-shadow）、同一个 id 被写成两个 name、一层要开一层要关、以及被后一层静默覆盖的配置键，并把覆盖合成终值补丁。带一条 DSH 起不来时也能跑的 CLI，另有一个会读运行时 loader 的 fusion_report 工具。'
