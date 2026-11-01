@@ -5,4 +5,3 @@ description:
   en: Collects the papers a DeepSeek Harness conversation cited, checks each one against Crossref, OpenAlex, arXiv and DataCite, and exports the confirmed entries as BibTeX or RIS.
   zh: 收集对话里引用过的文献，逐条到 Crossref、OpenAlex、arXiv、DataCite 核对，通过核对的导出为 BibTeX 或 RIS。
 icon: https://raw.githubusercontent.com/ymwang92/dsh-refkeeper/main/docs/images/icon.png
-tarball: https://github.com/ymwang92/dsh-refkeeper/releases/download/v0.1.0/dsh-refkeeper-0.1.0.tgz
