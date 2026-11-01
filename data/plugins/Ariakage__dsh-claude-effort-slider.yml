@@ -1,0 +1,6 @@
+url: https://github.com/Ariakage/dsh-claude-effort-slider
+name: Ariakage/dsh-claude-effort-slider
+category: ui
+description:
+  en: "Replaces the composer Effort switch with a Claude Desktop-style five-level slider (Low/Medium/High/Max/Ultracode): a pill opens a popover above the composer, dragging snaps with a spring and writes once, and Ultracode maps to the model's maximum reasoning effort. Ships the Ultracode WebGL2 energy grid, a per-session Ultracode mode, and passes modifier-click through to the shipped level list."
+  zh: "把 composer 的 Effort 切换换成 Claude Desktop 风格的五档滑块（Low/Medium/High/Max/Ultracode）：药丸打开 composer 上方的弹层，拖动带弹簧吸附、松手只写一次，Ultracode 映射到模型的最大推理强度。含 Ultracode 的 WebGL2 能量网格、按会话记录的 Ultracode 模式，修饰键 + 点击仍走官方等级列表。"
