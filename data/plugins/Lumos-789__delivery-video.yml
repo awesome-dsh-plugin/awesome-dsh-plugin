@@ -1,0 +1,6 @@
+url: https://github.com/Lumos-789/delivery-video-plugin
+name: Lumos-789/delivery-video-plugin
+category: skill
+description:
+  en: 'Turn a feature that actually runs into a trustworthy delivery demo video: real screen recordings, edge-tts narration with word-clock subtitles, a self-contained ffmpeg pipeline, and a deterministic quality gate (spec, audio, loudness, black/freeze/silence scans) that refuses to pass a fake or broken demo. Preflight and artifact verification included.'
+  zh: 把真实运行的功能做成可信交付演示视频：真实录屏、edge-tts 旁白与逐字对齐字幕、自包含 ffmpeg 管线，配一道拒绝放过造假或残次演示的确定性质量闸（规格、音轨、响度、黑帧/冻结/静音扫描），含渲染前预检与成片证据核验。
