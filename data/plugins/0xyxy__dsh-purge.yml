@@ -2,6 +2,6 @@ url: https://github.com/0xyxy/dsh-purge
 name: 0xyxy/dsh-purge
 category: identity
 description:
-  en: 'Fork of dsh-purge that adds a three-layer bootstrap installer (engine, code and prompt layers) with its own verification pass on top of the community build, which provides host-policy patches, prompt and rule settings, diagnostics, and local backup and rollback.'
-  zh: 'dsh-purge 社区分支，在上游社区版（宿主策略补丁、提示词与规则设置、诊断、本机备份回滚）之上加了引擎层、代码层、提示词层的三层 bootstrap 安装器与自带的验证流程。'
+  en: 'DSH plugin for host-policy patches, prompt and rule settings, diagnostics, and local backup and rollback, with a three-layer bootstrap installer (engine, code and prompt layers) and its own verification pass.'
+  zh: 'DSH 插件：宿主策略补丁、提示词与规则设置、诊断、本机备份与回滚，附带引擎层、代码层、提示词层的三层 bootstrap 安装器与自带的验证流程。'
 tarball: https://github.com/0xyxy/dsh-purge/releases/latest/download/dsh-purge-community.tgz
