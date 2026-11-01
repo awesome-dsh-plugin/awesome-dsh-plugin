@@ -1,0 +1,6 @@
+url: https://github.com/mdktelmdktel/dsh-agent-status
+name: mdktelmdktel/dsh-agent-status
+category: ui
+description:
+  en: 'Live step pill in the DSH session header: folds the durable session event stream into the agent''s current action (tool name plus its argument summary), the step index inside the running turn, the elapsed turn time and the todo progress, polls it every 1.2 seconds, and renders blue pulse while working, green for a finished turn and red for a failed tool call; hides itself 9 seconds after a turn ends.'
+  zh: 'DSH 会话标题栏里的实时进度胶囊：把持久化的会话事件流折叠成 agent 当前动作（工具名 + 参数摘要）、本轮第几步、已耗时与待办进度，每 1.2 秒轮询一次；干活时蓝点脉冲、一轮结束转绿、工具调用失败转红，空闲 9 秒后自动收起。'
