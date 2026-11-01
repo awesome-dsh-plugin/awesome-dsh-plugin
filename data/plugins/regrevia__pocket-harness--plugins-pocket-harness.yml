@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/pocket-harness/tree/main/plugins/pocket-harness
+name: regrevia/pocket-harness#pocket-harness
+category: remote
+description:
+  en: 'DSH official mobile companion: install the Pocket Harness app and drive the DeepSeek Harness on your own computer from your phone — sessions, goals, queued prompts, pending questions, voice in and out. Over LAN, your own domain, or a relay server. The desktop pet is an optional extra you can leave off.'
+  zh: 'DSH 官方手机端：装上 Pocket Harness，就能用手机操作自己电脑上的 DeepSeek Harness——看会话、改目标、排队的活儿、待确认的提问，语音进出都通。局域网、自建域名、服务器中转三种连法。桌宠只是附带玩法，开不开随你。'
+icon: https://raw.githubusercontent.com/regrevia/pocket-harness/main/assets/icon-180.png
