@@ -1,0 +1,6 @@
+url: https://github.com/SAOS-3624/dsh-video-storyboard
+name: SAOS-3624/dsh-video-storyboard
+category: vision
+description:
+  en: 'Turns a video (a local file, or a Bilibili/yt-dlp link) into one addressable storyboard grid — numbered cells with exact timestamps, per-cell transcript and an audio envelope on the same timeline — and video_zoom re-reads any window at higher resolution, so a text-only model can look at the video instead of reading a summary.'
+  zh: '把视频（本地文件，或 B 站 / yt-dlp 链接）压成一张可寻址的宫格图：每格烧编号、对应精确时间、挂台词，底部还有同时间轴的音频包络；video_zoom 可对任意窗口高清重看——纯文本模型因此能「看」视频，而不是读别人写的摘要。'

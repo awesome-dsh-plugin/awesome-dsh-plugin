@@ -1,0 +1,7 @@
+url: https://github.com/quberi/dsh-quberi
+name: quberi/dsh-quberi
+category: memory
+description:
+  en: Search the documents and pictures in your Quberi knowledge base, browse its spaces and documents, save notes to it, and upload files into it with your approval for each one, from DeepSeek Harness over OAuth.
+  zh: 在 DeepSeek Harness 内通过 OAuth 检索你的 Quberi 知识库中的文档和图片，浏览空间和文档，保存笔记，并上传文件（每个文件都需你确认）。
+

@@ -1,0 +1,6 @@
+url: https://github.com/OnTheWay111/dsh-plugin-path-completion
+name: OnTheWay111/dsh-plugin-path-completion
+category: ui
+description:
+  en: 'Completes @path references in the Web composer: type @ (optionally ./src/ma) to list matching files and directories, pick one with the arrow keys, and the draft receives an @./relative/path reference (quoted when the path has spaces).'
+  zh: '在 Web 输入框补全 @ 路径引用：输入 @（可继续输入 ./src/ma）即列出匹配的文件与目录，用上下键选择后草稿得到 @./相对路径引用（路径含空格时自动加引号）。'

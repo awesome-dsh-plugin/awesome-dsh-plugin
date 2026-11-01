@@ -1,0 +1,6 @@
+url: https://github.com/DreamLoomStudio/dsh-primitive-pulse
+name: DreamLoomStudio/dsh-primitive-pulse
+category: ui
+description:
+  en: 'A floating panel that lights up which HowNet semantic primitives the current answer touches, as a brain-shaped node graph, EEG-style channel traces and a composition card.'
+  zh: '悬浮面板：把当前这段回答点亮了哪些 HowNet 语义基元实时画出来——脑形节点网络、脑电样式的多导联曲线、构成指纹卡。'

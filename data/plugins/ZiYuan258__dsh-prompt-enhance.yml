@@ -1,0 +1,6 @@
+url: https://github.com/ZiYuan258/dsh-prompt-enhance
+name: ZiYuan258/dsh-prompt-enhance
+category: session
+description:
+  en: 'Maintained fork of dsh-prompt-enhance, brought up to DSH 0.1.7 — the plugin would not even load on current hosts (InputState.imageIds became attachmentIds, so the composer button crashed the input box; settings.get() was removed; /enhance read a session id the agent no longer exposes). Rewrites default to reasoningEffort off, which measured 252 output tokens for a draft where the model default spent 2897, and a Settings page for all 17 fields is bundled. Verified on a real 0.1.7-rc.2 host: activation, a live HTTP enhancement request, /enhance in the GUI, and the Settings page reading and persisting configuration. 204 tests.'
+  zh: 'dsh-prompt-enhance 的维护分支，已适配 DSH 0.1.7——此前的版本在当前宿主上甚至无法加载（InputState.imageIds 已更名为 attachmentIds，输入框按钮会让整个输入区崩溃；settings.get() 已被移除；/enhance 读取了 agent 不再暴露的会话 id）。改写默认使用 reasoningEffort off：实测同一段草稿为 252 输出 token，而模型自身默认档要 2897；并内置覆盖全部 17 个字段的设置页。已在真实的 0.1.7-rc.2 宿主上验证：插件激活、真实 HTTP 增强请求、GUI 中 /enhance 执行，以及设置页读取并持久化配置。204 项测试。'

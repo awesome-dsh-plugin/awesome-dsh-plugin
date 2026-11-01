@@ -1,0 +1,7 @@
+url: https://github.com/hualuo520-h/dsh-connect-scnet
+name: hualuo520-h/dsh-connect-scnet
+category: model
+description:
+  en: Brings the models of the SCNet (超算互联网) Computing Service desktop client into DSH by reusing the API key that client already wrote, with a 30-model catalog and a per-model default thinking level.
+  zh: 复用超算互联网（SCNet）计算服务客户端已写入的 API key，把它的模型接入 DSH，带 30 个模型的目录与逐模型默认思考档位。
+icon: https://raw.githubusercontent.com/hualuo520-h/dsh-connect-scnet/main/assets/icon-180.png

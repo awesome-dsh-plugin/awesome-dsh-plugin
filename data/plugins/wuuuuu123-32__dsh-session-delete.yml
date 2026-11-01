@@ -1,0 +1,6 @@
+url: https://github.com/wuuuuu123-32/dsh-session-delete
+name: wuuuuu123-32/dsh-session-delete
+category: session
+description:
+  en: 'Adds delete and batch delete to the session list menu; sessions go to the Windows Recycle Bin instead of being erased, and the files a session produced are listed first so you decide whether to remove them together.'
+  zh: '在会话列表菜单里加删除与批量删除：会话移入 Windows 回收站而不是永久删除，删除前先列出该会话产出过哪些文件，由你决定是否一并清理。'

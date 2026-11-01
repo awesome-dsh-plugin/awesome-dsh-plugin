@@ -1,0 +1,6 @@
+url: https://github.com/Timebro9999/dsh-session-deck
+name: Timebro9999/dsh-session-deck
+category: ui
+description:
+  en: 'Codex-style sidebar: a pinned band for projects and conversations, collapsible 置顶/项目/组件 sections, a bell activity view of recently used conversations, and per-project emoji icons.'
+  zh: 'Codex 风格侧边栏：项目和对话共用的置顶区、置顶/项目/组件 三段可折叠分区、小铃铛活动视图（含最后一条回答的预览）、可为每个项目换 Emoji 图标。'

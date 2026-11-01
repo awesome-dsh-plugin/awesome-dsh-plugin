@@ -1,0 +1,6 @@
+url: https://github.com/EIGHTfs/dsh-useful-tools
+name: EIGHTfs/dsh-useful-tools
+category: dev
+description:
+  en: "Plugin development toolset: mark files read by shell commands, sync code into a profile, mock a plugin backend, preview a plugin frontend, verify plugin loading, spin up an isolated test instance, run named shell shortcuts, and list the plugin's tools."
+  zh: "插件开发工具箱：命令读过的文件自动算已读、代码同步到 profile、后端模拟与前端预览、插件装载验证、隔离测试实例、自定义快捷命令、工具清单。"

@@ -1,0 +1,7 @@
+url: https://github.com/MingoYung/dsh-awakening
+name: MingoYung/dsh-awakening
+category: ui
+description:
+  en: 'Startup animation picker with three bundled DeepSeek, Codex and Claude Code themes, local MP4/WebM imports and an in-app community library; optional first-screen install and restore on supported Windows DSH NEXT builds.'
+  zh: '启动动画选择器，内置DeepSeek、Codex和Claude Code三套主题，支持本地MP4/WebM导入和插件内社区动画库；已支持的Windows DSH NEXT构建可选安装和恢复首屏兼容层。'
+tarball: https://github.com/MingoYung/dsh-awakening/releases/download/v0.7.0/dsh-awakening-0.7.0.tgz

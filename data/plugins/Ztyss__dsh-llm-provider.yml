@@ -1,0 +1,6 @@
+url: https://github.com/Ztyss/dsh-llm-provider
+name: Ztyss/dsh-llm-provider
+category: model
+description:
+  en: 'Replaces the built-in llm-pi-ai and llm-deepseek adapters, the model selector and the Models settings page with self-maintained versions, tracks upstream @earendil-works/pi-ai through a safe-zone download with a one-click enable toggle, and adds provider quota and balance lookups plus a provider management page.'
+  zh: '把内置的 llm-pi-ai 与 llm-deepseek 适配器、模型选择器、模型服务设置页替换为自维护版本；经安全区下载跟踪上游 @earendil-works/pi-ai 并提供一键启用开关；另加供应商额度与余额查询、供应商管理页。'

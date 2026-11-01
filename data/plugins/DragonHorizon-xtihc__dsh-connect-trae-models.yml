@@ -1,0 +1,6 @@
+url: https://github.com/DragonHorizon-xtihc/dsh-connect-trae-models
+name: DragonHorizon-xtihc/dsh-connect-trae-models
+category: model
+description:
+  en: Aggregates all local Trae accounts into one auto-failover model provider, with manual and automated daily check-in, credits and expiry monitoring, and a model selection settings card.
+  zh: 把本机多个 Trae 账号聚合成一个自动容错换号的模型供应商，附带手动与自动签到、积分与到期监控，以及模型配置设置卡片。

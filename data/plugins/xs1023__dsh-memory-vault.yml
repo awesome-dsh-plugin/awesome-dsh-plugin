@@ -1,0 +1,6 @@
+url: https://github.com/xs1023/dsh-memory-vault
+name: xs1023/dsh-memory-vault
+category: memory
+description:
+  en: 'SQLite-backed long-term memory for DeepSeek Harness: add, search, update and archive entries with categories and tags, automatic conversation logging, tiered compression, and a project dimension that scopes retrieval to the current workspace plus global facts.'
+  zh: 'DeepSeek Harness 的 SQLite 长期记忆插件：按分类与标签增删改查、搜索、归档记忆，自动记录对话并分层压缩，带项目维度——检索默认收窄到当前工作区加全局事实。'

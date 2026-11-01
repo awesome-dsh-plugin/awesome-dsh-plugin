@@ -1,0 +1,6 @@
+url: https://github.com/ruaibeite/dsh-files-to-chat
+name: ruaibeite/dsh-files-to-chat
+category: ui
+description:
+  en: 'Right-click a file or folder in the right sidebar file tree to add it to the composer as an @ reference (⌘/Ctrl and Shift multi-select insert a whole batch), open it with the default application, or reveal it in the system file manager. Open and reveal go through the built-in open-in-app host capability, so those entries appear unless the host explicitly reports the capability as unsupported.'
+  zh: '在右侧栏文件树里右键，可把文件或文件夹作为 @ 引用加进输入框（⌘/Ctrl 与 Shift 多选可整批插入）、用默认应用打开，或在系统文件管理器中显示。打开与显示走宿主内置的 open-in-app 能力，只有宿主明确回答不支持时才隐藏这两项。'

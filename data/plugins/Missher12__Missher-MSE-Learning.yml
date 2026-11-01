@@ -1,0 +1,7 @@
+url: https://github.com/Missher12/Missher-MSE-Learning
+name: Missher12/Missher-MSE-Learning
+category: memory
+description:
+  en: "Persists scoped user corrections and method candidates for DSH with bounded recall and restart-safe completion settlement."
+  zh: "为 DSH 持久保存分作用域的用户纠错与方法候选，提供限额召回和可跨重启恢复的完成结算。"
+tarball: https://github.com/Missher12/Missher-MSE-Learning/releases/download/v0.9.0-alpha.18/missher-dsh-mse-learning-0.9.0-alpha.18.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/lishuo4096/dsh-enet-review
+name: lishuo4096/dsh-enet-review
+category: tools
+description:
+  en: Audits JLCEDA (EasyEDA) .enet netlists for broken net labels, dangling nets, power-rail orphans, conflicting pin polarity, and full-differential-amplifier feedback wiring.
+  zh: 校对嘉立创 EDA 导出的 .enet 网表，检查断链式网络标签、单脚悬空网络、电源轨孤立、引脚名与所连网络极性矛盾、全差分运放反馈接法。

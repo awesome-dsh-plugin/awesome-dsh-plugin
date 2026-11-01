@@ -1,0 +1,6 @@
+url: https://github.com/RGarrido03/dsh-zed-provider
+name: dsh-zed-provider
+category: model
+description:
+  en: Use Zed AI hosted models in DSH.
+  zh: 在 DSH 中使用 Zed AI 托管模型。

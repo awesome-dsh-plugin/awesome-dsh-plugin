@@ -1,0 +1,6 @@
+url: https://github.com/bvbhu/dsh-quilt-compact
+name: bvbhu/dsh-quilt-compact
+category: session
+description:
+  en: 'Compaction backend that replaces the default compaction-basic: it summarizes the conversation with a configurable pool of low-cost models, sizes each chunk to the chosen model''s context window, and merges all digests in one call, with per-route cooldown and session-model fallback.'
+  zh: '压缩后端，替代默认的 compaction-basic：用可配置的低成本模型池压缩对话内容，按所选模型的上下文窗口切块，并将所有摘要一次归并，支持逐路由冷却与会话模型兜底。'

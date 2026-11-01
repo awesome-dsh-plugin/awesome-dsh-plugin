@@ -1,0 +1,6 @@
+url: https://github.com/COH2357/dsh-workspace-api-key
+name: COH2357/dsh-workspace-api-key
+category: security
+description:
+  en: Binds a separate DeepSeek API key to each workspace or session, warns when an effective key is stale or belongs to another provider, and never swaps a key on its own.
+  zh: 为每个工作区或单个会话单独绑定一把 DeepSeek API key，生效 key 失效或服务商不匹配时提醒，且绝不自动替换 key。

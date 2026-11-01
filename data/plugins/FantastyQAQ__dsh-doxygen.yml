@@ -1,0 +1,6 @@
+url: https://github.com/FantastyQAQ/dsh-doxygen
+name: FantastyQAQ/dsh-doxygen
+category: skill
+description:
+  en: 'Doxygen comment workflow for C/C++ (including Qt) sources: file headers, functions, module groups, trailing and short comments, plus a scan that flags comments whose signature fingerprint went stale. Requires Python 3.10+ with `pip install tree-sitter tree-sitter-cpp`.'
+  zh: '为 C/C++（含 Qt）源码生成与维护 Doxygen 注释的工作流：文件头、函数、模块分组、行尾与简短注释，并扫描出签名指纹已过期、需要更新的注释。运行时需要 Python 3.10+ 并 `pip install tree-sitter tree-sitter-cpp`。'

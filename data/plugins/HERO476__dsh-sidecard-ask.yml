@@ -1,0 +1,6 @@
+url: https://github.com/HERO476/dsh-sidecard-ask
+name: HERO476/dsh-sidecard-ask
+category: ui
+description:
+  en: "Select text in the DSH Web GUI and ask about it in place (floating button, or the Alt+Q shortcut): an independent subagent that inherits no parent context answers, streaming into a side card hosted by the native right sidebar, dsh-better-sidebar, or a built-in overlay — and the question can be routed to the main conversation instead."
+  zh: 在 DSH Web 界面划词就地追问（浮出按钮，或 Alt+Q 快捷键）：答案由不继承父上下文的独立子代理流式产出到侧边卡片，承载面为原生右侧栏 / dsh-better-sidebar / 内置浮层，也可把问题改为落回主对话。

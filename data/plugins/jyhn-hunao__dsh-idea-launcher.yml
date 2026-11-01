@@ -1,0 +1,6 @@
+url: https://github.com/jyhn-hunao/dsh-idea-launcher
+name: jyhn-hunao/dsh-idea-launcher
+category: dev
+description:
+  en: 'Reads IDEA run configurations and launches Java, Spring Boot and Vue projects inside DeepSeek Harness, with colored logs and a fast java -cp startup path.'
+  zh: '在 DeepSeek Harness 里读取 IDEA 运行配置，启动 Java / Spring Boot / Vue 项目并查看彩色日志，支持快速启动（java -cp 直启）。'

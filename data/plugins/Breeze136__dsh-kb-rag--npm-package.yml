@@ -1,0 +1,6 @@
+url: https://github.com/Breeze136/dsh-kb-rag/tree/main/npm-package
+name: Breeze136/dsh-kb-rag#npm-package
+category: memory
+description:
+  en: 'Local literature knowledge-base RAG: 10 tools (kb_ingest, kb_search, kb_rag, kb_zotero, kb_dedup, kb_clear, kb_fetch, kb_scope, kb_stats, kb_status), hybrid BM25+vector+reranker search, cited QA with clickable DOI links, all-local bge embeddings over a single-file SQLite index. Needs Python 3.9+ with pymupdf, faiss-cpu and sentence-transformers; the `npx dsh-kb-rag-install` installer sets those up and pre-downloads the model.'
+  zh: '本地文献知识库 RAG：10 个工具（kb_ingest、kb_search、kb_rag、kb_zotero、kb_dedup、kb_clear、kb_fetch、kb_scope、kb_stats、kb_status），BM25+向量+重排混合检索、DOI 可点击溯源问答，全本地 bge 嵌入 + 单文件 SQLite 索引。需要 Python 3.9+ 及 pymupdf、faiss-cpu、sentence-transformers（`npx dsh-kb-rag-install` 安装器会自动装好并预下载模型）。'

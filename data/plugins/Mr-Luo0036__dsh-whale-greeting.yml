@@ -1,0 +1,8 @@
+url: https://github.com/Mr-Luo0036/dsh-whale-greeting
+name: Mr-Luo0036/dsh-whale-greeting
+category: ui
+description:
+  en: A greeting card that speaks — 156 prebuilt voice clips with a one-click mute — plus per-turn completion reports, long-run companionship notes and a takeover approval panel in the DSH conversation area.
+  zh: 会说话的问候卡（156 句预生成语音，卡角一键开声/静音）、每轮任务的完成报告、长跑时的陪伴提示，并在需要授权时接管输入框请示。
+icon: https://raw.githubusercontent.com/Mr-Luo0036/dsh-whale-greeting/main/assets/icon.png
+tarball: https://github.com/Mr-Luo0036/dsh-whale-greeting/releases/download/v0.6.1/dsh-whale-greeting-0.6.1.tgz

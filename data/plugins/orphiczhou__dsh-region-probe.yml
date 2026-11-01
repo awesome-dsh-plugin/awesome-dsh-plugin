@@ -1,0 +1,6 @@
+url: https://github.com/orphiczhou/dsh-region-probe
+name: orphiczhou/dsh-region-probe
+category: ui
+description:
+  en: "A read-only Cordis Inspect provider that lets an agent see the interface it is driving: outline() reports which UI regions the running shell actually rendered, with occupancy, geometry and current or past failure state; snapshot() returns one region's rendered node tree (tag, role, aria-label, own text, geometry, computed styles) addressed by slot key or CSS selector; failures() keeps a history of regions that failed to render and whether they recovered. Regions are addressed by the anchor the shell already writes for every slot, so it needs no region list and covers regions added later or contributed by other plugins. No UI, no tools, no dependencies, no network access."
+  zh: "只读的 Cordis Inspect provider，让 agent 能看见自己正在驱动的界面：outline() 报告运行中的壳实际渲染了哪些 UI 区域，含占用、几何与当前/历史失败状态；snapshot() 按 slot key 或 CSS 选择器返回某区域的渲染节点树（标签、角色、aria-label、自身文本、几何、计算样式）；failures() 保留「哪些区域渲染失败过、是否已恢复」的历史。寻址用壳为每个 slot 已写好的锚点，无需区域清单，也覆盖以后新增或其他插件贡献的区域。无界面、无工具、无依赖、不发网络请求。"

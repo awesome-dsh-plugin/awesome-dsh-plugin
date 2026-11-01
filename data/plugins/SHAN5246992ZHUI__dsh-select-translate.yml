@@ -1,0 +1,6 @@
+url: https://github.com/SHAN5246992ZHUI/dsh-select-translate
+name: SHAN5246992ZHUI/dsh-select-translate
+category: ui
+description:
+  en: 'Select text in any Windows app and read the translation in an always-on-top card next to the cursor: streaming text follows the newest line, up to 15000 characters per request. Windows only.'
+  zh: 在任意 Windows 应用里划词，鼠标旁弹出只含译文的置顶卡片；译文流式出现并跟随最新一行，单次上限 15000 字。仅 Windows。

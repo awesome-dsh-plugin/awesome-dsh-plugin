@@ -1,0 +1,6 @@
+url: https://github.com/curtainsmall/dsh-reckoner
+name: curtainsmall/dsh-reckoner
+category: tools
+description:
+  en: "A deterministic calculation engine for DeepSeek Harness, including a preset that guides the LLM to calculate through the engine rather than by text generation."
+  zh: "面向 DeepSeek Harness 的确定性计算引擎，附带一个预设：引导 LLM 通过引擎而非文本生成来完成计算。"

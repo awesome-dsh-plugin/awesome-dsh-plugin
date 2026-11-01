@@ -1,0 +1,6 @@
+url: https://github.com/yyfabab1/dsh-gpt-image
+name: yyfabab1/dsh-gpt-image
+category: tools
+description:
+  en: 'Game asset production pipeline: generate images, video and audio, turn a video into a coherent sprite animation, derive recoloured variants, adapt assets to an engine schema, install them into the project and verify the code actually references them. Requires ffmpeg for the video-to-sprite path, and an image/video API key (Agnes AI / OpenAI / fal) for generation.'
+  zh: '游戏素材生产流水线：出图、生视频与音频，把一段视频变成连贯的精灵动画，派生配色变体，适配引擎配置，装进项目并核对代码是否真的引用了。视频转精灵动画需 ffmpeg；出图/生视频需自备图像/视频 API Key（Agnes AI / OpenAI / fal）。'

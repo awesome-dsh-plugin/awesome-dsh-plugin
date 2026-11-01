@@ -1,0 +1,6 @@
+url: https://github.com/HYClub/deepseek-harness-game-studios
+name: HYClub/deepseek-harness-game-studios
+category: agi
+description:
+  en: "DeepSeek Harness port of Claude Code Game Studios (CCGS v1.1.2, MIT): 76 skills, 49 agents, hook bridge."
+  zh: "Claude Code Game Studios（CCGS v1.1.2，MIT）的 DeepSeek Harness 移植：76 个技能、49 个代理与钩子桥。"

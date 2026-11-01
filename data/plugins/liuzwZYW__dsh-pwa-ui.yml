@@ -1,0 +1,6 @@
+url: https://github.com/liuzwZYW/dsh-pwa-ui
+name: liuzwZYW/dsh-pwa-ui
+category: ui
+description:
+  en: Gives an installed dsh web app a native-looking window caption through Window Controls Overlay - the manifest route is served with display_override, the app's own sidebar brand row and session header become the drag region, and the app's own trailing controls are inset clear of the browser's caption chrome.
+  zh: 通过 Window Controls Overlay 让已安装的 dsh Web 应用拥有原生观感的窗口标题栏——清单路由带 display_override 返回，应用自身的侧边栏品牌行与会话 header 成为拖拽区，应用自身右侧控件自动让开浏览器标题栏 chrome。

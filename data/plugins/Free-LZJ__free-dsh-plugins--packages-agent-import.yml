@@ -1,0 +1,6 @@
+url: https://github.com/Free-LZJ/free-dsh-plugins/tree/main/packages/agent-import
+name: Free-LZJ/free-dsh-plugins#agent-import
+category: tools
+description:
+  en: 'Imports the MCP servers Codex and Claude Code already declare as dsh mcp-client tools, links the skills of 22 known agent skill directories into ~/.dsh/skills as symlinks instead of copying them, and adds a Settings page that lists what was mounted, toggles each skill, and changes the source on a name conflict.'
+  zh: '把 Codex 与 Claude Code 已声明的 MCP 服务器接入 dsh 的 mcp-client，把 22 个已知 Agent 技能目录的技能以符号链接（不复制文件）导入 ~/.dsh/skills，并提供设置页：列出本次实际挂载的服务器与技能、逐项启停技能、重名时改选来源。'

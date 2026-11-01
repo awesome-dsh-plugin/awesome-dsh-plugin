@@ -1,0 +1,6 @@
+url: https://github.com/Moowningstar/gitnexus-plus
+name: Moowningstar/gitnexus-plus
+category: git
+description:
+  en: Reads a GitNexus index in the DSH sidebar, reports skipped files, index freshness and language coverage, searches symbols, and reviews recent Git activity.
+  zh: 在 DSH 侧栏读取 GitNexus 索引，报告被跳过的文件、索引新鲜度与语言覆盖，支持符号搜索和最近的 Git 活动审查。

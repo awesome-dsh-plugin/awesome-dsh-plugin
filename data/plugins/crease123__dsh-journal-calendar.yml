@@ -1,0 +1,7 @@
+url: https://github.com/crease123/dsh-journal-calendar
+name: crease123/dsh-journal-calendar
+category: memory
+tarball: https://github.com/crease123/dsh-journal-calendar/releases/download/v0.2.0/dsh-journal-calendar-0.2.0.tgz
+description:
+  en: "A daily journal the agent keeps: the journal_record tool appends dated todos and memories, with optional detail and tags, to one JSON file per day under the DSH home; the right sidebar draws those files as a month calendar marked per day by open todos, finished todos or memories, with checkable todos and the selected day's entries below; and the duty sentence it adds to the system prompt is editable from the calendar itself."
+  zh: '助手替你维护的每日日志：journal_record 工具把带时间的待办与记事（可选详情与标签）追加到 DSH home 下一天一个的 JSON 文件；右侧栏把这些文件画成月历，单元格按「有待办未完成 / 待办已完成 / 只有记事」标记，下方是可勾选的待办与所选日期的条目；它加入系统提示词的那句职责文案，可以直接在日历上编辑。'

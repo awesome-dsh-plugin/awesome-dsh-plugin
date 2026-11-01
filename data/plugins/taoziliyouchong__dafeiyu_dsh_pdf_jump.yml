@@ -1,0 +1,7 @@
+url: https://github.com/taoziliyouchong/dafeiyu_dsh_pdf_jump
+name: taoziliyouchong/dafeiyu_dsh_pdf_jump
+category: docs
+description:
+  en: Two PDF tools for the DSH sidebar in one install — jump to any page and browse the whole document with locally rendered pages and thumbnails, or open a PDF with DSH's native preview. Ships a /pdf command too.
+  zh: 一个包装两个 PDF 工具：按页码跳页、用本地渲染的页面和缩略图整本浏览，也可用 DSH 原生预览直接打开；另带一个 /pdf 命令。
+icon: https://raw.githubusercontent.com/taoziliyouchong/dafeiyu_dsh_pdf_jump/main/assets/icon-180.png

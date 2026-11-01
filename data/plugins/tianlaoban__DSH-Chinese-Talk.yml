@@ -1,0 +1,6 @@
+url: https://github.com/tianlaoban/DSH-Chinese-Talk
+name: tianlaoban/DSH-Chinese-Talk
+category: ui
+description:
+  en: 'Switches every session''s thinking and answers to Chinese — terse, a little wry, plain-spoken — while keeping proper nouns in English, and adds an "answer only what was asked" interaction rule. One global system-prompt section (order 10): no UI, no binaries, no network calls. Inactive under the minimal preset, which replaces the whole prompt with its own persona.'
+  zh: '让所有会话的思考与回复都说中文：简洁、略沾文言、说人话，专有名词保留英文原形；并附一条「只答所问、不主动跑命令、动手前先提醒」的交互偏好。实现只是一条全局 system-prompt 段落（order 10）：没有界面、没有二进制、不联网。切到极简预设时不生效——那个预设会把整个 prompt 换成它自己的人设。'

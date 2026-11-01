@@ -1,0 +1,6 @@
+url: https://github.com/Shuaige-Da/dsh-cost-pill
+name: Shuaige-Da/dsh-cost-pill
+category: usage
+description:
+  en: Writes the session's estimated cost into the composer token-usage pill, and adds a per-bucket amount plus an estimated total to the usage dialogs, using DeepSeek's official peak and off-peak rates in yuan.
+  zh: 把本次会话的估算费用直接写进输入框上方的 Token 用量胶囊，并在用量弹窗里为每个分项补上金额与预估合计，按 DeepSeek 官方高峰与空闲时段价（人民币）计算。

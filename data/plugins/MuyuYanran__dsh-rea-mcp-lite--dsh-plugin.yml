@@ -1,0 +1,7 @@
+url: https://github.com/MuyuYanran/dsh-rea-mcp-lite/tree/main/dsh-plugin
+name: MuyuYanran/dsh-rea-mcp-lite#dsh-plugin
+category: tools
+tarball: https://github.com/MuyuYanran/dsh-rea-mcp-lite/releases/latest/download/dsh-rea-lite-panel.tgz
+description:
+  en: 'Settings page for the REA reverse-engineering tool gateway (rea-mcp-lite) that lives in the same repository: pick which tool bundles load into context, see the tool count and token cost of each bundle, save and recall named presets of your loading setup, hot-swap them without restarting DSH, and check this repository and REA for updates, including classifying the tools a new REA release added. The page is split into sections with sub-menus, filters and pagination. Requires REA (rea-agents) and the gateway registered as the rea MCP server (see repo README).'
+  zh: '同一个仓库里的 REA 逆向工具网关（rea-mcp-lite）的设置页：勾选加载哪些功能族、看清每族的工具数与 token 成本、把当前加载组合存成命名预设随时切回、热切换无需重启，并可检查本仓库与 REA 的更新、归类 REA 新版新增的工具。页面按功能分区，带子菜单、筛选与分页。需已装 REA（rea-agents），并按仓库 README 把网关注册为名为 rea 的 MCP 服务器。'

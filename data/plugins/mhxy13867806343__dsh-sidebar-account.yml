@@ -1,0 +1,6 @@
+url: https://github.com/mhxy13867806343/dsh-sidebar-account
+name: mhxy13867806343/dsh-sidebar-account
+category: ui
+description:
+  en: 'Sidebar balance row for DSH Desktop — account balance and a top-up button, right under the version row; refreshes every 10 minutes and whenever the window regains focus, with explicit signed-out and error states.'
+  zh: 'DSH Desktop 侧栏余额行——在「版本 / 检查更新」下面显示账户余额与「充值」按钮，每 10 分钟或窗口重新聚焦时刷新，未登录与读取失败都有明确状态。'

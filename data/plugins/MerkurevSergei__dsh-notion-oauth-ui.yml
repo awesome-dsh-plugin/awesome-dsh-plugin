@@ -1,0 +1,6 @@
+url: https://github.com/MerkurevSergei/dsh-notion-oauth-ui
+name: MerkurevSergei/dsh-notion-oauth-ui
+category: notify
+description:
+  en: Connect Notion from the GUI with OAuth 2.0 + PKCE — official Notion MCP, no integration token.
+  zh: 在图形界面中以 OAuth 2.0 + PKCE 连接 Notion —— 官方 Notion MCP，无需集成令牌。

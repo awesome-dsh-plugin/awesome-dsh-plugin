@@ -1,0 +1,6 @@
+url: https://github.com/yushui6666/dsh-learning-mode
+name: yushui6666/dsh-learning-mode
+category: ui
+description:
+  en: 'Learning Mode toggle in the input toolbar: injects a teaching prompt into the current session so the assistant introduces a topic, teaches it, tests it, and corrects mistakes, rendering graded quizzes through GenUI. Requires the GenUI plugin (@changfenhuang/dsh-genui); without it the teaching text still works but quizzes, sliders and charts degrade to plain text.'
+  zh: '输入框工具栏的学习模式开关：为当前会话注入教学提示词，按「引入知识点—学习—测试—反馈纠错」引导，并用 GenUI 生成可判分的互动测验。需先安装 GenUI 插件（@changfenhuang/dsh-genui）；未安装时教学文字仍生效，但测验、滑块与图表会退化为纯文本。'

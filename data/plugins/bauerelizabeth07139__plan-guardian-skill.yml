@@ -1,0 +1,6 @@
+url: https://github.com/bauerelizabeth07139/plan-guardian-skill
+name: bauerelizabeth07139/plan-guardian-skill
+category: skill
+description:
+  en: 'A mandatory 7-step plan on every request, each step with a binary acceptance criterion, executed through worker subagents and validated by independent memoryless verifier subagents that report PASS or FAIL with evidence.'
+  zh: '每个请求都必须走完 7 步计划,每步都有可判定的验收标准,执行交给 worker 子代理,完成情况由无记忆的独立 verifier 子代理带证据判定 PASS / FAIL。'

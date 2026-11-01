@@ -1,0 +1,25 @@
+# Canonical copy of this plugin's entry in the `awesome-dsh-plugin` registry — the curated catalog
+# behind dsh-market, the plugin market most DSH users install first (its README: "This repo is the
+# market app, not the catalog", and installs are restricted to sources listed in that registry).
+#
+# Why the file lives here instead of only in the fork: so its claims are guarded like every other
+# doc. tests/docs-consistency.test.ts checks the tool counts against src/contract.ts, the gate
+# defaults against cordis.patch.yml, and that the pitch opens with the words a user would search
+# for rather than implementation jargon ("accessibility snapshots", "stable element refs").
+#
+# Our PR: https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/6127
+# Branch: add-dsh-browser-playwright-codex in the fork miqian-nomad/awesome-dsh-plugin
+#
+# Publishing an update (the PR updates itself; `sha` is the current blob sha of the file on that
+# branch, see `gh api repos/<fork>/contents/<path>?ref=<branch>`):
+#   gh api -X PUT repos/miqian-nomad/awesome-dsh-plugin/contents/data/plugins/miqian-nomad__dsh-browser-playwright-codex.yml \
+#     -f message="Update entry: lead with the user's words" \
+#     -f branch=add-dsh-browser-playwright-codex \
+#     -f content="$(base64 -w0 registry/awesome-dsh-plugin.yml)" \
+#     -f sha=<blob sha>
+url: https://github.com/miqian-nomad/dsh-browser-playwright-codex
+name: miqian-nomad/dsh-browser-playwright-codex
+category: browser
+description:
+  en: 'Browser automation for DSH: the agent fills in forms, scrapes lists and works across tabs in real pages, using the logins you already have. It drives its own visible window on your desktop — minimise it and it keeps working without stealing focus — and a sign-in, CAPTCHA or native dialog stops the run and hands the page back to you: it never confirms on your behalf. Login state persists (own profile plus session-cookie re-injection). 23 Playwright tools (20 always on, 3 gated and off by default), with a URL allowlist, dialog suspension and a CDP method allowlist that are mechanism-level and pinned by tests.'
+  zh: '浏览器自动化：让 AI 用你已经登录的账号，在真实网页上填表、抓取列表、多标签查后台。它跑在你桌面上的一个可见窗口里 —— 最小化它就不抢焦点、安静干活；遇到登录、验证码和原生弹窗会停下来等你，绝不替你点「确定」。登录一次一直记得（独立 profile + session cookie 回注）。23 个 Playwright 工具（20 个常驻、3 个默认关闭的强力工具），URL 白名单、弹窗挂起、CDP 方法白名单都是机制级且有测试钉住。'

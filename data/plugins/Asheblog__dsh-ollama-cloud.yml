@@ -1,0 +1,7 @@
+url: https://github.com/Asheblog/dsh-ollama-cloud
+name: Asheblog/dsh-ollama-cloud
+category: model
+description:
+  en: "Ollama Cloud provider for DeepSeek Harness: adds the chat route on install, publishes each model's own thinking levels for the composer effort control, keeps the model list current from the endpoint (/api/tags and /api/show, cached for offline boots), shows the account allowance with an API-key field in the Models page and sidebar, and offers Ollama's web search and fetch as selectable DSH web providers."
+  zh: "Ollama Cloud 供应商：安装即配好聊天路由，按 Ollama 模型自身元数据公布每个模型的思维链档位（供 composer 的推理强度选择），模型清单可由端点自动刷新（/api/tags 与 /api/show，并带离线缓存），在 Models 页与侧栏显示账号额度并提供 API Key 输入，还把 Ollama 的 web_search / web_fetch 作为可选的 DSH 网页能力提供方。"
+tarball: https://github.com/Asheblog/dsh-ollama-cloud/releases/latest/download/dsh-ollama-cloud.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/Very12345/dsh-bash-windows
+name: Very12345/dsh-bash-windows
+category: tools
+description:
+  en: "Windows settings switch that replaces PowerShell with Git Bash across the four built-in presets, including a persistent terminal in minimal mode."
+  zh: "Windows 上的一键 Git Bash 开关，替换四种内置模式的 PowerShell，极简模式保留持久终端。"

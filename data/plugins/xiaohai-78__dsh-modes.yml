@@ -1,0 +1,6 @@
+url: https://github.com/xiaohai-78/dsh-modes
+name: xiaohai-78/dsh-modes
+category: workflow
+description:
+  en: 'Settings page for agent modes (presets): switch up to 15 capabilities per mode (commands, files or read-only files, web, subagents, and more) or individual plugin rows; edit each mode''s system prompt with variable checks, a full preview, version history, optional live updates for running sessions, and an approval-gated mode_prompt chat tool; create modes from four starter templates or copies; merge built-in updates after a dsh upgrade while keeping your changes, and turn off rows that fail to load.'
+  zh: 'Agent 模式（预设）设置页：按模式开关最多 15 项能力（运行命令、读写或只读文件、网页、子代理等），也能逐个开关插件；编辑每个模式的系统提示词，带变量校验、完整预览和历史版本，可选让正在运行的会话即时生效，并提供每次保存都需审批的对话内修改工具 mode_prompt；用四个起步模板或复制现有模式新建模式；dsh 升级后合并内置更新并保留你的修改，一键关闭加载失败的插件。'

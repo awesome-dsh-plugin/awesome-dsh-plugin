@@ -1,0 +1,6 @@
+url: https://github.com/iasiv5/dsh-quota-watch
+name: iasiv5/dsh-quota-watch
+category: usage
+description:
+  en: "Provider-reported quota snapshots for GLM Coding Plan and GitHub Copilot in DSH: a draggable floating capsule with detail panels for quota windows, reset times, per-model usage and Copilot credits, plus an optional sidebar card hidden by default; credentials are resolved by the DSH host and no quota history is stored."
+  zh: '在 DSH 中查看 GLM Coding Plan 与 GitHub Copilot 的服务商额度快照：可拖动悬浮胶囊与详情面板展示额度窗口、重置时间、分模型用量与 Copilot 额度，附默认隐藏的可选侧边栏卡片；凭据由 DSH 宿主解析，不保存额度历史。'

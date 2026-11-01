@@ -1,0 +1,7 @@
+url: https://github.com/1jiegejiayouxuewangan1/dsh-desktop-uia
+name: 1jiegejiayouxuewangan1/dsh-desktop-uia
+category: tools
+description:
+  en: 'Windows desktop control through UI Automation: nine tools that read a window control tree and drive elements by id through their own UI Automation patterns, with every write gated by an approval policy, an append-only action log and a settings panel.'
+  zh: '通过 UI Automation 控制 Windows 桌面：九个工具读取窗口控件树、按 id 走控件自身的 UIA 模式操作，每次写入都受审批策略、动作日志与设置面板约束。'
+tarball: https://github.com/1jiegejiayouxuewangan1/dsh-desktop-uia/releases/latest/download/dsh-desktop-uia.tgz

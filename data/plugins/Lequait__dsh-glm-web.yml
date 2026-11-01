@@ -1,0 +1,6 @@
+url: https://github.com/Lequait/dsh-glm-web
+name: Lequait/dsh-glm-web
+category: model
+description:
+  en: Unofficial Zhipu Qingyan (chatglm.cn) web provider — run DeepSeek Harness on web-app credits with a login token, streaming and prompt-bridged tool calls included.
+  zh: 非官方的智谱清言（chatglm.cn）网页版 provider——用网页版登录态与积分驱动 DSH，支持流式输出与提示词桥工具调用。

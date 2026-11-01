@@ -1,0 +1,6 @@
+url: https://github.com/MurasakiIzumi/dsh-quake-alert
+name: MurasakiIzumi/dsh-quake-alert
+category: notify
+description:
+  en: 'Real-time disaster alerts for DeepSeek Harness: Japan earthquakes (P2PQuake) and JMA EEW, tsunami and weather telegrams, global earthquakes (EMSC/USGS) and NOAA tsunamis, mainland China earthquakes (CENC via Wolfx) plus nmc.cn rainstorm and geological-hazard warnings, and US/Canadian NWS and ECCC flood, rainfall and storm-surge warnings — matched against your watch regions and thresholds.'
+  zh: 'DeepSeek Harness 的实时灾害预警：日本地震（P2PQuake）与 JMA 紧急地震速报、海啸、气象电文，全球地震（EMSC/USGS）与 NOAA 海啸，中国大陆地震（CENC via Wolfx）及 nmc.cn 暴雨、地质灾害预警，美国 NWS 与加拿大 ECCC 的洪水、降雨、风暴潮预警——按你关注的地域与阈值匹配播报。'

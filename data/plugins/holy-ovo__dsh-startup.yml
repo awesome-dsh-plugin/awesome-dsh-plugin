@@ -1,0 +1,8 @@
+url: https://github.com/holy-ovo/dsh-startup
+name: holy-ovo/dsh-startup
+category: theme
+description:
+  en: 'A deep-sea dive startup splash for DeepSeek Harness: a depth gauge with a submersible probe, a character reveal video that then loops, and a seafloor with coral, bubbles and slow drifting particles. The depth reached decides which sea creatures appear.'
+  zh: '给 DeepSeek Harness 的深海下潜式启动开屏：深度尺与探测器、角色出场视频接无缝循环、海底珊瑚与气泡与缓慢漂浮的微光粒子；下潜到哪一层，就出现哪一层的海洋生物。'
+icon: https://raw.githubusercontent.com/holy-ovo/dsh-startup/master/docs/icon-180.png
+tarball: https://github.com/holy-ovo/dsh-startup/releases/latest/download/dsh-startup.tgz

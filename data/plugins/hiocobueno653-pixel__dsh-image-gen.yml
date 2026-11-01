@@ -1,0 +1,6 @@
+url: https://github.com/hiocobueno653-pixel/dsh-image-gen
+name: hiocobueno653-pixel/dsh-image-gen
+category: vision
+description:
+  en: 'Image-generation tool with automatic prompt enhancement, switchable API profiles, and a Turn-tail image card that survives chat folding. Requires a user-supplied image API endpoint and key; none are bundled.'
+  zh: '带提示词自动增强、可切换多个 API 配置，并在 Turn 尾展示不被折叠的图片卡片的生图工具。需自行配置图像 API 地址与密钥，插件不内置。'

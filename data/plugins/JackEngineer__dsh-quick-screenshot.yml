@@ -1,0 +1,6 @@
+url: https://github.com/JackEngineer/dsh-quick-screenshot
+name: JackEngineer/dsh-quick-screenshot
+category: ui
+description:
+  en: 'One-click screenshot button that floats over every DSH page, with a second one in the composer tool row: it captures the DeepSeek Harness window (or the whole desktop with a modifier) using the host capture tooling and puts the PNG where it is useful — straight into the composer draft as an attachment, or on the clipboard when no composer is mounted. Windows-verified, with macOS and Linux backends; no dependencies and no build step.'
+  zh: '悬浮在任意 DSH 页面上的一键截图按钮（输入框工具行里另有一个）：用宿主侧工具截取 DeepSeek Harness 窗口（按住修饰键可截整个桌面），并把 PNG 放到用得上的地方——直接作为附件落进输入框草稿，没有输入框时放进剪贴板。Windows 实测，另带 macOS/Linux 后端；零依赖、无构建步骤。'

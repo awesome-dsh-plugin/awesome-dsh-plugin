@@ -1,0 +1,7 @@
+url: https://github.com/romany-saad/dsh-plugins/tree/main/packages/dsh-cockpit
+name: romany-saad/dsh-plugins#dsh-cockpit
+category: workflow
+description:
+  en: 'Keep a multi-PR effort on one board you can trust at a glance: the hub agent keeps a tree of steps, each linked to its issue, PR, branch and worktree, through four board tools, and you see what is done, what is blocked and what needs you in a right-sidebar Board tab and a progress strip above the composer. Each board is one plain JSON file your scripts can read, and an optional drift command you configure flags steps whose status no longer matches their work.'
+  zh: '把跨多个 PR 的工作放进一块一眼就能看清的看板：中枢 Agent 通过四个看板工具维护一棵步骤树，每步关联 issue、PR、分支与 worktree；右侧栏 Board 标签页和输入框上方的进度条告诉你哪些已完成、哪些被阻塞、哪些在等你处理。每个看板就是一个你的脚本也能读的 JSON 文件；可选的、由你配置的漂移检查命令会标出状态与实际进展不再一致的步骤。'
+icon: https://raw.githubusercontent.com/romany-saad/dsh-plugins/main/packages/dsh-cockpit/docs/icon.png

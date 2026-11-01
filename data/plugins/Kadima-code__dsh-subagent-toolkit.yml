@@ -1,0 +1,6 @@
+url: https://github.com/Kadima-code/dsh-subagent-toolkit
+name: Kadima-code/dsh-subagent-toolkit
+category: ui
+description:
+  en: 'Subagent Toolkit: folds the built-in subagent dropdown into History / Today / Previous / Current groups by usage batch, adds per-row and whole-group deletion of subagent sessions, and keeps the subagent model allowlist live per delegation. The original header is left untouched.'
+  zh: '子代理工具箱：把原生子代理下拉按使用批次折叠为 历史 / 今日 / 上次 / 本次 四组（本次常展开），支持行内/整组删除子代理会话，并让子代理模型名单实时生效（逐任务选模型）；不改动原版头部。'

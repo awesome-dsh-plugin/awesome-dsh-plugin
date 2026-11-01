@@ -1,0 +1,7 @@
+url: https://github.com/bwndlct/dsh-codex-bridge/tree/main/packages/dsh-plugin
+name: bwndlct/dsh-codex-bridge#dsh-plugin
+category: workflow
+tarball: https://github.com/bwndlct/dsh-codex-bridge/releases/download/v0.2.0/dsh-codex-bridge-dsh-plugin-0.2.0.tgz
+description:
+  en: Lets Codex delegate tasks to Desktop sessions through a local authenticated bridge and companion MCP server, with Workspace grouping, model and reasoning effort selection, event tracking, waiting, and cancellation.
+  zh: 通过本机鉴权桥接与配套 MCP 服务，将 Codex 任务委托给 Desktop 会话，支持工作区分组、模型与推理等级选择、事件跟踪、等待和取消。

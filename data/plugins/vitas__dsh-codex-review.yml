@@ -1,0 +1,6 @@
+url: https://github.com/vitas/dsh-codex-review
+name: vitas/dsh-codex-review
+category: git
+description:
+  en: 'A /review command that hands the current change set to a reviewer subagent pinned to the model you choose, with one continuing reviewer session per chat.'
+  zh: 一条 /review 命令，把当前改动集交给固定到你选定模型的评审子代理，并且每个对话只保留一个持续复用的评审会话。

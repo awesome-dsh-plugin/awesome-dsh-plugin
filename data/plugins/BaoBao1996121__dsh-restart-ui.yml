@@ -1,0 +1,6 @@
+url: https://github.com/BaoBao1996121/dsh-restart-ui
+name: BaoBao1996121/dsh-restart-ui
+category: ui
+description:
+  en: "Adds a restart button to the DSH Web UI through a loopback-only endpoint that requests a relaunch using the current process executable, arguments and working directory."
+  zh: "为 DSH Web 界面添加基于本机回环接口的重启按钮，按当前进程的可执行文件、参数和工作目录请求重新启动。"

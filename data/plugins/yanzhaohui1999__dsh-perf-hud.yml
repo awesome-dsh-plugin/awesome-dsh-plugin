@@ -1,0 +1,6 @@
+url: https://github.com/yanzhaohui1999/dsh-perf-hud
+name: yanzhaohui1999/dsh-perf-hud
+category: dev
+description:
+  en: 'Client-side performance HUD and always-on recorder for DeepSeek Harness: FPS and worst frame, long tasks with four-leg attribution (React fiber / subtree / DOM writes / scheduler), per-plugin callback rate and sync time, DOM growth and writers, JS heap, host event loop and link RTT, plus a night-watch recorder that keeps the worst stalls and exports incident packs for replay.'
+  zh: '纯客户端性能 HUD 与默认常开的记录器：帧率与最差帧、Long Task 四条腿归因（React fiber / 子树 / DOM 写入 / 调度点）、每插件回调速率与同步耗时、DOM 增长与写入者、JS 堆、宿主 event-loop 与链路 RTT；守夜层自动留存最差几次卡顿，可逐帧回放并导出事故包。'

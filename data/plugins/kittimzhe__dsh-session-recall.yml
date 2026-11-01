@@ -1,0 +1,6 @@
+url: https://github.com/kittimzhe/dsh-session-recall
+name: kittimzhe/dsh-session-recall
+category: session
+description:
+  en: 'Deterministic cross-session transcript retrieval: the `recall` tool searches past session logs with explicit scope control.'
+  zh: '确定性跨会话检索：`recall` 工具带显式范围控制地搜索历史会话日志。'

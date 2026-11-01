@@ -1,0 +1,6 @@
+url: https://github.com/sevenhsu7/dsh-codex-like-markdown
+name: sevenhsu7/dsh-codex-like-markdown
+category: ui
+description:
+  en: 'In-place Markdown editing for the right-sidebar document preview: a file keeps the shipped renderer''s look, clicking a paragraph, heading, list, fence, or table cell puts the caret exactly where you clicked, and only the edited range is written back through ctx.fs.writeText, optionally guarded by the version it read.'
+  zh: '让右侧栏的 Markdown 预览就地可编辑：文档保持自带渲染器的排版，点段落、标题、列表、代码围栏或表格单元格时光标落在点击处，只有被编辑的那段经 ctx.fs.writeText 写回，并可带上读取时的版本作为护栏。'

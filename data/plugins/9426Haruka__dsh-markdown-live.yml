@@ -1,0 +1,6 @@
+url: https://github.com/9426Haruka/dsh-markdown-live
+name: 9426Haruka/dsh-markdown-live
+category: ui
+description:
+  en: Live Markdown rendering inside the DSH composer plus Markdown-rendered user messages; the submitted text stays literal Markdown.
+  zh: 在 DSH 输入框内实时渲染 Markdown，并让已发送的用户消息按 Markdown 显示；提交文本保持字面 Markdown 不变。

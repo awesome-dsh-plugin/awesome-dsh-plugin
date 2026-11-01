@@ -1,0 +1,6 @@
+url: https://github.com/zhengqiuyang/dsh-prompt-drift
+name: zhengqiuyang/dsh-prompt-drift
+category: security
+description:
+  en: 'System-prompt surface drift gate: every section any plugin or preset contributes to the assembled system prompt is hashed and baselined; a silent rewrite of what the model is told fails loud.'
+  zh: '系统提示词面漂移门：任何插件或预设注入组装提示词的段落均哈希基线化，对模型被告知内容的静默改写将响亮报错。'

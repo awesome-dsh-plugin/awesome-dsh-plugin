@@ -1,0 +1,8 @@
+url: https://github.com/yanli-nyan/dsh-open-in-app-fix
+name: yanli-nyan/dsh-open-in-app-fix
+category: ui
+icon: https://raw.githubusercontent.com/yanli-nyan/dsh-open-in-app-fix/main/icon.png
+tarball: https://github.com/yanli-nyan/dsh-open-in-app-fix/releases/download/v1.1.0/local-dsh-open-in-app-fix-1.1.0.tgz
+description:
+  en: 'Removes the inherited ELECTRON_RUN_AS_NODE variable from the environment the open-in-app package hands to launched editors, so the desktop host''s "Open in ..." launches stop failing with HTTP 502 launch-failed; app.asar is untouched.'
+  zh: '修复vscode无法启动，从 open-in-app 包交给被启动编辑器的环境里去掉继承来的 ELECTRON_RUN_AS_NODE 变量，桌面端「用其它应用打开」不再以 HTTP 502 launch-failed 失败；不改动 app.asar。'

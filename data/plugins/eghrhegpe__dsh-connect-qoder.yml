@@ -1,0 +1,6 @@
+url: https://github.com/eghrhegpe/dsh-connect-qoder
+name: eghrhegpe/dsh-connect-qoder
+category: model
+description:
+  en: 'Registers Qoder CN and international language models into DSH, fetching each model''s rate automatically as it shifts with off-peak hours. It also provides a daily check-in, a usage pill and a credit lookup. Needs the Qoder login state on this machine, or one browser login.'
+  zh: '注册 Qoder 中国版与国际版的语言模型到 DSH，自动获取每个模型的费率，随错峰时段变化。并提供每天签到、用量胶囊与积分查询功能。需要本机Qoder的登录态，或浏览器登录一次。'

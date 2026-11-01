@@ -1,0 +1,6 @@
+url: https://github.com/hawkongz/dsh-task-reminder
+name: hawkongz/dsh-task-reminder
+category: notify
+description:
+  en: 'Windows toast and a chime whenever a conversation task stops: completed, waiting on your approval or answer, or failed. Clicking the toast reopens that session at your last question, and in DSH Desktop it also raises the window.'
+  zh: '对话任务停止时弹一条 Windows 通知并响一声提示音：完成、等你审批或回答、出错都会提醒。点通知回到那个会话，落在你上次提问的位置；桌面端还会把窗口拉到前台。'

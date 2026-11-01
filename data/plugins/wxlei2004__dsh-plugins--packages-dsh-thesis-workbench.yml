@@ -1,0 +1,15 @@
+# dshmarket submission entry for dsh-thesis-workbench.
+# Copy to <fork-of-awesome-dsh-plugin>/data/plugins/wxlei2004__dsh-plugins--packages-dsh-thesis-workbench.yml
+# and open a PR against https://github.com/awesome-dsh-plugin/awesome-dsh-plugin.
+#
+# Rules enforced by CI (pr-gate.yml / check-submission.mjs):
+#   - repo must contain a dsh.bundle declaration (package.json has dsh.bundle.patch)
+#   - repo must be >= 1 day old
+#   - filename must equal slugFor(url): <owner>__<repo>--<subpath-with-dashes>.yml
+#   - only keys: url, name, category, description, tarball
+url: https://github.com/wxlei2004/dsh-plugins/tree/main/packages/dsh-thesis-workbench
+name: wxlei2004/dsh-plugins#dsh-thesis-workbench
+category: workflow
+description:
+  en: "Thesis and empirical-analysis workbench that drives IBM SPSS from the conversation: spss_check (environment self-check), spss_variables (list .sav variables with labels, types, measurement levels, case counts), spss_data (sample case rows to inspect missing and outlying values), spss_run / spss_run_file (execute SPSS syntax or an .sps file, relative CD and GET FILE paths auto-rebased), and spss_analyze (one-shot frequencies, descriptives, crosstabs with chi-square, t-tests, one-way ANOVA, correlation, linear regression). Results come back as structured tables extracted through OMS. SPSS 25-31 is auto-detected; the bundled MCP server is zero-dependency stdio."
+  zh: "论文/实证分析工作台：在对话里直接驱动 IBM SPSS。spss_check（环境自检）、spss_variables（列出 .sav 变量：名称/标签/类型/测度水平/案例数）、spss_data（抽查案例数据，检查缺失与异常值）、spss_run 与 spss_run_file（执行 SPSS 语法或 .sps 文件，自动修正 CD / GET FILE 相对路径）、spss_analyze（一键跑频数、描述统计、交叉表卡方、t 检验、单因素方差、相关、线性回归）。结果经 OMS 导出为结构化表格。自动探测 SPSS 25-31；内置 MCP server 为零依赖 stdio 服务。"

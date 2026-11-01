@@ -1,0 +1,6 @@
+url: "https://github.com/7gzgn/dsh-inpage-translator"
+name: "dsh-inpage-translator"
+category: browser
+description:
+  en: "A persistent translate button lives in every page the browser opens: click it and every visible text node is replaced in place, click again to restore. Hold to drag, drop it near an edge and it tucks into a small handle; it is re-injected automatically after navigation. The host LLM service does the translation — the plugin holds no API key."
+  zh: 给内置浏览器的每一张页面常驻一个「🈯 译」按钮：点一下，页面上每个可见文本节点原地换成译文；再点一下回到原文。长按可拖动，拖到左右边缘自动吸成贴边小把手；页面导航后自动重装。翻译走宿主模型服务 —— 插件不持有任何 API key。

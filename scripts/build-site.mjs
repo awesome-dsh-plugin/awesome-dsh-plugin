@@ -11,12 +11,15 @@
  * Usage: node scripts/build-site.mjs
  */
 import fs from 'node:fs'
+import { createHash } from 'node:crypto'
 import { execSync } from 'node:child_process'
 import { Marked } from 'marked'
 import LOCALES from '../site/locales.mjs'
 import COMMENTS from '../site/comments.mjs'
 import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
+import { buildMarketIndex } from './lib/market-index.mjs'
 import { firstAddedDate } from './lib/added-dates.mjs'
+import { slugOf, termOf } from './lib/terms.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
@@ -42,6 +45,11 @@ const tarballVerdicts = fs.existsSync(TARBALLS_FILE) ? JSON.parse(fs.readFileSyn
 // parsed out of the READMEs, which carry no file path; the added-date
 // derivation below needs one to ask git when an entry first appeared.
 const entryFiles = Object.fromEntries(readEntries().map((e) => [e.url, e.file]))
+const iconMap = Object.fromEntries(
+  readEntries()
+    .filter((e) => e.icon !== undefined)
+    .map((e) => [e.url, e.icon]),
+)
 const tarballMap = Object.fromEntries(
   readEntries()
     .filter((e) => {
@@ -170,6 +178,23 @@ const N = ordered.length
 // ever written back; git history is the ledger.
 const dates = fs.existsSync(DATES_FILE) ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8')) : {}
 const npmMap = fs.existsSync(NPM_MAP_FILE) ? JSON.parse(fs.readFileSync(NPM_MAP_FILE, 'utf8')) : {}
+
+// The plugin market index (format 1) that hosts read as a market source.
+// Built here rather than in a second pass so the page can tell whether THIS
+// deploy actually carries one: a push build restores the probe cache, and a
+// cache from before the publish-time field existed lists nothing — in that
+// case the panel is left out instead of advertising a URL that 404s.
+const builtIndex = buildMarketIndex({ entries: readEntries(), npmMap, locales: LOCALES, origin: ORIGIN })
+const indexBuilt = builtIndex.index.plugins.length > 0
+// Minified, not pretty: the host that reads this has a fixed 15 s fetch
+// timeout (dsh 0.2.1 `fetchTimeoutMs`), and one-space indentation added 25%
+// to a document already close to that budget on slow networks.
+if (indexBuilt) fs.writeFileSync('docs/index.json', JSON.stringify(builtIndex.index) + '\n')
+{
+  const { index, skipped } = builtIndex
+  const unpublished = skipped.noNpm + skipped.noVersion
+  console.log(`index: ${index.plugins.length} listed (${unpublished} entries have no npm package or version yet${skipped.noPublishTime > 0 ? `, ${skipped.noPublishTime} await a publish-time probe` : ''})`)
+}
 const starsMap = fs.existsSync('data/stars.json') ? JSON.parse(fs.readFileSync('data/stars.json', 'utf8')) : {}
 // Missing (not yet bootstrapped, or an entry with no npm package) is a
 // normal, permanent state for most entries — unlike stars.json, absence
@@ -177,6 +202,9 @@ const starsMap = fs.existsSync('data/stars.json') ? JSON.parse(fs.readFileSync('
 // already refuses to WRITE the file on a bad run, so whatever is on disk is
 // the last known-good result, or nothing yet.
 const downloadsMap = fs.existsSync('data/downloads.json') ? JSON.parse(fs.readFileSync('data/downloads.json', 'utf8')) : {}
+// Capability disclosure (#401), from probe-capabilities.mjs. An entry absent
+// here was NOT scanned — the surfaces print that as 未检出, never as clean.
+const capabilitiesMap = fs.existsSync('data/capabilities.json') ? JSON.parse(fs.readFileSync('data/capabilities.json', 'utf8')) : {}
 
 // Publishing is the last chance to notice that a data file arrived empty, and
 // the only one that matters to consumers: docs/ is deployed straight to Pages,
@@ -434,6 +462,9 @@ for (const e of ordered) {
   // entries with no npm package at all — a coverage gap, not a zero.
   // Consumers must tell "not published" apart from "published, unused".
   e.downloads = downloadsMap[e.url]?.downloads ?? null
+  e.capabilities = capabilitiesMap[e.url]?.capabilities ?? null
+  e.capabilityRedLines = capabilitiesMap[e.url]?.redLines ?? null
+  e.capabilityCheckedAt = capabilitiesMap[e.url]?.scannedAt ?? null
   // registry dist-tags.latest from probe-npm.mjs. null when not on npm, OR
   // when probed but no latest tag was available. A published row whose map
   // entry still lacks the `version` key has not been backfilled yet — after
@@ -442,7 +473,11 @@ for (const e of ordered) {
   // not as "github-only".
   // Surfaced for dsh-market's discover list (dsh-market#348).
   e.version = e.npm ? (npmMap[e.url]?.version ?? null) : null
-  e.slug = e.sub ? `${e.repo}--${e.sub.replaceAll('/', '-')}` : e.repo
+  // The detail-page path, the sitemap entry and the comment term all read
+  // this one derivation (scripts/lib/terms.mjs): the term is the join key a
+  // plugin's discussion is filed under, and it has to match the path the
+  // pages are published at, character for character.
+  e.slug = slugOf(e.url)
 }
 
 const hreflangs = [
@@ -483,14 +518,30 @@ const byDownloads = (a, b) => {
   return (b.stars ?? -1) - (a.stars ?? -1)
 }
 
-// download-ranked card grid; `only` limits to one category (category pages)
-function buildRows(loc, only) {
-  const group = ordered
-    .filter((e) => !only || e.cat === only)
-    .slice()
-    .sort(byDownloads)
-  return group.map((e) => {
-    const cmd = e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit
+// The HTML grid is only the first screen (#6105). Mounting every card made a
+// ~7.6 MB document and froze low-end browsers; the rest of the list is windowed
+// at runtime from catalog.json. No-JS visitors still get this slice, in the
+// same order the full grid uses.
+const FALLBACK_CARDS = 24
+
+function ranked(only) {
+  return ordered.filter((e) => !only || e.cat === only).slice().sort(byDownloads)
+}
+
+// Match the detail page: prefer a verified npm package, then the declared
+// prebuilt tarball, and use Git only when neither is available. Both static
+// cards and the virtual catalog use this function.
+function cardCmd(e) {
+  return e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit)
+}
+
+// download-ranked card grid; `only` limits to one category (category pages).
+// `limit` is the no-JS / first-paint slice. Omit it and the grid is the whole list.
+function buildRows(loc, only, limit) {
+  const group = ranked(only)
+  const rows = limit ? group.slice(0, limit) : group
+  return rows.map((e) => {
+    const cmd = cardCmd(e)
     const short = shortName(e.name)
     // data-* carry what the in-page sort and filters need. Absent attribute,
     // not a zero: `downloads` is null for entries with no npm package at all,
@@ -532,6 +583,49 @@ function buildRows(loc, only) {
 // disambiguation. Titles lead with this: nobody searches the owner prefix,
 // and it costs a dozen characters of a budget that truncates around sixty.
 const shortName = (name) => (name.includes('/') ? name.slice(name.indexOf('/') + 1) : name)
+
+// One catalog per page. The homepage needs every category because its chips
+// filter in place; a category page only needs its own rows. Sharing the full
+// file made a small category download the whole list (~2 MB) to throw most of
+// it away. Card-chrome strings travel with the file: they are locale-specific
+// and must not be interpolated into the page script, where an apostrophe
+// would break the string.
+function catalogPayload(loc, only) {
+  return {
+    install: loc.strings.INSTALL_BTN,
+    market: loc.strings.MENU_MARKET,
+    marketHint: loc.strings.MENU_MARKET_HINT,
+    cli: loc.strings.MENU_CLI,
+    copy: loc.COPY_TEXT,
+    copyLabel: loc.COPY_LABEL,
+    dlTitle: loc.strings.P_DOWNLOADS,
+    items: ranked(only).map((e) => {
+      const short = shortName(e.name)
+      return {
+        cat: e.cat,
+        tag: loc.categories[e.cat],
+        dl: e.downloads,
+        stars: e.stars,
+        added: e.added,
+        npm: e.npm ? 1 : 0,
+        name: short.toLowerCase(),
+        owner: e.owner,
+        short,
+        slug: e.slug,
+        desc: e.descs[loc.code] || '',
+        cmd: cardCmd(e),
+        href: `${loc.urlPath}p/${e.slug}/`,
+      }
+    }),
+  }
+}
+
+// The query pins the CDN copy to this build. Pages caches the HTML briefly;
+// an unhashed catalog.json would keep serving the previous list after a deploy.
+function catalogHref(path, json) {
+  const v = createHash('sha256').update(json).digest('hex').slice(0, 8)
+  return `${path}?v=${v}`
+}
 
 // Highest-starred entries in a category, for its meta description. Stars come
 // from a probe that only runs in CI, so a local build ranks by list order
@@ -581,12 +675,22 @@ function langRedirect(current) {
   return `\n<script>{const p=new URLSearchParams(location.search);const v=p.get('lang');${cases}}</script>`
 }
 
+const INDEX_LINE = `    <div class="indexline">
+      <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8 13l2 2 4-4"/></svg>
+      <span class="lead">__T_INDEX_LEAD__ <code translate="no">cdn.jsdelivr.net/npm/dsh-plugin-catalog/index.json</code></span>
+      <button class="copy" type="button" data-cmd="https://cdn.jsdelivr.net/npm/dsh-plugin-catalog/index.json">__T_INDEX_COPY__</button>
+    </div>`
+
+
 const master = fs.readFileSync('site/template.html', 'utf8')
 
 for (const loc of LOCALES) {
+  const catalog = catalogPayload(loc)
+  const catalogJson = JSON.stringify(catalog)
+  const catalogUrl = catalogHref(loc.urlPath + 'catalog.json', catalogJson)
   let page = master
   page = page.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, () => `<script type="application/ld+json">${ldSafe(jsonld(ORIGIN + loc.urlPath))}</script>`)
-  page = page.replace(/(<ol class="dex" id="dex">)[\s\S]*?(<\/ol>)/, (m, a, b) => `${a}\n\n${buildRows(loc)}\n\n  ${b}`)
+  page = page.replace(/(<ol class="dex" id="dex"[^>]*>)[\s\S]*?(<\/ol>)/, (m, a, b) => `${a}\n\n${buildRows(loc, null, FALLBACK_CARDS)}\n\n  ${b}`)
   page = page.replace(/(<div class="filters" id="filters">)[\s\S]*?(<\/div><!--\/filters-->)/, (m, a, b) => `${a}\n${buildChips(loc)}\n    ${b}`)
   page = page
     .replaceAll('__LANG__', () => loc.htmlLang)
@@ -601,16 +705,23 @@ for (const loc of LOCALES) {
     .replaceAll('__PRIVACY__', () => loc.privacyPath)
     .replaceAll('__LANG_REDIRECT__', () => langRedirect(loc))
     .replaceAll('__FEED__', () => loc.feed)
+    .replaceAll('__CATALOG__', () => catalogUrl)
     // Rendered server-side rather than left at 0 for the client to correct.
     // The counters sit inside the search bar and the line under the hero; going
     // from "0 / 0" to "2662 / 2662" on load widened both and reflowed the row
     // around them, which is what made #count the single largest contributor to
-    // this site's CLS. Same number either way — it just arrives before paint.
+    // this site's CLS. The hero total is the full list. The search counter
+    // starts at the baked slice so a no-JS visitor is not told every plugin is
+    // on the page; the script rewrites it to the full total before first paint.
+    .replaceAll('__INDEX_LINE__', () => indexBuilt ? INDEX_LINE : '')
     .replaceAll('__CARD_COUNT__', () => String(N))
+    .replaceAll('__FALLBACK_COUNT__', () => String(Math.min(FALLBACK_CARDS, N)))
     .replaceAll(AD_HEAD_TOKEN, () => adHead())
   for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
   fs.mkdirSync(loc.out.split('/').slice(0, -1).join('/'), { recursive: true })
   fs.writeFileSync(loc.out, page)
+  fs.writeFileSync(loc.out.replace(/index\.html$/, 'catalog.json'), catalogJson)
+  console.log(`catalog ${loc.code}: ${catalog.items.length} items, ${(catalogJson.length / 1024).toFixed(0)} KB`)
 }
 
 // Category pages: /{cat}/ per locale
@@ -623,9 +734,13 @@ const catJsonld = (url, id) => JSON.stringify({
   itemListElement: ordered.filter((e) => e.cat === id).map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name, url: e.url })),
 })
 for (const loc of LOCALES) {
+  const catBytes = []
   for (const id of CAT_IDS) {
     const n = ordered.filter((e) => e.cat === id).length
     if (!n) continue
+    const catCatalog = catalogPayload(loc, id)
+    const catCatalogJson = JSON.stringify(catCatalog)
+    const catCatalogUrl = catalogHref(`${loc.urlPath}${id}/catalog.json`, catCatalogJson)
     const url = `${ORIGIN}${loc.urlPath}${id}/`
     const catHreflangs = [
       ...LOCALES.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}${id}/">`),
@@ -633,7 +748,8 @@ for (const loc of LOCALES) {
     ].join('\n')
     let page = master
     page = page.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, () => `<script type="application/ld+json">${ldSafe(catJsonld(url, id))}</script>`)
-    page = page.replace(/(<ol class="dex" id="dex">)[\s\S]*?(<\/ol>)/, (m, a, b) => `${a}\n\n${buildRows(loc, id)}\n\n  ${b}`)
+    page = page.replace('data-only=""', `data-only="${id}"`)
+    page = page.replace(/(<ol class="dex" id="dex"[^>]*>)[\s\S]*?(<\/ol>)/, (m, a, b) => `${a}\n\n${buildRows(loc, id, FALLBACK_CARDS)}\n\n  ${b}`)
     page = page.replace(/(<div class="filters" id="filters">)[\s\S]*?(<\/div><!--\/filters-->)/, (m, a, b) => `${a}\n${buildChipLinks(loc, id)}\n    ${b}`)
     page = page
       .replaceAll('__LANG__', () => loc.htmlLang)
@@ -651,15 +767,24 @@ for (const loc of LOCALES) {
     .replaceAll('__PRIVACY__', () => loc.privacyPath)
       .replaceAll('__LANG_REDIRECT__', () => '')
       .replaceAll('__FEED__', () => loc.feed)
+      .replaceAll('__CATALOG__', () => catCatalogUrl)
       // A category page renders only its own rows, so its counters start from
       // that number, not the site total. See the index block for why these are
-      // server-rendered.
+      // server-rendered. The search counter starts at the baked slice.
       .replaceAll('__CARD_COUNT__', () => String(n))
+      .replaceAll('__FALLBACK_COUNT__', () => String(Math.min(FALLBACK_CARDS, n)))
       .replaceAll(AD_HEAD_TOKEN, () => adHead())
     for (const [k, v] of Object.entries(loc.strings)) page = page.replaceAll(`__T_${k}__`, () => v)
     const outDir = loc.out.replace(/index\.html$/, '') + id
     fs.mkdirSync(outDir, { recursive: true })
     fs.writeFileSync(`${outDir}/index.html`, page)
+    fs.writeFileSync(`${outDir}/catalog.json`, catCatalogJson)
+    catBytes.push(catCatalogJson.length)
+  }
+  if (catBytes.length) {
+    const min = Math.min(...catBytes)
+    const max = Math.max(...catBytes)
+    console.log(`category catalogs ${loc.code}: ${catBytes.length} files, ${(min / 1024).toFixed(0)}–${(max / 1024).toFixed(0)} KB`)
   }
 }
 
@@ -842,7 +967,7 @@ for (const loc of LOCALES) {
       repoId: COMMENTS.repoId,
       category: COMMENTS.category,
       categoryId: COMMENTS.categoryId,
-      term: `plugin:${e.slug.toLowerCase()}`,
+      term: termOf(e.slug),
       lang: loc.giscusLang,
     } : null
     const commentsSection = commentsConfig ? `<section class="panel comments" aria-labelledby="${commentsId}-title">
@@ -1029,8 +1154,19 @@ const registry = {
       downloadsStart: downloadsMap[e.url]?.start ?? null,
       downloadsEnd: downloadsMap[e.url]?.end ?? null,
       downloadsCheckedAt: downloadsMap[e.url]?.checkedAt ?? null,
+      // Capability disclosure (#401). Omitted entirely when the entry was not
+      // scanned, so a consumer cannot read "absent" as "empty" — the market
+      // renders a missing pair as 未检出 / not checked.
+      ...(capabilitiesMap[e.url] === undefined ? {} : {
+        capabilities: capabilitiesMap[e.url].capabilities,
+        capabilityRedLines: capabilitiesMap[e.url].redLines,
+        capabilityCheckedAt: capabilitiesMap[e.url].scannedAt,
+      }),
       install: e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit),
       added: e.added,
+      // Optional, author-declared storefront tile; omitted when absent so the
+      // payload stays lean and a consumer falls back to the owner avatar.
+      ...(iconMap[e.url] === undefined ? {} : { icon: iconMap[e.url] }),
       // Optional, author-maintained (data/screenshots.json); omitted when
       // absent so the payload stays lean. Storefronts fall back to their own
       // README extraction (dsh-market #61).

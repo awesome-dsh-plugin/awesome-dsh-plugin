@@ -1,0 +1,7 @@
+url: https://github.com/burning-frappuccino/dsh-turbo
+name: burning-frappuccino/dsh-turbo
+category: agi
+description:
+  en: 'Per-session execution gears for the DSH composer: an OVERDRIVE toggle turns Turbo on for the current session only, the Fast and Max gears swap the agent''s planning and verification policy and may lower the request''s reasoning effort, and the Host keeps the authoritative mode plus per-turn latency, step count, tool calls and whether a verification command ran.'
+  zh: 'DSH 输入区的按会话执行档位：OVERDRIVE 开关只对当前会话开启 Turbo，极速/极限两档替换 agent 的规划与验证策略、并按档位调整请求的 reasoningEffort；Host 持有权威状态，并记录每轮耗时、模型步骤、工具调用与是否跑过验证命令。'
+icon: https://raw.githubusercontent.com/burning-frappuccino/dsh-turbo/main/assets/icon-180.png

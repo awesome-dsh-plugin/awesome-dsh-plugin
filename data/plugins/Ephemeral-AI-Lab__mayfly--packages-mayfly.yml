@@ -1,0 +1,6 @@
+url: https://github.com/Ephemeral-AI-Lab/mayfly/tree/main/packages/mayfly
+name: Ephemeral-AI-Lab/mayfly#mayfly
+category: ui
+description:
+  en: 'Interactive terminal UI for DeepSeek Harness: tables, Mermaid and chart rendering, side conversations, and the same Cordis plugin model as dsh Web.'
+  zh: 'DeepSeek Harness 交互式终端界面：表格、Mermaid 与图表渲染、旁支会话，以及与 dsh Web 相同的 Cordis 插件模型。'

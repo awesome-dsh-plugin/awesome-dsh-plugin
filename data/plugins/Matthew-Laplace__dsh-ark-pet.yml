@@ -1,0 +1,6 @@
+url: https://github.com/Matthew-Laplace/dsh-ark-pet
+name: Matthew-Laplace/dsh-ark-pet
+category: fun
+description:
+  en: "DSH pet plugin that adds an Arknights operator library and custom image pets: pick one of 486 operators and the plugin downloads that operator Codex v2 atlas from the pinned upstream revision, verifies every Git blob hash and installs it locally, or import your own Codex atlas (1536x1872 or 1536x2288) or a plain PNG/WebP/GIF; the pet then follows session activity, shows a bubble while a decision is pending, and can be dragged and resized."
+  zh: "DSH 桌宠插件：内置 486 位明日方舟干员素材目录，选定干员后从固定上游版本下载 Codex v2 图集并逐个校验 Git 哈希再本地安装；也可导入自己的 Codex 图集（1536×1872 或 1536×2288）或普通 PNG/WebP/GIF 图片；桌宠随会话状态切换动作，等待确认时显示气泡，可拖动并调整尺寸。"

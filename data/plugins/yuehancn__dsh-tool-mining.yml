@@ -1,0 +1,6 @@
+url: https://github.com/yuehancn/dsh-tool-mining
+name: yuehancn/dsh-tool-mining
+category: tools
+description:
+  en: Turn a GitHub repository's raw counts into a defensible judgement — contributor concentration and bus factor with single-author files, merge time reported as a median beside the mean so an outlier is visible rather than hidden, and an issue backlog with pull requests and drafts filtered out. Reads the public REST API with no SDK, and never claims a truncated page is the whole answer.
+  zh: 把 GitHub 仓库的原始计数变成一句能站住的判断 —— 贡献者集中度与 bus factor（附单作者文件）、合并时长中位数与均值并列（让离群值可见而不是被隐藏）、以及排掉 PR 与 draft 之后的 issue backlog。只用公开 REST API、不装 SDK，分页被截断时明确说明而非伪装完整。

@@ -1,0 +1,6 @@
+url: https://github.com/p56568833/dsh-plugin-groups
+name: p56568833/dsh-plugin-groups
+category: ui
+description:
+  en: 'Category tabs (All, Appearance & UI, Usage & account and more) for the Installed list on the Plugins page, remembering the chosen tab; patch plugins named in an editable parent table are indented under the plugin they patch. Display-only, writes no files.'
+  zh: '给插件页「已安装」列表加一行分类 Tab（全部 / 界面与外观 / 用量与账户 …），记住选中的分类；在可编辑对照表里登记的补丁插件会缩进挂在它修的插件下面。纯显示层，不写任何文件。'

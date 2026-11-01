@@ -1,0 +1,6 @@
+url: https://github.com/ChthollyFan/dsh-cpp-optimization
+name: ChthollyFan/dsh-cpp-optimization
+category: skill
+description:
+  en: 'C++ audit skill: detects the target project''s actual C++ standard before making any recommendation, then reports findings across RAII and ownership, move semantics, exception safety, performance and memory, containers and algorithms, concurrency, templates and compile-time, standard boundary, and type safety, ABI and interface design, each with a checkpoint, a reason, a bad-to-good example and the minimum standard.'
+  zh: 'C++ 审查技能：先探测目标工程真实的 C++ 标准再给建议，随后按 RAII 与所有权、移动语义、异常安全、性能与内存、容器与算法、并发、模板与编译期、标准边界、类型安全、ABI 与接口设计逐条给出结论，每条含检查点、原因、反例→正例与适用标准。'

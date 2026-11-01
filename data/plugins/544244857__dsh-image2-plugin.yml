@@ -1,0 +1,6 @@
+url: https://github.com/544244857/dsh-image2-plugin
+name: 544244857/dsh-image2-plugin
+category: vision
+description:
+  en: 'Registers an `image2_generate` tool that calls your own OpenAI-compatible image relay to generate or edit pictures (text-to-image via POST /images/generations, image-to-image via POST /images/edits with a local PNG/JPEG/WebP reference, accepting b64_json or image URLs), saves them in the session working directory, and renders them inline in the conversation through its `@wisdoverse/dsh-inline-media-viewer` dependency.'
+  zh: '注册 `image2_generate` 工具：调用你自己的 OpenAI 兼容图片中转站生成或编辑图片（文生图走 POST /images/generations，图生图走 POST /images/edits 并接受本地 PNG/JPEG/WebP 参考图，兼容 b64_json 与图片 URL 返回），图片保存在会话工作目录内，并借助其 `@wisdoverse/dsh-inline-media-viewer` 依赖在对话里内联渲染。'

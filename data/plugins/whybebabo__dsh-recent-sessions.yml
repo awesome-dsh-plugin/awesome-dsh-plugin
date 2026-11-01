@@ -1,0 +1,6 @@
+url: https://github.com/whybebabo/dsh-recent-sessions
+name: whybebabo/dsh-recent-sessions
+category: session
+description:
+  en: 'Flat list of recent sessions across every workspace, with last-question previews, time buckets, full-text search, and notes that resurface when you reopen a conversation. Fork of huangxp12/dsh-recent-sessions with a native-style UI rewrite; both register the same recent-sessions panel id, so do not install both.'
+  zh: '跨所有工作目录的扁平会话列表：显示最后一句提问、按时间分组、全文搜索，并让随手记下的想法在重开会话时提醒。是 huangxp12/dsh-recent-sessions 的重写分支，界面按原生样式重做；两者注册同一个 recent-sessions 面板 id，不要与原版同装。'

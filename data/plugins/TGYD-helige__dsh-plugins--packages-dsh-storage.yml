@@ -1,0 +1,6 @@
+url: https://github.com/TGYD-helige/dsh-plugins/tree/main/packages/dsh-storage
+name: TGYD-helige/dsh-plugins#dsh-storage
+category: session
+description:
+  en: 'Mirror dsh session events to MySQL, PostgreSQL, SQLite, or SQL Server while retaining local session files.'
+  zh: '将 dsh 会话事件镜像到 MySQL、PostgreSQL、SQLite 或 SQL Server，同时保留本地会话文件。'

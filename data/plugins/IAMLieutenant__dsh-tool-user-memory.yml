@@ -1,0 +1,6 @@
+url: https://github.com/IAMLieutenant/dsh-tool-user-memory
+name: IAMLieutenant/dsh-tool-user-memory
+category: memory
+description:
+  en: 'Local Markdown user and project memory for DSH: pinned preferences, keyword search, soft invalidation, history and archive, and JSON migration with preview, backup and rollback.'
+  zh: '面向 DSH 的本地 Markdown 用户与项目记忆：置顶偏好、关键词检索、软失效、历史归档，以及带预览、备份与回滚的 JSON 迁移。'

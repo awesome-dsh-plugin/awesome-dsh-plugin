@@ -1,0 +1,6 @@
+url: https://github.com/Hjdd14/dsh-toolong-warning
+name: Hjdd14/dsh-toolong-warning
+category: session
+description:
+  en: Counts completed compactions per session in a floating window and warns only after repeated compactions plus extra token spend or high context occupancy, with all three thresholds adjustable in Settings.
+  zh: 统计每段对话成功完成的压缩次数并常驻悬浮窗，只有反复压缩过、且此后又烧掉大量 token 或上下文占用过高时才提醒；三个阈值都可在设置页调整。

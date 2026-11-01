@@ -1,0 +1,6 @@
+url: https://github.com/wojiao42/dsh-token-cost
+name: wojiao42/dsh-token-cost
+category: usage
+description:
+  en: 'Live token usage and estimated cost in the sidebar: the current task plus every session combined, an as-of clock for those totals, per-session time detail (elapsed, turns/steps, first-token, model vs tool time, decode speed), and a per-turn breakdown with each turn cost on hover.'
+  zh: 侧栏里实时显示 token 用量与估算费用：当前任务与全部会话合计、这份账目的截至时刻、逐会话时间明细（运行时长/轮步/首token/模型与工具耗时/解码速度），鼠标悬停某个对话还能看到逐轮用量与每轮费用。

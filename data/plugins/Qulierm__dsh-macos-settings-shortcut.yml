@@ -1,0 +1,6 @@
+url: https://github.com/Qulierm/dsh-macos-settings-shortcut
+name: Qulierm/dsh-macos-settings-shortcut
+category: ui
+description:
+  en: Restores Cmd+, to open the existing Settings dialog in DeepSeek Harness on macOS.
+  zh: 为 macOS 上的 DeepSeek Harness 恢复 Cmd+, 设置快捷键。

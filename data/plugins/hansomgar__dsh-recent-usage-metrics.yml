@@ -1,0 +1,6 @@
+url: https://github.com/hansomgar/dsh-recent-usage-metrics
+name: hansomgar/dsh-recent-usage-metrics
+category: usage
+description:
+  en: 'Adds a Geek level to the Performance & usage setting: a live reading of the newest request in the composer status row (first-token latency, generation speed, output tokens, total time, amortised speed), and a drawer listing the last ten requests with an average row. Output tokens come from the provider usage; a calibrated character estimate is used only when usage is absent.'
+  zh: '在「性能与用量」设置里增加极客档：输入区状态行实时显示最新一次请求的首字延迟、生成速度、输出 Token、总用时与折算速度，并可展开抽屉查看最近 10 次请求及一行平均值。输出 Token 取自上游返回的 usage，仅当 usage 缺失时才使用按内容类型标定的字符估算。'

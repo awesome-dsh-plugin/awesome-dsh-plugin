@@ -1,0 +1,6 @@
+url: https://github.com/bingbinggod369/dsh-skill-ballistic-simulation
+name: bingbinggod369/dsh-skill-ballistic-simulation
+category: skill
+description:
+  en: Interior and exterior ballistics paper reproduction and code generation skill. Requires LibreOffice Kit for PDF rendering and a vision API key (e.g. Qwen-VL) for formula OCR.
+  zh: 内/外弹道学的论文复现与代码编写 skill。前置：LibreOffice Kit（PDF 渲染）+ 视觉 API key（如千问，公式 OCR）。

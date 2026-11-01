@@ -1,0 +1,6 @@
+url: https://github.com/jessicacui99/dsh-plugin-token-cost
+name: jessicacui99/dsh-plugin-token-cost
+category: usage
+description:
+  en: Live token spend for the current DSH session beside the composer, pricing the four server-reported token buckets with the profile's own table and showing both the peak and off-peak rate.
+  zh: 在输入框旁实时显示当前会话的 token 花费：用服务端上报的四个 token 分桶乘以本 profile 的价格表，并同时列出高峰与空闲价格。

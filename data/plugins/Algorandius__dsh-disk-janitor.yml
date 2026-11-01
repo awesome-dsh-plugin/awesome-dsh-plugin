@@ -1,0 +1,7 @@
+url: https://github.com/Algorandius/dsh-disk-janitor
+name: Algorandius/dsh-disk-janitor
+category: tools
+description:
+  en: Disk Janitor for DeepSeek Harness — measures DSH disk usage and clears only regenerable caches, from a settings panel or an agent tool.
+  zh: DSH 磁盘清理插件：统计磁盘占用，一键清理可再生的缓存（Bash 运行时副本、预览缓存、界面缓存等），支持设置面板与 Agent 工具。
+icon: https://raw.githubusercontent.com/Algorandius/dsh-disk-janitor/main/assets/icon-180.png

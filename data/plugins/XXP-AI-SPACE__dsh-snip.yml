@@ -1,0 +1,6 @@
+url: https://github.com/XXP-AI-SPACE/dsh-snip
+name: XXP-AI-SPACE/dsh-snip
+category: ui
+description:
+  en: 'Snipaste-style screenshot for DeepSeek Harness: press F1 (a real Windows global hotkey) to freeze and dim the whole screen, drag a region, then draw red boxes and click-to-type text annotations with wheel-resizable font; the annotated PNG drops into the composer at native resolution. Esc exits. Windows 10/11.'
+  zh: 'Snipaste 式截图标注：F1 全局热键把整块屏幕定格压暗，鼠标框选后用红色方框与文字标注（点位置输入、滚轮调字号），确认后按原分辨率把标注图放进输入框；Esc 退出。仅 Windows 10/11。'

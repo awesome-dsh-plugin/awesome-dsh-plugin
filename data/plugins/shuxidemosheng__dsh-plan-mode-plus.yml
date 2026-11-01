@@ -1,0 +1,6 @@
+url: https://github.com/shuxidemosheng/dsh-plan-mode-plus
+name: shuxidemosheng/dsh-plan-mode-plus
+category: tools
+description:
+  en: 'ZCode-style enhancement of dsh plan mode: a model-initiated enter_plan_mode tool, hard interception of write-class tools at dispatch time (ctx.tools.guard) while planning, and a four-phase planning prompt section (explore, design, review, exit), reusing the official plan/mode state machine and exit review flow.'
+  zh: 'dsh 计划模式的 ZCode 式增强：模型可主动调用 enter_plan_mode 进入计划模式，计划期间写类工具在分发前被硬拦截，并注入「探索 → 设计 → 评审 → 退出」四阶段工作流提示词；复用官方 plan/mode 状态机与退出评审流，只做增量。'

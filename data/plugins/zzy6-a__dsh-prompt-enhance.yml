@@ -1,0 +1,7 @@
+url: https://github.com/zzy6-a/dsh-prompt-enhance
+name: zzy6-a/dsh-prompt-enhance
+category: ui
+description:
+  en: 'Adds a sparkle button left of the model selector in the composer: it rewrites the draft into a clearer, more complete task brief, replaces it in place with one-click undo, offers five rewrite styles, and greys out while the draft carries file/command chips.'
+  zh: '在输入框的模型选择器左侧加一个星标按钮：把草稿改写成目标明确、细节完整的任务说明并就地替换，可一键撤销；提供五种改写风格，草稿含文件引用 / 命令芯片时自动置灰。'
+tarball: https://github.com/zzy6-a/dsh-prompt-enhance/releases/download/v0.1.0/dsh-prompt-enhance-0.1.0.tgz

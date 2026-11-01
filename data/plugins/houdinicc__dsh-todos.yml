@@ -1,0 +1,6 @@
+url: https://github.com/houdinicc/dsh-todos
+name: houdinicc/dsh-todos
+category: ui
+description:
+  en: Todoist-style todo management in the sidebar with projects, labels and priorities, CJK-aware natural-language quick-add, repeat rules, a stats dashboard, import and export, seven agent tools and due-time reminders.
+  zh: 侧边栏里的类 Todoist 待办管理：项目/标签/优先级、中英双语自然语言快速添加、重复规则、统计仪表盘、导入导出、七个 Agent 工具与到期提醒。

@@ -1,0 +1,6 @@
+url: https://github.com/Zai-G/dsh-preset-workshop
+name: Zai-G/dsh-preset-workshop
+category: ui
+description:
+  en: 'Preset workbench for editing per-agent personas, system prompt sections and tool descriptions, selecting tools and skills, previewing request context, and importing or exporting JSON/YAML configurations.'
+  zh: '预设工作台：逐方案编辑人设、系统提示词段和工具描述，选择工具与技能，预览请求组成，并通过 JSON / YAML 导入导出配置。'

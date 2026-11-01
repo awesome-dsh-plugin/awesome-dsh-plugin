@@ -1,0 +1,6 @@
+url: https://github.com/alextangson/dsh-dispatch/tree/main/packages/plugin
+name: alextangson/dsh-dispatch#plugin
+category: remote
+description:
+  en: "Phone-side command center rather than a web-UI mirror: dispatch tasks into isolated git worktrees from a PWA, tool-approval push notifications with phone/desktop first-answer-wins racing (never auto-approved), a multi-machine session board, and an end-to-end encrypted zero-knowledge relay you can self-host."
+  zh: "面向手机的指挥台而非 Web UI 镜像：从 PWA 把任务派发进隔离的 git worktree，工具审批推送通知支持手机/桌面「谁先答谁算」（绝不自动批准），多机会话看板，以及可自建的端到端加密零知识中继。"

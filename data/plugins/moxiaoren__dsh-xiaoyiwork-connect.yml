@@ -1,0 +1,6 @@
+url: https://github.com/moxiaoren/dsh-xiaoyiwork-connect
+name: moxiaoren/dsh-xiaoyiwork-connect
+category: model
+description:
+  en: Reuses the local model proxy of a logged-in XiaoyiWork desktop app (Windows only) so its models appear in DeepSeek Harness without a separate API key.
+  zh: 复用已登录的小艺Work 桌面端本地模型代理（仅限 Windows），其模型直接出现在 DeepSeek Harness 中，无需单独 API Key。

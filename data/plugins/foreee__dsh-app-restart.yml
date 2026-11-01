@@ -1,0 +1,6 @@
+url: https://github.com/foreee/dsh-app-restart
+name: foreee/dsh-app-restart
+category: ui
+description:
+  en: Adds a Restart application section to the desktop app Settings; quits gracefully and relaunches the whole application.
+  zh: 在桌面应用设置中新增「应用重启」区块，优雅退出并自动重启整个应用。

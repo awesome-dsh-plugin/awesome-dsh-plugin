@@ -1,0 +1,6 @@
+url: https://github.com/menotbobbybrown/dsh-plugin-browser
+name: menotbobbybrown/dsh-plugin-browser
+category: browser
+description:
+  en: 'Native headless and visible Chromium browser automation agent for DeepSeek Harness with DOM tree extraction, screenshot capture, and built-in SSRF protection.'
+  zh: 'DeepSeek Harness 原生无头及可视化 Chromium 浏览器自动化插件：支持 DOM 树提取、网页截图捕获及内置 SSRF 安全防护。'

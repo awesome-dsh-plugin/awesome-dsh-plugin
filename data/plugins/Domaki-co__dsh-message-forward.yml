@@ -1,0 +1,6 @@
+url: https://github.com/Domaki-co/dsh-message-forward
+name: Domaki-co/dsh-message-forward
+category: session
+description:
+  en: 'Cross-session message forwarding between DSH sessions: extract one model reply, a user message, or a multi-selected batch of messages and images from one session and deliver it into another, with silent send, draft fill, or send-and-jump delivery, plus prompt templates.'
+  zh: 'DSH 会话间消息转发：把单条模型回复、用户消息或多选合并的消息与图片从上游会话提取出来投递到另一个会话，支持静默发送、填入草稿、发送并跳转三种投递方式，并可套用提示词模板。'

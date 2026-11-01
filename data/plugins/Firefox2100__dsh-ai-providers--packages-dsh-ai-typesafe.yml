@@ -1,0 +1,6 @@
+url: https://github.com/Firefox2100/dsh-ai-providers/tree/main/packages/dsh-ai-typesafe
+name: Firefox2100/dsh-ai-providers#typesafe
+category: model
+description:
+  en: TypeSafe AI Jev decision provider for typed probabilistic choices and scores in DSH. Requires Firefox2100/dsh-ai-providers#runtime to be installed and enabled.
+  zh: 为 DSH 提供 TypeSafe AI Jev 决策能力，用于带类型的概率选择和评分。需要安装并启用 Firefox2100/dsh-ai-providers#runtime。

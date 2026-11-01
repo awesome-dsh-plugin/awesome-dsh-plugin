@@ -1,0 +1,6 @@
+url: https://github.com/MuzeWinter/dscomputer-control
+name: MuzeWinter/dscomputer-control
+category: tools
+description:
+  en: 'Windows desktop automation for dsh: 14 tools that enumerate apps and windows, capture window screenshots that still work when the window is covered by other windows, read the accessibility tree, and perform real input — click, type text (CJK included), press key combinations, scroll and drag. Loads the official computer-use runtime (@oai/sky) already installed on the machine, discovering it by enumerating vendor directories, so vendor upgrades that change hash directories do not break it.'
+  zh: '为 dsh 提供 Windows 桌面自动化：14 个工具，可枚举应用与窗口、抓取被遮挡也能截的窗口截图、读取无障碍树，并执行真实输入——点击、输入文字（含中文）、按组合键、滚动与拖拽。加载机器上已安装的官方电脑控制运行时（@oai/sky），按厂商目录枚举发现，引擎升级换目录也不会失效。'

@@ -1,0 +1,6 @@
+url: https://github.com/mengwEX/dsh-block-ptc
+name: mengwEX/dsh-block-ptc
+category: session
+description:
+  en: Model-directed context compaction for PTC mode, grouping program runs into blocks and replacing completed block messages with model-written summaries.
+  zh: 为 PTC 模式提供模型自主收口的动态上下文压缩，将程序执行归入区块，并用模型撰写的摘要替换已完成区块的消息。

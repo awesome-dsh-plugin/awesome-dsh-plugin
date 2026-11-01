@@ -1,0 +1,6 @@
+url: https://github.com/Awoodwhale/dsh-agent-persona
+name: Awoodwhale/dsh-agent-persona
+category: identity
+description:
+  en: Scopes system-prompt personas by workspace path or session id (exact, prefix, contains, regex), with an optional default persona for sessions nothing claimed, a 人设 tab on the conversation showing the prompt actually sent, import and export of the list, and a switch that refuses tool writes to the persona store.
+  zh: 按工作区路径或会话 ID 分发 system prompt 人设（完全一致 / 前缀 / 包含 / 正则），可指定一条默认人设兜底；会话页有「人设」页签，能看到实际发出去的提示词；人设列表可导入导出；另有一个开关拒绝工具写入人设存储。

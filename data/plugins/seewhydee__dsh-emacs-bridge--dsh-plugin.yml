@@ -1,0 +1,6 @@
+url: https://github.com/seewhydee/dsh-emacs-bridge/tree/main/dsh-plugin
+name: seewhydee/dsh-emacs-bridge#dsh-plugin
+category: notify
+description:
+  en: 'Two-way bridge between GNU Emacs and a running DeepSeek Harness session over loopback HTTP + SSE: submit prompts, stream replies, manage sessions and workspaces, and answer ask-user/approval prompts from Emacs, with a Plugins-page card that installs the Emacs package.'
+  zh: GNU Emacs 与正在运行的 DSH 会话之间的双向桥：走本机回环 HTTP + SSE，可在 Emacs 里提交提示、流式收回复、管理会话与工作区、回答 ask-user / 审批提示；插件页还有一张卡片用来安装 Emacs 那边的包。

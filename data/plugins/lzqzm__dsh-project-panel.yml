@@ -1,0 +1,6 @@
+url: https://github.com/lzqzm/dsh-project-panel
+name: lzqzm/dsh-project-panel
+category: dev
+description:
+  en: 'Low-code project workspace for the DSH web UI. A multi-level file tree with a push-status ledger, in-panel source view and edit, pre-push static checks, and a scaffold for an empty workspace. Requires the MagicalCoder platform and a server profile (address + designer account) for push/pull.'
+  zh: '把低代码工程目录搬进 DSH Web 侧栏：多级文件树与推送状态账本、面板内源码查看与编辑、推送前静态校验，以及空白工作区一键铺脚手架。推送/拉取需 MagicalCoder 平台与服务器配置（地址 + 设计师账号）。'

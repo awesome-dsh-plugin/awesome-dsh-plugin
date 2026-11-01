@@ -1,0 +1,9 @@
+# dsh-approval-preflight — graph-first permission preflight for DSH.
+# One entry file per plugin; generated READMEs are not touched.
+url: https://github.com/Making-acid/dsh-approval-preflight
+name: Making-acid/dsh-approval-preflight
+category: workflow
+description:
+  en: Graph-first permission preflight for DSH. The model declares a computation graph whose nodes state the semantic operation (download what to where, write what, delete what); the user approves nodes one at a time in a side panel, one approval covers one successful execution, and each node keeps an audit trail of what actually ran. Uncovered operations still ask through the native approval card, and a node blocked by an unanswered permission is suspended so work that does not depend on it can continue.
+  zh: 先交计算图、逐节点批准的权限预检：节点写清这件事的本质（下载什么到哪里、写什么、删什么），用户按节点批准，一次批准只对一次成功执行生效；未申报的操作仍走原生审批卡；节点被未答复的审批卡住时会自动挂起，先做不依赖它的工作；节点内实际跑过什么留有审计痕迹。
+icon: https://raw.githubusercontent.com/Making-acid/dsh-approval-preflight/main/assets/icon-180.png

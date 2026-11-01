@@ -1,0 +1,6 @@
+url: https://github.com/adwhispr/dsh-plugin-adwhispr
+name: adwhispr/dsh-plugin-adwhispr
+category: tools
+description:
+  en: Connects DeepSeek Harness to the AdWhispr remote MCP server through mcp-remote with browser OAuth sign-in, adding tools for competitor ad research, ad creative cloning, and launching and managing Meta, Google and TikTok campaigns. Requires an AdWhispr account.
+  zh: 通过 mcp-remote 加浏览器 OAuth 登录，把 DeepSeek Harness 接到 AdWhispr 的远程 MCP 服务：竞品广告调研、广告创意克隆，以及 Meta／Google／TikTok 广告的投放与管理。需要 AdWhispr 账号。

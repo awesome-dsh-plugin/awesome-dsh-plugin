@@ -1,0 +1,6 @@
+url: https://github.com/kyanray-dev/dsh-markdown-input
+name: kyanray-dev/dsh-markdown-input
+category: ui
+description:
+  en: Markdown input for the composer that keeps the typed Markdown as the sent text while drawing bullets and checkboxes, styling bold, italic, inline code, strikethrough, headings, quotes and fenced code blocks, continuing lists on Shift+Enter, and wrapping selections with Cmd/Ctrl+B, I and E.
+  zh: 输入框 Markdown 书写辅助：发送内容保持原始 Markdown，同时把列表显示为圆点和复选框，实时呈现粗体、斜体、行内代码、删除线、标题、引用与代码块，Shift+Enter 自动续写列表，选中文字可用 Cmd/Ctrl+B、I、E 加格式。

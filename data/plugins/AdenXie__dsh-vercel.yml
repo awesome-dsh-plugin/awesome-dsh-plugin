@@ -1,0 +1,6 @@
+url: https://github.com/AdenXie/dsh-vercel
+name: AdenXie/dsh-vercel
+category: tools
+description:
+  en: Connects DeepSeek Harness to the official Vercel MCP server over OAuth, with per-Agent on-demand tool loading, slimmed tool schemas, paged long results and 34 bundled Vercel skills.
+  zh: 通过 OAuth 把 DeepSeek Harness 连接到 Vercel 官方 MCP 服务，支持按 Agent 按需加载工具、精简工具 schema、长结果分页，并附带 34 个 Vercel 技能。

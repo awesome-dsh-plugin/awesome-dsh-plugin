@@ -1,0 +1,6 @@
+url: https://github.com/X-Xyy/dsh-auto-email
+name: X-Xyy/dsh-auto-email
+category: notify
+description:
+  en: 'Daily AI digest by email: fetches ten sources (OpenAI, Anthropic, Google DeepMind, Hugging Face, arXiv, Hacker News and others), clusters near-duplicate stories, scores them in code and with an LLM, then emails the top three on a daily schedule with a four-part reading (facts, why it matters, impact, open questions). Adds four conversation tools and a sidebar panel for previewing the digest, sending it now and changing the schedule.'
+  zh: '每日 AI 三报：抓取 10 个信源（OpenAI、Anthropic、Google DeepMind、Hugging Face、arXiv、Hacker News 等），语义聚类去重，程序打分加 LLM 打分，每天定时把选出的三条发到邮箱，并附「事实／为什么重要／影响／存疑」四段解读；另提供 4 个对话工具与侧边栏面板，用于预览、立即发送和改配置。'

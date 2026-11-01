@@ -1,0 +1,6 @@
+url: https://github.com/liggest/dsh-alt-enter-newline
+name: liggest/dsh-alt-enter-newline
+category: ui
+description:
+ en: Adds Alt+Enter as a newline to the DeepSeek Harness (dsh) web composer.
+ zh: 给 dsh 的网页输入框加上 Alt+Enter 换行。

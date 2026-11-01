@@ -1,0 +1,6 @@
+url: https://github.com/luoshuizhiwei/dsh-desktop-restart
+name: luoshuizhiwei/dsh-desktop-restart
+category: ui
+description:
+  en: 'Adds a restart button to the DeepSeek Harness desktop app — it asks before restarting while work is running, and afterwards reports how long the app was down. Entries can live in the sidebar, the conversation header, the account menu or the settings page, and each one can be turned off. Extras include checking how much sign-in data is stored (a cause of startup failures) and previewing leftover temp files, counted but never deleted. Desktop app only.'
+  zh: '在桌面版加一个「重启」按钮：有任务在跑时先问过你，重启后告诉你停机了多久。入口可放在侧栏、会话标题栏、账号菜单或设置页，不想要的能逐个关掉。附带功能：检查登录数据占用（避免应用启动失败）、预览遗留临时文件（只统计不删除）、隐藏账号菜单里的「意见反馈」。仅适用于桌面版。'

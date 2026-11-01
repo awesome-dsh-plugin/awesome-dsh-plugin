@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-defender
+name: 173787247/dsh-wsl-defender
+category: wsl
+description:
+  en: "Windows security posture from WSL: Defender real-time state and signature age, recent detections, exclusions, and firewall profiles."
+  zh: "Windows 安全态势：Defender 实时状态与特征库年龄、近期检出、排除项与防火墙配置。"

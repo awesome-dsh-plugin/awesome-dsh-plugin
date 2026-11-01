@@ -1,0 +1,6 @@
+url: https://github.com/hmtxj/dsh-model-modality
+name: hmtxj/dsh-model-modality
+category: model
+description:
+  en: "Per-model input type and thinking level declarations on the 模型 settings page — 输入类型 checkboxes on every provider card, and a 思考等级 field in the provider 编辑 dialog. Writes the official pi-ai input and reasoningEfforts fields."
+  zh: "在「模型」设置页面按模型声明输入类型与思考等级——每个渠道卡片上的「输入类型」勾选框，以及渠道「编辑」对话框里的「思考等级」。写入 pi-ai 官方的 input 与 reasoningEfforts 字段。"

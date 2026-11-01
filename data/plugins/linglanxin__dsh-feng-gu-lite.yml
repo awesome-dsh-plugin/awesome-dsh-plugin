@@ -1,0 +1,7 @@
+url: https://github.com/linglanxin/dsh-feng-gu-lite
+name: linglanxin/dsh-feng-gu-lite
+category: ui
+tarball: https://github.com/linglanxin/dsh-feng-gu-lite/releases/download/v0.1.0/dsh-feng-gu-lite-0.1.0.tgz
+description:
+  en: 'Offline Beijing-time peak/idle indicator below the conversation composer, with a 2026 calendar, uncertainty labels, and brief peak reminders; no API key or runtime network access required.'
+  zh: '会话输入框下方的离线北京时间峰谷指示器，内置 2026 年日历、待确认状态和短暂高峰提醒，运行时无需密钥或联网。'

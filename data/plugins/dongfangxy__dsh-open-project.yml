@@ -1,0 +1,6 @@
+url: https://github.com/dongfangxy/dsh-open-project
+name: dongfangxy/dsh-open-project
+category: ui
+description:
+  en: 'Adds a Windows Explorer folder context-menu entry that registers the folder as a DSH project, with a switch for the menu entry in Settings → General. Windows only, and nothing extra has to be installed.'
+  zh: '在 Windows 资源管理器文件夹右键菜单中加入「用 DeepSeek Harness 打开」，点击后把该文件夹登记为 DSH 项目；设置 → 通用 里有一个开关用于添加或移除该菜单项。仅支持 Windows，无需额外安装任何组件。'

@@ -1,0 +1,7 @@
+url: https://github.com/Yhx888/dsh-free-egg-credits
+name: Yhx888/dsh-free-egg-credits
+category: usage
+description:
+  en: 'Free Egg credits panel for the DSH sidebar: WorkBuddy / Qoder account balances, daily budget, check-in state and per-turn spend (WorkBuddy credits priced per input / cache / output token type where rates are known), with one-click switching of the platform whose credits are spent first when new-api is configured. Requires a local WorkBuddy2API or Qoder gateway.'
+  zh: '在 DSH 侧边栏看 WorkBuddy / Qoder 账号积分、今日额度、签到状态与每轮消耗（WorkBuddy 已知单价时按输入 / 缓存 / 输出分类型折算）；配置 new-api 后可一键切换优先消耗平台。需本机运行 WorkBuddy2API 或 Qoder 网关。'
+icon: https://raw.githubusercontent.com/Yhx888/dsh-free-egg-credits/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/2026heshao/dsh-armory
+name: 2026heshao/dsh-armory
+category: tools
+description:
+  en: 'Unified MCP, skill and expert management board for DeepSeek Harness: connection status, tool schemas, enable/disable and reconnect for MCP servers across global and per-project scopes, enable/disable of SKILL.md skills, attach/switch/detach WorkBuddy expert personas in any conversation at any time (429 experts) with no mid-session preset lock, a tool tailor that scans local session logs for per-tool call counts, error rates and context-token cost with one-click disabling, and three install markets (SkillHub 190k+ skills, WorkBuddy connectors, 47 verified built-in services).'
+  zh: 'Skill + MCP + 专家统一看板：MCP 服务器连接状态、工具 Schema、启停与重连（全局与项目双作用域）、SKILL.md 技能启停、WorkBuddy 专家人设可在任意会话随时挂上 / 更换 / 取消（429 位，不受「会话已开始就不能换」的限制）、工具裁缝（扫描本机会话日志统计每个工具的调用次数、错误率与上下文 token 税，死工具一键禁用），以及三大安装市场（SkillHub 19 万+ 技能、WorkBuddy 连接器、47 个一手核实的内置服务）。'

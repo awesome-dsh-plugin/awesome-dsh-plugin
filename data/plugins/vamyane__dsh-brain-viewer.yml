@@ -1,0 +1,6 @@
+url: https://github.com/vamyane/dsh-brain-viewer
+name: vamyane/dsh-brain-viewer
+category: ui
+description:
+  en: Brain-shaped relationship graph viewer for DeepSeek Harness with a Markdown knowledge-base pipeline that imports documents and builds the graph. The viewer ships demo data and needs no Python; rebuilding the graph from your own notes needs Node.js 20+ and Python 3.8+ and runs from the command line.
+  zh: 把 Markdown 笔记编译成脑形关系图谱的 DSH 侧栏查看器，附带文档导入与图谱构建管线。查看器自带演示数据、无需 Python；用自己的笔记重建图谱需要 Node.js 20+ 与 Python 3.8+，在命令行里运行。

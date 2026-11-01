@@ -1,0 +1,7 @@
+url: https://github.com/YangShen-SWE/dsh-plugin-simple-pet
+name: YangShen-SWE/dsh-plugin-simple-pet
+category: model
+description:
+  en: Windows anime companion for DeepSeek balances and Codex quotas, with integrated Codex multi-account OAuth, per-account quota and model management, compact mode and autosaving settings. Optional panel account cycling and separately authorized daily warm-up; multi-account startup/5h-full triggers remain unavailable.
+  zh: Windows 二次元桌宠：查看 DeepSeek 余额与 Codex 额度，内置 Codex 多账号 OAuth 管理、逐账号额度与模型接入，支持简洁模式和设置自动保存。可选面板一键切号及逐账号授权的每日预热；多账号启动/5h满额触发暂不可用。
+tarball: https://github.com/YangShen-SWE/dsh-plugin-simple-pet/releases/latest/download/dsh-plugin-simple-pet.tgz

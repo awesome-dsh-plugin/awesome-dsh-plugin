@@ -1,0 +1,6 @@
+url: https://github.com/aujurd22/dsh-flymemory
+name: aujurd22/dsh-flymemory
+category: memory
+description:
+  en: 'Structural long-term memory for DSH: supersede, decay and entity-state tracking across 15 MCP tools, automatic recall and capture hooks, and a bounded pointer index published per request instead of filling the window. Requires Python 3.10+ with torch and sentence-transformers; the first run downloads a ~470 MB embedding model.'
+  zh: '面向 DSH 的结构化长期记忆：15 个 MCP 工具支持取代、衰减与实体状态跟踪，带自动召回与捕获钩子，并按请求发布有界指针索引，而不是等上下文塞满再压缩。需要带 torch 与 sentence-transformers 的 Python 3.10+；首次运行会下载约 470 MB 的嵌入模型。'

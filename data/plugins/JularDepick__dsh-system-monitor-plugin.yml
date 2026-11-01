@@ -1,0 +1,7 @@
+url: https://github.com/JularDepick/dsh-system-monitor-plugin
+name: JularDepick/dsh-system-monitor-plugin
+category: tools
+description:
+  en: 'A plugin for dsh: monitor the resource utilization of dsh system processes, and report the results to the user in the form of charts.'
+  zh: '监控dsh进程及其派生子进程的资源占用,并以面板图表报告整机与各会话的CPU与内存占用'
+tarball: https://github.com/JularDepick/dsh-system-monitor-plugin/releases/latest/download/dsh-system-monitor-plugin-latest.tgz

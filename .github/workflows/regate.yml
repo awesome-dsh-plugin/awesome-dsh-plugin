@@ -201,7 +201,9 @@ jobs:
               // without looking at what tree it ran on.
               const checkRanAt = Date.parse(check?.completed_at ?? '')
               const checkStale = checkChangedAt && (!checkRanAt || checkRanAt < checkChangedAt)
-              if (check && check.conclusion !== 'success' && !checkStale) continue
+              const checkRedFresh = check && check.conclusion !== 'success' && !checkStale
+              // The veto itself is applied further down, AFTER the reasons are
+              // computed — see the paragraph above `if (checkRedFresh ...)`.
 
               // Three reasons to re-run, and only three.
               const ranAt = Date.parse(gate?.completed_at ?? '')
@@ -231,6 +233,22 @@ jobs:
                 //    and `passStale` only matches `success`, so a neutral sits
                 //    unverified until the author happens to push again.
               const unverified = gate?.conclusion === 'neutral'
+                // 3c. The gate FAULTED: it reported `failure` titled "The gate could
+                //    not run". pr-gate posts that from two places — resolving the
+                //    PR failed (typically the installation hitting its API rate
+                //    limit), or check-submission.mjs exited without a result — and
+                //    both summaries say the same thing: a fault in the gate, not in
+                //    the submission, re-run the workflow. Nothing here ever did.
+                //    It matched no reason: not `never` (a verdict exists), not
+                //    `unverified` (failure, not neutral), not `aged` (no "days old"
+                //    in the summary). #5083 faulted on a rate limit on 2026-09-14
+                //    and was still sitting on that verdict nine days later, with
+                //    zero comments, its author told the problem was ours. One hour
+                //    of cooldown so a pass that lands inside an ongoing rate limit
+                //    does not re-run straight back into it.
+              const faulted = gate?.conclusion === 'failure'
+                && gate.output?.title === 'The gate could not run'
+                && (!ranAt || Date.now() - ranAt >= 3600 * 1000)
 
               // 4. It PASSED, but long enough ago that the verdict is a claim
               //    about a repository as it stood then. Reasons 1-3 all assume
@@ -252,8 +270,36 @@ jobs:
               //    merge, and no one else is going to clear it.
               const checkStaleRed = check && check.conclusion !== 'success' && checkStale
 
+              // A fresh red `check` vetoes the re-run — except when the GATE is
+              // the thing blocking. The stale-evidence exemption above handled
+              // a red that predates the check's code; this handles a red that is
+              // current but irrelevant, and it was a deadlock too. #5533: gate
+              // red at "0.0 days old" on 2026-09-20, `check` red on the same run
+              // from the stale-fork guard misfiring ("this PR deletes N entry
+              // files" — its base simply predated entries merged since). The
+              // repository was over two days old by 2026-09-23 and would have
+              // passed; regate ran nine times in between and skipped it every time,
+              // because the veto sat above reason 3 and reason 3 was never
+              // evaluated. Time, the one thing that fixes an age failure, could
+              // not reach it. The paragraph above the old veto already said the
+              // re-run is worth spending because the gate re-evaluates against
+              // current data regardless of what tree `check` ran on — the code
+              // just didn't do what the comment said.
+              //
+              // So `aged`, `unverified` and `faulted` (3, 3b, 3c) are exempt: all
+              // three mean the gate itself needs re-asking, and neither depends on the tree `check`
+              // checked out. `aged` keeps its 24h cooldown, so the exemption
+              // cannot hammer. `never` stays under the veto: it has no cooldown,
+              // and a PR with a red check and no gate verdict is the one case
+              // where "the gate posts regardless" is the thing in doubt.
+              // `revalidate` and `speculative` stay under it as before — those
+              // re-ask a gate that is already answering, and a red check is a
+              // reason to spend the pass elsewhere.
+              if (checkRedFresh && !aged && !unverified && !faulted) continue
+
               if (never) blocking.push([pr, runId, 'never gated'])
               else if (unverified) blocking.push([pr, runId, 'gate failed open (neutral) — never verified'])
+              else if (faulted) blocking.push([pr, runId, 'gate faulted (could not run)'])
               else if (aged) blocking.push([pr, runId, 'aged in'])
               else if (checkStaleRed) blocking.push([pr, runId, 'check failed before the current check code'])
               else if (stale) revalidate.push([pr, runId, 'verdict predates the current gate'])
@@ -265,6 +311,26 @@ jobs:
             // exists, then re-checking greens — both oldest verdict first.
             revalidate.sort((a, b) => a[0].number - b[0].number)
             speculative.sort((a, b) => a[0].number - b[0].number)
+            // GitHub refuses to re-run a workflow run created more than a month
+            // ago, and it says so with HTTP 403 — the same status as a rate
+            // limit. This loop used to read every 403 as "rate limited" and stop
+            // the pass. #932's run (created 2026-08-19) crossed 30 days on
+            // 2026-09-18; from then on it sat at the head of the oldest-first
+            // speculative tier, and every pass died on it. Measured across the
+            // eight passes to 2026-09-23: seven ended on #932. The blocking and
+            // revalidate tiers run first, so no blocked PR was cut off — but the
+            // stale-pass tier, the one check that catches a green that went bad
+            // after it was issued (a repo deleted, a force-push below the commit
+            // floor — #1022), processed nothing for five days. 28 open PRs had
+            // runs past the limit that day.
+            //
+            // Such a run can never be re-run, by anyone. A new event is the only
+            // way to get a fresh check: an author push, or a maintainer merging
+            // locally. So skip it, name it, and keep going. And log the message
+            // on every other 403 too — the 06:45 pass on 2026-09-22 stopped on a
+            // 403 for a PR opened that morning, which was not this, and the old
+            // code had thrown away the one line that would have said what it was.
+            const tooOld = []
             for (const [pr, runId, why] of [...blocking, ...revalidate, ...speculative]) {
               if (requeued >= MAX) { core.info(`hit MAX_RERUNS=${MAX}, stopping`); break }
               core.info(`#${pr.number}: ${why}`)
@@ -273,11 +339,29 @@ jobs:
                 core.info(`#${pr.number}: re-ran PR check`)
                 requeued++
               } catch (e) {
-                if (e.status === 403) { core.warning('rate limited — stopping early'); break }
-                core.info(`#${pr.number}: could not re-run (${e.status})`)
+                const msg = String(e.message ?? '').split('\n')[0]
+                if (e.status === 403 && /over a month ago/i.test(msg)) {
+                  tooOld.push(pr.number)
+                  core.info(`#${pr.number}: run is over a month old — GitHub will not re-run it; needs a new push or a local merge`)
+                  continue
+                }
+                // Stop only on an actual rate limit. A 403 is not one by itself:
+                // the first dispatched pass after this logging went in stopped on
+                // "403: This workflow is already running" for #5582 — its author
+                // had just pushed. Enumerating harmless 403s one at a time is how
+                // this loop got here (too-old, then already-running); GitHub's
+                // rate-limit responses, primary and secondary, both say "rate
+                // limit", so match that instead and let everything else fall
+                // through to skip-and-continue.
+                if (e.status === 429 || (e.status === 403 && /rate limit/i.test(msg))) {
+                  core.warning(`rate limited — stopping early (${e.status}: ${msg})`)
+                  break
+                }
+                core.info(`#${pr.number}: could not re-run (${e.status}: ${msg})`)
               }
             }
             core.info(`re-queued ${requeued} pull request(s) (${blocking.length} blocked, ${revalidate.length} to re-validate, ${speculative.length} stale-pass candidates)`)
+            if (tooOld.length) core.info(`${tooOld.length} pull request(s) have a check run too old to re-run: ${tooOld.map((n) => '#' + n).join(' ')}`)
 
             } catch (e) {
               if (e.status === 403 || e.status === 429) core.warning(`API quota busy — skipping this pass (${e.status})`)

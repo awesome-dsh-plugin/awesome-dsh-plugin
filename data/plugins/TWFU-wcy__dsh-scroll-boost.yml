@@ -1,0 +1,7 @@
+url: https://github.com/TWFU-wcy/dsh-scroll-boost
+name: TWFU-wcy/dsh-scroll-boost
+category: ui
+description:
+  en: 'Skips offscreen chat and trajectory rows so long sessions scroll smoothly; measured row heights keep the scrollbar steady, visible content unchanged.'
+  zh: '让视口外的聊天行与轨迹行不参与渲染，长会话滚动更稳；行高按实测保留，滚动条不跳，屏幕内画面不变。'
+tarball: https://github.com/TWFU-wcy/dsh-scroll-boost/releases/latest/download/dsh-scroll-boost.tgz

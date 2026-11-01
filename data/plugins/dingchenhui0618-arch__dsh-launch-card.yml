@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-launch-card
+name: dingchenhui0618-arch/dsh-launch-card
+category: docs
+description:
+  en: 'Generates release material from what a local repository can actually support: a hero image, a feature grid and bilingual copy rendered as SVG and HTML from `README.md`, `package.json` and optional screenshots. Facts are quoted from those files — name, version, license, summary, features, install snippet — and a field that is missing is left unrendered rather than filled with placeholder text. Every feature carries a source citation such as `README.md#L42`, and a claim the repository cannot substantiate is linted out before anything is written, with the reasoning left in `lint-report.json`. `manifest.json` records a sha256 for each input and output, and `--now` or `SOURCE_DATE_EPOCH` makes a run byte-identical. Also ships a GUI panel that regenerates from inside a session.'
+  zh: '从本地仓库真实支持的产物生成发布素材：hero 图、特性网格与中英双语文案，由 `README.md`、`package.json` 和可选截图渲染成 SVG 与 HTML。事实全部从这些文件引用——项目名、版本、license、一句话简介、特性列表、安装片段——缺失的字段直接不渲染，不补占位文案。每条特性带 `README.md#L42` 这样的来源标注；无法被本仓库证实的说法在写出之前就被 lint 掉，理由留在 `lint-report.json`。`manifest.json` 记录每个输入与输出文件的 sha256，`--now` 或 `SOURCE_DATE_EPOCH` 可让整次输出字节一致。另含一个可以在会话里重新生成的 GUI 面板。'

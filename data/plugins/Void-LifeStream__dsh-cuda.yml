@@ -1,0 +1,6 @@
+url: https://github.com/Void-LifeStream/dsh-cuda
+name: Void-LifeStream/dsh-cuda
+category: tools
+description:
+  en: 'Run Python on the local NVIDIA CUDA GPU from DeepSeek Harness: device status, foreground and detached jobs, durable logs, and a measured peak-VRAM figure per run.'
+  zh: '在 DeepSeek Harness 里直接跑本地 NVIDIA CUDA GPU 的 Python 任务：设备状态、前台/后台作业、持久日志、每次运行实测的峰值显存。'

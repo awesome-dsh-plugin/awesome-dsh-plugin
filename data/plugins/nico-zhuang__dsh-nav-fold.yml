@@ -1,0 +1,7 @@
+url: https://github.com/nico-zhuang/dsh-nav-fold
+name: nico-zhuang/dsh-nav-fold
+category: ui
+description:
+  en: 'Collapses global sidebar navigation into an icon grid with inline name hints, animated transitions, and drag-to-reorder.'
+  zh: '将全局侧栏导航折叠为图标网格，提供即时名称提示、过渡动画和拖动排序。'
+tarball: https://github.com/nico-zhuang/dsh-nav-fold/releases/download/v0.4.2/dsh-nav-fold-0.4.2.tgz

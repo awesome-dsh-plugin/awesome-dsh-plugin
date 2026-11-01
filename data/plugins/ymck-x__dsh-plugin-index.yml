@@ -1,0 +1,6 @@
+url: https://github.com/ymck-x/dsh-plugin-index
+name: ymck-x/dsh-plugin-index
+category: market
+description:
+  en: Plugin index inside DSH that lists over 10,000 third-party plugins checked against the dsh.bundle manifest in their package.json rather than by star count, with one-click install and a companion website.
+  zh: DSH 内的插件索引，收录 1 万余个按 package.json 里的 dsh.bundle 声明校验过的第三方插件（不按星数判定），支持一键安装，另有配套网站。

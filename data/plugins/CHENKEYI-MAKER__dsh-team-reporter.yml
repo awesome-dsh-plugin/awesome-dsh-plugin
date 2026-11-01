@@ -1,0 +1,6 @@
+url: https://github.com/CHENKEYI-MAKER/dsh-team-reporter
+name: CHENKEYI-MAKER/dsh-team-reporter
+category: usage
+description:
+  en: Reports each machine's token usage to a team server you host, with one-time enrollment codes, an offline disk queue, and idempotent replay, so an administrator can see every member's usage and cost in one place.
+  zh: 把每台机器的 token 用量上报给你自己托管的团队服务器：一次性绑定码、离线落盘队列、幂等重放，管理员在一处看到全员用量与成本。

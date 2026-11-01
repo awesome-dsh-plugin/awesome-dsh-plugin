@@ -1,0 +1,6 @@
+url: https://github.com/sugarmaster666/dsh-persona-forge
+name: sugarmaster666/dsh-persona-forge
+category: identity
+description:
+  en: Rewrites your composer draft in the voice of a chosen character card before it is sent, using the model the current session is already on, with an optional review panel and a local check that reports any identifier or path the rewrite dropped.
+  zh: 发送前把输入框草稿按所选角色卡的口吻改写，用当前会话正在使用的模型；可先审查再发送，并有一项本地检查会点名改写过程中丢掉的技术记号。

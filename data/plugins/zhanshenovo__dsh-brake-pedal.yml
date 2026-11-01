@@ -1,0 +1,7 @@
+url: https://github.com/zhanshenovo/dsh-brake-pedal
+name: zhanshenovo/dsh-brake-pedal
+category: fun
+description:
+  en: 'An easter-egg brake-pedal self-test. A draggable pill in the DSH web UI runs six full-force braking stomps; the bracket snaps at a pseudo-random stomp between the second and the sixth, or the run passes entirely, and then a fictional notice appears. The pedal force is derived and labelled as such, while the session figures it derives from are read from the real session log. It never intercepts, delays or takes over the real stop action.'
+  zh: '一个制动踏板自检彩蛋。DSH 网页界面上有一颗可拖动的胶囊，做六脚全力制动测试：支架在第二到第六脚之间伪随机地断裂，也可能整轮通过，随后弹出一份虚构通报。踏板力由会话事实推导并在界面上标为推导值，而这些事实取自真实会话日志。它从不拦截、延迟或接管真实的停止动作。'
+tarball: https://github.com/zhanshenovo/dsh-brake-pedal/releases/latest/download/dsh-brake-pedal.tgz

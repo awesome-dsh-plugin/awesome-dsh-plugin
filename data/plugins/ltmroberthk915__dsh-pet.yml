@@ -1,0 +1,7 @@
+url: https://github.com/ltmroberthk915/dsh-pet
+name: ltmroberthk915/dsh-pet
+category: fun
+description:
+  en: 'A fork of zhu1090093659/dsh-pet (Apache-2.0), adding per-conversation companions with whale-girl, MIKU and business blue whale skins, model-themed colors, token-rate animation, completion reminders and shared feeding and affinity.'
+  zh: '基于 zhu1090093659/dsh-pet（Apache-2.0）改造，新增每个活跃会话一只桌宠，提供鲸鱼娘、MIKU 与商务小蓝鲸皮肤、模型配色、随生成速度跑动、完成待查看提醒、共享喂食与亲密度。'
+tarball: https://github.com/ltmroberthk915/dsh-pet/releases/latest/download/dsh-session-pet.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/1420079678-ctrl/agent-body/tree/main/workspace/plugins/dsh-zero-residence
+name: 1420079678-ctrl/agent-body#dsh-zero-residence
+category: session
+tarball: https://github.com/1420079678-ctrl/agent-body/releases/download/v0.1.1/dsh-external-dsh-zero-residence-0.1.0.tgz
+description:
+  en: 'Zero-residence context engine: large tool payloads are evicted out of the live context into a queryable store and only deterministic pointers are left behind, so per-turn prompt tokens stop growing with the transcript. Any masked content is reconstructed verbatim from the session log on demand, by tool-call id or session seq.'
+  zh: '零驻留上下文引擎：把体积大的工具输出从活跃上下文驱逐到可查询存储，只留下确定性指针，于是每轮的提示词 token 不再随对话长度增长。被遮蔽的内容可随时从会话日志逐字重建，按工具调用 id 或会话 seq 定位。'

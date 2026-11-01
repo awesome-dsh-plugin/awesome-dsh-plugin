@@ -1,0 +1,6 @@
+url: https://github.com/Phocinae/dsh-phocinae
+name: Phocinae/dsh-phocinae
+category: security
+description:
+  en: 'Local decision-layer plugin for DSH: a fail-closed command approval gate and ask/gate tools backed by a 144.3M on-device model. Needs a separate local decision service: `pip install phocinae-server`, then download the ~330 MB weights and keep the service running; without it the tool returns `PHOCINAE_SERVICE_UNAVAILABLE`.'
+  zh: 'DSH 本地决策层插件：失败关闭的命令审批门，以及由 144.3M 端侧模型支撑的 ask/gate 工具。需另装本地决策服务：`pip install phocinae-server` 后下载约 330MB 权重并常驻运行；服务不在时工具会返回 `PHOCINAE_SERVICE_UNAVAILABLE`。'

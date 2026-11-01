@@ -1,0 +1,6 @@
+url: https://github.com/Arlenman/dsh-backup-sync
+name: Arlenman/dsh-backup-sync
+category: dev
+description:
+  en: "Backup, restore and machine-migration for DSH: packs skills (which live outside ~/.dsh, in ~/.agents/skills), plugin manifests, core config, memories, todos and optionally sessions into a tar.gz with a sha256 sidecar, then imports it on another machine as a three-way merge against a baseline, listing per-file differences instead of overwriting changes made there. Credentials never enter an archive (filename deny-list of 27 names plus 7 private-key suffixes plus a content gate, enforced again on the import side), every import writes a pre-restore snapshot first, and an archive can be uploaded to any WebDAV server and pulled back on the new machine. Also includes scheduled backups, a read-only viewer for individual files, and an in-panel cloud card; no npm runtime dependencies (packing uses the system tar)."
+  zh: DSH 的备份 / 恢复 / 换机迁移：把技能（技能目录在 ~/.dsh 之外的 ~/.agents/skills）、插件清单、核心配置、记忆、待办、以及可选的会话打成一个带 sha256 边车的 tar.gz，再在另一台机器上以「带基线的三方合并」导入 —— 逐文件列出差异，而不是直接覆盖对方改过的东西。凭据永不进包（27 个文件名 + 7 个私钥后缀的黑名单，外加内容特征闸，导入侧再过一遍），每次导入前先写一份可原样还原的快照；归档可以推到任意 WebDAV 服务（绿联 NAS / 群晖 / 坚果云 / Nextcloud）并在新机器上下载回来。另含定时备份、单文件只读查看、面板内的云端卡片；零 npm 运行时依赖（打包用系统 tar）。

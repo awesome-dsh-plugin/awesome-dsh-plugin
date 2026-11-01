@@ -1,0 +1,6 @@
+url: https://github.com/wukiQAQ/dsh-enter-using
+name: wukiQAQ/dsh-enter-using
+category: ui
+description:
+  en: Codex-style keyboard answers for the pending command-approval panel — 1 allows once, 2 rejects, Enter confirms the highlighted choice, arrow keys move it, and Esc rejects, with the buttons still usable by mouse.
+  zh: 审批面板的 Codex 风格键盘应答：按 1 允许一次、2 拒绝、回车确认高亮项、方向键切换高亮、Esc 拒绝，鼠标点按依旧可用。

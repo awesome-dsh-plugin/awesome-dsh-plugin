@@ -1,0 +1,6 @@
+url: https://github.com/TiChuXiXi/dsh-file-extras
+name: TiChuXiXi/dsh-file-extras
+category: ui
+description:
+  en: Enhances the DSH Web GUI file tree with inline sizes and modification dates, plus a right-click menu for download, upload, and copy-path actions.
+  zh: 增强 DSH Web GUI 的文件树：行内显示大小与修改时间，右键菜单支持下载、上传、复制路径。

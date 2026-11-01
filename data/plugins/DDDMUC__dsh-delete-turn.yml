@@ -1,0 +1,6 @@
+url: https://github.com/DDDMUC/dsh-delete-turn
+name: DDDMUC/dsh-delete-turn
+category: session
+description:
+  en: 'Per-message delete for DSH: remove a user message, one reply step, or a whole assistant reply from the derived model context through the official surface-replace contract, and hide it from the visible transcript without rewriting the append-only log.'
+  zh: 'DSH 消息删除插件：按条删除用户消息、按步骤删除思考与工具调用、按整条回复删除助手回答，经官方 surface-replace 契约从模型上下文移除并从可见转录隐藏，原始 append-only 日志不改写。'

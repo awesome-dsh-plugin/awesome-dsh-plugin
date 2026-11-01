@@ -1,0 +1,6 @@
+url: https://github.com/lolipop-1x1/dsh-recap
+name: lolipop-1x1/dsh-recap
+category: session
+description:
+  en: 'Summarizes the current DeepSeek Harness session with /recap or after inactivity, with configurable models, Chinese and English output, and expandable summaries in the conversation.'
+  zh: '通过 /recap 或闲置触发回顾当前 DeepSeek Harness 会话，支持配置模型、中英文输出，并在对话内展示可展开的摘要。'

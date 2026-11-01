@@ -1,0 +1,7 @@
+url: https://github.com/caimc21069065-prog/dsh-my-music
+name: caimc21069065-prog/dsh-my-music
+category: ui
+description:
+  en: 'Full-page NetEase Cloud Music player for DSH: daily recommendations, playlist browsing by category, charts, new releases, search, playlist/album/artist pages, QR-code login, synced lyrics, queue and downloads, plus four agent tools for search, song URLs, lyrics and playlist tracks.'
+  zh: '整页式网易云音乐播放器：每日推荐、按分类浏览歌单广场、排行榜、新碟上架、搜索、歌单/专辑/歌手页、扫码登录、逐行歌词、队列与下载，并提供搜索、歌曲直链、歌词、歌单曲目四个 agent 工具。'
+tarball: https://github.com/caimc21069065-prog/dsh-my-music/releases/latest/download/dsh-plugin-music.tgz

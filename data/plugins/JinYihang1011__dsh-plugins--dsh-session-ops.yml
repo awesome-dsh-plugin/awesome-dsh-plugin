@@ -1,0 +1,6 @@
+url: https://github.com/JinYihang1011/dsh-plugins/tree/main/dsh-session-ops
+name: JinYihang1011/dsh-plugins#dsh-session-ops
+category: session
+description:
+  en: 'Adds three actions to the sidebar session row menu: open the workspace location, move the session to another workspace, and delete the session to the Recycle Bin.'
+  zh: '给侧栏会话行菜单补上三项操作：打开工作区位置、移动到其它工作区、删除会话（进回收站，可撤销）。'

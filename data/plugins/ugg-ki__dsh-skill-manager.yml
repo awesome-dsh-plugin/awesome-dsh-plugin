@@ -1,0 +1,6 @@
+url: https://github.com/ugg-ki/dsh-skill-manager
+name: ugg-ki/dsh-skill-manager
+category: skill
+description:
+  en: 'Standalone Skills page for dsh: lists every skill with an enable switch at global, project or session scope, keeps unchecked skills out of the model catalog, and sorts them into named categories.'
+  zh: 'dsh 技能管理页：列出全部技能，按全局、本项目、本会话三级开关，取消勾选的技能不进模型目录，并可按自建分类整理。'

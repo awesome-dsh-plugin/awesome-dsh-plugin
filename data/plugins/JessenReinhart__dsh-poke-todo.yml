@@ -1,0 +1,6 @@
+url: https://github.com/JessenReinhart/dsh-poke-todo
+name: JessenReinhart/dsh-poke-todo
+category: workflow
+description:
+  en: Ports jcode's auto-poke so an idle agent keeps working while its session still has incomplete todos.
+  zh: 把 jcode 的自动催办搬了过来：会话里还有未完成待办时，空闲的 agent 会被推着继续做。

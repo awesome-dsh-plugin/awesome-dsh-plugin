@@ -1,0 +1,6 @@
+url: https://github.com/gnk478/dsh-client-ui-wallpaper
+name: gnk478/dsh-client-ui-wallpaper
+category: theme
+description:
+  en: 'Local images and videos as the DSH desktop window background: timed rotation with 0.7s cross-fades, first-frame-ready before fading in, automatic light/dark ink for readability, adjustable blur and panel/sidebar opacity, video thumbnails, and a probe endpoint reporting load, layer and selector health. Reads only the local files you point it at.'
+  zh: '把本机图片/视频（含 Dynamic Wallpaper.app 素材）用作 DSH 桌面客户端背景：定时轮换与 0.7 秒交叉淡化、等首帧就绪再淡入、按壁纸明暗自动切换深/浅字色、模糊与面板/侧栏透明度可调、视频缩略图，探针接口上报加载、图层与界面选择器的健康状态。只读取本机文件，不联网。'

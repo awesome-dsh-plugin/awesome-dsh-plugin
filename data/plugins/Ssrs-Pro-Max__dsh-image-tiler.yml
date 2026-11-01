@@ -1,0 +1,7 @@
+url: https://github.com/Ssrs-Pro-Max/dsh-image-tiler
+name: Ssrs-Pro-Max/dsh-image-tiler
+category: vision
+description:
+  en: "Shows oversized images to the model at readable resolution instead of one downscaled copy: before admission, a large upload is split into as many tiles as the attachment store allows (an 8000x8000 screenshot becomes 20 tiles of 2000x1600), so small text survives. Replaces the local attachment store; adds no settings of its own."
+  zh: "让超大图片以可读分辨率进入模型视野，而不是被压成一张缩图：准入前按附件存储允许的上限把大图切成多张切片（8000x8000 的截图会变成 20 张 2000x1600），小字得以保留。以替换本地附件存储的方式实现，不新增任何配置项。"
+tarball: https://github.com/Ssrs-Pro-Max/dsh-image-tiler/releases/download/v0.1.6/dsh-image-tiler-0.1.6.tgz

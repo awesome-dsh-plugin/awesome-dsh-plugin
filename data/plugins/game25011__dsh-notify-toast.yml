@@ -1,0 +1,7 @@
+url: https://github.com/game25011/dsh-notify-toast
+name: game25011/dsh-notify-toast
+category: notify
+description:
+  en: Windows native toast notifications for DeepSeek Harness with a progress bar, automatic retraction, goal-mode summaries, and click-to-session.
+  zh: 为 DeepSeek Harness 提供带进度条、自动收回、Goal 模式汇总和点击回会话的 Windows 原生通知。
+tarball: https://github.com/game25011/dsh-notify-toast/releases/download/v0.3.0/dsh-notify-toast-0.3.0.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/ssamurias/dsh-fish
+name: ssamurias/dsh-fish
+category: fun
+description:
+  en: 'A pet fish you raise in DSH. No personality settings — she grows up through the event stream, and your interactions decide who she becomes. She browses Bilibili on her own, writes a diary, and brings what she finds back to ask you. Four stages and three bottlenecks advance only by what happens; only after all four does she begin to have a stance list. Her diary is hers by default; one switch in settings and you can read it. Records in the event stream can never be deleted, so it remains the only trustworthy source. Zero runtime dependencies.'
+  zh: '在DSH里养一只大肥鱼宠物，你可以陪伴她长大。养成系体验，没有人格设置，通过你和她的互动学习成长。她可以自己刷B站，写日记，提取信息去问你，你的反馈决定了她成为什么样的人。通过事件流突破四个阶段、三道瓶颈，去积累「立场清单」，四个阶段完成后才会开始有立场。她的日记默认只给自己看，你在设置里打开就能读。事件流不能删除记录，是唯一可信源。没有任何运行时依赖。'

@@ -1,0 +1,6 @@
+url: https://github.com/Bear0117/dsh-plan-checkup
+name: Bear0117/dsh-plan-checkup
+category: workflow
+description:
+  en: "Checks each step of a plan before you approve it, using command rules plus Jev or an OpenAI-compatible endpoint with logprobs, and marks steps that can't be undone, affect things outside the workspace, weren't asked for or are too vague on the plan review card."
+  zh: 在你同意执行计划前逐步检查每一步，用命令规则加上 Jev 或支持 logprobs 的 OpenAI 兼容端点，在计划审阅卡片上标出无法恢复、影响工作区以外、需求没提到或描述太模糊的步骤。

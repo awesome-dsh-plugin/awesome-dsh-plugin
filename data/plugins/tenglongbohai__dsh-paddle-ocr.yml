@@ -1,0 +1,6 @@
+url: https://github.com/tenglongbohai/dsh-paddle-ocr
+name: tenglongbohai/dsh-paddle-ocr
+category: vision
+description:
+  en: Add PaddleOCR vision to text-only LLMs like Agnes, DeepSeek, MiniMax, GLM and Mimo. Supports local files and URLs. Free tier of 20,000 pages/day; needs a PaddleOCR API token you apply for (free, 1-3 business days).
+  zh: 为纯文本模型添加 PaddleOCR 视觉能力，支持 Agnes、DeepSeek、MiniMax、GLM、Mimo，支持本地文件与 URL。每日 2 万页免费额度；需先申请 PaddleOCR API Token（免费，审核约 1-3 个工作日）。

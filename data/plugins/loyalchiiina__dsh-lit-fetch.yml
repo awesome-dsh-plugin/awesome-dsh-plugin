@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-lit-fetch
+name: loyalchiiina/dsh-lit-fetch
+category: tools
+description:
+  en: "Fetch academic papers by DOI or keyword: Crossref and OpenAlex search, batch PDF download through eight Sci-Hub mirrors with an Unpaywall open-access fallback, PDF magic-byte validation, bounded concurrency, and a clickable batch-access HTML manifest for papers that could not be downloaded."
+  zh: "按 DOI 或关键词获取学术文献：Crossref 与 OpenAlex 检索，经 8 个 Sci-Hub 镜像批量下载 PDF 并以 Unpaywall 开放获取兜底，含 PDF 魔数校验与并发控制，并为未下载到的文献生成可点击的批量获取清单 HTML。"

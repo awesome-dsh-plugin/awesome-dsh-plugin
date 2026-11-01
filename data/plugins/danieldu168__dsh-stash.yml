@@ -1,0 +1,6 @@
+url: https://github.com/danieldu168/dsh-stash
+name: danieldu168/dsh-stash
+category: tools
+description:
+  en: 'Registers external databases and document corpora as callable model tools: a per-source access boundary, a credential reference ledger that never stores values, and a fetch ledger that keeps fingerprints and content hashes instead of payloads.'
+  zh: 把外部数据库与文献语料登记成模型可调用的取数工具；每条库声明取数边界，钥匙台账只记引用名不存值，取数台账只留指纹与内容哈希而不留响应体。

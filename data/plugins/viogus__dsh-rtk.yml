@@ -1,0 +1,7 @@
+url: https://github.com/viogus/dsh-rtk
+name: viogus/dsh-rtk
+category: dev
+tarball: https://github.com/viogus/dsh-rtk/releases/latest/download/dsh-rtk-latest.tgz
+description:
+  en: Routes eligible bash commands through rtk (Rust Token Killer) so tool output is compressed before it reaches the model, by asking the installed rtk to rewrite each command and adopting what it prints; when rtk is absent the executor behaves exactly like the stock one.
+  zh: 把符合条件的 bash 命令交给 rtk（Rust Token Killer）执行，让工具输出在进入模型之前就被压缩：插件调用本机 rtk 重写命令并采纳其结果；rtk 未安装时，执行器行为与原生完全一致。

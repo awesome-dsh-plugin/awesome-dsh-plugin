@@ -1,0 +1,7 @@
+url: https://github.com/MorixMa/dsh-download-progress
+name: MorixMa/dsh-download-progress
+category: ui
+description:
+  # 含 ": "（冒号加空格）必须加引号，否则 YAML 当成嵌套键解析失败。
+  en: 'A download-progress indicator for the DSH session header: it reads the background-job roster and parses what downloaders already print — curl --progress-bar, wget, aria2, or a JSON progress file — into a progress ring, animated bars, transfer speed and ETA. Jobs that report nothing show as unknown progress instead of being hidden. A finished file opens with one click, or reveals in the file manager. No third-party plugin required; the package ships zero runtime dependencies.'
+  zh: 'DSH 会话头里的下载进度指示器：读取后台任务名册，把下载器自己已经打印出来的进度（curl --progress-bar、wget、aria2，或 JSON 进度文件）解析成环形进度、动画进度条、传输速率与剩余时间；不上报进度的任务显示为未知进度而不是被隐藏。已完成文件单击即开，也可在文件管理器里定位。不依赖任何第三方插件，运行时零依赖。'

@@ -1,0 +1,6 @@
+url: https://github.com/gongstudent/dsh-moyu
+name: gongstudent/dsh-moyu
+category: fun
+description:
+  en: 'Hover-reveal Douyin short-video feed inside DeepSeek Harness: move the pointer into a fixed hotspot to play, leave to pause in place, scroll the wheel to switch clips. Wheel travel is accumulated and cooled down so one gesture switches once, and the player stays mounted while hidden so re-entry resumes instead of restarting. The host half signs the requests and reverse-proxies the media stream, so no account or sign-in is needed.'
+  zh: '在 DeepSeek Harness 界面里悬停刷抖音推荐流：鼠标移入热点开始播放，移出暂停在原处，滚轮切换视频；滚轮做了累加与冷却，一次手势只切一条，播放器隐藏时保持挂载，移回从原处继续。宿主侧完成请求签名与视频流反代，不需要登录任何账号。'

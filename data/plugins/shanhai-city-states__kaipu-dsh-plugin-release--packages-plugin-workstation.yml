@@ -1,0 +1,7 @@
+url: https://github.com/shanhai-city-states/kaipu-dsh-plugin-release/tree/main/packages/plugin-workstation
+name: shanhai-city-states/kaipu-dsh-plugin-release#plugin-workstation
+category: workflow
+description:
+  en: "Companion operations panel for the Kaipu site plugin: round timeline, run status, jump gates and browser entry. Installs and uninstalls on its own; the site plugin stays fully usable without it. Renders the persisted workstation state (no live stream yet)."
+  zh: "山海·开铺 工位插件：场地的操作台面板，轮次时间线／运行状态／跳转门／浏览器入口。可单独安装或卸载，卸掉它场地仍完整可用。当前渲染工位持久化态（非实时流）。"
+tarball: https://github.com/shanhai-city-states/kaipu-dsh-plugin-release/releases/latest/download/kaipu-workstation.tgz

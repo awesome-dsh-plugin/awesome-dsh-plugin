@@ -1,0 +1,7 @@
+url: https://github.com/LINJJ749/dsh-one-click-session-delete
+name: LINJJ749/dsh-one-click-session-delete
+category: session
+description:
+  en: 'Adds one-click permanent Session deletion to the DeepSeek Harness Workspace sidebar: a row-hover trash button, a menu item, a confirmation dialog, live-Session protection, cascade deletion for derived Sessions, and cleanup of the session log directory, projection cache and workspace bookkeeping.'
+  zh: '为 DeepSeek Harness 工作区侧栏增加会话一键永久删除：行悬停垃圾桶按钮、菜单项、确认框、运行中保护、派生会话级联，并清理会话日志目录、投影缓存与工作区记账。'
+icon: https://raw.githubusercontent.com/LINJJ749/dsh-one-click-session-delete/main/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/sososilencing/dsh-network-engineer
+name: sososilencing/dsh-network-engineer
+category: agi
+description:
+  en: 'Standalone Network Engineer Assistant agent preset plus a bundled 32-doc command knowledge base skill for DPtech, H3C, Huawei and Ruijie switches and routers: KB-first retrieval, cross-vendor command translation, topology and CLI-output screenshot reading, online manual lookup with cited sources, and mandatory risk annotations for dangerous commands; answers networking topics only.'
+  zh: '网络工程师助手预设 + 四厂商（迪普/新华三/华为/锐捷）交换机路由器命令知识库：32 篇文档随插件以技能形式分发（含来源链接与 verified 分级），KB 优先检索、跨厂商语法对照、拓扑与回显截图识别、联网查官方手册并注明出处、高危命令强制 ⚠️ 风险标注；只回答网络工程主题。'

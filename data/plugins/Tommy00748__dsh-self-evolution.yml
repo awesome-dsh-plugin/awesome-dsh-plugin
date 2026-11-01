@@ -1,0 +1,6 @@
+url: https://github.com/Tommy00748/dsh-self-evolution
+name: Tommy00748/dsh-self-evolution
+category: memory
+description:
+  en: 'Bounded self-managed long-term memory (Hermes-style MEMORY.md / USER.md with hard character limits and a safety scan), a review that runs after every turn and writes plain-language notes or refines an existing skill instead of adding a near-duplicate, a curator that finds and surgically repairs skills the loader would silently discard, cross-session search over past messages, and a learning card above the composer that appears only when there is news and asks before it deletes or rewords a memory.'
+  zh: '有界自管的长期记忆（Hermes 式 MEMORY.md / USER.md，硬字符上限 + 写入前安全扫描）；每轮结束后自动复盘，用大白话写笔记、或把新知识合并进已有技能而不堆出雷同技能；curator 找出会被加载器静默丢弃的技能并外科式修复；跨会话搜索历史消息；输入框上方的学习卡片只在有新闻时出现，删改记忆前必须先问你。'

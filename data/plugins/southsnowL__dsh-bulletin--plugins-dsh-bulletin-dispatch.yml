@@ -1,0 +1,6 @@
+url: https://github.com/southsnowL/dsh-bulletin/tree/main/plugins/dsh-bulletin-dispatch
+name: southsnowL/dsh-bulletin#dsh-bulletin-dispatch
+category: session
+description:
+  en: Desk-to-desk tickets between sessions on one machine. A session says which desk it belongs to by putting a number prefix in its title; a ticket names one desk and is taken by the first session of that desk to start working, so the desk is the address and a ticket is not delivered to a session that is just passing by.
+  zh: 同一台电脑上会话之间的「单子」：会话用标题里的编号前缀表明自己属于哪张桌；单子投给某张桌，由那张桌最先开始干活的那个会话取走 —— 桌是地址，路过的会话不会收到它。

@@ -1,0 +1,7 @@
+url: https://github.com/Funny1Potato/dsh-outsourcing-expert
+name: Funny1Potato/dsh-outsourcing-expert
+category: agi
+description:
+  en: 'Agent presets whose leader does no work itself: every non-management tool call is denied at the harness boundary so the task has to go to a subagent, after a one-time lookup of the available subagent models and a per-task model choice; a second preset deliberately picks the model least suited to the task.'
+  zh: 让领导不亲自干活的 agent preset：非管理类工具调用在 harness 边界一律被拒，任务只能外包给子智能体，选人前先一次性摸清可选子智能体模型、再按任务逐个选型；另一个 preset 故意挑最不适合该任务的模型。
+tarball: https://github.com/Funny1Potato/dsh-outsourcing-expert/releases/latest/download/dsh-outsourcing-expert.tgz

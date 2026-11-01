@@ -1,0 +1,6 @@
+url: https://github.com/a1137261060/dsh-session-organizer
+name: a1137261060/dsh-session-organizer
+category: session
+description:
+  en: Two-level sidebar organizer with workspace groups and nested per-workspace session folders, drag-and-drop, live session status dots, a pending-sessions overview, and manual unread marks.
+  zh: 两级侧边栏组织器：工作区分组 + 工作区内嵌套会话文件夹，支持拖拽、会话状态点、待处理会话概览与手动未处理标记。

@@ -1,5 +1,5 @@
 url: https://github.com/IcedWatermelonJuice/dsh-provider-veark
-name: icedcola/dsh-provider-veark
+name: IcedWatermelonJuice/dsh-provider-veark
 category: model
 description:
   en: "Volcengine Ark Coding Plan LLM provider for DeepSeek Harness: provider-scoped PDF and image input, with Responses API streaming support."

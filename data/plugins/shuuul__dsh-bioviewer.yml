@@ -1,0 +1,7 @@
+url: https://github.com/shuuul/dsh-bioviewer
+name: shuuul/dsh-bioviewer
+category: ui
+description:
+  en: Registers Mol* file viewers with dsh-better-sidebar for PDB, mmCIF, MRC maps, small molecules and Chimera .cmm markers, including .gz, with a BioViewer workspace tab and bio_open / bio_add tools.
+  zh: 向 dsh-better-sidebar 注册 Mol* 文件预览器，支持 PDB、mmCIF、MRC 密度图、小分子和 Chimera .cmm 标记（含 .gz），并提供 BioViewer 工作区标签以及 bio_open / bio_add 工具。
+icon: https://raw.githubusercontent.com/shuuul/dsh-bioviewer/main/resources/img/icon-180.png

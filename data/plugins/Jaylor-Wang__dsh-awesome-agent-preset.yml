@@ -1,0 +1,6 @@
+url: https://github.com/Jaylor-Wang/dsh-awesome-agent-preset
+name: Jaylor-Wang/dsh-awesome-agent-preset
+category: workflow
+description:
+  en: Ultra-lean daily coding agent preset for DeepSeek Harness (dsh) that strips heavy orchestration for fast, direct tool execution.
+  zh: 专为日常编码打造的极简 Agent 预设插件：移除沉重编排机制与冗余组件，直达核心工具循环，响应迅速。

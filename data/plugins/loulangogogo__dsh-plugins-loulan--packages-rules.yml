@@ -1,5 +1,5 @@
 url: https://github.com/loulangogogo/dsh-plugins-loulan/tree/main/packages/rules
-name: loulangogogo/dsh-plugins-loulan#rules
+name: dsh-loulan-rules
 category: session
 description:
   en: 'Injects the rule files under $DSH_HOME/rules and <cwd>/.dsh/rules into the conversation at the first agent pre-step, re-injecting them after compaction.'

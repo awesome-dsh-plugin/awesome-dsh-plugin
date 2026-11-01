@@ -1,0 +1,6 @@
+url: https://github.com/Oliveryfaso/dsh-babel
+name: Oliveryfaso/dsh-babel
+category: tools
+description:
+  en: Reads Claude Code and Codex plugin configurations to discover and preflight MCP servers and slash commands, with opt-in registration in DeepSeek Harness.
+  zh: 读取 Claude Code 和 Codex 插件配置，发现并预检 MCP 服务器与斜杠命令，支持在 DeepSeek Harness 中按需启用注册。

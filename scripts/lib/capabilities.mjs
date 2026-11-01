@@ -1,0 +1,224 @@
+// Where a plugin's capability facts come from, and what they are allowed to say.
+//
+// The catalog renders "what this plugin touches" — files, network, shell,
+// credentials — as FACTS, never as a verdict. #209 is why: a badge saying
+// "safe" stops people reading, and the misses are guaranteed to exist, so the
+// only honest shape is a disclosure with its own blind spots printed next to
+// it. The scanner this reads is `dsh-trust-check` (MIT, no code execution, no
+// network, milliseconds per package — see its docs/INTEGRATION.md), and
+// everything below exists to keep two promises about it:
+//
+//   1. A fact is only ever written when it was READ. A failed download, a
+//      crashed scanner, a schema this code does not understand — all of them
+//      leave the entry absent, which the surfaces render as "未检出 / not
+//      checked". Absence is never written as "clean".
+//   2. The tool can be replaced. Its output shape is versioned
+//      (`schemaVersion`) and the stable fields are named here, once, so a
+//      future scanner is a change to this file rather than to the catalog
+//      data or to any surface reading it.
+
+/**
+ * Output shapes this code understands. 2 adds `facts[]` and `evidence[].rule`;
+ * the fields this file copies (`capabilities`, `redLines`) are the same in 1.
+ * A different shape is not read.
+ */
+export const SCANNER_SCHEMA = 2
+const READABLE_SCHEMAS = new Set([1, 2])
+
+/**
+ * @typedef {object} CapabilityFacts
+ * @property {string|null} version    Which release was scanned: the facts describe THIS version.
+ * @property {string} spec            The install spec the scan labelled the package with.
+ * @property {string[]} capabilities  Chip names, e.g. `shell`, `network`, `credentials`, `fs-write`.
+ * @property {string[]} redLines      Sentences naming a combination worth a look, e.g. credentials+network.
+ * @property {string} scannedAt       ISO 8601, UTC — when this record was produced.
+ * @property {string} tool            The scanner that produced it, so a later reader knows which one.
+ * @property {object} [provenance]    Optional npm attestation claim. Absence is "not checked", not "unsafe".
+ * @property {object} [previous]      Capabilities and red lines of the previous scanned version.
+ */
+
+/** `owner/repo` for a catalog URL, dropping any `/tree/<ref>/<sub>` tail. */
+export function repoOf(url) {
+  const path = url.replace('https://github.com/', '')
+  const parts = path.split('/')
+  if (parts.length < 2 || parts[0] === '' || parts[1] === '') return null
+  return `${parts[0]}/${parts[1]}`
+}
+
+/**
+ * The subdirectory an entry lives in, or null for a whole-repo entry.
+ *
+ * The scanner is pointed at the subdirectory because that is what the user
+ * installs (#path:/ specs): scanning the monorepo root would report the
+ * capabilities of every sibling package as if they were this plugin's.
+ */
+export function subdirOf(url) {
+  const path = url.replace('https://github.com/', '')
+  if (!path.includes('/tree/')) return null
+  const tail = path.split('/tree/')[1] ?? ''
+  const parts = tail.split('/')
+  return parts.length > 1 ? parts.slice(1).join('/') : null
+}
+
+/**
+ * What to download for an entry, and what to tell the scanner it is looking at.
+ *
+ * Preference order is the order a user would install it in: the npm package
+ * when the entry is published there (that is also what the market's install
+ * button fetches), the author's prebuilt release tarball when that is the only
+ * distribution, and the repository's own tarball otherwise — the same codeload
+ * artifact pnpm fetches for a `github:` spec, resolved through `HEAD` so no
+ * branch name or API call is needed (measured: 200 with no ref).
+ *
+ * @returns {{kind: 'npm'|'tarball'|'github', url: string, spec: string, version: string|null}|null}
+ */
+export function scanSourceFor(entry, npmMap = {}, tarballs = {}) {
+  const mapped = npmMap[entry.url]
+  const npmName = mapped?.npm ?? (typeof entry.npm === 'string' && entry.npm !== '' ? entry.npm : null)
+  const npmVersion = mapped?.version ?? null
+  if (npmName !== null && npmName !== undefined) {
+    // The packument's own tarball URL shape; the version comes from the same
+    // map the rest of the build reads, so this costs no extra request.
+    const file = npmName.startsWith('@') ? npmName.split('/')[1] : npmName
+    return {
+      kind: 'npm',
+      url: npmVersion === null
+        ? `https://registry.npmjs.org/${npmName}`
+        : `https://registry.npmjs.org/${npmName}/-/${file}-${npmVersion}.tgz`,
+      spec: `npm:${npmName}${npmVersion === null ? '' : `@${npmVersion}`}`,
+      version: npmVersion,
+    }
+  }
+  const declared = tarballs[entry.url]
+  const tarball = typeof declared === 'string' ? declared : declared?.tarball ?? null
+  if (typeof tarball === 'string' && tarball !== '') {
+    return { kind: 'tarball', url: tarball, spec: `tarball:${entry.url}`, version: null }
+  }
+  const repo = repoOf(entry.url)
+  if (repo === null) return null
+  return { kind: 'github', url: `https://codeload.github.com/${repo}/tar.gz/HEAD`, spec: `github:${repo}`, version: null }
+}
+
+/**
+ * Whether a stored record still answers for this source.
+ *
+ * A record describes one release: when the source names a different version,
+ * the facts are about a build nobody installs any more. Sources that name no
+ * version (a branch tarball) can change under the same URL, so they expire by
+ * age instead — `recheckDays` — while npm's per-release artifacts are cheap
+ * and re-checked on the same window.
+ *
+ * @param {CapabilityFacts|undefined} stored
+ * @param {{version: string|null}} source
+ */
+export function shouldRescan(stored, source, now, recheckDays) {
+  if (stored === undefined) return true
+  if (source.version !== null) return stored.version !== source.version
+  const scannedAt = Date.parse(stored.scannedAt)
+  if (!Number.isFinite(scannedAt)) return true
+  return now - scannedAt > recheckDays * 86_400_000
+}
+
+/**
+ * The facts to store from one scanner response, or null when it cannot be read.
+ *
+ * Only the stable fields are copied. `score`, `band` and `verdict` are
+ * deliberately dropped: upstream says the band is not a pre-install verdict,
+ * and a number that ranks plugins as safe/unsafe is the badge this whole
+ * feature exists to avoid — a surface cannot render what never reaches it.
+ *
+ * @param {unknown} payload
+ * @param {{spec: string, version: string|null, tool: string, now: string}} fallback
+ * @returns {CapabilityFacts|null}
+ */
+/**
+ * Drop "uses literal IP <addr> for network access" when the scanner's own
+ * `destinations` says that address is only ever compared, never dialled.
+ *
+ * The red line is generated from a string match, so an address inside an SSRF
+ * guard (`host === '100.100.100.200'` → throw) reads the same as an outbound
+ * target. `dsh-trust-check` already classifies each site with `usage`:
+ * `compare` is a comparison, `assigned`/`called` are real uses. Filtering on
+ * that keeps the disclosure honest without re-parsing the source here — and
+ * when the scanner stops emitting the red line, this becomes a no-op.
+ *
+ * @param {string[]} redLines
+ * @param {unknown} destinations
+ * @returns {string[]}
+ */
+function dropCompareOnlyIpRedLines(redLines, destinations) {
+  if (!Array.isArray(destinations)) return redLines
+  const compareOnly = new Set()
+  for (const destination of destinations) {
+    if (destination === null || typeof destination !== 'object') continue
+    if (destination.kind !== 'ip' || typeof destination.value !== 'string') continue
+    const sites = Array.isArray(destination.sites) ? destination.sites : []
+    if (sites.length > 0 && sites.every(site => site !== null && typeof site === 'object' && site.usage === 'compare')) {
+      compareOnly.add(destination.value)
+    }
+  }
+  if (compareOnly.size === 0) return redLines
+  return redLines.filter(line => {
+    const match = /^uses literal IP (\S+) for network access$/.exec(line)
+    return match === null || !compareOnly.has(match[1])
+  })
+}
+
+export function factsFromScan(payload, fallback) {
+  if (payload === null || typeof payload !== 'object' || Array.isArray(payload)) return null
+  if (!READABLE_SCHEMAS.has(payload.schemaVersion)) return null
+  const plugins = Array.isArray(payload.plugins) ? payload.plugins : []
+  const first = plugins.find(plugin => plugin !== null && typeof plugin === 'object')
+  if (first === undefined) return null
+  const strings = (value) => Array.isArray(value)
+    ? [...new Set(value.filter(item => typeof item === 'string' && item !== ''))]
+    : []
+  const record = {
+    version: typeof first.version === 'string' && first.version !== '' ? first.version : fallback.version,
+    spec: typeof first.spec === 'string' && first.spec !== '' ? first.spec : fallback.spec,
+    capabilities: strings(first.capabilities),
+    redLines: dropCompareOnlyIpRedLines(strings(first.redLines), first.destinations),
+    scannedAt: fallback.now,
+    tool: fallback.tool,
+  }
+  const provenance = copyProvenance(payload.provenance)
+  if (provenance !== undefined) record.provenance = provenance
+  return record
+}
+
+/**
+ * Keep the previous version's capabilities and red lines when the release changes.
+ * A rescan of the same version keeps an existing `previous`. This is bookkeeping,
+ * not a detection rule.
+ *
+ * @param {CapabilityFacts|undefined} stored
+ * @param {CapabilityFacts|null} facts
+ */
+export function rememberPrevious(stored, facts) {
+  if (facts === null) return null
+  if (stored === undefined) return facts
+  const sameRelease = stored.version != null && facts.version != null && stored.version === facts.version
+  if (!sameRelease && stored.version != null && facts.version != null) {
+    return {
+      ...facts,
+      previous: {
+        version: stored.version,
+        capabilities: Array.isArray(stored.capabilities) ? stored.capabilities : [],
+        redLines: Array.isArray(stored.redLines) ? stored.redLines : [],
+      },
+    }
+  }
+  if (stored.previous !== undefined) return { ...facts, previous: stored.previous }
+  return facts
+}
+
+function copyProvenance(value) {
+  if (typeof value !== 'object' || value === null || Array.isArray(value)) return undefined
+  if (typeof value.present !== 'boolean' || value.signatureChecked !== false) return undefined
+  const out = { present: value.present, signatureChecked: false }
+  for (const key of ['repository', 'commit', 'ref']) {
+    if (typeof value[key] === 'string' && value[key] !== '') out[key] = value[key]
+  }
+  if (typeof value.repositoryMatches === 'boolean') out.repositoryMatches = value.repositoryMatches
+  return out
+}

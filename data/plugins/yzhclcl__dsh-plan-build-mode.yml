@@ -1,0 +1,6 @@
+url: https://github.com/yzhclcl/dsh-plan-build-mode
+name: yzhclcl/dsh-plan-build-mode
+category: ui
+description:
+  en: 'Plan / Build mode switcher for DeepSeek Harness: an always-visible dropdown in the composer beside the permission control that switches the current session both ways through the shipped /plan and /plan off commands, plus a Default mode row in Settings → General that decides the starting mode for newly created sessions.'
+  zh: 'DeepSeek Harness 的 Plan / Build 模式切换：在输入框「完全权限」旁常驻一个下拉框，经内置的 /plan 与 /plan off 命令双向切换当前会话；设置 → 通用里另有一行「默认模式」，决定新建会话的起始模式。'

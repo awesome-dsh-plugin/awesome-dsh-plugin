@@ -1,0 +1,6 @@
+url: https://github.com/vitas/dsh-jev-subagent-dispatch
+name: vitas/dsh-jev-subagent-dispatch
+category: workflow
+description:
+  en: 'Cut LLM costs: a Jev (System One) classifier vets each turn against a declarative policy and recommends the subagent model route, so routine work runs at flash rates while the main model keeps the hard parts; explicit /route trigger, runtime delegation-capability gate, credential redaction, and offline policy replay over the verdict log.'
+  zh: '降低 LLM 成本：Jev（System One）分类器按声明式策略审查每一轮任务并推荐 subagent 模型路由，让常规工作以 flash 价格运行、主模型专注难点；显式 /route 触发、运行时代理能力门控、凭据脱敏，以及基于判定日志的离线策略回放。'

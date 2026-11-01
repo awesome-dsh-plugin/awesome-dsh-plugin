@@ -1,0 +1,6 @@
+url: https://github.com/flysusdjd/dsh-rank-board
+name: flysusdjd/dsh-rank-board
+category: market
+description:
+  en: Ranks the top 400 DSH plugin candidates by live npm download counts and shows the top 200, with daily, weekly and monthly boards.
+  zh: 对前 400 个候选按 npm 实时下载量排序、展示前 200 名，支持日榜、周榜、月榜。

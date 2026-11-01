@@ -1,0 +1,6 @@
+url: https://github.com/ZRAZN/dsh-effort-slider-split-seat
+name: ZRAZN/dsh-effort-slider-split-seat
+category: ui
+description:
+  en: 'Fork of dsh-effort-slider that splits the composer model seat into two buttons: the model name opens the model list, the effort label opens the Claude-style slider with WebGL fire.'
+  zh: 'dsh-effort-slider 的修改版：把输入框的模型座位拆成两个按钮——点模型名打开模型列表，点推理等级打开带 WebGL 火焰的滑块面板。'

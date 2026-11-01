@@ -1,0 +1,6 @@
+url: https://github.com/cspyz/dsh-terse-mode
+name: cspyz/dsh-terse-mode
+category: ui
+description:
+  en: 'Four adjustable terse levels plus independent switches for reasoning effort, web search and subagents, on the conversation header and in the Settings page. No output ceiling.'
+  zh: '四档「简洁模式」常驻对话页顶部，思考强度、联网搜索、子代理三个开关独立可调，设置页里也有一份；四个档位都不设输出上限。'

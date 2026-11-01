@@ -1,0 +1,6 @@
+url: https://github.com/IamNewHands/dsh-approval-gate
+name: IamNewHands/dsh-approval-gate
+category: security
+description:
+  en: 'Maintained fork of dsh-approval-gate. A neutral operation whose confirmation count has reached the threshold auto-approves when the judge is unavailable, instead of prompting a human again; approver-facing explanations are generated in Chinese from the real sandbox mode, command and paths. Also carries deterministic hard-deny for credential exfiltration and system-path destruction, judge-input redaction, a judge model candidate chain, fingerprint-scoped allow rules, and an approval view with unified diff and one-click revert.'
+  zh: 'dsh-approval-gate 的维护中 fork。判定器不可用时，确认次数已达阈值的中立操作直接自动放行，不再重复弹人工审批；审批说明由真实的沙箱模式、命令与路径生成中文。另含凭据外泄与系统路径销毁的确定性硬拒、判定输入脱敏、判定模型候选链、带操作指纹的放行规则，以及可查看 unified diff 与一键撤销的审批视图。'

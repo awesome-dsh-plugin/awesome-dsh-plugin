@@ -1,0 +1,6 @@
+url: https://github.com/tjiisztiuv/dsh-plugin-discord
+name: tjiisztiuv/dsh-plugin-discord
+category: notify
+description:
+  en: Discord bridge loaded into the same Host as the desktop app or dsh web, with no separate process or profile — chat with sessions in any workspace from DMs or threads, attach to sessions open on the desktop, and answer tool approvals and model questions from whichever side responds first.
+  zh: 与桌面端或 dsh web 运行在同一个 Host 里的 Discord 桥接，无需单独进程或 profile：在私信或线程里与任意工作区的会话对话，接入桌面端正在用的会话，工具审批和模型提问在 Discord 与桌面端谁先答谁生效。

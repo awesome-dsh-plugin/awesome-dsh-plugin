@@ -1,0 +1,6 @@
+url: https://github.com/monkey-sking/dsh-noagent-schedule
+name: monkey-sking/dsh-noagent-schedule
+category: workflow
+description:
+  en: Runs shell scripts on cron or interval schedules inside the host with no model call, logging every run and waking the model only when a script's output changes.
+  zh: 在宿主内按 cron 或固定间隔运行 shell 脚本，不调用模型，按次记录日志，只在脚本输出变化时唤醒模型。

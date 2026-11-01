@@ -1,0 +1,7 @@
+url: https://github.com/AaronKate/dsh-codex-appearance
+name: AaronKate/dsh-codex-appearance
+category: theme
+description:
+  en: "Adds an appearance settings page to DeepSeek Harness: five eye-comfort light themes, each with its own accent and link colours, plus controls for the accent and background colours, UI and code fonts and sizes, font styles, content width, contrast and reduced motion."
+  zh: "为 DeepSeek Harness 增加外观设置页：五套护眼浅色主题，每套主题自带匹配的强调色与链接色；另可调整强调色与背景色、界面与代码的字体和字号、字体样式、内容宽度、对比度与减少动态效果。"
+tarball: https://github.com/AaronKate/dsh-codex-appearance/releases/latest/download/dsh-eye-comfort.tgz

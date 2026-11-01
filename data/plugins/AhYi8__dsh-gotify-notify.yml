@@ -1,0 +1,6 @@
+url: https://github.com/AhYi8/dsh-gotify-notify
+name: AhYi8/dsh-gotify-notify
+category: notify
+description:
+  en: Push a Gotify notification when each conversation turn ends, with configurable templates, priority and per-cause titles.
+  zh: 每轮会话结束时向 Gotify 服务器推送通知，支持模板、优先级与按结束原因区分标题。

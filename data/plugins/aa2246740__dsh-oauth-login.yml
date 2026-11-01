@@ -1,0 +1,7 @@
+url: "https://github.com/aa2246740/dsh-oauth-login"
+name: "aa2246740/dsh-oauth-login"
+category: "model"
+description:
+  en: "Adds subscription OAuth and provider Plan API-key logins through Pi adapters, using a DSH-owned credential store."
+  zh: "通过 Pi 适配器接入订阅 OAuth 和厂商 Plan API Key 登录，使用独立的 DSH 凭据存储。"
+tarball: "https://github.com/aa2246740/dsh-oauth-login/releases/download/v0.2.7/dsh-oauth-login-0.2.7.tgz"

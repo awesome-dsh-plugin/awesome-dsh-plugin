@@ -1,0 +1,6 @@
+url: https://github.com/john-walks-slow/dsh-wait-subagent
+name: john-walks-slow/dsh-wait-subagent
+category: tools
+description:
+  en: 'Active wait for background subagents in DeepSeek Harness: registers a wait_subagent model tool that blocks until a named background continuable subagent settles, then returns its stop reason and closing message — optional timeout, membership gate rejects unknown ids, event-driven with zero polling. Closes the gap between run_in_background fire-and-return and the async settlement notice; wait for a background subagent without polling list_agents.'
+  zh: '为 DeepSeek Harness 提供后台子代理的主动等待：注册 wait_subagent 模型工具，阻塞等待指定的后台 continuable（可续会话）子代理收尾（settlement），返回停止原因与收尾消息——可选超时、成员资格门控拒绝未知 id、事件驱动零轮询。补齐 run_in_background 发后不管与异步收尾通知之间的缺口：等待后台子代理（subagent wait）不再轮询 list_agents、不再靠猜。'

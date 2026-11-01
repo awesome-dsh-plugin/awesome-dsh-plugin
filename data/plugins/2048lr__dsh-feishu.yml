@@ -1,0 +1,6 @@
+url: https://github.com/2048lr/dsh-feishu
+name: 2048lr/dsh-feishu
+category: tools
+description:
+  en: Creates and edits Feishu and Lark cloud content through ten tools - Bitable databases and their records, documents with Markdown converted to native blocks, spreadsheets, wikis, drive files and messages - plus Base V3 dashboard charts and server-side aggregate queries.
+  zh: 通过十个工具创建与编辑飞书 / Lark 云内容——多维表格及其记录、把 Markdown 转成原生块的文档、电子表格、知识库、云空间文件与消息，并提供 Base V3 的仪表盘图表与服务端聚合查询。

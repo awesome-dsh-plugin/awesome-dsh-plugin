@@ -1,0 +1,6 @@
+url: https://github.com/PerseusNana7mi/dsh-model-kit
+name: PerseusNana7mi/dsh-model-kit
+category: model
+description:
+  en: Fills missing model parameters from models.dev, imports models from configured providers, and writes per-field overrides for built-in models, with prices in USD or native CNY set as manual rates or a reference price times a multiplier.
+  zh: 从 models.dev 补全缺失的模型参数，从已配置供应商导入模型，并按字段覆盖内置模型；价格可按美元或原生人民币设为手动单价，或按参考价乘自定义倍率。

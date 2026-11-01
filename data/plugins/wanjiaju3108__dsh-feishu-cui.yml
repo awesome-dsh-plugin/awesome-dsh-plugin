@@ -1,0 +1,6 @@
+url: https://github.com/wanjiaju3108/dsh-feishu-cui
+name: wanjiaju3108/dsh-feishu-cui
+category: remote
+description:
+  en: Remote DSH access that needs no hosting of your own — the Feishu DM chat is the interface over the bot's outbound long connection, with cards for workspace, session (switch and rename), model, reasoning effort, permission preset and balance, and tool approvals and agent questions answered in that same chat.
+  zh: 免运维的远程 DSH——拿飞书私聊当界面，机器人出站长连接、不需要公网入口，工作区、会话（切换与改名）、模型、推理深度、权限预设、余额都用卡片操作，工具审批与 agent 反问也在同一个聊天里回。

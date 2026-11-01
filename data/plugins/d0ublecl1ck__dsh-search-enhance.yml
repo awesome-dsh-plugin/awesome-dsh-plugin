@@ -1,0 +1,6 @@
+url: https://github.com/d0ublecl1ck/dsh-search-enhance
+name: d0ublecl1ck/dsh-search-enhance
+category: ui
+description:
+  en: "Search inside the New-Session workspace picker: pinyin initials and full pinyin spelling for Chinese titles, substring matching anywhere for English titles, and separator-insensitive matching."
+  zh: "在「新建会话」的工作区下拉里直接搜索：中文支持拼音首字母与全拼，英文支持任意位置子串与忽略分隔符匹配。"

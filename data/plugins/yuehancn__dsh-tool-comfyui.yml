@@ -1,0 +1,6 @@
+url: https://github.com/yuehancn/dsh-tool-comfyui
+name: yuehancn/dsh-tool-comfyui
+category: tools
+description:
+  en: Generate images from chat by calling a fleet of local or LAN ComfyUI workers, with workflow templates, worker health checks and queue control.
+  zh: 在对话里直接调用本机或局域网的 ComfyUI 机队出图，支持工作流模板、机队健康检查与队列控制。

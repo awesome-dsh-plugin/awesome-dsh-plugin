@@ -1,0 +1,6 @@
+url: https://github.com/xindady/dsh-prompt-enhancer
+name: xindady/dsh-prompt-enhancer
+category: ui
+description:
+  en: Adds a prompt enhancement button to the composer toolbar that rewrites the draft through a model call, keeps @file references verbatim, and offers one-click undo.
+  zh: 在输入框工具栏添加增强提示词按钮，调用模型改写草稿，逐字保留 @文件引用，并可一键撤回。

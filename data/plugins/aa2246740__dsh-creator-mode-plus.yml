@@ -1,0 +1,7 @@
+url: "https://github.com/aa2246740/dsh-creator-mode-plus"
+name: "aa2246740/dsh-creator-mode-plus"
+category: "dev"
+description:
+  en: "Creates, activates, checks and removes external DSH plugins from a conversation through fixed tools; requires the external DSHX devkit."
+  zh: "通过对话中的固定工具创建、激活、检查和移除外部 DSH 插件，需要外部 DSHX 开发工具。"
+tarball: "https://github.com/aa2246740/dsh-creator-mode-plus/releases/download/v0.3.12/dsh-creator-mode-plus-0.3.12.tgz"

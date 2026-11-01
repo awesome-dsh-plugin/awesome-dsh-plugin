@@ -1,0 +1,6 @@
+url: https://github.com/donyue7/dsh-aoci-panel
+name: donyue7/dsh-aoci-panel
+category: ui
+description:
+  en: 'AOCI cognition panel for DSH: multi-workspace AOCI overview, per-repo index and governance view, MCP binding diagnosis, and guided or batch initialization. Governance, verification and guided/batch initialization require the external aoci CLI on the host; index browsing works without it.'
+  zh: 'DSH 的 AOCI 认知面板：多工作区总览、单仓库索引与治理视图、MCP 绑定诊断，以及引导式/批量初始化。治理、校验与引导式/批量初始化需宿主机装有 aoci CLI；仅浏览索引不需要。'

@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-power
+name: 173787247/dsh-wsl-power
+category: wsl
+description:
+  en: "Windows power state from WSL: active power plan, all schemes, battery, sleep timeout and hibernation availability."
+  zh: "Windows 电源：当前方案、全部方案、电池、休眠超时与是否支持休眠。"

@@ -1,0 +1,6 @@
+url: https://github.com/Paimonshen/dsh-coding-plugin
+name: Paimonshen/dsh-coding-plugin
+category: ui
+description:
+  en: 'Coding-learn floating panel: edits and runs Python/JavaScript/TypeScript/PowerShell with exit code and timing, grades JSON course lessons with progress export, keeps Markdown notes and snippet library, and sends code plus a question into the current conversation for the main model to answer.'
+  zh: '编程学习悬浮面板：编辑并运行 Python/JavaScript/TypeScript/PowerShell（含退出码与耗时），JSON 课程包关卡自动评判并可导出进度，提供 Markdown 笔记与代码片段库；代码分析以用户消息直投当前对话，由对话主模型直接输出。'

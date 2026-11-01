@@ -1,0 +1,7 @@
+url: https://github.com/vaniawang/dsh-side-conversation
+name: vaniawang/dsh-side-conversation
+category: session
+description:
+  en: "Opens a native side conversation forked from the active conversation, with live parent context, Inline & Spill chain recall, relay to the main conversation, and usage stats."
+  zh: "把当前对话分叉成独立的原生侧边会话，注入父对话实时上下文，支持 Inline & Spill 链式召回、把请求或结论 relay 回主对话，并显示用量统计。"
+tarball: https://github.com/vaniawang/dsh-side-conversation/releases/download/v0.6.0/dsh-side-conversation-0.6.0.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/Eileenes/dsh-reel
+name: Eileenes/dsh-reel
+category: tools
+description:
+  en: A working Remotion prototype that turns a DSH plugin repository into a 16:9 promo video and a 3:4 promo image locally; its DSH bundle is scaffolded but has not yet been loaded into a real DSH profile. Requires Node.js 22+ and Chrome or Chromium for rendering.
+  zh: 本地用 Remotion 从 DSH 插件仓库生成 16:9 宣传片与 3:4 宣传图的可用原型；DSH bundle 仍是脚手架，尚未在真实 DSH profile 中加载验证。需 Node.js 22+ 与 Chrome/Chromium 渲染。

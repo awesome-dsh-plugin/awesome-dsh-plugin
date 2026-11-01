@@ -1,0 +1,7 @@
+url: https://github.com/hackmagic/dsh-unreal-agentlink
+name: hackmagic/dsh-unreal-agentlink
+category: tools
+tarball: https://github.com/hackmagic/dsh-unreal-agentlink/releases/download/v0.1.0/dsh-unreal-agentlink-0.1.0.tgz
+description:
+  en: 'Bridge to the UnrealAgentLink editor plugin: the Unreal Engine editor dials this WebSocket bridge on 127.0.0.1:17860 and the agent drives it through 12 tools covering all 170 cataloged commands (actors, levels, blueprints, materials, PCG, screenshots, logs, undo).'
+  zh: 'UnrealAgentLink 编辑器插件的桥接端：Unreal 编辑器拨入 127.0.0.1:17860 的 WebSocket 桥，agent 由此用 12 个工具驱动全部 170 个已编目命令（Actor、关卡、蓝图、材质、PCG、截图、日志、撤销）。'

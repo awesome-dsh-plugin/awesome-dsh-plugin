@@ -1,0 +1,6 @@
+url: https://github.com/yangdongzhen590/dsh-knj-prompts
+name: yangdongzhen590/dsh-knj-prompts
+category: ui
+description:
+  en: 'Prompt scene picker for DSH: choose a scene from a dropdown and it opens a new session with the prompt already filled in (with {variable} placeholders), so you only tweak and send.'
+  zh: '提示词场景选择器：下拉选场景即自动开新会话并填充提示词（支持 {变量}），微调即可发送。'

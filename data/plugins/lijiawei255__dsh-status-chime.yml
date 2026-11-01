@@ -1,0 +1,8 @@
+# awesome-dsh-plugin submission.
+# Only "description.en" is required; zh is provided because the author writes it.
+url: https://github.com/lijiawei255/dsh-status-chime
+name: lijiawei255/dsh-status-chime
+category: notify
+description:
+  en: 'Speaks a short status line when DSH changes state — turn done, turn error, job done, job failed, goal complete, goal blocked, an approval waiting, or the agent needs your answer — using eight pre-recorded clips in Chinese (default) and English. The audio is played by the host process through ffplay, or through the Windows PowerShell player that ships with the OS, so it does not depend on a Web Audio tab. Windows only.'
+  zh: 'DSH 状态变化时读出一句简短提示——本轮完成、本轮出错、后台任务结束、后台任务失败、目标完成、目标受阻、等待批准、等待你回答——中文（默认）与英文各八条预录语音。音频由宿主进程播放（ffplay，或系统自带的 Windows PowerShell 播放器），不依赖浏览器 Web Audio。仅支持 Windows。'

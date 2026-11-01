@@ -1,0 +1,6 @@
+url: https://github.com/OMSociety/dsh-ssh-tunnel
+name: OMSociety/dsh-ssh-tunnel
+category: remote
+description:
+  en: 'Multi-host SSH workbench: keep remote servers in a host library, grant them per project, and open an interactive terminal or dual-pane SFTP in the right sidebar, while the SSHManager tool runs remote commands and transfers files without exposing keys to the model.'
+  zh: '多机 SSH 工作台：把远程服务器收进主机库、按项目授权，在右侧栏里开交互式终端或双栏 SFTP；模型用 SSHManager 工具远程执行命令、上传下载文件，密钥不进模型上下文。'

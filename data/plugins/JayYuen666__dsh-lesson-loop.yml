@@ -1,0 +1,6 @@
+url: https://github.com/JayYuen666/dsh-lesson-loop
+name: JayYuen666/dsh-lesson-loop
+category: memory
+description:
+  en: 'Turns guard denials, gate failures and human thumb-downs into project lessons, and injects only the rules a human has armed into each new session of that project; it registers no model tools and is reviewed through its settings card.'
+  zh: '把拦截拒绝、门禁失败与人工差评沉淀为项目教训，只把人工确认过的规则注入该项目之后的新会话；它不注册模型工具，通过设置卡评审规则。'

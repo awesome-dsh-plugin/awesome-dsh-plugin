@@ -1,0 +1,7 @@
+url: https://github.com/Passenger-Qin/dsh-task-splitter
+name: Passenger-Qin/dsh-task-splitter
+category: workflow
+tarball: https://github.com/Passenger-Qin/dsh-task-splitter/releases/download/v0.1.1/dsh-task-splitter-0.1.1.tgz
+description:
+  en: "Host-side long-task detection for small-context local models: long outputs are scaffolded into a parts skeleton (one part per reply, then assemble), and multi-step work into a PLAN.md ledger with notes/ (plan first, one step per reply). Detection is heuristic and host-side, so it does not depend on the model judging its own limits."
+  zh: "面向小上下文本地模型的宿主侧长任务识别：长产出自动拆成分段骨架（每轮只写一段，最后拼装），多步骤任务自动建立 PLAN.md 台账与 notes/（先立计划、每轮执行一步）。判定在宿主侧用启发式完成，不依赖模型自己判断极限。"

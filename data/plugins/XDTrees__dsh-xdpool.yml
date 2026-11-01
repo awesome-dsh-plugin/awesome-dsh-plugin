@@ -1,0 +1,6 @@
+url: https://github.com/XDTrees/dsh-xdpool
+name: XDTrees/dsh-xdpool
+category: model
+description:
+  en: 'Merge every locally signed-in WorkBuddy account into DeepSeek Harness as one auto-failing-over model pool: multi-account rotation, 429 cooldowns, live credits, a model catalog with per-model credit multipliers and free/night-discount tags, QR-code login for 13 vendors, and aggregate free-tier channels. Accounts persist across restarts.'
+  zh: '把本机 WorkBuddy 桌面 App 登录过的所有账号自动并入 DSH 模型池：多账号轮换自动容错、429 冷却、实时积分，模型目录按模型标注积分倍率与限时免费 / 夜间折扣，扫码登录 13 家厂商，聚合免费额度渠道。账号重启不丢。'

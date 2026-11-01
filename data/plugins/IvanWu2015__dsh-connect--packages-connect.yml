@@ -1,0 +1,6 @@
+url: https://github.com/IvanWu2015/dsh-connect/tree/main/packages/connect
+name: IvanWu2015/dsh-connect#connect
+category: notify
+description:
+  en: 'Bridges DeepSeek Harness sessions to Feishu/Lark, Telegram and DingTalk: each chat is bound to a resumable DSH session, replies stream back as cards, and a task-end card reports the model, token usage, step count and duration. Question and permission-approval cards are answerable from the chat, and a web settings pane configures the per-channel credentials.'
+  zh: '把 DeepSeek Harness 会话接入飞书/Lark、Telegram 与钉钉：每个聊天绑定一个可续接的 DSH 会话，回复以卡片流式回传，任务结束时用一张结果卡汇报模型、token 用量、步数与耗时。提问与权限审批可直接在聊天里作答，各渠道凭据在 Web 设置面板中配置。'

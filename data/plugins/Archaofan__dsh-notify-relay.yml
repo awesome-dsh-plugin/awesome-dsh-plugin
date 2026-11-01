@@ -1,0 +1,7 @@
+url: https://github.com/Archaofan/dsh-notify-relay
+name: Archaofan/dsh-notify-relay
+category: notify
+description:
+  en: Routes eight DSH lifecycle events through dedup, quiet hours and digest batching into seven channels. Severity maps to the fields Bark, ntfy, Telegram and webhooks actually support; failed deliveries retry with jittered backoff and survive a restart; per-channel circuit breakers stop hammering a dead endpoint; and a self-check reports a degraded relay instead of going silent.
+  zh: 把 DSH 的八类生命周期事件过去重、免打扰、摘要合批三道关后外发到七个通道。严重度映射到 Bark、ntfy、Telegram 和 webhook 真正支持的字段；失败投递带抖动退避重试并可跨重启恢复；单通道熔断避免反复敲一个已死的地址；自检发现中继降级时主动报告而不是静默。
+tarball: https://github.com/Archaofan/dsh-notify-relay/releases/download/v0.3.2/dsh-notify-relay-0.3.2.tgz

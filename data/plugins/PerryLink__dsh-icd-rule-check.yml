@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-icd-rule-check
+name: PerryLink/dsh-icd-rule-check
+category: tools
+description:
+  en: "Flags ICD coding pairs that need a coder's attention - dagger and asterisk combinations, combination codes - against GB/T 14396-2016 and published ICD usage notes. Reports the pairs it finds rather than resolving them; the coding decision stays with the coder."
+  zh: "依据 GB/T 14396-2016 与公开的 ICD 使用说明，提示需要编码员关注的 ICD 编码配对——剑号与星号组合、合并编码。只报告发现的配对，不代为判定，编码结论仍由编码员作出。"

@@ -1,0 +1,7 @@
+url: https://github.com/Missher12/Missher-DSH-Context-Manager
+name: Missher12/Missher-DSH-Context-Manager
+category: session
+description:
+  en: "Inspect conversation context and apply configurable compaction with usage history."
+  zh: "查看会话上下文、用量记录，并按设置执行压缩。"
+tarball: https://github.com/Missher12/Missher-DSH-Context-Manager/releases/download/v0.7.0-local.2/missher-dsh-context-manager-0.7.0-local.2.tgz

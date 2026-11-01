@@ -1,0 +1,6 @@
+url: https://github.com/dotdance/dsh-skill-scope
+name: dotdance/dsh-skill-scope
+category: skill
+description:
+  en: 'Lighten the load on your agent: one-click toggles for skills and MCP, so the context holds only what this turn actually needs. Skills and MCP servers you switch off are no longer injected into the model context — cleaner, and lighter on tokens.'
+  zh: '给你的 Agent 减负：Skill 与 MCP 一键启停，让上下文只装这一轮真正要用的能力。关掉的 skill / MCP 不再进入模型上下文，更干净，更省 token。'

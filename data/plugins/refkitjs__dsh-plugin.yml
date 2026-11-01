@@ -1,0 +1,6 @@
+url: https://github.com/refkitjs/dsh-plugin
+name: refkitjs/dsh-plugin
+category: tools
+description:
+  en: 'Reference search for DeepSeek Harness: refkit_search looks up image, video, audio and text references across 24 open sources and tags each result with its normalized license and a use verdict for the intended use; refkit_rights re-checks one license against another use. Source keys and search tuning live on a settings page. 11 of the 24 sources need API keys; the use verdict is returned only when an intended use is passed. Runs on DSH ^0.1.7-rc.2 || ^0.2.1-rc.2 (tested on 0.1.7-rc.2 and 0.2.1-rc.2).'
+  zh: 'DeepSeek Harness 的参考素材检索插件：refkit_search 在 24 个开放来源中检索图片、视频、音频和文本参考素材，为每条结果标注规范化的许可证和针对用途的可用性判定；refkit_rights 针对另一种用途复核单条许可证。来源 key 与检索参数在设置页配置。24 个来源中 11 个需要 API key；仅在传入用途时返回可用性判定。支持 DSH ^0.1.7-rc.2 || ^0.2.1-rc.2（实测 0.1.7-rc.2 与 0.2.1-rc.2）。'

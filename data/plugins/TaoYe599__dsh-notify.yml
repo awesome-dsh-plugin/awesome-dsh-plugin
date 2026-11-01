@@ -1,0 +1,7 @@
+url: https://github.com/TaoYe599/dsh-notify
+name: TaoYe599/dsh-notify
+category: notify
+description:
+  en: Desktop notifications for DeepSeek Harness — a web notification while a browser page holds the plugin (turn completion and pending questions), and a native Windows toast from the host for finished turns once the browser is closed.
+  zh: DSH 桌面通知：页面开着时弹网页通知（回合结束与待回复问题），浏览器关掉后由 Host 对已完成的回合弹 Windows 原生通知。
+tarball: https://github.com/TaoYe599/dsh-notify/releases/download/v0.1.0/dsh-notify-0.1.0.tgz

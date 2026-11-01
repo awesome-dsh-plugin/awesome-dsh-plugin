@@ -1,0 +1,6 @@
+url: https://github.com/BillCx330/dsh-plugin-notify-sounds
+name: BillCx330/dsh-plugin-notify-sounds
+category: notify
+description:
+  en: 'Native-style notification sounds for DeepSeek Harness: a chime when the agent needs your decision or finishes a task, clickable system notifications that jump back to the window, repeat reminders, quiet hours, and goal-mode alerts that wait for the final round.'
+  zh: 'DeepSeek Harness 原生风格提示音插件：智能体需要你决策或任务完成时播放提示音，点击系统通知可跳回窗口；支持重复提醒、静音时段，以及目标模式下只在最终轮提醒。'

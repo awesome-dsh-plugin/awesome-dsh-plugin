@@ -5,5 +5,5 @@ url: https://github.com/jackyytche/dsh-hindsight-memory
 name: jackyytche/dsh-hindsight-memory
 category: memory
 description:
-  en: 'Hindsight long-term memory for DeepSeek Harness: injects relevant memories before each turn and retains finished turns to a Hindsight bank.'
-  zh: '接入 Hindsight 长期记忆：每轮开始前自动注入相关记忆，回合结束后自动沉淀对话。'
+  en: 'Hindsight long-term memory for DeepSeek Harness: injects relevant memories before each turn and retains finished turns to a Hindsight bank. Requires DSH ^0.2.0-rc.1 (verified on 0.2.0-rc.2).'
+  zh: '接入 Hindsight 长期记忆：每轮开始前自动注入相关记忆，回合结束后自动沉淀对话。需要 DSH ^0.2.0-rc.1（已在 0.2.0-rc.2 验证）。'

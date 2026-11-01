@@ -1,0 +1,6 @@
+url: https://github.com/sunzphy/dsh-sidebar-status
+name: sunzphy/dsh-sidebar-status
+category: usage
+description:
+  en: 'DeepSeek account wallet balance and the current peak or off-peak billing period, in a fixed status region at the sidebar foot, with a manual refresh and an official top-up link.'
+  zh: '侧边栏底部固定状态区：DeepSeek 账号钱包余额、当前计费时段（高峰/空闲）、手动刷新与官方充值入口。'

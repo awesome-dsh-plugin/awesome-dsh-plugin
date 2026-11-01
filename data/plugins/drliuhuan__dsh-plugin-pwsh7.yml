@@ -1,0 +1,6 @@
+url: https://github.com/drliuhuan/dsh-plugin-pwsh7
+name: drliuhuan/dsh-plugin-pwsh7
+category: dev
+description:
+  en: Replaces the Windows pwsh executor row so the model-facing pwsh tool runs PowerShell 7, with a shell_router tool for status, diagnosis, and per-user portable installation.
+  zh: 在 Windows 上替换 pwsh 执行器行，让模型侧 pwsh 工具运行 PowerShell 7，并提供 shell_router 工具做状态、诊断与用户级便携安装。

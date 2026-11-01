@@ -1,0 +1,6 @@
+url: https://github.com/blacktaoK/dsh-skill-zh-overlay
+name: blacktaoK/dsh-skill-zh-overlay
+category: ui
+description:
+  en: 'Chinese summaries for the dsh-skill-mcp-panel skill cards: each expanded card gets a short Chinese overview, a category tag and a few bullet points, while the English description the panel already renders is folded behind a "原文" toggle. Skills missing from the bundled map are translated on demand by the host with your current default model and cached on disk, keyed by a hash of the original text, so a new skill needs no manual entry. Skills whose own description is already Chinese are skipped.'
+  zh: '给 dsh-skill-mcp-panel 的技能卡片加中文说明：展开卡片时显示一句话中文速览、分类标签和几条要点，面板原本渲染的英文描述折进「原文」按钮。手写映射表里没有的英文技能，由宿主用你当前的默认模型按需现场生成并落盘缓存，缓存按原文哈希失效，所以新装的技能不用再手工补条目。技能自带描述已是中文的自动跳过。'

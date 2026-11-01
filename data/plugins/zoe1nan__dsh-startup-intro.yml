@@ -1,0 +1,7 @@
+url: https://github.com/zoe1nan/dsh-startup-intro
+name: zoe1nan/dsh-startup-intro
+category: ui
+description:
+  en: Startup video intro with per-clip playback parameters (segment, speed, brightness, fit, blurred cinema fill, hold ratio and fade duration) and light/dark clip variants selected by the app theme.
+  zh: 启动时播放视频开场，每段素材可独立调节播放片段、速度、亮度、画面适配、影院模糊填充、展示比例与淡出时长，并按应用浅色/深色外观自动选择对应版本。
+tarball: https://github.com/zoe1nan/dsh-startup-intro/releases/download/v1.1.0/dsh-startup-intro-1.1.0.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/FideFeiPlane/dsh-auto-maximize
+name: FideFeiPlane/dsh-auto-maximize
+category: ui
+description:
+  en: Maximizes the DeepSeek Harness desktop window automatically on startup, equivalent to clicking the maximize button once. Cross-platform (Windows/macOS/Linux), best-effort, host-only.
+  zh: DSH 桌面版启动时自动最大化主窗口，等价于手动点一次最大化按钮。跨平台（Windows/macOS/Linux），尽力而为，host-only 插件。

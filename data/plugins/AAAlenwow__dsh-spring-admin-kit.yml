@@ -1,0 +1,6 @@
+url: https://github.com/AAAlenwow/dsh-spring-admin-kit
+name: AAAlenwow/dsh-spring-admin-kit
+category: skill
+description:
+  en: 'Spring Boot admin toolkit: EasyExcel batch import/export code generation and Thymeleaf + LayUI template safety guard.'
+  zh: 'Spring Boot 后台开发套件：EasyExcel 批量导入导出代码生成与 Thymeleaf + LayUI 模板安全守卫。'

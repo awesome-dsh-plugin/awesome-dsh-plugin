@@ -1,0 +1,6 @@
+url: https://github.com/yryd/dafy-whale-theme
+name: yryd/dafy-whale-theme
+category: theme
+description:
+  en: 'Ocean-blue theme for the DSH web interface: swimming fish, rising bubbles, a daily-quote ticker above the input box, and a replacement brand area; Settings → Marine Theme exposes 7 groups and 32 options (brand text and size, badge, primary color, watermark, fish, quotes, overall scale) that apply instantly without a reload, plus a two-step reset to defaults.'
+  zh: '海洋蓝主题：游动鱼群、上升气泡、输入框上方的「每日鱼语」，以及左上角品牌区替换；「设置 → 海洋主题」提供 7 组 32 项可调（品牌文字与字号、徽章、主色、水印、鱼群、语录、整体缩放），改动即时生效无需刷新，并带二次确认的一键恢复默认。'

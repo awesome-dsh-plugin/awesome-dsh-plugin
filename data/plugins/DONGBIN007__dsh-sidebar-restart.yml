@@ -1,0 +1,6 @@
+url: https://github.com/DONGBIN007/dsh-sidebar-restart
+name: DONGBIN007/dsh-sidebar-restart
+category: ui
+description:
+  en: Adds a Restart row to the desktop app's sidebar foot beside Settings that restarts the app and reloads the page onto the newly installed plugin bundle.
+  zh: 在桌面版侧边栏底部、「设置」旁边新增一个「重启」按钮，重启应用，并在页面重连后加载到刚安装的插件包。

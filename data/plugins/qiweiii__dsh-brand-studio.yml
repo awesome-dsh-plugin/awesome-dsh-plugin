@@ -1,0 +1,6 @@
+url: https://github.com/qiweiii/dsh-brand-studio
+name: qiweiii/dsh-brand-studio
+category: ui
+description:
+  en: "Custom branding for the shared DSH Web UI: a Settings → Branding panel for the name, badge, and local logo/wordmark images with size and rounding, live preview, optional page-title brand, and reset to the official look."
+  zh: "DSH 共享网页界面的自定义品牌：在「设置 → 品牌」中修改名称、徽章，选择本地 logo 和字标图片并调整大小与圆角、实时预览、可选自定义页面标题、一键恢复官方外观。"

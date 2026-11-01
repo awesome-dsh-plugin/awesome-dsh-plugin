@@ -1,0 +1,6 @@
+url: https://github.com/BeyondandSharp/dsh-plugin-scaling
+name: BeyondandSharp/dsh-plugin-scaling
+category: ui
+description:
+  en: 'Independent per-pane zoom for the DSH web shell: Ctrl+wheel over a pane, Ctrl+± / Ctrl+0 for the focused pane. Works with the official look and every skin.'
+  zh: 支持 DSH Web 上的每个面板独立缩放：鼠标悬浮在面板上 Ctrl+滚轮，或对选中的面板 Ctrl+±，Ctrl+0恢复。兼容官方界面风格及皮肤。

@@ -1,0 +1,6 @@
+url: https://github.com/58catmiao/dsh-sciwork
+name: 58catmiao/dsh-sciwork
+category: tools
+description:
+  en: "A research library panel and skill set for DSH: project folders, figures with registered provenance, drafts, references, data tables, journal profiles and submissions, plus writing, citation and Origin-plotting discipline for research agents."
+  zh: "给 DSH 的科研库面板与技能组：课题目录、带溯源的图表登记、草稿、文献、数据表、期刊档案、投稿台账，以及面向科研智能体的写作、引用与 Origin 出图纪律（出图需另装 dsh-origin-plugin）。"

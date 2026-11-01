@@ -1,0 +1,6 @@
+url: https://github.com/Negulons/dsh-freecad
+name: Negulons/dsh-freecad
+category: tools
+description:
+  en: 'Reads and edits STEP models through FreeCAD, measures geometry (distance, angle, diameter), and generates first-angle 2D machining drawings with a hole table as SVG, DXF, PDF or PNG.'
+  zh: '通过 FreeCAD 读写 STEP 模型、量取几何尺寸（距离、角度、直径），并生成带孔表的第一角法二维加工图，可导出 SVG、DXF、PDF、PNG。'

@@ -1,0 +1,6 @@
+url: https://github.com/luongthimydieu/dsh-client-ui-skin-kitty
+name: luongthimydieu/dsh-client-ui-skin-kitty
+category: theme
+description:
+  en: 'Hello Kitty pink theme skin for the DSH Web UI: overrides the --dsw-alias-* semantic tokens in light and dark mode and paints a custom wallpaper on the app frame. Installs as a static profile plugin, so the theme restores automatically on every Harness start.'
+  zh: DSH Web UI 的 Hello Kitty 粉色主题皮肤：覆盖 --dsw-alias-* 语义 token（浅色/深色），并给主框架铺上自定义壁纸；作为静态 profile 插件安装，Harness 每次启动自动恢复。

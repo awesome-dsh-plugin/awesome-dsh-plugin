@@ -1,0 +1,7 @@
+url: https://github.com/wangtheme-coder/dsh-greeting
+name: wangtheme-coder/dsh-greeting
+category: ui
+tarball: https://github.com/wangtheme-coder/dsh-greeting/releases/download/v0.2.0/dsh-greeting-0.2.0.tgz
+description:
+  en: 'Adds a time-aware greeting line under the DSH home hero headline: seven local-time slots with tsundere whale-girl lines, phrase overrides through ~/.dsh/greeting.json, and Ctrl+R / F5 bound back to a real page reload.'
+  zh: '给 DSH 主页 / 新会话 hero 区加一行按时段变化的问候语：按本地时间分 7 个时段随机抽句、内置傲娇鲸鱼娘台词、可用 ~/.dsh/greeting.json 覆盖任意时段，并顺手把 Ctrl+R / F5 接回页面刷新。'

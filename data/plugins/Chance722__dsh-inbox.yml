@@ -1,0 +1,6 @@
+url: https://github.com/Chance722/dsh-inbox
+name: Chance722/dsh-inbox
+category: memory
+description:
+  en: 'Personal paste inbox for DeepSeek Harness (dsh): /inbox in the composer or the sidebar panel files links, images, text and credentials into a local vault, classifies them by local rules and then by a rate-capped model pass, and browses, searches and edits them from the panel; the assistant retrieves records on request in conversation, credential bodies stay encrypted at rest, and an optional WebDAV or S3 remote syncs records and attachment bytes. Windows only so far.'
+  zh: 'dsh 的个人收件箱：输入框的 /inbox 或侧栏面板把链接、图片、文本与账密收进本地仓库，先按本地规则、再由有每日上限的模型分类，可在面板里筛选、搜索与编辑；对话里让助手按需检索取回，账密正文加密落盘，可选 WebDAV 或 S3 远端同步记录与附件字节。目前只在 Windows 实测。'

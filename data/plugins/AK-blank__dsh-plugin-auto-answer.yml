@@ -1,0 +1,6 @@
+url: https://github.com/AK-blank/dsh-plugin-auto-answer
+name: AK-blank/dsh-plugin-auto-answer
+category: workflow
+description:
+  en: 'Keeps an unattended DeepSeek Harness session moving when nobody answers ask_user_question: it fronts the question waterfall, leaves a human answer untouched, and after a configurable window (120 s by default) submits the option marked (Recommended)/（推荐）, or the configured first/last fallback; plan reviews stay with the human unless explicitly enabled.'
+  zh: '无人值守时没人回答 ask_user_question，也让会话继续走：站在问题 waterfall 前面，有人回答就原样放行；超过可配置窗口（默认 120 秒）后提交标了（推荐）/(Recommended) 的选项，或按 first/last 兜底；计划审批默认仍交给人，需显式开启。'

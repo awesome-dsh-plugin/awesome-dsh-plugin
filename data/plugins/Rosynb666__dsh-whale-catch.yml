@@ -1,0 +1,7 @@
+url: https://github.com/Rosynb666/dsh-whale-catch
+name: Rosynb666/dsh-whale-catch
+category: tools
+description:
+  en: "Right-sidebar basket that collects the files a session produced or changed without the agent having to register them, with preview, zip packaging, and one-click archiving."
+  zh: "右侧栏「鱼篓」不用 agent 登记，自动汇总本场会话产出或改动的文件，支持预览、一键打包 zip 与归档。"
+  

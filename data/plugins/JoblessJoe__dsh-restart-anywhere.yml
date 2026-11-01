@@ -1,0 +1,6 @@
+url: https://github.com/JoblessJoe/dsh-restart-anywhere
+name: JoblessJoe/dsh-restart-anywhere
+category: dev
+description:
+  en: 'Adds a Restart dsh button above Settings that restarts dsh in place: through systemd when dsh runs as a systemd unit, otherwise via process.execve with the same PID (a thin wrapper parent on Windows or Node < 22.15), so whatever started dsh needs no supervisor config (verified on Linux; Docker, macOS and Windows not yet run for real); the page reloads once the new boot id answers.'
+  zh: '在「设置」上方添加「重启 dsh」按钮，原地重启：以 systemd 单元运行时由 systemd 重启，否则通过 process.execve 保持同一 PID（Windows 或 Node < 22.15 时保留一个轻量父进程），启动 dsh 的守护进程或终端无需额外配置（已在 Linux 实测，Docker、macOS、Windows 尚未实机测试）；新 boot id 响应后页面自动刷新。'

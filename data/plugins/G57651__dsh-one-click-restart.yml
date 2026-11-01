@@ -1,0 +1,6 @@
+url: https://github.com/G57651/dsh-one-click-restart
+name: G57651/dsh-one-click-restart
+category: dev
+description:
+  en: "One-click restart for DeepSeek Harness via a sidebar button, a model tool, and a detached watchdog."
+  zh: "DeepSeek Harness 一键重启：侧边栏按钮、模型工具与独立守护进程。"

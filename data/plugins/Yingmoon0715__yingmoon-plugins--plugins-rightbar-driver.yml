@@ -1,0 +1,7 @@
+url: https://github.com/Yingmoon0715/yingmoon-plugins/tree/main/plugins/rightbar-driver
+name: Yingmoon0715/yingmoon-plugins#plugins/rightbar-driver
+category: browser
+icon: https://raw.githubusercontent.com/Yingmoon0715/yingmoon-plugins/main/plugins/rightbar-driver/assets/icon-180.png
+description:
+  en: 'Drives the DSH right-sidebar built-in browser from the agent side with 38 tools (open, navigate, read page text and interactive elements, accessibility tree, click, fill, select, check, key press, scroll, resize the browser frame by dragging its corner, with the page inside reflowing responsively so a narrowed frame shows the mobile layout, screenshot, full-page screenshot, PDF, markdown export, scrape to JSON, download, cookies, per-step operation records with replay and action whitelisting), serves the built-in web_search from a self-hosted SearXNG over an SSH tunnel with Tavily and a real-browser fallback, and registers a fetch provider that retries blocked GitHub URLs through measured mirrors and sniffs charset from the response header so GBK and GB2312 pages decode correctly.'
+  zh: '用 38 个工具从 agent 侧驱动 DSH 右推栏内置浏览器：打开、导航、读取页面正文与可交互元素、无障碍树、点击、填字、选下拉框、勾选、按键、滚动、拖动网页框边角改变大小，框内网页随之响应式重排，框宽收窄即呈现手机版布局、截图、整页截图、导出 PDF、导出 markdown、按选择器提取 JSON、下载文件、存取 Cookie，以及带序号的操作记录、重放与动作白名单。同时把内置 web_search 接到自建 SearXNG（经 SSH 隧道，Tavily 与真实浏览器作兜底），并注册抓取提供者：被墙的 GitHub 地址按实测可用的镜像顺序重试，并从响应头嗅探字符集，使 GBK 与 GB2312 页面正确解码。'

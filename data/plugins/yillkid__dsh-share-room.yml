@@ -1,0 +1,6 @@
+url: https://github.com/yillkid/dsh-share-room
+name: yillkid/dsh-share-room
+category: session
+description:
+  en: 'Invites people into one conversation through single-use links with no account: up to 20 guests discuss together and ask the AI, the shared fork runs read-only, and the owner can remove guests or end the share at any time.'
+  zh: '用一次性链接邀请别人加入同一段对话，不需要账号：最多 20 位访客一起讨论、一起问 AI，分享用的 fork 以只读权限运行，所有者可以随时移除访客或结束分享。'

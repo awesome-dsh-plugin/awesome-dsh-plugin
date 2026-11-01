@@ -1,0 +1,46 @@
+name: Site health
+
+# The 2026-09-09 → 2026-09-25 freeze at dshmarket.com was silent: eighteen days
+# of failed builds left no trace outside the repository, because nothing was
+# watching the deployed bytes. This is the same guard for this site.
+#
+# The truth here is the repository's own data/plugins, not the published
+# plugins.json: both the pages and that catalog come out of one build, so
+# comparing the site against its own published catalog would compare it against
+# itself and a frozen build would always look healthy.
+#
+# Deliberately not at 02:23, when `build-site` runs: this must read a finished
+# deploy, not one in flight.
+
+on:
+  schedule:
+    - cron: '23 7 * * *'
+  workflow_dispatch:
+    inputs:
+      tolerance:
+        description: How many catalog entries the site may lag before this fails
+        type: number
+        default: 300
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-health
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: awesome-dsh-plugin.com is not stale
+        run: |
+          node scripts/check-site-health.mjs \
+            --live https://awesome-dsh-plugin.com/ \
+            --catalog-dir data/plugins \
+            --tolerance ${{ inputs.tolerance || 300 }}

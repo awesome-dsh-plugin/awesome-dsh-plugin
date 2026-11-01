@@ -1,0 +1,7 @@
+url: "https://github.com/aa2246740/dsh-cuadrive-mac"
+name: "aa2246740/dsh-cuadrive-mac"
+category: "tools"
+description:
+  en: "macOS computer-use tools backed by a plugin-owned Cua Driver runtime."
+  zh: "通过插件独立管理的 Cua Driver 运行时提供 macOS 电脑操作工具。"
+tarball: "https://github.com/aa2246740/dsh-cuadrive-mac/releases/download/v0.2.1/dsh-cua-drive-0.2.1.tgz"

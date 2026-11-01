@@ -1,0 +1,7 @@
+url: "https://github.com/aa2246740/dsh-model-fusion"
+name: "aa2246740/dsh-model-fusion"
+category: "model"
+description:
+  en: "Adds a model route where a Lead plans and reviews while a Sidekick performs code changes."
+  zh: "提供由 Lead 规划与审查、Sidekick 执行代码修改的组合模型线路。"
+tarball: "https://github.com/aa2246740/dsh-model-fusion/releases/download/v0.2.7/dsh-model-fusion-0.2.7.tgz"

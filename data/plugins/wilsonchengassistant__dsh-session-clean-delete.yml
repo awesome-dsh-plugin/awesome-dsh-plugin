@@ -1,0 +1,6 @@
+url: https://github.com/wilsonchengassistant/dsh-session-clean-delete
+name: wilsonchengassistant/dsh-session-clean-delete
+category: session
+description:
+  en: 'Adds a permanent Delete session action to the sidebar session menu, behind a confirmation dialog that reports the log size, running turns, subagents, background jobs and reminders bound to the session; the id is then released from the live, archive and workspace registries, so the row stays gone on refresh instead of folding back in.'
+  zh: '在侧栏会话菜单中增加「永久删除会话」的操作，并附带确认对话框：对话框会说明会话日志大小，以及与该会话绑定的进行中轮次、子代理、后台任务和提醒；删除后 id 会从 live、归档与工作区登记中一并释放，因此刷新列表时该行不会复活。'

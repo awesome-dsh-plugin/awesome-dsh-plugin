@@ -1,0 +1,7 @@
+url: https://github.com/yaanlaan/dsh-gitui
+name: yaanlaan/dsh-gitui
+category: git
+tarball: https://github.com/yaanlaan/ds-gitui/releases/download/v1.1.0/ds-gitui-1.1.0.tgz
+description:
+  en: "Visual Git graph, interactive branch management, and commit diff inspector in DeepSeek Harness right sidebar."
+  zh: "嵌入 DeepSeek Harness 右侧边栏的可视化 Git 提交图谱、交互式分支管理与代码差异比对工具。"

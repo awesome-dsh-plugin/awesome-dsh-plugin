@@ -1,0 +1,6 @@
+url: https://github.com/zhengjy01/dsh-task-dispatcher
+name: zhengjy01/dsh-task-dispatcher
+category: notify
+description:
+  en: "TickTick (滴答清单) daily task dispatcher: an interval timer pulls due tasks from a chosen list into a Markdown task file and notifies only when the task set changes (WeChat via ClawBot / flomo / macOS); it can also auto-execute each task in its own headless DSH session under a configurable timeout, optionally gated to DeepSeek's off-peak hours so peak-time work queues to the next off-peak window instead of starting, plus a settings panel for the deferred write-back queue and dispatcher_status / dispatcher_config / dispatcher_run / dispatcher_report tools."
+  zh: 滴答清单任务派发器：按间隔从指定清单拉取到期任务写入今日任务文件，仅在任务集变化时通知（微信 ClawBot / flomo / macOS）；可为每个任务单独开一个 headless DSH 会话自动执行（worker 超时可配），并可选只在 DeepSeek 空闲（优惠）时段开跑——高峰期把任务排到下个空闲窗口而不是立刻执行；带 Web 设置面板（延迟回写队列、省钱模式时段与状态）与 dispatcher_status / dispatcher_config / dispatcher_run / dispatcher_report 工具。

@@ -1,0 +1,6 @@
+url: https://github.com/zudazhuang/dsh-update-safe
+name: zudazhuang/dsh-update-safe
+category: dev
+description:
+  en: 'Source-install updater for DeepSeek Harness: checks the official GitHub release and the npm record, builds the target tag in an isolated directory, smoke-starts it, then switches through a supervisor process with rollback, with scheduled checks and a daily idle-only install window. Source install only (macOS/Linux); requires Node.js 22.19+, pnpm and Git.'
+  zh: 'DeepSeek Harness 源码安装的更新插件：核对官方 GitHub 发布与 npm 记录，在独立目录构建目标版本并试启动，再由监督进程切换、失败回滚，支持定时检查与每日空闲安装时段。仅支持源码安装（macOS/Linux）；需 Node.js 22.19+、pnpm 与 Git。'

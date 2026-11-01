@@ -1,0 +1,7 @@
+url: https://github.com/Bingtang1019/dsh-ppt-fusion
+name: Bingtang1019/dsh-ppt-fusion
+category: skill
+description:
+  en: 'Build PowerPoint decks from a brief: plan and storyboard gates, per-page authoring through pptwise and ppt-master, a design-profile pass, page-image snapshots with a render audit, and a tool that hands those pages to an image-capable model for review.'
+  zh: '从需求生成 PPTX：规划与分镜门、pptwise + ppt-master 页级作者、设计档案 pass、渲染页图快照与渲染审计，以及把页图交给支持图片的模型自评的工具。'
+tarball: https://github.com/Bingtang1019/dsh-ppt-fusion/releases/latest/download/dsh-ppt-flashmade.tgz

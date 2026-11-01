@@ -1,0 +1,6 @@
+url: https://github.com/ruanimal/dsh-bash-env
+name: ruanimal/dsh-bash-env
+category: dev
+description:
+  en: 'Replaces the built-in bash executor so every command gets an environment resolved from its own working directory: configurable PATH prepends, Python venv activation and mise shims, with a dedicated section in the Web UI settings.'
+  zh: '替换内置 bash 执行器，按每条命令的工作目录解析环境：可配置的 PATH 追加、Python venv 自动激活与 mise shims，并在 Web UI 设置中提供独立分区。'

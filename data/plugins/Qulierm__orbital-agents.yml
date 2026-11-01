@@ -1,0 +1,6 @@
+url: https://github.com/Qulierm/orbital-agents
+name: Qulierm/orbital-agents
+category: agi
+description:
+  en: Persistent Endeavour and Challenger peer sessions for DeepSeek Harness that plan, execute sequential tasks, and verify reported results.
+  zh: '为 DeepSeek Harness 提供常驻的 Endeavour 与 Challenger 对等会话：负责规划、按序执行任务，并核验汇报的结果。'

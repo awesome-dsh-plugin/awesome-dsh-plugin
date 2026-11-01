@@ -1,0 +1,6 @@
+url: https://github.com/LockyBee/dsh-douyin-agent
+name: LockyBee/dsh-douyin-agent
+category: browser
+description:
+  en: "Browses Douyin in a dedicated browser with daily viewing limits, shared local persona and interests, native settings, diagnostics, usage tracking, and reports. Replies and shares use selected conversations; group replies require a mention or configured name. Public comments require separate opt-in."
+  zh: "在专用浏览器中按每日时段和额度观看抖音，共享本地人格与兴趣，提供原生设置、自检、用量和观看日报。回复与分享限定所选好友和群聊，群聊仅在被 @ 或叫到设定昵称时回复；公开评论需单独开启。"

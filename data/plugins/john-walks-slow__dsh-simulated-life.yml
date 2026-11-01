@@ -1,0 +1,15 @@
+# awesome-dsh-plugin 投稿草稿（data/plugins/john-walks-slow__dsh-simulated-life.yml）
+# 前置：仓库满 1 天——GitHub 建于 2026-09-17 16:18 (+08:00)，2026-09-18 16:18 起可提 PR。
+# 流程：fork awesome-dsh-plugin → 只加这一个文件 → PR（README 由脚本生成，勿手改）。
+# 事实核对（2026-09-18）：topics（dsh-plugin / deepseek-harness / ai-agent）已打齐；
+# npm 发布后 package.json 的 repository 字段已回指本仓库，下载量自动关联。
+# 分类说明：官方分类表无 "agent"，最贴合本插件实际行为（生活事件记忆 + 生活日志沉淀）的是 memory；
+# 次选 session（会话上下文注入）/ fun（拟真人生体验）——按评审规则分类近似由维护者直接改，不会打回。
+# 搜索机制（dsh-market 实测源码）：索引 name/npm/owner/description(en+zh)/category，
+# 不索引 README 与 npm keywords——双语描述是唯一搜索优化面，关键词已密集嵌入。
+url: https://github.com/john-walks-slow/dsh-simulated-life
+name: john-walks-slow/dsh-simulated-life
+category: agi
+description:
+  en: 'Simulated life context for DeepSeek Harness: every turn injects the past 24h of simulated life events from the workspace .life/ directory (sliding-window filter, session-level deduplication with delta updates, world summary) as a collapsed context notice, and the life_react tool lets the agent record feelings, thoughts and actions back into its life log for the next round of world evolution — turning a DSH agent into a roleplay character with a persistent daily life.'
+  zh: '为 DeepSeek Harness 的 Agent 提供拟真生活上下文：每轮对话自动注入工作区 .life/ 目录近 24 小时的生活事件（滑动窗口过滤、会话内智能去重与增量更新、世界近况），并提供 life_react 工具让 Agent 把感受、思考与行动回填到自己的生活日志，反哺下一轮世界演化——把 DSH Agent 变成有日常生活的角色扮演人设（适合酒馆式 RP、AI 陪伴）；配合每日世界演算工作流可获得持续的模拟人生式生活轨迹。'

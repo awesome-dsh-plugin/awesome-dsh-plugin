@@ -1,0 +1,6 @@
+url: https://github.com/YUAN-OVO66/dsh-plugin-persona
+name: YUAN-OVO66/dsh-plugin-persona
+category: identity
+description:
+  en: 'Persona manager for DeepSeek Harness — a JSON-backed persona library, a per-session binding so each session can run a different persona, an optional default persona for sessions that have no binding, and switching that applies either at once or from the next session; the Web UI adds a Model personas settings page and a persona chip next to the composer, and three model tools let the model list, switch and create personas itself.'
+  zh: 'DSH 人格管理器：人格库存于一份 JSON，可按会话绑定人设、可为未绑定的会话指定默认人格，切换可选立即生效或下个会话生效；Web 端提供「模型人格」设置页与输入框旁的人格切换条，模型侧另有 persona_list / persona_switch / persona_create 三个工具可自行列出、切换与创建人格。'

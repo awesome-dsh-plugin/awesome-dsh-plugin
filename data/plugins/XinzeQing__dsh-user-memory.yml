@@ -1,0 +1,6 @@
+url: https://github.com/XinzeQing/dsh-user-memory
+name: XinzeQing/dsh-user-memory
+category: memory
+description:
+  en: "White-box memory in two parts: four user-authored long-term tiers (must-follow rules, behavior settings, user profile, optional rules) injected as one system-prompt section, plus a separate temporary working set (cross-session handoffs, stage goals, waiting items) with its own 1200-character budget that stops being injected once an entry is done. The long-term tiers are plain Markdown files the user can read and edit; the agent can only propose them, and nothing is written until the user accepts in the Chinese panel. Temporary entries are written only when the user explicitly asks, and live in <DSH_HOME>/temp-memory.json (created on first write), not in the memory directory. No auto-capture, no background writes, no network."
+  zh: "白箱两段记忆：四层用户自写的长期记忆（必须遵守／行为设定／用户画像／可选遵守）注入为系统提示词的一节；另有「临时记忆」（跨对话交接／阶段目标／等待项）独立成节、独立预算（默认 1200 字），条目完结即停止注入。长期记忆是记忆目录里可读可改的 Markdown 文件，AI 只能提议，用户在中文面板点「采纳」才写入；临时记忆只在用户明确要求时写入，存放在 <DSH_HOME>/temp-memory.json（首次写入才创建），不在记忆目录里。不自动采集、不后台回写、不联网。"

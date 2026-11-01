@@ -1,0 +1,7 @@
+url: https://github.com/ashz555/dsh-term-glossary
+name: ashz555/dsh-term-glossary
+category: ui
+tarball: https://github.com/ashz555/dsh-term-glossary/releases/latest/download/dsh-term-glossary.tgz
+description:
+  en: 'Select a term in a DeepSeek Harness conversation and press the Search button beside it to read the explanation in place: basic meaning, purpose and usage, with the token cost of that answer. The call is auxiliary — it writes nothing to the session log.'
+  zh: '在 DSH 对话里选中一个术语、点旁边的「搜索」按钮，就地解释基本含义、用途与用法，并显示这次回答消耗的 token；该调用是旁路调用，不写入会话日志。'

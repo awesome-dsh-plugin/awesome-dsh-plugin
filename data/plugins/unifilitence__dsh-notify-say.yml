@@ -1,0 +1,6 @@
+url: https://github.com/unifilitence/dsh-notify-say
+name: unifilitence/dsh-notify-say
+category: notify
+description:
+  en: 'Windows desktop notifications for DSH that speak the turn result by default: Windows TTS needs no download, and 13 VOICEVOX voice packs can be installed from the settings page. A completed alert waits until running subagents and background jobs finish; approval, question and error alerts fire immediately. Voice packs are downloaded from GitHub after a terms confirmation.'
+  zh: '为 DSH 提供 Windows 桌面通知，默认把回合结果读出来：Windows TTS 零下载即可用，另有 13 个 VOICEVOX 语音包可在设置页下载。完成提醒会等子代理与后台任务结束后再响；审批、提问、出错立即提醒。语音包从 GitHub 下载，下载前需确认使用条款。'

@@ -1,0 +1,6 @@
+url: https://github.com/kahomesl/dsh-chat-diff-summary-legacy
+name: kahomesl/dsh-chat-diff-summary-legacy
+category: ui
+description:
+  en: A per-turn change bar above the composer showing which files the turn changed and the line deltas, for DeepSeek Harness 0.1.5-rc.1 through 0.1.7.
+  zh: 输入框上方的本轮改动统计条，显示这一轮改了哪些文件、增删多少行，适配 DeepSeek Harness 0.1.5-rc.1 至 0.1.7。

@@ -1,0 +1,6 @@
+url: https://github.com/SOH4C4759/dsh-ui-sound
+name: SOH4C4759/dsh-ui-sound
+category: ui
+description:
+  en: "Audible feedback for the DSH web interface: button presses are classified by semantics (normal, primary, toggle, send, close, danger, link) and the current session's task transitions (started, finished, failed) plus any pending interaction play a cue, each scenario with its own cue picker and switch on a settings page. All 78 cues and 12 sound packs are synthesised in the browser with the Web Audio API, so the package ships no audio files and makes no network request. A community port of dsh-plugin-uisfx to DSH 0.2.0, with the ported changes recorded in PROVENANCE.md."
+  zh: 为 DSH Web 界面补上可听的语义反馈：按钮按下按语义分类发声（普通、主要、开关、发送、关闭、危险、链接），当前会话的任务开始、成功结束、失败结束以及出现待处理交互也各有一声，每个情景都能在设置页单独挑音效、单独开关。78 个 cue 与 12 个音色包全部由浏览器用 Web Audio API 实时合成，因此包里不含音频文件、也不发起网络请求。这是 dsh-plugin-uisfx 向 DSH 0.2.0 的社区移植版，改动逐条记录在 PROVENANCE.md。

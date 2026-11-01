@@ -1,0 +1,6 @@
+url: https://github.com/f-e-n-g-0531/dsh-code-review
+name: f-e-n-g-0531/dsh-code-review
+category: git
+description:
+  en: 'Read-only Git and SVN code review using the current DSH agent model, with change previews, explicit context and approval-gated model requests.'
+  zh: '复用当前 DSH Agent 模型只读审查 Git 与 SVN 变更，支持变更预览、显式上下文及经审批的模型请求。'

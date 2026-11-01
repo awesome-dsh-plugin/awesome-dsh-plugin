@@ -1,0 +1,6 @@
+url: https://github.com/zhangnan/dsh-chatgpt-oauth
+name: zhangnan/dsh-chatgpt-oauth
+category: model
+description:
+  en: Sign in with a ChatGPT account and view Codex subscription usage directly in DSH Web's model settings, with browser or device-code OAuth.
+  zh: 在 DSH Web 的模型设置中使用浏览器或设备码登录 ChatGPT 账号，并直接查看 Codex 订阅用量。

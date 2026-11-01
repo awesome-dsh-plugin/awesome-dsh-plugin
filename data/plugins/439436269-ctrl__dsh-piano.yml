@@ -1,0 +1,6 @@
+url: https://github.com/439436269-ctrl/dsh-piano
+name: 439436269-ctrl/dsh-piano
+category: fun
+description:
+  en: 'A piano keyboard in the DeepSeek Harness UI: click a key to play it, or hold and drag sideways for a glissando across the keys. Notes are synthesized live with Web Audio — no samples, no network, no third-party dependencies — and the volume and starting octave are remembered between sessions.'
+  zh: '在 DSH 界面里弹一条钢琴键盘：点单键出声，按住横向滑动就是刮奏。声音用 Web Audio 实时合成——零采样、零网络、零第三方依赖；音量与起始八度会被记住。'

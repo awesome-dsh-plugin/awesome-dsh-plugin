@@ -1,0 +1,6 @@
+url: https://github.com/shinelon/dsh-mcp-plugin
+name: shinelon/dsh-mcp-plugin
+category: ui
+description:
+  en: 'Manage DSH MCP servers from the web settings panel: list, add, edit, remove, enable/disable with live status.'
+  zh: 在 Web 设置面板管理 DSH 的 MCP 服务器：实时状态、新增、编辑、删除、启用/禁用。

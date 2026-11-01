@@ -1,0 +1,7 @@
+url: https://github.com/BaoBao1996121/dsh-chatgpt-subscription
+name: BaoBao1996121/dsh-chatgpt-subscription
+category: model
+description:
+  en: "Adds native Codex OAuth sign-in, main-Agent default model selection, and direct or local-proxy settings for DSH Desktop 0.2.0-rc.2 on Windows."
+  zh: "为 Windows 上的 DSH Desktop 0.2.0-rc.2 提供原生 Codex OAuth 登录、主 Agent 默认模型选择及直连或本地代理设置。"
+tarball: https://github.com/BaoBao1996121/dsh-chatgpt-subscription/releases/download/v0.1.3/dsh-chatgpt-subscription-0.1.3.tgz

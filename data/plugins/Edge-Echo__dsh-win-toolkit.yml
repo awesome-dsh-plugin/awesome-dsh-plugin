@@ -1,0 +1,6 @@
+url: https://github.com/Edge-Echo/dsh-win-toolkit
+name: Edge-Echo/dsh-win-toolkit
+category: wsl
+description:
+  en: "Windows-native tools for DSH agents: clipboard read and write, system notifications, hosts file inspection and network diagnostics, each returning structured data with UI cards from injection-safe PowerShell."
+  zh: "面向 DSH agent 的 Windows 原生工具：剪贴板读写、系统通知、hosts 文件查看与网络诊断，均返回结构化数据（带 UI 卡片），底层为防注入的 PowerShell。"

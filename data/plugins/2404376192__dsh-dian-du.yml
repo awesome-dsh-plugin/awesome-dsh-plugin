@@ -1,0 +1,6 @@
+url: https://github.com/2404376192/dsh-dian-du
+name: 2404376192/dsh-dian-du
+category: ui
+description:
+  en: 'Marks paragraphs or a single code line in an answer and asks the model about it in a docked right-hand column, leaving the conversation itself unmodified.'
+  zh: '点选回答中的段落或某一行代码，在右侧独立栏里向模型提问；左侧对话内容不被修改。'

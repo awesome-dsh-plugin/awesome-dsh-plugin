@@ -1,0 +1,6 @@
+url: https://github.com/iflytek/skillhub/tree/main/plugins/dsh
+name: iflytek/skillhub#dsh
+category: skill
+description:
+  en: Browse and search a SkillHub registry and manage local skill installation, updates, and removal inside DeepSeek Harness. Targets DSH 0.2.0-rc.2 and 0.2.1-rc.2; not yet compatible with 0.2.1-rc.3.
+  zh: 在 DeepSeek Harness 内浏览、搜索 SkillHub 技能，并管理本地技能的安装、更新和卸载。适配 DSH 0.2.0-rc.2 与 0.2.1-rc.2，暂不兼容 0.2.1-rc.3。

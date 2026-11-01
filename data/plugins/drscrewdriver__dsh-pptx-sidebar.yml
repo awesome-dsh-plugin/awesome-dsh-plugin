@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-pptx-sidebar
+name: drscrewdriver/dsh-pptx-sidebar
+category: docs
+description:
+  en: 'A dsh-better-sidebar reading view for .pptx decks: slides in deck order, bullet levels, speaker notes and inline pictures. Ceilings on archive size, per-part inflated bytes and slide count keep a deck from freezing the tab.'
+  zh: 'dsh-better-sidebar 的 .pptx 阅读视图：按演示顺序列出幻灯片，还原项目符号层级、演讲者备注与内嵌图片。归档体积、单部件解压字节与幻灯片数量均有上限，演示文稿不会卡死标签页。'

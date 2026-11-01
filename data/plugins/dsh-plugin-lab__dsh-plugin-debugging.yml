@@ -1,0 +1,6 @@
+url: https://github.com/dsh-plugin-lab/dsh-plugin-debugging
+name: dsh-plugin-lab/dsh-plugin-debugging
+category: dev
+description:
+  en: 'Runtime diagnostics for DSH plugins: live, restart, or hot reload.'
+  zh: 'DSH 插件运行时诊断：区分实时生效、重启和热重载。'

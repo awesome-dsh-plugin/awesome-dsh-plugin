@@ -1,0 +1,6 @@
+url: https://github.com/chinahhy/DSH-plugins/tree/main/packages/dsh-sidebar-quota
+name: chinahhy/DSH-plugins#dsh-sidebar-quota
+category: usage
+description:
+  en: 'Displays DeepSeek and MoonShot API balances, Codex remaining quotas, and estimated local daily API spending in the DSH sidebar.'
+  zh: '在 DSH 侧栏显示 DeepSeek、MoonShot API 余额、Codex 剩余额度及本机今日估算消费。'

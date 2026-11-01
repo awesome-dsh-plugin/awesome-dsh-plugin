@@ -1,0 +1,6 @@
+url: https://github.com/yzx4036/dsh-memory-snapshot
+name: yzx4036/dsh-memory-snapshot
+category: memory
+description:
+  en: Injects your existing markdown documents (notes, rules, knowledge-base files) into every dsh session's system prompt as read-only memory — list file or directory paths in `files`; no database, no service, no write path; UTF-8 byte-budgeted truncation with line-boundary fallback, total budget, YAML front-matter stripping, and freshness timestamps.
+  zh: 把本地已有的 markdown 文档（笔记、规则、知识库）按路径清单注入 dsh 每个会话的系统提示词，当只读记忆——无数据库、无服务、无写入通道；支持目录收集、UTF-8 字节预算截断、front-matter 剥离与新鲜度时间戳。

@@ -1,0 +1,6 @@
+url: https://github.com/zhengqiuyang/dsh-freeze
+name: zhengqiuyang/dsh-freeze
+category: security
+description:
+  en: 'Hermetic composition lock: fingerprints the profile''s dependencies, bundle order, lockfile and patch layer; booting a drifted composition warns, or fails under strict mode (the --frozen posture for CI).'
+  zh: '密闭组合锁：对 profile 的依赖、组合顺序、锁文件与补丁层取指纹；组合漂移时启动告警，strict 模式直接失败（CI 的 --frozen 姿态）。'

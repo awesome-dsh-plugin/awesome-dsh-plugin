@@ -1,0 +1,6 @@
+url: https://github.com/yiyunet/dsh-mcp-client-manager
+name: yiyunet/dsh-mcp-client-manager
+category: tools
+description:
+  en: 'DSH plugin: a settings panel to list, add, rewrite and toggle @deepseek-ai/dsh-mcp-client MCP rows — no more hand-writing them into cordis.patch.yml. Zero build, zero runtime dependencies.'
+  zh: 'DSH 插件：一块设置面板管理 @deepseek-ai/dsh-mcp-client 的 MCP 行——列出、新增、改写、启停，不必再手写 cordis.patch.yml；零构建、零运行依赖。'

@@ -1,0 +1,6 @@
+url: https://github.com/qgynisc/dsh-inline-pastes
+name: qgynisc/dsh-inline-pastes
+category: ui
+description:
+  en: 'Inline image chips for the DeepSeek Harness composer — paste an image and it lands in the text as a numbered chip (image-1.png) with hover preview. Images still ship through the official attachment pipeline, names restart per message, the dock and sent-message thumbnails carry a sequence badge, and a pre-send self-check warns when the names in the text no longer match the images in that message.'
+  zh: '在 DeepSeek Harness 输入框里粘贴图片，即在文字中插入 image-1.png 编号胶囊；图片仍走官方附件管线随消息发出。鼠标悬浮名字弹出缩略图预览卡，dock 与已发送气泡的缩略图带序号角标，发送前还会自检「文字里的名字」与「本条消息的图片」是否对得上。'

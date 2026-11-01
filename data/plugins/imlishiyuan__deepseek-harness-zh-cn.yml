@@ -1,0 +1,6 @@
+url: https://github.com/imlishiyuan/deepseek-harness-zh-cn
+name: imlishiyuan/deepseek-harness-zh-cn
+category: identity
+description:
+  en: 'Injects a fixed system-reminder at the first step of every turn asking the model to reason and answer in Simplified Chinese, while code, commands, file paths, and identifiers stay in English.'
+  zh: '每轮第一步注入固定的 system-reminder，要求模型用简体中文思考与回答，代码、命令、文件路径与标识符保持原文。'

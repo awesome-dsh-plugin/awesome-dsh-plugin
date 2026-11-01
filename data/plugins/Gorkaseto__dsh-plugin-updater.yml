@@ -1,0 +1,6 @@
+url: https://github.com/Gorkaseto/dsh-plugin-updater
+name: Gorkaseto/dsh-plugin-updater
+category: tools
+description:
+  en: 'Helps keeping tracked updates from plugins added from github with a simple usability UI.'
+  zh: 通过简单的可用性 UI 帮助跟踪从 github 添加的插件的更新。

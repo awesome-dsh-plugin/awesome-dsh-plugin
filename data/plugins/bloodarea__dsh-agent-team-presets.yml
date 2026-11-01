@@ -1,0 +1,6 @@
+url: https://github.com/bloodarea/dsh-agent-team-presets
+name: bloodarea/dsh-agent-team-presets
+category: workflow
+description:
+  en: 'Reusable Agent Team presets for DeepSeek Harness: a Settings page stores named Teams — a captain with its own prompt and tool allow-list, plus members carrying their own provider/model route, reasoning effort, prompt and tools — and a composer control applies one Team to the current Session, installing the captain prompt and registering the spawn_team_member, get_team_preset and update_team_preset tools.'
+  zh: 'DeepSeek Harness 的可复用智能体团队预设：设置页保存具名团队——队长带自己的提示词与工具白名单，成员各自带 provider/模型路由、推理强度、提示词与工具——编辑器栏的团队控件把选中的团队应用到当前会话，安装队长提示词，并注册 spawn_team_member、get_team_preset、update_team_preset 三个工具。'

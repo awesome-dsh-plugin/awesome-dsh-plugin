@@ -1,0 +1,7 @@
+url: https://github.com/TiJun-Prime/dsh-turn-delete
+name: TiJun-Prime/dsh-turn-delete
+category: session
+tarball: https://github.com/TiJun-Prime/dsh-turn-delete/releases/latest/download/dsh-turn-delete.tgz
+description:
+  en: 'Delete one finished turn from a DSH conversation without deleting the session — the trash button next to the last assistant reply removes the question, that reply and the tool records of the turn from the conversation surface and from the model context, while the session id, title, later turns and the append-only log stay; the removal is written as a persistent tombstone, so it survives a reload.'
+  zh: '从 DSH 会话中删除一个已结束的轮次而不删除会话本身——最后一条助手回复旁的垃圾桶按钮会把该轮的提问、这条回复与工具记录从对话界面和模型上下文中移除，而 Session id、标题、之后的轮次与只追加日志保持不变；删除以持久 tombstone 记录，刷新后依然生效。'

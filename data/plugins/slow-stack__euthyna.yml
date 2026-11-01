@@ -1,0 +1,6 @@
+url: https://github.com/slow-stack/euthyna
+name: slow-stack/euthyna
+category: security
+description:
+  en: 'Security-audit facts AI coding agents cannot compute, plus a verdict gate: euthyna history attributes deleted lines to commits and flags those from security fixes (--origins finds the first introducer), euthyna coverage reports which changed symbols no test ever invoked, and euthyna gate checks each finding against six gates, downgrading any without evidence to an observation.'
+  zh: '面向 AI 编码代理的确定性安全审计事实与结论门禁：euthyna history 把每行被删代码归因到提交并标记安全修复类删除（--origins 追到最初引入者），euthyna coverage 报告哪些改动符号从未被测试调用，euthyna gate 用六道门禁逐条校验结论，拿不出证据的一律降级为观察。'

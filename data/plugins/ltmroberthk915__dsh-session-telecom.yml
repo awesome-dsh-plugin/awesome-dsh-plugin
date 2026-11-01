@@ -1,0 +1,7 @@
+url: https://github.com/ltmroberthk915/dsh-session-telecom
+name: ltmroberthk915/dsh-session-telecom
+category: session
+description:
+  en: Copy session IDs, send messages to live or saved sessions, and view session token usage.
+  zh: 复制会话 ID、向在线或已保存的会话发送消息，并查看会话 token 用量。
+tarball: https://github.com/ltmroberthk915/dsh-session-telecom/releases/download/v1.0.0/dsh-session-telecom-1.0.0.tgz

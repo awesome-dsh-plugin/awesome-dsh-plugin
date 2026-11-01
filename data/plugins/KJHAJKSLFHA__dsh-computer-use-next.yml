@@ -1,0 +1,7 @@
+url: https://github.com/KJHAJKSLFHA/dsh-computer-use-next
+name: KJHAJKSLFHA/dsh-computer-use-next
+category: tools
+description:
+  en: 'macOS cross-application desktop tools for DSH using CuaDriver, with a hidden agent cursor, background window selection and post-action observations.'
+  zh: '基于 CuaDriver 的 macOS 跨应用桌面工具，默认隐藏虚拟光标，支持后台窗口选择和操作后界面回读。'
+tarball: https://github.com/KJHAJKSLFHA/dsh-computer-use-next/releases/download/v0.5.1/dsh-computer-use-next.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/yuehancn/dsh-tool-media
+name: yuehancn/dsh-tool-media
+category: tools
+description:
+  en: 'Drive a local ffmpeg as six structured tools: probe a file''s streams, transcode or trim it, pull evenly-spaced frames or the audio track, and compress video to a byte budget with two-pass encoding.'
+  zh: '把本机 ffmpeg 包成六个结构化工具：探流、转码裁剪、均匀抽帧、扒音轨，以及按目标体积做两遍编码压缩。'

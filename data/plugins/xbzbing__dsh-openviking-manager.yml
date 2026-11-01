@@ -1,0 +1,6 @@
+url: https://github.com/xbzbing/dsh-openviking-manager
+name: xbzbing/dsh-openviking-manager
+category: memory
+description:
+  en: 'Configuration UI for the official OpenViking memory plugin: connection and user-key setup, local connection diagnostics, a per-session memory toggle in the composer, memory isolation that keeps recall inside the current topic, and recall tuning for score threshold, injected item count, query expansion and excluded URIs.'
+  zh: '官方 OpenViking 记忆插件的配置管理界面：连接与用户 Key 配置、本机连接诊断、输入栏会话级记忆开关、按主题隔离的召回范围，以及分数阈值、注入条数、查询扩写与排除 URI 的召回调优。'

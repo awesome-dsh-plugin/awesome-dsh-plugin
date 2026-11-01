@@ -1,0 +1,6 @@
+url: https://github.com/wangdapeng325/dsh-oi-senior
+name: wangdapeng325/dsh-oi-senior
+category: skill
+description:
+  en: 'Competitive-informatics senior plugin for DeepSeek Harness: companion practice, three-version C++14 reference solutions, problem explanations, real g++ compile-and-judge (g++ required), and optional solution-record archiving to the ima notebook "信奥学长-题解复盘", for GESP / CSP-J/S / NOIP / NOI.'
+  zh: 'DeepSeek Harness 信奥学长插件：陪刷 + 三版 C++14 参考实现 + 解题说明，本地 g++ 真编译真评测（需 g++），做题记录可选归档到 ima 笔记本「信奥学长-题解复盘」，面向 GESP、CSP-J/S、NOIP、NOI。'

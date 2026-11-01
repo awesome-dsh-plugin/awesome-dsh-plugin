@@ -1,0 +1,7 @@
+url: https://github.com/Mooling0602/dsh-web-file-uploader
+name: Mooling0602/dsh-web-file-uploader
+category: ui
+description:
+  en: A file-upload plugin for the DeepSeek Harness.
+  zh: 为 DeepSeek Harness 设计的文件上传插件。
+tarball: https://github.com/Mooling0602/dsh-web-file-uploader/releases/download/1.0.0-rc.2/dsh-web-file-uploader-1.0.0-rc.2.tgz

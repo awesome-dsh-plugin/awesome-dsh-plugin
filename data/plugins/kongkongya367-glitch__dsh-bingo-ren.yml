@@ -1,0 +1,6 @@
+url: https://github.com/kongkongya367-glitch/dsh-bingo-ren
+name: kongkongya367-glitch/dsh-bingo-ren
+category: ui
+description:
+  en: "Adds a draggable restart button and a plugin panel to the DeepSeek Harness desktop app: it prompts when the profile plugin list changes, records additions and removals per profile, tracks trials, reports host startup state, and offers rollback, minimal boot and recoverable cleanup."
+  zh: "为 DeepSeek Harness 桌面端添加可拖动重启按钮与插件面板：插件清单变化时提醒重启，按 profile 记录新增与移除、跟踪试用、显示宿主启动状态，并提供回滚、最小启动与可恢复的残留清理。"

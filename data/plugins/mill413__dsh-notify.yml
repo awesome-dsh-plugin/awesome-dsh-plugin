@@ -1,0 +1,7 @@
+url: https://github.com/mill413/dsh-notify
+name: mill413/dsh-notify
+category: notify
+description:
+  en: Sends desktop notifications and custom HTTP pushes when tasks finish or need your attention.
+  zh: 在任务结束或需要处理时发送桌面通知和自定义 HTTP 推送。
+icon: https://raw.githubusercontent.com/mill413/dsh-notify/dev/assets/icon-256.png

@@ -1,0 +1,6 @@
+url: https://github.com/popu2do/dsh-call-session
+name: popu2do/dsh-call-session
+category: session
+description:
+  en: Run several DeepSeek Harness sessions side by side, hand work from one to another, and watch the whole collaboration on one read-only canvas.
+  zh: 并排运行多个 DeepSeek Harness 会话，让它们互相交接任务，并在同一张只读看板上看清整场协作。

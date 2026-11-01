@@ -1,0 +1,12 @@
+url: https://github.com/Monter-code/dsh-image-insight
+name: Monter-code/dsh-image-insight
+category: vision
+description:
+  en: >-
+    Structured image recognition: local sharp measurements plus a cloud vision model
+    return description, OCR with coordinates, object locations and fine-grained
+    attributes in one call; a fingerprint cache makes repeated images return in
+    milliseconds without spending model quota.
+  zh: >-
+    结构化图像识别：本地 sharp 感知 + 云端视觉模型，一次调用拿到描述、带坐标的 OCR、
+    目标定位与细粒度属性；图片指纹缓存让重复图片毫秒返回且不消耗模型额度。

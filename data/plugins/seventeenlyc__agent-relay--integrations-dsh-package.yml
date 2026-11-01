@@ -1,0 +1,7 @@
+url: https://github.com/seventeenlyc/agent-relay/tree/main/integrations/dsh-package
+name: Agent Relay
+category: workflow
+description:
+  en: "Cross-session task relay for DSH Desktop 0.2: six relay_* control tools, independent sidebar sessions, live host-origin discovery, durable turn-completion checks, and a bundled relay skill."
+  zh: "DSH Desktop 0.2 跨会话任务接力插件：提供 6 个 relay_* 控制工具、独立侧边栏会话、动态宿主地址发现、持久化回合完成检查及内嵌接力技能。"
+tarball: https://github.com/seventeenlyc/agent-relay/releases/download/v0.1.1/agent-relay-dsh-0.1.1.tgz

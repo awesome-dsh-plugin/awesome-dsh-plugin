@@ -1,0 +1,6 @@
+url: https://github.com/zhiqiangme/dsh-plugins/tree/main/dsh-opencode2api
+name: zhiqiangme/dsh-plugins#dsh-opencode2api
+category: model
+description:
+  en: 'Runs the standalone opencode2api backend (jasonxu114514/opencode2api, Windows x64/ARM64, no Docker or OpenCode CLI) with DSH and on exit stops only the process it launched; its settings card installs, updates or rolls back the backend from checksum-verified GitHub releases, copies the initial admin password and syncs /v1/models into an opencode2api provider with context, vision and reasoning efforts, re-syncing every 10 minutes.'
+  zh: 随 DSH 启动独立的 opencode2api 后端（jasonxu114514/opencode2api，Windows x64/ARM64，无需 Docker 或 OpenCode CLI），退出时只停自己拉起的进程；设置卡片可从经校验和验证的 GitHub Release 安装、更新或回滚后端，复制初始管理密码，并把 /v1/models 连同上下文、视觉与思考档位同步到 opencode2api 模型提供方，运行中每 10 分钟重同步。
