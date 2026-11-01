@@ -2,5 +2,5 @@ url: https://github.com/xkzm123/dsh-browser-bridge
 name: xkzm123/dsh-browser-bridge
 category: browser
 description:
-  en: 'Operate the Edge or Chrome window that is already open, without restarting it: list windows and tabs, read the page text, click an element by its accessible name, type text, scroll, screenshot, and run page queries — over UI Automation, SendInput and an optional Tampermonkey bridge. 16 tools. Windows only.'
-  zh: '操控已经打开的 Edge 或 Chrome 窗口，不重启浏览器：列出窗口与标签页、读取页面文本、按可访问名点击元素、输入文本、滚动、截图，以及执行页面查询——基于 UI Automation、SendInput 与可选的篡改猴桥。16 个工具。仅 Windows。'
+  en: 'Operate the Edge or Chrome window that is already open, without restarting it: choose a window once, then list tabs, read page text or DOM state, click by accessible name or by visible text, type text, scroll, wait for content, batch several steps into one call, and screenshot only when text cannot answer. 20 tools over UI Automation, SendInput and an optional Tampermonkey bridge. Windows only.'
+  zh: '操控已经打开的 Edge 或 Chrome 窗口，不重启浏览器：一次选定窗口后可列标签页、读页面文本或 DOM 状态、按可访问名或可见文字点击、输入文本、滚动、等待内容、把多步合成一次调用，只在文字答不了时才截图。20 个工具，基于 UI Automation、SendInput 与可选的篡改猴桥。仅 Windows。'
