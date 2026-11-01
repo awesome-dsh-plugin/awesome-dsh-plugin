@@ -1,0 +1,7 @@
+url: https://github.com/maxy1817/dsh-inline-edit
+name: maxy1817/dsh-inline-edit
+category: ui
+description:
+  en: 'Edit user messages and add or remove attachments inline, with settings to fork a conversation or regenerate its latest eligible task-starting message in place.'
+  zh: '原地修改用户消息文字及增删附件，可在设置中选择新建分支，或在当前对话重新生成最近一条符合条件的任务主消息。'
+tarball: https://github.com/maxy1817/dsh-inline-edit/releases/download/v0.2.5/dsh-inline-edit-0.2.5.tgz
