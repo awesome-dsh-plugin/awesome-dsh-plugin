@@ -1,0 +1,7 @@
+url: https://github.com/brickhu/dsh-plugins/tree/main/references
+name: brickhu/dsh-plugins#references
+category: ui
+icon: https://raw.githubusercontent.com/brickhu/dsh-plugins/main/references/icon.svg
+description:
+  en: 'Right-sidebar Reference Links tab that collects every http(s) URL from a conversation, with pins, per-link turn counts and a click-through list of the turns that mentioned it, search, manual renaming, single-link or whole-host hiding, and a Cmd/Ctrl+Shift+L shortcut. Titles come only from the conversation (markdown labels, web search results, fetched page titles) — no remote title scraping and no model calls.'
+  zh: '右栏「应用链接」标签页：汇总对话里出现的全部 http(s) URL，支持置顶、每条链接的轮次统计（可点开查看具体轮次并跳转）、搜索、手动改名、隐藏单条或整个主机，以及 Cmd/Ctrl+Shift+L 快捷键。标题只来自对话本身（Markdown 标签、联网搜索结果的标题、抓取到的页面标题），不做远程标题抓取，也不调用模型。'
