@@ -1,0 +1,8 @@
+url: https://github.com/baxuelong-lgtm/poleis-harness
+name: baxuelong-lgtm/poleis-harness
+category: remote
+description:
+  en: 'Poleis-based remote debugging for DeepSeek Harness: a Settings page that detects, installs, launches and logs in to Poleis, plus 33 MCP tools for screenshots, mouse and keyboard, file transfer, clipboard, port mapping, processes, shells and windows on a remote Windows machine. Windows x64 only.'
+  zh: '通过 Poleis 远程调试：设置页完成检测、安装、启动与登录，并用 33 个 MCP 工具在远端 Windows 机上截屏、控制键鼠、传输文件、读写剪贴板、映射端口、管理进程 / Shell / 窗口。仅限 Windows x64。'
+icon: https://raw.githubusercontent.com/baxuelong-lgtm/poleis-harness/main/assets/icon-180.png
+tarball: https://github.com/baxuelong-lgtm/poleis-harness/releases/download/v0.1.0/poleis-harness-0.1.0.tgz
