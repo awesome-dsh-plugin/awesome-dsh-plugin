@@ -1,0 +1,7 @@
+url: https://github.com/yingqi-studio/dsh-material-library
+name: yingqi-studio/dsh-material-library
+category: session
+description:
+  en: 'Material library for dsh: collect a folder, file or note from a conversation, keep it in real folders with tags, browse it Finder-style, and reopen the source chat''s output in one click.'
+  zh: 'dsh 材料库：把对话里产出的目录、文件或笔记收进真实文件夹并打标签，按 Finder 方式浏览，点一下跳回原始会话。'
+icon: https://raw.githubusercontent.com/yingqi-studio/dsh-material-library/main/docs/three-pane.png
