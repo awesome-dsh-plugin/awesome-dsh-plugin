@@ -1,7 +1,0 @@
-url: https://github.com/altmanWang/dsh_plugin_btc_dashboard
-name: altmanWang/dsh_plugin_btc_dashboard
-category: ui
-description:
-  en: 'DeepSeek Harness plugin adding an OKX perpetual-futures price dashboard: BTC/ETH candlesticks at 1m/3m/15m/1h/4h/1D, EMA overlays, line/Fibonacci/ruler drawing tools, close-line alerts through desktop notification, sound or email (email delivery additionally needs the dsh-qq-email plugin), and an in-panel backtester. Market data comes from OKX public endpoints and no API key is required.'
-  zh: 'DeepSeek Harness 的 OKX 永续合约看板插件：BTC/ETH 的 1m/3m/15m/1h/4h/1D K 线、EMA 均线叠加、直线/斐波那契/尺子画线、收线预警（桌面通知/提示音/邮件；邮件通道需另装 dsh-qq-email 插件）与面板内回测。行情来自 OKX 公开接口，不需要 API key。'
-icon: https://raw.githubusercontent.com/altmanWang/dsh_plugin_btc_dashboard/main/assets/icon-180.png
