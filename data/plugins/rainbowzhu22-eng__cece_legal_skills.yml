@@ -1,0 +1,8 @@
+url: https://github.com/rainbowzhu22-eng/cece_legal_skills
+name: rainbowzhu22-eng/cece_legal_skills
+category: workflow
+description:
+  en: >-
+    A DeepSeek Harness bundle for local DOCX, PDF, TXT and Markdown redaction with human review, PDF masking, local history and optional Agent rule edits. Requires Python 3.9+ and first-run dependency downloads. Model access is needed only for rule generation; Windows acceptance is pending.
+  zh: >-
+    DeepSeek Harness 文书脱敏插件，提供本地识别、人工复核、PDF 框选遮盖、历史记录与可选 Agent 改规则。需 Python 3.9+，首次准备依赖需要联网；仅规则生成需要模型，Windows 待实机验收。
