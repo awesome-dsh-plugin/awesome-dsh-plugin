@@ -1,0 +1,7 @@
+url: https://github.com/chenqianyu486-sys/dsh-zju-lecture-note
+name: chenqianyu486-sys/dsh-zju-lecture-note
+category: docs
+description:
+  en: 'Turns Zhejiang University classroom replays (classroom.zju.edu.cn) into Markdown study notes: reads the public speech transcript by minute, sentence or chunk, optionally reads the projected slides or local courseware for the terminology, writes a note named after the class date and section, and checks the Markdown so formulas and tables render.'
+  zh: '把浙大智云课堂（classroom.zju.edu.cn）回放整理成 Markdown 复习讲义：读取公开语音字幕（按分钟 / 逐句 / 分块），可选读取课堂投影 PPT 或本地课件校准术语，按上课日期与本节内容命名写入讲义，并检查 Markdown 使公式与表格正常渲染。'
+icon: https://raw.githubusercontent.com/chenqianyu486-sys/dsh-zju-lecture-note/main/icon.png
