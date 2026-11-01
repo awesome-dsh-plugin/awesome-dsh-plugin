@@ -1,0 +1,6 @@
+url: https://github.com/LastTrainKing/deepseek-harness-batch-executor
+name: LastTrainKing/deepseek-harness-batch-executor
+category: skill
+description:
+  en: 'DeepSeek Harness skill that batches deterministic file operations into one scripted pass, verifies results locally with counts and sha256 tree hashes, compresses verbose tool output into summaries with on-demand deep reads, and stops unproductive retry loops.'
+  zh: '面向 DeepSeek Harness 的技能，将确定性文件操作合并为单次脚本化执行并以计数与 sha256 树哈希本地核验，将冗长工具输出压缩为摘要并支持按需深读，及时停止无效重试。'
