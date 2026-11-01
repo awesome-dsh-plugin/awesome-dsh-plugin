@@ -1,0 +1,6 @@
+url: https://github.com/ztan4706/dsh-sensorium
+name: ztan4706/dsh-sensorium
+category: identity
+description:
+  en: 'Ten interoceptive senses for a DSH agent: workspace pulse, time, affect, needs, expression, silence, residue, open loops, body and face — deterministic state that keeps moving on its own.'
+  zh: '给 DSH 智能体的十种内感受：房子脉搏、时间、情绪、需求、表达、沉默、余味、未闭合的事、身体与表情——各自持续演进的确定性状态。'

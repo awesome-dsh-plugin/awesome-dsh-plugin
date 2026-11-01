@@ -1,4 +1,10 @@
 {
+  "https://github.com/Lovenndme/dsh-profile-stats": [
+    "https://raw.githubusercontent.com/Lovenndme/dsh-profile-stats/main/docs/overview.png",
+    "https://raw.githubusercontent.com/Lovenndme/dsh-profile-stats/main/docs/mix.png",
+    "https://raw.githubusercontent.com/Lovenndme/dsh-profile-stats/main/docs/model-chart.png",
+    "https://raw.githubusercontent.com/Lovenndme/dsh-profile-stats/main/docs/heatmap.png"
+  ],
   "https://github.com/anweat/dsh-context-console": [
     "https://raw.githubusercontent.com/anweat/dsh-context-console/main/docs/images/context-console-trajectory.png",
     "https://raw.githubusercontent.com/anweat/dsh-context-console/main/docs/images/context-console-inventory.png",
@@ -1058,11 +1064,6 @@
   "https://github.com/acebang0303/dsh-quick-launch": [
     "https://raw.githubusercontent.com/acebang0303/dsh-quick-launch/main/docs/preview.png"
   ],
-  "https://github.com/corrinehu/dsh-workbuddy-connect": [
-    "https://raw.githubusercontent.com/corrinehu/dsh-workbuddy-connect/main/assets/1.png",
-    "https://raw.githubusercontent.com/corrinehu/dsh-workbuddy-connect/main/assets/2.png",
-    "https://raw.githubusercontent.com/corrinehu/dsh-workbuddy-connect/main/assets/3.png"
-  ],
   "https://github.com/tipoLi5890/dsh-file-mention": [
     "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-browse.png",
     "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-drag-drop.png",
@@ -1365,10 +1366,6 @@
     "https://raw.githubusercontent.com/liguobao/deepseek-harness-remote/main/docs/images/setting.png",
     "https://raw.githubusercontent.com/liguobao/deepseek-harness-remote/main/docs/images/host-list.png",
     "https://raw.githubusercontent.com/liguobao/deepseek-harness-remote/main/docs/images/remote.png"
-  ],
-  "https://github.com/qinyre/dsh-plugin-archive-manager": [
-    "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-rail.png",
-    "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-archive.png"
   ],
   "https://github.com/LFY-bot/dsh-api-probe": [
     "https://raw.githubusercontent.com/LFY-bot/dsh-api-probe/main/assets/panel-form.png",

@@ -1,0 +1,6 @@
+url: https://github.com/moon16u/dsh-pouch/tree/main/packages/dsh-mcp-console
+name: moon16u/dsh-pouch#dsh-mcp-console
+category: tools
+description:
+  en: 'MCP server console under Plugins: manage the official @deepseek-ai/dsh-mcp-client at runtime — add/edit/delete servers, enable/disable/reconnect, per-tool switches, live status and tool lists over SSE, mcpServers JSON import, and auto-migration of profile-YAML MCP entries; an uninstall leaves a native fallback block that keeps the same servers loadable.'
+  zh: '插件页 MCP 服务器控制台：运行时管理官方 @deepseek-ai/dsh-mcp-client——新增/编辑/删除服务器、启停/重连、工具级开关、SSE 实时状态与工具列表、mcpServers JSON 导入、自动迁移 profile YAML 里的 MCP 条目；卸载后留下原生 fallback 块，同一批服务器仍可加载。'

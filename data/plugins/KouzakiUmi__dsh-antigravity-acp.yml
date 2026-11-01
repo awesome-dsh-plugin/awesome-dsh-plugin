@@ -1,0 +1,6 @@
+url: https://github.com/KouzakiUmi/dsh-antigravity-acp
+name: KouzakiUmi/dsh-antigravity-acp
+category: model
+description:
+  en: 'Adds the official Google Antigravity ACP agent as a DeepSeek Harness model provider, with tool execution and approval kept in DSH, Node 22.19+ and a signed-in Antigravity account required, a per-model quota pill and a settings page.'
+  zh: '把 Google 官方 Antigravity ACP agent 接入 DeepSeek Harness 作为模型提供商，工具执行与审批仍由 DSH 负责，附按模型切换的额度药丸和设置页；需 Node 22.19+ 并登录 Antigravity 账号。'

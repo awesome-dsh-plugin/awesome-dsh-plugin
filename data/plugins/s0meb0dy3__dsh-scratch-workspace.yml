@@ -1,0 +1,7 @@
+url: https://github.com/s0meb0dy3/dsh-scratch-workspace
+name: s0meb0dy3/dsh-scratch-workspace
+category: session
+description:
+  en: Creates a throwaway workspace with its own folder and session, manages running ones from a sidebar panel, and moves finished folders to the system Trash.
+  zh: 一键创建一次性临时工作区（独立文件夹、独立工作区与会话），在侧边栏统一管理，用完把文件夹移入系统废纸篓。
+icon: https://raw.githubusercontent.com/s0meb0dy3/dsh-scratch-workspace/main/assets/icon-180.png

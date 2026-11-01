@@ -1,0 +1,7 @@
+url: https://github.com/WaterFountain-Jack/dsh-study-note
+name: WaterFountain-Jack/dsh-study-note
+category: docs
+description:
+  en: Saves opt-in conversations as structured Markdown study notes with topic folders and a maintained index.
+  zh: 按对话开启学习笔记，自动整理问答，按分类保存并维护 Markdown 索引。
+tarball: https://github.com/WaterFountain-Jack/dsh-study-note/releases/latest/download/dsh-study-note.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/lin1213812138/lin-answer-now
+name: lin1213812138/lin-answer-now
+category: dev
+description:
+  en: 'Makes the agent answer as soon as it has one: injects a deliver-first rule into the system prompt and escalates reminders when tool calls pile up without an answer.'
+  zh: '让 agent 一拿到结果就交付：把"先交付、少查询"写进系统提示，并在工具调用持续堆积时逐级提醒它收尾。'

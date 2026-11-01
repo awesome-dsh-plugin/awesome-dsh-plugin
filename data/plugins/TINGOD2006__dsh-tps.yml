@@ -1,0 +1,6 @@
+url: https://github.com/TINGOD2006/dsh-tps
+name: TINGOD2006/dsh-tps
+category: usage
+description:
+  en: "Live tokens-per-second readout for the current session, docked to the sidebar or draggable as a floating card, with the placement chosen at the card's top-right corner."
+  zh: "当前会话的实时 tokens/s 读数卡片，可停靠左侧栏或作为悬浮卡片拖动，形态在卡片右上角切换。"

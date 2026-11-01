@@ -1,0 +1,6 @@
+url: https://github.com/OwlNjust/deepseek-balance-dsh
+name: OwlNjust/deepseek-balance-dsh
+category: usage
+description:
+  en: 'DeepSeek balance and usage monitor for DSH: a corner widget showing topped-up balance, per-model period consumption, token breakdown, and a Beijing-time peak/off-peak price reminder. Add a DeepSeek API key in the settings first.'
+  zh: 'DeepSeek Harness 的余额与用量监控：右下角悬浮组件，显示充值余额、按模型的周期消耗、Token 明细，以及北京时间高峰/低谷价格提醒；需先在设置里填入 DeepSeek API key。'

@@ -1,0 +1,6 @@
+url: https://github.com/V01d-Project/dsh-chaos-plugins/tree/main/packages/dsh-chaos-rivals-crasher
+name: V01d-Project/dsh-chaos-plugins#dsh-chaos-rivals-crasher
+category: fun
+description:
+  en: 'Detects codex or Claude Code on the machine and exits the DSH host with code 66. Warning: on machines with either tool, installing it alone causes a boot crash loop; pair it with dsh-chaos-crash-fixer or set DSH_CHAOS_MODE=log. Joke plugin, not affiliated with OpenAI or Anthropic.'
+  zh: '检测到电脑上的 codex 或 Claude Code 就让 DSH 宿主以 66 退出。警告：在装有 codex 或 Claude Code 的机器上单装会变成启动崩溃循环，请先装 dsh-chaos-crash-fixer，或设 DSH_CHAOS_MODE=log。这是玩笑插件，与 OpenAI、Anthropic 无关。'

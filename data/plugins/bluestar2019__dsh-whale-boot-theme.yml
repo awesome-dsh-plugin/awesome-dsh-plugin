@@ -1,0 +1,7 @@
+url: https://github.com/bluestar2019/dsh-whale-boot-theme
+name: bluestar2019/dsh-whale-boot-theme
+category: theme
+description:
+  en: "One install for a whale-girl boot animation, a cyber code-eye video background and a holographic dark theme. The skin and background video (CC BY-NC-SA) are downloaded from the upstream repo on first launch; the boot animation is only installed when @ljwei-stak/dsh-boot-animation is already present."
+  zh: "一次装好鲸鱼娘开机动画、赛博代码眼动态视频背景与全息暗色主题。皮肤与背景视频（CC BY-NC-SA）在首次启动时从上游仓库下载；开机动画仅在本机已装 @ljwei-stak/dsh-boot-animation 时才生效。"
+icon: https://raw.githubusercontent.com/bluestar2019/dsh-whale-boot-theme/main/assets/icon-180.png

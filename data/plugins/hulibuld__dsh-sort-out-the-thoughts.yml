@@ -1,0 +1,6 @@
+url: https://github.com/hulibuld/dsh-sort-out-the-thoughts
+name: hulibuld/dsh-sort-out-the-thoughts
+category: workflow
+description:
+  en: 'Thinking-sorting plugin. A switch beside the composer puts the session into a three-stage mode — sort, critique, research — and each stage has a checklist of what it should produce before you press the advance button; finished ideas are filed by genre into Settings → Thoughts Center. A floating notebook holds half-formed sparks and opens a new session with the chosen one already written into the input box.'
+  zh: '梳理思路插件。输入框旁的开关把会话切进「梳理 → 批判 → 调研」三段模式，每段列着这一段该产出的东西，够了再点「推进」按钮换段；成稿按体裁存进 设置 → Thoughts Center。另有悬浮随想记录本，碎灵感先存着，点「去研究」直接开一条新对话，那句话已经写进输入框。'

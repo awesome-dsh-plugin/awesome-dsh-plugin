@@ -1,0 +1,6 @@
+url: https://github.com/FelixJiashengFu/dsh-recent-deliverables
+name: FelixJiashengFu/dsh-recent-deliverables
+category: ui
+description:
+  en: 'Draggable recent-deliverables panel for DSH Web that merges declared deliverables with recently modified workspace files, with filename search, type filters, inline PDF/HTML/image/text previews, and desktop open or reveal actions.'
+  zh: 'DSH Web 的可拖动最近成品面板，合并已声明交付的文件与工作区最近修改的文件，支持文件名搜索、类型筛选、PDF/HTML/图片/文本内嵌预览，以及用桌面应用打开或在文件管理器中定位。'

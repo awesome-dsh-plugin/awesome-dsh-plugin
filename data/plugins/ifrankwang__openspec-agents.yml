@@ -1,0 +1,6 @@
+url: https://github.com/ifrankwang/openspec-agents
+name: ifrankwang/openspec-agents
+category: workflow
+description:
+  en: 'Gated multi-agent pipeline for OpenSpec changes — six opx_* tools drive the phase state machine, two agent presets (developer and reviewer) carry implementation and review, and 23 bundled skills define the quality standards they are checked against; full mode runs analyze, implement, then tool, task and dimension-based quality review, while simple mode runs implement and one merged quality review.'
+  zh: '面向 OpenSpec 变更的按阶段门禁多 Agent 编排：6 个 opx_* 工具驱动阶段状态机，开发者与审核人两个 agent preset 分工实施与审查，23 份内置 skill 定义审查基准；完整流程为 analyze、实施、工具/任务/维度质量三层审查，精简流程为实施加一次合并质量审查。'

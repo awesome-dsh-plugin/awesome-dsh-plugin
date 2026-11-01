@@ -1,0 +1,6 @@
+url: https://github.com/cfanzx/dsh-compact-relay
+name: cfanzx/dsh-compact-relay
+category: session
+description:
+  zh: 'DeepSeek Harness 输入框上下文指示器：分段显示会话占用、压缩判断点与 DSH 原生自动压缩线（越线红闪）。支持预览后确认压缩（/bc）、无痕交接（旧会话归档为「历史 N」、新会话继承原名，输入框上方接力条可回看完整交接链并双向跳转）、锁定消息防压缩与失效标注。设置里可配阈值、配色与交接后自动归档开关。'
+  en: 'Context indicator for the DeepSeek Harness composer: segmented occupancy, compression points, and the native auto-compaction line (flashes red when crossed). Supports preview-then-confirm compaction (/bc), seamless handoff (the old session becomes "History N" while the new one keeps the name; a relay bar above the composer shows the full handoff chain with two-way jumps), and message pinning with stale-pin labels. Thresholds, colors, and auto-archive after handoff are configurable in Settings.'

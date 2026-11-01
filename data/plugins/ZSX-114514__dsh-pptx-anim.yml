@@ -1,0 +1,7 @@
+url: https://github.com/ZSX-114514/dsh-pptx-anim
+name: ZSX-114514/dsh-pptx-anim
+category: docs
+tarball: https://github.com/ZSX-114514/dsh-pptx-anim/releases/download/v0.1.0/dsh-pptx-anim-0.1.0.tgz
+description:
+  en: "Injects PowerPoint entrance animations and slide transitions into existing .pptx files by writing the OOXML timing tree (p:timing), which python-pptx does not implement. Requires Python 3 with python-pptx installed (the plugin auto-detects python / python3 / py)."
+  zh: "给已生成的 .pptx 批量写入 PowerPoint 进入动画与幻灯片切换——直接构造 python-pptx 未实现的 OOXML timing 树，并附带结构校验器。需本机 Python 3 且已安装 python-pptx（插件会自动探测 python / python3 / py）。"

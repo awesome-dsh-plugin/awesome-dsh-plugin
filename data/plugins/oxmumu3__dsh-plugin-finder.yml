@@ -1,0 +1,6 @@
+url: https://github.com/oxmumu3/dsh-plugin-finder
+name: oxmumu3/dsh-plugin-finder
+category: market
+description:
+  en: 'Turns a user goal into a plugin plan using community catalogs and author documentation, then continues through installation and task execution in one workbench with saved history and feedback.'
+  zh: '从用户目标匹配社区插件并阅读作者资料，形成插件方案，在同一工作台衔接安装和任务执行，保存历史与反馈。'

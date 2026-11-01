@@ -1,0 +1,6 @@
+url: https://github.com/ninepoin4/dsh-rich-cards
+name: ninepoin4/dsh-rich-cards
+category: ui
+description:
+  en: Renders the final fenced card block of an answer as a typographic card, with card and article layouts, twelve block types and credited images.
+  zh: 把回答末尾的 card 围栏块渲染成排版卡片，支持 card 与 article 两种布局、十二种块类型和带来源的配图。

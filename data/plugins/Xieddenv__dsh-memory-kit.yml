@@ -1,0 +1,6 @@
+url: https://github.com/Xieddenv/dsh-memory-kit
+name: Xieddenv/dsh-memory-kit
+category: memory
+description:
+  en: 'Gives a DSH agent five layers of persistent memory kept as plain Markdown files — persona, speaking-style rules, daily diary, session archive and open loops — rebuilds a system-prompt section from them within a minute of a file change, and adds three tools (memory_read, memory_write, memory_search) plus an importer for migrating an existing memory directory.'
+  zh: '给 DSH 机器人装五层持久记忆（人设、说话规则、日记、会话存档、未了结的约定），全部存成磁盘上的纯 Markdown；文件改动一分钟内自动重建注入段落，配 memory_read / memory_write / memory_search 三个工具，另带一个从旧记忆目录迁移的导入器。'

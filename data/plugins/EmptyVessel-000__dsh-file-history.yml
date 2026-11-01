@@ -1,0 +1,6 @@
+url: https://github.com/EmptyVessel-000/dsh-file-history
+name: EmptyVessel-000/dsh-file-history
+category: session
+description:
+  en: 'Per-turn checkpoints of the whole workspace: every turn ends with a snapshot, the files it changed are listed under that turn in the chat, and any turn can be restored — files, the conversation, or both. Capture is a whole-tree scan rather than a hook on write/edit tools, so edits made by shell commands, external editors or git leave a record too. Restoring the conversation forks it from that turn instead of cutting the original, and a restore can itself be undone. History sits in a shadow git repository under DSH_HOME and never touches your project .git. Requires Git >= 2.20 and Node.js >= 20.'
+  zh: '按轮次给整个工作区留检查点：每轮结束存一份快照，本轮改了哪些文件直接列在聊天里那一条下方，任意一轮都能还原——只还原文件、只还原对话，或者全部还原。捕获靠扫描整棵树，而不是挂钩 write/edit 工具，所以 shell 命令、外部编辑器、git 操作改出来的东西同样留痕。还原对话是从那一轮分叉出新会话，不切断原来的会话；还原本身也能撤销。历史存放在 DSH_HOME 里的影子 git 仓库中，不碰项目的 .git。需 Git >= 2.20 与 Node.js >= 20。'

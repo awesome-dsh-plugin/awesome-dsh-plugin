@@ -1,0 +1,6 @@
+url: https://github.com/zuojinxin/dsh-sidebar-manager
+name: zuojinxin/dsh-sidebar-manager
+category: ui
+description:
+  en: 'Collapses the DSH sidebar panel list into a single group row, and its gear opens an edit mode to show, hide and drag-reorder two groups: sidebar extension entries and conversation view tabs.'
+  zh: '把 DSH 左侧的面板列表折叠成一行分组头；点齿轮进入编辑态，对两组内容分别勾选显示/隐藏、拖动排序——侧栏扩展入口与会话顶部视图标签。'

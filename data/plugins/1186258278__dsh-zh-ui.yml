@@ -1,0 +1,7 @@
+url: https://github.com/1186258278/dsh-zh-ui
+name: 1186258278/dsh-zh-ui
+category: ui
+tarball: https://github.com/1186258278/dsh-zh-ui/releases/download/v0.2.0/dsh-zh-ui-0.2.0.tgz
+description:
+  en: "Chinese frontend UI design spec for dsh: injects the zh-ui-design skill and prompt rules (section-name headings, no filler copy, one signature element), plus a 10-rule UI copy/style linter."
+  zh: "中文前端界面设计规范：注入 zh-ui-design 技能与系统提示，标题即功能、去除解释性占位文案、单一记忆点签名元素；附带 10 条界面文案/样式 lint 规则。"

@@ -1,0 +1,6 @@
+url: https://github.com/tao1020/dsh-chrome-use
+name: tao1020/dsh-chrome-use
+category: browser
+description:
+  en: 'Codex-style browser control: drives your own Chrome through a local bridge, so the model can read pages, click, fill inputs, scroll, take screenshots, and inspect console and network logs. Requires Chrome 120+ and loading the bundled extension unpacked at chrome://extensions, then pairing it with an 8-digit code.'
+  zh: 'Codex 同款的浏览器控制：通过本机桥接操控你正在用的 Chrome，让模型读取页面、点击、填写、滚动、截图，并查看控制台与网络日志。需 Chrome 120+，并在 chrome://extensions 以「加载已解压的扩展程序」装好仓库自带的扩展，再用 8 位配对码连接。'

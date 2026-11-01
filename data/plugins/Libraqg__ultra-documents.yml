@@ -1,0 +1,6 @@
+url: https://github.com/Libraqg/ultra-documents
+name: Libraqg/ultra-documents
+category: docs
+description:
+  en: "Artifacts-like documents in the sidebar: the agent writes a self-contained HTML document, you comment on any part, send the comments back for the next version, or edit text and formatting yourself. Every change is a new version; local only. A local-only fork of tdoc (https://github.com/tornado-doc/tdoc), rewritten as a DSH plugin."
+  zh: "侧边栏里的 Artifacts 式文档：AI 生成独立的 HTML 文档，你可以对任意位置批注、一键交给 AI 改出新版本，也可以自己直接修改文字和格式。每次修改都是新版本，内容只存在本地。基于 tdoc（https://github.com/tornado-doc/tdoc）改造的本地化 DSH 插件。"

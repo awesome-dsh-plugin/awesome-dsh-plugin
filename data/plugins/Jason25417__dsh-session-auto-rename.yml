@@ -1,0 +1,8 @@
+url: https://github.com/Jason25417/dsh-session-auto-rename
+name: Jason25417/dsh-session-auto-rename
+category: session
+description:
+  en: 'Adds an Auto-rename row to each Session sidebar menu: the model reads the Session log, weights recent user messages higher (exponential decay, 3-day time constant), and writes a title of at most 10 CJK characters into the Session title. Also opens that Session menu on right-click, and exposes the same operation as the session_auto_rename agent tool. Requires DSH 0.2.1-rc.5 or newer.'
+  zh: '在每个会话的侧栏菜单里新增「自动重命名」：模型读取会话日志，按时间衰减给用户消息加权（τ = 3 天，越新权重越高），写出不超过 10 个汉字的标题并写入会话名。同时支持右键会话呼出该菜单，并把同一操作暴露为 session_auto_rename 智能体工具。需要 DSH 0.2.1-rc.5 或更新版本。'
+icon: https://raw.githubusercontent.com/Jason25417/dsh-session-auto-rename/main/assets/icon-180.png
+tarball: https://github.com/Jason25417/dsh-session-auto-rename/releases/latest/download/dsh-session-auto-rename.tgz

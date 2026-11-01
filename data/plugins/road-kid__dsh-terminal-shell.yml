@@ -1,0 +1,7 @@
+url: https://github.com/road-kid/dsh-terminal-shell
+name: road-kid/dsh-terminal-shell
+category: wsl
+description:
+  en: 'Choose which shell backs the Windows terminal tool: PowerShell, the local Git Bash, or cmd.exe.'
+  zh: '选择 Windows 终端工具背后的 shell：PowerShell、本地 Git Bash 或 cmd.exe。'
+icon: https://raw.githubusercontent.com/road-kid/dsh-terminal-shell/main/assets/icon-180.png

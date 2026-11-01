@@ -1,0 +1,7 @@
+url: https://github.com/kkhsu/dsh-conversation-icons
+name: kkhsu/dsh-conversation-icons
+category: ui
+description:
+  en: 'Assign per-session duotone SVG icons and colors from the sidebar menu or a model tool, with browser-local persistence and cross-tab updates.'
+  zh: '为每个会话设置双色 SVG 图标和颜色，可通过侧边栏菜单或模型工具操作，并支持浏览器本地持久化与跨标签页更新。'
+icon: https://raw.githubusercontent.com/kkhsu/dsh-conversation-icons/main/docs/images/conversation-icons-overview.png

@@ -1,0 +1,6 @@
+url: https://github.com/x3416067-bit/dsh-plugin-restart-prompt
+name: x3416067-bit/dsh-plugin-restart-prompt
+category: dev
+description:
+  en: Windows only. Prompts to restart DSH after a plugin install, update or uninstall, restarts it in one click without any console window, and shows a per-file diff of what changed.
+  zh: 仅 Windows。DSH 插件变动后提示重启，一键静默重启（全程无命令提示符窗口），并可展开本次改动的逐行差异。

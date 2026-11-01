@@ -1,0 +1,7 @@
+url: https://github.com/CilaWaller/dsh-plugin-translate-flow
+name: CilaWaller/dsh-plugin-translate-flow
+category: workflow
+description:
+  en: 'An isolated translation pipeline where each module is its own model call carrying only its own prompt and its own input — no session history, no tool schemas, no other module''s content. Build chains from draggable cards, edit any module''s prompt in place, override the model per module, or start from one of two precision presets. The same chain is exposed to the agent as a translate_flow tool.'
+  zh: '隔离式翻译链路：每个模块都是一次独立的模型调用，只携带自己的提示词和自己的输入——不带会话历史、不带工具定义、不带其他模块的内容。用可拖拽卡片编排链路，就地编辑任意模块的提示词，按模块覆盖模型，也可直接套用两套精译预设。同一条链路还以 translate_flow 工具的形式提供给智能体。'
+tarball: https://github.com/CilaWaller/dsh-plugin-translate-flow/releases/latest/download/dsh-plugin-translate-flow.tgz

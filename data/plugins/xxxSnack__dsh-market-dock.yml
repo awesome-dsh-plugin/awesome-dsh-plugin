@@ -1,0 +1,6 @@
+url: https://github.com/xxxSnack/dsh-market-dock
+name: xxxSnack/dsh-market-dock
+category: ui
+description:
+  en: 'A stock market panel for DeepSeek Harness, forked from dsh-xueqiu: A-share/HK/US quotes, K-line and intraday charts, hot lists, search and 7x24 news, plus local holdings with live-computed P&L, host-side price alerts, and a hide switch that unmounts the panel and stops market polling while alerts still fire. Replaces dsh-xueqiu; do not install both.'
+  zh: '行情面板（dsh-xueqiu 的衍生版本）：免登录查看 A股/港美股行情、K线/分时、热榜、搜索与 7×24 快讯，并支持本地持仓与按行情现算的盈亏、宿主侧价格提醒，以及一键「行情隐身」——面板卸载、行情请求停发，提醒照常。替代 dsh-xueqiu，请勿与它同时安装。'

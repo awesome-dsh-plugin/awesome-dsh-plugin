@@ -1,0 +1,7 @@
+url: https://github.com/lornwolf/dsh-claude-subscription
+name: lornwolf/dsh-claude-subscription
+category: model
+tarball: https://github.com/lornwolf/dsh-claude-subscription/releases/download/v0.2.1/dsh-claude-subscription-0.2.1.tgz
+description:
+  en: 'Adds a Claude Pro/Max OAuth provider with multiple accounts, optional account failover, cached quota reporting, live model catalogs, and quota UI in settings and conversations. Uses the Claude Code client identity; quota reporting uses an experimental endpoint.'
+  zh: '通过 OAuth 接入 Claude Pro/Max 订阅，支持多账号、可选故障切换、额度缓存、在线模型目录，以及设置页和会话额度入口。请求使用 Claude Code 客户端身份，额度查询使用实验性接口。'

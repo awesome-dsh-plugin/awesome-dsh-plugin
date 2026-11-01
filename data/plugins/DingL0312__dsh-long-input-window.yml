@@ -1,0 +1,6 @@
+url: https://github.com/DingL0312/dsh-long-input-window
+name: DingL0312/dsh-long-input-window
+category: ui
+description:
+  en: 'Adds a full-screen dialog for writing long messages: Markdown on the left rendered live by marked on the right, with a draggable splitter that remembers its ratio. Confirming writes the text back to the composer draft, keeping command tokens and @-reference chips as a fixed prefix; Esc asks whether to discard or write back before closing.'
+  zh: '为输入框加一个写长内容的全屏弹窗：左侧写 Markdown、右侧 marked 实时渲染，中间分栏可拖动并记住比例。确认后写回输入框草稿，指令 token 与 @ 引用 chip 作为固定前缀保留；Esc 关闭前询问「不写回」还是「写回」。'

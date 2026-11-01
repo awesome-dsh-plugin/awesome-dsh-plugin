@@ -1,0 +1,8 @@
+url: https://github.com/1834395550/dsh-chat-search
+name: 1834395550/dsh-chat-search
+category: ui
+description:
+  en: 'Find text inside the open conversation with Ctrl+F: matches are highlighted in the message text, previous/next step through them, clicking the count lists the matches and jumps to any of them, and the count grows while the scan runs. No collapsed block is opened and the reading position does not move.'
+  zh: '在当前对话里用 Ctrl+F 查找文字：命中处在正文中高亮，上一个/下一个逐个跳转，点计数可列出命中位置并直接跳过去，计数随扫描逐步增长；不展开任何折叠块，也不改变阅读位置。'
+icon: https://raw.githubusercontent.com/1834395550/dsh-chat-search/main/assets/icon-180.png
+tarball: https://github.com/1834395550/dsh-chat-search/releases/download/v1.0.1/dsh-chat-search-1.0.1.tgz

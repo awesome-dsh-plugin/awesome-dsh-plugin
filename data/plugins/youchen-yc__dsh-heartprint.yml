@@ -1,0 +1,6 @@
+url: https://github.com/youchen-yc/dsh-heartprint
+name: youchen-yc/dsh-heartprint
+category: memory
+description:
+  en: "A memory plugin for DeepSeek Harness: set its name, personality and character; it forgets only trivial things, keeps what matters, and marks and remembers what is special to you."
+  zh: "记忆类插件。可设置名字、性格与人格；只淡忘琐事，重要的会保留，特殊的会被记住。"

@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-cleaning
+name: liuhange789/data-asset-inspector#data-cleaning
+category: tools
+description:
+  zh: "数据清洗插件 — 去重+格式标准化+异常值检测"
+  en: "Data cleaning plugin for deduplication, format standardization and anomaly detection."

@@ -1,0 +1,6 @@
+url: https://github.com/badai147/dsh-leafy-skin
+name: badai147/dsh-leafy-skin
+category: theme
+description:
+  en: Leafy green skin for the DSH Web GUI that overrides the --dsw-* palette in light and dark themes, plus a CSS layer for corners, shadows and motion that can be switched off.
+  zh: 叶绿色皮肤：把 DSH Web GUI 的 --dsw-* 调色板覆盖成浅色 / 深色两套叶绿配色，另有一层可关闭的样式层处理圆角、阴影与动效。

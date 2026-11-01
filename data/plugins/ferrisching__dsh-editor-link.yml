@@ -1,6 +1,0 @@
-url: https://github.com/ferrisching/dsh-editor-link
-name: ferrisching/dsh-editor-link
-category: ui
-description:
-  en: 'Links DeepSeek Harness to VS Code: approvals answered in native notifications, ask_user_question answered in a sidebar card, an ide_context tool fed by the active file, diagnostics and selection, selection to composer, and a sidebar with the live transcript, workspace-scoped session picker, model and permission controls.'
-  zh: '把 DSH 接进 VS Code：审批用原生通知回答，ask_user_question 在侧边栏卡片里作答，ide_context 工具读取当前文件、诊断与选区，选区可插入 DSH 输入框，侧边栏提供实时转录、按工作区限定的会话列表以及模型与权限控制。'

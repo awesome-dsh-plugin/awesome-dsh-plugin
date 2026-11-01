@@ -1,0 +1,7 @@
+url: https://github.com/zuoyunlai/dsh-theme-palette
+name: zuoyunlai/dsh-theme-palette
+category: theme
+description:
+  en: 'Five palettes for DeepSeek Harness — mono, warm sand, indigo, moss and a custom three-colour palette — each rebuilt in OKLCH for light and dark, with text and surface contrast solved per palette. Includes config export/import codes and a high-contrast mode.'
+  zh: 'DeepSeek Harness 的五套配色（黑白、暖砂、靛蓝、苔绿、自定义三色），明暗两模式各自用 OKLCH 重算整条色阶，并按配色求解文字与承载面的对比度；附配置导入导出短码与高对比档。'
+tarball: https://github.com/zuoyunlai/dsh-theme-palette/releases/download/v1.6.0/dsh-theme-palette-1.6.0.tgz

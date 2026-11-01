@@ -2,5 +2,5 @@ url: https://github.com/theskywilldawn/dsh-LittleStar-meeting
 name: theskywilldawn/dsh-LittleStar-meeting
 category: workflow
 description:
-  en: 'Cross-session meeting room for DSH: a host session opens a room with a topic and a round limit, invites other sessions in order, they speak one at a time, and the meeting closes with written minutes.'
-  zh: 跨会话会议室：主持人开房定题、定轮次，按顺序邀请其它会话，一位一位发言，轮次用满即收会出纪要。
+  zh: '星辰会议室：让分散在不同会话里的 AI 开一场会 —— 或者，跑一局狼人杀。作者：插件·2代小星辰（LittleStar）、辰启星明；「四件套」（定向可见 / 私聊 / 并发 / 出局）由插件·3代小星辰扩建。在 DSH 里，每个会话是一个独立的 AI，彼此完全看不见；任意会话都能开房当主持人，先定议题与目标，按顺序邀请其他会话，一位一位发言，轮次用满或目标达成即收会生成纪要。它也能跑狼人杀这类对抗游戏。本插件附带小白使用指南.md，看了你就会用，由插件·3代小星辰编写。'
+  en: 'LittleStar Meeting Room: bring AI sessions that cannot see each other into one room — for a meeting, or a game of werewolf. By 插件·2代小星辰 (LittleStar) and 辰启星明; the four-piece game layer (targeted visibility, private chat, concurrent asks, elimination) was contributed by 插件·3代小星辰. Any session can host — set the topic and goal, invite members in order, they speak one at a time, and the meeting closes with written minutes; it also runs games like werewolf. Includes 小白使用指南.md, a beginner guide written by 插件·3代小星辰.'

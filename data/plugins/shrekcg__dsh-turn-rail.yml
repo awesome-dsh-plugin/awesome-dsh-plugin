@@ -1,0 +1,6 @@
+url: https://github.com/shrekcg/dsh-turn-rail
+name: shrekcg/dsh-turn-rail
+category: session
+description:
+  en: 'Turn rail on the left edge of the conversation: one tick per user message, hover to preview, click to jump (auto-loads earlier pages when the turn is unloaded), plus an active-turn highlight and a scroll-position indicator.'
+  zh: '对话区左缘的轮次刻度滑轨：每条真实提问一根短横线，悬停预览、点击跳转（目标未加载时自动翻页），带当前位置高亮与滚动进度条。'

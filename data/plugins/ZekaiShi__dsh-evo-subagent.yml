@@ -1,0 +1,6 @@
+url: https://github.com/ZekaiShi/dsh-evo-subagent
+name: ZekaiShi/dsh-evo-subagent
+category: identity
+description:
+  en: 'Independent workspace and conversation personas with adaptive styles, approved communication preferences and role-based routing to registered DSH models, including models supplied by Codex and Claude Code provider plugins.'
+  zh: '为工作区与对话配置独立人格，支持自适应风格、经确认的通用交流偏好和子代理模型路由；可配合其他 provider 插件使用 Codex、Claude Code 等已注册模型。'

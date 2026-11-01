@@ -1,0 +1,6 @@
+url: https://github.com/AK-blank/dsh-codex-bridge
+name: AK-blank/dsh-codex-bridge
+category: usage
+description:
+  en: 'Reads the local Codex CLI ChatGPT-plan quota (5-hour and weekly windows), defaults to gpt-6.1-sol at high reasoning, falls back to gpt-5.6-sol when a window has 10% or less left, and delegates tasks through codex exec with an explicit opt-in for the expensive gpt-6-astra model. Requires a signed-in Codex CLI (`codex login`).'
+  zh: '读取本机 Codex CLI 的 ChatGPT 计划额度（5 小时与每周窗口），默认统一使用 gpt-6.1-sol + high 推理强度，任一窗口剩余不超过 10% 时回退 gpt-5.6-sol，并通过 codex exec 外派任务；昂贵的 gpt-6-astra 需要显式开启。需已登录的 Codex CLI（`codex login`）。'

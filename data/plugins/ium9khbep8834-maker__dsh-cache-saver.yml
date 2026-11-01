@@ -1,0 +1,7 @@
+url: https://github.com/ium9khbep8834-maker/dsh-cache-saver
+name: ium9khbep8834-maker/dsh-cache-saver
+category: usage
+description:
+  en: 'Slims oversized MCP tool JSON Schemas per agent without changing dispatch, and reports token usage, cache hits and context composition on a settings page.'
+  zh: '按 agent 收敛过大的 MCP 工具 JSON Schema（调度不变），并在设置页展示 token 用量、缓存命中与上下文构成。'
+tarball: https://github.com/ium9khbep8834-maker/dsh-cache-saver/releases/download/v0.3.1/local-dsh-cache-saver-0.3.1.tgz

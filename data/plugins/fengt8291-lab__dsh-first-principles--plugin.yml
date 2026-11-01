@@ -1,0 +1,6 @@
+url: https://github.com/fengt8291-lab/dsh-first-principles/tree/main/plugin
+name: fengt8291-lab/dsh-first-principles#plugin
+category: workflow
+description:
+  en: 'A machine-checked reasoning ledger: every fact must resolve to a real file:line and be quoted verbatim from it, every assumption must state what would falsify it, and a conclusion may not rest on an assumption that never comes back for review. The ledger can carry a review date, a confidence and a kill condition. Ships the checker tool, an /fp command family, an optional gate that asks before irreversible shell commands, and a web panel listing the error codes each round fixed.'
+  zh: '可机械核对的第一性原理台账：事实必须落回真实的 文件:行 并逐字引用那里的话，假设必须写明什么情况下它错了，结论不得依赖一个永不回来复查的假设；台账可带复查日期、置信度与止损条件。附带校验工具、/fp 命令族、不可逆命令前的可选闸门，以及列出每轮修掉哪些错误码的面板。'

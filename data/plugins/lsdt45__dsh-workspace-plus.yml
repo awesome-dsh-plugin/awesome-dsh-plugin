@@ -1,6 +1,11 @@
 url: https://github.com/lsdt45/dsh-workspace-plus
 name: lsdt45/dsh-workspace-plus
 category: ui
+# GitHub-hosted 180×180 raster tile; falls back to the owner avatar when omitted.
+icon: https://raw.githubusercontent.com/lsdt45/dsh-workspace-plus/main/docs/icon-180.png
+# Prebuilt release asset, so the one-line install works before the npm release
+# is live and stays available as a fallback afterwards.
+tarball: https://github.com/lsdt45/dsh-workspace-plus/releases/download/v1.2.0/lsdt45-dal-dsh-workspace-plus-1.2.0.tgz
 description:
-  en: 'Hierarchical workspace tree and multi-view manager for DSH: workspace and session naming creates virtual folders (/), multi-view support (workspace tree, flat workspaces, single list, time timeline), session pinning, and independent sections for workspaces and sessions.'
-  zh: 'DSH 侧边栏工作区层级树与视图增强：名称中的 / 自动解析为虚拟分组，提供按工作区树、按工作区、单列表与时间线四种视图，支持会话置顶与工作区/会话独立分区管理。'
+  en: 'Hierarchical workspace tree plus browser-style session tabs for the DSH sidebar: a "/" in a workspace or session title creates a virtual folder, with sections, pinning, time buckets, drag ordering, unified 6px status dots, per-row appearance customization (colour, glow, weight, icon) and a floating full-text search over session titles and message bodies. Several settings switches restore any behaviour to the host default, and a host-side route deletes sessions permanently (DSH ships archive only). Fork of KannaKuron/dsh-better-workspace.'
+  zh: 'DSH 侧边栏的工作区层级树与浏览器式会话标签页：工作区或会话标题中的 / 自动成为虚拟分组，另含分区、置顶、时间分桶、拖拽排序、统一 6px 状态点、按行定制外观（颜色 / 发光 / 字重 / 图标），以及覆盖会话标题与消息正文的浮层全文检索。配置页多个开关可把任一行为还原为宿主默认；宿主侧另有永久删除会话的路由（DSH 只有归档）。fork 自 KannaKuron/dsh-better-workspace。'

@@ -1,0 +1,6 @@
+url: https://github.com/qinu321/dsh-archive-viewer
+name: qinu321/dsh-archive-viewer
+category: session
+description:
+  en: 'Read-only viewer for archived DSH sessions: browse the archive with workspace filtering and title/ID search, and read the transcript folded from the durable log — including messages from before a context compaction — without unarchiving.'
+  zh: '已归档 DSH 会话的只读查看器：按工作区筛选、按标题/ID 搜索，不取消归档即可阅读从完整日志折出的对话——包括上下文压缩前的原文与工具调用。'

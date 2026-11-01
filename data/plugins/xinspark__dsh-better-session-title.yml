@@ -1,6 +1,0 @@
-url: https://github.com/xinspark/dsh-better-session-title
-name: xinspark/dsh-better-session-title
-category: ui
-description:
-  en: Replaces the session topbar title with a workspace and session breadcrumb, switching workspaces, sessions and subagents from dropdowns in the topbar.
-  zh: 把会话顶栏标题换成工作区与会话面包屑，可在顶栏下拉里切换工作区、会话与子智能体。

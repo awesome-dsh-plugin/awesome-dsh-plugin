@@ -1,0 +1,6 @@
+url: https://github.com/DSH-Raising-Plan/dsh-netease-cdp
+name: DSH-Raising-Plan/dsh-netease-cdp
+category: fun
+description:
+  en: "Controls an already-running NetEase Cloud Music desktop client over CDP (the client must be started with --remote-debugging-port=9222) and searches songs through NetEase's public web API; no API key or extra login, and member-only features use the client's own signed-in account."
+  zh: '通过 CDP 驱动已运行的网易云音乐桌面客户端（客户端需以 --remote-debugging-port=9222 启动），搜索走网易云公开网页 API；不需要 API key 或额外登录，会员功能沿用客户端自己的登录账号。'

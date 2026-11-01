@@ -1,0 +1,6 @@
+url: https://github.com/1700563146/dsh-plugin-ui-zoom
+name: 1700563146/dsh-plugin-ui-zoom
+category: ui
+description:
+  en: Whole-interface zoom for the DSH Web UI from 70% to 160%, driven by Ctrl+wheel, DSH's shortcut center or an inline pill, with content-width compensation so zooming out fits more text instead of narrowing the column.
+  zh: DSH Web 界面整体缩放（70%–160%），可用 Ctrl+滚轮、DSH 快捷键中心或输入框旁的胶囊操作，带正文栏宽度补偿，缩小后是一行更多字而不是一条更窄的栏。

@@ -1,0 +1,6 @@
+url: https://github.com/ozjxnxh/dsh-prompt-enhance-keyless
+name: ozjxnxh/dsh-prompt-enhance-keyless
+category: ui
+description:
+  en: 'Adds a sparkle button left of the model selector in the composer toolbar: one click rewrites the draft in place through the host and briefly offers an undo that restores the original text. A Prompt Enhancement settings section picks the lane — the conversation model (the provider/model the next message would use, falling back to the configured default) or a keyless Pollinations channel that needs no login and no token budget but allows one reply per 30 seconds. During that cooldown a click completes through the conversation model instead of being refused, and the first click after the window reopens returns to the keyless channel on its own. The rewrite keeps the draft''s language, and a result in a different language is rejected rather than pasted over the draft.'
+  zh: '在输入框工具栏、模型选择器左侧加一枚 ✨ 按钮：点一下把草稿经宿主改写成可直接执行的提示词并原地回填，随后短暂显示「撤销」可一键还原原文。设置侧栏「提示词增强」分区可选择改写通道——对话模型（取下一次发消息实际会用的 provider/model，无则回退已配置的默认模型），或 Pollinations 免登录通道（无需登录、不消耗模型额度，但每 30 秒只允许 1 次）。冷却期内点击不会报错也不会被拒，而是自动改用对话模型完成改写；冷却结束后第一次点击自动切回免登录通道。改写结果始终保持与草稿相同的语言，若返回语言不一致则直接报错而不是覆盖草稿。'

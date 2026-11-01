@@ -1,0 +1,7 @@
+url: https://github.com/dev-bravelo/dsh-hf-spaces
+name: dev-bravelo/dsh-hf-spaces
+category: model
+description:
+  en: "Adds the models of your own GPU Hugging Face Space to the model selector, starts the Space when you send a message, shows its start progress, and pauses it when idle or at a time limit. Requires a Hugging Face account with a GPU Space serving an OpenAI-compatible API, a Hugging Face token stored in the DSH vault as HF_TOKEN, and a paid plan for GPU hardware; Hugging Face bills the GPU time."
+  zh: "将你自己的 Hugging Face GPU Space 中的模型加入模型选择器，发送消息时启动该 Space，显示启动进度，并在空闲或达到时限时将其暂停。需要 Hugging Face 账号、一个提供 OpenAI 兼容 API 的 GPU Space、在 DSH 凭据库中以 HF_TOKEN 保存的 Hugging Face token，以及 GPU 硬件所需的付费计划；GPU 机时由 Hugging Face 计费。"
+tarball: https://github.com/dev-bravelo/dsh-hf-spaces/releases/download/v0.1.0-alpha.8/dsh-hf-spaces-0.1.0-alpha.8.tgz

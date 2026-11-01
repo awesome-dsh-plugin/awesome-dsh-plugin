@@ -1,0 +1,7 @@
+url: https://github.com/backkom/dsh-at-file-everything
+name: backkom/dsh-at-file-everything
+category: tools
+description:
+  en: 'Answers @file completion from the Everything index through es.exe instead of walking the workspace, keeping the workspace root as the ranking scope. Windows only; needs Everything and es.exe on PATH.'
+  zh: '用 es.exe 从 Everything 索引回答 @file 补全，而不是遍历工作区，并以工作区根目录作为排序范围。仅限 Windows；需先安装 Everything 与 es.exe 并加入 PATH。'
+icon: https://raw.githubusercontent.com/backkom/dsh-at-file-everything/master/assets/icon-180.png
