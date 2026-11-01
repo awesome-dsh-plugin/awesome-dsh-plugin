@@ -1,0 +1,6 @@
+url: https://github.com/1jincheng/dsh-first-paint
+name: 1jincheng/dsh-first-paint
+category: ui
+description:
+  en: "First-paint splash for DSH: pushes a branded splash page into the boot HTML as an index-injection row, so the desktop window opens already showing the splash instead of a white/loading flash. Fades out and hands over once the startup-animation plugin starts (checked via window.__DSH_STARTUP_RUNNING__), with an 8s fallback so it can never trap the app behind the splash. A normal dsh.bundle plugin: no host changes, no app.asar patching."
+  zh: "首帧启动页：把品牌启动页作为 index 注入行写进 DSH 的首帧 HTML，桌面端窗口出现时直接是启动页，而不是白屏或加载态。检测到启动动画插件开始（window.__DSH_STARTUP_RUNNING__）后自动淡出让位；8 秒兜底，不会把应用卡在启动页里。普通 dsh.bundle 插件，不改宿主、不碰 app.asar。"
