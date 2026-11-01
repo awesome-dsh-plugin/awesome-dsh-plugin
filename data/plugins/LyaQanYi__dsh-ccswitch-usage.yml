@@ -1,0 +1,10 @@
+# 投稿条目 —— data/plugins/LyaQanYi__dsh-ccswitch-usage.yml
+# 仓库：https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+# 方向与已有的 upJiang__dsh-ccswitch 相反：那条是把 CC Switch 的 provider 接进 DSH（model 分类），
+# 这条是把 DSH 的 token 用量写进 CC Switch 的用量库（usage 分类），两者不重复。
+url: https://github.com/LyaQanYi/dsh-ccswitch-usage
+name: LyaQanYi/dsh-ccswitch-usage
+category: usage
+description:
+  en: 'Records DeepSeek Harness token usage into CC Switch, one row per model call, sharing the dedup ledger its own DSH importer uses so the two never double count. Also backfills existing session logs on first run.'
+  zh: '把 DeepSeek Harness 每次模型调用的 token 用量写进 CC Switch 的用量统计，让 DSH 与 Claude Code、Codex 等 CLI 并列展示在同一个面板里。首启时会回填已有会话日志，并与 CC Switch 自带的 DSH 导入器共用去重台账，两者不会重复计数。'

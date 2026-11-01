@@ -3,5 +3,5 @@ name: liuhusk/dsh-status-card
 category: ui
 icon: https://raw.githubusercontent.com/liuhusk/dsh-status-card/main/docs/icon-180.png
 description:
-  en: "A permanent status card in the top-right corner of the DSH content area: one line for where this turn's time went (model, tools, waiting), plus collapsible to-dos with a progress bar, the session goal (edit/pause/resume/clear), submitted plans that open in the preview pane, the files this session changed, and subagents with their token and duration figures; it yields space to the content as the area narrows and folds into a round button at the limit."
-  zh: "内容区右上角的常驻状态卡片：一行写清本轮时间去向（模型/工具/等你），另列可折叠的任务与进度条、会话目标（可编辑/暂停/继续/清除）、已提交计划（可点开在右栏预览）、本次变更文件，以及带 token 与耗时数字的子智能体行；内容区收窄时正文向左让位，推到极限自动收成一颗圆钮。"
+  en: "A permanent status card in the top-right corner of the DSH content area: one line for where this turn's time went (model, tools, waiting), plus collapsible to-dos with a progress bar, the session goal (edit/pause/resume/clear), submitted plans that open in the preview pane, the files this session changed, subagents with their token and duration figures, and this session's background jobs: running rows carry a two-step stop button, finished ones fold into a count line that stays collapsed until opened; it yields space to the content as the area narrows and folds into a round button at the limit."
+  zh: "内容区右上角的常驻状态卡片：一行写清本轮时间去向（模型/工具/等你），另列可折叠的任务与进度条、会话目标（可编辑/暂停/继续/清除）、已提交计划（可点开在右栏预览）、本次变更文件、带 token 与耗时数字的子智能体行，以及本会话的后台任务（运行中的行带两段确认的终止按钮，已结束的收进一行计数、默认收起）；内容区收窄时正文向左让位，推到极限自动收成一颗圆钮。"

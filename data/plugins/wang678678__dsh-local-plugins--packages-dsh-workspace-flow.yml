@@ -1,0 +1,6 @@
+url: https://github.com/wang678678/dsh-local-plugins/tree/main/packages/dsh-workspace-flow
+name: wang678678/dsh-local-plugins#dsh-workspace-flow
+category: ui
+description:
+  en: Replaces the add-workspace folder dialog with a path input, drive shortcuts, and the native folder picker.
+  zh: 把添加工作区的目录对话框换成路径输入、盘符快捷和系统文件夹选择。

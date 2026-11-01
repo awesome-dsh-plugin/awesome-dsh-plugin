@@ -1,7 +1,7 @@
 url: https://github.com/Tests4gptplay/dsh-compaction-selector
 name: Tests4gptplay/dsh-compaction-selector
 category: session
-tarball: https://github.com/Tests4gptplay/dsh-compaction-selector/releases/download/v1.0.3/dsh-compaction-selector-1.0.3.tgz
+tarball: https://github.com/Tests4gptplay/dsh-compaction-selector/releases/download/v1.0.6/dsh-compaction-selector-1.0.6.tgz
 description:
-  en: "Choose the Standard-mode compaction model in DSH settings, with Auto following the conversation model and configurable additional on-demand passes."
-  zh: "在 DSH 设置中选择标准模式的压缩模型，支持 Auto 跟随当前对话模型，并设置额外按需压缩次数。"
+  en: "Browse and search provider models to choose an independent summary model for DSH Standard mode, or let Auto follow the conversation route; save extra automatic pressure-compaction passes, while manual compaction attempts one useful pass. Includes Chinese/English theme-aware settings; start a new Standard-mode conversation after installation to apply the configuration."
+  zh: "按供应商浏览、搜索并选择 DSH 标准模式的独立摘要模型，或用 Auto 跟随对话路由；保存自动压力压缩额外次数，手动压缩只尝试一次有用压缩。提供中英文主题适配设置，安装后新建标准模式会话以应用配置。"

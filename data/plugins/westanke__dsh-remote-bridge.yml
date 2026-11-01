@@ -2,6 +2,6 @@ url: https://github.com/westanke/dsh-remote-bridge
 name: westanke/dsh-remote-bridge
 category: remote
 description:
-  en: 'Translates DSH''s private remote protocol into a versioned REST API (chat, sessions, files, devices) for trusted clients such as the Android app dsh-companion, plus a Phone-settings panel with seven inline cards inside the DSH WebUI settings.'
-  zh: '把 DSH 内核的私有 remote 协议翻译成版本化 REST 接口（聊天、会话、文件、设备），供 Android 客户端 dsh-companion 等受信任客户端使用；桌面端在 DSH 设置里内联渲染七张折叠卡片（根目录 / 远程访问 / 设备 / 识图 / 回收站 / 插件 / App 下载）。'
-tarball: https://github.com/westanke/dsh-remote-bridge/releases/download/v2.8.2/dsh-remote-bridge-v2.8.2.tgz
+  en: 'Translates DSH''s private remote protocol into a versioned REST API (chat, sessions, files, devices) for trusted clients such as the Android app dsh-companion, plus a Phone-settings panel inside the DSH WebUI settings: five cards in the main list (remote access, public tunnel, devices, trash, app download) and an Advanced settings group holding authorized roots, image reading and plugins.'
+  zh: '把 DSH 内核的私有 remote 协议翻译成版本化 REST 接口（聊天、会话、文件、设备），供 Android 客户端 dsh-companion 等受信任客户端使用；桌面端在 DSH 设置里提供「手机设置」面板：主列表五张卡（远程访问 / 外网隧道 / 设备 / 回收站 / App 下载），另有「高级设置」组收纳授权根目录、识图与插件三项。'
+tarball: https://github.com/westanke/dsh-remote-bridge/releases/download/v2.9.2/dsh-remote-bridge-v2.9.2.tgz

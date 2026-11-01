@@ -1,0 +1,6 @@
+url: https://github.com/hyperion2144/dsh-hashline-edittool
+name: hyperion2144/dsh-hashline-edittool
+category: tools
+description:
+  en: "Hash-anchored file tools for DeepSeek Harness: the read, edit, write and grep tools are replaced by versions where every line is addressed by a variable-length content anchor instead of a line number, and the plugin also registers delete, rename, undo_last_edit, ast_grep, ast_edit, lsp and format. Edits answer with a unified diff; a stale or ambiguous anchor is rejected and a fresh one served back; undo survives restarts; structural search and rewrite run on tree-sitter and semantic work through a language server; a bundled web card plugin renders read, diff, grep and LSP cards from the tools' own structured metadata."
+  zh: "把 DeepSeek Harness 的文件工具换成哈希锚定版本：read、edit、write、grep 被替换为按变长内容锚点定位每一行（而不是行号）的实现，插件同时注册 delete、rename、undo_last_edit、ast_grep、ast_edit、lsp 与 format 七个工具。编辑以统一 diff 返回；失效或歧义的锚点被拒绝并重新下发新鲜锚点；undo 跨重启保留；结构化查找与改写走 tree-sitter，语义能力走语言服务器；随包的 web 卡片插件按各工具自带的结构化元数据渲染 read、diff、grep 与 LSP 卡片。"
