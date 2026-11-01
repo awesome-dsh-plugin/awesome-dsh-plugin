@@ -1,0 +1,6 @@
+url: https://github.com/beiryang/dsh-vscode-ide
+name: beiryang/dsh-vscode-ide
+category: dev
+description:
+  en: A floating VS Code-like workbench for DeepSeek Harness, with a Monaco editor, file explorer, Git panel, content search and an SSH terminal.
+  zh: 面向 DeepSeek Harness 的浮动式 VS Code 风格工作台，包含 Monaco 编辑器、资源管理器、Git 面板、内容搜索与 SSH 终端。
