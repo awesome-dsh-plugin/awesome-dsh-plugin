@@ -1,6 +1,0 @@
-url: https://github.com/xiangshu2026/dsh-float
-name: xiangshu2026/dsh-float
-category: remote
-description:
-  en: "Android companion app (not a host plugin) that puts the DSH web UI into a draggable, resizable floating window on your phone, so you can watch a reply land while using another app. Ships a single 33 KB APK with no third-party dependencies; the WebView loads your DSH page over an adb reverse tunnel and injects a stylesheet that collapses the layout to a single column with larger type. Signing a cookie with your own browser-session secret keeps it logged in across restarts."
-  zh: "安卓配套应用（不是宿主插件），把 DSH 网页放进手机上可拖动、可缩放的悬浮窗，你可以一边用别的 App 一边看回复出来。单个 APK 33 KB，无第三方依赖；WebView 通过 adb 反向隧道加载你的 DSH 页面，并注入一份样式表把布局压成单栏、字号放大。用你自己的 browser-session 密钥自签 cookie，DSH 重启后仍保持登录。"
