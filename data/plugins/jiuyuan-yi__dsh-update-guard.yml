@@ -1,0 +1,6 @@
+url: https://github.com/jiuyuan-yi/dsh-update-guard
+name: jiuyuan-yi/dsh-update-guard
+category: dev
+description:
+  en: Compares installed plugins against a downloaded DSH update and reports which interfaces they use that the update no longer exposes. Runs before you install, with a dry-run diagnose command for when it declines to act.
+  zh: 在安装 DSH 更新之前，把已装插件用到的接口与更新包里的实际接口逐项比对，指出新版本已经不再提供的那几个；附一个只读的 diagnose 命令，用来查看判定卡在哪一环。
