@@ -1,0 +1,7 @@
+url: https://github.com/Weihao654/dsh-workflow/tree/main/plugins/l2-protocol
+name: Weihao654/dsh-workflow#l2-protocol
+category: workflow
+description:
+  en: Adds ten chain_* tools that turn a multi-agent role chain into a round state machine with one frozen baseline, per-signature failure counts, role-tagged evidence, blocking approval gates and one audit file per round. Also adds a settings card that routes each role to its own model and thinking effort.
+  zh: 新增十个 chain_* 工具，把多 Agent 角色链变成轮次状态机：唯一冻结的基线、按签名累计的失败次数、按角色标注的证据、阻塞式审批门禁，以及每轮一份审计文件。另附设置页卡片，可为每个角色指定模型与思考深度。
+icon: https://raw.githubusercontent.com/Weihao654/dsh-workflow/main/assets/icon-1024.png
