@@ -1,0 +1,6 @@
+url: https://github.com/cc1104666/dsh-plugins/tree/main/packages/dsh-grok3ai
+name: cc1104666/dsh-plugins#dsh-grok3ai
+category: model
+description:
+  en: 'Talks to the two public Hugging Face Spaces (MiniMax-VL-01 and Llama-2-7B-Chat) that grok3ai.org only embeds in an iframe, presenting them as OpenAI-compatible models.'
+  zh: '直连 grok3ai.org 仅用 iframe 嵌进去的两个公开 Hugging Face Space（MiniMax-VL-01 与 Llama-2-7B-Chat），当作 OpenAI 兼容模型使用。'

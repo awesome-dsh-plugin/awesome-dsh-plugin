@@ -1,0 +1,6 @@
+url: https://github.com/cc1104666/dsh-plugins/tree/main/packages/dsh-lightvela
+name: cc1104666/dsh-plugins#dsh-lightvela
+category: model
+description:
+  en: 'Signs in to LightVela by WeChat QR code, reads the model gateway key from your own instance and writes the gateway into llm-pi-ai so its models appear in the picker.'
+  zh: '微信扫码登录 LightVela，从你自己的实例里读出模型网关凭据并写进 llm-pi-ai，让套餐里的模型出现在模型选择器中。'
