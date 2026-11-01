@@ -1,0 +1,22 @@
+url: https://github.com/jediliu005/dsh-fairy-zzz-for-jediliu
+name: jediliu005/dsh-fairy-zzz-for-jediliu
+category: ui
+description:
+  en: >-
+    Fairy III (Zenless Zone Zero) H.D.D skin for DeepSeek Harness: boot video,
+    an eye-core dock that can be dragged vertically so it never covers text, and
+    time-of-day greeting voices written by a model every day (5 lines, each <= 20
+    characters) and synthesized locally with GPT-SoVITS, with a fallback chain of
+    today -> latest -> bundled audio so there is always something to hear. Replies
+    can be spoken: a trailing marker line takes priority over length heuristics,
+    and long replies can be compressed into one sentence first. Personal fork of
+    dsh-fairy-zzz with its own package, route and storage namespace, plus a
+    rate-limited summarize endpoint, POST-only engine control and bounded TTS and
+    greeting caches.
+  zh: >-
+    《绝区零》Fairy Ⅲ 的 H.D.D 皮肤：开机动画、可沿纵轴拖动（X 轴固定）的常驻眼徽，
+    用来避开正文；每天由模型生成 5 段时段问候台词（每句不超过 20 字），用本地
+    GPT-SoVITS 合成，取用顺序为「今日 → 最近一份 → 内置语音」，生成失败也有声音。
+    回复可选朗读：末尾标记行优先于字数判断，长回复可先压成一句结论。本仓库是
+    dsh-fairy-zzz 的个人定制分支，包名、路由与存储命名空间独立，并做了摘要接口限流、
+    引擎启停改 POST、TTS 缓存与问候语定期清理。
