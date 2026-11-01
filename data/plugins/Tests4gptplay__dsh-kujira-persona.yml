@@ -1,7 +1,7 @@
 url: https://github.com/Tests4gptplay/dsh-kujira-persona
 name: Tests4gptplay/dsh-kujira-persona
 category: identity
-tarball: https://github.com/Tests4gptplay/dsh-kujira-persona/releases/download/v2.3.1/dsh-kujira-persona-2.3.1.tgz
+tarball: https://github.com/Tests4gptplay/dsh-kujira-persona/releases/download/v2.4.1/dsh-kujira-persona-2.4.1.tgz
 description:
-  en: "Model-linked AI personas and desktop pet for DSH, with shared world lore, separate editable memories, task animations, usage statistics, optional AI diaries and idle-time diary consolidation. The native pet window is Windows x64 only; sleep consolidation spends tokens in the background. Before installing or updating, close the visible desktop pet and notification bubble by choosing Close All (全部关闭) in the context menu; otherwise, files in use may cause installation to fail."
-  zh: "随 DSH 当前模型切换的 AI 角色人设与桌宠，支持共享世界观、独立可编辑记忆、任务动画、工作统计、可选 AI 日记及空闲时日记整理。原生桌宠窗口仅 Windows x64；睡眠整理会在后台调用模型并消耗 token。安装或更新前，请先关闭桌面上已显示的桌宠和提示气泡（右键菜单选择『全部关闭』），否则可能因文件占用导致安装失败。"
+  en: "Model-linked characters and a shared world for DSH, with separate editable personas and memories, optional AI diaries and sleep consolidation, Chinese/English controls, task-aware desktop pets, themes and usage statistics; updates preserve user customizations. Supports Windows, Linux and macOS; see the guide for each system's installation requirements. Diaries and consolidation consume tokens. Before installing or updating, we recommend closing visible desktop pets and bubbles; open files may cause installation to fail. Codex and OpenAI API account queries have been user-validated; other sources await user validation and feedback."
+  zh: "DSH 模型联动角色与共享世界，支持独立可编辑人设和记忆、可选 AI 日记与睡眠整理、中英文界面、任务联动桌宠、主题和用量统计，更新保留用户自定义。支持 Windows、Linux 和 macOS，各系统安装要求见使用说明。日记和整理消耗 Token。安装或更新前，建议先关闭桌面上已显示的桌宠和提示气泡；未关闭时，文件占用有可能导致安装失败。Codex 与 OpenAI API 已获用户验证；其他来源待用户验证反馈。"

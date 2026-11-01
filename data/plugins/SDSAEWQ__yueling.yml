@@ -1,0 +1,7 @@
+url: https://github.com/SDSAEWQ/yueling
+name: SDSAEWQ/yueling
+category: ui
+description:
+  en: 'A solar-term card for the DSH Web UI: a dot under the conversation header unfolds into today''s term, its three pentads, how long until the next term, a day-pillar reading, and a year table of all 24 terms. The hexagram page casts coins and keeps a seven-day log; the jieqi skill is bundled.'
+  zh: 'DSH Web UI 的二十四节气卡片：标题栏下沿一颗圆点，展开今日节气与三候、距下个节气几天几时辰、日柱三行提示和全年交节时刻；卦页可以用铜钱摇一卦并回看七天。内置 jieqi skill。'
+icon: https://raw.githubusercontent.com/SDSAEWQ/yueling/main/docs/icon.png

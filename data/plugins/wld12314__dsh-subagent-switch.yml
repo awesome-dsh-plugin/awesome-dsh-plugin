@@ -1,0 +1,6 @@
+url: https://github.com/wld12314/dsh-subagent-switch
+name: wld12314/dsh-subagent-switch
+category: model
+description:
+  en: 'Picks each subagent model from the local catalog by task category, unless the caller already named one. Free and quota tiers are ranked together by per-model capability tags; a pricier model is used only when no cheap model is tagged as good at that kind of work. Only providers whose remaining balance is readable, or that are account-backed, enter the candidate pool; the rest stay listed but are not routed. A panel adds per-model manual priority above the automatic order plus allow/revoke controls.'
+  zh: '未由调用方指定模型时，按任务类型从本机模型目录为每个子代理挑一个模型。免费与额度档合并后按逐模型能力标签排序；只有当便宜档里没有任何模型声明擅长这类工作时，才升到更贵的档。只有余额可读或账号接入的 provider 进候选池，其余仍列出但不参与路由。面板提供盖过自动顺序的逐模型手动优先级，以及放行/收回开关。'

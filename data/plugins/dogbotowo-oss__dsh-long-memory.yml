@@ -1,5 +1,5 @@
-url: https://github.com/dogbotowo-oss/dsh-long-conversation-memory
-name: dogbotowo-oss/dsh-long-conversation-memory
+url: https://github.com/dogbotowo-oss/dsh-long-memory
+name: dogbotowo-oss/dsh-long-memory
 category: memory
 description:
   en: 'Long-conversation memory for DeepSeek Harness (DSH): keeps settled decisions, user corrections and exact numbers, with their conditions and sources, available across compaction and restarts in 100-1000+ turn sessions; one small budgeted evidence block per model step, with enabled skill rules re-applied in the same block.'

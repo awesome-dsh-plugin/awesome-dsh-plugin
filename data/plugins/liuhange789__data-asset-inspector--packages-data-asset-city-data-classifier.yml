@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/city-data-classifier
+name: liuhange789/data-asset-inspector#city-data-classifier
+category: tools
+description:
+  zh: "城市数据AI分类插件 — 基于GB/T 47949自动推荐数据分类，支持结构化/半结构化/非结构化"
+  en: "City data AI classification plugin — auto-recommends data classification based on GB/T 47949, supports structured/semi-structured/unstructured data."

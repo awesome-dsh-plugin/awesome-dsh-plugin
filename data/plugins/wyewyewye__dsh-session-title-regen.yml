@@ -1,0 +1,8 @@
+url: https://github.com/wyewyewye/dsh-session-title-regen
+name: wyewyewye/dsh-session-title-regen
+category: session
+description:
+  en: Regenerates a session's title from its last 10 user prompts using the model the session itself last used, with an editable preview before the new title is written back.
+  zh: 根据会话最近 10 轮用户 prompt，用该会话最近一次使用的模型重新生成标题，预览确认后写回。
+tarball: https://github.com/wyewyewye/dsh-session-title-regen/releases/download/v0.1.0/dsh-session-title-regen-0.1.0.tgz
+icon: https://raw.githubusercontent.com/wyewyewye/dsh-session-title-regen/main/assets/icon.png

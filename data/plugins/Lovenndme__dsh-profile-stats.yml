@@ -1,0 +1,6 @@
+url: https://github.com/Lovenndme/dsh-profile-stats
+name: Lovenndme/dsh-profile-stats
+category: usage
+description:
+  en: 'A personal usage profile page in the DSH sidebar. Cumulative tokens drawn as an input / output / cache-hit donut, today''s tokens, longest task time, active-day streaks, a 12-month activity heatmap with daily / weekly / cumulative scopes, a time-based bar chart that splits tokens by model (Flash / Pro), and a per-provider billing breakdown for today or all time. Everything is folded from this machine''s own session logs through ctx.sessionQuery. The only outbound request is a six-hourly read of this package''s own version from the npm registry, used by the in-panel update button — no telemetry, no credentials, nothing uploaded.'
+  zh: 'DSH 侧栏的个人用量主页：累计 Token（输入/输出/缓存命中环形图）、今日 Token 用量、最长任务用时、连续活跃天数、近 12 个月活动热力图（每天/每周/累计总量三档）、按时间分桶并按模型（Flash / Pro）分色的柱状图，以及按供应商的今日/累计账单拆分。全部由本机会话日志经 ctx.sessionQuery 折叠而来；唯一的外发请求是每 6 小时读一次本包自己在 npm 上的版本号（供面板内的更新按钮使用），不上报数据、不碰凭据。'
