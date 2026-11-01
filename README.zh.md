@@ -371,6 +371,7 @@ dsh plugin --profile web add dshmarket
 - [Ceelog/dsh-plugins#dsh-plugin-setting-mcp](https://github.com/Ceelog/dsh-plugins/tree/main/src/plugins/dsh-plugin-setting-mcp) — 在 Web 设置面板中查看、添加、编辑、删除、启用或停用 MCP 服务器，保存后热重载。
 - [Celebrate-W/dsh-topic-trail](https://github.com/Celebrate-W/dsh-topic-trail) — 把 dsh 的每次长对话实时提炼成「线索 → 进度步骤 → 阶段历程」三级结构，以可拖动的悬浮窗呈现，点一下就能跳回对话里的对应消息。线索由 DeepSeek 模型总结，模型不可用时自动回退到零成本的规则模式；支持重命名、锁定、拖拽合并，附带每个对话独立的笔记与矢量画笔。
 - [Centaurea5547196/dsh-page-zoom](https://github.com/Centaurea5547196/dsh-page-zoom) — DSH Web UI 页面缩放：Ctrl+鼠标滚轮以 5% 步长缩放整个界面（30%-200%），在本地记住缩放比例，并在右下角显示放大镜与百分比。
+- [Cerbur/clutch-dsh#clutch-dsh-office](https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-office) — 把活跃会话放进 3D 胡闹厨房：AI 在跑任务，鲸鱼娘在厨房溜达，你在旁边看鱼；常驻气泡一眼看清谁在干活、谁在等回应、谁已交作业，点击直达会话继续干活——本来是为了看进度，现在只想再看一眼鱼。
 - [CH4ACKO3/dsh-turn-fold](https://github.com/CH4ACKO3/dsh-turn-fold) — 面向 DSH Web UI 的 Codex 风格回合折叠：保留最终答复，合并连续的推理与工具活动，并以多语言摘要展示可配置的实时耗时、工具调用和 token 指标。
 - [Chaiyahang/dsh-scratchpad](https://github.com/Chaiyahang/dsh-scratchpad) — 给 DeepSeek Harness 的左栏便签插件：带标签的随手记、图片/文件附件、Markdown 待办、发到对话、唤起快捷键、JSON 导入导出，以及 Agent 工具。
 - [chaochaokongbai/dsh-beginner-hub](https://github.com/chaochaokongbai/dsh-beginner-hub) — 面向 DSH 新手的说人话需求路由面板：用本地关键词引擎把一句大白话需求路由成可直接用的方案（提问话术变体、匹配技能、进阶玩法），选中的方案可一键填入新会话。
