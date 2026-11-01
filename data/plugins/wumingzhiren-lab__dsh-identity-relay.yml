@@ -1,0 +1,6 @@
+url: https://github.com/wumingzhiren-lab/dsh-identity-relay
+name: wumingzhiren-lab/dsh-identity-relay
+category: identity
+description:
+  en: Disk-backed persona card, handover note and long-term memory for DSH agents; each new session reloads them, and every memory carries a source tier, stamped revocation and soft archive.
+  zh: 磁盘上的人格卡、交接书和长期记忆，新会话自动读档；每条记忆带来源档位、盖章作废和软归档，换会话、清上下文之后还是同一个她。
