@@ -3,5 +3,5 @@ name: EviMing/dsh-qq-approval-notify
 category: notify
 tarball: https://github.com/EviMing/dsh-qq-approval-notify/releases/download/v1.1.0/local-qq-approval-notify-1.1.0.tgz
 description:
-  en: 'Watches DeepSeek Harness approval requests (including sandbox escalation) and user-question prompts (ask_user_question, plan review) that block on the DSH UI, and sends them to the owner QQ via a local NapCat whose login QQ is verified first; falls back to a Windows notification when NapCat is unavailable.'
-  zh: '监听 DeepSeek Harness 的权限申请（含沙箱提权）以及需要你在界面上回答的提问（ask_user_question、计划审核），经本机 NapCat 发到主人 QQ；使用前校验 NapCat 登录账号，找不到 NapCat 时回退 Windows 通知。'
+  en: 'Sends a QQ direct message before DeepSeek Harness asks for permission; falls back to a Windows notification, and gives up if that also fails.'
+  zh: '让 DSH 申请权限前先发 QQ 私信，失败则 Windows 通知，再失败放弃通知。'
