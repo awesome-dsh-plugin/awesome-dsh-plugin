@@ -1,0 +1,7 @@
+url: https://github.com/XiaoLuoMin/dsh-resource-alerts
+name: XiaoLuoMin/dsh-resource-alerts
+category: ui
+description:
+  en: 'Samples CPU, memory, frequency, disk and network once a minute on Windows, keeps a 30-day history, and reports sustained CPU >= 85% (10 min), memory >= 90% (10 min) and load-time frequency throttling (<= 70% of maximum clock, 5 min) in a sidebar tab with 24h / 7d charts.'
+  zh: '在 Windows 上每 60 秒采集一次 CPU、内存、频率、磁盘与网络，保留 30 天历史，在侧栏以 24 小时 / 7 天曲线展示，并判定 CPU 持续 ≥ 85%（10 分钟）、内存持续 ≥ 90%（10 分钟）、有负载时频率 ≤ 最高频率 70%（5 分钟）这三类异常。'
+tarball: https://github.com/XiaoLuoMin/dsh-resource-alerts/releases/latest/download/dsh-resource-alerts.tgz
