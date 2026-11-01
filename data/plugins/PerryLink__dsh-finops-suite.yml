@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-finops-suite
+name: PerryLink/dsh-finops-suite
+category: workflow
+description:
+  en: 'One-command finance-ops bundle: e-invoice, bank reconciliation, AP three-way and travel reconciliation, with exact member pins.'
+  zh: '一键安装财务运营套件：电子发票、银行对账、三单匹配与差旅对账，成员版本精确锁定。'
