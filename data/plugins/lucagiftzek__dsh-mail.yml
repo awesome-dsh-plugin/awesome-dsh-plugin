@@ -1,0 +1,5 @@
+url: https://github.com/lucagiftzek/dsh-mail
+name: lucagiftzek/dsh-mail
+category: tools
+description:
+  en: "Mail for DSH: IMAP, POP3, SMTP and OAuth2 accounts with a reading tab, API senders, scheduled and CSV bulk sends with unsubscribe handling, and mail_* agent tools."
