@@ -1,0 +1,7 @@
+url: https://github.com/NKUhan123/dsh-jupyterlab
+name: NKUhan123/dsh-jupyterlab
+category: ui
+tarball: https://github.com/NKUhan123/dsh-jupyterlab/releases/latest/download/dsh-jupyterlab.tgz
+description:
+  en: 'JupyterLab-style notebook for DSH: code and output side by side with a draggable divider, outputs that stick to the viewport while a long cell scrolls, Jupyter keyboard shortcuts (a/b/dd, m/y, Shift+Enter vs Ctrl+Enter), a scissors button to delete a cell and a chip to switch it between code and Markdown. Modified fork of @beihaizb/dsh-notebook.'
+  zh: 'DSH 的 JupyterLab 风格 notebook：代码与输出左右分栏并可拖动，长 cell 滚动时输出贴住视口，支持 Jupyter 快捷键（a/b/dd、m/y、Shift+Enter 与 Ctrl+Enter 区分）、左侧剪刀删除 cell、py/md 标签切换代码与 Markdown。基于 @beihaizb/dsh-notebook 的修改版。'
