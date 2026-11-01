@@ -2,6 +2,6 @@ url: https://github.com/Orchidroot/dsh-friends-plugin
 name: Orchidroot/dsh-friends-plugin
 category: fun
 description:
-  en: 'Floating friends list for DSH with one-to-one chat, custom avatars and status words, backed by a self-hosted service.'
-  zh: 'DSH 好友浮窗，支持一对一聊天、自定义头像和状态词条，需要配套好友服务。'
+  en: 'Floating friends list for DSH with one-to-one chat, custom avatars and status words. Connects to a self-hosted or shared friends service.'
+  zh: 'DSH 好友浮窗，支持一对一聊天、自定义头像和状态词条，可连接自部署好友服务或公共体验实例。'
 tarball: https://github.com/Orchidroot/dsh-friends-plugin/releases/latest/download/dsh-friends-plugin.tgz
