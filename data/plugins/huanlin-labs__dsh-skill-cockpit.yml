@@ -1,0 +1,6 @@
+url: https://github.com/huanlin-labs/dsh-skill-cockpit
+name: huanlin-labs/dsh-skill-cockpit
+category: developer-tools
+description:
+  en: 'DSH Skill Cockpit: one Settings page listing every skill the machine exposes (system / project / pool) with search, per-skill enable / disable / delete / import, local test-fire and per-skill usage counts, so zombie skills are easy to spot. Chinese notes built in; MIT; no network calls, state stays on disk.'
+  zh: 'DSH 技能驾驶舱：一个设置页就能看到本机所有技能（系统 / 项目 / 技能池），支持搜索、逐项启停 / 删除 / 导入、本地试跑评分和每个技能的使用次数，专门用来揪出常年不用的「僵尸技能」；内置中文说明；MIT，不联网，状态全存本地。'
