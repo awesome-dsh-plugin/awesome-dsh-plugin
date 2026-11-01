@@ -1,0 +1,6 @@
+url: https://github.com/xfgil/dsh-loop-guard
+name: xfgil/dsh-loop-guard
+category: usage
+description:
+  en: 'Stop the agent going round in circles: cap tool calls per turn, detect repeated identical actions, and speak up when a long turn has not said anything to the user yet.'
+  zh: '原地打转就叫停：限制单轮工具调用次数、识别反复执行的同一动作，并在长回合里迟迟没跟用户说话时提醒一句。'

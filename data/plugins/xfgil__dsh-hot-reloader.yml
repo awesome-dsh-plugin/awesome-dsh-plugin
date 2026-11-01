@@ -1,0 +1,6 @@
+url: https://github.com/xfgil/dsh-hot-reloader
+name: xfgil/dsh-hot-reloader
+category: dev
+description:
+  en: 'Reload a plugin''s source the moment a file changes, without restarting the harness. Covers the third-party plugin case the built-in watcher misses because it skips node_modules.'
+  zh: '改完插件源码即刻生效，无需重启 DSH。补上宿主内置热重载因排除 node_modules 而覆盖不到的第三方插件场景。'
