@@ -1,0 +1,5 @@
+url: https://github.com/lucagiftzek/DSH-Idle-Watchdog
+name: lucagiftzek/DSH-Idle-Watchdog
+category: workflow
+description:
+  en: "Posts a follow-up prompt into opted-in chats that fall silent, and offers a secret-protected HTTP API that posts a message into any chat."
