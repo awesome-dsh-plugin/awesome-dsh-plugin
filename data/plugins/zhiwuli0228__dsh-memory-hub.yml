@@ -1,0 +1,6 @@
+url: https://github.com/zhiwuli0228/dsh-memory-hub
+name: zhiwuli0228/dsh-memory-hub
+category: memory
+description:
+  en: Local-first, file-native long-term memory for DSH with per-turn preflight, compact context injection, citations, human-approved writes, manual consolidation, nightly report-only maintenance, and a read-only Web panel.
+  zh: 本地优先、文件原生的 DSH 长期记忆，提供每回合预检、紧凑上下文注入、引用、人工批准写入、手动汇总、夜间只读维护与只读 Web 面板。
