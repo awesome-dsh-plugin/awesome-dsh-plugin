@@ -1,0 +1,8 @@
+url: https://github.com/Time-233/dsh-theme-neon-arcade
+name: Time-233/dsh-theme-neon-arcade
+category: theme
+description:
+  en: 'A neon pixel theme for DeepSeek Harness desktop with an optional air-battle background and mouse-drag flight controls.'
+  zh: 'DeepSeek Harness 桌面端霓虹像素主题，支持可开关的空战背景与鼠标拖动战机。'
+icon: https://raw.githubusercontent.com/Time-233/dsh-theme-neon-arcade/main/assets/icon-180.png
+tarball: https://github.com/Time-233/dsh-theme-neon-arcade/releases/latest/download/dsh-theme-neon-arcade.tgz
