@@ -2,5 +2,5 @@ url: https://github.com/Jingxuan-WH/dsh-model-rank
 name: Jingxuan-WH/dsh-model-rank
 category: ui
 description:
-  en: 'Sidebar leaderboard for mainstream LLMs: LMArena blind-test ratings, the Artificial Analysis intelligence index, OpenRouter weekly and monthly usage plus market share, with price, speed and context windows, rebuilt once a day into a local snapshot that the panel opens instantly; locally configured models are highlighted.'
-  zh: '侧栏大模型排行榜：LMArena 盲测评分、Artificial Analysis 智能指数、OpenRouter 周榜/月榜与市场份额，附价格、速度与上下文窗口；数据由宿主每日快照，面板打开即显示，并高亮本机已接入的模型。'
+  en: 'Sidebar leaderboard for DeepSeek Harness (DSH): LMArena blind-test ratings, Artificial Analysis intelligence index, LiveBench 2.0 capability, OpenRouter weekly/monthly usage and market share, price, speed and context — plus a local token-usage dashboard built from your own session logs (tokens, estimated cost, per-model ranking), model detail drawers and CSV export. Daily snapshot, instant open, no API key; locally configured models are highlighted.'
+  zh: '侧栏大模型排行榜：LMArena 盲测评分、Artificial Analysis 智能指数、LiveBench 2.0 能力榜、OpenRouter 周榜/月榜与市场份额，附价格、速度与上下文；另有本机用量仪表盘（只读会话日志统计 tokens、估算花费与模型用量排行）、明细抽屉与 CSV 导出。数据由宿主每日快照，面板打开即显示，并高亮本机已接入的模型。'
