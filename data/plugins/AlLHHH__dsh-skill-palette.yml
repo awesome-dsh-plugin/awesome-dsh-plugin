@@ -1,0 +1,6 @@
+url: https://github.com/AlLHHH/dsh-skill-palette
+name: AlLHHH/dsh-skill-palette
+category: skill
+description:
+  en: "Skill picker for the chat composer with categories, recents, favorites, search, one-click Chinese translation of skill descriptions, and per-reply chips that list the skills a turn used."
+  zh: "输入框右侧的技能选择器：分类、最近、收藏、搜索，缺中文说明的技能可一键用默认模型翻译，回答下方还会列出这一轮用到了哪些技能。"
