@@ -1356,6 +1356,7 @@ dsh plugin --profile web add dshmarket
 - [SongMiao-tech/dsh-prompt-optimizer](https://github.com/SongMiao-tech/dsh-prompt-optimizer) — 输入框下方「优化提示词」按钮：一键把草稿重写为更清晰、更可执行的提示词，弹出前后对比，支持一键替换回输入框。
 - [songoao25/dsh-bottom-info-bar#plugin](https://github.com/songoao25/dsh-bottom-info-bar/tree/main/plugin) — DSH 底部信息栏：一行显示服务商/模型、真实余额、高峰(琥珀)/空闲(绿)价与倒计时，以及本对话·今日·近一月·全部花费（真实落盘统计）。
 - [songshuhuoban/dsh-next-input](https://github.com/songshuhuoban/dsh-next-input) — 助手完成后，沿用会话模型与滚动上下文摘要，在空输入框中建议下一条用户回复，按 Tab 接受。
+- [southcul/demian-trade-suite-dsh-plugin](https://github.com/southcul/demian-trade-suite-dsh-plugin) — 在 DSH 侧边栏增加外贸工作台入口，用于外贸单证与装柜计算：报价单、PI/CI/PL/合同/报关资料、装柜方案与逐层装柜动画。现有离线单文件工作台通过同源页面嵌入面板。
 - [SouthernSibyl/dsh-quick-prompt](https://github.com/SouthernSibyl/dsh-quick-prompt) — 在输入框加一个按钮，点一下就把草稿原地改写成精确提示词，可一键恢复原文。
 - [southsnowL/dsh-bulletin#dsh-bulletin-panel](https://github.com/southsnowL/dsh-bulletin/tree/main/plugins/dsh-bulletin-panel) — 侧边栏面板：把公告和投递状态表放进 DSH 界面 —— 列出公告以及每条有几个会话见过，并让用户发布、编辑、删除条目。需要第三方插件 dsh-better-sidebar。
 - [SOVLOOKUP/dsh-cloud-download](https://github.com/SOVLOOKUP/dsh-cloud-download) — 在交付卡片、变更审查和文档预览上增加下载按钮，并隐藏 Host 远程或无桌面时无法生效的原生打开控件。需 DSH Web；原生打开控件默认隐藏，可在浏览器里恢复。
@@ -7882,6 +7883,7 @@ dsh plugin --profile web add dshmarket
 - [Yersi88/dsh-ollama-tool-guard](https://github.com/Yersi88/dsh-ollama-tool-guard) — 每次工具调用前由本机 Ollama 决策模型判定：可疑调用升级为确认提示，模型不可达时停止所有调用。需 DSH 0.2.x，并先装好本机 Ollama 0.35.1+、拉取默认约 6 GB 的 clef-flash 模型；否则所有工具调用都会被拒绝。
 - [ylwl1997/noatmark-dsh-plugin](https://github.com/ylwl1997/noatmark-dsh-plugin) — 文本卫生 dsh 插件：净化不可信文本、扫描隐形字符、清洗 LLM 格式、转义 CSV 公式注入。
 - [youchen-yc/dsh-security-judge](https://github.com/youchen-yc/dsh-security-judge) — 代码安全防御规则评审判官：自动识别正在做代码的会话，按《代码安全防御架构规则》强制评审其安全防御措施与所采用的代码安全防御架构，推荐程序需要的架构（一种或多种）并检查架构之间是否冲突；连续不合格会进入教学模式要求重做；在面板授予评审权限后，未通过评审的代码任务不能算完成（未授权时只读观察）。
+- [youchen-yc/dsh-system-guard](https://github.com/youchen-yc/dsh-system-guard) — 系统守护：分析并分类系统核心文件与运行时垃圾，把核心文件隐藏备份到剩余空间最大的硬盘、定期巡查完整性并从备份修复损坏文件；守护权限只用于保护系统。
 - [yuloop/dsh-secret-vault](https://github.com/yuloop/dsh-secret-vault) — 把密钥和个人信息交给 agent，却不进入它的上下文；带校验位的字段抽取与掩码内容分类。
 - [yunling-bionic/dsh-rule-guard](https://github.com/yunling-bionic/dsh-rule-guard) — 在写文件、跑非只读命令、联网、派子代理等有副作用的动作执行前，按项目规则与当前目标复核，超出范围即拒绝（失败即拒，无可配置豁免开关）。
 - [Yuuz12/dsh-webui-auth](https://github.com/Yuuz12/dsh-webui-auth) — WebUI 身份认证：HTTP/传输层强制登录（资源、插件 bundle、/api、WebSocket 四层防护），服务端会话 + HttpOnly Cookie。
@@ -8360,7 +8362,7 @@ dsh plugin --profile web add dshmarket
 - [Gjs9178U/dsh-pet-indesktop](https://github.com/Gjs9178U/dsh-pet-indesktop) — 给 DSH 网页界面加一只可以拖动的桌宠：一只叫「大肥鱼」（昵称「鲸鲸」）的鲸鱼娘，八种配色皮肤可切换，并且有性格——只吃米饭、聪明但懒、嘴硬心软；连点几次会躺平不干了，被叫「大肥鱼」会生气并坚持自己不胖，叫「鲸鲸」才高兴。她还会记事：今天被叫胖三次就来时冷淡，被叫昵称三次就亲近，离开半小时再回来说「才不是等你」，头几次见面怕生；这些计数每天零点清零，存在插件自己的状态文件里。十分钟没人理会游到角落，那只改视觉、不会动你放她的位置。八张皮肤图随插件分发、由插件自己提供，因此没有任何第三方请求。注意：画面带有 OleapCrow 标记、由仓库所有者提供，八种皮肤是同一张画的重新配色；本插件尚未在真实的 DSH 宿主上安装验证过。
 - [gongfpp/dsh-novel-fish](https://github.com/gongfpp/dsh-novel-fish) — 小说摸鱼：主动展开选中的原生聊天区域时，在保留真实思考和工具输出的下方阅读本地 EPUB、TXT、Markdown 小说，小说不发送给模型。目前仅兼容 DSH 0.2.1-rc.2。
 - [gongstudent/dsh-moyu](https://github.com/gongstudent/dsh-moyu) — 在 DeepSeek Harness 界面里悬停刷抖音推荐流：鼠标移入热点开始播放，移出暂停在原处，滚轮切换视频；滚轮做了累加与冷却，一次手势只切一条，播放器隐藏时保持挂载，移回从原处继续。宿主侧完成请求签名与视频流反代，不需要登录任何账号。
-- [good-saltfish/dsh-novel-shelf](https://github.com/good-saltfish/dsh-novel-shelf) — 装在 DSH 右侧栏的小说阅读器，搭配 AI 伴读，跟大肥鱼一起吐槽文章、发表看法 - 自己的 TXT 三种方式导入，五套阅读主题，章节、进度与批注保存。伴读跟着你读到哪儿就评到哪儿，吐槽或捧场，可在毒舌、温柔、侦探、摆烂四种腔调中切换，节奏自己定，默认关闭。内置 434 本中文经典，包里只有 44 KB 书目，按书名作者搜索、一键下载即入架离线读，四个 CDN 边缘回退。
+- [good-saltfish/dsh-novel-shelf](https://github.com/good-saltfish/dsh-novel-shelf) — 装在 DSH 右侧栏的小说阅读器，办公摸鱼专用，搭配 AI 伴读，跟大肥鱼一起吐槽文章、发表看法 - 自己的 TXT 三种方式导入，五套阅读主题，章节、进度与批注保存。伴读跟着你读到哪儿就评到哪儿，吐槽或捧场，可在毒舌、温柔、侦探、摆烂四种腔调中切换，节奏自己定，默认关闭。内置 434 本中文经典，包里只有 44 KB 书目，按书名作者搜索、一键下载即入架离线读，四个 CDN 边缘回退。
 - [Gorkaseto/dsh-whale-pet](https://github.com/Gorkaseto/dsh-whale-pet) — 在新会话中，一只蓝白相间的像素风小鲸鱼趴在输入框上方游动。
 - [guihui2538/Every-token-you-spend-comes-back-as-a-waifu.](https://github.com/guihui2538/Every-token-you-spend-comes-back-as-a-waifu.) — 把 DSH 的 token 消耗变成抽卡小游戏：喂代码怪、攒代币、抽 14 位 AI 娘（Kimi娘/GLM娘/Gemini娘/Claude娘…），圣遗物强化、双件合成与每日签到弹窗，组建小丑牌式战斗阵容，十连出金自动生成分享卡。
 - [Hamster1214/dsh-pet-lan](https://github.com/Hamster1214/dsh-pet-lan) — 给 dsh-pet 桌宠加局域网联机：同一网络下能看到同事的桌宠，可以打招呼、自由拖拽桌面窗口；可选补丁同步实时动作、气泡和表情包。需要 dsh-pet 0.3.7。
