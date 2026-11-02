@@ -1,0 +1,6 @@
+url: https://github.com/yimengsuper2432/dsh-notice
+name: yimengsuper2432/dsh-notice
+category: notify
+description:
+  en: 'Sends one system notification when a DSH turn ends: per-outcome switches for completed, error and interrupted, a minimum-duration threshold, silent subagents and unfocused-window-only delivery. Works on Windows, macOS and Linux, delivered through a connected page or a native fallback (PowerShell toast, osascript, notify-send); clicking the notification brings DSH back to the front.'
+  zh: 'DSH 每轮任务结束时弹一条系统通知：完成 / 出错 / 中断分别开关，可设最短耗时、子任务静默、只在窗口不在前台时提示。Windows / macOS / Linux 通用，页面开着走页面通道，否则回退 PowerShell toast / osascript / notify-send；点通知把 DSH 拉回前台。'
