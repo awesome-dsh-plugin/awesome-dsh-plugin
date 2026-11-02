@@ -1,0 +1,7 @@
+url: https://github.com/NishimiyaFukinoto/dimensional-portal-dsh
+name: NishimiyaFukinoto/dimensional-portal-dsh
+category: remote
+description:
+  en: 'Drive a real Android phone from DSH: screenshots, taps, swipes, typing and app launching — the phone long-polls your machine, so no public port and no relay server.'
+  zh: '让 DSH 里的 Agent 直接操作安卓手机：看屏幕、点按滑动、打字、开应用；手机主动长轮询本机，不开公网端口、不经中转。'
+icon: https://raw.githubusercontent.com/NishimiyaFukinoto/dimensional-portal-dsh/main/assets/icon-256.png
