@@ -1,0 +1,6 @@
+url: https://github.com/OtakuP417/dsh-reading-companion
+name: OtakuP417/dsh-reading-companion
+category: docs
+description:
+  en: A reading companion for DSH that keeps one CFI-based progress coordinate, refuses every model call outside what the reader has actually read, and turns the reader's own discussion into spaced-repetition cards.
+  zh: 伴读插件：以 EPUB CFI 为唯一进度坐标，把模型能看到的范围硬性限制在已读章节，并把你自己的讨论收束成可复习的卡片。
