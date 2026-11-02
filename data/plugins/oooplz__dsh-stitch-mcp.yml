@@ -1,0 +1,6 @@
+url: https://github.com/oooplz/dsh-stitch-mcp
+name: oooplz/dsh-stitch-mcp
+category: tools
+description:
+  en: "Connects the Google Stitch MCP endpoint as 16 native `mcp__stitch__*` tools for projects, screens and design systems, plus an in-panel card for an API key or OAuth access token."
+  zh: "把 Google Stitch 的 MCP 端点接成 16 个原生 `mcp__stitch__*` 工具，覆盖项目、界面与设计系统，并附一张面板内的 API Key / OAuth 令牌凭据卡片。"
