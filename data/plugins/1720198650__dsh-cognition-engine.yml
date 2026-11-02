@@ -2,5 +2,5 @@ url: https://github.com/1720198650/dsh-cognition-engine
 name: 1720198650/dsh-cognition-engine
 category: memory
 description:
-  en: 'Cross-session memory with bitemporal history: recall what is true now, what was true then, and what you knew back then.'
-  zh: '带双时态的跨会话记忆：能查现在为真的、当时为真的、以及当时你已知的。'
+  en: 'Lets the AI remember what you said across sessions, and know which facts are still current.'
+  zh: '让 AI 记住你跨会话说过的事，并且分得清哪些已经过期。'
