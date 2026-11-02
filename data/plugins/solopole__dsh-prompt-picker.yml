@@ -2,5 +2,5 @@ url: https://github.com/solopole/dsh-prompt-picker
 name: solopole/dsh-prompt-picker
 category: identity
 description:
-  en: 'Multi-select system-prompt picker behind one bolt icon in the composer: check saved rows to inject them in order, each scoped to main agent, sub-agents or both; every row (a built-in "Full Throttle" included) can be edited, and saved rows delete one by one or all at once.'
-  zh: '输入框工具栏一枚闪电图标后的系统提示词多选器：勾选保存的行按序注入，每行可设作用域（仅主 agent／仅子 agent／全部）；所有行（含内置「火力全开」）均可修改，自建行可单行删除或一键全清。'
+  en: 'Multi-select system-prompt picker behind one bolt icon in the composer: check saved rows to inject in order, each scoped to main agent, sub-agents or both; every row (the built-in 「火力全开」, "Full Throttle", included) can be edited and deleted, and Clear all only unchecks every row without deleting anything.'
+  zh: '输入框工具栏一枚闪电图标后的系统提示词多选器：勾选保存的行按序注入，每行可设作用域（仅主 agent／仅子 agent／全部）；所有行（含内置「火力全开」）均可编辑和删除，「全清」只取消全部勾选、不删除任何条目。'
