@@ -1,0 +1,8 @@
+url: https://github.com/4444Hao/qiaodoc-dsh
+name: 4444Hao/qiaodoc-dsh
+category: docs
+icon: https://raw.githubusercontent.com/4444Hao/qiaodoc-dsh/main/assets/qiaodoc-icon-256.png
+tarball: https://github.com/4444Hao/qiaodoc-dsh/releases/download/v1.2.0-dev.7/qiaodoc-dsh-1.2.0-dev.7.tgz
+description:
+  en: 'Read documents beside native DSH chats, explain or translate selected passages, and return through document history.'
+  zh: '在 DSH 原生对话旁阅读文档、解释翻译选段，并通过文档历史返回原会话。'
