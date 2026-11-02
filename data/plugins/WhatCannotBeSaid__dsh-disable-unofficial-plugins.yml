@@ -1,0 +1,6 @@
+url: https://github.com/WhatCannotBeSaid/dsh-disable-unofficial-plugins
+name: WhatCannotBeSaid/dsh-disable-unofficial-plugins
+category: market
+description:
+  en: 'Adds a checkbox-style switch at the right end of the Installed group header on the DSH Plugins page: it opens a checklist of the unofficial plugins, all checked by default, and toggles only the ones you keep checked. Once everything is off the button flips to enabling them again. Disable/enable only — it never uninstalls a plugin or deletes plugin files and configuration, and its UI copy follows the app language.'
+  zh: '在 DSH 插件页的「已安装」分组标题右端加一个勾选式开关：点开是当前方向下非官方插件的清单，默认全选，只切换你保留勾选的那些；全部停用后按钮翻转成启用侧。只做启用/停用，从不卸载插件、也不删除插件文件与配置，界面文案跟随应用语言。'

@@ -1,0 +1,6 @@
+url: https://github.com/liujia-io/dsh-image-picker
+name: liujia-io/dsh-image-picker
+category: ui
+description:
+  en: Adds a paperclip image-picker button to the conversation composer - pick reference images through the system file dialog and feed them straight into the official attachment pipeline (thumbnails, limit checks, upload with message).
+  zh: 在会话输入框添加 📎 选图按钮，通过系统文件选择器选取参考图并注入官方附件管线（缩略图、数量与大小校验、随消息上传），绕开拖拽环境问题。

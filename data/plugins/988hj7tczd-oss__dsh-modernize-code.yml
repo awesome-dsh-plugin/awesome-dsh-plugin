@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-modernize-code
+name: 988hj7tczd-oss/dsh-modernize-code
+category: skill
+description:
+  en: "Legacy code modernization workflow (preflight -> assess -> map -> transform) with a Cordis mount plugin, offline Python scripts and smoke tests."
+  zh: "遗留代码现代化工作流（preflight → assess → map → transform），含 Cordis 挂载插件、离线 Python 脚本与冒烟测试。"

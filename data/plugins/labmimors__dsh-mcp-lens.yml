@@ -1,0 +1,6 @@
+url: https://github.com/labmimors/dsh-mcp-lens
+name: labmimors/dsh-mcp-lens
+category: dev
+description:
+  en: Progressive-disclosure MCP gateway that searches large remote catalogs through `mcp_search`, then invokes exact schemas through `mcp_call` with lazy connections and bounded caches.
+  zh: 渐进披露 MCP 网关：用 `mcp_search` 检索大型远程工具目录，再由 `mcp_call` 按精确 schema 调用，并采用惰性连接与有界缓存。

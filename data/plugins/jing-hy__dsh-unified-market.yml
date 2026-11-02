@@ -1,0 +1,6 @@
+url: https://github.com/jing-hy/dsh-unified-market
+name: jing-hy/dsh-unified-market
+category: market
+description:
+  en: 'Unified plugin marketplace built for the DSH Desktop (EAC) shell, aggregating the curated catalog, the GitHub dsh-plugin ecosystem and the npm registry into one storefront, with source whitelisting, conflict pre-checks, trial-boot install verification, manual/batch/auto updates and .dshpack feature-pack management.'
+  zh: '面向 DSH Desktop（EAC）桌面壳的统一插件市场：聚合精选目录、GitHub dsh-plugin 生态与 npm registry 三源，提供来源白名单、冲突预检、试装安装验证、手动/批量/自动三档更新与功能包（.dshpack）管理。'

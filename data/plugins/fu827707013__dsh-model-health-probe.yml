@@ -1,0 +1,6 @@
+url: https://github.com/fu827707013/dsh-model-health-probe
+name: fu827707013/dsh-model-health-probe
+category: dev
+description:
+  en: 'Manual model probe for DeepSeek Harness: a session-view tab where you pick provider, API type, model and route, then send one real raw HTTP request over openai-completions, openai-responses or anthropic-messages — streaming or not — and read latency, TTFT, HTTP status, token usage and a three-layer diagnosis chain (API request / model response / strict check) on one screen, with errors in plain language.'
+  zh: 'DSH 模型健康检查：会话视图页签内按「供应商 → API 类型 → 模型 → 路由」选定目标，手动发一条真实裸 HTTP 请求（支持 openai-completions / openai-responses / anthropic-messages 三协议，流式可切），一屏看清耗时、TTFT、HTTP 状态、token 用量与三层诊断链（API 请求 / 模型响应 / 严格校验），错误全部人话化。'

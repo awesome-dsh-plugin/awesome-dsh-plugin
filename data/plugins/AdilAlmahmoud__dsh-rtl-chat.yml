@@ -1,0 +1,6 @@
+url: https://github.com/AdilAlmahmoud/dsh-rtl-chat
+name: AdilAlmahmoud/dsh-rtl-chat
+category: ui
+description:
+  en: Right-to-left reading mode for the conversation answer area, with a button to switch back to left-to-right.
+  zh: 为对话回答区域提供从右到左的阅读模式，并提供按钮一键切回从左到右。

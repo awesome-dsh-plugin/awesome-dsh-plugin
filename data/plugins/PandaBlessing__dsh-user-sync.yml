@@ -1,0 +1,6 @@
+url: https://github.com/PandaBlessing/dsh-user-sync
+name: PandaBlessing/dsh-user-sync
+category: workflow
+description:
+  en: Sync DSH user-level assets (skills, plugin manifest, config, memory) across machines with one-click restore, automatic plugin reinstall and secret scanning.
+  zh: DSH 用户级配置同步：技能、插件清单、配置与记忆跨机同步，换机一键恢复、缺插件自动装回、敏感文件硬拒绝。

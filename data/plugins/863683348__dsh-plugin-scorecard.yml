@@ -1,0 +1,6 @@
+url: https://github.com/863683348/dsh-plugin-scorecard
+name: 863683348/dsh-plugin-scorecard
+category: market
+description:
+  en: 'Quality & security scorecard for the DSH plugin ecosystem: sync the dsh-plugin topic catalog, audit any plugin (0-100, A-D, security veto), rankings, search, and historical score curves with a workspace-persisted catalog.'
+  zh: DSH 插件生态体检评分卡：同步 dsh-plugin 目录，对任意插件做质量与安全审计（0-100 分、A-D 等级、安全一票否决），榜单、搜索与历史评分曲线（目录持久化）。

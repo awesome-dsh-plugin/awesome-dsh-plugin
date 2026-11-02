@@ -1,0 +1,6 @@
+url: "https://github.com/7gzgn/dsh-my-plugins"
+name: "dsh-my-plugins"
+category: ui
+description:
+  en: "See what you actually installed: a chip shows how many plugins your profile really loads, and a searchable panel lists every one with its version, its author-written one-liner, and whether it is built-in or third-party. Read-only, zero config."
+  zh: 「我装的插件」：顶栏一颗药丸告诉你这个 DSH 到底加载了多少插件，点开是可搜索的清单——每个插件的名字、版本、一句人话作用，自带和第三方分开标。只读、零配置。

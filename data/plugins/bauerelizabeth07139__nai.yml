@@ -1,0 +1,6 @@
+url: https://github.com/bauerelizabeth07139/nai
+name: bauerelizabeth07139/nai
+category: theme
+description:
+  en: 'Nai milk-frog mascot appearance layer for the DeepSeek Harness web GUI: wears the bundled milk-frog artwork as the GUI background (surface-token fade with opacity, blur, scrim and position controls), seats the matching square avatar as the sidebar and conversation brand mark, and edits it all from a Settings section; the host serves the artwork and config locally under /api/nai, and the config lives at $DSH_HOME/nai.json.'
+  zh: 'DeepSeek Harness 网页端的奶蛙美化形象插件：把内置奶蛙素材铺成界面背景（表面令牌淡出，配合不透明度、模糊、遮罩与位置调节），将方形头像换到侧栏与会话标题的品牌标识位，并在设置页统一配置；素材与配置由宿主在 /api/nai 下本地提供，配置文件位于 $DSH_HOME/nai.json。'

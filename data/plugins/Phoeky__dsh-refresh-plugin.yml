@@ -1,0 +1,6 @@
+url: https://github.com/Phoeky/dsh-refresh-plugin
+name: Phoeky/dsh-refresh-plugin
+category: ui
+description:
+  en: 'Adds F5 / Ctrl+R page reload to the DeepSeek Harness desktop web UI, which production builds lack by default (the "Reload Page" menu item and bare-F5 accelerator are development-gated). Binds soft reload (F5, Ctrl+R) and cache-busted hard reload (F5 with a modifier, Ctrl+Shift+R, appending a _dsh_refresh timestamp) through a capture-phase client key listener.'
+  zh: 为 DeepSeek Harness 桌面 Web UI 补上 F5 / Ctrl+R 页面刷新功能（生产版默认没有刷新菜单项与裸 F5 快捷键）。通过客户端捕获阶段按键监听绑定软刷新（F5、Ctrl+R）与防缓存硬刷新（F5 加修饰键、Ctrl+Shift+R，附加 _dsh_refresh 时间戳）。

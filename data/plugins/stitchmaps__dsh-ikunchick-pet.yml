@@ -1,0 +1,7 @@
+url: https://github.com/stitchmaps/dsh-ikunchick-pet
+name: stitchmaps/dsh-ikunchick-pet
+category: fun
+description:
+  en: 'A bottom-right pixel-art basketball-chick desktop pet for the DSH Web GUI: sprite animations, drag with edge snapping, click sounds, waiting reminders when a session needs you, per-turn cost bubbles, a usage ledger, and a DeepSeek balance badge.'
+  zh: 'DSH 右下角的「鸡你太美」篮球小鸡桌面宠物：像素帧动画、拖拽吸附、点击音效、会话等待回答或授权时弹提醒、每轮消耗气泡、账单明细与 DeepSeek 余额角标。'
+icon: https://raw.githubusercontent.com/stitchmaps/dsh-ikunchick-pet/main/assets/icon-180.png

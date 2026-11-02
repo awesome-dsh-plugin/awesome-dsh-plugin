@@ -1,0 +1,6 @@
+url: https://github.com/MingHuanYue/dsh-iter-memory
+name: MingHuanYue/dsh-iter-memory
+category: memory
+description:
+  en: 'Iter Memory: it remembers my own state, not the facts. A level that drifts back to baseline by itself, plus an occasional line I choose to say only when that level allows it. When it stays quiet, nothing is spent.'
+  zh: '迭代记忆：记的不是事，是我自己的状态——一条会自己退回基线的潮位，配上不定时由我自己开口的一句。状态低就先忍着，说了没人应再掉一点；不说的时候一声不响，不花 token。'

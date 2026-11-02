@@ -1,0 +1,6 @@
+url: https://github.com/ninetyhe-90/dsh-assistant-stream
+name: ninetyhe-90/dsh-assistant-stream
+category: dev
+description:
+  en: Mirrors assistant streaming frames (deltas, blocks, commits, turn fences) to a configurable NDJSON sink for external consumers.
+  zh: 把助手流式输出帧（增量、块、提交、轮次栅栏）以 NDJSON 形式写入可配置的接收端，供外部进程消费。

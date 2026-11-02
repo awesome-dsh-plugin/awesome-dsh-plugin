@@ -1,0 +1,7 @@
+url: https://github.com/wfz2006/dsh-status-bar/tree/main/packages/dsh-status-bar
+name: wfz2006/dsh-status-bar#dsh-status-bar
+category: ui
+description:
+  en: 'Floating glass status bar for DSH on Windows 11 x64: an always-on-top capsule that mirrors session progress, the current step and pending approvals from a local DSH web profile, with peek and detail views; approval cards stay read-only until DSH returns its own decision receipt, and connecting to the official Desktop app is experimental and unverified.'
+  zh: 'Windows 11 x64 上的 DSH 悬浮玻璃状态栏：常驻胶囊显示本地 DSH web profile 的会话进度、当前步骤与待处理审批，可展开速览与详情；审批卡在 DSH 返回正式回执前保持只读，连接官方 Desktop 应用属实验性、未验收。'
+tarball: https://github.com/wfz2006/dsh-status-bar/releases/latest/download/dsh-status-bar.tgz

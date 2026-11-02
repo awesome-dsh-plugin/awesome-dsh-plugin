@@ -1,0 +1,7 @@
+url: https://github.com/ZhaoZiyangShaanxi/dsh-codex-plus
+name: ZhaoZiyangShaanxi/dsh-codex-plus
+category: usage
+tarball: https://github.com/ZhaoZiyangShaanxi/dsh-codex-plus/releases/download/v0.1.1/dsh-codex-plus-0.1.1.tgz
+description:
+  zh: "在 DSH 里查看 ChatGPT / Codex 订阅的真实额度。读账号后端 /wham/usage：短周期（5h）与每周窗口、重置倒计时、额外用量余额、独立额度分组与代码审查额度；列出并使用服务端发放的额度重置卡（幂等键由 credit id 稳定派生，重试只结算一次）；支持多账号切换；读 /codex/models 显示账号真实可用模型，拿不到就显示为空而不是内置列表。设置页内一键登录（浏览器授权或设备码，回调被拦截时可粘贴地址），凭据只存 DSH 凭据服务。模型调用复用 DSH 自带的 llm-pi-ai Codex 路由，不抢占其他插件的 provider 路由——被占用时自动退化为纯额度控制台。输入框右侧常驻剩余额度徽标。"
+  en: "See your real ChatGPT / Codex subscription quota inside DSH. Reads /wham/usage: 5-hour and weekly windows, reset countdown, extra-usage balance, additional limit groups and the code-review limit; lists and redeems server-issued reset credits with a stable, retry-safe idempotency key; switches between multiple accounts; reads /codex/models to show the account's real model catalog, showing empty rather than a built-in list when unavailable. One-click sign-in from Settings (browser authorization or device code, with a paste-the-callback fallback); credentials stay in DSH's credential service. Model calls reuse DSH's built-in llm-pi-ai Codex route instead of claiming a provider route — it degrades to a pure quota console when another plugin owns it. A remaining-quota chip sits beside the composer."

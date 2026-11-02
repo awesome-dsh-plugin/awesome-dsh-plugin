@@ -1,0 +1,7 @@
+url: https://github.com/Dogwind221/img2img-studio/tree/main/plugins/dsh-img2img-config
+name: Dogwind221/img2img-studio#dsh-img2img-config
+category: ui
+icon: https://raw.githubusercontent.com/Dogwind221/img2img-studio/main/assets/icon-180.png
+description:
+  en: 'Adds two UI surfaces: a composer image editor (numbered marks with per-mark instructions, background removal, brush-mask erase, resize with crop/padding preview, keyboard-accessible markers; results return as attachments plus a version-1 manifest) and a Settings → vision/generation provider panel (explicit provider picker, providerId normalization, ChatGPT-web accounts synced into channels, per-channel test/try-run/copy-command, script readiness scan, save validation with .env preview, probing that only disables on explicit quota errors, Chinese/English UI) that writes providers back to the skills .env files.'
+  zh: '为 img2img-studio 提供两个界面：① 输入框上方的图片编辑器（编号标记 + 每处改法、纯色背景移除、涂抹掩码擦除、比例与尺寸调整（含裁切/留白预览）、标记键盘微调，结果以附件 + version 1 manifest 回填输入框）；② 设置页「识图与生图」供应商面板（显式选择供应商、providerId 归一化、ChatGPT 网页账号库同步为通道、每通道测试/试跑/复制命令、脚本就绪扫描、保存校验与 .env 预览、只对明确欠费码自动关停、中英双语），保存后写回两个 skill 的 .env。'

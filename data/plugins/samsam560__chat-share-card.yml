@@ -1,0 +1,6 @@
+url: https://github.com/samsam560/chat-share-card
+name: samsam560/chat-share-card
+category: ui
+description:
+  en: "Turn any DeepSeek Harness answer into a polished PNG share card: click a button under the reply, the answer is re-typeset on a canvas (8 gradient presets, light/dark, three fonts, width 720/880/1080, radius, padding, font size, line height, 1x-3x export, code wrap/highlight/line numbers, custom title and footer). Fully local rendering — no upload, no third-party dependency."
+  zh: "把任意一条 AI 回答一键变成精美的 PNG 分享卡片：点回复下面的按钮，回答会被重新排版画到画布上（8 套渐变预设、深浅主题、三种字体、宽度 720/880/1080、圆角、内边距、字号、行高、1×–3× 导出倍率、代码折行/高亮/行号、自定义标题与页脚）。纯本地渲染，不联网、不上传、无第三方依赖。"

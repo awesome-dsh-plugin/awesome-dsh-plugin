@@ -1,0 +1,8 @@
+url: https://github.com/wysxxx/dsh-account-identity
+name: wysxxx/dsh-account-identity
+category: identity
+description:
+  en: Customize the Harness sidebar name and avatar with a local crop editor.
+  zh: 自定义 Harness 侧边栏名称与头像，支持本地裁切预览。
+icon: https://raw.githubusercontent.com/wysxxx/dsh-account-identity/main/docs/assets/icon-180.png
+tarball: https://github.com/wysxxx/dsh-account-identity/releases/download/v0.2.0/dsh-account-identity-0.2.0.tgz

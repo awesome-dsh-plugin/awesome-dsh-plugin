@@ -1,0 +1,6 @@
+url: https://github.com/Sur-Cai/macos-computer-use-kit/tree/main/packages/dsh
+name: Sur-Cai/macos-computer-use-kit#dsh
+category: tools
+description:
+  en: 'AX-first macOS computer use for DeepSeek Harness: accessibility snapshots with stable refs, background input, Unicode typing, menus and apps, set-of-mark screenshots, on-device OCR and verified actions — 11 tools bridged to the macos-cu CLI.'
+  zh: 'DeepSeek Harness 的 macOS computer use：基于无障碍树的稳定 ref 定位、后台输入、Unicode 输入、菜单与应用、set-of-mark 截图、本地 OCR 与动作校验——11 个工具桥接 macos-cu CLI。'

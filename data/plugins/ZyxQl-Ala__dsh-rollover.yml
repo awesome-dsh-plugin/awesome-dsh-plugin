@@ -1,0 +1,7 @@
+url: https://github.com/ZyxQl-Ala/dsh-rollover
+name: ZyxQl-Ala/dsh-rollover
+category: session
+description:
+  en: 'Context rollover: auto-saves a handoff before the context window fills and re-injects it once in the next session segment. Two tools and a settings panel.'
+  zh: '上下文滚段：窗口快满时自动存档接续前情，换段后自动注入一次。两个工具 + 设置面板。'
+tarball: https://github.com/ZyxQl-Ala/dsh-rollover/releases/download/v0.2.0/dsh-rollover.tgz

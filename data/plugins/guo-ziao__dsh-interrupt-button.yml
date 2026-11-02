@@ -1,0 +1,6 @@
+url: https://github.com/guo-ziao/dsh-interrupt-button
+name: guo-ziao/dsh-interrupt-button
+category: ui
+description:
+  en: 'A green interrupt button beside the send box: silently stops a running agent, which then summarizes its progress and asks for your new requirements, with a customizable interrupt prompt.'
+  zh: 发送按钮旁的绿色打断按钮：运行时一键静默中断 AI，AI 停止后总结进展并向你征求新要求，支持自定义打断提示词。

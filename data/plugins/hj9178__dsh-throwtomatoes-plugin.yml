@@ -1,0 +1,6 @@
+url: https://github.com/hj9178/dsh-throwtomatoes-plugin
+name: hj9178/dsh-throwtomatoes-plugin
+category: ui
+description:
+  en: 'Turns the composer send button into a tomato button while a task is running and the draft is empty. One or two taps hand the model a hidden note on its next step asking it to reflect on the approach and to finish by asking the user how to continue; three taps within a second stop the run first and send the same kind of note. Thrown-tomato animations and sound can be switched off in settings, which also counts every tomato thrown.'
+  zh: '任务运行中且输入框为空时，把发送键换成番茄键。点一两下会让模型在下一步收到一条不对用户显示的提醒，要求它反思做法并以提问用户如何继续收尾；一秒内连点三下则先停止任务，再发同样的提醒。丢番茄特效与音效可在设置中关闭，设置页同时显示累计扔出的番茄总数。'

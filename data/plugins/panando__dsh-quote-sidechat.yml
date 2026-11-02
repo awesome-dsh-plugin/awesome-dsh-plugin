@@ -1,0 +1,6 @@
+url: https://github.com/panando/dsh-quote-sidechat
+name: panando/dsh-quote-sidechat
+category: ui
+description:
+  en: 'Select text in a reply and quote it into the composer as an atomic reference chip: delete the whole chip in one keystroke, click it to scroll back and highlight the quoted turn, and expand it into a bounded reference block at send time so the model can tell the quote apart from what the user typed. Also opens the snippet in a side chat, or copies it to the clipboard.'
+  zh: '在回复里选中文字，把引用作为原子 chip 写进输入框：一次按键整体删除、点击回跳并高亮被引用的轮次、发送时展开成带边界的引用块，让模型能分清引用与用户输入。另可把片段送进侧边对话，或复制到剪贴板。'

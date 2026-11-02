@@ -1,0 +1,6 @@
+url: https://github.com/xiehuan123/dsh-deepread
+name: xiehuan123/dsh-deepread
+category: tools
+description:
+  en: Deep-read books and articles in five modes (quick, deep, knowledge map, Feynman, full book) with claim-evidence-data reports, Mermaid/XMind mindmaps, batch comparison, budget preflight, transparent background-job progress, and MD/HTML exports from URLs, files, or pasted text.
+  zh: 五种模式精读图书与文章（快速/深度/知识地图/费曼/全书），输出观点—证据—数据报告、四档置信度、Mermaid/XMind 思维导图，支持批量对比、预算预检与后台任务进度透明，可导出 MD/MM/HTML。

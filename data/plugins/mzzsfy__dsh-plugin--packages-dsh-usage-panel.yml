@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-usage-panel
+name: mzzsfy/dsh-plugin#dsh-usage-panel
+category: usage
+description:
+  en: 'Multi-platform LLM balance and quota panel: configure DeepSeek, OpenRouter, Kimi, Zhipu GLM, MiniMax, NewApi or custom endpoints, poll on a schedule, draw balance and quota trend charts, and push threshold and window-reset notices through multiple channels.'
+  zh: '多平台 LLM 账号余额与额度面板：配置 DeepSeek、OpenRouter、Kimi、智谱、MiniMax、NewApi 或自定义端点，定时自动查询并绘制趋势图，余额/额度阈值与窗口重置经多通道推送通知。'
+

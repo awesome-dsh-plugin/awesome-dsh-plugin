@@ -1,0 +1,6 @@
+url: https://github.com/yuhhhong/dsh-skill-status
+name: yuhhhong/dsh-skill-status
+category: skill
+description:
+  en: It shows the number of confirmed loaded skills in the conversation header. Click **技能** (Skills) to open the right sidebar and check whether each skill's full main body remains in the current main assistant context, along with its recorded versions and sources.
+  zh: 在会话标题栏显示已确认加载的技能数量，点击「技能」打开右侧面板，查看完整正文是否仍在当前主助手上下文中，以及各次加载的正文版本与来源。

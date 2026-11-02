@@ -1,0 +1,7 @@
+url: https://github.com/Zeppeli777/dsh-theme-stardew-fullskin
+name: Zeppeli777/dsh-theme-stardew-fullskin
+category: theme
+description:
+  en: 'Stardew Valley theme (full-skin edition) for the dsh web UI only: replaces the served web frontend with a self-contained pixel-farm interface — Junimo dialog, farm-select presets, quest journal HUD, session-as-day valley calendar, chiptune SFX and desktop pets. Not available in the desktop window and not compatible with other UI-changing plugins.'
+  zh: '星露谷物语主题·整皮版，仅适用于 dsh Web 界面：把 Web 前端整体换成自包含的像素农场界面——祝尼魔对话、农场选预设、任务日志 HUD、会话即游戏日的山谷日历、8-bit 音效与桌宠。不支持桌面原生窗口，请勿与其他会改变 UI 的插件同时启用。'
+icon: https://raw.githubusercontent.com/Zeppeli777/dsh-theme-stardew-fullskin/main/web/junimo.png

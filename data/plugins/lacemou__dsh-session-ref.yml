@@ -1,0 +1,6 @@
+url: https://github.com/lacemou/dsh-session-ref
+name: lacemou/dsh-session-ref
+category: session
+description:
+  en: Cross-session reference (mention) plugin — paste @[label](dsh-session:…) into any session, including one in another workspace, and the host injects the referenced session snapshot for the model to read; includes a one-click copy-reference button.
+  zh: 跨会话引用插件：在任意会话（含其他工作区）粘贴 @[label](dsh-session:…) 引用，宿主注入被引用会话的快照供模型阅读，并提供一键复制引用按钮。

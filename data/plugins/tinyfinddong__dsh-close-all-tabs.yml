@@ -1,0 +1,6 @@
+url: https://github.com/tinyfinddong/dsh-close-all-tabs
+name: tinyfinddong/dsh-close-all-tabs
+category: ui
+description:
+  en: "Right-Sidebar tab menu enhancement for DeepSeek Harness: adds a 'Close other tabs' item that closes every content tab of the session except the one whose menu is open and the docked guide."
+  zh: "DeepSeek Harness 右侧栏增强：右键 tab 菜单增加「关闭其他标签」，一键关闭当前会话中除当前 tab 与引导页外的所有内容标签。"

@@ -1,0 +1,7 @@
+url: https://github.com/379385796-sys/dsh-environment-packer
+name: 379385796-sys/dsh-environment-packer
+category: tools
+description:
+  en: Create offline cold backups of a Windows DSH Profile and selected Home data; inspect ZIPs independently and restore with a standalone WPF assistant to a fresh target with a proven matching runtime.
+  zh: 为 Windows DSH Profile 及指定 Home 数据创建离线冷备份，独立检查 ZIP，并通过 WPF 助手恢复到具备匹配运行时证明的全新目标。
+tarball: https://github.com/379385796-sys/dsh-environment-packer/releases/download/v0.5.0/dsh-environment-packer-0.5.0.tgz

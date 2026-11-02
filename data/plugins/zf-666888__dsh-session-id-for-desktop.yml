@@ -1,0 +1,6 @@
+url: https://github.com/zf-666888/dsh-session-id-for-desktop
+name: zf-666888/dsh-session-id-for-desktop
+category: session
+description:
+  en: Adds Copy session ID and permanent deletion of a Conversation's log, projection cache and workspace references to the session row's ⋯ menu, behind a two-step confirm.
+  zh: 在会话行的「⋯」菜单里补上复制会话 ID，以及永久删除会话（日志、投影缓存与工作区引用），删除前有二次确认。

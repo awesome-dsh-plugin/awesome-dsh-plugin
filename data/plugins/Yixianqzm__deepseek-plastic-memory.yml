@@ -1,0 +1,6 @@
+url: https://github.com/Yixianqzm/deepseek-plastic-memory
+name: Yixianqzm/deepseek-plastic-memory
+category: memory
+description:
+  en: Partitioned long-term memory for agents, with folders as memory zones, a one-line index first, and a forgetting curve.
+  zh: 分区式长期记忆：用文件夹收纳记忆，先看一行索引再翻对应分区，带遗忘曲线。

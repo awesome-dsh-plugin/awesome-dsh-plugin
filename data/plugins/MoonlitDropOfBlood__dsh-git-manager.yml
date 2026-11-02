@@ -1,0 +1,6 @@
+url: https://github.com/MoonlitDropOfBlood/dsh-git-manager
+name: MoonlitDropOfBlood/dsh-git-manager
+category: git
+description:
+  en: 'Git workspace manager for DeepSeek Harness: a repo-gated composer button opens a settings-style panel for diff/commit, branch, conflict, and worktree management, plus a commit history with branch-graph lines.'
+  zh: 'DeepSeek Harness 的 Git 工作区管理：输入框「模式」选择器旁的仓库感知入口，打开与设置同规格的面板，覆盖 diff/commit、分支、冲突、worktree 管理与带分支线的提交历史。'

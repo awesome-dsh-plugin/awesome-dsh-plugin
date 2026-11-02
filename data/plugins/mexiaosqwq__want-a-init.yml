@@ -1,0 +1,6 @@
+url: https://github.com/mexiaosqwq/want-a-init
+name: mexiaosqwq/want-a-init
+category: dev
+description:
+  en: 'Model-driven /init command: the agent analyzes the current repo and generates/updates a high-signal AGENTS.md, with a persistent system-prompt reminder to keep it maintained.'
+  zh: 模型驱动 /init 命令：让 agent 分析当前仓库并生成/更新高信号 AGENTS.md，并通过常驻 system prompt 提醒持续维护。

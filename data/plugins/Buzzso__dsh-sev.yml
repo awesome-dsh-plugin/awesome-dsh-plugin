@@ -1,0 +1,6 @@
+url: https://github.com/Buzzso/dsh-sev
+name: Buzzso/dsh-sev
+category: remote
+description:
+  en: 'Manage your own remote DSH host from the local GUI: SSH tunnels, mixed remote session list, one-click remote GUI, auto-healing tunnels.'
+  zh: '本地 GUI 管理你自己服务器上的 DSH 分身：SSH 隧道、远程会话混排列表、一键远程 GUI、隧道掉线自动重连。'

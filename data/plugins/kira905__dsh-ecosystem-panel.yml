@@ -1,0 +1,6 @@
+url: https://github.com/kira905/dsh-ecosystem-panel
+name: kira905/dsh-ecosystem-panel
+category: dev
+description:
+  en: Read-only panel reporting an instance's plugin bundles, patch inserts, skills, upgrade health and decoupling health.
+  zh: 只读生态面板：汇总实例的插件束、补丁插入、技能、升级健康与解耦健康。

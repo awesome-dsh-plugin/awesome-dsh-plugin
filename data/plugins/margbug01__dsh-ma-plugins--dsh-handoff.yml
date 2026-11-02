@@ -1,0 +1,6 @@
+url: https://github.com/margbug01/dsh-ma-plugins/tree/main/dsh-handoff
+name: margbug01/dsh-ma-plugins#dsh-handoff
+category: session
+description:
+  en: 'Secret-redacted session handoff with review, auto-start, and brief-only modes.'
+  zh: 脱敏会话交接，支持审阅、立即启动和仅生成简报。

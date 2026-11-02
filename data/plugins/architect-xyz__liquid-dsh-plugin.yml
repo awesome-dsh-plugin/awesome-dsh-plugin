@@ -1,0 +1,6 @@
+url: https://github.com/architect-xyz/liquid-dsh-plugin
+name: architect-xyz/liquid-dsh-plugin
+category: model
+description:
+  en: Adds the Liquid Inference auction exchange as a model route, with liquid.auto and its ranking variants, and four tools that read offers, markets, routers and job receipts. Requires a Liquid Inference API key (LIQUID_API_KEY, spend scope).
+  zh: 将 Liquid Inference 拍卖式推理交易所接入为模型路由，提供 liquid.auto 及其排序变体，并附带四个工具，用于读取报价、市场、路由器与任务收据。需 Liquid Inference API Key（LIQUID_API_KEY，spend 权限）。

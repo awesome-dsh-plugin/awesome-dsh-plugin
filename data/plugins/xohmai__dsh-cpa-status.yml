@@ -1,0 +1,6 @@
+url: https://github.com/xohmai/dsh-cpa-status
+name: xohmai/dsh-cpa-status
+category: usage
+description:
+  en: 'CPA account-pool status panel: sidebar health light, quota bars, success-rate ticks, and gateway key endings.'
+  zh: CPA 账号池状态面板：侧栏健康灯、配额进度、成功率刻度与网关密钥末四位一览。

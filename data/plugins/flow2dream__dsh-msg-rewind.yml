@@ -1,0 +1,6 @@
+url: https://github.com/flow2dream/dsh-msg-rewind
+name: flow2dream/dsh-msg-rewind
+category: session
+description:
+  en: 'Conversation rewind for dsh web: /undo rolls back one turn, /rewind cuts to a past message, and hovering a user bubble offers a visual undo.'
+  zh: '对话回退：/undo 回退一轮，/rewind 回退到历史消息，悬浮用户气泡可可视化撤回。'

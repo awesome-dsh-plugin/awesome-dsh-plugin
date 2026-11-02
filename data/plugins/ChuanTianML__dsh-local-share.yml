@@ -1,0 +1,6 @@
+url: https://github.com/ChuanTianML/dsh-local-share
+name: ChuanTianML/dsh-local-share
+category: session
+description:
+  en: Export complete Web Sessions to local Markdown or self-contained HTML, with stable rendered previews, default redaction, and opt-in bounded tool-call details.
+  zh: 把完整 Web Session 导出为本地 Markdown 或自包含 HTML，提供稳定的 Markdown 渲染预览、默认脱敏和可选的有界工具调用详情。

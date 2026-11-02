@@ -1,0 +1,6 @@
+url: https://github.com/sakanamaru/dsh-minato
+name: sakanamaru/dsh-minato
+category: usage
+description:
+  en: Optional read-only bridge plugin that publishes live dsh session and token statistics as one JSON snapshot for the standalone dsh-minato toolkit to read.
+  zh: 可选的只读桥接插件：把 dsh 的会话与 token 实时统计写成一份 JSON 快照，供独立的 dsh-minato 工具箱读取.

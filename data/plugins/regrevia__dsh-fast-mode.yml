@@ -1,0 +1,12 @@
+url: https://github.com/regrevia/dsh-fast-mode
+name: regrevia/dsh-fast-mode
+category: usage
+description:
+  en: >-
+    DeepSeek Harness's own fast mode: the same model, half the output, up to twice as fast.
+    Switches combine freely, all prompt-side — no model swap, no lower reasoning effort.
+    Measured over 30 task pairs: 0.505x wall clock, 42% fewer output tokens, 438/438 checks
+    green. A few shapes get slower; benchmark and repro in the repo.
+  zh: >-
+    DeepSeek Harness 自己的 fast mode：同一个模型，只消耗一半的输出，最快快一倍。开关自由组合、全程提示词侧，不换模型也不降思考强度——30 对任务实测 0.505× 耗时、输出 token −42%、判分 438/438 全绿。少数任务会变慢；benchmark 与复现见仓库。
+icon: https://raw.githubusercontent.com/regrevia/dsh-fast-mode/main/icon.png

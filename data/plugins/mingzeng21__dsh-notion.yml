@@ -1,0 +1,6 @@
+url: https://github.com/mingzeng21/dsh-notion
+name: mingzeng21/dsh-notion
+category: notify
+description:
+  en: 'Connect dsh to Notion via the official Notion MCP (OAuth + PKCE): search, read, and write pages, databases, and comments through `mcp__notion__*` tools.'
+  zh: 通过官方 Notion MCP（OAuth + PKCE）把 dsh 连接到 Notion：通过 `mcp__notion__*` 工具搜索、读写页面、数据库与评论。

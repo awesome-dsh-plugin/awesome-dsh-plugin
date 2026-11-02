@@ -1,0 +1,6 @@
+url: https://github.com/ZiOstudio/dsh-budget-handoff
+name: ZiOstudio/dsh-budget-handoff
+category: usage
+description:
+  en: "Session budget gate for DeepSeek Harness: prices every turn against the official price table, warns at 80%, stops the task at 100%, and writes a handoff snapshot so the next session can continue the work."
+  zh: "给 DeepSeek Harness 的会话设预算上限：按官方价目表实时算账，80% 预警、100% 拦停任务，并落盘一份交接快照，让下一个会话接着干。"

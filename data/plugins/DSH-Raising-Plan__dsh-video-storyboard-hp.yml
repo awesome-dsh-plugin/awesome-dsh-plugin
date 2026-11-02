@@ -1,0 +1,6 @@
+url: https://github.com/DSH-Raising-Plan/dsh-video-storyboard-hp
+name: DSH-Raising-Plan/dsh-video-storyboard-hp
+category: vision
+description:
+  en: 'High-performance fork of SAOS-3624/dsh-video-storyboard — install this or the upstream plugin, not both. Turns a video into addressable storyboard grids (numbered cells, a timestamp and transcript line per cell, audio envelope); needs Node 20+, ffmpeg/ffprobe on PATH, and a configured ASR endpoint when the file has no subtitle track.'
+  zh: 'SAOS-3624/dsh-video-storyboard 的高性能分支，与上游二选一、不能同装。把视频压成可寻址的宫格分镜（编号、每格时间戳与台词、音频包络）；需要 Node 20+、PATH 上的 ffmpeg/ffprobe，文件无字幕轨时还需配置 ASR 端点。'

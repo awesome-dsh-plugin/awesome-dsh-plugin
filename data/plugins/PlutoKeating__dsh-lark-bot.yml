@@ -1,0 +1,6 @@
+url: https://github.com/PlutoKeating/dsh-lark-bot
+name: PlutoKeating/dsh-lark-bot
+category: notify
+description:
+  en: 'Feishu/Lark bridge for DeepSeek Harness: scan-to-connect PersonalAgent binding, streaming cards, git-worktree project workspaces, parallel per-scope tasks, multi-role agents, cross-session notify, in-chat model/key management, and a safety-net guardian that still answers in Feishu after dsh crashes.'
+  zh: 把 DeepSeek Harness 装进飞书的桥接插件：扫码绑定 PersonalAgent、流式卡片、git worktree 项目工作区、scope 并行任务、多角色 Agent、跨会话通知、对话内模型/密钥管理，以及 dsh 崩溃后仍在飞书应答的安全网守护。

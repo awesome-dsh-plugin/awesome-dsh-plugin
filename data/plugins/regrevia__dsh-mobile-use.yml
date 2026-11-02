@@ -1,0 +1,6 @@
+url: https://github.com/regrevia/dsh-mobile-use
+name: regrevia/dsh-mobile-use
+category: remote
+description:
+  en: 'Your phone, live in the DSH right sidebar: one UI read costs 120 ms and 200-1300 tokens, where a screenshot costs 0.5-3.2 s and 1.5-2k image tokens; a tap lands on the real device in 61 ms, and a circled area comes back with its controls. You can tell what is on screen, and whether a tap landed, without a screenshot. Needs adb and ffmpeg on the host; the OCR fallback is macOS-only.'
+  zh: '手机装进 DSH 右栏：读一次界面 120 ms、200-1300 token，截图那套要 0.5-3.2 s、1.5-2k 图片 token；点一下就是点真机（61 ms），圈一处带圈图和控件回到会话。不截图也能说清屏上有什么、刚才那下点中了没有。需要宿主上的 adb 与 ffmpeg；OCR 兜底仅支持 macOS。'

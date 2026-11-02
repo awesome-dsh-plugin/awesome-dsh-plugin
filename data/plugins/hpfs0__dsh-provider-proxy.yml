@@ -1,0 +1,6 @@
+url: https://github.com/hpfs0/dsh-provider-proxy
+name: hpfs0/dsh-provider-proxy
+category: model
+description:
+  en: Configures forward proxies per enabled provider in Settings (HTTP/HTTPS/SOCKS5), keeping unconfigured providers and other traffic direct.
+  zh: 在设置里为每个已启用的 provider 单独配置正向代理（HTTP/HTTPS/SOCKS5），未配置的 provider 与其它流量保持直连。

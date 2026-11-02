@@ -1,0 +1,6 @@
+url: https://github.com/DevilSpiderX/dsh-workspace-only-plugin
+name: DevilSpiderX/dsh-workspace-only-plugin
+category: security
+description:
+  en: Restrict the file access of agents in any sandbox mode (read-only / workspace-write / danger-full-access / auto) to the session workspace, and ask the user to rule on cross-border access. Each session can also use the gear selection box next to the composer to relax the cross-border gate to 「 read-only outside workspace 」 or 「 fully release 」.
+  zh: 把任何沙箱模式（read-only / workspace-write / danger-full-access / auto）下代理的文件访问限制在会话工作区内，越界访问一律请用户裁决；每个会话还能用 composer 旁的档位选择框把越界门禁放宽为「工作区外只读」或「完全放开」。

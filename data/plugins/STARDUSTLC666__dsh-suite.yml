@@ -1,0 +1,6 @@
+url: https://github.com/STARDUSTLC666/dsh-suite
+name: STARDUSTLC666/dsh-suite
+category: workflow
+description:
+  en: 'All-in-one combo patch for STARDUSTLC''s 18 DSH plugins: one command injects shared default configs across office, media, DevOps and notification presets; each component installs directly via a one-line add command (flat design, no git subdependencies).'
+  zh: STARDUSTLC 插件全家桶·组合补丁：与 18 个组件插件配套，一条命令统一注入默认配置（办公流/媒体工坊/DevOps/通知/预设）；组件经一行 add 命令直装（扁平化设计，无 git 子依赖）。

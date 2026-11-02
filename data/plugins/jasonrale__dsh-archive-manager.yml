@@ -1,0 +1,6 @@
+url: https://github.com/jasonrale/dsh-archive-manager
+name: jasonrale/dsh-archive-manager
+category: session
+description:
+  en: 'Archived-session manager for DSH Web UI: reopen an archived session and keep chatting, unarchive it back in place, or hard-delete a session — grouped panel with message search and native view sync.'
+  zh: DSH Web UI 的归档会话管理器：重新打开已归档会话并继续对话、取消归档恢复原位、彻底删除会话，支持分组浏览、消息搜索与原生视图同步。

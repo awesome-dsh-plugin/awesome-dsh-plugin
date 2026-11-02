@@ -1,0 +1,6 @@
+url: https://github.com/ljsysfurryACE/dsh-compaction
+name: ljsysfurryACE/dsh-compaction
+category: memory
+description:
+  en: Compaction backend replacing LLM summarization with a deterministic semantic extractor (keeps code/paths/commands, drops chatter) plus 28.4x KV-compression accounting.
+  zh: 压缩后端：用确定性语义提取器替换 LLM 摘要（保留代码/路径/命令，剔除闲聊），附带 28.4x KV 压缩记账。

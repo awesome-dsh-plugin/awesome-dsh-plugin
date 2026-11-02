@@ -1,0 +1,6 @@
+url: https://github.com/jerryqx/dsh-xiaoyuzhou
+name: jerryqx/dsh-xiaoyuzhou
+category: fun
+description:
+  en: 'Listen to Xiaoyuzhou (小宇宙) podcasts in the DSH web UI: paste a share link to play anonymously (host proxies the audio with Range/seek), or log in via QR code to sync subscriptions, keyword-search shows/episodes, page full episode lists, and unlock purchased paywalled episodes; a `podcast_play` tool lets the agent play by link, podcast pid, or episode eid.'
+  zh: 在 DSH Web 界面收听小宇宙播客：粘贴分享链接即可免登录播放（host 代理音频流，支持 Range 拖动），扫码登录后同步账号订阅、关键词搜索节目与单集、加载完整单集分页、解锁已购付费单集；注册 `podcast_play` 工具让 agent 按链接、节目 pid 或单集 eid 直接播放。

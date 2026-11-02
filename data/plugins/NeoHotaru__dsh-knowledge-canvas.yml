@@ -1,0 +1,6 @@
+url: https://github.com/NeoHotaru/dsh-knowledge-canvas
+name: NeoHotaru/dsh-knowledge-canvas
+category: memory
+description:
+  en: "Knowledge base as a canvas in the right sidebar: notes are nodes, and nine tools let the model read, write, link and remove them. A node can carry pictures and documents, and reading one returns their text — Office files extracted in place — while pictures can be handed over as images."
+  zh: "右侧栏的卡片画布知识库：笔记就是节点，模型通过九个工具读写、连线、移除。节点可以挂图片和文档，读节点时连同内容一起返回（Office 文件就地抽取文本），图片还能作为图像直接交给模型。"

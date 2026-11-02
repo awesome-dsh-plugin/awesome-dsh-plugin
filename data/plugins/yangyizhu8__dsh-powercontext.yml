@@ -1,0 +1,7 @@
+url: https://github.com/yangyizhu8/dsh-powercontext
+name: yangyizhu8/dsh-powercontext
+category: memory
+tarball: https://github.com/yangyizhu8/dsh-powercontext/releases/download/v0.0.3/powercontext-dsh-0.0.3.tgz
+description:
+  en: "PowerContext for DeepSeek Harness: WorkBuddy-style project memory and inspectable handoff workflows - bounded context recall before each model step, 19 pc_* tools for memory, handoff, experience and skills, with a Windows server watchdog for resident operation."
+  zh: "DeepSeek Harness 的 PowerContext 常驻插件：模型每步前自动召回有界上下文，19 个 pc_* 工具覆盖记忆、工作移交、经验与技能，附带 Windows Server 看门狗实现常驻自启与崩溃自动拉起。"

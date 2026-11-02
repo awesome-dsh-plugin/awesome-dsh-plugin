@@ -1,0 +1,6 @@
+url: https://github.com/john-walks-slow/dsh-qol
+name: john-walks-slow/dsh-qol
+category: ui
+description:
+  en: 'Mobile-first Web UI quality-of-life pack for the DeepSeek Harness: a Chrome-style active-session tab bar, full-screen sidebar swipe open/close, overlay sidebar, collapsed-sidebar recents, keyboard-suppressing session switching, viewport/IME keyboard adaptation, touch feedback, code/table inner scrolling, hidden permission dropdown, a full-screen settings rewrite with tab memory, and a compositor-driven status pulse, no-touch-drag long-press protection — 14 features, each independently toggleable from the Settings QoL section with instant effect, persisted per browser in localStorage; pure client-side CSS/JS, mobile rules locked to viewports of 768px and below so desktop stays untouched.'
+  zh: '面向 dsh Web GUI 的移动优先体验优化包：Chrome 式活跃会话标签页（Tab Bar）、全屏侧栏滑动开合、侧栏浮层与折叠态最近会话、切换会话不拉起输入法、viewport/键盘安全区适配、按钮触摸反馈、代码块表格内滚、隐藏权限下拉、设置页全屏重写与页签记忆、合成器线程状态动画、长按拖拽卡死修复——14 项功能均可在设置页 QoL 分区独立开关、即时生效，并按浏览器持久保存在 localStorage；纯客户端 CSS/JS，移动规则锁定 ≤768px 视口，桌面端零影响。'

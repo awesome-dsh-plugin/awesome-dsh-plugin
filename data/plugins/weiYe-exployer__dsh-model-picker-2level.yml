@@ -1,0 +1,6 @@
+url: https://github.com/weiYe-exployer/dsh-model-picker-2level
+name: weiYe-exployer/dsh-model-picker-2level
+category: ui
+description:
+  en: "Two-level model picker for the DeepSeek Harness composer: browse providers, then models, search across all providers or within one provider, select supported reasoning-effort levels, and navigate with arrow keys, Enter and Esc."
+  zh: "DeepSeek Harness 输入框的两级模型选择器：先选供应商再选模型，支持全局与供应商内搜索、可用思考强度设置，以及方向键、Enter 和 Esc 操作。"

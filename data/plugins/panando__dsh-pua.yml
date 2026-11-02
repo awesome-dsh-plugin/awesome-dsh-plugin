@@ -1,0 +1,6 @@
+url: https://github.com/panando/dsh-pua
+name: panando/dsh-pua
+category: agi
+description:
+  en: 'Fork of @michengai/dsh-pua that removes the upstream global kill-switch so the composer entry is always visible while the feature stays off by default and can be toggled per session; the entry is a dropdown (Turn on / Turn off / Options) with a more compact options panel.'
+  zh: '基于 @michengai/dsh-pua 的修订版：解除上游「全局总闸」，让入口恒常显示、功能默认关闭并可按会话开关；入口改为下拉菜单（打开 / 关闭 / 选项），选项面板更紧凑。'

@@ -1,0 +1,6 @@
+url: https://github.com/Yurzi/dsh-pdf-mineru
+name: Yurzi/dsh-pdf-mineru
+category: tools
+description:
+  en: Provider-independent DSH document parsing powered by MinerU, with native background jobs, immutable results, and safe request coalescing.
+  zh: 基于 MinerU 的统一文档解析，支持自托管与官方云双 Provider、DSH 原生后台任务、不可变产物缓存与请求合并。

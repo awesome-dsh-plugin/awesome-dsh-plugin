@@ -1,0 +1,6 @@
+url: https://github.com/ownduck/dsh-custom-env
+name: ownduck/dsh-custom-env
+category: tools
+description:
+  en: Manage $DSH_HOME/.env from Settings and sync Host plus Windows/macOS user environment.
+  zh: 在设置中管理 $DSH_HOME/.env，并同步到 Host 与 Windows/macOS 用户环境。

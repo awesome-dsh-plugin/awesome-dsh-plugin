@@ -1,0 +1,6 @@
+url: https://github.com/Bai-2008/dsh-better-panel
+name: Bai-2008/dsh-better-panel
+category: ui
+description:
+  en: "Replaces the model button in the DSH composer with its own two-level panel (provider list, then a searchable model list) built around a continuous draggable reasoning-effort slider: blue-to-violet fill, nebula and star particles on higher levels, and a distinct color per level. Picking a model keeps the panel open and moves the slider to that model's middle level. The implementation started from Microqian2th/dsh-codex-effort-slider 1.0.0 (credited in the README); the panel, the seat takeover, the offline test suite and the docs are new here."
+  zh: "接管 DSH 输入框的模型按钮，点开是自建的两级面板（provider 列表 → 模型列表，带搜索），核心是一条连续可拖动的推理等级滑条：填充由蓝渐变到紫罗兰，高档位带星云与星尘粒子，一档一色。点模型不关面板，滑条落到该模型的中间档。实现起点是 Microqian2th/dsh-codex-effort-slider 1.0.0（README 中有致谢），面板、接管、离线测试与文档为新增。"

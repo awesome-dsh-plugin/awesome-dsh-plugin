@@ -1,0 +1,6 @@
+url: https://github.com/syyr1987/dsh-linghun-memory
+name: syyr1987/dsh-linghun-memory
+category: memory
+description:
+  en: 'A memory subsystem for DeepSeek Harness: full ontological memory (event/fact/rule three-ontology) plus a goal system (goal.js) — belief values written via Bridge trigger words, goal activation scored at read time (0.25 domain + 0.35 bridge + 0.40 sim) to recover goal/value long-range associations, journal ledger, episodic archive, low-confidence decay, memory_append/read/consolidate plus linghun_goal_update/get/state closed loop. Independent of the original dsh-linghun line. 16/16 on LoCoMo-Plus.'
+  zh: 'DeepSeek Harness 的记忆子系统：记忆完全本体化（event/fact/rule 三本体）+ 目标系统（goal.js）——belief 价值观写侧收录 + Bridge 触发词，读侧重匹配公式（0.25 域命中 + 0.35 触发词 + 0.40 相似度）补上 goal/value 语义远距联想；序时账留痕、情景归档、低置信降权遗忘；memory_append/read/consolidate + linghun_goal_update/get/state 读写沉淀闭环。独立于原 dsh-linghun 演进。LoCoMo-Plus 16/16 满分。'

@@ -1,0 +1,6 @@
+url: https://github.com/sensedeal/cue-skills/tree/main/dsh/cue-omni-reader-guard
+name: sensedeal/cue-skills#cue-omni-reader-guard
+category: security
+description:
+  en: 'Hardening guard for mcp__omni__parse in DeepSeek Harness: a tools/pre-execute listener that denies private/reserved host URLs (SSRF), enforces an allow-list or ask (consent), and is fail-closed when allowedRoots is empty.'
+  zh: '面向 DeepSeek Harness 的 mcp__omni__parse 加固护栏：tools/pre-execute 监听器拒绝私网/保留主机（SSRF），施加白名单或 ask（同意），allowedRoots 为空时 fail-closed。'

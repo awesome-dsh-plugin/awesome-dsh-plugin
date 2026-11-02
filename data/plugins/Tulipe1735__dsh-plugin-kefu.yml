@@ -1,0 +1,6 @@
+url: https://github.com/Tulipe1735/dsh-plugin-kefu
+name: Tulipe1735/dsh-plugin-kefu
+category: tools
+description:
+  en: "E-commerce customer-service desk that answers buyers only from the fields the shop itself wrote down (price, SKU table, shipping, after-sales), has the DSH model rephrase those facts under a check that rejects invented numbers and platform red lines, and moves the conversation to a human queue when a field is missing. Ships Taobao TOP and JD JOS gateway adapters, a local bridge and webhook channel, and a standalone 24/7 daemon."
+  zh: "电商客服台：只按商家自己写下的字段（价格、规格表、发货、售后）回答买家，由 DSH 模型改写措辞并校验不得编造数字或触碰平台红线，缺字段时转入人工队列。内置淘宝 TOP、京东 JOS 网关适配器，外加本地桥接与 webhook 通道，以及可独立常驻的守护进程。"

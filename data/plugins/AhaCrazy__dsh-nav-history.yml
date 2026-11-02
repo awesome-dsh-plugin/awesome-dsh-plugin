@@ -1,0 +1,6 @@
+url: https://github.com/AhaCrazy/dsh-nav-history
+name: AhaCrazy/dsh-nav-history
+category: ui
+description:
+  en: 'Global back/forward navigation for the DeepSeek Harness Web UI: remembers every session and whole-page panel you visit, shows a configurable 1-7 entry history strip you can click, and supports browser-style shortcuts plus mouse side buttons.'
+  zh: '为 DeepSeek Harness Web UI 提供全局后退/前进：记录访问过的会话与整页面板，底部历史条可配置显示 1-7 个位置并可直接点击跳转，支持浏览器式快捷键与鼠标侧键。'

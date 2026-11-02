@@ -1,0 +1,7 @@
+url: https://github.com/Somnus678/dsh-input-assistant
+name: Somnus678/dsh-input-assistant
+category: ui
+description:
+  en: Prompt optimization, next-sentence prediction, inline completion, and per-session draft stashing for the DSH input box.
+  zh: 为 DSH 输入框提供提示词优化、下一句预测、输入续写与当前会话草稿暂存。
+tarball: https://github.com/Somnus678/dsh-input-assistant/releases/download/v0.1.3/dsh-input-assistant-0.1.3.tgz

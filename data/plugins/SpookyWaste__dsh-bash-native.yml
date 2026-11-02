@@ -1,0 +1,6 @@
+url: https://github.com/SpookyWaste/dsh-bash-native
+name: SpookyWaste/dsh-bash-native
+category: tools
+description:
+  en: Rust-based POSIX bash executor for the Windows platform — gives DSH a native bash with no WSL or MSYS compatibility layer, honors DSH's three-tier permission policy, and provides persistent-terminal tools.
+  zh: Rust 实现的 Windows 平台 POSIX bash 执行器：为 DSH 提供原生 bash（不依赖 WSL 或 MSYS兼容层），服从 DSH 的三档权限策略、提供持久化终端工具。

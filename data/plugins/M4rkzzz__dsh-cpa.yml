@@ -1,0 +1,6 @@
+url: https://github.com/M4rkzzz/dsh-cpa
+name: M4rkzzz/dsh-cpa
+category: tools
+description:
+  en: 'In-process ChatGPT Codex authorization, model discovery, and quota display for DeepSeek Harness.'
+  zh: '在 DeepSeek Harness 内直连 ChatGPT Codex，管理授权、模型同步和额度显示，无需本地代理进程。'

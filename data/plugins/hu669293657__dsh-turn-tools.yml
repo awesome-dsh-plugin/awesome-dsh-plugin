@@ -1,0 +1,6 @@
+url: https://github.com/hu669293657/dsh-turn-tools
+name: hu669293657/dsh-turn-tools
+category: ui
+description:
+  en: Adds deliverable-file buttons to the end of each agent turn (opens files with the OS default app) and a floating dot rail for jumping between conversation turns.
+  zh: 在每轮对话末尾添加产出文件按钮（用系统默认程序打开），并提供可在轮次间快速跳转的悬浮圆点导航栏。

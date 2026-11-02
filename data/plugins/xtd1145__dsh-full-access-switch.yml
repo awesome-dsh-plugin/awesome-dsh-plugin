@@ -1,0 +1,6 @@
+url: https://github.com/xtd1145/dsh-full-access-switch
+name: xtd1145/dsh-full-access-switch
+category: security
+description:
+  en: 'One-time Full access switch for DeepSeek Harness: new sessions (workspaces and conversations) start with danger-full-access and skip the per-session Full access confirmation; installable as a dsh bundle or via patch scripts.'
+  zh: '给 DeepSeek Harness 加 Full access 一次性开关：新工作区与新对话默认 danger-full-access 并跳过逐个确认；可作为 dsh bundle 安装，也可用脚本打补丁。'

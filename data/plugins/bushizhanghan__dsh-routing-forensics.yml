@@ -1,0 +1,16 @@
+url: https://github.com/bushizhanghan/dsh-routing-forensics
+name: bushizhanghan/dsh-routing-forensics
+category: usage
+description:
+  en: >-
+    Forensic analysis of past model-routing decisions. Replays each session, classifies every turn's task
+    complexity from its request shape (deterministic, no LLM), and reports two kinds of waste: an expensive
+    model on cheap work (the difference is measurable), and a cheap model on expensive work that failed on its
+    own merits — where every retry re-sends the whole context, so the downgrade cost more than the upgrade.
+    Distinguishes provider-capacity retries (RATE_LIMIT/TIMEOUT/TRANSPORT) from model failures so it does not
+    cry wolf. Derives routing rules from the evidence, priced against a built-in per-million table.
+  zh: >-
+    模型路由浪费取证：回放每个会话，按请求形状确定性判定每轮任务复杂度（不调 LLM），报两类浪费——贵模型干
+    便宜活（差额可计算），以及便宜模型干贵活且因自身能力失败（每次重试重发整个上下文，比直接升级更贵）。会
+    区分服务商容量限制（RATE_LIMIT/TIMEOUT/TRANSPORT）与模型能力失败，所以不会天天喊狼来了。并从证据推导路由
+    规则，按内置每百万 token 价目表估算金额。

@@ -1,0 +1,6 @@
+url: https://github.com/theBigGavin/marketingdashboard
+name: theBigGavin/marketingdashboard
+category: tools
+description:
+  en: 'Zero-key market data MCP server (dsh bundle): 5 MCP tools for A-share/HK/US quotes, sector rankings, futures, money flow and 7x24 news, with a three-tier upstream fallback.'
+  zh: 零密钥行情数据 MCP server（dsh bundle）：5 个 MCP 工具覆盖 A股/港股/美股行情、板块排行、期货、资金流与 7×24 快讯，三层上游降级兜底。

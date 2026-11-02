@@ -1,0 +1,7 @@
+url: https://github.com/Tuiltex-0216/dsh-wechat-share
+name: Tuiltex-0216/dsh-wechat-share
+category: remote
+description:
+  en: "Forward WeChat chat records into DSH sessions: a Windows share target captures the merged-forward ZIP, an in-GUI overlay picks the destination workspace and session, and the ZIP arrives as a file-attachment user message the agent unpacks and reads. Media entry extensions are normalized by magic bytes (WeChat ships PNG/HEIC bytes named .jpg), and failed deliveries preserve the batch for retry. Requires Windows 10/11 with Developer Mode on and the repo installer to register the share target."
+  zh: "把微信聊天记录转发进 DSH 会话：Windows 分享目标接收合并转发的 ZIP，GUI 浮层选择目标工作区与会话，ZIP 以文件附件用户消息到达，agent 解压并读取。按魔数纠正媒体扩展名（微信常把 PNG/HEIC 字节命名为 .jpg），投递失败时批次保留可重试。需 Windows 10/11 并开启开发者模式，先运行仓库安装脚本注册分享目标。"
+icon: https://raw.githubusercontent.com/Tuiltex-0216/dsh-wechat-share/main/assets/icon-180.png

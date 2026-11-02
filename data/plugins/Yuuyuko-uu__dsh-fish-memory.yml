@@ -1,0 +1,6 @@
+url: https://github.com/Yuuyuko-uu/dsh-fish-memory
+name: Yuuyuko-uu/dsh-fish-memory
+category: memory
+description:
+  en: Per-session long-term memory that fades over time, recalls by evidence score and injects a few entries into the system prompt each turn.
+  zh: 按会话分开的长期记忆，会随时间变淡，按证据分召回、每轮注入几条到系统提示词里。

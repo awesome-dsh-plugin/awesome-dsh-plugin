@@ -1,0 +1,8 @@
+url: https://github.com/dragonsummer1/dsh-watermark-remover
+name: dragonsummer1/dsh-watermark-remover
+category: docs
+icon: https://raw.githubusercontent.com/dragonsummer1/dsh-watermark-remover/main/assets/icon-180.png
+tarball: https://github.com/dragonsummer1/dsh-watermark-remover/releases/latest/download/dsh-watermark-remover.tgz
+description:
+  en: 'Structure-level watermark removal for PDF and Word: finds full-page Form XObject overlays drawn on every page and text blocks matching a watermark vocabulary, lists them by confidence, then excises only the drawing operators or runs — the text layer, embedded images and their resolution are not re-rendered or altered.'
+  zh: '面向 PDF 与 Word 的结构级去水印：识别每页都会绘制的整页 Form XObject 图层水印，以及命中水印词表的文字块，按置信度列出候选后仅摘除对应的绘制指令或 run——正文文字层、内嵌图片与其分辨率均不重绘、不改动。'

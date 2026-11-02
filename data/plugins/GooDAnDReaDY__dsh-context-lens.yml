@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-context-lens
+name: GooDAnDReaDY/dsh-context-lens
+category: tools
+description:
+  en: "AST-based context compression, test log filtering, and token budget guard for DeepSeek Harness: strips redundant syntax, prunes noisy log lines, and enforces a token ceiling so the context window never overflows."
+  zh: "DeepSeek Harness 的 AST 上下文压缩、测试日志过滤与 Token 预算守卫：剔除冗余语法、精简日志噪声，并强制执行 Token 上限以防止上下文窗口溢出。"

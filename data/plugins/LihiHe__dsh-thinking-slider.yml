@@ -1,0 +1,6 @@
+url: https://github.com/LihiHe/dsh-thinking-slider
+name: LihiHe/dsh-thinking-slider
+category: ui
+description:
+  en: Turns the composer's reasoning-effort menu into a draggable slider and takes over the stock model-and-reasoning-level chip. Dragging follows the pointer continuously; releasing snaps to the nearest level and submits one session update per drag. The track draws its own fill, tick marks and white knob, only the highest levels (xhigh, max, ultra) get a flowing brand-colour gradient, and both ends carry the lowest and highest level names. The same card expands into the official model list. Arrow keys step one level, PageUp and PageDown two, Home and End jump to the ends, and each move submits. A generation counter on the directory object discards late responses, and reduced-motion turns the animations off. All data comes from the stock modelDirectories directory; no new capabilities are added.
+  zh: 把输入框右侧的「推理等级」从菜单点选换成可拖拽滑条，并接管官方那枚「模型 · 推理等级」chip。拖动中连续跟手，松手吸附到最近档位，且一次拖拽只提交一次会话更新。轨道内自绘填充、刻度点与白圆钮，只有最高档（xhigh/max/ultra）才铺品牌色流动渐变，两端标出最低与最高档名；同一张卡片可展开官方模型清单。方向键移动一档、PageUp/PageDown 移动两档、Home/End 跳到两端，每次移动都会提交。目录对象上的世代计数器丢弃迟到的响应，prefers-reduced-motion 下关闭动画。数据全部取自官方 modelDirectories，不新增任何能力。

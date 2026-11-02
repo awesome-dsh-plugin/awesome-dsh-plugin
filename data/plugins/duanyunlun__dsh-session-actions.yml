@@ -1,0 +1,6 @@
+url: https://github.com/duanyunlun/dsh-session-actions
+name: duanyunlun/dsh-session-actions
+category: ui
+description:
+  en: 'Sidebar conversation actions: open the row menu on right-click, rename by double-click, copy the session id, and delete a conversation together with its storage after a confirmation.'
+  zh: '侧边栏会话操作：右键打开行菜单、双击重命名、复制会话 ID，以及二次确认后连同存储一起删除会话。'

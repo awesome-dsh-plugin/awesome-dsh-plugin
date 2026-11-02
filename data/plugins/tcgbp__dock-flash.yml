@@ -1,0 +1,7 @@
+url: https://github.com/tcgbp/dock-flash
+name: tcgbp/dock-flash
+category: ui
+description:
+  en: 'The dock-base Workbench adapter for the DSH Quick Control panel. The panel core ships separately as `dsh-flash`; this package is what mounts it into dock-base — sidebar/floating panel, activity-bar ⚡, editor view and the dock-flash:openQuickControl command. Requires dock-base; a broken install fails loudly instead of silently doing nothing.'
+  zh: DSH 快捷控制面板的 dock-base 工作台适配器。面板本体（开关注册表、皮肤系统、i18n、告警面、host 路由）由 `dsh-flash` 核心单独提供；本包只负责把它挂进 dock-base：侧栏/浮动面板、活动栏 ⚡、编辑器视图与 dock-flash:openQuickControl 命令。需安装 dock-base；装错时会明确报错而不是静默失效。
+tarball: https://github.com/tcgbp/dock-flash/releases/latest/download/dock-flash.tgz

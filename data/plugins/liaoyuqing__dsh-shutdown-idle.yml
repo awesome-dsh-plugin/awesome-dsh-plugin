@@ -1,0 +1,7 @@
+url: https://github.com/liaoyuqing/dsh-shutdown-idle
+name: liaoyuqing/dsh-shutdown-idle
+category: ui
+tarball: https://github.com/liaoyuqing/dsh-shutdown-idle/releases/latest/download/dsh-shutdown-idle.tgz
+description:
+  en: 'Runs a chosen power action (shutdown / restart / hibernate / sleep / lock / logoff) once every Agent session and background job has gone idle: the plugin samples in-process sessions once per second, counts running sessions as always busy, checks running background jobs through a configurable option (considerJobs, on by default, shown with its live count in Settings), waits a confirm window and then a cancellable countdown, and shows a draggable bottom-right card with the current phase and remaining seconds; the enable toggle never survives a host restart, any newly started session or Cancel aborts the countdown, and if the agents service is unavailable the machine is treated as busy so nothing ever fires. Windows only (the built-in shutdown / rundll32 actions); every action except none degrades to none elsewhere.'
+  zh: '会话全部结束、后台任务也安静下来后自动执行电源动作（关机 / 重启 / 休眠 / 睡眠 / 锁定 / 注销）：插件每秒采样进程内会话，运行中的会话始终算「在忙」；后台任务检测是可配置项 considerJobs（默认开启，设置页直接显示当前计数）；确认窗口后进入可取消倒计时，右下角浮窗卡片显示当前阶段与剩余秒数并支持拖动；开关不会随宿主重启保留（重启后一律回到关闭），任何会话新启动或点取消都会中止倒计时；拿不到 agents 服务时一律按「在忙」处理，绝不触发。仅支持 Windows（使用系统自带 shutdown / rundll32），其他平台除 none 外均降级为 none。'

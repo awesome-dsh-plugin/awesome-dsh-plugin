@@ -1,0 +1,7 @@
+url: https://github.com/abbccdd/dsh-localtts
+name: abbccdd/dsh-localtts
+category: voice
+description:
+  en: 'Reads Harness replies aloud through an existing local TTS runtime: built-in IndexTTS and GPT-SoVITS launchers, a protocol-based local HTTP/JSONL entry, and model-folder loading for Kokoro, F5-TTS, VoxCPM, Qwen3-TTS and CosyVoice SDK environments. Ships no models. Derived from 1624318455/dsh-plugin-tts; it isolates its row id and settings, so both can be installed side by side with duplicate features deactivated.'
+  zh: '用已有的本地语音合成为 Harness 逐句朗读：内置 IndexTTS 与 GPT-SoVITS 启动器、基于协议的本地 HTTP/JSONL 接入，以及 Kokoro、F5-TTS、VoxCPM、Qwen3-TTS、CosyVoice 的 SDK 环境模型文件夹加载；不附带任何模型。衍生自 1624318455/dsh-plugin-tts；已隔离行 id 与设置，可与原插件同装，重复功能会自动停用。'
+icon: https://raw.githubusercontent.com/abbccdd/dsh-localtts/main/logo.png

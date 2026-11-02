@@ -1,0 +1,6 @@
+url: https://github.com/Zenjibad/deepseek-cost-usage-status-plugin
+name: Zenjibad/deepseek-cost-usage-status-plugin
+category: usage
+description:
+  en: 'Adds a colored status line under the DSH conversation stats showing live DeepSeek API cost, usage and account balance, with on/off-peak pricing indicators.'
+  zh: 在 DSH 会话统计行下方新增彩色状态行，实时显示 DeepSeek API 费用、用量与账户余额，并带高峰/错峰计费指示。

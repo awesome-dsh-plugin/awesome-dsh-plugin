@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-excel-reconcile
+name: PerryLink/dsh-excel-reconcile
+category: tools
+description:
+  en: 'Joins two spreadsheets on a declared key and compares declared fields within declared tolerances, producing a Markdown report, a JSON result and a diff workbook. It reports differences; it does not adjudicate them.'
+  zh: '按声明的主键连接两张表，按声明字段与容差比对，输出 Markdown 报告、JSON 结果与差异工作簿。只报告差异，不裁决对错。'

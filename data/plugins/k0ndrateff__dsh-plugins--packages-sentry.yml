@@ -1,0 +1,6 @@
+url: https://github.com/k0ndrateff/dsh-plugins/tree/main/packages/sentry
+name: k0ndrateff/dsh-plugins#sentry
+category: dev
+description:
+  en: 'Sentry for DeepSeek Harness: the tools of Sentry MCP server, a result card, and an issue panel with resolve, ignore and assign.'
+  zh: '把 Sentry 接进 DeepSeek Harness：提供 Sentry MCP 服务器的工具、结果卡片，以及可解决、忽略与指派的问题面板。'

@@ -1,0 +1,6 @@
+url: https://github.com/star-Cosmo/dsh-model-tidy
+name: star-Cosmo/dsh-model-tidy
+category: model
+description:
+  en: 'Tidy the model list of DeepSeek Harness: hide any model from the selector, rename models and channels while keeping the provider billing rate, and arrange both with arrows. Search, per-provider batch toggles, back to top, one-click restore. Display only — no provider configuration is rewritten.'
+  zh: 'DSH 模型整理：整理并精简模型列表——隐藏任意模型、给模型和渠道改备注名（保留厂商计费倍率）、用箭头调整模型与渠道排序；支持搜索、渠道级批量开关、返回顶部与一键恢复。只改显示，不重写任何渠道配置。'

@@ -1,0 +1,6 @@
+url: https://github.com/godv61/dsh-task-engine
+name: godv61/dsh-task-engine
+category: workflow
+description:
+  en: 'Preset engineering workflows for DeepSeek Harness: a dev_task tool that gates stage transitions, artifacts, verification, review and commit scope, plus a web workbench for installing project or user skills and rules.'
+  zh: '为 DeepSeek Harness 提供预设工程流程：dev_task 工具把阶段流转、产物、验证、审核与提交范围做成硬门禁，并带一个安装项目级与个人级技能和规则的工作台。'

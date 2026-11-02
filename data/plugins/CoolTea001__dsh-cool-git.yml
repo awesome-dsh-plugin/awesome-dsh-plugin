@@ -1,0 +1,6 @@
+url: https://github.com/CoolTea001/dsh-cool-git
+name: CoolTea001/dsh-cool-git
+category: git
+description:
+  en: 'Git plugin — adds Git management to the session tab bar, covering the basics: commit | pull | push | branch | diff.'
+  zh: 'Git 插件 —— 会话 Tab 栏添加 Git 管理功能，支持 commit | pull | push | branch | diff 等基础功能。'

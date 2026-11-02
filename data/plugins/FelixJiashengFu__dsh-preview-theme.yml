@@ -1,0 +1,6 @@
+url: https://github.com/FelixJiashengFu/dsh-preview-theme
+name: FelixJiashengFu/dsh-preview-theme
+category: theme
+description:
+  en: 'Color presets and a custom paper-color picker for the built-in DSH sidebar PDF, converted Office, and spreadsheet previews, with dark-mode brightness control and locally saved preferences; changes only the display, not the files.'
+  zh: '为 DSH 内置侧边栏的 PDF、转为 PDF 的 Office 文档及表格预览提供配色预设与自定义纸张底色，支持深色模式亮度调节和本地保存偏好；只改变显示，不修改文件。'

@@ -1,0 +1,6 @@
+url: https://github.com/el16z3c/dsh-think-ux
+name: el16z3c/dsh-think-ux
+category: ui
+description:
+  en: "Smooth think-row experience for the DSH Web UI: think rows expand as a capped 24-line preview that glides to the bottom while reasoning streams, collapse with a short height animation on settle, and the main conversation view follows with a reader-safe smooth chase (no snaps, no yanks)."
+  zh: "DSH Web 端的丝滑思考盒体验：think 行展开为 24 行限高预览并随流式推理平滑追底，settle 时以短动画收起，主对话视图以读者友好的平滑追逐跟随（无跳变、无拉扯）。"

@@ -1,0 +1,6 @@
+url: https://github.com/XIAOZHAOXSXH/dsh-moyu-reader
+name: XIAOZHAOXSXH/dsh-moyu-reader
+category: fun
+description:
+  en: Reads local .txt novels in the right sidebar, with encoding detection, chapter splitting, full-text search, reading progress, bookmarks, and a boss key that hides the reader or the whole right sidebar in one keystroke.
+  zh: 在右侧栏阅读本地 txt 小说：自动识别 UTF-8/GBK/Big5 编码，支持章节切分、全文搜索、阅读进度与书签，并可用老板键一键隐藏阅读器或整个右侧栏。

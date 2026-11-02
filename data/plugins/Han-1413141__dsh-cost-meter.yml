@@ -1,0 +1,6 @@
+url: https://github.com/Han-1413141/dsh-cost-meter
+name: Han-1413141/dsh-cost-meter
+category: usage
+description:
+  en: Per-session and daily API cost, budget with usage %, official balance, history dashboard, and one-click official price sync with peak/off-peak pricing.
+  zh: 会话与当日 API 费用统计、预算图框（已用%）、官方余额、历史看板，支持峰谷计价与官方价格一键同步。

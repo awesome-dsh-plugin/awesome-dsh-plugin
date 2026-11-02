@@ -1,0 +1,6 @@
+url: https://github.com/uceqi114/dsh-ice-probe
+name: uceqi114/dsh-ice-probe
+category: fun
+description:
+  en: Appends a tiny ice marker to the end of every sentence the model writes, chain of thought included, and plays a short synthesized sound for each one.
+  zh: 在模型写出的每句话结尾（含思维链）补一个小冰块标记，并为每次补冰播放一声短促的合成音效。

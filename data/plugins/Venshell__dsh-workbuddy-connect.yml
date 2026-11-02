@@ -1,0 +1,6 @@
+url: https://github.com/Venshell/dsh-workbuddy-connect
+name: Venshell/dsh-workbuddy-connect
+category: model
+description:
+  en: 'Brings the models available in the logged-in WorkBuddy desktop app into the model picker, reusing the app login and credits; the domestic and international builds appear as two separate provider groups. Continuation of the now-deleted corrinehu/dsh-workbuddy-connect; it registers the same workbuddy / workbuddy-ai provider ids, so it cannot be installed alongside other WorkBuddy bridges.'
+  zh: '把已登录的 WorkBuddy 桌面 App 里可用的模型接进模型选择器，复用 App 的登录与积分；国内版与国际版各成一组。corrinehu/dsh-workbuddy-connect（仓库已删除）的续作；注册相同的 workbuddy / workbuddy-ai provider id，不能与其它 WorkBuddy 桥同装。'

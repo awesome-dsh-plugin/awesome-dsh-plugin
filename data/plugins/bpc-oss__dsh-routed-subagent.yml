@@ -1,0 +1,6 @@
+url: https://github.com/bpc-oss/dsh-routed-subagent
+name: bpc-oss/dsh-routed-subagent
+category: tools
+description:
+  en: "Adds a subagent_routed tool that runs a one-shot subagent fully mounted on any agent preset from any session, with per-call model/provider override and a model-availability pre-check."
+  zh: "新增 subagent_routed 工具：从任意会话发起一次性子 Agent，并完整挂载到任意 agent preset 上运行，支持按次覆盖模型/提供方，并在调用前预检模型可用性。"

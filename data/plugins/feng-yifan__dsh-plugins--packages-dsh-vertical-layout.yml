@@ -1,0 +1,6 @@
+url: https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-vertical-layout
+name: feng-yifan/dsh-plugins#dsh-vertical-layout
+category: ui
+description:
+  en: 'Portrait layout for desktop windows: navigation takes the full left column, the file/terminal panel moves above the conversation, and a draggable splitter sets its height; touch devices are unaffected.'
+  zh: '竖屏布局：电脑竖屏窗口下，导航占左列整高，文件/终端面板移到对话区上方，中间的分隔线可拖拽调整高度；手机/平板不受影响。'

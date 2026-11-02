@@ -1,0 +1,6 @@
+url: https://github.com/sdiwenchen-lang/DeepSeek-Usage
+name: sdiwenchen-lang/DeepSeek-Usage
+category: usage
+description:
+  en: DeepSeek balance and token usage panel for DSH, with official platform billing, a daily usage calendar, and local session-log estimates for all providers using editable per-model pricing.
+  zh: DSH 里的 DeepSeek 用量面板：官方账户余额与账单、每日用量日历，以及按可编辑的逐模型费率估算全部 Provider 的本地会话日志用量。

@@ -1,0 +1,6 @@
+url: https://github.com/lizilong1993/dsh-offpeak
+name: lizilong1993/dsh-offpeak
+category: usage
+description:
+  en: 'Pauses peak-hour requests that target official or listed models and lets everything else run, with editable peak windows, a per-model interception list and per-session free-run in the badge panel.'
+  zh: '高峰时段只暂停指向官方或拦截列表内模型的请求，其余照常放行；峰谷时段、按模型的拦截列表与会话「畅跑」都能在徽标面板里编辑。'

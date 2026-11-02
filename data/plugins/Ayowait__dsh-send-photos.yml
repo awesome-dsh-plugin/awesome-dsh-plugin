@@ -1,0 +1,6 @@
+url: https://github.com/Ayowait/dsh-send-photos
+name: Ayowait/dsh-send-photos
+category: model
+description:
+  en: 'Declares image input on relay routes whose endpoint omits modality metadata, so models that can see photos stop being rejected as text-only. This also overrides routes that are explicitly declared text-only.'
+  zh: '为端点不返回模态元数据的中转路由补上图片输入声明，让本来就能看图的模型不再被当成纯文本拒收；声明为纯文本的路由同样会被覆盖。'

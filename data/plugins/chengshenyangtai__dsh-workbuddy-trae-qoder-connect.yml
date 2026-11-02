@@ -1,0 +1,6 @@
+url: https://github.com/chengshenyangtai/dsh-workbuddy-trae-qoder-connect
+name: chengshenyangtai/dsh-workbuddy-trae-qoder-connect
+category: model
+description:
+  en: One DSH plugin that aggregates the models of WorkBuddy (personal multi-account, enterprise and the WorkBuddy AI international edition), Qoder CN and Trae CN into a single model picker with a shared conversation history, live credit multipliers, per-model reasoning effort, the largest context window the international edition declares, and daily check-in where the channel offers one.
+  zh: '一个 DSH 插件把 WorkBuddy（个人多账号、企业版与国际版 WorkBuddy AI）、Qoder CN、Trae CN 的模型聚合进同一个模型选择器，共用一套对话历史，支持积分倍率、逐模型思考档位、国际版上游声明的最大上下文窗口，并在渠道有签到活动时自动领取。'

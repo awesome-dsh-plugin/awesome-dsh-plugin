@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/dsh-pet-voice/tree/main/plugins/dsh-pet-voice
+name: regrevia/dsh-pet-voice#dsh-pet-voice
+category: voice
+description:
+  en: 'The DSH app also doubles as a desktop pet: wake it with your voice, talk out loud, and give orders by speaking. Reach the DeepSeek Harness running on your own computer over LAN, your own domain, or a relay server — and chat with the little whale working in your project to put it to work. Travelling without your laptop is no longer a problem.'
+  zh: 'DSH 的 App 端还融合了桌宠玩法：语音唤醒、随口说话、语音指挥。远程操作电脑上的 DeepSeek Harness 有三种连法——局域网、自建域名、服务器中转；也能直接和工作在项目里的小鲸鱼聊天，一句话指挥它干活。出门在外，再也不用担心没带电脑。'
+icon: https://raw.githubusercontent.com/regrevia/dsh-pet-voice/main/assets/icon-180.png

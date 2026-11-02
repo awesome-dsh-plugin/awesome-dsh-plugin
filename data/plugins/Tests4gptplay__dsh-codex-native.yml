@@ -1,0 +1,8 @@
+url: https://github.com/Tests4gptplay/dsh-codex-native
+name: Tests4gptplay/dsh-codex-native
+category: model
+icon: https://raw.githubusercontent.com/Tests4gptplay/dsh-codex-native/v0.2.3/assets/chatgpt-auth.png
+tarball: https://github.com/Tests4gptplay/dsh-codex-native/releases/download/v0.2.3/dsh-codex-native-0.2.3.tgz
+description:
+  en: "Use your ChatGPT account to bring Codex models into DSH: choose models and thinking effort, chat with images, use tools and skills, approve local tasks, answer interactive questions, continue and compact long conversations, check quota and Token history, and maintain a supported Windows screenshot helper."
+  zh: "使用 ChatGPT 账号在 DSH 中接入 Codex：选择模型与思考档位，进行图文对话、使用工具和技能，经审批执行本机任务，回答交互问题，压缩并续接长对话，查询额度和 Token 历史，并维护受支持的 Windows 截图辅助程序。"

@@ -1,0 +1,6 @@
+url: https://github.com/wqy8593521/dsh-model-pro
+name: wqy8593521/dsh-model-pro
+category: model
+description:
+  en: 'Lifecycle management UI for the llm-pi-ai model provider: create, edit, delete, enable and disable providers with custom headers and AES-GCM-encrypted API keys; uninstall-safe restore of parked providers, remote model discovery with batch write, smart routing with five strategies, union/intersection composites, per-model connectivity tests, and request observability.'
+  zh: 'llm-pi-ai 模型提供商的生命周期管理 UI：提供商的新建/编辑/删除与启停（自定义请求头、AES-GCM 加密密钥）；卸载时安全还原滞留提供商，远端模型发现与批量写入，五种策略的智能路由，并集/交集组合提供商，逐模型连通性测试与请求观测。'

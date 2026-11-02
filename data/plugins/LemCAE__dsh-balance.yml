@@ -1,0 +1,6 @@
+url: https://github.com/LemCAE/dsh-balance
+name: LemCAE/dsh-balance
+category: usage
+description:
+  en: DeepSeek account balance and current-session spend estimate in a top-bar chip and settings card, with pause-aware auto-refresh, an editable official price table, a `deepseek_balance` model tool, and a bilingual UI.
+  zh: 顶栏徽章与设置卡片展示 DeepSeek 账户余额与当前会话预估花费：暂停感知的自动刷新、可编辑官方价格表、`deepseek_balance` 模型工具与中英文界面。

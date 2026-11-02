@@ -1,0 +1,6 @@
+url: https://github.com/Rannist/balance-dsh
+name: Rannist/balance-dsh
+category: usage
+description:
+  en: Shows DeepSeek account balance and current-session token and cost usage in the sidebar footer and composer dock, including peak and off-peak billing and subagent consumption.
+  zh: 在侧边栏底部和输入框上方显示你的 DeepSeek 账户余额与当前会话 token 及费用消耗，支持高峰/空闲峰谷计费与子代理消耗统计。

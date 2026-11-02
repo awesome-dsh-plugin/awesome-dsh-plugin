@@ -1,0 +1,6 @@
+url: https://github.com/hellosky983/dsh-qrcode
+name: hellosky983/dsh-qrcode
+category: memory
+description:
+  en: Offline QR code (SVG/PNG/ASCII) and barcode (Code128/EAN-13) generator for DeepSeek Harness, no network and no shell.
+  zh: DeepSeek Harness 离线二维码（SVG/PNG/ASCII）与条码（Code128/EAN-13）生成器，无网络、无 shell。

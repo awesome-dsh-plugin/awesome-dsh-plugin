@@ -1,0 +1,6 @@
+url: https://github.com/Asiu-x/dsh-harness2
+name: Asiu-x/dsh-harness2
+category: agi
+description:
+  en: 'Harness² recursive self-improvement for DSH agents: Propose–Probe–Compose, isolated probes, anonymous selection, and a per-domain experience library.'
+  zh: '让 DSH Agent 通过 Harness² 的 Propose–Probe–Compose 循环，从真实执行证据中持续改进提示词、技能、脚本与领域经验库。'

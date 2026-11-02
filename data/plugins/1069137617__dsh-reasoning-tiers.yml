@@ -1,0 +1,6 @@
+url: https://github.com/1069137617/dsh-reasoning-tiers
+name: 1069137617/dsh-reasoning-tiers
+category: model
+description:
+  en: Declares per-model reasoning-effort ladders for third-party providers in the llm-pi-ai settings section, so DSH's stock thinking-intensity selector works on models the pi-ai catalog does not describe.
+  zh: 在 llm-pi-ai 设置节为第三方模型提供商补齐推理档位（reasoning effort）声明，让 DSH 自带的思考强度选择器对 pi-ai 目录之外的模型真正可用。

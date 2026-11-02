@@ -1,0 +1,6 @@
+url: https://github.com/3150481853/molly-qq-whale/tree/main/plugin/dsh-qq-whale
+name: 3150481853/molly-qq-whale#dsh-qq-whale
+category: notify
+description:
+  en: 'QQ channel for DeepSeek Harness over OneBot 11 / NapCat: keeps one fixed persona across sessions with long-term memory, answers in group and private chats, sends stickers and voice replies, and ships a local web console that shows what the bot is doing. Persona and memory files are yours to write — the repository only ships examples.'
+  zh: '基于 OneBot 11 / NapCat 的 QQ 通道：跨会话保持同一人设并带长期记忆，在群聊和私聊里接话，会发表情包、会发语音，另附一个本地 Web 控制台，能看见她此刻在做什么。人设与记忆文件由你自己写，仓库只提供样例。'

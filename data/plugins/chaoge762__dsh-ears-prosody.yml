@@ -1,0 +1,6 @@
+url: https://github.com/chaoge762/dsh-ears-prosody
+name: chaoge762/dsh-ears-prosody
+category: voice
+description:
+  en: 'Local offline prosody analysis for DeepSeek Harness: reports how something was said — speed, pitch, pauses, energy — alongside the transcript.'
+  zh: 本地离线语气分析：在转写之外，给出语速、音高、停顿与力度的听感描述，让模型听懂「怎么说的」。

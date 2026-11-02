@@ -1,0 +1,6 @@
+url: "https://github.com/aa2246740/dsh-opendesigner"
+name: "aa2246740/dsh-opendesigner"
+category: "dev"
+description:
+  en: "Local visual React and Tailwind designer with project-scoped file tools; documented for DSH 0.1.5-rc.2."
+  zh: "提供本地 React 与 Tailwind 可视化设计及限制在项目内的文件工具，现有文档面向 DSH 0.1.5-rc.2。"

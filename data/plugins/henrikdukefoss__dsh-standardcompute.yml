@@ -1,0 +1,7 @@
+url: https://github.com/henrikdukefoss/dsh-standardcompute
+name: henrikdukefoss/dsh-standardcompute
+category: model
+description:
+  en: Adds Standard Compute as an OpenAI-compatible model provider through the built-in pi-ai adapter, with its standardcompute router model and two direct model pins; configuration only, no code.
+  zh: 通过内置 pi-ai 适配器将 Standard Compute 添加为 OpenAI 兼容模型供应商，包含 standardcompute 路由模型和两个直连模型；仅配置，无代码。
+tarball: https://github.com/henrikdukefoss/dsh-standardcompute/releases/latest/download/dsh-standardcompute.tgz

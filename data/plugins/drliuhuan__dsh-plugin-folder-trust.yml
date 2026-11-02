@@ -1,0 +1,6 @@
+url: https://github.com/drliuhuan/dsh-plugin-folder-trust
+name: drliuhuan/dsh-plugin-folder-trust
+category: workflow
+description:
+  en: 'Windows-only. Trust a newly added workspace folder once, then grants the NTFS rights the workspace-write sandbox needs and pushes the grant plus the Low integrity label through folders that already exist; repairs show live progress.'
+  zh: '仅 Windows：新增工作区时授权一次，补齐 workspace-write 沙箱所需的 NTFS 权限，并把授权与 Low 完整性标签铺进已有子目录；修复过程带实时进度与日志。'

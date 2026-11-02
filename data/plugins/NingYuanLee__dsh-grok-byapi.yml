@@ -1,0 +1,6 @@
+url: https://github.com/NingYuanLee/dsh-grok-byapi
+name: NingYuanLee/dsh-grok-byapi
+category: model
+description:
+  en: 'Grok model provider for DeepSeek Harness with model discovery, image and video generation, text-to-speech tools, and durable local media tasks over an OpenAI-compatible gateway.'
+  zh: '在 DeepSeek Harness 中接入 Grok：模型发现、图片与视频生成、文字转语音工具，以及可重启恢复的本地媒体任务。'

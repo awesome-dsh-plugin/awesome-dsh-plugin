@@ -1,0 +1,6 @@
+url: https://github.com/pitetow/dsh-notify-on-complete
+name: pitetow/dsh-notify-on-complete
+category: notify
+description:
+  en: Desktop notifications for run completion, model questions, and approval requests with per-platform system sounds, zero runtime dependencies.
+  zh: 系统桌面通知：运行结束、模型提问与审批请求即时提醒，三平台提示音，零运行时依赖。

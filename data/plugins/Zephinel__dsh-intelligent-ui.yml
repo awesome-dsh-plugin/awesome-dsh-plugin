@@ -1,0 +1,6 @@
+url: https://github.com/Zephinel/dsh-intelligent-ui
+name: Zephinel/dsh-intelligent-ui
+category: ui
+description:
+  en: 'Render OpenUI Lang answers as interactive cards or reading articles in DSH chat, with maps, charts, forms, PNG export and standalone interactive HTML export.'
+  zh: '在 DSH 对话中把 OpenUI Lang 答案渲染成交互卡片或阅读式文章，支持地图、图表、表单、PNG 图片导出和独立交互 HTML 导出。'

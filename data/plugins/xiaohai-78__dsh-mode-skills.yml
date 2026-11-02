@@ -1,0 +1,6 @@
+url: https://github.com/xiaohai-78/dsh-mode-skills
+name: xiaohai-78/dsh-mode-skills
+category: skill
+description:
+  en: 'Skill manager page for dsh: set each skill to on, manual only, model only, or off per agent mode; count how often each skill is loaded per mode from the session history; search skills.sh and install from GitHub; import from Codex, Claude Code, or a folder; create, edit, and version skills, with a trash for deleted ones; modes keep working after an uninstall.'
+  zh: 'dsh 的 Skill（技能）管理页：按 Agent 模式把每个 Skill 设为开、仅手动、仅模型或关；从会话历史统计每个 Skill 在各模式里被加载的次数；搜索 skills.sh 并从 GitHub 安装；从 Codex、Claude Code 或文件夹导入；新建、编辑、保存版本，删除的 Skill 进回收站；卸载后模式照常可用。'

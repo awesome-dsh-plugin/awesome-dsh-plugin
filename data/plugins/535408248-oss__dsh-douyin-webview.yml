@@ -1,0 +1,6 @@
+url: https://github.com/535408248-oss/dsh-douyin-webview
+name: 535408248-oss/dsh-douyin-webview
+category: ui
+description:
+  en: "An embedded Douyin window docked in the DSH sidebar: a real Electron webview guest, so douyin.com's X-Frame-Options: DENY no longer applies."
+  zh: "DSH 侧栏底部的内嵌抖音窗口：用 Electron webview 租约绕过 douyin.com 的 X-Frame-Options: DENY。仅桌面版。"
