@@ -1,0 +1,7 @@
+url: https://github.com/x-cores/dsh-3d-mine-game/tree/main/packages/mine3d-float
+name: x-cores/dsh-3d-mine-game#mine3d-float
+category: fun
+description:
+  en: Minesweeper on a rotating cube surface with cross-edge neighbors, no-guess generation, ghost mode and color themes.
+  zh: 立方体表面 3D 排雷，拖拽旋转、跨棱跨角邻居、无猜生成、透视模式与多套配色。
+tarball: https://github.com/x-cores/dsh-3d-mine-game/releases/download/v1.0.0/dsh-mine3d-float-1.0.0.tgz
