@@ -3328,6 +3328,7 @@ dsh plugin --profile web add dshmarket
 - [kittimzhe/dsh-session-eval](https://github.com/kittimzhe/dsh-session-eval) — 回溯式会话评估：从持久化日志生成确定性成绩卡与跨会话回归对比——不跑基准、不用 LLM 裁判。
 - [kittimzhe/dsh-session-export](https://github.com/kittimzhe/dsh-session-export) — 会话证据报告：/transcript 从权威日志生成 HTML/Markdown/JSON 报告，/stats 输出终端统计卡，/archive 打包单会话 ZIP。
 - [kittimzhe/dsh-session-recall](https://github.com/kittimzhe/dsh-session-recall) — 确定性跨会话检索：`recall` 工具带显式范围控制地搜索历史会话日志。
+- [kumiiwaka/dsh-intercom](https://github.com/kumiiwaka/dsh-intercom) — 给已经开着的窗口装内线电话，不建团队、不生新会话，只让平级窗口互相递话（带跳数上限防环）。
 - [Kyf-eng/dsh-threads](https://github.com/Kyf-eng/dsh-threads) — Claude 式的项目与讨论串：项目主对话为能独立完成的任务开讨论串（可以点开直接对话的真实会话），默认最多 3 个同时运行，可各自在独立的 git worktree 里工作，做完把回报发回主对话。
 - [kyle123740/dsh-message-recall](https://github.com/kyle123740/dsh-message-recall) — 给会话里的每条消息加上「撤回 / 删除 / 删除此处及之后」悬浮按钮：以 append-only 墓碑让内容同时从模型上下文与对话界面消失，带空内容兜底，旧删除不会打回严格校验的 provider。已实测支持 DSH 2.0 桌面版。
 - [lacemou/dsh-session-ref](https://github.com/lacemou/dsh-session-ref) — 跨会话引用插件：在任意会话（含其他工作区）粘贴 @[label](dsh-session:…) 引用，宿主注入被引用会话的快照供模型阅读，并提供一键复制引用按钮。
@@ -4553,7 +4554,10 @@ dsh plugin --profile web add dshmarket
 - [liuhange789/data-asset-inspector#data-packaging](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-packaging) — 数据封装插件 — 产品说明书生成+合规附件
 - [liuhange789/data-asset-inspector#data-sensitivity-classification](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-sensitivity-classification) — 数据敏感度分类插件 — 自动识别敏感字段+分级（高/中/低/公开）
 - [liuhange789/data-asset-inspector#data-visualization](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-visualization) — 数据可视化插件 — 生成自包含HTML报告，支持五种图表(bar/comparison/pie/radar/flowchart)与两列布局
+- [liuhange789/data-asset-inspector#fin-aml-checker](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/fin-aml-checker) — 金融反洗钱合规检查插件，自动检测大额与可疑交易阈值、豁免规则与时效性，输出可审计的反洗钱合规报告，覆盖银行、保险、证券多业态。
+- [liuhange789/data-asset-inspector#geo-data-quality-inspector](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/geo-data-quality-inspector) — 地理空间数据质量检查插件，检测高程精度、拓扑一致性与坐标系统合规性，输出加权质量评分报告，满足GB/T 24356-2023国家标准。
 - [liuhange789/data-asset-inspector#gov-data-inspector](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/gov-data-inspector) — 政务数据巡检工具，覆盖数据完整率、准确率、时效率等核心指标。
+- [liuhange789/data-asset-inspector#research-data-provenance](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/research-data-provenance) — 科研数据溯源审计插件，审计血缘完整性、可复现性与FAIR原则合规性，输出溯源审计报告，支撑科研诚信与开放科学。
 - [LiuJiaCheng11/dsh-postman](https://github.com/LiuJiaCheng11/dsh-postman) — 用 9 个工具在 dsh 里管理 Postman 云端集合——列出、浏览、新增（单个或批量）、修改、删除接口，导出或整体覆盖集合。
 - [liwei9745/dsh-genbox-plugin](https://github.com/liwei9745/dsh-genbox-plugin) — 通过本地 GenBox 服务生图、改图、生视频，并用 ffmpeg 本地剪辑；自带零成本测试台。
 - [liwuzhan/agent-native-trade#dsh-plugin](https://github.com/liwuzhan/agent-native-trade/tree/main/packages/dsh-plugin) — 为模型原生交易提供目录检索、交易方联络、合同签名、结算协调、人工任务交接和签名评价回执工具。
