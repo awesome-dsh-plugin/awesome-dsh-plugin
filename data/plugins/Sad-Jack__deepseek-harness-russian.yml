@@ -1,0 +1,7 @@
+url: https://github.com/Sad-Jack/deepseek-harness-russian
+name: Sad-Jack/deepseek-harness-russian
+category: ui
+description:
+  en: 'Russian UI language pack for DeepSeek Harness 0.2.1-rc.5 with 2,909 strings based on official translations, version-specific compatibility fixes, and no app archive patching.'
+  zh: '基于官方翻译，为 DeepSeek Harness 0.2.1-rc.5 提供俄语界面，包含 2,909 条文本及版本兼容修正，不修改应用归档文件。'
+tarball: https://github.com/Sad-Jack/deepseek-harness-russian/releases/download/v1.0.1/deepseek-harness-russian-1.0.1.tgz
