@@ -2,6 +2,6 @@ url: https://github.com/Luminousyyh/skill-wb-exec
 name: wb-exec
 category: skill
 description:
-  en: Delegate bounded coding tasks to a headless CLI agent (WorkBuddy by default, or codex, claude, aider or a custom command) and collect a structured result plus the real diff, with a writable-path whitelist and an isolated git worktree.
-  zh: 把边界明确的编码任务派给无头 CLI 执行体（默认 WorkBuddy，也可选 codex、claude、aider 或自定义命令），回收结构化结论与真实 diff，并带可写路径白名单与独立 worktree 隔离。
+  en: Delegate bounded coding tasks to a headless CLI agent (WorkBuddy by default, or codex, claude, aider or a custom command) and collect a structured result plus the real diff, with a writable-path whitelist, a dispatch lock over overlapping paths, an isolated worktree and a structured needs_human flag.
+  zh: 把边界明确的编码任务派给无头 CLI 执行体（默认 WorkBuddy，也可选 codex、claude、aider 或自定义命令），回收结构化结论与真实 diff，并带可写路径白名单、重叠路径派发锁、独立 worktree 隔离与结构化 needs_human 标记。
 icon: https://raw.githubusercontent.com/Luminousyyh/skill-wb-exec/main/assets/icon.png
