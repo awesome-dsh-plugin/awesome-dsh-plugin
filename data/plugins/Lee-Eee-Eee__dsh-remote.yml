@@ -1,5 +1,5 @@
 url: https://github.com/Lee-Eee-Eee/dsh-remote
-name: Lee-Eee-Eee/dsh-remote
+name: dsh-remote-workspace
 category: remote
 description:
   en: 'Use SSH hosts and WSL distributions as remote DSH workspaces, with environment setup, model configuration porting, and the remote interface embedded locally.'
