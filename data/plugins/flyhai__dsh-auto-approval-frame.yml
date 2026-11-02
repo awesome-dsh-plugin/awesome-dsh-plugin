@@ -1,0 +1,6 @@
+url: https://github.com/flyhai/dsh-auto-approval-frame
+name: flyhai/dsh-auto-approval-frame
+category: security
+description:
+  en: 'Four-tier approval ladder for DSH tool calls: static rules, file and network scope, then AI review, with an audit trail and a settings UI. Script bodies are never sent to the model.'
+  zh: DSH 工具调用的四档审批梯：静态规则、文件与网络范围、再由 AI 评审，带审计台账和设置页；脚本正文从不外发给模型。
