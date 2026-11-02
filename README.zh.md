@@ -1724,6 +1724,7 @@ dsh plugin --profile web add dshmarket
 - [Zai-G/dsh-preset-workshop](https://github.com/Zai-G/dsh-preset-workshop) — 预设工作台：逐方案编辑人设、系统提示词段和工具描述，选择工具与技能，预览请求组成，并通过 JSON / YAML 导入导出配置。
 - [zclDragon/dsh-side-chat](https://github.com/zclDragon/dsh-side-chat) — Codex 风格 /side 侧边对话插件：在当前对话旁开一个浮动分叉面板，继承上下文、不打断主任务。
 - [zealot00/dsh-pet](https://github.com/zealot00/dsh-pet) — DSH Web UI 桌面宠物：精灵图动画、agent 状态联动、拖拽、闹钟（每天/一次）与番茄钟，皮肤下拉选择 + 预览。
+- [ZekaiShi/Orivii](https://github.com/ZekaiShi/Orivii) — 带动态表情的个人助手，提供独立聊天、跨聊天记忆、自然语言提醒和后台任务。
 - [zengxiangpeng123/dsh-sidebar-fold-zxp](https://github.com/zengxiangpeng123/dsh-sidebar-fold-zxp) — 把 DSH 左侧那排插件入口折成一行「插件列表」，支持按组归类与自定义顺序，把纵向空间还给工作区与会话列表；展开即恢复完整入口。
 - [zengxiaolou/dsh-annotation](https://github.com/zengxiaolou/dsh-annotation) — 划选回答文字就地加注释：保留原文引用加自己写的备注，每条在草稿里变成一枚胶囊，多条一起随消息发出；两条以上时输入框上方会多一个胶囊用来跳回原文或全部清除。胶囊需另装 dsh-paste-chip，否则每条注释在草稿里是一行纯文本。
 - [zengxiaolou/dsh-effort-dial](https://github.com/zengxiaolou/dsh-effort-dial) — DeepSeek Harness 输入框里的推理强度滑杆：按当前模型声明的思考档位拖动，松手把档位写入本会话；可选「自动区间」在工具报错后逐档上调，另有可选模型路由按任务类型挑 provider/model。
@@ -3037,6 +3038,7 @@ dsh plugin --profile web add dshmarket
 - [elfmingh/dsh-prompt-manager](https://github.com/elfmingh/dsh-prompt-manager) — 分层提示词档案：全局、按工作区、按会话三级条目按序注入系统提示词；可单独禁用或覆盖内置段落与运行期 context，覆盖效果有逐行 diff 对照；每条条目可限定只注入主代理、只注入子代理，或两者都注入；装配快照记录每一轮实际收到的提示词，子代理也包括在内。由 Web 面板与 `prompt_manager` 工具管理。
 - [FNOSP/fnos-dsh#dsh-codex-auth-plugin](https://github.com/FNOSP/fnos-dsh/tree/main/plugins/dsh-codex-auth-plugin) — 为 DeepSeek Harness 提供 ChatGPT 账号登录：走 Codex 浏览器 OAuth，无需 API Key、无需选择工作空间；把登录结果接到 pi-ai 的 Codex provider，可设置新会话默认的 Codex 模型与思考强度，并按账号自己的目录接口刷新模型列表，在输入区展示 5 小时与每周用量窗口。
 - [Freakz2z/dsh-catgirl-plugin](https://github.com/Freakz2z/dsh-catgirl-plugin) — DeepSeek Harness 的省 token 人格运行时：本地渲染猫娘风味，并支持渐进式工具 schema 披露。
+- [g4yzx/dsh-persona-cetacea](https://github.com/g4yzx/dsh-persona-cetacea) — 把可配置的鲸鱼娘人格注入 DeepSeek Harness 所有智能体的系统提示词。
 - [gosutry/dsh-persona-select#dsh-persona-select](https://github.com/gosutry/dsh-persona-select/tree/main/packages/dsh-persona-select) — 把人设正文注入系统提示词、把历史对话注入上下文，带设置页与对话选择器。
 - [gulagala001/dsh-persona-plugin](https://github.com/gulagala001/dsh-persona-plugin) — 创建、导入和管理人格预设，支持全局与单会话选择。
 - [HerTa-st/Herta-dsh](https://github.com/HerTa-st/Herta-dsh) — 把 Herta（黑塔）作为 DeepSeek Harness 智能体装入：携带人格与记忆提示词段的 preset、六个记忆与语音工具、区分内心与发言的叙述层、80 条随包语音、本地与 MiniMax 两条语音合成链路，以及两个用她自己的组件渲染会话的对话视图。
@@ -4690,12 +4692,14 @@ dsh plugin --profile web add dshmarket
 - [lznnnnn1998/dsh-artcraft#plugin-deckcraft](https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-deckcraft) — 让智能体驱动 DeckCraft：新建幻灯片、套用版式与主题、添加形状、图片、表格与图表，并保存为 .pptx 或导出 PDF。暴露 DeckCraft 的命令 id 与自带的 MCP server。需本机安装对应的 ArtCraft 应用 CLI，插件不附带应用本体。
 - [lznnnnn1998/dsh-artcraft#plugin-designcraft](https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-designcraft) — 让智能体驱动 DesignCraft：创建页面、置入与排布文字、组织图文框与主页，并导出 PDF。暴露 DesignCraft 的命令 id 与自带的 MCP server。需本机安装对应的 ArtCraft 应用 CLI，插件不附带应用本体。
 - [lznnnnn1998/dsh-artcraft#plugin-effectcraft](https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-effectcraft) — 让智能体驱动 EffectCraft：搭建合成、添加图层、设置属性与关键帧、计算表达式，并渲染单帧或视频。暴露 EffectCraft 的命令 id 与自带的 MCP server。需本机安装对应的 ArtCraft 应用 CLI，插件不附带应用本体。
+- [lznnnnn1998/dsh-artcraft#plugin-figcraft](https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-figcraft) — 让智能体驱动 FigCraft：创建画框、组件与自动布局，设置填充、描边与效果，搭建原型，并导出 PNG、SVG、PDF 或代码。同时暴露 FigCraft 的命令 id 与自带的 MCP server。
 - [lznnnnn1998/dsh-artcraft#plugin-filmcraft](https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-filmcraft) — 让智能体驱动 FilmCraft：创建工程与序列、导入素材、以脚本方式执行剪辑，并按预设或格式导出。暴露 FilmCraft 的命令 id 与自带的 MCP server。需本机安装对应的 ArtCraft 应用 CLI，插件不附带应用本体。
 - [lznnnnn1998/dsh-artcraft#plugin-gridcraft](https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-gridcraft) — 让智能体驱动 GridCraft：构建工作簿、写入并计算公式、设置区域格式、插入图表与表格，并读回单元格。同时暴露 GridCraft 的命令 id 与自带的 MCP server，可端到端地创建并检查工作簿。需本机安装对应的 ArtCraft 应用 CLI，插件不附带应用本体。
 - [lznnnnn1998/dsh-artcraft#plugin-lightcraft](https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-lightcraft) — 让智能体驱动 LightCraft：导入照片、应用冲图设置，并从照片库导出 JPEG 等格式。暴露 LightCraft 的命令 id 与自带的 MCP server。需本机安装对应的 ArtCraft 应用 CLI，插件不附带应用本体。
 - [lznnnnn1998/dsh-artcraft#plugin-pdfcraft](https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-pdfcraft) — 让智能体驱动 PdfCraft：读取并提取文本、把页面渲染成图片、旋转/删除/重排/合并/拆分页面，并检查伪脱敏。以命令与 MCP server 两种形式暴露 PdfCraft 的工具集。需本机安装对应的 ArtCraft 应用 CLI，插件不附带应用本体。
 - [lznnnnn1998/dsh-artcraft#plugin-photocraft](https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-photocraft) — 让智能体驱动 PhotoCraft：打开与新建文档、操作图层与选区、应用调整与滤镜、执行批处理动作，并保存或导出 PSD、PNG、JPG、TIFF 或 WebP。暴露 PhotoCraft 的命令 id 与自带的 MCP server。需本机安装对应的 ArtCraft 应用 CLI，插件不附带应用本体。
 - [lznnnnn1998/dsh-artcraft#plugin-soundcraft](https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-soundcraft) — 让智能体驱动 SoundCraft：加载工程、设置轨道与混音电平、插入插件、编辑 MIDI，并在不打开窗口的情况下 bounce 音频。暴露这个 DAW 的命令 id 与自带的 MCP server。需本机安装对应的 ArtCraft 应用 CLI，插件不附带应用本体。
+- [lznnnnn1998/dsh-artcraft#plugin-texturecraft](https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-texturecraft) — 让智能体驱动 TextureCraft：在网格上构建贴图集与图层、绘制、烘焙贴图，并导出 PBR 纹理。同时暴露 TextureCraft 的命令 id 与自带的 MCP server。
 - [lznnnnn1998/dsh-artcraft#plugin-vectorcraft](https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-vectorcraft) — 让智能体驱动 VectorCraft：创建与编辑路径和画板、设置文字与效果，并导出 SVG、PDF、AI 或 EPS。暴露 VectorCraft 的命令 id 与自带的 MCP server。需本机安装对应的 ArtCraft 应用 CLI，插件不附带应用本体。
 - [lznnnnn1998/dsh-artcraft#plugin-wordcraft](https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-wordcraft) — 让智能体驱动 WordCraft：新建文档、插入并排版文字、构建表格与页眉、跟踪修订与批注，并保存为 DOCX 或转换为 PDF、ODT、RTF、Markdown 等。暴露 WordCraft 的命令 id 与自带的 MCP server。需本机安装对应的 ArtCraft 应用 CLI，插件不附带应用本体。
 - [lzszq/dsh-scholar](https://github.com/lzszq/dsh-scholar) — 学术助手插件。
