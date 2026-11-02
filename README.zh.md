@@ -2214,6 +2214,7 @@ dsh plugin --profile web add dshmarket
 ### 🎭 主题与外观
 
 - [0nt-one/dsh-neo-skin](https://github.com/0nt-one/dsh-neo-skin) — 新粗野主义换肤皮肤：双方案（蓝统治 / 做旧报纸）随时切换，硬阴影 + 直角 + 2px 边框结构层，浅色/深色自适应。
+- [0xyxy/dsh-maid-atelier-tod](https://github.com/0xyxy/dsh-maid-atelier-tod) — 以 bundle 形式挂载的女仆工坊皮肤补丁：窗景按本机时间在破晓、黎明、早中、傍晚、晚上、深夜六档连续插值，立绘自带呼吸、重心移动、浮动与眨眼，可选裙摆与长发位移场；对已安装的皮肤生效，卸载即从 client.js.orig 还原。
 - [1015677515/dsh-theme-holo](https://github.com/1015677515/dsh-theme-holo) — 《狼与辛香料》赫萝主题：暖纸色配色、可关闭的 12 秒开场动画、右栏六段可切换待机动画、可拖动的浮动字标与探头、侧栏麦田图层，以及为 dsh-whale-widget 一键导入赫萝角色。
 - [137/dsh-chatgpt-style](https://github.com/137/dsh-chatgpt-style) — 把 DSH Web 的对话排版改成 ChatGPT 风格：768px 居中版心、用户消息右侧中性灰气泡、助手消息全宽 16/28 正文、带独立复制条的圆角代码块；另有行内语义标记（==已确认==、!!风险!!、++重点词++，裸的 4xx/5xx 自动命中）、行首 ✅/⚠️/💡 整行卡片、发送框旁「快速 / 思考」胶囊（经 ctx.modelDirectories 切换推理强度），以及左侧工作区高亮：选中会话带底色与左侧色条、工作区文件夹图标上色。
 - [4444Hao/dsh-codefall](https://github.com/4444Hao/dsh-codefall) — 为 DeepSeek Harness 添加黑客帝国风格的数字雨开屏动画、向两侧展开的矩形光门、可选的窗口恢复重播，以及可调色相的绿色界面主题。
@@ -2971,6 +2972,7 @@ dsh plugin --profile web add dshmarket
 
 ### 🆔 身份与通信
 
+- [0xyxy/dsh-purge](https://github.com/0xyxy/dsh-purge) — DSH 插件：宿主策略补丁、提示词与规则设置、诊断、校验更新与本机备份回滚，附带引擎层、代码层、提示词层的三层 bootstrap 安装器与自带的验证流程。
 - [379385796-sys/dsh-prompt-inject](https://github.com/379385796-sys/dsh-prompt-inject) — 基于 H1a3x 原作的 MIT 提示词模板管理适配版，采用原生 ConfigForms 和修订号校验保存，支持全局及工作区选择，已验证 Windows Desktop RC3/RC5 兼容性。不能与上游 H1a3x/dsh-prompt-inject 同装。
 - [58fly/dsh-language-guard](https://github.com/58fly/dsh-language-guard) — 把模型的思考过程、回复与工具调用描述锁定为指定语言（默认简体中文）：在 system prompt 首、中、尾注入约束段落，提供基础、强化、周期三档强度，可跟随 DSH 界面语言自动选择，设置页显示当前生效语言，并带侧栏快速切换。
 - [dsh-profile-stylist](https://github.com/7gzgn/dsh-profile-stylist) — 你说想要什么样的人设，它把文案写出来并把资料页填好：昵称/简介/标语/链接由宿主模型生成，头像取本地素材库（或你给的路径），再由站点自己的上传控件完成头像入库。**默认 dry-run**，只写资料字段 —— 不碰密码、邮箱、安全设置。
@@ -3926,6 +3928,7 @@ dsh plugin --profile web add dshmarket
 - [reshuibuduo/tmcra-plugin-deepseek-harness](https://github.com/reshuibuduo/tmcra-plugin-deepseek-harness) — 面向 DeepSeek Harness 的跨应用项目记忆，支持角色分离写回、可视化知识工作台、确认后纠错、会话控制、本地 Writer 与整理模型设置，以及免账号 Windows 本地安装预览。
 - [dsh-memory](https://github.com/RestRegular/dsh-memory/tree/main/packages/dsh-memory) — 一体化本地记忆：按作用域（会话、项目、全局或自定义名）各一个 JSONL 文件、作用域内按内容去重，五个模型工具（memory_save / memory_search / memory_list / memory_get / memory_forget），自动召回与硬性规则注入 agent 的 pre-step，并带一个设置面板。检索是词法 IDF 与本地向量后端的组合，向量后端可由面板一键安装并托管。
 - [rocco623/dsh-codex-memory](https://github.com/rocco623/dsh-codex-memory) — Codex V2 记忆流水线到 DeepSeek Harness 的移植：后台 agent 逐个抽取空闲会话，整合阶段在 git baseline diff 之后把它们合成一份 memory_summary.md，新会话注入这份摘要，被引用的记忆回流成使用计数。设置页可选模型、两个阶段的思考强度，以及空闲时长、保留天数、并发和超时等上限。
+- [RocoFish/deepseek-memory](https://github.com/RocoFish/deepseek-memory) — 带纵深加固的 dsh 长期记忆插件。两层存储（项目级 `.dsh-memory/` 与用户级 `$DSH_HOME/memory/`），每层就是一个可手改、可 diff 的纯 JSON 文件，条目与标签均有上限。写入原子（唯一临时文件 + rename，旧版本进入有上限的 history/ 备份），跨进程由带过期回收的 per-tier 锁串行化；磁盘 revision 校验拒绝丢失更新，绝不静默覆盖其他写入者。记忆文本以显式 untrusted-data 边界包装（伪造包装标签写入时剥除）以削弱记忆内容中的提示注入，加载时校验拒绝越界存储，tier 目录外的符号链接逃逸以 MEMORY_STORE_ESCAPE 拒绝。不做内容启发式过滤、不加确认步骤，无头自动巩固流程不受影响。安装：dsh plugin --profile web add github:RocoFish/deepseek-memory。
 - [Root-7-KHX/companion-memory](https://github.com/Root-7-KHX/companion-memory) — 《AI记忆》角色扮演伴侣记忆：每个对话独立的人格文档（每条设定可配 1~100 权重，默认允许 AI 小步润色角色性格与例句）、按说话人分别记录的好感度（多人对话）、AI 自我演化的性格/喜好/习惯、最近 48 小时对话检索、按伴侣记忆格式压缩长对话上下文的上下文压缩，以及按日期归档的本地知识库，支持按轮数或按 tokens 自动打包。
 - [rpegorov/drafta-mcp#dsh-drafta](https://github.com/rpegorov/drafta-mcp/tree/main/plugins/dsh-drafta) — 通过 MCP 把 Drafta 笔记应用接到 DeepSeek Harness，让智能体可以检索、读取并写入你本地 Drafta 库中的笔记。
 - [Rxiain/dsh-openviking](https://github.com/Rxiain/dsh-openviking) — 面向 DeepSeek Harness 的 OpenViking 语义检索、资源管理、自动召回（user + agent 双空间）与会话记忆插件：基于 viking:// URI 的 memsearch/memfind/memread/membrowse/memgrep/memglob 检索工具、memadd/memremove 资源管理、memqueue 队列状态、memcommit 会话捕获，以及 memlearn 技能手册沉淀。
@@ -4816,6 +4819,7 @@ dsh plugin --profile web add dshmarket
 - [RoseSamaras/reaudit-ai-plugin#dsh-reaudit](https://github.com/RoseSamaras/reaudit-ai-plugin/tree/main/packages/dsh-reaudit) — 通过内置的 @deepseek-ai/dsh-mcp-client 桥接挂载托管的 Reaudit MCP 服务（https://mcp.reaudit.io/mcp），用 REAUDIT_API_KEY 做 bearer 鉴权：238 个 mcp__reaudit__* 工具，覆盖品牌在 AI 回答里的可见度（ChatGPT、Perplexity、Gemini、Google AI Overviews）、竞品与引用分析、站点审计、内容生成与社媒排期。
 - [Rosynb666/dsh-whale-catch](https://github.com/Rosynb666/dsh-whale-catch) — 右侧栏「鱼篓」不用 agent 登记，自动汇总本场会话产出或改动的文件，支持预览、一键打包 zip 与归档。
 - [rotifer-protocol/rotifer-playground#rotifer](https://github.com/rotifer-protocol/rotifer-playground/tree/main/plugins/rotifer) — Rotifer 协议的技能包加 Rotifer MCP 服务，以 DSH 自带的技能提供器与 MCP 客户端实例的形式挂载：搜索 Gene、按 Arena 排名比较、在本地项目里安装或回滚 Gene，并创建和运行本地 Agent。MCP 服务锁定版本，只开放 evolve 工具集，不含发布与登录。
+- [Royalsan/dsh-github-trending](https://github.com/Royalsan/dsh-github-trending) — Harness Web UI 里的 GitHub 趋势雷达：抓取日榜/周榜/月榜（可按编程语言筛选），把每个仓库分析成简介、star 增量、技术栈、亮点与风险，渲染为可筛选、可分页的卡片面板，并注册 github_trending 工具与 /github-trending 命令。
 - [Roykf/dsh-tool-weather](https://github.com/Roykf/dsh-tool-weather) — 面向模型的天气工具，基于公开 Open-Meteo API 查询当前天气与 7 天预报，无需 API Key。
 - [roymina/dsh-cad](https://github.com/roymina/dsh-cad) — 只读 CAD 工具：查看、提取 DWG/DXF 图纸，导出 SVG/PNG 预览或转换 DXF。
 - [ruaibeite/dsh-undo](https://github.com/ruaibeite/dsh-undo) — 按轮次回退工具写入/编辑造成的文件改动：落盘前先快照，模型（undo 工具）、人（/undo 命令）或助手消息动作行里的按钮都能一次退回一整轮改动过的所有文件。快照在进程内写入、不 fork shell，因此在 workspace-write 这类受限会话里无需额外权限放宽。
@@ -5845,6 +5849,7 @@ dsh plugin --profile web add dshmarket
 ### 🧩 技能包
 
 - [01NGVI-QINGYI/no-ai-style](https://github.com/01NGVI-QINGYI/no-ai-style) — 学术与专业写作润色技能，输入框三选一：检查——只检查并给建议；询问能否提交时补充结论，不改原文。润色——改善表达，保留原意、事实和引用。起草——根据现有材料起草，不补充材料外的事实。
+- [0xyxy/codex-collab](https://github.com/0xyxy/codex-collab) — 把 codex-collab 技能装进 DSH 的技能包：把本地 OpenAI Codex CLI 当供应商而非顾问来派活——每次派活附验收标准与自测脚本，本地跑测试验收，失败把原始报错原样丢回去；含并行派活与单会话多轮续接。
 - [1368546410qq/dsh-video-skills](https://github.com/1368546410qq/dsh-video-skills) — 在 DSH 设置里浏览 awesome-claude-video-skills 目录（373 条），把选中的技能装进 ~/.claude/skills 和/或 ~/.dsh/skills：下载该仓库的 GitHub 归档并复制技能目录，不执行仓库里的任何代码。安装以后台任务运行、显示实时进度（已下载字节与已复制文件数）并可取消；本插件装上的技能可以卸载，没有本插件标记的目录保持不动。列表显示 GitHub 报告的仓库体积近似值。同样的能力也以 video_skill_search、video_skill_install、video_skill_uninstall 三个工具暴露给智能体。
 - [2333hutao/dsh-ls125-uv-probe](https://github.com/2333hutao/dsh-ls125-uv-probe) — 为林上 LS125 紫外辐照计与 UVALED-X3 探头提供技能：逆向出的 9600 8N1 链路（28 字节帧、CRC-16/MODBUS、轮询与清零命令）、抓取解码工具链，以及已验证的 STM32F103 主机固件，可在脱离原装表的情况下读取探头。全部代码与文档均由 AI agent（DeepSeek Harness）编写。
 - [439436269-ctrl/dsh-video-pipeline](https://github.com/439436269-ctrl/dsh-video-pipeline) — 把一条短视频生产流水线的 19 个 skill（1 总入口 + 1 编排 + 17 原子）内置进 agent 技能目录：中文配音读音校正、文生图与文生视频、图片运镜、成片合成、封面、成片核验、数据复盘、四平台发布。本包只提供 skill 与脚本，不安装任何工具：要真跑通流水线，还得本机装好 ffmpeg、Python 3 + Pillow、Node.js 与 playwright，自备 B 站 biliup 凭据和视频号 / 抖音 / 小红书登录态，并把 skills/*/scripts/ 里的占位符改成自己的值。使用者自己的同名 skill 优先级更高。
