@@ -2,5 +2,5 @@ url: https://github.com/pf-sjtu/dsh-early-stop-guard
 name: pf-sjtu/dsh-early-stop-guard
 category: agi
 description:
-  en: 'Keeps a DSH agent turn open when the model narrates its next action without calling a tool: on agent/turn-stopping it replays that turn log, classifies the trailing message with regexes, and asks a decision-model chain (System One, an OpenAI-compatible endpoint, or the session LLM) whether the turn really finished.'
-  zh: '模型只叙述下一步动作、没调用工具就收尾时保住 DSH 的 agent 回合：插件在 agent/turn-stopping 回放该回合日志，先用正则分类末条消息，再交给决策模型链（System One、OpenAI 兼容端点或当前会话 LLM）判断回合是否真的结束。'
+  en: 'Keeps a DSH agent turn open when the model ends it by narrating work it has not done: on agent/turn-stopping the guard replays the turn log, classifies the trailing message with regexes (wait / ask / done end the turn there; only a promise of pending work is escalated), and asks a decision-model chain (System One three-question noul, an OpenAI-compatible endpoint, an OpenAI Decisions endpoint, or the session LLM) whether the turn is really over, steering it on when the verdict says it is not.'
+  zh: '模型叙述了「接下来要做什么」却什么都没做就结束回合时，保住 DSH 的 agent 回合：插件在 agent/turn-stopping 回放该回合日志，用正则分类末条消息（wait / ask / done 直接结束回合，只有承诺了未完成工作的消息才继续），再由决策模型链（System One 三题 noul、OpenAI 兼容端点、OpenAI Decisions 端点或当前会话 LLM）判定回合是否真的结束，未结束时用 agent.steer 推进同一回合。'
