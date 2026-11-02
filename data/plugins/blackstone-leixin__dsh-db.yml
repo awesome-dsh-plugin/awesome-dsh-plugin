@@ -1,0 +1,6 @@
+url: https://github.com/blackstone-leixin/dsh-db
+name: blackstone-leixin/dsh-db
+category: tools
+description:
+  en: MySQL and PostgreSQL connection manager with a schema tree, table search, SQL console with completion, and four agent tools for listing connections, searching tables, inspecting structure, and running queries.
+  zh: MySQL/PostgreSQL 数据库连接管理，带库表字段树、表名搜索、SQL 补全控制台，以及列出连接、搜索表、查看结构和执行 SQL 的四个 Agent 工具。
