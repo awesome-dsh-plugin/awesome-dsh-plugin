@@ -2,6 +2,6 @@ url: https://github.com/tia-forge/dsh-tiaforge
 name: tia-forge/dsh-tiaforge
 category: tools
 description:
-  en: Registers five TIA Portal skills (Siemens PLC docs lookup, ladder-logic generation, SimaticML-to-PNG ladder rendering, scan-cycle simulation with PASS/FAIL scenarios, and a local gateway that drives a real TIA Portal project) and wires the matching MCP endpoints, so an agent can go from a question to compiled, verified PLC code.
-  zh: 一次装齐西门子博途（TIA Portal）的五项能力——官方文档检索、梯形图生成、梯形图渲染成图核对、逐扫描仿真与 PASS/FAIL 验收、操作真实工程的本机网关——并把对应 MCP 端点一并接好，让智能体从提问一路走到编译通过的 PLC 代码。
+  en: 'Bundles five TIA Portal skills (Siemens PLC docs lookup, ladder-logic generation, SimaticML-to-PNG rendering, scan-cycle simulation with PASS/FAIL scenarios, and a TiaLink gateway skill for driving a real TIA Portal project) and wires five MCP endpoints. Requires TiaLink (paid; Windows + TIA Portal V19/V20 + Openness) for real-project work, API keys for the four cloud services (100 free calls each, then paid; rendering is billed per call even on failure), Node 22+, and network access; program snippets are uploaded to tia.hubwiz.com.'
+  zh: '一次装齐西门子博途（TIA Portal）的五项技能（官方文档检索、梯形图生成、SimaticML 转 PNG 渲染、逐扫描仿真与 PASS/FAIL 验收、操作真实工程的本机网关）并接好五个 MCP 端点。操作真实工程需另装付费的 TiaLink（Windows + 博途 V19/V20 + Openness 用户组）；四个云端服务需 API Key（各 100 次免费，之后付费；渲染每次计费且失败也扣），且需 Node 22+ 与联网；程序片段会上传到 tia.hubwiz.com。'
 icon: https://raw.githubusercontent.com/tia-forge/dsh-tiaforge/main/assets/icon-180.png

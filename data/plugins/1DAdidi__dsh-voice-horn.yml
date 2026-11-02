@@ -2,5 +2,5 @@ url: https://github.com/1DAdidi/dsh-voice-horn
 name: 1DAdidi/dsh-voice-horn
 category: voice
 description:
-  zh: "每个对话右下角悬浮小喇叭：AI 回复完成后 edge-tts 后台静默朗读摘要，全程无前台窗口。开关状态每个对话独立记忆。"
-  en: "Floating TTS speaker in each conversation corner. AI replies are silently read aloud in the background using edge-tts, no popup windows. Toggle state remembered per conversation."
+  en: 'Floating TTS speaker in each conversation corner: when an AI reply finishes, edge-tts reads the summary aloud in the background with no popup windows; the toggle is remembered per conversation. Requires Windows, Python 3.9+ with the edge-tts package installed, and network access to Microsoft''s Edge TTS service; summary is the default mode.'
+  zh: '每个对话右下角悬浮小喇叭：AI 回复完成后由 edge-tts 在后台静默朗读摘要，全程无前台窗口；开关状态每个对话独立记忆。需要 Windows、Python 3.9+ 并安装 edge-tts，且需联网调用微软 Edge TTS 在线服务；默认朗读摘要。'
