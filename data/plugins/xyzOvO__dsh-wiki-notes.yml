@@ -1,0 +1,7 @@
+url: https://github.com/xyzOvO/dsh-wiki-notes
+name: xyzOvO/dsh-wiki-notes
+category: memory
+tarball: https://github.com/xyzOvO/dsh-wiki-notes/releases/download/v1.0.0/dsh-wiki-notes-1.0.0.tgz
+description:
+  en: 'Read-only retrieval over a Markdown notes vault: one `wiki_recall` tool that returns the matching section in full with page-level citations, plus vault health checks and a page skeleton for writing a good answer back.'
+  zh: '在本地 Markdown 笔记库里只读检索：一次调用返回命中小节正文与页级出处，另带库健康检查与「把好答案回写成新页」的骨架。'
