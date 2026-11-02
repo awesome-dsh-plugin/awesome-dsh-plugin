@@ -2,5 +2,5 @@ url: https://github.com/fanyingnie2163663/dsh-whale-care
 name: fanyingnie2163663/dsh-whale-care
 category: tools
 description:
-  en: "Care engine for DeepSeek Harness: teaches the assistant to actually care about one person, with weather as its first source — feels-like temperature and humidity, clothing/umbrella advice, a daily care push (switchable, follows the user routine), extreme-weather alerts and reminders. Reminders and alerts are evaluated when the agent wakes; a host such as qq-bridge can wake it on schedule. Preferences stay on the local machine."
-  zh: "关心引擎：教 agent 怎么真正关心一个人，天气是第一个来源——体感温度与湿度、穿衣带伞建议、每日主动关心（可开关、跟随作息）、极端天气预警与提醒。提醒与预警在 agent 醒来时评估，可由 qq-bridge 这类宿主定时唤醒；偏好只存本机。"
+  en: "Weather care for DeepSeek Harness: turns a forecast into one sentence you can send — clothing and umbrella advice from feels-like temperature, humidity and air quality, adjusted for how cold-sensitive the user is and how they commute. Also a switchable daily care push, extreme-weather alerts and reminders, evaluated when the agent wakes (a host such as qq-bridge can wake it on schedule). Preferences stay on the local machine."
+  zh: "天气关心：把预报变成一句能直接发出去的话——按体感温度、湿度、空气质量给穿衣与带伞建议，并照顾对方怕冷怕热、骑车还是开车。另有每日主动关心（可开关）、极端天气预警与提醒，在 agent 醒来时评估，可由 qq-bridge 这类宿主定时唤醒；偏好只存本机。"
