@@ -1,0 +1,6 @@
+url: https://github.com/twoweeks1995/dsh-appdata-scanner
+name: twoweeks1995/dsh-appdata-scanner
+category: tools
+description:
+  en: 'Read-only Windows AppData analyzer: click the sidebar icon to drill down explorer-style through directories, each row showing recursive size, file count and last-modified time, plus the software that created it and a delete-worthiness verdict built from a knowledge base, mixed-directory splitting, then heuristics, with unmatched guesses marked as such. Scans directories only and never reads file contents; it ships no delete action, and unknown directories can be looked up online with a model summary and cited sources.'
+  zh: '只读的 Windows AppData 分析插件：点侧边栏图标后以资源管理器式逐层下钻，每行显示目录的递归体积、文件数与最后修改时间，并说明由哪个软件生成、作何用途，按「知识库 → 混合目录拆分 → 启发式 → 标注为推测」的顺序给出可删建议；只统计目录、不读取文件内容，也不提供任何删除操作，未知目录可按需联网检索并给出带摘要的来源。'

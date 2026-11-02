@@ -1,0 +1,6 @@
+url: https://github.com/twoweeks1995/dsh-subagent-setup
+name: twoweeks1995/dsh-subagent-setup
+category: model
+description:
+  en: 'Named model routes for subagent delegations, configured from a settings page: each alias binds a subagent provider, model and optional reasoning effort, token cap, agent preset, tags, plus a "when to use" line the model reads to pick it, so a delegation names only the alias. Adds five tools (delegate, list routes, edit config, wait, release), shows the route a child actually ran on in its session header, lets each UI element be switched off, and keeps all configuration in one local JSON file instead of YAML.'
+  zh: '给子智能体配命名模型路由：每个别名绑定子智能体代理、模型与可选的思考档位、令牌上限、Agent 预设、标签，并写清「何时使用」供模型选路，委派时只写别名。插件提供委派、查目录、改配置、等后台、释放五个工具，在设置页完成全部配置（两级下拉、逐项校验），在子代理会话头部显示其实际运行的路由，界面元素均可单独停用；配置存于本地 JSON，不需要改任何 YAML。'
