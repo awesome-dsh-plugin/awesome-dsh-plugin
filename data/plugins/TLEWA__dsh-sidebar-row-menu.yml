@@ -1,0 +1,8 @@
+url: https://github.com/TLEWA/dsh-sidebar-row-menu
+name: TLEWA/dsh-sidebar-row-menu
+category: ui
+description:
+  en: 'Right-click menus for DSH sidebar rows: workspace rows get new session, rename, open in VS Code, open in Explorer, copy path and delete; session rows open their native menu at the pointer, extended with VS Code and Explorer entries.'
+  zh: 'DSH 侧边栏行右键菜单：工作区行可新建会话、重命名、在 VS Code 打开、在资源管理器中打开、复制路径和删除；会话行在指针处展开原生菜单，并追加 VS Code 与资源管理器两项。'
+icon: https://raw.githubusercontent.com/TLEWA/dsh-sidebar-row-menu/main/assets/icon-180.png
+tarball: https://github.com/TLEWA/dsh-sidebar-row-menu/releases/latest/download/dsh-sidebar-row-menu.tgz
