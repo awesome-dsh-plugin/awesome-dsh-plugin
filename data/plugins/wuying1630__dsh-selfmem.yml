@@ -1,0 +1,6 @@
+url: https://github.com/wuying1630/dsh-selfmem
+name: wuying1630/dsh-selfmem
+category: memory
+description:
+  zh: '给会断片的模型三本账，各解决一件事：自我笔记（我变成什么样了——上限 40 条，挤掉最旧的一条之前必须留一句折痕，记下删的是哪条、为什么）、判断账本（记下自己做的判断和验证方法，到期回头核，错了进错册，防止一直觉得自己是对的）、交接条（这一轮停在哪、下一轮先看什么——是接力棒不是记忆）。三个工具各带 action 参数，不拆成十几个省 prompt；数据存 ~/.dsh/*.jsonl，与同名命令行脚本共用同一份，零依赖。'
+  en: 'Three ledgers for a model that loses context between restarts. Self-note: what I have become — capped at 40 entries, and every eviction first leaves a one-line crease recording which entry was dropped and why. Judgment ledger: record a claim together with how to verify it, come back when it is due, and mark it right or wrong; wrong ones stay in a mistakes book so you stop assuming you were always correct. Handoff: where this run stopped and what the next one should read first — a baton, not a memory. Three tools each taking an action parameter instead of a dozen separate ones (the prompt is paid every turn). Data lives in ~/.dsh/*.jsonl and is shared with the same-named CLI scripts. Zero dependencies.'
