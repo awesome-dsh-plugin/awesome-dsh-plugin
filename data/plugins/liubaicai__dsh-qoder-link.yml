@@ -1,0 +1,7 @@
+url: https://github.com/liubaicai/dsh-qoder-link
+name: liubaicai/dsh-qoder-link
+category: model
+description:
+  en: Connect Qoder models to DSH through the official Qoder CLI via native ACP stdio, covering both qodercli (international) and qoderclicn (China), without reverse-engineered APIs or ban risk.
+  zh: 无需逆向模型 API，无封号风险，支持 qodercli 国际版 和 qoderclicn 中国版，通过原生 ACP stdio 接入。
+icon: https://raw.githubusercontent.com/liubaicai/dsh-qoder-link/main/assets/qoder.png
