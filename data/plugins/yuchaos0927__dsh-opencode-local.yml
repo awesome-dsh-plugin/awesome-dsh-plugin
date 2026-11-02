@@ -1,0 +1,7 @@
+url: https://github.com/yuchaos0927/dsh-opencode-local
+name: yuchaos0927/dsh-opencode-local
+category: model
+description:
+  en: "Drive the OpenCode client already installed on your machine through its loopback opencode serve API, so its free-tier models work in DSH. Starts the child process lazily on first use, keeps DSH's own tool system, and requires no API key."
+  zh: "通过本机已安装的 OpenCode 客户端的本地回环 opencode serve 接口接入其免费模型：首次使用时才懒启动子进程，工具声明与执行仍由 DSH 负责，无需 API Key。"
+icon: https://raw.githubusercontent.com/yuchaos0927/dsh-opencode-local/main/assets/icon-180.png
