@@ -1,0 +1,5 @@
+url: https://github.com/lucagiftzek/dsh-workspace-rail
+name: lucagiftzek/dsh-workspace-rail
+category: ui
+description:
+  en: "Replaces the DSH sidebar list with a workspace rail: pinned chats and folders, projects that are folders with their own AGENTS.md and files, a virtualized Recents list ordered by the last finished turn, a project_search tool, unread markers, a collapsed icon column with an unread count and a live browser tab title."
