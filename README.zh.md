@@ -1106,6 +1106,7 @@ dsh plugin --profile web add dshmarket
 - [nirvanaslash/dsh-artifact-preview](https://github.com/nirvanaslash/dsh-artifact-preview) — 在对话中新增产出文件卡片行，并提供可拖拽分屏的产物预览面板，支持 Markdown、源码、CSV、JSON、图片、HTML，以及本地端口预览。
 - [Nishikinov/dsh-sidebar-settings-button](https://github.com/Nishikinov/dsh-sidebar-settings-button) — 在侧边栏顶部 Plugins 之前新增「设置」一行，点击即打开原生设置面板。
 - [Nixz0824/dsh-composer-alcove](https://github.com/Nixz0824/dsh-composer-alcove) — 阅读时把输入栏收到底部 Home 指示条，悬停预览、点击钉住或上滑还原。左右圆角弧线把原来的输入框停到两侧留白。
+- [NKUhan123/dsh-jupyterlab](https://github.com/NKUhan123/dsh-jupyterlab) — DSH 的 JupyterLab 风格 notebook：代码与输出左右分栏并可拖动，长 cell 滚动时输出贴住视口，支持 Jupyter 快捷键（a/b/dd、m/y、Shift+Enter 与 Ctrl+Enter 区分）、左侧剪刀删除 cell、py/md 标签切换代码与 Markdown。基于 @beihaizb/dsh-notebook 的修改版。
 - [nnnanann/Deepseek-harness-freeze-content-on-window-resize](https://github.com/nnnanann/Deepseek-harness-freeze-content-on-window-resize) — 固定 DSH Web GUI 的正文列宽度，并在窗口缩放后把阅读位置对回原处。
 - [NoCandles/dsh-stock-bar](https://github.com/NoCandles/dsh-stock-bar) — 钉在 DSH 窗口顶部的常驻行情条：自选股、带股数与成本价的持仓、盈亏、K 线与分时图、五档盘口、交易流水、价格预警，以及用 DSH 已配置模型流式生成的 AI 复盘。
 - [NOirBRight/dsh-codex-sidebar](https://github.com/NOirBRight/dsh-codex-sidebar) — DSH 的 Codex 风格详情侧栏：提供 Files、Review、Browser 与 Terminal 面板、对话文件链接和 diff 统计、批注，以及 Host 管理的浏览器控制。
@@ -3163,6 +3164,7 @@ dsh plugin --profile web add dshmarket
 - [cyh3436332528/dsh-plugin-session-purge#plugin](https://github.com/cyh3436332528/dsh-plugin-session-purge/tree/main/plugin) — 永久删除 DSH 会话（而非仅归档），级联清理它的日志目录、投影缓存、工作区记账与子会话（子代理）。提供设置页面板：按工作区分组，显示体积、时间与「打开中 / 已归档 / 子会话 N / 无工作区」标记，支持筛选与批量删除，每条删除都在行下方内联二次确认。
 - [czm15053/dsh-peer-link](https://github.com/czm15053/dsh-peer-link) — 让 dsh 和 Claude Code 会话直接互发消息，附带可点击的会话列表卡片（搜索/刷新/弹窗发送）。
 - [d0ublecl1ck/dsh-session-radar](https://github.com/d0ublecl1ck/dsh-session-radar) — DSH Web 侧边栏的未读、待办与状态读数中枢：铃铛按顺序定位未读会话，快捷键依次走到正在等你输入的会话，⌘⇧, / ⌘⇧. 在访问过的对话之间前后切换；另有总览把未读与待决策会话分两区铺开；底部一行六项会话状态读数，每个图标都能点，点了跳到下一个同类会话；账本落在 host 半边，重启也不丢——未读会话重启后仍然显示行内绿色小标，启动时还会把上次被切断的会话列成清单，一键重发续跑消息。
+- [Da0Mine/dsh-talk-map](https://github.com/Da0Mine/dsh-talk-map) — 会话地图：每个对话都是白板上的一张卡片——工作区是会自动折叠溢出的框，点开是抽屉；卡片位置摆好就不会被打乱；卡片之间的连线承载上下文（拉一条就能带摘要分叉），每张卡还有运行中 / 等你回复 / 待查看 / 已中断的状态灯。
 - [DDDMUC/dsh-delete-turn](https://github.com/DDDMUC/dsh-delete-turn) — DSH 消息删除插件：按条删除用户消息、按步骤删除思考与工具调用、按整条回复删除助手回答，经官方 surface-replace 契约从模型上下文移除并从可见转录隐藏，原始 append-only 日志不改写。
 - [deepsleepAquarium/dsh-whale-post#bus](https://github.com/deepsleepAquarium/dsh-whale-post/tree/main/packages/bus) — DeepSeek Harness 会话之间的文件信箱：每封信都用 HMAC 与正文摘要封好，收件人通过名单接口解析，默认离线投递——投不出去的信留在信箱里等人来收，不会丢。
 - [DelayNooMore/dsh-plugin-session-trash](https://github.com/DelayNooMore/dsh-plugin-session-trash) — 会话回收站：移入回收站、恢复或永久删除会话。
@@ -3317,6 +3319,7 @@ dsh plugin --profile web add dshmarket
 - [kagurazakayashi/dsh-delete-session](https://github.com/kagurazakayashi/dsh-delete-session) — 在侧边栏会话行菜单中加入「删除会话」项，确认方式可配置（再次点击、对话框确认或直接删除），正在执行任务的会话会被拒绝删除。
 - [kaieye/dsh-AIR](https://github.com/kaieye/dsh-AIR) — DSH Web 输入框增强：跨会话召回已发送提示词、用 Ctrl+R 搜索并还原富草稿，以及提供停靠式 /btw 或 /side 旁路会话。
 - [kanchengw/dsh-assembly.resume](https://github.com/kanchengw/dsh-assembly.resume) — 将本地 Codex CLI/Desktop、Claude Code CLI 和 Claude Desktop 会话导入 DSH：按项目分组，保留语义历史和工具活动，可绑定原工作区或新工作区，并由 DSH Agent 继续对话。
+- [kanmanJO/dsh-cross-session-ref](https://github.com/kanmanJO/dsh-cross-session-ref) — 跨会话引用卡片：把任意会话里的问答卡片拖到另一个会话并保留下来；在目标会话提问时，被拖入卡片的提问、当时的回答与附件会作为「本会话更早的对话记录」注入 Prompt，模型可直接引用。
 - [keepermttl/dsh-archive-viewer](https://github.com/keepermttl/dsh-archive-viewer) — DSH Web 归档会话管理器：支持标题/内容搜索、标签筛选、阅读日志、恢复会话与 ZIP 导出。
 - [kevenliu3/dhs-plugins#dsh-session-monitor](https://github.com/kevenliu3/dhs-plugins/tree/main/dsh-session-monitor) — 侧边栏徽标与面板，跨工作区聚合各会话的待处理、运行中、已完成状态，点击即可打开对应会话。
 - [kialajin-l/DSH_Plus#dsh-codex-import](https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-codex-import) — 把 Codex / Claude Code 历史会话一键导入 DeepSeek Harness：同路径项目自动归并进现有工作区，支持交接书摘要或全量转录，导入历史可回滚。
@@ -7008,6 +7011,7 @@ dsh plugin --profile web add dshmarket
 - [thiscp/dsh-push#host-plugin](https://github.com/thiscp/dsh-push/tree/main/host-plugin) — DSH 手机推送：进程内挂载提问 seam，把待答问题经 ntfy relay 推到手机；手机作答会以 user 消息回灌给 agent。该回灌需要把 `tool-ask-user` 配成 `mode: timed`，默认的 `mode: legacy` 只推送通知。
 - [ThreeBody6666/dsh-im-hub](https://github.com/ThreeBody6666/dsh-im-hub) — 多平台 IM 网关：飞书（Lark）WebSocket 长连接（无需公网）、企业微信 AES 加密回调、Telegram 长轮询；每会话独立 agent、白名单访问、Web GUI 可视化设置卡片。
 - [tianhengzhibei/dsh-approval-ding](https://github.com/tianhengzhibei/dsh-approval-ding) — DeepSeek Harness 请求审批、或向你提问时响一声“叮”，人不在窗口前也能立刻察觉。
+- [TianLingBy/dsh-task-ping](https://github.com/TianLingBy/dsh-task-ping) — DSH 任务提醒：每轮对话结束、或出现待审批 / 待回答 / 待确认计划时弹系统通知；提示音走 Windows 通信播放端点，由系统按「通信活动」自动压低其他媒体并在结束后恢复，不写任何应用的音量；可选再用 SMTP 发一封邮件到手机（465 隐式 TLS，或 STARTTLS 且仅在升级后才发送凭据）。无运行时依赖：声音助手是 PowerShell 脚本，邮件客户端是纯 Node 实现。
 - [tjiisztiuv/dsh-plugin-discord](https://github.com/tjiisztiuv/dsh-plugin-discord) — 与桌面端或 dsh web 运行在同一个 Host 里的 Discord 桥接，无需单独进程或 profile：在私信或线程里与任意工作区的会话对话，接入桌面端正在用的会话，工具审批和模型提问在 Discord 与桌面端谁先答谁生效。
 - [ttmouse/dsh-dingtalk-channel](https://github.com/ttmouse/dsh-dingtalk-channel) — 钉钉 IM 双向 channel（Stream 模式）：每条单聊/群聊驱动一个 agent，思考与回复通过 WebSocket 长连接回流消息，免公网回调。
 - [unifilitence/dsh-notify-say](https://github.com/unifilitence/dsh-notify-say) — 为 DSH 提供 Windows 桌面通知，默认把回合结果读出来：Windows TTS 零下载即可用，另有 13 个 VOICEVOX 语音包可在设置页下载。完成提醒会等子代理与后台任务结束后再响；审批、提问、出错立即提醒。语音包从 GitHub 下载，下载前需确认使用条款。
@@ -7046,6 +7050,7 @@ dsh plugin --profile web add dshmarket
 - [YE-ZINAN/dsh-quiet](https://github.com/YE-ZINAN/dsh-quiet) — DeepSeek Harness 的注意力闸门：把运行事件分成「卡住 / 终态 / 中间进展」三级，只对前两级提醒；专注块内的非阻塞事件一律攒着，块结束时一次性交付。提醒只闪任务栏按钮——不弹通知、不出声、不抢焦点。仅 Windows。
 - [YeqingTang/dsh-task-watcher-plugin](https://github.com/YeqingTang/dsh-task-watcher-plugin) — Windows 托盘任务监视器：部署并管理独立监视程序——四态托盘图标（灰=未连接、绿=空闲、橙=运行中、红=有待处理）、逐任务实时面板（时长/速度/token）、完成与结局通知。设置→插件内启停开关；监视器独立进程运行，DSH 重启不影响。
 - [yeruizhi/dsh-lark-meeting-notifier](https://github.com/yeruizhi/dsh-lark-meeting-notifier) — 飞书会议提醒：一个只有副作用的 dsh-plugin，在你跟 AI 聊得神魂颠倒时提醒你「不得不去跟碳基生命开会了」。
+- [yimengsuper2432/dsh-notice](https://github.com/yimengsuper2432/dsh-notice) — DSH 每轮任务结束时弹一条系统通知：完成 / 出错 / 中断分别开关，可设最短耗时、子任务静默、只在窗口不在前台时提示。Windows / macOS / Linux 通用，页面开着走页面通道，否则回退 PowerShell toast / osascript / notify-send；点通知把 DSH 拉回前台。
 - [YiMlT/dsh-notify-yimit](https://github.com/YiMlT/dsh-notify-yimit) — DeepSeek Harness事件的Windows系统和自定义桌面通知：任务已完成、失败、正在运行、等待批准和等待答复。单击以跳转到会话。
 - [yinsang0910-star/dsh-feishu#dsh-plugin](https://github.com/yinsang0910-star/dsh-feishu/tree/main/packages/dsh-plugin) — 用四步向导把飞书接上：会话自动发现、不用手抄 32 位 id，扫码创建应用，再跑九项实时自检——哪项不通过就直接给出该开通的 scope。它驱动一个 25 工具的 MCP server，其中包括把本地文件发进会话、把消息附件取回本地。MCP server 需另行安装：从 dsh-feishu 的 Releases 取 dsh-feishu-mcp-<版本>.mjs（或 npx github:yinsang0910-star/dsh-feishu-mcp）；装好之前自检会显示 MCP 未挂载，也没有任何 mcp__feishu__* 工具。
 - [yjrqz777/dsh-qqbot-lite](https://github.com/yjrqz777/dsh-qqbot-lite) — 将 QQ 私聊和群聊接入 DeepSeek Harness Desktop，支持按会话切换人格、交互式提问和可选图片理解。
