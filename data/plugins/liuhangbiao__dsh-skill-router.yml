@@ -1,0 +1,7 @@
+url: https://github.com/liuhangbiao/dsh-skill-router
+name: liuhangbiao/dsh-skill-router
+category: skill
+description:
+  en: 'Replaces the full skill catalog with keyword-based discovery, per-skill enable/disable switches, and system-prompt section controls. Disabled skills are refused by the skill tool, and their slash-command invocations are blocked at pre-step.'
+  zh: '用关键词匹配替代完整技能目录，支持逐个技能的启停开关与系统提示词段落开关。被停用的技能会被 skill 工具拒绝，其斜杠调用也会在请求前被拦截。'
+icon: https://raw.githubusercontent.com/liuhangbiao/dsh-skill-router/main/assets/icon-180.png
