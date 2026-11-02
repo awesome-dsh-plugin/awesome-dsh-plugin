@@ -1,0 +1,6 @@
+url: https://github.com/MarsStorm/dsh-hierarchical-fishmemory
+name: MarsStorm/dsh-hierarchical-fishmemory
+category: memory
+description:
+  en: 'Layered long-term memory for DeepSeek Harness: a diary distilled from finished turns, a hand-written feelings diary, a persona card with version history, a hand-note that is injected in full every turn, and a short-TTL note layer, all sharing one token budget; ships agent tools and a sidebar panel for recall, editing, compaction, and backup or restore from a local file, WebDAV or a gzip archive.'
+  zh: '面向 DeepSeek Harness 的分层长期记忆：从结束的对话自动蒸馏的共度时光日记、手写的情感日记、带版本历史的人设卡、每轮全量注入的人格手记，以及带 TTL 的浅层记忆，共用一份 token 预算；附带一组智能体工具与侧栏面板，可召回、编辑、压缩，并支持本地文件、WebDAV 与 gzip 整包备份还原。'
