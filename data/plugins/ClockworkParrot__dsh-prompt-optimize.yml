@@ -1,0 +1,7 @@
+url: https://github.com/ClockworkParrot/dsh-prompt-optimize
+name: ClockworkParrot/dsh-prompt-optimize
+category: ui
+tarball: https://github.com/ClockworkParrot/dsh-prompt-optimize/releases/latest/download/dsh-prompt-optimize.tgz
+description:
+  en: Adds an optimize-prompt button to the left of the composer's send button; it rewrites the draft with the session's own model route and writes the result back through the normal editor path, so a single undo restores the original.
+  zh: 在输入框发送按钮左侧添加「优化提示词」按钮，用当前会话的模型路由改写草稿并通过编辑器原有路径原地回填，一次撤销即可还原原文。

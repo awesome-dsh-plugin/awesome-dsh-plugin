@@ -1,0 +1,8 @@
+url: https://github.com/L7X6899/dsh-Session-Turncate
+name: L7X6899/dsh-Session-Turncate
+category: session
+description:
+  en: Idle-time context truncation for a single DeepSeek Harness session. After a configurable number of idle hours the older conversation is dropped without a summary, so one long-lived session cannot leak one task into the next; it ships a per-session toggle, a tab next to the chat, and a /truncate command that IM bridges can drive.
+  zh: 单个会话的空闲定时上下文截断：可配置空闲多少小时后整段丢弃较早的对话（不生成摘要），避免长期存活的会话把上一个任务带进下一个；带每会话开关、会话上方的「上下文截断」选项卡，以及 IM 桥接可直接驱动的 /truncate 命令。
+# 可选：GitHub 托管的位图作为市场卡片图标；不写则回退到作者头像
+# icon: https://raw.githubusercontent.com/L7X6899/dsh-Session-Turncate/main/assets/icon-180.png
