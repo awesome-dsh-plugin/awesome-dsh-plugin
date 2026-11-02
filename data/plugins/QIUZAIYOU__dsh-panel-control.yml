@@ -1,0 +1,7 @@
+url: https://github.com/QIUZAIYOU/dsh-panel-control
+name: QIUZAIYOU/dsh-panel-control
+category: ui
+description:
+  en: "Manages the global panel entries at the top of the sidebar: drag or sort them by name, hide a row without unloading its plugin, and file them into groups that the sidebar renders as titled separators. An optional switch asks the profile's default model to do the filing, and the host whitelists the returned groups before they are stored locally."
+  zh: "管理侧栏顶部的全局面板入口：拖动或按名称重排、按行隐藏（不卸载插件）、分组后在导航区插入带标题的分隔线；另有一个可选开关让当前 profile 的默认模型来完成分组，模型返回的组名与归属先经宿主白名单清洗，再写入本地偏好。"
+icon: https://raw.githubusercontent.com/QIUZAIYOU/dsh-panel-control/main/assets/icon-180.png
