@@ -1,0 +1,7 @@
+url: https://github.com/hangdingding/dsh-breezetts
+name: hangdingding/dsh-breezetts
+category: voice
+description:
+  en: Reads assistant replies aloud with Breeze TTS, with auto-read, voice selection and a voice design dialog.
+  zh: 用 Breeze TTS 朗读助手回复，默认大肥鱼音色，支持自动朗读、音色选择与音色设计。
+icon: https://raw.githubusercontent.com/hangdingding/dsh-breezetts/main/icon.png
