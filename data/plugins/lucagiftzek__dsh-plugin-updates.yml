@@ -1,0 +1,5 @@
+url: https://github.com/lucagiftzek/dsh-plugin-updates
+name: lucagiftzek/dsh-plugin-updates
+category: tools
+description:
+  en: "Notify-only update checker for the plugins in a DSH profile: classifies each dependency by its specifier and offers only releases the running DSH core can load, in an Updates sidebar tab and a plugin_updates tool."
