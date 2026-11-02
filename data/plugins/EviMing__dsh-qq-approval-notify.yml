@@ -1,0 +1,7 @@
+url: https://github.com/EviMing/dsh-qq-approval-notify
+name: EviMing/dsh-qq-approval-notify
+category: notify
+tarball: https://github.com/EviMing/dsh-qq-approval-notify/releases/download/v1.1.0/local-qq-approval-notify-1.1.0.tgz
+description:
+  en: 'Sends a QQ direct message before DeepSeek Harness asks for permission; falls back to a Windows notification, and gives up if that also fails.'
+  zh: '让 DSH 申请权限前先发 QQ 私信，失败则 Windows 通知，再失败放弃通知。'
