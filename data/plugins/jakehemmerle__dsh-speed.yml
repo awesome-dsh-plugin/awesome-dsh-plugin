@@ -2,4 +2,5 @@ url: https://github.com/jakehemmerle/dsh-speed
 name: jakehemmerle/dsh-speed
 category: model
 description:
-  en: 'Adds a Speed setting (Standard, Fast, Ultrafast) for OpenAI and Codex models. In dsh web it appears in the Model / Effort menu; in dst the /speed command opens a picker or sets the speed directly, and the current speed shows in the bottom bar. The choice is kept per session, provider and model and is sent as the request service tier.'
+  en: 'Adds a Speed setting (Standard, Fast, Ultrafast) for OpenAI and Codex models on a patched dsh build: the pinned dsh 0.2.1-alpha.2 web client needs the Model / Effort child-slot patch, the host pi-ai must be 0.87.1 or 1.1.0 (other versions refuse to load), and the terminal controls need a patched dsh-TUI. Then it appears in the Model / Effort menu; in dst /speed opens a picker or sets the speed directly, and the current speed shows in the bottom bar. The choice is kept per session, provider and model and is sent as the request service tier.'
+  zh: '为 OpenAI 与 Codex 模型增加 Speed 设置（Standard／Fast／Ultrafast），但需要打过补丁的 dsh 构建：钉住的 dsh 0.2.1-alpha.2 Web 客户端要加上 Model / Effort 子槽补丁，宿主 pi-ai 必须是 0.87.1 或 1.1.0（其他版本会拒绝加载），终端控制还需打过补丁的 dsh-TUI。满足条件后它会出现在 Model / Effort 菜单；在 dst 里 /speed 可打开选择器或直接设置，底栏显示当前档位。选择按会话、供应商和模型分别保存，并作为请求的 service tier 发送。'

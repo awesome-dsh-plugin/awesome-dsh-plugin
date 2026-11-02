@@ -2,4 +2,5 @@ url: https://github.com/jakehemmerle/dsh-aris-better
 name: jakehemmerle/dsh-aris-better
 category: workflow
 description:
-  en: 'Adds an ARIS agent preset that loads the 84 ARIS research-workflow skills and runs their reviewer as an in-harness subagent from a different model family than the session model. Other presets are unchanged.'
+  en: 'Adds an ARIS agent preset that loads the 84 ARIS research-workflow skills and runs their reviewer as an in-harness subagent from a different model family than the session model. Other presets are unchanged. A fork of wanshuiyin/Auto-claude-code-research-in-sleep''s dsh-aris branch: install it instead of the upstream dsh-aris plugin, not alongside it - both register the mcp__codex__codex reviewer tools and the same ARIS skills.'
+  zh: '新增一个 ARIS agent preset，加载 84 个 ARIS 研究工作流技能，并让评审者作为会话内子代理、使用与会话模型不同的模型族运行；其他 preset 不变。本插件是 wanshuiyin/Auto-claude-code-research-in-sleep 的 dsh-aris 分支的 fork：应当替代上游 dsh-aris 安装，不能与上游同装——两者注册同一组 mcp__codex__codex 评审工具和同名 ARIS 技能。'
