@@ -3,4 +3,4 @@ name: gchen8102-ops/aurabot-novel
 category: usage
 description:
   en: Aurabot extension module for novel reading, supporting EPUB and PDF.
-  zh: Aurabot 扩展模块，用于小说阅读，支持 EPUB 和 PDF 格式。
+  zh: Aurabot 扩展模块，用于小说阅读，支持EPUB和PDF格式。
