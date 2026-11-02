@@ -1,5 +1,5 @@
-url: https://github.com/STofone/dsh-agent-roster
-name: STofone/dsh-agent-roster
+url: https://github.com/dsh-agent-roster/dsh-agent-roster
+name: dsh-agent-roster/dsh-agent-roster
 category: workflow
 description:
   en: Defines multi-agent team rosters as YAML or JSON files, validates them, bridges each member into dsh-agent-teams member arguments, and verifies the result against the running team.
