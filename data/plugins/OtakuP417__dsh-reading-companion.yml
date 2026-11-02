@@ -2,5 +2,5 @@ url: https://github.com/OtakuP417/dsh-reading-companion
 name: OtakuP417/dsh-reading-companion
 category: docs
 description:
-  en: Read a book in a sidebar panel and talk about the part you have already read; it refuses to discuss anything further on, so it cannot spoil the story. Highlights and discussion turn into takeaways, takeaways become review cards, and a card jumps back to the sentence it came from.
-  zh: 在侧栏的阅读面板里读书，只聊你已经读到的部分，后面的内容它看不到也不会说，所以不剧透。划线和讨论可以存成「收获」，收获会自动变成复习卡片，点卡片能跳回原来的那句话。
+  en: An AI reading buddy that sits next to you while you read a book — and only knows the pages you have already read, so it cannot spoil the rest. Highlight a sentence and ask about it, or just ask about what you just finished; instead of summarizing for you, it usually answers with one concrete question. Whatever you work out can be saved as a takeaway, which later becomes a review card that jumps back to the sentence.
+  zh: 读书时旁边坐一个 AI 同读的人：你读到哪儿它只知道到哪儿，所以不剧透。觉得哪句有意思就划出来问它，或者直接问刚读完的内容——它多半先反问你一句，而不是替你总结。想明白的东西可以存成「收获」，之后自动变成复习卡片，点一下跳回原句。
