@@ -1,0 +1,6 @@
+url: https://github.com/ethanchen669/dsh-energy-orb
+name: ethanchen669/dsh-energy-orb
+category: fun
+description:
+  en: 'A Web3D energy orb decoration for the DSH Web GUI: a particle core wrapped in three mechanical rings that shrinks and falls silent while the session is idle and pulses in a double-beat heartbeat while a turn runs. UnrealBloom glow, draggable with its corner, position and size remembered, and three.js served locally by the plugin instead of a CDN.'
+  zh: 'DSH Web GUI 的 Web3D 能量球装饰：粒子核心外包三圈机械环，会话静息时收缩沉默、回合运行时以双拍心跳涨缩。UnrealBloom 辉光；可拖动，所在一角、位置与尺寸都会被记住；three.js 由插件本地提供，不走 CDN。'

@@ -1,0 +1,6 @@
+url: https://github.com/fishdivinity/dsh-local-search
+name: fishdivinity/dsh-local-search
+category: tools
+description:
+  en: Read-only local search for DeepSeek Harness on Windows — file and folder names through Everything (es.exe), text inside PDF and Office documents through Anytxt, as five tools. Needs both engines installed separately.
+  zh: 只读的本机检索：文件名走 Everything（es.exe），PDF / Office 文档正文走 Anytxt，共五个只读工具。两个引擎都要另装，仅支持 Windows。

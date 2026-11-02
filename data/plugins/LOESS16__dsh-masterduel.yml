@@ -1,0 +1,6 @@
+url: https://github.com/LOESS16/dsh-masterduel
+name: LOESS16/dsh-masterduel
+category: tools
+description:
+  en: 'Master Duel utility panel for DSH: card lookup with banlist filters and AI-assisted effect search, related cards, rarity badges, favorites, a deck builder with drag-and-drop and a collapsible favorites panel, engine-tested opening hands and hand_odds opening probabilities, deck-type rankings, and deck checking. Card images and text are fetched from third-party sources at runtime; the plugin bundles no card data and requires the separate master-duel-ai-advisor MCP server.'
+  zh: '面向 DSH 的 Master Duel 工具面板：带禁限筛选和 AI 智能查卡的查卡、相关卡片、稀有度徽章、收藏与构建拖放、可收放收藏栏、规则引擎先手实测与 hand_odds 起手概率、卡组类型排行、卡组检查。卡图与卡文在运行时从第三方来源获取，插件不打包卡牌数据；需要单独安装 master-duel-ai-advisor MCP。'

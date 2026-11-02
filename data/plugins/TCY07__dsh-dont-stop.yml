@@ -1,0 +1,6 @@
+url: https://github.com/TCY07/dsh-dont-stop
+name: TCY07/dsh-dont-stop
+category: workflow
+description:
+  en: 'Keeps an agent working continuously over long stretches: set a deadline, and if it finishes the task early, Dont-Stop automatically nudges it to keep iterating and take on the next step on its own.'
+  zh: '保证智能体长时间持续工作：设定一个截止时间，若提前完成任务，Dont-Stop 会自动督促它继续迭代、自主推进下一步任务。'

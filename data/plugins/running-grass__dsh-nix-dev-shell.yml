@@ -1,0 +1,6 @@
+url: https://github.com/running-grass/dsh-nix-dev-shell
+name: running-grass/dsh-nix-dev-shell
+category: dev
+description:
+  en: Runs DeepSeek Harness bash commands inside the workspace's Nix dev shell whenever a flake.nix is present.
+  zh: 工作区存在 flake.nix 时，让 DeepSeek Harness 的 bash 命令在 nix develop 的 devShell 环境中执行。

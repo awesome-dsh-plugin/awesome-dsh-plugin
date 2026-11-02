@@ -1,0 +1,6 @@
+url: https://github.com/cngtn/dsh-cngtn-pond
+name: cngtn/dsh-cngtn-pond
+category: theme
+description:
+  en: "Paper-and-ink theme with warm surfaces, hairline strokes, near-square corners and a living ASCII koi pond behind the shell; the theme sets no font family, so the shell's own stacks (or your Settings choice) apply."
+  zh: "纸墨主题，提供暖色纸面、细描边和近方形圆角，并在整个界面后方绘制动态 ASCII 锦鲤池；主题不指定字体，沿用 DSH 自带字体栈（或设置中选择的字体）。"

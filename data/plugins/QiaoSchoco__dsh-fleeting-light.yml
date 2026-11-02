@@ -1,0 +1,8 @@
+url: https://github.com/QiaoSchoco/dsh-fleeting-light
+name: QiaoSchoco/dsh-fleeting-light
+category: ui
+description:
+  en: Draws an ambient glow along the window edge and a moving light band around the composer, sharing one colour table and each with its own switch.
+  zh: 在窗口边缘画一圈环境光、在输入框边缘画一条流动的光带，两者共用同一套配色，各自独立开关。
+icon: https://raw.githubusercontent.com/QiaoSchoco/dsh-fleeting-light/main/assets/icon-180.png
+tarball: https://github.com/QiaoSchoco/dsh-fleeting-light/releases/download/v2.15.0/dsh-fleeting-light-2.15.0.tgz

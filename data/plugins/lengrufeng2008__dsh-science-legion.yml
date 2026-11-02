@@ -1,0 +1,7 @@
+url: https://github.com/lengrufeng2008/dsh-science-legion
+name: lengrufeng2008/dsh-science-legion
+category: workflow
+icon: https://raw.githubusercontent.com/lengrufeng2008/dsh-science-legion/main/assets/icon-180.png
+description:
+  en: 'Skill bundle for tiered multi-agent science campaigns in math, physics, astronomy, engineering, and biomedical evidence: a shared blackboard, independent verifier and red team, wolf-pack and flanking tactics, token and time budgets, known-answer evals, a four-agent pendulum pilot, and a six-agent fourth-order pilot that caught and corrected a benchmark answer-key error. Does not claim open-problem solutions.'
+  zh: '面向数学、物理、天文、工程与生物医药证据的分层多智能体科研战役技能包：共享黑板、独立验证与红队、群狼与迂回战术、token/时间预算、已知答案评测、四智能体单摆 pilot，以及一次抓到并修正评测答案键错误的六智能体四阶 pilot。不宣称解决开放难题。'

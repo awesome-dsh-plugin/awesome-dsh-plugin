@@ -1,0 +1,7 @@
+url: https://github.com/Bertli486/dsh-sync-updater
+name: Bertli486/dsh-sync-updater
+category: market
+tarball: https://github.com/Bertli486/dsh-sync-updater/releases/latest/download/dsh-sync-updater.tgz
+description:
+  en: Inventories installed DSH skills and profile plugins, checks their upstream sources for newer versions, applies the updates, and installs skills from a searchable catalog.
+  zh: 盘点已安装的 DSH 技能与 profile 插件，检查上游是否有新版本并执行更新，还能从可搜索的目录里安装技能。

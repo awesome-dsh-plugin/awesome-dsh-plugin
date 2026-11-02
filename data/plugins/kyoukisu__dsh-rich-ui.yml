@@ -2,5 +2,5 @@ url: https://github.com/kyoukisu/dsh-rich-ui
 name: kyoukisu/dsh-rich-ui
 category: ui
 description:
-  en: 'Renders rich answers in DSH from a strict JSON contract: entity lists with detail panels, KPI cards, series charts, sortable tables, nested layers, flow diagrams and local controls.'
-  zh: '用严格的 JSON 契约在 DSH 中渲染富文本回答：带详情面板的实体列表、指标卡、多序列图表、可排序表格、嵌套分层图、流程图与本地控件。'
+  en: 'ChatGPT-style rich answers inside DeepSeek Harness: entity panels, KPI cards, series charts, sortable tables, nested layers, flow diagrams and local controls.'
+  zh: '在 DeepSeek Harness 中呈现 ChatGPT 风格的富文本回答：实体面板、指标卡、多序列图表、可排序表格、嵌套分层图、流程图与本地控件。'

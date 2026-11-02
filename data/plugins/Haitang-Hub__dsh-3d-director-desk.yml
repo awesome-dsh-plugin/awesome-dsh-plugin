@@ -1,0 +1,7 @@
+url: https://github.com/Haitang-Hub/dsh-3d-director-desk
+name: Haitang-Hub/dsh-3d-director-desk
+category: tools
+icon: https://raw.githubusercontent.com/Haitang-Hub/dsh-3d-director-desk/main/site/logo.png
+description:
+  en: '3D director desk sidebar plugin for DSH: stage characters, set camera moves and record timeline previews; AI agents drive the scene in real time via MCP tools.'
+  zh: 'DSH 右侧栏 3D 导演台插件：摆角色、运镜、时间轴预演与导出，AI Agent 经 MCP 工具实时编排场景。'

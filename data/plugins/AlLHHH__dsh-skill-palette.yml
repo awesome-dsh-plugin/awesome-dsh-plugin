@@ -1,0 +1,6 @@
+url: https://github.com/AlLHHH/dsh-skill-palette
+name: AlLHHH/dsh-skill-palette
+category: skill
+description:
+  en: "Puts a skill picker next to the composer (categories, favorites, search, one-click Chinese translation) and shows which skills each reply used under the answer."
+  zh: "输入框旁边有技能面板（分类、收藏、搜索、一键翻译），回答下方显示这一轮用到了哪些技能。"

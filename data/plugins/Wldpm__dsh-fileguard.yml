@@ -1,0 +1,6 @@
+url: https://github.com/Wldpm/dsh-fileguard
+name: Wldpm/dsh-fileguard
+category: security
+description:
+  en: 'Security plugin that intercepts file deletion and write commands, requiring user token authorization.'
+  zh: '文件守卫：拦截危险的文件删除/写入命令，需用户提供 token 才放行。'

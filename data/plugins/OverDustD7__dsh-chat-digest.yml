@@ -1,0 +1,6 @@
+url: https://github.com/OverDustD7/dsh-chat-digest
+name: OverDustD7/dsh-chat-digest
+category: tools
+description:
+  en: 'Keeps a panel of what you must do, what you can apply for and what is worth knowing, distilled from your WeChat and QQ chat logs by one resident agent session that re-reads them on a schedule or when you click Fetch; each item can link straight to its source file or image.'
+  zh: '把微信与 QQ 聊天记录里「必须做的、可以报名的、值得知道的」摘成一张面板：由一个常驻会话按计划或在你点 Fetch 时重读聊天记录并改写条目，每条可直链到原始文件或图片。'

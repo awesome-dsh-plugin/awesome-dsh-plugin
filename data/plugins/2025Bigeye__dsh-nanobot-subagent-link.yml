@@ -1,0 +1,6 @@
+url: https://github.com/2025Bigeye/dsh-nanobot-subagent-link
+name: 2025Bigeye/dsh-nanobot-subagent-link
+category: tools
+description:
+  en: 'Runs the local nanobot CLI agent as a DSH subagent through a nanobot_run tool: each call carries one self-contained task and returns only the agent''s final answer, either as a fresh process or through a persistent OpenAI-compatible server.'
+  zh: '通过 nanobot_run 工具把本机 nanobot CLI agent 当作 DSH 子代理运行：每次只交给它一个自包含任务并仅返回最终答案，可按次启动进程，也可走常驻的 OpenAI 兼容服务。'

@@ -1,0 +1,6 @@
+url: https://github.com/yimengsuper2432/dsh-auto-convert
+name: yimengsuper2432/dsh-auto-convert
+category: docs
+description:
+  en: 'Prepares files before read, read_image and the vision tools open them: downscales images over 2048 px or 8 MB (one retry at 1280 px within the same turn), converts BMP/TIFF to PNG, relabels mislabeled uploads by sniffing their bytes, and turns docx/xlsx/pptx, text-layer PDF, csv/tsv and html into Markdown with no external programs.'
+  zh: '在 read、read_image 与 vision_* 打开文件之前先处理：长边超 2048 像素或体积超 8 MB 的图降采样（同一轮可降到 1280 再试一次），BMP/TIFF 转 PNG，按字节纠正标错的上传类型，并把 docx/xlsx/pptx、有文字层的 PDF、csv/tsv 与 html 转成 Markdown，不依赖任何外部程序。'

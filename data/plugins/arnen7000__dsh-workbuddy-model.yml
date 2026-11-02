@@ -1,0 +1,6 @@
+url: https://github.com/arnen7000/dsh-workbuddy-model
+name: arnen7000/dsh-workbuddy-model
+category: model
+description:
+  en: "Adds the models available in a signed-in WorkBuddy desktop app to DeepSeek Harness as a model provider, with the CN and international apps as separate groups. It is a rebuilt derivative of the npm package dsh-workbuddy-connect@0.7.9 (originally corrinehu/dsh-workbuddy-connect); it registers the same workbuddy / workbuddy-ai provider ids, so it cannot be installed alongside other WorkBuddy bridges."
+  zh: "把已登录的 WorkBuddy 桌面 App 中的模型接入 DeepSeek Harness，国内版与国际版各自成组。它基于 npm 包 dsh-workbuddy-connect@0.7.9（原 corrinehu/dsh-workbuddy-connect）的构建产物改出，注册相同的 workbuddy / workbuddy-ai provider id，不能与其它 WorkBuddy 桥同装。"

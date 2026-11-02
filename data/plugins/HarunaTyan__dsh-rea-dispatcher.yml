@@ -1,0 +1,7 @@
+url: https://github.com/HarunaTyan/dsh-rea-dispatcher
+name: HarunaTyan/dsh-rea-dispatcher
+category: tools
+description:
+  en: "Folds REA's 207 reverse-engineering tools (Ghidra / Hopper / IDA backends) into 3 commands plus 6 read-only domain entries: about 5 KB of resident tool text instead of 757 KB. Ships no engines; rea-agents, Ghidra 12.1.x and JDK 21 are installed separately."
+  zh: "把 REA 的 207 个逆向工具（Ghidra / Hopper / IDA 后端）折叠成 3 条命令加 6 个只读域入口，常驻约 5 KB。不代装引擎，需自行安装 rea-agents、Ghidra 12.1.x 与 JDK 21。"
+tarball: https://github.com/HarunaTyan/dsh-rea-dispatcher/releases/latest/download/dsh-rea-dispatcher.tgz
