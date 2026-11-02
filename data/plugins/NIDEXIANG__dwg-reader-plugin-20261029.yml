@@ -1,0 +1,7 @@
+url: https://github.com/NIDEXIANG/dwg-reader-plugin-20261029
+name: NIDEXIANG/dwg-reader-plugin-20261029
+category: tools
+description:
+  en: DSH plugin to read AutoCAD DWG/DXF, PDF and images without installing AutoCAD or Tesseract.
+  zh: DSH 插件：直接读取 DWG/DXF 图纸、PDF 与图片，无需安装 AutoCAD 或 Tesseract。
+icon: https://raw.githubusercontent.com/NIDEXIANG/dwg-reader-plugin-20261029/main/icon.png
