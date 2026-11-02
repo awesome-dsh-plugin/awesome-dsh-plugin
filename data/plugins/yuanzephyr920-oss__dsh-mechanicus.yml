@@ -1,0 +1,6 @@
+url: https://github.com/yuanzephyr920-oss/dsh-mechanicus
+name: yuanzephyr920-oss/dsh-mechanicus
+category: fun
+description:
+  en: Rewrites every prompt into a Mechanicus prayer before the model sees it, then lets you pick prayer or original to send.
+  zh: 发送前把提示词改写成机械神教祷文，再让你选择发送祷文还是原文。
