@@ -1,0 +1,6 @@
+url: https://github.com/27painter/dsh-nx
+name: 27painter/dsh-nx
+category: tools
+description:
+  en: 'Drives Siemens NX 2406 and 2506 from DeepSeek Harness, plus NX 12: an executor that judges a journal run from its log rather than its exit code (NX returns 0 for a journal that swallowed its exception, and 0xC0000409 after a clean one), 16 typed tools over a resident batch NX, and a probe that keeps the three releases apart. Windows only; NX 2406 is the reference release, 2506 expected.'
+  zh: '从 DeepSeek Harness 驱动 Siemens NX 2406 与 2506，也支持 NX 12：一个按日志而非退出码判定 journal 成败的执行器（NX 对吞掉异常的 journal 返回 0，干净结束时返回 0xC0000409）、常驻批处理 NX 上的 16 个类型化工具，以及一个能分清三个版本的探测。仅 Windows；以 NX 2406 为基准版本，2506 为预期可用。'
