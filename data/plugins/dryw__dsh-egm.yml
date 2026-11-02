@@ -1,0 +1,6 @@
+url: https://github.com/dryw/dsh-egm
+name: dryw/dsh-egm
+category: workflow
+description:
+  en: "Design-review gate for DeepSeek Harness: a context-rich Elephant session drafts the design, then fresh, zero-context, read-only Goldfish reviewers stress-test it before implementation."
+  zh: "面向 DeepSeek Harness 的设计评审闸门：具备完整上下文的“大象”起草设计，再由零上下文的只读“金鱼”评审者严格审查，通过后才进入实现。"
