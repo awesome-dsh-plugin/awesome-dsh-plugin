@@ -2019,7 +2019,7 @@ dsh plugin --profile web add dshmarket
 - [rayadesune/DeepSeek-Harness-chat-billing](https://github.com/rayadesune/DeepSeek-Harness-chat-billing) — 会话头部徽标显示 DeepSeek 账户余额、本轮对话花费与今日全部会话总花费；每轮消息操作行前置本轮花费，详情面板含按模型计价与今日会话消费排行。官方峰谷定价，余额取自 /user/balance API。
 - [rayzhu1109/dsh-balance](https://github.com/rayzhu1109/dsh-balance) — 在侧边栏底部实时显示 DeepSeek 账户余额，点击展开最近 5 天消费柱状图。
 - [reg4916/dsh-plugin-balance-badge](https://github.com/reg4916/dsh-plugin-balance-badge) — 在侧边栏顶部常驻显示账户充值余额，自动刷新，数字与「设置 → 账户」一致。
-- [regrevia/dsh-fast-mode](https://github.com/regrevia/dsh-fast-mode) — DeepSeek Harness 自己的快速模式：用几项配置控制任务的运行速度——限制思考在哪一步收敛、限制中间汇报的输出、限制最多几步，在不改变模型与思考强度的前提下把任务做快。实测 10 类任务 30 个完整单元：默认配置总耗时 0.72×、输出 token 0.74×、步数 0.71×；把「省着写」提醒从第 4 步提前到第 2 步，debugfix 0.535×、ledger 0.506×、migrate 0.751×，13 对合并 0.625×、输出 token 0.614×（第 3 步时 migrate 单族 0.509×、输出 0.528×）。每一对里两臂隐藏断言逐格相同、全绿。1–5 步的小改修与数据整形收不回提醒成本，按任务形状先试一次再定。
+- [regrevia/dsh-fast-mode](https://github.com/regrevia/dsh-fast-mode) — DeepSeek Harness 自己的 fast mode：同一个模型，只消耗一半的输出，多种开关自由组合，最快快一倍（实测 0.505× 耗时）。全在提示词侧，不换模型、不降思考强度、不写任何请求字段；30 对完整任务实测输出 token −42%、判分 438/438 全绿，benchmark 与复现命令见 github.com/regrevia/dsh-fast-mode 的 BENCHMARK.md。少数任务会变慢——1–5 步小改修、数据整形——按任务形状先试一次。
 - [RevxZxCx/dsh-where-did-my-tokens-go](https://github.com/RevxZxCx/dsh-where-did-my-tokens-go) — 在聊天页“深度思考”指示旁实时显示 token 计数，支持输入/输出合并或分列展示、逐步骤操作计数与 K/M/G/T 自适应单位。
 - [Robortshen/dsh-token-radar](https://github.com/Robortshen/dsh-token-radar) — 输入框下方的彩色 token 胶囊与上方展开面板：逐次调用的双图（总消耗 / 可计费）、子代理开销、工具归因与缓存拆分，只读本机会话日志。
 - [rongyishuaige7/dsh-stats](https://github.com/rongyishuaige7/dsh-stats) — DSH 项目级全局用量中心：按项目统计 Token、工时与费用，支持半小时节奏泳道、26 周全局热力图与多 Provider 余额预警；无法确认计价的部分会标注而非估算。
