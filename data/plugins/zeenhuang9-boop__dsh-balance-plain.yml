@@ -1,0 +1,7 @@
+url: https://github.com/zeenhuang9-boop/dsh-balance-plain
+name: zeenhuang9-boop/dsh-balance-plain
+category: usage
+description:
+  en: "DeepSeek balance, today's spend, peak/off-peak countdown and per-turn cost rendered as one text line embedded in the DSH sidebar footer, plus a low-balance alert."
+  zh: "把 DeepSeek 余额、今日已用、峰谷倒计时与每轮消耗做成 DSH 侧栏 footer 里的一行纯文本，并在余额低于阈值时提醒。"
+icon: https://raw.githubusercontent.com/zeenhuang9-boop/dsh-balance-plain/main/assets/icon-180.png
