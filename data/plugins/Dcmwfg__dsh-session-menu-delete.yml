@@ -1,0 +1,6 @@
+url: https://github.com/Dcmwfg/dsh-session-menu-delete
+name: Dcmwfg/dsh-session-menu-delete
+category: session
+description:
+  en: 'Adds a "Delete session" item under "Archive session" in the sidebar session menu: it detaches the session from memory, deletes its on-disk record and projection cache, and removes the row from the sidebar immediately. Permanent - there is no trash bin.'
+  zh: '在侧边栏会话三点菜单的「归档会话」下面加一项「删除会话」：先把会话从内存里摘掉，再删磁盘记录与投影缓存，并立刻移除左侧那一行。永久删除，没有回收站。'
