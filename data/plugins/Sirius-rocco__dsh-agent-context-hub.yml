@@ -1,0 +1,12 @@
+# Drop-in PR file for https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+#
+# Target path inside that repo:  data/plugins/Sirius-rocco__dsh-agent-context-hub.yml
+# Replace every Sirius-rocco (three places: url, name, icon) with your GitHub account
+# before committing, then keep the filename in sync: Sirius-rocco__dsh-agent-context-hub.yml
+url: https://github.com/Sirius-rocco/dsh-agent-context-hub
+name: Sirius-rocco/dsh-agent-context-hub
+category: session
+description:
+  en: One read-only index of every local AI-agent session (Codex, Claude Code, DSH, or any JSONL source) grouped by project, plus an append-only shared board for decisions and handoffs so switching agents leaves no context gap.
+  zh: 把本机所有 agent 的会话历史合并成一份按项目分组的只读索引，并附一块只追加的共享上下文板，让换 agent 时不丢结论。
+icon: https://raw.githubusercontent.com/Sirius-rocco/dsh-agent-context-hub/main/assets/icon-180.png
