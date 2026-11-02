@@ -1,0 +1,6 @@
+url: https://github.com/ycm50/dsh-subscribe-meter
+name: ycm50/dsh-subscribe-meter
+category: usage
+description:
+  en: 'Session cost meter forked from dsh-cost-meter, retargeted at Command Code GOAT: per-session and per-day cost, built-in 90+ model price catalog with automatic matching, GOAT subscription quotas (5-hour / weekly / monthly pool) as used/total bars, Coding Plan quotas, custom provider balances, peak/off-peak pricing notices, bilingual UI.'
+  zh: 'dsh-cost-meter 的 Command Code GOAT 定制版：本会话与当日费用、内置 90+ 模型价格目录与自动匹配、GOAT 订阅额度（5 小时 / 周 / 月度池，已用/全部 进度条）、Coding Plan 额度、自定义 Provider 余额、峰谷计价提醒，界面中英双语。'
