@@ -1,0 +1,6 @@
+url: https://github.com/beyondgjc/dsh-agentic-pet
+name: beyondgjc/dsh-agentic-pet
+category: fun
+description:
+  en: 'A model-driven desktop pet: an always-on-top companion that follows your agent sessions, races the Web UI to answer approvals and questions, keeps a per-pet affection ledger, speaks through pet_say/pet_do tools or an autonomous inner voice, and can read those lines aloud through BreezeBlue TTS.'
+  zh: '模型驱动的桌面宠物：独立置顶小窗跟随会话状态，与 Web 界面竞速应答审批与提问，维护每宠独立的好感账本，经 pet_say/pet_do 工具或自主内心戏说话，并可用 BreezeBlue 把台词读出来。'
