@@ -1,8 +1,3 @@
-# Drop-in PR file for https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
-#
-# Target path inside that repo:  data/plugins/Sirius-rocco__dsh-agent-context-hub.yml
-# Replace every Sirius-rocco (three places: url, name, icon) with your GitHub account
-# before committing, then keep the filename in sync: Sirius-rocco__dsh-agent-context-hub.yml
 url: https://github.com/Sirius-rocco/dsh-agent-context-hub
 name: Sirius-rocco/dsh-agent-context-hub
 category: session
