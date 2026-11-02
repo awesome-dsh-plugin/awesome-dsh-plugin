@@ -1,0 +1,5 @@
+url: https://github.com/lucagiftzek/dsh-voice
+name: lucagiftzek/dsh-voice
+category: voice
+description:
+  en: "Read-aloud and dictation for the DSH web UI with 23 TTS and STT provider types configured side by side, per-language routing, in-text language markers, per-sentence language detection, word highlighting and a TTS Reader sidebar tab."
