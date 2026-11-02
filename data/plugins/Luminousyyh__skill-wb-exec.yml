@@ -1,0 +1,6 @@
+url: https://github.com/Luminousyyh/skill-wb-exec
+name: wb-exec
+category: skill
+description:
+  en: Delegate bounded coding tasks to a headless WorkBuddy CLI agent and collect its structured result plus the real diff; requires the WorkBuddy or CodeBuddy CLI on the same machine.
+  zh: 把边界明确的编码任务派给本机 WorkBuddy 无头执行体执行，回收结构化结论与真实 diff；需要本机装有 WorkBuddy 或 CodeBuddy CLI。
