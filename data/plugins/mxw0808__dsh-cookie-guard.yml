@@ -1,0 +1,6 @@
+url: https://github.com/mxw0808/dsh-cookie-guard
+name: mxw0808/dsh-cookie-guard
+category: usage
+description:
+  en: "Windows-only. Counts the dsh-auth-* login cookies the DSH desktop shell accumulates, shows how much of the 16 KiB request-header budget they eat and roughly how many launches are left before the shell opens with \"Web authentication failed\". Two entry points: a plugin page with a check button, and a bare PowerShell/python checker under scripts/ that has no dependency on the app."
+  zh: "仅 Windows。数出 DSH 桌面外壳累积的 dsh-auth-* 登录 cookie 条数，显示它们吃掉 16 KiB 请求头预算的多少，以及还差几次启动就会打不开并报 \"Web authentication failed\"。两个入口：一个带检查按钮的插件页，以及 scripts/ 下不依赖应用的独立脚本。"
