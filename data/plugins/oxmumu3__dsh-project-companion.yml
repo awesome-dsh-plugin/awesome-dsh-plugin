@@ -2,5 +2,5 @@ url: "https://github.com/oxmumu3/dsh-project-companion"
 name: "oxmumu3/dsh-project-companion"
 category: "workflow"
 description:
-  en: "Personal project assistant for bounded project context and memory, explicit task handoffs through an existing WeChat bridge, reminders, and source-linked summaries. The WeChat path needs the separate pan17/dsh-wechat bridge and your own scan-code binding."
-  zh: "个人项目助手：管理有界项目上下文和记忆，通过既有微信桥接明确交办任务、安排提醒并查看带来源的摘要。微信通路需另装 pan17/dsh-wechat 桥接并由本人扫码绑定。"
+  en: "Personal assistant with logical project boards, bounded workspace access, native conversations, project memory, personal reviews and interest-based public news. Includes a WeChat component; binding still requires the user's own QR scan. API acceptance is not phone receipt."
+  zh: "个人助理：按逻辑目标组织项目看板，在授权工作区内整理资料，衔接原生对话、项目记忆、个人回顾与兴趣资讯。单包内置微信组件，仍需本人扫码绑定；接口接受不代表手机实收。"
