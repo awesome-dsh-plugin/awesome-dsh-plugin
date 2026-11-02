@@ -1,0 +1,6 @@
+url: https://github.com/thynon/dsh-at-plugins
+name: thynon/dsh-at-plugins
+category: ui
+description:
+  en: Adds an installed-plugin group to the @ menu, split into System and User, groups session mentions by folder, and gives section headers sticky positioning, row counts, and fold controls.
+  zh: 在 @ 菜单里增加已安装插件（系统 / 用户分组），会话按所在文件夹归类，分组标题吸顶、显示行数、可折叠。

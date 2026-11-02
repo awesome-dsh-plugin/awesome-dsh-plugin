@@ -1,0 +1,6 @@
+url: https://github.com/Rayle8/dsh-aside-note
+name: Rayle8/dsh-aside-note
+category: ui
+description:
+  en: 'Per-session note list beside the conversation: a button at the top right of the chat badges the open count and opens a resizable right-side panel where notes are added, checked off, copied, edited or appended to the chat input, with panel size and drafts kept in the browser.'
+  zh: '对话旁的会话级便笺：会话右上角入口用角标显示未完成数量，点开是可拖拽调宽高的右侧面板，便笺可添加、勾选完成、复制、编辑和一键转发到输入框，面板尺寸与草稿保存在浏览器本地。'

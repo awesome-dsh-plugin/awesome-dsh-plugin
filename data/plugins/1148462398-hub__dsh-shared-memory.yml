@@ -1,0 +1,6 @@
+url: https://github.com/1148462398-hub/dsh-shared-memory
+name: 1148462398-hub/dsh-shared-memory
+category: memory
+description:
+  en: 'Shared Markdown memory for every DSH session: persona, requirements, corrections, lessons, methods, requests, sessions, a method library and ingested documents, mirrored to a second disk with version snapshots and a cross-process write lock; entries move between the main file and a searchable archive by hit frequency and repeated emphasis, and retrieval is keyword co-occurrence plus BM25. Also ships a skills library (SKILL.md playbooks with optional guarded run.mjs execution) and a sticker library: users import their own images, the plugin classifies them by mood, and it automatically sends a fitting sticker at the right moment in the conversation to express emotion.'
+  zh: '所有会话共用一份 Markdown 记忆，含人设、要求、指正、教训、方法、请求、会话、方法库与导入文档九个分区；双硬盘镜像、历史快照、跨进程写锁，条目按命中频率与重复强调在主文件与可检索归档之间双向流动，检索为关键词共现加 BM25 排序。另含自有技能库（SKILL.md 操作手册，可选带护栏的 run.mjs 执行）与表情包库：用户自己导入图片，插件按情绪自动分类，并根据对话内容在合适时机自动发送合适的表情包来表达情绪。'

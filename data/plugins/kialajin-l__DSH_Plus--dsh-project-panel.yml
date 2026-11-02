@@ -1,0 +1,6 @@
+url: https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-project-panel
+name: kialajin-l/DSH_Plus#dsh-project-panel
+category: dev
+description:
+  en: "Project progress panel that scans a configurable root for local projects, infers activity from anchors and git evidence, and exports a self-contained dark HTML report."
+  zh: "项目进度面板：扫描配置根目录下的本地项目，按锚点与 git 证据推断活跃度，支持筛选、锚点标记与自包含深色 HTML 报告导出。"

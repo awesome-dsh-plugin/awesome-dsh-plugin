@@ -1,0 +1,6 @@
+url: https://github.com/dhdkfkfkf/dsh-qbuddy-prompt-enhance
+name: dhdkfkfkf/dsh-qbuddy-prompt-enhance
+category: ui
+description:
+  en: 'Button beside the composer that rewrites the current draft into a more executable prompt in place. Ships four built-in presets spanning light polish to aggressive expansion, accepts user-defined presets, and switches preset, prompt model and reasoning effort directly from the button without leaving the composer. The button appears only when the draft has content, shows a running timer while enhancing, and surfaces failures with a retry.'
+  zh: '输入框旁的按钮：把当前草稿原地改写成更可执行的提示词。内置四档预设，从轻润色到激进扩写，并支持自定义预设；预设、提示词模型与思考强度都能直接在按钮上切换，不用离开输入框。草稿有内容时按钮才出现，增强期间在按钮上计时，失败会显示原因并可重试。'

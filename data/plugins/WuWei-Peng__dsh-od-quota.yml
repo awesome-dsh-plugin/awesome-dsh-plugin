@@ -1,0 +1,7 @@
+url: https://github.com/WuWei-Peng/dsh-od-quota
+name: WuWei-Peng/dsh-od-quota
+category: usage
+description:
+  en: 'OpenDesign subscription quota: sign in with a device code from the plugin settings, then read the 5-hour and 7-day remaining quota as two bars, in settings and in the session header.'
+  zh: OpenDesign 订阅额度：在插件设置页用设备码登录，查看 5 小时与 7 天的剩余额度，设置页和会话顶栏各显示一组进度条。
+tarball: https://github.com/WuWei-Peng/dsh-od-quota/releases/latest/download/dsh-od-quota.tgz

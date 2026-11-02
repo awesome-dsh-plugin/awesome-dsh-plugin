@@ -1,0 +1,7 @@
+url: https://github.com/zhuran305-web/dsh-cet-vocab
+name: zhuran305-web/dsh-cet-vocab
+category: ui
+tarball: https://github.com/zhuran305-web/dsh-cet-vocab/releases/latest/download/dsh-cet-vocab.tgz
+description:
+  en: 'CET-4/CET-6 vocabulary trainer in a draggable, minimizable floating window, so you can study while the model is thinking: 5,805 words bundled from ECDICT; flip cards graded known, fuzzy or unknown, plus multiple-choice quizzes whose distractors are easily confused words; Ebbinghaus-style spaced repetition with due reviews and extra practice; a configurable daily quota of new words; US and UK pronunciation streamed from an online dictionary, falling back to local text-to-speech while offline; and an optional setting that opens the window automatically while a session is running. Progress and window geometry are kept in the browser profile.'
+  zh: '四六级背单词悬浮窗，模型思考时随手背：窗口可拖动、可最小化并记住位置；内嵌 ECDICT 提取的 5805 词；翻卡三键评分（认识/模糊/不认识）与形近词干扰的选择题两种模式；艾宾浩斯间隔复习，配到期复习与加练；每日新词数可调；发音取在线词典的真人美式与英式录音，断网时回落本地文字转语音；可开启「会话运行时自动弹出」。进度与窗口位置保存在浏览器配置里。'

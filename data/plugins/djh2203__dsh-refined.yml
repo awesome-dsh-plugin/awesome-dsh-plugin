@@ -1,0 +1,6 @@
+url: https://github.com/djh2203/dsh-refined
+name: djh2203/dsh-refined
+category: theme
+description:
+  en: 'A port of DeepSeek-Refined for DeepSeek Harness (DSH), which injects "Obsidian Border"-style Markdown styling and multi-theme color schemes into the DSH frontend.'
+  zh: 'DeepSeek-Refined 的 DSH 移植版：为 DSH 前端注入 Obsidian Border 等 5 个风格的 Markdown 美化与 5 套主题配色，并提供调色板按钮。'

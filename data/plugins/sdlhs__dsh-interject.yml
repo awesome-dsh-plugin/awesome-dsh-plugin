@@ -1,0 +1,6 @@
+url: https://github.com/sdlhs/dsh-interject
+name: sdlhs/dsh-interject
+category: session
+description:
+  en: 'Delivers a queued chat message at the next step boundary instead of waiting for the whole turn to end, without aborting the model call already in flight; aborting is an opt-in mode rather than the default.'
+  zh: '把排队中的消息提前到下一个 step 边界送达，而不是等整个 turn 结束；默认不打断已经在跑的模型调用，打断是显式开启的模式。'

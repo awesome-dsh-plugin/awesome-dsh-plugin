@@ -1,0 +1,6 @@
+url: https://github.com/YukimuraSol/dsh-ui-block
+name: YukimuraSol/dsh-ui-block
+category: ui
+description:
+  en: 'Renders a ui-blocks file named by a ::dsh-ui <name> [res=WxH]:: line in a sandboxed canvas, and turns an element token into a composer chip that serializes back to the token verbatim.'
+  zh: '把 ::dsh-ui <name> [res=WxH]:: 指向的 ui-blocks 文件渲染到沙箱画布，并把元素标记变成输入框 chip，回写时原样还原为标记。'
