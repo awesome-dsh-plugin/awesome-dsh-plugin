@@ -1,8 +1,0 @@
-url: https://github.com/xwtxbzz/dsh-proof
-name: xwtxbzz/dsh-proof
-category: dev
-description:
-  en: "Runs the project's own typecheck, lint, test and build commands when an agent reports a task finished, then records a workspace fingerprint so a recorded pass is invalidated as soon as the tree changes."
-  zh: "agent 报告任务完成时，跑项目自带的 typecheck / lint / test / build，并记录工作区指纹——代码树一变，之前记录的通过自动失效。"
-
-# gate re-check: repo age >= 1 day (satisfied 2026-11-01T12:48:23Z)
