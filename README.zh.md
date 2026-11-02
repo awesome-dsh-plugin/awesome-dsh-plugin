@@ -1554,6 +1554,7 @@ dsh plugin --profile web add dshmarket
 - [wwumit/dsh-phone#client](https://github.com/wwumit/dsh-phone/tree/main/client) — 苹果风格智能体手机：双面板电话/短信、RCS 群聊（信任门禁）、跨设备智能体消息（registry 收件箱桥）、L0–L4 信任徽章与证据审计。实验性：信任摘要非安全保证，短信/信令经运营方收件箱中继（运营方可见）；E2E 加密为演进方向。
 - [www02310/dsh-go](https://github.com/www02310/dsh-go) — DSH 启动画面：亮白跑马灯点亮后一笔写出 DeepSeek Harness，主窗口就绪后淡出。以运行时注入的插件形态安装；仓库另附可选的原生补丁版。
 - [wwwangzilin/dsh-role-cards](https://github.com/wwwangzilin/dsh-role-cards) — 把新建会话界面的选择器换成组合面板：角色预设卡与工作区卡各自成排，折叠时是胶囊按钮，展开后是两行可滚动的紧凑卡片。
+- [wx-98/DSH-folder](https://github.com/wx-98/DSH-folder) — DeepSeek Harness 右侧栏的文件夹资源管理器：打开任意本地文件夹、按类型显示彩色图标、重命名/新建/删除/复制文件与文件夹，并可把文件作为 @ 引用添加到对话。
 - [wx-yss/dsh-message-rail](https://github.com/wx-yss/dsh-message-rail) — Codex 风格左侧消息导航轨道：每条用户消息一个刻度，悬停预览、点击跳转，全历史一次索引。
 - [wydddddcool/dsh-hover-approve](https://github.com/wydddddcool/dsh-hover-approve) — DSH Web 侧边栏锚定气泡：会话待授权、提问、计划确认、目标阻断时在会话行旁自动弹出并一键处理，无需点进会话。
 - [wyzh0117/dsh-notebook](https://github.com/wyzh0117/dsh-notebook) — 侧边栏记事本：带标题与正文的记事，可插入图片（拒收视频）；点标题把正文复制到剪贴板；输入框里可用 @ 引用某条记事；可选在新会话时自动打开记事本。
@@ -2617,6 +2618,9 @@ dsh plugin --profile web add dshmarket
 - [CARVIN94/dsh-router-codebuddy](https://github.com/CARVIN94/dsh-router-codebuddy) — dsh-router 的 CodeBuddy 供应商插件。单账号负责轮询式 OAuth 登录与令牌刷新，选号、冷却与签到交由 dsh-router 核心处理。
 - [CARVIN94/dsh-router-qoder](https://github.com/CARVIN94/dsh-router-qoder) — dsh-router 的 Qoder 供应商插件，同时覆盖国内版与国际版。以个人访问令牌认证、对 Qoder 的 cosy 网关签名请求，并把上游 SSE 转成 OpenAI SSE；模型列表同时上报上游显示名与 key，选号与冷却仍由 dsh-router 核心处理。
 - [CARVIN94/dsh-router-traework](https://github.com/CARVIN94/dsh-router-traework) — dsh-router 的 TRAE SOLO 供应商插件，移植自 traework2api。提供 traework 供应商这一免费 SOLO 聊天通道，并向 dsh-router 核心上报单账号状态。
+- [cc1104666/dsh-plugins#dsh-grok-online](https://github.com/cc1104666/dsh-plugins/tree/main/packages/dsh-grok-online) — 在本机跑一个 OpenAI 兼容反代，把 DSH 的对话请求转给 grok.online，无需 API key 即可在模型选择器里用它的两个对话模型。
+- [cc1104666/dsh-plugins#dsh-grok3ai](https://github.com/cc1104666/dsh-plugins/tree/main/packages/dsh-grok3ai) — 直连 grok3ai.org 仅用 iframe 嵌进去的两个公开 Hugging Face Space（MiniMax-VL-01 与 Llama-2-7B-Chat），当作 OpenAI 兼容模型使用。
+- [cc1104666/dsh-plugins#dsh-lightvela](https://github.com/cc1104666/dsh-plugins/tree/main/packages/dsh-lightvela) — 微信扫码登录 LightVela，从你自己的实例里读出模型网关凭据并写进 llm-pi-ai，让套餐里的模型出现在模型选择器中。
 - [ccccwwwxx/dsh-bifenggang](https://github.com/ccccwwwxx/dsh-bifenggang) — 按时间做模型路由：在设置页定义工作日峰谷时段与各时段使用的 Provider/模型（候选来自 harness 已注册的 API 与订阅账号），打开开关后由该策略决定每次请求的模型与思考档。开关按会话独立，会话列表每行带指示灯显示各自状态，设置页顶部写明此刻生效的模型与原因。无任何时段命中的日子（周末、假期）使用第一个方案的主力模型；高级思考模型是另一根轴，只在会话自身要求 max 思考时使用。
 - [Cci-65/deepseek-harness-plugin](https://github.com/Cci-65/deepseek-harness-plugin) — 为第三方模型配置推理强度档位，并在输入栏提供模型与强度选择器。
 - [ccl4-56-23-5/DSH-Plugins#api-switcher](https://github.com/ccl4-56-23-5/DSH-Plugins/tree/main/Api-Switcher插件/2.3.0) — 管理API供应商与启用模型，在原生模型菜单中按供应商分组切换并搜索模型。
@@ -3434,6 +3438,7 @@ dsh plugin --profile web add dshmarket
 - [mrzhangkris/dsh-session-pruner](https://github.com/mrzhangkris/dsh-session-pruner) — 全类型会话生命周期管理：一次性子 agent 完成后归档，闲置的可续聊子 agent 与主会话归档（可恢复），容量上限、投影缓存清理，以及热重载设置面板。
 - [mswinandmc/dsh-session-port](https://github.com/mswinandmc/dsh-session-port) — 把会话连同附件导出为压缩包，或把这样的压缩包导入为当前工作区里的新会话。
 - [MuWinds/dsh-archived-sessions](https://github.com/MuWinds/dsh-archived-sessions) — 归档会话管理：浏览已归档会话，支持恢复（取消归档）与清空。
+- [myqy91615-web/dsh-conversation-folders](https://github.com/myqy91615-web/dsh-conversation-folders) — 每个会话一个专属文件夹：自动存档对话记录，每次调研结束后把产出的表格、图表等文件按类别归档并自动命名，会话菜单中提供删除入口，删除会话时连同文件夹一起彻底删除。
 - [Mzgnk/dsh-bz](https://github.com/Mzgnk/dsh-bz) — 三级规则注入器：长对话里反复重发规则，带熔断、内容指纹去重、会话持久化与设置面板编辑器。
 - [mzzsfy/dsh-plugin#dsh-session-manager](https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-session-manager) — 会话管理：超期会话自动归档（阈值可配），归档面板支持取消归档，删除移入系统回收站可还原。
 - [ne-ilyxa/dsh-session-drafts](https://github.com/ne-ilyxa/dsh-session-drafts) — Cursor 风格的新会话：每次点击都新建一个空白草稿会话（首条消息前即持久化），不再复用工作区唯一的空会话；侧栏新增草稿切换器，可同时保留多个空会话。
