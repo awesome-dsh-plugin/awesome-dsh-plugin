@@ -1,0 +1,6 @@
+url: https://github.com/nextnowlabs/dsh-ark-toolkit
+name: nextnowlabs/dsh-ark-toolkit
+category: vision
+description:
+  en: 'Image generation and speech synthesis through Volcengine Ark for DeepSeek Harness: Doubao Seedream text-to-image as ark_generate_image, and Doubao TTS 2.0 as ark_speak.'
+  zh: 通过火山方舟接入豆包 Seedream 文生图（ark_generate_image）与豆包语音合成 2.0（ark_speak）。
