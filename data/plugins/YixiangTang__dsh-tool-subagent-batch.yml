@@ -1,0 +1,6 @@
+url: https://github.com/YixiangTang/dsh-tool-subagent-batch
+name: YixiangTang/dsh-tool-subagent-batch
+category: tools
+description:
+  en: 'Rolling-window batch scheduler for DeepSeek Harness subagents: one subagent_batch call carries a queue of independent subtasks plus a user-owned concurrency window, a settled child''s slot is refilled immediately, and the call returns every child''s final answer, stop reason and child id as one acceptance report. async mode keeps the pool running in the background for subagent_batch_status, and the window comes from config, DSH_SUBAGENT_BATCH_CONCURRENCY or a hardware recommendation.'
+  zh: 'DeepSeek Harness 子智能体的滚动窗口批量调度器：一次 subagent_batch 调用携带一队互相独立的子任务和由用户掌握的并发窗口，任一子智能体一结束就立刻补位，结束时把每个子智能体的最终回答、停止原因与子会话 id 作为一份验收报告一并返回。async 模式让整个池子在后台运行、用 subagent_batch_status 收取结果；并发窗口来自配置、DSH_SUBAGENT_BATCH_CONCURRENCY 或硬件推荐值。'
