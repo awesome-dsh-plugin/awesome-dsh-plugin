@@ -1,0 +1,7 @@
+url: https://github.com/kanpengfei/dsh-prompt-sortable
+name: kanpengfei/dsh-prompt-sortable
+category: ui
+tarball: https://github.com/kanpengfei/dsh-prompt-sortable/releases/download/v0.5.0/dsh-prompt-sortable-0.5.0.tgz
+description:
+  en: Fork of dsh-prompt with draggable custom template ordering — drag the handle in Settings to reorder custom prompts (saved to the host); presets and usage sorting unchanged, extra panels removed.
+  zh: dsh-prompt 的分支版，支持自定义模板拖拽排序：设置页拖动 ⠿ 手柄即可调整顺序并自动保存；预制模板与用量排序不变，远程模式/诊断日志等面板已移除。
