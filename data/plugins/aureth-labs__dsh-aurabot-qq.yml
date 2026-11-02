@@ -1,5 +1,5 @@
-url: https://github.com/accomplish07zrh-eng/dsh-aurabot-qq
-name: accomplish07zrh-eng/dsh-aurabot-qq
+url: https://github.com/aureth-labs/dsh-aurabot-qq
+name: aureth-labs/dsh-aurabot-qq
 category: identity
 description:
   en: 'Puts the agent on QQ as a persona character through SnowLuma (OneBot v11): private and group chat, voice notes, stickers, Qzone diary, Bilibili browsing, song covers, image generation, long-term memory and mood. Every feature is a module you can switch off, replace or extend locally — hot-reloaded modules can also rewrite group-reply decisions, prompts, outgoing messages and per-chat model choice. Safe by default (master switch off, dry run on).'
