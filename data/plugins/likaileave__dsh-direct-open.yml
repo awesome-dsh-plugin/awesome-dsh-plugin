@@ -1,0 +1,7 @@
+url: https://github.com/likaileave/dsh-direct-open
+name: likaileave/dsh-direct-open
+category: ui
+description:
+  en: 'Open delivered files, changed-file rows and inline file mentions in the system default app with a left click; right-click takeover is configurable: all menus, only where DSH has none, or never.'
+  zh: '左键以系统默认程序打开交付文件、改动文件行和对话中的文件提及；右键接管方式可选：全部接管、只接管原生没有菜单的、或完全不接管。'
+tarball: https://github.com/likaileave/dsh-direct-open/releases/latest/download/dsh-direct-open.tgz
