@@ -1,0 +1,6 @@
+url: https://github.com/1720198650/dsh-cognition-engine
+name: 1720198650/dsh-cognition-engine
+category: memory
+description:
+  en: Bitemporal memory with strict / historical / belief / associative recall, a constructivist schema graph, dialectical reflection and a long-horizon task ledger. Zero runtime dependencies, pure JSON storage.
+  zh: 双时态记忆（strict / historical / belief / associative 四种口径）+ 建构主义图式网络 + 三段式辩证反思 + 长程任务台账。零运行时依赖，纯 JSON 落盘。
