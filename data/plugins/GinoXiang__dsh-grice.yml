@@ -1,8 +1,0 @@
-url: https://github.com/GinoXiang/dsh-grice
-name: GinoXiang/dsh-grice
-category: ui
-description:
-  en: "Two split composer controls: a Grice switch with a tone preset menu, and an output-form switch with its own preset menu; each session's system prompt follows the selections, with a preset settings page."
-  zh: "输入框里两个分体控件：格赖斯基调开关 + 预设菜单、产出形态开关 + 预设菜单；按会话注入系统提示词，并带预设管理设置页。"
-icon: https://raw.githubusercontent.com/GinoXiang/dsh-grice/main/docs/icon-180.png
-tarball: https://github.com/GinoXiang/dsh-grice/releases/latest/download/dsh-grice.tgz
