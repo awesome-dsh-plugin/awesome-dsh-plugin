@@ -2,5 +2,5 @@ url: https://github.com/SUKJG1052/DSH-Plugin-Session-Delete
 name: SUKJG1052/DSH-Plugin-Session-Delete
 category: session
 description:
-  en: 'Permanently delete sessions from the DeepSeek Harness UI: a header trash button and a sidebar menu item behind a risk-consent dialog, plus a workbench_session_delete agent tool.'
-  zh: '在 DeepSeek Harness 界面里彻底删除会话：会话头部垃圾桶按钮与侧栏「…」菜单项（带风险确认弹窗），另提供 workbench_session_delete agent 工具。'
+  en: 'Permanently delete sessions from the DeepSeek Harness UI: a header trash button and a sidebar menu item behind a risk-consent dialog, plus a workbench_session_delete agent tool. Started from lsz-asd/dsh-plugin-session-delete and maintained independently since v0.4.0; do not install it alongside that plugin, since both register the same workbench_session_delete tool.'
+  zh: '在 DeepSeek Harness 界面里彻底删除会话：会话头部垃圾桶按钮与侧栏「…」菜单项（带风险确认弹窗），另提供 workbench_session_delete agent 工具。从 lsz-asd/dsh-plugin-session-delete 派生并自 v0.4.0 起独立维护；请勿与上游同装，两者都会注册同一个 workbench_session_delete 工具。'

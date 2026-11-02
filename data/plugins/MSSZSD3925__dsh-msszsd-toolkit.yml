@@ -2,6 +2,6 @@ url: https://github.com/MSSZSD3925/dsh-msszsd-toolkit
 name: MSSZSD3925/dsh-msszsd-toolkit
 category: tools
 description:
-  en: "Drive existing DSH sessions from QQ: ask another session a question, manage keys and file slots with a guard, pause a running turn, restart DSH and resume, and inject peak-hour discipline. Plugin detail page has per-feature switches."
-  zh: "用 QQ 远程驾驶已有的 DSH 会话：跨会话提问（带上下文守卫）、分享槽与团队槽（一令牌一目录，带监管）、界面暂停按钮、重启 DSH 并自动续跑、贵时段纪律注入。插件详情页带分模块开关。"
+  en: 'Drive existing DSH sessions from QQ (needs an OneBot 11 implementation such as NapCat running alongside): ask another session a question, manage share/team slots with a guard, pause a running turn, restart DSH on Windows and resume (via the install-restart.ps1 scheduled task), and inject peak-hour discipline. Plugin detail page has per-feature switches.'
+  zh: '用 QQ 远程驾驶已有的 DSH 会话（需本机另跑 OneBot 11 实现，如 NapCat）：跨会话提问（带上下文守卫）、分享槽与团队槽（一令牌一目录，带监管）、界面暂停按钮、在 Windows 上重启 DSH 并自动续跑（依赖 install-restart.ps1 创建的计划任务）、贵时段纪律注入。插件详情页带分模块开关。'
 tarball: https://github.com/MSSZSD3925/dsh-msszsd-toolkit/releases/download/v0.5.0/dsh-msszsd-toolkit-0.5.0.tgz

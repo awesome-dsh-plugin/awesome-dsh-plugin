@@ -4,5 +4,5 @@ category: docs
 icon: https://raw.githubusercontent.com/4444Hao/qiaodoc-dsh/main/assets/qiaodoc-icon-256.png
 tarball: https://github.com/4444Hao/qiaodoc-dsh/releases/download/v1.2.0-dev.7/qiaodoc-dsh-1.2.0-dev.7.tgz
 description:
-  en: 'Read documents beside native DSH chats, explain or translate selected passages, and return through document history.'
-  zh: '在 DSH 原生对话旁阅读文档、解释翻译选段，并通过文档历史返回原会话。'
+  en: 'Derived from joeseesun/qiaomu-reader-dsh (not an official successor; do not install both - both use the qiaomu-reader plugin id): read documents beside native DSH chats, explain or translate selected passages, and return through document history. Development preview verified only on Windows with DSH 0.2.1-rc.5.'
+  zh: '基于 joeseesun/qiaomu-reader-dsh 二次开发（并非上游官方后续版本；两者都用 qiaomu-reader 插件 id，不要同装）：在 DSH 原生对话旁阅读文档、解释翻译选段，并通过文档历史返回原会话。当前为开发试用版，仅验证 Windows + DSH 0.2.1-rc.5。'

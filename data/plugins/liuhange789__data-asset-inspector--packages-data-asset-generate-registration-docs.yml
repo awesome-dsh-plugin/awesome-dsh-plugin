@@ -2,5 +2,5 @@ url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data
 name: liuhange789/data-asset-inspector#generate-registration-docs
 category: tools
 description:
-  zh: "登记文档生成插件 — 数据说明+来源说明+处理说明+登记申请表"
-  en: "Registration document generation plugin — data description + source statement + processing statement + registration application form."
+  zh: '登记文档生成插件 - 生成三份登记材料：数据描述、来源合法性声明与产权归属说明（三权分置）。'
+  en: 'Registration document generation plugin - generates the three registration materials: data description, source legality statement, and ownership explanation (three-rights separation).'

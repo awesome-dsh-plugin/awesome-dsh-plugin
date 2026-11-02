@@ -2,5 +2,5 @@ url: https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-fi
 name: lznnnnn1998/dsh-artcraft#plugin-figcraft
 category: tools
 description:
-  en: "Drive FigCraft from the agent: create frames, components and auto layout, set fills, strokes and effects, build prototypes, and export PNG, SVG, PDF or code. Exposes both FigCraft's command ids and its own MCP server."
-  zh: "让智能体驱动 FigCraft：创建画框、组件与自动布局，设置填充、描边与效果，搭建原型，并导出 PNG、SVG、PDF 或代码。同时暴露 FigCraft 的命令 id 与自带的 MCP server。"
+  en: "Drive FigCraft from the agent: create frames, components and auto layout, set fills, strokes and effects, build prototypes, and export PNG, SVG, PDF or code. Exposes both FigCraft's command ids and its own MCP server. Requires the matching ArtCraft app CLI installed locally; it is not bundled."
+  zh: "让智能体驱动 FigCraft：创建画框、组件与自动布局，设置填充、描边与效果，搭建原型，并导出 PNG、SVG、PDF 或代码。同时暴露 FigCraft 的命令 id 与自带的 MCP server。需本机安装对应的 ArtCraft 应用 CLI，插件不附带应用本体。"

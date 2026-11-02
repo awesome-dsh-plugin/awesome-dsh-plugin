@@ -2,5 +2,5 @@ url: https://github.com/tonyZ1987/DSH-H.D.D-skin
 name: tonyZ1987/DSH-H.D.D-skin
 category: theme
 description:
-  zh: "把 DSH 整个界面换成《绝区零》H.D.D 空洞深潜系统的深蓝终端皮肤：侧栏、输入框、会话页与设置面板整体换装，带一整套开机动画（拨片 → 大眼 → 落界面）、可开关的角色卡与工作区三色角标；纯客户端插件，关掉即回原生白底。"
-  en: "Turns the whole DSH interface into the H.D.D Hollow Deep Dive terminal from Zenless Zone Zero: sidebar, composer, conversation and settings are all reskinned, with a full boot sequence (film leader, the eye, landing), a toggleable character card and tri-state workspace badges. Pure client-side plugin; switch it off and DSH returns to its native light UI."
+  zh: '把 DSH Web 界面换成《绝区零》H.D.D 空洞深潜系统的深蓝终端：侧栏与输入框整体换装。插件含一个只读的宿主半边与前端皮肤；关掉即回 DSH 原生白底。'
+  en: 'Turns the DSH web UI into the H.D.D Hollow Deep Dive terminal from Zenless Zone Zero: the sidebar and composer are reskinned. Ships a small read-only host half plus the web skin; switch it off and DSH returns to its native light UI.'

@@ -2,5 +2,5 @@ url: https://github.com/643048695/dsh-subagent-role-router
 name: 643048695/dsh-subagent-role-router
 category: model
 description:
-  en: "Routes subagent delegations by role with candidate pools, cross-provider failover and fork window slicing; shows running subagents in a header panel with duration and token counts; supports mid-run and batch model switching and exposes routing tools the model can call."
-  zh: "按角色为子代理派发选路由，带候补池、跨供应商故障转移与 fork 活跃窗口切片；标题栏显示正在运行的子代理及其时长与 token；支持运行中与批量换模型，并给模型提供可调用的路由工具。"
+  en: 'Derivative of dingminhua/dsh-subagent-default-model (do not install both): routes subagent delegations by role with candidate pools, cross-provider failover and fork window slicing; shows running subagents in a header panel with duration and token counts; supports mid-run and batch model switching and exposes routing tools the model can call.'
+  zh: '基于 dingminhua/dsh-subagent-default-model 的衍生作品（不要与上游同装）：按角色为子代理派发选路由，带候补池、跨供应商故障转移与 fork 活跃窗口切片；标题栏显示正在运行的子代理及其时长与 token；支持运行中与批量换模型，并给模型提供可调用的路由工具。'

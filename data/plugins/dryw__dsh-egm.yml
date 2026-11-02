@@ -2,5 +2,5 @@ url: https://github.com/dryw/dsh-egm
 name: dryw/dsh-egm
 category: workflow
 description:
-  en: "Design-review gate for DeepSeek Harness: a context-rich Elephant session drafts the design, then fresh, zero-context, read-only Goldfish reviewers stress-test it before implementation."
-  zh: "面向 DeepSeek Harness 的设计评审闸门：具备完整上下文的“大象”起草设计，再由零上下文的只读“金鱼”评审者严格审查，通过后才进入实现。"
+  en: 'Design-review gate for DeepSeek Harness, a DSH port of Google''s Elephant-Goldfish Model: a context-rich Elephant session drafts the design, then fresh, zero-context, read-only Goldfish reviewers stress-test it before implementation. Registers the `egm` plugin id - do not install it alongside other EGM ports such as 643048695/dsh-egm.'
+  zh: '面向 DeepSeek Harness 的设计评审闸门，移植自 Google 的 Elephant-Goldfish Model：具备完整上下文的“大象”起草设计，再由零上下文的只读“金鱼”评审者严格审查，通过后才进入实现。注册的插件 id 为 `egm`，请勿与其他 EGM 移植版（如 643048695/dsh-egm）同时安装。'
