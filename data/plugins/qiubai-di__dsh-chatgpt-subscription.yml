@@ -1,0 +1,6 @@
+url: https://github.com/qiubai-di/dsh-chatgpt-subscription
+name: qiubai-di/dsh-chatgpt-subscription
+category: model
+description:
+  en: Connect ChatGPT subscription models to DSH via OAuth, preserving local tool-call identity across conversation replay.
+  zh: 通过 OAuth 将 ChatGPT 订阅模型接入 DSH，并在会话回放中保留本地工具调用身份。
