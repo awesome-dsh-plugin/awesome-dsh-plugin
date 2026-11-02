@@ -601,6 +601,7 @@ dsh plugin --profile web add dshmarket
 - [Frog755/dsh-prompt-vault](https://github.com/Frog755/dsh-prompt-vault) — 输入框上方的提示词库：📚 按钮展开可搜索面板，点条目一键填入草稿（追加不覆盖）；数据以 JSON 文件保存在 Host 侧。
 - [Frog755/dsh-wallpaper](https://github.com/Frog755/dsh-wallpaper) — DSH Web 持久化背景图/视频插件：在 设置 -> 通用 中提供壁纸卡片，可选本地图片或 MP4（最大 300 MB），调节表层透明度与模糊；检测到 ffmpeg/ffprobe 时在本机把视频压缩为 H.264；媒体保存到 ~/.dsh/wallpapers；并将 Web 服务固定到 9191 端口以便重启后恢复壁纸。
 - [FSMargoo/dsh-at-file](https://github.com/FSMargoo/dsh-at-file) — Codex 风格的 `@file` 文件引用，输入框里直接搜索并引用工作区文件。
+- [fu-silent/dsh-sidebar-home](https://github.com/fu-silent/dsh-sidebar-home) — 在侧栏新增「主页」面板用于选择工作区；进入专注后侧栏只显示该工作区的会话，其他工作区折叠在底部，退出专注即恢复原生侧栏。
 - [FujiwaraReisen/dsh-live2dwaifu](https://github.com/FujiwaraReisen/dsh-live2dwaifu) — 在 DSH 网页右下角放一个 Live2D 角色：会眨眼、会呼吸、说话时嘴动、心情变了眉毛跟着动，用自己的对话气泡聊天，记得住之前说过的，能喂语料，也会配表情包。模型不用内置，谁装谁放自己的文件夹。
 - [functy23/dsh-fullscreen-settings](https://github.com/functy23/dsh-fullscreen-settings) — 让 DSH 的设置弹窗以整页全屏打开，并把退出入口移到左上角的返回行。
 - [FunnyDiodio/dsh-workspace-picker-path](https://github.com/FunnyDiodio/dsh-workspace-picker-path) — 在通用设置中新增一行，控制点击"添加工作区"时目录选择框从哪里打开：固定自定义路径（可输入、粘贴或可视化选取），或上次确认的目录。容忍带引号与中文路径，并提供「此电脑」层以跨盘选择。
@@ -2789,6 +2790,7 @@ dsh plugin --profile web add dshmarket
 - [kangjiazhen/workbuddy2everything](https://github.com/kangjiazhen/workbuddy2everything) — 通过挂载 dsh-llm-workbuddy 注册 workbuddy 模型 provider，托管本地 wb2api 网关，并在同一网关前内置两条协议桥：给 OpenAI Codex CLI 的 Responses，以及给 Claude Code 与 Claude 桌面端的 Anthropic Messages——后两者以生成的 claude-wb-… id 看到网关模型。已在运行或已注册的部分会跳过，并通过状态工具汇报各环节状况。需本机有 wb2api 网关并有 WorkBuddy 账号。
 - [KannaKuron/dsh-agent-lang](https://github.com/KannaKuron/dsh-agent-lang) — 模型产出文本的三个语言通道——工具调用描述（所有工具调用卡片标题，含 PTC 类预设的 run_code）、思考与回复——各自可跟随网页界面语言、强制指定语言或关闭（默认仅描述通道跟随界面语言）。host 侧注入一条全局 runtime-context 提示指示，client 半上报界面语言，设置里的插件卡片负责切换。
 - [katsos/dsh-claude-cli](https://github.com/katsos/dsh-claude-cli) — LLM 供应商：把本机已安装的 Claude Code CLI 作为模型后端，请求走已订阅的 Claude 账号，无需按量计费的 API key；原生工具调用经 MCP 桥接。
+- [keb-ght/dsh-web-proxy](https://github.com/keb-ght/dsh-web-proxy) — 把已登录的 DeepSeek 网页账号包装成 OpenAI / Anthropic 兼容接口，支持工具调用、图片输入、账号池与本地管理台。
 - [ken95573/dsh-model-show](https://github.com/ken95573/dsh-model-show) — DSH Web 对话框模型选择器的触发器显示「供应商/模型」；下拉列表与其搜索均不变。
 - [kennethfan/dsh-bailian-catalog](https://github.com/kennethfan/dsh-bailian-catalog) — DSH 设置页里的百炼（DashScope / Model Studio）模型目录：列出当前 API Key 可用的全部模型、按模型家族分组，可探测某模型是否真的可调用（未开通会返回 403，而 DSH 会把它显示成密钥无效），探测不通过的模型拒绝加入配置，并显示当前会话的上下文窗口与剩余额度。百炼 sk- Key 没有余额接口，因此这里的额度指上下文额度。
 - [kialajin-l/DSH_Plus#dsh-model-picker](https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-model-picker) — 输入框内的 Codex 风格模型选择器：列出 profile 全部 provider/model，四档推理力度，选择按会话记忆；原生选择器的禁用补丁随包内置。
@@ -7691,6 +7693,7 @@ dsh plugin --profile web add dshmarket
 - [zhengjy01/dsh-updater](https://github.com/zhengjy01/dsh-updater) — 跟踪 DSH 官方版本并一键更新：读取 npm dist-tags 与 GitHub 更新说明，列出当前版本到目标版本之间每一个版本的更新点，给出分级风险清单（预发布、破坏性变更措辞、本机多份安装与 PATH 不一致、插件 dsh.engines.dsh 兼容性、备份与回滚可用性），再把安装交给分离助手——用 rename 原子备份当前安装、执行 npm、校验落地结果、用原命令重启，新版本起不来就自动回滚。
 - [zhengqiuyang/dsh-janitor](https://github.com/zhengqiuyang/dsh-janitor) — 注册 janitor_scan 工具：对会话遗留物（计划文档、临时脚本）给出确定性、可审阅的清理计划，逐文件裁决附证据；只扫描，永不删除。
 - [Zhenyu98/dsh-context-doctor](https://github.com/Zhenyu98/dsh-context-doctor) — 上下文注入审计：统计指令链/技能目录/工具 schema 的 token 成本，检测重复与冲突。
+- [zhiwuli0228/dsh-env-manager](https://github.com/zhiwuli0228/dsh-env-manager) — 基于文件的 DSH 环境注册表：通过面板和模型工具管理环境、服务、部署以及操作到 Skill 的绑定。
 - [Zhr65/dsh-skill-auditor#npm](https://github.com/Zhr65/dsh-skill-auditor/tree/main/npm) — 审计你已装的 skill 与插件：按任务描述路由到该调的工具，对比 npm registry 发现版本落后、读宿主日志发现运行时故障，并报告插件的哪些工具你从没调用过。注册 9 个工具：can、find、status、recommend、check、scan、probe、run、suggest。基于 Python 3.8+，无第三方依赖。注册工具名均带 skill_audit_ 前缀，例如 skill_audit_can。
 - [zhxnix/dsh-wx-preview](https://github.com/zhxnix/dsh-wx-preview) — 在 DSH 右边栏预览原生微信小程序，提供本地运行时与 WXML 源码定位。
 - [zhz8888/dsh-android-emulator-helper](https://github.com/zhz8888/dsh-android-emulator-helper) — 在 DeepSeek Harness 里驱动 Android 开发工具链：23 个 android_* 工具负责探测 SDK、创建与管理 AVD、启停模拟器、生成 Kotlin/Compose 工程、用 Gradle 构建运行，并完成安装、启动、截图、logcat 与 UI 操作。设置页集中管理 SDK、模拟器、API 级别、构建与输出参数。
@@ -8230,6 +8233,7 @@ dsh plugin --profile web add dshmarket
 - [cxdyun/dsh-skills-marketplace](https://github.com/cxdyun/dsh-skills-marketplace) — 类 Codex 插件市场的 DSH 技能管理器。
 - [cynch18/plugin-switch](https://github.com/cynch18/plugin-switch) — 插件清单页滑块开关：在设置 → 插件 → 插件清单实时启用/停用任意插件，无需重启；支持分组/筛选、批量开关、撤销与自动备份。
 - [Dariandai/dsh-starter-pack](https://github.com/Dariandai/dsh-starter-pack) — 精选插件启动包：从设置页或 /setup 命令一键批量安装并配置 4 组共 15 个经过筛选的社区插件。
+- [darkings/dsh-plugin-update-center](https://github.com/darkings/dsh-plugin-update-center) — 尊重 DSH 原始风格的插件更新插件：在侧边栏检查、排队更新已安装插件，支持快照回滚、安装后校验、卸载残留清理与离线恢复。
 - [Diluka/dsh-agent-plugin-market](https://github.com/Diluka/dsh-agent-plugin-market) — 在网页设置页管理基于 Git 的 DSH 插件市场、已安装的 agent 技能和可选 Codex hooks。
 - [DogEgg-alR/dsh-plugin-installer](https://github.com/DogEgg-alR/dsh-plugin-installer) — 在插件页的一个标签里安装、更新和卸载 DSH 插件。安装直接调用 profile 进程内的 pluginManager 服务，因此桌面端运行中也能装，不必只靠命令行。更新委托给 dsh-market 的公开 update API v1（该区需要装 dsh-market），把市场报告的阶段、百分比与已下载字节显示成进度条，市场提供恢复点时给出一键回滚。卸载被「插件正在使用中」拒绝时，先停用该组合包，再从 profile 清单里摘除，并把残留文件记入 profile 下的待清理队列，下次启动后自动清扫。
 - [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) — 在 DeepSeek Harness 设置页内浏览、搜索并安装社区插件，支持分类筛选、一键更新与停用，以及主题切换与配置备份。
