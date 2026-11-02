@@ -1495,7 +1495,7 @@ dsh plugin --profile web add dshmarket
 - [WhatCannotBeSaid/dsh-blackhole-radio-lab](https://github.com/WhatCannotBeSaid/dsh-blackhole-radio-lab) — 从左栏卡片打开全屏 3D 黑洞舞台，2.45 万台真实网络电台嵌在吸积盘里环绕运行；拖动环绕、按住穿过虫洞进入星团、点星点播放，带搜索、13 个流派筛选、收藏与流内 ICY 曲目信息。
 - [WhatCannotBeSaid/dsh-im-workspace-buttons](https://github.com/WhatCannotBeSaid/dsh-im-workspace-buttons) — 在官方「工作区」标题行上，为每个已接入账号的 dsh-im 通道添加一个 28x28 图标按钮。点击后侧栏切到该通道视图，只显示它的会话、隐藏其余所有行；再次点击回到官方列表。只有已接入账号的通道才会出现按钮。
 - [WhatCannotBeSaid/dsh-session-eva-status](https://github.com/WhatCannotBeSaid/dsh-session-eva-status) — 按官方状态给 DSH 侧栏会话行染色，配色取自福音战士：等你处理的会话为蓝色左轨，主视图打开的那条为红色左轨，已结束但未查看为紫色左轨，置顶行的标题为静态彩虹。左侧轨道按模式分档——暗档保留原色，亮档换成对浅底 ≥4.5:1 的压暗变体——分档读的是 DSH 自己的暗色标记；未读的紫色轨道两种模式共用。只读取官方 Client 服务，自身不持有状态、不轮询，也没有宿主侧代码。
-- [whiteguo233/dsh-openbiliclaw](https://github.com/whiteguo233/dsh-openbiliclaw) — OpenBiliClaw 的 DSH 消费侧插件：提供推荐、收藏列表、苏格拉底式对话、画像面板和 Agent Bridge 工具。
+- [whiteguo233/dsh-openbiliclaw](https://github.com/whiteguo233/dsh-openbiliclaw) — OpenBiliClaw 的 DSH 消费侧插件：右侧抽屉提供推荐、收藏/稍后再看、苏格拉底式对话、画像与设置，并注册 22 个 Agent Bridge 工具，让 Agent 能读推荐、答探测、存内容。
 - [WhitePlusMS/dsh-input-plus](https://github.com/WhitePlusMS/dsh-input-plus) — 在组合框中使用 `@` 搜索并插入工作区文件和目录路径，并通过 `/h` 菜单复用当前会话的问题。
 - [whiteS18/dsh-mcp-servers-panel](https://github.com/whiteS18/dsh-mcp-servers-panel) — 在设置中提供 MCP Servers 管理面板：新增、编辑、启停、删除服务器，支持用户/项目作用域与表单/JSON 双模式编辑，并自动把发现的 MCP 工具注册为对话原生工具。
 - [whiteS18/dsh-terminal-button](https://github.com/whiteS18/dsh-terminal-button) — DeepSeek Harness 内嵌终端插件：在右侧栏（DockKit Tab）或输入框下方以沉底抽屉形式提供界面内嵌的交互式终端，跟随官方主题与工作区目录，支持 PSReadLine 尺寸保护与位置热切换。
@@ -4715,7 +4715,7 @@ dsh plugin --profile web add dshmarket
 - [Mr-Neutr0n/dsh-medseek](https://github.com/Mr-Neutr0n/dsh-medseek) — 面向临床人员的文档与参考工具包：SOAP/APSO 病程录、入院 H&P、SBAR/I-PASS 交接班、 出院小结、Safe Harbor 脱敏、患者须知可读性评分、完整性检查，以及来自 FDA 说明书、 MedlinePlus、PubMed 和 ClinicalTrials.gov 的带出处检索。仅起草不决定， 内置 PHI 外发守卫；非医疗器械。
 - [mrpulor-gh/dsh-nuphus-mcp](https://github.com/mrpulor-gh/dsh-nuphus-mcp) — nuphus-mcp 官方 DSH 插件（由 nuphus-mcp 维护者发布）：桌面 + 浏览器自动化（38 个工具），配 PaddleOCR 元素感知与 Chrome CDP 浏览，经常驻 stdio MCP 子进程接入。
 - [MrWeiCodes/dsh-fs-encoding](https://github.com/MrWeiCodes/dsh-fs-encoding) — 文件编码守护：为 GBK、Big5、Shift-JIS、EUC-KR、Windows-125x、UTF-16、UTF-32 文件提供字节级无损读写与编辑，改完仍是原编码而不是被悄悄转成 UTF-8；UTF-8 BOM 原样保留，CRLF/LF/CR 换行符保持，编码表示不了的字符拒绝写入而不是写成「?」；非 UTF-8 文件会列出候选编码，模型可显式指定重读。
-- [MSSZSD3925/dsh-toolkit](https://github.com/MSSZSD3925/dsh-toolkit) — 五个 DSH 小功能合一个插件：用 QQ 远程驾驶已有会话（需本机另跑 OneBot 11 实现，如 NapCat）、向另一个会话提问（带上下文守卫）、界面暂停按钮、在 Windows 上重启 DSH 并可选自动续跑（依赖 install-restart.ps1 创建的计划任务）、贵时段纪律注入。
+- [MSSZSD3925/dsh-msszsd-toolkit](https://github.com/MSSZSD3925/dsh-msszsd-toolkit) — 用 QQ 远程驾驶已有的 DSH 会话：跨会话提问（带上下文守卫）、分享槽与团队槽（一令牌一目录，带监管）、界面暂停按钮、重启 DSH 并自动续跑、贵时段纪律注入。插件详情页带分模块开关。
 - [MuyuYanran/dsh-rea-mcp-lite#dsh-plugin](https://github.com/MuyuYanran/dsh-rea-mcp-lite/tree/main/dsh-plugin) — 同一个仓库里的 REA 逆向工具网关（rea-mcp-lite）的设置页：勾选加载哪些功能族、看清每族的工具数与 token 成本、把当前加载组合存成命名预设随时切回、热切换无需重启，并可检查本仓库与 REA 的更新、归类 REA 新版新增的工具。页面按功能分区，带子菜单、筛选与分页。需已装 REA（rea-agents），并按仓库 README 把网关注册为名为 rea 的 MCP 服务器。
 - [MuzeWinter/dscomputer-control](https://github.com/MuzeWinter/dscomputer-control) — 为 dsh 提供 Windows 桌面自动化：14 个工具，可枚举应用与窗口、抓取被遮挡也能截的窗口截图、读取无障碍树，并执行真实输入——点击、输入文字（含中文）、按组合键、滚动与拖拽。加载机器上已安装的官方电脑控制运行时（@oai/sky），按厂商目录枚举发现，引擎升级换目录也不会失效。
 - [nabehkh-source/primesync-ai-studio](https://github.com/nabehkh-source/primesync-ai-studio) — PrimeSync AI Studio 托管策略研究 MCP 服务的实验性配置包，使用官方 MCP 客户端和 mcp-remote OAuth 桥接，需具备 Studio 使用权限。OAuth 授权与工具调用尚未完成端到端验证；启动 Harness 前须在同一电脑上通过命令行手动登录，否则工具可能无法显示。仅面向 DSH 0.2.1-rc.2；首次启动时通过 npx 下载 mcp-remote 0.15.2。
@@ -6331,6 +6331,7 @@ dsh plugin --profile web add dshmarket
 - [Hercules-debug/dsh-flock](https://github.com/Hercules-debug/dsh-flock) — 无编排者的自组织多智能体集群。真实 DSH 子智能体通过共享的只追加日志协调，由各智能体自行决定读写时机，无拓扑、每个智能体只派发一次；另附快照模式，由调度层把邻居视图冻结进提示词并驱动环形/网状/群集收敛。
 - [heyadhithya/fullstack-expert](https://github.com/heyadhithya/fullstack-expert) — 以证据驱动的全栈工程工作流：先勘察后规划、要求显式验证证据、敏感操作走审批门控。
 - [hhuangpanda/dsh-automation](https://github.com/hhuangpanda/dsh-automation) — 在全新的 DSH 会话中运行单次或周期 Agent 任务，支持自然语言计划、可视化计划编辑和会话关联历史。支持自定义模型、技能、失败时暂停以及权限设置。
+- [HMYDK/ai-native-sdlc-dsh#sdlc](https://github.com/HMYDK/ai-native-sdlc-dsh/tree/master/packages/sdlc) — 把 AI 原生 SDLC 落成 DeepSeek Harness bundle：任务状态机与制品链、带结构化裁决的独立验证、按问题编号的返工与复验、测试冻结、RSI 复盘与只读看板。
 - [hongyue0721/dsh-kimicode-swarm](https://github.com/hongyue0721/dsh-kimicode-swarm) — Kimi Code 风格 swarm：批量并行子 Agent 调度（自适应并发）、/swarm 命令与聊天内实时进度条。
 - [hoyyang/dsh-plan-board](https://github.com/hoyyang/dsh-plan-board) — 思维导图式项目规划与防跑偏：计划→模块→任务 DAG 与拓扑执行序号、Agent 站位、改图人审门、git 交叉核对与证据门禁。
 - [hoyyang/dsh-project-manager](https://github.com/hoyyang/dsh-project-manager) — 项目看板：卡片组泳道自定义阶段，卡片关联落盘项目记忆、挂载仓库与已有会话（可恢复归档）；从卡片开的会话自动读取项目记忆。
@@ -6422,7 +6423,7 @@ dsh plugin --profile web add dshmarket
 - [ljsysfurryACE/dsh-aura-scheduler](https://github.com/ljsysfurryACE/dsh-aura-scheduler) — 主动调度：自适应心跳 + 价值网络（紧迫度、相关性、打断代价）决定 Agent 何时主动开口。
 - [lkshjd/dsh-debate](https://github.com/lkshjd/dsh-debate) — DeepSeek Harness 多 agent 隔离辩论：不同底色的辩手各自独立联网取证（互不可见防人云亦云）、交叉辩论互相反驳、评审收敛出结论。后台 job 运行，逐 agent 进度可见、token 统计、波次并行、断点续传。
 - [lonelymoon87/dsh-specflow](https://github.com/lonelymoon87/dsh-specflow) — 增加规格工件、技能、命令、由 goal 驱动的实施流程和任务进度上下文。
-- [LongerWu2026/dsh-dev-workbench](https://github.com/LongerWu2026/dsh-dev-workbench) — 智能工作台，集成统一AI助手、事项会话、附件引用与执行回执，以及待办、待回复、Linky研发、多AI对话、知识和开发工具；云之家消息需账号及CLI，多AI对话仅桌面端可用。
+- [LongerWu2026/dsh-dev-workbench](https://github.com/LongerWu2026/dsh-dev-workbench) — 智能工作台，集成AI助手、会话阅读、待办与回复跟进、资讯简报、Linky研发、多AI对话、知识和开发工具；云之家消息需账号及CLI，多AI对话仅桌面端可用。
 - [LONGSASASASASA/dsh-issue2pr](https://github.com/LONGSASASASASA/dsh-issue2pr) — Issue-to-PR 可验证交付链：11 阶段流水线（分析→检索→理解→假设→规划→实现→补丁→测试→评审→归因→PR 构建），4 道人工复核闸门，GitHub/GitLab/CodeArts 凭据连接，5 页工作台与可拖拽智能助手浮窗。
 - [loopx-project/loopx#dsh-loopx-plugin](https://github.com/loopx-project/loopx/tree/main/packages/dsh-loopx-plugin) — LoopX——面向长周期 Agent 的提供商中立、本地优先状态内核与控制平面：在 DeepSeek Harness 执行层之上持久化 Goal、Todo、门禁、证据、配额、恢复与交接状态；插件负责引导安装 CLI 与技能、准入有界的同会话续跑，并为精确绑定的工作循环提供本地 GoalBar。
 - [Lorvaste/DSH-Project-Initialization](https://github.com/Lorvaste/DSH-Project-Initialization) — 「想法落地」agent preset：一句话想法 → 需求规格 → 技术方案 → 维护基准；每一步先复述、你确认、再继续。无场景预设：73 个原子 skill（6 主 + verify 调度 + 66 子）按上下文加载。
