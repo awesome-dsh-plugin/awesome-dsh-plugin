@@ -1,0 +1,5 @@
+url: https://github.com/lucagiftzek/dsh-request-image-cap
+name: lucagiftzek/dsh-request-image-cap
+category: model
+description:
+  en: "Caps every image sent to a model at a per-side pixel limit (default 2000 px) by wrapping attachments.readImageRequest, which fixes Anthropic many-image request errors without touching stored images."
