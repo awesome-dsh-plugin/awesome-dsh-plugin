@@ -1,0 +1,6 @@
+url: https://github.com/Dcmwfg/dsh-screenshot/tree/main/packages/windows
+name: Dcmwfg/dsh-screenshot#windows
+category: ui
+description:
+  en: 'Region screenshot for the composer on Windows: a full-virtual-screen selector frames the region (drag the frame, eight grips, Ctrl+drag to annotate), and the finished PNG lands in the composer as a pending attachment.'
+  zh: 'Windows 上的区域截图：全虚拟屏选择器框选区域（拖动边框、八个手柄、Ctrl 拖动标注），完成后的 PNG 作为待发附件落进输入框。'
