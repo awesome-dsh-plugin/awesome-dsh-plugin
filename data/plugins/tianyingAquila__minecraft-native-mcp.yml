@@ -1,0 +1,8 @@
+url: https://github.com/tianyingAquila/minecraft-native-mcp
+name: tianyingAquila/minecraft-native-mcp
+category: fun
+description:
+  en: Opens a browser console to prepare Minecraft Java and run DeepSeek-controlled survival through native-player MCP tools, with spatial observations and optional livestream overlays.
+  zh: 打开浏览器控制台准备 Minecraft Java 环境，通过原生玩家 MCP 工具让 DeepSeek 自主生存，提供空间观察与可选直播挂件。
+tarball: https://github.com/tianyingAquila/minecraft-native-mcp/releases/latest/download/minecraft-native-mcp.tgz
+icon: https://raw.githubusercontent.com/tianyingAquila/minecraft-native-mcp/main/assets/whale.png
