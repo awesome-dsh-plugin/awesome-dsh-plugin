@@ -1,0 +1,8 @@
+url: https://github.com/Rukawa15/dsh-session-monitor
+name: Rukawa15/dsh-session-monitor
+category: session
+description:
+  en: 'Read-only monitor for local DSH sessions: live task board, per-session tails, blocking reply wait, Markdown export, and optional IM push via dsh-im.'
+  zh: '只读的本机 DSH 会话监视器：实时任务看板、会话事件尾随、阻塞等待回复、Markdown 导出，可选配合 dsh-im 推送 IM。'
+icon: https://raw.githubusercontent.com/Rukawa15/dsh-session-monitor/main/icon-180.png
+tarball: https://github.com/Rukawa15/dsh-session-monitor/releases/latest/download/dsh-session-monitor.tgz
