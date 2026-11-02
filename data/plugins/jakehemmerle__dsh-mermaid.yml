@@ -1,0 +1,5 @@
+url: https://github.com/jakehemmerle/dsh-mermaid
+name: jakehemmerle/dsh-mermaid
+category: ui
+description:
+  en: 'Renders mermaid code blocks in dsh web chat as diagrams. Each block gets a toggle in its header to switch between the diagram and the source; blocks still streaming stay as code until the message settles. Mermaid loads lazily the first time a diagram is shown. The terminal UI is unaffected.'
