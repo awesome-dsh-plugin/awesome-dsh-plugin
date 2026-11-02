@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/registration-precheck
+name: liuhange789/data-asset-inspector#registration-precheck
+category: tools
+description:
+  zh: "登记预检插件 — 校验数据登记资格+必填项完整性+格式合规性"
+  en: "Registration precheck plugin — validates registration eligibility + required field completeness + format compliance."
