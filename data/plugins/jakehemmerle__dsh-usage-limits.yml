@@ -1,0 +1,5 @@
+url: https://github.com/jakehemmerle/dsh-usage-limits
+name: jakehemmerle/dsh-usage-limits
+category: usage
+description:
+  en: 'Shows how much of your Claude and Codex plan limits you have used: a line above the prompt in dst with 5-hour and weekly windows, percent used and time to reset, and a ring meter beside the context meter in dsh web that opens a panel listing every window.'
