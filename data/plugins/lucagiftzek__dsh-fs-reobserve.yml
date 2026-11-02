@@ -1,0 +1,5 @@
+url: https://github.com/lucagiftzek/dsh-fs-reobserve
+name: lucagiftzek/dsh-fs-reobserve
+category: tools
+description:
+  en: "After an agent's own bash or shell command, re-observes the files that session had observed, so FS_STALE_VERSION no longer fires on self-inflicted writes but still fires on writes by others."
