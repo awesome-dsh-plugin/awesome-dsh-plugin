@@ -1728,6 +1728,7 @@ dsh plugin --profile web add dshmarket
 - [zhang24xiao/dsh-snippets](https://github.com/zhang24xiao/dsh-snippets) — 管理 DSH Web 界面的 CSS 与 JS 代码片段：启用的 CSS 注入为 style 元素，启用的 JS 在页面内执行；提供侧栏底部快捷开关，并在设置导航里有自己的页面，并可选本地文件夹监听与 Gist 同步。
 - [ZhangBo-cmd/dsh-coros-badge](https://github.com/ZhangBo-cmd/dsh-coros-badge) — 在 Web UI 中常驻显示已绑定的高驰手表型号与累计运动天数，点击展开一句话点评与建议。
 - [ZhangBo-cmd/dsh-pricing-badge](https://github.com/ZhangBo-cmd/dsh-pricing-badge) — 在 Web UI 中显示 DeepSeek API 高峰/空闲时段、当前模型的输出价格与账户余额。
+- [zhangj1164/dsh-mega-plugins#dsh-client-ui-memo-settings](https://github.com/zhangj1164/dsh-mega-plugins/tree/main/packages/client/ui-memo-settings) — 备忘插件套件的设置页：在 DSH Web 自带的 Settings 界面里修改 AI 路由、归档会话总结的语言、长度与文案，以及 GitHub 仓库地址，支持逐字段恢复默认，保存后无需重启即作用于运行中的备忘服务。
 - [zhangliang0115/ai-plugin#dsh-plugin](https://github.com/zhangliang0115/ai-plugin/tree/main/dsh-plugin) — aipx 工具包：技能之外还有 Hub Console 控制台——用约 4 个元工具代理全部 MCP 服务器，含服务器池健康、工具级启停、工具目录，以及直观展示 mcp_search 返回结果的搜索试验场。
 - [zhangTELL/dsh-diagram](https://github.com/zhangTELL/dsh-diagram) — 将聊天中的 mermaid 代码块原位渲染为图表（流程图/时序图/类图/状态图/ER图/甘特图/饼图），支持放大、源码切换、复制 PNG 与下载 SVG。
 - [zhangyongshuai56-hub/dsh-model-picker-brand](https://github.com/zhangyongshuai56-hub/dsh-model-picker-brand) — 在 DSH 模型选择器中显示各提供商的 logo 与模型 ID：通过官方 conversation.input.model.label 插槽注册标签装饰器；按 token、显示名、模型 ID 与显式覆盖四级匹配，未知提供商回退为字母 monogram。
@@ -2293,7 +2294,7 @@ dsh plugin --profile web add dshmarket
 - [dirtywork22/dsh-client-ui-skin-bayern](https://github.com/dirtywork22/dsh-client-ui-skin-bayern) — 拜仁慕尼黑主题的 dsh Web 皮肤：主场红/客场白双配色画布，19 名一线队球员的真实赛场照背景，外加球员球衣、阵容号码墙、安联球场、纯色四种程序绘制背景，可切换球员与强调色。
 - [djh2203/dsh-refined](https://github.com/djh2203/dsh-refined) — DeepSeek-Refined 的 DSH 移植版：为 DSH 前端注入 Obsidian Border 等 5 个风格的 Markdown 美化与 5 套主题配色，并提供调色板按钮。
 - [DocJlm/dsh-arknights#pramanix-eyjafjalla](https://github.com/DocJlm/dsh-arknights/tree/main/skins/pramanix-eyjafjalla) — DSH Web 明日方舟同人皮肤“初雪和小羊”，包含昼夜星海庭园背景与双角色布局。
-- [dracula/deepseek-harness](https://github.com/dracula/deepseek-harness) — 用官方 DeepSeek 移植版配色给 DeepSeek Harness Web GUI 换肤：覆盖产品 alias token、侧栏/输入框/菜单的模块专属 token 与 shiki 语法色，宿主侧首帧注入，不会先闪内置配色，可在「设置 → 通用设置」开关。
+- [dracula/deepseek-harness](https://github.com/dracula/deepseek-harness) — 为 DeepSeek Harness 提供 Dracula 深色主题，覆盖侧栏、对话区、设置与代码高亮，支持启动时应用主题和跨窗口开关同步。
 - [dreamtao2199/dsh-colors](https://github.com/dreamtao2199/dsh-colors) — 22 套仅浅色配色（Pantone / 中国传统 / 莫兰迪）与 14 种可叠加的表面效果，含十二时辰轮换、手动选色优先到时段边界、工作区绑定、会话颜色标记，以及设置页内的昵称与内联头像编辑。
 - [dsh-plugins/dsh-thought-buddy](https://github.com/dsh-plugins/dsh-thought-buddy) — 在「Deep diving...」状态提示前，放一只动态小伙伴——GrokBot 风格动画头像，状态文字还会同步打字机变换。
 - [du-u-uck/DSH-Transparent-UI-Plugin](https://github.com/du-u-uck/DSH-Transparent-UI-Plugin) — Aqua 玻璃质感主题：云母/兼容双模式、可调模糊与磨砂、流体/壁纸背景、背景亮度、粒子鲸鱼点缀，一键关闭即还原原生界面。
@@ -4051,7 +4052,7 @@ dsh plugin --profile web add dshmarket
 - [yzx4036/dsh-memory-snapshot](https://github.com/yzx4036/dsh-memory-snapshot) — 把本地已有的 markdown 文档（笔记、规则、知识库）按路径清单注入 dsh 每个会话的系统提示词，当只读记忆——无数据库、无服务、无写入通道；支持目录收集、UTF-8 字节预算截断、front-matter 剥离与新鲜度时间戳。
 - [zcd0818/dsh-scribe](https://github.com/zcd0818/dsh-scribe) — 跨会话记忆与工作区知识库合一。记忆默认是 ~/.dsh/memory 下的纯 JSONL，会话开始把相关记忆放进系统提示，会话结束回写一条；每个工作区的 kb/ 目录加一份全局目录构成只读知识库，检索结果能引用到文件行号。十一个工具统一带 scribe_ 前缀（七个 scribe_memory_*、四个 scribe_kb_*），一个 /scribe 斜杠命令，以及概览 / 记忆 / 知识库 / 迁移四页的设置页。云端后端（百炼记忆库、ChromaDB、云端主 + 本地镜像）按需启用；迁移数据必须经显式审批，并留有可回滚的日志。
 - [zhang66633/dsh-memvault](https://github.com/zhang66633/dsh-memvault) — 把 DSH 接到本机 MemVault 记忆库：核心记忆块注入系统提示词、结束的轮次经由 MemVault 自己的管线抽取，并提供浏览、追溯、复核与重抽的面板。
-- [zhangj1164/dsh-mega-plugins#dsh-memo](https://github.com/zhangj1164/dsh-mega-plugins/tree/main/packages/memo/dsh-memo) — 按 ISO 周组织的个人备忘服务：条目按周存储，周/月/季/年四种视图由同一份周期日历解析，支持按季度归档，提供 AI 分析与 Markdown 报告导出，修改非当前周需要显式确认，并能把整条插件套件的遥测失败分析整理成一份 GitHub issue 报告。
+- [zhangj1164/dsh-mega-plugins#dsh-memo](https://github.com/zhangj1164/dsh-mega-plugins/tree/main/packages/memo/dsh-memo) — 按 ISO 周组织的个人备忘服务：条目按周存储，周/月/季/年四种视图由同一份周期日历解析，支持按季度归档，提供 AI 分析与 Markdown 报告导出，并能按读者所选语言与长度把 DSH 已归档会话总结进对应周、每个会话一条，修改非当前周需要显式确认，也能把整条插件套件的遥测失败分析整理成一份 GitHub issue 报告。
 - [zhangzhenwen1/qmd-autosearch](https://github.com/zhangzhenwen1/qmd-autosearch) — 模型在知识库目录执行 grep/glob 搜索时自动补充 QMD 语义检索：零依赖 DSH 插件，异步注入下一步上下文，无需手动调用。
 - [zhaoyuntao-wl/dsh-plugin-thread](https://github.com/zhaoyuntao-wl/dsh-plugin-thread) — 带血缘的决策与目标记忆：显式命令与模型工具确定性记录决策，状态卡跨压缩重锚定，无损事件流 + BM25 分词检索兜底，场景级保真回归集作发布门禁。
 - [zhengjy01/dsh-flomo](https://github.com/zhengjy01/dsh-flomo) — 配置一次 flomo API URL / API Key，Agent 即可用 flomo_send 把笔记、摘要、待办写进 flomo（浮墨笔记）。
@@ -5793,6 +5794,7 @@ dsh plugin --profile web add dshmarket
 - [huangxicheng1/blog-manage](https://github.com/huangxicheng1/blog-manage) — 在 DSH 面板里管理 GitHub Pages 博客：按标签分组浏览 Markdown 文章，用表单填 front matter 并在分屏编辑器里修改，再通过 GitHub REST API 把改动作为一次 commit 发布。
 - [HuanLinOTO/dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) — 向模型暴露 MineRU 文档解析工具。
 - [ikevss/dsh-ima](https://github.com/ikevss/dsh-ima) — 在 DSH 侧边栏浏览腾讯 ima 的知识库与文件，内置常见格式预览，并让 agent 用 5 个工具按名称或正文检索、读取库内资料。
+- [JackWangSIA/dsh-ai-notepad](https://github.com/JackWangSIA/dsh-ai-notepad) — DSH 的 AI 原生文本编辑器：多标签、编码保留、选区/全文 AI 与 Diff 审阅、Markdown 预览及 Windows 文件关联。
 - [jcaiagent7143-ui/sendpage-mcp](https://github.com/jcaiagent7143-ui/sendpage-mcp) — 把 HTML 文档变成一键打开、在聊天里显示预览卡的分享链接;支持发布、更新,以及导出 PNG/PDF/Word。
 - [Jesse-njx/dsh-cowork#dsh](https://github.com/Jesse-njx/dsh-cowork/tree/main/packages/dsh) — doc_read/doc_write：以有界、单元格寻址的方式读写 xlsx / pdf / docx / pptx / ipynb，另附 MCP 服务器与 CLI。
 - [jessehoo89/markdown_monitor](https://github.com/jessehoo89/markdown_monitor) — 桥接本机 doc2md（markdown_monitor）命令行——一个 doc2md 工具，提供 convert / read / scan / status 四个动作，支持 docx、doc、xls、xlsx、pdf 与图片。
@@ -7970,7 +7972,7 @@ dsh plugin --profile web add dshmarket
 - [kinderao/dsh-pocket-relay](https://github.com/kinderao/dsh-pocket-relay) — 手机与远程访问 DSH Web 界面：局域网扫码即用，或用自建 relay 中继服务端（替代 cloudflared 隧道）随时随地连回电脑；每台设备独立凭据，可配对、查看与单独撤销；多台电脑共用一个中继并自动热备。
 - [KKUCODES/dshm-plugin](https://github.com/KKUCODES/dshm-plugin) — 将 DSHM 安卓客户端连接到电脑上的 DeepSeek Harness 会话，支持远程续聊、模型切换、审批、设备配对与撤销。
 - [KyoMio/dsh-zen-remote](https://github.com/KyoMio/dsh-zen-remote) — 配对码远程访问 DSH：手机端可安装 PWA、带 Web Push 推送；另一台设备作为客户端，在原生 DSH 界面里直接操作主机共享的会话，经自建反代或 Cloudflare Tunnel 接入。
-- [Lee-Eee-Eee/dsh-remote](https://github.com/Lee-Eee-Eee/dsh-remote) — 将 SSH 主机与 WSL 发行版接入远程 DSH 工作区，支持环境安装、模型配置移植与本地内嵌远程界面。
+- [dsh-remote-dock](https://github.com/Lee-Eee-Eee/dsh-remote-dock) — 将 SSH 主机与 WSL 发行版接入远程 DSH 工作区，支持环境安装、模型配置移植与本地内嵌远程界面。
 - [Leon0555/dsh-lan-access](https://github.com/Leon0555/dsh-lan-access) — 局域网访问：Web GUI 绑定 0.0.0.0 + crypto.randomUUID polyfill（修复非安全上下文下 RPC 崩溃）。
 - [liaosiliangCodeLife/harness-mate-dsh](https://github.com/liaosiliangCodeLife/harness-mate-dsh) — 把跑在本机的 DeepSeek Harness 智能体接入 HarnessMate 平台：手机 / 浏览器即可对话、收发文件、审批工具调用。
 - [liguobao/ds-harness-remote](https://github.com/liguobao/ds-harness-remote) — 通过端到端加密通道远程访问 DeepSeek Harness 及兼容的编码工作区，支持自适应 Relay/WebRTC 传输、设备授权、工作区文件、只读预览、终端和可选的 Codex Remote。
