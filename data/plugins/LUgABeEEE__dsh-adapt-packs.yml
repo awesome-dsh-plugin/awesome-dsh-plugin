@@ -1,0 +1,6 @@
+url: https://github.com/LUgABeEEE/dsh-adapt-packs
+name: LUgABeEEE/dsh-adapt-packs
+category: ui
+description:
+  en: "Adaptation packs for third-party DSH plugin panels on phones — 44px touch floor, width reclaim, shell hit targets and floating-widget clearance — loaded by the dsh-mobile plugin from its extensions directory (dsh-mobile must be installed for them to take effect), with a settings page that installs them and a per-plugin compatibility list."
+  zh: "第三方 DSH 插件面板的手机适配包：44px 触控地板、宽度回收、外壳命中区与浮动控件让位；由 dsh-mobile 插件从其 extensions 目录加载（须先装 dsh-mobile 才会生效），附设置页一键装/卸与插件兼容清单。"

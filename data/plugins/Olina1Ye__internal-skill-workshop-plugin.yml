@@ -2,5 +2,5 @@ url: https://github.com/Olina1Ye/internal-skill-workshop-plugin
 name: Olina1Ye/internal-skill-workshop-plugin
 category: skill
 description:
-  en: Browse, sign in to, and safely install public or private team Skills from a configured Skill Base in DSH Web.
-  zh: 在 DSH Web 中浏览、登录并安全安装来自团队 Skill Base 的公开或私有 Skill。
+  en: 'Team Skill Hub: browse shared public or private team skills from a Skill Base server and install them in DSH Web.'
+  zh: '团队 Skill 中心：连接 Skill Base，浏览团队共享的公开或私有技能，并一键安装到 DSH Web。'

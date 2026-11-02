@@ -1,0 +1,6 @@
+url: https://github.com/xkk6663/elab-flow/tree/main/packages/dsh-elab-cockpit
+name: xkk6663/elab-flow#dsh-elab-cockpit
+category: dev
+description:
+  en: "Embedded closed-loop development cockpit for DeepSeek Harness: the agent builds, flashes, debug-verifies and monitors STM32 boards from one panel, while the user watches every step live - progress ladder, streaming logs, RAM/FLASH usage and decoded serial waveforms. Requires a host Python 3.10+ on PATH (the plugin cannot install it); the ARM toolchain is auto-downloaded on first use (~400 MB, Windows x64 only), and you need an STM32 board with a debug probe."
+  zh: "嵌入式闭环开发驾驶舱（DSH 插件）：agent 在面板里闭环开发 STM32——发现、编译、烧录、调试校验、串口监视，开发过程对用户全程可视化（阶梯进度、实时日志、RAM/FLASH 占用、串口波形解码）。需主机自带 PATH 上的 Python 3.10+（插件不能代装）；ARM 工具链首次使用时自动下载（约 400 MB，仅 Windows x64），并需自备 STM32 板与调试探针。"

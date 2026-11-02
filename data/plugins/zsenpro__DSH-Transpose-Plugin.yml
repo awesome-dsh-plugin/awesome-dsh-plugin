@@ -1,0 +1,6 @@
+url: https://github.com/zsenpro/DSH-Transpose-Plugin
+name: zsenpro/DSH-Transpose-Plugin
+category: session
+description:
+  en: 'Moves a conversation into another workspace: long-press its sidebar row, drop it on the target workspace, and the session log with its full history is relocated and re-pointed. A plain drag still does the sidebar''s own reorder inside one workspace.'
+  zh: '把一段对话搬到另一个工作区：长按侧栏里的会话行，拖到目标工作区松手，会话日志与全部历史一起迁移并改指到新目录。直接拖动仍然是工作区内的原生排序。'
