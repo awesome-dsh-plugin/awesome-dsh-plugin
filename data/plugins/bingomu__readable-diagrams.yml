@@ -1,0 +1,7 @@
+url: https://github.com/bingomu/readable-diagrams
+name: bingomu/readable-diagrams
+category: skill
+description:
+  en: 'Diagrams with a comprehension gate: conclusion title, reading path, legend and caption are checked before the page ships.'
+  zh: '带阅读闸门的图表：标题即结论、编号阅读动线、图例与图注不齐就不让交付。'
+icon: https://raw.githubusercontent.com/bingomu/readable-diagrams/main/assets/icon-180.png
