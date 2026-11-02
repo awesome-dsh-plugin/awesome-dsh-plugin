@@ -1,0 +1,5 @@
+url: https://github.com/jakehemmerle/dsh-aris-better
+name: jakehemmerle/dsh-aris-better
+category: workflow
+description:
+  en: 'Adds an ARIS agent preset that loads the 84 ARIS research-workflow skills and runs their reviewer as an in-harness subagent from a different model family than the session model. Other presets are unchanged.'
