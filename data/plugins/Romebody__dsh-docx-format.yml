@@ -1,0 +1,10 @@
+url: https://github.com/Romebody/dsh-docx-format
+name: Romebody/dsh-docx-format
+category: docs
+# 预构建 tgz（资产名不带版本号，latest/download 才能长期有效）
+# 已在 npm 发布为 dsh-docx-format@1.0.0，市场会优先走 registry 安装；
+# 下面这行是 tarball 兜底，registry 不可用时回退到 GitHub Release。
+tarball: https://github.com/Romebody/dsh-docx-format/releases/latest/download/dsh-docx-format.tgz
+description:
+  zh: "把生成的 .docx 统一到一套中文公文版式：方正小标宋标题、仿宋正文 29 磅固定行距、段前段后 0、字符单位首行缩进 2 字符，表格每个单元格都水平居中并带重复表头，页脚居中「— 1 —」页码。附件长条目按 2 / 6 / 5 / 6 字符缩进阶梯自动分段，折行点由 Word 实测得到。请求文字出现「实验报告」时插件整体停用；用户没有明确要求时默认不写落款。"
+  en: "Normalizes every generated .docx to one Chinese official-document layout: XiaoBiaoSong title, FangSong body at a fixed 29pt leading with zero paragraph spacing, character-unit 2-character first-line indent, fully centered table cells with repeating header rows, and a centered footer page number. Long attachment entries are split into real paragraphs at the wrap point measured by Word, producing a 2 / 6 / 5 / 6 character indent ladder. The plugin disables itself when the request mentions a lab report, and writes no signature block unless asked."

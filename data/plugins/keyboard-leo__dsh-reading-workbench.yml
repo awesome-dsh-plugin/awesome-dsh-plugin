@@ -1,0 +1,7 @@
+url: https://github.com/keyboard-leo/dsh-reading-workbench
+name: keyboard-leo/dsh-reading-workbench
+category: ui
+description:
+  en: 'Reading workbench for DSH: a cover-grid bookshelf and a paginated single/double-page reader for Markdown, TXT, HTML, EPUB, MOBI and PDF, with highlight notes anchored to text offsets and three agent tools for listing books, reading highlights and pulling text excerpts.'
+  zh: 'DSH 阅读工作台：封面网格书架 + 单/双页分页阅读器，支持 Markdown、TXT、HTML、EPUB、MOBI、PDF，划线笔记以文本偏移锚定，并提供书目、划线、正文节选三个 Agent 工具。'
+tarball: https://github.com/keyboard-leo/dsh-reading-workbench/releases/download/v0.2.0/dsh-reading-workbench-0.2.0.tgz

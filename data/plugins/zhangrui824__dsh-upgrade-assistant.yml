@@ -1,0 +1,22 @@
+# 提交到 awesome-dsh-plugin 社区市场（dshmarket 的数据源）的收录条目。
+# 提交方式：向 github.com/awesome-dsh-plugin/awesome-dsh-plugin 发 PR，
+# 把本文件放到 data/plugins/zhangrui824__dsh-upgrade-assistant.yml（一个文件即全部投稿）。
+# 前置条件：仓库创建满 1 天（CI 自动检查）+ 仓库 topics 含 dsh-plugin（已加）。
+# 合并后自动进入：awesome-dsh-plugin.com 站点、dshmarket 插件市场、
+# 以及 DSH 原生「发现」页的 format-1 索引（dsh-plugin-catalog）。
+url: https://github.com/zhangrui824/dsh-upgrade-assistant
+name: zhangrui824/dsh-upgrade-assistant
+category: market
+description:
+  en: >-
+    Adds an 'Upgrades' tab to the DSH Plugins page: npm update checks for all
+    installed plugins, engines.dsh compatibility preflight before upgrading,
+    and one-click in-place upgrades that bypass pnpm's 24-hour release-cooling
+    gate. Also refreshes the npm dependency families pulled in by
+    GitHub-sourced bundles, and checks the Harness itself against the latest
+    npm release.
+  zh: >-
+    在 DSH 插件页新增「升级」标签：集中检查全部插件的 npm 新版本，升级前预检
+    engines.dsh 兼容性，一键原地升级并绕过 pnpm 的 24 小时发布冷却期；
+    支持刷新 GitHub 来源插件内含的依赖全家桶，并可检查 DSH 本体是否有新版。
+tarball: https://github.com/zhangrui824/dsh-upgrade-assistant/releases/download/v1.1.0/dsh-upgrade-assistant-1.1.0.tgz

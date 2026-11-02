@@ -1,6 +1,7 @@
 url: https://github.com/zhao-guang-ai/dsh-quote-annotate-pro
 name: zhao-guang-ai/dsh-quote-annotate-pro
 category: ui
+icon: https://raw.githubusercontent.com/zhao-guang-ai/dsh-quote-annotate-pro/main/docs/images/icon-180.png
 description:
-  en: 'Adds selection quoting and anchored annotations to DSH conversations: selected text enters the composer as an anchored quote reference, a quote bar jumps back to the source message and highlights it, and the sent quote block names the turn and role it came from.'
-  zh: '为 DSH 会话添加选区引用与锚点批注：选中文字带锚点进入输入框，输入框下方的引用条可跳回原文并高亮，发送后的引用块标明出处轮次与角色。'
+  en: 'Selection quoting and anchored annotations across DSH chats and document previews: numbered quote blocks stay visible in the composer and in sent messages and click back to the source, notes from docx / PDF / Markdown / code / Excel-range previews collect into one batched send, and each note can be dictated by voice.'
+  zh: 'DSH 会话与文档预览里的划词批注：带编号的引用块在输入框和已发送消息里始终可见、点一下跳回原文；docx / PDF / Markdown / 代码与 Excel 选区批注可攒起来一次性发送；批注框支持语音输入。'

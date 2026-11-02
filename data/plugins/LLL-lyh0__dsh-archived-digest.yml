@@ -1,0 +1,8 @@
+url: https://github.com/LLL-lyh0/dsh-archived-digest
+name: LLL-lyh0/dsh-archived-digest
+category: memory
+icon: https://raw.githubusercontent.com/LLL-lyh0/dsh-archived-digest/main/docs/store/icon-180.png
+tarball: https://github.com/LLL-lyh0/dsh-archived-digest/releases/latest/download/dsh-archived-digest.tgz
+description:
+  en: 'Turns archived sessions into durable memory instead of dead disk. Distils each archive into reusable skills, a fact ledger with ADD/UPDATE/NOOP decisions plus validUntil and supersededBy so stale facts retire instead of piling up, and topic clusters by single-linkage similarity. Also digests sessions that are still in progress through a read-only seq watermark, leaving the session log byte-for-byte untouched, and can self-check the growing memory to merge duplicate facts, retire stale ones and consolidate duplicate skills — measuring only unless you opt in, and never hard-deleting, only superseding.'
+  zh: '把已归档的会话变成可用的记忆，而不是躺在磁盘上的死数据。每条归档提炼成可复用技能、带 ADD/UPDATE/NOOP 判定与 validUntil / supersededBy 时效的事实台账（旧事实会退场而不是无限堆积），以及用 single-linkage 相似度聚合的主题簇。还能对仍在进行中的会话做增量提炼——用只读的 seq 水位线，会话日志一个字节都不改；并能自检精简不断变脏的记忆：合并重复事实、清退失效事实、归并重复技能。自检默认只测量不动手，且从不硬删除，只做取代。'

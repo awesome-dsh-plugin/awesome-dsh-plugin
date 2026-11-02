@@ -1,0 +1,7 @@
+url: https://github.com/imwhatiam/dsh-mosaic
+name: imwhatiam/dsh-mosaic
+category: ui
+description:
+  en: 'Renders a dsh-view fence in an assistant reply as cards — text, tables, charts, Mermaid diagrams and sandboxed HTML widgets — with an editable model prompt, a render_view tool and a bundled skill.'
+  zh: '把回答里的 dsh-view 围栏渲染成卡片——文本、表格、图表、Mermaid 图与沙箱 HTML 组件——并提供可编辑的模型提示、render_view 工具和内置技能。'
+icon: https://raw.githubusercontent.com/imwhatiam/dsh-mosaic/main/assets/icon-180.png

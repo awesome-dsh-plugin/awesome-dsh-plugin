@@ -1,4 +1,10 @@
 {
+  "https://github.com/Lovenndme/dsh-profile-stats": [
+    "https://raw.githubusercontent.com/Lovenndme/dsh-profile-stats/main/docs/overview.png",
+    "https://raw.githubusercontent.com/Lovenndme/dsh-profile-stats/main/docs/mix.png",
+    "https://raw.githubusercontent.com/Lovenndme/dsh-profile-stats/main/docs/model-chart.png",
+    "https://raw.githubusercontent.com/Lovenndme/dsh-profile-stats/main/docs/heatmap.png"
+  ],
   "https://github.com/anweat/dsh-context-console": [
     "https://raw.githubusercontent.com/anweat/dsh-context-console/main/docs/images/context-console-trajectory.png",
     "https://raw.githubusercontent.com/anweat/dsh-context-console/main/docs/images/context-console-inventory.png",

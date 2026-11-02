@@ -1,0 +1,8 @@
+url: https://github.com/dracula/deepseek-harness
+name: dracula/deepseek-harness
+category: theme
+description:
+  en: "Dracula color theme for the DeepSeek Harness Web GUI built on the official DeepSeek port palette: product alias tokens, the sidebar/composer/menu module tokens and shiki syntax colors, injected at first paint so the UI never flashes the built-in palette, switchable in Settings → General."
+  zh: "用官方 DeepSeek 移植版配色给 DeepSeek Harness Web GUI 换肤：覆盖产品 alias token、侧栏/输入框/菜单的模块专属 token 与 shiki 语法色，宿主侧首帧注入，不会先闪内置配色，可在「设置 → 通用设置」开关。"
+icon: https://raw.githubusercontent.com/dracula/deepseek-harness/main/docs/icon-180.png
+tarball: https://github.com/dracula/deepseek-harness/releases/latest/download/dsh-theme-dracula.tgz

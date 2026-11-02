@@ -4,4 +4,4 @@ category: ui
 description:
   en: 'Improves conversation drafts with optional conversation, memory and project context, side-by-side previews, a dedicated model and one-step restore; never sends messages automatically.'
   zh: '按需结合对话、记忆和项目片段增强草稿，支持对照预览、专用模型与恢复原文，不会自动发送消息。'
-tarball: https://github.com/Yocaihua8/dsh-prompt-improver/releases/download/v0.2.6/dsh-prompt-improver-0.2.6.tgz
+tarball: https://github.com/Yocaihua8/dsh-prompt-improver/releases/download/v0.2.12/dsh-prompt-improver-0.2.12.tgz

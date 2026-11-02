@@ -1,0 +1,8 @@
+url: https://github.com/bbfang2025-cyber/dsh-pet-voice-fishy
+name: bbfang2025-cyber/dsh-pet-voice-fishy
+category: voice
+icon: https://github.com/bbfang2025-cyber/dsh-pet-voice-fishy/raw/main/assets/icon.png
+tarball: https://github.com/bbfang2025-cyber/dsh-pet-voice-fishy/releases/download/v1.3.0/dsh-pet-voice-fishy-1.3.0.tgz
+description:
+  en: "Big Fish Voice: makes the DSH web desktop pet speak. Whisper bubbles are read aloud automatically, left-clicking a bubble reads it, right-click/long-press reads it again, and clicking the pet replies with lines like 「主人，小鱼在这呢」. 10 offline Chinese voices: 2 local replica voices (鱼鱼酱 / 鱼鱼姐, no API key, ~58MB each) plus 8 Kokoro female voices (4 moe / 4 onee-san, models download on first use ~348MB, then work offline). Auto-reading can be throttled (unlimited / 30s / 60s / 3min); within one DSH instance only a single page plays audio. About 35KB package, inference in a worker thread, no dsh-pet files modified. The two replica voice models are for personal non-commercial use only."
+  zh: "大肥鱼语音：让 DSH 网页桌宠开口说话。碎碎念气泡出现时自动朗读，左键点气泡朗读内容，右键/长按再读一遍，点桌宠回应「主人，小鱼在这呢」等互动台词。10 个离线中文音色：2 个本地复刻音色（鱼鱼酱 / 鱼鱼姐，无需 API Key，各约 58MB）+ 8 个 Kokoro 离线女声（萌系/御姐各 4 个，模型首次按需下载约 348MB，之后断网也能读）。自动朗读可设最小间隔（不限/30 秒/60 秒/3 分钟），同一实例多页面只由一个页面出声；插件本体约 35KB，推理在 worker 线程，不修改 dsh-pet 的任何文件。两个复刻音色模型仅供个人非商业使用。"

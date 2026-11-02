@@ -1,0 +1,6 @@
+url: https://github.com/SongFengManZhu/dsh-deep-reading-wl
+name: SongFengManZhu/dsh-deep-reading-wl
+category: docs
+description:
+  en: "Pipeline for scanned textbooks: OCR at roughly 5x the ONNXRuntime speed (requires Python 3.10+ with pymupdf, rapidocr, openvino and numpy), then a structure report and a per-chapter reading plan before you open the PDF."
+  zh: "扫描版教材流水线：在本机 Python 3.10+ 环境（需 pymupdf、rapidocr、openvino、numpy）下，OCR 提速约 5 倍，先出骨架地图，再按章阅读。"
