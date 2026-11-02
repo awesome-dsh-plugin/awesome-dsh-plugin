@@ -1,0 +1,6 @@
+url: https://github.com/Lucky020/dsh-delivery-kit
+name: Lucky020/dsh-delivery-kit
+category: docs
+description:
+  en: Turns a repository and a running system into acceptance material — database design, design specs, a user manual with screenshots, and test / go-live / acceptance reports. Sections follow GB/T 8567-88; anything it cannot verify is left blank instead of invented.
+  zh: 把代码仓库与运行中的系统变成验收材料：数据库设计、概要设计、详细设计、带截图的使用说明书，以及测试报告、上线报告、验收报告。章节按 GB/T 8567-88 组织，无法核实的字段与结论一律留空，不编造。
