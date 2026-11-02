@@ -2013,6 +2013,7 @@ dsh plugin --profile web add dshmarket
 - [littlefish04/dsh-turn-price](https://github.com/littlefish04/dsh-turn-price) — 在每个已完成回合的下方单独一行显示这一轮的花费金额（人民币），点击展开明细，列出各 token 类别的数量、单价、命中的价格规则与计费时刻；单价可在 DSH 设置页里按模型维护，含四类 token 单价、每周循环的峰谷规则（系数自定）与绝对时间区间的限时优惠价。0.2.3 起还能看账户：读取 14 家 provider 的余额或剩余额度（DeepSeek、OpenRouter、智谱 GLM、月之暗面、MiniMax、Kimi Coding、OpenAI 兼容中转站等），在旁边显示今日 / 本月 / 本会话花费；花费记在本机日账里（原子写、按 API key 分本、保留 1-24 个月、可导出 JSON），另有一张按月日历，任何一天都能手动更正（包括没有余额观测的日子）并可加备注。用量与单价都在本机计算，余额用你自己的密钥直接向 provider 接口查询，不经过第三方。
 - [liujianqiao701/dsh-context-radar](https://github.com/liujianqiao701/dsh-context-radar) — 估算上下文里谁在吃 token —— 逐文件、逐 skill、逐条工具结果列出占比，并给出膨胀判定与可执行建议。
 - [liujianqiao701/dsh-cost-today](https://github.com/liujianqiao701/dsh-cost-today) — 在侧边栏底部、输入框下方与会话头部显示今日、本月与累计花费；金额由插件自记 —— 从会话用量事件按 DeepSeek 官方单价逐次累计（含 UTC 峰谷，周末与节假日按平时价），并按本地日汇总、换算币种。另提供 cost_today 工具与 /cost 命令。
+- [liuyun2025/dsh-token-rmb](https://github.com/liuyun2025/dsh-token-rmb) — 在本轮对话的操作行「用量 / 时间」右侧追加该轮 token 费用估算（人民币）。单价来自内置的 DeepSeek 峰谷价目（北京时间，周一至周五 9:00–12:00、14:00–18:00），可在 profile 的 cordis.patch.yml 里整表覆盖；没有配置单价的模型显示「¥—」，不套用其它价格。跟随官方「性能与用量 = 简洁」设置一起隐藏。只算 token 费用、只显示本轮。
 - [liuzhihao-min/dsh-answer-timing](https://github.com/liuzhihao-min/dsh-answer-timing) — 逐次回答耗时拆解：把每次回复分成模型、工具与其它三段，给出首字、生成与各工具耗时，并在本地落一份 JSONL 账本。需要 DSH 运行时为 Node 24 或更新版本。
 - [lizilong1993/dsh-offpeak](https://github.com/lizilong1993/dsh-offpeak) — 高峰时段只暂停指向官方或拦截列表内模型的请求，其余照常放行；峰谷时段、按模型的拦截列表与会话「畅跑」都能在徽标面板里编辑。
 - [ljr282341583/dsh-convo-cost](https://github.com/ljr282341583/dsh-convo-cost) — 当前对话实时费用统计：输入框下方一行显示运行中的 token 用量与 DeepSeek 官方价格估算（基础价与峰谷价）。
@@ -8316,6 +8317,7 @@ dsh plugin --profile web add dshmarket
 - [baixiaoustc/dsh-kidlab#kid-storage](https://github.com/baixiaoustc/dsh-kidlab/tree/main/plugins/kid-storage) — 存储小仓库：磁盘分区、主目录、最占空间的东西。
 - [baixiaoustc/dsh-kidlab#kid-sysmon](https://github.com/baixiaoustc/dsh-kidlab/tree/main/plugins/kid-sysmon) — 系统小监控：一张卡片看 CPU、内存、磁盘概况。
 - [bbtnoctrl/dsh-naiwa](https://github.com/bbtnoctrl/dsh-naiwa) — 每轮 DeepSeek Harness 回答结束时，让奶蛙桌宠捧腹大笑一次。仅 Windows；需先安装奶蛙桌宠。
+- [beyondgjc/dsh-agentic-pet](https://github.com/beyondgjc/dsh-agentic-pet) — 模型驱动的桌面宠物：独立置顶小窗跟随会话状态，与 Web 界面竞速应答审批与提问，维护每宠独立的好感账本，经 pet_say/pet_do 工具或自主内心戏说话，并可用 BreezeBlue 把台词读出来。
 - [bigharm/dsh-agentnoodle](https://github.com/bigharm/dsh-agentnoodle) — DeepSeek Harness 插件：可扩展的 AI 群像聊天游戏框架。输入一个行动，多个 NPC 各自回应，每条反应独立成带头像插图的聊天室消息；世界、地点、NPC 与功能扩展（如接入第三方绘图 API 实现 NPC 动态表情动作）都可以在对话框里让 agent 直接添加修改，无需写代码。
 - [BitDG/dsh-plugins#music-player](https://github.com/BitDG/dsh-plugins/tree/main/plugins/music-player) — 提供多公共音源的侧栏音乐浏览、持续后台播放、队列续播，以及经审核安装的 MusicFree 兼容音源扩展。
 - [blackstar-baba/dsh-bird-bike](https://github.com/blackstar-baba/dsh-bird-bike) — 一只戴头盔的像素小鸡骑行在 GUI 底部的我的世界像素风骑行带里，带 80 秒昼夜循环、按铃音符、跳跃、车头灯与骑行统计。白天苦力怕出没，夜晚僵尸被撞飞。需要 DSH >=0.2.1-alpha。
