@@ -1,0 +1,7 @@
+url: https://github.com/myqy91615-web/dsh-conversation-folders
+name: myqy91615-web/dsh-conversation-folders
+category: session
+description:
+  en: 'One dedicated folder per conversation: archives the transcript, auto-categorizes research output by type after each turn, adds a delete action to the session menu, and permanently removes the folder with the conversation.'
+  zh: '每个会话一个专属文件夹：自动存档对话记录，每次调研结束后把产出的表格、图表等文件按类别归档并自动命名，会话菜单中提供删除入口，删除会话时连同文件夹一起彻底删除。'
+icon: https://raw.githubusercontent.com/myqy91615-web/dsh-conversation-folders/main/assets/icon-512.png
