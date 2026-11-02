@@ -4,3 +4,4 @@ category: session
 description:
   en: 'A draggable map of your conversations - every session becomes a card on a pan and zoom board, folders become resizable frames, and cards can be wired together with lines that route around the cards to record which conversation came from which. The same cards open as a folder drawer with its own connector lines, and the map searches card titles and content.'
   zh: '把对话画成可拖拽的地图——每个会话是一张卡片，文件夹是可缩放的框，卡片之间可以用避开卡片的连线记录「这条对话是从哪条来的」；同一个文件夹还能以抽屉形式打开，抽屉里的卡片同样带连线；地图支持按标题与正文搜索。'
+icon: https://raw.githubusercontent.com/Da0Mine/dsh-talk-map/main/docs/icon.png
