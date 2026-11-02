@@ -1,0 +1,7 @@
+url: https://github.com/Deiael/dsh-live-vibeCoding
+name: Deiael/dsh-live-vibeCoding
+category: fun
+description:
+  en: Bilibili livestream host for DeepSeek Harness, with chat and gift replies, queued viewer video requests on a skinnable stage, TTS voice, and automatic OBS/Bilibili streaming setup.
+  zh: 让 DeepSeek Harness 在 B 站当主播：回弹幕、谢礼物，观众点的视频排队上舞台，TTS 音色说话，自动配好 OBS 和 B 站推流。
+icon: https://raw.githubusercontent.com/Deiael/dsh-live-vibeCoding/main/assets/icon-180.png
