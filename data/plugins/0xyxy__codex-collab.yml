@@ -1,0 +1,6 @@
+url: https://github.com/0xyxy/codex-collab
+name: 0xyxy/codex-collab
+category: skill
+description:
+  en: 'Skill bundle that installs the codex-collab skill for driving the local OpenAI Codex CLI as a vendor instead of a consultant: every delegation carries acceptance criteria and a self-test script, the result is verified by running those tests locally, and a failure is handed back with its original error output; covers parallel delegations and multi-turn continuation inside one session.'
+  zh: '把 codex-collab 技能装进 DSH 的技能包：把本地 OpenAI Codex CLI 当供应商而非顾问来派活——每次派活附验收标准与自测脚本，本地跑测试验收，失败把原始报错原样丢回去；含并行派活与单会话多轮续接。'
