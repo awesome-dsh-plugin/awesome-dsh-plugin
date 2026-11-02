@@ -1,0 +1,5 @@
+url: https://github.com/lucagiftzek/dsh-subagent-tiering
+name: lucagiftzek/dsh-subagent-tiering
+category: model
+description:
+  en: "Fills in a cheaper sibling route for subagent calls that name no provider, model or effort (for example Opus to Sonnet 5.5 at medium, Qwen max to Qwen flash); explicit choices and subagent_fork are left alone."
