@@ -1,0 +1,6 @@
+url: https://github.com/Dcmwfg/dsh-screenshot/tree/main/packages/macos
+name: Dcmwfg/dsh-screenshot#macos
+category: ui
+description:
+  en: 'Region screenshot for the composer on macOS: the frontmost app steps aside, the system screencapture selector frames the region, and the finished PNG lands in the composer as a pending attachment.'
+  zh: 'macOS 上的区域截图：前台应用让开，用系统 screencapture 选择器框选，完成后的 PNG 作为待发附件落进输入框。'
