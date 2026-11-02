@@ -1,0 +1,6 @@
+url: https://github.com/Charles516z/dsh-autocompress
+name: Charles516z/dsh-autocompress
+category: session
+description:
+  en: 'Compress every idle session''s context at a fixed time each morning on DeepSeek Harness: a daily run (08:30 by default), a catch-up run on the next launch after a missed slot, and a /compact-all command for on-demand compaction, with per-session outcomes reported.'
+  zh: '在 DeepSeek Harness 上按固定时间压缩所有空闲会话的上下文：默认每天 08:30 自动执行，错过时间点在下次启动时补做，也可用 /compact-all 命令随时手动压缩，并逐会话报告结果。'
