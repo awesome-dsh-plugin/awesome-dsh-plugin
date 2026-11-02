@@ -1573,6 +1573,7 @@ dsh plugin --profile web add dshmarket
 - [xianrui69/dsh-quick-phrases](https://github.com/xianrui69/dsh-quick-phrases) — 为 DeepSeek Harness 增加可拖拽、位置会记住的快捷短语条，以及 `/` 触发的短语菜单；每条短语可单独设置置顶、斜杠菜单、是否上条和点击即发送。
 - [Xiaofei-fei/dsh-prompt-history](https://github.com/Xiaofei-fei/dsh-prompt-history) — 为 DSH Web 输入框提供终端式体验：↑/↓ 历史（前缀搜索、Ctrl+R）、Codex 风格的历史补全与下一句预测（Tab/→ 接受）、选中工具栏（复制/引用/侧聊追问）、右键直接粘贴、可拖动会话目录，以及能在右栏并行跑第二条 agent 线程的侧聊（fork 全上下文、浮动/分屏、双向桥接、并发写提醒）。
 - [xiaokaizhou/dsh-media-preview](https://github.com/xiaokaizhou/dsh-media-preview) — 在 DSH 聊天记录中自动将本地音视频路径渲染为可播放预览：将路径替换为同源 /api/media-preview/* 路由支持的 <audio>/<video> 播放器，并返回明确的错误状态码。
+- [XiaoLuoMin/dsh-resource-monitor](https://github.com/XiaoLuoMin/dsh-resource-monitor) — DSH 侧栏的 Windows 资源监控：每 60 秒采集 CPU、内存与主频，保留 30 天历史，CPU 与内存各一张 24 小时 / 7 天独立曲线（带 85% / 90% 告警线），另有一张频率曲线标注有负载时的降频，并判定 CPU 持续 ≥ 85%（10 分钟）、内存持续 ≥ 90%（10 分钟）、有负载时频率 ≤ 最高频率 70%（5 分钟）三类异常。
 - [xiaomujiang/dsh-user-question-nav](https://github.com/xiaomujiang/dsh-user-question-nav) — ChatGPT 风格问题导航胶囊，带 ⏫⏬ 上下箭头 — 对话区右侧逐条刻度尺，悬停展开抽屉列出全部用户问题，实时搜索过滤、一键平滑跳转、滚动同步高亮当前问题，会话切换自动重挂载。
 - [XiaoOu2024/dsh-novel-generator](https://github.com/XiaoOu2024/dsh-novel-generator) — 小说生成器：按时间线生成世界快照，通过世界快照和最近章节自动推演新章节。需 DSH >=0.2.1-rc.2。
 - [XiaoPb/dsh-mobile-layout](https://github.com/XiaoPb/dsh-mobile-layout) — DSH Web UI 的手机竖屏布局壳：侧边栏变成左侧右滑打开的抽屉，输入区下方常驻一条 56px 操作栏，设置页与模型 / 权限选择器按触控重排；提供原生、融合、悬浮三套布局预设，全部样式受 html\[data-dshm-mode="mobile"] 作用域保护，桌面、平板与横屏保持官方原样。
@@ -2113,7 +2114,7 @@ dsh plugin --profile web add dshmarket
 - [solstice621/dsh-conversation-cost](https://github.com/solstice621/dsh-conversation-cost) — 根据已记录的 Token 用量估算每轮回答和会话费用，支持自动更新模型价格及查看价格来源明细。
 - [solstice621/dsh-token-usage-dashboard](https://github.com/solstice621/dsh-token-usage-dashboard) — 根据 DSH 会话日志展示 Token 用量统计、每日与每周热力图、活跃情况和模型排名，并在本地持久保存汇总数据。
 - [songrui111/dsh-readprune](https://github.com/songrui111/dsh-readprune) — 为 DeepSeek Harness 会话节省 token：按行号或符号定位读取文件而不是整份读，并对过大的工具结果设上限且保留取回路径。修剪发生在源头，而不是内容进入上下文之后。在建模的 30 步会话上实测 prompt tokens 减少 43.9%。
-- [spartawhy117/dsh-token-dash](https://github.com/spartawhy117/dsh-token-dash) — DSH Token 看板：按供应商的月度预算、订阅配额（GLM / Kimi Coding）、账户余额与模型费用/用量明细——全程本地估算、只读本地数据，日志带错误分类便于排查。
+- [spartawhy117/dsh-token-dash](https://github.com/spartawhy117/dsh-token-dash) — DSH Token 看板：按供应商的月度预算、订阅配额（GLM / Kimi Coding）、账户余额，支持当天 / 7 天 / 30 天 / 全部范围查看费用与真实 Tokens，并可本地导出 / 导入备份。
 - [Starlight-bananice/dsh-status-bar](https://github.com/Starlight-bananice/dsh-status-bar) — 输入栏下可配置的 17 段会话状态栏，提供实时 TPS、按模型分别计价的费用估算，以及用量与费用弹窗。
 - [stevenx65/dsh-balance-plugin](https://github.com/stevenx65/dsh-balance-plugin) — dsh 网页侧边栏的 DeepSeek 余额与 token 用量监控：今日/累计切换，并按 provider 过滤其他厂商。
 - [Stmol/dsh-rub-cost](https://github.com/Stmol/dsh-rub-cost) — 在输入框坞区显示以卢布计的当前会话费用：当前时段与倒计时、该时段的 API 费用、央行汇率、含 subagent 的合计、缓存节省与 DeepSeek 平台余额。
