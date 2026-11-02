@@ -3,3 +3,4 @@ name: lucagiftzek/dsh-request-image-cap
 category: model
 description:
   en: "Caps every image sent to a model at a per-side pixel limit (default 2000 px) by wrapping attachments.readImageRequest, which fixes Anthropic many-image request errors without touching stored images."
+  zh: "把发给模型的每张图片按单边像素上限（默认 2000 px）压缩：通过包装 attachments.readImageRequest 实现，修复 Anthropic 多图请求报错，且不改动已存储的图片。"

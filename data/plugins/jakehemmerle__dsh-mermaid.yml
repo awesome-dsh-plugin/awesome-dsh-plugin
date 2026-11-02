@@ -3,3 +3,4 @@ name: jakehemmerle/dsh-mermaid
 category: ui
 description:
   en: 'Renders mermaid code blocks in dsh web chat as diagrams. Each block gets a toggle in its header to switch between the diagram and the source; blocks still streaming stay as code until the message settles. Mermaid loads lazily the first time a diagram is shown. The terminal UI is unaffected.'
+  zh: "在 DSH Web 对话里把 mermaid 代码块渲染成图：每个代码块头部有切换按钮，可在图与源码之间切换；仍在流式输出的块保持源码，等消息结束后再渲染；首次显示图时才懒加载 mermaid；终端 UI 不受影响。"
