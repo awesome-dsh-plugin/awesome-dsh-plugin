@@ -4,4 +4,4 @@ category: ui
 description:
   en: 'Collapses and reorders global sidebar navigation; adds opt-in Workspaces, Activity, and Favorites tabs.'
   zh: '折叠并排序全局侧栏导航；可按需开启工作区、活动与收藏三栏（默认关闭）。'
-tarball: https://github.com/nico-zhuang/dsh-nav-fold/releases/download/v0.4.3/dsh-nav-fold-0.4.3.tgz
+tarball: https://github.com/nico-zhuang/dsh-nav-fold/releases/download/v0.4.5/dsh-nav-fold-0.4.5.tgz
