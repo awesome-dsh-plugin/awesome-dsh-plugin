@@ -1,0 +1,6 @@
+url: https://github.com/Dcmwfg/dsh-deepseek-sidebar
+name: Dcmwfg/dsh-deepseek-sidebar
+category: ui
+description:
+  en: 'Opens chat.deepseek.com in the right sidebar pane from one row in the left sidebar, leaves the current conversation untouched, expands to fullscreen on demand, and shares the sidebar browser cookie jar; a bundled script makes the login survive restarts.'
+  zh: '左侧栏一行把 chat.deepseek.com 开进右侧栏标签页，不影响当前对话，可随时全屏；与侧边栏浏览器共用同一 cookie 分区，附带脚本让登录跨重启保留。'
