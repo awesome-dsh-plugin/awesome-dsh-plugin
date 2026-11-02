@@ -1,0 +1,7 @@
+url: https://github.com/reviso-si/reviso-dsh
+name: reviso-si/reviso-dsh
+category: docs
+tarball: https://github.com/reviso-si/reviso-dsh/releases/download/v0.1.1/dsh-reviso-0.1.1.tgz
+description:
+  en: "Publish agent output to Reviso for human review, browse published documents from the sidebar, and find them again from the session that produced them. OAuth is host-mediated: Reviso tokens stay in DSH credentials and the browser only receives short-lived embed sessions."
+  zh: "把 Agent 产出发布到 Reviso 供人工评审，在侧边栏浏览已发布文档，并在产生这些文档的同一个 DSH 会话中再次找到它们。OAuth 由宿主中转：Reviso token 只保存在 DSH credentials 里，浏览器仅获得短时效的 embed 会话。"
