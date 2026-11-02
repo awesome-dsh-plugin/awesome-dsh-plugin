@@ -1,0 +1,6 @@
+url: https://github.com/Friedeggrice/dsh-stealth-reader
+name: Friedeggrice/dsh-stealth-reader
+category: ui
+description:
+  en: 'Reads a few lines of a txt or epub novel inside the sidebar bottom panel, styled to pass for scratch notes; pages with Ctrl+Alt+J/K and keeps progress locally.'
+  zh: '把 txt / epub 小说藏进侧栏底部面板，一屏只显示几行、看着像随手记的草稿；Ctrl+Alt+J/K 翻页，进度存在本地。'
