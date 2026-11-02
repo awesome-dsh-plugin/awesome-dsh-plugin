@@ -1,0 +1,6 @@
+url: https://github.com/ROY32172310/dsh-ego-webqa
+name: ROY32172310/dsh-ego-webqa
+category: browser
+description:
+  en: "Adds an ego-webqa MCP server that audits deployed pages across the mobile viewport matrix and returns structured repair evidence; needs uv/uvx on PATH and a Playwright Chromium headless runtime on the same machine."
+  zh: "把 ego-webqa 的 MCP 审计服务接入 DSH，在移动端视口矩阵中检查已部署页面并返回结构化修复证据；前置需要在同一台机器上装好 uv/uvx 与 Playwright Chromium 无头运行时。"

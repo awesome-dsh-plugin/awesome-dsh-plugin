@@ -1,7 +1,0 @@
-url: https://github.com/junarch/voice_for_dsh/tree/main/packages/dsh-plugin-voice
-name: junarch/voice_for_dsh#dsh-plugin-voice
-category: voice
-icon: https://raw.githubusercontent.com/junarch/voice_for_dsh/main/assets/icon-180.png
-description:
-  en: 'Let DSH speak: every reply is rewritten into natural spoken language before being read aloud, with code, tables, and Markdown handled gracefully. Works out of the box with system TTS; Doubao (third-party API) adds dialects and expressive voices; the local Kokoro engine runs offline to keep content on your device. Supports both DSH desktop and dsh web. Optional session sounds tell you when the agent is working, finished, or waiting for your answer — with swappable built-in tones and support for your own audio.'
-  zh: '让 DSH 开口说话：每轮回答先改写成自然口语再朗读，代码、表格与 Markdown 自动处理；系统 TTS 开箱即用，豆包（第三方 API）提供方言与情感演绎，本地 Kokoro 引擎离线运行、内容不出本机；支持 DSH 桌面版与 dsh web。另附工作／完成／提问三种会话状态提示音——会话在跑、跑完了、等你回答各有提示，音色可换、也能上传自己的音频。'

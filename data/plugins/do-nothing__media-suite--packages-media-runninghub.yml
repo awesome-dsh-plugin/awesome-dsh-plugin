@@ -1,7 +1,7 @@
 url: https://github.com/do-nothing/media-suite/tree/main/packages/media-runninghub
 name: do-nothing/media-suite#media-runninghub
-category: vision
+category: workflow
 description:
-  en: 'RunningHub media tools: synchronous image generation, plus a background workflow pool for image editing, video generation, voice cloning, digital humans, and music.'
-  zh: 'RunningHub 媒体工具：同步图片生成，以及覆盖图片编辑、视频生成、语音克隆、数字人与音乐的后台工作流任务池。'
+  en: 'RunningHub cloud ComfyUI workflows as a background task pool: submit a batch, and a watcher dispatches it within a concurrency budget, polls each job, downloads every output to disk, and wakes the session when the pool drains. A shared ledger records batches, costs, instance tiers, submit and finish times, and per-file save paths, with a live board in the right sidebar.'
+  zh: '把 RunningHub 云端 ComfyUI 工作流当作后台任务池来跑：提交一批任务后，watcher 按并发上限自动派发、逐轮询每个任务、把产物全部下载到本地，池子排空时唤醒会话。共享台账记录批次、费用、实例规格、发起与完成时间以及每个文件的保存位置，右侧边栏有实时看板。'
 icon: https://raw.githubusercontent.com/do-nothing/media-suite/main/assets/icon-180.png

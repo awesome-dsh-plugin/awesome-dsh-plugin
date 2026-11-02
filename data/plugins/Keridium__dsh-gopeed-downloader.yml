@@ -1,0 +1,8 @@
+url: https://github.com/Keridium/dsh-gopeed-downloader
+name: Keridium/dsh-gopeed-downloader
+category: tools
+description:
+  en: 'Agent tools for a local Gopeed downloader: create, inspect, pause, resume and remove downloads, diagnose or launch the Gopeed process, and receive download-complete events through a DSH background job that wakes an idle agent. Process diagnostics and launching are Windows-only; the download tools work wherever Gopeed runs.'
+  zh: '把本机 Gopeed 下载器接进 DSH 的 agent 工具：新建、查看、暂停、继续、删除下载任务，诊断或启动 Gopeed 进程，并通过 DSH 后台任务接收下载完成事件（空闲的 agent 会被唤醒）。进程诊断与启动仅支持 Windows，下载相关工具跨平台可用。'
+icon: https://raw.githubusercontent.com/Keridium/dsh-gopeed-downloader/main/icon-512.png
+tarball: https://github.com/Keridium/dsh-gopeed-downloader/releases/latest/download/dsh-gopeed-downloader.tgz

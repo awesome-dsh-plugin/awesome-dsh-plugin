@@ -1,0 +1,7 @@
+url: https://github.com/LyuYuxin/dsh-wsl-folder
+name: LyuYuxin/dsh-wsl-folder
+category: wsl
+description:
+  en: 'Add a WSL directory as a DSH workspace from the sidebar''s Add workspace button: pick a distribution, browse the Linux tree, and the directory is registered as a \\wsl.localhost workspace whose sidebar terminals open inside the distribution and whose files the agent can write. Requires Windows 10/11 with WSL installed.'
+  zh: '在侧栏的「添加工作区」按钮里把 WSL 目录加成 DSH 工作区：选发行版、浏览目录后以 \\wsl.localhost 路径注册；该工作区的侧栏终端开在发行版里，agent 也能正常写入其中的文件。需 Windows 10/11 并已安装 WSL。'
+icon: https://raw.githubusercontent.com/LyuYuxin/dsh-wsl-folder/main/assets/icon-180.png

@@ -1,0 +1,8 @@
+url: https://github.com/Aperops/dsh-rfiles
+name: Aperops/dsh-rfiles
+category: remote
+description:
+  en: Adds chunked uploads with progress and resume, and native downloads of workspace files and the session log ZIP, to the DSH Web GUI, including sessions reached through a paired remote link.
+  zh: 为 DSH Web GUI 增加带进度与续传的分块上传，以及工作区文件与会话日志 ZIP 的原生下载；通过配对远程链接访问的会话同样可用。
+icon: https://raw.githubusercontent.com/Aperops/dsh-rfiles/main/assets/icon.png
+tarball: https://github.com/Aperops/dsh-rfiles/releases/download/v0.1.0/dsh-rfiles-0.1.0.tgz

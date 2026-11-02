@@ -1,0 +1,6 @@
+url: https://github.com/zxsimple/dsh-revive
+name: zxsimple/dsh-revive
+category: session
+description:
+  en: 'Conversation view that replays a session turn by turn: user prompts and assistant prose are revealed at reading pace, while reasoning and tool output stream past and stop at 3.5 seconds per segment, and every prompt is followed by a one-second pause. The same view can re-run the original prompts in a new session, and a replay can be recorded to a WebM file through a 1280x720 canvas.'
+  zh: '会话回放视图：按轮重放一次会话，用户输入与助手正文保持阅读速度，思考与工具输出高速掠过且每段最多 3.5 秒，每条输入后停顿一秒；同一视图可把原始请求复刻到一个新会话，也能通过 1280×720 画布把回放录成 WebM 视频。'

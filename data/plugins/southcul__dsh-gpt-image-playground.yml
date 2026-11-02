@@ -1,0 +1,17 @@
+# awesome-dsh-plugin 收录条目
+#
+# 提交方式：fork https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+# 把本文件放到 data/plugins/southcul__dsh-gpt-image-playground.yml，然后开 PR。
+# 只加这一个文件，不要手改 README（两个 README 由脚本生成）。
+#
+# 注意：
+# - url 必须与仓库完全一致
+# - description.en 里出现「: 」时必须加引号，否则 YAML 会当成嵌套键
+# - 描述会被维护者对着代码核对，不要写夸大或营销词
+
+url: https://github.com/southcul/dsh-gpt-image-playground
+name: southcul/dsh-gpt-image-playground
+category: vision
+description:
+  en: 'Runs the GPT Image Playground workbench inside DeepSeek Harness: gallery and agent modes, reference images with a mask editor, multi-provider API profiles, and local history. The upstream MIT build is served same-origin by the plugin, with an optional API proxy.'
+  zh: '把 GPT Image Playground 工作台装进 DeepSeek Harness：画廊与 Agent 双模式、参考图与遮罩编辑、多供应商 API 配置与本地历史。界面为上游 MIT 构建，由插件同源托管，并提供可选的 API 代理。'

@@ -1,0 +1,8 @@
+url: https://github.com/QwQBiG/dsh-archive-delete
+name: QwQBiG/dsh-archive-delete
+category: session
+description:
+  en: Archived-session trash with batch move, restore and permanent deletion, plus DSH and workspace storage usage, file types and large-file views.
+  zh: 归档会话回收站，支持批量移入、恢复和永久清除，并展示 DSH 与工作区的存储用量、文件类型和大文件。
+icon: https://raw.githubusercontent.com/QwQBiG/dsh-archive-delete/main/assets/icon-180.png
+tarball: https://github.com/QwQBiG/dsh-archive-delete/releases/download/v0.0.2/qwqbig-dsh-archive-delete-0.0.2.tgz

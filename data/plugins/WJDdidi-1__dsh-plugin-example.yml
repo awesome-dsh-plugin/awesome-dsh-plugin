@@ -1,0 +1,6 @@
+url: https://github.com/WJDdidi-1/dsh-plugin-example
+name: WJDdidi-1/dsh-plugin-example
+category: dev
+description:
+  en: 'A starter plugin to copy from: one right-sidebar tab with two languages, behaviour tests that mount the real bundle, and CI that runs the manifest preflight.'
+  zh: '可直接照抄的入门插件：一个右侧栏标签页、中英两份文案、挂载真实 bundle 的行为测试，以及会跑清单预检的 CI。'

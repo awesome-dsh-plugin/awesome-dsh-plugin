@@ -1,0 +1,6 @@
+url: https://github.com/revive123456/dsh-obsidian-notes
+name: revive123456/dsh-obsidian-notes
+category: ui
+description:
+  en: 'Obsidian-style notes panel in the DSH right sidebar: a tree over a local folder, Markdown preview with line numbers, edit and save, Obsidian callouts, tables and wikilinks, screenshot paste into the vault, one-click insert of a note path into the chat input, and batch archive or delete for sessions and workspaces.'
+  zh: 'DSH 右侧栏的 Obsidian 风格笔记面板：本地文件夹目录树、带行号的 Markdown 预览与编辑保存、Obsidian callout 与表格和双链渲染、粘贴截图存入 vault、一键把笔记路径插入对话输入框，以及会话/工作区的批量归档与删除。'

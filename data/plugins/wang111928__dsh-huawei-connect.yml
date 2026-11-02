@@ -1,0 +1,6 @@
+url: https://github.com/wang111928/dsh-huawei-connect
+name: wang111928/dsh-huawei-connect
+category: model
+description:
+  en: "Connect Huawei CodeArts and OfficeAce models to DeepSeek Harness: it reuses existing logins (a logged-in CodeArts desktop client or dsh-codearts; the OfficeAce desktop app running and logged in on Windows), shows each account's remaining credits, toggles models per platform, and shapes requests like the official clients."
+  zh: "把华为「码道 CodeArts」与「果办 OfficeAce」两个平台的模型接入 DeepSeek Harness：复用已有登录态（码道桌面端或 dsh-codearts 已登录；果办桌面端需在 Windows 上运行并登录），显示各账号积分余量、按平台勾选模型，并按官方客户端形态构造请求。"

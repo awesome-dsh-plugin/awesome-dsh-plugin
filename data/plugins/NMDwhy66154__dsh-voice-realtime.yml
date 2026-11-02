@@ -1,0 +1,6 @@
+url: https://github.com/NMDwhy66154/dsh-voice-realtime
+name: NMDwhy66154/dsh-voice-realtime
+category: voice
+description:
+  zh: "在 DeepSeek Harness 输入框里做实时语音转文字：边说话边显示识别结果，说完点完成自动插入光标处，可切换麦克风，本地 sherpa-onnx 推理、音频不出本机。"
+  en: 'Real-time speech-to-text inside the DeepSeek Harness composer: a live transcript while you speak, inserted at the caret when you stop, with a microphone picker. Local sherpa-onnx inference, so audio never leaves the machine.'

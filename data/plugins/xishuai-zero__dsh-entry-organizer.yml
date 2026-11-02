@@ -1,0 +1,7 @@
+url: https://github.com/xishuai-zero/dsh-entry-organizer
+name: xishuai-zero/dsh-entry-organizer
+category: ui
+description:
+  en: 'Drag-reorders the dsh sidebar panel entries and the conversation view tabs, and moves an entry between the sidebar and the tab strip as a real tab; order and moves are saved locally and survive restarts.'
+  zh: '拖拽重排 dsh 左侧栏的插件面板条目与会话顶部标签，并能把条目在侧栏与标签区之间搬移（搬过去是真实标签）；顺序与搬移状态存本机，重启后保留。'
+tarball: https://github.com/xishuai-zero/dsh-entry-organizer/releases/download/v0.1.1/dsh-entry-organizer-0.1.1.tgz

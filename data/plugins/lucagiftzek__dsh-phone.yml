@@ -1,0 +1,6 @@
+url: https://github.com/lucagiftzek/dsh-phone
+name: lucagiftzek/dsh-phone
+category: tools
+description:
+  en: "A Phone tab in dsh-better-sidebar: SMS and calls over Twilio and SIP lines bridged through Asterisk, call audio through your server, Live, Voicemail and Do not disturb modes with live voicemail transcripts, a Telegram account with chats, voice messages and calls, and phone_* and telegram_* agent tools. Requires dsh-better-sidebar, Node 22.5+, a Twilio account with a voice and SMS number, a public HTTPS host for provider webhooks, and the bundled Go daemons built from a checkout (Telegram also needs your own api_id/api_hash)."
+  zh: "dsh-better-sidebar 里的 Phone 标签页：通过 Twilio 与经 Asterisk 桥接的 SIP 线路收发短信和通话，通话音频走你的服务器，提供 Live、Voicemail、勿扰模式与实时语音信箱转写，并可挂一个 Telegram 账号（聊天、语音消息、通话），以及 phone_* / telegram_* agent 工具。需要 dsh-better-sidebar、Node 22.5+、带语音与短信号码的 Twilio 账号、可供服务商 webhook 访问的公网 HTTPS 地址，以及从 checkout 构建的 Go daemon（Telegram 还需自备 api_id/api_hash）。"
