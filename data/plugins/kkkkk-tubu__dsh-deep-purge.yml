@@ -1,0 +1,15 @@
+url: https://github.com/kkkkk-tubu/dsh-deep-purge
+name: kkkkk-tubu/dsh-deep-purge
+category: session
+description:
+  en: >-
+    Actually delete DSH sessions instead of archiving them. Clears all six
+    on-disk locations (transcript, title cache, bili SQLite index with VACUUM,
+    workspace registry, cost-meter ledger, bridge logs) with a dry run, a
+    backup, byte-for-byte rollback, and an automatic quit-delete-relaunch flow.
+  zh: >-
+    真正删除 DSH 会话，而不是只归档。一次清掉六处本地存储：会话日志、标题缓存、
+    bili SQLite 索引（含 VACUUM）、侧栏注册表、成本台账、桥接日志。带预演、
+    自动备份、逐字节回滚，以及「退出→删除→重启」全自动流程。
+icon: https://raw.githubusercontent.com/kkkkk-tubu/dsh-deep-purge/main/screenshots/02-panel.png
+tarball: https://github.com/kkkkk-tubu/dsh-deep-purge/releases/download/v1.0.0/dsh-deep-purge-1.0.0.tgz
