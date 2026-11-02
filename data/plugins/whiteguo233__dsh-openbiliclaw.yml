@@ -1,6 +1,7 @@
 url: https://github.com/whiteguo233/dsh-openbiliclaw
 name: whiteguo233/dsh-openbiliclaw
 category: ui
+tarball: https://github.com/whiteguo233/dsh-openbiliclaw/releases/download/v0.6.4/openbiliclaw-dsh-plugin-0.6.4.tgz
 description:
-  en: 'OpenBiliClaw consumer panel for DSH: recommendations, saved lists, Socratic dialogue, profile views, and Agent Bridge tools.'
-  zh: OpenBiliClaw 的 DSH 消费侧插件：提供推荐、收藏列表、苏格拉底式对话、画像面板和 Agent Bridge 工具。
+  en: 'Consumer panel for OpenBiliClaw inside DSH: a right-hand drawer with recommendations, saved lists, Socratic dialogue, profile and settings, plus 22 Agent Bridge tools so the agent can read recommendations, answer probes and save items.'
+  zh: OpenBiliClaw 的 DSH 消费侧插件：右侧抽屉提供推荐、收藏/稍后再看、苏格拉底式对话、画像与设置，并注册 22 个 Agent Bridge 工具，让 Agent 能读推荐、答探测、存内容。
