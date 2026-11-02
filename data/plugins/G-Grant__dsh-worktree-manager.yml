@@ -1,0 +1,6 @@
+url: https://github.com/G-Grant/dsh-worktree-manager
+name: G-Grant/dsh-worktree-manager
+category: git
+description:
+  en: 'Session-header environment and branch chips: Local git-switches the checkout; Worktree creates an isolated git worktree under .agents/worktrees, registers it as a workspace, and offers merge, squash, delete, and auto-cleanup.'
+  zh: '在空白会话加入环境与分支 chip：本机切换当前检出，Worktree 在 .agents/worktrees 下创建隔离 git worktree 并注册为工作区，会话头部提供合并、压缩提交、删除与自动清理。'
