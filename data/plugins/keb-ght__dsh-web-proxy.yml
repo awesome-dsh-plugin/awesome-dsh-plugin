@@ -1,0 +1,6 @@
+url: https://github.com/keb-ght/dsh-web-proxy
+name: keb-ght/dsh-web-proxy
+category: model
+description:
+  en: Turn a logged-in DeepSeek web account into an OpenAI and Anthropic compatible endpoint, with tool calling, image input, an account pool and a local admin console.
+  zh: 把已登录的 DeepSeek 网页账号包装成 OpenAI / Anthropic 兼容接口，支持工具调用、图片输入、账号池与本地管理台。
