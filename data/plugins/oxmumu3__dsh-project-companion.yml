@@ -2,5 +2,5 @@ url: "https://github.com/oxmumu3/dsh-project-companion"
 name: "oxmumu3/dsh-project-companion"
 category: "workflow"
 description:
-  en: "Personal assistant with logical project boards, bounded workspace access, native conversations, project memory, personal reviews and interest-based public news. Includes a WeChat component; binding still requires the user's own QR scan. API acceptance is not phone receipt."
-  zh: "个人助理：按逻辑目标组织项目看板，在授权工作区内整理资料，衔接原生对话、项目记忆、个人回顾与兴趣资讯。单包内置微信组件，仍需本人扫码绑定；接口接受不代表手机实收。"
+  en: "Personal assistant for projects, conversations, memory, reviews and news. Bundled WeChat pins the QR-confirmed account; first messages cannot claim ownership. An optional allowlist further restricts access. Missing or conflicting identity requires desktop recovery. API acceptance is not phone receipt."
+  zh: "个人助理：在授权范围内整理项目，衔接原生对话、记忆、回顾与资讯。单包内置微信，扫码确认账号为唯一操作者，陌生人先发消息不能认领；白名单可进一步限制，身份缺失或冲突会暂停并提示在电脑恢复。接口接受不代表手机实收。"
