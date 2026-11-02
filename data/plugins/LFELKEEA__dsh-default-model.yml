@@ -1,8 +1,0 @@
-url: https://github.com/LFELKEEA/dsh-default-model
-name: DSH Default Model
-category: model
-description:
-  en: Pins the harness default model from settings, so new chats, restarts and in-chat model switches stop rewriting it.
-  zh: 在设置里修改并固定 DSH 默认模型，新建对话、重启、以及在对话里切换模型都不再改写它。
-icon: https://raw.githubusercontent.com/LFELKEEA/dsh-default-model/main/assets/icon-180.png
-tarball: https://github.com/LFELKEEA/dsh-default-model/releases/download/v0.1.0/dsh-default-model.tgz
