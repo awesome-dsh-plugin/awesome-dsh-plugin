@@ -1,0 +1,7 @@
+url: https://github.com/TLEWA/dsh-sidebar-organizer
+name: TLEWA/dsh-sidebar-organizer
+category: ui
+description:
+  en: 'Adds custom ordering and tucking away to six strips of buttons and cards in DSH (the left sidebar, sidebar footer, conversation tabs, composer dock, right sidebar and settings navigation), plus per-area drag switches and JSON layout import/export.'
+  zh: '为 DSH 的六处按钮与卡片区域（左侧边栏、侧栏底部、对话标签、输入框工具条、右侧栏、设置导航）提供自定义排序与收纳，并支持分区拖动开关和布局 JSON 导入/导出。'
+icon: https://raw.githubusercontent.com/TLEWA/dsh-sidebar-organizer/main/icon.png
