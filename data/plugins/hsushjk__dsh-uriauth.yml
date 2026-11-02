@@ -1,0 +1,6 @@
+url: https://github.com/hsushjk/dsh-uriauth
+name: hsushjk/dsh-uriauth
+category: security
+description:
+  en: "When enabled, exchanges the running process's launch token for a browser-session cookie at a configurable public URI (default /trustme), so a first visit needs no ?token= in the URL."
+  zh: "开启后，在可配置的公开 URI（默认 /trustme）上把当前进程的 launch token 换成浏览器会话 cookie，首次访问无需在 URL 里带 ?token=。"
