@@ -4,4 +4,4 @@ category: session
 description:
   en: 'Read-only export of a chat.deepseek.com conversation into a new DSH session: builds a hand-off pack with the selected rounds kept verbatim and earlier rounds collapsed to one line each, then pre-fills the composer without sending it. Windows only as published (package.json os=win32); requires Edge or Chrome and a one-time chat.deepseek.com login.'
   zh: '只读取回 chat.deepseek.com 的对话并交给新会话：生成交接包（所选轮次逐字保留、更早轮次每轮压缩为一行），预填进输入框但不自动发送。发布包仅支持 Windows（package.json os=win32）；需要本机 Edge 或 Chrome，并先在插件里登录一次 chat.deepseek.com。'
-tarball: https://github.com/huang13113/dsh-web-share/releases/download/v0.3.0/dsh-web-share-0.3.0.tgz
+tarball: https://github.com/huang13113/dsh-web-share/releases/download/v0.3.1/dsh-web-share-0.3.1.tgz
