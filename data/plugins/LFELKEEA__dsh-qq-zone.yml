@@ -1,0 +1,8 @@
+url: https://github.com/LFELKEEA/dsh-qq-zone
+name: DSH QQ Zone
+category: tools
+description:
+  en: Publishes and reads QQ Zone posts through SnowLuma's OneBot qzone_* actions (SnowLuma 2.2+ signed in to QQ), and lets the agent understand images with a local vision model (OpenAI-compatible gateway) or Windows OCR.
+  zh: 通过 SnowLuma 的 OneBot qzone_* 动作发/看/删/赞/评论 QQ 空间说说（需 SnowLuma 2.2+ 且已登录 QQ），并让机器人用本地视觉模型（OpenAI 兼容网关）或 Windows OCR 看懂图片。
+icon: https://raw.githubusercontent.com/LFELKEEA/dsh-qq-zone/master/assets/icon-180.png
+tarball: https://github.com/LFELKEEA/dsh-qq-zone/releases/download/v0.1.1/dsh-qq-zone.tgz
