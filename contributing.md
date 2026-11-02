@@ -249,4 +249,14 @@ Entries under the **Themes & Appearance / 主题与外观** category automatical
 
 ## Removing or updating / 移除与更新
 
+### GitHub Release statistics / GitHub 发行统计
+
+The catalog keeps npm's rolling 30-day `downloads` separate from `githubReleaseDownloads`, the lifetime total for all assets in a public repository's Releases (packages, checksums and companion files, including prereleases but excluding drafts). These are download events, not installations or users. Consumers must label the source and scope and must not combine the two counts or sort lifetime totals as if they shared npm's window. A missing or incomplete probe leaves the prior complete count and its original timestamp; an unknown count is never zero. `starsCheckedAt` and `githubReleaseDownloadsCheckedAt` identify the observation, not the consumer's request time.
+
+For GitHub-only entries with a fixed Release tarball, `version` and `releaseManifest` come from the linked package's `package.json` at that selected tag, including a monorepo subdirectory when present. `releaseManifest.tarball` must match the current entry before its version or host declarations are used. The probe does not replace the author's install URL with a repository-wide latest release, and never runs package code. New or changed tags are read on the next build; counts refresh daily through a separate cache. Unpinned, foreign or unavailable manifests remain unknown.
+
+目录将 npm 近 30 天的 `downloads` 与 `githubReleaseDownloads` 分开。后者是公开仓库发行附件的累计下载次数，包括安装包、校验和配套文件及预发行，不包括草稿；不代表安装次数或用户数。展示须标明来源与范围，不相加，也不放进同一个 npm 时间窗口排序。探测失败保留上次完整结果及原采集时间，未知不写成零。Star 和发行下载量各自提供采集时间。
+
+仅 GitHub 发布且声明固定发行包的条目，从对应标签、对应子目录的 `package.json` 读取版本与宿主声明，消费方必须核对 `releaseManifest.tarball` 与当前安装地址完全相同。不会自动换成仓库的 latest，也不执行包代码。新标签随构建读取，统计量通过独立缓存每日刷新；无法核实的清单保持未知。
+
 PRs fixing descriptions, moving entries between categories, or removing dead projects are equally welcome. / 修正描述、调整分类、移除失效项目的 PR 同样欢迎。
