@@ -2,6 +2,6 @@ url: https://github.com/lucakaneshiro1/worldpulse
 name: lucakaneshiro1/worldpulse
 category: workflow
 description:
-  en: "Live international news from seven RSS feeds, situation analysis, and a worldwide travel planner that blocks conflict zones."
-  zh: "聚合七路实时国际新闻，提供局势研判，并规划避开战乱地区的全球旅行路线。"
+  en: "Live international news from seven RSS feeds, situation analysis, and a conflict-aware travel planner with flights, stays, transport, and booking-platform links."
+  zh: "聚合七路实时国际新闻，提供局势研判，并规划避开战乱地区的全球旅行路线，附机票、住宿、交通与全平台比价建议。"
 icon: https://raw.githubusercontent.com/lucakaneshiro1/worldpulse/main/assets/icon-180.png
