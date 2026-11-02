@@ -585,6 +585,7 @@ dsh plugin --profile web add dshmarket
 - [flyhigao/dsh-sticky-notes](https://github.com/flyhigao/dsh-sticky-notes) — DSH 工作区极简便签：在各个工作区保存多张 Markdown 便签，记录你的想法和项目进程。
 - [foooold/dsh-message-nav](https://github.com/foooold/dsh-message-nav) — 为 DeepSeek Harness Web UI 添加 Codex 风格的消息导航轨道，方便在长会话中快速定位历史提问。
 - [foreee/dsh-app-restart](https://github.com/foreee/dsh-app-restart) — 在桌面应用设置中新增「应用重启」区块，优雅退出并自动重启整个应用。
+- [ForsakenDelusion/dsh-branchnest](https://github.com/ForsakenDelusion/dsh-branchnest) — 为 DSH 项目提供会话画布，支持对话卡片连线、选中文字创建追问分支、笔记和文档式阅读。
 - [FragrantLotus/dsh-plugin-chinese](https://github.com/FragrantLotus/dsh-plugin-chinese) — 给只提供英文简介的已安装 DSH 插件自动补上中文简介，启动时以及每次插件变动后各跑一次，插件名称一律不改。原本已导出语言包的插件刷新页面即生效，原本没有语言包导出的也会自动补上：内存注入层即时生效，写入磁盘的语言包需重启一次。
 - [FragrantLotus/dsh-sidebar-entries](https://github.com/FragrantLotus/dsh-sidebar-entries) — dsh 网页端侧边栏整体增强：长按拖拽重排面板图标栏，一个箭头即可整栏折叠；面板列表与置顶区都按整行限制高度（占侧栏 30%，向下取整行）；置顶会话区镜像原生行的实时状态（转圈、待回复、相对时间）；顶部会话视图标签可拖拽换位；归档会话按时间新到旧沉到每组末尾；分叉出的子会话自动跟进父会话所在的置顶区；并把任意插件注册在侧栏底部的入口提升到同一栏内。每个子系统各自带启动守卫，单个失败只返回 null，不影响整个插件挂载。
 - [framefutura/dsh-mode-seat](https://github.com/framefutura/dsh-mode-seat) — 对话框常驻的 Agent 预设（模式）选择条：新任务直接切换模式，运行中的会话可一键设为新任务默认。
@@ -914,6 +915,7 @@ dsh plugin --profile web add dshmarket
 - [liuhaolong16/dsh-quote-reply](https://github.com/liuhaolong16/dsh-quote-reply) — 把引用与消息正文彻底分开：引用任意助手回合里的段落会打开输入框上方的引用行，随下一回合作为 system-prompt 上下文注入模型（带来源与时间标注），并在回合尾部以可展开的「引用(N)」行显示这一轮到底用了哪几条；引用本地落盘、刷新不丢、按回合认领；宿主与客户端两半体做版本握手并上报兼容结论。
 - [liuhusk/dsh-status-card](https://github.com/liuhusk/dsh-status-card) — 内容区右上角的常驻状态卡片：一行写清本轮时间去向（模型/工具/等你），另列可折叠的任务与进度条、会话目标（可编辑/暂停/继续/清除）、已提交计划（可点开在右栏预览）、本次变更文件、带 token 与耗时数字的子智能体行，以及本会话的后台任务（运行中的行带两段确认的终止按钮，已结束的收进一行计数、默认收起）；内容区收窄时正文向左让位，推到极限自动收成一颗圆钮。
 - [liujia-io/dsh-image-picker](https://github.com/liujia-io/dsh-image-picker) — 在会话输入框添加 📎 选图按钮，通过系统文件选择器选取参考图并注入官方附件管线（缩略图、数量与大小校验、随消息上传），绕开拖拽环境问题。
+- [liujuntao123/dsh-mobile-keys](https://github.com/liujuntao123/dsh-mobile-keys) — 为 DSH Web 输入框增加「移动端热键模式」：自动检测移动/触控设备后切换为 Ctrl+Enter 发送、裸 Enter 换行，桌面键位保持不变，并提供设置面板开关、/mobilekeys 命令与 window.__dshMobileKeys 控制台 API。
 - [liuming-dev/dsh-plugins#annotation-rewind-scroll](https://github.com/liuming-dev/dsh-plugins/tree/main/annotation-rewind-scroll) — 为回复和文档添加随下一条消息发送的注释，编辑历史用户消息并从该处重新执行，使用快捷键浏览用户消息或在输入框调出历史输入。
 - [liumorrisclaw/dsh-composer-input-history](https://github.com/liumorrisclaw/dsh-composer-input-history) — 在 DSH 输入框用 ↑ 调回本会话已发送的消息；↓ 前翻并恢复你正在写的草稿，再按一次 ↓ 丢弃草稿、清空输入框。
 - [liupengprivate-blip/dsh-baidu](https://github.com/liupengprivate-blip/dsh-baidu) — DSH 侧栏里的模拟搜索页：调用本地搜索接口，列出前 10 条结果。
@@ -2059,6 +2061,7 @@ dsh plugin --profile web add dshmarket
 - [Pingze-github/dsh-cost-audit](https://github.com/Pingze-github/dsh-cost-audit) — 以 harness 自己的统计形态显示每轮与会话的 token 与人民币花费，提供 1/7/30 天窗口的全账号账单与「单位工作量花费」趋势，并给出会在你采纳后重新测量效果的建议。
 - [PlusQi/dsh-tokstats](https://github.com/PlusQi/dsh-tokstats) — 可能有用的 DSH token 用量插件，跨会话统计 token 都花在哪儿了：用量总览四项指标、上下文长度分布、近 12 周热力图与按周趋势，工作区与模型排行；另附有发送前 token 预告和输入草稿优化功能。
 - [PolinniZhong/dsh-personal-center](https://github.com/PolinniZhong/dsh-personal-center) — DeepSeek Harness 个人中心：跨会话用量统计（按供应商/模型分别统计，自动读取已配置模型）、按模型成本估算、全局自定义指令、数据驱动的桌面宠物（位图/矢量皮肤）与会话状态概览，纯本地离线运行。
+- [Polyaris-0413/dsh-balance-cmd](https://github.com/Polyaris-0413/dsh-balance-cmd) — 一个通过命令查询余额、打开充值页的 dsh 插件。
 - [pythoner1984/dsh-plugin-openai-quota](https://github.com/pythoner1984/dsh-plugin-openai-quota) — 在 DSH 窗口顶部边缘用一行提示显示 DeepSeek 余额、ChatGPT/Codex 五小时与每周剩余额度及其重置时间、剩余额度重置卡数量与最近到期时间；重置卡那一段是链接，会用浏览器打开 ChatGPT 使用情况页。
 - [qiyuexue-xiyu/dsh-tool-cost-hint](https://github.com/qiyuexue-xiyu/dsh-tool-cost-hint) — 每轮对话结束后在回复底部追加一行可折叠提示：列出这一轮调用了哪些工具、各几次、每个工具往上下文注入了多少 token（输入加输出），点开可看逐工具明细。
 - [qwert702/dsh-token-viewer](https://github.com/qwert702/dsh-token-viewer) — dsh 网页端 CC Switch 风格 Token 消耗统计：按请求的用量日志、真实消耗 Hero、按请求提交时间分桶的趋势图、按模型峰谷牌价计费、项目/模型统计与账户余额。
