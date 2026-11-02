@@ -2,5 +2,5 @@ url: https://github.com/Asern-l/dsh-plugin-test-controller-public
 name: Asern-l/dsh-plugin-test-controller-public
 category: dev
 description:
-  en: 'Runs DSH plugin test plans in disposable profiles — inspect, install, headless and interactive open modes — then exports the evidence: environment, logs, assertions, install manifests.'
-  zh: '在一次性 profile 里跑 DSH 插件测试计划——inspect、安装、headless 与可交互 open 模式——并导出证据：环境、日志、断言与安装清单。'
+  en: 'Runs DSH plugin test plans in disposable profiles — inspect, install, headless and interactive open — keeps the prepared profile as a snapshot so repeat runs clone it instead of reinstalling, and exports the evidence: environment, logs, assertions, install manifests.'
+  zh: '在一次性 profile 里跑 DSH 插件测试计划——inspect、安装、headless 与可交互 open——把准备好的 profile 存成快照，重复运行直接克隆、不再安装，并导出证据：环境、日志、断言与安装清单。'
