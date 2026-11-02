@@ -4,4 +4,5 @@ category: tools
 description:
   en: "Region screenshot for DSH without a hotkey. Hold the left mouse button for 550 ms, the page dims into a crosshair, drag a box, release: the crop is saved to ~/.dsh/longpress-shots and copied to the clipboard, and a preview card can send the same bytes into the composer (button, Ctrl+V, or drag) instead of hunting for a file dialog."
   zh: 给 DSH 加区域截图，不用记快捷键。按住左键 550 毫秒，页面变暗进入十字框选，拖出范围松手即得 PNG，落到 ~/.dsh/longpress-shots 并同时写进剪贴板；预览卡可以把同一份字节直接送进输入框（按钮 / Ctrl+V / 拖拽三条路），不用再翻文件对话框。
+icon: https://raw.githubusercontent.com/kkkkk-tubu/dsh-longpress-shot/main/screenshots/03-preview-card.png
 tarball: https://github.com/kkkkk-tubu/dsh-longpress-shot/releases/download/v1.11.2/dsh-longpress-shot-1.11.2.tgz
