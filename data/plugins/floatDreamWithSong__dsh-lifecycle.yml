@@ -1,0 +1,7 @@
+url: https://github.com/floatDreamWithSong/dsh-lifecycle
+name: floatDreamWithSong/dsh-lifecycle
+category: security
+description:
+  en: Windows-style lock screen with password, OTP and Passkey authentication, persistent login sessions, custom wallpapers, and systemd-backed Harness restart, shutdown and update controls.
+  zh: 提供 Windows 风格锁屏、密码／OTP／Passkey 验证、跨重启登录会话、自定义壁纸，以及基于 systemd 的 Harness 重启、停止与更新控制。
+icon: https://raw.githubusercontent.com/floatDreamWithSong/dsh-lifecycle/main/assets/icon.png
