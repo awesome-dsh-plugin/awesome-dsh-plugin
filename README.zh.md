@@ -2353,7 +2353,7 @@ dsh plugin --profile web add dshmarket
 - [HCGuo2000/hcguo-public#amber-forge](https://github.com/HCGuo2000/hcguo-public/tree/main/plugins/amber-forge) — 以《战锤 40,000》机械神教为灵感的琥珀 CRT 风格皮肤：以齿轮骷髅圣徽替代默认品牌标记，新会话口号改写为机械神教偈语，覆写 14 枚主题令牌与 23 枚静态调色板色值，在 KaTeX 公式之外统一全站等宽字体，叠加扫描线与屏幕暗角，并把模式选择器加长 10%。
 - [HerTa-st/dsh-theme-herta](https://github.com/HerTa-st/dsh-theme-herta) — 给 DeepSeek Harness 的黑塔主题：移植自上游 Herta 项目的开机 ASCII 开场、一整套紫罗兰设计令牌、可替换的壁纸（自带四张，也支持图片网址 / 本机导入 / 纯色 / 关掉），以及 DSH 设置里的「黑塔外观」页。它同时就是 dsh-herta 自带的那套主题。
 - [HeShen-1/deepseek-whale-wallpaper](https://github.com/HeShen-1/deepseek-whale-wallpaper) — DSH Web 动态点阵鲸鱼壁纸：约 1,750 个呼吸的 WebGL2 粒子，指针液态涡流交互，明暗双主题，带 Canvas2D 回退。
-- [Zed Space Skin](https://github.com/hetonghao/dsh-zed-space) — DeepSeek Harness 动态背景与界面皮肤。原生个性化动态背景皮肤，以及市场下载精美的动态壁纸。 沿用 Open Sea Skin（d-dev0101）的上游实现，请勿与上游同时安装。
+- [Zed Space Skin](https://github.com/hetonghao/dsh-zed-space) — DeepSeek Harness 动态背景与界面皮肤。原生个性化动态背景皮肤，以及市场下载精美的动态壁纸。
 - [HoloEN-Gwargura/dsh-bigfish-blur](https://github.com/HoloEN-Gwargura/dsh-bigfish-blur) — 以当前桌面壁纸为基础做模糊处理的液态玻璃换肤：壁纸被模糊并蒙一层白纱作为整窗画布，侧栏与聊天面板保持半透明；输入框、代码块、预览面板、菜单等承载文字的表面按可读性分档加磨砂，控件为 Apple 液态玻璃质感。Windows 上读取当前桌面壁纸作为画布，其他平台回退到自绘渐变。
 - [holy-ovo/dsh-startup](https://github.com/holy-ovo/dsh-startup) — 给 DeepSeek Harness 的深海下潜式启动开屏：深度尺与探测器、角色出场视频接无缝循环、海底珊瑚与气泡与缓慢漂浮的微光粒子；下潜到哪一层，就出现哪一层的海洋生物。
 - [huantest2024/dsh-anime-theme](https://github.com/huantest2024/dsh-anime-theme) — 二次元主题：全屏动漫壁纸、玻璃拟态面板、六套全局配色主题、动态壁纸、粒子效果与右下角随机动图挂件。
@@ -2501,6 +2501,7 @@ dsh plugin --profile web add dshmarket
 - [TinyNian/dsh-harness-os#dsh-harness-os](https://github.com/TinyNian/dsh-harness-os/tree/main/packages/dsh-harness-os) — 主界面皮肤：把 dsh-startup-screen 开机动画的技术档案版式延伸到整个工作台，揭幕时接住开机动画的常驻件。
 - [Tkingxiao/dsh-any-background](https://github.com/Tkingxiao/dsh-any-background) — DeepSeek Harness 外观一体化工具。对 8 个界面区域分别调节透明度与毛玻璃模糊（主背景、侧边栏、卡片面板、输入框与控件、设置面板、对话文本框、轨迹页、产出物/高亮内容；安装 dsh-better-sidebar 后为 9 个）。用任意图片或视频做壁纸，配有拖动平移、滚轮缩放的位置编辑器与 5 种布局模式（适应/填充/拉伸/平铺/居中）；视频静音循环播放、刷新不丢失，并自动截取一帧用于预览、取色与构图。把多张图片加入轮换池（随机/顺序，每次刷新/每天/每周）自动更换。还包含 PS 风格色轮、一键从壁纸提取主题色、6 套预设 + 命名配置、昼夜自动切换与主题一键导出导入。
 - [Tommy00748/dsh-theme-cyberpunk2077](https://github.com/Tommy00748/dsh-theme-cyberpunk2077) — Cyberpunk 2077 / 夜之城主题：NC 黄 × 霓虹青配色、CRT 扫描线、Kiroshi 悬停锁定、战斗状态 HUD、合成打字机与消息音效，以及隐藏彩蛋（relic / johnny）。
+- [tonyZ1987/DSH-H.D.D-skin](https://github.com/tonyZ1987/DSH-H.D.D-skin) — 把 DSH 整个界面换成《绝区零》H.D.D 空洞深潜系统的深蓝终端皮肤：侧栏、输入框、会话页与设置面板整体换装，带一整套开机动画（拨片 → 大眼 → 落界面）、可开关的角色卡与工作区三色角标；纯客户端插件，关掉即回原生白底。
 - [tpmoonchefryan/dsh-joi-channel-theme](https://github.com/tpmoonchefryan/dsh-joi-channel-theme) — 轴伊 Joi 双衣装主题：Flowers 与 Library 是各自成套的明暗令牌体系，新会话页有立绘与趴在标题上的鲸鱼娘，输入框上方两只 Q 版角色随本回合状态换表情，侧栏字标换成二人合影，上下文占用由一颗渐熟的橘子表示；第三张卡可在保持插件安装的前提下切回 DeepSeek 原生外观。
 - [TQSY114514/dsh-ui-appearance](https://github.com/TQSY114514/dsh-ui-appearance) — DeepSeek Harness 外观自定义:主题调色、壁纸与视频背景、半透明与毛玻璃。
 - [tsdfy/dsh-skin-switcher](https://github.com/tsdfy/dsh-skin-switcher) — 皮肤切换器：右上角一键切换主题，自动发现社区皮肤。
