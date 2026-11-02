@@ -4618,6 +4618,7 @@ dsh plugin --profile web add dshmarket
 - [llafztq/dsh-video-tool](https://github.com/llafztq/dsh-video-tool) — DSH 视频剪辑工具集：探测、裁剪、拼接、音轨处理、字幕烧录、变速、转码与抽帧，引擎为首次使用时自动下载的 ffmpeg。
 - [lldois/dsh-jev](https://github.com/lldois/dsh-jev) — 基于 TypeSafe Jev 的 DeepSeek Harness 语义工具路由、技能发现与类型化 System One 决策插件。
 - [LLYlab/DLT](https://github.com/LLYlab/DLT) — 一个 DSH 插件里的六个可独立开关的模块：每轮对话的人民币成本、DeepSeek 账户余额、PDF/Word/Excel/CSV 直接读写工具与右栏预览、编译/运行环境表，以及按环境名执行程序或编译 MSBuild 工程的 run/build 工具。工具链路径在运行时解析（扫描 Visual Studio 安装根、%ProgramFiles%、PATH），并可在插件配置里逐个环境覆盖，没有写死在作者机器上的路径。
+- [llyy-t/multisim-toolkit](https://github.com/llyy-t/multisim-toolkit) — 把本机的 NI Multisim 14.3 变成可编程对象：九个 msim_* 工具可开关 .ms14 设计、读写元件值与电路参数、跑直流工作点/交流扫频/单频交流/瞬态分析、导出原理图与 BOM/网表；Win32 通道驱动可见窗口操作分析对话框并截取 Multisim 自己的电路视图与波形图；SPICE 命令文件引擎处理没有探针的设计；离线解析器完全不启动 Multisim 就能读出 .ms14 内容。
 - [LOESS16/dsh-masterduel](https://github.com/LOESS16/dsh-masterduel) — 面向 DSH 的 Master Duel 工具面板：带禁限筛选和 AI 智能查卡的查卡、相关卡片、稀有度徽章、收藏与构建拖放、可收放收藏栏、规则引擎先手实测与 hand_odds 起手概率、卡组类型排行、卡组检查。卡图与卡文在运行时从第三方来源获取，插件不打包卡牌数据；需要单独安装 master-duel-ai-advisor MCP。
 - [lof6yo/dsh-opencode-live](https://github.com/lof6yo/dsh-opencode-live) — 通过 ACP 把 OpenCode 作为 DSH 子智能体运行，并在右侧边栏实时展示它的 agent 与模型、工具调用和它自己派生的子 agent；权限请求会变成 DSH 问题卡片，可选允许一次、始终允许或拒绝。
 - [LoKiGGo/dsh-tools](https://github.com/LoKiGGo/dsh-tools) — 面向 dsh web profile 的个人工具箱，各功能可单独开关：任务完成桌面通知、一键重启、会话删除、插件启停、更新检查，以及若干界面小工具。
