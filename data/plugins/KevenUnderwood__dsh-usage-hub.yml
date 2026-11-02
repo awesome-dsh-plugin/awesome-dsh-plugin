@@ -2,6 +2,6 @@ url: https://github.com/KevenUnderwood/dsh-usage-hub
 name: KevenUnderwood/dsh-usage-hub
 category: usage
 description:
-  en: 'Usage panel for the provider account behind the current model: quota windows, credit balance and token usage, following the model automatically.'
+  en: 'The current model features a large model account usage dashboard: credit window, account balance, and token usage, which automatically switches with the model. It supports mainstream large model vendors built into DSH, and allows for detailed viewing and overview viewing in the lower left corner of the page.'
   zh: '当前模型背后的大模型账户用量面板：额度窗口、账户余额与 token 用量，随模型自动切换，支持dsh中内置的主流大模型厂商，支持详情查看与页面左下角概览查看。'
 icon: https://raw.githubusercontent.com/KevenUnderwood/dsh-usage-hub/main/assets/icon-180.png
