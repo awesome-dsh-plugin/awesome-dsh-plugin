@@ -5465,7 +5465,7 @@ dsh plugin --profile web add dshmarket
 - [SciF-Lin/dsh-browsercontrol-mcp](https://github.com/SciF-Lin/dsh-browsercontrol-mcp) — 通过官方 dsh-mcp-client 挂载微软的 Playwright MCP，把浏览器工具以 stdio 接入智能体；一次性的 CDP 授权由提示注入、调用拦截与 /bw-setup 命令引导完成。
 - [Shad0wwa1ker/dsh-browser-mode](https://github.com/Shad0wwa1ker/dsh-browser-mode) — 新增「浏览器操作」Agent 预设（基于 Playwright MCP 工具集的导航、填表、点击与截图规程），并加门禁：其他预设里的浏览器工具调用一律拒绝，直到用户通过内置的 browser_access 工具授权该会话。插件自带 Playwright MCP provider，插件页的设置页与 browser_source 工具都能在运行时把浏览器来源切换为 Microsoft Edge（默认）、Playwright 内置 Chromium 或 CDP 地址。需在 profile 里保留共享的 browser-use 注册表行（一个进程只能有一个 provider）。
 - [ShallBay/dsh-bridge-browser](https://github.com/ShallBay/dsh-bridge-browser) — 让 DSH 直接操控你当前正在浏览的 Chrome 标签页，无需视觉能力：页面以带编号元素清单的结构化文本交给模型；点击、输入、按键、滚动、标签页操作与导航都会在扩展侧边栏等你确认，密码与支付卡字段保持掩码。15 个 browser_* 工具覆盖 snapshot、文本读取、标签页列举/打开/跟随、点击、输入、按键、滚动、等待、导航、后退、关闭、前进与刷新。本项目是 omdsh-dev/dsh-browser 桥接插件的再打包版，发布到 npm，可直接 `dsh plugin add` 安装：放宽了宿主安装时校验的 peer 范围，避免被判为版本不兼容；随包的扩展额外探测 DSH 桌面端宿主端口 19387，因此无需手填桥接地址；并附带脚本把扩展复制到固定目录，避免切换 profile 或重装后扩展失效。预构建 Release tarball 内含插件本体与已构建的 MV3 扩展。上游：https://github.com/omdsh-dev/dsh-browser。
-- [SheepofSheep/dsh-doyourweb](https://github.com/SheepofSheep/dsh-doyourweb) — 用 @ 引用已登录的 Chrome / Edge 标签页和已授权的本地 HTML，读取、批量操作、截图并调用 WebMCP；拖动批注浮窗，将多条批注加入聊天草稿。按用户明确给出的本地文件路径上传，支持隐藏 input、自定义选择器及 iframe。轻量快照句柄使用新元素引用前需读取游标；浏览器输入显示独立停止按钮。选择运行中的 Windows 应用，优先连接匹配的本地 MCP，未安装先询问，无匹配时使用 Cua Driver，支持打字、快捷键、控件分页和操作后校验。复用 Windows helper，后台输入能力取决于应用。
+- [SheepofSheep/dsh-doyourweb](https://github.com/SheepofSheep/dsh-doyourweb) — 通过原生浏览器侧栏或 @ 引用已登录的 Chrome / Edge 标签页、已授权的本地 HTML 和运行中的 Windows 应用。读取轻量快照、批量操作、截图并调用可用的 WebMCP 工具；支持用户授权的文件上传、同框元素拖拽及文件投放，以及按需开启的网络元数据捕获。页面和应用上下文以可展开引用展示；可收纳的元素批注及选中的本地诊断日志加入聊天草稿，不自动发送。应用控制优先连接匹配的本地 MCP，未安装先询问，无匹配时使用 Cua Driver，支持打字、快捷键和控件分页；桌面读取在连接首次或需要恢复窗口时展示，失败动作保留证据并停止，不自动重放。后台输入能力取决于应用。
 - [shinjiyu/dsh-plugin-search](https://github.com/shinjiyu/dsh-plugin-search) — 不用官方 DeepSeek API 也能用内置 web_search：关掉 web-search-deepseek，默认走 Tavily keyless。
 - [sryimnoob123/dsh-web-search-ollama](https://github.com/sryimnoob123/dsh-web-search-ollama) — 让 DSH 的 web_search 工具走 Ollama 联网搜索 API，复用 OLLAMA_API_KEY，无需 DeepSeek 官方 Key。
 - [Starp1ume/dsh-chat-mode](https://github.com/Starp1ume/dsh-chat-mode) — 在 DSH 桌面版标题栏加入聊天/工作切换：聊天模式用原生 webview 内嵌 DeepSeek 网页版（chat.deepseek.com），插件自身不调用 DSH API，首次启动默认进入聊天；工作模式保留原生 Agent 界面，切换时网页保持挂载；「带入工作」对话框需先确认，只会填入工作模式草稿、不自动发送。
@@ -6334,6 +6334,7 @@ dsh plugin --profile web add dshmarket
 - [Dogwind221/dwguard-dsh-hmos](https://github.com/Dogwind221/dwguard-dsh-hmos) — DSH 侧鸿蒙交付编排插件：冻结四维验收任务包（可量化判据带机器可校验断言）、派发前对抗预审、以 Goal 模式交给 DevEco Code，再用独立取证（截图 / 布局树 / 日志 / 带 SHA-256 的证据包）做外部审计，按实测值重算断言判定并生成返工单；含带官方引用的规则目录、用户确认状态与闸门校准账本。
 - [Drkoh-wz/team-craft#team-flowise](https://github.com/Drkoh-wz/team-craft/tree/main/packages/team-flowise) — DSH 的多角色团队编排插件：给每个角色各自的模型、人设与工具，按依赖跑节点图，带独立评审与有上限的返工，并在界面里看进度。
 - [drliuhuan/dsh-plugin-folder-trust](https://github.com/drliuhuan/dsh-plugin-folder-trust) — 仅 Windows：新增工作区时授权一次，补齐 workspace-write 沙箱所需的 NTFS 权限，并把授权与 Low 完整性标签铺进已有子目录；修复过程带实时进度与日志。
+- [dryw/dsh-egm](https://github.com/dryw/dsh-egm) — 面向 DeepSeek Harness 的设计评审闸门：具备完整上下文的“大象”起草设计，再由零上下文的只读“金鱼”评审者严格审查，通过后才进入实现。
 - [dsh-plugin-collection/dsh-later](https://github.com/dsh-plugin-collection/dsh-later) — 给 DSH 加上定时提醒与延迟发送：一句话到点送达——/later 以你的身份发出，定时面板或 /schedule 发提醒行；关掉网页也准时触发。（定时发送 / 定时提醒 / 延迟发送 / 提醒）
 - [duhu2000/dsh-pre-duediligence](https://github.com/duhu2000/dsh-pre-duediligence) — 访前尽调智能体：面向拜访前调查，提供企业尽调、客户尽调、客户背景调查、工商核验与风险信息整理；使用企查查 MCP，设有调用预算授权和主体确认。
 - [duhu2000/dsh-tender-workbench](https://github.com/duhu2000/dsh-tender-workbench) — 招投标智能体：支持招投标搜索、招标查询、投标查询、标讯查询、拟建项目与项目筛选，辅助商机发现、人工复核及 Excel/PDF 导出，使用客户自备授权的企查查 MCP。
@@ -6547,10 +6548,16 @@ dsh plugin --profile web add dshmarket
 - [PandaBlessing/dsh-user-sync](https://github.com/PandaBlessing/dsh-user-sync) — DSH 用户级配置同步：技能、插件清单、配置与记忆跨机同步，换机一键恢复、缺插件自动装回、敏感文件硬拒绝。
 - [Passenger-Qin/dsh-task-splitter](https://github.com/Passenger-Qin/dsh-task-splitter) — 面向小上下文本地模型的宿主侧长任务识别：长产出自动拆成分段骨架（每轮只写一段，最后拼装），多步骤任务自动建立 PLAN.md 台账与 notes/（先立计划、每轮执行一步）。判定在宿主侧用启发式完成，不依赖模型自己判断极限。
 - [PensiveFei/deep-read-summarize](https://github.com/PensiveFei/deep-read-summarize) — DSH 精读与摘要：书籍/论文/视频/网页经可插拔解析器转成结构化 Obsidian 笔记，MapReduce 并行精读子代理、JSON Schema 输出与幂等缓存。
+- [PerryLink/dsh-ap-three-way](https://github.com/PerryLink/dsh-ap-three-way) — 应付三单匹配：导入发票、采购订单与收货单，按容差策略匹配并导出异常底稿——4 个 `ap.*` 工具。
 - [PerryLink/dsh-background-agents](https://github.com/PerryLink/dsh-background-agents) — 官方子代理接缝上的持久化后台子代理：任意会话中启动，Web 侧边栏看进度、随时留言与打断，支持按子代理限定工具、人格与委托深度。
+- [PerryLink/dsh-bankrec](https://github.com/PerryLink/dsh-bankrec) — 银行对账单核对：导入 CAMT.053 与 MT940，与账簿条目匹配并导出工作底稿——6 个 `bankrec.*` 工具。
 - [PerryLink/dsh-doublecheck](https://github.com/PerryLink/dsh-doublecheck) — 工程纪律守门：动笔前审讯需求，红绿测试证据门，交付后对抗评审，并汇总交付报告与逐维度核对。
+- [PerryLink/dsh-einvoice](https://github.com/PerryLink/dsh-einvoice) — 中文电子发票（OFD/XML）收件箱：导入、解析、去重、进入复核队列、登记回执并本地归档——10 个 `invoice.*` 工具，数据不出本机。
+- [PerryLink/dsh-legal-clause](https://github.com/PerryLink/dsh-legal-clause) — 合同条款处理：构建条款树、按 12 项 playbook 映射、登记 playbook 并导出未决清单——5 个 `legal.*` 工具。
+- [PerryLink/dsh-legal-intake](https://github.com/PerryLink/dsh-legal-intake) — 法务需求收件：从 EML 读取需求、按线程去重并导出收件台账——2 个 `legal.*` 工具。
 - [PerryLink/dsh-research-report](https://github.com/PerryLink/dsh-research-report) — DeepSeek Harness 的可核查研究报告引擎：通过内容寻址的证据台账和版本化封存报告使每条结论携带核查结论，由 manifest 哈希封存目录，检索编排复用 ctx.web 与 ctx.jobs 接口。
 - [PerryLink/dsh-team-rooms](https://github.com/PerryLink/dsh-team-rooms) — 持久化、跨会话的多 Agent 团队房间：成员、消息总线、共享任务板与共享时间线，重启后仍然保留。
+- [PerryLink/dsh-travel-recon](https://github.com/PerryLink/dsh-travel-recon) — 差旅费用核对：导入订单、发票与卡流水，去重、三单匹配与只读政策校验后导出——5 个 `travel.*` 工具。
 - [ph1996-cn/dsh-BMAD-Method](https://github.com/ph1996-cn/dsh-BMAD-Method) — 把 BMAD-Method 塞进插件里：首次打开即铺好七个模块（不跑安装器、不下载），随包提供 90 个 agent 与工作流 skill，每个模块可通过写 profile 补丁里的 disabled 标记单独停用。
 - [Phocinae/dsh-batch-triage](https://github.com/Phocinae/dsh-batch-triage) — 确定性工单分诊：规则先处理明确案例，放不下的统一返回 needs_review，而不是猜。
 - [PiedPiper911/dsh-workflow-canvas](https://github.com/PiedPiper911/dsh-workflow-canvas) — DSH 可视化工作流编排画布，基于 React Flow 拖拽编排工具调用、子智能体与条件分支。
@@ -8089,7 +8096,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-reach](https://github.com/PerryLink/dsh-reach) — 把 DSH 的审批卡与提问卡推送到 IM 渠道（先支持微信），可在聊天里直接作答，带会话控制台、逐渠道安全与开放推送服务。
 - [polaris-smart/dsh-devices](https://github.com/polaris-smart/dsh-devices) — 去中心化多设备舰队：mDNS 同网发现、密钥配对、SSH 跨网直连指挥。
 - [Raiyan007-gb/dsh-remote-tunnel-easy](https://github.com/Raiyan007-gb/dsh-remote-tunnel-easy) — 在设置中扫描二维码，通过 cloudflared 快速隧道在手机上于当前会话中打开 DeepSeek Harness 网页端。
-- [regrevia/dsh-mobile-use](https://github.com/regrevia/dsh-mobile-use) — DSH 里的安卓真机调试台（30 个工具）：读界面文本树（角色名可读：Text/Btn/Input/List……）、量动效数据、按文字/资源 id/ref/候选序号点按输入滑动，画面推到右栏，圈一处再写一句话回到会话。看屏不走视觉模型——色块采样、区域差异与推流帧 OCR 一起用，常见判断 100–200 ms 出结果（热帧 37 ms，1000×600 区域 121 ms）。进程有边界：重载或崩溃后残留的 ffmpeg/录屏子进程会被回收而不是越积越多，失败回执只提这一步真的发生过的崩溃。需要宿主上的 adb（Android platform-tools）与 ffmpeg；设备端辅助程序随包附带，OCR 兜底仅支持 macOS。
+- [regrevia/dsh-mobile-use](https://github.com/regrevia/dsh-mobile-use) — 手机装进 DSH 右栏：读一次界面 120 ms、200–1300 token，截图那套要 1 秒上下、token 多 3 倍起；点一下就是点真机（61 ms），圈一处带圈图和控件回到会话。不截图也能说清屏上有什么、刚才那下点中了没有。需要 adb 与 ffmpeg。
 - [RestRegular/dsh-pocket](https://github.com/RestRegular/dsh-pocket) — 为 DSH 单独做的窄屏移动端 Web 服务，不是把桌面 GUI 缩放塞进手机：自带会话列表与聊天流，随机访问令牌保护，可走局域网、cloudflared / localtunnel / localhost.run 隧道或自有服务器 SSH 反向转发。手机上流式看助手文本、思考、工具调用与结果，能发提示词、停止当前回合、回答阻塞提问与工具审批（含其它会话里等待的），切换模型 / 思考等级 / 权限预置，发送最多 4 张手机上压缩过的照片，并可一键让电脑常亮。
 - [rice-awa/dsh-lan-gateway](https://github.com/rice-awa/dsh-lan-gateway) — 把 DSH Web GUI 发布到局域网/公网，dsh 仍只绑定回环。除显式开启局域网免密外，所有来源均须登录换取 HMAC 会话 Cookie。提供自签名或自定义 TLS、用于明文 HTTP 代理的 secureCookies 覆盖项，以及让局域网纯 HTTP 来源正常打开工作区的 UUID shim。
 - [RyensX/dsh-remote-gateway](https://github.com/RyensX/dsh-remote-gateway) — 提供安全的反向代理，使DeepSeek Harness可以远程访问，随时随地和AI对话。
