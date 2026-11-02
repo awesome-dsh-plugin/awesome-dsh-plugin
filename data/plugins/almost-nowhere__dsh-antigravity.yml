@@ -1,0 +1,6 @@
+url: https://github.com/almost-nowhere/dsh-antigravity
+name: almost-nowhere/dsh-antigravity
+category: model
+description:
+  en: Google Antigravity model provider with multi-account pool scheduling, live quota monitoring, and Gemini 3.8 Flash support.
+  zh: Google Antigravity 模型提供商插件，支持多账号号池平滑调度、实时配额监控与 Gemini 3.8 Flash。
