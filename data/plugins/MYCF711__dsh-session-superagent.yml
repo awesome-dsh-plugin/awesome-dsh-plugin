@@ -1,0 +1,7 @@
+url: https://github.com/MYCF711/dsh-session-superagent
+name: MYCF711/dsh-session-superagent
+category: session
+description:
+  en: 'Session-level superagent: watch one GitHub repository and wake this session when an issue or pull request changes. The credential never reaches the model.'
+  zh: '会话级 superagent：盯一个 GitHub 仓库，issue/PR 有变化就唤醒本会话；凭证留在插件内，不进模型。'
+icon: https://raw.githubusercontent.com/MYCF711/dsh-session-superagent/main/assets/icon-180.png
