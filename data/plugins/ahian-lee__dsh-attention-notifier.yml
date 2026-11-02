@@ -1,0 +1,10 @@
+# awesome-dsh-plugin 投稿文件：复制本文件到你的 fork 的 data/plugins/ 目录（文件名已按规范取好），
+# 一个 PR 只加这一个文件；README 是生成的，不要手改。
+# 前置：仓库已公开 + 加了 dsh-plugin topic + 仓库创建满 1 天（CI 自动查）。
+url: https://github.com/ahian-lee/dsh-attention-notifier
+name: ahian-lee/dsh-attention-notifier
+category: notify
+tarball: https://github.com/ahian-lee/dsh-attention-notifier/releases/latest/download/dsh-attention-notifier.tgz
+description:
+  en: Sounds and notifications when a task completes or waits for your approval or answer; notification sounds are configurable in the settings page (synth styles or your own audio file), with built-in cat hachimi sounds, just for fun. An optional Windows patch adds a taskbar digit, flashing and native toasts.
+  zh: 任务完成或等待批准、回答时播放提示音并发送通知；提示音可在设置页更换（合成音色或自选音频文件），内置猫咪 hachimi 音效，just for fun。可选的 Windows 补丁额外提供任务栏数字角标、闪烁与原生通知。

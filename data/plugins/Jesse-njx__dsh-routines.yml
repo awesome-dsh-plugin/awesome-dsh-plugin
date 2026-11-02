@@ -1,0 +1,6 @@
+url: https://github.com/Jesse-njx/dsh-routines
+name: Jesse-njx/dsh-routines
+category: workflow
+description:
+  en: 'Scheduled agents on a cron: run a prompt on a schedule and get the digest where you already are, with overlap/missed-run/timeout safety defaults.'
+  zh: 定时 Agent：按 cron 计划运行 prompt，把摘要送到你已有的地方，内置重叠/漏跑/超时安全策略。

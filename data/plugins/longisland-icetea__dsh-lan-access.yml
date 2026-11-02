@@ -1,0 +1,6 @@
+url: https://github.com/longisland-icetea/dsh-lan-access
+name: longisland-icetea/dsh-lan-access
+category: remote
+description:
+  en: 'Configurable LAN access for the DSH Web GUI: a settings tab binds the server to all interfaces, trusts only the addresses you configure, sets the browser session lifetime or removes the token login, and repairs the settings layer on non-loopback visits.'
+  zh: '可配置的 DSH Web GUI 局域网访问：设置页开启后绑定全部网卡，只信任你配置的访问地址，可调整浏览器会话有效期或去掉 token 登录，并修复非回环访问时的设置层。'

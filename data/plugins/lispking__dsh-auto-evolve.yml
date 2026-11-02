@@ -1,0 +1,6 @@
+url: https://github.com/lispking/dsh-auto-evolve
+name: lispking/dsh-auto-evolve
+category: workflow
+description:
+  en: "A self-evolving plugin for DeepSeek Harness: it observes how the agent runs, proposes improvements to its own assets via the LLM, validates each proposal inside a sandboxed trial agent, and applies only verified mutations — with a versioned ledger and automatic rollback on regression."
+  zh: "一个自我进化的 DeepSeek Harness 插件：观察代理的运行方式，通过 LLM 对其自身资产提出改进方案，在沙箱试运行代理中验证每个方案，只应用通过验证的变更——带版本化账本，出现性能回退时自动回滚。"

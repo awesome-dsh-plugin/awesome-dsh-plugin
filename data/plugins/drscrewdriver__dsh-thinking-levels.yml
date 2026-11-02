@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-thinking-levels
+name: drscrewdriver/dsh-thinking-levels
+category: model
+description:
+  en: 'Per-round thinking-level (reasoning_effort) control for DeepSeek Harness: pick Auto and it schedules low/high/max from the recent tool-call history, or fix a wire level (off/on/minimal/low/medium/high/xhigh/max) manually, with custom wire mapping, a model-aware capability guard, and context-window presets (64K–1M); its per-model capability card pairs with a separate plugin, [dsh-llm-openai-completions](https://github.com/drscrewdriver/dsh-llm-openai-completions) (installable from dsh-market), so custom OpenAI-compatible gateways (vLLM / LM Studio / self-hosted) can try reasoning — the card writes llm-pi-ai capabilities, the adapter drives the wire (compat.thinkingFormat), and this plugin auto-maintains the takeover list.'
+  zh: 'DSH 逐轮思考级别（reasoning_effort）控制：选择 Auto 即按近期工具调用历史自动调度 low/high/max，或手动固定线路档位（off/on/minimal/low/medium/high/xhigh/max），支持自定义线路映射、模型能力护栏与上下文窗口预设（64K–1M）；其逐模型能力卡片与另一独立插件 [dsh-llm-openai-completions](https://github.com/drscrewdriver/dsh-llm-openai-completions)（可在 dsh-market 安装）联动，让自定义 OpenAI 兼容网关（vLLM / LM Studio / 自托管）也能试用推理——卡片写入 llm-pi-ai 能力，适配器接管线路（compat.thinkingFormat），本插件自动维护接管列表。'

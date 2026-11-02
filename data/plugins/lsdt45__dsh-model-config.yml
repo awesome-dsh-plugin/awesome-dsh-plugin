@@ -1,0 +1,6 @@
+url: https://github.com/lsdt45/dsh-model-config
+name: lsdt45/dsh-model-config
+category: model
+description:
+  en: 'Configure thinking toggles and reasoning efforts per model for llm-pi-ai and official DeepSeek, and specify input modalities (input or inputModalities) in the DSH settings panel.'
+  zh: '在 DSH 设置面板为 llm-pi-ai 与官方 DeepSeek 提供方按模型配置思考开关与思考等级，并为各模型配置多模态输入类型。'

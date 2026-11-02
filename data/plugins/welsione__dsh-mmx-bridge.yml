@@ -1,0 +1,6 @@
+url: https://github.com/welsione/dsh-mmx-bridge
+name: welsione/dsh-mmx-bridge
+category: tools
+description:
+  en: 'MiniMax multimodal bridge: one `mmx_bridge` tool covers image understanding/generation, video, TTS, music, cover, web search and quota; optional `web_search`/`read_image` takeover; inline players/image previews right in the Web GUI (npm: `dsh-mmx-bridge`).'
+  zh: 'MiniMax 多模态桥接：一个 `mmx_bridge` 工具覆盖图片理解/生成、视频、语音合成、音乐、翻唱、联网搜索与用量查询；可选接管 `web_search`/`read_image`；对话流直接内嵌播放器与图片预览（npm: `dsh-mmx-bridge`）。'

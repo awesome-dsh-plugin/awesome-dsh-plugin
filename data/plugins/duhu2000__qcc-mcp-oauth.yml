@@ -1,0 +1,6 @@
+url: https://github.com/duhu2000/qcc-mcp-oauth
+name: duhu2000/qcc-mcp-oauth
+category: tools
+description:
+  en: 'One-click OAuth (PKCE) connect to Qichacha (qcc.com) MCP services in DeepSeek Harness: dynamic client registration, token auto-refresh, and dynamic mcp-client configuration.'
+  zh: '一键 OAuth（PKCE）授权接入企查查 MCP 服务：动态注册客户端、token 自动刷新、动态配置 mcp-client 条目，一次授权覆盖全部企查查数据服务。'

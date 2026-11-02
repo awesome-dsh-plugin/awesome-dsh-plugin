@@ -1,0 +1,6 @@
+url: https://github.com/niliemi/dsh-billing
+name: niliemi/dsh-billing
+category: usage
+description:
+  en: Prices tokens with the official model price table, keeps the per-session and global running cost beside the composer context meter, mirrors your DeepSeek account balance in the sidebar, blocks a turn once this period passes your own global ceiling (clamped to that balance) or a per-session ceiling (each session sets its own, independently), and resets the billing baseline per session or globally — the two are independent, so resetting one never resets the other — so the period goes back to zero while history only rolls into the lifetime total.
+  zh: 按官方模型价目表把 token 折算成费用，在聊天框底部上下文环旁常驻显示本会话与全局的本次已用金额，在左侧边栏显示账户余额，并在本次费用超过你自设的全局上限（超过余额会被夹到余额）或某个会话自己的上限（每个会话各自设、互不共用）时阻断该轮（可一次性或按会话放行）；每个角标右侧可重置计费起点（本次归零、历史只进累计、token 一条不丢），全局与单会话两个起点各自独立、互不牵连。

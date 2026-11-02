@@ -1,0 +1,6 @@
+url: https://github.com/M4rkzzz/dsh-decisiontools
+name: M4rkzzz/dsh-decisiontools
+category: tools
+description:
+  en: 'Optional Decision API tool discovery and search-source prefetch, with per-session controls and ordinary-discovery fallback.'
+  zh: '可选 Decision API 工具预发现与搜索来源预读，支持会话开关和普通按需发现回退。'

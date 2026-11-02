@@ -1,0 +1,6 @@
+url: https://github.com/w4xxx/dsh-xia-plugins/tree/main/packages/client-game-assistant
+name: w4xxx/dsh-xia-plugins#packages/client-game-assistant
+category: theme
+description:
+  en: 'Sakura theme, companion notifications (approval/job/answer), message read-aloud, and voice settings for the DSH web GUI.'
+  zh: 'DSH Web 界面的樱花主题与陪伴功能：审批/任务/回答提醒、消息朗读、语音设置。'

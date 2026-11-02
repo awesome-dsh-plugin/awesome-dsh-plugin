@@ -1,0 +1,6 @@
+url: https://github.com/jackControls/dsh-telegram-control
+name: jackControls/dsh-telegram-control
+category: notify
+description:
+  en: "Telegram remote control for DeepSeek Harness: list conversations with titles and workspaces, resume paused persisted sessions on demand (preset remount), turn-tracked reply relay, first-line reasoning summaries, inline-button approve/reject with outcome edits, and a bot command menu."
+  zh: Telegram 远程控制插件：会话列表（标题+工作目录）、按需恢复暂停的持久化会话（重挂 preset）、按回合精准回传回复、💭 思考摘要、✅/❌ 内联按钮审批（结果回写原消息）、bot 命令菜单。

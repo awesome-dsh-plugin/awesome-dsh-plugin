@@ -1,0 +1,15 @@
+url: https://github.com/kingofpowers/dsh-chat-ctxmenu
+name: kingofpowers/dsh-chat-ctxmenu
+category: ui
+description:
+  en: >-
+    Right-click menu for DeepSeek Harness conversation content: copy the selection or the whole
+    message, copy message images and the preview lightbox to the clipboard as PNG (or save them),
+    open file paths (absolute, relative to the session working directory, or ~/), reveal them in
+    the file manager, open them with another registered application, and copy paths or links.
+    Every candidate path is verified by the Host filesystem before an open action appears.
+  zh: >-
+    给 DSH 对话区加右键菜单：复制选中内容或整条消息；把消息图片和点击预览后的大图复制为 PNG
+    到剪贴板或另存为文件；识别绝对路径、相对会话工作区的路径、~/ 以及代码内联路径，一键打开、
+    在文件管理器中显示、用其他应用打开、复制绝对/相对路径；链接可打开或复制。所有候选路径都会
+    先由 Host 文件系统校验存在性，再显示打开项。

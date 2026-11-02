@@ -1,0 +1,6 @@
+url: https://github.com/WelY1/dsh-topbar
+name: WelY1/dsh-topbar
+category: ui
+description:
+  en: Per-session status chips in the GNOME top bar for DeepSeek Harness — gray for running, green for done, yellow for waiting — configurable from the sidebar, with a self-installed GNOME extension.
+  zh: 在 GNOME 顶栏显示 DSH 各会话状态色块（灰=运行中，绿=已完成未确认，黄=等待回复/审批），可在侧边栏配置，自动安装 GNOME 扩展。

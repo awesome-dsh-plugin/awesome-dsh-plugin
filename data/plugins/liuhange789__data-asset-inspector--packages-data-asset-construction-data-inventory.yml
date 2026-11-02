@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/construction-data-inventory
+name: liuhange789/data-asset-inspector#construction-data-inventory
+category: tools
+description:
+  zh: "建筑工程数据资产盘点插件 — 盘点BIM/IFC分类、资产编码，输出资产清单"
+  en: "Construction data asset inventory plugin — inventories BIM/IFC classification, asset encoding, outputs asset catalog."

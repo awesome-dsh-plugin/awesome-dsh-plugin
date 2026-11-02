@@ -1,0 +1,6 @@
+url: https://github.com/picsky/dsh-pocket-console
+name: picsky/dsh-pocket-console
+category: notify
+description:
+  en: 'Forwards an unattended DeepSeek Harness run''s tool-call approvals and ask_user_question prompts to Feishu cards on your phone. The desktop GUI answers first — a card is only sent after `delaySeconds` (120 by default) with no answer there — and a phone approval grants `allowed-once`, so no authority accumulates on the phone. One outbound WebSocket long connection to Feishu: no public IP, domain, tunnel or relay.'
+  zh: '把无人值守运行时 DeepSeek Harness 的工具调用审批与 ask_user_question 提问推送到手机飞书卡片。桌面 GUI 优先作答——只有在 `delaySeconds`（默认 120 秒）内无人应答时才发出卡片——手机上的批准等同于 `allowed-once`，因此不会在手机上累积任何权限。仅一条到飞书的出站 WebSocket 长连接：不需要公网 IP、域名、隧道或中继。'

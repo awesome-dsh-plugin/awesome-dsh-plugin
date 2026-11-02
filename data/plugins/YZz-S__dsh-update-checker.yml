@@ -1,0 +1,6 @@
+url: https://github.com/YZz-S/dsh-update-checker
+name: YZz-S/dsh-update-checker
+category: dev
+description:
+  en: Conversation header badge showing the DeepSeek Harness version, checking npm for the latest release and prompting upgrades.
+  zh: 会话顶栏徽章：显示 DeepSeek Harness 当前版本，自动检查 npm 最新版本，有新版时提示升级。

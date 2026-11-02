@@ -1,0 +1,6 @@
+url: https://github.com/Cci-65/dsh-ui-plugin
+name: Cci-65/dsh-ui-plugin
+category: theme
+description:
+  en: Restyles the DeepSeek Harness welcome area and composer, with workspace, mode, and skill shortcuts.
+  zh: 为 DeepSeek Harness 欢迎区和输入栏换肤，并提供工作区、模式与技能快捷入口。

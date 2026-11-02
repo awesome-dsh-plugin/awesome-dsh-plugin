@@ -1,0 +1,6 @@
+url: https://github.com/Dclef/dsh-cursor-dev
+name: Dclef/dsh-cursor-dev
+category: dev
+description:
+  en: Runs the local Cursor CLI as a child coding agent from DSH - a `cursor_code` tool plus the native one-shot `cursor_subagent` tool, one mirrored DSH sub-session per run, per-task model choice, resumable conversations, a step timeline with real file diffs, and a usage, model and session panel.
+  zh: 把本机 Cursor CLI 当作子编码智能体：提供 `cursor_code` 工具与原生一次性 `cursor_subagent` 工具，每次运行镜像为一个真实的 DSH 子会话，可按任务选模型、会话可续聊，返回逐步工具时间线与真实文件 diff，并提供额度、模型和会话面板。

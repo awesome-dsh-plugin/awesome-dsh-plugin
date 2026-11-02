@@ -1,0 +1,7 @@
+url: https://github.com/MannixHu/dsh-statusbar-config
+name: MannixHu/dsh-statusbar-config
+category: ui
+description:
+  en: 'Configurable statistics row below the composer via a ${variable} display template — which segments appear and how they are labelled is fully user-defined.'
+  zh: '用 ${变量} 显示模板自定义输入框下方的会话统计行——显示哪些统计段、单位文案怎么写，全部由模板决定。'
+tarball: https://github.com/MannixHu/dsh-statusbar-config/releases/latest/download/dsh-statusbar-config.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/kira905/dsh-session-title-live
+name: kira905/dsh-session-title-live
+category: session
+description:
+  en: Live session-title provider for dsh that regenerates the title after every user message, summarizing the most recent messages within a byte budget.
+  zh: DSH 会话标题实时生成器：每条用户消息后重新生成标题，在字节预算内概括最近几条消息。

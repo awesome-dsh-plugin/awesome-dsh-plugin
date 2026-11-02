@@ -1,0 +1,6 @@
+url: https://github.com/wszhoho/dsh-file-attachment
+name: wszhoho/dsh-file-attachment
+category: ui
+description:
+  en: "Drag-and-drop / paste / upload files and images; on non-multimodal models images are auto-described by a configured VLM."
+  zh: "拖拽/粘贴/上传文件和图片，非多模态模型下图片自动调用已配置 VLM 识别。"

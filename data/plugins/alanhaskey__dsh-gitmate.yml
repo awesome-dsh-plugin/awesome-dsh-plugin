@@ -1,0 +1,6 @@
+url: https://github.com/alanhaskey/dsh-gitmate
+name: alanhaskey/dsh-gitmate
+category: git
+description:
+  en: 'Git panel in the right sidebar plus fifteen agent tools: editor-style diffs, a commit graph across every branch, staging and committing, branch, stash and remote operations, and model-assisted commit messages, pre-commit review and commit splitting.'
+  zh: '右侧栏的 Git 面板与十五个 Agent 工具：编辑器式的差异、覆盖全部分支的提交图、暂存与提交、分支与贮藏与远程操作，以及由模型协助的提交说明、提交前审阅和拆分提交方案。'

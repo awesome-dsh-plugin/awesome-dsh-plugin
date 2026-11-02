@@ -1,0 +1,7 @@
+url: https://github.com/Iambatman1928/dsh-lawkb-ui
+name: Iambatman1928/dsh-lawkb-ui
+category: ui
+tarball: https://github.com/Iambatman1928/dsh-lawkb-ui/releases/latest/download/lawkb-ui.tgz
+description:
+  zh: '法律知识库工作台：直读本地法规 .doc/.docx 语料，关键词/统计语义/向量三路融合检索、双维度筛选、案名索引与民事案由树、文书编辑器，以及引用核验/合同审查/AI 分析/AI 文书生成四件套。'
+  en: 'Legal knowledge-base workbench: hybrid keyword/statistical/vector retrieval over local statute .doc/.docx corpora, faceted filtering, charge-name and civil-cause trees, a document editor, and four AI tools (citation check, contract review, AI analysis, AI drafting).'

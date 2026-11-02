@@ -1,0 +1,7 @@
+url: https://github.com/JinBeiCN/dsh-coding-discipline
+name: JinBeiCN/dsh-coding-discipline
+category: skill
+description:
+  en: "Coding agent preset plus an embedded coding-discipline skill for DeepSeek Harness: verify-first edits, minimal diffs, real test runs and evidence-based reports."
+  zh: "DeepSeek Harness 的 Coding 纪律强化插件：提供 Coding agent 预设与内嵌 coding-discipline 技能，强调先复现再修改、最小改动、真实跑测试与证据式汇报。"
+tarball: https://github.com/JinBeiCN/dsh-coding-discipline/releases/download/v1.0.0/dsh-coding-discipline-1.0.0.tgz

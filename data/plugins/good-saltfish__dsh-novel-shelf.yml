@@ -1,0 +1,7 @@
+url: https://github.com/good-saltfish/dsh-novel-shelf
+name: good-saltfish/dsh-novel-shelf
+category: fun
+description:
+  en: "A novel reader docked in the DSH right sidebar, with an AI companion that roasts whatever you just read alongside you - import your own TXT three ways, five reading themes, and saved chapters, progress and annotations. The companion comments as you go, commenting in one of four voices (sharp-tongued, warm, detective or slacker) at a pace you pick, off by default. 434 Chinese classics as a 44 KB catalogue, searchable by title or author, one click to download and read offline, four CDN edges as fallback."
+  zh: "装在 DSH 右侧栏的小说阅读器，搭配 AI 伴读，跟大肥鱼一起吐槽文章、发表看法 - 自己的 TXT 三种方式导入，五套阅读主题，章节、进度与批注保存。伴读跟着你读到哪儿就评到哪儿，吐槽或捧场，可在毒舌、温柔、侦探、摆烂四种腔调中切换，节奏自己定，默认关闭。内置 434 本中文经典，包里只有 44 KB 书目，按书名作者搜索、一键下载即入架离线读，四个 CDN 边缘回退。"
+tarball: https://github.com/good-saltfish/dsh-novel-shelf/releases/download/v0.4.2/dsh-novel-shelf-0.4.2.tgz

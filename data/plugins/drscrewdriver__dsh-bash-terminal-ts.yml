@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-bash-terminal-ts
+name: drscrewdriver/dsh-bash-terminal-ts
+category: tools
+description:
+  en: Shell tool with four Windows backends (PowerShell / Git Bash / WSL / MSYS2) plus an interactive PTY terminal; the MSYS2 backend starts bash.exe with -lc so /etc/profile puts /usr/bin and /mingw64/bin on PATH, and injects MSYSTEM=MINGW64 into the PTY environment. Written in TypeScript, targets DSH 0.1.2+.
+  zh: 一个 shell 工具：Windows 上支持 PowerShell / Git Bash / WSL / MSYS2 四种后端，外加交互式 PTY 终端；MSYS2 后端以 bash.exe -lc 启动，让 /etc/profile 把 /usr/bin 与 /mingw64/bin 带进 PATH，并为 PTY 环境注入 MSYSTEM=MINGW64。TypeScript 编写，面向 DSH 0.1.2+。

@@ -1,0 +1,6 @@
+url: https://github.com/135642-163/dsh-knowledge-base
+name: 135642-163/dsh-knowledge-base
+category: memory
+description:
+  en: 'Local-first knowledge base for DeepSeek Harness: imports Word/PPT/Excel/PDF (text or scanned), EPUB and MOBI/AZW3, builds Markdown parts with page anchors, OCR quality/confidence and column-aware PDF reading order; adds an LLM-maintained wiki layer (schema.md rules, auto index.md, append-only log.md, typed notes with sources and backlinks), adds source-trust labels (high/medium/low) with trust-aware ranking and low-trust warnings, and supports ranked search, cross-KB query, precise reading/editing, and md/jsonl/zip export. MOBI/AZW3 need Calibre; legacy .doc/.ppt need Word/PowerPoint (Windows) or LibreOffice (Linux); scanned-PDF OCR downloads models on first use.'
+  zh: 'DeepSeek Harness 本地知识库：导入 Word/PPT/Excel/PDF（文字版或扫描版）、EPUB、MOBI/AZW3，生成带页码锚点、OCR 质量/置信度与 PDF 双栏阅读顺序的 Markdown 分块；并提供 LLM 维护的编译层（schema.md 维护规范、自动 index.md 内容索引、只追加 log.md、带来源与反链的 typed 笔记），支持来源可信度标注（高/中/低）与可信度感知检索、低可信提醒，以及排序检索、跨库查询、精读修订与 md/jsonl/zip 导出。MOBI/AZW3 需 Calibre；旧版 .doc/.ppt 需 Word/PowerPoint（Windows）或 LibreOffice（Linux）；扫描版 PDF 的 OCR 首次使用会下载模型。'

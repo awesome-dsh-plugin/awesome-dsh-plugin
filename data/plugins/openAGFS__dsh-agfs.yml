@@ -1,0 +1,6 @@
+url: https://github.com/openAGFS/dsh-agfs
+name: openAGFS/dsh-agfs
+category: ui
+description:
+  en: 'File-browser web app for DSH: React frontend and REST API served by the host webserver, a /dsh-agfs command that opens at the current session workspace, and a browse_files model tool.'
+  zh: 文件浏览器 Web 应用：React 前端与 REST API 由宿主 webserver 托管，/dsh-agfs 命令自动定位当前工作区，附 browse_files 模型工具。

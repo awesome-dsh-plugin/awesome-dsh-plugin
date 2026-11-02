@@ -1,0 +1,6 @@
+url: https://github.com/Anlerway/dsh-session-navigator
+name: Anlerway/dsh-session-navigator
+category: session
+description:
+  en: 'Manage DSH sessions the way Windows Explorer manages files: move, delete, search, archive, favorite and flag sessions as to-dos, and organize them with tags, notes and folders across workspaces. An AI pass can summarize a session and write its notes and tags in one go.'
+  zh: '像 Windows 资源管理器那样管理 DSH 的会话：进行会话转移、删除、搜索、归档、收藏、待办等操作，对您的会话进行标签、备注，使用文件夹分组，方便地管理您的会话和工作区。同时也可以调用 AI 对您的会话进行一键总结、备注、修改标签。'

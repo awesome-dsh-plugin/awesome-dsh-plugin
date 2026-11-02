@@ -1,0 +1,7 @@
+url: https://github.com/Jessicaisleep/dsh-genshin-pet/tree/main/dsh-pet
+name: "Jessicaisleep/dsh-genshin-pet#dsh-pet"
+category: fun
+description:
+  en: "Two chibi Genshin Impact desktop pets (Columbina and Nahida), 22 transparent animations each, with desktop wandering, drag-and-throw physics, click reactions, idle chatter and chat through DSH models. A fan pack derived from PC2005-cloud/dsh-pet (MIT) — it reuses upstream's /dsh-pet-7340 route and ~/.dsh/dsh-pet data directory, so install it instead of dsh-pet, not alongside it; the character art is not MIT-licensed."
+  zh: "两只原神 Q 版桌宠（哥伦比娅、纳西妲），每只 22 段透明动画；可桌面漫步、拖拽抛掷、点击反应，会碎碎念，并用 DSH 模型陪聊。本包派生自 PC2005-cloud/dsh-pet（MIT），沿用上游的 /dsh-pet-7340 路由与 ~/.dsh/dsh-pet 数据目录，请替代 dsh-pet 安装、不要与它同装；角色素材不在 MIT 授权范围内。"
+icon: https://raw.githubusercontent.com/Jessicaisleep/dsh-genshin-pet/main/assets/icon-180.png

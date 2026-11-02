@@ -1,0 +1,6 @@
+url: https://github.com/dxxCaO/dsh-self-improvement
+name: dxxCaO/dsh-self-improvement
+category: memory
+description:
+  en: 'Cross-session memory as plain Markdown per workspace: weighted injection, bi-temporal invalidation, TTL review with stale markers, credential redaction, error and session retrospectives, SOP skills, and approval-gated self-improvement proposals.'
+  zh: '按工作区存放的纯 Markdown 跨会话记忆：重要性加权注入、双时态失效、按 TTL 复查并标注可能失效、凭据脱敏、出错与会话复盘、SOP 技能沉淀，以及需人工确认的自我改进提案。'

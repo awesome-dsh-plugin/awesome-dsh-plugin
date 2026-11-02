@@ -1,0 +1,6 @@
+url: https://github.com/Enosensu/dsh-fork-relink
+name: Enosensu/dsh-fork-relink
+category: session
+description:
+  en: 'Fork companion for DSH: on any official fork, copies every direct subagent child of the source session onto the forked conversation (recursively, whole subtrees) through the official agent API, leaving each copy as a cold session the official resume path can wake — so the new conversation keeps its subagent panel and can keep messaging those children, while the originals stay with the old branch.'
+  zh: 'DSH 的 fork 伴随插件:官方 fork 发生后,把原会话的直接子 agent 复制到 fork 出的新对话下(递归复制整棵子树,副本经官方 agent API 创建),每个副本留在磁盘上成为可被官方恢复路径唤醒的冷会话——新对话保留子代理面板,并能继续给这些子代理发消息;原件仍留在旧分支。'

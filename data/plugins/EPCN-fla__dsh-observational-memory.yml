@@ -1,0 +1,6 @@
+url: https://github.com/EPCN-fla/dsh-observational-memory
+name: EPCN-fla/dsh-observational-memory
+category: memory
+description:
+  en: Distills session work into background observations and reflections to preserve context across compaction.
+  zh: 在后台将会话工作提炼为观察和反思，以便在上下文压缩后保留会话上下文。

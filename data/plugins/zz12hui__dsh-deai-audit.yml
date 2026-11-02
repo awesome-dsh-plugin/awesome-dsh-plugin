@@ -1,0 +1,6 @@
+url: https://github.com/zz12hui/dsh-deai-audit
+name: zz12hui/dsh-deai-audit
+category: tools
+description:
+  en: 'Audits Chinese copy for AI-sounding phrasing: a 0-100 score over six dimensions, sentence-level flags with rewrite hints, and per-genre weights adjustable in conversation.'
+  zh: '中文文案去 AI 味审计：0–100 六维评分、逐句打标并给出改法，文体权重可在对话里查看和修改。'

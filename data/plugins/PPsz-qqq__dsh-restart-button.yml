@@ -1,0 +1,7 @@
+url: https://github.com/PPsz-qqq/dsh-restart-button
+name: PPsz-qqq/dsh-restart-button
+category: ui
+tarball: https://github.com/PPsz-qqq/dsh-restart-button/releases/latest/download/dsh-restart-button.tgz
+description:
+  en: 'Restart button at the right end of the session header that restarts the whole client: the Windows desktop app (Electron shell and Host, through the Host''s own graceful shutdown) or the dsh web server. It can wait until running turns and background jobs finish, reopens the open session afterwards with one-click continue for interrupted sessions, flags plugin updates that only take effect after a restart, and shows Host uptime and memory on hover.'
+  zh: '会话标题栏右端的重启按钮，可重启整个客户端：Windows 桌面版（Electron 外壳与 Host，走 Host 自身的优雅关闭流程）或 dsh web 服务。可等正在运行的回合与后台作业结束后再重启；重启后回到原会话，被中断的会话可一键继续；提示需重启才生效的插件更新；悬停显示 Host 运行时长与内存。'

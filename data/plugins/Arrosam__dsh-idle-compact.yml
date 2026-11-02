@@ -1,0 +1,6 @@
+url: https://github.com/Arrosam/dsh-idle-compact
+name: Arrosam/dsh-idle-compact
+category: session
+description:
+  en: Compacts a long session after a configurable idle time when its context exceeds a configurable token threshold, before the provider KV cache expires; both values are set on the plugin's page in the Plugins manager.
+  zh: 会话上下文超过可配置的 token 阈值、且用户空闲达到可配置时长后，在模型 KV 缓存过期前自动压缩会话；两项设置都在插件管理器的插件页面中修改。

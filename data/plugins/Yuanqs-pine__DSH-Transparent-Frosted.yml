@@ -1,0 +1,8 @@
+url: https://github.com/Yuanqs-pine/DSH-Transparent-Frosted
+name: Yuanqs-pine/DSH-Transparent-Frosted
+category: theme
+description:
+  en: '(UI enhancement) Frosted-glass background for the whole app: one slider blends from a genuinely blurred, milky frost to a fully transparent page, and every region, control and expanded page moves as a single sheet painted on body::before; the settings page has its own independent slider, and an optional whale particle overlay reacts to the pointer. Best in the desktop app, where the whole window becomes transparent and reveals your own wallpaper; in a browser the plugin paints its own dark backdrop instead. Compatibility: DSH < 0.2.1-rc.5 — from 0.2.1-rc.5 the Windows desktop window is no longer transparent, so this build renders a black backdrop there; the web build and macOS are unaffected.'
+  zh: '（UI 增强）整页磨砂背景：一条滑杆从真实模糊的磨砂过渡到完全透明，所有区域、组件与展开面板作为画在 body::before 上的同一张纸一起变化；设置页有独立滑杆，另有可选的鲸鱼粒子图层，随鼠标推开与拖动。桌面端效果最佳：整个窗口透明后直接透出你自己的桌面壁纸；浏览器里没有壁纸可透，插件会自绘一层深色背景。兼容性：适用于 DSH < 0.2.1-rc.5——Windows 桌面端自 0.2.1-rc.5 起主窗口不再透明，本版在其上背景会显示为黑色；Web 端与 macOS 不受影响。'
+tarball: https://github.com/Yuanqs-pine/DSH-Transparent-Frosted/releases/download/v1.0.2/dsh-transparent-frosted-1.0.2.tgz
+icon: https://raw.githubusercontent.com/Yuanqs-pine/DSH-Transparent-Frosted/main/assets/icon-180.png

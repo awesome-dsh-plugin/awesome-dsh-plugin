@@ -1,0 +1,6 @@
+url: https://github.com/DSH-Raising-Plan/dsh-mnemosyne
+name: DSH-Raising-Plan/dsh-mnemosyne
+category: memory
+description:
+  en: 'Evolving memory infrastructure for DSH — evidence, time, context, and correction for long-term continuity — backed by a local Python 3.11+ memory service (fastapi/uvicorn/pydantic, started automatically as a python3 subprocess).'
+  zh: DSH 演化记忆基础设施：用证据、时间、情境与纠错支撑长期连续性；后台是本地 Python 3.11+ 记忆服务（fastapi/uvicorn/pydantic，插件以 python3 子进程自动启动）。

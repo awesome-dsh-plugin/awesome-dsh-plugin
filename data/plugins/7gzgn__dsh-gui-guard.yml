@@ -1,0 +1,6 @@
+url: https://github.com/7gzgn/dsh-gui-guard
+name: 7gzgn/dsh-gui-guard
+category: tools
+description:
+  en: 'Windows GUI automation reliability layer: probes whether a window is minimized, foreground or DPI-scaled, then clicks and types with the coordinate space and activation order handled for you. Zero dependencies, local only.'
+  zh: 'Windows 窗口操作的可靠性层：先体检目标窗口是否最小化、是否在前台、有没有 DPI 缩放，再点击与输入——坐标口径和激活顺序由它处理。零依赖、纯本地、不联网。'

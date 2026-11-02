@@ -1,0 +1,8 @@
+url: https://github.com/IndieXiaoLong/DSH-Enhance
+name: IndieXiaoLong/DSH-Enhance
+category: ui
+description:
+  en: Adds conversation naming, file drag references, edit-and-resend, a message timeline, and a floating settings panel to the DSH Web GUI.
+  zh: 为 DSH Web GUI 增加对话命名、文件拖拽引用、编辑重发、消息时间线和悬浮设置面板。
+icon: https://raw.githubusercontent.com/IndieXiaoLong/DSH-Enhance/main/assets/icon.png
+tarball: https://github.com/IndieXiaoLong/DSH-Enhance/releases/download/v0.1.0/dsh-enhance-0.1.0.tgz

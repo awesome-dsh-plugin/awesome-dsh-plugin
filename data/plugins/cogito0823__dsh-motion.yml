@@ -1,0 +1,6 @@
+url: https://github.com/cogito0823/dsh-motion
+name: cogito0823/dsh-motion
+category: tools
+description:
+  en: "Code-generated math and science animation for DSH: six tools cover environment checks and dependency self-repair, Manim/manimgx scene rendering to storyboard frames or MP4, contact-sheet probing of finished clips for black or overexposed frames, and formula identity checks with SymPy, together with three skills (topic routing, design spec, QA rubric), a project scaffold with timeline and narration, requirement approvals before rendering, and five animation styles."
+  zh: "面向 DSH 的代码生成数学/科普动画：六个工具覆盖环境预检与依赖自愈、把 Manim/manimgx 场景渲染为 storyboard 帧或 MP4、对成片抽帧拼图检查黑帧与过曝、用 SymPy 判断公式恒等；另带三个技能（题材路由、设计规范、交付自检）、含时间轴与旁白的项目脚手架、渲染前的需求确认，以及五套动画风格。"

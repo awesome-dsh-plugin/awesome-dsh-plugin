@@ -1,0 +1,6 @@
+url: https://github.com/mengxiaoxian/lookover/tree/main/dsh-look
+name: mengxiaoxian/lookover#dsh-look
+category: vision
+description:
+  en: 'Scene-awareness probe for DSH on macOS: a privacy-first, pull-model `look` tool that reads the frontmost non-self window (app info, AX title/selection, gated local OCR), plus a summon-hotkey snapshot captured the instant you press.'
+  zh: 'macOS 场景感知探针：拉模型零轮询的 look 工具，读取最前非自身窗口（应用信息、AX 标题/选中文本、按需本地 OCR），支持召唤热键按下瞬间抓取快照注入对话。'

@@ -1,0 +1,6 @@
+url: https://github.com/merenguesL/dsh-tool-normalizer
+name: merenguesL/dsh-tool-normalizer
+category: tools
+description:
+  en: 'A self-healing layer for tool calls: missing params, wrong fields and out-of-range paths are fixed before they reach the model. Measured visible error rate fell from 7.95% to 2.20%.'
+  zh: 给工具调用加一层自愈：缺参数、错字段、路径越界在到达模型前自动修好，实测可见错误率从 7.95% 降到 2.20%。

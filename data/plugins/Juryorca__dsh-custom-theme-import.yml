@@ -1,0 +1,6 @@
+url: https://github.com/Juryorca/dsh-custom-theme-import
+name: Juryorca/dsh-custom-theme-import
+category: theme
+description:
+  en: 'DSH Web skin manager for mainstream DSH skin packages: import local paths or GitHub collections, scan installed skins from the web profile, preview/use/disable/refresh/delete, with host-side persistence.'
+  zh: 'DSH Web 皮肤管理器：支持主流 DSH 皮肤包本地/GitHub 导入、扫描已安装皮肤、预览/使用/禁用/刷新/删除，宿主持久化。'

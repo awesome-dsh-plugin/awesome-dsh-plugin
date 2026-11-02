@@ -1,0 +1,6 @@
+url: https://github.com/yyb16yyb-hub/dsh-deepseek-usage
+name: yyb16yyb-hub/dsh-deepseek-usage
+category: usage
+description:
+  en: 'Real-time DeepSeek API usage: account balance with low-balance alerts (browser notification on threshold crossing), token & request stats (total/today/last-60s windows, per-model and per-session), estimated cost — a composer dock plus a settings-page usage panel.'
+  zh: 实时 DeepSeek API 用量：账户余额与低余额告警（跨阈值浏览器通知）、请求/token 统计（全部/今日/近 60s，按模型与会话下钻）、估算花费——输入框下方统计条 + 设置页用量面板。

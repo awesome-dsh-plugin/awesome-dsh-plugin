@@ -1,0 +1,6 @@
+url: https://github.com/xing-he888/dsh-database-explorer
+name: xing-he888/dsh-database-explorer
+category: tools
+description:
+  en: 'Database explorer panel for DeepSeek Harness: connect SQLite, MySQL/MariaDB, PostgreSQL, SQL Server, MongoDB, ClickHouse, Redis, Elasticsearch and Qdrant from a third Conversation tab — browse schemas, page through data, edit cells, insert rows, design and drop tables, run SQL, import/export CSV/JSON/SQL/Markdown, and draw editable E-R diagrams. Read-only connections enforce statement-level allowlists, agent tools ship read-only by default with an opt-in write flag, and every write (including refused attempts) lands in an auditable log. Ships an MCP stdio server exposing the same connections to external AI clients.'
+  zh: 'DeepSeek Harness 的数据库浏览器：在对话区第三个页签连接 SQLite、MySQL/MariaDB、PostgreSQL、SQL Server、MongoDB、ClickHouse、Redis、Elasticsearch 与 Qdrant——浏览结构树、分页查看数据、编辑单元格、插入行、建表/改表/删表、执行 SQL、CSV/JSON/SQL/Markdown 导入导出，以及可编辑的 E-R 关系图。只读连接按语句白名单硬拒绝写路径，agent 工具默认只读、写工具需显式授权，所有写操作（含被拒尝试）进入可查可删的审计日志；附带 MCP stdio 服务器，把同一份连接暴露给任意外部 AI 客户端。'

@@ -1,0 +1,6 @@
+url: https://github.com/REALOIYO/dsh-settings-button
+name: REALOIYO/dsh-settings-button
+category: ui
+description:
+  en: 'Adds a gear button beside the sidebar account row that opens the Settings panel in one click. It runs the host''s own settings.open command, so it reaches the shell store directly instead of going through the account menu, and the behaviour is identical on desktop and on a phone over the LAN where no keyboard shortcut is available.'
+  zh: '在侧边栏账号行右侧添加一个齿轮按钮，点击一次即打开设置面板。它调用宿主自带的 settings.open 命令直达 shell 状态，不经过账号菜单；桌面端与手机局域网访问行为一致，后者没有键盘快捷键可用。'

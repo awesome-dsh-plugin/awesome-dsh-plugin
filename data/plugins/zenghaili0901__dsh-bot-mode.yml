@@ -1,0 +1,6 @@
+url: https://github.com/zenghaili0901/dsh-bot-mode
+name: zenghaili0901/dsh-bot-mode
+category: workflow
+description:
+  en: 'Bot Mode for DeepSeek Harness: a roster of named bots with avatars, personas and per-bot chats, each backed by one durable continuable subagent session that keeps memory across turns.'
+  zh: 'DeepSeek Harness 的 Bot 模式：把子 Agent 变成一群有头像、有人格的 Bot，每个 Bot 拥有独立对话，由一个持久的 continuable 子 Agent 会话支撑，跨轮次保留记忆。'

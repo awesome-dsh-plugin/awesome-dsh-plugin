@@ -1,0 +1,6 @@
+url: https://github.com/jiangli07/dsh-deepseek-quota-bar
+name: jiangli07/dsh-deepseek-quota-bar
+category: usage
+description:
+  en: Draggable transparent balance card with a blood-bar of remaining balance vs month-opening, today/month spend (official when the platform token is configured), and session cost.
+  zh: 可拖动透明余额卡片：余额/月初额度血条、今日/本月用量（配置平台 token 后为官方精确数据）、当前对话费用。

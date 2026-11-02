@@ -1,0 +1,6 @@
+url: https://github.com/yyfdfsyyf-source/dsh-hard-gate
+name: yyfdfsyyf-source/dsh-hard-gate
+category: security
+description:
+  en: An independent permission gate above the built-in sandbox. It blocks writes outside the workspace and to protected paths even under danger-full-access, refuses whole-file overwrites without a complete fresh read, and keeps ZIP restore points plus Recycle Bin copies before destructive actions.
+  zh: 内置沙箱之上的独立权限闸门：在 danger-full-access 下依然拦截工作区外与受保护路径的写入，未完整读到文件末尾就整文件覆盖时拒绝，破坏性操作前生成 ZIP 还原点与回收站副本。

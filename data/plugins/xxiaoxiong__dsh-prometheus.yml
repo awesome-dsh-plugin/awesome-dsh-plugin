@@ -1,0 +1,6 @@
+url: https://github.com/xxiaoxiong/dsh-prometheus
+name: xxiaoxiong/dsh-prometheus
+category: dev
+description:
+  en: Exposes bounded Prometheus metrics for DSH sessions, agents, LLM calls, tools, approvals, subagents, and jobs, with a Grafana dashboard and a loopback-only endpoint by default.
+  zh: 导出有界的 DSH Session、Agent、LLM、Tool、Approval、Subagent 与 Job Prometheus 指标，附带 Grafana 仪表盘，Endpoint 默认仅监听回环地址。

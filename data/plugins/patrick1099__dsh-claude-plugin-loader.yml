@@ -1,0 +1,6 @@
+url: https://github.com/patrick1099/dsh-claude-plugin-loader
+name: patrick1099/dsh-claude-plugin-loader
+category: dev
+description:
+  en: 'Loads Claude-style plugins into DeepSeek Harness (dsh): discovers skills, commands and optional SessionStart hooks from Claude plugin directories, with hot command reload and uninstall cleanup.'
+  zh: '把 Claude 风格的插件加载进 DeepSeek Harness（dsh）：扫描 Claude 插件目录，接入 skills、commands 与可选的 SessionStart hooks，支持命令热更新与卸载清理。'

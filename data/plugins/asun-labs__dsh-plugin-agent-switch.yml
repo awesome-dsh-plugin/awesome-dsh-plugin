@@ -1,0 +1,6 @@
+url: https://github.com/asun-labs/dsh-plugin-agent-switch
+name: asun-labs/dsh-plugin-agent-switch
+category: ui
+description:
+  en: 'Adds interactive agent-switch CLI terminals with tab and grid layouts, Codex delegation cards, and live or saved task output in the right sidebar. Requires agent-switch on PATH, at least one target coding CLI, and a node-pty build allowlist; implemented and tested on Windows.'
+  zh: '提供支持页签和网格布局的 agent-switch CLI 交互终端、Codex 委派任务卡片，以及右侧面板中的实时与历史任务输出。需 PATH 上有 agent-switch、至少一个目标编码 CLI，并在插件页放行 node-pty 原生构建；目前只在 Windows 验证过。'

@@ -1,0 +1,6 @@
+url: https://github.com/zoahdev/dsh-browser-use
+name: zoahdev/dsh-browser-use
+category: tools
+description:
+  en: 'Browser Use cloud bridge for dsh: run real web tasks — open pages, click, type, fill forms, and extract data — through the Browser Use API.'
+  zh: 'Browser Use 云端桥接：通过 Browser Use API 让 dsh agent 执行真实网页任务，包括打开页面、点击、输入、填表和提取数据。'

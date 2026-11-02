@@ -1,0 +1,6 @@
+url: https://github.com/zdjmrq/dsh-compact-control
+name: zdjmrq/dsh-compact-control
+category: session
+description:
+  en: 'Adjusts the context-window percentage at which DSH triggers its native automatic compaction: a slider on the plugin page in the plugins manager sets it from 1% to 100% (default 80%, arrow keys adjust by 1%), and the retained-history budget shrinks with lower thresholds so early compaction is not defeated; the compaction run itself stays with the native engine.'
+  zh: '调整 DSH 原生自动上下文压缩的触发阈值：在插件管理器的插件页面用滑块设置上下文占满模型窗口多少百分比时压缩（1%–100%，默认 80%，方向键可 1% 微调）；阈值调低时保留的最近历史预算会随之缩小，以免提前压缩被抵消，压缩本身仍由原生引擎执行。'

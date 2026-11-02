@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-image-gen
+name: GooDAnDReaDY/dsh-image-gen
+category: tools
+description:
+  en: "Adds a generate_image tool backed by the FAL queue, any OpenAI-compatible images API, or a ChatGPT/Grok subscription, and shows the result inline in the conversation."
+  zh: "提供 generate_image 工具，可接入 FAL 队列、任意 OpenAI 兼容图像 API 或 ChatGPT/Grok 订阅，并在对话中内联显示结果。"

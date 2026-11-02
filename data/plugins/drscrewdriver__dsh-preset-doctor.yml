@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-preset-doctor
+name: drscrewdriver/dsh-preset-doctor
+category: dev
+description:
+  en: 'Preset doctor for agent presets: scans home/profile `cordis.patch.yml` declarations and legacy `.agent-presets/` dirs across host lines 0.1.0→0.2.0, shows every detected preset as an official-style card (source/era badges, broken red border, per-finding details, current DSH version + era catalog), and syncs a preset to the current syntax per-card behind an explicit confirm dialog (.bak backup + atomic write; report-level findings are never written — startup scans are report-only). npm: `dsh-preset-doctor`.'
+  zh: 'Agent 预设医生：跨宿主线（0.1.0→0.2.0）扫描 home/profile `cordis.patch.yml` 声明与遗留 `.agent-presets/` 目录，把检测到的每个预设以官方同款卡片展示（来源/代际徽章、失效红边、逐条修复项明细、当前 DSH 版本与代际目录）；卡内「同步到当前版本」走显式确认框（.bak 备份 + 原子写，需人工裁决项永不写盘，启动扫描恒只报告）。npm 包名：`dsh-preset-doctor`。'

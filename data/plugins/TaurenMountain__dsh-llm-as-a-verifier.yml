@@ -1,0 +1,6 @@
+url: https://github.com/TaurenMountain/dsh-llm-as-a-verifier
+name: TaurenMountain/dsh-llm-as-a-verifier
+category: tools
+description:
+  en: 'Fine-grained LLM verification for DSH agents: pairwise rewards over score-token logprobs, Probabilistic Pivot Tournament best-of-N selection, and per-step progress tracking.'
+  zh: 面向 DSH 智能体的细粒度 LLM 验证：基于评分 token logprob 期望的成对打分、概率枢纽锦标赛 N 选一与逐步进度追踪。

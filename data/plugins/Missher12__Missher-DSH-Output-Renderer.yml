@@ -1,0 +1,7 @@
+url: https://github.com/Missher12/Missher-DSH-Output-Renderer
+name: Missher12/Missher-DSH-Output-Renderer
+category: ui
+description:
+  en: "Four assistant output layouts with full reasoning, independent tool details, and frame-synchronized or fading text."
+  zh: "提供四种助手输出布局、完整思考展示，以及刷新率同步或新增文字淡入效果。"
+tarball: https://github.com/Missher12/Missher-DSH-Output-Renderer/releases/download/v0.1.3-rc.4/missher-dsh-output-renderer-0.1.3-rc.4.tgz

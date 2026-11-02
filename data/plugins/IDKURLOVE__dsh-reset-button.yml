@@ -1,0 +1,6 @@
+url: https://github.com/IDKURLOVE/dsh-reset-button
+name: IDKURLOVE/dsh-reset-button
+category: ui
+description:
+  en: 'Adds a Restart button beside the permission control in the composer toolbar that relaunches DSH in one click, so freshly installed plugins apply without closing and reopening the app.'
+  zh: '在对话框工具栏「完全权限」右侧加一个「重启」按钮，点击即重启 DSH，装完插件不用再手动关掉重开。'

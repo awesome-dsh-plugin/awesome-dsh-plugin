@@ -1,0 +1,6 @@
+url: https://github.com/SheepofSheep/dsh-doyourweb
+name: SheepofSheep/dsh-doyourweb
+category: browser
+description:
+  en: 'Reference logged-in Chrome/Edge tabs and authorized local HTML with @ for reading, batched actions, screenshots and WebMCP; collect draggable annotations in chat drafts. Upload exact user-supplied local file paths through hidden inputs, custom choosers or iframe selectors. Compact snapshot handles require reading fresh element refs; browser input shows private stop controls. Select running Windows apps, prefer a matching installed MCP or approve installation, then fall back to Cua Driver with text, hotkeys, paged controls and optional readback. Reuses a Windows helper; background input depends on the app.'
+  zh: '用 @ 引用已登录的 Chrome / Edge 标签页和已授权的本地 HTML，读取、批量操作、截图并调用 WebMCP；拖动批注浮窗，将多条批注加入聊天草稿。按用户明确给出的本地文件路径上传，支持隐藏 input、自定义选择器及 iframe。轻量快照句柄使用新元素引用前需读取游标；浏览器输入显示独立停止按钮。选择运行中的 Windows 应用，优先连接匹配的本地 MCP，未安装先询问，无匹配时使用 Cua Driver，支持打字、快捷键、控件分页和操作后校验。复用 Windows helper，后台输入能力取决于应用。'

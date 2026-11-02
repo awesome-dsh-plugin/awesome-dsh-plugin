@@ -1,0 +1,6 @@
+url: https://github.com/Sodapopper-pixel/dsh-cot-translator-plus
+name: Sodapopper-pixel/dsh-cot-translator-plus
+category: ui
+description:
+  en: 'Reasoning translation for the DSH Web UI: template HTTP translation sites, or a model route through a Harness-registered provider or a custom OpenAI-compatible provider declared in the plugin.'
+  zh: '把展开的思考内容翻成界面语言：翻译来源可以是任意 HTTP 站点模板，也可以是模型（DSH 已注册提供商，或插件自带的自定义 OpenAI 兼容提供商）。'

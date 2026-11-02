@@ -1,0 +1,6 @@
+url: https://github.com/afoxsss/dsh-conversation-map
+name: afoxsss/dsh-conversation-map
+category: ui
+description:
+  en: 'Conversation minimap docked on the right edge of the dsh Web chat: colour-block and to-scale thumbnail modes, drag-to-resize (10–320px), hover loupe preview, click-to-jump and drag-to-scroll with a live viewport indicator, and collapse to a 4px strip.'
+  zh: '停靠在 dsh Web 对话区右缘的会话代码地图：色块/缩略图双模式、拖动调宽（10–320px）、悬停放大镜预览、点击跳转与拖动滚动（带实时视口指示条）、可收起为 4px 细条。'

@@ -1,0 +1,6 @@
+url: https://github.com/SteelUnion/dsh-softsensor-hub
+name: SteelUnion/dsh-softsensor-hub
+category: notify
+description:
+  en: 'Message hub for DeepSeek Harness. Collectors for system health, weather, IMAP mail and market events feed configurable severity rules (critical wakes you, warn batches, info is only logged), and the surviving events are handed to the agent. Collectors run in-process, so nothing dies silently in a stray daemon. The weather collector is on by default and sends your IP to ip-api.com over plain HTTP unless a city is configured.'
+  zh: '消息中枢：采集系统健康、天气、邮件与行情事件，按可配置的轻重规则过滤（critical 立刻叫、warn 攒批、info 只留档），再把事件交给 agent。采集器跑在插件进程里，不会死在一个没人看的守护进程里。天气采集器默认开启，未配置城市时会把你的 IP 经明文 HTTP 发给 ip-api.com 定位。'

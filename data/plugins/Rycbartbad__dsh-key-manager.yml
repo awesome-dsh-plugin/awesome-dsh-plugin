@@ -1,0 +1,6 @@
+url: https://github.com/Rycbartbad/dsh-key-manager
+name: Rycbartbad/dsh-key-manager
+category: usage
+description:
+  en: 'Manage multiple API keys per provider in Settings → API 密钥: keep a pool of keys with notes, switch the active key with one click, and the switch really takes effect on the next model call.'
+  zh: '在设置 → API 密钥中为每个提供商管理多个 API 密钥：密钥池加备注、一键切换当前使用密钥，切换后下一次模型调用立即生效。'

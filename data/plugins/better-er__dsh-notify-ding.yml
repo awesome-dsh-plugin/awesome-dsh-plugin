@@ -1,0 +1,6 @@
+url: https://github.com/better-er/dsh-notify-ding
+name: better-er/dsh-notify-ding
+category: notify
+description:
+  en: 'Browser system notification, sounded by the OS notification itself, when a session needs a reply or a run goes idle; no page-focus check, at most one notification per session with a newer one replacing the old, and an idle notice reports how many background tasks are still running.'
+  zh: '会话出现待回复交互或一轮跑完落到空闲时弹出浏览器系统通知，提示音由系统通知自带；不判断页面是否聚焦，每个会话最多保留一条通知、新通知顶掉旧的，空闲时若还有后台任务会在正文里说明数量。'

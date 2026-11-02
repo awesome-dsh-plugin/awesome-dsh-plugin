@@ -1,0 +1,6 @@
+url: https://github.com/YangRuiYangDan/dsh-media-card
+name: YangRuiYangDan/dsh-media-card
+category: tools
+description:
+  en: "Show local images and short videos in the DSH conversation card with one-click download of the original file, or offer any other local file for download; works over local and remote connections and keeps the media itself out of the model's vision context."
+  zh: "在 DSH 对话卡片内显示本地图片与短视频并提供原文件一键下载，也可为任意其他本地文件提供下载；本机与远程连接均可用，媒体本身不进入模型的视觉上下文。"

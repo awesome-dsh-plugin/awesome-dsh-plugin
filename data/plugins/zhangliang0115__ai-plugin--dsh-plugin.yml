@@ -1,0 +1,6 @@
+url: https://github.com/zhangliang0115/ai-plugin/tree/main/dsh-plugin
+name: zhangliang0115/ai-plugin#dsh-plugin
+category: ui
+description:
+  en: 'Aipx toolkit: skills plus a Hub Console that fronts every MCP server with ~4 meta tools — server pool health, per-tool enable/disable, a tool catalog, and a search playground showing exactly what mcp_search hands the model.'
+  zh: 'aipx 工具包：技能之外还有 Hub Console 控制台——用约 4 个元工具代理全部 MCP 服务器，含服务器池健康、工具级启停、工具目录，以及直观展示 mcp_search 返回结果的搜索试验场。'

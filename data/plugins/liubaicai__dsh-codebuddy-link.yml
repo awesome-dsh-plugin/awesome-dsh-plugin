@@ -1,0 +1,8 @@
+url: https://github.com/liubaicai/dsh-codebuddy-link
+name: liubaicai/dsh-codebuddy-link
+category: model
+description:
+  en: 'Connects Tencent CodeBuddy CLI to DeepSeek Harness through ACP, with native CLI tool execution, multi-account management, and a standalone codebuddy_ask tool.'
+  zh: '通过 ACP 将腾讯 CodeBuddy CLI 接入 DeepSeek Harness，支持 CLI 原生工具执行、多账户管理和 codebuddy_ask 独立问答。'
+icon: https://raw.githubusercontent.com/liubaicai/dsh-codebuddy-link/main/assets/workbuddy.webp
+tarball: https://github.com/liubaicai/dsh-codebuddy-link/releases/download/v0.3.26/dsh-codebuddy-link-0.3.26.tgz

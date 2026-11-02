@@ -1,0 +1,6 @@
+url: https://github.com/Firefox2100/dsh-ai-providers/tree/main/packages/dsh-ai-ollama
+name: Firefox2100/dsh-ai-providers#ollama
+category: model
+description:
+  en: Ollama provider for language models and embeddings, with model discovery, loading, and unloading in DSH. Requires Firefox2100/dsh-ai-providers#runtime to be installed and enabled.
+  zh: 为 DSH 提供语言模型、嵌入以及模型发现、加载和卸载功能的 Ollama 提供商。需要安装并启用 Firefox2100/dsh-ai-providers#runtime。

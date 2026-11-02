@@ -1,0 +1,6 @@
+url: https://github.com/vinyumao/dsh-opencode-usage
+name: vinyumao/dsh-opencode-usage
+category: usage
+description:
+  en: 'OpenCode Go plan usage display for the DSH web GUI: a persistent badge under the composer shows rolling/weekly/monthly usage percents with reset countdowns; click to expand a card; agents can query the balance via the `opencode_go_usage` tool.'
+  zh: OpenCode Go 套餐用量显示：输入框下方常驻徽章显示滚动 / 每周 / 每月用量百分比与重置倒计时，点击展开进度卡片；Agent 可经 `opencode_go_usage` 工具随时查询余额。

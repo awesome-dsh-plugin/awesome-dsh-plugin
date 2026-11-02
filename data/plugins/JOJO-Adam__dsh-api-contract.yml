@@ -1,0 +1,6 @@
+url: https://github.com/JOJO-Adam/dsh-api-contract
+name: JOJO-Adam/dsh-api-contract
+category: tools
+description:
+  en: "API contract studio for DeepSeek Harness: decide the seven things that must be locked before coding, author and review OpenAPI, classify breaking changes by how they actually break clients, and settle error shapes, versioning and deprecation — six playbooks plus a router."
+  zh: "DeepSeek Harness 的 API 契约工作室：开工前先定七件事、写/审 OpenAPI、按「客户端具体坏在哪」分类破坏性变更，再定错误结构、版本与弃用——六本手册加一个路由。"

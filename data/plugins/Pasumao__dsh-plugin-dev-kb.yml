@@ -1,0 +1,6 @@
+url: https://github.com/Pasumao/dsh-plugin-dev-kb
+name: Pasumao/dsh-plugin-dev-kb
+category: docs
+description:
+  en: 'Offline mirror of the official DeepSeek Harness documentation as a dsh skill: 168 site pages (EN/zh) plus 52 repository-only reference docs, with topic navigation and a full-text search index for plugin development.'
+  zh: '以 dsh-plugin-dev-kb 技能内置 DeepSeek Harness 官方文档离线镜像：站点中英 168 页 + 仓库补充文档 52 篇，带主题导航与全文检索，编写插件时随时查阅。'

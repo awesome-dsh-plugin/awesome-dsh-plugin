@@ -1,0 +1,6 @@
+url: https://github.com/137/dsh-chatgpt-style
+name: 137/dsh-chatgpt-style
+category: theme
+description:
+  en: 'ChatGPT-like conversation layout for the DeepSeek Harness Web client: a 768px centered column, right-aligned neutral bubbles for user turns, full-width assistant text at 16/28, and rounded code blocks with their own copy banner. Adds semantic inline markup (`==confirmed==`, `!!risk!!`, `++key word++`, with bare 4xx/5xx codes highlighted automatically) and line-start check/warn/tip callouts; a fast/thinking chip in the composer that switches the model reasoning effort through ctx.modelDirectories; and sidebar contrast, where the selected session gets a tinted row with an accent bar and workspace folder icons are colored.'
+  zh: '把 DSH Web 的对话排版改成 ChatGPT 风格：768px 居中版心、用户消息右侧中性灰气泡、助手消息全宽 16/28 正文、带独立复制条的圆角代码块；另有行内语义标记（==已确认==、!!风险!!、++重点词++，裸的 4xx/5xx 自动命中）、行首 ✅/⚠️/💡 整行卡片、发送框旁「快速 / 思考」胶囊（经 ctx.modelDirectories 切换推理强度），以及左侧工作区高亮：选中会话带底色与左侧色条、工作区文件夹图标上色。'

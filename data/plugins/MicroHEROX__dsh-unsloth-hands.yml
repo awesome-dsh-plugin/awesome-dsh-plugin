@@ -1,0 +1,6 @@
+url: https://github.com/MicroHEROX/dsh-unsloth-hands
+name: MicroHEROX/dsh-unsloth-hands
+category: vision
+description:
+  en: Hands repetitive text and vision labor (OCR, image analysis, comparison) to a locally running Unsloth Desktop (Unsloth Studio) server through unsloth_run and unsloth_vision tools; pure HTTP client, never spawns or owns processes.
+  zh: 把重复的文本与视觉（OCR、图像分析、对比）劳动交给本地运行的 Unsloth Desktop（Unsloth Studio）服务器：unsloth_run 与 unsloth_vision 两个工具，纯 HTTP 客户端，不拉起也不持有任何进程。

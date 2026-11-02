@@ -1,0 +1,6 @@
+url: https://github.com/somnusovis/dsh-multi-workspace
+name: somnusovis/dsh-multi-workspace
+category: tools
+description:
+  en: 'Multi-workspace sandbox: grants file-write access to every registered workspace automatically — add a workspace, write to it immediately, no config or escalation needed.'
+  zh: 多工作区沙箱：自动赋予所有已注册工作区的文件写入权限——添加工作区后即可直接写入，无需配置或提权。

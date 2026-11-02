@@ -1,0 +1,6 @@
+url: https://github.com/liqiming-whu/dsh-status-card
+name: liqiming-whu/dsh-status-card
+category: ui
+description:
+  en: 'Adds a configurable dsh-ui status card before each DSH agent reply, with bilingual templates and a live settings preview. Requires @omdsh-dev/dsh-genui from dsh-market; without it, the card markup is emitted unrendered.'
+  zh: '为每次 DSH Agent 回复添加可配置的 dsh-ui 状态卡片，提供双语模板和实时设置预览。需要先从 dsh-market 安装 @omdsh-dev/dsh-genui，否则卡片标记会以未渲染的形式输出。'

@@ -1,0 +1,6 @@
+url: https://github.com/randomix777/dsh-image-gen
+name: randomix777/dsh-image-gen
+category: workflow
+description:
+  en: 'Optimized fork of dsh-image-gen with batch generation (count), gallery pagination, lazy loading, fetch retry/timeout, and 7 providers: Gemini/OpenAI/Seedream/DashScope/Agnes/GLM-Image/Stability AI.'
+  zh: 'dsh-image-gen 优化版：支持批量生图（count 参数）、画廊分页懒加载、请求超时/重试，兼容 7 个提供商：Gemini/OpenAI/Seedream/通义万相/Agnes/智谱 GLM/Stability AI。'

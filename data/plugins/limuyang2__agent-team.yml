@@ -1,0 +1,6 @@
+url: https://github.com/limuyang2/agent-team
+name: limuyang2/agent-team
+category: workflow
+description:
+  en: 'Multi-agent team collaboration for DeepSeek Harness with per-assistant models, skills, MCP servers, independent contexts, shared workspaces, task coordination, and conversation management.'
+  zh: '为 DeepSeek Harness 提供多 Agent 团队协作，支持助手独立模型、Skills、MCP 服务与上下文，以及共享工作区、任务协调和会话管理。'

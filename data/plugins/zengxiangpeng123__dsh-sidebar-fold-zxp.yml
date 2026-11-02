@@ -1,0 +1,6 @@
+url: https://github.com/zengxiangpeng123/dsh-sidebar-fold-zxp
+name: zengxiangpeng123/dsh-sidebar-fold-zxp
+category: ui
+description:
+  zh: "把 DSH 左侧那排插件入口折成一行「插件列表」，支持按组归类与自定义顺序，把纵向空间还给工作区与会话列表；展开即恢复完整入口。"
+  en: "Fold the DSH left sidebar's plugin entries into a single 「插件列表」 row with grouping and custom ordering, giving vertical space back to the workspace and session list; expanding restores the full entry list."

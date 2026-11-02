@@ -1,0 +1,6 @@
+url: https://github.com/wzciczw/dsh-jj-panel
+name: wzciczw/dsh-jj-panel
+category: git
+description:
+  en: 'Jujutsu (jj) version-control panel in the DSH web GUI: a Jujutsu tab renders the jj log change graph with change details, changed files and file diffs, a revset input, and jj-native history edits (drag-to-rebase, split by file, describe, squash, abandon, undo, push); it reads jj directly rather than through git, and every command runs as an argv array through a whitelisted host service with confirmations, timeouts and output caps.'
+  zh: 'DSH Web GUI 里的 Jujutsu（jj）版本控制面板：「Jujutsu」标签页把 jj log 渲染成 change 图，含 change 详情、改动文件与文件差异、revset 输入框，以及 jj 原生历史改写（拖拽 rebase、按文件拆分、修改描述、压缩、放弃、撤销、推送）；直接读 jj 而不经过 git 转译，所有命令以 argv 数组经白名单化的宿主服务执行，带确认、超时与输出上限。'

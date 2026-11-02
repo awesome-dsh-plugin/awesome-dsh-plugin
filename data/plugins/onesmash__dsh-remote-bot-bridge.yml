@@ -1,0 +1,6 @@
+url: https://github.com/onesmash/dsh-remote-bot-bridge
+name: onesmash/dsh-remote-bot-bridge
+category: remote
+description:
+  en: 'Bot-to-bot messaging across machines on top of ds-harness-remote: five tools let a local Bot list the peer Host Bots, pin a target device and send it a message, without switching the local window.'
+  zh: '基于 ds-harness-remote 的跨机器 Bot 传话：五个工具让本地 Bot 列出对端 Bot、固定目标设备并给它发消息，不用切换本地窗口。'

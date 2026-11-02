@@ -1,0 +1,6 @@
+url: https://github.com/plyflai/dsh-ux-plus
+name: plyflai/dsh-ux-plus
+category: ui
+description:
+  en: 'A UX enhancement pack for the DSH web chat: one plugin that collects small interface conveniences, each with its own switch under Settings → UX Plus applied immediately — chat-area font size and reading width under Settings → General → Chat area, a session-row menu that copies the session ID or inherits the conversation into a new session on a chosen model, workspace and session rows ordered by recent activity with 24-hour idle auto-collapse and age labels, and settled ask_user_question cards left expanded. The switch list is generated from its own feature registry, so the pack grows as conveniences are added instead of being fixed at a count.'
+  zh: DSH Web 对话界面的 UX 增强包：一个插件持续收纳各种界面小改进，每项都有独立开关，位于 设置 → UX Plus，改动即时生效——对话字号与阅读宽度（设置 → 通用 → 对话区）、会话行菜单可复制会话 ID 或把当前对话继承到所选模型的新会话里继续、工作区与会话行按最近活跃排序（闲置超过 24 小时自动收起并显示上次更新时间）、已结束的提问卡片默认展开。开关列表由插件自身的功能注册表生成，功能会持续增加，不固定在某个数量。

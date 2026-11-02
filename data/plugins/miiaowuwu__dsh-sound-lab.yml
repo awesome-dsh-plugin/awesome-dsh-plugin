@@ -1,0 +1,6 @@
+url: https://github.com/miiaowuwu/dsh-sound-lab
+name: miiaowuwu/dsh-sound-lab
+category: notify
+description:
+  en: 'Event sounds for DSH: plays a chosen sound on session end, options popup, permission request and stop, with AI-generated character voice lines and a manageable sound library.'
+  zh: 'DSH 声音工坊：在会话结束、弹出选项、请求许可与停止时播放指定音效，支持 AI 角色语音生成与音效库管理。'

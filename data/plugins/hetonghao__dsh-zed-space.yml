@@ -1,0 +1,8 @@
+url: https://github.com/hetonghao/dsh-zed-space
+name: Zed Space Skin
+category: theme
+description:
+  en: Dynamic backgrounds and interface skins for DeepSeek Harness. Native customizable animated skins, plus beautiful live wallpapers to download from the marketplace. Built on Open Sea Skin (d-dev0101/open-sea-skin) — do not install both.
+  zh: DeepSeek Harness 动态背景与界面皮肤。原生个性化动态背景皮肤，以及市场下载精美的动态壁纸。 沿用 Open Sea Skin（d-dev0101）的上游实现，请勿与上游同时安装。
+icon: https://raw.githubusercontent.com/hetonghao/dsh-zed-space/main/extension/icons/icon128.png
+tarball: https://github.com/hetonghao/dsh-zed-space/releases/latest/download/dsh-zed-space.tgz

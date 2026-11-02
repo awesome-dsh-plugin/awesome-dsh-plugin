@@ -1,0 +1,6 @@
+url: https://github.com/kelearns/dsh-navigation-bar
+name: kelearns/dsh-navigation-bar
+category: ui
+description:
+  en: 'Piano-key in-conversation navigation for the Web UI: one key per user message with hover ladder, message-preview tooltip, and active-message highlight; click to smooth-scroll.'
+  zh: 钢琴键风格会话内导航条：一根键锚定一条用户消息，悬停显示消息预览气泡与阶梯展开，点击平滑跳转。

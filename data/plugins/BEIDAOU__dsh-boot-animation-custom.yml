@@ -1,0 +1,6 @@
+url: https://github.com/BEIDAOU/dsh-boot-animation-custom
+name: BEIDAOU/dsh-boot-animation-custom
+category: ui
+description:
+  en: Customizable startup animation for DeepSeek Harness with eight bundled clips, random rotation, tail fade and time-of-day greetings. Based on lxj5820/dsh-boot-animation, so do not install it with the upstream plugin; bundled clips and the welcome voice carry their own media terms.
+  zh: DeepSeek Harness 启动动画定制版，内置 8 段短片，随机轮播、片尾淡入，还有分时段问候。基于 lxj5820/dsh-boot-animation 定制，不可与上游插件同装；随包短片与欢迎音按各自媒体授权。

@@ -1,0 +1,6 @@
+url: https://github.com/Mrxieyong/dsh-mcp-market
+name: Mrxieyong/dsh-mcp-market
+category: market
+description:
+  en: 'MCP marketplace and management panel in the Web sidebar: one-click official templates (Apifox public/private, Apipost, MasterGo, Pixso), paste raw mcpServers JSON, and enable, edit or delete your services with hot reload.'
+  zh: Web 侧边栏的 MCP 市场与管理面板：官方模板一键配置（Apifox 公有云/私有化、Apipost、MasterGo、Pixso）、粘贴完整 mcpServers JSON、我的服务增删改启停，热加载生效。

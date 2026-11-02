@@ -1,0 +1,6 @@
+url: https://github.com/Sanqi-normal/dsh-model-picker
+name: Sanqi-normal/dsh-model-picker
+category: ui
+description:
+  en: 'Provider-tabbed model picker for the dsh web composer: left provider column and right model list, both independently scrollable, with cross-provider search.'
+  zh: dsh web 输入栏模型选择面板：左侧提供商栏 + 右侧模型列表，两侧独立滚动，支持跨提供商搜索。

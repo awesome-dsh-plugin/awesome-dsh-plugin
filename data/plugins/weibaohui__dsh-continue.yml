@@ -1,0 +1,6 @@
+url: https://github.com/weibaohui/dsh-continue
+name: weibaohui/dsh-continue
+category: session
+description:
+  en: "Auto-resume for interrupted agent sessions: an ordered rule table routes by failure type (rate limit, quota, auth, context overflow, crashed orphan) to automatic backoff retry, model switch, resume after context compaction, or a stop-loss notification, with a visual rule editor and a full activity log."
+  zh: 自动续跑：agent 会话中断后自动续上，规则表按失败类型（限流/额度/鉴权/上下文超限/崩溃孤儿）路由——自动退避重试、换模型继续、压缩上下文后继续或止损通知，规则可视化编辑，全程活动日志。

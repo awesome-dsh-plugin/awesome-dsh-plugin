@@ -1,0 +1,6 @@
+url: https://github.com/wangbodbs/dsh-plugins/tree/main/packages/dsh-feishu
+name: wangbodbs/dsh-plugins#dsh-feishu
+category: notify
+description:
+  en: Talk to DeepSeek Harness from Feishu / Lark. A chat maps to a DSH session, messages become turns and answers are pushed back as cards; questions, permission requests, model switches and conversation switches are interactive cards, and inbound files and images are downloaded into the workspace.
+  zh: 在飞书里跟 DeepSeek Harness 对话。一个会话对应一段 DSH 会话，消息变成一轮对话、回答以卡片推回；提问、权限审批、切模型、切会话都是可点卡片，入站的文件与图片自动下载到工作区。

@@ -1,0 +1,6 @@
+url: https://github.com/xmutfyh/dsh-plugin-writing-guard
+name: xmutfyh/dsh-plugin-writing-guard
+category: tools
+description:
+  en: 'Academic writing guard (EN/ZH bilingual): removes AI-style defensive writing, protects scientific evidence (numbers, citations, claim strength, null findings, scope) during polishing, and calibrates writing toward a target journal (Journal Profile + Journal Fit). Deterministic local regex/statistics, zero network/LLM; writing_rules / writing_audit / writing_style_profile / writing_journal_profile with auto-audit on paper writes.'
+  zh: 论文写作守卫（中英双语）：去掉 AI 式防御性写作，润色时守住科学证据（数字/引用/主张强度/零结果/scope），并按目标期刊校准写作风格（Journal Profile + Journal Fit）。纯本地正则/统计，零网络零 LLM；提供 writing_rules / writing_audit / writing_style_profile / writing_journal_profile，论文写入后自动审计。

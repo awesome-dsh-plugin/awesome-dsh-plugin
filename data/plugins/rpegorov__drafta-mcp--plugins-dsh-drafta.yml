@@ -1,0 +1,6 @@
+url: https://github.com/rpegorov/drafta-mcp/tree/main/plugins/dsh-drafta
+name: rpegorov/drafta-mcp#dsh-drafta
+category: memory
+description:
+  en: Connects the Drafta notes app to DeepSeek Harness over MCP, so the agent can search, read and write notes in your local Drafta library.
+  zh: '通过 MCP 把 Drafta 笔记应用接到 DeepSeek Harness，让智能体可以检索、读取并写入你本地 Drafta 库中的笔记。'

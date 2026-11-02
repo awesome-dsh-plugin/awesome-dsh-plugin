@@ -1,0 +1,6 @@
+url: https://github.com/wilsonchengassistant/dsh-mobile-sidebar
+name: wilsonchengassistant/dsh-mobile-sidebar
+category: ui
+description:
+  en: 'Below 1024px the sidebar leaves the shell frame entirely and is opened as an overlay drawer from a header button, so the conversation gets the full viewport width; wider layouts are untouched.'
+  zh: '視窗闊度細過 1024px 時，側欄完全移出 shell frame，改由頁首按鈕以浮動抽屜方式打開，令對話可以用盡整個螢幕闊度；闊螢幕版面唔受影響。'

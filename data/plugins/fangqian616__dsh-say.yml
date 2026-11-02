@@ -1,0 +1,6 @@
+url: https://github.com/fangqian616/dsh-say
+name: fangqian616/dsh-say
+category: voice
+description:
+  en: "Speaks your agent's reports in a voice you choose, compressing long reports before speaking. Character voices need no training - a 3-10 second reference clip clones one, and community-trained models work too - and no 6.4 GB GPT-SoVITS install: the plugin installs its own runtime and voice. An existing GPT-SoVITS can be used instead, and it is the same voice model."
+  zh: "让你的 DSH 用你喜欢的声音开口说话、汇报内容，过长的汇报先压缩再念。角色声线不需要自己训练：一段 3-10 秒参考音就能克隆，也能直接用别人训练好的模型；不必为此装一整套 6.4 GB 的 GPT-SoVITS —— 运行时和声线都由插件自己装好。已有 GPT-SoVITS 的话也能直接接上，两者跑的是同一套声线。"

@@ -1,0 +1,6 @@
+url: https://github.com/WanchunLian/dsh-plugin-sound-alert
+name: WanchunLian/dsh-plugin-sound-alert
+category: notify
+description:
+  en: 'Sound alerts for the DSH web UI: a chime when an answer completes and a three-tone prompt when your approval or question is pending, with optional custom WAV stored only in the local browser (pure client-side, zero assets).'
+  zh: 'DSH 网页端提示音：回答完成播放提示音，需要授权或向你提问时播放三连音；支持自定义 WAV（仅存本机浏览器），纯客户端零资源。'

@@ -1,0 +1,8 @@
+url: https://github.com/makooslee/dsh-company
+name: makooslee/dsh-company
+category: workflow
+description:
+  en: 'A small company of employee agents for DeepSeek Harness: seven built-in roles (project director, product manager, tech lead, engineer, data analyst, QA engineer, reviewer), each with its own persona, model and tool whitelist. A mission is broadcast and the employees bid for it themselves — the first line of their answer must be 【accept】 or 【decline】 — so accepted work runs in parallel instead of down a pipeline. Ships a web panel for the roster, the mission board and each employee''s own transcript, the /dsh-company slash command, a live mirror into the built-in agent-team panel, deletable missions, and a private memory directory per employee.'
+  zh: '给 DeepSeek Harness 装一家只有一位 CEO 的小公司：七个内置角色（项目总监、产品经理、技术总监、工程师、数据分析师、测试工程师、审核员），每人各有人设、模型与工具白名单。任务广播下去，员工自己决定接不接——回复第一行必须是【接单】或【不接】——接单的人并行开工，而不是走流水线。附花名册、任务板与员工对话详情的网页面板，/dsh-company 斜杠命令，与内置 agent-team 面板的实时联动，可删除的任务，以及每员工独立的记忆目录。'
+icon: https://raw.githubusercontent.com/makooslee/dsh-company/main/assets/icon-180.png
+tarball: https://github.com/makooslee/dsh-company/releases/download/v0.4.0/dsh-company-0.4.0.tgz

@@ -1,0 +1,12 @@
+url: https://github.com/LoveIrishCoffee/dsh-effort-ultra
+name: LoveIrishCoffee/dsh-effort-ultra
+category: ui
+description:
+  en: >-
+    A native reasoning-effort control for the composer: a blue-to-violet tier bar
+    with a starfield and a sheen sweep. It owns the model seat and drives the
+    official model-directories service, so the ladder comes from each model's own
+    reasoning declaration and no other plugin is required.
+  zh: >-
+    原生推理档位控件：蓝紫渐变档位条，带星点与流光。它自己占用模型座位并只对接官方
+    modelDirectories 服务，档位由每个模型自身的 reasoning 声明决定，不依赖任何其它插件。

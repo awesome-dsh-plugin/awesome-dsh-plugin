@@ -1,0 +1,6 @@
+url: https://github.com/dylan121322/dsh-session-unarchive
+name: dylan121322/dsh-session-unarchive
+category: session
+description:
+  en: Restore archived sessions to their original workspace from the Web GUI sidebar.
+  zh: 从 Web GUI 侧栏查看已归档会话，并一键恢复到原工作区。

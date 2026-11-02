@@ -1,0 +1,7 @@
+url: https://github.com/shadowRjh/dsh-neuron-memory        # must match the repo exactly
+name: shadowRjh/dsh-neuron-memory
+category: memory
+tarball: https://github.com/shadowRjh/dsh-neuron-memory/releases/download/v2.4.0/dsh-neuron-memory-2.4.0.tgz
+description:
+  en: "Neuron-inspired memory for dsh: turns buffer into a hippocampus, a nightly patrol classifies fragments into pools, and each turn injects a minimal auto-compacted handoff, the live mood (via dsh-feiyu-mood), and only relevance-filtered memories (Ebbinghaus half-life decay; recalled memories are reinforced like spaced repetition). Hard caps bound storage; past-session original text is searchable over multi-frame zstd; dsh-fish-memory stores can be imported. Optional vector retrieval (off by default, keyword fallback). The 3D panel offers four themes and pulses a signal from the center to each recalled memory."
+  zh: "仿神经元记忆框架：对话自动进海马体，夜巡按关键词分池归档，每轮只注入最小交接（自动压缩）、当前心情（对接 dsh-feiyu-mood）和相关性命中的记忆（艾宾浩斯半衰期衰减，被想起时会像间隔重复一样强化），跨会话、抗上下文压缩；单条/每池硬上限防膨胀，历史会话原文可检索（多帧 zstd），可导入 dsh-fish-memory；可选向量检索（默认关，服务不可用退回关键词）。3D 面板提供星云/皮层/矩阵/极简四套主题，记忆被想起时从中心向节点脉冲。"

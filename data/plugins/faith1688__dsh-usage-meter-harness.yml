@@ -1,0 +1,6 @@
+url: https://github.com/faith1688/dsh-usage-meter-harness
+name: faith1688/dsh-usage-meter-harness
+category: usage
+description:
+  en: 'Real-time usage, cost and balance meter for DeepSeek Harness: official-API balance, cost accuracy within ¥0.02, per-turn / per-session / per-model cost ledger, live color-tiered token speed and a docked one-click popup.'
+  zh: 'DeepSeek Harness 实时用量、费用与余额计量：官方 API 实时查询余额、计费误差 0.02 元内，分本轮/本次会话/整个模型三级费用台账，实时分色档位 Token 速度，输入框旁弹窗即点即看。'

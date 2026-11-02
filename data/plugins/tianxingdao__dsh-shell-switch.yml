@@ -1,0 +1,6 @@
+url: https://github.com/tianxingdao/dsh-shell-switch
+name: tianxingdao/dsh-shell-switch
+category: tools
+description:
+  en: Runs the model's bash commands in a local shell chosen in Settings (Niubash, Git Bash, MSYS2, Cygwin, or any bash.exe on PATH) instead of rewriting them for PowerShell, and hides the pwsh tool on Windows.
+  zh: 让 bash 工具在本机设置里选定的 shell（Niubash、Git Bash、MSYS2、Cygwin 或 PATH 上的 bash.exe）中执行命令，不再改写为 PowerShell，并在 Windows 下隐藏 pwsh 工具。

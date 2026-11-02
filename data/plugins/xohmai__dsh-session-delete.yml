@@ -1,0 +1,6 @@
+url: https://github.com/xohmai/dsh-session-delete
+name: xohmai/dsh-session-delete
+category: session
+description:
+  en: Real session deletion with trash and restore, archived cleanup, and batch delete from settings.
+  zh: 真正删除会话：回收站可还原、归档清理、设置页批量删除。

@@ -1,0 +1,6 @@
+url: https://github.com/zhujiuyi/dsh-mcpserver-manager
+name: zhujiuyi/dsh-mcpserver-manager
+category: tools
+description:
+  en: 'Manages the MCP servers of a DeepSeek Harness profile: lists each server with its connection state and the tools it registers, preflights a configuration before saving it (a missing executable, an npm package name used as a command, an unexpanded variable that would reach the child literally, a URL with no path), and adds servers by pasting a dsh patch fragment or a Claude Code mcpServers block, converted to the dsh shape.'
+  zh: '管理 DeepSeek Harness profile 的 MCP 服务：列出每个服务的连接状态与它注册的工具；保存前预检配置（可执行文件缺失、把包名当命令、变量未展开、URL 缺少路径）；粘贴 dsh 配置片段或 Claude Code 的 mcpServers 块即可新增，并自动转换为 dsh 格式。'

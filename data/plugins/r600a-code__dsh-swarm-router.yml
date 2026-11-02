@@ -1,0 +1,6 @@
+url: https://github.com/r600a-code/dsh-swarm-router
+name: r600a-code/dsh-swarm-router
+category: model
+description:
+  en: Sub-agent matrix swarm that routes heterogeneous tasks to the most suitable model from an OpenRouter-like gateway plus cfgpu.com/llm/square, dispatches each via in-process subagents or direct LLM calls, and tracks per-model token consumption with a feedback-driven ranking.
+  zh: 子智能体矩阵蜂群：把异质任务路由到最合适的模型（OpenRouter 类网关 + cfgpu.com/llm/square），通过进程内子智能体或直接 LLM 调用下放，并按模型统计 token 消耗、用真实反馈驱动排名。

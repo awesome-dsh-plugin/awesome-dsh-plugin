@@ -1,0 +1,6 @@
+url: https://github.com/TINGOD2006/dsh-scratch-vault
+name: TINGOD2006/dsh-scratch-vault
+category: tools
+description:
+  en: "Diverts operation-script writes out of the workspace into a per-session scratch root and collects each one into an inspectable vault outside the workspace, so the workspace holds only real deliverables."
+  zh: "把操作腳本的寫入導出工作區、改放各 session 的暫存根，並把每一支收進工作區外的可檢視收納庫，讓工作區只留下真正的交付物。"

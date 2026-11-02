@@ -1,0 +1,6 @@
+url: https://github.com/lediemquynh/dsh-ai-question-chime
+name: lediemquynh/dsh-ai-question-chime
+category: notify
+description:
+  en: "Plays a chime when the AI asks a clarifying question (a `?` / `？` in the message, or an `ask_user_question` tool call). Synthesized via Web Audio API, no audio file, works on every OS."
+  zh: "当 AI 询问澄清性问题时（带问号或调用 ask_user_question）播放提示音。Web Audio API 合成，零音频文件，跨 Windows/macOS/Linux。"

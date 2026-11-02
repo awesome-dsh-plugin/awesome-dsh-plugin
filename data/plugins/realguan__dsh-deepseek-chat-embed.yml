@@ -1,0 +1,7 @@
+url: https://github.com/realguan/dsh-deepseek-chat-embed
+name: realguan/dsh-deepseek-chat-embed
+category: ui
+tarball: https://github.com/realguan/dsh-deepseek-chat-embed/releases/download/v0.1.2/dsh-deepseek-chat-embed-0.1.2.tgz
+description:
+  en: 'Embeds chat.deepseek.com directly inside DeepSeek Harness desktop with persistent login sessions and dual-entry chat panels.'
+  zh: '在 DeepSeek Harness 桌面端内嵌 chat.deepseek.com，提供双入口聊天面板与持久登录会话。'

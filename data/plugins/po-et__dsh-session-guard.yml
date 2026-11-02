@@ -1,0 +1,6 @@
+url: https://github.com/po-et/dsh-session-guard
+name: po-et/dsh-session-guard
+category: session
+description:
+  en: 'Prevents concurrent-write session corruption: takes a per-session advisory lock on session start and every step, so a second dsh process fails loudly instead of writing a duplicate-seq gap; dead owners are taken over automatically.'
+  zh: 预防并发写导致的会话损坏：在会话开始及每一步获取按会话的咨询锁，第二个 dsh 进程会明确报错而非写出重复 seq 断层；死进程持有的锁自动接管。

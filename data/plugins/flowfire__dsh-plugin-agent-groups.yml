@@ -1,0 +1,6 @@
+url: https://github.com/flowfire/dsh-plugin-agent-groups
+name: flowfire/dsh-plugin-agent-groups
+category: session
+description:
+  en: 'Organizes multiple live DSH sessions into a collaboration group and relays each round''s final output on a shared timeline.'
+  zh: '把多个已打开的 DSH 会话组织成一个协作群，只转达每轮最终输出，并按共享时间线合并投递。'

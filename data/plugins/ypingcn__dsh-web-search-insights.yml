@@ -1,0 +1,6 @@
+url: https://github.com/ypingcn/dsh-web-search-insights
+name: ypingcn/dsh-web-search-insights
+category: usage
+description:
+  en: 'Web search insights for the agent: it keeps a local log of what was looked up and which pages came back, and counts searches, returned pages, citations and pages opened per turn and across the session, with the numbers shown in a small entry under the answer and a right-sidebar panel.'
+  zh: '联网搜索的「搜索洞察」：记下 Agent 查了什么、搜回哪些网页，并统计每轮与整个会话的搜索次数、返回网页数、被引用数与被打开读过的页数；这些数字在回答下方的引用入口和右侧栏面板里随时能回看。'

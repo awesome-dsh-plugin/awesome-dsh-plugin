@@ -1,0 +1,6 @@
+url: https://github.com/Swd146296/dsh-memos-bridge
+name: Swd146296/dsh-memos-bridge
+category: memory
+description:
+  en: 'Bridges the MemOS memory service over MCP: the agent gets add/search/update/delete memory, multi-cube sharing, and a memory scheduler as mcp__memos__* tools.'
+  zh: '通过 MCP 桥接 MemOS 记忆服务：agent 获得 mcp__memos__* 记忆写入/检索/更新/删除、多 Cube 共享与记忆调度工具。'

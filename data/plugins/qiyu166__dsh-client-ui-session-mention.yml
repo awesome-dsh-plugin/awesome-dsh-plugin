@@ -1,0 +1,6 @@
+url: https://github.com/qiyu166/dsh-client-ui-session-mention
+name: qiyu166/dsh-client-ui-session-mention
+category: session
+description:
+  en: 'Type @ in the composer to reference another conversation: pick a historical session and inject its compacted context into the current prompt.'
+  zh: '输入 @ 引用另一个对话：选择历史会话，将其压缩总结注入当前提示词。'

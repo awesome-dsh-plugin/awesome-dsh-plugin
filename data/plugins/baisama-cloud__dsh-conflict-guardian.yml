@@ -1,0 +1,6 @@
+url: https://github.com/baisama-cloud/dsh-conflict-guardian
+name: baisama-cloud/dsh-conflict-guardian
+category: dev
+description:
+  en: "Scans the DSH loader tree at startup for plugin conflicts (duplicate mounts, failed or pending plugins, duplicate config row ids), auto-stops or restores the affected plugins, and shows a conflict report popup in the web UI."
+  zh: "DSH 启动时扫描加载器中的插件冲突（重复挂载、启动失败、依赖缺失、配置行 id 重复），自动停用或恢复冲突插件，并在 Web 界面弹出冲突报告。"

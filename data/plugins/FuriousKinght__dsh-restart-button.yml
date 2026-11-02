@@ -1,0 +1,6 @@
+url: https://github.com/FuriousKinght/dsh-restart-button
+name: FuriousKinght/dsh-restart-button
+category: ui
+description:
+  en: 'Adds a Windows-only button at the foot of the sidebar that restarts the DSH desktop app and reloads the page when it comes back.'
+  zh: '在侧边栏底部加一个按钮（仅 Windows），一键重启 DSH 桌面应用，应用回来后页面自动恢复。'

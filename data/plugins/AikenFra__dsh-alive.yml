@@ -1,0 +1,6 @@
+url: https://github.com/AikenFra/dsh-alive
+name: AikenFra/dsh-alive
+category: ui
+description:
+  en: 'Zero-token online status indicator for the DeepSeek Harness web UI: an always-visible online/offline dot in the conversation header, auto-refreshed every 15 seconds with no LLM calls.'
+  zh: 零 token 在线状态指示器：会话头部常驻显示 ● 在线 / ● 离线 状态点，每 15 秒自动检测一次，不调用任何 LLM。

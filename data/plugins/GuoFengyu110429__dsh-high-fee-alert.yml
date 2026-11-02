@@ -1,0 +1,6 @@
+url: https://github.com/GuoFengyu110429/dsh-high-fee-alert
+name: GuoFengyu110429/dsh-high-fee-alert
+category: notify
+description:
+  en: Automatically retrieves time-of-use pricing data (with Beijing Time) and notifies users during peak periods to reduce costs.
+  zh: 自动获取分时电价数据（按北京时间），在高峰时段提醒用户，以降低用电成本。

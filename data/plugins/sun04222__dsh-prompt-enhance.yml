@@ -1,0 +1,6 @@
+url: https://github.com/sun04222/dsh-prompt-enhance
+name: sun04222/dsh-prompt-enhance
+category: ui
+description:
+  en: 'Adds an ✦ button to the DSH composer that rewrites the current draft into a clearer, more specific prompt in the same language, with one click to restore the original, plus an enhance_prompt tool the agent can call; the rewrite replaces the draft and is never sent automatically.'
+  zh: '在 DSH 输入框旁加一个「✦ 增强」按钮：把当前草稿改写成更清晰、更具体的提示词（保持输入语言），一键恢复原文，并为 agent 提供 enhance_prompt 工具；改写结果只替换草稿，不会自动发送。'

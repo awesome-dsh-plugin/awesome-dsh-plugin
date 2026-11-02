@@ -1,0 +1,6 @@
+url: https://github.com/wufeng0105/dsh-enhance
+name: wufeng0105/dsh-enhance
+category: identity
+description:
+  en: 'DSH jailbreak plugin: appends a persona or prompt text you write to the end of every system prompt (content boundary), adds three-state out-of-scope approval (auto-allow / ask / refuse), an optional permission preset (sandbox fully open, still asks), and a read-back check that reads the session log to confirm the text landed. Prompt and permission work only; no reverse engineering.'
+  zh: DSH 破甲与越狱插件：把你写的人设、破甲词接到每条系统提示末尾（内容边界），另带越界审批三态（自动放行 / 先问我 / 回绝）、可选权限档（沙箱全开、越界仍问人），以及回读会话日志确认文本确实生效的检查项。只做提示词与权限层面的事，不涉及逆向工程。

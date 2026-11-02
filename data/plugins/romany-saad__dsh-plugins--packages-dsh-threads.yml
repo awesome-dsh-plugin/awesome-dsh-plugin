@@ -1,0 +1,7 @@
+url: https://github.com/romany-saad/dsh-plugins/tree/main/packages/dsh-threads
+name: romany-saad/dsh-plugins#dsh-threads
+category: session
+description:
+  en: 'Ask about one sentence without derailing the chat: select a passage in a Web conversation, comment, and the session''s own model answers in a small thread beside it while the main chat stays untouched. The replier can read the session, the working directory and, if you turn it on, the web, but changes nothing. Commented passages stay highlighted with a badge that shows unread replies, and Send to chat hands a thread to the agent when you want it acted on.'
+  zh: '针对一句话提问，不打断主对话：在 Web 对话中选中一段文字发表评论，会话自己的模型在旁边的小线程里作答，主对话不受影响。回复者可以读取会话、工作目录，开启后也可联网，但不做任何修改。被评论的段落保持高亮，徽标提示未读回复；需要 Agent 动手时，「发送到对话」把线程交给它。'
+icon: https://raw.githubusercontent.com/romany-saad/dsh-plugins/main/packages/dsh-threads/docs/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/Saretheya/dsh-tick
+name: Saretheya/dsh-tick
+category: workflow
+description:
+  en: 'Session-local scheduled tasks: inject a prompt into the current session after a delay, at a fixed time, or on a repeating interval, so the model wakes up and runs it on time. Manage them from a panel above the composer, the /schedule command, or seven model-facing tools. Timers freeze while DSH is closed and never auto-resume; pause keeps the remaining time, so resuming continues from where it stopped.'
+  zh: '会话内定时任务：按延迟、固定时刻或重复间隔向当前会话注入一段提示词，到点唤醒模型执行。可用输入框上方面板、/schedule 命令、或 7 个面向模型的工具管理。DSH 关闭期间计时冻结、绝不自动恢复；暂停保留剩余时间，恢复后从原处继续。'

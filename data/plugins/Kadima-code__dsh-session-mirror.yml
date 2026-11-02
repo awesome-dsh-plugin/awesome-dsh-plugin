@@ -1,0 +1,6 @@
+url: https://github.com/Kadima-code/dsh-session-mirror
+name: Kadima-code/dsh-session-mirror
+category: session
+description:
+  en: 'Per-conversation backup for DSH: incremental session mirroring, fuzzy restore (preview then confirm), and rule-based cleanup with a 7-day recycle bin.'
+  zh: '按会话逐个备份 DSH 对话：增量镜像、模糊匹配恢复（先预览再确认）、按规则清理并先进回收站留 7 天。'

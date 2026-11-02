@@ -1,0 +1,7 @@
+url: https://github.com/momasiku/dsh-pilot
+name: momasiku/dsh-pilot
+category: tools
+tarball: https://github.com/momasiku/dsh-pilot/releases/latest/download/dsh-pilot.tgz
+description:
+  en: 'Let DeepSeek Harness see and operate any program on Windows. The model looks at the real screen and drives the mouse, keyboard and windows itself. It is fast: several steps run in a single round trip, and a window can be focused before input lands, so the click hits the right one. It can do anything you would do on a desktop, including but not limited to CAD drawing, circuit simulation, and sending messages.'
+  zh: '让 DeepSeek Harness 看见并操作 Windows 上的任何程序。模型直接看真实屏幕，自己驱动鼠标、键盘和窗口。特点是快：好几步动作在一次往返里跑完，输入前还能先把目标窗口聚焦，点击就落在正确的窗口上。你在桌面上能做的事它都能做，包括但不限于画 CAD、电路图仿真、发消息。'

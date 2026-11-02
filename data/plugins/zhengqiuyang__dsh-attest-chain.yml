@@ -1,0 +1,6 @@
+url: https://github.com/zhengqiuyang/dsh-attest-chain
+name: zhengqiuyang/dsh-attest-chain
+category: security
+description:
+  en: 'Signed chain-of-custody for sessions: every watched tool result appends a hash-chained, ed25519-signed record, with commits bound into the chain — tampering with any line or truncating the tail fails deterministic replay verification.'
+  zh: '会话签名监护链：被监视的工具结果逐条追加哈希链 ed25519 签名记录，commit 绑定进链——篡改任意行或截断尾部都会在确定性重放校验中失败。'

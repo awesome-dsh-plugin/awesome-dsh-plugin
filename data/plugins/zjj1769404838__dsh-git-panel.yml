@@ -1,0 +1,6 @@
+url: https://github.com/zjj1769404838/dsh-git-panel
+name: zjj1769404838/dsh-git-panel
+category: git
+description:
+  en: 'Adds a Git chip beside the composer that opens a centered workbench (changes, history, files, tags, stash) plus a Git section in settings. Supports multi-account OAuth device flow and PAT with per-repository permissions (full, read, none), gates writes behind a global switch and reads behind an allowed-directory list, and refuses a push whose target remote belongs to no writable account. Diffs preview in place with line numbers, four layouts, word-level emphasis, syntax highlighting and Ctrl/⌘+F find; Markdown and images render inline, commit messages are searchable, and commit messages can be generated from the staged diff through the host LLM service. Ships 8 Agent tools, 51 local HTTP endpoints and 8 languages, with tokens encrypted at rest by AES-256-GCM.'
+  zh: '在输入框旁加一个 Git chip，点开是居中工作台（改动、历史、文件、标签、贮藏），设置页另有一个 Git 分节。支持多账号的 OAuth 设备码流程与 PAT，按仓库设三档权限（完整、只读、无权限），写操作受全局开关控制、读操作受允许目录白名单控制，推送目标远端不属于有写权限的账号时会被拒绝。差异就地预览，带行号、四档布局、词级强调、语法高亮与 Ctrl/⌘+F 查找；Markdown 与图片可内联渲染，提交信息可搜索，也能调用宿主 LLM 服务从暂存差异生成提交信息。提供 8 个 Agent 工具、51 个本地 HTTP 接口与 8 种语言，令牌以 AES-256-GCM 加密落盘。'
