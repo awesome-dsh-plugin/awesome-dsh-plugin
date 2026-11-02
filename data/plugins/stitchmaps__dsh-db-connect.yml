@@ -1,7 +1,0 @@
-url: https://github.com/stitchmaps/dsh-db-connect
-name: stitchmaps/dsh-db-connect
-category: tools
-description:
-  en: Manage Oracle, PostgreSQL, MySQL, MariaDB, SQL Server and SQLite connections with driver diagnostics and opt-in metadata browsing for agents.
-  zh: 管理 Oracle、PostgreSQL、MySQL、MariaDB、SQL Server 与 SQLite 连接，提供驱动诊断和需显式授权的智能体元数据浏览。
-tarball: https://github.com/stitchmaps/dsh-db-connect/releases/download/v0.1.0/dsh-db-connect-0.1.0.tgz

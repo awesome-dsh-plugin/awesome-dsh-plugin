@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/OakcoderX/solopup-memory",
+  "name": "OakcoderX/solopup-memory",
+  "category": "memory",
+  "description": {
+    "en": "Global and project text memory with original-message citations, revision history and managed source withdrawal. Public beta.",
+    "zh": "保留原话引用、修改历史并支持受管来源撤回的全局与项目文字记忆。公开测试版。"
+  },
+  "tarball": "https://github.com/OakcoderX/solopup-memory/releases/download/v0.21.0-beta.3/solopup-memory-0.21.0-beta.3.tgz"
+}

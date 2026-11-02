@@ -1,0 +1,7 @@
+url: https://github.com/MingoYung/dsh-session-concurrency
+name: MingoYung/dsh-session-concurrency
+category: session
+description:
+  en: Sets a per-session inference concurrency limit of 1–10 shared by the main agent and its descendants; at 1, the parent waits for child tasks to finish.
+  zh: 为每个主会话设置 1–10 条推理并发，主 Agent 与子孙共用额度；设为 1 时，父 Agent 等待子任务结束后再继续。
+tarball: https://github.com/MingoYung/dsh-session-concurrency/releases/download/v0.1.0/local-session-concurrency-0.1.0.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/lucagiftzek/DSH-Idle-Watchdog
+name: lucagiftzek/DSH-Idle-Watchdog
+category: workflow
+description:
+  en: "Posts a follow-up prompt into opted-in chats that fall silent, and offers a secret-protected HTTP API that posts a message into any chat. Requires Node.js 22.5+."
+  zh: "在久无动静且主动开启的会话里投递跟进提示，并提供一个带密钥保护的 HTTP API，可向任意会话发消息。需 Node.js 22.5+。"

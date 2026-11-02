@@ -1,0 +1,6 @@
+url: https://github.com/dualface/quicktui-dsh
+name: dualface/quicktui-dsh
+category: remote
+description:
+  en: 'Sets up QuickTUI from a dsh plugin page: installs QuickTUI server on macOS and Linux, pairs the phone app by QR code, and connects dsh sessions so the app can follow them, answer approvals and questions, send prompts, and interrupt turns.'
+  zh: 在 dsh 插件页配置 QuickTUI：在 macOS 与 Linux 上安装 QuickTUI server，扫码配对手机 App，并接入 dsh 会话，让 App 能查看会话、回应审批与提问、发送提示词、中断回合。

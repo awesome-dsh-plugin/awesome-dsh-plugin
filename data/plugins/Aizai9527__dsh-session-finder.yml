@@ -1,0 +1,16 @@
+# 提交模板：放进 awesome-dsh-plugin/awesome-dsh-plugin 仓库
+#
+# 1. 把 Aizai9527 换成你的 GitHub 账号；本仓库发布页也会给出填好的整段内容。
+# 2. 在该仓库的 fork 里存成 data/plugins/Aizai9527__dsh-session-finder.yml
+#    （一个文件一个插件，不要改生成出来的 README）。
+# 3. 提 PR；CI 会校验 dsh.bundle 段、仓库存在超过 1 天、以及 YAML 形状。
+#
+# description.en 里含 ": "，必须用单引号包住；中文用全角冒号，不加引号也安全。
+
+url: https://github.com/Aizai9527/dsh-session-finder
+name: Aizai9527/dsh-session-finder
+category: session
+description:
+  en: 'Search every DSH chat session and jump straight to the matching message: multi-keyword AND search, scoped to the current session, all sessions or one project, anchored by call id for tool hits, with a draggable panel for previous and next.'
+  zh: 跨会话搜索 DSH 聊天记录并直接跳到命中的那条消息：多关键词同时匹配，可限定当前会话、全部会话或某个项目，工具命中按 callId 精确定位，浮层可拖拽并支持上一处、下一处。
+# icon: https://raw.githubusercontent.com/Aizai9527/dsh-session-finder/main/icon.png   # 可选，正方形 PNG

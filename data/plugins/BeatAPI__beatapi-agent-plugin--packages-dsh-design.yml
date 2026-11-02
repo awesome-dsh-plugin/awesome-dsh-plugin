@@ -1,0 +1,7 @@
+url: https://github.com/BeatAPI/beatapi-agent-plugin/tree/main/packages/dsh-design
+name: BeatAPI/beatapi-agent-plugin#dsh-design
+category: vision
+description:
+  en: "Starts the published local BeatDesign 0.2.5 workspace and connects 30 MCP tools for projects, Canvas, Assets and Timeline, with a shared-project Skill and remote-generation approval guidance. Requires Node.js 22.12+ and a free port 3020; frame extraction and timeline rendering also need ffmpeg/ffprobe on PATH (browser export does not)."
+  zh: "启动已发布的本地 BeatDesign 0.2.5 工作台，接入项目、画布、素材和时间线的 30 个 MCP 工具，附带共享项目与远程生成确认流程。需 Node.js 22.12+ 且 3020 端口空闲；抽帧与时间线渲染另需 PATH 上的 ffmpeg/ffprobe（浏览器导出不需要）。"
+tarball: https://github.com/BeatAPI/beatapi-agent-plugin/releases/download/harness-workspaces-v0.1.0/beatapi-dsh-design-0.1.0.tgz

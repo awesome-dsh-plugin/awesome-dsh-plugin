@@ -1,0 +1,6 @@
+url: https://github.com/Zci514/dsh-nightwatch
+name: Zci514/dsh-nightwatch
+category: session
+description:
+  en: 'Keep this session working until a wall-clock deadline: one button in the composer picks 22:30, +90m, or tomorrow 07:00, and after every finished turn the plugin posts one continuation message so the session keeps working; nothing is posted once the deadline passes. Stops early on a round cap (400), three consecutive failed turns, or four consecutive rounds that called no tool; a manual stop button is always there. The last part of the watch switches to wrap-up wording, sized to at most half the remaining time so a short watch is not entirely wrap-up. Armings persist to $DSH_HOME/nightwatch.json via an atomic write and are re-adopted after a restart. No slash command is registered by default (enableCommand turns one on); the continuation message carries source.kind cordis-host-runner, not user.'
+  zh: '把这个会话一直续跑到指定钟点：输入框里一颗按钮选 22:30、+90m 或明天 07:00，之后每轮答完插件补一句继续，让你去睡觉时它接着干；到点之后不再发任何消息。另有三道提前收手的闸——轮次上限 400、连续 3 轮出错、连续 4 轮一个工具都没调；随时可以手动停。快到点时切成收尾语气，窗口最多为剩余时间的一半，免得短守夜整段都在收尾。守夜记录以原子写落到 $DSH_HOME/nightwatch.json，重启后自动认领。默认不注册任何 slash 指令（enableCommand 可开）；补的那句话 source.kind 是 cordis-host-runner 而不是 user。'

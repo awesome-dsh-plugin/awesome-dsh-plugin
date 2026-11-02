@@ -1,0 +1,6 @@
+url: https://github.com/cnHuaShao/dsh-remote-server-manager
+name: cnHuaShao/dsh-remote-server-manager
+category: remote
+description:
+  en: 'Remote Linux server manager in the Harness Web UI: browse and edit files, inspect host status, start/stop/restart Docker containers, inspect images, configure Docker registry mirrors, manage firewalld/ufw rules, switch apt sources, and detect developer tools or install/upgrade them with apt.'
+  zh: '在 Harness Web UI 中管理远程 Linux 服务器：通过 SSH 浏览和编辑文件、查看主机状态、启动/停止/重启 Docker 容器、查看镜像、配置 Docker 镜像加速源、管理 firewalld/ufw 防火墙规则、切换 apt 软件源，并探测常见开发工具或通过 apt 一键安装/升级。'
