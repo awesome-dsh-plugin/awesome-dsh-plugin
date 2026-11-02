@@ -3,5 +3,5 @@ name: gychen-NJU/dsh-game-daily
 category: tools
 icon: https://raw.githubusercontent.com/gychen-NJU/dsh-game-daily/main/assets/icon-512.png
 description:
-  en: 'Daily game automation for Genshin Impact, Honkai Impact 3 and Honkai: Star Rail: a scheduled task per game drives BetterGI, the game-daily skill family or March7thAssistant, with per-game switches, a foreground guard, in-run supervision that only steps in on trouble, and one report session per game that later results are appended to.'
-  zh: '原神 / 崩坏3 / 崩坏：星穹铁道的日常自动化：每个游戏一个计划任务，分别驱动 BetterGI、game-daily 技能族或三月七助手；带逐游戏开关、前台守护、只在出问题时介入的运行期值守，以及每游戏固定一个汇报会话、后续结果追加进去。'
+  en: 'Daily game automation on Windows for Genshin Impact, Honkai Impact 3, Honkai: Star Rail and Zenless Zone Zero: a scheduled task per game drives BetterGI, the game-daily skill family, March7thAssistant or ZenlessZoneZero-OneDragon, with per-game switches, a foreground guard, in-run supervision that only steps in on trouble, and one report session per game that later results are appended to. Requires the DSH desktop app and the matching external engine installed.'
+  zh: 'Windows 上的原神 / 崩坏3 / 崩坏：星穹铁道 / 绝区零日常自动化：每个游戏一个计划任务，分别驱动 BetterGI、game-daily 技能族、三月七助手或绝区零「一条龙」；带逐游戏开关、前台守护、只在出问题时介入的运行期值守，以及每游戏固定一个汇报会话、后续结果追加进去。需要 DSH 桌面端，并预先安装对应外部引擎。'

@@ -2,5 +2,5 @@ url: https://github.com/fj7937290-sys/dsh-video-remix
 name: fj7937290-sys/dsh-video-remix
 category: tools
 description:
-  en: 'Turn a script into a narrated explainer video: text-card slides by default (fast and exact for tutorials) or real AI-generated footage per segment, with 14 online neural Chinese voices plus 3 offline Windows voices and a one-command sample pack for picking a voice by ear. The plugin is a thin face over the bundled video-remix CLI.'
-  zh: '把文案变成带配音的讲解视频：默认用文字卡片（快且准确，适合教程），也可逐段调用 AI 生成真实画面；内置 14 个在线中文神经音色和 3 个离线音色，一条命令即可生成全部音色的试听包，让人凭耳朵挑选。插件本身只是随附 video-remix 命令行的薄封装。'
+  en: 'Turn a script into a narrated explainer video: text-card slides by default (fast and exact for tutorials) or AI-generated footage per segment (needs AGNES_API_KEY); 14 online neural Chinese voices plus 3 offline Windows voices, with a one-command sample pack for picking a voice by ear. Requires ffmpeg, and the bundled video-remix skill copied to <workspace>/.dsh/skills/video-remix with npm install run there for the online voices.'
+  zh: '把文案变成带配音的讲解视频：默认用文字卡片（快且准确，适合教程），也可逐段调用 AI 生成真实画面（需 AGNES_API_KEY）；内置 14 个在线中文神经音色和 3 个离线 Windows 音色，一条命令即可生成全部音色的试听包。前置需要 ffmpeg，并把仓库内的 video-remix skill 放到 <工作区>/.dsh/skills/video-remix 后在该目录执行 npm install（在线音色所需）。'
