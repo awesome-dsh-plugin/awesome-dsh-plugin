@@ -266,6 +266,7 @@ dsh plugin --profile web add dshmarket
 - [amstlkqp114514/dsh-desktop-tweaks](https://github.com/amstlkqp114514/dsh-desktop-tweaks) — 桌面修改：F11 全屏切换；使终端使用 Ctrl+C/V 复制粘贴，从通用设置内开启/关闭。
 - [an-an-618/dsh-hook-followup](https://github.com/an-an-618/dsh-hook-followup) — 在每条 DSH 回答下方加一行轻量 follow：一句锚定正文的追问 + 1–3 条用户口吻快捷回复，让下一轮对话一键继续；支持 always / balanced / conservative 策略，并可跳过拒绝回答与情绪场景。
 - [an-an-618/dsh-intelligent-ui](https://github.com/an-an-618/dsh-intelligent-ui) — DSH 的声明式交互卡片：模型写 spec，Host 编译成 JSON program，客户端渲染表单、表格、图表和列表，本地交互、显式提交。
+- [Ananpng123/dsh-disk-manager](https://github.com/Ananpng123/dsh-disk-manager) — DSH 右栏里的 Windows 磁盘管理：卷总览带用量条、按会话分组列出每次对话产出的文档、把文件直接拖进对话输入框、多选与批量删除（只进回收站）、可展开的目录树带程序真图标、补上会话没碰过的工作区文档、按需统计文件夹大小，右键菜单对齐资源管理器；删除一律进回收站。
 - [Andor-Z/dsh-turn-outline](https://github.com/Andor-Z/dsh-turn-outline) — 在侧边栏按用户轮次折叠会话（输入、工具步骤、输出），一键跳回对话原位。
 - [androidly/dsh-restart-control](https://github.com/androidly/dsh-restart-control) — 在 DSH Web 侧边栏底部添加重启控件：宿主经自身的优雅退出通道退出，由检测到的进程守护（systemd、Kubernetes 或 Docker）拉起新进程，没有守护时插件自行拉起；右下角提示条轮询宿主 pid，直到新进程应答。
 - [AngleNaris/fanframe](https://github.com/AngleNaris/fanframe) — 繁界 - 意思是“繁星的域界”，这个插件通过对DSH桌面版的UI界面进行轻度的打磨，带来更舒适的日常交互体验。我为DSH带来了放置图标的统一侧边栏，给对话列表充足的空间，同时避免插件喜欢随意摆放自己的图标造成的混乱。此外，为对话正文增加了染色处理，让文字阅读更轻松愉快。最后，通过冷峻的无圆角风格和大量增加的细微交互动画，增加一些小小的精致感。
@@ -2083,7 +2084,7 @@ dsh plugin --profile web add dshmarket
 - [rayadesune/DeepSeek-Harness-chat-billing](https://github.com/rayadesune/DeepSeek-Harness-chat-billing) — 会话头部徽标显示 DeepSeek 账户余额、本轮对话花费与今日全部会话总花费；每轮消息操作行前置本轮花费，详情面板含按模型计价与今日会话消费排行。官方峰谷定价，余额取自 /user/balance API。
 - [rayzhu1109/dsh-balance](https://github.com/rayzhu1109/dsh-balance) — 在侧边栏底部实时显示 DeepSeek 账户余额，点击展开最近 5 天消费柱状图。
 - [reg4916/dsh-plugin-balance-badge](https://github.com/reg4916/dsh-plugin-balance-badge) — 在侧边栏顶部常驻显示账户充值余额，自动刷新，数字与「设置 → 账户」一致。
-- [regrevia/dsh-fast-mode](https://github.com/regrevia/dsh-fast-mode) — DeepSeek Harness 自己的快速模式：用几项配置控制任务的运行速度——限制思考在哪一步收敛、限制中间汇报的输出、限制最多几步，在不改变模型与思考强度的前提下把任务做快。实测 10 类任务 30 个完整单元：默认配置总耗时 0.72×、输出 token 0.74×、步数 0.71×；把「省着写」提醒从第 4 步提前到第 2 步，debugfix 0.535×、ledger 0.506×、migrate 0.751×，13 对合并 0.625×、输出 token 0.614×（第 3 步时 migrate 单族 0.509×、输出 0.528×）。每一对里两臂隐藏断言逐格相同、全绿。1–5 步的小改修与数据整形收不回提醒成本，按任务形状先试一次再定。
+- [regrevia/dsh-fast-mode](https://github.com/regrevia/dsh-fast-mode) — DeepSeek Harness 自己的 fast mode：同一个模型，只消耗一半的输出，最快快一倍。开关自由组合、全程提示词侧，不换模型也不降思考强度——30 对任务实测 0.505× 耗时、输出 token −42%、判分 438/438 全绿。少数任务会变慢；benchmark 与复现见仓库。
 - [RevxZxCx/dsh-where-did-my-tokens-go](https://github.com/RevxZxCx/dsh-where-did-my-tokens-go) — 在聊天页“深度思考”指示旁实时显示 token 计数，支持输入/输出合并或分列展示、逐步骤操作计数与 K/M/G/T 自适应单位。
 - [Robortshen/dsh-token-radar](https://github.com/Robortshen/dsh-token-radar) — 输入框下方的彩色 token 胶囊与上方展开面板：逐次调用的双图（总消耗 / 可计费）、子代理开销、工具归因与缓存拆分，只读本机会话日志。
 - [rongyishuaige7/dsh-stats](https://github.com/rongyishuaige7/dsh-stats) — DSH 项目级全局用量中心：按项目统计 Token、工时与费用，支持半小时节奏泳道、26 周全局热力图与多 Provider 余额预警；无法确认计价的部分会标注而非估算。
@@ -7440,6 +7441,7 @@ dsh plugin --profile web add dshmarket
 - [MoonlitDropOfBlood/dsh-deveco](https://github.com/MoonlitDropOfBlood/dsh-deveco) — HarmonyOS 全栈开发套件：右侧边栏提供 HiLog 检查器（实时流与级别/包名/关键词过滤）与 ArkUI Inspector（截图点选高亮、可折叠组件树、节点属性搜索、盒子模型），两种树源——DevEco 调试源（ark 调试链路，提供 padding/margin/border 声明值与自定义组件名）与 uitest 无障碍树；.ets 查看器提供 ArkTS 语法高亮；注册 harmony_ui_tree agent 工具供对话内取组件树；设置页管理 DevEco Studio/CLT 工具链与 USB/网络设备。21 个 Remote 方法，82 个单元测试。
 - [moonquake2004/dsh-doctor#plugin](https://github.com/moonquake2004/dsh-doctor/tree/main/plugin) — 离线诊断工具：环境/Profile/会话共 19 项检查，带设置「诊断」面板与只读 JSON API。
 - [mouyu6508-hue/dsh-fusion](https://github.com/mouyu6508-hue/dsh-fusion) — 检查 DeepSeek Harness 插件装配层的冲突：跨 bundle 重复的 loader 名（install-shadow）、同一个 id 被写成两个 name、一层要开一层要关、以及被后一层静默覆盖的配置键，并把覆盖合成终值补丁。带一条 DSH 起不来时也能跑的 CLI，另有一个会读运行时 loader 的 fusion_report 工具。
+- [mouyu6508-hue/dsh-preflight](https://github.com/mouyu6508-hue/dsh-preflight) — 管插件全生命周期的体检：装之前检查 dsh.bundle、引擎与 peer 兼容性、是否需要编译原生模块、平台限制，以及新插件的 patch 会不会挂出已存在的 loader 名（install-shadow 预判）；装之后把已装插件按能力分类；更新前对新版本跑同一套检查，只报这次更新引入的问题。带一条 DSH 起不来时也能跑的 CLI，和三个只读工具。
 - [Mr54233/dsh-restart-now](https://github.com/Mr54233/dsh-restart-now) — DSH 桌面版一键重启，五个入口可逐项开关：侧栏面板、侧栏底部、会话标题栏、设置 → 通用行、斜杠命令 /restart。只给主进程发关闭信号让宿主优雅退出（会话日志得以下盘），再由脱离进程树的助手自动拉起；可选守卫会等待进行中的任务或插件安装结束，重启结果写成回执，动作请求仅限本机同源，所有开关落 profile 配置文件。四个界面入口可单独关闭，斜杠命令始终可用。
 - [MrGnUm/dsh-image-webp-to-png](https://github.com/MrGnUm/dsh-image-webp-to-png) — 把 WebP 附件图片转码成 PNG，让带 alpha 通道的图能在无法解码 WebP 的 LLM 后端上加载（例如 llama.cpp）。
 - [MrYangyt/dsh-k8s](https://github.com/MrYangyt/dsh-k8s) — 基于本地 kubectl 的 Kubernetes 多集群管理面板：资源筛选、YAML 编辑、Pod 实时日志、交互式容器终端、工作负载重启与扩缩容，并同步 DSH 主题；支持侧栏入口和会话视图。需要 DSH 0.2.0-rc.2。
