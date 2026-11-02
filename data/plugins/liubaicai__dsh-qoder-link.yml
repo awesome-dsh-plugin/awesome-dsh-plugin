@@ -1,0 +1,7 @@
+url: https://github.com/liubaicai/dsh-qoder-link
+name: liubaicai/dsh-qoder-link
+category: model
+description:
+  en: 'Connects Qoder models to DeepSeek Harness through the official CLI over native ACP stdio, so no reverse-engineered model API and no account-ban risk. Supports both qodercli (international) and qoderclicn (China).'
+  zh: '无需逆向模型 API，无封号风险，支持 qodercli 国际版 和 qoderclicn 中国版，通过原生 ACP stdio 接入。'
+icon: https://raw.githubusercontent.com/liubaicai/dsh-qoder-link/main/assets/qoder.png
