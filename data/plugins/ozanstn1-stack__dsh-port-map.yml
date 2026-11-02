@@ -1,0 +1,6 @@
+url: https://github.com/ozanstn1-stack/dsh-port-map
+name: ozanstn1-stack/dsh-port-map
+category: tools
+description:
+  en: 'Read-only port, service and Caddy route map: listening sockets with their owning unit or container, a reverse service view, and reverse_proxy liveness checks.'
+  zh: '只读的端口、服务与 Caddy 路由地图：监听套接字及其所属 unit 或容器、反向服务视图，以及 reverse_proxy 存活检查。'
