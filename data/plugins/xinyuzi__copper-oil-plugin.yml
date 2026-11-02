@@ -1,0 +1,7 @@
+url: https://github.com/xinyuzi/copper-oil-plugin
+name: xinyuzi/copper-oil-plugin
+category: usage
+description:
+  en: 'Copper-to-oil ratio dashboard for the Shanghai Composite: lag-weighted forecast band and drill-down charts.'
+  zh: 铜油比与上证指数看板：滞后加权预测区间与可缩放的联动图表。
+icon: https://raw.githubusercontent.com/xinyuzi/copper-oil-plugin/main/assets/icon-180.png
