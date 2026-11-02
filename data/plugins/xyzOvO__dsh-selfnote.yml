@@ -1,7 +1,7 @@
 url: https://github.com/xyzOvO/dsh-selfnote
 name: xyzOvO/dsh-selfnote
 category: memory
-tarball: https://github.com/xyzOvO/dsh-selfnote/releases/download/v0.7.1/dsh-selfnote-0.7.1.tgz
+tarball: https://github.com/xyzOvO/dsh-selfnote/releases/download/v0.7.2/dsh-selfnote-0.7.2.tgz
 description:
   en: 'Self-narrative memory plus a user profile: the model writes first-person notes to itself (“I” = the agent), while a profile of you is aggregated from approved facts — every line traceable to a fact id, editable and switchable off. Recall over past conversations with citations; optional inverted index that stores tokens only.'
   zh: '自我叙述 + 用户画像：模型写给自己看的第一人称短句（「我」= agent），另有从已采纳记忆聚合出的「关于你」画像，每句可回溯到具体事实、可手改可关闭。附带出处的历史检索，以及只存词元的倒排索引。'
