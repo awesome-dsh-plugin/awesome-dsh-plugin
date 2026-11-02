@@ -1,0 +1,7 @@
+url: https://github.com/lisihao/dsh-intelligent-UI
+name: lisihao/dsh-intelligent-UI
+category: ui
+description:
+  en: "Optional source-preserving chat rendering with selectable themes, offline Uiverse component tools and a report-local evidence workspace. Preview for DSH 0.2.1-rc.2."
+  zh: "可选接管对话渲染，保留原文与数据，提供可切换主题、离线 Uiverse 组件工具和报告内证据工作区。适配 DSH 0.2.1-rc.2 的预览版。"
+tarball: https://github.com/lisihao/dsh-intelligent-UI/releases/download/%40lisihao%2Fdsh-solar-intelligent-experience-platform%400.1.0-preview.1/lisihao-dsh-solar-intelligent-experience-platform-0.1.0-preview.1.tgz

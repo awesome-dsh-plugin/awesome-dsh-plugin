@@ -1,0 +1,10 @@
+url: https://github.com/TZYCeng/dsh-model-visibility
+name: TZYCeng/dsh-model-visibility
+category: ui
+description:
+  en: >-
+    Manage which models appear in the composer model menu. A settings page lists the models of every provider with a per-model switch, provider-level show/hide and filters by kind; switched-off models leave the menu while the model in use in the current session stays. Rows show the model kind, and chat models also show reasoning support and the adapter's effort levels, their context window and input modalities. Labels merge six sources in priority order (settings document, adapter, the relay's GET /models response, a built-in pi-ai / models.dev catalog, name inference, vendor corrections), with the source named on hover and dashed borders marking inferred values. A switch, on by default, lets relay routes whose models declare text-only input accept images in memory, without editing configuration files. The hidden list is stored in the profile patch and mirrored to $DSH_HOME.
+  zh: >-
+    管理哪些模型出现在输入框的模型菜单里。设置页按 Provider 列出模型，支持逐模型开关、渠道级批量显隐和按类型筛选；关闭的模型从菜单中消失，当前会话正在使用的模型保留。每行标注模型类型，对话模型另外标注是否支持推理、适配器公布的思考强度档位、上下文窗口和输入模态。标签按六个来源的优先级合并（设置文档、适配器、中转站 GET /models 响应、内置 pi-ai / models.dev 目录、模型名推断、厂商校正），悬停显示来源，虚线边框表示推断值。一个默认开启的开关让声明纯文本输入的中转站模型真正能接收图片，只在内存里生效，不改配置文件。隐藏列表保存在 profile patch 中，并镜像到 $DSH_HOME。
+icon: https://raw.githubusercontent.com/TZYCeng/dsh-model-visibility/main/docs/icon-180.png
+tarball: https://github.com/TZYCeng/dsh-model-visibility/releases/latest/download/dsh-model-visibility.tgz

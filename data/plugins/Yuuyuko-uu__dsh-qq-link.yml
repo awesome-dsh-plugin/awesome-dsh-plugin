@@ -1,5 +1,5 @@
-url: https://github.com/Yuuyuko-uu/dsh-qq-bridge
-name: Yuuyuko-uu/dsh-qq-bridge
+url: https://github.com/Yuuyuko-uu/dsh-qq-link
+name: Yuuyuko-uu/dsh-qq-link
 category: notify
 description:
   en: Bridges a DSH session and QQ over NapCat HTTP, forwarding agent replies to QQ and feeding messages you send in QQ back into the session.

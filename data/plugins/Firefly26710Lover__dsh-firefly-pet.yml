@@ -1,0 +1,7 @@
+url: https://github.com/Firefly26710Lover/dsh-firefly-pet
+name: Firefly26710Lover/dsh-firefly-pet
+category: fun
+description:
+  en: 'A transparent always-on-top desktop pet that chats through the host model, plays animations on click, whispers on a timer, narrates task progress, and shows account balance. Runs in the DSH Desktop app using its bundled Electron runtime (~/.dsh/electron); the pet does not appear if that runtime is missing. Windows only.'
+  zh: '透明置顶的桌面桌宠：走宿主模型聊天、点击切换动画、定时碎碎念、按会话播报任务进度，并可查询账户余额。依赖 DSH Desktop 自带的 Electron 运行时（~/.dsh/electron），缺失时桌宠不会出现；仅支持 Windows。'
+icon: https://raw.githubusercontent.com/Firefly26710Lover/dsh-firefly-pet/main/assets/icon.png
