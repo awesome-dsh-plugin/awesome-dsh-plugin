@@ -1,0 +1,6 @@
+url: https://github.com/youchen-yc/dsh-system-guard
+name: youchen-yc/dsh-system-guard
+category: security
+description:
+  en: 'System guard for DeepSeek Harness: classifies core system files and runtime junk, keeps a hidden SHA-256 backup of core files on the largest free disk, patrols integrity and restores damaged files, and asks for administrator rights only to protect the system.'
+  zh: '系统守护：分析并分类系统核心文件与运行时垃圾，把核心文件隐藏备份到剩余空间最大的硬盘、定期巡查完整性并从备份修复损坏文件；守护权限只用于保护系统。'
