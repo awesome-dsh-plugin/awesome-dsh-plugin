@@ -1,0 +1,7 @@
+url: https://github.com/nuet9/dsh-internal-folder-browser
+name: nuet9/dsh-internal-folder-browser
+category: ui
+description:
+  en: Browse local file directories inside Harness with target highlighting, image thumbnails, and eight view layouts.
+  zh: 在 Harness 内浏览本地文件目录，支持目标文件高亮、图片缩略图和八种查看布局。
+tarball: https://github.com/nuet9/dsh-internal-folder-browser/releases/download/v1.2.0/local-internal-folder-browser-1.2.0.tgz
