@@ -5506,7 +5506,7 @@ dsh plugin --profile web add dshmarket
 - [mengxiaoxian/lookover#dsh-look](https://github.com/mengxiaoxian/lookover/tree/main/dsh-look) — macOS 场景感知探针：拉模型零轮询的 look 工具，读取最前非自身窗口（应用信息、AX 标题/选中文本、按需本地 OCR），支持召唤热键按下瞬间抓取快照注入对话。
 - [MicroHEROX/dsh-koboldcpp-hands](https://github.com/MicroHEROX/dsh-koboldcpp-hands) — 给在线模型装上本地双手：koboldcpp_run 与 koboldcpp_vision 工具把重复的文本与视觉（OCR、图像分析、对比）劳动交给本地 KoboldCpp（llama.cpp）服务器，并按需拉起与管理服务器生命周期。
 - [MicroHEROX/dsh-unsloth-hands](https://github.com/MicroHEROX/dsh-unsloth-hands) — 把重复的文本与视觉（OCR、图像分析、对比）劳动交给本地运行的 Unsloth Desktop（Unsloth Studio）服务器：unsloth_run 与 unsloth_vision 两个工具，纯 HTTP 客户端，不拉起也不持有任何进程。
-- [MJorgin/dsh-media-skills](https://github.com/MJorgin/dsh-media-skills) — 面向纯文本模型的免费视觉桥与生图：粘贴读图、GLM-4V-Flash 与 Gemini 引擎故障转移、modlens 同款结构化证据输出，并自动播种免费视觉模型路由。
+- [MJorgin/dsh-media-skills](https://github.com/MJorgin/dsh-media-skills) — DSH 的生图与读图：侧边栏「创作」页面（按模型分行、10 种比例、1K–4K 尺寸、联系表 + 详情卡 + 放大 + 复用 + 删除），三个预设提供方外加自定义端点（其中一个完全免 Key），另有 vision-review 读图技能。粘进去的 Key 只写进本机 ~/.dsh/secrets/media-tools.env（权限 600），只发给你选的那家服务商。
 - [Monter-code/dsh-image-insight](https://github.com/Monter-code/dsh-image-insight) — 结构化图像识别：本地 sharp 感知 + 云端视觉模型，一次调用拿到描述、带坐标的 OCR、 目标定位与细粒度属性；图片指纹缓存让重复图片毫秒返回且不消耗模型额度。
 - [moon09300731/dsh-vision-tools](https://github.com/moon09300731/dsh-vision-tools) — DeepSeek Harness 视觉能力全家桶：vision_understand 工具（OpenAI 兼容视觉 API，默认免费智谱 GLM-4V-Flash）+ 粘贴/拖拽/按钮三入口识图。
 - [NagasakiSoyo-ui/dsh-llm-deepseek-vision](https://github.com/NagasakiSoyo-ui/dsh-llm-deepseek-vision) — 视觉增强的 DeepSeek 适配器：由视觉模型把图片描述成文字，纯文本 DeepSeek 模型再基于描述推理。
