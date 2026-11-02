@@ -1,7 +1,7 @@
 url: https://github.com/measureer/dsh-overleaf-sync
 name: measureer/dsh-overleaf-sync
 category: docs
-tarball: https://github.com/measureer/dsh-overleaf-sync/releases/download/v0.1.0/dsh-overleaf-sync-0.1.0.tgz
+tarball: https://github.com/measureer/dsh-overleaf-sync/releases/download/v0.1.1/dsh-overleaf-sync-0.1.1.tgz
 description:
   en: 'Two-way sync between a local LaTeX folder and an Overleaf project over the Overleaf Socket.IO + OT channel instead of a Git bridge: pull with automatic git init, dry-run-first push, three-way diff, background watch, and conflict copies that never overwrite.'
   zh: '不走 Git 桥接，而是通过 Overleaf 自身的 Socket.IO + OT 通道在本地 LaTeX 文件夹与 Overleaf 项目之间双向同步：拉取后自动 git init、推送默认 dry-run、三方 diff、后台 watch，冲突永不覆盖而是另存副本。'
