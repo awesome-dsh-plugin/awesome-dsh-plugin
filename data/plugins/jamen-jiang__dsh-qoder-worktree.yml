@@ -1,0 +1,6 @@
+url: https://github.com/jamen-jiang/dsh-qoder-worktree
+name: jamen-jiang/dsh-qoder-worktree
+category: git
+description:
+  en: Qoder-style workspace mode and branch chips on the session row; picking a branch arms it, and the first message creates a dedicated git worktree and moves the session into it.
+  zh: Qoder 风格的工作区模式与分支 chip，选择分支即挂起意图，发送第一条消息时自动创建独立 git worktree 并把会话迁入其中。
