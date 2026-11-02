@@ -2,6 +2,6 @@ url: https://github.com/leoan698-tom/dsh-sessivra
 name: leoan698-tom/dsh-sessivra
 category: session
 description:
-  en: Connects native session references with explicit messaging and conversation trees in DeepSeek Harness.
-  zh: 在 DeepSeek Harness 中衔接原生会话引用、明确通信与会话树。
+  en: Session-to-session messaging with linked replies, native context references, and conversation trees in DeepSeek Harness.
+  zh: 在 DSH 会话之间发送消息和任务、接收关联回复，并提供上下文引用与会话树。
 tarball: https://github.com/leoan698-tom/dsh-sessivra/releases/download/v0.3.0-dev.19/leoan698-tom-dsh-sessivra-0.3.0-dev.19.tgz
