@@ -1178,6 +1178,7 @@ dsh plugin --profile web add dshmarket
 - [PPsz-qqq/dsh-restart-button](https://github.com/PPsz-qqq/dsh-restart-button) — 会话标题栏右端的重启按钮，可重启整个客户端：Windows 桌面版（Electron 外壳与 Host，走 Host 自身的优雅关闭流程）或 dsh web 服务。可等正在运行的回合与后台作业结束后再重启；重启后回到原会话，被中断的会话可一键继续；提示需重启才生效的插件更新；悬停显示 Host 运行时长与内存。
 - [prettyfox/dsh-selection-quote-auto](https://github.com/prettyfox/dsh-selection-quote-auto) — 在 DeepSeek Harness 的助手消息里选中文字即自动复制，并弹出「注释」浮框，点开才是评论框；右键引用菜单与 ⌘L 仍然保留。
 - [prgrmrwy/dsh-sidebar-session-provider-icon](https://github.com/prgrmrwy/dsh-sidebar-session-provider-icon) — DeepSeek Harness 插件：在侧边栏为每个会话显示 provider 与 model 图标，跟随输入框选择器即时更新，历史会话回退到最近一次请求；聚合路由（如 opencode-go、traex）显示 provider 主图并叠加 10px model 小图标。
+- [PrismScopes/dsh-aide](https://github.com/PrismScopes/dsh-aide) — 在 DeepSeek Harness 中提供 VS Code 风格的本地 IDE：Monaco 编辑器、资源管理器、搜索、Git、终端与语言服务。
 - [psychiiii/dsh-three-window#personal-web](https://github.com/psychiiii/dsh-three-window/tree/publish/packages/personal-web) — dsh web 的三窗工作台：每个工作区并排显示聊天、施工和只读审核三个窗口，各窗口独立配置 hook；审核窗提供匿名多模型评审，先确认再运行，按同一件事归组，报告为 Markdown。
 - [Pudge1996/dsh-composer-stretch](https://github.com/Pudge1996/dsh-composer-stretch) — 输入框全屏扩展按钮——内容达 3 行以上时出现，点击扩展至全屏高度，发送后自动折叠；扩展模式下 Enter 与 Shift+Enter 换行，Cmd/Ctrl+Enter 发送。
 - [pure-craft/dsh-actions](https://github.com/pure-craft/dsh-actions) — 人与 Agent 共用的确定性项目任务：一份 actions.json，右侧栏运行面板与 Agent 工具双入口。
@@ -1312,6 +1313,7 @@ dsh plugin --profile web add dshmarket
 - [shinelon/dsh-mcp-plugin](https://github.com/shinelon/dsh-mcp-plugin) — 在 Web 设置面板管理 DSH 的 MCP 服务器：实时状态、新增、编辑、删除、启用/禁用。
 - [shinelon/dsh-mermaid-plugin](https://github.com/shinelon/dsh-mermaid-plugin) — 将 DSH 会话消息中的 mermaid 代码块渲染为 SVG 图形，支持图形与源码切换、跟随深浅色主题，渲染失败时保留源码并显示错误。
 - [shinelon/dsh-workspace-group-plugin](https://github.com/shinelon/dsh-workspace-group-plugin) — 在侧边栏以自定义分组组织工作目录 - 拖拽变更分组与顺序、组内会话浏览与内容搜索，可一键切回官方工作区列表。
+- [shizhouyu/dsh-sidebar-notes](https://github.com/shizhouyu/dsh-sidebar-notes) — 右侧栏 Markdown 记事本，与聊天并排，带格式工具栏与本地自动保存。
 - [shuuul/dsh-bioviewer](https://github.com/shuuul/dsh-bioviewer) — 向 dsh-better-sidebar 注册 Mol* 文件预览器，支持 PDB、mmCIF、MRC 密度图、小分子和 Chimera .cmm 标记（含 .gz），并提供 BioViewer 工作区标签以及 bio_open / bio_add 工具。
 - [shyuan-hub/dsh-compact-button](https://github.com/shyuan-hub/dsh-compact-button) — 在上下文计量面板中添加「压缩上下文」与「新建会话」两个按钮：压缩按钮通过与手敲 /compact 相同的通道提交命令，新建会话按钮在同一 workspace 中开启新会话。
 - [shZhang1614/dsh-float-lamp](https://github.com/shZhang1614/dsh-float-lamp) — 悬浮在 DSH 应用之外的 Windows 状态灯：无边框置顶发光圆灯，背景完全透明——绿灯光晕呼吸表示运行中、橙灯抖动待授权、蓝灯漂浮待你交互、灰灯空闲、暗灰宿主离线；悬停逐行列出各会话正在运行的任务，可拖动记忆位置，插件被关闭后数秒内自动熄灭。
@@ -3022,6 +3024,7 @@ dsh plugin --profile web add dshmarket
 - [promise0320/dsh-persona-studio](https://github.com/promise0320/dsh-persona-studio) — 在 DSH 里把 LLM 的人格拆成六个维度（身份、语气、创作习惯、反馈方式、边界、运行参数）编译成一段提示词，注入系统提示词末尾；内置六套模板并支持直接丢文件的模板目录；还能读你过往消息归纳出人格草案——或统计成文，或让当前模型深读并给出判断依据。附带输入框旁的悬浮面板与 /persona 命令。
 - [puffo-ai/huddo-mcp#dsh](https://github.com/puffo-ai/huddo-mcp/tree/main/integrations/dsh) — dsh 的 Huddo 群聊：接入 huddoai MCP 服务器，agent 可通过邀请链接进入房间，阅读并回复人和其他 agent 的消息、等待新消息、用表情回应、发送端到端加密的私语；附带说明使用流程的 skill。
 - [shenA2024/whale-persona](https://github.com/shenA2024/whale-persona) — 人设引擎（DeepSeek Harness）：一份 config.json 管住 AI 的自称（可按具体模型指定，未命中回落 flash / pro 两档）、对你的称呼、关系立场、性格正文、逐条可勾选的工作契约、思维链语言、形象与回复语气（两段均 opt-in、均可按模型覆盖），以及由人工确认闸门把关的长期记忆——AI 只能追加 status:"proposed" 候选，人执行一行 confirm 才转正，日志物理只追加、按行序重放。已确认条目以「数据而非指令」的引号块注入；带 kind 的条目改为在确认那一刻按路由追加进指定文件、永不进提示词。三段提示词每次装配都从磁盘重新求值，改配置下一步生效、不用重启。人设预设是可分享的 JSON 快照（导入导出酒馆角色卡：v2/v3 可读、v2 可写），且刻意不携带记忆。零运行时依赖、不联网、不执行命令；任何异常降级为空段，最坏是「没有人设」而不是会话起不来。出厂空白——不写配置就什么都不改变。
+- [solopole/dsh-prompt-picker](https://github.com/solopole/dsh-prompt-picker) — 输入框工具栏一枚闪电图标后的系统提示词多选器：勾选保存的行按序注入，每行可设作用域（仅主 agent／仅子 agent／全部）；所有行（含内置「火力全开」）均可编辑和删除，「全清」只取消全部勾选、不删除任何条目。
 - [solstice621/dsh-openai-auth](https://github.com/solstice621/dsh-openai-auth) — 将本机 Codex 的 ChatGPT 登录接入 DSH 桌面版，提供账号管理、额度快照、模型自动同步和模型勾选。
 - [solstice621/dsh-opencode-go-auth](https://github.com/solstice621/dsh-opencode-go-auth) — 将 OpenCode Go 订阅接入 DSH 桌面版，提供 API key 管理、用量快照、模型自动同步和模型勾选。
 - [sryimnoob123/dsh-global-prompt](https://github.com/sryimnoob123/dsh-global-prompt) — 设置面板管理全局与各工作区 AGENTS.md，支持身份与人设注入、运行时上下文开关和结果通知。
