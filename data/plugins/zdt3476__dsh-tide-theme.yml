@@ -1,0 +1,8 @@
+url: https://github.com/zdt3476/dsh-tide-theme
+name: zdt3476/dsh-tide-theme
+category: theme
+icon: https://raw.githubusercontent.com/zdt3476/dsh-tide-theme/main/docs/images/icon.png
+tarball: https://github.com/zdt3476/dsh-tide-theme/releases/download/v0.4.0/dsh-tide-theme-0.4.0.tgz
+description:
+  en: "Tide Glass — ice-blue glass theme for DeepSeek Harness, plus UI extras: a single-line status HUD with a usage board, per-turn subagent topology cards, sidebar archive tabs with type-to-filter, model and reasoning-effort controls under the composer, and per-turn duration. One master switch controls whether the HUD, usage board and topology wear the plugin's glass material or fall back to native DSH surfaces; the theme layers over the official light/dark palettes rather than replacing them. npm: dsh-tide-theme."
+  zh: "潮汐玻璃——给 DeepSeek Harness 的冰蓝玻璃主题，附带一组界面增强：单行状态 HUD 与用量看板、按回合绘制的子代理委派图、侧栏归档分页与实时筛选、输入框下方的模型/思考等级控件、每轮回答耗时。一个总开关控制 HUD、用量看板与委派图是否套用插件的玻璃材质，关闭后完整回落到 DSH 原生表面；主题叠在官方明暗配色之上而非另开一套配色。npm: dsh-tide-theme。"
