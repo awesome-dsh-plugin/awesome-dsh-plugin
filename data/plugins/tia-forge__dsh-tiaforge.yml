@@ -1,0 +1,7 @@
+url: https://github.com/tia-forge/dsh-tiaforge
+name: tia-forge/dsh-tiaforge
+category: tools
+description:
+  en: Registers five TIA Portal skills (Siemens PLC docs lookup, ladder-logic generation, SimaticML-to-PNG ladder rendering, scan-cycle simulation with PASS/FAIL scenarios, and a local gateway that drives a real TIA Portal project) and wires the matching MCP endpoints, so an agent can go from a question to compiled, verified PLC code.
+  zh: 一次装齐西门子博途（TIA Portal）的五项能力——官方文档检索、梯形图生成、梯形图渲染成图核对、逐扫描仿真与 PASS/FAIL 验收、操作真实工程的本机网关——并把对应 MCP 端点一并接好，让智能体从提问一路走到编译通过的 PLC 代码。
+icon: https://raw.githubusercontent.com/tia-forge/dsh-tiaforge/main/assets/icon-180.png
