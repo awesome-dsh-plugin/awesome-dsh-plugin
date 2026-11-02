@@ -464,6 +464,8 @@ dsh plugin --profile web add dshmarket
 - [DanZai233/dsh-webask](https://github.com/DanZai233/dsh-webask) — 在输入框旁加一个按钮，并提供全局快捷键（默认 mod+shift+k）浮层，把一次性的小问题交给网页版对话而不是送进 harness 上下文：草稿会从输入框取出、复制到剪贴板并打开模板 URL。内置目标站点预设（DeepSeek、Kimi、Qwen、豆包、腾讯元宝、GLM、Gemini），带本地问题历史（可重新打开、复制或回填到输入框），以及设置页（站点、URL 模板、快捷键、剪贴板、历史）。
 - [datit309/dsh-live-inspector](https://github.com/datit309/dsh-live-inspector) — DeepSeek Harness 右侧边栏实时文件变更检查器与文件树：根据智能体的读/写/编辑调用显示 M/A/R 标记与并排 diff，实时追踪智能体活动。
 - [day-day-dream/dsh-page-refresh#dsh-page-refresh](https://github.com/day-day-dream/dsh-page-refresh/tree/main/plugins/dsh-page-refresh) — 在 DeepSeek Harness 会话头部加一个刷新按钮和一个电源菜单（重启 / 关闭 DeepSeek Harness）。纯客户端、零 token、零依赖。电源菜单目前仅支持 Windows。
+- [Dcmwfg/dsh-deepseek-sidebar](https://github.com/Dcmwfg/dsh-deepseek-sidebar) — 左侧栏一行把 chat.deepseek.com 开进右侧栏标签页，不影响当前对话，可随时全屏；与侧边栏浏览器共用同一 cookie 分区，附带脚本让登录跨重启保留。
+- [Dcmwfg/dsh-screenshot#windows](https://github.com/Dcmwfg/dsh-screenshot/tree/main/packages/windows) — Windows 上的区域截图：全虚拟屏选择器框选区域（拖动边框、八个手柄、Ctrl 拖动标注），完成后的 PNG 作为待发附件落进输入框。
 - [dcrzsy/dsh-enhance-tool](https://github.com/dcrzsy/dsh-enhance-tool) — DeepSeek Harness Web 一站式界面增强：提示词库（快选+管理）、两步 AI 润色、预测回复栏（点击直接发送）、MCP 工具管理、定时自动化、智能会话标题、对话宽度可调、AI 回复占满无灰底、超长用户消息自动折叠（带平滑展开/收起动效），以及各面板的场景化入场动效。
 - [DDSG-X/dsh-workspace-dir](https://github.com/DDSG-X/dsh-workspace-dir) — 在可拖动、透明度可调的目录面板中显示当前对话的工作目录与文件列表。
 - [ddy-007/dsh-client-resume-button](https://github.com/ddy-007/dsh-client-resume-button) — 在模型选择器左侧加一个「继续」按钮：上一轮被用户中止、崩溃中断或报错结束后，点一下让模型接着把那一轮做完；开始输入或添加附件时按钮收窄隐藏。
@@ -3189,13 +3191,14 @@ dsh plugin --profile web add dshmarket
 - [czm15053/dsh-peer-link](https://github.com/czm15053/dsh-peer-link) — 让 dsh 和 Claude Code 会话直接互发消息，附带可点击的会话列表卡片（搜索/刷新/弹窗发送）。
 - [d0ublecl1ck/dsh-session-radar](https://github.com/d0ublecl1ck/dsh-session-radar) — DSH Web 侧边栏的未读、待办与状态读数中枢：铃铛按顺序定位未读会话，快捷键依次走到正在等你输入的会话，⌘⇧, / ⌘⇧. 在访问过的对话之间前后切换；另有总览把未读与待决策会话分两区铺开；底部一行六项会话状态读数，每个图标都能点，点了跳到下一个同类会话；账本落在 host 半边，重启也不丢——未读会话重启后仍然显示行内绿色小标，启动时还会把上次被切断的会话列成清单，一键重发续跑消息。
 - [Da0Mine/dsh-talk-map](https://github.com/Da0Mine/dsh-talk-map) — 会话地图：每个对话都是白板上的一张卡片——工作区是会自动折叠溢出的框，点开是抽屉；卡片位置摆好就不会被打乱；卡片之间的连线承载上下文（拉一条就能带摘要分叉），每张卡还有运行中 / 等你回复 / 待查看 / 已中断的状态灯。
+- [Dcmwfg/dsh-session-menu-delete](https://github.com/Dcmwfg/dsh-session-menu-delete) — 在侧边栏会话三点菜单的「归档会话」下面加一项「删除会话」：先把会话从内存里摘掉，再删磁盘记录与投影缓存，并立刻移除左侧那一行。永久删除，没有回收站。
 - [DDDMUC/dsh-delete-turn](https://github.com/DDDMUC/dsh-delete-turn) — DSH 消息删除插件：按条删除用户消息、按步骤删除思考与工具调用、按整条回复删除助手回答，经官方 surface-replace 契约从模型上下文移除并从可见转录隐藏，原始 append-only 日志不改写。
 - [deepsleepAquarium/dsh-whale-post#bus](https://github.com/deepsleepAquarium/dsh-whale-post/tree/main/packages/bus) — DeepSeek Harness 会话之间的文件信箱：每封信都用 HMAC 与正文摘要封好，收件人通过名单接口解析，默认离线投递——投不出去的信留在信箱里等人来收，不会丢。
 - [DelayNooMore/dsh-plugin-session-trash](https://github.com/DelayNooMore/dsh-plugin-session-trash) — 会话回收站：移入回收站、恢复或永久删除会话。
 - [delock/dsh-whats-up](https://github.com/delock/dsh-whats-up) — What's up · 在忙啥——零维护的会话动态看板:host 端扫描全部会话,为每个会话提取「目标 + 一句话现状」(多 provider LLM、按指纹缓存),自动发现做到一半、问了没回、近期在推进的事,点卡片一键跳回会话。
 - [DenAbr/dsh-compact-selected-model](https://github.com/DenAbr/dsh-compact-selected-model) — /compact 与自动压缩使用会话中当前选中的模型来生成摘要，而不是用跑完上一轮的那个模型。
 - [deqingLv/dsh-slash-new](https://github.com/deqingLv/dsh-slash-new) — /new 指令：在当前工作区打开空白会话（已有空会话可直接复用），并把原会话的权限预设与 Agent 预设带入新会话，开新会话不会悄悄改变代理的可用权限。
-- [device1999/dsh-session-archive-delete](https://github.com/device1999/dsh-session-archive-delete) — 给 DSH 会话「…」菜单加「备份删除」与「彻底删除」两个入口：先把会话目录、投影缓存和元数据快照复制到本地归档文件夹并逐文件校验，通过后再删除原件以释放磁盘空间；派生的子代理会话一并处理，每个备份文件夹都带 RESTORE.txt 恢复步骤。
+- [device1999/dsh-session-archive-delete](https://github.com/device1999/dsh-session-archive-delete) — 给 DSH 会话「···」菜单加「备份删除」与「彻底删除」两个入口：这是一个安全的会话删除工具（session-delete），删除会话前先把会话目录、投影缓存和元数据快照复制到本地归档文件夹并逐文件校验，通过后再删除原件以释放磁盘空间；派生的子代理会话一并处理，每个备份文件夹都带 RESTORE.txt 恢复步骤。
 - [Diluka/dsh-afk](https://github.com/Diluka/dsh-afk) — 面向 ask_user_question 的 AFK 离开模式：当前 profile 全局或会话级设置，自定义自动应答或禁用新提问调用，基于会话日志的提问记录与已读状态；不批准权限或计划。仅支持 DSH 0.2.1-rc.2 与 0.2.1-rc.3。
 - [Domaki-co/dsh-message-forward](https://github.com/Domaki-co/dsh-message-forward) — DSH 会话间消息转发：把单条模型回复、用户消息或多选合并的消息与图片从上游会话提取出来投递到另一个会话，支持静默发送、填入草稿、发送并跳转三种投递方式，并可套用提示词模板。
 - [domitor-syh/dsh-rollback](https://github.com/domitor-syh/dsh-rollback) — TRAE 式「回退到本轮对话发起前」插件：按轮次建立检查点（10 轮滑动窗口），同时回滚工作区文件与原位截断模型上下文，保持同一 session id。回退只能由人发起：/rollback 命令或每轮的 Web 回退按钮（被中断的轮次也可用），弹窗逐条列出受影响文件及其动作（恢复/找回/删除/跳过）。
@@ -4378,6 +4381,7 @@ dsh plugin --profile web add dshmarket
 - [guhanfei-ai/dsh-grafana](https://github.com/guhanfei-ai/dsh-grafana) — 对话式 Grafana 运维：跨多个命名源站查看实时大盘数据，再通过审批与版本校验安全、可审阅地修改大盘。
 - [guomi6450/dsh-folder-timemachine](https://github.com/guomi6450/dsh-folder-timemachine) — 给任意文件夹留下历史时间点并一键回到过去：像 Git 一样有版本历史，但不需要懂 Git，任何文件夹都能用（游戏存档、软件配置目录、散落文档都行）。快照按内容寻址去重，只存真正变化的文件，未变文件不重算哈希；自动存档分两档——实时（fs.watch，最后一次改动静默约 8 秒后存一版，编辑器一次保存或一次构建算一版）与定时（每 N 分钟检查，有变化才存，内容没变不产生空版本）。空文件夹也会被记录，恢复时一并重建（mod 加载器、存档扫描器常要求某个空夹存在）。每次恢复前自动存一个安全还原点，因此恢复本身可撤销；exact 模式只删多余文件与空目录，非空目录一律不动。附带模型工具 folder_timemachine（status/history/diff 免审批，写操作走审批）与左下角浮窗面板（时间线、一键恢复、实时/定时切换）。纯 JS、零运行时依赖、自带 110 项测试。
 - [gx18391303625-afk/xander-zaozao-xiaban](https://github.com/gx18391303625-afk/xander-zaozao-xiaban) — Xander 早早下班亚马逊运营工具包：提供 33 个原生 xander_* 工具和 7 个技能，涵盖竞品、关键词、Listing、广告、补货与利润；亚马逊改动须准备精确提案、取得明确批准并回读核验。
+- [gychen-NJU/dsh-game-daily](https://github.com/gychen-NJU/dsh-game-daily) — 原神 / 崩坏3 / 崩坏：星穹铁道的日常自动化：每个游戏一个计划任务，分别驱动 BetterGI、game-daily 技能族或三月七助手；带逐游戏开关、前台守护、只在出问题时介入的运行期值守，以及每游戏固定一个汇报会话、后续结果追加进去。
 - [h2804131484-bit/dsh-douyinxiaoqi](https://github.com/h2804131484-bit/dsh-douyinxiaoqi) — 抖音运营插件：用本机真实 Chrome 看推荐、读评论、回私信，把本地视频传进创作者中心；写动作过权限闸，发布永远要你点头。
 - [hackmagic/dsh-unreal-agentlink](https://github.com/hackmagic/dsh-unreal-agentlink) — UnrealAgentLink 编辑器插件的桥接端：Unreal 编辑器拨入 127.0.0.1:17860 的 WebSocket 桥，agent 由此用 12 个工具驱动全部 170 个已编目命令（Actor、关卡、蓝图、材质、PCG、截图、日志、撤销）。
 - [hairyf/dsh-tool-activator](https://github.com/hairyf/dsh-tool-activator) — 默认只加载基础工具，其余工具按需激活，并在插件设置页以逐工具开关管理。
