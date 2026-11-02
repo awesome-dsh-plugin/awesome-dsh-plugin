@@ -1,0 +1,7 @@
+url: https://github.com/qiaozheng9/dsh-side-chat
+name: qiaozheng9/dsh-side-chat
+category: ui
+description:
+  en: 'Contextual /side conversations with independent models and permissions, goals, plan review, attachments, compaction and log export. Requires Windows DSH Desktop 0.2.1-rc.5; dsh-delete-session is required for confirmed permanent cleanup on close.'
+  zh: '在右侧开启带主对话上下文的独立 /side 对话，支持模型与权限选择、目标、计划审核、附件、压缩和日志导出。完整使用要求 Windows DSH Desktop 0.2.1-rc.5；关闭后的永久清理依赖 dsh-delete-session。'
+tarball: https://github.com/qiaozheng9/dsh-side-chat/releases/download/v0.1.11/dsh-side-chat-0.1.11.tgz
