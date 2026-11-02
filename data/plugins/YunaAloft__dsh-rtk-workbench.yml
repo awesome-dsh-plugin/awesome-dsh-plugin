@@ -1,0 +1,6 @@
+url: https://github.com/YunaAloft/dsh-rtk-workbench
+name: YunaAloft/dsh-rtk-workbench
+category: dev
+description:
+  en: 'Brings rtk (Rust Token Killer) to DeepSeek Harness: rewrites eligible shell commands to their rtk equivalents and compresses large tool output through the rtk hook protocol before it reaches the model, with a per-platform rtk binary bundled so nothing extra needs installing.'
+  zh: '把 rtk（Rust Token Killer）接入 DeepSeek Harness：把可改写的 shell 命令交给 rtk 等价命令执行，并在工具输出进入模型前通过 rtk 的 hook 协议压缩大结果；随包附带各平台 rtk 二进制，无需另行安装。'
