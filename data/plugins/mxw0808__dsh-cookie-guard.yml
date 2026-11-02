@@ -2,5 +2,5 @@ url: https://github.com/mxw0808/dsh-cookie-guard
 name: mxw0808/dsh-cookie-guard
 category: usage
 description:
-  en: "Windows-only. Counts the dsh-auth-* login cookies the DSH desktop shell accumulates, shows how much of the 16 KiB request-header budget they eat and roughly how many launches are left before the shell opens with \"Web authentication failed\". Two entry points: a plugin page with a check button, and a bare PowerShell/python checker under scripts/ that has no dependency on the app."
-  zh: "仅 Windows。数出 DSH 桌面外壳累积的 dsh-auth-* 登录 cookie 条数，显示它们吃掉 16 KiB 请求头预算的多少，以及还差几次启动就会打不开并报 \"Web authentication failed\"。两个入口：一个带检查按钮的插件页，以及 scripts/ 下不依赖应用的独立脚本。"
+  en: "Windows-only guard against the desktop shell locking itself out: it counts the dsh-auth-* launch cookies the shell has accumulated, reports how much of the 16 KiB request-header budget they consume and cleans them up once the count passes 40. Two things set it apart: the check runs as a weekly scheduled task while the app is closed, and enabling or disabling this plugin starts or stops that task, so the guard follows the plugin toggle exactly. It does not raise the header budget or keep a floating panel, and scripts/ can run the same check without the app installed."
+  zh: "仅 Windows，防止桌面外壳把自己锁死：数出已累积的 dsh-auth-* 启动 cookie，报出它们占掉 16 KiB 请求头预算的比例，超过 40 条就备份清理。两个差异点：检查以「每周计划任务」的形式在应用关闭时执行，而启用或停用这个插件就等于启动或停止那个任务，守卫完全跟随插件开关；不抬高请求头预算、也不挂常驻浮窗，另外 scripts/ 里的脚本不装应用也能单独跑。"
