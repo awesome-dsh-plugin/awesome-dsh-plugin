@@ -2,7 +2,7 @@ url: https://github.com/cloudatlasx/dsh-pet-plus/tree/main/dsh-pet
 name: cloudatlasx/dsh-pet-plus#dsh-pet
 category: ui
 description:
-  en: "A desktop pet living in DeepSeek Harness — 100+ transparent animations, multiple pets, draggable throw physics — plus schedule reminders that pop up on time and can be answered in place (agents push an announcement bubble with a checklist, and a 'reply in session' button jumps back to the conversation), approval/question bubbles on the pet itself (allow once, allow for this session, or reject), TTS with voice preview, sliders for every tuning value, and a configurable data directory."
-  zh: 住在 DSH 里的桌面宠物：100+ 段透明动画、可多开、可拖拽甩抛；到点提醒直接弹在宠物身上（agent 也能主动推一条带清单的播报气泡，点「去会话回复」就切回原会话继续聊），审批/提问也能在宠物上处理（允许一次 / 本会话都允许 / 拒绝），语音合成带试听、参数全是滑条、数据目录可配置。
+  en: "A desktop pet living in DeepSeek Harness — 100+ transparent animations, multiple pets, draggable throw physics — plus schedule reminders that pop up on time and can be answered in place (agents push an announcement bubble with a checklist, quick-action chips that send a one-line instruction straight back into the running session, and a reply box in the bubble), approval/question bubbles on the pet itself (allow once, allow for this session, or reject), TTS with voice preview, sliders for every tuning value, and a configurable data directory."
+  zh: 住在 DSH 里的桌面宠物：100+ 段透明动画、可多开、可拖拽甩抛；到点提醒直接弹在宠物身上（agent 也能主动推一条带清单的播报气泡，气泡上最多 3 个快捷按钮，点一下就把那句话投回那个会话接着干，也能在气泡里直接打字），审批/提问也能在宠物上处理（允许一次 / 本会话都允许 / 拒绝），语音合成带试听、参数全是滑条、数据目录可配置。
 icon: https://raw.githubusercontent.com/cloudatlasx/dsh-pet-plus/main/dsh-pet/assets/logo.png
-tarball: https://github.com/cloudatlasx/dsh-pet-plus/releases/download/v0.6.1/dsh-pet-plus-0.6.1.tgz
+tarball: https://github.com/cloudatlasx/dsh-pet-plus/releases/download/v0.7.0/dsh-pet-plus-0.7.0.tgz
