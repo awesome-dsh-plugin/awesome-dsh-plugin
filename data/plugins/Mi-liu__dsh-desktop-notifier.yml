@@ -1,7 +1,7 @@
 url: https://github.com/Mi-liu/dsh-desktop-notifier
 name: Mi-liu/dsh-desktop-notifier
 category: notify
-tarball: https://github.com/Mi-liu/dsh-desktop-notifier/releases/download/v1.3.0/dsh-desktop-notifier-1.3.0.tgz
+tarball: https://github.com/Mi-liu/dsh-desktop-notifier/releases/download/v1.4.0/dsh-desktop-notifier-1.4.0.tgz
 icon: https://raw.githubusercontent.com/Mi-liu/dsh-desktop-notifier/main/assets/icon.png
 description:
   en: 'Windows-only DeepSeek Harness host plugin that shows bottom-right desktop cards: a notification when a turn completes or fails, and a choice popup for ask_user_question where clicking an option answers it. Card colours follow the current Harness theme, and the notification sound plus the always-notify / only-when-unfocused timing are configurable in the Harness settings page.'
