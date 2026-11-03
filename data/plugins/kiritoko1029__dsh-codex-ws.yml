@@ -1,0 +1,6 @@
+url: https://github.com/kiritoko1029/dsh-codex-ws
+name: kiritoko1029/dsh-codex-ws
+category: model
+description:
+  en: 'Switch OpenAI models between Codex-style Responses WebSocket transport and SSE from the composer, with an optional priority-tier toggle.'
+  zh: '在输入框旁切换 OpenAI 模型的 Codex 风格 Responses WebSocket 与 SSE 传输，并可开启优先处理模式。'
