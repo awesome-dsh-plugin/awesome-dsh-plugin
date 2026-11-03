@@ -1,0 +1,7 @@
+url: https://github.com/fish9988/dsh-supermemory
+name: fish9988/dsh-supermemory
+category: memory
+description:
+  en: 'Cross-session long-term memory backed by Supermemory: pre-step semantic and chunk recall with per-session deduplication, debounced transcript upload, background LLM fact extraction (add/update/delete) with bigram and semantic deduplication, memory_search / memory_save / memory_forget tools, global or per-workspace container scoping, and a Plugins page UI for API key storage, memory CRUD, recall preview and activity log.'
+  zh: '基于 Supermemory 的跨会话长期记忆：在 pre-step 按需执行语义与历史对话片段召回（同会话去重、首轮附带静态画像），回合结束后防抖上传脱敏对话并由后台模型提炼增删改事实（字面二元组与向量语义双层查重），提供 memory_search、memory_save、memory_forget 三个工具，支持全局或按工作区分库，并内置插件设置页管理 API Key、增删改查记忆、预览召回结果与查看活动日志。'
+tarball: https://github.com/fish9988/dsh-supermemory/releases/download/v0.1.4/dsh-supermemory-0.1.4.tgz
