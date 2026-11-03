@@ -1,7 +1,0 @@
-url: https://github.com/__OWNER__/dsh-plugins/tree/main/plugins/dsh-auto-shutdown
-name: __OWNER__/dsh-plugins#dsh-auto-shutdown
-category: tools
-description:
-  en: 'Windows-only right-sidebar plugin that arms an auto-shutdown monitor for your AI desktop tools (ChatGPT, DeepSeek Harness, WorkBuddy, Cherry Studio, Qoder, WPS Lingxi, Cursor or a configurable process-name list). It decides whether a tool is still working from the CPU and IO of its whole process tree with debounce, shows a live 15-minute idle countdown that resets whenever any tool starts working again plus a recent-activity log, and once every tool has stayed idle it runs a cancellable 60-second countdown and actually shuts the machine down (shutdown by default; restart, sleep, hibernate or lock can be configured). Dry-run mode runs the same flow without executing anything, keyboard/mouse input cancels the countdown, and it waits until you have left the keyboard. Requires a local Python 3.10+; the Python backend ships inside the plugin.'
-  zh: '仅 Windows 的右侧栏插件：为你的 AI 桌面工具（ChatGPT、DeepSeek Harness、WorkBuddy、Cherry Studio、Qoder、WPS 灵犀、Cursor，或自己配置的进程名列表）启用自动关机监控。它按整棵进程树（含子进程）的 CPU 与 IO 带宽带去抖判断工具是否还在工作，显示 15 分钟动态空闲倒计时（任一工具重新开始工作就重置）和最近活动记录；全部工具连续安静后进入可取消的 60 秒关机倒计时并真的关机（默认关机，也可配置为重启 / 睡眠 / 休眠 / 锁屏）。演练模式走同一套流程但不执行任何动作，倒计时期间键鼠输入即可取消，且会等你离开键鼠后才执行。需要本机 Python 3.10+，Python 后端随插件分发。'
-icon: https://raw.githubusercontent.com/__OWNER__/dsh-plugins/main/plugins/dsh-auto-shutdown/icon-180.png
