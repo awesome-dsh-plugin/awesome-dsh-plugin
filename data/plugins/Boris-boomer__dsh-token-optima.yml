@@ -1,0 +1,6 @@
+url: https://github.com/Boris-boomer/dsh-token-optima
+name: Boris-boomer/dsh-token-optima
+category: usage
+description:
+  en: 'Models 64-token cache blocks and calculates per-turn API costs and cache ROI.'
+  zh: '建立 64 token 缓存块模型，计算每轮 API 花费及缓存投资回报率。'
