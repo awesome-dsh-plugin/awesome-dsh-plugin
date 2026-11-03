@@ -1,0 +1,6 @@
+url: https://github.com/gengwg/dsh-agent-router
+name: gengwg/dsh-agent-router
+category: model
+description:
+  en: 'Routes subagent delegations once at spawn time by keyword rules over the delegation label and prompt: the first matching rule sets the child''s provider/model/reasoningEffort, explicit caller routes are kept unless a rule opts in, and unmatched delegations pass through unchanged.'
+  zh: '在子代理启动时按关键词规则一次性选路：首个命中委托标签或提示词的规则设置子代理的 provider/model/reasoningEffort，调用方显式指定的路由默认保留，未命中的委托原样放行。'
