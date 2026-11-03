@@ -1,0 +1,6 @@
+url: https://github.com/LittleLemonJam/dsh-chat-background
+name: LittleLemonJam/dsh-chat-background
+category: theme
+description:
+  en: 'Chat wallpaper for the DSH desktop UI: paint one image from a local folder across the app, tune the left sidebar, main window and right sidebar scrims separately, rotate through a group with fade effects, and add a bar under the composer, a task progress bar and an all-session token total.'
+  zh: '聊天背景：把本地图片文件夹里的一张图铺满 DSH 桌面界面；左侧栏、主窗口、右侧栏遮罩可分别调节，支持背景轮换与分组、淡入淡出特效，并提供输入栏背景条、任务进度条与全会话 Token 总用量。'
