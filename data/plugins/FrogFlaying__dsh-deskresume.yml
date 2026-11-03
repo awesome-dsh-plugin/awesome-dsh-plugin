@@ -1,0 +1,6 @@
+url: https://github.com/FrogFlaying/dsh-deskresume
+name: FrogFlaying/dsh-deskresume
+category: tools
+description:
+  en: Deskresume for DeepSeek Harness. It registers 1 agent tool (deskresume).
+  zh: 重启或断电后，一键恢复关机前打开的程序、文件和文件夹。
