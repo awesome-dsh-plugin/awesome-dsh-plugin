@@ -1,0 +1,7 @@
+url: https://github.com/skadery/dsh-clarify-first
+name: skadery/dsh-clarify-first
+category: workflow
+tarball: https://github.com/skadery/dsh-clarify-first/releases/download/v0.2.0/dsh-clarify-first-0.2.0.tgz
+description:
+  en: "Asks the few key questions that decide the approach before work starts — one shot, about 200 tokens per session, no tool registration and no extra model call."
+  zh: "开工前用一次提问把关键选择问清（静态还是动态、Hexo 还是 Hugo），约 200 token/会话，不注册工具、不额外调模型；可在精简/标准/深入三档间切换。"

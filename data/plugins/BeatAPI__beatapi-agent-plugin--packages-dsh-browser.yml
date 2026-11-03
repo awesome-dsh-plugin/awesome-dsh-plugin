@@ -1,0 +1,6 @@
+url: https://github.com/BeatAPI/beatapi-agent-plugin/tree/main/packages/dsh-browser
+name: BeatAPI/beatapi-agent-plugin#dsh-browser
+category: browser
+description:
+  en: "Connects Harness to the published BeatBrowser runtime with namespaced MCP tools and a TaskSpace Skill; requires the Chrome extension and preserves manual takeover."
+  zh: "通过带命名空间的 MCP 工具和任务空间 Skill 接入已发布的 BeatBrowser；需要 Chrome 扩展，保留人工接管规则。"

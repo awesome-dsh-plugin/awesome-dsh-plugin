@@ -1,0 +1,6 @@
+url: https://github.com/weiw0923/dsh-composer-balance
+name: weiw0923/dsh-composer-balance
+category: usage
+description:
+  en: 'One chip in the composer dock: the account balance plus what the current chat has cost, priced per turn at the tariff in force when each turn ran. Clicking it opens a 264px card in the panel style of the host, with refresh and settings buttons.'
+  zh: '输入框下方一枚芯片：显示账户余额与当前对话花费，花费按每轮发生时刻的峰谷档位逐段计价。点击展开 264px 卡片，沿用宿主自带面板的样式，带刷新与设置两个按钮。'

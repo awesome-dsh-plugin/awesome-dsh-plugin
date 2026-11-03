@@ -1,0 +1,8 @@
+# 提交到 https://github.com/awesome-dsh-plugin/awesome-dsh-plugin 的条目
+# 放到该仓库的 data/plugins/<owner>__<repo>.yml，把 owner/repo 换成你的 GitHub 账号
+url: https://github.com/MinEagle/dsh-dingtalk-self
+name: MinEagle/dsh-dingtalk-self
+category: notify
+description:
+  en: Replies to DingTalk direct messages as your own account — reads the bound DSH workspace, writes the answer, and sends it back through the dws CLI.
+  zh: 以你本人钉钉身份自动回复私聊：在绑定的 DSH 工作区里查资料生成回答，通过 dws CLI 以本人身份发出。

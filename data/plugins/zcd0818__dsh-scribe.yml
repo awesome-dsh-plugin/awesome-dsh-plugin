@@ -1,0 +1,7 @@
+url: https://github.com/zcd0818/dsh-scribe
+name: zcd0818/dsh-scribe
+category: memory
+icon: https://raw.githubusercontent.com/zcd0818/dsh-scribe/main/assets/icon-180.png
+description:
+  en: 'Cross-session memory and a per-workspace knowledge base in one plugin. Memories are plain JSONL under ~/.dsh/memory by default; each session starts with the relevant ones already in the system prompt and writes one back when it ends. A read-only kb/ folder per workspace plus one global folder is searched with results cited down to file lines. Eleven tools under a scribe_ prefix (seven scribe_memory_*, four scribe_kb_*), a /scribe slash command, and a settings page with overview, memory, knowledge base and migration tabs. Cloud backends (Bailian memory library, ChromaDB, cloud-primary with local mirror) are opt-in; moving data between them requires an explicit approval and is logged so it can be rolled back.'
+  zh: '跨会话记忆与工作区知识库合一。记忆默认是 ~/.dsh/memory 下的纯 JSONL，会话开始把相关记忆放进系统提示，会话结束回写一条；每个工作区的 kb/ 目录加一份全局目录构成只读知识库，检索结果能引用到文件行号。十一个工具统一带 scribe_ 前缀（七个 scribe_memory_*、四个 scribe_kb_*），一个 /scribe 斜杠命令，以及概览 / 记忆 / 知识库 / 迁移四页的设置页。云端后端（百炼记忆库、ChromaDB、云端主 + 本地镜像）按需启用；迁移数据必须经显式审批，并留有可回滚的日志。'

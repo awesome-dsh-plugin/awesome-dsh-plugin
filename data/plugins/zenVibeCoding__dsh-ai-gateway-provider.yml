@@ -1,7 +1,10 @@
+# 提交到 awesome-dsh-plugin 的条目。
+# 目标路径：awesome-dsh-plugin/data/plugins/zenVibeCoding__dsh-ai-gateway-provider.yml
+# 文件名必须是 <owner>__<repo>.yml；README 由脚本生成，不要手改。
 url: https://github.com/zenVibeCoding/dsh-ai-gateway-provider
 name: zenVibeCoding/dsh-ai-gateway-provider
 category: model
 description:
-  en: 'Connect OpenAI-compatible gateways with per-gateway model lists, reasoning controls, model tests and optional quota reporting. GPT speed tiers support per-conversation choices and custom service_tier mappings.'
-  zh: '接入 OpenAI 兼容网关，逐网关管理模型清单、推理等级和模型测试，支持部分网关的额度查询。GPT 速度档位支持会话内切换及自定义 service_tier 参数映射。'
+  en: 'Connect several OpenAI-compatible gateways at once: each one is its own group in the model picker, can be hidden without losing its settings, and can fetch its own public info from its address, alongside per-gateway model management, model tests and optional quota reporting.'
+  zh: '同时接入多台 OpenAI 兼容网关：每台在模型选择器里各成一组、可单独隐藏且配置保留、按地址即可获取自身公开信息，并逐网关管理模型、跑模型测试、按需显示额度。'
 icon: https://raw.githubusercontent.com/zenVibeCoding/dsh-ai-gateway-provider/master/assets/icon-180.png

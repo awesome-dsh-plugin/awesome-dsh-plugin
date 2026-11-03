@@ -1,0 +1,6 @@
+url: https://github.com/R-roker315/dsh-flowforge
+name: R-roker315/dsh-flowforge
+category: workflow
+description:
+  en: DIY workflow builder for DSH - compose multi-step prompt workflows with self-check gating, engine-enforced jump rules, agent-driven execution and a live run panel.
+  zh: 流程锻造——在侧边面板编排多步骤提示词工作流，支持自检门禁、引擎执行的跳转规则、主对话 AI 逐步执行与实时运行面板。
