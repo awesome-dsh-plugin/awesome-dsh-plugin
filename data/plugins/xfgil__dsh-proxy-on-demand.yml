@@ -2,5 +2,5 @@ url: https://github.com/xfgil/dsh-proxy-on-demand
 name: xfgil/dsh-proxy-on-demand
 category: tools
 description:
-  en: 'Start a local mihomo proxy core on demand and shut it down when idle — no always-on port, no leftover process, no change to the Windows system proxy. Routes through an existing proxy when one is already running.'
-  zh: '按需拉起 mihomo 内核，空闲后自动关闭：不常占端口、不留后台进程、不改 Windows 系统代理设置。已有代理在跑时直接借道它的出口。'
+  en: 'Start a local mihomo proxy core on demand and shut it down when idle — no always-on port, no leftover process, no change to the Windows system proxy. Routes through an existing proxy when one is already running. Needs a Clash/mihomo config (subscription, imported FlClash config, or pasted in); the first run downloads the ~61 MB mihomo core into the plugin folder.'
+  zh: '按需拉起 mihomo 内核，空闲后自动关闭：不常占端口、不留后台进程、不改 Windows 系统代理设置。已有代理在跑时直接借道它的出口。需要自备 Clash/mihomo 配置（订阅、导入 FlClash 配置或手动粘贴）；首次运行会自动下载约 61 MB 的 mihomo 内核到插件目录。'

@@ -1,7 +1,7 @@
 url: https://github.com/devzer0o0/dsh-grok-buddy
 name: devzer0o0/dsh-grok-buddy
 category: ui
-tarball: https://github.com/devzer0o0/dsh-grok-buddy/releases/latest/download/dsh-grok-buddy.tgz
+tarball: https://github.com/devzer0o0/dsh-grok-buddy/releases/download/v0.1.1/dsh-grok-buddy-0.1.1.tgz
 icon: https://raw.githubusercontent.com/devzer0o0/dsh-grok-buddy/main/assets/icon-180.png
 description:
   en: "Replaces the colored status dot in each DSH sidebar session row with the Grok Bot avatar, whose own expressions show the session's state: idle, thinking, streaming, running tools, waiting for your approval, retrying after an error, failed, or finished."

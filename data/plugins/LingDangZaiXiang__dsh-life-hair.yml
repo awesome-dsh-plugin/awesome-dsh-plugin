@@ -2,5 +2,5 @@ url: https://github.com/LingDangZaiXiang/dsh-life-hair
 name: LingDangZaiXiang/dsh-life-hair
 category: memory
 description:
-  en: Copies the compaction checkpoint into the sticky-notes archive when context is compacted, merges old archives monthly, and wakes the session to write what was lost.
-  zh: 上下文压缩时把 checkpoint 原文抄进便签归档，按月合并旧记录，并叫醒会话补写丢掉的内容。
+  en: 'Copies the compaction checkpoint into the sticky-notes archive when context is compacted and wakes the session to write what was lost.'
+  zh: '上下文压缩时把 checkpoint 原文抄进便签归档，并叫醒会话补写丢掉的内容。'

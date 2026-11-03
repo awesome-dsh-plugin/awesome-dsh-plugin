@@ -2,7 +2,7 @@ url: https://github.com/mwk719/dsh-restart
 name: mwk719/dsh-restart
 category: dev
 description:
-  en: 'Adds a Restart button to the Windows titlebar of the desktop app: a click opens a confirmation dialog that names the sessions a restart would interrupt, and confirming quits and reopens the app.'
+  en: 'Adds a Restart button to the Windows titlebar of the desktop app: a click opens a confirmation dialog that says how many sessions a restart would interrupt, and confirming quits and reopens the app.'
   zh: '给桌面端 Windows 标题栏加一个「重启」按钮：点一下先弹出确认框（并说明有几个会话会被中断），确认后退出并重新打开应用。'
 icon: https://raw.githubusercontent.com/mwk719/dsh-restart/main/icon.png
 tarball: https://github.com/mwk719/dsh-restart/releases/latest/download/dsh-restart.tgz

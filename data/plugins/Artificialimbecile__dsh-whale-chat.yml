@@ -2,7 +2,7 @@ url: https://github.com/Artificialimbecile/dsh-whale-chat
 name: Artificialimbecile/dsh-whale-chat
 category: fun
 description:
-  en: A talking whale desktop pet for the DSH web UI — persona-driven chat with persistent memory, plus scheduled autonomous web browsing that brings back a summarized message telling you what she found.
-  zh: DSH Web 界面右下角的会说话的鲸鱼桌宠：可配置人设与持久对话记忆，还会按间隔自己随机上网，把见闻总结成消息带回来告诉你。
+  en: 'A talking whale desktop pet for the DSH web UI — persona-driven chat with persistent memory, plus scheduled autonomous web browsing that brings back a summarized message telling you what she found. Based on PC2005-cloud/dsh-pet (its art and animations are reused under the upstream non-commercial terms); install it instead of dsh-pet, not alongside it.'
+  zh: 'DSH Web 界面右下角的会说话的鲸鱼桌宠：可配置人设与持久对话记忆，还会按间隔自己随机上网，把见闻总结成消息带回来告诉你。基于 PC2005-cloud/dsh-pet 的二次创作（沿用其形象与动画素材，素材不可商用），请替代 dsh-pet 安装，不要与上游同装。'
 icon: https://raw.githubusercontent.com/Artificialimbecile/dsh-whale-chat/main/icon.png
 tarball: https://github.com/Artificialimbecile/dsh-whale-chat/releases/latest/download/dsh-whale-chat.tgz

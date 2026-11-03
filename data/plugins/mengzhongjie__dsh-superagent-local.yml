@@ -3,5 +3,5 @@ name: mengzhongjie/dsh-superagent-local
 category: workflow
 tarball: https://github.com/mengzhongjie/dsh-superagent-local/releases/download/v0.2.1/dsh-superagent-0.2.1.tgz
 description:
-  en: "Fork of dsh-superagent for local use: each sidebar workspace gets a main session that turns a request into a ticket and has a worker session do the work inside that workspace's directory."
-  zh: dsh-superagent 的本地版：每个侧栏工作区各有一个主会话，把需求转成工单，并由 Worker 会话在该工作区目录内执行。
+  en: "Fork of dsh-superagent for local use: each sidebar workspace gets a main session that turns a request into a ticket and has a worker session do the work inside that workspace's directory. Cannot be installed alongside upstream dsh-superagent: both use the package name dsh-superagent and mount the same plugin ids."
+  zh: 'dsh-superagent 的本地版：每个侧栏工作区各有一个主会话，把需求转成工单，并由 Worker 会话在该工作区目录内执行。不能与上游 dsh-superagent 同时安装：两者包名同为 dsh-superagent，挂载的插件 id 也相同。'

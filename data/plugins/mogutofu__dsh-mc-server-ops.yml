@@ -2,5 +2,5 @@ url: https://github.com/mogutofu/dsh-mc-server-ops
 name: mogutofu/dsh-mc-server-ops
 category: dev
 description:
-  en: 'Minecraft server ops via RCON with static command blocking, pluggable local/Pterodactyl adapters, configurable community voting, and multi-layer process detection for Paper, Forge, Fabric, and vanilla servers.'
-  zh: '通过 RCON 进行 Minecraft 服务器运维，支持静态命令拦截、本地/Pterodactyl 可插拔适配器、可配置的群友投票，以及对 Paper、Forge、Fabric 和原版服务器的多层进程探测。'
+  en: 'Minecraft server ops via RCON with static command blocking, pluggable local/Pterodactyl adapters, configurable community voting, and multi-layer process detection for Paper, Forge, Fabric, and vanilla servers. The QQ group surface requires the @tencent-connect/dsh-qqbot plugin first; the local adapter runs through PowerShell 5.1 on Windows.'
+  zh: '通过 RCON 进行 Minecraft 服务器运维，支持静态命令拦截、本地/Pterodactyl 可插拔适配器、可配置的群友投票，以及对 Paper、Forge、Fabric 和原版服务器的多层进程探测。QQ 群入口需先安装 @tencent-connect/dsh-qqbot 插件；local 适配器在 Windows 上依赖 PowerShell 5.1。'

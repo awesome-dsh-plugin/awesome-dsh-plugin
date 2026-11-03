@@ -2,5 +2,5 @@ url: https://github.com/xfgil/dsh-link-parse
 name: xfgil/dsh-link-parse
 category: tools
 description:
-  en: 'Resolve a shared URL (Bilibili, Douyin, WeChat, Zhihu, GitHub, any page) into title, author, body text, cover and direct video links — with an optional download step for sending the media back through chat. A link-to-content resolver for DeepSeek Harness.'
-  zh: '把聊天里的分享链接（B站、抖音、微信、知乎、GitHub、通用网页）解析成标题、作者、正文、封面与视频直链，并可下载到本地媒体目录后发回聊天。'
+  en: 'Resolve a shared URL into title, author, body text, cover and direct video links: Bilibili, Douyin, Xiaoheihe and GitHub are parsed structurally, while WeChat, Zhihu and other pages fall back to an OpenGraph summary (title, description, cover). Includes an optional download step for sending the media back through chat.'
+  zh: '把聊天里的分享链接解析成标题、作者、正文、封面与视频直链：B站、抖音、小黑盒、GitHub 走结构化解析，微信、知乎等其它页面退回 OpenGraph 摘要（标题、简介、封面）；可把媒体下载到本地后发回聊天。'

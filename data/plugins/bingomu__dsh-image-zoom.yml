@@ -1,4 +1,4 @@
-tarball: https://github.com/bingomu/dsh-image-zoom/releases/latest/download/dsh-image-zoom-1.0.1.tgz
+tarball: https://github.com/bingomu/dsh-image-zoom/releases/download/v1.0.1/dsh-image-zoom-1.0.1.tgz
 url: https://github.com/bingomu/dsh-image-zoom
 name: bingomu/dsh-image-zoom
 category: ui

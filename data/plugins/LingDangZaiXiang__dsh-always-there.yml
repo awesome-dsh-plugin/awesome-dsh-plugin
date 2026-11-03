@@ -2,5 +2,5 @@ url: https://github.com/LingDangZaiXiang/dsh-always-there
 name: LingDangZaiXiang/dsh-always-there
 category: session
 description:
-  en: Two triggers (a heartbeat and a log marker) that wake a session and let the agent decide whether to say anything; silence is a reply.
-  zh: 心跳与日志标记两种触发只负责叫醒会话，说不说由 agent 自己决定；沉默也是一种回答。
+  en: 'Two triggers (a heartbeat and a log marker) that wake a session and let the agent decide whether to say anything; silence is a reply. Off by default: set sessionId (the target session) and enable it in the profile config, and if replies are forwarded to a chat app the send layer must drop the SILENT marker.'
+  zh: '心跳与日志标记两种触发只负责叫醒会话，说不说由 agent 自己决定；沉默也是一种回答。默认关闭：需在 profile 里填 sessionId 并启用；若把回复转发到聊天软件，发送层需拦掉 SILENT 标记。'
