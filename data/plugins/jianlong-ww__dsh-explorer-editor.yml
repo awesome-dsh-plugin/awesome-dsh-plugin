@@ -1,0 +1,6 @@
+url: https://github.com/jianlong-ww/dsh-explorer-editor
+name: jianlong-ww/dsh-explorer-editor
+category: ui
+description:
+  en: Edits workspace text files in place inside the DSH file preview, with Monaco highlighting and project-typed completion.
+  zh: 在 DSH 的文件预览面板内直接编辑工作区文本文件，基于 Monaco 提供语法高亮与工程类型补全。
