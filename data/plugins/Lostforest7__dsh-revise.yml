@@ -1,0 +1,7 @@
+url: https://github.com/Lostforest7/dsh-revise
+name: Lostforest7/dsh-revise
+category: ui
+description:
+  en: 'Visual frontend revision workbench: point at a real page element, describe the change, send it into the current DSH session, then review fixed-viewport before/after screenshots (1280x800 and 390x844) beside a captured source diff, accepting each revision item by item. Revision records are kept per session under .dsh-revise/ and export as a single portable HTML report.'
+  zh: 可视化前端改稿台：点选真实页面元素、描述改动并送入当前 DSH 会话，再把固定视口的改动前后截图（1280x800 与 390x844）与抓取的源码 diff 并排复核，逐条验收。改稿记录按会话存放在项目的 .dsh-revise/ 目录，可导出为单文件 HTML 报告。
+tarball: https://github.com/Lostforest7/dsh-revise/releases/download/v0.1.0-pre/dsh-revise-0.1.0.tgz

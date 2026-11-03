@@ -1,0 +1,6 @@
+url: https://github.com/devacc8/dsh-billing-badge
+name: devacc8/dsh-billing-badge
+category: usage
+description:
+  en: Peak and off-peak billing season in the composer statistics row, right after the cache-hit reading, with a coloured dot, a countdown to the next switch, and a panel that shows the account balance split into total, granted and topped up in the currency the API reports.
+  zh: 在输入框统计行里、缓存命中读数之后显示高峰/非高峰计费时段：状态圆点与切换倒计时，点击展开面板显示按接口返回货币表示的余额，并拆分为总额、赠送与充值。

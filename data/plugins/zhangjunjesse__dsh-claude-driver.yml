@@ -1,0 +1,6 @@
+url: https://github.com/zhangjunjesse/dsh-claude-driver
+name: zhangjunjesse/dsh-claude-driver
+category: model
+description:
+  en: 'Run the main session model on a local Claude Code subscription through the official Claude Agent SDK, taking over the llm/stream route for the claude-code provider, with token-level streaming, session resume, and DSH tools bridged in over MCP so they keep DSH sandbox and approval.'
+  zh: '让会话主模型跑在本机 Claude Code 订阅上：经官方 Claude Agent SDK 接管 claude-code provider 的 llm/stream 路由，支持 token 级流式、会话 resume 续接，并把 DSH 工具经 MCP 桥接进去以保留 DSH 的沙箱与审批。'

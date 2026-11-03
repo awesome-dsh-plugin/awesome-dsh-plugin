@@ -1,0 +1,6 @@
+url: https://github.com/Mrsirlila/dsh-pocket-reportModify-and-add/tree/main/plugin
+name: Mrsirlila/dsh-pocket-reportModify-and-add#plugin
+category: remote
+description:
+  en: 'Patched build of dsh-pocket for DeepSeek Harness: a password-protected entry has its access password embedded in the QR code so the phone signs in with one scan, and a read-only /dsh-pocket/entry.json endpoint lets the phone app re-sync the current public URL and password while still on the LAN.'
+  zh: 'dsh-pocket 的修改版：加密入口会把访问密码一并写进二维码，手机扫一次即可登录；并新增只读接口 /dsh-pocket/entry.json，手机 App 在局域网时就能同步当前的公网地址和密码。'

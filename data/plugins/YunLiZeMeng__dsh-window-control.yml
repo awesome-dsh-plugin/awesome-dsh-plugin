@@ -1,0 +1,6 @@
+url: https://github.com/YunLiZeMeng/dsh-window-control
+name: YunLiZeMeng/dsh-window-control
+category: ui
+description:
+ en: 'Tired of going fullscreen by hand every time you open Harness? This plugin fills the screen for you - auto-maximize (keeps the window buttons) or true fullscreen on launch, then maximize / restore / minimize / always-on-top anytime. It quits only after a native confirmation dialog - Esc, double Esc, or Ctrl+Q; in fullscreen, Esc leaves fullscreen first. The window channel installs itself, so no script or Python is needed; the first install takes effect after two DSH restarts.'
+ zh: '如果你嫌每次打开 Harness 都要手动全屏，这个插件可以帮你自动铺满：启动时自动最大化（保留右上角窗口按钮）或真全屏；随时可最大化／还原／最小化／窗口置顶；退出前弹原生确认框，快捷键可选 Esc、双击 Esc 或 Ctrl+Q，且全屏下 Esc 先退出全屏。窗口通道由插件自己安装，无需脚本或 Python，首次安装需重启两次 DSH 生效。'

@@ -1,0 +1,6 @@
+url: https://github.com/hzys7/dsh-prompt-expander
+name: hzys7/dsh-prompt-expander
+category: ui
+description:
+  en: Adds a sparkle button beside the model picker that rewrites the current draft into a spec sized to the draft — two or three steps for a small ask, a longer checklist only when the request has several parts — and puts the original text back when pressed again. Greetings and small talk pass through untouched without calling the model.
+  zh: 在模型选择器旁加一个 ✨ 按钮，把草稿改写成规模随草稿而变的执行规格（小请求只给两三条步骤，多部分请求才展开成清单），再按一次按钮恢复原文；问候与闲聊直接放行，不调用模型。

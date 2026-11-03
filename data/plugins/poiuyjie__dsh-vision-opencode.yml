@@ -1,0 +1,6 @@
+url: https://github.com/poiuyjie/dsh-vision-opencode
+name: poiuyjie/dsh-vision-opencode
+category: vision
+description:
+  en: "Adds a configurable vision model to text-only main models: a vision_read_image tool, a composer-bar vision-model selector, and automatic image-to-text conversion for text-only routes."
+  zh: "给纯文本主模型加可配置识图模型：vision_read_image 工具、输入框识图模型选择器，以及纯文本路由的图片自动转文字。"

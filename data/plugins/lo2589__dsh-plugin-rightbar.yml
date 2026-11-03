@@ -1,0 +1,6 @@
+url: https://github.com/lo2589/dsh-plugin-rightbar
+name: lo2589/dsh-plugin-rightbar
+category: ui
+description:
+  en: A shared right sidebar for the DSH web client — other plugins register tabs into the `rightbar.tab` slot instead of each pinning a `position:fixed` panel; ships a `rightbar-tab` skill for agents and an opt-in mode that moves legacy fixed panels aside.
+  zh: DSH 网页端的共享右栏——别的插件往 `rightbar.tab` 槽位注册标签页，不必各自 `position:fixed` 抢位置；随包附带给 agent 用的 `rightbar-tab` skill，另有一个默认关闭的让位模式把老面板挪开。

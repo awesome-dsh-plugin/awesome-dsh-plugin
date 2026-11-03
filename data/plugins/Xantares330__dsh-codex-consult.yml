@@ -1,0 +1,6 @@
+url: https://github.com/Xantares330/dsh-codex-consult
+name: Xantares330/dsh-codex-consult
+category: tools
+description:
+  en: 'Requires the Codex CLI installed and `codex login` completed. Consult the OpenAI Codex CLI from DeepSeek Harness with three tools: codex_consult runs Codex in a read-only sandbox, inlines evidence files, verifies the served model and reasoning effort from the Codex rollout file, retries disconnected streams, and records quota before and after the call; codex_quota reports the current 5-hour and weekly quota; codex_calls lists recent calls.'
+  zh: '需先安装 Codex CLI 并完成 `codex login`。为 DeepSeek Harness 增加三个按需咨询 OpenAI Codex CLI 的工具：codex_consult 在只读沙箱中运行 Codex、自动内联证据文件、从 Codex rollout 记录校验实际模型与推理档位、断流自动重试，并记录调用前后的额度；codex_quota 查询当前 5 小时与每周额度；codex_calls 列出最近调用。'

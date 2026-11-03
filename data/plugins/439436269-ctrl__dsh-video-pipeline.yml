@@ -1,0 +1,6 @@
+url: https://github.com/439436269-ctrl/dsh-video-pipeline
+name: 439436269-ctrl/dsh-video-pipeline
+category: skill
+description:
+  en: 'Bundles 19 short-video production skills (1 entry point, 1 orchestration, 17 atomic) into the agent skill catalog: Chinese TTS pronunciation fixes, text-to-image and text-to-video, image panning, composition, covers, media verification, data review and four-platform publishing. Ships skills and scripts only, so a runnable pipeline still needs ffmpeg, Python 3 + Pillow, Node.js and playwright installed locally, your own Bilibili biliup credential and WeChat Channels / Douyin / Xiaohongshu login states, and the placeholder values under skills/*/scripts/ filled in with your own. An installer''s own skill of the same name keeps precedence.'
+  zh: '把一条短视频生产流水线的 19 个 skill（1 总入口 + 1 编排 + 17 原子）内置进 agent 技能目录：中文配音读音校正、文生图与文生视频、图片运镜、成片合成、封面、成片核验、数据复盘、四平台发布。本包只提供 skill 与脚本，不安装任何工具：要真跑通流水线，还得本机装好 ffmpeg、Python 3 + Pillow、Node.js 与 playwright，自备 B 站 biliup 凭据和视频号 / 抖音 / 小红书登录态，并把 skills/*/scripts/ 里的占位符改成自己的值。使用者自己的同名 skill 优先级更高。'

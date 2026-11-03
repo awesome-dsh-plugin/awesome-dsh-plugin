@@ -1,0 +1,6 @@
+url: https://github.com/wjf1/dsh-commandcode
+name: wjf1/dsh-commandcode
+category: model
+description:
+  en: 'Command Code LLM provider for DSH Desktop: registers the commandcode route with a live model catalog, configurable request and stream-idle timeouts, multi-account rotation on 429/401, plan-aware model filtering, an OAuth login flow and a bilingual usage and billing panel.'
+  zh: '把 Command Code 接入 DSH Desktop 的模型提供商插件：注册 commandcode 路由，带实时模型目录、可配置的请求与流式空闲超时、429/401 自动多账户轮换、按套餐过滤模型、OAuth 登录流程，以及中英双语的用量与计费面板。'

@@ -1,0 +1,6 @@
+url: https://github.com/mllun/dsh-memory-layers
+name: mllun/dsh-memory-layers
+category: memory
+description:
+  en: 'Layered long-term memory for DeepSeek Harness: a ~600-character hot layer that evicts its own overflow, month-archived cold entries recalled by keyword and ranked by usage, and extractive day/week/month summaries.'
+  zh: '给 DeepSeek Harness 的分层长期记忆：热层约 600 字、超限自动腾挪，冷层按月归档、可按关键词跨月召回并按使用度排序，日/周/月三级抽取式摘要控制注入体量。'

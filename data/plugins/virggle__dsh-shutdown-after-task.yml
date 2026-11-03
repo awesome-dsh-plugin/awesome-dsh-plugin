@@ -1,0 +1,6 @@
+url: https://github.com/virggle/dsh-shutdown-after-task
+name: virggle/dsh-shutdown-after-task
+category: workflow
+description:
+  en: Shut down Windows automatically after DeepSeek Harness tasks complete — a floating arm button plus a cancellable countdown banner (shutdown /a), zero runtime dependencies.
+  zh: 任务完成后自动关机：右下角按钮开启模式，任务成功完成后进入可取消的倒计时（取消走 shutdown /a），零运行时依赖。

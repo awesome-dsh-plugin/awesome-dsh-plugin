@@ -1,0 +1,7 @@
+url: https://github.com/kissfirembx/dsh-skill-map
+name: kissfirembx/dsh-skill-map
+category: skill
+tarball: https://github.com/kissfirembx/dsh-skill-map/releases/latest/download/kissfire-dsh-skill-map.tgz
+description:
+  en: 'Sorts every loaded skill into one or more user-owned workspaces in a right-sidebar tab: each workspace is its own category list plus where every skill sits, categories are created, renamed, reordered and deleted in place, and skills are dragged or picked between them. A first run can let the profile model build the first classification, or place skills into categories the user built first; clicking a row copies its /skill-name and hovering unfolds the description the skill ships.'
+  zh: '在右侧栏用一个或多个「工作区」给已加载的 skill 分类：每个工作区有自己的分类表和每个 skill 的归属，分类可就地新建、改名、排序、删除，skill 可拖动或用选择器改归位；首次使用可以让这个 profile 的模型从零分一版，也可以先自己建分类再让模型按分类分配。点击行复制 /skill-name，悬停展开 skill 自带的描述。'

@@ -1,0 +1,7 @@
+url: https://github.com/Jxxxxx729/dsh-win-notify
+name: Jxxxxx729/dsh-win-notify
+category: notify
+description:
+  en: 'Windows toast notifications for approval requests, questions, completed or failed runs, and sign-in prompts; clicking a notification reopens the conversation that raised it, and toasts are attributed to the DeepSeek Harness app identity.'
+  zh: '等待授权、等待选择、对话完成或出错、需要登录时在 Windows 通知栏弹出提醒；点击通知直接跳回发出它的对话，通知以 DeepSeek Harness 应用身份显示。'
+tarball: https://github.com/Jxxxxx729/dsh-win-notify/releases/latest/download/dsh-win-notify.tgz

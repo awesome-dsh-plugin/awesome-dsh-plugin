@@ -1,0 +1,6 @@
+url: https://github.com/Jiyr0119/dsh-service-console
+name: Jiyr0119/dsh-service-console
+category: dev
+description:
+  en: 'Local development service console for DSH: lists every listening service on the machine and lets users inspect, safely stop, or restart services that were started during development.'
+  zh: 'DSH 本地开发服务控制台：列出本机所有监听服务，并让用户查看、以安全方式停止或重启开发过程中启动的服务。'

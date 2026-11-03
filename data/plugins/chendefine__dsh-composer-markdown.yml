@@ -1,0 +1,6 @@
+url: https://github.com/chendefine/dsh-composer-markdown
+name: chendefine/dsh-composer-markdown
+category: ui
+description:
+  en: 'Markdown editing aids for the DSH web composer: ordered and unordered list continuation with continuous renumbering, Tab-nested list levels, inline-code styling, and code-fence auto-closing, with the sent draft kept as literal Markdown.'
+  zh: 'DSH Web 输入框的 Markdown 编辑增强：有序与无序列表续行且组内序号恒连续、Tab 层级缩进、行内代码样式、代码块围栏自动闭合；发送的草稿保持字面 Markdown。'

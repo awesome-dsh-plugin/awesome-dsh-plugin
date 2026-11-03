@@ -1,0 +1,6 @@
+url: https://github.com/LAwLi3tCoding/dsh-approval-review
+name: LAwLi3tCoding/dsh-approval-review
+category: security
+description:
+  en: 'Adds an "approve for me" access mode whose approval requests are answered by an independent reviewer model instead of a person: the reviewer can read the workspace read-only, a reviewer that cannot run hands the request back to the human, and every decision is recorded with its rationale in an Approvals tab.'
+  zh: '新增「替我审批」访问模式：审批请求由独立的复核模型裁决而非人工，复核者可只读工作区，复核跑不起来时把请求交回人工，每次裁决的理由记录在「审批」页签中。'

@@ -1,0 +1,6 @@
+url: https://github.com/chumingjun/dsh-harness-one/tree/main/dsh-plugins/dsh-ccpg-one
+name: chumingjun/dsh-harness-one#dsh-ccpg-one
+category: workflow
+description:
+  en: Visual multi-agent DAG workflows for DeepSeek Harness with live execution, restart recovery, and Feishu integration.
+  zh: 面向 DeepSeek Harness 的可视化多智能体 DAG 工作流，支持实时执行、重启恢复和飞书集成。

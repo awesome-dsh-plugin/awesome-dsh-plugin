@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-talk
+name: PerryLink/dsh-talk
+category: voice
+description:
+  en: Voice I/O for DeepSeek Harness — speech-to-text and text-to-speech over the microphone and audio output.
+  zh: DeepSeek Harness 的语音输入输出：麦克风语音转文字与文字转语音。

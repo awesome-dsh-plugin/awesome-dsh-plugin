@@ -1,0 +1,6 @@
+url: https://github.com/02Muller25/dsh-api-balance
+name: 02Muller25/dsh-api-balance
+category: usage
+description:
+  en: Real-time DeepSeek API account balance in the composer dock with manual or custom-interval auto-refresh.
+  zh: 输入框下方实时显示 DeepSeek API 账户余额，支持手动刷新与自定义间隔自动刷新。

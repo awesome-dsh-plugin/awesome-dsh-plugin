@@ -1,0 +1,6 @@
+url: https://github.com/JMOKSZ/dsh-lark-bridge
+name: JMOKSZ/dsh-lark-bridge
+category: notify
+description:
+  en: 'Feishu (Lark) bridge for DeepSeek Harness: one-command install, streaming progress cards with a tool panel, ask/approval button cards, attachments, and proactive feishu_send pushes.'
+  zh: '飞书入口插件：一条命令安装，流式进度卡片带工具面板、提问/审批按钮卡片、附件处理与 feishu_send 主动推送。'

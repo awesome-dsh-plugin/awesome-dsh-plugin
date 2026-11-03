@@ -1,0 +1,6 @@
+url: https://github.com/dsh-plugin-lab/dsh-workbuddy-bridge
+name: dsh-plugin-lab/dsh-workbuddy-bridge
+category: model
+description:
+  en: 'Brings WorkBuddy desktop-app models into DeepSeek Harness: the China and international builds each appear as their own group in the model picker, with the reasoning tiers the upstream declares, per-reply credit cost and remaining balance, per-account model visibility, and image input where supported.'
+  zh: '把 WorkBuddy 桌面 App 的模型接进 DSH 模型选择器：国内版与国际版各自成组，带上游声明的推理档位、每条回复的积分消耗与剩余积分、按账号分别保存的模型显隐，以及在支持的模型上的图片输入。'

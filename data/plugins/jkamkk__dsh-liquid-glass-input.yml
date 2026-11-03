@@ -1,0 +1,6 @@
+url: https://github.com/jkamkk/dsh-liquid-glass-input
+name: jkamkk/dsh-liquid-glass-input
+category: ui
+description:
+  en: 'Liquid Glass refraction input card for the DSH web GUI, with coupled-spring press animation. Published on npm: dsh plugin --profile web add dsh-liquid-glass-input.'
+  zh: '给 DSH Web GUI 输入卡加上液态玻璃折射效果与弹簧按压动画。已发布 npm：dsh plugin --profile web add dsh-liquid-glass-input。'

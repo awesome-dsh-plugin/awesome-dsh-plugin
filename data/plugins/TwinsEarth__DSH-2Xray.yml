@@ -1,0 +1,6 @@
+url: https://github.com/TwinsEarth/DSH-2Xray
+name: TwinsEarth/DSH-2Xray
+category: dev
+description:
+  en: Xray-core supervisor and router for DSH with VLESS import, global/China-direct/whitelist routing, a three-card live panel, and self-update.
+  zh: 为 DSH 提供 Xray 受管内核与分流：VLESS 导入、全局/国内直连/白名单路由、三卡片实时面板与自更新。

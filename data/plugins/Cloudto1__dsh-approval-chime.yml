@@ -1,0 +1,6 @@
+url: https://github.com/Cloudto1/dsh-approval-chime
+name: Cloudto1/dsh-approval-chime
+category: notify
+description:
+  en: 'Plays a chime when DeepSeek Harness asks for approval; tone, volume and on/off are set in Settings → Notifications.'
+  zh: 'DSH 请求审批时响一声提示音；音色、音量与开关在「设置 → 通知提醒」里调。'

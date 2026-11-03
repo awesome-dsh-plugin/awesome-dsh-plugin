@@ -1,0 +1,6 @@
+url: https://github.com/Jaylor-Wang/dsh-tool-session-delete
+name: Jaylor-Wang/dsh-tool-session-delete
+category: session
+description:
+  en: 'Adds a Delete session action to the sidebar context menu behind a confirmation modal reporting log size and live activity, cleanly unlinking log files, projection checkpoints, and host memory registrations.'
+  zh: '在侧栏上下文菜单中添加删除会话操作，删除前通过模态框实时展示日志大小与活跃状态，并完整清理日志文件、投影缓存与内存注册表杜绝复活。'

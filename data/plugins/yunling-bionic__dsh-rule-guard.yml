@@ -1,0 +1,6 @@
+url: https://github.com/yunling-bionic/dsh-rule-guard
+name: yunling-bionic/dsh-rule-guard
+category: security
+description:
+  en: Reviews side-effecting tool calls against the project rules and the current goal before they run, and denies anything out of scope with a fail-closed verdict and no bypass switch.
+  zh: 在写文件、跑非只读命令、联网、派子代理等有副作用的动作执行前，按项目规则与当前目标复核，超出范围即拒绝（失败即拒，无可配置豁免开关）。

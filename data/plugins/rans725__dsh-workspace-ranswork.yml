@@ -1,0 +1,6 @@
+url: https://github.com/rans725/dsh-workspace-ranswork
+name: rans725/dsh-workspace-ranswork
+category: ui
+description:
+  en: "Sidebar workspace panel that switches between running tasks and all conversations, shown as one freely sortable card list with per-card pin, rename, copy ID, fork, stop, and archive actions."
+  zh: "侧栏工作区面板，在运行中任务与全部对话之间切换，统一为一张可自由排序的卡片列表，每张卡片可置顶、重命名、复制 ID、分叉、停止与归档。"

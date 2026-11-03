@@ -1,0 +1,6 @@
+url: https://github.com/FANLS05/dsh-desktop-notifications
+name: FANLS05/dsh-desktop-notifications
+category: notify
+description:
+  en: 'Windows toast notifications for DeepSeek Harness covering approval requests, questions, run completion, errors and sign-in prompts, with the conversation name as the first line of every notification.'
+  zh: 'DeepSeek Harness 的 Windows 桌面通知：申请权限、提问、任务完成、出错与登录提醒，每条通知第一行都是会话名称。'

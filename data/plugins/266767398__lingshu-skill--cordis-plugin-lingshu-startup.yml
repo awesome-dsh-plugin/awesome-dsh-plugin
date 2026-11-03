@@ -1,0 +1,6 @@
+url: https://github.com/266767398/lingshu-skill/tree/main/cordis-plugin/lingshu-startup
+name: 266767398/lingshu-skill#cordis-plugin/lingshu-startup
+category: memory
+description:
+  en: "Lingshu startup injector: runs brain.py startup on every new agent session and injects persona / memory / todos automatically. Requires Python 3, and the Lingshu skill installed at ~/.dsh/skills/lingshu; silently does nothing if either is missing. Main repo also ships a bundled SKILL.md entry point."
+  zh: 灵枢启动注入插件：每个新会话自动运行 brain.py startup，把人格/记忆/待办注入，不依赖模型自觉读 SKILL.md。需要 Python 3，并先把灵枢技能装到 ~/.dsh/skills/lingshu；缺任一项时静默不做任何事。主仓库根入口另以 bundled skill 形式注册 SKILL.md。

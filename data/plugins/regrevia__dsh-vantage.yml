@@ -1,0 +1,6 @@
+url: https://github.com/regrevia/dsh-vantage
+name: regrevia/dsh-vantage
+category: ui
+description:
+  en: 'A read-only overview tab beside the conversation: what this round asked, what was observed, what still needs checking, and a bounded history you can step through round by round.'
+  zh: '对话旁的只读概览页：本轮问了什么、观察到什么、还在验证什么；已结束的轮次可以一条条往回看。'

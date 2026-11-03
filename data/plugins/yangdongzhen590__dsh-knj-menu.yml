@@ -1,0 +1,6 @@
+url: https://github.com/yangdongzhen590/dsh-knj-menu
+name: yangdongzhen590/dsh-knj-menu
+category: ui
+description:
+  en: 'Third-party menu manager for the DSH Web UI: collects new menu entries added by other plugins into one place, with fold/collapse and pinned menu items.'
+  zh: '第三方菜单管理器：统一收纳第三方插件的新增菜单入口，提供常规折叠与固定菜单项。'

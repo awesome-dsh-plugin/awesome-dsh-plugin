@@ -1,0 +1,6 @@
+url: https://github.com/l2685209197/dsh-pdf-translate
+name: l2685209197/dsh-pdf-translate
+category: tools
+description:
+  en: "Translate text-based PDFs via DeepSeek or OpenAI-compatible APIs while preserving layout, fonts, images and links, with editable output."
+  zh: "用 DeepSeek 或兼容 API 翻译文本型 PDF，保留版式、字体、图片与链接，输出可编辑 PDF。"

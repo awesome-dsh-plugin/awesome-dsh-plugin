@@ -1,0 +1,6 @@
+url: https://github.com/arcnapan/dsh-chat-answer-anchor
+name: arcnapan/dsh-chat-answer-anchor
+category: ui
+description:
+  en: "Freezes the DSH chat scroll position: new replies no longer drag the viewport to the bottom — it stays where you left it. Only after you send a message does it follow to the bottom so you can see your own input, then it locks again once the answer starts streaming. Each session remembers its own position (persisted across reloads), a settings toggle turns it off, and it never intercepts your own scrolling."
+  zh: "冻结 DSH 聊天区的滚动位置：新回答出现时视口不再自动贴到底部，停在你最后停留的地方。只有你发消息时才先跟到底，好让你看见自己发的话；回答一开始出字就重新锁住。每个会话各记各的位置（刷新还在），设置里有总开关，你自己滚动时永远不被拦。"

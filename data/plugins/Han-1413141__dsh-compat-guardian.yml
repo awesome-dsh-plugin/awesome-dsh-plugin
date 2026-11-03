@@ -1,0 +1,6 @@
+url: https://github.com/Han-1413141/dsh-compat-guardian
+name: Han-1413141/dsh-compat-guardian
+category: dev
+description:
+  en: "Detect DSH plugin conflicts and loading failures, quarantine affected bundles and recover them, with offline startup rescue."
+  zh: "检查 DSH 插件冲突与加载故障，隔离和恢复受影响的插件，并在宿主无法启动时提供离线修复。"

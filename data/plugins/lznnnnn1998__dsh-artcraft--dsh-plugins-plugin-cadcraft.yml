@@ -1,0 +1,6 @@
+url: https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-cadcraft
+name: lznnnnn1998/dsh-artcraft#plugin-cadcraft
+category: tools
+description:
+  en: "Drive CADCraft from the agent: draw lines, arcs and splines, manage layers, add dimensions, hatches and blocks, then export DXF, DWG, SVG, PNG or PDF. Exposes both CADCraft's command ids and its own MCP server, so a drawing can be created and read back. Requires the matching ArtCraft app CLI installed locally; it is not bundled."
+  zh: "让智能体驱动 CADCraft：绘制直线、圆弧与样条，管理图层，添加标注、填充与图块，并导出 DXF、DWG、SVG、PNG 或 PDF。同时暴露 CADCraft 的命令 id 与自带的 MCP server，可创建并读回图纸。需本机安装对应的 ArtCraft 应用 CLI，插件不附带应用本体。"

@@ -1,0 +1,6 @@
+url: https://github.com/guojinpeng/dsh-git4idea
+name: guojinpeng/dsh-git4idea
+category: git
+description:
+  en: 'IDEA-style Git tool window for DSH: branch tree with ahead/behind badges, commit graph with text/branch/author/date/path filters, staged and unstaged changes with a commit box, commit details with per-file line diff, stash and worktree management, a git console log, and AI commit-message drafting. Fork of KannaKuron/dsh-ide-git (MIT), reworked to register native DSH entries instead of depending on dsh-better-sidebar and extended with worktree management, undo for branch, stash and discard actions, a git console log and AI commit-message drafting. Its plugin, route and sidebar-tab ids differ from the upstream, so both can be installed, but you get two Git tool windows.'
+  zh: 'DSH 里的 IDEA 风格 Git 工具窗口：带 ahead/behind 角标的分支树、可按文本/分支/作者/日期/路径筛选的提交图谱、已暂存与未暂存变更和提交框、提交详情与逐文件行级 diff、贮藏与工作树管理、git 控制台日志，以及 AI 撰写提交信息。KannaKuron/dsh-ide-git（MIT）的 fork：改用 DSH 原生入口注册（不再依赖 dsh-better-sidebar），并新增工作树管理、分支/贮藏/丢弃的撤销、git 控制台日志与 AI 撰写提交信息。插件、路由与侧栏 tab 的 id 均与上游不同，两者可同装，但会出现两个 Git 工具窗口。'

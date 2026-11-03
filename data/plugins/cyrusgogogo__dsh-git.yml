@@ -1,0 +1,7 @@
+url: https://github.com/cyrusgogogo/dsh-git
+name: cyrusgogogo/dsh-git
+category: git
+description:
+  en: Git panel with commit graphs, file diffs, branch and worktree management, and AI-assisted commit message previews.
+  zh: Git 面板，支持提交图、文件差异、分支与工作树管理，以及 AI 辅助生成提交说明预览。
+tarball: https://github.com/cyrusgogogo/dsh-git/releases/download/v0.1.3/dsh-git-0.1.3.tgz

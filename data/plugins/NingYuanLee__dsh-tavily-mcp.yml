@@ -1,0 +1,6 @@
+url: https://github.com/NingYuanLee/dsh-tavily-mcp
+name: NingYuanLee/dsh-tavily-mcp
+category: tools
+description:
+  en: 'Connects the Tavily hosted MCP server and registers the tools it publishes. The API key is read from the TAVILY_API_KEY credential and is not stored in plugin config.'
+  zh: '接入 Tavily 托管的 MCP 服务器并注册它公布的工具。API Key 从 TAVILY_API_KEY 凭据读取，不写入插件配置。'

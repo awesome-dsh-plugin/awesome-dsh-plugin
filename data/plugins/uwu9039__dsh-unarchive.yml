@@ -1,0 +1,6 @@
+url: https://github.com/uwu9039/dsh-unarchive
+name: uwu9039/dsh-unarchive
+category: session
+description:
+  en: 'Lists archived sessions, previews their content, restores them to the original workspace, and adds an optional archive confirmation.'
+  zh: '列出已归档会话、预览内容、恢复到原工作区，并提供可选的归档二次确认。'

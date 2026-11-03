@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-dev/dsh-deep-research
+name: omdsh-dev/dsh-deep-research
+category: workflow
+description:
+  en: Adaptive deep-research orchestrator built on the official workflow engine.
+  zh: 自适应深度研究编排器（基于官方 workflow 引擎）。

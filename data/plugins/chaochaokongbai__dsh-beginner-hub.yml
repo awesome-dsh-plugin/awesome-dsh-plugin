@@ -1,0 +1,6 @@
+url: https://github.com/chaochaokongbai/dsh-beginner-hub
+name: chaochaokongbai/dsh-beginner-hub
+category: ui
+description:
+  en: 'Beginner panel for DeepSeek Harness: routes a plain-language request into ready-to-use plans (prompt variants, matching skills, advanced moves) with a local keyword engine and fills the chosen plan into a new session in one click.'
+  zh: '面向 DSH 新手的说人话需求路由面板：用本地关键词引擎把一句大白话需求路由成可直接用的方案（提问话术变体、匹配技能、进阶玩法），选中的方案可一键填入新会话。'

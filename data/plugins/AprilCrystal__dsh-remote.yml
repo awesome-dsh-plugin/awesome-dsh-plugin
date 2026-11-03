@@ -1,0 +1,6 @@
+url: https://github.com/AprilCrystal/dsh-remote
+name: AprilCrystal/dsh-remote
+category: remote
+description:
+  en: 'OpenAI-compatible HTTP endpoint for DSH sessions plus a phone panel that reads transcripts, browses files, sends or queues messages, and answers approvals and questions.'
+  zh: '为 DSH 会话提供 OpenAI 兼容的 HTTP 接口与手机面板：读会话、浏览文件、发送或排队消息，并在手机上处理审批与提问。'

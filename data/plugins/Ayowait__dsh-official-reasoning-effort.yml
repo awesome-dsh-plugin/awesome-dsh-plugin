@@ -1,0 +1,6 @@
+url: https://github.com/Ayowait/dsh-official-reasoning-effort
+name: Ayowait/dsh-official-reasoning-effort
+category: model
+description:
+  en: 'Official-style model + reasoning-effort control for the composer. Reuses the official picker and always offers Off/Low/High/Max — exactly like the official DeepSeek control — even when a gateway model declares no reasoning effort, with a small hint at the panel bottom when upstream does not natively support it.'
+  zh: '输入框里的官方同款「模型 / 推理等级」控制。直接复用官方组件，即使网关模型（如 deepseek-v4.1-flash）未声明思考强度，也始终提供与官方一致的 Off/Low/High/Max 四档；上游未原生支持时，在面板底部显示一行小字提示。'

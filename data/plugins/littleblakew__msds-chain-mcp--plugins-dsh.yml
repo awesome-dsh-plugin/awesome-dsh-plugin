@@ -1,0 +1,6 @@
+url: https://github.com/littleblakew/msds-chain-mcp/tree/main/plugins/dsh
+name: littleblakew/msds-chain-mcp#dsh
+category: tools
+description:
+  en: 'Chemical safety intelligence through the hosted MSDS Chain MCP endpoint: 23 tools for compatibility and mixing order, GHS hazards, PPE, storage, waste disposal, exposure limits, transport classification, multi-region regulatory compliance, SDS lookup and version diffs, and signed audit reports, each answer citing the supplier SDS and revision date it is grounded in.'
+  zh: 通过托管的 MSDS Chain MCP 端点接入化学品安全数据：23 个工具覆盖相容性与投料顺序、GHS 危害、PPE、储存、废弃处置、职业接触限值、运输分类、多法域合规、SDS 查询与版本比对、签名审计报告；每条回答都标注其依据的供应商 SDS 与版本日期。

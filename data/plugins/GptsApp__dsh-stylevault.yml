@@ -1,0 +1,6 @@
+url: https://github.com/GptsApp/dsh-stylevault
+name: GptsApp/dsh-stylevault
+category: theme
+description:
+  en: 30 classic open-source theme palettes (Catppuccin, Nord, Tokyo Night, Gruvbox, Solarized, etc.) mapped to official ThemeService tokens for DeepSeek Harness, with a Style Settings panel for live color/font/radius tweaks and JSON export/import for sharing config packs.
+  zh: 为 DeepSeek Harness 提供 30 套经典开源主题配色（Catppuccin、Nord、Tokyo Night、Gruvbox、Solarized 等），映射官方 ThemeService token；带 Style Settings 面板，可实时调整颜色/字体/圆角，并支持 JSON 导出/导入分享配置。

@@ -1,0 +1,8 @@
+# SourceDeck market entry
+url: https://github.com/Archaofan/dsh-source-deck
+name: Archaofan/dsh-source-deck
+category: ui
+description:
+  en: "In-conversation source deck for DSH Desktop: the current chat model runs LLM search rounds, candidates render as GitHub-aware cards, and keep/exclude feedback, favorites, and the selected sources stay in the same conversation."
+  zh: "DSH Desktop 的会话内资料台：由当前对话模型执行搜索轮次，候选以 GitHub 卡片展示，保留/排除反馈、收藏夹与筛选结果都留在同一会话。"
+tarball: https://github.com/Archaofan/dsh-source-deck/releases/download/v0.3.3/dsh-source-deck-0.3.3.tgz

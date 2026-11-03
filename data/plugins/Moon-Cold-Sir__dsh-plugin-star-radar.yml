@@ -1,0 +1,13 @@
+url: https://github.com/Moon-Cold-Sir/dsh-plugin-star-radar
+name: Moon-Cold-Sir/dsh-plugin-star-radar
+category: market
+description:
+  en: >-
+    Star-ranked radar for DSH plugins. A plugin is listed once it has 3,000+
+    GitHub stars or 100k+ npm downloads in 30 days; after its rank drops it
+    stays listed for 180 days by default, so a plugin is still findable for
+    months after a hot streak.
+  zh: >-
+    按 GitHub 收藏数排名的 DSH 插件热度榜：收藏 ≥ 3,000 或近 30 天下载 ≥ 10 万即收录，
+    排名下滑后仍保留 180 天（默认），热度过去几个月依然找得到。
+icon: https://raw.githubusercontent.com/Moon-Cold-Sir/dsh-plugin-star-radar/main/docs/icon-180.png

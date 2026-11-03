@@ -1,0 +1,6 @@
+url: https://github.com/kobenfang/FruitPi
+name: kobenfang/FruitPi
+category: skill
+description:
+  en: 'Fruit price tracking skill: collect and query global wholesale fruit prices with RMB/kg conversion.'
+  zh: '全球水果价格追踪技能：采集与查询国内外水果批发价，支持人民币/公斤换算。'

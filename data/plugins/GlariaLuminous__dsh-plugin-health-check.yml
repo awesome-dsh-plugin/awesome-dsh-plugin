@@ -1,0 +1,6 @@
+url: https://github.com/GlariaLuminous/dsh-plugin-health-check
+name: GlariaLuminous/dsh-plugin-health-check
+category: dev
+description:
+  en: Read-only static checks for DSH profiles, bundle resolution, version compatibility, patches and MCP name conflicts, with pre-install candidate checks.
+  zh: 只读检查 DSH profile、bundle 解析、版本兼容、patch 和 MCP 名称冲突，支持安装前候选检查。

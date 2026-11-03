@@ -1,0 +1,6 @@
+url: https://github.com/Angela-lwh/dsh-archive-purge
+name: Angela-lwh/dsh-archive-purge
+category: session
+description:
+  en: 'Adds a Delete action to archived Session rows that permanently removes the Session log directory, the log directories of its subagent Sessions, its Workspace membership and archive mark, its projection-cache record and its spill directory; a Session the Host still holds is staged and finished at the next start or from a cleanup dialog. It also sweeps abandoned blank placeholders, leftover subagent Sessions and orphaned projection-cache records, and keeps blank placeholders out of the @ reference list.'
+  zh: '在已归档会话的行菜单里加入「删除会话」：永久移除会话日志目录、它启动的子代理会话日志、工作区归属、归档标记、投影缓存记录与 spill 溢出目录；宿主仍持有的会话先登记，下次启动或点「完成待删除清理」时完成。另外会清扫被放弃的空白占位、遗留的孤儿子代理与失效的投影缓存记录，并让空白占位不再出现在 @ 引用列表里。'

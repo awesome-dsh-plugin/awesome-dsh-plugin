@@ -1,0 +1,7 @@
+url: "https://github.com/aa2246740/pstack-dsh"
+name: "aa2246740/pstack-dsh"
+category: "workflow"
+description:
+  en: "Ports poteto's pstack engineering playbooks to DSH, covering planning, review, verification and release workflows."
+  zh: "将 poteto 的 pstack 工程工作流移植到 DSH，涵盖规划、审查、验证与发布。"
+tarball: "https://github.com/aa2246740/pstack-dsh/releases/download/v0.2.3/pstack-dsh-0.2.3.tgz"

@@ -1,0 +1,6 @@
+url: https://github.com/AKS1st/dock-images
+name: AKS1st/dock-images
+category: ui
+description:
+  en: 'Image viewer for the dock workbench: PNG, JPEG, GIF, WebP, BMP, SVG, ICO and AVIF, with SVG rendered as image data only.'
+  zh: dock 系列图片查看器：支持 PNG/JPEG/GIF/WebP/BMP/SVG/ICO/AVIF 格式，SVG 仅以安全方式渲染。

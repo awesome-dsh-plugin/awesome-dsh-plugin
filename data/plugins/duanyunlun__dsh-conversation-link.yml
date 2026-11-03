@@ -1,0 +1,6 @@
+url: https://github.com/duanyunlun/dsh-conversation-link
+name: duanyunlun/dsh-conversation-link
+category: session
+description:
+  en: 'Peer communication between conversations in one DeepSeek Harness process: list the conversations the workspace shows, link one under a nickname, message it without waiting for its turn to end, read its progress without waking it, and declare rules for your own tool calls.'
+  zh: '同一 DeepSeek Harness 进程内对话之间的对等通信：列出工作区里的对话、用昵称连接、发消息而不必等对方当前一轮结束、不唤醒对方地查看进度，并给自己声明工具调用规则。'

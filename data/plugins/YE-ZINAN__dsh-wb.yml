@@ -1,0 +1,6 @@
+url: https://github.com/YE-ZINAN/dsh-wb
+name: YE-ZINAN/dsh-wb
+category: tools
+description:
+  en: 'Bridge between DSH and the local WorkBuddy desktop app, in four parts: read, search and append WorkBuddy memory, skills, plans and daily logs; run tasks through the local CodeBuddy CLI with four permission profiles; drive the running WorkBuddy window over CDP (open a conversation, read its replies as sanitized rich HTML, type and send, switch the account-billed model, relaunch it with a debug port when it is missing); and a sidebar panel that puts that conversation surface inside DSH. 25 tools and 15 HTTP routes in one plugin.'
+  zh: '把 DSH 与本机 WorkBuddy 桌面端接起来，分四块：读写与搜索 WorkBuddy 的记忆、技能、计划和日志；经本机 CodeBuddy CLI 跑任务，带四档权限；通过 CDP 驱动正在运行的 WorkBuddy 窗口（打开会话、以清洗后的富文本读取回复、代打字并发送、切换按账号计费的模型、端口缺失时带调试端口重启它）；再加一个侧栏面板，把同样的对话界面放进 DSH。一个插件里共 25 个工具、15 条 HTTP 路由。'

@@ -1,0 +1,7 @@
+url: https://github.com/CatLollipop/dsh-composer-draft-cache
+name: CatLollipop/dsh-composer-draft-cache
+category: ui
+icon: https://raw.githubusercontent.com/CatLollipop/dsh-composer-draft-cache/main/assets/icon-180.png
+description:
+  en: 'Composer enhancements: caches unsent drafts per workspace for new sessions and per Session id for existing ones, restoring them after switching away and dropping them once sent or cleared; adds an @plugin completion group that mentions an installed plugin so the agent receives that plugin''s metadata as runtime context for the turn.'
+  zh: '输入框增强：按工作区缓存新会话草稿、按会话缓存已有会话草稿，切换后自动恢复，发送或清空后不再回填；同时在 @ 补全中增加“插件”分组，选中已安装插件后会把该插件信息作为运行时上下文交给 Agent。'

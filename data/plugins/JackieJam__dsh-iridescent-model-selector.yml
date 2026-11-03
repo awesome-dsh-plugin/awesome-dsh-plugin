@@ -1,0 +1,7 @@
+url: https://github.com/JackieJam/dsh-iridescent-model-selector
+name: JackieJam/dsh-iridescent-model-selector
+category: ui
+description:
+  en: Replaces the composer model button with one panel holding a provider-grouped model list with search, pinned favorite models, and a reasoning-effort slider with one stop per level the model advertises, whose aurora gradient and glow grow with the level; the last effort used with each model is restored when switching back, and the built-in selector stays registered underneath as a fallback.
+  zh: 用一个面板替换输入框的模型按钮：按服务商分组的模型列表与搜索、置顶的收藏模型，以及按模型声明档位分级的思考程度滑杆，其极光渐变与光晕随档位增强；切回某个模型时恢复上次用过的档位，内置选择器仍作为备用保持注册。
+icon: https://raw.githubusercontent.com/JackieJam/dsh-iridescent-model-selector/main/assets/icon-180.png

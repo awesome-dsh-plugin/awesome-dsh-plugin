@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-model-sync
+name: GooDAnDReaDY/dsh-model-sync
+category: model
+description:
+  en: "Synchronizes the model catalog of API-key providers from the provider itself instead of maintaining the model list by hand."
+  zh: "自动从服务商同步 API Key 提供方的模型列表，无需手动维护。"

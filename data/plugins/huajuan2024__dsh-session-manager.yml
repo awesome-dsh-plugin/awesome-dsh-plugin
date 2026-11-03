@@ -1,0 +1,6 @@
+url: https://github.com/huajuan2024/dsh-session-manager
+name: huajuan2024/dsh-session-manager
+category: session
+description:
+  en: 'Session manager panel under Settings → Plugins: list all sessions with title, cwd, agent preset, updated time, turns and steps, expand a row to view message history, delete non-running sessions, and export a session as JSON or Markdown via a browser Blob URL.'
+  zh: '设置 → 插件 下的会话管理面板：列出全部会话的标题、工作目录、agent 预设、更新时间、轮次与步数，展开可查看消息历史，删除非运行中的会话，并经浏览器 Blob URL 导出为 JSON 或 Markdown。'

@@ -1,0 +1,7 @@
+url: https://github.com/Yaoxxxxxxx/dsh-plugins/tree/main/packages/dsh-focus-composer
+name: Yaoxxxxxxx/dsh-plugins#dsh-focus-composer
+category: ui
+tarball: https://github.com/Yaoxxxxxxx/dsh-plugins/releases/download/v1.1.0/dsh-focus-composer-1.1.0.tgz
+description:
+  en: 'Returns the caret to the session composer on Ctrl+I; the key is rebindable in Settings and works from any region of the desktop window.'
+  zh: '按 Ctrl+I 把光标送回会话输入框；可在设置里改键，桌面端窗口内任意区域都生效。'

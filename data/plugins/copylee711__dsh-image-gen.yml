@@ -1,0 +1,6 @@
+url: https://github.com/copylee711/dsh-image-gen
+name: copylee711/dsh-image-gen
+category: vision
+description:
+  en: 'Image generation with a sidebar gallery page and three agent tools (paint_image, paint_images, edit_painting); preset providers include ModelScope, Google Gemini, OpenAI, SiliconFlow, Volcengine Seedream, Alibaba DashScope, xAI and Zhipu, plus any OpenAI-compatible endpoint, each with its own proxy setting.'
+  zh: '图像生成：侧边栏画廊页面和三个 Agent 工具（paint_image、paint_images、edit_painting）；预置 ModelScope、Google Gemini、OpenAI、硅基流动、火山方舟 Seedream、阿里云百炼、xAI、智谱等服务商，也可接入任意 OpenAI 兼容端点，每个服务商可单独设置代理。'

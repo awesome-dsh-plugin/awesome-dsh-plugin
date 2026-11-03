@@ -1,0 +1,6 @@
+url: https://github.com/XHszDHM/dsh-memory-tide
+name: XHszDHM/dsh-memory-tide
+category: memory
+description:
+  zh: '按工作空间保存日记与长期要点的冷热归档记忆：热档常驻、冷档下沉，每层各有一份索引，每天自动归纳一次；读写走七个 memory_* 工具，另有设置页可按工作空间调参数。'
+  en: 'Long-term notes and daily journals kept per workspace in a hot/cold archive, each tier with its own index and rebalanced once a day; read and written through seven memory_* tools, with a settings page for per-workspace options.'

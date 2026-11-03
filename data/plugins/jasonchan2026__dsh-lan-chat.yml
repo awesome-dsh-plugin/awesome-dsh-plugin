@@ -1,0 +1,6 @@
+url: https://github.com/jasonchan2026/dsh-lan-chat
+name: jasonchan2026/dsh-lan-chat
+category: identity
+description:
+  en: 'Offline LAN chat inside DSH: direct chats, group chats and file transfer between machines running the harness on the same network, with UDP auto-discovery, CIDR scanning to add contacts, an optional access code (unset by default), local-only contact aliases, per-message and per-conversation deletion, and a configurable per-file limit. The host opens its own HTTP/WebSocket port for peers, and the plugin imports only node built-ins.'
+  zh: 'DSH 内的离线局域网聊天：同一网络里运行本 harness 的机器之间单聊、群聊与文件传输，带 UDP 自动发现、按网段扫描加联系人、可选访问码（默认未设置）、只在本机生效的联系人备注、单条与整个会话删除，以及可配的单文件上限。宿主半侧为对端另开 HTTP/WebSocket 端口，运行时只用 Node 内置模块。'

@@ -1,0 +1,8 @@
+url: https://github.com/123pc/dsh-pet-claude/tree/main/dsh-pet
+name: 123pc/dsh-pet-claude#dsh-pet
+category: fun
+description:
+  en: 'A fork of PC2005-cloud/dsh-pet adding Claude-themed whale-girl pets in standing and chin-rest poses, randomized activity chains, and laptop work transitions. Replaces the original plugin; do not install both together.'
+  zh: '基于 PC2005-cloud/dsh-pet 的桌宠分支，新增 Claude 打扮的站立与托腮形态、随机日常动作链和拿出电脑办公的衔接。作为原版替代使用，请勿与原版同时安装。'
+tarball: https://github.com/123pc/dsh-pet-claude/releases/download/claude-v0.7.2/dsh-pet-claude.tgz
+icon: https://raw.githubusercontent.com/123pc/dsh-pet-claude/main/dsh-pet/assets/claude-icon.png

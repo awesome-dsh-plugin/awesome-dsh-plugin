@@ -1,0 +1,6 @@
+url: https://github.com/SkyloveQiu/dsh-finreport
+name: SkyloveQiu/dsh-finreport
+category: notify
+description:
+  en: 'Scheduled bilingual financial reports for DSH: market quotes, news and macro calendar, with per-target timezones and delivery through eight dsh-im channels.'
+  zh: 'DSH 定时双语财经日报：包含行情、新闻与宏观日历，支持每个目标独立配置时区，并通过 dsh-im 的八种通道投递。'

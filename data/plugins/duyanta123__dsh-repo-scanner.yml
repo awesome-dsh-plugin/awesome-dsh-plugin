@@ -1,0 +1,6 @@
+url: https://github.com/duyanta123/dsh-repo-scanner
+name: duyanta123/dsh-repo-scanner
+category: dev
+description:
+  en: 'Read-only repository fact scanner kernel for DSH analysis plugins: deterministic probe / file index / modules / dependencies / entry points / symbols / graphs and git facts over a stable JSON schema (CLI + library + skill runbook).'
+  zh: 只读仓库事实扫描内核：为分析型插件提供可复现的仓库探测、文件索引、模块、依赖、入口、符号与 Git 变更等硬事实（CLI + 库接口 + 技能 runbook）。

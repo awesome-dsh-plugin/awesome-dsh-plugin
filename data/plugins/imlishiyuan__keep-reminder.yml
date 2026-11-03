@@ -1,0 +1,6 @@
+url: https://github.com/imlishiyuan/keep-reminder
+name: imlishiyuan/keep-reminder
+category: session
+description:
+  en: 'Injects the contents of a .keep-reminder file from the session working directory as a system-reminder, with three modes: once per session, first step of every turn, or every request.'
+  zh: '把会话工作目录下 .keep-reminder 文件的内容作为 system-reminder 注入，支持三种模式：每会话一次、每轮第一步、每次请求。'

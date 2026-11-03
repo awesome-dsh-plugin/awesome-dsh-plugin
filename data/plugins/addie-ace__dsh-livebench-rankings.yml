@@ -1,0 +1,6 @@
+url: https://github.com/addie-ace/dsh-livebench-rankings
+name: addie-ace/dsh-livebench-rankings
+category: ui
+description:
+  en: LiveBench leaderboard for DSH — discovers the release the official site currently publishes, then reads its CSV and category JSON, and renders model rankings in an isolated same-origin iframe opened from a button beside the composer. Search, organization / open-weight / reasoning filters, per-category sorting, task-level detail, up to four models side by side, CSV export; refreshes every 60 s by default (configurable 30–3600) and caches only to the plugin's own .cache/rankings.json.
+  zh: DSH 内的 LiveBench 能力排行榜：识别官网当前发布的榜单版本，再读取其官方 CSV 与分类 JSON，在由输入框按钮打开的独立同源 iframe 中渲染模型排名。支持搜索、机构／开放权重／推理模型筛选、按能力维度排序、任务级明细、最多 4 个模型并排对比与 CSV 导出；默认每 60 秒同步（可配 30–3600），缓存只写入插件自身的 .cache/rankings.json。

@@ -1,0 +1,6 @@
+url: https://github.com/duhuashan/dsh-annals
+name: duhuashan/dsh-annals
+category: memory
+description:
+  en: 'Memory that outlives the session, kept as plain daily log files: one markdown file per day plus a generated index the agent greps instead of re-reading. Registers the annals skill, injects the write-it-down rules into the system prompt, and exposes three tools — annals_init builds the log directory, the index generator and a separate Git repository in one call; annals_query full-text searches past entries and returns them with file and line anchors; annals_links resolves which entry cites which. Reminds the agent once per turn when it changed files but wrote no log that day, and once more when the log was updated but the index was not. Adds a settings page for the six switches.'
+  zh: '活过本次会话的记忆，载体是普通的每日日志文件：一天一个 markdown，外加一份生成出来的索引，让助手先用索引检索而不是重读全文。注册 annals 技能，把「写下来」的规矩注入系统提示词，并提供三个工具——annals_init 一次建好日志目录、索引生成器与独立的 git 仓库；annals_query 全文检索历史条目并带回文件与行号锚点；annals_links 查条目之间的双向引用。改过文件但当天没写日志时每轮提醒一次，写了日志却没更新索引时再提醒一次。另有设置页可关这六个开关。'

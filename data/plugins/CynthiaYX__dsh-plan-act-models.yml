@@ -1,0 +1,7 @@
+url: https://github.com/CynthiaYX/dsh-plan-act-models
+name: CynthiaYX/dsh-plan-act-models
+category: model
+tarball: https://github.com/CynthiaYX/dsh-plan-act-models/releases/latest/download/dsh-plan-act-models.tgz
+description:
+  en: A simplified version of the Plan/Act feature in the RooCode and Cline VS Code extensions, binding one provider, model and reasoning effort to plan mode and another to act mode, with per-workspace overrides.
+  zh: 简化RooCode和Cline在VSCode插件上的功能，为 Plan 与 Act 两种模式各绑定一套 provider、模型与思考复杂度，支持按工作区覆盖。

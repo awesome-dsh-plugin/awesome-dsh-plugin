@@ -1,0 +1,6 @@
+url: https://github.com/iimaguest/dsh-contradictions-indicator
+name: iimaguest/dsh-contradictions-indicator
+category: ui
+description:
+  en: Shows a 0-100 conversation coherence badge and commentary by running parallel contradiction analysis on the live DSH session, with a manual trigger and interval-based auto-analysis (on by default, editable per session or globally).
+  zh: 对当前 DSH 会话做并行矛盾分析，在会话标题栏显示 0–100 连贯性徽章与评注，支持手动触发和按轮数的自动分析（默认开启，可按会话或全局调整）。

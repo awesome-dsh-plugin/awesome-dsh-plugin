@@ -1,0 +1,6 @@
+url: https://github.com/nobu121/dsh-opencode-session
+name: nobu121/dsh-opencode-session
+category: model
+description:
+  en: 'Attaches a stable per-conversation x-opencode-session header to OpenCode / OpenCode Go provider requests, fixing 400 MissingSessionID errors and keeping session affinity and prompt-cache routing intact.'
+  zh: '为 OpenCode / OpenCode Go 提供商请求自动附加每个会话稳定的 x-opencode-session 请求头，修复 400 MissingSessionID 错误，同时保持会话亲和与提示缓存路由。'

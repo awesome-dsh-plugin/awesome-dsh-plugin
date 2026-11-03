@@ -1,0 +1,7 @@
+url: https://github.com/The-latest-one/dsh-branch-workspace-folders
+name: The-latest-one/dsh-branch-workspace-folders
+category: ui
+description:
+  en: 'Heap-allocated stack-safe fork tree with two-track indentation, title marquee, and physical cascade purge.'
+  zh: 非递归显式栈侧边栏分支树，支持双轨缩进解耦、平滑跑马灯与物理级联删除事务。
+tarball: https://github.com/The-latest-one/dsh-branch-workspace-folders/releases/download/v0.2.0/dsh-branch-workspace-folders-0.2.0.tgz

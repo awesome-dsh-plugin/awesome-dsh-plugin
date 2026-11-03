@@ -1,0 +1,6 @@
+url: https://github.com/GDWhisper/dsh-web-startup-auth
+name: GDWhisper/dsh-web-startup-auth
+category: security
+description:
+  en: 'Replaces the dsh web startup to allow binding 0.0.0.0, gated by username/password login: signed session cookies, /api route protection, an auth tab in the settings panel, and a reset CLI that rotates the signing key to invalidate all sessions.'
+  zh: '替换 dsh web 启动器以允许绑定 0.0.0.0，并以账号密码登录为门槛：签名会话 cookie、/api 路由保护、设置面板认证标签页，以及轮换签名密钥使全部会话失效的重置 CLI。'

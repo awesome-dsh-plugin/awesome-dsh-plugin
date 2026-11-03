@@ -1,0 +1,6 @@
+url: https://github.com/xiaosurongjia/dsh-improved-inline-edit
+name: xiaosurongjia/dsh-improved-inline-edit
+category: ui
+description:
+  zh: "为 DeepSeek Harness Web 提供运行中修改要求输入条：agent 工作时在 composer 上方弹出输入框，通过 agent.steer() 将修改要求注入下一步决策而无需停止对话；输入草稿按会话持久化，消息气泡旁可撤回未被读取的注入，支持可选注入引导前缀。"
+  en: "A mid-run steer input for DeepSeek Harness Web: while the agent works, an input bar appears above the composer to inject modification requests into the next decision via agent.steer(), without stopping the conversation. Drafts persist per session, unread injected messages can be recalled from the bubble, and an optional guiding prefix is supported."

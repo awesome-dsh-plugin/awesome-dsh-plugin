@@ -1,0 +1,6 @@
+url: https://github.com/nanshang328/dsh-power
+name: nanshang328/dsh-power
+category: ui
+description:
+  en: "Windows-only power card injected into the DSH page: the artwork carries two hit zones (left shuts down, right restarts), the first click only turns the card into a yes/no question and the second click fires, and the restart engine stops only this instance's process tree, waits for the port to free, relaunches outside the host's Job Object and confirms the new instance answers on the plugin's own status route."
+  zh: "仅支持 Windows：注入 DSH 页面的电源卡片，图案左右各带一块命中区（左关机、右重启），第一次点击只把卡片变成一句是否确认，第二次点击才执行；重启引擎只停本实例的进程树，等待端口释放后在宿主 Job Object 之外重新拉起，并用插件自己的状态路由确认新实例已经应答。"

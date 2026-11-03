@@ -1,0 +1,7 @@
+url: https://github.com/binbin-QAQ/BiliMemory
+name: binbin-QAQ/BiliMemory
+category: tools
+tarball: https://github.com/binbin-QAQ/BiliMemory/releases/latest/download/dsh-bilimemory-latest.tgz
+description:
+  en: "Connect DSH to a local BiliMemory backend for Bilibili search, collection, status and login tasks, A-Memorix shared memory health checks, plus QQ link status, QQ user allowlists and QQ watcher restart. The repository includes a Windows one-click installer that installs or repairs MaiBot A-Memorix when missing, then configures local-bge-small-zh, embedding and shared memory. It also provides install-memory.cmd for memory-only repair. Requires Windows, DSH Desktop 0.2.1-rc.2+, Node.js 22.19+, Python 3.12, Playwright/Edge, FFmpeg, a running BiliMemory API at 127.0.0.1:8765, a local embedding service at 127.0.0.1:11435, a Bilibili login, and MaiBot/NapCat for QQ. Voice, RVC and cover features are excluded."
+  zh: "把本地 BiliMemory 接入 DSH，支持 B站搜索、视频采集、任务状态、登录管理、A-Memorix 共用记忆状态检查，以及 QQ 链接监听状态、QQ 白名单和监听重启。仓库提供 Windows 一键部署器，可在 A-Memorix 缺失时自动安装或修复，并配置 local-bge-small-zh、向量服务和共享记忆。另提供 install-memory.cmd 用于单独修复记忆库。需要 Windows、DSH Desktop 0.2.1-rc.2+、Node.js 22.19+、Python 3.12、Playwright/Edge、FFmpeg、运行中的 BiliMemory API（127.0.0.1:8765）、本机 embedding 服务（127.0.0.1:11435）、B站账号登录，以及用于 QQ 的 MaiBot/NapCat。当前不包含语音、RVC 和翻唱功能。"

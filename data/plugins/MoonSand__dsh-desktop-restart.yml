@@ -1,0 +1,7 @@
+url: https://github.com/MoonSand/dsh-desktop-restart
+name: MoonSand/dsh-desktop-restart
+category: ui
+description:
+  en: 'Adds two buttons to the sidebar footer: one reloads the interface and client plugins only, the other restarts the desktop app together with its Host. A restart is refused while a plugin install is running. Restart is Windows only and returns 409 elsewhere; reload works on all platforms.'
+  zh: '在侧栏底部添加两个按钮：一个只重新加载界面与客户端插件，另一个连同 Host 重启整个桌面应用；插件安装期间拒绝重启。重启仅支持 Windows，其他平台返回 409；刷新全平台可用。'
+

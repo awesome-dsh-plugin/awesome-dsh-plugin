@@ -1,0 +1,6 @@
+url: https://github.com/weisiren000/dsh-remote-ssh-ops
+name: weisiren000/dsh-remote-ssh-ops
+category: tools
+description:
+  en: 'SSH remote ops for DSH: pair servers over SSH or a one-time-code remote-hostd, then run commands, manage background jobs, and read or write remote files with reviewable changes (host_pair/host_bash/host_jobs/host_read_file/host_write_file/host_review_changes).'
+  zh: DSH SSH 远程运维：通过 SSH 或一次性配对码的 remote-hostd 连接服务器，执行命令、管理后台任务、读写远程文件并审阅变更（host_pair/host_bash/host_jobs/host_read_file/host_write_file/host_review_changes）。

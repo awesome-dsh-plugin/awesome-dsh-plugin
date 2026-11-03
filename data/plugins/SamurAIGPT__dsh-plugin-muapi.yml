@@ -1,0 +1,6 @@
+url: https://github.com/SamurAIGPT/dsh-plugin-muapi
+name: SamurAIGPT/dsh-plugin-muapi
+category: tools
+description:
+  en: 'MuApi media-generation tool: a muapi_generate tool that submits and polls jobs against any of MuApi''s 100+ image, video, audio, and 3D models through one x-api-key.'
+  zh: MuApi 媒体生成工具：muapi_generate 工具通过一个 x-api-key 提交并轮询 MuApi 100 多个图片、视频、音频与 3D 模型的生成任务。

@@ -1,0 +1,6 @@
+url: https://github.com/guhanfei-ai/dsh-model-http-proxy
+name: guhanfei-ai/dsh-model-http-proxy
+category: model
+description:
+  en: 'Only the domains you list go through a proxy: add a model host that needs the proxy to be reachable, and web search plus every other request stays on the normal network. Multiple named proxies can serve different domains, with a never-proxy list on top; saved settings apply on the next request without a restart.'
+  zh: '某个模型的 API 要代理才连得上？把它的域名填进来就行——只有你列出的域名走代理，网页搜索等其它请求照旧直连，互不打扰。可以配多个代理分给不同域名，也能指定某些域名永远不走代理；保存后下一次请求就生效，不用重启。'

@@ -1,0 +1,6 @@
+url: https://github.com/aRooooooba/dsh-plugin-midclick-close-tabs
+name: aRooooooba/dsh-plugin-midclick-close-tabs
+category: ui
+description:
+  en: Middle-click closes right-sidebar tabs (files, terminal, browser, previews) and float windows.
+  zh: 中键关闭右侧边栏标签页（文件、终端、浏览器、预览），浮动窗口同样适用。

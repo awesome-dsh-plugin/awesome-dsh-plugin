@@ -1,0 +1,9 @@
+url: https://github.com/akilonewbility/dsh-workspace-optimize        # must match the repo exactly / 必须与仓库完全一致
+name: akilonewbility/dsh-workspace-optimize                          # link text shown in the list / 列表中显示的链接文字
+category: ui                              # see the category list below / 见下方分类列表
+description:
+  en: 'Redraw the left-hand workspace sidebar to add color highlighting, sorting, status indicators, and system notifications. You can also switch back to the original sidebar, which likewise implements some of these features.'
+  zh: '通过重绘左侧工作区侧栏，为工作区侧栏添加颜色高亮、排序、收藏、状态指示以及系统通知等功能。同时可切换回原版侧栏，也具有部分功能实现。'   # optional — a maintainer will add it / 可选，维护者会补
+# optional — GitHub-hosted raster image used as the storefront tile;
+# falls back to the owner's avatar when omitted
+# 可选——用 GitHub 托管的位图作为市场卡片图标；不写则回退到作者头像

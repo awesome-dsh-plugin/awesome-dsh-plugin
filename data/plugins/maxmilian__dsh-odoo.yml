@@ -1,0 +1,6 @@
+url: https://github.com/maxmilian/dsh-odoo
+name: maxmilian/dsh-odoo
+category: tools
+description:
+  en: 'Read-only Odoo tools over JSON-RPC: server info, model field introspection, and a restricted search_read limited to an allow list of models whose domain field names may not contain dots, so related-record traversal is not possible. A draft-create tool is registered only when allowWrite is enabled, and is limited to sale.order and project.task with the draft state enforced by the plugin.'
+  zh: '经 JSON-RPC 的 Odoo 只读工具：服务器信息、模型字段自省，以及受限的 search_read——仅限白名单模型，且 domain 字段名不允许包含点号，因此无法沿关联关系穿透。草稿创建工具需显式开启 allowWrite 才会注册，且仅限 sale.order 与 project.task，草稿状态由插件强制。'

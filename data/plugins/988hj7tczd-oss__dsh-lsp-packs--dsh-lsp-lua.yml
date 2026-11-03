@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-lsp-packs/tree/main/dsh-lsp-lua
+name: 988hj7tczd-oss/dsh-lsp-packs#dsh-lsp-lua
+category: dev
+description:
+  en: 'Lua LSP configuration plugin for DeepSeek Harness using lua-language-server.'
+  zh: '基于 lua-language-server 为 DeepSeek Harness 提供 Lua 代码导航和语言服务配置。'

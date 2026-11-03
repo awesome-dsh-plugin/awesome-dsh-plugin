@@ -1,0 +1,6 @@
+url: https://github.com/MycatQieZi/dsh-persona-shaoxin
+name: MycatQieZi/dsh-persona-shaoxin
+category: identity
+description:
+  en: 'Mounts a persona kept in Markdown as a system-prompt section, so editing ~/.dsh/persona/*.md changes how the agent speaks; it reloads 150ms after a save instead of requiring a restart, and project-level .dsh/persona/ files override the global ones.'
+  zh: '把写在 Markdown 里的人设挂载成系统提示词段落：改 `~/.dsh/persona/*.md` 即可改变回答风格，保存后 150 毫秒自动重载而无需重启，项目级 `.dsh/persona/` 下的同名文件覆盖全局配置。'

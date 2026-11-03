@@ -1,0 +1,6 @@
+url: https://github.com/qingyou002/dsh-git-commit
+name: qingyou002/dsh-git-commit
+category: git
+description:
+  en: 'DSH slash command /commit: stages all changes, summarizes the staged diff with the session model, and commits; no browser UI required, with a local fallback when the model call fails.'
+  zh: 'DSH 斜杠命令 /commit：暂存全部更改，用会话当前模型总结暂存区 diff 后提交；不依赖浏览器界面，模型调用失败时回退到本地规则生成提交信息。'

@@ -1,0 +1,7 @@
+url: https://github.com/guchang/draw2code
+name: guchang/draw2code
+category: ui
+description:
+  en: 'An Excalidraw prototyping tab for dsh-better-sidebar with structured product clarification, conflict-aware human and Agent board updates, and prototype-guided frontend generation.'
+  zh: '运行在 dsh-better-sidebar 中的 Excalidraw 协作原型插件：结构化澄清产品需求、保护用户手工修改的人机画板更新，以及基于原型的前端生成。'
+tarball: https://github.com/guchang/draw2code/releases/latest/download/draw2code.tgz

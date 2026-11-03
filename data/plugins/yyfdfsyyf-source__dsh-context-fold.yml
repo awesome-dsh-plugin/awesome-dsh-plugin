@@ -1,0 +1,6 @@
+url: https://github.com/yyfdfsyyf-source/dsh-context-fold
+name: yyfdfsyyf-source/dsh-context-fold
+category: session
+description:
+  en: "Folds oversized tool results into on-disk spill files with deterministic head and tail markers, indexes compaction summaries in a searchable ledger, and extracts cross-session memories with per-project scoping. Any folded content is restored byte-for-byte on demand through one tool call."
+  zh: "把超长工具结果折叠为落盘副本并保留 head/tail 标记，为 compaction 摘要建立可检索账本，并按项目作用域抽取跨会话记忆；被折叠的内容可通过一次工具调用原样取回。"

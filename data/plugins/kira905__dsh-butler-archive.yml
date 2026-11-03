@@ -1,0 +1,6 @@
+url: https://github.com/kira905/dsh-butler-archive
+name: kira905/dsh-butler-archive
+category: session
+description:
+  en: DSH web plugin that browses, previews, restores and deletes archived sessions that were moved out of the sessions directory.
+  zh: DSH 网页插件：浏览、预览、还原与删除已从会话目录搬出的归档会话。

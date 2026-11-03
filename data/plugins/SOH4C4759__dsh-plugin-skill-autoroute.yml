@@ -1,0 +1,6 @@
+url: https://github.com/SOH4C4759/dsh-plugin-skill-autoroute
+name: SOH4C4759/dsh-plugin-skill-autoroute
+category: skill
+description:
+  en: "Run one deterministic skill-routing pass on every user instruction, so the skill catalog is consulted before the model answers instead of after it remembers. On the host it scores the live catalog from the instruction's keywords and the catalog metadata, with no LLM or embedding call, and appends a single producer-tagged message to the step: a ranked shortlist by default, the winning SKILL.md body once the score clears a threshold, or an instruction to call a named router skill exactly once. Unrelated instructions stay silent."
+  zh: 对每条用户指令自动做一次确定性的技能路由，让技能目录在模型作答之前就被查阅，而不是等它自己想起来。宿主侧只依据指令关键词与目录元数据打分，不调用 LLM 也不做向量检索，然后向该步追加恰好一条带生产者标签的消息：默认是候选排名简报，分数过线时改注入冠军技能的 SKILL.md 正文，也可以只注入一句「立刻调用某个路由技能」。无关指令保持沉默。

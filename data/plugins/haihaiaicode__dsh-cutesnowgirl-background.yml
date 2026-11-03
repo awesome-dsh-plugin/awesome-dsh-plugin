@@ -1,0 +1,6 @@
+url: https://github.com/haihaiaicode/dsh-cutesnowgirl-background
+name: haihaiaicode/dsh-cutesnowgirl-background
+category: theme
+description:
+  en: Adds a muted looping video behind the Harness workspace and makes the composer translucent after the boot splash finishes.
+  zh: 在 Harness 工作区后播放静音循环视频，并在开屏动画结束后将输入区域显示为半透明。

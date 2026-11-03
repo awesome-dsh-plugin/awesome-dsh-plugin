@@ -1,0 +1,6 @@
+url: https://github.com/Andersen216/dsh-whale-girl-live2d
+name: Andersen216/dsh-whale-girl-live2d
+category: fun
+description:
+  en: 'A Live2D whale-girl companion for the DeepSeek Harness Web UI: the model stays on screen and reacts to what the agent is actually doing (thinking, tool calls, streaming text, errors, turn completion); click her to send the agent a message and watch the reply stream into a speech bubble; right-click for a menu of expressions, dress-up items, desk scenes and one-shot animations, every action mapped from the original model author hotkey sheet so nothing overlaps and everything expires on its own. Non-commercial model assets (CC BY-NC-SA 4.0), MIT code, by Andersen216 (https://github.com/Andersen216).'
+  zh: 'DSH 里的 Live2D 桌宠「鲸鱼娘」：模型常驻 Web 界面，跟着 agent 的真实状态换表情与动作（思考、调工具、逐字输出、报错、收工庆祝），点一下就能直接给 agent 发消息、回复逐字冒进气泡；右键菜单可换表情、戴眼镜贴纸、摆桌面场景、演一次性小动作，动作全部照模型作者自己的按键表设计，互不冲突、到点自动收回。模型素材非商业（CC BY-NC-SA 4.0），代码 MIT，作者 Andersen216。'

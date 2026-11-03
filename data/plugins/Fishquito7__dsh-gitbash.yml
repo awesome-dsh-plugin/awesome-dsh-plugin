@@ -1,0 +1,7 @@
+url: https://github.com/Fishquito7/dsh-gitbash
+name: Fishquito7/dsh-gitbash
+category: tools
+description:
+  en: Runs DSH's stock bash tool on Git Bash for Windows, so commands go straight to bash -c instead of being re-parsed by the pwsh tool.
+  zh: 在 Windows 上把 DSH 原版 bash 工具挂到 Git Bash 上运行，命令直达 bash -c，不再经 pwsh 工具二次解析。
+tarball: https://github.com/Fishquito7/dsh-gitbash/releases/latest/download/dsh-git-bash.tgz

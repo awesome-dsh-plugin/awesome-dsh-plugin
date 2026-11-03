@@ -1,0 +1,6 @@
+url: https://github.com/wmengxiang/dsh-any-skills
+name: wmengxiang/dsh-any-skills
+category: skill
+description:
+  en: 'Import, install and invoke Agent Skills in DeepSeek Harness from Codex, Claude Code, OpenCode, GitHub or npm — composer-side ⚡ picker inserts /skill-name into the draft, and a Skill 管理 settings page offers per-source/per-skill import, expandable source paths with skill counts, uninstall and one-click restore from .trash.'
+  zh: 从 Codex / Claude Code / OpenCode / GitHub / npm 导入并安装技能到 ~/.dsh/skills，模型自动读取、/技能名 立即可用；对话框旁 ⚡ 一键插入调用，设置页支持按来源/单技能导入、路径与数量展示、卸载与一键恢复。

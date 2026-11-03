@@ -1,0 +1,6 @@
+url: https://github.com/fakechris/dsh-harness-ops/tree/main/plugins/dsh-restart-recover
+name: fakechris/dsh-harness-ops#dsh-restart-recover
+category: dev
+description:
+  en: 'Restart recovery for DeepSeek Harness web: after a crash or restart, an interrupted agent turn continues automatically (host-side agent/created listener, no browser timing races).'
+  zh: 'DeepSeek Harness web 重启恢复：崩溃或重启后，被打断的 agent 回合自动继续（host 侧 agent/created 监听，无浏览器时序竞态）。'

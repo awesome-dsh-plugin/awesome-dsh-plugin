@@ -1,0 +1,6 @@
+url: https://github.com/frzzaxszz/dsh-skill-catalog/tree/main/plugin
+name: frzzaxszz/dsh-skill-catalog#plugin
+category: skill
+description:
+  en: 'Skill panel for the DSH Web GUI: lists every installed skill with Chinese annotations and eight category filters, runs pinyin and fuzzy search, ranks by pin and recency, and manages each skill in place (pin, disable, reveal, uninstall with undo). Ships its own maintenance skill.'
+  zh: 'DSH Web GUI 的技能面板：列出全部已安装技能并附中文备注，提供八类分类筛选、拼音与模糊搜索、置顶与最近使用排序，可原地管理每个技能（置顶、关闭、定位、卸载并可撤回）。随包自带一个维护技能。'

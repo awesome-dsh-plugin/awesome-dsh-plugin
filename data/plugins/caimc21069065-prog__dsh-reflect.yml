@@ -1,0 +1,6 @@
+url: https://github.com/caimc21069065-prog/dsh-reflect
+name: caimc21069065-prog/dsh-reflect
+category: memory
+description:
+  zh: "把对模型的纠正变成永久规则：remember: 显式触发与自动检测的纠正经确认条确认后写入 AGENTS.md 的标记段（全局或项目作用域，可编辑、可跳过），当前会话立即生效，新会话由 dsh 原生指令加载器读取；规则去重、版本守卫写入、疑似密钥拒绝落盘。"
+  en: "Turns corrections into permanent rules: explicit remember: triggers and auto-detected corrections pass a confirm bar (save globally / per project / edit / skip) and are written into a marked AGENTS.md section. New rules take effect in the current session and load natively in future ones; writes are deduplicated and version-guarded, and secret-looking content is refused."

@@ -1,0 +1,6 @@
+url: https://github.com/xwamt/at-terminal-dsh
+name: xwamt/at-terminal-dsh
+category: remote
+description:
+  en: 'DeepSeek Harness native SSH terminal and SFTP workspace with direct agent tools and security sandboxing.'
+  zh: 'DeepSeek Harness 原生 SSH 终端与 SFTP 远程工作区，支持 Agent 直连运维与三级安全沙盒。'

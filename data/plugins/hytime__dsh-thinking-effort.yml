@@ -1,0 +1,6 @@
+url: https://github.com/hytime/dsh-thinking-effort
+name: hytime/dsh-thinking-effort
+category: model
+description:
+  en: 'Configure reasoning-effort levels and sub-agent defaults for custom DSH models.'
+  zh: '为 DSH 自定义模型配置思考档位和子 agent 默认思考强度。'

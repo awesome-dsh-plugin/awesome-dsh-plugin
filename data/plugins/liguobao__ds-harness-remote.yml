@@ -1,0 +1,7 @@
+url: https://github.com/liguobao/ds-harness-remote
+name: liguobao/ds-harness-remote
+category: remote
+description:
+  en: 'Multi-device remote access for DeepSeek Harness and supported coding workspaces through an end-to-end encrypted channel, with adaptive Relay/WebRTC transport, device authorization, workspace files, read-only previews, terminals, and optional Codex Remote.'
+  zh: '通过端到端加密通道远程访问 DeepSeek Harness 及兼容的编码工作区，支持自适应 Relay/WebRTC 传输、设备授权、工作区文件、只读预览、终端和可选的 Codex Remote。'
+tarball: https://github.com/liguobao/ds-harness-remote/releases/download/v0.6.0/ds-harness-remote-0.6.0.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/DenAbr/dsh-compact-selected-model
+name: DenAbr/dsh-compact-selected-model
+category: session
+description:
+  en: /compact and auto-compaction summarize with the model selected in the session, not the model that finished the last turn.
+  zh: '/compact 与自动压缩使用会话中当前选中的模型来生成摘要，而不是用跑完上一轮的那个模型。'

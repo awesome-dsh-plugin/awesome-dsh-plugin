@@ -1,0 +1,7 @@
+url: https://github.com/Chip-G0202/dsh-deepseek-search-account
+name: Chip-G0202/dsh-deepseek-search-account
+category: browser
+description:
+  en: 'DeepSeek account-backed web search for DeepSeek Harness sessions whose chat model runs through a third-party subscription or gateway (for example OpenCode Go): registers a deepseek-account-search provider that calls the official Search API with the signed-in DeepSeek account token, so the built-in web_search keeps working without a DEEPSEEK_API_KEY.'
+  zh: '为聊天模型走第三方订阅或网关（例如 OpenCode Go）的 DeepSeek Harness 会话提供基于已登录 DeepSeek 账号的网页搜索：注册 deepseek-account-search 提供方，用账号 token 调用官方 Search API，无需 DEEPSEEK_API_KEY 也能让内置 web_search 继续可用。'
+tarball: https://github.com/Chip-G0202/dsh-deepseek-search-account/releases/latest/download/dsh-deepseek-search-account.tgz

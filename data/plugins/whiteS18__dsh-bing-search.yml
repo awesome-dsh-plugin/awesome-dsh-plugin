@@ -1,0 +1,6 @@
+url: https://github.com/whiteS18/dsh-bing-search
+name: whiteS18/dsh-bing-search
+category: browser
+description:
+  en: 'Maintained fork of godchen520/dsh-web-search-bing adapted to DSH 0.1.5-rc.1: Bing-backed provider for the built-in web_search tool, scraping the public cn.bing.com HTML results page with no API key, reachable from mainland China, and keeping searches off the model''s own search quota. Endpoint and result count configurable.'
+  zh: 'godchen520/dsh-web-search-bing 的维护 fork，适配 DSH 0.1.5-rc.1：为内置 web_search 工具提供 Bing 搜索源，直接解析 cn.bing.com 公开 HTML 结果页，无需 API Key，国内可直连，不消耗模型自带搜索额度。端点与结果数量可配置。'

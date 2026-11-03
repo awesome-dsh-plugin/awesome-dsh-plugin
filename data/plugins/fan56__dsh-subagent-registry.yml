@@ -1,0 +1,6 @@
+url: https://github.com/fan56/dsh-subagent-registry
+name: fan56/dsh-subagent-registry
+category: tools
+description:
+  en: "Register locally-defined custom agents as callable subagents in dsh: the main conversation invokes any agent by name via use_agent, each running as a real dsh subagent with its own persona. Supports breakpoint resume for interrupted runs."
+  zh: "把本地定义的自定义 agent 注册成 dsh 可调用的 subagent：主模型通过 use_agent 工具按名字派活，每个 agent 以独立人格运行，支持断点续跑。"

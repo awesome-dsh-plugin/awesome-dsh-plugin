@@ -1,0 +1,6 @@
+url: https://github.com/LonelyHerbivore/dsh-image-question/tree/main/plugin
+name: LonelyHerbivore/dsh-image-question#plugin
+category: ui
+description:
+  en: "Ask the user a question about a local image; the DSH Web card offers zoom, pan, box, brush and lasso annotation, NG/OK/unsure verdicts and a note, and the agent receives annotations back in source-image pixel coordinates."
+  zh: "带本地图片向用户提问；DSH Web 卡片支持缩放平移、框选、画笔与套索标注、NG/OK/不确定判定和说明，Agent 收回原图像素坐标下的标注。"

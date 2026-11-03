@@ -1,0 +1,6 @@
+url: https://github.com/jasen215/dsh-continual-harness
+name: jasen215/dsh-continual-harness
+category: dev
+description:
+  en: 'Continual self-refinement loop: persistent memory, periodic review-and-refine, cross-session shared knowledge, and automatic rollback through a model-callable harness_refine tool.'
+  zh: 持续自我优化闭环：持久记忆、周期评审与自动优化、跨会话共享知识、失败自动回滚，由模型可调用的 harness_refine 工具驱动。

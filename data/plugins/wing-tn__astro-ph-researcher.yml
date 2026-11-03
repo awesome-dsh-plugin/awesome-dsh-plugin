@@ -1,0 +1,6 @@
+url: https://github.com/wing-tn/astro-ph-researcher
+name: wing-tn/astro-ph-researcher
+category: tools
+description:
+  en: 'Astronomy research workbench for DSH and Codex: NADC terms, reference library, writing, scoring, author confirmation, recommended books, FITS/XML formats, and analysis guides.'
+  zh: '面向天文的 DSH/Codex 研究工作台：NADC 术语、参考文献库、写作、评分、作者确认、推荐书籍、FITS/XML 格式与分析引导。'

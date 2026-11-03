@@ -1,0 +1,6 @@
+url: https://github.com/lilming123/dsh-api
+name: lilming123/dsh-api
+category: dev
+description:
+  en: Exposes dsh's internal capabilities (language, workspace registry, agent-status and approval events) over HTTP under /dsh-api on the local loopback socket dsh already listens on, with SSE fan-out at /dsh-api/events.
+  zh: 把 dsh 内部能力（语言、工作区注册表、agent-status 与 approval 事件）以 HTTP 路由的形式暴露在 dsh 已监听的本地回环 socket 上，前缀 /dsh-api，并通过 /dsh-api/events 提供 SSE 事件推送。

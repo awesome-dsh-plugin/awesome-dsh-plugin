@@ -1,0 +1,6 @@
+url: https://github.com/CarrotFish/dsh-file-and-terminal
+name: CarrotFish/dsh-file-and-terminal
+category: ui
+description:
+  en: Adds host file management and an interactive Bash terminal to the DSH WebUI.
+  zh: 为 DSH WebUI 添加好用的独立文件管理与终端页面，及附属实用功能。

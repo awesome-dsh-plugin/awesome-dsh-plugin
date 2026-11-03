@@ -1,0 +1,6 @@
+url: https://github.com/mogragsigma/dsh-dual-host-plugin
+name: mogragsigma/dsh-dual-host-plugin
+category: workflow
+description:
+  en: 'Dual-host coordination for DeepSeek Harness (大肥鱼 bot): hand a task off in local chat, run bounded jobs in a cloud worker, then review results and approve follow-up steps in one workbench. Includes protected six-page onboarding, per-task model selection, a task approval ledger and stepwise controlled delivery.'
+  zh: 'DSH 双端协作（大肥鱼 bot）：在本地对话中自然语言交办，云端独立 worker 执行有界任务，在工作台查看成果并逐步审批后续动作。含六页保护性配置导览、按任务选模型、审批账本与受控交付。'

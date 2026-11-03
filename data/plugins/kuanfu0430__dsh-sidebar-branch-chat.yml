@@ -1,0 +1,6 @@
+url: https://github.com/kuanfu0430/dsh-sidebar-branch-chat
+name: kuanfu0430/dsh-sidebar-branch-chat
+category: ui
+description:
+  en: Adds a Branch Chat tab to dsh-better-sidebar that opens independent archived sessions with a head/middle/tail context digest and the same tools as the main agent.
+  zh: 在 dsh-better-sidebar 新增分支对话页签：开出独立封存 session，注入头／中／尾脉络摘要，并使用与主对话相同的工具。

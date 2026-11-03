@@ -1,0 +1,7 @@
+url: https://github.com/xuedipiaofei/dsh-session-title-stamp
+name: xuedipiaofei/dsh-session-title-stamp
+category: session
+description:
+  en: "Keeps DSH session titles in DATE | CATEGORY | NAME with turn-aware auto-retitle, manual refresh, and hover cost/duration."
+  zh: "把 DSH 会话标题固定为「日期 | 分类 | 名称」，支持回答后自动重算、手动刷新和悬停成本/耗时。"
+icon: https://raw.githubusercontent.com/xuedipiaofei/dsh-session-title-stamp/main/assets/icon-180.png

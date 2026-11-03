@@ -1,0 +1,6 @@
+url: https://github.com/w4xxx/dsh-xia-plugins/tree/main/packages/gameassist-roster
+name: w4xxx/dsh-xia-plugins#packages/gameassist-roster
+category: identity
+description:
+  en: 'Daily rotating anime companion persona: deterministic date pick from JSON character cards, roster/reroll tools, and a voice-map route.'
+  zh: '每日轮值二次元陪伴角色：按本地日期从 JSON 角色卡确定性选角，支持换角/重抽工具与 voice-map 路由。'

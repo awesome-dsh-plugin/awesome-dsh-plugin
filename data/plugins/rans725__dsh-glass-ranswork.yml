@@ -1,0 +1,6 @@
+url: https://github.com/rans725/dsh-glass-ranswork
+name: rans725/dsh-glass-ranswork
+category: theme
+description:
+  en: "Glassmorphism theme for the DSH web UI: frosted translucent surfaces with adjustable opacity, blur radius and saturation, ambient lighting and accent palettes, plus a custom background image with cover, contain, stretch, tile or center fit and crop, all persisted from a settings page."
+  zh: "DSH Web 界面的毛玻璃主题：磨砂半透明表面，可调不透明度、模糊半径与饱和度，支持氛围光与配色方案，并可设置自定义背景图片（填充、适应、拉伸、平铺、居中与裁剪），全部参数保存在设置页中。"

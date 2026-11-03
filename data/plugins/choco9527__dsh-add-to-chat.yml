@@ -1,0 +1,6 @@
+url: https://github.com/choco9527/dsh-add-to-chat
+name: choco9527/dsh-add-to-chat
+category: ui
+description:
+  en: "Adds lightweight selected-text references to DSH assistant replies: selections stay outside the editor as removable draft contexts, remain marked beside the source, and render as hoverable annotations after submission."
+  zh: "为 DSH 助手回复添加轻量选中文本引用：选区以可删除的草稿上下文独立于编辑器保存，在原文旁保留标记，并在发送后显示为可悬浮查看的注释。"

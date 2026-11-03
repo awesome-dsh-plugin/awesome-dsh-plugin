@@ -1,0 +1,6 @@
+url: https://github.com/Qiujiyuantiantian/dsh-scan2md
+name: Qiujiyuantiantian/dsh-scan2md
+category: skill
+description:
+  en: "OCR for scanned, image-only PDFs into Markdown, built around the fact that a book takes about an hour: every page is checkpointed so an interrupted run resumes, a progress log reports live status, and a quality report names empty pages and low-confidence lines. Requires Python 3.10+ and pip install -r requirements; the first run downloads the OCR model."
+  zh: "把扫描版 PDF（影印书、拍照件）OCR 成 Markdown，并按“一本书要跑约一小时”来设计：逐页写检查点，中断可续跑；进度日志随时可查；质量报告点名空白页和低置信行。需 Python 3.10+ 并安装仓库 requirements；首次运行会下载 OCR 模型。"

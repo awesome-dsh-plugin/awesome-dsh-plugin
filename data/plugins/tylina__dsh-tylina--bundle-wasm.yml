@@ -1,0 +1,6 @@
+url: https://github.com/tylina/dsh-tylina/tree/main/bundle-wasm
+name: tylina/dsh-tylina#bundle-wasm
+category: docs
+description:
+  en: 'A WYSIWYG Typst editor for papers, reports, exams, resumes, charts, posters, sheet music, and slides exported as PPTX.'
+  zh: 'Typst 文档编辑工具：WYSIWYG 编辑排版论文、报告、试卷、简历、图表、海报、乐谱和可导出为 PPTX 的 Slides。'

@@ -1,0 +1,6 @@
+url: https://github.com/sanqiPanax/jieyaTool
+name: sanqiPanax/jieyaTool
+category: tools
+description:
+  en: 'Batch recursive extraction: magic-byte format detection (disguised extensions), nested archive auto-unroll, multi-password pool with per-layer dynamic discovery, SFX/split-volume pairing.'
+  zh: '批量递归解压：魔数识别真实格式（伪装后缀/无后缀/乱序后缀）、嵌套压缩包自动解到底、多密码池+层内动态发现（"第二层密码:xxx"）、SFX/分卷自动配对、工具运行库目录防误递归。'

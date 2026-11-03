@@ -1,0 +1,6 @@
+url: https://github.com/Hobartoakes/dsh-model-shelf
+name: Hobartoakes/dsh-model-shelf
+category: ui
+description:
+  en: 'Replaces the chat model picker with a collapsible provider-grouped list (640x720 max) that shows each model name, provider name, provider ID and exact model ID, plus a manually managed uncommon list and a separate favorites list. Classification is user-driven only: no usage tracking and no auto-sorting. Search covers model name, model ID, provider name, provider ID and account notes.'
+  zh: '把聊天模型选择器换成按服务商分组的可折叠列表（最大 640x720），每款模型显示名称、服务商名称、服务商 ID 与精确模型 ID，另有手动整理的「不常用」列表和独立的收藏列表。分类只由用户决定：不统计使用频率、不自动分类。搜索覆盖模型名称、模型 ID、服务商名称、服务商 ID 与账号备注。'

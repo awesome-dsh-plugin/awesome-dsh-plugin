@@ -1,0 +1,6 @@
+url: https://github.com/Stijnus/dsh-prompt-optimizer
+name: Stijnus/dsh-prompt-optimizer
+category: ui
+description:
+  en: 'Adds an Optimize prompt control next to the composer send button that rewrites the draft into a structured prompt (plain, sections, or role-task-goal) streamed from the session model, with Use, Undo, Copy and Close.'
+  zh: '在输入框发送按钮旁加上「优化提示词」控件，用当前会话模型把草稿流式改写为结构化提示词（plain、sections、role-task-goal 三种风格），并提供使用、撤销、复制与关闭。'

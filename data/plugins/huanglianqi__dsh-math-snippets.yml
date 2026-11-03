@@ -1,0 +1,6 @@
+url: https://github.com/huanglianqi/dsh-math-snippets
+name: huanglianqi/dsh-math-snippets
+category: ui
+description:
+  en: "LaTeX snippet expansion in the composer, built from Obsidian LaTeX Suite's own defaults — 138 triggers expand as they are typed, Tab walks the tabstops, and the table of 142 is editable in one JSON file."
+  zh: '输入框里的 LaTeX 片段展开，触发词表直接取自 Obsidian Latex Suite 的默认片段——138 条打完即出，Tab 依次跳 tabstop，142 条全在一份可编辑的 JSON 里。'
