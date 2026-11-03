@@ -1,0 +1,6 @@
+url: https://github.com/jakehemmerle/dsh-web-search-exa
+name: jakehemmerle/dsh-web-search-exa
+category: browser
+description:
+  en: 'Exa search provider for the dsh-web seam: the web_search tool sends queries to Exa''s /search API and returns the results as sources, in dsh web, dsh-TUI and headless runs. Needs an Exa API key (EXA_API_KEY, the credential store or a key file read on every search). web_fetch is unchanged and there is no UI.'
+  zh: 'dsh-web 接缝的 Exa 搜索提供方：web_search 工具把查询发送到 Exa 的 /search API，并把结果作为来源返回，适用于 dsh web、dsh-TUI 和 headless 运行。需要 Exa API key（EXA_API_KEY、凭据存储，或每次搜索时读取的 key 文件）。web_fetch 不变，没有界面。'

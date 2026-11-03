@@ -1,0 +1,7 @@
+url: https://github.com/BenHanks303/dsh-shortcut-extensions
+name: BenHanks303/dsh-shortcut-extensions
+category: ui
+description:
+  en: Keyboard-driven quick switching for DSH — model palette with colored provider tags, suffix tags and pins, a two-column session palette with per-question prompt preview and archived-session restore, recency-ordered session cycling, find-next-answered jump, composer focus, and configurable permission cycling, managed from a sidebar control panel.
+  zh: 键盘驱动的快速切换：模型面板（彩色提供方标签、后缀与推理标签、置顶）、两栏会话面板（提问预览、归档会话恢复）、按活动时间顺序的会话循环、查找下一个已回答的会话、聚焦输入框、可配置的权限循环，侧栏控制面板统一管理开关与改键。
+icon: https://raw.githubusercontent.com/BenHanks303/dsh-shortcut-extensions/main/assets/icon-180.png

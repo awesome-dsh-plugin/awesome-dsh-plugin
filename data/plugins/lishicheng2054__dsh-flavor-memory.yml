@@ -1,0 +1,6 @@
+url: https://github.com/lishicheng2054/dsh-flavor-memory
+name: lishicheng2054/dsh-flavor-memory
+category: memory
+description:
+  en: 'Character-chat memory layer that keeps persona, voice and relationship state separate from summaries, archives every raw message for retrieval, and ships a SillyTavern card importer plus an OpenAI-compatible gateway.'
+  zh: '角色聊天记忆层：人格、语气、关系与摘要分开保存，原文全量归档并按需检索，附带 SillyTavern 角色卡导入和 OpenAI 兼容网关。'
