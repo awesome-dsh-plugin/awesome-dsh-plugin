@@ -1,0 +1,7 @@
+url: https://github.com/bingomu/readable-diagrams
+name: bingomu/readable-diagrams
+category: skill
+description:
+  en: 'Diagrams a reader understands on first look: nine types from one JSON spec, with a checked title, reading path, legend, contrast and connectors.'
+  zh: '让读者一眼看懂的图表：一份 JSON 规格出九种图，标题、阅读动线、图例、对比度与连线都经机器校验。'
+icon: https://raw.githubusercontent.com/bingomu/readable-diagrams/main/assets/icon-180.png
