@@ -1,0 +1,6 @@
+url: https://github.com/GoldenLoaf24h/browserpaw/tree/main/plugins/browserpaw-dsh
+name: GoldenLoaf24h/browserpaw#browserpaw-dsh
+category: browser
+description:
+  en: 'High-speed dual-brain Chrome automation through local MCP bridge: connects to existing Chrome without losing logins, with 1-based numeric DOM indexing, autonomous on-page micro-loops, and background tab isolation.'
+  zh: '基于双脑架构与本地 MCP 桥接的高性能 Chrome 浏览器自动化插件：免登录丢失原地接管已有 Chrome，提供 1 基 DOM 编号索引、页内自主微循环与后台标签页隔离。'
