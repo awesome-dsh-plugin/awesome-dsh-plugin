@@ -250,3 +250,41 @@ Entries under the **Themes & Appearance / 主题与外观** category automatical
 ## Removing or updating / 移除与更新
 
 PRs fixing descriptions, moving entries between categories, or removing dead projects are equally welcome. / 修正描述、调整分类、移除失效项目的 PR 同样欢迎。
+
+### Git-only versions in the host index / Git 版本索引
+
+The web catalog and the host's format-1 index are separate outputs. A Git-only
+entry needs a reviewed `data/git-releases.json` record keyed by its exact
+catalog URL: `name` (actual package name), `version`, `publishedAt` (Unix
+seconds), `commit` (full 40-character SHA), and optionally `enginesDsh`.
+Verify `name` and `version` against the plugin's `package.json` at the pinned
+commit, and `publishedAt` against the release's `published_at` (converted to Unix
+seconds). Resolve the release tag to a full commit SHA; do not copy a mutable
+`target_commitish` branch name.
+
+`enginesDsh`, when supplied, must be copied from `package.json`'s `engines.dsh`
+at that same commit. Omit it when that field is absent: neither release-note
+support claims, `dshTarget`, nor a neighboring version justify inventing an
+installation constraint. Include immutable manifest and release links in the
+record's review PR so maintainers can reproduce the evidence. An omitted range imposes no host-version restriction in format 1; it is not
+evidence that all host versions were tested.
+The source URL is derived from the catalog entry, not supplied by the record.
+Do not use branches, guessed timestamps, npm placeholders or another repo's
+index. Update the record for subsequent releases. npm records retain precedence.
+
+网页收录与宿主 format-1 索引分别生成。没有 npm 发布的插件，可提交上述 Git
+发行记录；需要核对发行时间、包名、版本及完整提交 SHA。源仓库由现有条目决定，
+不能换成其他仓库。新版本需更新记录；缺少证据的条目继续明确计入遗漏，不伪造版本。
+
+`enginesDsh` 只从固定提交的 `package.json → engines.dsh` 读取；未声明就省略，
+不把发行说明、`dshTarget` 或相邻版本的支持范围推断成安装约束。记录审核 PR
+应附固定提交的 manifest 链接、Release 链接及 tag 对应的完整 SHA，方便复核。
+省略兼容范围时 format-1 不限制宿主版本，但不等于所有宿主版本均已验证。
+
+`data/git-releases.json` starts empty. Infrastructure changes do not themselves
+approve any plugin: submit actual release records in separate PRs for maintainer
+review. Tests use synthetic fixtures only. `docs/index.json` is generated and
+ignored by Git; do not commit it.
+
+发行映射初始为空；索引机制和具体插件条目分开审核，测试仅使用虚构记录。
+`docs/index.json` 是被 Git 忽略的生成物，不需要提交。
