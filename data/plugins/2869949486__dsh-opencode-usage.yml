@@ -2,5 +2,5 @@ url: https://github.com/2869949486/dsh-opencode-usage
 name: 2869949486/dsh-opencode-usage
 category: usage
 description:
-  en: "Adds an OpenCode Go usage page to dsh Settings with per-model 5-hour, weekly, and monthly spend and remaining allowance."
-  zh: "在 dsh 设置里新增 OpenCode Go 用量页，按模型显示 5 小时、本周、本月花费与剩余额度。"
+  en: "Adds an OpenCode Go page to dsh Settings that manages the account pool (add a key with a note, switch, disable, rotate, delete) and shows per-account, per-model 5-hour, weekly, and monthly spend with remaining allowance."
+  zh: "在 dsh 设置里新增 OpenCode Go 页面，直接管理账户池——填密钥和备注即可添加账户，支持设为当前、停用、轮换密钥与删除；同时按账户、按模型显示 5 小时、本周、本月花费与剩余额度。"

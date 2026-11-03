@@ -2,5 +2,5 @@ url: https://github.com/2869949486/dsh-opencode-quota-router
 name: 2869949486/dsh-opencode-quota-router
 category: model
 description:
-  en: "Routes DeepSeek models in dsh through an OpenCode Go subscription and falls back to the DeepSeek account per model when that model's allowance runs out; a plan-wide fallback covers bad credentials."
-  zh: "让 dsh 里的 DeepSeek 模型优先走 OpenCode Go 套餐额度，额度耗尽时只把该模型切回 DeepSeek 账户，其它模型继续用套餐；凭证异常等整体失败时整体回退。"
+  en: "Keeps a pool of OpenCode Go account keys and rotates them automatically: when the active account's allowance runs out or its key fails, the next account takes over; only a fully drained pool falls back plan-wide to the DeepSeek account, and a single drained model is just quarantined."
+  zh: "维护多个 OpenCode Go 账户密钥并自动轮替——当前账户额度用尽或密钥失效就切到下一个，整池耗尽才整体回退到 DeepSeek 账户；单模型额度耗尽只隔离该模型，其它模型继续用套餐。账户在「OpenCode 账户与用量」设置页里管理。"
