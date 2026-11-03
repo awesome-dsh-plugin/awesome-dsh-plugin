@@ -1,7 +1,0 @@
-url: 'https://github.com/zou240/dsh-plugins/tree/main/plugins/koujing'
-name: 'zou240/dsh-plugins#koujing'
-category: workflow
-description:
-  en: 'Turns a stated rule into a checkable intake card and writes it into the right AGENTS.md, and keeps project plans, a rule ledger, cross-file search and a timeline.'
-  zh: '把一句话的要求做成可核对的规则卡并写进对应的 AGENTS.md，同时管理项目计划、规则台账、跨文件检索与时间线。'
-icon: 'https://raw.githubusercontent.com/zou240/dsh-plugins/main/plugins/koujing/icon-180.png'
