@@ -1,0 +1,7 @@
+url: https://github.com/baiqieji-LuLu/DSH-DREAM
+name: baiqieji-LuLu/DSH-DREAM
+category: memory
+description:
+  en: 'A durable RAG-enhanced long-term memory layer for LLM agents, featuring holographic memory, state-slot conflict detection, and timeline retrieval.'
+  zh: '面向 LLM Agent 的持久化 RAG 增强长期记忆层，支持全息记忆、状态槽位冲突检测与时间线检索。'
+icon: https://raw.githubusercontent.com/baiqieji-LuLu/DSH-DREAM/main/dsh_plugin/icon.png
