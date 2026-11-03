@@ -1,0 +1,6 @@
+url: https://github.com/rebornace/dsh-composer-enhancer
+name: rebornace/dsh-composer-enhancer
+category: ui
+description:
+  en: 'Composer enhancements for DeepSeek Harness Desktop: prompt history (↑/↓ and Alt+R search), one-click prompt optimize with undo, next-prompt prediction (Tab to accept), and conversation plus tracked-file restore with undo-restore from the +// command menu.'
+  zh: 'DeepSeek Harness Desktop 的 Composer 增强：提示词历史（↑/↓ 与 Alt+R 搜索）、一键优化与撤销、下一条提示词预测（Tab 采纳），以及对话与已跟踪文件恢复，并可在 +// 指令菜单中撤销恢复。'
