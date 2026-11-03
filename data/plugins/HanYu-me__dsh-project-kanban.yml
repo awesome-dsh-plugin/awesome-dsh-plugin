@@ -1,0 +1,7 @@
+url: https://github.com/HanYu-me/dsh-project-kanban
+name: HanYu-me/dsh-project-kanban
+category: ui
+description:
+  en: 'A kanban board in the dsh sidebar. Every project gets its own section with four fixed columns (todo, in progress, feedback, done); add, rename, recolor, reorder and delete projects and tasks, advance a task with one click, reorder by drag and drop or with the card menu, undo a deletion, and collapse a project. Colors, radii and shadows come from the dsh theme, so it follows light and dark, and the layout reflows from four columns to two to one.'
+  zh: 'dsh 侧边栏里的项目看板。每个项目一个区块，固定四列（待办 / 进行中 / 待反馈 / 已完成）：新建、重命名、换色、排序、删除项目和任务，点一下把任务推到下一列，拖拽或卡片菜单调整顺序，删除可撤销，项目可折叠。颜色、圆角和阴影取自 dsh 主题变量，跟随浅色/深色，宽度不够时从四列变两列再变单列。'
+tarball: https://github.com/HanYu-me/dsh-project-kanban/releases/latest/download/dsh-project-kanban.tgz
