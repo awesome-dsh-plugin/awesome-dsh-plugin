@@ -1,0 +1,6 @@
+url: https://github.com/Okra-juice/dsh-rheostat
+name: Okra-juice/dsh-rheostat
+category: ui
+description:
+  en: Replaces the composer's reasoning-effort list with a slider whose color grades from grey to blue, with a rice-bowl indicator for the current level.
+  zh: 把模型菜单里的推理等级列表换成滑块，颜色随档位由灰渐变到蓝，并用一碗米饭表示当前档位。
