@@ -1,0 +1,6 @@
+url: https://github.com/MYCF711/dsh-GOkifu-compact
+name: MYCF711/dsh-GOkifu-compact
+category: memory
+description:
+  en: 'Kifu-style context compression for long DSH sessions: each step folds new turns into a DAG (node = position, edge = attempted fix), injects only a ~323-token hot list, and adds failure memory plus position-repetition detection.'
+  zh: '棋谱式上下文压缩：每步把新回合折进一张 DAG（节点=局面、边=试过的改法），只注入约 323 tokens 的热清单；带失败记忆与局面重复检测。'
