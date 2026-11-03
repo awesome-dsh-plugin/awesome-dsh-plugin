@@ -1,0 +1,6 @@
+url: https://github.com/1010231693/dsh-auto-compaction
+name: 1010231693/dsh-auto-compaction
+category: session
+description:
+  en: 'Idle-time handoff compaction: once the context reaches an adjustable share of the usable input budget it waits for the turn to end, has the model write a handoff checkpoint from the session''s own cached prefix, and replaces the whole conversation with that single message — no extra full re-prefill, and rewind can still restore the old messages.'
+  zh: '空档期交接式压缩：上下文用到「可用输入预算」的可调比例后先等回合结束，再复用会话缓存前缀写一份交接文档，把整段历史替换成这一条消息——不额外全量 prefill，旧消息仍可用 rewind 回滚。'
