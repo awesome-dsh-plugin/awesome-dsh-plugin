@@ -1,0 +1,8 @@
+url: https://github.com/GXinnnnnn/dsh-SAO
+name: GXinnnnnn/dsh-SAO
+category: theme
+description:
+  en: SAO Link Start startup animation with early independent rendering; leaves the DSH theme unchanged.
+  zh: 仿刀剑神域纯启动动画，早期独立渲染，不修改 DSH 主题。
+icon: https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/main/icon.png
+tarball: https://github.com/GXinnnnnn/dsh-SAO/releases/download/v3.0.0/dsh-SAO.tgz
