@@ -1,7 +1,6 @@
 url: https://github.com/keyblues/dsh-plugin-opencode-go-usage
 name: keyblues/dsh-plugin-opencode-go-usage
 category: usage
-tarball: https://github.com/keyblues/dsh-plugin-opencode-go-usage/releases/download/v1.0.0/dsh-plugin-opencode-go-usage-1.0.0.tgz
 description:
-  en: 'OpenCode Go subscription usage in the composer dock: the rolling 5-hour, weekly and monthly windows as three small rings with used percentages (amber at 70%, red at 90%), plus a click-open detail card with per-window progress bars, reset countdowns and a refresh button. The Host half reads the official usage endpoint behind a 15 s minimum interval and serves one same-origin JSON route, so the API key — taken from plugin config, the Harness credential store or OpenCode auth.json — never reaches the browser.'
-  zh: '在输入框下方显示 OpenCode Go 套餐用量的三个窗口圆环（5 小时滚动 / 每周 / 每月）与已用百分比（70% 变黄、90% 变红），点击整条弹出详情卡：每个窗口的额度进度条、重置倒计时与刷新按钮。Host 半以 15 秒最小间隔读取官方用量接口，只通过一条同源 JSON 路由把百分比交给页面；API Key（来自插件配置、Harness 凭据库或 OpenCode 的 auth.json）不进浏览器。'
+  en: 'OpenCode Go subscription usage beside the composer: the rolling 5-hour, weekly and monthly windows each as a small ring with the used percentage (amber at 70%, red at 90%). Clicking the meter opens a detail card with per-window progress bars, reset countdowns and a refresh button, and when it is not clicked nothing floats over the conversation. The API key stays in the Host process and never reaches the browser.'
+  zh: '在输入框旁边常驻显示 OpenCode Go 套餐用量：5 小时滚动、每周、每月三个窗口各一个圆环与已用百分比（70% 变黄、90% 变红）；点击整条弹出详情卡，含每个窗口的额度进度条、重置倒计时与刷新按钮，不点击时不会在对话上悬浮任何东西。API Key 只留在 Host 进程里，不进入浏览器。'
