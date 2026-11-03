@@ -1,0 +1,6 @@
+url: https://github.com/Boris-boomer/dsh-shepherd
+name: Boris-boomer/dsh-shepherd
+category: workflow
+description:
+  en: 'Orchestration and management plugin for DSH agent workflows.'
+  zh: '用于编排和管理 DSH 代理工作流的插件。'
