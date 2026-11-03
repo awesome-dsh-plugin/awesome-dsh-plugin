@@ -1,0 +1,7 @@
+url: https://github.com/lizhijie429/dsh-task-notifier
+name: lizhijie429/dsh-task-notifier
+category: notify
+description:
+  en: 'Sends desktop notifications when a DSH turn finishes or fails, and sends 继续 automatically after the model-retry budget is exhausted.'
+  zh: '任务结束或失败时发送桌面通知；模型请求重试预算耗尽时自动发送「继续」让 Agent 接着执行。'
+icon: https://raw.githubusercontent.com/lizhijie429/dsh-task-notifier/main/assets/icon.png

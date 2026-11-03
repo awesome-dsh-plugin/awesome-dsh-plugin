@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/research-data-provenance
+name: liuhange789/data-asset-inspector#research-data-provenance
+category: tools
+description:
+  zh: "科研数据溯源审计插件，审计血缘完整性、可复现性与FAIR原则合规性，输出溯源审计报告，支撑科研诚信与开放科学。"
+  en: "Research data provenance auditor: audits lineage integrity, reproducibility and FAIR principles compliance, outputs provenance audit reports for research integrity and open science."

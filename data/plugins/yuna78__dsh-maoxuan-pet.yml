@@ -1,0 +1,8 @@
+# data/plugins/yuna78__dsh-maoxuan-pet.yml —— 一个文件就是全部投稿（两个 README 都是生成物，不要动）
+url: https://github.com/yuna78/dsh-maoxuan-pet
+name: yuna78/dsh-maoxuan-pet
+category: ui
+description:
+  en: "A floating whale-girl pet in the DSH web GUI: every hour it takes one article from a bundled 33-essay corpus of Mao Zedong's selected works and puts a cited line with its source link, one of six business angles (customer, project, organisation, cash flow, decision, self-discipline) and a one-line nudge for a founder into a bubble capped at 200 characters. Ships the maoxuan-pet preset and a maoxuan-vademecum skill over the same corpus, four poses, quiet hours and a daily cap."
+  zh: "DSH 网页右下角的鲸鱼娘桌宠「小毛」：每小时从内置的 33 篇毛选语料里挑一篇，把一句带来源链接的原文、六个落点之一（客户 / 项目 / 组织 / 现金流 / 决策 / 自律）和一句说给你听的具体督促放进不超过 200 字的气泡；另带 maoxuan-pet preset 与 maoxuan-vademecum skill，可以顺着同一份语料问「这一步该怎么走」，四帧立绘，支持免打扰时段与每日上限。"
+icon: https://raw.githubusercontent.com/yuna78/dsh-maoxuan-pet/main/assets/icon-256.png

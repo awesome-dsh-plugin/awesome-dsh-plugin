@@ -1,0 +1,10 @@
+url: https://github.com/Yuuyuko-uu/dsh-fish-buddy
+name: Yuuyuko-uu/dsh-fish-buddy
+category: identity
+description:
+  en: "DSH plugin half of Fish Buddy: relays a separately downloaded Windows desktop whale widget
+    (the .exe from the project's Releases page) to the session you bind; the widget itself does the
+    listening, speaking, live subtitles, sampled frames and in-game chat, and downloads one of its
+    voice-recognition models (228 MB default) on first use."
+  zh: 《鱼搭子》的 DSH 插件半边：把另行下载的 Windows 桌面小鲸鱼挂件（Releases 里的 .exe）与你绑定的会话接起来；
+    听、说、陪看字幕、抽帧与游戏弹幕都在挂件里，首次使用还要在挂件中下载一档语音识别模型（默认 228MB）。

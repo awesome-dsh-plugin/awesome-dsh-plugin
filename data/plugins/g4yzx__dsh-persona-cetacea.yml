@@ -1,0 +1,8 @@
+url: https://github.com/g4yzx/dsh-persona-cetacea
+name: g4yzx/dsh-persona-cetacea
+category: identity
+description:
+  en: Injects a configurable whale-girl persona into every DeepSeek Harness system prompt.
+  zh: 把可配置的鲸鱼娘人格注入 DeepSeek Harness 所有智能体的系统提示词。
+icon: https://raw.githubusercontent.com/g4yzx/dsh-persona-cetacea/main/icon.webp
+tarball: https://github.com/g4yzx/dsh-persona-cetacea/releases/download/v1.2.0/dsh-persona-cetacea-1.2.0.tgz
