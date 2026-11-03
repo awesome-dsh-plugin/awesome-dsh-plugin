@@ -3022,7 +3022,7 @@ dsh plugin --profile web add dshmarket
 - [wshdp123/dsh-connect-qoder-pro](https://github.com/wshdp123/dsh-connect-qoder-pro) — 连接 DSH 与本地 Qoder 桌面客户端登录态，接入 Qoder CN 官方模型（qmodel、qfmodel）。仅 Windows：凭据读取依赖 DPAPI。
 - [WSL043/dsh-codex-subscription](https://github.com/WSL043/dsh-codex-subscription) — 通过 ChatGPT OAuth 在 DSH 中使用 Codex 模型，提供订阅联网搜索、额度与安全重置、图片工具、高速模式和模型感知上下文；无需 API Key 或 Codex CLI。
 - [wss534857356/dsh-plugin-codex](https://github.com/wss534857356/dsh-plugin-codex) — 使用本地 Codex 登录的 Codex App Server 模型提供方，支持会话复用、Harness 工具桥接、原生动作轨迹和生成图片持久化。
-- [wth373737/dsh-plugin-ollama-bridge](https://github.com/wth373737/dsh-plugin-ollama-bridge) — 本机 Ollama 工具：模型清单、单次（未校验）问答，以及跑长文本的批处理——分块并发、逐条确定性校验、回传一小段抽样原文供复核，结果只写入会话工作区。
+- [wth373737/dsh-plugin-ollama-bridge](https://github.com/wth373737/dsh-plugin-ollama-bridge) — 本机 Ollama 工具：模型清单、单次（未校验）问答，以及跑长文本的批处理——分块并发、逐条确定性校验、回传一小段抽样原文供复核，结果可选择写入会话工作区。
 - [wyouwd1/dsh-opencode-models](https://github.com/wyouwd1/dsh-opencode-models) — 在 settings.yaml 中管理 OpenCode Zen 免费档与 Go 档模型——实时拉取 opencode.ai 的最新模型列表，按路由对比已配置与线上差异，通过四个 agent 工具和设置页分区增删模型条目。
 - [x5427876/dsh-opencode-free](https://github.com/x5427876/dsh-opencode-free) — 在 DeepSeek Harness 中使用免费的 OpenCode Zen 模型：默认匿名，可选填 Zen key；模型表在运行时从 Zen 官方列表读取，匿名请求会按免费档校验做适配，并有带日期的实测记录。
 - [xalor888/dsh-unlimited-retry](https://github.com/xalor888/dsh-unlimited-retry) — 对没有其它恢复层接手的模型请求做重试，默认不设次数上限、退避有上限，且永不重试取消；策略可在设置面板中编辑。
