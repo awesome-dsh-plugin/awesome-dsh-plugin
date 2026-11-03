@@ -1,0 +1,7 @@
+url: https://github.com/floatDreamWithSong/dsh-lifecycle
+name: floatDreamWithSong/dsh-lifecycle
+category: security
+description:
+  en: Lock screen with password/OTP/Passkey, persistent sessions and custom wallpapers; Harness power controls and npm updates on Linux and macOS, with experimental Windows support not yet tested on Windows.
+  zh: 锁屏、密码／OTP／Passkey、持久化登录与自定义壁纸，支持 Linux/macOS 的 Harness 电源管理及 npm 更新；Windows 为实验支持，暂未实机验证。
+icon: https://raw.githubusercontent.com/floatDreamWithSong/dsh-lifecycle/main/assets/icon.png
