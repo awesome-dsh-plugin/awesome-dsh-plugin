@@ -1,0 +1,6 @@
+url: https://github.com/Ren-xing/dsh-audio-tools
+name: Ren-xing/dsh-audio-tools
+category: voice
+description:
+  en: 'Audio tools for DSH: inspect audio/video files, transcode or extract a video track, trim and normalize, and transcribe speech with local whisper.cpp or an OpenAI-compatible API.'
+  zh: 'DSH 音频工具：查看音频/视频信息、转码、从视频提取音轨、裁剪与响度归一化，并用本地 whisper.cpp 或 OpenAI 兼容接口把语音转成文字和字幕。'
