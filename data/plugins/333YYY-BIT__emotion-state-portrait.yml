@@ -1,0 +1,7 @@
+url: https://github.com/333YYY-BIT/emotion-state-portrait
+name: 333YYY-BIT/emotion-state-portrait
+category: tools
+description:
+  en: 'Emotion, energy and per-user portrait engine for AI characters: a 303-word leveled emotion library with lowest-level replacement and a promotion buffer, a spirit meter with easter-egg state transitions (excited / suppressed / angry), and per-user portraits.'
+  zh: '给 AI 角色的情绪·精神·人物画像引擎：303 个情绪词分级叠加，等级最低者优先替换、弱情绪走缓冲区升级，精神值驱动说话风格，连击解锁亢奋/压抑/生气状态跃迁，按人画像，可接任意 AI。'
+icon: https://raw.githubusercontent.com/333YYY-BIT/emotion-state-portrait/main/assets/icon-180.png
