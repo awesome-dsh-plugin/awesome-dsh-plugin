@@ -2,7 +2,7 @@ url: https://github.com/TLEWA/dsh-sidebar-row-menu
 name: TLEWA/dsh-sidebar-row-menu
 category: ui
 description:
-  en: 'Right-click menus for DSH sidebar rows: workspace rows get new session, rename, open in VS Code, open in Explorer, copy path and delete; session rows open their native menu at the pointer, extended with VS Code and Explorer entries. Adapted from miao-ge/dsh-sidebar-context-menu and 0imzero/dsh-workspace-menu; do not install it alongside either - all of them attach right-click menus to the same sidebar rows.'
-  zh: 'DSH 侧边栏行右键菜单：工作区行可新建会话、重命名、在 VS Code 打开、在资源管理器中打开、复制路径和删除；会话行在指针处展开原生菜单，并追加 VS Code 与资源管理器两项。 改编自 miao-ge/dsh-sidebar-context-menu 与 0imzero/dsh-workspace-menu，请勿与它们同时安装——三者都会给同一批侧边栏行挂右键菜单。'
+  en: 'Right-click menus for DSH sidebar rows: workspace rows get new session, rename, pinned open-with apps, an open-with submenu, copy path and delete; session rows open their native menu at the pointer, extended with pinned open-with apps, an open-with submenu, and permanent deletion of archived sessions. Adapted from miao-ge/dsh-sidebar-context-menu and 0imzero/dsh-workspace-menu; do not install it alongside either - all of them attach right-click menus to the same sidebar rows.'
+  zh: 'DSH 侧边栏行右键菜单：工作区行可新建会话、重命名、置顶打开方式、打开方式子菜单、复制路径和删除；会话行在指针处展开原生菜单，并追加置顶打开方式、打开方式子菜单，以及已归档会话的永久删除。 改编自 miao-ge/dsh-sidebar-context-menu 与 0imzero/dsh-workspace-menu，请勿与它们同时安装——三者都会给同一批侧边栏行挂右键菜单。'
 icon: https://raw.githubusercontent.com/TLEWA/dsh-sidebar-row-menu/main/assets/icon-180.png
 tarball: https://github.com/TLEWA/dsh-sidebar-row-menu/releases/latest/download/dsh-sidebar-row-menu.tgz
