@@ -1,0 +1,6 @@
+url: https://github.com/fengshenx/dsh-leader-kit
+name: fengshenx/dsh-leader-kit
+category: workflow
+description:
+  en: 'One leader, many sessions: tell the leader the goal and it splits the work into cards, runs persistent worker sessions in the background, collects their reports, and keeps the facts on a per-project board in the right sidebar, so several features move in parallel instead of one at a time. Project-level LEADER.md and SLOTS.md prompts shape every request, and `read_worker_session` replays a worker transcript read-only without waking it.'
+  zh: '一个 leader 管多个 session：把目标告诉 leader，它拆成卡片、在后台跑常驻 worker 会话、收齐各自回报，任务事实落在右侧栏的按项目看板——几个 feature 并行推进，而不是逐个陪跑。项目级 LEADER.md 与 SLOTS.md 塑造每次请求的行为，`read_worker_session` 只读回放 worker 的会话过程、不唤醒它。'
