@@ -2,6 +2,6 @@ url: https://github.com/keyblues/dsh-plugin-everything
 name: keyblues/dsh-plugin-everything
 category: tools
 description:
-  en: 'Whole-disk file search for the agent through the official Everything SDK: the plugin calls Everything64.dll in-process over N-API FFI - no es.exe child process and no HTTP port - and returns full paths, sizes and modified times in milliseconds, with dedicated Web UI cards for search and status. Windows x64 only; requires voidtools Everything 1.4+ installed and running (the plugin can auto-start it).'
-  zh: '通过官方 Everything SDK 为 Agent 提供全盘文件搜索：插件经 N-API FFI 在进程内调用 Everything64.dll，不启动 es.exe、不监听 HTTP 端口，毫秒级返回完整路径、大小与修改时间，并为 Web 界面提供搜索与状态两张工具卡片。仅支持 Windows x64，且需安装并运行 voidtools Everything 1.4 以上（已安装时插件可自动拉起）。'
+  en: 'Whole-disk file search on Windows: ask for files or folders by name, path, extension, size or modified date and get matches from the local voidtools Everything index in milliseconds, with full paths, sizes and modified times. A second card reports whether Everything is reachable and how many items it indexes. Ships the official Everything SDK, so no es.exe or HTTP server is needed; Everything 1.4+ must be installed and running (the plugin can start it).'
+  zh: 'Windows 全盘文件搜索：按文件名、路径、扩展名、大小或修改时间检索，毫秒级从本机 voidtools Everything 索引返回匹配的文件与文件夹（完整路径、大小、修改时间）；另一张卡片显示 Everything 是否可达与索引条目数。内置官方 Everything SDK，不需要 es.exe 或 HTTP 服务；需安装并运行 Everything 1.4 以上（插件可自动拉起）。'
 icon: https://raw.githubusercontent.com/keyblues/dsh-plugin-everything/main/assets/icon-180.png

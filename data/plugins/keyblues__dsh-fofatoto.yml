@@ -2,5 +2,5 @@ url: https://github.com/keyblues/dsh-fofatoto
 name: keyblues/dsh-fofatoto
 category: security
 description:
-  en: 'FOFA cyberspace mapping for the agent: `fofa_account` reports the account quota, `fofa_search` runs one FOFA query and returns the matching rows plus the total match count, and `fofa_export` pages the full result set with a time cursor and writes CSV, JSON or TXT files incrementally into the session workspace; a CSV or TXT export that stopped at the time budget or on an upstream error can continue into the same file from its saved cursor. The API key is saved from the plugin page into the harness credential store.'
-  zh: 'FOFA 网络空间测绘工具：`fofa_account` 查询账号额度，`fofa_search` 执行一次 FOFA 语句并返回匹配行与命中总数，`fofa_export` 用时间游标分页拉取全量结果并增量写入会话工作区的 CSV／JSON／TXT 文件；到时间预算或上游报错中断的 CSV／TXT 导出可凭保存的游标续写同一文件。API Key 在插件页保存到 Harness 凭据库。'
+  en: 'FOFA cyberspace mapping inside the conversation: check the account quota, run FOFA queries and export the full result set into CSV/JSON/TXT files in the session workspace by paging through a time cursor. A CSV or TXT export stopped by its time budget or by an upstream error continues into the same file from the saved cursor, so rows already fetched are kept. Results render as conversation cards (query, match count, file path), and the API key is saved from the plugin page into the Harness credential store.'
+  zh: '在对话里做 FOFA 网络空间测绘：查看账号额度、执行查询语句，并把全量结果按时间游标深翻页导出为 CSV／JSON／TXT 落到会话工作区；被时间预算或上游报错中断的 CSV／TXT 导出可凭游标续写同一文件，已拉取的行不丢。结果以对话卡片展示（语句、命中数、文件路径），API Key 在插件页保存到 Harness 凭据库。'
