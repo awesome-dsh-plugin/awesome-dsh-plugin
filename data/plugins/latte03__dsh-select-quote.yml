@@ -2,5 +2,5 @@ url: https://github.com/latte03/dsh-select-quote
 name: latte03/dsh-select-quote
 category: tools
 description:
-  en: 'Select text in the dsh web conversation to attach it as an annotation to your next message. The source text keeps a dashed highlight with an ordinal badge in place, and the composer summary lists, edits and jumps back to each annotation.'
-  zh: '在 dsh 网页版对话里划词，把选中文本作为批注附到下一条消息。原文位置保留虚线高亮和序号角标，输入框上方的批注摘要可查看、编辑并跳回每一条批注。'
+  en: 'Adds selection annotations, in-place translation, sidebar subagent questions and default-browser link opening to DSH. The selected text rides along with your next message, the source keeps its highlight and ordinal mark for jumping back, the menu opens on selection or from the right-click menu, and the translation model can be picked separately.'
+  zh: '为 DSH 增加划词批注、引用、划词翻译、侧边子代理提问，链接用默认浏览器打开。选中的原文连同评论随下一条消息交给模型，正文保留高亮与序号角标、可跳回原文；菜单可划词浮出或从右键打开，翻译可单独指定模型。'
