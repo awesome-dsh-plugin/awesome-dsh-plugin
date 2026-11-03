@@ -1,8 +1,0 @@
-url: https://github.com/cloudatlasx/dsh-pet-plus/tree/main/dsh-pet
-name: cloudatlasx/dsh-pet-plus#dsh-pet
-category: ui
-description:
-  en: "A desktop pet living in DeepSeek Harness — 100+ transparent animations, multiple pets, draggable throw physics — plus schedule reminders that pop up on time, approval/question bubbles on the pet itself (allow once, allow for this session, or reject), TTS with voice preview, sliders for every tuning value, and a configurable data directory."
-  zh: 住在 DSH 里的桌面宠物：100+ 段透明动画、可多开、可拖拽甩抛；到点提醒直接弹在宠物身上，审批/提问也能在宠物上处理（允许一次 / 本会话都允许 / 拒绝），语音合成带试听、参数全是滑条、数据目录可配置。
-icon: https://raw.githubusercontent.com/cloudatlasx/dsh-pet-plus/main/dsh-pet/assets/logo.png
-tarball: https://github.com/cloudatlasx/dsh-pet-plus/releases/download/v0.6.0/dsh-pet-plus-0.6.0.tgz
