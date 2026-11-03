@@ -1,0 +1,8 @@
+url: https://github.com/huajikano/bibao/tree/main/bibao-brain
+name: huajikano/bibao#bibao-brain
+category: identity
+description:
+  en: 'A simulated human-brain core for chat: global workspace, emotional appraisal, dual-system memory with nightly consolidation, and an experimental sensory interface.'
+  zh: 一个按计算神经科学定律运行的拟人认知内核：全局工作空间、情感评估、双系统记忆与夜间归纳，可接管 QQ 群聊。
+icon: https://raw.githubusercontent.com/huajikano/bibao/main/bibao-brain/icon.jpg
+tarball: https://github.com/huajikano/bibao/releases/latest/download/bibao.tgz
