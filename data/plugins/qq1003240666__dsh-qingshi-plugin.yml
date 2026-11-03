@@ -5,4 +5,4 @@ description:
   en: 'Qingshi diary and family-tree assistant: reads and writes career records, resolves relatives by kinship term, and drives the real H5 pages in a desktop window.'
   zh: '青史日记与族谱助手：读写生涯记录、按称谓倒推亲属关系，并在独立窗口里操作真实 H5 页面。'
 icon: https://raw.githubusercontent.com/qq1003240666/dsh-qingshi-plugin/main/assets/icon-180.png
-tarball: https://github.com/qq1003240666/dsh-qingshi-plugin/releases/download/v0.15.1/dsh-qingshi.tgz
+tarball: https://github.com/qq1003240666/dsh-qingshi-plugin/releases/latest/download/dsh-qingshi.tgz
