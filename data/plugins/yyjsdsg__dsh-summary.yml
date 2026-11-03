@@ -1,0 +1,7 @@
+url: https://github.com/yyjsdsg/dsh-summary
+name: yyjsdsg/dsh-summary
+category: session
+description:
+  zh: "把每个会话总结成工作区里的 Markdown 文件，并提供一个浏览、重新生成和删除的页面。"
+  en: "Write each session's summary as a Markdown file in its workspace, with a page to browse, regenerate and delete them."
+icon: https://raw.githubusercontent.com/yyjsdsg/dsh-summary/main/assets/icon-180.png
