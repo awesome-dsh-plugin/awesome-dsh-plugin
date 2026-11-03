@@ -1,0 +1,7 @@
+name: dsh-novel-proofread
+version: 1.0.0
+description: 纯本地小说校对插件，支持扫描、判定、应用修改，不自动改动文档，无网络、无上传
+category: skill
+npm: dsh-novel-proofread
+author: PIDust
+email: 674201059@qq.com
