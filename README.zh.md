@@ -5290,7 +5290,7 @@ dsh plugin --profile web add dshmarket
 - [YixiangTang/dsh-tool-subagent-batch](https://github.com/YixiangTang/dsh-tool-subagent-batch) — DeepSeek Harness 子智能体的滚动窗口批量调度器：一次 subagent_batch 调用携带一队互相独立的子任务和由用户掌握的并发窗口，任一子智能体一结束就立刻补位，结束时把每个子智能体的最终回答、停止原因与子会话 id 作为一份验收报告一并返回。async 模式让整个池子在后台运行、用 subagent_batch_status 收取结果；并发窗口来自配置、DSH_SUBAGENT_BATCH_CONCURRENCY 或硬件推荐值。
 - [yiyunet/dsh-dingtalk-connector](https://github.com/yiyunet/dsh-dingtalk-connector) — DSH 插件：包装钉钉官方 dws CLI，读写钉钉 AI 表格，提供 10 个钉钉 AI 表格工具（9 个 `dingtalk_aitable_*` 加 1 个 `dingtalk_sync_job`）、设置面板与定时 CSV 导出。
 - [yiyunet/dsh-mcp-client-manager](https://github.com/yiyunet/dsh-mcp-client-manager) — DSH 插件：一块设置面板管理 @deepseek-ai/dsh-mcp-client 的 MCP 行——列出、新增、改写、启停，不必再手写 cordis.patch.yml；零构建、零运行依赖。
-- [yjl9903/AnimeGarden#dsh](https://github.com/yjl9903/AnimeGarden/tree/main/plugins/dsh) — Anime Garden 是一个动画 BT 资源聚合站, 你可以在这里聚合搜索来自動漫花園、蜜柑计划、萌番组和 ANi 的动画资源.
+- [yjl9903/AnimeGarden#dsh](https://github.com/yjl9903/AnimeGarden/tree/main/plugins/dsh) — Anime Garden 的 DSH 插件：在 DSH 内搜索来自動漫花園、蜜柑计划、萌番组和 ANi 的动画 BT 资源——支持对话搜索、按字幕组和类型筛选的侧边栏面板、新番周历，以及站内浮窗播放。
 - [ymwang92/dsh-refkeeper](https://github.com/ymwang92/dsh-refkeeper) — 收集对话里引用过的文献，逐条到 Crossref、OpenAlex、arXiv、DataCite 核对，通过核对的导出为 BibTeX 或 RIS。
 - [YokosWY/dsh-guard#plugin](https://github.com/YokosWY/dsh-guard/tree/main/plugin) — 会话头部的「护航」面板：启停本机 dsh-guard 守护，显示扫描开关、守护心跳与上次扫描时间；做监控的 Python 守护需单独部署，插件通过 DSH_GUARD_ROOT 环境变量定位它的目录。守护默认路径是 Windows 上的 D:\AI\Projects\dsh-guard，可用 DSH_GUARD_ROOT 指向别的目录。
 - [YongjianWan/dsh-loadout](https://github.com/YongjianWan/dsh-loadout) — DSH 的按需工具装配：MCP 工具按 server 自动分组、宿主插件工具按手工前缀分组，进组的默认隐藏、一句话激活，没被规则认领的始终可见。另带写代码/写材料/运维/只读审阅内置模式、新工具观察区用多了自动转正、敏感组激活要用户点头、读网页当轮切断外发组防提示注入，以及长尾工具的内置搜索和代理调用。
