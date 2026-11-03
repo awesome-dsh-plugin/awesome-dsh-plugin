@@ -1,0 +1,6 @@
+url: https://github.com/Ganglith/dsh-wayland-use
+name: Ganglith/dsh-wayland-use
+category: tools
+description:
+  en: 'Wayland desktop control for GNOME/Mutter sessions: screenshot, OCR with screen coordinates, click by text, and batch input actions.'
+  zh: 'GNOME/Mutter 下的 Wayland 桌面控制：截图、带坐标的 OCR、按文字点击，以及批量输入动作。'
