@@ -1,0 +1,8 @@
+url: https://github.com/q8atnight/dsh-squeeze
+name: q8atnight/dsh-squeeze
+category: tools
+description:
+  en: 'Adds a squeeze tool: the agent hands a long web page, a batch of pages, a text file or a text PDF (via pdftotext) plus one question to a helper model and gets back only the answer, so the material never enters the chat. A settings page picks up to three helper models from the DSH model list, each with a nickname, a fixed thinking level and a "when to use" note, with optional fallback and size limits taken from each model''s context window.'
+  zh: '新增 squeeze 工具：Agent 把长网页、多个网页、文本文件或含文本层的 PDF（借助 pdftotext）连同一个问题交给辅助模型阅读，只把答案带回对话，原文不进入上下文。设置页可从 DSH 模型列表选择最多三个辅助模型，各配昵称、固定思考强度与“何时使用”说明，支持可选的回退，并按各模型的上下文窗口自动计算体积上限。'
+tarball: https://github.com/q8atnight/dsh-squeeze/releases/download/v2.1.0/dsh-squeeze-2.1.0.tgz
+icon: https://raw.githubusercontent.com/q8atnight/dsh-squeeze/main/assets/icon-180.png
