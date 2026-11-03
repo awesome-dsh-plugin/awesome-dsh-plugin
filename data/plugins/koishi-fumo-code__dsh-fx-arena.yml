@@ -1,8 +1,8 @@
 url: https://github.com/koishi-fumo-code/dsh-fx-arena
 name: koishi-fumo-code/dsh-fx-arena
 category: fun
-tarball: https://github.com/koishi-fumo-code/dsh-fx-arena/releases/download/v0.5.0/dsh-fx-arena-0.5.0.tar.gz
+tarball: https://github.com/koishi-fumo-code/dsh-fx-arena/releases/download/v0.6.0/dsh-fx-arena-0.6.0.tar.gz
 icon: https://raw.githubusercontent.com/koishi-fumo-code/dsh-fx-arena/main/assets/icon-512.png
 description:
-  en: 'Simulated FX trading arena played against an algorithmic whale-chan opponent: a live canvas candlestick chart over five instruments (EUR/USD, GBP/USD, USD/JPY, gold, and Whale/TOKEN, her own coin she never shorts), selectable leverage from 10x to 500x, and two modes — a timed mode with 90s to 500s rounds settled on equity, and an untimed goal mode that starts with $300,000 and ends when someone first reaches $20M or goes into debt (equity below zero, no maintenance margin). Margin and spread are modeled, prices are a local random walk with occasional news shocks, and nothing touches the network or real money.'
-  zh: '和大肥鱼（鲸鲸）对打的 FX 模拟盘：Canvas 实时 K 线，五个品种（欧美、镑美、美日、黄金，以及鲸元/TOKEN——她自己的币，她绝不做空），杠杆可选 10x~500x；两种赛制——计时赛（一局 90s~500s，到点比权益），以及不限时的「重生之久留美归来」：初始资金 30 万，先摸到 2000 万赢，负债（权益跌破 0，没有维持线强平）即出局。保证金与点差均有建模；行情是本地随机游走加偶发消息冲击，全程零联网、零真钱。'
+  en: 'Simulated FX trading arena played against an algorithmic whale-chan opponent: a live canvas candlestick chart over five instruments (EUR/USD, GBP/USD, USD/JPY, gold, and Whale/TOKEN, her own coin she never shorts), selectable leverage from 10x to 500x, and two modes — a timed mode with 90s to 500s rounds settled on equity, and an untimed goal mode that starts with $300,000 and ends when someone first reaches $20M or goes into debt (equity below zero, no maintenance margin). The match runs in a module-level engine, so switching to a conversation does not stop it or restart it. Margin and spread are modeled, prices are a local random walk with occasional news shocks, and nothing touches the network or real money.'
+  zh: '和大肥鱼（鲸鲸）对打的 FX 模拟盘：Canvas 实时 K 线，五个品种（欧美、镑美、美日、黄金，以及鲸元/TOKEN——她自己的币，她绝不做空），杠杆可选 10x~500x；两种赛制——计时赛（一局 90s~500s，到点比权益），以及不限时的「重生之久留美归来」：初始资金 30 万，先摸到 2000 万赢，负债（权益跌破 0，没有维持线强平）即出局。对局跑在模块级引擎里，切到会话不会停表也不会重开。保证金与点差均有建模；行情是本地随机游走加偶发消息冲击，全程零联网、零真钱。'
