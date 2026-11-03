@@ -2,6 +2,6 @@ url: https://github.com/baiqieji-LuLu/DSH-DREAM
 name: baiqieji-LuLu/DSH-DREAM
 category: memory
 description:
-  en: 'A durable RAG-enhanced long-term memory layer for LLM agents, featuring holographic memory, state-slot conflict detection, and timeline retrieval.'
-  zh: '面向 LLM Agent 的持久化 RAG 增强长期记忆层，支持全息记忆、状态槽位冲突检测与时间线检索。'
+  en: 'A durable RAG-enhanced long-term memory layer for LLM agents, featuring holographic memory, state-slot conflict detection, and timeline retrieval. Requires Python 3.10+ and this repository''s Python dependencies: create a venv and run pip install -e ".[dev]" in the checkout before enabling the plugin (the bundled installer is a PowerShell script, i.e. Windows).'
+  zh: '面向 LLM Agent 的持久化 RAG 增强长期记忆层，支持全息记忆、状态槽位冲突检测与时间线检索。需要 Python 3.10+，并先在仓库里建 venv 执行 pip install -e ".[dev]" 装好 Python 依赖后再启用插件；仓库自带安装脚本为 PowerShell（Windows）。'
 icon: https://raw.githubusercontent.com/baiqieji-LuLu/DSH-DREAM/main/dsh_plugin/icon.png
