@@ -2572,7 +2572,7 @@ dsh plugin --profile web add dshmarket
 - [zhijun-dai/dsh-Fonts](https://github.com/zhijun-dai/dsh-Fonts) — 字体系统插件：随插件离线分发的 OFL 开源字体预设、自定义 woff2 字体导入，以及供其他插件扩展的 ctx.fonts 注册表。
 - [zhijun-dai/Solarized-dsh-theme](https://github.com/zhijun-dai/Solarized-dsh-theme) — Solarized 主题插件：经典低对比护眼配色双体系——Ethan Schoonover 的 Solarized 与 Selenized（改良版）深浅各一套，专为长时间使用设计，遵循经典语法色。
 - [zhongyichang1998/dsh-open-meadow](https://github.com/zhongyichang1998/dsh-open-meadow) — 适用于官方 macOS DeepSeek Harness 0.2.0-rc.2 的海边主题，提供动态云层、局部海浪、前景花草摆动和中文设置。
-- [ZHOUcourier/dsh-theme-whalegirl](https://github.com/ZHOUcourier/dsh-theme-whalegirl) — 面向 DSH Web UI 的鲸鱼娘亮色主题。本次集中修正了设置入口、对话纸面与侧栏等问题，并新增独立的对话纸面控制；原生 --dsw-* 令牌重映射，轻纸面衬环境壁纸，玻璃/壁纸可调。视觉定型：溟月（上善无形）→ DeepSeek 女仆装（ZipZipPipe）；插画 CC BY-NC-SA 4.0，代码 MIT。
+- [ZHOUcourier/dsh-theme-whalegirl](https://github.com/ZHOUcourier/dsh-theme-whalegirl) — 移植自 DreamSkin 皮肤包的 DSH Web UI 鲸鱼娘亮色主题：完整重映射原生 --dsw-* 令牌，插画作为环境壁纸衬在单层轻纸面之后，玻璃强度、对话区独立纸面、壁纸遮罩/焦点/缩放与输入框聚焦光晕均可实时调节，设置表单以中英双语呈现在已安装插件详情页。视觉定型：溟月（上善无形）→ DeepSeek 女仆装（ZipZipPipe）；插画 CC BY-NC-SA 4.0，代码 MIT。
 - [ZHUBAI0528/dsh-client-ui-aqua-community-fix](https://github.com/ZHUBAI0528/dsh-client-ui-aqua-community-fix) — 能导入自己的字体、调三处字号与六档字重，还能给正文、会话和说明文字分别配色——一套适配 DeepSeek Harness 0.2.1-rc.3 的 Aqua 玻璃主题，附带可调模糊与磨砂、流体或图片与视频壁纸、逐区域文字微调，以及一键还原原生界面的开关。承接 WYH66666666 的 Aqua 主题（DSH-Transparent-UI-Plugin v1.3.0），请勿与上游同装。
 - [zhuifengqug/pixel-skin](https://github.com/zhuifengqug/pixel-skin) — 宝可梦风格 DSH Web 皮肤，含 GBA 双边框、HP 条状态、推理等级面板与可自定义配色。
 - [zhxqc/dsh-oh-my-theme](https://github.com/zhxqc/dsh-oh-my-theme) — DSH Web 主题与文件工作台：全局字体设置、@ 文件引用、项目文件树、Markdown 预览和可拖拽侧边面板。
