@@ -1967,6 +1967,7 @@ dsh plugin --profile web add dshmarket
 - [huangyuheng/dsh-token-use](https://github.com/huangyuheng/dsh-token-use) — 设置中的 Token 用量面板：总量（输入/输出/缓存读/缓存写/推理/调用次数），按模型、按天、按月、按项目的明细，以及最近 30 天的按日趋势折线图；历史在 Worker 线程上一次性重建，之后由会话事件实时累加。
 - [huanyuLv/dsh-balance-tide](https://github.com/huanyuLv/dsh-balance-tide) — 输入框下方显示 DeepSeek 账户余额与本会话花费，余额前带峰/谷价格徽章（北京时间）与距切换倒计时，悬停看两档单价明细与使用建议。
 - [huhu23333/dsh-reasoning-distill](https://github.com/huhu23333/dsh-reasoning-distill) — 把过长的模型思考压缩成有用核心，之后每次请求重放压缩版，并给出每个会话的开销与节省报告。默认关闭：必须先选择一个改写后端。derive 无需安装、打包版也能用；in-place 需给 DSH 源码打 14 处补丁并重建（源码构建首选）；message-edit 需装第三方插件，仅实验性，不推荐。
+- [hulibuld/dsh-hover-dict](https://github.com/hulibuld/dsh-hover-dict) — 点选或划选聊天回复里的英文单词，显示词性、中文释义与考纲标签；划选纯英文句子翻译成中文。词库离线内置：20,499 词条，8,960 个带双语例句，6,374 个带词根分析。
 - [HwFee/HwFee-dsh#usage-stats](https://github.com/HwFee/HwFee-dsh/tree/master/plugins/usage-stats) — 空白会话首页的用量面板：会话数、消息数、总 token、活跃天数、高峰时段、常用模型与热力图，范围可选全部、30 天或 7 天。
 - [hzh5021/dsh-daily-read](https://github.com/hzh5021/dsh-daily-read) — 日报一键读：敲 /daily 就把「去读最新那篇刷B站日报」塞进当前会话——只给路径不给正文，让它自己读原文；侧栏面板发的是同一条命令。需 dsh-bili-scroll 已把日报写进 ~/.dsh/bili-duty/out，否则 /daily 找不到日报。
 - [i1537725423-dotcom/dsh-plugin-task-budget](https://github.com/i1537725423-dotcom/dsh-plugin-task-budget) — 给 DeepSeek Harness 每一轮对话设人民币花费上限（默认 5 元），到上限就在下一个模型请求发出前停下；开关与金额在输入框下方最右侧。
@@ -5409,6 +5410,7 @@ dsh plugin --profile web add dshmarket
 - [BrambleXu/dsh-annotate](https://github.com/BrambleXu/dsh-annotate) — 面向 Vibe Coding 的浏览器元素标注插件：直接选取页面元素，并将结构化视觉反馈发送给 DeepSeek Harness Agent。
 - [bug-huntter/web-search-advanced](https://github.com/bug-huntter/web-search-advanced) — 安装后自动将 DSH 网页搜索路由到本插件；只需配置服务商、API Key 和模型即可使用。支持 DeepSeek 原生搜索与 OpenAI 兼容自定义后端，已发布为 npm 包 @lp181818/web-search-advanced@0.1.3。
 - [cfanmaoli/kimi-webbridge-dsh](https://github.com/cfanmaoli/kimi-webbridge-dsh) — 自动安装并启动 kimi-webbridge 桥接守护进程（含 SHA-256 校验），注册一套 25 个动作的技能，通过本地桥接驱动用户的真实浏览器。
+- [Chaos-Paradox/dsh-search-proxy](https://github.com/Chaos-Paradox/dsh-search-proxy) — 提供 SearXNG 网页搜索，支持托管本地运行环境、连接已有实例、Web 设置及可选的 DSH 进程代理。
 - [chendefine/dsh-web-fetch-playwright](https://github.com/chendefine/dsh-web-fetch-playwright) — 为内置 web_fetch 工具提供 Playwright/CDP 后端：用真实浏览器渲染网页，经 Readability + DOMPurify 降噪后返回 Markdown。
 - [chendefine/dsh-web-search-aggregation](https://github.com/chendefine/dsh-web-search-aggregation) — 聚合式网页搜索提供方：为内置 web_search 工具提供一条按优先级排序的搜索队列，覆盖 AnySearch、TinyFish、Tavily、Brave、Exa、Firecrawl、Jina、SerpApi、Serper 九家服务，每家支持多把 API Key 轮换，失败时逐级回退，并附带实时生效的设置卡片。
 - [Chip-G0202/dsh-deepseek-search-account](https://github.com/Chip-G0202/dsh-deepseek-search-account) — 为聊天模型走第三方订阅或网关（例如 OpenCode Go）的 DeepSeek Harness 会话提供基于已登录 DeepSeek 账号的网页搜索：注册 deepseek-account-search 提供方，用账号 token 调用官方 Search API，无需 DEEPSEEK_API_KEY 也能让内置 web_search 继续可用。
