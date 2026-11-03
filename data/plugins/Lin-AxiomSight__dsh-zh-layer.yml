@@ -1,0 +1,6 @@
+url: https://github.com/Lin-AxiomSight/dsh-zh-layer
+name: Lin-AxiomSight/dsh-zh-layer
+category: ui
+description:
+  en: ""A bilingual overlay layer for DSH: it overlays Chinese names and functional descriptions for plugins, commands and skills, supports three display modes and manually-triggered AI translation, and does not modify a single line of DSH source code.""
+  zh: "DSH的双语覆盖层：为插件、命令与技能叠加中文名和功能说明，支持三种显示模式与纯手动触发的AI翻译，且不修改一行DSH源码。"
