@@ -2,6 +2,7 @@ url: https://github.com/accoutmissing/dsh-session-artifacts
 name: accoutmissing/dsh-session-artifacts
 category: session
 icon: https://raw.githubusercontent.com/accoutmissing/dsh-session-artifacts/main/assets/icon-180.png
+tarball: https://github.com/accoutmissing/dsh-session-artifacts/releases/download/v0.4.2/dsh-session-artifacts-0.4.2.tgz
 description:
   en: 'A right-sidebar tab listing the files DSH Sessions produced, newest first, with the Session in view expanded on top: a click copies a row''s full path, a double click previews it in the sidebar, and a file can be pinned in one Session or in all of them.'
   zh: '右栏标签页：把各个 DSH 会话产出过的文件列成一列，当前会话置顶并默认展开；单击复制文件完整路径，双击在侧栏预览，文件可以单独置顶到本会话或全局置顶。'
