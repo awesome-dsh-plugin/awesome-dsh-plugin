@@ -3808,7 +3808,7 @@ dsh plugin --profile web add dshmarket
 - [0x7A7A6572/dsh-forge-studio#plugin-memory](https://github.com/0x7A7A6572/dsh-forge-studio/tree/main/packages/plugin-memory) — dsh 跨会话记忆：agent 保存、检索并更新用户偏好、事实与项目决策，重要条目自动注入后续会话，设置面板可浏览、编辑、归档与删除。
 - [1014029855/dsh-codevault](https://github.com/1014029855/dsh-codevault) — 读开源代码后记一笔的档案：快记或深读笔记按 仓库/文件/符号 归并成一张卡，追加式落盘为可放进 Obsidian 的 Markdown 笔记；可检索历史、回看最近阅读，也能搜你自己 Obsidian 里的笔记、把相关笔记挂到阅读记录上。共 9 个工具、/codevault 命令与 code-reading 技能。
 - [1015677515/dsh-prompt-ErrorNotes-desk](https://github.com/1015677515/dsh-prompt-ErrorNotes-desk) — 把 agent 自报的错误收进分类经验库，并每轮回注系统提示词（每条草稿都先经用户确认或修改）；同时在对话标题栏提供两个面板，用于编辑跨对话全局提示词与本次对话提示词。
-- [1129742588/dsh-memory-tiers](https://github.com/1129742588/dsh-memory-tiers) — 六层记忆插件：自动捕获每轮对话，以 user 快照形式注入稳定的记忆块，并把宿主自带历史压成一条占位（不调用模型）。
+- [1129742588/dsh-memory-tiers](https://github.com/1129742588/dsh-memory-tiers) — dsh 的六层本地记忆插件：捕获对话轮次，经 L2 巩固、由分流模型沉淀为 DL3 摘要，每轮注入稳定记忆块并以占位符替代聊天历史。附五个记忆工具、配置页与会话修复工具。
 - [1148462398-hub/dsh-shared-memory](https://github.com/1148462398-hub/dsh-shared-memory) — 所有会话共用一份 Markdown 记忆，含人设、要求、指正、教训、方法、请求、会话、方法库与导入文档九个分区；双硬盘镜像、历史快照、跨进程写锁，条目按命中频率与重复强调在主文件与可检索归档之间双向流动，检索为关键词共现加 BM25 排序。另含自有技能库（SKILL.md 操作手册，可选带护栏的 run.mjs 执行）与表情包库：用户自己导入图片，插件按情绪自动分类，并根据对话内容在合适时机自动发送合适的表情包来表达情绪。
 - [1292858901/dsh-persona-gateway](https://github.com/1292858901/dsh-persona-gateway) — 把 DSH 变成本机的 OpenAI / Anthropic 兼容网关端点，给指向它的客户端统一套上同一套人格与长期记忆；需自备 DeepSeek API Key（DSH 的登录凭证在上游会被拒）。
 - [135642-163/dsh-knowledge-base](https://github.com/135642-163/dsh-knowledge-base) — DeepSeek Harness 本地知识库：导入 Word/PPT/Excel/PDF（文字版或扫描版）、EPUB、MOBI/AZW3，生成带页码锚点、OCR 质量/置信度与 PDF 双栏阅读顺序的 Markdown 分块；并提供 LLM 维护的编译层（schema.md 维护规范、自动 index.md 内容索引、只追加 log.md、带来源与反链的 typed 笔记），支持来源可信度标注（高/中/低）与可信度感知检索、低可信提醒，以及排序检索、跨库查询、精读修订与 md/jsonl/zip 导出。MOBI/AZW3 需 Calibre；旧版 .doc/.ppt 需 Word/PowerPoint（Windows）或 LibreOffice（Linux）；扫描版 PDF 的 OCR 首次使用会下载模型。
@@ -5203,6 +5203,8 @@ dsh plugin --profile web add dshmarket
 - [x2802490130-prog/dsh-writing-remote](https://github.com/x2802490130-prog/dsh-writing-remote) — 写文引擎的 host 侧数据通道：把项目分卷、章节状态、书库、全文检索、演化条目与线索图谱以 Typert remote 暴露给客户端写作面板。
 - [Xantares330/dsh-codex-consult](https://github.com/Xantares330/dsh-codex-consult) — 需先安装 Codex CLI 并完成 `codex login`。为 DeepSeek Harness 增加三个按需咨询 OpenAI Codex CLI 的工具：codex_consult 在只读沙箱中运行 Codex、自动内联证据文件、从 Codex rollout 记录校验实际模型与推理档位、断流自动重试，并记录调用前后的额度；codex_quota 查询当前 5 小时与每周额度；codex_calls 列出最近调用。
 - [xchannel1987/dsh-power-xc](https://github.com/xchannel1987/dsh-power-xc) — DSH 电源管理插件 - 侧边栏电源按钮、重启/关机菜单、自包含重启引擎（无需外部依赖）、优雅会话刷新。
+- [xfgil/dsh-link-parse](https://github.com/xfgil/dsh-link-parse) — 把聊天里的分享链接（B站、抖音、微信、知乎、GitHub、通用网页）解析成标题、作者、正文、封面与视频直链，并可下载到本地媒体目录后发回聊天。
+- [xfgil/dsh-proxy-on-demand](https://github.com/xfgil/dsh-proxy-on-demand) — 按需拉起 mihomo 内核，空闲后自动关闭：不常占端口、不留后台进程、不改 Windows 系统代理设置。已有代理在跑时直接借道它的出口。
 - [xfy2412/dsh-time-reminder](https://github.com/xfy2412/dsh-time-reminder) — 为 agent 提供它自己的时钟：按会话注入时间读数且精度可由 agent 运行时调整，并附带累计计时器与跨宿主重启可靠的一次性倒计时。
 - [XGL2019/dsh-wenan](https://github.com/XGL2019/dsh-wenan) — 提取抖音、B站、快手与 YouTube 短视频的文案与字幕，并带标题、作者、话题与互动数据；抽取器以 Python 随包提供。
 - [xiajiajun516/dsh-config-manager](https://github.com/xiajiajun516/dsh-config-manager) — 一键备份、导出、导入与迁移整套 DSH 配置：设置、插件、MCP、技能与工作区。密钥默认不导出；若选择包含，则以 AES-256-GCM 加密而非明文写出。导入先预览、自动备份并可回滚，profile 可保存多套配置，远程同步经私有 Git 仓库推送可移植配置且不含密钥。
@@ -7621,6 +7623,7 @@ dsh plugin --profile web add dshmarket
 - [MiraculousGarfield/dsh-ops-health](https://github.com/MiraculousGarfield/dsh-ops-health) — 一键健康检查：侧边栏按钮经纯 HTTP 路由（独立于工具注册表）调用 check-health.ps1 并渲染结构化报告卡片；配色跟随当前主题，Windows/PowerShell。
 - [MjxUpUp/Forge#forge-dsh](https://github.com/MjxUpUp/Forge/tree/main/plugins/forge-dsh) — 为 DeepSeek Harness 提供 Forge 质量门禁：任务门禁、改前必读、危险命令拦截与质量评分，经 DSH 类型化拦截点由本地 forge CLI 执行。需本机安装 forge CLI，缺失时插件 fail-open 并在会话开始时尽力提示；任务门禁还要求项目已执行 forge init。
 - [mkiea/dsh-forge](https://github.com/mkiea/dsh-forge) — DeepSeek Harness 插件组合分析工具：依赖树、冲突检测、风险评估（含预测）、可视化与组合模拟。
+- [mogutofu/dsh-mc-server-ops](https://github.com/mogutofu/dsh-mc-server-ops) — 通过 RCON 进行 Minecraft 服务器运维，支持静态命令拦截、本地/Pterodactyl 可插拔适配器、可配置的群友投票，以及对 Paper、Forge、Fabric 和原版服务器的多层进程探测。
 - [Monter-code/dsh-live-reload](https://github.com/Monter-code/dsh-live-reload) — DSH 插件免重启热重载：清模块缓存、按 junction 路径匹配、失败时带版本号重新导入， 并在会话标题栏注册一颗刷新按钮，让页面立刻加载新的插件 bundle。
 - [moon16u/dsh-pouch#dsh-restart](https://github.com/moon16u/dsh-pouch/tree/main/packages/dsh-restart) — 安全的分离式 DSH 重启：/restart 与 /dsh-restart 斜杠命令（原生候选样式）加 dsh_restart Agent 工具；分离的 worker 在 3 秒后重启 DSH 且会话不冻结，Windows/macOS 走基于官方 appExit 服务的原生 Node helper。
 - [MoonlitDropOfBlood/dsh-deveco](https://github.com/MoonlitDropOfBlood/dsh-deveco) — HarmonyOS 全栈开发套件：右侧边栏提供 HiLog 检查器（实时流与级别/包名/关键词过滤）与 ArkUI Inspector（截图点选高亮、可折叠组件树、节点属性搜索、盒子模型），两种树源——DevEco 调试源（ark 调试链路，提供 padding/margin/border 声明值与自定义组件名）与 uitest 无障碍树；.ets 查看器提供 ArkTS 语法高亮；注册 harmony_ui_tree agent 工具供对话内取组件树；设置页管理 DevEco Studio/CLT 工具链与 USB/网络设备。21 个 Remote 方法，82 个单元测试。
@@ -8470,6 +8473,7 @@ dsh plugin --profile web add dshmarket
 - [AnacondaKC/dsh-douyin](https://github.com/AnacondaKC/dsh-douyin) — 侧栏短视频：原生播放器、系列导航、精确历史回放。
 - [AnacondaKC/dsh-stock-market](https://github.com/AnacondaKC/dsh-stock-market) — 有效解决了写代码的时候账户不能同时亏钱的 BUG。
 - [Andersen216/dsh-whale-girl-live2d](https://github.com/Andersen216/dsh-whale-girl-live2d) — DSH 里的 Live2D 桌宠「鲸鱼娘」：模型常驻 Web 界面，跟着 agent 的真实状态换表情与动作（思考、调工具、逐字输出、报错、收工庆祝），点一下就能直接给 agent 发消息、回复逐字冒进气泡；右键菜单可换表情、戴眼镜贴纸、摆桌面场景、演一次性小动作，动作全部照模型作者自己的按键表设计，互不冲突、到点自动收回。模型素材非商业（CC BY-NC-SA 4.0），代码 MIT，作者 Andersen216。
+- [Artificialimbecile/dsh-whale-chat](https://github.com/Artificialimbecile/dsh-whale-chat) — DSH Web 界面右下角的会说话的鲸鱼桌宠：可配置人设与持久对话记忆，还会按间隔自己随机上网，把见闻总结成消息带回来告诉你。
 - [auwc/dsh-tarot](https://github.com/auwc/dsh-tarot) — 从洗乱的 78 张塔罗牌中亲选三张，查看带来源链接的牌义，并通过追问细化解读。
 - [Awesome-AI-Pedia/Awesome-DSH-Pet](https://github.com/Awesome-AI-Pedia/Awesome-DSH-Pet) — DSH Web GUI 的可扩展桌面宠物插件，支持投喂、玩耍、切换角色，并使用 Codex 8x9 spritesheet 添加自定义角色。
 - [Awu12277/dsh-stock-watch](https://github.com/Awu12277/dsh-stock-watch) — A 股自选股实时行情盯盘插件：在 DeepSeek Harness（DSH）Web 界面的右上角显示一个可折叠弹窗，实时监控自选股行情、切换分组、查看分时与 K 线、设置买卖目标价。
