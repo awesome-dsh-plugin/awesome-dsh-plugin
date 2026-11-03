@@ -1,8 +1,8 @@
 url: https://github.com/p8054076283-del/dsh-ppt-studio
 name: p8054076283-del/dsh-ppt-studio
-category: tools
+category: docs
 description:
-  en: 'Left-sidebar PPT workbench: renders the workspace deck as real 16:9 slides, lets you edit text and tables directly on the page, imports an existing PPTX element by element (theme colours, gradients with alpha, rounded shapes, chart pages rasterized through LibreOffice) instead of re-flowing it into templates, and ships an AI chat column that can rewrite the deck.'
-  zh: '左侧栏 PPT 工作台：把工作区里的 deck 渲染成真实的 16:9 幻灯片，直接在页面上改文字和表格；导入现成的 PPTX 时逐元素照搬原稿（主题色、带透明度的渐变、圆角形状都保留，图表页经 LibreOffice 整页转图），而不是套模板重排；内置可改写 deck 的 AI 对话栏。'
+  en: 'Left-sidebar PPT workbench: imports an existing PPTX element by element (theme colours, gradients with alpha, rounded shapes, master/layout decorations, chart pages rasterized) and renders it as real 16:9 slides, lets you edit text and tables directly on the page, and hosts an AI chat column that rewrites the same deck.json.'
+  zh: '左侧栏 PPT 工作台：把现成的 PPTX 逐元素原样导入（主题色、带透明度的渐变、圆角形状、母版/版式装饰都保留，图表页整页转图）并渲染成真实的 16:9 幻灯片；直接在页面上改文字和表格，内置可改写同一份 deck.json 的 AI 对话栏。'
 icon: https://raw.githubusercontent.com/p8054076283-del/dsh-ppt-studio/main/docs/icon-180.png
 tarball: https://github.com/p8054076283-del/dsh-ppt-studio/releases/latest/download/dsh-ppt-studio.tgz
