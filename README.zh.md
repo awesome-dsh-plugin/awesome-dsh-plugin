@@ -5537,7 +5537,7 @@ dsh plugin --profile web add dshmarket
 - [keenableai/dsh-keenable](https://github.com/keenableai/dsh-keenable) — 为内置 web_search 与 web_fetch 工具提供 Keenable 网页搜索与网页读取，适用于任意模型，无需 API Key。
 - [kenny2077/dsh-web-kimi](https://github.com/kenny2077/dsh-web-kimi) — 为 DeepSeek Harness 提供 Kimi Coding 的网页搜索与网页抓取双提供方——一把 coding 计划密钥同时接入 ctx.web 的两条链路（/v1/search 与 /v1/fetch），设置卡片经凭据服务保存密钥，并回退读取 Kimi CLI 配置，安装即用。
 - [kenny2077/dsh-web-search-doubao](https://github.com/kenny2077/dsh-web-search-doubao) — 为 DeepSeek Harness 提供豆包搜索（火山引擎）网络搜索提供方——把 web_search 的后端切换为独立的豆包搜索 API，密钥与计费独立（每月 500 次免费），并内置专用设置卡片，经凭据服务保存密钥。
-- [kesha4/dsh-site-bridge](https://github.com/kesha4/dsh-site-bridge) — 为 DeepSeek Harness 提供浏览器桥接：把页面结构（带盒子与计算样式的 DOM、经过唯一性校验的选择器候选）与站点自身的 xhr/fetch（含请求头与请求体，凭据形态的值在写入时脱敏）抓取为工作区文件，再用可信 CDP 输入驱动页面验证抓取结果。包含 11 个工具与使用浏览器自身会话的 MV3 扩展。
+- [kesha4/dsh-site-bridge](https://github.com/kesha4/dsh-site-bridge) — 为 DeepSeek Harness 提供浏览器桥接：把页面结构（带盒子与计算样式的 DOM、经过唯一性校验的选择器候选）与站点自身的 xhr/fetch（含请求头与请求体，凭据形态的值在写入时脱敏）抓取为工作区文件，再用可信 CDP 输入驱动页面验证抓取结果。包含 11 个工具与使用浏览器自身会话的 MV3 扩展。需 Chrome/Edge 125+，扩展需手动加载并用本机 token 配对。
 - [KNLCXY/dsh-websift](https://github.com/KNLCXY/dsh-websift) — 省 token 的网页阅读：底层是真 Chrome/Edge（CDP），一次调用读完多个页面、按相关性筛掉不相关的，只回一段带账本的摘要（实测省 80–98% 上下文）。真实搜索链接、登录态、截图、三档代理。
 - [kyo615/dsh-browser-control](https://github.com/kyo615/dsh-browser-control) — 基于 Playwright MCP 的 AI 浏览器控制：驱动真实可见的 Chrome（导航/点击/输入/快照，约 80 个 browser_* 工具），并在 GUI 内嵌实时截图面板，每次操作后自动刷新。
 - [L1818346/dsh-browser-takeover](https://github.com/L1818346/dsh-browser-takeover) — 浏览器网址接管：维护一份「要登录的网址」清单（只存网址与添加时间，不存账号密码），访问前先回答这条地址在不在清单里；按该站点的会话 cookie 名字判断调试浏览器此刻是否已登录（确定／可能／未登录，_gh_sess 这类匿名 cookie 不计），在带调试端口的浏览器里打开清单中的地址，并按可见文字点击一个元素（会搜索所有 iframe）。一次调用最多点一个元素，不做批量爬取。
