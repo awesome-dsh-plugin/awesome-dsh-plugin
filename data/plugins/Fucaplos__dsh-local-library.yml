@@ -1,0 +1,6 @@
+url: https://github.com/Fucaplos/dsh-local-library
+name: Fucaplos/dsh-local-library
+category: tools
+description:
+  en: "Local document library for DSH Desktop (Windows only, installed with the bundled PowerShell script): upload files once, then every conversation can search and read them through four tools (library_list / library_search / library_read / library_save); upload, download and batch download live in the Settings panel. Files stay on the machine unless you enable the optional vision model, which sends images to the endpoint you configure."
+  zh: "本地资料库（仅 Windows，需用随包的 PowerShell 脚本安装）：文件传一次，之后每个对话都能用四个工具（library_list / library_search / library_read / library_save）检索、读取；上传、下载与打包下载在设置页完成。文件只保存在本机——除非你启用可选的视觉模型，它会把图片发到你配置的接口。"

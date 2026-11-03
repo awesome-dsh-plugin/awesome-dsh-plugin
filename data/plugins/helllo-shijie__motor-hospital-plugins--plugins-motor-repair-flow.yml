@@ -1,0 +1,6 @@
+url: https://github.com/helllo-shijie/motor-hospital-plugins/tree/main/plugins/motor-repair-flow
+name: helllo-shijie/motor-hospital-plugins#motor-repair-flow
+category: workflow
+description:
+  en: 'Generates a standard motor-repair procedure from the diagnosis and motor rating, with labour time, staffing and a quality-check point for each step.'
+  zh: '按诊断结论与电机功率编排标准化维修工序，每步含工时、人员与质检点。'

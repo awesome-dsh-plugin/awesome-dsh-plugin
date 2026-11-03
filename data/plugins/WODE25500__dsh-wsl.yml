@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-wsl
+name: WODE25500/dsh-wsl
+category: dev
+description:
+  en: "WSL (Windows Subsystem for Linux) bridge for DeepSeek Harness: run Linux commands, manage distros, convert paths, and copy across the Windows/Linux boundary."
+  zh: "DeepSeek Harness 的 WSL(Windows Subsystem for Linux)桥接：跑 Linux 命令、管理发行版、路径转换与跨系统复制。"

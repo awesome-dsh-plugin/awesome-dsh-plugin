@@ -1,0 +1,6 @@
+url: https://github.com/571242/dsh-armor-switch
+name: 571242/dsh-armor-switch
+category: session
+description:
+  en: 'Reversible delivery contract: rewrites operator authority and execution rules when enabled, byte-identical to stock when off, with host and profile clean.'
+  zh: '可逆的交付契约与破甲插件：开启时生效最高指令权威与交付规则，关闭时注册面与官方逐字节一致，支持宿主与 Profile 清洗。'

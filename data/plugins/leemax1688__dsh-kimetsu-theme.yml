@@ -1,0 +1,8 @@
+url: https://github.com/leemax1688/dsh-kimetsu-theme
+name: leemax1688/dsh-kimetsu-theme
+category: theme
+description:
+  en: 'Kimetsu no Yaiba (Demon Slayer) skin for the DSH Web UI: a night-forest palette applied through the stable token layer, nine rotating wallpapers served by the plugin host, a flame band, and a two-button dock to toggle the skin and change the picture.'
+  zh: '《鬼灭之刃》DSH Web 皮肤：通过稳定令牌层应用鬼杀队配色，插件宿主提供的 9 张轮换壁纸、顶部火焰带，右下角两颗按钮分别负责开关皮肤与换壁纸。'
+icon: https://raw.githubusercontent.com/leemax1688/dsh-kimetsu-theme/main/assets/icon-180.png
+tarball: https://github.com/leemax1688/dsh-kimetsu-theme/releases/download/v1.0.0/dsh-kimetsu-theme-1.0.0.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/chinacaa/dsh-session-save
+name: chinacaa/dsh-session-save
+category: session
+description:
+  en: 'Saves a whole DSH session as one .dsproj project file and opens it back. The session header gains an open button, a save button, a save-as button and an autosave switch, and the blank-session page gains its own open button. The first save asks where to put the file and later saves overwrite it; opening a .dsproj re-imports the session, switches to it, and can write the bundled workspace memory back on request.'
+  zh: '把整个 DSH 会话存成单个 .dsproj 工程文件，并能再打开回来。会话标题栏上多了打开、保存、另存为三个按钮和自动保存开关，空会话页面另有自己的打开入口。第一次保存会问存到哪里，之后一键覆盖；打开 .dsproj 会导入该会话并切过去，按需可以把包里的工作区记忆合并回本机。'
+icon: https://raw.githubusercontent.com/chinacaa/dsh-session-save/main/assets/icon-180.png

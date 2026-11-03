@@ -1,0 +1,7 @@
+url: https://github.com/scottzx/feature-blueprint
+name: scottzx/feature-blueprint
+category: ui
+description:
+  en: Adds mind maps and an Excalidraw canvas to the DSH sidebar, with local blueprint-file editing, Excalidraw file previews and standalone CLIs.
+  zh: 在 DSH 侧栏提供思维导图和 Excalidraw 自由画布，支持本地思维导图文件编辑、Excalidraw 文件预览与独立 CLI。
+tarball: https://github.com/scottzx/feature-blueprint/releases/download/npm-v0.4.1/feature-blueprint-0.4.1.tgz

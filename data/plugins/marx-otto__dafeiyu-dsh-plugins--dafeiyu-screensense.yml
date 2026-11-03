@@ -1,0 +1,7 @@
+url: https://github.com/marx-otto/dafeiyu-dsh-plugins/tree/main/dafeiyu-screensense
+name: marx-otto/dafeiyu-dsh-plugins#dafeiyu-screensense
+category: fun
+description:
+  en: 'Screen-sense mode for the dsh-pet desktop pet: captures the primary display every 30 seconds, compares an 8x8 average hash of each frame, and sends the screenshot to the session model when the frame changed (and again after the idle interval even if unchanged) so the pet comments in one short bubble line. Adds /fish, /fish_look and /fish_screen commands, a status and control HTTP pair, and a change threshold plus an idle repeat interval that can be tuned in the plugin config. Windows only (PowerShell WinForms).'
+  zh: '给 dsh-pet 桌宠增加识屏模式：每 30 秒截取主屏，用 8×8 均值哈希比较画面，只在画面变化时（以及空闲间隔到点、即使没变化时）把截图交给当前会话模型，让桌宠用一句短气泡吐槽；另提供 /fish、/fish_look、/fish_screen 命令、status 与 control 两个 HTTP 接口，以及可在插件配置里调整的画面对比阈值与空闲重说间隔。仅 Windows（PowerShell WinForms）。'
+tarball: https://github.com/marx-otto/dafeiyu-dsh-plugins/releases/download/v1.1.0/dafeiyu-screensense-1.1.0.tgz

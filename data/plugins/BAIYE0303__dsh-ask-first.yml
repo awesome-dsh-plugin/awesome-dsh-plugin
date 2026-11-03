@@ -1,0 +1,8 @@
+url: https://github.com/BAIYE0303/dsh-ask-first
+name: BAIYE0303/dsh-ask-first
+category: ui
+description:
+  en: "Adds a button to the composer that restates your draft, then asks a few questions with clickable options — every question offers an \"I don't know, you decide\" escape — and only then rewrites the draft into a request an agent can start on. The whole flow can be finished without typing, and it never sends for you."
+  zh: "在输入框加一个按钮：先复述你的草稿，再用可点的选项问几个问题——每题都带一个「我不知道，你替我定」的逃生项——最后把草稿改写成 AI 能直接开工的需求。全程可以一个字都不打，而且它不会替你发送。"
+icon: https://raw.githubusercontent.com/BAIYE0303/dsh-ask-first/main/assets/icon-180.png
+tarball: https://github.com/BAIYE0303/dsh-ask-first/releases/download/v1.0.1/dsh-ask-first-1.0.1.tgz

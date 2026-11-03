@@ -1,0 +1,6 @@
+url: https://github.com/yuezhiye/dsh-closet
+name: yuezhiye/dsh-closet
+category: tools
+description:
+  en: 'Per-workspace closet for temporary scripts and their run logs, kept in a .dsh-fix directory inside each project. Registers a script with its language and purpose, scans a project for leftover scratch scripts, backups and log files, runs registered scripts with a timeout and writes each run to a timestamped log, and sweeps chosen files into a reversible trash with per-batch restore. Scanning only lists and never deletes; cleanup moves files instead of deleting them; files already tracked by git are refused unless forced. Ships 7 agent tools and a settings panel.'
+  zh: '按工作区管理临时脚本与其运行日志的收纳间，数据放在每个项目内的 .dsh-fix 目录。可登记脚本（语言与用途）、扫描项目中遗留的临时脚本/备份/日志、带超时执行已登记脚本并把每次运行写进带时间戳的日志、把选中的文件清运进可整批还原的回收站。扫描只列清单永不删除；清运只做移动不做删除；已被 git 跟踪的文件默认拒收，确需处理要显式加 force。含 7 个 Agent 工具与一个设置面板。'

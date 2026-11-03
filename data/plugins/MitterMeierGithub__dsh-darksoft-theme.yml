@@ -1,0 +1,6 @@
+url: https://github.com/MitterMeierGithub/dsh-darksoft-theme
+name: MitterMeierGithub/dsh-darksoft-theme
+category: theme
+description:
+  en: 'Dark theme plugin for dsh web (port of Obsidian things-soft-colorful-headings): warm-gray dimmed text via --dsw-alias-label-* token overrides plus soft colorful h1-h6 headings, zero dependencies.'
+  zh: 'dsh web 暗色主题插件（移植自 Obsidian things-soft-colorful-headings）：通过 --dsw-alias-label-* token 覆盖实现暖灰调暗文本，配合柔和的彩色 h1-h6 标题，零依赖。'

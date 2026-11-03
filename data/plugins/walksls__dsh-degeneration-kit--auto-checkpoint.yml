@@ -1,0 +1,6 @@
+url: https://github.com/walksls/dsh-degeneration-kit/tree/main/auto-checkpoint
+name: walksls/dsh-degeneration-kit#auto-checkpoint
+category: session
+description:
+  en: 'Auto-compaction that writes a handoff note first: as a session approaches a token threshold it asks the model to save a project checkpoint into the workspace, then optionally starts a fresh session seeded with a continue instruction and parks the old one. The note must be written within the current compaction cycle and its conclusions section must actually change, so a stale or merely touched file cannot slip through.'
+  zh: '压缩前先落档：会话接近 token 阈值时先要求模型把项目状态写进工作区的检查点文件，再按需开新会话接力、把旧会话停用。落档必须写于本次压缩周期内，且「这一轮定下的结论」那节正文确实变了——旧档、或用 cat 追加一行刷时间戳的档都过不了关。'

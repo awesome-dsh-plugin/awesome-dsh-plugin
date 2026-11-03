@@ -1,0 +1,6 @@
+url: https://github.com/MJorgin/dsh-media-skills
+name: MJorgin/dsh-media-skills
+category: vision
+description:
+  en: 'Image generation and image reading for DSH: a 创作 sidebar page (one row per model, 10 ratios, 1K–4K sizes, a contact sheet with detail cards, zoom, reuse and delete), three preset providers plus custom endpoints — one needs no key at all — and a vision-review skill. A pasted key is written to ~/.dsh/secrets/media-tools.env (mode 600) and only sent to the provider you picked. Requires Python 3.9+ (generation runs through scripts/generate.py); the 创作 page needs desktop DSH 0.2.1+.'
+  zh: 'DSH 的生图与读图：侧边栏「创作」页面（按模型分行、10 种比例、1K–4K 尺寸、联系表 + 详情卡 + 放大 + 复用 + 删除），三个预设提供方外加自定义端点（其中一个完全免 Key），另有 vision-review 读图技能。粘进去的 Key 只写进本机 ~/.dsh/secrets/media-tools.env（权限 600），只发给你选的那家服务商。需要 Python 3.9+（生图由 scripts/generate.py 执行）；「创作」页需桌面版 DSH 0.2.1+。'

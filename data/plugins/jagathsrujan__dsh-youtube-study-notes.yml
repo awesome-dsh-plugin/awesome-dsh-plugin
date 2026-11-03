@@ -1,0 +1,6 @@
+url: https://github.com/jagathsrujan/dsh-youtube-study-notes
+name: jagathsrujan/dsh-youtube-study-notes
+category: skill
+description:
+  en: 'Turns a YouTube link into study notes: pulls the captions the video already publishes, optionally reads on-screen content with a vision model, then asks for your own notes and merges everything into one document. Requires python3, ffmpeg and yt-dlp on PATH (the skill stops with an install hint when they are missing).'
+  zh: '把 YouTube 链接变成学习笔记：先取视频自带字幕，可选让视觉模型读画面，再问你自己的笔记，最后合并成一份文档。需 PATH 上有 python3、ffmpeg 与 yt-dlp（缺失时技能会停下来并给出安装提示）。'

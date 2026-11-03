@@ -1,0 +1,6 @@
+url: https://github.com/abbaababa/dsh-mobile-access
+name: abbaababa/dsh-mobile-access
+category: remote
+description:
+  en: 'Open a Mac or Windows DeepSeek Harness Web instance from iPhone or iPad Safari: 8-digit pairing, a LAN gateway for loopback-only hosts, optional Tailscale Serve, and iOS-only Safari input and touch fixes. Installs with dsh plugin add.'
+  zh: '用 iPhone 或 iPad 的 Safari 打开 Mac 或 Windows 上的 DeepSeek Harness Web：8 位配对码、回环监听的局域网网关、可选 Tailscale Serve，以及仅 iOS 生效的 Safari 输入与触摸补丁。可用 dsh plugin add 安装。'

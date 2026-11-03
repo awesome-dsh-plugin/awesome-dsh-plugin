@@ -1,0 +1,7 @@
+url: https://github.com/opdsh/dsh-gh-pages-artifacts
+name: opdsh/dsh-gh-pages-artifacts
+category: docs
+description:
+  en: Publishes HTML pages and Markdown documents written by the agent to GitHub Pages as shareable links, with tools to update them in place, list, read back, and delete them; adds an Artifacts sidebar panel and a bundled page-design skill.
+  zh: 把 Agent 生成的 HTML 页面和 Markdown 文档发布到 GitHub Pages 并返回可分享链接，提供原地更新、列出、读回和删除的工具；附带侧边栏 Artifacts 面板和内置的页面设计技能。
+tarball: https://github.com/opdsh/dsh-gh-pages-artifacts/releases/latest/download/dsh-gh-pages-artifacts.tgz

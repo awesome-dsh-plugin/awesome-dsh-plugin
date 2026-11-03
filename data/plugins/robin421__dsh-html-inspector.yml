@@ -1,0 +1,6 @@
+url: https://github.com/robin421/dsh-html-inspector
+name: robin421/dsh-html-inspector
+category: browser
+description:
+  en: 'Selection mode for HTML preview and browser tabs: click any element in a locally served demo page and its locator (selector, text, HTML snippet) is written into the chat input for precise AI editing.'
+  zh: 'HTML 选区模式：点选本机 demo 页面中的任意元素，定位信息（选择器、文本、HTML 片段）自动写入对话输入框，供 AI 精准修改。'

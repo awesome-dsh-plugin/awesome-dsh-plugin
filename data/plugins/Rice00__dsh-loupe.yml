@@ -1,0 +1,6 @@
+url: https://github.com/Rice00/dsh-loupe
+name: Rice00/dsh-loupe
+category: ui
+description:
+  en: 'Explain a selected word or sentence from a DSH conversation in a floating window: a channel of its own that leaves the session untouched, and the answer can be pinned to a session of its own.'
+  zh: '在浮窗里解释 DSH 对话中选中的词或句子：走独立通道、不污染当前会话，解答可以固定成独立会话。'

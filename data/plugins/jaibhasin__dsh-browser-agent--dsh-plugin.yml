@@ -1,0 +1,6 @@
+url: https://github.com/jaibhasin/dsh-browser-agent/tree/main/dsh-plugin
+name: jaibhasin/dsh-browser-agent#dsh-plugin
+category: browser
+description:
+  en: 'Chrome side-panel browser agent for DeepSeek Harness with tools to inspect pages, navigate, click, type, scroll, and capture screenshots through a local bridge.'
+  zh: 'DeepSeek Harness 的 Chrome 侧边栏浏览代理，通过本地桥接提供页面读取、导航、点击、输入、滚动和截图工具。'

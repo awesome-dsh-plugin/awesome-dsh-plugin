@@ -1,0 +1,6 @@
+url: https://github.com/duyanta123/dsh-change-impact
+name: duyanta123/dsh-change-impact
+category: dev
+description:
+  en: 'Change impact analysis plugin that lifts a code change into an evidence-backed impact and verification plan (CHANGE-IMPACT.md + change-impact.json): affected modules, entry points and public exports, risk levels with factors and confidence, and recommended verification commands (read-only, never runs repository commands). Only read-only git queries (rev-parse, diff, status) are run; suggested verification commands are never executed.'
+  zh: '变更影响分析插件：把一次代码变更升级为有证据支撑的影响与验证计划（CHANGE-IMPACT.md + change-impact.json）：受影响模块、入口与公开导出、带因子与置信度的风险分级、建议验证命令（只读，不执行仓库命令）。只会执行 rev-parse、diff、status 等只读 git 查询，建议的验证命令不会被执行。'

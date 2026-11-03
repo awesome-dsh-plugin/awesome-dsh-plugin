@@ -1,0 +1,6 @@
+url: https://github.com/pingg02/dsh-plugins/tree/main/dsh-desktop-entry
+name: pingg02/dsh-plugins#dsh-desktop-entry
+category: ui
+description:
+  en: Creates a Windows desktop shortcut that starts DeepSeek Harness when needed and opens the Web UI in a Chrome or Edge app window.
+  zh: 创建 Windows 桌面快捷方式，必要时启动 DeepSeek Harness，并用 Chrome 或 Edge 应用窗口打开 Web UI。

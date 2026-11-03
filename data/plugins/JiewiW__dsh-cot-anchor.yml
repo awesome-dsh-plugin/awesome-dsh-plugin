@@ -1,0 +1,6 @@
+url: https://github.com/JiewiW/dsh-cot-anchor
+name: JiewiW/dsh-cot-anchor
+category: agi
+description:
+  en: 'Injects conclusions already established in the previous reasoning block after each tool result, so the model continues from them instead of re-deriving the same conclusions.'
+  zh: 在每次工具结果后注入上一段思考中已确立的结论，使模型直接沿用而非重复推导。

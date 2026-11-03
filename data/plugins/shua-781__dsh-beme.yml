@@ -1,0 +1,7 @@
+url: https://github.com/shua-781/dsh-beme
+name: shua-781/dsh-beme
+category: memory
+tarball: https://github.com/shua-781/dsh-beme/releases/download/v0.1.5/dsh-beme-0.1.5.tgz
+description:
+  en: 'Long-term memory kept as blocks: one event per block, written to a local append-only event log with a block view and derived indexes, so a full history stays recoverable while only the matching blocks reach the context. The model saves entries with memory_remember and pulls the relevant few with memory_recall, plus one automatic recall pass before each step. Data stays in ~/.beme; no external service and no API key.'
+  zh: '块记忆式长期记忆：一件事一块，写进本地只追加的事件账本，再派生块视图与索引，历史全量可回溯，进入上下文的只有匹配的那几块。模型用 memory_remember 记一条、用 memory_recall 取回相关的几条，每步之前还有一次自动召回。数据留在 ~/.beme，不连外部服务，不需要 API key。'

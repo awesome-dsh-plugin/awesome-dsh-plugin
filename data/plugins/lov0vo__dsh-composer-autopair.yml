@@ -1,0 +1,6 @@
+url: https://github.com/lov0vo/dsh-composer-autopair
+name: lov0vo/dsh-composer-autopair
+category: ui
+description:
+  en: 'Auto-pairs brackets and quotes in the DSH chat composer, inserting the closing half with the caret in between; it also wraps selected text with the typed pair and handles brackets committed by an IME.'
+  zh: 'DSH 聊天输入框的括号/引号自动配对：输入左半边自动补右半边并把光标停在中间；也支持用符号包裹选中文字，以及中文输入法提交的括号。'

@@ -1,0 +1,6 @@
+url: https://github.com/weien666/dsh-conversation-density-map
+name: weien666/dsh-conversation-density-map
+category: ui
+description:
+  en: "Adds a non-uniform conversation density map(chat history markers) to the right of the DSH chat area: one tick per turn, with tick length and spacing reflecting message size, clickable to jump to a turn and expanding on hover when crowded."
+  zh: "在 DSH 聊天区右侧添加非等长非等距对话密度地图（历史聊天标签），一轮对话一个刻度，刻度长度与纵向距离反映消息大小，点击刻度可跳转至对应对话，标签繁杂时鼠标悬停会自动拉伸便于点击。"

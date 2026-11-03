@@ -1,0 +1,6 @@
+url: https://github.com/songrui111/dsh-agent-bench
+name: songrui111/dsh-agent-bench
+category: dev
+description:
+  en: Runs a fixed set of agent benchmark cases in isolated sandboxes, scores each case with deterministic assertions, and diffs two runs to show which cases regressed after a model, prompt or DSH upgrade.
+  zh: 在隔离沙箱里跑一组固定的 Agent 用例，用确定性断言判分，并对比两次运行，指出换模型、改提示词或升级 DSH 之后哪条用例退化了。

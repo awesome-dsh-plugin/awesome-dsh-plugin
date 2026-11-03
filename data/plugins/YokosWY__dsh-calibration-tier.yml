@@ -1,0 +1,6 @@
+url: https://github.com/YokosWY/dsh-calibration-tier
+name: YokosWY/dsh-calibration-tier
+category: ui
+description:
+  en: Adds a tier bar to the DSH composer with three thinking tiers (normal, strict, max), an exclusive loop mode whose three levels run 3, 5 or 8 self-review rounds, and a counter-review toggle that stacks on either; the model reads the current tier through the clarify_tier and forge_level tools.
+  zh: 在 DSH 输入框里加一条档位条：思考三档（常规 / 严格 / 极致）、互斥的循环模式三档（3 / 5 / 8 轮）、可叠加的对抗审查开关；模型通过 clarify_tier 与 forge_level 两个工具读取当前档位。

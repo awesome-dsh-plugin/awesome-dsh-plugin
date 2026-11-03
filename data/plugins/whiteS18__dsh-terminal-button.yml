@@ -1,0 +1,6 @@
+url: https://github.com/whiteS18/dsh-terminal-button
+name: whiteS18/dsh-terminal-button
+category: ui
+description:
+  en: 'Embedded terminal for DeepSeek Harness: opens an in-app terminal panel in the right sidebar (DockKit) or bottom composer dock, with PSReadLine geometry protection and full theme sync.'
+  zh: 'DeepSeek Harness 内嵌终端插件：在右侧栏（DockKit Tab）或输入框下方以沉底抽屉形式提供界面内嵌的交互式终端，跟随官方主题与工作区目录，支持 PSReadLine 尺寸保护与位置热切换。'

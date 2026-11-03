@@ -1,0 +1,6 @@
+url: https://github.com/whiteS18/dsh-image-generation
+name: whiteS18/dsh-image-generation
+category: vision
+description:
+  en: Configure multiple image providers in Settings and call image_generate with the one selected model; images save under generate/image and show inline in the conversation.
+  zh: 在设置中配置多个生图供应商，对话通过 image_generate 调用当前选中的模型；图片保存到工作区 generate/image，并在对话中内联显示。

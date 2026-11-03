@@ -1,0 +1,6 @@
+url: https://github.com/OZONGO/dsh-agents-inits
+name: OZONGO/dsh-agents-inits
+category: workflow
+description:
+  en: "A /agentinit command that builds, repairs or audits a repository's AGENTS.md inside a subagent: the child reads the method file itself and checks every command and path it writes with the bundled read-only checker, so no instruction body enters the main conversation. The bundled checker is a Python script, so Python 3 must be on PATH."
+  zh: "/agentinit 命令：在子代理里生成、修订或审计仓库的 AGENTS.md。方法文档由子代理自己读取，写下的每条命令与路径都用随包的只读检查器核验，主对话不进入任何指令正文。随包的检查器是 Python 脚本，需要 Python 3 在 PATH 中。"

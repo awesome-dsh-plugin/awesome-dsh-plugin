@@ -1,0 +1,6 @@
+url: https://github.com/FleetingEcho/dsh-handoff
+name: FleetingEcho/dsh-handoff
+category: memory
+description:
+  en: 'Self-maintaining handoff memory per working directory and git branch: records turns, folds them into concise Markdown, and injects the result into future sessions from ~/.agent/agent-handoff, byte-compatible with pi-handoff.'
+  zh: 每个工作目录与 git 分支自动维护 handoff.md：记录回合、折叠为简洁 Markdown 并注入后续会话，存储于 ~/.agent/agent-handoff，与 pi-handoff 字节级兼容。

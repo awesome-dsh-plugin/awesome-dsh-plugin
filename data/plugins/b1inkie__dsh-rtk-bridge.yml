@@ -1,0 +1,6 @@
+url: https://github.com/b1inkie/dsh-rtk-bridge
+name: b1inkie/dsh-rtk-bridge
+category: dev
+description:
+  en: 'Rewrites pwsh and bash tool commands through `rtk rewrite` and executes the compact equivalent; falls back to the original command when rtk is missing or has no equivalent, and ships a checksum-verified `/rtk install` downloader.'
+  zh: '把 pwsh / bash 工具命令经 `rtk rewrite` 改写后执行，让 rtk 的压缩输出进入上下文；rtk 缺失或无等价命令时原样执行，并提供带 SHA256 校验的 `/rtk install` 下载。'

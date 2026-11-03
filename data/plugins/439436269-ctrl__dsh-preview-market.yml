@@ -1,0 +1,6 @@
+url: https://github.com/439436269-ctrl/dsh-preview-market
+name: 439436269-ctrl/dsh-preview-market
+category: market
+description:
+  en: 'A vertical preview market for DeepSeek Harness: discover preview plugins, inspect the installed inventory, and install, enable/disable or configure them through dsh-market or the dsh CLI. One-click install and enable/disable need dsh-market; without it each card only shows a copyable install command.'
+  zh: 'DSH 垂直预览市场：发现预览插件、查看已安装清单，并通过 dsh-market 或 dsh CLI 安装、启用/停用与配置。一键安装与启用/停用依赖 dsh-market；没有它时卡片只显示可复制的安装命令。'

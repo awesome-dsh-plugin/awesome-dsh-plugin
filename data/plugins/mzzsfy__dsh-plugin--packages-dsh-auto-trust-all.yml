@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-auto-trust-all
+name: mzzsfy/dsh-plugin#dsh-auto-trust-all
+category: remote
+description:
+  en: 'Dynamically trusts every Host header that actually arrives and flips the default web binding to 0.0.0.0: wildcard or unenumerable entry domains work without editing the start command, the authentication layer is untouched, and hosts are evicted by LRU beyond a capacity cap.'
+  zh: '动态信任所有实际到达的 Host 并把 web 默认绑定翻转为 0.0.0.0：泛域名等无法枚举的入口免改启动命令，认证层不动，超出容量的 Host 按 LRU 淘汰。'
+

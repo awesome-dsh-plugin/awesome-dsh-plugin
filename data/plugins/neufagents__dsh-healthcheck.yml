@@ -1,0 +1,6 @@
+url: https://github.com/neufagents/dsh-healthcheck
+name: neufagents/dsh-healthcheck
+category: session
+description:
+  en: 'Session health check for DSH, read-only: scans the whole session library (totals, largest sessions, warnings for oversized sessions and event-count blowups) and deep-inspects a single session log (tail-balance / crash-tail check, tool-call/result pairing, event-type distribution).'
+  zh: '面向 DSH 的会话健康体检（只读）：全库扫描（总量、最大会话、体积 / 事件数超限告警）与单会话深检（尾部闭合检查、工具调用 / 结果配对、事件类型分布）。'

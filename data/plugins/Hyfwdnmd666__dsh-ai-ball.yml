@@ -1,0 +1,6 @@
+url: https://github.com/Hyfwdnmd666/dsh-ai-ball
+name: Hyfwdnmd666/dsh-ai-ball
+category: fun
+description:
+  en: 'Gives the agent a mouth through the ai-ball floating orb: speak text that the orb types out character by character, set its mood colour, show or hide its monologue panel, read back what you typed into it, and check or start it. The orb is a separate Python 3.10+ overlay you install yourself, and the plugin only writes the files it watches.'
+  zh: '通过 ai-ball 悬浮球给 agent 一张嘴：让球逐字打出你要说的话、按 mood 改变边缘光颜色、显示或收起独白面板、读回你打的字，以及检查接线和启动球。球是独立的 Python 3.10+ 悬浮层，需自行另外安装；插件只写它监听的那几个文件。'

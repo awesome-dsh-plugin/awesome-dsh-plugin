@@ -1,0 +1,6 @@
+url: https://github.com/SiriLee/dsh-approval-hotkeys
+name: SiriLee/dsh-approval-hotkeys
+category: ui
+description:
+  en: 'Panel hotkeys for the web UI: Enter presses the confirm action and Esc presses the cancel action on every interaction panel (approval, question, plan review).'
+  zh: 'Web UI 面板快捷键：在审批、提问、计划审查等交互面板上，Enter 触发确认操作、Esc 触发取消操作。'

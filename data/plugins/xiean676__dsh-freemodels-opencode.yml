@@ -1,0 +1,6 @@
+url: https://github.com/xiean676/dsh-freemodels-opencode
+name: xiean676/dsh-freemodels-opencode
+category: model
+description:
+  en: 'Connects the OpenCode Zen anonymous free lane to DeepSeek Harness: refresh the model list from upstream, tick which models the opencode provider exposes, test any of them with a real request that ends in one of seven verdicts, and order both the settings card and the model selector by a hand-written S/A/B/C capability rating.'
+  zh: '接入 OpenCode Zen 匿名免费车道：可刷新上游模型清单、勾选由 provider opencode 暴露的模型、逐个发真实请求得出七档结论，并用人工 S/A/B/C 评级让设置卡片与模型选择器按能力同序。'

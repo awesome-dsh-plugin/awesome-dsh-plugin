@@ -1,0 +1,6 @@
+url: https://github.com/thomasvvugt/dsh-wide-stats-footer
+name: thomasvvugt/dsh-wide-stats-footer
+category: ui
+description:
+  en: 'Un-clamps the composer stats footer: long turn and token stats lines span the full composer width instead of truncating with an ellipsis.'
+  zh: '解除输入框统计行的宽度限制：较长的轮次与 token 统计行横跨输入框全宽居中显示，不再以省略号截断。'

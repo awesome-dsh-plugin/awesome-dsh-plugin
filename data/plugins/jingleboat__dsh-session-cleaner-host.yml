@@ -1,0 +1,9 @@
+# dsh-session-cleaner: delete a whole conversation from the sidebar session menu,
+# and quote/ask a chat text selection from the right-click menu through one reused
+# continuable `ask` subagent whose answer streams into the right sidebar.
+url: https://github.com/jingleboat/dsh-session-cleaner-host
+name: jingleboat/dsh-session-cleaner-host
+category: session
+description:
+  en: "Deletes a whole conversation from the sidebar session menu, and opens a right-click menu on a chat text selection with Copy, Quote (insert a Markdown quote block into the composer) and Ask: Ask sends the selection plus your question to one reused continuable subagent (label `ask`, found again through the subagent catalog after a restart) and streams the answer into the right sidebar."
+  zh: "从侧栏会话菜单删除整个会话；聊天里划词右键弹出「复制 / 引用 / 提问」：引用把 Markdown 引用块插入输入框，提问把选区与问题交给同一个复用的可继续子智能体（label `ask`，宿主重启后经子智能体目录找回），回答在右侧栏流式显示。"

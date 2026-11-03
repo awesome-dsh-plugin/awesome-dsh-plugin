@@ -1,0 +1,6 @@
+url: https://github.com/SongMiao-tech/dsh-prompt-optimizer
+name: SongMiao-tech/dsh-prompt-optimizer
+category: ui
+description:
+  en: 'Optimize Prompt button under the composer: one click rewrites your draft into a clearer, more executable prompt, with a before-and-after dialog and one-click replacement.'
+  zh: 输入框下方「优化提示词」按钮：一键把草稿重写为更清晰、更可执行的提示词，弹出前后对比，支持一键替换回输入框。

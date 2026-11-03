@@ -1,0 +1,7 @@
+url: https://github.com/Voyager77Twt/dsh-folder-search
+name: Voyager77Twt/dsh-folder-search
+category: tools
+description:
+  en: Search local Word, PDF, PPT, and Excel folders for exam questions and export selected questions to a Word paper.
+  zh: 在本地 Word、PDF、PPT、Excel 文件夹中检索试题，并把选中的题目导出为 Word 试卷。
+tarball: https://github.com/Voyager77Twt/dsh-folder-search/releases/download/v0.5.31/dsh-folder-search-0.5.31.tgz

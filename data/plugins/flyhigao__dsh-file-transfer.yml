@@ -1,0 +1,6 @@
+url: https://github.com/flyhigao/dsh-file-transfer
+name: flyhigao/dsh-file-transfer
+category: ui
+description:
+  en: Adds download buttons to the document preview toolbar and the Files tree, packs a folder download into a streamed ZIP, and adds a Files-tree upload button that streams to the Host one file at a time, capped at 1 GiB and renamed with an (n) suffix instead of overwriting.
+  zh: 在文档预览工具栏与 Files 文件树添加下载按钮（文件夹下载打包为流式 ZIP），并在文件树增加上传按钮：逐个文件流式写入 Host，单文件上限 1 GiB，重名自动改为 (n) 后缀而不覆盖。

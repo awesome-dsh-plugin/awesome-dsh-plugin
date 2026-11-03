@@ -1,0 +1,6 @@
+url: https://github.com/Aeroscis/dsh-temptask
+name: Aeroscis/dsh-temptask
+category: session
+description:
+  en: One-click temporary tasks for DeepSeek Harness — each task is a disposable timestamped workspace plus its own session, shown as a native sidebar workspace node.
+  zh: DeepSeek Harness 的临时任务模式：一键创建一次性的时间戳工作区并开会话，直接成为侧边栏原生工作区节点。

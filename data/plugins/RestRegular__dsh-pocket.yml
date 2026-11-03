@@ -1,0 +1,6 @@
+url: https://github.com/RestRegular/dsh-pocket
+name: RestRegular/dsh-pocket
+category: remote
+description:
+  en: 'A separate narrow-screen web surface for DeepSeek Harness rather than the desktop GUI scaled down: it serves its own session list and chat stream behind a random access token over LAN, a tunnel (cloudflared, localtunnel or localhost.run) or an SSH reverse forward through a server you own. On the phone it streams assistant text, thinking, tool calls and results, sends prompts, stops the running turn, answers blocking questions and tool approvals (including ones waiting in other sessions), switches model, thinking level and permission preset, sends up to four photos compressed on the device, and keeps the computer awake.'
+  zh: '为 DSH 单独做的窄屏移动端 Web 服务，不是把桌面 GUI 缩放塞进手机：自带会话列表与聊天流，随机访问令牌保护，可走局域网、cloudflared / localtunnel / localhost.run 隧道或自有服务器 SSH 反向转发。手机上流式看助手文本、思考、工具调用与结果，能发提示词、停止当前回合、回答阻塞提问与工具审批（含其它会话里等待的），切换模型 / 思考等级 / 权限预置，发送最多 4 张手机上压缩过的照片，并可一键让电脑常亮。'

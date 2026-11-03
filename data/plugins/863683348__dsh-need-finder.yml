@@ -1,0 +1,6 @@
+url: https://github.com/863683348/dsh-need-finder
+name: 863683348/dsh-need-finder
+category: market
+description:
+  en: 'Requirement-driven dsh plugin discovery and environment recipes: plugin_guide matches natural-language needs to a curated plugin directory with reasons and install commands; recipe installs whole setups (通知全家桶, 安全审计套装...) from bundled community bundles with ordered plans.'
+  zh: 需求型插件导购与环境配方：plugin_guide 按自然语言需求语义匹配精选插件并给出理由与安装命令；recipe 一键安装整套社区配方（通知全家桶、安全审计套装等），带有序安装计划。

@@ -1,0 +1,6 @@
+url: https://github.com/xain/ui-beep
+name: xain/ui-beep
+category: notify
+description:
+  en: 'Web Audio agent-heartbeat cues for the DSH web GUI: a low working hum while an agent is busy, ticks on streaming output, and a chime when a session awaits input or work finishes, with per-voice volume, mute toggle, and optional local audio files.'
+  zh: 为 DSH 网页界面提供 Web Audio 智能体心跳提示：Agent 忙碌时低频心跳、流式输出时滴答声、会话等待输入或工作完成时提示音；支持分音色音量、静音开关与本地音频文件替换。

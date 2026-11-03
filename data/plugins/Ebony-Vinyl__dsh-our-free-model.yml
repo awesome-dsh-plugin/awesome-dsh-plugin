@@ -1,0 +1,6 @@
+url: https://github.com/Ebony-Vinyl/dsh-our-free-model
+name: Ebony-Vinyl/dsh-our-free-model
+category: model
+description:
+  en: Adds free model lanes to DeepSeek Harness — DeepSeek V4.1 Flash, Kimi K3 and others — with no login, sign-up or API key, plus a local OpenAI-compatible gateway, fallback routing and a usage dashboard.
+  zh: 为 dsh 接入免费模型车道（含 DeepSeek V4.1 Flash、Kimi K3 等），无需登录、注册或填写 API Key，并提供本地 OpenAI 兼容网关、降级路由与用量看板。

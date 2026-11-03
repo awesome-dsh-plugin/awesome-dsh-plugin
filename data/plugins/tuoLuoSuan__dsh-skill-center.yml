@@ -1,0 +1,6 @@
+url: https://github.com/tuoLuoSuan/dsh-skill-center
+name: tuoLuoSuan/dsh-skill-center
+category: skill
+description:
+  en: 'Browse, preview and install public Agent Skills from inside the DSH web GUI, aggregating five sources (claudeskills.info, skillsmp.com, the awesome-claude-skills repository list, the official anthropics/skills repo, and skill packs shipped by installed DSH plugins). Skills install pinned to a commit rather than a branch name, so what you previewed is what lands; the panel reports provenance, whole-tree update checks and a trash instead of deleting. Before writing anything it validates the skill name and frontmatter against the rules the harness silently enforces, lists files that SKILL.md references but the fetch did not bring, flags partial fetches, and offers overwrite, rename or skip when a name is taken.'
+  zh: '在 DSH Web GUI 里浏览、预览并安装公开的 Agent Skills，聚合五个来源（claudeskills.info、skillsmp.com、awesome-claude-skills 仓库坐标表、Anthropic 官方仓库、已装 DSH 插件自带的技能包）。安装按 commit 而不是分支名钉住，预览到的就是落地的；面板给出每个技能的来路、按整棵树比对的更新检查，删除是移进回收站而不是抹掉。落地之前先按 harness 实际执行的规则体检技能名与 frontmatter（名字不合法会被 harness 静默跳过），列出 SKILL.md 引用但没取回的文件，标出只取到一部分的情况，同名时给出覆盖、改名、跳过三个选项。'

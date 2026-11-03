@@ -1,0 +1,6 @@
+url: https://github.com/masknull/dsh-qoder-connect
+name: masknull/dsh-qoder-connect
+category: model
+description:
+  en: Connects Qoder (China and Global) subscriptions to DSH through personal access tokens, keeping each variant on its own credentials and catalog, with saved-token switching, sidebar quota cards, per-model toggles, a context-window preference and a daily check-in.
+  zh: 通过个人访问令牌将 Qoder（国内版与国际版）接入 DSH，两版各自独立的凭证与模型目录，支持多令牌切换、侧栏额度卡、按模型开关、上下文窗口偏好与每日自动签到。

@@ -1,0 +1,6 @@
+url: https://github.com/zhz8888/dsh-radeon-cloud-patcher
+name: zhz8888/dsh-radeon-cloud-patcher
+category: model
+description:
+  en: "Adds AMD Radeon Cloud as a model provider in DeepSeek Harness, with reasoning-effort levels declared per model. The provider definition ships in the plugin's own patch layer rather than in your profile."
+  zh: "把 AMD Radeon Cloud 接入 DeepSeek Harness 的模型选择器，思考档位按模型逐个声明。provider 定义随插件自带的补丁层交付，而不是写进 profile。"

@@ -1,0 +1,6 @@
+url: https://github.com/zrrrrrrr77/dsh-print-screen
+name: zrrrrrrr77/dsh-print-screen
+category: ui
+description:
+  en: 'Prompt-box screenshot shortcut button. Drag a box, shot taken immediately. DSH hides automatically; multi-monitor supported. Ctrl+Alt+1--hides the window then shoots; shift+click--does not hide. Hold Ctrl+Alt and click 1 to shoot repeatedly. ! One copy is saved by default, named by content hash, in the DSH attachment library; each session writes an index recording which shots belong to it (can be changed to keep an extra copy in the session folder). Images are part of the context, so deleting them breaks the session — use the "Delete Conversation" plugin to remove images together with the conversation. Windows only.'
+  zh: '方便大家直接截屏的提示词框快捷按钮。拉完范围框后直接截屏。自动隐藏dsh，支持多屏幕。Ctrl+Alt+1--隐藏窗口截屏；shift+点击按钮--不隐藏窗口；按住Ctrl+Alt后点击1，反复截屏。！默认以哈希值名称保存1份在DSH附件库，各会话生成索引记录图片归属（可修改为多备份一份至会话文件夹）。图片属于上下文，删除会导致会话错误，须用“删除会话”插件让图片与会话一并删除。仅 Windows。'

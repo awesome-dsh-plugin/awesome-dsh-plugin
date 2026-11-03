@@ -1,0 +1,14 @@
+# 注册表条目 —— data/plugins/bill277048-hash__DSH-guardian--packages-dsh-guardian.yml
+# 仓库：https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+# 注意：描述里含 ": " 必须加引号，否则 YAML 会当成嵌套键
+# 注意：dsh.bundle 清单在子包 packages/dsh-guardian/，故条目必须指向该子包，
+#       否则 `dsh plugin add github:bill277048-hash/DSH-guardian` 装不到任何东西
+url: https://github.com/bill277048-hash/DSH-guardian/tree/main/packages/dsh-guardian
+name: bill277048-hash/DSH-guardian#dsh-guardian
+category: tools
+description:
+  en: 'WebUI panel for the dsh-guardian watchdog: start, stop and inspect two macOS LaunchAgents with status, log tail and explicit failure states.'
+  zh: 'dsh-guardian 守护程序面板：在 dsh WebUI 中启动、停止并查看两个 macOS LaunchAgent 的状态、日志尾行与明确的失败提示。'
+
+# GitHub Release 钉版 tarball（已建 v1.0.0 并上传资产，钉 tag 而非 latest）
+tarball: https://github.com/bill277048-hash/DSH-guardian/releases/download/v1.0.0/botton-dsh-guardian-1.0.0.tgz

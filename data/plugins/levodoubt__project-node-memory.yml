@@ -1,0 +1,7 @@
+url: https://github.com/levodoubt/project-node-memory
+name: levodoubt/project-node-memory
+category: memory
+tarball: https://github.com/levodoubt/project-node-memory/releases/latest/download/project-node-memory.tgz
+description:
+  en: 'Markdown-as-database project knowledge base for DSH agents: ten kb_* tools (including kb_register for registering existing notes), stable TIDs, `[[node]]` links that never copy text, `[[tscl]]` definitions expanded in place, bounded reads, structural lint covering tscl, workspace-first library discovery, inline git snapshots, a node-graph panel, and a bundled prompt section plus skill that make the agent reach for kb_* instead of hand-written docs/.'
+  zh: '给 DSH Agent 用的「md 即数据库」项目知识库：10 个 kb_* 工具（含登记已有笔记的 kb_register）、稳定 TID、`[[node]]` 只出链接不复制正文、`[[tscl]]` 定义就地展开、有界读取、覆盖 tscl 的结构 lint、工作区优先的库发现、内嵌 git 快照、节点图面板，另带系统提示词段落与随包技能，让 Agent 优先用 kb_* 而不是手写 docs/。'

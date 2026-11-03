@@ -1,0 +1,6 @@
+url: https://github.com/qwq1999/dsh-panellist
+name: qwq1999/dsh-panellist
+category: ui
+description:
+  en: 'Panellist manager: reorder the entries on the left rail, rename them, replace their icons, hide them, and fold several into a Group with a flyout menu, from a Settings tab.'
+  zh: 面板列表管理器：在设置页里调整左侧轨道上的页签顺序、改名、换图标、隐藏，并把若干页签收进带飞出菜单的分组。

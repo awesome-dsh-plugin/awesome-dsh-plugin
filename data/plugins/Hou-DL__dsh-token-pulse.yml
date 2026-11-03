@@ -1,0 +1,6 @@
+url: https://github.com/Hou-DL/dsh-token-pulse
+name: Hou-DL/dsh-token-pulse
+category: usage
+description:
+  en: 'Local-first token usage heatmap inside DSH settings: GitHub-style week/month/quarter/year grids, hourly usage per day, per-model and per-provider Top 5, and persisted history that survives session deletion. Zero network, zero billing.'
+  zh: 'DSH 设置内的本地 Token 用量热图：GitHub 风格周/月/季度/年视图、每日小时级展开、模型与供应商 Top 5，历史持久化，删除会话不丢数据。零联网、零计费。'

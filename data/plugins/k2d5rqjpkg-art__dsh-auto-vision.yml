@@ -1,0 +1,6 @@
+url: https://github.com/k2d5rqjpkg-art/dsh-auto-vision
+name: k2d5rqjpkg-art/dsh-auto-vision
+category: vision
+description:
+  en: 'Auto-switch the DeepSeek route to the vision model on demand: flash main session switches (A), pro keeps deep reasoning and delegates image reading to a vision subagent (B), subagents always switch, with fatal-failure fallback. No manual model switching.'
+  zh: '按需自动把 DeepSeek 路由切到视觉模型：flash 主会话直接切（A），pro 保持深推理并交给视觉子代理读图（B），子代理恒切，含失败回退，无需手动切模型。'

@@ -1,0 +1,7 @@
+url: https://github.com/IKEASven69/dsh-takeover
+name: IKEASven69/dsh-takeover
+category: session
+tarball: https://github.com/IKEASven69/dsh-takeover/releases/download/v0.2.1/dsh-takeover-0.2.1.tgz
+description:
+  zh: "跨 agent 会话接力：会话输入框工具行里的「接力」按钮点开即浮出工作台，浏览八家外部 agent（Claude Code / Codex / OpenCode / ZCode / Pi / WorkBuddy / Cursor / Grok）的最近会话，点「接管」一键新建 DSH 会话、投递指令并自动切换过去；handoff: 1 协议收件箱消费即弃，四态证据账本，补丁随卡，同步盘跨机接力，投递失败自动退回复制指令。设置卡只留命令速览与读取器开关。"
+  en: "Cross-agent session relay: a compact \"Relay\" chip in the composer toolbar unfolds a floating workbench to browse recent sessions of eight external agents (Claude Code, Codex, OpenCode, ZCode, Pi, WorkBuddy, Cursor, Grok); one click spawns a DSH session with the takeover command delivered and auto-switches to it. handoff: 1 protocol inbox cards are consume-once with a four-state evidence ledger; patches ride with cards; cross-machine relay via a synced folder. Settings keeps the command reference and reader toggles."

@@ -1,0 +1,6 @@
+url: https://github.com/yuehancn/dsh-tool-qrcode
+name: yuehancn/dsh-tool-qrcode
+category: tools
+description:
+  en: Generate QR codes from a from-scratch ISO/IEC 18004 encoder with no external tools, plan symbol version and error-correction headroom before producing anything, and decode an existing symbol back to text.
+  zh: 内置从零实现的 ISO/IEC 18004 编码器，无需任何外部程序即可出码；出图前先算清楚版本与纠错余量，也能把已有二维码读回文本。

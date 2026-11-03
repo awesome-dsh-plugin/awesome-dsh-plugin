@@ -1,0 +1,7 @@
+url: https://github.com/Ruixinhua/dsh-universe-api
+name: Ruixinhua/dsh-universe-api
+category: tools
+tarball: https://github.com/Ruixinhua/dsh-universe-api/releases/download/v0.1.2/dsh-universe-api-0.1.2.tgz
+description:
+  en: Offline, deterministic public API catalog search for DeepSeek Harness, with Chinese and English queries plus exact filters for authentication, HTTPS, CORS, status, source tier, and category.
+  zh: 面向 DeepSeek Harness 的离线确定性公共 API 目录检索，支持中英文查询，以及认证、HTTPS、CORS、状态、来源层级与分类的精确筛选。

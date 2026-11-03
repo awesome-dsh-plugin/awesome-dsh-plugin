@@ -1,0 +1,7 @@
+url: https://github.com/ziyans2022/dsh-problem-bank
+name: ziyans2022/dsh-problem-bank
+category: tools
+description:
+  en: Structured math problem bank with multi-solution support, layered knowledge graph and six-dimensional difficulty for DeepSeek Harness.
+  zh: 面向 DeepSeek Harness 的结构化数学题库：多解法、分层知识图谱、六维难度与技巧驱动的变式出题。
+tarball: https://github.com/ziyans2022/dsh-problem-bank/releases/download/v0.6.2/dsh-problem-bank-0.6.2.tgz

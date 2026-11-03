@@ -1,0 +1,6 @@
+url: https://github.com/leeyoung1/dsh-advisor-plugin
+name: leeyoung1/dsh-advisor-plugin
+category: agi
+description:
+  en: Pairs the running executor with a stronger reviewer model through zero-parameter advisor() calls and step-based patrol checks, returning plan, correction, or stop guidance.
+  zh: 通过零参数 advisor() 咨询和按步巡逻检查，为执行模型接入更强的审查模型，返回计划、纠偏或停止信号。

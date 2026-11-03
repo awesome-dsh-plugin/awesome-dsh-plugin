@@ -1,0 +1,7 @@
+url: https://github.com/GoldenLoaf24h/dsh-prompt-suggestion
+name: GoldenLoaf24h/dsh-prompt-suggestion
+category: ui
+tarball: https://github.com/GoldenLoaf24h/dsh-prompt-suggestion/releases/latest/download/dsh-prompt-suggestion.tgz
+description:
+  en: 'Predicts your next message after each turn and shows it as gray ghost text in the composer: Tab takes the whole line, Alt+Right takes one word at a time, Enter takes it and sends, Esc dismisses, and Alt+R asks the model again without repeating the old one. Typing a few characters completes from prompts already sent in the session, Up in an empty composer recalls the last one, and a plugin-page form sets the provider, model, reasoning effort, per-key toggles and generation limits.'
+  zh: '每轮结束后预测你的下一句话，以灰色 ghost text 显示在输入框：Tab 整条采纳、Alt+→ 逐词采纳、Enter 采纳并发送、Esc 忽略、Alt+R 换一条且不重复旧的那条；输入几个字时用本会话发过的提示做前缀补全，空输入框按 ↑ 回填上一条；插件页可设置服务商、模型、思考强度、各按键开关与生成参数。'

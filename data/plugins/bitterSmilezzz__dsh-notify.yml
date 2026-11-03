@@ -1,0 +1,6 @@
+url: https://github.com/bitterSmilezzz/dsh-notify
+name: bitterSmilezzz/dsh-notify
+category: notify
+description:
+  en: Native desktop notifications for DSH — approvals, questions, turn completion, session end and errors — with click-to-session, per-event toggles, quiet hours, a privacy switch that keeps message text off the banner, and a Web Audio tone per event type.
+  zh: DSH 桌面通知：审批、提问、轮次完成、会话结束与出错时弹系统原生通知，点击直达对应会话；六类事件分别开关，支持免打扰时段与隐藏正文的隐私开关，并按事件类型合成提示音。

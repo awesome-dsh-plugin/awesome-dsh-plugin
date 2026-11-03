@@ -1,0 +1,6 @@
+url: https://github.com/Dobo233/dsh-claude-desktop
+name: Dobo233/dsh-claude-desktop
+category: tools
+description:
+  en: 'Drives the Claude desktop app from DSH over its claude:// deep links: open a Claude Code session with a prompt and folders, a Cowork task with files, or push a CLI session id back into the app. Also presses Ctrl+Enter for you (SendKeys) and reads the reply back from the local Claude Code transcripts under ~/.claude/projects/<cwd-slug>/<session>.jsonl — seven tools: desktop_send, desktop_continue, desktop_open, desktop_sessions, desktop_read, desktop_wait, desktop_probe.'
+  zh: '用桌面端自己的 claude:// 深链把活派过去：开新 Claude Code 会话（带 prompt、目录）、带文件开 Cowork 任务、把 CLI 会话 id 交回应用；再代按 Ctrl+Enter 发送，并从本机 Claude Code 的 transcript（~/.claude/projects/<slug>/<session>.jsonl）把回答读回来。七个工具：desktop_send / desktop_continue / desktop_open / desktop_sessions / desktop_read / desktop_wait / desktop_probe。'

@@ -1,0 +1,6 @@
+url: https://github.com/wld12314/dsh-group-meeting-slides
+name: wld12314/dsh-group-meeting-slides
+category: skill
+description:
+  en: Turns an English paper PDF into a Chinese group-meeting .pptx whose figures and tables are the paper's own cropped pixels.
+  zh: 把英文论文 PDF 做成中文组会汇报 PPT，图表用原文真实像素。

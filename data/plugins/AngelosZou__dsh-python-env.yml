@@ -1,0 +1,6 @@
+url: https://github.com/AngelosZou/dsh-python-env
+name: AngelosZou/dsh-python-env
+category: dev
+description:
+  en: 'Wraps Python virtual environment management commands: reduces the network and permission problems agents hit when managing environments through terminal commands, works across operating systems, and routes installs automatically through mirrors and local proxies. The tools are strictly confined by the granted read/write permissions.'
+  zh: '封装了Python虚拟环境管理指令，减少Agent使用终端指令管理环境时遇到的网络问题和权限问题，兼容不同操作系统，工具内部设置自动网络与镜像路由。工具严格受给定读写权限限制。'

@@ -1,0 +1,6 @@
+url: https://github.com/7dgroup-ai/dsh-skill-7d-git-commit
+name: 7dgroup-ai/dsh-skill-7d-git-commit
+category: git
+description:
+  en: 'Checks git commit messages against the 7DGroup convention (Chinese type tags, length and punctuation rules) before committing, as a client-side guard before GitLab pre-receive hooks.'
+  zh: '提交前按 7DGroup 规范校验 git commit message（中文类型标签、长度与标点规则），作为 GitLab pre-receive 钩子的客户端前置校验。'

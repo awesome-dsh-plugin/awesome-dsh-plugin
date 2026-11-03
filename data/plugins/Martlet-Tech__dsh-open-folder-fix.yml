@@ -1,0 +1,6 @@
+url: https://github.com/Martlet-Tech/dsh-open-folder-fix
+name: Martlet-Tech/dsh-open-folder-fix
+category: ui
+description:
+  en: 'Fixes the Windows workspace-open action. The shipped opener runs `explorer.exe "<file:// URI>"`, which on some hosts reports success without raising a window — the exit-code verdict cannot tell an opened window from nothing happening. This routes that one action to `explorer.exe /e,<dir>`, which raises a window reliably, and leaves every other application in the menu on the shipped path.'
+  zh: '修正 Windows 上「打开工作目录」的行为。官方调用 `explorer.exe "<file:// URI>"`，在某些主机上会报告成功却不弹窗口——因为成功判据是退出码，分不出「窗口开了」和「什么都没发生」。本插件把该操作改走 `explorer.exe /e,<目录>`，稳定新开窗口；菜单里其它应用仍走官方路径。'

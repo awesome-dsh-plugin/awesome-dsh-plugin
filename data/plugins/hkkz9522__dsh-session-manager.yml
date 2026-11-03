@@ -1,0 +1,6 @@
+url: https://github.com/hkkz9522/dsh-session-manager
+name: hkkz9522/dsh-session-manager
+category: session
+description:
+  en: 'DeepSeek Harness session and workspace manager —— Workspaces: archive and visibility. Sessions: move, migrate presets, delete, favorite, review later, prioritize, tag, and annotate. Batch operations.'
+  zh: 'DSH 会话与工作区管理——工作区：归档与显示。会话：跨工作区移动、预设迁移、删除；收藏、待回看、优先级、标签、备注。批量操作。'

@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-kubectl
+name: WODE25500/dsh-kubectl
+category: dev
+description:
+  en: 'Kubernetes ops for the agent: get resources with structured JSON output, describe, logs, exec, apply/delete (user-confirmed) and port-forward.'
+  zh: 'Kubernetes 运维：JSON 结构化查资源、describe、日志、exec、apply/delete（需确认）与端口转发。'

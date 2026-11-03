@@ -1,0 +1,7 @@
+url: https://github.com/renjianbuchai/dsh-session-attention
+name: renjianbuchai/dsh-session-attention
+category: notify
+tarball: https://github.com/renjianbuchai/dsh-session-attention/releases/download/v0.1.0/dsh-session-attention-0.1.0.tgz
+description:
+  en: System notifications, a tab-title dot and a PWA taskbar badge when a reply finishes in the background or a session waits for your approval, plan review or answer, all cleared when you return to the window.
+  zh: 会话在后台跑完、或在等你审批、计划审阅或回答时，弹出系统通知、标题加红点并点亮 PWA 任务栏徽标；回到窗口自动清除。

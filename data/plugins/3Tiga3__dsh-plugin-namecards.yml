@@ -1,0 +1,7 @@
+url: https://github.com/3Tiga3/dsh-plugin-namecards
+name: 3Tiga3/dsh-plugin-namecards
+category: ui
+tarball: https://github.com/3Tiga3/dsh-plugin-namecards/releases/download/v0.6.2/dsh-plugin-namecards-0.6.2.tgz
+description:
+  en: 'Icon, Chinese display name and a one-line note for every DSH plugin, organized with folders, favorites, drag or pinyin ordering, list and grid views. Icons are auto-assigned to all installed plugins and can be overridden; import and export cover icons, names, notes, folders and order. Display-only: plugin files and cordis config are never modified; enable switches call the official plugin manager.'
+  zh: '给 DSH 插件换自定义图标、中文显示名和一句话说明；用文件夹与收藏整理，支持拖拽排序、按备注名拼音排序、列表与铺陈两种视图。所有已安装插件自动分配图标（可手动覆盖）；导入导出覆盖图标、备注名、说明、文件夹与排序。只改显示，不修改插件文件与 cordis 配置；启用开关转调官方插件管理器。'

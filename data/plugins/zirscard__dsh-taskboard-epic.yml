@@ -1,0 +1,8 @@
+# Entry for the awesome-dsh-plugin list.
+url: https://github.com/zirscard/dsh-taskboard-epic
+name: zirscard/dsh-taskboard-epic
+category: ui
+description:
+  en: 'A client-side panel for DeepSeek Harness: it stacks the epic cards of a dsh-taskboard project in their epic:children order, shows the position, code, name and version of every module along the arc, and marks the start, middle and end modules. The order can be changed by drag or by buttons, and the new order is written back through the the taskboard own public update API, so it persists and is shared by everyone viewing the project. Requires the cloader/dsh-taskboard plugin.'
+  zh: 'DeepSeek Harness 的客户端面板：把 dsh-taskboard 项目里的总任务卡按 epic:children 顺序堆叠展示，标出每个模块在弧线上的位置、代号、名称与版本，并区分起点/中间/终点模块。顺序可拖拽或用按钮调整，新顺序通过 taskboard 自身的公开更新 API 写回，因此会持久化并对该项目的所有查看者共享。需要先安装 cloader/dsh-taskboard 插件。'
+tarball: https://github.com/zirscard/dsh-taskboard-epic/releases/download/v0.1.0/dsh-taskboard-epic.tgz

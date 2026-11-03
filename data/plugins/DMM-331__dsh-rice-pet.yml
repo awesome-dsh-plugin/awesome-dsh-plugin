@@ -1,0 +1,6 @@
+url: https://github.com/DMM-331/dsh-rice-pet
+name: DMM-331/dsh-rice-pet
+category: fun
+description:
+  en: A chibi whale maid desktop pet for DeepSeek Harness who eats white rice while the model generates, lives inside the DSH window or anywhere on a macOS or Windows desktop, and dives for treasure between turns. On Windows the desktop overlay is compiled at install time and skipped when swiftc or the .NET SDK is unavailable, so the pet stays inside the DSH window.
+  zh: DSH 的鲸鱼娘桌宠：模型生成时一口一口吃白饭，住在窗口里或桌面任意角落（macOS / Windows），回合结束还会下海捞宝。桌面浮层在安装时编译，缺少 swiftc 或 .NET SDK 时会跳过，桌宠只留在 DSH 窗口里。

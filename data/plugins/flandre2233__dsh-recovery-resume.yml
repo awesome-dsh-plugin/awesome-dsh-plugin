@@ -1,0 +1,7 @@
+url: https://github.com/flandre2233/dsh-recovery-resume
+name: flandre2233/dsh-recovery-resume
+category: session
+tarball: https://github.com/flandre2233/dsh-recovery-resume/releases/download/v0.1.3/dsh-recovery-resume-0.1.3.tgz
+description:
+  en: "Resumes turns interrupted by a DSH host restart: hooks agent activation (once a session is live), reads the crash-repair turn/end, and sends a continuation that requires verifying real-world state first rather than assuming a side effect succeeded or failed. Permanent failures (AUTH, QUOTA, context overflow) are skipped, with a cross-restart budget, adaptive backoff and a minimal-context payload."
+  zh: "DSH 重启后自动续跑被中断的回合：在会话激活后读取崩溃修复写入的 turn/end，投出要求先核对真实状态（不假定外部操作成功或失败）的续跑消息；永久性失败（认证、配额、上下文超限）直接跳过，并有跨重启次数预算、自适应退避与最小上下文注入。"

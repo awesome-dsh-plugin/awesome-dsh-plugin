@@ -1,0 +1,6 @@
+url: https://github.com/zhaochengbiao005/dsh-gcua
+name: zhaochengbiao005/dsh-gcua
+category: workflow
+description:
+  en: Agent state machine plugin with a todo ledger, stall guard, phase trails and a process-isolated per-step Python worker with GUI automation lanes. Windows only; needs Python 3.10+ on PATH, and pyautogui, mss and pywinauto for the GUI lanes.
+  zh: 智能体状态机插件：任务台账、停滞熔断、相位轨迹与进程隔离的步级 Python 执行器，带 GUI 自动化车道。仅限 Windows；需 PATH 中有 Python 3.10+，GUI 车道另需 pyautogui、mss、pywinauto。

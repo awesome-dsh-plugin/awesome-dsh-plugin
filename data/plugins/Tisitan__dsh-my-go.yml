@@ -1,0 +1,6 @@
+url: https://github.com/Tisitan/dsh-my-go
+name: Tisitan/dsh-my-go
+category: agi
+description:
+  en: 'Multi-agent orchestration preset: a lead agent dispatches subagents from a built-in role roster over separate read and write lane pools with per-role model binding, and collects each subagent report on a shared board; adds go_work/continue/need_help/forward tools, a tree-view panel and a settings page.'
+  zh: '多智能体编排预设：主编（Sisyphus）调度 + 内置工种名册 + 报告落板；读/写双泳道池化编排、按工种绑定模型，含 go_work/continue/need_help/forward 通信，以及 Web UI 树状图面板与设置页。'

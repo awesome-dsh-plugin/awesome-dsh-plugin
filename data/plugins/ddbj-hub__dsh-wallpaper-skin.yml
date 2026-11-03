@@ -1,0 +1,6 @@
+url: https://github.com/ddbj-hub/dsh-wallpaper-skin
+name: ddbj-hub/dsh-wallpaper-skin
+category: theme
+description:
+  en: 'Persistent wallpaper skin for the dsh web profile: static image or muted looping video as the app background, with translucent panels and a floating picker panel.'
+  zh: 'dsh Web 界面的持久化壁纸皮肤：静态图片或静音循环视频作为应用背景，面板半透明化，右下角悬浮面板一键换壁纸。'

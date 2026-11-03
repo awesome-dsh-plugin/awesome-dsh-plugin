@@ -1,0 +1,6 @@
+url: https://github.com/LCQ-1024/dsh-prompt-enhancer
+name: LCQ-1024/dsh-prompt-enhancer
+category: ui
+description:
+  en: Adds a prompt-enhancement button to the DSH composer that rewrites drafts into agent-ready prompts.
+  zh: 在 DSH 输入框添加提示词增强按钮，将草稿改写为可直接交给 Agent 执行的提示词。

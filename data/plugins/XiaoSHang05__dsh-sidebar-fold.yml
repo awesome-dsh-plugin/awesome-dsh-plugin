@@ -1,0 +1,6 @@
+url: https://github.com/XiaoSHang05/dsh-sidebar-fold
+name: XiaoSHang05/dsh-sidebar-fold
+category: ui
+description:
+  en: 'Puts one collapsible row above the sidebar panel icons. Click it to hide the icons, click again to show them. The choice is remembered in the browser. Because folding is done in CSS, icons from plugins you install later are folded too. It does not depend on any other plugin.'
+  zh: '在侧栏面板图标上方加一行可折叠的标题。点一下收起图标，再点一下展开，选择会记住。折叠是纯 CSS 做的，所以你以后新装的插件图标也会一起收进去。不依赖任何其它插件。'

@@ -1,0 +1,6 @@
+url: https://github.com/Earnest02522/dsh-archive-manager
+name: Earnest02522/dsh-archive-manager
+category: session
+description:
+  en: 'Archived-conversation manager for DeepSeek Harness: view archived conversations grouped by workspace, restore them, and reveal their transcript folders.'
+  zh: 归档会话管理器：按工作区分组查看已归档的会话，支持恢复（取消归档）与打开会话转录目录。

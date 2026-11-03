@@ -1,0 +1,6 @@
+url: https://github.com/runcat-tommy/dsh-unitverse
+name: runcat-tommy/dsh-unitverse
+category: tools
+description:
+  en: 'Unit conversion as a `convert` tool: 10 categories (length, area, volume, time, angle, speed, temperature, pressure, energy/heat, power) and 82 units with English and Chinese aliases, plus a locale-aware Unit Converter tab in the DSH web view with one module per category and a temperature-difference (Δ) switch.'
+  zh: '单位换算：提供 convert 工具，覆盖长度/面积/体积/时间/角度/速度/温度/压力/热量/功率十大类共 82 个单位，支持中英文单位名与温差（Δ）换算，并在 DSH Web 会话视图中提供按类别分模块、跟随中英文界面语言的「单位换算」标签页。'

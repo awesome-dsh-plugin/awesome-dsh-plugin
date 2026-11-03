@@ -1,0 +1,6 @@
+url: https://github.com/minutiae3/dsh-tier-brain
+name: minutiae3/dsh-tier-brain
+category: model
+description:
+  en: Rates how hard the current message is and shows the cheapest model and reasoning effort that still fits, above the composer, before you send.
+  zh: 发送前判断问题难度，在输入框上方提示够用的模型与推理等级，避免用错档位多花钱。

@@ -1,0 +1,6 @@
+url: https://github.com/jan0107/dsh-compact-window
+name: jan0107/dsh-compact-window
+category: ui
+description:
+  en: 'Small-window mode for DSH NEXT on Windows: a 425px-wide always-on-top sticky window with a drawer sidebar and animated transitions. Requires DSH NEXT; the other desktop client (dsh desktop) is not supported.'
+  zh: 'DSH NEXT（Windows）的小窗模式：把主窗口切成 425px 宽、置顶的便签式小窗，侧栏变抽屉、进出带过渡动效。只支持 DSH NEXT，另一个桌面端 dsh desktop 不支持。'

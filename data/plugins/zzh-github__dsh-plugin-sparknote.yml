@@ -1,0 +1,7 @@
+url: https://github.com/zzh-github/dsh-plugin-sparknote
+name: zzh-github/dsh-plugin-sparknote
+category: ui
+description:
+  en: Highlight DSH Web replies while reading and save them with their user questions.
+  zh: 阅读 DSH Web 回复时划线，并连同对应的用户问题一起收藏。
+tarball: https://github.com/zzh-github/dsh-plugin-sparknote/releases/download/v0.1.3/dsh-sparknote-0.1.3.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/hellofuture2068/dsh-simple-view
+name: hellofuture2068/dsh-simple-view
+category: ui
+description:
+  en: 'Declutters the DSH chat: hides agent execution-log rows, tightens spacing and fonts, wraps messages in bubbles, and injects an editable reply-concisely system instruction.'
+  zh: '简化 DSH 聊天界面：隐藏执行日志、收紧间距与字号、把消息做成气泡，并注入可编辑的“简洁回复”系统指令。'

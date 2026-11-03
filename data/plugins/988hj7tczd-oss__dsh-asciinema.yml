@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-asciinema
+name: 988hj7tczd-oss/dsh-asciinema
+category: tools
+description:
+  en: "Record terminal/tool output as asciinema v2 (.cast), replay with an offline embedded player, and export HTML."
+  zh: "把终端/工具输出录制为 asciinema v2（.cast）文件，离线内嵌播放器回放并导出 HTML。"

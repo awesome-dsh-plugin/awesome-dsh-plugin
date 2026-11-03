@@ -1,0 +1,7 @@
+url: https://github.com/ZHUBAI0528/dsh-client-ui-aqua-community-fix
+name: ZHUBAI0528/dsh-client-ui-aqua-community-fix
+category: theme
+description:
+  en: 'Import your own fonts, set three sizes and six weight stops, and pick a separate palette for body, chat and hint text — an Aqua glass theme for DeepSeek Harness 0.2.1-rc.3, with adjustable blur and frost, a fluid or image/video wallpaper, per-region text tuning, and a switch that restores the stock UI. Continues the Aqua theme by WYH66666666 (DSH-Transparent-UI-Plugin v1.3.0); do not install alongside the upstream.'
+  zh: '能导入自己的字体、调三处字号与六档字重，还能给正文、会话和说明文字分别配色——一套适配 DeepSeek Harness 0.2.1-rc.3 的 Aqua 玻璃主题，附带可调模糊与磨砂、流体或图片与视频壁纸、逐区域文字微调，以及一键还原原生界面的开关。承接 WYH66666666 的 Aqua 主题（DSH-Transparent-UI-Plugin v1.3.0），请勿与上游同装。'
+icon: https://raw.githubusercontent.com/ZHUBAI0528/dsh-client-ui-aqua-community-fix/main/assets/icon-180.png

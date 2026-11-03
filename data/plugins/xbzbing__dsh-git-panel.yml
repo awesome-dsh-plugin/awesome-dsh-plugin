@@ -1,0 +1,6 @@
+url: https://github.com/xbzbing/dsh-git-panel
+name: xbzbing/dsh-git-panel
+category: git
+description:
+  en: 'IDE-style Git panel in the DSH Web GUI: a resident tab with a three-column overview (branch/tag list, searchable commit-history graph, commit detail with changed-file tree and message) and a changes page (stats bar, uncommitted list with per-file stage/unstage/discard, commit box with amend); side-by-side diffs carry lazy highlight.js syntax highlighting, on-demand between-hunk context expansion and word-level intra-line emphasis, with image files shown as before/after panes; plus a zsh-style branch marker in the input bar. Every git command runs as an argv array through the host subprocess service, cwd locked to the repo root.'
+  zh: 'DSH Web GUI 里的 IDE 风格 Git 面板：常驻标签页含三栏总览（分支/标签列表、可搜索的提交历史图、含变更文件树与提交信息的提交详情）与变更记录页（统计条、带逐文件暂存/取消/丢弃的未提交列表、含 amend 的提交框）；并排差异带懒加载 highlight.js 语法高亮、块间上下文按需展开与词级行内高亮，图片文件以变更前/后双图对照；另在输入框提供 zsh 风格分支标记。所有 git 命令以 argv 数组经宿主 subprocess 执行、cwd 锁定仓库根。'

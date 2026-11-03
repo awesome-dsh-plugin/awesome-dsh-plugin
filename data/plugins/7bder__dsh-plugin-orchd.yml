@@ -1,0 +1,6 @@
+url: https://github.com/7bder/dsh-plugin-orchd
+name: 7bder/dsh-plugin-orchd
+category: workflow
+description:
+  en: 'Read-only orchd panel for the DSH right sidebar: task board, ideas board, dependency graph, review timeline and an install entry for the project of the current session.'
+  zh: '把 orchd 项目状态带进 DSH 右侧栏的只读面板：任务看板、想法看板、依赖图、审查时间线与接入入口，只跟当前会话的项目。'

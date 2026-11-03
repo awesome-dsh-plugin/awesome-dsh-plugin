@@ -1,0 +1,6 @@
+url: https://github.com/fjzzwxp/dsh-mnemosyne-memory
+name: fjzzwxp/dsh-mnemosyne-memory
+category: memory
+description:
+  en: Permanent memory plugin for DSH with vector search, LLM reflection, and knowledge pages.
+  zh: DSH 永久记忆插件，支持向量搜索、LLM 反思和知识页面生成。

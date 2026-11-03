@@ -1,0 +1,6 @@
+url: https://github.com/MicroHEROX/dsh-koboldcpp-hands
+name: MicroHEROX/dsh-koboldcpp-hands
+category: vision
+description:
+  en: Hands repetitive text and vision labor (OCR, image analysis, comparison) to a local KoboldCpp (llama.cpp) server through koboldcpp_run and koboldcpp_vision tools, with on-demand server lifecycle management.
+  zh: 给在线模型装上本地双手：koboldcpp_run 与 koboldcpp_vision 工具把重复的文本与视觉（OCR、图像分析、对比）劳动交给本地 KoboldCpp（llama.cpp）服务器，并按需拉起与管理服务器生命周期。

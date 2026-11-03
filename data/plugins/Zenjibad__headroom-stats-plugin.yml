@@ -1,0 +1,6 @@
+url: https://github.com/Zenjibad/headroom-stats-plugin
+name: Zenjibad/headroom-stats-plugin
+category: usage
+description:
+  en: 'Shows real-time token and cost savings from the Headroom compression proxy in the DSH web UI: a Settings dashboard plus a persistent stats line under the composer.'
+  zh: 在 DSH 内实时展示 Headroom 压缩代理的 token 与费用节省：设置页仪表盘 + 输入区常驻统计行。

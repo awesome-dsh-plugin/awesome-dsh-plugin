@@ -1,0 +1,6 @@
+url: https://github.com/ramwin/dsh-workspace-tree-status
+name: ramwin/dsh-workspace-tree-status
+category: ui
+description:
+  en: Shows an aggregated session-status dot in front of every folder in DSH Web's sidebar workspace tree — waiting for input, just finished, or running — and bubbles the sessions of nested workspaces up to their parent folder.
+  zh: 在 DSH Web 侧边栏工作区树的每个目录名前显示聚合状态点（等你输入 / 刚完成 / 运行中），父目录自动汇总嵌套工作区的会话状态。

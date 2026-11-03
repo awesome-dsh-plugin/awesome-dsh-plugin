@@ -1,0 +1,6 @@
+url: https://github.com/764475881/dsh-chat-width
+name: 764475881/dsh-chat-width
+category: ui
+description:
+  en: 'Drag-to-resize the chat content width in the DeepSeek Harness web UI: a handle on the column right edge overrides the built-in 748px width (default 1040px, 520-2400 range, persisted per browser, double-click resets).'
+  zh: '为 DeepSeek Harness 网页界面提供可拖拽的聊天内容宽度：文字列右缘的把手覆盖内置的 748px 宽度（默认 1040px、范围 520~2400、按浏览器记忆，双击恢复默认）。'

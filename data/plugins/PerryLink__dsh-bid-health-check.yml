@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-bid-health-check
+name: PerryLink/dsh-bid-health-check
+category: tools
+description:
+  en: 'Checks a bid requirement by requirement against a tender requirements pack and reports which requirements appear answered, weakly matched or not located. It reports differences; it does not judge substantive compliance.'
+  zh: '按招标要求逐条检查投标文件的响应位置，报告哪些要求看起来有应答、哪些匹配较弱、哪些未能定位。只报告差异，不判断是否实质满足。'

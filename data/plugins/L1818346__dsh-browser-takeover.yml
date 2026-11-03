@@ -1,0 +1,6 @@
+url: https://github.com/L1818346/dsh-browser-takeover
+name: L1818346/dsh-browser-takeover
+category: browser
+description:
+  en: 'Browser takeover for sign-in-gated sites: keeps a list of addresses that need a login (URL and date only, no credentials), answers before a visit whether an address is already on it, reports whether the debug browser is signed in there from the session-cookie names of that site (certain, likely, or not signed in — anonymous cookies such as _gh_sess never count), and opens saved addresses in that browser by navigating and clicking one element by its visible text, searching every iframe. One click per call, no crawling.'
+  zh: '浏览器网址接管：维护一份「要登录的网址」清单（只存网址与添加时间，不存账号密码），访问前先回答这条地址在不在清单里；按该站点的会话 cookie 名字判断调试浏览器此刻是否已登录（确定／可能／未登录，_gh_sess 这类匿名 cookie 不计），在带调试端口的浏览器里打开清单中的地址，并按可见文字点击一个元素（会搜索所有 iframe）。一次调用最多点一个元素，不做批量爬取。'

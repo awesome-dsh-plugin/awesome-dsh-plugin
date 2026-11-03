@@ -1,0 +1,6 @@
+url: https://github.com/RevxZxCx/dsh-where-did-my-tokens-go
+name: RevxZxCx/dsh-where-did-my-tokens-go
+category: usage
+description:
+  en: 'Realtime token counter beside the deep-thinking indicator in chat, with merged or split input/output display, per-step operation counts, and auto-scaling K/M/G/T units.'
+  zh: '在聊天页“深度思考”指示旁实时显示 token 计数，支持输入/输出合并或分列展示、逐步骤操作计数与 K/M/G/T 自适应单位。'

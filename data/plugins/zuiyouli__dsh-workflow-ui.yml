@@ -1,0 +1,6 @@
+url: https://github.com/zuiyouli/dsh-workflow-ui
+name: zuiyouli/dsh-workflow-ui
+category: workflow
+description:
+  en: 'In-conversation workflow run timeline for DSH Web: a horizontal rail with phase stations, agent pills, loop arcs and parallel bands replaces the stock workflow tool card and workflow-run chat node. Planned stations render before the run starts via client-side script scanning; status dots and icons follow DSH official primitives.'
+  zh: 对话内工作流运行时间线：横向轨道 + 阶段站 + 子代理药丸 + 循环弧线 + 并行带，替换官方 workflow 工具卡与 workflow-run 聊天节点。客户端脚本扫描让计划站在开跑前全部渲染；状态点与图标对齐 DSH 官方 primitives。

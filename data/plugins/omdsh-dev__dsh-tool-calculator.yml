@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-dev/dsh-tool-calculator
+name: omdsh-dev/dsh-tool-calculator
+category: tools
+description:
+  en: Safe math expression evaluator, zero-dependency recursive-descent parser.
+  zh: 安全的数学表达式求值器，零依赖递归下降解析器。

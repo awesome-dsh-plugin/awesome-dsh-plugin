@@ -1,0 +1,6 @@
+url: https://github.com/DeepseekDays/dsh-provider-toggle
+name: DeepseekDays/dsh-provider-toggle
+category: model
+description:
+  en: 'Adds a one-click switch to every provider row in Settings - Models: turn a provider off and it leaves the model picker, turn it back on and it returns. It works by wrapping the model catalog call, so it affects the catalog and the picker only, never routing, keys or provider config; existing sessions that already use such a model keep working.'
+  zh: '在「设置 → 模型」每个提供商行的「编辑」左边加一个一键开关：关掉哪个提供商，它就从主界面模型选择栏里消失，打开即恢复。做法是包一层模型目录调用，因此只影响目录与选择器，不动路由、密钥与 provider 配置；已经选着该模型的旧会话照常工作。'

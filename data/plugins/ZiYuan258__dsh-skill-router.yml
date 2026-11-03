@@ -1,0 +1,6 @@
+url: https://github.com/ZiYuan258/dsh-skill-router
+name: ZiYuan258/dsh-skill-router
+category: skill
+description:
+  en: "On-demand skill tools for DeepSeek Harness: registers skill_search / skill_load / skill_ref so the model searches a staged skill library first and loads a skill body only when it needs it, keeping the library out of the resident session catalog and out of every turn's context; adds a Skills tab to the conversation view ring that reads back the whole session and lists which skills were actually loaded, and in which turn. Zero dependencies, and the records render client-side only, never entering the model's context."
+  zh: "DeepSeek Harness 的按需技能工具：注册 skill_search / skill_load / skill_ref 三个工具，让模型先从分层的技能库里检索、再按需加载正文，库里的技能因而不必进入常驻目录、不占每轮上下文；并在对话视图栏加一个「技能」标签页，回读整个会话、列出本次真正加载过哪些技能及其轮次。零依赖，所有技能调用记录只在客户端渲染，不进入模型上下文。"

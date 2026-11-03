@@ -1,0 +1,6 @@
+url: https://github.com/helllo-shijie/motor-hospital-plugins/tree/main/plugins/motor-parts-selector
+name: helllo-shijie/motor-hospital-plugins#motor-parts-selector
+category: tools
+description:
+  en: 'Builds a motor-repair replacement-parts BOM from the fault and motor rating, listing stock, lead time and domestic or imported alternatives.'
+  zh: '按故障类型与电机功率生成替换配件 BOM，输出库存、交期与国产/进口替代选项。'

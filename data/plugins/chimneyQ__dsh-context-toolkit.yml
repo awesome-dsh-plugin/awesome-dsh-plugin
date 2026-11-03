@@ -1,0 +1,6 @@
+url: https://github.com/chimneyQ/dsh-context-toolkit
+name: chimneyQ/dsh-context-toolkit
+category: tools
+description:
+  en: 'Keeps bulk output out of the conversation: ctk_execute, ctk_execute_file and ctk_batch_execute run code in a child process and return only the conclusion, ctk_index and ctk_search file long material into a local FTS5 knowledge base built on node:sqlite, and a routing gate refuses curl and wget before they execute. Ships ctk_stats and ctk_doctor plus a settings page with a live context-occupancy panel. No third-party runtime dependencies.'
+  zh: '让大块输出不进对话：ctk_execute、ctk_execute_file 与 ctk_batch_execute 在子进程里跑代码只回结论，ctk_index 与 ctk_search 把长材料存进基于 node:sqlite 的本地 FTS5 知识库，路由门禁在执行前拦下 curl 与 wget。附 ctk_stats、ctk_doctor 与带实时上下文占用面板的设置页，零第三方运行时依赖。'

@@ -1,0 +1,6 @@
+url: https://github.com/Wzh0718/dsh-minimal-transcript
+name: Wzh0718/dsh-minimal-transcript
+category: ui
+description:
+  en: 'Minimal DSH Web transcript toggle: hide thinking, tool-call, and turn-process rows from the session header while preserving assistant answer text.'
+  zh: 'DSH Web 极简会话切换：从会话头部隐藏思考、工具调用和轮次流程行，同时保留助手回答文本。'

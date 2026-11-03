@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-opensheet-sidebar
+name: drscrewdriver/dsh-opensheet-sidebar
+category: docs
+description:
+  en: 'A dsh-better-sidebar reader for CSV/TSV/PSV files and xlsx/xlsm workbooks: a sortable, filterable table with sheet tabs. Ceilings on rows, columns and cells, plus two zip-container gates, keep an input from freezing the tab.'
+  zh: 'dsh-better-sidebar 的表格读取视图：读取 CSV/TSV/PSV 与 xlsx/xlsm 工作簿，表头可点击排序、可按子串筛选，多工作表以标签切换。行数、列数与单元格数均有上限，另有两道 zip 容器闸门，任何输入都不会卡死标签页。'

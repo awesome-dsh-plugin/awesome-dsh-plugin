@@ -1,0 +1,6 @@
+url: https://github.com/Rice00/dsh-tree-view
+name: Rice00/dsh-tree-view
+category: session
+description:
+  en: 'Tree view of a DSH conversation: editing an old message forks the thread, every version lives in one tree while the sidebar keeps a single entry, branches can be renamed, and a branch can be promoted to a session of its own.'
+  zh: 'DSH 会话的树形视图：编辑一条旧消息即从那一刻分叉，所有版本住进同一棵树、侧栏始终只有一条，分支可以改名，也可以把某个分支提升为独立会话。'

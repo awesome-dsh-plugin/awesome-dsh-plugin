@@ -1,0 +1,6 @@
+url: https://github.com/Moolight/dsh-tes-spinner
+name: Moolight/dsh-tes-spinner
+category: fun
+description:
+  en: 'Draggable floating TES-gyro widget for the DSH Web UI: click to spin it with linear friction decay, tune the spin speed from a slider, and play the bundled track with its LRC lyrics scrolling in sync. Spin speed and position are remembered.'
+  zh: 可拖动的浮动 TES 陀螺挂件：点击抽一下就会转，转速按恒定摩擦线性衰减（转得越快停得越久），用滑条调转速，播放内置歌曲并同步滚动 LRC 歌词；位置与转速会被记住。

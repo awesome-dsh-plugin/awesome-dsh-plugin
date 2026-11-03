@@ -1,0 +1,6 @@
+url: https://github.com/tako-dev/dsh-tako
+name: tako-dev/dsh-tako
+category: model
+description:
+  en: Adds Tako chat models to the official llm-pi-ai provider list from Tako's public catalog, with live refresh, context windows from size tags, and browser one-click sign-in writing a cr_ key into DSH credentials.
+  zh: 从 Tako 公开模型目录把聊天模型接入官方 llm-pi-ai，实时刷新并按尺寸标签写入上下文窗口，支持浏览器一键登录，把 cr_ 密钥存入 DSH 凭据。

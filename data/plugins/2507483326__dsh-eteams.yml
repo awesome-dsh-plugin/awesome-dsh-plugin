@@ -1,0 +1,6 @@
+url: https://github.com/2507483326/dsh-eteams
+name: 2507483326/dsh-eteams
+category: workflow
+description:
+  en: Captain-led multi-agent teams that split a goal into tasks and dispatch them along an execution chain to members running in their own sub-sessions, each with its own model.
+  zh: 领队主导的多智能体团队：把目标拆成任务，按执行链派发给运行在各自子会话里的成员，每个成员可配不同模型。

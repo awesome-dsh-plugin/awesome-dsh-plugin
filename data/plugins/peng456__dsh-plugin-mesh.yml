@@ -1,0 +1,6 @@
+url: https://github.com/peng456/dsh-plugin-mesh
+name: peng456/dsh-plugin-mesh
+category: remote
+description:
+  en: Discovers other DSH instances on the local network by UDP multicast or port scan, lists them in a sidebar panel together with the capabilities each one reports, and dispatches tasks between machines in both directions over the LAN or over an automatically downloaded userspace Tailscale node.
+  zh: 通过 UDP 组播或端口扫描发现局域网内的其他 DSH 实例，在侧栏面板中列出它们以及各自上报的能力，并可经局域网或自动下载的用户态 Tailscale 节点在两台机器之间双向派发任务。

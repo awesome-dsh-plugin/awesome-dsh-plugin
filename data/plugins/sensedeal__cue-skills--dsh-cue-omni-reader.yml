@@ -1,0 +1,6 @@
+url: https://github.com/sensedeal/cue-skills/tree/main/dsh/cue-omni-reader
+name: sensedeal/cue-skills#cue-omni-reader
+category: tools
+description:
+  en: 'Cue Omni Reader for DeepSeek Harness: registers the audited omni-reader-mcp MCP server so its URL/file parse tools surface as mcp__omni__ (parse, get_parse_status, read_result, read_outline, save_result, discard_result, cancel_parse).'
+  zh: '面向 DeepSeek Harness 的 Cue Omni Reader：接入审校版 omni-reader-mcp MCP 服务，把 URL/文件解析工具以 mcp__omni__ 暴露（parse、get_parse_status、read_result、read_outline、save_result、discard_result、cancel_parse）。'

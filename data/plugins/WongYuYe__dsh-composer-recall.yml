@@ -1,0 +1,7 @@
+url: https://github.com/WongYuYe/dsh-composer-recall
+name: WongYuYe/dsh-composer-recall
+category: ui
+tarball: https://github.com/WongYuYe/dsh-composer-recall/releases/latest/download/dsh-composer-recall.tgz
+description:
+  en: "Arrow-key input history for DSH 0.1.2-alpha.1: press ↑ in an empty composer to recall this session's prompts, ↓ to go forward, Esc to restore the draft."
+  zh: DSH 0.1.2-alpha.1 输入框历史：空输入框按 ↑ 召回当前会话刚发过的话，↓ 前进，Esc 还原正在打的草稿。

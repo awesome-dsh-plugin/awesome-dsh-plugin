@@ -1,0 +1,6 @@
+url: https://github.com/john-walks-slow/dsh-set-model
+name: john-walks-slow/dsh-set-model
+category: model
+description:
+  en: 'Model switching and reasoning-effort control for DeepSeek Harness: set_model and list_models agent tools let the agent autonomously change its provider, model or thinking depth (reasoning effort) mid-task with a mandatory reason, a provider whitelist and a context-window token-pressure guard, the active model is injected into the runtime context, and Plan Mode auto-transition switches to a configured planning model on entering plan mode and restores the previous execution model on exit.'
+  zh: '为 DSH 提供动态模型切换与思考深度调节：set_model / list_models 两个 Agent 工具让模型按任务难度自主切换 provider、model 与 reasoningEffort（思考深度），强制附带切换理由，带 Provider 白名单与上下文窗口 Token 水位护栏，活跃模型注入运行时上下文；进入 Plan 规划模式自动切换到配置的规划模型，退出自动恢复日常执行模型。'

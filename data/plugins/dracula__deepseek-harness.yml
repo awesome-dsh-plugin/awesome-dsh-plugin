@@ -1,0 +1,8 @@
+url: https://github.com/dracula/deepseek-harness
+name: dracula/deepseek-harness
+category: theme
+description:
+  en: "A Dracula dark theme for DeepSeek Harness covering the sidebar, chat, settings, and code highlighting, with first-paint styling and synchronized switches across windows."
+  zh: "为 DeepSeek Harness 提供 Dracula 深色主题，覆盖侧栏、对话区、设置与代码高亮，支持启动时应用主题和跨窗口开关同步。"
+icon: https://raw.githubusercontent.com/dracula/deepseek-harness/main/docs/icon-180.png
+tarball: https://github.com/dracula/deepseek-harness/releases/latest/download/dsh-theme-dracula.tgz

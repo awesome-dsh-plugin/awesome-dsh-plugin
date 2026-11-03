@@ -1,0 +1,6 @@
+url: https://github.com/kipozannaki/DSH-Headroom-Plugin/tree/main/plugin
+name: kipozannaki/DSH-Headroom-Plugin#plugin
+category: memory
+description:
+  en: 'Runs the upstream Headroom compression toolkit (headroom-ai, Apache-2.0) inside DeepSeek Harness over MCP: headroom_compress, headroom_retrieve and headroom_stats are exposed as mcp__headroom__* tools backed by the upstream server, installed on demand by uvx. Compression is lossy but reversible — originals are fetched back by hash from a local CCR store. Also ships a registrar that adds DeepSeek Harness to Headroom''s own MCP registry, and a model-header sanitizer for the upstream proxy.'
+  zh: '在 DeepSeek Harness 内以 MCP 方式运行上游 Headroom 压缩工具集（headroom-ai，Apache-2.0）：headroom_compress、headroom_retrieve、headroom_stats 以 mcp__headroom__* 工具暴露，后端是上游服务端、由 uvx 按需安装。压缩有损但可逆——原文按哈希从本地 CCR 存储取回。另附一个注册器，把 DeepSeek Harness 加入 Headroom 自身的 MCP 注册表，并修复上游代理的模型请求头。'

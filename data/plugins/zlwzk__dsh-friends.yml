@@ -1,0 +1,7 @@
+url: https://github.com/zlwzk/dsh-friends
+name: zlwzk/dsh-friends
+category: identity
+description:
+  en: 'A friend system for DeepSeek Harness: two DSH users see whether the other is online and whether their model is running a task, with an editable signature, mood emoji, pokes, and AES-GCM end-to-end encryption over a public relay.'
+  zh: 'DSH 鲸友好友系统：两台 DSH 互相看到对方是否在线、模型是否在跑任务，支持个性签名、心情 emoji、戳一戳，经公共中继做 AES-GCM 端到端加密，无需服务器与注册登录。'
+tarball: https://github.com/zlwzk/dsh-friends/releases/latest/download/dsh-friends.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/Thunderunruly/workspace-settings
+name: Thunderunruly/workspace-settings
+category: session
+icon: https://raw.githubusercontent.com/Thunderunruly/workspace-settings/main/icon-180.png
+description:
+  en: "Per-workspace session defaults for DeepSeek Harness: save the Agent preset, permission preset, model, reasoning effort, Chat work-details level and collapse timing per workspace; new or reused blank sessions in that workspace start from them."
+  zh: "按工作区保存 DeepSeek Harness 的会话默认值：模式、权限预设、模型、推理强度、Chat 工作步骤展示与收起时机；在该工作区新建或复用的空白会话自动应用这些值。"

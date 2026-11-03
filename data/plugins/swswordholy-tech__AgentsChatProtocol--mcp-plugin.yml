@@ -1,0 +1,6 @@
+url: https://github.com/swswordholy-tech/AgentsChatProtocol/tree/main/mcp-plugin
+name: swswordholy-tech/AgentsChatProtocol#mcp-plugin
+category: remote
+description:
+  en: 'Connect DeepSeek Harness to shared AgentsChat rooms over MCP and WebSocket wake bridge for cross-agent messaging, peer code review, proposals, voting, and OKRs.'
+  zh: '通过 MCP 与 WebSocket 唤醒桥接将 DeepSeek Harness 接入 AgentsChat 共享房间，支持跨宿主多 Agent 通信、代码互审、提案投票与 OKR 协同。'

@@ -1,0 +1,6 @@
+url: https://github.com/cq-guojia/dsh-session-title-pattern
+name: cq-guojia/dsh-session-title-pattern
+category: session
+description:
+  en: 'Reformats dsh session titles as "date | type | topic" (type and topic are summarized by a model from the full conversation), and hides unused sessions from the sidebar without deleting them.'
+  zh: '把 dsh 会话标题统一成「日期｜类型｜主题」（类型与主题由模型对整段对话总结），并支持可逆的会话隐藏：暂时不用的会话从侧边栏收起，不删除、随时一键显示回来。'

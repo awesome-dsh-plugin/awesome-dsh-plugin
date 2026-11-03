@@ -1,0 +1,6 @@
+url: https://github.com/DelayNooMore/dsh-plugin-session-trash
+name: DelayNooMore/dsh-plugin-session-trash
+category: session
+description:
+  en: 'Session trash for DSH: move sessions to a recoverable trash, restore or purge them in settings.'
+  zh: '会话回收站：移入回收站、恢复或永久删除会话。'

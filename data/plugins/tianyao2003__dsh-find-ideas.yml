@@ -1,0 +1,6 @@
+url: https://github.com/tianyao2003/dsh-find-ideas
+name: tianyao2003/dsh-find-ideas
+category: tools
+description:
+  en: 'GitHub project search and analysis: describe your idea in one sentence and the agent searches GitHub for related projects, ranks them by relevance weighted with stars, and returns a structured card — last updated, relevance, stars, weighted score, language and a one-line description for each project. Pick a few repositories and it reads their README, dependency manifest, directory tree and key files to lay out their architecture — so you stand on the shoulders of giants before you start building.'
+  zh: 'GitHub 项目检索与解析工具：一句话输入开发想法，agent 在 GitHub 搜索相关项目，按相关性与 star 加权排序后返回一张结构化的卡片（包括各项目的更新时间、相关性分数、star数、加权后得分、使用的开发语言、一句话简介）。选择几个仓库后，它还能直接读取这些项目的 README、依赖清单、目录树和关键文件等，梳理它们的架构。让你在动手开发前，先“站在巨人的肩膀上”。'

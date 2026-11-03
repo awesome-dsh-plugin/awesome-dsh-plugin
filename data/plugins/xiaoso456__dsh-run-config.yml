@@ -1,0 +1,6 @@
+url: https://github.com/xiaoso456/dsh-run-config
+name: xiaoso456/dsh-run-config
+category: dev
+description:
+  en: 'IDE-style run configurations for DSH: save LLM prompts and shell commands as reusable run configs (global or per-workspace), run them from the session header or the new-session page, and manage them via the task_run_config tool with approval-gated writes.'
+  zh: 'DSH 的 IDE 风格运行配置：把常用 LLM 提示词和 Shell 命令保存为可复用的运行配置（全局或按工作区），在会话头部或新会话页一键运行，大模型可通过 task_run_config 工具管理（写操作走审批）。'

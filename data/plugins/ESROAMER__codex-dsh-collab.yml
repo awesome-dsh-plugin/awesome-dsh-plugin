@@ -1,0 +1,6 @@
+url: https://github.com/ESROAMER/codex-dsh-collab
+name: ESROAMER/codex-dsh-collab
+category: workflow
+description:
+  en: 'Let Codex dispatch tasks to DeepSeek Harness workspaces, follow execution, read results, and continue collaboration through a local bridge and companion Codex skill.'
+  zh: '通过本机桥接插件与配套 Codex 技能，让 Codex 向 DeepSeek Harness 工作区派发任务、跟踪执行、回读结果并继续协作。'

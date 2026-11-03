@@ -1,0 +1,6 @@
+url: https://github.com/yokesky/dsh-usage-lens
+name: yokesky/dsh-usage-lens
+category: usage
+description:
+  en: 'Usage statistics dashboard for the DSH Web UI: info cards, a 280-day GitHub-style activity heatmap, daily token trend, and model-usage donut chart.'
+  zh: DSH Web UI 用量统计面板：信息卡、280 天活跃热力图、按天 Token 趋势与模型用量双环饼图。

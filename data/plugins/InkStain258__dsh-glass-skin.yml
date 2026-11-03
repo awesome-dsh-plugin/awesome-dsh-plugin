@@ -1,0 +1,6 @@
+url: https://github.com/InkStain258/dsh-glass-skin
+name: InkStain258/dsh-glass-skin
+category: theme
+description:
+  en: 'Turns the DeepSeek Harness window into frosted acrylic glass so the desktop shows through, stacking on top of the active theme instead of replacing it. Desktop show-through on Windows 11 also needs the bundled installer (npx github:InkStain258/dsh-glass-skin), which makes a backed-up edit to the DSH Desktop app.asar.'
+  zh: '把 DeepSeek Harness 窗口换成磨砂亚克力玻璃，可透视桌面；叠加在当前主题之上而非替换主题。Windows 11 上透出桌面还需另跑仓库自带安装器（npx github:InkStain258/dsh-glass-skin，会带备份地修改 DSH Desktop 的 app.asar）。'

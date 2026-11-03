@@ -1,0 +1,6 @@
+url: https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-task-board
+name: DamonKoy/dsh-web-ui#dsh-task-board
+category: ui
+description:
+  en: 'Task board for the dsh web GUI: a sidebar entry plus a multi-column kanban view with local persistence.'
+  zh: dsh web GUI 任务看板：侧边栏入口 + 多列看板视图，本地持久化。

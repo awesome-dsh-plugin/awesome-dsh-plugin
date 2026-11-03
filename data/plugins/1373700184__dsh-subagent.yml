@@ -1,0 +1,6 @@
+url: https://github.com/1373700184/dsh-subagent
+name: 1373700184/dsh-subagent
+category: model
+description:
+  en: Registers local Qoder, QoderCN, OpenCode, Pi and CodeBuddy CLIs as DSH subagent backends, with ordered model fallback, live progress, per-run credit display, a settings page, and slash commands. Requires the corresponding CLI installed and logged in.
+  zh: 把本机 Qoder、QoderCN、OpenCode、Pi、CodeBuddy 等 CLI 注册为 DSH 子代理后端，支持模型故障转移链、实时进度、单次额度显示、设置页与斜杠指令。需先安装并登录对应 CLI。

@@ -1,0 +1,6 @@
+url: https://github.com/zzd1990/dsh-parallel-dev
+name: zzd1990/dsh-parallel-dev
+category: workflow
+description:
+  en: By default, blocks marking a team task complete without a passed independent verification record whose commit matches the worktree HEAD, and adds a dependency DAG board and a settings page.
+  zh: 默认拦截缺少「验收通过」独立记录、或验收提交与 worktree HEAD 不一致的团队任务完成操作，并提供依赖 DAG 看板与设置页。

@@ -1,0 +1,6 @@
+url: https://github.com/ChaoJie0/dsh-tm-guard
+name: ChaoJie0/dsh-tm-guard
+category: security
+description:
+  en: 'Zero-intervention permission gate for DeepSeek Harness (DSH) agents on macOS — active on install. Writes that can be undone via a local git baseline or macOS Time Machine are auto-approved and automatically snapshotted; network access, package installs, process/system management, and reads of sensitive credential paths are blocked; every decision is audited — the audit log keeps everything by default, with optional automatic cleanup of the oldest records.'
+  zh: 'macOS 上 DSH 智能体的零干预权限门 —— 安装即生效。可经本地 Git 或时间机器回滚的写操作自动放行并自动打快照，拦截网络、装包、进程 / 系统管理与敏感路径读取，并记录完整审计日志（可配置启用自动清理最旧审计记录）。'

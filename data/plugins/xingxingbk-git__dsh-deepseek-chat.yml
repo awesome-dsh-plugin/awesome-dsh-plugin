@@ -1,0 +1,6 @@
+url: https://github.com/xingxingbk-git/dsh-deepseek-chat
+name: xingxingbk-git/dsh-deepseek-chat
+category: ui
+description:
+  en: 'Adds a switch between DeepSeek web chat and the Harness workspace in DSH Desktop.'
+  zh: '在 DSH 桌面版中提供 DeepSeek 网页聊天与 Harness 工作区之间的切换。'

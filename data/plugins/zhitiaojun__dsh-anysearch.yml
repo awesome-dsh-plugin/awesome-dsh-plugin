@@ -1,0 +1,6 @@
+url: https://github.com/zhitiaojun/dsh-anysearch
+name: zhitiaojun/dsh-anysearch
+category: tools
+description:
+  en: 'AnySearch-backed search tools for agents: general and vertical-domain search, parallel batch queries, vertical-domain capability discovery, and page-to-Markdown extraction, plus an API key panel in Settings. It registers its own tools instead of a web_search provider, so it cannot be installed alongside @anysearch/anysearch-dsh.'
+  zh: '给 agent 用的 AnySearch 搜索工具：通用与垂直域搜索、并行批量查询、垂直域目录发现、网页转 Markdown，并在设置中提供 API Key 面板。它注册独立工具而非 web_search provider，不能与 @anysearch/anysearch-dsh 同时安装。'

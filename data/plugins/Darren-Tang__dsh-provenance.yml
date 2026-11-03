@@ -1,0 +1,6 @@
+url: https://github.com/Darren-Tang/dsh-provenance
+name: Darren-Tang/dsh-provenance
+category: security
+description:
+  en: 'Pre-install supply-chain checks for DeepSeek Harness plugins: verify the tarball you are about to install matches the source you read, before any code runs.'
+  zh: '为 DeepSeek Harness 插件做安装前供应链校验：在代码运行前核对即将安装的包是否与你读到的源码一致。'

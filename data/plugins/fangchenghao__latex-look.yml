@@ -1,0 +1,6 @@
+url: https://github.com/fangchenghao/latex-look
+name: fangchenghao/latex-look
+category: docs
+description:
+  en: 'Lets the agent see the compiled page: renders any page to an image, resolves a PDF point or a text anchor to the exact source line through SyncTeX (and says when a rule is drawn by a package rather than by the body, which is where naive locating is wrong), diffs a page against the previous build so an edit is visible, audits every page for holes the edit introduced, and checks that numbered labels still read in order.'
+  zh: '让 Agent 真正看见编译后的页面：把任意一页渲染成图片，用 SyncTeX 把页面坐标或文字锚点解析成源码 file:line（并指出某条横线是宏包画的而不是正文画的——这正是朴素定位最容易出错的地方），把这一页与上一次构建做像素对比，逐页审计本次修改新引入的空洞，并检查图表编号是否仍然顺序正确。'

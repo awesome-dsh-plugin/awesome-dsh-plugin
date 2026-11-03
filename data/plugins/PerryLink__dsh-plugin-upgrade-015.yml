@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-plugin-upgrade-015
+name: PerryLink/dsh-plugin-upgrade-015
+category: skill
+description:
+  en: 'Merged, version-locked plugin upgrade skill for DeepSeek Harness (0.1.3-alpha.1 to 0.1.5-rc.1 as two closed legs): an evidence-bound version card plus a zero-dependency 20-seam scanner, shipped as a bundle skill and an npx CLI.'
+  zh: 合并后的版本锁定插件升级技能（0.1.3-alpha.1 → 0.1.5-rc.1，两条闭环腿）：证据绑定版本卡 + 零依赖 20 接缝扫描器，以 bundle 技能 + npx CLI 两种形态发布。

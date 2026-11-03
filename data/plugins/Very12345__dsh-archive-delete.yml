@@ -1,0 +1,6 @@
+url: https://github.com/Very12345/dsh-archive-delete
+name: Very12345/dsh-archive-delete
+category: session
+description:
+  en: "Archived-session management with single and batch deletion, native workspace registry cleanup, and deferred file cleanup while the host holds session resources."
+  zh: "归档会话管理，支持单条与批量删除、原生工作区登记同步，以及宿主持有会话资源时的延迟文件清理。"

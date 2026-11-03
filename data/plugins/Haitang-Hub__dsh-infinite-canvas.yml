@@ -1,0 +1,8 @@
+# awesome-dsh-plugin 收录条目（提交 PR 时把本文件内容原样复制到其
+# data/plugins/Haitang-Hub__dsh-infinite-canvas.yml）
+url: https://github.com/Haitang-Hub/dsh-infinite-canvas
+name: Haitang-Hub/dsh-infinite-canvas
+category: tools
+description:
+  en: Infinite canvas workspace in the DSH sidebar — arrange text, image, video and audio nodes, generate media with AI, and let agents drive every canvas operation through MCP tools. Ships a local bridge service, ready to use offline after install.
+  zh: 无限画布右侧栏插件——在画布上编排文本、图片、视频、音频节点，用 AI 生成媒体内容，Agent 经 MCP 工具直接操作画布；自带本地桥服务，安装后离线可用。

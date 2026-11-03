@@ -1,0 +1,7 @@
+url: https://github.com/1420079678-ctrl/agent-body/tree/main/workspace/plugins/dsh-organism
+name: 1420079678-ctrl/agent-body#dsh-organism
+category: dev
+tarball: https://github.com/1420079678-ctrl/agent-body/releases/download/v0.1.1/dsh-external-dsh-organism-0.1.1.tgz
+description:
+  zh: "Agent-Body 的器官内核：把插件组织成一具身体。命令先被转成神经冲动、确定性地支配到该处理它的器官并指明用哪个能力；心跳按内环境变速（告警加快、静默放慢）把指令、本体状态与告警打包泵向全身；反射弧零模型调用、命中即执行；失败走确定性归因（缺工具/参数/权限/超时/网络）加处方与复检闭环，参数错误不自动重试。器官缺失时按能力重叠自动代偿，工具 schema 按当前意图显影（仓库内实测省 84.7%）。本条目是 agent-body 仓库中的内核插件本体。"
+  en: "The organ kernel of Agent-Body: plugins organized as one body. Each command is turned into a nerve impulse that deterministically innervates the organ which should handle it and names the capability to use; a heartbeat with a variable interval (faster on alerts, slower when idle) pumps operator directives, proprioception and homeostasis warnings system-wide; reflex arcs fire with zero model calls; failures go through deterministic attribution (missing tool / arguments / permission / timeout / network), a prescription, and a re-check loop, with argument errors never auto-retried. A missing organ is compensated by the one with the highest capability overlap, and tool schemas are gated by the current intent (84.7% measured reduction, reproducible in-repo). This entry is the kernel plugin package inside the agent-body repository."

@@ -1,0 +1,6 @@
+url: https://github.com/lyhtakeashot/dsh-lucky-block
+name: lyhtakeashot/dsh-lucky-block
+category: fun
+description:
+  en: 'Adds a draggable lucky-block button to the DeepSeek Harness web UI. Single-click plays zero-cost little performances (popups, a fake blue screen, daily fortune, trivia, cold jokes, music, and a set of visual stunts); a 1.4-second long-press mines the block open and starts a new session to write a random paper, read the news, invent something, or spin a short story. It also appends a "lucky block" choice to the model''s multiple-choice questions and rolls a random pick, reversible by saying "rollback". Block appearance and event weights are adjustable in settings.'
+  zh: '给 DeepSeek Harness 网页界面加一个可拖拽的幸运方块按钮：单击放零成本小表演（弹窗、假蓝屏、今日抽签、冷知识、冷笑话、音乐和一组视觉小演出），长按 1.4 秒挖穿后开新会话随机写论文、读新闻、发明东西或编短篇小说。它还会给模型的问答题选项末尾加一个「幸运方块」随机替你决定，不满意说「回滚」即可撤销。方块外观与事件权重都能在设置里改。'

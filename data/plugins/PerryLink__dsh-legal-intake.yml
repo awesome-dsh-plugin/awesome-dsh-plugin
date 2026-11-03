@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-legal-intake
+name: PerryLink/dsh-legal-intake
+category: workflow
+description:
+  en: 'Legal request intake: read requests out of EML, deduplicate threads and export the intake ledger — 2 `legal.*` tools.'
+  zh: '法务需求收件：从 EML 读取需求、按线程去重并导出收件台账——2 个 `legal.*` 工具。'

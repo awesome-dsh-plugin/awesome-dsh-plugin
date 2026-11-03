@@ -1,0 +1,6 @@
+url: https://github.com/sleep123937/dsh-assist-chat
+name: sleep123937/dsh-assist-chat
+category: ui
+description:
+  en: "Side chat for the right dock: branches the current conversation into its own Session so follow-ups never derail the main thread. Reuses the product Conversation surface, so streaming, tool calls, Stop and the composer behave exactly like the main chat."
+  zh: "右侧栏辅助对话：把当前会话分支成独立 Session，追问不打断主线。直接复用产品自带的对话界面，流式输出、工具调用、Stop 与 composer 与主对话完全一致。"

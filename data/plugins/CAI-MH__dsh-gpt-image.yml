@@ -1,0 +1,6 @@
+url: https://github.com/CAI-MH/dsh-gpt-image
+name: CAI-MH/dsh-gpt-image
+category: vision
+description:
+  en: 'Generate images through a logged-in web ChatGPT session and download them to a local directory.'
+  zh: '控制已登录的网页版 ChatGPT 生成图片并下载到本地。'
