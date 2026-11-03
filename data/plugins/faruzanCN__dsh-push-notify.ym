@@ -1,6 +1,0 @@
-url: https://github.com/faruzanCN/dsh-push-notify
-name: faruzanCN/dsh-push-notify
-category: notify
-description:
-  en: 'Multi-channel push notification plugin supporting Bark (iOS) and ntfy (Android/iOS/Web/Desktop) for turn completion, approvals, questions, and quota halts.'
-  zh: '多渠道推送通知插件，支持 Bark (iOS) 与 ntfy (全平台)，覆盖回合结束、操作授权、交互提问及额度耗尽异常停机。'
