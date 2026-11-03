@@ -1,0 +1,6 @@
+url: https://github.com/836157055/dsh-teleagent-pool
+name: 836157055/dsh-teleagent-pool
+category: model
+description:
+  en: 'Registers two LLM account pools as model providers: TeleAgent (China Telecom TeleAI) with a daily 09:00 UTC+8 full-pool check-in, and AutoClaw (Zhipu desktop), whose tokens are decrypted from the local DPAPI-protected credential store rather than pasted in. Both pools report credit balances and model catalogs; AutoClaw chat streams through the desktop bridge, and exhausted quota triggers failover across accounts and local desktop instances. Panels ship in settings and the left sidebar.'
+  zh: '把两个 LLM 账号池注册为模型提供方：TeleAgent（中国电信天翼 AI 星辰超级智能体）支持每天 09:00（UTC+8）全量自动签到；AutoClaw（智谱桌面端）的 token 直接由本机 DPAPI 保护的凭据解出，无需手工粘贴。两个号池都能查询积分余额与模型目录，AutoClaw 对话经桌面端桥接流式返回，额度耗尽时在多个账号与本地桌面端实例之间自动转移。设置页与左侧边栏均有面板。'

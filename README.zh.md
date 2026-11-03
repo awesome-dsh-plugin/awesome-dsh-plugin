@@ -2597,6 +2597,7 @@ dsh plugin --profile web add dshmarket
 - [643048695/dsh-auto-retry](https://github.com/643048695/dsh-auto-retry) — 模型请求失败自动重试：拦截每一次请求错误，按 2/5/10/20 秒的阶梯退避后重放同一个 step，中转站抖动与限流不再中断整轮对话。
 - [643048695/dsh-subagent-role-router](https://github.com/643048695/dsh-subagent-role-router) — 基于 dingminhua/dsh-subagent-default-model 的衍生作品（不要与上游同装）：按角色为子代理派发选路由，带候补池、跨供应商故障转移与 fork 活跃窗口切片；标题栏显示正在运行的子代理及其时长与 token；支持运行中与批量换模型，并给模型提供可调用的路由工具。
 - [66rapper/dsh-model-auto-enricher](https://github.com/66rapper/dsh-model-auto-enricher) — DSH 模型补齐助手：解决添加新渠道后还要把几十个模型一个个手动点开调百万上下文、调最大输出、勾多模态发图（\[text, image]）、配思考强度档位（{low, high, max}）的繁琐痛点，支持设置页添加模型保存后自动补齐与可视化一键补齐。
+- [836157055/dsh-teleagent-pool](https://github.com/836157055/dsh-teleagent-pool) — 把两个 LLM 账号池注册为模型提供方：TeleAgent（中国电信天翼 AI 星辰超级智能体）支持每天 09:00（UTC+8）全量自动签到；AutoClaw（智谱桌面端）的 token 直接由本机 DPAPI 保护的凭据解出，无需手工粘贴。两个号池都能查询积分余额与模型目录，AutoClaw 对话经桌面端桥接流式返回，额度耗尽时在多个账号与本地桌面端实例之间自动转移。设置页与左侧边栏均有面板。
 - [a1141171521/dsh-multi-agent-gateway](https://github.com/a1141171521/dsh-multi-agent-gateway) — 把六个 AI 编程平台接进 DSH——OpenCode、Qoder、Qoder CN、TRAE、WorkBuddy 与国际版——每个平台在原生模型选择器里各自成组；在一个设置页里统一管理账号，平台有签到接口就每日签到、可查积分余额，账号被限流时自动改用同平台其它账号。平台声明了积分倍率的模型会标注倍率。OpenCode 匿名免费层无需任何凭证；TRAE 默认隐藏，在设置里启用后才出现。
 - [a2580vb/dsh-llm-opencode-go](https://github.com/a2580vb/dsh-llm-opencode-go) — 把OpenCode Go接入DSH的模型列表，提供订阅额度显示、模型发现、会话亲和等功能。
 - [a331266223/dsh-multi-model-discussion](https://github.com/a331266223/dsh-multi-model-discussion) — DSH 多模型协作研讨插件：独立提案、互审、证据核验、完整稿修订与新上下文验收。
