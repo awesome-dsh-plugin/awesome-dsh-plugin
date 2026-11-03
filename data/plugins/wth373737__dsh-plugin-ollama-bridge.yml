@@ -1,0 +1,6 @@
+url: https://github.com/wth373737/dsh-plugin-ollama-bridge
+name: wth373737/dsh-plugin-ollama-bridge
+category: model
+description:
+  en: 'Local Ollama worker tools for DeepSeek Harness: model inventory, a single unverified ask, and a batch runner that chunks long text, checks every item deterministically, returns a small verbatim sample for review and writes the labelled result inside the session workspace.'
+  zh: '本机 Ollama 工具：模型清单、单次（未校验）问答，以及跑长文本的批处理——分块并发、逐条确定性校验、回传一小段抽样原文供复核，结果只写入会话工作区。'
