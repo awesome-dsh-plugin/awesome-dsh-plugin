@@ -1,0 +1,8 @@
+url: https://github.com/zhikedan/mattpocock-skills-dsh
+name: zhikedan/mattpocock-skills-dsh
+category: skill
+description:
+  en: 'DSH bundle of the 27 promoted skills from mattpocock/skills v1.3.2 (TDD, code review, grilling, spec and ticket flows, domain modelling), bodies byte-identical to upstream and upstream invocation policies preserved; ships a sync script and an offline contract check.'
+  zh: '把 mattpocock/skills v1.3.2 的 27 个精选技能（TDD、代码审查、grilling、规格与工单流程、领域建模等）打包为 DSH 插件；技能正文与上游逐字节一致，并保留上游调用策略；附带上游同步脚本与离线契约校验。'
+icon: https://raw.githubusercontent.com/zhikedan/mattpocock-skills-dsh/main/assets/icon-180.png
+tarball: https://github.com/zhikedan/mattpocock-skills-dsh/releases/latest/download/mattpocock-skills-dsh.tgz

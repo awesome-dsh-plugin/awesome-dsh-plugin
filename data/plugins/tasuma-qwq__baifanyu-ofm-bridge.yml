@@ -1,0 +1,6 @@
+url: https://github.com/tasuma-qwq/baifanyu-ofm-bridge
+name: tasuma-qwq/baifanyu-ofm-bridge
+category: model
+description:
+  en: "Adds OFM lane and effort selection on top of the Our Free Model plugin (Ebony-Vinyl/dsh-our-free-model, installed separately with its free public pool enabled), plus public-pool setup, cooldown tracking, and a local DSH connection check."
+  zh: "在另行安装并启用免费公开池的 Our Free Model 插件（Ebony-Vinyl/dsh-our-free-model）之上，提供 OFM 渠道与档位选择、公开池配置、冷却记录和本机 DSH 接入验证。"

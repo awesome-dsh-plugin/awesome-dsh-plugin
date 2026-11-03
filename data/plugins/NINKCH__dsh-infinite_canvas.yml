@@ -1,0 +1,6 @@
+url: https://github.com/NINKCH/dsh-infinite_canvas
+name: NINKCH/dsh-infinite_canvas
+category: tools
+description:
+  en: 'Node-based creation studio for DeepSeek Harness - script, storyboard, reference images and multi-shot video generation on an infinite canvas, drivable from the chat in batches; bring your own image/video/TTS providers (OpenAI-style endpoints or Seedance/Sora-style video APIs), and with none configured the pipeline runs offline in demo mode with placeholder media.'
+  zh: 'DeepSeek Harness 的节点式创作工作室——在无限画布上完成剧本、分镜、参考图与多镜头视频生成，可由对话批量驱动；图像/视频/TTS 需自带服务商（OpenAI 风格接口，或 Seedance/Sora 风格视频 API），未配置时整条流水线以离线演示模式运行、只产出占位素材。'
