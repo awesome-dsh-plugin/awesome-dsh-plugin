@@ -1,5 +1,5 @@
 url: https://github.com/Q2667671398/lingshu-skill
-name: 266767398/lingshu-skill 
+name: Q2667671398/lingshu-skill 
 category: memory
 description:
   en: "Lingshu (灵枢) is a brain-inspired persistent memory, persona and growth system for AI coding agents: pure Python standard library, zero dependencies, local-first, requires Python 3.9+. Hippocampus/cortex layered memory with forgetting curves, dream consolidation, fuzzy associative recall, emotion system, persona drift protection, knowledge base, self-authored skills, and a local web panel. Ships as a DSH bundled skill; the separately installable cordis startup-injector plugin auto-injects sessions only when Lingshu is installed at ~/.dsh/skills/lingshu (or brainPy is configured) and Python 3 is available; the optional update check contacts GitHub/Gitee."
