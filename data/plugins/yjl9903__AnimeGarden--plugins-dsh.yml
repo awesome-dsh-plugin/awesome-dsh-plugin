@@ -1,0 +1,7 @@
+url: "https://github.com/yjl9903/AnimeGarden/tree/main/plugins/dsh"
+name: "yjl9903/AnimeGarden#dsh"
+category: tools
+description:
+  en: "Anime Garden is an anime torrent aggregator that lets you search for anime resources from 動漫花園, 蜜柑计划, 萌番组, and ANi in one place."
+  zh: "Anime Garden 是一个动画 BT 资源聚合站, 你可以在这里聚合搜索来自動漫花園、蜜柑计划、萌番组和 ANi 的动画资源."
+icon: "https://raw.githubusercontent.com/yjl9903/AnimeGarden/main/plugins/dsh/icon.png"
