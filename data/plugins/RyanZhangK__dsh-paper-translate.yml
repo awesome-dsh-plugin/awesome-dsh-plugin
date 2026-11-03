@@ -1,0 +1,7 @@
+url: https://github.com/RyanZhangK/dsh-paper-translate
+name: RyanZhangK/dsh-paper-translate
+category: docs
+description:
+  en: 'Whole-PDF paper translation for DSH on top of BabelDOC: bilingual dual-page output, a token cost estimate before running, a per-domain glossary reused across papers, and the server-side thinking overhead disabled.'
+  zh: 'DSH 的整篇 PDF 文献翻译：基于 BabelDOC 输出双语对照 PDF，跑之前先给 token 成本预估，按领域跨论文复用术语表，并关掉服务端默认开启的 thinking 推理开销。'
+icon: https://raw.githubusercontent.com/RyanZhangK/dsh-paper-translate/main/assets/icon-180.png
