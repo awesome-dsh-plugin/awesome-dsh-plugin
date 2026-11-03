@@ -1,0 +1,8 @@
+tarball: https://github.com/bingomu/dsh-image-zoom/releases/latest/download/dsh-image-zoom-1.0.1.tgz
+url: https://github.com/bingomu/dsh-image-zoom
+name: bingomu/dsh-image-zoom
+category: ui
+description:
+  en: 'In-chat image viewer for DeepSeek Harness: wheel and trackpad pinch zoom at the pointer, two-finger and drag panning, gallery navigation, downloads named from the image description and timestamp, and opening workspace originals in the system default app.'
+  zh: 'DeepSeek Harness 的聊天图片查看器：滚轮 / 触控板捏合以指针为中心缩放，双指 / 拖动平移，支持图集切换、下载按图片说明与时间戳自动命名，以及用系统默认应用打开工作区原图。'
+icon: https://raw.githubusercontent.com/bingomu/dsh-image-zoom/main/assets/icon-180.png
