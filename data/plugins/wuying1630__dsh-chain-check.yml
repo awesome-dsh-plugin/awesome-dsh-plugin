@@ -1,0 +1,6 @@
+url: https://github.com/wuying1630/dsh-chain-check
+name: wuying1630/dsh-chain-check
+category: dev
+description:
+  en: 'Read-only diagnostic that reports which leg of the DSH → bridge → OneBot → QQ chain is broken — process, port, login, preset or recent wake failures — and prints the fix for each failed check. Runs as `node check.mjs`, or installs as a `chain_check` tool.'
+  zh: '只读诊断：DSH → 桥接 → OneBot → QQ 这条链断在哪一段——进程、端口、登录、preset、最近的唤醒失败——每一项都给出修法。可以直接 `node check.mjs` 跑，也可以装成 `chain_check` 工具。'
