@@ -1,0 +1,7 @@
+url: https://github.com/zdt3476/dsh-tide-theme
+name: zdt3476/dsh-tide-theme
+category: theme
+icon: https://raw.githubusercontent.com/zdt3476/dsh-tide-theme/main/icon.png
+description:
+  en: "Deep-sea tidal-blue theme for the DSH Web client with a single accent color and matte (non-glass) surfaces in light and dark modes. Ships UI additions that follow the same tokens: sidebar pagination and filtering with pinned sections, model and permission controls under the composer (provider/model, reasoning effort), a dock HUD showing context usage, TPS, cache-hit rate and elapsed time from real session projections, and a subagent delegation graph whose cards show token usage plus an optional cost estimate taken from OpenRouter public prices. Includes a settings panel for toggling each part."
+  zh: "给 DSH Web 的深海潮汐蓝主题：单一强调色、磨砂（非玻璃）材质，明暗双态一致。同套令牌下的界面增强包括：侧栏分页与筛选（含置顶小节）、输入框下方的模型与权限控件（供应商/模型、思考等级）、底栏 HUD（读取真实会话投影的上下文占用、TPS、缓存命中率与耗时）、子代理委派图（卡片显示 token 用量，并可附上按 OpenRouter 公开单价估算的金额），以及可逐项开关的插件设置面板。"
