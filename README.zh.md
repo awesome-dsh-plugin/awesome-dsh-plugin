@@ -3257,6 +3257,7 @@ dsh plugin --profile web add dshmarket
 - [CH4ACKO3/bites-the-dsh](https://github.com/CH4ACKO3/bites-the-dsh) — 为 DSH 原生会话加入完全只读、可脚本控制的历史回放，支持模拟用户输入、正放与倒放、逐事件移动、变速、空闲间隔压缩，以及按事件、轮次或记录时间直接跳转。
 - [Chael-Chael/dsh-reference-anything](https://github.com/Chael-Chael/dsh-reference-anything) — 从 DSH 统一的 @ 菜单中引用工作区文件、DSH 会话，以及 ChatGPT、Claude、Gemini、DeepSeek、Grok 和 Kimi 的历史对话。
 - [chameleonn4/dsh-codex-history](https://github.com/chameleonn4/dsh-codex-history) — 在 DSH 里说一句话就能装上，随后它会读取 ~/.codex/sessions 里的本地 Codex CLI/桌面版聊天记录并在 DeepSeek Harness 里直接使用：输入框下方的面板可列出会话、按关键词与起止日期筛选并一键导入；codex_history 工具让 agent 列出、读取、检索并汇总过往对话；工作目录命中某条 Codex 会话时，新建 agent 会自动注入该会话上下文；Codex 侧出现的新消息会以增量形式推送到进行中的对话；共享目录还能在多台机器之间同步 Codex 与 DSH 的会话记录。只读，不会往 Codex 写回任何内容。
+- [Charles516z/dsh-autocompress](https://github.com/Charles516z/dsh-autocompress) — 在 DeepSeek Harness 上按固定时间压缩所有空闲会话的上下文：默认每天 08:30 自动执行，错过时间点在下次启动时补做，也可用 /compact-all 命令随时手动压缩，并逐会话报告结果。
 - [chenkui-luo/dsh-session-attachment-repair](https://github.com/chenkui-luo/dsh-session-attachment-repair) — 在设置页列出历史引用了本地附件库中已丢失对象的会话，先备份日志、再把悬空引用替换成文本占位，使这些会话能重新发送消息。修复脚本需要 Node 22.15 及以上；设置卡片目前仅在 Windows 上验证过。
 - [chenproton/dsh-history](https://github.com/chenproton/dsh-history) — 会话历史消息查看：列出当前会话全部你发送的消息，支持排序、搜索、一键复制与点击跳转定位（目标未加载时自动加载更早历史）。
 - [CHIANGANGSTER/dsh-session-window#dsh-session-window-client](https://github.com/CHIANGANGSTER/dsh-session-window/tree/main/plugin/dsh-session-window-client) — 配合仓库的原生 Desktop 壳补丁，为 DSH 会话菜单添加“在新窗口中打开”。
@@ -4217,6 +4218,7 @@ dsh plugin --profile web add dshmarket
 - [2286893544/feishu-dsh-plugin](https://github.com/2286893544/feishu-dsh-plugin) — 飞书（Lark）集成：25 个工具，覆盖群消息与聊天记录、云文档（含知识库页面、自动生成的图表与图片）、多维表格记录、电子表格区间读写与文档授权，基于企业自建应用。
 - [27painter/dsh-nx](https://github.com/27painter/dsh-nx) — 从 DeepSeek Harness 驱动 Siemens NX 2406 与 2506，也支持 NX 12：一个按日志而非退出码判定 journal 成败的执行器（NX 对吞掉异常的 journal 返回 0，干净结束时返回 0xC0000409）、常驻批处理 NX 上的 16 个类型化工具，以及一个能分清三个版本的探测。仅 Windows；以 NX 2406 为基准版本，2506 为预期可用。需本机已安装 Siemens NX 并有一个空闲的 NX 许可席位；先运行一次 `dsh-nx install`；16 个 MCP 工具默认关闭，需设 `NX_ENABLE_MCP=1` 才注册（技能路线不受影响）。
 - [27painter/dsh-sw-cad](https://github.com/27painter/dsh-sw-cad) — 注册两个 MCP 服务器，在 Windows 上通过 COM 驱动本机安装的 AutoCAD 与 SolidWorks，另附两个按需技能。仅 Windows，需要 Python 3.11+；首次加载时自动安装钉死版本的上游服务器，并且只给真正装了的 CAD 应用注册对应的那一行。两者都只广告两个元工具而非完整工具表（SolidWorks 用本仓库的 discovery 垫片，AutoCAD 用上游 DISCOVERY_MODE=search），首次请求前加载的工具定义分别从 23,404 降到 256 token、从 83,732 降到 365 token。
+- [333YYY-BIT/emotion-state-portrait](https://github.com/333YYY-BIT/emotion-state-portrait) — 给 AI 角色的情绪·精神·人物画像引擎：303 个情绪词分级叠加，等级最低者优先替换、弱情绪走缓冲区升级，精神值驱动说话风格，连击解锁亢奋/压抑/生气状态跃迁，按人画像，可接任意 AI。
 - [379385796-sys/dsh-environment-packer](https://github.com/379385796-sys/dsh-environment-packer) — 为 Windows DSH Profile 及指定 Home 数据创建离线冷备份，独立检查 ZIP，并通过 WPF 助手恢复到具备匹配运行时证明的全新目标。
 - [3ChatAI-NCT/3chatai-deepseek-harness-plugin](https://github.com/3ChatAI-NCT/3chatai-deepseek-harness-plugin) — 通过 OAuth 将 DeepSeek Harness 接入 3Chat，查询客户与会话、读取沟通上下文、确认后发送消息并跟踪批次进度。
 - [439436269-ctrl/dsh-search](https://github.com/439436269-ctrl/dsh-search) — 通过 DeepSeek 官方 Search/Fetch 接口做网页搜索、单页抓取与一键调研；需要一个 DeepSeek API key。
@@ -4681,6 +4683,7 @@ dsh plugin --profile web add dshmarket
 - [KitanWang/dsh-figma-plugin](https://github.com/KitanWang/dsh-figma-plugin) — 给 agent 用的 Figma 设计上下文：读取画板的节点树、自动布局、填充与字体，解析节点绑定的设计变量，并渲染截图用于对照代码 —— 另附四个设计转代码技能。点一个按钮即跳转 Figma 官方授权页完成连接；插件自带 OAuth 应用、自动续期令牌，全程不索取也不展示任何 Token。
 - [KJHAJKSLFHA/dsh-computer-use-next](https://github.com/KJHAJKSLFHA/dsh-computer-use-next) — 基于 CuaDriver 的 macOS 跨应用桌面工具，默认隐藏虚拟光标，支持后台窗口选择和操作后界面回读。
 - [kkk-yoyo/dsh-mcp-rea](https://github.com/kkk-yoyo/dsh-mcp-rea) — 把 REA（逆向一切）的 MCP 服务收成两个网关工具，而不是每次请求都注册它的 200 多个工具 schema：rea_list 按名字/描述搜索工具目录、或取单个工具的完整 input schema，rea_call 按原始工具名调用，每次调用启动一个短命 rea mcp 子进程，每步请求的工具定义由约 780 KB（REA 6.5.0 实测 207 个工具）降到约 1-2 KB。找不到 rea 入口时，用 DSH 自带的 pnpm 把 rea-agents 装进插件私有目录（跳过依赖构建脚本），并把 reverse-engineer-anything 与 rea-gateway 两个技能链接进技能目录，已存在的同名技能不会被覆盖。
+- [kkkkk-tubu/dsh-longpress-shot](https://github.com/kkkkk-tubu/dsh-longpress-shot) — 给 DSH 加区域截图，不用记快捷键。按住左键 550 毫秒，页面变暗进入十字框选，拖出范围松手即得 PNG，落到 ~/.dsh/longpress-shots 并同时写进剪贴板；预览卡可以把同一份字节直接送进输入框（按钮 / Ctrl+V / 拖拽三条路），不用再翻文件对话框。
 - [klarkxy/dsh-plugin-autoevo](https://github.com/klarkxy/dsh-plugin-autoevo) — AutoEvo v1.0.0 为 DSH Agent 提供 Search-first 能力工作流：优先复用本地工具或审查精确来源插件后再安装；可在受管源码中改造或新建能力；回执区分 installed、loaded、activated、verified，版本工具支持回滚、领养与上游更新。
 - [KLRSL/dsh-packer](https://github.com/KLRSL/dsh-packer) — 为 DeepSeek Harness 打造的 Agent 配置打包器：把本地 Agent 资产（Skills/会话/Profile/全局设置/记忆）打包成 zip，用于迁移或分享；带隐私安全扫描、差异恢复、包管理与设置 UI；记忆以只读 Markdown 镜像入包，不含运行时数据库。
 - [kmyy350234-dz/dsh-tool-drawer](https://github.com/kmyy350234-dz/dsh-tool-drawer) — 把重工具组从每一轮请求里收起来，并且能按会话/按角色裁剪工具面：角色键来自宿主自己的会话 label、subagent 标记或 preset，编排器的子代理各看各的组白名单。另有按名前缀自动分组、让 AI 分一次没归组的工具、调用被收工具时自动放回，以及每个会话实际可见性的 health 快照。
@@ -5353,6 +5356,7 @@ dsh plugin --profile web add dshmarket
 - [zirscard/dsh-workpaper-gate](https://github.com/zirscard/dsh-workpaper-gate) — 为 DeepSeek Harness 注册一个 `workpaper_gate` 工具：审核底稿完整性，既审目标（设计层/模板）自身，也审底稿实例与模板的结构一致性；规则清单、模板清单与核心表清单全部配置化在同一个 spec 文件里。结果按 blocker / warning / info 分级，底稿只读不改。需 Python 与 openpyxl。
 - [ziyans2022/dsh-problem-bank](https://github.com/ziyans2022/dsh-problem-bank) — 面向 DeepSeek Harness 的结构化数学题库：多解法、分层知识图谱、六维难度与技巧驱动的变式出题。
 - [ZiYuan258/dsh-mcp-control](https://github.com/ZiYuan258/dsh-mcp-control) — 面向 @deepseek-ai/dsh-mcp-client 注册的 MCP 服务器的面板：逐个开关服务器（即时生效），显示各服务器的已注册工具数与预估上下文 token 开销，并将选择持久化到主目录 cordis.patch.yml，每次写入前保留带时间戳的备份。面板本身可以放在设置里作为一节，也可以放在左侧边栏作为一行图标，任一时刻只保留一个入口，切换器在「设置 → 插件」的插件页里。dsh-mcp-toggle 的维护分支。
+- [ziz12138/dsh-lawcorpus](https://github.com/ziz12138/dsh-lawcorpus) — 法学论文框架语料库：内置 2024–2026 四本 CLSCI 期刊 850 篇题录（标题、作者、摘要、关键词、目录骨架），支持 BM25 检索、框架卡、期刊画像、投稿对标自查与导出。
 - [zjl1989-li/dsh-harness-zh-cn](https://github.com/zjl1989-li/dsh-harness-zh-cn) — DeepSeek Harness 中文汉化插件：通过 system-prompt/assemble 瀑布钩子在运行时把全部系统提示词、工具描述与运行时上下文翻译成中文（1788 条译文，零源码修改，卸载即还原英文）。
 - [ZK-Andy/dsh-frecency](https://github.com/ZK-Andy/dsh-frecency) — 为 DeepSeek Harness 提供常驻索引 grep，以同名遮蔽内置 grep/glob 工具：重复内容检索命中按访问/修改 frecency 排序的内存索引，glob 在可用时对齐内置 ripgrep 语义、不可用时回退索引。
 - [zmh2000829/dsh-web-search-multi](https://github.com/zmh2000829/dsh-web-search-multi) — 为原生 web_search 工具提供可选的 SearXNG、Brave、Tavily、Gemini 搜索溯源或 Wikipedia 后端，支持 Web 设置且不进行隐式回退。
@@ -6107,6 +6111,7 @@ dsh plugin --profile web add dshmarket
 - [bauerelizabeth07139/plan-guardian-skill](https://github.com/bauerelizabeth07139/plan-guardian-skill) — 每个请求都必须走完 7 步计划,每步都有可判定的验收标准,执行交给 worker 子代理,完成情况由无记忆的独立 verifier 子代理带证据判定 PASS / FAIL。
 - [bauerelizabeth07139/simple-plan](https://github.com/bauerelizabeth07139/simple-plan) — 给每个任务加上严格验证:把任务拆成 2-7 步,用 worker 子代理执行,每个交付物都由无记忆的独立 verifier 子代理验证,最多修 3 轮后如实汇报。
 - [bingbinggod369/dsh-skill-ballistic-simulation](https://github.com/bingbinggod369/dsh-skill-ballistic-simulation) — 内/外弹道学的论文复现与代码编写 skill。前置：LibreOffice Kit（PDF 渲染）+ 视觉 API key（如千问，公式 OCR）。
+- [bingomu/readable-diagrams](https://github.com/bingomu/readable-diagrams) — 让读者一眼看懂的图表：一份 JSON 规格出九种图，标题、阅读动线、图例、对比度与连线都经机器校验。
 - [Bingtang1019/dsh-ppt-fusion](https://github.com/Bingtang1019/dsh-ppt-fusion) — 从需求生成 PPTX：规划与分镜门、pptwise + ppt-master 页级作者、设计档案 pass、渲染页图快照与渲染审计，以及把页图交给支持图片的模型自评的工具。
 - [bjzkhy/dsh-multiplatform-balance](https://github.com/bjzkhy/dsh-multiplatform-balance) — 多平台余额 Agent 技能与工具：查询 DeepSeek、豆包 / 火山引擎、千问 / 阿里云百炼、混元 / 腾讯云以及自定义 HTTP 接口的账户余额；只读，内置 60 秒缓存。
 - [Cavan-Ou/hermes-dsh-collab](https://github.com/Cavan-Ou/hermes-dsh-collab) — 把 DeepSeek Harness 接进 Hermes 管线：派单 spec 模板、模型档位路由、质量门、git 唯一写者约定，SKILL.md 技能包（bundle 可安装）。
@@ -6182,6 +6187,7 @@ dsh plugin --profile web add dshmarket
 - [hzh5021/dsh-research-commands](https://github.com/hzh5021/dsh-research-commands) — 把装好的研究技能变成斜杠命令：/idea、/novelty、/review、/poster……一共十五条，敲一下就把对应的 SKILL.md 塞进对话，照着跑那个技能。技能不随包提供，须已装在 ~/.dsh/skills 或 ~/.agents/skills 下，否则命令只提示找不到技能。
 - [icanfinish11/dsh_superpowers](https://github.com/icanfinish11/dsh_superpowers) — 把 obra/superpowers 的 14 个技能按已记录的上游 tag（v6.3.0）打包进 dsh，并可用带差异报告的命令重新同步；任务匹配时自动触发。
 - [IcyCreamDAS/shidi-skill](https://github.com/IcyCreamDAS/shidi-skill) — AI4S 科研工作流技能包，面向 AI for Science 与研究生/科研 Agent 用户：多角度文献调研（每角度落盘）、实验方案（含漏洞清单）、作图与精读；每单交付文件，附交叉验证任务书。零依赖，MIT。
+- [idao-cube/dsh-skill-router](https://github.com/idao-cube/dsh-skill-router) — 用关键词匹配替代完整技能目录，支持逐个技能的启停开关与系统提示词段落开关。被停用的技能会被 skill 工具拒绝，其斜杠调用也会在请求前被拦截。
 - [iflytek/skillhub#dsh](https://github.com/iflytek/skillhub/tree/main/plugins/dsh) — 在 DeepSeek Harness 内浏览、搜索 SkillHub 技能，并管理本地技能的安装、更新和卸载。适配 DSH 0.2.0-rc.2 与 0.2.1-rc.2，暂不兼容 0.2.1-rc.3。
 - [iStarryDust/dsh-skill-suite](https://github.com/iStarryDust/dsh-skill-suite) — Agent技能：在管理页里浏览、开关、编辑技能，也能让 Agent 自己写新技能。
 - [jaccen/Awesome-Gaussian-Skills](https://github.com/jaccen/Awesome-Gaussian-Skills) — 3D 高斯泼溅 / NeRF / 图形学科研技能包——18 个 AI 技能（论文精读、方法对比、实验设计、代码审查、训练调试、可视化、MCP 渲染器…）覆盖 1011 个方法的精选目录，并带一个 stdio MCP 服务供 Agent 驱动 3DGS 渲染。
