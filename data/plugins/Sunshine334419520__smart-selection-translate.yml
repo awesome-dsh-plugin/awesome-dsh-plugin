@@ -1,0 +1,7 @@
+url: https://github.com/Sunshine334419520/smart-selection-translate
+name: Sunshine334419520/smart-selection-translate
+category: ui
+description:
+  en: Select English text anywhere in DeepSeek Harness to translate it in place — single words get a dictionary entry with IPA, part-of-speech senses, web meanings and pronunciation, while sentences use machine translation.
+  zh: 在 DeepSeek Harness 里选中英文就地翻译——单词出词典条目（英/美音标、按词性分组的释义、网络释义、真人发音），句子走机器翻译。
+icon: https://raw.githubusercontent.com/Sunshine334419520/smart-selection-translate/main/assets/icon-180.png
