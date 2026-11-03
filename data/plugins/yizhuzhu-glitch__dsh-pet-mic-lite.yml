@@ -4,3 +4,4 @@ category: fun
 description:
   en: Counts how many times the microphone is stroked today and writes the number to a local JSON file for a desktop pet to read.
   zh: 麦克风识别「摸摸」动作，只把今天被摸了几次写进本地 JSON 文件，供桌面宠物读取。
+icon: https://raw.githubusercontent.com/yizhuzhu-glitch/dsh-pet-mic-lite/main/assets/icon-180.png
