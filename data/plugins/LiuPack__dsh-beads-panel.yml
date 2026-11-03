@@ -1,0 +1,6 @@
+url: https://github.com/LiuPack/dsh-beads-panel
+name: LiuPack/dsh-beads-panel
+category: ui
+description:
+  en: 'Beads issue-graph panel in the left sidebar of the Web GUI: filter ready, in-progress, open, and all beads, read a bead''s description, notes, dependencies, and comments, and create, claim, or close beads through the bd CLI. Requires the bd CLI on PATH and a workspace with a Beads database.'
+  zh: 'Web 界面左侧栏的 Beads 任务图谱面板：按可领取、进行中、待处理、全部筛选，查看任务描述、备注、依赖与评论，并通过 bd CLI 新建、领取或关闭任务。需要 PATH 上的 bd CLI，以及已初始化 Beads 数据库的工作区。'
