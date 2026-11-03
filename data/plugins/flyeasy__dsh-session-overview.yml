@@ -4,4 +4,4 @@ category: session
 description:
   en: One recency-sorted list of recent sessions across all workspaces, with color-coded workspace badges, a collapsible sidebar section, and the built-in session row actions on right-click.
   zh: 把所有工作区的最近会话排成一个列表，用彩色底标标明所属工作区，侧栏可展开显示最近会话，右键支持原生会话操作。
-icon: https://raw.githubusercontent.com/flyeasy/dsh-session-overview/main/icon.svg
+icon: https://raw.githubusercontent.com/flyeasy/dsh-session-overview/main/assets/icon-512.png
