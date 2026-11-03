@@ -2,7 +2,7 @@ url: https://github.com/GXinnnnnn/dsh-SAO
 name: GXinnnnnn/dsh-SAO
 category: theme
 description:
-  en: SAO Link Start startup animation with early independent rendering; leaves the DSH theme unchanged.
-  zh: 仿刀剑神域纯启动动画，早期独立渲染，不修改 DSH 主题。
+  en: 'SAO (Sword Art Online) theme for DeepSeek Harness: a Link Start startup animation rendered ahead of the app shell, with Kirito/Asuna voice lines, plus theme and surface colours, liquid or frosted glass, per-component transparency, nine built-in or uploaded wallpapers, and a model-intensity slider.'
+  zh: '仿刀剑神域主题：在应用外壳之前独立渲染的 Link Start 启动动画，配桐人／亚丝娜语音；另有主题色与界面底色、液态／磨砂玻璃、各组件透明度、九张内置壁纸或自传壁纸，以及输入区的模型强度滑条。'
 icon: https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/main/icon.png
 tarball: https://github.com/GXinnnnnn/dsh-SAO/releases/download/v3.0.0/dsh-SAO.tgz
