@@ -1,6 +1,7 @@
 url: https://github.com/Zzzk187/dsh-file-state-cache
 name: Zzzk187/dsh-file-state-cache
 category: skill
+tarball: https://github.com/Zzzk187/dsh-file-state-cache/releases/download/v1.0.0/dsh-file-state-cache-1.0.0.tgz
 description:
   en: 'File-state cache skill for coding agents: one explore call replaces ls+grep+read, reads remember they already happened, and edits return a diff plus the exact changed line range instead of a full re-read. State is a JSON cache on disk, so it survives across tool calls and restarts.'
   zh: '文件状态缓存技能：一次 explore 代替 ls+grep+read，读过的文件不再重复全量读，改完只回 diff 与精确变更行区间而不是重读全文。状态存在磁盘上的 JSON 缓存里，跨工具调用与重启都有效。'
