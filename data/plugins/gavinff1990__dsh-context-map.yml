@@ -1,0 +1,6 @@
+url: https://github.com/gavinff1990/dsh-context-map
+name: gavinff1990/dsh-context-map
+category: docs
+description:
+  en: "Renders a conversation's context as a layered architecture map of goals, decisions, actions, artifacts, risks and open questions, exported as SVG, interactive HTML and Mermaid Markdown."
+  zh: "把对话上下文分层渲染成信息架构图：目标、决策、动作、产物、风险与待确认一次成图，可导出 SVG、交互式 HTML 与 Mermaid Markdown。"
