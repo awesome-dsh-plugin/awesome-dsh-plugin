@@ -1,9 +1,3 @@
-# awesome-dsh-plugin 条目草稿。
-#
-# 提交时复制为上游仓库的 data/plugins/hoyin-law__dsh-feishu-cli.yml。
-# category 必须写分类 id：`notify` 在站点上显示为 “Notifications & Integrations”。
-# 只保留 url / name / category / description / tarball 键，描述为单行、只写真实能力。
-
 url: https://github.com/hoyin-law/dsh-feishu-cli
 name: hoyin-law/dsh-feishu-cli
 category: notify
