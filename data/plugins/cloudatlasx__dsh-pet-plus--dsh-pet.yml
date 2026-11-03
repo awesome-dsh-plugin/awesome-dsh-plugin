@@ -2,8 +2,8 @@ url: https://github.com/cloudatlasx/dsh-pet-plus/tree/main/dsh-pet
 name: cloudatlasx/dsh-pet-plus#dsh-pet
 category: ui
 description:
-  en: "A desktop pet living in DeepSeek Harness — 100+ transparent animations, multiple pets, draggable throw physics — plus schedule reminders that pop up on time and can be answered in place (agents push an announcement bubble with a checklist, quick-action chips that send a one-line instruction straight back into the running session, and a reply box in the bubble), approval/question bubbles on the pet itself (allow once, allow for this session, or reject), TTS with voice preview, sliders for every tuning value, and a configurable data directory., a second line showing step count and elapsed time, and snooze / one-hour mute when you are busy"
-  zh: 住在 DSH 里的桌面宠物：100+ 段透明动画、可多开、可拖拽甩抛；到点提醒直接弹在宠物身上（agent 也能主动推一条带清单的播报气泡，气泡上最多 3 个快捷按钮，点一下就把那句话投回那个会话接着干，也能在气泡里直接打字），审批/提问也能在宠物上处理（允许一次 / 本会话都允许 / 拒绝），语音合成带试听、参数全是滑条、数据目录可配置。，工作气泡还会显示第几步、用了多久，忙的时候可以「等会儿」或静音一小时
+  en: "A desktop pet living in DeepSeek Harness — 100+ transparent animations, multiple pets, draggable throw physics — plus schedule reminders that pop up on time and can be answered in place (agents push an announcement bubble with a checklist, quick-action chips that send a one-line instruction straight back into the running session, and a reply box in the bubble), approval/question bubbles on the pet itself (allow once, allow for this session, or reject), TTS with voice preview, sliders for every tuning value, a configurable data directory, a work bubble that also shows step count and elapsed time, and snooze / one-hour mute for when you are busy"
+  zh: 住在 DSH 里的桌面宠物：100+ 段透明动画、可多开、可拖拽甩抛；到点提醒直接弹在宠物身上（agent 也能主动推一条带清单的播报气泡，气泡上最多 3 个快捷按钮，点一下就把那句话投回那个会话接着干，也能在气泡里直接打字），审批/提问也能在宠物上处理（允许一次 / 本会话都允许 / 拒绝），语音合成带试听、参数全是滑条、数据目录可配置；工作气泡还会显示第几步、用了多久，忙的时候可以「等会儿」或静音一小时
 
 icon: https://raw.githubusercontent.com/cloudatlasx/dsh-pet-plus/main/dsh-pet/assets/logo.png
 tarball: https://github.com/cloudatlasx/dsh-pet-plus/releases/download/v0.8.0/dsh-pet-plus-0.8.0.tgz
