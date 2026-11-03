@@ -1,0 +1,6 @@
+url: https://github.com/qlings/DSH-Remote-Desktop
+name: qlings/DSH-Remote-Desktop
+category: remote
+description:
+  en: 'Access a host DSH workspace from another computer through a token-authenticated HTTP(S) and WebSocket relay, with remote approvals, task events, and local/remote switching.'
+  zh: '通过令牌鉴权的 HTTP(S) 与 WebSocket 中继，在另一台电脑访问主机 DSH，支持远程审批、任务事件提醒及本机与远程切换。'
