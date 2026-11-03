@@ -1,0 +1,8 @@
+url: https://github.com/Blueteemo/dsh-audio-rail-macos
+name: Blueteemo/dsh-audio-rail-macos
+category: ui
+tarball: https://github.com/Blueteemo/dsh-audio-rail-macos/releases/latest/download/dsh-audio-rail-macos.tgz
+icon: https://raw.githubusercontent.com/Blueteemo/dsh-audio-rail-macos/main/assets/icon-180.png
+description:
+  en: 'macOS only: the DSH conversation rail pulses with whatever the Mac is playing — a real 12-band spectrum that only changes bar length, leaving the host state colours and lengths untouched. Requires the Audio Recording permission on first run.'
+  zh: macOS 专享：让 DSH 会话页右侧的锚点跟着 Mac 播放的音乐律动，12 段真实频谱只改长度，不覆盖宿主的状态颜色与长度。首次运行需授予「音频录制」权限。
