@@ -1,0 +1,7 @@
+url: https://github.com/yffo/dsh-operator
+name: yffo/dsh-operator
+category: tools
+description:
+  en: 'Computer Use for every DSH session: screen capture, mouse and keyboard, app launch, plan and skill replay, an audit log, guards for dangerous actions, a background code agent, and an OCR workflow (text and coordinates) for apps whose accessibility tree is empty.'
+  zh: '装一次、所有 DSH 会话可用的 Computer Use 插件：截屏、鼠标键盘、启动应用、计划与技能回放、审计日志、危险动作守卫、后台代码代理，以及面向无障碍树缺失应用的 OCR 工作流（文字与坐标）。'
+icon: https://raw.githubusercontent.com/yffo/dsh-operator/main/assets/icon.png
