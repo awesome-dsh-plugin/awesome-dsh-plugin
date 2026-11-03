@@ -1,0 +1,6 @@
+url: https://github.com/xfgil/dsh-proxy-on-demand
+name: xfgil/dsh-proxy-on-demand
+category: tools
+description:
+  en: 'Start a local mihomo proxy core on demand and shut it down when idle — no always-on port, no leftover process, no change to the Windows system proxy. Routes through an existing proxy when one is already running.'
+  zh: '按需拉起 mihomo 内核，空闲后自动关闭：不常占端口、不留后台进程、不改 Windows 系统代理设置。已有代理在跑时直接借道它的出口。'
