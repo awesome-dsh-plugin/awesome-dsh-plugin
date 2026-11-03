@@ -1,7 +1,0 @@
-url: https://github.com/__OWNER__/dsh-plugins/tree/main/plugins/dsh-approval-notify
-name: __OWNER__/dsh-plugins#dsh-approval-notify
-category: notify
-description:
-  en: 'Approval reminder for DeepSeek Harness: when a session is waiting for permission it shows a corner card with Allow once / Reject, an optional desktop notification, a two-tone sound and a tab-title marker, and the host half can push the request to a phone through PushPlus, ServerChan, ntfy, a WeCom group robot or a custom webhook.'
-  zh: '审批提醒：有会话在等待权限时，在 Web 界面右下角弹出提醒卡，可直接「允许一次」或「拒绝」，并可选发桌面通知、提示音与标题标记；还能由宿主半通过 PushPlus / Server酱 / ntfy / 企业微信群机器人或自定义 webhook 把审批推到手机。'
-icon: https://raw.githubusercontent.com/__OWNER__/dsh-plugins/main/plugins/dsh-approval-notify/icon-180.png
