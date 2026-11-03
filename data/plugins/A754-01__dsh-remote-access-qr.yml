@@ -1,0 +1,6 @@
+url: https://github.com/A754-01/dsh-remote-access-qr
+name: A754-01/dsh-remote-access-qr
+category: remote
+description:
+  en: 'Remote access for DeepSeek Harness: expose this machine''s DSH Web GUI through an SSH reverse tunnel and a QR gate — scan and enter, no token, no password prompt.'
+  zh: '远程接入插件：把本机 DSH 经 SSH 反向隧道映射到服务器并生成二维码，手机扫码直进本机 dsh，无需 token、无需账号密码。'
