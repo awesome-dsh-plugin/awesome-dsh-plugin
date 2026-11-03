@@ -5332,6 +5332,7 @@ dsh plugin --profile web add dshmarket
 - [zhengjy01/weread-export](https://github.com/zhengjy01/weread-export) — 微信读书多目标导出：通过官方 Skills API Key 查看书架、导出划线/想法到 flomo、本地 Markdown 或 Notion，可选按自定义 LLM prompt 整理后再导出。
 - [Zhishulo/dsh-rea-powerpack](https://github.com/Zhishulo/dsh-rea-powerpack) — 在 Windows 上安装并校验 REA 所需的逆向引擎（Ghidra、JADX、apktool、adb、WABT、frida 等），固定 rea-agents 的 MCP 服务版本，并在设置卡片里体检能力缺口。
 - [zhitiaojun/dsh-anysearch](https://github.com/zhitiaojun/dsh-anysearch) — 给 agent 用的 AnySearch 搜索工具：通用与垂直域搜索、并行批量查询、垂直域目录发现、网页转 Markdown，并在设置中提供 API Key 面板。它注册独立工具而非 web_search provider，不能与 @anysearch/anysearch-dsh 同时安装。
+- [ZhiX-Wang/dsh-wudaokou-ai-events](https://github.com/ZhiX-Wang/dsh-wudaokou-ai-events) — 搜索五道口、清华附近的 AI 线下活动，读取来源页面并保存本地检索历史。
 - [zhp282515-wq/dsh-plugin-agnes-image](https://github.com/zhp282515-wq/dsh-plugin-agnes-image) — 提供 agnes_image 工具，调用 Agnes Image Flash 系列模型（2.5 / 2.1 / 2.0）完成文生图、图生图与多图合成，并带一个设置页控制台管理当前模型、默认档位与画幅、输出目录、API Key 与生成历史。
 - [zhtx2024/dsh-skin-switcher](https://github.com/zhtx2024/dsh-skin-switcher) — 设置面板皮肤管理器：自动扫描已安装的 Web UI 皮肤并一键切换，profile 补丁自动维护。
 - [Zhuang-A/dsh-go-sensei](https://github.com/Zhuang-A/dsh-go-sensei) — 围棋复盘教练：解析 SGF 棋谱，用自带 KataGo 引擎补算胜率与目差，在对话里逐手讲解问题手，并把讲解写回 SGF 副本；Web 面板用棋盘展示问题手、AI 首选与变化图。
@@ -5902,6 +5903,7 @@ dsh plugin --profile web add dshmarket
 - [supersyh-sss/dsh-voice-assistant](https://github.com/supersyh-sss/dsh-voice-assistant) — dsh web 语音助手：说出唤醒词（如「小鲸」）即可免手听写，说话内容自动转成文字填入输入框；支持口述编辑指令（发送、清空、换行、停止朗读），并可用中文朗读 AI 回复。语音识别基于 sherpa-onnx WASM 在浏览器本地运行，离线可用、无需 API Key。
 - [tangzheng202202/dsh-voice-live](https://github.com/tangzheng202202/dsh-voice-live) — 基于火山流式 ASR/TTS 的实时双工语音：回复朗读、打断、唤醒词、实时字幕、30 个中文音色与先响应后思考；在 DSH monorepo 内构建。
 - [TaoruiLiu19/dsh-gsv](https://github.com/TaoruiLiu19/dsh-gsv) — 将本地高性能 TTS 引擎 GSV-TTS-Lite 实时接入 DeepSeek Harness：语音预设、自动朗读、引擎配置助手、朗读按钮与设置面板。
+- [小星辰任意语音](https://github.com/theskywilldawn/dsh-littlestar-anything-voice) — 点一下 Q 版立绘挂件，就用本机 IndexTTS 2.5 把助手回复念出来。一个角色 = 一段参考音频，谁的声音都能当角色；没有立绘也能用，挂件会提示「本角色暂无图片，请添加」。不含任何音色与立绘，角色库在用户自己机器上。需要本地已装 IndexTTS 2.5。
 - [toddpan/dsh-xiaozhi](https://github.com/toddpan/dsh-xiaozhi) — 把小智语音助手接入 DSH Web：DSH 作为 MCP 工具提供方，把 35 个 DSH Web 接口封装成 16 个语音友好工具，覆盖工作区、会话、对话、模型、设置与文件；默认出站 WebSocket 连到小智 MCP 接入点（无需公网 IP 和端口转发），可同时绑定多台设备，并自带实时刷新状态的 DSH 设置页。
 - [underworld-oddball/dsh-volume-knob](https://github.com/underworld-oddball/dsh-volume-knob) — 输入框工具行里、模型选择框左边的扬声器按钮——单击翻到「你最新提问的开头」并闪烁光标，从那里读到最新回复结尾（走 dsh-tts，回退浏览器语音）；按住图标后在页面上单击即可挑选任意朗读起点；按住上滑调出竖式混音台，分别控制页内媒体音量与系统输出音量。
 - [wangzhanchao883/dsh-hold-to-talk](https://github.com/wangzhanchao883/dsh-hold-to-talk) — 输入框上的单手、免键盘输入：鼠标在输入框按住、说话、松手，文字直接进草稿；上滑取消，不留半句。不用去瞄麦克风按钮，也不用记快捷键，手始终不用离开输入区——另一只手正忙的时候，这一点才是关键。识别完全在本机完成（SenseVoice + sherpa-onnx），无需 API key，音频不出本机。
@@ -6025,6 +6027,7 @@ dsh plugin --profile web add dshmarket
 - [RainL-621/dsh-office-bridge](https://github.com/RainL-621/dsh-office-bridge) — 在 Windows 版 DSH Desktop 的侧边栏用本机安装的 ONLYOFFICE Document Server 编辑 xlsx/xls/csv/tsv/docx/pptx，保存直接写回磁盘上的原文件。
 - [reg4916/dsh-doc-reader](https://github.com/reg4916/dsh-doc-reader) — 把 PDF、DOCX、XLSX、PPTX 和文本文件读取为智能体工具，并用 tesseract.js 在本地对扫描版 PDF 或图片做 OCR。提供 doc_read、pdf_read、xlsx_read、doc_meta、doc_ocr 五个工具。
 - [reviso-si/reviso-dsh](https://github.com/reviso-si/reviso-dsh) — 把 Agent 产出发布到 Reviso 供人工评审，在侧边栏浏览已发布文档，并在产生这些文档的同一个 DSH 会话中再次找到它们。OAuth 由宿主中转：Reviso token 只保存在 DSH credentials 里，浏览器仅获得短时效的 embed 会话。需要 Reviso 账号或兼容的自建 Reviso 服务。
+- [Roland0511/dsh-marktext](https://github.com/Roland0511/dsh-marktext) — 基于 MarkText 内核 muya 的右侧栏所见即所得 Markdown 编辑器：打开 .md 按渲染结果编辑，保存走 ctx.fs 并带版本守卫。
 - [Romebody/dsh-docx-format](https://github.com/Romebody/dsh-docx-format) — 把生成的 .docx 统一到一套中文公文版式：方正小标宋标题、仿宋正文 29 磅固定行距、段前段后 0、字符单位首行缩进 2 字符，表格每个单元格都水平居中并带重复表头，页脚居中「— 1 —」页码。附件长条目按 2 / 6 / 5 / 6 字符缩进阶梯自动分段，折行点由 Word 实测得到。只有请求里提到「公文」时才套用版式，用户没有明确要求时默认不写落款。
 - [RyanZhangK/dsh-paper-translate](https://github.com/RyanZhangK/dsh-paper-translate) — DSH 的整篇 PDF 文献翻译：BabelDOC（Python CLI 及其 config.toml 里的 OpenAI 兼容 API Key）需自行安装配置；输出双语对照 PDF，跑之前先给 token 成本预估，按领域跨论文复用术语表，并关掉翻译环节服务端默认开启的 thinking 推理开销。
 - [s1lencewill/dsh-markdown-reader](https://github.com/s1lencewill/dsh-markdown-reader) — 在独立全屏阅读器中渲染工作区 Markdown 文件，支持 GFM、KaTeX、Mermaid、目录导航、文件更新同步以及浏览器打印和 PDF 导出。
@@ -8108,7 +8111,7 @@ dsh plugin --profile web add dshmarket
 
 - [01men/kizuna](https://github.com/01men/kizuna) — Kizuna Agent 信箱：四个工具让 Agent 读自己的信箱（信箱状态、待处理信件、读一封信全文），并以 completed / failed / input-required / working 状态回信。Kizuna 是带可靠投递的 Agent 通讯录：同一台机器上的 kizuna-box 持有信箱，对无人签收的信按 3 / 10 / 30 / 60 / 120 分钟重试，每次投递尝试都写入只增不改的留痕。插件只连本机回环信箱，不持有任何凭证。
 - [1032740078/dsh-web-url-view](https://github.com/1032740078/dsh-web-url-view) — 在设置页新增「查看 URL」：显示当前会话的临时访问地址，以及一个长期不变、局域网内其他设备也能直接打开的固定地址。
-- [2090003781/dsh-bridge-connector](https://github.com/2090003781/dsh-bridge-connector) — 让 Obsidian 插件驱动 DSH 会话（列会话、新建、发消息）、并把最多十篇库内笔记注入系统提示词的回环 HTTP/SSE 服务；需要 Obsidian 内配套运行的 Bridge 插件。
+- [2090003781/bridge#dsh-bridge-connector](https://github.com/2090003781/bridge/tree/main/packages/dsh-bridge-connector) — 让 Obsidian 插件驱动 DSH 会话、并把库内笔记注入系统提示词的回环 HTTP/SSE 服务（按路径每轮重读磁盘，笔记改了下一轮就生效）；需要 Obsidian 内配套运行的插件。
 - [2710586329/dsh-qq](https://github.com/2710586329/dsh-qq) — 把 QQ 接进 DeepSeek Harness：私聊群聊、本地语音转文字、看图，以及十个互动工具（戳一戳、贴表情、点赞、发图、发文件、撤回等）。需要本机另跑一个 OneBot 11 实现（如 NapCat）。
 - [452926826/dsh-feishu-bot](https://github.com/452926826/dsh-feishu-bot) — 通过 WebSocket 将飞书聊天连接到 DeepSeek Harness 的项目、对话、回复和限定范围的工具审批。
 - [452926826/dsh-ssh-logs](https://github.com/452926826/dsh-ssh-logs) — 从白名单 SSH 服务器和日志根目录读取或搜索有界日志内容，不开放任意远程命令。
@@ -8755,6 +8758,7 @@ dsh plugin --profile web add dshmarket
 - [Yang-wudi/dsh-kun-like-pet#kunpet-dsh](https://github.com/Yang-wudi/dsh-kun-like-pet/tree/main/packages/kunpet-dsh) — 住在 DSH Web 界面右下角的坤坤桌宠：随 Agent 状态切换动作，任务完成时播放「你干嘛~哎哟」。
 - [yimeng-life/dsh-happy](https://github.com/yimeng-life/dsh-happy) — 给 DSH 对话区加十种整屏动效背景——星空、代码雨、电路、华山论剑、小猫、小女生、飞机大战、赛车、飘雪、肥皂泡；每回合随机一个，正文列有纱罩保证可读。
 - [Yuanawaqwq/dsh-columbina-pet](https://github.com/Yuanawaqwq/dsh-columbina-pet) — 哥伦比娅桌宠：桌面与网页面板上都有 2D live 形象，四套形象、76 句中日英原声台词、天气播报、表情包时刻、闲暇碎碎念，右键菜单可调动图切换间隔、形象、语言与大小。另有夜间勿扰、音量与一键静音、可搜索的待机动作勾选、省电模式。本插件是 PC2005-cloud/dsh-pet（MIT）的 2D 专用分支，去掉了上游的 3D 形象切换；使用独立插件 ID，可与 dsh-pet 同时安装。
+- [yuna78/dsh-prompt-tips](https://github.com/yuna78/dsh-prompt-tips) — 提示词精灵：住在 DSH 右下角的小宠物，每小时送你一条 OpenAI / Anthropic 官方提示词——EN 模板逐字可复制、中文 1:1 翻译、模型个性化「为什么值得抄」，9 套皮肤随便换。
 - [yushi-xxh/dsh-homepage-skin](https://github.com/yushi-xxh/dsh-homepage-skin) — 给 dsh web 铺上 DeepSeek Harness 首页同款背景：WebGL 流体光效、点线网格与数字点云鲸鱼，深色/亮色两套配色。
 - [yuyu520fish/dsh-fishtank](https://github.com/yuyu520fish/dsh-fishtank) — 一条养在 Harness 里的小鱼：有自己的记忆、心情和心事，隔天还记得你；鱼本身就是一个能导出带走的 JSON。
 - [yyh-001/dsh-meme](https://github.com/yyh-001/dsh-meme) — 聊天表情包：纯文本斗图、情绪主动发图、像 QQ/微信 一样发图、AI 自动学图、自定义表情包。
