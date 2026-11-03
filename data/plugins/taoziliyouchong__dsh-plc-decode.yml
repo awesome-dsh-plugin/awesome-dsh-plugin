@@ -1,0 +1,7 @@
+url: https://github.com/taoziliyouchong/dsh-plc-decode
+name: taoziliyouchong/dsh-plc-decode
+category: tools
+description:
+  en: Read PLC projects inside DSH — decode CoDeSys .project, Delta .dvp and Siemens S7-200 SMART .smart/.smartlib into readable reports and structured data, plus project diff, address audits, element-level read/write analysis and ladder-logic reconstruction.
+  zh: 在 DSH 里读 PLC 工程——把 CoDeSys `.project`、台达 `.dvp`、西门子 S7-200 SMART `.smart/.smartlib` 解码成可读报告与结构化数据，另带新旧对比、地址体检、元素级读写判定与连线还原。
+icon: https://raw.githubusercontent.com/taoziliyouchong/dsh-plc-decode/main/assets/icon-180.png
