@@ -1,5 +1,5 @@
-url: https://github.com/li906912102/dsh-team-dev
-name: li906912102/dsh-team-dev
+url: https://github.com/JieCore/dsh-team-dev
+name: JieCore/dsh-team-dev
 category: dev
 description:
   en: 'Per-turn tool-call step budget for Agent Teams teammates, shipped together with the team-dev and team-boot skills.'
