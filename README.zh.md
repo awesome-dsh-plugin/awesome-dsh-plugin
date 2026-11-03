@@ -5203,6 +5203,7 @@ dsh plugin --profile web add dshmarket
 - [WODE25500/dsh-public-apis](https://github.com/WODE25500/dsh-public-apis) — 把 public-apis 目录接入 DeepSeek Harness：按关键词、分类、auth、https、cors 搜索 1716 个免费公共 API 并直接调用。
 - [wodongx123/dsh-language-control](https://github.com/wodongx123/dsh-language-control) — 让 Agent 的思考过程也自动使用中文。在每步推理前向 System Prompt 最顶部注入语言约束，强制思维链、规划、工具调用推理全部使用中文，防止工具返回英文内容后发生语言漂移。支持在设置面板中实时编辑约束文本。
 - [wsk114514/dsh-ark-wiki](https://github.com/wsk114514/dsh-ark-wiki) — 查询 PRTS Wiki 的《明日方舟》干员、物品、关卡、剧情与泰拉大典世界观条目，并基于剧情卡司统计与卡池历史预测未实装角色、异格与卡池排期。
+- [wth373737/dsh-plugin-mail-triage](https://github.com/wth373737/dsh-plugin-mail-triage) — IMAP 邮件分拣与清理：增量只读扫描，先过硬保护规则层、再走可选的本地模型分类，产出报告与带哈希的清单，人工批准后才移动到回收站——全程不 expunge。
 - [WU079/dsh-douyin-subagent](https://github.com/WU079/dsh-douyin-subagent) — 让子代理在谷时刷抖音、读评论并汇报；附带发作品/回评论的 dy_* 工具（评论从已登录页面带签名直发，不依赖 IM ticket）、每日配额定时，以及设置页「刷抖音」里的控制面板（总开关、自动模式、谷时窗口、每天轮数、报告详细度）。偏 Windows；搜索与评论依赖另装的 douyin-mcp 可执行文件（yunsur/douyin-mcp 的 Release，路径经 dy_config 的 mcpExe 设置）及 Edge/Chromium 登录；回评论需要开了 CDP 端口的已登录浏览器；发作品还需多数账号没有的额外凭据。
 - [wufengwind/dsh-plugin-dm-ops](https://github.com/wufengwind/dsh-plugin-dm-ops) — 需 JDK 11+、达梦 JDBC 驱动与目标实例的 SSH 访问。巡检达梦数据库实例、评估安全与恢复条件，生成支持筛选和共享证据的报告。
 - [wulun811/LiuHe#bundle](https://github.com/wulun811/LiuHe/tree/master/malong/dsh/bundle) — 将 LiuHe MCP 代码工具集（44 个工具）桥接进 dsh web：repo_map、符号搜索、带容错匹配的 edit_batch、带撤销日志的事务性编辑，以及确定性质量门禁——由崩溃隔离的 Rust tree-sitter 解析守护进程和 SQLite 索引支撑。
