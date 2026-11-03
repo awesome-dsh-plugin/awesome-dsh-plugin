@@ -1,0 +1,6 @@
+url: https://github.com/Rcyc-1025/dsh-mlir-toolchain
+name: Rcyc-1025/dsh-mlir-toolchain
+category: tools
+description:
+  en: 'Four MLIR tools for DSH agents: probe, run, TableGen codegen and parse-check — reads toolchain.json, auto-discovers TableGen include roots, and returns structured diagnostics instead of ENOENT.'
+  zh: '给 DSH 智能体的四个 MLIR 工具：探测、运行、TableGen 代码生成与语法校验；读取 toolchain.json，自动发现 TableGen include 根，返回结构化诊断而不是 ENOENT。'
