@@ -1,0 +1,7 @@
+url: https://github.com/SixId666/dsh-math-plugin/tree/main/plugins/dsh-math
+name: SixId666/dsh-math-plugin#dsh-math
+category: tools
+tarball: https://github.com/SixId666/dsh-math-plugin/releases/latest/download/dsh-math.tgz
+description:
+  en: "SymPy-backed exact computation and independent verification for China's postgraduate entrance exam Mathematics I: 14 tools over 214 operators, exact symbolic results by default, and every result re-checked by a separate mechanism (requires Python 3.10+ with sympy and mpmath)."
+  zh: "SymPy 驱动的考研数学一精确计算与独立验证：14 个工具、214 个算子，默认返回精确符号解，并由独立机制复核每个结果（需本机 Python 3.10+ 及 sympy、mpmath）。"

@@ -1,0 +1,11 @@
+{
+  "url": "https://github.com/pixelligue/mcpbids-plugins",
+  "name": "pixelligue/mcpbids-plugins",
+  "category": "tools",
+  "description": {
+    "en": "Connects DeepSeek Harness to MCP Bids public US federal opportunities and connected TED notices, with source-linked document tools and personal API-key authentication.",
+    "zh": "使用个人 API 密钥，将 DeepSeek Harness 连接到 MCP Bids 的美国联邦公开采购机会、TED 公告和来源文件工具。"
+  },
+  "icon": "https://raw.githubusercontent.com/pixelligue/mcpbids-plugins/main/assets/logo.png",
+  "tarball": "https://github.com/pixelligue/mcpbids-plugins/releases/download/v1.0.0/dsh-plugin-mcpbids-1.0.0.tgz"
+}

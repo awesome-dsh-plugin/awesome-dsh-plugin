@@ -1,0 +1,7 @@
+url: https://github.com/ayakadaisuki/dsh-free-search-lite
+name: ayakadaisuki/dsh-free-search-lite
+category: browser
+tarball: https://github.com/ayakadaisuki/dsh-free-search-lite/releases/download/v0.1.1/dsh-free-search-lite-0.1.1.tgz
+description:
+  en: 'Two native tools for key-free Chinese/English search via 360, Bing RSS and DuckDuckGo, and static webpage text extraction, without a browser, Python or MCP subprocess.'
+  zh: '两个原生工具，提供基于 360、Bing RSS 和 DuckDuckGo 的免 API Key 中英文搜索与静态网页正文读取，无需浏览器、Python 或 MCP 子进程。'

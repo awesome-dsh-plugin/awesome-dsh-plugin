@@ -1,7 +1,7 @@
 url: https://github.com/ADWMC/helm-d/tree/main/packages/helmd
 name: ADWMC/helm-d#helmd
 category: security
-tarball: https://github.com/ADWMC/helm-d/releases/latest/download/helmd.tgz
+tarball: https://github.com/ADWMC/helm-d/releases/download/v0.5.2/helmd.tgz
 description:
-  en: 'Single-bundle security analysis plugin: bootstrap tool narrowing, a domain router, and 25 reverse-engineering tools covering APK, native binary, protocol, malware and LLM samples with on-demand reference docs.'
-  zh: '单包安全分析插件：引导期工具收敛、领域路由与 25 个逆向分析工具，覆盖 APK、原生二进制、协议、恶意样本与 LLM 场景，参考文档按需读取。'
+  en: 'Security-analysis plugin for DeepSeek Harness: 33 tools spanning six security domains, evidence/reporting and toolbox, plus the case lifecycle, routing and tool ledger; a session-bound case workflow with an evidence chain, E-id validation and reproducible findings; 362 on-demand references; three hot-swappable persona profiles; and a four-tab workbench (armor / case / intercept / about) with case-state recovery after context compaction.'
+  zh: 'DeepSeek Harness 的安全分析插件：33 个工具覆盖六大安全域、证据/报告与工具集，并提供案件生命周期、路由和工具账本；按会话绑定的案件工作区支持证据链、E 编号校验与可复现结论（repro_cmd）；内置 362 篇按需参考、三档可热切换人设，以及带案件状态恢复的破甲 / Case / 拦截 / 关于四页工作台。'

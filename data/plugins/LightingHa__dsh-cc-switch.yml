@@ -1,0 +1,6 @@
+url: https://github.com/LightingHa/dsh-cc-switch
+name: LightingHa/dsh-cc-switch
+category: model
+description:
+  en: "Brings the providers you already configured in cc-switch into DeepSeek Harness: reads the cc-switch database, converts Claude / Codex / OpenClaw / MCode / Pi entries into llm-pi-ai routes with their API keys, and adds a health check that measures time-to-first-byte and whether each stream completes."
+  zh: "把 cc-switch 里配好的模型供应商接进 DeepSeek Harness：读取 cc-switch 数据库，将 Claude / Codex / OpenClaw / MCode / Pi 等条目转成 llm-pi-ai 路由并写入 API Key，还提供实测首字节耗时与流能否正常收尾的体检。"

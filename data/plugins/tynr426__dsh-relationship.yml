@@ -1,0 +1,6 @@
+url: https://github.com/tynr426/dsh-relationship
+name: tynr426/dsh-relationship
+category: memory
+description:
+  en: 'Local relationship-memory workbench with a confirmation gate: every AI write — extracted memories and newly created contacts alike — lands in a pending queue until the user confirms it in the GUI; materials are archived verbatim with quote-level provenance checks on AI extraction, and confirmed memories aggregate into per-contact timelines, gift occasions and reciprocity views. Ships a native relationship agent preset for conversation capture; JSON storage by default with an optional SQLite backend, zero production dependencies.'
+  zh: '本地关系记忆工作台，一切 AI 写入先过确认闸门：AI 提取的记忆与新建的联系人都先进入待确认队列，由用户在界面拍板收录；素材逐字存档，AI 提取时逐条校验原话摘录溯源；已确认记忆聚合为联系人时间线、礼赠时机与往来视图。内置「关系记忆」agent preset 支持对话录入；默认 JSON 存储、可选 SQLite 后端，零生产依赖。'

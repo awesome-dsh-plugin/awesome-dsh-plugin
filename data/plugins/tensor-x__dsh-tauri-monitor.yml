@@ -1,0 +1,6 @@
+url: https://github.com/tensor-x/dsh-tauri-monitor
+name: tensor-x/dsh-tauri-monitor
+category: workflow
+description:
+  zh: "DSH Desktop 通用监控插件：HTTP 轮询规则引擎。按规则定时轮询任意接口（多步骤、变量提取、JS 条件表达式），条件命中才唤醒一个可见的 agent 会话执行任务；未命中零模型调用、零 token 消耗。规则通过导航栏 GUI 面板配置：新建/编辑/启停/测试/立即触发/执行记录，与定时任务插件同款交互体验。"
+  en: "Generic monitor plugin for DSH Desktop: an HTTP polling rule engine. Poll any endpoint on schedule (multi-step, variable extraction, JS condition expressions); when conditions hit, wake a visible agent session to act — zero model calls otherwise. Configure everything in a sidebar GUI panel: create/edit/pause/test/fire-now/run history, same UX as the built-in scheduler plugin."

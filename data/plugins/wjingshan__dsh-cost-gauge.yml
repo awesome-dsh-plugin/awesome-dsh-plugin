@@ -2,5 +2,5 @@ url: https://github.com/wjingshan/dsh-cost-gauge
 name: wjingshan/dsh-cost-gauge
 category: usage
 description:
-  en: 'Floating cost dial for the DSH web GUI: a 24-hour rate dial with a model-colored needle, a balance ring with an alarm threshold, drag-to-resize, and a minimized status-lamp mode.'
-  zh: 'DSH Web 浮动花费表盘：24 小时费率弧 + 按模型着色的指针、带报警阈值的余额环，支持拖拽缩放与最小化状态灯模式。'
+  en: 'Peak/off-peak billing cost dial for the DSH Web GUI: session token usage billed at the official DeepSeek peak and off-peak rates, a rate dial with a model-colored needle and switch countdown, a balance ring with a low-balance alarm, drag-to-resize, and a minimized status-lamp mode.'
+  zh: '峰谷计费表盘：DSH Web 浮动窗按 DeepSeek 官方峰谷（高峰/空闲）费率对会话花费（token 费用）实时计费，指针配费率切换倒计时，余额环带低余额报警，支持拖拽缩放与最小化状态灯。'

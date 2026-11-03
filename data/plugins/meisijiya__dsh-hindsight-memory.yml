@@ -1,0 +1,7 @@
+url: https://github.com/meisijiya/dsh-hindsight-memory
+name: meisijiya/dsh-hindsight-memory
+category: memory
+tarball: https://github.com/meisijiya/dsh-hindsight-memory/releases/download/v0.4.0/dsh-hindsight-memory-0.4.0.tgz
+description:
+  en: 'Bridges DeepSeek Harness to a Hindsight memory service using the same conventions as omp: one shared bank, automatic project-tag stamping, project plus global recall, plus tools for mental models, duplicate detection and retrying failed background operations. Requires a running Hindsight server (default http://127.0.0.1:8888).'
+  zh: '把 DeepSeek Harness 接入 Hindsight 记忆服务，沿用与 omp 相同的约定：单一共享 bank、自动打项目标签、项目层与全局层同时召回，并提供精神模型、重复检测与失败后台任务重试工具。需要本机已运行 Hindsight 服务（默认 http://127.0.0.1:8888）。'

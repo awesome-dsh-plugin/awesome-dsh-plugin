@@ -1,0 +1,6 @@
+url: https://github.com/yuehancn/dsh-tool-epub
+name: yuehancn/dsh-tool-epub
+category: tools
+description:
+  en: Read, build and take apart EPUB 3 books with no external dependency — the ZIP reader/writer and the XML scanner are both built in. Inspect metadata, reading order and TOC for structural problems, assemble a book from chapters, or split one back into per-chapter HTML.
+  zh: 读、造、拆 EPUB 3 电子书，零外部依赖 —— ZIP 读写器与 XML 扫描器均为自建。可体检元数据/阅读顺序/目录并点出结构问题，从章节拼出一本合规的书，或把已有的书拆回逐章 HTML。

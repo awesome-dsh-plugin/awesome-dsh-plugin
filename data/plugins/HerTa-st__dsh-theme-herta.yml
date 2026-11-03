@@ -1,0 +1,6 @@
+url: https://github.com/HerTa-st/dsh-theme-herta
+name: HerTa-st/dsh-theme-herta
+category: theme
+description:
+  en: 'A Herta theme for DeepSeek Harness: an ASCII boot opening ported from the upstream Herta project, a violet palette of design tokens, swappable wallpapers (four bundled, plus image URL, local import, solid colour or off) and a "Herta Appearance" page in DSH settings. Doubles as the theme that dsh-herta ships with.'
+  zh: '给 DeepSeek Harness 的黑塔主题：移植自上游 Herta 项目的开机 ASCII 开场、一整套紫罗兰设计令牌、可替换的壁纸（自带四张，也支持图片网址 / 本机导入 / 纯色 / 关掉），以及 DSH 设置里的「黑塔外观」页。它同时就是 dsh-herta 自带的那套主题。'

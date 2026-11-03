@@ -1,0 +1,6 @@
+url: https://github.com/GaoHu1997/dsh-git-branch
+name: GaoHu1997/dsh-git-branch
+category: git
+description:
+  en: 'Branch and worktree management for DeepSeek Harness: the workspace toolbar shows the current branch with in-place switching, plus an IDEA-style branch selector, remote branch checkout, context menus (create, rename, delete, copy), push and update, and branch isolation into standalone worktrees with managed creation and deletion.'
+  zh: 'DeepSeek Harness 的 git 分支与 worktree 管理：工作区工具栏显示当前分支并可原地切换；支持 IDEA 风格分支选择器、远程分支检出、右键操作菜单（新建/重命名/删除/复制）、推送与更新当前分支，以及把分支隔离到独立 worktree 工作区并管理其创建与删除。'

@@ -1,0 +1,6 @@
+url: https://github.com/HoloEN-Gwargura/dsh-bigfish-blur
+name: HoloEN-Gwargura/dsh-bigfish-blur
+category: theme
+description:
+  zh: "以当前桌面壁纸为基础做模糊处理的液态玻璃换肤：壁纸被模糊并蒙一层白纱作为整窗画布，侧栏与聊天面板保持半透明；输入框、代码块、预览面板、菜单等承载文字的表面按可读性分档加磨砂，控件为 Apple 液态玻璃质感。Windows 上读取当前桌面壁纸作为画布，其他平台回退到自绘渐变。"
+  en: "A liquid-glass skin built on your current desktop wallpaper: the wallpaper is blurred and veiled into the window canvas, panels stay translucent, and every surface that carries text (composer, code blocks, preview pane, menus) gets its own frost level so nothing is washed out. Apple-style liquid-glass controls. On Windows the canvas reads the current wallpaper from APPDATA; other platforms fall back to a painted gradient."

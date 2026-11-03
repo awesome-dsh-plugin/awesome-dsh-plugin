@@ -1,0 +1,6 @@
+url: https://github.com/JanEickholt/dsh-asc
+name: JanEickholt/dsh-asc
+category: session
+description:
+  en: Model-driven context compaction for DeepSeek Harness. The agent decides when and what to compress, commits durable session-log replacements, and ships reversible tool-result compression with byte-exact hash retrieval.
+  zh: 由模型主导的 DeepSeek Harness 上下文压缩：由 agent 决定何时压缩、压缩什么，以持久化会话日志替换提交，并提供可逆的工具结果压缩与逐字节哈希取回。

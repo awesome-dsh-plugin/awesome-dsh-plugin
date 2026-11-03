@@ -1,0 +1,6 @@
+url: https://github.com/weiVc/dsh-session-tidy
+name: weiVc/dsh-session-tidy
+category: session
+description:
+  en: 'Deletes a whole DSH session or one completed turn from the session log: confirmation dialog, live-agent teardown, path and identity checks, pre-rewrite backup, and later turns renumbered.'
+  zh: '删除整个 DSH 会话，或只删除会话中某一轮已完成的对话：带二次确认、运行中 Agent 安全停止、路径与身份校验、改写前备份，后续轮次自动顺延。'

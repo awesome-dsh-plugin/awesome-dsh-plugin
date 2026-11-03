@@ -1,0 +1,6 @@
+url: https://github.com/alexltr/dsh-vba-bridge
+name: alexltr/dsh-vba-bridge
+category: tools
+description:
+  en: 'Read, edit, export and verify Excel VBA projects through a real Excel COM instance: modules, UserForm code, procedure lists and .frm/.frx exports. Windows only, with desktop Excel installed, Python 3.10+ with pywin32, and AccessVBOM=1.'
+  zh: '通过真实 Excel COM 读写、导出并校验 Excel VBA 工程：模块、窗体代码、过程清单与 .frm/.frx 导出。仅 Windows：需安装桌面版 Excel、Python 3.10+（含 pywin32），并设置 AccessVBOM=1。'

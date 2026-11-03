@@ -1,0 +1,6 @@
+url: https://github.com/Yvesgao/dsh-env-profile
+name: Yvesgao/dsh-env-profile
+category: memory
+description:
+  en: "Global experience archive for DeepSeek Harness on Windows: probes local tools (with versions and PATH-first hits), convenient paths, network latency and disk speed; folds per-session stats from session/event; LLM-extracts durable facts; env_profile tool with remember; byte-stable summary injected every turn to speed up sessions and cut token use."
+  zh: "DeepSeek Harness 的全局经验档案（Windows）：探测本地工具（含版本与 PATH 首个命中）、便捷路径、网络延迟与磁盘速度；从 session/event 折叠每会话统计；由 LLM 抽取持久知识条目；提供带 remember 的 env_profile 工具；每轮注入字节稳定的摘要，加快会话并降低 token 消耗。"

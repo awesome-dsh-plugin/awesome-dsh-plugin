@@ -1,0 +1,6 @@
+url: https://github.com/Cike-money/dsh-qq-bridge
+name: Cike-money/dsh-qq-bridge
+category: remote
+description:
+  en: Bridge QQ (via NapCat) into DeepSeek Harness, turning private and group chats into session prompts and sending replies back to QQ.
+  zh: 把 QQ（NapCat）接入 DeepSeek Harness：私聊和群聊消息变成会话提示词，回复按行发回 QQ。

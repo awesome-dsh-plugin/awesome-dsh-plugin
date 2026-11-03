@@ -1,0 +1,13 @@
+# awesome-dsh-plugin 投稿草稿（本插件唯一投稿文件，README 勿手改、由脚本生成）
+# 目标 PR 文件：data/plugins/john-walks-slow__dsh-proactive--packages-dsh-proactive.yml
+#   （monorepo 子包命名规则见其 contributing.md：url 指向子目录，文件名 owner__repo--packages-<sub>.yml）
+# 前置：仓库满 1 天（2026-09-18 起）且 ≥10 commits；GitHub 仓库需已打 topic dsh-plugin。
+# 注意：description 含 ": " 必须加引号；描述会被对着代码核，只写实际行为，不带营销词。
+# 搜索机制（dsh-market 实测源码）：只索引 name/npm 名/owner/description(en+zh)/category，
+# README 与 npm keywords 完全不参与——双语描述是唯一搜索优化面。
+url: https://github.com/john-walks-slow/dsh-proactive/tree/main/packages/dsh-proactive
+name: dsh-proactive
+category: agi
+description:
+  en: 'Host-level proactive wake-ups for DeepSeek Harness: the model schedules its own alarms (once, recurring interval, or cron, with optional random jitter), cold sessions are woken on time by session resume, model-initiated follow-ups are gated by quiet hours and a daily delivery budget, silent wake turns end with proactive_reclaim and fold out of model context as tombstones, declared schedule files glob-sync JSON schedules into host alarms idempotently, min_idle_seconds defers wakes until the destination session quiets down, and a web panel (settings section plus per-session tab, SSE live refresh) manages alarms and wake history — the heartbeat engine for AI companions and roleplay characters with their own daily routines and world evolution.'
+  zh: '为 DeepSeek Harness 提供 host 级主动唤醒：模型用 proactive_set 给自己设定闹钟（单次 / 循环间隔 / cron，支持 jitter 随机抖动），到点自动唤醒冷会话执行心跳、定时提醒与任务跟进；安静时段与每日投递预算约束模型自主跟进，静默唤醒以 proactive_reclaim 收尾并把唤醒上下文折叠为墓碑；声明式闹钟文件把 JSON 时间表幂等同步成 host 闹钟，min_idle_seconds 静默门让唤醒等会话空闲；自带 Web 管理面板（设置页节 + 会话页签，SSE 实时刷新）管理闹钟与唤醒历史——适合驱动 AI 陪伴、角色扮演（酒馆式人设）与 living agent 的心跳、日常安排和世界演算。'

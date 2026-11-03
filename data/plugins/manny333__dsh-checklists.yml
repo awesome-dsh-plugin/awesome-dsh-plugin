@@ -1,0 +1,6 @@
+url: https://github.com/manny333/dsh-checklists
+name: manny333/dsh-checklists
+category: session
+description:
+  en: Session-scoped checklists the agent maintains, with a tree per session, a token-budgeted prompt digest and a right-sidebar tab where item titles can be edited.
+  zh: 会话级清单：每个会话一棵任务树、按预算注入提示词的摘要，以及可改条目标题的右侧栏面板。

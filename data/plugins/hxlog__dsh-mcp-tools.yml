@@ -1,0 +1,8 @@
+url: https://github.com/hxlog/dsh-mcp-tools
+
+name: hxlog/dsh-mcp-tools
+category: tools
+
+description:
+  en: 'MCP server manager for DeepSeek Harness settings: add streamable-http or stdio servers, paste Postman-style headers, test connectivity, and toggle each tool so disabled ones never reach the model.'
+  zh: DeepSeek Harness 的 MCP 工具管理器：在设置里添加 streamable-http/stdio 服务器、Postman 式请求头、连通性测试，并按工具开关——停用的工具不会进入模型。

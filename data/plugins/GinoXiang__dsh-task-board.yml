@@ -1,0 +1,7 @@
+url: https://github.com/GinoXiang/dsh-task-board
+name: GinoXiang/dsh-task-board
+category: ui
+description:
+  en: 'Personal task board for the DSH Web GUI with a two-month calendar of colored timeline bars and day tasks, a daily checklist, a seven-day week view with completion checkboxes and drag-to-reschedule, a draggable 24-hour day timeline, ordered subtasks, per-day completion for long-term tasks, and AI extraction of tasks from natural language.'
+  zh: 'DSH Web GUI 的个人任务管理面板：双月日历（彩色时间条 + 当天任务）、日常清单、七天周视图（勾选完成、可拖动改期）与可拖拽的 24 小时时间轴，支持有序子任务、长期任务按天完成标记，以及 AI 自然语言提取任务。'
+tarball: https://github.com/GinoXiang/dsh-task-board/releases/latest/download/dsh-task-board.tgz

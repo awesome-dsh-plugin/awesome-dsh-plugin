@@ -1,0 +1,6 @@
+url: https://github.com/beibing173/dsh-codex-gpt
+name: beibing173/dsh-codex-gpt
+category: model
+description:
+  en: 'OpenAI OAuth login for ChatGPT Codex that adds ChatGPT as a selectable LLM provider (streaming, Off/Low/High/Max reasoning effort, image input) and a codex tool for per-session DeepSeek escalation, with optional light-task delegation to DeepSeek and subscription usage and reset-credit management.'
+  zh: '通过 OpenAI OAuth 登录 ChatGPT Codex，把 ChatGPT 加为可选 LLM provider（流式、Off/Low/High/Max 思考强度、图片输入），并提供按会话授权的 codex 工具供 DeepSeek 升级调用，支持把轻任务委派回 DeepSeek，附带订阅用量与重置卡管理。'

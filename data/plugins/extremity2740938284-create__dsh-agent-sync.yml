@@ -1,0 +1,6 @@
+url: https://github.com/extremity2740938284-create/dsh-agent-sync
+name: extremity2740938284-create/dsh-agent-sync
+category: session
+description:
+  en: Mirrors other coding agents' sessions into DeepSeek Harness as continuable tasks, one workspace per application.
+  zh: 把本机其他 AI 编程助手的会话实时镜像成 DeepSeek Harness 的任务，每个应用一个工作区。

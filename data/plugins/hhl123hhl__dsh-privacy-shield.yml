@@ -1,0 +1,7 @@
+url: https://github.com/hhl123hhl/dsh-privacy-shield
+name: hhl123hhl/dsh-privacy-shield
+category: security
+tarball: https://github.com/hhl123hhl/dsh-privacy-shield/releases/download/v1.0.1/dsh-privacy-shield-1.0.1.tgz
+description:
+  en: Rewrites the model-visible copy of system, developer, user, assistant and tool messages into stable HMAC placeholders before a request leaves the machine, while local session logs, the chat transcript and restored tool calls keep real values.
+  zh: 请求离开本机前，把 system/developer/user/assistant/tool 五类消息的模型可见副本改写为稳定 HMAC 占位符；本地会话日志、对话记录与还原后的工具调用仍保留真值。

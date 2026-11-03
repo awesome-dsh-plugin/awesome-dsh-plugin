@@ -1,0 +1,6 @@
+url: https://github.com/cherrchen/dsh-plugin-git
+name: cherrchen/dsh-plugin-git
+category: git
+description:
+  en: Git service plus right-sidebar UI — a Changes tab (stage/unstage, per-file diffs, commit/amend, push and rebase-then-push sync, confirmed discard), a paged canvas commit-graph tab, a Worktrees tab to list, enter and create checkouts, a composer branch selector, and opt-in LLM commit-message generation.
+  zh: Git 服务 + 右侧边栏 UI：Changes 页（暂存/取消暂存、逐文件 diff、提交/修补、推送与 rebase 同步、二次确认的丢弃）、分页 canvas 提交图谱页、Worktrees 页（列出/进入/新建工作树）、输入框旁分支选择器，以及可选的 LLM 提交信息生成。

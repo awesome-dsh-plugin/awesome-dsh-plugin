@@ -1,0 +1,6 @@
+url: https://github.com/Polyaris-0413/dsh-balance-cmd
+name: Polyaris-0413/dsh-balance-cmd
+category: usage
+description:
+  en: 'A DSH plugin that queries the account balance and opens the top-up page through commands. Only works when signed in with a DeepSeek account; unavailable in API-key mode.'
+  zh: '一个通过命令查询余额、打开充值页的 dsh 插件。仅在登录 DeepSeek 账号时可用，API Key 模式下不可用。'

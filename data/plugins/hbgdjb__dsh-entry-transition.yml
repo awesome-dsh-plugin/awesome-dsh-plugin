@@ -1,0 +1,6 @@
+url: https://github.com/hbgdjb/dsh-entry-transition
+name: hbgdjb/dsh-entry-transition
+category: theme
+description:
+  en: 'One-shot entrance animation when the workspace opens: the logo is written onto the canvas, then an inverted color bar sweeps across on exit; mirrors light/dark themes automatically.'
+  zh: '打开工作台时的一次性入场动画：标识逐字擦出，退场时反色色块扫过全屏，深浅主题自动镜像。'

@@ -1,0 +1,6 @@
+url: https://github.com/knopki/dsh-prompt-profiles
+name: knopki/dsh-prompt-profiles
+category: identity
+description:
+  en: 'Per-session prompt profiles for DeepSeek Harness: reusable system-prompt sections, grouped into named profiles, sealed into the session prompt.'
+  zh: 'DeepSeek Harness 的按会话提示词配置：可复用的系统提示词片段组成命名配置，并在会话启动时固化进该会话的提示词。'

@@ -2,5 +2,5 @@ url: https://github.com/hanzhangzzz/dsh-diagram
 name: hanzhangzzz/dsh-diagram
 category: docs
 description:
-  en: Editable Excalidraw diagrams for DeepSeek Harness conversations.
-  zh: DeepSeek Harness 会话中的可编辑 Excalidraw 图表。
+  en: 'Turns an article in the DSH conversation into an Excalidraw canvas in a session tab: the Agent drafts the structure with diagram_create, you edit labels, nodes and layout with autosave, export PNG, SVG or .excalidraw, and the Agent reads your edited canvas back with diagram_read. 0.6 adds an editable classification overview plus a complete detail index for large three-level trees.'
+  zh: '把 DSH 会话中的文章整理成会话内的 Excalidraw 画布：Agent 用 diagram_create 起草结构，你在画布中修改文字、节点和布局并自动保存，可导出 PNG、SVG 或 .excalidraw，Agent 再用 diagram_read 读回你改过的画布。0.6 新增大型三层分类树的可编辑总览与完整明细索引。'

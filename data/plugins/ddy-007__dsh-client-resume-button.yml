@@ -1,0 +1,6 @@
+url: https://github.com/ddy-007/dsh-client-resume-button
+name: ddy-007/dsh-client-resume-button
+category: ui
+description:
+  en: 'Adds a Continue button left of the model selector: after a turn ends aborted by the user, interrupted by a crash or errored, one click sends notices asking the model to pick that turn back up, and the button collapses while you type or attach a file.'
+  zh: '在模型选择器左侧加一个「继续」按钮：上一轮被用户中止、崩溃中断或报错结束后，点一下让模型接着把那一轮做完；开始输入或添加附件时按钮收窄隐藏。'

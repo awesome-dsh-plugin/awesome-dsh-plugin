@@ -1,0 +1,7 @@
+url: https://github.com/propzhang/dsh-memory-unlocked
+name: propzhang/dsh-memory-unlocked
+category: memory
+icon: https://raw.githubusercontent.com/propzhang/dsh-memory-unlocked/main/assets/icon-180.png
+description:
+  en: 'Send "Memory unlocked" to let the AI recall conversations it has forgotten.'
+  zh: '发送“大记忆恢复术”来让 AI 回想起忘记的对话。'

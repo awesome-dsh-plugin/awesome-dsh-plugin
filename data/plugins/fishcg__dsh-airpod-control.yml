@@ -1,0 +1,6 @@
+url: https://github.com/fishcg/dsh-airpod-control
+name: fishcg/dsh-airpod-control
+category: voice
+description:
+  en: Requires macOS and AirPods with head tracking. Answer DSH permission prompts and questions with AirPods head gestures — nod to allow or confirm, shake to reject or shift the selected option — and install the companion macOS menu-bar app from a card inside the session.
+  zh: 需 macOS 与支持头部追踪的 AirPods。戴着 AirPods 用点头/摇头回答 DSH 的权限许可与提问——点头＝允许或确认，摇头＝拒绝或切换选项；会话里一张卡片就能装好配套的 macOS 菜单栏 App。

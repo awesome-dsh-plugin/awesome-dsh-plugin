@@ -1,0 +1,6 @@
+url: https://github.com/Baisbt/dsh-plugin-webrelay
+name: Baisbt/dsh-plugin-webrelay
+category: browser
+description:
+  en: 'Embeds external AI chat sites in a DSH side panel through the same-origin reverse proxy with per-site DOM adapters, and adds a composer button that either rewrites the draft with the host model or runs a two-round loop: compress the conversation, optimize, send to the embedded site, capture the reply, then finalize it into the composer.'
+  zh: '通过同源反向代理把外部 AI 对话站点嵌进 DSH 右侧面板（DOM 适配器写在配置里，站点改版无需改代码），并在输入框旁加一个按钮：要么用宿主模型改写草稿，要么跑一轮闭环——压缩对话、优化、发送到嵌入站点、捕获回复、整理成终稿写回输入框。'

@@ -1,0 +1,7 @@
+url: https://github.com/LeeeWM/dsh-session-toast
+name: LeeeWM/dsh-session-toast
+category: notify
+description:
+  en: 'Shows a Windows 11 toast notification when a DeepSeek Harness session turn finishes, and stays quiet while a DSH window is focused.'
+  zh: DSH 会话每轮结束时在 Windows 11 右下角弹出系统通知；DSH 窗口在前台时自动跳过，避免打扰。
+icon: https://raw.githubusercontent.com/LeeeWM/dsh-session-toast/main/assets/icon-180.png

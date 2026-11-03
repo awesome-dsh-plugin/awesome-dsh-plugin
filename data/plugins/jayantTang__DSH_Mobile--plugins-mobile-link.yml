@@ -1,0 +1,6 @@
+url: https://github.com/jayantTang/DSH_Mobile/tree/main/plugins/mobile-link
+name: jayantTang/DSH_Mobile#mobile-link
+category: remote
+description:
+  en: 'Host-side connector for the DSH Mobile iOS app: dials a self-hostable WSS relay so the phone can reach the DSH sessions on this computer over 4G/5G, without a public IP or a VPN; the relay only authenticates and forwards.'
+  zh: 'DSH Mobile 的电脑侧连接器：连上可自建的公网 WSS 中转，手机在 4G/5G 下即可访问这台电脑上的 DSH 会话，电脑不需要公网 IP 也不用组网；中转只做鉴权与转发。'

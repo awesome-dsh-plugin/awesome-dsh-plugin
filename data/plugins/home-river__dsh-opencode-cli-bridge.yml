@@ -1,0 +1,6 @@
+url: https://github.com/home-river/dsh-opencode-cli-bridge
+name: home-river/dsh-opencode-cli-bridge
+category: model
+description:
+  en: "Bridge DSH to OpenCode-compatible models via the local OpenCode CLI: native LlmAdapter passthrough, persistent OC sessions with cross-turn tool results, tool mirroring, and a CLI environment check panel. Requires the OpenCode CLI installed locally."
+  zh: "经本机 OpenCode CLI 在 DSH 中使用 OpenCode 兼容模型：原生 LlmAdapter 透传、OC 会话持久续接（工具结果跨轮可见）、工具镜像回传、CLI 环境检测面板。需本机已安装 OpenCode CLI。"

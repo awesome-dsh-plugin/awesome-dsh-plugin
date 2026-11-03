@@ -1,0 +1,6 @@
+url: https://github.com/lucagiftzek/dsh-voice
+name: lucagiftzek/dsh-voice
+category: voice
+description:
+  en: "Read-aloud and dictation for the DSH web UI with 23 TTS and STT provider types configured side by side, per-language routing, in-text language markers, per-sentence language detection, word highlighting and a TTS Reader sidebar tab (the tab requires dsh-better-sidebar; everything else works without it)."
+  zh: '为 DSH Web UI 提供朗读与听写：23 种 TTS 与 STT 提供商类型可并排配置，支持按语言路由、文内语言标记、逐句语言检测、逐词高亮，以及 TTS Reader 侧边栏标签页（该标签页需安装 dsh-better-sidebar，其余功能不装也可用）。'

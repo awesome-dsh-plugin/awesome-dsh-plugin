@@ -1,0 +1,7 @@
+url: https://github.com/realguan/dsh-mermaid-preview
+name: realguan/dsh-mermaid-preview
+category: ui
+tarball: https://github.com/realguan/dsh-mermaid-preview/releases/download/v0.5.1/dsh-mermaid-preview-0.5.1.tgz
+description:
+  en: 'Render Mermaid fenced code blocks as native diagram cards with 8 design-system themes and adaptive layout.'
+  zh: '在 Markdown 中将 Mermaid 围栏代码渲染为原生图表卡片，内置 8 套设计系统主题与自适应布局。'

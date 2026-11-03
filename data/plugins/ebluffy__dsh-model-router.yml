@@ -1,0 +1,6 @@
+url: https://github.com/ebluffy/dsh-model-router
+name: ebluffy/dsh-model-router
+category: model
+description:
+  en: English-only fork of dsh-model-router. Routes each agent step across a configurable model pool and adjusts reasoning effort based on task complexity, tool failures, and cost.
+  zh: dsh-model-router 的纯英文分支。把每个 agent 步骤路由到可配置的模型池，并按任务复杂度、工具失败与成本调整推理强度。

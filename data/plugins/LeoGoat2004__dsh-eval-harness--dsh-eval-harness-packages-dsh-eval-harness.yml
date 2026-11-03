@@ -1,0 +1,7 @@
+url: https://github.com/LeoGoat2004/dsh-eval-harness/tree/main/dsh-eval-harness/packages/dsh-eval-harness
+name: LeoGoat2004/dsh-eval-harness#dsh-eval-harness
+category: dev
+description:
+  en: 'Diagnostic evaluation plugin for DeepSeek Harness: freezes the confirmed Harness configuration, runs a benchmark, keeps the full session trace, and attributes failures to model, Harness, benchmark or environment.'
+  zh: DeepSeek Harness 的诊断型评测插件：冻结已确认的 Harness 配置，跑一遍基准测试，保留完整会话轨迹，并把失败归因到模型、Harness、基准或环境。
+tarball: https://github.com/LeoGoat2004/dsh-eval-harness/releases/download/v0.1.0/dsh-eval-harness-0.1.0.tgz

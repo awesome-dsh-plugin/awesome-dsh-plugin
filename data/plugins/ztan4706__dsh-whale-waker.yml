@@ -1,0 +1,6 @@
+url: https://github.com/ztan4706/dsh-whale-waker
+name: ztan4706/dsh-whale-waker
+category: workflow
+description:
+  en: 'Per-target scheduled wake-ups for a DSH workspace: interval, quiet hours, daily cap and a prompt per target; each wake-up waits for the turn it started and records the outcome, and a turn that never finished is not counted as done.'
+  zh: '给 DSH 工作区按目标定时唤醒：每个目标可设间隔、安静时段、每日上限和提示词；每次唤醒会等它自己那一轮结束并记下结果，没跑完的那一轮不会算作完成。'

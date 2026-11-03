@@ -1,0 +1,9 @@
+url: https://github.com/ALIve114514awa/dsh-prompt-optimizer
+name: ALIve114514awa/dsh-prompt-optimizer
+category: ui
+description:
+  en: Refine prompts with guided questions and editable previews using Harness AI
+    or native Codex across Web, desktop and TUI, applying drafts only after user
+    confirmation.
+  zh: 在 Web、桌面端和 TUI 中使用 Harness AI 或原生 Codex 澄清并优化提示词，预览可编辑，确认后仅填入草稿。
+tarball: https://github.com/ALIve114514awa/dsh-prompt-optimizer/releases/download/v0.1.3/dsh-prompt-optimizer-0.1.3.tgz

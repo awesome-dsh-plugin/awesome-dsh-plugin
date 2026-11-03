@@ -1,0 +1,6 @@
+url: https://github.com/YiuTerran/dsh-wps365-plugin
+name: YiuTerran/dsh-wps365-plugin
+category: docs
+description:
+  en: Reads and writes WPS 365 cloud documents (smart documents and .docx/.xlsx/.pptx) through the locally installed wps365-cli, with conflict checks before writing; requires a WPS 365 enterprise account.
+  zh: 通过本机安装的 wps365-cli 读写 WPS 365 云文档（智能文档与 .docx/.xlsx/.pptx），写入前先做并发冲突比对；需要 WPS 365 企业版账号。

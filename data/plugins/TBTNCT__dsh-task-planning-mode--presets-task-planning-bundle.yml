@@ -1,0 +1,6 @@
+url: https://github.com/TBTNCT/dsh-task-planning-mode/tree/main/presets/task-planning-bundle
+name: TBTNCT/dsh-task-planning-mode#task-planning-bundle
+category: workflow
+description:
+  en: 'Adds a "Task Planning" agent preset that asks requirements in versioned rounds, then writes step-by-step plans and prompts without implementing them itself.'
+  zh: '为 DSH 增加「任务规划」模式：按版本迭代逐轮提问把需求问清楚，再产出可逐条执行的规划与提示词，自身不实现代码。'

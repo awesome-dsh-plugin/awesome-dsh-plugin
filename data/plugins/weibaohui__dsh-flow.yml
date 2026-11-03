@@ -1,0 +1,6 @@
+url: https://github.com/weibaohui/dsh-flow
+name: weibaohui/dsh-flow
+category: workflow
+description:
+  en: "Execution flow chart: renders the current session's execution as a vertical node flow (turns, user, assistant, tools, approvals, retries, compaction), appended in real time over SSE with auto-follow scrolling — the chart draws wherever the session executes."
+  zh: 执行流程图：把当前会话的执行过程画成一条纵向节点流（回合/用户/助手/工具/审批/重试/压缩），SSE 实时追加——会话执行到哪，图就画到哪，自动跟随滚动。

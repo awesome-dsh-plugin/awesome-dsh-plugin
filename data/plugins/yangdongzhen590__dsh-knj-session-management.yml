@@ -1,0 +1,6 @@
+url: https://github.com/yangdongzhen590/dsh-knj-session-management
+name: yangdongzhen590/dsh-knj-session-management
+category: session
+description:
+  en: 'Session management for DSH: archive, restore and delete persisted sessions, cap how many sessions each workspace keeps, and review disk usage in a size governance panel.'
+  zh: 'DSH 会话管理：归档、恢复、删除持久化会话，按工作区限制会话数量上限，并提供体积治理面板。'

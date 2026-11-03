@@ -1,0 +1,6 @@
+url: https://github.com/ptrel1/dsh-interrupted-resume
+name: ptrel1/dsh-interrupted-resume
+category: session
+description:
+  en: "Lightweight crash-recovery for dsh: after a restart, it detects sessions whose last turn was killed mid-flight and re-injects a continuation prompt that first demands the agent verify real-world state before acting, so side-effecting operations are not blindly repeated. It only reacts to the genuine crash marker (turn/end reason 'interrupted', synthesized on cold read by session repair), so it never misfires on user cancels, rate limits or model errors - which is why it needs no error classification, backoff or configuration UI. Unlike general-purpose auto-continue plugins, it also covers the case where a subagent was interrupted mid-run: the parent turn has already ended normally while it waits, so a naive check sees nothing to resume and the whole subagent tree dies silently; this plugin detects the interrupted child and wakes the parent instead. Single host file, zero external dependencies, seven config constants."
+  zh: "轻量级的 dsh 崩溃恢复：重启后识别上一轮被强杀中断的会话，注入一条「先核实现状再动手」的续跑指令，避免盲目重做已有副作用的操作。只认真正的崩溃信号（turn/end 的 reason 为 interrupted，由 session repair 冷读时合成），因此不会把用户主动取消、限流或模型报错误判为可续，也就不需要错误分类、退避策略或配置界面。与通用自动续跑插件相比，它还覆盖「子代理执行中被中断」的盲区：此时父代理的轮次已正常结束（正在等待子代理），常规判定看不到任何可续对象，整棵子代理树会静默死掉；本插件会识别出被中断的子代理并唤醒父代理。单个宿主文件、零外部依赖、七个配置常量。"

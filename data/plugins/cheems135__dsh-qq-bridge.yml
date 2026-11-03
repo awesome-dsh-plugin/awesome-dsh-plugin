@@ -1,0 +1,6 @@
+url: https://github.com/cheems135/dsh-qq-bridge
+name: cheems135/dsh-qq-bridge
+category: identity
+description:
+  en: 'QQ (NapCat / OneBot 11) bridge for DeepSeek Harness: chat with your harness from QQ, with persona presets and custom personae, a grouped sticker library plus web sticker search, edge-tts or custom HTTP TTS voice notes, pluggable lookup engines, periodic memory compaction, an owner-only relay mode, and an eleven-tab management panel with live monitoring and per-turn cost tracking.'
+  zh: '把 DeepSeek Harness 接到 QQ（NapCat / OneBot 11）：预设与自定义人设、可分组表情库与联网搜图、edge-tts 或自建 HTTP TTS 语音消息、可切换的查证引擎、定时记忆压缩、号主代发，以及十一页标签的管理面板（实时监听与单轮成本）。'

@@ -1,0 +1,6 @@
+url: https://github.com/n431mn/lazy-workspace-manager
+name: n431mn/lazy-workspace-manager
+category: ui
+description:
+  en: 'Folder-scoped sidebar for DSH Web: by default only folders you load are listed with their sessions; unload a folder without deleting its registration, mark folders to load at startup, and opening a session loads its registered workspace so it does not fall into Ungrouped.'
+  zh: 'DSH Web 的按目录加载侧栏：默认只列出已加载目录及其会话；卸载目录不会删除注册，可设置启动时自动加载；打开会话时会加载其已注册的工作区，避免落入「未分组」。'

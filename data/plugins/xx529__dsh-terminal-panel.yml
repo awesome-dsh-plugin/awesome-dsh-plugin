@@ -1,0 +1,7 @@
+url: https://github.com/xx529/dsh-terminal-panel
+name: xx529/dsh-terminal-panel
+category: ui
+icon: https://raw.githubusercontent.com/xx529/dsh-terminal-panel/main/assets/icon.png
+description:
+  en: "Read-only terminal view tab in the conversation header: aggregates bash output, background jobs and persistent terminal sessions from the current session, subagents and Agent Team teammates into one filterable panel, with type and session-scope filters, command/output search, auto-collapse, follow-scroll and a maximize dialog; foreground bash shows final output only. Requires DeepSeek Harness 0.2.1-rc.2 or later (0.2.x)."
+  zh: "会话头部只读的「终端」视图标签页：把当前会话、子代理与 Agent Team 队友的 bash 输出、后台任务和持久终端会话聚合为一个可筛选面板，支持类型与会话范围筛选、命令与输出搜索、自动收起、跟随滚动与最大化只读弹窗；前台 bash 仅显示终态输出。需 DeepSeek Harness 0.2.1-rc.2 及以上（0.2.x）。"

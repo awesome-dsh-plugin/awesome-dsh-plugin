@@ -1,0 +1,6 @@
+url: https://github.com/ozanstn1-stack/dsh-vps-ops
+name: ozanstn1-stack/dsh-vps-ops
+category: tools
+description:
+  en: 'Read-first VPS operations tools: systemd status and actions, disk usage, Docker status, log tails, configured backups, and quiet-hours schedules.'
+  zh: '先读后写的 VPS 运维工具：systemd 状态与操作、磁盘占用、Docker 状态、日志尾部、可配置备份与静默时段计划。'

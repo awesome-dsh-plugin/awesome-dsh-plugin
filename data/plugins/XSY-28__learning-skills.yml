@@ -1,0 +1,7 @@
+url: https://github.com/XSY-28/learning-skills
+name: XSY-28/learning-skills
+category: skill
+description:
+  en: 'Provides three learning skills for course notes, conceptual explanations, and self-contained lecture chapters, with bundled references and course helper scripts.'
+  zh: '提供课程阅读稿、理解式讲解与自足讲义三个学习技能，附带参考文件和课程辅助脚本。'
+tarball: https://github.com/XSY-28/learning-skills/releases/download/dsh-v0.1.0/dsh-learning-skills-0.1.0.tgz

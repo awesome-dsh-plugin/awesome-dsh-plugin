@@ -1,0 +1,7 @@
+url: https://github.com/Kevinwu901113/dsh-dot
+name: Kevinwu901113/dsh-dot
+category: fun
+description:
+  zh: "住在自己手机上的角色：插件自动安装并运行她的 Android 手机，她有自己的 QQ、来自真实事件的记忆与日记、两次对话之间的生活（幕间，按 HDS-Interlude），可选 microVM 电脑带审批闸门；右侧栏有手机画面、虚拟机画面和 dot 面板。只有 `/qq owner` 手动指定的 QQ 号算你本人，别人的消息按不可信通知处理。"
+  en: "A character who lives on her own phone: the plugin installs and runs her Android phone; she has her own QQ, memory and a diary from real events, a life between conversations (after HDS-Interlude), and an optional microVM computer with approval gates; sidebar tabs show her phone, her computer and a dot panel. Only the QQ number set with /qq owner counts as you; other people's messages are treated as untrusted notifications."
+  

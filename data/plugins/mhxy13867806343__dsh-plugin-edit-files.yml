@@ -1,0 +1,7 @@
+url: https://github.com/mhxy13867806343/dsh-plugin-edit-files
+name: mhxy13867806343/dsh-plugin-edit-files
+category: ui
+description:
+  en: 'In-place text editing from the right-Sidebar document preview with ⌘S save and an external-change conflict check, plus a workspace Files tab (fuzzy search, create/rename/delete, per-file git status) and a Git changes tab whose baseline is the remote upstream — files that match the remote drop off the list.'
+  zh: '右侧预览里直接编辑保存文本文件（⌘S、外部改动冲突提示），另带一个可模糊搜索、新建 / 重命名 / 删除、并显示每个文件 git 状态的「文件」页签，以及以远程上游为基准的「Git 改动」页签 —— 改回与远程一致的文件会自动从列表消失。'
+icon: https://raw.githubusercontent.com/mhxy13867806343/dsh-plugin-edit-files/main/assets/icon-180.png

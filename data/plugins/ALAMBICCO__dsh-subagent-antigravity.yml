@@ -1,0 +1,7 @@
+url: https://github.com/ALAMBICCO/dsh-subagent-antigravity
+name: dsh-subagent-antigravity
+category: tools
+tarball: https://github.com/ALAMBICCO/dsh-subagent-antigravity/releases/download/v1.1.0/dsh-subagent-antigravity-1.1.0.tgz
+description:
+  en: 'Route native DeepSeek Harness subagent_fork child sessions onto your Google AI Pro (Antigravity) subscription (Gemini 3.8 Flash, Claude Sonnet 5.5, Claude Opus 5.5, GPT-OSS 120B) with zero API cost, live SSE streaming, full tool calling, prefill cache warm-up gating, ~200ms HTTPS quota checks, and a chat header button + slide-out settings/effort drawer.'
+  zh: '将 DeepSeek Harness 原生 subagent_fork 子智能体会话路由至 Google AI Pro (Antigravity) 订阅（支持 Gemini 3.8 Flash、Claude Sonnet 5.5、Claude Opus 5.5、GPT-OSS 120B）：零 API 费用、实时流式输出、完整工具调用、并行前缀缓存预热、200ms HTTPS 配额查询，以及聊天栏右上角配额按钮与侧滑模型/推理强度设置面板。'

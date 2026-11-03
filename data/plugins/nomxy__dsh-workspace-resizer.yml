@@ -1,0 +1,6 @@
+url: https://github.com/nomxy/dsh-workspace-resizer
+name: nomxy/dsh-workspace-resizer
+category: ui
+description:
+  en: Draggable splitter between the sidebar panel list and the workspace region, so the session list can grow. Double-click restores the default layout.
+  zh: 侧边栏「工作区」与导航之间的可拖动分隔条，上拖把高度让给会话列表，双击恢复默认。

@@ -1,0 +1,6 @@
+url: https://github.com/JianhangLy/dsh-prompt-library
+name: JianhangLy/dsh-prompt-library
+category: ui
+description:
+  en: 'Composer-side prompt library: a button next to the input opens a picker with group chips and word-split AND search over saved snippets, inserting one into the draft or appending it, filling {{variables}} before insertion, with 13 built-in templates. Snippets live in one local JSON file behind a rev lock, a per-save backup, and whole-library JSON import/export; a settings page handles editing, grouping, pinning and a 6-second delete undo.'
+  zh: 输入框旁的本地提示词库：按钮打开取用浮层，按分组 chips 与分词 AND 搜索筛选，插入或追加到草稿，插入前填充 {{变量}}，内置 13 套模板；数据存单个本地 JSON 文件，带 rev 乐观锁、每次保存前备份与整库 JSON 导入导出；设置页管理编辑、分组、置顶与 6 秒删除撤销。

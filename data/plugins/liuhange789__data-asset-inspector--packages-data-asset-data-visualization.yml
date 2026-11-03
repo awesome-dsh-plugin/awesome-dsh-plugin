@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-visualization
+name: liuhange789/data-asset-inspector#data-visualization
+category: tools
+description:
+  zh: "数据可视化插件 — 生成自包含HTML报告，支持五种图表(bar/comparison/pie/radar/flowchart)与两列布局"
+  en: "Data visualization plugin that generates self-contained HTML reports with five chart types (bar/comparison/pie/radar/flowchart) and two-column layout."

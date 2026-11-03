@@ -1,0 +1,6 @@
+url: https://github.com/znlgis/dsh-opengis-skill
+name: znlgis/dsh-opengis-skill
+category: skill
+description:
+  en: Bundles the 32 gis/ skills of opengis-skills (GDAL, QGIS, GeoServer, PostGIS, PROJ, PDAL, GRASS GIS, JTS, GeoPandas, Shapely, CesiumJS, OpenLayers, Leaflet, deck.gl and more) into the DSH skill catalog; only names and descriptions appear up front, and instruction bodies plus reference documents load on demand.
+  zh: 把 opengis-skills 的 32 个 gis/ 技能（GDAL、QGIS、GeoServer、PostGIS、PROJ、PDAL、GRASS GIS、JTS、GeoPandas、Shapely、CesiumJS、OpenLayers、Leaflet、deck.gl 等）打包进 DSH 技能目录；目录只列出名称与描述，技能正文与参考文档按需加载。

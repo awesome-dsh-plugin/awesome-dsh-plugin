@@ -1,0 +1,8 @@
+url: https://github.com/lishinho/dsh-quality-lens
+name: lishinho/dsh-quality-lens
+category: tools
+description:
+  en: 'Scores each assistant answer on five dimensions plus topic coverage, shows evidence, and turns the weakest dimension into copy-ready prompt advice. Observational only; local by default, with optional Jev review.'
+  zh: '为每条回答给出五维质量分与话题覆盖度，附证据，并把最弱的一项转成可直接复制的提示词改写。只观测不改写；默认本地评分，可选 Jev 精评。'
+icon: https://raw.githubusercontent.com/lishinho/dsh-quality-lens/main/assets/icon-180.png
+tarball: https://github.com/lishinho/dsh-quality-lens/releases/latest/download/dsh-quality-lens.tgz

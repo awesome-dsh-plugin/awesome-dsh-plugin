@@ -1,0 +1,6 @@
+url: https://github.com/yuehancn/dsh-tool-notion
+name: yuehancn/dsh-tool-notion
+category: tools
+description:
+  en: Convert Notion blocks and Markdown in both directions, with no API client and no external dependency. A Notion paragraph is an array of rich-text runs while Markdown says one string, so the two directions are a split and a merge rather than a pair of inverses — rich-text runs are cut at every annotation boundary one way and re-merged the other, with fences widened when the content already contains backticks. Reports every lossy step instead of swallowing it.
+  zh: Notion 区块与 Markdown 双向转换，不带 API 客户端、无外部依赖。Notion 的段落是一组富文本 run，而 Markdown 只有一个字符串 —— 所以两个方向分别是「切分」与「合并」，并不是一对互逆操作：一个方向在每个注解边界切开 run，另一个方向把相邻同注解的 run 重新合并，内容本身含反引号时自动加宽围栏。每一步有损转换都会报出来，而不是默默吞掉。

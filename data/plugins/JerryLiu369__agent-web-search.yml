@@ -1,0 +1,6 @@
+url: https://github.com/JerryLiu369/agent-web-search
+name: JerryLiu369/agent-web-search
+category: tools
+description:
+  en: 'Aggregated multi-upstream web search for DeepSeek Harness: replaces native web_search with model-native grounding and agent search APIs, source attribution, and rich citation cards.'
+  zh: 'DeepSeek Harness 聚合多上游联网搜索插件：无缝替换原生 web_search，支持模型原生检索、免 Key 上游与富文本引用卡片。'

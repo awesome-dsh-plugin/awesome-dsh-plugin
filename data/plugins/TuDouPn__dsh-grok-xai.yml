@@ -1,0 +1,6 @@
+url: https://github.com/TuDouPn/dsh-grok-xai
+name: TuDouPn/dsh-grok-xai
+category: usage
+description:
+  en: 'DeepSeek Harness plugin for SuperGrok and X Premium subscriptions: device-code sign-in, the xai provider, account-visible chat models with context and per-million-token prices, reasoning efforts read from model capabilities, and subscription usage.'
+  zh: 'DeepSeek Harness 的 SuperGrok / X Premium 订阅插件：设备码登录、xai 提供商、账号可见对话模型与上下文/百万 token 价格、按模型能力读取的推理强度，以及订阅用量。'

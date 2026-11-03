@@ -9,7 +9,7 @@
  * therefore no download count to fetch — that is a coverage gap, not a probe
  * failure, and this script never invents a number for one.
  *
- * "last-month" (a rolling 30-day window from api.npmjs.org), not lifetime:
+ * Explicit UTC dates for a rolling 30-day window, not lifetime:
  * the whole point of this field is to answer "is this getting used lately",
  * the same question stars answers badly. A lifetime total would just become
  * a second star count that never comes back down once inflated by an old
@@ -22,9 +22,11 @@
  * scoped one at a time under the same concurrency cap as everything else
  * here. A name missing from a successful batch response (unpublished since
  * probe-npm.mjs last confirmed it) comes back as `null` for that key rather
- * than failing the batch — treated as 0, not as a probe failure.
+ * than failing the batch — retain the prior count, never invent zero.
  *
- * Results live in data/downloads.json: { "<github url>": { downloads, checkedAt } }.
+ * Results: { "<github url>": { downloads, checkedAt, start, end } }.
+ * Dates must match the requested window. This detects stale responses, not
+ * delayed upstream aggregation inside an otherwise correctly dated window.
  * That file is COMMITTED, like data/stars.json and for the same reason (#1673):
  * the "a failed probe keeps whatever was on disk" rule below is worth nothing
  * if nothing is ever on disk. It was not committed until 2026-08-19, so every
@@ -36,6 +38,7 @@
  * Usage: node scripts/probe-downloads.mjs
  */
 import fs from 'node:fs'
+import { downloadWindow, downloadResult } from './download-window.mjs'
 
 const NPM_MAP_FILE = 'data/npm-map.json'
 const DOWNLOADS_FILE = 'data/downloads.json'
@@ -61,11 +64,14 @@ console.log(`${published.length} listed entries are published to npm`)
 
 const map = fs.existsSync(DOWNLOADS_FILE) ? JSON.parse(fs.readFileSync(DOWNLOADS_FILE, 'utf8')) : {}
 const today = new Date().toISOString().slice(0, 10)
+const window = downloadWindow()
+const period = `${window.start}:${window.end}`
 
 const fresh = (entry) =>
   !PROBE_ALL
   && entry !== undefined
   && entry.checkedAt
+  && entry.start === window.start && entry.end === window.end
   && (Date.now() - new Date(entry.checkedAt).getTime()) / 86400000 <= RECHECK_DAYS
 
 const pending = published.filter(([url]) => !fresh(map[url]))
@@ -112,17 +118,21 @@ let failedNoPrior = 0
 
 // Unscoped names: batched. A name npm has no record of (unpublished since
 // probe-npm.mjs last confirmed it) comes back `null` in the response body —
-// that is 0 downloads, a fact this script learned, not a request failure.
+// retain its previous value rather than treating missing evidence as zero.
 const unscoped = pending.filter(([, entry]) => !entry.npm.startsWith('@'))
 for (let i = 0; i < unscoped.length; i += BATCH_SIZE) {
   const batch = unscoped.slice(i, i + BATCH_SIZE)
   const names = batch.map(([, entry]) => entry.npm)
   try {
-    const body = await fetchJson(`https://api.npmjs.org/downloads/point/last-month/${names.map(encodeURIComponent).join(',')}`)
+    const body = await fetchJson(`https://api.npmjs.org/downloads/point/${period}/${names.map(encodeURIComponent).join(',')}`)
     for (const [url, entry] of batch) {
-      const downloads = typeof body[entry.npm]?.downloads === 'number' ? body[entry.npm].downloads : 0
-      map[url] = { downloads, checkedAt: today }
-      ok++
+      try {
+        map[url] = downloadResult(body, entry.npm, window, today)
+        ok++
+      } catch {
+        failed++
+        if (map[url] === undefined) failedNoPrior++
+      }
     }
   } catch {
     failed += batch.length // keep whatever was already on disk for this batch
@@ -136,9 +146,8 @@ for (let i = 0; i < unscoped.length; i += BATCH_SIZE) {
 const scoped = pending.filter(([, entry]) => entry.npm.startsWith('@'))
 async function probeScoped([url, entry]) {
   try {
-    const body = await fetchJson(`https://api.npmjs.org/downloads/point/last-month/${encodeURIComponent(entry.npm)}`)
-    const downloads = typeof body.downloads === 'number' ? body.downloads : 0
-    map[url] = { downloads, checkedAt: today }
+    const body = await fetchJson(`https://api.npmjs.org/downloads/point/${period}/${encodeURIComponent(entry.npm)}`)
+    map[url] = downloadResult(body, entry.npm, window, today)
     ok++
   } catch {
     failed++ // keep whatever was already on disk

@@ -1,0 +1,6 @@
+url: https://github.com/ChordXD/dsh-image-compare
+name: ChordXD/dsh-image-compare
+category: vision
+description:
+  en: Adds a right-column panel that compares a set of images the user picks from the workspace — 1/2/3/4/6 per page, per-image zoom and pan, the zoom and viewed position of one image synced onto the whole set, and a reorderable filmstrip. The browser loads every image, so none of it reaches the model.
+  zh: 在右栏新增一个面板，用来并排对比用户自己从工作区挑选的一组图片——每页 1/2/3/4/6 张、每张独立缩放与平移、可把某一张的缩放与显示位置同步到整组、缩略图可拖动排序。图片由浏览器直接加载，不进入模型。

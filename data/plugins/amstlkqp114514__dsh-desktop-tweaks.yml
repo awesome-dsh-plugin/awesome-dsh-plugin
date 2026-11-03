@@ -1,0 +1,6 @@
+url: https://github.com/amstlkqp114514/dsh-desktop-tweaks
+name: amstlkqp114514/dsh-desktop-tweaks
+category: ui
+description:
+  en: 'Desktop tweaks: F11 fullscreen toggle; enables Ctrl+C / Ctrl+V copy and paste in the terminal, both switchable in the General settings.'
+  zh: '桌面修改：F11 全屏切换；使终端使用 Ctrl+C/V 复制粘贴，从通用设置内开启/关闭。'

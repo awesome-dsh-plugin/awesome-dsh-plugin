@@ -1,0 +1,6 @@
+url: https://github.com/tkliuxing/dsh-presets-hidden
+name: tkliuxing/dsh-presets-hidden
+category: ui
+description:
+  en: Browser-side preset visibility and ordering controls for the new-session page.
+  zh: 在新会话页控制 Agent 预设的显示与排序。

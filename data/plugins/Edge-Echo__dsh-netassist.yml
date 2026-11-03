@@ -1,0 +1,6 @@
+url: https://github.com/Edge-Echo/dsh-netassist
+name: Edge-Echo/dsh-netassist
+category: tools
+description:
+  en: "Network and proxy doctor for DSH: checks system proxy settings, probes local proxy ports, detects TUN adapters, tests GitHub, TCP and HTTP reachability, scans hosts conflicts and prints concrete suggestions for what to change."
+  zh: "DSH 的网络与代理诊断工具：检查系统代理设置、探测本地代理端口、识别 TUN 适配器、测试 GitHub/TCP/HTTP 连通性、扫描 hosts 冲突，并给出具体的修改建议。"

@@ -1,0 +1,6 @@
+url: https://github.com/kinderao/dsh-pocket-relay
+name: kinderao/dsh-pocket-relay
+category: remote
+description:
+  en: 'Phone and remote access to the DSH Web UI: scan a LAN QR code, or reach your PC from anywhere through a self-hosted relay server you run yourself instead of a cloudflared tunnel. Per-device credentials that pair, list, and revoke individually, and several PCs sharing one relay with automatic failover.'
+  zh: '手机与远程访问 DSH Web 界面：局域网扫码即用，或用自建 relay 中继服务端（替代 cloudflared 隧道）随时随地连回电脑；每台设备独立凭据，可配对、查看与单独撤销；多台电脑共用一个中继并自动热备。'

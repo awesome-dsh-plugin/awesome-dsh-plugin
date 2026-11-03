@@ -1,0 +1,6 @@
+url: https://github.com/ColdMagicchess/PTT-Studio
+name: ColdMagicchess/PTT-Studio
+category: docs
+description:
+  en: 'Design-first PowerPoint builder: six pptx_* tools turn a deck.json design draft into an editable .pptx with AI backgrounds, cutout illustrations and decoration pieces, run layout and contrast checks, render slide previews, and review pages with a configurable vision model; chat cards and a settings page in the Web UI. Requires DSH Desktop 0.2.1-rc.2+ (pptx_render uses its bundled LibreOffice Kit) and an Agnes or ModelScope API key for image generation.'
+  zh: '设计型 PPT 生成：六个 pptx_* 工具把逐页设计稿（deck.json）组装成可编辑 .pptx，配合 AI 背景、去底插画与装饰件，做版式与对比度检查、渲染页面预览，并可用可配置的视觉模型逐页评审；Web 端提供聊天卡片与设置页。需 DSH Desktop 0.2.1-rc.2+（pptx_render 使用其内置 LibreOffice Kit），AI 背景需 Agnes 或 ModelScope API Key。'

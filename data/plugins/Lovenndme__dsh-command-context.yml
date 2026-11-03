@@ -1,0 +1,6 @@
+url: https://github.com/Lovenndme/dsh-command-context
+name: Lovenndme/dsh-command-context
+category: usage
+description:
+  en: 'Adds a /context slash command to DeepSeek Harness: shows how much of the session context window is used, how much is free, and a per-category breakdown (system prompt, memory files, skills, messages, tool results). Read-only, local, no model calls.'
+  zh: '给 DeepSeek Harness 加一个 /context 命令：显示当前会话上下文窗口的占用、剩余空间，以及提示词各部分的占比（系统提示 / 记忆文件 / 技能 / 消息 / 工具结果）。只读、纯本地、不触发模型调用。'

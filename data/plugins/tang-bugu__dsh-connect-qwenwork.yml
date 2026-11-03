@@ -1,0 +1,7 @@
+url: https://github.com/tang-bugu/dsh-connect-qwenwork
+name: tang-bugu/dsh-connect-qwenwork
+category: model
+description:
+  en: Registers a QwenWork (千问办公) model provider that reuses the desktop client's local sign-in, runs a loopback OpenAI-compatible bridge on 127.0.0.1, and translates DSH model requests into the ACP-style control-envelope conversation protocol the upstream actually speaks.
+  zh: 注册千问办公（QwenWork）模型提供器，复用桌面客户端的本机登录态，在 127.0.0.1 起一个 OpenAI 兼容回环桥，把 DSH 的模型请求翻译成上游真正使用的 ACP 控制信封对话协议。
+icon: https://raw.githubusercontent.com/tang-bugu/dsh-connect-qwenwork/main/icons/dsh-connect-qwenwork-128.png

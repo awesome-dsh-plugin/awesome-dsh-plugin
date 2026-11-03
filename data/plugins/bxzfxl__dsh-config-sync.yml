@@ -1,0 +1,6 @@
+url: https://github.com/bxzfxl/dsh-config-sync
+name: bxzfxl/dsh-config-sync
+category: tools
+description:
+  en: Git-based multi-device sync for DSH configuration — captures settings, plugin manifests, lockfiles and skills into a private repository, with one-click capture, apply, pull and restore, and plugin rebuilds from pnpm-lock.
+  zh: 基于私有 Git 仓库的 DSH 多端配置同步——把设置、插件清单、锁文件与技能纳管到私有仓库，设置页一键捕获、应用、拉取与回滚，并按 pnpm-lock 确定性重建插件依赖。

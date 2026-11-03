@@ -1,0 +1,6 @@
+url: https://github.com/Assidefok/dsh-opencodego-status
+name: Assidefok/dsh-opencodego-status
+category: usage
+description:
+  en: 'Floating overlay in the Harness Web UI with OpenCode Go usage: 5-hour rolling, weekly and monthly percentages, reset countdowns and the renewal date, with device-code sign-in and silent token refresh.'
+  zh: '在 Harness Web UI 上悬浮显示 OpenCode Go 用量：5 小时滚动、每周与每月百分比、重置倒计时与续订日期，支持设备码登录与静默刷新。'

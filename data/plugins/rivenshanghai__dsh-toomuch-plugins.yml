@@ -1,0 +1,6 @@
+url: https://github.com/rivenshanghai/dsh-toomuch-plugins
+name: rivenshanghai/dsh-toomuch-plugins
+category: ui
+description:
+  en: Collapses the global panel entries above the workspace in the DSH Web sidebar into a single toggle in the sidebar footer.
+  zh: 把 DSH Web 侧栏里工作区上方的全局面板入口收成侧栏底部的一个开关。

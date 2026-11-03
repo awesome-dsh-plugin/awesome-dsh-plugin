@@ -1,0 +1,6 @@
+url: https://github.com/ECNU/EduWork/tree/main/packages/dsh-annotation
+name: ECNU/EduWork#dsh-annotation
+category: ui
+description:
+  en: 'Select reply text, edit numbered annotations, and send several with a question using native DSH composer references, draft persistence, and submission; requires DSH 0.2.1-rc.2 or later within the 0.2.x series.'
+  zh: '选取回复文字、编辑编号批注并随问题一起发送，复用 DSH 原生输入框引用、草稿保存和发送流程；需 DSH 0.2.x 系列中的 0.2.1-rc.2 或更新版本。'

@@ -1,0 +1,6 @@
+url: https://github.com/wangzhanchao883/dsh-no-long-sit
+name: wangzhanchao883/dsh-no-long-sit
+category: notify
+description:
+  en: 'Sit-and-water reminder for DeepSeek Harness, with a cat that sits in the corner of the Web GUI. A focus cycle of 30-90 minutes ends in a centered overlay plus a triple chime that gets you up to walk and drink; the later button answers with one real sourced case about prolonged sitting and one about dehydration (built-in library of 17 entries, each with publisher, date and a link to the original); stopping produces a session report with worked time, completed rounds, successful interruptions, snoozes, suggested drinks and a good/mid/bad grade. The cat can be dragged anywhere with its position remembered and loops one animation per state. The timer and the ledger live in the host half, so a page refresh never loses a cycle; it only reminds while a DSH page is open. Cycle lengths, chime volume, cat opacity and grade thresholds are configurable on the plugin settings page.'
+  zh: 'DSH 的久坐与喝水提醒：一只猫待在 Web GUI 角落帮你盯时间。专注周期 30-90 分钟结束后居中弹窗并连响三声，喊你起来走两步、喝口水；点「再等会」给出 1 条久坐的真实案例 + 1 条缺水的真实案例（内置 17 条，均带来源媒体、发布日期和原文链接）；点「结束」输出本次工作评价：工作时长、完成轮数、成功中断次数、推迟次数、建议喝水次数与好/中/差评分。猫可以拖到任意位置并记住位置，四个状态各一段循环动画。计时与账本在宿主侧，刷新页面不丢；只在 DSH 页面开着时提醒。周期时长、提示音音量、猫的不透明度、评价阈值都能在设置页调整。'

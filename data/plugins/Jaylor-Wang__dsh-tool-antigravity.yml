@@ -1,0 +1,6 @@
+url: https://github.com/Jaylor-Wang/dsh-tool-antigravity
+name: Jaylor-Wang/dsh-tool-antigravity
+category: model
+description:
+  en: Connect Google Antigravity OAuth accounts to DeepSeek Harness with smart multi-account quota rotation, multi-model LLM routing, and Nano Banana 2 image generation.
+  zh: 接入 Google Antigravity OAuth 账号，为 DeepSeek Harness 提供智能多账号池额度自愈轮换、全系多模型流式路由及 Nano Banana 2 图像生成。

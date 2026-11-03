@@ -1,0 +1,6 @@
+url: https://github.com/eghrhegpe/dsh-connect-atomcode
+name: eghrhegpe/dsh-connect-atomcode
+category: tools
+description:
+  en: 'Use the free AtomGit quota already signed in on this machine to have AtomCode run an independent code review: the model calls the atomcode_ask tool on its own, and you can also use the /atomcode-review command to review uncommitted changes, a branch or a PR in one click. The plugin reads no API key; a usage pill below the input box shows the CodingPlan quota.'
+  zh: '用你本机已登录的 AtomGit 免费额度，请 AtomCode 给代码做一次独立代码审查：模型通过`atomcode_ask` 工具自主调用审查；你也可以使用`/atomcode-review`命令，一键评审未提交改动 / 分支 / PR。本插件不读取 API key；输入框下方有用量胶囊显示 CodingPlan 额度。'

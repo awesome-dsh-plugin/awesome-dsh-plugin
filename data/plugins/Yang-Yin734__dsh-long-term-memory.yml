@@ -1,0 +1,7 @@
+url: https://github.com/Yang-Yin734/dsh-long-term-memory
+name: dsh-long-term-memory
+category: memory
+description:
+  en: Adds a long-term memory box to the DSH Settings page. The saved text is injected into the system prompt of every new session and is kept in the profile patch, so it can be edited again at any time.
+  zh: 在 DSH 设置页新增「长时记忆」输入框，保存的文本会注入每个新会话的系统提示词，内容持久化在 profile patch 中，可随时回到设置页修改。
+tarball: https://github.com/Yang-Yin734/dsh-long-term-memory/releases/latest/download/dsh-long-term-memory.tgz

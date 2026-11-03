@@ -1,0 +1,7 @@
+url: https://github.com/wangnian886/dsh-model-toggle
+name: wangnian886/dsh-model-toggle
+category: model
+description:
+  en: Adds per-model hide/show switches for custom (llm-pi-ai) providers to the DSH settings page. Hidden models disappear from the conversation model picker and are archived verbatim, so they can be restored at any time; disabling or uninstalling the plugin restores everything automatically. Built-in DeepSeek providers are not managed.
+  zh: 在 DSH 设置页给自定义（llm-pi-ai）提供商的每个模型加「隐藏 / 显示」开关。隐藏的模型会从对话底部的模型选择器消失，条目原样存档、随时可恢复；禁用或卸载本插件会自动全部还原。内置 DeepSeek 提供商不归本插件管。
+tarball: https://github.com/wangnian886/dsh-model-toggle/releases/latest/download/dsh-model-toggle.tgz

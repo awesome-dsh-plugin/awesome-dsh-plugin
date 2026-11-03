@@ -1,0 +1,7 @@
+url: https://github.com/Guan-HP/dsh-zhijiang-connector
+name: Guan-HP/dsh-zhijiang-connector
+category: usage
+description:
+  en: 'Sidebar badge and panel showing the balance, daily spend and remaining runway of a New API relay, with a top-up link.'
+  zh: '在 DSH 侧边栏显示 New API 中转站的余额、日均消耗与剩余可用天数，并提供充值入口。'
+icon: https://raw.githubusercontent.com/Guan-HP/dsh-zhijiang-connector/main/icon-180.png

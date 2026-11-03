@@ -1,0 +1,6 @@
+url: https://github.com/1624318455/dsh-plugin-adapter
+name: 1624318455/dsh-plugin-adapter
+category: model
+description:
+  en: Exposes OpenCode Zen free models to DeepSeek Harness with no API key, tracking Zen gateway changes.
+  zh: 将 OpenCode Zen 免费模型接入 DeepSeek Harness，无需 API Key，并跟踪网关兼容性。

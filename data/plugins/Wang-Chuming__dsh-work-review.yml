@@ -1,0 +1,6 @@
+url: https://github.com/Wang-Chuming/dsh-work-review
+name: Wang-Chuming/dsh-work-review
+category: workflow
+description:
+  en: 'Work-review loop for an Obsidian-style vault: writes a day''s Dream with a numbered T/G plan, executes only the items marked routine (read-only by default, local commits only with --live), folds seven days into an ISO-week routine, and shows every day and week in a read-only sidebar panel.'
+  zh: '面向 Obsidian 风格 vault 的工作回顾闭环：每晚生成当天 Dream 与编号 T/G 计划，只执行标记为「常规」的条目（默认只读，--live 才本地 commit），把七天汇总成 ISO 周周报，并在只读侧栏面板里展示日报与周报。'

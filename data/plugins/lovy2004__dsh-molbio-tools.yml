@@ -1,0 +1,6 @@
+url: https://github.com/lovy2004/dsh-molbio-tools
+name: lovy2004/dsh-molbio-tools
+category: tools
+description:
+  en: 'A bundle of molbio tools for molecular biology work:sequence analysis, primer and probe design (qPCR, TaqMan), in-silico PCR,cloning simulation,plasmid maps,sequencing validation,protein and CRISPR analysis,qPCR statistics,literature and lab records;installed as a preset-scoped bundle.'
+  zh: '一组molbio分子生物学工具，包含序列分析、引物和探针设计、电子 PCR、克隆模拟、质粒图谱，测序验证，蛋白与CRISPR分析，qPCR统计，文献与实验记录；随 bundle 以预设模式安装。'

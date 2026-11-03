@@ -1,0 +1,7 @@
+url: https://github.com/supart/DSH-FHL-Image-Plugin
+name: supart/DSH-FHL-Image-Plugin
+category: tools
+description:
+  en: FHL Images generation and multi-reference editing for DeepSeek Harness, with three agent tools, a pool of up to ten API-key workers, and chat-based key configuration.
+  zh: 为 DeepSeek Harness 提供 FHL Images 生图与多参考图编辑，含三个 Agent 工具、最多十个 API Key Worker 的池，以及聊天内配置 Key。
+tarball: https://github.com/supart/DSH-FHL-Image-Plugin/releases/download/v0.2.2/fhl-plugins-dsh-fhl-image-0.2.2.tgz

@@ -1,0 +1,8 @@
+url: https://github.com/liaoyuqing/model-failover-manager
+name: liaoyuqing/model-failover-manager
+category: model
+tarball: https://github.com/liaoyuqing/model-failover-manager/releases/latest/download/model-failover-manager.tgz
+icon: https://raw.githubusercontent.com/liaoyuqing/model-failover-manager/main/assets/icon-180.png
+description:
+  en: "Model picker dialog with routing groups: a model that keeps failing hands the turn to the next usable model in its group, and the dialog also carries a metrics dashboard and a free-channel tab."
+  zh: "模型选择弹窗＋路由分组：模型失败后自动换到组内下一个可用模型并继续本轮；另含数据看板、免费渠道页签。"

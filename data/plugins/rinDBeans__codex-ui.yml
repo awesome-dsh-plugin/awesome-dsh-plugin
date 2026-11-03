@@ -1,0 +1,6 @@
+url: https://github.com/rinDBeans/codex-ui
+name: rinDBeans/codex-ui
+category: theme
+description:
+  en: 'Codex-style appearance for the DSH Web interface: window edge hairlines and shadows, sidebar colours and row alignment, a model picker with a reasoning-effort power rail, composer and right-panel geometry, a full-page settings-modal pass, a Trajectory view exit, and a settings card for theme, accent, background, foreground, fonts, sidebar translucency and contrast.'
+  zh: 为 DSH Web 界面复刻 Codex 外观：窗口边缘发丝线与阴影、侧栏配色与行对齐、带推理强度功率轨的模型选择器、输入区与右栏几何、设置模态框全页改造、轨迹视图退出出口，以及可调主题、强调色、背景、前景、字体、侧栏半透明与对比度的设置卡。

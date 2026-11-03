@@ -1,0 +1,6 @@
+url: https://github.com/CHIANGANGSTER/dsh-session-window/tree/main/plugin/dsh-session-window-client
+name: CHIANGANGSTER/dsh-session-window#dsh-session-window-client
+category: session
+description:
+  en: 'Adds an Open in new window action to the DSH session menu when paired with the repository''s native Desktop shell patch.'
+  zh: '配合仓库的原生 Desktop 壳补丁，为 DSH 会话菜单添加“在新窗口中打开”。'

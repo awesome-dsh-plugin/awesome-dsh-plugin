@@ -1,0 +1,6 @@
+url: https://github.com/yinnho/aginxbrowser/tree/main/dsh-aginxbrowser
+name: yinnho/aginxbrowser#dsh-aginxbrowser
+category: browser
+description:
+  en: 'Web access for DSH agents: fetch JS-rendered or protected pages as clean markdown, aggregated search across 14 engines, and stateful interactive sessions (click, type, scroll, eval, screenshot) against a hosted or self-hosted Rust browser engine. Every session returns a live view URL so a human can watch the agent browse and take over with the mouse.'
+  zh: '给 DSH agent 的网页访问层：把 JS 渲染或受保护的页面抓成干净 markdown，聚合搜索 14 个引擎，并提供有状态交互会话（点击、输入、滚动、eval、截图），引擎可托管可自部署（Rust 单二进制）。每个会话带直播页 URL，人能实时围观 agent 浏览并用鼠标接管。'

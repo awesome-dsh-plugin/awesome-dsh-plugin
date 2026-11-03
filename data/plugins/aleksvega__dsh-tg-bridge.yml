@@ -1,0 +1,6 @@
+url: https://github.com/aleksvega/dsh-tg-bridge
+name: aleksvega/dsh-tg-bridge
+category: remote
+description:
+  en: 'Drive a dsh agent from Telegram: one chat topic per project directory, voice and photo input, ordered per-topic job queue, per-topic goals and task checklists, session forks and branches, live progress message, command menu in en/ru/zh, and control commands for models, plugins, sessions and logs. Search the plugin registry, read a package card before installing, and update every plugin with one tap. Requires a Telegram bot token and your numeric user id in allowedUserIds.'
+  zh: '通过 Telegram 驱动 dsh Agent：每个项目目录一个话题、语音与图片输入、按话题顺序执行的任务队列、每个话题的目标与任务清单、会话分支与切换、实时进度消息、中英俄三语命令菜单，以及模型、插件、会话与日志的管理命令。可搜索插件市场、安装前查看插件卡片、一键更新全部插件。需要 Telegram bot token，并把数字用户 id 填进 allowedUserIds。'

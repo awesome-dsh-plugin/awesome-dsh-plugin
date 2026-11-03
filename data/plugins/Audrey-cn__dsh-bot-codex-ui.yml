@@ -1,0 +1,6 @@
+url: https://github.com/Audrey-cn/dsh-bot-codex-ui
+name: Audrey-cn/dsh-bot-codex-ui
+category: ui
+description:
+  en: "Unified install for DS Bot and the Codex-style sidebar: one package that mounts both and fixes their layout conflicts (composer alignment, sidebar footer, account entry, conversation width)."
+  zh: "DS Bot 与 Codex 风格侧栏的合一安装：一个包同时挂载两者并修复共存时的布局冲突（输入框对齐、侧栏底部、账户入口、对话宽度）。"

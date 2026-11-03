@@ -1,0 +1,6 @@
+url: https://github.com/qrxf/dsh-workspace-graph
+name: qrxf/dsh-workspace-graph
+category: ui
+description:
+  en: 'Draggable bubble graph of DeepSeek Harness workspaces and sessions in the Web UI: workspaces are large bubbles, sessions are small ones, and lines show real membership. The canvas supports pan, zoom and fit; filters cover workspace, status, type and archive state; search covers workspace names, paths and session titles; native actions open or create sessions, rename workspaces, and archive or restore sessions. Layouts are saved in the browser.'
+  zh: 'DSH Web 界面中的工作区与会话可拖动气泡图谱：大泡为工作区、小泡为会话，连线表示真实所属关系。画布支持平移、缩放与适应；筛选覆盖工作区、状态、类型和归档情况；搜索覆盖工作区名称、路径与会话标题；原生操作可打开或新建会话、重命名工作区、归档或恢复会话。布局保存在浏览器本地。'

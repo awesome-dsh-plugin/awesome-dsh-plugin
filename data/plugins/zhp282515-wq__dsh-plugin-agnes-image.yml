@@ -1,0 +1,6 @@
+url: https://github.com/zhp282515-wq/dsh-plugin-agnes-image
+name: zhp282515-wq/dsh-plugin-agnes-image
+category: tools
+description:
+  en: 'Adds an agnes_image tool that calls the Agnes Image Flash models (2.5, 2.1, 2.0) for text-to-image, image-to-image and multi-image composition, and ships a settings-page console for the active model, default size and aspect ratio, output folder, API key and generation history.'
+  zh: '提供 agnes_image 工具，调用 Agnes Image Flash 系列模型（2.5 / 2.1 / 2.0）完成文生图、图生图与多图合成，并带一个设置页控制台管理当前模型、默认档位与画幅、输出目录、API Key 与生成历史。'

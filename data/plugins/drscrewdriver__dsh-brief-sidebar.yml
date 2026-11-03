@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-brief-sidebar
+name: drscrewdriver/dsh-brief-sidebar
+category: ui
+description:
+  en: 'A dsh-better-sidebar tab that renders a session brief — a todo board read from the `todos` projection plus a deliverables section listing the files written this turn — and hides the official todo panel above the composer while it is mounted.'
+  zh: 'dsh-better-sidebar 扩展：把会话简报渲染成右侧栏「概要」tab——来自 `todos` 投影的进展看板，加上回合内产物列表——并在挂载期间遮蔽 composer 上方的官方 todo 面板。'

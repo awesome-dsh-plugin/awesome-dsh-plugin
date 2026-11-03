@@ -1,0 +1,7 @@
+url: https://github.com/icyaaaww/dsh-soul
+name: icyaaaww/dsh-soul
+category: agi
+description:
+  en: 'Records recurring task corrections and tool failures locally, then compiles them into changes to eight harness components through explicitly started evolution, paired baseline/candidate checks, trial activation and rollback. Includes a budget and audit ledger; requires Node.js 24+ and a compatible DSH 0.2.1-rc.2 or later 0.2.x host.'
+  zh: '在本地记录重复的任务纠正与工具错误，通过显式启动的演化将经验编译为八类运行组件的改动，经过基线与候选成对验证、影子试用和回滚，并提供预算与审计账本。需要 Node.js 24+ 及兼容的 DSH 0.2.1-rc.2 起的 0.2.x 宿主。'
+tarball: https://github.com/icyaaaww/dsh-soul/releases/download/v1.0.0/dsh-soul-1.0.0.tgz

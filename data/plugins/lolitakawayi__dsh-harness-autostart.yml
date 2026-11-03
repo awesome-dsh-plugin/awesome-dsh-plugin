@@ -1,0 +1,8 @@
+url: https://github.com/lolitakawayi/dsh-harness-autostart
+name: lolitakawayi/dsh-harness-autostart
+category: dev
+icon: https://raw.githubusercontent.com/lolitakawayi/dsh-harness-autostart/main/assets/icon-180.png
+tarball: https://github.com/lolitakawayi/dsh-harness-autostart/releases/latest/download/dsh-harness-autostart.tgz
+description:
+  en: 'Adds one row to Settings → General with a switch that writes or removes a Windows logon startup entry for the DeepSeek Harness desktop app, and registers a dsh_autostart tool exposing the same status, enable and disable operations. Defaults to a single HKCU Run value, no admin rights; the startup-folder launcher mode adds an optional delay and launch arguments.'
+  zh: '在 设置 → 通用 里加一行开关，写入或删除 DeepSeek Harness 桌面版的 Windows 登录启动项，并注册 dsh_autostart 工具暴露同一组状态查询、开启与关闭操作。默认只写一条 HKCU Run 值，不需要管理员权限；启动文件夹模式额外支持延迟秒数与启动参数。'

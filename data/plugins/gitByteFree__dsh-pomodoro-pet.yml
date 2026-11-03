@@ -1,0 +1,7 @@
+url: https://github.com/gitByteFree/dsh-pomodoro-pet
+name: gitByteFree/dsh-pomodoro-pet
+category: ui
+description:
+  en: 'Pomodoro timer with four-quadrant tasks: bind focus rounds to a task, grow a desktop pet with EXP and achievements, and let the agent start rounds or propose tasks.'
+  zh: '番茄钟搭配四象限任务：专注轮次可绑定任务，桌宠随经验成长并解锁成就，Agent 可开始专注或提议任务。'
+icon: https://raw.githubusercontent.com/gitByteFree/dsh-pomodoro-pet/main/assets/icon-180.png

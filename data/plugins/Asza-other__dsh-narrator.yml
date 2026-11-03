@@ -1,0 +1,6 @@
+url: https://github.com/Asza-other/dsh-narrator
+name: Asza-other/dsh-narrator
+category: ui
+description:
+  en: 'Watches a turn for long silences and, once the threshold passes, injects a user message asking the model to state in prose what it is doing before carrying on, so the turn keeps going. The same text is mirrored in a lower-left overlay above the composer. The silence threshold and the minimum gap between reports are set in minutes, the prompt can be replaced wholesale, and it runs with no runtime dependencies. Requires DSH 0.2.1+ and Node.js 18+.'
+  zh: '盯着回合里的长时间沉默：超过阈值就注入一条用户消息，让模型先用正文说清正在做什么、做到哪了再接着干，回合不中断。这段原文同步显示在输入框上方的左下角浮窗。静默阈值与两次汇报的最小间隔都在设置卡里按分钟调，提示词可整段替换，零运行时依赖。需 DSH 0.2.1+ 与 Node.js 18+。'

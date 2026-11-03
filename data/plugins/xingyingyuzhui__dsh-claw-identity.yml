@@ -1,0 +1,6 @@
+url: https://github.com/xingyingyuzhui/dsh-claw-identity
+name: xingyingyuzhui/dsh-claw-identity
+category: session
+description:
+  en: 'Injects SOUL, IDENTITY, AGENTS, and TOOLS into Claw session prompts. Hard dep (install together or single install fails): dsh-claw-permissions.'
+  zh: 把 SOUL、IDENTITY、AGENTS、TOOLS 注入 Claw 会话提示词。硬依赖（需同装，否则单装会崩）：dsh-claw-permissions。

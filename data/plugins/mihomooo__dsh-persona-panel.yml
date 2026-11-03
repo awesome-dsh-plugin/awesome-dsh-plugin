@@ -1,0 +1,7 @@
+url: https://github.com/mihomooo/dsh-persona-panel
+name: mihomooo/dsh-persona-panel
+category: memory
+tarball: https://github.com/mihomooo/dsh-persona-panel/releases/latest/download/dsh-persona-panel.tgz
+description:
+  zh: "按工作区分开的记忆面板：人设卡、用户画像、事件与模型自述日记各存一份，每条都带原话与改动史、可以撤回；工作区之间能共用同一份记忆并随时切断；可选按人记录的他人画像；事件有上限、可标 ★。纯本地、不联网、零依赖。"
+  en: "A memory panel for DeepSeek Harness with one store per workspace: persona traits, notes about you, dated events, and a first-person diary the model writes and cannot edit. Every entry keeps the quote it came from and can be retracted; workspaces can share one memory and be split apart again; optional per-person profiles for group chats; a capped event list with ★ marks. Local only, no network, zero dependencies."

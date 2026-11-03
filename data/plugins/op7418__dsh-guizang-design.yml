@@ -1,0 +1,7 @@
+url: https://github.com/op7418/dsh-guizang-design
+name: op7418/dsh-guizang-design
+category: skill
+description:
+  en: 'Bundles five skills — web slide decks, social card images, typeset web pages, Chinese de-AI editing (humanizer-zh) and a writing-voice profile — with the first three sharing one design system (magazine and Swiss themes, contrast-checked brand colours). Adds a sidebar page that lists your works with thumbnails, opens a new session with a draft that reuses a work''s theme and layout, offers six content workflows, and collects the messages you sent in local dsh sessions as study material for the voice profile.'
+  zh: '打包五个 skill：网页 PPT、图文卡片、网页排版、中文去 AI 味（humanizer-zh）和语气档案，前三个共用一套设计系统（杂志风与瑞士风主题、按对比度校验的品牌色）。侧栏页面列出你做过的作品和缩略图，「做同款」会在新会话里按这份作品的主题和版式填好草稿；提供六个内容生产工作流；把你在本机 dsh 会话里发过的消息整理成语气档案的学习素材。'
+icon: https://raw.githubusercontent.com/op7418/dsh-guizang-design/main/icon.png

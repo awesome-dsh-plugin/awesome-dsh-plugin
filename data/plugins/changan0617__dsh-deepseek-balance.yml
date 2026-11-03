@@ -1,0 +1,6 @@
+url: https://github.com/changan0617/dsh-deepseek-balance
+name: changan0617/dsh-deepseek-balance
+category: usage
+description:
+  en: 'Floating DeepSeek account balance card for the dsh web UI: shows total, granted and topped-up balance per currency, refreshed every 60 seconds. Draggable and collapsible; the API key resolves from the card, the credentials service, or the DEEPSEEK_API_KEY environment variable, in that order.'
+  zh: 'dsh Web 界面的 DeepSeek 账户余额浮窗：按币种显示总余额、赠送余额与充值余额，每 60 秒刷新一次。可拖动、可折叠；API Key 按「卡片手动输入 → 凭据服务 → 环境变量 DEEPSEEK_API_KEY」顺序解析。'

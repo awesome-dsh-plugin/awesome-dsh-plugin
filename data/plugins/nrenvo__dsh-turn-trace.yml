@@ -1,0 +1,6 @@
+url: https://github.com/nrenvo/dsh-turn-trace
+name: nrenvo/dsh-turn-trace
+category: usage
+description:
+  en: 'Per-turn and per-step cost ledger for DeepSeek Harness: a Turns tab beside Chat and Trajectory with tokens, estimated cost, cache savings, and an inspector for tool arguments, raw results, and source. Client-only; prices are estimated from recorded model usage.'
+  zh: 'DeepSeek Harness 的逐轮、逐步成本账本：在 Chat 与 Trajectory 旁新增 Turns 页签，显示 token、估算费用、缓存节省，以及工具参数、原始返回与来源检查器。纯客户端，价格按已记录的模型用量估算。'
