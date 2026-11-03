@@ -1,0 +1,6 @@
+url: https://github.com/jiahui-huang1/dsh-linked-workspace
+name: jiahui-huang1/dsh-linked-workspace
+category: remote
+description:
+  en: 'SSH-backed remote directories and linked local⇄remote workspaces: read-only remote browsing, an editable linked workbench, bidirectional SFTP transfer, mirroring and a linked_workspace tool.'
+  zh: '把 SSH 连接变成 DSH 远程目录与本地⇄远端联动工作区：远程目录只读浏览，联动工作区可编辑、双向传输、镜像同步，并提供 linked_workspace 工具。'
