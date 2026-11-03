@@ -1,0 +1,6 @@
+url: https://github.com/qichuang321/dsh-github-link
+name: qichuang321/dsh-github-link
+category: tools
+description:
+  en: 'Links the current DeepSeek account in DSH to a GitHub identity through the local GitHub CLI, a personal access token, or OAuth device flow, then exposes a scoped github tool for listing repositories and reading, creating, or commenting on issues.'
+  zh: '把 DSH 中当前 DeepSeek 账号与本机 GitHub 身份关联，支持本机 GitHub CLI、Personal Access Token 和 OAuth 设备授权，并提供受控的 github 工具用于列出仓库、读取或创建 Issue、发表评论。'

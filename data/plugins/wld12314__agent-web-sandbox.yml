@@ -1,0 +1,6 @@
+url: https://github.com/wld12314/agent-web-sandbox
+name: wld12314/agent-web-sandbox
+category: security
+description:
+  en: 'Sanitizes fetched pages before the model reads them: strips hidden text, offsite images and inline data, wraps the rest in canary-tagged untrusted delimiters, and flags prompt injection.'
+  zh: '在内容进入模型之前净化抓取的网页：剥离隐藏文本、站外图片与内联数据，其余内容用带金丝雀的不可信分隔符包裹，并标记提示注入。'

@@ -1,0 +1,7 @@
+url: https://github.com/ZyxQl-Ala/dsh-decay-memory
+name: ZyxQl-Ala/dsh-decay-memory
+category: memory
+description:
+  en: 'Agent memory with a forgetting curve: entries gain weight when mentioned, shrink when forgotten, and pinned entries never decay. Six tools and a settings panel.'
+  zh: '带遗忘曲线的代理记忆：被提起就变牢、不提就变短，📌 的永不淡忘。六个工具 + 设置面板。'
+tarball: https://github.com/ZyxQl-Ala/dsh-decay-memory/releases/download/v0.3.0/dsh-decay-memory.tgz

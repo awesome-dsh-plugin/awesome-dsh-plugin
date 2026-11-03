@@ -1,0 +1,6 @@
+url: https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-code-wiki
+name: kialajin-l/DSH_Plus#dsh-code-wiki
+category: docs
+description:
+  en: "Builds a per-project code wiki: README summary, docs tree, tech stack, git activity and language composition, cached locally and exportable as Markdown."
+  zh: "项目 Wiki 生成器：聚合 README 摘要、docs 树、技术栈、git 活跃度与语言构成，本地缓存并可导出 Markdown。"

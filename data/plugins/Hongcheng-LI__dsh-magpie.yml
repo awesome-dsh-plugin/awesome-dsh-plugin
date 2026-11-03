@@ -1,0 +1,6 @@
+url: https://github.com/Hongcheng-LI/dsh-magpie
+name: Hongcheng-LI/dsh-magpie
+category: usage
+description:
+  en: See the quota of every AI account connected to your local Magpie gateway at a glance, with usage breakdowns by day/week/month.
+  zh: 一键查看本机 Magpie 网关下全部 AI 账号的额度，并支持按天/周/月查看用量明细。

@@ -1,0 +1,6 @@
+url: https://github.com/Dofang-C/dsh-file-integrity-check
+name: Dofang-C/dsh-file-integrity-check
+category: security
+description:
+  en: Scan and fix Low integrity labels, non-inherited S-1-4 sandbox ACEs, and related Everyone deny ACEs in DSH workspaces on Windows. Maps live DSH workspaces, defaults to read-only, repairs after confirmation, verifies the result, and keeps one replaceable ACL rollback record per workspace.
+  zh: 扫描并修复 Windows 上 DSH 工作区中的 Low 完整性标签、非继承 S-1-4-* 沙箱授权 ACE 及关联的 Everyone 拒绝项。按 DSH 实时工作区映射，默认只读，确认后修复并复扫校验；每个工作区保留一条可替换的 ACL 回滚记录。

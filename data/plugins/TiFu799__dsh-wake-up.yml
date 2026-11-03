@@ -1,0 +1,6 @@
+url: https://github.com/TiFu799/dsh-wake-up
+name: TiFu799/dsh-wake-up
+category: session
+description:
+  en: 'Resumes a dormant DSH session on demand: when a session is not currently live, it is resumed from disk with the provider/model route it last used, so external integrations (chat bridges, schedulers, webhooks, other plugins) can deliver into it instead of failing with "that session is not alive". Exposes an HTTP endpoint, a wake_session tool and a ctx.wakeUp service. Resuming only reads history back into memory and spends no model request by itself.'
+  zh: '按需叫醒休眠的 DSH 会话：当前没活着的会话会带着它上次用的 provider/model 路由从磁盘 resume 回来，让 QQ 通道、定时任务、webhook、别的插件这类外部集成能正常投递，而不是撞上「那间会话现在没活着」。提供 HTTP 端点、wake_session 工具和 ctx.wakeUp 服务；resume 只把历史读回内存，本身不消耗模型请求。'

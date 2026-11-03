@@ -1,0 +1,6 @@
+url: https://github.com/zhangj1164/dsh-mega-plugins/tree/main/packages/client/ui-memo-settings
+name: zhangj1164/dsh-mega-plugins#dsh-client-ui-memo-settings
+category: ui
+description:
+  en: "A Settings page for the memo plugin suite: edits the AI route, the archived-session summary language, length and copy, and the GitHub repository URL through DSH Web's own Settings surface, with per-field reset and a save that reaches the running memo service without a restart."
+  zh: "备忘插件套件的设置页：在 DSH Web 自带的 Settings 界面里修改 AI 路由、归档会话总结的语言、长度与文案，以及 GitHub 仓库地址，支持逐字段恢复默认，保存后无需重启即作用于运行中的备忘服务。"
