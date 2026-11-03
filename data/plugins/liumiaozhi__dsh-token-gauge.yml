@@ -1,0 +1,6 @@
+url: https://github.com/liumiaozhi/dsh-token-gauge
+name: liumiaozhi/dsh-token-gauge
+category: usage
+description:
+  en: 'Sidebar token gauge for DeepSeek Harness: live output-speed dial, current-session and today token totals, estimated spend from DeepSeek list prices with half price off-peak, and a 70-100% cache-hit dial, with single- and dual-gauge layouts and four skins.'
+  zh: '侧边栏 Token 仪表盘：实时输出速度表、当前会话与今日 Token 用量、按 DeepSeek 列表价（峰谷半价）估算的费用，以及 70–100% 缓存命中率表盘，支持单表/双表两种布局与四种皮肤。'
