@@ -208,6 +208,7 @@ dsh plugin --profile web add dshmarket
 - [aadmin61-design/dsh-selection-chat](https://github.com/aadmin61-design/dsh-selection-chat) — 在输入框上方添加划词引用卡片，并提供临时原生侧边聊天，可通过保存按钮将会话保留到来源工作区。
 - [Aafff623/dsh-callout](https://github.com/Aafff623/dsh-callout) — 把 DSH 助手 Markdown 里合格的 `> [!NOTE]`、TIP、IMPORTANT、WARNING、CAUTION 块引用渲染成跟随主题的 GitHub 风格提示卡片，不改会话存档。
 - [Aafff623/dsh-keyboard-manager](https://github.com/Aafff623/dsh-keyboard-manager) — 为 DSH Web UI 提供快捷键：Ctrl+Q 切换左侧栏，Ctrl+E 切换右侧栏，Ctrl+S 打开设置。物理键码可在 profile 补丁中覆盖。
+- [AaronOhO/dsh-plugin-wenkai-font](https://github.com/AaronOhO/dsh-plugin-wenkai-font) — 内置霞鹜文楷（LXGW WenKai）字体的插件：零配置把网页界面与对话文字切换为楷体风格，优先使用系统已安装字体，未安装时按需加载包内离线字体。
 - [abbccdd/dsh-panel-tint](https://github.com/abbccdd/dsh-panel-tint) — 为 dsh web 的侧边栏、正文框和输入框提供独立的不透明度控制。
 - [AbelKeithsun/dsh-question-nav](https://github.com/AbelKeithsun/dsh-question-nav) — DSH Web UI 会话内提问导航：对话栏左/右缘（可在设置中切换）的圆点迷你地图，一个圆点对应一个用户提问——悬停显示全文，点击跳转到该提问。
 - [acdsh4869/dsh-deepseek-web-relay](https://github.com/acdsh4869/dsh-deepseek-web-relay) — 在 DSH 左侧边栏添加原生菜单项，一键打开 chat.deepseek.com 独立窗口（登录态持久化），支持 DSH 与网页端双向划词互传。
@@ -1215,6 +1216,7 @@ dsh plugin --profile web add dshmarket
 - [picklerick422/dsh-motion](https://github.com/picklerick422/dsh-motion) — 为 DeepSeek Harness 的弹窗与浮层提供动效：近距浮层从触发按钮液态长出、远距弹窗从下方浮出、连贯气泡切换、图片放大 FLIP，并带可实时预览的设置页。
 - [pingg02/dsh-plugins#dsh-desktop-entry](https://github.com/pingg02/dsh-plugins/tree/main/dsh-desktop-entry) — 创建 Windows 桌面快捷方式，必要时启动 DeepSeek Harness，并用 Chrome 或 Edge 应用窗口打开 Web UI。
 - [pingg02/dsh-plugins#dsh-quote-selection](https://github.com/pingg02/dsh-plugins/tree/main/dsh-quote-selection) — 引用选中的对话文本并添加可选备注，在发送下一条消息时自动附带引用内容。
+- [pkui1mpression-design/dsh-sidebar-installed-plugins](https://github.com/pkui1mpression-design/dsh-sidebar-installed-plugins) — 侧边栏面板：列出当前 profile 已安装的插件，每行带一个启用/停用开关。
 - [plolpl789/dsh-raw-html](https://github.com/plolpl789/dsh-raw-html) — 让 DeepSeek Harness Web GUI 把 agent 输出的 HTML 渲染成真实界面，支持视觉卡片、KaTeX 公式、Mermaid 图表与内置开源字体，并向 agent 注入设计规范。
 - [plyflai/dsh-ux-plus](https://github.com/plyflai/dsh-ux-plus) — DSH Web 对话界面的 UX 增强包：一个插件持续收纳各种界面小改进，每项都有独立开关，位于 设置 → UX Plus，改动即时生效——对话字号与阅读宽度（设置 → 通用 → 对话区）、会话行菜单可复制会话 ID 或把当前对话继承到所选模型的新会话里继续、工作区与会话行按最近活跃排序（闲置超过 24 小时自动收起并显示上次更新时间）、已结束的提问卡片默认展开。开关列表由插件自身的功能注册表生成，功能会持续增加，不固定在某个数量。
 - [polychromate/dsh-sidebar-footer-rows](https://github.com/polychromate/dsh-sidebar-footer-rows) — 把侧边栏底部的动作按钮改成一行一个、铺满整行，并让各行的图标落在同一条竖线上。
@@ -3062,6 +3064,7 @@ dsh plugin --profile web add dshmarket
 - [yoshino-xiao7/dsh-grok-provider](https://github.com/yoshino-xiao7/dsh-grok-provider) — Grok Build 模型接入插件：使用官方 CLI 浏览器登录，动态发现账号可见模型，支持流式推理、工具调用、额度与模型能力设置页。
 - [young-tim/dsh-llm-governor](https://github.com/young-tim/dsh-llm-governor) — 为 DSH 提供多模型访问控制、月度 Credits、手动/质量优先/额度优先/自动路由、失败重路由与 Usage 审计。
 - [yu-wenchao/dsh-opencode-free-models#dsh-opencode-free-models](https://github.com/yu-wenchao/dsh-opencode-free-models/tree/master/plugin/dsh-opencode-free-models) — DSH free model provider plugin with 20+ models including Gemini, MiMo, GLM, etc.
+- [yuchaos0927/dsh-opencode-local](https://github.com/yuchaos0927/dsh-opencode-local) — 通过本机已安装的 OpenCode 客户端的本地回环接口接入其免费模型：首次使用时才启动子进程，OpenCode 自身不执行工具——它发起的调用被交给同名的 DSH 工具执行，没有对应工具时则拒绝，无需 API Key。
 - [Yuedalao/dsh-connect-minimax](https://github.com/Yuedalao/dsh-connect-minimax) — 读取本机 MiniMax Code 登录态，经本地回环反向代理接入 DSH；不保存 API Key，也不会退出登录。
 - [Yuer6327/ModelTester](https://github.com/Yuer6327/ModelTester) — 在 dsh 网页端挂载模型归属面板，用纯本地、零联网的结构指纹匹配（模板特殊 token 泄漏、glitch 金丝雀、tokenizer usage 向量比对）判断当前会话的回答最像 29 家 AI 厂商中的哪一家，每个结论附带可展开的证据账本，另附 12 探针主动取证电池。
 - [YUEYUEXYS/dsh-think-ultra](https://github.com/YUEYUEXYS/dsh-think-ultra) — 将每个请求固定到原生 max effort 档位，并提供按模型与模式隔离的推理深度面板：0-20 能力滑块、独立的迅流（Velocity）/极境（Apex）配置档与离线推理工具箱。以混淆构建交付，允许商用，禁止逆向。
