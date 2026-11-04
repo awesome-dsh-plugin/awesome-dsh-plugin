@@ -3297,6 +3297,7 @@ dsh plugin --profile web add dshmarket
 - [caoqinnan-web/organize-workspace-sessions](https://github.com/caoqinnan-web/organize-workspace-sessions) — 整理 DeepSeek Harness 工作区会话，按 类别｜主题 重命名并给出归档、改名与待判断建议。
 - [Castor6/dsh-auto-workspace](https://github.com/Castor6/dsh-auto-workspace) — 为 dsh 提供无项目聊天：不选工作区创建的会话会获得自己的目录（~/Documents/DSH/<日期>/chat-NN），重新打开会话时复用，并留在「未分组」而不会变成侧栏项目；新建会话的 Hero 上新增悬浮清除徽标与「不在工作区中工作」一行，另有一个仅存在于浏览器端的哨兵工作区，让该 Hero 及其输入框保持可用。
 - [CatLollipop/dsh-parallel-sessions](https://github.com/CatLollipop/dsh-parallel-sessions) — DeepSeek Harness 并行会话协调：列出并行会话、在会话之间转发带发起方归属的消息，并在任务阶段冲突时暂停或恢复另一个会话。
+- [CC19990113/dsh-plugin-sessiongraph](https://github.com/CC19990113/dsh-plugin-sessiongraph/tree/main/packages/bundle) — 本机全部会话的全文检索：sessiongraph 跨工作区查找对话，中文两字词也能命中，sessiongraph_index 负责建索引。
 - [cckbc/dsh-session-recycle-bin](https://github.com/cckbc/dsh-session-recycle-bin) — DeepSeek Harness 会话回收站：从会话行菜单删除（或从侧栏标题栏批量移入）后，会话进入回收站，默认保留 15 天（设置里可选 7 / 15 / 30 天），到期条目自动清除；回收站表格显示每条还剩几天，可还原回原工作区，也可单条彻底删除或清空。
 - [Cerbur/clutch-dsh#clutch-dsh-title](https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-title) — 基于语义 prompt 字段与自定义模板的 DeepSeek Harness 确定性会话标题生成插件。
 - [cfanzx/dsh-compact-relay](https://github.com/cfanzx/dsh-compact-relay) — DeepSeek Harness 输入框上下文指示器：分段显示会话占用、压缩判断点与 DSH 原生自动压缩线（越线红闪）。支持预览后确认压缩（/bc）、无痕交接（旧会话归档为「历史 N」、新会话继承原名，输入框上方接力条可回看完整交接链并双向跳转）、锁定消息防压缩与失效标注。设置里可配阈值、配色与交接后自动归档开关。
@@ -7527,6 +7528,7 @@ dsh plugin --profile web add dshmarket
 - [CAI-MH/dsh-plugin-forge](https://github.com/CAI-MH/dsh-plugin-forge) — 在任意工作区按 dph 格式脚手架 DSH 本地插件，并维护踩坑经验库持续修正开发。
 - [caizhihaoczh/dsh-profile-multica](https://github.com/caizhihaoczh/dsh-profile-multica) — 通过版本化 JSONL 进程协议将 Multica 接入 DeepSeek Harness。
 - [Cavan-Ou/dsh-observation-journal](https://github.com/Cavan-Ou/dsh-observation-journal) — DeepSeek Harness 零侵入运行事实遥测：每个会话自动把任务/模型档位/工具/失败/时长/状态写入人机共读观测卡并附统计区（纯观察者——零工具、零 LLM、零注入）。
+- [CC19990113/dsh-plugin-codegraph](https://github.com/CC19990113/dsh-plugin-codegraph/tree/main/packages/bundle) — tree-sitter 代码图谱：codegraph 查声明、调用者、被调用关系、变更影响与调用路径，codegraph_index 建索引，覆盖 18 种语言。
 - [ccneedb/dsh-information-environment-governance](https://github.com/ccneedb/dsh-information-environment-governance) — 治理代理在项目中持续接触的持久信息与项目约束：项目定位与范围、信息与文档生命周期、持久工作区变更；通过一个附加的系统提示章节与确定性的运行时检查落地。
 - [cdxiaodong/dsh-llm-inspector](https://github.com/cdxiaodong/dsh-llm-inspector) — 统一 LLM 请求/响应检查器：调 reasoning effort、外部思考(think)导出、流量与包分析。
 - [CH4ACKO3/dsh-render-engine#code-render](https://github.com/CH4ACKO3/dsh-render-engine/tree/main/packages/code-render) — 面向 DSH Web 插件的转义与主题响应 HTML 代码块渲染服务，基于结构化语法高亮 token，并保留源码换行符。
@@ -8501,6 +8503,7 @@ dsh plugin --profile web add dshmarket
 - [Eveneve-night/dsh-plugin-steward](https://github.com/Eveneve-night/dsh-plugin-steward) — 插件管家：在对话输入框上加入插件面板，用来管理本机已装的 DSH 插件——列出全部插件、全局启停、逐个编辑插件设置、把某个插件的工具或 MCP 服务器只在这一个对话里对模型隐藏，还能让模型读插件自身的 README 与包信息生成中文标签。面板可拖动并记住位置。
 - [f-infinite-z/dsh-plugin-ops#dsh-plugin-ops-bundle](https://github.com/f-infinite-z/dsh-plugin-ops/tree/main/packages/bundle) — dsh 插件树的启动前体检与修复——十条跟随启动器运行时解析的静态规则、启动失败后的故障归因、先在隔离实例复验再落地的白名单可逆修复、点名目标版本会跳过哪些插件的升级预演，以及带插件行管理面板与历次故障 RAG 知识库的设置界面。
 - [flysusdjd/dsh-rank-board](https://github.com/flysusdjd/dsh-rank-board) — 对前 400 个候选按 npm 实时下载量排序、展示前 200 名，支持日榜、周榜、月榜。
+- [FrogFlaying/dsh-onshelf](https://github.com/FrogFlaying/dsh-onshelf) — 扫描本地插件、体检收录规则、生成投稿材料，一键开 PR 到 awesome-dsh-plugin。
 - [gsmqmwq1/dsh-skills-market](https://github.com/gsmqmwq1/dsh-skills-market) — 技能索引浏览器，支持关键词检索、自定义中文别名与输入框多技能快捷插入。
 - [Han-1413141/dsh-autocompose](https://github.com/Han-1413141/dsh-autocompose) — 根据任务查找并组合 DSH 插件，打开可继续对话的独立环境，或将方案中的插件安装到当前配置。
 - [Harzva/dsh-cli-store](https://github.com/Harzva/dsh-cli-store) — 包含 64 个条目的外部 CLI 清单，支持受限公开来源发现，并通过 DSH 工具和独立命令行提供受保护的包管理器或官方手动安装。
