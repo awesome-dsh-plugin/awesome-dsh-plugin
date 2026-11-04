@@ -1,0 +1,7 @@
+url: "https://github.com/yjl9903/AnimeGarden/tree/main/plugins/dsh"
+name: "yjl9903/AnimeGarden#dsh"
+category: tools
+description:
+  en: "Anime Garden for DSH: search anime torrent resources from 動漫花園, 蜜柑计划, 萌番组 and ANi inside DSH — via chat, a sidebar panel with fansub and type filters, a seasonal calendar, and an in-app floating player."
+  zh: "Anime Garden 的 DSH 插件：在 DSH 内搜索来自動漫花園、蜜柑计划、萌番组和 ANi 的动画 BT 资源——支持对话搜索、按字幕组和类型筛选的侧边栏面板、新番周历，以及站内浮窗播放。"
+icon: "https://raw.githubusercontent.com/yjl9903/AnimeGarden/main/plugins/dsh/icon.png"
