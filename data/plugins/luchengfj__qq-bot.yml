@@ -1,0 +1,7 @@
+url: https://github.com/luchengfj/qq-bot
+name: luchengfj/qq-bot
+category: identity
+description:
+  en: 'QQ bot channel plugin for DeepSeek Harness: OneBot v11 private and group messages with images, answered by the Harness-selected model (no API key) or an OpenAI-compatible vision endpoint, with a built-in DSH panel for QR login, one-click NapCat setup, status, logs, conversation history and per-user long-term memory.'
+  zh: '把 DeepSeek Harness 接入 QQ 的通道插件：基于 OneBot v11，接收私聊与群消息（含图片），默认用 Harness 当前选中的模型回答（免密钥），也可切换 OpenAI 兼容视觉端点；内置 DSH 面板提供扫码登录、NapCat 一键安装与接入、状态、日志、会话上下文与按用户隔离的长期记忆。'
+icon: https://raw.githubusercontent.com/luchengfj/qq-bot/main/assets/icon-180.png
