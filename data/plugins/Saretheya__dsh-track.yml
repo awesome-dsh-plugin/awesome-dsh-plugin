@@ -1,0 +1,6 @@
+url: https://github.com/Saretheya/dsh-track
+name: Saretheya/dsh-track
+category: memory
+description:
+  zh: "让结论活过上下文压缩：模型把任务状态写成检查点，插件把它注入到 DSH 系统提示词首节点——那里永不参与压缩，所以压缩 100 次结论也不丢。四档注入（0/95/175/≤12000 字符）按会话关系收放；检查点写在插件自有目录，工作区一个文件都不多（本包为同一实现的备选名 dsh-track，四名任选其一安装。）"
+  en: "Keep conclusions alive across context compaction: the model writes a task checkpoint and the plugin re-injects it into the system prompt's first node — the span compaction never touches, so it survives any number of compactions. Four-tier injection (0/95/175/≤12000 chars) scales with session relatedness; checkpoints live in the plugin's own folder, never in your workspace (Published under this alternate name too; install whichever you prefer.)"
