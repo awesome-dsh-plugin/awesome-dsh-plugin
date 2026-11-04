@@ -1,0 +1,6 @@
+url: https://github.com/Soren-ABT/dsh-knowledge
+name: Soren-ABT/dsh-knowledge
+category: memory
+description:
+  en: 'Knowledge base for DeepSeek Harness with document import, BM25/vector hybrid retrieval, local embeddings and OCR, agent tools, and a browser management panel.'
+  zh: 'DeepSeek Harness 知识库插件，支持文档导入、BM25 与向量混合检索、本地向量模型与 OCR、模型工具及浏览器管理面板。'
