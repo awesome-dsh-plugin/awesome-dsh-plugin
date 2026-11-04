@@ -2,5 +2,5 @@ url: https://github.com/sleepwalk2887/transproof/tree/main/transproof-plugin
 name: sleepwalk2887/transproof#transproof-plugin
 category: tools
 description:
-  en: TransProof translation proofreader for DeepSeek Harness: full web UI plus a local, non-networked run-local-check agent tool.
-  zh: 译校助手 TransProof 的 DSH 插件：完整网页界面 + 不联网的「跑本地体检」Agent 工具。
+  en: 'TransProof translation proofreader for DeepSeek Harness: full web UI plus a local, non-networked run-local-check agent tool.'
+  zh: '译校助手 TransProof 的 DSH 插件：完整网页界面 + 不联网的「跑本地体检」Agent 工具。'
