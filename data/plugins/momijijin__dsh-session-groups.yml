@@ -1,0 +1,8 @@
+url: https://github.com/momijijin/dsh-session-groups
+name: momijijin/dsh-session-groups
+category: ui
+icon: https://raw.githubusercontent.com/momijijin/dsh-session-groups/main/assets/icon-180.png
+tarball: https://github.com/momijijin/dsh-session-groups/releases/download/v0.3.0-beta.73/dsh-session-groups-0.3.0-beta.73.tgz
+description:
+  en: 'Plugin-owned grouping layer for the DSH sidebar: nest sessions from different workspaces into draggable groups without changing workspace membership or logs.'
+  zh: '在 DSH 侧栏官方工作区管理之上增加一层独立自由分组：不同工作区的会话可归入同一多层分组，支持拖拽、搜索、恢复和可选 AI 控制，不改变原工作区归属与日志。'
