@@ -363,6 +363,7 @@ dsh plugin --profile web add dshmarket
 - [bingomu/dsh-image-zoom](https://github.com/bingomu/dsh-image-zoom) — DeepSeek Harness 的聊天图片查看器：滚轮 / 触控板捏合以指针为中心缩放，双指 / 拖动平移，支持图集切换、下载按图片说明与时间戳自动命名，以及用系统默认应用打开工作区原图。
 - [bitterSmilezzz/dsh-model-selector](https://github.com/bitterSmilezzz/dsh-model-selector) — 增强 DSH 输入区的模型选择器：可搜索供应商分组、键盘与无障碍支持，以及内联推理强度滑杆。
 - [bitxeno/dsh-github-picker](https://github.com/bitxeno/dsh-github-picker) — 输入框右下角 GitHub 图标打开当前仓库的 issue/PR 搜索弹窗，数据来自本机 gh CLI，点选即以 URL 或 @owner/repo#number 形式插入引用。
+- [Biu-Bong/dsh-menu-hidden](https://github.com/Biu-Bong/dsh-menu-hidden) — 收起 DSH 里重复的 DeepSeek 账号 / 官方 API 入口，隐藏侧边栏项目、账号菜单的意见反馈与退出登录，给应用菜单补上刷新与重启；推理等级一键写死，新供应商新模型自动补齐。
 - [BlackBearCC/dsh-pet-sprite](https://github.com/BlackBearCC/dsh-pet-sprite) — 聊天区里的像素小宠物：从蛋孵化三选一，也可用一句话描述让 LLM 画出自定义形象，自动在消息气泡间平台跳跃，支持 WASD 操控与拖拽，用已配置的模型角色扮演陪聊，养成系统（心情/电量/健康、等级、商店）由真实 token 消耗驱动。
 - [Blackman99/codsh#codsh-bundle](https://github.com/Blackman99/codsh/tree/main/packages/bundle) — 基于 DeepSeek Harness 的终端编码 Agent，提供全屏备用屏幕 UI、轮次感知的会话导航，以及将一句话需求经过规格、TDD 和验收复跑的分阶段 /ship 流程。
 - [blacktaoK/dsh-skill-zh-overlay](https://github.com/blacktaoK/dsh-skill-zh-overlay) — 给 dsh-skill-mcp-panel 的技能卡片加中文说明：展开卡片时显示一句话中文速览、分类标签和几条要点，面板原本渲染的英文描述折进「原文」按钮。手写映射表里没有的英文技能，由宿主用你当前的默认模型按需现场生成并落盘缓存，缓存按原文哈希失效，所以新装的技能不用再手工补条目。技能自带描述已是中文的自动跳过。
@@ -4657,7 +4658,7 @@ dsh plugin --profile web add dshmarket
 - [Huang-zhishi/dsh-plugin-call-trace](https://github.com/Huang-zhishi/dsh-plugin-call-trace) — 持久化模型工具调用轨迹记录器：每次工具调用落盘为 JSONL（重启不丢），提供结构化 call_trace 查询工具与 callTraceHistory 服务，支持文件大小轮转，附可选浮层画布 UI。
 - [huangfuren/dsh-localsend](https://github.com/huangfuren/dsh-localsend) — 在 DSH 对话中通过 LocalSend v2 协议把文件/文件夹发到局域网内其它机器，或生成一次性浏览器下载链接（接收方无需安装任何软件）。零配置开箱即用，兼容 dsh 0.1.1-rc.2 与 0.1.3-alpha.1。
 - [HUANGjiale123-bit/dsh-desktop-control#dsh-desktop-control](https://github.com/HUANGjiale123-bit/dsh-desktop-control/tree/main/plugin) — Windows 桌面观察与操作：无障碍树、截图、OCR 兜底、鼠标键盘，带会话级授权与 ESC 急停；适用于电脑操作、桌面自动化与 GUI 自动化场景。
-- [huangxiaoliang/deepclean-mydisk-plugin](https://github.com/huangxiaoliang/deepclean-mydisk-plugin) — 扫描 macOS 与 Windows 磁盘占用并按风险分档，提供空间分布与相似照片；清理先移入废纸篓或隔离区并可撤销，永久删除需再次确认。
+- [huangxiaoliang/deepclean-mydisk-plugin](https://github.com/huangxiaoliang/deepclean-mydisk-plugin) — 电脑清理工具：磁盘清理、空间清理、Mac清理、Windows清理；缓存、残留与相似照片，扫描只读，清理先移入废纸篓或隔离区并可撤销。
 - [huaxiren6/DSH-EmailReader](https://github.com/huaxiren6/DSH-EmailReader) — 面向密码认证被禁用邮箱的 OAuth2 IMAP 读取插件：微软 2024 年起停用个人 Outlook 的 IMAP 基本认证，本插件改用 refresh-token OAuth2（XOAUTH2）自动续期，Gmail 走应用密码并可选本地 HTTP/SOCKS 代理；工具注册为 ol_email_*，可与市场版 dsh-email 共存不撞名。
 - [huaxiren6/DSH-SmsWebhook](https://github.com/huaxiren6/DSH-SmsWebhook) — DSH 短信转发 webhook：手机端转发 App（短信转发器/Tasker 等）把短信 POST 到本地 HTTP 端点，插件落盘 JSONL 并暴露 sms_recent / sms_search 工具，让 agent 在任务中直接读取短信验证码；自动提取 4–8 位 OTP，支持关键词过滤，可走局域网或 Tailscale。
 - [hui-xu-ai/wensu#dsh-wensu](https://github.com/hui-xu-ai/wensu/tree/main/packages/dsh-wensu) — 只读的知网题录检索：四个 MCP 工具（search / detail / export / status）通过原生消息桥驱动你自己的 Edge/Chrome，不下载全文，最小间隔 3 秒，每日上限 300 次。需要先 pip install wensu，运行 wensu setup 并在浏览器加载扩展，四个工具才会出现。
@@ -4761,6 +4762,7 @@ dsh plugin --profile web add dshmarket
 - [kaixinguo360/dsh-script-manager](https://github.com/kaixinguo360/dsh-script-manager) — DSH 自定义操作脚本管理器，将验证过的操作流程固化为可复用的脚本，用 /script 直接运行或注册为 Agent 工具，支持参数化脚本、执行预期声明、执行历史记录。
 - [Kaixxrua/dsh-aigc-radar](https://github.com/Kaixxrua/dsh-aigc-radar) — 检索 AIGC Radar 精选 GitHub AI 项目库（500 Stars 准入、中英双语标签、星标增长快照），经其 MCP 端点调用并以原生结果卡片展示；agent/pre-step 监听器在 agent 动手写代码前主动建议复用检查。
 - [kaka-crypto/dsh-disk-guard](https://github.com/kaka-crypto/dsh-disk-guard) — 把 DSH 的下载、产物、缓存与临时文件重定向到用户指定目录（自动挑剩余空间最大的非 C 盘），向每个会话注入路径纪律提示词，并自带 disk_guard 工具做状态查看与清理——防止 C 盘被撑爆。
+- [Kandecho/Video-Reader#dsh-video-reader](https://github.com/Kandecho/Video-Reader/tree/main/adapters/dsh) — 复用现有本地安装，为 DSH 接入带时间的视频材料、通用队列/历史和 Scroll 账号工作流。
 - [KannaKuron/dsh-gitbash-shell](https://github.com/KannaKuron/dsh-gitbash-shell) — Windows 插件：将宿主 shell 执行器换成 Git for Windows bash（全部 Agent 模式生效），并物化标准/极简/PTC/创造四个 Git Bash 预设变体（逐文件 sha256 标记、用户修改保留）；发布 gitBash 能力服务，让配套预设自动选用 Git Bash；若装有 dsh-better-sidebar，还会通过对方官方设置补丁口把其终端（UI 标签与模型 terminal_* 工具）一并切到 Git Bash。
 - [KannaKuron/dsh-ptc-cordis-preset](https://github.com/KannaKuron/dsh-ptc-cordis-preset) — 为 DeepSeek Harness 提供的 Agent 预设：在 PTC 编码模式之上叠加自引用 Cordis 工具集（动态插件、运行时检视）与预设编写技能；物化文件带逐文件 sha256 标记，用户改过的预设升级与卸载时都不会被覆盖。
 - [KB1SLN-Labs/dsh-linear](https://github.com/KB1SLN-Labs/dsh-linear) — DeepSeek Harness 的 Linear 工具：26 个基于 Linear GraphQL API 的模型工具（议题、评论、关联、团队、状态、标签、项目、周期、用户），外加 linear_graphql 逃生口。需自备 Linear 个人 API token。
@@ -5896,6 +5898,7 @@ dsh plugin --profile web add dshmarket
 - [Renji004/dsh-omni-vision](https://github.com/Renji004/dsh-omni-vision) — 为纯文本模型装上本地眼睛：eyes_render 在 Web 界面画布上绘制文字/图形/Mermaid，eyes_paste 接收用户粘贴的图片，eyes_ocr 用 Windows 自带 OCR 离线读文字，eyes_analyze 把像素解析成结构化数据，全程无需视觉模型。
 - [ruby1304/dsh-vision-subagent](https://github.com/ruby1304/dsh-vision-subagent) — 为任意 DSH 路由装上眼睛：Web 输入框贴图按意图自动聚焦分析，视觉子代理代读工作区图片，原图可随时物化编辑。
 - [s3yf1337/dsh-easyvision](https://github.com/s3yf1337/dsh-easyvision) — 让纯文本模型拥有视觉：describe_image 工具调用 dsh 模型列表中的视觉模型描述图片，走 harness 自身的 LLM 运行时。
+- [SAOS-3624/dsh-see-now](https://github.com/SAOS-3624/dsh-see-now) — 让只有文字的智能体「看」实时屏幕或摄像头：每帧按画面变化量打分，只把真正变了的帧拼成一张带编号、带音轨条的宫格图——看视频、看演示、看游戏都行，token 只花在变了的地方。
 - [SAOS-3624/dsh-video-storyboard](https://github.com/SAOS-3624/dsh-video-storyboard) — 把视频（本地文件，或 B 站 / yt-dlp 链接）压成一张可寻址的宫格图：每格烧编号、对应精确时间、挂台词，底部还有同时间轴的音频包络；video_zoom 可对任意窗口高清重看——纯文本模型因此能「看」视频，而不是读别人写的摘要。
 - [say007go/dsh-imagegen](https://github.com/say007go/dsh-imagegen) — DSH文生图/图生图插件：兼容OpenAI风格生图接口，默认适配多米API；标准OpenAI需调整协议、图生图模式和尺寸；文生图和URL参考图无需COS，本地参考图可压缩后存COS；支持自定义提示词后缀。
 - [Scorp1o117/dsh-tool-vision](https://github.com/Scorp1o117/dsh-tool-vision) — 通过 inspect_image 工具将本地图片或 HTTP(S) 图片链接发送至配置的 OpenAI 兼容视觉端点，并将文字结果带回对话。
@@ -6022,9 +6025,11 @@ dsh plugin --profile web add dshmarket
 - [qishuilalala/dsh-voice-mode#dsh-voice-mode](https://github.com/qishuilalala/dsh-voice-mode/tree/main/plugin/dsh-voice-mode) — DeepSeek Harness Web UI 全双工语音对话：按钮或 Ctrl+Shift+V 进入，持续聆听（停顿自动发送）或按住说话，zipformer2 流式识别入可编辑草稿、可选唤醒词；回复按句 Edge TTS 朗读并显示实时字幕，开口即打断播放与回合（真 barge-in）；识别模型本地推理、Edge TTS 在线合成，无需 API Key。
 - [QT-Chen/dsh-mic-input](https://github.com/QT-Chen/dsh-mic-input) — 输入框麦克风语音输入：浏览器 Web Speech API 实时转写，自动去重/续听、智能标点，支持语言与自动发送设置。
 - [radres/dsh-plugin-call-me](https://github.com/radres/dsh-plugin-call-me) — 通过 CallKit 打电话到你的手机：`call_me` 与 `text_me` 工具，并可在回合结束或等待审批时来电，语音回答转写后送回会话。
+- [red000000/dsh-bili-music-player](https://github.com/red000000/dsh-bili-music-player) — 在 DSH 输入框上方点播 B 站音乐，按听歌画像推荐、支持喜欢/跳过/不喜欢软反馈，画像听穿后自动在线找新歌。
 - [regrevia/dsh-pet-voice#dsh-pet-voice](https://github.com/regrevia/dsh-pet-voice/tree/main/plugins/dsh-pet-voice) — DSH 的 App 端还融合了桌宠玩法：语音唤醒、随口说话、语音指挥。远程操作电脑上的 DeepSeek Harness 有三种连法——局域网、自建域名、服务器中转；也能直接和工作在项目里的小鲸鱼聊天，一句话指挥它干活。出门在外，再也不用担心没带电脑。
 - [Ren-xing/dsh-audio-tools](https://github.com/Ren-xing/dsh-audio-tools) — DSH 音频工具：查看音频/视频信息、转码、从视频提取音轨、裁剪与响度归一化，并用本地 whisper.cpp 或 OpenAI 兼容接口把语音转成文字和字幕。需要本机已装 ffmpeg 与 ffprobe（插件不自带）；本地转写还需 whisper-cli 与 ggml 模型。
 - [rootryanlau-art/dsh-voice-transcribe](https://github.com/rootryanlau-art/dsh-voice-transcribe) — 在输入框面板、命令行与 agent 技能里离线转写本地音视频文件，引擎为 SenseVoice int8。
+- [SAOS-3624/dsh-watch-together](https://github.com/SAOS-3624/dsh-watch-together) — 和只有文字的智能体一起看视频：跟着你真实的播放位置（浏览器扩展上报，不是定时器），在每段结束前把画面和台词交到它手上，它一边看一边在悬浮窗里出声回应，视频不打断。
 - [scarf1985566475-cloud/dsh-voice](https://github.com/scarf1985566475-cloud/dsh-voice) — 本机英译中同声传译：用 Qwen3-ASR 在本地识别中英文并生成双语字幕，同时存档会议记录、生成纪要与导出 Obsidian。
 - [Schumchanvi/dsh-voice-input-cn](https://github.com/Schumchanvi/dsh-voice-input-cn) — 国内可用的输入框语音输入。需要先启动本地 Python bridge（pip install dashscope websockets，运行 bridge/voice-bridge.py）——只装插件不可用。浏览器麦克风采集 16kHz PCM 流式转发给 bridge，由阿里云 DashScope ASR（paraformer-realtime-v2）识别；识别文字在光标处实时填入草稿，静音自动停止，可选识别后自动发送。
 - [shimingming520/dsh-audiogen](https://github.com/shimingming520/dsh-audiogen) — 面向 DeepSeek Harness Web 的 AI 音频插件 —— 多厂商 TTS、音乐、音效与音色设计，含侧边栏面板、模型对比、资源库与 Agent 工具。
