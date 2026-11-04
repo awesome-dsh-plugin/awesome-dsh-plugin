@@ -4114,6 +4114,7 @@ dsh plugin --profile web add dshmarket
 - [Luisarg03/dsh-memory-vault#memory-mcp](https://github.com/Luisarg03/dsh-memory-vault/tree/main/packages/memory-mcp) — 经 MCP stdio 把 Agent 接入持久化 OKF 记忆库：Python 服务端（SQLite FTS5 + Markdown），10 个工具用于检索与写入决策、事实和偏好。
 - [Lumivox-wiz/memory-lattice](https://github.com/Lumivox-wiz/memory-lattice) — 会遗忘的记忆插件：短期记忆 48 小时自动过期，长期记忆按艾宾浩斯/SM-2 曲线复习，久不用的沉进沉睡区（可唤醒）而不是无限撑爆上下文。长期写入停在审核中心，模型不能自行改写人格设定。
 - [luxiwusuobuneng/dsh-plugin-context-manager](https://github.com/luxiwusuobuneng/dsh-plugin-context-manager) — DeepSeek Harness 上下文管理：每轮对话自动总结为记录并按优先级排序注入，⭐ 置顶记录跨会话继承，自定义文本每轮注入；真实对话任意范围折叠成摘要真省 token，全状态持久化重启不丢。注意：非标准一键安装——需手动将三个包目录复制到 profiles/node_modules、粘贴 cordis.patch.yml 接线并重启 DSH。
+- [lzk112233/dsh-self-memory](https://github.com/lzk112233/dsh-self-memory) — DSH 四层记忆插件：只增不改的原文库、带权重衰减与单向归档的长期事实库、智能体自己写的自我认知、原文库上的中文 bigram 检索，以及增量 AES-256-GCM 加密同步到只存密文的私有 git 仓库。会话归档后不再参与检索与提示注入，但历史仍在库里。
 - [M1r0er/dsh-inkvault](https://github.com/M1r0er/dsh-inkvault) — 把本地 Markdown 库拆成两个由用户在设置页选择的文件夹：知识库由 DSH 在对话中写入笔记，记忆库作为 agent 的长期记忆，按回合召回、回合结束沉淀候选。纯 Markdown 加 frontmatter、BM25 检索、可逆归档，并用路径隔离拒绝穿越、绝对路径与符号链接逃逸。
 - [Ma354/dsh-limit-break](https://github.com/Ma354/dsh-limit-break) — 跨会话持久记忆，加一条绕开主机名级封锁的取数阶梯：四个工具——memory_recall / memory_save / memory_stats 读写 $DSH_HOME/memory/facts.json 里的纯 JSON，resilient_fetch 依次尝试直连 fetch → 同服务别名主机（目前仅 Wikipedia）→ curl IPv6 → curl IPv4（curl 需在 PATH 上）。无后台进程、无 npm 依赖、导入期不联网。（1.3.0 曾加入第五个工具 memory_prune，已在 1.4.0 撤下：给运行中的插件加工具，会让此前打开的会话报错。）
 - [madage/dsh-self-improved](https://github.com/madage/dsh-self-improved) — DeepSeek Harness 长期记忆与自进化插件：L0 对话捕获 → L1 记忆提取 → L2 场景归纳 → L3 用户画像，自动召回注入 + 技能合成，纯本地（SQLite FTS5 + jieba，可选向量召回）。
@@ -6557,6 +6558,7 @@ dsh plugin --profile web add dshmarket
 - [znlgis/dsh-opengis-skill](https://github.com/znlgis/dsh-opengis-skill) — 把 opengis-skills 的 32 个 gis/ 技能（GDAL、QGIS、GeoServer、PostGIS、PROJ、PDAL、GRASS GIS、JTS、GeoPandas、Shapely、CesiumJS、OpenLayers、Leaflet、deck.gl 等）打包进 DSH 技能目录；目录只列出名称与描述，技能正文与参考文档按需加载。
 - [zuoyunlai/lunheng-article-pipeline-dsh](https://github.com/zuoyunlai/lunheng-article-pipeline-dsh) — DSH bundle 技能包：把深度长文生产（学术论文 / 行业分析 / 商业评论）拆成 9 角色流水线——T1 文献 / T2 数据 / T3 案例三线并行检索、T4 分析、T5 写作、T6 批判伙伴、T7 审计、T8 终检（主控亲执行）、T9 同行评审，跨 6 个阶段，含三角验证、M 门 26 项终检（25 项机检 + 1 项人工）、G0-G16 独立审计（含中文 AI 痕迹闸）、审稿评分与期刊匹配，以及 4 个人在环节点。以 bundle 分发（`package.json#dsh.bundle.patch` + `lib/index.js` 入口注册技能），`dsh plugin add lunheng-article-pipeline` 即装；随包 T1-T9 角色卡、模板与 36 个零依赖校验脚本，README 五语。
 - [zz12hui/dsh-local-writing-suite](https://github.com/zz12hui/dsh-local-writing-suite) — 提供两个审查工具与四个技能，覆盖中长文本（例如小说）与文档审稿：七维 AI 味打分、带行号的阻断项，以及落盘的长篇连续性状态。不要与同作者的旧版 dsh-deai-audit 同装，二者注册同名工具。
+- [Zzzk187/dsh-file-state-cache](https://github.com/Zzzk187/dsh-file-state-cache) — 文件状态缓存技能：一次 explore 代替 ls+grep+read，读过的文件不再重复全量读，改完只回 diff 与精确变更行区间而不是重读全文。状态存在磁盘上的 JSON 缓存里，跨工具调用与重启都有效。
 
 ### 🔁 工作流与自动化
 
