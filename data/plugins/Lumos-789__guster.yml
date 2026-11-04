@@ -1,0 +1,6 @@
+url: https://github.com/Lumos-789/guster
+name: Lumos-789/guster
+category: dev
+description:
+  en: 'Audits and evolves agent context at four scopes: a single repository, a group of related repos, a knowledge hub, or the whole machine. Discovers projects, instruction files, skills, tools, knowledge, project state, evidence and credential references; reports drift, duplicate facts, broken pointers, budget overruns, unindexed knowledge, stale state and unregistered credentials; scores each scope on the dimensions that belong to it; and turns findings into reviewable migration plans that back up every file before moving it. Also scaffolds a deliberately small hub for durable knowledge and project state. Ships a stdlib-only Python CLI plus two skills, with credentials referenced by path and never printed.'
+  zh: '按四个层级审计与治理 agent 上下文：单个仓库、一组相关仓库、知识中枢、整台机器。发现项目、指令文件、技能、工具、知识、项目状态、证据与凭据引用；报告漂移、同一事实多个家、断链、预算超限、未索引知识、过期状态与未登记凭据；每个层级只算属于它的维度；并把问题转成可复核的迁移计划，每个文件移动前先备份。还能生成一个刻意保持精简的 Hub，承载长期知识与项目状态。包含零依赖 Python CLI 和两个 skill，凭据只引用路径、从不打印。'
