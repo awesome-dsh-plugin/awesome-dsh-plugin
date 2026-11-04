@@ -1,0 +1,8 @@
+url: https://github.com/QqiqiQ/dsh-profile-vault
+name: QqiqiQ/dsh-profile-vault
+category: memory
+description:
+  en: "A consent-gated personal profile store: people are indexed by name, entries by person and key, and every read opens the data directory only after the current session is authorised. Sensitive entries come back masked unless the user authorises that tier separately; credential-like values are refused at write time. Ages, zodiac signs and next birthdays are computed at read time, so asOf restores the answer for a past date, and facts that rot (height, weight, address) carry freshness warnings. Five profile_* tools plus a settings page to browse, edit, delete and revoke grants."
+  zh: "带授权的本地个人信息库：以姓名为索引存人，以「姓名 + 条目」取值，每次读取都要当次会话授权，否则连数据目录都不打开。敏感条目（证件、银行卡、住址、健康）默认掩码，凭证类数据写入时直接拒收；年龄、生肖、下次生日一律查询时现算，asOf 能复原过去某天的答案，身高体重住址这类会过期的条目带新鲜度提醒。提供五个 profile_* 工具和设置页，可浏览、编辑、删除与撤销授权。"
+icon: https://raw.githubusercontent.com/QqiqiQ/dsh-profile-vault/main/icon.png
+tarball: https://github.com/QqiqiQ/dsh-profile-vault/releases/latest/download/dsh-profile-vault.tgz
