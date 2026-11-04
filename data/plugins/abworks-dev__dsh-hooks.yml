@@ -1,0 +1,7 @@
+url: https://github.com/abworks-dev/dsh-hooks
+name: abworks-dev/dsh-hooks
+category: workflow
+description:
+  en: Codex-inspired lifecycle command hooks for DSH, with explicit tool-input sharing, pre-tool deny policies, notifications, and local audit examples.
+  zh: DSH 的 Codex 风格生命周期命令钩子，支持工具参数显式共享、执行前拒绝，以及通知与本地审计示例。
+tarball: https://github.com/abworks-dev/dsh-hooks/releases/download/v0.19.1/abworks-dsh-hooks-0.19.1.tgz
