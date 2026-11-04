@@ -1,0 +1,7 @@
+url: https://github.com/laomingren/dsh-lanxi-qq
+name: laomingren/dsh-lanxi-qq
+category: identity
+tarball: https://registry.npmjs.org/dsh-lanxi-qq/-/dsh-lanxi-qq-0.1.0.tgz
+description:
+  zh: "为 DeepSeek Harness 提供 QQ（OneBot 11 / NapCat）通道：把 QQ 私聊和群聊各自接成一个独立的 dsh 会话。内置群聊闸（只认点名、静默时段、冷却、每日配额、工作高峰闭麦）、工具闸与写操作审计、出站过滤器（挡住模型把输入标签当自己的话复读出来）、语音转写、图片与合并转发、dryRun 试运行与用量统计。由 dsh-onebot-qq 0.9.4 分叉而来。"
+  en: "QQ (OneBot 11 / NapCat) channel for DeepSeek Harness: bridges QQ private chats and group chats into their own dsh sessions. Ships group guardrails (mention-only, quiet hours, cooldowns, daily quota, peak-hour mute), a tool gate with write-action audit, an outbound filter that stops the model from echoing input tags, voice transcription, media and forwarded-card support, dryRun and usage stats. Forked from dsh-onebot-qq 0.9.4."
