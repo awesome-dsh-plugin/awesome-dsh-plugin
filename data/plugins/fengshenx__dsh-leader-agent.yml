@@ -1,5 +1,5 @@
-url: https://github.com/fengshenx/dsh-leader-kit
-name: fengshenx/dsh-leader-kit
+url: https://github.com/fengshenx/dsh-leader-agent
+name: fengshenx/dsh-leader-agent
 category: workflow
 description:
   en: 'One leader, many sessions: tell the leader the goal and it splits the work into cards, runs persistent worker sessions in the background, collects their reports, and keeps the facts on a per-project board in the right sidebar, so several features move in parallel instead of one at a time. Project-level LEADER.md and SLOTS.md prompts shape every request, and `read_worker_session` replays a worker transcript read-only without waking it.'
