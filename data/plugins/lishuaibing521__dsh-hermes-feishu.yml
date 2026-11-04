@@ -1,0 +1,6 @@
+url: https://github.com/lishuaibing521/dsh-hermes-feishu
+name: lishuaibing521/dsh-hermes-feishu
+category: remote
+description:
+  en: 'A Feishu/Lark channel for DeepSeek Harness: WebSocket inbound messaging, Markdown tables rendered as native Feishu table components, 13 Feishu tools, a web settings page, voice input/output, media upload and a model fallback chain.'
+  zh: 'DeepSeek Harness 的飞书/Lark 通道：长连接收发消息、Markdown 表格渲染成飞书原生 table 组件、13 个飞书操作工具，带 Web 设置页、语音收发、媒体上传与模型故障转移链。'
