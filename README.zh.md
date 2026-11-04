@@ -2414,6 +2414,7 @@ dsh plugin --profile web add dshmarket
 - [Galaxy-2001/Rhine-Lab-Codex-Theme#dsh](https://github.com/Galaxy-2001/Rhine-Lab-Codex-Theme/tree/main/dsh) — 为 DeepSeek Harness 提供莱茵生命 Pioneer 终端主题，包含奶油白与石墨黑配色、16% 中央动态水印，以及标题栏和设置页样式。
 - [gaopengpian/dsh-custom-ui-theme](https://github.com/gaopengpian/dsh-custom-ui-theme) — DeepSeek Harness 桌面端界面主题自定义：按界面区域配置背景、边框与文本样式，支持元素拾取器，优先级覆盖其他主题插件。
 - [GGBond2424648901/deep-whale-day-night-theme](https://github.com/GGBond2424648901/deep-whale-day-night-theme) — 面向官方 Harness rc.7 的非商业鲸鱼娘昼夜皮肤：当前无整屏边框布局、白昼水晶工坊与夜晚月潮观测室双场景、Q 版侧栏伙伴、透明花边与轻量氛围。
+- [gh503/dsh-prism-theme](https://github.com/gh503/dsh-prism-theme) — 明暗主题编辑器，提供 14 项公开颜色编辑、字体字号设置、命名主题保存与 JSON 导入导出。
 - [gnk478/dsh-client-ui-wallpaper](https://github.com/gnk478/dsh-client-ui-wallpaper) — 把本机图片/视频（含 Dynamic Wallpaper.app 素材）用作 DSH 桌面客户端背景：定时轮换与 0.7 秒交叉淡化、等首帧就绪再淡入、按壁纸明暗自动切换深/浅字色、模糊与面板/侧栏透明度可调、视频缩略图，探针接口上报加载、图层与界面选择器的健康状态。只读取本机文件，不联网。
 - [GptsApp/dsh-stylevault](https://github.com/GptsApp/dsh-stylevault) — 为 DeepSeek Harness 提供 30 套经典开源主题配色（Catppuccin、Nord、Tokyo Night、Gruvbox、Solarized 等），映射官方 ThemeService token；带 Style Settings 面板，可实时调整颜色/字体/圆角，并支持 JSON 导出/导入分享配置。
 - [gulagala001/dsh-theme-plugin](https://github.com/gulagala001/dsh-theme-plugin) — 为 DeepSeek Harness 提供主题、配色、背景与外观设置。
@@ -5617,6 +5618,7 @@ dsh plugin --profile web add dshmarket
 - [kyo615/dsh-browser-control](https://github.com/kyo615/dsh-browser-control) — 基于 Playwright MCP 的 AI 浏览器控制：驱动真实可见的 Chrome（导航/点击/输入/快照，约 80 个 browser_* 工具），并在 GUI 内嵌实时截图面板，每次操作后自动刷新。
 - [L1818346/dsh-browser-takeover](https://github.com/L1818346/dsh-browser-takeover) — 浏览器网址接管：维护一份「要登录的网址」清单（只存网址与添加时间，不存账号密码），访问前先回答这条地址在不在清单里；按该站点的会话 cookie 名字判断调试浏览器此刻是否已登录（确定／可能／未登录，_gh_sess 这类匿名 cookie 不计），在带调试端口的浏览器里打开清单中的地址，并按可见文字点击一个元素（会搜索所有 iframe）。一次调用最多点一个元素，不做批量爬取。
 - [lemoncat7/dsh-web-search](https://github.com/lemoncat7/dsh-web-search) — 为 DeepSeek Harness 提供可配置联网搜索，支持 SearXNG、Wikipedia、Tavily、Brave 与 Gemini，并支持客户端引擎选择和受控重试。
+- [lijiaqi-AI-Product-Manager/dsh-bug-gps](https://github.com/lijiaqi-AI-Product-Manager/dsh-bug-gps) — 录制浏览器问题、固定预期，并通过独立原代码对照复核修复。
 - [limingyao-xx/dsh-sidebar-mobile-browser](https://github.com/limingyao-xx/dsh-sidebar-mobile-browser) — 右侧边栏的移动端视口预览标签页：九种预设尺寸（手机、平板、笔记本）及自定义宽高，一键复制当前地址，并可通过 @ 按钮或 /url 指令把页面地址插入输入框。
 - [lirui1024k/dsh-browser-ops](https://github.com/lirui1024k/dsh-browser-ops) — DeepSeek Harness 真实浏览器自动化：agent 可直接驱动真实 Chrome（独立托管档案，或附加日常 Chrome/CDP），提供页面快照、点击、填表、读表与控制台/网络诊断工具；可将手动操作录制成流程并把输入标记为变量槽，按参数自动重放来批量造测试数据；附带 27 个 browser_* 工具与设置页控制面板。
 - [liustack/modsearch](https://github.com/liustack/modsearch) — 纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。
