@@ -1,0 +1,7 @@
+url: https://github.com/southcul/demian-trade-suite-dsh-plugin
+name: southcul/demian-trade-suite-dsh-plugin
+category: ui
+description:
+  en: "Adds a Trade Desk panel to the DSH sidebar for foreign-trade documents and container loading: quotation, PI/CI/PL/contract/customs documents, carton loading plans and a step-by-step loading animation. The existing offline single-file workbench is served same-origin inside the panel."
+  zh: "在 DSH 侧边栏增加外贸工作台入口，用于外贸单证与装柜计算：报价单、PI/CI/PL/合同/报关资料、装柜方案与逐层装柜动画。现有离线单文件工作台通过同源页面嵌入面板。"
+icon: https://raw.githubusercontent.com/southcul/demian-trade-suite-dsh-plugin/main/assets/icon-180.png

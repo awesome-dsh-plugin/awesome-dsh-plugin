@@ -1,0 +1,6 @@
+url: https://github.com/wzciczw/dsh-worktree-toggle
+name: wzciczw/dsh-worktree-toggle
+category: git
+description:
+  en: Adds a one-click Worktree switch beside the composer that moves an empty session into a new git worktree, and removes worktrees idle for three days.
+  zh: 在输入框分支标记旁提供一键 Worktree 开关，让空会话进入新的 git worktree；三天无活动的 worktree 自动清理。

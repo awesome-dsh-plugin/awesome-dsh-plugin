@@ -1,0 +1,7 @@
+url: https://github.com/gothepharnayadlsos-cyber/dsh-fanwork
+name: gothepharnayadlsos-cyber/dsh-fanwork
+category: workflow
+description:
+  en: 'Logic-risk review before rewriting: audit the source, decide each fix, generate several drafts in parallel, and export with a per-draft audit report. Bring your own OpenAI-compatible API endpoint and key - the plugin ships no model and returns 403 until one is configured.'
+  zh: '改写前先做逻辑体检：审原文风险、逐条裁决，再并行出多稿，每稿附六维审核报告。需要自备 OpenAI 兼容的接口地址与 API Key——插件不内置模型，未配置时生成类接口返回 403。'
+icon: https://raw.githubusercontent.com/gothepharnayadlsos-cyber/dsh-fanwork/main/assets/icon-180.png

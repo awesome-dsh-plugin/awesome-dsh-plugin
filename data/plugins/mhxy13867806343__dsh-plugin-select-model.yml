@@ -1,0 +1,6 @@
+url: https://github.com/mhxy13867806343/dsh-plugin-select-model
+name: mhxy13867806343/dsh-plugin-select-model
+category: model
+description:
+  en: 'Adds an "Add model" entry to the model menu for third-party providers, plus a management dialog that switches the model of the current conversation, edits or removes entries, and highlights the one in use.'
+  zh: '在模型菜单底部增加「添加模型」与「管理已添加模型」：接入第三方服务商并写入 DSH 模型配置，可编辑 / 删除条目，并一键切换当前对话的模型、高亮正在使用的那一行。'

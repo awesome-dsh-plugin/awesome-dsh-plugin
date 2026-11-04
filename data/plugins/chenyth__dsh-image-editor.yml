@@ -1,0 +1,8 @@
+url: https://github.com/chenyth/dsh-image-editor
+name: chenyth/dsh-image-editor
+category: vision
+description:
+  en: 'Image Editor separates uploaded images into editable layers through Shenhuo MCP, with confirmed credit quotes, browser editing and local PSD downloads.'
+  zh: '神火图层编辑器：通过神火 MCP 上传并分离图片，确认积分后生成可编辑图层，在默认浏览器编辑，按需导出并下载 PSD。'
+icon: https://raw.githubusercontent.com/chenyth/dsh-image-editor/main/assets/icon-red-transparent.png
+tarball: https://github.com/chenyth/dsh-image-editor/releases/download/v0.2.0/dsh-image-editor-0.2.0.tgz

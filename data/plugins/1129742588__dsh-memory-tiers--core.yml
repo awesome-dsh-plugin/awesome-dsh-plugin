@@ -1,0 +1,6 @@
+url: https://github.com/1129742588/dsh-memory-tiers/tree/main/core
+name: 1129742588/dsh-memory-tiers#core
+category: memory
+description:
+  en: 'Six-layer local memory for dsh: captures turns, stages them through an L2 buffer into DL3 summaries via a staging model, injects a stable memory block each turn and replaces chat history with placeholders. Ships five memory tools and a config page.'
+  zh: 'dsh 的六层本地记忆插件：捕获对话轮次，经 L2 巩固、由分流模型沉淀为 DL3 摘要，每轮注入稳定记忆块并以占位符替代聊天历史。附五个记忆工具与配置页。'

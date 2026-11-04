@@ -1,0 +1,8 @@
+# Entry for the awesome-dsh-plugin list. One file = the whole submission.
+# Docs: https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md
+url: https://github.com/ziz12138/dsh-lawcorpus
+name: ziz12138/dsh-lawcorpus
+category: tools
+description:
+  en: 'Law paper writing corpus for DeepSeek Harness: 850 bibliographic records from four CLSCI journals (2024-2026) with title, authors, abstract, keywords and outline, supporting BM25 search, framework cards, journal profiling, submission self-check and export.'
+  zh: '法学论文框架语料库：内置 2024–2026 四本 CLSCI 期刊 850 篇题录（标题、作者、摘要、关键词、目录骨架），支持 BM25 检索、框架卡、期刊画像、投稿对标自查与导出。'

@@ -19,4 +19,5 @@ description:
     在 DSH 插件页新增「升级」标签：集中检查全部插件的 npm 新版本，升级前预检
     engines.dsh 兼容性，一键原地升级并绕过 pnpm 的 24 小时发布冷却期；
     支持刷新 GitHub 来源插件内含的依赖全家桶，并可检查 DSH 本体是否有新版。
+icon: https://raw.githubusercontent.com/zhangrui824/dsh-upgrade-assistant/main/assets/icon-market.png
 tarball: https://github.com/zhangrui824/dsh-upgrade-assistant/releases/download/v1.1.0/dsh-upgrade-assistant-1.1.0.tgz
