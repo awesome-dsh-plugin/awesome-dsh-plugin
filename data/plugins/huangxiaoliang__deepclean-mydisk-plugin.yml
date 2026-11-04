@@ -2,6 +2,6 @@ url: https://github.com/huangxiaoliang/deepclean-mydisk-plugin
 name: huangxiaoliang/deepclean-mydisk-plugin
 category: tools
 description:
-  en: Audits disk usage on macOS and Windows by risk tier, then moves selected caches, leftovers, and similar photos to the Trash or a quarantine folder, with undo.
-  zh: 扫描 macOS 与 Windows 磁盘占用并按风险分档，提供空间分布与相似照片；清理先移入废纸篓或隔离区并可撤销，永久删除需再次确认。
+  en: 'Computer cleanup for Mac and Windows: disk cleanup, storage cleanup, caches, leftovers, similar photos; scans read-only and moves files to Trash with undo.'
+  zh: '电脑清理工具：磁盘清理、空间清理、Mac清理、Windows清理；缓存、残留与相似照片，扫描只读，清理先移入废纸篓或隔离区并可撤销。'
 icon: https://raw.githubusercontent.com/huangxiaoliang/deepclean-mydisk-plugin/main/assets/icon-180.png
