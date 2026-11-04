@@ -1,0 +1,8 @@
+url: https://github.com/xiaobaijunya/dsh-cost-meter
+name: xiaobaijunya/dsh-cost-meter
+category: usage
+tarball: https://github.com/xiaobaijunya/dsh-cost-meter/releases/download/v0.2.0/dsh-cost-meter-0.2.0.tgz
+icon: https://raw.githubusercontent.com/xiaobaijunya/dsh-cost-meter/main/assets/icon-180.png
+description:
+  en: Estimated CNY API cost for each conversation turn and for the session token total, using DeepSeek peak/off-peak and per-model pricing; subagent costs are listed separately.
+  zh: 按 DeepSeek 模型价目与峰谷时段估算用量费用：每轮对话与底边栏 token 统计旁显示人民币金额，子智能体费用单独列出。
