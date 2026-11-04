@@ -1,0 +1,6 @@
+url: https://github.com/AvenYQ/dsh-clipforge
+name: AvenYQ/dsh-clipforge
+category: ui
+description:
+  en: Video workbench for DeepSeek Harness that parses a link, downloads the source, transcribes it, trims or merges clips and exports GIFs.
+  zh: 视频工作台：贴链接解析并下载、转写文案、截取拼接片段、按目标体积导出 GIF。
