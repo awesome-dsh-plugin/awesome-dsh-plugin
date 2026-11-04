@@ -1,0 +1,7 @@
+url: https://github.com/KOGGUA-EDIT/dsh-pet-sayaka
+name: KOGGUA-EDIT/dsh-pet-sayaka
+category: fun
+description:
+  en: 'Sayaka Miki desktop pet for the DeepSeek Harness Web UI: eight sprites follow the live session state and swap instantly, with a voice line every 8-15 encounters per state.'
+  zh: '美树沙耶香桌宠：把会话状态映射成八张表情并啪地直接切换，每种状态每碰 8~15 次播一次配音，启动后先说一句早安。'
+icon: https://raw.githubusercontent.com/KOGGUA-EDIT/dsh-pet-sayaka/main/assets/pet/shy.png
