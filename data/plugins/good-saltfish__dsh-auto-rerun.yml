@@ -1,0 +1,7 @@
+url: https://github.com/good-saltfish/dsh-auto-rerun
+name: good-saltfish/dsh-auto-rerun
+category: model
+description:
+  en: 'Automatically retries model failures (drops, timeouts, rate limits, 5xx) in-turn. Retry count, delays, backoff, fallback and more are configurable. Rate-limit backoff is capped and jittered, server retry hints are honored, and optional retry-until-success keeps going within a time ceiling. Every option is editable from the plugin config or the sidebar panel: retry count, initial and max delay, backoff factor and jitter, rate-limit delay window, retry-until-success ceiling, fallback trigger and switch cap, dead-route blacklist TTL, log file. When a route keeps failing it can switch to a pinned, allowlist-filtered, or catalog-picked alternate model route, with a 30-minute dead-route blacklist (auth failure, subscription expired, billing) and a stale-assembly guard that keeps retried requests on the switched route. Ships a right-sidebar panel with live retry state, route labels and incident counters, Chinese and English locale, and memory-only logging by default.'
+  zh: '自动重试断连类模型失败（传输中断、超时、限流、5xx、流中断），在同一次智能体回合内接管重试而不是让任务直接断掉。所有选项都能在插件配置或右侧栏面板里调整：重试次数、初始与最大延迟、退避系数与抖动、限流延迟窗口、一直重试的时间上限、换路线的触发条件与次数上限、死路黑名单时长、日志文件。限流按指数退避等待并尊重服务端重试提示，开启后可在时间上限内一直重试直到成功。路线持续失败时可自动切换到备选模型路线（可手工固定、白名单过滤或从模型目录挑选），死路（鉴权失败、订阅过期、欠费）拉黑 30 分钟，并有旧装配守卫保证重试请求确实走在新路线上。附右侧栏状态面板（重试状态、路线标签、事故计数），中英双语，默认仅内存日志、可选设置文件。'
+tarball: https://github.com/good-saltfish/dsh-auto-rerun/releases/download/v1.8.5/dsh-auto-rerun-1.8.5.tgz

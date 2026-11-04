@@ -1,0 +1,6 @@
+url: https://github.com/AvigatorC/dsh-conversation-width
+name: AvigatorC/dsh-conversation-width
+category: ui
+description:
+  en: 'Pins the conversation column of the dsh UI to a fixed width — a pixel value or a percentage of the column — from a row in General settings, and hides the built-in drag handles so the width stays put.'
+  zh: '把 dsh 界面的对话框固定为像素宽度或列宽百分比，设置项在「通用」设置页；锁定后隐藏内置拖动手柄，宽度不再被误拖。'

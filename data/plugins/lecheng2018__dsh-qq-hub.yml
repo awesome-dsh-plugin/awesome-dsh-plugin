@@ -1,0 +1,6 @@
+url: https://github.com/lecheng2018/dsh-qq-hub
+name: lecheng2018/dsh-qq-hub
+category: notify
+description:
+  en: 'QQ hub for DeepSeek Harness: private and group chats over OneBot v11 (SnowLuma/NapCat), with per-chat scoped memory, per-chat persona routing, a vision helper that narrates images for text-only models, multi-platform link parsing (large videos sent as group files, image galleries sent inline or as merged-forward messages) and a web panel for models, personas and settings. Derived from aureth-labs/dsh-aurabot-qq; do not install both.'
+  zh: '把 QQ 接入 DeepSeek Harness：经 OneBot v11（SnowLuma / NapCat）接私聊与群聊，按会话隔离记忆、按会话分流人格，文本模型收图时由辅助模型转述，多平台链接解析（大视频转群文件，图集以图片或合并转发发出），并提供网页管理面板。改自 aureth-labs/dsh-aurabot-qq，不能与上游同装。'

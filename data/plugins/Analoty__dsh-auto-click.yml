@@ -1,0 +1,6 @@
+url: https://github.com/Analoty/dsh-auto-click
+name: Analoty/dsh-auto-click
+category: ui
+description:
+  en: 'Mouse gestures for files in the DSH Web GUI: Ctrl+click a file-tree row, a file mention in a chat message or a file link to open it with the desktop default application; right-click opens a menu with open, the operating system own Open With chooser, save a copy, copy the absolute path, copy the file contents and reveal in the file manager, while a right-click on an ordinary hyperlink offers Copy Link. A plain click is left to DSH own sidebar preview and directory rows are left to the page. Open and reveal go through DSH own sessionController, the Open With chooser is the operating system dialog (Windows Shell verb, open -a on macOS) rather than an application list kept by the plugin, and file reads stop at 8 MiB.'
+  zh: 'DSH Web 界面里的文件手势：Ctrl+左键点击文件树行、对话中的文件提及或文件链接，用系统默认应用打开；右键弹出菜单，可打开文件、调用系统自带的「打开方式」选择框、另存为、复制绝对路径、复制文件内容、在文件管理器中定位，右键普通超链接则提供「复制链接」。普通左键仍交给 DSH 自带的侧边栏预览，目录行交给页面处理。打开与定位走 DSH 自己的 sessionController，「打开方式」直接交给操作系统对话框（Windows 的 Shell 动词、macOS 的 open -a），插件不维护自己的应用列表；读取文件内容上限 8 MiB。'

@@ -1,0 +1,6 @@
+url: https://github.com/traceur/dsh-plugin-writer
+name: traceur/dsh-plugin-writer
+category: tools
+description:
+  en: 'Writing council: parallel multi-model drafting, judge consensus & critique synthesis, AI prompt refinement, visual concept illustration, and Markdown file preview.'
+  zh: '写作工作台：引入多模型针对同一命题独立盲写，追加主审裁判交叉评审与去糟取精，支持 AI 命题扩写、视觉总览配图与 Markdown 文件预览导出。'

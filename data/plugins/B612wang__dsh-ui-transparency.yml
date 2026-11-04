@@ -1,0 +1,6 @@
+url: https://github.com/B612wang/dsh-ui-transparency
+name: B612wang/dsh-ui-transparency
+category: ui
+description:
+  en: 'Whole-window opacity for the DSH desktop window from one button at the sidebar foot: a 0-90% slider whose value is remembered between runs. It only sets the window alpha - no restyling, no extra panels, and no other feature is touched. Windows only.'
+  zh: '侧边栏底部一个按钮，点开是 0-90% 的滑块，用来调整整个 DSH 窗口的透明度，数值自动记住。只设置窗口 alpha，不改样式、不加面板、不影响其它功能。仅支持 Windows。'

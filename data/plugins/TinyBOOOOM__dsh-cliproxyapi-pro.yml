@@ -2,5 +2,5 @@ url: https://github.com/TinyBOOOOM/dsh-cliproxyapi-pro
 name: TinyBOOOOM/dsh-cliproxyapi-pro
 category: model
 description:
-  en: Connects CLIProxyAPI (CPA) servers to DeepSeek Harness — model sync over native protocols, per-credential quota and optional image / video generation. For one or more accounts it discovers each server's models and syncs the selected chat models into the model picker, routing each over Anthropic Messages, OpenAI Responses or OpenAI Chat with per-model parameter overrides. With a CPA management key it shows per-credential upstream quota in a settings tab and beside the model picker. An off-by-default switch adds /cpa-image, /cpa-video, video editing and extending, and an optional agent tool using CPA's image and video models. It checks for its own updates and installs them through dshmarket when that is present.
-  zh: 把 CLIProxyAPI（CPA）服务接入 DeepSeek Harness：按原生协议同步模型、查看各凭证额度，并可选生成图片和视频。支持一个或多个账号，发现各服务的模型并把勾选的对话模型同步到模型选择器，按 Anthropic Messages、OpenAI Responses 或 OpenAI Chat 请求，并支持单模型参数覆盖；填写 CPA 管理密钥后，可在设置页的额度标签和模型选择器旁查看各凭证的上游额度；打开默认关闭的生成开关后，可用 CPA 的生图、生视频模型执行 /cpa-image、/cpa-video 以及视频编辑和延长，并可选让 agent 调用；还能检查插件自身更新，装有 dshmarket 时通过它安装。
+  en: Connects CLIProxyAPI (CPA) to DeepSeek Harness (DSH) with multiple accounts, model filtering, native protocols, quota lookup and image / video generation; once configured, the selected models appear in the model picker automatically.
+  zh: 在 DeepSeek Harness（DSH）中接入 CLIProxyAPI（CPA），支持多账户、模型筛选、原生协议直连、额度查询、生图生视频，选好配置后自动出现在模型选择器中。

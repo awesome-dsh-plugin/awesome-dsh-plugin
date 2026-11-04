@@ -1,0 +1,7 @@
+url: https://github.com/tokenaissance/dsh-excalidraw
+name: tokenaissance/dsh-excalidraw
+category: docs
+icon: https://raw.githubusercontent.com/tokenaissance/dsh-excalidraw/main/assets/icon-180.png
+description:
+  en: 'Renders Excalidraw architecture scenes inside DSH — import a local .excalidraw/.json file or an inline document with no account, or refresh from Excalidraw+ over MCP (refresh needs an Excalidraw+ MCP bearer token in mcpToken or EXCALIDRAW_MCP_TOKEN); pan, zoom, select and export SVG/PNG.'
+  zh: '在 DSH 里渲染 Excalidraw 架构图：可无账号导入本地 .excalidraw/.json 或内联文档，也可通过 MCP 从 Excalidraw+ 刷新（刷新需在 mcpToken 或 EXCALIDRAW_MCP_TOKEN 里配置 Excalidraw+ 的 MCP 令牌）；支持平移、缩放、选中与 SVG/PNG 导出。'

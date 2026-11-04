@@ -1,0 +1,7 @@
+url: https://github.com/Windpixy/dsh-floating-window
+name: Windpixy/dsh-floating-window
+category: ui
+description:
+  en: A frosted-glass status card that floats on the Windows desktop and shows what DSH is doing — running tasks with elapsed time and current activity, pending approvals, today's token usage and the countdown to the off-peak window — and collapses into a 14×120 bar that stays out of the way.
+  zh: 浮在 Windows 桌面上的磨砂玻璃状态卡片，显示 DSH 正在做什么——运行中的任务及已跑时长与当前动作、待审批项、今日 Token 用量与谷时倒计时——不用时可缩成一根 14×120 的细柱贴在屏幕边缘。
+icon: https://raw.githubusercontent.com/Windpixy/dsh-floating-window/main/docs/icon-180.png

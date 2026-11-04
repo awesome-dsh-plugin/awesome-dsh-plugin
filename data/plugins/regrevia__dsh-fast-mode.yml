@@ -3,18 +3,12 @@ name: regrevia/dsh-fast-mode
 category: usage
 description:
   en: >-
-    Per-conversation fast mode for multi-step tasks that batches independent tool calls and
-    drops redundant steps. Pooled over 9 blocks and 132 valid paired runs it is about 18% less
-    total wall-clock time (0.825x, per-cell median 0.813x, 95% bootstrap interval 0.747-0.914)
-    and 15-25% faster on the shapes it fits (codeimpl median 0.709x, faster in 13 of 15 pairs;
-    shellpipeline median 0.844x), with hidden tests still passing. Short repairs and data
-    reshaping do not pay for the reminder (debugfix mean 1.287x with output 1.29x longer,
-    perfrefactor mean 1.140x), so try it once per task shape. The earlier "26-28%" claim is
-    retracted.
+    DeepSeek Harness's own fast mode: the same model on the same reasoning effort, fewer output
+    tokens and usually less wall clock, all prompt-side. Every switch can be turned off on its
+    own; by default only the terse-output switch is on. Measured on one machine: 30 task pairs at
+    the default trim budget 0.756x wall clock and 21% fewer output tokens; 24 pairs on real
+    pallets/click PRs with only the trim switch on 0.805x wall clock and 23% fewer tokens. Some
+    tasks get slower — numbers and repro in the repo.
   zh: >-
-    单会话开关的快速模式，合并可并行的工具调用并减少冗余步骤。9 块 132 对有效配对的合池结果是
-    整任务总墙钟约快 18%（0.825×，逐格中位 0.813×，95% 自助区间 0.747–0.914），适合的形状快
-    15–25%（codeimpl 中位 0.709×、15 对里 13 对更快；shellpipeline 中位 0.844×），隐藏测试仍
-    全绿。短改修与数据整形收不回提醒成本（debugfix 均值 1.287×、输出反而长 1.29×；
-    perfrefactor 均值 1.140×），所以按任务形状先试一次再定。此前「约快 26%」的说法已撤回。
+    DeepSeek Harness 自己的 fast mode：同一个模型、同样的思考强度，只花更少的输出 token，通常也更快，全程提示词侧。每个开关都能单独关掉；默认只开「精简输出」，其余开关默认关。本机实测：默认截短预算下 30 对任务 0.756× 耗时、输出 token −21%；6 个真实 `pallets/click` PR 共 24 对、只开截短开关时 0.805× 耗时、token −23%。不是所有任务都快，少数会变慢——数字与复现见仓库。
 icon: https://raw.githubusercontent.com/regrevia/dsh-fast-mode/main/icon.png

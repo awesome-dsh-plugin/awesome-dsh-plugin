@@ -1,0 +1,6 @@
+url: https://github.com/LIU118117/dsh-voice
+name: LIU118117/dsh-voice
+category: voice
+description:
+  en: "Adds a voice to the agent: emotional speech synthesis (ChatTTS when available, falling back to edge-tts) and a singing mode, with mp3 output and local playback over ffplay. Requires Python 3.10+ with edge-tts installed (ChatTTS and its model cache are optional), ffmpeg/ffplay, and the pythonPath/ffmpegPath/ffplayPath values in cordis.patch.yml pointed at your own installs."
+  zh: "给 AI 加上声音：带情绪的语音合成（有 ChatTTS 用 ChatTTS，否则回退 edge-tts）和唱歌模式，生成 mp3 并可用 ffplay 本机播放。需本机安装 Python 3.10+ 与 edge-tts（ChatTTS 及其模型缓存可选）、ffmpeg/ffplay，并把 cordis.patch.yml 里的 pythonPath/ffmpegPath/ffplayPath 改成你自己的安装路径。"

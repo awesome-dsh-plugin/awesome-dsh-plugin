@@ -1,0 +1,7 @@
+url: https://github.com/AkutagawaKoyori/dsh-zcode-start
+name: AkutagawaKoyori/dsh-zcode-start
+category: model
+icon: https://raw.githubusercontent.com/AkutagawaKoyori/dsh-zcode-start/main/assets/icon-180.png
+description:
+  en: 'Uses Z.ai / ZCode Start Plan quota inside DeepSeek Harness as a GLM model provider (GLM-5.3-Flash, GLM-5.3) with tool calling and reasoning levels; the settings page shows quota bars, gifted-plan claiming, refresh opportunities and a redacted request log. Requires the ZCode desktop app installed and signed in at least once (the plugin reads its local credential store) and an account with an active Z.ai / Start Plan entitlement.'
+  zh: '把 Z.ai / ZCode Start Plan 额度接进 DeepSeek Harness，作为 GLM 模型提供方（GLM-5.3-Flash、GLM-5.3），支持工具调用与推理等级；设置页提供额度进度条、领取赠送计划、刷新机会与脱敏请求日志。需要安装并至少登录过一次 ZCode 桌面客户端（插件读取其本机凭据库），且账号持有生效中的 Z.ai / Start Plan 权益。'

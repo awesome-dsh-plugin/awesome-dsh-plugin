@@ -1,0 +1,6 @@
+url: https://github.com/Mrsirlila/dsh-pocket-plus/tree/main/plugin
+name: Mrsirlila/dsh-pocket-plus#plugin
+category: remote
+description:
+  en: 'Patched build of dsh-pocket for DeepSeek Harness: the access password is embedded in the QR code so the phone signs in with one scan, a read-only /dsh-pocket/entry.json endpoint lets the app re-sync the current public URL and password from the LAN, and LAN / Tailscale / Cloudflare routes fail over automatically. This is a patched derivative of shaobeichen/dsh-pocket — install it instead of the upstream plugin, never alongside it.'
+  zh: 'dsh-pocket 的增强版：访问密码直接写进二维码，手机扫一次即可登录；新增只读接口 /dsh-pocket/entry.json，手机 App 在局域网时就能同步当前公网地址与密码；内网 / Tailscale / Cloudflare 三条链路按顺序探测、断线自动切换。这是 shaobeichen/dsh-pocket 的补丁版，请替代上游安装，不要与上游同装。'

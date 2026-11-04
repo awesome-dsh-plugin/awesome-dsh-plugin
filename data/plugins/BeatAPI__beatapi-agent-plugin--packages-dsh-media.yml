@@ -1,0 +1,6 @@
+url: https://github.com/BeatAPI/beatapi-agent-plugin/tree/main/packages/dsh-media
+name: BeatAPI/beatapi-agent-plugin#dsh-media
+category: vision
+description:
+  en: "Four native tools for image/video model discovery, contract inspection, pricing previews, approved generation and resumable task status through BeatAPI."
+  zh: "提供图片视频模型发现、接口检查、价格预览、确认后生成及原任务续查，通过 BeatAPI 执行。"
