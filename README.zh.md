@@ -1800,7 +1800,7 @@ dsh plugin --profile web add dshmarket
 - [Zephinel/dsh-intelligent-ui](https://github.com/Zephinel/dsh-intelligent-ui) — 在 DSH 对话中把 OpenUI Lang 答案渲染成交互卡片或阅读式文章，支持地图、图表、表单、PNG 图片导出和独立交互 HTML 导出。
 - [zerorigin-studio/dsh-deepseek-chat](https://github.com/zerorigin-studio/dsh-deepseek-chat) — 网页对话入口插件：侧边栏一键打开 chat.deepseek.com 独立窗口（dsh-desktop 桥接），纯网页环境自动回退内嵌打开。
 - [zerorigin-studio/dsh-desktop-shell](https://github.com/zerorigin-studio/dsh-desktop-shell) — 把 dsh web 界面封装成原生 Windows 桌面窗口，内置桌面客户端，带系统托盘、开机自启与协议文件分发。
-- [zeusxx/dsh-composer-live](https://github.com/zeusxx/dsh-composer-live) — DSH Web 输入框 Markdown 实时渲染与输入增强——代码块语法高亮、列表引用续项、格式工具栏。
+- [zeusxx/dsh-composer-live](https://github.com/zeusxx/dsh-composer-live) — 打 Markdown，边打边渲染——给 DeepSeek Harness（DSH）Web 输入框带来 Open WebUI 风格的实时编辑体验，代码块语法高亮、任务列表、格式工具栏、智能粘贴。
 - [zhang-guangjie/dsh-video-bg](https://github.com/zhang-guangjie/dsh-video-bg) — 在 DeepSeek Harness 对话界面背后循环播放本地视频，支持播放/暂停、不透明度、遮罩与填充调节。
 - [zhang24xiao/dsh-snippets](https://github.com/zhang24xiao/dsh-snippets) — 管理 DSH Web 界面的 CSS 与 JS 代码片段：启用的 CSS 注入为 style 元素，启用的 JS 在页面内执行；提供侧栏底部快捷开关，并在设置导航里有自己的页面，并可选本地文件夹监听与 Gist 同步。
 - [ZhangBo-cmd/dsh-coros-badge](https://github.com/ZhangBo-cmd/dsh-coros-badge) — 在 Web UI 中常驻显示已绑定的高驰手表型号与累计运动天数，点击展开一句话点评与建议。
@@ -7484,7 +7484,7 @@ dsh plugin --profile web add dshmarket
 - [zhengjy01/dsh-task-dispatcher](https://github.com/zhengjy01/dsh-task-dispatcher) — 滴答清单任务派发器：按间隔从指定清单拉取到期任务写入今日任务文件，仅在任务集变化时通知（微信 ClawBot / flomo / macOS）；可为每个任务单独开一个 headless DSH 会话自动执行（worker 超时可配），并可选只在 DeepSeek 空闲（优惠）时段开跑——高峰期把任务排到下个空闲窗口而不是立刻执行；带 Web 设置面板（延迟回写队列、省钱模式时段与状态）与 dispatcher_status / dispatcher_config / dispatcher_run / dispatcher_report 工具。
 - [zhengjy01/dsh-ticktick](https://github.com/zhengjy01/dsh-ticktick) — 基于官方 OAuth Open API 双向同步滴答清单（TickTick/Dida365）任务：拉取各清单任务、创建/更新/完成/删除、按标题去重的一键同步，带 Web 设置面板。
 - [ZIye1208/dsh-approval-voice](https://github.com/ZIye1208/dsh-approval-voice) — DSH Web GUI 中出现审批、提问或计划审批弹窗时，播放提示音并中文语音播报，避免漏看待处理请求。
-- [zjbc2000/attention-plugins](https://github.com/zjbc2000/attention-plugins) — 面向 DSH 的任务分级会话通知：主线任务完成或失败时立即提醒，支线可汇总为一声，提问与权限请求出现即提醒；支持同时标记多个主线，以及未标记主线时把所有会话视为主线的均衡模式。
+- [zjbc2000/attention-plugins](https://github.com/zjbc2000/attention-plugins) — 面向 DSH 的任务分级会话通知：标记的主线任务完成或失败时立即提醒，其余会话汇总为一声；另有逐条提醒的均衡模式与完全不响的静音模式（提问与权限请求仍提醒）。支持每类事件独立音效或自定义音频、按会话静音、点击通知直达会话，以及等待子代理结束再提醒。
 - [zjhaaa042-cloud/dsh-mobile-notify](https://github.com/zjhaaa042-cloud/dsh-mobile-notify) — DSH 任务停下来时把通知推送到手机，支持 10 个渠道：ntfy、Bark、钉钉、企业微信、飞书、Server酱、PushPlus、Telegram、Qmsg 与通用 webhook；消息里带会话、目录、耗时、回合号与回复摘要，运行在 Host 侧而不是浏览器页面里。
 - [ztl0001/dsh-notify](https://github.com/ztl0001/dsh-notify) — DSH 任务完成时，在 Windows 通知栏弹出原生通知，带上会话标题、结果状态与最后一条回复的摘要；在 agent 真正停下来时才发一条，而不是每跑一个回合就响一次。
 - [zy12342/dsh-approval-toast](https://github.com/zy12342/dsh-approval-toast) — DSH 的 Windows 授权通知：后台时可直接在通知上点「允许一次 / 拒绝」，前台时当前对话走应用内审批框、其他对话照常提醒；另含完成 / 出错通知，子代理会话保持静默。
@@ -7921,6 +7921,7 @@ dsh plugin --profile web add dshmarket
 - [weibaohui/dsh-sync](https://github.com/weibaohui/dsh-sync) — 多机同步：让多台机器上的 dsh 通过一个私有 GitCode 仓库保持一致——技能、会话、设置、插件清单四类内容各有独立开关；变更走分支 → PR → 合并，推送前自动回填远端新增防误删，支持 AI 智能对齐（语义合并双方改动）与一键解决冲突；强制私有仓库，pull 不覆盖本地改动。
 - [weijiafu14/pi2dsh](https://github.com/weijiafu14/pi2dsh) — Pi Host ABI 兼容引擎：装一次之后，npm 上的 Pi 扩展原包经 `dsh plugin add <pi-package>` 直接作为 DSH 原生插件挂载。已在官方 DSH 上端到端验证 pi-mcp-adapter（完整 MCP 管理面：OAuth、resources、prompts、MCP Apps、elicitation、sampling）、@tintinweb/pi-subagents、pi-code、pi-hermes-memory、pi-background-tasks；`pi2dsh inspect` 在安装前报告一个包的兼容情况。
 - [william-jin-cmu/dsh-evolve](https://github.com/william-jin-cmu/dsh-evolve) — 自进化：agent 在会话内给自己热挂载/卸载持久化插件。
+- [winson-young/dsh-workspace-rules](https://github.com/winson-young/dsh-workspace-rules) — 在设置面板中编辑当前项目的私有指令文件 CLAUDE.local.md——DSH 内置加载器会在会话开始时读取它，文件同时被排除在 git 之外。
 - [wiyi/dsh-web-service-manager](https://github.com/wiyi/dsh-web-service-manager) — 在设置面板中管理 DSH Web 服务:状态、版本、重启、停止与一键更新。
 - [WJDdidi-1/dsh-plugin-example](https://github.com/WJDdidi-1/dsh-plugin-example) — 可直接照抄的入门插件：一个右侧栏标签页、中英两份文案、挂载真实 bundle 的行为测试，以及会跑清单预检的 CI。
 - [WJDdidi-1/dsh-plugin-toolkit](https://github.com/WJDdidi-1/dsh-plugin-toolkit) — 给插件作者的安装前体检：把市场那套检查——根导出、dsh.client 与 exports\["./client"] 是否一致、npm pack 有没有带上面板——跑到任意文件夹或 GitHub 仓库上，面板里能点，命令行也能跑；另有发版工具，以及能在 Node 里挂起 client bundle 的 testkit。
