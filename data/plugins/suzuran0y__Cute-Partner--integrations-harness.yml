@@ -1,7 +1,7 @@
 url: 'https://github.com/suzuran0y/Cute-Partner/tree/main/integrations/harness'
-name: 'suzuran0y/Cute-Partner#harness'
+name: 'suzuran0y/Cute-Partner#cute-partner'
 category: fun
 description:
-  en: 'Installs and launches Cute-Partner, a Windows Live2D desktop companion for conversation and tasks, with optional voice components.'
-  zh: '安装并启动 Cute-Partner Windows Live2D 桌面伙伴，在角色窗口中交流和处理任务，语音组件可选。'
+  en: 'Chat and work with a Live2D companion on your Windows desktop that can remember your preferences. The modular design supports optional voice components and custom voices.'
+  zh: '和 Windows 桌面上的 Live2D 角色哦鲸鲸聊天、一起办事，她还能记住你的偏好。模块化设计，语音按需安装，支持自定义音色。'
 icon: 'https://raw.githubusercontent.com/suzuran0y/Cute-Partner/f42e49a6ab6c24a747dc6b35e44cf8f613297d85/apps/desktop/assets/character-icon.png'
