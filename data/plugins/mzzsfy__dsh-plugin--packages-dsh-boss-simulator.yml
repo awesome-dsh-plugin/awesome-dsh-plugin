@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-boss-simulator
+name: mzzsfy/dsh-plugin#dsh-boss-simulator
+category: fun
+description:
+  en: 'Company management simulator: play the boss, dispatch tasks to self-organizing departments, and only accept reports; ships a kanban board, timeline view, and interruption recovery.'
+  zh: '公司管理模拟器：以老板身份安排任务，分派给部门自治执行，只接受汇报；含看板、时间线与中断恢复。'
+icon: https://raw.githubusercontent.com/mzzsfy/dsh-plugin/main/assets/icons/png/dsh-boss-simulator.png
