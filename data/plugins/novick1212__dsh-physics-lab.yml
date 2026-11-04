@@ -1,0 +1,11 @@
+url: https://github.com/novick1212/dsh-physics-lab
+name: novick1212/dsh-physics-lab
+category: fun
+description:
+  en: Interactive physics lab in the DSH sidebar — 24 parameter-driven animations (mechanics, electromagnetism, optics, thermodynamics) grouped by grade, each with a knowledge-point lesson whose steps follow the animation, a quiz with answer checking, and a draggable 3D view for four field models. Pure client side: analytic solutions computed locally, no LLM calls, no network, no telemetry.
+  zh: DSH 侧栏里的高中物理动态仿真实验室：24 个可调参数的互动模型（力学 / 电磁 / 光学 / 热学），按高一高二高三分组；每个模型配知识点讲解与跟随动画的分步解说、出题判分，其中 4 个电磁学模型支持拖动旋转的 3D 视角。纯客户端，解析式本地计算，不调模型、不联网、不上报数据。
+icon: https://raw.githubusercontent.com/novick1212/dsh-physics-lab/main/docs/icon-512.png
+screenshots:
+  - https://raw.githubusercontent.com/novick1212/dsh-physics-lab/main/docs/app-panel.png
+  - https://raw.githubusercontent.com/novick1212/dsh-physics-lab/main/docs/3d-scenes.png
+  - https://raw.githubusercontent.com/novick1212/dsh-physics-lab/main/docs/lesson-card.png
