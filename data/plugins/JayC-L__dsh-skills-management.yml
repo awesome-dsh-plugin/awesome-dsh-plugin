@@ -1,0 +1,7 @@
+url: https://github.com/JayC-L/dsh-skills-management
+name: JayC-L/dsh-skills-management
+category: skill
+tarball: https://github.com/JayC-L/dsh-skills-management/releases/latest/download/dsh-skills-management.tgz
+description:
+  en: 'File-backed Skill invocation manager with independent model and user controls, live source reads, read-only non-file Providers, and safe cleanup of missing policies.'
+  zh: '文件型 Skill 调用管理：独立控制模型和用户调用，实时读取源文件；非文件型仅展示，支持安全清理未加载策略。'
