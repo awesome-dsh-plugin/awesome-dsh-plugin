@@ -1,0 +1,7 @@
+url: https://github.com/lengrufeng2008/dsh-code-intel
+name: lengrufeng2008/dsh-code-intel
+category: dev
+icon: https://raw.githubusercontent.com/lengrufeng2008/dsh-code-intel/main/icon.svg
+description:
+  en: 'Read-only semantic code navigation for DeepSeek Harness via local language servers: definitions, references, symbols, diagnostics, hover, and rename preview.'
+  zh: 'Read-only semantic code navigation for DeepSeek Harness via local language servers: definitions, references, symbols, diagnostics, hover, and rename preview.'
