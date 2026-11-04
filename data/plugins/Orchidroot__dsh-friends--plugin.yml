@@ -4,4 +4,3 @@ category: fun
 description:
   en: 'Floating friends list and one-to-one chat for DSH, with custom avatars and status words. The required friends service is in this repository and runs via npx dsh-friends-service or Docker.'
   zh: 'DSH 好友浮窗，支持一对一聊天、自定义头像和状态词条；所需好友服务端在同一仓库，可用 npx dsh-friends-service 或 Docker 启动。'
-tarball: https://github.com/Orchidroot/dsh-friends-plugin/releases/latest/download/dsh-friends-plugin.tgz
