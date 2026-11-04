@@ -1,0 +1,6 @@
+url: https://github.com/shengpj/dsh-payload
+name: shengpj/dsh-payload
+category: dev
+description:
+  en: 'Adds a { } button under each assistant reply in the DSH Web GUI that opens the exact request sent to the model for that reply: model, call parameters, messages, tools, and provider-reported token usage.'
+  zh: 在 DSH Web GUI 每条 assistant 回复下方加一个 { } 按钮，点开可查看产生这条回复的那次调用实际发给模型的完整请求：model、调用参数、messages、tools 与 provider 上报的 token 用量。
