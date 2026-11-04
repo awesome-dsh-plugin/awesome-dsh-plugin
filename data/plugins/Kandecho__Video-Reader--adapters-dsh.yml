@@ -1,0 +1,6 @@
+url: https://github.com/Kandecho/Video-Reader/tree/main/adapters/dsh
+name: Kandecho/Video-Reader#dsh-video-reader
+category: tools
+description:
+  en: 'Connects DSH to timestamped video materials, shared queues/history and Scroll account workflows through an existing local installation.'
+  zh: '复用现有本地安装，为 DSH 接入带时间的视频材料、通用队列/历史和 Scroll 账号工作流。'
