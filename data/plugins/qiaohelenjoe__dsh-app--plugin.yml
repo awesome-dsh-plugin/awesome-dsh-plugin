@@ -4,4 +4,4 @@ category: remote
 icon: https://raw.githubusercontent.com/qiaohelenjoe/dsh-app/main/plugin/assets/icon-256.png
 description:
   en: 'Mobile remote control for DeepSeek Harness: open the DSH web UI from your phone. The desktop plugin registers this computer as a device over an outbound WebSocket tunnel (no inbound port or port forwarding needed), so the same account in the Android app can list the machine on mobile and open its DeepSeek Harness UI from anywhere. Includes a PC-side panel with account, device quota and the latest App download QR code, plus a host-side /api/file proxy and narrow-screen adapters that make the existing DSH web UI usable on a phone.'
-  zh: '鐢ㄦ墜鏈猴紙绉诲姩绔級杩滅▼浣跨敤 DeepSeek Harness锛氬湪鎵嬫満涓婃墦寮€ DSH Web UI銆傛闈㈡彃浠堕€氳繃鍑虹珯闅ч亾鎶婃湰鏈烘敞鍐屾垚璁惧锛堜笉闇€瑕佸叕缃戠鍙ｆ垨绔彛鏄犲皠锛夛紝鎵嬫満 App 鐢ㄥ悓涓€璐﹀彿鐧诲綍鍗冲彲鍦ㄨ澶囧垪琛ㄧ湅鍒拌繖鍙扮數鑴戯紝骞跺湪绉诲姩绔墦寮€瀹冪殑 DeepSeek Harness 鐣岄潰锛汸C 绔潰鏉垮睍绀鸿处鍙枫€佽澶囬厤棰濅笌鏈€鏂?App 涓嬭浇浜岀淮鐮侊紝涓绘満渚?/api/file 浠ｇ悊涓庣獎灞忛€傞厤灞傝鐜版湁 DSH Web UI 鍦ㄦ墜鏈轰笂鍙敤銆?
+  zh: '用手机（移动端）远程使用 DeepSeek Harness：在手机上打开 DSH Web UI。桌面插件通过出站隧道把本机注册成设备（不需要公网端口或端口映射），手机 App 用同一账号登录即可在设备列表看到这台电脑，并在移动端打开它的 DeepSeek Harness 界面；PC 端面板展示账号、设备配额与最新 App 下载二维码，主机侧 /api/file 代理与窄屏适配层让现有 DSH Web UI 在手机上可用。'
