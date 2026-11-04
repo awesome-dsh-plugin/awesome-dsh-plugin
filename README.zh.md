@@ -1297,7 +1297,7 @@ dsh plugin --profile web add dshmarket
 - [Ragnoryok1/dsh-client-locale-ru](https://github.com/Ragnoryok1/dsh-client-locale-ru) — 为 dsh Web 界面提供俄语：整个界面，加上 520 个第三方插件的菜单——584 个分区、67 666 条文案。
 - [RAK7S/dsh-task-tree](https://github.com/RAK7S/dsh-task-tree) — 藏在页面里的任务树面板：语音或打字入库、拖动排序、贴边收起，数据是工作区里的纯文本 queue.md，随时可改可用 git 管。
 - [RAK7S/dsh-weather-whisper](https://github.com/RAK7S/dsh-weather-whisper) — 每次启动出现一次的天气卡片：记住没开 VPN 时的家城市、VPN 不再让城市跑偏、城市可手选、主题预设与自定义分隔线，并留了给第三方语音库的可选朗读接口。
-- [Rakanrkk/dsh-sidebar-scroll](https://github.com/Rakanrkk/dsh-sidebar-scroll) — DSH 0.2.2-rc.1 侧栏共享滚动：功能菜单、项目与会话共用同一滚动区，保留原生 workspace 滚动接力。
+- [Rakanrkk/dsh-sidebar-scroll](https://github.com/Rakanrkk/dsh-sidebar-scroll) — DSH 0.2.2-rc.1 侧栏共享滚动：功能菜单与 Projects 列表共用滚动区，工作区支持原生滚动接力或旧版外层滚动。
 - [rakibulrocky14/dsh-cli](https://github.com/rakibulrocky14/dsh-cli) — DeepSeek Harness 全屏终端 TUI 界面，具备 Web GUI 级对齐能力，支持实时流式输出、智能体预设与经典蓝配色。
 - [ramwin/dsh-workspace-tree-status](https://github.com/ramwin/dsh-workspace-tree-status) — 在 DSH Web 侧边栏工作区树的每个目录名前显示聚合状态点（等你输入 / 刚完成 / 运行中），父目录自动汇总嵌套工作区的会话状态。
 - [rans725/dsh-workspace-ranswork](https://github.com/rans725/dsh-workspace-ranswork) — 侧栏工作区面板，在运行中任务与全部对话之间切换，统一为一张可自由排序的卡片列表，每张卡片可置顶、重命名、复制 ID、分叉、停止与归档。
@@ -1494,6 +1494,7 @@ dsh plugin --profile web add dshmarket
 - [TixAn9/DSHdesktop-restart-bottom](https://github.com/TixAn9/DSHdesktop-restart-bottom) — 用于重启 DSH 桌面的按钮，直接放在侧边栏账号按钮上方。
 - [tkliuxing/dsh-presets-hidden](https://github.com/tkliuxing/dsh-presets-hidden) — 在新会话页控制 Agent 预设的显示与排序。
 - [Tleon-H/dsh-next-prompt](https://github.com/Tleon-H/dsh-next-prompt) — 回答结束后在空输入框里显示一条灰色的下一句建议，按 Tab 或 → 采纳；空输入框按 ↑ / ↓ 翻看本会话发送过的内容；可在插件页直接修改设置；不会自动发送。
+- [TLEWA/dsh-better-choice](https://github.com/TLEWA/dsh-better-choice) — 为 DSH 的 ask_user_question 选择题卡片增加两项能力：右键选项展开补充说明，并合并进提交的 custom 答案；卡片底部可以先问一句，由 fork 子代理带着当前会话上下文只读作答，不改写会话。左键选择、跳过、分页与倒计时照旧，且只接管普通选择题卡片，不接管计划确认与审批卡片。适配 DSH 0.2.0-rc.1 及以上的 0.2.x（已在 0.2.2-rc.1 验证），需 Node.js 20+。
 - [TLEWA/dsh-sidebar-organizer](https://github.com/TLEWA/dsh-sidebar-organizer) — 为 DSH 的七处按钮与卡片区域（左侧边栏、侧栏底部、对话标签、输入框工具条、会话头部图标条、右侧栏、设置导航）提供自定义排序与收纳，并支持分区拖动开关和布局 JSON 导入/导出；收纳项会进入该区域内置的「更多」菜单，可随时拖回。
 - [TLEWA/dsh-sidebar-row-menu](https://github.com/TLEWA/dsh-sidebar-row-menu) — DSH 侧边栏行右键菜单：在 DSH 0.2.2 及以上，两类行用的都是宿主菜单——工作区行按会话菜单的分组排入新建会话、复制路径与在文件夹显示、置顶打开方式、打开方式子菜单与批量删除；会话行在指针处展开菜单，并追加置顶打开方式、打开方式子菜单以及已归档会话的永久删除。条目默认只出现在右键菜单，可在设置里逐项开启「同时放进「…」菜单」；0.2.1 上工作区菜单由插件自绘。 改编自 miao-ge/dsh-sidebar-context-menu 与 0imzero/dsh-workspace-menu，请勿与它们同时安装——三者都会给同一批侧边栏行挂右键菜单。
 - [tomowang/dsh-tui](https://github.com/tomowang/dsh-tui) — 基于 pi-tui 的 DeepSeek Harness 全屏终端客户端：会话回放/续接、流式响应、可折叠工具卡片、终端内审批与提问、模型/预设/权限/计划/目标管理、Shell 模式，以及轨迹（trajectory）事件台账。
@@ -3906,7 +3907,7 @@ dsh plugin --profile web add dshmarket
 - [zhaolianghz/dsh-turnscope](https://github.com/zhaolianghz/dsh-turnscope) — 逐轮次文件变更与逐文件差异、确定性安全结论，外加 preview-first 安全回退：预览不写盘，确认后才应用，工作区在预览后发生漂移则直接拒绝。
 - [zhengjy01/dsh-period-report](https://github.com/zhengjy01/dsh-period-report) — 自由周期会话报告：任意日期区间的 AI 叙事日报/周报/月报，支持每隔 N 天定时提醒并弹系统通知（macOS / Linux）。
 - [zhenyu-24/dsh-workspace-manager](https://github.com/zhenyu-24/dsh-workspace-manager) — 侧栏工作区管理：工作区→会话树形表格，支持按名称与路径搜索、按列排序、未归档会话计数、批量归档、会话与工作区重命名、移除工作区（保留文件与会话日志），并可为每个工作区添加额外源文件夹——作为上下文提供给 AI，不授予文件访问权限；同一套操作也以 workspace_manager 工具暴露。
-- [zhezhi33/dsh-session-recycle](https://github.com/zhezhi33/dsh-session-recycle) — 面向 Windows 的 DSH 会话两段式删除：对话移入回收站、可恢复回侧栏原位置；两段确认式删除，防止误删文件，连带整条子代理树、侧栏账本、投影缓存、日志与专属附件。同时能扫出一条对话真正写过的文件，增加文件查询功能，点击后将路径信息粘贴到对话中，通过Agent来判断哪些文件可以删除；在资源管理器中多选高亮，并复制按类型分好的路径。
+- [zhezhi33/dsh-session-recycler](https://github.com/zhezhi33/dsh-session-recycler) — 面向 Windows 的 DSH 会话两段式删除：对话移入回收站、可恢复回侧栏原位置；两段确认式删除，防止误删文件，连带整条子代理树、侧栏账本、投影缓存、日志与专属附件。同时能扫出一条对话真正写过的文件，增加文件查询功能，点击后将路径信息粘贴到对话中，通过Agent来判断哪些文件可以删除；在资源管理器中多选高亮，并复制按类型分好的路径。
 - [zhou1736948757-cpu/dsh-auto-continue](https://github.com/zhou1736948757-cpu/dsh-auto-continue) — 回答因达到单次输出 token 上限被截断时自动发送"继续"续写，无需手动操作；面向自部署 Ollama 等小输出上限场景。
 - [zhuto666/dsh-compact-agents](https://github.com/zhuto666/dsh-compact-agents) — 模型可调用的 compact_agents 工具：强制压缩进程内所有活会话的上下文（主会话、普通子代理、AgentTeams 成员一视同仁），忙的目标自动排队、本轮结束立即补压，逐目标回报被遮蔽的节点数与估算 token 数；浏览器侧在设置里自成一页，提供触发阈值、保留比例、受控阶段输出预算、自动续写次数与「回合结束预压」比例的编辑表单（一轮结束时上下文已接近触发线就先压一次，避免下一轮回答开头空等）。
 - [ZilongYang/dsh-session-mng](https://github.com/ZilongYang/dsh-session-mng) — 在设置里管理全部 DeepSeek Harness 会话：按工作区分组浏览活跃与已归档会话，为活跃或已归档会话按整段对话生成标题，归档/恢复，把冷会话移动到其他工作区，并在确认后彻底删除已归档会话（含其子代理会话）。
