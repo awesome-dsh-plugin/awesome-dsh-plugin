@@ -1,0 +1,6 @@
+url: https://github.com/iamwuzhanglin/dsh-session-recycler
+name: iamwuzhanglin/dsh-session-recycler
+category: session
+description:
+  en: "Delete a conversation record from the DeepSeek Harness Web UI, with a trash bin to restore or purge it."
+  zh: "在 DeepSeek Harness 网页界面里真正删除会话记录：带可恢复、可彻底清除的回收站。"
