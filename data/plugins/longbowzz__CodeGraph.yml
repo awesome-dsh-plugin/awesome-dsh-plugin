@@ -1,0 +1,6 @@
+url: https://github.com/longbowzz/CodeGraph
+name: longbowzz/CodeGraph
+category: docs
+description:
+  en: Turn code flows into source-linked Mermaid diagrams and interactive CodeWalkthrough explainers.
+  zh: 把代码流程变成可跳转源码的 Mermaid 图和交互式 CodeWalkthrough 讲解页。
