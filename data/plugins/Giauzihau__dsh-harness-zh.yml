@@ -1,0 +1,6 @@
+url: https://github.com/Giauzihau/dsh-harness-zh
+name: Giauzihau/dsh-harness-zh
+category: ui
+description:
+  en: Localizes the prompts DeepSeek Harness sends to the model — system prompt sections, runtime context, tool descriptions and parameter docs — into Simplified Chinese.
+  zh: 把 DeepSeek Harness 发给模型的提示词——系统提示词各段、运行时上下文、工具描述与参数说明——翻译成简体中文。
