@@ -1,0 +1,6 @@
+url: https://github.com/bitqyh/dsh-codex-bridge
+name: bitqyh/dsh-codex-bridge
+category: session
+description:
+  en: 'Lists resumable Codex chats under the DSH composer, grouped by the concrete project each one belongs to, and inserts a mechanically extracted recovery context into the draft without sending it. Project ownership is resolved from the Codex project registry with path-boundary matching and labelled by how reliable it is: recorded session ownership, registered directory, unreadable metadata, or a directory registered under several projects (left unknown rather than guessed). Also reports when the stored autosave is behind the log tail, which usually means the turn ended without a stop.'
+  zh: '在 DSH 输入框下方列出可接续的 Codex 聊天，按每个聊天所属的具体项目分组，把机械提取的恢复上下文插入草稿、不自动发送。项目归属取自 Codex 的项目注册表并做路径边界匹配，同时标注这个判断有多可靠：有记录的会话归属、登记目录、元数据不可读、或同一目录登记给多个项目（后者标为未知而不是猜一个）。存档落后于日志末尾时也会提示——那通常说明该轮没有正常结束。'
