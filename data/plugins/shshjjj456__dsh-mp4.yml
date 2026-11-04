@@ -1,0 +1,6 @@
+url: https://github.com/shshjjj456/dsh-mp4
+name: shshjjj456/dsh-mp4
+category: docs
+description:
+  en: Plays MP4, M4V and MOV videos in the DSH right sidebar using the native video player, replacing the "this file type cannot be previewed" placeholder.
+  zh: 用原生播放器在 DSH 右栏播放 MP4 / M4V / MOV，替掉「此文件类型不支持预览」的占位提示。
