@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'Right-click any selected assistant reply and add it to the composer as a removable quote chip. The selected text is delivered to the model as hidden context, so your message bubble keeps only your own words.'
   zh: '选中助手回复中的一段文字，右键即可「加入对话」，以可移除的引用胶囊放进输入框；发送时原文作为隐藏上下文交给模型，消息气泡里只保留你自己的话。'
+icon: https://raw.githubusercontent.com/zoenghao-gif/dsh-add-to-chat/main/assets/icon-180.png
