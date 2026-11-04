@@ -1,6 +1,6 @@
 url: https://github.com/Giauzihau/dsh-harness-zh
 name: Giauzihau/dsh-harness-zh
-category: ui
+category: tools
 description:
-  en: Localizes the prompts DeepSeek Harness sends to the model — system prompt sections, runtime context, tool descriptions and parameter docs — into Simplified Chinese.
-  zh: 把 DeepSeek Harness 发给模型的提示词——系统提示词各段、运行时上下文、工具描述与参数说明——翻译成简体中文。
+  en: 'Localizes the prompts DeepSeek Harness sends to the model — system prompt sections, runtime context, tool descriptions and parameter docs — into Simplified Chinese. Its Cordis API dictionary is derived from zjl1989-li/dsh-harness-zh-cn (MIT), which translates the same prompt layers at runtime; do not enable both at once.'
+  zh: '把 DeepSeek Harness 发给模型的提示词——系统提示词各段、运行时上下文、工具描述与参数说明——翻译成简体中文。Cordis API 词典派生自 zjl1989-li/dsh-harness-zh-cn（MIT），后者同样在运行时翻译同一批提示词层；不要同时启用两者。'
