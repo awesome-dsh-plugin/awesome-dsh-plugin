@@ -2,6 +2,6 @@ url: https://github.com/liyuhan7/dsh-phone-mirror
 name: liyuhan7/dsh-phone-mirror
 category: remote
 description:
-  en: 'Mirror an Android phone or tablet into the DSH right sidebar over adb and control it with mouse and keyboard, with Opus audio forwarding (Android 11+ for audio); Windows only.'
-  zh: '在 DSH 右侧栏通过 adb 投屏并反控安卓手机/平板，支持 Opus 声音转发（声音需 Android 11+）；仅支持 Windows。'
+  en: 'Mirrors an Android phone or tablet into the DSH right sidebar over adb with mouse and keyboard control, keeping videos, clips and chats next to the desktop instead of in your hand; Opus audio needs Android 11+, Windows only.'
+  zh: '在 DSH 右侧栏通过 adb 投屏并反控安卓手机/平板，视频、短视频和聊天留在电脑上，在工位上不必再拿手机；声音转发需 Android 11+，仅支持 Windows。'
 icon: https://raw.githubusercontent.com/liyuhan7/dsh-phone-mirror/main/docs/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/lucagiftzek/dsh-orchestrator
+name: lucagiftzek/dsh-orchestrator
+category: workflow
+description:
+  en: "An Orchestrate tab in dsh-better-sidebar and 14 orch_* tools to spawn, prompt, fork and cancel agent chats, run command, scrape, http and agent tasks on local, ssh or remote runners, show provider status cards, and serve a secret-protected machine API. Requires DSH >= 0.1.1-rc.1, Node >= 22.5, the web profile and dsh-better-sidebar."
+  zh: '在 dsh-better-sidebar 中提供 Orchestrate 标签页，并有 14 个 orch_* 工具：创建、提示、分叉和取消 agent 会话，在本机、ssh 或远程 runner 上执行 command、scrape、http、agent 四类任务，展示各 provider 状态卡片，并提供受密钥保护的机器 API。需 DSH >= 0.1.1-rc.1、Node >= 22.5、web profile 与 dsh-better-sidebar。'

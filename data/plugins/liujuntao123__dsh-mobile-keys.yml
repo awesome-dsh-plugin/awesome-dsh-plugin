@@ -1,0 +1,6 @@
+url: https://github.com/liujuntao123/dsh-mobile-keys
+name: liujuntao123/dsh-mobile-keys
+category: ui
+description:
+  en: 'Adds a mobile hotkey mode to the DSH web composer that auto-detects touch and mobile devices and switches to Ctrl+Enter for send and plain Enter for a newline while leaving the desktop keymap untouched, with a Settings toggle, a /mobilekeys command and a window.__dshMobileKeys console API.'
+  zh: '为 DSH Web 输入框增加「移动端热键模式」：自动检测移动/触控设备后切换为 Ctrl+Enter 发送、裸 Enter 换行，桌面键位保持不变，并提供设置面板开关、/mobilekeys 命令与 window.__dshMobileKeys 控制台 API。'

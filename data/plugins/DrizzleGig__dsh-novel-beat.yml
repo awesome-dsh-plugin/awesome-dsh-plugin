@@ -1,0 +1,6 @@
+url: https://github.com/DrizzleGig/dsh-novel-beat
+name: DrizzleGig/dsh-novel-beat
+category: workflow
+description:
+  en: 'Plot decision gate for novel writing: five beat_* tools register each node that changes the story into a decision point with 2-4 divergent options, beat_gate returns pass:false until the author picks, and beat_compile turns the picks into a chapter outline.'
+  zh: '小说写作的剧情决策闸：五个 beat_* 工具把会改变故事的节点登记成决策点、给出 2-4 个走向不同的选项，beat_gate 在作者没拍板前返回 pass:false，beat_compile 把拍板结果编译成章节细纲。'

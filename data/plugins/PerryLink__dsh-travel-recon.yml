@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-travel-recon
+name: PerryLink/dsh-travel-recon
+category: workflow
+description:
+  en: 'Travel expense reconciliation: ingest orders, invoices and card lines, deduplicate, run the three-way match and a read-only policy check, then export — 5 `travel.*` tools.'
+  zh: '差旅费用核对：导入订单、发票与卡流水，去重、三单匹配与只读政策校验后导出——5 个 `travel.*` 工具。'

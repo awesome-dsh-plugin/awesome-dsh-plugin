@@ -1,0 +1,6 @@
+url: https://github.com/xianmua/dsh-browser-relay
+name: xianmua/dsh-browser-relay
+category: browser
+description:
+  en: 'Relay that bridges DSH and the browser: tasks started from a browser extension run in DSH sessions, while page operations are driven back through browser_* tools, with an in-page assistant panel and a local wizard for one-click setup.'
+  zh: 'DSH 与浏览器之间的通信桥：浏览器扩展发起的任务经 relay 在 DSH 创建会话执行，页面操作通过 browser_* 工具桥接回扩展，提供页面助手面板与免配置接入向导。'

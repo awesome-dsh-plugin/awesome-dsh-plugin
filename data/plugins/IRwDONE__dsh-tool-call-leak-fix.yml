@@ -1,0 +1,7 @@
+url: https://github.com/IRwDONE/dsh-tool-call-leak-fix
+name: IRwDONE/dsh-tool-call-leak-fix
+category: tools
+description:
+  en: 'Blocks a tool call whose arguments lost their boundary, keeps a closing turn open when a step silently never ran so the model can re-issue it, and replaces damaged output on the model-visible surface after a fork. Zero dependencies.'
+  zh: '拦截参数边界损坏的工具调用；某一步静默失败、turn 即将关闭时保持其打开，让模型重新发起调用；fork 之后把模型可见面上损坏的输出替换为说明。零依赖。'
+icon: https://raw.githubusercontent.com/IRwDONE/dsh-tool-call-leak-fix/main/assets/icon-512.png

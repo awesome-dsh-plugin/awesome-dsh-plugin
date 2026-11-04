@@ -1,0 +1,6 @@
+url: https://github.com/tsurumi-yizhou/dsh-live-notify
+name: tsurumi-yizhou/dsh-live-notify
+category: notify
+description:
+  en: Adds an UpdateNotify tool and a live progress panel docked above the composer in the DSH Web UI, so the model can narrate what it just did, found, or is waiting on while a turn runs.
+  zh: 为模型提供 UpdateNotify 工具，并在 DSH Web UI 输入框上方停靠一个实时进度窗，让模型在一轮任务进行中随时播报刚做了什么、发现了什么、在等什么。

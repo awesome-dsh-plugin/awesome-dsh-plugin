@@ -1,0 +1,6 @@
+url: https://github.com/polychromate/dsh-sidebar-footer-rows
+name: polychromate/dsh-sidebar-footer-rows
+category: ui
+description:
+  en: Stacks the sidebar footer actions into one full-width row each, and lines their icons up on one left edge.
+  zh: 把侧边栏底部的动作按钮改成一行一个、铺满整行，并让各行的图标落在同一条竖线上。
