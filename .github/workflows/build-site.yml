@@ -93,6 +93,7 @@ jobs:
           npm_config_registry: https://registry.npmjs.org/
           npm_config_replace_registry_host: always
       - run: node --test scripts/download-window.test.mjs
+          node --test scripts/probe-versions.test.mjs
       # Rolling probe cache: unique key so every run saves, restore-keys pulls
       # the most recent.
       #
@@ -230,6 +231,11 @@ jobs:
           # re-scans a handful. The scanner is pinned inside the script; it
           # executes nothing from the scanned package and opens no sockets.
           node scripts/probe-capabilities.mjs
+          # Version-only refresh: rewrites data/npm-map.json's version/publishedAt/
+          # enginesDsh from npm on every build, so a plugin published after the
+          # nightly no longer shows yesterday's version for up to 24h (#11337).
+          # Never re-decides the npm/not-on-npm verdict and never blocks the build.
+          node scripts/probe-versions.mjs
           node scripts/build-site.mjs
       - uses: actions/upload-pages-artifact@v3
         with:
