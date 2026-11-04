@@ -2,6 +2,6 @@ url: https://github.com/Ananpng123/dsh-disk-manager
 name: Ananpng123/dsh-disk-manager
 category: ui
 description:
-  en: "Windows disk manager for the DeepSeek Harness right sidebar: volume overview with usage bars, a session-grouped list of the documents each conversation produced, drag files straight into the chat composer, multi-select with batch delete to Recycle Bin, an expandable folder tree with real app icons, workspace documents no session touched, on-demand folder sizes, and an explorer-style context menu. Delete goes to the recycle bin."
-  zh: "DSH 右栏里的 Windows 磁盘管理：卷总览带用量条、按会话分组列出每次对话产出的文档、把文件直接拖进对话输入框、多选与批量删除（只进回收站）、可展开的目录树带程序真图标、补上会话没碰过的工作区文档、按需统计文件夹大小，右键菜单对齐资源管理器；删除一律进回收站。"
+  en: "Windows disk manager for the DeepSeek Harness right sidebar: volume overview with usage bars, a session-grouped list of the documents each conversation produced, drag files straight into the chat composer, multi-select with batch delete to Recycle Bin, an expandable folder tree with real app icons, workspace documents no session touched, automatic per-folder size scan with ratio bars and a treemap view, a right-click \"quote to conversation\" action that drops a file name or a folder path into the composer, and an explorer-style context menu. Delete goes to the recycle bin."
+  zh: "DSH 右栏里的 Windows 磁盘管理：卷总览带用量条、按会话分组列出每次对话产出的文档、把文件直接拖进对话输入框、多选与批量删除（只进回收站）、可展开的目录树带程序真图标、补上会话没碰过的工作区文档、进目录自动统计子目录体积并用占比条与方块视图展示、右键可把文件名或文件夹路径引用到对话、右键菜单对齐资源管理器；删除一律进回收站。"
 icon: https://raw.githubusercontent.com/Ananpng123/dsh-disk-manager/main/assets/icon-180.png
