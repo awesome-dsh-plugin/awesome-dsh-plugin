@@ -2,4 +2,5 @@ url: https://github.com/bulkpublish/dsh-plugin-bulkpublish
 name: bulkpublish/dsh-plugin-bulkpublish
 category: tools
 description:
-  en: Connects dsh to the BulkPublish MCP server to draft, schedule, publish and analyse social media posts across 15 platforms, authenticated with a BulkPublish API key sent as a bearer token.
+  en: Connects dsh to the BulkPublish MCP server (32 tools) to draft, schedule, publish and analyse social media posts, manage media, and handle inbox conversations and comments across 15 platforms, authenticated with a BulkPublish API key sent as a bearer token.
+icon: https://raw.githubusercontent.com/bulkpublish/dsh-plugin-bulkpublish/main/assets/logo.png
