@@ -1,0 +1,7 @@
+url: https://github.com/MingoYung/dsh-superagent-power
+name: MingoYung/dsh-superagent-power
+category: ui
+description:
+  en: Adds a shared Sup composer switch on Windows to start or gracefully stop a separate Super-agent process and release its memory.
+  zh: 在 Windows 输入栏添加全局 Sup 开关，按需启动或正常关闭独立的 Super-agent 后台进程，关闭后释放其占用的内存。
+tarball: https://github.com/MingoYung/dsh-superagent-power/releases/download/v0.1.0/local-superagent-power-0.1.0.tgz
