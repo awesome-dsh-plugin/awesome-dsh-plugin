@@ -4706,6 +4706,7 @@ dsh plugin --profile web add dshmarket
 - [JularDepick/dsh-wakatime-plugin](https://github.com/JularDepick/dsh-wakatime-plugin) — 将DSH的每一次Agent交互量化为可视化表现指标并自动同步至WakaTime,用数据展示你与Agent协作的生产力
 - [JunKoProject/dsh-read-book](https://github.com/JunKoProject/dsh-read-book) — 一个窗口同时搜四家免费图书馆：Project Gutenberg 走 OPDS 目录，书格走 WordPress 检索再取每本书页面上的 s.shuge.org 下载短链，国家哲学社会科学文献中心走它的 Solr 检索接口。中国哲学书电子化计划刻意只给链接——它明令禁止程序化抓取。两个工具：readbook_search 与 readbook_open，后者给 Gutenberg 和书格的真实下载地址，NCPSSD 只给页面链接。
 - [justinzyc271828-sys/dsh-ai-jobs](https://github.com/justinzyc271828-sys/dsh-ai-jobs) — 索引海外 AI 公司的公开招聘看板（Greenhouse、Ashby、Lever、Workable、SmartRecruiters），按 AI 相关性给岗位打分，从职位描述里提取招聘要求，并按计划每天生成 Markdown 摘要。
+- [dsh-baidu-netdisk](https://github.com/justinzyc271828-sys/dsh-baidu-netdisk) — 百度网盘 MCP 插件，支持在 DeepSeek Harness 中搜索网盘文件、查看文件信息和查询容量。安装后需授权百度账号。
 - [k0ndrateff/dsh-plugins#atlassian](https://github.com/k0ndrateff/dsh-plugins/tree/main/packages/atlassian) — 把 Jira 与 Confluence 接进 DeepSeek Harness：提供 Atlassian 远程 MCP 服务器的工具、问题与页面的结果卡片，以及问题面板。
 - [Kagurazaka135/dsh-web-search-free](https://github.com/Kagurazaka135/dsh-web-search-free) — 多后端自动降级的 WebSearchProvider：依次尝试 Exa、Bing HTML、DuckDuckGo HTML，都失败后才动用有额度的 SerpAPI，日常搜索由免费档承担。
 - [kaiwangleo/xiwen#dsh-xiwen](https://github.com/kaiwangleo/xiwen/tree/master/plugins/dsh-xiwen) — 基于人工维护的表、字段和指标语义元数据，结合 Qdrant 与 Elasticsearch 召回，通过析问服务生成、校验并执行 MySQL 分析查询。
@@ -5260,6 +5261,7 @@ dsh plugin --profile web add dshmarket
 - [WindyPro-rourou/dsh-logcat](https://github.com/WindyPro-rourou/dsh-logcat) — DSH Web GUI 安卓实机调试工作台：自动附加 logcat 流（级别/关键词过滤、崩溃自动快照），真机屏幕实时投屏与远程点击/滑动/文字操控，内存/进程/frida 逆向工具链，30 个 agent 工具。
 - [wing-tn/astro-ph-researcher](https://github.com/wing-tn/astro-ph-researcher) — 面向天文的 DSH/Codex 研究工作台：NADC 术语、参考文献库、写作、评分、作者确认、推荐书籍、FITS/XML 格式与分析引导。
 - [wingsky-1/dsh-plugin-hub#packages/dsh-mcp-manager](https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-mcp-manager) — MCP 服务器管理器（stdio / streamable-http）：按工作目录分项目级/全局两级配置；项目级 MCP 默认经中间层收敛为 4 个原子工具（`middleware: all` 连同全局服务器一并收敛，设置页热切换）；工作空间隔离防串台；配置只存 `${ENV}` 引用、不落盘明文密钥；提供运行时注册接口供其他插件注入 MCP。
+- [Wiselfx/dsh-freeweb](https://github.com/Wiselfx/dsh-freeweb) — Keyless web-search provider for DeepSeek Harness: Startpage, DuckDuckGo, Exa, and more behind a consensus fan-out.
 - [wjf1/dsh-portable](https://github.com/wjf1/dsh-portable) — 把整套可用的 DSH 主目录——profile、带 node_modules 的已装插件、技能、hooks 与任务板——打包成单个 .dshpkg，在另一台机器上免联网、免 pnpm 还原；也支持 HTTP 上传与一次性局域网链接。
 - [wjt0321/dsh-git-proxy](https://github.com/wjt0321/dsh-git-proxy) — Web UI 按需 GitHub 代理：一键开关 git/SSH 代理并测试连通性。
 - [wlc114514/dsh-upload-origin](https://github.com/wlc114514/dsh-upload-origin) — 通过文件名、大小和 sha256 反查上传到 .dsh-uploads 的文件在本地原始位置的绝对路径。
@@ -6297,7 +6299,7 @@ dsh plugin --profile web add dshmarket
 - [liuli-zsl/dsh-unreal-engine-skills](https://github.com/liuli-zsl/dsh-unreal-engine-skills) — 注册 Epic 的 Unreal Engine 三个技能（unreal-mcp、create-toolset、unreal-skill），注入 UE 工程上下文，接通编辑器的 ModelContextProtocol 服务器，并支持在插件页修改端口。
 - [lnsdlszsqxxx/dsh-courseware](https://github.com/lnsdlszsqxxx/dsh-courseware) — 拿用户自己的 .pptx 模板 + 一份课程大纲（教案/文档/纯文本），产出套用该模板背景、配色、字体、页面骨架的课件 .pptx。纯插件包，无内置密钥，图片后端需用户自行配置。
 - [Lohaslee/dsh-super-pm](https://github.com/Lohaslee/dsh-super-pm) — DeepSeek Harness 的产品思考助手：先明确负向边界，拆开事实与假设，经七套产品视角讨论取舍，并将确认的决策沉淀到项目记忆中。
-- [Lumos-789/delivery-video-plugin](https://github.com/Lumos-789/delivery-video-plugin) — 把真实运行的功能做成可信交付演示视频：真实录屏、edge-tts 旁白与逐字对齐字幕、自包含 ffmpeg 管线，配一道拒绝放过造假或残次演示的确定性质量闸（规格、音轨、响度、黑帧/冻结/静音扫描），含渲染前预检与成片证据核验。需 Python 3.9+、PATH 上的 ffmpeg/ffprobe，以及 `pip install edge-tts Pillow`；旁白会调用 edge-tts 公共接口。
+- [Lumos-789/delivery-video-plugin](https://github.com/Lumos-789/delivery-video-plugin) — 把真实运行的功能做成可信交付演示视频，或把缺陷做成可追溯的问题反馈视频：真实录屏、edge-tts 旁白与逐字对齐字幕、自包含 ffmpeg 管线，配一道拒绝放过造假或残次演示的确定性质量闸（规格、音轨、响度、黑帧/冻结/静音扫描），含渲染前预检与成片证据核验。反馈模式带严重级别/阶段徽标、复现步骤浮层，以及按成片 SHA256 绑定的工单级问题报告。需 Python 3.9+、PATH 上的 ffmpeg/ffprobe，以及 `pip install edge-tts Pillow`；旁白会调用 edge-tts 公共接口。
 - [Lumos-789/react-monitor-agent](https://github.com/Lumos-789/react-monitor-agent) — 安装壳技能：安装、跑起并排障 React-Monitor-Agent 人机协作操作板——agent 把工作过程写成由录屏、截图、diff、文本节点组成的结构化回放时间线，人在方案/阶段/风险/完工四类检查点上拍板，决策改变时间线走向，被否定/改向的旧分支灰掉保留以供审计。技能引导克隆主仓，启动零依赖 Node 事件服务（127.0.0.1:8790）与 React 操作板（localhost:5173），操作板内置离线 FIXTURE 演示模式。bundle 只内嵌技能，产品源码以主仓为准。
 - [Lumos-789/VoiceTranser](https://github.com/Lumos-789/VoiceTranser) — macOS 本地按住说话语音输入：按住全局热键说话、松开即转写粘贴到光标处。纯本地 STT（默认 Qwen3-ASR 0.6B 4bit 走 MLX/Metal，SenseVoice / mlx-whisper 双 fallback），零外部 API，launchd 自愈常驻 + 8 项自检。内置技能让 agent 代你完成安装、Karabiner 热键接线、launchd 配置、引擎切换与全链排障。
 - [lunw/shopline-ai-toolkit-dsh](https://github.com/lunw/shopline-ai-toolkit-dsh) — SHOPLINE AI 工具包：接入 SHOPLINE 官方开发者 MCP 服务器，内置七个 SHOPLINE 平台技能（Admin REST、GraphQL、OAuth、Webhook、Sline），是 Shopify AI Toolkit 的 SHOPLINE 对应版。
