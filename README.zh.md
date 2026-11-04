@@ -1756,7 +1756,7 @@ dsh plugin --profile web add dshmarket
 - [yzhclcl/dsh-plan-build-mode](https://github.com/yzhclcl/dsh-plan-build-mode) — DeepSeek Harness 的 Plan / Build 模式切换：在输入框「完全权限」旁常驻一个下拉框，经内置的 /plan 与 /plan off 命令双向切换当前会话；设置 → 通用里另有一行「默认模式」，决定新建会话的起始模式。
 - [yzyg6/dsh-splitview](https://github.com/yzyg6/dsh-splitview) — 为 DSH 提供拖拽分屏和横向会话标签，保留每个标签的阅读位置，并在刷新或重启后恢复布局。
 - [YZz-S/dsh-workspace-files-explorer](https://github.com/YZz-S/dsh-workspace-files-explorer) — 悬浮工作区文件树浏览器：带行号的代码语法高亮与 Markdown 富文本预览。
-- [z1223473749/dsh-QiuYaTools](https://github.com/z1223473749/dsh-QiuYaTools) — 长文本附件、会话分窗、批量归档、计划批注、菜单增强、提示词建议和可选 Q 主题。电脑操控已在 0.6.x 上线且默认开启，需授予屏幕录制与辅助功能权限；提示词建议使用当前模型，会产生少量额外用量。
+- [z1223473749/dsh-QiuYaTools](https://github.com/z1223473749/dsh-QiuYaTools) — AI 智能动效主题、电脑操控、独立窗口、附件预览、Git 管理、会话分窗与批注、跨应用文件拖拽、AI 提示词。
 - [Zai-G/dsh-preset-workshop](https://github.com/Zai-G/dsh-preset-workshop) — 预设工作台：逐方案编辑人设、系统提示词段和工具描述，选择工具与技能，预览请求组成，并通过 JSON / YAML 导入导出配置。
 - [zclDragon/dsh-side-chat](https://github.com/zclDragon/dsh-side-chat) — Codex 风格 /side 侧边对话插件：在当前对话旁开一个浮动分叉面板，继承上下文、不打断主任务。
 - [zealot00/dsh-pet](https://github.com/zealot00/dsh-pet) — DSH Web UI 桌面宠物：精灵图动画、agent 状态联动、拖拽、闹钟（每天/一次）与番茄钟，皮肤下拉选择 + 预览。
@@ -4891,6 +4891,7 @@ dsh plugin --profile web add dshmarket
 - [Negulons/dsh-freecad](https://github.com/Negulons/dsh-freecad) — 通过 FreeCAD 读写 STEP 模型、量取几何尺寸（距离、角度、直径），并生成带孔表的第一角法二维加工图，可导出 SVG、DXF、PDF、PNG。
 - [NeptuneRY/dsh-deepsearch](https://github.com/NeptuneRY/dsh-deepsearch) — DSH 右侧栏里的多轮深度搜索：每一轮都在上一轮的基础上继续深挖，最后产出带引用的调研报告。
 - [nicecx/insta360-ai-content-studio](https://github.com/nicecx/insta360-ai-content-studio) — Insta360 GO 3S 自动每日内容管线：BLE/WiFi 遥控拍摄鱼缸素材、无线取回、ffmpeg 质量评估与决策记录、自动剪辑（选段/旁白/配乐/字幕）、biliup 投稿（默认 dry-run）。
+- [nick-lei/Zuad-deepseek](https://github.com/nick-lei/Zuad-deepseek) — 通过 DeepSeek Harness 管理 Zuad 数字标牌节目、素材、播放排程和设备。
 - [NIDEXIANG/dwg-reader-plugin-20261029](https://github.com/NIDEXIANG/dwg-reader-plugin-20261029) — DSH 插件：直接读取 DWG/DXF 图纸、PDF 与图片，无需安装 AutoCAD 或 Tesseract；DXF 需本机安装 Python 3 与 ezdxf。
 - [ninetyhe-90/dsh-decision-review](https://github.com/ninetyhe-90/dsh-decision-review) — 让主模型把已形成的决策交给独立评审模型复核，支持 off、shadow、advisory 三种模式；需自备实现 POST /v1/decision 的复核服务。
 - [NingYuanLee/dsh-tavily-mcp](https://github.com/NingYuanLee/dsh-tavily-mcp) — 接入 Tavily 托管的 MCP 服务器并注册它公布的工具。API Key 从 TAVILY_API_KEY 凭据读取，不写入插件配置。
@@ -5010,6 +5011,7 @@ dsh plugin --profile web add dshmarket
 - [rebornace/dsh-tracescope#dsh-tracescope](https://github.com/rebornace/dsh-tracescope/tree/main/packages/dsh-tracescope) — DSH 右侧栏插件：对比两个 git 提交，根据影响面生成手测清单，支持失败备注、截图、任务附件，以及向云效 / GitHub / GitLab / Webhook 提交缺陷。
 - [rebron1900/dsh-web-search-9router](https://github.com/rebron1900/dsh-web-search-9router) — 为 DeepSeek Harness 提供 9router 网页搜索与抓取。启用插件包后自动接管原生 web_search/web_fetch，停用后恢复其余配置层的提供方选择。
 - [recued/dsh-recued](https://github.com/recued/dsh-recued) — 把你自己搭建的 Recued 服务器接成 MCP 服务，让 agent 读取你的笔记、任务与物品，并提交需要你在 Recued 里确认的修改。
+- [redkiller79/dsh-libtv](https://github.com/redkiller79/dsh-libtv) — 把 LibTV 的画布与媒体生成能力接进 DeepSeek Harness，随包附带三个导演技能，首次使用微信扫码授权一次即可。
 - [refkitjs/dsh-plugin](https://github.com/refkitjs/dsh-plugin) — DeepSeek Harness 的参考素材检索插件：refkit_search 在 24 个开放来源中检索图片、视频、音频和文本参考素材，为每条结果标注规范化的许可证和针对用途的可用性判定；refkit_rights 针对另一种用途复核单条许可证。来源 key 与检索参数在设置页配置。24 个来源中 11 个需要 API key；仅在传入用途时返回可用性判定。支持 DSH ^0.1.7-rc.2 || ^0.2.1-rc.2（实测 0.1.7-rc.2 与 0.2.1-rc.2）。
 - [residenthiago2011/DSH-Tool-Router](https://github.com/residenthiago2011/DSH-Tool-Router) — 通过决策模型 API 把工具 schema 从模型 prefill 中隐藏，每次按需揭示一个工具。需运行决策模型 API 端点，且 PATH 中有 pnpm。
 - [Rexopia/dsh-plugin-knowra](https://github.com/Rexopia/dsh-plugin-knowra) — 接入 Knowra 托管 MCP：无需账号即可按主题、作者或精确 UTC 日期检索 arXiv 论文；在插件页用 OAuth 登录后可读取 Scout 报告（方法、证据与局限）。
@@ -8431,6 +8433,7 @@ dsh plugin --profile web add dshmarket
 - [darkings/dsh-plugin-update-center](https://github.com/darkings/dsh-plugin-update-center) — 尊重 DSH 原始风格的插件更新插件：在侧边栏检查、排队更新已安装插件，支持快照回滚、安装后校验、卸载残留清理与离线恢复。
 - [Diluka/dsh-agent-plugin-market](https://github.com/Diluka/dsh-agent-plugin-market) — 在网页设置页管理基于 Git 的 DSH 插件市场、已安装的 agent 技能和可选 Codex hooks。
 - [DogEgg-alR/dsh-plugin-installer](https://github.com/DogEgg-alR/dsh-plugin-installer) — 在插件页的一个标签里安装、更新和卸载 DSH 插件。安装直接调用 profile 进程内的 pluginManager 服务，因此桌面端运行中也能装，不必只靠命令行。更新委托给 dsh-market 的公开 update API v1（该区需要装 dsh-market），把市场报告的阶段、百分比与已下载字节显示成进度条，市场提供恢复点时给出一键回滚。卸载被「插件正在使用中」拒绝时，先停用该组合包，再从 profile 清单里摘除，并把残留文件记入 profile 下的待清理队列，下次启动后自动清扫。
+- [dolacmeo/dsh-restart-and-update](https://github.com/dolacmeo/dsh-restart-and-update) — 在侧栏更新插件并显示发布时间：锁定精确版本，装完回读磁盘清单确认已到位；需要完全重启才生效的更新会计到重启按钮上，而完全重启经 WMI 拉起替代进程，新进程不继承任何控制台。
 - [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) — 在 DeepSeek Harness 设置页内浏览、搜索并安装社区插件，支持分类筛选、一键更新与停用，以及主题切换与配置备份。
 - [dsh-research/dsh-research](https://github.com/dsh-research/dsh-research) — 精选科研插件市场：在设置里加一页「科研插件」，收录逐个读过代码的文献检索、文献管理、写作与科研工作台插件——一键安装、更新、卸载并钉住审读过的版本，面板内重启，只发一个网络请求（拉取自家目录）。
 - [dshhub-co/dshhub-market](https://github.com/dshhub-co/dshhub-market) — DeepSeek Harness 口令插件市场：输入 6 位口令解锁并安装创作者分享的插件，附带主题、备份、更新与诊断。
