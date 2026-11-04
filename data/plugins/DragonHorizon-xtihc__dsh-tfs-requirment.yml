@@ -1,0 +1,6 @@
+url: https://github.com/DragonHorizon-xtihc/dsh-tfs-requirment
+name: DragonHorizon-xtihc/dsh-tfs-requirment
+category: tools
+description:
+  en: TFS requirement-driven DSH task board that pulls requirements, decomposes tasks, dispatches to agents, and writes back to TFS.
+  zh: TFS 需求驱动的 DSH 任务看板插件，拉取需求、拆解任务、指派智能体执行并回写 TFS。

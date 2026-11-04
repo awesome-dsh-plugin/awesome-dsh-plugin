@@ -1,0 +1,6 @@
+url: https://github.com/DragonHorizon-xtihc/dsh-connect-trae-models
+name: DragonHorizon-xtihc/dsh-connect-trae-models
+category: model
+description:
+  en: Aggregate multiple Trae accounts into a failover model pool with auto rotation, daily check-in, and credit expiry alerts.
+  zh: 把多个 Trae 账号聚合成自动容错换号的模型池，支持多账号轮转、自动签到与积分到期提醒。

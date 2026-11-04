@@ -1,0 +1,6 @@
+url: https://github.com/DragonHorizon-xtihc/dsh-connect-workbuddy-models
+name: DragonHorizon-xtihc/dsh-connect-workbuddy-models
+category: model
+description:
+  en: Aggregate all local WorkBuddy accounts into a model pool with auto-discovery, check-in, expiry alerts, and account switching.
+  zh: 把本机所有 WorkBuddy 登录账号聚合成模型池，支持自动发现、签到、到期提醒与账号切换。

@@ -1,0 +1,6 @@
+url: https://github.com/DragonHorizon-xtihc/dsh-optimized-tools
+name: DragonHorizon-xtihc/dsh-optimized-tools
+category: tools
+description:
+  en: Host plus browser dual-half plugin that filters visible tools, MCP tools, and skills per session with fail-open policy.
+  zh: 按会话可见性裁剪 Tool、MCP 工具与 Skill 的宿主加浏览器双半插件，带 Fail Open 策略。
