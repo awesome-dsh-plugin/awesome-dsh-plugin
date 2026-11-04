@@ -1,0 +1,7 @@
+url: https://github.com/yinqiang/dsh-plugins/tree/main/packages/dsh-theme-picker
+name: yinqiang/dsh-plugins#dsh-theme-picker
+category: theme
+description:
+  en: 'Install any number of theme packs and switch between them instantly, with no reload and no first-paint flash.'
+  zh: '装任意多个主题包并随时切换，不用重启，首帧不闪。'
+# tarball: https://github.com/yinqiang/dsh-plugins/releases/latest/download/dsh-theme-picker.tgz
