@@ -1,0 +1,6 @@
+url: https://github.com/lol9706262-source/dsh-cover
+name: lol9706262-source/dsh-cover
+category: voice
+description:
+  en: 'One-line song cover: fetch a track or take a local file, split stems, derive a key shift, run RVC conversion through Applio, align the vocal, mix three variants and gate the master — nine stages across three tools, zero npm dependencies.'
+  zh: 一句话翻唱：取源或直接用本地文件、分轨、自动定调、经 Applio 跑 RVC 换声、对齐人声、混出三档、过闸门再导出——九个阶段、三个工具、零 npm 依赖。
