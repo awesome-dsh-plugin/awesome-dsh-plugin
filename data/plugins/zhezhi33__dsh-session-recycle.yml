@@ -1,6 +1,7 @@
 url: https://github.com/zhezhi33/dsh-session-recycle
-name: zhezhi33/dsh-session-recycler
+name: zhezhi33/dsh-session-recycle
 category: session
 description:
   en: 'Two-stage session deletion for DSH on Windows: move a conversation to the recycle bin and restore it to its original sidebar slot; deletion confirmed in two steps to prevent deleting files by mistake, clearing the whole subagent tree, sidebar ledger, projection cache, log lines and exclusive attachments along the way. It also scans the files a conversation actually wrote, adds a file query that pastes the path information into the conversation so an agent can judge which files are safe to delete, highlights them in Explorer, and copies the paths grouped by type.'
-  zh: 闈㈠悜 Windows 鐨?DSH 浼氳瘽涓ゆ寮忓垹闄わ細瀵硅瘽绉诲叆鍥炴敹绔欍€佸彲鎭㈠鍥炰晶鏍忓師浣嶇疆锛涗袱娈电‘璁ゅ紡鍒犻櫎锛岄槻姝㈣鍒犳枃浠讹紝杩炲甫鏁存潯瀛愪唬鐞嗘爲銆佷晶鏍忚处鏈€佹姇褰辩紦瀛樸€佹棩蹇椾笌涓撳睘闄勪欢銆傚悓鏃惰兘鎵嚭涓€鏉″璇濈湡姝ｅ啓杩囩殑鏂囦欢锛屽鍔犳枃浠舵煡璇㈠姛鑳斤紝鐐瑰嚮鍚庡皢璺緞淇℃伅绮樿创鍒板璇濅腑锛岄€氳繃Agent鏉ュ垽鏂摢浜涙枃浠跺彲浠ュ垹闄わ紱鍦ㄨ祫婧愮鐞嗗櫒涓閫夐珮浜紝骞跺鍒舵寜绫诲瀷鍒嗗ソ鐨勮矾寰勩€?# 棰勬瀯寤哄寘锛氬繀椤绘寚鍚?npm 鍖呮牸寮忕殑 .tgz锛坧npm 鍙杩欑锛夈€?# 鏈湴浜х墿 dsh-session-recycler-0.2.2.tgz 鐢?宸ュ叿\淇濆瓨椤圭洰.ps1 鐢?npm pack 鐢熸垚锛岄《灞傛槸 package/銆?# 鍙戝畬 v0.2.2 鐨?GitHub Release锛堟妸 tgz 褰撹祫浜т笂浼狅級涔嬪悗锛岃繖涓湴鍧€鎵嶇湡姝ｅ彲鐢ㄣ€?tarball: https://github.com/zhezhi33/dsh-session-recycle/releases/download/v0.2.2/dsh-session-recycler-0.2.2.tgz
+  zh: 面向 Windows 的 DSH 会话两段式删除：对话移入回收站、可恢复回侧栏原位置；两段确认式删除，防止误删文件，连带整条子代理树、侧栏账本、投影缓存、日志与专属附件。同时能扫出一条对话真正写过的文件，增加文件查询功能，点击后将路径信息粘贴到对话中，通过Agent来判断哪些文件可以删除；在资源管理器中多选高亮，并复制按类型分好的路径。
+tarball: https://github.com/zhezhi33/dsh-session-recycle/releases/download/v0.2.2/dsh-session-recycler-0.2.2.tgz
