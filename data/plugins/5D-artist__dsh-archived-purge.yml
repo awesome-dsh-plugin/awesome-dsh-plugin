@@ -1,0 +1,7 @@
+url: https://github.com/5D-artist/dsh-archived-purge
+name: 5D-artist/dsh-archived-purge
+category: session
+description:
+  en: 'Select-all cleanup for archived DeepSeek Harness sessions: permanently deletes the session log, projection cache, workspace accounting and archive marker, and cascades subagent logs.'
+  zh: 'DSH 归档会话清理：全选并永久删除归档会话的会话日志、投影缓存、工作区记账与归档标记，并级联清理其子代理日志。'
+icon: https://raw.githubusercontent.com/5D-artist/dsh-archived-purge/main/assets/icon-180.png
