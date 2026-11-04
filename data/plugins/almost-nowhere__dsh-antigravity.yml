@@ -1,0 +1,6 @@
+url: https://github.com/almost-nowhere/dsh-antigravity
+name: almost-nowhere/dsh-antigravity
+category: model
+description:
+  en: Google Antigravity model provider based on LiZhenNet/dsh-antigravity, with a multi-account pool added.
+  zh: Google Antigravity 模型提供商插件，基于 LiZhenNet/dsh-antigravity，增加了账号池。
