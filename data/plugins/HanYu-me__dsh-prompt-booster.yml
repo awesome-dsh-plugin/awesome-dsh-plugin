@@ -1,0 +1,8 @@
+url: https://github.com/HanYu-me/dsh-prompt-booster
+name: HanYu-me/dsh-prompt-booster
+category: session
+description:
+  en: 'Prompt booster for the composer. Left-click the composer button and the draft is lightly polished and replaced in place (undoable, no popup). Right-click opens a menu with 8 built-in modes plus your own, where each mode''s template can be edited or new modes added (saved on the host), and the model used for the rewrite is picked from the live dsh model list. Other modes show a before/after preview. Based on rongxingda/dsh-prompt-enhance (Apache-2.0).'
+  zh: '输入框提示词提升。左键点击输入框按钮，草稿被轻度润色后直接替换（可撤销、不弹窗）；右键打开模式菜单：8 个内置模式加自定义模式，每个模式的模板可编辑、可新增（保存在宿主端），并可从 dsh 当前可用的模型列表中选择改写所用的模型；其他模式先显示前后对比预览。基于 rongxingda/dsh-prompt-enhance（Apache-2.0）修改。'
+icon: https://raw.githubusercontent.com/HanYu-me/dsh-prompt-booster/main/assets/icon-180.png
+tarball: https://github.com/HanYu-me/dsh-prompt-booster/releases/latest/download/dsh-prompt-booster.tgz
