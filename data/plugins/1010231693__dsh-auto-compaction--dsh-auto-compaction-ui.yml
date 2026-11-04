@@ -1,5 +1,5 @@
-url: https://github.com/1010231693/dsh-auto-compaction
-name: 1010231693/dsh-auto-compaction
+url: https://github.com/1010231693/dsh-auto-compaction/tree/master/packages/dsh-auto-compaction-ui
+name: 1010231693/dsh-auto-compaction#dsh-auto-compaction-ui
 category: session
 description:
   en: 'A session auto-compaction plugin that is friendly to local models: compaction never makes the local engine re-read history, saving a lot of time; the trigger point and the saved content of the compacted session are user-configurable.'
