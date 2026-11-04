@@ -1,0 +1,6 @@
+url: https://github.com/red000000/dsh-bili-music-player
+name: red000000/dsh-bili-music-player
+category: voice
+description:
+  en: Bilibili music player for the DSH composer dock, with profile-based recommendation, soft like/skip/dislike feedback, online discovery, and progressive playback.
+  zh: 在 DSH 输入框上方点播 B 站音乐，按听歌画像推荐、支持喜欢/跳过/不喜欢软反馈，画像听穿后自动在线找新歌。
