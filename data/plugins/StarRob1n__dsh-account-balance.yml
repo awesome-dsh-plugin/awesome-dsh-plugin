@@ -1,0 +1,6 @@
+url: https://github.com/StarRob1n/dsh-account-balance
+name: StarRob1n/dsh-account-balance
+category: usage
+description:
+  en: Floating ball showing the signed-in DeepSeek account balance (OAuth), with live pricing, today's price curve and a token-consumption estimate range.
+  zh: 悬浮球显示已登录 DeepSeek 账户余额（OAuth），附带实时价格、今日价格走势与 token 消耗估算区间。
