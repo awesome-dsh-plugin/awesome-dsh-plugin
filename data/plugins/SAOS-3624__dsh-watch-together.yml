@@ -1,0 +1,6 @@
+url: https://github.com/SAOS-3624/dsh-watch-together
+name: SAOS-3624/dsh-watch-together
+category: voice
+description:
+  en: 'Watch a video together with a text-only agent: it follows your real playback position reported by the browser extension (not a timer), hands over one segment at a time just before that segment ends, and answers out loud in a floating window while the video keeps playing.'
+  zh: '和只有文字的智能体一起看视频：跟着你真实的播放位置（浏览器扩展上报，不是定时器），在每段结束前把画面和台词交到它手上，它一边看一边在悬浮窗里出声回应，视频不打断。'
