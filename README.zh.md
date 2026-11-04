@@ -4524,7 +4524,7 @@ dsh plugin --profile web add dshmarket
 - [fireworksss/LeisureTimeQueue](https://github.com/fireworksss/LeisureTimeQueue) — LeisureTimeQueue 是一个基于 DeepSeek Harness 的本地闲时任务队列插件。
 - [Fish121380/auto-mouse](https://github.com/Fish121380/auto-mouse) — 面向 Codex、DeepSeek Harness 和 MCP 客户端的 Windows 桌面 UI 上下文取景器：选择窗口、UI 元素或屏幕区域，使用悬停高亮、UI Automation、截图和本机 OCR，并在输出前确认 Markdown/JSON 上下文。
 - [fishcg/cua-computer-use](https://github.com/fishcg/cua-computer-use) — 把 Cua Driver 的 MCP 服务器接入 DSH：缺失时自动安装 cua-driver，经内置 MCP 客户端以 stdio 启动，注册其 60 个无障碍优先的窗口、输入、菜单与浏览器工具，并附带工作流技能与一次性的 macOS 权限引导。
-- [fishdivinity/dsh-local-search](https://github.com/fishdivinity/dsh-local-search) — 只读的本机检索：文件名走 Everything（es.exe），PDF / Office 文档正文走 Anytxt，共五个只读工具。两个引擎都要另装，仅支持 Windows。
+- [fishdivinity/dsh-local-search](https://github.com/fishdivinity/dsh-local-search) — 本机文件搜索与文档全文搜索（全文检索）：文件名走 Everything（es.exe），磁盘上的 PDF / DOCX / XLSX / PPTX / EPUB 正文走 Anytxt，五个只读工具；两个引擎需另装，仅支持 Windows。
 - [Fishquito7/dsh-gitbash](https://github.com/Fishquito7/dsh-gitbash) — 在 Windows 上把 DSH 原版 bash 工具挂到 Git Bash 上运行，命令直达 bash -c，不再经 pwsh 工具二次解析。
 - [Fishsb/dsh-prompt-enhancer](https://github.com/Fishsb/dsh-prompt-enhancer) — 一键提示词增强（5 模式·记忆链·模型链）+ 语音识别（云端 Qwen3-ASR / 本地 SenseVoice 离线，说完自动停），附服务异常一键重启。
 - [fj7937290-sys/dsh-video-remix](https://github.com/fj7937290-sys/dsh-video-remix) — 把文案变成带配音的讲解视频：默认用文字卡片（快且准确，适合教程），也可逐段调用 AI 生成真实画面（需 AGNES_API_KEY）；内置 14 个在线中文神经音色和 3 个离线 Windows 音色，一条命令即可生成全部音色的试听包。前置需要 ffmpeg，并把仓库内的 video-remix skill 放到 <工作区>/.dsh/skills/video-remix 后在该目录执行 npm install（在线音色所需）。
@@ -6564,7 +6564,7 @@ dsh plugin --profile web add dshmarket
 - [fashionmascherine-svg/formalswarm](https://github.com/fashionmascherine-svg/formalswarm) — 运行「正题—反题—封印」三方辩论，其结论由真实命令的退出码与用例数计算得出，绝不采信智能体的文字陈述。
 - [february2015/dsh-taskswarm](https://github.com/february2015/dsh-taskswarm) — TaskPlane 的 DSH 移植版：按依赖分波、多 lane 并行执行（git worktree 隔离），任务包 + 跨模型评审 + 崩溃可恢复。
 - [FengHuoLinShan/novelAssist-dsh#novelcraft-dsh](https://github.com/FengHuoLinShan/novelAssist-dsh/tree/main/plugin) — 长篇小说写作插件：每本书一个 git 仓库，当前 39 个 DSH 领域工具 + Web 写作台；深度导入产候选草稿、AI 采用类写入正式资产前必过审批、确定性连续性检查（报告型）。独立开源（MIT），非 DeepSeek 官方产品；需 Node ≥ 24.11.0，当前适配 DSH 0.1.2-rc.1。
-- [fengshenx/dsh-leader-kit](https://github.com/fengshenx/dsh-leader-kit) — 一个 leader 管多个 session：把目标告诉 leader，它拆成卡片、在后台跑常驻 worker 会话、收齐各自回报，任务事实落在右侧栏的按项目看板——几个 feature 并行推进，而不是逐个陪跑。项目级 LEADER.md 与 SLOTS.md 塑造每次请求的行为，`read_worker_session` 只读回放 worker 的会话过程、不唤醒它。
+- [fengshenx/dsh-leader-agent](https://github.com/fengshenx/dsh-leader-agent) — 一个 leader 管多个 session：把目标告诉 leader，它拆成卡片、在后台跑常驻 worker 会话、收齐各自回报，任务事实落在右侧栏的按项目看板——几个 feature 并行推进，而不是逐个陪跑。项目级 LEADER.md 与 SLOTS.md 塑造每次请求的行为，`read_worker_session` 只读回放 worker 的会话过程、不唤醒它。
 - [fengt8291-lab/dsh-first-principles#plugin](https://github.com/fengt8291-lab/dsh-first-principles/tree/main/plugin) — 可机械核对的第一性原理台账：事实必须落回真实的 文件:行 并逐字引用那里的话，假设必须写明什么情况下它错了，结论不得依赖一个永不回来复查的假设；台账可带复查日期、置信度与止损条件。附带校验工具、/fp 命令族、不可逆命令前的可选闸门，以及列出每轮修掉哪些错误码的面板。
 - [FenrirCait/dsh-fail-guard](https://github.com/FenrirCait/dsh-fail-guard) — 同一工具连续失败达阈值时叫停。不是再试一次，而是推送一条四部分停手指令：试过什么、完整错误原文、初判原因、需要用户做什么。判定读真实工具结果（isError 或 shell 退出码非零），通过 agent.steer 回灌，让 agent 把它当成收到的消息而不是日志。
 - [fhidalgodev/dsh-odoo-sdd](https://github.com/fhidalgodev/dsh-odoo-sdd) — 面向 Odoo 的规范驱动开发流水线：15 个工具把需求从不可变规范推进到架构、再到模块代码或线上配置，最终要求一个由真实 Odoo 实例证据支撑的持久判定；闸门 fail-closed，批量操作需在声明的环境中经人工批准，复用 Odoo 自带的 CSV／Excel 导入器，并有一份可回滚本插件所写数据的日志。
