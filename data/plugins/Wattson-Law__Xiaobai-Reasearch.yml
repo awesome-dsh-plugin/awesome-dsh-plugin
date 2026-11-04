@@ -1,0 +1,8 @@
+url: https://github.com/Wattson-Law/Xiaobai-Reasearch
+name: Wattson-Law/Xiaobai-Reasearch
+category: skill
+icon: https://raw.githubusercontent.com/Wattson-Law/Xiaobai-Reasearch/main/assets/icon-180.png
+tarball: https://github.com/Wattson-Law/Xiaobai-Reasearch/releases/download/v1.0.0/dsh-plugin-research-report-1.0.0.tgz
+description:
+  en: 'Chinese industry and technology research report skill with an offline DOCX build pipeline (build_docx.py). Enforces a 9-chapter structure with a plain-language timeline (Section 2.1), 5-dimensional technical bottleneck criteria, and Make-vs-Buy cost/compensation trade-offs, verified by check_threads.py and compiled to .docx with a 3-level auto TOC.'
+  zh: '中文行业与技术调研报告生成技能，内置离线 Word (.docx) 编译流水线（build_docx.py）。规范九章总分总结构、2.1 节白话演进时间线、五维技术瓶颈判据与自研成本/外部采购成对博弈论证，提供双主线启发式自检工具（check_research_report_threads）与带原生三级自动目录的 DOCX 构建工具（build_research_report_docx）。'
