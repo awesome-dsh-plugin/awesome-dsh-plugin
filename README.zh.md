@@ -1485,6 +1485,7 @@ dsh plugin --profile web add dshmarket
 - [Tracest/dsh-session-inbox](https://github.com/Tracest/dsh-session-inbox) — 顶部工具区与原布局切换，上方直接查看会话，下方收纳工作中与已整理；支持原生菜单、搜索高亮、键盘操作及整理备份。中文界面。DSH 0.2.1-rc.5：macOS 桌面版已验证；Windows 桌面版已检查冷启动、1280×820 与 1471×1200 下的紧凑/原布局、搜索、项目筛选和原生会话菜单。Linux 及任意第三方插件组合仍未验证。
 - [tsonglew/dsh-media-preview](https://github.com/tsonglew/dsh-media-preview) — better-sidebar 音视频预览器：原生播放器内联播放 mp4/webm/mkv/mov 等视频与 mp3/flac/wav 等音频，自带支持 HTTP Range 拖动的流式媒体路由。
 - [tsonglew/dsh-workspace-search](https://github.com/tsonglew/dsh-workspace-search) — VS Code 式工作区关键词搜索 Tab（better-sidebar 扩展）：同时匹配文件名与文件内容，结果按文件分组带行号，点击在侧栏编辑器打开。
+- [TSRYWHY/deepseek-time-price](https://github.com/TSRYWHY/deepseek-time-price) — DeepSeek API 时段价格悬浮窗，联网读取中国法定节假日，显示账户余额与本项目花费估算；含绿/橙 24 小时时间轴和可折叠的模型、计费规则、节假日区块。
 - [Tsutsutsuu/dsh-quote-selection](https://github.com/Tsutsutsuu/dsh-quote-selection) — 在对话里框选文字后右键引用：引用以原子标签进入输入框，发送后显示为可折叠的引用卡；模型拿到的始终是带消息角色、轮次、段落与字符区间的完整引用块。
 - [ttmouse/dsh-model-picker](https://github.com/ttmouse/dsh-model-picker) — 顶替 DSH Web 编辑器模型座位的模型选择器：检索优先的弹层，左栏是供应商索引、点击滚动右侧分组列表，收藏组固定在首位，用图片图标区分原生与桥接的视觉输入，点触发器右区单独打开推理档位面板。
 - [ttmouse/dsh-recent](https://github.com/ttmouse/dsh-recent) — 在 DSH Web 侧边栏的工作区列表下面加一个「最近」区块，把所有工作区的最新会话平铺成一条时间线，行与悬停卡片复用外壳自己渲染的会话行，滚到底继续加载更早的会话；同时把工作区列表本身折叠为最近有记录的 5 个文件夹。需要 DSH ^0.2.0-rc.1。
@@ -4590,6 +4591,7 @@ dsh plugin --profile web add dshmarket
 - [Haitang-Hub/dsh-3d-director-desk](https://github.com/Haitang-Hub/dsh-3d-director-desk) — DSH 右侧栏 3D 导演台插件：摆角色、运镜、时间轴预演与导出，AI Agent 经 MCP 工具实时编排场景。
 - [Haitang-Hub/dsh-infinite-canvas](https://github.com/Haitang-Hub/dsh-infinite-canvas) — 无限画布右侧栏插件——在画布上编排文本、图片、视频、音频节点，用 AI 生成媒体内容，Agent 经 MCP 工具直接操作画布；自带本地桥服务，安装后离线可用。
 - [Han-1413141/dsh-codex-computer-use](https://github.com/Han-1413141/dsh-codex-computer-use) — 让 DSH 当前模型通过已安装的 Codex Computer Use 运行时读取和操作 Windows 应用，并保留每个会话的应用授权。
+- [hanshengcc/callai-seo-mcp](https://github.com/hanshengcc/callai-seo-mcp) — 连接 CallAI SEO MCP 服务，提供 10 个 SEO 数据工具和 1 个 DataForSEO 通用请求工具：Google/Bing 搜索结果（含 AI Overview 引用来源）、关键词搜索量与难度、长尾词、竞品关键词差距、外链和页面审计。附带 callai-seo 技能。需要 CallAI API Key，按量付费。
 - [hanyi7867069-create/dsh-content-lab](https://github.com/hanyi7867069-create/dsh-content-lab) — 内容工坊——选题、标题、文案与排期生成工具，直接调用内置 LLM。
 - [HarryHeYu/figcraft](https://github.com/HarryHeYu/figcraft) — 论文图即代码：Agent 创建版本化 Figure IR，经语义化 Patch 增量修改（单节点粒度——未指定的对象绝不动），确定性导出可编辑的 SVG / PDF / PPTX 真矢量图。七个 papercanvas_* 工具覆盖创建、读取、修改、布局、Lint（FC001–FC008 质量检查）、渲染与检视；中文标签自动使用系统 CJK 字体度量与嵌入。已验证 DSH 0.1.5-rc.3 至 0.2.2-alpha.2 各渠道。dsh-sessionflow 同作者作品。需另装 PaperCanvas 引擎：Python 3.11+ 与 papercanvas CLI（PyPI 尚未发布，当前需从本仓库安装，并放到 PATH 或配置 papercanvasBin）；插件只是薄适配层，不自带引擎。
 - [HarunaTyan/dsh-rea-dispatcher](https://github.com/HarunaTyan/dsh-rea-dispatcher) — 把 REA 的 207 个逆向工具（Ghidra / Hopper / IDA 后端）折叠成 3 条命令加 6 个只读域入口，常驻约 5 KB。不代装引擎，需自行安装 rea-agents、Ghidra 12.1.x 与 JDK 21。
@@ -7702,6 +7704,7 @@ dsh plugin --profile web add dshmarket
 - [lemonxiny55/dsh-composition-doctor](https://github.com/lemonxiny55/dsh-composition-doctor) — 通过组合来源路径和人工下一步解释受支持的 DSH 插件故障：重复引入、bundle patch 缺失和 peer 不匹配；提供独立 CLI 与报告查看器，默认只读离线诊断，未观察的 runtime 保留 unknown。
 - [lemonxiny55/dsh-lint-loop](https://github.com/lemonxiny55/dsh-lint-loop) — dsh-lint-loop v0.7.0 通过有界、只读检查点追踪 shell/bash/pwsh 与文件工具产生的可观察变更；证据归因不确定或不足时保留为 incomplete。[正式 Release](https://github.com/lemonxiny55/dsh-lint-loop/releases/tag/v0.7.0)。
 - [lemonxiny55/dsh-matlab-workbench](https://github.com/lemonxiny55/dsh-matlab-workbench) — 在 DSH Desktop 中通过官方 MATLAB MCP 执行实验，校验 PNG 图像及 MATLAB 计算指标，并比较 PID 参数扫描结果。需要 Windows、MATLAB 授权，以及另行安装的官方 MATLAB MCP Server。
+- [lengrufeng2008/dsh-code-intel](https://github.com/lengrufeng2008/dsh-code-intel) — 通过本地语言服务器为 DeepSeek Harness 提供只读语义代码导航：定义、引用、符号、诊断、悬停和重命名预览。
 - [Leo-Ayh-Oday/dsh-orcana#dsh-bundle](https://github.com/Leo-Ayh-Oday/dsh-orcana/tree/main/packages/dsh-bundle) — DeepSeek Harness 运行时治理器：零进展回合引导、按代际绑定的验证证据、基于证据的完成守卫，以及按任务配置限制工具集。
 - [leo666-cloud/dsh-miniprogram-helper](https://github.com/leo666-cloud/dsh-miniprogram-helper) — 微信小程序工程工具：体检扫出没写进 app.json 的页面，建页面时自动注册，一键修复孤儿页，管理分包、tabBar 与组件，并可调用微信开发者工具出预览二维码、上传体验版。
 - [LeoGoat2004/dsh-eval-harness#dsh-eval-harness](https://github.com/LeoGoat2004/dsh-eval-harness/tree/main/dsh-eval-harness/packages/dsh-eval-harness) — DeepSeek Harness 的诊断型评测插件：冻结已确认的 Harness 配置，跑一遍基准测试，保留完整会话轨迹，并把失败归因到模型、Harness、基准或环境。
