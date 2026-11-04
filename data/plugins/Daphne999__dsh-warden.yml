@@ -1,0 +1,6 @@
+url: https://github.com/Daphne999/dsh-warden
+name: Daphne999/dsh-warden
+category: security
+description:
+  en: "Security review for DSH plugins: reads the manifest, install hooks, native dependencies and source for network egress, dangerous APIs and credential paths, cross-checks the curated market registry, and returns a 100-point verdict with itemised findings. Read-only — it never executes the audited code."
+  zh: '装插件前的安全体检：读 package.json、安装期脚本、原生依赖与源码，扫外联域名、危险 API、凭据路径，再交叉核对市场的能力声明与红线，给出 100 分制评级与逐条发现。只读，不执行被审计代码。'
