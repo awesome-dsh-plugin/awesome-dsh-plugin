@@ -1,0 +1,6 @@
+url: https://github.com/wzd-cpu/dsh-breeze-tts
+name: wzd-cpu/dsh-breeze-tts
+category: voice
+description:
+  en: 'BreezeBlue text-to-speech for DSH: three agent tools, a header toggle that reads assistant replies aloud (markdown and code blocks stripped), and local HTTP endpoints for audio playback, synthesis and long-poll delivery.'
+  zh: '把 BreezeBlue 语音接入 DSH：三个工具、会话头开关自动朗读助手回复（自动剥离 Markdown 与代码块），并提供音频播放、合成与长轮询的本地 HTTP 接口。'
