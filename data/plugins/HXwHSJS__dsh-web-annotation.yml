@@ -1,0 +1,8 @@
+url: https://github.com/HXwHSJS/dsh-web-annotation
+name: HXwHSJS/dsh-web-annotation
+category: browser
+tarball: https://github.com/HXwHSJS/dsh-web-annotation/releases/download/v0.1.1/dsh-web-annotation-0.1.1.tgz
+description:
+  en: 'Annotate elements, blank positions or dragged regions in the DSH right-Sidebar Browser tab; each batch is saved as screenshots plus report files and attached to the next message as text. Does not replace the official Browser, Chat or Layout providers.'
+  zh: '在 DSH 右侧边栏 Browser 中批注元素、空白位置或框选区域；每批保存截图与报告文件，并以文本形式附加到下一条消息。不替换官方 Browser、Chat 或 Layout 提供方。'
+

@@ -1,0 +1,7 @@
+url: https://github.com/dmscode/dsh-rightbar-tab-gestures
+name: dmscode/dsh-rightbar-tab-gestures
+category: ui
+description:
+  en: 'Closes right-sidebar tabs with a middle click or a left double click, reusing the built-in close button so the native rules (such as the last docked guide card being unclosable) still apply.'
+  zh: '右侧栏标签页支持鼠标中键关闭与左键双击关闭，关闭动作复用原生 × 按钮，原生规则（例如唯一停靠的 guide 卡片关不掉）保持不变。'
+icon: https://raw.githubusercontent.com/dmscode/dsh-rightbar-tab-gestures/main/assets/icon-512.png

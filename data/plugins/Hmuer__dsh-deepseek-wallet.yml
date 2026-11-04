@@ -1,0 +1,7 @@
+url: https://github.com/Hmuer/dsh-deepseek-wallet
+name: Hmuer/dsh-deepseek-wallet
+category: usage
+description:
+  en: "Shows the live DeepSeek account balance in the composer toolbar and prices each completed turn in CNY beside its token usage, using the official peak/off-peak table: peak on Beijing-time weekday mornings and afternoons, valley on weekends and statutory holidays. The balance needs a DEEPSEEK_API_KEY credential; accounts signed in through DeepSeek OAuth show no chip."
+  zh: "在输入框工具栏实时显示 DeepSeek 账户余额，并在每轮完成对话的 token 用量旁显示按官方峰谷价计费的人民币金额：北京时间工作日上下午为高峰价，周末与法定节假日为空闲价。余额需要 DEEPSEEK_API_KEY 凭据，仅通过 DeepSeek OAuth 登录的账号不显示余额。"
+icon: https://raw.githubusercontent.com/Hmuer/dsh-deepseek-wallet/main/assets/icon-180.png

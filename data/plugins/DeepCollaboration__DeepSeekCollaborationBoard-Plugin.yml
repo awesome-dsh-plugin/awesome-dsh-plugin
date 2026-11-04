@@ -1,0 +1,6 @@
+url: https://github.com/DeepCollaboration/DeepSeekCollaborationBoard-Plugin
+name: DeepCollaboration/DeepSeekCollaborationBoard-Plugin
+category: workflow
+description:
+  en: A board for DeepSeek Harness that composes stations, workflows and projects from separate Git repositories; GitHub is the access gate.
+  zh: 为 DeepSeek Harness 把独立 Git 仓库中的站点、工作流和项目组合成一块看板；以 GitHub 作为访问关口。

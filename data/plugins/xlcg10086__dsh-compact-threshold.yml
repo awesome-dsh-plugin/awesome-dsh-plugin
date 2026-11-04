@@ -1,0 +1,8 @@
+url: https://github.com/xlcg10086/dsh-compact-threshold
+name: xlcg10086/dsh-compact-threshold
+category: session
+description:
+  en: Composer control for the automatic context-compaction threshold. A 20%-80% slider rewrites the running BasicCompactionEngine config per step, shows current usage, context window and the effective trigger line, and compacts immediately when the threshold drops below current usage and the agent is idle.
+  zh: 输入框旁的上下文自动压缩阈值控制器：20%-80% 滑条按 step 重写运行中 BasicCompactionEngine 的配置，显示当前用量、上下文窗口与实际触发线；阈值降到当前用量以下且 Agent 空闲时立即压缩。
+icon: https://raw.githubusercontent.com/xlcg10086/dsh-compact-threshold/main/assets/icon-256.png
+tarball: https://github.com/xlcg10086/dsh-compact-threshold/releases/download/v1.0.0/dsh-compact-threshold-1.0.0.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/GraptK/dsh-composer-enhance
+name: GraptK/dsh-composer-enhance
+category: ui
+description:
+  en: Rewrites the composer draft, or only the selected text, with one model call that uses the recent conversation as context, with cancel, revert, fidelity and length checks, and an optional preview.
+  zh: 用一次模型调用改写输入框草稿（或仅选中片段），参考最近对话，支持取消、回退、保真与长度校验，以及可选预览。

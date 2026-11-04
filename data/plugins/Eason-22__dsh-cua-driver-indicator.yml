@@ -1,0 +1,7 @@
+url: https://github.com/Eason-22/dsh-cua-driver-indicator
+name: Eason-22/dsh-cua-driver-indicator
+category: tools
+description:
+  en: "Visibility layer for the built-in Cua Driver computer-control channel: a top banner names the controlling session and its goal, and Esc truly stops the agent."
+  zh: "给官方内置 Cua Driver 电脑控制通道加一层可见提示：顶部横幅显示是哪个会话、基于什么目标在控制电脑，按 Esc 真正停止。"
+icon: https://raw.githubusercontent.com/Eason-22/dsh-cua-driver-indicator/main/assets/icon-180.png

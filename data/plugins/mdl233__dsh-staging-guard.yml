@@ -1,0 +1,6 @@
+url: https://github.com/mdl233/dsh-staging-guard
+name: mdl233/dsh-staging-guard
+category: security
+description:
+  en: 'Pre-execute hook that denies writes under a read-only result zone of protected roots; every other path passes through.'
+  zh: 'pre-execute 钩子：拒绝写入受保护根下只读的成果区，其余路径放行。'

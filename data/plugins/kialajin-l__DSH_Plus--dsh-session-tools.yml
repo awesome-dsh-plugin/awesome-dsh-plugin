@@ -1,0 +1,6 @@
+url: https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-session-tools
+name: kialajin-l/DSH_Plus#dsh-session-tools
+category: session
+description:
+  en: "Session utilities: Markdown export and dependency-free batch ZIP export, a timeline overlay for jumping between turns, safe session duplication that rewrites internal identity fields, and sidebar right-click menu extension points."
+  zh: "会话工具箱：导出 Markdown 与零依赖批量 ZIP、时间线浮层快速跳轮、安全复制会话（自动重写内部身份字段）、侧栏右键菜单扩展。"

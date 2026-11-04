@@ -1,0 +1,8 @@
+# 放在 awesome-dsh-plugin 仓库的 data/plugins/Maxim-Kerman-Lin__dsh-daily-luck.yml
+url: https://github.com/Maxim-Kerman-Lin/dsh-daily-luck
+name: Maxim-Kerman-Lin/dsh-daily-luck
+category: fun
+description:
+  en: 'Tarot daily-luck plugin: enter your birthday, draw one of 22 Major Arcana, get five-dimension scores and a concrete answer to your question.'
+  zh: '今日好运来临：写入生日，抽一张大阿尔卡纳，得到事业/感情/财运/身心/交际五维评分，并针对你的问题给出具体回答。'
+icon: https://raw.githubusercontent.com/Maxim-Kerman-Lin/dsh-daily-luck/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/zsenpro/DSH-Quickly-clear
+name: zsenpro/DSH-Quickly-clear
+category: session
+description:
+  en: Adds a delete row to the menu of an archived conversation only, and after a confirmation removes the session log directory, its projection cache, the archive and pin marks and the workspace booking together.
+  zh: 只给已归档对话的菜单加一项删除，确认后把会话日志目录、投影缓存、归档与置顶标记、工作区记账一起清掉。
+tarball: https://github.com/zsenpro/DSH-Quickly-clear/releases/latest/download/DSH-Quickly-clear.tgz

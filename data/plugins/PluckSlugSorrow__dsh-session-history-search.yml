@@ -1,0 +1,7 @@
+url: https://github.com/PluckSlugSorrow/dsh-session-history-search
+name: PluckSlugSorrow/dsh-session-history-search
+category: session
+description:
+  en: 'Sidebar search across every past Session: literal substring matching that works for Chinese, results grouped per Session with highlighted snippets, and one click to reopen the conversation.'
+  zh: '侧栏全局搜索历史对话：字面子串匹配（中文可用），结果按会话分组并高亮命中片段，点一下跳回那个会话。'
+icon: https://raw.githubusercontent.com/PluckSlugSorrow/dsh-session-history-search/main/icon-256.png

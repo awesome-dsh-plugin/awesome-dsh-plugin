@@ -1,0 +1,6 @@
+url: https://github.com/zhiwuli0228/token-usage-statistic
+name: zhiwuli0228/token-usage-statistic
+category: usage
+description:
+  en: Tracks token usage and estimated costs for every model call, with daily charts, session and workspace names, provider balances, budgets, and secret-free CSV/JSON exports.
+  zh: 统计本机每次模型调用的 token 用量与预估费用，提供每日图表、会话/工作区名称、账户余额、预算与无凭据 CSV/JSON 导出。

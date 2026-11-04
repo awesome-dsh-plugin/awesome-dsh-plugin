@@ -3,5 +3,5 @@ name: peijiping/dsh-plugin-zotero
 category: tools
 tarball: https://github.com/peijiping/dsh-plugin-zotero/releases/latest/download/dsh-plugin-zotero.tgz
 description:
-  en: 'Connect the Zotero library on your computer to DSH: browse and search your own papers in the right sidebar, read metadata, notes and PDF full text, and bring a citation, an excerpt or a whole collection into the conversation with one click, so the model can answer from your own literature.'
-  zh: '把电脑里的 Zotero 文库接到 DSH：在右侧栏就能浏览和搜索自己的文献，查看摘要、笔记与 PDF 全文，也能把一条引用、一段摘录或整个分类一键带进对话，让模型基于你自己的文献回答问题。'
+  en: 'Install this plugin and DSH can operate your Zotero for you: search the library, read PDF full text, summarize highlights and notes, organize collections by topic, import your downloaded papers, and attach a translated version back to an item. The right sidebar also gains a Zotero library panel that brings an item, an excerpt or a whole collection into the conversation with one click. Model-side actions need Zotero''s local API plus the Zotero MCP plugin (write operations enabled); the sidebar panel needs only the local API.'
+  zh: '装上这个插件，DSH 就能直接操控你的 Zotero：检索文库、精读 PDF 全文、汇总高亮与笔记、按主题整理分类；也能在一个对话里导入你下载好的论文、把译文作为附件挂回条目。右侧栏还多一块「Zotero 文献库」面板，可把条目、摘录或整个分类一键带进对话。模型侧操作需开启 Zotero 本地 API 并安装集成 MCP 插件（写操作需在 MCP 插件里放行）；右侧面板只依赖本地 API。'

@@ -1,0 +1,7 @@
+url: https://github.com/zach-bworld/dsh-session-notify
+name: zach-bworld/dsh-session-notify
+category: notify
+description:
+  en: Sidebar badge and desktop notification when a background session finishes while you are working in another project.
+  zh: 你在别的项目里工作时，后台会话跑完会在侧边栏显示角标并发出系统通知，点角标可直接跳到该会话。
+icon: https://raw.githubusercontent.com/zach-bworld/dsh-session-notify/main/assets/icon-180.png

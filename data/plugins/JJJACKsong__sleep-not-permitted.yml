@@ -1,0 +1,8 @@
+url: https://github.com/JJJACKsong/sleep-not-permitted
+name: JJJACKsong/sleep-not-permitted
+category: tools
+icon: https://raw.githubusercontent.com/JJJACKsong/sleep-not-permitted/main/assets/icon-180.png
+tarball: https://github.com/JJJACKsong/sleep-not-permitted/releases/download/v0.4.0/dsh-plugin-sleep-not-permitted-0.4.0.tgz
+description:
+  en: "Rejects foreground waiting in DSH agents: waiting commands (sleep, wait, tail -f, watch, ping without -c, infinite loops), blocking wait tools (wait_agent, job_output with wait: true), progress polling (the same check command repeated within a window) and commands that need human input/confirmation (sudo without -n, ssh without BatchMode, login flows, interactive editors, docker -it) are refused with an actionable retry to run in the background or end the turn. Configurable budget and polling window, message language follows the system (zh/en), zero runtime dependencies."
+  zh: "禁止 Agent 前台等待：sleep / wait / tail -f / watch / ping 等等待型命令、wait_agent 与 job_output(wait) 等阻塞等待工具，用反复 check 代替等待的轮询（同一条命令在窗口内重复出现），以及需要人输入/确认的命令（sudo 不加 -n、ssh 不开 BatchMode、登录流程、交互式编辑器、docker -it）都会被拒绝，并给出改用后台作业或结束本轮等唤醒的可执行指令；等待预算与轮询窗口可配、文案跟随系统语言（中/英）、零运行时依赖。"

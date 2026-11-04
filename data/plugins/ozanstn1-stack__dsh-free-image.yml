@@ -1,0 +1,6 @@
+url: https://github.com/ozanstn1-stack/dsh-free-image
+name: ozanstn1-stack/dsh-free-image
+category: vision
+description:
+  en: 'Keyless image generation with two tools: generate_image (no API key, one call at a time, bounded rate-limit retries) and list_image_models.'
+  zh: '无需 API 密钥的图片生成，含两个工具：generate_image（无需密钥、串行调用、有限次限流重试）与 list_image_models。'

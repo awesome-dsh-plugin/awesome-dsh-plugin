@@ -1,0 +1,6 @@
+url: https://github.com/dengsixue-stack/dsh-file-context-menu
+name: dengsixue-stack/dsh-file-context-menu
+category: ui
+description:
+  en: 'Right-click menu for file links in chat: open with registered apps, save as, copy path or content, reveal in Finder or Explorer.'
+  zh: '聊天区文件超链接右键上下文菜单增强：在常用应用中打开、打开方式、另存为、复制路径与内容、在资源管理器/Finder 中显示。'

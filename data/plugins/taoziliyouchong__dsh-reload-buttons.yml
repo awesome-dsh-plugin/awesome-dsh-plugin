@@ -1,0 +1,7 @@
+url: https://github.com/taoziliyouchong/dsh-reload-buttons
+name: taoziliyouchong/dsh-reload-buttons
+category: ui
+description:
+  en: Two icon buttons in the top-left corner of the DSH header — reload the UI (a full reload when the client-plugin manifest is still valid, an in-place re-sync when it is stale, so no blank page) and restart the app (on the desktop app it closes the shell and relaunches itself; on dsh web it ends the kernel process for your own supervisor to bring back).
+  zh: 在 DSH 界面左上角放两个图标按钮：刷新界面（清单有效就整页重载，过期就地重同步客户端插件，不出白屏）与重启应用（桌面端关掉界面壳后自动重开；dsh web 下结束内核进程，重开交给你自己的启动方式）。
+icon: https://raw.githubusercontent.com/taoziliyouchong/dsh-reload-buttons/main/assets/icon-180.png

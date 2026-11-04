@@ -1,0 +1,7 @@
+url: https://github.com/Shark00I/dsh-audit
+name: Shark00I/dsh-audit
+category: security
+tarball: https://github.com/Shark00I/dsh-audit/releases/download/v1.0.0/dsh-audit-1.0.0.tgz
+description:
+  en: 'Audits DeepSeek Harness plugins: a read-only pre-install check that grades a package S–D before it is installed, plus a runtime monitor that records plugin start/stop, sensitive tool calls and per-plugin token estimates in a settings panel.'
+  zh: '审计 DeepSeek Harness 插件：安装前只读扫描并按 S–D 分级；装好后记录插件启停、敏感工具调用与每个插件的 token 估算，全部收在一个设置面板里。'

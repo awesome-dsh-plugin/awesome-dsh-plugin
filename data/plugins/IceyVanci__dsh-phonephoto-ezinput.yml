@@ -1,0 +1,7 @@
+url: https://github.com/IceyVanci/dsh-phonephoto-ezinput
+name: IceyVanci/dsh-phonephoto-ezinput
+category: tools
+tarball: https://github.com/IceyVanci/dsh-phonephoto-ezinput/releases/latest/download/dsh-phonephoto-ezinput.tgz
+description:
+  en: Sends photos from a phone into a DeepSeek Harness conversation through a simple LAN service.
+  zh: 通过一个简单的局域网服务，把手机中的照片发送到 DeepSeek Harness 的对话中。

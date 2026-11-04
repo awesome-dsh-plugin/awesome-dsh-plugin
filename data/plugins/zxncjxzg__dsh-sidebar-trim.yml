@@ -1,0 +1,6 @@
+url: https://github.com/zxncjxzg/dsh-sidebar-trim
+name: zxncjxzg/dsh-sidebar-trim
+category: ui
+description:
+  en: 'Hides the sidebar''s global panel navigation (Plugins / Market / Schedules / More) and gives the vertical space back to the session list; three modes, switchable in Settings → Sidebar.'
+  zh: '隐藏侧栏顶部的全局导航（插件 / 插件市场 / 自动化任务 / 更多），把垂直空间还给会话列表；三档模式，在 设置 → 侧栏 里切换。'

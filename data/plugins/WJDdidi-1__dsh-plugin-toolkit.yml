@@ -1,0 +1,7 @@
+url: https://github.com/WJDdidi-1/dsh-plugin-toolkit
+name: WJDdidi-1/dsh-plugin-toolkit
+category: dev
+description:
+  en: 'Preflight for plugin authors: the checks the market runs — root export, dsh.client against exports["./client"], whether npm pack ships the panel — on any folder or GitHub repo, from a panel or one command; plus release tooling and a Node testkit for client bundles.'
+  zh: '给插件作者的安装前体检：把市场那套检查——根导出、dsh.client 与 exports["./client"] 是否一致、npm pack 有没有带上面板——跑到任意文件夹或 GitHub 仓库上，面板里能点，命令行也能跑；另有发版工具，以及能在 Node 里挂起 client bundle 的 testkit。'
+icon: https://raw.githubusercontent.com/WJDdidi-1/dsh-plugin-toolkit/main/docs/icon-180.png

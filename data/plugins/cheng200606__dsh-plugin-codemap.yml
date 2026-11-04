@@ -1,0 +1,7 @@
+url: https://github.com/cheng200606/dsh-plugin-codemap
+name: cheng200606/dsh-plugin-codemap
+category: docs
+description:
+  en: 'Compiles a repository into a source-grounded code map: structured pages where every claim carries a verifiable path:line citation, an interactive dependency graph, knowledge cards, four model tools and the /codemap command. Deterministic, no model calls, zero dependencies.'
+  zh: '把代码仓库编译成带 path:line 源码引用的代码地图：结构化页面、可拖拽依赖图谱、知识卡片、四个模型工具与 /codemap 命令。确定性生成、不调用模型、零第三方依赖。'
+icon: https://raw.githubusercontent.com/cheng200606/dsh-plugin-codemap/main/market/icon-180.png

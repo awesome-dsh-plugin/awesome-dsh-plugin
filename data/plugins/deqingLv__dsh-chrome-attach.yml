@@ -1,0 +1,6 @@
+url: https://github.com/deqingLv/dsh-chrome-attach
+name: deqingLv/dsh-chrome-attach
+category: browser
+description:
+  en: 'Attaches the current Chrome tab to a DSH draft: one pick screenshots the page (falling back to a macOS window shot) and writes its title and URL into the composer as one line.'
+  zh: '把当前 Chrome 标签页附到 DSH 草稿：一次点击截图（失败时降级为 macOS 窗口截图），同时把页面标题与地址写成一行放进输入框。'
