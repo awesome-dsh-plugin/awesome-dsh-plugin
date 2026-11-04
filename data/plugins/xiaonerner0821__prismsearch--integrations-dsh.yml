@@ -1,0 +1,6 @@
+url: https://github.com/xiaonerner0821/prismsearch/tree/main/integrations/dsh
+name: xiaonerner0821/prismsearch#dsh
+category: browser
+description:
+  en: 'Bundles the PrismSearch MCP server and its agent skill. Web search over Bing and Baidu with no account or API key, plus Google and Brave when API keys are set and DuckDuckGo, Sogou, 360 and Yandex when enabled in config; automatic engine fallback and an aggregate mode. Also image search, WeChat Official Account article search, and fetch_page, which returns web pages and PDFs as Markdown in segments.'
+  zh: '打包 PrismSearch MCP 服务与配套 Agent Skill。网页搜索默认使用 Bing 和百度，无需账号或 API Key；设置 API Key 后可用 Google、Brave，在配置中启用后可用 DuckDuckGo、搜狗、360、Yandex；支持引擎自动回退与聚合模式。另提供图片搜索、微信公众号文章搜索，以及把网页和 PDF 转成 Markdown 并分段读取的 fetch_page。'
