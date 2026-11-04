@@ -4,4 +4,4 @@ category: workflow
 description:
   en: Run JSON DAGs with /workflow, inspect progress, choose subagent models, and resume saved Agent sessions while reusing valid completed results.
   zh: 使用 /workflow 运行 JSON 工作流，在「工作流」面板查看进度、选择子 Agent 模型，并复用有效的已完成结果继续执行。
-tarball: https://github.com/orion-nebula-dev/dsh-Dynamic-Workflow/releases/download/v0.1.1/local-dynamic-workflow-0.1.1.tgz
+tarball: https://github.com/orion-nebula-dev/dsh-Dynamic-Workflow/releases/download/v0.2.0/local-dynamic-workflow-0.2.0.tgz
