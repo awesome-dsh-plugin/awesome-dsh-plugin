@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-tunnel
+name: mzzsfy/dsh-plugin#dsh-tunnel
+category: remote
+description:
+  en: 'Path tunneling inside the DSH host process: reverse-proxies local TCP ports behind /p/<name> sub-paths or <name>.* subdomains, managed by AI tools and a GUI board.'
+  zh: '路径穿透隧道：在 dsh 宿主进程内把本地 TCP 端口经 /p/<name> 子路径或子域名反代出去，AI 工具自管 + GUI 看板。'
+icon: https://raw.githubusercontent.com/mzzsfy/dsh-plugin/main/assets/icons/png/dsh-tunnel.png
