@@ -1,6 +1,7 @@
 url: https://github.com/GoldenLoaf24h/browserpaw/tree/main/plugins/browserpaw-dsh
 name: GoldenLoaf24h/browserpaw#browserpaw-dsh
 category: browser
+tarball: https://github.com/GoldenLoaf24h/browserpaw/releases/latest/download/dsh-browserpaw.tgz
 description:
-  en: 'Efficiently control everything in your Chrome browser.'
-  zh: '高效控制你的 Chrome 浏览器里的一切。'
+  en: 'Dual-brain Chrome automation: registers the browserpaw skill and browserpaw_session tool to connect with the local BrowserPaw host (127.0.0.1:12306 via bridge-token), driving Chrome without losing logins.'
+  zh: 'Chrome 浏览器双脑自动化插件：注册 browserpaw 技能与 browserpaw_session 会话工具，直连本机 BrowserPaw 原生服务（127.0.0.1:12306 与 bridge-token），免登录丢失控制已有浏览器。'
