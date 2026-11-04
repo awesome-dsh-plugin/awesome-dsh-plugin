@@ -1,0 +1,7 @@
+url: https://github.com/most-silence/dsh-record
+name: most-silence/dsh-record
+category: voice
+tarball: https://github.com/most-silence/dsh-record/releases/latest/download/dsh-record.tgz
+description:
+  en: Adds a microphone button to the composer that records audio and attaches it to the current prompt through the draft-attachment channel. Recordings are encoded as MP3 (default, via lamejs in the browser), WAV, or native WebM, and saved to the current workspace's recordings/ directory or a configured custom folder; saving can be turned off. Escape or leaving the tab cancels the take.
+  zh: 在输入框加一个麦克风按钮，录音后自动作为会话附件挂进当前 Prompt。录音按配置编码为 MP3（默认，浏览器端 lamejs 转码）、WAV 或原生 WebM，并保存到当前项目空间的 recordings/ 目录或自定义目录；也可关闭落盘。Esc 或切走标签页即取消本次录音。
