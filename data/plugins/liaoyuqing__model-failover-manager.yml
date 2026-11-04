@@ -4,5 +4,5 @@ category: model
 tarball: https://github.com/liaoyuqing/model-failover-manager/releases/latest/download/model-failover-manager.tgz
 icon: https://raw.githubusercontent.com/liaoyuqing/model-failover-manager/main/assets/icon-180.png
 description:
-  en: "Model picker dialog with routing groups: a model that keeps failing hands the turn to the next usable model in its group, and the dialog also carries a metrics dashboard and a free-channel tab."
-  zh: "模型选择弹窗＋路由分组：模型失败后自动换到组内下一个可用模型并继续本轮；另含数据看板、免费渠道页签。"
+  en: "Model picker dialog with routing groups: a model that keeps failing hands the turn to the next usable model in its group, and the dialog also carries a metrics dashboard and a free-channel tab. That tab installs six channel plugins — Our Free Model (the only one that needs no login or API key), CodeArts, WorkBuddy, Trae, Qoder and Providers Hub — whose providers cover Huawei Cloud CodeArts, Tencent CodeBuddy, Youdao LobsterAI, Qoder, TRAE, Cline, iFlytek Loomy, SenseTime Raccoon, MiniMax, Zhipu ZCode, Gemini Code Assist, Alibaba Accio, iFlytek AStudio, OpenCode, OfficeAce, AutoClaw, ModelScope, Qiniu, Codely, MonkeyCode, Baizhi Cloud and MagiCrew."
+  zh: "模型选择弹窗＋路由分组：模型失败后自动换到组内下一个可用模型并继续本轮；另含数据看板与免费渠道页签。页签一键安装六个渠道插件 —— Our Free Model（唯一不登录、不填 API Key 也能用的）、CodeArts、WorkBuddy、Trae、Qoder、Providers Hub，覆盖华为云 CodeArts、腾讯 CodeBuddy、有道 LobsterAI、Qoder、TRAE、Cline、讯飞 Loomy、商汤 Raccoon、MiniMax、智谱 ZCode、Gemini Code Assist、阿里 Accio、讯飞 AStudio、OpenCode、OfficeAce、AutoClaw、魔搭 ModelScope、七牛云 Qiniu、Codely、MonkeyCode、百智云、超级麦吉 MagiCrew 等平台。"
