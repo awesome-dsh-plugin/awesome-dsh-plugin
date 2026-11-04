@@ -170,7 +170,7 @@ dsh plugin --profile web add dshmarket
 - [2nd1st/dsh-plugin-open-app](https://github.com/2nd1st/dsh-plugin-open-app) — 把 open-mcp-apps 接进 DSH：每个 MCP app 都是侧边栏里自己的容器，带独立 workspace、会话与 App mode，应用下方是 agent 状态条，普通聊天里也能行内渲染 app。
 - [3361805598-gif/dsh-workspace-archive](https://github.com/3361805598-gif/dsh-workspace-archive) — 在侧栏面板或会话行菜单里批量归档/恢复整个工作区的全部会话；工作区会话全部归档后从侧栏隐藏，恢复任一会话即重新出现；并支持工作区置顶。隐藏不删除日志、不移动目录、不改会话归属。
 - [3450892121/dsh-task-monitor#dsh-task-monitor](https://github.com/3450892121/dsh-task-monitor/tree/main/dsh-task-monitor) — DSH 会话右侧独立监控面板：git 状态、后台进程、技能与 MCP、产出与网页查阅，附提交/推送对话框与一键发布到 GitHub。
-- [379385796-sys/dsh-chat-comfort](https://github.com/379385796-sys/dsh-chat-comfort) — 在已核验的 Windows Desktop RC2/RC3/RC5 布局中调整聊天气泡和消息间距，支持舒适或紧凑密度，未知宿主指纹保留原生样式。
+- [379385796-sys/dsh-chat-comfort](https://github.com/379385796-sys/dsh-chat-comfort) — 在已核验的 Windows Desktop RC2/RC3/RC5/0.2.2-rc.1 布局中调整聊天气泡和消息间距，支持舒适或紧凑密度，未知宿主指纹保留原生样式。
 - [3Tiga3/dsh-plugin-namecards](https://github.com/3Tiga3/dsh-plugin-namecards) — 给 DSH 插件换自定义图标、中文显示名和一句话说明；用文件夹与收藏整理，支持拖拽排序、按备注名拼音排序、列表与铺陈两种视图。所有已安装插件自动分配图标（可手动覆盖）；导入导出覆盖图标、备注名、说明、文件夹与排序。只改显示，不修改插件文件与 cordis 配置；启用开关转调官方插件管理器。
 - [439436269-ctrl/dsh-blend-preview](https://github.com/439436269-ctrl/dsh-blend-preview) — 在 DSH 右侧栏文档预览里打开 .blend：Blender headless 导出缓存 GLB 与场景统计，由零依赖 WebGL 视口渲染。需本机装有 Blender 3.6+（或在设置里指定 blenderPath）。
 - [439436269-ctrl/dsh-pinned-sessions](https://github.com/439436269-ctrl/dsh-pinned-sessions) — 侧栏「工作区」上方的一个置顶分组：跨工作区汇总所有置顶会话，可折叠、可就地搜索，点行打开、悬停出现取消置顶按钮。
@@ -1291,7 +1291,7 @@ dsh plugin --profile web add dshmarket
 - [Ragnoryok1/dsh-client-locale-ru](https://github.com/Ragnoryok1/dsh-client-locale-ru) — 为 dsh Web 界面提供俄语：整个界面，加上 520 个第三方插件的菜单——584 个分区、67 666 条文案。
 - [RAK7S/dsh-task-tree](https://github.com/RAK7S/dsh-task-tree) — 藏在页面里的任务树面板：语音或打字入库、拖动排序、贴边收起，数据是工作区里的纯文本 queue.md，随时可改可用 git 管。
 - [RAK7S/dsh-weather-whisper](https://github.com/RAK7S/dsh-weather-whisper) — 每次启动出现一次的天气卡片：记住没开 VPN 时的家城市、VPN 不再让城市跑偏、城市可手选、主题预设与自定义分隔线，并留了给第三方语音库的可选朗读接口。
-- [Rakanrkk/dsh-sidebar-scroll](https://github.com/Rakanrkk/dsh-sidebar-scroll) — 功能菜单、项目与会话共用侧栏滚动区，顶部品牌、新会话与底部账户保持固定，适用于 DSH 0.2.1-rc.3。
+- [Rakanrkk/dsh-sidebar-scroll](https://github.com/Rakanrkk/dsh-sidebar-scroll) — DSH 0.2.2-rc.1 侧栏共享滚动：功能菜单、项目与会话共用同一滚动区，保留原生 workspace 滚动接力。
 - [rakibulrocky14/dsh-cli](https://github.com/rakibulrocky14/dsh-cli) — DeepSeek Harness 全屏终端 TUI 界面，具备 Web GUI 级对齐能力，支持实时流式输出、智能体预设与经典蓝配色。
 - [ramwin/dsh-workspace-tree-status](https://github.com/ramwin/dsh-workspace-tree-status) — 在 DSH Web 侧边栏工作区树的每个目录名前显示聚合状态点（等你输入 / 刚完成 / 运行中），父目录自动汇总嵌套工作区的会话状态。
 - [rans725/dsh-workspace-ranswork](https://github.com/rans725/dsh-workspace-ranswork) — 侧栏工作区面板，在运行中任务与全部对话之间切换，统一为一张可自由排序的卡片列表，每张卡片可置顶、重命名、复制 ID、分叉、停止与归档。
@@ -3160,7 +3160,7 @@ dsh plugin --profile web add dshmarket
 ### 🆔 身份与通信
 
 - [0xyxy/dsh-purge](https://github.com/0xyxy/dsh-purge) — kingcharleslzy-ai/dsh-purge 的社区分支（不要与上游同装——两者都以 `dsh-purge-community` 包名注册同一个 `dsh-purge` 行）：DSH 的社区「破甲 / 无限制模式」控件——宿主策略补丁、提示词与规则设置、诊断、校验更新与本机备份回滚，另加引擎层/代码层/提示词层三层 bootstrap 安装器及自带验证流程。
-- [379385796-sys/dsh-prompt-inject](https://github.com/379385796-sys/dsh-prompt-inject) — 基于 H1a3x 原作的 MIT 提示词模板管理维护版，支持默认与工作区继承、逐 Agent 预设指定模板或不注入、本地化设置及修订号保护的自动保存。已验证 Windows Desktop RC5；不能与上游 H1a3x/dsh-prompt-inject 同装。
+- [379385796-sys/dsh-prompt-inject](https://github.com/379385796-sys/dsh-prompt-inject) — 基于 H1a3x 原作的 MIT 提示词模板管理维护版，支持默认与工作区继承、逐 Agent 预设指定模板或不注入、本地化设置及修订号保护的自动保存。已验证 Windows Desktop RC5 与 0.2.2-rc.1；不能与上游 H1a3x/dsh-prompt-inject 同装。
 - [58fly/dsh-language-guard](https://github.com/58fly/dsh-language-guard) — 把模型的思考过程、回复与工具调用描述锁定为指定语言（默认简体中文）：在 system prompt 首、中、尾注入约束段落，提供基础、强化、周期三档强度，可跟随 DSH 界面语言自动选择，设置页显示当前生效语言，并带侧栏快速切换。
 - [dsh-profile-stylist](https://github.com/7gzgn/dsh-profile-stylist) — 你说想要什么样的人设，它把文案写出来并把资料页填好：昵称/简介/标语/链接由宿主模型生成，头像取本地素材库（或你给的路径），再由站点自己的上传控件完成头像入库。**默认 dry-run**，只写资料字段 —— 不碰密码、邮箱、安全设置。
 - [AgentConnect/dsh-awiki](https://github.com/AgentConnect/dsh-awiki) — 为 DeepSeek Harness 智能体提供基于开放协议ANP的原生身份，以及基于该身份的私聊、群聊、邮件和智能体间通信能力。
