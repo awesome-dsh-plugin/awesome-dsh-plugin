@@ -294,6 +294,7 @@ dsh plugin --profile web add dshmarket
 - [appthin/dsh-mcp-manager-plus](https://github.com/appthin/dsh-mcp-manager-plus) — DSH 设置中的 MCP 管理页：列出、启停、重启、删除 MCP 服务器，表单与 JSON 双模式编辑，展开可查看各服务器注册的工具，并支持一次粘贴导入 Claude Code、Cursor、Codex、VS Code 等 14 种工具的 MCP 配置。
 - [AprilCrystal/dsh-client-ui-font-scale](https://github.com/AprilCrystal/dsh-client-ui-font-scale) — Web 界面的对话字号控制：输入区步进器、键盘快捷键与 Ctrl+滚轮缩放，统一走主题服务的 setFontSize。
 - [AprilCrystal/dsh-client-ui-gpt-helper](https://github.com/AprilCrystal/dsh-client-ui-gpt-helper) — ChatGPT 桌面风格的模型选择控件：思考档位滑杆带粒子拖尾，另有纯视觉的快速模式开关与长按锁定。
+- [Arc-huangjingtong/dsh-restart](https://github.com/Arc-huangjingtong/dsh-restart) — 在 DSH 桌面端侧栏添加重启按钮，一键完全退出并重新打开应用。
 - [ArcaneOrion/dsh-model-selector-search](https://github.com/ArcaneOrion/dsh-model-selector-search) — 搜索增强的会话模型选择器：两段式宽松匹配（先归一化子串，未命中再退子序列，glm53 命中 GLM-5.3、ds 命中 DeepSeek）、近七天成功调用过的供应商置顶，推理档位面板记住每个模型上次显式选择的档位。
 - [ArcaneOrion/dsh-teaching-board](https://github.com/ArcaneOrion/dsh-teaching-board) — 教学平面视图：agent 生成的自包含 HTML 投影进沙箱 iframe 当板书，可用画笔手写勾画（四色、橡皮、撤销）、在同一块板上增量续写，并把画面截图作为真实用户消息发回对话。
 - [Archaofan/dsh-source-deck](https://github.com/Archaofan/dsh-source-deck) — DSH Desktop 的会话内资料台：由当前对话模型执行搜索轮次，候选以 GitHub 卡片展示，保留/排除反馈、收藏夹与筛选结果都留在同一会话。
@@ -3176,6 +3177,7 @@ dsh plugin --profile web add dshmarket
 - [KB1SLN-Labs/dsh-ponytail](https://github.com/KB1SLN-Labs/dsh-ponytail) — Ponytail 5.3.3（上游 DietrichGebert/ponytail，MIT，与上游无关联）的 DSH 非官方移植：最小代码规则、会话模式、原生设置、输入框状态条与用量面板。不能与其他 DSH Ponytail 适配器同装，需先卸载 @mengyuly/dsh-ponytail。
 - [kingcharleslzy-ai/dsh-purge](https://github.com/kingcharleslzy-ai/dsh-purge) — 独立维护的 dsh-purge 社区分支，提供宿主策略补丁、提示词与规则设置、诊断、独立的更新检查与安装控制，以及本机备份回滚。
 - [knopki/dsh-prompt-profiles](https://github.com/knopki/dsh-prompt-profiles) — DeepSeek Harness 的按会话提示词配置：可复用的系统提示词片段组成命名配置，并在会话启动时固化进该会话的提示词。
+- [KonshinHaoshin/dsh-eni#armor-break](https://github.com/KonshinHaoshin/dsh-eni/tree/main/packages/armor-break) — 按模型开启的破甲表：在设置里给模型匹配串挂上咒语（13 个模型族共 25 条，另有可叠加的人格层），可逐字预览注入块，只写进被开启模型的系统提示，其他模型完全不动。
 - [KouzakiUmi/dsh-prompt-zh](https://github.com/KouzakiUmi/dsh-prompt-zh) — 将 DSH 已知系统指引与运行时提醒中文化，按可见工具裁剪相关指导，提供逐条译文编辑和组件开关，保留工具名与参数结构。
 - [LanJinGod/dsh-purge](https://github.com/LanJinGod/dsh-purge) — 把 dsh 提示词权威性清洗成可审查的补丁集并写入 prompt-inject.md，可为不同模型选用不同默认提示词，报告哪些补丁已生效、当前进程从 app.asar 还是解包目录加载，并在桌面进程空闲时把密封安装换成已打补丁的解包树。附状态页与 dsh-purge 命令行。
 - [Len7183/DSH-Think-zh](https://github.com/Len7183/DSH-Think-zh) — 把模型思考语言锁定为「设置 → 通用设置 → 思考语言」里选定的档位（简体中文，或只约束回复、把思考交还模型的默认英文），实现方式是以 order -1000000 注入 system prompt section，并在 assemble 瀑布末端把它重排到首位兜底；另可开启每轮前置同一指令的用户消息通道，用于对静态 section 服从弱的模型。
