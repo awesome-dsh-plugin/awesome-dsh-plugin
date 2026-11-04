@@ -2,5 +2,5 @@ url: https://github.com/Biu-Bong/dsh-menu-hidden
 name: Biu-Bong/dsh-menu-hidden
 category: ui
 description:
-  en: Hides the duplicate DeepSeek account / official API entries, the Feedback and Sign out items of the account menu, and adds Reload / Restart to the application menu plus per-provider reasoning levels.
-  zh: 收起 DSH 里重复的 DeepSeek 账号 / 官方 API 入口、账号菜单的意见反馈与退出登录，给应用菜单补上刷新与重启，并统一写供应商的推理等级。
+  en: Hides the duplicate DeepSeek account / official API entries in the model picker, in Settings → Models and in the subagent model list; hides sidebar items and the Feedback / Sign out items of the account menu; adds Reload / Restart to the application menu; writes a per-provider reasoning level and auto-fills new models so relays that report no reasoning strength still show one.
+  zh: 收起模型选择框、设置·模型和子智能体列表里重复的 DeepSeek 账号 / 官方 API，隐藏侧边栏项目与账号菜单的意见反馈、退出登录，给应用菜单补上刷新与重启，并按供应商写死推理等级（新模型自动补齐，中转站取不到推理强度也能显示）。
