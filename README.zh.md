@@ -986,6 +986,7 @@ dsh plugin --profile web add dshmarket
 - [lsh2002/dsh-custom-fonts](https://github.com/lsh2002/dsh-custom-fonts) — 在设置页自定义界面中英文/代码字体与全局字号偏移，实时预览，一键恢复默认。
 - [lsq-dsh-plugins/dsh-workbench-layout](https://github.com/lsq-dsh-plugins/dsh-workbench-layout) — 将 DSH Web 重排为三栏工作台，提供文件编辑、Git 视图、Markdown 预览和工作区终端。
 - [LTao96/dsh-plugin-overview](https://github.com/LTao96/dsh-plugin-overview) — 本地插件总览：备注、分组、健康检查、启停和设置入口。
+- [ltayshark0637/dsh-Shutdown-Guard](https://github.com/ltayshark0637/dsh-Shutdown-Guard) — 在 DeepSeek Harness 侧边栏加一张卡片，等所有任务结束后自动关机；后台任务在跑、本批次有会话报错、或你手动中断过，都会按条件暂缓并说明原因。
 - [Luaphes/dsh-web-attention-badge](https://github.com/Luaphes/dsh-web-attention-badge) — 会话需要你时三处同时亮起：角标、标签页标题计数、按状态换色的鲸鱼 favicon。
 - [lucagiftzek/dsh-artifacts](https://github.com/lucagiftzek/dsh-artifacts) — DSH 侧栏里的 Artifacts 标签页：列出 agent 产出的文件并就地预览、支持实时刷新，另提供 artifact 模板工具。
 - [lucagiftzek/dsh-workspace-rail](https://github.com/lucagiftzek/dsh-workspace-rail) — 用工作区栏替代 DSH 侧栏列表：置顶会话与文件夹；项目即带自有 AGENTS.md 和文件的文件夹；Recents 为按最后一次完成 turn 排序的虚拟列表；提供 project_search 工具、未读标记、带未读数的折叠图标栏，以及随会话实时更新的浏览器标签标题。
@@ -2613,7 +2614,7 @@ dsh plugin --profile web add dshmarket
 - [zhijun-dai/Solarized-dsh-theme](https://github.com/zhijun-dai/Solarized-dsh-theme) — Solarized 主题插件：经典低对比护眼配色双体系——Ethan Schoonover 的 Solarized 与 Selenized（改良版）深浅各一套，专为长时间使用设计，遵循经典语法色。
 - [zhongyichang1998/dsh-open-meadow](https://github.com/zhongyichang1998/dsh-open-meadow) — 适用于官方 macOS DeepSeek Harness 0.2.0-rc.2 的海边主题，提供动态云层、局部海浪、前景花草摆动和中文设置。
 - [ZHOUcourier/dsh-theme-whalegirl](https://github.com/ZHOUcourier/dsh-theme-whalegirl) — 移植自 DreamSkin 皮肤包的 DSH Web UI 鲸鱼娘亮色主题：完整重映射原生 --dsw-* 令牌，插画作为环境壁纸衬在单层轻纸面之后，玻璃强度、对话区独立纸面、壁纸遮罩/焦点/缩放与输入框聚焦光晕均可实时调节，设置表单以中英双语呈现在已安装插件详情页。视觉定型：溟月（上善无形）→ DeepSeek 女仆装（ZipZipPipe）；插画 CC BY-NC-SA 4.0，代码 MIT。
-- [ZHUBAI0528/dsh-client-ui-aqua-community-fix](https://github.com/ZHUBAI0528/dsh-client-ui-aqua-community-fix) — 能导入自己的字体、调三处字号与六档字重，还能给正文、会话和说明文字分别配色——一套适配 DeepSeek Harness 0.2.1-rc.3 的 Aqua 玻璃主题，附带可调模糊与磨砂、流体或图片与视频壁纸、逐区域文字微调，以及一键还原原生界面的开关。承接 WYH66666666 的 Aqua 主题（DSH-Transparent-UI-Plugin v1.3.0），请勿与上游同装。
+- [ZHUBAI0528/dsh-client-ui-aqua-community-fix](https://github.com/ZHUBAI0528/dsh-client-ui-aqua-community-fix) — Aqua 玻璃主题：可调模糊与磨砂、流体或图片/视频壁纸、统一圆角与动效、字体字号与文字配色，关掉即还原原生界面。承接 WYH66666666 的 Aqua 主题（DSH-Transparent-UI-Plugin v1.3.0），请勿与上游同装。
 - [zhuifengqug/pixel-skin](https://github.com/zhuifengqug/pixel-skin) — 宝可梦风格 DSH Web 皮肤，含 GBA 双边框、HP 条状态、推理等级面板与可自定义配色。
 - [zhxqc/dsh-oh-my-theme](https://github.com/zhxqc/dsh-oh-my-theme) — DSH Web 主题与文件工作台：全局字体设置、@ 文件引用、项目文件树、Markdown 预览和可拖拽侧边面板。
 - [ZJUZhiyuCai/dsh-ivory](https://github.com/ZJUZhiyuCai/dsh-ivory) — DSH Web 暖中性色明暗主题，支持响应式布局、双语设置、安全 Markdown 预览、内容块复制与无遥测运行。
@@ -8336,6 +8337,7 @@ dsh plugin --profile web add dshmarket
 - [TwinsEarth/dsh-windows2macos](https://github.com/TwinsEarth/dsh-windows2macos) — 一条指令同时下发给所有在线的 Windows 与 macOS 机器，可跨网络跨区域：零依赖中继只通过出站连接与各机通信（Tailscale 内网、公网 VPS + TLS、或隧道），各机在各自的项目副本上执行，结果连同 commit、工作区指纹与命令哈希一并回传，因此"环境不一致"会被判为 unverifiable，而不会被误当成结果分歧。下发指令需要独立于设备令牌的 operator token。
 - [TZHR-invest/dsh-plugins#dsh-lan-gateway](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-lan-access) — 完整的 Web GUI 局域网/远程访问方案：0.0.0.0 绑定、crypto.randomUUID polyfill、令牌门卫（401 登录页 + WebSocket 拦截，回环豁免）、特权围栏与设置持久化放行，附带幂等安装器与升级恢复。
 - [uumit-ai/dsh-uumit-remote](https://github.com/uumit-ai/dsh-uumit-remote) — 用 UUMit 账号在手机或其他电脑上打开这台电脑的 dsh web，不用自建服务器、不装其他程序：插件内置通道客户端连接 UUMit 托管的通道，侧栏里的面板负责配对和选择谁能用（仅自己、通过邀请链接或手机号授权的人、所有人），可随时撤销。需 dsh web 且 DSH >=0.2.1-rc.2。
+- [vantoo/dsh-share-webui](https://github.com/vantoo/dsh-share-webui) — 把当前实例的 Web 界面固定在一个端口上共享，支持设备配对与 Cloudflare Access 校验。
 - [Very12345/dsh-ssh-workspace](https://github.com/Very12345/dsh-ssh-workspace) — 面向 Linux/macOS 的 SSH 工作区，支持导入 SSH config、选择远端目录，文件工具、Bash 与持久远程终端沿用 DSH 原生会话权限。
 - [vxdeus/dsh-sync](https://github.com/vxdeus/dsh-sync) — 通过用户自行配置的私有 HTTPS Git 仓库或 SFTP 同步 DSH 会话、设置、附件及工程文件，支持安全范围在线应用、离线恢复计划和经确认的插件更新。需 Node.js 24+；SFTP 路径还需 OpenSSH（ssh/sftp）。
 - [Wanderingss/dsh-ws-deflate](https://github.com/Wanderingss/dsh-ws-deflate) — 在不修改 DSH 安装目录的前提下，为 DSH 的 WebSocket 传输启用 permessage-deflate。
