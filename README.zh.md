@@ -496,7 +496,7 @@ dsh plugin --profile web add dshmarket
 - [Devin-AXIS/deepseek-design#deepseek-idesign](https://github.com/Devin-AXIS/deepseek-design/tree/main/packages/deepseek-idesign) — 可视化设计工作室，支持网站、App 原型、海报、信息卡、报告和杂志的模板创建、元素编辑、选区级 AI 草稿衔接与导出。
 - [Devin-AXIS/deepseek-design#deepseek-ivideo](https://github.com/Devin-AXIS/deepseek-design/tree/main/packages/deepseek-ivideo) — 可视化视频工作室，支持可编辑时间线、动画和素材控制、27 个模板、整段与选区级 AI 草稿衔接、校验、预览和导出。
 - [DevinMx520/dsh-selection-translator](https://github.com/DevinMx520/dsh-selection-translator) — 在 Harness Web UI 中为选中文字添加右键翻译菜单，可就地替换为简体中文译文，再次右键还原原文。
-- [devzer0o0/dsh-grok-buddy](https://github.com/devzer0o0/dsh-grok-buddy) — 把 DSH 侧栏每行会话的彩色状态圆点，换成 Grok Bot 本人的头像：用它的表情直接演出这个会话的状态——安静、思考中、输出中、跑工具、等你确认、失败重试、出错、刚做完。
+- [devzer0o0/dsh-grok-buddy](https://github.com/devzer0o0/dsh-grok-buddy) — 把 Grok Bot 本人那张脸装进 DSH 侧栏会话列表：每行的状态圆点变成会动的 GrokBot 头像，六种动作分别对应空闲、处理中、等待、已阻止、思考与完成——颜色标记项目，动作标记状态。
 - [dgy970516/dsh-status-turbo](https://github.com/dgy970516/dsh-status-turbo) — 在输入框底栏显示当前阶段、阶段已耗时、本步 token 数与无进展告警的状态条（纯日志投影，不轮询宿主），点击可展开详情面板。
 - [dhb861832993-star/pbr-render](https://github.com/dhb861832993-star/pbr-render) — 游戏美术 PBR 3D 模型预览：GLB/GLTF 带贴图纹理、IBL 环境光照、轨道控制，以及材质通道检查器（基础色/法线/粗糙度/金属度/AO/自发光/线框），标量通道按 PBR 规范以灰度显示，通过 pbr3d 围栏与 pbr_render 工具使用。
 - [dhdkfkfkf/dsh-pull-to-send](https://github.com/dhdkfkfkf/dsh-pull-to-send) — 用拖拽代替点击发送。按住输入框向上拉即武装：松手发送，拖回输入框取消，拖出对话区当场取消。仅响应鼠标与笔。
@@ -993,7 +993,7 @@ dsh plugin --profile web add dshmarket
 - [lsfcy/dsh-composer-predictions](https://github.com/lsfcy/dsh-composer-predictions) — 在一轮对话结束后，用灰字在空的输入框里给出下一句建议；Tab 填入草稿，Esc 或打字忽略。
 - [lsh2002/dsh-custom-fonts](https://github.com/lsh2002/dsh-custom-fonts) — 在设置页自定义界面中英文/代码字体与全局字号偏移，实时预览，一键恢复默认。
 - [lsq-dsh-plugins/dsh-workbench-layout](https://github.com/lsq-dsh-plugins/dsh-workbench-layout) — 将 DSH Web 重排为三栏工作台，提供文件编辑、Git 视图、Markdown 预览和工作区终端。
-- [LTao96/dsh-plugin-overview](https://github.com/LTao96/dsh-plugin-overview) — 本地插件总览：备注、分组、健康检查、启停和设置入口。
+- [LTao96/dsh-plugin-overview](https://github.com/LTao96/dsh-plugin-overview) — 本地已装插件总览：不下载插件，和插件市场搭配；一键收纳第三方插件设置，AI 整理备注与分组，配合健康诊断和启停，让插件不再乱而不知。
 - [ltayshark0637/dsh-Shutdown-Guard](https://github.com/ltayshark0637/dsh-Shutdown-Guard) — 在 DeepSeek Harness 侧边栏加一张卡片，等所有任务结束后自动关机；后台任务在跑、本批次有会话报错、或你手动中断过，都会按条件暂缓并说明原因。
 - [Luaphes/dsh-web-attention-badge](https://github.com/Luaphes/dsh-web-attention-badge) — 会话需要你时三处同时亮起：角标、标签页标题计数、按状态换色的鲸鱼 favicon。
 - [lucagiftzek/dsh-artifacts](https://github.com/lucagiftzek/dsh-artifacts) — DSH 侧栏里的 Artifacts 标签页：列出 agent 产出的文件并就地预览、支持实时刷新，另提供 artifact 模板工具。
@@ -4395,6 +4395,7 @@ dsh plugin --profile web add dshmarket
 - [bmhty123/dsh-sketchpad](https://github.com/bmhty123/dsh-sketchpad) — 手写公式、画示意图的画板：浮动或侧栏画布，导出裁切后的图片作为消息附件。
 - [BoltBlue121/dsh-moss-draw#plugin](https://github.com/BoltBlue121/dsh-moss-draw/tree/main/plugin) — 给 Agent 增加 7 个 art_* 工具和一个右侧栏绘图工作台（系列、页、修订、区域、相机体块），把工作流提交到你自建的 ComfyUI：MOSS/K2 文生图、局部重绘、角色参考、区域编辑与 Qwen 图像编辑，单次请求可叠加最多 4 个自备 LoRA。需要本机仓库执行一次适配：市场安装后运行 `install/adapt.mjs`（Windows 可用 `install/install.ps1`）把 `__MOSS_*__` 占位符替换为绝对的 `workspaceRoot` 与 ComfyUI 地址，否则 Host 会以 `MOSS_CONFIG_*` 拒绝加载预设。
 - [borgez/dsh-project-mcp](https://github.com/borgez/dsh-project-mcp) — 按项目挂载 MCP 服务器：项目在自己的文档里声明服务器（默认 `.dsh/mcp.json`，本地与全局文件列表均为配置项），只对在该项目中工作的会话挂载——会话首个 turn 时挂载，空闲后释放。右侧栏标签页与设置页列出每个有活动会话的项目、各服务器状态以及持有挂载的会话，并提供 `Sync` / `Retry` / `Release`、`enabled` 开关和对某个既有条目的编辑器；按项目的工具策略（`disclosure` / `direct` / `off`）配合固定项与 `mcp_search_tools` 决定模型可见范围；`${VAR}` 引用依次从项目 `.env` 文件与凭据文件解析；按服务器统计的调用次数不随会话消失。
+- [bowmark-ai/dsh-bowmark](https://github.com/bowmark-ai/dsh-bowmark) — 接入 Bowmark 托管的 MCP 服务器并注册它公布的工具，让智能体搜索并调用面向实时网站的类型化函数库。API Key 从 BOWMARK_API_KEY 凭据读取，不写入插件配置。
 - [bpc-oss/dsh-routed-subagent](https://github.com/bpc-oss/dsh-routed-subagent) — 新增 subagent_routed 工具：从任意会话发起一次性子 Agent，并完整挂载到任意 agent preset 上运行，支持按次覆盖模型/提供方，并在调用前预检模型可用性。
 - [BroWhitebyte/dsh-plugin-baiguangda-style](https://github.com/BroWhitebyte/dsh-plugin-baiguangda-style) — 把机核网编辑白广大的中文文风做成可执行的判据：注册一份 40 KB 风格技能，并提供 style_lint / style_audit / style_rules 三个工具——4 条硬错误 + 27 条警告（空转转折、金句通胀、冗余量词、段落过于均匀、孤证数字、AI 口头禅等），阈值按 444 篇 / 80.2 万字语料标定；设置页带总开关、单篇与批量试跑、阈值 JSON 覆盖。
 - [BuffMcBigHuge/dsh-brave-search](https://github.com/BuffMcBigHuge/dsh-brave-search) — 把 Brave 注册为 web_search 的搜索提供方，API Key 依次从 DSH 凭证库、$DSH_HOME/.credentials.yaml 或环境变量读取。无设置卡片、无备用引擎：每次搜索向 Brave Web Search API 发起一次请求。
