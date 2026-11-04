@@ -2,6 +2,6 @@ url: https://github.com/Henvy-Mango/dsh-porthole
 name: Henvy-Mango/dsh-porthole
 category: remote
 description:
-  en: LAN access portal for DeepSeek Harness with dual-password authentication and subpath reverse proxy support.
-  zh: 为 DeepSeek Harness 提供局域网访问门户，支持双密码认证和子路径反向代理。
+  en: "LAN access portal for DeepSeek Harness with dual-password authentication and subpath reverse proxy support. Derived from wenbin-wb/dsh-bridge v2.17.8 (MIT, several modules reused verbatim); both default to port 3082, so change one port before running both. Authentication is opt-in: set the visitor and admin passwords and enable it before exposing the port to the LAN."
+  zh: 为 DeepSeek Harness 提供局域网访问门户，支持双密码认证和子路径反向代理。派生自 wenbin-wb/dsh-bridge v2.17.8（MIT，部分模块逐字沿用）；两者默认端口均为 3082，同开前需修改其中一个的端口。认证默认未开启：把端口暴露到局域网前，请先设置访客与管理员密码并启用认证。
 tarball: https://github.com/Henvy-Mango/dsh-porthole/releases/download/v1.4.3/dsh-porthole-1.4.3.tgz

@@ -10831,9 +10831,9 @@
     "scannedAt": "2026-09-24T17:02:46.730Z",
     "tool": "dsh-trust-check@0.1.13"
   },
-  "https://github.com/elk-9527/dsh-vscode/tree/main/packages/dsh-door": {
+  "https://github.com/StanElka/dsh-vscode/tree/main/packages/dsh-door": {
     "version": "0.0.16",
-    "spec": "github:elk-9527/dsh-vscode",
+    "spec": "github:StanElka/dsh-vscode",
     "capabilities": [
       "fs-write",
       "fs-read",

@@ -2,5 +2,5 @@ url: https://github.com/HellGodX/dsh-ark-usage
 name: HellGodX/dsh-ark-usage
 category: usage
 description:
-  en: Volcengine Ark Coding Plan usage widget for DeepSeek Harness — a draggable whale in the corner opens a bubble card with the 5-hour, weekly and monthly request quota, plus a local token-to-CNY summary for today, the last 7 days, this month and all time.
-  zh: 火山方舟 Coding Plan 用量挂件：右下角一只可拖动的小鲸鱼，点开看 5 小时 / 周 / 月三档请求配额，再往下是本机 token 折算的今日、近 7 天、本月与累计花费。
+  en: Volcengine Ark Coding Plan usage widget for DeepSeek Harness — a draggable whale in the corner opens a bubble card with the 5-hour, weekly and monthly request quota, plus a local token-to-CNY summary for today, the last 7 days, this month and all time. Requires the Volcengine Ark CLI to be installed and logged in (npm i -g @volcengine/ark-cli; arkcli auth login).
+  zh: 火山方舟 Coding Plan 用量挂件：右下角一只可拖动的小鲸鱼，点开看 5 小时 / 周 / 月三档请求配额，再往下是本机 token 折算的今日、近 7 天、本月与累计花费。需要先安装并登录火山方舟 CLI：npm i -g @volcengine/ark-cli，然后 arkcli auth login。

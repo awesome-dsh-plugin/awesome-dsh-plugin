@@ -2,5 +2,5 @@ url: https://github.com/wld12314/lit-report-ppt
 name: wld12314/lit-report-ppt
 category: skill
 description:
-  en: Turns one journal paper PDF into a Chinese group-meeting literature report deck (.pptx) in the Nanyang Normal University physics template, plus a matching Word speaker script.
-  zh: 把一篇期刊论文做成中文组会文献汇报 PPT（南阳师范学院物理模板），并附一份配套的 Word 讲稿。
+  en: Turns one journal paper PDF into a Chinese group-meeting literature report deck (.pptx) in the Nanyang Normal University physics template, plus a matching Word speaker script. Requires Python 3 with python-pptx, python-docx, Pillow and pymupdf (pypdf fallback); install them with pip install -r requirements.txt.
+  zh: 把一篇期刊论文做成中文组会文献汇报 PPT（南阳师范学院物理模板），并附一份配套的 Word 讲稿。需本机 Python 3 及 python-pptx、python-docx、Pillow、pymupdf（pypdf 兜底）依赖，可用 pip install -r requirements.txt 安装。

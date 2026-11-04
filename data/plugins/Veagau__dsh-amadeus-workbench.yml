@@ -1,7 +1,7 @@
 url: https://github.com/Veagau/dsh-amadeus-workbench
 name: Veagau/dsh-amadeus-workbench
 category: ui
-tarball: https://github.com/Veagau/dsh-amadeus-workbench/releases/download/v1.6.4/local-dsh-amadeus-workbench-1.6.4-docs-refresh.tgz
+tarball: https://github.com/Veagau/dsh-amadeus-workbench/releases/download/v1.6.4/local-dsh-amadeus-workbench-1.6.4.tgz
 description:
   en: Adds an Amadeus-inspired launch panel with a clock and navigation shortcuts.
   zh: 添加 Amadeus 风格启动面板，包含时钟和导航快捷入口。

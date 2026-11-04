@@ -2,5 +2,5 @@ url: https://github.com/kleinklein0824/dsh-official-skin
 name: kleinklein0824/dsh-official-skin
 category: theme
 description:
-  en: 'DeepSeek official-site-inspired skin for DSH: dark aurora, particle whale and constellation backdrop, plus a light blue glass theme that follows the host color scheme.'
-  zh: '灵感来源于 DeepSeek 官网的 DSH 皮肤：深色模式提供流体极光、粒子鲸鱼与星座背景，浅色模式采用蓝色玻璃质感，并跟随宿主深浅色设置切换。'
+  en: 'DeepSeek official-site-inspired skin for DSH: dark aurora, particle whale and constellation backdrop, plus a light blue glass theme that follows the host color scheme. DSH Web only: verified on DSH 0.2.1-rc.5; the Desktop app is not yet verified.'
+  zh: '灵感来源于 DeepSeek 官网的 DSH 皮肤：深色模式提供流体极光、粒子鲸鱼与星座背景，浅色模式采用蓝色玻璃质感，并跟随宿主深浅色设置切换。仅支持 DSH Web（DSH 0.2.1-rc.5 实测通过）；桌面版尚未验证。'

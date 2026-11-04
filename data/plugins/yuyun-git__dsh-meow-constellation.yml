@@ -2,6 +2,6 @@ url: https://github.com/yuyun-git/dsh-meow-constellation
 name: yuyun-git/dsh-meow-constellation
 category: ui
 description:
-  en: Renders meow-memory's seven-layer SQLite store as a live 3D star map, with draggable nodes, layer rings and a click-through detail panel.
-  zh: 把 meow-memory 的七层记忆库实时画成 3D 星图，光点可拖拽、可按层筛选，点开可看全文与元数据。
+  en: Renders the seven-layer SQLite store of meow-memory as a live 3D star map, with draggable nodes, layer rings and a click-through detail panel. Requires the meow-memory plugin and Node 22.5+.
+  zh: 把 meow-memory 的七层记忆库实时画成 3D 星图，光点可拖拽、可按层筛选，点开可看全文与元数据；需先安装 meow-memory 插件，并要求 Node 22.5+。
 tarball: https://github.com/yuyun-git/dsh-meow-constellation/releases/download/v0.1.0/dsh-meow-constellation-0.1.0.tgz

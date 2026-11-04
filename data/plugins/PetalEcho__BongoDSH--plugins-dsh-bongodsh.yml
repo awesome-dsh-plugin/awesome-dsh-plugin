@@ -2,6 +2,6 @@ url: https://github.com/PetalEcho/BongoDSH/tree/main/plugins/dsh-bongodsh
 name: PetalEcho/BongoDSH#dsh-bongodsh
 category: fun
 description:
-  en: 'Typing companion with five characters and composer following, with an optional Rust desktop mode for macOS and Windows.'
-  zh: '五款角色的打字挂件，支持跟随输入框，可选用 macOS 和 Windows 的 Rust 桌面模式。'
+  en: 'Typing companion with five characters and composer following. This entry installs the universal page package (page mode only); the optional Rust desktop mode for macOS and Windows ships in the platform-specific release packages (darwin-arm64, darwin-x64, win32-x64).'
+  zh: '五款角色的打字挂件，支持跟随输入框。本条安装的是通用页面包（仅页面模式）；可选的 macOS / Windows Rust 桌面模式在对应平台的 Release 包中（darwin-arm64、darwin-x64、win32-x64）。'
 tarball: https://github.com/PetalEcho/BongoDSH/releases/download/v0.2.6/dsh-bongodsh-0.2.6-web.tgz

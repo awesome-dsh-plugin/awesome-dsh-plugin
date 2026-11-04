@@ -2,5 +2,5 @@ url: https://github.com/Kandecho/Video-Reader/tree/main/adapters/dsh
 name: Kandecho/Video-Reader#dsh-video-reader
 category: tools
 description:
-  en: 'Connects DSH to timestamped video materials, shared queues/history and Scroll account workflows through an existing local installation.'
-  zh: '复用现有本地安装，为 DSH 接入带时间的视频材料、通用队列/历史和 Scroll 账号工作流。'
+  en: 'Connects DSH to timestamped video reading, shared queues/history and Scroll personal Bilibili workflows through an existing Video Reader installation. Windows x64 only: install the core and set VIDEO_READER_ROOT before starting DSH; the bundle does not install Python, FFmpeg, models or Bilibili credentials.'
+  zh: '复用现有的 Video Reader 本地安装，为 DSH 接入带时间戳的视频阅读、通用队列/历史与 Scroll 的个人 B 站工作流。仅支持 Windows x64：需先安装核心并设置 VIDEO_READER_ROOT 再启动 DSH；本包不安装 Python、FFmpeg、模型或 B 站凭据。'

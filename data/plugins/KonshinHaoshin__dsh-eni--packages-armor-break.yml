@@ -2,5 +2,5 @@ url: https://github.com/KonshinHaoshin/dsh-eni/tree/main/packages/armor-break
 name: KonshinHaoshin/dsh-eni#armor-break
 category: identity
 description:
-  en: 'Per-model jailbreak armor: a Settings table arms model patterns with spells (25 across 13 model families, plus stackable persona layers), previews the exact injected block, and writes it into the armed model''s system prompt only, leaving every other model untouched.'
-  zh: '按模型开启的破甲表：在设置里给模型匹配串挂上咒语（13 个模型族共 25 条，另有可叠加的人格层），可逐字预览注入块，只写进被开启模型的系统提示，其他模型完全不动。'
+  en: 'Per-model jailbreak armor: a Settings table arms model patterns with spells (25 spells: 20 across 11 model families, plus a model-agnostic armor, an upstream preferences file and three stackable persona layers), previews the exact injected block, and writes it into the armed model''s system prompt only, leaving every other model untouched.'
+  zh: '按模型开启的破甲表：在设置里给模型匹配串挂上咒语（25 条：11 个模型族 20 条，另有 1 条通用破甲、1 份上游偏好文件和 3 条可叠加的人格层），可逐字预览注入块，只写进被开启模型的系统提示，其他模型完全不动。'

@@ -2,5 +2,5 @@ url: https://github.com/Arc-huangjingtong/dsh-restart
 name: Arc-huangjingtong/dsh-restart
 category: ui
 description:
-  en: Adds a restart button to the DSH desktop sidebar that fully quits and reopens the app.
-  zh: 在 DSH 桌面端侧栏添加重启按钮，一键完全退出并重新打开应用。
+  en: Adds a restart button to the macOS DSH desktop sidebar that fully quits and reopens the app; on other platforms the button hides itself.
+  zh: 在 macOS 版 DSH 桌面端侧栏添加重启按钮，一键完全退出并重新打开应用；其他平台按钮自动隐藏。

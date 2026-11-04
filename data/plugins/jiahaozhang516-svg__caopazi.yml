@@ -2,6 +2,6 @@ url: https://github.com/jiahaozhang516-svg/caopazi
 name: jiahaozhang516-svg/caopazi
 category: tools
 description:
-  en: Daily check-in for a campus AI hub site plus seat booking for the campus library, with a settings page and a progress badge.
-  zh: 校园 AI Hub 每日自动签到与图书馆座位预约，带设置页与完成度角标。
+  en: "Daily check-in for Nanjing Forestry University's ACM AI Hub plus seat booking for its library — both site addresses are hardcoded — with a settings page and a progress badge; built for DeepSeek Harness Mobile (DSHM) on Android."
+  zh: '南京林业大学 ACM AI Hub 每日签到与该校图书馆座位预约（两个站点地址写死），带设置页与完成度角标；面向 Android 上的 DeepSeek Harness Mobile。'
 icon: https://raw.githubusercontent.com/jiahaozhang516-svg/caopazi/main/assets/icon-180.png
