@@ -1,6 +1,0 @@
-url: https://github.com/JAYCou/dsh-codex-rail
-name: JAYCou/dsh-codex-rail
-category: ui
-description:
-  en: Adds a Codex-style turn rail to the left gutter of a DSH conversation, with hover previews, click-to-jump, and saved favorites.
-  zh: 在 DSH 对话左侧留白处加入 Codex 风格回合时间轴，支持悬停预览、点击跳转与收藏。
