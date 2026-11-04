@@ -1999,6 +1999,8 @@ dsh plugin --profile web add dshmarket
 - [Icstick/dsh-usage-card](https://github.com/Icstick/dsh-usage-card) — 侧栏常驻卡片：按 DeepSeek 官方价目（含峰谷与缓存差价）把本会话 token 折算成人民币，并按来源拆开上下文占比；逐轮计价，另附 Markdown/CSV 历史报告。
 - [igormel81/dsh-chat-cost](https://github.com/igormel81/dsh-chat-cost) — 为 DSH Web UI 的每个对话实时计算 token 费用：本对话、其子代理与整棵会话树，价格来自内置的 models.dev 快照：七家供应商、139 个有价模型，缓存读写费率按供应商实际公布的取值，DeepSeek 则使用其官方峰谷价格表。每个完成的回答都会在对话中显示自身费用，未打开的对话则按日志计价而不是整行消失。费用按区间计价，依据写入项目目录的只追加 JSONL 账本，因此已记录的工作保留当时的费率。此外还提供：按金额预算排布的工作计划、展示值得接入哪些模型的路由方案比较、以英语/中文/俄语生成的计划文档，以及当费用未归入任何计划单元时的提醒。
 - [imlishiyuan/dsh-keep-running](https://github.com/imlishiyuan/dsh-keep-running) — 配额看门狗：遇到 429 或配额错误时建立循环调度，持续重发「继续任务」提示直到某一轮正常结束，长任务不必手动重开；/keep-running list 与 /keep-running cancel <id> 用于查看和取消。需先挂载 @deepseek-ai/dsh-schedule（调度由它注册）。
+- [inezmitche46-maker/dsh-usage-stats#packages/dsh-session-token-stats](https://github.com/inezmitche46-maker/dsh-usage-stats/tree/main/packages/dsh-session-token-stats) — 输入框里的当前会话 Token 胶囊：总量与未缓存输入、缓存读取、缓存写入、输出四个分桶，并显示缓存命中率；纯客户端消费会话 tokenUsage 投影，不注册宿主服务、不读写文件、不联网。
+- [inezmitche46-maker/dsh-usage-stats#packages/dsh-usage-stats](https://github.com/inezmitche46-maker/dsh-usage-stats/tree/main/packages/dsh-usage-stats) — 侧边栏里的全量会话 Token 用量仪表盘：累计/峰值 Token、连续使用天数、53 周活动热力图、7/30 天趋势、按模型用量与会话排行；在本地从 profile 的会话投影缓存汇总（旧会话格式的会话也能统计），不联网，只读汇总路由拒绝非本机请求。
 - [itchenshi/dsh-model-surplus](https://github.com/itchenshi/dsh-model-surplus) — 在会话标题右侧显示当前模型的用量与余量：OpenCode Go 套餐用量、选中模型所对应的月上限、Command Code 的 5 小时与周窗口用量及剩余额度，以及 DeepSeek 账户余额。
 - [itsbuyru-bit/dsh-model-price](https://github.com/itsbuyru-bit/dsh-model-price) — 按模型设置高峰/低谷价格（USD 或 CNY），在输入框下方显示 DeepSeek 账户余额与本次会话花费，累计总花费，每条价格可记录来源链接与核对日期，并支持为单个模型覆盖高峰时段。
 - [ium9khbep8834-maker/dsh-cache-saver](https://github.com/ium9khbep8834-maker/dsh-cache-saver) — 按 agent 收敛过大的 MCP 工具 JSON Schema（调度不变），并在设置页展示 token 用量、缓存命中与上下文构成。
@@ -3246,6 +3248,7 @@ dsh plugin --profile web add dshmarket
 - [bill9109/dsh-conversation-share](https://github.com/bill9109/dsh-conversation-share) — 分享任意段落的对话。
 - [bingzhu44-blip/brutal-monkey](https://github.com/bingzhu44-blip/brutal-monkey) — dsh暴力删除：永久删除 DSH 会话的磁盘数据——单条删除或跨工作区批量删除，支持 Ctrl+A 全选与 Delete 快捷删除，彻底清理对话记录、投影缓存、工作区归属、附件与子会话，不可恢复。
 - [BJ1919810/dsh-session-mail](https://github.com/BJ1919810/dsh-session-mail) — 同一宿主内 DSH 会话之间的代理传话。`send_session_message` 可等对方回合结束再送达、也可插进正在跑的回合；发信方 id 由插件自己写，伪造的 From 抬头会被拒；每条消息带 id —— 回信可用 replyTo 引用、thread 防止同一件事排队两次、supersedes 撤回尚未投递的旧消息。`read_session_info` 只读地看对方：标题、最后一轮回复、最后一次 present 的文件、以及忙闲与队列深度。
+- [BlueOcean3214/dsh-handoff-session](https://github.com/BlueOcean3214/dsh-handoff-session) — 为 DeepSeek Harness 提供会话交接：上下文压力到阈值时写交接文档与可搜索转录，并在新会话里自动继续。
 - [Blueteemo/dsh-smart-namer](https://github.com/Blueteemo/dsh-smart-namer) — 会话与工作区的智能命名：点一下让模型基于条目自身内容给出短名候选，选中即改名。
 - [Session Lens](https://github.com/bobostudio/dsh-session-lens) — DeepSeek Harness 的会话洞察，并可一键导出为可分享的 HTML 回放。
 - [Boliban/dsh-enter-customizer](https://github.com/Boliban/dsh-enter-customizer) — 接管聊天输入框的回车等快捷键，每个快捷键的行为都能单独配置。
@@ -3612,6 +3615,7 @@ dsh plugin --profile web add dshmarket
 - [RyanZeeee/dsh-chattree](https://github.com/RyanZeeee/dsh-chattree) — 把 DSH 会话画成一张对话画布：每轮问答是一个节点，任意节点都能分叉出真实的子会话，压缩过的上下文收成一个绿色节点、可以从它继续对话；左侧栏按 DSH 工作区分组列出画布，重命名与 DSH 自己的会话标题同步。
 - [RyensX/dsh-message-fold](https://github.com/RyensX/dsh-message-fold) — 为 DeepSeek Harness 提供 Codex 风格的会话消息折叠。
 - [Ryuu-64/dsh-session-tools](https://github.com/Ryuu-64/dsh-session-tools) — 给 AI 四个会话工具：新建会话、给别的会话发消息、列出会话及其状态，以及等另一个会话这一轮跑完并把它的回答取回来。
+- [rz-123/dsh-plugin-conversation-purge](https://github.com/rz-123/dsh-plugin-conversation-purge) — 彻底删除对话，可选择同时删除该对话创建的文档与附件。
 - [s0meb0dy3/dsh-scratch-workspace](https://github.com/s0meb0dy3/dsh-scratch-workspace) — 一键创建一次性临时工作区（独立文件夹、独立工作区与会话），在侧边栏统一管理，用完把文件夹移入系统废纸篓。
 - [sailoumili/dsh-session-remover](https://github.com/sailoumili/dsh-session-remover) — 在侧栏会话行菜单中增加「删除对话」与「批量删除」；删除的对话及其子代理会话移入 Windows 回收站，可从回收站还原。
 - [SaiSenBox/dsh-prompt-manager](https://github.com/SaiSenBox/dsh-prompt-manager) — 浏览器本地提示词库：在输入框选择器中同时注入多条会话级系统提示词，支持分支继承、中英界面、收藏与 JSON 备份。
@@ -3864,7 +3868,7 @@ dsh plugin --profile web add dshmarket
 - [aujurd22/dsh-flymemory](https://github.com/aujurd22/dsh-flymemory) — 面向 DSH 的结构化长期记忆：15 个 MCP 工具支持取代、衰减与实体状态跟踪，带自动召回与捕获钩子，并按请求发布有界指针索引，而不是等上下文塞满再压缩。需要带 torch 与 sentence-transformers 的 Python 3.10+；首次运行会下载约 470 MB 的嵌入模型。
 - [baaai123/dsh-memory-protocol](https://github.com/baaai123/dsh-memory-protocol) — 记忆强制协议插件：桥接 opencode-memory MCP 服务器，工具调用前强制 memory_weave、每轮自动存档、自动注入记忆上下文。
 - [baiqieji-LuLu/DSH-DREAM](https://github.com/baiqieji-LuLu/DSH-DREAM) — 面向 LLM Agent 的持久化 RAG 增强长期记忆层，支持全息记忆、状态槽位冲突检测与时间线检索。需要 Python 3.10+，并先在仓库里建 venv 执行 pip install -e ".\[dev]" 装好 Python 依赖后再启用插件；仓库自带安装脚本为 PowerShell（Windows）。
-- [baixiaoyin666/dsh-long-memory](https://github.com/baixiaoyin666/dsh-long-memory) — 每轮对话结束后提炼用户偏好与项目事实并注入后续会话，还会写每日习惯日记；提供 memory_search、memory_save、memory_forget 三个工具。
+- [baixiaoyin666/dsh-long-memory](https://github.com/baixiaoyin666/dsh-long-memory) — 长期记忆插件：每轮对话结束后自动提炼用户偏好与项目事实并注入后续会话，还会写每日习惯日记；提供 memory_search、memory_save、memory_forget 三个工具。
 - [baizhu66018/dsh-pitfall-memory](https://github.com/baizhu66018/dsh-pitfall-memory) — 面向 DeepSeek Harness 的失败记忆插件。运行中捕获工具失败，用 16 条内置规则归并成「症状 + 正确做法」的经验，附带会话/天/周三级总结，并通过 systemPrompt context 把简报注入后续会话。提供 5 个 pitfall_ 工具与 Web 设置页。
 - [BangBang-03/dsh-memory](https://github.com/BangBang-03/dsh-memory) — DSH 的工作区长期记忆。会话开始只注入「一行一条」的记忆索引，正文由 memory 工具按需取——同样字数预算约装三倍条目；一轮结束时用当轮最后一条用户消息做纯本地检索，命中的记忆下一轮随简报召回，不花模型 token。可选自动提炼把一段对话归纳成结构化记忆，captureMode=draft 时先进审批队列、你批准了才生效。另有画像层：工作区与全局各一份全貌，由日志与条目重写生成，同样可走草稿。设置 → 记忆 里有档案 / 列表 / 时间线、体检（重复簇、过期未用、断链）、版本链 supersede 与一键回滚，以及「扫描本机」把已有的 WorkBuddy / Qoder 记忆文件导入（只读，不动来源）。
 - [baosfeng/my-dsh-plugins#dsh-my-memory](https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-my-memory) — 全局 / 项目两级记忆：会话开始时把记忆注入系统提示词，设置页面板支持新增 / 修改 / 删除（写操作需确认），并为 agent 提供只读查询工具 memory_query（npm: `dsh-my-memory`）。
