@@ -3,4 +3,4 @@ name: liuhange789/data-asset-inspector#gov-config-gd
 category: tools
 description:
   zh: "广东省政务数据巡检配置包 — 含粤府办/粤委改等广东省地方政策依据与标准词表，提供配置加载与校验运行时"
-  en: "Guangdong provincial government data inspection config pack with runtime config loading and validation"
+  en: "Guangdong provincial government data inspection config pack with runtime config loading and validation."
