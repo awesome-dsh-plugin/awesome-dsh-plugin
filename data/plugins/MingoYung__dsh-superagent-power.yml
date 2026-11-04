@@ -2,6 +2,6 @@ url: https://github.com/MingoYung/dsh-superagent-power
 name: MingoYung/dsh-superagent-power
 category: ui
 description:
-  en: Adds a shared Sup composer switch on Windows to start or gracefully stop a separate Super-agent process and release its memory.
-  zh: 在 Windows 输入栏添加全局 Sup 开关，按需启动或正常关闭独立的 Super-agent 后台进程，关闭后释放其占用的内存。
+  en: Adds a shared Sup composer switch on Windows to start or gracefully stop a separate Super-agent process and release its memory. Requires a working DSH NEXT install with Node 24+, the standalone DSH CLI and an already-configured independent Super-agent profile (verified on DSH 0.2.1-rc.4/rc.5); the bundled bridge.js must also be registered in the Super-agent profile — installing the desktop package alone does not complete setup.
+  zh: 在 Windows 输入栏添加全局 Sup 开关，按需启动或正常关闭独立的 Super-agent 后台进程，关闭后释放其占用的内存。前置条件：已装好 DSH NEXT、Node 24+、独立 DSH CLI，且 Super-agent 已在独立 profile 中配置好（已在 DSH 0.2.1-rc.4/rc.5 验证）；还需在 Super-agent profile 中注册包内的 bridge.js——只安装桌面包并不能完成整套安装。
 tarball: https://github.com/MingoYung/dsh-superagent-power/releases/download/v0.1.0/local-superagent-power-0.1.0.tgz

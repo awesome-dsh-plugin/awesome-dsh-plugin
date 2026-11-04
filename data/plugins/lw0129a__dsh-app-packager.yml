@@ -1,5 +1,5 @@
-url: https://github.com/lw0129a/dsh-app-packager/tree/main/packages/dsh-app-packager
-name: lw0129a/dsh-app-packager#dsh-app-packager
+url: https://github.com/lw0129a/dsh-app-packager
+name: lw0129a/dsh-app-packager
 category: dev
 description:
   en: 'Packaging pipeline for uni-app x projects: reads the local HBuilderX version, recommends and one-click installs the matching iOS / Android / HarmonyOS offline SDK (panel card with official download links), then drives the HBuilderX CLI to build, sign and upload apps from per-project config files; the engine also ships as list / doctor / check / build tools for the agent.'
