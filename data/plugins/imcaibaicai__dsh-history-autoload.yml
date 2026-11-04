@@ -1,0 +1,6 @@
+url: https://github.com/imcaibaicai/dsh-history-autoload
+name: imcaibaicai/dsh-history-autoload
+category: session
+description:
+  en: Auto-load full session history when opening a conversation in DSH
+  zh: 打开 DSH 会话时自动加载完整历史
