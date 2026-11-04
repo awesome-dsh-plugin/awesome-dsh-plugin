@@ -1,0 +1,6 @@
+url: https://github.com/AITabby/dockyard-dsh
+name: AITabby/dockyard-dsh
+category: model
+description:
+  en: 'Native account-pool and provider plugin for DeepSeek Harness on macOS: official browser OAuth plus provider-native transports for Codex, Antigravity, Grok, Claude, Cursor, WorkBuddy and Command Code, with live model catalogs, plan and quota windows, and manual, sticky-session, round-robin or failover account selection.'
+  zh: 'DeepSeek Harness 的 macOS 原生账号池与 Provider 插件：为 Codex、Antigravity、Grok、Claude、Cursor、WorkBuddy 与 Command Code 提供官方浏览器 OAuth 与原生请求链路，读取实时模型目录、套餐与额度窗口，并支持手动、sticky session、轮询与 failover 账号选择。'
