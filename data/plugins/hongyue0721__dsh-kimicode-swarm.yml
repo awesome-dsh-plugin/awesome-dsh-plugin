@@ -4,3 +4,4 @@ category: workflow
 description:
   en: 'Kimi-Code-style swarm: after you turn on Swarm mode, dispatches up to 128 parallel subagents with per-item models, rate-limit backoff, resume and fork, with a live in-chat progress panel.'
   zh: Kimi Code 风格 swarm：用户开启 Swarm 模式后，一次并行派发最多 128 个子 Agent，支持按项指定模型、限流退避、续做和 fork，并在聊天内实时显示进度。
+tarball: https://github.com/hongyue0721/dsh-kimicode-swarm/releases/latest/download/dsh-kimicode-swarm.tgz
