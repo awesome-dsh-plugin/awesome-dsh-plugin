@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-rs-workflow
+name: mzzsfy/dsh-plugin#dsh-rs-workflow
+category: workflow
+description:
+  en: 'Workflow templates that release into agent preset combos: orchestrated main loop with structured output contracts, approval primitives, and full run logs for review.'
+  zh: '若水工作流：流程模板一键释放为 Agent 预设组合，结构化产出契约校验、审批原语、运行记录完整回看。'
+icon: https://raw.githubusercontent.com/mzzsfy/dsh-plugin/main/assets/icons/png/dsh-rs-workflow.png
