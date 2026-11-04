@@ -1,0 +1,7 @@
+url: https://github.com/Rosynb666/dsh-cumcm/tree/main/plugin/dsh-cumcm
+name: Rosynb666/dsh-cumcm#dsh-cumcm
+category: workflow
+icon: https://raw.githubusercontent.com/Rosynb666/dsh-cumcm/main/docs/assets/icon-180.png
+description:
+  en: "Math-modeling contest workbench for DeepSeek Harness: a sidebar P0–P7 progress board and traceable facts ledger, one-click render/check/layout/compile, PDF preview, and human sign-off; paired with the math-modeling-cumcm skill."
+  zh: "国赛论文工作台：侧栏展示 P0–P7 进度与可追溯的 facts 台账，一键执行 render/check/layout/编译，预览 PDF，并支持人工签字；配套 math-modeling-cumcm skill。"
