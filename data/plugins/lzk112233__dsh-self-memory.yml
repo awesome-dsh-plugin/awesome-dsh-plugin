@@ -2,5 +2,5 @@ url: https://github.com/lzk112233/dsh-self-memory
 name: lzk112233/dsh-self-memory
 category: memory
 description:
-  en: 'Four-layer memory for DeepSeek Harness: an append-only dialogue log, a weighted long-term fact store with decay and one-way archiving, self-notes the agent writes about itself, Chinese bigram recall over the raw log, and incremental AES-256-GCM sync to a private git repo where only ciphertext is stored. Archived sessions stop feeding recall and prompt injection without losing their history.'
-  zh: 'DSH 四层记忆插件：只增不改的原文库、带权重衰减与单向归档的长期事实库、智能体自己写的自我认知、原文库上的中文 bigram 检索，以及增量 AES-256-GCM 加密同步到只存密文的私有 git 仓库。会话归档后不再参与检索与提示注入，但历史仍在库里。'
+  en: 'Four-layer memory for DeepSeek Harness, ported from the memory design of NoMindSama/qq-dsh-bridge (MIT) with the QQ channel removed: an append-only dialogue log, a weighted long-term fact store with decay and one-way archiving, self-notes the agent writes about itself, Chinese bigram recall over the raw log, and incremental AES-256-GCM sync to a private git repo where only ciphertext is stored. Archived sessions drop out of recall without losing their history.'
+  zh: 'DSH 四层记忆插件（记忆设计移植自 NoMindSama/qq-dsh-bridge，MIT，去掉了 QQ 通道）：只增不改的原文库、带权重衰减与单向归档的长期事实库、智能体自己写的自我认知、原文库上的中文 bigram 检索，以及增量 AES-256-GCM 加密同步到只存密文的私有 git 仓库。会话归档后不再参与检索，但历史仍在库里。'

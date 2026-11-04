@@ -2,5 +2,5 @@ url: https://github.com/AvenYQ/dsh-clipforge
 name: AvenYQ/dsh-clipforge
 category: ui
 description:
-  en: Video workbench for DeepSeek Harness that parses a link, downloads the source, transcribes it, trims or merges clips and exports GIFs.
-  zh: 视频工作台：贴链接解析并下载、转写文案、截取拼接片段、按目标体积导出 GIF。
+  en: Video workbench for DeepSeek Harness that parses a link, downloads the source, transcribes it, trims or merges clips and exports GIFs. Requires ffmpeg/ffprobe and yt-dlp; whisper.cpp plus a model is optional for videos without subtitles.
+  zh: 视频工作台：贴链接解析并下载、转写文案、截取拼接片段、按目标体积导出 GIF。需自备 ffmpeg/ffprobe 与 yt-dlp；无字幕视频的本地转写另需 whisper.cpp 与模型（可选）。

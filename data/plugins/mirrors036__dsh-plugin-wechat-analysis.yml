@@ -2,5 +2,5 @@ url: https://github.com/mirrors036/dsh-plugin-wechat-analysis
 name: mirrors036/dsh-plugin-wechat-analysis
 category: skill
 description:
-  en: 'Windows WeChat 4.x chat export toolchain shipped as a skill: discovers SQLCipher shards, decrypts, exports and merges them; conversion, stats, AI relationship analysis and HTML reporting delegate to the locally installed she-love-me skill.'
-  zh: 'Windows 微信 4.x 聊天导出工具链技能：自动发现、解密、导出并合并 SQLCipher 分片；转换、统计、AI 关系分析与 HTML 报告委托给本机已装的 she-love-me 技能。'
+  en: 'Windows WeChat 4.x chat export toolchain shipped as a skill: discovers SQLCipher shards, decrypts, exports and merges them; conversion, stats, AI relationship analysis and HTML reporting delegate to the locally installed she-love-me skill. Requires Python 3.9+ for the analysis stages.'
+  zh: 'Windows 微信 4.x 聊天导出工具链技能：自动发现、解密、导出并合并 SQLCipher 分片；转换、统计、AI 关系分析与 HTML 报告委托给本机已装的 she-love-me 技能。分析阶段需要 Python 3.9+。'
