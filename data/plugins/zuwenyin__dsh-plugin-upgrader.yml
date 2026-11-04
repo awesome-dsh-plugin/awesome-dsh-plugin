@@ -2,6 +2,6 @@ url: https://github.com/zuwenyin/dsh-plugin-upgrader
 name: zuwenyin/dsh-plugin-upgrader
 category: market
 description:
-  en: 'Adds a Versions tab to the Plugins page: one-click upgrade of all upgradable plugins or a multi-selected subset, version history back to any published release, and GitHub links for each repo and each version.'
-  zh: '在「插件」页新增版本页：一键升级全部可升级插件或勾选的子集，查看历史版本并回滚到任意已发布版本，并为每个插件和每个版本提供 GitHub 链接。'
+  en: 'A Versions tab on the Plugins page: in-place upgrades where it can (no uninstall, enabled state kept, falling back to remove + reinstall when the profile writer lock is busy), live pnpm progress with cancel, the full published version history with one-click rollback, a per-version check against the running DSH, mirror-gap warnings, and a selectable npm registry saved in the profile.'
+  zh: '在「插件」页新增「版本」标签：优先原位替换（不卸载、启用状态保留，拿不到 profile 写入锁时退回卸载再装），实时显示 pnpm 进度并可取消，列出全部已发布版本并一键回滚，逐个版本与当前运行的 DSH 做兼容性判断，标出镜像落后上游的缺口，安装源可选并写进 profile。'
 icon: https://raw.githubusercontent.com/zuwenyin/dsh-plugin-upgrader/main/assets/icon-180.png
