@@ -1,7 +1,7 @@
 url: https://github.com/koishi-fumo-code/dsh-fx-arena
 name: koishi-fumo-code/dsh-fx-arena
 category: fun
-tarball: https://github.com/koishi-fumo-code/dsh-fx-arena/releases/download/v0.8.0/dsh-fx-arena-0.8.0.tar.gz
+tarball: https://github.com/koishi-fumo-code/dsh-fx-arena/releases/download/v0.9.0/dsh-fx-arena-0.9.0.tar.gz
 icon: https://raw.githubusercontent.com/koishi-fumo-code/dsh-fx-arena/main/assets/icon-512.png
 description:
   en: 'Simulated FX trading arena played against an algorithmic whale-chan opponent: a live canvas candlestick chart over five instruments (EUR/USD, GBP/USD, USD/JPY, gold, and Whale/TOKEN, her own coin she never shorts), selectable leverage from 10x to 500x, and two modes — a timed mode with 90s to 500s rounds settled on equity, and an untimed goal mode that starts with $300,000 and ends when someone first reaches $20M or goes into debt (equity below zero, no maintenance margin). The match runs in a module-level engine, so switching to a conversation does not stop it or restart it. Margin and spread are modeled, prices are a local random walk with occasional news shocks, and nothing touches the network or real money.'
