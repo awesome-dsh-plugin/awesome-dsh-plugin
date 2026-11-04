@@ -7384,7 +7384,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zzx-dear/dsh-capybara-notify](https://github.com/zzx-dear/dsh-capybara-notify) - Capybara secretary for DSH: desktop pet notifications with ding sound, alert inbox API, session-aware alerts (turn done / approval needed / turn blocked), check scripts, and daily high-star plugin recommendations.
 
 ### Development & Runtime
-
+- [dsh-vscode](https://github.com/wenjun81/dsh-vscode) - DSH sidebar panel that bridges VS Code: launch VS Code, browse workspace files, send them as attachments to the current conversation, and edit code in a floating multi-tab workbench.
 - [11111353535/dsh-reaper](https://github.com/11111353535/dsh-reaper) - Inventory every listening TCP endpoint and grade each holder as agent-spawned, workspace, dev-server, unattributed, system or protected; only the first two can be auto-selected, and a reap previews its descendant-closure plan unless confirmed.
 - [11111353535/dsh-which](https://github.com/11111353535/dsh-which) - Command resolution forensics: which file a command actually runs, which PATH entry won, what it shadows, how many entries are duplicates or dead, and whether the copies behind one name report the same version.
 - [1123762794/dsh-web-restart](https://github.com/1123762794/dsh-web-restart) - One-click restart button for the DSH Web UI: a sidebar footer button that restarts the dsh web process with a single click and persists across the restart it triggers.
@@ -8842,4 +8842,3 @@ Listed here? Show it off:
 This is a community-maintained index. Plugins are developed and maintained by their respective authors; listing here is not an endorsement, and no guarantees are made about any plugin's safety, quality, or maintenance. Installing a plugin runs third-party code on your machine — review the source and install at your own risk. This project is not affiliated with DeepSeek.
 
 Issues here are for the list and its website only. Problems inside the plugin market UI go to [dsh-market](https://github.com/dsh-market/dsh-market/issues); problems with `dsh` itself go to [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness/issues); a bug in a plugin goes to that plugin's own repository.
-
