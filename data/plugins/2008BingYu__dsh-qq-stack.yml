@@ -1,0 +1,6 @@
+url: https://github.com/2008BingYu/dsh-qq-stack
+name: 2008BingYu/dsh-qq-stack
+category: usage
+description:
+  en: 'QQ protocol daemon for DeepSeek Harness: LinuxQQ plus NapCat start with the engine and log in automatically after one QR scan.'
+  zh: 给 DSH 挂 QQ 的协议端底座：LinuxQQ + NapCat 随引擎自启，扫码一次后自动登录。
