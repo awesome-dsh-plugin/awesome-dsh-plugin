@@ -1,0 +1,7 @@
+url: https://github.com/joeseesun/qiaomu-reader-dsh
+name: joeseesun/qiaomu-reader-dsh
+category: docs
+description:
+  en: "Read EPUB, PDF, TXT, Markdown, and HTML with reading notes, a vocabulary list, and native Harness AI companion reading."
+  zh: "在 Harness 中阅读 EPUB、PDF、TXT、Markdown 和 HTML，整理阅读笔记与生词，并使用原生 AI 伴读。"
+tarball: https://github.com/joeseesun/qiaomu-reader-dsh/releases/download/v1.9.1/qiaomu-reader-dsh-1.9.1.tgz

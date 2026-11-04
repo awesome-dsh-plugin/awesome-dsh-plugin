@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-shell-select
+name: mzzsfy/dsh-plugin#dsh-shell-select
+category: tools
+description:
+  en: 'Windows shell takeover: replace the default pwsh tool with a configurable multi-client shell tool (git bash, WSL, cmd, pwsh, custom paths), with a deny blacklist and automatic fallback.'
+  zh: 'Windows shell 接管：把默认 pwsh 工具替换为可配置多客户端 shell 工具（git bash/WSL/cmd/pwsh、自定义路径），deny 黑名单与失败自动回退官方链。'
+icon: https://raw.githubusercontent.com/mzzsfy/dsh-plugin/main/assets/icons/png/dsh-shell-select.png

@@ -1,0 +1,6 @@
+url: https://github.com/hualidan42-beep/dsh-plugin-task-radar
+name: hualidan42-beep/dsh-plugin-task-radar
+category: ui
+description:
+  en: Monitor workspace sessions, subagents, todo progress and token usage in a floating panel.
+  zh: 在浮动面板中查看工作区会话、子代理状态、待办进度与 Token 用量。

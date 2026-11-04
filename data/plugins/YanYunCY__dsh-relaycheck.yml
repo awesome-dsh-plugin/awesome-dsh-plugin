@@ -1,0 +1,6 @@
+url: https://github.com/YanYunCY/dsh-relaycheck
+name: YanYunCY/dsh-relaycheck
+category: model
+description:
+  en: Adds a relay_check tool that runs relaycheck against an LLM API relay to detect model swaps, misreported usage, truncated context and injected prompts; keys are read from environment variables.
+  zh: 提供 relay_check 工具，用 relaycheck 检测 LLM API 中转是否调包模型、虚报用量、截断上下文或注入提示词；key 只从环境变量读取。
