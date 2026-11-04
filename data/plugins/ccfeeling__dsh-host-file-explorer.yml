@@ -2,7 +2,7 @@ url: https://github.com/ccfeeling/dsh-host-file-explorer
 name: ccfeeling/dsh-host-file-explorer
 category: ui
 description:
-  en: 'Left-sidebar panel that browses the filesystem of the machine the Harness runs on: directory listings with sizes and modification times, text and image previews, file downloads, and folder creation. Reads run with the privileges of the account that runs the Harness.'
-  zh: '左侧边栏面板，浏览运行 Harness 的宿主机文件系统：带大小与修改时间的目录列表、文本与图片预览、文件下载，以及新建文件夹。读取操作使用运行 Harness 的账户权限。'
+  en: 'Left-sidebar panel that browses the filesystem of the machine the Harness runs on: directory listings with sizes and modification times, text and image previews, file downloads, file uploads into the open directory, and folder creation. The panel speaks twelve languages. Reads and writes run with the privileges of the account that runs the Harness.'
+  zh: '左侧边栏面板，浏览运行 Harness 的宿主机文件系统：带大小与修改时间的目录列表、文本与图片预览、文件下载、向当前目录上传文件，以及新建文件夹。面板支持十二种语言。读写操作使用运行 Harness 的账户权限。'
 icon: https://raw.githubusercontent.com/ccfeeling/dsh-host-file-explorer/main/assets/icon-180.png
 tarball: https://github.com/ccfeeling/dsh-host-file-explorer/releases/latest/download/dsh-host-file-explorer.tgz
