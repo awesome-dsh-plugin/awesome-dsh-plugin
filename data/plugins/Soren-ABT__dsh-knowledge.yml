@@ -2,5 +2,5 @@ url: https://github.com/Soren-ABT/dsh-knowledge
 name: Soren-ABT/dsh-knowledge
 category: memory
 description:
-  en: 'Knowledge base for DeepSeek Harness with document import, BM25/vector hybrid retrieval, local embeddings and OCR, agent tools, and a browser management panel.'
-  zh: 'DeepSeek Harness 知识库插件，支持文档导入、BM25 与向量混合检索、本地向量模型与 OCR、模型工具及浏览器管理面板。'
+  en: 'Knowledge base for DeepSeek Harness: assembles ContextWindow evidence at query time within heading boundaries and token budgets, with follow-up reading around each search anchor; combines BM25/vector search via weighted RRF, MMR and optional local/remote reranking; provides automatic evidence injection, a browser panel for local embedding/rerank/OCR model downloads and health checks, keyword search without model downloads, and in-place rescans of imported directories.'
+  zh: 'DeepSeek Harness 知识库：查询时按标题边界与 Token 预算动态组织 ContextWindow 证据，支持围绕命中锚点续读原文；通过加权 RRF 融合 BM25 与向量召回，支持 MMR 去冗余和本地／远程重排；提供回答前自动证据注入、本地 embedding／rerank／OCR 模型下载与健康检查面板、无需下载模型的关键词检索，以及导入目录原地重扫。'
