@@ -3783,6 +3783,7 @@ dsh plugin --profile web add dshmarket
 - [TiFu799/dsh-wake-up](https://github.com/TiFu799/dsh-wake-up) — 按需叫醒休眠的 DSH 会话：当前没活着的会话会带着它上次用的 provider/model 路由从磁盘 resume 回来，让 QQ 通道、定时任务、webhook、别的插件这类外部集成能正常投递，而不是撞上「那间会话现在没活着」。提供 HTTP 端点、wake_session 工具和 ctx.wakeUp 服务；resume 只把历史读回内存，本身不消耗模型请求。
 - [TiJun-Prime/dsh-turn-delete](https://github.com/TiJun-Prime/dsh-turn-delete) — 从 DSH 会话中删除一个已结束的轮次而不删除会话本身——最后一条助手回复旁的垃圾桶按钮会把该轮的提问、这条回复与工具记录从对话界面和模型上下文中移除，而 Session id、标题、之后的轮次与只追加日志保持不变；删除以持久 tombstone 记录，刷新后依然生效。
 - [tinyblckc0000al/dsh-deepworker](https://github.com/tinyblckc0000al/dsh-deepworker) — DSH 会话工作台：轮次操作、引用出处、本地笔记与摘要、会话内查找、专注锁和多工作区命令按钮。
+- [TLEWA/dsh-if](https://github.com/TLEWA/dsh-if) — 为 DSH 增加 /if 斜杠命令：第一行是条件，其余行是指令。由继承当前会话工具、system prompt 与消息历史的 fork 子代理判断条件并回答 YES 或 NO，只有 YES 才把指令作为一条普通用户消息发给主 agent，NO 则什么都不发送；条件、判断用的 prompt 与判断结果都不会写进主会话。模型工作时命令与普通消息一起排队，可在队列面板里编辑、删除、插话，设置里可切回 0.2.x 的后台模式。判断以只读方式运行，宿主没有可继承上下文的 fork provider 时回退为一次性模型调用加纯文本记录。适配 DSH 0.2.1-rc.5 及以上（已在 0.2.1-rc.5 与 0.2.2-rc.1 验证），需 Node.js 20.3 或更新版本。
 - [tmeeli/dsh-auto-goal-resume](https://github.com/tmeeli/dsh-auto-goal-resume) — DSH 重启后自动续跑有活跃目标的会话,无需人工说「继续」。
 - [tmpdot/dsh-checkpoint-diff](https://github.com/tmpdot/dsh-checkpoint-diff) — 把 dsh-checkpoint-rewind 产生的检查点变成时间线时间节点，任意两节点之间逐文件行级 diff；可从会话日志重放 trace 区间差异（无需快照生产者）；支持预览式工作区回滚与一次性撤销。提供 /diff、/rollback 命令、JSON HTTP API 与 GUI 面板。
 - [TOBYCAI/dsh-sessions-manager](https://github.com/TOBYCAI/dsh-sessions-manager) — 在统一设置面板中归档、恢复、彻底删除并跨工作区移动 DeepSeek Harness 会话。
