@@ -1,5 +1,5 @@
-url: https://github.com/sqzw-x/dsh-notes-context
-name: sqzw-x/dsh-notes-context
+url: https://github.com/sqzw-x/dsh-plugins/tree/main/packages/dsh-notes-context
+name: sqzw-x/dsh-plugins#dsh-notes-context
 category: memory
 description:
   en: 'Notes-backed context compression for DeepSeek Harness: replaces LLM-summarized compaction with a model-written persistent notebook plus recoverable raw history, so the rollover boundary itself costs zero model calls.'
