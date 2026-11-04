@@ -1623,6 +1623,7 @@ dsh plugin --profile web add dshmarket
 - [wzciczw/dsh-explainer](https://github.com/wzciczw/dsh-explainer) — DSH 的零摩擦快问：对话、Markdown/代码、渲染后的 HTML 报告、better-sidebar 编辑器里都能划词。默认回答会自动开始（英文正文先翻译、术语解释概念、问句直接回答），输入即取消。答案由一次性 completion 流式产出，沿用主窗口模型，继承只读对话快照，把所选文件作为上下文读取（默认上限 2 万字符），且不写入主会话。一行命令安装；宿主路由、客户端插槽、文档 renderer、iframe 选区桥都是可分离的扩展点。
 - [Wzh0718/dsh-minimal-transcript](https://github.com/Wzh0718/dsh-minimal-transcript) — DSH Web 极简会话切换：从会话头部隐藏思考、工具调用和轮次流程行，同时保留助手回答文本。
 - [wzn16/dsh-task-capsule](https://github.com/wzn16/dsh-task-capsule) — 会话 header 常驻任务胶囊（圆点颜色分态、点击跳转、多任务下拉），任务完成、出错、等待确认时弹通知卡，支持合成提示音与可选系统通知。
+- [wzsx150/dsh-session-speed-pill](https://github.com/wzsx150/dsh-session-speed-pill) — 在每轮回复的操作行里增加显示解码速度（用量右侧），可以显示这一轮回复的时间构成与速度：回答耗时、首字延迟、解码输出、预填充、速度区间与总用量等。设置 → 通用 另有「始终显示消息操作行」开关，可以始终显示所有对话消息的操作行。
 - [wzz3034026545/dsh-rule-manager](https://github.com/wzz3034026545/dsh-rule-manager) — 在设置面板统一管理 DSH 规则：编辑全局/项目 AGENTS.md，或由 LLM 自动拆分粘贴的规则为分层 AGENTS.md 与技能。
 - [x2802490130-prog/dsh-client-ui-writing](https://github.com/x2802490130-prog/dsh-client-ui-writing) — Web 客户端「写作」面板：项目分卷与统计、书库与全文检索、设定演化版本链 diff、线索 SVG 图谱，仅在写作预设会话显示。
 - [xchannel1987/dsh-sdd-progress-xc](https://github.com/xchannel1987/dsh-sdd-progress-xc) — 在右侧边栏以当前会话为维度展示 SDD 任务进度（todos）与进度台账（sdd/progress.md），采用官方 MarkdownText 渲染，每 5 秒自动刷新。
@@ -6100,6 +6101,7 @@ dsh plugin --profile web add dshmarket
 - [kp-z/dsh-mermaid-comm](https://github.com/kp-z/dsh-mermaid-comm) — 让 AI 在开发交流中默认用 Mermaid 图表达——系统提示引导、mermaid_validate 真解析语法校验工具，以及自动修复或摘除坏图的输出闸。渲染交给 dsh-mermaid。
 - [kw78/dsh-office-tools](https://github.com/kw78/dsh-office-tools) — 面向 agent 的工作区安全 Office 工具集：创建/读取 Word、创建/读取/更新 Excel、创建/读取 PowerPoint，并支持 PNG/JPG/GIF 图片排版。
 - [Lee-Hilex/dsh-mineru](https://github.com/Lee-Hilex/dsh-mineru) — 用 MinerU 把 PDF 与文档解析为结构化 Markdown。文件会上传到 MinerU 云端，无离线模式。
+- [LeiYuXingZhou/dsh-preview-extra](https://github.com/LeiYuXingZhou/dsh-preview-extra) — 在右侧栏文档预览中打开 STL、OBJ、PLY、glTF 与 GLB 模型，zip/tar/gzip 压缩包，音视频、字体、字幕，以及 TOML、Intel HEX、JCAMP-DX 谱图、VCD 波形、KiCad 原理图和电路板、DFU 固件。
 - [LeslieWylie/dsh-md-preview](https://github.com/LeslieWylie/dsh-md-preview) — 把 Markdown 渲染为自包含的独立 HTML 页面：提供在 headless 配置下同样可用的 `md_html_render` 工具，以及在网页端浏览、预览、编辑并导出本地 `.md` 文件的抽屉；两个入口共用同一个渲染器，无运行时依赖。
 - [liaojianjin/dsh-large-jsonl-viewer#large-jsonl-viewer](https://github.com/liaojianjin/dsh-large-jsonl-viewer/tree/main/packages/plugins/large-jsonl-viewer) — 使用字节索引逐条浏览 JSONL 与 NDJSON，支持物理行跳转和超长记录流式预览的只读查看器。要求 DSH >=0.2.1-rc.2。
 - [Libraqg/ultra-documents](https://github.com/Libraqg/ultra-documents) — 侧边栏里的 Artifacts 式文档：AI 生成独立的 HTML 文档，你可以对任意位置批注、一键交给 AI 改出新版本，也可以自己直接修改文字和格式。每次修改都是新版本，内容只存在本地。基于 tdoc（https://github.com/tornado-doc/tdoc）改造的本地化 DSH 插件。
