@@ -1,0 +1,6 @@
+url: https://github.com/shiliuyu316/dsh-optimization-2027
+name: shiliuyu316/dsh-optimization-2027
+category: agi
+description:
+  en: "Five-tier reasoning protocol injected into the system prompt — off / light / standard / deep / multi-agent, 0 / 3 / 9 / 17 / 19 rules — with the tokens each tier adds per request shown beside it. Alongside it: a claim ledger that marks a load-bearing claim with no evidence or check as unsupported, read-only analyst briefs, JSON-declared custom tools that work in the same turn, one persistent PowerShell session, and re-injection of host context after a configurable message gap. Tier 0 injects nothing and mounts no tools."
+  zh: "注入系统提示的五档推理协议——关 / 轻 / 标准 / 深 / 多智能体，分别 0 / 3 / 9 / 17 / 19 条规则——每档旁边标出它给单次请求增加多少 token。此外还有结论台账（承重结论没有证据或检查就判为不支持）、只读分析员简报、当轮即生效的 JSON 声明式自建工具、一个持久的 PowerShell 会话，以及按可配置的消息间隔重发宿主上下文。0 档不注入任何内容，也不挂工具。"
