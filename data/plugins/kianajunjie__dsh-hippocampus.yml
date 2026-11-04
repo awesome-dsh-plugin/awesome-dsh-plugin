@@ -1,0 +1,6 @@
+﻿url: https://github.com/kianajunjie/dsh-hippocampus
+name: kianajunjie/dsh-hippocampus
+category: memory
+description:
+  en: 'Event-based memory for long-lived chat bots: emotion-weighted decay, three confidence levels on recall, superseding outdated facts, per-subject isolation, plus relationship, fact, chapter, skill and gap tables. Ships a CLI, an HTTP endpoint and a DSH plugin bundle.'
+  zh: '给长期陪伴型机器人的记忆层：事件编码、情绪加权遗忘、召回分三档确定度、改口即失效、按人隔离，另有关系、事实、章节、技能、缺口五张表。包含命令行、HTTP 接口和 DSH 插件三件套。'
