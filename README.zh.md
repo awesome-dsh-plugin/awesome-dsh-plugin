@@ -3791,6 +3791,7 @@ dsh plugin --profile web add dshmarket
 - [yangyizhu8/dsh-unread-mark](https://github.com/yangyizhu8/dsh-unread-mark) — 会话行未读标记：会话菜单新增「标记未读」「取消标记」，在会话标题前钉一个刷新与点开都不会消失的红点（与系统绿点区分），绿点存在时两项禁用，标记经服务端持久化。
 - [yangyongzhen/dsh-session-export](https://github.com/yangyongzhen/dsh-session-export) — 会话导出为 Markdown/JSON，便于复盘、重放与单会话成本汇总。
 - [Yantingmo/dsh-lang-zh](https://github.com/Yantingmo/dsh-lang-zh) — 向系统提示注入固定语言指令，让 Agent 始终用简体中文回复（含工具调用之间的叙述文字），除非你明确要求其他语言；对所有会话与预设生效，且不覆盖 persona。
+- [YB313/dsh-branch-tree](https://github.com/YB313/dsh-branch-tree) — 把会话变成左侧栏里的文件夹：可分叉出独立分支（完整复制 / 压缩记忆 / 只继承开头），并以树状浏览。
 - [ycm50/dsh-compat-val](https://github.com/ycm50/dsh-compat-val) — 一个设置项把压缩阈值铺到所有 Agent 模式：注册 <模式>-compact-<阈值> 预设副本并改写 compaction-basic.thresholdRatio，阈值或勾选变化时重新注册，还可把副本设为默认模式（标准 > 创造 > 极简 > ptc）。
 - [ycm50/dsh-delete](https://github.com/ycm50/dsh-delete) — DSH 会话与图片管理：侧边栏多选面板在 DSH 归档后把选中的会话连同磁盘文件一起删除，支持子 agent / 团队成员 / 整族级联与逐个大小统计；右侧栏页签统计会话图片张数并多选摘除，可另行删除磁盘上的源文件与附件对象。
 - [YDT-china/dsh-web-search-session](https://github.com/YDT-china/dsh-web-search-session) — 让 DSH 网页搜索改走当前会话模型加自建检索后端。
@@ -4026,6 +4027,7 @@ dsh plugin --profile web add dshmarket
 - [liancha22/dsh-puzzle-mode](https://github.com/liancha22/dsh-puzzle-mode) — 把项目决策落成纯 markdown 而不是留在聊天记录里：一份主文档加若干模块文档，每条都带 文件:行 出处。AI 主动提问把悬而未决变成已定；五维健康性（任务复杂度 / 可拓展性 / 维护系数 / 代码质量 / 可复用性）由文档证据算出，显示在输入框模型选择器旁边的小按钮上。一个会话可同时绑多个项目；项目分小 / 中 / 大三档，条目上限随档位放宽；主文档里的标准化流水线小节在命中触发词时自动注入。
 - [liangxiaobing520/dsh-local-vector-memory](https://github.com/liangxiaobing520/dsh-local-vector-memory) — DSH 全本地向量记忆:本地 embedding、SQLite 存储、自动召回注入、去重与冲突检测、软删除回收站、在线备份,可选 LLM 提取。
 - [Libraqg/dsh-workspace-memory](https://github.com/Libraqg/dsh-workspace-memory) — 显式、按项目隔离的记忆交接：新开会话时，经你确认后只调用一次模型，把同一项目里之前的对话整理成有长度上限的摘要，注入到新会话的第一步；不会在后台偷偷调用模型。“记忆”面板可以查看摘要、编辑笔记。
+- [light-cheng/DSH-Mem0](https://github.com/light-cheng/DSH-Mem0) — 为 DeepSeek Harness 提供基于 Mem0 的长期记忆，支持 Platform、自建 Server 和本地 OSS 后端，带可视化设置、自动召回与保存、可编辑记忆摘要、Token 预算和每周记忆巡检。
 - [lightporta/dsh-knowledge-center](https://github.com/lightporta/dsh-knowledge-center) — DeepSeek Harness 本地知识库：把工作区与对话附件中的 PDF、Word、Excel、Markdown、TXT、CSV、HTML 文档提炼为 Markdown 知识，提供类 VS Code 预览、按工作区授权，以及检索、读取和入库的模型工具。
 - [LingDangZaiXiang/dsh-life-hair](https://github.com/LingDangZaiXiang/dsh-life-hair) — 上下文压缩时把 checkpoint 原文抄进便签归档，并叫醒会话补写丢掉的内容。
 - [linner1224/dsh-video-coursemap](https://github.com/linner1224/dsh-video-coursemap) — 定时观察浏览器前台窗口，识别视频课程并按学科分类，抓取 B 站简介/字幕/弹幕/评论，生成 Markdown + Mermaid 知识地图与 Word 学习手册。
@@ -8503,6 +8505,7 @@ dsh plugin --profile web add dshmarket
 - [kkkkkklze/dsh-plugin-manager](https://github.com/kkkkkklze/dsh-plugin-manager) — 在 DeepSeek Harness 网页内管理插件：分类列表、预设整合包一键切换与导入导出、失败自动回退、插件市场一键安装。
 - [LeemanCheung/dsh-vibe-pack](https://github.com/LeemanCheung/dsh-vibe-pack) — 仅数据的事务式配置包管理器，提供完整性、归属、预览、差异和回滚保护。
 - [leoyoul/dsh-onekey-update](https://github.com/leoyoul/dsh-onekey-update) — 启动后检查已启用插件的新版本，在右下角列出并一键逐个升级，逐条给出成功或失败结果；通过解析应用自带的 dsh CLI 在 macOS、Windows、Linux 上执行更新，不假定 Windows 可执行文件。
+- [lihao178/dsh-plugin-steward](https://github.com/lihao178/dsh-plugin-steward) — DeepSeek-Harness 插件管家：查出所有插件的新版本并直接升级，升级前自动建快照，升级后重新体检，结果变差就自动还原。装任何插件前先静态扫描代码（动态执行、反弹 shell、翻密钥都会标出来），内置 8489 个插件的市场目录并带兼容性判定，装完/卸完/停用完自动重启宿主，不需要手动关软件。界面文案全白话，不写术语。
 - [liqichen/dsh-plugin-manager](https://github.com/liqichen/dsh-plugin-manager) — 在 DSH 设置面板内嵌的图形化管理器：开关/删除 MCP 服务、浏览并回收 Skills、查看内置插件包，改动热生效无需重启。
 - [ljh257110/dsh-local-installer](https://github.com/ljh257110/dsh-local-installer) — 本地插件安装器：DSH 网页设置页里的本地插件安装入口——文件选择器多选 .tgz 或输入本机完整路径，自动检测所在 profile 并执行官方 `dsh plugin add`，实时回显安装日志，无需终端。
 - [LKMeng2001/dsh-mcp-market](https://github.com/LKMeng2001/dsh-mcp-market) — DSH 的 MCP 服务器商场：浏览经过 npm 校验的精选目录，一键安装 MCP 服务器到当前 profile，免重启立即生效。
