@@ -1,0 +1,7 @@
+url: https://github.com/majestyjun/artifact-space
+name: majestyjun/artifact-space
+category: tools
+description:
+  en: 'Adds an Artifact Space entry to the DSH sidebar that lists the final effective artifacts of each session, grouped by workspace and session, with an editor-style preview, search across workspaces and sessions, favorites, and provenance for every file.'
+  zh: '在 DSH 侧栏新增「产物空间」入口，按工作区与会话分组列出每个会话的最终有效产物，支持编辑器风格预览、跨工作区与会话搜索、收藏夹与每个文件的来源追溯。'
+icon: https://raw.githubusercontent.com/majestyjun/artifact-space/main/assets/icon-180.png
