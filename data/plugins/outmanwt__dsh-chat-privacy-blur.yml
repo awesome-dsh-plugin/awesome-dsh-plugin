@@ -5,3 +5,4 @@ description:
   en: 'Draws every question and answer in the DSH Web conversation blurred until the pointer rests on that row, and locks the mask to always-blurred while the window is unfocused; one control below the composer switches between off, hover to reveal, and always blurred, remembered per browser.'
   zh: '把 DSH Web 对话里的提问与回答画成模糊，鼠标停在哪一条才显示哪一条；窗口失焦时自动全糊，谁都看不到指针留下的那条。输入框下方一个按钮在「关闭 / 悬停显示 / 始终模糊」三档间切换，选择按浏览器记住。'
 tarball: https://github.com/outmanwt/dsh-chat-privacy-blur/releases/latest/download/dsh-chat-privacy-blur.tgz
+# refresh: repository passes the 1-day bar
