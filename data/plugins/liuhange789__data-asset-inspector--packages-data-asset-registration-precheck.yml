@@ -2,5 +2,5 @@ url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data
 name: liuhange789/data-asset-inspector#registration-precheck
 category: tools
 description:
-  zh: "登记预检插件 — 校验数据登记资格+必填项完整性+格式合规性"
-  en: "Registration precheck plugin — validates registration eligibility + required field completeness + format compliance."
+  en: "Registration precheck plugin — checks a data asset against the national data-property registration rules: national-security sensitivity, source legality, ownership disputes, and the material-authenticity commitment, then outputs a precheck report."
+  zh: "登记预检插件 — 按国家数据产权登记规则做四项检查（国家安全、来源合规、权属纠纷、材料真实性承诺），并输出《登记预检报告》。"

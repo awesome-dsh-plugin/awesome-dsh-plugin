@@ -2,5 +2,5 @@ url: https://github.com/nick-lei/Zuad-deepseek
 name: nick-lei/Zuad-deepseek
 category: tools
 description:
-  en: Manage Zuad digital signage programs, media, playback schedules, and devices through DeepSeek Harness.
-  zh: 通过 DeepSeek Harness 管理 Zuad 数字标牌节目、素材、播放排程和设备。
+  en: 'Manage Zuad digital signage programs, media, playback schedules, and devices through DeepSeek Harness. Requires an existing Zuad signage backend and an account on it; you sign in from the plugin settings and the password stays local.'
+  zh: '通过 DeepSeek Harness 管理 Zuad 数字标牌节目、素材、播放排程和设备。需要已有 Zuad 信发系统后台及可用账号，在插件设置里登录，密码只保存在本地。'
