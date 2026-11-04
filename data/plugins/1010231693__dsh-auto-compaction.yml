@@ -1,7 +1,0 @@
-url: https://github.com/1010231693/dsh-auto-compaction/tree/master/packages/dsh-auto-compaction
-name: 1010231693/dsh-auto-compaction#dsh-auto-compaction
-category: session
-description:
-  en: 'A session auto-compaction plugin that is friendly to local models: compaction never makes the local engine re-read history, saving a lot of time; the trigger point and the saved content of the compacted session are user-configurable.'
-  zh: '一个对本地模型十分友好的会话自动压缩插件，压缩时不会触发本地模型重读历史，节约大量时间，压缩触发时机、压缩会话的保存内容可由用户自定义。'
-icon: https://raw.githubusercontent.com/1010231693/dsh-auto-compaction/master/docs/icon.png
