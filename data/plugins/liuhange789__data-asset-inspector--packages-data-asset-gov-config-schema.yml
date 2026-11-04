@@ -3,4 +3,4 @@ name: liuhange789/data-asset-inspector#gov-config-schema
 category: tools
 description:
   zh: "政务数据巡检配置包 JSON Schema — 供配置包维护者离线校验配置包内容，提供 Schema 加载与校验运行时"
-  en: "Government data inspection config pack JSON Schema with runtime schema loading and validation"
+  en: "Government data inspection config pack JSON Schema with runtime schema loading and validation."
