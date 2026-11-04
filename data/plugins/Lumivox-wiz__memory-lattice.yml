@@ -1,7 +1,7 @@
 url: https://github.com/Lumivox-wiz/memory-lattice
 name: Lumivox-wiz/memory-lattice
 category: memory
-tarball: https://github.com/Lumivox-wiz/memory-lattice/releases/download/v0.2.10/memory-lattice-0.2.10.tgz
+tarball: https://github.com/Lumivox-wiz/memory-lattice/releases/download/v0.2.11/memory-lattice-0.2.11.tgz
 description:
   en: "A memory plugin that forgets on purpose: short-term memories expire after 48h, long-term ones are rescheduled by Ebbinghaus/SM-2 curves and rarely-used ones fall asleep instead of bloating your context. Long-term writes stop in an approval center, so the agent cannot rewrite your persona on its own."
   zh: "会遗忘的记忆插件：短期记忆 48 小时自动过期，长期记忆按艾宾浩斯/SM-2 曲线复习，久不用的沉进沉睡区（可唤醒）而不是无限撑爆上下文。长期写入停在审核中心，模型不能自行改写人格设定。"
