@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/underground-pipeline-inspector
+name: liuhange789/data-asset-inspector#underground-pipeline-inspector
+category: tools
+description:
+  zh: "地下管线数据质量检查插件 — 检测覆盖率、接边精度、流向合理性，输出质量评分"
+  en: "Underground pipeline data quality inspection plugin — checks coverage, edge matching, flow direction, outputs quality score"
