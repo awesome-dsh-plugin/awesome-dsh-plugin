@@ -1,0 +1,6 @@
+url: https://github.com/wx-98/DSH-GIT
+name: wx-98/DSH-GIT
+category: git
+description:
+  en: VSCode/IDEA-style Git source control in the DSH right sidebar, with a colour-coded commit graph, branch switching, staging, hunk actions, stash and history filters.
+  zh: 在 DSH 右侧栏提供类 VSCode/IDEA 的 Git 源码管理，含彩色提交图、分支切换、暂存与逐块操作、stash 与历史过滤。
