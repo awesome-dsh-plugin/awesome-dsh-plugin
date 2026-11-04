@@ -1,0 +1,6 @@
+url: https://github.com/juzpost/dsh-juzpost
+name: juzpost/dsh-juzpost
+category: tools
+description:
+  en: "Connects the agent to JuzPost, a free social media scheduler with low-cost paid plans, over MCP: lists connected accounts, checks per-platform limits, uploads media, and drafts, schedules or publishes posts to YouTube, Instagram, Facebook, TikTok, X, LinkedIn, Pinterest, Bluesky, Threads, Tumblr and WordPress. Registers the JuzPost tools as mcp__juzpost__* plus a workflow skill that confirms with the user before anything is published. Needs a JuzPost API key in JUZPOST_API_KEY."
+  zh: "通过 MCP 将智能体连接到 JuzPost（免费的社交媒体排程工具，付费方案价格低廉）：列出已连接账号、检查各平台限制、上传媒体，并向 YouTube、Instagram、Facebook、TikTok、X、LinkedIn、Pinterest、Bluesky、Threads、Tumblr 和 WordPress 起草、排程或发布帖子。注册 mcp__juzpost__* 工具及一个发布前先向用户确认的工作流技能。需要在 JUZPOST_API_KEY 中提供 JuzPost API 密钥。"
