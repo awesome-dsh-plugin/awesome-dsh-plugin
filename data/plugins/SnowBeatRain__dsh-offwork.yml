@@ -1,0 +1,7 @@
+url: https://github.com/SnowBeatRain/dsh-offwork
+name: SnowBeatRain/dsh-offwork
+category: ui
+icon: https://raw.githubusercontent.com/SnowBeatRain/dsh-offwork/main/assets/icon-256.png
+description:
+  en: 'A draggable clock-out countdown and live salary overlay for DeepSeek Harness, with monthly or daily pay, overnight shifts, optional unpaid breaks, and salary masking.'
+  zh: 'DeepSeek Harness 下班倒计时与实时工资悬浮窗，支持月薪或日薪、跨午夜班次、可选无薪休息和工资隐藏。'
