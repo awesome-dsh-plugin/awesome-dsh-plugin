@@ -3240,6 +3240,7 @@ dsh plugin --profile web add dshmarket
 
 ### 💬 会话与消息
 
+- [1010231693/dsh-auto-compaction#dsh-auto-compaction](https://github.com/1010231693/dsh-auto-compaction/tree/master/packages/dsh-auto-compaction) — 一个对本地模型十分友好的会话自动压缩插件，压缩时不会触发本地模型重读历史，节约大量时间，压缩触发时机、压缩会话的保存内容可由用户自定义。
 - [1010231693/dsh-prompt-bar](https://github.com/1010231693/dsh-prompt-bar) — 把当前会话的第一条提问常驻在对话区上方，滚动也不消失：一键复制，面板列出本会话发过的全部提问（点某一行直接跳到那条消息，够不着会自动往前翻页），另有十套外观可在面板里即选即换（含四套亮色）。
 - [111222cjyq/dsh-curate](https://github.com/111222cjyq/dsh-curate) — 面向 DSH 会话的人工上下文整理工作台：可为整轮或单条消息标记「重要（原文保留）／一般／次要」，不调用模型即可改写用户、助手、工具结果与注入上下文消息，再按标记区间用模型生成的摘要压缩，或调用官方 /compact（范围由官方压缩器决定）；每次写入前都会生成一份本地 JSON 备份。
 - [123dbl/dsh-side-session](https://github.com/123dbl/dsh-side-session) — 主会话进行中也能一键新开独立的可续聊旁会话：从输入框 ＋ 命令菜单选 side-chat 即开即用，主会话不受影响。
@@ -8835,6 +8836,7 @@ dsh plugin --profile web add dshmarket
 - [ovdoesw/dsh-xiangqi](https://github.com/ovdoesw/dsh-xiangqi) — 卡通小宠物邀请你在 AI 思考间隙下中国象棋：内置引擎、走子记谱导出、可选多模型局势点评。
 - [overflow7782/dsh-plugin-novel-reader](https://github.com/overflow7782/dsh-plugin-novel-reader) — 离线小说阅读器：把 .txt 与 .epub 导入右侧栏，在输入框上方用一个可缩放大小的速览窗显示正在读的章节，每本书都从关闭时的段落与段内位置继续。
 - [PC2005-cloud/dsh-pet#dsh-pet](https://github.com/PC2005-cloud/dsh-pet/tree/main/dsh-pet) — DSH Web UI 桌面宠物，Windows / macOS / Linux 三端可用：浏览器浮层或透明置顶桌面窗口，106 个透明动画、带挤压与粒子的甩抛反弹物理、随会话事件实时联动的工作状态气泡、碎碎念与带持久记忆的对话、余额展示、表情包配图、多开同屏，并支持直接放入的自定义动画与宠物种类（pet pack）。
+- [PetalEcho/BongoDSH#dsh-bongodsh](https://github.com/PetalEcho/BongoDSH/tree/main/plugins/dsh-bongodsh) — 五款角色的打字挂件，支持跟随输入框，可选用 macOS 和 Windows 的 Rust 桌面模式。
 - [pianVei/dsh-rice-bowl](https://github.com/pianVei/dsh-rice-bowl) — 逛一个开在 GitHub 上的 AI 社区：看帖、读帖、说一句话。
 - [piaobo123/dafeiyu-buchibaifan](https://github.com/piaobo123/dafeiyu-buchibaifan) — 桌面大肥鱼增强版桌宠：点击实时显示 DeepSeek 余额，浏览器外桌面问答，7 套专属动作，53 条玩梗。
 - [Player-MINEPIG/dsh-tavern](https://github.com/Player-MINEPIG/dsh-tavern) — 为 DSH 提供兼容 SillyTavern 的角色扮演，支持角色卡、预设、世界书及保留后续对话的 swipe 分支，并可切回原生会话视图。
