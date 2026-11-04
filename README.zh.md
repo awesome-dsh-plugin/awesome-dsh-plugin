@@ -3390,6 +3390,7 @@ dsh plugin --profile web add dshmarket
 - [fomalhaut1998/dsh-session-find](https://github.com/fomalhaut1998/dsh-session-find) — 会话内 Ctrl+F 全文查找（读会话 store 而非 DOM）：命中按来源分类（你/助手/思考/工具调用/工具输出/系统）、按轮次分组、同文合并，可切「只搜正文 / 搜全部内容」，支持正则/大小写/全词，全量高亮，并能把结果复制或导出为 Markdown。
 - [fredalxin/dsh-solo-thinking](https://github.com/fredalxin/dsh-solo-thinking) — 可视化分支头脑风暴：为每个方向创建独立 Session，自动处理父子继承、兄弟感知、进展与回传 Handoff，并提供完整树形 Tab 与可选 Better Sidebar 右栏。
 - [Frog755/dsh-client-auto-retry](https://github.com/Frog755/dsh-client-auto-retry) — 回合中断自动续跑：turn/end 因 error / interrupted / max-tokens 结束时自动发送「继续」，支持宽限期、冷却、指数退避、连续次数上限、启动扫描、设置卡片，以及输入框工具行的会话级停止/恢复按钮；不切换模型/provider。
+- [Full626/dsh-session-trash-90d](https://github.com/Full626/dsh-session-trash-90d) — 列出本地 DSH 配置中保存的全部会话（标题、工作区、最近修改时间、大小），把选中项移入保留 90 天的回收站，可随时还原或彻底删除；删除前会先摘掉宿主内存中的会话，侧栏无需重启应用即可刷新。
 - [FunnyDiodio/dsh-session-delete](https://github.com/FunnyDiodio/dsh-session-delete) — 给侧边栏每个会话的"…"菜单加上"删除会话"（官方只有归档/置顶/重命名/分叉，无持久 删除）。一键「强制删除」：逐出宿主内存态会话、停止后台工作后，彻底清除会话日志、 投影缓存与注册表记账，已连接的桌面 Web 端即时清行、不留幽灵。会话生成的工作区文件 保留，对话记录永久删除；第三方云端镜像（如经 Agents Anywhere 同步的手机 App）持有 各自副本、需在其 App 内管理。中英双语界面，本地回环路由带信任栅栏。需 DSH >=0.2.1-rc.1。
 - [GallenShao/dsh-faster-compress](https://github.com/GallenShao/dsh-faster-compress) — 在后台准备上下文摘要并于安全步骤应用，保留原生压缩回退，并提供摘要内容、应用状态、耗时与用量的会话压缩历史。
 - [Gaudi-XIX/dsbot-session-create](https://github.com/Gaudi-XIX/dsbot-session-create) — 给会话加四个工具：create_session 在指定工作区或任意一个已存在的文件夹里开一个新会话，并把一段提示词投进去；session_message 给一个还在跑的会话再追加一条消息——请宿主立刻把它插进正在跑的那一轮，不再排队到本轮结束；已经闲下来的会话会被拒投，并指向 create_session；read_session_transcript 按会话 id 读回它说过什么、当前这一轮结束没有；list_dispatched_sessions 列出本插件派送过哪些会话、各自此刻什么状态。宿主半边插件，没有界面，调用的是宿主自己的建会话能力。装完需重启 DSH。
@@ -5407,6 +5408,7 @@ dsh plugin --profile web add dshmarket
 - [zhang787jun/dsh-finance](https://github.com/zhang787jun/dsh-finance) — 金融研究工作流与组合风控工具，对当前市场事实强制来源与时间戳边界。
 - [zhangjunjesse/dsh-claude-code](https://github.com/zhangjunjesse/dsh-claude-code) — 把自包含的编码任务委派给本机 Claude Code 订阅执行（走官方 Claude Agent SDK），并在会话里新增一个标签页，实时显示输出、费用与剩余额度。
 - [zhaoolee/notes#dsh-plugin](https://github.com/zhaoolee/notes/tree/main/dsh-plugin) — 将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。
+- [ZhdanovDmitriy/dsh-pptx-builder](https://github.com/ZhdanovDmitriy/dsh-pptx-builder) — 面向 DeepSeek Harness 的 PowerPoint 演示文稿生成器：柔和色板、十种幻灯片模板、网络图片、Python 绘制的图表、高亮代码卡片、无需安装 TeX 的 LaTeX 公式（矩阵、积分、带上下限的求和）以及 Presentations 智能体模式。
 - [zhe97396-tech/dsh-lazy-mcp](https://github.com/zhe97396-tech/dsh-lazy-mcp) — dsh 的按需 MCP 网关：每个 server 首次使用时才连接、空闲后自动断开，工具列表缓存在磁盘，可导入现有的 mcpServers 配置，并对子进程环境变量做脱敏。
 - [zhengjy01/dsh-cubox](https://github.com/zhengjy01/dsh-cubox) — Cubox 收藏同步：定时同步收藏，按你的 prompt 用 LLM 生成今日收藏简报直接写入 Obsidian，可导出每张收藏为 Markdown。
 - [zhengjy01/dsh-zhihu](https://github.com/zhengjy01/dsh-zhihu) — 为 DeepSeek Harness 提供知乎能力：包装本机 pyzhihu-cli 为 18 个 zhihu_* 工具——14 个只读（搜索/热榜/问题/回答/用户/推荐流/话题/通知/收藏夹）与 4 个发布类工具（readOnly 关闭前不注册）——并在侧栏提供 Web 面板做登录、配置与查询。
