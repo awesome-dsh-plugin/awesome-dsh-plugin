@@ -1,0 +1,15 @@
+url: https://github.com/IdealRainBowbridge/dsh_bot
+name: IdealRainBowbridge/dsh_bot
+category: identity
+description:
+  en: >-
+    A bionic companion agent for DSH: simulates a body (organs, metabolism,
+    mood, circadian rhythm) so emotion emerges from bodily state rather than
+    prompts. Bilibili browsing with diaries, QQ chat via SnowLuma gateway,
+    WeChat replies on behalf of the user; all three platforms share one
+    persona, mood and memory. All outbound actions are off by default with
+    per-channel switches and quotas.
+  zh: >-
+    仿生陪伴角色:用器官/代谢/情绪/节律模拟人体,让情感从身体状态长出来而非提示词表演。
+    B站自主刷视频写日记、QQ 经 SnowLuma 网关秒回、微信代回消息;三平台共用人格/情绪/记忆。
+    所有外发默认关闭,每项有独立开关与额度。
