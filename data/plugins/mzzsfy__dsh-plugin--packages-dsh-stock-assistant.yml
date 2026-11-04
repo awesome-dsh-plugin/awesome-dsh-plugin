@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-stock-assistant
+name: mzzsfy/dsh-plugin#dsh-stock-assistant
+category: tools
+description:
+  en: 'Single-page stock tool: A-share watchlist, search, basic quotes, alias/pin/sort, and pluggable data-source routing; page state survives session switches.'
+  zh: '股票单页面工具：沪深A股自选、搜索、基础行情、别名/置顶/排序与多数据源路由；页面状态不随会话切换销毁。'
+icon: https://raw.githubusercontent.com/mzzsfy/dsh-plugin/main/assets/icons/png/dsh-stock-assistant.png
