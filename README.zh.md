@@ -1784,6 +1784,7 @@ dsh plugin --profile web add dshmarket
 - [Zai-G/dsh-preset-workshop](https://github.com/Zai-G/dsh-preset-workshop) — 预设工作台：逐方案编辑人设、系统提示词段和工具描述，选择工具与技能，预览请求组成，并通过 JSON / YAML 导入导出配置。
 - [zclDragon/dsh-side-chat](https://github.com/zclDragon/dsh-side-chat) — Codex 风格 /side 侧边对话插件：在当前对话旁开一个浮动分叉面板，继承上下文、不打断主任务。
 - [zealot00/dsh-pet](https://github.com/zealot00/dsh-pet) — DSH Web UI 桌面宠物：精灵图动画、agent 状态联动、拖拽、闹钟（每天/一次）与番茄钟，皮肤下拉选择 + 预览。
+- [zeme56/dsh-landmarks](https://github.com/zeme56/dsh-landmarks) — 左侧边栏加一个全屏 3D 展厅，看四座程序化建模的地标——埃菲尔铁塔、长城、紫禁城、泰姬陵——另带一个「五间安静的屋子」入口。
 - [zengxiangpeng123/dsh-sidebar-fold-zxp](https://github.com/zengxiangpeng123/dsh-sidebar-fold-zxp) — 把 DSH 左侧那排插件入口折成一行「插件列表」，支持按组归类与自定义顺序，把纵向空间还给工作区与会话列表；展开即恢复完整入口。
 - [zengxiaolou/dsh-annotation](https://github.com/zengxiaolou/dsh-annotation) — 划选回答文字就地加注释：保留原文引用加自己写的备注，每条在草稿里变成一枚胶囊，多条一起随消息发出；两条以上时输入框上方会多一个胶囊用来跳回原文或全部清除。胶囊需另装 dsh-paste-chip，否则每条注释在草稿里是一行纯文本。
 - [zengxiaolou/dsh-effort-dial](https://github.com/zengxiaolou/dsh-effort-dial) — DeepSeek Harness 输入框里的推理强度滑杆：按当前模型声明的思考档位拖动，松手把档位写入本会话；可选「自动区间」在工具报错后逐档上调，另有可选模型路由按任务类型挑 provider/model。
@@ -2646,6 +2647,7 @@ dsh plugin --profile web add dshmarket
 - [ZaVang/dsh-diorama](https://github.com/ZaVang/dsh-diorama) — 角色皮肤舞台：雪乃·暖阳日常与隐秘年代志双主题，各带双角色立绘与表情贴纸；可视化装饰看板支持拖动/缩放/旋转/坐标精调/锚定切换/上传素材，装饰包（素材+布局）可导出分享、导入后自动打开看板继续调整。
 - [zdjmrq/dsh-shadertoy-skin](https://github.com/zdjmrq/dsh-shadertoy-skin) — 把 ShaderToy 作品作为 DeepSeek Harness 背景：WebGL2 播放器 + 背景库（含 5 个预设），可调界面不透明度、亮度、分辨率与帧率，支持画面循环与音乐播放设置，并能在设置页直接编辑当前着色器代码。
 - [zdt3476/dsh-tide-theme](https://github.com/zdt3476/dsh-tide-theme) — 给 DeepSeek Harness Web 的深海潮汐蓝主题：单一强调色、磨砂（非玻璃）材质，明暗双态一致。同套令牌下的界面增强：单行底栏 HUD（读取真实会话投影的上下文占用与上限、TPS、缓存命中率、耗时）、按回合绘制的子代理委派卡片（显示 token 用量，并可附上按 OpenRouter 公开单价估算的金额）、侧栏分页与置顶小节加实时筛选、输入框下方的模型/思考等级/权限控件，每项均可在插件设置中单独开关。
+- [zeme56/dsh-style-studio](https://github.com/zeme56/dsh-style-studio) — 从侧边栏面板用五套皮肤换掉整个应用的配色、字体与质感——像素街机、午夜终端、霓虹赛博、纸感书房、极光玻璃——一键恢复默认外观。
 - [Zeppeli777/dsh-stardew-skin](https://github.com/Zeppeli777/dsh-stardew-skin) — 星露谷物语主题·组件替换版：走 dsh 官方客户端主题机制，在完整保留的官方 React UI 上叠加奶油纸面 alias token 层、缝合像素字体与山谷壁纸。npm 包名 dsh-theme-stardew-valley。
 - [Zeppeli777/dsh-theme-stardew-fullskin](https://github.com/Zeppeli777/dsh-theme-stardew-fullskin) — 星露谷物语主题·整皮版，仅适用于 dsh Web 界面：把 Web 前端整体换成自包含的像素农场界面——祝尼魔对话、农场选预设、任务日志 HUD、会话即游戏日的山谷日历、8-bit 音效与桌宠。不支持桌面原生窗口，请勿与其他会改变 UI 的插件同时启用。
 - [zhang66633/dsh-pixel-ui](https://github.com/zhang66633/dsh-pixel-ui) — 四套配色的像素风 DSH Web 皮肤（木屋/羊皮纸/暖阳/终端绿）；中文像素字体由插件自身的 host 路由发货；完全平面、无阴影。
@@ -6344,6 +6346,7 @@ dsh plugin --profile web add dshmarket
 - [montersy123/dsh-skill-market](https://github.com/montersy123/dsh-skill-market) — 浏览、搜索并安装公开的 SkillHub 技能库,启用、停用、更新或卸载都不必离开 Harness。分类按钮带该分类的上游总数;详情抽屉提供文件树、版本历史、权限、第三方安全扫描结论与上游指标等页签。装好的技能会作为一个普通本地技能写入 harness 的技能根目录,而「停用」是把它的目录移出该根目录,不是打标记。
 - [morehao/dsh-skills-console](https://github.com/morehao/dsh-skills-console) — 汇总共享技能目录里的技能并标注来源与版本，可从 GitHub 仓库安装与更新，删除时先进保留 7 天的回收站，并控制每个技能对各 Agent 的可见性与模型可调用性。
 - [mwk719/dsh-skill-center](https://github.com/mwk719/dsh-skill-center) — DSH Web GUI 的技能中心：侧栏入口把可配置来源目录里的技能铺成卡片，点击卡片查看完整 SKILL.md；卡片上的开关会写入 disable-model-invocation，并同步把该技能注册进或移出模型可用的技能表，让「模型能加载的技能」与开关一致。同时识别 WorkBuddy 专家团目录（带 agents 的 .codebuddy-plugin/plugin.json），以头像、描述、标签、快捷提示与团队成员的形式展示，打开开关即把它的 lead 提示词注册为技能（不写这些文件）。卡片还支持在文件管理器中定位、复制路径，来源目录本身也可在面板里编辑。
+- [MYSTERY2019/dsh-skills-symlink](https://github.com/MYSTERY2019/dsh-skills-symlink) — 按项目分配技能根目录，支持多级分类发现。
 - [NecromanAlbert/dsh-skill-slash-fuzzy](https://github.com/NecromanAlbert/dsh-skill-slash-fuzzy) — 用唯一 kebab 片段解析斜杠 skill，例如 /oneshot 可加载 game-package-oneshot。
 - [NickyWooden/dsh-scrapling](https://github.com/NickyWooden/dsh-scrapling) — 把官方 Scrapling 技能包进 DeepSeek Harness profile：反反爬绕过、隐身浏览、spiders 框架、自适应解析与 JS 渲染，通过宿主技能目录发现。
 - [nineknineTK/dsh-plugin-geo3d-modeling](https://github.com/nineknineTK/dsh-plugin-geo3d-modeling) — 地质三维建模与三维地震资料处理全流程技能：SEG-Y 数据体解析、CGCS2000 坐标统一（带带号）、断层代表线与勘探范围 shp 输出、多矿区三维地质平台建设。
