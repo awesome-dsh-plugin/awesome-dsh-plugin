@@ -1,0 +1,7 @@
+url: https://github.com/inezmitche46-maker/dsh-usage-stats/tree/main/packages/dsh-session-token-stats
+name: inezmitche46-maker/dsh-usage-stats#packages/dsh-session-token-stats
+category: usage
+description:
+  en: 'Composer token pill for the current session: total tokens plus uncached input, cache read, cache write and output, with the cache-hit share. A pure client consumer of the session tokenUsage projection — no host service, no file access, no network requests.'
+  zh: 输入框里的当前会话 Token 胶囊：总量与未缓存输入、缓存读取、缓存写入、输出四个分桶，并显示缓存命中率；纯客户端消费会话 tokenUsage 投影，不注册宿主服务、不读写文件、不联网。
+icon: https://raw.githubusercontent.com/inezmitche46-maker/dsh-usage-stats/main/assets/icon-256.png
