@@ -1,6 +1,0 @@
-url: https://github.com/Mowendao/dsh-win-proxy
-name: Mowendao/dsh-win-proxy
-category: dev
-description:
-  en: 'Adds a Windows system-proxy switch to DeepSeek Harness: toggles the HKCU Internet Settings proxy with a WinINET refresh, together with the git, npm and pip proxy settings, from chat, the /proxy command or a Settings page.'
-  zh: '为 DeepSeek Harness 提供 Windows 系统代理开关：写注册表并通知 WinINET 重载，同时切换 git、npm、pip 的代理配置，支持对话、/proxy 命令和设置页三个入口。'
