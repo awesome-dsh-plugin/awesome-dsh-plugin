@@ -2,5 +2,5 @@ url: https://github.com/dbcaskml183-dotcom/dsh-prelude
 name: dbcaskml183-dotcom/dsh-prelude
 category: ui
 description:
-  en: Browse 90 prompt methods with usage guidance and sources, insert a selected requirement, or compare and edit a full rewrite before applying it in the DSH composer.
-  zh: 提供90张含适用说明和参考来源的方法卡，可插入一条补充要求，或对照原稿编辑整段候选后采用。
+  en: "Optimize prompts in the DeepSeek Harness composer: identify missing requirements, insert a sentence from 90 method cards, or compare and edit a full rewrite before you send."
+  zh: "在 DSH 输入框里优化提示词：发现草稿中没说清的要求，从 90 张方法卡中选一句补进去，或对照原稿编辑整段改写。由你决定采用和发送。"
