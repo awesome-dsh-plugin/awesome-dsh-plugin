@@ -1,0 +1,6 @@
+url: https://github.com/mlf519/dsh-code-audit
+name: mlf519/dsh-code-audit
+category: security
+description:
+  en: Prompt-driven code audit tasks for DeepSeek Harness with vulnerability tracking, live progress, and exportable reports that include PoC request examples.
+  zh: DeepSeek Harness 代码审计插件：按所选提示词执行审计任务，跟踪漏洞与实时进度，导出包含 PoC 请求包的专业报告。
