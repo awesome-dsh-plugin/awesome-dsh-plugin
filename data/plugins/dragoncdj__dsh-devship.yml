@@ -1,0 +1,6 @@
+url: https://github.com/dragoncdj/dsh-devship
+name: dragoncdj/dsh-devship
+category: dev
+description:
+  en: 'Right-sidebar console for workspace services: lists runnable services, starts and stops them, packages with Maven or pnpm, deploys over SSH and restarts docker containers.'
+  zh: '右侧边栏服务控制台：列出工作区可运行服务，启停服务，Maven/pnpm 打包，SSH 部署并重启 docker 容器。'
