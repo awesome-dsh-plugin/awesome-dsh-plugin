@@ -1098,6 +1098,7 @@ dsh plugin --profile web add dshmarket
 - [MDR-EX1000/dsh-desktop-kit](https://github.com/MDR-EX1000/dsh-desktop-kit) — 把 DSH Web UI 装进原生 macOS 桌面窗口：插件 + 轻量 Tauri/WKWebView 外壳跑在同一个 loopback 地址上——真 macOS 全屏、单实例、外链交给系统浏览器、类浏览器页面缩放。
 - [meihaoyidian/life-workbench](https://github.com/meihaoyidian/life-workbench) — 个人工作台面板：总览仪表盘、自定义看板、随手记与资料库，数据由 Host 持久化到本地 JSON。
 - [meihuaanying/dsh-panel-fold](https://github.com/meihuaanying/dsh-panel-fold) — 把 DSH 侧边栏的全局面板入口收进它本来就有的『更多』按钮，下面的工作区与会话列表最多多出七行 36px 的高度；『更多』菜单里一行开关即可还原，选择记在 localStorage 里。
+- [meijieYUan/dsh-work-pay-note](https://github.com/meijieYUan/dsh-work-pay-note) — 可拖动的桌面提示贴，按上下班时间实时计算今日与本月收入，支持照片、动图或短视频背景。
 - [melt502/DSH-Session-Reference-UX-Patch](https://github.com/melt502/DSH-Session-Reference-UX-Patch) — 可回滚的 DSH Desktop 会话引用体验补丁安装器——@ 菜单当前工作区优先、标题优先展示、两行布局，以及侧边栏拖拽会话到输入区形成引用。
 - [MEMZ-JZY/DSH-Claude-Style-Reasoning-Slider](https://github.com/MEMZ-JZY/DSH-Claude-Style-Reasoning-Slider) — Claude 风格动画推理等级滑块与模型选择器，替换原生模型选择器。
 - [mengqinlol/dsh-mobile-shell](https://github.com/mengqinlol/dsh-mobile-shell) — 为 DSH Web 界面提供移动端适配，并增加支持预览和下载的工作区文件浏览器。
@@ -3483,6 +3484,7 @@ dsh plugin --profile web add dshmarket
 - [DenAbr/dsh-compact-selected-model](https://github.com/DenAbr/dsh-compact-selected-model) — /compact 与自动压缩使用会话中当前选中的模型来生成摘要，而不是用跑完上一轮的那个模型。
 - [deqingLv/dsh-slash-new](https://github.com/deqingLv/dsh-slash-new) — /new 指令：在当前工作区打开空白会话（已有空会话可直接复用），并把原会话的权限预设与 Agent 预设带入新会话，开新会话不会悄悄改变代理的可用权限。
 - [device1999/dsh-session-archive-delete](https://github.com/device1999/dsh-session-archive-delete) — 给 DSH 会话「···」菜单加「备份删除」与「彻底删除」两个入口：这是一个安全的会话删除工具（session-delete），删除会话前先把会话目录、投影缓存和元数据快照复制到本地归档文件夹并逐文件校验，通过后再删除原件以释放磁盘空间；派生的子代理会话一并处理，每个备份文件夹都带 RESTORE.txt 恢复步骤。
+- [devzer0o0/dsh-prompt-optimizer](https://github.com/devzer0o0/dsh-prompt-optimizer) — 发送前把你打进 DSH 输入框的话改写成精确的提示词，用会话自己的路由跑一次很便宜的小调用。改写结果就是真正落盘、真正发出去的内容，所以对话记录里看到的就是模型收到的；悬停鲸鱼图标能对照改写前后。斜杠命令、过短或过长的消息、纯图片消息一律不动，任何失败都原样发送。输入框里那只鲸鱼就是开关：关闭时是深色剪影，开启时是金色。
 - [Diluka/dsh-afk](https://github.com/Diluka/dsh-afk) — 面向 ask_user_question 的 AFK 离开模式：当前 profile 全局或会话级设置，自定义自动应答或禁用新提问调用，基于会话日志的提问记录与已读状态；不批准权限或计划。仅支持 DSH 0.2.1-rc.2 与 0.2.1-rc.3。
 - [Domaki-co/dsh-message-forward](https://github.com/Domaki-co/dsh-message-forward) — DSH 会话间消息转发：把单条模型回复、用户消息或多选合并的消息与图片从上游会话提取出来投递到另一个会话，支持静默发送、填入草稿、发送并跳转三种投递方式，并可套用提示词模板。
 - [domitor-syh/dsh-rollback](https://github.com/domitor-syh/dsh-rollback) — TRAE 式「回退到本轮对话发起前」插件：按轮次建立检查点（10 轮滑动窗口），同时回滚工作区文件与原位截断模型上下文，保持同一 session id。回退只能由人发起：/rollback 命令或每轮的 Web 回退按钮（被中断的轮次也可用），弹窗逐条列出受影响文件及其动作（恢复/找回/删除/跳过）。
@@ -9165,6 +9167,7 @@ dsh plugin --profile web add dshmarket
 - [skr311/dsh-codex-pet#dsh-codex-pet](https://github.com/skr311/dsh-codex-pet/tree/main/packages/dsh-codex-pet) — 导入/上传 Codex 风格精灵图序列帧宠物，在 DSH Web GUI 以悬浮浮层渲染，含图库管理、交互与 Agent 状态联动。
 - [skymecode/dsh-bgm](https://github.com/skymecode/dsh-bgm) — 将本地分析的系统音频映射为 DSH Web 的对话律动、音游判定、分数与连击反馈，以及可选的 RGB 频谱柱。
 - [ssamurias/dsh-fish](https://github.com/ssamurias/dsh-fish) — 在DSH里养一只大肥鱼宠物，你可以陪伴她长大。养成系体验，没有人格设置，通过你和她的互动学习成长。她可以自己刷B站，写日记，提取信息去问你，你的反馈决定了她成为什么样的人。通过事件流突破四个阶段、三道瓶颈，去积累「立场清单」，四个阶段完成后才会开始有立场。她的日记默认只给自己看，你在设置里打开就能读。事件流不能删除记录，是唯一可信源。没有任何运行时依赖。
+- [stallenlu/dsh-game-center](https://github.com/stallenlu/dsh-game-center) — 面板插件：把开发的小游戏集中到一处，并在同一窗口内直接游玩。首发俄罗斯方块：10×20 棋盘、七种方块、落点虚影与下一个方块预览、消行与等级计分、三档难度，最高分存在 localStorage。
 - [Stellum-Waq/dsh-pet-ronaldo](https://github.com/Stellum-Waq/dsh-pet-ronaldo) — DSH 桌宠：Web 界面右下角的 C 罗精灵，动画随 Agent 状态切换——工具执行中颠球、回合中思考、等待审批、出错假摔——回合完成时跳起 SIU 庆祝并由宿主进程播放提示音；支持拖动、悬停注视光标、连点三次假摔，设置面板可管理多只宠物并导入自定义 spritesheet。同时提供一个无边框、始终置顶的原生 Windows 窗口，关掉浏览器也还在：悬停显示当前工作区与对话名，双击用 Edge 打开 Harness 页面，拖动、滚轮改大小、右键菜单都可用，位置/大小/行为与网页设置面板共用同一份状态。素材单格分辨率不限、等比缩放（atlas.scaling: smooth | pixelated）。v2.2 新增视频路线：喂一段视频（绿幕或普通素材都行），里面的真实动作直接变成宠物动作——自动取幕布色、色度抠像带溢色抑制、按运动量切分动作、并集包围盒对齐落格；也支持直接喂已经抽好的 PNG 帧（不需要装视频解码器），并能把视频原声按动作切成音效。宠物还可按 DPSL-1.0 分享协议发布到宠物社区，并从社区一键安装。 v2.3 适配 DSH 0.2 桌面版——宿主不再提供 shell 服务时，庆祝音效改为直接启动 PowerShell 播放——并让单击播放一段可配置的挑衅动作（`interactions.clickAnim`）。
 - [stitchmaps/dsh-ikunchick-pet](https://github.com/stitchmaps/dsh-ikunchick-pet) — DSH 右下角的「鸡你太美」篮球小鸡桌面宠物：像素帧动画、拖拽吸附、点击音效、会话等待回答或授权时弹提醒、每轮消耗气泡、账单明细与 DeepSeek 余额角标。
 - [sunqing975/dsh-avatar](https://github.com/sunqing975/dsh-avatar) — 常驻界面的 VRM 数字人，支持通过工具控制表情与 VRMA 动作，并提供模型和动作资产管理。
