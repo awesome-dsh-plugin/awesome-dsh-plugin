@@ -1,0 +1,6 @@
+url: https://github.com/waafer1/dsh-jipu
+name: waafer1/dsh-jipu
+category: workflow
+description:
+  en: Reader-first long-form fiction pipeline with outline-first chapters, 14 gate scripts and a built-in self-test for each script.
+  zh: 读者优先的长篇小说工序：细纲先行、14 个门禁脚本、每个脚本自带自检。
