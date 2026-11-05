@@ -1,0 +1,6 @@
+url: https://github.com/flyfly6/dsh-panes
+name: flyfly6/dsh-panes
+category: ui
+description:
+  en: 'Full-screen workspace panel for DSH: a project sidebar with per-project tabs for session, files, explorer, project search, terminal, browser, source control and a Markdown notes vault.'
+  zh: 'DSH 全屏工作台面板：项目侧栏加按项目隔离的 tab，覆盖会话、文件、资源管理器、全项目搜索、终端、浏览器、源代码管理与 Markdown 笔记库。'

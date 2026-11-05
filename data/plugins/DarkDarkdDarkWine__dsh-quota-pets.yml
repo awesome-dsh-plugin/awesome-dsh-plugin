@@ -1,0 +1,7 @@
+url: https://github.com/DarkDarkdDarkWine/dsh-quota-pets
+name: DarkDarkdDarkWine/dsh-quota-pets
+category: fun
+description:
+  en: 'Animated desktop pets, one mascot per coding-plan provider (GLM, MiniMax, Kimi, DeepSeek, MiMo). Poses follow the running session; moods follow quota usage read from dsh-quota-hub.'
+  zh: '动画桌宠，每家编程套餐一只吉祥物（GLM、MiniMax、Kimi、DeepSeek、MiMo）。动作跟随会话运行状态，心情跟随 dsh-quota-hub 的额度用量。'
+icon: https://raw.githubusercontent.com/DarkDarkdDarkWine/dsh-quota-pets/main/assets/icon-180.png

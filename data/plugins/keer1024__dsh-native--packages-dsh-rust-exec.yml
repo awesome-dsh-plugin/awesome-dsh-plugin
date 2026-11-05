@@ -1,6 +1,7 @@
 url: 'https://github.com/keer1024/dsh-native/tree/main/packages/dsh-rust-exec'
 name: 'keer1024/dsh-native#packages/dsh-rust-exec'
 category: 'tools'
+tarball: 'https://github.com/keer1024/dsh-native/releases/download/v1.7.6/dsh-rust-exec-1.7.6.tgz'
 description:
   en: 'Resident Rust sidecar for Windows that folds shell-heavy tool calls into one warm worker: 11 tools (10 rust_* tools plus a native_help entry point; 5 resident, 6 activated on demand) for command execution, sha256-guarded file reads and writes, code indexing and search, session-log projection and resource sampling, served by a lane pool with soft RSS and CPU limits over 8 HTTP routes.'
   zh: 'Windows 上的常驻 Rust 伴生进程，把散落的 shell 调用收进一个暖 worker：11 个工具（10 个 rust_* 工具外加 native_help 入口；5 个常驻、6 个按需激活）覆盖命令执行、带 sha256 校验的文件读写、代码索引与搜索、会话日志投影与资源采样，由带通道池和 RSS/CPU 软限额的 worker 提供，并暴露 8 条 HTTP 路由。'

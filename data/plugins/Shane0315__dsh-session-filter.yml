@@ -1,0 +1,7 @@
+url: https://github.com/Shane0315/dsh-session-filter
+name: Shane0315/dsh-session-filter
+category: ui
+description:
+  en: 'Adds a cross-workspace activity sidebar for running, waiting and unread sessions, with search, optional pinned and scheduled-delivery groups, local read tracking and confirmed archiving.'
+  zh: '跨工作区聚合运行中、待回复和未读会话，支持搜索、可选的置顶与定时交付分组、插件本地已读记录，以及经确认的归档操作。'
+tarball: https://github.com/Shane0315/dsh-session-filter/releases/latest/download/dsh-session-filter.tgz

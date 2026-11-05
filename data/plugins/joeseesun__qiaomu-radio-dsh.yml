@@ -1,0 +1,7 @@
+url: https://github.com/joeseesun/qiaomu-radio-dsh
+name: joeseesun/qiaomu-radio-dsh
+category: fun
+description:
+  en: "Listen to live radio, browse stations by mood, and keep a local listening history inside Harness."
+  zh: "在 Harness 中收听直播电台，按场景浏览频道，并在本地保留收听记录。"
+tarball: https://github.com/joeseesun/qiaomu-radio-dsh/releases/download/v0.1.4/qiaomu-dsh-radio-0.1.4.tgz

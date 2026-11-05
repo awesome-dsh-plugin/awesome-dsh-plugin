@@ -1,0 +1,8 @@
+url: https://github.com/lightrivers/dsh-proxy-switch
+name: lightrivers/dsh-proxy-switch
+category: browser
+description:
+  en: 'Fixes web_fetch failing with "non-public IP address" while Clash, Surge or v2rayN runs in TUN/fake-IP mode: finds your local HTTP proxy by itself, sends web_fetch through it while the proxy is on and directly when it is off, and adds an Auto/Proxy/Direct switch to the sidebar. Model calls are left alone by default.'
+  zh: '修复开着 Clash / Surge / v2rayN（TUN、fake-IP）时 web_fetch 报 non-public IP address 的问题：自动找到本机 HTTP 代理，代理开着走代理、关了直连；侧栏可一键切换「自动 / 走代理 / 直连」。默认只接管 web_fetch，不影响模型调用。'
+icon: https://raw.githubusercontent.com/lightrivers/dsh-proxy-switch/main/assets/icon-512.png
+tarball: https://github.com/lightrivers/dsh-proxy-switch/releases/latest/download/dsh-proxy-switch.tgz
