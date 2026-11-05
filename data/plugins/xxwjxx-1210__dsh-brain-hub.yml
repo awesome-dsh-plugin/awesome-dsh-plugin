@@ -1,7 +1,7 @@
 url: https://github.com/xxwjxx-1210/dsh-brain-hub
 name: xxwjxx-1210/dsh-brain-hub
 category: memory
-tarball: https://github.com/xxwjxx-1210/dsh-brain-hub/releases/download/v0.2.0/dsh-brain-hub-0.2.0.tgz
+tarball: https://github.com/xxwjxx-1210/dsh-brain-hub/releases/download/v0.2.1/dsh-brain-hub-0.2.1.tgz
 description:
   zh: "给 DeepSeek Harness 用的第二大脑：Markdown 当数据库、git 当同步，零运行时依赖。核心记忆常驻注入系统提示，一张卡一个文件并可全文检索；侧栏网页版拆好的卡片先落收件箱，逐张人工确认后「存到云端」或「只存本地」（private/ 被 .gitignore 永久排除，绝不推送）；网页版对话进度存成 progress.md，旧稿归档保留 20 份。会话顶栏四步流水线：打开网页版 → 整理成卡片 → 逐张确认 → 备份到云端。拆卡提示词可在面板里直接改，改完立即生效。"
   en: "A second brain for DeepSeek Harness where Markdown is the database and git is the sync, with zero runtime dependencies. Core memory is injected into every system prompt, one file per note with weighted search; cards produced in the sidebar web chat land in an inbox first and are approved one by one as cloud notes or local-only notes (private/ is permanently gitignored and never pushed); web-chat progress is saved to progress.md with the last 20 drafts archived. A four-step flow lives behind one header icon: open web chat, extract cards, review them, back up to the cloud. The extraction prompt is editable in the panel and applies immediately."
