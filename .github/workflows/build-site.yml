@@ -93,7 +93,7 @@ jobs:
           npm_config_registry: https://registry.npmjs.org/
           npm_config_replace_registry_host: always
       - run: node --test scripts/download-window.test.mjs
-          node --test scripts/probe-versions.test.mjs
+      - run: node --test scripts/probe-versions.test.mjs
       # Rolling probe cache: unique key so every run saves, restore-keys pulls
       # the most recent.
       #
