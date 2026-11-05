@@ -657,6 +657,7 @@ dsh plugin --profile web add dshmarket
 - [GeniusHu-tgty/dsh-prompt-better](https://github.com/GeniusHu-tgty/dsh-prompt-better) — 在输入框加一个按钮，一键调用 LLM 把当前草稿改写成更清晰具体的提示词，支持一键恢复原文与取消。
 - [germyGao/dsh-select-assist](https://github.com/germyGao/dsh-select-assist) — 在任意 Windows 应用里划词，弹出解释 / 总结 / 翻译 / 朗读，结果以流式输出落在原生置顶浮窗里，菜单为横向胶囊条。
 - [gezi-wen/sage-reminder](https://github.com/gezi-wen/sage-reminder) — DSH 会话头部的时间模块：现在时间、距你上次发言、提醒与倒计时。纯前端插件——数据存浏览器 localStorage，host 半不注册任何东西；到点提示是边框呼吸灯加界面浮条，不发系统通知。
+- [gf691271/dsh-quote-reply](https://github.com/gf691271/dsh-quote-reply) — 选中对话里的文字就地引用回复，问答变成输入框上方的方块，一次发出。
 - [gghyoo/dsh-download-image](https://github.com/gghyoo/dsh-download-image) — 在 DSH Web UI 的助手消息复制按钮旁增加一个下载 PNG 按钮。
 - [giiiiiithub/terminal](https://github.com/giiiiiithub/terminal) — DSH Web UI 终端面板：宿主端 node-pty 真实 PTY（Windows 默认 cmd.exe）+ 浏览器 xterm.js 渲染；多标签会话、停靠/浮动窗口、复制粘贴。
 - [GinoXiang/dsh-dailyboard](https://github.com/GinoXiang/dsh-dailyboard) — DailyBoard 是 DSH Web GUI 的日常工作任务板：单月日历（彩色时间条 + 当天任务）、日常清单、七天周视图（勾选完成、可拖动改期）与可拖拽的 24 小时时间轴，支持按天记录的有序子任务、按周几或每隔几天的周期任务及每次出现的结果记录、从日历标题栏打开的长期任务进展视图、长期任务按天完成标记、任意邮箱的每日邮件提醒，以及 AI 自然语言提取任务。
@@ -3183,6 +3184,7 @@ dsh plugin --profile web add dshmarket
 - [zpis666/dsh-context-budget](https://github.com/zpis666/dsh-context-budget) — 在模型设置页为每个 pi-ai 路由新增上下文窗口与压缩阈值字段，并在输入框右下角按厂商提供思考强度选择器，写入 llm-pi-ai 容量、reasoningEfforts 与 compaction-basic 补丁行。
 - [Ztyss/dsh-llm-provider](https://github.com/Ztyss/dsh-llm-provider) — 把内置的 llm-pi-ai 与 llm-deepseek 适配器、模型选择器、模型服务设置页替换为自维护版本；经安全区下载跟踪上游 @earendil-works/pi-ai 并提供一键启用开关；另加供应商额度与余额查询、供应商管理页。
 - [zuojinxin/dsh-provider-switch](https://github.com/zuojinxin/dsh-provider-switch) — 供应商启停开关、模型选择器关键字搜索、供应商显示名内联重命名。
+- [dsh-model-providers](https://github.com/zxbingoo/dsh-model-providers) — 通过本机 Codex CLI 为 DeepSeek Harness 提供动态模型发现、图片输入、Harness 工具调用及 ChatGPT 套餐与额度只读展示。
 
 ### 🆔 身份与通信
 
@@ -8687,6 +8689,7 @@ dsh plugin --profile web add dshmarket
 - [HGT158/dsh-plugin-share](https://github.com/HGT158/dsh-plugin-share) — 把一套 DSH 插件变成一段可粘贴的分享码，别人贴进去就能逐条安装，也能生成二维码带到手机上。
 - [hoyyang/dsh-mall](https://github.com/hoyyang/dsh-mall) — DeepSeek Harness 内完整的插件商场：每 2 小时刷新 GitHub #dsh-plugin 全量目录，支持浏览、搜索与评分；AI 装前审查给出装/谨慎/别装结论，五维评分雷达图，九语言界面，编辑精选与个性化推荐，一键安装/更新/回退及全局任务面板，并内置 /dsh-mall skill 在会话中发现插件。
 - [huguangyu666/dsh-store](https://github.com/huguangyu666/dsh-store) — dsh 插件商店：npm 权威目录 + awesome 精选（550+ 插件、11 分类）、dsh 字段质量验证、官方 `dsh plugin add/remove` 一键安装，侧边栏与设置页入口。
+- [HUISDE/dsh-pnpm-release-age-zero-fix](https://github.com/HUISDE/dsh-pnpm-release-age-zero-fix) — 将桌面端零等待发布观察期同步到 profile 策略，并移除 Host 环境别名，避免市场更新被未知策略挂起。
 - [iasiv5/dsh-m](https://github.com/iasiv5/dsh-m) — DSH 的应用内插件市场：插件发现、安装、升级、开关与卸载一站完成，跟随 Web / Desktop 宿主 profile；4,000+ 条社区目录搭配可自定义精选清单，附 8 个 agent 工具与独立 dshm CLI，无需市场服务器或账号。
 - [icefall7/dsh-plugin-scout](https://github.com/icefall7/dsh-plugin-scout) — 侦察 deepseek-harness 官方仓库与所有 dsh-plugin topic 仓库，发现与目标相关的 harness，并判断每个值得试用、观望还是跳过。
 - [JazzuLu/find-dsh-plugins](https://github.com/JazzuLu/find-dsh-plugins) — 对话式查找 DSH 插件的增强版 skill：四源聚合统一索引，BM25 粗筛 + LLM 语义精排，候选表带证据分级与本地静态安全审计，安装走安全确认流程并自动验证。
