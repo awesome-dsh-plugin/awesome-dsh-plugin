@@ -1,0 +1,6 @@
+url: https://github.com/bufan528/dsh-qqbot-merge
+name: bufan528/dsh-qqbot-merge
+category: notify
+description:
+  en: 'Maintained fork of Tencent''s QQ Bot plugin dsh-qqbot 0.5.3: consecutive messages in one chat are merged into one agent turn by non-interrupting steering, and each turn revises a single reply instead of sending several.'
+  zh: '腾讯官方 QQ 机器人插件（@tencent-connect/dsh-qqbot 0.5.3，MIT）的维护分支：同一聊天里的连续消息按窗口合并为一次 agent 回合（非打断式 steering），每回合只发一条回复并持续修订。'
