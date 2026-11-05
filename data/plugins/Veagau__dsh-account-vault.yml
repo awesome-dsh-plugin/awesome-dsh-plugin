@@ -1,0 +1,7 @@
+url: https://github.com/Veagau/dsh-account-vault
+name: Veagau/dsh-account-vault
+category: security
+tarball: https://github.com/Veagau/dsh-account-vault/releases/download/v2.2.1/dsh-account-vault.tgz
+description:
+  en: Store account credentials in an encrypted browser-local vault.
+  zh: 在浏览器本地加密保存账号凭据。

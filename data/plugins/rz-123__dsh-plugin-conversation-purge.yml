@@ -1,0 +1,6 @@
+url: https://github.com/rz-123/dsh-plugin-conversation-purge
+name: rz-123/dsh-plugin-conversation-purge
+category: session
+description:
+  en: 'Permanently deletes a conversation, optionally together with the documents and attachments it created.'
+  zh: '彻底删除对话，可选择同时删除该对话创建的文档与附件。'

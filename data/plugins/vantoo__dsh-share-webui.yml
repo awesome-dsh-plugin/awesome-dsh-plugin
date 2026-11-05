@@ -1,0 +1,6 @@
+url: https://github.com/vantoo/dsh-share-webui
+name: vantoo/dsh-share-webui
+category: remote
+description:
+  en: Serves this harness instance's Web GUI on a fixed port with device pairing and Cloudflare Access verification.
+  zh: 把当前实例的 Web 界面固定在一个端口上共享，支持设备配对与 Cloudflare Access 校验。

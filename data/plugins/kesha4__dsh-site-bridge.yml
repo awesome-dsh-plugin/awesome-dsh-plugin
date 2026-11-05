@@ -1,0 +1,7 @@
+url: https://github.com/kesha4/dsh-site-bridge
+name: kesha4/dsh-site-bridge
+category: browser
+icon: https://raw.githubusercontent.com/kesha4/dsh-site-bridge/main/extension/icons/icon-128.png
+description:
+  en: 'Browser bridge for DeepSeek Harness: captures page markup (DOM with boxes and computed styles, selector candidates checked for uniqueness) and the site''s own xhr/fetch calls with headers and bodies, redacting credential-shaped values on ingest, into workspace files — then drives the page with trusted CDP input to verify what was captured. Ships 11 tools and an MV3 extension that works in the browser''s own session. Requires Chrome or Edge 125+; the extension is loaded manually and paired with a local token.'
+  zh: '为 DeepSeek Harness 提供浏览器桥接：把页面结构（带盒子与计算样式的 DOM、经过唯一性校验的选择器候选）与站点自身的 xhr/fetch（含请求头与请求体，凭据形态的值在写入时脱敏）抓取为工作区文件，再用可信 CDP 输入驱动页面验证抓取结果。包含 11 个工具与使用浏览器自身会话的 MV3 扩展。需 Chrome/Edge 125+，扩展需手动加载并用本机 token 配对。'

@@ -1,0 +1,7 @@
+url: https://github.com/lijiaqi-AI-Product-Manager/dsh-agent-compare
+name: lijiaqi-AI-Product-Manager/dsh-agent-compare
+category: dev
+description:
+  en: Compare two running Vite builds inside DSH conversations, choose blind, and review adoption against current project edits. Requires a root-level Vite project in a Git repository with at least one commit.
+  zh: 在 DSH 主对话中体验两版 Vite 应用、盲选，并结合项目当前改动审查采用结果。适用于 Git 仓库（至少一次提交）中的根目录 Vite 项目。
+icon: https://raw.githubusercontent.com/lijiaqi-AI-Product-Manager/dsh-agent-compare/main/assets/icon.png

@@ -1,6 +1,7 @@
 url: https://github.com/Dogwind221/dwguard-dsh-hmos
 name: Dogwind221/dwguard-dsh-hmos
 category: workflow
+icon: https://raw.githubusercontent.com/Dogwind221/dwguard-dsh-hmos/main/assets/icon-180.png
 description:
   en: 'HarmonyOS delivery orchestration for DSH: freezes a four-dimension acceptance pack whose measurable criteria carry machine-checkable assertions, runs an adversarial pre-review before dispatch, hands the work to DevEco Code in Goal mode, then audits the delivery with independently gathered evidence (screenshots, UI tree, logs, hashed evidence bundle), recomputing assertion verdicts against measured values and filing rework orders; includes a cited rule catalog, a user-confirmation state and a gate calibration ledger.'
   zh: 'DSH 侧鸿蒙交付编排插件：冻结四维验收任务包（可量化判据带机器可校验断言）、派发前对抗预审、以 Goal 模式交给 DevEco Code，再用独立取证（截图 / 布局树 / 日志 / 带 SHA-256 的证据包）做外部审计，按实测值重算断言判定并生成返工单；含带官方引用的规则目录、用户确认状态与闸门校准账本。'

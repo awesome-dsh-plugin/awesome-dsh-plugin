@@ -1,0 +1,6 @@
+url: https://github.com/TSRYWHY/deepseek-time-price
+name: TSRYWHY/deepseek-time-price
+category: ui
+description:
+  en: 'Floating DeepSeek API time-of-day pricing window with Chinese legal-holiday awareness, account balance and estimated project spend; includes a green/orange 24-hour timeline and collapsible model, billing-rule and holiday sections.'
+  zh: 'DeepSeek API 时段价格悬浮窗，联网读取中国法定节假日，显示账户余额与本项目花费估算；含绿/橙 24 小时时间轴和可折叠的模型、计费规则、节假日区块。'

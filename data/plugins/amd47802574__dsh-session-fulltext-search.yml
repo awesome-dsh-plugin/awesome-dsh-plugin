@@ -1,0 +1,7 @@
+url: https://github.com/amd47802574/dsh-session-fulltext-search
+name: amd47802574/dsh-session-fulltext-search
+category: session
+description:
+  en: 'Turn on the built-in session full-text search backend (session-query-sqlite, SQLite FTS5) that dsh ships disabled by default, so the sidebar magnifier searches message bodies with snippets instead of titles only.'
+  zh: '开启 dsh 内置但默认关闭的会话全文搜索后端（session-query-sqlite，SQLite FTS5），侧边栏放大镜即可搜索消息正文并附摘要，而不只是标题。'
+icon: https://raw.githubusercontent.com/amd47802574/dsh-session-fulltext-search/master/assets/icon-180.png
