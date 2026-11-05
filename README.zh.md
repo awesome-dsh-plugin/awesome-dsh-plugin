@@ -806,6 +806,7 @@ dsh plugin --profile web add dshmarket
 - [idoall/dsh-quick-replies](https://github.com/idoall/dsh-quick-replies) — 在会话输入区上方提供可管理的一点即发文本 chip；空闲时 queue、运行中 steer，不改写草稿。
 - [idoall/dsh-update-status](https://github.com/idoall/dsh-update-status) — 只读的 DeepSeek Harness Web 侧栏版本芯片，显示当前运行版本、npm latest/next/alpha 通道、兼容性标识，以及仅复制的升级命令。
 - [iimaguest/dsh-contradictions-indicator](https://github.com/iimaguest/dsh-contradictions-indicator) — 对当前 DSH 会话做并行矛盾分析，在会话标题栏显示 0–100 连贯性徽章与评注，支持手动触发和按轮数的自动分析（默认开启，可按会话或全局调整）。
+- [ikun1031/dsh-effort-dial-plus](https://github.com/ikun1031/dsh-effort-dial-plus) — 输入框里的 Codex 风格推理强度卡片：一个控件同时管理模型与档位，档位逐级变色，最高档显示额度提示并切换为蓝紫渐变与流动粒子。
 - [imkingjh999/dsh-shorts-wall](https://github.com/imkingjh999/dsh-shorts-wall) — 在 DSH Web UI 中加入默认贴边的竖屏短视频墙：YouTube Shorts 与 B站双源、关键词轮换、四角缩放及 Alt+S/Alt+M 快捷键。
 - [Imnotndesh/dsh-peak-pricing-warning](https://github.com/Imnotndesh/dsh-peak-pricing-warning) — 在模型选择器旁以行内文字显示 DeepSeek 峰谷定价状态、距下一次调价的倒计时，以及本次会话的预估费用。
 - [imwhatiam/dsh-mosaic](https://github.com/imwhatiam/dsh-mosaic) — 把回答里的 dsh-view 围栏渲染成卡片——文本、表格、图表、Mermaid 图与沙箱 HTML 组件——并提供可编辑的模型提示、render_view 工具和内置技能。
@@ -2414,6 +2415,7 @@ dsh plugin --profile web add dshmarket
 - [zhuzichen362/dsh-call-shrink](https://github.com/zhuzichen362/dsh-call-shrink) — DeepSeek Harness 的极端 LLM 调用压缩：标题生成短路、飞行中请求去重、24 小时回放缓存，并用 `[[TASK n]]`/`[[ANSWER n]]` 分隔协议把 N 个并行请求批量合并为 1 次上游调用——更少 API 调用、更低开销、相同答案。
 - [zhxmt-xm/dsh-opencode-usage-dashboard](https://github.com/zhxmt-xm/dsh-opencode-usage-dashboard) — OpenCode 用量看板：在 DeepSeek Harness 侧栏查看额度与用量，支持 Go 订阅窗口、Console 花费、趋势、预测和模型拆分，以及多账户、服务账号筛选和中英界面。
 - [ZiOstudio/dsh-budget-handoff](https://github.com/ZiOstudio/dsh-budget-handoff) — 给 DeepSeek Harness 的会话设预算上限：按官方价目表实时算账，80% 预警、100% 拦停任务，并落盘一份交接快照，让下一个会话接着干。
+- [ZKY172/dsh-simple-balance](https://github.com/ZKY172/dsh-simple-balance) — 在 DeepSeek Harness 侧栏显示账户余额、当前时段单价与今日已用金额。
 - [Zoria-Lind/dsh-token-optimizer](https://github.com/Zoria-Lind/dsh-token-optimizer) — Token 优化：支持可搜索的 MCP 工具发现与懒加载、可配置的压缩控制与状态查看、工具输出精简、长文本视觉摘要，以及可选的对话原文归档与分页回查。
 - [zouxiaoyang/dsh-commandcode-usage](https://github.com/zouxiaoyang/dsh-commandcode-usage) — DSH 的 CommandCode 用量与余额面板：在侧边栏底部显示 API 用量、信用额度、5小时/每周窗口。
 - [zy12342/usage-widget](https://github.com/zy12342/usage-widget) — DSH 侧边栏账户余额快捷查看：显示余额、赠送额度、当前模型和官方高峰 / 空闲计费时段，按余额分四档显示质感，余额过低时提醒。
@@ -6575,6 +6577,7 @@ dsh plugin --profile web add dshmarket
 - [liuli-zsl/dsh-unreal-engine-skills](https://github.com/liuli-zsl/dsh-unreal-engine-skills) — 注册 Epic 的 Unreal Engine 三个技能（unreal-mcp、create-toolset、unreal-skill），注入 UE 工程上下文，接通编辑器的 ModelContextProtocol 服务器，并支持在插件页修改端口。
 - [lnsdlszsqxxx/dsh-courseware](https://github.com/lnsdlszsqxxx/dsh-courseware) — 拿用户自己的 .pptx 模板 + 一份课程大纲（教案/文档/纯文本），产出套用该模板背景、配色、字体、页面骨架的课件 .pptx。纯插件包，无内置密钥，图片后端需用户自行配置。
 - [Lohaslee/dsh-super-pm](https://github.com/Lohaslee/dsh-super-pm) — DeepSeek Harness 的产品思考助手：先明确负向边界，拆开事实与假设，经七套产品视角讨论取舍，并将确认的决策沉淀到项目记忆中。
+- [Lovenndme/dsh-skill-panel](https://github.com/Lovenndme/dsh-skill-panel) — DeepSeek Harness 的技能管理面板（设置 → 技能）：按全局 / 本项目两组列出技能，标注 DSH 是否真的加载了它；一个启用开关同时控制模型与 /命令 调用；用聊天界面同款 Markdown 渲染器预览并编辑 SKILL.md；支持新建、从文件夹或 zip 导入、删除到回收目录。只读写本机技能目录（~/.dsh/skills 与 <项目>/.dsh/skills），宿主路由走 DSH 的 Connection 信任围栏；不上报数据、无外发请求、不碰凭据。
 - [LTJ002/dsh-eval-harness](https://github.com/LTJ002/dsh-eval-harness) — 面向 DeepSeek Harness 的 Agent 应用评测工具：以审计副作用为判定依据的离线/在线评测套件、对安全类退化零容忍的基线对比、验证评测器自身有效性的变异测试。框架无关——只要有可调用的对话接口与可查询的工具调用记录即可接入。
 - [Lumos-789/delivery-video-plugin](https://github.com/Lumos-789/delivery-video-plugin) — 把真实运行的功能做成可信交付演示视频，或把缺陷做成可追溯的问题反馈视频：真实录屏、edge-tts 旁白与逐字对齐字幕、自包含 ffmpeg 管线，配一道拒绝放过造假或残次演示的确定性质量闸（规格、音轨、响度、黑帧/冻结/静音扫描），含渲染前预检与成片证据核验。反馈模式带严重级别/阶段徽标、复现步骤浮层，以及按成片 SHA256 绑定的工单级问题报告。需 Python 3.9+、PATH 上的 ffmpeg/ffprobe，以及 `pip install edge-tts Pillow`；旁白会调用 edge-tts 公共接口。
 - [Lumos-789/react-monitor-agent](https://github.com/Lumos-789/react-monitor-agent) — 安装壳技能：安装、跑起并排障 React-Monitor-Agent 人机协作操作板——agent 把工作过程写成由录屏、截图、diff、文本节点组成的结构化回放时间线，人在方案/阶段/风险/完工四类检查点上拍板，决策改变时间线走向，被否定/改向的旧分支灰掉保留以供审计。技能引导克隆主仓，启动零依赖 Node 事件服务（127.0.0.1:8790）与 React 操作板（localhost:5173），操作板内置离线 FIXTURE 演示模式。bundle 只内嵌技能，产品源码以主仓为准。
