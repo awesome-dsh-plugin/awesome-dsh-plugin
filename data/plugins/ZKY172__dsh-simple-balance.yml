@@ -2,6 +2,6 @@ url: https://github.com/ZKY172/dsh-simple-balance
 name: ZKY172/dsh-simple-balance
 category: usage
 description:
-  en: Shows account balance, current peak/off-peak token price and today's spend in the dsh sidebar.
-  zh: 在 DeepSeek Harness 侧栏显示账户余额、当前时段单价与今日已用金额。
+  en: "Shows account balance, current peak/off-peak token price and today's spend in the dsh sidebar; today's spend is read from the local dsh-cost-meter ledger (~/.dsh/.dshw-usage.json), so it shows a dash until dsh-cost-meter is installed."
+  zh: "在 DeepSeek Harness 侧栏显示账户余额、当前时段单价与今日已用金额；今日已用读自本机 dsh-cost-meter 账本（~/.dsh/.dshw-usage.json），未安装 dsh-cost-meter 时该项显示为「—」。"
 icon: https://raw.githubusercontent.com/ZKY172/dsh-simple-balance/main/assets/sidebar.png

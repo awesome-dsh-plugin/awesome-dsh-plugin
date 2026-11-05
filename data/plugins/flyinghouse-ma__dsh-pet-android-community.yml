@@ -2,5 +2,5 @@ url: https://github.com/flyinghouse-ma/dsh-pet-android-community
 name: flyinghouse-ma/dsh-pet-android-community
 category: fun
 description:
-  en: Android shell patch for dsh-pet that fixes the unfocusable overlay window (keyboard never opens), broken chat requests, and clipped replies.
-  zh: 安卓桌宠社区补丁：修复悬浮窗无法聚焦导致键盘不弹、聊天发不出去、回复被窗口裁掉三个问题。
+  en: 'Android shell patch for dsh-pet that fixes the unfocusable overlay window (keyboard never opens), broken chat requests, and clipped replies. Requires upstream dsh-pet >=0.3.7, a separately installed self-signed shell APK (Android 11+), and a local 3080->38019 proxy.'
+  zh: '安卓桌宠社区补丁：需先装上游 dsh-pet（≥0.3.7），另装自签名壳 APK（Android 11+），并在本机常驻 3080→38019 转发；修好悬浮窗无法聚焦导致键盘不弹、聊天发不出去、回复被窗口裁掉三个问题。'
