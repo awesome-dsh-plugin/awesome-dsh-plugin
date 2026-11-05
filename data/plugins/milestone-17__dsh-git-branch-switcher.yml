@@ -1,0 +1,7 @@
+url: https://github.com/milestone-17/dsh-git-branch-switcher
+name: milestone-17/dsh-git-branch-switcher
+category: ui
+description:
+  en: 'A composer chip that shows the current git branch of the session working directory and switches branches from a popup menu: one-click git fetch for remote branches, remote-tracking branches listed separately and checked out as local tracking branches, and a confirmation step before switching on a dirty tree. The chip hides itself outside git repositories.'
+  zh: '在输入框工具行显示当前 git 分支的胶囊按钮，点击弹出菜单切换分支：菜单右上角可一键 git fetch 同步远端分支，远端跟踪分支单独分组并可一键检出为本地跟踪分支，工作区不干净时先弹确认。非 git 目录下自动隐藏。'
+icon: https://raw.githubusercontent.com/milestone-17/dsh-git-branch-switcher/master/assets/icon-180.png
