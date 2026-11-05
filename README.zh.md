@@ -7180,6 +7180,7 @@ dsh plugin --profile web add dshmarket
 - [Z-Asset/ZA_ppt](https://github.com/Z-Asset/ZA_ppt) — 报告阶段（PPT）——资产定价与机器学习研究的论文演讲幻灯片生成（Beamer/Quarto）。附带一个 skill。
 - [Z-Asset/ZA_report](https://github.com/Z-Asset/ZA_report) — 报告阶段（文稿）——资产定价与机器学习研究的学术论文写作。附带一个 skill。
 - [Z-Asset/zagent](https://github.com/Z-Asset/zagent) — Zagent——统一 RSI 三角色自改进闭环框架，三个算子：Data-RSI（逐日截面清洗：去极值→截面驻日标准化→中位数填充，加经验提取）、Harness-RSI（进化系统提示词/记忆/技能）、Model-RSI（进化 alpha 训练配方，框架内置 walk-forward，含 2 天空白与多 seed）。离线一条命令跑，GPU 自动走 CUDA。附带一个 skill。
+- [ZadAnthony/DSH-Projects#projects](https://github.com/ZadAnthony/DSH-Projects/tree/main/workspace/packages/projects) — 为跨会话协作提供项目空间、会话接力、可查询的聊天记录与可编辑的共享记忆。
 - [Zcc50/dsh-rebuild#task-list](https://github.com/Zcc50/dsh-rebuild/tree/main/task-list) — DSH 任务列表：对话左侧常驻任务面板，五态 + 父子折叠 + 完成区/废弃区 dock，agent 用 task_list / task_write 读写同一份列表。
 - [Zcc50/dsh-rebuild#todo-list](https://github.com/Zcc50/dsh-rebuild/tree/main/todo-list) — DSH 待办列表：右侧栏常驻标签，分类 / 分组 / 五态 / 备份导出，数据按会话落盘。
 - [zclDragon/dsh-tool-generate-image](https://github.com/zclDragon/dsh-tool-generate-image) — 给纯文本模型的 `generate_image` 工具：模型用自然语言要一张图，经 Antigravity CLI 让 Gemini 画出，保存到可配置输出目录并返回文件路径，供模型在任务中使用。
@@ -8582,6 +8583,7 @@ dsh plugin --profile web add dshmarket
 - [jayantTang/DSH_Mobile#mobile-link](https://github.com/jayantTang/DSH_Mobile/tree/main/plugins/mobile-link) — DSH Mobile 的电脑侧连接器：连上可自建的公网 WSS 中转，手机在 4G/5G 下即可访问这台电脑上的 DSH 会话，电脑不需要公网 IP 也不用组网；中转只做鉴权与转发。
 - [JeremyCruzFang/dsh-plugin-dshm#bridge](https://github.com/JeremyCruzFang/dsh-plugin-dshm/tree/main/bridge) — 通过本地网络或 Tailscale，将 DSHM iPhone/iPad 配套应用连接到 DeepSeek Harness，支持设备配对、会话控制和文件传输；配套应用的公开 TestFlight 仍在等待 Apple 审核。
 - [Jiachi5533/dsh-remote-gateway](https://github.com/Jiachi5533/dsh-remote-gateway) — 带精确来源 IP 白名单的 HTTP/SSE/WebSocket 网关，让 DSH Web UI 在带认证反向代理后保持设置、插件与宿主机目录选择功能，并提供白名单健康检查。
+- [jiahui-huang1/dsh-linked-workspace](https://github.com/jiahui-huang1/dsh-linked-workspace) — 把 SSH 连接变成 DSH 远程目录与本地⇄远端联动工作区：远程目录只读浏览，联动工作区可编辑、双向传输、镜像同步，并提供 linked_workspace 工具。
 - [Jiangsubei/dsh-qqbot-bridge](https://github.com/Jiangsubei/dsh-qqbot-bridge) — 通过 QQ（官方 Bot API v2，仅单聊）远程控制 DeepSeek Harness 会话与工作区：列出/切换工作区、新建会话、压缩历史、切换模型，支持流式输出、Markdown 与审批转发。未做按用户门禁——任何能给该机器人发消息的人都能控制这些会话，消耗你的模型额度与文件权限。
 - [jixishi/dsh-adapter-qq](https://github.com/jixishi/dsh-adapter-qq) — QQ 官方单聊机器人适配器：支持交互操作板、工作区会话管理与 Web UI 实时双向同屏。
 - [JochenYang/dsh-remote#dsh-remote](https://github.com/JochenYang/dsh-remote/tree/main/dsh-remote) — 随时随地用手机操作 DSH：自托管中继 + 桌面 host 插件组成令牌认证隧道（保序 HTTP 反向代理 + WebSocket 桥接），扫码配对、管理台可管理设备与令牌，并自动注入移动适配层（聊天全宽、设置弹窗全屏、侧栏抽屉化）。
