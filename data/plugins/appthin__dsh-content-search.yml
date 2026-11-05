@@ -1,0 +1,7 @@
+url: https://github.com/appthin/dsh-content-search
+name: appthin/dsh-content-search
+category: session
+description:
+  en: 'Searches the whole conversation — not just the loaded window — from a button in the conversation header, opens the results in the right sidebar, paints every keyword yellow in both your messages and the replies, and jumps the conversation to the hit. History search runs on the host log, so it still works when the full-text index is disabled.'
+  zh: '在对话头部加一个搜索按钮，结果显示在右侧栏；整段历史都能搜（不只是已加载的那部分），命中关键词在用户消息和 AI 回复里都标黄，点结果可跳转到对话中的位置。历史检索走宿主日志，所以全文索引被关闭时也能用。'
+icon: https://raw.githubusercontent.com/appthin/dsh-content-search/main/assets/icon-180.png
