@@ -1,0 +1,6 @@
+url: https://github.com/CooperZhuang/dsh-plugins-cooper-custom/tree/main/packages/dsh-folder-path
+name: CooperZhuang/dsh-plugins-cooper-custom#dsh-folder-path
+category: tools
+description:
+  en: 'Inserts the full path as text when a folder is pasted into the input box, instead of trying to upload it (Windows and macOS).'
+  zh: '粘贴复制来的文件夹时插入完整路径文本，而不是尝试上传（支持 Windows 与 macOS）。'
