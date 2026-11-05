@@ -1,0 +1,7 @@
+url: https://github.com/ZydFirst/dsh-offwork-countdown
+name: ZydFirst/dsh-offwork-countdown
+category: ui
+description:
+  en: A countdown pill under the message composer showing how long is left before you clock off, with a workday progress bar; click it to set your own start and end times (saved in this browser), and after the end time it turns into an overtime timer.
+  zh: 输入框下方常驻的倒计时胶囊：显示距离下班还剩多久，并带一条工作日进度条；点开可设置自己的上下班时间（只存在本机浏览器），到点后转为加班计时。
+icon: https://raw.githubusercontent.com/ZydFirst/dsh-offwork-countdown/main/assets/icon-256.png
