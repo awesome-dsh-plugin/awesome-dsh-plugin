@@ -1,0 +1,7 @@
+url: https://github.com/gokucai/dsh-open-in-codebuddy
+name: gokucai/dsh-open-in-codebuddy
+category: ui
+description:
+  en: Adds a Session-header CodeBuddy button that opens the current workspace folder in CodeBuddy, beside DSH's own Open In control.
+  zh: 在会话右上角添加一个 CodeBuddy 按钮，用当前工作区目录在 CodeBuddy 中打开，位于 DSH 自带的「打开方式」按钮旁。
+icon: https://raw.githubusercontent.com/gokucai/dsh-open-in-codebuddy/main/assets/icon-180.png
