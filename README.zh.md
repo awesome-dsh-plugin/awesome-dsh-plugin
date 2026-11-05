@@ -2798,6 +2798,7 @@ dsh plugin --profile web add dshmarket
 - [CARVIN94/dsh-router-traework](https://github.com/CARVIN94/dsh-router-traework) — dsh-router 的 TRAE SOLO 供应商插件，移植自 traework2api。提供 traework 供应商这一免费 SOLO 聊天通道，并向 dsh-router 核心上报单账号状态。
 - [cc1104666/dsh-plugins#dsh-grok-online](https://github.com/cc1104666/dsh-plugins/tree/main/packages/dsh-grok-online) — 在本机跑一个 OpenAI 兼容反代，把 DSH 的对话请求转给 grok.online，无需 API key 即可在模型选择器里用它的两个对话模型。
 - [cc1104666/dsh-plugins#dsh-grok3ai](https://github.com/cc1104666/dsh-plugins/tree/main/packages/dsh-grok3ai) — 直连 grok3ai.org 仅用 iframe 嵌进去的两个公开 Hugging Face Space（MiniMax-VL-01 与 Llama-2-7B-Chat），当作 OpenAI 兼容模型使用。
+- [cc1104666/dsh-plugins#dsh-ima](https://github.com/cc1104666/dsh-plugins/tree/main/packages/dsh-ima) — 微信扫码登录 ima.qq.com（腾讯 IMA），在本机起一个 OpenAI 兼容反代，把请求翻译成它的 SSE 对话接口，让背后的四个模型出现在模型选择器中。
 - [cc1104666/dsh-plugins#dsh-lightvela](https://github.com/cc1104666/dsh-plugins/tree/main/packages/dsh-lightvela) — 微信扫码登录 LightVela，从你自己的实例里读出模型网关凭据并写进 llm-pi-ai，让套餐里的模型出现在模型选择器中。
 - [ccccwwwxx/dsh-bifenggang](https://github.com/ccccwwwxx/dsh-bifenggang) — 按时间做模型路由：在设置页定义工作日峰谷时段与各时段使用的 Provider/模型（候选来自 harness 已注册的 API 与订阅账号），打开开关后由该策略决定每次请求的模型与思考档。开关按会话独立，会话列表每行带指示灯显示各自状态，设置页顶部写明此刻生效的模型与原因。无任何时段命中的日子（周末、假期）使用第一个方案的主力模型；高级思考模型是另一根轴，只在会话自身要求 max 思考时使用。
 - [Cci-65/deepseek-harness-plugin](https://github.com/Cci-65/deepseek-harness-plugin) — 为第三方模型配置推理强度档位，并在输入栏提供模型与强度选择器。
@@ -8872,7 +8873,7 @@ dsh plugin --profile web add dshmarket
 - [ghang/dsh-achievement-helper](https://github.com/ghang/dsh-achievement-helper) — 在本地记录 DeepSeek Harness 主题成就、勋章与角色收藏。
 - [Gin-7/dsh-pet-remielle](https://github.com/Gin-7/dsh-pet-remielle) — 蕾米埃尔(绝区零)桌宠：随 DSH 工作状态切换动画表情。
 - [Gjs9178U/dsh-pet-indesktop](https://github.com/Gjs9178U/dsh-pet-indesktop) — 给 DSH 网页界面加一只可以拖动的桌宠：一只叫「大肥鱼」（昵称「鲸鲸」）的鲸鱼娘，八种配色皮肤可切换，并且有性格——只吃米饭、聪明但懒、嘴硬心软；连点几次会躺平不干了，被叫「大肥鱼」会生气并坚持自己不胖，叫「鲸鲸」才高兴。她还会记事：今天被叫胖三次就来时冷淡，被叫昵称三次就亲近，离开半小时再回来说「才不是等你」，头几次见面怕生；这些计数每天零点清零，存在插件自己的状态文件里。十分钟没人理会游到角落，那只改视觉、不会动你放她的位置。八张皮肤图随插件分发、由插件自己提供，因此没有任何第三方请求。注意：画面带有 OleapCrow 标记、由仓库所有者提供，八种皮肤是同一张画的重新配色；本插件尚未在真实的 DSH 宿主上安装验证过。
-- [gongfpp/dsh-novel-fish](https://github.com/gongfpp/dsh-novel-fish) — 小说摸鱼：主动展开选中的原生聊天区域时，在保留真实思考和工具输出的下方阅读本地 EPUB、TXT、Markdown 小说，小说不发送给模型。目前仅兼容 DSH 0.2.1-rc.2。
+- [gongfpp/dsh-novel-fish](https://github.com/gongfpp/dsh-novel-fish) — 小说摸鱼：主动展开选中的原生聊天区域时，在保留真实思考和工具输出的下方阅读本地 EPUB、TXT、Markdown 小说，小说不发送给模型。兼容 DSH >=0.2.1-rc.2 <0.3.0-0。
 - [gongstudent/dsh-moyu](https://github.com/gongstudent/dsh-moyu) — 在 DeepSeek Harness 界面里悬停刷抖音推荐流：鼠标移入热点开始播放，移出暂停在原处，滚轮切换视频；滚轮做了累加与冷却，一次手势只切一条，播放器隐藏时保持挂载，移回从原处继续。宿主侧完成请求签名与视频流反代，不需要登录任何账号。
 - [good-saltfish/dsh-novel-shelf](https://github.com/good-saltfish/dsh-novel-shelf) — 装在 DSH 右侧栏的小说阅读器，办公摸鱼专用，搭配 AI 伴读，跟大肥鱼一起吐槽文章、发表看法 - 自己的 TXT 三种方式导入，五套阅读主题，章节、进度与批注保存。伴读跟着你读到哪儿就评到哪儿，吐槽或捧场，可在毒舌、温柔、侦探、摆烂四种腔调中切换，节奏自己定，默认关闭。内置 434 本中文经典，包里只有 44 KB 书目，按书名作者搜索、一键下载即入架离线读，四个 CDN 边缘回退。
 - [Gorkaseto/dsh-whale-pet](https://github.com/Gorkaseto/dsh-whale-pet) — 在新会话中，一只蓝白相间的像素风小鲸鱼趴在输入框上方游动。
