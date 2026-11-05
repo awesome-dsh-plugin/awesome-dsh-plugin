@@ -1,6 +1,0 @@
-url: https://github.com/5yeah/Aiscribe
-name: 5yeah/Aiscribe
-category: workflow
-description:
-  en: Reads local AI session history from 16 AI tools plus Windows recent-file activity, and generates daily or weekly work reports on your machine.
-  zh: 读取 16 个 AI 工具的本地会话记录，外加 Windows 最近文件活动，在本机生成日报或周报。
