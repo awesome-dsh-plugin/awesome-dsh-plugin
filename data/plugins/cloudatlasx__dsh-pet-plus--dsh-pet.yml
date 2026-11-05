@@ -1,0 +1,9 @@
+url: https://github.com/cloudatlasx/dsh-pet-plus/tree/main/dsh-pet
+name: cloudatlasx/dsh-pet-plus#dsh-pet
+category: ui
+description:
+  en: 'A desktop pet for DSH with schedule reminders, approval and question bubbles you can answer in place, a 20-entry history ledger, double-click corner cycling, a configurable data directory, a step/elapsed progress line, snooze and one-hour mute, a right-click menu whose order and hidden items you can edit in settings (chat first by default), and a task-queue progress bar inside the work bubble.'
+  zh: '破壳在 DSH 里的桌宠增强版：定时任务到点由宠物提醒，审批与提问可直接在宠物气泡里作答，弹过的事件收进 20 条记录，双击换角落、数据目录可配置、工作气泡带「第几步 · 用了多久」，忙时可「等会儿」或静音一小时；右键菜单的顺序与显隐可在设置页里调（默认「对话」在最前），工作气泡里还有一条任务队列进度条。'
+
+icon: https://raw.githubusercontent.com/cloudatlasx/dsh-pet-plus/main/dsh-pet/assets/logo.png
+tarball: https://github.com/cloudatlasx/dsh-pet-plus/releases/download/v0.15.0/dsh-pet-plus-0.15.0.tgz
