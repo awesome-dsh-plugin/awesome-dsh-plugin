@@ -1,0 +1,6 @@
+url: https://github.com/buger-gif/dsh-remote-huaweicloud-devbridge/tree/main/dsh-plugin
+name: buger-gif/dsh-remote-huaweicloud-devbridge#dsh-plugin
+category: remote
+description:
+  en: "Remote control for DeepSeek Harness over an outbound Huawei Cloud DevBridge tunnel: a sidebar seat and a standalone control page start and stop the tunnel and show its public URL, QR code and logs. The plugin's own gateway stays on 127.0.0.1, checks a rotatable access token or HMAC session cookie, rate-limits failures and strips external identity headers before forwarding to DSH, so no inbound port is opened. The tunnel is off by default; tokens and state stay under ~/.dsh. Requires a Huawei Cloud account and devbridge CLI v0.2.x. The relay terminates TLS and can see plaintext HTTP — this is access control, not end-to-end encryption."
+  zh: "把本机 DSH 的 Web 界面经华为云 DevBridge 出站隧道交给远端设备远控：侧边栏席位与独立控制页负责开启、停止隧道，并显示公网链接、二维码与日志。插件自带的鉴权网关只监听 127.0.0.1，转发前校验可轮换的访问令牌或 HMAC 会话 Cookie、限制失败次数并剥离外部身份头，因此不开放任何入站端口。隧道默认关闭，令牌与状态只留在本机 ~/.dsh。需要华为云账号与 devbridge CLI v0.2.x。中继会终止公网 TLS，能看到到达网关的明文 HTTP——这是访问控制，不是端到端加密。"
