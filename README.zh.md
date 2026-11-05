@@ -663,6 +663,7 @@ dsh plugin --profile web add dshmarket
 - [gezi-wen/sage-reminder](https://github.com/gezi-wen/sage-reminder) — DSH 会话头部的时间模块：现在时间、距你上次发言、提醒与倒计时。纯前端插件——数据存浏览器 localStorage，host 半不注册任何东西；到点提示是边框呼吸灯加界面浮条，不发系统通知。
 - [gf691271/dsh-quote-reply](https://github.com/gf691271/dsh-quote-reply) — 选中对话里的文字就地引用回复，问答变成输入框上方的方块，一次发出。
 - [gghyoo/dsh-download-image](https://github.com/gghyoo/dsh-download-image) — 在 DSH Web UI 的助手消息复制按钮旁增加一个下载 PNG 按钮。
+- [Ghidorahchaos/dsh-cherry-quote](https://github.com/Ghidorahchaos/dsh-cherry-quote) — 划选 DSH 消息中的文字，右键引用为输入框里的蓝色小块；悬停查看全文，点 ✕ 或按 Backspace 删除；发送后引用以 blockquote 原文交给模型。
 - [giiiiiithub/terminal](https://github.com/giiiiiithub/terminal) — DSH Web UI 终端面板：宿主端 node-pty 真实 PTY（Windows 默认 cmd.exe）+ 浏览器 xterm.js 渲染；多标签会话、停靠/浮动窗口、复制粘贴。
 - [GinoXiang/dsh-dailyboard](https://github.com/GinoXiang/dsh-dailyboard) — DailyBoard 是 DSH Web GUI 的日常工作任务板：单月日历（彩色时间条 + 当天任务）、日常清单、七天周视图（勾选完成、可拖动改期）与可拖拽的 24 小时时间轴，支持按天记录的有序子任务、按周几或每隔几天的周期任务及每次出现的结果记录、从日历标题栏打开的长期任务进展视图、长期任务按天完成标记、可从已添加的其他收件邮箱中选择（显示备注与邮箱）的「给他人」任务、可推到微信并提醒他人（如合作伙伴或亲属）的每日邮件提醒（每个其他收件邮箱可填备注和单独发送时间），以及 AI 自然语言提取任务。
 - [GinoXiang/dsh-output-style](https://github.com/GinoXiang/dsh-output-style) — 输出风格：输入框里两个分体控件（沟通基调、产出形态各带独立开关与预设菜单），按会话注入系统提示词，并带预设管理设置页。
