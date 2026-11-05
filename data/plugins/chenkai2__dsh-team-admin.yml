@@ -2,5 +2,5 @@ url: https://github.com/chenkai2/dsh-team-admin
 name: chenkai2/dsh-team-admin
 category: session
 description:
-  en: 'Management panel for Agent Teams: pick any session, inspect its teammates, and delete a role together with its persisted session — the session directory moves to a trash folder, so it can be restored.'
-  zh: '智能体团队管理面板：选任意会话查看成员，并把某个角色连同它的持久会话一起删除（会话移入回收站，可恢复）。'
+  en: 'Agent Teams management for the DSH Web GUI: inspect the teammates of any session, delete a role together with its session (the session folder moves to a recoverable trash), reclaim the freed member slot, keep deleted members out of the subagent picker and the team roster, and restore a read-only members panel in the session header on 0.2.2-rc.1+ — works with both the old and the new Agent Teams implementations without patching DSH.'
+  zh: 'DSH Web GUI 的智能体团队管理：查看任意会话的成员，删除角色及其持久会话（目录移入回收站，可恢复），回收释放的成员名额，让已删除成员不再出现在子智能体选择器与团队面板，并在 0.2.2-rc.1+ 恢复会话页头的只读成员面板；新旧两版智能体团队实现都能用，不需要改 DSH 源码。'
