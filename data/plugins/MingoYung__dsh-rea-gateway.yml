@@ -1,7 +1,7 @@
 url: https://github.com/MingoYung/dsh-rea-gateway
 name: MingoYung/dsh-rea-gateway
 category: tools
-tarball: https://github.com/MingoYung/dsh-rea-gateway/releases/download/v0.1.1/dsh-rea-gateway-0.1.1.tgz
+tarball: https://github.com/MingoYung/dsh-rea-gateway/releases/download/v0.1.2/dsh-rea-gateway-0.1.2.tgz
 description:
-  en: 'Fork of kirkchinese/dsh-capability-catalog 0.1.4 (cannot be installed alongside the upstream capability catalog / @kirkchinese/dsh-rea): a REA-focused MCP gateway with three fixed search, describe and call tools, cached schemas, session controls and native DSH result handling. Requires DSH 0.2.1-rc.4 and a Node/npm setup able to run REA.'
-  zh: '派生自 kirkchinese/dsh-capability-catalog 0.1.4（不能与上游能力目录 / @kirkchinese/dsh-rea 同装）：为 REA 提供按需 MCP 网关，通过三个固定的检索、参数查看与调用入口访问缓存工具定义，支持会话开关并复用 DSH 原生结果处理。需要 DSH 0.2.1-rc.4，以及能运行 REA 的 Node/npm 环境。'
+  en: 'Fork of kirkchinese/dsh-capability-catalog 0.1.4 (cannot be installed alongside the upstream capability catalog / @kirkchinese/dsh-rea): a REA-focused MCP gateway with three fixed search, describe and call tools, cached schemas, session controls and native DSH result handling. Requires DSH 0.2.1-rc.4 or 0.2.2-rc.1 and a Node/npm setup able to run REA.'
+  zh: '派生自 kirkchinese/dsh-capability-catalog 0.1.4（不能与上游能力目录 / @kirkchinese/dsh-rea 同装）：为 REA 提供按需 MCP 网关，通过三个固定的检索、参数查看与调用入口访问缓存工具定义，支持会话开关并复用 DSH 原生结果处理。需要 DSH 0.2.1-rc.4 或 0.2.2-rc.1，以及能运行 REA 的 Node/npm 环境。'
