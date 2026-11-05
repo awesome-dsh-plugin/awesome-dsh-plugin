@@ -1,5 +1,5 @@
-url: https://github.com/Aliang-code/dsh-fusion-lean
-name: Aliang-code/dsh-fusion-lean
+url: https://github.com/Aliang-code/dsh-fusion-lean/tree/master/packages/fusion-lean
+name: Aliang-code/dsh-fusion-lean#fusion-lean
 category: tools
 description:
   en: "Fusion 360 for DSH: bridges the MCP server Fusion ships (read, execute, update, electronics) with every upstream schema kept byte-for-byte while the always-on tool surface drops 70 percent, adds an editable endpoint under Settings, and wraps a local hf.py modelling loop as six hf_* tools."
