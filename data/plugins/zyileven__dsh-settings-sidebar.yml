@@ -2,7 +2,7 @@ url: https://github.com/zyileven/dsh-settings-sidebar
 name: zyileven/dsh-settings-sidebar
 category: ui
 description:
-  en: Show or hide sidebar panel entries and add shortcuts to Settings sections.
-  zh: 控制侧边栏功能菜单的显示，并为设置页面添加快捷入口。
+  en: Show or hide sidebar menu and panel entries, and add jump shortcuts to Settings sections.
+  zh: 侧栏菜单管理：显示或隐藏侧栏菜单与侧边栏面板入口，并为设置页面添加快捷跳转。
 icon: https://raw.githubusercontent.com/zyileven/dsh-settings-sidebar/main/assets/icon-256.png
 tarball: https://github.com/zyileven/dsh-settings-sidebar/releases/download/v1.3.0/dsh-settings-sidebar.tgz
