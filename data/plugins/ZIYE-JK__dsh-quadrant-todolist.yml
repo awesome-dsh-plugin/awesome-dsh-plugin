@@ -1,0 +1,6 @@
+url: https://github.com/ZIYE-JK/dsh-quadrant-todolist
+name: ZIYE-JK/dsh-quadrant-todolist
+category: workflow
+description:
+  en: Four-quadrant todo manager in the DSH sidebar with month and week calendar views, per-period completion statistics, system and Feishu notifications, and recurrence rules including Chinese statutory workdays and the Ebbinghaus curve.
+  zh: DSH 侧栏的四象限待办管理器，带月/周日历视图、周期完成率统计、系统与飞书通知，以及中国法定工作日和艾宾浩斯记忆曲线等重复规则。
