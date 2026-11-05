@@ -3743,7 +3743,7 @@ dsh plugin --profile web add dshmarket
 - [shuiqian520/dsh-session-delete](https://github.com/shuiqian520/dsh-session-delete) — 在侧栏会话行的「…」菜单里永久删除单个会话;也可从侧栏标题旁的「⋯」菜单进入批量删除:在列表里勾选会话(运行中的不能删),再在确认弹窗里一次删掉 —— 会话日志、工作区归属、宿主内存实例、客户端列表行一并清理。同一个「⋯」菜单还收着会话搜索与视图选项;另可清理日志已不存在的残留行,用户消息与 AI 回复的复制按钮右侧各有「重试」。
 - [SilenZerOrz/obsidian-dsh-acp](https://github.com/SilenZerOrz/obsidian-dsh-acp) — 在 Obsidian Agent Client（及其他 ACP 客户端）里驱动 DeepSeek Harness 的 ACP 适配器：会话 list / resume / fork / delete、按会话切换模型、一句话摘要预览、导入外部 ACP 会话，并可把 Obsidian 侧会话拉进 dsh 原生会话库。需 DSH >= 0.1.5-rc.3。
 - [Sillykjs/dsh-share-import](https://github.com/Sillykjs/dsh-share-import) — 把公开的 DeepSeek 或豆包对话分享链接导入 DSH 工作区，成为一个静态、可续聊的会话。
-- [SiriLee/dsh-rewind](https://github.com/SiriLee/dsh-rewind) — 同一会话窗口内的 in-place 对话回退（不 fork，Claude Code /rewind 语义）：每条消息的 ↶ 按钮把模型上下文回退到任意用户消息，可选用磁盘持久化的 before-backups 还原工作区文件。
+- [SiriLee/dsh-rewind](https://github.com/SiriLee/dsh-rewind) — 对话回退：一键回到任意更早的用户消息，同窗口内完成，不新建分支、不残留副本；目标消息自动填回输入框，可一并还原工作区文件——即完整的 Claude Code /rewind 语义。
 - [Sirius-rocco/dsh-agent-context-hub](https://github.com/Sirius-rocco/dsh-agent-context-hub) — 把本机所有 agent 的会话历史合并成一份按项目分组的只读索引，并附一块只追加的共享上下文板，让换 agent 时不丢结论。
 - [SkanderBog/dsh-context-manager](https://github.com/SkanderBog/dsh-context-manager) — 预览会话上下文，按对话分组选择保留、摘要或省略，确认后通过 Harness 会话服务持久化压缩结果。
 - [Sky-lll27/DSH-chat-keeper](https://github.com/Sky-lll27/DSH-chat-keeper) — DSH 对话管家：跨工作区总表与批量归档、正文搜索，以及可恢复的回收站式删除。
