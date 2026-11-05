@@ -1,0 +1,6 @@
+url: https://github.com/WilShi/dsh-coding-agents
+name: WilShi/dsh-coding-agents
+category: dev
+description:
+  en: 'Drive locally installed Codex CLI and Claude Code from DeepSeek Harness through a settings page and agent tools, exposing their sessions, configuration and run state.'
+  zh: 在 DeepSeek Harness 中驱动本机安装的 Codex CLI 与 Claude Code，通过设置页与 agent 工具查看会话、配置和运行状态。
