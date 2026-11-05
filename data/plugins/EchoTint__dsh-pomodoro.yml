@@ -1,0 +1,7 @@
+url: https://github.com/EchoTint/dsh-pomodoro
+name: EchoTint/dsh-pomodoro
+category: ui
+description:
+  en: 'Pomodoro timer with a sidebar workspace, independent desktop widgets, task tracking, focus statistics, and WebDAV/S3 backups. Desktop widgets require a separate Electron runtime.'
+  zh: '番茄钟侧栏工作台与独立桌面悬浮窗，支持任务、专注统计和 WebDAV/S3 备份。桌面悬浮窗需另备 Electron 运行时。'
+tarball: https://github.com/EchoTint/dsh-pomodoro/releases/download/v0.1.0/dsh-pomodoro.tgz
