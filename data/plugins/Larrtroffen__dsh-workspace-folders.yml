@@ -2,7 +2,7 @@ url: https://github.com/Larrtroffen/dsh-workspace-folders
 name: Larrtroffen/dsh-workspace-folders
 category: ui
 description:
-  en: 'Folder organization for the DeepSeek Harness sidebar: display-only Workspace folders (drag Workspaces in or out, nest and re-order folders, collapse with counts), durable per-Workspace nested Session folders, and per-row icons chosen from 40 host icons or 48 emoji.'
-  zh: '给 DeepSeek Harness 侧边栏加原生手感的文件夹组织：纯显示的工作区文件夹（拖拽归档、嵌套、排序、折叠），每个工作区独立且持久化的多层会话文件夹，以及 40 个原生图标 + 48 个 Emoji 的逐行图标自定义。'
+  en: 'Folder organization for the DeepSeek Harness sidebar: display-only Workspace folders (drag a Workspace onto a folder block to file it, nest and re-order folders, collapse with counts), durable per-Workspace nested Session folders, and per-row icons chosen from 40 host icons or 48 emoji.'
+  zh: '给 DeepSeek Harness 侧边栏加原生手感的文件夹组织：纯显示的工作区文件夹（把工作区拖到文件夹整块区域即可归档、嵌套、排序、折叠），每个工作区独立且持久化的多层会话文件夹，以及 40 个原生图标 + 48 个 Emoji 的逐行图标自定义。'
 icon: https://raw.githubusercontent.com/Larrtroffen/dsh-workspace-folders/main/icon-96.png
-tarball: https://github.com/Larrtroffen/dsh-workspace-folders/releases/download/v1.0.0/dsh-workspace-folders.tgz
+tarball: https://github.com/Larrtroffen/dsh-workspace-folders/releases/download/v1.0.1/dsh-workspace-folders.tgz
