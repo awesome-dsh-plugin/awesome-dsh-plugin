@@ -1,0 +1,6 @@
+url: https://github.com/Limtide/dsh-agent-lab
+name: Limtide/dsh-agent-lab
+category: dev
+description:
+  en: Records a session as a run, replays it in an isolated workspace copy with another model or prompt, diffs the two trajectories side by side, aggregates runs into a task × variant matrix, and gates regressions with task assertions and a CI exit code.
+  zh: 把会话录成运行，在隔离副本里换模型或提示词重放，逐行对比两次轨迹，把多次运行聚合成任务 × 变体矩阵，并用任务断言与 CI 退出码做回归门禁。
