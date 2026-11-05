@@ -1562,6 +1562,7 @@ dsh plugin --profile web add dshmarket
 - [UndeadSheep/dsh-file-preview#dsh-file-preview](https://github.com/UndeadSheep/dsh-file-preview/tree/main/packages/dsh-file-preview) — Web 客户端悬浮文件预览窗：懒加载文件树、CodeMirror 预览与窗内编辑保存、Markdown 与图片预览、Quick Open 搜索，以及点击会话中的路径直接打开。
 - [UniMars/dsh-whale-widget-dock](https://github.com/UniMars/dsh-whale-widget-dock) — 让 dsh-whale-widget 桌宠紧贴右侧栏边缘：展开时贴其左缘、折叠时贴窗口右缘，右栏改宽时实时跟随，开关在挂件菜单里。
 - [UnknowCao/dsh-dock](https://github.com/UnknowCao/dsh-dock) — DeepSeek Harness 的 Windows 桌面启动器：一键鲸鱼图标 + 侧栏「更多」菜单（设置 / 重启/刷新 / 优雅完全退出），冷启动卡片支持可滚动的多 DSH 候选选择。
+- [uoiszero/dsh-photo-picker#plugin](https://github.com/uoiszero/dsh-photo-picker/tree/main/plugin) — DSH 本机照片挑选工作台：本地去重、过滤与分组，AI 网格粗筛与评分，并支持人工复核、校准与导出。
 - [Utmotc/dsh-balance-card](https://github.com/Utmotc/dsh-balance-card) — 在当前会话所用模型的厂商 API 余额，以 dsh Web 侧边栏卡片常驻展示，含每套餐进度条、货币/积分单位区分、设置页，以及订阅与积分额度监测。
 - [vamyane/dsh-brain-viewer](https://github.com/vamyane/dsh-brain-viewer) — 把 Markdown 笔记编译成脑形关系图谱的 DSH 侧栏查看器，附带文档导入与图谱构建管线。查看器自带演示数据、无需 Python；用自己的笔记重建图谱需要 Node.js 20+ 与 Python 3.8+，在命令行里运行。
 - [VanlxyG/dsh-hover-sidebar](https://github.com/VanlxyG/dsh-hover-sidebar) — Windows 桌面版与 Web 左侧栏悬停展开、移开收起，支持手动固定、自定义延迟和减少动态效果。
@@ -4572,6 +4573,7 @@ dsh plugin --profile web add dshmarket
 - [CaiMingshen/dsh-icloud-calendar](https://github.com/CaiMingshen/dsh-icloud-calendar) — 通过 CalDAV 读写苹果 iCloud 日历，提供五个工具：列出日历、按时间窗读取并展开重复日程、创建事件，以及先干跑、按对象数确认后再删除。凭据保存在 DPAPI／钥匙串／libsecret 或环境变量中。
 - [caishzh/dsh-hot-search](https://github.com/caishzh/dsh-hot-search) — 活在宿主进程里的常驻检索索引：hot_find（文件名与路径模糊匹配，带 frecency 与 git 状态）、hot_fuzzy（内容检索，中文错字也能命中）、hot_grep（字面与正则内容检索）、hot_plan（按文件聚合命中，便于排批量阅读顺序）与 hot_stats。一份内存行索引只建一次、按需重建，单次查询不启动进程。
 - [CARVIN94/dsh-router-ext-rtk](https://github.com/CARVIN94/dsh-router-ext-rtk) — dsh-router 的 RTK(Rust Token Killer)扩展插件：把每次 bash 工具调用经 `rtk rewrite` 改写，让 agent 读到压缩后的命令输出；rtk 缺失或无等价改写时原样执行。
+- [cat-Logan/dsh-rayburst](https://github.com/cat-Logan/dsh-rayburst) — 把 DeepSeek Harness 的下载交给 Rayburst（aria2 引擎），提供 rayburst_download、rayburst_wait、rayburst_status 三个工具。
 - [CAT0998/dsh-ai-cursor](https://github.com/CAT0998/dsh-ai-cursor) — 给 AI 的第二只光标加一个浮动控制面板，可调透明度、颜色、大小与提示显隐，并按只能由人提高的权限等级限制它；从不移动你的真实鼠标指针。
 - [cayan0x/Lume](https://github.com/cayan0x/Lume) — DSH Desktop 人设与记忆插件：从聊天记录、小说、剧本或设定文档蒸馏角色；支持长期与临时记忆、风格学习、认可语料、人设切换纠偏、记忆星图和角色卡导入导出。任务侧仅保留轻量工作纪律，不再注入计划、台账或动态提醒。
 - [cerebrixos-org/dsh-asimovbox](https://github.com/cerebrixos-org/dsh-asimovbox) — 通过 API 密钥认证的工具将 DeepSeek Harness 连接到 AsimovBox，用于创建、更新、渲染和完成视频。
@@ -6712,6 +6714,7 @@ dsh plugin --profile web add dshmarket
 - [3082838272n-max/dsh-mailbox](https://github.com/3082838272n-max/dsh-mailbox) — DSH 会话信箱：两间会话用文件夹互相传信，另加按小时随机调度——互递信，或主动找主人说话；每个收信人每小时限流，带 UTF-8 日志。
 - [534119219/chicheng-cron](https://github.com/534119219/chicheng-cron) — 定时任务调度器：侧栏管理界面，按 cron 表达式或间隔执行脚本、技能与 Agent 任务，支持完成后推送通知与会话归档。
 - [544244857/dsh-work-assistant](https://github.com/544244857/dsh-work-assistant) — 微信工作助理：把你交代的事记进 SQLite 任务账本，按紧急度排序，到点提醒，从笔记里抽取人物与关系，并把任务分派给独立的助手会话。自带微信机器人通道（扫码登录，仅私聊）与整页仪表盘。
+- [5yeah/Aiscribe](https://github.com/5yeah/Aiscribe) — 读取 16 个 AI 工具的本地会话记录，外加 Windows 最近文件活动，在本机生成日报或周报。
 - [643048695/dsh-egm](https://github.com/643048695/dsh-egm) — 动工前的设计评审闸门：大象代理写设计图纸，零上下文金鱼子代理按固定角色挑刺，你拍板后才开始实现。
 - [778672151/my-fullstack-journey#align-mode](https://github.com/778672151/my-fullstack-journey/tree/main/align-mode) — 交付对齐模式：AI 通过 align_deliver 工具一次只交付一块，每块直接落盘、你可以就地在文件里改，AI 重读你的版本后再继续；方向错了可带时间戳备份安全返工。
 - [7bder/dsh-plugin-orchd](https://github.com/7bder/dsh-plugin-orchd) — 把 orchd 项目状态带进 DSH 右侧栏的只读面板：任务看板、想法看板、依赖图、审查时间线与接入入口，只跟当前会话的项目。
