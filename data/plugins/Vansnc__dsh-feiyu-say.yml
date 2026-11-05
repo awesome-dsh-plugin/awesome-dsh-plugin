@@ -1,0 +1,6 @@
+url: https://github.com/Vansnc/dsh-feiyu-say
+name: Vansnc/dsh-feiyu-say
+category: voice
+description:
+  en: 'Send QQ voice messages from DeepSeek Harness: local CosyVoice synthesis with optional RVC voice conversion, switchable voice presets, model download, and a per-turn voice hint.'
+  zh: '给 DSH 发 QQ 语音条：本机 CosyVoice 合成 + 可选 RVC 换声、多声线切换、模型下载、每轮语音提示。'
