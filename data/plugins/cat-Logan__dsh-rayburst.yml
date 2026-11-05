@@ -1,0 +1,6 @@
+url: https://github.com/cat-Logan/dsh-rayburst
+name: cat-Logan/dsh-rayburst
+category: tools
+description:
+  en: "Adds three tools that hand DeepSeek Harness downloads to the Rayburst aria2 engine — rayburst_download, rayburst_wait and rayburst_status."
+  zh: "把 DeepSeek Harness 的下载交给 Rayburst（aria2 引擎），提供 rayburst_download、rayburst_wait、rayburst_status 三个工具。"
