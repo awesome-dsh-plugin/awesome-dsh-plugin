@@ -3669,6 +3669,7 @@ dsh plugin --profile web add dshmarket
 - [ljp888/dsh-session-delete-next](https://github.com/ljp888/dsh-session-delete-next) — 在侧栏会话菜单中加入「删除会话」，永久删除该会话的本地记录；正在运行的会话会被拒绝。
 - [LLL-lyh0/dsh-continue-guard](https://github.com/LLL-lyh0/dsh-continue-guard) — 在输入框停靠区加一个「继续」按钮，并在某一轮被断网或上游输出超限截断时自动续跑。常驻的链路监测每 10 秒问一次网络是否回来（链路恢复本身不发任何事件），而一个正常跑完的回合会被当作链路可用的证据。点击走宿主真实的提交链路（beginSubmission + session.prompt），消息带的是真实用户署名而不是伪造来源，真实拒绝会被如实报告而不是重试。宿主重启时还会扫描最近的会话日志，同时识别「宿主半路走了」的两种指纹：回合没关，以及被 disposed 关掉的回合（正常关闭宿主写下的正是这一种）。用户自己按过停止的回合永不续跑。
 - [lloggc-Dante/dsh-conversation-manager](https://github.com/lloggc-Dante/dsh-conversation-manager) — 在侧栏会话菜单加入红色「删除对话」，并支持多选批量删除（二次确认），永久清除对话的磁盘数据——会话目录与日志、投影缓存记录、工作区归属与置顶。
+- [lloydzhou/dsh-smart-compaction](https://github.com/lloydzhou/dsh-smart-compaction) — 缓存优先的上下文压缩，提供可选的自适应经济策略，默认仅观察，不保证缓存命中或费用节省。
 - [lolipop-1x1/dsh-recap](https://github.com/lolipop-1x1/dsh-recap) — 通过 /recap 或闲置触发回顾当前 DeepSeek Harness 会话，支持配置模型、中英文输出，并在对话内展示可展开的摘要。
 - [loonai321/dsh-humanized-deepseek-maid](https://github.com/loonai321/dsh-humanized-deepseek-maid) — 为 DSH 添加可配置的女仆鲸鱼娘人格：沉浸式扮演（称呼/自称/说话方式）、防出戏规则，以及借鉴 ALTM 的轻量分层记忆与按需召回。
 - [dsh-loulan-rules](https://github.com/loulangogogo/dsh-plugins-loulan/tree/main/packages/rules) — 在首次 agent pre-step 读取 $DSH_HOME/rules 与 <cwd>/.dsh/rules 下的规则文件并注入会话，被 compaction 遮蔽后自动补回。
@@ -4833,6 +4834,7 @@ dsh plugin --profile web add dshmarket
 - [Islulua/dsh-code-navigator#code-navigator](https://github.com/Islulua/dsh-code-navigator/tree/main/packages/code-navigator) — 为 DeepSeek Harness 提供持久化的 C/C++、Python 和 TypeScript 定义跳转及独立工作区界面。
 - [iStarryDust/dsh-prompt-enhance](https://github.com/iStarryDust/dsh-prompt-enhance) — 增强提示词：点击发送框的星形按钮，用当前模型把草稿改写得更清晰，可一键切回原文；模板可编辑。
 - [it-glen/dsh-mcp-manager](https://github.com/it-glen/dsh-mcp-manager) — 面向 DSH 的 MCP 服务器管理器：在面板中增删改、启用或停用 Model Context Protocol 服务器，支持 stdio 与 streamable-HTTP 两种传输、按服务器设置工具调用超时、实时查看连接状态与工具数量，并持久化到项目级或主目录的 mcp.json。@wingsky-1/dsh-mcp-manager 的维护分支。
+- [iTanzhao/dsh-d365-kit](https://github.com/iTanzhao/dsh-d365-kit) — 面向 Dynamics 365 CE / Dataverse 的 DSH 工具箱：15 个工具，支持跨环境查询元数据与解决方案层、快照与差异、字段影响面反查、迁移风险评估、GitLab MR 检查、契约漂移、环境健康，以及需人工确认的元数据写入。
 - [izwarm195/dsh-net-tools](https://github.com/izwarm195/dsh-net-tools) — 让沙箱里的 agent 通过你的本地代理联网：net_fetch 抓取网页，net_proxy_status 查看代理状态。
 - [Jamailar/beav-deepseek-harness](https://github.com/Jamailar/beav-deepseek-harness) — 将 DSH 连接到本机 Beav，面向小红书（RED/RedNote）、社交媒体运营和自媒体 AI 创作，覆盖选题研究、知识库、文案、图片、音频与短视频工作流，并保留审批和产物追踪。
 - [James-web11/dsh-matlab-mcp](https://github.com/James-web11/dsh-matlab-mcp) — 把 MathWorks MATLAB/Simulink MCP 服务器注册进 dsh profile，让会话获得 mcp__matlab__* 工具，用于运行 MATLAB 代码以及读取、编辑与测试 Simulink 模型。
@@ -6971,6 +6973,7 @@ dsh plugin --profile web add dshmarket
 - [liyangyu001-hue/dsh-work#plugin](https://github.com/liyangyu001-hue/dsh-work/tree/main/packages/plugin) — 维护带逐步状态的任务树并通过 HTTP/SSE 对外提供，Windows 原生节点图可以逐颗审阅。安装包只含宿主与网页两部分，Windows 节点图需自行编译。
 - [ljsysfurryACE/dsh-aura-scheduler](https://github.com/ljsysfurryACE/dsh-aura-scheduler) — 主动调度：自适应心跳 + 价值网络（紧迫度、相关性、打断代价）决定 Agent 何时主动开口。
 - [lkshjd/dsh-debate](https://github.com/lkshjd/dsh-debate) — DeepSeek Harness 多 agent 隔离辩论：不同底色的辩手各自独立联网取证（互不可见防人云亦云）、交叉辩论互相反驳、评审收敛出结论。后台 job 运行，逐 agent 进度可见、token 统计、波次并行、断点续传。
+- [lloydzhou/dsh-subagent-codebuddy](https://github.com/lloydzhou/dsh-subagent-codebuddy) — 通过 ACP 调用本机 CodeBuddy CLI 的外部一次性子智能体提供者，支持后台结果回传及向运行中的子智能体追加指令。
 - [lonelymoon87/dsh-specflow](https://github.com/lonelymoon87/dsh-specflow) — 增加规格工件、技能、命令、由 goal 驱动的实施流程和任务进度上下文。
 - [Long-Yin-Zi/dsh-task-decision](https://github.com/Long-Yin-Zi/dsh-task-decision) — 把 AI 每轮回复里的待决问题收进右侧边栏，选完选项、写完备注后一次性提交回对话。
 - [LongerWu2026/dsh-dev-workbench](https://github.com/LongerWu2026/dsh-dev-workbench) — 智能工作台，集成可停止的AI助手、后台模型独立配置、待办与回复跟进、Linky研发、知识检索、本地搜索及开发工具；可选本地向量需下载模型，云之家需账号及CLI，多AI对话需桌面端。
