@@ -7071,6 +7071,7 @@ dsh plugin --profile web add dshmarket
 - [omdsh-dev/dsh-deep-research](https://github.com/omdsh-dev/dsh-deep-research) — 自适应深度研究编排器（基于官方 workflow 引擎）。
 - [omdsh-dev/dsh-inspect](https://github.com/omdsh-dev/dsh-inspect) — 发现问题→修复交付→质量复查的对抗式闭环工具集。
 - [onesmash/dsh-reflex](https://github.com/onesmash/dsh-reflex) — 给 DS Bot 的反射弧：作为兄弟插件运行、不改 ds-bot，用低成本层持续采集事实并在本地决策模型上打分，只有越过阈值时才唤醒 Bot 的推理层。
+- [orion-nebula-dev/dsh-Dynamic-Workflow](https://github.com/orion-nebula-dev/dsh-Dynamic-Workflow) — 使用 /workflow 运行 JSON 工作流，查看进度、选择 Agent 模型、复用已有会话继续执行，并通过有次数上限的独立审查与修复控制交付。
 - [orziz/odai#odai-dsh-plugin](https://github.com/orziz/odai/tree/main/dsh/plugin) — 面向整个 DSH profile 的治理与路由 bundle，提供用于职责与证据检查的 Web Control Center，以及压缩、本地作用域语义记忆、安全连续性与真实验收；兼容 DSH 0.1.5-rc.1。
 - [OTTTTTO/dsh-scheduled-send](https://github.com/OTTTTTO/dsh-scheduled-send) — 定时发送：到点将拟好的消息以正常用户气泡发送到绑定的会话。调度在服务端执行，关闭浏览器不影响发送；会话隔离、重启自动补发。
 - [oxmumu3/ai-twin-starter](https://github.com/oxmumu3/ai-twin-starter) — 原生分身工作台：选择项目资料、蒸馏并试跑能力候选、配置有范围的 Slack 访问，查看审批与持久任务。
