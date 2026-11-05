@@ -1,0 +1,14 @@
+url: https://github.com/puppy-bai/dsh-quota-takeover
+name: puppy-bai/dsh-quota-takeover
+category: model
+description:
+  en: >-
+    Quota takeover for DeepSeek Harness on top of Our Free Model: compiles your
+    platform order and pinned model tiers into one ordered fallback chain,
+    skipping platforms that lack the model, sit in cooldown or are out of quota,
+    writes the result back as Our Free Model combos, and after a quota or
+    rate-limit failure re-plans and injects a follow-up continue message into
+    the interrupted session so the turn resumes on the next platform; the chain
+    ends with your configured aggregate fallback model or the official DeepSeek
+    quota.
+  zh: 额度接力：在 Our Free Model 之上按你设定的平台顺序与模型档编排一条有序接力链，缺该模型、平台冷却、额度耗尽的格子自动跳过，结果写回 OFM 的 combos；因额度或限流中断后重新编排并向中断的会话补一条「继续」，让回合在下一个平台接着跑，链尾可选聚合渠道兜底模型或 DeepSeek 官方额度。
