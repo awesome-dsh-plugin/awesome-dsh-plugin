@@ -1884,7 +1884,7 @@ dsh plugin --profile web add dshmarket
 - [zhubaohi/dsh-gpu-pulse](https://github.com/zhubaohi/dsh-gpu-pulse) — DSH Web 界面内置的悬浮 GPU 监控：紧凑可拖动的条带，每张独立 GPU 一行（精确名称、利用率、显存、温度、功耗），数据来自 nvidia-smi；侧边面板或侧边卡片打开时保持在最上层；驱动支持时还列出显存占用最高的进程；无 NVIDIA 驱动的机器会退化为 n/a 胶囊。
 - [zhuifengqug/dsh-adaptive-reasoning](https://github.com/zhuifengqug/dsh-adaptive-reasoning) — 炭灰余烬风格的 DSH Web 像素推理强度滑块：以近黑木炭、暗红裂纹和橙红高温核心呈现 4px 像素化 WebGL 火焰，拖动时逐档点燃；支持 0–100 无极拖动、16ms 节流写入与松手吸附。
 - [zhujiuyi/dsh-leftpanel](https://github.com/zhujiuyi/dsh-leftpanel) — 列出所有可以出现在左侧菜单里的功能，并在设置中逐个隐藏或显示面板入口。
-- [zhuran305-web/dsh-cet-vocab](https://github.com/zhuran305-web/dsh-cet-vocab) — 四六级背单词悬浮窗，模型思考时随手背：窗口可拖动、可最小化并记住位置；内嵌 ECDICT 提取的 5805 词；翻卡三键评分（认识/模糊/不认识）与形近词干扰的选择题两种模式；艾宾浩斯间隔复习，配到期复习与加练；每日新词数可调；发音取在线词典的真人美式与英式录音，断网时回落本地文字转语音；可开启「会话运行时自动弹出」。进度与窗口位置保存在浏览器配置里。
+- [zhuran305-web/dsh-cet-vocab](https://github.com/zhuran305-web/dsh-cet-vocab) — 四六级背单词悬浮窗：窗口可拖动、可最小化并记住位置；内嵌 ECDICT 提取的 5805 词；翻卡三键评分与形近词干扰的选择题；艾宾浩斯间隔复习、到期复习与加练；每日新词数可调；在线真人美/英发音，断网回落本地 TTS。v0.2.4 新增「循环朗读」（只读单词/词+翻译/词→译→词，例句来自词典 API 与 Tatoeba 语料双渠道）、「斩单词」（斩掉的词转入低频维护池，按 15/30/60 天抽查并可召回，不删除不毕业）、维护抽查角标，以及界面精修（设计令牌统一、减少重复边框、统一焦点与按压反馈、支持减少动态效果）。进度与窗口位置保存在浏览器配置里，更新不会覆盖。
 - [zhuran305-web/dsh-feedback-combined](https://github.com/zhuran305-web/dsh-feedback-combined) — 一键点赞/点踩反馈 UI，评分摘要自动注入模型上下文。
 - [zhxnix/dsh-madedown](https://github.com/zhxnix/dsh-madedown) — DSH 右侧栏的所见即所得 Markdown 笔记编辑器，支持多标签、表格编辑、对话联动、模型读写与保存到本地文件。
 - [zhxnix/dsh-sidebar-annotations](https://github.com/zhxnix/dsh-sidebar-annotations) — 为 DSH 提供网页与小程序元素注释、折叠注释附件及源码定位。
@@ -3793,6 +3793,7 @@ dsh plugin --profile web add dshmarket
 - [sailoumili/dsh-session-remover](https://github.com/sailoumili/dsh-session-remover) — 在侧栏会话行菜单中增加「删除对话」与「批量删除」；删除的对话及其子代理会话移入 Windows 回收站，可从回收站还原。
 - [SaiSenBox/dsh-prompt-manager](https://github.com/SaiSenBox/dsh-prompt-manager) — 浏览器本地提示词库：在输入框选择器中同时注入多条会话级系统提示词，支持分支继承、中英界面、收藏与 JSON 备份。
 - [SaiSenBox/dsh-web-bridge](https://github.com/SaiSenBox/dsh-web-bridge) — 在 DSH 内浏览和继续 DeepSeek 网页会话，或将历史与附件导入工作区。
+- [Saolence/dsh-restart-handoff](https://github.com/Saolence/dsh-restart-handoff) — 改动需要重启时自动重启 DSH 桌面宿主，重启后把模型写的交接话（为什么重启、下一步做什么）投回原会话继续。
 - [sbearbug/dsh-highlightpin](https://github.com/sbearbug/dsh-highlightpin) — 把已定稿的用户或助手消息里划选的一段原文钉住，让它在上下文压缩后仍留在模型输入中：每枚钉子默认按需补回，也可改为 resident（中性常驻系统提示词）或 highlight（强调常驻）。选区会以 source-exact、source-normalized 或 rendered 三级保真对回源文本，三个级别各有独立的字符预算。
 - [scottzx/session-reader](https://github.com/scottzx/session-reader) — 通过 1session 命令行或 DSH Web 历史浏览器搜索和读取 Claude Code、Codex、Antigravity、Grok 与 DSH 的本地编程会话。
 - [sdlhs/dsh-interject](https://github.com/sdlhs/dsh-interject) — 把排队中的消息提前到下一个 step 边界送达，而不是等整个 turn 结束；默认不打断已经在跑的模型调用，打断是显式开启的模式。
