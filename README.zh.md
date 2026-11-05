@@ -273,6 +273,7 @@ dsh plugin --profile web add dshmarket
 - [Alone-show/dsh-quick-keys](https://github.com/Alone-show/dsh-quick-keys) — DSH Web 输入框的两个操作：斜杠菜单里的 /new 新建对话且不向模型发送任何内容，对话区按 Shift+Tab 切换计划模式。
 - [AloneFu/dsh-calendar-plugin](https://github.com/AloneFu/dsh-calendar-plugin) — DSH 右侧栏里的 Obsidian 日记、待办与 Day Planner 时间块：周一起始的月历（带每天的字数点与任务点）、紧凑时间轴（HH:mm 时间块）、选中日的日记摘要与任务列表；勾选状态、任务内容与时间都会写回 Markdown 文件，首次使用有向导，可自动找到知识库或手填路径。
 - [altamkp/dsh-middle-click](https://github.com/altamkp/dsh-middle-click) — 在 DeepSeek Harness 的 Web 界面里，用鼠标中键关闭会话或侧边栏标签页。会话走这一行自带的归档操作，因此运行中任务的确认框和撤销通知仍由 Harness 原样渲染；标签页走自己的关闭按钮，「唯一的指南页不能关」这条规则不受影响。手势要求在同一元素上按下并松开，所以中键拖动不会误关。插件自带独立设置页，两个开关分别关闭这两项，并按浏览器记住。
+- [Altermoe/dsh-model-logos](https://github.com/Altermoe/dsh-model-logos) — 在输入框的模型选择器中显示模型品牌图标，在「设置 → 模型」页的提供商行、模型行和添加提供商下拉框中显示厂商与模型图标，并提供按提供商/模型覆盖图标的图标选择器，覆盖项保存在 DSH 用户设置文档中。
 - [altmanWang/dsh_plugin_btc_dashboard](https://github.com/altmanWang/dsh_plugin_btc_dashboard) — DeepSeek Harness 的 OKX 永续合约看板插件：BTC/ETH 的 1m/3m/15m/1h/4h/1D K 线、EMA 均线叠加、直线/斐波那契/尺子画线、收线预警（桌面通知/提示音/邮件；邮件通道需另装 dsh-qq-email 插件）与面板内回测。行情来自 OKX 公开接口，不需要 API key。
 - [AlyceStocking/hover-glossary](https://github.com/AlyceStocking/hover-glossary) — 悬停聊天消息中的术语时显示本地词库释义。
 - [amazing-fish/dsh-piano-nav](https://github.com/amazing-fish/dsh-piano-nav) — 提供完整历史轮次导航、过程步骤折叠、最终结果与结构化问答琴键，以及鼠标连续跟随交互。
@@ -325,6 +326,7 @@ dsh plugin --profile web add dshmarket
 - [AumiSatori/dsh-ui-beautify](https://github.com/AumiSatori/dsh-ui-beautify) — 自定义 DSH 玻璃材质与独立明暗主题，支持图片、视频与 HTML 背景、粒子、自定义问候与开屏、覆盖侧栏、任务与 Artifact 卡片、消息气泡、回答逐字渐显，以及配置导入导出。
 - [AvenYQ/dsh-clipforge](https://github.com/AvenYQ/dsh-clipforge) — 视频工作台：贴链接解析并下载、转写文案、截取拼接片段、按目标体积导出 GIF。需自备 ffmpeg/ffprobe 与 yt-dlp；无字幕视频的本地转写另需 whisper.cpp 与模型（可选）。
 - [AvenYQ/dsh-quiet](https://github.com/AvenYQ/dsh-quiet) — 整个窗口背后是一片灰色字符海洋：鲸群在侧栏与聊天区之间连续游动，能从一栏游进另一栏。开始对话后，生物各自向上、下、右或左侧边缘游走，海面缓缓平静，侧栏留一整片跟随内容高度的磨砂面，鲸鱼经过时只在文字背后留下模糊的影子；回到空白会话时，生物再从边缘游入。流式回复从模糊到清晰逐字浮现，开启减少动态效果时改用静态画面与原生渲染。只用中性墨色，日夜两套配色。
+- [AvenYQ/dsh-rigui](https://github.com/AvenYQ/dsh-rigui) — 侧边栏里的个人生活工作台：睡眠、饮食、运动、花销、体重、日程和待办放在同一页卡片上，彼此联动；在顶部说一句话，DSH 里配好的模型把它拆成结构化记录。记录与卡片版式只保存在本机浏览器存储里。
 - [AvigatorC/dsh-conversation-width](https://github.com/AvigatorC/dsh-conversation-width) — 把 dsh 界面的对话框固定为像素宽度或列宽百分比，设置项在「通用」设置页；锁定后隐藏内置拖动手柄，宽度不再被误拖。
 - [awaYFawa/dsh-plugins-folders](https://github.com/awaYFawa/dsh-plugins-folders) — 给 DSH 插件页加文件夹：把已装插件分组、整组开关、批量移动并可撤销、跨分组搜索、长按拖动排序，卸载后按记录一键装回，还能一键重启 Harness。
 - [AWL-MC2/DSH-Plugin_awl](https://github.com/AWL-MC2/DSH-Plugin_awl) — 面向 DSH Web 的「壁纸感知」可读性修复：用 color-mix 把三个低对比次级文字 token 向主文字靠拢，并叠加可调强度的文字光晕；提供仅作用于会话 Markdown 的内容规则（链接加粗 / 常驻下划线 / 变色、标题与正文变色）、可调的彩虹描边与渐变填充标题特效、从插件目录或 DSH_HOME 加载的自定义字体，以及带 WCAG 对比度徽标的可拖动 WYSIWYG 预览窗。
