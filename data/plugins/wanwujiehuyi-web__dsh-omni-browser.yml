@@ -1,0 +1,6 @@
+url: https://github.com/wanwujiehuyi-web/dsh-omni-browser
+name: wanwujiehuyi-web/dsh-omni-browser
+category: browser
+description:
+  en: "Drive a real Chrome and bundle the DOM, accessibility tree, HAR with response bodies, console logs, storage, screenshots, PDF and screencast into one self-contained evidence folder."
+  zh: 用真 Chrome 操控页面，并把 DOM/无障碍树/HAR+响应体/Console/存储/截图/PDF/录屏一键打包成证据目录。
