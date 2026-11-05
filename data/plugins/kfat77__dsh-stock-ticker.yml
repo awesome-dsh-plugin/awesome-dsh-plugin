@@ -1,0 +1,7 @@
+url: https://github.com/kfat77/dsh-stock-ticker
+name: kfat77/dsh-stock-ticker
+category: ui
+description:
+  en: Adds a ticker strip above the DeepSeek Harness interface that scrolls right to left, with a customizable watchlist of CN, HK and US stocks and indices, a configurable refresh interval and alert threshold, and a click-through quote card.
+  zh: 在 DeepSeek Harness 界面顶部加一条从右向左滚动的股票行情条，可自定义 A 股、港股、美股与指数的自选列表、刷新频率与涨跌提醒阈值，点击条目查看行情详情。
+icon: https://raw.githubusercontent.com/kfat77/dsh-stock-ticker/main/assets/icon-180.png
