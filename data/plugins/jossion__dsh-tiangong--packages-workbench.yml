@@ -1,5 +1,5 @@
 url: https://github.com/jossion/dsh-tiangong/tree/main/packages/workbench
-name: jossion/dsh-tiangong#workbench
+name: 天工（dsh-tiangong）
 category: workflow
 description:
   en: 'Requirement-to-delivery workbench: paste or upload a requirement, and a plan-dispatch-verify loop delivers it with child agents and test evidence.'
