@@ -4,5 +4,5 @@ url: https://github.com/siml1169/ShyPie/tree/main/plugins/dsh-privacy-gate
 name: siml1169/ShyPie#dsh-privacy-gate
 category: security
 description:
-  en: Redacts PII in every tool result before it is logged, denies read_image and binary reads, and adds privacy_extract, privacy_ocr, privacy_scan and privacy_rehydrate for local, fail-closed document conversion.
-  zh: 在工具结果写入会话日志前对其中的个人数据打码，拒绝 read_image 与二进制文件读取，并提供 privacy_extract、privacy_ocr、privacy_scan、privacy_rehydrate 四个本地、失败关闭的文档转换工具。
+  en: Redacts PII in every tool result before it is logged, denies read_image and binary reads, adds privacy_extract, privacy_ocr, privacy_scan and privacy_rehydrate for local, fail-closed document conversion, and enforces a fail-closed llm/stream egress guard before DSH dispatches any model request.
+  zh: 在工具结果写入会话日志前对其中的个人数据打码，拒绝 read_image 与二进制文件读取，提供 privacy_extract、privacy_ocr、privacy_scan、privacy_rehydrate 四个本地、失败关闭的文档转换工具，并在 DSH 发出模型请求前执行失败关闭的 llm/stream 出口检查。
