@@ -1497,6 +1497,7 @@ dsh plugin --profile web add dshmarket
 - [tcgbp/dock-flash](https://github.com/tcgbp/dock-flash) — DSH 快捷控制面板的 dock-base 工作台适配器。面板本体（开关注册表、皮肤系统、i18n、告警面、host 路由）由 `dsh-flash` 核心单独提供；本包只负责把它挂进 dock-base：侧栏/浮动面板、活动栏 ⚡、编辑器视图与 dock-flash:openQuickControl 命令。需安装 dock-base；装错时会明确报错而不是静默失效。
 - [tcgbp/dsh-flash](https://github.com/tcgbp/dsh-flash) — DSH Web 快捷控制面板核心：可独立浮动的快捷面板，开关项由其它插件通过 quickControl 服务注册，内置皮肤系统与中英文 i18n；dock-base 工作台集成由 dock-flash 适配器单独提供。
 - [TecFancy/dsh-mobile](https://github.com/TecFancy/dsh-mobile) — DSH Web 移动端适配插件：侧边栏/详情抽屉浮层化、输入栏与设置页响应式适配，桌面零回归。
+- [thanhvinh0265-art/dsh-locale-vi](https://github.com/thanhvinh0265-art/dsh-locale-vi) — 为 DeepSeek Harness Web UI 增加越南语：61 个命名空间、3,477 条人工翻译词条，在「设置 → 语言」里选中越南语即生效；另带 /vi-sync 命令，用 Harness 内置翻译服务补译新版本新增的字符串。
 - [The-latest-one/dsh-branch-workspace-folders](https://github.com/The-latest-one/dsh-branch-workspace-folders) — 非递归显式栈侧边栏分支树，支持双轨缩进解耦、平滑跑马灯与物理级联删除事务。
 - [TheGoodMorty/chat-pace](https://github.com/TheGoodMorty/chat-pace) — 可配置的聊天自动滚动——按节定速阅读（停顿时长与篇幅成比例）、平滑跟随、单步与固定模式，支持快捷键与按会话记忆打开位置。
 - [ThinkofRain1213/dsh-smooth-cursor-patched](https://github.com/ThinkofRain1213/dsh-smooth-cursor-patched) — DSH Web 输入框的彗星光标：发光拖尾随文字位置平滑滑动，可配置强调色、粗细、拖尾，并在静止 500ms 后呼吸。覆盖 ask-question 交互卡片的输入框，并修复空输入框或首次聚焦时光标消失、正向拖选不跟随鼠标、软换行按上一行测量、长内容滚动时光标绘制到输入框之外等问题。Lacquervii/smooth-cursor 的维护分支。
@@ -2763,7 +2764,7 @@ dsh plugin --profile web add dshmarket
 - [aichixiaojuzi/dsh-model-quick-switch](https://github.com/aichixiaojuzi/dsh-model-quick-switch) — 输入框里的供应商优先模型选择器：左栏列出全部供应商，右栏列出选中供应商的模型。供应商、组内模型与收藏都可用拖拽或 Alt+方向键排序；可给供应商起本地显示别名、可指定面板默认供应商；推理档位内联展开；搜索同时匹配模型名、供应商名与别名。切换走官方模型目录服务，/model 弹窗与面板始终一致。
 - [AIcivilization/dsh-model](https://github.com/AIcivilization/dsh-model) — 为 dsh 和其他软件提供一个带鉴权的 OpenAI 兼容地址（基于 CLIProxyAPI）：汇集 WorkBuddy、OpenCode Zen、本机 Ollama / LM Studio，以及 Codex、Kimi 等 CLI 订阅；在 dsh 页面上登录，不用装各家 CLI；挑选的模型按来源分组同步进 dsh。设置页提供每个来源的开关和免费 / 付费标签、套餐用量、带 24 小时统计的 API key、按来源挑选模型，以及更新和卸载。支持 macOS、Linux（含与 dsh-vps 同机部署）和 Windows。
 - [AidenOrz/dsh-workbuddy-connect](https://github.com/AidenOrz/dsh-workbuddy-connect) — 已 404 的 corrinehu/dsh-workbuddy-connect 的原地接管版，沿用原来的包名、配置行 id 与 provider id，已装用户可直接升级。同时修复 400/11128 渠道校验（归一化 DSH 身份句并清除 system 消息中的产品名），并改为读取真实的 Windows 客户端与内置 CLI 版本，不再使用编译常量，这一点与 functy、community 两个分叉不同。验证环境（2026-10-21）：Windows、WorkBuddy 5.8.3、DSH 0.2.1-rc.2。
-- [AITabby/dockyard-dsh](https://github.com/AITabby/dockyard-dsh) — DeepSeek Harness 的 macOS 原生账号池与 Provider 插件：Codex、Antigravity、Grok、Claude 与 Cursor 支持官方浏览器 OAuth，这些 Provider 与 WorkBuddy、Command Code 均走原生请求链路；读取实时模型目录、套餐与额度窗口，并支持手动、sticky session、轮询与 failover 账号选择。
+- [AITabby/dockyard-dsh](https://github.com/AITabby/dockyard-dsh) — DeepSeek Harness 的 macOS 与 Windows 原生账号池与 Provider 插件：为 Codex、Antigravity、Grok、Claude、Cursor、WorkBuddy、Command Code、Hermes 与 OpenRouter Free 提供官方浏览器 OAuth 与原生请求链路，读取按账号的模型目录、套餐与额度窗口并提供额度提醒，账号选择支持手动、sticky session、轮询、failover 与额度最充足优先。
 - [Akiyuki1130/dsh-ark-coding-provider](https://github.com/Akiyuki1130/dsh-ark-coding-provider) — 非官方火山方舟 Coding Plan 模型接入插件：注册 `ark-coding` 路由，12 个模型的容量事实逐项实测，多账户自动轮换，内置钉版 arkcli 拉官方模型目录与真实套餐额度，含设置向导与侧边栏用量卡片。
 - [AkutagawaKoyori/dsh-zcode-start](https://github.com/AkutagawaKoyori/dsh-zcode-start) — 把 Z.ai / ZCode Start Plan 额度接进 DeepSeek Harness，作为 GLM 模型提供方（GLM-5.3-Flash、GLM-5.3），支持工具调用与推理等级；设置页提供额度进度条、领取赠送计划、刷新机会与脱敏请求日志。需要安装并至少登录过一次 ZCode 桌面客户端（插件读取其本机凭据库），且账号持有生效中的 Z.ai / Start Plan 权益。
 - [Alice-Marx/dsh-model-router](https://github.com/Alice-Marx/dsh-model-router) — 为 DeepSeek Harness 规划有依赖的工作包，将其分配给已配置的模型 API 或支持的厂商 CLI，并提供费用预览。
@@ -7634,6 +7635,7 @@ dsh plugin --profile web add dshmarket
 - [yjrqz777/dsh-qqbot-lite](https://github.com/yjrqz777/dsh-qqbot-lite) — 将 QQ 私聊和群聊接入 DeepSeek Harness Desktop，支持按会话切换人格、交互式提问和可选图片理解。
 - [YOYOLnFu/dsh-bili-pond](https://github.com/YOYOLnFu/dsh-bili-pond) — 让蓝色大肥鱼替你刷 B 站：帮你评论，把发现的有趣内容私信给你，还会写下日记；它也有记忆，能长期总结。视频按你的口味筛选并生成 Markdown 日报，也能守着评论区替你回话。开启「圈地自萌」后，它只回视频 UP 主本人主动邀请的楼中楼，普通观众喊话不算，绝不自己起新楼；评论、私信、自动运行和守护默认关闭。需 Node 22、DSH 0.1.7-rc.1+、已登录的 B 站账号、模型线路与 Python。
 - [YoyuDev/dsh-ping](https://github.com/YoyuDev/dsh-ping) — Agent 需要你时响铃并弹出桌面通知：阶段完成、请求批准、等待输入、任务完成、出错，五种场景各配不同提示音。
+- [yujiajie01/dsh-sleep-countdown](https://github.com/yujiajie01/dsh-sleep-countdown) — 在 DSH 网页端输入框下方显示工作日 23:30 的睡觉倒计时:不足 1 小时变黄、不足 10 分钟变红,到点播放三组钟声提醒,可再等 10 分钟或关闭,喇叭按钮可静音,设置存于 localStorage。
 - [YuMo226/dsh-task-notify](https://github.com/YuMo226/dsh-task-notify) — 任务完成时弹出 Windows 原生系统通知（通知中心横幅）：目标完成或 Agent 结束一轮。
 - [yunfengnobug/dsh-qq-bot](https://github.com/yunfengnobug/dsh-qq-bot) — 把 DSH 会话接到 QQ（OneBot/NapCat）的插件（fork 自 sj244/dsh-qq-bridge，MIT）。白名单默认全关；被 @、叫到昵称或被戳一定叫醒，其余消息按可调概率抽样。Cordis 插件 id 仍是 qq-bridge。它沿用上游的 Cordis id（qq-bridge）：安装前须先卸载 sj244/dsh-qq-bridge，两者不能同装；白名单为空时谁都不会被叫醒。
 - [YUsaltyfish/dsh-notification-sound](https://github.com/YUsaltyfish/dsh-notification-sound) — 弹出选项卡提问时、请求工具权限时、一轮对话结束时，各播放一次提示音；支持自定义音频文件夹；另附 fish_beep 工具，可随时手动响一声。
