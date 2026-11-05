@@ -6058,6 +6058,7 @@ dsh plugin --profile web add dshmarket
 - [CAOGGL/dsh-ding](https://github.com/CAOGGL/dsh-ding) — 对话完成提醒：Agent 空闲（idle）时播放提示音并弹 Windows 原生通知，可配 ding.mp3、音量与防抖节流。
 - [cccc12138/dsh-read-aloud](https://github.com/cccc12138/dsh-read-aloud) — 在每条已定稿的助手回复里、紧挨点赞按钮右侧加一个小喇叭：点击用浏览器语音引擎朗读这条回复，鼠标悬停可调倍速与音色；文本会发送到非官方的 Edge TTS 端点。
 - [chaoge762/dsh-ears-prosody](https://github.com/chaoge762/dsh-ears-prosody) — 本地离线语气分析：在转写之外，给出语速、音高、停顿与力度的听感描述，让模型听懂「怎么说的」。
+- [cilis/dsh-whale-tts](https://github.com/cilis/dsh-whale-tts) — 面向 DeepSeek Harness 的通用语音合成：把文本合成为本地音频文件，管理预置、克隆和设计音色，在双语设置卡里配置 provider，并可用朗读按钮或自动朗读播报助手回复。
 - [cloudoyx/any-audio](https://github.com/cloudoyx/any-audio) — 五个工具做 agent 音频：anyaudio_music 从本地 SoundFont 离线渲染音符级乐谱，anyaudio_sfx 提供 52 条 SoundFont 音效预设与 15 种程序化生成器，anyaudio_tts 走 Edge 或 MiMo 配音，anyaudio_mix 做旁白闪避与峰值归一，anyaudio_sources 管理共享音源库。
 - [dingchenhui0618-arch/dsh-voice-memo](https://github.com/dingchenhui0618-arch/dsh-voice-memo) — 把口述变成仓库里的归档，而不是聊天里一闪而过的转写：按住说话（或导入 WAV）后，插件把 audio.wav、渲染好的 waveform.png、memo.md（frontmatter、逐段时码、可直接粘贴的引用块）与 meta.json 落到 voice-memos/<id>/。音频先在浏览器里重采样成 16 kHz 单声道再上传。转写全部本地完成——DSH 的 speechToText 服务（静音切窗补时间戳）或 faster-whisper 这类命令 worker；没有可用引擎时仍然归档，并写明状态与原因，绝不编造文本。带会话视图的「口述」Tab：点波形定位播放、逐段复制引用；另有三个 agent 工具（voice_memo_save / voice_memo_list / voice_memo_read）与 HTTP 路由。零运行时依赖，52 个 node:test 用例，docs/ 里有真实运行截图。
 - [do-nothing/media-suite#media-qwen](https://github.com/do-nothing/media-suite/tree/main/packages/media-qwen) — Qwen 媒体工具：通过阿里云百炼提供多模态视频音频理解、带预置音色的语音合成，以及场景音频生成。
