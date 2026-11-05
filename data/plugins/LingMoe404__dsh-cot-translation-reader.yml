@@ -1,0 +1,6 @@
+url: https://github.com/LingMoe404/dsh-cot-translation-reader
+name: LingMoe404/dsh-cot-translation-reader
+category: ui
+description:
+  en: "Shows the official COT machine translation inside dsh-better-display's reading view, with a per-card original/translated toggle on better-display 0.3.12 and later."
+  zh: "在 dsh-better-display 的阅读页显示官方「思考过程机器翻译」译文，并在 better-display 0.3.12 及以上提供按卡片切换原文/译文。"
