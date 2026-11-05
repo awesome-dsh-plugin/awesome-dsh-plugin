@@ -1,8 +1,0 @@
-url: https://github.com/lkpsg/dsh-token-meter
-name: lkpsg/dsh-token-meter
-category: usage
-description:
-  en: 'Bailian Token Plan quota panel using the official CLI login: 5-hour, weekly and monthly windows, add-on credits, reset countdowns and subscription status.'
-  zh: '基于官方 CLI 登录的百炼 Token 套餐用量面板：5 小时、每周、每月窗口，加购积分、重置倒计时与订阅状态。'
-icon: https://raw.githubusercontent.com/lkpsg/dsh-token-meter/main/docs/icon-180.png
-tarball: https://github.com/lkpsg/dsh-token-meter/releases/download/v0.2.0/dsh-plan-meter-0.2.0.tgz
