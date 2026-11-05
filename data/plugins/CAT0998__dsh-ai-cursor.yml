@@ -1,0 +1,7 @@
+url: https://github.com/CAT0998/dsh-ai-cursor
+name: CAT0998/dsh-ai-cursor
+category: tools
+description:
+  en: A second, agent-owned cursor with a floating control panel for opacity, colour, size, badge and a permission ladder only a human can raise. It never moves the real pointer.
+  zh: 给 AI 的第二只光标加一个浮动控制面板，可调透明度、颜色、大小与提示显隐，并按只能由人提高的权限等级限制它；从不移动你的真实鼠标指针。
+tarball: https://github.com/CAT0998/dsh-ai-cursor/releases/latest/download/dsh-ai-cursor.tgz
