@@ -1,0 +1,7 @@
+url: https://github.com/wowswows/dsh-req-workbench
+name: wowswows/dsh-req-workbench
+category: ui
+description:
+  en: 'Lets the conversation AI maintain a plain-language functional requirements checklist in a dedicated session view.'
+  zh: '让对话中的 AI 在会话需求页整理、合并和更新通俗的功能清单。'
+tarball: https://github.com/wowswows/dsh-req-workbench/releases/download/v0.2.1-dsh021.1/dsh-community-dsh-req-workbench-0.2.1-dsh021.1.tgz
