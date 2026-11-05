@@ -2,5 +2,5 @@ url: https://github.com/WhatCannotBeSaid/dsh-quasar-theme
 name: WhatCannotBeSaid/dsh-quasar-theme
 category: theme
 description:
-  en: 'QUASAR — a space-themed skin for DeepSeek Harness: an ink black hole in the sidebar and a live accretion disk rendered behind the app, with frosted-glass panels. Motion is canvas-driven, honors prefers-reduced-motion, and its frame rate drops during scroll and typing and recovers when idle.'
-  zh: 'QUASAR — DeepSeek Harness 的太空主题皮肤：侧栏里一颗墨色黑洞，应用背后实时渲染吸积盘，配合磨砂玻璃面板。动效由 canvas 驱动，尊重 prefers-reduced-motion；滚动与打字时自动降帧，静置后恢复。'
+  en: 'QUASAR — a space-themed skin for DeepSeek Harness: an ink black hole in the sidebar and a live accretion disk rendered behind the app, with frosted-glass panels. Motion is canvas-driven and honors prefers-reduced-motion.'
+  zh: 'QUASAR — DeepSeek Harness 的太空主题皮肤：侧栏里一颗墨色黑洞，应用背后实时渲染吸积盘，配合磨砂玻璃面板。动效由 canvas 驱动，尊重 prefers-reduced-motion。'
