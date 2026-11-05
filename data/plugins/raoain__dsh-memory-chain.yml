@@ -1,0 +1,6 @@
+url: https://github.com/raoain/dsh-memory-chain
+name: raoain/dsh-memory-chain
+category: memory
+description:
+  zh: '守链：给 AI agent 的分层记忆——五个动词（醒来/干活/遇坑/立碑/收工），核心层每次读、档案层按需查；首次运行自动建四页，纯 markdown、无数据库；重启、换模型、拔插件后记忆还在、判断还接得上。'
+  en: 'Layered memory for AI agents: five verbs (wake/work/pit/tomb/close), core layer read every time, archive on demand. Plain markdown, four pages created on first run; survives restarts, model swaps and plugin removal.'
