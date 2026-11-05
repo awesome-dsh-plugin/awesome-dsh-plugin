@@ -4934,6 +4934,7 @@ dsh plugin --profile web add dshmarket
 - [Letter2025/dsh-tool-search](https://github.com/Letter2025/dsh-tool-search) — Hermes 风格工具搜索与瘦身：渐进式披露，语义搜索/查看/调用长尾工具，核心工具保持直通。
 - [DSH QQ Zone](https://github.com/LFELKEEA/dsh-qq-zone) — 通过 SnowLuma 的 OneBot qzone_* 动作发/看/删/赞/评论 QQ 空间说说（需 SnowLuma 2.2+ 且已登录 QQ），并让机器人用本地视觉模型（OpenAI 兼容网关）或 Windows OCR 看懂图片。
 - [Lheyang/orca-dsh-launcher](https://github.com/Lheyang/orca-dsh-launcher) — DeepSeek Harness 的 Windows 桌面伴侣：更新检查、服务器启停、系统托盘、图形控制台与一键安装。
+- [li-shaozhe/dsh-chatops-mcp](https://github.com/li-shaozhe/dsh-chatops-mcp) — DSH 插件：把钉钉（走 dws CLI）、飞书（走 lark-cli）和飞书项目（走官方 @lark-project/mcp）做成三个 MCP 工具服务器，直接复用这两个 CLI 已登录的账号，默认注册 140 个工具（钉钉 47、飞书 45、飞书项目 48），前缀分别是 mcp__dingtalk__ / mcp__feishu__ / mcp__meego__。侧边栏面板提供连接器墙（一键连接：装 CLI 并走设备码登录）、粘贴 mcpServers JSON 添加自定义 MCP、逐条启停、写工具开关，以及可搜索的 1098 条 dws 与 246 条 lark-cli 命令目录。
 - [liaoyuqing/dsh_workspace_switch](https://github.com/liaoyuqing/dsh_workspace_switch) — 按工作区开关插件、MCP 服务器与 Skills：工作区行菜单里的弹窗写入选择，宿主机在该工作区自己的 Agent 作用域内应用——关闭的 Skill 从模型目录中消失，MCP 服务器被拒绝其 mcp__<server>__ 工具，插件被拒绝其条目声明的工具名。
 - [lifeodyssey/dsh-compressor#dsh-compressor](https://github.com/lifeodyssey/dsh-compressor/tree/main/plugins/dsh-compressor) — Headroom 的精简移植，在不影响模型上下文缓存以及 Agent 性能的情况下，压缩工具的输出，至多减少 20% 的上下文。
 - [lifeopsgo/dsh-capability-toggle-plugin](https://github.com/lifeopsgo/dsh-capability-toggle-plugin) — 在 DSH WebUI 中为技能、MCP 服务器、工具、提示词注入、审批升权和安全守卫提供会话、项目与全局三级控制，并在当前 agent 作用域内强制执行。
@@ -6039,6 +6040,7 @@ dsh plugin --profile web add dshmarket
 - [southcul/dsh-gpt-image-playground](https://github.com/southcul/dsh-gpt-image-playground) — 把 GPT Image Playground 工作台装进 DeepSeek Harness：画廊与 Agent 双模式、参考图与遮罩编辑、多供应商 API 配置与本地历史。界面为上游 MIT 构建，由插件同源托管，并提供可选的 API 代理。
 - [Ssrs-Pro-Max/dsh-image-tiler](https://github.com/Ssrs-Pro-Max/dsh-image-tiler) — 让超大图片以可读分辨率进入模型视野，而不是被压成一张缩图：准入前按附件存储允许的上限把大图切成多张切片（8000x8000 的截图会变成 20 张 2000x1600），小字得以保留。以替换本地附件存储的方式实现，不新增任何配置项。
 - [sunxin-ai/dsh-design-qa](https://github.com/sunxin-ai/dsh-design-qa) — 给纯文本模型的设计稿保真判定：`deepseek_vision` 工具从任意 OpenAI 兼容视觉路由借来一只眼，让模型判断实现与设计稿是否一致——并附上支撑该判定的基准（4 组夹具、23 处注入缺陷、逐格原始输出）与其依赖的提问纪律。
+- [SZUold8/dsh-video-learning](https://github.com/SZUold8/dsh-video-learning) — 视频精读：获取 B 站单分P或 YouTube 视频，每 3 秒基础采样并补取变化帧，本地 faster-whisper 转写，分页读取分段图版，并可排版成 16:9 学习 PPT。仅 Windows；需 FFmpeg；转写与 PPT 输出需可选依赖。
 - [TaurusWood/dsh-plugin-appshot](https://github.com/TaurusWood/dsh-plugin-appshot) — DSH 版 Codex Appshots：全局快捷键精准捕获当前工作窗口，零摩擦挂载至 Composer 作为上下文向 Agent 提问。
 - [taxueseek/taxue-dsh-artisan](https://github.com/taxueseek/taxue-dsh-artisan) — DSH 一体化视觉创作工具链：提示词反推与审计优化，多供应商生图，支持异步后台出图。
 - [tenglongbohai/dsh-paddle-ocr](https://github.com/tenglongbohai/dsh-paddle-ocr) — 为纯文本模型添加 PaddleOCR 视觉能力，支持 Agnes、DeepSeek、MiniMax、GLM、Mimo，支持本地文件与 URL。每日 2 万页免费额度；需先申请 PaddleOCR API Token（免费，审核约 1-3 个工作日）。
