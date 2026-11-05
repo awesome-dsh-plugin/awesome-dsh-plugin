@@ -1,0 +1,6 @@
+url: https://github.com/GoetheDady/dsh-no-project-sessions
+name: GoetheDady/dsh-no-project-sessions
+category: session
+description:
+  en: "Adds a work-without-a-project option to the project picker, creates a dated working directory from the first message, and groups these sessions under a native Recent section."
+  zh: "为不属于任何项目的会话提供「不在项目中工作」选项，按首条消息在 ~/Documents/dsh/<日期>/ 下创建可读的独立工作目录，并在侧栏「最近」分区集中展示。"
