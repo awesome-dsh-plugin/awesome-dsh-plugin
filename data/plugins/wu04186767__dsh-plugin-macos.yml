@@ -1,0 +1,6 @@
+url: https://github.com/wu04186767/dsh-plugin-macos
+name: wu04186767/dsh-plugin-macos
+category: tools
+description:
+  en: Native macOS tools for DeepSeek Harness agents, with 21 local tools for notifications, clipboard, screenshots, speech, keep-awake, dark mode, Spotlight, Shortcuts, AppleScript and Safari tabs. Zero dependencies.
+  zh: 给 DeepSeek Harness 智能体的 21 个 macOS 原生工具，涵盖通知、剪贴板、截屏、朗读、防休眠、深色模式、Spotlight、快捷指令、AppleScript 与 Safari 标签页，零依赖。
