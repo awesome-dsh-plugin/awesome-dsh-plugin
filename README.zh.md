@@ -1113,6 +1113,7 @@ dsh plugin --profile web add dshmarket
 - [mhxy13867806343/dsh-sidebar-account](https://github.com/mhxy13867806343/dsh-sidebar-account) — DSH Desktop 侧栏余额行——在「版本 / 检查更新」下面显示账户余额与「充值」按钮，每 10 分钟或窗口重新聚焦时刷新，未登录与读取失败都有明确状态。
 - [mhxy13867806343/dsh-update-vd](https://github.com/mhxy13867806343/dsh-update-vd) — DSH Desktop 桌面控制中心：更新中心（侧栏版本号 + 进度条弹窗 + 一键装好 + 断点续传），外加「技能 / MCP / 智能体 / 导入」四个设置页——可从 Codex、Claude Code、TRAE、WorkBuddy 导入智能体预设与历史对话，按源地址联网搜索，侧栏笔记可多选插入聊天输入框。
 - [mhxy13867806343/my-dsh-desktop-extra](https://github.com/mhxy13867806343/my-dsh-desktop-extra) — DSH Desktop 桌面增强：一键检查更新、DeepSeek 余额与 API Key、导入其他 AI 工具。
+- [Mi-Chuan/box-select-copy](https://github.com/Mi-Chuan/box-select-copy) — 在 DSH 对话中按住 Alt 拖拽矩形选框，复制框内文本。
 - [miaomiao636/dsh-message-navigator](https://github.com/miaomiao636/dsh-message-navigator) — 为 DeepSeek Harness Web UI 提供 Codex 风格的消息导航器：对话边缘为每条用户消息生成刻度，悬停或点击即可预览并平滑跳转到对应消息，自动加载完整历史记录。
 - [MichengAI/dsh-codex-ui](https://github.com/MichengAI/dsh-codex-ui) — 为 DeepSeek Harness 网页端重构 Codex 风格侧栏、工作区会话树、全局搜索和轮次导航。
 - [Microqian2th/dsh-codex-effort-slider](https://github.com/Microqian2th/dsh-codex-effort-slider) — 把官方「推理等级」那一行改成一条可拖动的连续轨道：填充从蓝渐变到紫罗兰，较高档位带星尘粒子，官方数值文字跟着档位变色。Off 档保持官方灰，不改写官方任何文字。
@@ -2325,6 +2326,7 @@ dsh plugin --profile web add dshmarket
 - [WhXcjm/dsh-cost-bar](https://github.com/WhXcjm/dsh-cost-bar) — 位于输入框统计行右端的成本胶囊，显示估算的本轮费用与会话总费用；点开后是双栏面板，列出本轮与本会话的输入、缓存、输出支出，对话轮数，今日与总计支出，以及本会话缓存命中率和缓存节省。价格取自 DeepSeek 官方价目表并含峰时计价（北京时间工作日 09:00–12:00、14:00–18:00 加倍，法定节假日除外），每条消息按结算时刻取价，prices.json 改动后无需重启即可生效。
 - [WihteCo/dsh-opencode-go-quota](https://github.com/WihteCo/dsh-opencode-go-quota) — 在侧边栏「工作区」列表下方显示 OpenCode Go 的滚动 5 小时 / 每周 / 每月额度百分比与重置倒计时，每档带用量条与时间进度标记，60 秒从 OpenCode 官方用量接口刷新，密钥复用 DSH 凭据库。
 - [wingsky-1/dsh-plugin-hub#packages/dsh-provider-usage](https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-provider-usage) — 多 provider 用量统计框架（v2 适配器契约）：常驻胶囊 + 详情面板；内置 DeepSeek 官方（区间记账法推算每日用量 + 峰谷倒计时徽标，官方无用量接口也能算）与 OpenCode Go；其他数据源只需放入一个 mjs 适配器文件即可接入，设置页热插拔，密钥只留在宿主端。
+- [Wiselfx/dsh-opencode-go-panel](https://github.com/Wiselfx/dsh-opencode-go-panel) — OpenCode Go subscription, model allowance, usage meter, and per-million-token rate panel for the DeepSeek Harness sidebar.
 - [WJDdidi-1/ai-context-doctor#plugin](https://github.com/WJDdidi-1/ai-context-doctor/tree/main/plugin) — 在右侧栏新增 AIignore 标签页：按五个维度给当前对话和所在目录打分，在构建产物、锁文件、日志被读进模型之前把它们拦下，并能一键把这些规则写进 .aiignore。
 - [wjf1/dsh-plugin-usage-analytics](https://github.com/wjf1/dsh-plugin-usage-analytics) — 本地优先的 DSH 用量分析：订阅会话事件，把工具调用、回合、错误、耗时与能力使用聚合为日表，在侧栏面板展示（6 个 KPI、14 日趋势、Top 工具、能力分布），并通过受围栏保护的本地 HTTP 接口暴露 18 个 JSON-RPC 方法。运行时零依赖，local 模式零出站，不采集任何消息正文。
 - [wjingshan/dsh-cost-gauge](https://github.com/wjingshan/dsh-cost-gauge) — 峰谷计费表盘：DSH Web 浮动窗按 DeepSeek 官方峰谷（高峰/空闲）费率对会话花费（token 费用）实时计费，指针配费率切换倒计时，余额环带低余额报警，支持拖拽缩放与最小化状态灯。
@@ -5603,6 +5605,7 @@ dsh plugin --profile web add dshmarket
 - [YV3507/dsh-webui-launcher](https://github.com/YV3507/dsh-webui-launcher) — 跨平台 Web UI 启动器：提供 webui_start/stop/status/open 模型工具、/webui start|stop|status|open 斜杠命令、设置页启动卡片，以及可选的桌面快捷方式——隐藏控制台启动 Web UI，完全就绪后自动打开浏览器，默认使用 dsh 官方图标。
 - [Yvesgao/dsh-shortcut-creator](https://github.com/Yvesgao/dsh-shortcut-creator) — 在设置页一键创建 Windows 桌面快捷方式：为 DeepSeek Harness 或任意本地服务生成 .cmd 启动器与桌面图标，自动打开浏览器、可固定任务栏。
 - [ywgATustcbbs/dsh-human-task#dsh-human-task](https://github.com/ywgATustcbbs/dsh-human-task/tree/main/packages/dsh-human-task) — 人工协作工具（`human_task` / `human_task_ready_check`）：让 Agent 暂停等待用户完成现实操作或返回观察结果（GUI 操作、游戏测试、视觉验证、硬件检查等），内置会话同意与 AFK 在场两级门控，通过 Web 任务窗返回结构化 JSON 结果。
+- [yxfvvv/dsh-labview](https://github.com/yxfvvv/dsh-labview) — 无需 LabVIEW 或 Python，直接解锁受密码保护的 LabVIEW VI/CTL 程序框图。
 - [yxy050208/multisim-mcp#deepseek-harness](https://github.com/yxy050208/multisim-mcp/tree/main/integrations/deepseek-harness) — 将 DeepSeek Harness 连接到 Multisim MCP，用于生成电路、运行仿真、诊断与优化设计，并导出实验报告。
 - [yybukn/dsh-table-attach](https://github.com/yybukn/dsh-table-attach) — 把表格与文档（xlsx、csv、pdf、zip…）粘贴或拖拽进 DSH 输入框即可附加：文件会保存到会话工作区并插入 @引用。
 - [yyfabab1/dsh-gpt-image](https://github.com/yyfabab1/dsh-gpt-image) — 游戏素材生产流水线：出图、生视频与音频，把一段视频变成连贯的精灵动画，派生配色变体，适配引擎配置，装进项目并核对代码是否真的引用了。视频转精灵动画需 ffmpeg；出图/生视频需自备图像/视频 API Key（Agnes AI / OpenAI / fal）。
@@ -8290,6 +8293,7 @@ dsh plugin --profile web add dshmarket
 - [030611/dsh-telemetry-redactor](https://github.com/030611/dsh-telemetry-redactor) — 在已配置遥测后端接收前，对 `session-telemetry/record` 导出副本中的已支持秘密模式进行脱敏。
 - [030611/dsh-verification-receipt](https://github.com/030611/dsh-verification-receipt) — 把每轮工具计数与粗粒度验证信号写入本地 JSONL，不保存提示词、工具参数或结果正文。
 - [030611/qiushi-dsh-evidence-audit](https://github.com/030611/qiushi-dsh-evidence-audit) — 把工具结果与会话事件的 receipt 写入本地哈希链 JSONL，不保存提示词、工具参数、结果正文或原始会话 ID。
+- [07-dot/dsh-cookie-janitor](https://github.com/07-dot/dsh-cookie-janitor) — 当 Cookie 请求头超过 4 KiB 时，自动过期失效的 dsh-auth 登录 Cookie，避免按端口累积的 Cookie 撑到 Node 的 16 KiB 请求头上限（HTTP 431）。
 - [0QwQ0/dsh-ui-auth](https://github.com/0QwQ0/dsh-ui-auth) — DeepSeek Harness Web UI 认证网关：登录门禁覆盖页面、/api、/plugins 与 WebSocket 升级；PBKDF2 口令哈希（每用户独立盐）、HttpOnly SameSite 会话 Cookie（名字按 DSH_HOME 唯一）、按源 IP 登录锁定；邀请码注册；两步验证可用 TOTP 动态码或通行密钥（WebAuthn：一个账号可绑定多个密钥，手机可扫码添加，支持免用户名登录，改动登录因子前必须二次验证）；设置面板内置用户管理（普通用户可修改本人资料与密码并管理自己的 TOTP 与通行密钥，管理员可新增/删除用户、重置密码、管理邀请码、清除丢失设备的通行密钥）；模型与 API Key 按用户隔离管理，私有配置用登录口令派生的密钥加密、任何管理员都无法读取，管理员可把自己的模型分享给指定用户（可用、可看余额、看不到 Key、撤销立即生效），未配置的用户被阻断而不是回退到部署级配置；REST/列表接口按用户隔离，WebSocket 主通道逐帧按归属过滤；会话重启后免登录恢复；JSONL 审计日志；存储故障时保持 fail-closed。仅支持 DSH 0.2.0 线（0.1.1-rc.2 传输线已在 0.7.0 移除）；因浏览器要求安全上下文，通行密钥需通过 localhost 或 HTTPS 访问。
 - [0tests/dsh-approval-consult](https://github.com/0tests/dsh-approval-consult) — 审批等待期间，向执行 AI 提问，装了并启用 DSH 的自动审查插件时也可问自动审查 AI，问清风险与后果再决定；执行 AI 的回答会留在会话里。
 - [173787247/dsh-repeat-stop](https://github.com/173787247/dsh-repeat-stop) — 在可配置次数后硬拦截连续相同的工具调用，避免 Agent 原地空转。
@@ -9011,6 +9015,7 @@ dsh plugin --profile web add dshmarket
 - [Gin-7/dsh-pet-remielle](https://github.com/Gin-7/dsh-pet-remielle) — 蕾米埃尔(绝区零)桌宠：随 DSH 工作状态切换动画表情。
 - [Gjs9178U/dsh-pet-indesktop](https://github.com/Gjs9178U/dsh-pet-indesktop) — 给 DSH 网页界面加一只可以拖动的桌宠：一只叫「大肥鱼」（昵称「鲸鲸」）的鲸鱼娘，八种配色皮肤可切换，并且有性格——只吃米饭、聪明但懒、嘴硬心软；连点几次会躺平不干了，被叫「大肥鱼」会生气并坚持自己不胖，叫「鲸鲸」才高兴。她还会记事：今天被叫胖三次就来时冷淡，被叫昵称三次就亲近，离开半小时再回来说「才不是等你」，头几次见面怕生；这些计数每天零点清零，存在插件自己的状态文件里。十分钟没人理会游到角落，那只改视觉、不会动你放她的位置。八张皮肤图随插件分发、由插件自己提供，因此没有任何第三方请求。注意：画面带有 OleapCrow 标记、由仓库所有者提供，八种皮肤是同一张画的重新配色；本插件尚未在真实的 DSH 宿主上安装验证过。
 - [gongfpp/dsh-novel-fish](https://github.com/gongfpp/dsh-novel-fish) — 小说摸鱼：主动展开选中的原生聊天区域时，在保留真实思考和工具输出的下方阅读本地 EPUB、TXT、Markdown 小说，小说不发送给模型。兼容 DSH >=0.2.1-rc.2 <0.3.0-0。
+- [gongfpp/dsh-thanks-carl](https://github.com/gongfpp/dsh-thanks-carl) — 任务结束后偶尔让卡尔从屏幕边缘探头，并提醒喝水、吃饭、休息；完全本地调度，不发送聊天消息、不调用模型。
 - [gongstudent/dsh-moyu](https://github.com/gongstudent/dsh-moyu) — 在 DeepSeek Harness 界面里悬停刷抖音推荐流：鼠标移入热点开始播放，移出暂停在原处，滚轮切换视频；滚轮做了累加与冷却，一次手势只切一条，播放器隐藏时保持挂载，移回从原处继续。宿主侧完成请求签名与视频流反代，不需要登录任何账号。
 - [good-saltfish/dsh-novel-shelf](https://github.com/good-saltfish/dsh-novel-shelf) — 装在 DSH 右侧栏的小说阅读器，办公摸鱼专用，搭配 AI 伴读，跟大肥鱼一起吐槽文章、发表看法 - 自己的 TXT 三种方式导入，五套阅读主题，章节、进度与批注保存。伴读跟着你读到哪儿就评到哪儿，吐槽或捧场，可在毒舌、温柔、侦探、摆烂四种腔调中切换，节奏自己定，默认关闭。内置 434 本中文经典，包里只有 44 KB 书目，按书名作者搜索、一键下载即入架离线读，四个 CDN 边缘回退。
 - [Gorkaseto/dsh-whale-pet](https://github.com/Gorkaseto/dsh-whale-pet) — 在新会话中，一只蓝白相间的像素风小鲸鱼趴在输入框上方游动。
