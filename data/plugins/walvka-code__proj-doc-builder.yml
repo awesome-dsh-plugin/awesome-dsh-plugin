@@ -1,0 +1,9 @@
+# Entry for awesome-dsh-plugin.
+# File name in that repository: data/plugins/walvka-code__proj-doc-builder.yml
+url: https://github.com/walvka-code/proj-doc-builder
+name: walvka-code/proj-doc-builder
+category: docs
+description:
+  en: 'Scans a repository, writes one Markdown outline per source directory, and publishes the index with a hash manifest that proves the documents match the code; the bundled reader verifies that manifest before serving an overview or one document.'
+  zh: '扫描仓库，为每个源码目录生成一份 Markdown 大纲，并随索引发布可证明文档与代码一致的哈希 manifest；自带读取器在输出概览或单份文档前会先校验 manifest。'
+icon: https://walvka-code.github.io/proj-doc-builder/assets/icon-180.png
