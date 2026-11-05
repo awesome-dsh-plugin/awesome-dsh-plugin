@@ -1,0 +1,6 @@
+url: https://github.com/zyfsyx666/dsh-groups
+name: zyfsyx666/dsh-groups
+category: market
+description:
+  en: Group installed DSH plugins into named sets and enable, disable or exclusively apply them by rewriting the profile bundle list. Can also render a set as an agent preset that a single conversation uses.
+  zh: 把已装插件编成命名分组，一键启用、停用或独占应用（改写 profile 的 bundle 清单）；还能把分组写成 agent 预设，让单个对话只开这一组。
