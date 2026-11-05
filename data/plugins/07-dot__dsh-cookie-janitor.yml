@@ -1,0 +1,7 @@
+url: https://github.com/07-dot/dsh-cookie-janitor
+name: 07-dot/dsh-cookie-janitor
+category: security
+description:
+  en: Expires stale dsh-auth sign-in cookies once the Cookie request header passes 4 KiB, so per-port cookie accumulation can never reach Node's 16 KiB header limit (HTTP 431).
+  zh: 当 Cookie 请求头超过 4 KiB 时，自动过期失效的 dsh-auth 登录 Cookie，避免按端口累积的 Cookie 撑到 Node 的 16 KiB 请求头上限（HTTP 431）。
+icon: https://raw.githubusercontent.com/07-dot/dsh-cookie-janitor/main/assets/icon-180.png
