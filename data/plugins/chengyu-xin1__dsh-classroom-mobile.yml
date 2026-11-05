@@ -4,3 +4,4 @@ category: tools
 description:
   en: 'Record lecture audio in a phone browser and transcribe it locally with faster-whisper; generates summaries, mind maps and quizzes with a wrong-question gate plus a focus report, and serves the phone UI over a built-in HTTPS tunnel from any network.'
   zh: '手机浏览器录课堂音频，本机 faster-whisper 转写；生成总结、思维导图、由易到难的题与错题门控、专注报告；内置 HTTPS 隧道，手机在任何网络都能连。'
+icon: https://raw.githubusercontent.com/chengyu-xin1/dsh-classroom-mobile/main/assets/icon-180.png
