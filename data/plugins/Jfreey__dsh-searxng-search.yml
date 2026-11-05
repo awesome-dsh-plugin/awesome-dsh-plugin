@@ -2,6 +2,6 @@ url: https://github.com/Jfreey/dsh-searxng-search
 name: Jfreey/dsh-searxng-search
 category: tools
 description:
-  en: 'One-click local search engine: free, fast, and reliable web_search for your agent.'
-  zh: '一键安装本地搜索引擎，免费、快捷、有效。'
+  en: 'One-click local search engine: no API key, free, no tracking. Aggregates several fast engines and picks the best route for your network.'
+  zh: '一键安装本地搜索引擎：无需 API、完全免费、无追踪。聚合多个高效引擎，按你的网络实测自动选出最佳线路。'
 icon: https://raw.githubusercontent.com/Jfreey/dsh-searxng-search/main/assets/icon-180.png
