@@ -451,6 +451,7 @@ dsh plugin --profile web add dshmarket
 - [clarag0d/dsh-locale-multilingual](https://github.com/clarag0d/dsh-locale-multilingual) — 为 DeepSeek Harness 增加四种界面语言（繁體中文、日本語、한국어、Français），语料随包内置，完全离线。
 - [ClockworkParrot/dsh-prompt-optimize](https://github.com/ClockworkParrot/dsh-prompt-optimize) — 在输入框发送按钮左侧添加「优化提示词」按钮，用当前会话的模型路由改写草稿并通过编辑器原有路径原地回填，一次撤销即可还原原文。
 - [Cloud017/dsh-prompt-reforge](https://github.com/Cloud017/dsh-prompt-reforge) — 在 DSH 输入框工具栏加一个「重铸」按钮，把当前草稿就地改写成更精准的提示词——整段替换只占一步撤销，可一键恢复原文，也可中途取消。
+- [cloudatlasx/dsh-pet-plus#dsh-pet](https://github.com/cloudatlasx/dsh-pet-plus/tree/main/dsh-pet) — 破壳在 DSH 里的桌宠增强版：定时任务到点由宠物提醒，审批与提问可直接在宠物气泡里作答，弹过的事件收进 20 条记录，双击换角落、数据目录可配置、工作气泡带「第几步 · 用了多久」，忙时可「等会儿」或静音一小时；右键菜单的顺序与显隐可在设置页里调（默认「对话」在最前），工作气泡里还有一条任务队列进度条。
 - [clown139880/dsh-live2d-avatar](https://github.com/clown139880/dsh-live2d-avatar) — DSH 的 Live2D 形象舞台与桌宠：内置 Haru 示例、自定义 Cubism 2/3+ 模型加载与缩放/位置控制、页面内可拖动桌宠、可选透明置顶桌面独立桌宠窗口、按对话授权的表情 control prompt，以及默认关闭、需自部署 ASR/TTS 的语音功能。
 - [cm860712ch-cloud/dsh-quick-input](https://github.com/cm860712ch-cloud/dsh-quick-input) — 输入框左侧的九宫格快捷短语面板，高度跟随输入框：点一格就把该条短语以一次可撤销的编辑插入光标处；面板内可就地编辑，每页 9 格、最多 12 页，界面跟随 DSH 语言设置。窗口放不下时退回输入框上方浮层。
 - [CMoyuer/dsh-cad-viewer](https://github.com/CMoyuer/dsh-cad-viewer) — 在对话界面新增「3D模型」标签页作为模型库：agent 把 CadQuery 脚本或已剖分的网格存入服务端，标签页用 three-cad-viewer 预览、按文件夹整理，并可导出 STEP、BREP、STL、DXF 等 10 种格式。
@@ -2023,6 +2024,7 @@ dsh plugin --profile web add dshmarket
 - [dougen/dsh-deepseek-usage](https://github.com/dougen/dsh-deepseek-usage) — 在侧边栏底部显示一张卡片：DeepSeek 账号余额（用 DSH 已保存的 API Key 调官方 /user/balance 接口获取），以及当前模型的档单价——输入、缓存读取、输出——取自内置的官方价格表快照。一个圆点标出当前计费时段，旁边是距离切换的倒计时：高峰为北京时间周一至周五 9:00–12:00、14:00–18:00（不含中国法定节假日），其余为空闲时段。档单价与圆点只对 DeepSeek 官方模型显示，其他模型只显示余额。卡片每 30 秒刷新一次，点击或切换模型时立即刷新，并跟随应用主题与 DSH 语言。
 - [dxxo77/dsh-plugin-quota-balance](https://github.com/dxxo77/dsh-plugin-quota-balance) — 在输入框下方的用量行最左侧显示账户余额，点开可查看普通余额与赠送额度的分项、更新时间，并可跳转充值；徽标与浮层读取宿主表面 token，可跟随 dsh-plugin-wallpaper-engine 的玻璃参数、明暗主题与壁纸切换。
 - [eatone9254/dsh-balance-badge](https://github.com/eatone9254/dsh-balance-badge) — 在 DeepSeek Harness 主界面右下角常驻账户余额，60 秒自动刷新，点击即可立即查询。
+- [Eclipse-NotFound/dsh-usage-replay](https://github.com/Eclipse-NotFound/dsh-usage-replay) — 从 Harness 自身会话日志回放聚合的跨会话分模型 token 用量，含侧边栏用量面板与单对话按模型弹层。
 - [Enc-hanted/dsh-pulse](https://github.com/Enc-hanted/dsh-pulse) — 跨会话用量与费用观测台——分时走势与 90 天/1 年热力图、逐模型峰谷计价并与官方余额对账、GLM/Kimi/MiniMax 订阅额度与燃速预估、缓存命中环、项目排行、CSV 导出，另有 dsh-tui 终端面。
 - [ericw0315/dsh-usage-lite](https://github.com/ericw0315/dsh-usage-lite) — 侧边栏面板展示账户余额与本地 Token 用量，包含供应商/模型明细和 27 周每日热力图。
 - [errolleefin/dsh-tide-badge](https://github.com/errolleefin/dsh-tide-badge) — DSH 输入框下方的峰谷计费与余额药丸，基于 xiangrikuibaize/dsh-tide-badge 修改。与原版不同的是：本次对话花费按本会话的 token 用量（未命中 / 缓存命中 / 缓存写入 / 输出）乘官方价目表计算，而不是余额差值，因此同账号的其他对话与 API Key 消耗不会被算进来。它与上游同包名，装上会替换 npm 上的上游版本，两者不能同时安装。
@@ -6288,6 +6290,7 @@ dsh plugin --profile web add dshmarket
 - [OMSociety/dsh-ppt-maker](https://github.com/OMSociety/dsh-ppt-maker) — PPT 制作插件：十一个 ppt_* 工具创建、编辑、逆向、质检与导出演示文稿，内置五族设计系统与主题模板，支持幻灯片动画、海报与信息图。
 - [opdsh/dsh-gh-pages-artifacts](https://github.com/opdsh/dsh-gh-pages-artifacts) — 把 Agent 生成的 HTML 页面和 Markdown 文档发布到 GitHub Pages 并返回可分享链接，提供原地更新、列出、读回和删除的工具；附带侧边栏 Artifacts 面板和内置的页面设计技能。
 - [OtakuP417/dsh-reading-companion](https://github.com/OtakuP417/dsh-reading-companion) — 读书时旁边坐一个 AI 同读的人：它只知道你读到的位置，所以不会剧透，也不会替你把整本书总结掉。觉得哪句有分量就划出来问它，或者直接问刚读完的内容——它多半先复述你的意思，再反问一个具体的问题。想明白的东西可以存成「收获」，之后变成复习卡片，点一下跳回原句。支持 EPUB、MOBI、FB2、TXT、Markdown、HTML、CBZ。
+- [p8054076283-del/dsh-ppt-studio](https://github.com/p8054076283-del/dsh-ppt-studio) — 左侧栏 PPT 工作台：把现成的 PPTX 逐元素原样导入（主题色、带透明度的渐变、圆角形状、母版/版式装饰都保留，图表页整页转图）并渲染成真实的 16:9 幻灯片；直接在页面上改文字和表格，内置可改写同一份 deck.json 的 AI 对话栏。
 - [Pasumao/dsh-plugin-dev-kb](https://github.com/Pasumao/dsh-plugin-dev-kb) — 以 dsh-plugin-dev-kb 技能内置 DeepSeek Harness 官方文档离线镜像：站点中英 168 页 + 仓库补充文档 52 篇，带主题导航与全文检索，编写插件时随时查阅。
 - [pawpress/office-ppt](https://github.com/pawpress/office-ppt) — 通过 UNO 驱动本机安装的 LibreOffice 做 PPT，而不是用 JavaScript 写 OOXML：`lo_build` 用结构化幻灯片真开一份 Impress 文档，再由 LibreOffice 导出可编辑的 PPTX/ODP、PDF 与逐页 PNG；`lo_render` 重新渲染已有的 PPTX/PPT/ODP；`lo_convert` 做 Office 格式互转；`lo_probe` 报告探测到的 soffice 路径、版本与 UNO 桥状态；`lo_config` 修改已保存的配置。需要本机安装 LibreOffice（已在 26.8.1.1 验证），使用其自带 Python，无需系统 Python，并会在两次调用之间保留一个 soffice 热进程。仅在 Windows 上做过完整验证；Linux 上会退回系统 python3，需要 python3-uno。
 - [PerryLink/dsh-industry-research](https://github.com/PerryLink/dsh-industry-research) — 面向 DeepSeek Harness 的确定性行业研究报告：公司与行业研究流程基于分阶段证据产出结构化、可核验的报告。
@@ -7331,6 +7334,7 @@ dsh plugin --profile web add dshmarket
 - [Tlyer233/dsh-vscode-review#dsh-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/dsh-review) — 把 agent 的每次写入、编辑和 shell `rm` 删除记录进一个 shadow git 仓库，然后在 VS Code 里逐 hunk 接受或撤回。需要配合 dsh-review-vscode 扩展；面板只出现在 VS Code 的 webview 里，独立浏览器中的对话界面不变。
 - [truelove-dreamer/dsh-plugin-git-workflow](https://github.com/truelove-dreamer/dsh-plugin-git-workflow) — 一等公民的 Git 工具：status / diff / log / commit / branch，参数与路径校验、零 shell 调用，杜绝注入。
 - [txy-ucas/dsh-workspace-snapshot](https://github.com/txy-ucas/dsh-workspace-snapshot) — 以结构化数据返回有界、相对仓库根的 Git 状态，不暂存、不提交，也不切换分支。
+- [UponNoise/dsh-code-review](https://github.com/UponNoise/dsh-code-review) — DSH 左侧栏代码审查面板。用当前配置的模型审查本地 diff、提交或 GitHub PR，采用 Codex 的审查 rubric，输出 P0–P3 分级发现。
 - [vclike/dsh-github-companion](https://github.com/vclike/dsh-github-companion) — 33 个 github_* 工具，覆盖 REST 读取、Issue 写入、Git 数据写入、私有仓库创建与克隆；附带进程内权限门与成本纪律伴生 skill，无需 gh CLI。
 - [Viger1/dsh-review](https://github.com/Viger1/dsh-review) — 对抗式代码审查：多个 finder 并行地从不同视角（正确性、生命周期、契约、安全）审查改动，随后每条发现都交给独立验证者去推翻它，只要有一票推翻就丢弃。
 - [vitas/dsh-codex-review](https://github.com/vitas/dsh-codex-review) — 一条 /review 命令，把当前改动集交给固定到你选定模型的评审子代理，并且每个对话只保留一个持续复用的评审会话。
