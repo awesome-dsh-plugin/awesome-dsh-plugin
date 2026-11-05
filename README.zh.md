@@ -8113,6 +8113,8 @@ dsh plugin --profile web add dshmarket
 - [weijiafu14/pi2dsh](https://github.com/weijiafu14/pi2dsh) — Pi Host ABI 兼容引擎：装一次之后，npm 上的 Pi 扩展原包经 `dsh plugin add <pi-package>` 直接作为 DSH 原生插件挂载。已在官方 DSH 上端到端验证 pi-mcp-adapter（完整 MCP 管理面：OAuth、resources、prompts、MCP Apps、elicitation、sampling）、@tintinweb/pi-subagents、pi-code、pi-hermes-memory、pi-background-tasks；`pi2dsh inspect` 在安装前报告一个包的兼容情况。
 - [william-jin-cmu/dsh-evolve](https://github.com/william-jin-cmu/dsh-evolve) — 自进化：agent 在会话内给自己热挂载/卸载持久化插件。
 - [WilShi/dsh-coding-agents](https://github.com/WilShi/dsh-coding-agents) — 在 DeepSeek Harness 中驱动本机安装的 Codex CLI 与 Claude Code，通过设置页与 agent 工具查看会话、配置和运行状态。
+- [WilShi/dsh-external-api](https://github.com/WilShi/dsh-external-api) — DSH Desktop 的可选外部 HTTP API，默认关闭、默认仅监听本机，扩大监听范围时使用 Bearer Token 鉴权。
+- [WilShi/dsh-plugin-builder](https://github.com/WilShi/dsh-plugin-builder) — 设置页里的插件工坊，附带交给 Agent 的 cordis-plugin-development 技能，基于当前运行的主机 API 编写 DSH 插件。
 - [winson-young/dsh-workspace-rules](https://github.com/winson-young/dsh-workspace-rules) — 在设置面板中编辑当前项目的私有指令文件 CLAUDE.local.md——DSH 内置加载器会在会话开始时读取它，文件同时被排除在 git 之外。
 - [wiyi/dsh-web-service-manager](https://github.com/wiyi/dsh-web-service-manager) — 在设置面板中管理 DSH Web 服务:状态、版本、重启、停止与一键更新。
 - [WJDdidi-1/dsh-plugin-example](https://github.com/WJDdidi-1/dsh-plugin-example) — 可直接照抄的入门插件：一个右侧栏标签页、中英两份文案、挂载真实 bundle 的行为测试，以及会跑清单预检的 CI。
