@@ -2549,6 +2549,7 @@ dsh plugin --profile web add dshmarket
 - [lilcandi/dsh-any-background-plus](https://github.com/lilcandi/dsh-any-background-plus) — dsh-any-background 的增强分支。v0.4.0 起的改动为本 fork 自作，新增左右双图轮播：同一轮播在窗口两侧各推进一步，以绝对中心为分界，壁纸不再被会话区完全挡住。两条车道还可各读一个文件夹（左右各一），共用同一轮播频率与模式，左右边缘淡化效果完全一致。
 - [lildanger/dsh-skin-win2000](https://github.com/lildanger/dsh-skin-win2000) — 给 DSH Web GUI 换上 Windows 2000 桌面外观：按度量表还原的灰色控件、双色渐变标题栏、1px 立体边框、直角、16px 滚动条，以及由插件自身路由提供的点阵字体。
 - [linhut/dsh-stock-terminal](https://github.com/linhut/dsh-stock-terminal) — 股市行情皮肤与功能插件：全局交易终端皮肤 + 跑马灯 + 个股 K 线弹窗（日K/周K/月K 切换）、自选拼音首字母模糊搜索、持仓盈亏管理、交易时段指示，支持 A股 / 港股 / 美股 / 加密货币 / 外汇。
+- [Linxi-1105/dsh-theme-cyrene](https://github.com/Linxi-1105/dsh-theme-cyrene) — 免费、非官方的「昔涟 / Cyrene」主题，含三套配色、开屏动画和对话水印；代码 MIT，角色同人素材不适用 MIT。
 - [lisongxuan/ds-hentai](https://github.com/lisongxuan/ds-hentai) — ExHentai 皮肤 for DeepSeek Harness。DS Hentai / DeepSeek Hentai，深炭底、浅灰文字、灰色边框；会话列表像画廊索引，发送框像搜索栏。预览Demo：https://dshentai-demo.arkady14.site/
 - [lispking/dsh-qq-skin](https://github.com/lispking/dsh-qq-skin) — 为 DeepSeek Harness 打造的 QQ NT 皮肤：浅色与深色共用一套 QQ NT 语言——浅色干净克制（品牌蓝 #12B7F5、浅蓝气泡），深色为沉稳蓝灰（#101822）——以可逆的 token 与布局两层实现，不改变你的浅色/深色偏好。
 - [LittleLemonJam/dsh-chat-background](https://github.com/LittleLemonJam/dsh-chat-background) — 聊天背景：把本地图片文件夹里的一张图铺满 DSH 桌面界面；左侧栏、主窗口、右侧栏遮罩可分别调节，支持背景轮换与分组、淡入淡出特效，并提供输入栏背景条、任务进度条与全会话 Token 总用量。
@@ -3378,7 +3379,7 @@ dsh plugin --profile web add dshmarket
 - [bingzhu44-blip/brutal-monkey](https://github.com/bingzhu44-blip/brutal-monkey) — dsh暴力删除：永久删除 DSH 会话的磁盘数据——单条删除或跨工作区批量删除，支持 Ctrl+A 全选与 Delete 快捷删除，彻底清理对话记录、投影缓存、工作区归属、附件与子会话，不可恢复。
 - [bitqyh/dsh-codex-bridge](https://github.com/bitqyh/dsh-codex-bridge) — 在 DSH 输入框下方列出可接续的 Codex 聊天，按每个聊天所属的具体项目分组，把机械提取的恢复上下文插入草稿、不自动发送。项目归属取自 Codex 的项目注册表并做路径边界匹配，同时标注这个判断有多可靠：有记录的会话归属、登记目录、元数据不可读、或同一目录登记给多个项目（后者标为未知而不是猜一个）。存档落后于日志末尾时也会提示——那通常说明该轮没有正常结束。聊天列表需要 PATH 上有 python3 ≥3.8；Windows 暂未适配，缺少 python3 时列表会静默为空。
 - [BJ1919810/dsh-session-mail](https://github.com/BJ1919810/dsh-session-mail) — 同一宿主内 DSH 会话之间的代理传话。`send_session_message` 可等对方回合结束再送达、也可插进正在跑的回合；发信方 id 由插件自己写，伪造的 From 抬头会被拒；每条消息带 id —— 回信可用 replyTo 引用、thread 防止同一件事排队两次、supersedes 撤回尚未投递的旧消息。`read_session_info` 只读地看对方：标题、最后一轮回复、最后一次 present 的文件、以及忙闲与队列深度。
-- [BlueOcean3214/dsh-handoff-session](https://github.com/BlueOcean3214/dsh-handoff-session) — 为 DeepSeek Harness 提供会话交接：上下文压力到阈值时写交接文档与可搜索转录，并在新会话里自动继续。
+- [BlueOcean3214/dsh-handoff-session](https://github.com/BlueOcean3214/dsh-handoff-session) — 为 DeepSeek Harness 提供会话交接：上下文压力到阈值时写交接文档与可搜索转录，并在新会话里自动继续；输入框下方状态点随压力从绿 → 蓝 → 琥珀 → 红逐级变色。
 - [Blueteemo/dsh-smart-namer](https://github.com/Blueteemo/dsh-smart-namer) — 会话与工作区的智能命名：点一下让模型基于条目自身内容给出短名候选，选中即改名。
 - [Session Lens](https://github.com/bobostudio/dsh-session-lens) — DeepSeek Harness 的会话洞察，并可一键导出为可分享的 HTML 回放。
 - [Boliban/dsh-enter-customizer](https://github.com/Boliban/dsh-enter-customizer) — 接管聊天输入框的回车等快捷键，每个快捷键的行为都能单独配置。
