@@ -1,0 +1,7 @@
+url: https://github.com/rUrU516/dsh-quicktime-player
+name: rUrU516/dsh-quicktime-player
+category: ui
+description:
+  en: "Sidebar video player for DSH: it registers its own right-sidebar tab type, so any video opened through the harness — the Files tab, a chat file reference, another sidebar plugin's file tree — lands in this player. Bytes stream over a Host HTTP Range route (with a tokenized loopback source so the progress bar can actually be scrubbed inside the desktop app), and the player adds wheel zoom, drag pan, frame stepping, speed and volume popovers, and a built-in guide that points at every control."
+  zh: "DSH 侧边栏视频播放器：注册自己的右侧栏页签类型，因此无论从文件页签、对话里的文件引用，还是其它侧边栏插件的文件树打开视频，都会落到这里。字节走宿主的 HTTP Range 路由流式下发（桌面端另有一条带令牌的回环源，进度条在桌面端也能拖得动），并提供滚轮缩放、拖拽平移、逐帧步进、倍速与音量弹出条，以及覆盖全部控件的内置说明。"
+icon: https://raw.githubusercontent.com/rUrU516/dsh-quicktime-player/main/docs/icon-180.png
