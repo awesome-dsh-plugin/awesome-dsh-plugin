@@ -1,0 +1,6 @@
+url: https://github.com/CsBpRd/dsh-split-view
+name: CsBpRd/dsh-split-view
+category: ui
+description:
+  en: Splits the DSH main area into vertical columns, one live conversation per parallel task, with mouse-wheel paging past four columns, draggable dividers, a split toggle on every session-list row, a progress-only compact view and a one-click exit.
+  zh: 把 DSH 主区域竖着分成多列，每个并行任务一列实时对话；超过 4 列用鼠标滚轮整页翻，分隔线可拖拽调宽，侧边栏会话行可直接加入或移出分屏，另有只显示进度与当前步骤的极简视图，并可一键取消分屏。
