@@ -2,5 +2,5 @@ url: https://github.com/tao1020/dsh-chrome-use
 name: tao1020/dsh-chrome-use
 category: browser
 description:
-  en: 'Browser control for your own Chrome: reuses your logged-in tabs through a local bridge, so the model can read pages, click, fill inputs, scroll, take screenshots, and inspect console and network logs. Requires Chrome 120+; the extension installs from the Chrome Web Store and pairs with an 8-digit code.'
-  zh: '操控你正在用的 Chrome：通过本机桥接复用已登录的标签页，让模型读取页面、点击、填写、滚动、截图，并查看控制台与网络日志。需要 Chrome 120+，扩展从 Chrome 应用商店安装，用 8 位配对码连接。'
+  en: 'Control the Chrome browser you are already using: open new tabs or reuse your logged-in tabs, so the model can read pages, click, fill inputs, drag page elements, scroll, take screenshots, open tabs in groups and close the tabs it opened, inspect console and network logs, and debug the browser. Requires Chrome 120 or newer; install the extension from the Chrome Web Store and pair it with an 8-digit code.'
+  zh: '操纵你正在使用的 Chrome 浏览器：新建或复用已登录的标签页，让模型读取页面、点击、填写、拖拽页面元素、滚动、截图，新建标签页并分组、关闭本会话打开的标签页，并查看控制台与网络日志，调试浏览器等。需要 Chrome 120 或更新版本；扩展从 Chrome 应用商店安装，用 8 位配对码连接。'

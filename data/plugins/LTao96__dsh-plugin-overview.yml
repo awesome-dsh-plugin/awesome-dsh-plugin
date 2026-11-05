@@ -2,5 +2,5 @@ url: https://github.com/LTao96/dsh-plugin-overview
 name: LTao96/dsh-plugin-overview
 category: ui
 description:
-  en: 'Local overview for installed DSH plugins with notes, groups, health checks and settings shortcuts.'
-  zh: '本地插件总览：备注、分组、健康检查、启停和设置入口。'
+  en: 'A local overview of installed DSH plugins. It does not install packages — pair it with a plugin market. Fold third-party settings, organize notes/groups with AI, check health and toggle plugins, so nothing gets lost in clutter.'
+  zh: '本地已装插件总览：不下载插件，和插件市场搭配；一键收纳第三方插件设置，AI 整理备注与分组，配合健康诊断和启停，让插件不再乱而不知。'

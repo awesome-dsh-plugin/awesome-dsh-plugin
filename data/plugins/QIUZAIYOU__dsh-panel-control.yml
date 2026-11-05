@@ -1,0 +1,7 @@
+url: https://github.com/QIUZAIYOU/dsh-panel-control
+name: QIUZAIYOU/dsh-panel-control
+category: ui
+description:
+  en: "Rearranges the panel entries at the top of the DSH sidebar: drag to reorder or sort alphabetically, hide an entry without unloading its plugin, and split entries into named groups that render as titled separators; group headers collapse on click. A layout guard caps the entry list height and makes it scroll, so a growing list no longer squeezes the session and workspace panes out of view. An optional switch lets the profile's default model propose groups, and the host whitelists the returned ids and labels before they are stored locally."
+  zh: "管理 DSH 侧栏顶部的全局面板入口：拖动排序或按名称排序、逐项隐藏（不卸载插件）、分成命名分组并渲染为带标题的分隔线，分组标题可点击折叠。布局兜底会给入口列表限高并允许滚动，入口变多时不再把会话/工作区列表挤到看不见。可选开关让当前 profile 的默认模型提议分组，模型返回的 id 与组名先经宿主白名单清洗再写入本地。"
+icon: https://raw.githubusercontent.com/QIUZAIYOU/dsh-panel-control/main/assets/icon-180.png

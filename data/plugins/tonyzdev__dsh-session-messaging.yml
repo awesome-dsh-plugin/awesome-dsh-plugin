@@ -1,0 +1,7 @@
+url: https://github.com/tonyzdev/dsh-session-messaging
+name: tonyzdev/dsh-session-messaging
+category: session
+description:
+  en: 'Cross-session messaging across one or all workspaces: session_list finds top-level sessions by recency or title, session_send_message steers or queues attributed messages (cold-resuming stored sessions when needed), session_create opens titled top-level sessions with an initial task, and a client renderer displays relayed messages as user-side chat bubbles naming the sender session.'
+  zh: '跨会话与跨工作区通信：session_list 按最近活跃或标题查找顶层会话，session_send_message 投递带来源标注的消息（支持 steer/queue，按需冷恢复已存储会话），session_create 新开带标题的顶层会话交代任务，前端渲染器把转发消息显示为标注发送方会话标题的用户侧气泡。'
+tarball: https://github.com/tonyzdev/dsh-session-messaging/releases/download/v0.3.2/tonyzdev-dsh-session-messaging-0.3.2.tgz
