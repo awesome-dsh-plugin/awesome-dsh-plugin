@@ -1,0 +1,7 @@
+url: https://github.com/4wgtty4zm7-a11y/dsh-session-recycle-tools
+name: 4wgtty4zm7-a11y/dsh-session-recycle-tools
+category: session
+description:
+  en: 'Adds two entries to the DSH web sidebar above the settings row: a batch picker that groups sessions by workspace, filters them by a search box and moves the selected ones into a recycle bin, and a recycle bin that restores sessions one by one or all at once, or permanently deletes them. The recycle bin keeps its own list in browser storage and hides its sessions by wrapping the host session-visibility check, so it does not use the host archive; a moved session keeps its log on disk until it is permanently deleted. Sessions that are currently running are refused and reported instead of being moved.'
+  zh: '在 DSH Web 侧边栏、设置按键上方加两个入口：「批量删除」按工作区分组并支持搜索，勾选后把会话移入回收站；「回收站」可逐个或全部恢复，也可逐个或清空彻底删除。回收站名录存在浏览器存储里，通过外包宿主的会话可见性判断来隐藏行，因此不复用侧边栏自带的归档；移入后会话日志仍在磁盘上，彻底删除才调用宿主的删除接口。正在运行的会话会被拒绝移入并在面板里说明。'
+icon: https://raw.githubusercontent.com/4wgtty4zm7-a11y/dsh-session-recycle-tools/main/assets/icon-180.png
