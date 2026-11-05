@@ -5,3 +5,4 @@ description:
   en: "Multi-round deep research in the DSH sidebar: each round fans sub-questions out to parallel sub-agents, then continues from where the last round stopped and writes a cited report."
   zh: "DSH 右侧栏里的多轮深度搜索：每轮把子问题派给多个子代理并行查，再在上一轮基础上继续深挖，最后产出带引用的调研报告。"
 icon: https://raw.githubusercontent.com/NeptuneRY/dsh-deepsearch/main/assets/icon-180.png
+tarball: https://github.com/NeptuneRY/dsh-deepsearch/releases/latest/download/dsh-deepsearch.tgz
