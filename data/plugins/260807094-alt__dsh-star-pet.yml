@@ -2,7 +2,7 @@ url: https://github.com/260807094-alt/dsh-star-pet
 name: 260807094-alt/dsh-star-pet
 category: fun
 description:
-  en: A desktop companion that floats above every window and shows how much money you have earned today, with a live earnings board, salary settings and a squishy click animation.
-  zh: 一只常驻桌面最上层的上班鼓励宠物：实时显示今天已经赚了多少钱，带看板、薪资设置与按压动画。
+  en: 'A desktop companion that stays on top of every window and shows how much you have earned today, with a live earnings board, salary and work-hour settings, and a squishy click animation.'
+  zh: '困困星人：一只常驻桌面最上层的上班鼓励宠物，实时显示今天已经赚了多少钱，带今日看板、薪资与上下班时间设置、按压动画。'
 icon: https://raw.githubusercontent.com/260807094-alt/dsh-star-pet/main/icon.png
 tarball: https://github.com/260807094-alt/dsh-star-pet/releases/latest/download/dsh-star-pet.tgz
