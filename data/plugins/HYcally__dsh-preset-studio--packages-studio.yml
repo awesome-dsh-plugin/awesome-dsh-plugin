@@ -1,0 +1,6 @@
+url: https://github.com/HYcally/dsh-preset-studio/tree/main/packages/studio
+name: HYcally/dsh-preset-studio#studio
+category: tools
+description:
+  en: A panel for editing DeepSeek Harness agent presets. It reads and writes the files inside a preset, switches its prompt injections, documents, skills and tool rows on and off, and installs or uninstalls the preset. Editing is line based, so YAML comments and layout survive. The same package also ships the injector and the doc_update write-back tool that a preset mounts.
+  zh: 编辑 DSH 预设的面板。它读写预设里的文件，开关预设的注入、文档、技能与工具行，并直接装卸预设；按行编辑，YAML 注释与排版都保留。同一个包还提供预设挂载用的投递器与 doc_update 写回工具。
