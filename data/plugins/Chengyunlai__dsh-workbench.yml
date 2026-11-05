@@ -1,0 +1,6 @@
+url: https://github.com/Chengyunlai/dsh-workbench
+name: Chengyunlai/dsh-workbench
+category: dev
+description:
+  en: A workbench beside DeepSeek Harness conversations with source navigation, Python class hierarchies, Git diffs, breakpoint debugging, and searchable Markdown memory cards.
+  zh: DeepSeek Harness 对话旁的开发工作台，支持源码跳转、Python 类关系、Git 差异、断点调试与可搜索的 Markdown 记忆卡片。
