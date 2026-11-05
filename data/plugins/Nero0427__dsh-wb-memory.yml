@@ -1,0 +1,6 @@
+url: https://github.com/Nero0427/dsh-wb-memory
+name: Nero0427/dsh-wb-memory
+category: memory
+description:
+  en: Renders WorkBuddy SOUL, USER, MEMORY and topic Markdown files into the DeepSeek Harness system prompt, with a byte budget and a settings page.
+  zh: 把 WorkBuddy 的 SOUL / USER / MEMORY / topics 渲染进 DeepSeek Harness 的 system prompt，带字节预算与设置页。
