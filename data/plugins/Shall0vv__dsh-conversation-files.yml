@@ -1,0 +1,7 @@
+url: https://github.com/Shall0vv/dsh-conversation-files
+name: Shall0vv/dsh-conversation-files
+category: ui
+description:
+  en: 'A left-sidebar gallery of every file the assistant wrote, edited or delivered across all conversations, grouped by file type with preview thumbnails and one-click open.'
+  zh: '左侧栏画廊：汇总所有对话里助手写入、修改或交付的文件，按类型分组、显示预览缩略图，点击即可用默认应用打开。'
+icon: https://raw.githubusercontent.com/Shall0vv/dsh-conversation-files/main/docs/icon-512.png
