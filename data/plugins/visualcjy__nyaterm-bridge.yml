@@ -5,8 +5,8 @@ url: https://github.com/visualcjy/nyaterm-bridge
 name: visualcjy/nyaterm-bridge
 category: tools
 description:
-  en: Run AI commands in real NyaTerm terminal sessions, with a per-workspace allowlist over NyaTerm groups and hosts.
-  zh: 在 NyaTerm 的真实终端会话里执行 AI 命令，并按工作区限制可用的分组与主机。
+  en: Run AI commands in real NyaTerm terminal sessions, reusing saved groups, jump hosts and local terminals, with a per-workspace allowlist and an auditable record in NyaTerm.
+  zh: 在 NyaTerm 的真实终端会话里执行 AI 命令，复用已配置的分组、跳板机和本地终端，按工作区限制可用范围；命令与输出可在 NyaTerm 中审计。
 # GitHub-hosted raster image (png/jpg/jpeg/webp). SVG is rejected by the list.
 icon: https://raw.githubusercontent.com/visualcjy/nyaterm-bridge/main/assets/icon-180.png
 # Prebuilt release asset. The asset name stays version-free so the latest/download
