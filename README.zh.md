@@ -991,6 +991,7 @@ dsh plugin --profile web add dshmarket
 - [liwangzimo/dsh-calendar-diary](https://github.com/liwangzimo/dsh-calendar-diary) — DSH 侧边栏里的纯记事本日历：周一起始的 70 天网格，格子里直接显示当天内容；每天一条，写进你自己指定的 .xlsx，沿用 DesktopCal 两列格式（Excel 日期序列号 + 自由文本，新日期在前）。点某天即打开该日编辑框；导入导出走同一格式，导入先预览，冲突可选保留、覆盖、拼接或跳过。
 - [liweidong1722/dsh-work-list](https://github.com/liweidong1722/dsh-work-list) — 本地优先的 DSH Web 工作清单，支持富文本笔记、分类、折叠、拖拽排序、搜索、JSON 导入导出和可还原回收站。
 - [liyansong0015/dsh-sao-link-start](https://github.com/liyansong0015/dsh-sao-link-start) — 为 DeepSeek Harness 添加可配置的 SAO 风格全屏启动动画。
+- [lizilong1993/dsh-plain-talk](https://github.com/lizilong1993/dsh-plain-talk) — 输入框「说人话」开关：结论先行、引用原文、去掉需要翻前文的表述。
 - [lizilong1993/dsh-unlimited-effort](https://github.com/lizilong1993/dsh-unlimited-effort) — 输入框 ∞ 开关：最高推理档位下点一下，向系统提示词追加一段可配置的宣告。
 - [lizixuan200410-cmd/dsh-ink-whale-leap](https://github.com/lizixuan200410-cmd/dsh-ink-whale-leap) — 网页加载时在 DeepSeek Harness 界面上播放一段水墨鲸跃动画，随后自行淡出。
 - [lj100886/dsh-team-canvas](https://github.com/lj100886/dsh-team-canvas) — 在输入框上方渲染 Agent Teams 泳道看板：队长居中、成员在下，任务按最长依赖路径分泳道排列，四类连线用 SVG 虚线绘制（任务依赖是上游卡片右缘到下游卡片左缘的三次贝塞尔，另有队长总线、成员同级总线、成员到任务的 tether）。卡片是绝对定位 DOM，连线是一层 SVG，两者共用同一组几何常量。布局常量与路径算法移植自 cc-haha。数据读当前会话实时的 agentTeam 投影（名册、共享任务、依赖边、执行态）；会话没有团队时回退到本会话的工作清单。团队消息暂不在投影里，通讯面板显示空态。主体配色走宿主主题 token；八名成员的身份色是刻意的例外——色相固定，饱和度与明度用 color-mix 从主题强调色派生，且以 CSS 变量声明，因为这些值同时喂给 SVG 的 stroke 属性，而该位置不接受颜色函数。带中英文字典，两份键位一致。
@@ -3931,7 +3932,7 @@ dsh plugin --profile web add dshmarket
 - [zaizaizhao/dsh-branchmark#dsh-branchmark](https://github.com/zaizaizhao/dsh-branchmark/tree/main/packages/bundle) — Vibe Coding 时，如果突然想到另一个问题，或者看到一段以后还会用到的回答，可以先保存下来、在 Side Chat 里快速问清楚，或另开一个相关会话继续研究，不打断当前任务的开发思路和注意力。
 - [zangxx66/dsh-prompt-setting#dsh-prompt-setting](https://github.com/zangxx66/dsh-prompt-setting/tree/main/packages/dsh-prompt-setting) — DeepSeek Harness 默认 System Prompt 管理插件：在 Web GUI「设置」里浏览、检索并覆盖最终装配进每轮会话的系统提示词。
 - [ZCasual/dsh-context-diet](https://github.com/ZCasual/dsh-context-diet) — 在提示缓存转冷后，把陈旧、过大的纯文本工具结果替换为带末尾行与错误行预览的 stub，并在输入框下方显示每请求与累计节省量。
-- [Zcc50/dsh-rebuild](https://github.com/Zcc50/dsh-rebuild) — DSH 环境一站式整合包：根目录是可从市场一键安装/更新的工作区美化插件，pack/ 子目录是任务列表、编码兼容、LSP/审查、视觉与白皮书的完整安装器。
+- [DSH 工作区前端重建](https://github.com/Zcc50/dsh-rebuild) — DSH 工作区美化：侧栏改成 工作区 → 分组 → 会话，支持跨分组/跨工作区拖拽归类、会话行上下文用量环、定时任务时钟、单会话花费、两侧调宽把手、20%/40% 上下文提醒，工作区标题栏显示账户余额。纯客户端 bundle，不改宿主。
 - [zchuxi/dsh-restart-task](https://github.com/zchuxi/dsh-restart-task) — 修复被打断的 DSH 回合：放大产品自带的重试预算并把等待渲染成同一步内的实时倒计时，输出被截断时在同一轮内续写，回合已结束时可选地新开一轮继续；输入框为空时把「继续」交给发送键。
 - [Zci514/dsh-nightwatch](https://github.com/Zci514/dsh-nightwatch) — 把这个会话一直续跑到指定钟点：输入框里一颗按钮选 22:30、+90m 或明天 07:00，之后每轮答完插件补一句继续，让你去睡觉时它接着干；到点之后不再发任何消息。另有三道提前收手的闸——轮次上限 400、连续 3 轮出错、连续 4 轮一个工具都没调；随时可以手动停。快到点时切成收尾语气，窗口最多为剩余时间的一半，免得短守夜整段都在收尾。守夜记录以原子写落到 $DSH_HOME/nightwatch.json，重启后自动认领。默认不注册任何 slash 指令（enableCommand 可开）；补的那句话 source.kind 是 cordis-host-runner 而不是 user。
 - [zdjmrq/dsh-compact-control](https://github.com/zdjmrq/dsh-compact-control) — 调整 DSH 原生自动上下文压缩的触发阈值：在插件管理器的插件页面用滑块设置上下文占满模型窗口多少百分比时压缩（1%–100%，默认 80%，方向键可 1% 微调）；阈值调低时保留的最近历史预算会随之缩小，以免提前压缩被抵消，压缩本身仍由原生引擎执行。
@@ -4330,7 +4331,7 @@ dsh plugin --profile web add dshmarket
 - [xying-lm/dsh-memory-vault](https://github.com/xying-lm/dsh-memory-vault) — 为 DSH 提供磁盘上的长期记忆：SQLite FTS5 记忆库自动采集每轮对话，新会话按预算把相关的旧片段注入上下文，会话可按「对话文件」串成可续接的线索，并带一个可检索、可翻页、可调容量的网页面板。
 - [xyzOvO/dsh-selfnote](https://github.com/xyzOvO/dsh-selfnote) — 五段预算制的自我叙述记忆（共 800 字，不是整段上下文）：模型写给自己看的第一人称自述、从已采纳记忆聚合的「关于你」画像、与本机环境事实分开的画像、按热度排序的结论、以及习惯。每条注入的事实都能回溯到具体事实 id，可一键退役；画像可手改覆盖，自述则是可清空的纯文本行。事实按使用与时间衰减，但可信度不随时间变。你说过的长期要求会被自动识别成候选（永不自动采纳），互相冲突的两条并排留着。另外带出处的历史检索、只解新增帧的增量索引、必须有指针的温层摘要、能说清哪里坏了的体检，证明注入还活着的心跳，以及能整体搬到另一台机器的导出/导入。
 - [xyzOvO/dsh-wiki-notes](https://github.com/xyzOvO/dsh-wiki-notes) — 在本地 Markdown 笔记库里只读检索：一次调用返回命中小节正文与页级出处，另带库健康检查与「把好答案回写成新页」的骨架。
-- [dsh-long-term-memory](https://github.com/Yang-Yin734/dsh-long-term-memory) — 在 DSH 设置页新增「长时记忆」输入框，保存的文本会注入每个新会话的系统提示词，内容持久化在 profile patch 中，可随时回到设置页修改。
+- [dsh-long-term-memory](https://github.com/Yang-Yin734/dsh-long-term-memory) — 在 DSH 设置页维护一份跨会话生效的长时记忆：填一次，之后每个新会话都带着它。0.3.0 可把草稿细化为五节需求说明——你写的要求逐条保留，模型补的每一条标为「推断」可删，你没提的维度单列出来问你；采用、换一版、不改都由你决定。
 - [yangdongzhen590/dsh-knj-obsidian](https://github.com/yangdongzhen590/dsh-knj-obsidian) — DSH 内置版 Obsidian 知识库：agent 把对话、文档与网页蒸馏为结构化 .wiki 知识图，支持检索、图谱导出、笔记编辑、增量构建与多库管理。
 - [yangyizhu8/dsh-powercontext](https://github.com/yangyizhu8/dsh-powercontext) — DeepSeek Harness 的 PowerContext 常驻插件：模型每步前自动召回有界上下文，19 个 pc_* 工具覆盖记忆、工作移交、经验与技能，附带 Windows Server 看门狗实现常驻自启与崩溃自动拉起。
 - [yangyongzhen/dsh-memory](https://github.com/yangyongzhen/dsh-memory) — 会话开始自动注入的长期记忆：preference/fact/summary/knowledge 四类、global/project 双作用域，`agent/pre-step` 字节预算召回，JSON 原子持久化。
@@ -5032,7 +5033,7 @@ dsh plugin --profile web add dshmarket
 - [Meteor-system/dsh-codegraph](https://github.com/Meteor-system/dsh-codegraph) — 将当前工作区索引为关系图，向 agent 暴露一个工具 codegraph_explore（可达性、调用者、影响面），并在 Web 右侧栏提供图形面板。
 - [micln/dsh-mcp-autoload](https://github.com/micln/dsh-mcp-autoload) — 自动加载项目级 MCP 服务器：项目在 `.agents/mcp.json` 中声明服务器（路径与根目录标记可配置），在项目内工作的每个会话各自的作用域里挂载——支持 stdio 与 Streamable HTTP，工具名为 `mcp__<server>__<tool>`——会话结束时断开连接。Web UI 面板列出本会话的服务器及其工具，并可在确认后启用或禁用项目条目，写入前备份并原子替换清单文件。
 - [mimosa776/dsh-plugin-recommender](https://github.com/mimosa776/dsh-plugin-recommender) — 按职业/角色推荐 DSH 插件：询问用户是做什么的（程序员、设计师、写作、研究、运维、学生…），推荐适合的插件，并对每个插件做本地静态安全审计（危险代码模式 + 0-100 风险分）与口碑检查（npm 下载量 / GitHub 星数）。
-- [MingoYung/dsh-rea-gateway](https://github.com/MingoYung/dsh-rea-gateway) — 派生自 kirkchinese/dsh-capability-catalog 0.1.4（不能与上游能力目录 / @kirkchinese/dsh-rea 同装）：为 REA 提供按需 MCP 网关，通过三个固定的检索、参数查看与调用入口访问缓存工具定义，支持会话开关并复用 DSH 原生结果处理。需要 DSH 0.2.1-rc.4，以及能运行 REA 的 Node/npm 环境。
+- [MingoYung/dsh-rea-gateway](https://github.com/MingoYung/dsh-rea-gateway) — 派生自 kirkchinese/dsh-capability-catalog 0.1.4（不能与上游能力目录 / @kirkchinese/dsh-rea 同装）：为 REA 提供按需 MCP 网关，通过三个固定的检索、参数查看与调用入口访问缓存工具定义，支持会话开关并复用 DSH 原生结果处理。需要 DSH 0.2.1-rc.4 或 0.2.2-rc.1，以及能运行 REA 的 Node/npm 环境。
 - [MingShi350/kiwix-wiki](https://github.com/MingShi350/kiwix-wiki) — 通过你自己运行的 kiwix-serve 离线查询维基百科等 ZIM 数据包：wiki_search / wiki_read / wiki_books 三个工具分别做带摘要片段的全文搜索、按精确标题读取全文、列出本地 ZIM 书库。
 - [Minokun/dsh-serper-search](https://github.com/Minokun/dsh-serper-search) — 互补式网页搜索 provider：每次 web_search 由 DeepSeek 官方 Search API（主）与 serper.dev 的 Google 结果（补）按固定 2:1 交错合并。两路均为直连检索、无辅助模型调用；来源按 URL 去重，官方长摘要截断注入，单路超时自动降级到另一路。
 - [minyang-chen/dsh-stock-lookup](https://github.com/minyang-chen/dsh-stock-lookup) — 通过 SEC EDGAR 将公司名称或股票代码解析为已验证的股票代号，再从 yahoo-finance2 获取实时行情，包括价格、市盈率、每股收益、市值、52周区间和股息率。
@@ -7119,6 +7120,8 @@ dsh plugin --profile web add dshmarket
 - [Z-Asset/ZA_ppt](https://github.com/Z-Asset/ZA_ppt) — 报告阶段（PPT）——资产定价与机器学习研究的论文演讲幻灯片生成（Beamer/Quarto）。附带一个 skill。
 - [Z-Asset/ZA_report](https://github.com/Z-Asset/ZA_report) — 报告阶段（文稿）——资产定价与机器学习研究的学术论文写作。附带一个 skill。
 - [Z-Asset/zagent](https://github.com/Z-Asset/zagent) — Zagent——统一 RSI 三角色自改进闭环框架，三个算子：Data-RSI（逐日截面清洗：去极值→截面驻日标准化→中位数填充，加经验提取）、Harness-RSI（进化系统提示词/记忆/技能）、Model-RSI（进化 alpha 训练配方，框架内置 walk-forward，含 2 天空白与多 seed）。离线一条命令跑，GPU 自动走 CUDA。附带一个 skill。
+- [Zcc50/dsh-rebuild#task-list](https://github.com/Zcc50/dsh-rebuild/tree/main/task-list) — DSH 任务列表：对话左侧常驻任务面板，五态 + 父子折叠 + 完成区/废弃区 dock，agent 用 task_list / task_write 读写同一份列表。
+- [Zcc50/dsh-rebuild#todo-list](https://github.com/Zcc50/dsh-rebuild/tree/main/todo-list) — DSH 待办列表：右侧栏常驻标签，分类 / 分组 / 五态 / 备份导出，数据按会话落盘。
 - [zclDragon/dsh-tool-generate-image](https://github.com/zclDragon/dsh-tool-generate-image) — 给纯文本模型的 `generate_image` 工具：模型用自然语言要一张图，经 Antigravity CLI 让 Gemini 画出，保存到可配置输出目录并返回文件路径，供模型在任务中使用。
 - [ZEM17/dsh-subagent-agy](https://github.com/ZEM17/dsh-subagent-agy) — 把 Google Antigravity CLI（agy）接入 DSH 作为产品子代理：用 Antigravity 登录态（无需 API key）委托 Gemini 编程智能体干活，支持对话续聊、后台流式进度、按路径识图与自动弹出登录窗口。
 - [zenghaili0901/dsh-bot-mode](https://github.com/zenghaili0901/dsh-bot-mode) — DeepSeek Harness 的 Bot 模式：把子 Agent 变成一群有头像、有人格的 Bot，每个 Bot 拥有独立对话，由一个持久的 continuable 子 Agent 会话支撑，跨轮次保留记忆。
