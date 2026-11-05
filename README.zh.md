@@ -3291,6 +3291,7 @@ dsh plugin --profile web add dshmarket
 - [3403473060/dsh-inline-images](https://github.com/3403473060/dsh-inline-images) — 对话内联图片：LLM 回复中输出的本地图片路径在消息正文直接渲染为图片（9 种格式、点击放大灯箱、可调尺寸）。
 - [379385796-sys/dsh-ai-exporter](https://github.com/379385796-sys/dsh-ai-exporter) — 通过 Windows 原生保存窗口，将当前或历史 DSH 会话及选定轮次导出为 TXT、Markdown 和可搜索 PDF。
 - [439436269-ctrl/dsh-session-path](https://github.com/439436269-ctrl/dsh-session-path) — 复制会话日志路径（或可直接粘贴的接续块），并把多帧 zstd 会话日志转成可读文件，供另一个会话读取接续。
+- [4wgtty4zm7-a11y/dsh-session-recycle-tools](https://github.com/4wgtty4zm7-a11y/dsh-session-recycle-tools) — 在 DSH Web 侧边栏、设置按键上方加两个入口：「批量删除」按工作区分组并支持搜索，勾选后把会话移入回收站；「回收站」可逐个或全部恢复，也可逐个或清空彻底删除。回收站名录存在浏览器存储里，通过外包宿主的会话可见性判断来隐藏行，因此不复用侧边栏自带的归档；移入后会话日志仍在磁盘上，彻底删除才调用宿主的删除接口。正在运行的会话会被拒绝移入并在面板里说明。
 - [571242/dsh-armor-switch](https://github.com/571242/dsh-armor-switch) — 可逆的交付契约与破甲插件：开启时生效最高指令权威与交付规则，关闭时注册面与官方逐字节一致，支持宿主与 Profile 清洗。
 - [598829314/oil-dsh-title](https://github.com/598829314/oil-dsh-title) — 在用户消息后为 DeepSeek Harness 维护稳定的 emoji 会话标题，不向原会话追加命名消息。
 - [5aaee9/pi-agent-extensions#dsh-autocompact](https://github.com/5aaee9/pi-agent-extensions/tree/main/dsh-autocompact) — 为 DeepSeek Harness 按模型设置更早的自动压缩阈值：/autocompact 以精确 provider/model 为键写入仅本会话生效的覆盖值（off 回退后端默认、default 清除覆盖），设置页「自动压缩」管理所有会话继承的持久化逐模型阈值，输入框状态条目显示当前读数。
@@ -5282,6 +5283,7 @@ dsh plugin --profile web add dshmarket
 - [tobysunsun/dsh-code-reading-coach](https://github.com/tobysunsun/dsh-code-reading-coach) — 代码研读教练：交互式引导研读论文对应的开源代码。五段研读法（锚定论文主张、地形扫描、入口追踪、核心映射、闭环验证），自动识别并告知语言的框架与架构，适合研读 AI 论文源码。
 - [toddpan/dsh-feyagate](https://github.com/toddpan/dsh-feyagate) — 在 DSH 中安装、守护并自动升级本机 miloco-mcp-server 后台服务，把它的 MCP 工具接入 DSH，并提供服务、账号与授权设置界面。
 - [tomowang/dsh-data-agent](https://github.com/tomowang/dsh-data-agent) — DeepSeek Harness 的数据库连接与 SQL 插件：注册数据源，浏览并注释表结构，通过 AST 校验执行 SQL（每个数据源可单独切换只读），并渲染柱状图、折线图和饼图，可在对话或设置页中使用。
+- [top10xiaowangzi-byte/dsh-plugins#dsh-ai-idle-shutdown](https://github.com/top10xiaowangzi-byte/dsh-plugins/tree/main/plugins/dsh-ai-idle-shutdown) — 仅 Windows 的右侧栏面板：按整棵进程树的 CPU / IO 判断 AI 桌面工具是否还在工作，全部安静指定分钟数后关机，带可取消倒计时、演练模式与活动记录；需要本机 Python 3.10+。
 - [toustifer/dsh-harvest](https://github.com/toustifer/dsh-harvest) — 多平台调研与深度搜索流水线：harvest_scout 并行发现（覆盖 GitHub、Web、推特、Reddit、小红书、B站、YouTube 等通道），harvest_deep_research 自动化长篇综合研报生成，外加穿透抓取、跨源交叉验证与五维来源可信度审计。
 - [toustifer/dshplugin](https://github.com/toustifer/dshplugin) — 调用 3Blue1Brown Manim 现做动画直观解释回答，配有右侧抽屉栏动画库及对话流多模态文件发布卡片。
 - [tr1v3r/dsh-proxy](https://github.com/tr1v3r/dsh-proxy) — 在直连、手动 HTTP(S)/SOCKS5 代理和环境/系统代理模式间热切换 DSH 进程内 fetch 流量，支持免代理规则，并可为之后启动的子进程导出代理环境变量。
@@ -7518,6 +7520,7 @@ dsh plugin --profile web add dshmarket
 - [tianhengzhibei/dsh-approval-ding](https://github.com/tianhengzhibei/dsh-approval-ding) — DeepSeek Harness 请求审批、或向你提问时响一声“叮”，人不在窗口前也能立刻察觉。
 - [TianLingBy/dsh-task-ping](https://github.com/TianLingBy/dsh-task-ping) — DSH 任务提醒：每轮对话结束、或出现待审批 / 待回答 / 待确认计划时弹系统通知；提示音走 Windows 通信播放端点，由系统按「通信活动」自动压低其他媒体并在结束后恢复，不写任何应用的音量；可选再用 SMTP 发一封邮件到手机（465 隐式 TLS，或 STARTTLS 且仅在升级后才发送凭据）。无运行时依赖：声音助手是 PowerShell 脚本，邮件客户端是纯 Node 实现。
 - [tjiisztiuv/dsh-plugin-discord](https://github.com/tjiisztiuv/dsh-plugin-discord) — 与桌面端或 dsh web 运行在同一个 Host 里的 Discord 桥接，无需单独进程或 profile：在私信或线程里与任意工作区的会话对话，接入桌面端正在用的会话，工具审批和模型提问在 Discord 与桌面端谁先答谁生效。
+- [top10xiaowangzi-byte/dsh-plugins#dsh-approval-push](https://github.com/top10xiaowangzi-byte/dsh-plugins/tree/main/plugins/dsh-approval-push) — 审批提醒：会话等待权限时在页面右下角弹出提醒卡，可直接「允许一次」/「拒绝」，并可发桌面通知、提示音，或通过 PushPlus / Server酱 / ntfy / 企业微信机器人 / 自定义 webhook 推送到手机。
 - [tsurumi-yizhou/dsh-live-notify](https://github.com/tsurumi-yizhou/dsh-live-notify) — 为模型提供 UpdateNotify 工具，并在 DSH Web UI 输入框上方停靠一个实时进度窗，让模型在一轮任务进行中随时播报刚做了什么、发现了什么、在等什么。
 - [ttmouse/dsh-dingtalk-channel](https://github.com/ttmouse/dsh-dingtalk-channel) — 钉钉 IM 双向 channel（Stream 模式）：每条单聊/群聊驱动一个 agent，思考与回复通过 WebSocket 长连接回流消息，免公网回调。
 - [unifilitence/dsh-notify-say](https://github.com/unifilitence/dsh-notify-say) — 为 DSH 提供 Windows 桌面通知，默认把回合结果读出来：Windows TTS 零下载即可用，另有 13 个 VOICEVOX 语音包可在设置页下载。完成提醒会等子代理与后台任务结束后再响；审批、提问、出错立即提醒。语音包从 GitHub 下载，下载前需确认使用条款。
