@@ -2,6 +2,6 @@ url: https://github.com/floatDreamWithSong/dsh-lifecycle
 name: floatDreamWithSong/dsh-lifecycle
 category: security
 description:
-  en: 'Lock screen with password/OTP/Passkey, persistent sessions and custom wallpapers; Harness power controls (the bundled systemd/launchd service must be installed) and npm updates on Linux and macOS, with experimental Windows support not yet tested on Windows. Adapts the auth kernel of xbzbing/dsh-auth-gateway (MIT) — do not install both, they both own the web gateway port.'
-  zh: '锁屏、密码／OTP／Passkey、持久化登录与自定义壁纸，支持 Linux/macOS 的 Harness 电源管理（需安装随包提供的 systemd/launchd 服务）及 npm 更新；Windows 为实验支持，暂未实机验证。认证内核改编自 xbzbing/dsh-auth-gateway（MIT），不能与其同装：两者都占用 Web 网关端口。'
+  en: 'Lock screen with password/OTP/Passkey, persistent sessions and custom wallpapers; Harness power controls and npm updates on Linux/macOS/Windows 11 (requires the bundled systemd/launchd/Task Scheduler controller). Windows 11 lifecycle, update and rollback are tested; stopping interrupts the managed process tree. Auth kernel adapted from xbzbing/dsh-auth-gateway (MIT); do not co-install, both own the web gateway port.'
+  zh: '锁屏、密码／OTP／Passkey、持久化登录与自定义壁纸，支持 Linux/macOS/Windows 11 的 Harness 电源管理及 npm 更新（需安装随包提供的 systemd/launchd/任务计划程序控制服务）。Windows 11 已实测登录、重启、停止、npm 更新及失败回滚；停止会中断托管进程树。认证内核改编自 xbzbing/dsh-auth-gateway（MIT），不能与其同装：两者都占用 Web 网关端口。'
 icon: https://raw.githubusercontent.com/floatDreamWithSong/dsh-lifecycle/main/assets/icon.png
