@@ -1,0 +1,7 @@
+url: https://github.com/uoiszero/dsh-photo-picker/tree/main/plugin
+name: uoiszero/dsh-photo-picker#plugin
+category: ui
+icon: https://raw.githubusercontent.com/uoiszero/dsh-photo-picker/main/plugin/assets/icon-180.png
+description:
+  en: 'A DSH workbench for picking photos from local folders: local dedupe, filtering and grouping, AI grid triage and scoring, then human review, calibration and export.'
+  zh: 'DSH 本机照片挑选工作台：本地去重、过滤与分组，AI 网格粗筛与评分，并支持人工复核、校准与导出。'
