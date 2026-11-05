@@ -1,0 +1,7 @@
+url: https://github.com/lzyxczw-cyber/dsh-thinking-cn
+name: lzyxczw-cyber/dsh-thinking-cn
+category: ui
+description:
+  en: 'Mounts the shipped experimental reasoning translation and pins it to Simplified Chinese: expanding a Think row translates its body through the anonymous Bing endpoint with no account or key, the original stays behind a View original toggle, and finished translations are stored in the session for reuse.'
+  zh: '挂载内置的实验性思考翻译并固定为简体中文：展开 Think 行即通过免登录的必应端点翻译正文，原文保留在 View original 切换里，已完成的译文存入会话复用。'
+icon: https://raw.githubusercontent.com/lzyxczw-cyber/dsh-thinking-cn/main/assets/icon-180.png
