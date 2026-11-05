@@ -1,0 +1,6 @@
+url: https://github.com/wdj20050927/dsh-quality-guard
+name: wdj20050927/dsh-quality-guard
+category: workflow
+description:
+  en: 'Second-model gate on the assistant turn: when a turn is about to end, a separate judge call scores the draft against the numbered criteria (0-10 each), any criterion under 6 fails the turn and sends it back for a rewrite up to 3 rounds by default; a web panel edits the criteria and thresholds, and every verdict is appended to an audit log.'
+  zh: '助手回合收口前的第二模型质检：轮次将结束时由独立判官调用按编号判据逐条打 0-10 分，任一条低于 6 分即判不合格并打回重写，默认最多回炉 3 轮；Web 面板编辑判据与阈值，每次判定写入审计日志。'
