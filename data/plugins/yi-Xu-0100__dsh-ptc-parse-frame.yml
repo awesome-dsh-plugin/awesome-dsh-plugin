@@ -1,1 +1,5 @@
-
+url: https://github.com/yi-Xu-0100/dsh-ptc-parse-frame name: yi-Xu-0100/dsh-ptc-parse-frame
+category: dev
+description:
+  en: Adds the parse error line number and code frame to run_code errors.
+  zh: 为 run_code 解析错误补充行号和代码定位框。
