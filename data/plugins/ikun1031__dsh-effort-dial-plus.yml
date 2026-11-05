@@ -1,0 +1,7 @@
+url: https://github.com/ikun1031/dsh-effort-dial-plus
+name: ikun1031/dsh-effort-dial-plus
+category: ui
+description:
+  en: 'Codex-style reasoning-effort card in the composer: one control for model and effort, per-level accent colors, a quota line on the top level, and a blue-purple gradient with drifting particles.'
+  zh: '输入框里的 Codex 风格推理强度卡片：一个控件同时管理模型与档位，档位逐级变色，最高档显示额度提示并切换为蓝紫渐变与流动粒子。'
+icon: https://raw.githubusercontent.com/ikun1031/dsh-effort-dial-plus/main/assets/icon-180.png
