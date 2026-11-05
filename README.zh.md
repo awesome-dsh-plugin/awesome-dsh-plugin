@@ -1509,6 +1509,7 @@ dsh plugin --profile web add dshmarket
 - [TLEWA/dsh-better-choice](https://github.com/TLEWA/dsh-better-choice) — 为 DSH 的 ask_user_question 选择题卡片增加两项能力：右键选项展开补充说明，并合并进提交的 custom 答案；卡片底部可以先问一句，由 fork 子代理带着当前会话上下文只读作答，不改写会话。左键选择、跳过、分页与倒计时照旧，且只接管普通选择题卡片，不接管计划确认与审批卡片。适配 DSH 0.2.0-rc.1 及以上的 0.2.x（已在 0.2.2-rc.1 验证），需 Node.js 20+。由 buaaflyaway/dsh-question-note（MIT）派生、并受 MichengAI/dsh-btw（Apache-2.0）启发；不要与 dsh-question-note 同装——两者会接管同一张 ask_user_question 卡片。
 - [TLEWA/dsh-sidebar-organizer](https://github.com/TLEWA/dsh-sidebar-organizer) — 为 DSH 的七处按钮与卡片区域（左侧边栏、侧栏底部、对话标签、输入框工具条、会话头部图标条、右侧栏、设置导航）提供自定义排序与收纳，并支持分区拖动开关和布局 JSON 导入/导出；收纳项会进入该区域内置的「更多」菜单，可随时拖回。
 - [TLEWA/dsh-sidebar-row-menu](https://github.com/TLEWA/dsh-sidebar-row-menu) — DSH 侧边栏行右键菜单：在 DSH 0.2.2 及以上，两类行用的都是宿主菜单——工作区行按会话菜单的分组排入新建会话、复制路径与在文件夹显示、置顶打开方式、打开方式子菜单与批量删除；会话行在指针处展开菜单，并追加置顶打开方式、打开方式子菜单以及已归档会话的永久删除。条目默认只出现在右键菜单，可在设置里逐项开启「同时放进「…」菜单」；0.2.1 上工作区菜单由插件自绘。 改编自 miao-ge/dsh-sidebar-context-menu 与 0imzero/dsh-workspace-menu，请勿与它们同时安装——三者都会给同一批侧边栏行挂右键菜单。
+- [tommy00748-tech/dsh-adhd-noise](https://github.com/tommy00748-tech/dsh-adhd-noise) — DSH 输入框下方的 ADHD 友好专注声景：白/粉/棕噪与雨声、风扇五种程序化合成音色，实时波形声球、15–90 分钟定时淡出与液态玻璃浮层；无音频素材、无网络请求。
 - [tomowang/dsh-tui](https://github.com/tomowang/dsh-tui) — 基于 pi-tui 的 DeepSeek Harness 全屏终端客户端：会话回放/续接、流式响应、可折叠工具卡片、终端内审批与提问、模型/预设/权限/计划/目标管理、Shell 模式，以及轨迹（trajectory）事件台账。
 - [tonebean/dsh-inline-visualizer](https://github.com/tonebean/dsh-inline-visualizer) — 对话内联可视化：模型先按需加载设计契约，再把 SVG 或沙箱 HTML 卡片就地渲染在对话里，支持深浅色令牌与源码/下载切换。
 - [tonyischen/ds_ask_graph](https://github.com/tonyischen/ds_ask_graph) — 把 DSH 会话历史整理成可下钻的专题/问题图谱，支持语义整理，并可导出 HTML、SVG 和 Bluepin vault。
@@ -8269,6 +8270,7 @@ dsh plugin --profile web add dshmarket
 - [MoonlitDropOfBlood/dsh-agent-approval](https://github.com/MoonlitDropOfBlood/dsh-agent-approval) — 由独立审批子代理裁决每次沙箱提权，可配置审批模型并带审计记录。
 - [MoruTeaven/dsh-key-panel](https://github.com/MoruTeaven/dsh-key-panel) — 为 DSH Desktop 提供密钥库，集中保管 API 密钥并以 $DSH_* 变量注入助手的 shell 中。
 - [MrWeiCodes/dsh-permgate](https://github.com/MrWeiCodes/dsh-permgate) — 细粒度权限网关：按分类（工作区外目录/命令/读写文件/子代理/重复操作）逐项审查工具调用，全局/项目双级白黑名单、快捷工具默认值、自定义规则，中英文审批弹窗（内联 diff 详情、自定义拒绝意见）与底层沙箱升级流程。
+- [my-0228/dsh-api-key-switch](https://github.com/my-0228/dsh-api-key-switch) — DSH 多 API Key 管理：在设置里保存多把 Key 并一键切换，下一次模型请求即生效，无需重启 DSH。
 - [MYCF711/dsh-sovereign](https://github.com/MYCF711/dsh-sovereign) — 宿主面主权条款与内容守卫：在系统提示词末节注入「用户裁定」条款，清洗工具结果里的凭据与隐蔽载体，按可逆性前置拦截不可逆操作。对全部 agent preset 生效。
 - [MyRemme/dsh-computer-use-guard](https://github.com/MyRemme/dsh-computer-use-guard) — 给 computer-use（cua-driver）工具族加三档「禁止 / 询问 / 自动授权」闸门：每个工具类别在设置里各占一个分段控件，另可用放行名单或拒绝名单按工具名覆盖档位。
 - [NanmiCoder/dsh-auto-mode](https://github.com/NanmiCoder/dsh-auto-mode) — 在 Workspace Write 与 Full access 之间增加 Auto 权限档：日常操作留在官方 workspace-write 沙箱内，由当前会话模型复核升权与破坏性调用，精确的越界访问按次放行一次，意图不明时询问，命中关键路径则拒绝。
