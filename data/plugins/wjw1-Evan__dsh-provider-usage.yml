@@ -2,6 +2,6 @@ url: https://github.com/wjw1-Evan/dsh-provider-usage
 name: wjw1-Evan/dsh-provider-usage
 category: usage
 description:
-  en: 'One collapsible sidebar widget with OpenCode GO, Command Code and GLM Code Plan quota windows, reset countdowns and top-up balances, plus a per-turn balance-change animation in the widget and a /provider-usage command.'
-  zh: '一个可折叠的侧边栏组件，集中显示 OpenCode GO、Command Code 与 GLM Code Plan 的套餐窗口、重置倒计时和充值余额，并在对话轮次结束后在组件内动画显示所用服务商的余额变化，另提供 /provider-usage 命令。'
+  en: 'One collapsible sidebar widget with OpenCode GO, Command Code and GLM Code Plan quota windows, reset countdowns and top-up balances, plus a periodic balance-change animation in the widget and a /provider-usage command.'
+  zh: '一个可折叠的侧边栏组件，集中显示 OpenCode GO、Command Code 与 GLM Code Plan 的套餐窗口、重置倒计时和充值余额，并在轮询发现余额变化时在组件内动画显示，另提供 /provider-usage 命令。'
 tarball: https://github.com/wjw1-Evan/dsh-provider-usage/releases/latest/download/dsh-multi-provider-usage.tgz
