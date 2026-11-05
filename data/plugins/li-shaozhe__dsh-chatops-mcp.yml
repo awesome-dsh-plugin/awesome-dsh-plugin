@@ -1,0 +1,7 @@
+url: https://github.com/li-shaozhe/dsh-chatops-mcp
+name: li-shaozhe/dsh-chatops-mcp
+category: tools
+description:
+  en: 'DSH plugin: three MCP tool servers for DingTalk (via the dws CLI), Feishu (via lark-cli) and Feishu Project (via the official @lark-project/mcp), reusing whichever account those CLIs are already logged in with, so 140 tools are registered by default (47 DingTalk, 45 Feishu, 48 Feishu Project) under the mcp__dingtalk__ / mcp__feishu__ / mcp__meego__ prefixes. A sidebar panel adds a connector wall with one-click connect (installs the CLI and walks through device-code login), custom MCP connections pasted as mcpServers JSON, enable/disable per connection, the write-tool switch, and a searchable catalog of the 1098 dws and 246 lark-cli commands.'
+  zh: 'DSH 插件：把钉钉（走 dws CLI）、飞书（走 lark-cli）和飞书项目（走官方 @lark-project/mcp）做成三个 MCP 工具服务器，直接复用这两个 CLI 已登录的账号，默认注册 140 个工具（钉钉 47、飞书 45、飞书项目 48），前缀分别是 mcp__dingtalk__ / mcp__feishu__ / mcp__meego__。侧边栏面板提供连接器墙（一键连接：装 CLI 并走设备码登录）、粘贴 mcpServers JSON 添加自定义 MCP、逐条启停、写工具开关，以及可搜索的 1098 条 dws 与 246 条 lark-cli 命令目录。'
+icon: https://raw.githubusercontent.com/li-shaozhe/dsh-chatops-mcp/main/assets/icon-180.png
