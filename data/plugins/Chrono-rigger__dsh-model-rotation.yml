@@ -1,0 +1,7 @@
+url: https://github.com/Chrono-rigger/dsh-model-rotation
+name: Chrono-rigger/dsh-model-rotation
+category: model
+tarball: https://github.com/Chrono-rigger/dsh-model-rotation/releases/latest/download/dsh-model-rotation.tgz
+description:
+  en: "Ordered model rotation for the DSH model picker: a rate-limited or repeatedly timing-out member hands over to the next one, members that only timed out are retested once, and the DSH platform model is the sticky last resort. Ships a settings page with editable chains and a short-429 in-place retry switch."
+  zh: "DSH 模型选择器里的有序轮换：成员被限流或超时到上限就交给下一位，只超时过的成员进入一轮复测，最后由 DSH 平台模型兜底。附带可编辑链路的设置页与短时限流原地重试开关。"
