@@ -1,0 +1,7 @@
+url: https://github.com/jiuwu02/dsh-token-panorama
+name: dsh-token-panorama
+category: usage
+description:
+  en: "Shows where every session's tokens go: lifetime totals, cache hit rate, peak/off-peak cost, a calendar heatmap, a trend chart, per-model and per-workspace breakdowns, and a session tree revealing subagent sessions, with CSV/JSON export. Also ships context clear/compact actions and a prompt optimization button."
+  zh: "看清每个会话的 token 去向：累计总量、缓存命中率、峰谷分时成本、日历热力图、趋势曲线、模型与工作区分布，以及展开展示子代理的会话树，支持 CSV / JSON 导出。另带上下文清理 / 压缩按钮与提示词优化按钮。"
+tarball: https://github.com/jiuwu02/dsh-token-panorama/releases/latest/download/dsh-token-panorama.tgz

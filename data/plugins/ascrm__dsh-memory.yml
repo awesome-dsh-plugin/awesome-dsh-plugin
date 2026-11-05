@@ -1,0 +1,6 @@
+url: https://github.com/ascrm/dsh-memory
+name: ascrm/dsh-memory
+category: memory
+description:
+  en: 'Local-first, file-backed memory plugin for DeepSeek Harness: Markdown memories, verified trust, per-turn recall, and optional SQLite FTS5.'
+  zh: '为 DeepSeek Harness 打造的本地优先、基于文件的记忆插件：支持 Markdown 记忆存储、可验证的信任机制、逐轮次回忆，以及可选的 SQLite FTS5 全文检索。'
