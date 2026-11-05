@@ -5136,6 +5136,7 @@ dsh plugin --profile web add dshmarket
 - [Qinling-Melon-Farmers/dsh-tutorloop](https://github.com/Qinling-Melon-Farmers/dsh-tutorloop) — 面向自选资料的学习陪练，使用当前 DSH 会话模型，提供引导练习、证据反馈、Leitner 间隔复习、18 个教师工具与中英双语学生面板；要求 DSH >=0.2.1-rc.2 <0.3.0-0、Python 3.11+ 及 Python 运行时依赖。
 - [qixin-ai-data/dsh-qixin-insight-mcp-oauth](https://github.com/qixin-ai-data/dsh-qixin-insight-mcp-oauth) — 通过 OAuth 2.1 + PKCE 授权接入启信慧眼 MCP 服务，以单条插件条目把它的工具挂载为 mcp__qixin_insight__*，token 到期前自动刷新，断开时吊销。
 - [qphotoai/dsh-computer-use-windows](https://github.com/qphotoai/dsh-computer-use-windows) — 适用于 Windows 的 DeepSeek Harness Computer Use 插件，支持 UIA、cua-driver 和可选 GLM 视觉。
+- [qq1003240666/dsh-qingshi-plugin](https://github.com/qq1003240666/dsh-qingshi-plugin) — 青史日记与族谱助手：读写生涯记录、按称谓倒推亲属关系，并在独立窗口里操作真实 H5 页面。
 - [QqiqiQ/dsh-calculator](https://github.com/QqiqiQ/dsh-calculator) — 为 agent 提供 calculate 工具，内置零依赖表达式解析器（不用 eval），支持批量求值与金额精确小数模式。
 - [QSWWLTN/dsh-UEAssetsOperator](https://github.com/QSWWLTN/dsh-UEAssetsOperator) — 通过 Unreal 内置 Python 提供 .uasset 检查与受限蓝图节点编辑。
 - [QuantumKuba/dsh-graphify-plugin](https://github.com/QuantumKuba/dsh-graphify-plugin) — 为 DeepSeek Harness 提供原生 Graphify 知识图谱支持，包含 10 个代码智能工具、拓扑搜索、核心节点发现与 PR 影响分析。
@@ -6926,6 +6927,7 @@ dsh plugin --profile web add dshmarket
 - [PPawnsir/task-board-plugin#dsh-agent-board](https://github.com/PPawnsir/task-board-plugin/tree/main/packages/dsh-agent-board) — DeepSeek Harness 会话任务看板：主窗口把任务派发给一次性 Worker/Verifier 子代理执行与验收，支持依赖调度、文件级排他锁、裁决挂起冻结、里程碑进展上报与任务级 Token 消耗统计。
 - [Punky971210/dsh-punky-swarm#dsh-punky-swarm](https://github.com/Punky971210/dsh-punky-swarm/tree/main/packages/dsh-punky-swarm) — dsh 单机多子 Agent 集群治理：引擎级质量门禁拒收半成品、崩溃断点续跑不重来——给 AI 团队装上"跑不坏"的工程护栏。
 - [Q00/ouroboros#integrations/dsh-plugin](https://github.com/Q00/ouroboros/tree/main/integrations/dsh-plugin) — 通过 DSH MCP 客户端挂载 Ouroboros 的纯配置包，在 DSH 中提供 36 个涵盖需求访谈、Seed、执行、评估与演化流程的工具。
+- [qiqll/dsh-task-suite](https://github.com/qiqll/dsh-task-suite) — DeepSeek Harness 的文件制任务池与调度器：用 Markdown 维护 P0–P3 待办，每次只把一个任务交给后台 subagent，重跑项目测试命令做机器验收，并按 git 提交或文件快照核对结果；git 与非 git 目录都能用。
 - [QlzqQlzq/dsh-dual-agent-presets](https://github.com/QlzqQlzq/dsh-dual-agent-presets) — 安装两个可选 Agent Preset：默认不暴露 Shell 的通用 Agent，以及面向真实代码仓库的 Coding Pro。
 - [quaner1234-cmd/dsh-subagent-watchdog](https://github.com/quaner1234-cmd/dsh-subagent-watchdog) — 当原生可续接 DSH 子代理因明确的 max-tokens 终止时自动续接一次，然后停止介入。
 - [que3sui/dsh-darwin#forge](https://github.com/que3sui/dsh-darwin/tree/main/packages/forge) — 自进化执行器：消费会话日志挖掘出的问题工单，在评测门（hold-out canary 防作弊）下合成技能候选，人工确认晋级到项目 .dsh/skills 并支持确定性回滚。
