@@ -4420,6 +4420,7 @@ dsh plugin --profile web add dshmarket
 - [988hj7tczd-oss/dsh-mcp-tunnel](https://github.com/988hj7tczd-oss/dsh-mcp-tunnel) — 把本机 MCP Server 通过出站-only 隧道栈（mcp-proxy + cloudflared Quick Tunnel）暴露给远程 Agent，并把公网 URL 注册进 dsh-mcp-client 的 streamable-http 配置。
 - [988hj7tczd-oss/dsh-pr-description](https://github.com/988hj7tczd-oss/dsh-pr-description) — 分析当前分支 diff，生成符合 Conventional Commits 的 PR 标题与动机/方案/影响/测试/风险描述和自审清单，输出 PR_DESCRIPTION.md，可选直接调用 gh 提 PR。
 - [988hj7tczd-oss/dsh-receipts](https://github.com/988hj7tczd-oss/dsh-receipts) — 从本地 DSH 会话日志（JSONL）挖掘「使用与影响」报告：Markdown 日/周/月报 + 自包含 HTML receipt，交叉本机 git log；零联网、隐私优先。
+- [a1121611810/dsh-media-converter](https://github.com/a1121611810/dsh-media-converter) — DeepSeek Harness 的本地多媒体工具箱：27 种视频/音频/图片格式互转、裁剪、不重编码地剥离音轨或画面、导出内嵌字幕为 .srt、带前后对比预览的图片压缩、元数据查看与改写、Base64 编解码——全部走本机已装的 ffmpeg，文件不出本机；同一引擎也注册为 agent 可调用的 media_toolbox 工具。
 - [a23842/dsh-waste-market](https://github.com/a23842/dsh-waste-market) — DeepSeek Harness A 股行情面板：实时大盘指数、技术选股（13 项信号 + 多策略交叉）、7×24 多源快讯聚合、自选股分组管理、市场情绪温度计（连板梯队/涨跌家数）、K 线图（MA/EXPMA/BOLL 叠加）、板块榜/涨停池/龙虎榜。
 - [a494359163-byte/dsh-multicad](https://github.com/a494359163-byte/dsh-multicad) — 通过 MCP 把 AutoCAD、中望、浩辰、BricsCAD 接入 DeepSeek Harness，内置 CAD 服务端，首次运行自动搭建私有 Python 环境。需要 Windows、本机已安装上述任一款 CAD、PATH 上有 Python 3.10+，且 CAD 与 DSH 以同一 Windows 用户、同一权限级别运行。
 - [aa2246740/dsh-cuadrive-mac](https://github.com/aa2246740/dsh-cuadrive-mac) — 通过插件独立管理的 Cua Driver 运行时提供 macOS 电脑操作工具。
@@ -4607,7 +4608,7 @@ dsh plugin --profile web add dshmarket
 - [DSH-Raising-Plan/dsh-window-locator](https://github.com/DSH-Raising-Plan/dsh-window-locator) — 提供 Windows 显示器几何与前台窗口的物理像素坐标。
 - [duhu2000/dsh-data-cleaning-agent](https://github.com/duhu2000/dsh-data-cleaning-agent) — 数据清洗补全智能体：面向 Excel/CSV/JSON 企业名单，提供数据清洗、表格清洗、清洗补全、去重、企业数据补全与字段补全，支持企查查 MCP 和结果导出。
 - [duhu2000/dsh-form-fill-agent#dsh-form-fill-agent](https://github.com/duhu2000/dsh-form-fill-agent/tree/main/packages/dsh-form-fill-agent) — AI填表智能体：支持自动填表、表格填充、表格补全、Excel填表与 Excel回填；使用企查查 MCP 填写 XLSX 空白字段，预览确认后导出新副本。
-- [duhu2000/dsh-mcp-connector](https://github.com/duhu2000/dsh-mcp-connector) — MCP连接器：DeepSeek Harness 的 MCP 管理面板；通过持续更新的超百个 MCP连接器目录接入 MCP Server，统一连接管理与授权配置、跨连接搜索工具并完成连接排障；可按连接/服务/发现状态筛选，查看易读参数、最后成功缓存时间和诊断，并逐连接重新发现工具；支持 OAuth 2.0 PKCE、API Key、stdio/HTTP 和 mcpServers JSON 导入；由企查查/QCC 团队维护。
+- [duhu2000/dsh-mcp-connector](https://github.com/duhu2000/dsh-mcp-connector) — MCP连接器：DeepSeek Harness 的专业 MCP 市场、数据市场与 MCP 管理面板，汇聚企业、金融、法律、专利、科研和地理等 Model Context Protocol（MCP）数据源。通过超百个 MCP连接器接入 MCP Server，支持连接管理、授权配置、跨连接搜索工具与排障；支持 OAuth、API Key、HTTP/stdio。由企查查/QCC团队维护；数据权限与费用以各服务商为准。
 - [duhu2000/qcc-mcp-legal-oauth](https://github.com/duhu2000/qcc-mcp-legal-oauth) — 一键 OAuth（PKCE）授权接入企查查法律产品——法律数据 MCP 服务（法规检索、案例检索）：动态注册客户端、token 自动刷新、动态配置 mcp-client 条目，一次授权覆盖法规与案例服务。
 - [duhu2000/qcc-mcp-oauth](https://github.com/duhu2000/qcc-mcp-oauth) — 一键 OAuth（PKCE）授权接入企查查 MCP 服务：动态注册客户端、token 自动刷新、动态配置 mcp-client 条目，一次授权覆盖全部企查查数据服务。
 - [Duoasa/DSH-to-Figma](https://github.com/Duoasa/DSH-to-Figma) — 让 DSH 用自然语言读取、创建和修改 Figma 设计，支持批量调整图层、组件与变量、截图及素材导出。本地模式不消耗官方 Figma MCP 调用额度。
@@ -7778,7 +7779,7 @@ dsh plugin --profile web add dshmarket
 - [FlySnailY/dsh-langfuse-plus](https://github.com/FlySnailY/dsh-langfuse-plus) — DSH（DeepSeek Harness）的 Langfuse 可观测性插件：会话轮次映射为 Langfuse trace 树（同会话经 session id 聚合），提供 Prompt 版本管理与评测能力。
 - [FNOSP/fnos-dsh#dsh-fnos-plugin](https://github.com/FNOSP/fnos-dsh/tree/main/plugins/dsh-fnos-plugin) — 把 DeepSeek Harness 接进飞牛 fnOS：DSH 界面跑在 fnOS 应用框架里时通过 fnOS 浏览器 SDK 工作——DSH 设为跟随系统时读取并跟随 NAS 主题，在设置里列出和取消已授权的 NAS 目录，把文件与链接交给对应的 fnOS 应用打开，并把 DSH 页面标题同步到 fnOS 应用窗口。npm 安装：`dsh plugin --profile web add @tnnevol/dsh-fnos`。
 - [FNOSP/fnos-dsh#dsh-semi-ui-showcase-plugin](https://github.com/FNOSP/fnos-dsh/tree/main/plugins/dsh-semi-ui-showcase-plugin) — tnnevol 系列 DSH 插件共用的 Semi Design 组件检查页，从会话头部的 `Semi UI` 按钮进入：35 个组件加一个多账号案例页，按七个侧边分组组织，涵盖输入、表单、选择器、树、表格、卡片、浮层与反馈，逐个实渲并配一句话说明与页内目录，可切换浅色、深色与跟随系统预览。npm 安装：`dsh plugin --profile web add @tnnevol/dsh-semi-ui-showcase`。
-- [ForceMind/dsh-atelier](https://github.com/ForceMind/dsh-atelier) — 为 DeepSeek Harness 提供模型指标、费用估算、提示词库与可选请求审计的本地工作台。
+- [ForceMind/dsh-atelier](https://github.com/ForceMind/dsh-atelier) — 为 DeepSeek Harness 提供指标、费用估算、提示词与可选审计，支持上下文回复候选；自动建议默认开启，可能产生 API 费用。
 - [frisk325/dsh-rice-mode](https://github.com/frisk325/dsh-rice-mode) — 三档切换的「无限大白饭模式」（关 / 本轮 / 常开），控制要不要给系统提示注入「别省 token」的指令；「本轮」靠内核 agent/status 的 idle 事件自动回落。
 - [frozo-ai/dsh-worlds](https://github.com/frozo-ai/dsh-worlds) — 通过提供 `ctx.fs` 与 `ctx.subprocess` 接缝，把 agent 的文件系统、bash 与 PTY 终端跑在 Docker 容器里；工作目录、环境变量与后台进程可在 harness 重启后存活。
 - [fu827707013/dsh-concurrency-guard](https://github.com/fu827707013/dsh-concurrency-guard) — DeepSeek Harness 并发监控与门闩：模型请求达上限时 FIFO 排队防锁号，按天持久化统计并做异常分类，检测流被弃用的回合中断。
