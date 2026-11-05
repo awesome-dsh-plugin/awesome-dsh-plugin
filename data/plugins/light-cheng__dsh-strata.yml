@@ -1,0 +1,6 @@
+url: https://github.com/light-cheng/dsh-strata
+name: light-cheng/dsh-strata
+category: session
+description:
+  en: 'Layered context management: at each turn end older tool output becomes a deterministic card, the model can fold older ranges into its own summaries in up to three tiers (compress), and every original is archived locally for decompress and search_context.'
+  zh: '分层上下文管理：每轮结束时把较早的工具输出替换成确定性卡片；模型可以用 compress 把较早的范围折叠成自己写的摘要，最多三级；所有原文都存在本地，可用 decompress 和 search_context 取回。'
