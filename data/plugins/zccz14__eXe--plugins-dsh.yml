@@ -1,0 +1,6 @@
+url: https://github.com/zccz14/eXe/tree/main/plugins/dsh
+name: zccz14/eXe#dsh
+category: remote
+description:
+  en: 'Runs shell commands and captures screenshots on machines you have paired with eXe, over its relay: three model tools (device list, shell, screenshot), plus a sidebar page that shows the caller address of this machine, edits the device and trusted-caller lists with labels, and times a real call to each device on demand. Needs the eXe client running on those machines.'
+  zh: '在你已与 eXe 配对的机器上跑 shell、取截图，往返经 eXe 中继：三个模型工具（设备列表、shell、截图），外加一页侧边栏——本机调用方地址、可改名的设备与受信调用方清单，以及按设备一键测量一次真实调用的往返耗时。那些机器上需运行 eXe 客户端。'
