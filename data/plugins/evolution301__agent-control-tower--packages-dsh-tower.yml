@@ -1,0 +1,6 @@
+url: https://github.com/evolution301/agent-control-tower/tree/main/packages/dsh-tower
+name: evolution301/agent-control-tower#dsh-tower
+category: workflow
+description:
+  en: 'Control tower tools: dispatch a task to a role agent, read its report, verify and accept or send it back.'
+  zh: '控制塔工具：把任务分派给角色 agent、读取回执、校验通过后接受或打回。'
