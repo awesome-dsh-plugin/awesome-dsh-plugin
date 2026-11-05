@@ -1,0 +1,6 @@
+url: https://github.com/wangxy496/dsh-sensitive-guard
+name: wangxy496/dsh-sensitive-guard
+category: security
+description:
+  en: Replaces keys, tokens and passwords with <SG_> placeholders before they enter model context; plaintext stays in a local AES-256-GCM vault, revealed by a click-to-reveal lock in Settings and in user messages.
+  zh: 把密钥、令牌与密码在进入模型上下文前替换为 <SG_> 占位符，明文以 AES-256-GCM 加密保存在本地保管库；设置页与用户消息里可点小锁临时查看。
