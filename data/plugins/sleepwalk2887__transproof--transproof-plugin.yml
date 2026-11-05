@@ -3,4 +3,4 @@ name: sleepwalk2887/transproof#transproof-plugin
 category: tools
 description:
   en: 'TransProof translation proofreader for DeepSeek Harness: full web UI plus a local, non-networked run-local-check agent tool.'
-  zh: '译校助手 TransProof 的 DSH 插件：完整网页界面 + 不联网的「跑本地体检」Agent 工具。'
+  zh: '译校助手 TransProof：AI 翻译、三段流水线校对、术语专名自动核验、批量体检改错、一键出交付报告，网页与 DSH 插件双端同步，纯本地零后端。'
