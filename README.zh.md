@@ -304,7 +304,7 @@ dsh plugin --profile web add dshmarket
 - [Arc-huangjingtong/dsh-restart](https://github.com/Arc-huangjingtong/dsh-restart) — 在 macOS 版 DSH 桌面端侧栏添加重启按钮，一键完全退出并重新打开应用；其他平台按钮自动隐藏。
 - [ArcaneOrion/dsh-model-selector-search](https://github.com/ArcaneOrion/dsh-model-selector-search) — 搜索增强的会话模型选择器：两段式宽松匹配（先归一化子串，未命中再退子序列，glm53 命中 GLM-5.3、ds 命中 DeepSeek）、近七天成功调用过的供应商置顶，推理档位面板记住每个模型上次显式选择的档位。
 - [ArcaneOrion/dsh-teaching-board](https://github.com/ArcaneOrion/dsh-teaching-board) — 教学平面视图：agent 生成的自包含 HTML 投影进沙箱 iframe 当板书，可用画笔手写勾画（四色、橡皮、撤销）、在同一块板上增量续写，并把画面截图作为真实用户消息发回对话。
-- [Archaofan/dsh-source-deck](https://github.com/Archaofan/dsh-source-deck) — DSH Desktop 的会话内资料台：由当前对话模型执行搜索轮次，候选以 GitHub 卡片展示，保留/排除反馈、收藏夹与筛选结果都留在同一会话。
+- [Archaofan/dsh-source-deck](https://github.com/Archaofan/dsh-source-deck) — DSH Desktop 的会话内资料台（支持 DSH 0.2.2-rc.1）：由当前对话模型执行搜索轮次，候选以 GitHub 卡片展示，保留/排除反馈、收藏夹与筛选结果都留在同一会话。
 - [arcnapan/dsh-chat-answer-anchor](https://github.com/arcnapan/dsh-chat-answer-anchor) — 冻结 DSH 聊天区的滚动位置：新回答出现时视口不再自动贴到底部，停在你最后停留的地方。只有你发消息时才先跟到底，好让你看见自己发的话；回答一开始出字就重新锁住。每个会话各记各的位置（刷新还在），设置里有总开关，你自己滚动时永远不被拦。
 - [ardesp0630/dsh-work-progress](https://github.com/ardesp0630/dsh-work-progress) — 输入框下方常驻的工作进度行：任务完成度、进度条，以及此刻正在做什么（生成回复或执行工具）；展开可见完整任务清单与轮次、步骤、耗时、上下文占用。
 - [Arfrsa/dsh-sidebar-sections](https://github.com/Arfrsa/dsh-sidebar-sections) — 把 DSH 侧栏工作区列表分为「活跃 / 会话任务 / 不活跃」三段，支持手动钉住与活跃阈值，保留官方搜索、归档筛选、行菜单与拖拽，并可一键切回官方列表。「会话任务」段固定用 Windows 路径 D:\files\history-tasks，其他平台需自行预建该目录。
@@ -1480,6 +1480,7 @@ dsh plugin --profile web add dshmarket
 - [sunxiuguo/dsh-a2ui](https://github.com/sunxiuguo/dsh-a2ui) — A2UI v0.9/v0.9.1 对话界面开发预览，使用官方 schema 与渲染器，提供会话内表单动作及不重放动作的历史恢复；仅在 DSH 0.2.0-rc.2 的有界合成流程中验证。
 - [sunyuhuirong/fsviewer](https://github.com/sunyuhuirong/fsviewer) — Codex 式右侧工作区：文件树 + 预览页签（Markdown/源码）、嵌入式浏览器（直连/代理 iframe）、侧边聊天（直连 host LLM 流式对话），全部收敛为原生 details 右栏的页签，可开关多开。
 - [suyunxing/dsh-compact-sidebar](https://github.com/suyunxing/dsh-compact-sidebar) — 把侧栏导航在所有视口下都重画成紧凑双列网格；窄屏、矮窗口或粗指针设备上再加一层限制——导航最高 34vh 并允许滚动，给工作区与会话历史留出 38vh 下限。同时修复浏览器把 dsh-resource:// 记录协议判空导致的资源不可用。
+- [suyunxing/dsh-effort-slider](https://github.com/suyunxing/dsh-effort-slider) — 把输入框的模型选择器换成星光滑轨弹层，模型与思考强度由一个控件设置；切换模型时若目标模型没有当前档位，自动落到最接近的一档，不再报错。
 - [suyunxing/dsh-welcome-greeting](https://github.com/suyunxing/dsh-welcome-greeting) — 用新会话已选定的模型，按当地时间、城市与实时天气写一句简短问候，替换首屏标题；没有可用模型时退回本地按小时计算的问候。
 - [SUZUNAMI/dsh-workspace-hide](https://github.com/SUZUNAMI/dsh-workspace-hide) — 在 DSH 侧边栏隐藏指定工作区，并把它的会话一并归档，避免这些会话溢出到「未分组」列表。纯本地、完全可逆；装了 dsh-archive-manager 时执行真归档且可撤销，未装时退化为纯显示层。随时可在设置页恢复。
 - [sweet560/dsh-plugin-deepseek-chat](https://github.com/sweet560/dsh-plugin-deepseek-chat) — 在 DSH 左侧栏加入 DeepSeek 聊天入口，主内容区全宽内嵌 chat.deepseek.com（仅桌面版），恢复上次会话，并把内嵌页崩溃限制在面板内。
@@ -8141,6 +8142,7 @@ dsh plugin --profile web add dshmarket
 - [xxiaoxiong/dsh-prometheus](https://github.com/xxiaoxiong/dsh-prometheus) — 导出有界的 DSH Session、Agent、LLM、Tool、Approval、Subagent 与 Job Prometheus 指标，附带 Grafana 仪表盘，Endpoint 默认仅监听回环地址。
 - [xyrrrrr-r/dsh-eval-control](https://github.com/xyrrrrr-r/dsh-eval-control) — 宿主侧 DSH 评测控制插件：把单次评测试次的变量、预算上限、会话根目录与 fork 血统一次性注入 agent 进程，模型调用经宿主 broker 走网关租约，并写出 schema 版本化的 bundle descriptor 做证据归属。
 - [yanzhaohui1999/dsh-perf-hud](https://github.com/yanzhaohui1999/dsh-perf-hud) — 纯客户端性能 HUD 与默认常开的记录器：帧率与最差帧、Long Task 四条腿归因（React fiber / 子树 / DOM 写入 / 调度点）、每插件回调速率与同步耗时、DOM 增长与写入者、JS 堆、宿主 event-loop 与链路 RTT；守夜层自动留存最差几次卡顿，可逐帧回放并导出事故包。
+- [yi-Xu-0100/dsh-ptc-parse-frame](https://github.com/yi-Xu-0100/dsh-ptc-parse-frame) — 为 run_code 解析错误补充行号和代码定位框。
 - [yishuiliufang/dsh-relaunch](https://github.com/yishuiliufang/dsh-relaunch) — DSH 桌面应用重启按钮：侧栏一个入口，关闭全部 Harness 进程后重新启动应用；启动过程无控制台窗口、无关闭确认框。仅支持 Windows。
 - [yizhixiaokong/dsh-compose-panel](https://github.com/yizhixiaokong/dsh-compose-panel) — 在右侧栏列出各 DSH 工作区中的 Docker Compose 项目，按项目目录分组，显示容器状态，支持项目级与服务级 up/stop/restart 以及单服务日志流。
 - [yizhixiaokong/dsh-simple-restart](https://github.com/yizhixiaokong/dsh-simple-restart) — 在「设置 → 通用」增加一行重启按钮：用相同启动参数、经分离的 helper 重新拉起 dsh web；检测到 systemd 监管时默认拒绝（除非 allowRestart 为 true）；判断端口是否空闲用连接探测而非绑定。
