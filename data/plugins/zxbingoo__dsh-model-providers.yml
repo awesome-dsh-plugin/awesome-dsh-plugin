@@ -2,7 +2,7 @@ url: https://github.com/zxbingoo/dsh-model-providers
 name: dsh-model-providers
 category: model
 description:
-  en: Connect DeepSeek Harness to the local Codex CLI with dynamic model discovery, image input, and Harness-owned tool execution.
-  zh: 通过本机 Codex CLI 为 DeepSeek Harness 提供动态模型发现、图片输入与 Harness 工具调用。
-icon: https://raw.githubusercontent.com/zxbingoo/dsh-model-providers/v0.3.7/assets/avatar.png
-tarball: https://github.com/zxbingoo/dsh-model-providers/releases/download/v0.3.7/dsh-model-providers-0.3.7.tgz
+  en: Connect DeepSeek Harness to the local Codex CLI with dynamic model discovery, image input, Harness-owned tools, and read-only ChatGPT plan and quota display.
+  zh: 通过本机 Codex CLI 为 DeepSeek Harness 提供动态模型发现、图片输入、Harness 工具调用及 ChatGPT 套餐与额度只读展示。
+icon: https://raw.githubusercontent.com/zxbingoo/dsh-model-providers/v0.3.8/assets/avatar.png
+tarball: https://github.com/zxbingoo/dsh-model-providers/releases/download/v0.3.8/dsh-model-providers-0.3.8.tgz
