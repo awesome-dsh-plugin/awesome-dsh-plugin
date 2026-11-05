@@ -4,3 +4,4 @@ category: ui
 description:
   en: 'Quote and reply the way Claude Code does it: select text, answer it in a popover, stack the pairs as blocks above the composer, send them as one message.'
   zh: '选中对话里的文字就地引用回复，问答变成输入框上方的方块，一次发出。'
+icon: https://raw.githubusercontent.com/gf691271/dsh-quote-reply/main/assets/icon-180.png
