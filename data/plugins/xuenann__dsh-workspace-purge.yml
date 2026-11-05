@@ -1,0 +1,11 @@
+# Drop this file into the awesome-dsh-plugin repository as
+#   data/plugins/xuenann__dsh-workspace-purge.yml
+# and open a pull request. One entry per PR file; the site and the market's
+# plugins.json are regenerated from it.
+url: https://github.com/xuenann/dsh-workspace-purge
+name: xuenann/dsh-workspace-purge
+category: session
+description:
+  en: Deletes sidebar conversations and workspaces for real - session log, projection cache and workspace registration go together, with folders moved to the Recycle Bin.
+  zh: 真正删除侧栏的对话与工作区：会话日志、投影缓存与工作区登记一起清掉，目录移入回收站。
+icon: https://raw.githubusercontent.com/xuenann/dsh-workspace-purge/main/assets/icon-180.png
