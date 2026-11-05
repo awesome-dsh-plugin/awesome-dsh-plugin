@@ -1,6 +1,7 @@
 url: https://github.com/puppy-bai/dsh-quota-takeover
 name: puppy-bai/dsh-quota-takeover
 category: model
+tarball: https://github.com/puppy-bai/dsh-quota-takeover/releases/latest/download/dsh-quota-takeover.tgz
 description:
   en: >-
     Quota takeover for DeepSeek Harness on top of Our Free Model: compiles your
