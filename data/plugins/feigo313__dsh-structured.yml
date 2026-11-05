@@ -1,7 +1,7 @@
 url: https://github.com/feigo313/dsh-structured
 name: feigo313/dsh-structured
 category: session
-tarball: https://github.com/feigo313/dsh-structured/releases/download/v1.0.4/dsh-structured-1.0.4.tgz
+tarball: https://github.com/feigo313/dsh-structured/releases/download/v1.0.5/dsh-structured-1.0.5.tgz
 description:
   en: "Persona mode + structured output for DSH: identity header, three cards and signature rendered by the plugin while the model only submits a persona JSON envelope; per-session structured toggle, default-on persona."
   zh: "DSH 人格模式 + 结构化输出：身份头 / 三卡 / 收尾由插件渲染，模型只交 persona 内容块；人格默认开启、可显式关闭，结构化按会话开关。"
