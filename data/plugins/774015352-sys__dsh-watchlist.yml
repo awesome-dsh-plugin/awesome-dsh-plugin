@@ -1,0 +1,7 @@
+url: https://github.com/774015352-sys/dsh-watchlist
+name: 774015352-sys/dsh-watchlist
+category: ui
+description:
+  en: 'Follow list above the sidebar conversation list: a status dot per conversation (unread, waiting for you, running, failed), newest reply first, running ones last, and a follow toggle beside the model selector.'
+  zh: '在侧边栏对话列表上方增加关注区：每行一个状态圆点（未读、待回复、运行中、失败），有新回复的置顶、运行中的置底，模型选择器左侧还有关注按钮。'
+icon: https://raw.githubusercontent.com/774015352-sys/dsh-watchlist/main/assets/icon-180.png

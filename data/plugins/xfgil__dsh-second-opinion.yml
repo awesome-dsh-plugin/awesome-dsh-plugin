@@ -1,0 +1,6 @@
+url: https://github.com/xfgil/dsh-second-opinion
+name: xfgil/dsh-second-opinion
+category: agi
+description:
+  en: 'Expose a second-opinion tool: when the main agent is stuck it hands the problem to an independent session, receives a plan back, and continues — without waking or impersonating the user.'
+  zh: '跨会话「第二意见」：一个会话卡住时，把问题交给另一个独立会话单独思考，把方案拿回来继续。不冒充用户发言，也不唤醒闲置会话。'

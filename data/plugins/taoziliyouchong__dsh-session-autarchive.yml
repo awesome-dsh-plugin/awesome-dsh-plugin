@@ -1,0 +1,7 @@
+url: https://github.com/taoziliyouchong/dsh-session-autarchive
+name: taoziliyouchong/dsh-session-autarchive
+category: session
+description:
+  en: Archives sessions that have gone unused for longer than a set number of days (5 by default), skipping archived, pinned, and protected ones — a session context-menu item marks a single session as protected, a small shield shows it on the row, and a General settings field changes the threshold.
+  zh: 把长期没动过的会话自动归档（默认 5 天，已归档、置顶、标记「不自动归档」的跳过）——会话右键菜单可标记单条会话，行首显示盾牌，通用设置里改天数。
+icon: https://raw.githubusercontent.com/taoziliyouchong/dsh-session-autarchive/main/assets/icon-180.png

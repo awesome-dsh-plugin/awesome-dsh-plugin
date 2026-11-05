@@ -1,0 +1,6 @@
+url: https://github.com/DanielEstrada971102/dsh-skill-recursive
+name: DanielEstrada971102/dsh-skill-recursive
+category: skill
+description:
+  en: Adds SKILL.md bundles from nested subfolders of the standard DSH skill roots to the catalog, with settings for depth, watching, and extra roots.
+  zh: 把标准 DSH 技能根目录下嵌套子文件夹中的 SKILL.md 技能包加入目录，并可在设置中调整深度、监听和额外根目录。

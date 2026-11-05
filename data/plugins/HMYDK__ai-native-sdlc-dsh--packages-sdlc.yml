@@ -1,0 +1,7 @@
+url: https://github.com/HMYDK/ai-native-sdlc-dsh/tree/master/packages/sdlc
+name: HMYDK/ai-native-sdlc-dsh#sdlc
+category: workflow
+description:
+  en: 'AI-native SDLC as a DeepSeek Harness bundle: task state machine and artifact chain, independent verification with structured verdicts, per-issue rework and re-verification, test freezing, RSI retrospectives, and a read-only dashboard.'
+  zh: '把 AI 原生 SDLC 落成 DeepSeek Harness bundle：任务状态机与制品链、带结构化裁决的独立验证、按问题编号的返工与复验、测试冻结、RSI 复盘与只读看板。'
+tarball: https://github.com/HMYDK/ai-native-sdlc-dsh/releases/download/v0.6.0/ai-native-sdlc-plugin-dsh-sdlc-0.6.0.tgz

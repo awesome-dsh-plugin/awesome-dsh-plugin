@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/match-registration-agency
+name: liuhange789/data-asset-inspector#match-registration-agency
+category: tools
+description:
+  zh: "登记机构匹配插件 — 基于数据类型推荐数据交易所/登记机构"
+  en: "Registration agency matching plugin — recommends data exchange/registration agency based on data type."

@@ -1,0 +1,6 @@
+url: https://github.com/baixiaoyin666/dsh-long-memory
+name: baixiaoyin666/dsh-long-memory
+category: memory
+description:
+  en: 'Long-term memory for DeepSeek Harness: distils durable user preferences and project facts after each turn, injects a memory digest into later sessions, and keeps a daily diary of habits. Adds memory_search, memory_save and memory_forget tools.'
+  zh: '长期记忆插件：每轮对话结束后自动提炼用户偏好与项目事实并注入后续会话，还会写每日习惯日记；提供 memory_search、memory_save、memory_forget 三个工具。'

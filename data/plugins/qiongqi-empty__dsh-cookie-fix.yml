@@ -1,0 +1,7 @@
+url: https://github.com/qiongqi-empty/dsh-cookie-fix
+name: qiongqi-empty/dsh-cookie-fix
+category: dev
+description:
+  en: 'Keeps DeepSeek Harness desktop dsh-auth-* session cookies bounded by deleting stale ones during the token exchange performed on every launch, so random-port accumulation cannot reach the 16 KiB request-header limit and cause an HTTP 431 startup failure.'
+  zh: '在每次启动的令牌交换中删除多余的 dsh-auth-* 会话 cookie，让 DeepSeek Harness 桌面端的 cookie 数量保持在 3 条以内，避免随机端口累积达到 16 KiB 请求头上限而出现 HTTP 431 启动失败。'
+icon: https://raw.githubusercontent.com/qiongqi-empty/dsh-cookie-fix/main/assets/icon-180.png

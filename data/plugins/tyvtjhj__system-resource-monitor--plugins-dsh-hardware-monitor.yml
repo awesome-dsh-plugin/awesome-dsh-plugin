@@ -1,0 +1,7 @@
+url: https://github.com/tyvtjhj/system-resource-monitor/tree/main/plugins/dsh-hardware-monitor
+name: tyvtjhj/system-resource-monitor#dsh-hardware-monitor
+category: ui
+icon: https://raw.githubusercontent.com/tyvtjhj/system-resource-monitor/main/plugins/dsh-hardware-monitor/assets/icon-180.png
+description:
+  en: "Local hardware monitor for DSH: a sidebar dashboard, a composer-dock CPU/memory/GPU/temperature widget, and a hardware_monitor_status tool backed by a local Python service installed separately from the repository root with install-dsh.ps1 (Windows, Python 3.10); installing only the DSH plugin leaves the panel and tool offline."
+  zh: "DSH 本机硬件监控插件：侧边栏完整面板、输入框下方的 CPU/内存/GPU/温度挂件，以及 hardware_monitor_status 工具。数据来自另装的本地 Python 服务：需在仓库根用 install-dsh.ps1 安装（Windows、Python 3.10）；只装 DSH 插件时面板与工具均不可用。"

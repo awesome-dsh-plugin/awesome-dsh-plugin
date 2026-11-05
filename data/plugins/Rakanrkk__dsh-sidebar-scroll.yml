@@ -1,7 +1,7 @@
 url: https://github.com/Rakanrkk/dsh-sidebar-scroll
 name: Rakanrkk/dsh-sidebar-scroll
 category: ui
-tarball: https://github.com/Rakanrkk/dsh-sidebar-scroll/releases/download/v0.1.1/rakan-dsh-sidebar-scroll-0.1.1.tgz
+tarball: https://github.com/Rakanrkk/dsh-sidebar-scroll/releases/latest/download/dsh-sidebar-scroll.tgz
 description:
-  en: 'Scrolls DSH sidebar navigation and project/conversation lists together while keeping the header and account footer fixed (DSH 0.2.1-rc.3).'
-  zh: '功能菜单、项目与会话共用侧栏滚动区，顶部品牌、新会话与底部账户保持固定，适用于 DSH 0.2.1-rc.3。'
+  en: 'Shares sidebar navigation scrolling with Projects lists; supports native workspace scroll handoff and legacy outer scrolling (DSH 0.2.2-rc.1).'
+  zh: 'DSH 0.2.2-rc.1 侧栏共享滚动：功能菜单与 Projects 列表共用滚动区，工作区支持原生滚动接力或旧版外层滚动。'

@@ -1,0 +1,6 @@
+url: https://github.com/Roland0511/dsh-marktext
+name: Roland0511/dsh-marktext
+category: docs
+description:
+  en: "WYSIWYG Markdown editor in the DSH right sidebar, built on MarkText's muya engine: open a .md file, edit it as a rendered document, and save back through ctx.fs with a version guard."
+  zh: "基于 MarkText 内核 muya 的右侧栏所见即所得 Markdown 编辑器：打开 .md 按渲染结果编辑，保存走 ctx.fs 并带版本守卫。"

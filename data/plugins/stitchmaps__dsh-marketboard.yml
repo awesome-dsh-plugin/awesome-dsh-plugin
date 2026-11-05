@@ -1,0 +1,8 @@
+url: https://github.com/stitchmaps/dsh-marketboard
+name: stitchmaps/dsh-marketboard
+category: ui
+description:
+  en: 'Quote board for A-shares, Hong Kong and US stocks, FX, Chinese and global commodity futures and indices, with watchlists, custom groups, auto-refresh and host-side persistence.'
+  zh: 'A股、港股、美股、外汇、国内外商品期货与指数的行情看板，支持自选、自定义分组、自动刷新与宿主端持久化。'
+icon: https://raw.githubusercontent.com/stitchmaps/dsh-marketboard/main/assets/icon-180.png
+tarball: https://github.com/stitchmaps/dsh-marketboard/releases/download/v0.2.1/dsh-marketboard-0.2.1.tgz

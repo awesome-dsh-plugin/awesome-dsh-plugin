@@ -1,0 +1,6 @@
+url: https://github.com/Lumos-789/baton
+name: Lumos-789/baton
+category: workflow
+description:
+  en: 'Runs an approved OpenSpec change to completion while the model stays a mechanical forwarder: a bundled Python CLI computes the ticket DAG frontier, claims tasks atomically, prepares one git worktree per assignment, and returns exact actions. The session delegates each action with the DSH subagent tool and reconciles the completion notice against a hash-bound receipt produced by re-running verification commands on a clean, advanced HEAD, so free-text "done" never counts. Runtime scope changes are plain tasks.md edits. Requires Python 3.10+ on PATH and a git project that uses OpenSpec.'
+  zh: '把已批准的 OpenSpec change 跑到完成，同时让模型只做机械转发：内置 Python CLI 计算票据 DAG 前沿、原子认领任务、为每个 assignment 准备独立 git worktree，并返回确定的 actions。会话用 DSH subagent 派发每个 action，完成后按在干净且已前进的 HEAD 上重跑验证命令得到的哈希绑定回执来 reconcile，子代理口头说“做完了”不算成功。运行中改范围就是直接改 tasks.md。需要 PATH 上有 Python 3.10+，且目标项目使用 OpenSpec 的 git 仓库。'
