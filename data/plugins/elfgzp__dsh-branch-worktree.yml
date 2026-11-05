@@ -1,0 +1,6 @@
+url: https://github.com/elfgzp/dsh-branch-worktree
+name: elfgzp/dsh-branch-worktree
+category: git
+description:
+  en: 'Pick a Git branch, or name a new one, on the New Session screen and start the conversation inside an automatically created worktree, so the current checkout stays untouched.'
+  zh: '在新会话页选一个 Git 分支或新建一个，并在自动创建的 worktree 里开始对话，当前检出保持原样。'
