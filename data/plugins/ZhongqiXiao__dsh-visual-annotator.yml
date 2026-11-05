@@ -1,0 +1,6 @@
+url: https://github.com/ZhongqiXiao/dsh-visual-annotator
+name: ZhongqiXiao/dsh-visual-annotator
+category: browser
+description:
+  en: Annotate elements on real Chrome and Edge pages, then send selectors, comments and screenshots to the agent for visual front-end editing.
+  zh: 在真实 Chrome/Edge 页面上拾取、标注、评论并截图页面元素，将定位、评论与截图一并交给 agent 做前端可视化修改。
