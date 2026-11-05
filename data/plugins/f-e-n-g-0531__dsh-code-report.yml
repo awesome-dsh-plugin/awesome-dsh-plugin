@@ -1,0 +1,7 @@
+url: https://github.com/f-e-n-g-0531/dsh-code-report
+name: f-e-n-g-0531/dsh-code-report
+category: dev
+description:
+  en: Compare Git/SVN versions across repositories and export Chinese Markdown release reports with optional approved model analysis.
+  zh: 比较多个 Git/SVN 项目的版本差异，导出中文 Markdown 发布报告，并可明确授权模型分析。
+tarball: https://github.com/f-e-n-g-0531/dsh-code-report/releases/download/v1.0.0/feng0531-dsh-code-report-1.0.0.tgz
