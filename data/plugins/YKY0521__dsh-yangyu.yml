@@ -1,0 +1,7 @@
+url: https://github.com/YKY0521/dsh-yangyu
+name: YKY0521/dsh-yangyu
+category: identity
+description:
+  en: Multi-character companions with optional personas, editable per-character memories, persistent chat bindings, and QQ and WeChat bot connections with QR login and refresh.
+  zh: 多角色陪伴插件，支持可选人设、可编辑的角色记忆、持久会话绑定及 QQ、微信机器人连接与二维码刷新。
+tarball: https://github.com/YKY0521/dsh-yangyu/releases/download/v0.2.0/dsh-yangyu-0.2.0.tgz
