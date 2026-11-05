@@ -1,0 +1,6 @@
+url: https://github.com/elfgzp/dsh-llm-network-retry
+name: elfgzp/dsh-llm-network-retry
+category: dev
+description:
+  en: 'Keeps a model request alive through a dropped connection: transport failures retry until the network returns while real errors still fail fast, and a turn killed by a process crash offers a one-click, state-checking continuation.'
+  zh: '断网时不让模型请求死掉：连接类失败会重试到网络恢复，而真正的错误仍然立刻失败；被进程崩溃打断的一轮还会给出一键续跑，先核对状态再继续。'
