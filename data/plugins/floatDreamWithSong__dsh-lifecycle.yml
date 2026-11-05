@@ -2,6 +2,7 @@ url: https://github.com/floatDreamWithSong/dsh-lifecycle
 name: floatDreamWithSong/dsh-lifecycle
 category: security
 description:
-  en: 'Lock screen with password/OTP/Passkey, persistent sessions and custom wallpapers; Harness power controls and npm updates on Linux/macOS/Windows 11 (requires the bundled systemd/launchd/Task Scheduler controller). Windows 11 lifecycle, update and rollback are tested; stopping interrupts the managed process tree. Auth kernel adapted from xbzbing/dsh-auth-gateway (MIT); do not co-install, both own the web gateway port.'
-  zh: '锁屏、密码／OTP／Passkey、持久化登录与自定义壁纸，支持 Linux/macOS/Windows 11 的 Harness 电源管理及 npm 更新（需安装随包提供的 systemd/launchd/任务计划程序控制服务）。Windows 11 已实测登录、重启、停止、npm 更新及失败回滚；停止会中断托管进程树。认证内核改编自 xbzbing/dsh-auth-gateway（MIT），不能与其同装：两者都占用 Web 网关端口。'
+  en: 'Web-profile lock screen with password/OTP/Passkey, persistent sessions and custom wallpapers; Harness power controls and npm updates on Linux/macOS/Windows 11 (requires the bundled systemd/launchd/Task Scheduler controller). Version 0.1.8 fixes missing GitHub build artifacts; Electron Desktop is not supported. Windows 11 lifecycle, update and rollback are tested; stopping interrupts the managed process tree. Auth kernel adapted from xbzbing/dsh-auth-gateway (MIT); do not co-install, both own the web gateway port.'
+  zh: 'Web profile 锁屏、密码／OTP／Passkey、持久化登录与自定义壁纸，支持 Linux/macOS/Windows 11 的 Harness 电源管理及 npm 更新（需安装随包提供的 systemd/launchd/任务计划程序控制服务）。0.1.8 修复 GitHub 安装缺少构建产物；暂不支持 Electron Desktop。Windows 11 生命周期、更新及失败回滚已实测，停止会中断托管进程树。认证内核改编自 xbzbing/dsh-auth-gateway（MIT），不能与其同装：两者都占用 Web 网关端口。'
+tarball: https://github.com/floatDreamWithSong/dsh-lifecycle/releases/download/v0.1.8/dsh-lifecycle-0.1.8.tgz
 icon: https://raw.githubusercontent.com/floatDreamWithSong/dsh-lifecycle/main/assets/icon.png
