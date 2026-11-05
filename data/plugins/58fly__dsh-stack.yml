@@ -1,0 +1,6 @@
+url: https://github.com/58fly/dsh-stack
+name: 58fly/dsh-stack
+category: workflow
+description:
+  en: 'An always-on working style for DSH agents, packaged as an agent preset: restate the task, read before editing, verify each change with a real command, keep context lean. Ships 29 skills (plan loops, review loops, TDD, unsticking, PR watching) plus a turn guard that pushes back when a turn edits files without a successful check afterwards, and pushes back harder on a second miss.'
+  zh: '以 agent preset 形式提供的 DSH 常驻工作方式：复述任务、改前先读、每步用真实命令验证、控制上下文体积。内含 29 个技能（计划循环、评审循环、TDD、卡住换思路、PR 跟踪），以及一个回合守卫：当本轮改了文件却没有在之后跑成任何检查时出言打回，第二次再犯时措辞更硬。'
