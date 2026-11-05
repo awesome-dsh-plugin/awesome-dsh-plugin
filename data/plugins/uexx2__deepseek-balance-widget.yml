@@ -1,0 +1,7 @@
+url: https://github.com/uexx2/deepseek-balance-widget
+name: uexx2/deepseek-balance-widget
+category: usage
+description:
+  en: "Balance pill in the composer status row: live DeepSeek API balance, today's spend and top-ups, and the current peak / off-peak price with a change countdown; the balance row links to the Platform top-up page."
+  zh: "输入框下方状态栏常驻显示 DeepSeek 余额、今日已用金额与充值、当前峰谷单价和变价倒计时；点余额一行直接跳转 Platform 充值页。"
+tarball: https://github.com/uexx2/deepseek-balance-widget/releases/latest/download/deepseek-balance-widget.tgz

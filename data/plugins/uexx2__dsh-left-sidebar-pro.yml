@@ -1,0 +1,7 @@
+url: https://github.com/uexx2/dsh-left-sidebar-pro
+name: uexx2/dsh-left-sidebar-pro
+category: ui
+description:
+  en: "Rebuilt left sidebar: New Chat, a collapsible More group and a drag-to-sort Top section, with fold animations, session status dots and an inline archive button, plus full-page MCP server, archived-session and Skill managers."
+  zh: "左侧栏重排：新建对话 + 可折叠 More 分组 + 可拖动排序的置顶区，带展开收起动画、会话状态点和行内归档按钮，并提供「MCP 服务器」「已归档对话」「Skill 管理」三个整页界面。"
+tarball: https://github.com/uexx2/dsh-left-sidebar-pro/releases/latest/download/dsh-left-sidebar-pro.tgz
