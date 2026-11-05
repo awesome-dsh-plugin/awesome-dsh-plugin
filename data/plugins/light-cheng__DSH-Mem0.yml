@@ -2,7 +2,7 @@ url: https://github.com/light-cheng/DSH-Mem0
 name: light-cheng/DSH-Mem0
 category: memory
 description:
-  en: "Mem0-backed long-term memory for DeepSeek Harness with managed Platform, self-hosted server and local OSS backends; visual settings, automatic recall and capture, editable memory summary, token budgets and weekly memory hygiene."
-  zh: "为 DeepSeek Harness 提供基于 Mem0 的长期记忆，支持 Platform、自建 Server 和本地 OSS 后端，带可视化设置、自动召回与保存、可编辑记忆摘要、Token 预算和每周记忆巡检。"
+  en: "Mem0-backed long-term memory for DeepSeek Harness with managed Platform, self-hosted server and local OSS backends; visual settings, automatic recall (from the first turn) and capture, editable memory summary, token budgets and weekly memory hygiene that only deletes memories this plugin wrote. Captured text is redacted; the memory summary is a stable system-prompt section (plugin:dsh-mem0:profile) and recall a separate mem0:recall block appended last, so the cached prompt prefix stays stable; recall and capture have timeouts (recallTimeoutMs, addTimeoutMs). With dsh-strata installed, recall size follows its strataBudget allowance, and the optional captureStrataFolds setting (off by default) also saves its fold summaries as memories."
+  zh: "为 DeepSeek Harness 提供基于 Mem0 的长期记忆，支持 Platform、自建 Server 和本地 OSS 后端，带可视化设置、自动召回（从第一轮起）与保存、可编辑记忆摘要、Token 预算和每周记忆巡检（只删除本插件写入的记忆）。保存的文本会先脱敏；记忆摘要是稳定的系统提示段（plugin:dsh-mem0:profile），召回是最后追加的独立 mem0:recall 块，不破坏已缓存的提示前缀；召回与保存都有超时（recallTimeoutMs、addTimeoutMs）。安装 dsh-strata 时，召回大小遵循它的 strataBudget 额度；可选设置 captureStrataFolds（默认关闭）还会把它的折叠摘要存为记忆。"
 icon: https://raw.githubusercontent.com/light-cheng/DSH-Mem0/main/assets/icon.png
-tarball: https://github.com/light-cheng/DSH-Mem0/releases/download/v0.2.3/dsh-mem0-0.2.3.tgz
+tarball: https://github.com/light-cheng/DSH-Mem0/releases/download/v0.3.1/dsh-mem0-0.3.1.tgz
