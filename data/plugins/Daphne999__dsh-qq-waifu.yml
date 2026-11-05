@@ -1,0 +1,6 @@
+url: https://github.com/Daphne999/dsh-qq-waifu
+name: Daphne999/dsh-qq-waifu
+category: fun
+description:
+  en: "Waifu mode for QQ: every reply is automatically split into several short chat bubbles with a human-like typing delay, trailing periods are dropped, and tables or code blocks are kept intact. Works by patching the qqbot outbound path, so it composes with persona and QQ-bridge plugins instead of competing with them."
+  zh: '让 AI 在 QQ 里一句一句发消息：自动把每条回复拆成几个气泡、按字数给打字停顿、句末不留句号；表格和代码块整条不切。做法是给 qqbot 的发送链打补丁，因此可以与人设类、接通道类插件叠加使用。'
