@@ -4331,6 +4331,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [ZSeven-W/dsh-noema](https://github.com/ZSeven-W/dsh-noema) - Long-term memory for DSH agents — durable, inspectable memories with recall, search, browse and knowledge-graph tools, import from ten other AI coding tools, and a settings page.
 - [ZyxQl-Ala/dsh-decay-memory](https://github.com/ZyxQl-Ala/dsh-decay-memory) - Agent memory with a forgetting curve: entries gain weight when mentioned, shrink when forgotten, and pinned entries never decay. Six tools and a settings panel.
 - [zzy-fxxxexxxyxxx/dsh-openclaw-memory](https://github.com/zzy-fxxxexxxyxxx/dsh-openclaw-memory) - Share an existing OpenClaw Markdown workspace with DeepSeek Harness as bounded persona and memory context, with Sidebar browsing and editing.
+- [FogStop/whale-mind](https://github.com/FogStop/whale-mind) - Memory engine for a long-lived companion agent: a six-module loop (gate, solidify, store, retrieve, inject, decay) that decides what is worth keeping, distils raw turns into long-term entries, fuses short and long term at recall time, and fades entries that stop being used. Zero runtime dependencies, no build step, declared as a dsh.bundle plugin; ships three switchable panels over the same store - neural brain, memory ring and memory galaxy - so you can watch what it remembers.
 
 ### Tools & Capabilities
 
