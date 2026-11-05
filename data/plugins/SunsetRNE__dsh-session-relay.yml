@@ -4,4 +4,4 @@ category: session
 description:
   en: 'One main session coordinates several root sessions: a /relay command and 14 peer_* tools for batched status reports, a version-line notice, task-board claims, handoff and wake, read-only session inspection, and a web panel. Phone notifications need the DSHA device bridge.'
   zh: 由一个主会话协调多个平级会话：/relay 命令与 14 个 peer_* 工具，支持合并汇报、版本线公告、任务看板认领、交接与唤醒、只读查看会话，并带 Web 面板；手机通知需要 DSHA 设备桥。
-tarball: https://github.com/SunsetRNE/dsh-session-relay/releases/download/v1.3.0/dsh-session-relay-1.3.0.tgz
+tarball: https://github.com/SunsetRNE/dsh-session-relay/releases/download/v1.3.1/dsh-session-relay-1.3.1.tgz
