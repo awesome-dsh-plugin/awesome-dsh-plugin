@@ -1,0 +1,6 @@
+url: https://github.com/2008BingYu/dsh-qq-stack
+name: 2008BingYu/dsh-qq-stack
+category: usage
+description:
+  en: 'QQ protocol backend for DeepSeek Harness: boots LinuxQQ and NapCat with the engine and exposes a standard OneBot 11 endpoint.'
+  zh: 给 DSH 提供 QQ 协议端：随引擎启动 LinuxQQ 与 NapCat，对外提供标准 OneBot 11 接口。
