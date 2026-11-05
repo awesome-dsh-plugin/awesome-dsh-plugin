@@ -1,0 +1,7 @@
+url: https://github.com/dayutech/dsh-handy
+name: dayutech/dsh-handy
+category: ui
+description:
+  en: Adds a per-session notebook with autosave, a draggable key-information panel with collapsible items and queue injection, notebook and key-information inheritance for native and /fork forks, workspace-scoped session groups, session highlighting, running-workspace prioritization with a blue spinner, and close-current/left/right/all actions on every right-sidebar tab.
+  zh: 为每个会话增加自动保存的笔记本和可拖动关键信息面板，面板支持条目折叠与队列注入；原生分叉和 /fork 会继承笔记本与关键信息；另提供工作区会话组、会话高亮、运行工作区置顶与蓝色转圈指示，以及右侧边栏任意标签的关闭当前/左侧/右侧/全部操作。
+icon: https://raw.githubusercontent.com/dayutech/dsh-handy/main/assets/icon-180.png
