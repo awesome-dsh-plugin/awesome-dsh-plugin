@@ -1,0 +1,6 @@
+url: https://github.com/Leon-dbh/life-innovation
+name: Leon-dbh/life-innovation
+category: memory
+description:
+  en: 'Long-term memory for a resident DSH agent: a SQLite store of raw turns, summaries, assertions, profiles and relations filled by deterministic extraction; recall ranked by term rarity, recency and emotional weight with a reason for each hit; decay, archive and recycle for aging; and an action ledger behind a diary whose entries cite the messages and tool calls they came from.'
+  zh: '常驻 DSH agent 的长期记忆：SQLite 保存原话、梗概、要点、画像与关系，入库靠确定性抽取，不为此调用模型；召回按词稀有度、新鲜度与情绪权重排序，并给出每条命中的理由；带淡忘、归档与回收站；另有动作账本与每条都带证据的日记。'
