@@ -1,0 +1,7 @@
+url: https://github.com/dustcpu/dsh-geometric-splash
+name: dustcpu/dsh-geometric-splash
+category: ui
+description:
+  en: 'Page-level startup splash: a Penrose triangle light sweep over a living isometric diamond ocean, where the frame itself is the progress gauge, paced by the intro but capped by real DSH boot milestones. Any bare key skips it, ten palettes come from Monument Valley and Geometric Islands, and when the intro ends the triangle stays on as a small mark beside the composer that reflects what the agent is doing.'
+  zh: '页面级启动开屏：彭罗斯三角在等距菱格海面上旋转受光，取景框本身就是进度计，按开屏节奏平滑推进、以真实 DSH 启动完成度为上限；按任意键跳过，主题坞提供 Monument Valley / Geometric Islands 十套色板。开屏结束后三角留在输入框旁，作为一枚反映当前工作状态的小标记。'
+icon: https://raw.githubusercontent.com/dustcpu/dsh-geometric-splash/main/assets/icon-512.png
