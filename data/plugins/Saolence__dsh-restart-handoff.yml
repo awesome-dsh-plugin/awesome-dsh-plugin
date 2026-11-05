@@ -1,0 +1,6 @@
+url: https://github.com/Saolence/dsh-restart-handoff
+name: Saolence/dsh-restart-handoff
+category: session
+description:
+  en: Restarts the DSH desktop host when a change needs it, then hands the conversation back to the same session with a note the model writes about why it restarted and what comes next.
+  zh: 改动需要重启时自动重启 DSH 桌面宿主，重启后把模型写的交接话（为什么重启、下一步做什么）投回原会话继续。
