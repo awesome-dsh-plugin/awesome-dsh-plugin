@@ -1,4 +1,4 @@
-# Awesome DeepSeek Harness (DSH) Plugin [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg) ![plugin count](https://img.shields.io/endpoint?url=https%3A%2F%2Fawesome-dsh-plugin.com%2Fcount.json)
+﻿# Awesome DeepSeek Harness (DSH) Plugin [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg) ![plugin count](https://img.shields.io/endpoint?url=https%3A%2F%2Fawesome-dsh-plugin.com%2Fcount.json)
 
 [![Awesome DSH Plugin](https://awesome-dsh-plugin.com/banner-en.png)](https://awesome-dsh-plugin.com)
 
@@ -4661,6 +4661,12 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [XINY11451/dsh-wsl](https://github.com/XINY11451/dsh-wsl) - Extends the working range of DSH into WSL. Files in the distribution can be read, written, edited and searched by DSH directly. Depending on the task, the AI chooses for itself: run a one-off command, or open its own terminal and run several commands there to finish the job. Typing `dsh` in a WSL terminal calls DSH (type `dsh help` there for details), fusing WSL and DSH deeply. Every terminal you open can collaborate visually with the AI.
 - [yishuiliufang/dsh-wsl-first](https://github.com/yishuiliufang/dsh-wsl-first) - Publishes an ordered system prompt section that names wsl as the command executor to reach for first, so the agent prefers WSL over PowerShell on Windows. Registers no tools, and only advertises executors the agent can actually call.
 
+#### Desktop Companion Apps (non-plugin)
+
+Standalone Windows programs that run beside DSH rather than inside it. They do **not** install with `dsh plugin add`, so they are not valid `data/plugins/` entries; read the requirements before contacting the maintainers.
+
+- [skyline66/desktop-clock](https://github.com/skyline66/desktop-clock) - Always-on-top Windows clock and countdown widget built with WPF. A single 150 KB .exe with no installer and no runtime dependencies: draggable, pin-to-top, eight skins, custom colours, fonts, weight, opacity, corner radius and scale, countdown with target time, progress bar and completion sound, settings saved next to the exe. Non-plugin.
+
 ### Browser & Web
 
 - [131CDA1/dsh-scrape-webpage](https://github.com/131CDA1/dsh-scrape-webpage) - Fetches any http/https page and returns title, description, main text, heading outline and links, with stats (char/word counts, reading time, language) and top keywords; can download content images to the session workspace for vision analysis and dispatch them to registered analyzers via the scrape.imageAnalyzer service.
@@ -7575,6 +7581,8 @@ Your repo must:
 - carry the [`dsh-plugin`](https://github.com/topics/dsh-plugin) topic
 
 Themes & skins: entries under **Themes & Appearance** power the Themes tab in `dsh-market` — one-click install/switch for users.
+
+Native companion apps that are **not** installable via `dsh plugin add` (no `dsh.bundle`) can be proposed under the **Desktop Companion Apps (non-plugin)** subsection of [WSL & Windows Interop](#wsl--windows-interop). They are labelled non-plugin there, never use a `data/plugins/` entry, and are added by hand in a separate PR that touches no plugin entry. A PR that only adds plugin entries must not add or change that section.
 
 Full rules, examples, and the screenshots format: [contributing.md](contributing.md).
 

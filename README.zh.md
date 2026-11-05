@@ -1,4 +1,4 @@
-# Awesome DeepSeek Harness (DSH) Plugin [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg) ![插件数量](https://img.shields.io/endpoint?url=https%3A%2F%2Fawesome-dsh-plugin.com%2Fcount.json&label=%E6%8F%92%E4%BB%B6)
+﻿# Awesome DeepSeek Harness (DSH) Plugin [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![awesome · DSH plugin](https://awesome-dsh-plugin.com/badge.svg) ![插件数量](https://img.shields.io/endpoint?url=https%3A%2F%2Fawesome-dsh-plugin.com%2Fcount.json&label=%E6%8F%92%E4%BB%B6)
 
 [![Awesome DSH Plugin](https://awesome-dsh-plugin.com/banner-zh.png)](https://awesome-dsh-plugin.com/zh/)
 
@@ -4661,6 +4661,12 @@ dsh plugin --profile web add dshmarket
 - [XINY11451/dsh-wsl](https://github.com/XINY11451/dsh-wsl) — 将 DSH 的工作范围扩展到 WSL。插件支持了发行版中的文件直接被 DSH 读取、写入、编辑与搜索。面对不同任务需求，AI可根据任务需求自行选择执行一次性命令/自建终端执行多条命令以完成任务。支持在 WSL 终端中键入 dsh 命令调用 DSH(详情在 WSL 终端键入dsh help)，深度融合了 WSL 与 DSH。用户新建的所有终端支持与AI可视化协作。
 - [yishuiliufang/dsh-wsl-first](https://github.com/yishuiliufang/dsh-wsl-first) — 发布一段带顺序的系统提示词段，指定 wsl 为执行命令时优先选用的执行器，让模型在 Windows 上优先走 WSL 而不是 PowerShell。不注册任何工具，且只宣传模型真实可调用的执行器。
 
+#### 桌面伴侣程序（非插件）
+
+与 DSH 并排运行、而不是装在 DSH 里的独立 Windows 程序。它们**不能**用 `dsh plugin add` 安装，因此不占用 `data/plugins/` 条目；投递前请先读本小节的收录要求。
+
+- [skyline66/desktop-clock](https://github.com/skyline66/desktop-clock) — 置顶悬浮的 Windows 桌面时钟 + 倒计时小部件，WPF 原生实现。单个 150 KB 的 .exe，免安装、无运行时依赖：可拖动、图钉置顶、八套皮肤、自定义颜色/字体/字重/透明度/圆角/缩放，倒计时支持目标时间、进度条与到点提示音，设置保存在 exe 同目录。非插件。
+
 ### 🌐 浏览器与网页
 
 - [131CDA1/dsh-scrape-webpage](https://github.com/131CDA1/dsh-scrape-webpage) — 抓取任意 http/https 网页，提取标题、描述、正文、标题结构与链接，输出字符/词数、阅读时长、语言等统计与高频关键词；支持下载内容图片到会话工作区供视觉分析，并通过 scrape.imageAnalyzer 服务分发给已注册的识图分析器。
@@ -7575,6 +7581,8 @@ description:
 - 已添加 [`dsh-plugin`](https://github.com/topics/dsh-plugin) topic
 
 主题/皮肤类插件：放进**主题与外观**分类，会自动出现在 [dsh-market](https://github.com/dsh-market/dsh-market) 插件市场的**主题 Tab**，用户可一键安装、切换。
+
+**原生桌面伴侣程序**（没有 `dsh.bundle`、无法 `dsh plugin add` 安装的独立 exe）可以投到「WSL 与 Windows 互操作」下的**桌面伴侣程序（非插件）**小节：那里会明确标注非插件，不占用 `data/plugins/` 条目，并且由维护者用单独的 PR 手工添加；只投插件条目的 PR 不得顺带新增或改动该小节。
 
 完整规则、示例与截图格式见[贡献指南](contributing.md)。
 
