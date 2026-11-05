@@ -2882,7 +2882,6 @@ dsh plugin --profile web add dshmarket
 - [franksong2702/dsh-codex-connect](https://github.com/franksong2702/dsh-codex-connect) — 通过 ChatGPT OAuth 将 OpenAI Codex 模型接入 DeepSeek Harness，并提供可选的搜索与图片工具。
 - [frederico-kluser/dsh-orquestrator](https://github.com/frederico-kluser/dsh-orquestrator) — 自己选定子代理运行的模型——附带推理力度上限和输出 token 上限——在代码层面对 DSH 启动的每一个子代理强制执行，无论它由哪个工具启动。
 - [fu827707013/dsh-codebuddy-cli](https://github.com/fu827707013/dsh-codebuddy-cli) — 复用 CodeBuddy CLI 的登录态，把 CodeBuddy 包含的模型接入 DeepSeek Harness，设置卡片可查看账号、令牌有效期与剩余积分。
-- [functy23/dsh-workbuddy-panel](https://github.com/functy23/dsh-workbuddy-panel) — 把 WorkBuddy2API 网关托管进 DSH，提供原生面板、可独立更新的内核，以及对齐 WorkBuddy Desktop 5.9.2 的出站指纹。
 - [FuSheng-cs/Trae2api-dsh](https://github.com/FuSheng-cs/Trae2api-dsh) — 将 TRAE 账号的模型额度接入 dsh，支持多账号管理、自动签到、账号轮询、用量统计、思考强度选择和模型显示管理。 需要 Python 3.10+，首次使用需联网安装 Python 依赖。
 - [GaoHu1997/dsh-model-think-level](https://github.com/GaoHu1997/dsh-model-think-level) — 在官方「模型」页为第三方模型补上思考等级、图片输入与生图；一个供应商可配多把密钥，按模型分流、失败自动换密钥重试，并可配置按路由的请求头、查看余额。
 - [GaoHu1997/dsh-webdav](https://github.com/GaoHu1997/dsh-webdav) — 通过任意 WebDAV 服务在多台电脑之间同步 DSH 的模型供应商与模型：备份离开本机之前先用口令封好，新机器打开就是同一份模型清单。
@@ -6441,6 +6440,7 @@ dsh plugin --profile web add dshmarket
 - [JohnXu22786/spec-driven](https://github.com/JohnXu22786/spec-driven) — 规格驱动开发纪律技能包（keel）：五个技能（锚定/立规/探针/建造/审计）、三个审查工具与六个规格模板，强制先规格后代码、假设先行验证并约束范围蔓延。
 - [JUNQINGV587/mattpocock-skills-dsh](https://github.com/JUNQINGV587/mattpocock-skills-dsh) — 将 Matt Pocock 的 25 个精选工程与效率 Agent 技能（grilling、TDD、代码审查、领域建模等）移植为 DeepSeek Harness 插件包。
 - [kdcadmin/jev-decision-kit#dsh-jev-skill-kit](https://github.com/kdcadmin/jev-decision-kit/tree/main/plugins/dsh-jev-skill-kit) — 每轮对话前用本机 JEV 模型选好技能，把一行选择结果作为前言注入，让智能体只加载该加载的技能。需另行准备好 jev-decision-kit 工作区（Python .venv、host/preface_worker.py、models/jev/head.json）；没有它插件不会注入任何内容。
+- [kedeshuai/dsh-plugin](https://github.com/kedeshuai/dsh-plugin) — 嵌入式 C 白盒测试工作流技能：宿主机打桩 harness、wb.py 测试驱动与 gcov 覆盖率门禁、控制逻辑学习手册模板。
 - [Kenerlee/dsh-moments-aieo](https://github.com/Kenerlee/dsh-moments-aieo) — AIEO（GEO/AEO）交付方法论，挂载为一个独立的 skill provider：0-9 分制的 AI 可见性诊断、产品定位、仅限白名单平台导出数据的搜索热词挖掘、周期性效果监控与 HTML 监控面板，由同一份共享问题库串联，另附一个落地页复刻 skill。
 - [kinggkl/dsh-network-engineer](https://github.com/kinggkl/dsh-network-engineer) — 网络工程师助手预设 + 12 厂商 96 篇交换机/路由器/防火墙命令知识库技能（华为/新华三/锐捷/迪普/思科 IOS·NX-OS/Junos/Arista EOS/FortiOS/中兴/VyOS/MikroTik），支持知识库优先检索、跨厂商命令对照、拓扑与 CLI 截图识图、带引用的联网查手册，并对高危命令强制 ⚠️ 风险标注；仅回答网络工程主题。是 sososilencing/dsh-network-engineer 的社区延续版（见 NOTICE.md）；两者注册同一个 network-command-kb 技能和同一个「网络工程师助手」预设，不能与上游同装。
 - [Kirisame1969/dsh-project-based-learning](https://github.com/Kirisame1969/dsh-project-based-learning) — 项目制教学教练：学科无关的教学引擎 + 可替换领域包（随包提供 Unity/C#），同时以 DSH 技能与可安装组合包分发。技能协议强制"先做后教"与分级提示；零依赖校验器会拒绝证据不支撑的能力结论，并在存在未解决阻塞项时阻止阶段通过。
