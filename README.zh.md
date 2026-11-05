@@ -961,6 +961,7 @@ dsh plugin --profile web add dshmarket
 - [LihiHe/dsh-thinking-slider](https://github.com/LihiHe/dsh-thinking-slider) — 把输入框右侧的「推理等级」从菜单点选换成可拖拽滑条，并接管官方那枚「模型 · 推理等级」chip。拖动中连续跟手，松手吸附到最近档位，且一次拖拽只提交一次会话更新。轨道内自绘填充、刻度点与白圆钮，只有最高档（xhigh/max/ultra）才铺品牌色流动渐变，两端标出最低与最高档名；同一张卡片可展开官方模型清单。方向键移动一档、PageUp/PageDown 移动两档、Home/End 跳到两端，每次移动都会提交。目录对象上的世代计数器丢弃迟到的响应，prefers-reduced-motion 下关闭动画。数据全部取自官方 modelDirectories，不新增任何能力。
 - [lihongxu0221/dsh-workspace-browser](https://github.com/lihongxu0221/dsh-workspace-browser) — 替换出厂侧边栏工作区浏览器，补上最近会话、可添加额外源文件夹的项目编辑器，以及置顶、重命名、派生和归档行操作。
 - [lijinhao315/dsh-question-index](https://github.com/lijinhao315/dsh-question-index) — 提问索引：在会话右侧按序展示你提过的问题列表，可收起；点击某条即可把会话滚动跳转到对应位置。打开会话自动索引全部历史提问并本地持久保存；点击更早的提问会按需翻页加载后跳转。
+- [likaileave/dsh-direct-open](https://github.com/likaileave/dsh-direct-open) — 左键以系统默认程序打开交付文件、改动文件行和对话中的文件提及；右键接管方式可选：全部接管、只接管原生没有菜单的、或完全不接管。
 - [lilcandi/dsh-continue-button](https://github.com/lilcandi/dsh-continue-button) — 输入框工具行里、紧挨发送键左侧的「继续」按钮：点一下就把续接指令写进草稿并提交，让中断的任务接着跑，不用重新交代上下文。指令会写明中断原因，并附上当前任务与上一轮回复的结尾片段；按住 Alt 点击或右键点击只发裸的「继续」，草稿非空时只追加不覆盖。
 - [lilcandi/dsh-music-on](https://github.com/lilcandi/dsh-music-on) — DSH 网页端音乐台。右下角一枚可拖动的胶囊，点开是播放器卡片：播放列表与上一首/下一首、可拖动的进度条、音量旋钮（滚轮或拖动）、三种循环模式、逐曲封面（仅解析出的链接曲目，本地文件用黑胶占位）；音频文件拖到卡片上即播。粘贴 B 站、网易云、QQ 音乐的歌曲或歌单链接即可解析；网易云与 QQ 的音频由宿主签发不透明 HMAC 票据再交给浏览器，浏览器拿不到明文 CDN 地址，也无法伪造。页面底部一条频谱画布，数据来自真实 AnalyserNode，支持圆点/粗柱/方块阵列/对称声波/折线/时域波形六种画法，宽度、柱数、灵敏度、光晕、高度、帧率与位置均可调，整排按容器宽度铺排，间隙会压到半像素下限，再窄就如实略微溢出。另含七套配色主题（鲸鱼蓝白、极光青紫、薄荷绿、落日橙、玫瑰粉、霓虹赛博、极简灰白）。设置分区按界面 / 主题 / 播放 / 链接与频谱分组，并带收藏与历史两张表。
 - [lilcandi/dsh-session-live](https://github.com/lilcandi/dsh-session-live) — 侧边栏会话悬停卡片里的实时预览：这个会话此刻在干什么（正在跑的工具与已运行时长、思考中、上次工具耗时）、附件缩略图点击放大、剥掉注入壳子后的最近一问一答、最近工具图标条、轮数 · token 合计 · 模型名一行概况，外加一个写入 profile 的 12 项设置页。
@@ -1734,6 +1735,7 @@ dsh plugin --profile web add dshmarket
 - [xt765/dsh-message-edit](https://github.com/xt765/dsh-message-edit) — 用户消息原位编辑与重发插件：在已发送消息气泡下方复制按钮旁提供铅笔编辑图标，点击原位展开圆角内联编辑框，支持从上一轮末尾分叉回退重发或在当前会话直接追发。
 - [xt765/dsh-selection-quote](https://github.com/xt765/dsh-selection-quote) — Cursor 与 GitHub PR Review 风格划词引用与批注插件：支持划词一键引用到对话（⌘L）、行内展开写批注（⇧⌘L）及输入框上方批注汇总栏一键插入。
 - [xuanfu-web/dsh-metaphysics](https://github.com/xuanfu-web/dsh-metaphysics) — 玄学命理排盘：十九套体系——八套排盘（八字、紫微斗数、六爻、梅花易数、大六壬、奇门遁甲、合盘、塔罗）加十一套速查（黄历、农历互转、择日、称骨、小六壬、星座、生命数字、人生K线、风水、起名、十六型人格问卷），并可按所问之事生成可读报告；八字含交运日、岁运并临/伏吟反吟、通关、三书对照与杂气月取格/人元司权，紫微含 34 格局、九类流派开关、飞星串连与三方四正复合飞化，六爻含用神旺衰、全卦逐爻旺衰、伏神出伏与应期线索，风水含八宅与玄空飞星，起名含 391 字库、五格剖象与音韵检查；宿主面板与离线页共用同一套分组首屏（问一件事/看一个人/查日子），带最近用过与窄屏收纳；纯本地计算，默认不联网。npm 包内另附离线单文件页（命理排盘.html）：双击即开，十九个 tab 齐全，不用起服务、不用联网。
+- [xuanyuanchumo/dsh-codegraph-visualizer](https://github.com/xuanyuanchumo/dsh-codegraph-visualizer) — DSH 内的交互式代码图谱：在主会话顶部标签中呈现调用链、依赖分析与影响评估。
 - [xuexiaolei1997/dsh-plugin-stock-x](https://github.com/xuexiaolei1997/dsh-plugin-stock-x) — 全景金融量化工作台与股票盯盘：悬浮球与抽屉面板、A/港/美/全球指数实时行情、多周期K线与5日分时、五档盘口、资金流向、板块热点榜与AI投研诊断。
 - [xufu5438-netizen/dsh-boot-video](https://github.com/xufu5438-netizen/dsh-boot-video) — 视频开机片头：启动时全屏播放 mp4，点击或 Esc 跳过，可导入自己的视频，浏览器解不了的编码自动转成 H.264。
 - [xuguangyao/dsh-prompt-deck](https://github.com/xuguangyao/dsh-prompt-deck) — 把每次都得重打的那几句话做成输入框上方的胶囊。它们按使用次数自动重排，带 {{占位符}} 的会先弹框让你填，填完才插入草稿。点击是追加而不是替换，写到一半的草稿不会被冲掉。抽屉里可以搜索、分组、编辑，数据存在 Host 侧 JSON 文件里，可以直接手改。
@@ -6203,6 +6205,7 @@ dsh plugin --profile web add dshmarket
 - [1741505640/capmap-skills#dsh-capmap-viz](https://github.com/1741505640/capmap-skills/tree/main/dsh-capmap-viz) — CapMap 文档体系可视化：Obsidian 风格语义图谱与能力面板。
 - [3361805598-gif/dsh-md-annotator](https://github.com/3361805598-gif/dsh-md-annotator) — 面向 dsh-better-sidebar 扩展的 Markdown 侧边栏预览与源码编辑器，支持块级和文本选区批注，并可将批注作为结构化修改请求发送到对话框。
 - [4444Hao/qiaodoc-dsh](https://github.com/4444Hao/qiaodoc-dsh) — 基于 joeseesun/qiaomu-reader-dsh 二次开发（并非上游官方后续版本；两者都用 qiaomu-reader 插件 id，不要同装）：在 DSH 原生对话旁阅读文档、解释翻译选段，并通过文档历史返回原会话。当前为开发试用版，仅验证 Windows + DSH 0.2.1-rc.5。
+- [aa2246740/dsh-slidestudio#dsh-slidestudio](https://github.com/aa2246740/dsh-slidestudio/tree/main/dsh-slidestudio) — 在 DeepSeek Harness 中生成和编辑演示文稿，并导出可编辑的 PPTX 文件。
 - [addie-ace/dsh-fullwidth-punctuation](https://github.com/addie-ace/dsh-fullwidth-punctuation) — 将 AI 回答中的半角标点转换为中文全角标点，让复制的回答可直接用于公文材料。
 - [adithyanraj03/dsh-cite-lens](https://github.com/adithyanraj03/dsh-cite-lens) — dsh 的 PDF 阅读：在文件选项卡里选中 PDF 中的文字，就能引用到当前对话或就它提问；把模型的引用变成链接，点开 PDF 并高亮被引用的那几句话；/cite-links 让一段对话为每条论断都附上引用。
 - [aduo-111/second-brain#dsh-client-ui-second-brain](https://github.com/aduo-111/second-brain/tree/main/dsh-client-ui-second-brain) — 把每天和各种 AI 的对话提炼成结构化 Markdown 笔记，写入你的 Obsidian 库。
