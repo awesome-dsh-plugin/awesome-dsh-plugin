@@ -1,0 +1,7 @@
+url: https://github.com/Chrono-rigger/dsh-voice-enhance
+name: Chrono-rigger/dsh-voice-enhance
+category: voice
+description:
+  en: Hold Ctrl to dictate and insert a cleaned-up transcript, plus a sparkle button that rewrites the composer draft into a clearer prompt.
+  zh: 按住 Ctrl 说话、松开插入修正后的转写文字，输入框旁的星标按钮可把草稿改写成更清晰的提示词。
+icon: https://raw.githubusercontent.com/Chrono-rigger/dsh-voice-enhance/main/assets/icon.png
