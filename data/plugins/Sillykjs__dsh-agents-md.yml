@@ -1,0 +1,6 @@
+url: https://github.com/Sillykjs/dsh-agents-md
+name: Sillykjs/dsh-agents-md
+category: ui
+description:
+  en: 'Adds an Agent docs tab to the conversation view: it lists the AGENTS.md and CLAUDE.md instruction files DSH actually loads for the current session (the ~/.dsh and ~/.agents roots, plus every directory from the project root to the working directory), previews each as Markdown with per-file sizes and the 64 KiB instruction budget, edits and saves them in place after a sha256 version check, and opens the workspace folder from the path button; a saved file takes effect on the next message.'
+  zh: '在对话页签栏新增「智能体文档」页签：列出当前会话实际加载的 AGENTS.md / CLAUDE.md / AGENTS.local.md / CLAUDE.local.md 指令文件（~/.dsh 与 ~/.agents 两个全局根，以及项目根到工作区的每一级目录），以 Markdown 预览并显示各文件大小与 64 KiB 指令预算，点「编辑」可就地改写、保存前做 sha256 内容冲突校验，点击工作区路径会在文件管理器中打开；保存后从下一条消息生效。'

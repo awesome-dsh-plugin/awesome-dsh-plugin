@@ -1,0 +1,5 @@
+url: https://github.com/specstream/specstream-tools/tree/main/packages/dsh-plugin-specstream
+name: specstream/specstream-tools#dsh-plugin-specstream
+category: browser
+description:
+  en: Registers the hosted SpecStream MCP server with the harness MCP manager and keeps the API key in the credential store. The server returns live web data as structured rows, each value with its source URL, and a run starts only after the quote's maximum is approved.

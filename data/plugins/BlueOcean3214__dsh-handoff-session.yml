@@ -1,0 +1,9 @@
+# 提交到 awesome-dsh-plugin 的 data/plugins/ 目录，文件名必须是 BlueOcean3214__dsh-handoff-session.yml
+# 生成命令：node market/prep-catalog-entry.mjs --owner BlueOcean3214 --repo dsh-handoff-session
+url: https://github.com/BlueOcean3214/dsh-handoff-session
+name: BlueOcean3214/dsh-handoff-session
+category: session
+description:
+  en: 'Durable session handoff for DeepSeek Harness: pressure-aware handoff docs, a searchable transcript, and automatic continuation in a fresh Session.'
+  zh: 为 DeepSeek Harness 提供会话交接：上下文压力到阈值时写交接文档与可搜索转录，并在新会话里自动继续。
+icon: https://raw.githubusercontent.com/BlueOcean3214/dsh-handoff-session/main/assets/icon-180.png
