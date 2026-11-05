@@ -2652,6 +2652,7 @@ dsh plugin --profile web add dshmarket
 - [SharpWord/dsh-wallpaper-engine](https://github.com/SharpWord/dsh-wallpaper-engine) — 仅 Windows。装了 Wallpaper Engine 就跟随当前壁纸，或从创意工坊库里固定一张；没装也能用，投放文件夹里自带四张起始壁纸。面板半透明、分块模糊、字色自动跟随壁纸。
 - [shawnlone/dsh-theme-tuner](https://github.com/shawnlone/dsh-theme-tuner) — 在「外观」下增加一个主题调节面板，可自定义强调色/背景色/前景色/对比度/渐变度，并实时生效。
 - [shin4/inkpond-dsh](https://github.com/shin4/inkpond-dsh) — 为 DSH 会话提供可交互的汉字水墨背景，包含莲池、山水、清明上河、二十四节气、北冥和大肥鲸六个场景。
+- [Shirolin/dsh-theme-animal-island-ui](https://github.com/Shirolin/dsh-theme-animal-island-ui) — 动森风手账主题：渡岛船票品牌区、奶油手账纸、覆盖 118 项 ThemeRuntime token、应用内外观设置与夜岛星空。
 - [ShokouP/dsh-theme-liuguang#liuguang](https://github.com/ShokouP/dsh-theme-liuguang/tree/main/liuguang) — 给 DSH 界面的两套可切换设计语言：内部发光的液态玻璃，与米色/血红/墨黑的苏联构成主义海报；附带个性化面板、投放式 CSS 皮肤包与 7 种表情的鲸鱼娘桌宠。
 - [Sim-xia/dsh-vscode-theme](https://github.com/Sim-xia/dsh-vscode-theme) — 导入为 Visual Studio Code 设计的 .vsix 主题文件并应用到 DSH Web UI。
 - [Simon-yyy/dsh-theme-escook](https://github.com/Simon-yyy/dsh-theme-escook) — 移植自 VS Code 经典的彬哥主题：包含 4 款经典美学配色（经典暗黑、柔和暗黑、紫韵浅色、柔和浅色）与高对比度语法高亮。
@@ -8769,6 +8770,7 @@ dsh plugin --profile web add dshmarket
 - [Yylx-R/dsh-console#dsh-plugin](https://github.com/Yylx-R/dsh-console/tree/main/dsh-plugin) — 通过自建中继，用手机远程操作电脑上的 DSH：发消息/图片/文件、看流式回复、截取桌面、远程 Alt+Tab。
 - [Z-6354/dsh-mobile-hanui](https://github.com/Z-6354/dsh-mobile-hanui) — DSH Web 界面的移动端适配：窄屏下把桌面三栏布局改造成触屏友好的手机布局（覆盖式抽屉、可拖拽悬浮按钮、全屏弹窗、上滑加载历史），1024px 断点内生效，桌面端零影响。 — 基于 dsh-mobile-gate 的完整移动端 PWA：安全远程访问网关 + 可安装到主屏（manifest + service worker）+ 离线可用 + 触屏手势（下拉刷新/边缘返弹/捏合缩放字体）+ agent 完成推送 + 触屏优先布局，桌面零影响。
 - [zbzbhs/dsh-remote-agent](https://github.com/zbzbhs/dsh-remote-agent) — 把另一台电脑变成你的远程 Agent 同事：副机本地跑自己的 DSH 与完整 Agent 循环，所以链路断开时任务照常继续、模型凭证也永不离开那台机器。主机用 8 个 remote_* 工具派活，只收回 handoff 摘要与产物清单，成品按需拉取——中间产物留在副机。配对码接入，direct 或 relay 两种传输穿 NAT，两侧都有 Web 面板。
+- [zccz14/eXe#dsh](https://github.com/zccz14/eXe/tree/main/plugins/dsh) — 在你已与 eXe 配对的机器上跑 shell、取截图，往返经 eXe 中继：三个模型工具（设备列表、shell、截图），外加一页侧边栏——本机调用方地址、可改名的设备与受信调用方清单，以及按设备一键测量一次真实调用的往返耗时。那些机器上需运行 eXe 客户端。
 - [zdx8637-gitdog/dshmobile#dshmobile-plugin](https://github.com/zdx8637-gitdog/dshmobile/tree/main/plugins) — 通过自建中继从手机访问 DSH（WSS 由你自己的 TLS 终止代理提供）：含桥接守护与扫码登录的 bundle 插件、原生 Android 应用，并支持服务端设备吊销。
 - [zengpu987-ctrl/dsh-deep-connect#plugin](https://github.com/zengpu987-ctrl/dsh-deep-connect/tree/main/plugin) — 同账号多台 DSH 的会话与任务互通：一台机器生成中继站，其它机器用邀请链接加入；逐帧端到端加密，中继只路由哈希频道、读不到内容。对端可读完整对话与任务板，向拥有该会话的那台机器正在跑的一轮插话，按发送方选定的目标工作区与模型强度下发命令，也可把一条会话复制成本机新会话并继续在这里干活。另带令牌手机页，可查看设备、读取任务与下发命令。
 - [zexadev/dsh-tether](https://github.com/zexadev/dsh-tether) — 用 Android/iOS 手机远程使用电脑上的 dsh 完整网页界面,经 iroh 跨网点对点打洞直连,不用架任何服务器;打不通才退回 relay,relay 只见密文。
@@ -9051,6 +9053,7 @@ dsh plugin --profile web add dshmarket
 - [lianzhimanye/dsh-bard-0.03](https://github.com/lianzhimanye/dsh-bard-0.03) — DeepSeek Harness 角色扮演插件：导入 SillyTavern 角色卡（JSON/PNG）与世界书（lorebook），为角色绑定 DSH 技能，并注册为原生 agent preset。
 - [liceses/dsh-cosplay](https://github.com/liceses/dsh-cosplay) — 给 DeepSeek Harness 的角色卡：把人设注入系统提示词，或用规则卡在模型看到之前改写用户消息。自带预设卡库、含立绘的单文件卡包导入导出，以及会话区的「角色」页签。
 - [lijajiu9205-collab/dsh-history](https://github.com/lijajiu9205-collab/dsh-history) — 按对话独立的文言文开关：开启后模型改用文言行文（上段文言、中间「——」、下段白话译注），并化身蓝色古风、惯吃白饭的大肥鱼；每个对话各自记住开关，关闭即恢复现代汉语并隐去人格。
+- [lilulj/dsh-dafeiyu-pet](https://github.com/lilulj/dsh-dafeiyu-pet) — DSH 桌宠：蓝色鲸鱼娘，自带 104 个动作和内置语音，独立插件、不依赖 dsh-dafeiyu。
 - [linconz/agentduel-dsh](https://github.com/linconz/agentduel-dsh) — AgentDuel 是一款代码对战游戏，通过这款插件，在 DSH 内部完成整个游戏过程，实现死斗角色与夺旗团队、提交 Agent 代码、发起战斗、观看回放，并通过 DSH 会话依据战果继续优化 Agent。
 - [Link258QAQ/dsh-plugin-genshin-launch](https://github.com/Link258QAQ/dsh-plugin-genshin-launch) — 仅 Windows。打开 DSH 先探测本机《原神》：装了直接启动本体（秒退改起米哈游启动器），没装才下载安装包到桌面；与预期 224MB 相差超 15MB 的链接会被拒绝，失败则打开官方下载页。
 - [lintwosix-beep/dsh-pet-chat](https://github.com/lintwosix-beep/dsh-pet-chat) — 带聊天面板的桌宠：QQ 风格的历史记录、收藏，以及聊完会以合并转发卡片回到历史的支线对话；面板停靠在小女仆右侧，可从边缘与四角拖拽改大小。基于 PC2005-cloud/dsh-pet（MIT）的二次修改版，请勿与原版同时安装。
