@@ -970,6 +970,7 @@ dsh plugin --profile web add dshmarket
 - [Lin-AxiomSight/dsh-zh-layer](https://github.com/Lin-AxiomSight/dsh-zh-layer) — DSH的双语覆盖层：为插件、命令与技能叠加中文名和功能说明，支持三种显示模式与纯手动触发的AI翻译，且不修改一行DSH源码。
 - [linandadada-pixel/dsh-screenshot](https://github.com/linandadada-pixel/dsh-screenshot) — 输入框里的原生秒开截屏按钮：点一下冻结全屏，微信风格选区浮层（灰色遮罩、绿色边框），确认后截图自动插入当前会话草稿。相机旁的小眼睛可选「先隐藏整个 DSH 窗口再截屏」，截完自动恢复。不调用系统截图浮层，拖动约 10ms/帧，与语音输入并排共存。仅 Windows 10/11 x64；首次截屏会用系统自带的 .NET Framework csc.exe 编译辅助程序。
 - [linglanxin/dsh-feng-gu-lite](https://github.com/linglanxin/dsh-feng-gu-lite) — 会话输入框下方的离线北京时间峰谷指示器，内置 2026 年日历、待确认状态和短暂高峰提醒，运行时无需密钥或联网。
+- [LingMoe404/dsh-cot-translation-reader](https://github.com/LingMoe404/dsh-cot-translation-reader) — 在 dsh-better-display 的阅读页显示官方「思考过程机器翻译」译文，并在 better-display 0.3.12 及以上提供按卡片切换原文/译文。
 - [lingr7/dsh-reversed-chat](https://github.com/lingr7/dsh-reversed-chat) — 把活跃会话的输入框固定在视口顶部，转写列表与右侧回合导航按最新在上渲染，新回复紧贴输入框出现。
 - [linhx1999/dsh-writing-pad](https://github.com/linhx1999/dsh-writing-pad) — 停靠在对话旁的会话级 Markdown 写作板，支持编辑/预览、选区 AI 改写、Diff 审核、撤销与草稿恢复。
 - [LinJohn8/dsh-model-group-collapse](https://github.com/LinJohn8/dsh-model-group-collapse) — 让输入框模型菜单的厂商分组可折叠，默认只展开当前模型所属厂商。
@@ -1305,6 +1306,7 @@ dsh plugin --profile web add dshmarket
 - [QIRSHENG/dsh-tray-restart](https://github.com/QIRSHENG/dsh-tray-restart) — 给官方桌面端的 Windows 系统托盘加「重启应用与 Host」「刷新页面」和「彻底退出 Harness」三项（原位修改 app.asar），并在桌面端每次更新覆盖后自动重打补丁。
 - [QIUZAIYOU/dsh-composer-rewind](https://github.com/QIUZAIYOU/dsh-composer-rewind) — 记录并还原整个输入框状态：文字、图片/文件附件、@ 引用和 / 指令，以及当时的模型、思考程度、权限预设和使用模式；还原后与记录时一致。
 - [QIUZAIYOU/dsh-panel-control](https://github.com/QIUZAIYOU/dsh-panel-control) — 管理 DSH 侧栏顶部的全局面板入口：拖动排序或按名称排序、逐项隐藏（不卸载插件）、分成命名分组并渲染为带标题的分隔线，分组标题可点击折叠。布局兜底会给入口列表限高并允许滚动，入口变多时不再把会话/工作区列表挤到看不见。可选开关让当前 profile 的默认模型提议分组，模型返回的 id 与组名先经宿主白名单清洗再写入本地。
+- [qiuzhiyei/dsh-companion](https://github.com/qiuzhiyei/dsh-companion) — DSH 桌面伴侣：任务实时 HUD、Token 与费用统计、余额与峰谷提醒、推理等级切换、当前与历史对话搜索、会话管理。
 - [qiweiii/dsh-brand-studio](https://github.com/qiweiii/dsh-brand-studio) — DSH 共享网页界面的自定义品牌：在「设置 → 品牌」中修改名称、徽章，选择本地 logo 和字标图片并调整大小与圆角、实时预览、可选自定义页面标题、一键恢复官方外观。
 - [qjcnmd/dsh-reasoning-slider](https://github.com/qjcnmd/dsh-reasoning-slider) — Codex 风格推理等级滑块，内嵌于模型选择器，拖动切换推理档位。
 - [qrxf/dsh-workspace-graph](https://github.com/qrxf/dsh-workspace-graph) — DSH Web 界面中的工作区与会话可拖动气泡图谱：大泡为工作区、小泡为会话，连线表示真实所属关系。画布支持平移、缩放与适应；筛选覆盖工作区、状态、类型和归档情况；搜索覆盖工作区名称、路径与会话标题；原生操作可打开或新建会话、重命名工作区、归档或恢复会话。布局保存在浏览器本地。
@@ -2171,7 +2173,7 @@ dsh plugin --profile web add dshmarket
 - [loshanvren/dsh-codex-reset-tracker](https://github.com/loshanvren/dsh-codex-reset-tracker) — 在 DSH composer 中报道 Codex 重置概率与排期，支持已完成重置的可选系统通知，并提供只读状态与历史记录工具。
 - [LoveDoLove/dsh-token-saver](https://github.com/LoveDoLove/dsh-token-saver) — DeepSeek Harness 插件，可裁剪工具输出并折叠 grep 结果，提供可选的 Caveman 和 Ponytail 提示词精简、本地即时响应、RTK 命令输出压缩、上下文压力处理、可选的 LLM 摘要压缩、稳定的提示缓存布局、Web 设置界面及持久化节省统计。
 - [Lovenndme/dsh-command-context](https://github.com/Lovenndme/dsh-command-context) — 给 DeepSeek Harness 加一个 /context 命令：显示当前会话上下文窗口的占用、剩余空间，以及提示词各部分的占比（系统提示 / 记忆文件 / 技能 / 消息 / 工具结果）。只读、纯本地、不触发模型调用。
-- [Lovenndme/dsh-profile-stats](https://github.com/Lovenndme/dsh-profile-stats) — DSH 侧栏的个人用量主页：五个核心数字（累计 Token、今日 Token、最长任务用时、最长/当前连续活跃天数）、近 12 个月活动热力图（每天/每周/累计总量三档）、把每个 Token 拆成「缓存命中 / 未缓存输入 / 输出」的分段占比条 Cache Lens（可放大查看未缓存内部构成）、按模型家族（版本 + 档位，自动归并不同供应商写法与无版本别名）堆叠的时间柱状图，以及按供应商的今日/累计分类。页面级时间范围（全部/今日/7 天/30 天）驱动上述用量数字。全部由本机会话日志经 ctx.sessionQuery 折叠而来；唯一的外发请求是每 6 小时读一次本包自己在 npm 上的版本号（供面板内的更新按钮使用），不上报数据、不碰凭据。
+- [Lovenndme/dsh-profile-stats](https://github.com/Lovenndme/dsh-profile-stats) — DSH 侧栏的个人用量主页：五个核心数字（累计 Token 带近期迷你柱、今日用量、最长任务用时、最长/当前连续活跃天数）、近 12 个月活动热力图（每天/每周/累计总量三档）、自带日/周/月窗口的模型家族堆叠柱（版本与档位分开，不同供应商写法会正确归并）、显示缓存命中率并把每个 Token 拆成「缓存命中 / 未缓存输入 / 输出」的 Cache Lens（可放大查看非缓存构成），以及按供应商的今日/累计分类。全部由本机会话日志经 ctx.sessionQuery 折叠而来；唯一的外发请求是每 6 小时读一次本包自己在 npm 上的版本号（供面板内的更新按钮使用），不上报数据、不碰凭据。
 - [lugezuishuai/dsh-token-chart](https://github.com/lugezuishuai/dsh-token-chart) — 统计 DeepSeek Harness 的 Token 用量：会话抽屉与今日 / 近 3 天 / 近 7 天面板，图表与指标可配置。
 - [LumiDesk/dsh-wallet-pill](https://github.com/LumiDesk/dsh-wallet-pill) — DeepSeek Harness 的余额胶囊：在输入框下方显示 DEEPSEEK_API_KEY 对应账户的余额，点开可查看峰谷计费时段、切换倒计时与各模型价目表。
 - [luokai-demo/dsh-plugins#plugins/dsh-balance-plugin](https://github.com/luokai-demo/dsh-plugins/tree/main/plugins/dsh-balance-plugin) — 侧边栏底部的 DeepSeek 钱包余额：信用卡图标配余额数字，按剩余额度着色（≥ ¥2 绿色、¥0–2 黄色、≤ ¥0 红色），挂载时、每轮对话结束和点击时刷新；余额变动时带符号差额上飘淡出。
@@ -3944,6 +3946,7 @@ dsh plugin --profile web add dshmarket
 - [yangyizhu8/dsh-unread-mark](https://github.com/yangyizhu8/dsh-unread-mark) — 会话行未读标记：会话菜单新增「标记未读」「取消标记」，在会话标题前钉一个刷新与点开都不会消失的红点（与系统绿点区分），绿点存在时两项禁用，标记经服务端持久化。
 - [yangyongzhen/dsh-session-export](https://github.com/yangyongzhen/dsh-session-export) — 会话导出为 Markdown/JSON，便于复盘、重放与单会话成本汇总。
 - [Yantingmo/dsh-lang-zh](https://github.com/Yantingmo/dsh-lang-zh) — 向系统提示注入固定语言指令，让 Agent 始终用简体中文回复（含工具调用之间的叙述文字），除非你明确要求其他语言；对所有会话与预设生效，且不覆盖 persona。
+- [yanzoro926/dsh-btw](https://github.com/yanzoro926/dsh-btw) — 在当前 DSH 会话里发起一次性 btw 旁问，可选上下文范围；旁问默认不写入会话，可把压缩摘要预览确认后送入主会话。
 - [YB313/dsh-branch-tree](https://github.com/YB313/dsh-branch-tree) — 把会话变成左侧栏里的文件夹：可分叉出独立分支（完整复制 / 压缩记忆 / 只继承开头），并以树状浏览。
 - [ycm50/dsh-compat-val](https://github.com/ycm50/dsh-compat-val) — 一个设置项把压缩阈值铺到所有 Agent 模式：注册 <模式>-compact-<阈值> 预设副本并改写 compaction-basic.thresholdRatio，阈值或勾选变化时重新注册，还可把副本设为默认模式（标准 > 创造 > 极简 > ptc）。
 - [ycm50/dsh-delete](https://github.com/ycm50/dsh-delete) — DSH 会话与图片管理：侧边栏多选面板在 DSH 归档后把选中的会话连同磁盘文件一起删除，支持子 agent / 团队成员 / 整族级联与逐个大小统计；右侧栏页签统计会话图片张数并多选摘除，可另行删除磁盘上的源文件与附件对象。
