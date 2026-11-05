@@ -1,7 +1,7 @@
 url: https://github.com/ltmroberthk915/dsh-computer-use
-name: ltmroberthk915/dsh-computer-use
+name: Codex-style Computer Use
 category: tools
 tarball: https://github.com/ltmroberthk915/dsh-computer-use/releases/latest/download/dsh-computer-use.tgz
 description:
-  en: 'Windows Computer Use for DeepSeek Harness with screenshots, UI Automation, 18 desktop tools, per-Agent activation, human-input handoff, approval prompts and prebuilt native workers.'
-  zh: 'Windows 桌面操控：让 DeepSeek 看屏幕、点鼠标、敲键盘。提供截图、UIA 定位、18 个桌面工具、按 Agent 激活、人机共用和操作审批，原生组件随包提供。'
+  en: 'Codex-style Windows computer use for DeepSeek Harness (DSH): observe, act and verify. Focused UIA observations, cropped screenshots and action batches reduce repeated context and model round trips. Version 1.3 adds a 1.5-second input notice and task continuation after human handoff. Prebuilt native helpers included.'
+  zh: '把接近 Codex 的 Windows 电脑操控体验带到 DeepSeek Harness（DSH）：看屏幕、找控件、点鼠标、敲键盘，再检查结果。聚焦观察、区域截图与批量操作，减少重复上下文和模型往返；1.3 新增 1.5 秒预告与人工接管后续接，原生组件随包提供。'
