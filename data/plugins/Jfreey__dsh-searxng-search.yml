@@ -1,0 +1,7 @@
+url: https://github.com/Jfreey/dsh-searxng-search
+name: Jfreey/dsh-searxng-search
+category: tools
+description:
+  en: 'Local SearXNG as the web_search backend: a credential-free provider, per-platform supervision that restarts a dead server, idempotent installers, and a settings page that probes which engines this host can actually reach.'
+  zh: '把本机 SearXNG 接成 web_search 后端：无需任何密钥的 provider、能在掉线时按平台拉起的守护、幂等安装脚本，以及按当前网络实测各引擎可达性的设置页。'
+icon: https://raw.githubusercontent.com/Jfreey/dsh-searxng-search/main/assets/icon-180.png
