@@ -2,6 +2,6 @@ url: https://github.com/game25011/dsh-notify-toast
 name: game25011/dsh-notify-toast
 category: notify
 description:
-  en: Windows native toast notifications for DeepSeek Harness with a progress bar, automatic retraction, goal-mode summaries, click-to-session, and a taskbar unread badge for distinct root sessions.
-  zh: 为 DeepSeek Harness 提供带进度条、自动收回、Goal 模式汇总和点击回会话的 Windows 原生通知，以及按不同根会话计数的任务栏未读角标。
+  en: "Lightweight, native and extensible Windows notifications for DeepSeek Harness: sound, native toasts and a taskbar unread badge, covering roughly 90% of daily notification scenarios in our own use (an estimate); no resident service, MIT, customizable, and maintained for DSH compatibility."
+  zh: "轻量、原生、可自我拓展的 DSH Windows 通知：提示音、Windows 原生 toast 与任务栏未读角标，按我们自己的实际使用覆盖约 90% 日常提示场景（经验估测）；无常驻后台，MIT 可定制，持续跟进 DSH 兼容。"
 tarball: https://github.com/game25011/dsh-notify-toast/releases/latest/download/dsh-notify-toast.tgz
