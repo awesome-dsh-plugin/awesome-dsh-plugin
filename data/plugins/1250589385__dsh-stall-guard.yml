@@ -1,0 +1,6 @@
+url: https://github.com/1250589385/dsh-stall-guard
+name: 1250589385/dsh-stall-guard
+category: dev
+description:
+  en: 'Watches download commands (git clone, package-manager installs, curl) and, when one overruns its budget, aborts it and writes a switch-source advisory into the tool result, so the agent retries from another mirror instead of waiting on a dead one. Timeouts are set per kind of work, and acting versus only reporting is switched per scene. A supervisor indicator reacts while something is stalled.'
+  zh: '盯着下载类命令（git clone、包管理器安装、curl），超出预算就中止，并把一句换源建议写进工具结果，让智能体换个镜像重试而不是对着死源干等。超时按工作类型分别设置，「动手换源」与「只提示」按场景独立开关；另有一个只在卡顿时反应的监督员指示器。'
