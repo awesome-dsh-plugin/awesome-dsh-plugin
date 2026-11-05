@@ -1990,6 +1990,7 @@ dsh plugin --profile web add dshmarket
 - [chenmiao8563/dsh-token-ledger](https://github.com/chenmiao8563/dsh-token-ledger) — 可审计的 DSH token 账本：把持久化会话日志折算成重启安全的总量，可从原始日志重算并比对差异，并按工作区、会话、模型或厂商生成账单，可导出 CSV 或 JSON。
 - [chenyinrusi/dsh-llm-cost](https://github.com/chenyinrusi/dsh-llm-cost) — 按轮次与会话统计 LLM 成本：每条消息下方显示美元成本、会话累计总额（悬停看分项），以及 LLM+联网的价格自动刷新工具。
 - [chinahhy/DSH-plugins#dsh-sidebar-quota](https://github.com/chinahhy/DSH-plugins/tree/main/packages/dsh-sidebar-quota) — 在 DSH 侧栏显示 DeepSeek、MoonShot API 余额、Codex 剩余额度及本机今日估算消费。
+- [chipcats/dsh-sidebar-wallet](https://github.com/chipcats/dsh-sidebar-wallet) — 在 DSH 侧边栏账户行最右端一行显示 DeepSeek 余额与今日消费（官方用量口径），悬停展开请求数、token 与峰谷倒计时卡片。
 - [Choi-Peng/dsh-deepseek-balance](https://github.com/Choi-Peng/dsh-deepseek-balance) — 在 DSH Web 侧边栏底部展示 DeepSeek 账户余额，支持配置热重载与可编辑的设置 → 插件卡片。
 - [ChrisZhangWG/dsh-codex-meter](https://github.com/ChrisZhangWG/dsh-codex-meter) — 在设置中添加 DeepSeek API 用量仪表板，显示余额、官方 Token 与费用分析、趋势、上下文警告及实时 API 活动。
 - [CN-Leo/dsh-deepseek-balance](https://github.com/CN-Leo/dsh-deepseek-balance) — 在 DSH Web 输入框下方实时显示 DeepSeek 账户余额，每 15 秒自动刷新，悬停查看总额、赠送与充值明细。
@@ -7412,6 +7413,7 @@ dsh plugin --profile web add dshmarket
 - [FANLS05/dsh-desktop-notifications](https://github.com/FANLS05/dsh-desktop-notifications) — DeepSeek Harness 的 Windows 桌面通知：申请权限、提问、任务完成、出错与登录提醒，每条通知第一行都是会话名称。
 - [faruzanCN/dsh-push-notify](https://github.com/faruzanCN/dsh-push-notify) — 多渠道推送通知插件，支持 Bark (iOS) 与 ntfy (全平台)，覆盖回合结束、操作授权、交互提问及额度耗尽异常停机。
 - [faukwaa/dsh-gap-feed](https://github.com/faukwaa/dsh-gap-feed) — agent 思考超时时，直接在对话流中推出一条今日头条热点或提醒消息。
+- [FlashPoint007/dsh-wecom-soul-bot](https://github.com/FlashPoint007/dsh-wecom-soul-bot) — 企业微信智能机器人官方长连接接入（Bot ID + Secret，无需公网回调）：人设、发送者身份标记、带遗忘曲线的三层记忆、提醒、可选主动搭话、由 tools.guard 拦截的仅主人工作模式、运行中自动插话、图片输入和 wecomSoulBot 宿主服务；群聊 @ 时回复。
 - [Funny1Potato/dsh-onebot-hub](https://github.com/Funny1Potato/dsh-onebot-hub) — OneBot v11 枢纽：夹在上游 OneBot 实现（LLOneBot 等）与下游 bot 实现之间，逐字转发事件与动作；给 agent 一条按会话的时间线、动作账本、分层记忆（进行中的话题与任务、长期事件、人物与群档案）以及一组 onebot_* 工具（回复、媒体、成员、原始 API 调用）。
 - [game25011/dsh-notify-toast](https://github.com/game25011/dsh-notify-toast) — 为 DeepSeek Harness 提供带进度条、自动收回、Goal 模式汇总和点击回会话的 Windows 原生通知，以及按不同根会话计数的任务栏未读角标。
 - [gaolvsuan/dsh-badge](https://github.com/gaolvsuan/dsh-badge) — 回合结束时在浏览器标签页图标和 Windows 任务栏图标上显示未读数，并播放提示音。
