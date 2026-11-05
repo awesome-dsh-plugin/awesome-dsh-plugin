@@ -403,6 +403,7 @@ dsh plugin --profile web add dshmarket
 - [causebefore/dsh-pomodoro](https://github.com/causebefore/dsh-pomodoro) — DSH Web 番茄钟：提供可配置专注/休息循环、可拖动迷你面板，以及站内提醒、提示音和浏览器通知。
 - [cayan0x/dsh-fold-context](https://github.com/cayan0x/dsh-fold-context) — 自动折叠 DSH 对话中的系统/上下文消息——将思考块、工具调用和工具结果合并为可展开的分组折叠条。
 - [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) — Claude Code 风格全屏终端 UI：像素鲸鱼顶栏、实时工作状态行、思考流式展开。
+- [ccfeeling/dsh-host-file-explorer](https://github.com/ccfeeling/dsh-host-file-explorer) — 左侧边栏面板，浏览运行 Harness 的宿主机文件系统：带大小与修改时间的目录列表、文本与图片预览、文件下载、向当前目录上传文件，以及新建文件夹。面板支持十二种语言。读写操作使用运行 Harness 的账户权限。
 - [ccll/dsh-activity-pane](https://github.com/ccll/dsh-activity-pane) — DSH Web 活动会话总览窗格：将运行中、等待响应与近期活跃的会话集中到一个侧边窗格，含子代理层级、进度、模型与推理级别。
 - [ccq1/dsh-side-panel](https://github.com/ccq1/dsh-side-panel) — 侧边栏集成文件浏览器、终端和 Git 审查，方便预览文件。
 - [cdredfox/dsh-prompt-shortcuts](https://github.com/cdredfox/dsh-prompt-shortcuts) — 输入框上方的一行置顶提示词按钮，点击即替换草稿内容；另有可搜索的维护面板用于置顶、编辑、删除，放不下的按钮收进「更多」菜单，数据存于 Host 侧 JSON 文件，并注册 prompt_shortcuts 工具读写同一份数据。
