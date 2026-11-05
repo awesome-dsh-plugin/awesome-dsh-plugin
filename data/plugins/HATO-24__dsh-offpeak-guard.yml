@@ -1,0 +1,6 @@
+url: https://github.com/HATO-24/dsh-offpeak-guard
+name: HATO-24/dsh-offpeak-guard
+category: usage
+description:
+  en: 'Pauses running DeepSeek tasks when peak billing starts and automatically resumes them after the off-peak window begins, with model-aware guards, an off-peak planning queue, and a sidebar countdown clock.'
+  zh: '峰时自动暂停正在运行的 DeepSeek 任务，谷价开始后自动恢复继续；识别时段与模型，并提供错峰规划队列与左栏倒计时。'
