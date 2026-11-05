@@ -1,0 +1,8 @@
+url: https://github.com/foreee/dsh-net-dashboard
+name: foreee/dsh-net-dashboard
+category: ui
+description:
+  en: 'Live network inspection dashboard in the sidebar: interfaces with IP/MAC, traffic rates, TCP/UDP session counts and latency curves, refreshed every 3 seconds.'
+  zh: '侧边栏实时网络巡检看板：接口与 IP/MAC、流量速率、TCP/UDP 会话数、延迟曲线，每 3 秒刷新。'
+icon: https://raw.githubusercontent.com/foreee/dsh-net-dashboard/main/assets/icon-180.png
+tarball: https://github.com/foreee/dsh-net-dashboard/releases/latest/download/dsh-net-dashboard.tgz
