@@ -1,0 +1,6 @@
+url: https://github.com/lloydzhou/dsh-parallel-tools-prompt
+name: lloydzhou/dsh-parallel-tools-prompt
+category: workflow
+description:
+  en: 'Dependency-aware prompt guidance for batching ready, independent tool calls; does not change the runtime scheduler.'
+  zh: '通过依赖感知提示引导模型合批已就绪且互不依赖的工具调用，不修改运行时调度器。'
