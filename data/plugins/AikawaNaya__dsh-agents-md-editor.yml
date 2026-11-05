@@ -1,0 +1,6 @@
+url: https://github.com/AikawaNaya/dsh-agents-md-editor
+name: AikawaNaya/dsh-agents-md-editor
+category: ui
+description:
+  en: Left-sidebar panel that views, edits and saves ~/.dsh/AGENTS.md live, with version-guarded saves and atomic writes.
+  zh: 左侧栏面板，实时查看、修改并保存 ~/.dsh/AGENTS.md；保存带版本校验，写入是原子替换。
