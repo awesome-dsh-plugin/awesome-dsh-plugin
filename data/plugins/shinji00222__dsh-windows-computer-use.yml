@@ -1,0 +1,7 @@
+url: https://github.com/shinji00222/dsh-windows-computer-use
+name: shinji00222/dsh-windows-computer-use
+category: tools
+tarball: https://github.com/shinji00222/dsh-windows-computer-use/releases/download/v0.1.0-preview.4/dsh-windows-computer-use-0.1.0-preview.4.tgz
+description:
+  en: 'Windows computer use for DSH built on a native C# engine: text-only DeepSeek models can read UI Automation controls and fill forms in verified batches without screenshots, stale control refs can be re-found by unique identity, CAPTCHAs and verification codes are refused and handed back to you through the DSH approval prompt, and Esc stops the turn at any time.'
+  zh: 'Windows 电脑控制插件（C# 原生引擎）：纯文本 DeepSeek 模型也能读取 UI Automation 控件、批量填表并逐项回读，不需要截图；控件重新渲染后可按唯一身份找回；遇到验证码和动态码拒绝代填，通过 DSH 审批框交给你处理；随时按 Esc 停止。'
