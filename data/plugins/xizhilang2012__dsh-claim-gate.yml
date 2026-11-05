@@ -1,0 +1,7 @@
+url: https://github.com/xizhilang2012/dsh-claim-gate
+name: xizhilang2012/dsh-claim-gate
+category: tools
+tarball: https://github.com/xizhilang2012/dsh-claim-gate/releases/download/v0.1.0/dsh-claim-gate-0.1.0.tgz
+description:
+  zh: "公开发言前的自证闸门：断言必须给出可核对的出处（http(s) 链接 + 不少于 8 字原文），正文里的数字必须能在引文中找到，引文与正文词汇重叠低于 10% 判为无效引用；只有二手来源时不允许使用绝对化措辞。判定全部由确定性规则完成，不调用模型、不联网。guard 子命令在不过闸时不执行后续发布命令（fail-closed），被拦时给出解释与可选改法；同一话题第二次提交必须带 --ack 回执说明改了什么，三次不过即停止并交回人工。提供 check / explain / fix / guard 四个命令，30 个测试。"
+  en: "A self-justification gate for outbound claims: a claim needs a checkable source (an http(s) URL plus a quote of at least 8 characters), every number in the text must appear in a quote, and a quote whose vocabulary overlap with the post is under 10% counts as an invalid citation; absolute wording is rejected when the only evidence is second-hand. All verdicts come from deterministic rules — no model call, no network. The guard subcommand refuses to run the publish command when the gate fails (fail-closed), explains what is wrong and how to fix it, and requires an --ack note on the second attempt stating what changed; after three attempts it stops and hands back to a human. Ships check / explain / fix / guard, with 30 tests."
