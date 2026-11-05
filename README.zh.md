@@ -177,10 +177,12 @@ dsh plugin --profile web add dshmarket
 - [379385796-sys/dsh-chat-comfort](https://github.com/379385796-sys/dsh-chat-comfort) — 在已核验的 Windows Desktop RC2/RC3/RC5/0.2.2-rc.1 布局中调整聊天气泡和消息间距，支持舒适或紧凑密度，未知宿主指纹保留原生样式。
 - [3Tiga3/dsh-plugin-namecards](https://github.com/3Tiga3/dsh-plugin-namecards) — 给 DSH 插件换自定义图标、中文显示名和一句话说明；用文件夹与收藏整理，支持拖拽排序、按备注名拼音排序、列表与铺陈两种视图。所有已安装插件自动分配图标（可手动覆盖）；导入导出覆盖图标、备注名、说明、文件夹与排序。只改显示，不修改插件文件与 cordis 配置；启用开关转调官方插件管理器。
 - [439436269-ctrl/dsh-blend-preview](https://github.com/439436269-ctrl/dsh-blend-preview) — 在 DSH 右侧栏文档预览里打开 .blend：Blender headless 导出缓存 GLB 与场景统计，由零依赖 WebGL 视口渲染。需本机装有 Blender 3.6+（或在设置里指定 blenderPath）。
+- [439436269-ctrl/dsh-file-explorer](https://github.com/439436269-ctrl/dsh-file-explorer) — 在侧栏里浏览工作区：懒加载文件树，面板内预览文本 / Markdown / 图片，并可交给系统默认程序打开。
 - [439436269-ctrl/dsh-pinned-sessions](https://github.com/439436269-ctrl/dsh-pinned-sessions) — 侧栏「工作区」上方的一个置顶分组：跨工作区汇总所有置顶会话，可折叠、可就地搜索，点行打开、悬停出现取消置顶按钮。
 - [439436269-ctrl/dsh-preview-blender](https://github.com/439436269-ctrl/dsh-preview-blender) — 在右侧栏文档预览里打开 .blend：Blender headless 导出缓存 GLB，零依赖 WebGL 视口与场景统计。需要本机安装 Blender 3.6 或更高版本。
 - [439436269-ctrl/dsh-preview-media](https://github.com/439436269-ctrl/dsh-preview-media) — 在右侧栏文档预览里播放视频/音频，经带鉴权的 HTTP Range 路由流式读取，桌面端可拖动进度。
 - [439436269-ctrl/dsh-preview-stl](https://github.com/439436269-ctrl/dsh-preview-stl) — 在右侧栏文档预览里打开 STL：浏览器解析二进制/ASCII，WebGL 视口 + 尺寸/体积/表面积/水密统计。
+- [439436269-ctrl/dsh-sticky-notes](https://github.com/439436269-ctrl/dsh-sticky-notes) — 在左侧栏加一面可平铺的彩色便签墙：每行 2–5 个或自适应、置顶、搜索与颜色筛选、带恢复的回收站、Markdown 导出；四个 note_* 工具读写同一批便签。
 - [439436269-ctrl/dsh-stl-preview](https://github.com/439436269-ctrl/dsh-stl-preview) — 在 DSH 右侧栏文档预览里打开 STL：浏览器解析二进制/ASCII 网格，用 WebGL 视口展示尺寸、体积、表面积与水密性。
 - [456erddgr/dsh-lag-guard](https://github.com/456erddgr/dsh-lag-guard) — 把打开会话时的历史取数收到 120 条消息，并在进入 React 之前把超过 20 万字符的工具 schema 换成空数组，让长会话打开时不再卡死界面。
 - [5101good/amoji#amoji](https://github.com/5101good/amoji/tree/main/adapters/dsh) — 用于双向聊天的 AI 原生表情：人看图片，纯文本模型读取固定语义；支持表情选择、自建表情、导入导出和两套画风。
@@ -5992,6 +5994,7 @@ dsh plugin --profile web add dshmarket
 - [linxuhao/Deepseek-Continuity](https://github.com/linxuhao/Deepseek-Continuity) — 本地生成图像/配音/音乐/音效并听写，同一性锁定：角色、动物、道具与配音角色定妆定声一次，之后每次调用复用同一份参考；退化产物（接近纯色的图、静音的音频）被拒绝而不是当成成功返回；生成的台词可以听写回文字，好让吞掉结尾的克隆暴露出来。空闲时引擎卸载显存，生图与听写也可改指向任意 OpenAI 形状的 API 而不用本地 Vulkan 后端。
 - [liustack/modlens](https://github.com/liustack/modlens) — 为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。
 - [lkh081231/screenshot-feedback-hook-mcp#dsh-screenshot-feedback-hook-mcp](https://github.com/lkh081231/screenshot-feedback-hook-mcp/tree/main/dsh-plugin) — 一个截图工具，外加两个默认关闭的自动截图时机。需要模型支持图片输入。
+- [lliu56/minicut-skills#dsh-plugin](https://github.com/lliu56/minicut-skills/tree/main/dsh-plugin) — MiniCut 工具：通过 MiniCut CLI 制作多镜头 AI 短片，提供状态、下一步与执行，任何付费任务前先显示价格并需用户确认。
 - [LR611415/visionforge](https://github.com/LR611415/visionforge) — 为 DeepSeek Harness 提供读图与生图/编辑能力（Qwen/OpenAI/Anthropic/Gemini 读图，Qwen-Image 生图与编辑）。基于 liustack/modlens（MIT）改造；请先卸载 @liustack/modlens——两者会注册同一批 vision provider 与图片拦截钩子，并存会导致读图失灵。
 - [lsjspl/dsh-plugin-grok2api-media-tool](https://github.com/lsjspl/dsh-plugin-grok2api-media-tool) — 让 dsh 通过 grok2api 的 API 获得生成图片与视频能力。
 - [mafeis/dsh-image-guard](https://github.com/mafeis/dsh-image-guard) — 发送前把请求中的历史图片裁剪至保留张数，并从上游 400 错误解析单次图片上限、按更少张数降级重试，保证含图会话不被图片数量限制打断。
