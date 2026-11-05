@@ -1934,7 +1934,7 @@ dsh plugin --profile web add dshmarket
 - [1HelloMan1/dsh-usage-dashboard-plus](https://github.com/1HelloMan1/dsh-usage-dashboard-plus) — 显示 DeepSeek 余额与今日花费估算，合并外部视觉调用 JSONL 记录，并提供含模型统计、TTFT、缓存率、调用日志、费用估算、筛选与 CSV 导出的会话看板。
 - [2006spy/dsh-token-billing](https://github.com/2006spy/dsh-token-billing) — DSH Web 实时 token 计费插件：官网人民币价直接计费、高峰/错峰自动切换、价格实时跟随官网、可视化自定义模型价格、多币种兜底。
 - [283Gawin/dsh-heatmap](https://github.com/283Gawin/dsh-heatmap) — DSH Web 侧边栏活动热力图：GitHub 风格网格展示每日提交、Token 用量与估算花费，今日统计行显示全会话 Token 总量、缓存命中率与按模型自动计价的花费。
-- [2869949486/dsh-opencode-usage](https://github.com/2869949486/dsh-opencode-usage) — 在 dsh 设置里新增 OpenCode Go 用量页，按模型显示 5 小时、本周、本月花费与剩余额度。
+- [2869949486/dsh-opencode-routing](https://github.com/2869949486/dsh-opencode-routing) — 一个设置页管完 OpenCode Go：账户池在密钥额度耗尽或鉴权失败时自动 A→B 轮替，按账户显示 5 小时/本周/本月额度，按模型显示用量与剩余额度并标出能力（图像、视频、纯文本、工具调用、上下文长度），另有「走 OpenCode 还是官方直连更划算」的实时换算与 10 种界面语言。
 - [3150481853/dsh-cookie-guard](https://github.com/3150481853/dsh-cookie-guard) — 仅支持 Windows。数出 DSH 桌面外壳已累积的 dsh-auth-* 登录 cookie 条数，显示它们占掉 16 KiB 请求头预算的多少，以及还差几次启动就会打不开并报 "desktop welcome: Web authentication failed"。网页里有一张可拖动的浮窗卡片，每 10 分钟自检、每个本地日期保留一条快照，也能手动刷新；另附 desktop/ 下的独立 Windows 自查工具。
 - [3289192-bot/dsh-cache-bricks](https://github.com/3289192-bot/dsh-cache-bricks) — 在 DSH Web 中可视化提示词缓存命中率与模型请求活动，支持请求详情、请求对比和对话定位。
 - [3361805598-gif/dsh-usage-analytics](https://github.com/3361805598-gif/dsh-usage-analytics) — 在设置页提供本机个人用量分析：1/7/30 天 Token 热力图与 30 天日历视图、Token 构成、模型分布和技能调用状态。
@@ -2761,7 +2761,6 @@ dsh plugin --profile web add dshmarket
 - [2239058652/dsh-loomy-connect](https://github.com/2239058652/dsh-loomy-connect) — 把讯飞 Loomy 桌面端内置的模型注册为 DSH 的 `loomy` 供应商，读取该应用的本地登录态而不使用 API Key。是 gdrpzym/dsh-loomy-connect 适配 DSH 0.2.1 的派生版本，新增逐模型启用/禁用开关。需本机安装并登录讯飞 Loomy 桌面端；与 gdrpzym/dsh-loomy-connect 注册同一个 `loomy` 供应商，不能同装。
 - [2404723600/dsh-router-loomy](https://github.com/2404723600/dsh-router-loomy) — 把讯飞 Loomy 云端通道作为 OpenAI 兼容供应商接入 dsh-router，提供模型列表与流式对话补全。
 - [2861292267/DSH-Official-WorkBuddy-Credit-Proxy](https://github.com/2861292267/DSH-Official-WorkBuddy-Credit-Proxy) — 把本机已登录的 WorkBuddy 账号汇成一个自动故障转移的模型池，同一池子对外提供 OpenAI Chat、OpenAI Responses 与 Anthropic Messages 三种协议，并支持模型别名、用量统计与积分自动化。
-- [2869949486/dsh-opencode-quota-router](https://github.com/2869949486/dsh-opencode-quota-router) — 让 dsh 里的 DeepSeek 模型优先走 OpenCode Go 套餐额度，额度耗尽时只把该模型切回 DeepSeek 账户，其它模型继续用套餐；凭证异常等整体失败时整体回退。
 - [643048695/dsh-auto-retry](https://github.com/643048695/dsh-auto-retry) — 模型请求失败自动重试：拦截每一次请求错误，按 2/5/10/20 秒的阶梯退避后重放同一个 step，中转站抖动与限流不再中断整轮对话。
 - [643048695/dsh-subagent-role-router](https://github.com/643048695/dsh-subagent-role-router) — 基于 dingminhua/dsh-subagent-default-model 的衍生作品（不要与上游同装）：按角色为子代理派发选路由，带候补池、跨供应商故障转移与 fork 活跃窗口切片；标题栏显示正在运行的子代理及其时长与 token；支持运行中与批量换模型，并给模型提供可调用的路由工具。
 - [66rapper/dsh-model-auto-enricher](https://github.com/66rapper/dsh-model-auto-enricher) — DSH 模型补齐助手：解决添加新渠道后还要把几十个模型一个个手动点开调百万上下文、调最大输出、勾多模态发图（\[text, image]）、配思考强度档位（{low, high, max}）的繁琐痛点，支持设置页添加模型保存后自动补齐与可视化一键补齐。
@@ -4473,6 +4472,7 @@ dsh plugin --profile web add dshmarket
 - [adithyanraj03/dsh-mcp-summon](https://github.com/adithyanraj03/dsh-mcp-summon) — 休眠式 MCP：只注册一个 mcp_summon 工具，召唤后该服务器的工具在本次会话内以原生 mcp__<server>__<tool> 名称注册，释放即注销并停止进程。
 - [adwhispr/dsh-plugin-adwhispr](https://github.com/adwhispr/dsh-plugin-adwhispr) — 通过 mcp-remote 加浏览器 OAuth 登录，把 DeepSeek Harness 接到 AdWhispr 的远程 MCP 服务：竞品广告调研、广告创意克隆，以及 Meta／Google／TikTok 广告的投放与管理。需要 AdWhispr 账号。
 - [agentmail-to/dsh-agentmail](https://github.com/agentmail-to/dsh-agentmail) — 用 AgentMail 给 agent 配一个自己的收件箱：发信、读信、搜索与打标签共十一个工具；收到的邮件按邮件线程分派，每个线程对应一个独立会话；所有外发邮件都要过审批与收件人白名单。
+- [ahao430/dsh-workhub](https://github.com/ahao430/dsh-workhub) — 钉钉与云效的个人工作数据中心：把待办、日志、AI 听记、考勤、日程、项目、需求、代码提交与报工同步到本地 SQLite，展示驾驶舱、工作日历、项目分析与智能报告，并向 Agent 提供 workhub_* 工具。
 - [ai-tools-mtl/Aurify#bundle-patent](https://github.com/ai-tools-mtl/Aurify/tree/main/packages/bundle-patent) — dsh 专利撰写把关人：动笔前先检索中国专利给出三档结论，再走五方对齐访谈、八章交底书、附图与仿真实验、七维审查与 docx/PDF 导出全流程。技能开箱即用；检索、导出与实验工具来自内置的 Python MCP 服务，默认关闭——在 ~/.dsh/patent-services.yaml 里开一行即启用，uvx 会从 PyPI 自动拉取。
 - [AIcivilization/dsh-tingdong](https://github.com/AIcivilization/dsh-tingdong) — 把英文有声读物（MP3）和英文文档（PDF / Word / EPUB / 网页 / TXT）变成听力课：用 DSH 语音输入已下载的模型在本机识别每一句（缺失时首次使用自动下载约 241 MB；需 ffmpeg）、用你选的大模型逐句校对翻译讲解，再以精听、间隔复习、磨耳朵练到一听就懂；支持中文配音导出与离线 Kokoro 语音，提供右侧栏面板和 4 个 AI 工具。
 - [Aik358/dsh-ark9canvas](https://github.com/Aik358/dsh-ark9canvas) — DSH 生图工作台与 Agent 生图工具：一个工具（ark9_generate_image）走任意 OpenAI 兼容图片 API 文生图/图生图。渠道完全由用户自行添加——默认零预置，自带 baseURL、Key 与模型名即可（支持手动输入任意模型名）。Agent 发起的生图默认需用户审批：请求进入浮窗审批页，批准才开始生成并计费；审批非阻塞——Agent 立即回复"等你审批"，结果、拒绝或超时以通知注入后续轮次并自动汇报。玻璃拟态浮窗五页签（生成/审批/提示词/记录/说明）、比例网格（质量预算+16px 对齐）、透明背景、批量最多 10 张（子任务聚合，部分成功也返回）、提示词库（自定义 JSON 来源经宿主代理拉取）、生成记录持久化与一键重试、多渠道聚合与逐渠道拉模型、中英双语界面、线性 SVG 图标、配置导入导出。安装 dsh-better-sidebar 自动注册侧栏页签；与 dsh-cua 共存时自动堆叠其悬浮按钮上方。
