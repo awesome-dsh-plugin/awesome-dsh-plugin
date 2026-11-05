@@ -1940,6 +1940,7 @@ dsh plugin --profile web add dshmarket
 - [1687210989/agent-clinic](https://github.com/1687210989/agent-clinic) — DSH 会话日志的只读体检诊所：22 项具名诊断（token 浪费、重试与失败循环、上下文膨胀、跨会话失忆、闲置的 MCP 服务器与 skill 等），每条都附可复核的证据定位符（如 session.v4.jsonl.zstd#L101-L110）；每个问题给一条可执行处方（profile patch 片段或命令，含当前值到建议值、风险与验证方式），并支持标记「已拒绝」让该处方不再出现（报告会写明是你撤掉的）。零依赖、默认零外发、会话文件只读。
 - [1HelloMan1/dsh-usage-dashboard-plus](https://github.com/1HelloMan1/dsh-usage-dashboard-plus) — 显示 DeepSeek 余额与今日花费估算，合并外部视觉调用 JSONL 记录，并提供含模型统计、TTFT、缓存率、调用日志、费用估算、筛选与 CSV 导出的会话看板。
 - [2006spy/dsh-token-billing](https://github.com/2006spy/dsh-token-billing) — DSH Web 实时 token 计费插件：官网人民币价直接计费、高峰/错峰自动切换、价格实时跟随官网、可视化自定义模型价格、多币种兜底。
+- [2008BingYu/dsh-qq-stack](https://github.com/2008BingYu/dsh-qq-stack) — 给 DSH 提供 QQ 协议端：随引擎启动 LinuxQQ 与 NapCat，对外提供标准 OneBot 11 接口。
 - [283Gawin/dsh-heatmap](https://github.com/283Gawin/dsh-heatmap) — DSH Web 侧边栏活动热力图：GitHub 风格网格展示每日提交、Token 用量与估算花费，今日统计行显示全会话 Token 总量、缓存命中率与按模型自动计价的花费。
 - [2869949486/dsh-opencode-routing](https://github.com/2869949486/dsh-opencode-routing) — 一个设置页管完 OpenCode Go：账户池在密钥额度耗尽或鉴权失败时自动 A→B 轮替，按账户显示 5 小时/本周/本月额度，按模型显示用量与剩余额度并标出能力（图像、视频、纯文本、工具调用、推理），另有「走 OpenCode 还是官方直连更划算」的实时换算与 10 种界面语言。
 - [3150481853/dsh-cookie-guard](https://github.com/3150481853/dsh-cookie-guard) — 仅支持 Windows。数出 DSH 桌面外壳已累积的 dsh-auth-* 登录 cookie 条数，显示它们占掉 16 KiB 请求头预算的多少，以及还差几次启动就会打不开并报 "desktop welcome: Web authentication failed"。网页里有一张可拖动的浮窗卡片，每 10 分钟自检、每个本地日期保留一条快照，也能手动刷新；另附 desktop/ 下的独立 Windows 自查工具。
