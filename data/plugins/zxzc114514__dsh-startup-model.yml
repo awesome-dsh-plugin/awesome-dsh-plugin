@@ -1,0 +1,7 @@
+url: https://github.com/zxzc114514/dsh-startup-model
+name: zxzc114514/dsh-startup-model
+category: model
+description:
+  en: Remembers the model used before quitting and restores it as the startup default.
+  zh: 自动记忆退出前选择的模型，并在下次启动时恢复为默认模型。
+tarball: https://github.com/zxzc114514/dsh-startup-model/releases/latest/download/dsh-startup-model.tgz
