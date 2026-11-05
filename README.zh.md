@@ -994,6 +994,7 @@ dsh plugin --profile web add dshmarket
 - [liwangzimo/dsh-calendar-diary](https://github.com/liwangzimo/dsh-calendar-diary) — DSH 侧边栏里的纯记事本日历：周一起始的 70 天网格，格子里直接显示当天内容；每天一条，写进你自己指定的 .xlsx，沿用 DesktopCal 两列格式（Excel 日期序列号 + 自由文本，新日期在前）。点某天即打开该日编辑框；导入导出走同一格式，导入先预览，冲突可选保留、覆盖、拼接或跳过。
 - [liweidong1722/dsh-work-list](https://github.com/liweidong1722/dsh-work-list) — 本地优先的 DSH Web 工作清单，支持富文本笔记、分类、折叠、拖拽排序、搜索、JSON 导入导出和可还原回收站。
 - [liyansong0015/dsh-sao-link-start](https://github.com/liyansong0015/dsh-sao-link-start) — 为 DeepSeek Harness 添加可配置的 SAO 风格全屏启动动画。
+- [liyutongzuishuai/plugin-organizer](https://github.com/liyutongzuishuai/plugin-organizer) — 把已安装插件添加的设置入口统一收纳到 dsh 自带设置的下方，用带计数的分割线分区，插件增减时自动更新。
 - [lizilong1993/dsh-plain-talk](https://github.com/lizilong1993/dsh-plain-talk) — 输入框「说人话」开关：结论先行、引用原文、去掉需要翻前文的表述。
 - [lizilong1993/dsh-unlimited-effort](https://github.com/lizilong1993/dsh-unlimited-effort) — 输入框 ∞ 开关：最高推理档位下点一下，向系统提示词追加一段可配置的宣告。
 - [lizixuan200410-cmd/dsh-bright-text](https://github.com/lizixuan200410-cmd/dsh-bright-text) — 分别设置深浅主题的文字颜色，并调整正文字号与界面字体：内置楷体、行楷、隶书等系统字体，附带四款开源书法字体，也能导入自己的字体文件。
@@ -4841,6 +4842,7 @@ dsh plugin --profile web add dshmarket
 - [JOJO-Adam/dsh-blender](https://github.com/JOJO-Adam/dsh-blender) — 在 DeepSeek Harness 里以 headless 方式跑 Blender：执行 bpy 脚本、渲染场景、导出 glTF 资产，并附带建模技法库、5.x 踩坑清单与资产管线手册（技能包），让 agent 在交付前自检几何。
 - [JOJO-Adam/dsh-comfyui](https://github.com/JOJO-Adam/dsh-comfyui) — ComfyUI 在 DeepSeek Harness 里的生产包：向本地或远程服务提交 API 格式工作流、批量出图并取回产物，附实测参数区间与崩图排查决策树（黑图、主体重复、彩边、显存不足）。
 - [jsoncode/dsh-jenkins](https://github.com/jsoncode/dsh-jenkins) — 管理多台 Jenkins 服务器，支持从设置页、模型工具或工作区级「执行 Jenkins Job」入口触发构建，宿主 + 浏览器双端、界面中英双语。
+- [JularDepick/dsh-question-timeout-protection](https://github.com/JularDepick/dsh-question-timeout-protection) — dsh提问超时保护插件: 一旦模型提问超时,将你的回答草稿保留在UI或上下文中,而不是直接丢弃。
 - [JularDepick/dsh-system-monitor-plugin](https://github.com/JularDepick/dsh-system-monitor-plugin) — 监控dsh进程及其派生子进程的资源占用,并以面板图表报告整机与各会话的CPU与内存占用
 - [JularDepick/dsh-wakatime-plugin](https://github.com/JularDepick/dsh-wakatime-plugin) — 将DSH的每一次Agent交互量化为可视化表现指标并自动同步至WakaTime,用数据展示你与Agent协作的生产力
 - [JungleYXu/dsh-loadout](https://github.com/JungleYXu/dsh-loadout) — 给每个对话选一套工具（套装），只把用得上的工具投给模型：三档底座（全部 / 仅内置 / 我的套装）、一次性加挂、token 账本估算省下的开销，并可在设置里指定新对话的默认套装。
@@ -7311,6 +7313,7 @@ dsh plugin --profile web add dshmarket
 - [wloops/dsh-git-worktree](https://github.com/wloops/dsh-git-worktree) — Git Worktree Session Target：任务在隔离 Session 中运行，支持 Ready for Review、可撤回的 Local Preview、人工确认交付、环境保留与恢复，以及同一 Session 连续迭代。
 - [Wongzexu/dsh-git-status](https://github.com/Wongzexu/dsh-git-status) — 专精于 Git 分支与状态处理：Web 右缘 Git 状态浮窗，commit DAG 泳道图、未提交改动与 stash、行内 diff，右键分支/tag 切换、合并、重命名、删除、新建，一键拉取全部远程。
 - [wuxiangru915/dsh-review-loop](https://github.com/wuxiangru915/dsh-review-loop) — 增量代码审查插件：批准一批改动后只审查检查点之后的新改动，提供 Web 审查面板与 `/review` 命令，并把审查意见注入回 agent。
+- [wx-98/DSH-GIT](https://github.com/wx-98/DSH-GIT) — 在 DSH 右侧栏提供类 VSCode/IDEA 的 Git 源码管理，含彩色提交图、分支切换、暂存与逐块操作、stash 与历史过滤。
 - [wzciczw/dsh-jj-panel](https://github.com/wzciczw/dsh-jj-panel) — DSH Web GUI 里的 Jujutsu（jj）版本控制面板：「Jujutsu」标签页把 jj log 渲染成 change 图，含 change 详情、改动文件与文件差异、revset 输入框，以及 jj 原生历史改写（拖拽 rebase、按文件拆分、修改描述、压缩、放弃、撤销、推送）；直接读 jj 而不经过 git 转译，所有命令以 argv 数组经白名单化的宿主服务执行，带确认、超时与输出上限。
 - [wzciczw/dsh-worktree-toggle](https://github.com/wzciczw/dsh-worktree-toggle) — 在输入框分支标记旁提供一键 Worktree 开关，让空会话进入新的 git worktree；三天无活动的 worktree 自动清理。
 - [wzw4429-crypto/dsh-github-sync](https://github.com/wzw4429-crypto/dsh-github-sync) — DSH 的 GitHub 仓库同步插件：带冲突回滚与推送前检查的双向 git 同步、可下钻到每一步的 Actions/CI 监控、仓库添加/移除/改名、含本地与远端文件浏览的 Web 面板、定时自动化流水线，以及六个 Agent 工具。
