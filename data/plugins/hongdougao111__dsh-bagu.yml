@@ -1,7 +1,7 @@
 url: https://github.com/hongdougao111/dsh-bagu
 name: hongdougao111/dsh-bagu
 category: tools
-tarball: https://github.com/hongdougao111/dsh-bagu/releases/download/v0.1.0/dsh-bagu-0.1.0.tgz
+tarball: https://github.com/hongdougao111/dsh-bagu/releases/download/v0.2.0/dsh-bagu-0.2.0.tgz
 description:
-  en: 'Read-only checker for Chinese prose. For a passage it reports concrete items per 100 characters (numbers, timestamps, first-person experience, quoted speech, proper nouns), counts of abstract nouns and evaluative adjectives, the density of hedging words (好像/应该/大概), and the density of structural frames (不是X而是Y, 先…再…, three-item lists, em dashes, 首先/其次) relative to a per-register baseline. It returns a band plus a list of questions for the writer. It does not rewrite the text and does not produce a single score.'
-  zh: '中文文本的只读检查器。对一段话给出每百字的具体物数量（数字、时间点、第一人称经历、原话、专有名词）、抽象词与评价词计数、留白词（好像/应该/大概）密度，以及结构腔（不是X而是Y、先…再…、三段并列、破折号、首先/其次）相对同文体基线的倍数。输出一个判档和一组给写作者的问句；不改写文字，也不给单一总分。'
+  en: 'Read-only checker for Chinese prose. For a passage it reports concrete items per 100 characters (numbers, timestamps, first-person experience, quoted speech, proper nouns), counts of abstract nouns and evaluative adjectives, the density of hedging words (好像/应该/大概), and the density of structural frames (不是X而是Y, 先…再…, three-item lists, em dashes, 首先/其次) relative to a per-register baseline. It returns a band plus a list of questions for the writer. It does not rewrite the text and does not produce a single score. Settings page: on/off, one switch for the system-prompt section, three adjustable thresholds, and a preview box.'
+  zh: '中文文本的只读检查器。对一段话给出每百字的具体物数量（数字、时间点、第一人称经历、原话、专有名词）、抽象词与评价词计数、留白词（好像/应该/大概）密度，以及结构腔（不是X而是Y、先…再…、三段并列、破折号、首先/其次）相对同文体基线的倍数。输出一个判档和一组给写作者的问句；不改写文字，也不给单一总分。设置页可开关、调三个阈值、粘一段话当场预览。'
