@@ -3630,9 +3630,9 @@ dsh plugin --profile web add dshmarket
 - [kirkchinese/CiteCiter#citeciter](https://github.com/kirkchinese/CiteCiter/tree/main/packages/citeciter) — 选中 DSH 已提交回复中的文字，开启独立、持久、只读的多轮 Topic；Topic 绑定来源会话证据与项目文件，来源 Agent 可继续运行。
 - [kirkchinese/claude2dsh](https://github.com/kirkchinese/claude2dsh) — 将 Claude Code 会话、技能与插件资产导入为 DSH 原生可续聊会话，并支持将 DSH 会话导出或同步回 Claude Code JSONL。
 - [KissBlank/dsh-session-manager](https://github.com/KissBlank/dsh-session-manager) — 彻底删除 DSH 会话，并在一个控制台里集中管理：单条删除、可筛选的批量清理与维护清扫。
-- [kittimzhe/dsh-session-eval](https://github.com/kittimzhe/dsh-session-eval) — 回溯式会话评估：从持久化日志生成确定性成绩卡与跨会话回归对比——不跑基准、不用 LLM 裁判。
-- [kittimzhe/dsh-session-export](https://github.com/kittimzhe/dsh-session-export) — 会话证据报告：/transcript 从权威日志生成 HTML/Markdown/JSON 报告，/stats 输出终端统计卡，/archive 打包单会话 ZIP。
-- [kittimzhe/dsh-session-recall](https://github.com/kittimzhe/dsh-session-recall) — 确定性跨会话检索：`recall` 工具带显式范围控制地搜索历史会话日志。
+- [kittimzhe/dsh-session-eval](https://github.com/kittimzhe/dsh-session-eval) — 回溯式会话评测——给已经发生的会话打分：确定性评分卡、回归对比、/eval-history 趋势，/eval --report 直接从导出产物评分；不跑基准、不用 LLM 裁判。
+- [kittimzhe/dsh-session-export](https://github.com/kittimzhe/dsh-session-export) — 不止导出，而是证据级报告：/transcript 生成带 Mermaid 血统图、编辑器 diff、回合时间线的 HTML/Markdown/JSON；/stats 输出成本感知统计卡；/archive 打包原始 JSONL 附 SHA-256 清单——全历史、任意后端。
+- [kittimzhe/dsh-session-recall](https://github.com/kittimzhe/dsh-session-recall) — 确定性跨会话转录检索：`recall` 工具全文搜索历史会话日志，带 cwd 授权边界、CJK 子串回退与降级直扫；每条命中携带 sessionId 与最新导出报告路径，与 export、eval 插件闭环。
 - [kkkkk-tubu/dsh-deep-purge](https://github.com/kkkkk-tubu/dsh-deep-purge) — 真正删除 DSH 会话，而不是只归档（仅限 Windows）。一次清掉六处本地存储：会话日志、标题缓存、billion-context SQLite 索引（含 VACUUM）、侧栏注册表、成本台账、桥接日志。带预演、自动备份、逐字节回滚，以及「退出→删除→重启」全自动流程。
 - [kumiiwaka/dsh-intercom](https://github.com/kumiiwaka/dsh-intercom) — 给已经开着的窗口装内线电话，不建团队、不生新会话，只让平级窗口互相递话（带跳数上限防环）。
 - [Kyf-eng/dsh-threads](https://github.com/Kyf-eng/dsh-threads) — Claude 式的项目与讨论串：项目主对话为能独立完成的任务开讨论串（可以点开直接对话的真实会话），默认最多 3 个同时运行，可各自在独立的 git worktree 里工作，做完把回报发回主对话。
@@ -7132,6 +7132,7 @@ dsh plugin --profile web add dshmarket
 - [virggle/dsh-shutdown-after-task](https://github.com/virggle/dsh-shutdown-after-task) — 任务完成后自动关机：右下角按钮开启模式，任务成功完成后进入可取消的倒计时（取消走 shutdown /a），零运行时依赖。
 - [vitas/dsh-jev-subagent-dispatch](https://github.com/vitas/dsh-jev-subagent-dispatch) — 降低 LLM 成本：Jev（System One）分类器按声明式策略审查每一轮任务并推荐 subagent 模型路由，让常规工作以 flash 价格运行、主模型专注难点；显式 /route 触发、运行时代理能力门控、凭据脱敏，以及基于判定日志的离线策略回放。
 - [vlln/dsh-loop](https://github.com/vlln/dsh-loop) — 定时循环：`/loop` 命令 + loop 工具 + 活动状态条。
+- [waafer1/dsh-jipu](https://github.com/waafer1/dsh-jipu) — 读者优先的长篇小说工序：细纲先行、15 个门禁脚本、700 条主题种子，每个脚本自带自检。
 - [WaldInsel/dsh-desktop-agent-bridge](https://github.com/WaldInsel/dsh-desktop-agent-bridge) — 让外部 MCP Agent 将任务交给现有 DSH 桌面端，并提供可见会话、用户接管与可选审批转交。
 - [Wang-Chuming/dsh-work-review](https://github.com/Wang-Chuming/dsh-work-review) — 面向 Obsidian 风格 vault 的工作回顾闭环：每晚生成当天 Dream 与编号 T/G 计划，只执行标记为「常规」的条目（默认只读，--live 才本地 commit），把七天汇总成 ISO 周周报，并在只读侧栏面板里展示日报与周报。
 - [wangbobo-coder/gitee-ai-employee](https://github.com/wangbobo-coder/gitee-ai-employee) — Gitee/GitHub AI 员工：在 issue 里 @ 机器人并指定目标分支（如"需要修改 release-v1.2 分支"），它自动克隆仓库开发、向指定分支提交 PR，可自动合并并自动关闭 issue。v1.2 新增代码安全扫描：配置扫描仓库后按内置/自定义提示词审计代码，去重后把新发现提交 issue。
