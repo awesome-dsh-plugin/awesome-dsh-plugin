@@ -1,0 +1,7 @@
+url: https://github.com/SoulZhou/dsh-multi-root-changes
+name: SoulZhou/dsh-multi-root-changes
+category: git
+description:
+  en: 'Read-only Git changes tab that covers the session workspace root together with every additional root registered through multi-root-workspace, so sibling checkouts show up as separate sections with their own branch, ahead/behind, line counts and a directory tree; clicking a file opens its unified diff or its whole content for untracked files.'
+  zh: '只读的 Git 改动页签，把会话主目录与 multi-root-workspace 登记的每个附加根放在一起展示：平级仓库各自一节，带自己的分支、ahead/behind、增删行数与目录树；点文件看 unified diff，未跟踪文件则显示全文。'
+icon: https://raw.githubusercontent.com/SoulZhou/dsh-multi-root-changes/main/assets/icon-512.png
