@@ -2,5 +2,5 @@ url: https://github.com/songrui111/dsh-fine-tune
 name: songrui111/dsh-fine-tune
 category: model
 description:
-  en: 'Local LoRA and QLoRA fine-tuning in a panel: import JSONL, see a VRAM estimate before training starts, evaluate, and export an adapter. One-click Python environment install. Verified end to end on Windows 11 with an RTX 3060 6 GB; Linux and other GPUs are untested.'
-  zh: '面板里的本地 LoRA / QLoRA 微调：导入 JSONL、开始前先看显存估算、评测并导出适配器。一键安装 Python 环境。已在 Windows 11 + RTX 3060 6 GB 上完整跑通；Linux 与其他显卡未测。'
+  en: 'Local LoRA and QLoRA fine-tuning in a panel: import JSONL, see a VRAM estimate before training starts, evaluate, and export an adapter. One-click Python venv setup, but you must supply your own Python 3.10+ and an NVIDIA GPU (6 GB or more). Verified end to end on Windows 11 with an RTX 3060 6 GB; the installer refuses non-Windows hosts, so Linux, macOS and other GPUs are unsupported for now.'
+  zh: '面板里的本地 LoRA / QLoRA 微调：导入 JSONL、开始前先看显存估算、评测并导出适配器。一键创建 Python 虚拟环境，但需自备 Python 3.10+ 与 NVIDIA 显卡（6 GB 显存起）。已在 Windows 11 + RTX 3060 6 GB 上完整跑通；安装器会直接拒绝非 Windows 平台，Linux、macOS 与其他显卡暂不支持。'

@@ -2,5 +2,5 @@ url: https://github.com/cat-Logan/dsh-rayburst
 name: cat-Logan/dsh-rayburst
 category: tools
 description:
-  en: "Adds three tools that hand DeepSeek Harness downloads to the Rayburst aria2 engine — rayburst_download, rayburst_wait and rayburst_status."
-  zh: "把 DeepSeek Harness 的下载交给 Rayburst（aria2 引擎），提供 rayburst_download、rayburst_wait、rayburst_status 三个工具。"
+  en: "Adds three tools that hand DeepSeek Harness downloads to the Rayburst aria2 engine — rayburst_download, rayburst_wait and rayburst_status. Requires the Rayburst desktop app (aria2-next) installed and running on the same machine; the plugin reads its aria2.conf for the RPC port and secret."
+  zh: "把 DeepSeek Harness 的下载交给 Rayburst（aria2 引擎），提供 rayburst_download、rayburst_wait、rayburst_status 三个工具。需先在本机安装并运行 Rayburst 桌面端（aria2-next），插件会读取它的 aria2.conf 获取 RPC 端口与密钥。"

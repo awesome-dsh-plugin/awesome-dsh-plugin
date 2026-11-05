@@ -2,6 +2,6 @@ url: https://github.com/ZadAnthony/DSH-Projects/tree/main/workspace/packages/pro
 name: ZadAnthony/DSH-Projects#projects
 category: workflow
 description:
-  en: Project workspaces for multi-session collaboration, conversation handoffs, searchable chat records, and editable shared memory.
-  zh: 为跨会话协作提供项目空间、会话接力、可查询的聊天记录与可编辑的共享记忆。
+  en: "Project workspaces for multi-session collaboration, conversation handoffs, searchable chat records, and editable shared memory; automatic memory curation and handoff judgment require two background models (memoryModel and sessionManagerModel) configured in the plugin config."
+  zh: "为跨会话协作提供项目空间、会话接力、可查询的聊天记录与可编辑的共享记忆；自动记忆整理与接力判断需在插件配置里分别指定 memoryModel 与 sessionManagerModel 两个后台模型。"
 tarball: https://github.com/ZadAnthony/DSH-Projects/releases/download/v0.1.0-beta.3/dsh-projects-0.1.0-beta.3.tgz

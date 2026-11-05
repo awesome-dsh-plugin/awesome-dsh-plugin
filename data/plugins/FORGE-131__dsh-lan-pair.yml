@@ -2,5 +2,5 @@ url: https://github.com/FORGE-131/dsh-lan-pair
 name: FORGE-131/dsh-lan-pair
 category: remote
 description:
-  en: 'Phone access to the DSH web UI: LAN pairing plus tunnel-based remote access, with automatic LAN-to-tunnel failover and dshlanpair:// deep links.'
-  zh: '手机接入 DSH Web 界面：内网配对 + 隧道远程访问，自带局域网到隧道的自动降级与 dshlanpair:// 深链接。'
+  en: 'Phone access to the DSH web UI: LAN pairing plus remote access through your own tunnel command (e.g. cloudflared) or a fixed public URL, with automatic LAN-to-tunnel failover and dshlanpair:// deep links; the phone client is the bundled Android app (APK, Android 8+, sideloaded).'
+  zh: '手机接入 DSH Web 界面：内网配对 + 通过自备隧道命令（如 cloudflared）或固定公网地址的远程访问，自带局域网到隧道的自动降级与 dshlanpair:// 深链接；手机端需侧载仓库自带的 Android App（APK，需 Android 8+）。'

@@ -2,5 +2,5 @@ url: https://github.com/zzcyydshhh/comfy-png-inspector
 name: zzcyydshhh/comfy-png-inspector
 category: tools
 description:
-  zh: "读取 ComfyUI 生成图的 PNG 元数据：还原 LoRA 执行链与每一档强度、采样参数、底模与提示词，并可原样导出工作流或按模板重建。"
-  en: "Reads ComfyUI PNG metadata: recovers the LoRA execution chain with every strength value, sampler settings, base model and prompts, and can export the workflow verbatim or rebuild it onto a template."
+  zh: "以面向模型的 comfy_png_inspect 工具读取 ComfyUI 生成图的 PNG 元数据：可传单张 PNG 或整个 output 目录，逐张报出 LoRA 执行链与每档强度、采样参数、底模、CLIP、VAE、latent 尺寸、正负提示词与被 bypass 的节点。"
+  en: "Reads ComfyUI PNG metadata in a model-facing comfy_png_inspect tool: point it at one PNG or a whole output folder and it reports, per image, the LoRA execution chain with every strength value, sampler settings, base model, CLIP, VAE, latent size, both prompts and bypassed nodes."

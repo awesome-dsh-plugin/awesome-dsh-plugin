@@ -2,5 +2,5 @@ url: https://github.com/evolution301/agent-control-tower/tree/main/packages/dsh-
 name: evolution301/agent-control-tower#dsh-tower
 category: workflow
 description:
-  en: 'Control tower tools: dispatch a task to a role agent, read its report, verify and accept or send it back.'
-  zh: '控制塔工具：把任务分派给角色 agent、读取回执、校验通过后接受或打回。'
+  en: "Control tower tools: dispatch a task to a role agent, read its report, verify and accept or send it back. Requires the separate agent-control-tower Python CLI (tower; it is not on PyPI — install it with pip install -e from the same repo) on the DSH process's PATH plus a tower init-ed workspace; without it every tool call fails with ENOENT."
+  zh: "控制塔工具：把任务分派给角色 agent、读取回执、校验通过后接受或打回。需要先把同一仓库里的 agent-control-tower Python CLI（tower，未发布到 PyPI，需在仓库内 pip install -e）装进 DSH 进程的 PATH，并在工作目录跑过 tower init；否则每次工具调用都会报 ENOENT。"

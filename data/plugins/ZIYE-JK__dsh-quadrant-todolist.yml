@@ -2,5 +2,5 @@ url: https://github.com/ZIYE-JK/dsh-quadrant-todolist
 name: ZIYE-JK/dsh-quadrant-todolist
 category: workflow
 description:
-  en: Four-quadrant todo manager in the DSH sidebar with month and week calendar views, per-period completion statistics, system and Feishu notifications, and recurrence rules including Chinese statutory workdays and the Ebbinghaus curve.
-  zh: DSH 侧栏的四象限待办管理器，带月/周日历视图、周期完成率统计、系统与飞书通知，以及中国法定工作日和艾宾浩斯记忆曲线等重复规则。
+  en: Four-quadrant todo manager in the DSH sidebar with month and week calendar views, per-period completion statistics, system notifications and Feishu notifications (the latter needs the DSH Feishu integration), and recurrence rules including Chinese statutory workdays and the Ebbinghaus curve. Derived from Natte/dsh-sidebar-todo 0.2.3 and largely rewritten; do not install both — they register the same /todo/api route and use the same todos.json data file.
+  zh: DSH 侧栏的四象限待办管理器，带月/周日历视图、周期完成率统计、系统通知与飞书通知（飞书需已装 DSH 飞书集成），以及中国法定工作日和艾宾浩斯记忆曲线等重复规则。基于 Natte/dsh-sidebar-todo 0.2.3 大幅改写；不要与上游同装——两者注册同一个 /todo/api 路由并共用同一份 todos.json。

@@ -2,5 +2,5 @@ url: https://github.com/2869949486/dsh-opencode-routing
 name: 2869949486/dsh-opencode-routing
 category: usage
 description:
-  en: "One Settings page for OpenCode Go: an account pool that rotates A-to-B when a key runs out or stops authenticating, per-account 5-hour/weekly/monthly allowance, per-model spend with remaining quota, capability tags (image, video, text-only, tools, context), a live OpenCode-vs-official-API cost comparison, and 10 UI languages."
-  zh: "一个设置页管完 OpenCode Go：账户池在密钥额度耗尽或鉴权失败时自动 A→B 轮替，按账户显示 5 小时/本周/本月额度，按模型显示用量与剩余额度并标出能力（图像、视频、纯文本、工具调用、上下文长度），另有「走 OpenCode 还是官方直连更划算」的实时换算与 10 种界面语言。"
+  en: "One Settings page for OpenCode Go: an account pool that rotates A-to-B when a key runs out or stops authenticating, per-account 5-hour/weekly/monthly allowance, per-model spend with remaining quota, capability tags (image, video, text-only, tools, reasoning), a live OpenCode-vs-official-API cost comparison, and 10 UI languages."
+  zh: "一个设置页管完 OpenCode Go：账户池在密钥额度耗尽或鉴权失败时自动 A→B 轮替，按账户显示 5 小时/本周/本月额度，按模型显示用量与剩余额度并标出能力（图像、视频、纯文本、工具调用、推理），另有「走 OpenCode 还是官方直连更划算」的实时换算与 10 种界面语言。"

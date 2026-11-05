@@ -1,7 +1,7 @@
 url: https://github.com/shijiewang/dsh-workspace-session-filter
 name: shijiewang/dsh-workspace-session-filter
 category: session
-tarball: https://github.com/shijiewang/dsh-workspace-session-filter/releases/latest/download/dsh-workspace-session-filter-1.0.0.tgz
+tarball: https://github.com/shijiewang/dsh-workspace-session-filter/releases/download/v1.0.0/dsh-workspace-session-filter-1.0.0.tgz
 description:
-  en: 'Two filter chips at the foot of the sidebar: one counts the sessions that are running, the other those waiting for your approval, plan review or answer, and each opens a popover listing those sessions grouped by workspace where a row opens the session. A separate panel adds an all-sessions chip and a more menu that filters by the last day, three days, week or thirty days.'
-  zh: '侧边栏底部的两个筛选 chip：一个统计正在运行的会话，一个统计在等你确认（审批、计划审阅、待回答）的会话，各自带当前数量；点开就在上方按工作区分组列出命中会话，点行直接打开。另有完整面板，多一个「全部」chip 和「更多」菜单，可按最近一天、三天、一周、三十天筛选。'
+  en: 'Two status filters — icons in the workspace section header, with a sidebar-foot bar as fallback when the header cannot be located: one counts the sessions that are running, the other those waiting for your approval, plan review or answer, and each opens a popover listing those sessions grouped by workspace where a row opens the session. A separate panel adds an all-sessions chip and a more menu that filters by the last day, three days, week or thirty days.'
+  zh: '两个状态筛选——工作区标题行里的图标，定位不到标题行时退回侧边栏底部：一个统计正在运行的会话，一个统计在等你确认（审批、计划审阅、待回答）的会话，各带当前数量；点开就在下方按工作区分组列出命中会话，点行直接打开。另有完整面板，多一个「全部」chip 和「更多」菜单，可按最近一天、三天、一周、三十天筛选。'

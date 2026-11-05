@@ -2,5 +2,5 @@ url: https://github.com/alvinhuang0509-design/dsh-connect-teleagent
 name: alvinhuang0509-design/dsh-connect-teleagent
 category: model
 description:
-  en: 'TeleAgent (China Telecom TeleAI "Stellar" agent) model provider for DeepSeek Harness: corrects the cloud gateway request signing to two-round HMAC-SHA256 keyed by the login JWT signature segment, which fixes the 40104 failures the older local-v1 signing produced, and adds points balance, daily check-in, and an in-composer account chip. Reuses the existing local login credential.'
-  zh: '中国电信天翼 AI「星辰超级智能体」(TeleAgent) 模型 provider：把云网关请求签名修正为以登录 JWT 签名段为密钥的两轮 HMAC-SHA256，修复旧版 local-v1 签名导致的 40104 失败，并提供积分余额、每日签到与输入框内账号条；复用已有的本机登录凭据。'
+  en: 'TeleAgent (China Telecom TeleAI "Stellar" agent) model provider for DeepSeek Harness: corrects the cloud gateway request signing to two-round HMAC-SHA256 keyed by the login JWT signature segment, which fixes the 40104 failures the older local-v1 signing produced, and adds points balance, daily check-in, and an in-composer account chip. Reuses the existing local login credential. Cannot be installed alongside anye-99/dsh-codearts-auth — both register the same teleagent provider, and this plugin reuses its credentials and derives its SSE/tool-call parsing from it.'
+  zh: '中国电信天翼 AI「星辰超级智能体」(TeleAgent) 模型 provider：把云网关请求签名修正为以登录 JWT 签名段为密钥的两轮 HMAC-SHA256，修复旧版 local-v1 签名导致的 40104 失败，并提供积分余额、每日签到与输入框内账号条；复用已有的本机登录凭据。与 anye-99/dsh-codearts-auth 不能同装——两者注册同一个 teleagent provider；本插件复用其凭据，通用 SSE/工具调用解析亦取自该插件。'

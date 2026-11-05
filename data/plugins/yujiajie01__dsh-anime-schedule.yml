@@ -2,6 +2,6 @@ url: https://github.com/yujiajie01/dsh-anime-schedule
 name: yujiajie01/dsh-anime-schedule
 category: fun
 description:
-  en: 'Adds a right-sidebar tab to the DSH web UI with the daily Japanese anime broadcast calendar from Bangumi (api.bgm.tv), grouped Monday through Sunday with today highlighted; hovering a card shows a details popover (cover, rating, rank, air date, staff), clicking opens the title on Bangumi, MyAnimeList, AniDB, AniList or Anime-Planet; the host caches the calendar for 10 minutes and subjects for 24 hours on disk so the last successful table still displays offline, and falls back to common local proxy ports when the direct connection fails.'
-  zh: '在 DSH 网页端右侧栏显示每日日本新番放送表(数据源 Bangumi api.bgm.tv),周一至周日分组、今天高亮;悬停卡片弹出详情(封面、评分、排名、开播日期、制作与声优),点击可选 Bangumi/MyAnimeList/AniDB/AniList/Anime-Planet 跳转;日历缓存 10 分钟、详情 24 小时并落盘,断网仍显示最近一次成功的表,直连失败时自动尝试本机常见代理端口。'
+  en: 'Adds a right-sidebar tab to the DSH web UI with the daily Japanese anime broadcast calendar from Bangumi (api.bgm.tv), grouped Monday through Sunday with today highlighted; hovering a card shows a details popover (cover, score, rank, air date, episode count, tags and synopsis), and clicking opens the title on Bangumi; the host caches the calendar for 10 minutes and subjects for 24 hours on disk so the last successful table still displays offline, and falls back to common local proxy ports when the direct connection fails.'
+  zh: '在 DSH 网页端右侧栏显示每日日本新番放送表(数据源 Bangumi api.bgm.tv)，周一至周日分组、今天高亮；悬停卡片弹出详情(封面、评分、排名、开播日期、话数、标签与简介)，点击在 Bangumi 打开该番组；日历缓存 10 分钟、详情 24 小时并落盘，断网仍显示最近一次成功的表，直连失败时自动尝试本机常见代理端口。'
 icon: https://raw.githubusercontent.com/yujiajie01/dsh-anime-schedule/main/assets/icon-180.png

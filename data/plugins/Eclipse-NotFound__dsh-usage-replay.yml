@@ -2,5 +2,5 @@ url: https://github.com/Eclipse-NotFound/dsh-usage-replay
 name: Eclipse-NotFound/dsh-usage-replay
 category: usage
 description:
-  en: Cross-session per-model token usage replayed from the harness's own session logs, with a usage panel tab and a per-conversation model popover.
-  zh: 从 Harness 自身会话日志回放聚合的跨会话分模型 token 用量，含侧边栏用量面板与单对话按模型弹层。
+  en: Cross-session per-model token usage replayed from the harness's own session logs, with a usage panel tab (requires dsh-better-sidebar) and a per-conversation model popover.
+  zh: 从 Harness 自身会话日志回放聚合的跨会话分模型 token 用量，含侧边栏用量面板（需安装 dsh-better-sidebar）与单对话按模型弹层。

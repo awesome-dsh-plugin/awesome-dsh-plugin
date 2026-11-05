@@ -2,5 +2,5 @@ url: https://github.com/MrLsss/cyber-self
 name: MrLsss/cyber-self
 category: memory
 description:
-  en: "Per-workspace personal knowledge base for DeepSeek Harness: each identity gets an isolated local library — import PDF, Word, Excel, Markdown, text, HTML and images, auto-chunk and embed into SQLite with FTS5 + vector hybrid retrieval, then ask questions in chat with numbered citations back to the source. Local-first, no cloud upload."
-  zh: "按工作区隔离的个人知识库：每种身份一套本地资料库，导入 PDF、Word、Excel、Markdown、文本、网页和图片，自动切块并生成向量索引（SQLite FTS5 + 向量混合检索），对话里直接提问，回答带编号引用可回溯原文。本地存储，不上传云端。"
+  en: "Per-workspace personal knowledge base for DeepSeek Harness: each identity gets an isolated local library — import PDF, Word, Excel, Markdown, text, HTML and images, auto-chunk and embed into SQLite with FTS5 + vector hybrid retrieval, then ask questions in chat with numbered citations back to the source. Local-first, no cloud upload; vector embeddings need a local Ollama (default bge-m3), and without it retrieval degrades to FTS5 keyword search."
+  zh: "按工作区隔离的个人知识库：每种身份一套本地资料库，导入 PDF、Word、Excel、Markdown、文本、网页和图片，自动切块并生成向量索引（SQLite FTS5 + 向量混合检索），对话里直接提问，回答带编号引用可回溯原文。本地存储，不上传云端；向量化需要本机 Ollama（默认 bge-m3），没有时检索退化为 FTS5 关键词。"

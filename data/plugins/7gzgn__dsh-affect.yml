@@ -2,5 +2,5 @@ url: "https://github.com/7gzgn/dsh-affect"
 name: "dsh-affect"
 category: identity
 description:
-  en: "Give your agent an external emotion state machine: several axes (0-100) that drift over time and move when you speak to it. Each turn the plugin injects which band you are in plus which tags you may use. The numbers belong to the plugin — the model cannot read, recompute or argue with them, it only speaks from inside them."
-  zh: "把 AI 的情绪搬到模型外面：几条情绪轴各 0-100，按你说的话加减、随时间自己漂移，每轮把「现在处在哪一档 + 可用标签」注入系统提示。数值只由插件维护，模型自己算不出来也改不了——它只能带着这个状态说话。默认空配置，一个轴都不替你定。"
+  en: "Give your agent an external emotion state machine: several axes (0-100) that drift over time and move when you speak to it. Each turn the plugin injects which band you are in plus which tags you may use. The numbers belong to the plugin: the model reads them from the injected prompt and can change them only through the plugin's own emotion tools, never by asserting a mood."
+  zh: "把 AI 的情绪搬到模型外面：几条情绪轴各 0-100，按你说的话加减、随时间自己漂移，每轮把「现在处在哪一档 + 可用标签」注入系统提示。数值由插件维护：模型从注入的提示里读到当前值，只能通过插件自带的情绪工具调整，不能凭一句自报心情改数。默认空配置，一个轴都不替你定。"

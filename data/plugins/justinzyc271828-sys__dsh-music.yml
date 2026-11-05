@@ -1,5 +1,5 @@
 url: https://github.com/justinzyc271828-sys/dsh-music
-name: dsh-suno-mcp
+name: justinzyc271828-sys/dsh-music
 category: tools
 description:
   en: "Connects DeepSeek Harness to Suno's official MCP to check credits and browse or search your music library. Sign in with your own Suno account after installation."

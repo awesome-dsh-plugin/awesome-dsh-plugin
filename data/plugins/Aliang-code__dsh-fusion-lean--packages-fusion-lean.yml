@@ -2,5 +2,5 @@ url: https://github.com/Aliang-code/dsh-fusion-lean/tree/master/packages/fusion-
 name: Aliang-code/dsh-fusion-lean#fusion-lean
 category: tools
 description:
-  en: "Fusion 360 for DSH: bridges the MCP server Fusion ships (read, execute, update, electronics) with every upstream schema kept byte-for-byte while the always-on tool surface drops 70 percent, adds an editable endpoint under Settings, and wraps a local hf.py modelling loop as six hf_* tools."
-  zh: "把 Fusion 360 接进 DSH：桥接 Fusion 自带的 MCP 服务（读取、执行、更新、电子设计），上游 schema 逐字节保留而常驻工具面减少 70%，设置页可改端点，并把本地 hf.py 建模闭环包成六个 hf_* 工具。"
+  en: "Fusion 360 for DSH: bridges the MCP server Fusion ships (read, execute, update, electronics) with every upstream schema kept byte-for-byte while the always-on tool surface drops 70 percent, adds an editable endpoint under Settings, and wraps a local hf.py modelling loop as nine hf_* tools (needs Python 3.10+ and a fusion-harness workspace)."
+  zh: "把 Fusion 360 接进 DSH：桥接 Fusion 自带的 MCP 服务（读取、执行、更新、电子设计），上游 schema 逐字节保留而常驻工具面减少 70%，设置页可改端点，并把本地 hf.py 建模闭环包成九个 hf_* 工具（需要 Python 3.10+ 与 fusion-harness 工作区）。"

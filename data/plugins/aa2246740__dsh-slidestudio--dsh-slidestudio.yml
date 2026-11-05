@@ -4,4 +4,3 @@ category: "docs"
 description:
   en: "Creates and edits presentations in DeepSeek Harness and exports editable PPTX files."
   zh: "在 DeepSeek Harness 中生成和编辑演示文稿，并导出可编辑的 PPTX 文件。"
-tarball: "https://github.com/aa2246740/dsh-slidestudio/releases/download/v0.2.9/dsh-slidestudio-0.2.9.tgz"

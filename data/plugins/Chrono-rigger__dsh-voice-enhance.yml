@@ -2,6 +2,6 @@ url: https://github.com/Chrono-rigger/dsh-voice-enhance
 name: Chrono-rigger/dsh-voice-enhance
 category: voice
 description:
-  en: Hold Ctrl to dictate and insert a cleaned-up transcript, plus a sparkle button that rewrites the composer draft into a clearer prompt.
-  zh: 按住 Ctrl 说话、松开插入修正后的转写文字，输入框旁的星标按钮可把草稿改写成更清晰的提示词。
+  en: Hold Alt (default; rebindable in the plugin page) to dictate and insert a cleaned-up transcript, plus a sparkle button that rewrites the composer draft into a clearer prompt. Dictation requires the Harness Voice Input plugin with its SenseVoice model enabled.
+  zh: 按住 Alt（默认，可在插件页改键）说话、松开插入修正后的转写文字，输入框左侧、模型选择器前的星标按钮可把草稿改写成更清晰的提示词；听写需启用 Harness 的语音输入插件并准备好 SenseVoice 模型。
 icon: https://raw.githubusercontent.com/Chrono-rigger/dsh-voice-enhance/main/assets/icon.png
