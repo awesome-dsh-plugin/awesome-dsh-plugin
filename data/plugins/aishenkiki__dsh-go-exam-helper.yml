@@ -2,5 +2,5 @@ url: https://github.com/aishenkiki/dsh-go-exam-helper
 name: aishenkiki/dsh-go-exam-helper
 category: tools
 description:
-  en: Watches the phone screen on DSH Go and pushes the answer to each quiz question as a heads-up notification, using an optional local answer bank.
-  zh: DSH Go 上的答题助手：盯着考试页面，把每道题的答案弹成顶部通知，可选本地题库优先命中。
+  en: "For the DSH Go phone app (https://go.dshtui.com): watches the quiz screen and pushes each answer as a heads-up notification, using an optional local answer bank."
+  zh: "DSH Go 手机 App 专用插件（官网 https://go.dshtui.com）：盯住手机上的考试/答题页面，把每道题的答案弹成顶部通知，可选导入本地题库优先命中。"
