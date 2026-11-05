@@ -1,0 +1,7 @@
+url: https://github.com/Surtr-crimson/dsh-turn-dial
+name: Surtr-crimson/dsh-turn-dial
+category: ui
+description:
+  en: "Renders the chat turn navigator as a clock-like half dial: one graduation per turn, a purple graduation every fifth turn, and a blue needle on the current turn."
+  zh: 把对话右侧的轮次导航画成带刻度的半轮盘：一轮一根刻度，每第五根是紫色，细蓝色指针指向当前轮次。
+icon: https://raw.githubusercontent.com/Surtr-crimson/dsh-turn-dial/main/assets/icon-180.png
