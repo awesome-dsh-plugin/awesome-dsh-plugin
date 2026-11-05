@@ -2,6 +2,6 @@ url: https://github.com/liujiangnanchenjbguo/dsh-gufa-code
 name: liujiangnanchenjbguo/dsh-gufa-code
 category: ui
 description:
-  en: 'Cursor-style IDE mode for DeepSeek Harness: one click on a workspace menu turns the main panel into a VS Code-like workbench with a Monaco editor, file tree, Git panel (commit graph, push/pull, per-file revert), SSH hosts and a real PTY terminal on the left, while the official DSH conversation stays docked on the right so tool calls, file edits, approvals and session history keep working as you code.'
-  zh: '给 DeepSeek Harness 的 IDE 模式：点工作区「…」菜单一键把主面板变成 VS Code 风格工作台——左侧 Monaco 编辑器、文件树、Git 面板（提交图/推送/拉取/逐文件还原）、SSH 主机与真实 PTY 终端，右侧原样停靠官方 DSH 会话，写代码时工具调用、自动改文件、审批与会话历史照常可用。'
+  en: 'Cursor-style IDE mode for DeepSeek Harness: one click on a workspace menu turns the main panel into a VS Code-like workbench with a Monaco editor, file tree, Git panel (commit graph, push/pull, per-file revert), SSH hosts and a real PTY terminal on the left, while the official DSH conversation stays docked on the right so tool calls, file edits, approvals and session history keep working as you code. Built on a craft-first belief: write it by hand, understand every change, treat AI as an assistant and stay the first owner of your software.'
+  zh: '给 DeepSeek Harness 的 IDE 模式：点工作区「…」菜单一键把主面板变成 VS Code 风格工作台——左侧 Monaco 编辑器、文件树、Git 面板（提交图/推送/拉取/逐文件还原）、SSH 主机与真实 PTY 终端，右侧原样停靠官方 DSH 会话，写代码时工具调用、自动改文件、审批与会话历史照常可用。作者主张「古法编程」：亲手写、每个改动心中有数，AI 是助理，你是软件的第一责任人。'
 icon: https://raw.githubusercontent.com/liujiangnanchenjbguo/dsh-gufa-code/main/docs/icon-180.png
