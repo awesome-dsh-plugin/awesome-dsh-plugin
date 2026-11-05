@@ -1,0 +1,8 @@
+url: https://github.com/clockclock1/dsh-nitro
+name: clockclock1/dsh-nitro
+category: tools
+tarball: https://github.com/clockclock1/dsh-nitro/releases/download/v1.0.0/dsh-nitro-1.0.0.tgz
+icon: https://raw.githubusercontent.com/clockclock1/dsh-nitro/master/icon.png
+description:
+  en: "Fast-delivery mode toggled from the composer. One switch drives three subsystems: a circuit breaker that short-circuits test and build commands instead of running them, an apply_patch tool that writes SEARCH/REPLACE hunks atomically (all anchors must match or nothing is written), and a dehydrator that trims terminal output to a pass line or the last 15 error lines. Off by default."
+  zh: "输入框里随时开关的极速交付模式。一个 ⚡ 开关驱动三个子系统：测试与构建命令的断路器（不真正执行，直接返回成功的回执）、按 SEARCH/REPLACE 冲突块原子写入的 apply_patch 工具（任一锚点未命中则整次回滚，盘上零改动）、以及把终端输出脱水成一句通过或最后 15 行错误的脱水器。默认关闭。"
