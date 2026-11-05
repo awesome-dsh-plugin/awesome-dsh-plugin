@@ -1,0 +1,6 @@
+url: https://github.com/XXGJ666/dsh-feiyu-vision
+name: XXGJ666/dsh-feiyu-vision
+category: vision
+description:
+  en: "Image understanding for DSH: describe, OCR and reverse image search with configurable providers and a native settings panel."
+  zh: "给 DSH 加识图：描述、读文字、反查原图，Key 和 ffmpeg 都能在面板里配。"
