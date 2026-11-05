@@ -1,6 +1,6 @@
 url: https://github.com/Zcc50/dsh-rebuild
-name: Zcc50/dsh-rebuild
+name: DSH 工作区前端重建
 category: session
 description:
-  en: "One-stop pack for DeepSeek Harness: the workspace frontend plugin itself plus a pack/ installer for the task list, encoding fallback, LSP/audit and vision plugins. Root stays a normal marketplace-installable plugin."
-  zh: "DSH 环境一站式整合包：根目录是可从市场一键安装/更新的工作区美化插件，pack/ 子目录是任务列表、编码兼容、LSP/审查、视觉与白皮书的完整安装器。"
+  en: 'Rebuilds the sidebar into a workspace / group / session tree: drag sessions between groups, per-session context-usage ring, scheduled-task clock, cost tag, resize handles, 20%/40% context alerts and the balance in the workspace header. Client-only bundle, no host changes.'
+  zh: 'DSH 工作区美化：侧栏改成 工作区 → 分组 → 会话，支持跨分组/跨工作区拖拽归类、会话行上下文用量环、定时任务时钟、单会话花费、两侧调宽把手、20%/40% 上下文提醒，工作区标题栏显示账户余额。纯客户端 bundle，不改宿主。'
