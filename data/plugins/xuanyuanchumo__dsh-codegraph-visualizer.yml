@@ -1,0 +1,7 @@
+url: https://github.com/xuanyuanchumo/dsh-codegraph-visualizer
+name: xuanyuanchumo/dsh-codegraph-visualizer
+category: ui
+description:
+  en: Interactive code-graph visualization inside DSH, adding a top-level conversation tab for call chains, dependency analysis and impact assessment.
+  zh: DSH 内的交互式代码图谱：在主会话顶部标签中呈现调用链、依赖分析与影响评估。
+icon: https://raw.githubusercontent.com/xuanyuanchumo/dsh-codegraph-visualizer/master/assets/icon-180.png
