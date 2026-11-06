@@ -1,0 +1,7 @@
+url: https://github.com/louisding9527/dsh-session-search
+name: louisding9527/dsh-session-search
+category: session
+tarball: https://github.com/louisding9527/dsh-session-search/releases/latest/download/dsh-session-search.tgz
+description:
+  en: 'Agent-facing keyword search over local DSH session logs: session_search returns matching sessions with timestamps and excerpts, session_read dumps one conversation, and both skip injected context such as memory snapshots; no index is built.'
+  zh: '面向模型的历史会话关键字检索：session_search 返回命中的会话、时间与上下文片段，session_read 导出单个会话的对话，两者都跳过记忆快照等注入内容；不建索引。'
