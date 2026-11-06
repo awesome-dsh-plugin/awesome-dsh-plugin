@@ -3677,6 +3677,7 @@ dsh plugin --profile web add dshmarket
 - [JessenReinhart/dsh-time-context](https://github.com/JessenReinhart/dsh-time-context) — 为每次请求注入精确的本地当前时间，以及上一条用户消息的时间、日期关系与间隔；并提供 /time 命令查看注入内容。
 - [Jessicaisleep/dsh-dsml-guard](https://github.com/Jessicaisleep/dsh-dsml-guard) — 抹掉漏进助手正文的 DSML 标记；只在确实毫无产出的轮次补一条继续——整段调用写进正文且没有发出任何工具调用，或只剩闭合标签且正文近乎为空。上游抖动类错误会续跑，额度、限流、鉴权与上下文超限一律不续。适用 DSH 0.2.1-rc.2 起、0.3.0 以下，Node 20 起。
 - [Jessicaisleep/dsh-wm-toolkit](https://github.com/Jessicaisleep/dsh-wm-toolkit) — 一个插件做会话与消息手术：撤回或编辑指令/回复（连思考过程一起改）、用原提问重新生成、按模型上下文级删除任意一条，以及会话归档、删除、跨工作区移动与工作区迁移。面向 DSH 0.1.5 / 0.2.x，已在 0.2.1-rc.3 实测。由三个 MIT 插件分叉合并而成（Jipcon/DSH-plugins 的 dsh-message-recall、hkkz9522 的 dsh-session-manager、DDDMUC 的 dsh-delete-turn），新增编辑回复、重新生成与工作区迁移。不要与这些插件或其它会话移动、消息删除类插件同时启用。
+- [JiangHuai24/dsh-agent-sync](https://github.com/JiangHuai24/dsh-agent-sync) — 把本机其他 AI 编程助手的会话实时镜像成 DeepSeek Harness 的任务，每个应用一个工作区，并按内容指纹去重。
 - [jianyuepei/dsh-session-mindmap](https://github.com/jianyuepei/dsh-session-mindmap) — 把 DSH 会话整理成一张自包含的交互式 HTML 脑图（主题、结论、决策、待办、未决问题），并给出与上一次生成相比的变更。
 - [jingleboat/dsh-session-cleaner-host](https://github.com/jingleboat/dsh-session-cleaner-host) — 从侧栏会话菜单删除整个会话；聊天里划词右键弹出「复制 / 引用 / 提问」：引用把 Markdown 引用块插入输入框，提问把选区与问题交给同一个复用的可继续子智能体（label `ask`，宿主重启后经子智能体目录找回），回答在右侧栏流式显示。
 - [JinYihang1011/dsh-plugins#dsh-session-ops](https://github.com/JinYihang1011/dsh-plugins/tree/main/dsh-session-ops) — 给侧栏会话行菜单补上三项操作：打开工作区位置、移动到其它工作区、删除会话（进回收站，可撤销）。
@@ -4819,6 +4820,7 @@ dsh plugin --profile web add dshmarket
 - [fzuleo/dsh-github-reuse](https://github.com/fzuleo/dsh-github-reuse) — 面向 agent 的只读 GitHub 调研工具——仓库检索、候选体检（star、许可证、最近推送、体积、是否归档）、依赖清单读取、经 raw 通道读单个文件——并附一个 oss-reuse 技能，让 agent 先检索 GitHub、核对真实依赖，再用现成开源项目拼装功能而不是从零重写；全程不克隆、不占磁盘。
 - [Ganglith/dsh-wayland-use](https://github.com/Ganglith/dsh-wayland-use) — GNOME/Mutter 下的 Wayland 桌面控制：截图、带坐标的 OCR、按文字点击，以及批量输入动作。后端为 Python 进程，需 python3-gi 与 GStreamer；OCR 需 Tesseract。
 - [GDWhisper/dsh-ntr](https://github.com/GDWhisper/dsh-ntr) — 把任意支持 ACP 的 Agent 接进 DSH，用 DSH 一个入口管理所有会话和任务。模型、思考等级和权限模式由 Agent 自己提供；工具调用显示在主聊天区，diff 汇总到独立的 NTR 页，权限询问出现在输入框。使用前需在本机安装支持 ACP 的 Agent 命令行工具。
+- [gem-gti/dsh-scrcpy-mirror](https://github.com/gem-gti/dsh-scrcpy-mirror) — 用 scrcpy 把安卓手机画面投到 Windows 电脑（USB 或无线），并把启动、停止、状态、重连、截图暴露为智能体工具与 /mirror 命令。
 - [geml-spec/geml#integrations/dsh-plugin](https://github.com/geml-spec/geml/tree/main/integrations/dsh-plugin) — 按块寻址的文档读写：MCP server 提供 geml_get / geml_set / geml_check 等工具，Agent 只取回或改写 Markdown、GEML 文档中的某一个块，而不是整篇文件。另带 GEML 写作技能，以及把项目调用图构建为 GEML codemap 并浏览的代码图谱技能。
 - [gezi-wen/dsh-guikit](https://github.com/gezi-wen/dsh-guikit) — 以 DSH 原生工具形式提供的 Windows 桌面控制——整屏与单窗口截图（单窗口走 PrintWindow，窗口被遮住也能抓）、点击、拖动、打字、按键、滚动、窗口管理、像素与窗口轮询，以及可直接 invoke 控件或读取控件值的 UIA 查询（不必点坐标）。13 个工具，跑在 PowerShell 7 子进程上；不需要 MCP 服务器、无常驻进程、无 API key。
 - [Giauzihau/dsh-harness-zh](https://github.com/Giauzihau/dsh-harness-zh) — 把 DeepSeek Harness 发给模型的提示词——系统提示词各段、运行时上下文、工具描述与参数说明——翻译成简体中文。Cordis API 词典派生自 zjl1989-li/dsh-harness-zh-cn（MIT），后者同样在运行时翻译同一批提示词层；不要同时启用两者。
@@ -7287,7 +7289,7 @@ dsh plugin --profile web add dshmarket
 - [virggle/dsh-shutdown-after-task](https://github.com/virggle/dsh-shutdown-after-task) — 任务完成后自动关机：右下角按钮开启模式，任务成功完成后进入可取消的倒计时（取消走 shutdown /a），零运行时依赖。
 - [vitas/dsh-jev-subagent-dispatch](https://github.com/vitas/dsh-jev-subagent-dispatch) — 降低 LLM 成本：Jev（System One）分类器按声明式策略审查每一轮任务并推荐 subagent 模型路由，让常规工作以 flash 价格运行、主模型专注难点；显式 /route 触发、运行时代理能力门控、凭据脱敏，以及基于判定日志的离线策略回放。
 - [vlln/dsh-loop](https://github.com/vlln/dsh-loop) — 定时循环：`/loop` 命令 + loop 工具 + 活动状态条。
-- [waafer1/dsh-jipu](https://github.com/waafer1/dsh-jipu) — 读者优先的长篇小说工序：细纲先行、14 个门禁脚本、700 条主题种子，每个脚本自带自检（脚本依赖宿主上的 Python 3 运行）。
+- [waafer1/dsh-jipu](https://github.com/waafer1/dsh-jipu) — 读者优先的长篇小说工序：细纲先行、21 个门禁脚本、700 条主题种子，每个脚本自带自检。
 - [WaldInsel/dsh-desktop-agent-bridge](https://github.com/WaldInsel/dsh-desktop-agent-bridge) — 让外部 MCP Agent 将任务交给现有 DSH 桌面端，并提供可见会话、用户接管与可选审批转交。
 - [Wang-Chuming/dsh-work-review](https://github.com/Wang-Chuming/dsh-work-review) — 面向 Obsidian 风格 vault 的工作回顾闭环：每晚生成当天 Dream 与编号 T/G 计划，只执行标记为「常规」的条目（默认只读，--live 才本地 commit），把七天汇总成 ISO 周周报，并在只读侧栏面板里展示日报与周报。
 - [wangbobo-coder/gitee-ai-employee](https://github.com/wangbobo-coder/gitee-ai-employee) — Gitee/GitHub AI 员工：在 issue 里 @ 机器人并指定目标分支（如"需要修改 release-v1.2 分支"），它自动克隆仓库开发、向指定分支提交 PR，可自动合并并自动关闭 issue。v1.2 新增代码安全扫描：配置扫描仓库后按内置/自定义提示词审计代码，去重后把新发现提交 issue。
@@ -7443,6 +7445,7 @@ dsh plugin --profile web add dshmarket
 - [JasonFreeLab/dsh-command-code-review](https://github.com/JasonFreeLab/dsh-command-code-review) — 注册 /code-review 斜杠命令，五个并行审查视角、逐发现置信度打分，同时支持拉取请求与本地代码审查。
 - [JayYuen666/dsh-ocr-review](https://github.com/JayYuen666/dsh-ocr-review) — 把外部 `ocr`（open-code-review）CLI 包成五个模型工具——单次评审、全树扫描、确定性的范围与规则脚手架、会话查询——并把「OCR 发现了什么」与「这次跑有没有覆盖完选中的文件」分成两套口径回报。
 - [JFWaskin/dsh-git-nexus](https://github.com/JFWaskin/dsh-git-nexus) — DSH Web 的 Git 与 GitHub 面板：暂存/撤销/丢弃/差异、分支、提交、推送/拉取/同步、日志、文件浏览、工作流看板，以及带 PR 创建的 GitHub OAuth。
+- [JiangHuai24/dsh-github-flow](https://github.com/JiangHuai24/dsh-github-flow) — 注册 github-push 技能，让每个会话都走同一套提交推送流程，带推送前密钥扫描、防滥用重试策略，以及直连不通时的本地代理自动探测。
 - [jiayan-xu/dsh-ocr-review](https://github.com/jiayan-xu/dsh-ocr-review) — 本地 AI 代码评审门禁：对工作区/分支/commit diff 跑评审（托管 ocr.js），返回结构化 findings 与 token 统计；门禁模式发现问题即失败。
 - [JohnXu22786/adversarial-review](https://github.com/JohnXu22786/adversarial-review) — 对抗式多视角代码审查：正确性/安全性/可维护性透镜并行攻击 diff，确定性严重度定级、抑制规则与增量审查历史。
 - [JohnXu22786/worktree-mgr](https://github.com/JohnXu22786/worktree-mgr) — 按任务隔离的 git worktree 工作区，覆盖创建/同步/收尾全生命周期：任务名自动派生分支、合并目标双重校验、内置批量清理——全程零手工 git 操作。
