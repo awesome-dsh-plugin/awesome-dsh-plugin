@@ -5368,7 +5368,7 @@ dsh plugin --profile web add dshmarket
 - [po-et/dsh-http-probe](https://github.com/po-et/dsh-http-probe) — 为 agent 增加 http_probe 工具：探测 HTTP(S) 端点的状态码、延迟与关键响应头，HEAD 被拒时自动降级 GET，不下载响应体。
 - [po-et/dsh-sheet-diff](https://github.com/po-et/dsh-sheet-diff) — 按业务主键对齐 CSV/XLSX 改动，离线记录审阅结论与批注，核对源文件后生成反馈交接包。
 - [poplarity/dsh-science-workbench](https://github.com/poplarity/dsh-science-workbench) — 可复现科学分析工作台：agent 驱动的 cell、内联图形与反馈重画、manifest 溯源、环境快照与出版级出图技能（9 个 bio_* 工具 + 工作台界面）。
-- [pravets/dsh-edt-projects#dsh-edt-projects](https://github.com/pravets/dsh-edt-projects/tree/main/packages/dsh-edt-projects) — MCP hub for 1C development: keeps 1C:EDT connected through EDT-MCP, starts BSL Language Server with workspace roots on demand, and adds per-project settings, a read-only documentation wiki, model rules and SonarQube/GitLab skills.
+- [pravets/dsh-edt-projects#dsh-edt-projects](https://github.com/pravets/dsh-edt-projects/tree/master/packages/dsh-edt-projects) — 面向 1C 开发的 MCP 枢纽：通过 EDT-MCP 保持 1C:EDT 连接，按需以工作区根目录启动 BSL Language Server，并提供逐项目设置、只读文档 wiki、模型规则以及 SonarQube/GitLab 技能。需安装 1C:EDT 2026.1/2026.2 并运行 EDT-MCP（默认 127.0.0.1:8765）。
 - [PriceDotWin/pricewin-dsh](https://github.com/PriceDotWin/pricewin-dsh) — 通过远程 PriceWin MCP 服务器（无需账号或 API key）实时比较 Booking.com、Agoda、Trip.com、Traveloka 等预订网站的酒店与机票价格，并附带旅行搜索 skill。在 Web 界面中结果以卡片呈现：酒店照片、评分、整段住宿总价及各网站带链接的价格；航班显示起降时间、经停与各网站票价。搜索条件会发送到 mcp.price.win。
 - [project-hy/dsh-claude-delegate](https://github.com/project-hy/dsh-claude-delegate) — 把自包含的编码子任务委派给本机 Claude Code（官方 Agent SDK 驱动），结果回传主会话：19 个参数可按次控制模型、思考强度、权限模式、允许工具、轮次与预算上限；后台作业立即返回 jobId 并支持增量读取；结果附会话句柄，传回 resume 即可在同一会话续跑；预计超过 20 秒的命令经内置 mcp__dsh__shell 通道逐行实时输出，不占用模型上下文；会话内附 Claude Code 监控面板（任务列表、结构化过程视图、实时输出块、一键取消）；委派规程以运行时技能注册，安装插件即安装技能。
 - [ptilroko/dsh-tool-picker](https://github.com/ptilroko/dsh-tool-picker) — 按会话开关 DSH 工具，并提供让文件操作只落在工作区、同时关闭 shell 与子代理的访客模式。
@@ -6339,7 +6339,7 @@ dsh plugin --profile web add dshmarket
 - [MaRi23333/dsh-fish-tts](https://github.com/MaRi23333/dsh-fish-tts) — 朗读助手回复（仅支持 Fish Audio API，需自备 Key）：逐条朗读、自动朗读开关，设置页可配模型、音色 reference_id、加密 API Key 与代理。
 - [martindye/dsh-voice](https://github.com/martindye/dsh-voice) — DSH Web 的双向语音：用统一输入框听写、用朗读按钮与自动朗读听回复，任意设备可用。需 DSH 0.1.7+、Node 22+、Python 3（含 numpy 与 requests）、TTS 模型与麦克风。
 - [mhlywxl/dsh-coding-sound](https://github.com/mhlywxl/dsh-coding-sound) — 模型输出时演奏生成式背景音乐，完成、审批与等待操作各有独立提示音：不盯屏幕也能听出 Agent 在思考、仍在工作还是在等你。
-- [most-silence/dsh-record](https://github.com/most-silence/dsh-record) — 在输入框加一个麦克风按钮，录音按 MP3（默认）、WAV 或 WebM 编码，并自动作为会话附件挂进当前 Prompt。文件格式与录音目录（跟随当前项目空间，或自定义文件夹）都在「设置 → 插件」里该插件自己的详情页配置；录音经同源守卫的宿主路由落盘，文件名清洗并拒绝路径穿越。
+- [most-silence/dsh-record](https://github.com/most-silence/dsh-record) — 在输入框加一个麦克风按钮，录音按 MP3（默认）、WAV 或 WebM 编码，并作为会话附件挂进当前 Prompt；格式在「设置 → 插件」中该插件自己的详情页选择，录音经会话草稿附件通道交给宿主，插件不会把音频写入磁盘。
 - [naili0712/dsh-gsv-local](https://github.com/naili0712/dsh-gsv-local) — 把本机 GPT-SoVITS 接进 DeepSeek Harness：随 DSH 启停引擎、只念该说出口的那一句；自带默认音色，只需填好本机 GPT-SoVITS 的 runtimeDir。
 - [NewDaNew/dsh-voice-input](https://github.com/NewDaNew/dsh-voice-input) — Web UI 语音输入：输入框一键麦克风按钮，基于 Web Speech API 语音转文字填入草稿，可选识别后自动发送。
 - [NMDwhy66154/dsh-voice-realtime](https://github.com/NMDwhy66154/dsh-voice-realtime) — 在 DeepSeek Harness 输入框里做实时语音转文字：边说话边显示识别结果，说完点完成自动插入光标处，可切换麦克风，本地 sherpa-onnx 推理、音频不出本机。
@@ -8658,7 +8658,7 @@ dsh plugin --profile web add dshmarket
 - [Shark00I/dsh-audit](https://github.com/Shark00I/dsh-audit) — 审计 DeepSeek Harness 插件：安装前只读扫描并按 S–D 分级；装好后记录插件启停、敏感工具调用与每个插件的 token 估算，全部收在一个设置面板里。
 - [Shiyuedong-Jade/DM-security](https://github.com/Shiyuedong-Jade/DM-security) — 只读安全评估达梦 DM8 数据库：60 项检查，附等保 2.0 控制点对照，生成 HTML 报告。需 Java 8+ 并自备达梦 DmJdbcDriver jar。
 - [shuxue6662-a11y/dsh-risk-guard](https://github.com/shuxue6662-a11y/dsh-risk-guard) — 零打扰审计与保险丝拦截：静默记录每次工具调用并做纯规则风险评分（含累积加分、风险等级分布、归档保留期清理），只拦不可逆灾难（受保护路径删除、磁盘擦除、force push 到受保护分支/引用、凭据外发），/risk-guard 输出脱敏操作账单并支持 --since 时间过滤。
-- [siml1169/ShyPie#dsh-privacy-gate](https://github.com/siml1169/ShyPie/tree/main/plugins/dsh-privacy-gate) — 面向 ShyPie 隐私优先工作流的 DSH 主机插件：在写入会话日志前本地提取附件图片及 PDF/Office 文件；默认 filter 模式保留本地文本（可选用本地掩码）；阻断无法掩码的媒体/BLOB；提供本地 privacy_extract、privacy_ocr、privacy_scan、privacy_rehydrate 工具；拒绝 read_image 及 allowPaths 之外的二进制/文档读取；并在 DSH 发出模型请求前执行失败关闭的 llm/stream 出口检查。
+- [siml1169/ShyPie#dsh-privacy-gate](https://github.com/siml1169/ShyPie/tree/main/plugins/dsh-privacy-gate) — 面向 ShyPie 隐私优先工作流的 DSH 主机插件：在写入会话日志前本地提取附件图片及 PDF/Office 文件（需 PATH 中有 poppler 的 pdftotext/pdftoppm 和本地 OCR 引擎，Windows 用系统 OCR、可选 tesseract；缺少时附件会被拒绝而不是转发）；默认 filter 模式保留本地文本（可选用本地掩码）；阻断无法掩码的媒体/BLOB；提供本地 privacy_extract、privacy_ocr、privacy_scan、privacy_rehydrate 工具；拒绝 read_image 及 allowPaths 之外的二进制/文档读取；并在 DSH 发出模型请求前执行失败关闭的 llm/stream 出口检查（默认只放行本地 Magpie 网关）。
 - [simon300000/dsh-auto](https://github.com/simon300000/dsh-auto) — 为 WebUI 增加 Auto Approve 权限档位，由全新且受限的审查 Agent 逐次允许或拒绝审批请求。
 - [sjh9714/dsh-movein#plugin](https://github.com/sjh9714/dsh-movein/tree/main/plugin) — 为 DSH 补上按工具粒度的权限规则：在 tools/pre-execute 强制执行 deny/ask 清单，规则语法与 Claude Code 相同，不迁移也能单独用。
 - [slow-stack/euthyna](https://github.com/slow-stack/euthyna) — 面向 AI 编码代理的确定性安全审计事实与结论门禁：euthyna history 把每行被删代码归因到提交并标记安全修复类删除（--origins 追到最初引入者），euthyna coverage 报告哪些改动符号从未被测试调用，euthyna gate 用六道门禁逐条校验结论，拿不出证据的一律降级为观察。
