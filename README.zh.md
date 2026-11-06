@@ -1814,6 +1814,7 @@ dsh plugin --profile web add dshmarket
 - [yaoshuo530/dsh-prompt-enhancer](https://github.com/yaoshuo530/dsh-prompt-enhancer) — 输入框提示词增强：✨ 增强按钮用第一性原理、结合会话上下文/记忆/最近对话，把草稿扩写为更清晰、更结构化的提示词；关键信息缺失时以提问卡片澄清，预览确认后再应用到输入框。
 - [Yaoxxxxxxx/dsh-plugins#dsh-focus-composer](https://github.com/Yaoxxxxxxx/dsh-plugins/tree/main/packages/dsh-focus-composer) — 按 Ctrl+I 把光标送回会话输入框；可在设置里改键，桌面端窗口内任意区域都生效。
 - [YaphetHayate/codeRDD#dsh-rdd-goal-tree](https://github.com/YaphetHayate/codeRDD/tree/master/dsh/rdd-goal-tree) — 输入框上方的只读 goal-tree 状态条：规划者看全树，Worker 只看认领节点，Worker 回报可唤醒规划者会话。
+- [ybniaobu/dsh-3d-viewer](https://github.com/ybniaobu/dsh-3d-viewer) — 在右侧边栏预览 FBX、OBJ、glTF/GLB 和 STL 模型，支持轨道控制、PBR 材质、四个内置 HDRI 环境与动画播放。
 - [YearnCy/dsh-question-tree](https://github.com/YearnCy/dsh-question-tree) — 对话里划取文字后点「树形提问」，右栏问题树就多一个节点，问题直接写在节点下；单击别的节点就把它设为当前节点，之后再划取默认挂在它下面，「Alt + 树形提问」新开根节点，「Ctrl + 树形提问」把新段落追加进同一节点；双击节点跳回原文，点左侧圆点标记「懂了」；右上角可在列表与横向分支图之间切换。划取后点「添加到对话」则把引用以 chip 形式插进输入框，不建节点。节点只存在 localStorage，不进提示词。
 - [yefengliu1/dsh-agent-grid](https://github.com/yefengliu1/dsh-agent-grid) — 把 DSH 侧栏换成固定的 2×4 八席看板，每席显示自己的状态、最近一次工具调用、思考与结果；设置里的开关可随时切回原生侧栏。
 - [YEYEYEYESHIFU/dsh-result-only-view](https://github.com/YEYEYEYESHIFU/dsh-result-only-view) — Web 对话「只看结果」开关：隐藏思考与工具调用过程，运行中仅保留一条实时状态行，reduced-motion 环境下恢复活动光影，中英双语。原生输入框与 dsh-split-screen 分屏面板内均可用；已适配 DSH 0.1.1 与 0.1.5。
@@ -2258,6 +2259,7 @@ dsh plugin --profile web add dshmarket
 - [MuAllen/dsh-gateway-wallet](https://github.com/MuAllen/dsh-gateway-wallet) — 读取当前 API key 在 Sub2API、New API 或 DeepSeek 官方账本上的剩余额度；站点公布实扣时才显示实扣，不是本地 token 估算。
 - [Muzi1015/dsh-api-balance](https://github.com/Muzi1015/dsh-api-balance) — 输入框下方常驻 DeepSeek API 余额胶囊，点开显示充值额度、赠送额度、更新时间与用量/充值链接，另有 /balance 命令与 api_balance 工具；凭据只留在 Host（已登录账户钱包或 DEEPSEEK_API_KEY），浏览器只拿到金额。
 - [mxw0808/dsh-cookie-guard](https://github.com/mxw0808/dsh-cookie-guard) — 仅 Windows，防止桌面外壳把自己锁死：数出已累积的 dsh-auth-* 启动 cookie，报出它们占掉 16 KiB 请求头预算的比例；超过 40 条时把整个 Cookies 数据库备份后移走、由 DSH 重建，因此该 profile 下的所有 cookie 都会被清掉。安装只需一条命令：插件加载时自己注册指向包内脚本的每周计划任务，卸载时又把该任务一并删除——不用往用户目录复制文件，也不用手工敲 schtasks。检查本身在应用关闭时执行（会最多等 3 小时让外壳退出）。不抬高请求头预算、不挂常驻浮窗；scripts/ 里的脚本不装应用也能单独跑。
+- [MythGreenLand/dsh-local-delegate](https://github.com/MythGreenLand/dsh-local-delegate) — 把机械性文本工作（翻译、摘要、抽取、分类、改写）按文件路径交给 Ollama 原生或 OpenAI 兼容端点，正文不进入主模型上下文。注册 local_transform、local_batch、local_health；按项目工作区设置本地 AI 介入程度（无/轻度/默认/更高/最高），高等级下新增 local_worker 子 agent 与「只规划」模式；可选的 SlaveAgentTeams 开关会探测已挂载的模型路由、并行运行子 agent 并在节点失败时切换，同时把端点链注册为 llm-pi-ai 路由。配置在 Web GUI 内完成；需要可达的模型端点。
 - [mzzsfy/dsh-plugin#dsh-usage-dash](https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-usage-dash) — 会话用量统计面板：天/小时/分钟三粒度 token 与请求统计、活跃热力图、会话底栏信息接管与回合费用芯片、多条件分时段定价费用估算；复刻自 HaoyueQin/dsh-usage-statistics-panel 并扩展。
 - [mzzsfy/dsh-plugin#dsh-usage-panel](https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-usage-panel) — 多平台 LLM 账号余额与额度面板：配置 DeepSeek、OpenRouter、Kimi、智谱、MiniMax、NewApi 或自定义端点，定时自动查询并绘制趋势图，余额/额度阈值与窗口重置经多通道推送通知。
 - [NelsonLongXiang/dsh-prompt-templates](https://github.com/NelsonLongXiang/dsh-prompt-templates) — 右侧面板中的全局与会话级提示词模板——插入草稿或立即发送、编辑、会话模板提升为全局，SQLite 持久化走内置的 node:sqlite。
