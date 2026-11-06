@@ -9104,6 +9104,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Just for Fun
 
+- [1122438/We-Plugin#dsh-cosplay-script](https://github.com/1122438/We-Plugin/tree/main/dsh-cosplay-script) - Session-scoped roleplay for DeepSeek Harness: seven fixed character slots in the system prompt, on-demand lore recall, a per-session author's note, a per-turn depth note, and injection preview. Zero runtime dependencies.
 - [123pc/dsh-pet-claude#dsh-pet-claude](https://github.com/123pc/dsh-pet-claude/tree/main/dsh-pet) - A fork of PC2005-cloud/dsh-pet with Claude-themed whale-girl pets, 122 transparent animations, randomized activity chains, laptop work transitions, and a task acknowledgement salute. Replaces the original plugin; do not install both together.
 - [12we21/cute-fat-fish-pet#src](https://github.com/12we21/cute-fat-fish-pet/tree/main/src) - A chibi blue-haired maid desktop pet for the DSH Web UI with 106 hand-drawn transparent animations, desktop wandering, chat through local Ollama or the DSH online models, and optional screen watching.
 - [2095945715a-source/dsh-basketball-pet](https://github.com/2095945715a-source/dsh-basketball-pet) - A draggable basketball desktop pet that bounces around the window, with a hoop to score in and a crate that keeps the ball.

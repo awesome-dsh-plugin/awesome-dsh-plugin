@@ -9104,6 +9104,7 @@ dsh plugin --profile web add dshmarket
 
 ### 🎮 娱乐
 
+- [1122438/We-Plugin#dsh-cosplay-script](https://github.com/1122438/We-Plugin/tree/main/dsh-cosplay-script) — DeepSeek Harness 的会话级角色扮演插件：7 个固定槽位常驻系统提示词，长设定按需召回；支持每会话本场提示、每轮深度提示与注入预览。零运行时依赖。
 - [123pc/dsh-pet-claude#dsh-pet-claude](https://github.com/123pc/dsh-pet-claude/tree/main/dsh-pet) — 基于 PC2005-cloud/dsh-pet 的 Claude 大肥鱼桌宠分支，包含站立与托腮形态、122 段透明动画、随机日常动作链与电脑办公衔接；收到任务先敬礼回应。作为原版替代使用，请勿与原版同时安装。
 - [12we21/cute-fat-fish-pet#src](https://github.com/12we21/cute-fat-fish-pet/tree/main/src) — DSH Web UI 的 Q 版蓝发小女仆桌宠：106 个手绘透明动画、桌面漫步、本地 Ollama 或 DSH 在线模型陪聊，可选看屏幕吐槽。
 - [2095945715a-source/dsh-basketball-pet](https://github.com/2095945715a-source/dsh-basketball-pet) — 可拖拽的篮球桌宠：在窗口里左右弹跳，拖起来松手就能投篮；配一个可移动的篮筐和一个装球的箱子，进球加一分，分数每天重置。
