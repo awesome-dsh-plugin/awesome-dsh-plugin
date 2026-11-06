@@ -1,0 +1,6 @@
+url: https://github.com/Weilv-D/dsh-pf-stream
+name: Weilv-D/dsh-pf-stream
+category: vision
+description:
+  en: 'Streams and inspects local video for agents: adaptive motion/settle canvas sampling, deterministic probe, timestamp and uniform frame extraction, and RoI zoom on 42px-grid-aligned canvases.'
+  zh: 面向智能体的本地视频流感知与定点检视：动/静双尺度画布采样、元数据探测、时间戳与均匀抽帧、局部放大复核；画布按 42px 网格对齐并控制在单图 token 上限内。
