@@ -1,0 +1,6 @@
+url: https://github.com/Hao0311/dsh-toolbox
+name: Hao0311/dsh-toolbox
+category: dev
+description:
+  en: 'Toolbox panel for the DeepSeek Harness Web GUI: a right-side drawer (full screen on phones) with connection information, one-click diagnostics, a speed test with server-side timing, a quality monitor, history and auto patrol; the host registers the /api/toolbox routes.'
+  zh: 'DSH Web GUI 工具箱：右侧抽屉（手机全屏），含连接情况、一键体检、测速（服务端计时）、质量监控、历史与自动巡检；宿主注册 /api/toolbox 路由。'
