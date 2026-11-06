@@ -641,7 +641,7 @@ dsh plugin --profile web add dshmarket
 - [flyhigao/dsh-sticky-notes](https://github.com/flyhigao/dsh-sticky-notes) — DSH 工作区极简便签：在各个工作区保存多张 Markdown 便签，记录你的想法和项目进程。
 - [foooold/dsh-message-nav](https://github.com/foooold/dsh-message-nav) — 为 DeepSeek Harness Web UI 添加 Codex 风格的消息导航轨道，方便在长会话中快速定位历史提问。
 - [foreee/dsh-app-restart](https://github.com/foreee/dsh-app-restart) — 在桌面应用设置中新增「应用重启」区块，优雅退出并自动重启整个应用。
-- [foreee/dsh-net-dashboard](https://github.com/foreee/dsh-net-dashboard) — 侧边栏实时网络巡检看板：接口与 IP/MAC、流量速率、TCP/UDP 会话数、延迟曲线，每 3 秒刷新。
+- [foreee/dsh-net-dashboard](https://github.com/foreee/dsh-net-dashboard) — 侧边栏实时网络巡检看板：接口与 IP/MAC、流量速率、TCP/UDP 会话数、延迟曲线，每 3 秒刷新。仅限 macOS（采集依赖 ifconfig、netstat、scutil 与 /sbin/ping）。
 - [ForsakenDelusion/dsh-branchnest](https://github.com/ForsakenDelusion/dsh-branchnest) — 为 DSH 项目提供会话画布，支持对话卡片连线、选中文字创建追问分支、笔记和文档式阅读。
 - [FragrantLotus/dsh-plugin-chinese](https://github.com/FragrantLotus/dsh-plugin-chinese) — 给只提供英文简介的已安装 DSH 插件自动补上中文简介，启动时以及每次插件变动后各跑一次，插件名称一律不改。原本已导出语言包的插件刷新页面即生效，原本没有语言包导出的也会自动补上：内存注入层即时生效，写入磁盘的语言包需重启一次。
 - [FragrantLotus/dsh-sidebar-entries](https://github.com/FragrantLotus/dsh-sidebar-entries) — dsh 网页端侧边栏整体增强：长按拖拽重排面板图标栏，一个箭头即可整栏折叠；面板列表与置顶区都按整行限制高度（占侧栏 30%，向下取整行）；置顶会话区镜像原生行的实时状态（转圈、待回复、相对时间）；顶部会话视图标签可拖拽换位；归档会话按时间新到旧沉到每组末尾；分叉出的子会话自动跟进父会话所在的置顶区；并把任意插件注册在侧栏底部的入口提升到同一栏内。每个子系统各自带启动守卫，单个失败只返回 null，不影响整个插件挂载。
@@ -2712,7 +2712,7 @@ dsh plugin --profile web add dshmarket
 - [ruegg114514/dsh-colorlab](https://github.com/ruegg114514/dsh-colorlab) — 对话界面配色引擎：内置 Mariana 配色作为默认预设，提供 18 个颜色槽位与 9 个 Markdown 正文角色色，最多可保存 12 套预设；LaTeX 代码块通过移植 Sublime 自身的语法来上色。
 - [ruijiaang-lab/dsh-wallpaper-engine](https://github.com/ruijiaang-lab/dsh-wallpaper-engine) — DSH Web 聊天背景壁纸。Windows：直接读取你的 Wallpaper Engine（Steam）库，把视频/网页壁纸渲染到聊天界面背后。macOS：自动扫描 WaifuX 下载目录和媒体文件夹——在 WaifuX 里保存的壁纸零配置即可成为 DSH 背景，支持视频与图片。带毛玻璃模糊、压暗、边框调节滑块。
 - [runcat-tommy/dsh-theme-manager](https://github.com/runcat-tommy/dsh-theme-manager) — DSH Web 两级主题管理器：先选文化 / 场景、国旗、开发者配色或强烈对比配色，再选具体风格，内置 58 套浅色 / 深色配色。
-- [RunhuaChen/dsh-claude-theme](https://github.com/RunhuaChen/dsh-claude-theme) — DSH Web GUI 的 Claude 风格配色与排版——纸白底色、近黑文字与赤陶强调色，在 Codex absolutely 主题基础上重新推导中性色阶与强调色阶，以 82 个原生颜色变量覆盖浅色与深色两套外观；使用 Anthropic Sans、Serif、Mono 三款字体排版，界面外框字号跟随正文设置缩放。
+- [RunhuaChen/dsh-claude-theme](https://github.com/RunhuaChen/dsh-claude-theme) — DSH Web GUI 的 Claude 风格配色与排版——纸白底色、近黑文字与赤陶强调色，在 Codex absolutely 主题基础上重新推导中性色阶与强调色阶，以 82 个原生颜色变量覆盖浅色与深色两套外观；使用 Anthropic Sans、Serif、Mono 三款字体排版，界面外框字号跟随正文设置缩放。字体不随插件分发，需自行安装，否则回退到系统字体。
 - [S-anZZz/dsh-pink-bow-kitty](https://github.com/S-anZZz/dsh-pink-bow-kitty) — 粉嫩、简洁的 DeepSeek Harness 主题：手绘小猫印花壁纸、浅色与深色配色，以及两只小猫装饰；没有复杂配置和额外面板。
 - [sakuraaa667/dsh-wallpaper-engine](https://github.com/sakuraaa667/dsh-wallpaper-engine) — 将 Wallpaper Engine 中已下载的壁纸用作 DeepSeek Harness 的背景：视频壁纸原位播放，图片壁纸优先使用最高分辨率原图，支持铺满/完整显示适配与 0–100 面板暗化。
 - [SamizuHM/dsh-client-ui-theme-xp](https://github.com/SamizuHM/dsh-client-ui-theme-xp) — Windows XP Luna 桌面化主题：浮动窗口管理器（任务栏、桌面图标）加上还原度很高的 Luna 皮肤。
@@ -3415,7 +3415,7 @@ dsh plugin --profile web add dshmarket
 - [y258dd/dsh-hormone](https://github.com/y258dd/dsh-hormone) — 压力、精力、爽度三个状态随真实会话事件涨落、随时间衰减，越界时才往系统提示里写一句话。
 - [yimengsuper2432/dsh-agent-personality](https://github.com/yimengsuper2432/dsh-agent-personality) — 人格插件：随对话缓慢变化的情感值、独立世界观、每轮日记、关系网、主动找你说话，以及费用行右侧的一句心里话。
 - [yimengsuper2432/dsh-virtual-person](https://github.com/yimengsuper2432/dsh-virtual-person) — 一份 AGENT.md 同时管人格与记忆：整份注入每个会话的系统提示（上限 4 万字，超出按整行截断并在提示里注明），设置页直接编辑；每轮日记按相似度合并、按被提起的次数分节，只有到 2 MB 上限才淘汰。
-- [YKY0521/dsh-yangyu](https://github.com/YKY0521/dsh-yangyu) — 多角色陪伴插件，支持可选人设、可编辑的角色记忆、持久会话绑定及 QQ、微信机器人连接与二维码刷新。
+- [YKY0521/dsh-yangyu](https://github.com/YKY0521/dsh-yangyu) — 多角色陪伴插件，支持可选人设、可编辑的角色记忆、持久会话绑定及 QQ、微信机器人连接与二维码刷新。QQ 需本机另装 NapCat，微信走官方 ClawBot/iLink 通道。
 - [YUAN-OVO66/dsh-plugin-persona](https://github.com/YUAN-OVO66/dsh-plugin-persona) — DSH 人格管理器：人格库存于一份 JSON，可按会话绑定人设、可为未绑定的会话指定默认人格，切换可选立即生效或下个会话生效；Web 端提供「模型人格」设置页与输入框旁的人格切换条，模型侧另有 persona_list / persona_switch / persona_create 三个工具可自行列出、切换与创建人格。
 - [yupaoa/dsh-persona-switcher](https://github.com/yupaoa/dsh-persona-switcher) — 用输入框的「人设」按钮或 `/role` 指令就地切换当前会话的人设与说话风格，每个人设可单独绑定屏幕吉祥物立绘；人设作为独立的 prompt section 追加在部署人设之后，不动工具与技能，切换人设后会在会话里声明一次。
 - [Yuuyuko-uu/dsh-feiyu-mood](https://github.com/Yuuyuko-uu/dsh-feiyu-mood) — 给 AI 伙伴一个每轮判定、以一小段上下文提示的心情，面板里能看心情值、情绪维度与时间线。
@@ -5026,7 +5026,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-baidu-netdisk](https://github.com/justinzyc271828-sys/dsh-baidu-netdisk) — 百度网盘 MCP 插件，支持在 DeepSeek Harness 中搜索网盘文件、查看文件信息和查询容量。安装后需授权百度账号。
 - [justinzyc271828-sys/dsh-music](https://github.com/justinzyc271828-sys/dsh-music) — Suno 音乐插件，通过官方 MCP 在 DeepSeek Harness 里查询剩余点数、浏览和搜索曲库。安装后需授权自己的 Suno 账号。
 - [juzpost/dsh-juzpost](https://github.com/juzpost/dsh-juzpost) — 通过 MCP 将智能体连接到 JuzPost（社交媒体排程工具）：列出已连接账号、检查各平台限制、上传媒体，并向 YouTube、Instagram、Facebook、TikTok、X、LinkedIn、Pinterest、Bluesky、Threads、Tumblr 和 WordPress 起草、排程或发布帖子。注册 mcp__juzpost__* 工具及一个发布前先向用户确认的工作流技能。需要在 JUZPOST_API_KEY 中提供 JuzPost API 密钥；JuzPost 的 API 密钥需付费方案才能创建。
-- [jxhsjxhs/dsh-job-lasso](https://github.com/jxhsjxhs/dsh-job-lasso) — 每天从 BOSS直聘、猎聘、LinkedIn 等招聘站抓取远程岗位，按求职画像打分并显示在 Harness 面板里。
+- [jxhsjxhs/dsh-job-lasso](https://github.com/jxhsjxhs/dsh-job-lasso) — 每天从 BOSS直聘、猎聘、LinkedIn 等招聘站抓取远程岗位，按求职画像打分并显示在 Harness 面板里。需本机安装 Chrome/Chromium（插件使用独立浏览器配置），BOSS直聘结果需登录 BOSS 账号。
 - [k0ndrateff/dsh-plugins#atlassian](https://github.com/k0ndrateff/dsh-plugins/tree/main/packages/atlassian) — 把 Jira 与 Confluence 接进 DeepSeek Harness：提供 Atlassian 远程 MCP 服务器的工具、问题与页面的结果卡片，以及问题面板。
 - [Kagurazaka135/dsh-web-search-free](https://github.com/Kagurazaka135/dsh-web-search-free) — 多后端自动降级的 WebSearchProvider：依次尝试 Exa、Bing HTML、DuckDuckGo HTML，都失败后才动用有额度的 SerpAPI，日常搜索由免费档承担。
 - [kaiwangleo/xiwen#dsh-xiwen](https://github.com/kaiwangleo/xiwen/tree/master/plugins/dsh-xiwen) — 基于人工维护的表、字段和指标语义元数据，结合 Qdrant 与 Elasticsearch 召回，通过析问服务生成、校验并执行 MySQL 分析查询。
@@ -6733,7 +6733,7 @@ dsh plugin --profile web add dshmarket
 - [monkeyin92/ds-pstack](https://github.com/monkeyin92/ds-pstack) — 面向 DeepSeek Harness 的 pstack：58 个 agent 工作流技能，外加确定性路由器，按任务意图从你勾选的子 agent 模型池里选型。
 - [montersy123/dsh-skill-market](https://github.com/montersy123/dsh-skill-market) — 浏览、搜索并安装公开的 SkillHub 技能库,启用、停用、更新或卸载都不必离开 Harness。分类按钮带该分类的上游总数;详情抽屉提供文件树、版本历史、权限、第三方安全扫描结论与上游指标等页签。装好的技能会作为一个普通本地技能写入 harness 的技能根目录,而「停用」是把它的目录移出该根目录,不是打标记。
 - [morehao/dsh-skills-console](https://github.com/morehao/dsh-skills-console) — 汇总共享技能目录里的技能并标注来源与版本，可从 GitHub 仓库安装与更新，删除时先进保留 7 天的回收站，并控制每个技能对各 Agent 的可见性与模型可调用性。
-- [MoYan1638/love-companion](https://github.com/MoYan1638/love-companion) — AI 陪伴技能：人设配置（8 种预设 + 自定义）、六类长时记忆、情绪识别与反馈、多轮情感对话及语气后处理。
+- [MoYan1638/love-companion](https://github.com/MoYan1638/love-companion) — AI 陪伴技能：人设配置（8 种预设 + 自定义）、六类长时记忆、情绪识别与反馈、多轮情感对话及语气后处理。技能本体需放进 Agent 技能目录（~/.dsh/skills/love-companion/SKILL.md）；人设/记忆管线依赖本机 Python 3（仅标准库）。
 - [mwk719/dsh-skill-center](https://github.com/mwk719/dsh-skill-center) — DSH Web GUI 的技能中心：侧栏入口把可配置来源目录里的技能铺成卡片，点击卡片查看完整 SKILL.md；卡片上的开关会写入 disable-model-invocation，并同步把该技能注册进或移出模型可用的技能表，让「模型能加载的技能」与开关一致。同时识别 WorkBuddy 专家团目录（带 agents 的 .codebuddy-plugin/plugin.json），以头像、描述、标签、快捷提示与团队成员的形式展示，打开开关即把它的 lead 提示词注册为技能（不写这些文件）。卡片还支持在文件管理器中定位、复制路径，来源目录本身也可在面板里编辑。
 - [MYSTERY2019/dsh-skills-symlink](https://github.com/MYSTERY2019/dsh-skills-symlink) — 按项目分配技能根目录，支持多级分类发现。
 - [NecromanAlbert/dsh-skill-slash-fuzzy](https://github.com/NecromanAlbert/dsh-skill-slash-fuzzy) — 用唯一 kebab 片段解析斜杠 skill，例如 /oneshot 可加载 game-package-oneshot。
@@ -7269,7 +7269,7 @@ dsh plugin --profile web add dshmarket
 - [RockingSisyphus/dsh-focus-supervisor#dsh-plugin](https://github.com/RockingSisyphus/dsh-focus-supervisor/tree/main/dsh-plugin) — 大肥鱼监工是 DSH 自制力助手：支持单次与循环预约、会看鼠标的桌面角色、采集证据与诊断日志、到点后的 AI 末轮验收，以及原生提醒和窗口干预；支持 Windows 与 GNOME Wayland。
 - [romany-saad/dsh-plugins#dsh-automations](https://github.com/romany-saad/dsh-plugins/tree/main/packages/dsh-automations) — 把自动化任务放进可以版本管理、可以审阅的文件里：用 YAML、JSON 或 JS 写下每个任务的计划、提示词、模型、权限和工作目录，DSH 自带的 Schedule 会与文件保持完全一致，保存后一秒内完成创建、更新、停用和删除。每个任务在自己的会话中运行，可持续复用或每次新开；/automations 可随时同步并指出出错的文件；若同步时一个任务也没找到，绝不会清空 Schedule。
 - [romany-saad/dsh-plugins#dsh-cockpit](https://github.com/romany-saad/dsh-plugins/tree/main/packages/dsh-cockpit) — 把跨多个 PR 的工作放进一块一眼就能看清的看板：中枢 Agent 通过四个看板工具维护一棵步骤树，每步关联 issue、PR、分支与 worktree；右侧栏 Board 标签页和输入框上方的进度条告诉你哪些已完成、哪些被阻塞、哪些在等你处理。每个看板就是一个你的脚本也能读的 JSON 文件；可选的、由你配置的漂移检查命令会标出状态与实际进展不再一致的步骤。
-- [ruaruaTon/dsh-agent-tree](https://github.com/ruaruaTon/dsh-agent-tree) — 代际树面板：把 Lead→成员→孙代理 的多层代理关系画成实时组织树，含团队焦点、真状态点、模型路由中心。
+- [ruaruaTon/dsh-agent-tree](https://github.com/ruaruaTon/dsh-agent-tree) — 代际树面板：把 Lead→成员→孙代理 的多层代理关系画成实时组织树，含团队焦点、真状态点、模型路由中心。模型路由中心需另装可选的 dsh-plugin-subagent-director 插件，其余功能不装也能用。
 - [ruaruaTon/dsh-workflow-timeline](https://github.com/ruaruaTon/dsh-workflow-timeline) — 在时间线中查看工作流阶段和子代理，为每个阶段配置模型与并发，并从面板打开子代理对话。运行名称与阶段设置保存在 ~/.dsh。
 - [sailoumili/novel-writer](https://github.com/sailoumili/novel-writer) — 为 DeepSeek Harness 安装一个多智能体小说创作预设：一个统筹队长派单五个专职子代理——架构世界、策划剧情、管理人物、执笔写文、质检复核。
 - [Saktawdi/dsh-ha-orchestrator](https://github.com/Saktawdi/dsh-ha-orchestrator) — 模型高可用故障回退（隔离/熔断/探测恢复）与子智能体编排（fanout/pipeline/supervisor），附带双语设置界面。
