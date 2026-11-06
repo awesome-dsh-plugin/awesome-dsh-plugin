@@ -1,7 +1,7 @@
-url: https://github.com/tyr1105/dsh-agent-hub/tree/main/packages/plugin
-name: tyr1105/dsh-agent-hub#dsh-agent-hub
+url: https://github.com/tyr1105/dsh-buddy/tree/main/packages/plugin
+name: tyr1105/dsh-buddy#dsh-buddy
 category: agi
 description:
   en: Persistent named AI teammates that watch your sources, wake only when there is a reason, decide their own next check, and bring you questions, approvals and alerts in chat threads.
   zh: 常驻有名字的机器人队友：替你盯着信息源，有理由才唤醒思考，自己约下次自查，提问、审批与告警以卡片出现在对话线程里。
-tarball: https://github.com/tyr1105/dsh-agent-hub/releases/latest/download/dsh-agent-hub.tgz
+tarball: https://github.com/tyr1105/dsh-buddy/releases/latest/download/dsh-buddy.tgz
