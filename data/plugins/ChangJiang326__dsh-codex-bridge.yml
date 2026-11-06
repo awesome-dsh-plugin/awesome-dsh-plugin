@@ -1,0 +1,6 @@
+url: https://github.com/ChangJiang326/dsh-codex-bridge
+name: ChangJiang326/dsh-codex-bridge
+category: workflow
+description:
+  en: Connects Codex CLI to individual Harness sessions for planning, code review, and optional image analysis.
+  zh: 在指定 Harness 会话中接入 Codex CLI，提供方案、代码审查和可选图片识别。
