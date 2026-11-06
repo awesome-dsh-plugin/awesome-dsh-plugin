@@ -2,6 +2,6 @@ url: https://github.com/moyu474/dsh-qqbridge
 name: moyu474/dsh-qqbridge
 category: remote
 description:
-  en: 'Deploys the qq-bridge engine to a remote host over SSH and wires it into DeepSeek Harness: environment check, config generation that keeps credentials out of the repo, systemd units for the bridge plus daily-archive, today-sync and watchdog timers, and four tools to check, configure, deploy and inspect the install. Adds a lite reply mode that calls the DeepSeek chat completions API directly, switchable persona cards, image and video understanding, and keyword search over archived group chats.'
-  zh: '通过 SSH 把 qq-bridge 引擎部署到远程主机并接入 DeepSeek Harness：环境体检、不把密钥写进仓库的配置生成、桥接主进程与每日归档/当天同步/看门狗三个定时器的 systemd 单元，以及体检、生成配置、部署、看状态四个工具。另带 lite 回复模式（直连 DeepSeek chat completions）、可切换人格卡、图片与视频理解、可按关键词检索的群聊冷存储。'
+  en: 'Cheap enough to leave running in a QQ group all day. The lite reply mode bypasses the full agent loop and calls chat completions directly: about ¥0.0027 per turn, roughly ¥0.2 for 80 turns a day, around 75x cheaper than a full DSH session. Still includes switchable persona cards, image and video understanding, an auto-tagged image library built from group pictures, and keyword recall over archived chats. One-command SSH deploy with environment checks, credential-safe config generation, systemd units and a watchdog.'
+  zh: '便宜到能天天泡在群里：lite 模式绕过完整 agent 会话、直连 chat completions，一轮约 ¥0.0027，一天 80 轮也就 ¥0.2 出头，比走完整 DSH 会话便宜约 75 倍。同时带可切换人格卡、图片与视频理解、自动打标签的群图素材库、群聊冷存储检索；SSH 一键部署到远程主机，含环境体检、不落密钥的配置生成、systemd 单元与看门狗。'
 icon: https://raw.githubusercontent.com/moyu474/dsh-qqbridge/main/assets/icon-180.png
