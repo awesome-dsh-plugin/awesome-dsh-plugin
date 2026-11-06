@@ -1,0 +1,6 @@
+url: https://github.com/jiajinyuan/dsh-mcp-skill-list
+name: jiajinyuan/dsh-mcp-skill-list
+category: usage
+description:
+  en: 'Inventory of the MCP servers, skills and hooks a DSH profile has, plus a conversation tab reporting every tool, skill and MCP server a session actually called.'
+  zh: '汇总本机已配置的 MCP 服务、SKILL 与 HOOK 清单，并在会话顶部新增一个页签，展示该会话实际调用过的每个工具、技能与 MCP 服务。'
