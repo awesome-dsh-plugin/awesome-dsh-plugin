@@ -2,5 +2,5 @@ url: https://github.com/Hemuchuan/dsh-bilingual
 name: Hemuchuan/dsh-bilingual
 category: ui
 description:
-  en: 'Adds a per-paragraph bilingual view to assistant replies: each Chinese paragraph gets an English translation underneath and each English paragraph gets a Chinese one underneath, behind a session-header toggle; code, tables and formulas stay untranslated.'
-  zh: '给助手回复加逐段双语对照：中文段落下补英文、英文段落下补中文，会话头部有开关；代码、表格和公式不翻译。'
+  en: 'Adds a per-paragraph bilingual view to assistant replies in the DeepSeek Harness desktop app: each Chinese paragraph gets an English translation underneath and each English paragraph gets a Chinese one underneath, behind a session-header toggle; code, tables and formulas stay untranslated.'
+  zh: '给 DeepSeek Harness 桌面端的助手回复加逐段双语对照：中文段落下补英文、英文段落下补中文，会话头部有开关；代码、表格和公式不翻译。'
