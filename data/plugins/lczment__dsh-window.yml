@@ -1,0 +1,7 @@
+url: https://github.com/lczment/dsh-window
+name: lczment/dsh-window
+category: ui
+tarball: https://github.com/lczment/dsh-window/releases/latest/download/dsh-window.tgz
+description:
+  en: Window close behaviour for DeepSeek Harness Desktop — ask, minimise to tray, or quit, with a remembered choice editable in Settings, plus per-session and per-workspace child windows.
+  zh: DeepSeek Harness 桌面端的窗口关闭行为——可选询问、最小化到托盘或完全退出，记住选择并可在设置中修改，还能把会话或工作区开进独立窗口。
