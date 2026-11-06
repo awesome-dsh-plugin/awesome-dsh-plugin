@@ -4384,6 +4384,7 @@ dsh plugin --profile web add dshmarket
 - [Q2667671398/lingshu-skill](https://github.com/Q2667671398/lingshu-skill) — 灵枢（lingshu-skill）：面向 AI 编程助手的类脑持久记忆、人格与成长系统。纯 Python 标准库、零依赖、本地优先，需 Python 3.9+。海马体/皮层分层记忆与遗忘曲线、做梦巩固、模糊联想回忆、情绪系统、人格漂移防护、知识库、技能自编辑，并带本地可视化面板。以 DSH bundled skill 形式安装；仓库另含可单独安装的 cordis 启动注入插件，仅在灵枢已安装到 ~/.dsh/skills/lingshu（或配置 brainPy）且 Python 3 可用时才会自动注入会话；可选的更新检查会访问 GitHub/Gitee.
 - [QIANLING-0831/dsh-memory-plus#dsh-memory-bundle](https://github.com/QIANLING-0831/dsh-memory-plus/tree/main/packages/dsh-memory-bundle) — 记忆 profile 组合：中文会话检索、混合召回、workspace 持久事实、用户固定规则与可复用原生技能。通过单条 dsh plugin add 命令安装版本化 Release 独立包。需 Node.js 24 与 PATH 上的 pnpm。
 - [qibo30/dsh-worklog](https://github.com/qibo30/dsh-worklog) — 给 agent 的跨会话开发日志：worklog_add 往当天文件追加一行（可带 tag），worklog_list 按天回读或列出有记录的日期。条目是 $DSH_HOME/worklog 下的纯 JSON，下一次会话能接上上一次停在哪。
+- [QIC-9821/dsh-memory-sync](https://github.com/QIC-9821/dsh-memory-sync) — 每次打开 DeepSeek Harness，自动把本机的 git 记忆目录和另一台机器双向同步一次——开机就有最新记忆，不用常驻后台。
 - [Qinling-Melon-Farmers/dsh-memoir](https://github.com/Qinling-Melon-Farmers/dsh-memoir) — 仅本地运行、零捆绑运行时依赖（仅使用 DSH 宿主 peer）且不调用外部服务的项目记忆：以 JSON 为单一事实源并自动生成 PROJECT_MEMORY.md、按 token 有界且按会话冻结的 Hot Memory 以保持 prompt-prefix cache 稳定、带查询缓存的跨项目 BM25 召回、可信 session/turn 溯源、可解释的写前重复/冲突治理、可编辑的重要度/置顶/标签/supersede/归档生命周期、可配置的顶层回合自动蒸馏，以及支持搜索、检查、诊断和实时设置的中英双语 Web GUI。
 - [QqiqiQ/dsh-profile-vault](https://github.com/QqiqiQ/dsh-profile-vault) — 带授权的本地个人信息库：以姓名为索引存人，以「姓名 + 条目」取值，未获当次会话授权不会读取任何档案。敏感条目（证件、银行卡、住址、健康）默认掩码，凭证类数据写入时直接拒收；年龄和下次生日一律查询时现算，asOf 能复原过去某天的答案，身高体重住址这类会过期的条目带新鲜度提醒。提供五个 profile_* 工具和设置页，可浏览、编辑、删除与撤销授权。
 - [QuantumKuba/dsh-continuum](https://github.com/QuantumKuba/dsh-continuum) — 持久化项目记忆、事件溯源的任务生命周期、上下文预算控制与多智能体协作交接。
@@ -8881,6 +8882,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-reach](https://github.com/PerryLink/dsh-reach) — 把 DSH 的审批卡与提问卡推送到 IM 渠道（先支持微信），可在聊天里直接作答，带会话控制台、逐渠道安全与开放推送服务。
 - [polaris-smart/dsh-devices](https://github.com/polaris-smart/dsh-devices) — 去中心化多设备舰队：mDNS 同网发现、密钥配对、SSH 跨网直连指挥。
 - [qiaohelenjoe/dsh-app#plugin](https://github.com/qiaohelenjoe/dsh-app/tree/main/plugin) — DeepSeek Harness 移动端：用手机使用你电脑上的 DSH。安卓 App 用同一账号登录，在设备列表里选中这台电脑，就能在手机上打开并进入它的 DeepSeek Harness 界面。桌面端插件负责注册与连接，本机不用开公网端口；界面会自己适应屏幕——手机上变成适合手指操作的布局，折叠屏展开或窗口变大时回到桌面布局。PC 端面板可以看到登录态、设备配额、设备列表与 App 下载二维码。
+- [QIC-9821/dsh-pc-bridge](https://github.com/QIC-9821/dsh-pc-bridge) — 本机回环 HTTP 桥：让对端机器 ping 并执行 shell 命令，可选 ssh 反向隧道看守。
 - [Raiyan007-gb/dsh-remote-tunnel-easy](https://github.com/Raiyan007-gb/dsh-remote-tunnel-easy) — 在设置中扫描二维码，通过 cloudflared 快速隧道在手机上于当前会话中打开 DeepSeek Harness 网页端。
 - [raven3005672/dsh-plugin-im-remote-control](https://github.com/raven3005672/dsh-plugin-im-remote-control) — 飞书机器人远程控制 DSH 会话——消息进入会话，回合结果回到飞书，ask 档的审批可以在飞书里批准或拒绝。
 - [regrevia/dsh-mobile-use](https://github.com/regrevia/dsh-mobile-use) — 手机装进 DSH 右栏：读一次界面 120 ms、200-1300 token，截图那套要 0.5-3.2 s、1.5-2k 图片 token；点一下就是点真机（61 ms），圈一处带圈图和控件回到会话。不截图也能说清屏上有什么、刚才那下点中了没有。需要宿主上的 adb 与 ffmpeg；OCR 兜底仅支持 macOS。
