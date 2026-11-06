@@ -1,0 +1,7 @@
+url: https://github.com/ybniaobu/dsh-3d-viewer
+name: ybniaobu/dsh-3d-viewer
+category: ui
+description:
+  en: 'Preview FBX, OBJ, glTF/GLB, and STL models in the right sidebar with orbit controls, PBR materials, four built-in HDRI environments, and animation playback.'
+  zh: '在右侧边栏预览 FBX、OBJ、glTF/GLB 和 STL 模型，支持轨道控制、PBR 材质、四个内置 HDRI 环境与动画播放。'
+icon: https://raw.githubusercontent.com/ybniaobu/dsh-3d-viewer/main/assets/icon-180.png
