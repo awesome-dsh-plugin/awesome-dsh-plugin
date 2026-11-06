@@ -1,7 +1,7 @@
 url: https://github.com/1148462398-hub/dsh-elysia
 name: 1148462398-hub/dsh-elysia
 category: memory
-tarball: https://github.com/1148462398-hub/dsh-elysia/releases/download/v2.2.1/dsh-elysia-2.2.1.tgz
+tarball: https://github.com/1148462398-hub/dsh-elysia/releases/download/v2.2.2/dsh-elysia-2.2.2.tgz
 description:
   en: 'Elysia''s memory plugin for dsh. One shared, human-editable MEMORY.md across every session: two-disk mirror, history snapshots, cross-process write lock; entries tier between the main file and a searchable archive by hit frequency; retrieval is keyword co-occurrence plus BM25. Nine sections (persona, requirements, corrections, lessons, methods, requests, sessions, method library, ingested docs) plus a dedicated self-identity section for a character''s own self-cognition, injected above the persona. Ships an opt-in memory pack (packs/elysia: 61,903-char identity + 2,482-char persona, distilled from 1,696 officially-confirmed voice lines and 112,175 dialogue lines — not written by hand, measured) that is off by default, backs up before writing, only touches identity/persona, and can be uninstalled. Also opt-in voice playback through a local GPT-SoVITS engine, a skills library, and a sticker library that sends a fitting sticker at the right moment.'
   zh: '爱莉希雅的记忆插件。给所有 DSH 会话共用一份可读可改的 MEMORY.md：双硬盘镜像、历史快照、跨进程写锁；条目按命中频率与重复强调在主文件与可检索归档之间双向流动；检索为关键词共现加 BM25 排序。九个分区（人设、要求、指正、教训、方法、请求、会话、方法库、导入文档），另有一个独立的「自我记忆」分区放角色的自我认知，优先级高于人设。内置可选装的记忆包（packs/elysia：61,903 字自我记忆 + 2,482 字人设）——这份记忆不是手写的设定集，是从 1,696 条经官方文本确证的游戏语音（2.96 小时）里统计出来的：句尾「呢」390 次、问句占 52.1%、平均句长 25.5 字。默认不安装，装前自动备份，只写 identity / persona 两个分区，可卸载恢复。另含可选语音朗读（本机 GPT-SoVITS 引擎，默认关闭、引擎不在就静默降级）、自有技能库与表情包库（按情绪自动分类，在合适时机自动发送）。'
