@@ -1171,6 +1171,7 @@ dsh plugin --profile web add dshmarket
 - [mrSutivu/plugin-effort-slider](https://github.com/mrSutivu/plugin-effort-slider) — 与模型选择器连为一体的带刻度推理强度滑杆，位于输入框内，支持主题变量与中英法三语。
 - [mu915275-cmd/dsh-boot-animation](https://github.com/mu915275-cmd/dsh-boot-animation) — 打开新对话、或每次打开你钉住的那个会话时，铺满窗口播放一段片头动画。插件自带四段片头，直接内嵌在代码里（不带独立的视频文件）；界面里的片库可切换、可预览，也能随时换成你自己的片子。片库分成「入场动画」和「工作区壁纸」两个分区，两者各自独立选段；壁纸可以是静帧，或只循环片尾 N 秒的动态，画面与侧边栏各有独立透明度，另有三档模糊。工作区与侧边栏还各有一个字体颜色，画面全强度时主题自带的字看不清，就靠它。
 - [MuFeng262/dsh-thinking-slider](https://github.com/MuFeng262/dsh-thinking-slider) — 把 composer 的模型选择器换成「模型名 · 推理等级」触发区：滑块覆盖模型上报的全部等级，可切换三种模式（DSH 官方原生选择器、渐变粒子轨道、能量充能轨道），并可按代理商一键为未声明等级的模型补齐四档。
+- [Mulibaixi/dsh-translation-plugin](https://github.com/Mulibaixi/dsh-translation-plugin) — 提供主题记忆、版本历史与主模型协作的翻译润色工作区，普通模式配套 Composer 扩展使用。
 - [MurasakiIzumi/dsh-ticker-jp](https://github.com/MurasakiIzumi/dsh-ticker-jp) — DeepSeek Harness 的全球股市行情悬浮窗：默认显示日经225 与 TOPIX ETF，另支持通过 Yahoo Finance 实时报价全球市场——日本 .T、美国、香港 .HK、中国 .SS/.SZ 及任意代码，带自选列表、显示别名与 16 种界面语言。
 - [mustakimabdullah25-tech/dsh-screen-translator](https://github.com/mustakimabdullah25-tech/dsh-screen-translator) — DeepSeek Harness 界面即时屏幕翻译：支持菜单、设置、Shadow DOM 与嵌套 iframe，覆盖 45+ 种语言。
 - [MYanhui/DSH-plug-in](https://github.com/MYanhui/DSH-plug-in) — 给 DeepSeek Harness 增加三页设置界面：增删改查与启停 MCP 服务；手写 Skill 技能或从 GitHub 仓库安装；维护多人设库并启用其中一份。
@@ -3182,7 +3183,7 @@ dsh plugin --profile web add dshmarket
 - [taikaikaikai-pixel/dsh-tap](https://github.com/taikaikaikai-pixel/dsh-tap) — DeepSeek Harness 的非官方上游插件包：CodeBuddy 网关（模型目录动态同步、逐模型思考强度、联网搜索/抓取、生图、流式凭据桥），TraeWork CN 与 Qoder CN 两条订阅额度通道（本地 OpenAI 翻译网关），以及 key 型 OpenAI 兼容上游注册表，全部收在四区块手风琴设置卡里。
 - [tako-dev/dsh-tako](https://github.com/tako-dev/dsh-tako) — 从 Tako 公开模型目录把聊天模型接入官方 llm-pi-ai，实时刷新并按尺寸标签写入上下文窗口，支持浏览器一键登录，把 cr_ 密钥存入 DSH 凭据。
 - [tang-bugu/dsh-connect-qwenwork](https://github.com/tang-bugu/dsh-connect-qwenwork) — 注册千问办公（QwenWork）模型提供器，复用桌面客户端的本机登录态，在 127.0.0.1 起一个 OpenAI 兼容回环桥，把 DSH 的模型请求翻译成上游真正使用的 ACP 控制信封对话协议。
-- [tangyixiao/dsh-workbuddy-connect-community](https://github.com/tangyixiao/dsh-workbuddy-connect-community) — 复用本机桌面登录的 WorkBuddy 与 WorkBuddy AI 模型提供器社区分叉，提供模型发现和额度显示。正式版 0.1.12 支持按模型选择上下文窗口及 DSH 0.2.1-rc.2、rc.3 和 rc.5，CN 兼容层与 functy23 的分叉不同。派生自 corrinehu/dsh-workbuddy-connect（MIT），注册相同的 workbuddy / workbuddy-ai provider id，不能与原版或其它 WorkBuddy 桥同装。0.1.12 为状态与控制接口增加宿主 owner 身份认证。
+- [tangyixiao/dsh-workbuddy-connect-community](https://github.com/tangyixiao/dsh-workbuddy-connect-community) — 复用本机桌面登录的 WorkBuddy 与 WorkBuddy AI 模型提供器社区分叉，提供模型发现和额度显示。正式版 0.1.14 支持按模型选择上下文窗口及 DSH 0.2.1-rc.2、rc.3、rc.5 和 0.2.2-rc.1，CN 兼容层与 functy23 的分叉不同。派生自 corrinehu/dsh-workbuddy-connect（MIT），注册相同的 workbuddy / workbuddy-ai provider id，不能与原版或其它 WorkBuddy 桥同装。0.1.12 为状态与控制接口增加宿主 owner 身份认证。
 - [tangyixiao/dsh-zcode-plan-bridge](https://github.com/tangyixiao/dsh-zcode-plan-bridge) — 需已安装并登录 ZCode CLI。把 ZCode CLI agent 接入 DeepSeek Harness 作为模型提供方。常驻 app-server 会话逐回合流式转发，模型清单从 CLI 实时读取，因此上下文窗口、图片支持与 provider 路由都跟随已安装的 CLI 和账号。稳定版 0.5.2 通过 engines.dsh 声明 DSH 兼容范围，文档参考内核为 ZCode CLI 3.16.3。支持可选 Retry 的预览版 0.6.0-community.5 可在 GitHub Releases 单独选择。工具权限请求默认拒绝；未知的 approval/permission 方法始终拒绝，全自动需显式启用。DSH 自带的审批界面不会介入这个独立 spawn 的 app-server 进程，该策略也不构成操作系统沙箱。派生自 kyle123740/dsh-zcode-cli-proxy（AGPL-3.0），注册相同的 `zcode-cli` provider id，不能与原版同装。
 - [tasuma-qwq/baifanyu-ofm-bridge](https://github.com/tasuma-qwq/baifanyu-ofm-bridge) — 为 DSH Web / qq-bridge 接入 OFM，默认先选 DeepSeek 免费池并保留思考档位；缺少 OFM 时装载官方依赖，支持自有账号与轮换回执，不限制手动选模。
 - [tearslee/dsh-workbuddy2api](https://github.com/tearslee/dsh-workbuddy2api) — 托管本地 workbuddy2api 网关进程，把它的模型注册为 dsh 的模型提供方，上下文窗口与思考档位均从网关自身的模型接口读取。
@@ -8118,7 +8119,7 @@ dsh plugin --profile web add dshmarket
 - [liuhaolong16/dsh-hot-refresh](https://github.com/liuhaolong16/dsh-hot-refresh) — 把官方客户端插件热重载做成面板入口，并且先告诉你「到底变了什么」：比对每行 rev 与上次所见后只重载 bundle 变化的那几个插件；整图重载必须显式二次确认（不带参数会被拒绝并回报受影响行数）；同时暴露重放计数，让「点了没反应」无法被静默掩盖。
 - [liujianqiao701/dsh-compat-vet](https://github.com/liujianqiao701/dsh-compat-vet) — dsh 插件兼容性体检：把已装插件的 peerDependencies 与当前 dsh 运行时比对，提前指出哪些会在下次启动被预检拒绝加载，并给出可直接执行的中文修复命令；dsh web 顶部横幅可按键隔离、卸载或升级，改动前自动备份、复检不过自动回滚。
 - [liuweibing7/dsh-plugin-inspector](https://github.com/liuweibing7/dsh-plugin-inspector) — 在插件详情页查看插件的声明式 patch 与安装后的代码文件。
-- [lizhijie429/dsh-root-temp-guard](https://github.com/lizhijie429/dsh-root-temp-guard) — 拦截在仓库根目录创建临时文件或目录的工具调用，并在回合结束时把新增的根目录临时项移入 tmp/_quarantine。
+- [lizhijie429/dsh-root-temp-guard](https://github.com/lizhijie429/dsh-root-temp-guard) — 拦截在仓库根目录创建临时文件或目录的工具调用，在回合结束时把新增的根目录临时项移入 tmp/_quarantine，并提供图形化设置页。
 - [ljc6413/yihe-packs-dsh](https://github.com/ljc6413/yihe-packs-dsh) — 面向 DeepSeek Harness 的 YiHe pkg-dev 知识包：52 个领域包与 90 个 RFB 经验文件，用于编程认知。
 - [LLL-lyh0/dsh-accelerator](https://github.com/LLL-lyh0/dsh-accelerator) — 在 Windows 上从 DSH 内部修复被 SNI 阻断的域名，不依赖任何自建服务器。
 - [LLL-lyh0/dsh-autostart](https://github.com/LLL-lyh0/dsh-autostart) — 写 HKCU\Software\Microsoft\Windows\CurrentVersion\Run 让 DSH 在 Windows 登录时启动，插件被关闭或卸载时精确移除那一条。84 行，没有守护进程、没有后台进程、不装服务；通过 execFileSync 写入，安装路径含空格时仍保留引号，登录时确实能拉起。
