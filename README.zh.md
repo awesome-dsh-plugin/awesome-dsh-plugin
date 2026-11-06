@@ -2363,6 +2363,7 @@ dsh plugin --profile web add dshmarket
 - [wufeng0105/dsh-draft-studio](https://github.com/wufeng0105/dsh-draft-studio) — 输入框旁一键，把想到一半的草稿变成 AI 真能照着干的结构化提示词：补齐目标、约束、输出格式与验收标准，只在缺关键决策时留占位符。原地改写、绝不替你发送，一键或 Ctrl+Z 还原。四套可编辑预设（通用/编程/写作/翻译），可选读取会话上下文消解指代，模型可跟随会话或固定到指定 provider 与思考强度。改写期间切会话、继续打字都不会中断；结果与当前草稿不匹配时保留待重试而不是覆盖。纯 JS、无构建、无自带依赖。
 - [WuWei-Peng/dsh-od-quota](https://github.com/WuWei-Peng/dsh-od-quota) — OpenDesign 订阅额度：左栏额度页看 5 小时 / 7 天剩余额度，顶栏自适应额度条一眼可见。
 - [wwu328763-netizen/dsh-billing-compass](https://github.com/wwu328763-netizen/dsh-billing-compass) — 输入框下方的计费面板：DeepSeek 账户余额、官网各模型用量与消费（含每亿 token 单价）、本次运行与整段对话的费用估算。点击弹出面板，面板与输入框同宽同位；余额走官方 /user/balance，用量与消费走 platform 的 usage 接口，整段用量由本地会话日志只读汇总。零依赖（node:https + node:zlib），不写任何文件。
+- [wxfiveopps1102/pixel-usage-desk](https://github.com/wxfiveopps1102/pixel-usage-desk) — 复古像素 CRT 的 DSH 浮层，实时显示 DeepSeek 账户余额与 Token 用量。
 - [X-Xyy/dsh-api-balance](https://github.com/X-Xyy/dsh-api-balance) — 在对话标题栏实时显示 DeepSeek API 余额与本会话 token 用量，详情面板展开余额拆分（充值／赠送）、请求次数、输入／输出／缓存命中 tokens 与上下文占用；API Key 每次查询现取，不缓存、不落盘、不返回浏览器。
 - [x2802490130-prog/dsh-balance-float](https://github.com/x2802490130-prog/dsh-balance-float) — Web UI 右上角悬浮窗：实时显示 DeepSeek 余额，支持手动刷新与一键优雅退出（Y/N 快捷键确认）。
 - [xchannel1987/dsh-token-usage-xc](https://github.com/xchannel1987/dsh-token-usage-xc) — DSH Token 用量统计插件 - 今日 Token 用量按模型分桶、缓存命中率、7 日趋势图、可选顶栏徽标、持久化存储自动清理。
