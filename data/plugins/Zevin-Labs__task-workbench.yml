@@ -5,4 +5,4 @@ description:
   en: Local-first task workbench for DeepSeek Harness with today, week and all-task views, single-day and multi-day tasks with optional times, a four-state idea pool, and daily/weekly/monthly reviews that only a human can write.
   zh: 本地优先的任务工作台：今日/本周/任务总表、当天与跨周期任务（可选时间）、四态想法池，以及日/周/月复盘；复盘正文只能人写，AI 只读。
 icon: https://raw.githubusercontent.com/Zevin-Labs/task-workbench/main/assets/icon-180.png
-tarball: https://github.com/Zevin-Labs/task-workbench/releases/download/v0.4.0/dsh-task-workbench-0.4.0.tgz
+tarball: https://github.com/Zevin-Labs/task-workbench/releases/download/v0.5.0/dsh-task-workbench-0.5.0.tgz
