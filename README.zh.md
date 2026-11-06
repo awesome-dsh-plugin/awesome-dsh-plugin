@@ -1691,6 +1691,7 @@ dsh plugin --profile web add dshmarket
 - [woody-dx/dsh-pdf-bookmarks](https://github.com/woody-dx/dsh-pdf-bookmarks) — 在现有右侧文件预览中提供 PDF 内嵌目录导航与本地阅读书签，可添加、改名、删除和跳回页内位置，并有版本与完整性保护。已验证 macOS Apple Silicon 上的 dsh Desktop 0.2.1-rc.2 与 0.2.1-rc.3。
 - [wowswows/dsh-req-workbench](https://github.com/wowswows/dsh-req-workbench) — 让对话中的 AI 在会话需求页整理、合并和更新通俗的功能清单。基于 Songran241/dsh-req-workbench 的非官方重构版，沿用上游包名，不能与原版同时安装。
 - [wqx-txdsyl/dsh-ds-attach](https://github.com/wqx-txdsyl/dsh-ds-attach) — **DeepSeek Chat（chat.deepseek.com）同款附件**：回形针上传按钮、240×64 DS 风格文件卡片（官方彩色文档图标，从 DS 前端 bundle 提取）、拖拽上传、文本提取（PDF/DOCX/XLSX/TXT）注入消息、对话流中渲染真实附件卡片（自定义 user 渲染器）且模型读取完整内容。
+- [wqx11235/dsh-github-profile](https://github.com/wqx11235/dsh-github-profile) — 在 DSH 侧栏里看 GitHub 档案：仓库卡（语言与星标）与一年贡献热力图，只读公开信息。
 - [WSL043/dsh-reasoning-slider](https://github.com/WSL043/dsh-reasoning-slider) — 为模型添加推理强度滑块，支持原生与动画模式、明暗配色，以及全局或按模型配色。
 - [WsTe47/dsh-step-clock](https://github.com/WsTe47/dsh-step-clock) — 在网页版输入框上方用一句中文显示当前正在执行的智能体步骤：步号、正在执行的工具、以及已运行多久。步骤结束后会保留该步用时，直到下一步开始，因此慢步骤事后也能查证。
 - [wsxwj123/dsh-plugins#dsh-composer-tools](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-composer-tools) — 输入框工具集：方向键调取历史消息（限首/末行触发，兼容输入法与命令菜单）、指令查看/编辑器（全局与项目级 AGENTS.md / CLAUDE.md）、提示词库（780 条中文提示词，源自 Cherry Studio agents-zh 语料，AGPL-3.0，一键插入输入框）。npm 包名 `dsh-composer-tools`。
