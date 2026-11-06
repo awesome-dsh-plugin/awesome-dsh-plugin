@@ -6634,7 +6634,7 @@ dsh plugin --profile web add dshmarket
 - [lnsdlszsqxxx/dsh-courseware](https://github.com/lnsdlszsqxxx/dsh-courseware) — 拿用户自己的 .pptx 模板 + 一份课程大纲（教案/文档/纯文本），产出套用该模板背景、配色、字体、页面骨架的课件 .pptx。纯插件包，无内置密钥，图片后端需用户自行配置。
 - [Lohaslee/dsh-super-pm](https://github.com/Lohaslee/dsh-super-pm) — DeepSeek Harness 的产品思考助手：先明确负向边界，拆开事实与假设，经七套产品视角讨论取舍，并将确认的决策沉淀到项目记忆中。
 - [Lovenndme/dsh-skill-panel](https://github.com/Lovenndme/dsh-skill-panel) — DeepSeek Harness 的技能管理面板（设置 → 技能）：按全局 / 本项目两组列出技能，标注 DSH 是否真的加载了它；一个启用开关同时控制模型与 /命令 调用；用聊天界面同款 Markdown 渲染器预览并编辑 SKILL.md；支持新建、从文件夹或 zip 导入、删除到回收目录。只读写本机技能目录（~/.dsh/skills 与 <项目>/.dsh/skills），宿主路由走 DSH 的 Connection 信任围栏；不上报数据、无外发请求、不碰凭据。
-- [LTJ002/dsh-eval-harness](https://github.com/LTJ002/dsh-eval-harness) — 面向 DeepSeek Harness 的 Agent 应用评测工具：以审计副作用为判定依据的离线/在线评测套件、对安全类退化零容忍的基线对比、验证评测器自身有效性的变异测试。框架无关——只要有可调用的对话接口与可查询的工具调用记录即可接入。
+- [LTJ002/dsh-eval-harness](https://github.com/LTJ002/dsh-eval-harness) — 面向 DeepSeek Harness 的 Agent 应用程序开发评测技能（技能包）：以审计副作用为判定依据的离线/在线评测套件、对安全类退化零容忍的基线对比、验证评测器自身有效性的变异测试。框架无关——只要有可调用的对话接口与可查询的工具调用记录即可接入；宿主版本兼容范围刻意未声明。
 - [Lumos-789/delivery-video-plugin](https://github.com/Lumos-789/delivery-video-plugin) — 把真实运行的功能做成可信交付演示视频，或把缺陷做成可追溯的问题反馈视频：真实录屏、edge-tts 旁白与逐字对齐字幕、自包含 ffmpeg 管线，配一道拒绝放过造假或残次演示的确定性质量闸（规格、音轨、响度、黑帧/冻结/静音扫描），含渲染前预检与成片证据核验。反馈模式带严重级别/阶段徽标、复现步骤浮层，以及按成片 SHA256 绑定的工单级问题报告。需 Python 3.9+、PATH 上的 ffmpeg/ffprobe，以及 `pip install edge-tts Pillow`；旁白会调用 edge-tts 公共接口。
 - [Lumos-789/react-monitor-agent](https://github.com/Lumos-789/react-monitor-agent) — 安装壳技能：安装、跑起并排障 React-Monitor-Agent 人机协作操作板——agent 把工作过程写成由录屏、截图、diff、文本节点组成的结构化回放时间线，人在方案/阶段/风险/完工四类检查点上拍板，决策改变时间线走向，被否定/改向的旧分支灰掉保留以供审计。技能引导克隆主仓，启动零依赖 Node 事件服务（127.0.0.1:8790）与 React 操作板（localhost:5173），操作板内置离线 FIXTURE 演示模式。bundle 只内嵌技能，产品源码以主仓为准。
 - [Lumos-789/VoiceTranser](https://github.com/Lumos-789/VoiceTranser) — macOS 本地按住说话语音输入：按住全局热键说话、松开即转写粘贴到光标处。纯本地 STT（默认 Qwen3-ASR 0.6B 4bit 走 MLX/Metal，SenseVoice / mlx-whisper 双 fallback），零外部 API，launchd 自愈常驻 + 8 项自检。内置技能让 agent 代你完成安装、Karabiner 热键接线、launchd 配置、引擎切换与全链排障。
@@ -8999,7 +8999,7 @@ dsh plugin --profile web add dshmarket
 - [tuogusa/dsh-plugin-toggle](https://github.com/tuogusa/dsh-plugin-toggle) — 在 Web 设置面板中启用、停用、删除/撤回插件，并支持版本检测与 npm 插件更新；运行时开关持久化到 profile。
 - [Ultmebius/universal-plugin-hub](https://github.com/Ultmebius/universal-plugin-hub) — 在 DSH 中使用 Claude Code、Codex 等软件生态的插件，一站式管理插件、Skills 与 MCP。支持添加 Git 插件源和 marketplace、上传插件和 Skills、添加 MCP 服务器，自动扫描并开关本地 Skills，接入插件提供的子代理、MCP、Hooks 与 LSP。
 - [VibeDev-Si/dsh-ecosystem](https://github.com/VibeDev-Si/dsh-ecosystem) — VibeDev 插件中心：介绍 VibeDev 官方插件，并通过官方插件管理器一键安装（先检查、先不启用地安装、再启用，并带上前置依赖）。另提供套装安装、旧包名迁移，以及一键安装插件市场 dshmarket。
-- [Vikrant-Aleph/dshmarket-update-helper](https://github.com/Vikrant-Aleph/dshmarket-update-helper) — 提供独立设置页，通过 DSH 插件管理器更新 npm 稳定版 dshmarket，支持版本核对及安装失败时尝试恢复旧版。
+- [Vikrant-Aleph/dshmarket-update-helper](https://github.com/Vikrant-Aleph/dshmarket-update-helper) — 插件市场更新助手：专治插件市场更新自己时把自己卸载的尴尬，市场负责逛街，助手负责换市场。市场你先别动，我来 ＞﹏＜。
 - [vlln/plugin-registry#console](https://github.com/vlln/plugin-registry/tree/main/packages/plugin/console) — 插件生态基建：浏览器面板管理官方 repository 插件（0 patch）+ make-dsh-plugin 插件开发引导技能。
 - [wang678678/dsh-local-plugins#dsh-market-autogroup](https://github.com/wang678678/dsh-local-plugins/tree/main/packages/dsh-market-autogroup) — 启动时自动把已安装插件归入 dsh-market 分组。
 - [Wcof/PlugBox](https://github.com/Wcof/PlugBox) — DeepSeek Harness 插件中心：安装、更新与启停 DSH 插件，聚合插件索引源，支持按分支安装；同时发布可订阅的格式 1 插件索引。
