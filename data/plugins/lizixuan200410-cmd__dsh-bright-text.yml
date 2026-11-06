@@ -1,0 +1,6 @@
+url: https://github.com/lizixuan200410-cmd/dsh-bright-text
+name: lizixuan200410-cmd/dsh-bright-text
+category: ui
+description:
+  en: Sets the UI text colour for light and dark themes separately, plus the body font size and the interface typeface, with system Kai/Xing/Li/Song families, four open-source calligraphy fonts and support for importing your own font file.
+  zh: 分别设置深浅主题的文字颜色，并调整正文字号与界面字体：内置楷体、行楷、隶书等系统字体，附带四款开源书法字体，也能导入自己的字体文件。

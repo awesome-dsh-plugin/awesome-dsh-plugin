@@ -1,0 +1,6 @@
+url: https://github.com/Neverwocao/dsh-session-timing
+name: Neverwocao/dsh-session-timing
+category: session
+description:
+  en: 'Wall-clock session and turn timing for the DSH Web GUI: a timer chip in the session header shows the session total, every finished turn shows its own duration above the action row, and a sidebar panel totals today, the last 7 days, the last 30 days or all sessions. The numbers are folded from turn/start and turn/end in the session log, so paging, compaction and restarts do not change them.'
+  zh: '给 DSH Web GUI 的会话与轮次墙钟计时：会话标题栏的计时胶囊显示会话累计耗时，每轮结束后在操作行上方显示本轮耗时，侧边栏「会话耗时」面板按今天、近 7 天、近 30 天或全部汇总。数字由会话日志里的 turn/start 与 turn/end 折叠而来，翻页、压缩上下文、重启都不影响。'

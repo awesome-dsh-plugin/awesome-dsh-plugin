@@ -1,0 +1,7 @@
+url: https://github.com/Miaphant/dsh-daily-tarot
+name: Miaphant/dsh-daily-tarot
+category: fun
+description:
+  en: 'Daily tarot with 22 Rider-Waite-Smith card images, animated 3D flips, random upright and reversed cards, Chinese readings, and up to 10 draws per day.'
+  zh: '每日塔罗，含 22 张韦特大阿尔卡那真实牌面、3D 翻牌、随机正逆位、中文牌义解读和每日最多 10 次抽牌。'
+tarball: https://github.com/Miaphant/dsh-daily-tarot/releases/download/v1.1.1/dsh-daily-tarot-1.1.1.tgz

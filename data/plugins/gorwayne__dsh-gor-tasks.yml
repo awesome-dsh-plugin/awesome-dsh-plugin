@@ -1,0 +1,7 @@
+url: https://github.com/gorwayne/dsh-gor-tasks
+name: gorwayne/dsh-gor-tasks
+category: workflow
+description:
+  en: 'Project-based task manager: a sidebar panel, nine chat tools, and one-click splitting of an assistant reply into tasks.'
+  zh: '把待办放进 DSH：左侧任务面板、项目分类、对话里增删任务，回答一键拆成任务。'
+icon: https://raw.githubusercontent.com/gorwayne/dsh-gor-tasks/main/assets/icon-360.png

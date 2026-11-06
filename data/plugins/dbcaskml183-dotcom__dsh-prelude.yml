@@ -1,0 +1,6 @@
+url: https://github.com/dbcaskml183-dotcom/dsh-prelude
+name: dbcaskml183-dotcom/dsh-prelude
+category: ui
+description:
+  en: "Optimize prompts in the DeepSeek Harness composer: identify missing requirements, insert a sentence from 90 method cards, or compare and edit a full rewrite before you send."
+  zh: "在 DSH 输入框里优化提示词：发现草稿中没说清的要求，从 90 张方法卡中选一句补进去，或对照原稿编辑整段改写。由你决定采用和发送。"

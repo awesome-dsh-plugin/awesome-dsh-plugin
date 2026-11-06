@@ -1,0 +1,7 @@
+url: https://github.com/leoan698-tom/dsh-sessivra
+name: leoan698-tom/dsh-sessivra
+category: session
+description:
+  en: 'Sessivra: drag sessions into resizable split views, insert native @ references into drafts, exchange linked replies and review delegated work before queued follow-ups. npm package dsh-plugin-sessivra.'
+  zh: Sessivra：拖拽会话自由分屏、调宽，拖入草稿插入原生 @ 引用；支持关联回复、共享裁决、验收后继续排队任务及会话树。npm 包名 dsh-plugin-sessivra。
+tarball: https://github.com/leoan698-tom/dsh-sessivra/releases/download/v0.3.0-dev.26/dsh-plugin-sessivra-0.3.0-dev.26.tgz

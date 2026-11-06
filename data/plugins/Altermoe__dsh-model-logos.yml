@@ -1,0 +1,7 @@
+url: https://github.com/Altermoe/dsh-model-logos
+name: Altermoe/dsh-model-logos
+category: ui
+description:
+  en: 'Model brand marks in the composer model selector; vendor and model marks across Settings → Models (provider rows, model rows, the add-provider dropdown); and a per provider/model icon picker that stores overrides in the DSH user settings document.'
+  zh: '在输入框的模型选择器中显示模型品牌图标，在「设置 → 模型」页的提供商行、模型行和添加提供商下拉框中显示厂商与模型图标，并提供按提供商/模型覆盖图标的图标选择器，覆盖项保存在 DSH 用户设置文档中。'
+icon: https://raw.githubusercontent.com/Altermoe/dsh-model-logos/main/assets/icon-180.png

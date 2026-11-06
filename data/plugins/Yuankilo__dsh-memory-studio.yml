@@ -1,0 +1,6 @@
+url: https://github.com/Yuankilo/dsh-memory-studio
+name: Yuankilo/dsh-memory-studio
+category: memory
+description:
+  en: Memory for DeepSeek Harness with five sections (memories, tree, profile, graph, inbox), a rule-based capture policy that decides what to keep and what to drop, and hybrid BM25 plus vector retrieval over parent and child chunks, backed by twelve agent tools that read and write the same local files.
+  zh: DeepSeek Harness 的本地记忆插件：记忆、目录、画像、关系、待审五个分区；规则式自动沉淀，明确区分该记与不该记；父子分块的 BM25 + 向量混合检索；12 个工具读写同一份本地数据。

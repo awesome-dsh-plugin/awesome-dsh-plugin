@@ -1,0 +1,7 @@
+url: https://github.com/0changandui0/dsh-browser-tabs
+name: 0changandui0/dsh-browser-tabs
+category: browser
+description:
+  en: 'Keeps the DSH browser from accumulating tabs: once a configurable limit is exceeded it closes blank, error, duplicate and oldest pages, while leaving the page in use, newly opened tabs and keep-pattern URLs alone. Includes a settings panel with preview and manual cleanup.'
+  zh: 'DSH 浏览器标签页管家：超过可配置上限时，按空白页、报错页、重复地址、最老页面的顺序关闭，正在用、刚打开和命中保留规则的页面不动；带设置页，可预演和手动清理。'
+icon: https://raw.githubusercontent.com/0changandui0/dsh-browser-tabs/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/xyzOvO/dsh-wiki-notes
+name: xyzOvO/dsh-wiki-notes
+category: memory
+tarball: https://github.com/xyzOvO/dsh-wiki-notes/releases/latest/download/dsh-wiki-notes.tgz
+description:
+  en: 'Read-only knowledge gateway over a local Markdown vault, in four tools: `wiki_recall` returns the matching section in full with page-level citations plus vault health checks and a page skeleton for writing a good answer back; `wiki_context` returns one evidence pack with per-page excerpts, a support verdict and an explicit list of gaps; `wiki_verify` re-checks a drafted answer against that pack and reports claims the evidence cannot back, including unsupported numbers; `wiki_observe` reports how often answers needed correcting. The settings page and sidebar panel share the same query path as the model, so a search you run by hand cannot disagree with what the model was given. The three knowledge-gateway tools (`wiki_context`, `wiki_verify`, `wiki_observe`) need a local Python 3 bridge — `bridge.python` plus `bridge.toolsRoot` containing `wiki_bridge.py`; without it they return `E_PYTHON_UNAVAILABLE`.'
+  zh: '在本地 Markdown 笔记库上做只读的知识网关，四个工具：`wiki_recall` 一次调用返回命中小节正文与页级出处，另带库健康检查与「把好答案回写成新页」的骨架；`wiki_context` 返回一份带逐页摘录的证据包，附「知识够不够」的判定和明确的缺口清单；`wiki_verify` 拿这份证据回头核验草稿，报出证据撑不住的说法，包括没有依据的数字；`wiki_observe` 统计回答需要被修正的比例。设置页与侧栏面板和模型走同一条查询路径，手动搜一次不会跟它拿到的结论对不上。其中 `wiki_context` / `wiki_verify` / `wiki_observe` 三个知识网关工具需要本机 Python 3 通路（`bridge.python` 与包含 `wiki_bridge.py` 的 `bridge.toolsRoot`）；未配置时返回 `E_PYTHON_UNAVAILABLE`。'

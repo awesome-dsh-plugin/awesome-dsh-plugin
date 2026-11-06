@@ -2,6 +2,6 @@ url: https://github.com/LongerWu2026/dsh-dev-workbench
 name: LongerWu2026/dsh-dev-workbench
 category: workflow
 description:
-  en: A workbench for tasks, pending replies, AI news, knowledge, multi-provider web chats, and developer tools. Message capture and pending replies need a 云之家 (Yunzhijia) account with its yzj-cli, and web chats only run in the desktop app.
-  zh: 智能工作台，集成待办、待回复、AI资讯、知识空间、多AI对话与开发工具；消息采集与待回复需云之家账号及 yzj-cli，多 AI 对话仅桌面端可用。
-tarball: https://github.com/LongerWu2026/dsh-dev-workbench/releases/download/v0.2.1/dsh-dev-workbench-0.2.1.tgz
+  en: "Workbench with an AI assistant, pause/stop controls, separate background-model settings, tasks/replies, Linky, scoped knowledge capture, local and Yunzhijia search, news reading and developer tools. Optional embeddings download a model. Yunzhijia needs its CLI/account; web chats need the desktop app."
+  zh: "智能工作台，集成可停止的AI助手、后台模型独立配置、待办与回复跟进、Linky研发、知识收藏与检索、云之家搜索、资讯原文及开发工具；可选本地向量需下载模型，云之家需账号及CLI，多AI对话需桌面端。"
+tarball: https://github.com/LongerWu2026/dsh-dev-workbench/releases/download/v0.4.5/dsh-dev-workbench-0.4.5.tgz

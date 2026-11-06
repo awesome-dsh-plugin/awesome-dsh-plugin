@@ -1,0 +1,6 @@
+url: https://github.com/LTJ002/dsh-eval-harness
+name: LTJ002/dsh-eval-harness
+category: skill
+description:
+  en: 'Agent application evaluation toolkit for DeepSeek Harness: offline/online suites judged from audit side effects, baseline diff with zero safety-regression tolerance, and mutation tests proving the evaluators themselves catch regressions. Framework-agnostic - needs a callable chat endpoint and queryable tool-call records.'
+  zh: '面向 DeepSeek Harness 的 Agent 应用评测工具：以审计副作用为判定依据的离线/在线评测套件、对安全类退化零容忍的基线对比、验证评测器自身有效性的变异测试。框架无关——只要有可调用的对话接口与可查询的工具调用记录即可接入。'

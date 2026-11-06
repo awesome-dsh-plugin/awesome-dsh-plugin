@@ -1,0 +1,7 @@
+url: https://github.com/jue5hen/dsh-window-size
+name: jue5hen/dsh-window-size
+category: ui
+icon: https://raw.githubusercontent.com/jue5hen/dsh-window-size/main/assets/icon-180.png
+description:
+  en: 'Set the startup window size of DeepSeek Harness Desktop from a settings page, with 4:3, 16:9 and 16:10 presets and up to 12 custom presets.'
+  zh: 在设置页设置 DeepSeek Harness 桌面版启动时的窗口大小，内置 4:3、16:9、16:10 比例预设，支持保存最多 12 个自定义预设。

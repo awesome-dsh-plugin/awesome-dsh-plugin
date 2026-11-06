@@ -1,0 +1,7 @@
+url: https://github.com/bakkhos8/dsh-macos-share/tree/main/plugins/dsh-macos-share
+name: bakkhos8/dsh-macos-share#dsh-macos-share
+category: notify
+description:
+  en: 'macOS Share menu receiver for DeepSeek Harness: appends shared files, images, text and links to the current thread’s draft attachments (requires the DSH Share app).'
+  zh: 'macOS 分享菜单接收端：把分享的文件、图片、文本和链接追加到 DeepSeek Harness 当前会话的草稿附件（需先安装 DSH Share App）。'
+icon: https://raw.githubusercontent.com/bakkhos8/dsh-macos-share/main/plugins/dsh-macos-share/icon.png

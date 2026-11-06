@@ -3,14 +3,16 @@ name: regrevia/dsh-fast-mode
 category: usage
 description:
   en: >-
-    DeepSeek Harness's own fast mode: a few configs that set how fast a task runs — bound where
-    thinking settles, bound the process narration, bound the steps per task — faster delivery
-    without touching the model or its thinking strength. Measured over 10 task families and 30
-    complete units: the default reaches 0.72x total time, 0.74x output tokens and 0.71x steps;
-    moving the "write it once" reminder from step 4 to step 2 gives debugfix 0.535x, ledger
-    0.506x, migrate 0.751x, and 0.625x pooled over 13 pairs with 0.614x output tokens (migrate
-    alone 0.509x with 0.528x output at step 3). Hidden tests passed in every pair. Short 1-5 step
-    repairs and data reshaping do not pay for the reminder, so try it once per task shape.
+    DeepSeek Harness's own fast mode: the same model on the same reasoning effort, fewer output
+    tokens, all prompt-side. Only the output-discipline switch is on by default (late mode, active
+    from step 4); every other switch is off and can be enabled on its own; turn on the tool-output
+    trim switch when tool output is long. Measured on one machine, not a leaderboard: 30 task
+    pairs with long output at the trim switch 0.756x wall clock and 21% fewer output tokens; 24
+    pairs on 6 real pallets/click PRs 0.805x and 23% fewer. On official SWE-bench Lite instance
+    definitions with a self-built harness it does not show a gain (8 instances, three independent
+    runs pooled to 72 pairs: 0.933x wall, 0.903x tokens, wall still crosses 1; single runs of the
+    same configuration differ by 30%), and stacking switches on top of the trim switch is worse
+    than the trim switch alone. Numbers and repro in the repo.
   zh: >-
-    DeepSeek Harness 自己的快速模式：用几项配置控制任务的运行速度——限制思考在哪一步收敛、限制中间汇报的输出、限制最多几步，在不改变模型与思考强度的前提下把任务做快。实测 10 类任务 30 个完整单元：默认配置总耗时 0.72×、输出 token 0.74×、步数 0.71×；把「省着写」提醒从第 4 步提前到第 2 步，debugfix 0.535×、ledger 0.506×、migrate 0.751×，13 对合并 0.625×、输出 token 0.614×（第 3 步时 migrate 单族 0.509×、输出 0.528×）。每一对里两臂隐藏断言逐格相同、全绿。1–5 步的小改修与数据整形收不回提醒成本，按任务形状先试一次再定。
+    DeepSeek Harness 自己的 fast mode：同一个模型、同样的思考强度，只花更少的输出 token，全程提示词侧。默认只开「精简输出」（late 模式，第 4 步后生效），其余开关默认关、可单独打开；工具输出很长时再开「截短工具输出」那个。本机实测、非榜单成绩：输出偏长的 30 对任务，只开截短开关时 0.756× 耗时、输出 token −21%；6 个真实 `pallets/click` PR 共 24 对，0.805× 耗时、token −23%。在官方 SWE-bench Lite 题目定义上用自建 harness 量不出收益（8 题、三次独立跑合池 72 对：墙钟 0.933×、token 0.903×，墙钟仍跨 1；同一配置单跑之间就差三成），往截短上再叠别的开关反而更差。数字与复现见仓库。
 icon: https://raw.githubusercontent.com/regrevia/dsh-fast-mode/main/icon.png

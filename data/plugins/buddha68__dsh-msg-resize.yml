@@ -1,0 +1,8 @@
+url: https://github.com/buddha68/dsh-msg-resize
+name: buddha68/dsh-msg-resize
+category: theme
+icon: https://raw.githubusercontent.com/buddha68/dsh-msg-resize/main/assets/icon-180.png
+tarball: https://github.com/buddha68/dsh-msg-resize/releases/download/v2.6.0/dsh-msg-resize-2.6.0.tgz
+description:
+  en: 'Drag the two handles to resize and move the DSH chat area as a floating window; position and size persist across reloads, and movement is clamped to the conversation pane so it never leaves the screen.'
+  zh: '拖动两个把手调整 DSH 对话区的大小与位置，把整块对话变成可任意摆放的浮窗；位置与尺寸自动记住，移动范围限制在对话窗格内，不会跑出屏幕。'

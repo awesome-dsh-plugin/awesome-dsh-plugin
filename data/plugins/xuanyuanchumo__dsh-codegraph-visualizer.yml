@@ -1,0 +1,6 @@
+url: https://github.com/xuanyuanchumo/dsh-codegraph-visualizer
+name: xuanyuanchumo/dsh-codegraph-visualizer
+category: ui
+description:
+  en: 'Interactive code-graph visualization inside DSH: a sidebar entry (a tab inside dsh-better-sidebar when that plugin is installed) draws the graph produced by dsh-codegraph (its .codegraph/codegraph.db or the codegraph CLI) or by dsh-tool-lens, with call-chain tracing, cycle detection, dependency and impact analysis, directory/file/function clustering, four layouts, and PNG/SVG/JSON export. Requires dsh-codegraph or dsh-tool-lens as the data source; without one the graph is empty.'
+  zh: 'DSH 的交互式代码图谱：以侧栏入口呈现（装了 dsh-better-sidebar 时则是它的一个标签页），渲染 dsh-codegraph（.codegraph/codegraph.db 或 codegraph CLI）或 dsh-tool-lens 提供的数据，支持调用链追踪、循环依赖检测、依赖与影响分析、目录/文件/函数聚类、四种布局与 PNG/SVG/JSON 导出。需要 dsh-codegraph 或 dsh-tool-lens 提供数据源，否则图谱为空。'

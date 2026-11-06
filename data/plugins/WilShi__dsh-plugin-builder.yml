@@ -1,0 +1,6 @@
+url: https://github.com/WilShi/dsh-plugin-builder
+name: WilShi/dsh-plugin-builder
+category: dev
+description:
+  en: 'A settings-tab workshop plus the cordis-plugin-development skill it hands to the agent, for writing DSH plugins against the running host API.'
+  zh: 设置页里的插件工坊，附带交给 Agent 的 cordis-plugin-development 技能，基于当前运行的主机 API 编写 DSH 插件。

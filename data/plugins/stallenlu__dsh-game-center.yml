@@ -1,0 +1,7 @@
+url: https://github.com/stallenlu/dsh-game-center
+name: stallenlu/dsh-game-center
+category: fun
+description:
+  en: "A panel plugin that keeps mini-games in one place and plays them in the same window. Ships with Tetris: a 10x20 board, seven pieces, a ghost piece and a next-piece preview, line and level scoring, three difficulty levels, and a best score kept in localStorage."
+  zh: "面板插件：把开发的小游戏集中到一处，并在同一窗口内直接游玩。首发俄罗斯方块：10×20 棋盘、七种方块、落点虚影与下一个方块预览、消行与等级计分、三档难度，最高分存在 localStorage。"
+icon: https://raw.githubusercontent.com/stallenlu/dsh-game-center/main/assets/icon-180.png

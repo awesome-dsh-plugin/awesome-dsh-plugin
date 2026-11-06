@@ -1,0 +1,7 @@
+url: https://github.com/gongfpp/dsh-cost-voice
+name: gongfpp/dsh-cost-voice
+category: usage
+description:
+  en: 'Speaks the estimated spend of each turn aloud with an Alipay-style voice clip or a bundled meme voice; amounts come from dsh-cost-meter when installed, otherwise from per-model token prices. All audio is bundled, so nothing is fetched at runtime.'
+  zh: '每轮会话结束用支付宝音效播报本轮花费估算（也可换成内置的大白饭梗音色）；金额优先取 dsh-cost-meter，未安装时按模型单价估算；音频全部内置、运行时不联网。'
+icon: https://raw.githubusercontent.com/gongfpp/dsh-cost-voice/main/icon.png

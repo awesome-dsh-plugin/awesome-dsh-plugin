@@ -1,0 +1,6 @@
+url: https://github.com/lilulj/dsh-dafeiyu-pet
+name: lilulj/dsh-dafeiyu-pet
+category: fun
+description:
+  en: 'A desktop pet for DSH: a blue whale girl with 104 animations and built-in voice. It is standalone, but its pet runtime is a rework of dsh-dafeiyu — disable the upstream dsh-dafeiyu before installing, or both will run and fight over the control port. Windows x64 only, and the first launch downloads about 580 MB of assets.'
+  zh: 'DSH 桌宠：蓝色鲸鱼娘，自带 104 个动作与内置语音。插件独立，但桌宠运行时基于 dsh-dafeiyu 改造——安装前需先禁用上游 dsh-dafeiyu，否则两只同开会抢控制口；仅支持 Windows x64，首次启动需下载约 580MB 素材。'

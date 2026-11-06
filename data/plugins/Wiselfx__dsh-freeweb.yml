@@ -1,0 +1,5 @@
+url: https://github.com/Wiselfx/dsh-freeweb
+name: Wiselfx/dsh-freeweb
+category: tools
+description:
+  en: 'Keyless web-search provider for DeepSeek Harness: Startpage, DuckDuckGo, Exa, and more behind a consensus fan-out.'

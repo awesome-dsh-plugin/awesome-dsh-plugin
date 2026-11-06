@@ -1,0 +1,6 @@
+url: https://github.com/a1121611810/dsh-media-converter
+name: a1121611810/dsh-media-converter
+category: tools
+description:
+  en: 'Local media toolbox for DeepSeek Harness: converts files between 27 video, audio and image formats, trims clips, extracts audio or video tracks without re-encoding, exports embedded subtitles to .srt, compresses images with a before/after preview, reads and rewrites metadata, and encodes or decodes Base64 — all through the ffmpeg already installed on the machine, so files never leave it. The same engine is registered as a media_toolbox tool agents can call.'
+  zh: 'DeepSeek Harness 的本地多媒体工具箱：27 种视频/音频/图片格式互转、裁剪、不重编码地剥离音轨或画面、导出内嵌字幕为 .srt、带前后对比预览的图片压缩、元数据查看与改写、Base64 编解码——全部走本机已装的 ffmpeg，文件不出本机；同一引擎也注册为 agent 可调用的 media_toolbox 工具。'

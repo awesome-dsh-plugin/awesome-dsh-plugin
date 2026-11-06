@@ -1,0 +1,7 @@
+url: https://github.com/hestudio-community/dsh-plugin-onenote
+name: hestudio-community/dsh-plugin-onenote
+category: tools
+description:
+  en: 'Reads only the Microsoft OneNote notebooks you allow, with device-code sign-in, a per-notebook allow-list in Settings, and four read-only tools for status, page listing, search and page content.'
+  zh: '只读取你允许的 Microsoft OneNote 笔记本：设备码登录、设置页的笔记本白名单，以及状态、页面列表、搜索、页面内容四个只读工具。'
+icon: https://raw.githubusercontent.com/hestudio-community/dsh-plugin-onenote/main/assets/icon-180.png

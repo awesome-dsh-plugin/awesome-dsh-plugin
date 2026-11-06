@@ -6,4 +6,4 @@ category: ui
 description:
   en: "A tiny always-on floating tree of the DSH workspaces, conversations and subagents that are running, waiting on you or on a schedule — live running state, who is waiting for your call, per-row model, scheduled-run countdowns, other local dsh instances with their ports, and local claude/codex CLI processes with their codex subagent threads."
   zh: "一张常驻角落的迷你 agent 树：按 workspace → 对话 → subagent 实时展示谁在跑，等你拍板的会话琥珀色置顶，行内显示模型与定时任务倒计时；同时接上本机其它端口的 dsh 实例（会话数 / subagent 数可展开），并列出本机 claude/codex 进程及其子对话。"
-# icon: https://raw.githubusercontent.com/yuna78/dsh-agent-tree/main/docs/assets/screenshot.png
+icon: https://raw.githubusercontent.com/yuna78/dsh-agent-tree/main/docs/assets/icon.png
