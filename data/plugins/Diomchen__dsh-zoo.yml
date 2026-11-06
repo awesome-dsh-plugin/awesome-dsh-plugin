@@ -1,0 +1,7 @@
+url: https://github.com/Diomchen/dsh-zoo
+name: Diomchen/dsh-zoo
+category: fun
+description:
+  en: "LAN pets for DeepSeek Harness. Neighbors' pets visit your desktop, and yours can visit theirs with a note or file along."
+  zh: 让同一局域网里的 DSH 宠物互相看见、互相串门，还能捎一张字条或一个文件。
+tarball: https://github.com/Diomchen/dsh-zoo/releases/latest/download/dsh-zoo.tgz
