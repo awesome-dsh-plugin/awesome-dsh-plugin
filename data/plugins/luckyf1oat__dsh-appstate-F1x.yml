@@ -1,0 +1,6 @@
+url: https://github.com/luckyf1oat/dsh-appstate-F1x
+name: luckyf1oat/dsh-appstate-F1x
+category: dev
+description:
+  en: "Reads a Windows app's window list, UI text and single-window pixels without screen capture, focus stealing or cursor movement."
+  zh: "读取 Windows 应用的窗口列表、界面文本与单窗口像素，不截屏、不抢焦点、不动鼠标。"
