@@ -1,0 +1,6 @@
+url: https://github.com/mount9527/dsh-github-sync
+name: mount9527/dsh-github-sync
+category: session
+description:
+  en: 'Sync DeepSeek Harness sessions and workspace files to a private GitHub repository for cross-device handoff, with sync badges, search and bulk upload, independent local/remote delete, conflict "pick a side", and multi-device-safe index merging.'
+  zh: '把 DSH 会话与工作区文件同步到私有 GitHub 仓库，实现跨设备接力；支持同步徽标、搜索与批量上传、本地/远端独立删除、冲突选边，以及多设备安全的索引合并。'
