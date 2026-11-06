@@ -1,0 +1,6 @@
+url: https://github.com/WilShi/dsh-connector-builder
+name: WilShi/dsh-connector-builder
+category: dev
+description:
+  en: 'Design, validate, package and share DSH connectors as .dsh-connector.json files through the create-dsh-connector skill and a toolkit CLI, covering both local mcp-stdio and remote mcp-http connectors.'
+  zh: 通过 create-dsh-connector 技能与工具箱 CLI 设计、校验、打包并分享 .dsh-connector.json 连接器清单，覆盖本地 mcp-stdio 与远程 mcp-http 两类连接器。
