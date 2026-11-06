@@ -2,6 +2,6 @@ url: https://github.com/huangxiaoliang/deepclean-mydisk-plugin
 name: huangxiaoliang/deepclean-mydisk-plugin
 category: tools
 description:
-  en: 'Computer cleanup for Mac and Windows: disk cleanup, storage cleanup, caches, leftovers, similar photos; scans read-only and moves files to the Trash on macOS or a quarantine folder on Windows, with undo.'
-  zh: '电脑清理工具：磁盘清理、空间清理、Mac清理、Windows清理；缓存、残留与相似照片，扫描只读，清理先移入废纸篓或隔离区并可撤销。'
+  en: 'Disk cleanup and computer cleanup on Mac and Windows: free up disk and storage space; caches, leftovers, similar photos; read-only scan, files to Trash, undo.'
+  zh: 'Mac 与 Windows 电脑清理：磁盘清理、空间清理、C盘清理、硬盘清理、缓存清理、垃圾清理，磁盘空间不足或磁盘满了时可清理并释放空间；大文件、卸载残留与相似照片，只读扫描，清理先移入废纸篓或隔离区并可撤销。'
 icon: https://raw.githubusercontent.com/huangxiaoliang/deepclean-mydisk-plugin/main/assets/icon-180.png
