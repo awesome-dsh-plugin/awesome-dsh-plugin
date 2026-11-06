@@ -1473,6 +1473,7 @@ dsh plugin --profile web add dshmarket
 - [SkyblueeeLabs/dsh-iconic-launcher](https://github.com/SkyblueeeLabs/dsh-iconic-launcher) — 自定义 DeepSeek Harness 桌面快捷方式图标：选预设或上传图片，自动去除白底、生成多尺寸 ICO，一键写入桌面快捷方式。
 - [skyhancloud/dsh-client-ui-quote](https://github.com/skyhancloud/dsh-client-ui-quote) — 在网页聊天输入框上方为选中的 AI 回复内容添加可移除的引用横幅，随下一条消息一并发送。
 - [skyline66/dsh-desktop-clock](https://github.com/skyline66/dsh-desktop-clock) — 可拖动的 DSH 网页悬浮时钟：支持数字与指针表盘、专注计时、四套主题，并会记住窗口位置。
+- [skyline66/dsh-family-budget](https://github.com/skyline66/dsh-family-budget) — 侧边栏月度家庭预算表：收入、固定支出、可变支出、储蓄、应急金、债务与按月复盘，含合计、逐项预算差额与储蓄／还债／买房目标。只做收支整理，不提供投资建议。
 - [skyline66/dsh-sticky-notes-wall](https://github.com/skyline66/dsh-sticky-notes-wall) — 左侧栏便签墙：粘贴图片与文本、到期提醒、完成状态、快捷键、可置顶浮窗、外观皮肤，以及 Windows 桌面置顶窗口。
 - [sleep123937/dsh-assist-chat](https://github.com/sleep123937/dsh-assist-chat) — 右侧栏辅助对话：把当前会话分支成独立 Session，追问不打断主线。直接复用产品自带的对话界面，流式输出、工具调用、Stop 与 composer 与主对话完全一致。
 - [SmailPang/dsh-effort-slider](https://github.com/SmailPang/dsh-effort-slider) — 在原位置将 DSH 原生推理等级选项替换为可拖动的 Off、Low、High、Max 滑块，并保留官方模型选择流程。
@@ -5788,6 +5789,7 @@ dsh plugin --profile web add dshmarket
 - [Zoria-Lind/dsh-behavior-enhancer](https://github.com/Zoria-Lind/dsh-behavior-enhancer) — 工具调用纪律：提供行为提示、失败后降低并行度与重试提醒、写后检查及备份回滚、高风险命令闸门、变更摘要与验证提醒、项目记忆建议性检查、可配置的项目纪律周期重述与压缩后补充，以及遵守度统计。
 - [zp-home/dsh-recommend](https://github.com/zp-home/dsh-recommend) — DSH 插件透明排行与推荐：每日自动抓取 `dsh-plugin` 话题生态，公开评分模型，提供 rank/search/recommend 工具与设置页榜单。
 - [ZRui-C/dsh-computer-use](https://github.com/ZRui-C/dsh-computer-use) — DSH 电脑控制：Playwright/CDP 后台操作 Chromium，Accessibility 优先控制 macOS；动作锁定到正确进程与窗口，不抢前台、不移动鼠标，提供已签名公证的 Universal 2 DMG 安装包。
+- [zt8989/dsh-agentmail](https://github.com/zt8989/dsh-agentmail) — 通过已授权的 agently-cli 账号收发 QQ Agent Mail 邮件：发送、列表、阅读、搜索、回复、轮询共六个工具，主题自动嵌入会话/线程标记，后台轮询把回信路由回所属 DSH 会话并唤醒它，HTML 正文渲染为简洁的 Markdown。
 - [zuihouye/dsh-agnes-tools](https://github.com/zuihouye/dsh-agnes-tools) — 把 Agnes AI 的生图 / 生视频接成 DSH 原生工具，长视频任务可稍后续查。需设置 Agnes API Key（AGNES_API_KEY）。
 - [zxmqq1234/dsh-auto-retry](https://github.com/zxmqq1234/dsh-auto-retry) — 在 dsh 内置重试之上追加重试、回合自动继续与无响应看门狗，提供实时倒计时横幅、通知弹窗与统计看板。
 - [zz12hui/dsh-bili-video-summary](https://github.com/zz12hui/dsh-bili-video-summary) — 仅 Windows。B 站视频一键总结：下载音轨并用 faster-whisper 本地转写（需 Python 与 faster-whisper，首次运行下载约 725 MB 模型），随后生成解析 md 与一页「一图读懂」PNG。
@@ -6264,6 +6266,7 @@ dsh plugin --profile web add dshmarket
 - [1624318455/dsh-plugin-tts](https://github.com/1624318455/dsh-plugin-tts) — 用免费 Edge TTS 或你自己的 RVC 音色朗读 AI 回复：消息朗读与自动朗读、长文自适应分块渐进播放（无缝衔接）、音色包仓库一键安装、便携 RVC 运行时。
 - [1DAdidi/dsh-voice-horn](https://github.com/1DAdidi/dsh-voice-horn) — 每个对话右下角悬浮小喇叭：AI 回复完成后由 edge-tts 在后台静默朗读摘要，全程无前台窗口；开关状态每个对话独立记忆。需要 Windows、Python 3.9+ 并安装 edge-tts，且需联网调用微软 Edge TTS 在线服务；默认朗读摘要。
 - [2021Heei/dsh-tts-flash](https://github.com/2021Heei/dsh-tts-flash) — AI 回复流式 TTS 朗读插件，思考等待期有文字与语音同步的趣味短语反馈。内置 Edge TTS，支持任意 OpenAI 兼容云端引擎。
+- [27Synthesis/dsh-go-local-voice](https://github.com/27Synthesis/dsh-go-local-voice) — dsh-go 手机原生界面的语音朗读插件：长按回复即可用小米 MiMo TTS 或字节豆包 Seed TTS 念出来。回合结束后台自动分段预合成，点一次交给 App 的是一整段连续 MP3，而不是一次只念一小段；播放持有稳定的租约，所以「停止」真的停得住；输入框上方状态条与面板进度条提供实时反馈；支持把音频导出到手机存储。Key 只存本机（0600），不回显、不入库、不发给模型。
 - [3274375092/dsh-voice](https://github.com/3274375092/dsh-voice) — 语音输入插件：对着麦克风说话，识别后的文字作为普通聊天消息发送（本地模型或浏览器语音识别）。
 - [aa2246740/dsh-livevoice](https://github.com/aa2246740/dsh-livevoice) — 使用 Codex OAuth 的 WebRTC 实时语音，并可将任务交给 DSH 会话执行。
 - [abbccdd/dsh-localtts](https://github.com/abbccdd/dsh-localtts) — 用已有的本地语音合成为 Harness 逐句朗读：内置 IndexTTS 与 GPT-SoVITS 启动器、基于协议的本地 HTTP/JSONL 接入，以及 Kokoro、F5-TTS、VoxCPM、Qwen3-TTS、CosyVoice 的 SDK 环境模型文件夹加载；不附带任何模型。衍生自 1624318455/dsh-plugin-tts；已隔离行 id 与设置，可与原插件同装，重复功能会自动停用。
