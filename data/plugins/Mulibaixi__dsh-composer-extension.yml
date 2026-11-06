@@ -1,0 +1,7 @@
+url: https://github.com/Mulibaixi/dsh-composer-extension
+name: Mulibaixi/dsh-composer-extension
+category: workflow
+description:
+  en: "Links source material and main-chat instructions, and coordinates translation and refinement tasks with the companion translation plugin."
+  zh: "将原稿与主聊天要求联动提交，配合翻译插件协调翻译与润色任务。"
+tarball: https://github.com/Mulibaixi/dsh-composer-extension/releases/download/v0.4.7/dsh-composer-extension-0.4.7.tgz
