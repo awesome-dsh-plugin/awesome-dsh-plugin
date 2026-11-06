@@ -1587,6 +1587,7 @@ dsh plugin --profile web add dshmarket
 - [VanlxyG/dsh-hover-sidebar](https://github.com/VanlxyG/dsh-hover-sidebar) — Windows 桌面版与 Web 左侧栏悬停展开、移开收起，支持手动固定、自定义延迟和减少动态效果。
 - [var-lin/dsh-plugin-layout-organizer](https://github.com/var-lin/dsh-plugin-layout-organizer) — 对 DSH 投放到侧边栏顶部、侧边栏底部、对话标签、输入框停靠行与设置页导航的插件按钮做拖拽排序、官方/第三方分隔线与按钮收纳。只改变显示位置，不改动插件注册表。
 - [Veagau/dsh-amadeus-workbench](https://github.com/Veagau/dsh-amadeus-workbench) — 添加 Amadeus 风格启动面板，包含时钟和导航快捷入口。
+- [Veduis/dsh-workspace-tints](https://github.com/Veduis/dsh-workspace-tints) — 为每个工作区分配稳定的暖到冷色调，把工作区名设为分组标题并把会话缩进其下，同时在会话完成未读时整行染绿。
 - [vibeinging/dsh-turn-navigator](https://github.com/vibeinging/dsh-turn-navigator) — 对话轮次导航。
 - [victormshan/dsh-web-relay](https://github.com/victormshan/dsh-web-relay) — dsh 三方协作协议插件：Step List 状态机、五级审核链（含本地 Claude Code 混合审）、alternatives 裁决、无介入续跑与能力持久化体系。
 - [Vinzelles/dsh-clearview](https://github.com/Vinzelles/dsh-clearview) — 为 DSH Web 客户端新增「阅读」页签：按源顺序呈现过程步骤与实时思考，成功轮次收起只留最终回答，原有页签、输入框与工具保持不变。
@@ -4246,7 +4247,7 @@ dsh plugin --profile web add dshmarket
 - [liancha22/dsh-puzzle-mode](https://github.com/liancha22/dsh-puzzle-mode) — 把项目决策落成纯 markdown 而不是留在聊天记录里：一份主文档加若干模块文档，每条都带 文件:行 出处。AI 主动提问把悬而未决变成已定；五维健康性（任务复杂度 / 可拓展性 / 维护系数 / 代码质量 / 可复用性）由文档证据算出，显示在输入框模型选择器旁边的小按钮上。一个会话可同时绑多个项目；项目分小 / 中 / 大三档，条目上限随档位放宽；主文档里的标准化流水线小节在命中触发词时自动注入。
 - [liangxiaobing520/dsh-local-vector-memory](https://github.com/liangxiaobing520/dsh-local-vector-memory) — DSH 全本地向量记忆:本地 embedding、SQLite 存储、自动召回注入、去重与冲突检测、软删除回收站、在线备份,可选 LLM 提取。
 - [Libraqg/dsh-workspace-memory](https://github.com/Libraqg/dsh-workspace-memory) — 显式、按项目隔离的记忆交接：新开会话时，经你确认后只调用一次模型，把同一项目里之前的对话整理成有长度上限的摘要，注入到新会话的第一步；不会在后台偷偷调用模型。“记忆”面板可以查看摘要、编辑笔记。
-- [light-cheng/DSH-Mem0](https://github.com/light-cheng/DSH-Mem0) — 为 DeepSeek Harness 提供基于 Mem0 的长期记忆，支持 Platform、自建 Server 和本地 OSS 后端，带可视化设置、自动召回与保存、可编辑记忆摘要、Token 预算和每周记忆巡检。
+- [light-cheng/DSH-Mem0](https://github.com/light-cheng/DSH-Mem0) — 为 DeepSeek Harness 提供基于 Mem0 的长期记忆，支持 Platform、自建 Server 和本地 OSS 后端，带可视化设置、自动召回（从第一轮起）与保存、可编辑记忆摘要、Token 预算和每周记忆巡检（只删除本插件写入的记忆）。保存的文本会先脱敏；记忆摘要是稳定的系统提示段（plugin:dsh-mem0:profile），召回是最后追加的独立 mem0:recall 块，不破坏已缓存的提示前缀；召回与保存都有超时（recallTimeoutMs、addTimeoutMs）。安装 dsh-strata 时，召回大小遵循它的 strataBudget 额度；可选设置 captureStrataFolds（默认关闭）还会把它的折叠摘要存为记忆。
 - [lightporta/dsh-knowledge-center](https://github.com/lightporta/dsh-knowledge-center) — DeepSeek Harness 本地知识库：把工作区与对话附件中的 PDF、Word、Excel、Markdown、TXT、CSV、HTML 文档提炼为 Markdown 知识，提供类 VS Code 预览、按工作区授权，以及检索、读取和入库的模型工具。
 - [LingDangZaiXiang/dsh-life-hair](https://github.com/LingDangZaiXiang/dsh-life-hair) — 上下文压缩时把 checkpoint 原文抄进便签归档，并叫醒会话补写丢掉的内容。
 - [linner1224/dsh-video-coursemap](https://github.com/linner1224/dsh-video-coursemap) — 仅限 Windows：读取前台窗口标题，识别 B 站视频课程并按学科分类，抓取简介/弹幕/评论，生成 Markdown + Mermaid 知识地图与 Word 学习手册（Word 输出依赖本机 Python）。
@@ -6182,6 +6183,7 @@ dsh plugin --profile web add dshmarket
 - [AI-Galaxy-GPU/dsh-sound](https://github.com/AI-Galaxy-GPU/dsh-sound) — 六类事件独立提示音：回合完成、审批、提问、计划评审、目标受阻、任务失败各有独立声音与音量，可在 Web 设置面板配置（内置合成音 / 静音 / 本地音频文件）。
 - [AIcivilization/dsh-audiobook](https://github.com/AIcivilization/dsh-audiobook) — 搜书听：按书名、作者、角色名或大概情节搜公版书（古腾堡、中英文维基文库、Internet Archive、Standard Ebooks），或导入 EPUB / PDF / TXT / DOCX / Markdown，在右侧栏用微软 Edge 神经网络语音、离线 Kokoro 或设备自带语音读给你听；自动记住听到哪，能语音记读书心得、和 AI 聊刚听到的内容。
 - [Alan2Z/dsh-speak](https://github.com/Alan2Z/dsh-speak) — 零外部依赖、事件驱动、无需额外模型、不消耗任何 token的语音播报插件。使用系统自带自然语音进行播报，支持win/mac双平台；最终回复、审批与提问提醒、可选事件播报（回合结束/命令完成/目标变更/工具出错/待办更新）、最终回复可重播、双语言可视化设置。
+- [Aliboder/dsh-music-panel](https://github.com/Aliboder/dsh-music-panel) — DeepSeek Harness 的本地音乐播放器：曲库扫描、歌单、同步歌词、在线元数据匹配、标签与封面编辑、封面网格和实时频谱条。
 - [ALittleLov/dsh-soundcheck](https://github.com/ALittleLov/dsh-soundcheck) — 把本地音频拆成速度、调性、动态、削波与编曲形状，合成一段人话结论，原始测量值另列；音频不出本机。
 - [AndyYang12345/dsh-dictation-hotkey](https://github.com/AndyYang12345/dsh-dictation-hotkey) — 输入框按住说话：按住快捷键录音，经 DSH 自带语音 Remote（本地 SenseVoice）识别后写入草稿，可选自动发送。
 - [anweat/dsh-voice-webspeech](https://github.com/anweat/dsh-voice-webspeech) — 浏览器 Web Speech API 语音输入：零服务端、零密钥、零模型下载（Edge=Azure 语音、Chrome=Google 语音）。
