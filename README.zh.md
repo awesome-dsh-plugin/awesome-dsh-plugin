@@ -5575,6 +5575,7 @@ dsh plugin --profile web add dshmarket
 - [wodongx123/dsh-language-control](https://github.com/wodongx123/dsh-language-control) — 让 Agent 的思考过程也自动使用中文。在每步推理前向 System Prompt 最顶部注入语言约束，强制思维链、规划、工具调用推理全部使用中文，防止工具返回英文内容后发生语言漂移。支持在设置面板中实时编辑约束文本。
 - [wsk114514/dsh-ark-wiki](https://github.com/wsk114514/dsh-ark-wiki) — 查询 PRTS Wiki 的《明日方舟》干员、物品、关卡、剧情与泰拉大典世界观条目，并基于剧情卡司统计与卡池历史预测未实装角色、异格与卡池排期。
 - [wth373737/dsh-plugin-mail-triage](https://github.com/wth373737/dsh-plugin-mail-triage) — IMAP 邮件分拣与清理：增量只读扫描，先过硬保护规则层、再走可选的本地模型分类，产出报告与带哈希的清单，人工批准后才移动到回收站——全程不 expunge。
+- [wu04186767/dsh-plugin-macos](https://github.com/wu04186767/dsh-plugin-macos) — 给 DeepSeek Harness 智能体的 21 个 macOS 原生工具，涵盖通知、剪贴板、截屏、朗读、防休眠、深色模式、Spotlight、快捷指令、AppleScript 与 Safari 标签页，零依赖。
 - [WU079/dsh-douyin-subagent](https://github.com/WU079/dsh-douyin-subagent) — 让子代理在谷时刷抖音、读评论并汇报；附带发作品/回评论的 dy_* 工具（评论从已登录页面带签名直发，不依赖 IM ticket）、每日配额定时，以及设置页「刷抖音」里的控制面板（总开关、自动模式、谷时窗口、每天轮数、报告详细度）。偏 Windows；搜索与评论依赖另装的 douyin-mcp 可执行文件（yunsur/douyin-mcp 的 Release，路径经 dy_config 的 mcpExe 设置）及 Edge/Chromium 登录；回评论需要开了 CDP 端口的已登录浏览器；发作品还需多数账号没有的额外凭据。
 - [wufengwind/dsh-plugin-dm-ops](https://github.com/wufengwind/dsh-plugin-dm-ops) — 需 JDK 11+、达梦 JDBC 驱动与目标实例的 SSH 访问。巡检达梦数据库实例、评估安全与恢复条件，生成支持筛选和共享证据的报告。
 - [wulun811/LiuHe#bundle](https://github.com/wulun811/LiuHe/tree/master/malong/dsh/bundle) — 将 LiuHe MCP 代码工具集（44 个工具）桥接进 dsh web：repo_map、符号搜索、带容错匹配的 edit_batch、带撤销日志的事务性编辑，以及确定性质量门禁——由崩溃隔离的 Rust tree-sitter 解析守护进程和 SQLite 索引支撑。
@@ -7567,6 +7568,7 @@ dsh plugin --profile web add dshmarket
 - [AK-blank/dsh-plugin-mac-notify](https://github.com/AK-blank/dsh-plugin-mac-notify) — 会话结束、或 Agent 卡在等你回答／批准／排错时，发一条 macOS 系统通知；横幅带上最后一条回复并播放你的系统提示音，点击即可回到 DSH 页面。
 - [amlyczz/dsh-lark-link](https://github.com/amlyczz/dsh-lark-link) — DeepSeek Harness 的高可靠飞书/Lark 桥接：扫码一键认证、卡片化命令与意图确认、at-least-once 零丢失出站队列、多媒体出入站、/doctor 会话日志 ZIP，并复用 DSH Web GUI 把会话归入正确工作区。
 - [andyfan1094/dsh-feishu](https://github.com/andyfan1094/dsh-feishu) — 接入飞书自建应用，把每个飞书会话映射到独立的 DSH Agent，经卡片 JSON 2.0 流式回复，不可用时回退纯文本。
+- [anze225/dsh-notify-sound](https://github.com/anze225/dsh-notify-sound) — 一轮回复结束、或需要你介入（授权、提问、计划评审）时，播放提示音（与 OpenAI Codex 同款）；忽略 subagent 子会话，可静音与调节音量。
 - [aokamoaki/dsh-notify](https://github.com/aokamoaki/dsh-notify) — 对话完成通知：回合完成/出错/目标完成/提问/审批时弹出 Windows toast 与提示音，仅后台提醒，会话头部铃铛即控制中心。
 - [Archaofan/dsh-notify-relay](https://github.com/Archaofan/dsh-notify-relay) — 把 DSH 的八类生命周期事件过去重、免打扰、摘要合批三道关后外发到七个通道。严重度映射到 Bark、ntfy、Telegram 和 webhook 真正支持的字段；失败投递带抖动退避重试并可跨重启恢复；单通道熔断避免反复敲一个已死的地址；自检发现中继降级时主动报告而不是静默。
 - [baigeiy/dsh-windows-notifications](https://github.com/baigeiy/dsh-windows-notifications) — Windows 原生提问与完成通知，支持自定义标题和图标、聚焦免打扰、确认收到及切回已有 DSH 标签页，首次使用需本机初始化。
