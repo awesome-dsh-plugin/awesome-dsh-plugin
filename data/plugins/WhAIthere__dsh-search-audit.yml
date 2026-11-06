@@ -1,0 +1,6 @@
+url: https://github.com/WhAIthere/dsh-search-audit
+name: WhAIthere/dsh-search-audit
+category: usage
+description:
+  en: 'Read-only observer of native DeepSeek search model calls: appends each call token usage to a JSONL file so accounting plugins can price it. Requests and responses are not modified.'
+  zh: '只读观察原生 DeepSeek 搜索的模型调用，把每次调用的 token 用量追加到 JSONL 文件，供统计类插件计价；不修改请求与响应。'

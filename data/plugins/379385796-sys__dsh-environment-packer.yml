@@ -2,6 +2,8 @@ url: https://github.com/379385796-sys/dsh-environment-packer
 name: 379385796-sys/dsh-environment-packer
 category: tools
 description:
-  en: Private Windows DSH environment ZIPs for plugin configuration, Session, Workspace, identified external memory and Skills; v0.6.0 standalone recovery plans cross-version migration into fresh targets, checks dependencies and schemas, and validates startup before commit.
-  zh: 为 Windows DSH 创建包含插件配置、Session、Workspace、已识别外部记忆和 Skills 的私人冷备份；v0.6.0 独立恢复助手规划跨版本迁移到全新目标，检查依赖与数据格式，并在启动验证后提交。
-tarball: https://github.com/379385796-sys/dsh-environment-packer/releases/download/v0.6.0/dsh-environment-packer-0.6.0.tgz
+  en: Private Windows DSH cold archives for plugin configuration, Session, Workspace, identified memory and Skills; v0.6.2 preserves readable data while reporting critical coverage gaps and dependency conflicts, blocks unsafe recovery before staging, and keeps ZIP integrity separate from unverified business recovery.
+  zh: Windows DSH 私人冷备份，包含插件配置、Session、Workspace、已识别记忆和 Skills；v0.6.2 保全可读数据并显式报告关键覆盖缺口及依赖冲突，在暂存前阻止不可提交的恢复。ZIP 完整性通过不代表完整业务恢复已验证。
+tarball: https://github.com/379385796-sys/dsh-environment-packer/releases/download/v0.6.2/dsh-environment-packer-0.6.2.tgz
+# TGZ SHA-256: 9d8b53f442270382de5b82ee87c369f5606628ea19602a419cd14e5637d70c2f
+# Checksums: https://github.com/379385796-sys/dsh-environment-packer/releases/download/v0.6.2/SHA256SUMS.txt

@@ -4,6 +4,6 @@ url: https://github.com/BlueOcean3214/dsh-handoff-session
 name: BlueOcean3214/dsh-handoff-session
 category: session
 description:
-  en: 'Durable session handoff for DeepSeek Harness: pressure-aware handoff docs, a searchable transcript, and automatic continuation in a fresh Session.'
-  zh: 为 DeepSeek Harness 提供会话交接：上下文压力到阈值时写交接文档与可搜索转录，并在新会话里自动继续。
+  en: 'Durable session handoff for DeepSeek Harness: pressure-aware handoff docs, a searchable transcript, and automatic continuation in a fresh Session. The status pip beside the input box shades from green to blue to amber to red as pressure rises.'
+  zh: 为 DeepSeek Harness 提供会话交接：上下文压力到阈值时写交接文档与可搜索转录，并在新会话里自动继续；输入框下方状态点随压力从绿 → 蓝 → 琥珀 → 红逐级变色。
 icon: https://raw.githubusercontent.com/BlueOcean3214/dsh-handoff-session/main/assets/icon-180.png

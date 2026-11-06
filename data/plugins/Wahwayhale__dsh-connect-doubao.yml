@@ -1,6 +1,27 @@
+# Submission for awesome-dsh-plugin
+#
+# Target path:
+#   data/plugins/Wahwayhale__dsh-connect-doubao.yml
+#
+# Rules this file satisfies (see MARKET-SUBMISSION.md §2.2):
+#   R1  `url` must match the repository URL EXACTLY (no `.git` suffix here)
+#   R2  `dsh.bundle` manifest is declared in package.json + repo root has cordis.patch.yml  [done]
+#   R11 official @deepseek-ai/* packages use peerDependencies                            [done]
+#   *   only `description.en` is required; `zh` is optional
+#   *   `description.en` must end with a period
+#   *   any value containing ": " MUST be quoted, or the YAML parser fails
+#
+# Validate locally before opening the PR:
+#   node scripts/validate-submission.mjs
+#
+# This copy is the source of truth for the upstream entry: it was submitted as
+# PR #12157 against awesome-dsh-plugin, and editing the file upstream without
+# editing this one makes the two drift. Keep them identical.
+
 url: "https://github.com/Wahwayhale/dsh-connect-doubao"
 name: "Wahwayhale/dsh-connect-doubao"
 category: model
 description:
-  en: 'Reuses the sign-in already held by the local Doubao desktop app as a DeepSeek Harness model provider, and adds a read-only quota view for the 5-hour and weekly windows. Windows x64 only: the credential is decrypted with DPAPI.'
-  zh: '复用本机豆包桌面客户端已有的登录态，作为 DeepSeek Harness 的模型 provider，并提供 5 小时限额与周额度的只读额度概览。仅 Windows x64：凭据解密依赖 DPAPI。'
+  en: 'Reuses the sign-in already held by the local Doubao desktop app as a DeepSeek Harness model provider — chat, Seedream image generation, and a live quota panel covering the 5-hour, weekly and activity-grant windows, showing what is LEFT rather than what is used. Windows x64 only, since the credential is decrypted with DPAPI.'
+  zh: '复用本机豆包桌面客户端已有的登录态，作为 DeepSeek Harness 的模型 provider：对话、Seedream 生图，以及一块实时额度看板，涵盖 5 小时、周与活动赠送额度，显示「还剩多少」而不是「已用多少」。仅 Windows x64：凭据解密依赖 DPAPI。'
+icon: https://raw.githubusercontent.com/Wahwayhale/dsh-connect-doubao/main/docs/assets/dsh-connect-doubao-icon.png

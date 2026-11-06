@@ -1,0 +1,6 @@
+url: https://github.com/WilShi/dsh-ssh-workspace
+name: WilShi/dsh-ssh-workspace
+category: remote
+description:
+  en: 'Map a remote server directory over SSH and SFTP into a controlled local cache workspace, so the model, agent, session and memory keep running on the local machine.'
+  zh: 通过 SSH 与 SFTP 把服务器目录映射为受控的本地缓存工作区，模型、Agent、会话与记忆仍在本机运行。

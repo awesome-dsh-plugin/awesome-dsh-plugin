@@ -5,4 +5,4 @@ description:
   en: 'Save conversations, manage notes with images, export files, and sync across devices through your own private GitHub repository.'
   zh: '保存会话、管理图文笔记、导出文件，通过自己的 GitHub 私有仓库跨设备同步。'
 icon: https://raw.githubusercontent.com/StarWind97/dsh-github-notebook/main/assets/icon-180.png
-tarball: https://github.com/StarWind97/dsh-github-notebook/releases/download/v0.5.0/dsh-github-notebook-0.5.0.tgz
+tarball: https://github.com/StarWind97/dsh-github-notebook/releases/download/v0.5.1/dsh-github-notebook-0.5.1.tgz

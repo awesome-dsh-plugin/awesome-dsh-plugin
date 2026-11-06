@@ -1,6 +1,7 @@
 url: https://github.com/JupiterWalker/dsh-section
 name: JupiterWalker/dsh-section
 category: ui
+tarball: https://github.com/JupiterWalker/dsh-section/releases/download/v0.1.0/local-dsh-section-0.1.0.tgz
 icon: https://raw.githubusercontent.com/JupiterWalker/dsh-section/main/assets/icon-180.png
 description:
   en: 'Cross-project session grouping for the DSH sidebar: define named sections, assign sessions from any project into them, then collapse, rename, archive or move a whole project in one action; a toggle in the Sections panel swaps the host session browser for the section tree and restores it on demand, and each row flags live work or a completion you have not looked at yet.'
