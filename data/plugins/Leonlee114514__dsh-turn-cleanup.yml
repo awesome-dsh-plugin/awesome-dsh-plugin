@@ -1,0 +1,7 @@
+url: https://github.com/Leonlee114514/dsh-turn-cleanup
+name: Leonlee114514/dsh-turn-cleanup
+category: dev
+tarball: https://github.com/Leonlee114514/dsh-turn-cleanup/releases/latest/download/dsh-turn-cleanup.tgz
+description:
+  en: 'Blocks the end of a turn while temporary files from that turn are still lying around: it registers a listener on the serial agent/turn-stopping hook and, if anything is left, steers the model with the file list and two ways out — delete them, or justify each one and move it somewhere deliberate. Two sources, both narrow: the .agent-tmp/ convention directory under the session cwd, and the paths this turn actually wrote, captured through the fs/write-intent hook. A file is only reported when all three hold — written this turn, matching a temp-file pattern, still present — so existing junk in the workspace is never resurrected as a complaint. One steer per turn, subagent sessions skipped, nothing deleted by the plugin itself, and the check is readdir plus stat only.'
+  zh: '临时文件没清完，这一轮就结束不了：在串行的 agent/turn-stopping 钩子上挂一个监听器，发现残留就把文件清单 steer 回模型，并给两条出路——删掉，或者逐条说明理由再挪到明确位置。候选来源只有两处且都很窄：会话 cwd 下的 .agent-tmp/ 约定目录，以及本轮经 fs/write-intent 钩子真实写入的路径。只有同时满足三条才报——本轮写过、命中临时件模式、文件此刻还在——所以工作区里早就躺着的垃圾不会被翻出来当成本轮的问题。每轮只拦一次，子会话跳过，插件自己不删任何文件，检查只做 readdir 与 stat。'
