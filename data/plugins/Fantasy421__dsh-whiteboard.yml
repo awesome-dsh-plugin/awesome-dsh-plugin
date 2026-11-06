@@ -4,4 +4,4 @@ category: ui
 description:
   en: Shared editable Excalidraw whiteboards with per-session multi-board management, quick navigation, incremental AI edits, curves, polylines, and image exports.
   zh: 人机共享的可编辑 Excalidraw 白板，支持同会话多白板管理、快速跳转、AI 增量编辑、曲线折线和图片导出。
-tarball: https://github.com/Fantasy421/dsh-whiteboard/releases/download/v0.2.0/dsh-whiteboard-0.2.0.tgz
+tarball: https://github.com/Fantasy421/dsh-whiteboard/releases/download/v0.2.1/dsh-whiteboard-0.2.1.tgz
