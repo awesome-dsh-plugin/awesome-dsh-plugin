@@ -4,5 +4,5 @@ url: https://github.com/siml1169/ShyPie/tree/main/plugins/dsh-privacy-gate
 name: siml1169/ShyPie#dsh-privacy-gate
 category: security
 description:
-  en: DSH host bundle for the ShyPie privacy-first workflow: extracts attached images and PDF/Office files locally before they enter the session log; default filter mode keeps text local (optional local masking); blocks unmaskable media/BLOB; provides local privacy_extract, privacy_ocr, privacy_scan and privacy_rehydrate tools; denies read_image and binary/document reads outside allowPaths; and enforces a fail-closed llm/stream egress guard before DSH dispatches a model request.
+  en: 'DSH host bundle for the ShyPie privacy-first workflow: extracts attached images and PDF/Office files locally before they enter the session log; default filter mode keeps text local (optional local masking); blocks unmaskable media/BLOB; provides local privacy_extract, privacy_ocr, privacy_scan and privacy_rehydrate tools; denies read_image and binary/document reads outside allowPaths; and enforces a fail-closed llm/stream egress guard before DSH dispatches a model request.'
   zh: 面向 ShyPie 隐私优先工作流的 DSH 主机插件：在写入会话日志前本地提取附件图片及 PDF/Office 文件；默认 filter 模式保留本地文本（可选用本地掩码）；阻断无法掩码的媒体/BLOB；提供本地 privacy_extract、privacy_ocr、privacy_scan、privacy_rehydrate 工具；拒绝 read_image 及 allowPaths 之外的二进制/文档读取；并在 DSH 发出模型请求前执行失败关闭的 llm/stream 出口检查。
