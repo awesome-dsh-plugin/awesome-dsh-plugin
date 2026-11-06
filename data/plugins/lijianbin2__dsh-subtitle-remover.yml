@@ -1,0 +1,7 @@
+url: https://github.com/lijianbin2/dsh-subtitle-remover
+name: lijianbin2/dsh-subtitle-remover
+category: ui
+description:
+  en: 'Sidebar page that removes burned-in subtitles from a video with a local video-subtitle-remover checkout: frame preview with a start/end range, drag-drawn regions (up to six), automatic region detection reviewed by a DSH chat model, live before/after comparison, and open-file/open-folder on the result. Requires the video-subtitle-remover checkout with its models and a Python environment with torch, paddle and OpenCV.'
+  zh: '在 DSH 侧边栏里调用本机 video-subtitle-remover 引擎擦除视频硬字幕：画面帧按开始/结束时段预览、拖拽框选最多六个区域、自动识别字幕带并由 DSH 模型复核、处理中实时前后对比，成片可一键打开或定位到文件夹。需预先准备 video-subtitle-remover 仓库（含模型）与装有 torch、paddle、OpenCV 的 Python 环境。'
+icon: https://raw.githubusercontent.com/lijianbin2/dsh-subtitle-remover/main/assets/icon-256.png
