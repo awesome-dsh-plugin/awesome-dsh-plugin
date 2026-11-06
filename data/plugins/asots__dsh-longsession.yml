@@ -2,5 +2,5 @@ url: https://github.com/asots/dsh-longsession
 name: asots/dsh-longsession
 category: ui
 description:
-  en: 'Adds a “Compact page history” button to the session header: it unloads the history already rendered by the page and keeps the last two turns, with thresholds and request caps on a Settings → Long session page; chat records are not deleted.'
-  zh: '在会话标题栏添加「精简页面历史」按钮：卸载页面已渲染的旧历史、只保留最近两轮，阈值与历史请求上限可在 设置 → 长会话 调整；不会删除聊天记录。'
+  en: 'Adds a reversible “Compact page” toggle to the session header: it unloads the history already rendered by the page and keeps the last two turns, then shows “Page compacted”; clicking again restores the saved window via loadOlder(). Thresholds and history-request caps live on Settings → Long session; chat records are not deleted.'
+  zh: '在会话标题栏添加一个可逆的「精简页面」开关：未精简时点击会卸载页面已渲染的旧历史、只保留最近两轮，按钮变为「已精简页面」；再点会通过 loadOlder() 还原之前的窗口。阈值与历史请求上限在 设置 → 长会话；不会删除聊天记录。'
