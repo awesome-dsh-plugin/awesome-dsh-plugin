@@ -1,8 +1,0 @@
-url: https://github.com/SilverKurali/dsh-phone-tunnel
-name: SilverKurali/dsh-phone-tunnel
-category: remote
-description:
-  en: 'Opens a port on the mesh/VPN interface from inside the running DSH process: the phone reaches the same web UI you are using, through one instance, with no second dsh and no SSH.'
-  zh: '在正在运行的 DSH 进程内部把端口开到组网网卡上：手机访问的就是你正在用的那个 Web 界面，单实例、单份会话列表，不用第二个 dsh，也不用 SSH。'
-icon: https://raw.githubusercontent.com/SilverKurali/dsh-phone-tunnel/main/assets/icon-180.png
-tarball: https://github.com/SilverKurali/dsh-phone-tunnel/releases/latest/download/dsh-phone-tunnel.tgz
