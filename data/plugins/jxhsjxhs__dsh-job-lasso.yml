@@ -1,0 +1,7 @@
+url: https://github.com/jxhsjxhs/dsh-job-lasso
+name: jxhsjxhs/dsh-job-lasso
+category: tools
+description:
+  en: Daily remote job hunting across BOSS Zhipin, Liepin, LinkedIn and other Chinese job boards, scored against a saved profile and shown in a Harness panel.
+  zh: 每天从 BOSS直聘、猎聘、LinkedIn 等招聘站抓取远程岗位，按求职画像打分并显示在 Harness 面板里。
+icon: https://raw.githubusercontent.com/jxhsjxhs/dsh-job-lasso/main/assets/icon-180.png
