@@ -3505,6 +3505,7 @@ dsh plugin --profile web add dshmarket
 - [CAI-MH/dsh-steer](https://github.com/CAI-MH/dsh-steer) — 在模型思考过程中随时向当前会话注入纠偏/引导信息，或打断当前回合。
 - [CaiBai-Fish/dsh-continuechat](https://github.com/CaiBai-Fish/dsh-continuechat) — 从断点继续对话：/continue 命令与消息操作行按钮让模型接着被打断的回答往下写，覆盖手动停止、模型请求失败、输出 token 上限截断与崩溃恢复四种情形，续写提示在被回答后从对话框中回收。
 - [caoqinnan-web/organize-workspace-sessions](https://github.com/caoqinnan-web/organize-workspace-sessions) — 整理 DeepSeek Harness 工作区会话，按 类别｜主题 重命名并给出归档、改名与待判断建议。
+- [CassiaTw1g/dsh-new-session](https://github.com/CassiaTw1g/dsh-new-session) — 给 DeepSeek Harness 的模型一个真正能用的「新开对话」工具：在当前工作区建会话、投递交接消息、带上一段对话的只读引用，并把 Web UI 自动切过去。
 - [Castor6/dsh-auto-workspace](https://github.com/Castor6/dsh-auto-workspace) — 为 dsh 提供无项目聊天：不选工作区创建的会话会获得自己的目录（~/Documents/DSH/<日期>/chat-NN），重新打开会话时复用，并留在「未分组」而不会变成侧栏项目；新建会话的 Hero 上新增悬浮清除徽标与「不在工作区中工作」一行，另有一个仅存在于浏览器端的哨兵工作区，让该 Hero 及其输入框保持可用。
 - [CatLollipop/dsh-parallel-sessions](https://github.com/CatLollipop/dsh-parallel-sessions) — DeepSeek Harness 并行会话协调：列出并行会话、在会话之间转发带发起方归属的消息，并在任务阶段冲突时暂停或恢复另一个会话。
 - [CC19990113/dsh-plugin-sessiongraph](https://github.com/CC19990113/dsh-plugin-sessiongraph/tree/main/packages/bundle) — 本机全部会话的全文检索：sessiongraph 跨工作区查找对话，中文两字词也能命中，sessiongraph_index 负责建索引。
