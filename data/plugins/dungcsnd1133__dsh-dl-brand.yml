@@ -1,0 +1,6 @@
+url: https://github.com/dungcsnd1133/dsh-dl-brand
+name: dungcsnd1133/dsh-dl-brand
+category: ui
+description:
+  en: Replaces the sidebar brand mark with a custom one and registers a Vietnamese locale covering 45 namespaces and 1897 interface strings, falling back to English for anything untranslated.
+  zh: 用自定义图标替换侧边栏品牌标识，并注册一套越南语语言包，覆盖 45 个命名空间、1897 条界面文案，未翻译处回退英文。
