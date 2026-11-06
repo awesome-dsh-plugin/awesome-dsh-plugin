@@ -1,0 +1,7 @@
+url: https://github.com/illli-studio/mory/tree/main/packages/dsh-mory
+name: 'illli-studio/mory#dsh-mory'
+category: memory
+description:
+  en: 'Personal memory sidebar and agent tools for Mory, with search, editing and optional GitHub/Gitee synchronization.'
+  zh: 'Mory 个人记忆侧栏与智能体工具，支持记忆检索、编辑及可选的 GitHub/Gitee 同步。'
+icon: https://raw.githubusercontent.com/illli-studio/mory/main/packages/dsh-mory/assets/market-icon.png
