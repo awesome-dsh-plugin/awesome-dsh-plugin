@@ -1,0 +1,6 @@
+url: https://github.com/QIC-9821/dsh-wechat-pad
+name: QIC-9821/dsh-wechat-pad
+category: notify
+description:
+  en: "Connect personal WeChat through a self-hosted iPad-protocol backend to DeepSeek Harness: reply in DMs, speak in groups only when mentioned."
+  zh: "通过自建 iPad 协议后端把个人微信接到 DeepSeek Harness：私聊必回，群里只在被 @ 时说话。"
