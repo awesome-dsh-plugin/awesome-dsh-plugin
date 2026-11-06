@@ -4,4 +4,4 @@ category: session
 description:
   en: 'Right-sidebar session timeline: fishbone layout of every workspace session with native fork/handoff lineage, manual drag links, branch fan-outs, archived-session display and per-turn detail browsing.'
   zh: '右侧栏会话时间线：以鱼骨布局展示工作区全部会话，含原生 fork/handoff 血缘、手工拖拽衔接、分支扇出、归档会话显示与逐轮详情浏览。'
-tarball: https://github.com/columforge/dsh-session-timeline/releases/download/v0.0.35/columforge-session-timeline-0.0.35.tgz
+tarball: https://github.com/columforge/dsh-session-timeline/releases/download/v0.0.36/columforge-session-timeline-0.0.36.tgz
