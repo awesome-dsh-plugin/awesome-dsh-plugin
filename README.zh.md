@@ -641,6 +641,7 @@ dsh plugin --profile web add dshmarket
 - [flyhigao/dsh-sticky-notes](https://github.com/flyhigao/dsh-sticky-notes) — DSH 工作区极简便签：在各个工作区保存多张 Markdown 便签，记录你的想法和项目进程。
 - [foooold/dsh-message-nav](https://github.com/foooold/dsh-message-nav) — 为 DeepSeek Harness Web UI 添加 Codex 风格的消息导航轨道，方便在长会话中快速定位历史提问。
 - [foreee/dsh-app-restart](https://github.com/foreee/dsh-app-restart) — 在桌面应用设置中新增「应用重启」区块，优雅退出并自动重启整个应用。
+- [foreee/dsh-net-dashboard](https://github.com/foreee/dsh-net-dashboard) — 侧边栏实时网络巡检看板：接口与 IP/MAC、流量速率、TCP/UDP 会话数、延迟曲线，每 3 秒刷新。
 - [ForsakenDelusion/dsh-branchnest](https://github.com/ForsakenDelusion/dsh-branchnest) — 为 DSH 项目提供会话画布，支持对话卡片连线、选中文字创建追问分支、笔记和文档式阅读。
 - [FragrantLotus/dsh-plugin-chinese](https://github.com/FragrantLotus/dsh-plugin-chinese) — 给只提供英文简介的已安装 DSH 插件自动补上中文简介，启动时以及每次插件变动后各跑一次，插件名称一律不改。原本已导出语言包的插件刷新页面即生效，原本没有语言包导出的也会自动补上：内存注入层即时生效，写入磁盘的语言包需重启一次。
 - [FragrantLotus/dsh-sidebar-entries](https://github.com/FragrantLotus/dsh-sidebar-entries) — dsh 网页端侧边栏整体增强：长按拖拽重排面板图标栏，一个箭头即可整栏折叠；面板列表与置顶区都按整行限制高度（占侧栏 30%，向下取整行）；置顶会话区镜像原生行的实时状态（转圈、待回复、相对时间）；顶部会话视图标签可拖拽换位；归档会话按时间新到旧沉到每组末尾；分叉出的子会话自动跟进父会话所在的置顶区；并把任意插件注册在侧栏底部的入口提升到同一栏内。每个子系统各自带启动守卫，单个失败只返回 null，不影响整个插件挂载。
@@ -8021,6 +8022,7 @@ dsh plugin --profile web add dshmarket
 - [caizhihaoczh/dsh-profile-multica](https://github.com/caizhihaoczh/dsh-profile-multica) — 通过版本化 JSONL 进程协议将 Multica 接入 DeepSeek Harness。
 - [Cavan-Ou/dsh-observation-journal](https://github.com/Cavan-Ou/dsh-observation-journal) — DeepSeek Harness 零侵入运行事实遥测：每个会话自动把任务/模型档位/工具/失败/时长/状态写入人机共读观测卡并附统计区（纯观察者——零工具、零 LLM、零注入）。
 - [CC19990113/dsh-plugin-codegraph](https://github.com/CC19990113/dsh-plugin-codegraph/tree/main/packages/bundle) — tree-sitter 代码图谱：codegraph 查声明、调用者、被调用关系、变更影响与调用路径，codegraph_index 建索引，覆盖 18 种语言。
+- [CC19990113/dsh-plugin-dbgraph](https://github.com/CC19990113/dsh-plugin-dbgraph/tree/master/packages/bundle) — 把数据库结构提前索引好：dbgraph 将远端库的 catalog 索引到本地 SQLite，结构问题离线回答、取数只发一次查询。
 - [ccneedb/dsh-information-environment-governance](https://github.com/ccneedb/dsh-information-environment-governance) — 治理代理在项目中持续接触的持久信息与项目约束：项目定位与范围、信息与文档生命周期、持久工作区变更；通过一个附加的系统提示章节与确定性的运行时检查落地。
 - [cdxiaodong/dsh-llm-inspector](https://github.com/cdxiaodong/dsh-llm-inspector) — 统一 LLM 请求/响应检查器：调 reasoning effort、外部思考(think)导出、流量与包分析。
 - [CH4ACKO3/dsh-render-engine#code-render](https://github.com/CH4ACKO3/dsh-render-engine/tree/main/packages/code-render) — 面向 DSH Web 插件的转义与主题响应 HTML 代码块渲染服务，基于结构化语法高亮 token，并保留源码换行符。
