@@ -1,0 +1,6 @@
+url: https://github.com/theBeautifulIce/dsh-Immunity-memory/tree/main/packages/memory-plugin
+name: theBeautifulIce/dsh-Immunity-memory#memory-plugin
+category: memory
+description:
+  en: 'Cross-session long-term memory for DSH: eight memory layers, four notebooks, hybrid SQLite FTS5/vector/graph retrieval, agent-driven automatic capture, write lifecycle hooks, optional write audit, project spaces, forgetting and a visual management page.'
+  zh: '给 DSH 的跨会话长期记忆：八层记忆、四本记事本、FTS5/向量/图谱混合检索、智能体驱动的自动捕获、写入生命周期 Hook、可选写入审计、项目空间、遗忘曲线与可视化管理页。'
