@@ -1,0 +1,7 @@
+url: https://github.com/robinliang0829-lgtm/dsh-cloud-sync
+name: robinliang0829-lgtm/dsh-cloud-sync
+category: session
+description:
+  en: "Ship OpenTelemetry GenAI observability and multi-device cloud state sync from one DSH bundle. It reuses the LoongSuite observability plugin (traces + metrics for sessions, agent loop, LLM and tool lifecycle), and adds a WebSocket client that pushes full session event logs (header + snapshotEvents) to a cloud relay so different local DSH instances share state. On connect it pulls and rebuilds the other devices' sessions automatically (cross-device resume). Zero third-party runtime dependencies in the plugin itself; the relay is a small Node.js server included in the repo."
+  zh: "一个 DSH bundle 同时提供 OpenTelemetry GenAI 可观测性与多设备云端状态同步：复用 LoongSuite 可观测性插件（为会话、Agent 循环、LLM 与工具生命周期产出 trace/metric），并新增 WebSocket 客户端把完整会话事件日志（header + snapshotEvents）推送到云端中继，让不同本地端的 DSH 状态互通；连接时自动拉回并重建其他设备的会话（跨设备续接）。插件本体零第三方运行时依赖；中继是仓库内附带的小型 Node.js 服务。"
+icon: https://raw.githubusercontent.com/robinliang0829-lgtm/dsh-cloud-sync/main/icon.svg
