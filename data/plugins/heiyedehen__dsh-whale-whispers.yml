@@ -1,0 +1,6 @@
+url: https://github.com/heiyedehen/dsh-whale-whispers
+name: heiyedehen/dsh-whale-whispers
+category: ui
+description:
+  en: "A tab in the conversation view bar that keeps the lines your agent wanted to keep, with tools that let it add, list and remove them."
+  zh: "会话视图标签栏里的「鲸语」页：收着 agent 想留下的句子，并带三个工具让它自己增、查、删。"

@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/gov-config-zj
+name: liuhange789/data-asset-inspector#gov-config-zj
+category: tools
+description:
+  zh: "浙江省政务数据巡检配置包 — 含浙政办/浙委改等浙江省地方政策依据与标准词表，提供配置加载与校验运行时"
+  en: "Zhejiang provincial government data inspection config pack with runtime config loading and validation."

@@ -1,0 +1,6 @@
+url: https://github.com/456erddgr/dsh-lag-guard
+name: 456erddgr/dsh-lag-guard
+category: ui
+description:
+  en: 'Clamps the session history page request to 120 messages and replaces request/header tool schemas larger than 200k characters with an empty array before React renders them, so long sessions open without freezing the transcript.'
+  zh: '把打开会话时的历史取数收到 120 条消息，并在进入 React 之前把超过 20 万字符的工具 schema 换成空数组，让长会话打开时不再卡死界面。'

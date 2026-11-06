@@ -1,0 +1,6 @@
+url: https://github.com/sqzw-x/dsh-plugins/tree/main/packages/dsh-lan-link
+name: sqzw-x/dsh-plugins#dsh-lan-link
+category: remote
+description:
+  en: 'LAN access for the harness process: writes the authenticated links for the harness port, one per local IPv4 address, to a token file and registers DSH_LAN_LINK in the shell environment, and can run a gateway on a fixed LAN port that holds the browser session on this machine, so devices need no token; forwarded requests get Host and Origin rewritten for the same-origin guard, and a host-claim marker is injected so the page renders as the full desktop UI instead of remote-visitor mode. Devices are admitted by CIDR, with optional Basic auth.'
+  zh: '把当前 harness 进程的局域网访问交给其他设备：把 harness 端口的已认证链接按本机 IPv4 地址写进一个 token 文件，并在 shell 环境注册 DSH_LAN_LINK；可选的网关在固定局域网端口上对外服务，会话凭据留在本机、设备不需要 token，转发时重写 Host 与 Origin 以通过宿主的同源校验，并注入主机声明让页面按完整桌面界面渲染而不是远程访客模式。设备按 CIDR 放行，可选 Basic 认证。'

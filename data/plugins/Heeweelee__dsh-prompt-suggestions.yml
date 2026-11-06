@@ -1,0 +1,6 @@
+url: https://github.com/Heeweelee/dsh-prompt-suggestions
+name: Heeweelee/dsh-prompt-suggestions
+category: ui
+description:
+  en: 'Composer suggestions for the DSH chat input: Up / Down step back and forth through every prompt sent in the current session — read from the session event log, so a message accepted from a prediction or sent by queueing counts too — Ctrl+Up opens a searchable history picker, and grey ghost text predicts the next message, accepted with the Right arrow. Every key only edits the draft; nothing is ever sent automatically.'
+  zh: 'DSH 输入框的输入建议：↑ / ↓ 逐条回滚本会话发过的全部提问（读会话事件日志，采纳预测后发送、排队发送的也算），Ctrl+↑ 打开可搜索的历史面板，灰色幽灵文字预测下一句，→ 采纳。任何按键都只改草稿，不会自动发送。'

@@ -1,0 +1,5 @@
+url: https://github.com/xingyanghaifu/dsh-reqtrace
+name: xingyanghaifu/dsh-reqtrace
+category: agi
+description:
+  en: "Requirement-to-evidence audit for DSH sessions: maps each requirement to tool calls, files and commands, records per-requirement verification, and sends missing items back to the agent."

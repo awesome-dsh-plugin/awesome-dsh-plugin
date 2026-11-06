@@ -1,0 +1,7 @@
+url: https://github.com/apollodsh/dsh-session-forward
+name: apollodsh/dsh-session-forward
+category: session
+description:
+  en: "Share a DSH conversation without making the recipient install anything — copy a 24-hour LAN link, export a self-contained web page they can open offline, or import a .dshchat file as a real resumable session when both sides run the plugin."
+  zh: "把 DSH 会话转发给别人：复制 24 小时有效的局域网链接、导出对方双击即读的自包含网页，或两边都装插件时用 .dshchat 文件导入成一条可继续对话的真实会话。"
+icon: https://raw.githubusercontent.com/apollodsh/dsh-session-forward/main/docs/images/icon-180.png

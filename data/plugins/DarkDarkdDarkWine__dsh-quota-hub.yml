@@ -1,0 +1,6 @@
+url: https://github.com/DarkDarkdDarkWine/dsh-quota-hub
+name: DarkDarkdDarkWine/dsh-quota-hub
+category: usage
+description:
+  en: 'Quota monitor for GLM, MiniMax, Kimi and DeepSeek coding plans — per-window usage, reset countdowns and manual refresh in the Web GUI.'
+  zh: 'GLM、MiniMax、Kimi、DeepSeek 编程套餐额度监控——Web GUI 内显示各窗口用量、重置倒计时并支持手动刷新。'

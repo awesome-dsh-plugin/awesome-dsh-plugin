@@ -1,0 +1,7 @@
+url: https://github.com/ikun1031/dsh-effort-dial-plus
+name: ikun1031/dsh-effort-dial-plus
+category: ui
+description:
+  en: "A merge of the dsh-effort-dial card structure and the reasoning-slider gradient/particle effects: a Codex-style reasoning-effort card in the composer with one control for model and effort, per-level accent colors, a quota line on the top level, and a blue-purple gradient with drifting particles. It takes over the composer model slot, so it cannot be enabled alongside dsh-effort-dial or reasoning-slider."
+  zh: "合并 dsh-effort-dial 的卡片结构与 reasoning-slider 的渐变/粒子效果：输入框里的 Codex 风格推理强度卡片，一个控件同时管理模型与档位，档位逐级变色，最高档显示额度提示并切换为蓝紫渐变与流动粒子。它接管输入框模型槽位，不能与 dsh-effort-dial、reasoning-slider 同时启用。"
+icon: https://raw.githubusercontent.com/ikun1031/dsh-effort-dial-plus/main/assets/icon-180.png

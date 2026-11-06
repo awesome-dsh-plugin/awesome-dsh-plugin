@@ -1,0 +1,8 @@
+url: https://github.com/jeff072333/dsh-live-spend
+name: jeff072333/dsh-live-spend
+category: usage
+description:
+  en: Floating card above the composer with the conversation's spend, the account balance and the current peak/off-peak billing period, plus a per-answer cost figure under every finished turn.
+  zh: 输入框上方浮动一张卡片，显示本次对话花费、账户余额与当前峰谷时段，并在每条回答末尾显示该轮消耗。
+icon: https://raw.githubusercontent.com/jeff072333/dsh-live-spend/main/assets/icon-256.png
+tarball: https://github.com/jeff072333/dsh-live-spend/releases/download/v0.1.0/dsh-live-spend-0.1.0.tgz

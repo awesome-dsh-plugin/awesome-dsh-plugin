@@ -1,0 +1,7 @@
+url: https://github.com/AaronOhO/dsh-plugin-selection-comments
+name: AaronOhO/dsh-plugin-selection-comments
+category: ui
+description:
+  en: "Selection comments on assistant output plus an independent side-chat window in the DSH Web GUI: annotate model output with floating comments, send those comments with the next message, and continue a question in a separate forked conversation that stays out of the sidebar."
+  zh: "在 DSH Web 界面中为大模型输出添加划词评论，评论可随下一条消息一起发送；并可在独立浮动的分支会话窗口中继续提问，该会话不会出现在侧边栏。"
+icon: https://raw.githubusercontent.com/AaronOhO/dsh-plugin-selection-comments/main/assets/icon-180.png

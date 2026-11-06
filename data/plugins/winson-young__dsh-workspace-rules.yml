@@ -1,0 +1,7 @@
+url: https://github.com/winson-young/dsh-workspace-rules
+name: winson-young/dsh-workspace-rules
+category: dev
+description:
+  en: 'A settings page that edits the current project''s CLAUDE.local.md, the private per-project instruction file DSH''s built-in loader reads at the start of a session; the file stays out of git.'
+  zh: 在设置面板中编辑当前项目的私有指令文件 CLAUDE.local.md——DSH 内置加载器会在会话开始时读取它，文件同时被排除在 git 之外。
+icon: https://raw.githubusercontent.com/winson-young/dsh-workspace-rules/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/hotkong/dsh-home-assistant-panel
+name: hotkong/dsh-home-assistant-panel
+category: tools
+description:
+  en: 'Read-only Home Assistant panel for DeepSeek Harness: a full status overview, a compact right-sidebar card, a system-prompt environment block, one read-only ha_status tool, and optional browser notifications on Home Assistant down/recover. Configure the instance URL and token once; it does not control devices or change Home Assistant configuration.'
+  zh: 'DeepSeek Harness 的 Home Assistant 只读面板：完整状态总览、右侧栏速览卡、系统提示词环境块、一个只读 ha_status 工具，以及可选的 HA 不可用/恢复浏览器通知。配置一次实例地址与令牌；不控制设备，也不修改 Home Assistant 配置。'

@@ -1,0 +1,7 @@
+url: https://github.com/SZUold8/dsh-video-learning
+name: SZUold8/dsh-video-learning
+category: vision
+description:
+  en: "Video study toolkit for DeepSeek Harness: fetch a public Bilibili single part or YouTube video, sample every 3 seconds plus change-triggered frames, transcribe locally with faster-whisper, page through section grids, and render a 16:9 study deck. Windows only, and needs the DSH pwsh tool plus Python 3.12 x64 with Pillow and FFmpeg/FFprobe; fetching adds yt-dlp, transcription needs faster-whisper with your own local model files, and deck output needs python-pptx."
+  zh: "视频精读：获取 B 站单分P或 YouTube 视频，每 3 秒基础采样并补取变化帧，本地 faster-whisper 转写，分页读取分段图版，并可排版成 16:9 学习 PPT。仅 Windows；需要 DSH 的 pwsh 工具，以及 Python 3.12 x64 + Pillow、FFmpeg/FFprobe；获取视频另需 yt-dlp，转写需 faster-whisper 并自备本地模型文件，PPT 输出需 python-pptx。"
+icon: https://raw.githubusercontent.com/SZUold8/dsh-video-learning/main/assets/icon-180.png

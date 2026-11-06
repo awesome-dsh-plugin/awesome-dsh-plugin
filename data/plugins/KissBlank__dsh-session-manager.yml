@@ -1,0 +1,7 @@
+url: https://github.com/KissBlank/dsh-session-manager
+name: KissBlank/dsh-session-manager
+category: session
+description:
+  en: 'Purge DSH sessions for good and manage them from one console: per-session deletion, a filterable bulk console, and housekeeping sweeps.'
+  zh: '彻底删除 DSH 会话，并在一个控制台里集中管理：单条删除、可筛选的批量清理与维护清扫。'
+icon: https://raw.githubusercontent.com/KissBlank/dsh-session-manager/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/wdj20050927/dsh-quality-guard
+name: wdj20050927/dsh-quality-guard
+category: workflow
+description:
+  en: 'Second-model gate on the assistant turn, installed in two parts: copy engine/ into ~/.dsh/plugins/ and mount it by absolute path in the profile patch (the bundle itself only installs the settings panel), then switch off the default dry-run mode that only logs verdicts. Once active, a separate judge call scores the draft against the numbered criteria (0-10 each); any criterion under 6 fails the turn and sends it back for a rewrite, up to 3 rounds by default. The web panel edits criteria and thresholds, and every verdict is appended to an audit log.'
+  zh: '助手回合收口前的第二模型质检，分两步安装：先把 engine/ 拷到 ~/.dsh/plugins/ 并在 profile 的 patch 中按绝对路径挂载（bundle 本身只装设置面板），再关掉默认的演习模式（只记日志、不打回）。启用后由独立判官调用按编号判据逐条打 0-10 分，任一条低于 6 分即判不合格并打回重写，默认最多回炉 3 轮；Web 面板编辑判据与阈值，每次判定写入审计日志。'

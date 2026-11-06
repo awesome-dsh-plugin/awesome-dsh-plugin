@@ -1,0 +1,6 @@
+url: https://github.com/CC19990113/dsh-plugin-codegraph/tree/main/packages/bundle
+name: CC19990113/dsh-plugin-codegraph
+category: dev
+description:
+  en: 'Code graph from tree-sitter: codegraph finds declarations, callers, callees, impact and call paths; codegraph_index builds the index, 18 languages.'
+  zh: 'tree-sitter 代码图谱：codegraph 查声明、调用者、被调用关系、变更影响与调用路径，codegraph_index 建索引，覆盖 18 种语言。'

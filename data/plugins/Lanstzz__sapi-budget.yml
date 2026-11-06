@@ -1,0 +1,6 @@
+url: https://github.com/Lanstzz/sapi-budget
+name: Lanstzz/sapi-budget
+category: usage
+description:
+  en: "Cost display for AiSpot (sapi) relays: crawls the provider's group list from its public pricing endpoints instead of hardcoding it, lets you pick the active group from a dropdown in the conversation header, and shows a per-turn cost at the end of each turn plus a session total that recurses through every subagent subtree. Switching groups re-prices all history instantly, because the host publishes token buckets only and the browser applies the live rates."
+  zh: "AiSpot（sapi）中转站的费用显示插件：从供应商的公开价格端点动态爬取分组列表而非硬编码，在会话标题栏的下拉框里选择当前分组，在每轮对话结束处显示本轮费用，并在标题栏显示递归合计所有子代理子树的会话总额。切换分组会即时重算全部历史金额，因为宿主只发布 token 桶、由浏览器按实时价目表计价。"

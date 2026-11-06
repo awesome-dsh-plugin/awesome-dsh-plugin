@@ -1,0 +1,6 @@
+url: https://github.com/suyunxing/dsh-effort-slider
+name: suyunxing/dsh-effort-slider
+category: ui
+description:
+  en: Replaces the composer's model selector with a starfield popup that sets the model and its reasoning effort in one control, and remaps the current effort to the nearest level the new model declares instead of failing the switch.
+  zh: 把输入框的模型选择器换成星光滑轨弹层，模型与思考强度由一个控件设置；切换模型时若目标模型没有当前档位，自动落到最接近的一档，不再报错。

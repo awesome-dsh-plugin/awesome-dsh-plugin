@@ -1,0 +1,7 @@
+url: https://github.com/wzsx150/dsh-session-speed-pill
+name: wzsx150/dsh-session-speed-pill
+category: ui
+icon: https://raw.githubusercontent.com/wzsx150/dsh-session-speed-pill/main/assets/icon-180.png
+description:
+  en: 'Adds a decode-speed reading to each reply action row, right of the usage control: open it for the turn time breakdown, first-token latency, decode output, prefill, speed ranges and total usage. A setting can keep every message action row visible.'
+  zh: '在每轮回复的操作行里增加显示解码速度（用量右侧），可以显示这一轮回复的时间构成与速度：回答耗时、首字延迟、解码输出、预填充、速度区间与总用量等。设置 → 通用 另有「始终显示消息操作行」开关，可以始终显示所有对话消息的操作行。'
