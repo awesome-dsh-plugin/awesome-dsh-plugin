@@ -2461,7 +2461,7 @@ dsh plugin --profile web add dshmarket
 - [137/dsh-chatgpt-style](https://github.com/137/dsh-chatgpt-style) — 把 DSH Web 的对话排版改成 ChatGPT 风格：768px 居中版心、用户消息右侧中性灰气泡、助手消息全宽 16/28 正文、带独立复制条的圆角代码块；另有行内语义标记（==已确认==、!!风险!!、++重点词++，裸的 4xx/5xx 自动命中）、行首 ✅/⚠️/💡 整行卡片、发送框旁「快速 / 思考」胶囊（经 ctx.modelDirectories 切换推理强度），以及左侧工作区高亮：选中会话带底色与左侧色条、工作区文件夹图标上色。
 - [4444Hao/dsh-codefall](https://github.com/4444Hao/dsh-codefall) — 为 DeepSeek Harness 添加黑客帝国风格的数字雨开屏动画、向两侧展开的矩形光门、可选的窗口恢复重播，以及可调色相的绿色界面主题。
 - [456erddgr/dsh-boo550wt-animation](https://github.com/456erddgr/dsh-boo550wt-animation) — 打开 DeepSeek Harness 时全屏播放一段开机视频，播完才露出界面，按 Esc 可跳过。
-- [AAAjzx111/dsh-theme-jing-chiyang](https://github.com/AAAjzx111/dsh-theme-jing-chiyang) — 王者荣耀「镜 · 炽阳神光」主题：主视觉内联进插件，同时作为整窗底图与两个主面板的肌理；底子仍是墨色夜空、熔金日轮与光冕、磨砂镜片与飘浮金烬，左下角「镜」徽记可在 神光 / 静谧 / 关闭 三档动效间切换。配色通过覆写设计令牌实现，面板、气泡、菜单与代码块一并跟随。
+- [AAAjzx111/dsh-theme-jing-chiyang](https://github.com/AAAjzx111/dsh-theme-jing-chiyang) — 王者荣耀「镜 · 炽阳神光」主题。每次启动先播一段约 5 秒的镜面破碎开场：原图先作为一面玻璃浮出，从撞击点向外裂开，炸成 56 片带金边、各有景深与自转的碎片，短暂悬停后逆向旋转重组，金色闪光推开镜面，日轮光环与光束随之展开。主视觉同时内联为整窗底图与两个主面板的肌理，底子是墨色夜空、熔金日轮与光冕、磨砂镜片与漂浮金烬；左下角「镜」徽记可在 神光 / 静谧 / 关闭 三档动效间切换，配色通过覆写设计令牌实现，面板、气泡、菜单与代码块一并跟随。
 - [AaronKate/dsh-codex-appearance](https://github.com/AaronKate/dsh-codex-appearance) — 为 DeepSeek Harness 增加外观设置页：五套护眼浅色主题，每套主题自带匹配的强调色与链接色；另可调整强调色与背景色、界面与代码的字体和字号、字体样式、内容宽度、对比度与减少动态效果。
 - [AB-png123/dshplugin](https://github.com/AB-png123/dshplugin) — DSH 启动时把 Hao Wallpaper 新下载的壁纸增量导入 DSH 壁纸引擎（幂等）。需要先装好 Hao Wallpaper 应用、Python 3.8+，以及 dsh-plugin-wallpaper-engine 插件（elysia395/dsh-wallpaper-engine）。支持 macOS 与 Windows。
 - [acdsh4869/dsh-aqua-theme](https://github.com/acdsh4869/dsh-aqua-theme) — Aqua 玻璃质感主题（适配 DSH v0.2.x 与桌面端 v0.22.3+）：顶栏、侧边栏、输入框、统计行与轨迹视图悬浮在 WebGL 流体板或图片/视频壁纸上的磨砂玻璃片，云母/兼容双布局，模糊、磨砂、色调、亮度可调，海洋装饰（粒子鲸鱼、小鱼、网状交互、鼠标辉光），一键恢复默认，总开关关闭即完全还原原生界面；承 WYH66666666 原作（0.1.x）与 du-u-uck 的 0.1.1-rc.2 适配。
@@ -6518,6 +6518,7 @@ dsh plugin --profile web add dshmarket
 - [Andiii208/dsh-ultramath](https://github.com/Andiii208/dsh-ultramath) — 数学建模竞赛多 Agent 求解工作流：「UltraMath」主控预设一个预设跑通 读题→框架→推导→编码→验算→论文→审稿 全流程，另有 数学家/工程师/作家/审稿人 4 个单阶段角色预设与 33 篇模型库技能文档。
 - [appthin/dsh-skills-manager-plus](https://github.com/appthin/dsh-skills-manager-plus) — 在 DSH 设置中管理技能与命令：跨全局与项目作用域查看、启用/停用、编辑、删除与添加技能，并把常用提示词保存为斜杠命令。
 - [Azzygoatcoder/agent-useful-skills](https://github.com/Azzygoatcoder/agent-useful-skills) — 模块化 AI 科研/工程技能包，dsh plugin add 一键安装——在 ctx.skills 注册 27 个技能（安全审计、论文读写、绘图、开发工作流、存储分析）。
+- [back4app/back4app-plugin](https://github.com/back4app/back4app-plugin) — Skill that deploys a folder to a public HTTPS address on Back4app with the Back4app CLI, on a temporary account with a claim link to keep the web app.
 - [backtomyfuture/dsh-teamai-panel](https://github.com/backtomyfuture/dsh-teamai-panel) — DeepSeek Harness 侧边栏面板，用于团队技能、MCP 和提示词管理与同步。
 - [baosfeng/my-dsh-plugins#dsh-my-skill-manager](https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-my-skill-manager) — Skill 管理：按全局 / 项目两个范围查看 skill 列表，并按项目启用或禁用；被禁用的 skill 不会注入该会话（npm: `dsh-my-skill-manager`）。
 - [bauerelizabeth07139/plan-guardian-skill](https://github.com/bauerelizabeth07139/plan-guardian-skill) — 每个请求都必须走完 7 步计划,每步都有可判定的验收标准,执行交给 worker 子代理,完成情况由无记忆的独立 verifier 子代理带证据判定 PASS / FAIL。
