@@ -1,0 +1,6 @@
+url: https://github.com/cube-ai/dsh-feishu-client
+name: cube-ai/dsh-feishu-client
+category: remote
+description:
+  en: DSH Feishu Client. 1) Users (humans) access remote agents through the UI provided by this plugin; 2) The local DSH accesses remote agents by calling the tools provided by this plugin. Supported remote agents include but are not limited to DSH, OpenClaw, WorkBuddy, Weknora, etc.
+  zh: DSH飞书客户端：1）用户（人）通过本插件提供UI访问远端智能体；2）本地DSH通过调用本插件提供工具访问远端智能体。支持的远端智能体包括且不限于：DSH、OpenClaw、WorkBuddy、Weknora等等。
