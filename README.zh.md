@@ -2600,7 +2600,7 @@ dsh plugin --profile web add dshmarket
 - [kingdawangXTA/dsh-pixel-crt](https://github.com/kingdawangXTA/dsh-pixel-crt) — 会话框的深色 CRT 像素皮肤：硬边框、方块阴影与点阵标题，只作用于聊天区和输入区。
 - [kinglhy2006/dsh-crt-theme](https://github.com/kinglhy2006/dsh-crt-theme) — 深色磷光绿 CRT 终端皮肤，带扫描线和等宽字体，用于 DeepSeek Harness。另在侧栏加仪表盘：输出速度、CPU/内存与 DeepSeek 余额；密钥只留在宿主进程。
 - [kingOfSoySauce/dsh-liang-skin](https://github.com/kingOfSoySauce/dsh-liang-skin) — 自适应推理等级滑块皮肤，将当前模型可用档位映射到 0–30 视觉强度，并同步人物、背景和界面配色。
-- [kleinklein0824/dsh-official-skin](https://github.com/kleinklein0824/dsh-official-skin) — 灵感来源于 DeepSeek 官网的 DSH 皮肤：深色模式提供流体极光、粒子鲸鱼与星座背景，浅色模式采用蓝色玻璃质感，并跟随宿主深浅色设置切换。仅支持 DSH Web（DSH 0.2.1-rc.5 实测通过）；桌面版尚未验证。
+- [kleinklein0824/dsh-official-skin](https://github.com/kleinklein0824/dsh-official-skin) — 灵感来源于 DeepSeek 官网的 DSH 皮肤，支持 DSH Web 与 DeepSeek Harness 官方桌面版：深色模式提供流体极光、粒子鲸鱼与星座背景，浅色模式采用蓝色玻璃质感，并跟随宿主深浅色设置切换。
 - [kviiinh/dsh-whale-particles-bg](https://github.com/kviiinh/dsh-whale-particles-bg) — 为 DSH Web 界面加的一层动态鲸鱼背景：由鲸鱼剪影采样出的粒子场，加上一层点阵网格，两者都是挂在 shell.overlay 上的全屏点击穿透 canvas；粒子加载时聚合、空闲时呼吸、指针靠近时被推开，网格点靠近指针会放大，配色跟随页面明暗主题。
 - [L-eleven-1/dsh-wallpapers](https://github.com/L-eleven-1/dsh-wallpapers) — 应用奶皇新外观预设，支持设置备份与恢复。它是 elysia395/dsh-wallpaper-engine 1.4.0 的预设，需先装该插件并备好奶皇新壁纸（工坊 3808236079）。
 - [leavestring/awesome-dsh-background-plugin](https://github.com/leavestring/awesome-dsh-background-plugin) — 为 DSH Web 设置背景：上传本地图片或选择预设氛围，实时预览且设置持久化。
@@ -4147,6 +4147,7 @@ dsh plugin --profile web add dshmarket
 - [chaos-miku/dsh-error-atlas](https://github.com/chaos-miku/dsh-error-atlas) — 把 DSH 的运行错误与编程任务复盘渲染成可交互的 GPU 图谱，并把记录下来的教训送回模型上下文。
 - [cheeseRatRat/dsh-buwang](https://github.com/cheeseRatRat/dsh-buwang) — 不忘 —— 主动记录的私人记忆库，内置可修改的人格，只在你开口时才写；读取时每轮自动注入人格与记忆，纯本机 Markdown 不联网。
 - [chenzheshushi-commits/dsh-evolve](https://github.com/chenzheshushi-commits/dsh-evolve) — 跨会话记忆，零 token 确定性召回（bigram-Jaccard 与 FTS5 BM25 经 RRF 融合，中文分词精确）；重复观察会强化已有理解而非堆叠重复；过程性知识结晶为 SKILL.md，就地精炼升级，走 active-stale-archived 生命周期治理，归档可逆、可回滚。摄入与处置各有一档用户可选的自治程度，冲突与高重要写入始终交人工复核，任何档位都不会自动删除。需要 Node 22.5+。
+- [Chess12333/dsh-ming-graph](https://github.com/Chess12333/dsh-ming-graph) — DSH 的记忆关系图：每条真实记忆一个点，每条边都得答得出「凭什么连」——引用、共词、归属、按时间补边，四种理由都能读出来。纯读盘、不过模型，读不到就报错，不拿假数据顶上。
 - [Chess12333/dsh-ming-memory](https://github.com/Chess12333/dsh-ming-memory) — DSH 的开场记忆插件：会话开在指定目录时，把人格文件与最近几篇日记注入系统提示词，这些源文件只读不改；它会在 <root>/live/feed.json 保存一小段跨会话的最近对话，并可写出 <root>/live/web-for-qq.md 交给 QQ 侧，不上传任何内容。会变的块（时间感、刚做过、别的会话）走每步刷新的上下文消息，系统提示逐字节稳定，前缀缓存不被打断。
 - [chinwe/dsh-compound-memory](https://github.com/chinwe/dsh-compound-memory) — 通过 uvx 启动本地 compound-memory MCP server，并在每个会话注入一次简短的使用提醒。
 - [ciskonc/dsh-context-imports](https://github.com/ciskonc/dsh-context-imports) — 把 AGENTS.md 里 @路径 引用的文件读出来，在会话启动时注入模型上下文；带字节预算、压缩后重新注入和六语言设置卡片。v0.3.x 会展开 DSH 已加载的所有指令文件里的引用，包括会话中途自动带进来的项目 AGENTS.md（需 DSH 0.2.0+）；DSH 0.1.7 请用 0.2.x。
@@ -9236,6 +9237,7 @@ dsh plugin --profile web add dshmarket
 - [raymondkm2025/dsh-go-game](https://github.com/raymondkm2025/dsh-go-game) — 圍棋插件：完整規則引擎、三檔內建 AI、死子估算、可選 LLM 覆盤、SGF 匯入匯出，以及可選的 KataGo GTP 引擎橋接。
 - [reisen-ww/dsh-bonk-pet](https://github.com/reisen-ww/dsh-bonk-pet) — DSH Web GUI 角落里的悬浮鲸鱼娘。agent 干活时它跟着内置歌曲唱歌；工具报错时天上掉钢管砸它脑袋。点它敲头上的铁盆，每敲一次扣 12 米饭——敲多了就饿，饿了会去讨饭，米饭随机出现在页面某处，它咻地冲过去吃掉。可拖动且始终留在视口内，吃米途中被抓住会挣扎，音量与玩法在设置里可调。全部素材、音效与歌曲都打包在插件内。
 - [sadnessXU/dsh-pet-game-guard](https://github.com/sadnessXU/dsh-pet-game-guard) — 打游戏或全屏应用在前台时，自动把 dsh-pet 的桌宠窗口收起来，退出后原样放回。用「全屏窗口铺满显示器 + 前台进程在游戏目录 + 系统全屏状态」三重信号判定，连续两次采样一致才动作，避免切窗口时闪隐；只切换窗口可见性，不改 dsh-pet 的任何配置，也不动它的安装目录。托盘菜单可暂停、立即恢复、重载配置。仅 Windows。
+- [Sakura7301/MeiHuaYi](https://github.com/Sakura7301/MeiHuaYi) — 梅花易数卜卦插件：在聊天里或面板上按时间、数字、一字占、手动指定四种方式起卦，输出主卦、互卦、变卦、动爻与体用生克，并把卦例、外应与学习笔记保存在本机。
 - [SATA260/dsh-mood](https://github.com/SATA260/dsh-mood) — 通过状态面板、更新工具和聊天表情包管理 AI 搭档的情绪与性格。
 - [ShenpingDD/wooden-fish-dsh](https://github.com/ShenpingDD/wooden-fish-dsh) — 为 DeepSeek Harness Web 界面打造的电子木鱼桌宠。点击敲击、按天计数，设置页以日历热力图展示每日敲击与连续天数。
 - [sherconan/dsh-task-mascot](https://github.com/sherconan/dsh-task-mascot) — 跟随 Agent 每一次工具调用（读、写、改、搜、运行、规划、子代理、等待、出错）实时切换动作的网页吉祥物，并在对话中显示对应步骤卡片；内置两套可切换角色包。
