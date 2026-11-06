@@ -2,5 +2,5 @@ url: https://github.com/asots/dsh-longsession
 name: asots/dsh-longsession
 category: ui
 description:
-  en: 'Trims a long session’s loaded history window from a control in the session header row, with a Settings → Long session page for thresholds and request caps; it also auto-trims at the live tail.'
-  zh: '从会话标题栏的「清理历史」控件或 设置 → 长会话 页面，把长会话已载入的历史窗口裁回最近两轮；在实时尾部还会按阈值自动裁剪，并可配置历史请求上限。'
+  en: 'Adds a “Compact page history” button to the session header: it unloads the history already rendered by the page and keeps the last two turns, with thresholds and request caps on a Settings → Long session page; chat records are not deleted.'
+  zh: '在会话标题栏添加「精简页面历史」按钮：卸载页面已渲染的旧历史、只保留最近两轮，阈值与历史请求上限可在 设置 → 长会话 调整；不会删除聊天记录。'
