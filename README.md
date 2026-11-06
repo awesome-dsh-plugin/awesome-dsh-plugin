@@ -7277,7 +7277,6 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zuosus/dsh-decision-engine](https://github.com/zuosus/dsh-decision-engine) - System-1 decision guard for DeepSeek Harness, 4 questions asked before tool calling (risk reversible, relevance, injection suspension) and allow/ask/reject action. Needs an API key for a system-one compatible provider; decision requests are sent there.
 - [zzd1990/dsh-parallel-dev](https://github.com/zzd1990/dsh-parallel-dev) - By default, blocks marking a team task complete without a passed independent verification record whose commit matches the worktree HEAD, and adds a dependency DAG board and a settings page.
 - [zzhzz/dsh-ask-peer](https://github.com/zzhzz/dsh-ask-peer) - Peer-to-peer colleague-agent consultation for DSH: ask one or several configured peers, queue asynchronous questions, discover peers through signed friend cards, and review inbound requests in the Web UI.
-- [dsh-clarify-mode](https://github.com/xiaofeng-bm/dsh-clarify-mode) - Requirements clarification mode: clarify before taking action; the Agent only asks questions and does not write, and only produces an acceptance checklist once questioning has covered all aspects completely.
 
 ### Git & Code Review
 
