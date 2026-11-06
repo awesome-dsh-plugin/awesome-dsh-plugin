@@ -1,0 +1,6 @@
+url: https://github.com/ayachinene285/dsh-composer-resize
+name: ayachinene285/dsh-composer-resize
+category: ui
+description:
+  en: Adds a drag handle above the chat composer so its height can be set by hand at any content length, with double-click to restore auto-grow capped at 168px.
+  zh: 给聊天输入框加一条拖动把手，任何内容长度下都能手动设定高度；双击恢复自动增高（上限 168px）。
