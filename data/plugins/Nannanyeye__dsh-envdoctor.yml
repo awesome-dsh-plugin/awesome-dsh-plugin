@@ -1,0 +1,7 @@
+url: https://github.com/Nannanyeye/dsh-envdoctor
+name: Nannanyeye/dsh-envdoctor
+category: tools
+tarball: https://github.com/Nannanyeye/dsh-envdoctor/releases/download/v0.2.2/dsh-envdoctor-0.2.2.tgz
+description:
+  en: "Windows environment doctor: audits 30 developer tools, installs the missing ones, manages the user PATH, and exports or imports an environment share code so a team keeps identical setups."
+  zh: "环境体检：审计 30 种 Windows 开发工具，安装缺失的工具，管理用户 PATH，并支持导出/导入环境分享码，让团队配置保持一致。"
