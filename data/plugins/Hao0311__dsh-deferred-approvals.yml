@@ -1,0 +1,6 @@
+url: https://github.com/Hao0311/dsh-deferred-approvals
+name: Hao0311/dsh-deferred-approvals
+category: security
+description:
+  en: 'Non-blocking approvals and timed questions: permission requests park as pending items while the model keeps working and the approved call can be retried, and ask_user_question runs in timed mode so a question never blocks the turn.'
+  zh: '非阻塞审批与定时提问：越权请求挂起为待办、模型继续干活、批准后重试；ask_user_question 用 timed 模式，提问不再卡住回合。'
