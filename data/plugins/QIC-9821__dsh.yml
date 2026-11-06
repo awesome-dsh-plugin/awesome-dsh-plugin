@@ -1,6 +1,0 @@
-url: https://github.com/QIC-9821/dsh
-name: QIC-9821/dsh
-category: memory
-description:
-  en: "Sync a git-backed memory folder with a peer machine every time DeepSeek Harness starts — no daemon, no cron, no manual pull."
-  zh: "每次打开 DeepSeek Harness，自动把本机的 git 记忆目录和另一台机器双向同步一次——开机就有最新记忆，不用常驻后台。"
