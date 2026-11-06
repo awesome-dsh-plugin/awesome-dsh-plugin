@@ -1,0 +1,6 @@
+url: https://github.com/Hatiaa/dsh-reasoning-adapter
+name: Hatiaa/dsh-reasoning-adapter
+category: model
+description:
+  en: 'Gives hand-declared models on custom or relay routes a vendor-matched reasoning-effort picker: detects Claude, GPT, DeepSeek, GLM, Kimi, Qwen, Gemini, Grok, Doubao or MiMo from the model id, display name or endpoint host, fills in only the levels that vendor accepts plus the pi-ai compat fields its request format needs, and writes them into the profile config so the Models page reasoning switch turns on. Models you edit or switch off are left alone, and a Models page card hands them back on request.'
+  zh: '为自定义路由或中转站上手动添加的模型提供按厂商匹配的推理等级选择：根据模型 id、显示名或接口域名识别 Claude、GPT、DeepSeek、GLM、Kimi、Qwen、Gemini、Grok、豆包或 MiMo，只填入该厂商接受的档位，并补上对应请求格式所需的 pi-ai compat 字段，再写回 profile 配置，让「设置 → 模型」里的推理开关自动打开。你手动改过或关掉的模型不会被改动，可在模型设置页的卡片上一键交回插件。'
