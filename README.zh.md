@@ -355,6 +355,7 @@ dsh plugin --profile web add dshmarket
 - [bainianlaoyao/easy-archive](https://github.com/bainianlaoyao/easy-archive) — 工作区侧边栏行内两击归档：点一次变红确认，再点即归档，归档项不再出现在 ⋮ 菜单里。
 - [baisama-cloud/dsh-composer-history](https://github.com/baisama-cloud/dsh-composer-history) — DSH 输入框命令历史：按 ↑/↓ 浏览此前发送的指令，回到历史末尾时恢复原草稿；官方桌面端与 Web profile 均可用。
 - [Baisbt/dsh-GreaterClarity-plugin](https://github.com/Baisbt/dsh-GreaterClarity-plugin) — 增强 DSH Web 会话视图：一键折叠思考链与工具链、历史快速定位、Markdown 导出、AI 头像。
+- [baitouwuya/dsh-super-cards](https://github.com/baitouwuya/dsh-super-cards) — 用原生 UI 卡片代替 Markdown 回答：模型调用 render_ui，答案直接渲染成对话里的卡片——29 种区块（指标、表格、图表、时间线、看板、流程图、可点击按钮）、content 自动排版模式、四种落位（正文内联、过程折叠区、输入框上方看板、回合尾卡）、原生设置表单，以及可选的自动「下一步」卡片。卡片按会话日志里的调用参数重建，回放与 fork 后仍在；245 个离线测试，无构建步骤。
 - [BAIYE0303/dsh-ask-first](https://github.com/BAIYE0303/dsh-ask-first) — 在输入框加一个按钮：先复述你的草稿，再用可点的选项问几个问题——每题都带一个「我不知道，你替我定」的逃生项——最后把草稿改写成 AI 能直接开工的需求。全程可以一个字都不打，而且它不会替你发送。
 - [balue8246-maker/dsDragPasteALL](https://github.com/balue8246-maker/dsDragPasteALL) — 把本机任意文件拖拽或粘贴到 DSH 页面，静默反查真实绝对路径并插入输入框（Spotlight + 大小/时间 + 首尾指纹校验），未找到时内容缓存兜底。
 - [BangBang-03/dsh-client-ui-quote](https://github.com/BangBang-03/dsh-client-ui-quote) — 把 DSH 里的任意选区变成可审阅的引用对象：正文、文件预览、终端、diff 都能引，代码引用带 path#line。发送后原句留下高亮与序号、可跳回；输入框上方「引用 ×N」可逐条编辑或移除；右侧栏引用清单可搜索、按状态与标签审阅、多选插入、导出 Markdown/JSON；侧边线程的结论可回流主会话；已发送的引用能追加修订，旧胶囊标「已修订」；模型可按「引用N」逐条回应。
@@ -5622,6 +5623,7 @@ dsh plugin --profile web add dshmarket
 - [xtt-xt/dsh-custom-tool-studio](https://github.com/xtt-xt/dsh-custom-tool-studio) — 用 Python 在网页、对话或 dsh-go 手机 App 的原生面板里编写自定义工具，保存后免重启注册成 DSH 工具；危险工具每次执行都走内置审批，工具可分组成包，还可选「解锁模式」按对话逐步放出。需 PATH 中有 Python 3。
 - [xuanyuanchumo/dsh-kaogong](https://github.com/xuanyuanchumo/dsh-kaogong) — 离线公务员备考学习面板，整合 15 个上游开源题库，提供 SRS 错题本、整卷模考、申论离线评改、可交互知识图谱与白盒可观测。npm 包不含题库数据：安装后需在题库管理里克隆必选包（约 363 MB，15 个上游仓库全量约 2.2 GB）。
 - [xuezuoys/dsh-blender-mcp-bridge](https://github.com/XuezuoYS/dsh-blender-mcp-bridge) — 此项目旨在桥接 Blender MCP Add-on，使 DSH 上的模型可便捷对接接入当前用户工作的 Blender 以辅助创作，且满足基础安全需要。
+- [XuRui2022/dsh-paper-manager](https://github.com/XuRui2022/dsh-paper-manager) — 面向学生与研究者的论文阅读管理器：原样 PDF、文件夹、六种引用格式、Word 文末参考文献、AI 翻译/概括/导图/术语。
 - [xwtxbzz/dsh-ccf](https://github.com/xwtxbzz/dsh-ccf) — 用 ccf_deadlines、ccf_venue、ccf_update 三个工具、/ccf 命令和可导出日历的桌面面板查 CCF 会议截稿：日期靠实时同步（CCFDDL 为主、另一个源交叉比对，差 36 小时以上标「来源冲突」），插件本身不内置任何日期，首次使用需先同步一次；未来 30 天的截稿会常驻系统提示。
 - [yangdw2024/gaussian-dsh-plugin](https://github.com/yangdw2024/gaussian-dsh-plugin) — Gaussian 16 计算辅助插件：SMILES→3D 建模、输入生成、串行任务管理、输出解析，以及 Multiwfn/VMD 后处理（轨道/ESP/RDG 出图）。
 - [yanglaofish/dsh-proxy-pro](https://github.com/yanglaofish/dsh-proxy-pro) — 把模型请求、web 抓取/搜索与衍生工具统一路由到 Windows 系统代理或自定义地址——幂等内核（读操作不重组分发器）、头部一键开关、按 URL 路由诊断与 NTLM 认证提示。
@@ -6315,6 +6317,7 @@ dsh plugin --profile web add dshmarket
 - [小星辰任意语音](https://github.com/theskywilldawn/dsh-littlestar-anything-voice) — 点一下 Q 版立绘挂件，就用本机 IndexTTS 2.5 把助手回复念出来。一个角色 = 一段参考音频，谁的声音都能当角色；没有立绘也能用，挂件会提示「本角色暂无图片，请添加」。不含任何音色与立绘，角色库在用户自己机器上。需要本地已装 IndexTTS 2.5。
 - [toddpan/dsh-xiaozhi](https://github.com/toddpan/dsh-xiaozhi) — 把小智语音助手接入 DSH Web：DSH 作为 MCP 工具提供方，把 35 个 DSH Web 接口封装成 16 个语音友好工具，覆盖工作区、会话、对话、模型、设置与文件；默认出站 WebSocket 连到小智 MCP 接入点（无需公网 IP 和端口转发），可同时绑定多台设备，并自带实时刷新状态的 DSH 设置页。
 - [underworld-oddball/dsh-volume-knob](https://github.com/underworld-oddball/dsh-volume-knob) — 输入框工具行里、模型选择框左边的扬声器按钮——单击翻到「你最新提问的开头」并闪烁光标，从那里读到最新回复结尾（走 dsh-tts，回退浏览器语音）；按住图标后在页面上单击即可挑选任意朗读起点；按住上滑调出竖式混音台，分别控制页内媒体音量与系统输出音量。
+- [Vansnc/dsh-feiyu-say](https://github.com/Vansnc/dsh-feiyu-say) — 给 DSH 发 QQ 语音条：本机 CosyVoice 合成 + 可选 RVC 换声、多声线切换、模型下载、每轮语音提示。
 - [wangzhanchao883/dsh-hold-to-talk](https://github.com/wangzhanchao883/dsh-hold-to-talk) — 输入框上的单手、免键盘输入：鼠标在输入框按住、说话、松手，文字直接进草稿；上滑取消，不留半句。不用去瞄麦克风按钮，也不用记快捷键，手始终不用离开输入区——另一只手正忙的时候，这一点才是关键。识别完全在本机完成（SenseVoice + sherpa-onnx），无需 API key，音频不出本机。
 - [WayneYu430/dsh-voice-agent#voice-app](https://github.com/WayneYu430/dsh-voice-agent/tree/master/packages/voice-app) — dsh 的对话式语音前端 Agent：通过 ByteDance Duplex 自然对话，把语音请求委派给后台任务，并用语音回报异步结果。
 - [WizisCool/dsh-ears](https://github.com/WizisCool/dsh-ears) — 面向 DeepSeek Harness (dsh) 的语音输入插件：输入框的麦克风按钮把语音转成草稿文本，支持多种语音识别后端，可选经 dsh 自有 LLM 路由润色，并带原生设置页。
@@ -6469,6 +6472,7 @@ dsh plugin --profile web add dshmarket
 - [UnitySirx/dsh-kp-notes#dsh-kp-notes](https://github.com/UnitySirx/dsh-kp-notes/tree/main/plugin/dsh-kp-notes) — DeepSeek Harness 知识点笔记插件：把 Markdown 笔记目录变成卡片式学习画布，目录 = 章节、文件 = 小节、正文 = 知识点；题目可遮挡答案自测，支持 KaTeX 公式、Mermaid 流程图、思维导图与面板内编辑。
 - [void2anything/dsh-qingagent](https://github.com/void2anything/dsh-qingagent) — 青简写作桥：agent 通过 qing_ 前缀工具起草改稿，右侧宣纸面板排版呈现（mermaid、drawio、表格、公式）；每处修改先摆在纸上供审阅，提交才落稿。需本机运行开源的青简桌面客户端。
 - [w4xxx/dsh-xia-plugins#packages/gameassist-knowledge](https://github.com/w4xxx/dsh-xia-plugins/tree/main/packages/gameassist-knowledge) — 树状 Markdown 知识库：为 DSH Agent 提供 kb_list/kb_read/kb_write 工具、目录/正文 HTTP 接口，并配套浏览器面板。
+- [walvka-code/proj-doc-builder](https://github.com/walvka-code/proj-doc-builder) — 扫描仓库，为每个源码目录生成一份 Markdown 大纲，并随索引发布可证明文档与代码一致的哈希 manifest；自带读取器在输出概览或单份文档前会先校验 manifest。
 - [wang678678/dsh-local-plugins#dsh-doc-routing-guard](https://github.com/wang678678/dsh-local-plugins/tree/main/packages/dsh-doc-routing-guard) — 加入全局文档路由提示，让 PDF、图片和 Office 文件自动走正确的读取工具。
 - [Wanyi424/dsh-markdown-notes](https://github.com/Wanyi424/dsh-markdown-notes) — 随手记、随时读：阅读、编辑、并排预览一键切换，附大纲与三套排版主题，支持公式与 Mermaid，多级文件夹管理，自动存为本地 .md 文件。
 - [WaterFountain-Jack/dsh-study-note](https://github.com/WaterFountain-Jack/dsh-study-note) — 按对话开启学习笔记，自动整理问答，按分类保存并维护 Markdown 索引。
