@@ -3709,7 +3709,6 @@ dsh plugin --profile web add dshmarket
 - [LeslieWylie/dsh-task-relay](https://github.com/LeslieWylie/dsh-task-relay) — 跨会话任务队列与交接摘要：会话与子 agent 在共享的文件队列上投递、认领、完成、取消任务，并留下交接摘要供后续会话查看。
 - [let-mi-think/wechat-agent-router](https://github.com/let-mi-think/wechat-agent-router) — 按群名把每个微信群会话路由到不同的 Agent 预设，不改动 dsh-wechat-assistant 的任何代码。
 - [liangmianya/dsh-synapse](https://github.com/liangmianya/dsh-synapse) — DeepSeek Harness 的可视化非线性对话工作区：把会话、追问与分支变成可浏览、可拖拽的对话地图。
-- [lifeng4127/dsh-github-sync](https://github.com/lifeng4127/dsh-github-sync) — 把 DSH 会话与工作区文件同步到私有 GitHub 仓库，实现跨设备接力；支持同步徽标、搜索与批量上传、本地/远端独立删除、冲突选边，以及多设备安全的索引合并。
 - [lifeopsgo/dsh-lark-session-monitor-plugin](https://github.com/lifeopsgo/dsh-lark-session-monitor-plugin) — 以用户本人身份监听飞书会话，把新消息作为 prompt 投递到指定的 DeepSeek Harness 会话：每个监听支持发送者过滤、@机器人提及与关键词黑白名单，可自动创建并固定目标会话，游标式轮询在投递失败后会重读消息。
 - [lij0000-arch/dsh-workspace-migrate](https://github.com/lij0000-arch/dsh-workspace-migrate) — 按工作区迁移 DSH：把一个项目的会话、文件与附件打包，在新机器上还原到指定根目录并重写历史绝对路径，之后只增量同步改动的文件。
 - [limbo947/dsh-recall-plugin](https://github.com/limbo947/dsh-recall-plugin) — 消息撤回：在用户消息旁加「撤回」按钮，把对话历史（官方会话 fork）与项目文件（逐消息影子 git 快照）一并回退到该消息发送之前，带差异预览确认面板。
@@ -3764,6 +3763,7 @@ dsh plugin --profile web add dshmarket
 - [Moeblack/dsh-prompt-studio](https://github.com/Moeblack/dsh-prompt-studio) — 带实时预览的用户/内置 system prompt 分节编辑器。
 - [monkey-sking/dsh-boot-resume](https://github.com/monkey-sking/dsh-boot-resume) — 宿主启动时读取已存会话，找到被重启打断的最后一轮并补发一句「继续」，让中断的工作接着跑。
 - [MoonlitDropOfBlood/dsh-archive-manager](https://github.com/MoonlitDropOfBlood/dsh-archive-manager) — DeepSeek Harness 会话归档管理：分组归档面板，支持恢复与删除。
+- [mount9527/dsh-github-sync](https://github.com/mount9527/dsh-github-sync) — 把 DSH 会话与工作区文件同步到私有 GitHub 仓库，实现跨设备接力；支持同步徽标、搜索与批量上传、本地/远端独立删除、冲突选边，以及多设备安全的索引合并。
 - [Movingtoleveltwo/dsh-revert](https://github.com/Movingtoleveltwo/dsh-revert) — 现代化对话回退与重试插件：纯 UI 图形化交互、原地 Prompt 微调、支持工作区与外部文件双引擎安全快照同步，完美解决分支重放断代问题。
 - [mrzhangkris/dsh-session-pruner](https://github.com/mrzhangkris/dsh-session-pruner) — 全类型会话生命周期管理：一次性子 agent 完成后归档，闲置的可续聊子 agent 与主会话归档（可恢复），容量上限、投影缓存清理，以及热重载设置面板。
 - [mswinandmc/dsh-session-port](https://github.com/mswinandmc/dsh-session-port) — 把会话连同附件导出为压缩包，或把这样的压缩包导入为当前工作区里的新会话。
@@ -6387,6 +6387,7 @@ dsh plugin --profile web add dshmarket
 - [ltmroberthk915/markpilot#dsh-markdown-typora](https://github.com/ltmroberthk915/markpilot/tree/main/dsh-markdown-typora) — DSH 右侧栏的 Typora 式 Markdown 编辑器：公式与 Mermaid 即时渲染，点图片右侧直接在下一行继续写，Ctrl/Cmd+S 版本守卫保存（不受会话工作区限制），选中文段带绝对路径插入对话。
 - [Lucky020/dsh-copyright-kit](https://github.com/Lucky020/dsh-copyright-kit) — 把代码仓库和软件名变成软件著作权登记材料：60 页源程序鉴别材料（每页 50 行自动分页）、带截图的软件说明书、以及申请表信息推导（源程序量、语言、完成日期、功能简介）。需 Python 3 与 python-docx，截图需 Google Chrome。
 - [Lucky020/dsh-delivery-kit](https://github.com/Lucky020/dsh-delivery-kit) — 把代码仓库与运行中的系统变成验收材料：数据库设计、概要设计、详细设计、带截图的使用说明书，以及测试报告、上线报告、验收报告。章节按 GB/T 8567-88 组织，无法核实的字段与结论一律留空，不编造。需 Python 3 与 python-docx 生成 .docx，自动截图需 Google Chrome。
+- [lvxianchao/dsh-video-preview](https://github.com/lvxianchao/dsh-video-preview) — DSH 侧边栏里的流式视频预览：mp4、webm、mov 就地播放，走带鉴权的字节范围路由（206 响应），拖动秒开、没有大小上限、无构建步骤。
 - [maple-pwn/paperlab](https://github.com/maple-pwn/paperlab) — Overleaf 式 LaTeX 论文工作台：在渲染后的 PDF 上选中任意文字批注，由 dsh agent 改写源文件、编译验证并提交 git 修订。
 - [measureer/dsh-overleaf-sync](https://github.com/measureer/dsh-overleaf-sync) — 不走 Git 桥接，而是通过 Overleaf 自身的 Socket.IO + OT 通道在本地 LaTeX 文件夹与 Overleaf 项目之间双向同步：拉取后自动 git init、推送默认 dry-run、三方 diff、后台 watch，冲突永不覆盖而是另存副本。
 - [MrmoLabs/dsh-mermaid](https://github.com/MrmoLabs/dsh-mermaid) — 将 Mermaid 代码围栏渲染为 SVG 图表，支持流式输出、图形/代码切换、全屏缩放与拖拽、SVG 导出，以及内置的同源运行时。
