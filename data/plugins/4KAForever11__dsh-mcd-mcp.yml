@@ -1,0 +1,7 @@
+url: https://github.com/4KAForever11/dsh-mcd-mcp
+name: 4KAForever11/dsh-mcd-mcp
+category: tools
+description:
+  en: "Brings McDonald's China official MCP (mcp.mcd.cn) into DSH. Paste a token you generated yourself and the plugin handshakes, calls tools/list, and registers every remote tool as a native DSH tool (mcd_ prefix) — upstream additions and removals need no code change, just a restart. Ships four always-on tools (mcd_status, mcd_test, mcd_tools, mcd_call) for self-checks and direct fallback calls, plus a settings page with a one-click connection test. The token is stored only on this machine in ~/.dsh/dsh-mcd-mcp.json (mode 600); it never enters the repository or the conversation context."
+  zh: "把麦当劳中国官方 MCP(mcp.mcd.cn)接入 DSH。粘贴自己在官网生成的 Token 后，插件会握手并调用 tools/list，把远端全部工具自动注册成 DSH 原生工具(mcd_ 前缀)，官方增删工具无需改代码，重启即同步。另附 mcd_status、mcd_test、mcd_tools、mcd_call 四个常驻工具用于自检与兜底直调，设置页可一键测试连通性。Token 只存本机 ~/.dsh/dsh-mcd-mcp.json(权限 600)，不进仓库、不进对话上下文。"
+icon: https://raw.githubusercontent.com/4KAForever11/dsh-mcd-mcp/main/assets/icon-180.png

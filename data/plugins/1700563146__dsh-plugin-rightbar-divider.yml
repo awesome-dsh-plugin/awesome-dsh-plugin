@@ -1,0 +1,6 @@
+url: https://github.com/1700563146/dsh-plugin-rightbar-divider
+name: 1700563146/dsh-plugin-rightbar-divider
+category: ui
+description:
+  en: Restores the DSH right sidebar divider drag after whole-interface zoom shifts the host handle off it, and widens the hit area to 12px with a hover affordance.
+  zh: 修复整页缩放后右侧栏拖拽手柄偏移、分割线拖不动的问题，把命中区加宽到 12px 并显示悬停提示线。

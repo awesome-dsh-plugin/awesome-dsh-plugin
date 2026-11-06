@@ -1,0 +1,6 @@
+url: https://github.com/sbVAN/dsh-skill-mimo
+name: sbVAN/dsh-skill-mimo
+category: skill
+description:
+  en: "Live skill provider that reads every Xiaomi MiMo (MiMo Desktop / MiMoCode) skill into the DSH session catalog: the engine-bundled skills under engine-config (unpacked from app.asar when that directory is absent), the MiMoCode global and project roots, extension-contributed skill directories declared in extensions.json, and the brand compatibility roots MiMo's own skillPathCompat setting enables."
+  zh: "实时技能提供器：把小米 MiMo（MiMo Desktop / MiMoCode）的全部 skill 读进 DSH 会话技能目录——engine-config 下的引擎内置技能（该目录缺失时从 app.asar 解包）、MiMoCode 全局与项目根、extensions.json 里扩展贡献的技能目录，以及 MiMo 自己的 skillPathCompat 开关启用的品牌兼容根。"

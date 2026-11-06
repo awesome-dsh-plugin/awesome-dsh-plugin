@@ -1,0 +1,6 @@
+url: https://github.com/MoonlitDropOfBlood/dsh-deveco
+name: MoonlitDropOfBlood/dsh-deveco
+category: dev
+description:
+  en: 'HarmonyOS development suite for DSH: a right-sidebar HiLog inspector (live stream with level/logger/text filters) and an ArkUI Inspector (screenshot pick, collapsible component tree, node properties with search, box model), two tree sources — the DevEco debug channel (declared padding/margin/border and custom component names) and the uitest accessibility tree — an .ets viewer with ArkTS syntax highlighting, DevEco Studio/CLT toolchain and device management, plus the harmony_ui_tree agent tool. 21 remote methods, 82 unit tests.'
+  zh: 'HarmonyOS 全栈开发套件：右侧边栏提供 HiLog 检查器（实时流与级别/包名/关键词过滤）与 ArkUI Inspector（截图点选高亮、可折叠组件树、节点属性搜索、盒子模型），两种树源——DevEco 调试源（ark 调试链路，提供 padding/margin/border 声明值与自定义组件名）与 uitest 无障碍树；.ets 查看器提供 ArkTS 语法高亮；注册 harmony_ui_tree agent 工具供对话内取组件树；设置页管理 DevEco Studio/CLT 工具链与 USB/网络设备。21 个 Remote 方法，82 个单元测试。'

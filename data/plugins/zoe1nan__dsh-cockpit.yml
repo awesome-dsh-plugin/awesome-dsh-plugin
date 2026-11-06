@@ -1,0 +1,7 @@
+url: https://github.com/zoe1nan/dsh-cockpit
+name: zoe1nan/dsh-cockpit
+category: ui
+tarball: https://github.com/zoe1nan/dsh-cockpit/releases/download/v1.2.2/dsh-cockpit-1.2.2.tgz
+description:
+  en: 'Command deck for DeepSeek Harness: a live session rail and team roster, a task board with approvals and write actions, an activity stream, and a desktop HUD capsule that follows the working conversation. The HUD capsule is Windows-only.'
+  zh: 'DeepSeek Harness 指挥台：会话栏与编队看板、带审批与写操作的任务板、实时流，以及跟随运行中对话的桌面 HUD 胶囊（仅 Windows）。'

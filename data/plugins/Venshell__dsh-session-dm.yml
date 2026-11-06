@@ -1,0 +1,6 @@
+url: https://github.com/Venshell/dsh-session-dm
+name: Venshell/dsh-session-dm
+category: session
+description:
+  en: 'Cross-session messaging: sends text into another session in the same workspace, and creates new top-level sessions.'
+  zh: '跨会话投递：往同工作区的另一个会话发消息，并可新建顶层会话。'

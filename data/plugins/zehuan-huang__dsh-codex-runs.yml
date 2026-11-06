@@ -1,0 +1,7 @@
+url: https://github.com/zehuan-huang/dsh-codex-runs
+name: zehuan-huang/dsh-codex-runs
+category: dev
+tarball: https://github.com/zehuan-huang/dsh-codex-runs/releases/download/v0.1.0/dsh-codex-runs-0.1.0.tgz
+description:
+  en: Read-only panel listing recent Codex CLI runs parsed from the local ~/.codex/sessions rollout files, showing status, duration, token usage and the last assistant message, with no bridge or extra daemon.
+  zh: 只读面板：直接解析本地 ~/.codex/sessions 的 rollout 文件，把最近 Codex CLI 运行的状态、耗时、token 用量和最后一条回复列在右上角，不需要桥接或额外守护进程。

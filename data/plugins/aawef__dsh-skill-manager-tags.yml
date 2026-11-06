@@ -1,0 +1,6 @@
+url: https://github.com/aawef/dsh-skill-manager-tags
+name: aawef/dsh-skill-manager-tags
+category: skill
+description:
+  en: 'Tag-based skill filtering: attach tags to DSH skills, then hand each workspace or conversation only the subset its boolean tag expression selects (for example `pdf + docx` or `aegis * plugin`). Excluded skills are deny-shadowed out of the model catalog rather than merely hidden in the settings UI; skills outside the expression can still be added by hand or force-disabled, and the bundled `tagging-skills` teaches the agent to derive a tag set from the machine it is running on.'
+  zh: '按标签筛选技能：给 DSH 技能打标签，再用布尔表达式为每个工作区或对话选出下发给模型的子集（例如 `pdf + docx` 或 `aegis * plugin`）。命中以外的技能会被 deny-shadow 真正从模型目录里移走，而不只是在设置页隐藏；表达式之外的技能可手动添加或强制禁用，另附带 `tagging-skills` 教 agent 从本机技能清单自建标签体系。'

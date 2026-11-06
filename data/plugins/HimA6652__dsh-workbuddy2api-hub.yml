@@ -1,0 +1,6 @@
+url: https://github.com/HimA6652/dsh-workbuddy2api-hub
+name: HimA6652/dsh-workbuddy2api-hub
+category: model
+description:
+  en: Registers the models of a local workbuddy2api-hub gateway into DSH as one OpenAI-compatible provider per gateway API key, each key keeping its own model selection, and shows the main key's credit balance plus today's and this week's tokens, credits and API-equivalent cost in a sidebar badge. Requires workbuddy2api-hub running locally.
+  zh: 把本地 workbuddy2api-hub 网关的模型接进 DSH：网关里有几条 API Key 就同步成几条 provider，每条 key 的模型勾选各自独立；侧边栏徽标显示主 key 的积分余额和今日、本周的 tokens、积分与 API 等价花费。需本机运行 workbuddy2api-hub。

@@ -1,0 +1,6 @@
+url: https://github.com/Firefox2100/dsh-ai-providers/tree/main/packages/dsh-ai-cohere
+name: Firefox2100/dsh-ai-providers#cohere
+category: model
+description:
+  en: Cohere provider for language models, embeddings, and reranking through Cohere's native APIs in DSH. Requires Firefox2100/dsh-ai-providers#runtime to be installed and enabled.
+  zh: 通过 Cohere 原生 API 为 DSH 提供语言模型、嵌入和重排序能力的 Cohere 提供商。需要安装并启用 Firefox2100/dsh-ai-providers#runtime。

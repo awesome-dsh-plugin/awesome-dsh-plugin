@@ -1,0 +1,7 @@
+url: https://github.com/good-saltfish/dsh-multi-session
+name: good-saltfish/dsh-multi-session
+category: session
+description:
+  en: 'Multi-session overview: list every session grouped by workspace with live status, pin up to three side by side to read their conversation text, and send a message or interrupt any of them without switching away.'
+  zh: 多会话一体：在一个会话内按工作区总览全部会话的实时状态，钉住最多三个并排看对话正文，可直接发消息或打断，不用来回切换。
+icon: https://raw.githubusercontent.com/good-saltfish/dsh-multi-session/main/icon.png

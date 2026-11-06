@@ -1,0 +1,12 @@
+url: https://github.com/JinShuXuan/dsh-context-budget
+name: JinShuXuan/dsh-context-budget
+category: usage
+description:
+  en: >-
+    Per-step context ledger for dsh with opt-in gates: hides heavy tool groups from the tool table,
+    externalizes long tool results to disk, and answers duplicate reads with a pointer instead of re-sending.
+    In the author's A/B test the tool-table gate cut 16,110 first-step prompt tokens (-49.7%),
+    and about -23% of per-step context on long sessions.
+  zh: >-
+    每步上下文账本：可选开启精简工具表、长结果外置、重复读回指针三个闸门。
+    作者 A/B 实测，开启工具表闸门后首步 prompt 少 16,110 token（-49.7%），长会话每步上下文约降 23%。

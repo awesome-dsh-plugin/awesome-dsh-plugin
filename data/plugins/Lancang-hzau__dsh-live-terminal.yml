@@ -1,0 +1,6 @@
+url: https://github.com/Lancang-hzau/dsh-live-terminal
+name: Lancang-hzau/dsh-live-terminal
+category: ui
+description:
+  en: Visible terminal panel that streams the agent's shell commands into an in-app terminal and lets the agent capture the terminal screen as text.
+  zh: 可见终端面板：把 agent 的 shell 命令实时显示在应用内终端，并支持 agent 以文本方式截取终端屏幕。

@@ -1,0 +1,7 @@
+url: https://github.com/louisyeaaah/dsh-reload
+name: louisyeaaah/dsh-reload
+category: dev
+tarball: https://github.com/louisyeaaah/dsh-reload/releases/download/v0.1.5/dsh-reload-0.1.5.tgz
+description:
+  en: "Reload a plugin or skill you just installed without restarting DSH. reload_plugin clears that plugin's own module cache, unloads the old instance and re-imports it, restoring the previous module if the new code throws; reload_skill forces skill directories to be re-discovered. Ships both as tools and as the /reload-plugin and /reload-skill commands."
+  zh: "不用重启 DSH 就能重载刚装好的插件或技能。reload_plugin 清掉该插件自己的模块缓存、卸载旧实例再重新 import，新代码报错时自动换回旧模块；reload_skill 强制重新发现技能目录。工具与 /reload-plugin、/reload-skill 两个命令都有。"

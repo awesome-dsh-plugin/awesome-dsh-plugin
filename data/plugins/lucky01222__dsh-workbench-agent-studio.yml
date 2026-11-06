@@ -1,0 +1,7 @@
+url: https://github.com/lucky01222/dsh-workbench-agent-studio
+name: lucky01222/dsh-workbench-agent-studio
+category: dev
+description:
+  en: 'Agent Studio for DSH Web: configure models, prompts, per-plugin tool bindings and Skills; trial-run with editable tool results and run history; preserve session capability snapshots; export standalone presets; draft Agents with a guided creator preset.'
+  zh: 'DSH Web Agent 工作室：配置模型、提示词、按插件绑定的工具与 Skills；支持编辑工具结果的试运行和运行历史，保留会话能力快照，导出独立 Preset，并通过引导式创建预设生成 Agent 草稿。'
+tarball: https://github.com/lucky01222/dsh-workbench-agent-studio/releases/download/v1.13.3/dsh-workbench-agent-studio-1.13.3.tgz

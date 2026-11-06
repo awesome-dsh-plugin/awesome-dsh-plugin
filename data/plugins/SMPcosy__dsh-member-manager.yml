@@ -1,0 +1,7 @@
+url: https://github.com/SMPcosy/dsh-member-manager
+name: SMPcosy/dsh-member-manager
+category: workflow
+description:
+  en: 'Run your DSH agents like a company: departments, order dispatch, attempt credentials, an audit ledger and cost accounting on top of ctx.agents/subagents — plus a work board, an org chart and DAG task planning, no native team layer required.'
+  zh: '把 DSH 的 agent 当公司跑：部门、派工、attempt 凭证、审计账本与成本核算，叠加工作网看板、组织架构图与 DAG 任务图并行派发，无需原生 team 层。'
+icon: https://raw.githubusercontent.com/SMPcosy/dsh-member-manager/main/icon.png

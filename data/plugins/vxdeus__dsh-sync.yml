@@ -1,0 +1,7 @@
+url: https://github.com/vxdeus/dsh-sync
+name: vxdeus/dsh-sync
+category: remote
+description:
+  en: 'Synchronize DSH sessions, settings, attachments and project files using a user-configured private HTTPS Git repository or SFTP, with safe-scope online application, offline restore plans and user-confirmed plugin updates. Requires Node.js 24+; the SFTP path also requires OpenSSH (ssh/sftp).'
+  zh: '通过用户自行配置的私有 HTTPS Git 仓库或 SFTP 同步 DSH 会话、设置、附件及工程文件，支持安全范围在线应用、离线恢复计划和经确认的插件更新。需 Node.js 24+；SFTP 路径还需 OpenSSH（ssh/sftp）。'
+tarball: https://github.com/vxdeus/dsh-sync/releases/latest/download/dsh-sync.tgz

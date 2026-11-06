@@ -1,0 +1,6 @@
+url: https://github.com/EagleClark/dsh-genshin-lisa-notice
+name: EagleClark/dsh-genshin-lisa-notice
+category: notify
+description:
+  en: 'Plays a voice alert and a browser notification when a turn finishes, asks for input, or fails, and can push the same summary to a Feishu bot webhook as a card.'
+  zh: '回合完成、需要你输入或执行失败时播放语音提醒并发送浏览器通知，还可把同样的摘要以卡片推送到飞书机器人 webhook。'

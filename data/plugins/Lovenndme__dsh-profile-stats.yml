@@ -1,0 +1,6 @@
+url: https://github.com/Lovenndme/dsh-profile-stats
+name: Lovenndme/dsh-profile-stats
+category: usage
+description:
+  en: 'A personal usage profile page in the DSH sidebar: five headline numbers (cumulative tokens with a recent-days sparkline, today''s tokens, longest task, longest and current active-day streaks), a 12-month activity heatmap with daily / weekly / cumulative scopes, a stacked model-family chart with its own day / week / month window (version and tier stay apart, and vendor-specific ids collapse correctly), a Cache Lens that shows the cache hit rate and splits every token into cache hits, uncached input and output, with a zoom into the uncached part, and a per-provider split for today or all time. Everything is folded from this machine''s own session logs through ctx.sessionQuery. The only outbound request is a six-hourly read of this package''s own version from the npm registry, used by the in-panel update button - no telemetry, no credentials, nothing uploaded.'
+  zh: 'DSH 侧栏的个人用量主页：五个核心数字（累计 Token 带近期迷你柱、今日用量、最长任务用时、最长/当前连续活跃天数）、近 12 个月活动热力图（每天/每周/累计总量三档）、自带日/周/月窗口的模型家族堆叠柱（版本与档位分开，不同供应商写法会正确归并）、显示缓存命中率并把每个 Token 拆成「缓存命中 / 未缓存输入 / 输出」的 Cache Lens（可放大查看非缓存构成），以及按供应商的今日/累计分类。全部由本机会话日志经 ctx.sessionQuery 折叠而来；唯一的外发请求是每 6 小时读一次本包自己在 npm 上的版本号（供面板内的更新按钮使用），不上报数据、不碰凭据。'

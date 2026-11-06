@@ -1,0 +1,7 @@
+url: https://github.com/YQzhangsan/dsh-sidebar-usage
+name: YQzhangsan/dsh-sidebar-usage
+category: usage
+description:
+  en: Keeps DeepSeek usage and account balance in a bar at the bottom of the window.
+  zh: 在窗口底部常驻显示 DeepSeek 用量与账号余额。
+icon: https://raw.githubusercontent.com/YQzhangsan/dsh-sidebar-usage/main/assets/icon-512.png

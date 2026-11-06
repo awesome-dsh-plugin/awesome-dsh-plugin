@@ -1,0 +1,6 @@
+url: https://github.com/Jackbessaliuz/dsh-memory-semantic
+name: Jackbessaliuz/dsh-memory-semantic
+category: memory
+description:
+  en: 'Read-only semantic retrieval for meow-memory: a local bge-m3 vector index over memory entries and conversation turns, a knowledge graph, and verbatim turn recall. Never writes back to the memory store; requires meow-memory.'
+  zh: 'meow-memory 的只读语义检索增强层：为本机记忆条目与对话轮次建 bge-m3 向量索引，提供记忆图谱与逐字原文召回，绝不回写记忆库；需与 meow-memory 搭配使用。'

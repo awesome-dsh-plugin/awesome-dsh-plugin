@@ -1,0 +1,6 @@
+url: https://github.com/furkancak1r/dsh-composer-plus
+name: furkancak1r/dsh-composer-plus
+category: ui
+description:
+  en: 'Composer and sidebar helpers in one plugin, each switchable in Settings: a git Changes panel (uncommitted / unstaged / staged / branch diffs), ↑/↓ input history, Shift+Tab /plan toggle, one-click ▶ Continue after a stopped or failed turn, drag-and-drop queue reordering, Copy deeplink, Auto Review "Allow for this chat", project status markers with active projects first, background notifications, 11 extra UI languages and automatic updates from GitHub releases through the plugin manager.'
+  zh: '一个插件集成多项输入框与侧边栏增强，均可在设置中单独开关：git 改动面板（未提交 / 未暂存 / 已暂存 / 分支差异）、↑/↓ 输入历史、Shift+Tab 切换 /plan、对话中断或失败后一键 ▶ 继续、拖拽调整排队消息顺序、复制会话链接、Auto Review「本对话内允许」、项目状态标记与活跃项目置顶、后台通知、11 种额外界面语言，以及通过插件管理器从 GitHub Releases 自动更新。'

@@ -1,0 +1,6 @@
+url: https://github.com/achenjins/dsh-runninghub-plugin
+name: achenjins/dsh-runninghub-plugin
+category: workflow
+description:
+  en: "Run your RunningHub ComfyUI workflows from DSH to generate images, video and audio, with a workflow setup panel, background tasks and multi-key management."
+  zh: "在 DSH 中调用你的 RunningHub ComfyUI 工作流生成图片、视频和音频，提供工作流配置面板、后台任务和多 Key 管理。"

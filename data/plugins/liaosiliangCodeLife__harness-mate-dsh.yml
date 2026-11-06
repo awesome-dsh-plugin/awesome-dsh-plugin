@@ -1,0 +1,6 @@
+url: https://github.com/liaosiliangCodeLife/harness-mate-dsh
+name: liaosiliangCodeLife/harness-mate-dsh
+category: remote
+description:
+  en: 'Connects the DeepSeek Harness agent running on your own computer to the HarnessMate platform, so you can chat with it, exchange files and approve its tool calls from a phone or a browser.'
+  zh: '把跑在本机的 DeepSeek Harness 智能体接入 HarnessMate 平台：手机 / 浏览器即可对话、收发文件、审批工具调用。'

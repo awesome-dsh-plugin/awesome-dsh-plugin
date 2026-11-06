@@ -1,0 +1,11 @@
+# 提交到 awesome-dsh-plugin 的条目
+# 用法:复制为 data/plugins/wwu328763-netizen__dsh-billing-compass.yml 后开 PR
+# 规则见 https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md
+url: https://github.com/wwu328763-netizen/dsh-billing-compass
+name: wwu328763-netizen/dsh-billing-compass
+category: usage
+icon: https://raw.githubusercontent.com/wwu328763-netizen/dsh-billing-compass/main/docs/icon.png
+tarball: https://github.com/wwu328763-netizen/dsh-billing-compass/releases/latest/download/dsh-billing-compass.tgz
+description:
+  zh: "输入框下方的计费面板：DeepSeek 账户余额、官网各模型用量与消费（含每亿 token 单价）、本次运行与整段对话的费用估算。点击弹出面板，面板与输入框同宽同位；余额走官方 /user/balance，用量与消费走 platform 的 usage 接口，整段用量由本地会话日志只读汇总。零依赖（node:https + node:zlib），不写任何文件。"
+  en: "Composer-dock billing panel: DeepSeek account balance, official per-model usage and spend with cost per 100M tokens, plus cost estimates for this run and the whole conversation. Clicking opens a popover that matches the composer's width and position; balance comes from /user/balance, usage and spend from platform's usage endpoints, and the whole-conversation total is folded read-only from the local session log. Zero dependencies (node:https + node:zlib), writes nothing to disk."

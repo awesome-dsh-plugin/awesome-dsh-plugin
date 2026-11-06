@@ -1,0 +1,6 @@
+url: https://github.com/ivanant/dsh-simple-remote
+name: ivanant/dsh-simple-remote
+category: remote
+description:
+  en: Reach DSH from your phone with a single plugin — requires Tailscale on both the host and the phone. No other configuration needed.
+  zh: 只用一个插件就可以手机访问 DSH——需本机与手机都装好并连上 Tailscale，没有额外设置。

@@ -1,0 +1,7 @@
+url: https://github.com/nothurry/stronger-dsh
+name: nothurry/stronger-dsh
+category: ui
+description:
+  en: Monochrome UI, native agent collaboration, token usage, local skills and conversation import with owner-scoped WeChat controls.
+  zh: 黑白灰淡紫界面、原生智能体协作、Token用量、本机技能、对话导入及仅本人可用的微信控制。
+tarball: https://github.com/nothurry/stronger-dsh/releases/download/v0.18.17/dsh-ui-stronger-0.18.17.tgz

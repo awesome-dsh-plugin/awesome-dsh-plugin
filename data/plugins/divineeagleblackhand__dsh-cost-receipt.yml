@@ -1,0 +1,6 @@
+url: https://github.com/divineeagleblackhand/dsh-cost-receipt
+name: divineeagleblackhand/dsh-cost-receipt
+category: usage
+description:
+  en: Shows what each assistant turn cost under every reply, priced from the token usage of that turn at the official peak and off-peak CNY rates, together with the account and bonus balances; when a turn cannot be priced it states the reason instead of guessing.
+  zh: 在每条助手回复下面显示本次问答的花费、账户余额与礼金余额，按该轮 token 用量乘官方峰谷单价计算；算不出价时写明原因，不猜测。

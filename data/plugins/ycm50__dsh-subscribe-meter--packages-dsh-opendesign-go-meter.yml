@@ -1,0 +1,6 @@
+url: https://github.com/ycm50/dsh-subscribe-meter/tree/main/packages/dsh-opendesign-go-meter
+name: ycm50/dsh-subscribe-meter#dsh-opendesign-go-meter
+category: usage
+description:
+  en: 'Session cost meter forked from dsh-cost-meter, retargeted at OpenDesign Cloud: per-session and per-day cost, a 39-model OpenDesign price catalog, OpenDesign Cloud quotas as rolling 5-hour and 7-day used/total bars read from the official funding-check endpoint, Coding Plan quotas, provider balances, peak/off-peak notices, bilingual UI. The quota card needs an OpenDesign Cloud account (the plugin has a built-in login), and it provides service:cost-meter like Han-1413141/dsh-cost-meter and the other dsh-subscribe-meter variants, so install only one cost meter: it replaces dsh-cost-meter rather than running alongside it.'
+  zh: 'dsh-cost-meter 的 OpenDesign Cloud 定制版：本会话与当日费用、39 个 OpenDesign 模型价格目录、OpenDesign Cloud 额度（联动官方 funding-check 接口，5 小时 / 7 天两档已用/全部进度条）、Coding Plan 额度、自定义 Provider 余额、峰谷计价提醒，界面中英双语。 额度卡需要 OpenDesign Cloud 账号（插件内置登录），且它与 Han-1413141/dsh-cost-meter 及同仓库其它变体提供同一个 service:cost-meter，只能装一个费用统计插件：本条目替代 dsh-cost-meter 安装，不能与上游同装。'

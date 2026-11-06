@@ -1,0 +1,7 @@
+url: https://github.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme
+name: cjjchina3088191870-sudo/dsh-plugin-miku-theme
+category: theme
+description:
+  en: Hatsune Miku theme for DSH with light and dark appearance, character artwork, and phone navigation. Requires the Ekko skin manager.
+  zh: 初音未来主题，提供浅深色外观、人物装饰与手机导航，需搭配 Ekko 皮肤管理器。
+icon: https://raw.githubusercontent.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme/main/assets/runtime/9229b5f57f45b1b90a5cbff2c40cde4b7a64743a149e71260d08dd62634cd039.webp

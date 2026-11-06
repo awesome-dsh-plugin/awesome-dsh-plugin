@@ -1,0 +1,6 @@
+url: https://github.com/qgd1850890306-rgb/dsh-todo-checklist
+name: qgd1850890306-rgb/dsh-todo-checklist
+category: ui
+description:
+  en: 'Todo sidecar for DeepSeek Harness: turn selected text into a todo, capture todos from a conversation, review them in a left sidebar panel, get due reminders as an in-app popup or an IM bot message, and export everything to HTML, Markdown, Excel, CSV or JSON.'
+  zh: '为 DeepSeek Harness 提供待办清单：把划选的文字存成待办、从对话里捕获待办、在左侧栏面板里查看与处理、到期用应用内弹窗或机器人推送提醒，还能把全部记录导出成 HTML、Markdown、Excel、CSV 或 JSON。'

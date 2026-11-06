@@ -1,0 +1,6 @@
+url: https://github.com/RUI-debug769/dsh-dotclaude
+name: RUI-debug769/dsh-dotclaude
+category: tools
+description:
+  en: "Runs a Claude Code project's .claude/ slash commands and permissions.deny rules inside DeepSeek Harness. Command bodies expand $ARGUMENTS, positional arguments and @file references into the agent's next turn; matching tool calls are denied before they run. Every host service is probed, so a host without a command registry, working-directory service or TUI status line degrades one feature instead of failing the boot."
+  zh: "在 DeepSeek Harness 里运行 Claude Code 项目的 .claude/ 斜杠命令与 permissions.deny 规则。命令正文会把 $ARGUMENTS、位置参数与 @文件引用展开进模型的下一轮；命中的工具调用在执行前被拒绝。所有宿主服务都做探测：缺命令注册表、工作目录服务或 TUI 状态行时只降级一个功能，不会让宿主启动失败。"

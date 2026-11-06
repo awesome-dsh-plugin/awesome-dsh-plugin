@@ -1,0 +1,6 @@
+url: https://github.com/Link258QAQ/dsh-plugin-genshin-launch
+name: Link258QAQ/dsh-plugin-genshin-launch
+category: fun
+description:
+  en: 'Windows only. On every DSH start it checks, with no configuration, whether Genshin Impact is already installed — if it is, the game is launched (falling back to the miHoYo launcher when the game exits immediately, e.g. while an update is pending); if it is not, the launcher installer is downloaded to the desktop behind a size gate that rejects any link whose payload is more than 15 MiB away from the expected ~224 MiB, and a failed download falls back to opening the official download page.'
+  zh: '仅 Windows。打开 DSH 先探测本机《原神》：装了直接启动本体（秒退改起米哈游启动器），没装才下载安装包到桌面；与预期 224MB 相差超 15MB 的链接会被拒绝，失败则打开官方下载页。'

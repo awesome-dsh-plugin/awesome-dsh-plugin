@@ -1,0 +1,6 @@
+url: https://github.com/Zhishulo/taptap-maker-builder
+name: Zhishulo/taptap-maker-builder
+category: skill
+description:
+  en: 'Skill for building a game design brief into a playable, publishable TapTap Maker project: it picks the browser workspace or local MCP route, extracts the five elements of the brief, writes a first-round prompt for a minimal core loop, iterates in the official order, checks preview and release materials, and keeps credit, credential and irreversible-action limits in view. Includes eight reference notes on the product, credits, themes and asset limits, the leaderboard, brief parsing, iteration, publishing and safety, four templates, and three read-only Python checks for brief completeness, project layout and release materials.'
+  zh: '把一份游戏策划案在 TapTap 制造（UrhoX 引擎 + Lua）上落成可玩、可发布的项目：先用浏览器工作区还是本地 MCP、拆解策划案五要素、写最小可玩的首轮需求、按官方顺序迭代、核对预览与发布物料，并守住积分、凭证与不可逆动作的红线。含 8 篇参考（产品、积分、主题与素材、排行榜、需求拆解、迭代验收、发布、安全）、4 个模板、3 个只读 Python 校验脚本（五要素完整性、项目目录、发布物料）。'

@@ -1,0 +1,6 @@
+url: https://github.com/sniperdown/dsh-host-fs
+name: sniperdown/dsh-host-fs
+category: tools
+description:
+  en: 'Adds the fs_remove and fs_move tools, executed in the DSH host process so they can delete paths the sandboxed shell cannot, gated by a session allow list and a path allow/deny list that denies by default.'
+  zh: '在 DSH 宿主进程里执行 fs_remove 与 fs_move，因此能删除沙箱 shell 删不掉的路径；带会话白名单与路径白/黑名单，默认拒绝。'

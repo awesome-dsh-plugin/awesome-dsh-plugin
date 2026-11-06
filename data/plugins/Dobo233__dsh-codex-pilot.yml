@@ -1,0 +1,6 @@
+url: https://github.com/Dobo233/dsh-codex-pilot
+name: Dobo233/dsh-codex-pilot
+category: tools
+description:
+  en: 'Runs the local Codex CLI from DSH as four tools (codex_run, codex_resume, codex_queue, codex_probe), and ships a standalone loopback bridge with an HTTP API and a file mailbox.'
+  zh: '把本机 Codex CLI 接成 DSH 的四个工具（codex_run / codex_resume / codex_queue / codex_probe），另带独立的回环桥：HTTP 接口 + 文件信箱。'

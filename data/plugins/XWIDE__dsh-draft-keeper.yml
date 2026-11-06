@@ -1,0 +1,6 @@
+url: https://github.com/XWIDE/dsh-draft-keeper
+name: XWIDE/dsh-draft-keeper
+category: ui
+description:
+  en: 'Keeps the images you pasted or attached in the composer, per session: they are mirrored locally in the browser and handed back through the official draft channel when you return to the conversation or the composer remounts, and dropped as soon as the message is sent or you remove them.'
+  zh: '按会话保住输入框里的图片草稿：在浏览器本地留一份镜像，切回该对话或输入框重新挂载时经官方草稿通道放回去；消息一旦发出或你手动移除，就不再见它回来。'

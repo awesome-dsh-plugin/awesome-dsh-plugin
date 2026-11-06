@@ -1,0 +1,7 @@
+url: https://github.com/AAAjzx111/dsh-theme-jing-chiyang
+name: AAAjzx111/dsh-theme-jing-chiyang
+category: theme
+description:
+  en: 'Honor of Kings inspired theme for DeepSeek Harness: the Jing · Blazing Sunlight key art is inlined and painted into the window backdrop and both main panels, over an ink night sky with a molten gold sun, frosted mirror shards, drifting embers and a three-level motion switch (full / calm / off). Colours come from overridden design tokens, so panels, bubbles, menus and code blocks follow the theme.'
+  zh: '王者荣耀「镜 · 炽阳神光」主题：主视觉内联进插件，同时作为整窗底图与两个主面板的肌理；底子仍是墨色夜空、熔金日轮与光冕、磨砂镜片与飘浮金烬，左下角「镜」徽记可在 神光 / 静谧 / 关闭 三档动效间切换。配色通过覆写设计令牌实现，面板、气泡、菜单与代码块一并跟随。'
+icon: https://raw.githubusercontent.com/AAAjzx111/dsh-theme-jing-chiyang/main/icon-256.png

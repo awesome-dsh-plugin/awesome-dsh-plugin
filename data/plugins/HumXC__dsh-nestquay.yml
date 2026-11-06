@@ -1,0 +1,7 @@
+url: https://github.com/HumXC/dsh-nestquay
+name: HumXC/dsh-nestquay
+category: ui
+description:
+  en: Workspace groups for the DSH sidebar with group navigation and session status indicators.
+  zh: 为 DSH 侧栏提供工作区分组、组间导航和会话状态提示。
+tarball: https://github.com/HumXC/dsh-nestquay/releases/latest/download/dsh-nestquay.tgz

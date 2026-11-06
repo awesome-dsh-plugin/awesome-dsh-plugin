@@ -1,0 +1,8 @@
+url: https://github.com/mistnest/dsh-cuigengji-plugin
+name: dsh-cuigengji-plugin
+category: workflow
+description:
+  en: 'Cuigengji, your fiction-writing assistant and editor: organize settings, develop plots, draft chapters, and revise prose with AI. Share plot canvases, character cards, and worldbooks while you choose the direction, style, and what stays in the story.'
+  zh: '催更姬｜你的小说助手与编辑。AI 帮你：理设定、推剧情、起草正文、润色改稿。共用剧情画布、角色卡与世界书，边讨论边创作。你定方向、文风和内容取舍，AI 协助把故事写下去。'
+icon: https://raw.githubusercontent.com/mistnest/dsh-cuigengji-plugin/main/src/client/assets/plugin-icon.png
+tarball: https://github.com/mistnest/dsh-cuigengji-plugin/releases/download/v0.5.1/dsh-cuigengji-plugin-0.5.1.tgz

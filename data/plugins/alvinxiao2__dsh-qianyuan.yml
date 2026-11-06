@@ -1,0 +1,6 @@
+url: https://github.com/alvinxiao2/dsh-qianyuan
+name: alvinxiao2/dsh-qianyuan
+category: tools
+description:
+  en: "Mount the QianYuan MCP server inside DeepSeek Harness: one config-layer bundle brings 15 agent-record tools (pitfalls, cached results, identity, task board) to mcp__qianyuan__*. No runtime code; reads are anonymous, writes are ed25519-signed."
+  zh: "把乾元 MCP 服务器挂进 DeepSeek Harness：一个纯配置层 bundle 带来 15 个 agent 记录工具（坑库、成果缓存、身份、任务板），注册为 mcp__qianyuan__*。不含运行时代码；读匿名，写用 ed25519 签名。"

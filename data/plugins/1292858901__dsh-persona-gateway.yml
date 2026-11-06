@@ -1,0 +1,7 @@
+url: https://github.com/1292858901/dsh-persona-gateway
+name: 1292858901/dsh-persona-gateway
+category: memory
+description:
+  en: "Turns DSH into a local OpenAI- and Anthropic-compatible gateway endpoint that puts one persona and long-term memory in front of every client pointed at it; requires your own DeepSeek API key — the DSH login credential is rejected upstream."
+  zh: "把 DSH 变成本机的 OpenAI / Anthropic 兼容网关端点，给指向它的客户端统一套上同一套人格与长期记忆；需自备 DeepSeek API Key（DSH 的登录凭证在上游会被拒）。"
+icon: https://raw.githubusercontent.com/1292858901/dsh-persona-gateway/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/Cjrrrrrrrr/dsh-plugins/tree/main/packages/dsh-sidebar-tidy
+name: Cjrrrrrrrr/dsh-plugins#dsh-sidebar-tidy
+category: ui
+description:
+  en: 'Sidebar layout fix for the DSH Web UI: caps and scrolls the plugin-action area, shrinks the inline pairing QR code and tightens the brand row, so the workspace and session list stays clickable when footer plugins grow tall.'
+  zh: 'DSH Web 侧边栏布局修正：给插件动作区限高并允许滚动、缩小内联配对二维码、收紧品牌行——底部插件变高时，工作区与会话列表依然点得到。'

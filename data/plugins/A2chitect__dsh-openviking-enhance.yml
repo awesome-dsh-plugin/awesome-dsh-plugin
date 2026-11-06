@@ -1,0 +1,7 @@
+url: https://github.com/A2chitect/dsh-openviking-enhance
+name: A2chitect/dsh-openviking-enhance
+category: ui
+description:
+  en: 'OpenViking in the DSH web GUI: a Studio panel, a per-session memory-commit status pill with its commit timeline, and a right-sidebar tab showing what the current session retrieves.'
+  zh: '把本地 OpenViking 记忆服务接进 DSH 界面：左侧边栏的 Studio 面板、输入框下方的会话提交状态胶囊与提交时间线，以及右侧边栏查看当前会话检索到哪些记忆的面板。'
+tarball: https://github.com/A2chitect/dsh-openviking-enhance/releases/latest/download/dsh-openviking-enhance.tgz

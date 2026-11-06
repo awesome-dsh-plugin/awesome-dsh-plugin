@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-mask-pixel-lock
+name: dingchenhui0618-arch/dsh-mask-pixel-lock
+category: vision
+description:
+  en: 'Prove that a local image edit left every pixel outside its mask untouched. Original, generated and mask PNGs go in; a greppable `MASK_PIXEL_LOCK=PASS|FAIL|EMPTY` verdict, a difference heatmap, per-channel statistics, a bounding box and the largest changed pixels come out, plus a self-contained HTML report and `report.json` with a SHA-256 file hash, a canonical protected-pixel digest and a proof digest binding both to the policy. Supports edit and lock mask polarities, a mask threshold, tolerance and alpha-ignoring; PNG color types 0/2/3/4/6, bit depths 1-16, all five filters and Adam7. Zero dependencies, local only — no model call, no network, no upload.'
+  zh: '证明一次局部改图没有动蒙版外的像素。输入原图、生成图和蒙版三张 PNG，输出可 grep 的 `MASK_PIXEL_LOCK=PASS|FAIL|EMPTY` 结论、差异热力图、逐通道统计、差异包围盒与最大差异像素，并生成自包含 HTML 报告和 `report.json`；后者包含文件 SHA-256、规范化受保护像素摘要，以及把两者与判定策略绑定在一起的证明摘要。支持 edit / lock 两种蒙版语义、蒙版阈值、容差与忽略 alpha；PNG 覆盖颜色类型 0/2/3/4/6、位深 1-16、五种过滤器和 Adam7。零依赖、纯本地：不调模型、不联网、不上传。'

@@ -1,0 +1,6 @@
+url: https://github.com/ninetyhe-90/dsh-decision-review
+name: ninetyhe-90/dsh-decision-review
+category: tools
+description:
+  en: Lets the primary model ask an independent reviewer model to review a decision it has already made, with off, shadow and advisory modes. Requires your own service implementing POST /v1/decision.
+  zh: 让主模型把已形成的决策交给独立评审模型复核，支持 off、shadow、advisory 三种模式；需自备实现 POST /v1/decision 的复核服务。

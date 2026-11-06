@@ -1,0 +1,6 @@
+url: https://github.com/Stmol/dsh-rub-cost
+name: Stmol/dsh-rub-cost
+category: usage
+description:
+  en: 'Session cost in rubles in the composer dock — the tariff in effect with its countdown, the API cost at that tariff, the CBR rate, the total including subagents, cache savings, and DeepSeek Platform balances.'
+  zh: '在输入框坞区显示以卢布计的当前会话费用：当前时段与倒计时、该时段的 API 费用、央行汇率、含 subagent 的合计、缓存节省与 DeepSeek 平台余额。'

@@ -1,0 +1,6 @@
+url: https://github.com/xiong356/dsh-draft-optimizer
+name: xiong356/dsh-draft-optimizer
+category: ui
+description:
+  en: 'Adds a ✦ button below the DSH composer that rewrites the current draft into a more complete prompt with a single call to the configured default model, keeping the original intent and language, and replaces the draft in place without sending it.'
+  zh: '在 DSH 输入框下方加一个 ✦ 按钮，用当前配置的默认模型把草稿改写成更完整的提示词（保持原意与语言），原地替换草稿、不发送。'

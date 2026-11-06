@@ -1,0 +1,6 @@
+url: https://github.com/iStarryDust/dsh-agent-suite/tree/main/dist
+name: iStarryDust/dsh-agent-suite#dist
+category: identity
+description:
+  en: 'Agent persona management, agent memory, edit-and-regenerate for past messages: create and manage agents, each with its own identity, long-term memory, global memory and chat history.'
+  zh: 'Agent人格管理，Agent记忆，历史消息编辑并重新生成：创建和管理 Agent，每个 Agent 有独立身份、长期记忆、全局记忆与聊天记录，历史消息可编辑后重新生成。'

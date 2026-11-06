@@ -1,0 +1,7 @@
+url: https://github.com/ZhiX-Wang/dsh-wudaokou-ai-events
+name: ZhiX-Wang/dsh-wudaokou-ai-events
+category: tools
+description:
+  en: Search offline AI events around Wudaokou and Tsinghua, retrieve source pages, and keep local search history.
+  zh: 搜索五道口、清华附近的 AI 线下活动，读取来源页面并保存本地检索历史。
+tarball: https://github.com/ZhiX-Wang/dsh-wudaokou-ai-events/releases/download/v0.1.2/dsh-wudaokou-ai-events-0.1.2.tgz

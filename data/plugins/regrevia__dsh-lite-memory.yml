@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/dsh-lite-memory
+name: regrevia/dsh-lite-memory
+category: memory
+description:
+  en: 'Nothing stays in the system prompt: a hit returns titles only, a body loads only when read, and project rules can grow themselves.'
+  zh: '让东坡肉滚出系统提示：记忆不常驻，命中只给标题，正文读了才进上下文，项目规范还能自己长。'
+icon: https://raw.githubusercontent.com/regrevia/dsh-lite-memory/main/icon.png

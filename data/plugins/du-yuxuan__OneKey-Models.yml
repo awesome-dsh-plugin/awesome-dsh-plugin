@@ -1,0 +1,6 @@
+url: https://github.com/du-yuxuan/OneKey-Models
+name: du-yuxuan/OneKey-Models
+category: model
+description:
+  en: 'One-click TokenDance gateway access for DeepSeek Harness: OAuth sign-in stores the API key, a live model catalog with per-model visibility, and agent tools for chat, image generation, video generation and typed decisions.'
+  zh: '一键接入 TokenDance 模型网关：OAuth 登录保存 API Key，实时模型目录可逐模型控制显隐，并提供对话、生图、生视频与类型化判断的 agent 工具。'

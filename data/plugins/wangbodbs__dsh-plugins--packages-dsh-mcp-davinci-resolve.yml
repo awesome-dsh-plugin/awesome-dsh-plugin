@@ -1,0 +1,6 @@
+url: https://github.com/wangbodbs/dsh-plugins/tree/main/packages/dsh-mcp-davinci-resolve
+name: wangbodbs/dsh-plugins#dsh-mcp-davinci-resolve
+category: tools
+description:
+  en: Registers the MCP server built into DaVinci Resolve 21.1+ as an MCP server in DSH, so an agent can drive Resolve through its scripting API.
+  zh: 把 DaVinci Resolve 21.1+ 内置的 MCP 服务器注册进 DSH，让 agent 能通过 Resolve 的脚本 API 操作达芬奇。

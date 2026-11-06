@@ -1,0 +1,6 @@
+url: https://github.com/Biu-Bong/dsh-menu-hidden
+name: Biu-Bong/dsh-menu-hidden
+category: ui
+description:
+  en: Hide the duplicate DeepSeek account / official API entries, sidebar items and the Feedback / Sign out items; on DSH Desktop, add Reload / Restart to the application menu with a one-click patch to the app shell main.js (needs an app restart, and a DSH update reverts the patch); pin a reasoning level and auto-fill new providers and models.
+  zh: 收起 DSH 里重复的 DeepSeek 账号 / 官方 API 入口，隐藏侧边栏项目、账号菜单的意见反馈与退出登录；桌面版可一键给应用外壳的 main.js 打补丁，把刷新与重启加进应用菜单（需重启应用，DSH 升级后补丁会失效）；推理等级一键写死，新供应商新模型自动补齐。

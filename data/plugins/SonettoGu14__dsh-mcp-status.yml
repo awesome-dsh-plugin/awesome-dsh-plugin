@@ -1,0 +1,6 @@
+url: https://github.com/SonettoGu14/dsh-mcp-status
+name: SonettoGu14/dsh-mcp-status
+category: ui
+description:
+  en: 'MCP server panel for the DeepSeek Harness Web GUI: the sidebar lists every @deepseek-ai/dsh-mcp-client row — including rows inserted by other plugins — with a connection state derived from the loader fiber plus the mcp__<server>__* tool count, shows that row''s configuration, enables or disables it by editing only that row of the patch file, and reconnects once after a failed attempt.'
+  zh: 'DeepSeek Harness Web GUI 的 MCP 服务器面板：侧边栏列出每一个 @deepseek-ai/dsh-mcp-client 行（含其它插件插入的行），用 loader fiber 状态加上 mcp__<server>__* 工具数判断真实连接状态，可展开看该行配置，开关只改补丁文件里对应的一行并触发热重载重连，连接失败后自动再试一次。'

@@ -1,0 +1,6 @@
+url: https://github.com/Zcc50/dsh-rebuild/tree/main/task-list
+name: Zcc50/dsh-rebuild#task-list
+category: workflow
+description:
+  en: 'Task list panel docked to the left of the conversation column: five states, parent/child folding, abandoned and completed docks, shared with the agent through task_list / task_write.'
+  zh: 'DSH 任务列表：对话左侧常驻任务面板，五态 + 父子折叠 + 完成区/废弃区 dock，agent 用 task_list / task_write 读写同一份列表。'

@@ -1,0 +1,7 @@
+url: https://github.com/JiayuREN1127/dsh-file-drag
+name: JiayuREN1127/dsh-file-drag
+category: ui
+tarball: https://github.com/JiayuREN1127/dsh-file-drag/releases/download/v0.4.0/dsh-file-drag.tgz
+description:
+  en: "Drag files and folders from the sidebar Files pane into the message composer. A dropped file becomes an inline chip inside the sentence, an uploaded attachment card, or a plain @ path, switchable in Settings."
+  zh: "把右侧文件区的文件和文件夹拖进输入框：落下的文件变成句中内嵌的小卡片、附件卡片或 @ 路径，可在设置里切换。"

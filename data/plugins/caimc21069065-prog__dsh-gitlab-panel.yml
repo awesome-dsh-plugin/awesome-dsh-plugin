@@ -1,0 +1,6 @@
+url: https://github.com/caimc21069065-prog/dsh-gitlab-panel
+name: caimc21069065-prog/dsh-gitlab-panel
+category: git
+description:
+  en: 'GitLab panel in the DSH right sidebar: commit graph, branches, changes, merge requests (inline diffs, review submission, pipelines), issues, and agent tools with an approval queue for triage and batch actions. GitLab data needs a personal access token or a logged-in `glab`; local git data works without either.'
+  zh: 'DSH 右侧栏的 GitLab 面板：提交图、分支、变更、合并请求（行内 diff、提交评审、流水线）、议题，以及带审批队列的 Agent 工具用于分诊与批量操作。GitLab 数据需要 Personal Access Token 或已登录的 `glab`；本地 git 数据无需凭据。'

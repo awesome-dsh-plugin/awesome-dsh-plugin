@@ -1,0 +1,7 @@
+url: https://github.com/luoyiyxo/dsh-happycode
+name: luoyiyxo/dsh-happycode
+category: usage
+description:
+  en: 'DeepSeek Harness activity as a GitHub-style contribution graph: an account-menu row opens a centred dialog with your avatar and name, a year of daily activity in five shades, a year picker and a tooltip on every day.'
+  zh: '把 DeepSeek Harness 的日常活动画成 GitHub 风格的贡献热力图：账号菜单里的入口打开居中弹窗，含头像与用户名、按五档配色的一年活动、年份选择器与逐格 tooltip。'
+icon: https://raw.githubusercontent.com/luoyiyxo/dsh-happycode/main/assets/icon-180.png

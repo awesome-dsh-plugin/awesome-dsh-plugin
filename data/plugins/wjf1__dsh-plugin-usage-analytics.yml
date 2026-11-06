@@ -1,0 +1,6 @@
+url: https://github.com/wjf1/dsh-plugin-usage-analytics
+name: wjf1/dsh-plugin-usage-analytics
+category: usage
+description:
+  en: 'Local-first usage analytics for DSH: subscribes to session events and aggregates tool calls, turns, errors, latency and capability usage into daily tables, shown in a sidebar panel (6 KPIs, 14-day trend, top tools, capability breakdown) and served over a fenced local HTTP API with 18 JSON-RPC methods. Zero runtime dependencies, local mode makes no outbound requests, and no message bodies are collected.'
+  zh: '本地优先的 DSH 用量分析：订阅会话事件，把工具调用、回合、错误、耗时与能力使用聚合为日表，在侧栏面板展示（6 个 KPI、14 日趋势、Top 工具、能力分布），并通过受围栏保护的本地 HTTP 接口暴露 18 个 JSON-RPC 方法。运行时零依赖，local 模式零出站，不采集任何消息正文。'

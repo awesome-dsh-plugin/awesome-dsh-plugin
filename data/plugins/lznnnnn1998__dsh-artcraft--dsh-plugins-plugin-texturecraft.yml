@@ -1,0 +1,6 @@
+url: https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-texturecraft
+name: lznnnnn1998/dsh-artcraft#plugin-texturecraft
+category: tools
+description:
+  en: "Drive TextureCraft from the agent: build texture sets and layers over a mesh, paint, bake maps, and export PBR textures. Exposes both TextureCraft's command ids and its own MCP server. Requires the matching ArtCraft app CLI installed locally; it is not bundled."
+  zh: "让智能体驱动 TextureCraft：在网格上构建贴图集与图层、绘制、烘焙贴图，并导出 PBR 纹理。同时暴露 TextureCraft 的命令 id 与自带的 MCP server。需本机安装对应的 ArtCraft 应用 CLI，插件不附带应用本体。"

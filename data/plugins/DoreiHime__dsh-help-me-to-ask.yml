@@ -1,0 +1,6 @@
+url: https://github.com/DoreiHime/dsh-help-me-to-ask
+name: DoreiHime/dsh-help-me-to-ask
+category: agi
+description:
+  en: On the first real work message of each chat window, asks for the missing goal, deliverable, constraints and acceptance criteria, then turns the answers into a short task sheet and injects it into the chat. Pure greetings are ignored.
+  zh: 每个聊天窗口的第一段工作内容前，先问清缺失的目标、交付物、限制与验收标准，再把回答整理成简短的任务说明注入聊天；纯寒暄不会触发。

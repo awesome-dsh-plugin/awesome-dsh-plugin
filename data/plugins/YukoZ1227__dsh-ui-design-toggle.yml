@@ -1,0 +1,6 @@
+url: https://github.com/YukoZ1227/dsh-ui-design-toggle
+name: YukoZ1227/dsh-ui-design-toggle
+category: ui
+description:
+  en: 'Requires the ui-ux-pro-max design skill to be installed; this plugin only gates it. Adds a switch to the DSH sidebar footer that enables or disables the ui-ux-pro-max design skill at runtime; the choice is stored in the profile settings.'
+  zh: '需先安装 ui-ux-pro-max 设计技能，本插件只做门控。在 DSH 侧边栏底部加一个开关，一键启用/停用 ui-ux-pro-max 设计技能，选择保存在 profile 设置里。'

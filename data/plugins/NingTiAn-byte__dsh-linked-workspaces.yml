@@ -1,0 +1,7 @@
+url: https://github.com/NingTiAn-byte/dsh-linked-workspaces
+name: NingTiAn-byte/dsh-linked-workspaces
+category: ui
+description:
+  en: 'Link local project directories from a project context menu, with scoped search, source reading and explicit per-session snapshot synchronization. Supports DSH 0.2.1-alpha.4 and 0.2.1-rc.2 only.'
+  zh: '从项目右键菜单关联本机目录，支持跨目录搜索、源码读取与显式会话快照同步；仅支持 DSH 0.2.1-alpha.4 与 0.2.1-rc.2。'
+tarball: https://github.com/NingTiAn-byte/dsh-linked-workspaces/releases/download/v0.3.0/dsh-linked-workspaces.tgz

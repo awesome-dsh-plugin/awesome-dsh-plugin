@@ -1,0 +1,7 @@
+url: https://github.com/wuzhican/dsh-qbittorrent
+name: wuzhican/dsh-qbittorrent
+category: tools
+tarball: https://github.com/wuzhican/dsh-qbittorrent/releases/latest/download/dsh-qbittorrent.tgz
+description:
+  en: Nine model-facing tools over the qBittorrent WebAPI v2, with confirm-gated mutations and an orphan-torrent diagnostic.
+  zh: 基于 qBittorrent WebAPI v2 的九个模型侧工具，写操作需显式 confirm，并提供孤儿种子诊断。

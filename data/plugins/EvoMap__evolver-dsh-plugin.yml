@@ -1,0 +1,6 @@
+url: https://github.com/EvoMap/evolver-dsh-plugin
+name: EvoMap/evolver-dsh-plugin
+category: memory
+description:
+  en: 'A harness that gets smarter the more you use it, with no more goldfish memory. Before each prompt, Evolver recalls one proven strategy from your local history and the EvoMap network; after the turn it grades that strategy by the checks that ran, whether the edits were kept, and how you replied, then reports back to the network, which weighs it by evidence. Every success becomes a shortcut for next time, and every failure becomes a warning.'
+  zh: '越用越聪明的 harness，告别金鱼记忆。每条 prompt 前，Evolver 从本地经验和 EvoMap 网络召回一条验证过的策略；回合结束后，它凭测试结果、改动是否被保留、你的下一句反馈给策略打分，再回报网络按证据加权。每一次成功都变成下一次的捷径，每一次失败都变成下一次的避坑指南。'

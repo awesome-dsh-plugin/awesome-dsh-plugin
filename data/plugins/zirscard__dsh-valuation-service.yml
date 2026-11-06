@@ -1,0 +1,8 @@
+# Entry for the awesome-dsh-plugin list.
+url: https://github.com/zirscard/dsh-valuation-service
+name: zirscard/dsh-valuation-service
+category: tools
+description:
+  en: 'Registers one `valuation_service` tool that reads a workpaper tree of 01/02/04 JSON and returns one unified schema: six ratio groups, forecast ratios, DCF input slots with explicit missing markers, comparable PS/PE and IRR. Deterministic and local: missing WACC, growth, capex, D&A or working-capital inputs stay blank instead of being guessed, and assumption differences are flagged for review.'
+  zh: '注册一个 `valuation_service` 工具：读取 01/02/04 JSON 底稿树，输出统一 schema——六大类比率、预测比率、带 missing 标记的 DCF 输入槽、可比 PS/PE 与 IRR。确定性、本机运行：缺 WACC/增长率/资本开支/折旧摊销/营运资本时留空而不猜测，假设差异逐项标出交人工复核。'
+tarball: https://github.com/zirscard/dsh-valuation-service/releases/download/v0.1.0/dsh-valuation-service.tgz

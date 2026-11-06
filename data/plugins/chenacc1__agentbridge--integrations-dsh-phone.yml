@@ -1,0 +1,6 @@
+url: https://github.com/chenacc1/agentbridge/tree/main/integrations/dsh-phone
+name: 'chenacc1/agentbridge#dsh-phone'
+category: remote
+description:
+  en: 'Pairs a phone console with the current DSH Desktop conversation. Running /phone shows a one-time QR code; after pairing the phone can send messages, approve tool calls, switch models and stop the task, while the desktop stays the only execution host. Requires AgentBridge running locally.'
+  zh: '把手机控制台接到当前这条 DSH Desktop 会话：执行 /phone 出现一次性二维码，扫码后可从手机发消息、审批工具调用、切换模型和停止任务，电脑仍是唯一执行端。需本机运行 AgentBridge。'

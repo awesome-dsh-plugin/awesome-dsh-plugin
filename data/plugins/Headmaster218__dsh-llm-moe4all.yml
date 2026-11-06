@@ -1,0 +1,7 @@
+url: https://github.com/Headmaster218/dsh-llm-moe4all
+name: Headmaster218/dsh-llm-moe4all
+category: model
+description:
+  en: Runs MoE4All models locally in DSH with automatic engine installation, model discovery and downloads, inference settings, and live speed monitoring, or connects to an existing service.
+  zh: 在 DSH 中运行 MoE4All 本地模型，支持引擎自动安装、模型发现与下载、推理参数配置和实时速度监控，也可连接已有服务。
+tarball: https://github.com/Headmaster218/dsh-llm-moe4all/releases/latest/download/dsh-llm-moe4all.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/7starsseeker/MCModsDevBridge
+name: 7starsseeker/MCModsDevBridge
+category: dev
+description:
+  en: "Development tooling for Minecraft 26.3 mods: starts a real dedicated server and a real client from JSON instance registrations, drives both through an authenticated HTTP probe, and asserts on world, UI and log state across Fabric, Forge and NeoForge, writing per-run evidence and shipping no game or loader files. Requires JDK 25 and a Minecraft 26.3 instance."
+  zh: Minecraft 26.3 mod 开发工具：按 JSON 实例登记启动真实的专用服与客户端，通过带鉴权的 HTTP 探针驱动两端，并对世界、UI 与日志状态做断言，覆盖 Fabric / Forge / NeoForge；每轮运行留下取证目录，且不随包分发任何游戏或加载器文件。需 JDK 25 与 Minecraft 26.3 实例。

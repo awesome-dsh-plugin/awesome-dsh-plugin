@@ -1,0 +1,6 @@
+url: https://github.com/Feizhaiqianqian/dsh-email-board
+name: Feizhaiqianqian/dsh-email-board
+category: ui
+description:
+  en: Read-only unread-mail board for the accounts configured in dsh-email — unread messages appear as per-account cards in the DSH right sidebar (sender, subject, time) and refresh on demand.
+  zh: 只读的 DSH 未读邮件看板——把 dsh-email 里配置的各账号未读邮件按账号列成右侧栏卡片（发件人、主题、时间），按需手动刷新。

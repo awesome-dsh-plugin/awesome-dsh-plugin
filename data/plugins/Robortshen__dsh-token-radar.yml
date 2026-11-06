@@ -1,0 +1,7 @@
+url: https://github.com/Robortshen/dsh-token-radar
+name: Robortshen/dsh-token-radar
+category: usage
+description:
+  en: 'Per-call token meter for the DSH composer: a colour-coded pill under the input and a dashboard above it showing every model call (total versus billable input+output), sub-agent spend, tool overhead and cache-versus-fresh input, read only from local session logs.'
+  zh: '输入框下方的彩色 token 胶囊与上方展开面板：逐次调用的双图（总消耗 / 可计费）、子代理开销、工具归因与缓存拆分，只读本机会话日志。'
+icon: https://raw.githubusercontent.com/Robortshen/dsh-token-radar/main/assets/icon-180.png

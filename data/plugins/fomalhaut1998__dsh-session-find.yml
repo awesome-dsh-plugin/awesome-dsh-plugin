@@ -1,0 +1,6 @@
+url: https://github.com/fomalhaut1998/dsh-session-find
+name: fomalhaut1998/dsh-session-find
+category: session
+description:
+  en: Ctrl+F find-in-session for the conversation, powered by the session store rather than the DOM - labels every hit by source (you / assistant / reasoning / tool call / tool result / system), groups results by turn, merges identical snippets, offers prose-vs-everything scope, regex / case / whole-word options, highlights all matches, and copies or exports the result set as Markdown.
+  zh: 会话内 Ctrl+F 全文查找（读会话 store 而非 DOM）：命中按来源分类（你/助手/思考/工具调用/工具输出/系统）、按轮次分组、同文合并，可切「只搜正文 / 搜全部内容」，支持正则/大小写/全词，全量高亮，并能把结果复制或导出为 Markdown。

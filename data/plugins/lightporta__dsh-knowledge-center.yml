@@ -1,0 +1,6 @@
+url: https://github.com/lightporta/dsh-knowledge-center
+name: lightporta/dsh-knowledge-center
+category: memory
+description:
+  en: 'Local knowledge base for DeepSeek Harness: distills workspace and chat-attached PDF, Word, Excel, Markdown, TXT, CSV and HTML documents into Markdown notes, with a VS Code-style viewer, per-workspace access grants and agent tools to search, read and add notes.'
+  zh: 'DeepSeek Harness 本地知识库：把工作区与对话附件中的 PDF、Word、Excel、Markdown、TXT、CSV、HTML 文档提炼为 Markdown 知识，提供类 VS Code 预览、按工作区授权，以及检索、读取和入库的模型工具。'
