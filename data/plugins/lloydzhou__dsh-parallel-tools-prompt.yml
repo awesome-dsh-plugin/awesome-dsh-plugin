@@ -2,5 +2,5 @@ url: https://github.com/lloydzhou/dsh-parallel-tools-prompt
 name: lloydzhou/dsh-parallel-tools-prompt
 category: workflow
 description:
-  en: 'Guides the model to batch ready, independent tool calls while respecting dependencies; prompt guidance only, with no runtime scheduler changes.'
-  zh: '引导模型在遵守依赖关系的前提下合批已就绪且互不依赖的工具调用；仅提供提示指导，不修改运行时调度器。'
+  en: 'Discourages unnecessary sequential tool calls by guiding the model to batch ready, independent calls, potentially reducing wait time, model round trips, and token use when the runtime supports parallel execution; no scheduler changes.'
+  zh: '引导模型将已就绪且互不依赖的工具调用合批，减少不必要的串行调用；在运行时支持并行执行时，有望缩短等待时间、减少模型交互轮次及 token 消耗，不修改调度器。'
