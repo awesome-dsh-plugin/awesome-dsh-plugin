@@ -1,0 +1,6 @@
+url: https://github.com/xuxiaoxiang0721-tech/javmem-dsh-plugin
+name: xuxiaoxiang0721-tech/javmem-dsh-plugin
+category: memory
+description:
+  en: 'Read-only memory tools for the Tobs Bots you list, from a memv2 fact store and a Javis (Graphiti) memory graph: 5 combined tools or 4 per store, each Bot querying with its own token file or profile, without configuring an MCP server per Bot. Needs running memv2 and Javis servers.'
+  zh: '给你列出的 Tobs Bot 挂上只读记忆工具，数据来自 memv2 事实库和 Javis（Graphiti）记忆图谱：合并的 5 个工具，或每个库各 4 个；每个 Bot 用自己的令牌文件或配置文件去查，不用逐个配置 MCP 服务。需要 memv2 和 Javis 服务在运行。'
