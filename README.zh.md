@@ -519,6 +519,7 @@ dsh plugin --profile web add dshmarket
 - [delaydai/dsh-jumpbar](https://github.com/delaydai/dsh-jumpbar) — DSH Web 用户消息跳转条：对话区右缘 minimap 式横杠条带，悬停预览消息内容、点击跳转置顶、拖拽快速浏览，并带当前视口标记。
 - [demacia1314/dsh-airdrop](https://github.com/demacia1314/dsh-airdrop) — ⭐ 支持拖拽上传：任意文件、整个文件夹，拖到窗口任意位置即可；支持远程上传——字节直传服务器的会话工作区，部署在服务器上的 DSH 也能像本地一样拖了就发。
 - [dengsixue-stack/dsh-file-context-menu](https://github.com/dengsixue-stack/dsh-file-context-menu) — 聊天区文件超链接右键上下文菜单增强：在常用应用中打开、打开方式、另存为、复制路径与内容、在资源管理器/Finder 中显示。
+- [dengyinxi100-crypto/ai-calendar-deepseek-harness](https://github.com/dengyinxi100-crypto/ai-calendar-deepseek-harness) — 把完整的日历应用嵌成侧栏面板，并在 DSH 页面上挂一个可拖动、可缩放的定时任务浮窗。注册六个 Agent 工具（状态、查询、新增、修改、删除、总结），读写同一个 SQLite 数据库。日历内的 AI 改走 DSH 已配置的 DeepSeek 路由，每条回复下方显示 token 用量与费用，并按天累计。
 - [Dengzi555/dsh-quotalk](https://github.com/Dengzi555/dsh-quotalk) — 选中回答里的文字或代码，在原生侧边栏中结合上下文实时追问。
 - [dennisrongo/dsh-plugins#dsh-weather](https://github.com/dennisrongo/dsh-plugins/tree/main/plugins/dsh-weather) — shell 浮层中的可拖动天气条，预报与地理编码来自 Open-Meteo；位置跨会话持久保存。
 - [DeveloperYe/dsh-local-files](https://github.com/DeveloperYe/dsh-local-files) — 由 DSH web server 直接提供的本地文件管理页：整盘浏览，图片/PDF/音视频/文本/Markdown/JSON/CSV/沙箱 HTML/docx/xlsx 预览，Range 下载与目录 ZIP，拖拽上传、复制粘贴、带冲突检测的文本编辑、新建/重命名/删除（进回收目录），以及 xlsx 单元格编辑另存为副本。
@@ -983,6 +984,7 @@ dsh plugin --profile web add dshmarket
 - [lilcandi/dsh-music-on](https://github.com/lilcandi/dsh-music-on) — DSH 网页端音乐台。右下角一枚可拖动的胶囊，点开是播放器卡片：播放列表与上一首/下一首、可拖动的进度条、音量旋钮（滚轮或拖动）、三种循环模式、逐曲封面（仅解析出的链接曲目，本地文件用黑胶占位）；音频文件拖到卡片上即播。粘贴 B 站、网易云、QQ 音乐的歌曲或歌单链接即可解析；网易云与 QQ 的音频由宿主签发不透明 HMAC 票据再交给浏览器，浏览器拿不到明文 CDN 地址，也无法伪造。页面底部一条频谱画布，数据来自真实 AnalyserNode，支持圆点/粗柱/方块阵列/对称声波/折线/时域波形六种画法，宽度、柱数、灵敏度、光晕、高度、帧率与位置均可调，整排按容器宽度铺排，间隙会压到半像素下限，再窄就如实略微溢出。另含七套配色主题（鲸鱼蓝白、极光青紫、薄荷绿、落日橙、玫瑰粉、霓虹赛博、极简灰白）。设置分区按界面 / 主题 / 播放 / 链接与频谱分组，并带收藏与历史两张表。
 - [lilcandi/dsh-session-live](https://github.com/lilcandi/dsh-session-live) — 侧边栏会话悬停卡片里的实时预览：这个会话此刻在干什么（正在跑的工具与已运行时长、思考中、上次工具耗时）、附件缩略图点击放大、剥掉注入壳子后的最近一问一答、最近工具图标条、轮数 · token 合计 · 模型名一行概况，外加一个写入 profile 的 12 项设置页。
 - [liliuCourier/dsh-chat-outline](https://github.com/liliuCourier/dsh-chat-outline) — 对话栏左侧常驻大纲：按轮次列出提问与最后回复，关键词过滤与一键跳转，轻便/全面两种历史模式，按住 Ctrl/Shift 单击可跳到轨迹视图同一位置。
+- [lim1202/dsh-agent-theater](https://github.com/lim1202/dsh-agent-theater) — 与 Chat、Trajectory 并列的会话视图，把会话变成角色舞台：支持 Codex Pet 精灵动画与漫画气泡，并在完成时汇报本轮产生的文件和附件。
 - [Limitinfinitude/DSH-Right-Sidebar](https://github.com/Limitinfinitude/DSH-Right-Sidebar) — DSH Web 原生右侧产物栏：按会话管理报告、图片、数据、视频与音频，提供内联预览、产物质检和可按轮次检索的历史目录。
 - [Lin-AxiomSight/dsh-zh-layer](https://github.com/Lin-AxiomSight/dsh-zh-layer) — DSH的双语覆盖层：为插件、命令与技能叠加中文名和功能说明，支持三种显示模式与纯手动触发的AI翻译，且不修改一行DSH源码。
 - [linandadada-pixel/dsh-screenshot](https://github.com/linandadada-pixel/dsh-screenshot) — 输入框里的原生秒开截屏按钮：点一下冻结全屏，微信风格选区浮层（灰色遮罩、绿色边框），确认后截图自动插入当前会话草稿。相机旁的小眼睛可选「先隐藏整个 DSH 窗口再截屏」，截完自动恢复。不调用系统截图浮层，拖动约 10ms/帧，与语音输入并排共存。仅 Windows 10/11 x64；首次截屏会用系统自带的 .NET Framework csc.exe 编译辅助程序。
@@ -1007,6 +1009,7 @@ dsh plugin --profile web add dshmarket
 - [liuhaolong16/dsh-quote-reply](https://github.com/liuhaolong16/dsh-quote-reply) — 把引用与消息正文彻底分开：引用任意助手回合里的段落会打开输入框上方的引用行，随下一回合作为 system-prompt 上下文注入模型（带来源与时间标注），并在回合尾部以可展开的「引用(N)」行显示这一轮到底用了哪几条；引用本地落盘、刷新不丢、按回合认领；宿主与客户端两半体做版本握手并上报兼容结论。
 - [liuhusk/dsh-status-card](https://github.com/liuhusk/dsh-status-card) — 内容区右上角的常驻状态卡片：一行写清本轮时间去向（模型/工具/等你），另列可折叠的任务与进度条、会话目标（可编辑/暂停/继续/清除）、已提交计划（可点开在右栏预览）、本次变更文件、带 token 与耗时数字的子智能体行，以及本会话的后台任务（运行中的行带两段确认的终止按钮，已结束的收进一行计数、默认收起）；内容区收窄时正文向左让位，推到极限自动收成一颗圆钮。
 - [liujia-io/dsh-image-picker](https://github.com/liujia-io/dsh-image-picker) — 在会话输入框添加 📎 选图按钮，通过系统文件选择器选取参考图并注入官方附件管线（缩略图、数量与大小校验、随消息上传），绕开拖拽环境问题。
+- [liujiangnanchenjbguo/dsh-gufa-code](https://github.com/liujiangnanchenjbguo/dsh-gufa-code) — 给 DeepSeek Harness 的 IDE 模式：点工作区「…」菜单一键把主面板变成 VS Code 风格工作台——左侧 Monaco 编辑器、文件树、Git 面板（提交图/推送/拉取/逐文件还原）、SSH 主机与真实 PTY 终端，右侧原样停靠官方 DSH 会话，写代码时工具调用、自动改文件、审批与会话历史照常可用。作者主张「古法编程」：亲手写、每个改动心中有数，AI 是助理，你是软件的第一责任人。
 - [liujuntao123/dsh-mobile-keys](https://github.com/liujuntao123/dsh-mobile-keys) — 为 DSH Web 输入框增加「移动端热键模式」：自动检测移动/触控设备后切换为 Ctrl+Enter 发送、裸 Enter 换行，桌面键位保持不变，并提供设置面板开关、/mobilekeys 命令与 window.__dshMobileKeys 控制台 API。
 - [liuming-dev/dsh-plugins#annotation-rewind-scroll](https://github.com/liuming-dev/dsh-plugins/tree/main/annotation-rewind-scroll) — 为回复和文档添加随下一条消息发送的注释，编辑历史用户消息并从该处重新执行，使用快捷键浏览用户消息或在输入框调出历史输入。
 - [liumorrisclaw/dsh-composer-input-history](https://github.com/liumorrisclaw/dsh-composer-input-history) — 在 DSH 输入框用 ↑ 调回本会话已发送的消息；↓ 前翻并恢复你正在写的草稿，再按一次 ↓ 丢弃草稿、清空输入框。
@@ -1877,6 +1880,7 @@ dsh plugin --profile web add dshmarket
 - [yzhclcl/dsh-plan-build-mode](https://github.com/yzhclcl/dsh-plan-build-mode) — DeepSeek Harness 的 Plan / Build 模式切换：在输入框「完全权限」旁常驻一个下拉框，经内置的 /plan 与 /plan off 命令双向切换当前会话；设置 → 通用里另有一行「默认模式」，决定新建会话的起始模式。
 - [yzyg6/dsh-splitview](https://github.com/yzyg6/dsh-splitview) — 为 DSH 提供拖拽分屏和横向会话标签，保留每个标签的阅读位置，并在刷新或重启后恢复布局。
 - [YZz-S/dsh-workspace-files-explorer](https://github.com/YZz-S/dsh-workspace-files-explorer) — 悬浮工作区文件树浏览器：带行号的代码语法高亮与 Markdown 富文本预览。
+- [yzzshanyin-rgb/dsh-niuma-timer](https://github.com/yzzshanyin-rgb/dsh-niuma-timer) — 挂在 DSH 输入框下方的「牛马费用计时器」手帐小卡——填好到手月薪与上下班时间，实时显示今天已挣多少、本月累计多少，附带日薪/时薪/秒薪、下班进度条、下班后的无偿加班时长、工作日打卡点阵与状态章（打工中、午休中、已下班、无偿加班、休息日）。配置只存在页面 localStorage，不发网络请求。
 - [z1223473749/dsh-QiuYaTools](https://github.com/z1223473749/dsh-QiuYaTools) — AI 智能动效主题、电脑操控、独立窗口、附件预览、Git 管理、会话分窗与批注、跨应用文件拖拽、AI 提示词。电脑操控需在设置里开启；macOS 上需授予屏幕录制、辅助功能与输入监控权限，Windows 独立窗口需 Edge WebView2 运行时；提示词建议与 AI 主题会额外消耗模型用量。
 - [Zai-G/dsh-preset-workshop](https://github.com/Zai-G/dsh-preset-workshop) — 预设工作台：逐方案编辑人设、系统提示词段和工具描述，选择工具与技能，预览请求组成，并通过 JSON / YAML 导入导出配置。
 - [zayyehtut/dsh-github-panel](https://github.com/zayyehtut/dsh-github-panel) — DeepSeek Harness 的 GitHub 面板：连接状态、仓库概览、个人资料检查与安全元数据编辑，集中在一页。
