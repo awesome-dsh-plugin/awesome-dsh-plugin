@@ -1,0 +1,6 @@
+url: https://github.com/SonettoGu14/dsh-session-smart-rename
+name: SonettoGu14/dsh-session-smart-rename
+category: session
+description:
+  en: "Adds a Smart rename action to the sidebar session menu: it reads the conversation, asks the same model the session uses to propose a category and a short topic, and pre-fills an editable title that the user confirms before saving."
+  zh: "在侧边栏会话菜单加入「智能重命名」：读取对话内容，让会话所用的模型给出分类与简短主题，预填可编辑的标题，用户确认后保存。"
