@@ -3429,7 +3429,7 @@ dsh plugin --profile web add dshmarket
 
 ### 💬 会话与消息
 
-- [1010231693/dsh-auto-compaction#dsh-auto-compaction](https://github.com/1010231693/dsh-auto-compaction/tree/master/packages/dsh-auto-compaction) — 对本地模型友好的会话自动压缩插件：压缩时不会触发本地模型重读历史，节省大量时间；压缩触发点与压缩会话的保存内容可由用户自定义。安装后需把 Agent 预设的 compaction-basic 槽位指向 dsh-auto-compaction-engine（或在设置页保存一次切换）；在此之前仍走原生压缩。
+- [1010231693/dsh-auto-compaction#dsh-auto-compaction](https://github.com/1010231693/dsh-auto-compaction/tree/master/packages/dsh-auto-compaction) — 对本地模型友好的会话自动压缩插件：只在上下文接近填满时才压缩，并让模型基于已缓存的前缀撰写结构化交接摘要，因此压缩不会使本地引擎重读全部历史。触发比例、摘要模板、显示样式与逐预设生效范围均可配置。安装即可：bundle 会自行挂载到 Agent 预设，重启 DSH 后接管；卸载即恢复原生压缩。
 - [1010231693/dsh-prompt-bar](https://github.com/1010231693/dsh-prompt-bar) — 把当前会话的第一条提问常驻在对话区上方，滚动也不消失：一键复制，面板列出本会话发过的全部提问（点某一行直接跳到那条消息，够不着会自动往前翻页），另有十套外观可在面板里即选即换（含四套亮色）。
 - [111222cjyq/dsh-curate](https://github.com/111222cjyq/dsh-curate) — 面向 DSH 会话的人工上下文整理工作台：可为整轮或单条消息标记「重要（原文保留）／一般／次要」，不调用模型即可改写用户、助手、工具结果与注入上下文消息，再按标记区间用模型生成的摘要压缩，或调用官方 /compact（范围由官方压缩器决定）；每次写入前都会生成一份本地 JSON 备份。
 - [123dbl/dsh-side-session](https://github.com/123dbl/dsh-side-session) — 主会话进行中也能一键新开独立的可续聊旁会话：从输入框 ＋ 命令菜单选 side-chat 即开即用，主会话不受影响。
@@ -3982,7 +3982,7 @@ dsh plugin --profile web add dshmarket
 - [tuogusa/dsh-session-nav](https://github.com/tuogusa/dsh-session-nav) — 对话旁的悬浮按钮，打开当前会话全部提问的可搜索列表并快速跳转；悬浮弹出/移出平滑关闭。
 - [tuogusa/dsh-session-tags](https://github.com/tuogusa/dsh-session-tags) — 为会话添加标签，并在 Web 设置面板中按标签搜索会话。
 - [txlznbzsdj-collab/dsh-session-delete](https://github.com/txlznbzsdj-collab/dsh-session-delete) — 在侧边栏会话菜单添加「删除」项，经二次确认后硬删除该会话。
-- [Ultronen/dsh-archived-chats](https://github.com/Ultronen/dsh-archived-chats) — 管理已归档与未归档会话，支持搜索、只读预览、标签备注、工作区归档、ZIP 备份、来源分支、手动残留会话检查和自动检查更新；保留旧回收记录恢复，停用自动清理。
+- [Ultronen/dsh-archived-chats](https://github.com/Ultronen/dsh-archived-chats) — 按工作区管理已归档与未归档会话，支持独立范围正文搜索、上下文预览、标签备注、ZIP 备份导入导出、会话谱系、永久删除确认与失败重试，以及官方宿主更新。
 - [uugvkbvkdjbsdbvwxxl/dsh-archived-chats](https://github.com/uugvkbvkdjbsdbvwxxl/dsh-archived-chats) — 在设置里按工作区分组浏览已归档会话，可筛选、搜索、一键恢复，或把会话日志从磁盘彻底删除。
 - [uwu9039/dsh-unarchive](https://github.com/uwu9039/dsh-unarchive) — 列出已归档会话、预览内容、恢复到原工作区，并提供可选的归档二次确认。
 - [v93013520/dsh-abba-secret-chat](https://github.com/v93013520/dsh-abba-secret-chat) — 装进 DeepSeek Harness 右侧栏的一次性双人密码聊天：端到端加密（服务器只见密文），支持图片与截屏，结束即彻底清理，关掉 DSH 即消失。
@@ -4219,7 +4219,7 @@ dsh plugin --profile web add dshmarket
 - [EPCN-fla/dsh-observational-memory](https://github.com/EPCN-fla/dsh-observational-memory) — 在后台将会话工作提炼为观察和反思，以便在上下文压缩后保留会话上下文。
 - [eryucheng/dsh-suzu-memory](https://github.com/eryucheng/dsh-suzu-memory) — 为 DeepSeek Harness 提供会话独立的长期记忆、记忆管理、人设设置和压缩提示词。
 - [EternalNight996/dsh-memory-eternal](https://github.com/EternalNight996/dsh-memory-eternal) — 给 DeepSeek Harness 装上自研「第二大脑」：对话结束自动把值得复用的内容沉淀成本地 Markdown 知识卡（自研去重、CJK 检索、可 git 管理），设置页提供图形化知识库 + 交互式知识图谱（图例过滤、时间维、框选、合并、导入导出）。
-- [EternalNight996/memory-eternal](https://github.com/EternalNight996/memory-eternal) — 自研 DSH 记忆插件：SQLite 持久存储 + 数据库层审核守卫（enforceAudit）+ 审计日志。对话结束自动沉淀知识卡，Agent 经 memory_recall 按需召回，支持 Claude Code/Codex/Cursor 多智能体共享，零外部依赖。
+- [EternalNight996/memory-eternal](https://github.com/EternalNight996/memory-eternal) — 别的记忆插件让 AI 记住更多，我们让 AI 只记住对的：Agent 只能提案，人工审核才进主库（三库分离 + 不可变审计日志）；召回走 SQLite FTS5/BM25、零模型调用（实测 p50 2.3ms），记忆账本摊开召回成本与有用率；一个库接 DSH / Claude Code / Codex / Cursor / 任意 MCP。
 - [EvoMap/evolver-dsh-plugin](https://github.com/EvoMap/evolver-dsh-plugin) — 越用越聪明的 harness，告别金鱼记忆。每条 prompt 前，Evolver 从本地经验和 EvoMap 网络召回一条验证过的策略；回合结束后，它凭测试结果、改动是否被保留、你的下一句反馈给策略打分，再回报网络按证据加权。每一次成功都变成下一次的捷径，每一次失败都变成下一次的避坑指南。
 - [fangqiing/dsh-knowledge-lite](https://github.com/fangqiing/dsh-knowledge-lite) — 本地知识库：每篇笔记一个 Markdown 文件，支持标签、层级目录、全文检索、附件用系统默认程序打开、Office 零依赖文本抽取，以及引用到对话。面向宿主 DSH 0.2.0-rc.2；Windows 下默认根目录为 E:/dsh-kb。
 - [fanyingnie2163663/dsh-whale-journal](https://github.com/fanyingnie2163663/dsh-whale-journal) — 给陪伴型 agent 的日记 / 叙事记忆：按天、按 scope 写「自己视角」的话，每条尽量能回指到当天的消息；附带只读日记页（简笔画 / 照片跟着句子走）与接地审计。
@@ -6338,6 +6338,7 @@ dsh plugin --profile web add dshmarket
 - [MaRi23333/dsh-fish-tts](https://github.com/MaRi23333/dsh-fish-tts) — 朗读助手回复（仅支持 Fish Audio API，需自备 Key）：逐条朗读、自动朗读开关，设置页可配模型、音色 reference_id、加密 API Key 与代理。
 - [martindye/dsh-voice](https://github.com/martindye/dsh-voice) — DSH Web 的双向语音：用统一输入框听写、用朗读按钮与自动朗读听回复，任意设备可用。需 DSH 0.1.7+、Node 22+、Python 3（含 numpy 与 requests）、TTS 模型与麦克风。
 - [mhlywxl/dsh-coding-sound](https://github.com/mhlywxl/dsh-coding-sound) — 模型输出时演奏生成式背景音乐，完成、审批与等待操作各有独立提示音：不盯屏幕也能听出 Agent 在思考、仍在工作还是在等你。
+- [most-silence/dsh-record](https://github.com/most-silence/dsh-record) — 在输入框加一个麦克风按钮，录音按 MP3（默认）、WAV 或 WebM 编码，并自动作为会话附件挂进当前 Prompt。文件格式与录音目录（跟随当前项目空间，或自定义文件夹）都在「设置 → 插件」里该插件自己的详情页配置；录音经同源守卫的宿主路由落盘，文件名清洗并拒绝路径穿越。
 - [naili0712/dsh-gsv-local](https://github.com/naili0712/dsh-gsv-local) — 把本机 GPT-SoVITS 接进 DeepSeek Harness：随 DSH 启停引擎、只念该说出口的那一句；自带默认音色，只需填好本机 GPT-SoVITS 的 runtimeDir。
 - [NewDaNew/dsh-voice-input](https://github.com/NewDaNew/dsh-voice-input) — Web UI 语音输入：输入框一键麦克风按钮，基于 Web Speech API 语音转文字填入草稿，可选识别后自动发送。
 - [NMDwhy66154/dsh-voice-realtime](https://github.com/NMDwhy66154/dsh-voice-realtime) — 在 DeepSeek Harness 输入框里做实时语音转文字：边说话边显示识别结果，说完点完成自动插入光标处，可切换麦克风，本地 sherpa-onnx 推理、音频不出本机。
@@ -8656,7 +8657,7 @@ dsh plugin --profile web add dshmarket
 - [Shark00I/dsh-audit](https://github.com/Shark00I/dsh-audit) — 审计 DeepSeek Harness 插件：安装前只读扫描并按 S–D 分级；装好后记录插件启停、敏感工具调用与每个插件的 token 估算，全部收在一个设置面板里。
 - [Shiyuedong-Jade/DM-security](https://github.com/Shiyuedong-Jade/DM-security) — 只读安全评估达梦 DM8 数据库：60 项检查，附等保 2.0 控制点对照，生成 HTML 报告。需 Java 8+ 并自备达梦 DmJdbcDriver jar。
 - [shuxue6662-a11y/dsh-risk-guard](https://github.com/shuxue6662-a11y/dsh-risk-guard) — 零打扰审计与保险丝拦截：静默记录每次工具调用并做纯规则风险评分（含累积加分、风险等级分布、归档保留期清理），只拦不可逆灾难（受保护路径删除、磁盘擦除、force push 到受保护分支/引用、凭据外发），/risk-guard 输出脱敏操作账单并支持 --since 时间过滤。
-- [siml1169/ShyPie#dsh-privacy-gate](https://github.com/siml1169/ShyPie/tree/main/plugins/dsh-privacy-gate) — 在工具结果文本写入会话日志前打码（错误结果的元数据不会被改写），拒绝 read_image 及 allowPaths 之外的二进制/文档读取，提供 privacy_extract、privacy_ocr、privacy_scan、privacy_rehydrate 工具（PDF/OCR 需要单独安装并配置 extractCli 的本地提取器），并在 DSH 发出模型请求前执行失败关闭的 llm/stream 出口检查。
+- [siml1169/ShyPie#dsh-privacy-gate](https://github.com/siml1169/ShyPie/tree/main/plugins/dsh-privacy-gate) — 面向 ShyPie 隐私优先工作流的 DSH 主机插件：在写入会话日志前本地提取附件图片及 PDF/Office 文件；默认 filter 模式保留本地文本（可选用本地掩码）；阻断无法掩码的媒体/BLOB；提供本地 privacy_extract、privacy_ocr、privacy_scan、privacy_rehydrate 工具；拒绝 read_image 及 allowPaths 之外的二进制/文档读取；并在 DSH 发出模型请求前执行失败关闭的 llm/stream 出口检查。
 - [simon300000/dsh-auto](https://github.com/simon300000/dsh-auto) — 为 WebUI 增加 Auto Approve 权限档位，由全新且受限的审查 Agent 逐次允许或拒绝审批请求。
 - [sjh9714/dsh-movein#plugin](https://github.com/sjh9714/dsh-movein/tree/main/plugin) — 为 DSH 补上按工具粒度的权限规则：在 tools/pre-execute 强制执行 deny/ask 清单，规则语法与 Claude Code 相同，不迁移也能单独用。
 - [slow-stack/euthyna](https://github.com/slow-stack/euthyna) — 面向 AI 编码代理的确定性安全审计事实与结论门禁：euthyna history 把每行被删代码归因到提交并标记安全修复类删除（--origins 追到最初引入者），euthyna coverage 报告哪些改动符号从未被测试调用，euthyna gate 用六道门禁逐条校验结论，拿不出证据的一律降级为观察。
