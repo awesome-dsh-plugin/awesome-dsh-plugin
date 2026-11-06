@@ -1,0 +1,5 @@
+url: https://github.com/pravets/dsh-edt-projects/tree/main/packages/dsh-edt-projects
+name: pravets/dsh-edt-projects#dsh-edt-projects
+category: tools
+description:
+  en: 'MCP hub for 1C development: keeps 1C:EDT connected through EDT-MCP, starts BSL Language Server with workspace roots on demand, and adds per-project settings, a read-only documentation wiki, model rules and SonarQube/GitLab skills.'
