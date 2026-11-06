@@ -1,0 +1,8 @@
+url: https://github.com/SilverKurali/dsh-mesh-access
+name: SilverKurali/dsh-mesh-access
+category: remote
+description:
+  en: 'Opens a port on the mesh/VPN interface from inside the running DSH process: any device on the mesh — phone, laptop, or a GUI NAS — opens the same web UI you are using, one instance, no second dsh, no SSH.'
+  zh: '在正在运行的 DSH 进程内部把端口开到组网网卡上：组网里的任何设备（手机 / 电脑 / 带界面的 NAS）打开浏览器就是你在用的那个 Web 界面，单实例、单份会话列表，不用第二个 dsh，也不用 SSH。'
+icon: https://raw.githubusercontent.com/SilverKurali/dsh-mesh-access/main/assets/icon-180.png
+tarball: https://github.com/SilverKurali/dsh-mesh-access/releases/latest/download/dsh-mesh-access.tgz
