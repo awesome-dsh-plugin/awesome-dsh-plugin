@@ -1,0 +1,6 @@
+url: https://github.com/JiangHuai24/dsh-github-flow
+name: JiangHuai24/dsh-github-flow
+category: git
+description:
+  en: Registers the github-push skill so every session follows one fixed commit-and-push flow, with a pre-flight secret scan and an abuse-resistant retry policy.
+  zh: 注册 github-push 技能，让每个会话都走同一套提交推送流程，带推送前密钥扫描与防滥用重试策略。
