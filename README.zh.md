@@ -4893,6 +4893,7 @@ dsh plugin --profile web add dshmarket
 - [hellocyhgy/dsh-lit-library](https://github.com/hellocyhgy/dsh-lit-library) — 可治理的文献库：导入论文、抽取全文，每条文献只保留一行索引，并逐字核验摘录能在原文中查到。
 - [hellogit2021/avoid-ai-writing-cn](https://github.com/hellogit2021/avoid-ai-writing-cn) — 中文写作去 AI 味技能插件（AI-isms / AI writing / humanize）：说"去掉AI味"即重写，说"写的不错"自动把新 AI 词汇记入规避表。由知乎圈子"去AI味写作技巧"社区免费提供。
 - [helloHub1212/dsh-windows-mcp](https://github.com/helloHub1212/dsh-windows-mcp) — 通过官方 MCP 客户端桥接层把 CursorTouch/Windows-MCP 桌面自动化服务器接入 DSH，把截屏、UI 树快照、鼠标键盘输入、剪贴板、进程与注册表等工具注册成 mcp__windows__* 供模型调用，并附带 windows_mcp_doctor 诊断工具；Computer Use 默认关闭，需在插件面板里打开。
+- [HenryHe520/dsh-time-pin](https://github.com/HenryHe520/dsh-time-pin) — 为单个对话钉住 as_of 日期与回看范围，使智能体只能使用 \[as_of − span, as_of] 窗口内带日期的证据：窗口变化时只告知一次当前窗口，web_search 结果按发布日期过滤、无日期来源一律排除，首条回复必须确认窗口（缺失时纠正一次）。另对长时间静默的后台任务给出确定性 \[TIME FACT] 播报，并提供只读的 time_pin_status 工具；默认模式不注入、不过滤。
 - [Hercules-debug/huixuan-assistant](https://github.com/Hercules-debug/huixuan-assistant) — 购物助手：在 DSH 对话里搜索、对比、挑选并推荐商品，支持比价与选购建议，覆盖电商购物场景，数据来自拼多多开放平台官方 API，含价格、销量、服务标签、商品图与推广链接。
 - [hestudio-community/dsh-plugin-onenote](https://github.com/hestudio-community/dsh-plugin-onenote) — 只读取你允许的 Microsoft OneNote 笔记本：设备码登录、设置页的笔记本白名单，以及状态、页面列表、搜索、页面内容四个只读工具。
 - [heswy/dsh-video-editor](https://github.com/heswy/dsh-video-editor) — 在 DeepSeek Harness 内通过对话生成与续改视频，支持多轨剪辑、音频波形和 MP4 导出。需要 Node 22、FFmpeg 与 Chrome；音频生成只有在你填入 API key 后才会调用千问 MaaS 接口。
@@ -9181,6 +9182,7 @@ dsh plugin --profile web add dshmarket
 - [Firefly26710Lover/dsh-firefly-pet](https://github.com/Firefly26710Lover/dsh-firefly-pet) — 流萤桌宠：透明置顶的桌面伴侣，走宿主模型聊天、点击切换动画、定时碎碎念、按会话播报任务进度，并可查询账户余额。依赖 DSH Desktop 自带的 Electron 运行时（~/.dsh/electron），缺失时桌宠不会出现；仅支持 Windows。
 - [Firefox2100/dsh-agentic-roleplay#core](https://github.com/Firefox2100/dsh-agentic-roleplay/tree/main/packages/dsh-agentic-roleplay-core) — 为 DSH 提供具有结构化世界、自主角色、持久会话、世界创作、语音与图像生成功能的智能体角色扮演系统。需要安装并启用 Firefox2100/dsh-agentic-roleplay#state。
 - [flhy666/dsh-chatting-pet](https://github.com/flhy666/dsh-chatting-pet) — DSH 桌面宠物：语音聊天、多人设、聊天记忆、B 站视频与 QQ 群记忆（只读本地文件）；「电脑操作」需在面板里显式打开总开关后才响应语音指令，语音聊天需先在 DSH 中启用内置语音输入。dsh-pet（MIT）的 fork，不能与原版同时安装。
+- [dsh-tavern](https://github.com/flizzywine/dsh-tavern/tree/main/tavern-plugin/packages/dsh-profile-bridge) — 在 Windows 和 macOS 的官方 DeepSeek Harness 桌面版安装、更新和切换独立的 DSH 酒馆配置。
 - [Flycat43/liang-desktop-pet#liang-harness-plugin](https://github.com/Flycat43/liang-desktop-pet/tree/main/plugins/liang-harness-plugin) — DeepSeek Harness Web 人物交互插件，支持六档人物与表达风格、四种任务模式、当前会话交流、公开思考摘要和浏览器语音朗读。
 - [flyinghouse-ma/dsh-pet-android-community](https://github.com/flyinghouse-ma/dsh-pet-android-community) — 安卓桌宠社区补丁：需先装上游 dsh-pet（≥0.3.7），另装自签名壳 APK（Android 11+），并在本机常驻 3080→38019 转发；修好悬浮窗无法聚焦导致键盘不弹、聊天发不出去、回复被窗口裁掉三个问题。
 - [Gastronomicluna/Matrix-code](https://github.com/Gastronomicluna/Matrix-code) — 矩阵风格 CLI 对话页：Agent 思考过程化作绿色代码雨倾泻而下，回复照常流式显示。
