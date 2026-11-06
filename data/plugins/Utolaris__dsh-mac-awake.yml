@@ -1,0 +1,6 @@
+url: https://github.com/Utolaris/dsh-mac-awake
+name: Utolaris/dsh-mac-awake
+category: tools
+description:
+  en: Prevents macOS idle sleep while DSH runs, without blocking screen sleep.
+  zh: 在 DSH 运行期间阻止 macOS 空闲睡眠，不影响屏幕休眠。
