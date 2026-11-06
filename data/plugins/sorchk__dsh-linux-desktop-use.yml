@@ -1,0 +1,7 @@
+url: https://github.com/sorchk/dsh-linux-desktop-use
+name: sorchk/dsh-linux-desktop-use
+category: tools
+description:
+  en: 'Control a local Linux desktop from DeepSeek Harness with 17 tools: screenshot, mouse, keyboard, scroll, window, application, display and state-verification control over a native X11 session with XTEST, not Wayland.'
+  zh: '用 DeepSeek Harness 直接操控本机 Linux 桌面，提供 17 个工具：截图、鼠标、键盘、滚动、窗口、应用、显示器与状态校验，基于原生 X11 + XTEST 会话，不适用于 Wayland。'
+icon: https://raw.githubusercontent.com/sorchk/dsh-linux-desktop-use/main/assets/icon-180.png
