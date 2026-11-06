@@ -1,0 +1,6 @@
+url: https://github.com/dungcsnd1133/dsh-video-watch
+name: dungcsnd1133/dsh-video-watch
+category: tools
+description:
+  en: Downloads a video link, samples frames from it, and transcribes the speech so an agent can answer questions about what the video shows; frames still come back without an XAI key, which only the transcript needs.
+  zh: 下载视频链接、从中抽帧并转写语音，让 agent 能回答视频内容相关的问题；没有 XAI key 时仍会返回抽帧，只有转写需要该 key。
