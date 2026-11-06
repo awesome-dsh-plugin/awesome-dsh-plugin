@@ -2,5 +2,5 @@ url: https://github.com/heiyedehen/dsh-whale-whispers
 name: heiyedehen/dsh-whale-whispers
 category: ui
 description:
-  en: "A drawer under the composer that keeps the lines your agent wanted to keep — and a tool that lets it add more."
-  zh: "把 agent 说过的、值得留下的句子收进会话里的小抽屉；它自己也能往里记。"
+  en: "Quote books in the conversation header — one markdown file per chat, capture rules per chat or global, a button under every reply to keep it, trash with restore, search, stats and a random pick. Local-only."
+  zh: "会话头部的「鲸语」：每个对话一本 markdown 语录，可单独设置这个对话要记什么，每条回复旁一键收入，带回收站与恢复、搜索、统计、翻一句，全部只存本地。"
