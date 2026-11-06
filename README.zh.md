@@ -2918,7 +2918,7 @@ dsh plugin --profile web add dshmarket
 - [dingminhua/dsh-connect-trae](https://github.com/dingminhua/dsh-connect-trae) — 将本机登录的 Trae 中国区模型接入 DSH，支持由 DSH 执行工具调用、账号切换，以及 Work/通用积分展示。
 - [dingminhua/dsh-connect-workbuddy](https://github.com/dingminhua/dsh-connect-workbuddy) — 将本机登录的 WorkBuddy 模型（国内版与国际版）接入 DSH，每次刷新按上游目录读取每个模型的积分倍率，支持逐模型图片输入开关、带自动换号的账号池、手动每日签到，以及卡片与输入框里的只读积分胶囊读数。
 - [dingminhua/dsh-subagent-default-model#plugin](https://github.com/dingminhua/dsh-subagent-default-model/tree/main/plugin) — 通过 settings.yaml 为子代理派发配置默认模型，支持单模型与多模型轮换/随机分配策略。
-- [DragonHorizon-xtihc/dsh-connect-opencode-free](https://github.com/DragonHorizon-xtihc/dsh-connect-opencode-free) — 把 OpenCode Zen 免费模型接入 DeepSeek Harness，实时模型发现、设置页逐个启停、一键写入 provider，免 key。
+- [DragonHorizon-xtihc/dsh-connect-opencode-free](https://github.com/DragonHorizon-xtihc/dsh-connect-opencode-free) — 把 OpenCode Zen 免费模型接入 DeepSeek Harness，实时模型发现、设置页逐个启停、一键写入 provider，免 key；请求由本机 OpenCode 客户端代发。
 - [DragonHorizon-xtihc/dsh-connect-trae-models](https://github.com/DragonHorizon-xtihc/dsh-connect-trae-models) — 把本机多个 Trae 账号聚合成一个自动容错换号的模型供应商，附带手动与自动签到、积分与到期监控，以及模型配置设置卡片。
 - [DragonHorizon-xtihc/dsh-connect-workbuddy-models](https://github.com/DragonHorizon-xtihc/dsh-connect-workbuddy-models) — 把本机所有登录过的 WorkBuddy 账号聚合成一个模型池，带手动与自动签到、积分与到期监控、模型倍率，并可在输入框下方切换账号、查看剩余总积分。
 - [drscrewdriver/dsh-llm-openai-completions](https://github.com/drscrewdriver/dsh-llm-openai-completions) — 面向自定义网关（vLLM / LM Studio / 自托管代理）的 OpenAI-completions 兼容适配器：始终 role:"system"、按模型配置驱动思考、Qwen 式 response 切分，并支持视觉模型图片输入（单图 / 多图）。
@@ -8819,6 +8819,7 @@ dsh plugin --profile web add dshmarket
 - [polaris-smart/dsh-devices](https://github.com/polaris-smart/dsh-devices) — 去中心化多设备舰队：mDNS 同网发现、密钥配对、SSH 跨网直连指挥。
 - [qiaohelenjoe/dsh-app#plugin](https://github.com/qiaohelenjoe/dsh-app/tree/main/plugin) — DeepSeek Harness 移动端：用手机使用你电脑上的 DSH。安卓 App 用同一账号登录，在设备列表里选中这台电脑，就能在手机上打开并进入它的 DeepSeek Harness 界面。桌面端插件负责注册与连接，本机不用开公网端口；界面会自己适应屏幕——手机上变成适合手指操作的布局，折叠屏展开或窗口变大时回到桌面布局。PC 端面板可以看到登录态、设备配额、设备列表与 App 下载二维码。
 - [Raiyan007-gb/dsh-remote-tunnel-easy](https://github.com/Raiyan007-gb/dsh-remote-tunnel-easy) — 在设置中扫描二维码，通过 cloudflared 快速隧道在手机上于当前会话中打开 DeepSeek Harness 网页端。
+- [raven3005672/dsh-plugin-im-remote-control](https://github.com/raven3005672/dsh-plugin-im-remote-control) — 飞书机器人远程控制 DSH 会话——消息进入会话，回合结果回到飞书，ask 档的审批可以在飞书里批准或拒绝。
 - [regrevia/dsh-mobile-use](https://github.com/regrevia/dsh-mobile-use) — 手机装进 DSH 右栏：读一次界面 120 ms、200-1300 token，截图那套要 0.5-3.2 s、1.5-2k 图片 token；点一下就是点真机（61 ms），圈一处带圈图和控件回到会话。不截图也能说清屏上有什么、刚才那下点中了没有。需要宿主上的 adb 与 ffmpeg；OCR 兜底仅支持 macOS。
 - [RestRegular/dsh-pocket](https://github.com/RestRegular/dsh-pocket) — 为 DSH 单独做的窄屏移动端 Web 服务，不是把桌面 GUI 缩放塞进手机：自带会话列表与聊天流，随机访问令牌保护，可走局域网、cloudflared / localtunnel / localhost.run 隧道或自有服务器 SSH 反向转发。手机上流式看助手文本、思考、工具调用与结果，能发提示词、停止当前回合、回答阻塞提问与工具审批（含其它会话里等待的），切换模型 / 思考等级 / 权限预置，发送最多 4 张手机上压缩过的照片，并可一键让电脑常亮。
 - [rice-awa/dsh-lan-gateway](https://github.com/rice-awa/dsh-lan-gateway) — 把 DSH Web GUI 发布到局域网/公网，dsh 仍只绑定回环。除显式开启局域网免密外，所有来源均须登录换取 HMAC 会话 Cookie。提供自签名或自定义 TLS、用于明文 HTTP 代理的 secureCookies 覆盖项，以及让局域网纯 HTTP 来源正常打开工作区的 UUID shim。
