@@ -1,0 +1,6 @@
+url: https://github.com/liangyi328/dsh-plugin-zcode
+name: liangyi328/dsh-plugin-zcode
+category: model
+description:
+  en: 'Uses the ZCode desktop client''s on-disk credential to expose its Start Plan as a GLM model provider (GLM-5.3, GLM-5.3-Flash) over the Anthropic Messages protocol. Decrypts the client credential store locally, searches client and CLI data directories for the newest file, and renews the expired business JWT with the stored OAuth token on 401/403. Requires the ZCode desktop client installed and signed in at least once; the client does not need to stay running.'
+  zh: '读取 ZCode 桌面客户端的本机凭据文件，把 ZCode Start Plan 接入 DeepSeek Harness 作为 GLM 模型提供方（GLM-5.3、GLM-5.3-Flash），走 Anthropic Messages 协议。在本机解密客户端凭据库，自动搜索客户端与 CLI 数据目录并选取最新文件，401/403 时用存储的 OAuth token 换新业务 JWT 重试。需要安装并至少登录过一次 ZCode 桌面客户端，客户端无需保持运行。'
