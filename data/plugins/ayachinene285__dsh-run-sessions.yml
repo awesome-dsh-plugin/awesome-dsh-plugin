@@ -1,0 +1,6 @@
+url: https://github.com/ayachinene285/dsh-run-sessions
+name: ayachinene285/dsh-run-sessions
+category: session
+description:
+  en: Adds a This run tab to the sidebar tab strip that dsh-im-connect provides, listing sessions active since DSH started, with current-session highlight, right-click remove/restore and drag-to-reorder.
+  zh: 在 dsh-im-connect 提供的侧栏页签栏里增加「本次启动」，列出本次启动以来有活动的会话，支持高亮、右键移除/恢复与拖动排序。
