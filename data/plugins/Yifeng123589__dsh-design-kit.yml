@@ -1,0 +1,7 @@
+url: https://github.com/Yifeng123589/dsh-design-kit
+name: Yifeng123589/dsh-design-kit
+category: ui
+description:
+  en: "DSH design-delivery plugin with 10 tools for UI lint, design tokens, three-candidate shortlists, JND parameter probes, and PPTX deck check/export/render."
+  zh: "DSH 设计交付插件：10 个工具覆盖界面审查、设计 tokens、三方向粗选、JND 参数精调，以及 PPTX 质检/导出/渲染。"
+icon: https://raw.githubusercontent.com/Yifeng123589/dsh-design-kit/main/assets/icon-180.png
