@@ -1,0 +1,6 @@
+url: https://github.com/pythoner1984/dsh-wechat-todo
+name: pythoner1984/dsh-wechat-todo
+category: workflow
+description:
+  en: 'Turns your local WeChat group chats into a followable todo board: a three-column kanban (todo / doing / needs you) with LLM summaries, automatic flagging of messages that @-mention or reply to you, drag-to-change status, and local-only storage.'
+  zh: '把本地微信群聊变成可跟进的待办看板：三栏（待办 / 进行中 / 需要你）配模型总结、自动标出 @ 你或回复你的消息、拖拽改状态、仅本地存储。'
