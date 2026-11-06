@@ -1,0 +1,7 @@
+url: https://github.com/Fantasy421/dsh-whiteboard
+name: Fantasy421/dsh-whiteboard
+category: ui
+description:
+  en: Shared Excalidraw whiteboard in the sidebar with incremental AI edits, per-session persistence, and image exports.
+  zh: 在侧栏提供人机共享的 Excalidraw 白板，支持 AI 增量编辑、按会话保存和图片导出。
+tarball: https://github.com/Fantasy421/dsh-whiteboard/releases/download/v0.1.1/dsh-whiteboard-0.1.1.tgz
