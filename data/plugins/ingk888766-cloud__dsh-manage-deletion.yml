@@ -1,7 +1,7 @@
 url: https://github.com/ingk888766-cloud/dsh-manage-deletion
 name: ingk888766-cloud/dsh-manage-deletion
 category: session
-tarball: https://github.com/ingk888766-cloud/dsh-manage-deletion/releases/download/v1.2.5/dsh-manage-deletion-1.2.5.tgz
+tarball: https://github.com/ingk888766-cloud/dsh-manage-deletion/releases/download/v1.2.6/dsh-manage-deletion-1.2.6.tgz
 description:
-  en: 'Session deletion manager for DeepSeek Harness: a delete button on every session row, multi-select batch delete across a workspace, a scan page listing every session by time, and a restorable trash that also holds the files each session wrote (restore brings both back).'
-  zh: 'DSH 会话删除管理：会话行一键删除、工作区多选批量删、全会话扫描按时间排列，删除统一进可恢复回收站；会话日志与它自己写过的文件一起进回收站，也能一起还原。'
+  en: 'Session deletion manager for DeepSeek Harness: delete from the sidebar row, the workspace list or a full-store scan; every delete goes to a restorable trash that also carries the files that session wrote (including docx/pdf produced by its scripts), pinned and open-but-idle sessions included, running turns refused, nothing outside the session folder touched by default, zero runtime dependencies.'
+  zh: 'DSH 会话删除管理：会话行一键删、工作区多选批量删、全会话扫描按时间统一清理；删除先进可恢复回收站，会话日志与它自己写过的文件（含脚本生成的 docx/pdf）一起可还原；置顶与打开中的会话可删、运行中的拒绝，会话目录外的文件默认不动，零运行时依赖。'
