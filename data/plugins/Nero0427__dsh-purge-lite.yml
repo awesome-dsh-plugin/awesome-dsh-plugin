@@ -1,0 +1,6 @@
+url: https://github.com/Nero0427/dsh-purge-lite
+name: Nero0427/dsh-purge-lite
+category: identity
+description:
+  en: Trimmed system-prompt injection and host patching for DeepSeek Harness, with reversible patches, a /purge command, CLI and HTTP status endpoints.
+  zh: DeepSeek Harness 提示词注入与宿主补丁精简版，提供可逆补丁、/purge 命令、命令行与 HTTP 状态接口。
