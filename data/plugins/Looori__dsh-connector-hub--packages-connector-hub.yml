@@ -1,0 +1,6 @@
+url: https://github.com/Looori/dsh-connector-hub/tree/main/packages/connector-hub
+name: Looori/dsh-connector-hub#connector-hub
+category: tools
+description:
+  en: 'Connector hub for DeepSeek Harness: browse 13 curated remote MCP connectors in a Connectors tab, authorize them with OAuth or an API key, and keep credentials in the macOS Keychain. MCP tools mount at the profile root and credentials pass through a loopback-only gateway.'
+  zh: 'DSH 的连接器市场：在「连接器」tab 里浏览 13 个精选远程 MCP 连接器，用 OAuth 或 API Key 授权，凭据保存在 macOS 钥匙串。MCP 工具挂在 profile 根目录，凭据只经 loopback 网关转发。'
