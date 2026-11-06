@@ -5,5 +5,3 @@ description:
   en: 'Right-sidebar tab listing the top 30 GitHub repositories in three periods — created within 7 days, created within 30 days, and 20k+ stars still pushed within 30 days. Each row shows the repository name, its own description, language, up to two topics and the star count, and the whole row links to the repository page. Reads the GitHub Search API with a 30-minute cache and falls back to a local proxy port when api.github.com is unreachable.'
   zh: '右侧栏标签页，按三个档位列出 GitHub 星标最多的 30 个仓库：最近 7 天新建、最近 30 天新建、两万星以上且近 30 天有推送。每行显示仓库名、仓库自带的一句话描述、语言、最多两个话题与星标数，整行链接到仓库页。数据取自 GitHub Search API，缓存 30 分钟，api.github.com 不可达时回退到本机代理端口。'
 icon: https://raw.githubusercontent.com/goodboys155/dsh-github-radar/main/assets/icon-180.png
-screenshots:
-  - https://raw.githubusercontent.com/goodboys155/dsh-github-radar/main/assets/screenshot.png
