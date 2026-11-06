@@ -2,6 +2,6 @@ url: https://github.com/luchengfj/qq-bot
 name: luchengfj/qq-bot
 category: identity
 description:
-  en: 'Zero-download QQ bot channel plugin for DeepSeek Harness: an in-panel direct-chat test that handles text and images with no install, no token and no API key (the Harness-selected model answers by default), plus an optional connection to any already-running OneBot v11 server over a forward or reverse WebSocket, with status, self-checks, logs, conversation history and per-user long-term memory.'
-  zh: '零下载的 DeepSeek Harness QQ 机器人通道插件：内置面板「直聊测试」无需安装、无需 token、无需密钥即可收图答题（默认用 Harness 当前选中的模型），可选通过正向或反向 WebSocket 接入任意已装好的 OneBot v11 实现端，并提供状态、运行自检、日志、会话上下文与按用户隔离的长期记忆。'
+  en: 'Zero-download QQ bot channel plugin for DeepSeek Harness: an in-panel direct-chat test that handles text and images with no install, no token and no API key (the Harness-selected model answers by default), automatic local OneBot port discovery and auto-connect with no address entry (never overwriting a manual URL), plus an optional connection to any already-running OneBot v11 server over a forward or reverse WebSocket, with status, self-checks, logs, conversation history and per-user long-term memory.'
+  zh: '零下载的 DeepSeek Harness QQ 机器人通道插件：内置面板「直聊测试」无需安装、无需 token、无需密钥即可收图答题（默认用 Harness 当前选中的模型）；自动探测本机 OneBot 端口并自动连接、无需填地址（不覆盖手工配置）；也可选通过正向或反向 WebSocket 接入任意已装好的 OneBot v11 实现端，并提供状态、运行自检、日志、会话上下文与按用户隔离的长期记忆。'
 icon: https://raw.githubusercontent.com/luchengfj/qq-bot/main/assets/icon-180.png
