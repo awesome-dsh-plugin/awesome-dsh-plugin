@@ -1,0 +1,8 @@
+url: https://github.com/flizzywine/dsh-tavern/tree/main/tavern-plugin/packages/dsh-profile-bridge
+name: dsh-tavern
+category: fun
+description:
+  en: Installs, updates, and switches to a separate DSH Tavern profile on official DeepSeek Harness Desktop for Windows and macOS.
+  zh: 在 Windows 和 macOS 的官方 DeepSeek Harness 桌面版安装、更新和切换独立的 DSH 酒馆配置。
+icon: https://raw.githubusercontent.com/flizzywine/dsh-tavern/main/tavern-plugin/packages/dsh-profile-bridge/assets/dsh-tavern-app-icon-192.png
+tarball: https://github.com/flizzywine/dsh-tavern/releases/download/launcher-v0.2.0-tavern.14/dsh-tavern-launcher-0.2.0-tavern.14.tgz
