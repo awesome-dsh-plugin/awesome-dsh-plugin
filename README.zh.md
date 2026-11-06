@@ -859,6 +859,7 @@ dsh plugin --profile web add dshmarket
 - [Jingxuan-WH/dsh-model-rank](https://github.com/Jingxuan-WH/dsh-model-rank) — 侧栏大模型排行榜：LMArena 盲测评分、Artificial Analysis 智能指数、LiveBench 2.0 能力榜、OpenRouter 周榜/月榜与市场份额，附价格、速度与上下文；另有本机用量仪表盘（只读会话日志统计 tokens、估算花费与模型用量排行）、明细抽屉与 CSV 导出。数据由宿主每日快照，面板打开即显示，并高亮本机已接入的模型。
 - [JinYihang1011/dsh-plugins#dsh-refresh-button](https://github.com/JinYihang1011/dsh-plugins/tree/main/dsh-refresh-button) — 仅 Windows，需 PowerShell 与附带的 install.ps1。在模型选择左侧加一个「界面」菜单：刷新界面、重启 DSH、关闭 DSH，三项都即点即执行；Windows 版 DSH 没有内置的重载或重启入口，这里补上。
 - [JinYihang1011/dsh-plugins#dsh-ui-tweaks](https://github.com/JinYihang1011/dsh-plugins/tree/main/dsh-ui-tweaks) — 一张样式表加两个很小的 DOM 补丁，把第三方侧栏入口拉回与宿主一致：行高、内边距与图标尺寸对齐，选中底色统一，并让定时任务面板与宿主面板互斥、不再互相覆盖。
+- [jiongboy/dsh-table-copy](https://github.com/jiongboy/dsh-table-copy) — 给 DSH Web 里每张 Markdown 表格加一条悬停工具条：一个按钮把表格复制成 Markdown，另一个按钮把它按当前主题背景截成 2 倍图 PNG。
 - [JiuRiWu/dsh-restart](https://github.com/JiuRiWu/dsh-restart) — 给 DSH Desktop 侧边栏底部加一个「重启」按钮：弹出与托盘「退出 DeepSeek Harness」完全相同的原生确认框，确认后优雅关闭并重新拉起。注意：本插件只负责画这个按钮，必须同时应用同一仓库 shell-patch/ 里的外壳补丁，且该补丁要在 DSH 关闭时由 DSH 之外的脚本执行。单独安装插件时按钮为禁用状态，悬停提示会说明原因。配套外壳补丁仅支持 Windows，会改写已安装的 app.asar。
 - [jiuyuechuwuhao/dsh-canvas-preview](https://github.com/jiuyuechuwuhao/dsh-canvas-preview) — Conversation Canvas 标签页：实时预览工作区内的 HTML artifact，并支持本地导出 PNG/JPG/SVG（`npx dsh-canvas-preview`）。
 - [Jiyr0119/dsh-workspace-explorer](https://github.com/Jiyr0119/dsh-workspace-explorer) — 独立单功能的工作区文件树面板：会话头部图标打开当前工作区目录树的动画弹窗；点击或拖拽文件即可把引用插入输入框；自带搜索、行内预览、实时设置与中英双语；零配置，一条命令即装即用。
@@ -1378,6 +1379,7 @@ dsh plugin --profile web add dshmarket
 - [riesbri/dshline#dshline](https://github.com/riesbri/dshline/tree/main/packages/dshline) — DeepSeek Harness 的终端原生 TUI 前端，通过 Harness 能力提供会话、模型、插件、任务、子代理、待办事项和 Provider 配置，并保留真实的终端滚动历史。
 - [rinsoraa/dsh-pulse-rail](https://github.com/rinsoraa/dsh-pulse-rail) — 把 DSH 的轮次导航条变成音乐可视化：每根细横条按自己的频段变长变粗（系统声音用 WASAPI loopback 采集）。只改几何、不加颜色或发光，导航条原有的悬停预览、点击跳转与滚轮滚动都保留。
 - [rivenshanghai/dsh-toomuch-plugins](https://github.com/rivenshanghai/dsh-toomuch-plugins) — 把 DSH Web 侧栏里工作区上方的全局面板入口收成侧栏底部的一个开关。
+- [RockChen87/colorful-notes-dsh](https://github.com/RockChen87/colorful-notes-dsh) — DeepSeek Harness 侧边栏多彩便签，支持增删改、批量删除，以及每天、每周、每月和单次提醒。
 - [romany-saad/dsh-plugins#dsh-drafts](https://github.com/romany-saad/dsh-plugins/tree/main/packages/dsh-drafts) — 找回打了字却没发送就离开的内容：未发送就离开的新 Web 对话不会出现在侧栏，里面的草稿也就找不到了。本插件在下一个新对话的输入框上方按时间倒序列出这些草稿，并显示所属工作区与时间；「打开」带你回到原对话，文字和引用条原样还在；「丢弃」可撤销地删除草稿。
 - [romany-saad/dsh-plugins#dsh-quote](https://github.com/romany-saad/dsh-plugins/tree/main/packages/dsh-quote) — 让模型准确知道你指的是哪一段：在 Web 对话中选中段落，它们会作为引用条进入下一条消息，每条可附可编辑的备注。被引用的段落在发送前保持高亮，悬停引用条显示全文，发送后的消息把每条引用显示为卡片。
 - [rsbsnv/dsh-mobile-adapt](https://github.com/rsbsnv/dsh-mobile-adapt) — 手机上的 DSH 界面优化：侧边栏变可滑动抽屉、手势开关侧栏、宽度可调、返回键逐层退出、按钮放大、回车换行而不是直接发送、键盘不挡输入框、字号不小于 15px。
@@ -5195,6 +5197,7 @@ dsh plugin --profile web add dshmarket
 - [naturalth2012/dsh-ai-nav](https://github.com/naturalth2012/dsh-ai-nav) — 早期导航站风格的 AI 入口页：8 个分类共 95 个核验过的入口，搜索框支持名称、别名与拼音缩写，可跳到站点自带搜索，支持浏览器书签导入；图标走同源代理，页面不直连第三方；另有离线规则推荐，按一句话需求给出互补的工具组合。
 - [Negulons/dsh-freecad](https://github.com/Negulons/dsh-freecad) — 通过 FreeCAD 读写 STEP 模型、量取几何尺寸（距离、角度、直径），并生成带孔表的第一角法二维加工图，可导出 SVG、DXF、PDF、PNG。
 - [NeptuneRY/dsh-deepsearch](https://github.com/NeptuneRY/dsh-deepsearch) — DSH 右侧栏里的多轮深度搜索：每轮把子问题派给多个子代理并行查，再在上一轮基础上继续深挖，最后产出带引用的调研报告。
+- [Nesarf/dsh-shell-surfaces](https://github.com/Nesarf/dsh-shell-surfaces) — 把机器上的执行面收成一个 DSH 工具：WSL、MSYS2、Git Bash、PowerShell、nushell、各语言解释器、一次性容器、ssh、真实终端窗口与真实控制台；每个面报出自己能给的版本，并标出它具备的能力。
 - [nicecx/insta360-ai-content-studio](https://github.com/nicecx/insta360-ai-content-studio) — Insta360 GO 3S 自动每日内容管线：BLE/WiFi 遥控拍摄鱼缸素材、无线取回、ffmpeg 质量评估与决策记录、自动剪辑（选段/旁白/配乐/字幕）、biliup 投稿（默认 dry-run）。
 - [nick-lei/Zuad-deepseek](https://github.com/nick-lei/Zuad-deepseek) — 通过 DeepSeek Harness 管理 Zuad 数字标牌节目、素材、播放排程和设备。需要已有 Zuad 信发系统后台及可用账号，在插件设置里登录，密码只保存在本地。
 - [NIDEXIANG/dwg-reader-plugin-20261029](https://github.com/NIDEXIANG/dwg-reader-plugin-20261029) — DSH 插件：直接读取 DWG/DXF 图纸、PDF 与图片，无需安装 AutoCAD 或 Tesseract；DXF 需本机安装 Python 3 与 ezdxf。
@@ -8424,7 +8427,7 @@ dsh plugin --profile web add dshmarket
 - [ethanrise/dsh-privacy-gateway](https://github.com/ethanrise/dsh-privacy-gateway) — 在对话消息发给模型前，把个人信息替换为占位符（按上下文识别的中文姓名、大陆手机号与身份证号、邮箱、银行卡号，以及用户词库中的词），原文只在本机界面还原显示；并可生成 CSV/XLSX 的脱敏副本。
 - [fb0sh/dsh-pentester](https://github.com/fb0sh/dsh-pentester) — 基于 PTES 的渗透测试插件，采用 Root-Orchestrator 架构，用于 DeepSeek Harness。
 - [floatDreamWithSong/dsh-lifecycle](https://github.com/floatDreamWithSong/dsh-lifecycle) — 【仅支持 Web，不支持 Electron Desktop】专为 Web profile 设计；Windows 支持仅指 Windows 上的 Web 版，不是桌面应用。请勿安装到 Desktop profile，误装可能导致启动或重启失败。安装后立即刷新页面或打开 /login，旧页 401 不代表安装失败。仅未初始化的数据目录展示临时初始密码；已有密码不会因重装而清空或再次展示。首次密码在页面公开展示，终端不打印，请在受控网络立即改密。提供 Web 锁屏、密码／OTP／Passkey、持久登录和壁纸，Windows Web 支持页面一键配置电源服务。Linux/macOS 需部署独立控制服务；npm 更新限独立托管安装，停止会中断运行任务。认证内核改编自 xbzbing/dsh-auth-gateway（MIT），不能与其同装。
-- [flyhai/dsh-auto-approval-frame](https://github.com/flyhai/dsh-auto-approval-frame) — DSH 工具调用的审批框架：一张四档规则表（拒绝／问人／AI 评审／放行）按工具、命令、文件与网络作用面逐条匹配，之后是 AI 快评与深评、人工审批，并带哈希链审计台账和设置页。目标文件只查元数据、不打开文件正文；评审端看到的是命令、目标与裁剪后的写入内容，发出前先做敏感信息脱敏。
+- [flyhai/dsh-auto-approval-frame](https://github.com/flyhai/dsh-auto-approval-frame) — DSH 工具调用的自动审批（自动审核）与审计框架：四档规则表（拒绝／问人／AI 评审／放行）对命令审批、文件读写、网络访问与工具调用逐条拦截，能按规则自动放行或自动拒绝，疑难项交给 AI 审查或人工审批／授权；带权限档、工作区边界、敏感信息脱敏、秘密占位符回填、哈希链审计日志与台账、模拟审批设置页。目标文件只查元数据。
 - [GDWhisper/dsh-web-startup-auth](https://github.com/GDWhisper/dsh-web-startup-auth) — 替换 dsh web 启动器以允许绑定 0.0.0.0，并以账号密码登录为门槛：签名会话 cookie、/api 路由保护、设置面板认证标签页，以及轮换签名密钥使全部会话失效的重置 CLI。
 - [gengwg/dsh-kubectl-guard](https://github.com/gengwg/dsh-kubectl-guard) — 按 kubeconfig context 管控 kubectl 调用的策略插件：本地集群外硬拒绝不可逆操作，其余写操作请求人工确认。
 - [GooDAnDReaDY/dsh-agent-loop-guard](https://github.com/GooDAnDReaDY/dsh-agent-loop-guard) — 为 DeepSeek Harness 提供故障关闭式运行时工具调用循环防护。
