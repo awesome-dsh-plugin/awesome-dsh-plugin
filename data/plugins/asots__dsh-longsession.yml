@@ -1,0 +1,6 @@
+url: https://github.com/asots/dsh-longsession
+name: asots/dsh-longsession
+category: ui
+description:
+  en: 'Bounds the loaded history window of long chat sessions: a composer-dock control trims the transcript back to the last two turns without a page reload, and it auto-trims at the live tail once the window exceeds 600 rows.'
+  zh: '限制长会话已载入的历史窗口：底部统计行提供「清理历史」控件，无需刷新页面即可裁回最近两轮；窗口超过 600 行且停在底部时自动裁剪。'
