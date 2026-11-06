@@ -1,5 +1,5 @@
-url: https://github.com/lifeng4127/dsh-github-sync
-name: lifeng4127/dsh-github-sync
+url: https://github.com/mount9527/dsh-github-sync
+name: mount9527/dsh-github-sync
 category: session
 description:
   en: 'Sync DeepSeek Harness sessions and workspace files to a private GitHub repository for cross-device handoff, with sync badges, search and bulk upload, independent local/remote delete, conflict "pick a side", and multi-device-safe index merging.'
