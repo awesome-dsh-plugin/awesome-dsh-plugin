@@ -946,6 +946,7 @@ dsh plugin --profile web add dshmarket
 - [LCQ-1024/dsh-prompt-enhancer](https://github.com/LCQ-1024/dsh-prompt-enhancer) — 在 DSH 输入框添加提示词增强按钮，将草稿改写为可直接交给 Agent 执行的提示词。
 - [lcthe/dsh-skills-hub](https://github.com/lcthe/dsh-skills-hub) — DSH 技能管理器：浏览、启用/禁用、从 Codex/Claude Code/ZCode/WorkBuddy/QCoderWork 导入，自动发现技能并支持软链接。
 - [lcthe/dsh-timeline-rail](https://github.com/lcthe/dsh-timeline-rail) — DeepSeek Harness 网页会话消息时间轴导航条：消息区右侧等间距刻度，点击跳转，悬浮预览。
+- [lczment/dsh-window](https://github.com/lczment/dsh-window) — DeepSeek Harness 桌面端的窗口关闭行为——可选询问、最小化到托盘或完全退出，记住选择并可在设置中修改，还能把会话或工作区开进独立窗口。
 - [Ledas-as/dsh-claude-video-slider](https://github.com/Ledas-as/dsh-claude-video-slider) — 模仿 Claude UI 的非官方模型与推理强度选择器，使用当前模型实际提供的档位，带紫色像素动画。
 - [lee259/dsh-workbench](https://github.com/lee259/dsh-workbench) — DeepSeek Harness Web 右侧文件工作区，提供源码预览、DSH 捕获差异、多文件标签页和工作区文件树。
 - [LeemanCheung/dsh-whale-animation](https://github.com/LeemanCheung/dsh-whale-animation) — DSH Web 回合状态旁的 60 帧随主题适配的单色鲸鱼深潜动画：传播式水面、无缝闭环、资源内嵌、减少动态效果 PNG 回退，且随生命周期完整清理。
@@ -3501,6 +3502,7 @@ dsh plugin --profile web add dshmarket
 - [chameleonn4/dsh-codex-history](https://github.com/chameleonn4/dsh-codex-history) — 在 DSH 里说一句话就能装上，随后它会读取 ~/.codex/sessions 里的本地 Codex CLI/桌面版聊天记录并在 DeepSeek Harness 里直接使用：输入框下方的面板可列出会话、按关键词与起止日期筛选并一键导入；codex_history 工具让 agent 列出、读取、检索并汇总过往对话；工作目录命中某条 Codex 会话时，新建 agent 会自动注入该会话上下文；Codex 侧出现的新消息会以增量形式推送到进行中的对话；共享目录还能在多台机器之间同步 Codex 与 DSH 的会话记录。只读，不会往 Codex 写回任何内容。
 - [chaquchi/dsh-branch-discussion](https://github.com/chaquchi/dsh-branch-discussion) — 把自包含的子问题软分支到子会话，只把一页以内的结构化摘要带回主上下文。
 - [Charles516z/dsh-autocompress](https://github.com/Charles516z/dsh-autocompress) — 在 DeepSeek Harness 上按固定时间压缩所有空闲会话的上下文：默认每天 08:30 自动执行，错过时间点在下次启动时补做，也可用 /compact-all 命令随时手动压缩，并逐会话报告结果。
+- [chenkai2/dsh-team-admin](https://github.com/chenkai2/dsh-team-admin) — DSH Web GUI 的智能体团队管理：查看任意会话的成员，删除角色及其持久会话（目录移入回收站，可恢复），回收释放的成员名额，让已删除成员不再出现在子智能体选择器与团队面板，并在 0.2.2-rc.1+ 恢复会话页头的只读成员面板；新旧两版智能体团队实现都能用，不需要改 DSH 源码。
 - [chenkui-luo/dsh-session-attachment-repair](https://github.com/chenkui-luo/dsh-session-attachment-repair) — 在设置页列出历史引用了本地附件库中已丢失对象的会话，先备份日志、再把悬空引用替换成文本占位，使这些会话能重新发送消息。修复脚本需要 Node 22.15 及以上；设置卡片目前仅在 Windows 上验证过。
 - [chenproton/dsh-history](https://github.com/chenproton/dsh-history) — 会话历史消息查看：列出当前会话全部你发送的消息，支持排序、搜索、一键复制与点击跳转定位（目标未加载时自动加载更早历史）。
 - [CHIANGANGSTER/dsh-session-window#dsh-session-window-client](https://github.com/CHIANGANGSTER/dsh-session-window/tree/main/plugin/dsh-session-window-client) — 配合仓库的原生 Desktop 壳补丁，为 DSH 会话菜单添加“在新窗口中打开”。
@@ -4931,6 +4933,7 @@ dsh plugin --profile web add dshmarket
 - [JerryLiu369/agent-web-search](https://github.com/JerryLiu369/agent-web-search) — DeepSeek Harness 聚合多上游联网搜索插件：无缝替换原生 web_search，支持模型原生检索、免 Key 上游与富文本引用卡片。
 - [Jesse-njx/dsh-docker](https://github.com/Jesse-njx/dsh-docker) — 类型安全、带护栏的容器控制：ps/logs/inspect/exec/start/stop 与 compose up/down，JSON 输出、项目感知定位、破坏性操作需审批。
 - [Jesse-njx/dsh-skillport](https://github.com/Jesse-njx/dsh-skillport) — 把已有的 Agent Skills（SKILL.md）技能库带进 DSH：扫描 Claude/Codex/Cursor/Gemini 技能目录、注入渐进式索引，按需加载技能正文。
+- [Jfreey/dsh-searxng-search](https://github.com/Jfreey/dsh-searxng-search) — 一键安装本地搜索引擎：无需 API、完全免费、无追踪。聚合多个高效引擎，按你的网络实测自动选出最佳线路。
 - [jiahaozhang516-svg/caopazi](https://github.com/jiahaozhang516-svg/caopazi) — 南京林业大学 ACM AI Hub 每日签到与该校图书馆座位预约（两个站点地址写死），带设置页与完成度角标；面向 Android 上的 DeepSeek Harness Mobile。
 - [jiangzhenguo/dsh-codegraph](https://github.com/jiangzhenguo/dsh-codegraph) — DSH 插件，注册 13 个原生 codegraph_* 工具包装 codegraph CLI，让代理初始化、维护并查询预索引的代码知识图谱（符号查询、区域探索、节点轨迹、callers/callees、影响分析、受影响测试），无需 grep 文件。
 - [jiayan-xu/dsh-codebase-memory](https://github.com/jiayan-xu/dsh-codebase-memory) — codebase-memory-mcp 的代码知识图谱桥：语义符号搜索（BM25）、源码片段、Leiden 社区架构总览、调用/数据流/跨服务追踪、图增强 grep。
@@ -6179,6 +6182,7 @@ dsh plugin --profile web add dshmarket
 - [wang-bool/visual-review](https://github.com/wang-bool/visual-review) — 在 DSH Web 聊天界面内联渲染粘贴/上传的图片，并让纯文本模型“看见”图片：visual_review 工具优先调用任意 OpenAI 兼容多模态 API，未配置时回退本机 Qwen3-VL。
 - [wanshichenguang/dsh-tool-vision](https://github.com/wanshichenguang/dsh-tool-vision) — 面向模型的 image_describe（识图）工具（DashScope OpenAI 兼容接口，qwen3.7-flash）+ 粘贴桥：纯文本模型会话里粘贴的图片在发送时自动转为文件路径并在聊天记录中回显，不再触发图片准入拦截。自带 DASHSCOPE_API_KEY；端点/模型/预算可配置，重定向防护 HTTP 客户端，所有 Agent 预设均可用。
 - [wbb316/dsh-comfyui-image](https://github.com/wbb316/dsh-comfyui-image) — 用本地 ComfyUI 出图：一个 generate_image 工具覆盖文生图、图生图、局部重绘与去背景。
+- [Weilv-D/dsh-pf-stream](https://github.com/Weilv-D/dsh-pf-stream) — 面向智能体的本地视频流感知与定点检视：动/静双尺度画布采样、元数据探测、时间戳与均匀抽帧、局部放大复核；画布按 42px 网格对齐并控制在单图 token 上限内。
 - [whiteS18/dsh-image-generation](https://github.com/whiteS18/dsh-image-generation) — 在设置中配置多个生图供应商，对话通过 image_generate 调用当前选中的模型；图片保存到工作区 generate/image，并在对话中内联显示。
 - [wmk66ds/dsh-vision-unlock](https://github.com/wmk66ds/dsh-vision-unlock) — 移除拦截图片请求的多模态能力门禁：改写 llm.resolveModelInfo 的返回值与适配器模型表，为未声明 input 的路由补上 image 输入能力，使其可以发送和读取图片。不改 app.asar，也不改配置树。
 - [WongYuYe/dsh-appshots](https://github.com/WongYuYe/dsh-appshots) — 给 DSH Desktop 用的窗口截图，支持 macOS 和 Windows：macOS 按两边 Command、Windows 按两边 Ctrl（或点输入框旁相机）捕获当前前台窗口并附加到会话，同时把 VoiceOver 风格的辅助功能树注入为隐藏上下文。
@@ -6269,6 +6273,7 @@ dsh plugin --profile web add dshmarket
 - [lihua12345670-jpg/dsh-bili-audio](https://github.com/lihua12345670-jpg/dsh-bili-audio) — 在 DSH Web 界面挂一个悬浮播放条，粘贴 BV 号或链接就能听 B 站视频的声音，带队列、进度与倍速，并由宿主反向代理绕开 CDN 的 Referer 校验。
 - [LIU118117/dsh-voice](https://github.com/LIU118117/dsh-voice) — 给 AI 加上声音：带情绪的语音合成（有 ChatTTS 用 ChatTTS，否则回退 edge-tts）和唱歌模式，生成 mp3 并可用 ffplay 本机播放。需本机安装 Python 3.10+ 与 edge-tts（ChatTTS 及其模型缓存可选）、ffmpeg/ffplay，并把 cordis.patch.yml 里的 pythonPath/ffmpegPath/ffplayPath 改成你自己的安装路径。
 - [ljz970803/dsh-voice-wake](https://github.com/ljz970803/dsh-voice-wake) — DSH 本地语音唤醒。先说唤醒词，听到提示音后说内容，自动发进 DSH 会话；默认本地识别，音频不落盘。需要 DSH 语音输入服务（speechToText）可用。
+- [lol9706262-source/dsh-cover](https://github.com/lol9706262-source/dsh-cover) — 一句话翻唱：取源或直接用本地文件、分轨、自动定调、经 Applio 跑 RVC 换声、对齐人声、混出三档、过闸门再导出——九个阶段、三个工具、零 npm 依赖。
 - [loveandbeepbrother/dsh-tts-service](https://github.com/loveandbeepbrother/dsh-tts-service) — 多平台语音合成服务：豆包语音 2.0、阿里云百炼和 OpenAI 兼容接口，音色由用户选；助手用 tts_service_say 说话，可按语气分段、每段带一句语气描述，其他插件可复用 ctx.ttsService。
 - [loyalchiiina/dsh-voice-alert](https://github.com/loyalchiiina/dsh-voice-alert) — 每个 turn 结束自动播报完成、出错时播失败提示（用户中断默认不播，子代理会话默认跳过，均可配置）。三种提醒方式：语音、音效、关闭。默认「音效」内置 20 个音效（提醒 10 + 大自然 10），每个音效可指定给完成/失败/审批事件并单独试听，零配置、不需要任何 API Key 与音频文件；语音走火山 TTS，支持克隆音色与预设音色、批量导入音色 ID，并按文案/音色/语速/音调/音量指纹复用已生成的 mp3，未变则不重复合成。第三个「审批」槽位没有自动触发源，只能手动播放。走 winmm/waveOut 原样播放，绝不改动系统音量或静音状态，播放进程独立拉起、DSH 会话销毁也杀不到声音。仅 Windows。
 - [lucagiftzek/dsh-voice](https://github.com/lucagiftzek/dsh-voice) — 为 DSH Web UI 提供朗读与听写：23 种 TTS 与 STT 提供商类型可并排配置，支持按语言路由、文内语言标记、逐句语言检测、逐词高亮，以及 TTS Reader 侧边栏标签页（该标签页需安装 dsh-better-sidebar，其余功能不装也可用）。
