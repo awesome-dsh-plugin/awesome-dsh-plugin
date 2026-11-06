@@ -2,5 +2,5 @@
 name: jediliu005/dsh-duplicate-file-check
 category: tools
 description:
-  en: 'File dedupe toolkit: exact matches by head/middle/tail sampling or full byte compare, near-duplicate MP4s grouped by duration and first-10s frames, plus batch rename and move by extension, UUID, file size or video length. All APIs are local-only.'
-  zh: '文件查重与整理：完全一致支持快速抽样或逐字节严格比对，转码过的视频按抓帧相似度归类；另可批量改扩展名、改 UUID、按文件大小或视频时长重命名并移动。接口仅限本机调用。'
+  en: 'File dedupe and unify toolkit: exact matches by head/middle/tail sampling or full byte compare, near-duplicate MP4s grouped by duration and first-10s frames, batch rename or move by extension, UUID, file size or video length, and MOV/AVI/WMV detected by file header and transcoded to MP4 with the original resolution, frame rate and audio parameters kept. Local-only API.'
+  zh: '文件查重与整理：完全一致支持快速抽样或逐字节严格比对，转码过的视频按抓帧相似度归类；可按后缀、UUID、文件大小或视频时长批量改名移动，并按文件头识别 MOV/AVI/WMV 后转成 MP4（分辨率、帧率、音频参数对齐原片）。接口仅限本机调用。'
