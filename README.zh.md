@@ -382,7 +382,7 @@ dsh plugin --profile web add dshmarket
 - [bingomu/dsh-sticky-wall](https://github.com/bingomu/dsh-sticky-wall) — 常驻 DSH 侧边栏的便签墙：九种纸色、分类、搜索、归档、带稳定条目 id 的待办清单，并支持 agent 读写。
 - [bitterSmilezzz/dsh-model-selector](https://github.com/bitterSmilezzz/dsh-model-selector) — 增强 DSH 输入区的模型选择器：可搜索供应商分组、键盘与无障碍支持，以及内联推理强度滑杆。
 - [bitxeno/dsh-github-picker](https://github.com/bitxeno/dsh-github-picker) — 输入框右下角 GitHub 图标打开当前仓库的 issue/PR 搜索弹窗，数据来自本机 gh CLI，点选即以 URL 或 @owner/repo#number 形式插入引用。
-- [Biu-Bong/dsh-menu-hidden](https://github.com/Biu-Bong/dsh-menu-hidden) — 收起 DSH 里重复的 DeepSeek 账号 / 官方 API 入口，隐藏侧边栏项目、账号菜单的意见反馈与退出登录；桌面版可一键给应用外壳的 main.js 打补丁，把刷新与重启加进应用菜单（需重启应用，DSH 升级后补丁会失效）；推理等级一键写死，新供应商新模型自动补齐。
+- [Biu-Bong/dsh-menu-hidden](https://github.com/Biu-Bong/dsh-menu-hidden) — 懒人菜单：收起模型选择框、设置·模型、子智能体里重复的 DeepSeek 账号 / 官方 API 分组，隐藏侧边栏五项与账号菜单三项（共 14 个开关）；给新模型自动补推理等级（low / medium / high / max）、上下文窗口与图片支持；应用菜单补上刷新与重启，写入前自动备份、可一键还原。
 - [BlackBearCC/dsh-pet-sprite](https://github.com/BlackBearCC/dsh-pet-sprite) — 聊天区里的像素小宠物：从蛋孵化三选一，也可用一句话描述让 LLM 画出自定义形象，自动在消息气泡间平台跳跃，支持 WASD 操控与拖拽，用已配置的模型角色扮演陪聊，养成系统（心情/电量/健康、等级、商店）由真实 token 消耗驱动。
 - [Blackman99/codsh#codsh-bundle](https://github.com/Blackman99/codsh/tree/main/packages/bundle) — 基于 DeepSeek Harness 的终端编码 Agent，提供全屏备用屏幕 UI、轮次感知的会话导航，以及将一句话需求经过规格、TDD 和验收复跑的分阶段 /ship 流程。
 - [blacktaoK/dsh-skill-zh-overlay](https://github.com/blacktaoK/dsh-skill-zh-overlay) — 给 dsh-skill-mcp-panel 的技能卡片加中文说明：展开卡片时显示一句话中文速览、分类标签和几条要点，面板原本渲染的英文描述折进「原文」按钮。手写映射表里没有的英文技能，由宿主用你当前的默认模型按需现场生成并落盘缓存，缓存按原文哈希失效，所以新装的技能不用再手工补条目。技能自带描述已是中文的自动跳过。
@@ -8632,7 +8632,7 @@ dsh plugin --profile web add dshmarket
 - [XiaoSHang05/dsh-rice-guard](https://github.com/XiaoSHang05/dsh-rice-guard) — 同时监视一轮对话的思考流与正文流，模型开始复读时中断该轮。四条检测规则：逐字周期重复、每行只换数字的计数循环、被其他文字隔开的重复行，以及用户自填的短语清单。命中后在全球浮层弹出必须手动关闭的报警卡（可带提示音），「监控」标签页里有开关、阈值与命中历史。检测是本机字符串比对、不调用模型，零 token 开销。
 - [Xieddenv/dsh-brain-kit](https://github.com/Xieddenv/dsh-brain-kit) — 给 AI 编程戴上安全帽：L0 到 L2 分级拦截，把越权操作关进笼子——权限不够就不落盘，改给你一段可直接粘贴的替换稿；路径过两道闸，junction 逃逸也拦得住。
 - [xiezouqu12/dsh-info-records](https://github.com/xiezouqu12/dsh-info-records) — 本机加密的 DeepSeek Harness 账密库：侧边栏管理记录，智能体登录前按站点取用；对话收录默认关闭，逐条可设仅手动；AES-256-GCM 加密，密钥由 Windows DPAPI / macOS 钥匙串 / Linux Secret Service 保护。
-- [xlennart/dsh-auto-review-jev](https://github.com/xlennart/dsh-auto-review-jev) — DeepSeek Harness 审批守护者：权限请求先由审查模型裁决，支持 System One 决策 API 后端（TypeSafe Jev／硅基流动／自部署 Laya）、可配置的低置信度策略与免审白名单。
+- [xlennart/dsh-auto-review-jev](https://github.com/xlennart/dsh-auto-review-jev) — 面向 DSH ^0.2.2-rc.1 的 Jev Review 审批模式：通过 System One（Jev／D3）逐次审查原生及 PTC 内层工具调用，提供审计日志和设置页；需配套 Jev 宿主扩展。
 - [xtd1145/dsh-full-access-switch](https://github.com/xtd1145/dsh-full-access-switch) — 给 DeepSeek Harness 加 Full access 一次性开关：新工作区与新对话默认 danger-full-access 并跳过逐个确认；可作为 dsh bundle 安装，也可用脚本打补丁。
 - [yanli-nyan/dsh-recycle-bin](https://github.com/yanli-nyan/dsh-recycle-bin) — 把删除的文件送进 Windows 回收站，可按 id 列出与还原，并拦截 shell 通道的永久删除。
 - [Yazzyk/dsh-file-shield](https://github.com/Yazzyk/dsh-file-shield) — 屏蔽 agent 对指定文件或目录的读取、搜索、写入与编辑，使其内容不进入对话——含敏感词的文件也在其中，避免它们的文字让之后的 provider 请求以 400 失败。规则在插件页面上点选。
