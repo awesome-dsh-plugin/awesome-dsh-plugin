@@ -2,6 +2,6 @@ url: https://github.com/waafer1/dsh-jipu
 name: waafer1/dsh-jipu
 category: workflow
 description:
-  en: "Reader-first long-form fiction pipeline with outline-first chapters, 14 gate scripts, a 700-seed theme library and a self-test for every script (the scripts run on the host's Python 3)."
-  zh: "读者优先的长篇小说工序：细纲先行、14 个门禁脚本、700 条主题种子，每个脚本自带自检（脚本依赖宿主上的 Python 3 运行）。"
-tarball: https://github.com/waafer1/dsh-jipu/releases/download/v1.6.0/dsh-jipu-1.6.0.tgz
+  en: Reader-first long-form fiction pipeline with outline-first chapters, 17 gate scripts, a 700-seed theme library and self-tests for every script.
+  zh: 读者优先的长篇小说工序：细纲先行、17 个门禁脚本、700 条主题种子，每个脚本自带自检。
+tarball: https://github.com/waafer1/dsh-jipu/releases/download/v1.12.0/dsh-jipu-1.12.0.tgz
