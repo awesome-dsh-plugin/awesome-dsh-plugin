@@ -654,7 +654,7 @@ dsh plugin --profile web add dshmarket
 - [FuqiangCraft/dsh-desktop#packages/dsh-desktop-plugin](https://github.com/FuqiangCraft/dsh-desktop/tree/main/packages/dsh-desktop-plugin) — 桌面级增强套件：原生提问/审批交互通知、屏幕截图工具、多智能体平铺网格视图与轻量级 Tauri 桌面外壳。
 - [FurinaEsE/dsh-ui-zoom-regions](https://github.com/FurinaEsE/dsh-ui-zoom-regions) — DeepSeek Harness 分区域缩放：Ctrl + 滚轮分别为会话顶栏、左侧栏、会话正文和右侧面板设置独立比例（侧栏 25%–300%）；拖动顶栏整条下边界可以把它调矮或调高，调高只增加高度、字大小不变。
 - [FuriousKinght/dsh-restart-button](https://github.com/FuriousKinght/dsh-restart-button) — 在侧边栏底部加一个按钮（仅 Windows），一键重启 DSH 桌面应用，应用回来后页面自动恢复。
-- [furkancak1r/dsh-composer-plus](https://github.com/furkancak1r/dsh-composer-plus) — 一个插件集成多项输入框与侧边栏增强，均可在设置中单独开关：git 改动面板（未提交 / 未暂存 / 已暂存 / 分支差异）、↑/↓ 输入历史、Shift+Tab 切换 /plan、对话中断或失败后一键 ▶ 继续、拖拽调整排队消息顺序、复制会话链接、Auto Review「本对话内允许」、项目状态标记与活跃项目置顶、后台通知、11 种额外界面语言，以及通过插件管理器从 GitHub Releases 自动更新。
+- [furkancak1r/dsh-composer-plus](https://github.com/furkancak1r/dsh-composer-plus) — 一个插件集成多项输入框与侧边栏增强，均可在设置中单独开关：git 改动面板（未提交 / 未暂存 / 已暂存 / 分支差异）、回合回退（仅对话，或对话和文件）、项目记忆（按项目保存笔记，后续对话会读取，默认关闭）、任务看板（按实时状态排列对话的看板）、远程电脑（通过 Tailscale 在同一窗口中打开另一台 Mac 的 dsh，默认关闭）、从文件预览中引用、理清代码库（/untangle-codebase 技能）、报告问题（由默认模型起草 Composer Plus 的 GitHub issue）、一键继续、Auto Review「本对话内允许」、项目状态、11 种额外界面语言，以及从 GitHub Releases 自动更新。
 - [FurryBear2025/dsh-session-drag-move](https://github.com/FurryBear2025/dsh-session-drag-move) — 在 DSH 左侧栏把会话拖到别的工作区，归属真的会变：改写会话日志 header 的 cwd 并把日志目录迁到目标项目下，迁移过程中显示进度条。
 - [future007s/dsh-peak-indicator](https://github.com/future007s/dsh-peak-indicator) — 会话头部徽标：显示 DeepSeek 高峰/闲时状态、当前模型 token 单价，并按真实用量统计会话与每轮费用。
 - [Fyerl/dsh-2d-model-picker](https://github.com/Fyerl/dsh-2d-model-picker) — 使用二维网格，一次拖动同时选定模型与推理强度。
@@ -6973,6 +6973,7 @@ dsh plugin --profile web add dshmarket
 - [hongyue0721/dsh-kimicode-swarm](https://github.com/hongyue0721/dsh-kimicode-swarm) — Kimi Code 风格 swarm：批量并行子 Agent 调度（自适应并发）、/swarm 命令与聊天内实时进度条。
 - [hoyyang/dsh-plan-board](https://github.com/hoyyang/dsh-plan-board) — 思维导图式项目规划与防跑偏：计划→模块→任务 DAG 与拓扑执行序号、Agent 站位、改图人审门、git 交叉核对与证据门禁。
 - [hoyyang/dsh-project-manager](https://github.com/hoyyang/dsh-project-manager) — 项目看板：卡片组泳道自定义阶段，卡片关联落盘项目记忆、挂载仓库与已有会话（可恢复归档）；从卡片开的会话自动读取项目记忆。
+- [huaComPj/dsh-workflow-plugin](https://github.com/huaComPj/dsh-workflow-plugin) — 可配置的串行 Agent 团队工作流，提供 Manager、角色 Actor、独立 Judge 和可视化工作流编辑器。
 - [huajikano/claude-on-dsh](https://github.com/huajikano/claude-on-dsh) — 让 Claude Code 负责项目首问与规划，把任务交接给 DSH，并在回合结束后提供 Claude 验收选项。仅 Windows 可用，且需本机已安装 Claude Code CLI（未自动探测到时请填 claudeCliPath）。它交给 DSH 的新会话会被自动切到 danger-full-access。
 - [huangziyuan-general/dsh-novel-forge](https://github.com/huangziyuan-general/dsh-novel-forge) — 小说写作护栏插件：20 个 novel_* 工具以代码强制事实账本一致性、阶段与落盘门禁、确定性机审与提案制修订；右侧栏工作台提供阅读/听书/润色/校对/全书体检/批量起草，旁路引擎让内部工序不占主对话。
 - [huazhaoyishiba/dsh-roundtable-theater](https://github.com/huazhaoyishiba/dsh-roundtable-theater) — 在原生面板中让产品经理、程序员和挑刺用户进行两轮讨论，支持追问、投票、重答和结论整理。
