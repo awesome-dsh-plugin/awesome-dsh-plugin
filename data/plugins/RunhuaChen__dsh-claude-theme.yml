@@ -1,0 +1,6 @@
+url: https://github.com/RunhuaChen/dsh-claude-theme
+name: RunhuaChen/dsh-claude-theme
+category: theme
+description:
+  en: Claude-style palette and typography for the DSH Web GUI — paper-white surface, near-black ink and terracotta accent derived from the Codex absolutely theme, warm neutral and accent ramps bound to 82 native token overrides for both light and dark, Anthropic Sans/Serif/Mono typography, and interface chrome sized with the content font setting.
+  zh: DSH Web GUI 的 Claude 风格配色与排版——纸白底色、近黑文字与赤陶强调色，在 Codex absolutely 主题基础上重新推导中性色阶与强调色阶，以 82 个原生颜色变量覆盖浅色与深色两套外观；使用 Anthropic Sans、Serif、Mono 三款字体排版，界面外框字号跟随正文设置缩放。
