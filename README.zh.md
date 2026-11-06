@@ -5980,6 +5980,7 @@ dsh plugin --profile web add dshmarket
 - [zaiwenJ/dsh-cdp-browser](https://github.com/zaiwenJ/dsh-cdp-browser) — 通过 CDP 连接已运行的 Chrome/Edge：为 DSH 提供截图、像素断言、DOM/CSS 检查与页面 JS 执行，全程 HTTP + WebSocket、零子进程、零 npm 依赖、无需逐次授权。
 - [zengxiaolou/dsh-annotate-browser](https://github.com/zengxiaolou/dsh-annotate-browser) — DSH 右侧栏里的标注浏览器：通过 CDP 推流并转发输入的实时页面，点选元素或划选文字后，把源码位置、组件栈、样式与裁图带进聊天输入框。需本机 Chrome（Windows 须设置 chromePath）。
 - [zhiqiangme/dsh-plugins#dsh-tavily-search](https://github.com/zhiqiangme/dsh-plugins/tree/main/dsh-tavily-search) — 为内置网页搜索提供 Tavily 后端：在 DSH 进程内提供 127.0.0.1:8787/v1 接口，把搜索请求转成 Tavily 检索；最多 10 个 API Key 存在 DSH 凭据库，按请求轮换，遇鉴权、限流或额度错误自动换下一个；设置卡片可管理密钥、测试搜索并一键接入网页搜索。
+- [ZhongqiXiao/dsh-visual-annotator](https://github.com/ZhongqiXiao/dsh-visual-annotator) — 在真实 Chrome/Edge 页面上拾取、标注、评论并截图元素，把定位、评论与截图一并交给 agent 做前端可视化修改。
 - [zimai233/dsh-image-search](https://github.com/zimai233/dsh-image-search) — 多引擎反向识图聚合：Google Lens、百度、Yandex、TinEye、SauceNAO、IQDB、Ascii2d。
 - [zimai233/dsh-video-downloader](https://github.com/zimai233/dsh-video-downloader) — 检测并下载 B站/YouTube/抖音/小红书视频媒体，带清晰度与格式分析。
 - [zoe1nan/windowseat](https://github.com/zoe1nan/windowseat) — 临窗 Windowseat 的 DSH 宿主插件：在回环地址暴露 HTTP/SSE 端点，供同仓库的 Microsoft Edge 侧边栏扩展读取当前页面、检索本地文件并连接 DSH；扩展需在 Edge 中单独加载；需 Windows 10/11 与桌面版 Edge。
@@ -6748,6 +6749,7 @@ dsh plugin --profile web add dshmarket
 - [yahoolcj/dsh-plugin-zerone](https://github.com/yahoolcj/dsh-plugin-zerone) — 会进化的项目级 Agent：以 SDD 规格驱动掌舵全流程，内置 16 个技能覆盖澄清、PRD、issue、编码、定位、验收、审查；会记忆、会沉淀，越用越懂你的项目。
 - [yangdongzhen590/dsh-knj-extension-center](https://github.com/yangdongzhen590/dsh-knj-extension-center) — 技能中心：按区域浏览技能、从 zip 安装，并支持启用停用、卸载、回收站恢复与搜索。
 - [yanglaofish/dsh-skill-manager](https://github.com/yanglaofish/dsh-skill-manager) — DeepSeek Harness 技能生命周期管理：技能库（纯技能池）、工作区启用白名单、会话勾选三层模型；Web 设置面板与对话页内嵌视图，支持技能文件浏览/编辑、zip 与文件夹批量导入、引擎实际加载校验。
+- [yangyiqun747/dsh-plugin-playbook](https://github.com/yangyiqun747/dsh-plugin-playbook) — DeepSeek Harness 的经验复用与交付闸门：把成功任务沉淀为结构化 playbook，同质任务自动作为原生 Skill 召回；交付闸门经用户确认后，写文件前必须逐项拿到客观证据，否则动作被硬拦截。
 - [Yanshi-Robotics/yanshifu-plugin-cn](https://github.com/Yanshi-Robotics/yanshifu-plugin-cn) — 为《一起手搓机器人》SO-101 课程提供三个技能：yanshifu 读取学员的项目文件，判断进度并建议下一步；ask 根据四份配套资料回答问题；update 检查并更新本地配套资料。
 - [yeemio/dsh-owlrunkit](https://github.com/yeemio/dsh-owlrunkit) — 把 OwlCoda RunKit 技能加入 DSH 技能目录：目标、WorkItem、候选身份、验证回执、交接和恢复保存在项目工件中。只安装指令；项目本地的 owlrunkit CLI 仍需单独安装。
 - [yinhcao/yinchao-ai-music-skill](https://github.com/yinhcao/yinchao-ai-music-skill) — 根据提示词或歌词生成完整 AI 歌曲和 BGM，并支持参考音频创作与歌曲续写。
@@ -8577,6 +8579,7 @@ dsh plugin --profile web add dshmarket
 - [yyfdfsyyf-source/dsh-hard-gate](https://github.com/yyfdfsyyf-source/dsh-hard-gate) — 内置沙箱之上的独立权限闸门：在 danger-full-access 下依然拦截工作区外与受保护路径的写入，未完整读到文件末尾就整文件覆盖时拒绝，破坏性操作前生成 ZIP 还原点与回收站副本。
 - [yyjsdsg/dsh-redact](https://github.com/yyjsdsg/dsh-redact) — 把会话或文档里的密钥、本机路径、内网 IP、邮箱和手机号打码，再分享或提交。
 - [yzxxy010/dsh-workspace-write-plus](https://github.com/yzxxy010/dsh-workspace-write-plus) — 增加工作区修改++权限档，文件工具仍锁在工作区，可用通配符放行 Git Bash 等程序以跳过 Windows 进程沙箱。
+- [zayyehtut/dsh-secret-ask](https://github.com/zayyehtut/dsh-secret-ask) — 为 DeepSeek Harness 提供向用户索取密钥的插件：遮罩卡片把 API 密钥和令牌存入本地凭据库，不进入聊天记录，并只在单条命令中注入。
 - [ZeroClave/zeroclave-dsh-privacy](https://github.com/ZeroClave/zeroclave-dsh-privacy) — 在消息发送给模型前检测和脱敏敏感文本，支持本地正则、浏览器 BERT 或 ZeroClave API 检测及人工审核。
 - [zhang8019/dsh-permission-matrix](https://github.com/zhang8019/dsh-permission-matrix) — 把 DSH 权限拆成 9 个可选预设（3 种沙箱 × 4 种审批），规则 + LLM 双通道四档风险分级，高风险操作需输入批准密码才放行，附 JSONL 审计日志。
 - [zhangmiao03/cloakpack#dsh-cloak](https://github.com/zhangmiao03/cloakpack/tree/main/packages/dsh-cloak) — DeepSeek Harness 的上下文防火墙：成功的纯文本工具结果中的凭据在进入模型之前先变成不透明的 ⟦cloak:category:n⟧ 占位符，原值只保存在进程内存的 agent 级保险库中。36 类内置签名（与 cloakpack git pre-push 守卫共享同一引擎）、针对未知格式的键名规则、自定义正则、dry-run 模式、审计日志与 /cloak 命令。
