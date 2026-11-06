@@ -30,23 +30,35 @@ export function needsRefresh(entry, { nowMs, maxAgeMs }) {
   if (!Number.isFinite(checked)) return true
   return nowMs - checked >= maxAgeMs
 }
-
 /**
  * The entry after a successful packument fetch. Never returns anything but a
  * full entry: the caller must not call this for a failed fetch.
+ *
+ * `stamp` is a full ISO timestamp, not a bare date. `probe-npm.mjs` writes
+ * `checkedAt` as `YYYY-MM-DD`, which parses to UTC midnight, so a date-only
+ * value cannot express "checked two hours ago" — an age gate keyed on it would
+ * reopen the whole catalog on any build after 06:00 UTC. Writing a timestamp
+ * here keeps the gate meaningful; `ageDays()` in probe-npm.mjs does
+ * `new Date(checkedAt)`, so it reads both shapes (date-only rows from the
+ * nightly simply look up to a day old and get refreshed once).
+ *
+ * Only the no-latest branch carries prior facts forward. On the success branch
+ * absent publish facts are written as null, matching `publishFields()` in
+ * probe-npm.mjs: a release that declares no `engines.dsh` must land in the
+ * site's "declares nothing" bucket instead of inheriting the previous version's
+ * range, and a missing `time[latest]` must not date the new version to the
+ * previous release.
  */
-export function nextEntry(entry, meta, today) {
-  const prior = {
-    version: typeof entry.version === 'string' ? entry.version : null,
-    publishedAt: Number.isInteger(entry.publishedAt) ? entry.publishedAt : (entry.publishedAt ?? null),
-    enginesDsh: typeof entry.enginesDsh === 'string' ? entry.enginesDsh : (entry.enginesDsh ?? null),
-  }
+export function nextEntry(entry, meta, stamp) {
   const latest = typeof meta?.['dist-tags']?.latest === 'string' ? meta['dist-tags'].latest : null
   if (latest === null) {
-    // Verified, but the package currently has no latest tag: keep the last
-    // known publish facts rather than emptying the column for every entry
-    // whose dist-tags are momentarily missing.
-    return { npm: entry.npm, ...prior, checkedAt: today }
+    return {
+      npm: entry.npm,
+      version: typeof entry.version === 'string' ? entry.version : null,
+      publishedAt: Number.isInteger(entry.publishedAt) ? entry.publishedAt : null,
+      enginesDsh: typeof entry.enginesDsh === 'string' ? entry.enginesDsh : null,
+      checkedAt: stamp,
+    }
   }
   const iso = meta.time?.[latest]
   const seconds = typeof iso === 'string' ? Math.floor(Date.parse(iso) / 1000) : NaN
@@ -55,9 +67,9 @@ export function nextEntry(entry, meta, today) {
   return {
     npm: entry.npm,
     version: latest,
-    publishedAt: Number.isInteger(seconds) && seconds > 0 ? seconds : prior.publishedAt,
-    enginesDsh: dsh ?? prior.enginesDsh,
-    checkedAt: today,
+    publishedAt: Number.isInteger(seconds) && seconds > 0 ? seconds : null,
+    enginesDsh: dsh,
+    checkedAt: stamp,
   }
 }
 
@@ -75,7 +87,7 @@ export function isChanged(before, after) {
  * map plus the counts the build prints. `fetchPackument` is injected so the
  * failure path (a throwing stub) is testable without a network.
  */
-export async function refreshEntries(map, { nowMs, maxAgeMs, today, fetchPackument, concurrency = 8 }) {
+export async function refreshEntries(map, { nowMs, maxAgeMs, stamp, fetchPackument, concurrency = 8 }) {
   const next = { ...map }
   const due = Object.keys(map).filter((url) => needsRefresh(map[url], { nowMs, maxAgeMs }))
   let refreshed = 0
@@ -98,7 +110,7 @@ export async function refreshEntries(map, { nowMs, maxAgeMs, today, fetchPackume
         continue
       }
       const before = next[url]
-      const after = nextEntry(before, meta, today)
+      const after = nextEntry(before, meta, stamp)
       if (isChanged(before, after)) changed += 1
       next[url] = after
       refreshed += 1

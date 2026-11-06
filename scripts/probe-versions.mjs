@@ -10,7 +10,9 @@ if (!fs.existsSync(MAP_FILE)) {
 }
 
 const map = JSON.parse(fs.readFileSync(MAP_FILE, 'utf8'))
-const today = new Date().toISOString().slice(0, 10)
+// 写入完整时间戳（不是 YYYY-MM-DD）：日期会解析成当天 UTC 零点，6 小时门禁就退化成
+// 「距上次巡检那天零点的小时数」，任何 06:00 UTC 之后的构建都会认为全部过期。
+const stamp = new Date().toISOString()
 const maxAgeMs = MAX_AGE_HOURS * 3600 * 1000
 
 async function fetchPackument(name) {
@@ -26,7 +28,7 @@ console.log(`${Object.keys(map).length} entries, checking which are older than $
 const { map: updated, refreshed, changed, skipped, due } = await refreshEntries(map, {
   nowMs: Date.now(),
   maxAgeMs,
-  today,
+  stamp,
   fetchPackument,
 })
 
