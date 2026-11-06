@@ -1,0 +1,6 @@
+   url: https://github.com/taoqizhang55-code/stockproof/tree/main/dsh-plugin
+   name: taoqizhang55-code/stockproof#dsh-plugin
+   category: tools
+   description:
+     en: 'Stock research tools for US, China A-share and Hong Kong stocks via the stockproof MCP server (Python, pip install stockproof): news, earnings and announcement reads with cited sources, explanations of price moves, a whole-market A-share screen, a quant lab that backtests ideas on point-in-time history with a locked holdout, a portfolio check-up and a local web dashboard; 23 tools.'
+     zh: '通过 stockproof MCP 服务（Python，pip install stockproof）为 DSH 提供美股、A 股、港股研究工具：带出处的新闻、财报和公告解读，涨跌原因解释，全市场 A 股选股，用不偷看未来的历史数据回测想法的量化实验室（近两年数据锁定），持仓体检和本地网页看板；共 23 个工具。'
