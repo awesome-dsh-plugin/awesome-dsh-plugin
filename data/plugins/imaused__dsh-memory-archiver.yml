@@ -1,0 +1,6 @@
+url: https://github.com/imaused/dsh-memory-archiver
+name: imaused/dsh-memory-archiver
+category: memory
+description:
+  en: 'Approval-free memory archiving for DeepSeek Harness: writes Markdown memory files without approval prompts, backs the old file up before any overwrite, marks a revised conclusion as status: superseded in one call, and prunes old backups after 30 days by default (optional size cap). The writable scope is hard-limited to configured memory roots. Companion to dsh-kb-lite, which indexes these files and down-weights superseded ones. Host-only, no npm dependencies.'
+  zh: '免审批的记忆归档：直接写 Markdown 记忆文件，覆盖前自动备份，一次调用即可把被取代的旧结论标成 status: superseded，旧备份默认保留 30 天后自动清理（可设大小上限）。可写范围硬限制在配置的记忆根内。与 dsh-kb-lite 配套，后者负责索引这些文件并对 superseded 降权。宿主侧插件，无 npm 依赖。'
