@@ -1,0 +1,6 @@
+url: https://github.com/GF6364/dsh-rooms
+name: GF6364/dsh-rooms
+category: session
+description:
+  en: 'Cross-session collaboration: every workspace session is a room, rooms in the same group can hand work to each other, and a report goes back only to whoever sent the task. Ships a sidebar panel where dragging a card into a group is the whole setup.'
+  zh: '跨会话协作：工作区里每个会话都是一间房，同一个分组里的房间能互相派活，回报只回到派活的那个会话。侧栏有面板，把卡片拖进分组就完事，不用改配置。'
