@@ -1,0 +1,6 @@
+url: https://github.com/jiahui-huang1/dsh-latex-formula-editor
+name: jiahui-huang1/dsh-latex-formula-editor
+category: ui
+description:
+  en: "Free, offline LaTeX formula editor in the DSH sidebar: ten symbol tiles with hover palettes, ten template groups, live MathJax preview, colour/font/size/environment controls, favourites with titles and search, image and PDF OCR, and nine export formats (SVG/PNG/JPG, LaTeX/AsciiMath/Typst/HTML/MathML/OMML) with escaping and share links."
+  zh: "免费的离线 LaTeX 公式编辑器（DSH 侧栏）：10 个符号磁贴悬停展开分类面板、10 组公式模板、MathJax 实时预览、颜色/字体/字号/环境控制、带标题的收藏夹与搜索、图片与 PDF OCR，以及九种导出格式（SVG/PNG/JPG、LaTeX/AsciiMath/Typst/HTML/MathML/OMML）与转义和分享链接。"
