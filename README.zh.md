@@ -3153,6 +3153,7 @@ dsh plugin --profile web add dshmarket
 - [prgrmrwy/dsh-auto-model-routing](https://github.com/prgrmrwy/dsh-auto-model-routing) — 通过 Jev 调整主会话推理投入而不换模型，为 fresh 子任务独立选择并应用能力与投入，展示决策分布并收集逐回复资源分配反馈。
 - [prgrmrwy/dsh-magpie-connector](https://github.com/prgrmrwy/dsh-magpie-connector) — 把自托管 Magpie 网关按上游归属接入为多个 provider route，原版模型选择器即显示 Magpie (Claude)、Magpie (Codex) 等分组；支持多线路自动切换、只读用量卡片、逐模型默认 effort、priority 档模型的会话级快速切换和可选 Cloudflare Access。
 - [Pummelchen/TinyTitan#dsh-tinytitan](https://github.com/Pummelchen/TinyTitan/tree/main/plugins/dsh-tinytitan) — 把本机 TinyTitan 模型服务接入 Harness：按已安装模型刷新 llm-pi-ai 路由，并挂载一个不做思考的压缩后端。
+- [puppy-bai/dsh-quota-takeover](https://github.com/puppy-bai/dsh-quota-takeover) — 额度接力：在 Our Free Model 之上按你设定的平台顺序与模型档编排一条有序接力链，缺该模型、平台冷却、额度耗尽的格子自动跳过，结果写回 OFM 的 combos；因额度或限流中断后重新编排并向中断的会话补一条「继续」，让回合在下一个平台接着跑，链尾可选聚合渠道兜底模型或 DeepSeek 官方额度。
 - [pure-cow-horse/dsh-model-pool](https://github.com/pure-cow-horse/dsh-model-pool) — 把已配置、运行时注册、本地缓存的模型合并进一个面板，做探测与最小请求测试，一键拉每家渠道的上游 /v1/models 目录，再把要留的模型串成命名方案。虚拟 provider ModelPool 在请求发起时顺延，带按模型冷却、指数退避、图片请求避开纯文本模型、被拒思考档位记忆 10 分钟。另有按天与模型的 token 台账（可导 CSV）和 21 个回归探针。不是 dsh-llm-fallbacks 的 fork。
 - [pyh-pan/dsh-openai-oauth](https://github.com/pyh-pan/dsh-openai-oauth) — 通过官方 Sign in with ChatGPT 授权在 DeepSeek Harness Desktop 使用 ChatGPT 订阅，支持动态 Agent 注册及原生模型和推理强度选择。
 - [QGG4588/dsh-model-failover](https://github.com/QGG4588/dsh-model-failover) — DeepSeek Harness 的模型故障自动转移：可选一个或多个供应商，池=所选供应商内的全部模型；请求失败（限流、配额、超时、服务端或传输错误）时自动用池中下一个未试过的模型重试，整池试尽则交还原错误。在输入框右下角模型选择器旁的「故障转移」面板或 model_failover 工具里配置，无需重启。
@@ -4916,6 +4917,7 @@ dsh plugin --profile web add dshmarket
 - [hezhongtang/dsh-capability-optimizer](https://github.com/hezhongtang/dsh-capability-optimizer) — 以 advisor / reviewer / designer 角色无头调用 Claude Code，回复作为参考答案。
 - [HildebrandYu/dsh-open-with](https://github.com/HildebrandYu/dsh-open-with) — 讓 DSH 擁有自己的「副檔名 → 開啟 app」規則：卡片、側邊預覽與變更審查用你指定的 app 開啟， 而 macOS 的 Finder 雙擊預設不受影響。規則在設定頁編輯、存於 ~/.dsh/open-with.json； 「顯示文件位置」仍走 Finder。
 - [Hongcheng-LI/dsh-zotero](https://github.com/Hongcheng-LI/dsh-zotero) — 通过 Zotero 本地 API（无需 API Key，Zotero 7+）操作文献库：检索条目与分类、读元数据/摘要/PDF 全文（缓存未命中时现场解析）、下载附件、管理笔记；API 地址、目标文献库与限额均可配置。
+- [hongdougao111/dsh-bagu](https://github.com/hongdougao111/dsh-bagu) — 管 AI 对外说话的两道门。一、守门：发出去之前拦掉「谁都能说」的形状——空转（动词配宏观名词，如「优化了代码结构」）、空形容词、万能话、模板开场白、git commit/PR/review 的套话、把代码念一遍的注释。聊天、评论、邮件、commit message、PR 描述、review、issue、文档、代码注释都覆盖。过了回 OK，没过回一行说明怎么改。二、接梗：对方抛出网络梗时不猜、不联网搜——内置 6792 条梗词库，在模型开始思考之前就查好，把词条的「用法」字段（这个梗该怎么接）直接塞进上下文。只认标题/slug/别名的精确命中，不做模糊匹配，所以日常闲聊不会误触发。词库用 Node 自带 node:sqlite，零依赖，单次查询 1.6ms。设置页：守门开关、严格模式、提示节开关、梗库开关、每轮自动查、四档玩梗尺度滑杆（很收着/有点度/跟着玩/放得开，写行为不写标签）、AI 接话开关（默认关，走会话自己的模型不用填 key）、粘一段当场试、三个阈值。所有判断都在本地跑，不调模型。
 - [HorusJiang/dsh-jev-tools](https://github.com/HorusJiang/dsh-jev-tools) — 把 Jev 判定变成三件自动动作的 DeepSeek Harness 插件：精简超长工具输出、筛查抓取页面里针对模型的指令、挑选下一步该用的 skill；另有 jev_ask 与 jev_gate 两个工具、可跨重启的判定账本，以及 /jev-status 报告。需要 TypeSafe API key，没有时完全惰性，不发任何请求。
 - [HorusJiang/dsh-map-tools](https://github.com/HorusJiang/dsh-map-tools) — 地图与路径规划工具：驾车/公交/步行/骑行路线、地理编码与 POI 搜索。默认零 key 使用 OSM/OSRM 免费数据，可选配置高德 key 获得更优的国内覆盖。
 - [hotheat/dsh-claude-codex-mode](https://github.com/hotheat/dsh-claude-codex-mode) — 讨论阶段只读，改仓库代码一律交给 Codex CLI（插件自带 MCP server）；在插件表单里可在 DSH 主模型与 Claude Code CLI 之间切换，带前置检查，并用写文件 guard 拦截对仓库文件的结构化写入。
@@ -8996,6 +8998,7 @@ dsh plugin --profile web add dshmarket
 - [zexadev/dsh-tether](https://github.com/zexadev/dsh-tether) — 用 Android/iOS 手机远程使用电脑上的 dsh 完整网页界面,经 iroh 跨网点对点打洞直连,不用架任何服务器;打不通才退回 relay,relay 只见密文。
 - [zhaenggg/dsh-ssh-remote](https://github.com/zhaenggg/dsh-ssh-remote) — SSH 远程执行插件集：把会话工作区指向 ssh:// 目录，文件读写、命令与 shell 全部在远程主机上执行。
 - [ZhangFengshun/dsh-remote-ssh](https://github.com/ZhangFengshun/dsh-remote-ssh) — 类 VSCode Remote-SSH 的 DSH 插件：SSH 连接超算/服务器，内置文件页签直读远程文件、终端页签自动 SSH，远程工作区配单往返合并读与结果缓存，含 12 个会话感知的 remote_ssh_* 模型工具。
+- [zhexuany/dsh-remote-access](https://github.com/zhexuany/dsh-remote-access) — 把 DSH Harness Desktop 的 Web GUI 通过 Cloudflare quick/named 隧道、SSH 反向隧道或自定义命令暴露给另一台机器的浏览器，并给出可直接打开的带令牌链接；设置面板与 CLI 可启动、停止并打印链接。需要 DSH Desktop 0.2.1-rc.2 及以上，以及 cloudflared。
 - [zhu1090093659/dsh-web#packages/dsh-remote-web-ui](https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-remote-web-ui) — 手机/PC 远程操控 dsh web 工作区：扫码配对、令牌门控通道、SSE 实时同步，提供移动端与完整桌面 GUI 两种远程形态。
 - [zhu1090093659/dsh-web#packages/dsh-ssh](https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-ssh) — SSH 远程运维面板：Web 终端、SFTP 传输、本地端口转发与一条命令并发集群执行，Agent 与面板共用同一份主机配置。
 - [zhuiyueya/dsh-im-gateway](https://github.com/zhuiyueya/dsh-im-gateway) — DeepSeek Harness 聚合 IM 网关：通过微信、飞书、Telegram、Discord、QQ、WhatsApp 等 20+ 聊天平台驱动 agent，支持统一会话、远程审批和交互提问。默认放行所有能给机器人发消息的人，需要限制请配置 allowedUserIds。
