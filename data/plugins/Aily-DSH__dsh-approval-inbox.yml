@@ -1,0 +1,6 @@
+url: https://github.com/Aily-DSH/dsh-approval-inbox
+name: Aily-DSH/dsh-approval-inbox
+category: workflow
+description:
+  en: 'Turns blocking approvals into a background inbox: the agent queues the request and keeps working, and you approve, reject or batch-approve later from a persistent panel.'
+  zh: '把阻塞式审批变成后台收件箱：Agent 把请求入队后继续干活，你在常驻面板里稍后批准、拒绝或批量处理。'

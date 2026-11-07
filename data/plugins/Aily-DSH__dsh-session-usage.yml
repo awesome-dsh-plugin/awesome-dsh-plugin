@@ -1,0 +1,6 @@
+url: https://github.com/Aily-DSH/dsh-session-usage
+name: Aily-DSH/dsh-session-usage
+category: usage
+description:
+  en: 'Shows each DSH session input, cached and output token counts plus an estimated cost, annotated directly on the sidebar session row.'
+  zh: '统计每个 DSH 会话的输入、缓存与输出 token 及估算费用，并把用量直接标在侧栏会话行上。'
