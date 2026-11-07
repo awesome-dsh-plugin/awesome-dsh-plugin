@@ -1,0 +1,6 @@
+url: https://github.com/Thunderunruly/agent-office
+name: Thunderunruly/agent-office
+category: ui
+description:
+  en: 'A fixed-pixel office tower for DeepSeek Harness: every workspace is a floor and every session an office inside it. Lit windows mean work in progress, and clicking a floor or a person takes you straight to that session.'
+  zh: '把 DeepSeek Harness 的所有会话画成一栋固定像素的办公楼：一层是一个工作区，一层里的每间办公室是一个会话；亮灯表示正在工作，点击楼层或角色可直接回到对应会话。'
