@@ -1,0 +1,6 @@
+url: https://github.com/YOUNG-FELIX/dsh-vision
+name: YOUNG-FELIX/dsh-vision
+category: vision
+description:
+  en: Ask a vision-capable model about a local image from any session, including sessions whose own model is text-only — the plugin calls the route in-process with ctx.llm.stream(), so the host's credentials are never exposed.
+  zh: 任意会话都能让视觉模型读本地图片，包括会话本身用的是纯文本模型的情况——插件通过 ctx.llm.stream() 在进程内直接调用已注册路线，宿主凭据不暴露给插件。
