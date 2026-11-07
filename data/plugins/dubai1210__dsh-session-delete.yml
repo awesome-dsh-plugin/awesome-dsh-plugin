@@ -1,0 +1,6 @@
+url: https://github.com/Dubai1210/dsh-session-delete
+name: Dubai1210/dsh-session-delete
+category: session
+description:
+  en: Deletes a DSH session from the session menu and cleans up the scaffolding files the session left in the workspace, keeping files it produced.
+  zh: 在会话菜单里删除 DSH 会话，并清理该会话在工作区留下的过程文件，保留它做出来的成果。
