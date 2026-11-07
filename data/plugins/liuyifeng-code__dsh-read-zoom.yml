@@ -1,0 +1,7 @@
+url: https://github.com/liuyifeng-code/dsh-read-zoom
+name: liuyifeng-code/dsh-read-zoom
+category: ui
+description:
+  en: "Adds a fixed enlarge button to every DeepSeek Harness answer's action row and opens that answer in a full-screen reading panel with 80-300% text zoom, keeping formulas, tables and code as rendered."
+  zh: "在每条回答的操作行（用量图标左边）常驻一个放大按钮，点开后把该条回答放进全屏大字号阅读面板，字号 80%–300% 可调，公式、表格与代码保持原样。"
+tarball: https://github.com/liuyifeng-code/dsh-read-zoom/releases/download/v0.2.1/dsh-read-zoom-0.2.1.tgz
