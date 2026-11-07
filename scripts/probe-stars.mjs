@@ -27,15 +27,12 @@
  */
 import fs from 'node:fs'
 import LOCALES from '../site/locales.mjs'
+import { repositoryStatistics } from './lib/github-statistics.mjs'
+import { repoOf } from './lib/probe-updates-graphql.mjs'
 
 const STARS_FILE = 'data/stars.json'
-const CONCURRENCY = 10
-// A GitHub Actions token is capped at ~1000 requests per hour per repository,
-// shared by every workflow. Probing all ~1300 entries on each push blew that
-// budget on its own — with a dozen merges in an hour the Submission gate was
-// left with nothing and died mid-run, which is how submissions came to sit
-// with no verdict at all. Push-triggered runs now refresh only what is new or
-// a day stale; the nightly PROBE_ALL run still sweeps everything.
+// Refresh new or stale observations on push and sweep nightly. Batched
+// GraphQL requests reduce pressure on the quota shared with submission checks.
 const RECHECK_DAYS = Number(process.env.PROBE_RECHECK_DAYS ?? 1)
 const PROBE_ALL = process.env.PROBE_ALL === '1'
 // Entries added since the last probe legitimately have no count yet, and a
@@ -52,7 +49,7 @@ if (!token) {
 const map = fs.existsSync(STARS_FILE) ? JSON.parse(fs.readFileSync(STARS_FILE, 'utf8')) : {}
 const readme = fs.readFileSync(LOCALES[0].readme, 'utf8')
 const urls = [...readme.matchAll(/^- \[.+?\]\((https:\/\/github\.com\/[^)]+)\) [—-] /gm)].map((m) => m[1])
-const today = new Date().toISOString().slice(0, 10)
+const today = new Date().toISOString()
 
 const fresh = (entry) =>
   !PROBE_ALL
@@ -63,37 +60,31 @@ const fresh = (entry) =>
 const pending = urls.filter((url) => !fresh(map[url]))
 console.log(`${urls.length} listed, ${pending.length} to probe${PROBE_ALL ? ' (PROBE_ALL)' : ''}`)
 
-async function probe(url) {
-  // monorepo subdir entries (…/tree/main/path) inherit the parent repo's stars
-  const repoPath = url.replace('https://github.com/', '').replace(/\/$/, '').split('/').slice(0, 2).join('/')
-  try {
-    const res = await fetch(`https://api.github.com/repos/${repoPath}`, {
+// One REST request per entry exceeds the Actions token's hourly budget.
+// Like the existing updates probe, ask for fifty repositories per GraphQL call.
+const refreshed = await repositoryStatistics(pending.map(repoOf), async query => {
+    const res = await fetch('https://api.github.com/graphql', {
+      method: 'POST',
       headers: {
         accept: 'application/vnd.github+json',
         authorization: `Bearer ${token}`,
+        'content-type': 'application/json',
         'user-agent': 'awesome-dsh-plugin-stars-probe',
       },
+      body: JSON.stringify({ query }),
       signal: AbortSignal.timeout(10000),
     })
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
-    const repo = await res.json()
-    if (typeof repo.stargazers_count !== 'number') throw new Error('no stargazers_count')
-    return { stars: repo.stargazers_count, checkedAt: today }
-  } catch {
-    return null // keep the previous entry
-  }
-}
+    return await res.json()
+})
 
 let done = 0
 let ok = 0
 let failed = 0
-for (let i = 0; i < pending.length; i += CONCURRENCY) {
-  const batch = pending.slice(i, i + CONCURRENCY)
-  const results = await Promise.all(batch.map(async (url) => [url, await probe(url)]))
-  for (const [url, result] of results) {
-    if (result !== null) { map[url] = result; ok++ } else failed++
-  }
-  done += batch.length
+for (const url of pending) {
+  const result = refreshed.get(repoOf(url))
+  if (result) { map[url] = { stars: result.stars, checkedAt: today }; ok++ } else failed++
+  done++
   if (done % 50 === 0 || done >= pending.length) console.log(`stars ${done}/${pending.length}`)
 }
 if (failed) console.log(`${failed} of ${pending.length} probe(s) failed — those entries keep their previous value`)

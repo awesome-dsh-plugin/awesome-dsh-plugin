@@ -20,6 +20,7 @@ import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
 import { buildMarketIndex } from './lib/market-index.mjs'
 import { firstAddedDate } from './lib/added-dates.mjs'
 import { slugOf, termOf } from './lib/terms.mjs'
+import { releaseMetadataFor } from './lib/release-manifest.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
@@ -196,6 +197,7 @@ if (indexBuilt) fs.writeFileSync('docs/index.json', JSON.stringify(builtIndex.in
   console.log(`index: ${index.plugins.length} listed (${unpublished} entries have no npm package or version yet${skipped.noPublishTime > 0 ? `, ${skipped.noPublishTime} await a publish-time probe` : ''})`)
 }
 const starsMap = fs.existsSync('data/stars.json') ? JSON.parse(fs.readFileSync('data/stars.json', 'utf8')) : {}
+const releasesMap = fs.existsSync('data/releases.json') ? JSON.parse(fs.readFileSync('data/releases.json', 'utf8')) : {}
 // Missing (not yet bootstrapped, or an entry with no npm package) is a
 // normal, permanent state for most entries — unlike stars.json, absence
 // here needs no publish-blocking floor of its own: probe-downloads.mjs
@@ -458,6 +460,7 @@ for (const e of ordered) {
   e.tarball = tarballMap[e.url] ?? null
   e.cmdTarball = e.tarball ? `dsh plugin --profile web add "${e.tarball}"` : null
   e.stars = starsMap[e.url]?.stars ?? null
+  e.releaseMetadata = releaseMetadataFor(e, releasesMap[e.url])
   // Last-30-days npm downloads (probe-downloads.mjs), null for the ~60% of
   // entries with no npm package at all — a coverage gap, not a zero.
   // Consumers must tell "not published" apart from "published, unused".
@@ -472,7 +475,7 @@ for (const e of ordered) {
   // `npm` for "on the registry"; treat missing/null version as "unknown",
   // not as "github-only".
   // Surfaced for dsh-market's discover list (dsh-market#348).
-  e.version = e.npm ? (npmMap[e.url]?.version ?? null) : null
+  e.version = e.npm ? (npmMap[e.url]?.version ?? null) : (e.releaseMetadata.releaseManifest?.version ?? null)
   // The detail-page path, the sitemap entry and the comment term all read
   // this one derivation (scripts/lib/terms.mjs): the term is the join key a
   // plugin's discussion is filed under, and it has to match the path the
@@ -1150,6 +1153,8 @@ const registry = {
       // probed with no latest tag. Not the same signal as `downloads`.
       version: e.version,
       stars: e.stars,
+      starsCheckedAt: starsMap[e.url]?.checkedAt ?? null,
+      ...e.releaseMetadata,
       downloads: e.downloads,
       downloadsStart: downloadsMap[e.url]?.start ?? null,
       downloadsEnd: downloadsMap[e.url]?.end ?? null,
