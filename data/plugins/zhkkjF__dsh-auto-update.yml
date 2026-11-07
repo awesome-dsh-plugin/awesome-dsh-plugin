@@ -1,0 +1,7 @@
+url: https://github.com/zhkkjF/dsh-auto-update
+name: zhkkjF/dsh-auto-update
+category: dev
+icon: https://raw.githubusercontent.com/zhkkjF/dsh-auto-update/main/assets/icon-180.png
+description:
+  en: "Checks DSH Desktop's official update feed, downloads and SHA-512 verifies the installer, closes the app and installs silently, then reinstalls profile plugins and restores their pre-update settings from a snapshot."
+  zh: "检查 DSH Desktop 官方更新源，下载并校验安装包，关闭应用后静默安装，并在重启后按更新前快照自动重装插件、恢复设置。"
