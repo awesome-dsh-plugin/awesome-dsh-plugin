@@ -1,0 +1,6 @@
+url: https://github.com/Manbaout-08/dsh-purge
+name: Manbaout-08/dsh-purge
+category: session
+description:
+  en: 'Adds permanent delete to the session menu: removes the session log files from disk, or deletes a whole workspace together with all of its sessions through the host registry. Also ships a /purge command.'
+  zh: '在会话菜单中加入彻底删除：把会话日志文件从磁盘移除，或经宿主注册表删除整个工作区及其全部会话；另提供 /purge 命令。'
