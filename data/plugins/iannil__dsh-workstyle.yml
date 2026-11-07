@@ -1,0 +1,7 @@
+url: https://github.com/iannil/dsh-workstyle
+name: iannil/dsh-workstyle
+category: workflow
+description:
+  en: "Turns a working style into an installable, versioned plugin: 7 workstyle_* tools, a Web panel, a distiller that suggests rules from local agent sessions for review, and tar.gz pack export."
+  zh: "把工作方式做成可安装、可版本化的插件：7 个 workstyle_* 工具、Web 面板、从本机会话蒸馏建议规则供审阅，以及把工作方式包导出为 tar.gz。"
+icon: https://raw.githubusercontent.com/iannil/dsh-workstyle/master/docs/assets/icon-180.png
