@@ -1,0 +1,7 @@
+url: https://github.com/yzzshanyin-rgb/dsh-niuma-timer
+name: yzzshanyin-rgb/dsh-niuma-timer
+category: ui
+description:
+  en: 'A handwritten-journal salary timer on the DSH composer dock: set your monthly salary and work hours, then it shows how much you have earned today and this month in real time, plus daily, hourly and per-second rates, progress toward quitting time, hours worked past quitting time, weekday attendance dots and a status badge (working, lunch, off work, unpaid overtime, day off). Settings are kept in localStorage only; no network requests.'
+  zh: 挂在 DSH 输入框下方的「牛马费用计时器」手帐小卡——填好到手月薪与上下班时间，实时显示今天已挣多少、本月累计多少，附带日薪/时薪/秒薪、下班进度条、下班后的无偿加班时长、工作日打卡点阵与状态章（打工中、午休中、已下班、无偿加班、休息日）。配置只存在页面 localStorage，不发网络请求。
+icon: https://raw.githubusercontent.com/yzzshanyin-rgb/dsh-niuma-timer/main/assets/icon-180.png
