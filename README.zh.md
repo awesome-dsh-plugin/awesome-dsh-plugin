@@ -1646,6 +1646,7 @@ dsh plugin --profile web add dshmarket
 - [wang678678/dsh-local-plugins#dsh-workspace-flow](https://github.com/wang678678/dsh-local-plugins/tree/main/packages/dsh-workspace-flow) — 把添加工作区的目录对话框换成路径输入、盘符快捷和系统文件夹选择。
 - [wangsrGit119/dsh-nanny-calendar](https://github.com/wangsrGit119/dsh-nanny-calendar) — 育儿嫂日历看板：记录上户、下户、休假与工资发放，按月汇总，并统计从首次上户到今天的累计在岗与休假天数，同时按 30 天周期在日历上自动标出发薪日。
 - [wangtheme-coder/dsh-greeting](https://github.com/wangtheme-coder/dsh-greeting) — 给 DSH 主页 / 新会话 hero 区加一行按时段变化的问候语：按本地时间分 7 个时段随机抽句、内置傲娇鲸鱼娘台词、可用 ~/.dsh/greeting.json 覆盖任意时段，并顺手把 Ctrl+R / F5 接回页面刷新。
+- [wangtheme-coder/dsh-stellar-effort](https://github.com/wangtheme-coder/dsh-stellar-effort) — 在输入框上方加一条推理强度滑轨：拖动或用键盘预览并提交当前模型支持的档位（Off 到 Max），滑轨背后由程序实时渲染的微缩宇宙随档位收缩、坍缩成黑洞。档位通过 DSH 自身的模型选择接口提交，显示的是 DSH 确认后的等级；插件只写入 $DSH_HOME/stellar-effort/。
 - [wanted09527/dsh-progress-caption](https://github.com/wanted09527/dsh-progress-caption) — 在输入框上方加一行小字，告诉你 AI 现在第几步、在做什么、成没成，比如「第 3 步 · 正在执行命令 npm test · 琢磨中」。全部靠本机规则推断，不调模型、不联网、不改 DSH 的任何数据。
 - [warmwine/dsh-ui-font](https://github.com/warmwine/dsh-ui-font) — 网页界面字体引擎：系统字体枚举、准星点选的全局与逐组件字号微调、设置页。老花眼友好，自定义字体和页面部件字体和字体大小，支持SPY模式扫UI和其他插件。
 - [waterha/dsh-pintop](https://github.com/waterha/dsh-pintop) — 提供 DSH 软件窗口置顶功能，让其不会乱隐藏，仅 Windows；需 PATH 上有 PowerShell 7（pwsh.exe）。
@@ -4324,7 +4325,7 @@ dsh plugin --profile web add dshmarket
 - [kiefeng/dsh-lan-memory](https://github.com/kiefeng/dsh-lan-memory) — 澜·轻量本地记忆与人格系统：四层文件记忆（pinned / memory / facts / experience）、可编辑 SOUL/MOOD 人格、零 LLM 捕获、BM25 检索与状态池卡片；无独立管理面板，不依赖 Python 服务、向量库或 API Key。
 - [kipozannaki/DSH-Headroom-Plugin#plugin](https://github.com/kipozannaki/DSH-Headroom-Plugin/tree/main/plugin) — 在 DeepSeek Harness 内以 MCP 方式运行上游 Headroom 压缩工具集（headroom-ai，Apache-2.0）：headroom_compress、headroom_retrieve、headroom_stats 以 mcp__headroom__* 工具暴露，后端是上游服务端、由 uvx 按需安装。压缩有损但可逆——原文按哈希从本地 CCR 存储取回。另附一个注册器，把 DeepSeek Harness 加入 Headroom 自身的 MCP 注册表，并修复上游代理的模型请求头。
 - [kkwings/dsh-super-memory](https://github.com/kkwings/dsh-super-memory) — 跨压缩记忆：压缩时把被压掉的内容存到本机，提问时只注入相关的那几段（没有就一点不注入），让模型重新想起你早先定过的事。
-- [kleinklein0824/dsh-obsidian-quote#harness-plugin](https://github.com/kleinklein0824/dsh-obsidian-quote/tree/main/harness-plugin) — 通过需另行安装的本地 Obsidian Quote 服务提供知识库侧栏：选择已登记的知识库或文件夹，只读检索笔记片段与带来源的上下文、提取条款、生成项目规范摘要并查看共享引用统计。
+- [kleinklein0824/dsh-obsidian-quote#dsh-obsidian-quote](https://github.com/kleinklein0824/dsh-obsidian-quote/tree/main/harness-plugin) — 通过需另行安装的本地 Obsidian Quote 服务提供知识库侧栏：选择已登记的知识库或文件夹，只读检索笔记片段与带来源的上下文、提取条款、生成项目规范摘要并查看共享引用统计。
 - [KLRSL/dsh-biomemory](https://github.com/KLRSL/dsh-biomemory) — 为 DeepSeek Harness 打造的生物仿生记忆系统：以单一 SQLite 库为唯一事实来源（node:sqlite，WAL），Markdown 树仅作只读镜像；含 memory 工具、会话启动时的冻结快照注入、分级审批门、按需把当前会话抽取成记忆、近重复合并、归档与取代生命周期、记忆代谢（dream）、记忆钉、基于本地嵌入的语义检索，以及 /memory 命令。
 - [knighthongyu/dsh-handoff-compaction](https://github.com/knighthongyu/dsh-handoff-compaction) — 面向小上下文模型的 DSH 上下文压缩插件：压缩大小可视化配置，默认 8k 交接摘要 + 16k 最近上下文，完整历史仍可查询。
 - [kobubu/Rag-Coding](https://github.com/kobubu/Rag-Coding) — 面向 JavaScript 与 TypeScript 项目的本地代码记忆：自动带上源码上下文，支持符号查找、向量检索与依赖图。
@@ -8445,7 +8446,7 @@ dsh plugin --profile web add dshmarket
 - [weibaohui/dsh-sync](https://github.com/weibaohui/dsh-sync) — 多机同步：让多台机器上的 dsh 通过一个私有 GitCode 仓库保持一致——技能、会话、设置、插件清单四类内容各有独立开关；变更走分支 → PR → 合并，推送前自动回填远端新增防误删，支持 AI 智能对齐（语义合并双方改动）与一键解决冲突；强制私有仓库，pull 不覆盖本地改动。
 - [weijiafu14/pi2dsh](https://github.com/weijiafu14/pi2dsh) — Pi Host ABI 兼容引擎：装一次之后，npm 上的 Pi 扩展原包经 `dsh plugin add <pi-package>` 直接作为 DSH 原生插件挂载。已在官方 DSH 上端到端验证 pi-mcp-adapter（完整 MCP 管理面：OAuth、resources、prompts、MCP Apps、elicitation、sampling）、@tintinweb/pi-subagents、pi-code、pi-hermes-memory、pi-background-tasks；`pi2dsh inspect` 在安装前报告一个包的兼容情况。
 - [wenjun81/dsh-vscode](https://github.com/wenjun81/dsh-vscode) — DSH 侧边栏的 VS Code 桥接：启动 VS Code、浏览工作区文件、把文件作为附件发到当前对话，并内置一个可拖动缩放的多标签代码工作台，保存后自动同步改动。
-- [whitequeen306/dsh-logistics](https://github.com/whitequeen306/dsh-logistics) — 为 DeepSeek Harness 提供全项目审查：五位专家、按严重度排列的总报告、模块/问题关系图，以及长任务的进度、ETA 和取消。
+- [whitequeen306/dsh-logistics](https://github.com/whitequeen306/dsh-logistics) — 提供一组 /logi 命令来做项目收尾工作，为你的项目派发「安全/逻辑正确/可维护/健壮/性能」5 位专家深入检查你的项目，并出一份优化总报告。
 - [william-jin-cmu/dsh-evolve](https://github.com/william-jin-cmu/dsh-evolve) — 自进化：agent 在会话内给自己热挂载/卸载持久化插件。
 - [WilShi/dsh-coding-agents](https://github.com/WilShi/dsh-coding-agents) — 在 DeepSeek Harness 中驱动本机安装的 Codex CLI 与 Claude Code，通过设置页与 agent 工具查看会话、配置和运行状态。
 - [WilShi/dsh-external-api](https://github.com/WilShi/dsh-external-api) — DSH Desktop 的可选外部 HTTP API，默认关闭、默认仅监听本机，扩大监听范围时使用 Bearer Token 鉴权。
