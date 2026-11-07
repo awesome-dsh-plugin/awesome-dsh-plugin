@@ -1,0 +1,7 @@
+url: https://github.com/yinqiang/dsh-plugins/tree/main/packages/dsh-balance-floater
+name: yinqiang/dsh-plugins#dsh-balance-floater
+category: ui
+description:
+  en: 'Account balance in the sidebar; a drop floats an arcade damage number.'
+  zh: '侧边栏显示账户余额，余额一掉就飘出街机风格的伤害数字。'
+# tarball: https://github.com/yinqiang/dsh-plugins/releases/latest/download/dsh-balance-floater.tgz
