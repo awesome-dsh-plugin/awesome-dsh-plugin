@@ -5301,6 +5301,7 @@ dsh plugin --profile web add dshmarket
 - [minyang-chen/dsh-stock-lookup](https://github.com/minyang-chen/dsh-stock-lookup) — 通过 SEC EDGAR 将公司名称或股票代码解析为已验证的股票代号，再从 yahoo-finance2 获取实时行情，包括价格、市盈率、每股收益、市值、52周区间和股息率。
 - [mirror9933/dsh-pixmart](https://github.com/mirror9933/dsh-pixmart) — DSH 电商商品图生成：24 个提示词模块覆盖主图、详情图与广告图，支持参考图风格复刻、批量生成，以及作品库实时预览。
 - [miuzel/harness-reflex#dsh-reflex](https://github.com/miuzel/harness-reflex/tree/main/packages/dsh-reflex) — 面向 dsh 的 System One 决策运行时。提供不消耗生成 token 的快速工具（选择、评分、安全筛查、完成度核验），并在模型不调用任何工具的情况下自动干预：把超长工具输出逐段交给 System One 判定取舍后裁剪、在确认停滞时拒绝重复调用、用真实工具证据核验完成声明、对反复失败的重试给出纠正。npm 包为 dsh-harness-reflex（插件）与 harness-reflex（核心，同时是 stdio MCP server）。
+- [mjnn/dsh-agent-desktop](https://github.com/mjnn/dsh-agent-desktop) — 把本机 agent-desktop CLI 封装成 9 个 DSH 工具（ad_status、ad_list_windows、ad_snapshot、ad_find、ad_click、ad_type、ad_press、ad_launch、ad_close_app），让 Agent 直接列窗口、读无障碍树、按快照 ref 点击、输入文本、发送按键、启动与优雅关闭应用。插件本身不含自动化逻辑，只做参数校验、调用 CLI、解析 JSON 信封；ref 过期时要求调用方重新快照，不自动重试，避免误点。
 - [mjylfz/dsh-subagent-codex](https://github.com/mjylfz/dsh-subagent-codex) — 新增 subagent_codex 工具，把任务委派给本机 OpenAI Codex CLI 在独立外部进程中执行，与主对话完全隔离。
 - [mkhl20/dsh-lingua-atlas](https://github.com/mkhl20/dsh-lingua-atlas) — 离线汉英/英汉词典：含汉语释义、英英释义、分组相关词与声律分析，并向 Agent 提供可检索的公有领域中英文文学语料库。
 - [MlittleFriend/dsh-character-profiler](https://github.com/MlittleFriend/dsh-character-profiler) — 角色一致性工具包：性格侧写档案、出场权重统计与行为偏离检测。
@@ -6024,6 +6025,7 @@ dsh plugin --profile web add dshmarket
 - [guo6x/dsh-pilot](https://github.com/guo6x/dsh-pilot) — 零依赖浏览器操控：agent 通过 CDP 驾驶真实 headless Edge/Chrome（导航/点击/输入/按键/JS/截图，8 个 `pilot_*` 工具），Web GUI 内可拖拽驾驶舱面板实时围观——文本优先快照适配纯文本模型，无需 Playwright、无需 API key。
 - [GuoMonth/dsh-erp](https://github.com/GuoMonth/dsh-erp) — 通过浏览器学习 ERP 并沉淀为私有本地知识；桌面端提供「ERP 助手」工作区（多站点会话、中对话+右浏览器、写入前审批）。
 - [hermes-ai-2026/dsh-browser-agent](https://github.com/hermes-ai-2026/dsh-browser-agent) — 19 个 browser_* 工具，让 agent 通过回环桥驱动 DSH 内置的侧边栏浏览器：带稳定 ref 的无障碍树读取、CDP 真实点击与按键、截图、网络拦截、设备模拟、Cookie 保险库、document-start 脚本注入、多浏览器实例，以及任意 CDP 命令透传。需以 --remote-debugging-port=9222 启动 DSH。
+- [Hesitate-P/dsh-sidebar-browser-agent](https://github.com/Hesitate-P/dsh-sidebar-browser-agent) — DSH 右侧栏原生浏览器的 Agent 控制：语义快照与稳定 ref、点击/输入/按键、Shadow DOM 与同源 iframe、JS 对话框记录、整页截图、前进/后退、视口尺寸调整，以及基于 Electron webview 的原生大文件下载/上传。
 - [htcqp802/dsh-web-search-openai](https://github.com/htcqp802/dsh-web-search-openai) — 基于 OpenAI 兼容 Responses API 的通用联网搜索插件：配置 baseURL / API Key / 模型即可让内置 web_search 工具对接 Qwen Token Plan、OpenAI 等任意网关。
 - [HXwHSJS/dsh-web-annotation](https://github.com/HXwHSJS/dsh-web-annotation) — 在 DSH 右侧边栏 Browser 中批注元素、空白位置或框选区域；每批保存截图与报告文件，并以文本形式附加到下一条消息。不替换官方 Browser、Chat 或 Layout 提供方。
 - [IKEASven69/dsh-opencli](https://github.com/IKEASven69/dsh-opencli) — 登录态真实浏览器自动化:170+ 站点结构化命令一步到位（需安装 OpenCLI CLI：npm i -g @jackwener/opencli，及其 BrowserBridge 浏览器扩展）;执行真实性判定(失败说真话)、站点知识卡+健康度、watch 监控、轨迹回放、带出处报告导出;写命令带审批门。
@@ -6291,7 +6293,7 @@ dsh plugin --profile web add dshmarket
 - [shinjiyu/dsh-plugin-multimodal](https://github.com/shinjiyu/dsh-plugin-multimodal) — 在纯文本 DeepSeek 线路上开放贴图准入，用视觉 sidecar 把附件转成文字，原生视觉模型不改写。
 - [shisuiqingqian/dsh-video-kit](https://github.com/shisuiqingqian/dsh-video-kit) — 用 ffmpeg 与 Paraformer 读取本地视频或网页链接，返回带时间轴的逐字稿与可逐帧打开的关键帧图片；可按关键词检索候选视频，首次使用时自动安装运行时依赖。需 PATH 上有 Python 3.8+；video_discover 还需一次性登录抖音/小红书。
 - [siegfly/dsh-deepseek-vision](https://github.com/siegfly/dsh-deepseek-vision) — 视觉语言网关：注册支持图片输入的 DeepSeek provider 路由，图片先由可配置 VL 模型（默认 Qwen-VL）描述成文字再发送。
-- [southcul/dsh-gpt-image-playground](https://github.com/southcul/dsh-gpt-image-playground) — 把 GPT Image Playground 工作台装进 DeepSeek Harness：画廊与 Agent 双模式、参考图与遮罩编辑、多供应商 API 配置与本地历史。界面为上游 MIT 构建，由插件同源托管，并提供可选的 API 代理。
+- [southcul/dsh-gpt-image-playground](https://github.com/southcul/dsh-gpt-image-playground) — 支持 GPT Image、Gemini（Nano Banana）和 Grok 的图片生成与编辑工具，支持官方接口、OpenAI 兼容接口、api.toolify-ai.com 与自定义 HTTP 供应商。支持文本生图、参考图编辑、画板标注、遮罩编辑与 Agent 多轮对话，图片和历史记录保存在本地。
 - [Ssrs-Pro-Max/dsh-image-tiler](https://github.com/Ssrs-Pro-Max/dsh-image-tiler) — 让超大图片以可读分辨率进入模型视野，而不是被压成一张缩图：准入前按附件存储允许的上限把大图切成多张切片（8000x8000 的截图会变成 20 张 2000x1600），小字得以保留。以替换本地附件存储的方式实现，不新增任何配置项。
 - [sunxin-ai/dsh-design-qa](https://github.com/sunxin-ai/dsh-design-qa) — 给纯文本模型的设计稿保真判定：`deepseek_vision` 工具从任意 OpenAI 兼容视觉路由借来一只眼，让模型判断实现与设计稿是否一致——并附上支撑该判定的基准（4 组夹具、23 处注入缺陷、逐格原始输出）与其依赖的提问纪律。
 - [SZUold8/dsh-video-learning](https://github.com/SZUold8/dsh-video-learning) — 视频精读：获取 B 站单分P或 YouTube 视频，每 3 秒基础采样并补取变化帧，本地 faster-whisper 转写，分页读取分段图版，并可排版成 16:9 学习 PPT。仅 Windows；需要 DSH 的 pwsh 工具，以及 Python 3.12 x64 + Pillow、FFmpeg/FFprobe；获取视频另需 yt-dlp，转写需 faster-whisper 并自备本地模型文件，PPT 输出需 python-pptx。
