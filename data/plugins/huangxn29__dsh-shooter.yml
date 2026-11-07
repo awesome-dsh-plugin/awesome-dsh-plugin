@@ -1,0 +1,8 @@
+url: https://github.com/huangxn29/dsh-shooter
+name: huangxn29/dsh-shooter
+category: fun
+description:
+  en: A top-down arena shooter that opens as a full panel from a crosshair entry in the left sidebar, with waves, four enemy types, dash and health pickups.
+  zh: 从左侧栏准星入口打开的俯视角竞技场射击游戏，占满整个面板，含波次、四种敌人、冲刺与回血掉落。
+# optional: GitHub-hosted raster tile (png/jpg/webp, square, ~96px). SVG is refused here.
+# icon: https://raw.githubusercontent.com/huangxn29/dsh-shooter/main/assets/icon-180.png
