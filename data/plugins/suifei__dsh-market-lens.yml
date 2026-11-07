@@ -2,6 +2,6 @@ url: https://github.com/suifei/dsh-market-lens
 name: suifei/dsh-market-lens
 category: market
 description:
-  en: 'Read-only A-share, HK and US market board: delayed public quotes, a dot-matrix LED exchange hall, watchlists, candlestick charts, news, financials and price alerts.'
-  zh: 只读 A 股/港股/美股行情看板：延迟公开行情、点阵灯阵证券大厅、自选、K 线、资讯、财报与价格提醒。
+  en: 'HuanJing Stock Board - read-only A-share, HK and US market dashboard: delayed public quotes, a dot-matrix LED exchange hall, watchlists, candlestick charts, stock news, financials and price alerts.'
+  zh: 寰镜股票看板：A股/港股/美股只读看盘盯盘仪表盘——延迟公开行情、点阵灯阵证券大厅、自选、K 线、股市资讯、财报与价格提醒，看盘摸鱼两用。
 icon: https://raw.githubusercontent.com/suifei/dsh-market-lens/main/assets/icon-180.png
