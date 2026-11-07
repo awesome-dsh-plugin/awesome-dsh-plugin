@@ -1,0 +1,7 @@
+url: https://github.com/DandanLLab/dsh-life-engine
+name: DandanLLab/dsh-life-engine
+category: memory
+tarball: https://github.com/DandanLLab/dsh-life-engine/archive/refs/tags/v1.0.0.tar.gz
+description:
+  zh: "Life Engine for DeepSeek Harness — 可塑型记忆(六态状态机：NEW→INDEXED→ACTIVE→DECAYING→ARCHIVED→FORGOTTEN)、内心独白引擎(5分钟一帧思维种子)、睡眠巩固循环(空闲自动重放+向量化+图谱加固)、好奇心引擎(知识空白检测→学习事件)、反思回路(对话缓冲→反思→成长层追加)、每日自画像、防幻觉纪律、意图理解框架。11层注入+30件工具+MIT。纯Node.js零依赖，link+重启即用。"
+  en: "Life Engine for DeepSeek Harness — memory plasticity (6-state machine: NEW→INDEXED→ACTIVE→DECAYING→ARCHIVED→FORGOTTEN), inner monologue engine (5min thought seeds from decayed memories/synapses/interactions), sleep consolidation loop (idle auto-replay + vectorization + graph reinforcement), curiosity engine (knowledge gap detection → learning events), reflection loop (conversation buffer → reflection → growth layer append), daily self-portrait, anti-hallucination discipline, intent understanding framework. 11-layer injection + 30 tools + MIT."
