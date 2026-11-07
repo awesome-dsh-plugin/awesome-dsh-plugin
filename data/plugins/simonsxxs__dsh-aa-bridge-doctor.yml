@@ -1,0 +1,6 @@
+url: https://github.com/simonsxxs/dsh-aa-bridge-doctor
+name: simonsxxs/dsh-aa-bridge-doctor
+category: remote
+description:
+  en: Detects and auto-recovers the Agents Anywhere bridge wedge that leaves your device permanently offline on your phone.
+  zh: 检测并自动恢复 Agents Anywhere 桥接的持续离线故障，解决手机端设备一直显示离线的问题。
