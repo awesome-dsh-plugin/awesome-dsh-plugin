@@ -13,5 +13,5 @@ url: https://github.com/southcul/dsh-gpt-image-playground
 name: southcul/dsh-gpt-image-playground
 category: vision
 description:
-  en: 'Runs the GPT Image Playground workbench inside DeepSeek Harness: gallery and agent modes, reference images with a mask editor, multi-provider API profiles, and local history. The upstream MIT build is served same-origin by the plugin, with an optional API proxy.'
-  zh: '把 GPT Image Playground 工作台装进 DeepSeek Harness：画廊与 Agent 双模式、参考图与遮罩编辑、多供应商 API 配置与本地历史。界面为上游 MIT 构建，由插件同源托管，并提供可选的 API 代理。'
+  en: 'Image generation and editing for GPT Image, Gemini (Nano Banana) and Grok, with official, OpenAI-compatible, api.toolify-ai.com and custom HTTP providers. Text-to-image, reference-image editing, canvas annotation, mask editing and Agent multi-turn chat, with images and history kept on your machine.'
+  zh: '支持 GPT Image、Gemini（Nano Banana）和 Grok 的图片生成与编辑工具，支持官方接口、OpenAI 兼容接口、api.toolify-ai.com 与自定义 HTTP 供应商。支持文本生图、参考图编辑、画板标注、遮罩编辑与 Agent 多轮对话，图片和历史记录保存在本地。'
