@@ -195,7 +195,14 @@ if (indexBuilt) fs.writeFileSync('docs/index.json', JSON.stringify(builtIndex.in
   const unpublished = skipped.noNpm + skipped.noVersion
   console.log(`index: ${index.plugins.length} listed (${unpublished} entries have no npm package or version yet${skipped.noPublishTime > 0 ? `, ${skipped.noPublishTime} await a publish-time probe` : ''})`)
 }
-const starsMap = fs.existsSync('data/stars.json') ? JSON.parse(fs.readFileSync('data/stars.json', 'utf8')) : {}
+const starsFile = 'data/stars.json'
+// A restored Actions cache can predate a committed count. Fill missing entries
+// from the checkout and let the cache supply more recent values.
+const committedStars = process.env.GITHUB_ACTIONS === 'true'
+  ? JSON.parse(execSync('git show HEAD:data/stars.json', { encoding: 'utf8' }))
+  : {}
+const cachedStars = fs.existsSync(starsFile) ? JSON.parse(fs.readFileSync(starsFile, 'utf8')) : {}
+const starsMap = { ...committedStars, ...cachedStars }
 // Missing (not yet bootstrapped, or an entry with no npm package) is a
 // normal, permanent state for most entries — unlike stars.json, absence
 // here needs no publish-blocking floor of its own: probe-downloads.mjs
