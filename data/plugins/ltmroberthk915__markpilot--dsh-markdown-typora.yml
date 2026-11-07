@@ -2,6 +2,6 @@ url: https://github.com/ltmroberthk915/markpilot/tree/main/dsh-markdown-typora
 name: ltmroberthk915/markpilot#dsh-markdown-typora
 category: docs
 description:
-  en: "An IDE-style Markdown workspace beside your DSH AI: files, editor and chat together. Send selected source to chat or reference notes with @mp. Resume notes per project, follow workspace changes or keep a document open — a directory you closed with × stays closed until you open a document there again. Live math, tables, offline Mermaid, ten themes and autosave."
-  zh: "DSH 里的 IDE 式 Markdown × AI 工作台：文件树、编辑器与 AI 对话并排，选中文段一键插入对话，@mp 引用当前文档。按工作目录记住最近笔记，跟随项目切换或固定文档；用 × 关掉的目录在下次点开会话时保持关闭，直到你重新打开该目录里的文档。支持空白起笔、公式表格即时编辑、离线 Mermaid、十套主题与自动保存。"
-tarball: https://github.com/ltmroberthk915/markpilot/releases/download/dsh-markdown-typora-v1.1.2/dsh-markdown-typora-1.1.2.tgz
+  en: "An IDE-style Markdown workspace beside your DSH AI: files, editor and chat together. Send selected source to chat or reference notes with @mp. Resume notes per project, follow workspace changes or keep a document open — a directory you closed with × stays closed until you open a document there again. Links and restored notes open in the same workspace, with the file list and floating collapse/close buttons. Live math, tables, offline Mermaid, ten themes and autosave."
+  zh: "DSH 里的 IDE 式 Markdown × AI 工作台：文件树、编辑器与 AI 对话并排，选中文段一键插入对话，@mp 引用当前文档。按工作目录记住最近笔记，跟随项目切换或固定文档；用 × 关掉的目录在下次点开会话时保持关闭，直到你重新打开该目录里的文档。对话里的文件链接与会话恢复的文档默认按文档工作台打开，左侧文件列表和左上角收起/关闭按钮都在。支持空白起笔、公式表格即时编辑、离线 Mermaid、十套主题与自动保存。"
+tarball: https://github.com/ltmroberthk915/markpilot/releases/download/dsh-markdown-typora-v1.2.0/dsh-markdown-typora-1.2.0.tgz
