@@ -1,0 +1,6 @@
+url: https://github.com/gxfc9867/campfire/tree/main/plugins/dsh-campfire
+name: gxfc9867/campfire#dsh-campfire
+category: remote
+description:
+  en: Bridges campfire group chats into DeepSeek Harness, delivering messages addressed to your member into a DSH session and posting the reply back to the group.
+  zh: 把围炉群聊接进 DeepSeek Harness：发给成员的群消息投进 DSH 会话，模型回复自动发回群里。
