@@ -2,5 +2,5 @@ url: https://github.com/yhPrime/dsh-session-delete
 name: yhPrime/dsh-session-delete
 category: session
 description:
-  en: Add a delete button to the session header that archives the session after a confirmation dialog.
-  zh: 在会话头部加一个删除按钮，二次确认后归档并移除该会话。
+  en: 'Add a "Delete session…" item to the sidebar session row menu that moves the session log and projection cache to the OS recycle bin after confirmation, then removes it from the workspace list.'
+  zh: '在侧边栏会话行的「⋯」菜单里加一行「删除会话…」，确认后把该会话的日志与投影缓存移到操作系统回收站，并从工作区列表移除。'
