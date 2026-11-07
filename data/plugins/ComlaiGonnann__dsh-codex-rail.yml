@@ -1,0 +1,6 @@
+url: https://github.com/ComlaiGonnann/dsh-codex-rail
+name: ComlaiGonnann/dsh-codex-rail
+category: ui
+description:
+  en: Transforms DSH into a dual-column Codex workspace with an integrated Activity Bar, unified topbar, avatar quick access, session history navigation.
+  zh: 为 DeepSeek Harness 打造Codex 双列活动栏与顶栏一体化视觉体验，支持水晶头像与会话历史导航。

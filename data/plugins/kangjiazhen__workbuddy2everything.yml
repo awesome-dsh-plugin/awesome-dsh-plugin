@@ -1,0 +1,6 @@
+url: https://github.com/kangjiazhen/workbuddy2everything
+name: kangjiazhen/workbuddy2everything
+category: model
+description:
+  en: 'Registers the workbuddy model provider by mounting dsh-llm-workbuddy and supervises the local wb2api gateway, then bundles two protocol bridges onto that same gateway: Responses for OpenAI Codex CLI, and Anthropic Messages for Claude Code and Claude Desktop, which see the gateway models under generated claude-wb-… ids. Skips work that is already running or already registered, and reports each part through a status tool. Requires a local wb2api gateway and a WorkBuddy account.'
+  zh: '通过挂载 dsh-llm-workbuddy 注册 workbuddy 模型 provider，托管本地 wb2api 网关，并在同一网关前内置两条协议桥：给 OpenAI Codex CLI 的 Responses，以及给 Claude Code 与 Claude 桌面端的 Anthropic Messages——后两者以生成的 claude-wb-… id 看到网关模型。已在运行或已注册的部分会跳过，并通过状态工具汇报各环节状况。需本机有 wb2api 网关并有 WorkBuddy 账号。'

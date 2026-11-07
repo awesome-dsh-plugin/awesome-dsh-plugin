@@ -1,0 +1,6 @@
+url: https://github.com/chenyuiyu/dsh-attention-reminder
+name: chenyuiyu/dsh-attention-reminder
+category: notify
+description:
+  en: 'Strikes a single short chime, raises the DSH window, floats a reminder card above the page and sends a system notification whenever the agent needs your approval or an answer. Sound and popup are two independent switches in the session header, remembered across reloads and restarts.'
+  zh: '需要授权或确认时敲一记短音、把 DSH 窗口提到最前、在页面最上层浮出提醒卡片，并弹一条系统通知。声音与弹窗是会话头部上的两个独立开关，刷新与重启后仍然保持。'

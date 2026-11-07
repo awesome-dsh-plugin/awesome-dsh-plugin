@@ -108,7 +108,7 @@ What that review looks at / 评审会看：
 
 If you're updating your own entry, **change only your own entry**. Editing the READMEs by hand is the usual way this goes wrong: line positions shift as the list grows, and an edit lands on a neighbour. That's why the READMEs are generated — edit your `data/plugins/<owner>__<repo>.yml` and regenerate. / 如果你在更新自己的条目，**请只改自己那一条**。手工编辑 README 是这类事故的常见起因：列表增长会让行号移位，改动就落到了邻居身上。这正是 README 改为生成的原因——请编辑你自己的 `data/plugins/<owner>__<repo>.yml` 再重新生成。
 
-Feedback comes as a PR comment naming exactly what to change. Being sent back for an inaccurate description isn't a rejection of the plugin — fix the line and it goes in. / 反馈会以 PR 评论给出，明确指出要改什么。因描述不准确被打回不是对插件本身的否定——改好那一行即可收录。
+Feedback comes as a PR comment naming exactly what to change. Being sent back for an inaccurate description isn't a rejection of the plugin — fix the line and it goes in. What the resulting `held: author` label means, and how it gets retired, is described in the section **After review** below. / 反馈会以 PR 评论给出，明确指出要改什么。因描述不准确被打回不是对插件本身的否定——改好那一行即可收录。
 
 **One thing worth saying plainly:** we are not judges of plugin quality, and being on this list — or not being on it — is not a verdict on your work. Plenty of good software will never be here, and a slot here proves nothing beyond meeting the rules above. We have no interest in being that arbiter. The rules exist for one reason: someone landing on this page should be able to install what they pick and have it do what the line said it would. Thanks for bearing with them.
 
@@ -165,6 +165,25 @@ Every PR runs, in order / 每个 PR 依次运行：
 4. **`awesome-lint`** and the site build — locale parity, separators, dates, screenshots. / `awesome-lint` 与站点构建：双语一致性、分隔符、日期、截图。
 
 If a check fails it says exactly what to change. Push a fix to the same branch — no need to open a new PR. / 检查失败时会明确指出要改什么。在同一分支上推送修复即可，无需重开 PR。
+
+
+### After review: the held label, and CI that isn't yours to fix / 评审之后：held 标签与那些不归你修的 CI
+
+A maintainer who needs changes applies **`held: author`** to the pull request. The label pauses the PR in the merge queue — nothing is broken and your PR has not been rejected; it is waiting for the changes to be made and re-read. / 需要修改时，维护者会给 PR 打上 **`held: author`** 标签。它只是让这条 PR 在合并队列里暂停——没有坏、也没有被拒；它在等修改完成、然后被重新读过。
+
+**What to do / 该怎么做：**
+
+- Push your fixes to the same branch, then leave **one** comment saying what you changed. That is the whole signal. Pushing repeatedly "to be safe" or commenting again does not speed anything up — the merge queue does not look at either until a human re-reviews. / 把修复推到同一分支，然后留**一条**评论说明改了什么。这就是全部需要的信号。为求安心反复推送、连发追问都不会更快——在有人重新评审之前，队列两边都看不到变化。
+- The label is never removed automatically; only a re-review can retire it. That is deliberate — an automatic unhold would merge things nobody re-read. / 标签不会自动消失，只有重新评审才能摘掉。这是刻意的——自动解除会让没人复核过的东西被合并进去。
+- You can check your own status in the **"Held pull requests that may have healed"** tracking issue, which is regenerated every day at 06:19 UTC. If your PR appears there, your push or comment has already been seen — no further ping is needed. / 你可以在**「Held pull requests that may have healed」**跟踪 issue 里自查状态，它每天 06:19 UTC 刷新一次。如果你的 PR 出现在那里，说明你的推送或评论已经被记录——不需要再催。
+
+**Reading the table / 怎么读那张表：**
+
+- A `—` in the **gate** column means the Submission gate never ran. Almost always this means the branch conflicts with `main`: a conflicted pull request has no merge ref, so GitHub never creates its check run at all. For submissions this conflict is virtually always in the generated README lines, and it cannot be fixed by pushing: regenerating the READMEs yourself is exactly what once left 218 of 296 open pull requests unmergeable, none over anything a human wrote. The remedy is a maintainer rebase onto `main` — nothing you do to your branch changes that column. / **gate** 一栏是 `—`，说明 Submission gate 从未运行。几乎总是因为分支与 `main` 冲突：冲突的 PR 没有 merge ref，GitHub 根本不会为它创建检查运行。对投稿来说，冲突几乎都在生成的 README 行上，而且靠推送解决不了——自己重新生成 README 正是历史上让 296 条开放 PR 里 218 条无法合并的原因，而那些冲突没有一行来自人写的内容。解决办法是维护者把它 rebase 到 `main`；你在自己分支上做什么都改变不了这一栏。
+- A red **check** is most often the `READMEs match data/plugins` step on a branch whose README snapshot predates a later merge — the maintainer regenerates those while merging, so it is not yours to fix. It can also be `awesome-lint` or the stale-fork guard, and those **are** yours. / **check** 一栏红，最常见的是 `READMEs match data/plugins`——你的分支上的 README 快照落后于之后的某次合并，维护者在合并时会重新生成，不归你修。但也可能是 `awesome-lint` 或陈旧 fork 守卫，那些**归你修**。
+- The gate verdict is a snapshot, and stale ones are re-run automatically: a submission blocked at "0.5 days old" qualifies by itself a few hours later, and when the gate itself is updated, older verdicts get refreshed on open PRs. You do not need to push an empty commit to re-trigger anything. / gate 的结论是快照，过期的会自动重跑：被「仓库 0.5 天大」挡住的投稿几小时后自己就达标了；gate 自身更新后，开放 PR 上的旧结论也会被刷新。你不需要推空提交来重触发任何东西。
+
+Once a re-review finds your changes good, the label is retired and the PR re-enters the queue on its own — you will see the label gone before you see the merge. / 一旦重评审认可了你的修改，标签被摘掉、PR 自己回到队列——你会先看到标签消失，然后才是合并。
 
 ### Icon / 图标（optional / 可选）
 

@@ -1,6 +1,0 @@
-url: https://github.com/CHYMZXS/dsh-archive-workbench
-name: CHYMZXS/dsh-archive-workbench
-category: session
-description:
-  en: 'Adds a Delete session item to the sidebar session row menu that permanently removes the session log directory, projection cache and archive/pin membership and drops its row from the sidebar, plus an archived-sessions panel where archived sessions can be restored or deleted.'
-  zh: '在侧边栏会话行菜单中新增「删除会话」，永久清除该会话的日志目录、投影缓存与归档/置顶记录，并让该行从侧边栏消失；同时在侧边栏提供已归档会话面板，可恢复或删除已归档会话。'

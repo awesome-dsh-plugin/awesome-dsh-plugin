@@ -1,0 +1,7 @@
+url: https://github.com/Sunday530/dsh-sidebar-panel-collapse
+name: Sunday530/dsh-sidebar-panel-collapse
+category: ui
+tarball: https://github.com/Sunday530/dsh-sidebar-panel-collapse/releases/download/v0.1.0/dsh-sidebar-panel-collapse-0.1.0.tgz
+description:
+  en: 'Adds a chevron row under New Session that folds the sidebar panel list in place, returning the height to the workspace and session list. The hiding is driven by one attribute on the page root plus CSS: no host bundle is patched and no row is unregistered, and plugin entries injected outside the panel slot fold too because they are matched by their own data attributes. The state is remembered per browser and the control hides itself in the 56px rail.'
+  zh: '在侧边栏「新会话」下方加一行箭头开关，就地折叠面板列表，把高度还给工作区和会话列表。隐藏由一个页面根属性加纯 CSS 驱动：不打宿主补丁、不注销任何条目；插件注入在面板槽位之外的入口，也按各自的 data 属性一并折叠。状态按浏览器记忆，56px 窄栏下开关自动隐藏。'

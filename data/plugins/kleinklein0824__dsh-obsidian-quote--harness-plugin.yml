@@ -1,0 +1,7 @@
+url: https://github.com/kleinklein0824/dsh-obsidian-quote/tree/main/harness-plugin
+name: kleinklein0824/dsh-obsidian-quote#dsh-obsidian-quote
+category: memory
+description:
+  en: 'Adds a knowledge-base sidebar backed by the separately installed local Obsidian Quote service: select registered vaults or folders, retrieve read-only note excerpts and cited context, extract rules, generate project convention briefs, and view shared citation statistics.'
+  zh: '通过需另行安装的本地 Obsidian Quote 服务提供知识库侧栏：选择已登记的知识库或文件夹，只读检索笔记片段与带来源的上下文、提取条款、生成项目规范摘要并查看共享引用统计。'
+tarball: https://github.com/kleinklein0824/dsh-obsidian-quote/releases/download/v0.2.7/dsh-obsidian-quote-panel-0.5.1.tgz

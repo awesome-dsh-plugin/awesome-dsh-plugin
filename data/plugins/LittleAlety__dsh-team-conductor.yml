@@ -1,0 +1,9 @@
+url: https://github.com/LittleAlety/dsh-team-conductor
+name: LittleAlety/dsh-team-conductor
+category: agi
+description:
+  en: 'Control plane for the harness''s own Agent Teams: members are ordinary independent sessions created through the same seam the GUI uses, each with its own model, so they open and continue like any other conversation while a sidecar roster and task board coordinate them. Task entries carry a definition of done, a member''s completion is submitted and waits for the Lead''s review, and availability tells idle apart from awaiting-review or a failed last turn. With delegationEngine=auto it uses independent sessions, continuable subagents, or the kernel roster depending on what the composition provides.'
+  zh: '内核 Agent Teams 的控制面：团队成员是与 GUI 同一条缝创建的普通独立会话（各自有模型），能像任何对话一样打开与继续；名册与任务板在侧车里协调它们——任务带完成标准，成员完成后提交并等待 Lead 审议，状态区分空闲 / 待审议 / 上一轮失败。delegationEngine=auto 会按组合提供的能力选择独立会话、可续接子代理或内核 roster。'
+# Prebuilt tarball on a GitHub release, pinned to the tag (a versioned filename is
+# correct here; `latest/download/` would rot on the next release).
+tarball: https://github.com/LittleAlety/dsh-team-conductor/releases/download/v1.5.0/dsh-team-conductor-1.5.0.tgz

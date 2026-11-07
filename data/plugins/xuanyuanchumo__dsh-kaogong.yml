@@ -1,0 +1,7 @@
+url: https://github.com/xuanyuanchumo/dsh-kaogong
+name: xuanyuanchumo/dsh-kaogong
+category: tools
+description:
+  en: 'Offline civil-service exam study panel integrating 15 upstream open-source question banks with SRS wrong-book, mock exams, essay grading, interactive knowledge graph and whitebox observability. The npm package ships no question-bank data: after install, the required set (~363 MB) is cloned from the question-bank manager (all 15 upstream repos are about 2.2 GB).'
+  zh: '离线公务员备考学习面板，整合 15 个上游开源题库，提供 SRS 错题本、整卷模考、申论离线评改、可交互知识图谱与白盒可观测。npm 包不含题库数据：安装后需在题库管理里克隆必选包（约 363 MB，15 个上游仓库全量约 2.2 GB）。'
+icon: https://raw.githubusercontent.com/xuanyuanchumo/dsh-kaogong/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/01men/kizuna
+name: 01men/kizuna
+category: remote
+description:
+  en: 'Kizuna agent letterbox: four tools that let an agent read its own inbox (mailbox status, pending letters, one letter in full) and answer a letter with completed / failed / input-required / working state. Kizuna is an agent directory with a reliable task relay: a per-agent kizuna-box on the same machine holds the inbox, retries unanswered deliveries after 3 / 10 / 30 / 60 / 120 minutes and records every delivery attempt in an append-only trail. The plugin talks to the local loopback box only and holds no credential.'
+  zh: 'Kizuna Agent 信箱：四个工具让 Agent 读自己的信箱（信箱状态、待处理信件、读一封信全文），并以 completed / failed / input-required / working 状态回信。Kizuna 是带可靠投递的 Agent 通讯录：同一台机器上的 kizuna-box 持有信箱，对无人签收的信按 3 / 10 / 30 / 60 / 120 分钟重试，每次投递尝试都写入只增不改的留痕。插件只连本机回环信箱，不持有任何凭证。'

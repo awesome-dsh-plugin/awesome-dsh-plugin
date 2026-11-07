@@ -1,0 +1,6 @@
+url: https://github.com/CooperZhuang/dsh-plugins-cooper-custom/tree/main/packages/dsh-open-in-dsh
+name: CooperZhuang/dsh-plugins-cooper-custom#dsh-open-in-dsh
+category: tools
+description:
+  en: 'Opens a folder in DeepSeek Harness from the OS: a Windows Explorer context-menu verb, a macOS Finder Quick Action and QSpace service, and the dsh-open launcher that starts or hands off to the desktop app. The OS menu entries need a one-time registration script (install-menu.ps1 on Windows, install-macos.sh on macOS) after installing the plugin.'
+  zh: '从系统里用 DeepSeek Harness 打开文件夹：Windows 资源管理器右键动词、macOS Finder 快速操作与 QSpace 服务，以及负责启动或交接桌面端的 dsh-open 启动器。系统菜单需在安装插件后运行一次注册脚本（Windows 用 install-menu.ps1，macOS 用 install-macos.sh）才会出现。'

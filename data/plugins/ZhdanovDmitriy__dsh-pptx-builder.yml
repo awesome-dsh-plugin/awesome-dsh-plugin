@@ -1,0 +1,6 @@
+url: https://github.com/ZhdanovDmitriy/dsh-pptx-builder
+name: ZhdanovDmitriy/dsh-pptx-builder
+category: tools
+description:
+  en: "PowerPoint deck builder for DeepSeek Harness: pastel palettes, ten slide templates, web images, Python-drawn charts, highlighted code cards, LaTeX formulas typeset without a TeX installation (matrices, integrals, sums with limits) and a Presentations agent mode."
+  zh: "面向 DeepSeek Harness 的 PowerPoint 演示文稿生成器：柔和色板、十种幻灯片模板、网络图片、Python 绘制的图表、高亮代码卡片、无需安装 TeX 的 LaTeX 公式（矩阵、积分、带上下限的求和）以及 Presentations 智能体模式。"

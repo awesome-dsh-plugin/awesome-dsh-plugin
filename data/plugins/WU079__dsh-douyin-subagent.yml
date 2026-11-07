@@ -1,7 +1,7 @@
 url: https://github.com/WU079/dsh-douyin-subagent
 name: WU079/dsh-douyin-subagent
 category: tools
-tarball: https://github.com/WU079/dsh-douyin-subagent/releases/download/v0.2.1/dsh-douyin-subagent-0.2.1.tgz
+tarball: https://github.com/WU079/dsh-douyin-subagent/releases/latest/download/dsh-douyin-subagent.tgz
 icon: https://raw.githubusercontent.com/WU079/dsh-douyin-subagent/main/assets/icon-180.png
 description:
   en: 'Runs a Douyin subagent that browses videos and reads comments in valley hours and reports back, with dy_* tools for publishing and replying (comments sent from the already-logged-in page with its own request signature, no IM ticket), a daily quota timer, and a settings panel under Settings → Douyin: master switch, auto mode, valley windows, rounds per day and report depth. Windows-oriented; needs the separate douyin-mcp binary (yunsur/douyin-mcp releases, path set via dy_config mcpExe) and an Edge/Chromium login; replying needs a logged-in browser on a CDP port; publishing needs extra credentials most accounts lack.'

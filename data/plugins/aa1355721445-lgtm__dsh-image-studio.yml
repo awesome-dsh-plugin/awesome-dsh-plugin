@@ -1,0 +1,6 @@
+url: https://github.com/aa1355721445-lgtm/dsh-image-studio
+name: aa1355721445-lgtm/dsh-image-studio
+category: vision
+description:
+  en: "Adds image_generate and image_library tools that pick reference images from four local libraries (characters, outfits, scenes, props), expand situation, expression, pose, shot and light keyword presets into the prompt, and call the 65535 async task API or any OpenAI-compatible images API, showing the result in the conversation; a settings page manages the libraries and turns an uploaded image or a text description into a three-view reference sheet. With dsh-daily-schedule installed, an image without a specified outfit uses what the character is wearing in the current schedule entry."
+  zh: "提供 image_generate 与 image_library 工具：从本地四个参考库（人物、服饰、场景、道具）挑选参考图，把情境、神态、动作、镜头、光线关键词展开进提示词，调用 65535 异步任务接口或任意 OpenAI 兼容图像接口生图并在对话中显示；设置页可管理参考库，并能把上传的图片或一段文字描述生成三视图设定图。装了每日日程（dsh-daily-schedule）时，没指定服饰的图沿用角色此刻日程里的穿着。"

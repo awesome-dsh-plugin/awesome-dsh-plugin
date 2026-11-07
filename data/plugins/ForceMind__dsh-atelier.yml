@@ -1,0 +1,7 @@
+url: https://github.com/ForceMind/dsh-atelier
+name: ForceMind/dsh-atelier
+category: dev
+description:
+  en: 'A DeepSeek Harness workbench with model metrics, cost estimates, prompt presets, optional auditing, and context-aware reply suggestions; automatic suggestions default on and may incur API fees.'
+  zh: '为 DeepSeek Harness 提供指标、费用估算、提示词与可选审计，支持上下文回复候选；自动建议默认开启，可能产生 API 费用。'
+tarball: https://github.com/ForceMind/dsh-atelier/releases/download/v1.7.0/dsh-atelier-plugin-1.7.0.tgz

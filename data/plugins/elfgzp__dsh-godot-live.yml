@@ -1,0 +1,6 @@
+url: https://github.com/elfgzp/dsh-godot-live
+name: elfgzp/dsh-godot-live
+category: dev
+description:
+  en: 'Streams a running Godot game into a DSH sidebar panel as MJPEG by driving a native Godot process, so Forward+ projects and GDExtensions keep working. The panel can start, stop, capture and fullscreen the view and inject clicks, and the agent gets tools to read status, drive input and take screenshots.'
+  zh: '通过驱动原生 Godot 进程把运行中的游戏画面以 MJPEG 推进 DSH 侧栏面板，Forward+ 项目与 GDExtension 都照常工作。面板可启动、停止、抓帧、全屏并注入点击，agent 另有工具读取状态、注入输入与截图。'

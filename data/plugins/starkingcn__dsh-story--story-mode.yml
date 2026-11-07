@@ -1,0 +1,7 @@
+url: https://github.com/starkingcn/dsh-story/tree/main/story-mode
+name: starkingcn/dsh-story#story-mode
+category: agi
+description:
+  en: 'Story Mode preset for DeepSeek Harness: role-play GM persona, three-way choices, .md character cards and world book, context distillation and prompt wrapping.'
+  zh: '面向 DeepSeek Harness 的故事模式预设：叙事 GM 人格、三条走向、.md 角色卡与世界书记忆、上下文提纯与前后置提示词。'
+icon: https://raw.githubusercontent.com/starkingcn/dsh-story/main/assets/icon-180.png

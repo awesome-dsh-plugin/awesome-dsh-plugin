@@ -1,0 +1,6 @@
+url: https://github.com/JOJO-Adam/dsh-git-workflow
+name: JOJO-Adam/dsh-git-workflow
+category: git
+description:
+  en: "Git workflow studio for DeepSeek Harness: pick a branch model, enforce Conventional Commits, review PRs by defect density, rewrite history safely, rescue lost commits with reflog, and version releases by actual behavior change."
+  zh: "DeepSeek Harness 的 Git 工作流工作室：定分支模型、统一提交规范、按缺陷密度评 PR、安全改写历史、用 reflog 救援丢失的提交，并按真实行为变化定版本号。"

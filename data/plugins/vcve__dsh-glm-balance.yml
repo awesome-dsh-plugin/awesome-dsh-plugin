@@ -1,0 +1,6 @@
+url: https://github.com/vcve/dsh-glm-balance
+name: vcve/dsh-glm-balance
+category: usage
+description:
+  en: "Composer status bar for GLM Coding Plan quota: 5-hour and weekly limits with reset times, MCP tool usage, and today's model usage, plus a glm_balance query tool."
+  zh: 在输入框下方常驻显示智谱 GLM Coding Plan 余量，含 5 小时/每周额度、重置时间、MCP 调用量与今日用量，并附 glm_balance 查询工具。

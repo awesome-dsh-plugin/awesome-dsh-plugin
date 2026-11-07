@@ -1,0 +1,6 @@
+url: https://github.com/ivanant/dsh-workspace-sidebar
+name: ivanant/dsh-workspace-sidebar
+category: ui
+description:
+  en: Shares one right-sidebar across every conversation in the same workspace, so you don't have to reopen it when creating or switching conversations, with a switch in Settings → General.
+  zh: 让同一工作区内的所有对话共用同一份右侧边栏，不用新建或者切换对话时候重新打开，并在「设置 → 通用」提供开关。

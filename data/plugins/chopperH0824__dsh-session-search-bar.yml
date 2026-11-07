@@ -1,0 +1,6 @@
+url: https://github.com/chopperH0824/dsh-session-search-bar
+name: chopperH0824/dsh-session-search-bar
+category: session
+description:
+  en: 'Persistent search bar in the conversation header: keyword-search the message bodies of past sessions, then open the session at the matched text.'
+  zh: '对话页顶部常驻搜索栏：按关键词搜索历史会话的消息正文，点击结果直接打开会话并定位到命中的那段文字。'

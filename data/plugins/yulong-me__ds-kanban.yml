@@ -1,0 +1,7 @@
+url: https://github.com/yulong-me/ds-kanban
+name: yulong-me/ds-kanban
+category: workflow
+description:
+  en: Local kanban boards shared by people, DSH sessions and optional DS Bot, with role permissions, change history and explicit task completion.
+  zh: 人、DSH 会话与可选 DS Bot 共用的本地看板，提供角色权限、变更记录和明确的任务完成操作。
+tarball: https://github.com/yulong-me/ds-kanban/releases/download/v0.3.0-beta.1/ds-kanban-0.3.0-beta.1.tgz

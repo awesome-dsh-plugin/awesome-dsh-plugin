@@ -1,0 +1,8 @@
+url: https://github.com/7AAAAAH/dsh-restart-app
+name: 7AAAAAH/dsh-restart-app
+category: ui
+description:
+  en: 'A restart button in the window title strip, right of the sidebar toggle, that stops every process the desktop app owns (Electron shell, Host, renderers and tool subprocesses) and starts the executable again, then reloads the page once the new instance answers. Windows desktop app only, and it hides itself on any other Host.'
+  zh: '窗口标题栏左上角、收起侧边栏按钮右侧的重启按钮：一次点击停掉这个桌面应用的全部进程（窗口外壳、宿主、渲染进程与工具子进程），再重新拉起可执行文件，新实例就绪后自动刷新页面。仅支持 Windows 桌面版，其它宿主里按钮自动隐藏。'
+icon: https://raw.githubusercontent.com/7AAAAAH/dsh-restart-app/main/assets/icon-256.png
+tarball: https://github.com/7AAAAAH/dsh-restart-app/releases/latest/download/dsh-restart-app.tgz

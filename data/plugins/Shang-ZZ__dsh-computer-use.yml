@@ -1,0 +1,7 @@
+url: https://github.com/Shang-ZZ/dsh-computer-use
+name: Shang-ZZ/dsh-computer-use
+category: tools
+description:
+  en: 'Computer use for DeepSeek Harness: js and js_reset tools that read windows, click, type, and screenshot macOS apps through the locally installed ChatGPT app. Apple Silicon macOS only; requires the ChatGPT desktop app.'
+  zh: '为 DeepSeek Harness 提供 computer use：js 与 js_reset 工具通过本机安装的 ChatGPT 应用读取窗口、点击、输入与截屏（macOS）。仅 Apple Silicon macOS，需已装 ChatGPT 桌面版。'
+icon: https://raw.githubusercontent.com/Shang-ZZ/dsh-computer-use/main/assets/icon-180.png

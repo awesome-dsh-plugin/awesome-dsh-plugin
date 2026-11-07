@@ -1,0 +1,6 @@
+url: https://github.com/eatone9254/dsh-balance-badge
+name: eatone9254/dsh-balance-badge
+category: usage
+description:
+  en: Pins your DeepSeek Harness account balance to the bottom-right corner and refreshes it every 60 seconds, with a click for an immediate lookup.
+  zh: 在 DeepSeek Harness 主界面右下角常驻账户余额，60 秒自动刷新，点击即可立即查询。

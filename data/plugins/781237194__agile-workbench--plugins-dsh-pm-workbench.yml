@@ -1,0 +1,7 @@
+url: https://github.com/781237194/agile-workbench/tree/main/plugins/dsh-pm-workbench
+name: 781237194/agile-workbench#dsh-pm-workbench
+category: tools
+description:
+  en: "Installs and opens PM Workbench, a local Electron multi-role project workbench, from a DSH tool. Windows only: the first load bootstraps Node, Electron and the app through a PowerShell installer. It does not embed the workbench UI in DSH."
+  zh: 从 DSH 安装并打开 PM工作台（本地 Electron 多角色项目工作台）。仅支持 Windows——首次加载会通过 PowerShell 安装器准备 Node、Electron 和应用本体；不把工作台 UI 嵌入 DSH。
+icon: https://raw.githubusercontent.com/781237194/agile-workbench/main/assets/pm-workbench.png

@@ -1,0 +1,7 @@
+url: https://github.com/fysh1010/mcp-server-fanqie/tree/main/plugins/deepseek-harness
+name: fysh1010/mcp-server-fanqie#deepseek-harness
+category: ui
+description:
+  en: 'Fanqie reader for the DeepSeek Harness sidebar: search book and media metadata, browse covers and chapter lists, read website-visible chapters, and view your bookshelf and saved highlights after QR sign-in.'
+  zh: 'DeepSeek Harness 侧栏番茄阅读：搜索小说及其他作品元数据，查看封面和目录、阅读官网可见章节，并在本人扫码登录后查看书架与收藏划线。'
+icon: https://raw.githubusercontent.com/fysh1010/mcp-server-fanqie/main/docs/assets/icon-180.png

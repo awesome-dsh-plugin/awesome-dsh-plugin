@@ -1,0 +1,7 @@
+url: https://github.com/xalor888/dsh-unlimited-retry
+name: xalor888/dsh-unlimited-retry
+category: model
+description:
+  en: 'Retries a model request that no other recovery layer claimed, unbounded by default with an exponential backoff ceiling, never retrying a cancellation; the policy is editable from a Settings panel.'
+  zh: '对没有其它恢复层接手的模型请求做重试，默认不设次数上限、退避有上限，且永不重试取消；策略可在设置面板中编辑。'
+icon: https://raw.githubusercontent.com/xalor888/dsh-unlimited-retry/master/assets/icon-180.png

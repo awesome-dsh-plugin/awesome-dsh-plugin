@@ -1,0 +1,6 @@
+url: https://github.com/99galaxy/dsh-turn-notify
+name: 99galaxy/dsh-turn-notify
+category: notify
+description:
+  en: Sends Windows system notifications when DSH session turns end, with session titles, elapsed time when observed, optional foreground suppression and subagent filtering. Click a notification to focus the DSH window.
+  zh: 在 DSH 会话本轮运行结束时发送 Windows 系统通知，显示会话标题及可观测的运行耗时，支持前台免打扰与子代理过滤。点击通知可将 DSH 窗口拉回前台。

@@ -1,0 +1,15 @@
+# awesome-dsh-plugin 条目 · dsh-startup-screen
+# 用法：把这个文件放进 awesome-dsh-plugin 仓库的 data/plugins/ 目录，然后提 PR
+# 文件名必须是 <owner>__<repo>.yml
+
+url: https://github.com/6shenhonghong9/dsh-startup-screen
+name: 6shenhonghong9/dsh-startup-screen
+category: ui
+
+description:
+  en: 'Rhine Lab-style boot animation for DeepSeek Harness: six acts from a black title plate through irradiated white-out to a warm dossier panel, five access-authorization steps (the first two can wait for a click or Enter, and Esc skips), real-voice recordings for the first five lines, and a settings page that switches between warm-light and dark themes and live-edits 33 playback, identity, voice and visual options.'
+  zh: '莱茵生命风格的 DeepSeek Harness 启动动画：黑幕标识 → 过曝洗白 → 暖白档案底板 → 五步访问授权（前两步可设为等点击/回车，Esc 可跳过）→ 色散揭幕，前五句为真声台词；设置页提供暖白/暗色两套主题，并可实时调整播放、身份、语音与视觉等 33 项参数。'
+
+# 可选：市场卡片图标。留空则回退到作者头像。
+# 图片必须是 GitHub 托管的位图（png/jpg），建议 180x180 以上。
+icon: https://raw.githubusercontent.com/6shenhonghong9/dsh-startup-screen/main/docs/screenshots/theme-light.jpg

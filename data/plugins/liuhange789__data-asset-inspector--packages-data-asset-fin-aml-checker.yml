@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/fin-aml-checker
+name: liuhange789/data-asset-inspector#fin-aml-checker
+category: tools
+description:
+  zh: "金融反洗钱合规检查插件，自动检测大额与可疑交易阈值、豁免规则与时效性，输出可审计的反洗钱合规报告，覆盖银行、保险、证券多业态。"
+  en: "Financial AML compliance checker: detects large/suspicious transaction thresholds, exemptions and timeliness, outputs auditable AML compliance reports across banking, insurance and securities."

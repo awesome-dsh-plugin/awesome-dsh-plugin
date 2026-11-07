@@ -2,5 +2,5 @@ url: https://github.com/zhangj1164/dsh-mega-plugins/tree/main/packages/github-is
 name: zhangj1164/dsh-mega-plugins#dsh-github-issue
 category: dev
 description:
-  en: "GitHub issue service for DSH: turns a telemetry failure analysis into a uniform issue report, builds a pre-filled new-issue URL that is shortened when it would exceed a configured length budget, and rewrites a plain description into a structured issue with the deployment's model."
-  zh: "面向 DSH 的 GitHub issue 服务：把遥测失败分析整理成统一格式的 issue 报告，构造预填的新建 issue 链接并在超出配置长度时裁剪正文，再用部署配置的模型把一段自然语言描述改写为结构化 issue。"
+  en: "GitHub issue service for DSH: turns a telemetry failure analysis into a uniform issue report, builds a pre-filled new-issue URL that is shortened when it would exceed a configured length budget, rewrites a plain description into a structured issue with the deployment's model, and closes the intake loop by listing the open issues that carry a claim label and handing each one to a fresh session, skipping issues an earlier pass already dispatched and repeating the pass on the first start of each local day when autopilot is enabled."
+  zh: "面向 DSH 的 GitHub issue 服务：把遥测失败分析整理成统一格式的 issue 报告，构造预填的新建 issue 链接并在超出配置长度时裁剪正文，用部署配置的模型把一段自然语言描述改写为结构化 issue，也打通接单闭环——按认领标签列出可接的 issue 并逐个派发到新会话，跳过此前已经派发过的 issue，开启自动驾驶后在每个本地日的首次启动时自动跑一轮。"

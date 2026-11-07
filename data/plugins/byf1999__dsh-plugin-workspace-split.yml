@@ -1,0 +1,6 @@
+url: https://github.com/byf1999/dsh-plugin-workspace-split
+name: byf1999/dsh-plugin-workspace-split
+category: ui
+description:
+  en: 'Split view for the Web UI: tiles 1-3 columns x 1-3 rows of live sessions from several workspaces in one grid, with draggable dividers, sidebar-follow routing, an in-pane file preview and an in-pane changes review.'
+  zh: 'Web 界面里的多工作区分屏视图：用 1–3 列 × 1–3 行的网格同时显示多个工作区的实时会话，支持拖动分栏、侧边栏会话进入格子、格内文件预览与改动评审。'

@@ -1,0 +1,6 @@
+url: https://github.com/zmengle/dsh-plugin-ark-image-gen
+name: zmengle/dsh-plugin-ark-image-gen
+category: vision
+description:
+  en: 'Image generation through the Volcano Ark / Doubao Seedream API: ark_generate_image for text-to-image, image-to-image and fixed-seed batches, ark_image_gen_status for checking the key, model and output directory. Requires a Volcano Ark API key (ARK_API_KEY).'
+  zh: '火山方舟 / 豆包 Seedream 生图：ark_generate_image 支持文生图、图生图和固定 seed 批量出图，ark_image_gen_status 检查密钥、模型与输出目录。需配置火山方舟 API Key（ARK_API_KEY）。'

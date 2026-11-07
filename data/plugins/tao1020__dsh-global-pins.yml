@@ -1,0 +1,9 @@
+url: https://github.com/tao1020/dsh-global-pins
+name: tao1020/dsh-global-pins
+category: ui
+description:
+  en: >-
+    Keep pinned conversations from every workspace at the top of the sidebar, with drag insertion hints, manual or recent-first sorting, and completion-unread dots. Includes Codex-style row actions: a live spinning indicator while a session runs, archive and restore, inline rename that selects the whole title, and a right-click menu for fork and reordering. A magnifier beside the Global pins heading opens a search overlay: it matches session titles and workspace names instantly, then searches message content through the Host index when the deployment enables it, splitting results under small Sessions and Content headings with snippets.
+  zh: >-
+    会话散落在不同工作区，重要内容不好找？全局置顶把你选中的会话集中到侧边栏顶部，支持拖拽排序和清晰的插入位置提示，也可按最近更新时间自动排序。会话完成后小绿点提醒。还有 Codex 同款行内操作：运行中的会话右侧持续转圈显示进度，支持归档/恢复、点开就全选标题的重命名，右键菜单可 Fork 和上下移动。侧边栏「全局置顶」旁的放大镜打开搜索浮层：先按会话标题和工作区名匹配，再查消息正文索引（部署开启内容索引时可用），结果按「会话」「内容」小标题分组，内容命中带摘要。
+tarball: https://github.com/tao1020/dsh-global-pins/releases/download/v1.0.4/local-global-pins-1.0.4.tgz

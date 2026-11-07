@@ -1,0 +1,6 @@
+url: https://github.com/ayuanxx-max/dsh-session-accordion
+name: ayuanxx-max/dsh-session-accordion
+category: ui
+description:
+  en: 'Chat turn accordion: every interaction folds into one row with a time pill and question summary, only the newest turn stays open, and switching sessions or starting a new turn resets the open state; the execution process opens only on its own click.'
+  zh: 会话交互折叠：每次交互压成一行（时间胶囊 + 提问摘要），只保留最近一次展开；切换工作区/会话或产生新交互都会重置到最新一条；执行过程仅在单独点击时展开。

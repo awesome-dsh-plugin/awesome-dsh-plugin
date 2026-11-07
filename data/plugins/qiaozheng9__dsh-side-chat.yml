@@ -1,0 +1,7 @@
+url: https://github.com/qiaozheng9/dsh-side-chat
+name: qiaozheng9/dsh-side-chat
+category: ui
+description:
+  en: "Native DSH /side conversation tabs with a clean transcript and inherited context, hidden from the main session list using independent Session forks and the official chat UI, with timestamps, token usage, streaming and the command menu. Extracted from dsh-better-sidebar 0.29.0 (MIT); do not enable it alongside dsh-better-sidebar's own /side entry — the two command entries conflict, so stop one before using the other. Requires Windows DSH Desktop 0.2.1-rc.5 and dsh-delete-session for confirmed permanent cleanup."
+  zh: '不进入左侧列表、空白开场且保留上下文的 /side 临时侧边对话，复用 DSH 原生分支和聊天界面，包含时间、用量、流式回复和原生命令菜单。核心代码提取自 dsh-better-sidebar 0.29.0（MIT），不能与 dsh-better-sidebar 自带的 /side 入口同时启用（命令冲突，使用前停用其一）。完整使用要求 Windows DSH Desktop 0.2.1-rc.5，并启用 dsh-delete-session 完成关闭后的永久清理。'
+tarball: https://github.com/qiaozheng9/dsh-side-chat/releases/download/v0.2.4/dsh-side-chat-0.2.4.tgz

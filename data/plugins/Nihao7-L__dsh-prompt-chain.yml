@@ -2,6 +2,6 @@ url: https://github.com/Nihao7-L/dsh-prompt-chain
 name: Nihao7-L/dsh-prompt-chain
 category: ui
 description:
-  en: ⚡ One-click prompt enhance in the DSH composer. Still short? Keep going for up to 5 rounds; 🕐 every round is auto-saved, one click to roll back; ↩️ the result syncs back to the composer, with a line diff for every change; 🎨 6 read-only built-in presets plus up to 3 of your own, 🪄 button icon and 📍 position are all yours to tweak.
-  zh: ⚡ DSH 输入框一键增强提示词（prompt），嫌短？继续生成往下扩，最多 5 轮；🕐 每轮自动存档，点一下就退回上一版 ↩️ 结果同步回输入框，改哪几个字逐行对比标给你看 🎨 内置 6 套只读方案、自建最多 3 套、🪄 按钮图标、📍 按键位置，全按你的习惯改。
-tarball: https://github.com/Nihao7-L/dsh-prompt-chain/releases/download/v1.0.2/dsh-prompt-chain-1.0.2.tgz
+  en: "One-click 💪 prompt enhancement (prompt): thin draft? continue 🔜, unhappy? regenerate 🔄; auto-archive history 🕐 with rollback ↩️; result syncs back to the composer with a line-by-line diff; 🗺️show the panel 🎨 customise the 🪄 prompt-button icon 📍 and button position yourself."
+  zh: "一键增强💪提示词(prompt)——嫌短就继续生成🔜，不满意就重新生成🔄；自动存档历史记录🕐，支持回退 ↩️；结果同步回输入框，差异逐行对比；🗺️显示界面🎨 提示词🪄按钮图标📍按键位置自己定制"
+tarball: https://github.com/Nihao7-L/dsh-prompt-chain/releases/latest/download/dsh-prompt-chain.tgz
