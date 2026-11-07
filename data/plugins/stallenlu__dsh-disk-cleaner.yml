@@ -4,4 +4,4 @@ category: tools
 description:
   en: 'A Windows disk cleaner for DeepSeek Harness that scans known-safe cache locations, shows their sizes, reclaims the space from a Web panel, and offers a read-only audit of what it cannot clean automatically.'
   zh: '面向 DeepSeek Harness 的 Windows 磁盘清理插件，扫描已知的安全缓存目录、显示占用大小，在 Web 面板中回收空间，并对无法自动清理的部分提供只读审计。'
-tarball: https://github.com/stallenlu/dsh-disk-cleaner/releases/download/v1.6.1/dsh-disk-cleaner-1.6.1.tgz
+tarball: https://github.com/stallenlu/dsh-disk-cleaner/releases/download/v1.6.2/dsh-disk-cleaner-1.6.2.tgz
