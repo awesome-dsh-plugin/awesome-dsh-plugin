@@ -1,0 +1,7 @@
+url: https://github.com/jy78-hsd/dsh-coke
+name: jy78-hsd/dsh-coke
+category: fun
+tarball: https://github.com/jy78-hsd/dsh-coke/releases/download/v0.9.0/dsh-coke-0.9.0.tgz
+description:
+  en: "dsh-coke — a cat desktop pet for DeepSeek Harness: click it for one of 7 catchphrases with a springy bounce, right-click for chat (answers via your current model, optional sticker), singing with a microphone, a random 'form' card, green-screen outfit swapping, or shooting it; balance query at its feet; auto-starts with DSH."
+  zh: "dsh-coke（小猫coke）：DSH 桌面上的猫桌宠。左键点它按权重抽 7 句台词并 Q 弹蹦一下；右键能「对话」（用当前模型回答，可配表情包）、「唱歌」（掏麦克风）、「形态展示」（头顶随机形态卡片）、「自定义装扮」（绿幕检测后换形象）、「枪击小猫」；脚下按钮查 DeepSeek 余额；默认随 DSH 自动启动。"
