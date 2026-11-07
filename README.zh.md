@@ -3582,6 +3582,7 @@ dsh plugin --profile web add dshmarket
 - [cindyguyuehu123/dsh-webchatlike](https://github.com/cindyguyuehu123/dsh-webchatlike) — 更贴近 deepseek 网页版/App 的聊天体验：原位编辑提问、重新生成回复、每条消息带 <i/N> 版本翻页器（树状版本模型，跨对话保持稳定）。
 - [CJXIAO0718/dsh-plugin-session-share](https://github.com/CJXIAO0718/dsh-plugin-session-share) — 把任意 DSH 会话导出为单文件、离线可打开的 HTML 分享页：可按单条消息挑选、工具调用折叠，并默认脱敏本机路径与密钥。
 - [columforge/dsh-session-timeline](https://github.com/columforge/dsh-session-timeline) — 右侧栏会话时间线：以鱼骨布局展示工作区全部会话，含原生 fork/handoff 血缘、手工拖拽衔接、分支扇出、归档会话显示与逐轮详情浏览。
+- [CooperZhuang/dsh-plugins-cooper-custom#dsh-session-ops](https://github.com/CooperZhuang/dsh-plugins-cooper-custom/tree/main/packages/dsh-session-ops) — DeepSeek Harness 的会话运维：真正删除持久化会话（工作区、归档、子代理过滤；运行中会话守卫），并在工作区之间搬迁会话（日志迁移、header.cwd 改写、workspace 注册表跟随）。内含共享的会话存储库。
 - [Coprexist/dsh-session-recovery](https://github.com/Coprexist/dsh-session-recovery) — 从原始磁盘恢复被删除或损坏的 dsh 会话（session.jsonl.zstd）与记忆库（memory.db），并通过 web 界面中的 /session-repair 命令修复重建后无法续接的会话。
 - [corlinniu/dsh-daily-chat](https://github.com/corlinniu/dsh-daily-chat) — 把 DSH Web 侧边栏的「新会话」拆成两种模式：「日常聊天」在专属工作区里用插件自己安装到 harness home 的 `daily` 预设开一个只有人格、网页检索/抓取、提问和上下文压缩的轻量会话（没有文件、Shell、计划模式和子代理），侧边栏只列这些日常会话；「开始工作」保持原有编码 Agent；原生「新会话」按钮被隐藏，其余「新会话」入口按当前模式路由，模式存在 localStorage。
 - [cq-guojia/dsh-session-title-pattern](https://github.com/cq-guojia/dsh-session-title-pattern) — 把 dsh 会话标题统一成「日期｜类型｜主题」（类型与主题由模型对整段对话总结），并支持可逆的会话隐藏：暂时不用的会话从侧边栏收起，不删除、随时一键显示回来。
@@ -4796,6 +4797,7 @@ dsh plugin --profile web add dshmarket
 - [coolbreezecoin/dsh-wechat-mp](https://github.com/coolbreezecoin/dsh-wechat-mp) — 把 markdown 变成排好版的微信公众号草稿：样式逐条内联到元素上（编辑器会丢弃 `<style>` 块和 class 名），每张本地图片走微信自己的上传接口以免被过滤，然后创建草稿；不做群发。
 - [CoolTea001/dsh-cool-terminal](https://github.com/CoolTea001/dsh-cool-terminal) — 终端插件 — 真 shell、工作区同步、状态常驻、常用命令管理、命令补全。
 - [CooperZhuang/dsh-plugins-cooper-custom#dsh-folder-path](https://github.com/CooperZhuang/dsh-plugins-cooper-custom/tree/main/packages/dsh-folder-path) — 粘贴复制来的文件夹时插入完整路径文本，而不是尝试上传（支持 Windows 与 macOS）。
+- [CooperZhuang/dsh-plugins-cooper-custom#dsh-open-in-dsh](https://github.com/CooperZhuang/dsh-plugins-cooper-custom/tree/main/packages/dsh-open-in-dsh) — 从系统里用 DeepSeek Harness 打开文件夹：Windows 资源管理器右键动词、macOS Finder 快速操作与 QSpace 服务，以及负责启动或交接桌面端的 dsh-open 启动器。
 - [CooperZhuang/dsh-plugins-cooper-custom#dsh-rtk-slim](https://github.com/CooperZhuang/dsh-plugins-cooper-custom/tree/main/packages/dsh-rtk-slim) — 把超大 bash / job_output 文本交给外部 rtk 二进制压缩，原文写入 spill 文件供模型按需取回；rtk 缺失或失败时保留原文。
 - [copylee711/dsh-academic](https://github.com/copylee711/dsh-academic) — 学术工具，TypeScript 实现，不需要 Python 或 MCP 服务：通过本地 API 或 zotero.org 访问 Zotero 文库（检索、批注、全文、导出引文；开启写入后可按 DOI / arXiv 编号入库、写笔记、改标签），Zotero 没开时自动启动；同时检索 arXiv、OpenAlex、Crossref、Semantic Scholar、PubMed、Europe PMC，并通过浏览器窗口检索知网和 Google Scholar；阅读开放获取全文、从 DOI 注册机构取引文、核验参考文献；内置 11 个学术技能。
 - [copylee711/dsh-computer-use](https://github.com/copylee711/dsh-computer-use) — Windows 电脑控制：截图、鼠标、键盘、剪贴板和窗口工具，按应用授权并经 DSH 审批；操控期间屏幕显示橙色光晕和提示条，按 Esc 暂停或继续。
@@ -6445,6 +6447,7 @@ dsh plugin --profile web add dshmarket
 - [wangzhanchao883/dsh-hold-to-talk](https://github.com/wangzhanchao883/dsh-hold-to-talk) — 输入框上的单手、免键盘输入：鼠标在输入框按住、说话、松手，文字直接进草稿；上滑取消，不留半句。不用去瞄麦克风按钮，也不用记快捷键，手始终不用离开输入区——另一只手正忙的时候，这一点才是关键。识别完全在本机完成（SenseVoice + sherpa-onnx），无需 API key，音频不出本机。
 - [WayneYu430/dsh-voice-agent#voice-app](https://github.com/WayneYu430/dsh-voice-agent/tree/master/packages/voice-app) — dsh 的对话式语音前端 Agent：通过 ByteDance Duplex 自然对话，把语音请求委派给后台任务，并用语音回报异步结果。
 - [WizisCool/dsh-ears](https://github.com/WizisCool/dsh-ears) — 面向 DeepSeek Harness (dsh) 的语音输入插件：输入框的麦克风按钮把语音转成草稿文本，支持多种语音识别后端，可选经 dsh 自有 LLM 路由润色，并带原生设置页。
+- [wuyou0423/dsh-space-ptt](https://github.com/wuyou0423/dsh-space-ptt) — 按住空格录音、松手自动识别并发送，不用先点输入框。按 Esc 可取消，切换窗口自动取消。
 - [wwweljf/dsh-plugins#dsh-ding-sound](https://github.com/wwweljf/dsh-plugins/tree/master/plugins/dsh-ding-sound) — DSH 对话结束提示音：内置网络热梗原声（你干嘛哎呦、鸡你太美、神鹰哥等），设置面板可试听/切换/随机，支持自定义音频目录。
 - [WYR-233/dsh-multi-tts](https://github.com/WYR-233/dsh-multi-tts) — 每条回复旁的朗读按钮与输入框自动朗读开关，设置页可选服务商与音色：MiniMax 或任意 OpenAI 兼容的 /audio/speech 端点，可调音色、情绪、语速与模型。
 - [wzd-cpu/dsh-breeze-tts](https://github.com/wzd-cpu/dsh-breeze-tts) — 把 BreezeBlue 语音接入 DSH：三个工具、会话头开关自动朗读助手回复（自动剥离 Markdown 与代码块），并提供音频播放、合成与长轮询的本地 HTTP 接口。需配置 BreezeBlue API Key（BREEZE_API_KEY），合成按字符计费。
@@ -6665,6 +6668,7 @@ dsh plugin --profile web add dshmarket
 - [bjzkhy/dsh-multiplatform-balance](https://github.com/bjzkhy/dsh-multiplatform-balance) — 多平台余额 Agent 技能与工具：查询 DeepSeek、豆包 / 火山引擎、千问 / 阿里云百炼、混元 / 腾讯云以及自定义 HTTP 接口的账户余额；只读，内置 60 秒缓存。
 - [Cavan-Ou/hermes-dsh-collab](https://github.com/Cavan-Ou/hermes-dsh-collab) — 把 DeepSeek Harness 接进 Hermes 管线：派单 spec 模板、模型档位路由、质量门、git 唯一写者约定，SKILL.md 技能包（bundle 可安装）。
 - [cccuuuhhh/dsh-skill-groups](https://github.com/cccuuuhhh/dsh-skill-groups) — 把技能归入具名分组，自由勾选组合切换，拖拽排序，并预览每组的目录 token 成本。
+- [cenglin123/ocsr](https://github.com/cenglin123/ocsr) — 提供 `ocsr` 技能与 `ocsr_dispatch` 工具，把 headless `opencode run` 当作 fresh-context、跨厂商的 worker 后端；超时看门狗与每 worker 产物文件由 Python driver 负责。需本机安装 OpenCode CLI，并在 `~/.ocsr/allowed-models.json` 配置模型白名单。
 - [changliang-c/zemingxingxiao-brand-diagnosis](https://github.com/changliang-c/zemingxingxiao-brand-diagnosis) — 注册择命行效五行品牌诊断技能及五个伴随参考技能（理论、诊断手册、二百四十案案例库、可视化模板、术语表），带提示词路由与强制 HTML 报告模板、13 张理论配图。
 - [chemmy-11/dsh-vivado#dsh-vivado-preset](https://github.com/chemmy-11/dsh-vivado/tree/main/packages/dsh-vivado-preset) — 为 dsh 增加一个 Vivado 会话预设：FPGA 工程纪律 persona（全局串行、纯 ASCII 路径、结论必须带证据、长构建脱离进程树），并从包内挂载 8 个 AMD/FPGA 技能；安装预设本身不要求装 Vivado 或 vivado-mcp。
 - [chen112233usa/dsh-typesafe-ai-skill](https://github.com/chen112233usa/dsh-typesafe-ai-skill) — 把 TypeSafe / Jev（System One 判断模型）的构建技能注册进 DeepSeek Harness 的全局技能层，让每个会话都能用带类型的判断做分类、路由、打分、抽取和置信度门控，取代「调大模型再解析回复」。不含任何密钥，API key 由使用者通过 OPENROUTER_API_KEY 提供。
