@@ -1,0 +1,8 @@
+url: https://github.com/zmd12345/dsh-skill-dev-delivery-rules
+name: zmd12345/dsh-skill-dev-delivery-rules
+category: usage
+description:
+  en: Registers a battle-tested development delivery rulebook as a progressive-disclosure session skill - requirement clarification, layered architecture, evidence-driven debugging, minimal diffs, impact-graded verification, feature parity on migrations, async UI feedback, sizing rules, CLI deletion safety and test-data cleanup. The loaded body is a short index; each rule section is read on demand to keep context small.
+  zh: 把一套实战打磨的《开发交付规则》注册为渐进披露的会话技能：需求澄清、分层架构、证据驱动调试、最小变更、按影响面分级验证、迁移功能对等、界面异步反馈、样式尺寸规范、命令行安全与测试垃圾数据清理。加载的正文只是短索引，各节条款按需读取，节省上下文。
+icon: https://raw.githubusercontent.com/zmd12345/dsh-skill-dev-delivery-rules/main/icon.svg
+tarball: https://github.com/zmd12345/dsh-skill-dev-delivery-rules/releases/latest/download/dsh-skill-dev-delivery-rules.tgz
