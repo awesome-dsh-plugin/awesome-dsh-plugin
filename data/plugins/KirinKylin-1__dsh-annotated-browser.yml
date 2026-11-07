@@ -1,0 +1,7 @@
+url: https://github.com/KirinKylin-1/dsh-annotated-browser
+name: KirinKylin-1/dsh-annotated-browser
+category: browser
+description:
+  en: 'A browser tab that renders pages through the host so sites sending X-Frame-Options or a CSP still load, then lets you click an element or drag a region and send the notes into the conversation with selectors, visible text and rectangles. The built-in browser keeps working; picking stays on until you press Esc.'
+  zh: '经宿主渲染的浏览器标签，禁止嵌入的站点也能打开；点选元素或框选区域，把批注连同选择器、可见文本和位置一并发进对话。内置浏览器照常可用，点选不会被打断，按 Esc 才退出。'
+icon: https://raw.githubusercontent.com/KirinKylin-1/dsh-annotated-browser/main/assets/icon-180.png
