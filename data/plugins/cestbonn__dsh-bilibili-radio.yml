@@ -1,0 +1,6 @@
+url: https://github.com/cestbonn/dsh-bilibili-radio
+name: cestbonn/dsh-bilibili-radio
+category: voice
+description:
+  en: Sidebar radio that plays Bilibili audio with search, playlists, scrolling lyrics, and chat-driven song picks.
+  zh: 左侧栏 B 站电台：播放音频、搜索、歌单、滚动歌词，以及对话点歌。
