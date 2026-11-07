@@ -1,0 +1,7 @@
+url: https://github.com/474885697-alt/dsh-kit/tree/main/plugins/dsh-project-checkup
+name: 474885697-alt/dsh-kit#dsh-project-checkup
+category: dev
+tarball: https://github.com/474885697-alt/dsh-kit/releases/download/v0.1.0/dsh-project-checkup-0.1.0.tgz
+description:
+  zh: "项目体检：语法与资源快检加完整健康报告；检查项写在项目里的 dsh-checkup.json，换项目不用改代码。"
+  en: "Runs project checks described in a dsh-checkup.json file (files, syntax, JSON, HTTP health, asset counts) and falls back to auto-detected defaults when no profile exists."
