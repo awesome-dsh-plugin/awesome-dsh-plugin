@@ -2,6 +2,6 @@ url: https://github.com/game25011/dsh-notify-toast
 name: game25011/dsh-notify-toast
 category: notify
 description:
-  en: "A lightweight, native and extensible Windows notification plugin for DSH: on-demand helper startup, sound, native toasts and a taskbar unread badge, covering roughly 90% of routine alert scenarios in our use (an empirical estimate). No resident background service; MIT-licensed, customizable, and maintained for DSH compatibility."
-  zh: "轻量、原生、可自我拓展的 Windows DSH 通知插件：按需启动 helper，提供提示音、Windows 原生 toast 与任务栏未读角标；按实际使用经验覆盖约 90% 日常提示场景（经验估测）。无常驻后台，MIT 开源可定制，持续跟进 DSH 兼容。"
+  en: "Native Windows task-completion notifications for DSH: one clean toast when the agent finishes, with a session summary and the key point of the final reply—not an alert for every tool step. Lightweight and quiet, with a taskbar unread badge, configurable sounds, and no resident background service. MIT-licensed, actively maintained for DSH compatibility."
+  zh: "DSH 任务完成通知：Agent 收尾时发一条 Windows 原生 Toast，带会话摘要与最后回复重点，不按每个工具步骤刷屏。轻量无常驻后台，聚焦不打扰，附任务栏未读角标、提示音与可配置提醒。MIT 开源，持续跟进 DSH 兼容。"
 tarball: https://github.com/game25011/dsh-notify-toast/releases/latest/download/dsh-notify-toast.tgz
