@@ -2061,6 +2061,7 @@ dsh plugin --profile web add dshmarket
 - [Bigzhou-benzhou/dsh-usage-wave](https://github.com/Bigzhou-benzhou/dsh-usage-wave) — 余额、剩余 tok 与用量面板：侧栏底部一张余额/剩余 token 卡片，点开是贴在对话栏左侧空白处的用量面板 —— 1h/6h/24h/7d 的 token/金额堆叠波形、实时 tok/s 曲线、逐指令消耗与花费；按最近 24h 实付均价折算「余额还能跑多少 tok」。
 - [Bil812/dsh-balance-tasks](https://github.com/Bil812/dsh-balance-tasks) — 右下角悬浮卡显示 DeepSeek 余额与峰谷档位倒计时，并基于历史平均单任务 Token 消耗与当前上下文估算剩余任务数。
 - [Billwu18/dsh-cache-hit-monitor](https://github.com/Billwu18/dsh-cache-hit-monitor) — 以寄存器阵列与反应堆芯历史盘面的形式，在 DSH 右侧栏实时显示当前会话的提示词缓存遥测。
+- [bingomu/dsh-usage-printer](https://github.com/bingomu/dsh-usage-printer) — 侧栏小票机：点阵屏用百分比显示余额水位与峰谷价格带，鼠标悬停时从槽口送出一张明细小票（余额、已充值、今日/本月花费、单价）。
 - [bjzkhy/dsh-token-ledger-pro](https://github.com/bjzkhy/dsh-token-ledger-pro) — DSH 费用统计面板：从 session 事件采集每次请求用量，按内置 16 家厂商 136 个模型的价格目录实时计费，在输入框旁展示当前模型、账户余额、本会话/今日/本月消费与月度预算横条。中英双语。
 - [black970/dsh-quota-viewer](https://github.com/black970/dsh-quota-viewer) — DSH 侧边栏额度面板：聚合 DeepSeek 官方余额、jojo code 订阅窗口、SCNet 超算用量与方舟 Coding Plan 用量，本地保存 90 天历史并绘制趋势图。
 - [BlackThunder2191026/dsh-deepseek-usage](https://github.com/BlackThunder2191026/dsh-deepseek-usage) — 在 DSH 侧边栏显示 DeepSeek 余额，并在每轮对话底部显示该轮花费（人民币，含搜索请求费用）。需要官方 DeepSeek（deepseek-official）渠道及其 API Key（DEEPSEEK_API_KEY），且只在带 Web 界面的 profile 中生效。
@@ -6298,6 +6299,7 @@ dsh plugin --profile web add dshmarket
 - [siegfly/dsh-deepseek-vision](https://github.com/siegfly/dsh-deepseek-vision) — 视觉语言网关：注册支持图片输入的 DeepSeek provider 路由，图片先由可配置 VL 模型（默认 Qwen-VL）描述成文字再发送。
 - [southcul/dsh-gpt-image-playground](https://github.com/southcul/dsh-gpt-image-playground) — 支持 GPT Image、Gemini（Nano Banana）和 Grok 的图片生成与编辑工具，支持官方接口、OpenAI 兼容接口、api.toolify-ai.com 与自定义 HTTP 供应商。支持文本生图、参考图编辑、画板标注、遮罩编辑与 Agent 多轮对话，图片和历史记录保存在本地。
 - [Ssrs-Pro-Max/dsh-image-tiler](https://github.com/Ssrs-Pro-Max/dsh-image-tiler) — 让超大图片以可读分辨率进入模型视野，而不是被压成一张缩图：准入前按附件存储允许的上限把大图切成多张切片（8000x8000 的截图会变成 20 张 2000x1600），小字得以保留。以替换本地附件存储的方式实现，不新增任何配置项。
+- [stickerwu/stickerwu-imagegen](https://github.com/stickerwu/stickerwu-imagegen) — 可配置图片 API 的生图、参考图编辑与按需标注画布插件。
 - [sunxin-ai/dsh-design-qa](https://github.com/sunxin-ai/dsh-design-qa) — 给纯文本模型的设计稿保真判定：`deepseek_vision` 工具从任意 OpenAI 兼容视觉路由借来一只眼，让模型判断实现与设计稿是否一致——并附上支撑该判定的基准（4 组夹具、23 处注入缺陷、逐格原始输出）与其依赖的提问纪律。
 - [SZUold8/dsh-video-learning](https://github.com/SZUold8/dsh-video-learning) — 视频精读：获取 B 站单分P或 YouTube 视频，每 3 秒基础采样并补取变化帧，本地 faster-whisper 转写，分页读取分段图版，并可排版成 16:9 学习 PPT。仅 Windows；需要 DSH 的 pwsh 工具，以及 Python 3.12 x64 + Pillow、FFmpeg/FFprobe；获取视频另需 yt-dlp，转写需 faster-whisper 并自备本地模型文件，PPT 输出需 python-pptx。
 - [TaurusWood/dsh-plugin-appshot](https://github.com/TaurusWood/dsh-plugin-appshot) — DSH 版 Codex Appshots：全局快捷键精准捕获当前工作窗口，零摩擦挂载至 Composer 作为上下文向 Agent 提问。
