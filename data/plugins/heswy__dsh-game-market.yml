@@ -1,0 +1,6 @@
+url: https://github.com/heswy/dsh-game-market
+name: heswy/dsh-game-market
+category: fun
+description:
+  en: 'Game market and runtime for DSH. While the agent runs a long task, a game fills the main workspace and a small whale in the corner shows the agent state (working, waiting for you, done, error); progress is saved and continues next time. Ships five built-in games, a game SDK and CLI, and a community catalog installable from the market.'
+  zh: 'DSH 的游戏市场与运行时。Agent 跑长任务时，游戏铺满主工作区，右下角的小鲸鱼显示 Agent 状态（运行中、等你、完成、出错）；进度自动保存，下次接着玩。内置五款游戏，提供游戏 SDK 与 CLI，并可从市场安装社区游戏。'

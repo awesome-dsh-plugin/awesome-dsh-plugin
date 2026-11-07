@@ -1,0 +1,7 @@
+url: https://github.com/HengryLiang/dsh-plugin-ai-drama
+name: HengryLiang/dsh-plugin-ai-drama
+category: ui
+description:
+  en: AI short-drama workspace for DeepSeek Harness, with a dedicated drama agent preset, 35 agent tools and 10 bundled skills covering outline, characters, script, storyboard and export.
+  zh: 面向 DeepSeek Harness 的 AI 短剧工作区：独立的「短剧模式」Agent 预设、35 个 Agent 工具与 10 个随包技能，覆盖立项、总纲、人物、剧本、分镜与导出。
+tarball: https://github.com/HengryLiang/dsh-plugin-ai-drama/releases/latest/download/dsh-plugin-ai-drama.tgz

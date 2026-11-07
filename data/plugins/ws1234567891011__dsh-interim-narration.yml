@@ -1,0 +1,7 @@
+url: https://github.com/ws1234567891011/dsh-interim-narration
+name: ws1234567891011/dsh-interim-narration
+category: agi
+tarball: https://github.com/ws1234567891011/dsh-interim-narration/releases/latest/download/dsh-interim-narration.tgz
+description:
+  en: 'Makes the agent narrate its process: every turn opens with how it reads the message and what it will do first, then short interim notes between tool-call batches, with in-app settings for style, sentence cap and toggles.'
+  zh: '让 agent 边做边说：每轮先用一两句说明怎么理解消息、准备怎么做、第一步是什么，并在工具调用批次之间写过程叙述；插件页可直接调整详略、句数上限与开关。'

@@ -1,0 +1,6 @@
+url: https://github.com/imaused/dsh-kb-lite
+name: imaused/dsh-kb-lite
+category: memory
+description:
+  en: 'Local knowledge base for DeepSeek Harness: five tools to ingest Markdown, plain text and PDF files, search them with BM25 or hybrid BM25 plus optional local embeddings, and answer with cited source passages. Runs offline with no database server. Requires Node.js 18+ and Python 3.9+; PDF ingest needs pymupdf.'
+  zh: '本地知识库：五个工具，导入 Markdown、文本与 PDF，用 BM25 或 BM25 + 本地向量的混合检索查找，回答时带原文引用。离线运行，不需要数据库服务。需 Node.js 18+ 与 Python 3.9+；导入 PDF 需 pymupdf。'

@@ -1,0 +1,7 @@
+url: https://github.com/kunjienie50-creator/dsh-shared-kb
+name: kunjienie50-creator/dsh-shared-kb
+category: tools
+tarball: https://github.com/kunjienie50-creator/dsh-shared-kb/releases/latest/download/dsh-shared-kb.tgz
+description:
+  en: 'Team shared knowledge base: one member runs a zero-dependency Hub, everyone else installs this plugin and joins with one invite code. Uploads are filed into ten categories with a summary, confidence and points; 15 agent tools let members upload, search, recall, comment and read them. Important items are pinned with a hand-written recommendation until the member has read them, and each account also gets a private local library, collections, a weekly digest and version diffs.'
+  zh: '团队共享知识库：一个人在自己电脑跑零依赖 Hub，其他人装插件后粘一个邀请码即可加入。上传素材按十类归档，带摘要、置信度与要点；15 个 agent 工具支持上传、检索、聚合回顾、评论与阅读。标为重要的资料必须手写推荐语，并置顶到每位成员读过为止；每个账号还各有本地私有库、收藏夹、每周简报与版本对比。'

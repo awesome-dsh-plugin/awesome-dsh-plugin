@@ -1,0 +1,6 @@
+url: https://github.com/361533652/dsh-token-bi
+name: 361533652/dsh-token-bi
+category: usage
+description:
+  en: 'Cross-session token dashboard for DSH: daily spend as bars, trend or cumulative views plus a GitHub-style annual activity calendar, model and workspace splits, cross-filtering between day, model and workspace, and a per-turn timeline that also covers web-search and auxiliary model calls.'
+  zh: '跨会话 token 消耗看板：每日消耗支持柱状、趋势、累积三种视图与 GitHub 风格年度活跃日历，模型与工作区分布，日／模型／工作区之间的交叉筛选联动，以及逐轮时间线——并计入联网搜索等辅助模型调用。'

@@ -1,0 +1,6 @@
+url: https://github.com/xinming-chenniang/dsh-longshot
+name: xinming-chenniang/dsh-longshot
+category: vision
+description:
+  en: 'Splits over-long screenshots into DSH-acceptable slices before prompt admission instead of letting them be rejected: vertical slices overlap so a line of text is never cut in half, and pure-JS codecs avoid native binaries. It wraps the existing attachment store instead of replacing it.'
+  zh: '超长截图在发送前自动切成 DSH 可接受的切片，而不是被直接拒收：纵向切片带重叠，不会把一行字劈成两半；纯 JS 编解码，无原生依赖，且只是包住现有附件服务、不顶替它。'

@@ -1,0 +1,8 @@
+url: https://github.com/bingomu/dsh-sticky-wall
+name: bingomu/dsh-sticky-wall
+category: ui
+tarball: https://github.com/bingomu/dsh-sticky-wall/releases/latest/download/dsh-sticky-wall.tgz
+description:
+  en: 'A sticky-note wall in the DSH sidebar: nine paper colors, categories, search, archive, to-do checklists with stable item ids, and agent read/write tools.'
+  zh: '常驻 DSH 侧边栏的便签墙：九种纸色、分类、搜索、归档、带稳定条目 id 的待办清单，并支持 agent 读写。'
+icon: https://raw.githubusercontent.com/bingomu/dsh-sticky-wall/main/assets/icon-180.png

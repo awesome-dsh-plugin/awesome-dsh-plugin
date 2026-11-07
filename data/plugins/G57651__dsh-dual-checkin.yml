@@ -1,0 +1,6 @@
+url: https://github.com/G57651/dsh-dual-checkin
+name: G57651/dsh-dual-checkin
+category: usage
+description:
+  en: "Checks in Trae and WorkBuddy daily from local login files, with a sidebar status and credits panel."
+  zh: "从本机登录文件完成 Trae 与 WorkBuddy 每日签到，侧边栏展示状态与积分。"

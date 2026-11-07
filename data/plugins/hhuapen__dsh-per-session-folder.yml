@@ -1,0 +1,6 @@
+url: https://github.com/hhuapen/dsh-per-session-folder
+name: hhuapen/dsh-per-session-folder
+category: session
+description:
+  en: Creates an isolated folder for each new default-workspace session and renames it to match the session title.
+  zh: 为默认工作区中的每个新会话创建独立文件夹，并根据会话标题重命名。

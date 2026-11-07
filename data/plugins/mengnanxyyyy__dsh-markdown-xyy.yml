@@ -2,5 +2,5 @@ url: https://github.com/mengnanxyyyy/dsh-markdown-xyy
 name: mengnanxyyyy/dsh-markdown-xyy
 category: theme
 description:
-  en: Lightweight Markdown conversation theme plugin — enhances native color scheme with 4 built-in themes (light/dark dual), user-defined CSS themes, system-aware auto-switching, in-browser theme editor, designed to enhance reading speed and clarity.
-  zh: 轻量级对话 Markdown 主题插件——增强原生着色，4 套内置主题（浅/深双档）、用户自定义 CSS 主题、系统感知自动切换、内置主题编辑器，提升快速阅读体验。
+  en: Markdown conversation theme plugin — 4 built-in themes with light and dark variants, user-editable CSS themes, system-aware auto-switching, an in-browser editor with syntax highlighting and save-time validation, and a theme selection that persists across reloads and tabs. Also ships a version-history panel. Windows and DSH Desktop supported.
+  zh: 对话 Markdown 主题插件——4 套内置主题（浅/深双档）、可自行编辑的 CSS 用户主题、跟随系统自动切换、内置编辑器（语法高亮 + 保存校验）、选中主题在刷新与新标签页后保持，并附带版本台账面板；支持 Windows 与 DSH Desktop。

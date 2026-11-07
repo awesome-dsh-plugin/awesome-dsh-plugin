@@ -1,0 +1,6 @@
+url: https://github.com/MitsukiJoe/dsh-better-ux
+name: MitsukiJoe/dsh-better-ux
+category: ui
+description:
+  en: Web interface enhancements for DeepSeek Harness with session rename/fork shortcuts, a searchable model picker with provider filters, mobile layouts, global font scaling, context usage alerts, DeepSeek balance and tariff rates, sent-message navigation, and conversation summaries.
+  zh: DeepSeek Harness 网页交互增强，提供会话重命名与分叉快捷操作、带搜索和供应商筛选的模型选择器、移动端布局、全局字体缩放、上下文用量提醒、DeepSeek 余额与峰谷价格、已发消息导航和对话情况总结。

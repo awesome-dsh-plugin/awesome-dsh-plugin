@@ -1,0 +1,6 @@
+url: https://github.com/NoCandles/dsh-stock-bar
+name: NoCandles/dsh-stock-bar
+category: ui
+description:
+  en: 'Always-on quotes strip pinned to the top of the DSH window: watchlist, holdings with share counts and cost price, P&L, candlestick and intraday charts, 5-level order book, trade ledger, price alerts, and streamed AI review of the selected symbol.'
+  zh: '钉在 DSH 窗口顶部的常驻行情条：自选股、带股数与成本价的持仓、盈亏、K 线与分时图、五档盘口、交易流水、价格预警，以及用 DSH 已配置模型流式生成的 AI 复盘。'

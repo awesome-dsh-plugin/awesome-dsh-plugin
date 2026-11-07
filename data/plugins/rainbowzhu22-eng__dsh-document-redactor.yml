@@ -1,0 +1,7 @@
+url: https://github.com/rainbowzhu22-eng/dsh-document-redactor
+name: rainbowzhu22-eng/dsh-document-redactor
+category: workflow
+description:
+  en: "A DeepSeek Harness document-redaction workbench adapted from whatcccup/cece_legal_skills (MIT). Processes DOCX, PDF, TXT and Markdown locally, with human review, PDF masking and OCR-line review, case-consistent placeholders, Word restoration, history and optional Agent rule previews and rollback. Requires Python 3.9+ and first-run dependency downloads; model access is needed only for rule generation. Version 1.4.0 is a prerelease verified on macOS Web and DSH desktop; new Windows setup and OCR paths await on-device revalidation. The upstream is a standalone offline tool/SkillHub skill, not a DSH plugin, so it cannot be installed alongside this bundle."
+  zh: "基于 whatcccup/cece_legal_skills（MIT）适配的 DeepSeek Harness 文书脱敏工作台。在本机处理 DOCX、PDF、TXT 和 Markdown，提供人工复核、PDF 框选遮盖与 OCR 行核对、同案占位符、Word 还原、历史记录及可选 Agent 规则预览与回退。需 Python 3.9+，首次准备依赖需要联网；仅规则生成需要模型。1.4.0 为预发布，已在 macOS Web 与 DSH 桌面验证；新增 Windows 安装与 OCR 路径待实机复验。上游是独立离线工具/SkillHub 技能，不是 DSH 插件，无法在 DSH 内与本插件同装。"
+tarball: https://github.com/rainbowzhu22-eng/dsh-document-redactor/releases/download/v1.4.0/dsh-document-redactor-1.4.0.tgz

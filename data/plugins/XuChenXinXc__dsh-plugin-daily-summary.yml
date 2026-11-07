@@ -1,0 +1,6 @@
+url: https://github.com/XuChenXinXc/dsh-plugin-daily-summary
+name: XuChenXinXc/dsh-plugin-daily-summary
+category: notify
+description:
+  zh: "每日定时弹窗推送昨日对话要点提炼与双轨待办事项管理。"
+  en: "Scheduled daily toast popups summarizing yesterday's conversations and managing two-tier pending TODOs."

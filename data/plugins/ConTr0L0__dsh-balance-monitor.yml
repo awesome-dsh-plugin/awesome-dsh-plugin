@@ -1,0 +1,6 @@
+url: https://github.com/ConTr0L0/dsh-balance-monitor
+name: ConTr0L0/dsh-balance-monitor
+category: usage
+description:
+  en: Monitors multi-provider balances, DeepSeek peak/off-peak usage costs, per-session analytics, and configurable spending limits in the DSH sidebar.
+  zh: 在 DSH 侧边栏监控多个平台的余额，统计 DeepSeek 峰谷用量成本与会话消耗，并支持配置消费上限。

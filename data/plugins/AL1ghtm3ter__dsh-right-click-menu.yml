@@ -1,0 +1,7 @@
+url: https://github.com/AL1ghtm3ter/dsh-right-click-menu
+name: AL1ghtm3ter/dsh-right-click-menu
+category: ui
+description:
+  en: 'Adds a right-click menu to the DSH web UI for files and for links: a file-tree row, a file path or file mention in a chat message, or a hyperlink opens a menu that previews a file in DSH, opens it in the default application or a chosen associated one, reveals it in the file manager, copies the path, the workspace-relative path, the file name, the link address, the link text or the file contents, saves a copy elsewhere, and opens an HTTP(S) link in the sidebar browser or in the system browser, while a right-click that is not on a file or a link keeps the browser''s own menu.'
+  zh: 'DSH Web 界面里的右键菜单，覆盖文件与链接：在文件树一行、对话消息里的文件路径或文件提及、以及超链接上右键，可预览、用默认程序或指定关联程序打开、在资源管理器中定位、复制路径／相对路径／文件名／链接地址／链接文字／文件内容、另存为，并可把 http(s) 链接在侧边栏浏览器或系统浏览器中打开；在非文件非链接处右键仍保留浏览器原生菜单。'
+tarball: https://github.com/AL1ghtm3ter/dsh-right-click-menu/releases/latest/download/dsh-right-click-menu.tgz

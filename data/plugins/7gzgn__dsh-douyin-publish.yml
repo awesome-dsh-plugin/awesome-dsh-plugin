@@ -1,0 +1,6 @@
+url: "https://github.com/7gzgn/dsh-douyin-publish"
+name: "dsh-douyin-publish"
+category: tools
+description:
+  en: "Take a local video all the way to a Douyin creator post: open the upload page, trigger the picker, hand the file over with verification, fill the title, set visibility - then stop before publishing unless explicitly told to publish."
+  zh: 把本地视频送到抖音投稿页的「待发布」状态：打开投稿页、真实点上传、递文件（回读校验）、填标题、设可见性，然后默认停手——可见性默认仅自己可见、不点发布。

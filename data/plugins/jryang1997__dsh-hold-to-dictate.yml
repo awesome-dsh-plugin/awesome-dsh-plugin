@@ -1,0 +1,6 @@
+url: https://github.com/jryang1997/dsh-hold-to-dictate
+name: jryang1997/dsh-hold-to-dictate
+category: voice
+description:
+  en: Hold-to-talk dictation in the composer that ships no recognizer of its own and reuses the speech service the official voice-input bundle already mounts - long-press the input box with mouse or touch, release to write the transcript into the draft, slide up to cancel, and it never sends.
+  zh: 输入框长按听写，不自带识别引擎，复用官方语音输入模块已挂载的语音服务——鼠标或触屏长按输入框，松开把文字写进草稿，上滑取消，不会自动发送。

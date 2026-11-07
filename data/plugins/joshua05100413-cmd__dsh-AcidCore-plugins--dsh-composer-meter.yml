@@ -1,0 +1,6 @@
+url: https://github.com/joshua05100413-cmd/dsh-AcidCore-plugins/tree/main/dsh-composer-meter
+name: joshua05100413-cmd/dsh-AcidCore-plugins#dsh-composer-meter
+category: ui
+description:
+  en: 'Composer meter for the DeepSeek Harness Web UI: a pill under the input shows draft character count, estimated tokens and this session''s estimated cost from DeepSeek''s published prices (peak/off-peak, Flash/Pro or custom rates), and opens a panel with the token breakdown, a six-snapshot per-session draft vault and a draft cleaner; every write goes through the host setDraft API instead of touching the editor DOM.'
+  zh: 'dsh 输入框计量：输入框下方的 pill 显示草稿字数、预估 token 与本会话估算费用（内置 DeepSeek 官方价目，高峰/空闲与 Flash / Pro 自动换价，可自定义）；点开面板可看 token 明细、最近 6 份草稿快照（保险箱）与草稿清洗，写回只走宿主的 setDraft 接口。'

@@ -1,0 +1,7 @@
+url: https://github.com/Ayelsh/dsh-glass-theme
+name: Ayelsh/dsh-glass-theme
+category: theme
+description:
+  en: Apple Liquid Glass skin that re-keys the harness design tokens, then adds its own settings page, a grouped model picker with peak and off-peak rate badges, and a merged usage panel.
+  zh: Apple Liquid Glass 皮肤：重写 Harness 的整套设计 token，并自带设置页面、带峰谷时段标记的分组模型选择器和合并后的用量面板。
+tarball: https://github.com/Ayelsh/dsh-glass-theme/releases/latest/download/dsh-glass-theme.tgz

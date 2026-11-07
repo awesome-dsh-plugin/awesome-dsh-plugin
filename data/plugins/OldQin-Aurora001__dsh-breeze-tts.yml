@@ -1,0 +1,7 @@
+url: https://github.com/OldQin-Aurora001/dsh-breeze-tts
+name: OldQin-Aurora001/dsh-breeze-tts
+category: voice
+description:
+  en: "Breeze TTS client for DeepSeek Harness: connects to your own Breeze TTS server to read replies aloud and manage voice cloning (the server and its model must be deployed separately; hardware requirements are on the server side), with an optional cross-machine mode. Merges @dsh-external/dsh-plugin-local-ai-tts (abbccdd/dsh-localtts) and dsh-breeze-voices, carries code from 1624318455/dsh-plugin-tts, and must not be installed alongside the two upstream plugins it merges."
+  zh: "DSH 的 Breeze 语音客户端：连接你自己部署的 Breeze TTS 服务来朗读回复、管理音色克隆（服务与模型需单独部署，硬件门槛在服务端），另提供可选的跨机调用。本插件由 @dsh-external/dsh-plugin-local-ai-tts（abbccdd/dsh-localtts）与 dsh-breeze-voices 合并而来（含 1624318455/dsh-plugin-tts 的代码），不能与这两个上游同装。"
+icon: https://raw.githubusercontent.com/OldQin-Aurora001/dsh-breeze-tts/main/icon.png

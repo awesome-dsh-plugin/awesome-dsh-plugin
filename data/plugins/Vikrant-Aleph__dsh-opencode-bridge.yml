@@ -1,0 +1,7 @@
+url: https://github.com/Vikrant-Aleph/dsh-opencode-bridge
+name: Vikrant-Aleph/dsh-opencode-bridge
+category: model
+description:
+  en: 'OpenCode free models for DSH with dynamic model-list refresh, optional HTTP(S)/SOCKS proxy failover, a fail-closed tool bridge and offline agent-scoped compatibility auditing.'
+  zh: '在 DSH 中使用 OpenCode 免费模型，支持模型列表动态刷新与可选的代理出口轮换，并提供默认拒绝不安全转换的工具桥与离线、按 Agent 作用域的兼容性审计。'
+tarball: https://github.com/Vikrant-Aleph/dsh-opencode-bridge/releases/download/v0.5.1/dsh-opencode-bridge-0.5.1.tgz

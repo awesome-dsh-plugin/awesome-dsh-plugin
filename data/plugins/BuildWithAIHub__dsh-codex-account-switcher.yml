@@ -1,0 +1,6 @@
+url: https://github.com/BuildWithAIHub/dsh-codex-account-switcher
+name: BuildWithAIHub/dsh-codex-account-switcher
+category: identity
+description:
+  en: 'Snapshot and switch the Codex login used by the Codex subagent from the DSH Plugins page, with a Codex usage quota card.'
+  zh: '在 DSH 插件页管理 Codex 子智能体使用的登录账号：保存/切换 auth.json 快照，并显示该账号的 Codex 额度。'

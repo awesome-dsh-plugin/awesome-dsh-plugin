@@ -1,0 +1,7 @@
+url: https://github.com/QingJing5906/dsh-DevDock
+name: QingJing5906/dsh-DevDock
+category: dev
+icon: https://raw.githubusercontent.com/QingJing5906/dsh-DevDock/main/assets/icon-256.png
+description:
+  en: 'Manage GitHub and npm from inside DeepSeek Harness: multi-account switching, repository management, workspace Git tree with one-click push, pre-push Agent review, and npm package browsing, packing, pre-publish review and publishing.'
+  zh: '在 DeepSeek Harness 里统一管理 GitHub 与 npm：多账号切换、仓库管理、工作区 Git 版本树与一键推送、推送前 Agent 审查，以及 npm 包的浏览、打包、发布前审查与发布。'

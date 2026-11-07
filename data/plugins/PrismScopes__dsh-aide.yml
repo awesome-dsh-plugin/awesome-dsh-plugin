@@ -1,0 +1,7 @@
+url: https://github.com/PrismScopes/dsh-aide
+name: PrismScopes/dsh-aide
+category: ui
+tarball: https://github.com/PrismScopes/dsh-aide/releases/download/v0.12.0/dsh-aide-0.12.0.tgz
+description:
+  en: 'VS Code-style local IDE for DeepSeek Harness: Monaco editor, explorer, search, Git, terminal, and language services. With pnpm, run `pnpm approve-builds --all` so the native build of node-pty is allowed.'
+  zh: '在 DeepSeek Harness 中提供 VS Code 风格的本地 IDE：Monaco 编辑器、资源管理器、搜索、Git、终端与语言服务。用 pnpm 安装时需运行 `pnpm approve-builds --all`，允许 node-pty 的原生构建。'

@@ -1,0 +1,6 @@
+url: https://github.com/newbieQQ/dsh-better-workspace-group
+name: newbieQQ/dsh-better-workspace-group
+category: ui
+description:
+  en: 'Fork of z-col/dsh-workspace-groups (MIT): a grouped workspace sidebar for the DSH web client, with a science icon set and a docked default workspace; cannot be installed alongside the upstream plugin (same bundle row).'
+  zh: z-col/dsh-workspace-groups（MIT）的分支：DSH Web 客户端的分组工作区侧栏，带材料与实验图标集，默认工作区停靠底栏；不能与上游插件同装（同一个 bundle row）。

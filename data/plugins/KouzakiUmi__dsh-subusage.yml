@@ -1,0 +1,7 @@
+url: https://github.com/KouzakiUmi/dsh-subusage
+name: KouzakiUmi/dsh-subusage
+category: usage
+description:
+  en: 'Shows subscription quota and account balance beside the DeepSeek Harness model selector for 28 provider entries, with a shared settings page and a read-only quota tool.'
+  zh: '在 DeepSeek Harness 模型选择器旁显示 28 条提供商入口的订阅额度与账户余额，附统一设置页和只读额度查询工具。'
+tarball: https://github.com/KouzakiUmi/dsh-subusage/releases/latest/download/dsh-subusage.tgz

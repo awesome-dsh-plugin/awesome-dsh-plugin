@@ -1,0 +1,6 @@
+url: https://github.com/zrrrrrrr77/dsh-breather
+name: zrrrrrrr77/dsh-breather
+category: session
+description:
+  en: 'Take a breath mid-task: the current step finishes, then it holds. Resume sends no new request and spends no tokens; the timer freezes. Current session only.'
+  zh: '零成本“会话暂停”键：不会发出新请求，当前步骤做完后直接挂起，方便添加提示词；继续时不会花费token重发请求；只有点击继续或发新提示词才会继续，子代理结算与定时提醒唤不醒；侧栏加入暂停图标，计时器与动画共同冻结，不计暂停时段，恢复后从冻结前时间继续走；状态区分「暂停中」与「已暂停」；暂停只会作用于当前会话。'

@@ -1,0 +1,6 @@
+url: https://github.com/SaiSenBox/dsh-web-bridge
+name: SaiSenBox/dsh-web-bridge
+category: session
+description:
+  en: 'Browse and continue DeepSeek web conversations in DSH, or import them with attachments into a workspace.'
+  zh: '在 DSH 内浏览和继续 DeepSeek 网页会话，或将历史与附件导入工作区。'

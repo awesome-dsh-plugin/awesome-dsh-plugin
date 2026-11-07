@@ -1,0 +1,6 @@
+url: https://github.com/shenhe3939-debug/local-solution-first
+name: shenhe3939-debug/local-solution-first
+category: skill
+description:
+  en: "Evidence-first reuse skill for DeepSeek Harness: before implementing, porting, choosing dependencies, or troubleshooting a tool, it searches the local project and machine for existing solutions in layers, judges reuse on checkable evidence, refuses reuse when essential requirements or risks are unmet, and reports what could not be verified. Ships as a DSH bundle that registers the skill on ctx.skills."
+  zh: "给 DeepSeek Harness 的「先找本地现成方案、再用证据验证」技能：动手实现、移植、选依赖、排查工具之前，先在项目与本机分层检索已有方案，用可核对的证据判断能否复用，必要条件或风险不满足时明确拒绝复用，并写清哪些结论无法核实。以 DSH 组合包（dsh.bundle）注册到 ctx.skills。"

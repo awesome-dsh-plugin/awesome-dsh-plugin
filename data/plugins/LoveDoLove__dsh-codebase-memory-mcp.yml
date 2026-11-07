@@ -1,0 +1,6 @@
+url: https://github.com/LoveDoLove/dsh-codebase-memory-mcp
+name: LoveDoLove/dsh-codebase-memory-mcp
+category: tools
+description:
+  en: 'Codebase Memory MCP bridge for DeepSeek Harness: six knowledge-graph code tools, auto-started background daemon with visualization Web UI, and bundled agent skill.'
+  zh: 'DeepSeek Harness 的 Codebase Memory MCP 桥接插件：提供六个原生代码知识图谱工具、自动启动后台守护进程及可视化 Web 界面，并内置专属代理技能。'

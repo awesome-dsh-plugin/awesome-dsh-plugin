@@ -1,0 +1,6 @@
+url: https://github.com/lxj5820/dsh-boot-animation
+name: lxj5820/dsh-boot-animation
+category: ui
+description:
+  en: 'Replaces the kernel boot page with a full-window video clip that dissolves into the app; the clip pool, enter mode and fade length are configurable in Settings → Plugins.'
+  zh: '用全窗口短片替换内核启动页，片尾交叉溶解进入界面；素材池、进入方式与淡入时长都能在「设置 → 插件」里调整。'

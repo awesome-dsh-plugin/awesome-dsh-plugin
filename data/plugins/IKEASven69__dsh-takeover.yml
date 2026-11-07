@@ -1,0 +1,6 @@
+url: https://github.com/IKEASven69/dsh-takeover
+name: IKEASven69/dsh-takeover
+category: session
+description:
+  zh: "会话接管：只读拉取九家外部 agent（Claude Code / Codex / OpenCode / ZCode / Pi / WorkBuddy / Cursor / Grok / Gemini CLI）的本地会话，蒸馏成六段交接卡，输入框「接力」按钮一键接管；/handoff 把当前会话寄存进 handoff: 1 开放协议收件箱（~/.handoff，消费即弃 + 机器签名防篡改），任何 agent 开局取件接着干，记忆文件随卡交接，同步盘一句环境变量跨机器接力。"
+  en: "Session takeover: read-only pull local sessions from nine external agents (Claude Code, Codex, OpenCode, ZCode, Pi, WorkBuddy, Cursor, Grok, Gemini CLI) into distilled six-section handoff cards — one click on the Relay chip takes over. /handoff checks the current session into the handoff: 1 open-protocol inbox (~/.handoff, consume-once with machine-signature tamper detection); any agent picks up on start and continues. Memory files ride with cards; cross-machine relay is one env var away."

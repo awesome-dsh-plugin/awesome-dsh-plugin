@@ -1,0 +1,6 @@
+url: https://github.com/CassiaTw1g/dsh-new-session
+name: CassiaTw1g/dsh-new-session
+category: session
+description:
+  en: 'Gives the model in DeepSeek Harness a real new_conversation tool: creates a session in the current workspace, delivers a self-contained handoff as its first user message, optionally attaches a read-only dsh-session: reference to the calling conversation, pins the title, and switches the Web UI to the new session.'
+  zh: '给 DeepSeek Harness 的模型一个真正能用的「新开对话」工具：在当前工作区建会话、投递交接消息、带上一段对话的只读引用，并把 Web UI 自动切过去。'

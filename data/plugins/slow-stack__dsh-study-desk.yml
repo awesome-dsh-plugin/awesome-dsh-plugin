@@ -1,0 +1,6 @@
+url: https://github.com/slow-stack/dsh-study-desk
+name: slow-stack/dsh-study-desk
+category: workflow
+description:
+  en: 'Study workbench for exam prep and research: three-column task board with tags and filters, a spaced-repetition queue (simplified SM-2) that keeps finished cards coming back, a heatmap lit by actual focused minutes, weekly reports, per-day review notes, a pomodoro timer that survives panel switches, and Markdown export/import for Obsidian. Installable via dsh plugin add (dsh-study-desk on npm).'
+  zh: '备考与科研学习工作台：三列待办墙（标签与过滤）、间隔重复复习队列（简化 SM-2，已完成的卡照样会到期）、按实际专注分钟点亮的热力图、周报、每日复盘、跨面板存活的番茄钟，支持 Markdown 导出与读回（Obsidian 友好）。可 `dsh plugin add` 安装（npm 包 dsh-study-desk）。'

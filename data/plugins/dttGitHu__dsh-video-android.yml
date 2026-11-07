@@ -1,0 +1,6 @@
+url: https://github.com/dttGitHu/dsh-video-android
+name: dttGitHu/dsh-video-android
+category: vision
+description:
+  en: 'Video studio for DeepSeek Harness on Android: storyboard editing, multi-provider image/video generation with automatic failover, FFmpeg MP4 export, prompt optimization, and a mobile-first workbench.'
+  zh: '安卓上的 DSH 视频工作台：分镜编辑、多供应商图像/视频生成与自动切换、FFmpeg 合成 MP4、提示词优化、手机窄屏工作台。'

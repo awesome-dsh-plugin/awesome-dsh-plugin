@@ -1,0 +1,6 @@
+url: https://github.com/King20260919/dsh-open-folder-visible
+name: King20260919/dsh-open-folder-visible
+category: wsl
+description:
+  en: 'Fixes the Windows workspace-open action: the shipped opener spawns explorer.exe with windowsHide, so the File Explorer window is created invisible and the click reports success without appearing.'
+  zh: '修正 Windows 上「打开工作目录」：上游启动 explorer.exe 时带了 windowsHide，导致文件资源管理器窗口被创建为不可见，点击看似成功却什么都没出现。'

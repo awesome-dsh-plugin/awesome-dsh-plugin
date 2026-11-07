@@ -1,0 +1,6 @@
+url: https://github.com/xiachuyoufeng/dsh-soul-evolve
+name: xiachuyoufeng/dsh-soul-evolve
+category: identity
+description:
+  en: 'Persona state and slow evolution for DSH: five state dimensions (valence, arousal, energy, intimacy, focus) move after each turn and decay toward baseline over time; four scene types (work, tech, support, chat) modulate reply length and warmth without changing the state itself; the Soul panel keeps a persona card plus weighted evolution entries and injects them into the system prompt persona-first under a 4000-character budget. Ships a browser panel with a persona card editor and a live state view (the five metrics plus the last six events), appends a JSONL trace to disk, and seeds a usable default persona on first install.'
+  zh: '人格状态与缓慢演化：五个状态维度（效价、激活、精力、亲近、专注）每轮对话后更新、随时间向基线衰减；四种场景（工作、技术求助、情绪支持、闲聊）只调回复长度与温度，不改状态本身；Soul 面板保存人格卡与带权重的演化条目，按权重排序注入系统提示词，总预算 4000 字，人格在前、状态在后。带浏览器面板：人格卡编辑 + 实时人格状态（五个指标与最近六条事件），并把轨迹以 JSONL 落盘；首次安装会种入一份可用的默认人格。'

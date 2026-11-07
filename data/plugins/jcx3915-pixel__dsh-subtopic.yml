@@ -1,0 +1,7 @@
+# data/plugins/jcx3915-pixel__dsh-subtopic.yml
+url: https://github.com/jcx3915-pixel/dsh-subtopic
+name: jcx3915-pixel/dsh-subtopic
+category: ui
+description:
+  en: 'Select any text in a DSH conversation and tap Ctrl to get an inline sub-topic card: streaming answer, follow-up tree, and drag-to-quote reference chips.'
+  zh: '在 DSH 会话里选中一段文字按 Ctrl，就地开出子话题卡片：流式解答、追问树，还能把树行拖成引用卡片。'

@@ -1,0 +1,6 @@
+url: https://github.com/AirPineApplea/feiyu-chat-companion
+name: AirPineApplea/feiyu-chat-companion
+category: ui
+description:
+  en: 'Desktop companion for DeepSeek Harness: a Win32 layered window that keeps a whale-girl above other applications, speaks through a bubble, comments on its own when you stay on one window for ten seconds, and answers a single question typed into a right-click input box.'
+  zh: '给 DeepSeek Harness 的桌面桌宠：一个 Win32 分层窗口，让鲸鱼娘待在别的应用窗口之上，气泡说话；你在同一个窗口停够十秒它会自己开口，右键弹出的输入框里可以问它一个问题。'

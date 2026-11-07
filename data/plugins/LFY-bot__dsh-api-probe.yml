@@ -1,0 +1,7 @@
+url: https://github.com/LFY-bot/dsh-api-probe
+name: LFY-bot/dsh-api-probe
+category: dev
+description:
+  en: 'Diagnoses third-party LLM API endpoints from the sidebar: a four-layer check (DNS/TCP/TLS, key and model, a real streaming conversation, then timed repeat runs) reporting time-to-first-token, output speed and success rate, with every failure attributed to the step it stalled at and the byte count that actually left the machine. 37 provider presets, no model names hardcoded.'
+  zh: '侧边栏体检第三方 LLM 接口：四层检查（DNS/TCP/TLS、Key 与模型、真实流式对话、连测多轮），报出首字延迟、输出速度与成功率；失败时标明卡在第几步、实际写出多少字节。内置 37 个服务商预设，不硬编码任何模型名。'
+tarball: https://github.com/LFY-bot/dsh-api-probe/releases/latest/download/dsh-api-probe.tgz

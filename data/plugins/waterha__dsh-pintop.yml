@@ -1,0 +1,6 @@
+url: https://github.com/waterha/dsh-pintop
+name: waterha/dsh-pintop
+category: ui
+description:
+  en: Provides an always-on-top window feature for the DSH window, preventing it from being hidden unexpectedly, Windows only; requires PowerShell 7 (pwsh.exe) on PATH.
+  zh: 提供 DSH 软件窗口置顶功能，让其不会乱隐藏，仅 Windows；需 PATH 上有 PowerShell 7（pwsh.exe）。

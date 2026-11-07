@@ -1,0 +1,7 @@
+url: https://github.com/shiinakaze/dsh-plugin-backup
+name: shiinakaze/dsh-plugin-backup
+category: dev
+tarball: https://github.com/shiinakaze/dsh-plugin-backup/releases/latest/download/dsh-plugin-backup.tgz
+description:
+  en: Category-based backup of DeepSeek Harness settings, skills, plugins, sessions and storages into verifiable, restorable and downloadable archives, with optional GitHub sync.
+  zh: 按分类备份 DSH 的设置、技能、插件、会话与存储，生成可校验、可恢复、可下载的归档，并支持 GitHub 同步。

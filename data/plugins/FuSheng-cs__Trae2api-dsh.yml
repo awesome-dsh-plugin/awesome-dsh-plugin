@@ -1,0 +1,7 @@
+url: https://github.com/FuSheng-cs/Trae2api-dsh
+name: FuSheng-cs/Trae2api-dsh
+category: model
+tarball: https://github.com/FuSheng-cs/Trae2api-dsh/releases/latest/download/trae2api-dsh.tgz
+description:
+  en: Use TRAE account model quota in dsh, with multi-account management, daily check-in, rotation, usage statistics, reasoning levels and model visibility. Requires Python 3.10+; the first run downloads Python dependencies.
+  zh: 将 TRAE 账号的模型额度接入 dsh，支持多账号管理、自动签到、账号轮询、用量统计、思考强度选择和模型显示管理。 需要 Python 3.10+，首次使用需联网安装 Python 依赖。

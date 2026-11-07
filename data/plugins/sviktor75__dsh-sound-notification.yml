@@ -1,0 +1,6 @@
+url: https://github.com/sviktor75/dsh-sound-notification
+name: sviktor75/dsh-sound-notification
+category: notify
+description:
+  en: Plays a chime when any session's response finishes (rising tone) or a question/approval is asked (falling tone), with a click-to-mute badge.
+  zh: 当任意会话的回复完成（上升音调）或提出问题/请求（下降音调）时播放提示音，带点击静音徽章。

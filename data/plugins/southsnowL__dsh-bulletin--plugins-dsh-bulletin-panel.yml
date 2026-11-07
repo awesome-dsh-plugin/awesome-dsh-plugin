@@ -1,0 +1,6 @@
+url: https://github.com/southsnowL/dsh-bulletin/tree/main/plugins/dsh-bulletin-panel
+name: southsnowL/dsh-bulletin#dsh-bulletin-panel
+category: ui
+description:
+  en: Sidebar panel for the announcement file and the ticket status table. It lists the announcements together with how many sessions have seen each one, shows the delivery status, and lets the user post, edit and delete entries. Requires the third-party dsh-better-sidebar plugin.
+  zh: 侧边栏面板：把公告和投递状态表放进 DSH 界面 —— 列出公告以及每条有几个会话见过，并让用户发布、编辑、删除条目。需要第三方插件 dsh-better-sidebar。

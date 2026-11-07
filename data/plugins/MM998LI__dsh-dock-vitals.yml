@@ -1,0 +1,7 @@
+url: https://github.com/MM998LI/dsh-dock-vitals
+name: MM998LI/dsh-dock-vitals
+category: ui
+tarball: https://github.com/MM998LI/dsh-dock-vitals/releases/download/v0.1.1/dsh-dock-vitals-0.1.1.tgz
+description:
+  en: 'Live CPU, memory and GPU readout in the DeepSeek Harness composer status bar — a clickable badge with a details panel, per-metric toggles, and three refresh speeds.'
+  zh: '在输入框下方的状态栏里实时显示 CPU、内存与 GPU 读数：可点击的徽章、详情面板、逐项开关与三档刷新速度。'

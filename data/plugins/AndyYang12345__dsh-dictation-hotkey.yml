@@ -1,0 +1,6 @@
+url: https://github.com/AndyYang12345/dsh-dictation-hotkey
+name: AndyYang12345/dsh-dictation-hotkey
+category: voice
+description:
+  en: 'Push-to-talk dictation for the Web composer: hold a hotkey to record and the transcript is written into the draft through DSH''s own speech Remote (local SenseVoice), with an optional auto-send.'
+  zh: '输入框按住说话：按住快捷键录音，经 DSH 自带语音 Remote（本地 SenseVoice）识别后写入草稿，可选自动发送。'

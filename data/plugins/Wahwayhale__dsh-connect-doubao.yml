@@ -1,0 +1,7 @@
+url: "https://github.com/Wahwayhale/dsh-connect-doubao"
+name: "Wahwayhale/dsh-connect-doubao"
+category: model
+description:
+  en: 'DeepSeek Harness model provider for Doubao: sign in once by scanning a QR code in a browser window the plugin opens — no Doubao desktop app needed — then use chat and Seedream image generation, plus a live quota panel covering the 5-hour, weekly and activity-grant windows that shows what is LEFT rather than what is used. Windows x64 only, since the credential is sealed with DPAPI.'
+  zh: '把豆包接入 DeepSeek Harness：只需在插件拉起的浏览器窗口里扫码登录一次（无需安装或登录豆包桌面客户端），即可使用对话与 Seedream 生图，并有一块实时额度看板，涵盖 5 小时、周与活动赠送额度，显示「还剩多少」而不是「已用多少」。仅 Windows x64：凭据用 DPAPI 封装在本机。'
+icon: https://raw.githubusercontent.com/Wahwayhale/dsh-connect-doubao/main/docs/assets/dsh-connect-doubao-icon.png

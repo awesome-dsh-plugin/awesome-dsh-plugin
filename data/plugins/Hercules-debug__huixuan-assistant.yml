@@ -2,5 +2,5 @@ url: https://github.com/Hercules-debug/huixuan-assistant
 name: Hercules-debug/huixuan-assistant
 category: tools
 description:
-  en: Search, compare and pick Pinduoduo products from the DSH conversation, with price, sales, service tags, product images and promotion links from the official Pinduoduo open-platform API.
-  zh: 在 DSH 对话里搜索、对比并挑选拼多多商品，数据来自拼多多开放平台官方 API，含价格、销量、服务标签、商品图与推广链接。
+  en: "Shopping assistant for e-commerce: search, compare, pick and recommend products when buying things online, with price comparison, sales, service tags, product images and promotion links from the official Pinduoduo open-platform API, right inside the DSH conversation."
+  zh: "购物助手：在 DSH 对话里搜索、对比、挑选并推荐商品，支持比价与选购建议，覆盖电商购物场景，数据来自拼多多开放平台官方 API，含价格、销量、服务标签、商品图与推广链接。"

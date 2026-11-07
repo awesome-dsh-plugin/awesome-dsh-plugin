@@ -1,0 +1,6 @@
+url: https://github.com/Lry722/dsh-humanize
+name: Lry722/dsh-humanize
+category: docs
+description:
+  en: 'Prose review for human-facing writes. The write and edit tools require a human_facing flag; the plugin reviews the text against layered PROSE.md rules in the background, stages annotations, reconciles them against the full file, and merges them through /humanize, /humanize-loop or post-compaction while the main session keeps working. /humanize-review runs a batch over git-tracked files on demand.'
+  zh: '面向人类写入内容的行文审查。write 和 edit 调用需声明 human_facing，插件在后台按分层 PROSE.md 规则审查文本并暂存批注，再按全文核对已有批注，主会话照常推进；用 /humanize、/humanize-loop 或压缩后自动合并批注，/humanize-review 按需批量审查 git 管理的文件。'

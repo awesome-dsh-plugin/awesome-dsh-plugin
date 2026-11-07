@@ -1,0 +1,6 @@
+url: https://github.com/wbb316/dsh-comfyui-image
+name: wbb316/dsh-comfyui-image
+category: vision
+description:
+  en: 'Image generation through a local ComfyUI server: one generate_image tool covering text2img, img2img, inpaint and background removal.'
+  zh: '用本地 ComfyUI 出图：一个 generate_image 工具覆盖文生图、图生图、局部重绘与去背景。'

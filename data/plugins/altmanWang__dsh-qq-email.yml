@@ -1,0 +1,6 @@
+url: https://github.com/altmanWang/dsh-qq-email
+name: altmanWang/dsh-qq-email
+category: tools
+description:
+  en: 'Sends QQ mail through an OAuth-authorized agently-cli account. Registers the send_qq_email tool with a user-approval step and exposes a ctx.qqEmail service for other DSH plugins.'
+  zh: '用已授权的 agently-cli 账号发送 QQ 邮件：注册 send_qq_email 工具（发送前需用户确认），并对外提供 ctx.qqEmail 服务供其他 DSH 插件调用。'

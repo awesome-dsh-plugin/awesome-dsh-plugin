@@ -1,0 +1,6 @@
+url: https://github.com/bigbigman-001/dsh-quote-to-composer
+name: bigbigman-001/dsh-quote-to-composer
+category: ui
+description:
+  en: 'Select text anywhere in DeepSeek Harness, click the quote pill next to the pointer, and the selection lands in the composer as a small quote chip; hover the chip to read the full quote.'
+  zh: '在 DeepSeek Harness 里选中文字，点鼠标旁的「引用」胶囊，选区就变成输入框里的迷你引用条；悬停引用条可看被引用全文。'

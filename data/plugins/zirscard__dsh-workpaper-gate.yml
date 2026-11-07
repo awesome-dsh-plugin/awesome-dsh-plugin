@@ -1,0 +1,8 @@
+# Entry for the awesome-dsh-plugin list.
+url: https://github.com/zirscard/dsh-workpaper-gate
+name: zirscard/dsh-workpaper-gate
+category: tools
+description:
+  en: 'Registers one `workpaper_gate` tool for DeepSeek Harness: it audits a workpaper set for completeness, covering both the target design or template itself and the instance-versus-template structure, with the rule list, template list and core-table list all configurable in one spec file. Findings come back as blocker, warning and info, and the workpapers are only read, never modified. Requires Python with openpyxl.'
+  zh: '为 DeepSeek Harness 注册一个 `workpaper_gate` 工具：审核底稿完整性，既审目标（设计层/模板）自身，也审底稿实例与模板的结构一致性；规则清单、模板清单与核心表清单全部配置化在同一个 spec 文件里。结果按 blocker / warning / info 分级，底稿只读不改。需 Python 与 openpyxl。'
+tarball: https://github.com/zirscard/dsh-workpaper-gate/releases/download/v0.2.0/dsh-workpaper-gate.tgz

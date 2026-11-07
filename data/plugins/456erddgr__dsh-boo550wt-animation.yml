@@ -1,0 +1,6 @@
+url: https://github.com/456erddgr/dsh-boo550wt-animation
+name: 456erddgr/dsh-boo550wt-animation
+category: theme
+description:
+  en: Plays a full-screen video while DeepSeek Harness starts and reveals the UI only after it ends. Esc skips it.
+  zh: 打开 DeepSeek Harness 时全屏播放一段开机视频，播完才露出界面，按 Esc 可跳过。

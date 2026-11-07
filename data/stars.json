@@ -307,10 +307,6 @@
   "stars": 5,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/aerince/dsh-active-context-pruning": {
-  "stars": 1,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/aerince/dsh-models-dev-reasoning": {
   "stars": 2,
   "checkedAt": "2026-08-19"
@@ -401,10 +397,6 @@
  },
  "https://github.com/alingalingling/ui-status-label": {
   "stars": 38,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/alvinunreal/openpets/tree/main/packages/dsh": {
-  "stars": 1081,
   "checkedAt": "2026-08-19"
  },
  "https://github.com/AmeKrance/anan-thermal-monitor": {
@@ -851,10 +843,6 @@
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/cerebrixos-org/tuning-engines-cli/tree/main/packages/tuningengines-dsh-plugin": {
-  "stars": 5,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/Ch0uHuaZ1/DeepSeek-Harness-Desktop/tree/main/packages/desktop-launcher-plugin": {
   "stars": 3,
   "checkedAt": "2026-08-19"
@@ -1137,10 +1125,6 @@
  },
  "https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-web-ui-settings": {
   "stars": 4,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/dannyvan/dsh-file-drop": {
-  "stars": 3,
   "checkedAt": "2026-08-19"
  },
  "https://github.com/Dariandai/dsh-starter-pack": {
@@ -1505,10 +1489,6 @@
  },
  "https://github.com/freehul/sgme": {
   "stars": 4,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/Fro2en12/dsh-download-progress": {
-  "stars": 3,
   "checkedAt": "2026-08-19"
  },
  "https://github.com/frozo-ai/dsh-worlds": {
@@ -2263,31 +2243,11 @@
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/JohnXu22786/command-scout": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/JohnXu22786/computer-control": {
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/JohnXu22786/context-pruner": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/JohnXu22786/docgen": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/JohnXu22786/docs-retriever": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/JohnXu22786/file-planning": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/JohnXu22786/github-mcp": {
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
@@ -2304,18 +2264,6 @@
   "checkedAt": "2026-08-19"
  },
  "https://github.com/JohnXu22786/secret-guard": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/JohnXu22786/session-titler": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/JohnXu22786/skill-framework": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/JohnXu22786/snippet-expander": {
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
@@ -3037,14 +2985,6 @@
  },
  "https://github.com/maxiaovivi/dsh-cloak-browser": {
   "stars": 4,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/maxwell-feng/dsh-tesseract-ocr": {
-  "stars": 2,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/maxwell-feng/dsh-windows-ocr": {
-  "stars": 6,
   "checkedAt": "2026-08-19"
  },
  "https://github.com/mayf3/dsh-session-doctor": {
@@ -4067,10 +4007,6 @@
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/says693/dsh-log-memory": {
-  "stars": 3,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/scd13150/dsh-cognition": {
   "stars": 0,
   "checkedAt": "2026-08-19"
@@ -4755,11 +4691,11 @@
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/Ultronen/dsh-archived-chats": {
+ "https://github.com/Ultroncn/dsh-archived-chats": {
   "stars": 3,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/Ultronen/dsh-liquid-glass": {
+ "https://github.com/Ultroncn/dsh-liquid-glass": {
   "stars": 2,
   "checkedAt": "2026-08-19"
  },
@@ -4833,10 +4769,6 @@
  },
  "https://github.com/virggle/dsh-shutdown-after-task": {
   "stars": 1,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/Vladimir-Human/humanizer-ru/tree/main/dsh": {
-  "stars": 102,
   "checkedAt": "2026-08-19"
  },
  "https://github.com/Vladimir-Human/ru-marketplace-mcp/tree/main/dsh": {
@@ -5723,44 +5655,8 @@
   "stars": 0,
   "checkedAt": "2026-08-19"
  },
- "https://github.com/zoahdev/dsh-github-intelligence": {
-  "stars": 6,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/zoahdev/dsh-github-release-radar": {
-  "stars": 2,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/zoahdev/dsh-pet-evolve": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/zoahdev/dsh-plugin-doctor": {
-  "stars": 4,
-  "checkedAt": "2026-08-19"
- },
  "https://github.com/zoahdev/dsh-poison-guard": {
   "stars": 1,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/zoahdev/dsh-rule-evolve/tree/main/plugin": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/zoahdev/dsh-shelf": {
-  "stars": 0,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/zoahdev/dsh-subscribe/tree/main/plugin": {
-  "stars": 1,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/zoumutou/dsh-cost-balance": {
-  "stars": 3,
-  "checkedAt": "2026-08-19"
- },
- "https://github.com/zoumutou/dsh-web-preview": {
-  "stars": 2,
   "checkedAt": "2026-08-19"
  },
  "https://github.com/zp-home/dsh-recommend": {
@@ -5880,8 +5776,8 @@
   "checkedAt": "2026-08-19"
  },
  "https://github.com/liguobao/ds-harness-remote": {
-  "stars": 23,
-  "checkedAt": "2026-08-19"
+  "stars": 1197,
+  "checkedAt": "2026-11-02"
  },
  "https://github.com/CWNU-Open-Source-Community/dsh-webgate": {
   "stars": 2,
@@ -5905,6 +5801,10 @@
  },
  "https://github.com/yunxiiQwQ/dsh-maid-whale-UI/tree/main/maid-whale-webui": {
   "stars": 14,
+  "checkedAt": "2026-08-19"
+ },
+ "https://github.com/OpenPetsHQ/openpets/tree/main/packages/dsh": {
+  "stars": 1081,
   "checkedAt": "2026-08-19"
  }
 }

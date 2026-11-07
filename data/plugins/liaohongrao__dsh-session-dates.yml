@@ -1,0 +1,6 @@
+url: https://github.com/liaohongrao/dsh-session-dates
+name: liaohongrao/dsh-session-dates
+category: ui
+description:
+  en: Groups the sessions of every workspace in the DSH sidebar by day, with explicit date labels, a live running indicator and date-based search.
+  zh: 在 DSH 侧边栏的每个工作区内把会话按日期分组、标注具体日期，并保留运行中状态灯与按日期搜索。

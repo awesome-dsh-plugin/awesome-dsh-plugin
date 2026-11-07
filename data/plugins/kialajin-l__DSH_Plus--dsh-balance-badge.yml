@@ -1,0 +1,6 @@
+url: https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-balance-badge
+name: kialajin-l/DSH_Plus#dsh-balance-badge
+category: usage
+description:
+  en: "Title-bar balance badge for DeepSeek Harness: account balance, today's cost, session tokens, and peak/off-peak pricing awareness (Beijing-time weekday windows) with flat-rate support for custom providers like TokenBom."
+  zh: "标题栏余额徽章：余额、今日花费、本会话 tokens 一目了然，官方按峰谷时段计价展示，TokenBom 等自定义服务商按平价展示。"

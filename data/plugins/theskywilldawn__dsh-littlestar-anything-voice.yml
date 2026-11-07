@@ -1,0 +1,6 @@
+url: https://github.com/theskywilldawn/dsh-littlestar-anything-voice
+name: 小星辰任意语音
+category: voice
+description:
+  zh: "点一下 Q 版立绘挂件，就用本机 IndexTTS 2.5 把助手回复念出来。一个角色 = 一段参考音频，谁的声音都能当角色；没有立绘也能用，挂件会提示「本角色暂无图片，请添加」。不含任何音色与立绘，角色库在用户自己机器上。需要本地已装 IndexTTS 2.5。"
+  en: "Click the chibi mascot and it reads the assistant reply aloud through your local IndexTTS 2.5 install. One character = one reference clip; a missing portrait just shows a placeholder. Ships no voices or artwork — the library lives on the user's own machine. Requires a local IndexTTS 2.5 install."

@@ -1,0 +1,6 @@
+url: https://github.com/smj-1680/dsh-plugin-liquid-glass
+name: smj-1680/dsh-plugin-liquid-glass
+category: ui
+description:
+  en: 'A liquid glass UI plugin for the DSH desktop app. Works alongside most wallpaper plugins. Currently supports dark mode only.'
+  zh: 适用于 DSH 桌面端的液态玻璃 UI 美化插件，可与大部分壁纸插件联动使用，目前仅适配深色模式。

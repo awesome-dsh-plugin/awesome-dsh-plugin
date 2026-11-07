@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-archive-favorites-forge
+name: loyalchiiina/dsh-archive-favorites-forge
+category: session
+description:
+  en: 'Favourite any conversation from the sidebar row menu or an inline star, copy its id plus the transcript absolute path in one click, and permanently delete a single conversation behind a confirm — the sidebar row drops at once. A settings card batch-archives sessions idle past a configurable hour threshold with one-click undo, exports the candidates as a tab-separated txt carrying name, id, workspace, idle time and last activity, and batch-deletes archived conversations that are not favourites. Two view-options rows narrow the sidebar to favourites that are archived and to those that are not. Every addition is additive — three official slots plus one cloned filter row, editing no official file.'
+  zh: '在侧栏「…」菜单或行内星标收藏任意对话；一键复制会话 ID 与转录文件绝对路径；单条永久删除（二次确认，删完侧栏立即移除该行）。设置页新增一张卡：按可配置的小时阈值批量归档闲置会话并支持一键撤回，把候选导出为制表符分隔的 txt（含对话名称、ID、所属工作区、闲置时长、最后活动时间），以及批量删除归档中未收藏的对话；视图选项另有「仅显示收藏（已归档）」与「仅显示收藏（未归档）」两行筛选。全部为增量实现：三个官方插槽加一条克隆的筛选行，不改官方任何文件。'

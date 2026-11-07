@@ -1,0 +1,6 @@
+url: https://github.com/566001/dsh-wrapup-guard
+name: 566001/dsh-wrapup-guard
+category: dev
+description:
+  en: 'Enforces a check-fix-recheck loop when a task is wrapping up: it auto-runs your tests/lint/audit, blocks any round that still has unfixed problems, and only calls the task done after three consecutive clean full checks, then notifies the user.'
+  zh: '收尾自检哨兵：任务收尾时强制「全面检查 → 修复 → 再全面检查」循环，自动跑测试/lint/audit，有未修复的问题就打回，直到连续三轮零问题才判定完成并通知用户。'

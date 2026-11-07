@@ -1,0 +1,6 @@
+url: https://github.com/hoshino114/dsh-server-box
+name: hoshino114/dsh-server-box
+category: remote
+description:
+  en: 'SSH server dashboard for DSH: per-host status, CPU, memory, disk and network meters, trend charts, an xterm.js terminal, SFTP file transfer, and server_box_hosts / server_box_exec / server_box_upload / server_box_download chat tools; imports ~/.ssh/config and mounts as a sidebar tab or a standalone drawer.'
+  zh: 'DSH 服务器面板：每台主机展示在线状态、CPU/内存/磁盘/网速与趋势图，点卡片进入 xterm.js 终端并支持 SFTP 上传下载；提供 server_box_hosts、server_box_exec、server_box_upload、server_box_download 对话工具，可导入 ~/.ssh/config，挂载为右侧栏页签或独立抽屉。'

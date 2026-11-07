@@ -1,0 +1,6 @@
+url: https://github.com/DSH-Raising-Plan/dsh-agent-gate
+name: DSH-Raising-Plan/dsh-agent-gate
+category: security
+description:
+  en: 'Advisory permission checks for DSH tool calls: risk tiers, a path sandbox (empty allowed_roots denies every path-like call), a per-minute call limit and a JSONL audit, exposed through gate_check / gate_check_path / gate_policy and ctx.gate — other plugins or prompts must call the gate; it does not intercept tool calls by itself.'
+  zh: 'DSH 工具调用的咨询式权限检查：风险分级、路径沙箱（allowed_roots 为空时一律拒绝）、每分钟调用限额与 JSONL 审计，通过 gate_check / gate_check_path / gate_policy 与 ctx.gate 提供——需由其他插件或提示主动调用，本身不拦截工具调用。'

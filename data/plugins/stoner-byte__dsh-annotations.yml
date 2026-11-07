@@ -1,0 +1,6 @@
+url: https://github.com/stoner-byte/dsh-annotations
+name: stoner-byte/dsh-annotations
+category: ui
+description:
+  en: Select text in assistant replies, add optional comments, and send the annotations with the next message.
+  zh: 在助手回复中选中文字，添加可选评论，并将注释随下一条消息一起发送。

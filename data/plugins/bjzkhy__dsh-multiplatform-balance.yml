@@ -1,0 +1,6 @@
+url: https://github.com/bjzkhy/dsh-multiplatform-balance
+name: bjzkhy/dsh-multiplatform-balance
+category: skill
+description:
+  en: 'Agent skill and tool for querying multi-platform model account balances: DeepSeek, Doubao / Volcengine, Qwen / Alibaba Cloud, Hunyuan / Tencent Cloud, and custom HTTP endpoints. Read-only, with 60s cache.'
+  zh: '多平台余额 Agent 技能与工具：查询 DeepSeek、豆包 / 火山引擎、千问 / 阿里云百炼、混元 / 腾讯云以及自定义 HTTP 接口的账户余额；只读，内置 60 秒缓存。'

@@ -1,0 +1,6 @@
+url: https://github.com/TetraSsky/dsh-hold
+name: TetraSsky/dsh-hold
+category: session
+description:
+  en: 'Holds a drafted message until the main agent is idle, no subagent is running and no background job is live, then sends it. Each hold takes an optional send time and a choice to queue, wait or steer, and lives on the host with its attachments so a restart does not lose it.'
+  zh: '暂缓发送一条消息，直到主智能体空闲、没有子智能体在运行、也没有后台任务，然后再发出。每条暂缓可以设置发送时间，并选择排队、等待空闲或立即插话，消息与附件都保存在宿主端，重启也不会丢失。'

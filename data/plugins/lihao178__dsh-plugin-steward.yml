@@ -1,0 +1,7 @@
+url: https://github.com/lihao178/dsh-plugin-steward
+name: lihao178/dsh-plugin-steward
+category: market
+description:
+  en: "Plugin steward for DeepSeek-Harness: checks every installed plugin for newer versions and installs them, snapshots the profile first and rolls back automatically when the post-update health check regresses. Also scans plugin code for risky behaviour before you install (eval, reverse shell, credential access), browses the 8.5k-plugin catalog with compatibility badges, restarts the host by itself after install/uninstall/disable, and shows everything in plain language."
+  zh: "DeepSeek-Harness 插件管家：查出所有插件的新版本并直接升级，升级前自动建快照，升级后重新体检，结果变差就自动还原。装任何插件前先静态扫描代码（动态执行、反弹 shell、翻密钥都会标出来），内置 8489 个插件的市场目录并带兼容性判定，装完/卸完/停用完自动重启宿主，不需要手动关软件。界面文案全白话，不写术语。"
+icon: https://raw.githubusercontent.com/lihao178/dsh-plugin-steward/main/assets/icon-180.png
