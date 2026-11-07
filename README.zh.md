@@ -5235,6 +5235,7 @@ dsh plugin --profile web add dshmarket
 - [luobosibing2/dsh-jev-plugin](https://github.com/luobosibing2/dsh-jev-plugin) — 在 DeepSeek Harness 中集成 TypeSafe Jev，用于技能与文件选择、任务监督、共享结论纠错、工具输出过滤、审批辅助和历史步骤阶段导航；所有功能默认禁用。
 - [lussey820/dsh-http-tools](https://github.com/lussey820/dsh-http-tools) — HTTP/API 调试工具集：全参数 HTTP 请求（method/headers/body/auth）、curl 命令解析与一步执行、会话内请求历史与响应并排对比、分页 Link 头透出；配合可选 dsh-http-tools-ui 提供 DeepSeek 风格工具卡片。
 - [lxfu1/dsh-plugin-chart](https://github.com/lxfu1/dsh-plugin-chart) — 增强 DeepSeek Harness 数据可视化能力，根据用户输入自动选择图表类型并生成图片，支持趋势、比较、占比、关系和流程等可视化场景。
+- [Lxion0553/dsh-arxiv-inspiration](https://github.com/Lxion0553/dsh-arxiv-inspiration) — arXiv 论文调研助手：设置页图形界面、本地知识库、反馈循环、语义检索与逐篇深读笔记。
 - [lyjsyyds/dsh-novel-studio](https://github.com/lyjsyyds/dsh-novel-studio) — 小说创作工作区：一本书一个文件夹、YAML/Markdown 分区、关系图自动连边、一致性校验、四个 AI 任务与四种导出格式。
 - [lynote-ai/dsh-humanizer](https://github.com/lynote-ai/dsh-humanizer) — 写作工具：去除 AI 腔并贴合个人文风。8 个确定性工具扫描文本、从样本提取文风指纹，并返回改写 brief。
 - [LzdqesjG/dsh-your-balance](https://github.com/LzdqesjG/dsh-your-balance) — 新增余额查询工具，在每轮对话中注入 DeepSeek 账户余额快照与低余额省电/严重不足停机策略，并提供阈值和汇率联动换算设置页。需要已登录的 DeepSeek 账号才能读取余额，仅配置 API key 的 profile 会返回无法读取。
@@ -8269,6 +8270,7 @@ dsh plugin --profile web add dshmarket
 - [Leo-Ayh-Oday/dsh-orcana#dsh-bundle](https://github.com/Leo-Ayh-Oday/dsh-orcana/tree/main/packages/dsh-bundle) — DeepSeek Harness 运行时治理器：零进展回合引导、按代际绑定的验证证据、基于证据的完成守卫，以及按任务配置限制工具集。
 - [leo666-cloud/dsh-miniprogram-helper](https://github.com/leo666-cloud/dsh-miniprogram-helper) — 微信小程序工程工具：体检扫出没写进 app.json 的页面，建页面时自动注册，一键修复孤儿页，管理分包、tabBar 与组件，并可调用微信开发者工具出预览二维码、上传体验版。
 - [LeoGoat2004/dsh-eval-harness#dsh-eval-harness](https://github.com/LeoGoat2004/dsh-eval-harness/tree/main/dsh-eval-harness/packages/dsh-eval-harness) — DeepSeek Harness 的诊断型评测插件：冻结已确认的 Harness 配置，跑一遍基准测试，保留完整会话轨迹，并把失败归因到模型、Harness、基准或环境。
+- [Leonlee114514/dsh-turn-cleanup](https://github.com/Leonlee114514/dsh-turn-cleanup) — 临时文件没清完，这一轮就结束不了：在串行的 agent/turn-stopping 钩子上挂一个监听器，发现残留就把文件清单 steer 回模型，并给两条出路——删掉，或者逐条说明理由再挪到明确位置。候选只有两处，都很窄。第一处是会话 cwd 下的 .agent-tmp/ 约定目录：留在里面的文件一律直接报出，因为这个目录的存在意义就是装可丢的东西。第二处是本轮经 fs/write-intent 钩子真实写入的路径，这些还要同时满足：在那个 cwd 之下、不落在 .git / node_modules / .tmp-sessions / out 里、命中临时件模式、且文件此刻仍在，才会报——正因如此，工作区里早就躺着的垃圾不会被翻出来当成本轮的问题。每轮只拦一次，子会话跳过，插件自己不删任何文件，检查只做 readdir 与 stat。
 - [LFY-bot/dsh-api-probe](https://github.com/LFY-bot/dsh-api-probe) — 侧边栏体检第三方 LLM 接口：四层检查（DNS/TCP/TLS、Key 与模型、真实流式对话、连测多轮），报出首字延迟、输出速度与成功率；失败时标明卡在第几步、实际写出多少字节。内置 37 个服务商预设，不硬编码任何模型名。
 - [LiangshouX/dsh-ide-workbench#codeintel](https://github.com/LiangshouX/dsh-ide-workbench/tree/main/packages/codeintel) — DSH IDE 工作台的代码智能：本地与语义补全、跳转定义、查找引用、悬浮提示与签名提示，并自带 TypeScript / Python / Java(JDTLS) / YAML 语言服务器及其内存预算。需要配合 dsh-ide-workbench 插件使用。
 - [liaoyonghong/dsh-workspace-api](https://github.com/liaoyonghong/dsh-workspace-api) — 把 DSH 工作区暴露为 HTTP API：浏览/搜索/读取文件，并支持自然语言任务（agent 查阅文档后带出处回答）。
