@@ -1,0 +1,6 @@
+url: https://github.com/Bu-sheng/dsh-deferred-boot
+name: Bu-sheng/dsh-deferred-boot
+category: workflow
+description:
+  en: Defer designated plugins until the main UI is ready, mounting one per idle slice.
+  zh: 主界面就绪后再逐个挂载指定插件，避免插件成批初始化把首屏拖住。
