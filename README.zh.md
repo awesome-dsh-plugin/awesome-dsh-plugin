@@ -1855,6 +1855,7 @@ dsh plugin --profile web add dshmarket
 - [yingqi-studio/md2chat-dsh-share](https://github.com/yingqi-studio/md2chat-dsh-share) — 在每条回复下加「分享到聊天」：把回答转成微信/企微可直接粘贴的文本、分段或长图、可编辑表格的邮件 HTML，或直接下载 Word 文档。
 - [Yinxe/deepseek-harness-plugins#archive/file-change-viewer](https://github.com/Yinxe/deepseek-harness-plugins/tree/main/archive/file-change-viewer) — 接管对话流的 edit/write 行：外壳与折叠沿用官方原生行，展开后每个文件一张代码卡片——文件类型图标、增删统计、块级折叠、高亮/±差异切换、语法高亮统一 diff（行号为文件真实行号），改动两侧多显示可调的上下文行。另带 patch 工具（测试版，默认关）：一次调用把多处零散修改/多文件补丁原子化应用（*** Begin Patch 信封，全有或全无）。已归档并冻结在固定版本：作者不再为它适配新版 DSH。
 - [YiRan0/dsh-mobile-glass](https://github.com/YiRan0/dsh-mobile-glass) — DSH Web 移动端适配：窄屏下聊天页在上/侧栏在下的 reveal 抽屉、拖动手势、设置面板底部卡片上滑、composer 与头部修复，桌面端零影响。
+- [yishan/dsh-typing-practice](https://github.com/yishan/dsh-typing-practice) — 英文、中文和粤语打字练习，提供拼音与粤拼提示、限时或按篇练习、本地对话语料和本机记录。
 - [yishengjun8/dsh-workspace-studio](https://github.com/yishengjun8/dsh-workspace-studio) — 三栏工作区布局，提供文件树浏览、编辑文件、非线性会话导图视图，并且支持手机模式。
 - [YizhouLouisLu/dsh-math-copy](https://github.com/YizhouLouisLu/dsh-math-copy) — 在对话中复制渲染后的数学公式时，剪贴板里得到的是公式的 LaTeX 源码，而不是 KaTeX 的字形文本。
 - [YizhouLouisLu/dsh-select-ask](https://github.com/YizhouLouisLu/dsh-select-ask) — 在对话里划词引用进输入框（显示为「N 条注释」小框），或在侧栏一次性小窗里就这段内容提问（不留任何记录）。
@@ -3012,7 +3013,7 @@ dsh plugin --profile web add dshmarket
 - [FuSheng-cs/Trae2api-dsh](https://github.com/FuSheng-cs/Trae2api-dsh) — 将 TRAE 账号的模型额度接入 dsh，支持多账号管理、自动签到、账号轮询、用量统计、思考强度选择和模型显示管理。 需要 Python 3.10+，首次使用需联网安装 Python 依赖。
 - [GaoHu1997/dsh-model-think-level](https://github.com/GaoHu1997/dsh-model-think-level) — 在官方「模型」页为第三方模型补上思考等级、图片输入与生图；一个供应商可配多把密钥，按模型分流、失败自动换密钥重试，并可配置按路由的请求头、查看余额。
 - [GaoHu1997/dsh-webdav](https://github.com/GaoHu1997/dsh-webdav) — 通过任意 WebDAV 服务在多台电脑之间同步 DSH 的模型供应商与模型：备份离开本机之前先用口令封好，新机器打开就是同一份模型清单。
-- [Garybot126/dsh-subagent-models](https://github.com/Garybot126/dsh-subagent-models) — 在输入框旁的「子代理」胶囊里统一设置委派子代理使用的 provider、模型与思考强度：卡片的「本对话 / 全局默认」两个范围共用同一组控件，胶囊上始终显示当前生效的路由；经 agent/request 钩子对每个进程内子代理生效，不注册设置页、不改 agent preset、不给工具加模型参数。
+- [Garybot126/dsh-subagent-models](https://github.com/Garybot126/dsh-subagent-models) — 在输入框旁的「子代理」胶囊里统一设置委派子代理使用的 provider、模型与思考强度：卡片的「本对话 / 全局默认」两个范围共用同一组控件，胶囊上始终显示当前生效的路由；在每个进程内子代理创建时生效（agent/created + agent.model.select()），不注册设置页、不改 agent preset、不给工具加模型参数。
 - [Gaudi-XIX/dsh-agy-cli](https://github.com/Gaudi-XIX/dsh-agy-cli) — Windows 专用的 Google Antigravity CLI 模型提供方，接续自 Darkings/dsh-agy-provider（包名 dsh-agy-cli，请勿与原版同装）。从 Windows 凭据管理器读取 Antigravity 令牌并只发往 Google Cloud Code 端点；Harness 工具策略由 DSH 全权负责，尾流式输出防回滚，并跟踪真实配额窗口。
 - [Gaudi-XIX/dsh-zcode-cli](https://github.com/Gaudi-XIX/dsh-zcode-cli) — 把本机已安装的 ZCode CLI 接成 DSH 的 `zcode` 模型路由：流量全部由官方二进制签名，插件自身不发请求、不伪造客户端请求、不把凭据传出本机（plan token 只在内存中解密并交还官方 CLI），不需要 API Key，付费一次性与免费 app-server 两条通道并存；v0.3.0 起内建 HTTP MCP 工具桥，工具调用走 DSH 的审批面；有契约文档与 node --test 测试门禁背书。
 - [GeekRicardo/claude-in-dsh](https://github.com/GeekRicardo/claude-in-dsh) — 把一个 dsh web 会话交给本机 Claude Code CLI 驱动：输入框内的引擎选择器（DSH | Claude Code）按会话切换，模型座换成 Claude 的模型与 reasoning effort，访问模式换成 Claude 权限档；权限请求、AskUserQuestion、ExitPlanMode 分别接到 dsh 原生的审批卡、提问卡与计划审核卡。Claude 的流写成 dsh 原生会话事件，由内建转录、工具卡片与嵌套子 agent 渲染；斜杠命令并入命令面板；CLI 由独立 broker 持有，插件更新与 dsh 重启都不中断进行中的轮次。
