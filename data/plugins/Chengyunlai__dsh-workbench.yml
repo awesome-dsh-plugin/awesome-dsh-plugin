@@ -1,0 +1,6 @@
+url: https://github.com/Chengyunlai/dsh-workbench
+name: Chengyunlai/dsh-workbench
+category: dev
+description:
+  en: Open source links from DeepSeek Harness conversations at the referenced line, review Git diffs beside the chat, inspect paused variables, and turn explanations into searchable Markdown memory cards. The workbench also shows Python class relationships (beta). Go and Java navigation require language servers, and breakpoint debugging requires a debug adapter.
+  zh: 从 DeepSeek Harness 对话点击源码链接，直接跳到指定行。在右侧工作台查看 Git 差异和断点变量，也可以把讲解保存为可搜索的 Markdown 记忆卡片。支持 Python 类关系图（Beta）。Go 和 Java 跳转需要语言服务器，断点调试需要调试适配器。

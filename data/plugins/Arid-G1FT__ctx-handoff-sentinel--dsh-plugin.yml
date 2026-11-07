@@ -1,0 +1,6 @@
+url: https://github.com/Arid-G1FT/ctx-handoff-sentinel/tree/main/dsh-plugin
+name: Arid-G1FT/ctx-handoff-sentinel#dsh-plugin
+category: session
+description:
+  en: 'Context handoff sentinel for DeepSeek Harness: three behavioral recall tests (constraints / changed files / next step) run after every compaction or on /guard check, cross-checked against the session log, returning a green/yellow/red verdict plus an optional handoff document.'
+  zh: '面向 DeepSeek Harness 的上下文交接哨兵：每次压缩后或手动 /guard check 时运行三项行为自检（约束 / 已改文件 / 下一步+验证命令），用会话日志做证据核对，给出 🟢🟡🔴 判定并可生成交接单。'

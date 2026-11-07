@@ -1,0 +1,7 @@
+url: https://github.com/hejingzhou/dsh-git-change
+name: hejingzhou/dsh-git-change
+category: git
+description:
+  en: A right-sidebar Git tab for DeepSeek Harness that lists working-tree changes with inline diffs and the commit graph, commits (locally or with a push), fast-forward pulls, and switches branches while the working tree is clean.
+  zh: DSH 右侧栏 Git 页签：列出工作区改动并内联显示差异、浏览提交树，支持一键提交（仅本地或提交并推送）、快进拉取，并在工作区干净时切换分支。
+icon: https://raw.githubusercontent.com/hejingzhou/dsh-git-change/main/assets/icon-180.png

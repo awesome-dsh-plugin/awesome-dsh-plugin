@@ -1,0 +1,6 @@
+url: https://github.com/LFELKEEA/dsh-default-model
+name: LFELKEEA/dsh-default-model
+category: model
+description:
+  en: Changes and pins the shared default model — new conversations, restarts and switching models inside a chat no longer rewrite it.
+  zh: 修改并固定共享的默认模型：新建对话、重启、以及在对话里切换模型都不会再改写它。

@@ -1,0 +1,6 @@
+url: https://github.com/SilenZerOrz/taskboard-workbench
+name: SilenZerOrz/taskboard-workbench
+category: workflow
+description:
+  en: 'Agent-team task workbench for DeepSeek Harness: a sidebar board and requirement view track tasks across backlog, execution, review and done, dispatch work to coding agents, and run multi-role team orchestration on a local SQLite store.'
+  zh: '面向 DeepSeek Harness 的智能体团队任务工作台：侧栏看板与需求视图跟踪任务从待办、执行、评审到完成，把工作派发给编码智能体，并用本地 SQLite 承载多角色团队编排。'

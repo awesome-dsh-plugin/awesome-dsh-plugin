@@ -1,0 +1,6 @@
+url: https://github.com/Polyaris-0413/dsh-balance-cmd
+name: Polyaris-0413/dsh-balance-cmd
+category: usage
+description:
+  en: A DSH plugin that queries the account balance and opens the top-up page through commands.
+  zh: 一个通过命令查询余额、打开充值页的 dsh 插件。

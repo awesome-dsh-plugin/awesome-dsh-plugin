@@ -1,0 +1,7 @@
+url: https://github.com/LucasCaleb-ggg/dsh-session-cleanup
+name: LucasCaleb-ggg/dsh-session-cleanup
+category: session
+description:
+  en: Batch session cleanup for DeepSeek Harness — pick a workspace, see which sessions are archived, and permanently delete logs, projection caches and workspace records.
+  zh: 按工作区批量清理会话：查看归档状态，把会话日志、投影缓存和工作区记录一起彻底删除。
+icon: https://raw.githubusercontent.com/LucasCaleb-ggg/dsh-session-cleanup/main/assets/icon-512.png

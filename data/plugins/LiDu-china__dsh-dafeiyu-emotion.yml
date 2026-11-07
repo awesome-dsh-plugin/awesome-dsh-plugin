@@ -1,0 +1,7 @@
+url: https://github.com/LiDu-china/dsh-dafeiyu-emotion
+name: LiDu-china/dsh-dafeiyu-emotion
+category: voice
+description:
+  en: Adds a fish-ear microphone to DSH that transcribes speech locally, estimates tone and emotion, and lets BigFish reply with an emotion-aware prompt.
+  zh: 给 DSH 输入框加一个鱼耳麦克风，本地转写语音、估计语气与情绪，并让大肥鱼按情绪自然回复。
+icon: https://raw.githubusercontent.com/LiDu-china/dsh-dafeiyu-emotion/main/assets/icon-512.png

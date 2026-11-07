@@ -1,0 +1,6 @@
+url: https://github.com/lloydzhou/dsh-subagent-codebuddy
+name: lloydzhou/dsh-subagent-codebuddy
+category: workflow
+description:
+  en: 'External one-shot subagent provider using the local CodeBuddy CLI over ACP, with background result delivery and steering of running children.'
+  zh: '通过 ACP 调用本机 CodeBuddy CLI 的外部一次性子智能体提供者，支持后台结果回传及向运行中的子智能体追加指令。'

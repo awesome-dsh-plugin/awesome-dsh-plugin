@@ -1,0 +1,6 @@
+url: https://github.com/TNTD26/dsh-ide
+name: TNTD26/dsh-ide
+category: dev
+description:
+  en: 'An IDE inside DeepSeek Harness with a file tree, multi-tab editor, AI assistant with model picker and API-key setup, Git panel, PTY terminal, and Python/TypeScript LSP.'
+  zh: '内置在 DeepSeek Harness 里的 IDE：文件树、多标签编辑器、AI 助手（模型选择/API Key）、Git 面板、PTY 终端和 Python/TypeScript LSP。'

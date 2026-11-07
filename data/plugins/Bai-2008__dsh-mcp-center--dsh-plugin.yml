@@ -1,0 +1,7 @@
+url: https://github.com/Bai-2008/dsh-mcp-center/tree/main/dsh-plugin
+name: Bai-2008/dsh-mcp-center#dsh-plugin
+category: market
+description:
+  en: Browse, install, inspect, update, and remove MCP server connections inside DeepSeek Harness, with an online catalog and native Streamable HTTP/stdio support.
+  zh: 在 DeepSeek Harness 内浏览、安装、检查、更新和卸载 MCP 服务器连接，支持在线目录、Streamable HTTP 与 stdio。
+icon: https://raw.githubusercontent.com/Bai-2008/dsh-mcp-center/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/x402/dsh-fail-fast
+name: x402/dsh-fail-fast
+category: dev
+icon: https://raw.githubusercontent.com/x402/dsh-fail-fast/main/docs/assets/icon-180.png
+description:
+  en: 'Fail-fast tool batches for DeepSeek Harness: inside a step, concurrency-safe calls still overlap, but after the first failed call every remaining unstarted call is denied before dispatch and returned to the model as a synthesized `is_error` "not executed" result.'
+  zh: '为 DeepSeek Harness 的工具批次增加“失败即停”（fail-fast）机制：同一并行组内的只读调用仍可并发，一旦有调用失败，所有尚未开始的调用都会在派发前被拦截，并以合成的 is_error「未执行」结果返回给模型。'

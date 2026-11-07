@@ -1,0 +1,6 @@
+url: https://github.com/lizilong1993/dsh-plain-talk
+name: lizilong1993/dsh-plain-talk
+category: ui
+description:
+  en: 'Composer toggle that shapes replies: conclusion first, inline quotes, no cross-turn references.'
+  zh: '输入框「说人话」开关：结论先行、引用原文、去掉需要翻前文的表述。'

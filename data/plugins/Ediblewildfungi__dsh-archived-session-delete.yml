@@ -1,0 +1,6 @@
+url: https://github.com/Ediblewildfungi/dsh-archived-session-delete
+name: Ediblewildfungi/dsh-archived-session-delete
+category: session
+description:
+  en: Adds a confirmed Delete session action to the sidebar menu of archived Sessions; the Host permanently removes their local JSONL logs (including hidden subagent descendants), workspace accounting and archive/pin entries, then refreshes open Web clients.
+  zh: 在 Web 侧栏已归档会话的“...”菜单中新增带二次确认的「删除会话」；Host 永久删除本地 JSONL 日志（含隐藏的子代理后代）、工作区记账与归档/置顶集合，并刷新已打开的页面。

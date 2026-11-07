@@ -1,0 +1,6 @@
+url: https://github.com/Awenforever/dsh-codex-advisor
+name: Awenforever/dsh-codex-advisor
+category: tools
+description:
+  en: 'Persistent Codex advisor threads for DSH sessions, with six native tools, a Codex trail, a sidebar status card, and explicit model/effort provenance. Requires a locally installed Codex CLI with app-server support and a logged-in ChatGPT/Codex account (the CLI is not bundled); tested on Windows 11 with DSH Desktop 0.2.1-rc.5.'
+  zh: '给 DSH 会话提供可跨请求续聊的 Codex 顾问线程：六个原生工具、Codex 轨迹、侧栏状态卡，以及每轮 model/effort 来源。需本机安装支持 app-server 的 Codex CLI 并登录 ChatGPT/Codex 账号（插件不自带 CLI）；已在 Windows 11 + DSH 桌面 0.2.1-rc.5 上验证。'
