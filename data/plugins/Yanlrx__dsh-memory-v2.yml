@@ -1,0 +1,6 @@
+url: https://github.com/Yanlrx/dsh-memory-v2
+name: 瑞希的记忆
+category: memory
+description:
+  en: Long-term memory for DeepSeek Harness agents, with per-turn archival and recall, daily consolidation, and validity, weight and expiry as three independent functions.
+  zh: 给 DeepSeek Harness 的长期记忆插件：每轮自动存档与召回、按天巩固；有效性、权重、过期三个函数各管一件事。
