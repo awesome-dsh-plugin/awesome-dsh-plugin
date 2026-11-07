@@ -1,0 +1,6 @@
+url: https://github.com/Nowyousee1/agentloom/tree/main/packages/dsh-plugin
+name: Nowyousee1/agentloom#dsh-agentloom
+category: memory
+description:
+  en: 'One source of truth for skills, MCP servers and memory across AI coding agents: keeps a shared store in sync between DeepSeek Harness and Codex, with per-agent skill variants and seven read-mostly MCP bridge tools.'
+  zh: '让 DeepSeek Harness 与 Codex 共用同一套技能、MCP 服务器和记忆：一份真源双向同步，技能可按端出变体，并带七个 MCP 桥接工具。'
