@@ -159,6 +159,7 @@ dsh plugin --profile web add dshmarket
 - [1207291706/dsh-restart-foot](https://github.com/1207291706/dsh-restart-foot) — DSH Windows 桌面端侧栏底部的重启按钮，就在账号入口上方：点两次即结束应用进程并自动重启，全程不弹命令窗口。
 - [1250589385/dsh-quick-send](https://github.com/1250589385/dsh-quick-send) — 在输入框一行放一组快捷按钮，点一下把预设文字发进当前对话。每个按钮的名称、大小、透明度、形状与发送内容都可就地编辑；右键拖动整组可在上下文进度左右换位，选择保存在本地。按钮组只占自身宽度，不会挤压上下文进度与用量区域。
 - [13071301808/dsh-composer-expand](https://github.com/13071301808/dsh-composer-expand) — Web UI 输入框展开/收起：composer 工具行新增 ⬆/⬇ 按钮，一键把输入框扩大到 70vh 高度，方便写长 prompt。
+- [1314521gjy/dsh-wujie-canvas](https://github.com/1314521gjy/dsh-wujie-canvas) — 在 DSH 左侧栏加入无界画布页面：内置画布前端、本机工作台状态与启动，并让 DSH Agent 通过工具读写当前画布；画布不再内置 Agent。
 - [1321928757/dsh-prompt-polish](https://github.com/1321928757/dsh-prompt-polish) — 输入栏提示词优化：6 种策略 × 3 种语言与自定义指令重写草稿，可选携带目标、任务清单、压缩摘要、工具结果与聊天上下文，附结果确认弹窗、最近 5 次历史与三级设置持久化。
 - [13520rygvv/dsh-restart-button](https://github.com/13520rygvv/dsh-restart-button) — 从三处重启 DeepSeek Harness 桌面端：设置里的按钮、账号菜单「退出登录」上方的一项、以及可自定义的快捷键；有运行中的任务时会先确认；若新版本更新已下载并等待安装，重启时会先静默安装更新。仅支持 Windows 桌面版。
 - [1420079678-ctrl/agent-body#dsh-anatomy-panel](https://github.com/1420079678-ctrl/agent-body/tree/main/workspace/plugins/dsh-anatomy-panel) — Agent-Body 器官的解剖面板：在 harness 内部的 /anatomy 提供实时体征看板——器官、心跳、自愈账本、自训练计数与真实脉冲流，数据直接读自运行时文件而非誊写。仅 host 端，无客户端 bundle、无构建步骤。
@@ -7477,6 +7478,7 @@ dsh plugin --profile web add dshmarket
 - [wxlei2004/dsh-plugins#dsh-todo-guard](https://github.com/wxlei2004/dsh-plugins/tree/main/packages/dsh-todo-guard) — 任务清单陈旧度守卫：监听会话事件流，统计上一次 todo_write 之后又发生了多少次工具调用；超过可配置阈值时在下一步之前追加一条简短提醒，并附上当前清单内容，让模型把清单写回真实进度，而不是在界面上留一份过期的快照。纯提示注入，不阻断流程，也不改动任何数据。
 - [xiagaogaozi/dsh-subagent-pool](https://github.com/xiagaogaozi/dsh-subagent-pool) — 为 DeepSeek Harness 维护可复用的命名子代理配置，并按配置的模型、推理强度和 Agent 预设运行子代理。
 - [xiangshu2026/dsh-scheduled-reports](https://github.com/xiangshu2026/dsh-scheduled-reports) — 只注册一个工具 report_health，回答「定时报告任务到底跑了没有」。它看副作用而不是退出码：最新报告目录有多旧、里面有几份文档、是否不止一个类别、审计账本上次同步是多久前、最后一条日志写了多久。不调用模型、不产生退出码，只读本地路径，可用配置或环境变量覆盖。
+- [xiaofeng-bm/dsh-clarify-mode](https://github.com/xiaofeng-bm/dsh-clarify-mode) — 加一个需求澄清模式：模式内移除写文件工具，Agent 只能提问，覆盖完必需维度后产出带验收标准的 spec，再开始实现。
 - [xiaohai-78/dsh-modes](https://github.com/xiaohai-78/dsh-modes) — Agent 模式（预设）设置页：按模式开关最多 15 项能力（运行命令、读写或只读文件、网页、子代理等），也能逐个开关插件；编辑每个模式的系统提示词，带变量校验、完整预览和历史版本，可选让正在运行的会话即时生效，并提供每次保存都需审批的对话内修改工具 mode_prompt；用四个起步模板或复制现有模式新建模式；dsh 升级后合并内置更新并保留你的修改，一键关闭加载失败的插件。
 - [XiaoOu2024/dsh-root-planner-preset](https://github.com/XiaoOu2024/dsh-root-planner-preset) — dsh agent 树的递归委派：用预设与 Host 限制划定每个子 agent 的能力边界，子 agent 在各自 _agents/ 工作区独立工作，成果由父 agent 决定是否合并、如何合并。
 - [xiaoxue-car/dsh-card-workbench](https://github.com/xiaoxue-car/dsh-card-workbench) — 为 DeepSeek Harness 提供卡片任务编排：拆分任务、派单盯办、处理卡顿、核对结果，并接管工作对话。
@@ -8377,6 +8379,7 @@ dsh plugin --profile web add dshmarket
 - [myd74108520/cadence-skill](https://github.com/myd74108520/cadence-skill) — 面向 Cadence Virtuoso 版图工程师的 SKILL 脚本助手：官方文档锚定的 API 检索（5 本 IC6.1.8 手册 3557 条，签名带置信度，查不到绝不臆造）＋不执行代码的深度静态检查——词法深度坐标系可精确判定跨行循环体与同行闭合，覆盖迭代中删除（copy 位置敏感）、printf 占位符与实参对账、循环内 nth O(N^2)、废弃 API（带页码引用），另有危险需求拦截与 CIW 错误日志定位修复。宿主半区零第三方依赖。
 - [mzzsfy/dsh-plugin#dsh-maintain](https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-maintain) — DSH 版本与运维一体化：自动发现新版本、一键升级、安全重启，重启后页面自动恢复。
 - [NamesMT/dsh-home-hosted](https://github.com/NamesMT/dsh-home-hosted) — 让 dsh web 与其他服务器随开机自动启动；只需一句提示就能搭建和管理 Gitea、Jellyfin 等服务，并统一收纳到一个 home-hosted 面板中。
+- [nanwu98/dsh-desktop-autostart-win](https://github.com/nanwu98/dsh-desktop-autostart-win) — 在设置里增加一页和一个开关，用于写入或删除当前用户的 Windows 启动项（HKCU Run）；从正在运行的桌面版、App Paths、默认安装目录或安装器记录中自动找到 exe，并清除任务管理器里的禁用标记。
 - [Ndsanes/dsh-rules](https://github.com/Ndsanes/dsh-rules) — 从 OMP 支持的每一种约定中发现规则文件,以 always-apply 层加规则索引注入系统提示词,并用时间旅行流规则强制执行——在模型输出中途打断违规内容、拦下会违规的工具调用、把提醒折进该调用的结果,或在回复完成后交由裁判模型判断。同一个工具也让模型能写入新规则;Plugins 页的审计面板会说明每条规则为何生效。
 - [Neo65536-engineer/dsh-agent-log](https://github.com/Neo65536-engineer/dsh-agent-log) — 从本机会话日志只读还原的工作报告：用了哪些工具、各调用多少次、执行了哪些命令、读写哪些文件、测试有没有通过、失败了几次及原因、消耗多少 Token，以及最后完成了没有。
 - [netori/galfree](https://github.com/netori/galfree) — 在 DSH 里制作 Ren'Py galgame 的工作台：宿主侧项目服务（写网关 + git 快照、方言子集解析器、推导进度、只由人盖的审读戳、钉版 SDK 校验与试玩、本地发布）收在一条接缝后面，由内置 Web 工作台面板与 agent 工具驱动。
