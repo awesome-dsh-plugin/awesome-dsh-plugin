@@ -1,0 +1,6 @@
+url: https://github.com/Yyhy110421/dsh-durable-wait
+name: Yyhy110421/dsh-durable-wait
+category: workflow
+description:
+  en: 'Persistent waits for file creation, file changes or process exit; the turn ends and the original session is woken when the condition is met.'
+  zh: '守候：登记文件出现、文件修改或进程退出等条件，当前回合正常结束，条件成立后自动叫醒原会话。'
