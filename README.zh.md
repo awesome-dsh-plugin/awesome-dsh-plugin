@@ -861,6 +861,7 @@ dsh plugin --profile web add dshmarket
 - [jediliu005/dsh-fairy-zzz-for-jediliu](https://github.com/jediliu005/dsh-fairy-zzz-for-jediliu) — 《绝区零》Fairy Ⅲ 的 H.D.D 皮肤：开机动画、可沿纵轴拖动（X 轴固定）的常驻眼徽，用来避开正文；每天由模型生成 5 段时段问候台词（每句不超过 20 字），用本地 GPT-SoVITS 合成，取用顺序为「今日 → 最近一份 → 内置语音」，生成失败也有声音。回复可选朗读：末尾标记行优先于字数判断，长回复可先压成一句结论；朗读器对刚念过的句子做 MD5 去重，保证每条只念一次，切换会话保持安静。本仓库是 dsh-fairy-zzz 的个人定制分支，包名、路由与存储命名空间独立，并做了摘要接口限流、引擎启停改 POST、TTS 缓存与问候语定期清理。插件会在自身目录写两份本地诊断日志（客户端版本、决策追踪），只留本机、不外传。本仓库是 AssassinVIX/fairy-zzz-plugin（上游包名 dsh-fairy-zzz）的个人定制分支：与上游二选一安装，不要同时装——两者都会在相同的 DSH 界面挂载全屏皮肤。每日动态问候与朗读摘要需要 ~/.dsh/fairy-tts.json（或 DEEPSEEK_API_KEY）提供 DeepSeek 兼容 API key；未配置时只播放内置问候音频。
 - [jediliu005/dsh-sim-folder](https://github.com/jediliu005/dsh-sim-folder) — 文件夹式会话面板：把侧栏会话装进自建文件夹，支持拖拽归类、会话别名与归档变淡；只做显示，不改 DSH 自己的分组。
 - [jeffreyren1/dsh-custom-js](https://github.com/jeffreyren1/dsh-custom-js) — 在 DeepSeek Harness 中加载、编辑、管理和热重载可信的 JavaScript / TypeScript 用户脚本。
+- [jh0oo/dsh-desktop-restart-button](https://github.com/jh0oo/dsh-desktop-restart-button) — 在 Windows 桌面端标题栏加一个重启按钮，并把冷启动时的「正在加载设置…」换成一段科技感动画。
 - [jhuanxx44/dsh-paste-path](https://github.com/jhuanxx44/dsh-paste-path) — macOS Finder 剪贴板粘贴：在 Finder 里 Cmd+C 复制文件或文件夹，回到 DSH 按 Ctrl+V 把绝对路径插入输入框；普通文本粘贴的 Cmd+V 不受影响。
 - [jiangnanquan/dsh-ux](https://github.com/jiangnanquan/dsh-ux) — Solarized 浅色主题、紧凑布局、思考/工具链折叠胶囊，以及余额、本轮成本与用量看板的 DSH Web 界面增强插件。
 - [JianGuo396/dsh-control-bar](https://github.com/JianGuo396/dsh-control-bar) — 模型跑一次回合时，屏幕顶部常驻一条进度栏（百分比按工具调用次数递增估算，回合结束才补到 100%），并标出当前是 DeepSeek 峰时还是谷时——大额 token 的操作只在峰时先问你一句。进度栏是独立 Electron 进程，找不到 Electron 二进制时会跳过。
@@ -2368,6 +2369,7 @@ dsh plugin --profile web add dshmarket
 - [Stmol/dsh-rub-cost](https://github.com/Stmol/dsh-rub-cost) — 在输入框坞区显示以卢布计的当前会话费用：当前时段与倒计时、该时段的 API 费用、央行汇率、含 subagent 的合计、缓存节省与 DeepSeek 平台余额。
 - [storyOuO/dsh-plugin-ds-balance](https://github.com/storyOuO/dsh-plugin-ds-balance) — DeepSeek 余额与逐次调用成本追踪：基于真实 usage 的持久化成本账本，支持官方高峰/低谷定价（北京时间 ×2），60 秒余额轮询，侧栏底部显示余额与今日消耗。
 - [Sttrevens/dsh-cost-meter](https://github.com/Sttrevens/dsh-cost-meter) — Web UI 美元成本徽标：头部显示会话总成本、每条回复结尾显示该轮成本，悬停看分项。
+- [SuLiuCanYing/dsh-billing-statistics](https://github.com/SuLiuCanYing/dsh-billing-statistics) — DSH 本地计费面板：多平台、按平台/模型明细汇总调用次数、token 与花费，支持峰谷/阶梯计价、CSV 人工导入价格（含峰时窗口）、官方账单对齐，以及 HTML/PDF/CSV 导出。
 - [sumomok/dsh-plugins#balance](https://github.com/sumomok/dsh-plugins/tree/main/packages/balance) — 侧栏脚注显示 DeepSeek 账户余额，并按会话/今日/本月/累计统计花费，按可配置的分时价格表（按币种分表，内置 DeepSeek 人民币/美元默认表）计价。两个只读远程方法，无宿主路由，密钥每次经宿主凭据缝读取，只向配置的供应商域名出网。
 - [sunshaobei/dsh-balance-panel](https://github.com/sunshaobei/dsh-balance-panel) — DSH Web 端的供应商额度与余额状态小组件，在输入框底部的停靠区展示剩余额度、用量与限流窗口。wenzetan/dsh-quota-panel 的本地分叉。
 - [sunzhentao/dsh--prompt--enhance](https://github.com/sunzhentao/dsh--prompt--enhance) — DSH Web 界面提示词增强插件：基础/标准/专家三档模式，标准/专家模式结合项目上下文与最近会话历史重写草稿；网关拒绝推理档位参数时自动去参重试；增强结果支持对比确认与撤回。
@@ -6055,6 +6057,7 @@ dsh plugin --profile web add dshmarket
 - [KNLCXY/dsh-websift](https://github.com/KNLCXY/dsh-websift) — 省 token 的网页阅读：底层是真 Chrome/Edge（CDP），一次调用读完多个页面、按相关性筛掉不相关的，只回一段带账本的摘要（实测省 80–98% 上下文）。真实搜索链接、登录态、截图、三档代理。
 - [kyo615/dsh-browser-control](https://github.com/kyo615/dsh-browser-control) — 基于 Playwright MCP 的 AI 浏览器控制：驱动真实可见的 Chrome（导航/点击/输入/快照，约 80 个 browser_* 工具），并在 GUI 内嵌实时截图面板，每次操作后自动刷新。
 - [L1818346/dsh-browser-takeover](https://github.com/L1818346/dsh-browser-takeover) — 浏览器网址接管：维护一份「要登录的网址」清单（只存网址与添加时间，不存账号密码），访问前先回答这条地址在不在清单里；按该站点的会话 cookie 名字判断调试浏览器此刻是否已登录（确定／可能／未登录，_gh_sess 这类匿名 cookie 不计），在带调试端口的浏览器里打开清单中的地址，并按可见文字点击一个元素（会搜索所有 iframe）。一次调用最多点一个元素，不做批量爬取。
+- [laoyingfuhuole/dsh-browser-use](https://github.com/laoyingfuhuole/dsh-browser-use) — 面向 DSH 的后台浏览器自动化插件：离屏 Electron 窗口、CDP 输入、快照 ref，不抢焦点。
 - [lemoncat7/dsh-web-search](https://github.com/lemoncat7/dsh-web-search) — 为 DeepSeek Harness 提供可配置联网搜索，支持 SearXNG、Wikipedia、Tavily、Brave 与 Gemini，并支持客户端引擎选择和受控重试。
 - [liangzz1998/dsh-web-devtools](https://github.com/liangzz1998/dsh-web-devtools) — 通过 17 个工具把 Chrome DevTools Protocol 接给 agent，提供页面概览、元素定位、操作时间线、控制台、网络、登录态与下载，读取对象可以是插件自带的专用浏览器，也可以经浏览器扩展读取你当前正在浏览的标签页。
 - [lightrivers/dsh-proxy-switch](https://github.com/lightrivers/dsh-proxy-switch) — 修复开着 Clash / Surge / v2rayN（TUN、fake-IP）时 web_fetch 报 non-public IP address 的问题：自动找到本机 HTTP 代理，代理开着走代理、关了直连；侧栏可一键切换「自动 / 走代理 / 直连」。默认只接管 web_fetch，不影响模型调用。
