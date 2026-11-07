@@ -2,5 +2,5 @@ url: https://github.com/yhPrime/dsh-theme-picker
 name: yhPrime/dsh-theme-picker
 category: ui
 description:
-  en: Manage app themes and installed theme plugins from a Themes page in Settings, with one theme active at a time.
-  zh: 在设置里新增「主题」页，管理应用主题与已安装主题插件，同一时间只生效一个。
+  en: Manage native themes and installed theme plugins from a right-sidebar panel and a Settings page, with only one theme active at a time.
+  zh: 主题管理器：在右侧栏面板与设置页里管理原生主题和已安装的主题插件，同一时间只生效一个主题。
