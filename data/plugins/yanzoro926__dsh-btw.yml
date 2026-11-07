@@ -1,5 +1,6 @@
 url: https://github.com/yanzoro926/dsh-btw
 name: yanzoro926/dsh-btw
+npm: dsh-btw-plugin
 category: session
 description:
   en: One-off btw side questions that inherit the current DSH session, with selectable context ranges and an optional compressed summary you review before sending it into the main session.
