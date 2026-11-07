@@ -909,6 +909,7 @@ dsh plugin --profile web add dshmarket
 - [kenz1117/dsh-ui-rainbowspeak](https://github.com/kenz1117/dsh-ui-rainbowspeak) — 虹语（RainbowSpeak）——沿聊天输入框边界持续流动的彩虹跑马灯，由锥形渐变环带驱动。支持流速、宽度、七种配色、方向、边与呼吸效果的实时设置，并具备会话状态感知：运行中加速、需关注变琥珀、出错红脉冲、庆祝闪动。
 - [KevinZhangNothing/dsh-task-graph](https://github.com/KevinZhangNothing/dsh-task-graph) — 在会话区新增「图谱」Tab，把单个会话的执行过程渲染为可交互 DAG：轮次、LLM 步骤、工具、技能、子代理、代码改动与测试，支持实时状态、重试聚合、关键路径与轨迹双向联动。
 - [keyboard-leo/dsh-reading-workbench](https://github.com/keyboard-leo/dsh-reading-workbench) — DSH 阅读工作台：封面网格书架 + 单/双页分页阅读器，支持 Markdown、TXT、HTML、EPUB、MOBI、PDF，划线笔记以文本偏移锚定，并提供书目、划线、正文节选三个 Agent 工具。
+- [kfat77/dsh-stock-ticker](https://github.com/kfat77/dsh-stock-ticker) — 在 DeepSeek Harness 界面顶部加一条从右向左滚动的股票行情条，可自定义 A 股、港股、美股与指数的自选列表、刷新频率与涨跌提醒阈值，点击条目查看行情详情。
 - [kfirsch/dsh-hebrew-rtl](https://github.com/kfirsch/dsh-hebrew-rtl) — 为 Web 界面提供希伯来语 RTL 渲染：任何包含希伯来文的行都从右向左显示（消息、GenUI、提问卡片、输入框与各类输入字段），以及在 RTL 行上方向正确的 Cmd+左/右 行内跳转。
 - [kgwdonkey/dsh-header-controls](https://github.com/kgwdonkey/dsh-header-controls) — 会话右上角的「重启 / 注销」电源按钮。
 - [kialajin-l/DSH_Plus#dsh-quote-selection](https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-quote-selection) — 会话内选中文字即弹出工具条：添加到对话、新开讨论或复制；引用折叠为输入框旁的引用卡片，双击跳回被引用轮次。
@@ -1163,6 +1164,7 @@ dsh plugin --profile web add dshmarket
 - [MjxUpUp/dsh-visual](https://github.com/MjxUpUp/dsh-visual) — 在对话里发可交互的 HTML 或流程图卡片；工具阻塞到用户提交，再把点击、字段、评论和卡片状态作为结果交还。
 - [MKInori/dsh-oneclick-desktop](https://github.com/MKInori/dsh-oneclick-desktop) — Windows 桌面集成：一键启动器 + 托盘控制器，另加侧边栏按钮把 DSH 和 chat.deepseek.com 并排放置并共用一个任务栏按钮。安装会写入桌面快捷方式并注册 dshsplit: 协议，两者都可用 lib/desktop.ps1 -Mode remove 清除。
 - [ml020/dsh-workbuddy](https://github.com/ml020/dsh-workbuddy) — 为 DSH 会话首屏的品牌标识与工作区选择器换上 Wordless 风格的着陆视图。原生输入框保持不变；选择器仍可在弹窗内添加新工作区（本条目像原生选择器一样自带 directory-flow 子槽位）。
+- [mm24trg2gy-star/dsh-window-keeper](https://github.com/mm24trg2gy-star/dsh-window-keeper) — 记住 DSH 桌面窗口的位置、大小与最大化状态，下次启动回到上次离开的地方。窗口逻辑放在独立的 PowerShell 脚本里，不依赖客户端版本；插件外壳只负责安装、自启和开关。
 - [MM998LI/dsh-dock-vitals](https://github.com/MM998LI/dsh-dock-vitals) — 在输入框下方的状态栏里实时显示 CPU、内存与 GPU 读数：可点击的徽章、详情面板、逐项开关与三档刷新速度。
 - [mmyddd/dsh-ccd](https://github.com/mmyddd/dsh-ccd) — 改写思考行：不显示原始思维链，而是随流按段写成第一人称的工作笔记，可随时切回原文。笔记按会话落盘，刷新后历史行仍有；写笔记可以用已配置的供应商，也可以下载本地 llama.cpp 模型；模型下一轮读到的仍是完整推理。
 - [Mobai-read/dsh-chat-index-rail](https://github.com/Mobai-read/dsh-chat-index-rail) — 纯客户端对话输入目录条：每条用户消息一根横条，两级悬停预览（15 字，移入气泡展开 40 字）、点击跳转、滚动跟随高亮；静态 npm 包，无宿主半。
