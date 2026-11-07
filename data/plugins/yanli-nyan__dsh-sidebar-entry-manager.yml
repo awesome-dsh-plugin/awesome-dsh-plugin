@@ -1,0 +1,8 @@
+url: https://github.com/yanli-nyan/dsh-sidebar-entry-manager
+name: yanli-nyan/dsh-sidebar-entry-manager
+category: ui
+icon: https://raw.githubusercontent.com/yanli-nyan/dsh-sidebar-entry-manager/main/icon.png
+tarball: https://github.com/yanli-nyan/dsh-sidebar-entry-manager/releases/download/v1.1.0/dsh-sidebar-entry-manager-1.1.0.tgz
+description:
+  en: 'Per-row display switches for the DeepSeek Harness sidebar''s panel entries: a hidden row is still reachable from the More menu, and the choice is kept in localStorage across reloads and restarts.'
+  zh: '给 DeepSeek Harness 左侧栏的面板入口行加显示开关：隐藏的入口仍可从「更多」菜单打开，选择存在 localStorage 里，刷新和重启都保留。'

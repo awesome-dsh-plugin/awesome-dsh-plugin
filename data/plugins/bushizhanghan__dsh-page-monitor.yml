@@ -1,0 +1,6 @@
+url: https://github.com/bushizhanghan/dsh-page-monitor
+name: bushizhanghan/dsh-page-monitor
+category: workflow
+description:
+  en: 'Webpage watch agent: keep a watchlist of URLs, snapshot each page on every sweep, detect changes by bigram-Dice ratio and keywords, log important ones and push to a WeChat webhook; agent tools page_watch_add/list/check/history/remove. Renders JS anti-bot WAF pages via the optional lexmount extractor.'
+  zh: '网页监控哨兵：把一批网页加入监视清单，每次巡检抓快照、用 bigram-Dice 变化率与关键词判断变化是否重要，重要变化写日志并推送企业微信 webhook；提供 page_watch_add/list/check/history/remove 工具，可选 lexmount 通道穿透 JS 反爬 WAF 页面。'

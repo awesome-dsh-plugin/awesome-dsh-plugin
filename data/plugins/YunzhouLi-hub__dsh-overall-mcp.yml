@@ -1,0 +1,6 @@
+url: https://github.com/YunzhouLi-hub/dsh-overall-mcp
+name: YunzhouLi-hub/dsh-overall-mcp
+category: tools
+description:
+  en: 'Host-wide MCP server panel: imports the servers declared in Claude Desktop, Claude Code, Cursor and Codex CLI configs, searches six upstream catalogs and installs from whichever of them declares an install plan, asks only for the fields a server actually declares, and checks each row for whether the mount, the handshake and its tool list really work.'
+  zh: '全局 MCP 服务面板：导入 Claude Desktop、Claude Code、Cursor、Codex CLI 配置里声明的服务，检索六个上游目录并只从声明了安装方案的条目安装，只询问服务器自己声明过的配置项，并对每一行检查挂载、握手与工具表是否真的可用。'

@@ -1,0 +1,6 @@
+url: https://github.com/XiaoOu2024/dsh-novel-generator
+name: XiaoOu2024/dsh-novel-generator
+category: ui
+description:
+  en: 'Novel generator: builds a world snapshot along a story timeline and, from the latest snapshot and the most recent chapters, deduces the next chapter. Requires DSH >=0.2.1-rc.2.'
+  zh: '小说生成器：按时间线生成世界快照，通过世界快照和最近章节自动推演新章节。需 DSH >=0.2.1-rc.2。'

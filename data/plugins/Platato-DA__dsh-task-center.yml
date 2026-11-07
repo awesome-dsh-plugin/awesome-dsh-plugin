@@ -1,0 +1,7 @@
+url: https://github.com/Platato-DA/dsh-task-center
+name: Platato-DA/dsh-task-center
+category: workflow
+description:
+  en: 'Scheduled Agent tasks for DSH 0.2.1-rc.5 with per-task models, workspaces, independent or persistent sessions, run history, and file artifacts.'
+  zh: '面向 DSH 0.2.1-rc.5 的定时 Agent 任务，支持按任务配置模型与工作目录、独立或持续会话、运行记录和文件产物。'
+tarball: https://github.com/Platato-DA/dsh-task-center/releases/download/v0.1.0-beta.2/dsh-external-dsh-task-center-0.1.0-beta.2.tgz

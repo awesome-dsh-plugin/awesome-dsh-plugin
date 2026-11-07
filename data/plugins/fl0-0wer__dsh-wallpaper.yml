@@ -1,0 +1,7 @@
+url: https://github.com/fl0-0wer/dsh-wallpaper
+name: fl0-0wer/dsh-wallpaper
+category: theme
+description:
+  en: "Photo wallpaper for the DSH Web UI, with local image uploads and live mask, blur, saturation and panel translucency controls."
+  zh: "DSH Web 图片壁纸插件：本地上传图片，实时调节遮罩、模糊、饱和度与面板透明度。"
+tarball: https://github.com/fl0-0wer/dsh-wallpaper/releases/download/v1.1.1/dsh-wallpaper-1.1.1.tgz

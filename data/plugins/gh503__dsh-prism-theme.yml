@@ -1,0 +1,7 @@
+url: https://github.com/gh503/dsh-prism-theme
+name: gh503/dsh-prism-theme
+category: theme
+description:
+  en: 'Light and dark theme editor with 14 exposed color controls, typography settings, named presets, and JSON import/export.'
+  zh: '明暗主题编辑器，提供 14 项公开颜色编辑、字体字号设置、命名主题保存与 JSON 导入导出。'
+tarball: https://github.com/gh503/dsh-prism-theme/releases/download/v1.1.0/local-prism-theme-1.1.0.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/439436269-ctrl/dsh-file-explorer
+name: 439436269-ctrl/dsh-file-explorer
+category: ui
+description:
+  en: 'Sidebar file explorer for DeepSeek Harness: a lazy workspace tree with in-panel preview for text, Markdown and images, and an action that hands a file to the system default app.'
+  zh: '在侧栏里浏览工作区：懒加载文件树，面板内预览文本 / Markdown / 图片，并可交给系统默认程序打开。'

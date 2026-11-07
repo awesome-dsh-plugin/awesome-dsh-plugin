@@ -2,5 +2,5 @@ url: https://github.com/windrover/dsh-plugin-update-checker
 name: windrover/dsh-plugin-update-checker
 category: tools
 description:
-  en: 'Adds a "Check updates" tab to the Built-in plugins settings: scans every installed bundle for the latest published version and DSH-runtime compatibility, with a per-plugin update action.'
-  zh: '在内置插件设置里新增「检查更新」标签页：扫描每个已安装插件的最新发布版本与 DSH 运行时兼容性，并提供逐插件更新操作。'
+  en: 'Adds a "Check updates" tab to the Built-in plugins settings: one row per installed bundle, with its latest npm version and an update button. Each row also reports DSH-runtime compatibility. The registry is read through the .npmrc chain (environment, then profile, then user, first hit wins); with nothing configured it races a mirror against the public registry, and a private registry is never raced against a public one. A version is installed from the registry it was read from.'
+  zh: '在内置插件设置里新增「检查更新」标签页：每个已安装插件一行，显示 npm 最新版本并提供更新按钮。每行还会报告 DSH 运行时兼容性。注册表按 .npmrc 逐级读取（环境变量 → profile → 用户级，取第一个命中），未配置时并发探测镜像与公共源，内部源不会与公共源竞速。版本从哪个注册表读到，就由它安装。'

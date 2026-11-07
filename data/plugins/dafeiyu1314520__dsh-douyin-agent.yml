@@ -1,0 +1,6 @@
+url: https://github.com/dafeiyu1314520/dsh-douyin-agent
+name: dafeiyu1314520/dsh-douyin-agent
+category: browser
+description:
+  en: "Autonomous Douyin watching in a dedicated Edge browser on Windows (requires Node.js 22.13+): sampling decisions, frame storyboards, danmaku-aware comments, persona memory and a watch diary, all under daily viewing limits. Fork of LockyBee/dsh-douyin-agent — uninstall the upstream plugin before installing this one."
+  zh: "在 Windows 的专用 Edge 浏览器里自主刷抖音（需 Node.js 22.13+）：采样决策、抽帧拼故事板、带时间的高赞弹幕、人格与兴趣记忆、观看日报，全程受每日时段与额度限制。改自 LockyBee/dsh-douyin-agent，不能与上游同装。"

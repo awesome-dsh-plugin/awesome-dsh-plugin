@@ -1,0 +1,6 @@
+url: https://github.com/Yuuyuko-uu/dsh-feiyu-mood
+name: Yuuyuko-uu/dsh-feiyu-mood
+category: identity
+description:
+  en: Gives the companion a mood judged each turn and shown as a short context note, with a panel for mood, emotion dimensions and timeline.
+  zh: 给 AI 伙伴一个每轮判定、以一小段上下文提示的心情，面板里能看心情值、情绪维度与时间线。

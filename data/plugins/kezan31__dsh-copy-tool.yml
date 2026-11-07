@@ -1,0 +1,6 @@
+url: https://github.com/kezan31/dsh-copy-tool
+name: kezan31/dsh-copy-tool
+category: tools
+description:
+  en: Adds a line-based copy tool for replacing or inserting file sections, with indentation control and diff previews.
+  zh: 提供按行复制工具，可替换或插入文件片段，并支持缩进控制和 diff 预览。

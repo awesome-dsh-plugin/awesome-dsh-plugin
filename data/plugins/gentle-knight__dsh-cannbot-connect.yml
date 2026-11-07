@@ -1,0 +1,6 @@
+url: https://github.com/gentle-knight/dsh-cannbot-connect
+name: gentle-knight/dsh-cannbot-connect
+category: model
+description:
+  en: "Connects CANNBOT gateway models to DSH by reusing the sign-in CANNWork already establishes for opencode: the JWT and virtual key are read from disk on every request, so no separate OAuth flow or extra key is needed, and the account's visible models are registered in the model picker."
+  zh: "把 CANNBOT 网关的模型接入 DSH：复用 CANNWork 已为 opencode 建立的登录态，每个请求从磁盘现读 JWT 与虚拟密钥，不需要另起 OAuth 流程或额外填 key，账号可见的模型会注册进模型选择器。"

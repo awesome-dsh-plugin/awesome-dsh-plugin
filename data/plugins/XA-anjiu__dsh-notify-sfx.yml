@@ -1,0 +1,6 @@
+url: https://github.com/XA-anjiu/dsh-notify-sfx
+name: XA-anjiu/dsh-notify-sfx
+category: notify
+description:
+  en: 'Windows desktop notifications with selectable sounds: five bundled sound packs (45 clips) plus imported audio, one sound per event, and clicking a notification opens the matching session.'
+  zh: 'Windows 桌面通知 + 可选音效：内置五组共 45 个音效并支持导入音频，可逐事件指定音效，点击通知直接跳到对应会话。'

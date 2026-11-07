@@ -1,0 +1,6 @@
+url: https://github.com/huangxicheng1/blog-manage
+name: huangxicheng1/blog-manage
+category: docs
+description:
+  en: 'Manage a GitHub Pages blog from a DSH panel — browse the Markdown articles grouped by tag, edit them in a split editor with a front-matter form, and publish the changes as one commit over the GitHub REST API.'
+  zh: 在 DSH 面板里管理 GitHub Pages 博客：按标签分组浏览 Markdown 文章，用表单填 front matter 并在分屏编辑器里修改，再通过 GitHub REST API 把改动作为一次 commit 发布。

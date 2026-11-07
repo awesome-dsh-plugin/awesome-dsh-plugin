@@ -1,0 +1,6 @@
+url: https://github.com/wiiwings1988/dsh-agent-bridge
+name: wiiwings1988/dsh-agent-bridge
+category: session
+description:
+  en: Lists Claude Code and Codex sessions in the DSH Workspace browser, where they can be opened, continued, pinned, renamed and archived, with terminal, file and git tabs.
+  zh: 在 DSH 工作区侧边栏列出 Claude Code 与 Codex 会话，可打开、继续对话、置顶、重命名和归档，并附带终端、文件和 Git 标签页。

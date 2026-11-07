@@ -1,0 +1,6 @@
+url: https://github.com/frisk325/dsh-rice-mode
+name: frisk325/dsh-rice-mode
+category: dev
+description:
+  en: 'Three-position toggle (off / this turn / always-on) for an "unlimited mode" that injects a "do not conserve tokens" instruction into the system prompt; the "this turn" mode reverts automatically on the kernel agent/status idle event.'
+  zh: '三档切换的「无限大白饭模式」（关 / 本轮 / 常开），控制要不要给系统提示注入「别省 token」的指令；「本轮」靠内核 agent/status 的 idle 事件自动回落。'

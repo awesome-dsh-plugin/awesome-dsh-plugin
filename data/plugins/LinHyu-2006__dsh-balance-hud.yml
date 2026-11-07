@@ -1,0 +1,6 @@
+url: https://github.com/LinHyu-2006/dsh-balance-hud
+name: LinHyu-2006/dsh-balance-hud
+category: usage
+description:
+  en: Shows your DeepSeek balance and what the current session has cost in a corner overlay, with budget alerts, peak-hour warnings and opt-in official price sync.
+  zh: 在右下角浮层显示 DeepSeek 账户余额与本会话花费，支持预算告警、峰时提醒，以及可选开启的官方价格同步。

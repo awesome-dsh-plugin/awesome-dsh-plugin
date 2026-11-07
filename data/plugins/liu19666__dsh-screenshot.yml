@@ -1,0 +1,8 @@
+url: https://github.com/liu19666/dsh-screenshot
+name: liu19666/dsh-screenshot
+category: ui
+tarball: https://github.com/liu19666/dsh-screenshot/releases/download/v2.1.4/dsh-screenshot-2.1.4.tgz
+icon: https://raw.githubusercontent.com/liu19666/dsh-screenshot/main/assets/icon-180.png
+description:
+  en: 'Windows screenshot overlay: highlights the window, screen or taskbar under the cursor and dims the rest, then annotates (shapes, arrows, pen, text, mosaic) and drops the image into the composer without sending it.'
+  zh: 'Windows 截图覆盖层：自动高亮光标下的窗口、整屏或任务栏并压暗其余区域，随后标注（形状、箭头、画笔、文本、马赛克），确定后把图片放进会话输入区，不自动发送。'

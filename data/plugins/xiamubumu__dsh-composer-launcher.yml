@@ -1,0 +1,7 @@
+url: https://github.com/xiamubumu/dsh-composer-launcher
+name: xiamubumu/dsh-composer-launcher
+category: ui
+description:
+  en: 'A launcher panel for DSH: manages the capability composer, the plugin inventory and the MCP bridge, and walks you through installing the browser tab-bridge extension.'
+  zh: 启动器面板：统管能力组合、插件清单与 MCP 桥，并引导安装浏览器标签页扩展。
+tarball: https://github.com/xiamubumu/dsh-composer-launcher/releases/download/v1.1.0/dsh-composer-launcher-1.1.0.tgz

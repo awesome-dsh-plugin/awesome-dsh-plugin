@@ -1,0 +1,6 @@
+url: https://github.com/M1r0er/dsh-workspace-gate
+name: M1r0er/dsh-workspace-gate
+category: tools
+description:
+  en: 'Per-workspace gate that hides the tool schemas and system prompt sections of selected plugins from the model in directories that do not need them.'
+  zh: '按工作区门控插件：把选定插件的工具 schema 与系统提示词段，从不需要它们的目录的模型上下文中摘掉。'

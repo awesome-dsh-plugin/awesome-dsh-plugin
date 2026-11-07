@@ -1,0 +1,6 @@
+url: https://github.com/ownduck/dsh-skill-experts
+name: ownduck/dsh-skill-experts
+category: skill
+description:
+  en: Manage skill experts in the sidebar and summon them from the composer or @ menu.
+  zh: 在侧栏管理技能专家，并通过输入栏或 @ 召唤他们协助完成任务。

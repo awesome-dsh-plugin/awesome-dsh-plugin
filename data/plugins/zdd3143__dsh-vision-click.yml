@@ -1,0 +1,7 @@
+url: https://github.com/zdd3143/dsh-vision-click
+name: zdd3143/dsh-vision-click
+category: tools
+tarball: https://github.com/zdd3143/dsh-vision-click/releases/latest/download/dsh-vision-click.tgz
+description:
+  en: 'Lets the agent drive Windows by sight: Windows OCR turns on-screen text into clickable targets, then clicks, drags, scrolls, types and presses keys, verifying each action with a per-pixel diff and an OCR text delta; F6+F7 is a separate emergency stop.'
+  zh: '让 Agent 看着屏幕操作 Windows：用 Windows OCR 把界面文字变成可点目标，再执行点击、拖动、滚轮、键入与按键，每步都用逐像素差分和文字增删复核；F6+F7 由独立进程急停。'

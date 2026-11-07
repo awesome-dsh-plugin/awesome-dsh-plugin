@@ -1,0 +1,7 @@
+url: https://github.com/mengzhongjie/dsh-codex-sidebar
+name: mengzhongjie/dsh-codex-sidebar
+category: ui
+description:
+  en: Turns the DSH sidebar into a message view, where a bell button groups sessions by priority and date and each row carries its preview and workspace name.
+  zh: 把 DSH 侧栏切成消息视图：铃铛一键把会话按优先级与日期分组，每行带预览与所属工作区。
+icon: https://raw.githubusercontent.com/mengzhongjie/dsh-codex-sidebar/main/assets/icon-180.png

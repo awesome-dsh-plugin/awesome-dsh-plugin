@@ -1,0 +1,8 @@
+url: https://github.com/alccs/dsh-visual-intelligence-engine/tree/main/package
+name: alccs/dsh-visual-intelligence-engine
+category: ui
+description:
+  en: 'Render interactive diagrams, charts and staged learning visuals alongside native prose in DeepSeek Harness.'
+  zh: '在 DeepSeek Harness 中结合正文呈现交互图形、图表与分阶段学习演示。'
+icon: https://raw.githubusercontent.com/alccs/dsh-visual-intelligence-engine/main/package/assets/icon.png
+tarball: https://github.com/alccs/dsh-visual-intelligence-engine/releases/latest/download/dsh-visual-interactive-engine.tgz

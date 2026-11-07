@@ -1,0 +1,6 @@
+url: https://github.com/SteelUnion/dsh-confirm-gate
+name: SteelUnion/dsh-confirm-gate
+category: security
+description:
+  en: 'Counts persistent operations within a turn and escalates on the total: a reminder first, then an explicit stop instruction, then an approval prompt. Reads the session sandbox mode on every call, and stays silent under read-only and workspace-write.'
+  zh: '按轮统计持久化操作，按总数逐级升级：先提醒，再给明确的停止指令，最后请求确认。每次调用都现读会话的沙箱模式，在 read-only 与 workspace-write 下保持沉默。'

@@ -1,0 +1,6 @@
+url: https://github.com/Nektropy/dsh-starry-sky-theme
+name: Nektropy/dsh-starry-sky-theme
+category: theme
+description:
+  en: 'Dark-only starry-sky theme for the Web UI: both Light and Dark resolve to one deep-space night palette with a twinkling click-through starfield and four constellation figures, and the appearance preference is pinned to Dark while the plugin is enabled.'
+  zh: '深色星空主题：浅色与深色外观统一为同一套深空配色，带闪烁星点和四组星座连线；插件启用时外观固定在深色。'

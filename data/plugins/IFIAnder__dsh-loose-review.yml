@@ -1,0 +1,6 @@
+url: https://github.com/IFIAnder/dsh-loose-review
+name: IFIAnder/dsh-loose-review
+category: security
+description:
+  en: Reviews destructive shell commands with a model before they run, asks you to confirm or blocks them, and aborts a running command once it has deleted too many files.
+  zh: 破坏性 shell 命令执行前由模型判断会不会造成不可逆破坏，判定会破坏时询问或拦下；命令运行中删除文件过多时中止。

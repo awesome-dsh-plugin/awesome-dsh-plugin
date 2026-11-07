@@ -1,0 +1,6 @@
+url: https://github.com/ZhaoZiyangShaanxi/dsh-netease-music
+name: ZhaoZiyangShaanxi/dsh-netease-music
+category: ui
+description:
+  en: "Windows only, needs the NetEase Cloud Music client installed. NetEase Cloud Music player for the DSH Web UI: a mini bar that expands into a liquid-glass card with search, synced lyrics and volume, a click-to-open spinning vinyl view, and it signs in with the local NetEase client account (cookie decrypted on this machine only) so VIP tracks play and the client current song can be pulled in."
+  zh: "仅 Windows，需本机装有网易云音乐客户端。DSH Web 的网易云音乐播放器：收起是迷你播放条，点开是液态玻璃卡片（搜索 / 歌词 / 音量），点封面区切换成旋转黑胶视图；自动使用本机网易云客户端账号登录（cookie 仅在本机解密），VIP 曲目可播，并可把客户端正在播放的歌一键拉进来。"

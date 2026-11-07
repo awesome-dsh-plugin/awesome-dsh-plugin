@@ -1,0 +1,6 @@
+url: https://github.com/1010231693/dsh-prompt-bar
+name: 1010231693/dsh-prompt-bar
+category: session
+description:
+  en: 'Pins the first prompt of the current session in a scroll-proof bar above the conversation: one-click copy, a panel listing every prompt you sent (click a row to jump straight to that message, paging back through history when needed), and ten switchable looks (four of them light) you pick from inside the panel.'
+  zh: '把当前会话的第一条提问常驻在对话区上方，滚动也不消失：一键复制，面板列出本会话发过的全部提问（点某一行直接跳到那条消息，够不着会自动往前翻页），另有十套外观可在面板里即选即换（含四套亮色）。'

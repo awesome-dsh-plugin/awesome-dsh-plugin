@@ -1,0 +1,6 @@
+url: https://github.com/ivanlebedvideo/dsh-pushups
+name: ivanlebedvideo/dsh-pushups
+category: ui
+description:
+  en: 'Counts the prompts you send in the Web GUI and turns them into a push-up debt, shown as a chip under the composer with one-click pay-off, partial payments and a day streak.'
+  zh: '统计你在 Web 界面中发送的消息并换算成俯卧撑欠账，在输入框下方以计数器显示，支持一键结清、部分还款和连续天数记录。'

@@ -1,0 +1,7 @@
+url: https://github.com/Eclipse-NotFound/dsh-flow-queue
+name: Eclipse-NotFound/dsh-flow-queue
+category: workflow
+description:
+  en: 'Right-sidebar flow editor for prompts, model switches, commands, condition branches and loops, executed only at turn boundaries so an in-flight request keeps its model.'
+  zh: '右侧栏可视化流程编辑器：把提示词、切换模型、命令、条件分支与循环连成一张图，只在轮次边界执行，在途请求与断连重试保持原模型。'
+icon: https://raw.githubusercontent.com/Eclipse-NotFound/dsh-flow-queue/main/assets/icon-180.png

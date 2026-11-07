@@ -1,0 +1,6 @@
+url: https://github.com/Senguk520/dsh-multitask
+name: Senguk520/dsh-multitask
+category: workflow
+description:
+  en: 'A Multitask agent preset where the main conversation only plans, briefs subagents and summarizes results, while file reads, commands, search and builds run inside subagent contexts; four worker kinds, an approval gate for dangerous operations, and zero changes to DSH source.'
+  zh: 'Multitask 减震器模式（Agent preset）：主对话只做需求理解、任务下发与结果汇总，读文件、跑命令、搜索与构建全部下放子代理；含四类 worker、危险操作审批闸门，且零 DSH 源码改动。'

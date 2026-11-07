@@ -1,0 +1,6 @@
+url: https://github.com/gem-gti/dsh-scrcpy-mirror
+name: gem-gti/dsh-scrcpy-mirror
+category: tools
+description:
+  en: 'Mirrors an Android phone screen to a Windows PC over USB or Wi-Fi with scrcpy, and exposes start, stop, status, connect (reconnect after a phone reboot) and screenshot as an agent tool and a /mirror command. Requires scrcpy and adb installed on the host (winget install Genymobile.scrcpy); the plugin does not bundle them.'
+  zh: '用 scrcpy 把安卓手机画面投到 Windows 电脑（USB 或无线），并把启动、停止、状态、connect（手机重启后重连）、截图暴露为智能体工具与 /mirror 命令。需在本机装好 scrcpy 与 adb（winget install Genymobile.scrcpy），插件不打包这两个可执行文件。'

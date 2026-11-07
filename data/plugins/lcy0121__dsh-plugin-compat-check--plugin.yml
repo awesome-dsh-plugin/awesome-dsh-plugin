@@ -1,0 +1,6 @@
+url: https://github.com/lcy0121/dsh-plugin-compat-check/tree/main/plugin
+name: lcy0121/dsh-plugin-compat-check#plugin
+category: dev
+description:
+  en: 'Checks installed DSH plugins for version-declaration and API risks against the current host, with source locations when available, certainty, impact basis and coverage limits. Adds a compatibility settings panel, plugin-detail findings/badges, a compat_check agent tool and a skill provider.'
+  zh: '检查已装 DSH 插件相对当前宿主的版本声明与 API 风险，报告可用源码位置、确定度、影响依据和覆盖限制。提供兼容性设置面板、插件详情发现与角标、compat_check 对话工具及 skill provider。'

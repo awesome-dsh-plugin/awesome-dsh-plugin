@@ -1,0 +1,7 @@
+url: https://github.com/RAK7S/dsh-weather-whisper
+name: RAK7S/dsh-weather-whisper
+category: ui
+description:
+  en: 'Weather card once per session: remembers your home city so a VPN never moves it, inline city picker, theme presets, custom separators, optional TTS hook for third-party voices.'
+  zh: '每次启动出现一次的天气卡片：记住没开 VPN 时的家城市、VPN 不再让城市跑偏、城市可手选、主题预设与自定义分隔线，并留了给第三方语音库的可选朗读接口。'
+tarball: https://github.com/RAK7S/dsh-weather-whisper/releases/download/v0.3.2/dsh-weather-whisper-0.3.2.tgz

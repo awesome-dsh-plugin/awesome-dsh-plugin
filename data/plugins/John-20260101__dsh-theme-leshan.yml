@@ -1,0 +1,8 @@
+url: https://github.com/John-20260101/dsh-theme-leshan
+name: John-20260101/dsh-theme-leshan
+category: theme
+description:
+  en: 'Three photograph skins for the DSH Web GUI — River Night (三江夜), Lingyun Dusk (凌云晚照) and Emei Mist (峨眉夜雾). Each paints its Leshan photograph across the window and the conversation column under an appearance-keyed scrim; one engine derives the other 119 --dsw-* alias tokens from six colour inputs per appearance, Alt+K switches skins, and the choice is remembered in localStorage.'
+  zh: '三套乐山照片皮肤：三江夜、凌云晚照、峨眉夜雾。照片同时铺在窗口和对话画布上，按明暗外观压罩层；每套皮肤由 6 个输入色推导全部 119 个 --dsw-* 别名 token，Alt+K 轮换皮肤，选择记在浏览器本地。'
+icon: https://raw.githubusercontent.com/John-20260101/dsh-theme-leshan/main/assets/icon-180.png
+tarball: https://github.com/John-20260101/dsh-theme-leshan/releases/latest/download/dsh-theme-leshan.tgz

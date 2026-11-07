@@ -1,0 +1,7 @@
+url: https://github.com/aawef/dsh-time-watchdog
+name: aawef/dsh-time-watchdog
+category: notify
+description:
+  en: 'Turn timer for DSH: reports how long the current turn has been running, injects wrap-up prompts on a /set-time schedule so the agent starts finishing instead of running on, and shows run-time cards above the composer.'
+  zh: 'DSH 本轮计时看门狗：读取本轮已运行时长，按 /set-time 排程向模型注入收尾提示词，并在输入框上方显示运行时长卡片。'
+tarball: https://github.com/aawef/dsh-time-watchdog/releases/latest/download/dsh-time-watchdog.tgz

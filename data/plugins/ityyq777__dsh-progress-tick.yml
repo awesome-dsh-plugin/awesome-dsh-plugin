@@ -1,0 +1,6 @@
+url: https://github.com/ityyq777/dsh-progress-tick
+name: ityyq777/dsh-progress-tick
+category: notify
+description:
+  en: Nudges the main agent of a long-running DSH session to report progress at a configurable interval, with exponential back-off, stuck detection, a per-session Progress tab, and a manual "nudge now" action.
+  zh: 主 agent 长时间执行时按可配置间隔提醒它播报进度，支持指数退避、卡住检测、会话「进度」标签页与手动「立即催一次」。

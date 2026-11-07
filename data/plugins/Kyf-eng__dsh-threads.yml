@@ -1,0 +1,6 @@
+url: https://github.com/Kyf-eng/dsh-threads
+name: Kyf-eng/dsh-threads
+category: session
+description:
+  en: "Claude-style projects and threads: a project's main conversation opens threads (real sessions you can open and talk to) for self-contained tasks, runs up to 3 at once by default, optionally each in its own git worktree, and gets each thread's report back."
+  zh: "Claude 式的项目与讨论串：项目主对话为能独立完成的任务开讨论串（可以点开直接对话的真实会话），默认最多 3 个同时运行，可各自在独立的 git worktree 里工作，做完把回报发回主对话。"

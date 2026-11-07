@@ -1,0 +1,6 @@
+url: https://github.com/xiaohai-78/dsh-request-params
+name: xiaohai-78/dsh-request-params
+category: model
+description:
+  en: 'Add your own parameters to the model requests dsh sends: OpenRouter provider routing and fallback models, reasoning, sampling and custom body fields, and headers, for OpenRouter or any other gateway. Parameters are organized by the channels dsh already has; a live preview shows what each request will carry, and a request log shows what was sent and what the gateway answered.'
+  zh: '给 dsh 发出的模型请求加上自己的参数：OpenRouter 供应商路由和备用模型、思考强度、采样参数与自定义请求体字段、请求头，OpenRouter 和其他网关都能用。参数按 dsh 已配置的渠道管理；实时预览显示每个请求会多出什么，请求记录显示实际发出了什么、网关回了什么。'

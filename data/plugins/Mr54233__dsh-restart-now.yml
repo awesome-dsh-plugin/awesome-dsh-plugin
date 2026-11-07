@@ -2,5 +2,5 @@ url: https://github.com/Mr54233/dsh-restart-now
 name: Mr54233/dsh-restart-now
 category: dev
 description:
-  en: 'One-click full-app restart for the DSH desktop client: a sidebar footer button and a settings section with a live config form (master switch, confirm dialog, delay, target executable). Restart is performed by a detached helper that survives the process-tree kill, then respawns DeepSeek Harness.exe; requests are fenced to loopback same-origin.'
-  zh: 'DSH 桌面版一键完整重启：侧边栏底部按钮 + 设置页配置表单（总开关、二次确认、延时、目标程序路径）。重启由脱离进程树的独立助手执行——先杀进程树再自动拉起 DeepSeek Harness.exe；动作请求仅限本机同源。'
+  en: 'One-click restart for the DSH desktop client, from five entries you can toggle individually: a sidebar panel, the sidebar footer, the conversation header, a Settings → General row, or the /restart slash command. The app is closed gracefully (only the main process is signalled, so the host can flush session logs) and relaunched by a detached helper that survives the shutdown; optional guards wait for running tasks or an in-progress plugin install, results land in a receipt, requests are fenced to loopback same-origin, and every switch is persisted in the profile config file. Only the four UI entries can be switched off; the slash command is always available.'
+  zh: 'DSH 桌面版一键重启，五个入口可逐项开关：侧栏面板、侧栏底部、会话标题栏、设置 → 通用行、斜杠命令 /restart。只给主进程发关闭信号让宿主优雅退出（会话日志得以下盘），再由脱离进程树的助手自动拉起；可选守卫会等待进行中的任务或插件安装结束，重启结果写成回执，动作请求仅限本机同源，所有开关落 profile 配置文件。四个界面入口可单独关闭，斜杠命令始终可用。'

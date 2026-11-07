@@ -1,0 +1,6 @@
+url: https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-session-move
+name: kialajin-l/DSH_Plus#dsh-session-move
+category: session
+description:
+  en: "Moves DSH sessions between workspaces with validation of live/subagent/offline states and automatic backups of every move under ~/.dsh/session-move-backups/."
+  zh: "在工作区之间安全移动会话：移动前校验运行中/子代理/离线状态，每次移动自动备份到 ~/.dsh/session-move-backups/。"

@@ -1,0 +1,7 @@
+url: https://github.com/whitequeen306/dsh-logistics
+name: whitequeen306/dsh-logistics
+category: dev
+description:
+  en: 'Whole-project code review for DeepSeek Harness: five specialist reviewers, one severity-ordered report, a module/finding relation graph, and progress, ETA and cancellation for long runs.'
+  zh: '为 DeepSeek Harness 提供全项目审查：五位专家、按严重度排列的总报告、模块/问题关系图，以及长任务的进度、ETA 和取消。'
+icon: https://raw.githubusercontent.com/whitequeen306/dsh-logistics/main/assets/icon-512.png

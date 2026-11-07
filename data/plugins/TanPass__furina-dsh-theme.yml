@@ -1,0 +1,8 @@
+url: https://github.com/TanPass/furina-dsh-theme
+name: TanPass/furina-dsh-theme
+category: theme
+description:
+  en: "Furina (Genshin Impact) theme with three palettes, switchable wallpapers and an in-Settings theme page."
+  zh: 《原神》芙宁娜主题，三套配色、可切换壁纸，并在设置页内管理。
+icon: https://raw.githubusercontent.com/TanPass/furina-dsh-theme/main/assets/icon-180.png
+tarball: https://github.com/TanPass/furina-dsh-theme/releases/download/v1.2.3/furina-dsh-theme-1.2.3.tgz

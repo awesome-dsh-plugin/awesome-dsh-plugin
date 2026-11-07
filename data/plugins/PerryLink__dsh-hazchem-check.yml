@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-hazchem-check
+name: PerryLink/dsh-hazchem-check
+category: tools
+description:
+  en: "Checks a hazardous-chemical register for internal consistency: that each substance names its hazard class, that stored quantities parse, that a threshold is recorded, that the major-hazard-source verdict agrees with how the stored quantity compares to the threshold the register states, that safety data sheet numbers are present and CAS numbers are not duplicated. Reports differences for a human to review; it does not decide whether a unit constitutes a major hazard source."
+  zh: "核对危险化学品台账的内部自洽性：每种物质是否载明危险性类别、储存量能否解析、是否记录临界量、重大危险源判定与该储存量相对台账自述临界量的关系是否一致、是否载明安全技术说明书编号、CAS 号是否重复。只列出差异供人复核，不判定某单元是否构成重大危险源。"

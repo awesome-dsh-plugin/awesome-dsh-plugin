@@ -1,0 +1,6 @@
+url: https://github.com/drliuhuan/dsh-plugin-zoom
+name: drliuhuan/dsh-plugin-zoom
+category: ui
+description:
+  en: Manually zoom the Harness Web UI from 75% to 200% via a Settings row, Ctrl+wheel, or a Session-header control, keeping text crisp and readable on high-DPI displays.
+  zh: 在高 DPI 显示器上手动缩放 Harness Web UI（75%–200%）：设置行、Ctrl+滚轮与会话标题栏控件三种入口，让文字更清晰易读。

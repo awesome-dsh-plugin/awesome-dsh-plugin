@@ -1,6 +1,6 @@
 url: https://github.com/Len7183/DSH-Think-zh
 name: Len7183/DSH-Think-zh
-category: ui
+category: identity
 description:
-  en: 'Thinking-language control for DeepSeek Harness: two presets — Default English, which only makes replies follow the language of the question, and Simplified Chinese, which also pins thinking to Chinese — injected as a system-prompt section rendered first via a minimal order plus an assemble-pipeline reorder guard against plugins joining earlier or with smaller orders, with an optional per-turn user-message prepend carrying an idempotency marker; switched from the Settings → General page and applies live on hosts with schemastery >= 3.18.3.'
-  zh: '思考语言两档可控：默认英文档只让回复跟随提问语言，简体中文档同时锁定思考语言；指令以极小 order 注入 system prompt 并经 assemble 瀑布重排兜底置顶，防其他插件以更小 order 插队；可选开启每轮用户消息前置（带幂等标记）；在「设置 → 通用设置」切换档位，schemastery >= 3.18.3 的宿主上即时生效。'
+  en: 'Pins the model''s reasoning language to a tier picked in Settings - General - Thinking language (Simplified Chinese, or a default tier that only constrains replies and leaves reasoning to the model), by injecting a system-prompt section at order -1000000 and re-hoisting it to first place at the end of the assemble waterfall, plus an optional per-turn copy placed ahead of each user message for models that follow static sections weakly.'
+  zh: '把模型思考语言锁定为「设置 → 通用设置 → 思考语言」里选定的档位（简体中文，或只约束回复、把思考交还模型的默认英文），实现方式是以 order -1000000 注入 system prompt section，并在 assemble 瀑布末端把它重排到首位兜底；另可开启每轮前置同一指令的用户消息通道，用于对静态 section 服从弱的模型。'

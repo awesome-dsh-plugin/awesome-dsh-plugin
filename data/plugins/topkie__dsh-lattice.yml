@@ -1,0 +1,6 @@
+url: https://github.com/topkie/dsh-lattice
+name: topkie/dsh-lattice
+category: memory
+description:
+  en: 'Local memory for DeepSeek Harness: what you write is filed under a topic and linked to related entries, recall ranks results by embedding similarity (word matching when no model is installed), and the data stays in a local SQLite database.'
+  zh: 'DeepSeek Harness 的本地记忆插件：写下的内容按主题归档、与相关条目连边，召回按向量相似度排序（没装模型时退回词面匹配），数据存在本地 SQLite 库里。'

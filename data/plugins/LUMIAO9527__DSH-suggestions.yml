@@ -1,0 +1,7 @@
+url: https://github.com/LUMIAO9527/DSH-suggestions
+name: LUMIAO9527/DSH-suggestions
+category: ui
+description:
+  en: 'Context-based next-message suggestions and draft rewriting for DeepSeek Harness, with candidate paging, shortcut recording, and companion MCP tools.'
+  zh: '根据会话生成下一条消息建议并优化草稿，支持候选翻页、快捷键录制和配套 MCP 工具。'
+tarball: https://github.com/LUMIAO9527/DSH-suggestions/releases/latest/download/dsh-suggestions.tgz

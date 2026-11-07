@@ -1,0 +1,6 @@
+url: https://github.com/greatyao/dsh-connect-cursor
+name: greatyao/dsh-connect-cursor
+category: model
+description:
+  en: Connects a locally-signed-in Cursor desktop app to dsh as a native LlmAdapter — reads the Cursor login token from state.vscdb or auth.json, drives the private agent.v1.AgentService/Run HTTP/2 bidi stream, and translates InteractionUpdate deltas into dsh StreamChunks. No loopback proxy. macOS, Windows and Linux.
+  zh: 把本机已登录的 Cursor 桌面应用接入 dsh，原生 LlmAdapter 直连：从 state.vscdb 或 auth.json 读登录态，驱动 agent.v1.AgentService/Run 的 HTTP/2 双向流，把 InteractionUpdate 增量翻成 dsh StreamChunk，不走 loopback 代理。支持 macOS / Windows / Linux。

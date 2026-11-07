@@ -1,0 +1,6 @@
+url: https://github.com/taotao7/dsh-pretty-cool
+name: taotao7/dsh-pretty-cool
+category: ui
+description:
+  en: Compact interface with borderless messages, a light queue, composer controls, and adjustable corners. Built for DSH 0.2.1-rc.2 only; while enabled it replaces the stock sidebar module, and removing it restores the original.
+  zh: 紧凑界面：无边框消息、轻量队列、输入区控制，以及可调圆角。仅适配 DSH 0.2.1-rc.2；启用期间会替换官方侧栏模块，移除后恢复原样。

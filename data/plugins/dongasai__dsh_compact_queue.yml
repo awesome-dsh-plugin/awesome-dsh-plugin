@@ -1,0 +1,6 @@
+url: https://github.com/dongasai/dsh_compact_queue
+name: dongasai/dsh_compact_queue
+category: session
+description:
+  en: 'Registers /compact_queue, a compaction command that does not drop the request when the session is busy: it compacts immediately when idle, otherwise queues the request in that session and runs it at the session''s next idle window, with a 2-second fallback tick beside the agent status event so the trigger is not missed, a 30-minute wait cap, and /compact_queue cancel to withdraw a queued request or abort a running one. Each session keeps its own queue state from a single command registration, completion and failure arrive as a collapsed notice that does not wake the model, and every ManualCompactionError code except busy is terminal so a failure is not retried. Host half only; the core /compact command is left untouched.'
+  zh: '注册 /compact_queue：会话忙时也不丢弃请求的压缩命令——空闲就立刻压缩，忙时把请求排进本会话队列，等这个会话下一次空闲自动补跑；agent 状态事件之外再挂一条 2 秒兜底 tick，避免漏触发，排队最长等 30 分钟，排队中或执行中都可以用 /compact_queue cancel 撤销。命令只注册一次，每个会话各自一份排队状态，完成与失败以折叠 notice 注入、不唤醒模型；ManualCompactionError 除 busy 外一律视为终态、不再重试。只有 Host 半边，核心 /compact 不改。'

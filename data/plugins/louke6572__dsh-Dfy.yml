@@ -1,0 +1,7 @@
+url: https://github.com/louke6572/dsh-Dfy
+name: louke6572/dsh-Dfy
+category: fun
+description:
+  en: "All-in-one companion for the DSH web GUI: a balance whale widget with today's usage, per-turn cost and peak/off-peak pricing, an editable bubble queue and sound effects; a 106-clip transparent desktop pet with spring drag, throw, screen roaming and clones; a QQ message card bridged through SnowLuma for reading history and replying; Bilibili dynamics and comment interaction with a fish guard and a day/night schedule; and local, redacted two-way memory. One plugin; data stays on the machine. Runs on Windows 10/11 only."
+  zh: 一体化的 DSH 桌面伴侣：小鲸鱼余额挂件（今日已用、每轮消耗、峰谷价、可编辑泡泡队列与音效）、106 段透明动画桌宠（弹簧拖拽、甩抛、屏幕漫游、分身）、经 SnowLuma 桥接的 QQ 消息卡（查看历史与回复）、B站动态与评论互动（鱼群保护、昼夜作息），以及本机双向脱敏记忆。单个插件，数据只存本机。仅支持 Windows 10/11。
+icon: https://raw.githubusercontent.com/louke6572/dsh-Dfy/main/icon.png

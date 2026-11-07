@@ -1,0 +1,6 @@
+url: https://github.com/Ayowait/dsh-reasoning-effort-new
+name: Ayowait/dsh-reasoning-effort-new
+category: model
+description:
+  en: 'Fork of dsh-reasoning-effort with a two-level model picker in the composer: a provider list, a model pane that slides out beside it, search, and compact rows, alongside the reasoning-effort slider and its max-level effects.'
+  zh: 'dsh-reasoning-effort 的分支：输入框里的两级模型选择器（Provider 列表 + 右侧滑出的模型栏）、搜索与紧凑行，并保留推理强度滑块与最高档特效。'

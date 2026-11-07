@@ -1,0 +1,7 @@
+url: https://github.com/zhezhi33/dsh-session-recycler
+name: zhezhi33/dsh-session-recycler
+category: session
+description:
+  en: 'Two-stage session deletion for DSH on Windows: move a conversation to the recycle bin and restore it to its original sidebar slot; deletion confirmed in two steps to prevent deleting files by mistake, clearing the whole subagent tree, sidebar ledger, projection cache, log lines and exclusive attachments along the way. It also scans the files a conversation actually wrote, adds a file query that pastes the path information into the conversation so an agent can judge which files are safe to delete, highlights them in Explorer, and copies the paths grouped by type. Both this and iamwuzhanglin/dsh-session-recycler install under the package name dsh-session-recycler, so install only one of them.'
+  zh: 面向 Windows 的 DSH 会话两段式删除：对话移入回收站、可恢复回侧栏原位置；两段确认式删除，防止误删文件，连带整条子代理树、侧栏账本、投影缓存、日志与专属附件。同时能扫出一条对话真正写过的文件，增加文件查询功能，点击后将路径信息粘贴到对话中，通过Agent来判断哪些文件可以删除；在资源管理器中多选高亮，并复制按类型分好的路径。本插件与 iamwuzhanglin/dsh-session-recycler 安装后的包名同为 dsh-session-recycler，请只装其中一个。
+tarball: https://github.com/zhezhi33/dsh-session-recycler/releases/download/v0.2.4/dsh-session-recycler-0.2.4.tgz
