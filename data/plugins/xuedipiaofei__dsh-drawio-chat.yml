@@ -1,0 +1,7 @@
+url: https://github.com/xuedipiaofei/dsh-drawio-chat
+name: xuedipiaofei/dsh-drawio-chat
+category: tools
+description:
+  en: "Chat-first draw.io plugin: the agent creates, reads and edits native .drawio files, an interactive draw.io viewer renders them in the transcript, and the diagrams live under the workspace's diagrams/ directory. No draw.io account, no npx MCP server, no local editor install."
+  zh: "聊天内联的 draw.io 图表：模型创建、读取和修改原生 .drawio 文件，聊天里直接渲染可交互的 draw.io 视图，图保存在工作区 diagrams/ 目录。不登录 draw.io、不需要 npx MCP server、不用装本地编辑器。"
+icon: https://raw.githubusercontent.com/xuedipiaofei/dsh-drawio-chat/main/assets/icon-512.png
