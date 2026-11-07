@@ -1,0 +1,6 @@
+url: https://github.com/yhPrime/dsh-session-delete
+name: yhPrime/dsh-session-delete
+category: session
+description:
+  en: Add a delete button to the session header that archives the session after a confirmation dialog.
+  zh: 在会话头部加一个删除按钮，二次确认后归档并移除该会话。
