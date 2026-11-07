@@ -1,0 +1,6 @@
+url: https://github.com/ChenXu233/dsh-agent-teams
+name: ChenXu233/dsh-agent-teams
+category: workflow
+description:
+  en: 'AgentTeams for DeepSeek Harness — an independent design branch of NanmiCoder/dsh-agent-teams; do not install both, since both register the same `agent-teams` row. Multi-agent team collaboration with a captain and members, tasks that carry dependencies, and messaging, all driven by natural language, plus a tree monitor in the web GUI.'
+  zh: 'DeepSeek Harness 的 AgentTeams 多智能体团队协作插件，NanmiCoder/dsh-agent-teams 的独立设计分支；不要与上游同装：两者注册同一个 `agent-teams` 行。提供队长与成员、带依赖的任务与消息传递，全部由自然语言驱动，Web 界面提供树状实时监视。'

@@ -1,0 +1,6 @@
+url: https://github.com/pravets/dsh-edt-projects/tree/master/packages/dsh-edt-projects
+name: pravets/dsh-edt-projects#dsh-edt-projects
+category: tools
+description:
+  en: 'MCP hub for 1C development: keeps 1C:EDT connected through EDT-MCP, starts BSL Language Server with workspace roots on demand, and adds per-project settings, a read-only documentation wiki, model rules and SonarQube/GitLab skills. Requires 1C:EDT 2026.1/2026.2 with EDT-MCP running (default 127.0.0.1:8765).'
+  zh: 面向 1C 开发的 MCP 枢纽：通过 EDT-MCP 保持 1C:EDT 连接，按需以工作区根目录启动 BSL Language Server，并提供逐项目设置、只读文档 wiki、模型规则以及 SonarQube/GitLab 技能。需安装 1C:EDT 2026.1/2026.2 并运行 EDT-MCP（默认 127.0.0.1:8765）。
