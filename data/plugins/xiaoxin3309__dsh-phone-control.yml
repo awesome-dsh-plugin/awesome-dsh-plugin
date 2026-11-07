@@ -1,0 +1,7 @@
+url: https://github.com/xiaoxin3309/dsh-phone-control
+name: xiaoxin3309/dsh-phone-control
+category: remote
+icon: https://raw.githubusercontent.com/xiaoxin3309/dsh-phone-control/main/assets/icon-180.png
+description:
+  en: 'Control a paired Android phone from DeepSeek Harness: read the accessibility node tree, tap by text, type into fields, take screenshots, launch apps, and read or write files over an encrypted WebSocket. Pairing is a settings section in DSH (8-digit code or a QR code, with the listening port, the phone-side permission switches and a locked-down default that refuses to drive the phone-bridge app itself).'
+  zh: 从 DeepSeek Harness 控制已配对的 Android 手机：读取无障碍节点树、按文字点击、输入文字、截图、启动应用，还能读写手机上的文件；连接走加密 WebSocket。配对整个在 DSH 的设置页里完成（8 位配对码或扫二维码，可改监听端口、控制手机端权限开关，并默认禁止远程操作手机桥自身的界面）。
