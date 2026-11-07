@@ -1,0 +1,7 @@
+url: https://github.com/dddaniel1/dsh-ref-autofill
+name: dddaniel1/dsh-ref-autofill
+category: ui
+description:
+  en: 'Reference-image picker for the DSH web composer: browse face, costume and pose libraries, then insert high-resolution images and a generated prompt into the current draft in one click.'
+  zh: 'DSH 网页版参考图选择器：浏览脸 / 服装 / 姿势三个参考库，把高清参考图与自动生成的提示词一键填入当前对话草稿。'
+tarball: https://github.com/dddaniel1/dsh-ref-autofill/releases/download/v1.0.0/dsh-ref-autofill-1.0.0.tgz
