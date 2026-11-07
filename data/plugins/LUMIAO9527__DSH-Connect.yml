@@ -1,0 +1,6 @@
+url: https://github.com/LUMIAO9527/DSH-Connect
+name: LUMIAO9527/DSH-Connect
+category: remote
+description:
+  en: 'Open the full DeepSeek Harness running on your computer from a phone browser, with QR pairing over LAN HTTPS, cross-network relay, and shared sessions and workspace.'
+  zh: '在手机浏览器中打开电脑上运行的完整 DeepSeek Harness，支持局域网 HTTPS 扫码配对、跨网中继，会话与工作区共用。'
