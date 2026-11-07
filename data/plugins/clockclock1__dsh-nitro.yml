@@ -1,7 +1,7 @@
 url: https://github.com/clockclock1/dsh-nitro
 name: clockclock1/dsh-nitro
 category: tools
-tarball: https://github.com/clockclock1/dsh-nitro/releases/download/v1.0.5/dsh-nitro-1.0.5.tgz
+tarball: https://github.com/clockclock1/dsh-nitro/releases/download/v1.0.6/dsh-nitro-1.0.6.tgz
 icon: https://raw.githubusercontent.com/clockclock1/dsh-nitro/master/icon.png
 description:
   en: "Per-session fast-delivery mode toggled from the composer. Each conversation has its own switch and new conversations start enabled; switching is refused while that conversation is running. One switch drives three subsystems: a circuit breaker that short-circuits test and build commands instead of running them, an apply_patch tool that writes SEARCH/REPLACE hunks atomically (all anchors must match or nothing is written), and a dehydrator that trims terminal output to a pass line or the last 15 error lines."
