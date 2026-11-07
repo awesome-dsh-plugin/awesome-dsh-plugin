@@ -1,0 +1,8 @@
+url: https://github.com/Yaohua-Leo/dsh-latex
+name: Yaohua-Leo/dsh-latex
+category: docs
+tarball: https://github.com/Yaohua-Leo/dsh-latex/releases/latest/download/dsh-latex.tgz
+icon: https://raw.githubusercontent.com/Yaohua-Leo/dsh-latex/main/assets/icon-180.png
+description:
+  en: 'LaTeX workspace for DeepSeek Harness: opening a .tex file shows a line-numbered editor in the right sidebar, saving writes the source and builds it with the local TeX Live latexmk, and an open PDF preview refreshes in place. Includes structured file:line diagnostics, SyncTeX, last-good preview retention and seven agent tools.'
+  zh: 'DeepSeek Harness 的 LaTeX 工作台：打开 .tex 即在右侧栏显示带行号的编辑器，保存时写回源码并用本机 TeX Live latexmk 编译，已打开的 PDF 预览原地刷新。包含结构化 file:line 诊断、SyncTeX、失败保留上一版预览，以及 7 个 Agent 工具。'
