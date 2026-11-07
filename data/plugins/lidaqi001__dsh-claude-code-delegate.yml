@@ -1,0 +1,7 @@
+url: https://github.com/lidaqi001/dsh-claude-code-delegate
+name: lidaqi001/dsh-claude-code-delegate
+category: workflow
+description:
+  en: "Agent preset that hands every task to a Claude Code subagent, so the session only writes the task brief, delegates and reports the result."
+  zh: "一个 Agent 预设：把每个任务都交给 Claude Code 子代理执行，会话只负责写任务说明、委派与汇报结果。"
+icon: https://raw.githubusercontent.com/lidaqi001/dsh-claude-code-delegate/main/assets/icon-180.png
