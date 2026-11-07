@@ -2,5 +2,5 @@ url: https://github.com/narkco-kang/dsh-team-workbench
 name: narkco-kang/dsh-team-workbench
 category: ui
 description:
-  en: 'A DS-Bot-style chat workbench for a named agent team: each member has its own model routes and a 3D mascot avatar, private chats and group rooms with mention relay and bounded parallelism, whole-department agents whose sub-agents run in parallel before the lead synthesizes, plus record search with highlight and time buckets, layered memory, local/cloud speech input and an avatar library.'
-  zh: '把一支具名智能体团队做成聊天工作台：成员各有模型路由与 3D 头像，支持私聊、群聊（点名接力、受限并行）；整个部门可以是一个智能体，内部子智能体并行执行后由主管汇总；另有带高亮与时间分组的记录检索、分层记忆、本地/云端语音输入与头像素材库。'
+  en: 'A named-agent-team chat workbench for DSH: per-member model routes with fallback and 3D mascot avatars; private and group chats with mention relay and bounded parallel lanes; a whole department as one agent whose lead dispatches sub-agents that run in parallel on their own models before the lead synthesizes; record search with hit highlighting and 今天/昨天/更早 buckets; a four-layer memory system (raw chats → atomic facts → scene summary → user persona) recalled by hybrid BM25 + embedding RRF; plus an avatar library and local/cloud speech input.'
+  zh: '把一支具名智能体团队做成聊天工作台：成员各有可回退的模型路由与 3D 头像；私聊/群聊支持点名接力与受限并行；整个部门可以是一个智能体，主管分派子智能体并行执行后汇总；记录检索带命中高亮与今天/昨天/更早分组；四层记忆（原始会话 → 原子事实 → 场景摘要 → 用户画像）用 BM25 + 向量 RRF 混合召回；另有头像素材库与本地/云端语音输入。'
