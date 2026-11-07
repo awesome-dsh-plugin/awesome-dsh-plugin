@@ -1,0 +1,7 @@
+url: https://github.com/fffgfffff/cike-taskboard
+name: fffgfffff/cike-taskboard
+category: tools
+description:
+  en: 'Local-first task scheduler for DSH. Schedules today''s tasks from the current time, splits long tasks around lunch, highlights the current task live, reminds at task start and before the next task, and adds a 7-day calendar plus an exportable virtual timeline.'
+  zh: 'DSH 本地任务排程：今天的自动任务从当前时间开始排，长任务自动绕午休分段，实时高亮当前任务；任务开始和下个任务前弹窗提醒；支持未来 7 天日历与可导出/导入的虚拟时间轴。'
+icon: https://raw.githubusercontent.com/fffgfffff/cike-taskboard/main/docs/icon-180.png
