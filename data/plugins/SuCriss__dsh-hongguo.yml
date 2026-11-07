@@ -1,0 +1,6 @@
+url: https://github.com/SuCriss/dsh-hongguo
+name: SuCriss/dsh-hongguo
+category: fun
+description:
+  en: 'Short-drama player in the right sidebar: four hot lists, ~2400 series across four categories, and search, with every episode playable in the right column. Resume from watch history, auto-play the next episode, and keep the conversation untouched while it runs. The Host decrypts the CENC-encrypted HEVC stream itself, so no ffmpeg and no external page is involved.'
+  zh: '左侧栏入口 + 右侧栏短剧播放器：四大热播榜、四类共约 2400 部、搜索，全部集数都能在右栏直接播放。带观看历史续播、播完自动连播，对话区全程不受影响。Host 侧自行解密 CENC 加密的 HEVC 流，不依赖 ffmpeg，也不打开外部网页。'
