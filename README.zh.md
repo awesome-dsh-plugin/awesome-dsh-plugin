@@ -2137,6 +2137,7 @@ dsh plugin --profile web add dshmarket
 - [HaoyueQin/dsh-deepseek-monitor](https://github.com/HaoyueQin/dsh-deepseek-monitor) — 在官方供应商卡片内实时监控 DeepSeek 余额与开放平台用量——输入框工具行模型名称左侧的余额 chip，可展开的账户明细面板含按模型用量与每日堆叠图表。
 - [HaoyueQin/dsh-usage-statistics-panel](https://github.com/HaoyueQin/dsh-usage-statistics-panel) — 用量统计设置面板：26 周活跃热力图、按日 Token 趋势与缓存命中率曲线、模型用量环形图与明细、时间范围筛选、汇总卡片，支持历史会话回扫与无损重建。
 - [haozheou/dsh-discipline-guard](https://github.com/haozheou/dsh-discipline-guard) — DSH Agent 纪律卫士：在 harness 边界强制四道闸门（循环熔断、Token 成本熔断、路由切换警示、计划审批卡），模型无法用文字绕过；🛡 芯片一键解除，daily 档对有缓存路由零打扰，把无缓存失控从每回合数百万 token 封顶到约 50 万。
+- [HATO-24/dsh-offpeak-guard](https://github.com/HATO-24/dsh-offpeak-guard) — 峰时自动暂停正在运行的 DeepSeek 任务，谷价开始后自动恢复继续；识别时段与模型，并提供错峰规划队列与左栏倒计时。
 - [hb-degithub/dsh-usage-guard](https://github.com/hb-degithub/dsh-usage-guard) — Web GUI 与桌面端的用量统计面板：静默按模型采集 token、活跃热力图、趋势图、费用估算与每日超限守卫。
 - [hbgdjb/dsh-mimo-quota](https://github.com/hbgdjb/dsh-mimo-quota) — MIMO Quota Panel —— DeepSeek Harness 的模型额度面板。装上即用，零配置：从会话事件日志逐调用自动记账（真实时间戳、全历史、实时增量），一屏展示 Token 用量、消费金额、请求次数、趋势波形、模型构成，支持按模型 / 粒度 / 时间范围 / 项目·对话 统计切换。内置可编辑定价，DeepSeek 峰谷价按记录时间自动套算，小米全系牌价开箱即用。
 - [HellGodX/dsh-ark-usage](https://github.com/HellGodX/dsh-ark-usage) — 火山方舟 Coding Plan 用量挂件：右下角一只可拖动的小鲸鱼，点开看 5 小时 / 周 / 月三档请求配额，再往下是本机 token 折算的今日、近 7 天、本月与累计花费。需要先安装并登录火山方舟 CLI：npm i -g @volcengine/ark-cli，然后 arkcli auth login。
@@ -9193,6 +9194,7 @@ dsh plugin --profile web add dshmarket
 - [ChenWeiqi12345/dsh-deepy-pet](https://github.com/ChenWeiqi12345/dsh-deepy-pet) — 趴在 DSH 输入框上沿的双眼宝蓝色像素小鲸鱼，表情跟随智能体实时状态，打字时会停下来注视，空闲时每 30 秒横穿输入框巡游一次。
 - [chenyuan1251/dsh-pet-niumali](https://github.com/chenyuan1251/dsh-pet-niumali) — 浮动在 DSH 界面上的桌宠，点开是打卡、专注计时与生活手帐。
 - [chinosk6/dsh-roleplay](https://github.com/chinosk6/dsh-roleplay) — 角色扮演插件：支持角色卡对话、在对话中创作与编辑角色卡，可接入生图后端生成插图。
+- [chow651/dsh-hackertube](https://github.com/chow651/dsh-hackertube) — 在 DSH 面板里浏览并播放 Hacker News 二十年推荐的 6454 个技术视频，带播放器、每个视频背后的 HN 讨论、基于字幕的 AI 问答，以及随包发布的 6454 条中文标题。
 - [CHristianREEVEE/dsh-xiuxian-world](https://github.com/CHristianREEVEE/dsh-xiuxian-world) — 修仙世界插件。agent 通过 16 个 xiuxian_* 工具创角修行：修炼、游历 22 处地点、探索 8 座秘境、与 4 位内置修士传音；收工时导出自包含 HTML 回放与 Markdown 修炼日记，全程离线零服务器。
 - [chy1021653908/want-to-type](https://github.com/chy1021653908/want-to-type) — 为 DSH 打字过程添加主题特效、萌宠或蓝鲸陪伴、连击动画、全屏光晕与可选打字音效。
 - [cipher2026/dsh-idle-deepcompute](https://github.com/cipher2026/dsh-idle-deepcompute) — 终端风 AI 实验室挂机游戏：攒算力、训练升级模型、发论文，一路转生到 AGI/ASI。
