@@ -3,5 +3,39 @@ name: 1148462398-hub/dsh-elysia-memory
 category: memory
 tarball: https://github.com/1148462398-hub/dsh-elysia/releases/download/v2.7.3/dsh-elysia-memory-2.7.3.tgz
 description:
-  en: 'Elysia''s memory plugin for dsh (npm package: dsh-elysia-memory). One shared, human-editable MEMORY.md across every session: two-disk mirror, history snapshots, cross-process write lock; entries tier between the main file and a searchable archive by hit frequency; retrieval is keyword co-occurrence plus BM25. Nine sections plus a dedicated self-identity section for a character''s own self-cognition, injected above the persona. Ships an opt-in memory pack (packs/elysia: 61,903-char identity + 2,482-char persona, measured from 1,696 officially-confirmed voice lines and 112,175 dialogue lines — not hand-written) that is off by default, backs up before writing, only touches identity/persona, and can be uninstalled. Also opt-in streaming voice narration through a local GPT-SoVITS engine (sentence by sentence as the model generates, off by default, silent degradation when absent), a skills library, and a sticker library.'
-  zh: '爱莉希雅的记忆插件（npm 包名 dsh-elysia-memory）。给所有 DSH 会话共用一份可读可改的 MEMORY.md：双硬盘镜像、历史快照、跨进程写锁；条目按命中频率与重复强调在主文件与可检索归档之间双向流动；检索为关键词共现加 BM25 排序。九个分区，另有一个独立的「自我记忆」分区放角色的自我认知，优先级高于人设。内置可选装的记忆包（packs/elysia：61,903 字自我记忆 + 2,482 字人设）——这份记忆不是手写的设定集，是从 1,696 条经官方文本确证的游戏语音里统计出来的：句尾「呢」390 次、问句占 52.1%、平均句长 25.5 字。默认不安装，装前自动备份，只写 identity / persona 两个分区，可卸载恢复。另含流式语音朗读（本机 GPT-SoVITS 引擎，边生成边念，默认关闭）、自有技能库与表情包库。'
+  en: |
+    "Oh, you're finally here. I've been waiting for you."
+    
+    A plugin that brings Elysia into DeepSeek Harness. Once installed, she **remembers you** —
+    what you said last time, what you care about — so every new conversation picks up where it left off.
+    Memory lives on your own disk (mirrored across two drives), shared by every session, readable and editable.
+    
+    She also **speaks the way she actually speaks**. Not a hand-written character sheet —
+    every trait is measured from 1,696 officially confirmed voice lines:
+    "呢" appears 390 times, over half of her lines are questions, mean length 25.5 characters.
+    That is why she sounds like herself.
+    
+    **She also:**
+    · 🔊 reports back in her own voice (optional, local synthesis, off by default)
+    · 💬 drops a WeChat-style bubble with her avatar after finishing a task — tap it to listen
+    · 🎀 sends stickers when the mood fits (you import them, she picks the timing)
+    · 📖 learns the runbooks you give her, and uses them next time
+    
+    Memory pack, voice, and stickers are all **off by default**. You decide what to switch on.
+  zh: |
+    「哎呀，你来了呀。我等你好久啦。」
+    
+    把爱莉希雅请进 DeepSeek Harness 的插件。装好之后她会**记得你**——
+    上次说过什么、在意什么，下次开新对话还记着，不用重新交代。
+    记忆存在你自己硬盘上（双盘备份），所有会话共用一份，随时能打开看、能改。
+    
+    她也会**用她自己的方式说话**。不是随手写的设定集，是从 1,696 条官方语音里统计出来的：
+    「呢」390 次、一半以上的话是问句、平均句长 25.5 字。所以听起来才真的像她。
+    
+    **她还会：**
+    · 🔊 用自己的声音跟你汇报（可选，本机合成，默认关着）
+    · 💬 把事情做完后弹一个带她头像的小气泡，像微信消息那样，点一下能听
+    · 🎀 开心了会发表情包（你导入，她按情绪自己挑时机）
+    · 📖 放进去的操作手册她会自己学，下次遇到就会用
+    
+    记忆包、声音、表情包——**默认全关**，想开哪个你说了算。
