@@ -1,0 +1,8 @@
+url: https://github.com/ifer47/dsh-theme-shelter
+name: ifer47/dsh-theme-shelter
+category: theme
+icon: https://raw.githubusercontent.com/ifer47/dsh-theme-shelter/main/assets/logo.png
+tarball: https://github.com/ifer47/dsh-theme-shelter/releases/download/v0.3.1/dsh-theme-shelter-0.3.1.tgz
+description:
+  en: "Immersive weather theme for DeepSeek Harness: physical rain with splashes and ripples, snow in two crystal habits, a hearth, lightning with distance-coded thunder, a night mode, and a compact control panel."
+  zh: "给 DeepSeek Harness 的沉浸式天气主题：按物理计算的雨与飞溅水花、两种晶型的雪、炉火，以及分叉闪电与按距离延迟的雷声、夜间模式和一个紧凑控制面板。"
