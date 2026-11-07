@@ -576,6 +576,7 @@ dsh plugin --profile web add dshmarket
 - [du-u-uck/DSH-Prompt-Optimization](https://github.com/du-u-uck/DSH-Prompt-Optimization) — 在 DSH 输入框旁添加一键提示词优化按钮，支持撤回，并可在设置中单独指定优化模型。
 - [duanyunlun/dsh-session-actions](https://github.com/duanyunlun/dsh-session-actions) — 侧边栏会话操作：右键打开行菜单、双击重命名、复制会话 ID，以及二次确认后连同存储一起删除会话。
 - [Duanyy0813/dsh-prompt-clarifier](https://github.com/Duanyy0813/dsh-prompt-clarifier) — 在 DSH 输入框添加「提示词优化」按钮；开启自动模式后，在助手开始执行前先用旁路模型结合最近会话上下文改写提示词，无法确定改写方式时先用原生提问卡片确认，各阶段以命令卡片在主对话中播报，分析失败时按原文继续。
+- [dungcsnd1133/dsh-dl-brand](https://github.com/dungcsnd1133/dsh-dl-brand) — 用自定义图标替换侧边栏品牌标识，并注册一套越南语语言包，覆盖 45 个命名空间、1897 条界面文案，未翻译处回退英文。
 - [dustcpu/dsh-geometric-splash](https://github.com/dustcpu/dsh-geometric-splash) — 页面级启动开屏：彭罗斯三角在等距菱格海面上旋转受光，取景框本身就是进度计，按开屏节奏平滑推进、以真实 DSH 启动完成度为上限；按任意键跳过，主题坞提供 Monument Valley / Geometric Islands 十套色板。开屏结束后三角留在输入框旁，作为一枚反映当前工作状态的小标记。
 - [Dusty-Dustin55/dsh-file-context-menu](https://github.com/Dusty-Dustin55/dsh-file-context-menu) — 在 DSH 对话区和侧边栏右键文件、文件夹、网页链接和工作区：引用、复制、预览、用默认或选择的应用/浏览器打开、定位或另存为。
 - [DWJZ/dsh-restart](https://github.com/DWJZ/dsh-restart) — 在 DSH Web 设置面板里增加一个「重启」页：显示当前宿主的 PID、端口、启动时间与运行时长，重启由分离的 helper 完成——等端口不再应答后再按同一启动命令拉起新进程；替代宿主返回新的 boot id 后页面自动刷新。
@@ -2975,6 +2976,7 @@ dsh plugin --profile web add dshmarket
 - [drscrewdriver/dsh-thinking-levels](https://github.com/drscrewdriver/dsh-thinking-levels) — DSH 逐轮思考级别（reasoning_effort）控制：选择 Auto 即按近期工具调用历史自动调度 low/high/max，或手动固定线路档位（off/on/minimal/low/medium/high/xhigh/max），支持自定义线路映射、模型能力护栏与上下文窗口预设（64K–1M）；其逐模型能力卡片与另一独立插件 [dsh-llm-openai-completions](https://github.com/drscrewdriver/dsh-llm-openai-completions)（可在 dsh-market 安装）联动，让自定义 OpenAI 兼容网关（vLLM / LM Studio / 自托管）也能试用推理——卡片写入 llm-pi-ai 能力，适配器接管线路（compat.thinkingFormat），本插件自动维护接管列表。
 - [dsh-plugin-lab/dsh-workbuddy-bridge](https://github.com/dsh-plugin-lab/dsh-workbuddy-bridge) — 把 WorkBuddy 桌面 App 的模型接进 DSH 模型选择器：国内版与国际版各自成组，带上游声明的推理档位、每条回复的积分消耗与剩余积分、按账号分别保存的模型显隐，以及在支持的模型上的图片输入。
 - [du-yuxuan/OneKey-Models](https://github.com/du-yuxuan/OneKey-Models) — 一键接入 TokenDance 模型网关：OAuth 登录保存 API Key，实时模型目录可逐模型控制显隐，并提供对话、生图、生视频与类型化判断的 agent 工具。
+- [dungcsnd1133/dsh-tlpro-models](https://github.com/dungcsnd1133/dsh-tlpro-models) — 在 llm-pi-ai 设置节声明两条模型路由——TLPro 网关与 Z.ai 的 GLM-5.3 端点——逐模型给出上下文窗口、输出上限与推理档位，让自带的模型选择器可以选中并调节它们。
 - [Duskriver/dsh-opencode-go](https://github.com/Duskriver/dsh-opencode-go) — OpenCode Go 模型提供方，支持网关实时模型发现、models.dev 在线能力配置、会话路由，以及含订阅用量显示的 Web 设置页。
 - [dylan121322/llm-adaptive](https://github.com/dylan121322/llm-adaptive) — 自适应模型路由：请求级复杂度分类，按配置链自动选择后端 provider。
 - [DZQJOKER/dsh-plugin-local-model](https://github.com/DZQJOKER/dsh-plugin-local-model) — DeepSeek Harness 本地模型插件：在设置里管理 GGUF 模型，首条对话自动拉起 llama.cpp，空闲 5 分钟自动卸载释放显存。
@@ -4136,6 +4138,7 @@ dsh plugin --profile web add dshmarket
 - [zhangyy0423/dsh-veripipe](https://github.com/zhangyy0423/dsh-veripipe) — 为每个回合保留一张不会被后续回合清空的凭据(回合结束时的 todo 计数、目标 id 与阶段、结束原因,以及 fail-closed 的 pass/fail/inconclusive 完成判定),并提供一个只读工具回读最近的凭据。只存计数和 id。
 - [zhaolianghz/dsh-turnscope](https://github.com/zhaolianghz/dsh-turnscope) — 逐轮次文件变更与逐文件差异、确定性安全结论，外加 preview-first 安全回退：预览不写盘，确认后才应用，工作区在预览后发生漂移则直接拒绝。
 - [zhengjy01/dsh-period-report](https://github.com/zhengjy01/dsh-period-report) — 自由周期会话报告：任意日期区间的 AI 叙事日报/周报/月报，支持每隔 N 天定时提醒并弹系统通知（macOS / Linux）。
+- [zhengkaixing/dsh-conversation-queue](https://github.com/zhengkaixing/dsh-conversation-queue) — 限制 DeepSeek Harness 同时运行的对话数量，超出的对话按先进先出排队，不再堆叠请求；底部状态条显示物理内存、提交内存与磁盘占用，插件页卡片可随时修改上限。
 - [zhenyu-24/dsh-workspace-manager](https://github.com/zhenyu-24/dsh-workspace-manager) — 侧栏工作区管理：工作区→会话树形表格，支持按名称与路径搜索、按列排序、未归档会话计数、批量归档、会话与工作区重命名、移除工作区（保留文件与会话日志），并可为每个工作区添加额外源文件夹——作为上下文提供给 AI，不授予文件访问权限；同一套操作也以 workspace_manager 工具暴露。
 - [zhezhi33/dsh-session-recycler](https://github.com/zhezhi33/dsh-session-recycler) — 面向 Windows 的 DSH 会话两段式删除：对话移入回收站、可恢复回侧栏原位置；两段确认式删除，防止误删文件，连带整条子代理树、侧栏账本、投影缓存、日志与专属附件。同时能扫出一条对话真正写过的文件，增加文件查询功能，点击后将路径信息粘贴到对话中，通过Agent来判断哪些文件可以删除；在资源管理器中多选高亮，并复制按类型分好的路径。本插件与 iamwuzhanglin/dsh-session-recycler 安装后的包名同为 dsh-session-recycler，请只装其中一个。
 - [zhou1736948757-cpu/dsh-auto-continue](https://github.com/zhou1736948757-cpu/dsh-auto-continue) — 回答因达到单次输出 token 上限被截断时自动发送"继续"续写，无需手动操作；面向自部署 Ollama 等小输出上限场景。
@@ -4538,6 +4541,7 @@ dsh plugin --profile web add dshmarket
 - [Xplore-LAB/dsh-plugin-asmemory](https://github.com/Xplore-LAB/dsh-plugin-asmemory) — 动作-状态时序记忆：记录类型化的状态与动作，做趋势、异常与因果关联分析。
 - [xs1023/dsh-memory-vault](https://github.com/xs1023/dsh-memory-vault) — DeepSeek Harness 的 SQLite 长期记忆插件：按分类与标签增删改查、搜索、归档记忆，自动记录对话并分层压缩，带项目维度——检索默认收窄到当前工作区加全局事实。
 - [xulei666a/dsh-rules](https://github.com/xulei666a/dsh-rules) — DSH 统一准则/规则层：把 agent 的所有准则收进一份本地规则库，区分默认（常驻）与局部（按任务域）适用面，把生效规则同步进 AGENTS.md 托管段；并提供语义路由、分类树、管理页/右栏面板、面板内助手（读取规则、校准待复核、个性化分类、按归属汇报问题台账），以及规则副本（右键移动/复制、文件夹整体复制、跳转原规则）、决策点与分支冲突、本对话选择分支。
+- [xuxiaoxiang0721-tech/javmem-dsh-plugin](https://github.com/xuxiaoxiang0721-tech/javmem-dsh-plugin) — 给 Tobs Bot 的按 Bot 隔离的记忆，装上就能用：只读地把每个 Bot 自己的历史对话建成本地全文索引（中文词在整句里也能搜到），可导入从别的 AI 工具继承来的记忆，带状态工具、可选的自动召回（只在真人发言时）和给其他插件用的接口。安装时还可以选更立体的后端（先报价、每天有上限）：公开的事实库（memv2 精简版）、Graphiti 官方图谱，或两个一起，都从 Bot 自己的对话里抽取。
 - [xxwjxx-1210/dsh-brain-hub](https://github.com/xxwjxx-1210/dsh-brain-hub) — 给 DeepSeek Harness 用的第二大脑：Markdown 当数据库，零运行时依赖。核心记忆常驻系统提示，一张卡一个文件并可全文检索；侧栏网页版拆好的卡片先进收件箱，逐张人工确认后「存到云端」或「只存本地」（private/ 被 .gitignore 永久排除，绝不推送）；网页版对话进度存成 progress.md，旧稿归档保留 20 份。云端可三选一：Git 仓库、OneDrive 等同步盘文件夹、只存本机。安装后首次启动有一页新手引导。会话顶栏四步流水线：打开网页版 → 整理成卡片 → 逐张确认 → 备份到云端。拆卡提示词可在面板里直接改，改完立即生效。
 - [xying-lm/dsh-memory-vault](https://github.com/xying-lm/dsh-memory-vault) — 为 DSH 提供磁盘上的长期记忆：SQLite FTS5 记忆库自动采集每轮对话，新会话按预算把相关的旧片段注入上下文，会话可按「对话文件」串成可续接的线索，并带一个可检索、可翻页、可调容量的网页面板。
 - [xyzOvO/dsh-selfnote](https://github.com/xyzOvO/dsh-selfnote) — 五段预算制的自我叙述记忆（共 800 字，不是整段上下文）：模型写给自己看的第一人称自述、从已采纳记忆聚合的「关于你」画像、与本机环境事实分开的画像、按热度排序的结论、以及习惯。每条注入的事实都能回溯到具体事实 id，可一键退役；画像可手改覆盖，自述则是可清空的纯文本行。事实按使用与时间衰减，但可信度不随时间变。你说过的长期要求会被自动识别成候选（永不自动采纳），互相冲突的两条并排留着。另外带出处的历史检索、只解新增帧的增量索引、必须有指针的温层摘要、能说清哪里坏了的体检，证明注入还活着的心跳，以及能整体搬到另一台机器的导出/导入。
