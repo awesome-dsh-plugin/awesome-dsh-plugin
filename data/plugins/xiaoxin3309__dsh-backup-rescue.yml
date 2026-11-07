@@ -1,0 +1,6 @@
+url: https://github.com/xiaoxin3309/dsh-backup-rescue
+name: xiaoxin3309/dsh-backup-rescue
+category: usage
+description:
+  en: 'Back up and restore the whole $DSH_HOME: scheduled encrypted archives, a settings section, agent-facing tools to create or inspect backups, and a standalone restorer (Windows .bat or POSIX .sh) that runs without DeepSeek Harness installed.'
+  zh: 备份与恢复整个 $DSH_HOME：支持定时生成加密归档、提供设置页、给智能体的备份与查看工具，并附带无需安装 DSH 也能运行的独立恢复器（Windows .bat 或 POSIX .sh）。
