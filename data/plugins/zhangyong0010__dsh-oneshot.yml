@@ -1,0 +1,7 @@
+url: https://github.com/zhangyong0010/dsh-oneshot
+name: zhangyong0010/dsh-oneshot
+category: market
+description:
+  en: 'One-click force updater for installed DSH plugins from a left-sidebar panel: scans every installed plugin bundle, checks the npm registry and each upstream GitHub repository (release tag or default-branch manifest) for newer versions, updates registry bundles to the newest published version, re-downloads GitHub-spec bundles, and records each plugin''s old-to-new version change in run-history cards. A pre-check blocks versions the running DSH would reject, and a failed GitHub-spec install restores the previous version. Includes a dsh_oneshot_update agent tool.'
+  zh: '从左侧面板一键强制更新已安装的 DSH 插件：扫描全部插件 Bundle，检查 npm 注册源与各自上游 GitHub 仓库（Release Tag 或默认分支 manifest）的新版本，注册源插件更新到最新已发布版本、GitHub 来源插件强制重新下载，并在运行历史卡片中记录每个插件的旧版到新版变更。更新前预检会拦截当前 DSH 运行时会拒绝的版本，GitHub 来源安装失败时自动恢复原版本。内置 dsh_oneshot_update Agent 工具。'
+icon: https://raw.githubusercontent.com/zhangyong0010/dsh-oneshot/main/assets/icon-180.png
