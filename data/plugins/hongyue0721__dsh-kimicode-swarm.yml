@@ -2,5 +2,5 @@ url: https://github.com/hongyue0721/dsh-kimicode-swarm
 name: hongyue0721/dsh-kimicode-swarm
 category: workflow
 description:
-  en: 'Kimi-Code-style swarm: batch-parallel subagent dispatch with adaptive scheduling, a /swarm command, and in-chat live progress rows.'
-  zh: Kimi Code 风格 swarm：批量并行子 Agent 调度（自适应并发）、/swarm 命令与聊天内实时进度条。
+  en: 'Kimi-Code-style Agent Swarm: dispatch up to 128 parallel subagents with /swarm mode, per-item model routing, context forking, 429 backoff recovery, and a live in-chat progress card.'
+  zh: 'Kimi Code 风格 Agent Swarm：支持 /swarm 模式、单批最多 128 个子 Agent 并行调度、按子任务指定模型、上下文继承（fork）、429 限流退避续跑与聊天内实时进度卡片。'
