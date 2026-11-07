@@ -21,15 +21,19 @@
  * request; the packument is already fetched.
  *
  * Published package *names* stay cached. Version freshness in CI comes from
- * the nightly `PROBE_ALL` full pass. Rows that predate the `version` field
+ * the nightly `PROBE_ALL` full pass or a targeted repository refresh. Rows
+ * that predate the `version` field
  * get a one-shot registry-only backfill (key absent → fetch once, write the
  * key). Network failures leave the existing entry untouched. A packument
  * missing `dist-tags.latest` does not wipe a previously recorded string.
  *
  * Usage: node scripts/probe-npm.mjs
+ *        PROBE_TARGET_REPO=owner/repo node scripts/probe-npm.mjs
+ *        PROBE_TARGET_REPO=https://github.com/owner/repo/tree/main/packages/plugin node scripts/probe-npm.mjs
  */
 import fs from 'node:fs'
 import LOCALES from '../site/locales.mjs'
+import { listedProbeUrls, selectProbeUrls } from './lib/probe-target.mjs'
 
 const MAP_FILE = 'data/npm-map.json'
 // Unpublished verdicts expire after a day, not a month: authors publish to npm
@@ -41,10 +45,10 @@ const RECHECK_DAYS = Number(process.env.PROBE_RECHECK_DAYS ?? 1)
 const PROBE_ALL = process.env.PROBE_ALL === '1'
 const CONCURRENCY = 8
 
-const map = fs.existsSync(MAP_FILE) ? JSON.parse(fs.readFileSync(MAP_FILE, 'utf8')) : {}
-
 const readme = fs.readFileSync(LOCALES[0].readme, 'utf8')
-const urls = [...readme.matchAll(/^- \[.+?\]\((https:\/\/github\.com\/[^)]+)\) [—-] /gm)].map((m) => m[1])
+const { targeted, urls } = selectProbeUrls(listedProbeUrls(readme), process.env.PROBE_TARGET_REPO ?? '')
+if (targeted && !fs.existsSync(MAP_FILE)) throw new Error('targeted refresh requires the restored npm-map.json cache')
+const map = fs.existsSync(MAP_FILE) ? JSON.parse(fs.readFileSync(MAP_FILE, 'utf8')) : {}
 
 const today = new Date().toISOString().slice(0, 10)
 const ageDays = (entry) =>
@@ -59,7 +63,8 @@ const hasVersionKey = (entry) => Object.prototype.hasOwnProperty.call(entry ?? {
 
 // Full probe: unknown, forced, or an expired "not on npm" verdict.
 const needsFullProbe = (entry) =>
-  PROBE_ALL
+  targeted
+  || PROBE_ALL
   || entry === undefined
   || (entry.npm === null && ageDays(entry) > RECHECK_DAYS)
 
@@ -171,8 +176,10 @@ await runBatch('full', pendingFull, probe)
 await runBatch('version-backfill', pendingVersion, backfillVersion)
 await runBatch('publish-backfill', pendingPublish, backfillVersion)
 
-const listed = new Set(urls)
-for (const k of Object.keys(map)) if (!listed.has(k)) delete map[k]
+if (!targeted) {
+  const listed = new Set(urls)
+  for (const k of Object.keys(map)) if (!listed.has(k)) delete map[k]
+}
 
 const sorted = Object.fromEntries(Object.entries(map).sort(([a], [b]) => a.localeCompare(b)))
 fs.writeFileSync(MAP_FILE, JSON.stringify(sorted, null, 1) + '\n')
