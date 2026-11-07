@@ -1,0 +1,6 @@
+url: https://github.com/mzjqwq/dsh-sidebar-expand-all
+name: mzjqwq/dsh-sidebar-expand-all
+category: ui
+description:
+  en: Expands all sessions in every DeepSeek Harness sidebar workspace group by default (v1.0.1, DSH 0.2.2-rc.1): one click on the overflow button shows the full list, and Collapse restores exactly 5. Applies equal-length patches to app.asar and updates its integrity hashes.
+  zh: '让 DeepSeek Harness 侧栏每个工作区分组的会话默认全部展开（v1.0.1，适配 DSH 0.2.2-rc.1）：点一次「展开其余 N 个会话」即显示全部，「收起」严格回到 5 个；对 app.asar 做等长补丁并同步更新 integrity 哈希。'
