@@ -1,0 +1,6 @@
+url: https://github.com/yeweiliang7063/dsh-tcm
+name: yeweiliang7063/dsh-tcm
+category: skill
+description:
+  en: Adds a Traditional Chinese Medicine prescription preset whose answers must cite the source line for every formula quoted, a settings section for pointing it at a local folder of books, and automatic upkeep of that folder's 索引.md book index on startup and on change, plus a CLI rebuild command.
+  zh: 新增中医经方预设「岐黄经方」，凡引条文必须落到资料库原文；设置页可指定本地资料库目录，插件在启动与目录变动时自动维护该目录的 索引.md 书目索引，并提供一条命令手动重建。
