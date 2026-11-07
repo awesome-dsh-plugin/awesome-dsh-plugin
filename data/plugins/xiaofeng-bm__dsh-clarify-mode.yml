@@ -1,0 +1,6 @@
+url: https://github.com/xiaofeng-bm/dsh-clarify-mode
+name: xiaofeng-bm/dsh-clarify-mode
+category: workflow
+description:
+  en: "Adds a clarify mode: the agent loses its file-writing tools and can only ask questions until the required dimensions are covered, then writes a spec with acceptance criteria before implementing."
+  zh: "加一个需求澄清模式：模式内移除写文件工具，Agent 只能提问，覆盖完必需维度后产出带验收标准的 spec，再开始实现。"
