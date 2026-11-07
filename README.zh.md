@@ -3791,6 +3791,7 @@ dsh plugin --profile web add dshmarket
 - [let-mi-think/wechat-agent-router](https://github.com/let-mi-think/wechat-agent-router) — 按群名把每个微信群会话路由到不同的 Agent 预设，不改动 dsh-wechat-assistant 的任何代码。
 - [liangmianya/dsh-synapse](https://github.com/liangmianya/dsh-synapse) — DeepSeek Harness 的可视化非线性对话工作区：把会话、追问与分支变成可浏览、可拖拽的对话地图。
 - [lifeopsgo/dsh-lark-session-monitor-plugin](https://github.com/lifeopsgo/dsh-lark-session-monitor-plugin) — 以用户本人身份监听飞书会话，把新消息作为 prompt 投递到指定的 DeepSeek Harness 会话：每个监听支持发送者过滤、@机器人提及与关键词黑白名单，可自动创建并固定目标会话，游标式轮询在投递失败后会重读消息。
+- [light-cheng/dsh-strata](https://github.com/light-cheng/dsh-strata) — 分层上下文管理：每轮结束时把较早的工具输出替换成确定性卡片；模型可以用 compress 把较早的范围折叠成自己写的摘要，最多三级；所有原文都存在本地，可用 decompress 和 search_context 取回。可与 DSH-Mem0 同时使用：过期的运行时上下文快照（比如召回的记忆）不存档、不切卡、不折叠；在前缀缓存已经失效、清理的收益超过缓存损失，或上下文超过窗口 75% 时，于轮末换成一行占位；为其他上下文插件提供 strataBudget 服务（pressure、allowance、countTokens）和 strata/fold-landed 事件；DSH 自动压缩没有启用、或官方摘要连续失败时，strata_status 会给出警告。
 - [lij0000-arch/dsh-workspace-migrate](https://github.com/lij0000-arch/dsh-workspace-migrate) — 按工作区迁移 DSH：把一个项目的会话、文件与附件打包，在新机器上还原到指定根目录并重写历史绝对路径，之后只增量同步改动的文件。
 - [limbo947/dsh-recall-plugin](https://github.com/limbo947/dsh-recall-plugin) — 消息撤回：在用户消息旁加「撤回」按钮，把对话历史（官方会话 fork）与项目文件（逐消息影子 git 快照）一并回退到该消息发送之前，带差异预览确认面板。
 - [LingDangZaiXiang/dsh-always-there](https://github.com/LingDangZaiXiang/dsh-always-there) — 心跳与日志标记两种触发只负责叫醒会话，说不说由 agent 自己决定；沉默也是一种回答。默认关闭：需在 profile 里填 sessionId 并启用；若把回复转发到聊天软件，发送层需拦掉 SILENT 标记。
@@ -4338,6 +4339,7 @@ dsh plugin --profile web add dshmarket
 - [lcthe/dsh-hermes-memory](https://github.com/lcthe/dsh-hermes-memory) — DSH 有界持久记忆：memory_save/search/replace/remove/list 覆盖全局、用户、项目、失败四类范围，基于 DSH storage-domain 持久化，写入前做密钥与提示注入扫描，支持会话范围检索、保留期清理与可选的会话开始注入；常驻上下文用 memory_pin/memory_pins/memory_unpin 管理。
 - [leetom314/dsh-tiered-memory](https://github.com/leetom314/dsh-tiered-memory) — 分层持久记忆（user／env／project）：每层各有字符预算与语义查询路由；层满时拒绝写入，而不是静默淘汰。
 - [lemoncat7/dsh-knowledge](https://github.com/lemoncat7/dsh-knowledge) — 提供本地与远程知识库，支持项目和会话范围检索、可控回写以及内嵌 Web 管理台。
+- [Leon-dbh/life-innovation](https://github.com/Leon-dbh/life-innovation) — 常驻 DSH agent 的长期记忆：SQLite 保存原话、梗概、要点、画像与关系，入库靠确定性抽取，不为此调用模型；召回按词稀有度、新鲜度与情绪权重排序，并给出每条命中的理由；带淡忘、归档与回收站；另有动作账本与每条都带证据的日记。
 - [levodoubt/project-node-memory](https://github.com/levodoubt/project-node-memory) — 给 DSH Agent 用的「md 即数据库」项目知识库：10 个 kb_* 工具（含登记已有笔记的 kb_register）、稳定 TID、`[[node]]` 只出链接不复制正文、`[[tscl]]` 定义就地展开、有界读取、覆盖 tscl 的结构 lint、工作区优先的库发现、内嵌 git 快照、节点图面板，另带系统提示词段落与随包技能，让 Agent 优先用 kb_* 而不是手写 docs/。
 - [LFM097384/Context-Prism](https://github.com/LFM097384/Context-Prism) — 面向 DeepSeek Harness 的项目级本地上下文引擎：对历史、代码、文件、用户偏好和 Agent 轨迹做检索/压缩/优先级排序，为任意 LLM 生成动态上下文窗口。
 - [lgquan/dsh-workspace-memory](https://github.com/lgquan/dsh-workspace-memory) — 为 DSH 提供工作区隔离的持久化记忆，让每个工作区拥有可检索、可审计、可纠错和可删除的独立记忆，并支持受控的全局记忆。
@@ -4757,6 +4759,7 @@ dsh plugin --profile web add dshmarket
 - [Che-Year/dsh-unidoc](https://github.com/Che-Year/dsh-unidoc) — DeepSeek Harness 的文档预览 / 编辑 / 管理插件。在 DSH Web GUI 中提供一个 VSCode 风格的「文档中心」工作台：左侧文件树，点击即预览，代码与 Markdown 支持编辑与 Ctrl/Cmd+S 保存；同时为 Agent 暴露 doc_read / doc_edit / doc_create 三个文档工具，让模型可以通过自然语言读写工作区文档。
 - [chenbin-dev/dsh-scan-mcp](https://github.com/chenbin-dev/dsh-scan-mcp) — 扫描 Claude Code / Codex / CodeBuddy 配置中的 MCP，通过 stdio 与 streamable-http initialize 握手检测真实连通性，支持启停开关与 /mcp 控制面板。
 - [Cheng-cheng9669/dsh-cache-precision](https://github.com/Cheng-cheng9669/dsh-cache-precision) — 把内置缓存命中率原位显示为 3 位小数，并加宽底部统计行避免内容被截断。
+- [chengyu-xin1/dsh-classroom-mobile](https://github.com/chengyu-xin1/dsh-classroom-mobile) — 手机浏览器录课堂音频，本机 faster-whisper 转写；生成总结、思维导图、由易到难的题与错题门控、专注报告；内置 HTTPS 隧道，手机在任何网络都能连。
 - [chenjiyan2001/dsh-proxy-routing](https://github.com/chenjiyan2001/dsh-proxy-routing) — 按每次执行为 Agent fetch、LLM provider 与 shell 命令路由 HTTP/SOCKS5 代理；支持 settings 热更新、审批门禁和凭据安全状态。
 - [ChenXu233/dsh-gemini-tool-schema](https://github.com/ChenXu233/dsh-gemini-tool-schema) — 把发给模型的工具 schema 统一归一化成 Gemini function declaration 能接受的 OpenAPI 3.0 子集：每个节点补 type、数组补 items、剔除空 enum 项、内联 $ref，让"任何一个 MCP 或内置工具不合规"不再把整包请求打成 HTTP 400。
 - [chenzhihan1751-cyber/dsh-plugin-porter](https://github.com/chenzhihan1751-cyber/dsh-plugin-porter) — 把 DSH 插件搬到另一台机器或另一个 profile：导出迁移包（本地插件带源码、远程插件按版本重装），用包自带的 restore.mjs 在别处恢复，一键复制到其他 profile，或把配置/记忆/会话/附件/插件源码打成带校验分卷并附恢复脚本。
@@ -5724,6 +5727,7 @@ dsh plugin --profile web add dshmarket
 - [xuezuoys/dsh-blender-mcp-bridge](https://github.com/XuezuoYS/dsh-blender-mcp-bridge) — 此项目旨在桥接 Blender MCP Add-on，使 DSH 上的模型可便捷对接接入当前用户工作的 Blender 以辅助创作，且满足基础安全需要。
 - [XuRui2022/dsh-paper-manager](https://github.com/XuRui2022/dsh-paper-manager) — 面向学生与研究者的论文阅读与引用管理器：左侧栏论文库、原样 PDF 阅读器、六种引用格式、Word 文末参考文献，以及 AI 翻译/概括/思维导图/术语。基于 jypjypjypjyp/dsh-paper-reader（现名 dsh-vibe-reading，MIT）扩展，默认共用 `~/.paper_reading` 工作目录——不要与上游同装。需先安装 dsh-better-sidebar 插件。
 - [xwtxbzz/dsh-ccf](https://github.com/xwtxbzz/dsh-ccf) — 用 ccf_deadlines、ccf_venue、ccf_update 三个工具、/ccf 命令和可导出日历的桌面面板查 CCF 会议截稿：日期靠实时同步（CCFDDL 为主、另一个源交叉比对，差 36 小时以上标「来源冲突」），插件本身不内置任何日期，首次使用需先同步一次；未来 30 天的截稿会常驻系统提示。
+- [XXGJ666/dsh-feiyu-affinity](https://github.com/XXGJ666/dsh-feiyu-affinity) — 给 DSH 人设按人记好感度：分数、每日衰减、理由回看、生闷气与哄好，外加影响整体语气的综合情绪。
 - [yangdw2024/gaussian-dsh-plugin](https://github.com/yangdw2024/gaussian-dsh-plugin) — Gaussian 16 计算辅助插件：SMILES→3D 建模、输入生成、串行任务管理、输出解析，以及 Multiwfn/VMD 后处理（轨道/ESP/RDG 出图）。
 - [yanglaofish/dsh-proxy-pro](https://github.com/yanglaofish/dsh-proxy-pro) — 把模型请求、web 抓取/搜索与衍生工具统一路由到 Windows 系统代理或自定义地址——幂等内核（读操作不重组分发器）、头部一键开关、按 URL 路由诊断与 NTLM 认证提示。
 - [YangRuiYangDan/dsh-media-card](https://github.com/YangRuiYangDan/dsh-media-card) — 在 DSH 对话卡片内显示本地图片与短视频并提供原文件一键下载，也可为任意其他本地文件提供下载；本机与远程连接均可用，媒体本身不进入模型的视觉上下文。
@@ -6302,6 +6306,7 @@ dsh plugin --profile web add dshmarket
 - [xsoc1/dsh-image-vision](https://github.com/xsoc1/dsh-image-vision) — 纯文本 DeepSeek 的聊天识图插件：view_image 工具转发任意 OpenAI 兼容 VLM（本地 Ollama 或云端），对话框粘贴/拖拽的图片自动改写为 view_image 路径标记供模型查看。
 - [xuanyuanluoxue/computer-use-vision](https://github.com/xuanyuanluoxue/computer-use-vision) — Windows 桌面识图+模拟操作能力：截图→vision模型→模拟鼠标键盘，内置自进化应用技巧库。支持插件工具模式和纯skill模式双形态。
 - [xuhairui-dzz/dsh-shengtu](https://github.com/xuhairui-dzz/dsh-shengtu) — 会话内多引擎生图：agent 工具 + 输入框下方的停靠面板，带启用开关、引擎预设（火山方舟 / 硅基流动 / OpenAI 兼容 / 自定义）和本地消耗统计。需自备所选引擎的 API Key。
+- [XXGJ666/dsh-feiyu-vision](https://github.com/XXGJ666/dsh-feiyu-vision) — 给 DSH 加识图：描述、读文字、反查原图，Key 和 ffmpeg 都能在面板里配。
 - [Yinxe/deepseek-harness-plugins#vision-bridge](https://github.com/Yinxe/deepseek-harness-plugins/tree/main/plugins/vision-bridge) — 让纯文本模型也能看图：消息中出现图片占位符时模型调用 vision_describe 工具，插件把本轮图片引用与提问一起转交给多模态视觉模型识别，主模型失败时自动用备用模型重试。配置在设置页完成并通过官方 settings API 持久化到 settings.yaml，热重载不丢。
 - [ysr666/dsh-vision-router](https://github.com/ysr666/dsh-vision-router) — 为纯文本 Agent 提供视觉能力：内置免 Key 视觉链 + 像素级视觉工具（看图问答、定位、裁剪、像素对比、取色、OCR、矢量化、抠图、截图）；粘贴图片即可用。
 - [yupaoa/dsh-image-lite](https://github.com/yupaoa/dsh-image-lite) — DSH 生图插件，双模式：对话中由模型调用 image_generate_lite 工具出图，或在右侧栏「生图工作台」手动生图；最多 5 张参考图、支持 OpenAI images 接口格式，密钥存于 DSH 凭据服务。
