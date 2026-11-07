@@ -1,0 +1,6 @@
+url: https://github.com/irerc/dsh-deepseek-web
+name: irerc/dsh-deepseek-web
+category: model
+description:
+  en: 'DeepSeek Web (chat.deepseek.com) as an OpenAI-compatible provider: multi-account pool, model list, settings UI, no API key.'
+  zh: '把 chat.deepseek.com 网页版包成 OpenAI 兼容接口：多账号池、模型列表、设置界面，无需 API key。'
