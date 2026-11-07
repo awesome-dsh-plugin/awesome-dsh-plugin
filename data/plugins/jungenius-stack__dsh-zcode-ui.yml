@@ -1,0 +1,7 @@
+url: https://github.com/jungenius-stack/dsh-zcode-ui
+name: jungenius-stack/dsh-zcode-ui
+category: theme
+description:
+  en: "A ZCode-styled skin for DSH Web: Zai light/dark themes, sidebar workspace session tree, global search and turn navigation, with every visual value guarded by contract assertions."
+  zh: "把 DSH Web 界面换成 ZCode 视觉语言的皮肤：Zai 明暗主题、侧栏工作区会话树、全局搜索与轮次导航，每个视觉值都有契约断言守护。"
+icon: https://raw.githubusercontent.com/jungenius-stack/dsh-zcode-ui/main/assets/icon.png
