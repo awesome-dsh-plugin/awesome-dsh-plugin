@@ -1100,6 +1100,7 @@ dsh plugin --profile web add dshmarket
 - [LyaxZ/dsh-quick-toc](https://github.com/LyaxZ/dsh-quick-toc) — DeepSeek Harness 对话大纲：按回合整理整段会话的 Markdown 标题，侧边面板与全屏「幕布」两种视图；悬停预览可钉住对照，书签留住常回看的几处，右键即可跳转到某一节或复制标题及其下面所有层级。支持六种主题色与半透明材质、标题/提问/全文/跨会话搜索、阅读位置跟随与中英双语界面。
 - [lyhue1991/dsh-soup](https://github.com/lyhue1991/dsh-soup) — DSH 右侧 details 列项目资源管理器（多选、拖拽移动、上传、下载、重命名、废纸篓、系统打开），会话内只读预览 Markdown/HTML/JSON/CSV/Notebook/PDF 与代码高亮，附带模型实时吞吐徽标与多行 GoalBar。
 - [lyonleeeee/dsh-steer](https://github.com/lyonleeeee/dsh-steer) — 在会话头显示实时状态徽标，并在不打断当前回合的前提下投递运行中新增的指导。
+- [lysforge/dsh-lamplit](https://github.com/lysforge/dsh-lamplit) — 把微信读书、GitHub 书库和自己的 EPUB/PDF/Markdown 收进一个书架，沉浸阅读并让 AI 解释划词。
 - [lyx0717/dsh-washer](https://github.com/lyx0717/dsh-washer) — 常驻桌面的桌宠（桌面宠物）：一台滚筒洗衣机，把会话状态渲染成洗衣动作，四套皮肤（精密家电 / 复古奶油 / 工笔重彩 / 太空舱）可切换，多会话计数、洗完 / 卡住 / 等你确认主动提醒；macOS 与 Windows 均可运行，详情面板可看最近几轮与耗时。
 - [lyy-hast/dsh-coros-plugin](https://github.com/lyy-hast/dsh-coros-plugin) — 在 DeepSeek Harness 内登录高驰（COROS）账号，用一个面板查看账号、绑定设备、恢复、体能、近期运动、每日健康与训练安排，并可用 /coros-plan 让模型按账号数据给出训练计划；计划页只在二次确认后才把固定的四周 16 节课写入账号。
 - [Lzh3070/dsh-file-review-tab](https://github.com/Lzh3070/dsh-file-review-tab) — 把 agent 的文件改动审查放进 dsh-better-sidebar 侧边栏 Tab 或对话尾部行，支持行级 diff 与撤销。
@@ -1864,6 +1865,7 @@ dsh plugin --profile web add dshmarket
 - [Yocaihua8/dsh-prompt-improver](https://github.com/Yocaihua8/dsh-prompt-improver) — 按需结合对话、记忆和项目片段增强草稿，支持对照预览、专用模型与恢复原文，不会自动发送消息。
 - [Yokira404/dsh-thinking-highlight](https://github.com/Yokira404/dsh-thinking-highlight) — 统计思考行里的关键词并在展开后按词标红；标题行上每个词一个计数徽章，点徽章即单独开关这个词；每个词可设底色、文字颜色、字号（10-22px，与宿主正文尺寸同一区间）、字体、加粗/斜体/下划线与「完整词」匹配；插件有独立的设置分区。
 - [YokosWY/dsh-calibration-tier](https://github.com/YokosWY/dsh-calibration-tier) — 在 DSH 输入框里加一条档位条：思考三档（常规 / 严格 / 极致）、互斥的循环模式三档（3 / 5 / 8 轮）、可叠加的对抗审查开关；模型通过 clarify_tier 与 forge_level 两个工具读取当前档位。
+- [YONAN1269/dsh-sidebar-suite](https://github.com/YONAN1269/dsh-sidebar-suite) — 为 DeepSeek Harness 提供三种可切换的侧栏布局，并在插件详情页设置启动时的默认布局。
 - [yongfanbeta/dsh-pomodoro](https://github.com/yongfanbeta/dsh-pomodoro) — DSH 番茄钟：经典 25/5/15 计时，可将每次专注关联当前会话任务或手动输入项目名，内置统计面板与全年热力图，配可拖动悬浮计时卡与角落迷你药丸，数据本地持久化并支持导出 CSV。
 - [YooRarely/dsh-open-explorer](https://github.com/YooRarely/dsh-open-explorer) — 在 DSH 会话标题和工作区菜单中添加按钮，用系统文件管理器打开当前 Workspace 根目录。
 - [youqisibun/dsh-claude-effort-slider](https://github.com/youqisibun/dsh-claude-effort-slider) — 给 DeepSeek Harness 用的六档推理强度滑条，第六档 Ultracode 会在轨道上铺开一层向左流动的像素纹理，浮层与纹理跟随界面明暗自动切换。
@@ -6442,6 +6444,7 @@ dsh plugin --profile web add dshmarket
 - [1741505640/capmap-skills#dsh-capmap-viz](https://github.com/1741505640/capmap-skills/tree/main/dsh-capmap-viz) — CapMap 文档体系可视化：Obsidian 风格语义图谱与能力面板。
 - [3361805598-gif/dsh-md-annotator](https://github.com/3361805598-gif/dsh-md-annotator) — 面向 dsh-better-sidebar 扩展的 Markdown 侧边栏预览与源码编辑器，支持块级和文本选区批注，并可将批注作为结构化修改请求发送到对话框。
 - [4444Hao/qiaodoc-dsh](https://github.com/4444Hao/qiaodoc-dsh) — 基于 joeseesun/qiaomu-reader-dsh 二次开发（并非上游官方后续版本；两者都用 qiaomu-reader 插件 id，不要同装）：在 DSH 原生对话旁阅读文档、解释翻译选段，并通过文档历史返回原会话。当前为开发试用版，仅验证 Windows + DSH 0.2.1-rc.5。
+- [a158070653-hash/dsh-ontology-viewer](https://github.com/a158070653-hash/dsh-ontology-viewer) — 在 DSH 右侧栏预览中把 .ttl、.owl、.rdf、.jsonld、.nt、.n3 等本体/RDF 文件渲染为可交互图谱，本地解析 Turtle、N-Triples、RDF/XML 与 JSON-LD，无运行时依赖。
 - [aa2246740/dsh-slidestudio#dsh-slidestudio](https://github.com/aa2246740/dsh-slidestudio/tree/main/dsh-slidestudio) — 在 DeepSeek Harness 中生成和编辑演示文稿，并导出可编辑的 PPTX 文件。
 - [addie-ace/dsh-fullwidth-punctuation](https://github.com/addie-ace/dsh-fullwidth-punctuation) — 将 AI 回答中的半角标点转换为中文全角标点，让复制的回答可直接用于公文材料。
 - [adithyanraj03/dsh-cite-lens](https://github.com/adithyanraj03/dsh-cite-lens) — dsh 的 PDF 阅读：在文件选项卡里选中 PDF 中的文字，就能引用到当前对话或就它提问；把模型的引用变成链接，点开 PDF 并高亮被引用的那几句话；/cite-links 让一段对话为每条论断都附上引用。
@@ -6573,6 +6576,7 @@ dsh plugin --profile web add dshmarket
 - [tt-a1i/archify#integrations/deepseek-harness](https://github.com/tt-a1i/archify/tree/main/integrations/deepseek-harness) — 从仓库或系统描述生成经过校验的自包含交互式架构图、流程图、时序图、数据流图和生命周期图。
 - [tylina/dsh-tylina#bundle-wasm](https://github.com/tylina/dsh-tylina/tree/main/bundle-wasm) — Typst 文档编辑工具：WYSIWYG 编辑排版论文、报告、试卷、简历、图表、海报、乐谱和可导出为 PPTX 的 Slides。
 - [UnitySirx/dsh-kp-notes#dsh-kp-notes](https://github.com/UnitySirx/dsh-kp-notes/tree/main/plugin/dsh-kp-notes) — DeepSeek Harness 知识点笔记插件：把 Markdown 笔记目录变成卡片式学习画布，目录 = 章节、文件 = 小节、正文 = 知识点；题目可遮挡答案自测，支持 KaTeX 公式、Mermaid 流程图、思维导图与面板内编辑。
+- [Velestia-star/dsh-docdesk](https://github.com/Velestia-star/dsh-docdesk) — 只收主动加入的 Markdown 文档，支持工作区挑选、带指针滞回的固定网格拖拽、右键框选与批量移入文件夹、文件夹解散/删除、移动与行高亮持久标记、全屏标签页与沉浸式阅读、GFM 表格、书签，以及 Mermaid/代码块图表本地渲染。
 - [void2anything/dsh-qingagent](https://github.com/void2anything/dsh-qingagent) — 青简写作桥：agent 通过 qing_ 前缀工具起草改稿，右侧宣纸面板排版呈现（mermaid、drawio、表格、公式）；每处修改先摆在纸上供审阅，提交才落稿。需本机运行开源的青简桌面客户端。
 - [w4xxx/dsh-xia-plugins#packages/gameassist-knowledge](https://github.com/w4xxx/dsh-xia-plugins/tree/main/packages/gameassist-knowledge) — 树状 Markdown 知识库：为 DSH Agent 提供 kb_list/kb_read/kb_write 工具、目录/正文 HTTP 接口，并配套浏览器面板。
 - [walvka-code/proj-doc-builder](https://github.com/walvka-code/proj-doc-builder) — 用随包的 Python 3.12+ 工具扫描仓库，为每个源码目录生成一份 Markdown 大纲，并随索引发布可证明文档与代码一致的哈希 manifest；自带读取器在输出概览或单份文档前会先校验 manifest。项目根需已有 project_docs/ 目录与 CLAUDE.md 入口。
@@ -6580,7 +6584,6 @@ dsh plugin --profile web add dshmarket
 - [Wanyi424/dsh-markdown-notes](https://github.com/Wanyi424/dsh-markdown-notes) — 随手记、随时读：阅读、编辑、并排预览一键切换，附大纲与三套排版主题，支持公式与 Mermaid，多级文件夹管理，自动存为本地 .md 文件。
 - [WaterFountain-Jack/dsh-study-note](https://github.com/WaterFountain-Jack/dsh-study-note) — 按对话开启学习笔记，自动整理问答，按分类保存并维护 Markdown 索引。
 - [wct-lab/dsh-docchain](https://github.com/wct-lab/dsh-docchain) — 知识库、文档转换与知识图谱插件：文档文件名、内容与元数据检索，按 doc_id/文档名称定位并读取正文，主题查询，文档批量上传，文档转 Markdown，图搜图，文档图片转文字（流程图/架构图这类结构图自动转成 PlantUML 草图，其它图写成文字描述，并写入旁路描述 md，主 md 不动；原图改为可点链接），深度研究工作流，以及知识图谱能力（查本体结构、执行只读 Cypher、本体/实体/关系的增删改，全部走 DocChain API，无需 Neo4j 密码）。所有带脚本的能力同时提供原生 DSH 工具，由宿主进程内直接执行：文档定位、内容搜索、文件名搜索、主题查询、元数据查询、批量上传、图搜图、文档图片转文字、文档转 Markdown，以及知识图谱的本体查询 / Cypher / 节点与关系的增改删。配置页可保存多个 docchain 环境（各带独立地址与凭据）并一键切换，还可按环境预选主题。除 doc2markdown 外需配置 docchain 服务地址与 API key；图片转文字另需一个 OpenAI 兼容的多模态模型端点（默认走内网网关模型，可配置更换）。
-- [wei238982377/dsh-docdesk](https://github.com/wei238982377/dsh-docdesk) — 只收主动加入的 Markdown 文档，支持工作区挑选、带指针滞回的固定网格拖拽、右键框选与批量移入文件夹、文件夹解散/删除、移动与行高亮持久标记、全屏标签页与沉浸式阅读、GFM 表格、书签，以及 Mermaid/代码块图表本地渲染。
 - [weibaohui/dsh-kb](https://github.com/weibaohui/dsh-kb) — 团队知识库：离线知识共享（FDE 盒子场景），浏览/全文检索/加工入口；raw 入料自动入队、bot 会话串行蒸馏成文（Karpathy LLM Wiki 模式：raw 不可变 / 两步加工 / log 流水 / 月度 lint）。
 - [Whatsmore-nf/dsh-pdf-edit](https://github.com/Whatsmore-nf/dsh-pdf-edit) — 面向 PDF 文档的编辑插件,精确编辑PDF文字
 - [WuShichao/dsh-ipynb-preview](https://github.com/WuShichao/dsh-ipynb-preview) — 在文档预览中渲染 Jupyter 笔记本，支持代码语法高亮、离线 KaTeX 行内与块级公式，以及可缩放的图像查看器。
