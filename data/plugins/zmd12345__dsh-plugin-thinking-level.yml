@@ -1,0 +1,8 @@
+url: https://github.com/zmd12345/dsh-plugin-thinking-level
+name: zmd12345/dsh-plugin-thinking-level
+category: usage
+description:
+  en: Suggests the right thinking level for the current draft and can switch it in one click, so simple tasks avoid overthinking and hard tasks get enough reasoning.
+  zh: 根据当前草稿自动建议思考档位并支持一键切换：简单任务不过度思考、节省 token，复杂任务给足推理、减少返工。
+icon: https://raw.githubusercontent.com/zmd12345/dsh-plugin-thinking-level/main/assets/icon-180.png
+tarball: https://github.com/zmd12345/dsh-plugin-thinking-level/releases/download/v0.1.1/dsh-plugin-thinking-level.tgz
