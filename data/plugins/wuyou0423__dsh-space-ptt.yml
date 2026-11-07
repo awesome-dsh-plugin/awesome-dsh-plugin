@@ -1,0 +1,6 @@
+url: https://github.com/wuyou0423/dsh-space-ptt
+name: wuyou0423/dsh-space-ptt
+category: voice
+description:
+  en: Hold Space to record and release to transcribe and send, without focusing the composer first. Esc cancels and window blur auto-cancels.
+  zh: 按住空格录音、松手自动识别并发送，不用先点输入框。按 Esc 可取消，切换窗口自动取消。
