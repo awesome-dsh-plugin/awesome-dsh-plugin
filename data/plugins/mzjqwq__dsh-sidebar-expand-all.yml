@@ -1,0 +1,6 @@
+url: https://github.com/mzjqwq/dsh-sidebar-expand-all
+name: mzjqwq/dsh-sidebar-expand-all
+category: ui
+description:
+  en: One click expands every remaining session in a DSH workspace sidebar, and collapsing returns to a strict five-session preview.
+  zh: 在 DSH 侧栏点一次「展开其余 N 个会话」就展开该工作区全部剩余会话，「收起」严格回到 5 个。
