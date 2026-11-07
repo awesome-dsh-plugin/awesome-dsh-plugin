@@ -2032,7 +2032,7 @@ dsh plugin --profile web add dshmarket
 - [1HelloMan1/dsh-usage-dashboard-plus](https://github.com/1HelloMan1/dsh-usage-dashboard-plus) — 显示 DeepSeek 余额与今日花费估算，合并外部视觉调用 JSONL 记录，并提供含模型统计、TTFT、缓存率、调用日志、费用估算、筛选与 CSV 导出的会话看板。
 - [2006spy/dsh-token-billing](https://github.com/2006spy/dsh-token-billing) — DSH Web 实时 token 计费插件：官网人民币价直接计费、高峰/错峰自动切换、价格实时跟随官网、可视化自定义模型价格、多币种兜底。
 - [283Gawin/dsh-heatmap](https://github.com/283Gawin/dsh-heatmap) — DSH Web 侧边栏活动热力图：GitHub 风格网格展示每日提交、Token 用量与估算花费，今日统计行显示全会话 Token 总量、缓存命中率与按模型自动计价的花费。
-- [2869949486/dsh-opencode-routing](https://github.com/2869949486/dsh-opencode-routing) — 一个设置页管完 OpenCode Go：账户池在密钥额度耗尽或鉴权失败时自动 A→B 轮替，按账户显示 5 小时/本周/本月额度，按模型显示用量与剩余额度并标出能力（图像、视频、纯文本、工具调用、推理），另有「走 OpenCode 还是官方直连更划算」的实时换算与 10 种界面语言。
+- [2869949486/dsh-opencode-routing](https://github.com/2869949486/dsh-opencode-routing) — OpenCode Go 控制台：账户池在密钥额度耗尽或鉴权失败时自动 A→B 轮替，按账户显示 5 小时/本周/本月额度，按模型显示用量与剩余额度并标出能力（图像、视频、纯文本、工具调用、推理），实时换算走 OpenCode 还是官方直连更划算；额度路由在上游限流或降级时自动切到 DeepSeek 官方订阅、恢复并稳定 10 分钟后切回，页面顶部有当前路由横幅、状态卡与切换通知，支持 10 种界面语言。
 - [3150481853/dsh-cookie-guard](https://github.com/3150481853/dsh-cookie-guard) — 仅支持 Windows。数出 DSH 桌面外壳已累积的 dsh-auth-* 登录 cookie 条数，显示它们占掉 16 KiB 请求头预算的多少，以及还差几次启动就会打不开并报 "desktop welcome: Web authentication failed"。网页里有一张可拖动的浮窗卡片，每 10 分钟自检、每个本地日期保留一条快照，也能手动刷新；另附 desktop/ 下的独立 Windows 自查工具。
 - [3289192-bot/dsh-cache-bricks](https://github.com/3289192-bot/dsh-cache-bricks) — 在 DSH Web 中可视化提示词缓存命中率与模型请求活动，支持请求详情、请求对比和对话定位。
 - [3361805598-gif/dsh-usage-analytics](https://github.com/3361805598-gif/dsh-usage-analytics) — 在设置页提供本机个人用量分析：1/7/30 天 Token 热力图与 30 天日历视图、Token 构成、模型分布和技能调用状态。
