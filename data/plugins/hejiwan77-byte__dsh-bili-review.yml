@@ -1,0 +1,8 @@
+url: https://github.com/hejiwan77-byte/dsh-bili-review
+name: hejiwan77-byte/dsh-bili-review
+category: ui
+tarball: https://github.com/hejiwan77-byte/dsh-bili-review/releases/latest/download/dsh-bili-review.tgz
+description:
+  zh: "在 B 站按分区刷视频，逐条读完简介、动态、字幕和评论，写出联系实际、留下知识点的观后感，并沉淀到本地知识库。"
+  en: "Browse Bilibili by section, read each video's description, dynamic, subtitles, and comments, then write grounded reviews that connect to real life and append the lesson to a local knowledge base."
+icon: https://raw.githubusercontent.com/hejiwan77-byte/dsh-bili-review/main/assets/icon-180.png
