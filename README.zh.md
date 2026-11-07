@@ -5573,6 +5573,7 @@ dsh plugin --profile web add dshmarket
 - [springbrand-lab/dsh-oauth-mcp-client](https://github.com/springbrand-lab/dsh-oauth-mcp-client) — 面向 Streamable HTTP 服务的 OAuth 2.1 MCP 客户端：在设置页添加连接，通过浏览器登录（PKCE + 动态客户端注册），其工具随即注册进 DSH；令牌存于凭据服务，连接写入 profile。
 - [SPYQWER1/dsh-codex-tools](https://github.com/SPYQWER1/dsh-codex-tools) — 基于 Codex 的 `web_search`、`image_gen` 与 `image_vision` 工具，复用 ChatGPT OAuth 登录态为 DeepSeek Harness 提供网页搜索、生图与识图能力。
 - [sryimnoob123/dsh-tool-pwsh-safe](https://github.com/sryimnoob123/dsh-tool-pwsh-safe) — 把 PowerShell 脚本 base64 编码后执行，引号、$、反斜杠、中文全部原样传递，免去转义地狱。走与内置 pwsh 工具相同的沙箱通道。
+- [stallenlu/dsh-scihub](https://github.com/stallenlu/dsh-scihub) — 为 DSH 注册 scihub_pdf 与 scihub_batch 两个模型工具：按 DOI 或文章 URL 经 Sci-Hub 镜像解析并下载论文 PDF 到会话工作区，逐条如实返回下载状态；镜像列表可在运行时配置，修改后无需重启。
 - [STARDUSTLC666/deepseek-computer-use](https://github.com/STARDUSTLC666/deepseek-computer-use) — 通过 UI Automation、窗口截图和鼠标键盘操作 Windows 桌面软件，支持会话独立应用授权和操作审批。
 - [STARDUSTLC666/dsh-calendar](https://github.com/STARDUSTLC666/dsh-calendar) — CalDAV 日历插件：查/建/改/删/搜日程与健康自检，Google/iCloud/Nextcloud/自定义端点，RRULE 重复事件展开；设置页内置月/周/议程面板，连接可在面板内填写并先测后存，周视图支持拖拽改期（15 分钟吸附、5 秒撤销）。面板内置 4 步首次使用引导，看一次后不再出现。
 - [STARDUSTLC666/dsh-cite](https://github.com/STARDUSTLC666/dsh-cite) — 参考文献工具：DOI 精确查询与 Crossref 题录检索，GB/T 7714 / APA / MLA / Chicago 格式化，BibTeX 生成、有界并发 DOI 校验与健康自检。面板内置 3 步首次使用引导，看一次后不再出现。
@@ -5980,6 +5981,7 @@ dsh plugin --profile web add dshmarket
 - [LyuYuxin/dsh-wsl-folder](https://github.com/LyuYuxin/dsh-wsl-folder) — 在侧栏的「添加工作区」按钮里把 WSL 目录加成 DSH 工作区：选发行版、浏览目录后以 \\wsl.localhost 路径注册；该工作区的侧栏终端开在发行版里，agent 也能正常写入其中的文件。需 Windows 10/11 并已安装 WSL。
 - [QiYunqv-jxd/dsh-desktop-autostart](https://github.com/QiYunqv-jxd/dsh-desktop-autostart) — 给 DeepSeek Harness 桌面版加一个登录自启开关：只管理用户启动文件夹里的一个快捷方式，不写注册表、不需要管理员权限、不额外常驻进程。
 - [road-kid/dsh-terminal-shell](https://github.com/road-kid/dsh-terminal-shell) — 选择 Windows 终端工具背后的 shell：PowerShell、本地 Git Bash 或 cmd.exe。
+- [stallenlu/dsh-wsl-suite](https://github.com/stallenlu/dsh-wsl-suite) — 为 DeepSeek Harness 增加 WSL 工作区：侧栏 W 按钮列出发行版并把 Linux 目录注册为宿主工作区（以 UNC 路径表示），WSL 会话的侧栏终端在发行版内打开真实 Linux pty。发行版内常驻一个零依赖 agent，通过 JSON-lines 管道响应文件、shell 与搜索请求，空闲时没有轮询计时器触碰发行版，/mnt 盘符也保持可达；grep 与 glob 在发行版内调用自带的 ripgrep。附带 wsl-standard 等 WSL 孪生预设，替换 shell 与 fs 工具。
 - [TGWgulugu/dsh-wsl-bridge](https://github.com/TGWgulugu/dsh-wsl-bridge) — 在当前 WSL 发行版里运行持久 bash 以及 Linux 路径的文件与搜索工具。新建对话选中 WSL 后，从该发行版的文件夹里指定工作区，且不会在发行版内安装任何东西。
 - [Wang1462604987/dsh-wsl-sidebar](https://github.com/Wang1462604987/dsh-wsl-sidebar) — 用于 Harness 的 WSL 控制台：管理发行版、以表单编辑 .wslconfig 与 wsl.conf，并用自带的 wslx-* 工具在任意发行版内执行命令、读写文件、运行长驻进程。
 - [WilliamShi666/dsh-wsl-workspace-picker](https://github.com/WilliamShi666/dsh-wsl-workspace-picker) — Web UI 增强版工作区目录选择器：WSL 下 /mnt Windows 盘符一键直达、完整面包屑层级与常显路径输入框。
