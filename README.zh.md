@@ -3783,6 +3783,7 @@ dsh plugin --profile web add dshmarket
 - [lloydzhou/dsh-smart-compaction](https://github.com/lloydzhou/dsh-smart-compaction) — 缓存优先的上下文压缩，提供可选的自适应经济策略，默认仅观察，不保证缓存命中或费用节省。
 - [lolipop-1x1/dsh-recap](https://github.com/lolipop-1x1/dsh-recap) — 通过 /recap 或闲置触发回顾当前 DeepSeek Harness 会话，支持配置模型、中英文输出，并在对话内展示可展开的摘要。
 - [loonai321/dsh-humanized-deepseek-maid](https://github.com/loonai321/dsh-humanized-deepseek-maid) — 为 DSH 添加可配置的女仆鲸鱼娘人格：沉浸式扮演（称呼/自称/说话方式）、防出戏规则，以及借鉴 ALTM 的轻量分层记忆与按需召回。
+- [louisding9527/dsh-session-search](https://github.com/louisding9527/dsh-session-search) — 面向模型的历史会话关键字检索：session_search 返回命中的会话、时间与上下文片段，session_read 导出单个会话的对话，两者都跳过记忆快照等注入内容；不建索引。
 - [dsh-loulan-rules](https://github.com/loulangogogo/dsh-plugins-loulan/tree/main/packages/rules) — 在首次 agent pre-step 读取 $DSH_HOME/rules 与 <cwd>/.dsh/rules 下的规则文件并注入会话，被 compaction 遮蔽后自动补回。
 - [loyalchiiina/dsh-archive-favorites-forge](https://github.com/loyalchiiina/dsh-archive-favorites-forge) — 在侧栏「…」菜单或行内星标收藏任意对话；一键复制会话 ID 与转录文件绝对路径；单条永久删除（二次确认，删完侧栏立即移除该行）。设置页新增一张卡：按可配置的小时阈值批量归档闲置会话并支持一键撤回，把候选导出为制表符分隔的 txt（含对话名称、ID、所属工作区、闲置时长、最后活动时间），以及批量删除归档中未收藏的对话；视图选项另有「仅显示收藏（已归档）」与「仅显示收藏（未归档）」两行筛选。全部为增量实现：三个官方插槽加一条克隆的筛选行，不改官方任何文件。
 - [lsz-asd/dsh-plugin-session-delete](https://github.com/lsz-asd/dsh-plugin-session-delete) — 在 Web UI 与桌面客户端中删除 DSH 会话：头部危险按钮 + 会话行菜单项，风险确认弹窗，宿主端点与 agent 工具同步清理会话日志、投影缓存与工作区记账。
