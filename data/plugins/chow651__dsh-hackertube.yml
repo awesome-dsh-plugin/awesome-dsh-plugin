@@ -1,0 +1,6 @@
+url: https://github.com/chow651/dsh-hackertube
+name: chow651/dsh-hackertube
+category: tools
+description:
+  en: 'Browses and plays a library of 6,454 technical talks that hackertube.org collected from two decades of Hacker News recommendations: 16 domains with filters for year, type and difficulty, recommendation ordering, Chinese titles for every entry, and AI Q&A that answers from subtitles around the playback position. Registers the hackertube_search tool so the assistant searches the same index in conversation, and adds a session sidebar pane that does not touch the page URL.'
+  zh: '浏览并播放 hackertube.org 从 Hacker News 二十年推荐里汇编的 6,454 支技术视频：16 个领域，可按年份、类型、难度筛选与推荐排序，全部条目内置中文标题，AI 问答取播放位置附近的字幕作答；注册 hackertube_search 工具，让智能体在对话中检索同一套索引；另有会话右栏页面，打开视频不改写页面地址。'
