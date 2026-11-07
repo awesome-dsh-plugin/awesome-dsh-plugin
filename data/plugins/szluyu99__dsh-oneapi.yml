@@ -1,0 +1,6 @@
+url: https://github.com/szluyu99/dsh-oneapi
+name: szluyu99/dsh-oneapi
+category: model
+description:
+  en: 'OneAPI gateway configuration panel: edit the provider route, API key, default model and model catalog, test connectivity per model and sync the model list, with six agent tools and an optional left-sidebar panel.'
+  zh: 'OneAPI 网关配置面板：编辑 provider 路由、API Key、默认模型与模型清单，逐模型测试连通性并同步模型列表，附带 6 个 Agent 工具与可选左侧边栏面板。'
