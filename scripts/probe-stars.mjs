@@ -27,6 +27,7 @@
  */
 import fs from 'node:fs'
 import LOCALES from '../site/locales.mjs'
+import { leastRecentlyChecked } from './lib/probe-order.mjs'
 
 const STARS_FILE = 'data/stars.json'
 const CONCURRENCY = 10
@@ -60,7 +61,9 @@ const fresh = (entry) =>
   && entry.checkedAt
   && (Date.now() - new Date(entry.checkedAt).getTime()) / 86400000 <= RECHECK_DAYS
 
-const pending = urls.filter((url) => !fresh(map[url]))
+// Give entries missed by an exhausted API budget priority on the next run,
+// including PROBE_ALL passes, instead of repeatedly refreshing the same prefix.
+const pending = leastRecentlyChecked(urls.filter((url) => !fresh(map[url])), map)
 console.log(`${urls.length} listed, ${pending.length} to probe${PROBE_ALL ? ' (PROBE_ALL)' : ''}`)
 
 async function probe(url) {
