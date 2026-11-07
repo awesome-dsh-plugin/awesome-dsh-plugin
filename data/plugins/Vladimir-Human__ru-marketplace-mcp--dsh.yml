@@ -2,5 +2,5 @@ url: https://github.com/Vladimir-Human/ru-marketplace-mcp/tree/main/dsh
 name: Vladimir-Human/ru-marketplace-mcp#dsh
 category: skill
 description:
-  en: 'Skills and optional MCP rows for eleven marketplaces: price comparison across Wildberries, Detsky Mir and Yandex Market, plus per-source search, product cards and reviews, including Ozon, Avito and AliExpress. The 14 skills load on install; both MCP rows stay disabled until RU_MARKETPLACE_MCP_DIR points at a local clone, which needs Python 3.12+ and uv.'
-  zh: 面向十一家电商平台的技能与可选 MCP 行：跨 Wildberries、Detsky Mir、Yandex Market 比价，以及各平台（含 Ozon、Avito、AliExpress）的搜索、商品卡与评论。安装后 14 个技能立即可用；两行 MCP 默认关闭，需将 RU_MARKETPLACE_MCP_DIR 指向本地克隆，该克隆需要 Python 3.12+ 与 uv。
+  en: '15 Agent Skills and three mutually exclusive MCP rows (compare-mcp, decision-mcp, marketplace-mcp) for 12 Russian and Chinese marketplaces and classifieds: cross-marketplace price comparison and per-source search, product cards, seller details and reviews across Wildberries, Ozon, Yandex Market, Detsky Mir, Avito, AliExpress, Taobao, Megamarket, Lamoda, DNS, Citilink, plus Cian real estate. The 15 skills load on install; the MCP rows stay disabled until RU_MARKETPLACE_MCP_DIR is set.'
+  zh: 面向 12 家俄罗斯与中国电商及分类信息平台的 15 个 Agent 技能与三行互斥 MCP 配置（compare-mcp、decision-mcp、marketplace-mcp）：支持跨平台比价，以及 Wildberries、Ozon、Yandex Market、Detsky Mir、Avito、AliExpress（速卖通）、Taobao（淘宝）、Megamarket、Lamoda、DNS、Citilink 的商品搜索、详情卡、卖家信息与评论，外加 Cian 房产搜索。安装后 15 个技能立即可用；MCP 行默认关闭，设置 RU_MARKETPLACE_MCP_DIR 后按需启用。
