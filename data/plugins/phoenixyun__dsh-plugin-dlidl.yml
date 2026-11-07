@@ -1,0 +1,7 @@
+url: https://github.com/phoenixyun/dsh-plugin-dlidl
+name: DliDli
+category: ui
+description:
+  en: 'Bilibili-style danmaku for DSH: the model''s streaming reasoning and answer are split into short bullet comments that fly across the top 20% of the window, while the composer keeps its place; settings cover speed, font size, opacity, lane count, band height, colours and filters for code or English fragments.'
+  zh: '把大模型的流式输出做成 B 站式弹幕：思考和正文按到达顺序切成短句，从窗口顶部 20% 的弹幕区从右向左飞过，输入框位置不动；可调速度、字号、不透明度、轨道数、区域高度、彩色，并能过滤代码和英文碎片。'
+tarball: https://github.com/phoenixyun/dsh-plugin-dlidl/releases/download/v0.1.0/dsh-plugin-dlidl-0.1.0.tgz
