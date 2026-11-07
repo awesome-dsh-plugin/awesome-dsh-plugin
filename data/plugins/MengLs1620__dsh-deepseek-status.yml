@@ -1,0 +1,7 @@
+url: https://github.com/MengLs1620/dsh-deepseek-status
+name: MengLs1620/dsh-deepseek-status
+category: ui
+icon: https://raw.githubusercontent.com/MengLs1620/dsh-deepseek-status/main/assets/icon-512.png
+description:
+  en: Shows DeepSeek's official service status in the DSH session header, including overall and per-component status, uptime percentages, and active or recent incidents. A maintained fork of KekuKase/dsh-deepseek-status (published as @mengls1620/dsh-deepseek-status since 0.1.6); do not install it alongside the original dsh-deepseek-status — both register the same /deepseek-status route and plugin row id.
+  zh: 在 DSH 会话头部显示 DeepSeek 官方服务状态，包括总体状态、各组件状态、可用率，以及进行中或最近的事件。这是 KekuKase/dsh-deepseek-status 的维护分支（0.1.6 起以 @mengls1620/dsh-deepseek-status 发布）；不要与原版 dsh-deepseek-status 同时安装——两者会注册同一个 /deepseek-status 路由与同一条插件行 id。

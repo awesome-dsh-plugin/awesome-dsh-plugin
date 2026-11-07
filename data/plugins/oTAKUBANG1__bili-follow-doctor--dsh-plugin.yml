@@ -1,0 +1,6 @@
+url: https://github.com/oTAKUBANG1/bili-follow-doctor/tree/main/dsh-plugin
+name: oTAKUBANG1/bili-follow-doctor#dsh-plugin
+category: tools
+description:
+  en: Scans your Bilibili follow list, marks accounts that are closed or have posted neither a video nor a dynamic for a configurable number of days, and unfollows only the ones you confirm, skipping mutual follows and anyone who has streamed.
+  zh: 扫描 B站关注列表，标出已注销、以及视频和动态都超过设定天数没更新的账号；确认后才取关，并自动跳过互关和播过的主播。
