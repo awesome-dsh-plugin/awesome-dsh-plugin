@@ -1,0 +1,6 @@
+url: https://github.com/wuyou0423/dsh-space-ptt
+name: wuyou0423/dsh-space-ptt
+category: voice
+description:
+  en: 'Hold Space to record and release to transcribe and send, without focusing the composer first. Esc cancels and window blur auto-cancels. Requires the official voice-input bundle (`@deepseek-ai/dsh-experimental-voice-input-bundle`) enabled with its speech model downloaded; otherwise Space is left alone.'
+  zh: '按住空格录音、松手自动识别并发送，不用先点输入框。按 Esc 可取消，切换窗口自动取消。需先启用官方「语音输入」Bundle（`@deepseek-ai/dsh-experimental-voice-input-bundle`）并下载好语音模型，否则插件不接管空格。'

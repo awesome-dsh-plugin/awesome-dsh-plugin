@@ -1,0 +1,6 @@
+url: https://github.com/Delthin/dsh-plugins/tree/main/packages/tool-wrap
+name: Delthin/dsh-plugins#tool-wrap
+category: tools
+description:
+  en: "Slims PTC SDK tool definitions to plugin-level summaries and tool names, then returns the full visible tool pack when the model calls unwrap with an exact plugin ID, without changing scope or permissions."
+  zh: "在 PTC 会话中把工具定义精简为插件级简介与工具名，模型以精确插件 ID 调用 unwrap 时返回当前可见的完整工具包，不改变作用域与调用权限。"

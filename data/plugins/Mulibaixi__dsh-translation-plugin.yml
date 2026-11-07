@@ -1,0 +1,7 @@
+url: https://github.com/Mulibaixi/dsh-translation-plugin
+name: Mulibaixi/dsh-translation-plugin
+category: ui
+description:
+  en: "Translation and refinement workspace with topic memory, revision history, and main-model coordination; Normal mode uses the companion Composer extension."
+  zh: "提供主题记忆、版本历史与主模型协作的翻译润色工作区，普通模式配套 Composer 扩展使用。"
+tarball: https://github.com/Mulibaixi/dsh-translation-plugin/releases/download/v0.26.12/dsh-translation-plugin-0.26.12.tgz

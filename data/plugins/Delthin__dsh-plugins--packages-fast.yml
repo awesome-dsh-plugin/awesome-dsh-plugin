@@ -1,0 +1,6 @@
+url: https://github.com/Delthin/dsh-plugins/tree/main/packages/fast
+name: Delthin/dsh-plugins#fast
+category: model
+description:
+  en: "Adds a per-session Standard/Fast switch; when the administrator fills in provider, source and target URLs, a loopback proxy injects service_tier priority into matching Responses requests and forwards them to that target."
+  zh: "提供会话级 Standard/Fast 档位切换：管理员填齐 provider、源地址与目标地址后，由本地回环代理为匹配的 Responses 请求注入 service_tier priority 并转发到该目标。"

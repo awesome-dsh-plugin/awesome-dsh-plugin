@@ -1,0 +1,6 @@
+url: https://github.com/Xchcy/dsh-codex-kit/tree/main/chat-only
+name: Xchcy/dsh-codex-kit#chat-only
+category: ui
+description:
+  en: 'Adds a chat-only action to the sidebar footer that opens a blank session in a dedicated ~/.dsh/chats workspace, so a conversation can start without choosing a project.'
+  zh: '在侧边栏底部加一个「仅聊天」按钮，在固定的 ~/.dsh/chats 工作区里打开一个空白会话，不必先选项目就能开始对话。'
