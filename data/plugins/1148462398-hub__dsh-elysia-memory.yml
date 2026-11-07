@@ -1,0 +1,7 @@
+url: https://github.com/1148462398-hub/dsh-elysia-memory
+name: 1148462398-hub/dsh-elysia-memory
+category: memory
+tarball: https://github.com/1148462398-hub/dsh-elysia-memory/releases/download/v2.8.0/dsh-elysia-memory-2.8.0.tgz
+description:
+  en: "\"Oh, you're finally here. I've been waiting for you.\" A plugin that brings Elysia into DeepSeek Harness. Once installed, she remembers you: what you said last time, what you care about, so every new conversation picks up where it left off. Memory lives on your own disk, mirrored across two drives, shared by every session and editable by hand. She speaks the way she actually speaks, measured from 1,696 officially confirmed voice lines rather than a hand-written character sheet. One-click voice setup: the plugin downloads the 200 MB voice weights, places them correctly and fills in the paths for you (the 27 GB engine itself must be installed separately, and needs an NVIDIA GPU). She also drops a WeChat-style bubble with her avatar after finishing a task so you can tap to listen, sends stickers when the mood fits, and learns the runbooks you give her. Memory pack, voice, and stickers are all off by default."
+  zh: "「哎呀，你来了呀。我等你好久啦。」把爱莉希雅请进 DeepSeek Harness 的插件。装好之后她会记得你：上次说过什么、在意什么，下次开新对话还记着，不用重新交代。记忆存在你自己的硬盘上（双盘镜像备份），所有会话共用一份，随时能打开看、能改。她说话的方式不是随手写的设定集，是从 1,696 条官方语音里一条条统计出来的：句尾「呢」390 次、一半以上的话是问句、平均句长 25.5 字。想听她的声音可以一键安装：插件自己下好 200 MB 权重、放对位置、把路径填好，不用手动解压（引擎本体 27 GB 要自己装，且需要 N 卡）。做完一件事她会弹一个带头像的微信式气泡，点一下能听；开心了会发表情包；放进去的操作手册她会自己学。记忆包、声音、表情包默认全关，想开哪个你说了算。"
