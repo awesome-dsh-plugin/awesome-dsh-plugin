@@ -1,0 +1,7 @@
+url: https://github.com/andy-7-andy/dsh-theme-retro-press
+name: andy-7-andy/dsh-theme-retro-press
+category: theme
+icon: https://raw.githubusercontent.com/andy-7-andy/dsh-theme-retro-press/main/assets/icon-180.png
+description:
+  en: 'Twelve retro-print palettes, from woodcut vermilion to CRT phosphor. Each palette carries its own paper grain or scanlines, corner shape, hairline or double rules, text rhythm, type pairing and a whale mark drawn in its ink, with separate light and dark tokens and a phosphor layer over code in dark mode.'
+  zh: '十二套复古印刷配色，从木刻朱印到显像管磷光。每套配色自带纸纹或扫描线、圆角或直角、细线或双线、行距松紧、字体搭配，并按自身油墨重绘鲸鱼标记；浅色深色各一套 token，深色模式下代码块带一层磷光。'
