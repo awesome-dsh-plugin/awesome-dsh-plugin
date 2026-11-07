@@ -608,6 +608,7 @@ dsh plugin --profile web add dshmarket
 - [FallenWings27/dsh-provider-card-release](https://github.com/FallenWings27/dsh-provider-card-release) — 切换模型时在会话输入框旁播一张角色登场卡：身份名、六轴分数（智力／编码／速度／稳定／性价比／上下文）、额度提示与台词；23 张精选卡覆盖 15 个 provider，库里没有精选卡的模型按公开基准派生数据卡；基准集里也没有分数的则回退为通用卡。web 客户端插件，无依赖、无 hooks。
 - [fan56/dsh-tui-pi](https://github.com/fan56/dsh-tui-pi) — DeepSeek Harness 的全功能 TUI：流式对话、powerline 状态栏、实时思考/工具/待办面板、子代理双视图、主题热切换——全部以纯 cordis 插件实现，不 fork、不 patch 上游一行代码。
 - [fangwen9527/dsh-composer-ux](https://github.com/fangwen9527/dsh-composer-ux) — 可配置发送/换行键位、输入框右键菜单三种来源（插件不介入 / 浏览器菜单 / 自定义样式菜单）、带分类的快捷指令面板（每条可设「每次发送都附加」或「仅在本会话第一条消息附加」，并有跨分类移动与新建）、用另一次模型调用把草稿整理成清晰指令的提示词优化、设置面板尺寸记忆，并为 OpenCode 路由自动注入 x-opencode-session 请求头。快捷指令存在全局文件 ~/.dsh/quick-prompts.json 里，与会话、项目无关。
+- [Fantasy421/dsh-whiteboard](https://github.com/Fantasy421/dsh-whiteboard) — 人机共享的可编辑 Excalidraw 白板，支持同会话多白板管理、快速跳转、AI 增量编辑、曲线折线和图片导出。
 - [FanXi1230/fanxi#dsh-nova](https://github.com/FanXi1230/fanxi/tree/main/plugins/dsh-nova) — 把 DeepSeek Harness 输入框的推理强度滑轨做成一片小宇宙。Off、Low、High、Max 各有专属星场与极光，档位之间平滑过渡，并绑定真实的当前会话模型选择。
 - [FAVKTOXIC/dsh-caption-bar](https://github.com/FAVKTOXIC/dsh-caption-bar) — 将会话视图移入 Windows 标题栏、其余顶栏工具压缩进紧凑右轨，在 DSH Desktop 与 Codex UI 中保留会话标题、全屏、动态状态计数与菜单功能，同时省下一整行垂直空间。
 - [faxble/dsh-model-picker](https://github.com/faxble/dsh-model-picker) — 模型速选器：在模型下拉框左侧添加按钮，弹出全量模型选择窗口（提供商分组、实时搜索、提供商筛选、读取用户配置的真实能力标签、推理徽章、最近使用与推理档位选择器），选中后立即回写原生下拉框并生效。
@@ -9202,6 +9203,7 @@ dsh plugin --profile web add dshmarket
 - [blackstar-baba/dsh-bird-bike](https://github.com/blackstar-baba/dsh-bird-bike) — 一只戴头盔的像素小鸡骑行在 GUI 底部的我的世界像素风骑行带里，带 80 秒昼夜循环、按铃音符、跳跃、车头灯与骑行统计。白天苦力怕出没，夜晚僵尸被撞飞。需要 DSH >=0.2.1-alpha。
 - [Bob-Bo1/dsh-stock-watch](https://github.com/Bob-Bo1/dsh-stock-watch) — DSH 本地优先的 A 股持仓与自选监控：侧栏行情、持仓盈亏，以及网页添加、修改、删除和 JSON 保存。
 - [BossKrabs/product#dsh-madara-pixel-pet](https://github.com/BossKrabs/product/tree/main/packages/dsh-madara-pixel-pet) — Windows 像素宇智波斑桌宠：16 组动作随 Harness 任务事件变化，直接依赖原作者的大肥鱼运行库。
+- [BruceXcluding/dev-almanac#dsh](https://github.com/BruceXcluding/dev-almanac/tree/main/packages/dsh) — 程序员黄历：右侧栏标签页显示今日黄历（农历、宜忌翻译成编程活动、冲煞、节气、吉时）、十二星座每日运势和求签；提供 /almanac 与 /qiuqian 命令及 almanac_today 工具。全部按日期离线计算，不联网、不调用模型。
 - [bubbleptr/dsh-holdem](https://github.com/bubbleptr/dsh-holdem) — 六人无限注德州扑克：1 名玩家对 5 位只能看到自己底牌的 LLM 智能体。在 Web GUI 中提供独立 Tab 与会话区可拖拽悬浮小窗，支持按浏览器隔离的牌局与 CSRF 防护、按底池倍数给出的加注尺度、每人 3 次买入后出局，以及摊牌亮牌与公共牌翻牌动效。
 - [Cerbur/clutch-dsh#clutch-dsh-fireworks](https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-fireworks) — 通过 `happy_fireworks` Agent 工具为 DSH Web UI 增加庆祝礼花覆盖层。
 - [chen731215-dev/dsh-tavern-v2](https://github.com/chen731215-dev/dsh-tavern-v2) — 酒馆管理面板：多角色卡、多世界书、多预设与会话级隔离，记忆总结、角色关系网、剧情选项一键发送，另有 NSFW 模式。完整效果需同时安装伴生插件 dsh-muv-engine 与 dsh-muv-table，用于渲染状态栏、剧情选项与变量表格。角色卡自带的状态栏 / 变量折叠 / 选项卡片在沙盒 iframe 中渲染，卡内样式不再外溢到宿主界面。
