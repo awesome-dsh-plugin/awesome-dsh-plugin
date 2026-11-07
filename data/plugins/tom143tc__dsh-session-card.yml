@@ -1,0 +1,7 @@
+url: https://github.com/tom143tc/dsh-session-card
+name: tom143tc/dsh-session-card
+category: session
+description:
+  en: "Draggable session cards on a board inside the session canvas, with grid, matrix and freeform layouts, a per-card composer, and native floating windows."
+  zh: "把会话做成卡片桌布：网格 / 宫格 / 自由布局、卡片内直接发消息、可弹出原生浮窗。"
+icon: https://raw.githubusercontent.com/tom143tc/dsh-session-card/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/leinaldo/dsh-routines
+name: leinaldo/dsh-routines
+category: workflow
+description:
+  en: 'Scheduled prompts that open a fresh conversation for every run, with cron, one-time and manual triggers, a per-task working directory, and run history kept out of the sidebar.'
+  zh: '定时提示词任务：每次运行新开一个对话，支持 cron、一次性与手动触发，可指定工作目录，运行记录不进左侧列表。'
