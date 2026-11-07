@@ -281,6 +281,7 @@ dsh plugin --profile web add dshmarket
 - [AlLHHH/dsh-perf-boost](https://github.com/AlLHHH/dsh-perf-boost) — DSH 桌面端性能优化与流畅度增强（纯客户端：只改渲染进程、不改宿主代码、不落盘配置）：长对话省渲染、窗口隐藏不排帧、后台暂停定时器、媒体懒加载、会话列表节流、大会话文件预热，设置页显示实测省下的主线程时间。遇到卡顿、掉帧、打开大会话慢、后台吃 CPU 时先试它，也可以当作轻量加速与渲染优化工具。
 - [Alone-show/dsh-quick-keys](https://github.com/Alone-show/dsh-quick-keys) — DSH Web 输入框的两个操作：斜杠菜单里的 /new 新建对话且不向模型发送任何内容，对话区按 Shift+Tab 切换计划模式。
 - [AloneFu/dsh-calendar-plugin](https://github.com/AloneFu/dsh-calendar-plugin) — DSH 右侧栏里的 Obsidian 日记、待办与 Day Planner 时间块：周一起始的月历（带每天的字数点与任务点）、紧凑时间轴（HH:mm 时间块）、选中日的日记摘要与任务列表；勾选状态、任务内容与时间都会写回 Markdown 文件，首次使用有向导，可自动找到知识库或手填路径。
+- [AlseFum/dsh-pluginlet](https://github.com/AlseFum/dsh-pluginlet) — 把仓库里每个 .pluginlet 文件变成一个独立的沙箱会话视图标签页，权限按内容哈希绑定。
 - [altamkp/dsh-middle-click](https://github.com/altamkp/dsh-middle-click) — 在 DeepSeek Harness 的 Web 界面里，用鼠标中键关闭会话或侧边栏标签页。会话走这一行自带的归档操作，因此运行中任务的确认框和撤销通知仍由 Harness 原样渲染；标签页走自己的关闭按钮，「唯一的指南页不能关」这条规则不受影响。手势要求在同一元素上按下并松开，所以中键拖动不会误关。插件自带独立设置页，两个开关分别关闭这两项，并按浏览器记住。
 - [Altermoe/dsh-model-logos](https://github.com/Altermoe/dsh-model-logos) — 在输入框的模型选择器中显示模型品牌图标，在「设置 → 模型」页的提供商行、模型行和添加提供商下拉框中显示厂商与模型图标，并提供按提供商/模型覆盖图标的图标选择器，覆盖项保存在 DSH 用户设置文档中。
 - [altmanWang/dsh_plugin_btc_dashboard](https://github.com/altmanWang/dsh_plugin_btc_dashboard) — DeepSeek Harness 的 OKX 永续合约看板插件：BTC/ETH 的 1m/3m/15m/1h/4h/1D K 线、EMA 均线叠加、直线/斐波那契/尺子画线、收线预警（桌面通知/提示音/邮件；邮件通道需另装 dsh-qq-email 插件）与面板内回测。行情来自 OKX 公开接口，不需要 API key。
@@ -2722,6 +2723,7 @@ dsh plugin --profile web add dshmarket
 - [mumuer1024/dsh-ui-liteglass](https://github.com/mumuer1024/dsh-ui-liteglass) — DeepSeek Harness 轻量级外观皮肤：自定义壁纸、玻璃质感面板与重点色；服务端持久化、多设备一致，不接管原生深浅色。
 - [mux9056-bot/dsh-theme](https://github.com/mux9056-bot/dsh-theme) — DSH Web UI 主题包：30 款即插即用的 CSS 主题，每款含浅色与深色变体，集成于「设置 → 通用」，并提供程序化 API。
 - [muzapar00/united_nation_skin_deepseek_harness](https://github.com/muzapar00/united_nation_skin_deepseek_harness) — 联合国主题皮肤：白底联合国蓝、官方徽记、对话背景缓慢轮播带署名的联合国维和照片、宪章与联合国知识丝带，以及收录 7,030 种语言（127 种已完整翻译）的语言选择器，不改动任何原有按钮。纯浏览器侧实现，附 Linux/macOS/Windows 一键安装脚本。
+- [Natasha123-bit/dsh-vibrancy-skin](https://github.com/Natasha123-bit/dsh-vibrancy-skin) — macOS 专用磨砂玻璃皮肤：给 DSH NEXT / DSH Desktop 的会话面板与第三方侧边栏套上原生 Vibrancy 材质，两级效果各自独立开关，可选壁纸底图并调节磨砂度，附设置页；只改背景材质，不动布局。
 - [PRTS · 源石协议](https://github.com/Nefelibater/dsh-theme-prts-originium) — 明日方舟 PRTS 源石协议主题：可交互旋转 3D 源石晶簇、工业指令面板、普瑞赛斯记忆残片与启动序列。
 - [Nektropy/dsh-starry-sky-theme](https://github.com/Nektropy/dsh-starry-sky-theme) — 深色星空主题：浅色与深色外观统一为同一套深空配色，带闪烁星点和四组星座连线；插件启用时外观固定在深色。
 - [nerv-base/dsh-theme-eva](https://github.com/nerv-base/dsh-theme-eva) — EVA 弐号机主题，提供插入栓启动演出、基于上下文余量的同步率表和可配置的深色界面样式。
@@ -5573,6 +5575,7 @@ dsh plugin --profile web add dshmarket
 - [springbrand-lab/dsh-oauth-mcp-client](https://github.com/springbrand-lab/dsh-oauth-mcp-client) — 面向 Streamable HTTP 服务的 OAuth 2.1 MCP 客户端：在设置页添加连接，通过浏览器登录（PKCE + 动态客户端注册），其工具随即注册进 DSH；令牌存于凭据服务，连接写入 profile。
 - [SPYQWER1/dsh-codex-tools](https://github.com/SPYQWER1/dsh-codex-tools) — 基于 Codex 的 `web_search`、`image_gen` 与 `image_vision` 工具，复用 ChatGPT OAuth 登录态为 DeepSeek Harness 提供网页搜索、生图与识图能力。
 - [sryimnoob123/dsh-tool-pwsh-safe](https://github.com/sryimnoob123/dsh-tool-pwsh-safe) — 把 PowerShell 脚本 base64 编码后执行，引号、$、反斜杠、中文全部原样传递，免去转义地狱。走与内置 pwsh 工具相同的沙箱通道。
+- [stallenlu/dsh-disk-cleaner](https://github.com/stallenlu/dsh-disk-cleaner) — 面向 DeepSeek Harness 的 Windows 磁盘清理插件，扫描已知的安全缓存目录、显示占用大小，在 Web 面板中回收空间，并对无法自动清理的部分提供只读审计。
 - [stallenlu/dsh-scihub](https://github.com/stallenlu/dsh-scihub) — 为 DSH 注册 scihub_pdf 与 scihub_batch 两个模型工具：按 DOI 或文章 URL 经 Sci-Hub 镜像解析并下载论文 PDF 到会话工作区，逐条如实返回下载状态；镜像列表可在运行时配置，修改后无需重启。
 - [STARDUSTLC666/deepseek-computer-use](https://github.com/STARDUSTLC666/deepseek-computer-use) — 通过 UI Automation、窗口截图和鼠标键盘操作 Windows 桌面软件，支持会话独立应用授权和操作审批。
 - [STARDUSTLC666/dsh-calendar](https://github.com/STARDUSTLC666/dsh-calendar) — CalDAV 日历插件：查/建/改/删/搜日程与健康自检，Google/iCloud/Nextcloud/自定义端点，RRULE 重复事件展开；设置页内置月/周/议程面板，连接可在面板内填写并先测后存，周视图支持拖拽改期（15 分钟吸附、5 秒撤销）。面板内置 4 步首次使用引导，看一次后不再出现。
