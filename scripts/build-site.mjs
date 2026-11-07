@@ -199,7 +199,7 @@ const starsFile = 'data/stars.json'
 // A restored Actions cache can predate a committed count. Fill missing entries
 // from the checkout and let the cache supply more recent values.
 const committedStars = process.env.GITHUB_ACTIONS === 'true'
-  ? JSON.parse(execSync('git show HEAD:data/stars.json', { encoding: 'utf8' }))
+  ? JSON.parse(execSync('git show HEAD:data/stars.json', { encoding: 'utf8', maxBuffer: 1 << 24 }))
   : {}
 const cachedStars = fs.existsSync(starsFile) ? JSON.parse(fs.readFileSync(starsFile, 'utf8')) : {}
 const starsMap = { ...committedStars, ...cachedStars }
