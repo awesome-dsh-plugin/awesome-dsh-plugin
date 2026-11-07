@@ -1,0 +1,6 @@
+url: https://github.com/daoyan2142/dsh-runtime-kit
+name: daoyan2142/dsh-runtime-kit
+category: dev
+description:
+  en: 'Fast-execution runtime for dsh: context governance with 4 KB tool-result caps and field projection, zero-LLM fast-path templates with idempotency keys, PTC container scripts that keep intermediate results out of context, a three-tier sandbox with file/command/network rules, injection detection, secret redaction, snapshots with a recycle bin, and append-only audit logs; 10 runtime_kit_* slash commands, no business dependencies.'
+  zh: '闈㈠悜 dsh 鐨勫揩閫熸墽琛岃繍琛屾椂锛氫笂涓嬫枃娌荤悊锛? KB 宸ュ叿杩斿洖鎴柇涓庡瓧娈垫姇褰憋級銆侀浂 LLM 蹇矾寰勬ā鏉匡紙骞傜瓑閿級銆丳TC 瀹瑰櫒鑴氭湰锛堜腑闂寸粨鏋滀笉杩涗笂涓嬫枃锛夈€佷笁绾ф矙绠憋紙鏂囦欢/鍛戒护/缃戠粶瑙勫垯銆佹敞鍏ユ娴嬨€佹晱鎰熶俊鎭劚鏁忋€佸揩鐓т笌鍥炴敹绔欙級涓庤拷鍔犲紡瀹¤鏃ュ織锛?0 涓?runtime_kit_* 鏂滄潬鍛戒护锛岄浂涓氬姟渚濊禆銆?
