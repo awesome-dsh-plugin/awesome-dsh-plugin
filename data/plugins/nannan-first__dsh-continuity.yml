@@ -1,0 +1,6 @@
+url: https://github.com/nannan-first/dsh-continuity
+name: nannan-first/dsh-continuity
+category: session
+description:
+  en: 'Long-task continuity for DSH: every turn end leaves a breakpoint (what I did, what is next, what is still unfinished), which is injected as a snapshot when the same workspace starts a fresh session, so work resumes instead of restarting. Also keeps a ledger of file changes and stores SHA-256 fingerprints of persona or config files, so you can verify after the fact whether anything was altered. Four tools (continuity_breakpoint, continuity_breakpoints, continuity_ledger, continuity_attest), plain JSONL storage under <workspace>/.dsh-continuity/, zero dependencies, no network calls.'
+  zh: '长任务续接：每轮结束自动留一条断点（做了什么、下一步、还差什么），同一工作区的新会话开头会把最近几条注入为快照，接着往下干而不是从头再来。同时维护文件改动留痕，并给人设卡、配置这类文件存 SHA-256 指纹，事后能验出是否被人改过。四个工具（continuity_breakpoint / continuity_breakpoints / continuity_ledger / continuity_attest），数据是以纯 JSONL 存在 <工作区>/.dsh-continuity/，零依赖、不联网。'
