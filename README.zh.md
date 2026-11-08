@@ -1279,6 +1279,7 @@ dsh plugin --profile web add dshmarket
 - [nuet9/dsh-internal-folder-browser](https://github.com/nuet9/dsh-internal-folder-browser) — 在 Harness 内浏览本地文件目录，支持目标文件高亮与八种查看布局；图片缩略图和系统文件图标仅在 Windows 下提供。
 - [null-dat/dsh-whale-tail](https://github.com/null-dat/dsh-whale-tail) — 针对 DSH 思考模式鲸鱼尾巴的动画，丰富成 4 种动画。
 - [Num86/dsh-functions](https://github.com/Num86/dsh-functions) — 给 DSH 顶端加一个可扩展的「功能」栏：插件注册的一键动作都在这里，支持分级确认与二级菜单。0.4.0 起自带了「重启 DSH」功能，不再需要单独安装重启插件。
+- [Nyco1d/dsh-prompt-optimizer](https://github.com/Nyco1d/dsh-prompt-optimizer) — 输入框旁的一键提示词优化器，带左右对比面板与模式设置。
 - [objectivex666/dsh-settings-search](https://github.com/objectivex666/dsh-settings-search) — 通过关键词、拼音、意图或 AI 一键搜索 DSH 设置面板，并直达目标设置页、标签或选项。
 - [Odefined/dsh-mobile-webui](https://github.com/Odefined/dsh-mobile-webui) — 修复 dsh web GUI 的手机视口体验：抽屉式侧栏与滑动手势、纯图标 composer 与「权限·模型·思考深度」状态行、浮窗居中、横向溢出与滚动条挤压居中修复。
 - [oioiphainon/dsh-widget](https://github.com/oioiphainon/dsh-widget) — 常驻 Windows 桌面的透明置顶悬浮鱼，实时显示当前 DSH 会话的轮次、步骤、工具调用、todo、后台任务与团队任务；可选开机自启、DSH 退出后保留，右键可隐藏。
@@ -1809,6 +1810,7 @@ dsh plugin --profile web add dshmarket
 - [Xingkong42/dsh-open-workspace](https://github.com/Xingkong42/dsh-open-workspace) — 在工作区侧边栏会话行菜单和会话顶部标题栏提供「打开工作区」入口，用系统文件管理器打开当前会话所属工作区文件夹。
 - [Xingkong42/dsh-zh-labels](https://github.com/Xingkong42/dsh-zh-labels) — 每次启动自动将 DSH 界面英文工具与状态标签修补为中文，升级 DSH 后自动恢复，无需手动改文件。
 - [xingxingbk-git/dsh-deepseek-chat](https://github.com/xingxingbk-git/dsh-deepseek-chat) — 在 DSH 桌面版中提供 DeepSeek 网页聊天与 Harness 工作区之间的切换。
+- [xingyeai23/dsh-comfyui-studio](https://github.com/xingyeai23/dsh-comfyui-studio) — DSH 侧栏里的 ComfyUI 工作室：连接本机或局域网 ComfyUI，选择已保存的图片工作流，清理/改写提示词、编辑 LoRA 与节点、生成图片并预览结果，可复制种子。
 - [xinjiguaike/dsh-session-location](https://github.com/xinjiguaike/dsh-session-location) — 在单列表的每个会话行标题下方显示所属工作区与当前 Git 分支。
 - [xinming-chenniang/dsh-button](https://github.com/xinming-chenniang/dsh-button) — DSH 输入框旁的可编辑提示词快捷按钮：把反复重打的提示词、常用语存成按钮，点一下发送预设文字或只填入草稿；可排序、换位置、调大小。纯文字动作，不执行宿主命令；有草稿时不覆盖；按钮还能在点击时现读上一条消息、当前草稿或选区，带 {{名字}} 的会先让你填再执行。
 - [xinspark/dsh-better-session-topbar](https://github.com/xinspark/dsh-better-session-topbar) — 更好的会话顶栏：把会话顶栏标题换成工作区与会话面包屑，可在顶栏下拉里切换工作区、会话与子智能体；添加工作区直接交给宿主的目录选择，桌面版就是系统文件夹对话框。
@@ -4432,7 +4434,7 @@ dsh plugin --profile web add dshmarket
 - [lcthe/dsh-hermes-memory](https://github.com/lcthe/dsh-hermes-memory) — DSH 有界持久记忆：memory_save/search/replace/remove/list 覆盖全局、用户、项目、失败四类范围，基于 DSH storage-domain 持久化，写入前做密钥与提示注入扫描，支持会话范围检索、保留期清理与可选的会话开始注入；常驻上下文用 memory_pin/memory_pins/memory_unpin 管理。
 - [leetom314/dsh-tiered-memory](https://github.com/leetom314/dsh-tiered-memory) — 分层持久记忆（user／env／project）：每层各有字符预算与语义查询路由；层满时拒绝写入，而不是静默淘汰。
 - [lemoncat7/dsh-knowledge](https://github.com/lemoncat7/dsh-knowledge) — 提供本地与远程知识库，支持项目和会话范围检索、可控回写以及内嵌 Web 管理台。
-- [Leon-dbh/life-innovation](https://github.com/Leon-dbh/life-innovation) — 常驻 DSH agent 的长期记忆：SQLite 保存原话、梗概、要点、画像与关系，入库靠确定性抽取，不为此调用模型；召回按词稀有度、新鲜度与情绪权重排序，并给出每条命中的理由；带淡忘、归档与回收站；另有动作账本与每条都带证据的日记。需要 Node 22+ 与 DEEPSEEK_API_KEY；随附安装器与桌面通知仅支持 Windows，数据目录默认 D:/life-innovation-home。
+- [Leon-dbh/life-innovation](https://github.com/Leon-dbh/life-innovation) — 让你的 DSH 助手记得久一点：聊过的事、重要的人和答应过的话都会记住，过几天问起还能想起来；还会写日记，每条都连着当时的对话。旧记忆会自然淡忘。需要 Node 22+ 和 DeepSeek API key；安装器与桌面通知仅支持 Windows。
 - [levodoubt/project-node-memory](https://github.com/levodoubt/project-node-memory) — 给 DSH Agent 用的「md 即数据库」项目知识库：10 个 kb_* 工具（含登记已有笔记的 kb_register）、稳定 TID、`[[node]]` 只出链接不复制正文、`[[tscl]]` 定义就地展开、有界读取、覆盖 tscl 的结构 lint、工作区优先的库发现、内嵌 git 快照、节点图面板，另带系统提示词段落与随包技能，让 Agent 优先用 kb_* 而不是手写 docs/。
 - [LFM097384/Context-Prism](https://github.com/LFM097384/Context-Prism) — 面向 DeepSeek Harness 的项目级本地上下文引擎：对历史、代码、文件、用户偏好和 Agent 轨迹做检索/压缩/优先级排序，为任意 LLM 生成动态上下文窗口。
 - [lgquan/dsh-workspace-memory](https://github.com/lgquan/dsh-workspace-memory) — 为 DSH 提供工作区隔离的持久化记忆，让每个工作区拥有可检索、可审计、可纠错和可删除的独立记忆，并支持受控的全局记忆。
