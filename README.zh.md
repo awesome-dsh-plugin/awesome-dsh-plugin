@@ -482,6 +482,7 @@ dsh plugin --profile web add dshmarket
 - [crisvollerei/dsh-persona-shell](https://github.com/crisvollerei/dsh-persona-shell) — 在系统提示词之外，用选定人格转述每条助手汇报；内置四个预设，支持会话级开关，原文随时可查。
 - [Crosery/dsh-drop](https://github.com/Crosery/dsh-drop) — 把文件拖入或粘贴进 Web 输入框，图片与文件共用预览栏；PNG/JPEG/WebP/GIF 保留出厂图片通道，其他文件优先引用匹配的本地路径，否则流式暂存到 Host，发送时才追加 @ 引用。提供浏览器媒体/PDF 和限长文本预览；Office 与压缩包显示身份卡，未发送文件清单仅保存在页面内。
 - [Crosery/dsh-viewer](https://github.com/Crosery/dsh-viewer) — 面向模型的 display_file 工具，在网页 UI 内联渲染 36 种扩展名：图片（点击开灯箱）、可拖进度条的视频、音频、PDF、经 LibreOffice 在 Host 转为 PDF 的 Office 与 OpenDocument 文件，以及沙箱 iframe 中的本地 HTML；字节由带 Range 支持的签名 HTTP 路由流式传输，PNG/JPEG/WebP/GIF 在支持图像输入的路由上同时进入模型上下文。
+- [CsBpRd/dsh-split-view](https://github.com/CsBpRd/dsh-split-view) — 把 DSH 主区域竖着分成多列，每个并行任务一列实时对话；超过 4 列用鼠标滚轮整页翻，分隔线可拖拽调宽，侧边栏会话行可直接加入或移出分屏，另有只显示进度与当前步骤的极简视图，并可一键取消分屏。
 - [cshengyi023-collab/dsh-deepsea-echo](https://github.com/cshengyi023-collab/dsh-deepsea-echo) — 明日方舟风格的 DSH 启动动画：PRTS 终端自检、声呐扫描、全息锁定、干员档案，最后定格在「深海回响」，约 4.6 秒，自带 4 套可切换的原创合成配乐（也可关闭音效）；点击或 Esc 跳过，并可在设置中改时长与重播。
 - [cshengyi023-collab/dsh-pet-companion](https://github.com/cshengyi023-collab/dsh-pet-companion) — 给桌宠加一个不惹眼的陪伴面板：番茄钟、待办清单、喝水/久坐提醒，以及借桌宠模型通道的课程讲解与作业辅导。
 - [cspyz/dsh-terse-mode](https://github.com/cspyz/dsh-terse-mode) — 四档「简洁模式」常驻对话页顶部，思考强度、联网搜索、子代理三个开关独立可调，设置页里也有一份；四个档位都不设输出上限。
@@ -1945,6 +1946,7 @@ dsh plugin --profile web add dshmarket
 - [Zenjibad/dsh-any-attachment](https://github.com/Zenjibad/dsh-any-attachment) — 让 DSH 网页以无路径 @提及 附加任意类型文件：可从 @ 菜单挑选工作区文件，或拖入输入区，Agent 直接读取。
 - [Zenjibad/dsh-drop-any-file](https://github.com/Zenjibad/dsh-drop-any-file) — 让 DSH 网页聊天支持拖拽任意类型文件：非图片文件保存到当前会话工作区，供 Agent 读取使用。
 - [Zenjibad/dsh-mcp-toggle](https://github.com/Zenjibad/dsh-mcp-toggle) — 在 DSH 设置 → MCP 服务器中直接启用或停用 MCP：即时停止或启动每个 MCP 客户端连接，并持久化，重启后依旧生效。
+- [zenro21/dsh-open-card](https://github.com/zenro21/dsh-open-card) — 调整 DSH 界面里任意块的长宽：点选后拖八个手柄改尺寸，还能收起、滚动内容、平移、置前，尺寸与位置会被记住并在刷新后恢复。
 - [zenvertao/dsh-inline-comments](https://github.com/zenvertao/dsh-inline-comments) — 选中即批注，刷新亦留存；随消息发送，模型逐条回应。
 - [Zephinel/dsh-intelligent-ui](https://github.com/Zephinel/dsh-intelligent-ui) — 在 DSH 对话中把 OpenUI Lang 答案渲染成交互卡片或阅读式文章，支持地图、图表、表单、PNG 图片导出和独立交互 HTML 导出。
 - [zerorigin-studio/dsh-deepseek-chat](https://github.com/zerorigin-studio/dsh-deepseek-chat) — 网页对话入口插件：侧边栏一键打开 chat.deepseek.com 独立窗口（dsh-desktop 桥接），纯网页环境自动回退内嵌打开。
@@ -5392,6 +5394,7 @@ dsh plugin --profile web add dshmarket
 - [nyantused-cpun/gewu-tools](https://github.com/nyantused-cpun/gewu-tools) — 面向纯文本 DSH 主脑的模型无关视觉审阅流水线：HTML 逐页截图 + 视觉子代理简报契约（gewu_prep），再把每条审阅发现定位回源码核验真值（gewu_locate）；已在 mimo-v2.5 与 qwen3.7-plus 上实测。
 - [dsh-agent-picker](https://github.com/Ok541151/cwk) — DSH 的 Agent 模式选择器：在输入框旁边直接选定一个外部 Agent CLI（Claude Code、Codex、 Qwen Code、Gemini CLI、Aider、Goose、Hermes…）作为当前会话的默认执行体，不必去改配置文件。 Agent 名册是数据驱动的，已安装的 CLI 会从 PATH、托管 CLI 目录和约定目录自动发现；装了但还缺 凭据或需要常驻服务的，会显示为「待配置」而不是被悄悄藏起来。
 - [oldHan2423/dsh-everything-find](https://github.com/oldHan2423/dsh-everything-find) — 基于 Everything 索引的全盘文件名搜索：everything_find 工具毫秒级定位任意盘上的文件与文件夹，并在插件页提供配置卡片。
+- [OldQin-Aurora001/portwrench#dsh-portwrench](https://github.com/OldQin-Aurora001/portwrench/tree/main/packages/dsh-portwrench) — 在 DSH 内嵌端口扳手面板：查看本机监听端口、识别归属、关闭目标进程树。需先安装并运行 PortWrench（Windows）。
 - [Oliveryfaso/dsh-babel](https://github.com/Oliveryfaso/dsh-babel) — 读取 Claude Code 和 Codex 插件配置，发现并预检 MCP 服务器与斜杠命令，支持在 DeepSeek Harness 中按需启用注册。
 - [ollamadou/dsh-downloader](https://github.com/ollamadou/dsh-downloader) — 支持断点续传、多连接加速、国内镜像/代理预置与 DeepSeek 资源发现的下载器。
 - [omdsh-dev/dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool) — 用 Monaco 编辑器创建和管理沙箱化的自定义 JavaScript 工具。
@@ -5785,6 +5788,7 @@ dsh plugin --profile web add dshmarket
 - [xizhilang2012/dsh-claim-gate](https://github.com/xizhilang2012/dsh-claim-gate) — 公开发言前的自证闸门：断言必须给出可核对的出处（http(s) 链接 + 不少于 8 字原文），正文里的数字必须能在引文中找到，引文与正文词汇重叠低于 10% 判为无效引用；只有二手来源时不允许使用绝对化措辞。判定全部由确定性规则完成，不调用模型、不联网。guard 子命令在不过闸时不执行后续发布命令（fail-closed），被拦时给出解释与可选改法；同一话题第二次提交必须带 --ack 回执说明改了什么，三次不过即停止并交回人工。提供 check / explain / fix / guard 四个命令，30 个测试。
 - [XMoon/dsh-profile-settings](https://github.com/XMoon/dsh-profile-settings) — 为 DeepSeek Harness 提供按 profile 分层的设置覆盖：全局 settings.yaml 仍为基线，每个 profile 可用自己的 profiles/<name>/settings.patch.yml 覆盖任意设置命名空间——对象段递归合并，数组与标量整体替换，!unset 显式屏蔽继承值。覆盖层对现有插件透明（照常读 ctx.settings），写入只落在 profile 覆盖层；官方 schema 语义、revision、expectedRevision 冲突检测、watcher 与事件均不改动。附带 settings 命令族（get/set/unset/mask/unmask/promote/demote/migrate/diff/layers），并在 Web 设置面板经 loopback RPC 通道提供 Profile Settings 区块。
 - [xmutfyh/dsh-plugin-writing-guard](https://github.com/xmutfyh/dsh-plugin-writing-guard) — 论文写作守卫（中英双语）：去掉 AI 式防御性写作，润色时守住科学证据（数字/引用/主张强度/零结果/scope），并按目标期刊校准写作风格（Journal Profile + Journal Fit）。纯本地正则/统计，零网络零 LLM；提供 writing_rules / writing_audit / writing_style_profile / writing_journal_profile，论文写入后自动审计。
+- [xsnnnnnn/dsh-coros](https://github.com/xsnnnnnn/dsh-coros) — 把高驰（COROS）官方 MCP 服务接入 DeepSeek Harness：自包含的本机 stdio↔HTTP 桥 + 本机 OAuth 登录，在当前端点上提供 34 个工具，覆盖睡眠、HRV、静息心率、恢复、训练负荷、活动与 FIT 文件，以及训练课程与训练计划的增删改查和排期。
 - [xtt-xt/dsh-custom-tool-studio](https://github.com/xtt-xt/dsh-custom-tool-studio) — 用 Python 在网页、对话或 dsh-go 手机 App 的原生面板里编写自定义工具，保存后免重启注册成 DSH 工具；危险工具每次执行都走内置审批，工具可分组成包，还可选「解锁模式」按对话逐步放出。需 PATH 中有 Python 3。
 - [xuanyuanchumo/dsh-kaogong](https://github.com/xuanyuanchumo/dsh-kaogong) — 离线公务员备考学习面板，整合 15 个上游开源题库，提供 SRS 错题本、整卷模考、申论离线评改、可交互知识图谱与白盒可观测。npm 包不含题库数据：安装后需在题库管理里克隆必选包（约 363 MB，15 个上游仓库全量约 2.2 GB）。
 - [xuezuoys/dsh-blender-mcp-bridge](https://github.com/XuezuoYS/dsh-blender-mcp-bridge) — 此项目旨在桥接 Blender MCP Add-on，使 DSH 上的模型可便捷对接接入当前用户工作的 Blender 以辅助创作，且满足基础安全需要。
