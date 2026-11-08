@@ -464,6 +464,7 @@ dsh plugin --profile web add dshmarket
 - [ChuanTianML/prompt-for-me](https://github.com/ChuanTianML/prompt-for-me) — DSH 输入框的上下文感知下一句建议：重复 Trigger 可持续换一条，发送前始终由用户确认。
 - [chumoe/dsh-file-manager](https://github.com/chumoe/dsh-file-manager) — 把侧边栏「工作区文件」面板换成文件管理器：加入对话时生成与输入框 @ 选文件一致的 chip，语法高亮下可双击选词、三击选行，支持压缩解压、上传下载，并可跳转到机器上任意目录。
 - [chzisnull/dsh-file-finder](https://github.com/chzisnull/dsh-file-finder) — 工作区文件查找面板：按文件名或内容搜索，用 DSH 原生右侧栏预览打开结果，需要时在内置编辑器里修改文本，并在保存前检查版本冲突。
+- [CIBUDAYI3906/dsh-prompt-trove](https://github.com/CIBUDAYI3906/dsh-prompt-trove) — 输入框常用提示词库：项目和全局两层 Markdown 提示词，点一下或 @ 触发追加进草稿，不覆盖已写内容。
 - [Cieux/dsh-zoom-scale](https://github.com/Cieux/dsh-zoom-scale) — DSH 整体界面缩放（75%–200%，5% 一档）：设置行、会话头部步进器、Ctrl/⌘+滚轮三种入口；内置 shim 换算 rect、视口单位、媒体查询与指针坐标，使 position: fixed 浮层始终贴住触发元素。
 - [cinewave0/cinewave0-dsh-quick-panel](https://github.com/cinewave0/cinewave0-dsh-quick-panel) — Windows DSH 独立伴生窗：待办、提醒、实时会话消息、审批接管和快速输入。
 - [cjjchina3088191870-sudo/dsh-plugin-ekko-skin-manager](https://github.com/cjjchina3088191870-sudo/dsh-plugin-ekko-skin-manager) — 在 DSH 设置中切换初音与玫瑰主题，调整人物装饰、背景浓度与手机导航。
@@ -3984,6 +3985,7 @@ dsh plugin --profile web add dshmarket
 - [myqy91615-web/dsh-conversation-folders](https://github.com/myqy91615-web/dsh-conversation-folders) — 每个会话一个专属文件夹：自动存档对话记录，会话空闲 10 分钟后把调研产出的表格、图表等文件按类别归档并自动命名，会话菜单中提供删除入口，删除会话时连同文件夹一起彻底删除。
 - [Mzgnk/dsh-bz](https://github.com/Mzgnk/dsh-bz) — 三级规则注入器：长对话里反复重发规则，带熔断、内容指纹去重、会话持久化与设置面板编辑器。
 - [mzzsfy/dsh-plugin#dsh-session-manager](https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-session-manager) — 会话管理：超期会话自动归档（阈值可配），归档面板支持取消归档，删除移入系统回收站可还原。
+- [nannan-first/dsh-continuity](https://github.com/nannan-first/dsh-continuity) — 长任务续接：每轮结束自动留一条断点（做了什么、下一步、还差什么），同一工作区的新会话开头会把最近几条注入为快照，接着往下干而不是从头再来。同时维护文件改动留痕，并给人设卡、配置这类文件存 SHA-256 指纹，事后能验出是否被人改过。四个工具（continuity_breakpoint / continuity_breakpoints / continuity_ledger / continuity_attest），数据是以纯 JSONL 存在 <工作区>/.dsh-continuity/，零依赖、不联网。
 - [ne-ilyxa/dsh-session-drafts](https://github.com/ne-ilyxa/dsh-session-drafts) — Cursor 风格的新会话：每次点击都新建一个空白草稿会话（首条消息前即持久化），不再复用工作区唯一的空会话；侧栏新增草稿切换器，可同时保留多个空会话。
 - [neufagents/dsh-healthcheck](https://github.com/neufagents/dsh-healthcheck) — 面向 DSH 的会话健康体检（只读）：全库扫描（总量、最大会话、体积 / 事件数超限告警）与单会话深检（尾部闭合检查、工具调用 / 结果配对、事件类型分布）。
 - [neutronslime/dsh-preset-switcher-fork](https://github.com/neutronslime/dsh-preset-switcher-fork) — 随时切换当前会话的代理预设（模式），对话开始后也能切：会话头下拉菜单，由受限的 POST /preset-switch/api 路由支撑；该路由还会修复记录中预设已被删除的会话。jeffcwj/dsh-preset-switcher 的分支，已适配 DSH 0.2.1。
@@ -9782,6 +9784,7 @@ dsh plugin --profile web add dshmarket
 - [zczgagat/token2rice](https://github.com/zczgagat/token2rice) — 每花掉 N token,就从 DSH 窗口顶端掉下一碗白米饭:米饭自由落体、落地弹跳,可以拖着扔出去;一个漩涡按钮(带音效)能把它们全部吸走,把某一碗拖上去松手则只吸那一碗。每碗额度、米饭大小、最多摆几碗、落地是否自动回正、米饭图都能在面板里调。
 - [ZelinW1/dsh-cosplay](https://github.com/ZelinW1/dsh-cosplay) — 让 DeepSeek Harness 的 Agent 扮演任何角色：全局扮演开关、酒馆 v2 角色卡（JSON 导入导出）、中立/角色化思考切换，内置 skill 支持一句话生成角色卡。
 - [zenglihunter/dsh-petdex-pet](https://github.com/zenglihunter/dsh-petdex-pet) — DSH Web 界面里的桌面宠物：右下角悬浮、可拖拽，随智能体活动切换精灵动画；设置页可管理大小、启停切换、图库搜索与一键安装宠物。内置 4 个全职猎人主角宠物包。
+- [zhangmin510/dsh-heixia-pet#dsh-pet](https://github.com/zhangmin510/dsh-heixia-pet/tree/main/dsh-pet) — DeepSeek Harness 宠物黑侠，动作以黑侠的照片和视频为主，支持会话状态联动、聊天和余额展示。
 - [zhanshenovo/dsh-brake-pedal](https://github.com/zhanshenovo/dsh-brake-pedal) — 一个制动踏板自检彩蛋。DSH 网页界面上有一颗可拖动的胶囊，做六脚全力制动测试：支架在第二到第六脚之间伪随机地断裂，也可能整轮通过，随后弹出一份虚构通报。踏板力由会话事实推导并在界面上标为推导值，而这些事实取自真实会话日志。它从不拦截、延迟或接管真实的停止动作。
 - [zhanshenovo/dsh-bushaoxin](https://github.com/zhanshenovo/dsh-bushaoxin) — 一个对话文风层：谈到「便宜的路有坑」这类取舍时，把警告换成另一种说法——快而便宜的是隔壁黑心店，慢而可靠的老店在立规矩。附带改写引擎，可把任意文本拧成固定骨架的对白，有五个互相独立的旋钮（幕数、招牌台词密度、收尾走向、种子、预设档）；一个四档强度滑条；以及 /bushaoxin 命令，按会话的工具调用记录生成一份段子式的「烧心指数」病历。每篇改写末尾永远附一行真实技术结论，不可关闭。零依赖、无构建步骤，引擎是纯函数。
 - [dsh-multi-role-groupchat](https://github.com/zhdzh-good/multi-role-groupchat/tree/main/multi-role-groupchat) — DeepSeek Harness 多角色群聊面板：你以一个角色加入，和 2–3 个 AI 成员对话；支持按对话对象智能路由、其他人按概率接话、显式 @ 接话，以及全局角色库、失败诊断、失败回应重试、群内消息搜索、场景便利贴、长历史分页、多标签同步、私有记忆与私人关系、模型目录下拉和角色/群配置 JSON 导入导出。
