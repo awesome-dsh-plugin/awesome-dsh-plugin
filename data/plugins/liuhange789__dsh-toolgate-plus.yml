@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/dsh-toolgate-plus
+name: liuhange789/dsh-toolgate-plus
+category: tools
+description:
+  en: "Detects explore, edit and debug phases from the last five tool calls, shows the current stage in the status bar, and sends one throttled follow-up hint when the stage changes."
+  zh: "根据最近五次工具调用识别探索、编辑、调试阶段，在状态栏显示当前阶段，并在阶段切换时节流推送一条提示。"
