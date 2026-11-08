@@ -1,0 +1,6 @@
+url: https://github.com/EnderDAG/dsh-qq-bridge
+name: EnderDAG/dsh-qq-bridge
+category: identity
+description:
+  en: 'Bridges DSH to a QQ bot over the OneBot 11 HTTP API, adding three host tools: list joined groups, read the latest messages of a group as sender plus text, and send a plain-text reply (disabled by default until allowSend is turned on).'
+  zh: '通过 OneBot 11 HTTP API 把 DSH 接到 QQ 机器人：提供三个宿主工具——列出已加入的群、读取某个群最近的「发送人 + 文本」消息、发送纯文本回复（默认关闭，需开启 allowSend）。'
