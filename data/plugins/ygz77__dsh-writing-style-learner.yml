@@ -1,0 +1,6 @@
+url: https://github.com/ygz77/dsh-writing-style-learner
+name: ygz77/dsh-writing-style-learner
+category: tools
+description:
+  en: "Learn any writing sample's style into a durable profile and inject it into every model step, so generated writing stays consistent across long chats and new sessions."
+  zh: "把任意写作样例的风格固化成持久档案，并在每一步注入系统提示，让生成的文字在长对话、长文档和新会话里都保持一致。"
