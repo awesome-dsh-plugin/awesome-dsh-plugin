@@ -3376,6 +3376,7 @@ dsh plugin --profile web add dshmarket
 
 ### 🆔 身份与通信
 
+- [malabananclauss-rgb/dsh-self](https://github.com/malabananclauss-rgb/dsh-self) - 给 DSH agent 一个能跨模型延续的自我：状态层、触发索引、判断库和判断卡（结论/为什么/失败/未完成），换模型或换会话前生成带 8 个验证问题的交接包，并在状态超 800 字时提示压缩审查。纯 markdown/JSON、零依赖、不锁定；4 个斜杠命令与 4 个 Agent 工具，全部支持 --json。
 - [0xyxy/dsh-purge](https://github.com/0xyxy/dsh-purge) — kingcharleslzy-ai/dsh-purge 的社区分支（不要与上游同装——两者都以 `dsh-purge-community` 包名注册同一个 `dsh-purge` 行）：DSH 的社区「破甲 / 无限制模式」控件——宿主策略补丁、提示词与规则设置、诊断、校验更新与本机备份回滚，另加引擎层/代码层/提示词层三层 bootstrap 安装器及自带验证流程。
 - [2008BingYu/dsh-qq-stack](https://github.com/2008BingYu/dsh-qq-stack) — 给 DSH 提供 QQ 协议端（仅 Linux）：随引擎启动 LinuxQQ 与 NapCat（首次运行自动安装，约 250 MB），对外提供标准 OneBot 11 接口。
 - [379385796-sys/dsh-prompt-inject](https://github.com/379385796-sys/dsh-prompt-inject) — 基于 H1a3x 原作的 MIT 提示词模板管理维护版，支持默认与工作区继承、逐 Agent 预设指定模板或不注入、本地化设置及修订号保护的自动保存。已验证 Windows Desktop RC5 与 0.2.2-rc.1；不能与上游 H1a3x/dsh-prompt-inject 同装。
