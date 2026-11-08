@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-browser-hub
+name: loyalchiiina/dsh-browser-hub
+category: browser
+description:
+  en: "Adds a search-engine picker, a bookmarks panel with multi-level folders (add/edit/delete/import Netscape bookmark HTML) and address-bar type-ahead search to the DSH built-in sidebar Browser tab. Bookmarks are stored in a local JSON file; no external browser required."
+  zh: "给 DSH 自带侧边栏「浏览器」Tab 增加搜索引擎选择、书签面板（多级文件夹、增删改、导入 360/Chrome 书签 HTML），以及地址栏输入关键词回车直接搜索。书签存本地 JSON，不依赖外部浏览器。"
