@@ -1,0 +1,7 @@
+url: https://github.com/DeveloperYe/dsh-doyourweb-remote
+name: DeveloperYe/dsh-doyourweb-remote
+category: browser
+description:
+  en: 'Fork of SheepofSheep/dsh-doyourweb that puts the browser on another machine: the MV3 extension dials out to this plugin over TLS, so DSH reads and acts on a remote Chrome or Edge rather than a local one. It also generates ready-paired extension packages for the current configuration, adds tab open and close tools, writes annotation detail to a file instead of pasting it into the chat, and shows a checklist naming which part of a remote setup is misconfigured.'
+  zh: 'SheepofSheep/dsh-doyourweb 的 fork，把浏览器放到另一台机器：MV3 扩展主动经 TLS 出站连接插件，DSH 因此能读取并操作远程的 Chrome/Edge，而不限于本机浏览器。此外按当前配置生成已配对的扩展包、新增开/关标签页工具、把批注明细落盘而不是塞进聊天，并提供远程接入自检表指出配置哪一环不对。'
+icon: https://raw.githubusercontent.com/DeveloperYe/dsh-doyourweb-remote/main/extension/icons/icon-128.png
