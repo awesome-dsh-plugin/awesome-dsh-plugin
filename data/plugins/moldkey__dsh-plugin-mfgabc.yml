@@ -1,0 +1,6 @@
+url: https://github.com/moldkey/dsh-plugin-mfgabc
+name: moldkey/dsh-plugin-mfgabc
+category: tools
+description:
+  en: 'Read-only tools for mfgabc.com: standards pages, industrial city guides, process clusters and cross-border compliance across 5 tools. Network-only.'
+  zh: mfgabc.com 只读工具：标准页、产业带城市指南、工艺集群与跨境合规，共 5 个工具。仅网络访问。
