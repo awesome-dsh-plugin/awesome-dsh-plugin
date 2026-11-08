@@ -1,0 +1,6 @@
+url: https://github.com/Vayne-bit/dsh-island
+name: Vayne-bit/dsh-island
+category: notify
+description:
+  en: 'Always-on-top status pill for DSH on Windows: shows each session''s turn state (thinking with a running timer, waiting for approval, done, failed) above every window, collapses to a small dot while thinking continues and disappears a few seconds after a turn finishes, stacks up to three concurrent sessions side by side with a +N overflow badge, and hides itself while a fullscreen app is in front. Clicking it brings DSH to the foreground and dragging moves it; it reuses the Electron build already shipped with DSH Desktop, so nothing extra is downloaded. A settings card on the plugin page adjusts scale, mini size, position, hold times, effects and per-state visibility.'
+  zh: 'Windows 上的 DSH 置顶状态胶囊：把每个会话的回合状态（思考并计时、等待审批、完成、失败）浮在所有窗口之上，思考持续时缩成小圆点，回合结束后几秒内消失，最多并排显示三个会话、其余折成 +N 角标，前台是全屏应用时自动隐藏。点击可把 DSH 拉到前台，拖动可改位置；复用 DSH Desktop 自带的 Electron，不额外下载。插件页里的设置卡片可调缩放、迷你尺寸、位置、收起时间、动效和各状态开关。'
