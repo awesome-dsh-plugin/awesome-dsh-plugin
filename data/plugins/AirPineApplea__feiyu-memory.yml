@@ -1,0 +1,6 @@
+url: https://github.com/AirPineApplea/feiyu-memory
+name: AirPineApplea/feiyu-memory
+category: memory
+description:
+  en: "Cross-session persona and diary for DeepSeek Harness: each turn can leave a first-person diary entry, and the next conversation injects the persona, hand-written notes and a dated batch of past entries retrieved by searching the diary text itself, while anything older is looked up on demand."
+  zh: "给 DeepSeek Harness 的跨会话人格与日记：每轮可以留下一条第一人称日记，下一场对话注入人格、手记和一批带日期的旧事——按日记正文检索出来的，更早的按需自己查。"
