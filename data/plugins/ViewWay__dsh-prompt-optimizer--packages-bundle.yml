@@ -1,0 +1,15 @@
+url: https://github.com/ViewWay/dsh-prompt-optimizer/tree/main/packages/bundle
+name: ViewWay/dsh-prompt-optimizer#bundle
+category: ui
+icon: https://raw.githubusercontent.com/ViewWay/dsh-prompt-optimizer/main/assets/icon-180.png
+description:
+  en: Prompt optimizer for the DSH composer. One click runs rewrite then self-review
+    rounds over the draft with per-round diff preview, and a rejected result rides
+    into the next round as a prior attempt. Five fixed re-run directions (more concise
+    / more detailed / more technical / restructure / stronger acceptance); a 165-role
+    library ships in the package, roles recommended by draft or picked explicitly;
+    matched installed skills fold into the meta-prompt under exact-name constraints;
+    results save to a prompt library (browse, insert, re-optimize, two-step delete);
+    mechanical acceptance criteria carry an executable check-command template; output
+    language follows the agent UI language.
+  zh: DSH 输入框提示词优化器。一键对草稿执行「改写 → 自审」多轮优化，逐轮差异预览，被拒绝的结果作为上一次尝试进入下一轮；五个固定重跑方向（更精简／更详尽／更技术／结构化／强化验收）；包内自带 165 个角色的角色库，可按草稿推荐或显式指定；命中的已安装技能以精确名称约束并入元提示词；结果可存入提示词库（浏览、插入、再优化、两步删除）；机械验收准则附带可执行的检查命令模板；输出语言跟随 Agent 界面语言。
