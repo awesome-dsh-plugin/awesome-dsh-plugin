@@ -1,0 +1,8 @@
+url: https://github.com/zhangmin510/dsh-heixia-pet/tree/main/dsh-pet
+name: zhangmin510/dsh-heixia-pet#dsh-pet
+category: fun
+description:
+  en: HeiXia, a cat companion for DeepSeek Harness with actions based on photos and video, session-state reactions, chat, and balance display.
+  zh: DeepSeek Harness 宠物黑侠，动作以黑侠的照片和视频为主，支持会话状态联动、聊天和余额展示。
+icon: https://raw.githubusercontent.com/zhangmin510/dsh-heixia-pet/heixia-v1.2.0/heixia/pet/heixia-avatar.png
+tarball: https://github.com/zhangmin510/dsh-heixia-pet/releases/download/heixia-v1.2.0/dsh-heixia-pet-1.2.0.tgz
