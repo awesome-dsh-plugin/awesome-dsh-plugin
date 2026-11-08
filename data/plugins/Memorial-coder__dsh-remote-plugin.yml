@@ -1,0 +1,12 @@
+# awesome-dsh-plugin 收录条目:Memorial-coder/dsh-remote-plugin
+# 复制到 awesome-dsh-plugin 仓库的 data/plugins/ 下,文件名保持 Memorial-coder__dsh-remote-plugin.yml
+url: https://github.com/Memorial-coder/dsh-remote-plugin
+name: Memorial-coder/dsh-remote-plugin
+category: remote
+description:
+  en: Tunnels the local DSH web panel to a phone or the internet through frp, with QR pairing, TOTP 2FA, device management and an IP blacklist.
+  zh: 通过 frp 隧道把本机 DSH Web 面板暴露到手机或外网，带扫码配对、TOTP 两步验证、设备管理与 IP 黑名单。
+# 市场卡片图标:GitHub 托管的正方形位图(180x180)
+icon: https://raw.githubusercontent.com/Memorial-coder/dsh-remote-plugin/main/browserctl_pwa/icon-180.png
+# 预构建 tarball:GitHub Release 托管的 .tgz,资产名不带版本号,配合 latest/download/ 不会 404
+tarball: https://github.com/Memorial-coder/dsh-remote-plugin/releases/latest/download/dsh-remote-plugin.tgz
