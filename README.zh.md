@@ -2457,6 +2457,7 @@ dsh plugin --profile web add dshmarket
 - [sxwer001/dsh-coding-plan-quota](https://github.com/sxwer001/dsh-coding-plan-quota) — DSH 模型选择器旁的额度圆环，读取 OpenCode Go 等 15 个 coding plan 的用量或余额，点击循环 5 小时、每周、每月窗口，按紧急程度着色。
 - [Synapse-ACh/dsh-subagent-cost](https://github.com/Synapse-ACh/dsh-subagent-cost) — 在输入框工具条上统计本会话派出的子智能体 token 用量与人民币花费，按 turn 分组。
 - [Balance & Quota · 余额与额度](https://github.com/takboo/dsh-usage-state) — 在输入框上方查看当前模型供应商的账户余额或套餐额度，显示已用比例和重置倒计时。
+- [tcmyxc/dsh-power-monitor](https://github.com/tcmyxc/dsh-power-monitor) — 在左侧边栏账号头像上方显示整机功耗、今日用电量与电费估算，支持电价与 CPU TDP 校准。
 - [teethyachi/dsh-usage-mini](https://github.com/teethyachi/dsh-usage-mini) — DSH Web 悬浮用量小窗，显示 Claude、Codex 订阅用量窗口与重置倒计时，以及 DeepSeek API 今日花费与余额；只展示，是 dsh-cost-meter 的伴侣。
 - [TetraSsky/dsh-offpeak](https://github.com/TetraSsky/dsh-offpeak) — 在你配置的高峰时段内不发送 DeepSeek 模型调用，直到该时段结束再发出，从而按低谷价格计费；等待期间暂停进行中的目标，并显示账户余额与 8 小时消费图表。
 - [The-five-stooges/dsh-deepseek-usage](https://github.com/The-five-stooges/dsh-deepseek-usage) — 在侧边栏脚部显示一行 DeepSeek 账户余额（带刷新按钮），点击打开弹层：余额卡、7/30 天每日 Token 与估算费用图表、按模型明细表，以及平台用量页外链。余额取自官方 /user/balance 接口；用量由本机 DSH 会话日志聚合，按官方峰谷单价以人民币估算，因此界面明确标注为估算值并写明统计范围。
@@ -6683,6 +6684,7 @@ dsh plugin --profile web add dshmarket
 - [chengzhao-dev/dsh-quarto-book](https://github.com/chengzhao-dev/dsh-quarto-book) — 把一份 Quarto Book 写成可读、可查、可发布的中文技术书：九步章节写作、结构/链接/图表检查、统一主题与渲染验收。仅在 type: book 仓库加载；需 Quarto CLI 与 Python 3。
 - [chenqianyu486-sys/dsh-zju-lecture-note](https://github.com/chenqianyu486-sys/dsh-zju-lecture-note) — 把浙大智云课堂（classroom.zju.edu.cn）回放整理成 Markdown 复习讲义，并在本地用 Typst 排成同名 PDF。字幕公开免登录；投影截图需在插件设置中开启，且需浙大登录态。抓取内核来自 nzw806/zju-lecture-summerizer-；可选填空笔记用 MIT 授权的 scholia 模板。
 - [ciceroyang/dsh-report-studio](https://github.com/ciceroyang/dsh-report-studio) — 把 DeepSeek Harness 会话整理成日报、周报、交接与文章稿件，支持可核验的 HTML 导出与复核收据。
+- [Cluodwaters/dsh-paper-workbench#dsh-paper-workbench](https://github.com/Cluodwaters/dsh-paper-workbench/tree/main/plugins/dsh-paper-workbench) — Windows x64 本地文献工作台，支持 PDF 阅读与批注、导入后自动初读、每篇论文独立的 Harness 对话，以及按元数据和共享摘要检索的文献库助手。
 - [ColdMagicchess/PTT-Studio](https://github.com/ColdMagicchess/PTT-Studio) — 设计型 PPT 生成：六个 pptx_* 工具把逐页设计稿（deck.json）组装成可编辑 .pptx，配合 AI 背景、去底插画与装饰件，做版式与对比度检查、渲染页面预览，并可用可配置的视觉模型逐页评审；Web 端提供聊天卡片与设置页。需 DSH Desktop 0.2.1-rc.2+（pptx_render 使用其内置 LibreOffice Kit），AI 背景需 Agnes 或 ModelScope API Key。
 - [copylee711/dsh-office](https://github.com/copylee711/dsh-office) — 仅 Windows：Agent 通过办公软件的自动化接口，直接在你打开的 Word、Excel、PowerPoint（微软 Office 或 WPS Office）窗口里改文档，改动实时出现，你可以同时编辑；可读取结构、批量修改、把页面渲染成图片核对排版、保存或导出 PDF。
 - [csukingzq/dsh-pdf-translator](https://github.com/csukingzq/dsh-pdf-translator) — DeepSeek Harness 的 Windows PDF 翻译插件：由视觉模型识别并翻译正文、表格、图表和公式，输出中文 PDF 与 LaTeX 源码压缩包。需要自备支持图片输入的 OpenAI 兼容 API。
