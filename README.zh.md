@@ -5682,6 +5682,7 @@ dsh plugin --profile web add dshmarket
 - [sensedeal/cue-skills#cue-omni-reader](https://github.com/sensedeal/cue-skills/tree/main/dsh/cue-omni-reader) — 面向 DeepSeek Harness 的 Cue Omni Reader：接入审校版 omni-reader-mcp MCP 服务，把 URL/文件解析工具以 mcp__omni__ 暴露（parse、get_parse_status、read_result、read_outline、save_result、discard_result、cancel_parse）。
 - [seven282/oss-prompt-optimizer](https://github.com/seven282/oss-prompt-optimizer) — 把原始指令一键优化为专业提示词——支持三种输出形态、情境感知画像、多采样择优（模型判官评分）、自迭代学习，以及 /template 等命令与一键工具/钩子/状态页/设置面板/自动语言。
 - [ShadowMiner/hermes-dsh-bridge#dsh-hermes-link](https://github.com/ShadowMiner/hermes-dsh-bridge/tree/main/packages/dsh-hermes-link) — Hermes Agent 与 DeepSeek Harness 的双向桥：派单任务以 UI 可见会话出现在 DSH 侧边栏，支持会话镜像与 10 个 DSH→Hermes 工具。
+- [shallinta/dsh-agentic-notes](https://github.com/shallinta/dsh-agentic-notes) — DSH 本地笔记插件：随手记录、AI 自动归档、日记、待办、便笺，并支持 MCP 让 AI 会话直接读写。
 - [Shang-ZZ/dsh-computer-use](https://github.com/Shang-ZZ/dsh-computer-use) — 为 DeepSeek Harness 提供 computer use：js 与 js_reset 工具通过本机安装的 ChatGPT 应用读取窗口、点击、输入与截屏（macOS）。仅 Apple Silicon macOS，需已装 ChatGPT 桌面版。
 - [Shang-ZZ/dsh-diagram-design](https://github.com/Shang-ZZ/dsh-diagram-design) — 将 diagram-design 图表导出为 SVG/PNG，提取 draw.io/Mermaid/Excalidraw 结构，校验输出，并浏览 45 种图表类型。基于 cathrynlavery/diagram-design（MIT），需 python3，导出 PNG 还需 Playwright。
 - [shangshuo/dsh-sync](https://github.com/shangshuo/dsh-sync) — 把 DSH 配置档案（插件、设置、技能、界面偏好与可选的 MCP 连接器或 API Key）加密定时备份到 S3 兼容存储、WebDAV 或本地目录，恢复时自动重装缺失的插件。
@@ -6241,7 +6242,7 @@ dsh plugin --profile web add dshmarket
 - [KNLCXY/dsh-websift](https://github.com/KNLCXY/dsh-websift) — 省 token 的网页阅读：底层是真 Chrome/Edge（CDP），一次调用读完多个页面、按相关性筛掉不相关的，只回一段带账本的摘要（实测省 80–98% 上下文）。真实搜索链接、登录态、截图、三档代理。
 - [kyo615/dsh-browser-control](https://github.com/kyo615/dsh-browser-control) — 基于 Playwright MCP 的 AI 浏览器控制：驱动真实可见的 Chrome（导航/点击/输入/快照，约 80 个 browser_* 工具），并在 GUI 内嵌实时截图面板，每次操作后自动刷新。
 - [L1818346/dsh-browser-takeover](https://github.com/L1818346/dsh-browser-takeover) — 浏览器网址接管：维护一份「要登录的网址」清单（只存网址与添加时间，不存账号密码），访问前先回答这条地址在不在清单里；按该站点的会话 cookie 名字判断调试浏览器此刻是否已登录（确定／可能／未登录，_gh_sess 这类匿名 cookie 不计），在带调试端口的浏览器里打开清单中的地址，并按可见文字点击一个元素（会搜索所有 iframe）。一次调用最多点一个元素，不做批量爬取。
-- [laoyingfuhuole/dsh-browser-use](https://github.com/laoyingfuhuole/dsh-browser-use) — 面向 DSH 的后台浏览器自动化插件：离屏 Electron 窗口、CDP 输入、快照 ref，不抢焦点。
+- [laoyingfuhuole/dsh-browser-use](https://github.com/laoyingfuhuole/dsh-browser-use) — 面向 DSH 的后台浏览器自动化插件：一个 Electron host 为每个对话分配独立窗口，共享登录状态，支持 CDP 输入与快照 ref，不抢焦点。
 - [lemoncat7/dsh-web-search](https://github.com/lemoncat7/dsh-web-search) — 为 DeepSeek Harness 提供可配置联网搜索，支持 SearXNG、Wikipedia、Tavily、Brave 与 Gemini，并支持客户端引擎选择和受控重试。
 - [liangzz1998/dsh-web-devtools](https://github.com/liangzz1998/dsh-web-devtools) — 通过 17 个工具把 Chrome DevTools Protocol 接给 agent，提供页面概览、元素定位、操作时间线、控制台、网络、登录态与下载，读取对象可以是插件自带的专用浏览器，也可以经浏览器扩展读取你当前正在浏览的标签页。
 - [lightrivers/dsh-proxy-switch](https://github.com/lightrivers/dsh-proxy-switch) — 修复开着 Clash / Surge / v2rayN（TUN、fake-IP）时 web_fetch 报 non-public IP address 的问题：自动找到本机 HTTP 代理，代理开着走代理、关了直连；侧栏可一键切换「自动 / 走代理 / 直连」。默认只接管 web_fetch，不影响模型调用。
