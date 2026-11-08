@@ -1,0 +1,8 @@
+url: https://github.com/panhaiyao1982-bit/dsh-session-tools
+name: panhaiyao1982-bit/dsh-session-tools
+category: session
+tarball: https://github.com/panhaiyao1982-bit/dsh-session-tools/releases/download/v0.1.7/dsh-session-tools-0.1.7.tgz
+description:
+  en: 'Session management for the sidebar: lock a conversation against deletion and moves, send it to a recycle bin with or without the files it wrote, batch-handle Sessions per workspace, and move one together with its files into another workspace. Every delete is restorable from the bin except the explicitly chosen direct delete.'
+  zh: '侧栏里的会话管理：可以锁定会话禁止删除与移动，把会话连同它写过的文件一起放进回收站，按工作空间批量处理，或连同文件整体搬到另一个工作空间。除明确选择的「直接删除」外，删除都能从回收站还原。'
+icon: https://raw.githubusercontent.com/panhaiyao1982-bit/dsh-session-tools/main/icon-512.png

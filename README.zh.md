@@ -3923,6 +3923,7 @@ dsh plugin --profile web add dshmarket
 - [ozjxnxh/dsh-session-trash](https://github.com/ozjxnxh/dsh-session-trash) — 在侧栏会话菜单新增删除与多选批量删除，连聊天记录一起删除（删前自动备份、可一键撤销），不改动工作区项目文件。
 - [OZONGO/dsh-background-compaction](https://github.com/OZONGO/dsh-background-compaction) — 接管内置压缩 provider：默认在上下文达到阈值的 85%（比例可配）时，起一个游离任务把截至上一轮的历史总结成摘要；摘要就绪后的下一个回合边界直接把它提交为 checkpoint，这一步 0 次模型调用、耗时毫秒级。/bcompact \[消息] 按需发起同样的生成，随后照常发送你的消息。设置页可改自动触发比例、摘要模型，以及连续失败多少次后停止后台生成（熔断打开后按冷却放行一次探针以自愈）。子代理会话、前缀已变动或摘要过期时，回退到内置的同步压缩路径。
 - [p2coder/dsh-task-control](https://github.com/p2coder/dsh-task-control) — 在输入区暂停/恢复/取消正在运行的对话任务：强制暂停立即中断并记住被中断的工具，安全暂停等工具/推理完成后再落地，恢复时需确认；默认暂停粒度可在设置中配置（出厂 safe wait）。
+- [panhaiyao1982-bit/dsh-session-tools](https://github.com/panhaiyao1982-bit/dsh-session-tools) — 侧栏里的会话管理：可以锁定会话禁止删除与移动，把会话连同它写过的文件一起放进回收站，按工作空间批量处理，或连同文件整体搬到另一个工作空间。除明确选择的「直接删除」外，删除都能从回收站还原。
 - [penguin-oo/dsh-bookmarks](https://github.com/penguin-oo/dsh-bookmarks) — 收藏 AI 回复（备注/标签），跨会话收藏中心（搜索/筛选/跳回会话），一键导出 Markdown。
 - [Penguin-SAMA/dsh-conversation-links](https://github.com/Penguin-SAMA/dsh-conversation-links) — 在当前对话里引用别的对话：输入 @ 附加某段对话的记录，从左侧栏把对话拖进输入框，或打开任意对话、勾选其中几条消息插入到另一个对话中。
 - [PerryLink/dsh-claude-move](https://github.com/PerryLink/dsh-claude-move) — 四合一迁移向导：把 Claude Code、Codex、OpenCode、Hermes 的会话、记忆、技能、指令与斜杠命令迁入 DSH（/move 向导，审批门 + 幂等 move.json，会话可续聊）。
