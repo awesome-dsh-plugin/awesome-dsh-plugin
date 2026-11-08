@@ -1,8 +1,8 @@
 url: https://github.com/huangxn29/dsh-shooter
 name: huangxn29/dsh-shooter
 category: fun
+tarball: https://github.com/huangxn29/dsh-shooter/releases/download/v1.2.0/dsh-shooter-1.2.0.tgz
+icon: https://raw.githubusercontent.com/huangxn29/dsh-shooter/main/icon.svg
 description:
-  en: A top-down arena shooter that opens as a full panel from a crosshair entry in the left sidebar, with waves, four enemy types, dash and health pickups.
-  zh: 从左侧栏准星入口打开的俯视角竞技场射击游戏，占满整个面板，含波次、四种敌人、冲刺与回血掉落。
-# optional: GitHub-hosted raster tile (png/jpg/webp, square, ~96px). SVG is refused here.
-# icon: https://raw.githubusercontent.com/huangxn29/dsh-shooter/main/assets/icon-180.png
+  en: 'A top-down arena shooter that lives in the DSH sidebar: an autopilot AI plays the blue whale-fish hero for you while the dsh-pet desktop pet narrates each wave out loud, and combos, boss waves every fifth wave, in-run upgrade choices, a local leaderboard, achievements, skins and a floating desk widget (a fish that keeps playing in the corner, click to pet, double-click to open) keep the run going while you work.'
+  zh: 'DSH 侧栏里的俯视角生存射击：AI 托管替你把蓝鱼主角打起来，dsh-pet 桌宠逐波解说并念出声；连杀倍率、每 5 波 Boss、局内三选一强化、本机排行榜、成就与皮肤，切面板后还能缩成右下角的小鱼挂件继续打——点一下摸摸它，双击展开画面。'
