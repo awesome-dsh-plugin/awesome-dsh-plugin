@@ -1,0 +1,7 @@
+url: https://github.com/593682963wd-wq/dsh-tibo-reset-watch
+name: 593682963wd-wq/dsh-tibo-reset-watch
+category: notify
+description:
+  en: 'Corner card that watches Tibo (@thsottiaux) on X, shows new posts and replies with a Chinese translation, and marks reset-related posts; extra JSON sources can be added.'
+  zh: '右上角卡片：盯 Tibo（@thsottiaux）在 X 上的新帖与回复，自动配中文译文，重置类消息加标；支持追加 JSON 数据源，Host 侧抓取与翻译，不消耗对话 token。'
+icon: https://raw.githubusercontent.com/593682963wd-wq/dsh-tibo-reset-watch/main/screenshots/icon.png
