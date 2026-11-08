@@ -1440,7 +1440,7 @@ dsh plugin --profile web add dshmarket
 - [ruaibeite/dsh-input-polish](https://github.com/ruaibeite/dsh-input-polish) — 输入框右下工具区里的 ✨ 按钮，把草稿原地改写成更清楚的请求。上下文按话题挑而不按时间取：从草稿里抽锚点（文件路径、标识符、引号文字、中文二字词），在最近消息里挑同一话题的几条，所以一个会话里夹着多个任务时不会把别的任务的目标或文件带进改写结果；提示词也明确允许模型在上下文不像时完全忽略它。改写走与人工编辑同一条可撤销路径，⌘Z 即可还原。草稿里有引用 chip（@文件、文件夹、会话）或已认领的 /命令、以及正在提交时，按钮禁用 —— 宁可不动，也不悄悄丢掉引用。
 - [ruanimal/dsh-sidebar-panel-buttons](https://github.com/ruanimal/dsh-sidebar-panel-buttons) — 把 dsh Web 侧边栏的全局面板菜单（插件、扩展管理、定时任务、IM）从竖排文字列表收起为一行 36×36 图标按钮，悬停显示名称；可在「设置 → 通用」里切回列表，选择按浏览器记忆。
 - [Rudyy898/dsh-drag-path](https://github.com/Rudyy898/dsh-drag-path) — 像 Codex/Claude 一样：拖入任意格式文件或文件夹，真实绝对路径立即插入输入框，不用一个个打字。工作区优先智能定位、大小校验、同名弹候选选择器，支持批量拖入与粘贴，兼容 Windows/macOS。
-- [ruide92/dsh-project-atlas](https://github.com/ruide92/dsh-project-atlas) — Project Atlas：本地优先的可视化工作台，把 DeepSeek Harness 的项目、技能、会话、运行状态与产出收进一张地图。
+- [ruide92/dsh-project-atlas](https://github.com/ruide92/dsh-project-atlas) — Project Atlas：本地优先的 DSH 项目工作台。给每个项目一个看得懂的名字和一句说明；重复项目确认后合并；久未活动项目一键收起，不删文件。
 - [Ruiming-cn/dsh-ask-in-sidebar](https://github.com/Ruiming-cn/dsh-ask-in-sidebar) — 选中助手回答中的文本，在临时右侧面板向侧边栏助手提问：基于主对话 LLM 历史快照回答，支持流式 Markdown、可折叠思考与多轮追问，不打扰主对话。
 - [Ruiming-cn/dsh-better-at](https://github.com/Ruiming-cn/dsh-better-at) — DSH Web 输入框 `@` 文件/会话引用加速：预加载索引、浏览器本地按键过滤、保留原生 mention 序列化。
 - [ruisenbai/dsh-turn-fold](https://github.com/ruisenbai/dsh-turn-fold) — 流式回复期间将推理与工具调用折叠为收起的步骤栏，回合完成后整轮收拢为一条摘要栏；步骤栏显示原生工具图标、文件名、编辑增删行数与失败计数，已完成回合从记录的 Session 事件恢复耗时、首字延迟、Token 用量、生成速度与缓存命中率，偏好由 Host 持久保存。仅改变浏览器呈现，需要 DSH 0.1.5-alpha.1。
@@ -2131,7 +2131,7 @@ dsh plugin --profile web add dshmarket
 - [Choi-Peng/dsh-deepseek-balance](https://github.com/Choi-Peng/dsh-deepseek-balance) — 在 DSH Web 侧边栏底部展示 DeepSeek 账户余额，支持配置热重载与可编辑的设置 → 插件卡片。
 - [ChrisZhangWG/dsh-codex-meter](https://github.com/ChrisZhangWG/dsh-codex-meter) — 在设置中添加 DeepSeek API 用量仪表板，显示余额、官方 Token 与费用分析、趋势、上下文警告及实时 API 活动。
 - [CN-Leo/dsh-deepseek-balance](https://github.com/CN-Leo/dsh-deepseek-balance) — 在 DSH Web 输入框下方实时显示 DeepSeek 账户余额，每 15 秒自动刷新，悬停查看总额、赠送与充值明细。
-- [cococo1ng/dsh-jianxian-widget#plugin](https://github.com/cococo1ng/dsh-jianxian-widget/tree/main/plugin) — DSH 网页界面右下角的常驻挂件：一位剑修守在角落，读取账户余额与 token 消耗，本地记一本按模型拆占比的账，10 路音效各带开关。余额告急、模型在等你回答、等你批准、深夜该睡了，都会开口提醒。23 个常驻姿态加 24 帧剑舞、14 件法宝（菜单图标皮肤）、6 个面板页签、可逐行编辑的气泡编辑器，黑衣白衣跟着明暗主题换。全本地运行，不向 agent 注册工具。
+- [cococo1ng/dsh-jianxian-widget#plugin](https://github.com/cococo1ng/dsh-jianxian-widget/tree/main/plugin) — DSH 网页界面右下角的常驻挂件：一位剑修守在角落，读取账户余额与 token 消耗，本地记一本按模型拆占比的账，10 路音效各带开关。余额告急、模型在等你回答、等你批准、深夜该睡了，都会开口提醒。23 个常驻姿态加 24 帧剑舞、22 件法宝（菜单图标皮肤）、6 个面板页签、可逐行编辑的气泡编辑器，黑衣白衣跟着明暗主题换。全本地运行，不向 agent 注册工具。
 - [ColorlessBoy/dsh-opencode-usage](https://github.com/ColorlessBoy/dsh-opencode-usage) — 在 DeepSeek Harness 的 Web 输入框 dock 显示 OpenCode Go 套餐的 5 小时 / 每周 / 每月剩余额度。
 - [ConTr0L0/dsh-balance-monitor](https://github.com/ConTr0L0/dsh-balance-monitor) — 在 DSH 侧边栏监控多个平台的余额，统计 DeepSeek 峰谷用量成本与会话消耗，并支持配置消费上限。
 - [cp990207/dsh-usage-ledger](https://github.com/cp990207/dsh-usage-ledger) — 本地用量账本：从本机会话日志统计每日、每模型、每工作区的 token 消耗、缓存命中率、工具请求占比与估算费用，并提供按模型编辑单价的设置面板。
@@ -3741,6 +3741,7 @@ dsh plugin --profile web add dshmarket
 - [guo120629-dotcom/dsh-send-timestamp](https://github.com/guo120629-dotcom/dsh-send-timestamp) — 在输入框工具栏加一个「时间戳」开关：开启后，你提交的每条消息后面会跟一条隐藏的上下文消息，携带发送时刻的本地时间，模型因此知道你是什么时候发的；开关按会话分别记住。
 - [guokecloud/dsh-session-janitor](https://github.com/guokecloud/dsh-session-janitor) — 在侧边栏页面里列出 DSH 的会话记录与归档缓存，删除先移入可恢复的回收站，最近 10 分钟仍在写入的会话会被拒绝。
 - [hagen666/dsh-topic-graph](https://github.com/hagen666/dsh-topic-graph) — 把会话按轮次聚合成话题与阶段，按话题统计 token / 工具 / 耗时，提供工作流、时间线、关系图谱三种视图和单轮 AI 分析。
+- [Hai-Story/dsh-conversation-tools](https://github.com/Hai-Story/dsh-conversation-tools) — 星标重点问答，在原生输入框中编辑任意已发送的用户消息，并保留旧对话版本。支持 DSH 0.2.2-rc.1。
 - [hajimimaodie8/DSH-Session-Sync](https://github.com/hajimimaodie8/DSH-Session-Sync) — 双向同步网页版与 DSH Desktop 桌面版之间的会话、工作区、设置与插件。
 - [Han-Yao94/dsh-session-toolkit](https://github.com/Han-Yao94/dsh-session-toolkit) — 整合工具包：会话身份、全局/工作区提示词（含引用文件）、会话自动上线、免 UAC 网页重启、会话间消息。
 - [HanYu-me/dsh-prompt-booster](https://github.com/HanYu-me/dsh-prompt-booster) — 输入框提示词提升。左键点击输入框按钮，草稿被轻度润色后直接替换（可撤销、不弹窗）；右键打开模式菜单：8 个内置模式加自定义模式，每个模式的模板可编辑、可新增（保存在宿主端），并可从 dsh 当前可用的模型列表中选择改写所用的模型；其他模式先显示前后对比预览。基于 rongxingda/dsh-prompt-enhance（Apache-2.0）修改；不要与上游同装——两者都会添加输入框按钮并共用 Ctrl+Alt+E，装了两个请停用其中一个。
