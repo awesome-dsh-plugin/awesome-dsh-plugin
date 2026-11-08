@@ -964,6 +964,7 @@ dsh plugin --profile web add dshmarket
 - [Lacquervii/smooth-cursor](https://github.com/Lacquervii/smooth-cursor) — 为 DSH Web 输入框提供流畅的彗星光标：以发光的彗星拖尾取代原生闪烁光标，随输入平滑滑动，可配置强调色、粗细与拖尾，并适配中文等 IME 输入。
 - [lakabuji-arch/dsh-model-accordion](https://github.com/lakabuji-arch/dsh-model-accordion) — 为 DSH Web 输入栏提供按 provider 折叠的模型选择器，并使用模型目录中的真实推理档位。
 - [lalalaleo/dsh-draft](https://github.com/lalalaleo/dsh-draft) — 基于 Markdown 的 dsh 草稿板插件，支持实时预览编辑，本地持久化。
+- [lamp23333/dsh-balance-simple](https://github.com/lamp23333/dsh-balance-simple) — 在 DSH 侧边栏集中显示 DeepSeek 余额、用量和峰谷倒计时，简约直观。需要 DSH Web 界面并已登录 DeepSeek 账户。
 - [Lancang-hzau/dsh-live-terminal](https://github.com/Lancang-hzau/dsh-live-terminal) — 可见终端面板：把 agent 的 shell 命令实时显示在应用内终端，并支持 agent 以文本方式截取终端屏幕。
 - [LanFeng97/dsh-workspace-create-dialog](https://github.com/LanFeng97/dsh-workspace-create-dialog) — Codex 式的创建工作区对话框：填名称就自动建出目录，或者选文件夹——原生选择窗口会记得你上次在哪（原生选择窗口仅 Windows 可用，其它平台请直接填名称）。
 - [langyo/dsh-mobile-upgrade](https://github.com/langyo/dsh-mobile-upgrade) — 需要 DSH 0.1.5-rc.1。dsh web profile 的手机端体验修复：窄屏抽屉与设置标签、全宽模型菜单、卡住请求的网络状态芯片，以及把会话层级、subagent 与后台任务芯片收进一张可点开面板的窄屏头部收纳器。
@@ -1511,6 +1512,7 @@ dsh plugin --profile web add dshmarket
 - [sjrslh/dsh-ui-zoom](https://github.com/sjrslh/dsh-ui-zoom) — Ctrl+滚轮整页缩放（60%–180%，记住比例），右下角常驻「设置」入口可打开宿主设置面板，Ctrl+0 复位。
 - [SkyblueeeLabs/dsh-iconic-launcher](https://github.com/SkyblueeeLabs/dsh-iconic-launcher) — 自定义 DeepSeek Harness 桌面快捷方式图标：选预设或上传图片，自动去除白底、生成多尺寸 ICO，一键写入桌面快捷方式。
 - [skyhancloud/dsh-client-ui-quote](https://github.com/skyhancloud/dsh-client-ui-quote) — 在网页聊天输入框上方为选中的 AI 回复内容添加可移除的引用横幅，随下一条消息一并发送。
+- [SkylerFee/dsh-sidebar-rail](https://github.com/SkylerFee/dsh-sidebar-rail) — 为 macOS Desktop 折叠侧栏添加自动隐藏的图标轨，支持工作区置顶，以及最近会话、定时任务、用户安装插件和账号信息浮层。
 - [skyline66/dsh-desktop-clock](https://github.com/skyline66/dsh-desktop-clock) — 可拖动的 DSH 网页悬浮时钟：支持数字与指针表盘、专注计时、四套主题，并会记住窗口位置。
 - [skyline66/dsh-family-budget](https://github.com/skyline66/dsh-family-budget) — 侧边栏月度家庭预算表：收入、固定支出、可变支出、储蓄、应急金、债务与按月复盘，含合计、逐项预算差额与储蓄／还债／买房目标。只做收支整理，不提供投资建议。
 - [skyline66/dsh-sticky-notes-wall](https://github.com/skyline66/dsh-sticky-notes-wall) — 左侧栏便签墙：粘贴图片与文本、到期提醒、完成状态、快捷键、可置顶浮窗、外观皮肤，以及 Windows 桌面置顶窗口。
@@ -2137,6 +2139,7 @@ dsh plugin --profile web add dshmarket
 - [cococo1ng/dsh-jianxian-widget#plugin](https://github.com/cococo1ng/dsh-jianxian-widget/tree/main/plugin) — DSH 网页界面右下角的常驻挂件：一位剑修守在角落，读取账户余额与 token 消耗，本地记一本按模型拆占比的账，10 路音效各带开关。余额告急、模型在等你回答、等你批准、深夜该睡了，都会开口提醒。23 个常驻姿态加 24 帧剑舞、22 件法宝（菜单图标皮肤）、6 个面板页签、可逐行编辑的气泡编辑器，黑衣白衣跟着明暗主题换。全本地运行，不向 agent 注册工具。
 - [ColorlessBoy/dsh-opencode-usage](https://github.com/ColorlessBoy/dsh-opencode-usage) — 在 DeepSeek Harness 的 Web 输入框 dock 显示 OpenCode Go 套餐的 5 小时 / 每周 / 每月剩余额度。
 - [ConTr0L0/dsh-balance-monitor](https://github.com/ConTr0L0/dsh-balance-monitor) — 在 DSH 侧边栏监控多个平台的余额，统计 DeepSeek 峰谷用量成本与会话消耗，并支持配置消费上限。
+- [Cottins-Vanilla/dsh-session-usage](https://github.com/Cottins-Vanilla/dsh-session-usage) — DeepSeek Harness 会话用量面板：价格、token、每轮累计曲线，以及每个回答末尾的价格标记。
 - [cp990207/dsh-usage-ledger](https://github.com/cp990207/dsh-usage-ledger) — 本地用量账本：从本机会话日志统计每日、每模型、每工作区的 token 消耗、缓存命中率、工具请求占比与估算费用，并提供按模型编辑单价的设置面板。
 - [CZ1900/suanzhang-dsh](https://github.com/CZ1900/suanzhang-dsh) — 交易终端风格的 DeepSeek Harness 计费插件：侧边栏余额与今日消费、按步骤人民币费用表、官方价自动同步（含峰谷）、跨会话与按天汇总、工具级费用归属与成本预测。
 - [czk200518-hash/dsh-tlogs](https://github.com/czk200518-hash/dsh-tlogs) — DSH 侧边栏页脚的 Token 用量组件，同时跑两路数据源而不是二选一：DeepSeek 平台账号的用量/金额接口（账号全部设备、仅官方通道），本机会话日志（仅本机、含所有供应商、实时、无金额）。两路逐日合并——官方通道取较大值（同一次调用两路都会记），平台看不到的供应商再叠加；历史月份从平台回补，供应商按通道而非模型名判定，日桶跟随平台口径（UTC）；平台数字默认复用 DSH 已登录账号，不用粘贴 token。数字出现在紧凑条、展开面板，以及含日历/图表/模型/供应商/年/月/当月按天页签的详细数据弹窗，口径为总消耗/当前项目/今日/当周/当月/近 7 天/近 30 天。
@@ -7579,8 +7582,8 @@ dsh plugin --profile web add dshmarket
 - [weibaohui/dsh-process](https://github.com/weibaohui/dsh-process) — 工艺管理：把 ntd 的「工艺」（多阶段·多环节 agent 工作流模板）接进 dsh web——浏览/编辑/校验/导入导出/AI 生成工艺，内置库只读、我的库可写，文件改动实时同步；agent 可通过 process_* 工具读工艺库、按工艺分阶段推进。
 - [weibaohui/dsh-tasks](https://github.com/weibaohui/dsh-tasks) — 定时任务：用 cron 表达式定时执行提示词，到点自动开一个新 agent 会话替你干活，支持绑定工作区、手动立即执行与会话自动命名。
 - [weibaohui/dsh-thinktank](https://github.com/weibaohui/dsh-thinktank) — 智囊团：内置 161 个经典思维模型库（决策/战略/认知/心理/沟通/学习/系统/创新/执行九大分类），输入一个问题即可用选中的多个模型并行 AI 分析，产出含共识/分歧/盲区/行动清单的综合报告页；支持自动分析与提示词往返导入两种模式。
-- [Weihao654/dsh-workflow#l1-presets](https://github.com/Weihao654/dsh-workflow/tree/main/plugins/l1-presets) — 声明 plan、work、code、review 四个 agent preset，为每个角色划定各自的工具集，服务一条六步多 Agent 工作流。
-- [Weihao654/dsh-workflow#l2-protocol](https://github.com/Weihao654/dsh-workflow/tree/main/plugins/l2-protocol) — 新增十二个 chain_* 工具，把多 Agent 角色链变成轮次状态机：唯一冻结的基线、按签名累计的失败次数、按角色标注的证据、阻塞式审批门禁，以及每轮一份审计文件。另附设置页卡片，可为每个角色指定模型与思考深度。需同时安装同仓库的 l1-presets 包（plan/work/code/review 四个 preset），否则所有 chain_* 工具都会返回 ROLE_DENIED。
+- [Weihao654/dsh-workflow#l1-presets](https://github.com/Weihao654/dsh-workflow/tree/main/plugins/l1-presets) — 为 DeepSeek Harness 提供四个 Plan 原生工作流角色预设：plan 规划与分派、work 协调执行、code 负责源码修改、review 独立只读审核。每个角色具有明确的工具权限矩阵，可配合 l2-protocol 执行显式启用的受控轮次。
+- [Weihao654/dsh-workflow#l2-protocol](https://github.com/Weihao654/dsh-workflow/tree/main/plugins/l2-protocol) — DeepSeek Harness 的 Plan 原生多 Agent 工作流：plan 负责规划、work 负责协调、code 负责写入、review 负责只读审核。普通任务无需授权卡或预算表单。提供 14 个 chain_* 工具，支持显式授权的受控轮次，包括冻结 T0 基线、分层证据和阻塞式关轮门禁。支持按角色配置模型，需同时安装 l1-presets。
 - [weiplwei/DeepSeek-chan-sleep-shutdown](https://github.com/weiplwei/DeepSeek-chan-sleep-shutdown) — 仅 Windows：右下角一枚深夜月亮主题的悬浮按钮（会打瞌睡的 DeepSeek-chan 鲸鱼娘形象，清醒/睡觉两套图），点一下即开启——当所有 root 会话全部空闲后自动关机，再点一下关闭。按钮可拖动（位置记在 localStorage），会自动避让其他插件的角落弹窗，前端重渲染把它冲掉也会自动挂回。批次结束后进入 60 秒可取消倒计时（可设 10–600 秒），按钮上显示剩余秒数并弹出同款横幅：点「取消关机」执行 shutdown /a 并退出模式，倒计时期间任何新会话启动也会中止。按钮右键可在「仅成功时关机」与「无论成败都关机」之间切换，选择持久化在 $DSH_HOME/deepseek-chan-sleep-shutdown.json，DSH 重启后保持。零运行时依赖。
 - [weixshaw/dsh-plugin-task-runner](https://github.com/weixshaw/dsh-plugin-task-runner) — 任务拆解模式：主代理把大任务拆成独立子任务，派给子代理（默认本地模型）在全新短上下文中执行并综合结果；并发数与模型可在设置面板图形化配置。
 - [whateverboy2333/dsh-round-table](https://github.com/whateverboy2333/dsh-round-table) — 面向 Windows 桌面版 DeepSeek Harness 0.2.0-rc.2 的圆桌会议，复用已有 Agent 会话，提供讨论、可编辑任务卡、顺序与并行步骤、会议文件归档及秘书纪要。
