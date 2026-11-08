@@ -1,0 +1,6 @@
+url: https://github.com/MoonSand/dsh-ui-optimize
+name: MoonSand/dsh-ui-optimize
+category: ui
+description:
+  en: 'Theme gallery, desktop actions and sidebar folding for the DSH web interface, each with its own switch. Eight minimalist themes recolour the whole UI through a single theme-token layer, each defining one palette for light and one for dark that follows the Appearance setting. The desktop actions add Reload UI and Restart app at the sidebar foot; reload only re-loads the page and client plugins, while restart relaunches the app together with its Host and is desktop only (a browser session degrades to a page reload). Sidebar folding collapses the panel rows into one Panels entry that opens a two-column launcher with search and keyboard control.'
+  zh: '给 DSH 界面换主题，在侧栏底部提供「刷新界面 / 重启应用」两个按钮，并把侧栏面板列表收成一个入口，三项功能各有独立开关。8 套极简主题通过单一主题变量层整套换色，每套为浅色与深色各定义一组配色并跟随「外观」设置。侧栏的刷新只重载页面与客户端插件，重启会连同 Host 重开整个应用；重启仅桌面端可用，网页端降级为刷新页面。侧栏收纳把面板行收成一个「面板」入口，点开是两列启动面板，带搜索与键盘操作。'
