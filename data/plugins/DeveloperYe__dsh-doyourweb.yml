@@ -1,0 +1,7 @@
+url: https://github.com/DeveloperYe/dsh-doyourweb
+name: DeveloperYe/dsh-doyourweb
+category: browser
+description:
+  en: 'Brings the Chrome or Edge tabs you already have open to DSH: sixteen tools read, click, fill, upload, screenshot, capture network traffic, open and close tabs, route WebMCP tools, send page annotations and drive desktop apps, over an MV3 extension that dials out to the plugin so the browser may live on another machine.'
+  zh: '把你在用的 Chrome/Edge 标签页接进 DSH：16 个工具负责读取、点击、填写、上传、截图、抓取网络请求、开关标签页、调度 WebMCP 工具、发送页面批注与操作桌面应用；配套 MV3 扩展主动出站连接插件，浏览器可在另一台机器上。'
+icon: https://raw.githubusercontent.com/DeveloperYe/dsh-doyourweb/main/extension/icons/icon-128.png
