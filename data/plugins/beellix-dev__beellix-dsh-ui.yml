@@ -2,6 +2,6 @@ url: https://github.com/Beellix-dev/beellix-dsh-ui
 name: Beellix-dev/beellix-dsh-ui
 category: ui
 description:
-  en: "Beelli X UI adds unified settings, skins, sidebar controls, plugin market switching, desktop pets, and archived-chat management to DeepSeek Harness desktop. Archived chats are grouped by workspace and can be restored or deleted locally."
-  zh: "Beelli X 界面增强为 DeepSeek Harness 桌面客户端提供统一设置、主题皮肤、可配置侧栏、插件市场切换、桌宠和归档聊天管理。归档聊天按工作区分组，可取消归档，也可单条或批量删除本地记录。"
+  en: "Beelli X UI for Windows DSH NEXT groups archived chats by workspace, with search, restore, and confirmed local deletion for one or many chats. It supports multiple desktop pets with per-pet uploaded animations and playback from the right-click menu, image or MP4 wallpaper with adjustable frosted panels, and inline switching or adding of plugin catalogs."
+  zh: "Beelli X 界面增强为 Windows DSH NEXT 提供按工作区分组的归档聊天，可搜索、恢复或确认后单条与批量删除本地记录。支持为多只桌宠分别上传默认动作和额外动作，右键播放。可导入图片或 MP4 壁纸，调整两侧磨砂，并在同一插件页切换市场或添加自定义目录。"
 tarball: https://github.com/Beellix-dev/beellix-dsh-ui/releases/download/v0.1.1/beellix-dsh-ui-0.1.1.tgz
