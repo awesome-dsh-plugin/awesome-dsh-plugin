@@ -1,0 +1,6 @@
+url: https://github.com/teanuky/dsh-textbook-parser
+name: teanuky/dsh-textbook-parser
+category: docs
+description:
+  en: 'Breaks a STEM textbook into a four-level card map (book, chapter, section, knowledge point) in a sidebar panel, where each point names the defect of the previous approach it fixes and each chapter keeps its remaining gap as the motive for the next; marks key points with a star, shows theorems as cards with statement, conditions and symbol table, folds step-by-step derivations, and exports the same map as a self-contained offline HTML file, Word or PDF. Ships a textbook-parser skill and a textbook_archive tool (save_book / save_chapter / list_books / get_book / delete_book) plus a bundled 12-chapter Signals and Systems sample with 116 sections, 263 points and 601 worked examples. No runtime dependencies and no network access.'
+  zh: '把理工科教材拆成「全书、章、节、知识点」四层卡片知识地图（侧边栏面板）：每个知识点写明它修复了前方案的什么缺陷，每章用「仍存短板」作为下一章的动机；重点知识点标 ★，定理以卡片呈现（结论／适用条件／符号说明），推导过程可折叠，并可将同一张地图导出为离线自包含 HTML、Word 或 PDF。内置 textbook-parser 技能与 textbook_archive 工具（save_book／save_chapter／list_books／get_book／delete_book），附带《信号与系统》12 章示例（116 节、263 个知识点、601 道例题）。零运行时依赖、不联网。'
