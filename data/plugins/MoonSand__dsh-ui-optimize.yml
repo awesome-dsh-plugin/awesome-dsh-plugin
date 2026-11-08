@@ -2,5 +2,5 @@ url: https://github.com/MoonSand/dsh-ui-optimize
 name: MoonSand/dsh-ui-optimize
 category: ui
 description:
-  en: 'Switches that tune how DeepSeek Harness looks and behaves across the whole interface, not just a few screens; each works on its own and more arrive as the shell grows. Theme gallery of eight minimalist themes, each defining one palette for light and one for dark and applied through a single theme-token layer, plus sidebar panel folding that collapses the rail rows into one Panels launcher with search and keyboard control. The launcher follows the pattern of dsh-sidebar-shelf (github.com/wumouren114/dsh-sidebar-shelf).'
-  zh: '调 DeepSeek Harness 整体观感与操作的开关集合，管的是整套界面而不只是某几块；每个开关独立生效，随宿主能力增长继续增加。包含 8 套极简主题的画廊（每套为浅色与深色各定义一组配色，通过单一主题变量层整套换色），以及把侧栏面板行收成一个「面板」入口的收纳功能（点开是两列启动面板，带搜索与键盘操作）。启动面板的做法参考 dsh-sidebar-shelf（github.com/wumouren114/dsh-sidebar-shelf）。'
+  en: 'Switches that tune how DeepSeek Harness looks and behaves across the whole interface, not just a few screens; each works on its own and more arrive as the shell grows. Theme gallery of eight minimalist themes, each defining one palette for light and one for dark and applied through a single theme-token layer, plus sidebar panel folding that collapses the rail rows into one Panels launcher with search and keyboard control, and reload/restart actions at the sidebar foot.'
+  zh: '调 DeepSeek Harness 整体观感与操作的开关集合，管的是整套界面而不只是某几块；每个开关独立生效，随宿主能力增长继续增加。包含 8 套极简主题的画廊（每套为浅色与深色各定义一组配色，通过单一主题变量层整套换色）、把侧栏面板行收成一个「面板」入口的收纳功能（点开是两列启动面板，带搜索与键盘操作），以及侧栏底部的刷新/重启按钮。'
