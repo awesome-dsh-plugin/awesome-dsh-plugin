@@ -2,5 +2,5 @@ url: https://github.com/rabbitRa-git/dsh-progress-report
 name: rabbitRa-git/dsh-progress-report
 category: workflow
 description:
-  en: Host-side progress checkpoints for long DSH tasks &#8212; after N minutes or M tool calls the model is nudged to post a one-line progress note and keep working, so you can correct it before it runs far off course.
+  en: Host-side progress checkpoints for long DSH tasks. After N minutes or M tool calls the model is nudged to post a one-line progress note and keep working, so you can correct it before it runs far off course.
   zh: DSH 长任务进度检查点——到点由宿主侧提示模型一边干活一边补一行进度，跑偏能及时纠正；汇报间隔与步数兜底都能在设置页里调。
