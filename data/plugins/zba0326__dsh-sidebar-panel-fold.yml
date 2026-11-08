@@ -1,0 +1,7 @@
+url: https://github.com/zba0326/dsh-sidebar-panel-fold
+name: zba0326/dsh-sidebar-panel-fold
+category: ui
+description:
+  en: 'Adds a row at the top of the sidebar panel list that folds the whole Plugins … More column with one click or ⌥⌘P, so the Workspaces section moves up; the folded state is kept in localStorage and survives a reload.'
+  zh: '在侧栏面板列表顶部加一行，点一下或按 ⌥⌘P 就把「插件 … 更多」整列收起，工作区随之上移；折叠状态存在浏览器本地，重开窗口保持。'
+icon: https://raw.githubusercontent.com/zba0326/dsh-sidebar-panel-fold/main/assets/icon-180.png
