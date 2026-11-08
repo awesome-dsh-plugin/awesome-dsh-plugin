@@ -5724,7 +5724,7 @@ dsh plugin --profile web add dshmarket
 - [vikasranax/dsh-plugin-cats](https://github.com/vikasranax/dsh-plugin-cats) — 为 AI 代理从公开 API 获取随机猫咪冷知识与猫图。
 - [VioletEverGarden-zc/dsh-rea-mcp-toggle](https://github.com/VioletEverGarden-zc/dsh-rea-mcp-toggle) — 在 DSH Web UI 会话标题栏或通过 rea_mcp_toggle 工具开关 rea-mcp 服务器：不用逆向时，170 个 mcp__rea__* 工具 schema 不再随每次请求发送（tools payload 由约 722 KB 降到约 95 KB），REA 子进程同时退出；选择存入 profile 级状态文件，重启后由行级 disabled 表达式恢复。
 - [visualcjy/nyaterm-bridge](https://github.com/visualcjy/nyaterm-bridge) — 在 NyaTerm 的真实终端会话里执行 AI 命令，复用已配置的分组、跳板机和本地终端，按工作区限制可用范围；命令与输出留在 NyaTerm 中，便于查看和审计。
-- [Vncntvx/dsh-zotero](https://github.com/Vncntvx/dsh-zotero) — 面向 Agent 研究工作流的 Zotero 插件：搜索文献、查看元数据与笔记、提取与问题相关的证据段落、打开原文 PDF、生成引用与参考文献表。
+- [Vncntvx/dsh-zotero](https://github.com/Vncntvx/dsh-zotero) — 面向 DeepSeek Harness 的 Zotero 插件：在对话中检索与阅读文献、在文献轨迹中核对记录，并在文献面板浏览文献库。
 - [Void-LifeStream/dsh-cuda](https://github.com/Void-LifeStream/dsh-cuda) — 在 DeepSeek Harness 里直接跑本地 NVIDIA CUDA GPU 的 Python 任务：设备状态、前台/后台作业、持久日志、每次运行实测的峰值显存。
 - [Void-LifeStream/dsh-phone-butler](https://github.com/Void-LifeStream/dsh-phone-butler) — 用 adb 查看并打理一台真实的 Android 手机：存储体检、未 root 也能读到的逐应用数据大小（来自 dumpsys diskstats）、只清缓存不动数据的清理、目录统计与截图——共五个工具；读取永不改动任何东西，写入必须显式确认。
 - [volcengine/ark-cli#ark-managed-agents](https://github.com/volcengine/ark-cli/tree/main/dsh-plugins/ark-managed-agents) — 新增 Managed Agents 设置页，并通过 MCP 工具向方舟云端 Managed Agents 派发长任务、取回轨迹与产物。
@@ -7036,7 +7036,7 @@ dsh plugin --profile web add dshmarket
 - [xsoc1/math-research-dsh](https://github.com/xsoc1/math-research-dsh) — 严谨开放数学研究套件：4 个 agent skill（rigorous-open-math-research、manage-math-research-program、math-research-workflow、lean-verify），覆盖对抗性审计的定理求解、研究项目管理、流水线编排与 Lean 4 形式化审计；CI 测试与机械式上游同步。
 - [XSY-28/learning-skills](https://github.com/XSY-28/learning-skills) — 提供课程阅读稿、理解式讲解与自足讲义三个学习技能，附带参考文件和课程辅助脚本。
 - [xulelenlp/dsh-web-artifact-designer](https://github.com/xulelenlp/dsh-web-artifact-designer) — 面向 DSH 的设计稿生成 skill（改编自 Anthropic canvas-design / web-artifacts-builder）：把设计需求做成可直接打开的自包含 HTML/SVG 设计稿（海报、信息图、落地页、图表、组件稿），内置交付前质量清单与「去 AI 味」反模式清单。
-- [xuzhecomeon/dsh-research-suite](https://github.com/xuzhecomeon/dsh-research-suite) — 科研全流程插件：注册 10 个领域技能与 7 个工具，把随包 592 条科研技能整理成 103 张能力卡并附 586 条可审计的判定账本，通过系统提示段自动接管科研任务。
+- [xuzhecomeon/dsh-research-suite](https://github.com/xuzhecomeon/dsh-research-suite) — 科研全流程插件：注册 10 个领域技能与 15 个工具，把随包 450 条科研技能整理成 103 张能力卡并附 444 条可审计的判定账本，并通过系统提示段自动接管科研任务。工具覆盖真跑 R/Python（默认关闭，先预览再确认）、数据闸门、图片与 docx 核验、按中文期刊体例生成 .docx、PubMed 真检索、DOI 逐字段核对、跨会话项目记忆。
 - [xxszyh/dsh-gui-handoff](https://github.com/xxszyh/dsh-gui-handoff) — 把命令行验证过的操作交接给图形界面：自己驱动一遍、用地面真值验证，并产出人能照着做的自包含带图教程。
 - [yahoolcj/dsh-plugin-zerone](https://github.com/yahoolcj/dsh-plugin-zerone) — 会进化的项目级 Agent：以 SDD 规格驱动掌舵全流程，内置 16 个技能覆盖澄清、PRD、issue、编码、定位、验收、审查；会记忆、会沉淀，越用越懂你的项目。
 - [yangdongzhen590/dsh-knj-extension-center](https://github.com/yangdongzhen590/dsh-knj-extension-center) — 技能中心：按区域浏览技能、从 zip 安装，并支持启用停用、卸载、回收站恢复与搜索。
