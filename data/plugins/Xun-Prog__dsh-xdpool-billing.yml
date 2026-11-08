@@ -1,0 +1,6 @@
+url: https://github.com/Xun-Prog/dsh-xdpool-billing
+name: Xun-Prog/dsh-xdpool-billing
+category: usage
+description:
+  en: A credit meter for XD Pool (WorkBuddy) accounts that shows each account's remaining credits and package breakdown, measures today/month/all-time consumption from balance snapshots, and warns about credits expiring within 3, 7 and 30 days.
+  zh: XD Pool（WorkBuddy）积分计费面板：显示每个账号的剩余积分与积分包明细，按余额快照差值实测今日/本月/累计已消耗积分，并按 3/7/30 天分档预警即将过期积分。
