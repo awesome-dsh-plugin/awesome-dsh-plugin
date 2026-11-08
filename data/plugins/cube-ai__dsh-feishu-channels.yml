@@ -1,0 +1,6 @@
+url: https://github.com/cube-ai/dsh-feishu-channels
+name: cube-ai/dsh-feishu-channels
+category: remote
+description:
+  en: Connect a Feishu bot app to the local DeepSeek Harness (DSH), with each bot app chat as a separate workspace channel.
+  zh: 将飞书机器人应用接入本机 DeepSeek Harness（DSH），每个 IM 聊天对应一条独立工作区频道。
