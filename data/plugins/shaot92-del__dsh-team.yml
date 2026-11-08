@@ -1,0 +1,7 @@
+url: https://github.com/shaot92-del/dsh-team
+name: shaot92-del/dsh-team
+category: remote
+description:
+  en: 'Multi-machine job board for DSH: 12 board tools, 4 shell tools, a GUI panel, and a dispatcher that hands queued tasks to remote hosts through dsh-remote-agent.'
+  zh: 'DSH 多机作业板：12 个作业板工具、4 个命令工具、一个图形面板，并经 dsh-remote-agent 把排队任务派给多台机器。'
+icon: https://raw.githubusercontent.com/shaot92-del/dsh-team/main/assets/icon-180.png
