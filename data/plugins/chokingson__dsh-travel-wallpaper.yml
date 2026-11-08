@@ -1,7 +1,7 @@
 url: https://github.com/chokingson/dsh-travel-wallpaper
 name: chokingson/dsh-travel-wallpaper
 category: ui
-tarball: https://github.com/chokingson/dsh-travel-wallpaper/releases/latest/download/dsh-planet-news.tgz
+tarball: https://github.com/chokingson/dsh-travel-wallpaper/releases/latest/download/dsh-travel-wallpaper.tgz
 description:
   en: "Travel wallpaper for DeepSeek Harness: pick a character (four built in, or upload your own reference photo) or observe a world without one, choose a world and one of 20 art styles, and the plugin assembles the image prompt, generates the wallpaper through your own image channel (ChatGPT or Google subscription, OpenAI-compatible API, Gemini, Volcengine Seedream, or local ComfyUI/MOSS) and applies it to the Windows desktop or lock screen. Each trip also returns world events and a letter from the character; replying to the letter shapes the next scene, and every trip stays in a browsable archive with image and ZIP export. Ships daily wallpaper, instant blind-box trips and scheduled blind-box trips. Data lives in ~/.dsh/planet-news; provider credentials are read from DSH's credential store, and the plugin provides no image quota."
   zh: "DeepSeek Harness 的旅行壁纸：选角色（内置 4 个，也可上传自己的参考图）或不要角色、只看世界，选一个世界和 20 种画风之一；插件整理画面提示词，经你自己配置的生图渠道（ChatGPT 或 Google 订阅、兼容 OpenAI 的 API、Gemini、火山 Seedream，或本地 ComfyUI/MOSS）生成壁纸，并设为 Windows 桌面或锁屏。每次旅行还会得到世界见闻和角色来信，回信会影响下一幕；旅行记录保留在可浏览的档案里，支持导出图片或 ZIP。另有每日壁纸、立即盲盒旅行和定时盲盒旅行。数据保存在 ~/.dsh/planet-news，渠道凭据由 DSH 凭据服务读取，插件不提供生图额度。"
