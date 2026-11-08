@@ -1,0 +1,6 @@
+url: https://github.com/igdwei/dsh-store-ops-expert
+name: igdwei/dsh-store-ops-expert
+category: ui
+description:
+  en: 'Restaurant store operations expert: reconcile a POS export, locate the gap, split volume vs price, measure discount efficiency, and open a single-file local-data dashboard.'
+  zh: '餐饮门店经营分析专家：对账体检、找差距、量价拆解、算让利效率，并交付一个数据本地的单文件经营看板。'
