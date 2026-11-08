@@ -1,0 +1,6 @@
+url: https://github.com/Red-Rayux/dsh-formula-docx
+name: Red-Rayux/dsh-formula-docx
+category: docs
+description:
+  en: Converts Markdown into .docx with native Word equations (OMML), then exports a PDF to verify every formula renders.
+  zh: 把 Markdown 转成公式为 Word 原生对象（OMML）的 .docx，并导出 PDF 逐页校验公式渲染。
