@@ -2122,6 +2122,7 @@ dsh plugin --profile web add dshmarket
 - [boom-10/dsh-goal-budget](https://github.com/boom-10/dsh-goal-budget) — 给 DSH 的 goal 设 token、费用与计算时长上限，达到上限即阻断该 goal，而不只是报告花费。数字取自 DSH 为该会话记录的用量事件并按模型计价；输入框旁的 pill 点开是按模型分列的明细。内置 DeepSeek 官方价目，峰谷计价可关闭（它取决于线路）；其他模型用配置的单价，没有单价的模型只计 token 并列出名字，不猜价格。
 - [boooooooer/dsh-balance-and-cost](https://github.com/boooooooer/dsh-balance-and-cost) — DeepSeek 账户余额与模型消耗：官方价格表分高峰/空闲时段计价，三档计费口径（缓存未命中/命中/输出），按模型与会话统计，主页摘要条悬停明细，支持导出 CSV 与重置记录。
 - [bowenliang123/dsh-context](https://github.com/bowenliang123/dsh-context) — DSH 上下文洞察面板：Context 仪表盘 + /context命令 + Context 浏览器，查看 Context的分类组成、内容详情、演进趋势、压缩/注入事件、统计等一站式 Context 全生命周期管理。
+- [boy1141/dsh-plugin-balance-chip](https://github.com/boy1141/dsh-plugin-balance-chip) — 在会话标题栏显示 DeepSeek 账户余额与未用完的赠送额度，每 20 秒自动刷新，窗口重新聚焦时立即刷新。
 - [BREEY05/dsh-balance-widget](https://github.com/BREEY05/dsh-balance-widget) — 跟随所选模型供应商显示余额，并根据观察到的余额下降估算消耗。
 - [bushizhanghan/dsh-routing-forensics](https://github.com/bushizhanghan/dsh-routing-forensics) — 模型路由浪费取证：回放每个会话，按请求形状确定性判定每轮任务复杂度（不调 LLM），报两类浪费——贵模型干 便宜活（差额可计算），以及便宜模型干贵活且因自身能力失败（每次重试重发整个上下文，比直接升级更贵）。会 区分服务商容量限制（RATE_LIMIT/TIMEOUT/TRANSPORT）与模型能力失败，所以不会天天喊狼来了。并从证据推导路由 规则，按内置每百万 token 价目表估算金额。
 - [bushizhanghan/dsh-workspace-switch-cost](https://github.com/bushizhanghan/dsh-workspace-switch-cost) — 工作区切换成本量化：量每个工作区的冷启动开销（AGENTS.md + 技能目录 + 工具 schema + 运行时上下文）、稳态值、 几轮到达稳态，然后横向对比并归因。归因需要至少三个工作区，不到就明说数据不够而不是拿两个点编一个相关性； 在所有工作区之间没有差异的因素被标注为 profile 的属性而非项目的属性。按"进入成本 × 访问频率"给出常驻/ 归档建议。纯确定性。
@@ -4558,6 +4559,7 @@ dsh plugin --profile web add dshmarket
 - [rebron1900/dsh-mnemosyne](https://github.com/rebron1900/dsh-mnemosyne) — Mnemosyne 记忆插件 for DeepSeek Harness：提供 remember / recall / forget / stats / sleep 工具、内嵌技能、Settings 面板和可选的自动记忆功能。
 - [regrevia/dsh-lite-memory](https://github.com/regrevia/dsh-lite-memory) — 让东坡肉滚出系统提示：记忆不常驻，命中只给标题，正文读了才进上下文，项目规范还能自己长。
 - [Relistencode/dsh-recall](https://github.com/Relistencode/dsh-recall) — 对话历史回忆：字面/模糊/语义三层检索全部历史会话的原始文本，完全本地离线——AI 再也不会忘记你说的话。一条命令安装（自带 `dsh.bundle.patch`），语义推理跑在 worker 线程。
+- [renorai/dsh-renor](https://github.com/renorai/dsh-renor) — Connects DeepSeek Harness to the hosted Renor memory MCP server over Streamable HTTP, using a Renor API key from RENOR_API_KEY, so the model can call Renor's recall and save tools. It is a configuration bundle with no code of its own.
 - [reshuibuduo/tmcra-plugin-deepseek-harness](https://github.com/reshuibuduo/tmcra-plugin-deepseek-harness) — 面向 DeepSeek Harness 的跨应用项目记忆，支持角色分离写回、可视化知识工作台、确认后纠错、会话控制、本地 Writer 与整理模型设置，以及免账号 Windows 本地安装预览。
 - [dsh-memory](https://github.com/RestRegular/dsh-memory/tree/main/packages/dsh-memory) — 一体化本地记忆：按作用域（会话、项目、全局或自定义名）各一个 JSONL 文件、作用域内按内容去重，五个模型工具（memory_save / memory_search / memory_list / memory_get / memory_forget），自动召回与硬性规则注入 agent 的 pre-step，并带一个设置面板。检索是词法 IDF 与本地向量后端的组合，向量后端可由面板一键安装并托管。
 - [rocco623/dsh-codex-memory](https://github.com/rocco623/dsh-codex-memory) — Codex V2 记忆流水线到 DeepSeek Harness 的移植：后台 agent 逐个抽取空闲会话，整合阶段在 git baseline diff 之后把它们合成一份 memory_summary.md，新会话注入这份摘要，被引用的记忆回流成使用计数。设置页可选模型、两个阶段的思考强度，以及空闲时长、保留天数、并发和超时等上限。
@@ -5051,6 +5053,7 @@ dsh plugin --profile web add dshmarket
 - [hairyf/dsh-tool-activator](https://github.com/hairyf/dsh-tool-activator) — 默认只加载基础工具，其余工具按需激活，并在插件设置页以逐工具开关管理。
 - [Haitang-Hub/dsh-3d-director-desk](https://github.com/Haitang-Hub/dsh-3d-director-desk) — DSH 右侧栏 3D 导演台插件：摆角色、运镜、时间轴预演与导出，AI Agent 经 MCP 工具实时编排场景。
 - [Haitang-Hub/dsh-infinite-canvas](https://github.com/Haitang-Hub/dsh-infinite-canvas) — 无限画布右侧栏插件——在画布上编排文本、图片、视频、音频节点，用 AI 生成媒体内容，Agent 经 MCP 工具直接操作画布；自带本地桥服务，安装后离线可用。
+- [halcyon6669/dsh-db-mcp](https://github.com/halcyon6669/dsh-db-mcp) — DSH 里的数据库工作台：可以直接导入 DBeaver 已有的连接（读 data-sources.json，本地解密已保存的口令），也可以手工登记 SQLite、PostgreSQL、MySQL、Oracle 数据源，然后交给智能体通过 8 个 mcp__db__ 工具使用——list_datasources、list_tables、describe_table、sample_rows、execute_sql、explain_query、get_ddl、test_connection。数据源默认只读，一个全局开关才放开 INSERT/UPDATE/DDL；每次调用都限制行数并写入 JSONL 审计日志。另有分组、批量操作、只读结构浏览，以及依赖可在面板一键安装的内置 Python MCP 服务。不需要改 DSH 的任何文件。
 - [Han-1413141/dsh-codex-computer-use](https://github.com/Han-1413141/dsh-codex-computer-use) — 让 DSH 当前模型通过已安装的 Codex Computer Use 运行时读取和操作 Windows 应用，并保留每个会话的应用授权。
 - [hanshengcc/callai-seo-mcp](https://github.com/hanshengcc/callai-seo-mcp) — 连接 CallAI SEO MCP 服务，提供 10 个 SEO 数据工具和 1 个 DataForSEO 通用请求工具：Google/Bing 搜索结果（含 AI Overview 引用来源）、关键词搜索量与难度、长尾词、竞品关键词差距、外链和页面审计。附带 callai-seo 技能。需要 CallAI API Key，按量付费。
 - [hanyi7867069-create/dsh-content-lab](https://github.com/hanyi7867069-create/dsh-content-lab) — 内容工坊——选题、标题、文案与排期生成工具，直接调用内置 LLM。
