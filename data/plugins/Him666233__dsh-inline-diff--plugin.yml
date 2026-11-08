@@ -1,0 +1,6 @@
+url: https://github.com/Him666233/dsh-inline-diff/tree/main/plugin
+name: Him666233/dsh-inline-diff#plugin
+category: ui
+description:
+  en: 'Inline diff cards for every edit, write and str_replace_editor call: old/new line numbers, character-level highlighting, 57-language detection with a red/green-safe syntax palette, a side-by-side viewer, Read-row line ranges, and a settings page for display style and highlighting.'
+  zh: '为 edit、write、str_replace_editor 调用就地渲染内联差异卡片：旧/新行号、字符级高亮、57 种语言检测与红绿安全的语法配色，另有左右对照、Read 行范围，以及可配置的显示风格与高亮设置。'
