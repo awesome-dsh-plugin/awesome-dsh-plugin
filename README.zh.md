@@ -3888,7 +3888,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-loulan-rules](https://github.com/loulangogogo/dsh-plugins-loulan/tree/main/packages/rules) — 在首次 agent pre-step 读取 $DSH_HOME/rules 与 <cwd>/.dsh/rules 下的规则文件并注入会话，被 compaction 遮蔽后自动补回。
 - [loyalchiiina/dsh-archive-favorites-forge](https://github.com/loyalchiiina/dsh-archive-favorites-forge) — 在侧栏「…」菜单或行内星标收藏任意对话；一键复制会话 ID 与转录文件绝对路径；单条永久删除（二次确认，删完侧栏立即移除该行）。设置页新增一张卡：按可配置的小时阈值批量归档闲置会话并支持一键撤回，把候选导出为制表符分隔的 txt（含对话名称、ID、所属工作区、闲置时长、最后活动时间），以及批量删除归档中未收藏的对话；视图选项另有「仅显示收藏（已归档）」与「仅显示收藏（未归档）」两行筛选。全部为增量实现：三个官方插槽加一条克隆的筛选行，不改官方任何文件。
 - [lsz-asd/dsh-plugin-session-delete](https://github.com/lsz-asd/dsh-plugin-session-delete) — 在 Web UI 与桌面客户端中删除 DSH 会话：头部危险按钮 + 会话行菜单项，风险确认弹窗，宿主端点与 agent 工具同步清理会话日志、投影缓存与工作区记账。
-- [ltmroberthk915/dsh-session-telecom](https://github.com/ltmroberthk915/dsh-session-telecom) — 复制会话 ID、向在线或已保存的会话发送消息，并查看会话 token 用量。
+- [ltmroberthk915/dsh-session-telecom](https://github.com/ltmroberthk915/dsh-session-telecom) — 在不同目录 / 项目的 DSH 会话之间通话：向任意会话发消息（下一步直达或开新轮），可按需结束对方阻塞中的工具调用，并在不唤醒对方的情况下读取记录与用量。
 - [LucasCaleb-ggg/dsh-session-cleanup](https://github.com/LucasCaleb-ggg/dsh-session-cleanup) — 按工作区批量清理会话：查看归档状态，把会话日志、投影缓存和工作区记录一起彻底删除。
 - [LucienLL/dsh-session-status](https://github.com/LucienLL/dsh-session-status) — 为每个会话设置项目状态标签（内置进行中/已结项/搁置中+自定义标签，颜色可调），在侧栏、对话头部与悬停卡片中显示。
 - [LuckVd/dsh-btw](https://github.com/LuckVd/dsh-btw) — 每条已完成回答操作行上的侧问抽屉：追问在独立且自动归档的会话中进行，携带此前的已完成对话文本（只读，上限 48000 字符）作为参考，主会话零写入；模型默认继承主会话并可在抽屉内切换，附上下文占用圈。
@@ -8072,6 +8072,7 @@ dsh plugin --profile web add dshmarket
 - [tianhengzhibei/dsh-approval-ding](https://github.com/tianhengzhibei/dsh-approval-ding) — DeepSeek Harness 请求审批、或向你提问时响一声“叮”，人不在窗口前也能立刻察觉。
 - [TianLingBy/dsh-task-ping](https://github.com/TianLingBy/dsh-task-ping) — DSH 任务提醒：每轮对话结束、或出现待审批 / 待回答 / 待确认计划时弹系统通知；提示音走 Windows 通信播放端点，由系统按「通信活动」自动压低其他媒体并在结束后恢复，不写任何应用的音量；可选再用 SMTP 发一封邮件到手机（465 隐式 TLS，或 STARTTLS 且仅在升级后才发送凭据）。无运行时依赖：声音助手是 PowerShell 脚本，邮件客户端是纯 Node 实现。
 - [tjiisztiuv/dsh-plugin-discord](https://github.com/tjiisztiuv/dsh-plugin-discord) — 与桌面端或 dsh web 运行在同一个 Host 里的 Discord 桥接，无需单独进程或 profile：在私信或线程里与任意工作区的会话对话，接入桌面端正在用的会话，工具审批和模型提问在 Discord 与桌面端谁先答谁生效。
+- [tommy00748-tech/dsh-native-notifications](https://github.com/tommy00748-tech/dsh-native-notifications) — 由 DSH 自己弹出的原生桌面通知：待授权、等待作答、任务完成、出错与需要登录时提醒，归属 DeepSeek Harness 应用、点击回到会话；提示音在页面内实时合成，可在设置里选预设或自定义音序。
 - [top10xiaowangzi-byte/dsh-plugins#dsh-approval-push](https://github.com/top10xiaowangzi-byte/dsh-plugins/tree/main/plugins/dsh-approval-push) — 审批提醒：会话等待权限时在页面右下角弹出提醒卡，可直接「允许一次」/「拒绝」，并可发桌面通知、提示音，或通过 PushPlus / Server酱 / ntfy / 企业微信机器人 / 自定义 webhook 推送到手机。
 - [tsurumi-yizhou/dsh-live-notify](https://github.com/tsurumi-yizhou/dsh-live-notify) — 为模型提供 UpdateNotify 工具，并在 DSH Web UI 输入框上方停靠一个实时进度窗，让模型在一轮任务进行中随时播报刚做了什么、发现了什么、在等什么。
 - [ttmouse/dsh-dingtalk-channel](https://github.com/ttmouse/dsh-dingtalk-channel) — 钉钉 IM 双向 channel（Stream 模式）：每条单聊/群聊驱动一个 agent，思考与回复通过 WebSocket 长连接回流消息，免公网回调。
