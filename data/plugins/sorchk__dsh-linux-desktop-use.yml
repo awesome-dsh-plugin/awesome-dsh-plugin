@@ -1,0 +1,7 @@
+url: https://github.com/sorchk/dsh-linux-desktop-use
+name: sorchk/dsh-linux-desktop-use
+category: tools
+description:
+  en: 'Control a local Linux desktop from DeepSeek Harness with 19 tools: screenshot, mouse, keyboard, scroll, window, application, display and state-verification control over a native X11 session with XTEST, plus optional AT-SPI accessibility-tree reads and widget value setting. Not for Wayland. Requires xdotool on the host (XTEST input); screenshots and window control also want scrot, ffmpeg, wmctrl, xrandr and xprop, and the AT-SPI tools need python3-gi, at-spi2-core and libatk-adaptor. Missing packages can be installed from the plugin''s dependency panel with sudo.'
+  zh: '用 DeepSeek Harness 直接操控本机 Linux 桌面，提供 19 个工具：截图、鼠标、键盘、滚动、窗口、应用、显示器与状态校验，基于原生 X11 + XTEST 会话，并可选读取 AT-SPI 无障碍树与直接给控件赋值，不适用于 Wayland。需要宿主安装 xdotool（XTEST 注入）；截图与窗口控制还需 scrot、ffmpeg、wmctrl、xrandr、xprop，AT-SPI 工具另需 python3-gi、at-spi2-core、libatk-adaptor。缺失的软件包可在插件详情页的依赖面板用 sudo 一键补装。'
+icon: https://raw.githubusercontent.com/sorchk/dsh-linux-desktop-use/main/assets/icon-180.png
