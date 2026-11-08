@@ -1,5 +1,5 @@
 url: https://github.com/bingomu/dsh-wingman
-name: bingomu/dsh-wingman
+name: 对话工具条（dsh-wingman）
 category: workflow
 description:
   en: 'A slim tool strip beside the conversation: one-line notes into a sticky note, a follow-up or a reminder; selected text quoted, saved or handed to the model; saved prompts into the composer in one click; a recap of this thread or the previous one; a read-only panel for context use, tokens, subagents and open follow-ups; plus custom entries that open a path or run a command.'
