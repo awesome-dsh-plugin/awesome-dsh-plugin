@@ -542,6 +542,7 @@ dsh plugin --profile web add dshmarket
 - [Devin-AXIS/deepseek-design#deepseek-idesign](https://github.com/Devin-AXIS/deepseek-design/tree/main/packages/deepseek-idesign) — 可视化设计工作室，支持网站、App 原型、海报、信息卡、报告和杂志的模板创建、元素编辑、选区级 AI 草稿衔接与导出。
 - [Devin-AXIS/deepseek-design#deepseek-ivideo](https://github.com/Devin-AXIS/deepseek-design/tree/main/packages/deepseek-ivideo) — 可视化视频工作室，支持可编辑时间线、动画和素材控制、27 个模板、整段与选区级 AI 草稿衔接、校验、预览和导出。
 - [DevinMx520/dsh-selection-translator](https://github.com/DevinMx520/dsh-selection-translator) — 在 Harness Web UI 中为选中文字添加右键翻译菜单，可就地替换为简体中文译文，再次右键还原原文。
+- [devome/dsh-panel-layout](https://github.com/devome/dsh-panel-layout) — 侧边栏面板菜单布局：在按钮行与列表之间切换，按钮行可限一到三行，任意项可拖动排序，超出上限的项收进宿主「更多」菜单，并把左下角「更多」里的设置、意见反馈、登录并入面板菜单。
 - [devzer0o0/dsh-grok-buddy](https://github.com/devzer0o0/dsh-grok-buddy) — 把 Grok Bot 本人那张脸装进 DSH 侧栏会话列表：每行的状态圆点变成会动的 GrokBot 头像，六种动作分别对应空闲、处理中、等待、已阻止、思考与完成——颜色标记项目，动作标记状态。
 - [dgy970516/dsh-status-turbo](https://github.com/dgy970516/dsh-status-turbo) — 在输入框底栏显示当前阶段、阶段已耗时、本步 token 数与无进展告警的状态条（纯日志投影，不轮询宿主），点击可展开详情面板。
 - [dhb861832993-star/pbr-render](https://github.com/dhb861832993-star/pbr-render) — 游戏美术 PBR 3D 模型预览：GLB/GLTF 带贴图纹理、IBL 环境光照、轨道控制，以及材质通道检查器（基础色/法线/粗糙度/金属度/AO/自发光/线框），标量通道按 PBR 规范以灰度显示，通过 pbr3d 围栏与 pbr_render 工具使用。
@@ -7248,6 +7249,7 @@ dsh plugin --profile web add dshmarket
 - [Cyning12/SpecWave](https://github.com/Cyning12/SpecWave) — DeepSeek Harness 的 ICVO 编码规范套件（原 dsh-coding-kit）：bundle 插件加载时仅注册工具，须调用 apply_coding_standards 才注入规范；另附 P0 门禁 CLI（npx spec-wave），含 G1–G7 过程命令、skills install、host apply 与 IDE 块刷新。
 - [Dabouben/dsh-daily-tasks](https://github.com/Dabouben/dsh-daily-tasks) — 每日/每周任务管理：启动弹窗提醒、输入框上方滚动条、圆圈一键完成、任务卡片编辑、周日 AI 周总结；另附侧边栏 DeepSeek API 用量小部件（余额卡片、今日与累计 tokens 及费用、按模型明细、近 7 日柱状图）。数据以 JSON 存于 $DSH_HOME。
 - [Daphne999/dsh-daily-digest](https://github.com/Daphne999/dsh-daily-digest) — 给每日巡检回合提供事实层：对比插件市场注册表报新增条目，对比教育行业 SRC 页面（EDUSRC 众测、北京教育 SRC 赛季、常态化演习）报新一期活动。只报变化，首次调用只建基线、不报新增。
+- [Daphne999/dsh-safe-restart](https://github.com/Daphne999/dsh-safe-restart) — 重启 DSH 并告诉你到底成没成。Windows 上没有「从外部让 Electron 干净退出」的通道（发 WM_CLOSE 只会最小化窗口），所以这个插件不装优雅：强制结束宿主、带重试地重新拉起、再轮询宿主端口确认它真的在服务，最后把结果写进文件并发一条 QQ 消息。2026-11-08 端到端实测通过。
 - [darrien1998/dsh-ditto](https://github.com/darrien1998/dsh-ditto) — DeepSeek Harness 的审核优先批量自动化：先审核三个样本，预览全部结果，一次批准，再安全地应用到多个文件。
 - [datit309/supergraph](https://github.com/datit309/supergraph) — 面向 AI 编程智能体的工程工作流系统：规范计划、TDD 测试驱动、自动修复闭环、代码知识图谱与多智能体分波次执行。需先安装 codebase-memory-mcp（pip install "codebase-memory-mcp>=0.10.8,<0.11.0"），缺它 /scan 会直接停止。
 - [Dclef/dsh-agent-foreman](https://github.com/Dclef/dsh-agent-foreman) — 父智能体派单、子智能体干活的包工头：把任务拆成工单，每张派给你自选的承包商（各自指定 provider、模型、思考等级），交付后逐单验收，打回的单带着你的反馈重新派下去。
