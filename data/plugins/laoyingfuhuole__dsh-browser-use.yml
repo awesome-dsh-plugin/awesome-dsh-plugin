@@ -1,0 +1,6 @@
+url: https://github.com/laoyingfuhuole/dsh-browser-use
+name: laoyingfuhuole/dsh-browser-use
+category: browser
+description:
+  en: Background browser automation for DSH with an offscreen Electron window, CDP input, snapshot refs, and no focus stealing.
+  zh: 面向 DSH 的后台浏览器自动化插件：离屏 Electron 窗口、CDP 输入、快照 ref，不抢焦点。

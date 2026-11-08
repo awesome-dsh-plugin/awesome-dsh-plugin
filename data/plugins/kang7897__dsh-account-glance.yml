@@ -1,0 +1,6 @@
+url: https://github.com/kang7897/dsh-account-glance
+name: kang7897/dsh-account-glance
+category: ui
+description:
+  en: "Compact card above the sidebar account avatar showing the signed-in DeepSeek account balance, the current peak or off-peak billing window with a countdown to the next switch, and the rate of both windows. The window is computed locally in Beijing time without a network request; the balance refreshes every 60 seconds and on window focus or visibility. zh/en copy, no runtime dependencies."
+  zh: "侧栏账户头像上方的紧凑卡片：显示已登录 DeepSeek 账户的余额、当前闲时/忙时计费时段及切换倒计时、以及两种时段的费率。时段按北京时间本地计算，无需网络请求；余额每 60 秒刷新，窗口重新可见或获得焦点时也会刷新。支持中英文，无运行时依赖。"
