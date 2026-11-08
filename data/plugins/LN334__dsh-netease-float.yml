@@ -1,0 +1,6 @@
+url: https://github.com/LN334/dsh-netease-float
+name: LN334/dsh-netease-float
+category: ui
+description:
+  en: 'A full-page NetEase Cloud Music player for DeepSeek Harness: sidebar entry, synced lyrics, account playlists and QR login.'
+  zh: '网易云音乐整页播放器：左栏入口、同步歌词、账号歌单与扫码登录。'
