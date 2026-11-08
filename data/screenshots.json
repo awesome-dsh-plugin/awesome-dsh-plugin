@@ -410,14 +410,10 @@
     "https://raw.githubusercontent.com/Totoro-qaq/dsh-plugin-bridge/main/assets/bridge-demo.en.gif"
   ],
   "https://github.com/Ultroncn/dsh-archived-chats": [
-    "https://raw.githubusercontent.com/Ultroncn/dsh-archived-chats/main/assets/screenshots/preview-01.png",
-    "https://raw.githubusercontent.com/Ultroncn/dsh-archived-chats/main/assets/screenshots/preview-02.png",
-    "https://raw.githubusercontent.com/Ultroncn/dsh-archived-chats/main/assets/screenshots/preview-03.png",
-    "https://raw.githubusercontent.com/Ultroncn/dsh-archived-chats/main/assets/screenshots/preview-04.png",
-    "https://raw.githubusercontent.com/Ultroncn/dsh-archived-chats/main/assets/screenshots/preview-05.png",
-    "https://raw.githubusercontent.com/Ultroncn/dsh-archived-chats/main/assets/screenshots/preview-06.png",
-    "https://raw.githubusercontent.com/Ultroncn/dsh-archived-chats/main/assets/screenshots/preview-07.png",
-    "https://raw.githubusercontent.com/Ultroncn/dsh-archived-chats/main/assets/screenshots/preview-08.png"
+    "https://raw.githubusercontent.com/Ultroncn/dsh-archived-chats/main/assets/screenshots/1-archived-chats.png",
+    "https://raw.githubusercontent.com/Ultroncn/dsh-archived-chats/main/assets/screenshots/2-search.png",
+    "https://raw.githubusercontent.com/Ultroncn/dsh-archived-chats/main/assets/screenshots/3-delete-confirm.png",
+    "https://raw.githubusercontent.com/Ultroncn/dsh-archived-chats/main/assets/screenshots/4-group-menu.png"
   ],
   "https://github.com/Ultroncn/dsh-liquid-glass": [
     "https://raw.githubusercontent.com/Ultroncn/dsh-liquid-glass/main/assets/screenshots/1-settings.png",
@@ -1378,5 +1374,16 @@
     "https://raw.githubusercontent.com/MJorgin/dsh-media-skills/main/docs/screenshots/panel-generate.png",
     "https://raw.githubusercontent.com/MJorgin/dsh-media-skills/main/docs/screenshots/panel-works.png",
     "https://raw.githubusercontent.com/MJorgin/dsh-media-skills/main/docs/screenshots/install-dialog.png"
+  ]
+,
+  "https://github.com/loyalchiiina/dsh-skill-browser": [
+    "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-01.png",
+    "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-02.png",
+    "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-03.png",
+    "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-04.png",
+    "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-05.png",
+    "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-06.png",
+    "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-07.png",
+    "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-11.png"
   ]
 }
