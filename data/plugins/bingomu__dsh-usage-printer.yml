@@ -1,5 +1,5 @@
 url: https://github.com/bingomu/dsh-usage-printer
-name: bingomu/dsh-usage-printer
+name: 小票机用量卡（dsh-usage-printer）
 category: usage
 description:
   en: Sidebar receipt printer for DeepSeek balance — a dot-matrix screen shows the remaining balance amount, with a lit dot field tracking the balance level and a peak/off-peak price band, and a receipt slides out on hover with balance, spend and per-token prices.
