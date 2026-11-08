@@ -1,0 +1,8 @@
+url: https://github.com/NIRVANA-APOC/dsh-litnotes
+name: NIRVANA-APOC/dsh-litnotes
+category: tools
+tarball: https://github.com/NIRVANA-APOC/dsh-litnotes/releases/download/v1.0.0/dsh-litnotes-1.0.0.tgz
+icon: https://raw.githubusercontent.com/NIRVANA-APOC/dsh-litnotes/main/assets/icon-180.png
+description:
+  en: "Local-first AI literature desk for DSH: import and parse PDFs (MinerU APIs or on-device pdf.js), read original/bilingual text with in-margin annotations, ask grounded questions whose citations jump to the page, and build per-paper or library knowledge graphs; seven agent tools expose the same library."
+  zh: "面向 DeepSeek Harness 的本地优先 AI 文献阅读台：导入并解析论文（MinerU 或本机 pdf.js），原文/双语阅读与页边批注，带引用跳转的 grounded AI 问答，以及单篇/全库知识图谱；七个 agent 工具共享同一文献库。"
