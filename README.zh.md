@@ -6734,8 +6734,8 @@ dsh plugin --profile web add dshmarket
 - [huangfuren/dsh-outline](https://github.com/huangfuren/dsh-outline) — 在 DSH 对话中搜索、读取并安全读写用户自己的 Outline 知识库文档，写操作受白名单保护与审批约束。
 - [huangxicheng1/blog-manage](https://github.com/huangxicheng1/blog-manage) — 在 DSH 面板里管理 GitHub Pages 博客：按标签分组浏览 Markdown 文章，用表单填 front matter 并在分屏编辑器里修改，再通过 GitHub REST API 把改动作为一次 commit 发布。
 - [HuanLinOTO/dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) — 向模型暴露 MineRU 文档解析工具。
-- [iggypcnfsky/dsh-docs](https://github.com/iggypcnfsky/dsh-docs) — A Google Docs-style word processor inside DeepSeek Harness with rich text, page setup, tables, images, print, export, and agent editing.
-- [iggypcnfsky/dsh-sheets](https://github.com/iggypcnfsky/dsh-sheets) — An agent-writable spreadsheet editor inside DeepSeek Harness with formulas, formatting, CSV/Excel import, and export.
+- [iggypcnfsky/dsh-docs](https://github.com/iggypcnfsky/dsh-docs) — DeepSeek Harness 里的 Google Docs 风格文字处理器：富文本、页面设置、表格、图片、打印、导出，并支持由 agent 直接编辑。
+- [iggypcnfsky/dsh-sheets](https://github.com/iggypcnfsky/dsh-sheets) — DeepSeek Harness 里可由 agent 直接写入的电子表格编辑器：支持公式、格式、CSV/Excel 导入与导出。
 - [ikevss/dsh-ima](https://github.com/ikevss/dsh-ima) — 在 DSH 侧边栏浏览腾讯 ima 的知识库与文件，内置常见格式预览，并让 agent 用 5 个工具按名称或正文检索、读取库内资料。
 - [ITDanZF/dsh-hr-plugin](https://github.com/ITDanZF/dsh-hr-plugin) — 面向 DeepSeek Harness 的结构化简历编辑器；每个会话独立保存草稿，对话与侧栏共用内容，并提供 A4 预览和 PDF 导出。
 - [JackWangSIA/dsh-ai-notepad](https://github.com/JackWangSIA/dsh-ai-notepad) — DSH 的 AI 原生文本编辑器：多标签、编码保留、选区/全文 AI 与 Diff 审阅、Markdown 预览及 Windows 文件关联。
