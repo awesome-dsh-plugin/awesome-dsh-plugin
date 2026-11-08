@@ -1,0 +1,6 @@
+url: https://github.com/aoyamabf-max/dsh-obsidian-memory
+name: aoyamabf-max/dsh-obsidian-memory
+category: memory
+description:
+  zh: "把 agent 的长期记忆存成 Obsidian vault 里的普通 Markdown 笔记——每条记忆是一个带 YAML frontmatter 的 .md 文件，Obsidian 原生索引，可以直接读、改、链接和备份，不锁在数据库里。提供左侧栏面板（按标签筛选、按时间或重要度排序、就地编辑）、7 个 agent 工具、三档 token 预算的召回、BM25 排序（无需 embedding、无需 API key、离线可用、支持中文二元分词）、重要度衰减与归档（只移到 .archive/ 从不删除），以及可选的 GitHub Contents API 同步。含敏感串的记忆会被拒绝推送而不是打码，因为打码后的记忆读起来像完整的、实际关键信息已经丢了。零运行时依赖，依赖全部来自 DSH 宿主。"
+  en: "Stores the agent's long-term memory as plain Markdown in an Obsidian vault — every memory is a .md file with YAML frontmatter that Obsidian indexes natively, so you can read, edit, link and back up it with tools you already use. Nothing is locked in a database. Ships a sidebar panel (tag filter, sort by recency or importance, edit in place), 7 agent tools, three-tier token-budgeted recall, BM25 ranking (no embeddings, no API key, works offline, CJK bigram tokenization), importance decay with archiving (moved to .archive/, never deleted), and optional GitHub Contents API sync. A note containing a secret is refused rather than redacted, because a redacted memory reads as complete while the important part is gone. Zero runtime dependencies; everything comes from the DSH host."

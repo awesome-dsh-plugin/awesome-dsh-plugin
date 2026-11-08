@@ -1,0 +1,6 @@
+url: https://github.com/XXGJ666/dsh-feiyu-vision
+name: XXGJ666/dsh-feiyu-vision
+category: vision
+description:
+  en: "Image understanding for DSH: describe an image and read the text in it through Zhipu GLM-4V (needs a Zhipu API key, free tier), with optional person identification through Volcengine Ark and anime-only reverse image search through SauceNAO or trace.moe (each needs its own key); ffmpeg must be installed for GIF/WebP input. Keys and the ffmpeg path are set on the plugin's own settings page."
+  zh: "给 DSH 加识图：用智谱 GLM-4V 描述图片、读图中文字（需智谱 API Key，有免费额度），可选火山方舟认人、SauceNAO / trace.moe 反查动漫原图（各需自己的 Key）；GIF/WebP 图需要装 ffmpeg。Key 与 ffmpeg 路径在插件自带的设置页里配。"

@@ -1,0 +1,8 @@
+url: https://github.com/HUHUhim/dsh-taskbar-badge
+name: HUHUhim/dsh-taskbar-badge
+category: notify
+description:
+  en: Windows taskbar unread badge and window-bounds restore for DeepSeek Harness.
+  zh: 在 Windows 任务栏图标上显示 DSH 未读会话数，并恢复上次关闭时的窗口大小和位置。
+icon: https://raw.githubusercontent.com/HUHUhim/dsh-taskbar-badge/main/assets/icon-180.png
+tarball: https://github.com/HUHUhim/dsh-taskbar-badge/releases/download/v0.1.0/dsh-taskbar-badge-0.1.0.tgz

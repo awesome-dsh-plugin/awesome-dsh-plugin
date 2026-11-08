@@ -1,0 +1,7 @@
+url: https://github.com/TLEWA/dsh-if
+name: TLEWA/dsh-if
+category: session
+description:
+  en: 'Adds an /if slash command to DSH: the first line is a condition and the remaining lines are an instruction. A fork subagent that inherits the session tools, system prompt and message history judges the condition and answers YES or NO, and only on YES is the instruction sent to the main agent as an ordinary user message, while a NO sends nothing. The condition, judge prompt and verdict never enter the main transcript. While the agent is busy the command queues with ordinary messages, editable, removable and steerable from the queue panel, and a setting switches to the 0.2.x background mode. The judge runs read-only, and falls back to a one-shot model call over a plain transcript when the host has no context-inheriting fork provider. Supports DSH 0.2.1-rc.5 and later (verified on 0.2.1-rc.5 and 0.2.2-rc.1) and Node.js 20.3 or later.'
+  zh: '为 DSH 增加 /if 斜杠命令：第一行是条件，其余行是指令。由继承当前会话工具、system prompt 与消息历史的 fork 子代理判断条件并回答 YES 或 NO，只有 YES 才把指令作为一条普通用户消息发给主 agent，NO 则什么都不发送；条件、判断用的 prompt 与判断结果都不会写进主会话。模型工作时命令与普通消息一起排队，可在队列面板里编辑、删除、插话，设置里可切回 0.2.x 的后台模式。判断以只读方式运行，宿主没有可继承上下文的 fork provider 时回退为一次性模型调用加纯文本记录。适配 DSH 0.2.1-rc.5 及以上（已在 0.2.1-rc.5 与 0.2.2-rc.1 验证），需 Node.js 20.3 或更新版本。'
+icon: https://raw.githubusercontent.com/TLEWA/dsh-if/main/assets/icon-180.png

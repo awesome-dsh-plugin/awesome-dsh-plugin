@@ -1,0 +1,7 @@
+url: https://github.com/JiayangSUNwinter/dsh-island-bridge
+name: JiayangSUNwinter/dsh-island-bridge
+category: notify
+icon: https://raw.githubusercontent.com/JiayangSUNwinter/dsh-island-bridge/main/assets/icon-180.png
+description:
+  en: 'macOS notch panel for DeepSeek Harness: running sessions and pending approvals sit above every window, approvals are decided in place, and clicking a row opens that conversation in the desktop app. Requires macOS 14+ and Xcode Command Line Tools.'
+  zh: 'macOS 灵动岛桥接：运行中的会话与待审批操作浮在所有窗口之上，审批直接在岛上裁决，点一行可在桌面端打开对应会话。需 macOS 14+ 与 Xcode Command Line Tools。'

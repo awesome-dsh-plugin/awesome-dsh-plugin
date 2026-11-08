@@ -1,0 +1,7 @@
+url: https://github.com/1010231693/dsh-auto-compaction/tree/master/packages/dsh-auto-compaction
+name: 1010231693/dsh-auto-compaction#dsh-auto-compaction
+category: session
+description:
+  en: 'A session auto-compaction plugin for local models: it compacts only when the context is nearly full, and has the model write a structured handoff summary from the prefix that is already cached, so compaction does not make the local engine re-read the whole history. Trigger ratio, summary template, display style and per-preset scope are configurable. Installing is enough: the bundle mounts itself into the agent presets and takes over after a DSH restart; uninstalling restores native compaction.'
+  zh: '对本地模型友好的会话自动压缩插件：只在上下文接近填满时才压缩，并让模型基于已缓存的前缀撰写结构化交接摘要，因此压缩不会使本地引擎重读全部历史。触发比例、摘要模板、显示样式与逐预设生效范围均可配置。安装即可：bundle 会自行挂载到 Agent 预设，重启 DSH 后接管；卸载即恢复原生压缩。'
+icon: https://raw.githubusercontent.com/1010231693/dsh-auto-compaction/master/docs/icon.png

@@ -1,0 +1,7 @@
+url: https://github.com/ForsakenDelusion/dsh-branchnest
+name: ForsakenDelusion/dsh-branchnest
+category: ui
+description:
+  en: Project canvas for DSH sessions, with linked conversation cards, text-selection follow-up branches, notes, and a document-style reader.
+  zh: 为 DSH 项目提供会话画布，支持对话卡片连线、选中文字创建追问分支、笔记和文档式阅读。
+tarball: https://github.com/ForsakenDelusion/dsh-branchnest/releases/download/v0.4.4/dsh-branchnest-0.4.4.tgz

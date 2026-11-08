@@ -1,0 +1,7 @@
+url: https://github.com/Hanson0901/dsh-line-bot
+name: Hanson0901/dsh-line-bot
+category: notify
+icon: https://raw.githubusercontent.com/Hanson0901/dsh-line-bot/main/assets/icon-180.png
+description:
+  en: 'Bridges DeepSeek Harness to LINE: runs its own signed webhook server, sets up a Cloudflare Tunnel (quick URL or an API-token tunnel), keeps the LINE webhook endpoint pointed at the current tunnel, and gives each LINE user a separate session with a chosen persona, plus optional scheduled check-ins. Requires a LINE Messaging API channel (Channel ID and Channel Secret); only allow-listed LINE users, or users approved from the pending queue, can talk to the bot.'
+  zh: '把 DeepSeek Harness 接到 LINE 的橋接外掛：內建簽章驗證的 webhook 伺服器、Cloudflare Tunnel（quick URL 或 API Token）、自動把 LINE webhook 端點指向目前的隧道、每位 LINE 使用者獨立 session 與可選人設，並可排程主動傳訊。需要 LINE Messaging API 頻道（Channel ID／Channel Secret）；只有白名單內、或在面板核准的使用者能與機器人對話。'

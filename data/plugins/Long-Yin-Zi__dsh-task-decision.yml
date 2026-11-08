@@ -1,0 +1,6 @@
+url: https://github.com/Long-Yin-Zi/dsh-task-decision
+name: Long-Yin-Zi/dsh-task-decision
+category: workflow
+description:
+  en: "Collects the open questions of each AI turn into a right-side panel; you answer them, add notes, and send the decisions back to the conversation in one message."
+  zh: 把 AI 每轮回复里的待决问题收进右侧边栏，选完选项、写完备注后一次性提交回对话。

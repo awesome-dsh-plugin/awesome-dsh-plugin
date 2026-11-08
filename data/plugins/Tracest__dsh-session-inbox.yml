@@ -1,0 +1,6 @@
+url: https://github.com/Tracest/dsh-session-inbox
+name: Tracest/dsh-session-inbox
+category: ui
+description:
+  en: 'Compact top tools, untitled inbox and lower Working/Settled shelves; native menus, search highlighting, keyboard navigation, metadata backups and an original-layout switch. Chinese UI. On DSH 0.2.1-rc.5: macOS Desktop verified; Windows Desktop checked for cold starts, compact/original layouts at 1280x820 and 1471x1200, search, project filtering and native session menus. Linux and arbitrary third-party plugin combinations remain unverified.'
+  zh: '顶部工具区与原布局切换，上方直接查看会话，下方收纳工作中与已整理；支持原生菜单、搜索高亮、键盘操作及整理备份。中文界面。DSH 0.2.1-rc.5：macOS 桌面版已验证；Windows 桌面版已检查冷启动、1280×820 与 1471×1200 下的紧凑/原布局、搜索、项目筛选和原生会话菜单。Linux 及任意第三方插件组合仍未验证。'

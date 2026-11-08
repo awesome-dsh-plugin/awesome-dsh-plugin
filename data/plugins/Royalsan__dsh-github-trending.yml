@@ -1,0 +1,7 @@
+url: https://github.com/Royalsan/dsh-github-trending
+name: Royalsan/dsh-github-trending
+category: tools
+tarball: https://github.com/Royalsan/dsh-github-trending/releases/latest/download/dsh-github-trending.tgz
+description:
+  en: 'GitHub Trending radar inside the Harness Web UI: fetches the daily, weekly or monthly board (optionally filtered by a language), analyzes each repository into description, star gain, tech stack, highlights and risks, renders the result as a filterable card panel with paging, and registers the github_trending tool plus the /github-trending command.'
+  zh: 'Harness Web UI 里的 GitHub 趋势雷达：抓取日榜/周榜/月榜（可按编程语言筛选），把每个仓库分析成简介、star 增量、技术栈、亮点与风险，渲染为可筛选、可分页的卡片面板，并注册 github_trending 工具与 /github-trending 命令。'

@@ -1,0 +1,6 @@
+url: https://github.com/liyutongzuishuai/plugin-organizer
+name: liyutongzuishuai/plugin-organizer
+category: ui
+description:
+  en: Files the settings entries your installed plugins add below the ones dsh ships, behind a divider with a live count, and keeps up automatically as plugins come and go.
+  zh: 把已安装插件添加的设置入口统一收纳到 dsh 自带设置的下方，用带计数的分割线分区，插件增减时自动更新。

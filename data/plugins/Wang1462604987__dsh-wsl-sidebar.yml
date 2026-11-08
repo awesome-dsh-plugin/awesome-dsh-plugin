@@ -1,0 +1,7 @@
+url: https://github.com/Wang1462604987/dsh-wsl-sidebar
+name: Wang1462604987/dsh-wsl-sidebar
+category: wsl
+icon: https://raw.githubusercontent.com/Wang1462604987/dsh-wsl-sidebar/main/assets/icon-market.png
+description:
+  en: WSL console for the harness — manage distributions, edit .wslconfig and wsl.conf in a typed form, and run commands, file edits and long-running processes inside any distribution with its own wslx-* tools.
+  zh: 用于 Harness 的 WSL 控制台：管理发行版、以表单编辑 .wslconfig 与 wsl.conf，并用自带的 wslx-* 工具在任意发行版内执行命令、读写文件、运行长驻进程。

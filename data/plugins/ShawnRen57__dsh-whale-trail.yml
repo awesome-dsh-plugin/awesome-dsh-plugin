@@ -1,0 +1,8 @@
+url: https://github.com/ShawnRen57/dsh-whale-trail
+name: ShawnRen57/dsh-whale-trail
+category: ui
+description:
+  en: Local-first achievement collection for DeepSeek Harness. Normal use earns 67 stamped badges across 7 series, completes 9 voyage chapters holding 36 ocean collectibles, unlocks a configurable ASCII aquarium and exports a five-badge voyage card as PNG or offline HTML. No check-ins, no model calls, no chat uploads.
+  zh: 本地优先的 DeepSeek Harness 成就系统：正常使用即点亮 7 个系列共 67 枚印章徽章，完成 9 段航程并收集 36 件海洋收藏，解锁可配置的 ASCII 水族馆，还能把五枚珍藏导出为 PNG 航海名片或可离线游动的 HTML。无需打卡、不新增模型调用、不上传聊天内容。
+tarball: https://github.com/ShawnRen57/dsh-whale-trail/releases/download/v1.0.1/dsh-whale-trail-1.0.1.tgz
+icon: https://raw.githubusercontent.com/ShawnRen57/dsh-whale-trail/main/assets/png-256/days.1.png

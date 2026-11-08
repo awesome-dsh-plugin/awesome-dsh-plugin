@@ -1,0 +1,6 @@
+url: https://github.com/gosutry/dsh-persona-select/tree/main/packages/dsh-persona-select
+name: gosutry/dsh-persona-select#dsh-persona-select
+category: identity
+description:
+  en: Injects a persona into the system prompt and a past conversation into context, with a settings page and a conversation picker.
+  zh: 把人设正文注入系统提示词、把历史对话注入上下文，带设置页与对话选择器。

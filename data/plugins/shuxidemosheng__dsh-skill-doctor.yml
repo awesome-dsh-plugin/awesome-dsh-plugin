@@ -1,0 +1,6 @@
+url: https://github.com/shuxidemosheng/dsh-skill-doctor
+name: shuxidemosheng/dsh-skill-doctor
+category: skill
+description:
+  en: 'Diagnoses why a skill is not picked up — truncated description, broken frontmatter, missing resource files — and checks installed plugins for conflicting loader entries. Keeps a per-profile record so every checkup is diffed against the previous one, groups repeated findings into one root cause, produces rewrite worksheets for oversized descriptions, and lists the plugin patches that touch the skill directory configuration.'
+  zh: '诊断技能为什么没被模型选中——简介被截断、文件头损坏、引用文件缺失——并检查已安装插件之间是否存在 loader 条目冲突；按 profile 自动保存体检病历、每次复诊对比上次差值，把重复出现的问题归并为同一根因，为超长简介生成改写工单，并列出改动了技能目录配置的插件 patch。'

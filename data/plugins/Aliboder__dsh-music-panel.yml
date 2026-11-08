@@ -1,0 +1,6 @@
+url: https://github.com/Aliboder/dsh-music-panel
+name: Aliboder/dsh-music-panel
+category: voice
+description:
+  en: Music player for DeepSeek Harness with local library scanning, playlists, synced lyrics, online metadata matching, tag and cover editing, a cover grid, and a real-time spectrum bar.
+  zh: DeepSeek Harness 的本地音乐播放器：曲库扫描、歌单、同步歌词、在线元数据匹配、标签与封面编辑、封面网格和实时频谱条。

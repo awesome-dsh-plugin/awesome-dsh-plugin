@@ -1,0 +1,6 @@
+url: https://github.com/bmhty123/dsh-comfyui-rp
+name: bmhty123/dsh-comfyui-rp
+category: ui
+description:
+  en: 'Local text-to-image automation for DeepSeek Harness: captures the conversation, sends it to a prompt session, renders with your own ComfyUI, and brings the images back to a sidebar tab, a floating frame and a gallery.'
+  zh: '装在 DSH 里的本地文生图自动化：捕获会话正文，交给提示词会话写成提示词，调用本机 ComfyUI 出图，再把图片送回侧栏、悬浮图片框和图库。'

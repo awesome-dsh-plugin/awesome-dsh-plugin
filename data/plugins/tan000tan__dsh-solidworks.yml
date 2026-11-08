@@ -1,0 +1,7 @@
+url: https://github.com/tan000tan/dsh-solidworks
+name: tan000tan/dsh-solidworks
+category: tools
+tarball: https://github.com/tan000tan/dsh-solidworks/releases/download/v0.1.0/dsh-solidworks-0.1.0.tgz
+description:
+  en: "Connects DeepSeek Harness to a local SolidWorks install through an MCP server, with a read-only default mode and per-call confirmation for high-risk operations. Windows 10/11 x64 only; needs Python 3.10+ with mcp, pydantic and jsonschema (plus pywin32 and comtypes on Windows) and a local SolidWorks 2023-2026 installed and started at least once."
+  zh: "通过 MCP 服务器把 DeepSeek Harness 接入本机 SolidWorks，默认只读模式，高风险操作逐次确认。仅 Windows 10/11 x64；需 Python 3.10+ 并装好 mcp、pydantic、jsonschema（Windows 上还需 pywin32、comtypes），且本机已安装并至少启动过一次 SolidWorks 2023–2026。"
