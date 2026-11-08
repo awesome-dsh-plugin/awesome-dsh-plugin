@@ -1978,6 +1978,7 @@ dsh plugin --profile web add dshmarket
 - [zheshiyigehenchang/dsh-chat-typography](https://github.com/zheshiyigehenchang/dsh-chat-typography) — 设置DSH Harness对话流字体、字号行间距，以及对话文字到窗口边缘的留白。
 - [zhifengjiang/dsh-hover-archive](https://github.com/zhifengjiang/dsh-hover-archive) — Codex 风格会话归档：鼠标悬浮侧边栏会话行时，最右侧浮现 Archive 图标，一键归档会话。
 - [zhishengplus/dsh-image-annotate](https://github.com/zhishengplus/dsh-image-annotate) — 在 DSH 的图片预览上圈选、画箭头、方框与文字，每一笔都能再选中拖动、缩放或改字，并把原分辨率的标注图作为附件放进输入框。
+- [zhougaoang/thought-constellation](https://github.com/zhougaoang/thought-constellation) — 把零散的思想片段编织成一张会生长的星图：主题、观点、关系与待补充的问题，并生成一份论证总结。
 - [zhousun55-byte/dsh-postman](https://github.com/zhousun55-byte/dsh-postman) — 把文件与文件夹直接传进对话——图片以真实图片块加入消息，文本内容写入输入框草稿，文件夹按目录结构落盘。
 - [zhqowo/dsh-whale-tray](https://github.com/zhqowo/dsh-whale-tray) — 大肥鱼 —— DeepSeek Harness 的托盘 / 菜单栏启动器：Windows 右下角托盘 + macOS 右上角菜单栏，一键开关 dsh 服务、唤起 Web、重启、充值，独立于 dsh 进程运行，类似 Steam 之于游戏。
 - [zhu1090093659/dsh-web#packages/dsh-task-board](https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-task-board) — 侧边栏多列任务看板：卡片交给真实 DSH 智能体会话执行，支持 cron 定时（Host 侧到点执行，关浏览器也生效）。
@@ -8967,6 +8968,7 @@ dsh plugin --profile web add dshmarket
 - [copylee711/dsh-remote-control](https://github.com/copylee711/dsh-remote-control) — 用手机浏览器继续电脑上的会话：扫码并在电脑上确认设备后，在移动端界面里对话、处理审批、浏览工作区文件、管理设置；支持同一 Wi-Fi 直连或经 Cloudflare Quick Tunnel 连接。
 - [CREAIT-nl/dsh-plugins#tailnet-gateway](https://github.com/CREAIT-nl/dsh-plugins/tree/main/tailnet-gateway) — 在 dsh 仍绑定回环地址的前提下，为 Web 界面提供基于身份的 Tailscale 访问：由 `tailscale serve` 对外发布的 127.0.0.1 代理，仅当其标记的 Tailscale 登录账号在允许列表内时才放行请求，并可另按设备白名单限制；这样受回环检查保护的特权 /api 方法（设置、模型、插件）无需让 dsh 信任远程主机即可正常响应。
 - [CWNU-Open-Source-Community/dsh-webgate](https://github.com/CWNU-Open-Source-Community/dsh-webgate) — Web GUI 远程访问：局域网二维码直连、cloudflared 快速隧道、frp 自有服务器反代，内置登录门户，并放行设置接口。
+- [cyuni1996/dsh-watch](https://github.com/cyuni1996/dsh-watch) — 在 Android 手表上继续 DeepSeek Harness 会话，支持通过电脑端向导安装手表应用。
 - [DamonKoy/dsh-web-ui#dsh-remote-web-ui](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-remote-web-ui) — dsh web GUI 移动端远程控制：扫码配对 QR 入口、一次性配对 token。
 - [DamonKoy/dsh-web-ui#dsh-ssh](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-ssh) — dsh web GUI 远程 SSH 操作：主机配置存储、持久化会话。
 - [danilinao/dsh-telegram-channel-ru](https://github.com/danilinao/dsh-telegram-channel-ru) — DeepSeek Harness 的 Telegram 遥控器：在手机上接续正在运行的 Web 会话并回答问题，界面为俄语。hi-wenw/dsh-telegram-channel 的俄语分支（MIT）。
