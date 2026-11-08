@@ -1,0 +1,6 @@
+url: https://github.com/iggypcnfsky/dsh-sheets
+name: iggypcnfsky/dsh-sheets
+category: docs
+description:
+  en: An agent-writable spreadsheet editor inside DeepSeek Harness with formulas, formatting, CSV/Excel import, and export.
+icon: https://raw.githubusercontent.com/iggypcnfsky/dsh-sheets/main/icon.png
