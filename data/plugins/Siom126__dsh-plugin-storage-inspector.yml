@@ -1,0 +1,6 @@
+url: https://github.com/Siom126/dsh-plugin-storage-inspector
+name: Siom126/dsh-plugin-storage-inspector
+category: dev
+description:
+  en: 'Storage and dependency inspector for the DSH Web UI, in two tabs of one settings section plus a disk-usage badge on the sidebar: the first scans local disk use per workspace, per session (record file and projection cache separately) and per file class (source, dependencies, build output, VCS, docs, media, global attachments), lists the largest subdirectories and files, and deletes chosen build, dependency, archived-session and cache folders behind a path allow-list check; the second reads package.json, .nvmrc, .node-version and npm lockfiles (v2/v3) across workspaces without writing to them and reports a drift matrix (identical, minor drift, major drift, Node-major bucket conflict) as blocked/warn/candidate findings, with single-flight locks and a TTL cache over the scan.'
+  zh: 'DSH Web UI 的存储与依赖检查器：一个设置分页里的两个 Tab，外加侧栏磁盘占用徽标——第一个按工作区、按会话（记录文件与投影缓存分开）以及按文件类别（源码、依赖、构建产物、版本控制、文档、媒体、全局附件）扫描本地磁盘占用，列出最大的子目录与大文件，并可在路径白名单校验之后删除所选的构建目录、依赖目录、归档会话与缓存；第二个跨工作区只读读取 package.json、.nvmrc、.node-version 与 npm 锁文件（v2/v3），输出漂移矩阵（完全一致、次版本漂移、主版本漂移、Node 主版本分桶冲突），按 blocked/warn/candidate 分级给出发现，扫描带单飞锁与 TTL 缓存。'
