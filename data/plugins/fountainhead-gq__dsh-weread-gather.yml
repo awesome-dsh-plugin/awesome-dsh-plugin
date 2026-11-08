@@ -1,0 +1,7 @@
+url: https://github.com/fountainhead-gq/dsh-weread-gather
+name: fountainhead-gq/dsh-weread-gather
+category: ui
+description:
+  en: "A private WeRead study in the DSH sidebar: the shelf folds into ten categories, highlights and thoughts page through and copy per item, and a reading heatmap plus KPI dashboard switch by year. Search covers shelf, books, highlights and thoughts. Talks to WeRead through the official agent gateway with your own API key and keeps everything in local JSON. Requires DSH >=0.2.2-rc.1."
+  zh: "把微信读书搬进 DSH 侧栏的私人书房：书架折叠成 10 大类，划线与想法可分页、可逐条复制，阅读热力图与统计表盘能按年份切换；书架、书籍、划线、想法都能搜索。通过官方 agent 网关用你自己的 API Key 读取数据，全部落在本机 JSON。要求 DSH >=0.2.2-rc.1。"
+icon: https://raw.githubusercontent.com/fountainhead-gq/dsh-weread-gather/main/assets/icon.png
