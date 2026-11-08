@@ -1,0 +1,6 @@
+url: https://github.com/Zkbnfcnb/dsh-my-agent-preset
+name: Zkbnfcnb/dsh-my-agent-preset
+category: identity
+description:
+  en: 'Build presets for DSH Agents: package personas, prompts, skills, tools and runtime contexts into reusable capability bundles. Each task loads only the components it requires.'
+  zh: 给 DSH 的 Agent 做「预设」：把**人设、提示词、技能、工具、运行时上下文**打包成一套可复用的能力组合。一个任务，只装它需要的东西。

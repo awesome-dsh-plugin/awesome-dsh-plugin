@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-hs-classify
+name: PerryLink/dsh-hs-classify
+category: tools
+description:
+  en: 'HS code classification consistency check: chapter, heading, subheading and code hierarchy.'
+  zh: 'HS 编码归类层级一致性核对：章、品目、子目与商品编号层级。'
