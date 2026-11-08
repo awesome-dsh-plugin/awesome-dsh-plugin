@@ -1,5 +1,5 @@
 url: https://github.com/bingomu/dsh-followup
-name: bingomu/dsh-followup
+name: 跟进清单（dsh-followup）
 category: workflow
 description:
   en: 'Every conversation gets an ending: mark dev-done, release channel and version in the conversation header, see how many items still need attention in the sidebar, and read all unfinished conversations, tasks and schedules in the right-panel ledger.'
