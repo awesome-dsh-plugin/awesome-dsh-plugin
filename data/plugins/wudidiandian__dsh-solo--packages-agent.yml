@@ -2,5 +2,5 @@ url: https://github.com/wudidiandian/dsh-solo/tree/main/packages/agent
 name: wudidiandian/dsh-solo#agent
 category: remote
 description:
-  en: 'Remotely use DeepSeek Harness from an Android phone, view sessions, send tasks, switch models, transfer attachments, and approve operations.'
-  zh: '通过 Android 手机远程使用 DeepSeek Harness，查看会话、发送任务、切换模型、传递附件并审批操作。'
+  en: 'DSH-SOLO desktop plugin for its companion app. Pair by QR code to view sessions, send tasks, switch models, transfer attachments and approve operations with end-to-end encryption; official cloud relay preconfigured, no server setup required. Download the App APK at https://github.com/wudidiandian/dsh-solo/releases/latest/download/dsh-solo.apk (GitHub Releases).'
+  zh: 'DSH-SOLO 手机远程协作的电脑端插件，搭配 App 扫码连接，查看会话、发送任务、切换模型、传递附件并确认操作审批；支持端到端加密，已配置官方云转发服务，无需自行部署服务器。App 安装包下载：https://github.com/wudidiandian/dsh-solo/releases/latest/download/dsh-solo.apk （GitHub Releases）。'

@@ -1,7 +1,0 @@
-url: https://github.com/zhezhi33/dsh-session-recycle
-name: zhezhi33/dsh-session-recycle
-category: session
-description:
-  en: 'Windows DSH session manager: recoverable recycle bin, subagent-tree cleanup, workspace file discovery and Explorer highlighting, plus categorized file-path export.'
-  zh: 把 DSH 会话移入可恢复回收站，按整条子代理树清理，并扫描工作区产物、在资源管理器中高亮或复制分类路径。
-tarball: https://github.com/zhezhi33/dsh-session-recycle/releases/download/v0.2.1/dsh-session-recycle-0.2.1.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/liuhuishang/dsh-five-session-evolution
+name: liuhuishang/dsh-five-session-evolution
+category: memory
+description:
+  en: Review every five distinct ended project sessions in DeepSeek Harness, retain sourced lessons and workflow drafts, and supply project memory to later sessions.
+  zh: 每五个不同的项目会话结束后自动复盘，积累有来源的经验与工作流草稿，并为后续会话带入项目记忆。
+tarball: https://github.com/liuhuishang/dsh-five-session-evolution/releases/download/v0.1.0/dsh-five-session-evolution-0.1.0.tgz

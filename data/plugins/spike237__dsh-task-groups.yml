@@ -1,0 +1,6 @@
+url: https://github.com/spike237/dsh-task-groups
+name: spike237/dsh-task-groups
+category: session
+description:
+  en: 'Adds custom task groups and an activity bell to the sidebar: drag sessions into or out of a group, reorder them by hand, collapse groups, and see running, waiting and unread sessions in one place.'
+  zh: '给侧边栏加上自定义任务分组和活动铃铛：把会话拖进拖出分组、手动排序、折叠分组，并在一处集中查看运行中、待确认和未读的会话。'

@@ -1,0 +1,7 @@
+url: https://github.com/joeseesun/qiaomu-audio-dsh
+name: joeseesun/qiaomu-audio-dsh
+category: voice
+description:
+  en: "Read Markdown aloud, dictate and transcribe audio, and export narrated media from Harness."
+  zh: "在 Harness 中朗读 Markdown、听写和转写音频，并导出配音媒体。"
+tarball: https://github.com/joeseesun/qiaomu-audio-dsh/releases/download/v0.1.6/qiaomu-audio-dsh-0.1.6.tgz

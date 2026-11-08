@@ -1,0 +1,7 @@
+url: https://github.com/gongfpp/dsh-thanks-carl
+name: gongfpp/dsh-thanks-carl
+category: fun
+icon: https://raw.githubusercontent.com/gongfpp/dsh-thanks-carl/main/assets/icon-180.png
+description:
+  en: "Quiet Carl the hedgehog easter eggs after a finished turn, plus local water, meal and rest reminders. Fully local scheduling with no model calls and no chat messages."
+  zh: "任务结束后偶尔让卡尔从屏幕边缘探头，并提醒喝水、吃饭、休息；完全本地调度，不发送聊天消息、不调用模型。"

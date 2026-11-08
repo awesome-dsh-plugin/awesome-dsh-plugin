@@ -1,0 +1,6 @@
+url: https://github.com/xuzhecomeon/dsh-research-suite
+name: xuzhecomeon/dsh-research-suite
+category: skill
+description:
+  en: Research workflow suite that registers 10 domain skills and 7 tools, curates 592 bundled research skills into 103 capability cards with an auditable per-skill ledger, and takes over research requests automatically through a system-prompt section.
+  zh: 科研全流程插件：注册 10 个领域技能与 7 个工具，把随包 592 条科研技能整理成 103 张能力卡并附 586 条可审计的判定账本，通过系统提示段自动接管科研任务。

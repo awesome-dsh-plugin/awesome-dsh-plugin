@@ -1,0 +1,8 @@
+url: https://github.com/TLEWA/dsh-better-choice
+name: TLEWA/dsh-better-choice
+category: ui
+description:
+  en: 'Adds two enhancements to DSH ask_user_question choice cards: right-clicking an option expands a per-option note that is merged into the submitted custom answer, and a footer field asks a side question answered by a fork subagent from the session context, read-only, with no write-back. Keeps left-click, skip, paging and the countdown working as before, and only claims generic choice cards, not plan review or approval cards. Supports DSH 0.2.x from 0.2.0-rc.1 (verified on 0.2.2-rc.1) and Node.js 20+. Derived from buaaflyaway/dsh-question-note (MIT) and inspired by MichengAI/dsh-btw (Apache-2.0); do not install it together with dsh-question-note — both take over the same ask_user_question card.'
+  zh: '为 DSH 的 ask_user_question 选择题卡片增加两项能力：右键选项展开补充说明，并合并进提交的 custom 答案；卡片底部可以先问一句，由 fork 子代理带着当前会话上下文只读作答，不改写会话。左键选择、跳过、分页与倒计时照旧，且只接管普通选择题卡片，不接管计划确认与审批卡片。适配 DSH 0.2.0-rc.1 及以上的 0.2.x（已在 0.2.2-rc.1 验证），需 Node.js 20+。由 buaaflyaway/dsh-question-note（MIT）派生、并受 MichengAI/dsh-btw（Apache-2.0）启发；不要与 dsh-question-note 同装——两者会接管同一张 ask_user_question 卡片。'
+icon: https://raw.githubusercontent.com/TLEWA/dsh-better-choice/main/assets/icon-180.png
+tarball: https://github.com/TLEWA/dsh-better-choice/releases/latest/download/dsh-better-choice.tgz
