@@ -1,0 +1,6 @@
+url: https://github.com/lucyVan/dsh-publish-github
+name: lucyVan/dsh-publish-github
+category: git
+description:
+  en: Publish any local directory to GitHub from inside a DSH session with a /publish slash command — git init, gh repo create, commit and push. Never force-pushes, never deletes.
+  zh: 在 DSH 会话中用 /publish 把本地目录发布为 GitHub 仓库——自动完成 git init、gh repo create、提交与推送；绝不 force-push，绝不删除。
