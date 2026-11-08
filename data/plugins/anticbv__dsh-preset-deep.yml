@@ -1,0 +1,7 @@
+url: https://github.com/anticbv/dsh-preset-deep
+name: anticbv/dsh-preset-deep
+category: workflow
+description:
+  en: A fifth DeepSeek Harness work mode that writes falsification-first planning and evidence-graded conclusions into the agent persona and plan mode.
+  zh: 给 DeepSeek Harness 增加第五个工作模式，把先证伪再交付与结论证据等级写进 persona 与计划模式。
+icon: https://raw.githubusercontent.com/anticbv/dsh-preset-deep/main/assets/icon.png
