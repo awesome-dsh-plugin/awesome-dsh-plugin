@@ -2,6 +2,6 @@ url: https://github.com/ROSESSSSS66/dsh-memory
 name: ROSESSSSS66/dsh-memory
 category: memory
 description:
-  en: 'Self-evolving long-term memory system with hybrid submodular MMR retrieval, HippoRAG 2 associative graphs, and autonomous core sync.'
-  zh: '自进化长期记忆系统，支持混合亚模 MMR 检索、HippoRAG 2 关联图谱与自主核心记忆同步。'
+  en: 'Self-evolving long-term memory system for DSH: zero-prompt recall, associative knowledge graphs, and workspace memory sync.'
+  zh: 'DSH 自进化长期记忆系统：零干预自动唤回、关联知识图谱检索与工作区记忆自主演进。'
 icon: https://raw.githubusercontent.com/ROSESSSSS66/dsh-memory/main/assets/dorodoro-logo.jpg
