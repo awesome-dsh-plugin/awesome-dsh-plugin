@@ -3366,6 +3366,7 @@ dsh plugin --profile web add dshmarket
 - [TINGOD2006/dsh-um-proxy-ondemand](https://github.com/TINGOD2006/dsh-um-proxy-ondemand) — 管理 DSH 的 um-genai provider 所連的本機 UM GenAI 反代（127.0.0.1:8788）的生命週期：llm/stream 請求進來時按需喚醒、閒置一段時間後關閉、提供健康檢查與唯讀狀態端點。另附 DSH 設定頁（埠號、常駐模式、閒置分鐘、解譯器與路徑、UM 帳號、代理金鑰），以及一顆按鈕：把 providers.um-genai 寫進 profile patch 並補上模型清單（全新 profile 沒有這段設定，模型選單本來會是空的）。續期看門狗在上游 token 過期時於隱藏 Windows 桌面完成校園 gateway 登入。反代本體是 um_opencode_setup.py（澳門大學校內發放的單檔工具），外掛在 vendor/ 自帶一份讓全新安裝即可運作，而 ~/.um-opencode/ 那份優先；它仍然不產生 token，token 由登入校園 gateway 取得。需要 Windows（進程發現與閒置關閉依賴 netstat/taskkill，續期依賴 PowerShell 與隱藏桌面）、Python 3.10+ 與澳門大學帳號。
 - [TinyBOOOOM/dsh-cliproxyapi-pro](https://github.com/TinyBOOOOM/dsh-cliproxyapi-pro) — 在 DeepSeek Harness（DSH）中接入 CLIProxyAPI（CPA），支持多账户、模型筛选、原生协议直连、额度查询、生图生视频，选好配置后自动出现在模型选择器中。
 - [tkaiz0406/dsh-subagent-route-pin](https://github.com/tkaiz0406/dsh-subagent-route-pin) — 注册一个包装 provider，让被委派的子代理走自己的 LLM 路由——单发子代理经 provider.start，Agent Teams 成员经 startActivation 上的钩子——主 agent 仍用自己的模型。附带设置页选择路由、按专家覆盖的配置文件、报告钩子挂在哪条缝上的能力标志，以及挂载时写下的就绪记录。
+- [TLEWA/dsh-opencode-go-router](https://github.com/TLEWA/dsh-opencode-go-router) — 为 OpenCode Go 的 DeepSeek 会话保持提示缓存命中：在请求发出前预测其缓存命中率，当该请求预计变冷且近期请求偏慢时轮换 x-opencode-session 路由 id，并把空闲的暖 id 放入池中供新会话复用。
 - [tonylee2022/dsh-xai-oauth](https://github.com/tonylee2022/dsh-xai-oauth) — 用设备码 OAuth 登录 xAI Grok 订阅，自动刷新访问令牌，并作为 xai 路由凭据使用，无需 API key。
 - [TonyWu2333/dsh-mercury-diffusion](https://github.com/TonyWu2333/dsh-mercury-diffusion) — 在 dsh Web UI 的回答气泡里实时播放 Inception Mercury 的扩散（去噪）过程：对支持的路由以 `diffusing: true` 重发请求，按真实帧从噪声播放到最终文本，会话日志只写入收敛后的答案。按 provider/model 用一个在生成前就被拒绝的探测请求判断是否支持，右侧浮动按钮按模型开关；带附件、辅助调用或不支持的路由一律回退原适配器。启用期间会接管所有模型的助手消息渲染。
 - [troytse/dsh-plugin-subagent-roles](https://github.com/troytse/dsh-plugin-subagent-roles) — 用文件定义子代理角色：角色放在项目级与全局级 .dsh/roles 目录，委派方每个角色只看到一行目录，子代理可见的工具由角色自己的工具策略决定。
@@ -6266,6 +6267,7 @@ dsh plugin --profile web add dshmarket
 - [maxiaovivi/dsh-cloak-browser](https://github.com/maxiaovivi/dsh-cloak-browser) — 基于 CloakBrowser 的原生浏览器工具：按 Agent 隔离会话，提供有界快照、ref 交互、截图与安全路由。
 - [maxwell-feng/dsh-tinyfish-search](https://github.com/maxwell-feng/dsh-tinyfish-search) — 基于 TinyFish 的网页搜索提供方：把内置 web_search 接到 TinyFish Search API，每次搜索一次 GET，不消耗模型调用。
 - [menotbobbybrown/dsh-plugin-browser](https://github.com/menotbobbybrown/dsh-plugin-browser) — DeepSeek Harness 原生无头及可视化 Chromium 浏览器自动化插件：支持 DOM 树提取、网页截图捕获及内置 SSRF 安全防护。
+- [mercurynomercy/dsh-custom-search-fetch](https://github.com/mercurynomercy/dsh-custom-search-fetch) — 把内置 web_search 的后端换成自托管的 SearXNG，把 web_fetch 换成自托管的 Firecrawl（作为 DSH 网页能力提供方注册），并提供两个后端的设置卡片。
 - [MicroHEROX/dsh-exa-mcp](https://github.com/MicroHEROX/dsh-exa-mcp) — 通过内置的 @deepseek-ai/dsh-mcp-client 桥接接入托管的 Exa 搜索 MCP 端点（mcp.exa.ai）：web_search_exa 与 web_fetch_exa 工具，免费额度匿名可用，设置 EXA_API_KEY 可解锁更高限额。
 - [MicroHEROX/dsh-Kimi-WebBridge](https://github.com/MicroHEROX/dsh-Kimi-WebBridge) — 通过本地 Kimi WebBridge 守护进程驱动用户的真实浏览器：navigate、find-tab、snapshot、click、fill、evaluate、CDP、screenshot、network、upload、PDF 导出与标签管理工具，复用浏览器已登录会话。
 - [miqian-nomad/dsh-browser-playwright-codex](https://github.com/miqian-nomad/dsh-browser-playwright-codex) — 浏览器自动化：让 AI 用你已经登录的账号，在真实网页上填表、抓取列表、多标签查后台。它跑在你桌面上的一个可见窗口里 —— 最小化它就不抢焦点、安静干活；遇到登录、验证码和原生弹窗会停下来等你，绝不替你点「确定」。登录一次一直记得（独立 profile + session cookie 回注）。23 个 Playwright 工具（20 个常驻、3 个默认关闭的强力工具），URL 白名单、弹窗挂起、CDP 方法白名单都是机制级且有测试钉住。
@@ -7624,6 +7626,7 @@ dsh plugin --profile web add dshmarket
 - [smellgamed3/dsh-plugin-list-sync](https://github.com/smellgamed3/dsh-plugin-list-sync) — 通过兼容 S3 的对象存储同步 DeepSeek Harness 第三方插件列表，提供差异预览、本地快照、回滚与可选的 LLM provider 配置同步。
 - [SMPcosy/dsh-member-manager](https://github.com/SMPcosy/dsh-member-manager) — 把 DSH 的 agent 当公司跑：部门、派工、attempt 凭证、审计账本与成本核算，叠加工作网看板、组织架构图与 DAG 任务图并行派发，无需原生 team 层。
 - [Snerou/dsh-reason-tree](https://github.com/Snerou/dsh-reason-tree) — 根源追溯：把结论拆成从下往上的论证树，每一支可标成立、不成立或待拆，并能跳到海马体看原文。
+- [soffits/dsh-cron-jobs](https://github.com/soffits/dsh-cron-jobs) — 在宿主进程中运行的定时任务，支持 cron、RRULE 或一次性时间：只跑 shell 命令、不启动模型；先跑检查命令，有事才唤醒 Agent；或直接给 Agent 发提示词。附带让 Agent 创建任务的工具、Cron 任务页面，结果可交给任何提供 send 方法的插件发送。
 - [spechenxin/jimu](https://github.com/spechenxin/jimu) — 积木：DSH 分域编排插件，domain_plan 分域确认 + 按域编排子代理（手递手）+ LLM 自动审计。
 - [SpookyWaste/dsh-plan-compact-execute](https://github.com/SpookyWaste/dsh-plan-compact-execute) — 在 DSH Web 的计划审批卡上增加「压缩后执行」：先把计划提交之前的历史压成检查点，再批准计划。
 - [squirrel20/dsh-cron](https://github.com/squirrel20/dsh-cron) — 宿主侧无人值守定时任务：按 cron 表达式、固定间隔或一次性时点运行一次性 agent 任务或 shell 命令，调度状态持久化（至多一次语义），支持重叠/错过策略与有界运行历史。
@@ -9172,6 +9175,7 @@ dsh plugin --profile web add dshmarket
 - [EviMing/dsh-qq-shell-commands](https://github.com/EviMing/dsh-qq-shell-commands) — 目的是能远程运行 Shell 命令，而不是让 DSH 运行，适用于需要重复工作或托管行为但不能直接给权限到 DSH 的情况。原理是通过 NapCat 进程与 QQ 进行交互，当 QQ 发送特定消息，判断是否完全相等与哪个键的字符串，并执行对应的 Shell 命令。执行 Shell="执行 Shell 命令：\n文本"。添加新的键值对="增加 Shell 命令：\n{"文本": \["Shell 命令", "使用哪个 Shell (例如 cmd，或 PowerShell) 运行 Shell 命令"]}"，最终会被拼接为 "Shell 命令" 的格式被系统运行，依赖前置插件 "EviMing/dsh-napcat-tools"需先安装 EviMing/dsh-napcat-tools，并准备 NapCat 与 Python 3.10+。
 - [fanrj3/dsh-presence](https://github.com/fanrj3/dsh-presence) — 像操作本地一样使用 ssh config 中的任意远程机器：持久连接、原生文件编辑、搜索、命令执行与终端，远端无需安装任何东西。
 - [feng-yifan/dsh-plugins#dsh-enhancement](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-enhancement) — DSH 增强套件：为 Web GUI 提供独立的密码访问网关（可选 HTTPS，适合局域网/远程访问），整合 PWA 安装与图标、桌面通知与 Web Push，并可把当前会话的 session id 注入第三方 API 请求头，在设置页统一配置。
+- [Firefox2100/dsh-proxy-trust](https://github.com/Firefox2100/dsh-proxy-trust) — 让 DSH Web UI 可在带身份验证的反向代理后运行，并分别控制受信任主机、跳过登录、跨站导航、本地页面信任和可选的网络监听器。
 - [flyhigao/dsh-produced-file-paths](https://github.com/flyhigao/dsh-produced-file-paths) — 在远程 Web 中显示并复制 DSH 每轮产出文件的绝对路径。
 - [FORGE-131/dsh-lan-pair](https://github.com/FORGE-131/dsh-lan-pair) — 手机接入 DSH Web 界面：内网配对 + 通过自备隧道命令（如 cloudflared）或固定公网地址的远程访问，自带局域网到隧道的自动降级与 dshlanpair:// 深链接；手机端需侧载仓库自带的 Android App（APK，需 Android 8+）。
 - [framecy/dsh-ssh-shell](https://github.com/framecy/dsh-ssh-shell) — 用密码直连远程主机的 SSH 终端：ssh_remote 工具提供 connect/exec/close/status 四个动作，底层是 ControlMaster 常驻会话；另带浏览器浮动终端面板，跑真实 PTY。
@@ -9562,7 +9566,7 @@ dsh plugin --profile web add dshmarket
 - [daixin315/dsh-xiaoshuang#plugin](https://github.com/daixin315/dsh-xiaoshuang/tree/master/packages/plugin) — 小双桌面宠物人格：六层记忆、人设注入、跟随 agent 状态的视频形象、手动表情菜单与 TTS 语音回复。
 - [DamonKoy/dsh-web-ui#dsh-pet](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-pet) — dsh web GUI 多桌宠伴侣：注册表驱动的悬浮宠物，随模型活动实时反应。
 - [Daphne999/dsh-qq-waifu](https://github.com/Daphne999/dsh-qq-waifu) — 让 AI 在 QQ 里一句一句发消息：把每条回复拆成几个气泡、按字数给打字停顿、句末不留句号；表格和代码块整条不切。做法是给 desktop profile 里的 @tencent-connect/dsh-qqbot 发送链打补丁：先手动运行一次 node outbound/apply-patch.mjs、把 im-qqbot 的 streaming 设为 false 并重启；在此之前只有 waifu_* 工具可用。
-- [Darianliu23/dsh-stardew-blind-whale-farmer](https://github.com/Darianliu23/dsh-stardew-blind-whale-farmer) — 大肥鱼种白饭（Blind Whale Farmer）的 DSH 插件。同仓库里的 SMAPI 模组把星露谷的游戏状态转成文字、通过 MCP 工具让 AI 来玩；插件把每次游玩时长和额外要求同步到正在运行的游戏，提供可选的会话预设或单个 stardew 入口工具（默认都关闭），并在星露谷会话因工具调用变成文字而中断时自动发一句“接着玩”。需要先在游戏里装好模组。
+- [Darianliu23/dsh-stardew-blind-whale-farmer](https://github.com/Darianliu23/dsh-stardew-blind-whale-farmer) — 大肥鱼种白饭（Blind Whale Farmer）的 DSH 插件。同仓库里的 SMAPI 模组把星露谷的游戏状态转成文字，让 AI 通过 MCP 工具来玩：种地、钓鱼、下矿、送礼、过节日、恋爱结婚，也能和你在同一台电脑上联机一起玩，按 F6 用中文聊天。插件在插件页的配置卡片里调整每次游玩的天数和时长、思考时冻结时间、联机模式、给 AI 的额外要求和攻略，自动推送到游戏；可选会话预设或单个 stardew 入口工具（默认都关闭），会话因工具调用中断时会自动发“接着玩”。需要先在游戏里装好模组。
 - [DarkDarkdDarkWine/dsh-quota-pets](https://github.com/DarkDarkdDarkWine/dsh-quota-pets) — 动画桌宠，每家编程套餐一只吉祥物（GLM、MiniMax、Kimi、DeepSeek、MiMo）。动作跟随会话运行状态，心情跟随 dsh-quota-hub 的额度用量。
 - [Debuger-114514/dsh-bili-jar](https://github.com/Debuger-114514/dsh-bili-jar) — 鲸鱼娘带着一个罐子，守在右下角。按照你的兴趣，她会去 B 站探险，按赞币藏率排，给你找一些符合口味的电子榨菜。哪个词搜得少，她换条路再找。回来把五条装进罐子里，然后和你说说这些视频讲了什么。时政这类她只留最近两周，游戏攻略和音乐不限时间，每根轴她自己定。
 - [Deiael/dsh-live-vibeCoding](https://github.com/Deiael/dsh-live-vibeCoding) — dsh-livestream（MIT）的分支，请替代原插件安装、不要与它同时安装。让 DSH 在 B 站当主播：回弹幕、谢礼物、观众点的视频排队上舞台、豆包 TTS 音色说话，并自动配置 OBS 与 B 站推流；前置需要 OBS Studio 28+ 和一个 B 站直播间，没填豆包 TTS API Key 时只有画面没有声音（无字幕视频转写可选装 Python + faster-whisper）。
@@ -9589,6 +9593,7 @@ dsh plugin --profile web add dshmarket
 - [FeWOO/DeepSeek-meme](https://github.com/FeWOO/DeepSeek-meme) — DSH 表情包库：输入区按钮打开默认表情（10 张 GPT 绘制）与社区二创梗图（8 张）两个包，点一下发送 180px 贴纸，模型也能通过 send_sticker 理解并回发表情。
 - [Firefly26710Lover/dsh-firefly-pet](https://github.com/Firefly26710Lover/dsh-firefly-pet) — 流萤桌宠：透明置顶的桌面伴侣，走宿主模型聊天、点击切换动画、定时碎碎念、按会话播报任务进度，并可查询账户余额。依赖 DSH Desktop 自带的 Electron 运行时（~/.dsh/electron），缺失时桌宠不会出现；仅支持 Windows。
 - [Firefox2100/dsh-agentic-roleplay#core](https://github.com/Firefox2100/dsh-agentic-roleplay/tree/main/packages/dsh-agentic-roleplay-core) — 为 DSH 提供具有结构化世界、自主角色、持久会话、世界创作、语音与图像生成功能的智能体角色扮演系统。需要安装并启用 Firefox2100/dsh-agentic-roleplay#state。
+- [Firefox2100/dsh-rws-tarot#tarot](https://github.com/Firefox2100/dsh-rws-tarot/tree/main/packages/tarot) — DSH 的莱德-韦特-史密斯塔罗牌插件，在右侧栏提供凯尔特十字、韦特的替代与三十五张牌方法、普通抽牌以及三张牌和九张牌布局；插件负责抽牌与摆放，再将每张翻开的牌逐轮送入对话，由模型依据韦特《塔罗图解》进行解读。
 - [flhy666/dsh-chatting-pet](https://github.com/flhy666/dsh-chatting-pet) — DSH 桌面宠物：语音聊天、多人设、聊天记忆、B 站视频与 QQ 群记忆（只读本地文件）；「电脑操作」需在面板里显式打开总开关后才响应语音指令，语音聊天需先在 DSH 中启用内置语音输入。dsh-pet（MIT）的 fork，不能与原版同时安装。
 - [flizzywine/dsh-tavern#dsh-tavern](https://github.com/flizzywine/dsh-tavern/tree/main/tavern-plugin/packages/dsh-tavern) — 基于 DeepSeek Harness 的 Agent 酒馆，兼容 SillyTavern 生态，人物卡导入即玩，支持多种模型和手机游玩。桌面端从「设置 → 酒馆启动器」安装酒馆。 基于 2NF/dsh-profile-bridge（MIT）改造的启动器：把酒馆下载到独立 DSH 配置并在重启时切换。与上游插件不能同装——两者都占用 /profile-bridge 通道。
 - [Flycat43/liang-desktop-pet#liang-harness-plugin](https://github.com/Flycat43/liang-desktop-pet/tree/main/plugins/liang-harness-plugin) — DeepSeek Harness Web 人物交互插件，支持六档人物与表达风格、四种任务模式、当前会话交流、公开思考摘要和浏览器语音朗读。
