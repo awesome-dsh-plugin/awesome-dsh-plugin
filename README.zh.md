@@ -1930,6 +1930,7 @@ dsh plugin --profile web add dshmarket
 - [YuanJiangDev123/dsh-job-monitor](https://github.com/YuanJiangDev123/dsh-job-monitor) — 跨会话的后台任务面板：进度按「任务自报 / 输出解析 / 历史耗时估算」三档显示，可按状态、用途、会话或类型分组，支持实时输出、输出内搜索与本地历史台账。
 - [yuanyiHY/deepseek-media-gallery](https://github.com/yuanyiHY/deepseek-media-gallery) — 侧边栏按钮打开半透明弹窗，浏览、预览、下载和删除生成的图片与视频；设置页可改图片目录、记录目录与下载目录。
 - [yuanyiHY/dsh-rail-equalizer](https://github.com/yuanyiHY/dsh-rail-equalizer) — 轮次导航导轨的系统声音可视化：导轨实时跟随默认播放设备正在渲染的声音律动，提供频谱 / 脉动 / 摆动 / 行波四种运动方式，宿主端用 2048 点 FFT 切出 16 段对数频谱，灵敏度、强度、低频冲击与波速均可实时调节。音频走宿主端 WASAPI 回环采集，因此没有授权弹窗、不用麦克风、不录屏。浏览器半只添加一个属性、一张样式表、若干 CSS 变量和侧栏一行控件，绝不 patch 官方组件；关闭时移除属性、样式表与变量，导轨完全恢复默认样式。仅 Windows。
+- [yuanzephyr920-oss/dsh-idle-crt](https://github.com/yuanzephyr920-oss/dsh-idle-crt) — DSH 待机显像管屏保：没有会话在运行、且页面上十分钟（可调）没有鼠标键盘输入时，盖上一块带扫描线与循环反色扫掠的 CRT 板；窗口内点一下或按个键即消失，滚轮只锁滚动，画面随指针轻微视差偏移，逐帧全 GPU 合成。
 - [yuanzhenqi/dsh-mobile-ui](https://github.com/yuanzhenqi/dsh-mobile-ui) — 为 DSH Web 做成真正的手机壳：会话列表收成抽屉，点会话自动收起且不弹键盘，设置页改为全宽 sheet。
 - [Yuer6327/NoLetMe](https://github.com/Yuer6327/NoLetMe) — 实时追踪 DeepSeek Harness 网页对话中模型流式推理轨迹关键词统计的 UI 面板。
 - [Yujm888/dsh-turn-rail](https://github.com/Yujm888/dsh-turn-rail) — Codex 风格自动隐藏右缘轮次导航：靠边浮现、单轮 tooltip、会话内搜索、长会话 30 轮滚动窗口。
@@ -4665,6 +4666,7 @@ dsh plugin --profile web add dshmarket
 - [yangdongzhen590/dsh-knj-obsidian](https://github.com/yangdongzhen590/dsh-knj-obsidian) — DSH 内置版 Obsidian 知识库：agent 把对话、文档与网页蒸馏为结构化 .wiki 知识图，支持检索、图谱导出、笔记编辑、增量构建与多库管理。
 - [yangyizhu8/dsh-powercontext](https://github.com/yangyizhu8/dsh-powercontext) — DeepSeek Harness 的 PowerContext 常驻插件：模型每步前自动召回有界上下文，19 个 pc_* 工具覆盖记忆、工作移交、经验与技能，附带 Windows Server 看门狗实现常驻自启与崩溃自动拉起。
 - [yangyongzhen/dsh-memory](https://github.com/yangyongzhen/dsh-memory) — 会话开始自动注入的长期记忆：preference/fact/summary/knowledge 四类、global/project 双作用域，`agent/pre-step` 字节预算召回，JSON 原子持久化。
+- [瑞希的记忆](https://github.com/Yanlrx/dsh-memory-v2) — 给 DeepSeek Harness 的长期记忆插件：每轮自动存档与召回、按天巩固；有效性、权重、过期三个函数各管一件事。
 - [Yansera/dsh-living-memoir](https://github.com/Yansera/dsh-living-memoir) — 把跨会话记忆写成一份简短可读的 Markdown 活文档，每轮对话结束后整个重写；模型工具、页面手写与自动改写都写进同一批文件。
 - [yffo/dsh-engramory-recall](https://github.com/yffo/dsh-engramory-recall) — 给 Engramory 记忆库加本地 BM25 自动召回、写入闸门、静态体检与记忆面板。不联网、不起进程，默认不调模型；召回质量由仓库里的可复算基准量化。
 - [yhPrime/dsh-exp-lib-provider](https://github.com/yhPrime/dsh-exp-lib-provider) — 需先安装 dsh-mnemon。经验库记忆空间 Provider（dsh-mnemon），同时注册 exp_recall / exp_record / exp_feedback / exp_type 工具。
@@ -7389,6 +7391,7 @@ dsh plugin --profile web add dshmarket
 - [lidaqi001/dsh-claude-code-delegate](https://github.com/lidaqi001/dsh-claude-code-delegate) — 一个 Agent 预设：把每个任务都交给 Claude Code 子代理执行，会话只负责写任务说明、委派与汇报结果。需本机已安装并登录 Claude Code。
 - [lifangjin/dsh-paoding](https://github.com/lifangjin/dsh-paoding) — DSH 编排模式预设生成器：主 agent 指挥，四个内置帮手各只带本行工具；Web 面板按工作区增删帮手，可给自定角色配专属工具、技能与模型——零 DSH 源码改动。
 - [lijiaqi-AI-Product-Manager/dsh-agent-compare](https://github.com/lijiaqi-AI-Product-Manager/dsh-agent-compare) — AgentCompare A/B 对比：同一需求做两版 Vite 应用，在 DSH 主对话中并排体验、统一验收、盲选，再审查采用到当前项目。复用已有模型配置；适用于本地 Git 仓库（至少一次提交）的根目录 Vite 前端。
+- [limomss-dunang/dsh-aidrama](https://github.com/limomss-dunang/dsh-aidrama) — AI 短剧 / 漫剧制片台：导入 TXT、Markdown、DOCX 或直接粘贴剧本并自动拆集，把总纲、角色、场景、道具、分集、分镜、提示词结构化；提示词按所选视频模型方言编译（Seedance 2.0/2.5、MiniMax H3、Kling、Wan），生成前硬校验 ID 与引用、节拍时长、台词容量、一镜一动作、身份锁与 LOOK。
 - [limomss-dunang/dsh-video-replica](https://github.com/limomss-dunang/dsh-video-replica) — 六步爆款视频复刻工作台：解析抖音/小红书/视频号/快手/B站分享链接或本地上传，用视觉模型逐镜拆解源片并可选 ASR 转写口播，仿写 A/B/C 三版分镜，逐镜生成首帧与视频片段，最后用 ffmpeg 拼接成片，可选 TTS 配音、ASS 字幕烧录与 BGM。
 - [limuyang2/agent-team](https://github.com/limuyang2/agent-team) — 为 DeepSeek Harness 提供多 Agent 团队协作，支持助手独立模型、Skills、MCP 服务与上下文，以及共享工作区、任务协调和会话管理。
 - [linglanxin/codex-dsh-bridge](https://github.com/linglanxin/codex-dsh-bridge) — 实验性 Windows 本机 MCP 桥接，让 Codex 监督 DSH Desktop 0.2.1-rc.3 任务，支持暂停回传方向问题、计划检查点、验收返工和指定工作区归属。基于 Cryocell77/dsh-desktop-mcp-bridge（MIT）的 Windows 适配版；包名与 loader 行相同，不能与上游同时启用。
@@ -9134,6 +9137,7 @@ dsh plugin --profile web add dshmarket
 - [Junkrat9527/dsh-desktop-automation](https://github.com/Junkrat9527/dsh-desktop-automation) — macOS 桌面控制插件：agent 像人一样操作非浏览器应用（剪映/PS/WPS/原生客户端）——14 个工具覆盖鼠标/键盘/滚动/应用/窗口/截图，并整合视觉闭环（desktop_see 识图 + desktop_locate UI 定位坐标，复用 dsh 既有视觉凭据）。服务 GUI 会话按需拉起，非登录自启。
 - [JUNQINGV587/dsh-ssh-hub](https://github.com/JUNQINGV587/dsh-ssh-hub) — DSH Web GUI 多服务器 SSH 终端面板：浮动终端窗口支持标签页、并排组合、广播、宿主侧持久会话，以及密码/私钥/SSH Agent 认证。
 - [jyb114/pocket-bridge](https://github.com/jyb114/pocket-bridge) — 在 DSH 设置里为 Pocket Bridge 提供本机手机配对、网关控制与诊断面板。
+- [kilbertert/dsh-herdr](https://github.com/kilbertert/dsh-herdr) — 在 DSH 侧栏新增 Herdr 面板，通过宿主 PTY 服务运行 herdr --remote dev-us --session work 并用 xterm.js 渲染。启动命令每个终端只发送一次，切换面板或刷新页面不会重复开会话。远程名与会话名是 lib/client.js 里的一行常量，可自行修改。
 - [kinderao/dsh-pocket-relay](https://github.com/kinderao/dsh-pocket-relay) — 手机与远程访问 DSH Web 界面：局域网扫码即用，或用自建 relay 中继服务端（替代 cloudflared 隧道）随时随地连回电脑；每台设备独立凭据，可配对、查看与单独撤销；多台电脑共用一个中继并自动热备。
 - [KKUCODES/dshm-plugin](https://github.com/KKUCODES/dshm-plugin) — 将 DSHM 安卓客户端连接到电脑上的 DeepSeek Harness 会话，支持远程续聊、模型切换、审批、设备配对与撤销。
 - [KyoMio/dsh-zen-remote](https://github.com/KyoMio/dsh-zen-remote) — 配对码远程访问 DSH：手机端可安装 PWA、带 Web Push 推送；另一台设备作为客户端，在原生 DSH 界面里直接操作主机共享的会话，经自建反代或 Cloudflare Tunnel 接入。
