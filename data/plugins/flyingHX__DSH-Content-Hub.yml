@@ -2,5 +2,5 @@ url: https://github.com/flyingHX/DSH-Content-Hub
 name: flyingHX/DSH-Content-Hub
 category: workflow
 description:
-  en: Atomize a source into six reusable content atoms, adapt them into article and short-video drafts, and check cross-draft fact consistency.
-  zh: 把源材料拆解为六类可复用内容原子，适配为文章与短视频草稿，并检查跨稿事实一致性。
+  en: Atomize a source into six reusable content atoms, adapt them into article, short-video, card-series, and podcast-script drafts, and check cross-draft fact consistency.
+  zh: 把源材料拆解为六类可复用内容原子，适配为文章、短视频、图文卡片与播客口播稿，并检查跨稿事实一致性。
