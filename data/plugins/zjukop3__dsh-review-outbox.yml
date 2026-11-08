@@ -1,0 +1,6 @@
+url: https://github.com/zjukop3/dsh-review-outbox
+name: zjukop3/dsh-review-outbox
+category: workflow
+description:
+  en: 'Human review for DSH deliverables: research-report evidence checklists, same-artifact revision history, native DOCX/PDF viewing, approval/return/archive workflows, and standalone SHA-256 HTML receipts.'
+  zh: 'DSH 成果人工审阅台：研究报告证据清单、同一成果 revision 历史、宿主 DOCX/PDF Viewer、通过/退回/归档流程，以及带 SHA-256 的独立 HTML 验收单。'
