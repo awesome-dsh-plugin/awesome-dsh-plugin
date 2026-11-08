@@ -1,0 +1,7 @@
+url: https://github.com/Nyco1d/dsh-prompt-optimizer
+name: Nyco1d/dsh-prompt-optimizer
+category: ui
+description:
+  en: One-click prompt optimizer next to the composer, with a side-by-side diff panel and per-mode settings.
+  zh: 输入框旁的一键提示词优化器，带左右对比面板与模式设置。
+tarball: https://github.com/Nyco1d/dsh-prompt-optimizer/releases/download/v0.2.0/dsh-prompt-optimizer-nyco1d-0.2.0.tgz
