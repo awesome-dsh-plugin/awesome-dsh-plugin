@@ -1,6 +1,7 @@
 url: https://github.com/sirnple/dsh-provider-hub
 name: sirnple/dsh-provider-hub
 category: model
+tarball: https://github.com/sirnple/dsh-provider-hub/releases/latest/download/dsh-provider-hub.tgz
 description:
   en: 'Provider and account hub for DeepSeek Harness: several API-key accounts per provider with one-click switching and failover when a call dies on quota or credential errors, a per-account usage and quota panel in the conversation header, and a built-in Grok Build device-code OAuth adapter that needs no external gateway.'
   zh: 'DeepSeek Harness 的提供商与账号中心：同一提供商保存多个 API Key 账号并一键切换，请求因额度或凭据失败时自动换号；会话头部按账号显示用量与配额进度条；内置 Grok Build 设备码 OAuth 适配器，不依赖外部网关。'
