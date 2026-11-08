@@ -3816,6 +3816,7 @@ dsh plugin --profile web add dshmarket
 - [hkkz9522/dsh-session-manager](https://github.com/hkkz9522/dsh-session-manager) — DSH 会话与工作区管理——工作区：归档与显示。会话：跨工作区移动、预设迁移、删除；收藏、待回看、优先级、标签、备注。批量操作。
 - [hoist-wen/dsh-trajectory-tool-insight](https://github.com/hoist-wen/dsh-trajectory-tool-insight) — 在 DSH 会话轨迹栏边新增「解读」标签：调用模型分轮次解读工具调用情况；允许自定义提示词。
 - [homily707/dsh-session-header](https://github.com/homily707/dsh-session-header) — 在每个 LLM 提供商请求上注入携带 harness 会话 ID 的 x-session-id 请求头，也覆盖工具执行期间白名单内的网关请求。
+- [hongdougao111/dsh-archive-trash](https://github.com/hongdougao111/dsh-archive-trash) — 会话删除：任意会话行上直接删、多选批量清空、从回收站还原，删和还原都立刻生效不用重启；僵尸条目自动清理.
 - [hongdougao111/dsh-power-switch](https://github.com/hongdougao111/dsh-power-switch) — 会话头部的电源按钮，两个动作，都需再点一次确认。重启结束的是 Electron 主进程本身（taskkill /F 不带 /T），因此不会出现崩溃弹窗；宿主在 IPC 断开后自行优雅退出，分离的 helper 等单实例锁释放后重放同一可执行文件，并以真实窗口句柄确认新实例已启动。关闭同理但不重新拉起。上一轮残留的 GPU 与渲染器进程会被尽力清理。仅 Windows 桌面版。
 - [hoshF/dsh-md-export](https://github.com/hoshF/dsh-md-export) — 在会话标题栏加入「导出 MD」按钮，经系统原生保存窗口把当前会话导出为干净的 Markdown，并提供共用同一渲染核心的命令行与 HTTP 路由；直接读取会话日志（支持 v0、v3、v4 格式），且不声明任何 @deepseek-ai peer 依赖。
 - [hotheat/dsh-recent-sessions](https://github.com/hotheat/dsh-recent-sessions) — 在 DSH Web 侧栏底部加一块可折叠的「最近」列表：跨工作区按最后活动时间排序，过滤空白、已归档与 subagent 会话，复用宿主状态点，首屏 10 条、每次点击再多 10 条。
@@ -4222,6 +4223,7 @@ dsh plugin --profile web add dshmarket
 - [xingyingyuzhui/dsh-claw-registry](https://github.com/xingyingyuzhui/dsh-claw-registry) — 登记具名 Claw Agent，与官方工作区侧栏隔离，并提供设置页和全局新建模板。硬依赖（需同装，否则单装会崩）：dsh-claw-policy、dsh-claw-observability、dsh-claw-permissions。
 - [xingyingyuzhui/dsh-session-actions](https://github.com/xingyingyuzhui/dsh-session-actions) — 会话行菜单增强：置顶会话、复制会话 ID、导出结构化 Markdown、弹窗确认后永久删除会话。
 - [xinming-chenniang/dsh-closeout](https://github.com/xinming-chenniang/dsh-closeout) — 关会话或关 DSH 之前先查会丢什么：未提交改动、未推提交、临时文件、缺交接件、待重启标记、profile 里重启后装不上的包；给出三档结论，该交接时把七节交接件写进工作区台账。默认只读。
+- [xinming-chenniang/dsh-kb-sync](https://github.com/xinming-chenniang/dsh-kb-sync) — 把 chat.deepseek.com 的对话抓进本地知识库——每条会话一份 Markdown、一份 JSONL 语料和一个目录，并在 DSH 的控制页里检索。日常增量之外，可用官方导出包全量回填历史，带完整性体检；可选的模型整理步走宿主 llm 服务，JSON 校验通过才落盘。网页端 userToken 从 DSH 凭据服务读取，出网只连 chat.deepseek.com；无安装脚本、无运行依赖。
 - [xlcg10086/dsh-compact-threshold](https://github.com/xlcg10086/dsh-compact-threshold) — 输入框旁的上下文自动压缩阈值控制器：20%-80% 滑条按 step 重写运行中 BasicCompactionEngine 的配置，显示当前用量、上下文窗口与实际触发线；阈值降到当前用量以下且 Agent 空闲时立即压缩。
 - [xlxs123/dsh-session-multiselect](https://github.com/xlxs123/dsh-session-multiselect) — 为 DSH 对话加入可搜索、按工作区分组的多选面板，支持 Shift 范围选择与 Ctrl/Cmd 追加选择，然后批量删除、归档或置顶。
 - [xohmai/dsh-session-delete](https://github.com/xohmai/dsh-session-delete) — 真正删除会话：回收站可还原、归档清理、设置页批量删除。
@@ -6592,6 +6594,7 @@ dsh plugin --profile web add dshmarket
 - [KeinsteinNUS/dsh-speech-polish](https://github.com/KeinsteinNUS/dsh-speech-polish) — 给内置本地语音转写加一层术语纠错：沿用自带的麦克风与 SenseVoice 引擎（音频不出本机），在文字进入输入框前修正同音字、专业名词与数字写法。
 - [kekydream/dsh-meeting-room](https://github.com/kekydream/dsh-meeting-room) — 会议记录插件：一个会话对应一场会议，本机离线转写与发言人分离；要点、工作安排、手写笔记、复盘与月度评分都在面板里完成。可导出 SRT／Markdown／Word，也能打成「会议工程包」（zip）在另一台 dsh 导入；已确认的工作安排按设置一键推送到钉钉／企业微信。识别模型可更换（支持从本地文件导入更强的模型），云端识别默认关闭、未同意即零请求。导出 Word 需 Python 与 python-docx；首次使用会下载识别模型（28 MB 或 77 MB）。
 - [kinglhy2006/dsh-voice-bridge](https://github.com/kinglhy2006/dsh-voice-bridge) — Windows 上的免手语音：本地唤醒词、本地中文识别自动填入并发送、回答语音朗读，可打断与续播。需先运行仓库自带的 install.ps1（安装 Python 语音依赖并选定麦克风），并准备 SenseVoice 识别模型（跑一次 DSH 语音输入让它自动下载，或放到 models/sensevoice-onnx）。
+- [kkmingjun/dsh-kingspeak](https://github.com/kkmingjun/dsh-kingspeak) — 语音听写文本板：边说边出字，生成按会话隔离的时间戳文本块，一键加入会话输入框。
 - [Laplace-bit/dsh-pianist](https://github.com/Laplace-bit/dsh-pianist) — 让 Agent 弹一曲真钢琴：Salamander Grand 真实采样音色，Canvas2D 三角钢琴与沉浸式舞台渲染，88 键可弹。
 - [ldchaowin/dsh-plugin-notify-sound](https://github.com/ldchaowin/dsh-plugin-notify-sound) — 按工作区定制的任务完成铃声，以及审批、提问、计划评审、目标受阻、任务失败等需要人介入事件的注意提示音，支持内置合成音、语音播报与自定义音频。
 - [lengmodkx/dsh-mimo-tts](https://github.com/lengmodkx/dsh-mimo-tts) — 给 DeepSeek Harness 的小米 MiMo 语音插件：把每段回答念出来、把输入框里的口述变成文字，带 9 个内置音色和一个克隆音色槽位。
@@ -9801,6 +9804,7 @@ dsh plugin --profile web add dshmarket
 - [xkk6663/dsh-live2d-mao#dsh-live2d-mao](https://github.com/xkk6663/dsh-live2d-mao/tree/main/packages/dsh-live2d-mao) — 连接器，本身不渲染任何东西：订阅 DeepSeek Harness 的会话事件，折叠成 12 态工作状态（规划 / 思考中 / 执行工具 / 回复中 / 聆听中 / 语音播报 / 待确认 / 完成 / 出错 / 暂停 / 待机 / 在线），再逐条 POST 到桌宠后端的 /api/plugin/dsh/ingest。不持有窗口，无需 API Key 或 token。使用前须另行安装并启动 Mao Live2D 桌宠应用（该应用是 Windows Electron 程序，自身要求 PowerShell 7 / Python 3.10+ / Node 18+）；没有它，本插件没有可推送的对象。
 - [xling001/dsh-reading-companion](https://github.com/xling001/dsh-reading-companion) — 右侧栏本地 TXT 阅读器 + 不剧透的 AI 陪读：模型只能看到你已经读到的部分（本章全文、上一章结尾，以及随进度增量补齐的背景认识）；摘抄、感想与 AI 回应写成结构化 Markdown 笔记，可导出到 Obsidian。只有你标记「已读完」的那一本才向它放开原文。
 - [xrn1997/dsh-novel](https://github.com/xrn1997/dsh-novel) — 在 DSH Web GUI 里读网络小说：导入 legado 书源、跨源搜索、带进度的书架、连续滚动阅读、导入本地 TXT 与 EPUB，并让 AI 助手工具接到同一套书源、书架与正文上。
+- [xxxiii/dsh-fish-dream](https://github.com/xxxiii/dsh-fish-dream) — 给 dsh-fish 里的她做梦：安静够久之后，从她真实的事件流里挑碎片，按六种梦理论之一拼成「梦的种子」，她自己把梦写完。提供三个工具（dream_recall、dream_record、dream_now），插件自己不调用模型，数据放在 ~/.dsh-fish-dream。梦只能用真实发生过的事重拼，理论只决定怎么拼。
 - [Yang-wudi/dsh-kun-like-pet#kunpet-dsh](https://github.com/Yang-wudi/dsh-kun-like-pet/tree/main/packages/kunpet-dsh) — 住在 DSH Web 界面右下角的坤坤桌宠：随 Agent 状态切换动作，任务完成时播放「你干嘛~哎哟」。
 - [yimeng-life/dsh-happy](https://github.com/yimeng-life/dsh-happy) — 给 DSH 对话区加十种整屏动效背景——星空、代码雨、电路、华山论剑、小猫、小女生、飞机大战、赛车、飘雪、肥皂泡；每回合随机一个，正文列有纱罩保证可读。
 - [yizhuzhu-glitch/dsh-pet-mic-lite](https://github.com/yizhuzhu-glitch/dsh-pet-mic-lite) — 麦克风识别「摸摸」动作，只把今天被摸了几次写进本地 JSON 文件，供桌面宠物读取。
