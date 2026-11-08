@@ -1,0 +1,5 @@
+url: https://github.com/dev-cmde/dsh-plugins/tree/main/routerai-balance
+name: dev-cmde/dsh-plugins#routerai-balance
+category: usage
+description:
+  en: 'Shows the RouterAI credit balance and period spend in the sidebar footer.'

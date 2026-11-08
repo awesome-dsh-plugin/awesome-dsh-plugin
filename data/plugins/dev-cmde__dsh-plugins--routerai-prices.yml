@@ -1,0 +1,5 @@
+url: https://github.com/dev-cmde/dsh-plugins/tree/main/routerai-prices
+name: dev-cmde/dsh-plugins#routerai-prices
+category: model
+description:
+  en: 'Lists RouterAI prompt and completion prices for the profile models, highlighting the active one.'
