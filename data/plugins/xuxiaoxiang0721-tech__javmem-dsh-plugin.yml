@@ -1,0 +1,7 @@
+url: https://github.com/xuxiaoxiang0721-tech/javmem-dsh-plugin
+name: xuxiaoxiang0721-tech/javmem-dsh-plugin
+category: memory
+tarball: https://github.com/xuxiaoxiang0721-tech/javmem-dsh-plugin/releases/latest/download/javmem-dsh-plugin.tgz
+description:
+  en: 'Per-Bot memory for Tobs Bots (requires DeepSeek Harness with @botharness/core; it ships off with no Bots listed, and after you list a Bot and set mode to on it works with no other service): a read-only local full-text index of that Bot''s own past conversations (Chinese words found inside sentences), memory imported from other AI tools, a status tool, optional auto recall before a step in which a Human speaks, and a service for other plugins. Richer backends can be chosen at install, with a quote first and a daily token cap: a public fact store (memv2-lite), the official Graphiti graph, or both, fed from the Bot''s own conversations.'
+  zh: '给 Tobs Bot 的按 Bot 隔离的记忆（需带 @botharness/core 的 DeepSeek Harness；插件默认关闭、不列任何 Bot，在配置里列出 Bot 并把 mode 设为 on 后无需其它服务）：只读地把该 Bot 自己的历史对话建成本地全文索引（中文词在整句里也能搜到），可导入从别的 AI 工具继承来的记忆，带状态工具、可选的自动召回（只在真人发言时）和给其他插件用的接口。安装时还可以选更立体的后端（先报价、每天有上限）：公开的事实库（memv2 精简版）、Graphiti 官方图谱，或两个一起，都从 Bot 自己的对话里抽取。'
