@@ -1,0 +1,7 @@
+url: https://github.com/Chenghui-Liang/dsh-web-pick
+name: Chenghui-Liang/dsh-web-pick
+category: browser
+description:
+  en: 'Adds an element and region picker to the DSH Desktop built-in browser: hovering labels the element under the pointer, a click records that element, a drag records a rectangle, each pick opens a small note box beside the pick, and the batch of picks is sent into the current conversation as one message with one cropped screenshot per item (up to six). Picks persist per page in sessionStorage. Desktop only: the Web profile browser is an iframe, so the picker does not appear there.'
+  zh: '在 DSH 桌面版内置浏览器里加一个元素 / 区域选取层：悬停显示所指元素，点选记下元素、拖框记下矩形，每条当场在选取框旁弹小卡片写说明；整批连每条一张裁剪截图（最多 6 张）作为一条消息发进当前对话。选取按页面存在 sessionStorage 里。仅桌面版可用：Web 版浏览器是 iframe，选取层不会出现。'
+icon: https://raw.githubusercontent.com/Chenghui-Liang/dsh-web-pick/main/assets/icon-180.png
