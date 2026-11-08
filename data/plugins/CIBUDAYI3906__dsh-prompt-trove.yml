@@ -1,0 +1,9 @@
+# Copy this file into a fork of awesome-dsh-plugin at data/plugins/ and open a PR.
+# The file name must be <GitHub owner>__<repo>.yml; one plugin per PR.
+url: https://github.com/CIBUDAYI3906/dsh-prompt-trove
+name: CIBUDAYI3906/dsh-prompt-trove
+category: ui
+description:
+  en: 'Composer prompt library: reusable project and global prompts are stored as Markdown files and appended to the draft on click or @ mention.'
+  zh: '输入框常用提示词库：项目和全局两层 Markdown 提示词，点一下或 @ 触发追加进草稿，不覆盖已写内容。'
+icon: https://raw.githubusercontent.com/CIBUDAYI3906/dsh-prompt-trove/main/icon.png
