@@ -2433,6 +2433,7 @@ dsh plugin --profile web add dshmarket
 - [Vast-Unhurried/dsh-toolkit#dsh-api-balance](https://github.com/Vast-Unhurried/dsh-toolkit/tree/main/packages/dsh-api-balance) — 在会话界面里直接显示 DeepSeek API 余额与每轮对话花费。
 - [vcve/dsh-glm-balance](https://github.com/vcve/dsh-glm-balance) — 在输入框下方常驻显示智谱 GLM Coding Plan 余量，含 5 小时/每周额度、重置时间、MCP 调用量与今日用量，并附 glm_balance 查询工具。
 - [vegerot/deepseek-harness-session-cost-pill](https://github.com/vegerot/deepseek-harness-session-cost-pill) — 在输入框底栏显示当前会话的预估花费，每一步都按其自身时间戳采用 DeepSeek 的峰时或非峰时单价计价。
+- [Verchiel666/dsh-usage-android](https://github.com/Verchiel666/dsh-usage-android) — 以 host 侧工具统计 DSH 会话 token 用量，数据取自本地会话日志：总量、输入、输出与缓存读取拆分、按天时间线、按天或按会话分组的用量，以及可选成本估算。
 - [verneuil/dsh-opencode-go-usage](https://github.com/verneuil/dsh-opencode-go-usage) — DSH 悬浮窗：三环显示 OpenCode Go 的 5 小时 / 本周 / 本月用量，支持自动计算模型配额剩余，可选同时显示 DeepSeek 账户余额；极简模式把三环嵌套显示并支持自定义外 / 中 / 内环数据与实时预览。
 - [vibeinging/dsh-agent-budget](https://github.com/vibeinging/dsh-agent-budget) — agent 树 token 预算管理。
 - [vinyumao/dsh-opencode-usage](https://github.com/vinyumao/dsh-opencode-usage) — OpenCode Go 套餐用量显示：输入框下方常驻徽章显示滚动 / 每周 / 每月用量百分比与重置倒计时，点击展开进度卡片；Agent 可经 `opencode_go_usage` 工具随时查询余额。
@@ -5343,7 +5344,7 @@ dsh plugin --profile web add dshmarket
 - [lznnnnn1998/dsh-artcraft#plugin-wordcraft](https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-wordcraft) — 让智能体驱动 WordCraft：新建文档、插入并排版文字、构建表格与页眉、跟踪修订与批注，并保存为 DOCX 或转换为 PDF、ODT、RTF、Markdown 等。暴露 WordCraft 的命令 id 与自带的 MCP server。需本机安装对应的 ArtCraft 应用 CLI，插件不附带应用本体。
 - [lznnnnn1998/dsh-artcraft#preview-panel](https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/preview-panel) — 在 DSH Web GUI 内的 ArtCraft 实时预览面板：智能体步骤流、当前渲染、历史步骤胶片条，以及时间轴类应用的时间轴，数据来自各 craft 插件生成的渲染图。
 - [lzszq/dsh-scholar](https://github.com/lzszq/dsh-scholar) — 学术助手插件。
-- [lzyxczw-cyber/dafish-clean](https://github.com/lzyxczw-cyber/dafish-clean) — 非官方 Mole CLI 图形面板（macOS）：实时系统状态、清理预览与二次确认、磁盘分析、应用清单、系统维护、清理历史，并内置 Homebrew 安装引导。
+- [lzyxczw-cyber/dafish-clean](https://github.com/lzyxczw-cyber/dafish-clean) — 大肥鱼 clean —— 非官方 Mole CLI 图形面板（macOS）：实时系统状态、清理预览与二次确认、磁盘分析、应用清单、系统维护、清理历史，并内置 Mole CLI 安装引导。
 - [m1452700576/dsh-app-updater](https://github.com/m1452700576/dsh-app-updater) — 侧边栏按钮：启动时自动检查DSH更新并显示红点提示，支持忽略特定版本、预览更新日志，带实时下载进度、国内镜像加速和下载安全校验。
 - [m1khal3v/dsh-tool-codegraph](https://github.com/m1khal3v/dsh-tool-codegraph) — 将 colbymchenry/codegraph 封装到代理工具中 - status、search、callers/callees、impact、explore 等等。
 - [M1r0er/dsh-modpack](https://github.com/M1r0er/dsh-modpack) — PCL 式 DSH 整合包：勾选已安装插件导出小体积 .dshpack.zip 与安装命令串，导入时先预览、确认后再按版本重新安装。
@@ -8589,6 +8590,8 @@ dsh plugin --profile web add dshmarket
 - [TwinsEarth/DSH-2Xray](https://github.com/TwinsEarth/DSH-2Xray) — 为 DSH 提供 Xray 受管内核与分流：VLESS 导入、全局/国内直连/白名单路由、三卡片实时面板与自更新。
 - [TwinsEarth/dsh-fang](https://github.com/TwinsEarth/dsh-fang) — 为 DeepSeek Harness 插件开发与测试提供母体、元主、分身隔离工作区。
 - [ven314/dsh-conflict-doctor](https://github.com/ven314/dsh-conflict-doctor) — DSH 插件冲突诊断与修复建议。把运行期能力图谱与磁盘上的 cordis.patch.yml 层对齐，并与真正在运行的宿主（而不是 profile 里可能过期的副本）比对导入、peer 范围与配置，检出那些不会自己报错的静默故障：卡在 PENDING 等待无人提供的服务、浏览器半区注入了无人提供的客户端模块、两个插件注册同一个 tool id、Loader entry id 重复、某层停用又被后一层重新插入的行、导入了运行宿主未通过 exports 暴露的子路径、以及 inject 声明之间成环。每条结论都带证据、归属置信度与带风险分级的修复：用 --dry-run 在内存里试修并看修改前后差异，或用 --fix-out 拿到独立的 .patch.yml 文件自己挑（这些文件不会被 DSH 加载，挑错也不影响运行）。
+- [Verchiel666/dsh-aosp](https://github.com/Verchiel666/dsh-aosp) — 从 codeload 拉 AOSP 源码快照，在本机用 ripgrep 检索，九个工具覆盖镜像列表、预设包、拉取、增量更新、跨模块正则搜索、启发式调用链追踪与按行读取，不需要 git、root 或编译。
+- [Verchiel666/dsh-termux](https://github.com/Verchiel666/dsh-termux) — 在 DSH 内部安装并运行 Android 原生命令行工具：从 Termux 仓库取 aarch64 bionic 包、纯 JS 解包，再经 /system/bin/linker64 执行，无需 root、Shizuku 或外部包管理器。
 - [vibeinging/dsh-trace](https://github.com/vibeinging/dsh-trace) — 遥测后端：把 turns、model steps、tool calls 导出到 yiTrace。
 - [viogus/dsh-rtk](https://github.com/viogus/dsh-rtk) — 把符合条件的 bash 命令交给 rtk（Rust Token Killer）执行，让工具输出在进入模型之前就被压缩：插件调用本机 rtk 重写命令并采纳其结果；rtk 未安装时，执行器行为与原生完全一致。
 - [walksls/dsh-degeneration-kit#thinking-guard](https://github.com/walksls/dsh-degeneration-kit/tree/main/thinking-guard) — 把退化的思考复读从模型可见历史里折叠掉，下一轮不再回传上游。能识别两种形态——同一句反复死磕、以及短句轮换——并对命中的那段做等价替换；配套的急停阀则对停不下来的回合当场中止。
