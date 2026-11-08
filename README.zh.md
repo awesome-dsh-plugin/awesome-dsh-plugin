@@ -5500,11 +5500,14 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-fund-research](https://github.com/PerryLink/dsh-fund-research) — 中国公募基金确定性研究报告：采集天天基金/东方财富公开数据，纯函数计算业绩拆解、持仓穿透、风格归因与经理画像，输出带逐数字可溯源快照附录的版本化报告。
 - [PerryLink/dsh-gongwen-word-check](https://github.com/PerryLink/dsh-gongwen-word-check) — 依据公开的党政机关公文格式标准，核对公文的文种与发文字号——包括年份所用的括号形式与编号格式。只报告与格式不符之处，不评价公文内容。
 - [PerryLink/dsh-hazchem-check](https://github.com/PerryLink/dsh-hazchem-check) — 核对危险化学品台账的内部自洽性：每种物质是否载明危险性类别、储存量能否解析、是否记录临界量、重大危险源判定与该储存量相对台账自述临界量的关系是否一致、是否载明安全技术说明书编号、CAS 号是否重复。只列出差异供人复核，不判定某单元是否构成重大危险源。
+- [PerryLink/dsh-hs-classify](https://github.com/PerryLink/dsh-hs-classify) — HS 编码归类层级一致性核对：章、品目、子目与商品编号层级。
 - [PerryLink/dsh-icd-rule-check](https://github.com/PerryLink/dsh-icd-rule-check) — 依据 GB/T 14396-2016 与公开的 ICD 使用说明，提示需要编码员关注的 ICD 编码配对——剑号与星号组合、合并编码。只报告发现的配对，不代为判定，编码结论仍由编码员作出。
 - [PerryLink/dsh-invoice-ledger](https://github.com/PerryLink/dsh-invoice-ledger) — 核对发票台账：按代码与号码识别重复、核对算式一致性、付款方不一致、日期异常与模板占位符，输出异常清单与工作簿。
 - [PerryLink/dsh-laya](https://github.com/PerryLink/dsh-laya) — 把 Laya 的有类型决策（`noul` 是/否、`choice`、`score`）接成一等 Cordis 服务（`ctx.laya`）与两个模型可见工具 `laya_ask`、`laya_plan`。插件自身不安装也不下载任何东西：它是你自己启动的 `laya-mcp serve` 边车的客户端，边车未运行时会明确报出，而不是在首次工具调用时隐晦失败。
+- [PerryLink/dsh-lc-doc-check](https://github.com/PerryLink/dsh-lc-doc-check) — 信用证单据与 UCP600 不符点核对。
 - [PerryLink/dsh-lsp-actions](https://github.com/PerryLink/dsh-lsp-actions) — DSH 的 LSP 动作面：诊断、格式化、补全、代码动作、符号、签名提示、inlay 提示与重命名，全部由真实语言服务器驱动。
 - [PerryLink/dsh-medrec-qc](https://github.com/PerryLink/dsh-medrec-qc) — 依据国卫办医发〔2016〕24号等公开文件，核对病案首页各字段的齐备性与字段间的逻辑矛盾。列出缺失或不一致之处供人复核，不评价临床正确性。
+- [PerryLink/dsh-nsfc-form-check](https://github.com/PerryLink/dsh-nsfc-form-check) — 国自然申请书形式审查与匿名化核对。
 - [PerryLink/dsh-nurse-record-check](https://github.com/PerryLink/dsh-nurse-record-check) — 依据《病历书写基本规范》等公开文件，核对护理记录的书写时限、签名，以及评估表的完整性。列出缺失或次序不符之处供人复核。
 - [PerryLink/dsh-payroll-audit](https://github.com/PerryLink/dsh-payroll-audit) — 按公开的社保、公积金与个人所得税参数核对工资表，结果分为 pass、pass_with_gaps、review、fail 四档；参数本身带复核日期。
 - [PerryLink/dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) — 本地非生成式决策层：phocinae_ask 与 phocinae_gate 由小型决策模型返回带校准置信度的类型化裁决，并对无法回答的情况 fail-closed 升级。需在本机 8155 端口运行 phocinae-server（pip 安装）并加载 Phocinae-Largha-150M-v1 模型。
@@ -6711,6 +6714,7 @@ dsh plugin --profile web add dshmarket
 - [SuperstructureJH/dsh-workbuddy-ppt](https://github.com/SuperstructureJH/dsh-workbuddy-ppt) — 在 DSH 中使用包内编排 Skill、确定性 PPTD 场景检查和原生 PowerPoint 对象生成可编辑 PPTX，并在本地交付 PPTD 源项目。
 - [Suren-ViLL/dsh-plugin-doc-review](https://github.com/Suren-ViLL/dsh-plugin-doc-review) — 在官方预览里审阅 Word、PowerPoint、PDF 与 HTML：框选问题、就地改字，再把批注交给 AI。PDF 与图片仅可批注；改字依赖 Harness 自带的 LibreOffice 与 Python。
 - [taoziliyouchong/dsh-pdf-jump](https://github.com/taoziliyouchong/dsh-pdf-jump) — 在 DSH 侧栏里看本地 PDF：跳到任意一页，整本连着看。
+- [teanuky/dsh-textbook-parser](https://github.com/teanuky/dsh-textbook-parser) — 把理工科教材拆成「全书、章、节、知识点」四层卡片知识地图（侧边栏面板）：每个知识点写明它修复了前方案的什么缺陷，每章用「仍存短板」作为下一章的动机；重点知识点标 ★，定理以卡片呈现（结论／适用条件／符号说明），推导过程可折叠，并可将同一张地图导出为离线自包含 HTML、Word 或 PDF。内置 textbook-parser 技能与 textbook_archive 工具（save_book／save_chapter／list_books／get_book／delete_book），附带《信号与系统》12 章示例（116 节、263 个知识点、601 道例题）。零运行时依赖、不联网。
 - [tokenaissance/dsh-excalidraw](https://github.com/tokenaissance/dsh-excalidraw) — 在 DSH 里渲染 Excalidraw 架构图：可无账号导入本地 .excalidraw/.json 或内联文档，也可通过 MCP 从 Excalidraw+ 刷新（刷新需在 mcpToken 或 EXCALIDRAW_MCP_TOKEN 里配置 Excalidraw+ 的 MCP 令牌）；支持平移、缩放、选中与 SVG/PNG 导出。
 - [tt-a1i/archify#integrations/deepseek-harness](https://github.com/tt-a1i/archify/tree/main/integrations/deepseek-harness) — 从仓库或系统描述生成经过校验的自包含交互式架构图、流程图、时序图、数据流图和生命周期图。
 - [tylina/dsh-tylina#bundle-wasm](https://github.com/tylina/dsh-tylina/tree/main/bundle-wasm) — Typst 文档编辑工具：WYSIWYG 编辑排版论文、报告、试卷、简历、图表、海报、乐谱和可导出为 PPTX 的 Slides。
@@ -6910,6 +6914,7 @@ dsh plugin --profile web add dshmarket
 - [LittleBlackTong/dsh-plugin-superpowers](https://github.com/LittleBlackTong/dsh-plugin-superpowers) — 将 obra/superpowers 方法论移植为 14 个原生 DSH 技能——头脑风暴、写计划、计划执行、subagent 驱动开发、TDD、系统化调试、并行派发、git worktree、代码评审、完成前验证、技能编写——经 DSH 技能注册表提供，脚本、参考资料与交叉引用原样保留（frontmatter 收进 manifest、前缀对齐 DSH 技能名）。要求 DSH session format v4（官方 DeepSeek Harness 0.1.7+）：/superpowers 斜杠命令使用 producer-owned source kind plugin:dsh-plugin-superpowers。
 - [liu-Daniel7/search-school-sci-skill](https://github.com/liu-Daniel7/search-school-sci-skill) — 统计某一所大学某个学院（二级单位）的科研产出：按作者单位串匹配学院的各种英文写法（并检测其他高校的同名院系），对只写到校名一级的论文用教师作者 ID 反查补全，再按期刊层级分类（中科院分区含 Top 标记、JCR 分区、CCF、经知网导出合并的中文核心），区分教师与学生一作，输出含看板页、可筛选论文清单、教师-方向矩阵和教师个人统计的工作簿。学生身份由单位与教师名单推定，未与学籍核对。需 Python 3.9+ 与 pandas、openpyxl（pip install -r requirements.txt）；题录走 OpenAlex 接口（按 IP 计的免费额度有限），中文期刊需人工从知网导出后合并。
 - [liuli-zsl/dsh-unreal-engine-skills](https://github.com/liuli-zsl/dsh-unreal-engine-skills) — 注册 Epic 的 Unreal Engine 三个技能（unreal-mcp、create-toolset、unreal-skill），注入 UE 工程上下文，接通编辑器的 ModelContextProtocol 服务器，并支持在插件页修改端口。
+- [ljttt0824/dsh-career-kb](https://github.com/ljttt0824/dsh-career-kb) — 职业生涯知识库：六大模块 + 十项技能，支持全库巡检、存入与导入、JD 简历、面试准备与复盘，并对接飞书。
 - [lnsdlszsqxxx/dsh-courseware](https://github.com/lnsdlszsqxxx/dsh-courseware) — 拿用户自己的 .pptx 模板 + 一份课程大纲（教案/文档/纯文本），产出套用该模板背景、配色、字体、页面骨架的课件 .pptx。纯插件包，无内置密钥，图片后端需用户自行配置。
 - [Lohaslee/dsh-super-pm](https://github.com/Lohaslee/dsh-super-pm) — DeepSeek Harness 的产品思考助手：先明确负向边界，拆开事实与假设，经七套产品视角讨论取舍，并将确认的决策沉淀到项目记忆中。
 - [Lovenndme/dsh-skill-panel](https://github.com/Lovenndme/dsh-skill-panel) — DeepSeek Harness 的技能管理面板（设置 → 技能）：按全局 / 本项目两组列出技能，标注 DSH 是否真的加载了它；一个启用开关同时控制模型与 /命令 调用；用聊天界面同款 Markdown 渲染器预览并编辑 SKILL.md；支持新建、从文件夹或 zip 导入、删除到回收目录。只读写本机技能目录（~/.dsh/skills 与 <项目>/.dsh/skills），宿主路由走 DSH 的 Connection 信任围栏；不上报数据、无外发请求、不碰凭据。
