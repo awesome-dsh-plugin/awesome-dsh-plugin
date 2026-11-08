@@ -2,6 +2,6 @@ url: https://github.com/doombeaker/dsh-bizyair
 name: doombeaker/dsh-bizyair
 category: model
 description:
-  en: "Run 235 BizyAir image, video, audio and vision models from chat (213 enabled by default), with parameter schemas, cost estimates, approval gates and a task panel."
-  zh: "在对话里调用 BizyAir 的 235 个图像、视频、音频与视觉模型（默认启用 213 个），含参数 schema、费用预估、审批与任务面板。"
+  en: "AI creation inside DeepSeek Harness: run BizyAir image, video, audio and 3D models from chat, with parameter schemas, cost estimates, approval gates and a task panel."
+  zh: "在 DeepSeek Harness 里完成 AI 创作：直接运行 BizyAir 的图像、视频、音频与 3D 模型，带参数 schema、费用预估、审批与任务面板。"
 icon: https://raw.githubusercontent.com/doombeaker/dsh-bizyair/main/assets/icon-180.png
