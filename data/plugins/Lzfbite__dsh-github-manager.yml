@@ -1,0 +1,8 @@
+url: https://github.com/Lzfbite/dsh-github-manager
+name: dsh-github-manager
+category: git
+icon: https://raw.githubusercontent.com/Lzfbite/dsh-github-manager/main/icon.png
+tarball: https://github.com/Lzfbite/dsh-github-manager/releases/download/v1.0.0/dsh-github-manager-1.0.0.tgz
+description:
+  en: "Operate GitHub for real instead of read-only: create and manage repositories, read and write files, clone/commit/push actual code with your local git, open pull requests and issues, and search. The token goes into DSH's credential store, never into config, and git authenticates through a one-shot header so it never lands in the remote URL."
+  zh: "在 DSH 里真正管理 GitHub，而不只是只读浏览：建仓库、读写文件、用本机 git clone / 提交 / 推送真实代码、开 PR 和 issue、搜索。token 只进 DSH 的 credential store，不写进配置；git 认证走一次性 header，不会留在 remote URL 里。"
