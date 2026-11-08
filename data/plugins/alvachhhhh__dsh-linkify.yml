@@ -1,0 +1,6 @@
+url: https://github.com/alvachhhhh/dsh-linkify
+name: alvachhhhh/dsh-linkify
+category: ui
+description:
+  en: "Turns markdown links and bare URLs in the messages you send into clickable links, and keeps hyperlinks when pasting rich text by converting them to markdown instead of dropping the URL."
+  zh: "把你自己消息里的 markdown 链接和裸 URL 显示成可点击链接，并在粘贴富文本时把超链接转成 markdown，而不是丢掉链接地址。"
