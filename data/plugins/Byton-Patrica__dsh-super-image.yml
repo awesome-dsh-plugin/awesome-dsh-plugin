@@ -1,0 +1,7 @@
+url: https://github.com/Byton-Patrica/dsh-super-image
+name: Byton-Patrica/dsh-super-image
+category: vision
+description:
+  en: 'Generates images in parallel with two configurable OpenAI Images-compatible or ComfyUI backends, compares the candidates, and optionally fuses them.'
+  zh: '通过两个独立配置的 OpenAI Images 兼容或 ComfyUI 后端并行生成图像，比较候选图并可选择融合。'
+tarball: https://github.com/Byton-Patrica/dsh-super-image/releases/download/v0.1.3/dsh-super-image-0.1.3.tgz
