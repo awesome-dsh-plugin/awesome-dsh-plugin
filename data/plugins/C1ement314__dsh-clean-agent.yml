@@ -1,0 +1,6 @@
+url: https://github.com/C1ement314/dsh-clean-agent
+name: C1ement314/dsh-clean-agent
+category: tools
+description:
+  en: 'Cleanup Mode agent preset for DSH: read-only scans of leftovers (including duplicate detection), a manifest before anything is deleted, trash-first removal only after confirmation, and a per-session audit log. Cleaning outside the workspace requires a danger-full-access session; under workspace-write it can only inspect and will ask you to raise the permission.'
+  zh: 'DSH 清理模式 agent 预设：只读扫描残留（含重复文件检测），删除前先出清单，确认后优先移入回收站，并按会话写审计记录。清理工作区之外的位置需要 danger-full-access 会话；workspace-write 下只能检查并会提示你提升权限。'
