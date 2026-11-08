@@ -197,6 +197,7 @@ dsh plugin --profile web add dshmarket
 - [534119219/chicheng-peak](https://github.com/534119219/chicheng-peak) — DeepSeek 峰谷提醒：贴屏呼吸边框（高峰橙/低峰蓝）、流光效果与消息推送提醒。
 - [534119219/chicheng-quickinput](https://github.com/534119219/chicheng-quickinput) — 输入栏旁的保险箱按钮：保存密钥、服务器、手机号、地址与网址，自动识别会话中的敏感信息提醒收录，密码保护并支持 WebDAV 备份；点击填入输入框，Ctrl+点击直接发送。
 - [535408248-oss/dsh-douyin-webview](https://github.com/535408248-oss/dsh-douyin-webview) — DSH 侧栏底部的内嵌抖音窗口：用 Electron webview 租约绕过 douyin.com 的 X-Frame-Options: DENY。仅桌面版。
+- [64511982lin-hash/dsh-swap-enter](https://github.com/64511982lin-hash/dsh-swap-enter) — 交换聊天输入框的 Enter 与 Shift+Enter：Enter 换行，Shift+Enter 发送。无需任何配置；菜单打开、输入法组合中、只读状态以及带修饰键的按键仍交给系统原有处理。
 - [654970/dsh-typing-studio](https://github.com/654970/dsh-typing-studio) — 中英双语打字练习，提供计时短文、输入法友好评分、逐字反馈和本地记录。
 - [6pofx/dsh-tool-explorer](https://github.com/6pofx/dsh-tool-explorer) — 设置面板里的技能与 MCP 管理控制台：跨全部来源合并的技能目录（按来源分级浏览、在线新建与编辑、模型 / 用户调用独立开关、可恢复回收站）、GitHub 安装（多选批量安装、检查更新）、通过 profile patch 层增删改与启停 MCP 服务器、从 Claude Code / Cursor / Codex / Cline / Roo Code / Continue / Windsurf 一键导入，以及独立的 SDK 连通性探测。
 - [6shenhonghong9/dsh-startup-screen](https://github.com/6shenhonghong9/dsh-startup-screen) — 莱茵生命风格的 DeepSeek Harness 启动动画：黑幕标识 → 过曝洗白 → 暖白档案底板 → 五步访问授权（前两步可设为等点击/回车，Esc 可跳过）→ 色散揭幕，前五句为真声台词；设置页提供暖白/暗色两套主题，并可实时调整播放、身份、语音与视觉等 33 项参数。
@@ -2348,6 +2349,7 @@ dsh plugin --profile web add dshmarket
 - [PolinniZhong/dsh-personal-center](https://github.com/PolinniZhong/dsh-personal-center) — DeepSeek Harness 个人中心：跨会话用量统计（按供应商/模型分别统计，自动读取已配置模型）、按模型成本估算、全局自定义指令、数据驱动的桌面宠物（位图/矢量皮肤）与会话状态概览，纯本地离线运行。
 - [Polyaris-0413/dsh-balance-cmd](https://github.com/Polyaris-0413/dsh-balance-cmd) — 一个通过命令查询余额、打开充值页的 dsh 插件。
 - [pythoner1984/dsh-plugin-openai-quota](https://github.com/pythoner1984/dsh-plugin-openai-quota) — 在 DSH 窗口顶部边缘用一行提示显示 DeepSeek 余额、ChatGPT/Codex 五小时与每周剩余额度及其重置时间、剩余额度重置卡数量与最近到期时间；重置卡那一段是链接，会用浏览器打开 ChatGPT 使用情况页。
+- [qcy-good/turn-cost-footer](https://github.com/qcy-good/turn-cost-footer) — 在 DeepSeek Harness 每条助手回复的页脚、时间之后显示本轮真实花费与今日累计：按会话日志里的用量和本地价目表折算，不调计费接口、不联网、也不额外消耗 token。
 - [qiyuexue-xiyu/dsh-tool-cost-hint](https://github.com/qiyuexue-xiyu/dsh-tool-cost-hint) — 每轮对话结束后在回复底部追加一行可折叠提示：列出这一轮调用了哪些工具、各几次、每个工具往上下文注入了多少 token（输入加输出），点开可看逐工具明细。
 - [qwert702/dsh-token-viewer](https://github.com/qwert702/dsh-token-viewer) — dsh 网页端 CC Switch 风格 Token 消耗统计：按请求的用量日志、真实消耗 Hero、按请求提交时间分桶的趋势图、按模型峰谷牌价计费、项目/模型统计与账户余额。
 - [Rannist/balance-dsh](https://github.com/Rannist/balance-dsh) — 在侧边栏底部和输入框上方显示你的 DeepSeek 账户余额与当前会话 token 及费用消耗，支持高峰/空闲峰谷计费与子代理消耗统计。
@@ -3451,6 +3453,7 @@ dsh plugin --profile web add dshmarket
 - [MengYuil/dsh-ponytail](https://github.com/MengYuil/dsh-ponytail) — ponytail 移植：常驻的「懒惰资深开发者」编码人设，带强度档位与 review、audit、debt、gain、help 技能，适用于 DeepSeek Harness。
 - [moon-lzy/dsh-starpost](https://github.com/moon-lzy/dsh-starpost) — 星邮是给 AI bot 用的社交平台：一个 bot 一个账号，能加好友、建群、发动态评论、逛广场、扔漂流瓶、约一局预约制狼人杀，还带每日聊天额度和重复句式限制。本包是星邮在 DeepSeek Harness 上的客户端：17 个工具覆盖上面这些功能，收到的事件按可配置间隔（默认 20 秒）合并成一条提示注入会话，回复走同一套工具。需要自备星邮账号，首次运行在插件面板里注册。由 hth768 的 MIT 项目 cortico-world-starpost 移植而来（源码在 vendor/ 下），不能与上游 Coo 扩展同装。
 - [muretai/muretai-dsh-skill](https://github.com/muretai/muretai-dsh-skill) — 让智能体加入 Muretai 网络：拥有自己的身份，通过邀请相识，与属于其他人的智能体进行签名、端到端加密的通信；来信唤醒后可自行回复。
+- [mutexz/dsh-myself-preset](https://github.com/mutexz/dsh-myself-preset) — 语感花房是 DSH 的个人语气工作台：把你自己写的语料和纠正变成可解释的本地风格规则，可选当前模型深读，编译成按会话选用的 preset；改完在该会话的下一句话生效。
 - [MycatQieZi/dsh-persona-shaoxin](https://github.com/MycatQieZi/dsh-persona-shaoxin) — 把写在 Markdown 里的人设挂载成系统提示词段落：改 `~/.dsh/persona/*.md` 即可改变回答风格，保存后 150 毫秒自动重载而无需重启，项目级 `.dsh/persona/` 下的同名文件覆盖全局配置。
 - [Najiya5/dsh-fish-reflection](https://github.com/Najiya5/dsh-fish-reflection) — 给 DSH 主会话的人格反思层：每日把对话与视频素材沉淀成 3–7 条分层原则，跟踪精神、健康与账户余额，并保留可审计的成长档案；视频摄入为可选项，需站点 Cookie，抖音解析另需 Edge/Chrome 与 yt-dlp。
 - [Nero0427/dsh-purge-lite](https://github.com/Nero0427/dsh-purge-lite) — HunYiSage/dsh-purge（原 YuJunZhiXue/dsh-purge）的精简衍生版——不要与上游同装：两者使用同一个 `dsh-purge` 包名与行 id。功能为 DeepSeek Harness 提示词注入与宿主补丁，提供可逆补丁、/purge 命令、命令行与 HTTP 状态接口。
