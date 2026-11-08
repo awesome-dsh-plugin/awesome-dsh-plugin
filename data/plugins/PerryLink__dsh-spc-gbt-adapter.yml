@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-spc-gbt-adapter
+name: PerryLink/dsh-spc-gbt-adapter
+category: tools
+description:
+  en: 'SPC control chart and Cpk check against the GB/T 4091 constants.'
+  zh: 'SPC 控制图控制限与 CPK 核对。'
