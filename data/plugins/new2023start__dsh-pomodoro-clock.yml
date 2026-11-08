@@ -1,0 +1,7 @@
+url: https://github.com/new2023start/dsh-pomodoro-clock
+name: new2023start/dsh-pomodoro-clock
+category: ui
+tarball: https://github.com/new2023start/dsh-pomodoro-clock/releases/download/v1.0.0/dsh-pomodoro-clock-1.0.0.tgz
+description:
+  en: "Pomodoro timer for the right sidebar: a draggable edge handle whose floating card follows it, one-shot or full cycle counting, and five synthesized cues including an airport-style announcement spoken aloud."
+  zh: "右侧栏番茄钟：可拖动的边缘把手，浮卡随把手移动；支持单次倒计时与番茄循环两种模式；五种内置提示音可切换，其中机场播报会用语音念出提示。"
