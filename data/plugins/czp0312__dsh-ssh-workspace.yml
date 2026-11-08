@@ -2,5 +2,5 @@ url: https://github.com/czp0312/dsh-ssh-workspace
 name: czp0312/dsh-ssh-workspace
 category: remote
 description:
-  en: 'Adds SSH and WSL projects to the native DSH sidebar in the current window, with connection status icons, password/key/certificate authentication, and switchable lightweight or full remote DSH modes.'
-  zh: '在当前 DSH 窗口的原生侧栏中添加 SSH / WSL 项目，支持连接状态图标、密码/密钥/证书认证，以及可切换的轻量连接和全量远程 DSH 模式。'
+  en: 'Adds SSH, WSL and Docker projects to the native DSH sidebar. Choose a local Agent with shared files or a full remote DSH backend, and selectively sync local Skills with difference previews and explicit updates.'
+  zh: '在当前 DSH 窗口的原生侧栏中添加 SSH / WSL / Docker 项目，支持轻量模式与全量远程 DSH、密码/密钥/证书认证，以及可勾选、比较差异和更新的本机 Skill 同步。'
