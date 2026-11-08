@@ -729,7 +729,7 @@ dsh plugin --profile web add dshmarket
 - [guoliyuan97-png/dsh-game-hud](https://github.com/guoliyuan97-png/dsh-game-hud) — 游戏风格悬浮 HUD：余额血条、上下文蓝条、官方峰谷定价与切换倒计时、上下文不足5%自动压缩、携带记忆开启新对话。
 - [H1Kariiiiiii/dsh-icon-console](https://github.com/H1Kariiiiiii/dsh-icon-console) — DSH 桌面端图标控制台：导入一个图标即可应用到桌面与开始菜单快捷方式（立即生效）、应用窗口图标与系统托盘图标（重启后生效），带官方图标自动备份、一键恢复、图标库管理，以及重启/退出控制。
 - [hadesybil-hub/dsh-restart-button](https://github.com/hadesybil-hub/dsh-restart-button) — 在 DSH 网页界面右下角"关机"按钮旁新增一个"重启"按钮，点击并确认后重启 dsh web，服务器自动拉起并重新打开浏览器。
-- [hahajing233-source/dsh-sticky-wall](https://github.com/hahajing233-source/dsh-sticky-wall) — 侧边栏里的便签墙：四种纸面、五种墨色、七种字体、四档字号，胶带或回形针或图钉固定，随手记下自动保存。
+- [hahajing233-source/dsh-sticky-wall](https://github.com/hahajing233-source/dsh-sticky-wall) — 侧边栏里的便签墙：五种纸面、五种墨色、七种字体、四档字号，图钉或胶带或回形针固定，随手记下自动保存。
 - [HAN-050917/dsh-plugin-dsweb-harness](https://github.com/HAN-050917/dsh-plugin-dsweb-harness) — 在 DSH 中使用 DeepSeek 网页版对话：最左侧边栏显示真实聊天记录，Agent 模式旁提供 Chat/Work 切换，支持流式回答、深度思考、网页搜索和文件上传。
 - [Han-1413141/dsh-jev-thinkout](https://github.com/Han-1413141/dsh-jev-thinkout) — 通过 JeV 筛选并外显思考中的任务规划、进展和阶段小结，支持轻量摘要、DSH 原生翻译（需 JeV Key，会外部调用 Jev 服务并可能计费）及父子任务、串并行流程图。
 - [Han-1413141/dsh-sticky-disclosure](https://github.com/Han-1413141/dsh-sticky-disclosure) — 一键收起会话中所有展开的区块（Think、工具卡等），常驻计数按钮 + 自定义快捷键。
