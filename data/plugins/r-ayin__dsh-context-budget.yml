@@ -1,0 +1,7 @@
+url: https://github.com/r-ayin/dsh-context-budget
+name: r-ayin/dsh-context-budget
+category: session
+description:
+  en: 'Ports the Codex CLI TokenBudget mechanism to dsh: remaining-context awareness, archive rollover, and notes/history retrieval tools for past sessions.'
+  zh: '移植 Codex TokenBudget 上下文机制：剩余上下文告知、归档换窗、旧会话 notes/history 检索工具。'
+tarball: https://github.com/r-ayin/dsh-context-budget/releases/download/v0.0.2/dsh-context-budget-0.0.2.tgz

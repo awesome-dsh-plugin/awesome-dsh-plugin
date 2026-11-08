@@ -1,0 +1,7 @@
+url: https://github.com/r-ayin/dsh-compaction-codex
+name: r-ayin/dsh-compaction-codex
+category: session
+description:
+  en: 'Codex-style window-swap compaction engine: deterministic pointer-template summaries with zero LLM calls, replacing the default LLM-summary compaction.'
+  zh: 'Codex 式换窗压缩引擎：零 LLM 调用的确定性指针模板摘要，替换默认 LLM 摘要式压缩。'
+tarball: https://github.com/r-ayin/dsh-compaction-codex/releases/download/v0.0.2/dsh-compaction-codex-0.0.2.tgz

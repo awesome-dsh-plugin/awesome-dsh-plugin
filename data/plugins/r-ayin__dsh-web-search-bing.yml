@@ -1,0 +1,7 @@
+url: https://github.com/r-ayin/dsh-web-search-bing
+name: r-ayin/dsh-web-search-bing
+category: tools
+description:
+  en: 'Keyless Bing HTML search provider plus a relay-aware fetch provider with per-hop redirect validation for the dsh web seam.'
+  zh: '免 key 的 Bing HTML 检索 provider + 中继感知 fetch provider（逐跳重定向校验），挂接 dsh ctx.web seam。'
+tarball: https://github.com/r-ayin/dsh-web-search-bing/releases/download/v0.0.2/dsh-web-search-bing-0.0.2.tgz

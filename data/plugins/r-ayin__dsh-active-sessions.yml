@@ -1,0 +1,7 @@
+url: https://github.com/r-ayin/dsh-active-sessions
+name: r-ayin/dsh-active-sessions
+category: ui
+description:
+  en: 'Sidebar tab listing running and completed-unread sessions across projects, with click-to-switch and grouping.'
+  zh: '左侧边栏「进行中」tab：跨项目平铺展示运行中/完成未读会话，点击即切换。'
+tarball: https://github.com/r-ayin/dsh-active-sessions/releases/download/v0.0.2/dsh-active-sessions-0.0.2.tgz

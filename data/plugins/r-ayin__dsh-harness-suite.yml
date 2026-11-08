@@ -1,0 +1,7 @@
+url: https://github.com/r-ayin/dsh-harness-suite
+name: r-ayin/dsh-harness-suite
+category: dev
+description:
+  en: 'Session hygiene suite: strips leaked thinking tags, adds retry cooldown budgets, blocks plaintext credentials before execution, runs a daily health-check loop with a health panel, and auto-tunes agent instruction hints from error statistics.'
+  zh: '会话卫生套件：thinking 泄露过滤、重试冷却预算、执行前明文凭证拦截、每日健康检查守护循环与健康面板、基于错误统计的提示词自动调优。'
+tarball: https://github.com/r-ayin/dsh-harness-suite/releases/download/v0.0.2/dsh-harness-suite-0.0.2.tgz

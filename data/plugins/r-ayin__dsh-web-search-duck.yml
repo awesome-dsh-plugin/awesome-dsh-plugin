@@ -1,0 +1,7 @@
+url: https://github.com/r-ayin/dsh-web-search-duck
+name: r-ayin/dsh-web-search-duck
+category: tools
+description:
+  en: 'Web search provider that bridges an OpenAI Responses-API-compatible endpoint with the web_search_preview tool into the dsh web seam.'
+  zh: '把任意兼容 OpenAI Responses API（web_search_preview 工具）的端点桥接为 dsh 检索 provider。'
+tarball: https://github.com/r-ayin/dsh-web-search-duck/releases/download/v1.0.1/dsh-web-search-duck-1.0.1.tgz

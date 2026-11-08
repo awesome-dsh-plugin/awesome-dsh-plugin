@@ -1,0 +1,7 @@
+url: https://github.com/r-ayin/dsh-super-injector
+name: r-ayin/dsh-super-injector
+category: dev
+description:
+  en: 'Runtime plugin injector: inject, hot-reload and uninstall local plugin packages in a running dsh without restarts, with plugin scaffolding, self-test and a management panel.'
+  zh: '运行时超级模组注入器：免重启注入/热重载/一键卸载本地插件包，附脚手架、自检与管理面板。'
+tarball: https://github.com/r-ayin/dsh-super-injector/releases/download/v0.3.4/dsh-super-injector-0.3.4.tgz
