@@ -1,0 +1,6 @@
+url: https://github.com/mm24trg2gy-star/dsh-window-keeper
+name: mm24trg2gy-star/dsh-window-keeper
+category: ui
+description:
+  zh: '记住 DSH 桌面窗口的位置、大小与最大化状态，下次启动回到上次离开的地方。窗口逻辑放在独立的 PowerShell 脚本里，不依赖客户端版本；插件外壳只负责安装、自启和开关。'
+  en: 'Remember the DeepSeek Harness desktop window position, size and maximized state, restoring it on next launch. The window logic lives in a standalone PowerShell script that does not depend on the client version; the plugin shell only installs it, keeps it autostarted and exposes a toggle.'

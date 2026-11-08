@@ -1,0 +1,7 @@
+url: https://github.com/androidly/dsh-web-m3e
+name: androidly/dsh-web-m3e
+category: theme
+description:
+  en: Material 3 Expressive theme layered over the built-in light/dark/system preferences, mapping every host alias token to colour roles generated from the official M3 colour library, plus expressive shape, motion, M3 menu surfaces and touch-browser ergonomics.
+  zh: 叠加在宿主浅色/深色/跟随系统偏好之上的 Material 3 Expressive 主题：把宿主全部别名 token 映射到官方算色库生成的颜色角色，并补上方圆轮廓、动效、M3 弹层菜单与触屏适配。
+tarball: https://github.com/androidly/dsh-web-m3e/releases/download/v1.5.1/dsh-web-m3e-1.5.1.tgz

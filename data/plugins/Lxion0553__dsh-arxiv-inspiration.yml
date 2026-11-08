@@ -1,0 +1,6 @@
+url: https://github.com/Lxion0553/dsh-arxiv-inspiration
+name: Lxion0553/dsh-arxiv-inspiration
+category: tools
+description:
+  en: 'arXiv paper survey assistant with a settings-page UI, a local knowledge base, a feedback loop, keyword search plus optional local-embedding semantic search, and per-paper deep-read notes. Requires a configured DSH LLM provider; semantic search and full-text deep read need an optional Python environment (pymupdf + fastembed), otherwise they fall back to keyword search or are skipped.'
+  zh: 'arXiv 论文调研助手：设置页图形界面、本地知识库、反馈循环、关键词检索与可选的本地向量语义检索，以及逐篇深读笔记。需已配置 DSH 的 LLM 提供商；语义检索与全文深读另需可选的 Python 环境（pymupdf + fastembed），没有时语义检索退回关键词、深读跳过。'
