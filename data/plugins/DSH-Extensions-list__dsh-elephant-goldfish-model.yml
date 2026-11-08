@@ -3,3 +3,4 @@ name: DSH-Extensions-list/dsh-elephant-goldfish-model
 category: workflow
 description:
   en: 'Standalone DeepSeek Harness port of Google’s Elephant-Goldfish Model with seven slash commands for design, documentation, and fresh-context reviews using native DSH subagents. Requires no other plugins.'
+icon: https://raw.githubusercontent.com/DSH-Extensions-list/dsh-elephant-goldfish-model/main/assets/logo.png
