@@ -242,6 +242,7 @@ dsh plugin --profile web add dshmarket
 - [adrianleb/dsh-tmux-cc](https://github.com/adrianleb/dsh-tmux-cc) — 为 DSH Web 提供持久的 tmux 控制模式驾驶舱，在停靠栏中镜像原生窗格。
 - [advance-lion/dsh-brand](https://github.com/advance-lion/dsh-brand) — 一键替换 DSH Web GUI 品牌信息（商标、产品名、版本徽标、Hero、标签页标题与 favicon），方便二改分发。
 - [Aealen/dsh-coding-workspace](https://github.com/Aealen/dsh-coding-workspace) — coding 工作台：停靠式工作区面板、项目分组侧栏、可休眠/恢复的分栏编辑器 TAB 组、文件预览与 DIFF 查看，以 git worktree 并行开发与跨会话协作为地基。
+- [Aeroscis/dsh-workspace-manager](https://github.com/Aeroscis/dsh-workspace-manager) — DSH 侧栏工作区排序：刚发过消息的工作区升到「第一个非运行工作区」之上，另有置顶、拖拽排序、按名称筛选与一键整理；并可清理空工作区、把工作区文件夹连对话一起迁到新路径。
 - [afawfawffaf/dsh-plugin-lx-music](https://github.com/afawfawffaf/dsh-plugin-lx-music) — 把落雪音乐（LX Music）正在播放的歌词贴在 DSH 对话页右侧，配上上一首 / 播放暂停 / 下一首。可滚动歌词窗看前后几句、双击某句从那里开始唱；播放器没开时点播放会自动把它从系统托盘拉起来。仅 Windows，需要本机装好落雪并打开它的开放 API。
 - [afoxsss/dsh-conversation-map](https://github.com/afoxsss/dsh-conversation-map) — 停靠在 dsh Web 对话区右缘的会话代码地图：色块/缩略图双模式、拖动调宽（10–320px）、悬停放大镜预览、点击跳转与拖动滚动（带实时视口指示条）、可收起为 4px 细条。
 - [ags-neto/dsh-status-telemetry](https://github.com/ags-neto/dsh-status-telemetry) — 在输入框停靠区加一个会话状态胶囊，点开是一块面板，显示回合、token、性能与上下文读数。
@@ -6723,6 +6724,8 @@ dsh plugin --profile web add dshmarket
 - [huangfuren/dsh-outline](https://github.com/huangfuren/dsh-outline) — 在 DSH 对话中搜索、读取并安全读写用户自己的 Outline 知识库文档，写操作受白名单保护与审批约束。
 - [huangxicheng1/blog-manage](https://github.com/huangxicheng1/blog-manage) — 在 DSH 面板里管理 GitHub Pages 博客：按标签分组浏览 Markdown 文章，用表单填 front matter 并在分屏编辑器里修改，再通过 GitHub REST API 把改动作为一次 commit 发布。
 - [HuanLinOTO/dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) — 向模型暴露 MineRU 文档解析工具。
+- [iggypcnfsky/dsh-docs](https://github.com/iggypcnfsky/dsh-docs) — A Google Docs-style word processor inside DeepSeek Harness with rich text, page setup, tables, images, print, export, and agent editing.
+- [iggypcnfsky/dsh-sheets](https://github.com/iggypcnfsky/dsh-sheets) — An agent-writable spreadsheet editor inside DeepSeek Harness with formulas, formatting, CSV/Excel import, and export.
 - [ikevss/dsh-ima](https://github.com/ikevss/dsh-ima) — 在 DSH 侧边栏浏览腾讯 ima 的知识库与文件，内置常见格式预览，并让 agent 用 5 个工具按名称或正文检索、读取库内资料。
 - [ITDanZF/dsh-hr-plugin](https://github.com/ITDanZF/dsh-hr-plugin) — 面向 DeepSeek Harness 的结构化简历编辑器；每个会话独立保存草稿，对话与侧栏共用内容，并提供 A4 预览和 PDF 导出。
 - [JackWangSIA/dsh-ai-notepad](https://github.com/JackWangSIA/dsh-ai-notepad) — DSH 的 AI 原生文本编辑器：多标签、编码保留、选区/全文 AI 与 Diff 审阅、Markdown 预览及 Windows 文件关联。
@@ -7698,7 +7701,7 @@ dsh plugin --profile web add dshmarket
 - [xuedipiaofei/dsh-hooks-lite](https://github.com/xuedipiaofei/dsh-hooks-lite) — 配置驱动的 DSH 生命周期 hooks：拦截或观察工具调用，并对回合完成、用户消息和标题变化执行 shell 命令。
 - [yakoylp/dsh-md-convert](https://github.com/yakoylp/dsh-md-convert) — 将 Office 文档与 PDF（含扫描件）转换为保留结构的 Markdown，采用 CPU 优先的路由 OCR 流水线（RapidOCR/SLANet/FormulaNet）。
 - [yangdcm/dsh-expert-team](https://github.com/yangdcm/dsh-expert-team) — 角色化多智能体专家团 = 你的数字员工。一句目标即自动组建最多 12 个角色（产品、架构、前端、后端、审查、测试等），按九阶段门控流水线协作交付，并支持常驻团队反复指挥。零运行时依赖、无构建步骤。
-- [yangdongzhen590/dsh-knj-scheduler](https://github.com/yangdongzhen590/dsh-knj-scheduler) — 定时任务调度器：按 Cron 表达式到点自动新建 DSH 会话并注入提示词执行，支持任务历史、手动运行与启停。也可直接调用 KNJ 工作流：支持直接选文件（持久化快照，每次触发重新交给流程）与按路径引用两种方式。侧边栏入口由 dsh-knj-menu 提供，一条命令安装：dsh plugin add dsh-scheduler dsh-knj-menu。
+- [yangdongzhen590/dsh-knj-scheduler](https://github.com/yangdongzhen590/dsh-knj-scheduler) — 定时任务调度器：按 Cron 表达式到点自动新建 DSH 会话并注入提示词执行，支持任务历史、手动运行与启停。也可直接调用 KNJ 工作流：支持直接选文件（持久化快照，每次触发重新交给流程）与按路径引用两种方式。面板入口注册在设置页（settings.section），无需再装菜单插件。
 - [yangdongzhen590/dsh-knj-workflow](https://github.com/yangdongzhen590/dsh-knj-workflow) — 配置驱动的工作流与开发任务编排：图式工作流（任务/网关/人工审批节点）+ 阶段级断点持久化，内置 AI 助手在图编辑器中通过对话配置工作流，逐条校验实时应用到画布。把文档作为「通用附件」交给节点（无需声明）：文件启动前落到工作区，节点用 ${inputs.附件} 拿到换行拼接的绝对路径自行解析。
 - [yangyongzhen/dsh-article-publish](https://github.com/yangyongzhen/dsh-article-publish) — 会话内直接发布文章到 CSDN / 掘金 / 博客园，无外部服务。
 - [yangyongzhen/dsh-scheduler](https://github.com/yangyongzhen/dsh-scheduler) — cron / 一次性定时任务：按调度执行 shell 命令或投递 webhook，结果可推送到 ServerChan / 钉钉 / 飞书 / 通用 Webhook。
