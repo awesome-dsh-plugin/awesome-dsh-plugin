@@ -3293,7 +3293,7 @@ dsh plugin --profile web add dshmarket
 - [VICqiufeeng/dsh-minimax-connect](https://github.com/VICqiufeeng/dsh-minimax-connect) — 把本机已登录的 MiniMax Code（Mavis）订阅接入 DSH 作为模型 provider，自己完成 OAuth 续期所以桌面客户端可以一直关着，并提供积分、签到与订阅额度面板。
 - [Vikrant-Aleph/dsh-opencode-bridge](https://github.com/Vikrant-Aleph/dsh-opencode-bridge) — 在 DSH 中使用 OpenCode 免费模型，支持模型列表动态刷新与可选的代理出口轮换，并提供默认拒绝不安全转换的工具桥与离线、按 Agent 作用域的兼容性审计。
 - [vitas/dsh-model-pricing](https://github.com/vitas/dsh-model-pricing) — DSH 设置页中的模型价格表：约 7,250 个模型 / 213 个提供商（叠加本地路由目录），诚实的最低标价比较、按实际路由计价的会话成本、缓存泄漏归因，以及经验证的促销信息源。
-- [Vlad1108/dsh-codex-workbench](https://github.com/Vlad1108/dsh-codex-workbench) — Adds ChatGPT sign-in, Codex subscription quota, and Codex-backed web search to DeepSeek Harness.
+- [Vlad1108/dsh-codex-workbench](https://github.com/Vlad1108/dsh-codex-workbench) — 为 DeepSeek Harness 增加 ChatGPT 登录、Codex 订阅额度（5 小时与每周窗口）以及由 Codex 驱动的网页搜索；安装后整个 profile 的网页搜索会切到 openai-codex。
 - [volcengine/ark-cli#ark-plan-api](https://github.com/volcengine/ark-cli/tree/main/dsh-plugins/ark-plan-api) — 在 DSH 原生模型选择器中注册方舟 Agent Plan、Coding Plan 与后付费模型路由。
 - [Wahwayhale/dsh-connect-doubao](https://github.com/Wahwayhale/dsh-connect-doubao) — 浏览器扫码登录一次即可把豆包账号接入 DeepSeek Harness：对话模型、「工作任务」模型（2.1 Lite / 2.1 Pro / 自动，走会员付费额度）、默认开启的深度思考、Seedream 生图，以及一块实时额度看板，涵盖 5 小时、周与活动赠送额度，显示「还剩多少」而不是「已用多少」。仅 Windows x64：会话用 DPAPI 密封在本机。
 - [Wahwayhale/dsh-connect-miaoshou](https://github.com/Wahwayhale/dsh-connect-miaoshou) — 把妙手（美团 CatPaw）桌面客户端接入 DeepSeek Harness 作为模型 provider：12 个模型与 App 内模型选择器逐条对齐，含每个模型的积分消耗倍率；思考等级会翻译成上游的 modelParams；另附一块只读看板，显示可用积分与当前套餐。登录走扫码链接，妙手客户端不必常驻运行。
