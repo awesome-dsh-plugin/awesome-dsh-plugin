@@ -1,0 +1,6 @@
+url: https://github.com/cl2458228286-creator/dsh-plugin-workbuddy-checkin
+name: cl2458228286-creator/dsh-plugin-workbuddy-checkin
+category: tools
+description:
+  en: Auto check-in and claim credits for WorkBuddy via an isolated Chrome profile, no tokens required.
+  zh: 用独立 Chrome 登录态自动签到并领取 WorkBuddy 积分，无需令牌。

@@ -1,0 +1,6 @@
+url: https://github.com/Chruix/dsh-team-model
+name: Chruix/dsh-team-model
+category: model
+description:
+  en: Assigns a model and reasoning effort to each Agent Teams teammate, from the chat toolbar or a settings page.
+  zh: 为每个 Agent Teams 队友单独指定模型与推理强度，可在聊天工具行或设置页切换。

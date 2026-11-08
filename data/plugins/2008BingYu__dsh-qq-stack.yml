@@ -4,4 +4,3 @@ category: identity
 description:
   en: 'QQ protocol backend for DeepSeek Harness on Linux: boots LinuxQQ and NapCat with the engine (first run installs them, about 250 MB) and exposes a standard OneBot 11 endpoint.'
   zh: 给 DSH 提供 QQ 协议端（仅 Linux）：随引擎启动 LinuxQQ 与 NapCat（首次运行自动安装，约 250 MB），对外提供标准 OneBot 11 接口。
-tarball: https://github.com/2008BingYu/dsh-qq-stack/releases/download/v0.1.0/dsh-qq-stack-0.1.0.tgz

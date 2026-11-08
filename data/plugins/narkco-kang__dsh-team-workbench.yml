@@ -1,0 +1,6 @@
+url: https://github.com/narkco-kang/dsh-team-workbench
+name: narkco-kang/dsh-team-workbench
+category: ui
+description:
+  en: 'Full-window agent team app for DSH: named agents with animated avatars and fallback model routes, private chats, group rooms with a lead or auto responder and @-relay, 313 agency-agents-zh roles, chat-record search, and a shared skill library.'
+  zh: '全窗口智能体团队应用：具名智能体带动态头像与可回退模型路由，支持私聊、群聊（管理员先答/自动挑人/@ 接力）、313 个角色、聊天记录检索与共享技能库。'

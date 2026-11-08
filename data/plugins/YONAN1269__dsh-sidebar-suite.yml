@@ -1,0 +1,6 @@
+url: https://github.com/YONAN1269/dsh-sidebar-suite
+name: YONAN1269/dsh-sidebar-suite
+category: ui
+description:
+  en: Adds three switchable sidebar layouts to DeepSeek Harness and a settings control for the startup default layout.
+  zh: 为 DeepSeek Harness 提供三种可切换的侧栏布局，并在插件详情页设置启动时的默认布局。

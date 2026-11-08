@@ -1,0 +1,7 @@
+url: https://github.com/YinniCoding/momolulu
+name: YinniCoding/momolulu
+category: ui
+description:
+  en: 'Floating photo companion for the DSH Web UI with a 15/25/45/60-minute focus timer, water and stretch reminders, Open-Meteo weather, and a session radar listing running, ended, input-waiting and permission-requesting conversations for one-click navigation.'
+  zh: 'DSH Web UI 的悬浮照片陪伴插件：15/25/45/60 分钟专注计时、喝水与站立提醒、Open-Meteo 天气，以及可一键跳转的会话雷达（运行中、刚结束、等待输入、请求权限）。'
+icon: https://raw.githubusercontent.com/YinniCoding/momolulu/main/assets/icon-180.png

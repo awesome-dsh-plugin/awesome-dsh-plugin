@@ -1,0 +1,7 @@
+url: https://github.com/ZhuFrank/dsh-master-plugin/tree/main/packages/dsh-master
+name: ZhuFrank/dsh-master-plugin#dsh-master
+category: workflow
+tarball: https://github.com/ZhuFrank/dsh-master-plugin/releases/download/v0.1.0/dsh-master-0.1.0.tgz
+description:
+  en: "A project lead for DeepSeek Harness. Opening a session with the dsh-master preset in a folder makes it that project's master: it splits your requests into tasks, dispatches them to member sessions over plugin-delivered messages, collects structured reports and stops at every gate for review. Members ask you only through the master, as clickable cards on a native side-panel board. A tagged devlog is pushed back into context before related files are touched. Guards keep agents off the plugin's state and git index, and a quiet patrol plus a safety-net schedule watch for stalls. One-click pause per project; all state stays local. Requires DSH 0.2.1 (0.2.2 is not supported yet), has only been tested on macOS, and the UI is Chinese-only."
+  zh: "给 DeepSeek Harness 配一个项目总管。用 dsh-master 预设在某个目录新建会话，它就是这个项目的总管：把你的要求拆成任务，以插件投递的消息派给执行会话，收结构化回报，每到闸门停下等验收。成员需要你拍板时只经总管代问，问题在原生右侧栏看板上点选作答。带标签的 devlog 会在动到相关文件之前推回上下文；守卫不让模型直接改插件状态和 git 暂存区；安静的巡检加定时保底盯着停滞。每个项目一键暂停，数据都在本机。要求 DSH 0.2.1（暂不支持 0.2.2），目前仅在 macOS 上验证过，界面仅中文。"

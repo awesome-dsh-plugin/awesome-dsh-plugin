@@ -1,0 +1,7 @@
+url: https://github.com/ltmroberthk915/markpilot/tree/main/dsh-markdown-editor-typora
+name: ltmroberthk915/markpilot#dsh-markdown-editor-typora
+category: docs
+description:
+  en: "MarkPilot — an IDE-style Markdown × AI workspace inside DSH. Files, editor and chat sit side by side with draggable panes; send a selection's Markdown source and its file path into the chat with one click or Ctrl/Cmd+Shift+Enter, or reference the open note with @mp. Resume the last note per project, start a blank draft that saves into its own folder, and keep your place as conversations change. Typora-style live rendering with click-to-source formulas, cell-level tables, offline Mermaid and KaTeX, ten themes and transparency; a 150k-character document is parsed in a worker so typing stays smooth. Saves are version-guarded and atomic — conflicts raise a banner instead of overwriting; external disk edits are adopted within 1–2 s, drafts are recoverable, and file:// links or absolute .md path chips open in the workspace. Fully offline assets, MIT, 340+ automated tests."
+  zh: "MarkPilot · IDE 式 Markdown × AI 工作台：文件树、编辑器与对话并排，分栏可拖；选中文段一键把 Markdown 源码和文件路径送进对话，@mp 引用当前文档。按工作目录记住最近笔记，切项目不丢文档；空白稿首次保存落在原目录。Typora 式即时渲染，公式点哪改哪、表格格内编辑、离线 Mermaid 与 KaTeX、十套主题与透明外观；15 万字长文交给 Worker，输入不卡。保存走版本守卫与原子落盘，冲突给横幅而不覆盖；外部改写 1–2 秒自动采纳，有草稿时给可操作提示，草稿可恢复；消息里的 file:// 链接与 .md 路径芯片直接进工作台。全部资源离线、MIT、340+ 自动化测试。"
+tarball: https://github.com/ltmroberthk915/markpilot/releases/download/dsh-markdown-editor-typora-v1.4.0/dsh-markdown-editor-typora-1.4.0.tgz
