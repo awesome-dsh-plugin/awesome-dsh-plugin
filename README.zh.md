@@ -7543,6 +7543,7 @@ dsh plugin --profile web add dshmarket
 - [Yuuyuko-uu/dsh-speak-up](https://github.com/Yuuyuko-uu/dsh-speak-up) — 让 AI 伙伴自己起个话头：按设定间隔掷一次本地骰子决定要不要往指定会话里说话，带安静时段与试运行。
 - [yuwang/dsh-matt-flow](https://github.com/yuwang/dsh-matt-flow) — 把 Matt Pocock 技能套件编成六阶段带前置条件的开发工作流预设：拷问、规范、任务、实现、评审、收尾。提供输入框工具行的阶段胶囊，以及一次最多三问、带选项和补充输入框的决策卡片。
 - [yx222yx/DSH-Feedback-Bridge](https://github.com/yx222yx/DSH-Feedback-Bridge) — 将 DSH 对话整理为可审阅的社区反馈，并在确认后提交到 DeepSeek Harness 官方 Discussions。
+- [yyyjjjqqq714-spec/dsh-ai-workflow-kit](https://github.com/yyyjjjqqq714-spec/dsh-ai-workflow-kit) — 340 条代码动画风格库、8 个提示词模板与 5 个可渲染代码模板，集成在侧栏面板；同一套内容也作为 Agent 工具（awkit_search / awkit_get_style / awkit_render_template）供模型在对话中检索与渲染；内容随包分发，无需额外下载。
 - [yyyy231209/ai-company-framework](https://github.com/yyyy231209/ai-company-framework) — AI 公司框架：一句话开一家多 Agent 公司——15 个扁平 Skills（老板/流水线/岗位模板/11 个岗位/通用客户记忆）、7 个工作流模板、AgentTeams 运行时与活动面板、带会话隔离的员工侧边栏、飞书机器人桥（老板/任意员工机器人、群聊路由、自主推送、重大决策人工闸门、外部联系人指引）、客户档案 SQLite 数据库与三层记忆（跨群归并）、/company 公司模式开关；不含 RAG。
 - [Z-Asset/alpharsi](https://github.com/Z-Asset/alpharsi) — AlphaRSI——三角色自改进闭环，进化 alpha 序列模型的训练配方。Operator 跑 walk-forward、Evaluator 用 OOS RankIC 验收、Refiner 用 TPE 贝叶斯搜索提议超参，只保留严格更优。离线一条命令跑，数据包 sha1 对账分发，GPU 自动走 CUDA。附带一个 skill。
 - [Z-Asset/attest](https://github.com/Z-Asset/attest) — 训练鉴证——把资产定价的异地标准化训练钉成可复算、可归因、可审计的裁决链，四道闸硬拦（半拉子刷新、账物不符、判不了当通过、污染母本）。附带一个 skill。
