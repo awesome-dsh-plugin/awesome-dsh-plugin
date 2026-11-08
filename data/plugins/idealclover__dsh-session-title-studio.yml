@@ -1,0 +1,8 @@
+url: https://github.com/idealclover/dsh-session-title-studio
+name: idealclover/dsh-session-title-studio
+category: session
+description:
+  en: Configurable session titles with custom prompts, refresh policies, local topic-drift detection, and single-session or historical title regeneration.
+  zh: 可配置的会话标题生成，支持自定义提示词、刷新策略、本地话题漂移检测，以及单条会话和历史标题重建。
+icon: https://raw.githubusercontent.com/idealclover/dsh-session-title-studio/main/docs/images/icon.png
+tarball: https://github.com/idealclover/dsh-session-title-studio/releases/latest/download/dsh-session-title-studio.tgz
