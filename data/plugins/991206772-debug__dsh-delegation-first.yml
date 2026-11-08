@@ -1,8 +1,0 @@
-url: https://github.com/991206772-debug/dsh-delegation-first
-name: 991206772-debug/dsh-delegation-first
-category: workflow
-description:
-  en: Task planning, configurable execution and review models, progress tracking, and evidence-based acceptance using native DSH subagents.
-  zh: 主控拆分和验收任务，子代理按角色配置执行与审查模型，展示进度并保留验证证据。
-icon: https://raw.githubusercontent.com/991206772-debug/dsh-delegation-first/main/assets/icon.png
-tarball: https://github.com/991206772-debug/dsh-delegation-first/releases/latest/download/dsh-delegation-first.tgz
