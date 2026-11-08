@@ -1,0 +1,6 @@
+url: https://github.com/houdinicc/dsh-poster-studio
+name: houdinicc/dsh-poster-studio
+category: ui
+description:
+  en: "Left sidebar poster workshop with a live deepseek.com/harness fluid-shader background: edit an eyebrow, a two-line headline, subtitle, body copy and footer, switch between four ratios and four palettes, then export a PNG or a self-contained SVG. The official Montserrat font is embedded, so no network is needed."
+  zh: "左侧栏入口的实时海报工坊：可编辑眉标、两行主标题、副标题、说明文案与页脚，支持 4 种画幅、4 套配色，一键导出 PNG 或自包含 SVG；内嵌官网同款 Montserrat 字体，离线可用。"
