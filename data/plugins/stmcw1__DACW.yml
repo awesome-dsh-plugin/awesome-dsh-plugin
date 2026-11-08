@@ -1,0 +1,7 @@
+url: https://github.com/stmcw1/DACW
+name: stmcw1/DACW
+category: workflow
+description:
+  en: 'A defensive agentic coding workflow featuring deterministic testing, independent review, and a human merge gate.'
+  zh: '防御性智能体编程工作流：包含确定性机器测试、独立审查者与人类终审闸门。'
+icon: https://raw.githubusercontent.com/stmcw1/DACW/main/icon.png
