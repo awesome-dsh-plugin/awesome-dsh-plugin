@@ -1,0 +1,6 @@
+url: https://github.com/jxhsjxhs/dsh-coin-ticker
+name: jxhsjxhs/dsh-coin-ticker
+category: ui
+description:
+  en: 'A crypto ticker card in the DeepSeek-Harness sidebar footer, above the balance and Settings, showing BTC, ETH and SOL prices, 24-hour change and 24-point sparklines from OKX, Binance or CoinGecko; clicking the header folds the whole card into a single small button so it takes no room, and the folded state is remembered.'
+  zh: 'DSH 侧边栏左下角的加密货币行情卡片，位于余额与设置上方，显示 BTC、ETH、SOL 的价格、24 小时涨跌幅与 24 点迷你走势图，数据源按 OKX → Binance → CoinGecko 自动降级；点一下表头就能把整张卡片收成一枚小按钮、不再占位置，收起状态会被记住。'
