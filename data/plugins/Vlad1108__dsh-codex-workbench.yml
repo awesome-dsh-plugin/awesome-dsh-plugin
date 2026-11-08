@@ -1,0 +1,5 @@
+url: https://github.com/Vlad1108/dsh-codex-workbench
+name: Vlad1108/dsh-codex-workbench
+category: model
+description:
+  en: Adds ChatGPT sign-in, Codex subscription quota, and Codex-backed web search to DeepSeek Harness.
