@@ -1,0 +1,6 @@
+url: https://github.com/Full626/dsh-session-trash-90d
+name: Full626/dsh-session-trash-90d
+category: session
+description:
+  en: 'Lists every session stored in the local DSH profile with its title, workspace, last-modified time and size, then moves the selected ones to a 90-day trash you can restore or purge; deletion detaches the live session first, so the sidebar updates without restarting the app.'
+  zh: '列出本地 DSH 配置中保存的全部会话（标题、工作区、最近修改时间、大小），把选中项移入保留 90 天的回收站，可随时还原或彻底删除；删除前会先摘掉宿主内存中的会话，侧栏无需重启应用即可刷新。'

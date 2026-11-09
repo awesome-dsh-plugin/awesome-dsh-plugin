@@ -4,11 +4,15 @@ category: usage
 description:
   en: >-
     DeepSeek Harness's own fast mode: the same model on the same reasoning effort, fewer output
-    tokens and usually less wall clock, all prompt-side. Every switch can be turned off on its
-    own; by default only the terse-output switch is on. Measured on one machine: 30 task pairs at
-    the default trim budget 0.756x wall clock and 21% fewer output tokens; 24 pairs on real
-    pallets/click PRs with only the trim switch on 0.805x wall clock and 23% fewer tokens. Some
-    tasks get slower — numbers and repro in the repo.
+    tokens, all prompt-side. Only the output-discipline switch is on by default (late mode, active
+    from step 4); every other switch is off and can be enabled on its own; turn on the tool-output
+    trim switch when tool output is long. Measured on one machine, not a leaderboard: 30 task
+    pairs with long output at the trim switch 0.756x wall clock and 21% fewer output tokens; 24
+    pairs on 6 real pallets/click PRs 0.805x and 23% fewer. On official SWE-bench Lite instance
+    definitions with a self-built harness it does not show a gain (8 instances, three independent
+    runs pooled to 72 pairs: 0.933x wall, 0.903x tokens, wall still crosses 1; single runs of the
+    same configuration differ by 30%), and stacking switches on top of the trim switch is worse
+    than the trim switch alone. Numbers and repro in the repo.
   zh: >-
-    DeepSeek Harness 自己的 fast mode：同一个模型、同样的思考强度，只花更少的输出 token，通常也更快，全程提示词侧。每个开关都能单独关掉；默认只开「精简输出」，其余开关默认关。本机实测：默认截短预算下 30 对任务 0.756× 耗时、输出 token −21%；6 个真实 `pallets/click` PR 共 24 对、只开截短开关时 0.805× 耗时、token −23%。不是所有任务都快，少数会变慢——数字与复现见仓库。
+    DeepSeek Harness 自己的 fast mode：同一个模型、同样的思考强度，只花更少的输出 token，全程提示词侧。默认只开「精简输出」（late 模式，第 4 步后生效），其余开关默认关、可单独打开；工具输出很长时再开「截短工具输出」那个。本机实测、非榜单成绩：输出偏长的 30 对任务，只开截短开关时 0.756× 耗时、输出 token −21%；6 个真实 `pallets/click` PR 共 24 对，0.805× 耗时、token −23%。在官方 SWE-bench Lite 题目定义上用自建 harness 量不出收益（8 题、三次独立跑合池 72 对：墙钟 0.933×、token 0.903×，墙钟仍跨 1；同一配置单跑之间就差三成），往截短上再叠别的开关反而更差。数字与复现见仓库。
 icon: https://raw.githubusercontent.com/regrevia/dsh-fast-mode/main/icon.png

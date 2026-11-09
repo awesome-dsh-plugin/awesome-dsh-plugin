@@ -1,0 +1,6 @@
+url: https://github.com/liangzz1998/dsh-doubao-painter
+name: liangzz1998/dsh-doubao-painter
+category: vision
+description:
+  en: Drives the local Doubao desktop client over CDP so the agent can generate images with the doubao_paint tool, covering text-to-image, image-to-image and batch prompts, and downloads the watermark-free originals from Doubao's own CDN instead of the thumbnail with a burned-in logo. Requires the Doubao client installed, signed in and started with a debug port.
+  zh: 用 CDP 驱动本机豆包桌面客户端出图：doubao_paint 支持文生图、图生图与批量提示词，并从豆包 CDN 下载无水印原图而不是带角标的缩略图；需要已登录的豆包客户端以调试端口启动。

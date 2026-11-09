@@ -1,0 +1,6 @@
+url: https://github.com/yhPrime/dsh-theme-picker
+name: yhPrime/dsh-theme-picker
+category: ui
+description:
+  en: Manage native themes and installed theme plugins from a right-sidebar panel and a Settings page, with only one theme active at a time. Listing and toggling installed theme plugins requires dshmarket; the right-sidebar tab requires dsh-better-sidebar (otherwise the panel appears only in Settings).
+  zh: 主题管理器：在右侧栏面板与设置页里管理原生主题和已安装的主题插件，同一时间只生效一个主题。管理已安装主题插件需 dshmarket；右侧栏页签需搭配 dsh-better-sidebar（未装时只在设置页出现）。

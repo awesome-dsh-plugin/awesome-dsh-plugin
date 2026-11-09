@@ -1,0 +1,8 @@
+url: https://github.com/WangZW928/dsh-model-router-lite
+name: WangZW928/dsh-model-router-lite
+category: model
+description:
+  en: 'After user setup, guides native subagents toward model preferences by task type, using native model-selection permissions with no extra routing-model calls.'
+  zh: '配置模型偏好后，引导原生子 agent 按任务类型选择模型；沿用原生授权，不额外调用路由模型。'
+icon: https://raw.githubusercontent.com/WangZW928/dsh-model-router-lite/main/assets/icon-180.png
+tarball: https://github.com/WangZW928/dsh-model-router-lite/releases/download/v0.1.0/dsh-model-router-lite-0.1.0.tgz

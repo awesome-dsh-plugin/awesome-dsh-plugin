@@ -1,0 +1,7 @@
+url: https://github.com/delltig/dsh-multi-model-collab
+name: delltig/dsh-multi-model-collab
+category: model
+description:
+  en: Runs one task through several configured models at once — in parallel or as a primary/secondary review — and returns each model's answer plus an aggregated digest.
+  zh: 把一个任务同时交给多个已配置模型（并行，或主模型起草 + 副模型复核），返回各模型答案与聚合摘要。
+icon: https://raw.githubusercontent.com/delltig/dsh-multi-model-collab/main/assets/icon.png

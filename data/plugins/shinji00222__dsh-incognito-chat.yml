@@ -1,0 +1,6 @@
+url: https://github.com/shinji00222/dsh-incognito-chat
+name: shinji00222/dsh-incognito-chat
+category: session
+description:
+  en: Adds an incognito toggle for in-memory DSH conversations with temporary desktop attachment storage.
+  zh: 为 DSH 添加内存无痕对话开关，桌面附件使用临时存储。

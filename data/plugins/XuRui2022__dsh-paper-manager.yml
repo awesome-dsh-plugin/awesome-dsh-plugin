@@ -1,0 +1,6 @@
+url: https://github.com/XuRui2022/dsh-paper-manager
+name: XuRui2022/dsh-paper-manager
+category: tools
+description:
+  en: "Academic paper reading and citation manager for DeepSeek Harness: left-rail library, original-layout PDF reader, six citation styles, a Word bibliography append, and AI translation/summary/mind-map/term lookup. A derivative of jypjypjypjyp/dsh-paper-reader (now dsh-vibe-reading, MIT) that shares its default ~/.paper_reading work root — do not install both. Requires the dsh-better-sidebar plugin."
+  zh: "面向学生与研究者的论文阅读与引用管理器：左侧栏论文库、原样 PDF 阅读器、六种引用格式、Word 文末参考文献，以及 AI 翻译/概括/思维导图/术语。基于 jypjypjypjyp/dsh-paper-reader（现名 dsh-vibe-reading，MIT）扩展，默认共用 `~/.paper_reading` 工作目录——不要与上游同装。需先安装 dsh-better-sidebar 插件。"

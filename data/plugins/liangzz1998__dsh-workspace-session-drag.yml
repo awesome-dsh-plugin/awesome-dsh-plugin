@@ -1,0 +1,6 @@
+url: https://github.com/liangzz1998/dsh-workspace-session-drag
+name: liangzz1998/dsh-workspace-session-drag
+category: ui
+description:
+  en: 'Moves a session from one workspace to another by dragging it in the sidebar: a confirmation dialog first, subagent sessions travel with the parent, the list auto-scrolls at its edges, and an open idle session takes the move immediately through a registry refresh; moving into or out of the ungrouped group works both ways.'
+  zh: 在侧栏把会话从一个工作区拖到另一个工作区，确认后移动会话日志与归属（含子代理、列表边缘自动滚动，已打开的空闲会话经注册表刷新即时生效），未分组双向拖动同样支持。

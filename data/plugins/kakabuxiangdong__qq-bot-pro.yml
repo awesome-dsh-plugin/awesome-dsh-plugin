@@ -1,0 +1,6 @@
+url: https://github.com/kakabuxiangdong/qq-bot-pro
+name: kakabuxiangdong/qq-bot-pro
+category: fun
+description:
+  en: 'Extends the official QQ bot channel (@tencent-connect/dsh-qqbot 0.5.3/0.5.4) in DSH with sticker tools, idle proactive small talk, long-term memory and a Settings → Plugins page. Install is manual: run lib/patch-host.mjs to patch six files in the installed channel (backed up, revertable) and --register it into your profile; you also need a QQ open-platform bot (appId/appSecret) with "receive all messages" enabled by a group admin. The channel access defaults to open (anyone who can message the bot); set access.c2cMode/groupMode to allowlist or disabled before exposing it.'
+  zh: '给 DSH 的官方 QQ 机器人通道（@tencent-connect/dsh-qqbot 0.5.3/0.5.4）补上表情包工具、冷场主动发言、长期记忆和「设置 → 插件」页。安装需手动：先运行 lib/patch-host.mjs 给已安装通道打 6 处补丁（自动备份、可 --revert），再用 --register 登记进 profile；另需 QQ 开放平台机器人（appId/appSecret），并由群管开启「接收所有消息」。通道 access 默认 open（任何能给机器人发消息的人都能用），对外暴露前请改成 allowlist 或 disabled。'

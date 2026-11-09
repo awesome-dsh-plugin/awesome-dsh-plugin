@@ -1,0 +1,6 @@
+url: https://github.com/HUISDE/dsh-pnpm-release-age-zero-fix
+name: HUISDE/dsh-pnpm-release-age-zero-fix
+category: market
+description:
+  en: 'Mirrors a zero-valued Desktop release-age setting into profile policy and removes its Host environment alias to avoid unknown-policy update holds.'
+  zh: '将桌面端零等待发布观察期同步到 profile 策略，并移除 Host 环境别名，避免市场更新被未知策略挂起。'

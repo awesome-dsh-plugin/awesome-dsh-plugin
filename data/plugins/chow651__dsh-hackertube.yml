@@ -1,0 +1,6 @@
+url: https://github.com/chow651/dsh-hackertube
+name: chow651/dsh-hackertube
+category: fun
+description:
+  en: 'Browses and plays the 6,454 videos Hacker News has recommended since 2007 inside a DSH panel, with a player, the HN discussion behind each pick, AI questions answered from subtitles, and 6,454 Chinese titles shipped with the package.'
+  zh: '在 DSH 面板里浏览并播放 Hacker News 二十年推荐的 6454 个技术视频，带播放器、每个视频背后的 HN 讨论、基于字幕的 AI 问答，以及随包发布的 6454 条中文标题。'
