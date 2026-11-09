@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-browser-hub
+name: loyalchiiina/dsh-browser-hub
+category: browser
+description:
+  en: "Adds a search-engine picker, a bookmarks panel with multi-level folders (add/edit/delete/import Netscape bookmark HTML) and keyword-then-Enter search in the address bar of the sidebar Browser tab. Requires dsh-better-sidebar >=0.20.0 (the client injects its betterSidebar service and will not load without it). Bookmarks are stored in a local JSON file; no external browser required."
+  zh: "给侧边栏「浏览器」Tab 增加搜索引擎选择、书签面板（多级文件夹、增删改、导入书签 HTML），以及地址栏输入关键词回车直接搜索。需先装 dsh-better-sidebar >=0.20.0（客户端 inject 其 betterSidebar 服务，缺了不会加载）。书签存本地 JSON，不依赖外部浏览器。"

@@ -1,0 +1,8 @@
+url: https://github.com/SilverKurali/dsh-mesh-access
+name: SilverKurali/dsh-mesh-access
+category: remote
+description:
+  en: 'Control your DSH from your phone: opens a port on the mesh/VPN interface from inside the running process, so a phone browser gets the very same instance and session list — no SSH, no second dsh. Also works from another PC, a GUI NAS, or a TV box.'
+  zh: '用手机远程控制电脑上的 DSH：在服务进程内部把端口开到组网网卡上，手机浏览器打开就是你在电脑上用的那个界面，同一实例、同一份会话，不用 SSH、不用第二个 dsh。顺带笔记本、NAS、电视盒子也能开。'
+icon: https://raw.githubusercontent.com/SilverKurali/dsh-mesh-access/main/assets/icon-180.png
+tarball: https://github.com/SilverKurali/dsh-mesh-access/releases/latest/download/dsh-mesh-access.tgz
