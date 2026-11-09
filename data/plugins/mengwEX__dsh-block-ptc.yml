@@ -2,5 +2,5 @@ url: https://github.com/mengwEX/dsh-block-ptc
 name: mengwEX/dsh-block-ptc
 category: session
 description:
-  en: Model-directed context compaction for PTC mode, grouping program runs into blocks and replacing completed block messages with model-written summaries.
-  zh: 为 PTC 模式提供模型自主收口的动态上下文压缩，将程序执行归入区块，并用模型撰写的摘要替换已完成区块的消息。
+  en: 'AI-managed Auto Compact for DeepSeek Harness: the agent decides when to organize context and what to retain as work progresses, without waiting for a fixed token threshold.'
+  zh: 'AI 自主管理上下文的 Auto Compact：由 AI 根据任务进展决定何时整理上下文、保留哪些信息，不必等待固定 token 阈值触发。'
