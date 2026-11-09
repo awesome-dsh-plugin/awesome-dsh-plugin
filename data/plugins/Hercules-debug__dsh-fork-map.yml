@@ -1,0 +1,6 @@
+url: https://github.com/Hercules-debug/dsh-fork-map
+name: Hercules-debug/dsh-fork-map
+category: session
+description:
+  en: 'A per-workspace Fork library: a bookmark icon on each finished assistant turn stores that turn boundary as a full compressed snapshot, and it keeps working after the source session is deleted. A "Fork 库" conversation tab lists a workspace''s forks as a tree, with forks saved from a fork''s launched sessions nested underneath, showing turn count, last question and answer, note, source link and launch history; "从这里启动新会话" opens a new seeded session from any fork, repeatable, without a parent link to the source session.'
+  zh: '每个工作区一个持久化 Fork 库：每轮已结束的回复下多一个书签按钮，把这一轮结束处的完整上下文压缩存成快照，源会话删掉后仍然可用。对话区多一个「Fork 库」标签，把当前工作区的 Fork 列成树（从某个 Fork 启动的会话里再存的 Fork 会挂在它下面），显示轮数、最后一问一答、备注、来源链接和启动记录；点「从这里启动新会话」就能从任意 Fork 开一个带上下文的新会话，可以反复启动，且不把新会话挂到源会话下面。'
