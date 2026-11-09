@@ -5,4 +5,4 @@ description:
   en: DSH Agentrix coordinates native subagents with task planning, configurable execution and review models, progress tracking, and evidence-based acceptance.
   zh: DSH Agentrix 提供多 Agent 编排与验收，主控拆分任务，子代理按角色模型执行和审查，展示进度并保留验证证据。
 icon: https://raw.githubusercontent.com/991206772-debug/dsh-agentrix/main/assets/icon.png
-tarball: https://github.com/991206772-debug/dsh-agentrix/releases/latest/download/dsh-agentrix.tgz
+tarball: https://github.com/991206772-debug/dsh-agentrix/releases/download/v1.7.2/dsh-agentrix.tgz
