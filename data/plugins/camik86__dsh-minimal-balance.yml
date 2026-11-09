@@ -1,0 +1,7 @@
+url: https://github.com/camik86/dsh-minimal-balance
+tarball: https://github.com/camik86/dsh-minimal-balance/releases/latest/download/dsh-minimal-balance.tgz
+name: camik86/dsh-minimal-balance
+category: usage
+description:
+  en: Minimal DeepSeek balance badge in the DSH Web sidebar footer, with a peak/off-peak pricing line, low-balance warning and manual refresh. The API key stays in the host process and the balance route is limited to private-network clients by default.
+  zh: "DSH Web 侧栏底部的极简 DeepSeek 余额徽章：峰谷计价指示线、低余额提醒与手动刷新。API key 只留在 Host 进程，余额路由默认只允许私有网段客户端读取。"

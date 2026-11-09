@@ -1,0 +1,6 @@
+url: https://github.com/LiangshouX/dsh-ide-workbench/tree/main/packages/codeintel
+name: LiangshouX/dsh-ide-workbench#codeintel
+category: dev
+description:
+  en: 'Code intelligence for the DeepSeek Harness IDE workbench: local and semantic completion, go to definition, find usages, hover and signature help, plus the TypeScript, Python, Java/JDTLS and YAML language servers with their memory budget. Requires the dsh-ide-workbench plugin.'
+  zh: 'DSH IDE 工作台的代码智能：本地与语义补全、跳转定义、查找引用、悬浮提示与签名提示，并自带 TypeScript / Python / Java(JDTLS) / YAML 语言服务器及其内存预算。需要配合 dsh-ide-workbench 插件使用。'

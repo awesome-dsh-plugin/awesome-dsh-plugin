@@ -1,0 +1,7 @@
+url: https://github.com/chandra447/dsh-table-charts
+name: chandra447/dsh-table-charts
+category: docs
+description:
+  en: Draws a bar chart under Markdown tables whose columns are mostly numeric, with no tool call or server.
+  zh: 在数值列为主的 Markdown 表格下方自动绘制条形图，无需工具调用或本地服务。
+icon: https://raw.githubusercontent.com/chandra447/dsh-table-charts/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/stickerwu/stickerwu-imagegen
+name: stickerwu/stickerwu-imagegen
+category: vision
+icon: https://raw.githubusercontent.com/stickerwu/stickerwu-imagegen/main/plugins/stickerwu-imagegen/assets/icon.png
+description:
+  en: Image generation and editing with configurable APIs, reference images, and an on-demand annotation canvas. Requires your own OpenAI-compatible image API endpoint and key.
+  zh: 可配置图片 API 的生图、参考图编辑与按需标注画布插件。需自备 OpenAI 兼容图片 API 地址与密钥。

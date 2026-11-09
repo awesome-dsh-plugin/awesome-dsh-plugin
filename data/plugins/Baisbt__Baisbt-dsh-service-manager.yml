@@ -1,0 +1,6 @@
+url: https://github.com/Baisbt/Baisbt-dsh-service-manager
+name: Baisbt/Baisbt-dsh-service-manager
+category: tools
+description:
+  en: 'MCP and skill manager as a full sidebar page: add, edit, enable, disable and delete MCP servers, expand a server to its tools and open one for its parameter list, translate skill and tool summaries with a model you pick, and count tool and skill invocations. Also registers an mcp_service tool so the agent can install MCP servers in conversation after an approval prompt.'
+  zh: '侧边栏整页的 MCP 与技能管理器：增删改启停 MCP 服务器，展开查看工具、点开查看参数，用自选模型翻译技能与工具摘要，统计工具与技能调用次数；另注册 mcp_service 工具，让 Agent 在对话中经审批安装 MCP。'

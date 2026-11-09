@@ -1,0 +1,8 @@
+url: https://github.com/StarWind97/dsh-fatfish-notes
+name: '肥鱼笔记 · Fatfish Notes'
+category: docs
+description:
+  en: 'Save conversations, manage notes with images, export files, and sync across devices through your own private GitHub repository.'
+  zh: '保存会话、管理图文笔记、导出文件，通过自己的 GitHub 私有仓库跨设备同步。'
+icon: https://raw.githubusercontent.com/StarWind97/dsh-fatfish-notes/main/assets/icon-180.png
+tarball: https://github.com/StarWind97/dsh-fatfish-notes/releases/download/v0.6.0/dsh-fatfish-notes-0.6.0.tgz

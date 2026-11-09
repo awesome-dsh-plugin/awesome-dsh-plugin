@@ -1,0 +1,7 @@
+url: https://github.com/Nesarf/mega-index-map
+name: Nesarf/mega-index-map
+category: memory
+description:
+  en: 'A cross-workspace Library for DeepSeek Harness: agents record files, tools, environments, knowledge and work records so any later session can index, search and reuse them.'
+  zh: '跨工作区的 Library：把文件、工具、环境、知识与工作记录收进一处，之后任何会话都能索引、检索与复用它们。'
+icon: https://raw.githubusercontent.com/Nesarf/mega-index-map/main/icon.png
