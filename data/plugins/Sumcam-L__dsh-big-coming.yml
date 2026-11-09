@@ -1,0 +1,7 @@
+url: https://github.com/Sumcam-L/dsh-big-coming
+name: Sumcam-L/dsh-big-coming
+category: fun
+description:
+  en: 'Watches the official DeepSeek models for changes: every cycle it reads the model catalog and sends one minimal completion per watched model, then compares the system fingerprint, the served model name, the response envelope shape, the catalog metadata and the token count of a fixed prompt. When something moves, it pops a random meme with a table of exactly what changed and plays a blast.'
+  zh: '盯着官方 DeepSeek 模型有没有变：每轮读取模型目录，并对每个受关注的模型发一次最小补全请求，比对系统指纹、返回的模型名、响应信封结构、目录元数据和固定输入的 token 数。任一项变化就弹一张随机表情包，列出具体改了什么，并放一声轰鸣。'
+icon: https://raw.githubusercontent.com/Sumcam-L/dsh-big-coming/main/assets/icon-180.png
