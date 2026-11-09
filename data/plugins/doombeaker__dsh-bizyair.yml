@@ -1,0 +1,7 @@
+url: https://github.com/doombeaker/dsh-bizyair
+name: doombeaker/dsh-bizyair
+category: model
+description:
+  en: "AIGC creation inside DeepSeek Harness: generate images, video, audio and 3D with open and closed-source models — parameter schemas, cost estimates, approval gates and a task panel."
+  zh: "把 AIGC 创作直接放进 DeepSeek Harness：用开源与闭源模型生成图像、视频、音频与 3D，含参数 schema、费用预估、审批与任务面板。"
+icon: https://raw.githubusercontent.com/doombeaker/dsh-bizyair/main/assets/icon-180.png

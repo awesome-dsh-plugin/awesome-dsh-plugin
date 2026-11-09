@@ -1,0 +1,7 @@
+url: https://github.com/verneuil/dsh-ocg-session-head
+name: verneuil/dsh-ocg-session-head
+category: model
+icon: https://raw.githubusercontent.com/verneuil/dsh-ocg-session-head/main/assets/icon-180.png
+description:
+  en: 'Injects a per-conversation x-opencode-session header for OpenCode Go routes that were registered under a custom provider name, through the host official llm-pi-ai/request-headers waterfall. Zero dependencies, no fetch patching, and it never overwrites a header someone else already set.'
+  zh: '为以自定义供应商名接入的 OpenCode Go 路由，按会话注入 x-opencode-session 请求头：走宿主官方 llm-pi-ai/request-headers 瀑布；零依赖、不替换 fetch，且不覆盖他人已写入的同名头。'

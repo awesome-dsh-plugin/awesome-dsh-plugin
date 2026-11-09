@@ -1,0 +1,14 @@
+url: https://github.com/Lequait/dsh-subagent-watchdog
+name: Lequait/dsh-subagent-watchdog
+category: workflow
+description:
+  en: >-
+    Tells the parent agent when a subagent died from an upstream failure instead of finishing:
+    it listens to agent/error on every agent, waits a short settle delay, and if the child is
+    still not running delivers a followup turn to the parent carrying the child id, the failure
+    and the options the parent has, with a cooldown and a per-child cap so a flapping provider
+    cannot flood the parent.
+  zh: >-
+    子代理被上游断线打死而不是正常跑完时，替它通知父代理：监听每个 agent 的 agent/error，
+    静置一小段时间后若子代理仍未恢复运行，就向父代理投递一条后续轮，带上子代理 id、失败原因
+    与父代理可选的处置方式；冷却时间与每子代理上限避免上游抖动时刷屏。

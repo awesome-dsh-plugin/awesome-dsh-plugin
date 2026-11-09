@@ -1,0 +1,6 @@
+url: https://github.com/Jackbessaliuz/dsh-market-expand
+name: Jackbessaliuz/dsh-market-expand
+category: market
+description:
+  en: 'Companion for the DSH plugin market: batch-updates every installed npm plugin after DSH quits and relaunches it, rolls back the plugins an update broke when the next boot fails, and checks updates plus keeps snapshots for local link plugins. Windows DSH Desktop only; it is a companion patch for the plugin market (dshmarket), not a replacement — install dshmarket for the market tab.'
+  zh: 'DSH 插件市场的补丁层：一键批量更新所有已装 npm 插件（退出 DSH 后自动完成并重新打开），启动失败时自动回退肇事插件，并为本地 link 插件提供更新检测与快照回滚。仅支持 Windows 桌面版 DSH；它是对插件市场（dshmarket）的补丁层而非替代品，市场分组需先装 dshmarket。'
