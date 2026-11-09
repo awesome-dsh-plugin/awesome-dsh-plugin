@@ -1,6 +1,7 @@
 url: https://github.com/david-zdw/dsh-image-studio
 name: david-zdw/dsh-image-studio
 category: tools
+tarball: https://github.com/david-zdw/dsh-image-studio/releases/download/v0.11.0/dsh-image-studio-workbench-0.11.0.tgz
 description:
   en: 'Sidebar image workbench with separate Agnes / OpenAI GPT Image / Grok / OpenAI-compatible keys, text-to-image and up to five reference images, local history, an image_studio_generate tool for /image, and an in-panel GitHub update button.'
   zh: 'DSH 侧边栏生图工作台：Agnes、OpenAI GPT Image、Grok、OpenAI 兼容接口各自独立 Key，支持文生图和最多 5 张参考图、本地历史、/image 工具，以及插件内 GitHub 更新按钮。'
