@@ -1,0 +1,6 @@
+url: https://github.com/oicty/dsh-zh-think
+name: oicty/dsh-zh-think
+category: session
+description:
+  en: 'Appends one system-prompt section at the end of the assembled prompt (order 10300) telling the agent to reason and answer in Simplified Chinese, leaving existing sections and the cached prompt prefix untouched. The text, its order and an on/off switch are configurable.'
+  zh: '在系统提示词装配的末尾（order 10300）追加一条要求 agent 用简体中文推理与回复的 section，不改动既有 section、不破坏提示词缓存前缀；指令文本、排序位置与开关均可配置。'
