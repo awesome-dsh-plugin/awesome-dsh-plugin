@@ -1,0 +1,6 @@
+url: https://github.com/cc1104666/dsh-plugins/tree/main/packages/dsh-ima
+name: cc1104666/dsh-plugins#dsh-ima
+category: model
+description:
+  en: 'Signs in to ima.qq.com (Tencent IMA) with a WeChat QR code and runs a localhost OpenAI-compatible relay in front of its SSE chat endpoint, so the four models behind it appear in the picker.'
+  zh: '微信扫码登录 ima.qq.com（腾讯 IMA），在本机起一个 OpenAI 兼容反代，把请求翻译成它的 SSE 对话接口，让背后的四个模型出现在模型选择器中。'

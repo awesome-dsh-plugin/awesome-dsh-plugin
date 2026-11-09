@@ -1,0 +1,7 @@
+url: https://github.com/ikunua/dsh-live2d-stage
+name: ikunua/dsh-live2d-stage
+category: theme
+description:
+  en: 'Renders a Live2D Cubism 4 model as the DSH web UI background: a transparent click-through canvas that covers the window without blocking any control. Eyes, head and body follow the pointer; expressions track the agent state (thinking, running a tool, turn finished, error, waiting) and the conversation (message arrives, reply ends, question asked); after an idle delay the character shows speech bubbles and plays motions and expressions drawn at random from pools you tick. Settings list the models under ~/.dsh/live2d-stage/models, expose position, scale, opacity, gaze strength and every interval and probability, and open a resizable live preview of the same canvas. Expressions and motions a model3.json omits are detected from the model folder; one sample model is included.'
+  zh: '把 Live2D Cubism 4 模型渲染成 DSH 网页界面的背景层：透明画布铺满窗口且不挡任何控件。眼、头、身体跟随鼠标；表情跟着智能体状态（思考、调用工具、回答结束、报错、等待确认）和对话（收到消息、回答结束、向你提问）变化；空闲到设定时间会冒台词气泡，并从你勾选的池子里随机播动作和表情。设置页列出 ~/.dsh/live2d-stage/models 里的模型，开放位置、缩放、透明度、视线强度与每一项间隔和概率，并可拖拽改大小的实时预览窗查看同一块画布。模型清单里没声明的 exp3/motion3 会被自动识别，另附示例模型。'
+icon: https://raw.githubusercontent.com/ikunua/dsh-live2d-stage/main/assets/icon-180.png

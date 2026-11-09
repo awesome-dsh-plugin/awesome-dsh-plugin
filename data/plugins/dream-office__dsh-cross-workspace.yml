@@ -1,0 +1,7 @@
+url: https://github.com/dream-office/dsh-cross-workspace
+name: dream-office/dsh-cross-workspace
+category: tools
+tarball: https://github.com/dream-office/dsh-cross-workspace/releases/download/v0.8.5/dsh-cross-workspace-0.8.5.tgz
+description:
+  en: 'Cross-workspace courier for DeepSeek Harness: send messages, files and JSON between workspaces, with manual groups, per-recipient selection, inbox, wait/queue delivery and a visual communication graph.'
+  zh: 跨工作区信使：让不同 DSH 工作区的会话互相发消息、传文件与 JSON，支持手动群组、指定成员、收件箱、等待/排队投递与可视化交流图。

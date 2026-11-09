@@ -1,0 +1,6 @@
+url: https://github.com/soffits/dsh-cron-jobs
+name: soffits/dsh-cron-jobs
+category: workflow
+description:
+  en: 'Host-side scheduled jobs on cron, RRULE or one-time schedules: shell commands that start no model, gated jobs that wake an agent only when the command reports work, or agent prompts. Agent tools to create jobs, a Cron tasks page, and result delivery through any plugin that exposes a send method.'
+  zh: '在宿主进程中运行的定时任务，支持 cron、RRULE 或一次性时间：只跑 shell 命令、不启动模型；先跑检查命令，有事才唤醒 Agent；或直接给 Agent 发提示词。附带让 Agent 创建任务的工具、Cron 任务页面，结果可交给任何提供 send 方法的插件发送。'

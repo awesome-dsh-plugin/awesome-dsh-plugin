@@ -1,0 +1,6 @@
+url: https://github.com/dev-cmde/dsh-plugins/tree/main/routerai-prices
+name: dev-cmde/dsh-plugins#routerai-prices
+category: model
+description:
+  en: 'Lists RouterAI prompt and completion prices for the profile models, highlighting the active one. Requires a model provider whose config key is `routerai`; without it the table shows no data.'
+  zh: '列出 profile 里各模型的 RouterAI 提示与补全价格，并高亮当前在用的那个。需要配置键为 `routerai` 的模型 provider；缺了表格不显示数据。'

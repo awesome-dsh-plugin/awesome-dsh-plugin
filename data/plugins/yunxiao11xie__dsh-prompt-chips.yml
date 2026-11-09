@@ -1,0 +1,7 @@
+url: https://github.com/yunxiao11xie/dsh-prompt-chips
+name: yunxiao11xie/dsh-prompt-chips
+category: ui
+icon: https://raw.githubusercontent.com/yunxiao11xie/dsh-prompt-chips/main/assets/icon-180.png
+description:
+  en: "Adds a lightning-button menu in the composer tool row that inserts saved prompts at the caret; the four defaults can be edited and stay in the browser."
+  zh: "在输入框工具行加一个闪电按钮菜单，点击即可把常用提示词插入光标处；四条默认提示可自行编辑，只保存在浏览器里。"

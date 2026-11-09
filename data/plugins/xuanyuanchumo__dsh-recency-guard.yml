@@ -1,0 +1,7 @@
+url: https://github.com/xuanyuanchumo/dsh-recency-guard
+name: xuanyuanchumo/dsh-recency-guard
+category: security
+tarball: https://github.com/xuanyuanchumo/dsh-recency-guard/releases/download/v0.11.4/dsh-recency-guard-0.11.4.tgz
+description:
+  zh: "DeepSeek Harness 的插件崩溃恢复守护：记录第三方/实验性插件的安装与更新时间线并自动备份配置；崩溃后按「最近更新」自动锁定嫌疑插件并在下次启动前拦截，多次崩溃逐级扩大隔离，稳定后自动恢复；恢复判定分级（唯一嫌疑即时关闭/多嫌疑连续 N 轮确认）+ 两阶段提交与重启对账；离线逃生通道 rescue CLI（零依赖只读，CJK 宽度对齐输出）；面板提供生命周期状态机、马尔可夫转移矩阵、休哈特控制带、CUSUM 变点等量化可观测视图与可交互能力图谱，含插件信息与 GitHub 反馈入口；多项目按分区键隔离记账，项目间数据互不污染。"
+  en: "Crash-recovery guard for DeepSeek Harness plugins: records install/update timelines of third-party and experimental plugins with automatic config backups; after a crash it ranks suspects by recency and blocks them before the next boot, widens the quarantine per additional crash, and restores stable plugins afterwards. Confidence-graded recovery (single suspect acts immediately, multiple suspects need N consecutive confirmations) with two-phase commits and reboot reconciliation; a zero-dependency offline rescue CLI (CJK-width aligned output) reads the artifacts when the host cannot boot; the panel ships a lifecycle state machine, Markov transition matrix, Shewhart control band, CUSUM change-point metrics, an interactive capability graph, plus a plugin-info card with a GitHub feedback entry; per-project partitions keep records isolated."

@@ -2,5 +2,5 @@ url: https://github.com/Hope2023Dcr/dsh-gallery
 name: Hope2023Dcr/dsh-gallery
 category: ui
 description:
-  en: 'Output gallery in the DSH sidebar: watches your on-disk output folder, shows auto-refreshing image thumbnails with zoom and pan, lists documents, code, data, archives and links that open in DSH native preview, and filters by outputs produced in the current conversation. Zero dependencies.'
-  zh: 把 DSH 右侧栏变成产出目录的实时画廊：监控磁盘产出目录，图片缩略图自动刷新、支持缩放拖动，文件卡片点击即调用 DSH 原生侧栏预览，还能按「本对话产出」筛选。零依赖。
+  en: 'Output gallery in the DSH sidebar, built to fix DSH reporting produced files only after a task ends: it watches your on-disk output folders and shows files as they appear, so you can verify and intervene mid-task instead of after. Auto-refreshing image thumbnails with zoom and pan, documents, code, data, archives and links that open in DSH native preview, per-conversation filtering, and multi-folder support for sessions whose cwd is outside the default output folder. Zero dependencies.'
+  zh: 把 DSH 右侧栏变成产出目录的实时画廊，专门解决 DSH「只在任务结束时才列出产出文件、过程不可见」的问题：直接盯磁盘产出目录，文件一生成就能看到，方便在任务进行中校验与纠正。图片缩略图自动刷新、支持缩放拖动；文档、代码、数据、压缩包与链接点击即调用 DSH 原生侧栏预览；支持按「本对话产出」筛选；支持多扫描目录，兼容工作目录不在默认产出目录下的会话。零依赖。
