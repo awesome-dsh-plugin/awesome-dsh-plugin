@@ -1,0 +1,7 @@
+url: https://github.com/overact/dsh-multi-window-context-management
+name: overact/dsh-multi-window-context-management
+category: session
+description:
+  en: 'Windowed handoffs on top of DSH native compaction: each compaction appends a bounded window message (goal, todos, recent user instructions, notes), with session-private notes, paged history recall and a /ctx switch; notes and history tools appear after the first rotation.'
+  zh: '在 DSH 原生压缩之上做换窗交接：每次压缩追加有长度上限的窗口消息（目标、待办、近期用户指令、笔记），配会话私有笔记、分页历史检索和 /ctx 开关；笔记与历史工具在首次换窗后出现。'
+icon: https://raw.githubusercontent.com/overact/dsh-multi-window-context-management/main/assets/icon-180.png
