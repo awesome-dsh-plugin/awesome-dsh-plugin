@@ -1,25 +1,19 @@
 # ONE-FILE catalog submission for awesome-dsh-plugin/awesome-dsh-plugin.
-# Commit this file into your FORK at exactly:
+# Commit this file into the FORK at exactly:
 #   data/plugins/github-yousen__dsh-novel-mode.yml
 # Do NOT hand-edit the generated READMEs — this file is the whole submission.
 #
 # Standalone repository: https://github.com/github-yousen/dsh-novel-mode
-# Public, default branch `main`, MIT, topic `dsh-plugin`, created 2026-11-09.
+# Public, default branch `main`, MIT, topic `dsh-plugin`.
 url: https://github.com/github-yousen/dsh-novel-mode
 name: github-yousen/dsh-novel-mode
 category: workflow
 # Both descriptions are quoted: the en string contains ": " (colon + space),
 # which unquoted would be parsed as a nested YAML key.
 description:
-  en: 'A DeepSeek Harness plugin that adds 小说模式 (Novel Mode) as a selectable entry in the session mode dropdown: an agent preset with a novel-writing persona and the standard tool set, plus 21 runtime skills and a silently materialized .dsh working copy of subagent roles, PowerShell and Python scripts, templates, config and rules for constitution, outline, design, writing, batch and validation.'
-  zh: '为 DeepSeek Harness 的会话模式下拉框新增可选「小说模式」：一个带写作 persona 与标准工具集的 Agent 预设，外加 21 个运行时技能，并把子代理角色、PowerShell 与 Python 脚本、模板、配置与规则静默物化到 .dsh/ 目录，供宪法、大纲、设计、写作、批量、校验各阶段使用。'
-# icon: OMITTED. The catalog tile accepts ONE GitHub-hosted RASTER image only
-#   (png / jpg / jpeg / webp), drawn at ~96px, square preferred. SVG is REFUSED
-#   and third-party image hosts are REFUSED. The plugin ships icon.svg for the
-#   DSH UI, but an .svg cannot be used as the catalog `icon:`. To add a tile,
-#   commit a square png/jpg/webp inside the repo and set, for example:
-#   icon: https://raw.githubusercontent.com/github-yousen/dsh-novel-mode/main/assets/icon-180.png
+  en: 'From one idea to a finished, consistency-checked novel: a deterministic writing ENGINE for DeepSeek Harness, not a prompt pack. A JavaScript state machine owns 7 gated stages (constitution, outline, design, writing, validation, batch, export) plus a 15-step serial per-chapter sub-FSM; PowerShell validators decide every gate, so the model cannot skip a stage or assert a PASS. Versioned atomic checkpoints resume at the exact chapter after a restart, 9 subagent workers are evidence-adjudicated in code, and the user sees only quiet structured status: no prompt dumps, no leaked errors, zero bundled credentials.'
+  zh: '一个想法到一本校验通过的小说：DeepSeek Harness 的确定性写作引擎，不是提示词包。JavaScript 状态机掌握 7 个硬门禁阶段（宪法、大纲、设计、写作、校验、批量、导出）与 15 步串行单章子状态机；门禁由 PowerShell 校验脚本裁决，模型无法跳阶段或自称 PASS。版本化原子断点可在重启后精确续写第 N 章，9 个子代理由代码按证据裁决，用户只看到安静的结构化状态：不展示提示词、不外泄错误、零内置凭据。'
+icon: https://raw.githubusercontent.com/github-yousen/dsh-novel-mode/main/assets/icon-180.png
 # tarball: OMITTED. Optional; only a GitHub Release-hosted https .tgz is accepted.
-#   None is published yet. If you later attach a prebuilt tarball, keep the asset
-#   name version-free with latest/download/ (or pin the release tag), e.g.
-#   tarball: https://github.com/github-yousen/dsh-novel-mode/releases/latest/download/dsh-novel-mode.tgz
+#   If a prebuilt tarball is attached later, keep the asset name version-free
+#   with latest/download/ (or pin the release tag).
