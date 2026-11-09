@@ -2,5 +2,5 @@ url: https://github.com/liuzx012/dsh-speakhumantalk
 name: liuzx012/dsh-speakhumantalk
 category: usage
 description:
-  en: 'An always-on de-slop layer for every session: a system-prompt style section plus four tools (scan, deterministic rewrite, mode switch, voice profile) and two skills for rewriting drafts and shaping conversations. Code fences, inline code, URLs and frontmatter stay byte-identical; intensity is switchable at runtime.'
-  zh: 每个会话自动生效的去 AI 味层：一段常驻风格层，加四个工具（评分、确定性改写、强度切换、声音画像）与两个 skill，覆盖改稿与对话形状。代码块、行内代码、URL 与 frontmatter 逐字保留；强度运行期可切。
+  en: Strips AI phrasing and stock openers; on in every session.
+  zh: 删掉 AI 腔与套话，每会话自动生效。
