@@ -1,3 +1,4 @@
+# tarball is pinned to the release asset built by npm pack
 url: https://github.com/bingomu/dsh-wingman
 name: 对话工具条（dsh-wingman）
 category: workflow
