@@ -66,6 +66,12 @@ const CAT_IDS = ENTRY_CAT_IDS
 
 const ldSafe = (s) => s.replaceAll('<', '\\u003c')
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
+// A slug is a URL path built from the entry URL as-is. When that URL carries a
+// percent-encoded byte (a monorepo directory whose name contains a space), the
+// byte is data here, not an escape: emitting `%20` raw makes the browser decode
+// it a second time into a space and request a path no file has, so every URL
+// built from a slug re-encodes `%` before it reaches href/canonical/sitemap.
+const slugHref = (slug) => encodeURI(slug)
 
 // ── advertising ─────────────────────────────────────────────────────────────
 // One AdSense head tag, gated behind a build variable. Unset — the default —
@@ -557,11 +563,11 @@ function buildRows(loc, only, limit) {
     ].filter(Boolean).join(' ')
     return `    <li class="card" ${attrs}>
       <div class="top">
-        <h3><a href="${loc.urlPath}p/${e.slug}/" translate="no"><span class="owner">${esc(e.owner)}/</span>${esc(short)}</a></h3>
+        <h3><a href="${loc.urlPath}p/${slugHref(e.slug)}/" translate="no"><span class="owner">${esc(e.owner)}/</span>${esc(short)}</a></h3>
         ${e.stars != null ? `<span class="stars" translate="no">${e.stars}</span>` : ''}
         ${e.downloads != null ? `<span class="dl" translate="no" title="${loc.strings.P_DOWNLOADS}">${fmtNum(e.downloads)}</span>` : ''}
       </div>
-      <a class="desc-link" href="${loc.urlPath}p/${e.slug}/" tabindex="-1"><p>${esc(e.descs[loc.code])}</p></a>
+      <a class="desc-link" href="${loc.urlPath}p/${slugHref(e.slug)}/" tabindex="-1"><p>${esc(e.descs[loc.code])}</p></a>
       <div class="foot">
         <a class="tag" href="${loc.urlPath}${e.cat}/">${loc.categories[e.cat]}</a>
         <details class="inst">
@@ -614,7 +620,7 @@ function catalogPayload(loc, only) {
         slug: e.slug,
         desc: e.descs[loc.code] || '',
         cmd: cardCmd(e),
-        href: `${loc.urlPath}p/${e.slug}/`,
+        href: `${loc.urlPath}p/${slugHref(e.slug)}/`,
       }
     }),
   }
@@ -894,11 +900,11 @@ function renderReadme(rm) {
 }
 for (const loc of LOCALES) {
   for (const e of ordered) {
-    const url = `${ORIGIN}${loc.urlPath}p/${e.slug}/`
+    const url = `${ORIGIN}${loc.urlPath}p/${slugHref(e.slug)}/`
     const catUrl = `${loc.urlPath}${e.cat}/`
     const dHreflangs = [
-      ...LOCALES.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}p/${e.slug}/">`),
-      `<link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}p/${e.slug}/">`,
+      ...LOCALES.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}p/${slugHref(e.slug)}/">`),
+      `<link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}p/${slugHref(e.slug)}/">`,
     ].join('\n')
     const desc = e.descs[loc.code]
     // Trim to a boundary rather than mid-word: a description cut at "config" ->
@@ -954,7 +960,7 @@ for (const loc of LOCALES) {
       .filter((r) => r.cat === e.cat && r.url !== e.url)
       .sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1))
       .slice(0, 6)
-      .map((r) => `      <li><h3><a href="${loc.urlPath}p/${r.slug}/" translate="no">${esc(r.name)}</a>${r.stars != null ? `<span class="stars" translate="no">★ ${r.stars}</span>` : ''}</h3><a class="desc-link" href="${loc.urlPath}p/${r.slug}/" tabindex="-1"><p>${esc(r.descs[loc.code])}</p></a></li>`)
+      .map((r) => `      <li><h3><a href="${loc.urlPath}p/${slugHref(r.slug)}/" translate="no">${esc(r.name)}</a>${r.stars != null ? `<span class="stars" translate="no">★ ${r.stars}</span>` : ''}</h3><a class="desc-link" href="${loc.urlPath}p/${slugHref(r.slug)}/" tabindex="-1"><p>${esc(r.descs[loc.code])}</p></a></li>`)
       .join('\n')
 
     // Map a plugin, rather than a rendered URL, to its Discussion. This keeps
@@ -1051,7 +1057,7 @@ ${readmeHtml}
       .replaceAll('__JSONLD__', () => ldSafe(jsonldDetail))
       .replaceAll('__HOME__', () => loc.urlPath)
       .replaceAll('__PRIVACY__', () => loc.privacyPath)
-      .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}p/${e.slug}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
+      .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}p/${slugHref(e.slug)}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
       .replaceAll('__CAT_URL__', () => catUrl)
       .replaceAll(AD_HEAD_TOKEN, () => adHead())
       .replaceAll('__CAT_NAME__', () => loc.categories[e.cat])
@@ -1134,7 +1140,7 @@ const registry = {
       name: shortName(e.name),
       owner: e.owner,
       url: e.url,
-      page: `${ORIGIN}/p/${e.slug}/`,
+      page: `${ORIGIN}/p/${slugHref(e.slug)}/`,
       category: e.cat,
       description: Object.fromEntries(LOCALES.map((l) => [l.code, e.descs[l.code]])),
       npm: e.npm,
@@ -1270,10 +1276,10 @@ ${LOCALES.map((l) => `  <url>
 ${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code}" href="${ORIGIN}${l2.privacyPath}"/>`), `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].privacyPath}"/>`].join('\n')}
   </url>`).join('\n')}
 ${LOCALES.flatMap((l) => ordered.map((e) => `  <url>
-    <loc>${ORIGIN}${l.urlPath}p/${e.slug}/</loc>
+    <loc>${ORIGIN}${l.urlPath}p/${slugHref(e.slug)}/</loc>
     <lastmod>${e.added}</lastmod>
     <changefreq>weekly</changefreq>
-${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code}" href="${ORIGIN}${l2.urlPath}p/${e.slug}/"/>`), `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}p/${e.slug}/"/>`].join('\n')}
+${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code}" href="${ORIGIN}${l2.urlPath}p/${slugHref(e.slug)}/"/>`), `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}p/${slugHref(e.slug)}/"/>`].join('\n')}
   </url>`)).join('\n')}
 </urlset>
 `)
