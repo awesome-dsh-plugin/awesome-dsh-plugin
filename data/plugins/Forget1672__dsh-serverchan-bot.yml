@@ -1,0 +1,8 @@
+url: https://github.com/Forget1672/dsh-serverchan-bot
+name: Forget1672/dsh-serverchan-bot
+category: notify
+description:
+  en: 'Bridges DSH sessions with a Server酱³ Bot: pushes agent and scheduled output to the phone, answers question and approval cards from chat or the web, and receives messages by polling or webhook.'
+  zh: '把 DSH 会话与 Server酱³ Bot 打通：把 Agent 与定时任务的输出推送到手机，问题与批准卡片可在聊天或网页任一端作答，并支持轮询或 Webhook 接收消息。'
+icon: https://raw.githubusercontent.com/Forget1672/dsh-serverchan-bot/main/assets/icon-180.png
+tarball: https://github.com/Forget1672/dsh-serverchan-bot/releases/latest/download/dsh-serverchan-bot.tgz
