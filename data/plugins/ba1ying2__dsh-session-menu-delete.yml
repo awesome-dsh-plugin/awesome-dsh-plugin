@@ -1,6 +1,0 @@
-url: https://github.com/ba1ying2/dsh-session-menu-delete
-name: "ba1ying2/dsh-session-menu-delete"
-category: session
-description:
-  en: 'Adds "Delete conversation" to the sidebar conversation menu. Confirming removes the durable session log under <DSH_HOME>/sessions, drops the id from the workspace registry (sessionIds, pin, archive), detaches a live session before its files go away, and emits api-session/removed so every connected client drops the row.'
-  zh: '在侧栏会话菜单里加「删除会话」。确认后删除 <DSH_HOME>/sessions 下的会话日志、从 Workspace 注册表摘掉该 id（sessionIds、置顶、归档），先 detach 活会话再删文件，并广播 api-session/removed，让所有已连接客户端同步移除该行。'
