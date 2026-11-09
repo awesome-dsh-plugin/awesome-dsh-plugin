@@ -1,0 +1,6 @@
+url: https://github.com/Phoeky/dsh-scnet-connect
+name: Phoeky/dsh-scnet-connect
+category: model
+description:
+  en: 'SCNet provider for DSH. Reads the desktop client''s stored credential when present, or logs in with a phone SMS code from the settings page so no client is needed; registers the free models found in the client catalog (SCNet-Max) and can toggle free-only filtering at runtime.'
+  zh: 'DSH 的 SCNet 模型接入。有客户端时直接读其已落盘的凭据，没有客户端也能在设置页用手机短信验证码登录；注册客户端目录里的免费模型（SCNet-Max），并可在运行时切换「只显示免费模型」。'
