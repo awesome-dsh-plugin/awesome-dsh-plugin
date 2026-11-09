@@ -1,0 +1,6 @@
+url: https://github.com/MarushiruDonato/dsh-process-manager
+name: MarushiruDonato/dsh-process-manager
+category: tools
+description:
+  en: 'Process manager for DeepSeek Harness: monitor child process trees, detect lingering orphan services, diagnose plugin/command attribution, and safely kill processes to release file and port locks.'
+  zh: 'DeepSeek Harness 专属进程管理：监控子进程树与残留孤儿服务，诊断插件/命令归属，安全终止进程以释放文件与端口占用。'
