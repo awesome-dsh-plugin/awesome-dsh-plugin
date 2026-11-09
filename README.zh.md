@@ -8379,6 +8379,7 @@ dsh plugin --profile web add dshmarket
 - [BotonJ/dsh-windtunnel](https://github.com/BotonJ/dsh-windtunnel) — 插件作者的契约回归风洞：剧本适配器在隔离子进程中驱动真实管线，会话事件断言覆盖加载/契约/行为/故障四层；零 API key，可进 CI。
 - [br1nosense/dsh-project-manager](https://github.com/br1nosense/dsh-project-manager) — 在 DSH Web 界面以悬浮窗口管理开发项目：添加/删除、一键启动/停止/重启、文件变更热重载自动重启、实时日志查看与持久化。
 - [BrambleXu/dsh-prompt-profile](https://github.com/BrambleXu/dsh-prompt-profile) — DeepSeek Harness 可复用 Markdown Prompt Profile，支持单轮模型选择、参数替换和状态恢复。
+- [brungcm/dsh-server-resources](https://github.com/brungcm/dsh-server-resources) — 在右侧边栏新增“资源”页，在 Linux、macOS 和 Windows 上实时显示 CPU、内存、交换区和磁盘用量，并列出占用最多的进程、文件夹和文件；只读、无依赖，需要 dsh-better-sidebar。
 - [bujue600-arch/dsh-testgen](https://github.com/bujue600-arch/dsh-testgen) — 自动化单元测试生成：/testgen 命令与 generate_tests 工具，生成、运行并修复测试直至通过（LLM 与离线模板双生成器；支持 vitest/jest/mocha/node:test）。
 - [bushizhanghan/dsh-compaction-audit](https://github.com/bushizhanghan/dsh-compaction-audit) — 压缩质量审计：审出上下文压缩到底丢了什么。读原始会话事件日志，检查会话约束幸存率（用户给的常驻指令—— 不要X、必须Y、只准Z——摘要是否还带着；arXiv 2608.11242 实测各压缩器平均只保留 17%）、摘要幻觉（摘要里 出现了历史中从不存在的路径/版本/端口/标识符）、幽灵引用（"如上所述"指向已不在上下文的内容）、token 记账（摘要几乎和它声称释放的一样大）、无据裁剪。四个 agent 工具，含跨会话扫描并按受损程度排序。纯 确定性，不调 LLM——答错就是规则有 bug，有名字可查。
 - [bushizhanghan/dsh-context-budget](https://github.com/bushizhanghan/dsh-context-budget) — 每轮上下文预算审计：拆解一轮对话在 AGENTS.md、技能目录、工具 schema 与运行时上下文上各花了多少；把"内容 没变却每轮重发"标为纯浪费；排名技能目录膨胀（装 60+ 个技能时，模型每轮要读多少 token 的描述）与各插件的 工具 schema 占比。纯确定性，不调 LLM。四个工具，含跨会话扫描。
