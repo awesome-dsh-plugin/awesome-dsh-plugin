@@ -241,6 +241,22 @@ Publishing your plugin to npm lets storefronts show and sort by download count. 
 - You do not need to tell us. The mapping is picked up automatically from the registry; there is no field to add to your entry, and a hand-written `npm:` key in your yml is rejected. / **不需要通知我们。** 映射会从 registry 自动采集，条目里没有任何字段需要填；在 yml 里手写 `npm:` 会被校验拒绝。
 - No npm package? Your entry works the same, just without a download figure. / 没有 npm 包也一样：条目照常工作，只是没有下载量数字。
 
+#### 发布到 npm 之后，为什么目录里还是旧版本 / Why the list still shows the old version after publishing
+
+两件事各自有节奏，跟收录无关，也不是发布失败：
+
+- **本列表每天重建一次**，不是实时抓取。今天的发布通常要等下一次重建才会出现在条目和下载量里。
+- **DSH 安装插件时有发布等待期**（`minimumReleaseAge`，默认 1440 分钟）。刚发布的版本在等待期内不会被「安装」解析到，浮动范围会落到更早的成熟版本上；要立刻装到新版本，需要按精确版本安装。
+
+所以「发布成功」与「别人能装到」之间可以相差约一天。这是设计，不是故障。
+
+Two independent clocks, neither of them a failed publish:
+
+- **This list rebuilds once a day** rather than scraping on every push, so a release made today usually shows up in the entry and its download figure only after the next rebuild.
+- **DSH applies a release-age window when installing** (`minimumReleaseAge`, 1440 minutes by default). A version published inside that window is not resolvable through a floating range — it falls back to the newest mature version — and pinning the exact version is what installs it immediately.
+
+"Published successfully" and "someone can install it" can therefore be about a day apart. That is by design.
+
 ### Themes & skins / 主题与皮肤
 
 Entries under the **Themes & Appearance / 主题与外观** category automatically appear in the [dsh-market](https://github.com/dsh-market/dsh-market) plugin's dedicated **Themes tab**, where users install, switch, and uninstall them with one click — so put your theme/skin there, not under UI Enhancements. Monorepo subpackages are supported: link the subdirectory directly, e.g. `https://github.com/owner/repo/tree/main/packages/my-theme`.
