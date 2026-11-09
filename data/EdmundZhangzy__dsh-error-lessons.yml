@@ -2,5 +2,5 @@ url: https://github.com/EdmundZhangzy/dsh-error-lessons
 name: EdmundZhangzy/dsh-error-lessons
 category: memory
 description:
-  en: Cross-session error lessons for DSH agents: search past mistakes before handling errors and reuse their verified fixes.
-  zh: DSH 代理的跨会话错误教训库：处理报错前先检索过去踩过的坑，直接复用已验证的解法。
+  en: 'Cross-session error lessons for DSH agents: search past mistakes before handling errors and reuse their verified fixes.'
+  zh: 'DSH 代理的跨会话错误教训库：处理报错前先检索过去踩过的坑，直接复用已验证的解法。'
