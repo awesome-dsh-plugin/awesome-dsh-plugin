@@ -1,0 +1,6 @@
+url: https://github.com/zhangkaiqiu/dsh-dev-launcher
+name: zhangkaiqiu/dsh-dev-launcher
+category: dev
+description:
+  en: Saves per-workspace dev commands behind a header button, starts and stops them as process trees, and exposes four tools so the agent can read the logs.
+  zh: 按工作区保存开发启动命令，在会话头部一键启停并以进程树方式管理，同时注册四个工具让会话直接读日志。
