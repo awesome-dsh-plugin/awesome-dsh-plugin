@@ -1,0 +1,7 @@
+url: https://github.com/hesheng01/dsh-pele/tree/main/plugin
+name: hesheng01/dsh-pele#plugin
+category: docs
+description:
+  en: Draw Mermaid diagrams in DSH conversations through the pele_draw tool, rendered inline as theme-aware SVG cards with zoom and pan plus SVG and PNG downloads.
+  zh: 通过 pele_draw 工具在 DSH 会话中绘制 Mermaid 图表，以内联 SVG 卡片渲染，支持缩放/拖动与 SVG/PNG 下载，跟随明暗主题。
+icon: https://raw.githubusercontent.com/hesheng01/dsh-pele/main/docs/icon-180.png
