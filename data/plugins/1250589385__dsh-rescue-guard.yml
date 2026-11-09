@@ -1,6 +1,6 @@
 url: https://github.com/1250589385/dsh-rescue-guard
 name: 1250589385/dsh-rescue-guard
-tarball: https://github.com/1250589385/dsh-rescue-guard/releases/download/v0.2.1/dsh-rescue-guard-0.2.1.tgz
+tarball: https://github.com/1250589385/dsh-rescue-guard/releases/download/v0.3.1/dsh-rescue-guard-0.3.1.tgz
 category: dev
 description:
   en: 'Standalone rescue for a broken DeepSeek Harness profile: a CLI that runs without DSH diagnoses the crash logs (six classified causes, from real incidents), pre-flights the profile for command-name collisions and files plugins read at construction time, arms a safe mode that loads only official bundles until a healthy boot restores them, and keeps manifest snapshots for rollback. A resident watcher watches the crash-log directories via OS file events — idle costs nothing, and when the loader dies the report is written within seconds, one file overwritten per crash.'
