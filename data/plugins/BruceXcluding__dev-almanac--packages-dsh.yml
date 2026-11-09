@@ -1,0 +1,8 @@
+url: https://github.com/BruceXcluding/dev-almanac/tree/main/packages/dsh
+name: BruceXcluding/dev-almanac#dev-almanac
+category: fun
+tarball: https://github.com/BruceXcluding/dev-almanac/releases/latest/download/dsh-dev-almanac.tgz
+description:
+  en: "Programmer's almanac for DSH: a right-sidebar tab shows today's Chinese almanac (lunar date, do and avoid items mapped to coding tasks, clash, solar term, lucky hours), a daily horoscope for the 12 signs and a fortune-slip draw. Adds the /almanac and /qiuqian commands and the almanac_today tool. Computed offline from the date, with no network or model calls."
+  zh: '程序员黄历：右侧栏标签页显示今日黄历（农历、宜忌翻译成编程活动、冲煞、节气、吉时）、十二星座每日运势和求签；提供 /almanac 与 /qiuqian 命令及 almanac_today 工具。全部按日期离线计算，不联网、不调用模型。'
+icon: https://raw.githubusercontent.com/BruceXcluding/dev-almanac/main/.claude-plugin/icon.png

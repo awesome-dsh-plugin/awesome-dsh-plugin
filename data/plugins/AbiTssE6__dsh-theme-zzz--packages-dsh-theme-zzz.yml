@@ -1,0 +1,7 @@
+url: https://github.com/AbiTssE6/dsh-theme-zzz/tree/master/packages/dsh-theme-zzz
+name: AbiTssE6/dsh-theme-zzz#dsh-theme-zzz
+category: theme
+description:
+  en: 'Zenless Zone Zero inspired dark theme for the Harness Web UI, with a pointer-following hollow background.'
+  zh: '《绝区零》风格的 Harness Web 深色主题，包含随鼠标移动的空洞背景。'
+icon: https://raw.githubusercontent.com/AbiTssE6/dsh-theme-zzz/master/docs/icon-180.png

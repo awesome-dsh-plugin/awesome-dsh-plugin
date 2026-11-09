@@ -1,0 +1,6 @@
+url: https://github.com/Verchiel666/dsh-termux
+name: Verchiel666/dsh-termux
+category: dev
+description:
+  en: 'Installs and runs Android native command-line tools from inside DSH: fetches aarch64 bionic packages from the Termux repository, unpacks them in pure JS and runs them through /system/bin/linker64, with no root, no Shizuku and no external package manager.'
+  zh: '在 DSH 内部安装并运行 Android 原生命令行工具：从 Termux 仓库取 aarch64 bionic 包、纯 JS 解包，再经 /system/bin/linker64 执行，无需 root、Shizuku 或外部包管理器。'

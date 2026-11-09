@@ -1,0 +1,6 @@
+url: https://github.com/Hemuchuan/dsh-bilingual
+name: 逐段翻译 · dsh-bilingual
+category: ui
+description:
+  en: "Adds paragraph-by-paragraph translation and a bilingual view to assistant replies in the DeepSeek Harness desktop app: each Chinese paragraph gets an English translation underneath and each English paragraph gets a Chinese one underneath, behind a session-header toggle; code blocks and formulas stay untranslated, and tables get a translated copy underneath. Translations come from the DeepSeek API (the plugin reuses DSH's saved DEEPSEEK_API_KEY, or a key you paste in its settings), so it needs network access and each uncached paragraph is a billable request."
+  zh: "给 DeepSeek Harness 桌面端的助手回复加逐段翻译与中英双语对照：中文段落下补英文、英文段落下补中文，会话头部有开关；代码块、公式不翻译，表格会生成一张完整的译文表附在下方。译文由 DeepSeek API 生成（插件复用 DSH 已保存的 DEEPSEEK_API_KEY，也可在设置里粘贴 Key），需要联网，每段未命中缓存的文本都会产生一次计费请求。"

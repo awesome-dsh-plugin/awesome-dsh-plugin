@@ -1,0 +1,6 @@
+url: https://github.com/Gpan666/dsh-plugin
+name: Gpan666/dsh-plugin
+category: model
+description:
+  en: Switches to the next healthy model candidate before the next agent step when the current model has been marked unhealthy.
+  zh: 当前模型被判定不可用时，在下一步执行前切换到下一个健康的候选模型。

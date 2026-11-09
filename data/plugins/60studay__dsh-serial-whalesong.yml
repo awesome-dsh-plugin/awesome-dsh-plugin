@@ -1,0 +1,6 @@
+url: https://github.com/60studay/dsh-serial-whalesong
+name: 60studay/dsh-serial-whalesong
+category: tools
+description:
+  en: Serial-port toolkit for DSH - 9 tools plus a web UI where an AI agent and a human share one UART line, with auto port matching, hex/text frames, timestamps, scheduled sends, rule-based auto-recovery and appearance themes. The serial engine runs on Python 3.8+ — DSH's bundled interpreter is used when present, otherwise python / py -3 on PATH.
+  zh: DSH 的串口工具箱：9 个工具 + 网页版，人与 AI 共用一根串口线；自动匹配端口、文字/十六进制、逐帧时间戳、定时发送、规则自动处置、外观主题，已真机验证 CH340 与 HC-05。串口内核是 Python 3.8+，默认用 DSH 自带的解释器，找不到时用 PATH 上的 python / py -3。

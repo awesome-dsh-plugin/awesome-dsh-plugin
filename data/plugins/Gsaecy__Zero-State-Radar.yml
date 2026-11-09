@@ -1,0 +1,8 @@
+url: https://github.com/Gsaecy/Zero-State-Radar
+name: Gsaecy/Zero-State-Radar
+category: theme
+description:
+  en: 'Cyberpunk HUD theme for DeepSeek Harness. While a session is empty, a radar sweep reveals a dotted world map, network arcs and a telemetry panel; sending the first message removes all of it.'
+  zh: 赛博朋克皮肤：空会话时扫描线自上而下扫过，扫过处浮现点阵世界地图与城市航线，左下角带信号监控；发出第一条消息即整体退场。
+icon: https://raw.githubusercontent.com/Gsaecy/Zero-State-Radar/main/assets/icon-180.png
+tarball: https://github.com/Gsaecy/Zero-State-Radar/releases/latest/download/dsh-cyberdeck.tgz

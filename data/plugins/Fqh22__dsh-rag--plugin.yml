@@ -1,0 +1,6 @@
+url: https://github.com/Fqh22/dsh-rag/tree/main/plugin
+name: Fqh22/dsh-rag#plugin
+category: memory
+description:
+  en: 'Per-project long-term memory for DeepSeek Harness: a panel to browse, search and edit what each project knows, and a pointer injected after the first user message telling the agent to read the handoff pack. The memory store itself is a local MCP server (Python + SQLite) in the same repository; install the plugin from npm, then clone the repo, set up the MCP server per the README, and the plugin locates the checkout through DSH_RAG_ROOT or a common install path. Handoff packs are ordered for prompt-cache reuse: stable baseline first, facts appended at the end.'
+  zh: '给 DeepSeek Harness 加一层按项目分类的长期记忆：面板可浏览、检索、编辑每个项目记得什么，并在会话第一句后注入一条「去读 handoff pack」的指针。记忆库本体是同仓库里的本地 MCP server（Python + SQLite）；插件从 npm 安装，之后按 README 克隆仓库并配置 MCP，插件会通过 DSH_RAG_ROOT 或常见安装位置找到仓库。上下文包按「稳定基线在前、事实追加在后」排序，用来复用 prompt 缓存。'
