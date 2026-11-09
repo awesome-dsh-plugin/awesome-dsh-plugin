@@ -1,0 +1,6 @@
+url: https://github.com/almazom/dsh-needs-attention-sidebar
+name: almazom/dsh-needs-attention-sidebar
+category: ui
+description:
+  en: 'Hospital-triage board for the DSH sidebar: groups sessions whose latest turn ended in an error (red = fatal, amber = 429/rate-limit) plus working/waiting/finished tabs, ticking durations, dismiss with undo, unseen markers, EN/中文 auto-locale, a sessions-eye hide button and a gated nav fold. On-request log scan through a guarded same-origin route — no background daemons, zero core edits.'
+  zh: 'DSH 侧边栏的医院分诊板：把最近回合以错误收场的会话分组展示（红 = 致命、琥珀 = 429/限流），并附运行中/等待/已完成标签页、跳动时长、可撤销忽略、未读标记、中英文自动切换、会话列表隐藏眼睛与按需出现的导航折叠。日志按请求经带守卫的同源路由扫描 —— 无后台常驻、零核心改动。'
