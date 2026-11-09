@@ -1,0 +1,7 @@
+url: https://github.com/subeichen1/dsh-auto-effort
+name: subeichen1/dsh-auto-effort
+category: model
+description:
+  en: 'Per-turn reasoning-effort routing that keeps the current provider/model: judges each user message (retry or correction, explicit intent, length, code blocks, errors, task scope) and sets reasoningEffort to a level the model actually declares, so Magpie and other OpenAI-compatible models work too. Ships a composer chip with an auto/manual switch and per-session decision history.'
+  zh: '按每轮任务自动调节思考强度：判定用户消息（重试或纠正、显式意图、长度、代码块、报错、任务范围）后，从模型真正声明的 effort 列表中选择并设置 reasoningEffort，不切换 provider/model，喜鹊（Magpie）等第三方模型同样生效；输入框旁提供档位胶囊、自动/手动切换与会话内判定记录。'
+icon: https://raw.githubusercontent.com/subeichen1/dsh-auto-effort/main/assets/icon-180.png
