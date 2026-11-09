@@ -1,0 +1,6 @@
+url: https://github.com/ASALULU/dsh-conversation-trash
+name: ASALULU/dsh-conversation-trash
+category: session
+description:
+  en: 'Reversible conversation deletion for DeepSeek Harness: a 30-day trash with undo, restore and permanent purge.'
+  zh: '可撤销的对话删除：把会话日志与列表缓存移入 30 天回收站，支持撤销、恢复与彻底删除。'

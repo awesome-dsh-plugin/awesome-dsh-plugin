@@ -1,0 +1,7 @@
+url: https://github.com/bloodarea/dsh-agent-team-ui-testing
+name: bloodarea/dsh-agent-team-ui-testing
+category: browser
+icon: https://raw.githubusercontent.com/bloodarea/dsh-agent-team-ui-testing/main/icon.png
+description:
+  en: 'Frontend GUI debugging and testing for DeepSeekHarness agents: 36 browser_* tools for structured GUI automation, visual comparison, dynamic frame analysis and network debugging on Web/Chromium.'
+  zh: '面向 DeepSeekHarness 的前端 GUI 调试与测试：36 个 browser_* 工具，覆盖结构化 GUI 操作、视觉比对、动态帧分析与网络调试（Web/Chromium）。'

@@ -1,0 +1,7 @@
+url: https://github.com/Asterlyra/dsh-panel-organizer
+name: Asterlyra/dsh-panel-organizer
+category: ui
+description:
+  en: 'Hides unused panels in the left rail grouped by origin, and turns the rail More button into an expand/collapse toggle that lays out every panel.'
+  zh: '把左侧栏用不到的面板按来源分组收起；「更多」按钮变成一键展开/折叠全部面板的开关。'
+tarball: https://github.com/Asterlyra/dsh-panel-organizer/releases/latest/download/dsh-panel-organizer.tgz

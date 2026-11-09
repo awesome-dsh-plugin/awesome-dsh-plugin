@@ -1,0 +1,5 @@
+url: https://github.com/renorai/dsh-renor
+name: renorai/dsh-renor
+category: memory
+description:
+  en: Connects DeepSeek Harness to the hosted Renor memory MCP server over Streamable HTTP, using a Renor API key from RENOR_API_KEY, so the model can call Renor's recall and save tools. It is a configuration bundle with no code of its own.

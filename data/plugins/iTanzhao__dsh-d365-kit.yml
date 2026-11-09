@@ -1,0 +1,6 @@
+url: https://github.com/iTanzhao/dsh-d365-kit
+name: iTanzhao/dsh-d365-kit
+category: tools
+description:
+  en: 'Dynamics 365 CE / Dataverse toolkit for DSH: 15 tools for querying metadata and solution layers across environments, snapshots and diffs, field impact analysis, migration risk assessment, GitLab merge-request checks, contract drift, environment health, and review-gated metadata writes.'
+  zh: '面向 Dynamics 365 CE / Dataverse 的 DSH 工具箱：15 个工具，支持跨环境查询元数据与解决方案层、快照与差异、字段影响面反查、迁移风险评估、GitLab MR 检查、契约漂移、环境健康，以及需人工确认的元数据写入。'

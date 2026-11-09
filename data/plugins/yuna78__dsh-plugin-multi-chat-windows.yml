@@ -1,0 +1,7 @@
+url: https://github.com/yuna78/dsh-plugin-multi-chat-windows
+name: yuna78/dsh-plugin-multi-chat-windows
+category: session
+description:
+  en: 'Side-by-side native chat windows for DSH Web GUI — open several conversations beside the main chat, tile them with one click, minimize into a live status dock, or pop them out into their own browser window.'
+  zh: 话分两头：把 AI 对话从「切来切去」变成「并排开火」——每个会话一枚原生小窗，贴着主对话随开随用；一键平铺所有窗口（顶对齐·同高·紧贴），最小化到带实时状态灯的底部停靠条（转圈=工作中·绿色=刚完成·黄色=待审批·灰色=空闲），真浏览器里还能把会话弹出成独立浏览器窗口。
+icon: https://raw.githubusercontent.com/yuna78/dsh-plugin-multi-chat-windows/main/docs/icon-256.png

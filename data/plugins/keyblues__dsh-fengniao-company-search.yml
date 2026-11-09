@@ -2,5 +2,5 @@ url: https://github.com/keyblues/dsh-fengniao-company-search
 name: keyblues/dsh-fengniao-company-search
 category: tools
 description:
-  en: 'Riskbird (fengniao) company lookup for the agent: `fengniao_search_company` resolves a Chinese company name to its Riskbird entid, and `fengniao_company_dimension` returns one of 11 dimensions keyed by that entid — basic information, shareholders, executives, outbound investments, registration changes, court enforcement, dishonest judgment debtor, consumption restriction, abnormal operation, serious illegality and administrative penalties. The API key is saved from the plugin page into the harness credential store.'
-  zh: '风鸟（Riskbird）企业查询工具：`fengniao_search_company` 按中文企业名解析出 entid，`fengniao_company_dimension` 按 entid 查询 11 个维度之一——企业基本信息、股东、高管、对外投资、工商变更、被执行人、失信被执行人、限制高消费、经营异常、严重违法、行政处罚；API Key 在插件页保存到 Harness 凭据库。'
+  en: 'Look up Chinese companies inside the conversation: name a company and get its business registration, shareholders, executives, outbound investments and registration changes, plus judicial and operating-risk records such as enforcement, dishonest judgment debtor, consumption restriction, abnormal operation, serious illegality and administrative penalties (11 dimension groups). Results render as conversation cards with fields and the raw payload on expand, and the API key is saved from the plugin page into the Harness credential store.'
+  zh: '在对话里直接查中国企业：说出公司名就能拿到工商基本信息、股东、高管、对外投资、工商变更，以及被执行、失信、限制高消费、经营异常、严重违法、行政处罚等司法与经营风险（共 11 类维度）；结果以对话卡片呈现，展开可看字段与原始数据，API Key 在插件页保存到 Harness 凭据库。'

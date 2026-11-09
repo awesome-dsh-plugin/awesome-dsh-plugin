@@ -1,0 +1,7 @@
+url: https://github.com/xuenann/dsh-workspace-purge
+name: xuenann/dsh-workspace-purge
+category: session
+description:
+  en: Deletes a whole workspace together with its conversations in one pass - session logs, projection caches and workspace registrations - and optionally sends the workspace folder to the Windows Recycle Bin (on other platforms deletions are permanent).
+  zh: 整块删除工作区及其对话：会话日志、投影缓存与工作区登记一次清掉，可选把工作区目录移入回收站（仅 Windows；其它平台直接永久删除）。
+icon: https://raw.githubusercontent.com/xuenann/dsh-workspace-purge/main/assets/icon-180.png

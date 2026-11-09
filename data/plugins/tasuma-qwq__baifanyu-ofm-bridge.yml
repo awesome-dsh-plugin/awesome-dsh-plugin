@@ -1,6 +1,7 @@
 url: https://github.com/tasuma-qwq/baifanyu-ofm-bridge
 name: tasuma-qwq/baifanyu-ofm-bridge
 category: model
+
 description:
-  en: "Adds OFM lane and effort selection on top of the Our Free Model plugin (Ebony-Vinyl/dsh-our-free-model, installed separately with its free public pool enabled), plus public-pool setup, cooldown tracking, and a local DSH connection check."
-  zh: "在另行安装并启用免费公开池的 Our Free Model 插件（Ebony-Vinyl/dsh-our-free-model）之上，提供 OFM 渠道与档位选择、公开池配置、冷却记录和本机 DSH 接入验证。"
+  en: 'Connects DSH Web and qq-bridge to OFM, defaulting to the DeepSeek public pool while preserving reasoning effort and manual model selection; loads the official OFM dependency when absent and reports account-rotation receipts.'
+  zh: '为 DSH Web / qq-bridge 接入 OFM，默认先选 DeepSeek 免费池并保留思考档位；缺少 OFM 时装载官方依赖，支持自有账号与轮换回执，不限制手动选模。'

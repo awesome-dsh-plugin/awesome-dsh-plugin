@@ -1,0 +1,6 @@
+url: https://github.com/SAOS-3624/dsh-watch-together
+name: SAOS-3624/dsh-watch-together
+category: voice
+description:
+  en: 'Watch a video together with a text-only agent: with ffmpeg and the bundled browser extension reporting your real playback position (not a timer), it hands over one segment at a time just before that segment ends. It ships no TTS engine — it emits timed speech events, and speaking them aloud needs your own voice/TTS setup.'
+  zh: '和只有文字的智能体一起看视频：需要 ffmpeg 和浏览器扩展上报真实播放位置（不是定时器），在每段结束前把画面和台词交到它手上。插件不带 TTS 引擎，只按时间轴发台词事件，要出声需自行配置语音/TTS。'

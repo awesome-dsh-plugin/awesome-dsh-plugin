@@ -1,0 +1,6 @@
+url: https://github.com/elfgzp/dsh-cua-macos
+name: elfgzp/dsh-cua-macos
+category: tools
+description:
+  en: 'macOS Computer Use for DeepSeek Harness: the agent reads accessibility trees, captures screenshots and drives real desktop apps, mounted on the 0.2.1-rc.5 line with a separately built native helper. macOS only.'
+  zh: '给 DeepSeek Harness 接入 macOS 电脑操控：agent 读取辅助功能树、截图并驱动真实桌面应用，挂在 0.2.1-rc.5 这条线上，原生 helper 需单独构建。仅支持 macOS。'

@@ -1,0 +1,8 @@
+url: https://github.com/Penguin-SAMA/dsh-conversation-links
+name: Penguin-SAMA/dsh-conversation-links
+category: session
+description:
+  en: Reference other conversations from the current one — type @ to attach a session's record, drag a sidebar conversation into the composer, or open any conversation, tick single messages and insert them into another one.
+  zh: 在当前对话里引用别的对话：输入 @ 附加某段对话的记录，从左侧栏把对话拖进输入框，或打开任意对话、勾选其中几条消息插入到另一个对话中。
+icon: https://raw.githubusercontent.com/Penguin-SAMA/dsh-conversation-links/main/icon.png
+tarball: https://github.com/Penguin-SAMA/dsh-conversation-links/releases/latest/download/dsh-conversation-links.tgz

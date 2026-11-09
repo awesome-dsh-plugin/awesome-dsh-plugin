@@ -1,0 +1,7 @@
+url: https://github.com/constraint21/dsh-long-message-fold
+name: constraint21/dsh-long-message-fold
+category: ui
+description:
+  en: 'Folds a user message whose body renders taller than 360px in the Web chat down to 360px with a fading bottom edge and an Expand/Collapse toggle. Short messages keep their exact original look, and the expanded state is remembered per message while the page stays open.'
+  zh: '把 Web 对话里正文高度超过 360px 的用户消息折成 360px、底部渐隐，并给一个「展开全文 / 收起」按钮；短消息外观完全不变，展开状态在页面存活期间按消息记住。'
+icon: https://raw.githubusercontent.com/constraint21/dsh-long-message-fold/main/assets/icon-180.png
