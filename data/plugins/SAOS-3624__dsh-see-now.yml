@@ -1,0 +1,6 @@
+url: https://github.com/SAOS-3624/dsh-see-now
+name: SAOS-3624/dsh-see-now
+category: vision
+description:
+  en: 'Lets a text-only agent watch a live screen or camera feed: every frame is scored by how much the picture changed, only the ones that matter are packed into one numbered sheet with an audio envelope, so the model looks at what actually changed instead of a screenshot every few seconds.'
+  zh: '让只有文字的智能体「看」实时屏幕或摄像头：每帧按画面变化量打分，只把真正变了的帧拼成一张带编号、带音轨条的宫格图——看视频、看演示、看游戏都行，token 只花在变了的地方。'

@@ -1,0 +1,6 @@
+url: https://github.com/kkmingjun/dsh-kingspeak
+name: kkmingjun/dsh-kingspeak
+category: voice
+description:
+  en: 'Voice dictation scratchpad: realtime speech-to-text into timestamped, per-session blocks, with one-click insert into the conversation composer. Requires the official DSH voice-input bundle (@deepseek-ai/dsh-experimental-voice-input-bundle); the speech model downloads on first use.'
+  zh: '语音听写文本板：边说边出字，生成按会话隔离的时间戳文本块，一键加入会话输入框。 需先安装 DSH 官方语音输入插件 @deepseek-ai/dsh-experimental-voice-input-bundle，语音模型在首次使用时下载。'

@@ -1,0 +1,6 @@
+url: https://github.com/ZCasual/dsh-context-diet
+name: ZCasual/dsh-context-diet
+category: session
+description:
+  en: "Elides stale, oversized plain-text tool results from the model-visible session surface once the prompt cache goes cold, replacing each with a stub that keeps the tail lines and any error lines, and reports per-request and cumulative savings in the composer footer."
+  zh: "在提示缓存转冷后，把陈旧、过大的纯文本工具结果替换为带末尾行与错误行预览的 stub，并在输入框下方显示每请求与累计节省量。"

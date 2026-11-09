@@ -1,0 +1,7 @@
+url: https://github.com/lijiaqi-AI-Product-Manager/dsh-agent-compare
+name: lijiaqi-AI-Product-Manager/dsh-agent-compare
+category: workflow
+description:
+  en: "AgentCompare provides A/B workflows for one Vite task in DSH: run two implementations, compare live previews with shared checks, choose blind, and review adoption against current project edits. Requires a root-level Vite project in a Git repository with at least one commit."
+  zh: "AgentCompare A/B 对比：同一需求做两版 Vite 应用，在 DSH 主对话中并排体验、统一验收、盲选，再审查采用到当前项目。复用已有模型配置；适用于本地 Git 仓库（至少一次提交）的根目录 Vite 前端。"
+icon: https://raw.githubusercontent.com/lijiaqi-AI-Product-Manager/dsh-agent-compare/main/assets/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/jtsinlio/dsh-pet-jt
+name: jtsinlio/dsh-pet-jt
+category: fun
+description:
+  en: 'Desktop pet fork of dsh-pet that can be installed alongside the original (separate package id, commands and data directory), adding scheduled reminders with custom bubble text and a random show/hide cycle.'
+  zh: 'dsh-pet 的增强分支，可与原版同装（包名、命令与数据目录各自独立）：新增定时提醒（自定义气泡语句）与随机出现/隐藏循环。'

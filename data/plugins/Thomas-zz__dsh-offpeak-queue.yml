@@ -1,0 +1,6 @@
+url: https://github.com/Thomas-zz/dsh-offpeak-queue
+name: Thomas-zz/dsh-offpeak-queue
+category: workflow
+description:
+  en: 'Off-peak task queue: typing /闲时任务 in a conversation queues a task with no model call at queue time, and DSH runs it in that same conversation during the off-peak hours of the model that conversation uses (DeepSeek off-peak half price, GLM Coding Plan half credits).'
+  zh: '闲时任务队列：在对话中输入 /闲时任务 即可入队，入队不产生模型调用；DSH 会在对话所用模型的闲时时段（DeepSeek 半价、GLM Coding Plan 半积分）自动在同一条对话中执行任务。'

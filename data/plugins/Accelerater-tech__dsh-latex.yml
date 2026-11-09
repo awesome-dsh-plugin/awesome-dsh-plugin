@@ -1,0 +1,7 @@
+url: https://github.com/Accelerater-tech/dsh-latex
+name: Accelerater-tech/dsh-latex
+category: tools
+description:
+  en: 'Compiles LaTeX with the TeX Live installed on the machine: one `latex` tool typesets a formula into an SVG, PNG or PDF and a whole document into a PDF (Chinese text switches to xelatex with ctexart), writes the file into the workspace and returns a Markdown reference to it. A system-prompt section asks the model to write `$...$` and `$$...$$` instead of code fences, and when no TeX Live is found a banner above the composer offers a one-click BasicTeX or TinyTeX install.'
+  zh: '用本机已装的 TeX Live 真编译 LaTeX：`latex` 工具把一个公式排成 SVG、PNG 或 PDF，把整份文档排成 PDF（正文含中文时自动切 xelatex + ctexart），产物写进工作区并返回可直接引用的 Markdown 链接。同时注入系统提示词段落，让模型用 `$...$` / `$$...$$` 而不是代码块写公式；本机没有 TeX Live 时，输入框上方会给出 BasicTeX / TinyTeX 一键安装。'
+icon: https://raw.githubusercontent.com/Accelerater-tech/dsh-latex/main/assets/icon-180.png

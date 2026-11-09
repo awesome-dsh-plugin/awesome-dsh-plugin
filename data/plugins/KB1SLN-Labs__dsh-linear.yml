@@ -1,7 +1,7 @@
 url: https://github.com/KB1SLN-Labs/dsh-linear
 name: KB1SLN-Labs/dsh-linear
 category: tools
-tarball: https://github.com/KB1SLN-Labs/dsh-linear/releases/download/v0.2.3/kb1slnlabs-dsh-linear.tgz
+tarball: https://github.com/KB1SLN-Labs/dsh-linear/releases/download/v0.2.5/kb1slnlabs-dsh-linear.tgz
 description:
   en: "Linear tools for DeepSeek Harness: 26 model-facing tools over the Linear GraphQL API (issues, comments, relations, teams, states, labels, projects, cycles, users) plus a linear_graphql escape hatch. Requires a Linear personal API token."
   zh: "DeepSeek Harness 的 Linear 工具：26 个基于 Linear GraphQL API 的模型工具（议题、评论、关联、团队、状态、标签、项目、周期、用户），外加 linear_graphql 逃生口。需自备 Linear 个人 API token。"

@@ -1,0 +1,6 @@
+url: https://github.com/FenrirCait/dsh-fail-guard
+name: FenrirCait/dsh-fail-guard
+category: workflow
+description:
+  en: 'Stops the agent after N consecutive failures on the same tool. Instead of another retry it pushes a four-part stop instruction: what was tried, the exact error text, the likely cause, and what the user must do. Detection reads real tool results (isError or a non-zero shell exit code) and mirrors them through agent.steer, so the agent sees it as an inbound message rather than a log line.'
+  zh: '同一工具连续失败达阈值时叫停。不是再试一次，而是推送一条四部分停手指令：试过什么、完整错误原文、初判原因、需要用户做什么。判定读真实工具结果（isError 或 shell 退出码非零），通过 agent.steer 回灌，让 agent 把它当成收到的消息而不是日志。'

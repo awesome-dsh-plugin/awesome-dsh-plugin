@@ -1,0 +1,7 @@
+url: https://github.com/Weihao654/dsh-workflow/tree/main/plugins/l1-presets
+name: Weihao654/dsh-workflow#l1-presets
+category: workflow
+description:
+  en: 'Four agent presets for the default plan-native workflow in DeepSeek Harness: plan plans and delegates, work coordinates execution, code owns implementation changes, and review performs independent read-only audits. Each role has a defined tool-permission matrix. Works with the sibling l2-protocol bundle for opt-in controlled rounds.'
+  zh: '为 DeepSeek Harness 提供四个 Plan 原生工作流角色预设：plan 规划与分派、work 协调执行、code 负责源码修改、review 独立只读审核。每个角色具有明确的工具权限矩阵，可配合 l2-protocol 执行显式启用的受控轮次。'
+icon: https://raw.githubusercontent.com/Weihao654/dsh-workflow/main/assets/icon-1024.png

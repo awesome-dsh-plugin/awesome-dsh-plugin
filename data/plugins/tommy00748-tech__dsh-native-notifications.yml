@@ -1,0 +1,6 @@
+url: https://github.com/tommy00748-tech/dsh-native-notifications
+name: tommy00748-tech/dsh-native-notifications
+category: notify
+description:
+  en: 'Raise native desktop notifications from DSH itself for approvals, questions, finished turns, errors and sign-in prompts, attributed to the DeepSeek Harness app with click-to-open; the chime is synthesised in-page and can be picked from presets or authored as a note sequence in Settings.'
+  zh: '由 DSH 自己弹出的原生桌面通知：待授权、等待作答、任务完成、出错与需要登录时提醒，归属 DeepSeek Harness 应用、点击回到会话；提示音在页面内实时合成，可在设置里选预设或自定义音序。'

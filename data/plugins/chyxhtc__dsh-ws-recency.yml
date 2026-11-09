@@ -2,5 +2,5 @@ url: https://github.com/chyxhtc/dsh-ws-recency
 name: chyxhtc/dsh-ws-recency
 category: session
 description:
-  en: 'Sidebar session management: workspace groups sorted by latest activity, history older than N days folded behind one control, a global pinned section for native pins, manual "needs follow-up" marks, and session delete into a recoverable trash.'
-  zh: 'DSH 侧栏会话管理：工作区分组按最近活跃排序，超过 N 天的历史折叠成一个「展开历史」控件，原生置顶会话汇总到顶部置顶区，可手动标记「需要跟进」，删除会话移入可恢复的回收站。'
+  en: "Sidebar session management for DeepSeek Harness: workspace groups sorted by latest activity, history folded behind one control, a global pinned section, running/unread/follow-up marks, delete into a restorable trash whose panel also manages archived sessions, per-session token statistics split by tool (arguments vs results), moving a session to another workspace, and a scan that re-attaches sessions missing from every workspace."
+  zh: "DSH 侧栏会话管理：工作区分组按最近活跃排序，过期历史折叠成一个「展开历史」控件，所有置顶会话汇总到顶部置顶区，运行中/未读/需跟进三色标记，删除会话移入可恢复的回收站（面板同时管理已归档会话），按工具拆分、参数与结果分开的 token 消耗统计，把会话移动到另一个工作区，以及一键把游离会话重新挂回工作区。"

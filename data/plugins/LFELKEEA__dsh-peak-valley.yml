@@ -1,0 +1,8 @@
+url: https://github.com/LFELKEEA/dsh-peak-valley
+name: LFELKEEA/dsh-peak-valley
+category: workflow
+description:
+  en: 'Windows-only DSH plugin that stops SnowLuma and local voice services during Beijing weekday peak hours and starts them again off-peak.'
+  zh: '仅支持 Windows 的 DSH 插件：按北京时间工作日峰时自动停止 SnowLuma 与本地语音服务，谷时自动拉起。'
+icon: https://raw.githubusercontent.com/LFELKEEA/dsh-peak-valley/main/assets/icon-180.png
+tarball: https://github.com/LFELKEEA/dsh-peak-valley/releases/latest/download/dsh-peak-valley.tgz

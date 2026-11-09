@@ -2,5 +2,5 @@ url: https://github.com/Zoria-Lind/dsh-ecolink/tree/main/adapter
 name: Zoria-Lind/dsh-ecolink#adapter
 category: memory
 description:
-  en: 'DSH adapter bridging DeepSeek web chat and DeepSeek Harness with automatic DSM-tag harvesting, memory injection and write-back, full-answer saving on the web, a DSH sidebar for browsing and manual injection, named-entry retrieval, general/non-general classification, and transactional memory compression; works with the separately loaded Chrome/Edge extension in extension/ and the local @zoria-lind/dsh-ecolink-service, which the adapter can start automatically.'
-  zh: '跨端记忆的 DSH 适配器：支持 DSM 短标签自动捕获入池、记忆注入与写回、网页完整回答保存、DSH 侧栏浏览与手动注入、指定条目读取、通用/非通用分类及事务化记忆压缩；配合需另行加载的 extension/ 目录下 Chrome/Edge 扩展，以及适配器可自动启动的本地 @zoria-lind/dsh-ecolink-service 服务。'
+  en: 'Shares a local memory pool between DeepSeek web chat and DSH, with automatic DSM-tag capture, full-answer saving, named retrieval, and sidebar injection. The optional desktop patch for DSH 0.2.2-rc.1 adds same-window DeepSeek chat, selection-to-memory, and zoom. Chrome/Edge extension is optional and used for external browser chat.'
+  zh: '让 DeepSeek 网页与 DSH 共用本地记忆池，支持 DSM 短标签自动入池、保存完整回答、指定条目读取和侧栏注入。可选桌面补丁支持 DSH 0.2.2-rc.1，提供同窗 DeepSeek、划选入池和缩放。Chrome/Edge 扩展供外部浏览器按需安装。'

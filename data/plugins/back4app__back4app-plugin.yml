@@ -1,0 +1,6 @@
+url: https://github.com/back4app/back4app-plugin
+name: back4app/back4app-plugin
+category: skill
+description:
+  en: Skill that deploys a folder to a public HTTPS address on Back4app with the Back4app CLI, on a temporary account with a claim link to keep the web app.
+icon: https://raw.githubusercontent.com/back4app/back4app-plugin/main/assets/back4app.png

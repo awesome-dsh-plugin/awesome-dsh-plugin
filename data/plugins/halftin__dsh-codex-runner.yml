@@ -1,0 +1,7 @@
+url: https://github.com/halftin/dsh-codex-runner
+name: halftin/dsh-codex-runner
+category: workflow
+description:
+  en: 'Runs local Codex CLI tasks from DSH on Windows with background execution, progress queries, follow-up instructions, completed chat records, and optional supervision; requires Node 22.23.4+, DSH >=0.2.1-rc.3 <0.3.0, and an installed, authenticated Codex CLI.'
+  zh: '在 Windows 的 DSH 中运行本机 Codex CLI 任务，支持后台执行、进度查询、追加指令、已完成聊天记录展示及可选监督；需要 Node 22.23.4+、DSH >=0.2.1-rc.3 <0.3.0，以及已安装并登录的 Codex CLI。'
+tarball: https://github.com/halftin/dsh-codex-runner/releases/download/v0.5.3-beta/dsh-codex-runner-0.5.3-beta.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/hulibuld/dsh-hover-dict
+name: hulibuld/dsh-hover-dict
+category: usage
+description:
+  en: "Looks up English words in chat replies by click or selection, showing part of speech, Chinese meaning and exam tags; selecting a pure-English sentence translates it. Ships an offline dictionary: 20,499 entries, 8,960 with bilingual examples, 6,374 with root analysis."
+  zh: "点选或划选聊天回复里的英文单词，显示词性、中文释义与考纲标签；划选纯英文句子翻译成中文。词库离线内置：20,499 词条，8,960 个带双语例句，6,374 个带词根分析。"
