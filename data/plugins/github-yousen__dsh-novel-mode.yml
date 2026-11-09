@@ -11,8 +11,8 @@ category: workflow
 # Both descriptions are quoted: the en string contains ": " (colon + space),
 # which unquoted would be parsed as a nested YAML key.
 description:
-  en: 'A DeepSeek Harness plugin that adds a 小说模式 (Novel Mode) button and a /novel command: entering the mode materializes a bundled .dsh working copy of novel-writing skills, subagent roles, PowerShell and Python scripts, templates, config and rules into the current project, then routes the model through the constitution, outline, design, writing, batch and validation stages.'
-  zh: '把长篇小说写作流程接入 DeepSeek Harness：新增「小说模式」按钮与 /novel 命令，进入模式时把随包附带的技能、子代理角色、PowerShell 与 Python 脚本、模板、配置与规则物化到当前项目的 .dsh/ 目录，并按宪法、大纲、设计、写作、批量、校验各阶段引导模型。'
+  en: 'A DeepSeek Harness plugin that adds 小说模式 (Novel Mode) as a selectable entry in the session mode dropdown: an agent preset with a novel-writing persona and the standard tool set, plus 21 runtime skills and a silently materialized .dsh working copy of subagent roles, PowerShell and Python scripts, templates, config and rules for constitution, outline, design, writing, batch and validation.'
+  zh: '为 DeepSeek Harness 的会话模式下拉框新增可选「小说模式」：一个带写作 persona 与标准工具集的 Agent 预设，外加 21 个运行时技能，并把子代理角色、PowerShell 与 Python 脚本、模板、配置与规则静默物化到 .dsh/ 目录，供宪法、大纲、设计、写作、批量、校验各阶段使用。'
 # icon: OMITTED. The catalog tile accepts ONE GitHub-hosted RASTER image only
 #   (png / jpg / jpeg / webp), drawn at ~96px, square preferred. SVG is REFUSED
 #   and third-party image hosts are REFUSED. The plugin ships icon.svg for the
