@@ -1,0 +1,6 @@
+url: https://github.com/yhPrime/dsh-Engram
+name: yhPrime/dsh-Engram
+category: memory
+description:
+  en: 'Experience and skill engine with a sidebar console and exp_record / exp_recall / exp_feedback / exp_consolidate / exp_type tools, stored in a local JSON file.'
+  zh: '经验与技能引擎：左侧栏「经验库」控制台，注册 exp_record / exp_recall / exp_feedback / exp_consolidate / exp_type 五个工具，数据存本地 JSON 文件。'
