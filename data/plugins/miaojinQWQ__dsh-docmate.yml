@@ -1,6 +1,7 @@
 url: https://github.com/miaojinQWQ/dsh-docmate
 name: miaojinQWQ/dsh-docmate
 category: docs
+icon: https://raw.githubusercontent.com/miaojinQWQ/dsh-docmate/main/assets/icon-180.png
 description:
   en: 'Immersive reading desk: md / docx / pdf render in the centre pane, and the right column is one ordinary Harness session per document that has already been fed the whole text, the research memory and the existing highlights. Select a sentence to ask about it; scanned PDFs and images have no text layer, so a marquee drag captures that region and sends it to a vision model under a turn-scoped runtime brake (max 2 steps, per-step output cap, every tool call denied before dispatch, 45 s cancel). Highlights are anchored as character offsets and painted with the CSS Custom Highlight API, so they survive reloads. Also KaTeX math, outline, in-document search and a draggable three-column layout. Zero runtime dependencies: pdf.js and KaTeX are vendored.'
   zh: '沉浸式研究区：md / docx / pdf 渲染在中间面板，右栏是每篇文档一条的普通 Harness 会话，已经读过全文、研究记忆和已有划线。划词即问；扫描件和图片没有文字层，拖一个框把区域发给识图模型，并带一层轮次级运行时刹车（最多 2 步、单步输出上限、工具调用在 dispatch 前拒绝、45 秒取消）。划线用字符偏移锚点 + CSS Custom Highlight API 绘制，刷新后仍在。另有 KaTeX 公式、目录、文档内搜索与三栏可拖拽。零运行时依赖：pdf.js 与 KaTeX 已 vendor 在仓库里。'
