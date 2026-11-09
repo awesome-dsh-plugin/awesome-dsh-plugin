@@ -1,0 +1,6 @@
+url: https://github.com/amyaxy/dsh-prompt-boost
+name: amyaxy/dsh-prompt-boost
+category: ui
+description:
+  en: 'Prompt enhancement for the DSH composer, with a model picker that lists the models the host actually offers: a Boost button beside the composer (or Ctrl+Alt+B) sends the current draft to a model on the Host, shows the rewrite in a before/after overlay, and replaces the draft only when you confirm, leaving an Undo for the original. Settings hold the enable switch, a provider/model choice rendered as a grouped dropdown built from the live provider list (including configurable providers that are not set up yet) rather than free-text fields, temperature, output limit, timeout and optional custom instructions. Empty or reasoning-only model answers are reported with their real cause instead of a generic failure, and the Host endpoint only answers loopback requests from the same origin.'
+  zh: 'DSH 输入框的提示词增强，并带一个列出宿主实际可用模型的下拉选择器：输入框旁的「增强」按钮（或 Ctrl+Alt+B）把当前草稿交给宿主侧的模型改写，以原文/改写对照的浮层预览，只有确认后才替换草稿，并保留恢复到原始草稿的撤销入口。设置页含启用开关、以分组下拉框呈现的提供商/模型选择（选项来自实时提供商列表，含尚未配置但可激活的提供商，而非自由文本输入）、温度、输出上限、超时与可选的自定义指令。模型返回空内容或只返回推理时给出真实原因而非笼统失败；宿主接口只响应本机同源请求。'
