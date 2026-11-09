@@ -1,0 +1,6 @@
+url: https://github.com/CQin04/dsh-playwright-mcp
+name: CQin04/dsh-playwright-mcp
+category: browser
+description:
+  en: Configuration bundle that connects Microsoft's official @playwright/mcp to your running Chrome through the Playwright extension, so the agent can drive your logged-in tabs.
+  zh: 配置型插件：通过 Microsoft 官方 @playwright/mcp 与 Chrome 扩展，让智能体操作你已登录的浏览器标签页。
