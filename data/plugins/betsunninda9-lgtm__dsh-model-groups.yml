@@ -1,0 +1,6 @@
+url: https://github.com/betsunninda9-lgtm/dsh-model-groups
+name: betsunninda9-lgtm/dsh-model-groups
+category: model
+description:
+  en: 'Hierarchical provider, key-configuration and model selection for DSH 0.2.2-rc.1, with manual multi-key routing; requires separately applied host patches.'
+  zh: '适用于 DSH 0.2.2-rc.1 的供应商、密钥配置与模型分层选择，支持多密钥手动路由；需要另行应用宿主补丁。'
