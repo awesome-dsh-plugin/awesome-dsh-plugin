@@ -1,0 +1,25 @@
+# ONE-FILE catalog submission for awesome-dsh-plugin/awesome-dsh-plugin.
+# Commit this file into your FORK at exactly:
+#   data/plugins/github-yousen__dsh-novel-mode.yml
+# Do NOT hand-edit the generated READMEs — this file is the whole submission.
+#
+# Standalone repository: https://github.com/github-yousen/dsh-novel-mode
+# Public, default branch `main`, MIT, topic `dsh-plugin`, created 2026-11-09.
+url: https://github.com/github-yousen/dsh-novel-mode
+name: github-yousen/dsh-novel-mode
+category: workflow
+# Both descriptions are quoted: the en string contains ": " (colon + space),
+# which unquoted would be parsed as a nested YAML key.
+description:
+  en: 'A DeepSeek Harness plugin that adds a 小说模式 (Novel Mode) button and a /novel command: entering the mode materializes a bundled .dsh working copy of novel-writing skills, subagent roles, PowerShell and Python scripts, templates, config and rules into the current project, then routes the model through the constitution, outline, design, writing, batch and validation stages.'
+  zh: '把长篇小说写作流程接入 DeepSeek Harness：新增「小说模式」按钮与 /novel 命令，进入模式时把随包附带的技能、子代理角色、PowerShell 与 Python 脚本、模板、配置与规则物化到当前项目的 .dsh/ 目录，并按宪法、大纲、设计、写作、批量、校验各阶段引导模型。'
+# icon: OMITTED. The catalog tile accepts ONE GitHub-hosted RASTER image only
+#   (png / jpg / jpeg / webp), drawn at ~96px, square preferred. SVG is REFUSED
+#   and third-party image hosts are REFUSED. The plugin ships icon.svg for the
+#   DSH UI, but an .svg cannot be used as the catalog `icon:`. To add a tile,
+#   commit a square png/jpg/webp inside the repo and set, for example:
+#   icon: https://raw.githubusercontent.com/github-yousen/dsh-novel-mode/main/assets/icon-180.png
+# tarball: OMITTED. Optional; only a GitHub Release-hosted https .tgz is accepted.
+#   None is published yet. If you later attach a prebuilt tarball, keep the asset
+#   name version-free with latest/download/ (or pin the release tag), e.g.
+#   tarball: https://github.com/github-yousen/dsh-novel-mode/releases/latest/download/dsh-novel-mode.tgz
