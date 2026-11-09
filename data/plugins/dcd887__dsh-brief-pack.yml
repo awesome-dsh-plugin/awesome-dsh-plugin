@@ -1,0 +1,6 @@
+url: https://github.com/dcd887/dsh-brief-pack
+name: dcd887/dsh-brief-pack
+category: workflow
+description:
+  en: 'Task-pack builder for DeepSeek Harness: compress large files into one <=8000-token brief a subagent can read alone.'
+  zh: '任务包构建器：把大文件压成一个不超过 8000 token 的 brief，子智能体只读这一个文件。'
