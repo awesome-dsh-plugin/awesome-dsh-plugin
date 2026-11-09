@@ -1,0 +1,7 @@
+url: https://github.com/startime-ltk/dsh-explorers
+name: startime-ltk/dsh-explorers
+category: browser
+description:
+  en: Connects Chrome, Edge and QQ Browser to DeepSeek Harness through a local MV3 extension and loopback bridge, exposing 12 browser tools for navigation, snapshots, clicks, typing, extraction and screenshots.
+  zh: 通过本机 MV3 扩展与回环桥把 Chrome、Edge、QQ 浏览器接入 DSH，提供 12 个浏览器工具用于导航、快照、点击、输入、提取与截图。
+icon: https://raw.githubusercontent.com/startime-ltk/dsh-explorers/main/extension/icons/icon128.png
