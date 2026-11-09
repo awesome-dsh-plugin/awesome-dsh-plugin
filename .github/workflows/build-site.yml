@@ -229,6 +229,8 @@ jobs:
           fi
           # The targeted dispatch updates only npm and README caches. Keep the
           # other probes' usual cadence for normal dispatches and builds.
+          # Any future automatic version refresh (for example #11901) belongs
+          # inside this guard too: target mode must not refresh unrelated rows.
           if [ -z "$PROBE_TARGET_REPO" ]; then
             # Runs every time, not just nightly: a release-asset URL validated at
             # submission can 404 later without anyone touching the entry, and the
