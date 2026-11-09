@@ -1,0 +1,6 @@
+url: https://github.com/KeS1Ke/reminder-dsh
+name: KeS1Ke/reminder-dsh
+category: notify
+description:
+  en: 'Windows taskbar flashing and native toast notifications for DeepSeek Harness; replying in a notification sends the message back to the originating session.'
+  zh: '为 DeepSeek Harness 提供 Windows 任务栏闪烁与原生系统通知，可在通知里直接回复原会话。'
