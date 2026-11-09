@@ -1,0 +1,7 @@
+url: https://github.com/Gemus-AI/gemus-dsh-plugin
+name: Gemus-AI/gemus-dsh-plugin
+category: tools
+description:
+  en: Connects the Gemus design canvas through DSH's MCP client, with an in-app key setup page; the agent can build node workflows, run image, video, 3D and slide generations, and read the results back.
+  zh: 通过 DSH 的 MCP 客户端接入 Gemus 设计画布，附带应用内的 Key 配置页；agent 可以搭建节点工作流，运行图片、视频、3D 和幻灯片生成，并读回结果。
+icon: https://raw.githubusercontent.com/Gemus-AI/gemus-dsh-plugin/main/icon.png
