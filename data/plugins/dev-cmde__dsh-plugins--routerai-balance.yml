@@ -1,0 +1,6 @@
+url: https://github.com/dev-cmde/dsh-plugins/tree/main/routerai-balance
+name: dev-cmde/dsh-plugins#routerai-balance
+category: usage
+description:
+  en: 'Shows the RouterAI credit balance and the spend since the session started in the sidebar footer. Requires a RouterAI API key (`ROUTERAI_API_KEY`) and a model provider whose config key is `routerai`; without them it shows `--`.'
+  zh: '在侧栏底部显示 RouterAI 的额度余额和本次会话开始以来的花费。需要 RouterAI API key（`ROUTERAI_API_KEY`）以及配置键为 `routerai` 的模型 provider；缺了只显示 `--`。'

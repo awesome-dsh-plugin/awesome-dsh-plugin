@@ -1,0 +1,8 @@
+url: https://github.com/guicaiyue/dsh-archify-projects
+name: guicaiyue/dsh-archify-projects
+category: docs
+description:
+  en: 'Architecture map workbench: register local repos, let a restricted agent read the code with the archify skill, and keep branch-level structure and domain diagrams with concepts, temporary/permanent custom diagrams, and read-only Q&A.'
+  zh: '代码库架构图册：登记本地仓库，由受限 agent 用 archify skill 读代码，按分支维护结构图与领域图，支持概念提取、临时/永久自定义图与只读追问。'
+# 稳定别名：每次发版都指向最新 Release，条目不用跟着改版本号
+tarball: https://github.com/guicaiyue/dsh-archify-projects/releases/latest/download/dsh-archify-projects.tgz

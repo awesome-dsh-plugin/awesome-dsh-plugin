@@ -1,0 +1,8 @@
+url: https://github.com/flizzywine/dsh-tavern/tree/main/tavern-plugin/packages/dsh-tavern
+name: flizzywine/dsh-tavern#dsh-tavern
+category: fun
+description:
+  en: 'An agent-powered tavern for DeepSeek Harness with SillyTavern compatibility, character card imports, support for multiple models, and mobile play. Install the tavern from Settings → Tavern Launcher on desktop. A launcher derived from 2NF/dsh-profile-bridge (MIT): it downloads the tavern into a separate DSH profile and switches profiles on restart. Install this launcher or the upstream plugin, not both — they claim the same /profile-bridge channel.'
+  zh: 基于 DeepSeek Harness 的 Agent 酒馆，兼容 SillyTavern 生态，人物卡导入即玩，支持多种模型和手机游玩。桌面端从「设置 → 酒馆启动器」安装酒馆。 基于 2NF/dsh-profile-bridge（MIT）改造的启动器：把酒馆下载到独立 DSH 配置并在重启时切换。与上游插件不能同装——两者都占用 /profile-bridge 通道。
+icon: https://raw.githubusercontent.com/flizzywine/dsh-tavern/main/tavern-plugin/packages/dsh-tavern/assets/dsh-tavern-app-icon-192.png
+tarball: https://github.com/flizzywine/dsh-tavern/releases/download/launcher-current/dsh-tavern.tgz

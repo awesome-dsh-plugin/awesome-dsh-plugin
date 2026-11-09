@@ -1,0 +1,7 @@
+url: https://github.com/zenro21/dsh-open-card
+name: zenro21/dsh-open-card
+category: ui
+description:
+  en: 'Resizes any block in the DSH Web UI: pick a block, drag its eight handles to set width and height, then collapse it, scroll its content, move it or raise it above other layers. Sizes and positions are remembered and restored after a reload.'
+  zh: '调整 DSH 界面里任意块的长宽：点选后拖八个手柄改尺寸，还能收起、滚动内容、平移、置前，尺寸与位置会被记住并在刷新后恢复。'
+tarball: https://github.com/zenro21/dsh-open-card/releases/latest/download/dsh-open-card.tgz
