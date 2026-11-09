@@ -1,6 +1,0 @@
-url: https://github.com/dcd887/dsh-memory-router
-name: dcd887/dsh-memory-router
-category: memory
-description:
-  en: 'Token-saving interceptor for DSH tool calls: dedupe cache, executable decision graph, live session state, honest ledger.'
-  zh: 'DSH 工具调用的省 token 拦截器：去重缓存、可执行决策图、实时会话状态、诚实的账本。'
