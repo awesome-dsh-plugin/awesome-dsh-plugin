@@ -1,0 +1,6 @@
+url: https://github.com/TLEWA/dsh-opencode-go-router
+name: TLEWA/dsh-opencode-go-router
+category: model
+description:
+  en: "Keeps prompt caches warm for OpenCode Go DeepSeek conversations by predicting each request's cache hit before it is sent, rotating the x-opencode-session routing id when that request would be cold and recent requests are slow, and pooling idle warm ids for reuse by new conversations."
+  zh: "为 OpenCode Go 的 DeepSeek 会话保持提示缓存命中：在请求发出前预测其缓存命中率，当该请求预计变冷且近期请求偏慢时轮换 x-opencode-session 路由 id，并把空闲的暖 id 放入池中供新会话复用。"

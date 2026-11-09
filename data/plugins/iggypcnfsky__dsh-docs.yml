@@ -1,0 +1,7 @@
+url: https://github.com/iggypcnfsky/dsh-docs
+name: iggypcnfsky/dsh-docs
+category: docs
+description:
+  en: A Google Docs-style word processor inside DeepSeek Harness with rich text, page setup, tables, images, print, export, and agent editing.
+  zh: 'DeepSeek Harness 里的 Google Docs 风格文字处理器：富文本、页面设置、表格、图片、打印、导出，并支持由 agent 直接编辑。'
+icon: https://raw.githubusercontent.com/iggypcnfsky/dsh-docs/main/icon.png
