@@ -1,0 +1,6 @@
+url: https://github.com/fiu-ai/mcp-server/tree/main/plugins/fiu-finance-mcp-dsh
+name: fiu-ai/mcp-server#plugins-fiu-finance-mcp-dsh
+category: market
+description:
+  en: 'Connect DeepSeek Harness to FIU Finance MCP through an MCP stdio bundle.'
+  zh: '通过 MCP stdio Bundle 将 DeepSeek Harness 接入 FIU Finance MCP。'
