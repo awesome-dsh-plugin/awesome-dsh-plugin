@@ -1,5 +1,6 @@
 url: https://github.com/Da0Mine/dsh-inline-image-ref
 name: Da0Mine/dsh-inline-image-ref
 category: ui
-description.en: "DSH plugin: images dropped or pasted into the composer become @path reference chips at the caret, with a hover preview."
-description.zh: 把拖入/粘贴进输入框的图片当文件处理：光标处插 @路径 胶囊、不占附件栏，输入框与已发送消息里都能悬停看原图。
+description:
+  en: "DSH plugin: images dropped or pasted into the composer become @path reference chips at the caret instead of an attachment rail, with a hover preview in the composer and in sent messages."
+  zh: 把拖入/粘贴进输入框的图片当文件处理：光标处插 @路径 胶囊、不占附件栏，输入框与已发送消息里都能悬停看原图。
