@@ -1,0 +1,5 @@
+url: https://github.com/lucagiftzek/dsh-conductor
+name: lucagiftzek/dsh-conductor
+category: session
+description:
+  en: "A Conductor tab and commands for a chat's context: /new replaces the context in place with a model-written handoff, /rewind restores the chat and the agent's file edits to an earlier prompt, plus /drop, pins, an automatic compaction level, recovery after failed turns, silent messages between chats and agent and task orchestration."
