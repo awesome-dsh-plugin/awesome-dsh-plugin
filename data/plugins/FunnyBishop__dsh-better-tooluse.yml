@@ -1,0 +1,6 @@
+url: https://github.com/FunnyBishop/dsh-better-tooluse
+name: FunnyBishop/dsh-better-tooluse
+category: ui
+description:
+  en: 'Tool-use visibility for dsh: the act wrapper and its guard make every ordinary tool call carry a describe field, the model narrates decisions in plain text, and live act cards with thinking, purpose, status and result render in a better-sidebar digest panel.'
+  zh: '让 dsh 的工具调用可见、可纠偏：act 包装与护栏强制每次普通调用携带 describe，模型以纯文本播报决策，右侧梳理面板实时展示 act 卡片（思考结果、作用、状态、结果）。'
