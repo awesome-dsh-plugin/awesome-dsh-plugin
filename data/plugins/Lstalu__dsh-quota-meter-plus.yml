@@ -1,0 +1,6 @@
+url: https://github.com/Lstalu/dsh-quota-meter-plus
+name: Lstalu/dsh-quota-meter-plus
+category: usage
+description:
+  en: 'Per-session spend and quota meter for DSH: bills real token usage against an editable model price table (including peak/off-peak pricing), shows a live progress bar and balance capsule, and blocks new model calls when a session budget runs out. Subagent and helper-call spending rolls up into the parent session ledger.'
+  zh: 'DSH 的会话额度与花费监控：按可编辑的模型价目表（含峰谷价）对真实 token 用量记账，输入框上方显示消耗进度条与余额胶囊，额度耗尽时拦截新的模型调用；子代理与辅助调用的消耗并入父会话账本。'
