@@ -1,6 +1,0 @@
-url: https://github.com/cyrus-xc/ego_lite_for_DSH
-name: cyrus-xc/ego_lite_for_DSH
-category: browser
-description:
-  en: 'Registers the bundled upstream ego-browser Skill in DeepSeek Harness to guide browser tasks through the official CLI; requires the official ego lite browser to be installed and ego-browser available on PATH.'
-  zh: '在 DeepSeek Harness 注册随包附带的上游 ego-browser Skill，通过官方 CLI 引导浏览器任务；需预先安装官方 ego lite，并确保 ego-browser 在 PATH 中可用。'
