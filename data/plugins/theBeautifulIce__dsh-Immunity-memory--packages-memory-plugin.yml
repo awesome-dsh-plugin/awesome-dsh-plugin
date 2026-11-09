@@ -1,0 +1,6 @@
+url: https://github.com/theBeautifulIce/dsh-Immunity-memory/tree/main/packages/memory-plugin
+name: theBeautifulIce/dsh-Immunity-memory#memory-plugin
+category: memory
+description:
+  en: 'Cross-session long-term memory for DSH: eight memory layers, four notebooks, hybrid SQLite FTS5/vector/graph retrieval, agent-driven automatic capture, write lifecycle hooks, optional write audit, project spaces, forgetting and a visual management page. Full FTS5/vector/graph retrieval needs the bundled Go service, which ships only as a Windows x64 prebuilt; on macOS/Linux, build it from source or the plugin falls back to Node SQLite without FTS5 and retrieval degrades.'
+  zh: '给 DSH 的跨会话长期记忆：八层记忆、四本记事本、FTS5/向量/图谱混合检索、智能体驱动的自动捕获、写入生命周期 Hook、可选写入审计、项目空间、遗忘曲线与可视化管理页。完整的 FTS5/向量/图谱检索依赖随包附带的 Go 服务，而预编译只提供 Windows x64；macOS/Linux 需自行从源码构建，否则退回无 FTS5 的 Node SQLite，检索能力降级。'

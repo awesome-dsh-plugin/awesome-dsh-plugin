@@ -1,0 +1,6 @@
+url: https://github.com/Qingzhou-Joshua/dsh-dev-toolbox
+name: Qingzhou-Joshua/dsh-dev-toolbox
+category: tools
+description:
+  en: 'Sidebar developer toolbox with 65 pure browser-side tools in 13 groups — JSON, code formatting, URL, encoding, hashing, encryption, text, and number/date utilities — with zero network requests. Registers as a tab in dsh-better-sidebar, which must be installed for the panel to appear.'
+  zh: '侧边栏开发者工具箱，内置 13 组共 65 个纯浏览器端工具，覆盖 JSON、代码格式化、URL、编码解码、哈希、加密、文本与数字日期处理，零网络请求；面板以页签形式挂在 dsh-better-sidebar 上，需先安装该插件。'

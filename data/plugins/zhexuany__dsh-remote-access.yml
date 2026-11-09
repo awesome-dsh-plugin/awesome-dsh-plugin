@@ -1,0 +1,6 @@
+url: https://github.com/zhexuany/dsh-remote-access
+name: zhexuany/dsh-remote-access
+category: remote
+description:
+  en: 'Exposes a DSH Harness Desktop Web GUI to another machine''s browser through a Cloudflare quick or named tunnel, an SSH reverse tunnel, or a custom command, and hands out a tokenised link to open it; a settings panel and CLI start, stop and print the link. Needs DSH Desktop 0.2.1-rc.2 or later and a cloudflared binary.'
+  zh: '把 DSH Harness Desktop 的 Web GUI 通过 Cloudflare quick/named 隧道、SSH 反向隧道或自定义命令暴露给另一台机器的浏览器，并给出可直接打开的带令牌链接；设置面板与 CLI 可启动、停止并打印链接。需要 DSH Desktop 0.2.1-rc.2 及以上，以及 cloudflared。'

@@ -1,0 +1,6 @@
+url: https://github.com/Verchiel666/dsh-usage-android
+name: Verchiel666/dsh-usage-android
+category: usage
+description:
+  en: 'Reports DSH session token usage from the local session logs as a host-side tool: totals, input, output and cache-read split, a per-day timeline, usage grouped by day or session and optional cost estimates.'
+  zh: '以 host 侧工具统计 DSH 会话 token 用量，数据取自本地会话日志：总量、输入、输出与缓存读取拆分、按天时间线、按天或按会话分组的用量，以及可选成本估算。'

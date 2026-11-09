@@ -1,0 +1,6 @@
+url: https://github.com/fenshal/dsh-skillbox
+name: fenshal/dsh-skillbox
+category: skill
+description:
+  en: 'Lists skills already installed for DSH, WorkBuddy, Claude Code, Codex and Doubao, imports any of them as a DSH skill, and adds session-scoped experts with a per-turn avatar header.'
+  zh: '列出 DSH、WorkBuddy、Claude Code、Codex、豆包本地已装技能，可导入为 DSH 技能；专家可选挂到单个会话，按轮显示头像署名。'

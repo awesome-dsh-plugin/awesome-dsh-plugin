@@ -1,0 +1,7 @@
+url: https://github.com/Hesitate-P/dsh-sidebar-browser-agent
+name: Hesitate-P/dsh-sidebar-browser-agent
+category: browser
+description:
+  en: 'Native agent control for the DSH right-sidebar browser: semantic snapshot with stable refs, clicks/typing/key presses, shadow DOM and same-origin iframes, recorded JS dialogs, full-page screenshots, back/forward, viewport resizing, and native large-file download/upload through the Electron webview. Page control needs DSH Desktop (Electron webview); in the Web build only tab management works.'
+  zh: 'DSH 右侧栏原生浏览器的 Agent 控制：语义快照与稳定 ref、点击/输入/按键、Shadow DOM 与同源 iframe、JS 对话框记录、整页截图、前进/后退、视口尺寸调整，以及基于 Electron webview 的原生大文件下载/上传。页面内容操作需 DSH Desktop（Electron 原生 webview）；Web 版只能管理标签页。'
+icon: https://raw.githubusercontent.com/Hesitate-P/dsh-sidebar-browser-agent/main/assets/icon-180.png
