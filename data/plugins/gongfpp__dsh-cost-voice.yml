@@ -2,6 +2,6 @@ url: https://github.com/gongfpp/dsh-cost-voice
 name: 大白饭到账语音播报
 category: usage
 description:
-  en: 'Dabaifan Arrival Voice Announcements speaks the estimated spend per turn with the bundled Dabaifan voice by default; Alipay is optional. Amounts come from dsh-cost-meter or model-price estimates, not payment records. No runtime TTS service.'
-  zh: '大白饭到账语音播报：每轮结束默认用内置大白饭语音提醒本轮估算花费，也可切换支付宝；优先读取 dsh-cost-meter，否则按模型单价估算，不是支付通知，无需联网语音服务。'
+  en: 'Dabaifan Arrival Voice Announcements speaks the estimated spend per turn with the bundled Dabaifan voice by default; Alipay is optional. Amounts come from dsh-cost-meter or model-price estimates, not payment records. No runtime TTS service. Code is MIT; the bundled Alipay clips come from Reathin/XVoice (no licence), the Dabaifan voice is a MiMo clone and the icon is a fan-made meme, all for personal, non-commercial use with this plugin only.'
+  zh: '大白饭到账语音播报：每轮结束默认用内置大白饭语音提醒本轮估算花费，也可切换支付宝；优先读取 dsh-cost-meter，否则按模型单价估算，不是支付通知，无需联网语音服务。代码 MIT；随包支付宝片段来自无许可证的 Reathin/XVoice、大白饭音色为 MiMo 克隆、图标为网友二创梗图，这些素材仅限随本插件个人非商用。'
 icon: https://raw.githubusercontent.com/gongfpp/dsh-cost-voice/main/icon.png
