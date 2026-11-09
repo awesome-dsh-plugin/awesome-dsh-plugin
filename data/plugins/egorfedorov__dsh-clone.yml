@@ -1,0 +1,8 @@
+url: https://github.com/egorfedorov/dsh-clone
+name: egorfedorov/dsh-clone
+category: ui
+description:
+  en: 'Rebuilds a reference screenshot as a working static page: several subagents build the same screen in parallel, each in its own git worktree, then every delivered page is screenshotted headlessly and compared with the reference by a colour-and-structure score. You adopt the lane you prefer, or refine it with one change and read the score delta. Plain HTML/CSS/JS output, no build step, workspace-only writes, lanes sandboxed into an opaque origin.'
+  zh: '把参考截图重建为可运行的静态页面：多个子代理分别在各自的 git worktree 中并行构建同一屏，每个完成的页面都会被无头浏览器截图，并与参考图做颜色与结构匹配度评分。你可以采用任一结果，或用一句修改要求继续迭代并看到分数变化。输出为纯 HTML/CSS/JS、无需构建步骤，仅写入工作区，预览页运行在不透明源的沙箱中。'
+icon: https://raw.githubusercontent.com/egorfedorov/dsh-clone/main/docs/assets/icon-180.png
+tarball: https://github.com/egorfedorov/dsh-clone/releases/latest/download/dsh-clone.tgz
