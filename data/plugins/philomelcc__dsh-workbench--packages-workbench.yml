@@ -1,0 +1,6 @@
+url: https://github.com/philomelcc/dsh-workbench/tree/main/packages/workbench
+name: philomelcc/dsh-workbench#workbench
+category: ui
+description:
+  en: 'Tabbed workspace shell: a second top-bar row of page tabs plus a small module API for full-page plugins.'
+  zh: '带标签页的工作区外壳：顶部第二行是页面切换，外加一套给整页插件用的模块 API。'
