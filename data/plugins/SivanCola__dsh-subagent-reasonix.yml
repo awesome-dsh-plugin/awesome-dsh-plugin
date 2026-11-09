@@ -1,0 +1,6 @@
+url: https://github.com/SivanCola/dsh-subagent-reasonix
+name: SivanCola/dsh-subagent-reasonix
+category: workflow
+description:
+  en: Delegates a one-shot task from DeepSeek Harness to a locally installed Reasonix over the Agent Client Protocol, reusing Reasonix's own model, credentials and sandbox settings; exposed as the `subagent_reasonix` tool.
+  zh: 通过 Agent Client Protocol 把一次性任务从 DeepSeek Harness 委派给本机已安装的 Reasonix，沿用 Reasonix 自己的模型、凭据与沙箱设置，对外暴露为 `subagent_reasonix` 工具。
