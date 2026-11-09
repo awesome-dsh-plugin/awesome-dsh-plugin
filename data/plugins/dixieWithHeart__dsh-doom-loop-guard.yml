@@ -1,0 +1,6 @@
+url: https://github.com/dixieWithHeart/dsh-doom-loop-guard
+name: dixieWithHeart/dsh-doom-loop-guard
+category: tools
+description:
+  en: Detects repetitive loops in an agent's reasoning output and records, nudges, or cuts them, with a history report.
+  zh: 检测 Agent 推理输出中的重复循环，命中时记录、提醒或截断，并生成历史报告。
