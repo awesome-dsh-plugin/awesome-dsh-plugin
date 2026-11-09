@@ -1,3 +1,18 @@
+# Entry for the curated catalog behind DSH Market and awesome-dsh-plugin.
+#
+# How to submit:
+#   1. fork https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+#   2. copy this file into the fork as
+#        data/plugins/daoyan2142__dsh-plugin-git-sync.yml
+#   3. open one PR back to the upstream repository; this one file is the whole submission
+#      (do not edit the generated READMEs there — they are rebuilt from data/plugins/*.yml)
+#
+# Checklist before opening the PR:
+#   - the plugin repository declares dsh.bundle in package.json and ships cordis.patch.yml
+#   - the plugin repository is at least 1 day old (CI checks this; a younger repo is held, not rejected)
+#   - the plugin repository carries the "dsh-plugin" topic
+#   - assets/icon.png is committed on the default branch, so the icon URL below resolves
+
 url: https://github.com/daoyan2142/dsh-plugin-git-sync
 name: daoyan2142/dsh-plugin-git-sync
 category: dev                     # Development & Runtime
