@@ -1,0 +1,7 @@
+url: https://github.com/hxlog/dsh-skills-tools
+name: hxlog/dsh-skills-tools
+category: skill
+description:
+  en: Import Agent Skills from Git repositories, group them by repository, and enable or disable each one in DSH settings.
+  zh: 在 DSH 设置中从 Git 仓库导入 Agent Skills，按仓库分组管理，并逐项启用或停用。
+icon: https://raw.githubusercontent.com/hxlog/dsh-skills-tools/main/docs/logo.png

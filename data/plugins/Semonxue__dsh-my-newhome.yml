@@ -1,0 +1,7 @@
+url: https://github.com/Semonxue/dsh-my-newhome
+name: Semonxue/dsh-my-newhome
+category: ui
+description:
+  en: 'Replaces the DeepSeek Harness home screen with a configurable palette and background image, a custom hero and sidebar logo, default 3×2 decks of recently used workspaces and quick links (local Chrome history or a custom list), and up to four API-usage widgets (DeepSeek balance, MiniMax, Cline Pass, OpenCode Go) refreshed on a configurable interval. The decks stay on the new-session screen and every option is edited from a built-in settings panel.'
+  zh: '把 DeepSeek Harness 首屏换成自定义主页：可配置配色与背景图、自定义首屏与侧栏 Logo、默认 3×2 的最近工作区与常用入口（取自本机 Chrome 历史或自定义列表）、最多 4 个 API 用量组件（DeepSeek 余额、MiniMax、Cline Pass、OpenCode Go）且刷新间隔可调；卡片只在新建会话首屏出现，全部选项在自带设置面板里调整。'
+icon: https://raw.githubusercontent.com/Semonxue/dsh-my-newhome/main/assets/icon-180.png

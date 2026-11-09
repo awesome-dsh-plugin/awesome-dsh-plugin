@@ -1,0 +1,8 @@
+url: https://github.com/Lanjunyee/dsh-intelligence-check
+name: Lanjunyee/dsh-intelligence-check
+category: model
+description:
+  en: 'Model quality testing for DeepSeek Harness Desktop with a question bank, manual and scheduled checks, saved responses, human reviews, and model attribution. Install it into the desktop profile: the shared Go backend is started only by the desktop app, and a web profile can only view an already-running desktop backend.'
+  zh: 'DeepSeek Harness 桌面端模型质量检测插件，提供测试题库、手动与定时检测、回答记录、人工评审和模型归因。需装进 desktop profile：共享 Go 后台只由桌面应用启动，装在 web profile 只能查看桌面端已在运行的后台。'
+icon: https://raw.githubusercontent.com/Lanjunyee/dsh-intelligence-check/main/assets/plugin-icon.png
+tarball: https://github.com/Lanjunyee/dsh-intelligence-check/releases/latest/download/dsh-intelligence-check.tgz

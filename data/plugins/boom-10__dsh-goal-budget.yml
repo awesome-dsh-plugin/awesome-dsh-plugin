@@ -1,0 +1,6 @@
+url: https://github.com/boom-10/dsh-goal-budget
+name: boom-10/dsh-goal-budget
+category: usage
+description:
+  en: 'Sets token, cost and wall-clock caps on a DSH goal and blocks that goal when a cap is reached, instead of only reporting the spend. The figures come from the usage events DSH records for the session, priced per model, with a pill beside the composer that opens a per-model breakdown. The official DeepSeek tariff is built in, with peak/off-peak pricing toggleable because it depends on the route; other models are priced from configured rates, and a model with no rate has its tokens counted and its name listed rather than being guessed at.'
+  zh: '给 DSH 的 goal 设 token、费用与计算时长上限，达到上限即阻断该 goal，而不只是报告花费。数字取自 DSH 为该会话记录的用量事件并按模型计价；输入框旁的 pill 点开是按模型分列的明细。内置 DeepSeek 官方价目，峰谷计价可关闭（它取决于线路）；其他模型用配置的单价，没有单价的模型只计 token 并列出名字，不猜价格。'

@@ -1,0 +1,8 @@
+url: https://github.com/mantonlove/dsh-prism-plugin
+name: mantonlove/dsh-prism-plugin
+category: theme
+description:
+  en: Glassmorphism studio for the DSH Web interface with six presets, portable custom themes, adjustable glass, typography, accent colors, aurora, and photo/GIF wallpapers.
+  zh: 面向 DSH Web 界面的毛玻璃主题工作台，提供六套预设、可迁移自定义主题、玻璃与字体调节、强调色、极光及图片/GIF 壁纸。
+icon: https://raw.githubusercontent.com/mantonlove/dsh-prism-plugin/main/assets/icon-180.png
+tarball: https://github.com/mantonlove/dsh-prism-plugin/releases/latest/download/dsh-prism-plugin.tgz

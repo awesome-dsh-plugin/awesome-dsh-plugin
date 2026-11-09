@@ -1,0 +1,7 @@
+url: https://github.com/andy-7-andy/dsh-theme-retro-press
+name: andy-7-andy/dsh-theme-retro-press
+category: theme
+icon: https://raw.githubusercontent.com/andy-7-andy/dsh-theme-retro-press/main/assets/icon-180.png
+description:
+  en: 'Nine single-ink print palettes — sage linen, kraft paper, lead type, cyanotype, risograph, CRT tube, phosphor screen, punch card, floppy disk. Each palette carries its own paper grain, type pairing, corner shape, section rule and a whale mark redrawn in its ink, plus a letterpress pass (paper tooth, sheet mottle, ink bite) that can be switched off. Every palette ships separate light and dark tokens.'
+  zh: '复古油墨主题：九套单色油墨配色——鼠尾草、牛皮纸、铅字、蓝晒纸、孔版、显像管、荧光屏、打孔卡、软盘。每套自带纸张质感、字体搭配、圆角与直角、章节线，以及按自身油墨重画的鲸鱼标记；另有一层可关掉的凸版压印（纸齿、纸不匀、墨的压痕）。每套都配浅色与深色两套 token。'

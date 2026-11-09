@@ -1,0 +1,6 @@
+url: https://github.com/HonestShine/dsh-desktop-notify
+name: HonestShine/dsh-desktop-notify
+category: notify
+description:
+  en: 'Native desktop notifications for DSH on Windows, macOS and Linux. While the DSH window is in the background, permission requests arrive as system notifications; where the platform supports notification actions, Reject and Allow-once buttons return the decision to the host approval waterfall, and returning focus or a timeout hands the request back to the in-app panel. Approvals and questions also play a separate input cue that is independent of window focus. Turn-end, question and error reminders, notification sounds and the cue are configured on a Notifications settings page.'
+  zh: 'DSH 的原生桌面通知。窗口在后台时权限确认直接出现在系统通知里；平台支持通知按钮时，点「拒绝 / 允许一次」即把结果交回宿主审批流程，切回窗口或超时则退回应用内审批面板。权限确认与提问还会播放独立于窗口焦点的交互提示音；任务完成、提问、错误提醒、通知铃声与提示音都在「通知提醒」设置页配置。'

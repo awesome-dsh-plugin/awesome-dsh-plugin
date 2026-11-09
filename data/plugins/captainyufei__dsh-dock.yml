@@ -1,0 +1,8 @@
+url: https://github.com/captainyufei/dsh-dock
+name: captainyufei/dsh-dock
+category: ui
+description:
+  en: UI plugin for DeepSeek Harness with a persistent customizable left Dock, cross-workspace pinned chats, a draft-first home, global search, a completion inbox and right-panel video previews.
+  zh: 为 DeepSeek Harness 提供常驻可自定义的左侧 Dock、跨工作区置顶会话、先写草稿的首页、全局搜索、完成通知收件箱，以及右侧文件面板视频预览。
+icon: https://raw.githubusercontent.com/captainyufei/dsh-dock/main/assets/icon-180.png
+tarball: https://github.com/captainyufei/dsh-dock/releases/download/v0.2.0/dsh-dock.tgz
