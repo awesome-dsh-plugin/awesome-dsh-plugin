@@ -1,0 +1,6 @@
+url: https://github.com/huaweicloudskill/scenes-skill-creator
+name: huaweicloudskill/scenes-skill-creator
+category: skill
+description:
+  en: 'DeepSeek Harness web panel for creating, evaluating, repairing, and installing skills, delegating generation to the official generic and Huawei Cloud skill creators.'
+  zh: 'DeepSeek Harness 技能创建面板：调用官方通用/华为云技能创建器生成技能，并提供评测、修复、安装与创建记录。'
