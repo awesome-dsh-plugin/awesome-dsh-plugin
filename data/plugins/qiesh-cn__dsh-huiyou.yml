@@ -1,0 +1,8 @@
+url: https://github.com/qiesh-cn/dsh-huiyou
+name: qiesh-cn/dsh-huiyou
+category: session
+description:
+  en: "Delete sessions into a searchable recycle bin, then restore them or remove them permanently from the DSH sidebar. Desktop only: install it into the DSH Desktop profile; it supports the Desktop Web GUI only."
+  zh: "把 DSH 会话删除到可搜索的回收站，再从侧栏恢复或彻底删除。仅限 DSH Desktop：需装进 Desktop profile，且只支持 Desktop 的 Web GUI。"
+tarball: https://github.com/qiesh-cn/dsh-huiyou/releases/download/v1.0.0/huiyou-1.0.0.tgz
+icon: https://raw.githubusercontent.com/qiesh-cn/dsh-huiyou/main/assets/icon-180.png

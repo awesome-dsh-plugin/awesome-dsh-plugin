@@ -1,0 +1,7 @@
+url: https://github.com/Light-EI/dsh-ebbing-context
+name: Light-EI/dsh-ebbing-context
+category: session
+description:
+  en: 'Layered context compression for DeepSeek Harness: folds old turns into model-written L1–L3 summary blocks, maps what each layer holds, and wakes the model when the context crosses a size line or keeps growing. By default it requires DSH''s experimental Session Search plugin (session_event_read / session_event_search); without it the tools stay disabled unless requireSessionQuery is turned off.'
+  zh: 'DeepSeek Harness 的分层上下文压缩插件：把旧轮次折成由模型撰写摘要的 L1–L3 块，在地图里显示每层占用与可压位置，并在占用越过提醒线或持续增长时叫醒模型决定是否压缩。默认需要启用 DSH 实验性插件「会话搜索」（session_event_read / session_event_search），否则 compress 与 context_map 会停用（可关闭 requireSessionQuery）。'
+tarball: https://github.com/Light-EI/dsh-ebbing-context/releases/download/v0.2.6/dsh-ebbing-context-0.2.6.tgz

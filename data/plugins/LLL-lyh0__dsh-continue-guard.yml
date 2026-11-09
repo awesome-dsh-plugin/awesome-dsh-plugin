@@ -1,0 +1,8 @@
+url: https://github.com/LLL-lyh0/dsh-continue-guard
+name: LLL-lyh0/dsh-continue-guard
+category: session
+icon: https://raw.githubusercontent.com/LLL-lyh0/dsh-continue-guard/main/docs/store/icon-180.png
+tarball: https://github.com/LLL-lyh0/dsh-continue-guard/releases/latest/download/dsh-continue-guard.tgz
+description:
+  en: 'Adds a Continue button to the composer dock and resumes automatically when a turn is cut off by a network drop or an upstream output-limit cut. A resident link monitor asks every 10 seconds whether the network is back, because the link returning fires no event, and a turn that completes normally counts as proof the link works. The click goes through the host submission pipeline — beginSubmission plus session.prompt — so the message carries real user attribution instead of faking one, and a genuine refusal is reported rather than retried. On startup it also scans recent session logs for both fingerprints of a host that left mid-turn: an unclosed turn, and a turn closed as disposed, which is what a normal shutdown writes. A turn the user stopped by hand is never resumed.'
+  zh: '在输入框停靠区加一个「继续」按钮，并在某一轮被断网或上游输出超限截断时自动续跑。常驻的链路监测每 10 秒问一次网络是否回来（链路恢复本身不发任何事件），而一个正常跑完的回合会被当作链路可用的证据。点击走宿主真实的提交链路（beginSubmission + session.prompt），消息带的是真实用户署名而不是伪造来源，真实拒绝会被如实报告而不是重试。宿主重启时还会扫描最近的会话日志，同时识别「宿主半路走了」的两种指纹：回合没关，以及被 disposed 关掉的回合（正常关闭宿主写下的正是这一种）。用户自己按过停止的回合永不续跑。'

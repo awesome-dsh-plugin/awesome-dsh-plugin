@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-shared-terminal
+name: mzzsfy/dsh-plugin#dsh-shared-terminal
+category: tools
+description:
+  en: 'Shared interactive terminal: the AI terminal tool and the official sidebar xterm drive the same session shell, so you can type and watch the live screen.'
+  zh: '共享交互式终端：AI terminal 单工具与官方侧栏 xterm 共用 Session shell，用户可输入并查看当前屏幕。'
+icon: https://raw.githubusercontent.com/mzzsfy/dsh-plugin/main/assets/icons/png/dsh-shared-terminal.png

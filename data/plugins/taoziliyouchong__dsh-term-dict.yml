@@ -1,0 +1,6 @@
+url: https://github.com/taoziliyouchong/dsh-term-dict
+name: taoziliyouchong/dsh-term-dict
+category: tools
+description:
+  en: Keeps terminology in two-level plain-text glossaries and injects a term's meaning the first time it appears in a session.
+  zh: 把约定俗成的称谓存成两层纯文本字典，某个词第一次出现时自动把它的口径注入上下文；带查／写／体检三条工具与设置面板。

@@ -1,0 +1,8 @@
+url: https://github.com/zxzc114514/dsh-crash-guard
+name: zxzc114514/dsh-crash-guard
+category: dev
+description:
+  en: Intercepts startup crashes, isolates broken frontend plugins, and recovers GUI cleanly with revision-bound quarantine.
+  zh: 拦截插件启动崩溃与前端白屏，按指纹静默隔离故障版本并在修复后自动恢复。
+icon: https://raw.githubusercontent.com/zxzc114514/dsh-crash-guard/main/assets/icon-180.png
+tarball: https://github.com/zxzc114514/dsh-crash-guard/releases/latest/download/dsh-crash-guard.tgz

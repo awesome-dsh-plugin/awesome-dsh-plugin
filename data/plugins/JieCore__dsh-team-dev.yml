@@ -1,0 +1,6 @@
+url: https://github.com/JieCore/dsh-team-dev
+name: JieCore/dsh-team-dev
+category: dev
+description:
+  en: 'Per-turn tool-call step budget for Agent Teams teammates, shipped together with the team-dev and team-boot skills.'
+  zh: '为 Agent Teams 的 teammate 提供按回合的工具调用步数预算，并随包提供 team-dev 与 team-boot 技能。'

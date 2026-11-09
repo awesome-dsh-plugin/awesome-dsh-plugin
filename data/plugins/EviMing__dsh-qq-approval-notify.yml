@@ -1,0 +1,7 @@
+url: https://github.com/EviMing/dsh-qq-approval-notify
+name: EviMing/dsh-qq-approval-notify
+category: notify
+tarball: https://github.com/EviMing/dsh-qq-approval-notify/releases/download/v1.1.0/local-qq-approval-notify-1.1.0.tgz
+description:
+  en: 'Sends a QQ direct message through a local NapCat (OneBot) instance when DeepSeek Harness asks for permission, after verifying the bot QQ; requires owner/bot QQ ids plus the NapCat endpoint and token, and falls back to a Windows notification when NapCat is unreachable.'
+  zh: '通过本机 NapCat（OneBot）在 DSH 弹出权限申请时给主人发 QQ 私信，先校验机器人 QQ；需要配置主人/机器人 QQ 号与 NapCat 地址、token，NapCat 不可用时回退 Windows 通知。'

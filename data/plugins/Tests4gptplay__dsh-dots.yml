@@ -2,7 +2,7 @@ url: https://github.com/Tests4gptplay/dsh-dots
 name: Tests4gptplay/dsh-dots
 category: browser
 icon: https://raw.githubusercontent.com/Tests4gptplay/dsh-dots/main/assets/dots-market-icon.png
-tarball: https://github.com/Tests4gptplay/dsh-dots/releases/download/v1.0.9/dsh-dots-1.0.9.tgz
+tarball: https://github.com/Tests4gptplay/dsh-dots/releases/download/v1.0.11/dsh-dots-1.0.11.tgz
 description:
-  en: "Open ChatGPT Dots in a native DSH page: Desktop preloads it in the background and keeps the same page alive across panel switches, with a theme-aware toolbar, reload and external-browser controls."
-  zh: "在 DSH 原生页面中打开 ChatGPT Dots：Desktop 启动后台预加载，切换面板时保留同一个页面，并提供随主题适配的工具栏、刷新和外部浏览器入口。"
+  en: "Use ChatGPT Dots in a full-width DSH page with Desktop startup preload and page retention across panel switches within the same DSH session, Chinese/English theme-aware controls, reload and external-browser fallback; includes a separately applied login-persistence companion for Windows DSH 0.2.1-rc.3. After upgrading to DSH 0.2.1-rc.5, the embedded Dots page may require signing in again after restarting DSH. The current host browser does not provide login persistence across restarts, and a host upgrade may overwrite the earlier additional persistence treatment; this Dots update did not remove login-saving functionality."
+  zh: "在 DSH 全幅页面使用 ChatGPT Dots，支持 Desktop 启动预加载与同次运行内的页面切换保留、中英文主题工具栏、刷新及外部浏览器回退，并提供需单独应用、适用于 Windows DSH 0.2.1-rc.3 的登录态持久化配套工具。升级至DSH 0.2.1-rc.5后，Dots内嵌页面可能需要在重新启动DSH后再次登录。当前宿主浏览器不提供跨重启登录态保存，原有额外持久化处理也可能在宿主升级时被覆盖；这不是Dots此次更新移除了登录保存功能。"

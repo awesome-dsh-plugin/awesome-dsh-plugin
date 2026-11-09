@@ -1,0 +1,6 @@
+url: https://github.com/zhxnix/dsh-madedown
+name: zhxnix/dsh-madedown
+category: ui
+description:
+  en: WYSIWYG Markdown notes editor in the DSH right sidebar, with tabbed documents, table editing, chat integration, assistant read/write tools, and local file export.
+  zh: DSH 右侧栏的所见即所得 Markdown 笔记编辑器，支持多标签、表格编辑、对话联动、模型读写与保存到本地文件。

@@ -1,0 +1,8 @@
+url: https://github.com/Root-7-KHX/companion-memory
+name: Root-7-KHX/companion-memory
+category: memory
+icon: https://raw.githubusercontent.com/Root-7-KHX/companion-memory/main/assets/icon.png
+tarball: https://github.com/Root-7-KHX/companion-memory/releases/download/v1.3.0/local-companion-memory-1.3.0.tgz
+description:
+  en: 'Roleplay companion memory for DeepSeek Harness: per-conversation editable persona documents (1-100 weight per entry, AI may refine them in small story-driven steps), per-speaker favorability and bond in multi-person chats, active memories with AI-scored vectors, a nine-emotion table updated every turn, an AI self-evolution ledger, recent 48-hour transcript search, companion-style conversation compression, sleep-time compute that pre-guesses the next topics while a conversation is idle, per-conversation tone cards learned from its own past replies, a habit-hint small-model bridge that writes the user habits it extracts into this conversation memory, a date-archived local knowledge base with auto-packing by turns or tokens, and a unified integrations page that lists curated plugins and downloads their GitHub releases.'
+  zh: '《AI记忆》角色扮演伴侣记忆：每个对话独立的人格文档（每条设定可配 1~100 权重，默认允许 AI 小步润色角色性格与例句）、多人对话按说话人分开记录的好感度与羁绊、带 AI 打分的活跃记忆、每轮实时更新的九种情绪表、AI 自我演化的性格/喜好/习惯、最近 48 小时对话检索、伴侣式上下文压缩、空闲时后台预判下一轮话题的睡眠期预计算、按对话统计并注入的语气卡、把习惯小模型抽出的习惯写进「对话人习惯」的接入桥，以及按日期归档的本地知识库（支持按轮数或 tokens 自动打包）和统一「接入软件」页（收录精选插件并从 GitHub 下载发布包）。'

@@ -1,0 +1,6 @@
+url: https://github.com/iasiv5/dsh-send-later
+name: iasiv5/dsh-send-later
+category: workflow
+description:
+  en: "Delay-send for the DSH chat composer: a clock button beside the send button schedules a message into the current session via 10-minute, 30-minute, 1-hour and 5-hour presets or an exact date and time, with the default continue prompt freely editable; delivery runs through DSH's official schedule automation tasks, so pending sends persist across restarts and can be reviewed or cancelled from the panel's pending list or the automation-tasks page, with a per-session badge count, a bounded safe-continue snippet plus the latest custom text, and a smart default time that pre-fills the GLM five-hour window end plus a two-minute margin when dsh-quota-watch is installed."
+  zh: '聊天输入框的延时发送：发送按钮旁的时钟按钮按 10 分钟 / 30 分钟 / 1 小时 / 5 小时预设或指定日期时间，把一条消息（默认「继续」，可自由修改）排程进当前会话；投递依托 DSH 官方自动化任务（schedule），待发送重启不丢，可在面板待发列表与「自动化任务」页查看或取消，附本会话角标计数、带边界的安全继续片段与最近一条自定义文案，且已装 dsh-quota-watch 时指定时间自动预填 GLM 五小时窗口恢复时刻加两分钟余量。'

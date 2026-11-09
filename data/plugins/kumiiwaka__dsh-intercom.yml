@@ -1,0 +1,6 @@
+url: https://github.com/kumiiwaka/dsh-intercom
+name: kumiiwaka/dsh-intercom
+category: session
+description:
+  en: An intercom between already-open DSH windows. No teams, no new sessions, just peer-to-peer messages with a hop limit.
+  zh: 给已经开着的窗口装内线电话，不建团队、不生新会话，只让平级窗口互相递话（带跳数上限防环）。

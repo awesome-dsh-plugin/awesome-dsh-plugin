@@ -1,0 +1,7 @@
+url: https://github.com/zach-bworld/dsh-mermaid
+name: zach-bworld/dsh-mermaid
+category: docs
+description:
+  en: Renders mermaid fenced code blocks in the conversation as real diagrams, with the source one click away.
+  zh: 把会话里的 mermaid 代码块直接渲染成图表，源码一键可查。
+icon: https://raw.githubusercontent.com/zach-bworld/dsh-mermaid/main/assets/icon-180.png

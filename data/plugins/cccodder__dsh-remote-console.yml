@@ -1,0 +1,6 @@
+url: https://github.com/cccodder/dsh-remote-console
+name: cccodder/dsh-remote-console
+category: remote
+description:
+  en: "Right-sidebar SSH terminal for DSH where you and your agent share one PTY: 16 agent tools, configurable transfer limit, session-isolated audit trail, one-click in-place updates."
+  zh: "DSH 右侧栏的 SSH 远程终端：你和 agent 共用一个 PTY，16 个 agent 工具，传输上限可调，终端按会话隔离，配置页支持一键热更新。"

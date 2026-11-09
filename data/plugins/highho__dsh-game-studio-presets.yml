@@ -1,0 +1,6 @@
+url: https://github.com/highho/dsh-game-studio-presets
+name: highho/dsh-game-studio-presets
+category: agi
+description:
+  en: 'Eleven game-development agent presets cut by workflow stage — concept, design, build, art and audio, QA, release, narrative, level, engine — plus one orchestrator that delegates across them, carrying 37 bundled skills. Regroups the 48 agent prompts of Claude Code Game Studios (MIT) by stage so each preset loads only the skills its stage needs. Installs with dsh plugin add; run node install.mjs once afterwards to deploy the skills the presets reference.'
+  zh: '11 套按工作流阶段切分的游戏开发 agent 预设——概念、设计、实现、美术与音频、QA、发布、叙事、关卡、引擎——外加一个跨阶段委派的总控，附带 37 个技能。把 Claude Code Game Studios（MIT）的 48 个智能体提示词按阶段重组，每个预设只加载本阶段需要的技能。用 dsh plugin add 安装，装完跑一次 node install.mjs 部署预设所引用的技能。'

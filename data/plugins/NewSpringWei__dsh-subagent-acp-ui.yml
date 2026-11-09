@@ -1,0 +1,6 @@
+url: https://github.com/NewSpringWei/dsh-subagent-acp-ui
+name: NewSpringWei/dsh-subagent-acp-ui
+category: ui
+description:
+  en: 'Adds a management page for the official DeepSeek Harness ACP subagent provider, with one-click presets, a read-only connectivity check, live switches for all three entry points, and online preset updates.'
+  zh: '为 DeepSeek Harness 官方 ACP 子智能体 provider 提供目标管理页、一键预设、只读连通性检测、三个入口的实时开关与在线预设更新。'

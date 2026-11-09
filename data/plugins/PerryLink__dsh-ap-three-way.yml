@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-ap-three-way
+name: PerryLink/dsh-ap-three-way
+category: workflow
+description:
+  en: 'Accounts-payable three-way match: import invoices, purchase orders and goods receipts, apply the tolerance policy and export the exception workpaper — 4 `ap.*` tools.'
+  zh: '应付三单匹配：导入发票、采购订单与收货单，按容差策略匹配并导出异常底稿——4 个 `ap.*` 工具。'

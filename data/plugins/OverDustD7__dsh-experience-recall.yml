@@ -1,0 +1,6 @@
+url: https://github.com/OverDustD7/dsh-experience-recall
+name: OverDustD7/dsh-experience-recall
+category: memory
+description:
+  en: "Recalls lessons recorded in earlier projects: when the running work matches one, the local model decides whether to inject a short note before the next step. Requires a local Ollama model (default qwen3.5:9b) and the dsh-mnemon store with its mnemon CLI; without them it only observes and logs, never injects."
+  zh: "把在别的项目里记下的经验在当前工作命中时找出来，由本机小模型判断是否在下一步之前插入一条简短提示。需要本机 Ollama（默认 qwen3.5:9b）以及 dsh-mnemon 记忆库与 mnemon CLI；缺了只会观察记录、不会注入。"

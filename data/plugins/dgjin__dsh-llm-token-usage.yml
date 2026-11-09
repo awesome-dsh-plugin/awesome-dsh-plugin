@@ -1,0 +1,7 @@
+url: https://github.com/dgjin/dsh-llm-token-usage
+name: dgjin/dsh-llm-token-usage
+category: usage
+description:
+  en: Token usage and cost analytics for DeepSeek Harness, with daily token and cost charts, model and workspace rankings, a sortable table with CSV export, account balance and per-session cost.
+  zh: DeepSeek Harness 的 token 用量与费用统计：每日用量与费用图表、模型与工作区排行、可排序明细表与 CSV 导出、账户余额与会话花费。
+tarball: https://github.com/dgjin/dsh-llm-token-usage/releases/download/v0.5.4/dsh-llm-token-usage-0.5.4.tgz

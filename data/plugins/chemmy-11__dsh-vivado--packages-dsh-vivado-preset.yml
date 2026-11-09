@@ -1,0 +1,8 @@
+url: https://github.com/chemmy-11/dsh-vivado/tree/main/packages/dsh-vivado-preset
+name: chemmy-11/dsh-vivado#dsh-vivado-preset
+category: skill
+description:
+  en: 'Adds a Vivado session preset to dsh with an FPGA engineering-discipline persona (global serialization, pure-ASCII paths, evidence-first conclusions, detached long builds) and mounts eight bundled AMD/FPGA skills from the package itself; installing the preset needs no Vivado or vivado-mcp installation.'
+  zh: '为 dsh 增加一个 Vivado 会话预设：FPGA 工程纪律 persona（全局串行、纯 ASCII 路径、结论必须带证据、长构建脱离进程树），并从包内挂载 8 个 AMD/FPGA 技能；安装预设本身不要求装 Vivado 或 vivado-mcp。'
+icon: https://raw.githubusercontent.com/chemmy-11/dsh-vivado/main/icon.png
+tarball: https://github.com/chemmy-11/dsh-vivado/releases/download/v0.2.2/dsh-vivado-preset-0.2.2.tgz

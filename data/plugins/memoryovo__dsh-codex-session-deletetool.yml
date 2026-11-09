@@ -1,8 +1,0 @@
-url: https://github.com/memoryovo/dsh-codex-session-deletetool
-name: memoryovo/dsh-codex-session-deletetool
-category: session
-description:
-  en: 'Puts a working delete-session row back into the Codex UI sidebar by providing the remote.workspaceRegistry.deleteSession service that @michengai/dsh-codex-ui checks for, unhides the per-session ... button its stylesheet hides, and permanently removes the session log, workspace records and projection cache, with subagent and forked conversations selectable in a family-tree dialog. Delete engine adapted from Lzcdebear/better-dsh-session-deletetool (MIT); both can be installed together (distinct route prefix).'
-  zh: '为 Codex UI 侧边栏补回可用的「删除会话」：提供 @michengai/dsh-codex-ui 所检查的 remote.workspaceRegistry.deleteSession 服务，放出被其样式隐藏的会话行「...」按钮，永久删除会话日志、工程记录与投影缓存，子智能体与派生对话可在家族树对话框里逐项勾选一并删除。删除引擎改编自 Lzcdebear/better-dsh-session-deletetool（MIT），两者可同时安装（路由前缀不同）。'
-icon: https://raw.githubusercontent.com/memoryovo/dsh-codex-session-deletetool/main/assets/icon-512.png
-tarball: https://github.com/memoryovo/dsh-codex-session-deletetool/releases/download/v0.2.0/dsh-codex-session-deletetool-0.2.0.tgz

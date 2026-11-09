@@ -1,0 +1,6 @@
+url: https://github.com/Gaudi-XIX/dsbot-session-create
+name: Gaudi-XIX/dsbot-session-create
+category: session
+description:
+  en: "Adds four tools to a Session. create_session opens a new Session in a named workspace or in any existing folder and delivers one prompt into it; session_message adds one more message to a Session that is still running — the host is asked to splice it into that turn at once, instead of queueing it until the turn ends; a Session that has gone idle is refused, pointing back to create_session; read_session_transcript reads back what a Session said and whether its current turn has finished; list_dispatched_sessions lists what this plugin dispatched and each one's state right now. Host-half plugin, no UI — it calls the host's own session primitives rather than reimplementing them. Restart DSH after installing."
+  zh: "给会话加四个工具：create_session 在指定工作区或任意一个已存在的文件夹里开一个新会话，并把一段提示词投进去；session_message 给一个还在跑的会话再追加一条消息——请宿主立刻把它插进正在跑的那一轮，不再排队到本轮结束；已经闲下来的会话会被拒投，并指向 create_session；read_session_transcript 按会话 id 读回它说过什么、当前这一轮结束没有；list_dispatched_sessions 列出本插件派送过哪些会话、各自此刻什么状态。宿主半边插件，没有界面，调用的是宿主自己的建会话能力。装完需重启 DSH。"

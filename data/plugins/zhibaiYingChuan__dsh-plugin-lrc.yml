@@ -1,0 +1,6 @@
+url: https://github.com/zhibaiYingChuan/dsh-plugin-lrc
+name: zhibaiYingChuan/dsh-plugin-lrc
+category: memory
+description:
+  en: "Connects DeepSeek Harness to LRC's local structured memory: distills conclusions every 8 turns, drops near-duplicates by character-level Jaccard similarity (≥ 0.85), and writes them to a local LRC store. Five tools — lrc_recall, lrc_forget, lrc_remember_now, lrc_handoff and lrc_status — cover on-demand recall, retracting wrong entries, immediate writes, session handoff and a status line. On first run it downloads a per-platform LRC binary (win32-x64, darwin-arm64 or linux-x64, SHA256-verified) and starts an isolated instance, so the LRC desktop app is not required; data stays in $DSH_HOME/cache/lrc-plugin/data unless LRC_BASE points at an existing instance."
+  zh: "把 DeepSeek Harness 接到 LRC 的本地结构化记忆：每 8 轮提炼一次结论，按字符级 Jaccard 相似度（≥ 0.85）去重后写入本地 LRC 库。五个工具 lrc_recall / lrc_forget / lrc_remember_now / lrc_handoff / lrc_status 分别负责按需召回、撤回错误条目、立即写入、会话交接与状态行。首次运行会按平台下载 LRC 二进制（win32-x64、darwin-arm64、linux-x64，带 SHA256 校验）并启动隔离实例，因此无需先装 LRC 桌面端；数据默认写在 $DSH_HOME/cache/lrc-plugin/data，设置 LRC_BASE 可复用已有实例。"

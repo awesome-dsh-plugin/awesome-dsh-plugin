@@ -1,0 +1,6 @@
+url: https://github.com/thawline/dsh-wechat-bridge
+name: thawline/dsh-wechat-bridge
+category: remote
+description:
+  en: 'Two-way WeChat bridge: reads incoming messages from the local WeChat database and sends replies through Windows UI automation, so you can talk to a local DSH session from your own WeChat. Outsiders who can message this WeChat account can chat with the local session by default (they cannot run commands or touch files); set an inbound allowlist to restrict who may talk to it.'
+  zh: 微信双向桥：读微信本地数据库收消息、用 Windows 界面自动化发消息，用你自己的微信和本机 DSH 会话对话；默认允许任何能给这个微信号发消息的联系人与本机会话聊天（他们不能执行命令或读写文件）；可配置入站白名单限制谁能对话。

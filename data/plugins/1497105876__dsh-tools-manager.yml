@@ -1,0 +1,6 @@
+url: https://github.com/1497105876/dsh-tools-manager
+name: 1497105876/dsh-tools-manager
+category: tools
+description:
+  en: "Deny-only tool blacklist per agent preset. Tick a tool off in Settings and it leaves that mode's tool schema and its calls are rejected; nothing is ever enabled or whitelisted, and tools nobody denied are left alone. Each row expands to that tool's own description, and rules live in one JSON file outside the profile."
+  zh: "按 Agent 预设（模式）管理的工具黑名单，只做禁用：在设置页勾掉一个工具，它就从该模式的工具 schema 里消失、调用也会被拒；不设白名单、不负责启用，没被点名的工具一概不碰。每行可展开看工具自己的描述，规则存在 profile 之外的单个 JSON 文件里。"

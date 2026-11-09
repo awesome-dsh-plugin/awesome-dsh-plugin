@@ -1,0 +1,7 @@
+url: https://github.com/LyuYuxin/dsh-market-peek
+name: LyuYuxin/dsh-market-peek
+category: market
+description:
+  en: 'Previews plugin-market entries inside DSH instead of opening an external browser: clicking a card shows the README in a panel docked beside the market, or the repository in DSH''s built-in right-sidebar browser, and restores the layout when you leave. Works with dshmarket and DSH''s built-in experimental market.'
+  zh: '在 DSH 插件市场点击插件卡片时把插件留在 DSH 里预览：README 显示在市场旁的停靠面板，或在内置右侧栏浏览器打开仓库页，离开市场时恢复原布局。支持 dshmarket 与 DSH 内置实验性市场。'
+icon: https://raw.githubusercontent.com/LyuYuxin/dsh-market-peek/main/assets/icon-180.png

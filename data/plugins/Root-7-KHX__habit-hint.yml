@@ -1,0 +1,7 @@
+url: https://github.com/Root-7-KHX/habit-hint
+name: Root-7-KHX/habit-hint
+category: model
+tarball: https://github.com/Root-7-KHX/habit-hint/releases/download/v0.3.0/local-habit-hint-0.3.0.tgz
+description:
+  en: 'A local small-model habit hint plugin for DeepSeek Harness that reads recent turns, extracts the user habits, key points and hints, and injects them into the conversation system prompt. It needs a Python virtualenv with torch/transformers/peft plus a user-supplied Qwen3-0.6B base model and LoRA adapter, none of which are bundled; its default scope only runs in sessions that companion-memory has enabled, and with the shipped placeholder paths it silently injects nothing.'
+  zh: '《习惯提示小模型》：本地小模型每隔几轮读一次近期对话，生成「习惯 / 重点 / 提示语」并注入系统提示词，训练与模型数据都在本机。需要带 torch/transformers/peft 的 Python 虚拟环境，以及用户自备的 Qwen3-0.6B 基座与 LoRA 适配器（插件不打包）；默认只在开启伴侣记忆（companion-memory）的会话里工作，路径没配好时静默不注入。'
