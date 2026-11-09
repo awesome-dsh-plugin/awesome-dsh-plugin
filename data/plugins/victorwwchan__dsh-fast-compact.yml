@@ -1,0 +1,6 @@
+url: https://github.com/victorwwchan/FastCompact
+name: victorwwchan/dsh-fast-compact
+category: session
+description:
+  en: 'dsh-Fast-Compact plugin mainly solves two problems:1) Skips model's long summarizing time during compaction step entirely. Without it, the session runs ~90% faster and smoother — no mid-conversation,  stalls while the model rewrites its own history.2)Perfect for **Small context windows (e.g. 64 KB).**,With Fast Compact, a small window feels like an infinite one!'
+  zh: 'dsh-Fast-Compact 插件主要解决两个问题：1)完全跳过上下文压缩阶段耗时的模型总结过程。省去这一步后，会话运行速度提升约 90%，交互也更加流畅——不再因模型重写自身的对话历史而在交谈中途卡顿。2)特别适合小上下文窗口（例如 64 KB）。有了Fast Compact，小窗口也能拥有近乎无限上下文的体验！'
