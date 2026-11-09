@@ -1,0 +1,6 @@
+url: https://github.com/Michael-ZAG/dsh-haloflux
+name: Michael-ZAG/dsh-haloflux
+category: theme
+description:
+  en: 'A full-frame animated light-ring background for the DSH Web GUI. Ring rotation, token capture and tool beams follow the live token stream and tool calls of the current session, with an optional HUD and a Settings page for its 117 parameters.'
+  zh: 'DSH Web GUI 的全帧光环背景。圆盘转动、词元抓取与工具光束跟随当前会话的实时词元流与工具调用，另带可选的 HUD，并在设置页提供全部 117 项参数。'
