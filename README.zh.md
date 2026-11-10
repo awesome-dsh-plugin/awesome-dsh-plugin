@@ -2379,6 +2379,7 @@ dsh plugin --profile web add dshmarket
 - [menglian001/dsh-token-usage](https://github.com/menglian001/dsh-token-usage) — 逐请求 token 账本：四桶计量、53 周热力图与实时并发，并额外落一份 JSONL 账本——不受每会话 600 行投影窗口限制，启动时从全部会话日志回扫补齐。
 - [Mengshang-spec/dsh-third-party-api-balance-wallet](https://github.com/Mengshang-spec/dsh-third-party-api-balance-wallet) — 通用 Sub2API 第三方余额面板：使用 /v1/usage 和长期 API Key，自动发现 DSH provider，显示余额及今日用量。
 - [mike-lee0120/dsh-cost-dashboard](https://github.com/mike-lee0120/dsh-cost-dashboard) — 费用看板：汇总本机全部会话的模型输入/输出/缓存 token，按内置价格表计费（含 DeepSeek 峰谷），展示每日趋势与按模型/会话明细。
+- [miko-cn/dsh-commandcode-quota](https://github.com/miko-cn/dsh-commandcode-quota) — DSH 里的 Command Code 用量面板：套餐额度、5 小时 / 每周窗口、本期请求统计、套餐档位与内置 API key 编辑，包含设置页与可拖动浮窗。
 - [miku05231/dsh-provider-quote](https://github.com/miku05231/dsh-provider-quote) — 查询 DSH 中已配置的各模型提供商的余额与 token 单价（不限厂商或中转站），兼容 cc-switch 的 usage_script，并在输入框下方显示当前会话所选提供商的余额。
 - [mingzaily/dsh-balance-pill](https://github.com/mingzaily/dsh-balance-pill) — 输入框状态行里的本会话花费胶囊，点击查看账户余额、今日/近 7 天/本月账本与峰谷价格时段。
 - [Minokun/dsh-quota](https://github.com/Minokun/dsh-quota) — 右下角「会员额度」悬浮球与面板，聚合各 AI 平台套餐额度（Kimi Code、DeepSeek、智谱 Coding Plan、BigModel、通义千问、超算、TokenRouter、SupaWriter），API key 自动同步自 DSH 凭证域，彩色进度条展示用量。
