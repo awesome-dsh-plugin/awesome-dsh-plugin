@@ -1,0 +1,7 @@
+url: https://github.com/gdyshi/dsh-connect-scnet-plus
+name: gdyshi/dsh-connect-scnet-plus
+category: model
+description:
+  en: Connects the models of the SCNet (超算互联网) Computing Service desktop client to DSH, adding a per-model switches tab on the plugin page and adapting the transcript to whichever pi-ai generation the profile resolves.
+  zh: 把本机 SCNet（超算互联网）计算服务客户端已登录的模型接入 DSH，插件页提供逐模型开关标签页，并按 profile 实际解析到的 pi-ai 世代自动适配 transcript 形状。
+tarball: https://github.com/gdyshi/dsh-connect-scnet-plus/releases/download/v0.1.1/dsh-connect-scnet-plus-0.1.1.tgz
