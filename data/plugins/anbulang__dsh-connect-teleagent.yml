@@ -1,0 +1,8 @@
+url: https://github.com/anbulang/dsh-connect-teleagent
+name: anbulang/dsh-connect-teleagent
+category: model
+description:
+  en: Connect DeepSeek Harness to the TeleAgent (China Telecom TeleAI desktop app) models through the app's own local kernel after signing in there, keeping DSH's streaming, multi-turn, images, tool calls, reasoning and points balance.
+  zh: 把本机已登录的 TeleAgent（天翼 AI 星辰超级智能体桌面端）模型经其本地内核接入 DSH，保留流式、多轮、图片、工具调用、思维链与积分。
+icon: https://raw.githubusercontent.com/anbulang/dsh-connect-teleagent/main/icon.png
+tarball: https://github.com/anbulang/dsh-connect-teleagent/releases/download/v0.13.0/dsh-connect-teleagent-0.13.0.tgz
