@@ -1,0 +1,7 @@
+url: https://github.com/cooleye/dsh-dafeiyu-pro
+name: cooleye/dsh-dafeiyu-pro
+category: voice
+description:
+  en: 'Voice-enabled fork of the dsh-dafeiyu desktop pet: say the wake word to talk hands-free, with local wake-word detection, cloud speech recognition and a selectable TTS voice, live subtitles in the bubble above the pet and a voice-level meter under it. Requests are routed between casual chat, lookups such as weather, and long jobs handed to the DSH agent. Needs a DashScope API key and Windows x64; disable the upstream dsh-dafeiyu first.'
+  zh: 'dsh-dafeiyu 桌宠的语音分叉版：喊唤醒词即可免手动对话，本地唤醒词识别搭配云端语音识别和可选音色的 TTS，头顶气泡显示实时字幕、脚下有声波。请求会在闲聊、天气这类数据查询、以及交给 DSH agent 的长任务之间自动分流。需要 DashScope API Key，仅 Windows x64；安装前请先禁用上游 dsh-dafeiyu。'
+icon: https://raw.githubusercontent.com/cooleye/dsh-dafeiyu-pro/main/assets/catalog/icon-180.png
