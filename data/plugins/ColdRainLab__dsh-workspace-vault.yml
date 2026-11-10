@@ -1,8 +1,0 @@
-url: https://github.com/ColdRainLab/dsh-workspace-vault
-name: ColdRainLab/dsh-workspace-vault
-category: ui
-tarball: https://github.com/ColdRainLab/dsh-workspace-vault/releases/download/v0.1.0/dsh-workspace-vault-0.1.0.tgz
-
-description:
-  zh: '工作区置顶与任务置顶、密码隐藏空间、工作区访问锁；隐藏空间不参与云同步。'
-  en: 'Pin workspaces and tasks in the sidebar, with a password-protected hidden space and a workspace access lock. Hidden items are excluded from cloud sync.'

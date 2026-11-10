@@ -1,8 +1,0 @@
-url: https://github.com/ColdRainLab/dsh-feature-check
-name: ColdRainLab/dsh-feature-check
-category: tools
-tarball: https://github.com/ColdRainLab/dsh-feature-check/releases/download/v0.1.2/dsh-feature-check-0.1.2.tgz
-
-description:
-  zh: 'DSH 启动自检：每次启动对比上次健康基线，报告丢失的 Loader 条目、客户端模块与被兼容性跳过的插件，升级后尤其有用。'
-  en: 'Startup self-check that compares against the last healthy baseline and reports missing loader entries, client modules and plugins skipped by compatibility checks, especially useful after DSH upgrades.'
