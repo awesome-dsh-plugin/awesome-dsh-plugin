@@ -1,5 +1,5 @@
-url: https://github.com/laoyingfuhuole/dsh-browser-use
-name: laoyingfuhuole/dsh-browser-use
+url: https://github.com/laoyingfuhuole/dsh-parallel-browser
+name: laoyingfuhuole/dsh-parallel-browser
 category: browser
 description:
   en: 'Fully background browser automation for DSH: an offscreen browser per conversation that never steals focus or pops windows, with real CDP input.'
