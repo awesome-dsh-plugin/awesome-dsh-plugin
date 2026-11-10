@@ -1,0 +1,6 @@
+url: https://github.com/amd47802574/dsh-jot
+name: amd47802574/dsh-jot
+category: memory
+description:
+  en: 'Local jot-down notes for DSH: one Markdown file per note with a redesigned card UI, custom tag management (create tags ahead of use, delete one everywhere), flat quick-scan list, full-text search, Markdown preview, autosave, zero-dependency Office text extraction, and one-key citation or AI write-back from conversations. Heavily reworked from dsh-knowledge-lite; data-compatible with E:/dsh-kb.'
+  zh: '随手笔记：本地 Markdown 笔记插件。卡片式全新界面，自定义标签管理（可提前建标签、一处删除全局生效），平铺速览列表，全文检索，Markdown 预览，自动保存，Office 零依赖文本抽取，支持一键引用到对话与 AI 回写。由 dsh-knowledge-lite 深度改造而来，数据与 E:/dsh-kb 完全兼容。'
