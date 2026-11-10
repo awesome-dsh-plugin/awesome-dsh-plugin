@@ -2,5 +2,5 @@ url: https://github.com/Dubai1210/dsh-session-delete
 name: Dubai1210/dsh-session-delete
 category: session
 description:
-  en: Deletes a DSH session from the session menu, and lists the workspace files that session touched so you choose which ones to remove with it.
-  zh: 在会话菜单里删除 DSH 会话，并列出该会话碰过的工作区文件，由你勾选哪些一起删掉。
+  en: 'Deletes a DSH session from the session menu, and lists the workspace files that session touched so you choose which ones to remove with it. Deletion is permanent (no undo), and files written through shell commands are not tracked.'
+  zh: '在会话菜单里删除 DSH 会话，并列出该会话碰过的工作区文件，由你勾选哪些一起删掉。删除是永久的、无法撤销；通过 shell 命令写出的文件不在追踪范围内。'

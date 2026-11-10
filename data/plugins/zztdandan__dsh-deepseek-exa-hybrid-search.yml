@@ -2,5 +2,5 @@ url: https://github.com/zztdandan/dsh-deepseek-exa-hybrid-search
 name: zztdandan/dsh-deepseek-exa-hybrid-search
 category: tools
 description:
-  en: "DeepSeek Search API and Exa queried in parallel and merged into one URL-de-duplicated, cross-source-first web_search result list for DSH."
-  zh: "把 DeepSeek 搜索 API 与 Exa 并发查询，按 URL 去重合并成单份跨源优先的 web_search 结果列表。"
+  en: 'DeepSeek Search API and Exa queried in parallel and merged into one URL-de-duplicated, cross-source-first web_search result list for DSH. Needs a DeepSeek and/or Exa API key (either alone works); it takes over the default web_search provider, and each query goes to every service you have a key for.'
+  zh: '把 DeepSeek 搜索 API 与 Exa 并发查询，按 URL 去重合并成单份跨源优先的 web_search 结果列表。需要 DeepSeek 和/或 Exa 的 API 密钥（有一个即可）；会接管默认的 web_search 后端，每次查询发往你配了密钥的各家服务。'

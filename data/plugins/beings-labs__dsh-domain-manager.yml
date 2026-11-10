@@ -2,5 +2,5 @@ url: https://github.com/beings-labs/dsh-domain-manager
 name: beings-labs/dsh-domain-manager
 category: tools
 description:
-  en: 'Manage a domain portfolio in DeepSeek Harness: sync registrations from Namecheap and Cloudflare, track expiry dates, auto-renewal and yearly renewal costs, and check domain availability.'
-  zh: '管理域名组合：从 Namecheap 与 Cloudflare 同步注册信息，跟踪到期日、自动续费与年度续费成本，并检查域名可用性。'
+  en: 'Manage a domain portfolio in DeepSeek Harness: sync registrations from Namecheap and Cloudflare, track expiry dates, auto-renewal and yearly renewal costs, and check domain availability. Read-only towards registrars (never registers, transfers or renews). Syncing needs a Cloudflare API token, or a Namecheap API key with an allow-listed IP (or Namecheap''s browser-login connector, which cannot read renewal prices).'
+  zh: '管理域名组合：从 Namecheap 与 Cloudflare 同步注册信息，跟踪到期日、自动续费与年度续费成本，并检查域名可用性。对注册商只读（不注册、不转移、不续费）。同步需要 Cloudflare API 令牌，或带 IP 白名单的 Namecheap API 密钥（也可用 Namecheap 的浏览器登录连接器，但读不到续费价格）。'
