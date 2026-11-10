@@ -1,0 +1,6 @@
+url: https://github.com/chichi233/dsh-delete-session
+name: chichi233/dsh-delete-session
+category: session
+description:
+  en: 'Adds a "Delete session" item to the sidebar session menu that removes the session transcript, spill files and projection cache from disk in one request, detaching a live session first and cascading to its subagent sessions. A setting switches the confirmation step off so deleting takes one click; duplicate delete items registered by other plugins are collapsed so only one remains.'
+  zh: '在侧栏会话菜单里加一条「删除会话」，一次请求就把会话记录、溢出文件和投影缓存从磁盘删掉，正在使用的会话会先被摘下来，子代理会话一并级联清理。设置里可以关掉「删除前再次确认」，关掉后点一下就删；其它插件注册的同名菜单项会被合并，只留一条。'
