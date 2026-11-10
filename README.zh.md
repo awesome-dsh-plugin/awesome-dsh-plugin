@@ -1924,6 +1924,7 @@ dsh plugin --profile web add dshmarket
 - [Xchcy/dsh-codex-kit#projects-browser](https://github.com/Xchcy/dsh-codex-kit/tree/main/projects-browser) — 把侧边栏的工作区列表替换成 Codex 风格的浏览器：置顶 / 项目 / 最近三个分区标题滚动时固定在顶部，行首标记正在工作、等待审批、意外停止和已完成四种状态，支持右键切换排序、重命名和删除工作区，以及会话行的置顶和归档菜单。
 - [Xchcy/DSH-Reflex](https://github.com/Xchcy/DSH-Reflex) — 在 DSH 消息里右键链接或文件引用，弹出类似 ChatGPT 的菜单：默认打开方式、打开方式…、在文件管理器中打开、复制文件地址、复制文件名、复制文件内容、另存为…
 - [XcodeFish/dsh-file-link-menu](https://github.com/XcodeFish/dsh-file-link-menu) — 为聊天输出中的文件引用添加右键菜单，列出系统关联应用（带图标）供选择打开，在文件管理器中定位文件，并复制基于会话工作区解析的绝对或相对路径；代码块、普通文本与外部链接保持原生菜单。
+- [XDeemoH/PULSE](https://github.com/XDeemoH/PULSE) — dsh 运行面板：实时显示技能和工具调用、技能目录预算（预算线随模型上下文变化），带预演和撤销的技能装配窗口，目标与灵感，以及对话收藏。
 - [XenoPhonLau/dsh-activity-bar](https://github.com/XenoPhonLau/dsh-activity-bar) — 把 DeepSeek Harness 收起后的两侧栏变成 VS Code 那样的 44px 图标条：左条接管侧边栏导航与底部动作行，右条按 sidebarRightTabs 清单自动列出第三方面板，右侧面板可拖动改宽（300px 至窗口 60%）。设置里的「活动栏」两个开关，按浏览器保存。
 - [XHR666/dsh-mpkg-wallpaper](https://github.com/XHR666/dsh-mpkg-wallpaper) — 在浏览器里直接加载 Wallpaper Engine 的 .mpkg 作为 DSH 网页背景：内嵌视频、多时段切换、统一磨砂虚化、本地壁纸库与轮换。
 - [xi-zhao/OpenQuantum#openquantum-web-branding](https://github.com/xi-zhao/OpenQuantum/tree/main/packages/openquantum-web-branding) — 为 DeepSeek Harness 原生 Web 界面应用 OpenQuantum 品牌、浏览器元数据与 PWA 资产。
@@ -3207,7 +3208,7 @@ dsh plugin --profile web add dshmarket
 - [Bazley13/dsh-multi-model-orchestrator](https://github.com/Bazley13/dsh-multi-model-orchestrator) — 多模型主脑编排器：主模型将复杂任务拆解，按各模型优劣分派给 GLM / Kimi / Qwen 子代理执行，并按模型统计 token 用量。
 - [beibing173/dsh-codex-gpt](https://github.com/beibing173/dsh-codex-gpt) — 通过 OpenAI OAuth 登录 ChatGPT Codex，把 ChatGPT 加为可选 LLM provider（流式、Off/Low/High/Max 思考强度、图片输入），并提供按会话授权的 codex 工具供 DeepSeek 升级调用，支持把轻任务委派回 DeepSeek，附带订阅用量与重置卡管理。
 - [beijingwahw/dsh-proactive](https://github.com/beijingwahw/dsh-proactive) — 主动式多模型协同调度插件：多源信号接入（去重与紧急度排序），execute/defer/dismiss/ask-user 四级决策引擎，DAG 计划生成与多模型并行执行，质量反思自动重试与切换模型，任务模式与经验教训长期记忆，以及遗传算法策略进化（沙盒评估、金丝雀发布）。
-- [betsunninda9-lgtm/dsh-model-groups](https://github.com/betsunninda9-lgtm/dsh-model-groups) — 适用于 DSH 0.2.2-rc.1 网页界面的分层模型选择与多密钥配置（不改动 App 原生模型菜单）；加载时自动备份并修改宿主文件，随后需重启引擎。
+- [betsunninda9-lgtm/dsh-model-groups](https://github.com/betsunninda9-lgtm/dsh-model-groups) — 适用于 DSH 0.2.2-rc.1 网页界面的分层模型选择与可折叠多密钥配置（不改 App 原生菜单）；在设置页手动启用、更新或还原宿主补丁，校验备份后需重启引擎。普通卸载不会还原补丁。
 - [bill277048-hash/DSH-model-router](https://github.com/bill277048-hash/DSH-model-router) — DeepSeek Harness 多供应商模型路由插件：规则路由 + 首 token 前无感故障切换 + cooldown 熔断 + 用量记账 + 状态接口。
 - [bitxeno/dsh-magpie-connect](https://github.com/bitxeno/dsh-magpie-connect) — 把 Magpie 网关的模型接入 DSH 选择器，支持模型显隐管理、图片输入与思考档位。
 - [boe1900/owndsh#owndsh-plugin](https://github.com/boe1900/owndsh/tree/main/plugin/packages/bundle) — 早期开发中的团队管理插件，将 DeepSeek Harness 接入独立部署的自托管 OwnDsh 服务端，提供团队身份、模型授权、配额与用量审计。
@@ -8604,6 +8605,7 @@ dsh plugin --profile web add dshmarket
 - [HughPython/dsh-tc-mail](https://github.com/HughPython/dsh-tc-mail) — 腾讯智能体邮箱（Agent Mail）客户端：侧边栏面板浏览收件箱与发件箱，HTML 正文在沙箱内渲染并默认拦截外链图片，支持写信、回复、转发、附件收发、搜索与永久删除，可调字体与界面透明度；另注册 5 个工具（mail_health、mail_list、mail_read、mail_search、mail_send），发信走已授权的 agently-cli 账号。需腾讯账号（设备码授权），面板可一键安装 agently-cli；仅在 Windows 上实测。
 - [HUHUhim/dsh-taskbar-badge](https://github.com/HUHUhim/dsh-taskbar-badge) — 在 Windows 任务栏图标上显示 DSH 未读会话数，并恢复上次关闭时的窗口大小和位置。
 - [huhui-tech/dsh-host-notify](https://github.com/huhui-tech/dsh-host-notify) — 宿主侧 macOS 系统通知：提问/审批/回复完成即时送达，免疫渲染层隐藏丢通知，带图标、提示音与点击抬窗。
+- [HuiHui-Small/dsh-outlook-bridge](https://github.com/HuiHui-Small/dsh-outlook-bridge) — 在 DeepSeek 助理中接入 Outlook 邮箱和日历，支持未读角标与 AI 邮件草稿。
 - [iArxic/dsh-agents-notch](https://github.com/iArxic/dsh-agents-notch) — Windows 屏幕顶部始终置顶的刘海：每个会话一个小机器人，显示哪些在工作、哪些在等你、哪些已完成或失败；不抢焦点，全屏应用下自动隐藏，带独立设置页。
 - [idoall/dsh-notify](https://github.com/idoall/dsh-notify) — 带可折叠状态通知、提示音与会话跳转的页内任务通知插件。
 - [imetn/dsh-lark-bridge](https://github.com/imetn/dsh-lark-bridge) — DeepSeek Harness 的飞书/Lark 双向控制器，支持 Project 与 Session 路由、交互卡片、审批、附件和任务控制。
@@ -9312,6 +9314,7 @@ dsh plugin --profile web add dshmarket
 - [TGYD-helige/dsh-plugins#dsh-langfuse](https://github.com/TGYD-helige/dsh-plugins/tree/main/packages/dsh-langfuse) — 将 dsh 的会话轮次、LLM 调用、工具调用及子 agent 活动记录到 Langfuse。
 - [Tianbuyu-wwx/dsh-hermes-link#dsh-hermes-link](https://github.com/Tianbuyu-wwx/dsh-hermes-link/tree/main/packages/dsh-hermes-link) — Hermes 与 DSH 的双向桥接插件：将 Hermes 会话导入 DSH、咨询 Hermes，并以单一 Cordis 插件接收 Hermes 下发的任务。
 - [tianyaZTY/dsh-hot-plugin-host](https://github.com/tianyaZTY/dsh-hot-plugin-host) — Web UI 运行时插件加载：监视热目录，运行中安装/更新客户端插件 bundle，所有页面即时生效，免重启。附子智能体看板示例。
+- [TLEWA/dsh-ptc-noargs](https://github.com/TLEWA/dsh-ptc-noargs) — 把 PTC run_code（TypeScript function-body）中省略或为 undefined 的工具首参归一化为 {}，tools.job_list() 这类无参调用不再报 binding arguments must be lossless JSON。
 - [TLEWA/dsh-utf8-output](https://github.com/TLEWA/dsh-utf8-output) — 在字节被解码前接管子进程输出采集，按严格 UTF-8、必要时 GB18030 重新解码，Windows 下 cmd 与 PowerShell 的 GBK/CP936 输出不再变成 U+FFFD 乱码。
 - [TNTD26/dsh-ide](https://github.com/TNTD26/dsh-ide) — 内置在 DeepSeek Harness 里的 IDE：文件树、多标签编辑器、AI 助手（模型选择/API Key）、Git 面板、PTY 终端和 Python/TypeScript LSP。
 - [tuogusa/dsh-skill-manager](https://github.com/tuogusa/dsh-skill-manager) — 在 Web 设置面板中浏览、搜索、删除/撤回并更新用户技能，支持从 GitHub/Gitee Release 检查技能更新。
