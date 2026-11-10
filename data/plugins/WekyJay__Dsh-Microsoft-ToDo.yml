@@ -1,0 +1,6 @@
+url: https://github.com/WekyJay/Dsh-Microsoft-ToDo
+name: WekyJay/Dsh-Microsoft-ToDo
+category: ui
+description:
+  en: 'Microsoft To Do panel: browse lists, add, edit, complete and reopen tasks, and open notes, due date, reminder, recurrence, steps and attachments. Lists can be collected into local groups, and a batch of tasks can be picked into a My Day shortlist. Signs in with the Microsoft device-code flow; the token cache belongs to the upstream microsoft-todo-mcp server (started with npx, so Node.js and npm access are needed), while groups and My Day live locally. Today, Overdue, My Day and new due dates and reminders use Asia/Shanghai time. Chinese and English UI.'
+  zh: '微软待办面板：浏览清单，新增、编辑、完成与重新打开任务，并查看备注、截止日期、提醒、重复、步骤与附件；清单可在本机分组，也能挑一批任务放进「我的一天」。用微软设备码登录，令牌缓存由上游 microsoft-todo-mcp 服务持有（经 npx 启动，需要 Node.js 与可访问 npm）；分组与「我的一天」存在本机。「今日」「逾期」「我的一天」以及新设的截止日期和提醒一律按 Asia/Shanghai（东八区）时间计算。中英双语界面。'

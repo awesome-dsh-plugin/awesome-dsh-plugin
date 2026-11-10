@@ -1,0 +1,6 @@
+url: https://github.com/jy007/dsh-calendar-board
+name: jy007/dsh-calendar-board
+category: ui
+description:
+  en: "Month calendar panel in the DSH main column: add and edit a day's entries inline, overlay the Host's scheduled reminders for today and tomorrow coloured by run state, and merge iCalendar subscriptions with the calendars already synced into this Mac's Calendar.app; a calendar_board tool exposes the same entries to any agent session."
+  zh: 'DSH 主栏里的月视图日历面板：可直接在日期格里写/改当天事项，叠加定时任务（只显示今天和明天，按运行状态配色），并合并 iCalendar 订阅与本机「日历」里已同步的日历；同一个 calendar_board 工具把事项开放给任意 Agent 会话。'

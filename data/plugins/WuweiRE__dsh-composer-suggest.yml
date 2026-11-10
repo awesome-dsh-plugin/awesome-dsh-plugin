@@ -1,0 +1,6 @@
+url: https://github.com/WuweiRE/dsh-composer-suggest
+name: WuweiRE/dsh-composer-suggest
+category: ui
+description:
+  en: 'Ghost-text suggestions in the composer: the message you are most likely to send next after a reply, and a continuation of your draft when you press Tab, including images attached to the composer. Tab accepts, Alt+Down cycles candidates, and the Settings row shows which model route answered. Adapted from Stijnus/dsh-composer-predictions, so do not enable both at once (they share the composer overlay and the Tab key); each suggestion is an extra model call on the Session''s model unless you pin another.'
+  zh: '在输入框中显示灰色建议：回复结束后预测你下一条最可能发送的消息；草稿末尾或附上图片后按 Tab 续写，附上的图片会随续写一起发送。Tab 采纳，Alt+↓ 切换候选，设置页会显示最近一次用的是哪个模型。基于 Stijnus/dsh-composer-predictions 改写，不要与它同时启用（共用输入框浮层与 Tab 键）；每条建议都是一次额外的模型调用，默认走当前会话的模型。'

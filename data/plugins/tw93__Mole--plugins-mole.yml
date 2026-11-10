@@ -1,0 +1,7 @@
+url: https://github.com/tw93/Mole/tree/main/plugins/mole
+name: tw93/Mole#mole
+category: skill
+description:
+  en: "Official agent skill for the open-source Mole CLI (mo), a disk cleanup tool for macOS and Windows: read disk usage, preview and run cleanup, inspect installed apps, and read system health and cleanup history from Mole's JSON output. It previews with --dry-run and asks before removing anything, and leaves app uninstalls and privileged steps to the user's own terminal. The plugin ships only the skill; the CLI is installed separately."
+  zh: "开源磁盘清理工具 Mole CLI（mo，支持 macOS 和 Windows）的官方 skill：按 Mole 的 JSON 输出查看磁盘占用、预览并执行清理、查看已安装应用、读取系统健康状态和清理记录。清理前先用 --dry-run 预览并征得同意，卸载应用和需要管理员权限的步骤留给用户在自己的终端里执行。插件只带 skill，CLI 需另外安装。"
+icon: https://raw.githubusercontent.com/tw93/Mole/main/plugins/mole/.claude-plugin/icon.png

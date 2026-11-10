@@ -1,0 +1,8 @@
+url: https://github.com/Calliope-Nicles/technical-terms-en-zh-plugin
+name: Calliope-Nicles/technical-terms-en-zh-plugin
+category: identity
+description:
+  en: 'Adds shared DSH/Codex instructions that introduce English technical terms with Chinese definitions in Chinese replies and reuse the English names within each reply. Requires macOS and DSH 0.2.1-rc.3.'
+  zh: '与 Codex 共用术语规则，提示中文回答首次标注英文术语及中文释义，同条后续沿用英文名称。DSH 接入要求 macOS 和宿主 0.2.1-rc.3。'
+icon: https://raw.githubusercontent.com/Calliope-Nicles/technical-terms-en-zh-plugin/v2.0.0/assets/pitaya-icon.png
+tarball: https://github.com/Calliope-Nicles/technical-terms-en-zh-plugin/releases/download/v2.0.0/dsh-plugin-technical-terms-en-zh-2.0.0.tgz

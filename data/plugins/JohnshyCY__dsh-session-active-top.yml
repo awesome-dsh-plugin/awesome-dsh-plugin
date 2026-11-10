@@ -1,0 +1,6 @@
+url: https://github.com/JohnshyCY/dsh-session-active-top
+name: JohnshyCY/dsh-session-active-top
+category: session
+description:
+  en: Floats conversations that are currently running to the top of their workspace session list, and keeps them there after they finish.
+  zh: 把正在运行的对话浮到所在工作区会话列表的最上方，运行结束后仍保留在该位置。

@@ -1,0 +1,7 @@
+url: https://github.com/stallenlu/dsh-wsl-suite
+name: stallenlu/dsh-wsl-suite
+category: wsl
+tarball: https://github.com/stallenlu/dsh-wsl-suite/releases/download/v0.1.6/dsh-wsl-suite.tgz
+description:
+  en: "WSL workspaces for DeepSeek Harness. A sidebar W button lists installed distros and registers a Linux folder as a host workspace addressed by a UNC path, and the sidebar terminal opens a real Linux pty inside the distribution for WSL sessions. A persistent zero-dependency agent running in the distro answers file, shell and search requests over a JSON-lines pipe, so no polling timers touch the distribution while it is idle and /mnt drives stay reachable; grep and glob run the distro's own ripgrep. WSL preset twins such as wsl-standard swap in the WSL shell and fs tools. A rebuild of 6Mikao9/dsh-wsl-workspace — do not install both: they mount the same W entry in the Workspaces header, publish the same wsl-<mode> presets, and each wrap the host's single-slot terminal provider."
+  zh: "为 DeepSeek Harness 增加 WSL 工作区：侧栏 W 按钮列出发行版并把 Linux 目录注册为宿主工作区（以 UNC 路径表示），WSL 会话的侧栏终端在发行版内打开真实 Linux pty。发行版内常驻一个零依赖 agent，通过 JSON-lines 管道响应文件、shell 与搜索请求，空闲时没有轮询计时器触碰发行版，/mnt 盘符也保持可达；grep 与 glob 在发行版内调用自带的 ripgrep。附带 wsl-standard 等 WSL 孪生预设，替换 shell 与 fs 工具。本插件是 6Mikao9/dsh-wsl-workspace 的重写版，不能与上游同装——两者都在侧栏挂同一个 W 入口、发布同名的 wsl-<mode> 预设，并各自包装宿主的单槽终端 provider。"

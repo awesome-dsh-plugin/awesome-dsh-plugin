@@ -1,0 +1,6 @@
+url: https://github.com/Chang-Tong/dsh-unified-context
+name: Chang-Tong/dsh-unified-context
+category: session
+description:
+  en: Imports sessions from pi, opencode, codex, claude-code and WorkBuddy into DSH, unifies AGENTS.md, skills, project and per-agent memory across harnesses with symlinks instead of copies, and migrates Codex and WorkBuddy automations into DSH scheduled tasks.
+  zh: 把 pi、opencode、codex、claude-code 与 WorkBuddy 的会话导入 DSH，用符号链接在各 Harness 间共享同一份 AGENTS.md、技能、项目与 Agent 记忆，并把 Codex / WorkBuddy 自动化迁移为 DSH 定时任务。

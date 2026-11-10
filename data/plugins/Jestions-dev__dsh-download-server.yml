@@ -1,0 +1,6 @@
+url: https://github.com/Jestions-dev/dsh-download-server
+name: Jestions-dev/dsh-download-server
+category: tools
+description:
+  en: A persistent download server for DSH — jobs outlive the session, survive a restart, and resume from the last byte.
+  zh: DSH 的全自动轻量常驻下载服务器 —— 任务活过会话、扛过重启，断点按字节续传。

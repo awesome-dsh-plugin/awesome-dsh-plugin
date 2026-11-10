@@ -1,0 +1,6 @@
+url: https://github.com/sharework-ai/dsh-docwright
+name: sharework-ai/dsh-docwright
+category: docs
+description:
+  en: 'A document generation plugin for DeepSeek Harness: JSON is the core output, structurally managing document content; unifies parameter definition and inheritance, material extraction, validation checking, and scoring across document generation, keeping output on-target, fast, and token-efficient; ships a built-in COSMIC scenario pack as a worked example plus a built-in guide for authoring new scenario packs.'
+  zh: '面向 DeepSeek Harness 的文档生成插件：以 JSON 为核心输出物，结构化管理文档内容输出；统一规范文档生成过程中的参数定义与继承、素材提取、校验结果检查及评分机制，使文档生成紧扣要求，快速且节约 Token；内置 COSMIC 文档生成场景包作为范例，并内置编写场景包的指南。'

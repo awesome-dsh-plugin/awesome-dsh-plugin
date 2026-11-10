@@ -2,5 +2,5 @@ url: https://github.com/heiyedehen/dsh-whale-whispers
 name: heiyedehen/dsh-whale-whispers
 category: ui
 description:
-  en: "A tab in the conversation view bar that keeps the lines your agent wanted to keep, with tools that let it add, list and remove them."
-  zh: "会话视图标签栏里的「鲸语」页：收着 agent 想留下的句子，并带三个工具让它自己增、查、删。"
+  en: "Quote books in the conversation header: one markdown file per chat, with search, a random pick, line and favourite counts, a keep button under every reply, and a trash with restore. The agent gets four tools (append, list, remove, merge) and a system-prompt guide, so by default it may save up to a line or two per chat on its own; capture rules can be set per chat or globally. Local-only. Needs DSH 0.2.1+ (below 0.3)."
+  zh: "会话头部的「鲸语」：每个对话一本 markdown 语录，带搜索、翻一句、句数与收藏计数、每条回复旁的一键收入，以及能恢复的回收站。agent 有增、查、删、合并四个工具，系统提示里也带一段记录指引，所以默认每个对话它最多自己记一两句；记什么可按对话或全局设置。全部只存本地。需要 DSH 0.2.1+（0.3 以下）。"
