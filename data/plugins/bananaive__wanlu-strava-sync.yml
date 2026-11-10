@@ -1,0 +1,6 @@
+url: https://github.com/bananaive/wanlu-strava-sync
+name: bananaive/wanlu-strava-sync
+category: skill
+description:
+  en: 'Guide an agent through exporting selected OneLap cycling FIT files, validating data and coordinates, and uploading via a logged-in Strava browser session.'
+  zh: '指导具备浏览器操作能力的 Agent 导出指定顽鹿骑行 FIT，校验数据和坐标，并通过已登录的 Strava 网页上传。'
