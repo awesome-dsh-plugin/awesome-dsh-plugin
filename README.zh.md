@@ -123,6 +123,7 @@ dsh plugin --profile web add dshmarket
 - [pk14742952-AD/dsh-host-rsi](https://github.com/pk14742952-AD/dsh-host-rsi) — 面向本地 Qwen3.8 27B/3.8 Flash 及线上 API 的反思进化插件：编码循环收敛器针对 Qwen3.8 27B/Flash 的重复验证大思考加速收敛、减少思考时间；五态交付护栏检测并纠正卡住/死循环；model-agnostic 宿主逻辑，线上 API 多数可通用；每次使用持续自进化，带反问式自检、批评升级、倒排索引记忆检索、编码循环收敛提示与五态交付护栏。
 - [qian-dsh/dsh-as-mcp-server](https://github.com/qian-dsh/dsh-as-mcp-server) — 把 DSH 变成一个 MCP server：让另一个 agent 实时看见它的思维、工具调用和文件改动，共享意图，持地板锁期间拒绝 DSH 的 write/edit/git 工具，插入中途提醒，并委托审查。
 - [qian-dsh/dsh-outer-brain](https://github.com/qian-dsh/dsh-outer-brain) — 把哲学家的思考方式变成可执行的东西：用辩证法和实践检验治理幻觉与长会话漂移，让「做完了」是可核事实而不是一句自述。
+- [Qiao-Fang/dsh-chinese-thinking-mode](https://github.com/Qiao-Fang/dsh-chinese-thinking-mode) — 通过一条 required 的 user-role 运行时上下文，让 agent 的深度思考使用简体中文，并在思考与最终回复中保持「鲸类萝莉」人设（自称本鱼、慵懒傲娇）；专用名词、代码标识符、路径、命令、URL 与报错保持原文；人设、附加名词与上下文顺序可配置。
 - [Qulierm/orbital-agents](https://github.com/Qulierm/orbital-agents) — 为 DeepSeek Harness 提供常驻的 Endeavour 与 Challenger 对等会话：负责规划、按序执行任务，并核验汇报的结果。
 - [rootsbymenda/dsh-second-angle](https://github.com/rootsbymenda/dsh-second-angle) — 把成品回答里的每条断言，和同一回合工具实际读到的内容对照：引用能在输出里找到的矛盾会在同一回合触发一次纠正；输出不支撑的断言则写进会话日志与 stderr。先跑一遍绝对化措辞与对不上数字的免费扫描，整回合没调用工具的就不进模型。
 - [samirliu/dsh-goalloop-agentteams](https://github.com/samirliu/dsh-goalloop-agentteams) — 面向 DeepSeek Harness 的确定性目标门控插件：契约先行的 AC 文法（每条检查都是可失败的具名命令），门控自己重跑每条检查、零模型参与；verdict 绑定文件树摘要，文件改动即作废已过审结论；通过 tools/pre-execute 硬拦 update_goal 的完成声明，配合假完成计数，两次被抓住即 BLOCKED；任务级完成声明按作用域分级（strict/goal-only），多任务 Agent Teams 循环不会死锁。
@@ -3208,6 +3209,7 @@ dsh plugin --profile web add dshmarket
 - [BruceLanLan/dsh-tier-router](https://github.com/BruceLanLan/dsh-tier-router) — 双档模型路由：强档负责规划/咨询/评审、弱档负责实现；含计划模式自动路由、高危操作守卫、失败自动升级与子代理分层。
 - [bushizhanghan/dsh-workbuddy-harness](https://github.com/bushizhanghan/dsh-workbuddy-harness) — 把 WorkBuddy 国内版和国际版的免费/付费模型接进 DSH，无需桌面端；以 @bushizhanghan/dsh-workmate 发布。本包是 Faide-cyber/dsh-workbuddy 的维护分支（上游条目已在目录内）；请勿与上游同装，二者共用 provider id「workbuddy-ai」会冲突。v1.2.7：跨国内网关风控——长系统提示自动搬迁、出站体改写 DSH 字样、调试落盘；支持 dsh 0.2.0-rc.2 至 0.2.1（含预发布）。
 - [callqh/dsh-codex-oauth](https://github.com/callqh/dsh-codex-oauth) — 在 DSH 设置页添加 Codex 登录入口，调用 llm-pi-ai 内置 OAuth 流程完成浏览器或设备码登录并展示脱敏账号状态，不另建模型适配器或凭证库。
+- [calmzealA/dsh-decide](https://github.com/calmzealA/dsh-decide) — 把 DSH 接入决策模型（TypeSafe Jev、基元律动 NeoHorse-Jev、OpenAI Decisions、本地 System One），提供 decide / 守门 / 重排 / 验收工具和设置页。
 - [CARVIN94/dsh-router](https://github.com/CARVIN94/dsh-router) — 以 DSH 插件形式运行的 AI 路由网关。侧边栏新增「路由系统」面板管理供应商、账号池、回退组合与 API 密钥，并在 http://localhost:3080/v1 提供 OpenAI 兼容端点。
 - [CARVIN94/dsh-router-codebuddy](https://github.com/CARVIN94/dsh-router-codebuddy) — dsh-router 的 CodeBuddy 供应商插件。单账号负责轮询式 OAuth 登录与令牌刷新，选号、冷却与签到交由 dsh-router 核心处理。
 - [CARVIN94/dsh-router-qoder](https://github.com/CARVIN94/dsh-router-qoder) — dsh-router 的 Qoder 供应商插件，同时覆盖国内版与国际版。以个人访问令牌认证、对 Qoder 的 cosy 网关签名请求，并把上游 SSE 转成 OpenAI SSE；模型列表同时上报上游显示名与 key，选号与冷却仍由 dsh-router 核心处理。
@@ -3847,7 +3849,7 @@ dsh plugin --profile web add dshmarket
 - [alchemistwu/dsh-tool-call-guard](https://github.com/alchemistwu/dsh-tool-call-guard) — 在 wire 层中性化 arguments 为非法 JSON 的 tool call，避免一次模型畸形输出让 session 在严格 OpenAI 兼容服务端上永久 400。
 - [aLIZELI/belief-merge#belief-merge](https://github.com/aLIZELI/belief-merge/tree/main/belief-merge) — 把其他会话的上下文合并进当前回合：按证据裁决冲突、前提被撤回时同步撤回结论、用信任格抵抗跨会话提示注入，并在 token 预算内打包。附带评测基准。
 - [amd47802574/dsh-session-fulltext-search](https://github.com/amd47802574/dsh-session-fulltext-search) — 开启 dsh 内置但默认关闭的会话全文搜索后端（session-query-sqlite，SQLite FTS5），侧边栏放大镜即可搜索消息正文并附摘要，而不只是标题。
-- [ame-code/dsh-workspace-move](https://github.com/ame-code/dsh-workspace-move) — 在工作区右键菜单里把整个工作区搬到另一个目录，顺带重命名：嵌套工作区与会话一起迁移并改写记录，失败自动回滚，移动后可一键撤销。首先在 Windows 上开发与验证；macOS 与 Linux 走同一套代码路径。
+- [ame-code/dsh-workspace-move](https://github.com/ame-code/dsh-workspace-move) — 在工作区右键菜单里把整个工作区搬到另一个目录，顺带重命名：嵌套工作区与会话一起迁移并改写记录，失败自动回滚，移动后可一键撤销。在 Windows 上完成开发；macOS 与 Linux 走同一套代码路径，并在 CI 里用真实 Harness 实例跑通移动与撤销。
 - [Angela-lwh/dsh-archive-purge](https://github.com/Angela-lwh/dsh-archive-purge) — 在已归档会话的行菜单里加入「删除会话」：永久移除会话日志目录、它启动的子代理会话日志、工作区归属、归档标记、投影缓存记录与 spill 溢出目录；宿主仍持有的会话先登记，下次启动或点「完成待删除清理」时完成。另外会清扫被放弃的空白占位、遗留的孤儿子代理与失效的投影缓存记录，并让空白占位不再出现在 @ 引用列表里。
 - [AngleNaris/slumberpavilion](https://github.com/AngleNaris/slumberpavilion) — 沉眠阁把 DSH 里已归档会话的日志与投影记录真正搬出加载路径，并提供归档、读取、还原、删除会话的工具。
 - [Anionex/dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) — 对话回退：基于持久 Change Ledger 回滚会话与工作区状态。
