@@ -2,5 +2,5 @@ url: https://github.com/1997liuyh-boop/dsh-selection-toolbar
 name: 1997liuyh-boop/dsh-selection-toolbar
 category: ui
 description:
-  en: "Desktop text selection toolbar with translation and assistant results positioned near the cursor; requires Desktop extension API 1."
-  zh: "桌面划词工具栏，在鼠标附近展示翻译与助手结果；需要桌面扩展 API 1。"
+  en: "Desktop text selection toolbar with translation and assistant results positioned near the cursor; install dsh-desktop-runtime first."
+  zh: "桌面划词工具栏，在鼠标附近展示翻译与助手结果；请先安装 dsh-desktop-runtime。"

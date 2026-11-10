@@ -1,0 +1,6 @@
+url: https://github.com/1997liuyh-boop/dsh-desktop-runtime
+name: 1997liuyh-boop/dsh-desktop-runtime
+category: dev
+description:
+  en: "Shared Electron runtime for the floating assistant, selection toolbar and capture plugins on the official DSH Desktop."
+  zh: "供官方 DSH 桌面端的悬浮球、划词工具栏和截图录屏插件共用的 Electron 运行时。"
