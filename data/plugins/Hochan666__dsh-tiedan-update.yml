@@ -1,0 +1,7 @@
+url: https://github.com/Hochan666/dsh-tiedan-update
+name: Hochan666/dsh-tiedan-update
+category: dev
+icon: https://raw.githubusercontent.com/Hochan666/dsh-tiedan-update/main/assets/icon-180.png
+description:
+  en: 'Adds two rows to the DSH general settings section. Version update asks the npm registry for a newer @deepseek-ai/dsh, installs it as a background job and streams the install output into the row; restart DSH stops the running process so its supervisor can start a fresh one. A second restart request is refused, and a systemd unit that reports no main process is refused rather than respawned beside it. The row also reports the process uptime and identity, so a page reconnect can be told apart from a real restart.'
+  zh: '在 DSH 通用设置里加两行。版本更新到 npm 注册表查 @deepseek-ai/dsh 的新版本，以后台任务安装并把安装输出实时回显到设置行；重启 DSH 会停掉当前进程，交给它的守护进程重新拉起。重复的重启请求会被拒绝，systemd 单元取不到主进程时宁可拒绝执行，也不在旁边另起一个实例。设置行还会显示进程已运行时长与身份标识，用来区分「页面重连」和「服务真的重启了」。'
