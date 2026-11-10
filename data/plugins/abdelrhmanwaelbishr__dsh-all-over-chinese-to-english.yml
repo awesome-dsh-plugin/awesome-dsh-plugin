@@ -1,0 +1,8 @@
+url: https://github.com/abdelrhmanwaelbishr/dsh-all-over-chinese-to-english
+name: abdelrhmanwaelbishr/dsh-all-over-chinese-to-english
+category: usage
+icon: https://raw.githubusercontent.com/abdelrhmanwaelbishr/dsh-all-over-chinese-to-english/main/icon.png
+description:
+  en: Translates Chinese text rendered by other DSH plugins into English as it appears - plugin cards, settings pages, dropdown menus, plugin view tabs and same-origin iframe panels - while leaving the chat transcript, tool output and anything you type untouched. Uses the shipped translator service (Bing or Google, no key needed) and falls back to the default model.
+  zh: 把其他 DSH 插件显示的中文实时翻译成英文——插件卡片、设置页、下拉菜单、插件视图标签与同源 iframe 面板，同时不改动对话记录、工具输出和你输入的内容。使用内置翻译服务（Bing 或 Google，无需密钥），不可用时回退到默认模型。
+tarball: https://github.com/abdelrhmanwaelbishr/dsh-all-over-chinese-to-english/releases/download/v1.0.0/dsh-all-over-chinese-to-english-1.0.0.tgz
