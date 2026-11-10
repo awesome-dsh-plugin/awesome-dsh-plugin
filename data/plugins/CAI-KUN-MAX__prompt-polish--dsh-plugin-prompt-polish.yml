@@ -1,0 +1,6 @@
+url: https://github.com/CAI-KUN-MAX/prompt-polish/tree/main/dsh-plugin-prompt-polish
+name: CAI-KUN-MAX/prompt-polish#dsh-plugin-prompt-polish
+category: ui
+description:
+  en: 'Icon-only prompt optimizer beside the DeepSeek Harness model selector: rewrites the current draft with the active session model and DSH quota, with no API key, no auto-send, and draft-change protection.'
+  zh: '在 DeepSeek Harness 模型选择器左侧提供图标式提示词优化：用当前会话模型与 DSH 额度重写草稿，无需 API Key、不自动发送，并带草稿变化保护。'
