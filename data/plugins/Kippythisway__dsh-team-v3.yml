@@ -1,0 +1,6 @@
+url: https://github.com/Kippythisway/dsh-team-v3
+name: Kippythisway/dsh-team-v3
+category: workflow
+description:
+  en: 'Team presets for AgentTeams: ships audit6 / impl5 / lite2 rosters with seed task DAGs and a per-role report contract, plus a captain doctrine section, so a fresh session opens the right team in one approval instead of a pasted prompt. The engine @nanmicoder/dsh-agent-teams comes in as a bundle dependency and activates automatically.'
+  zh: 'AgentTeams 的团队预置：内置 audit6 / impl5 / lite2 三套编制与 seed 任务 DAG（每个角色带回报合同），并注入一段 captain 开团纪律——新会话一次批准就开出结构正确的团队，不用再贴提示词。引擎 @nanmicoder/dsh-agent-teams 作为 bundle 依赖随包启用。'
