@@ -1,0 +1,11 @@
+# Submission entry for awesome-dsh-plugin.
+# Copy this file to data/plugins/qinyongliang__resource-map.yml in a fork of
+# awesome-dsh-plugin/awesome-dsh-plugin and open one PR adding just that file.
+# Only description.en is required; the maintainers fill in a missing translation.
+url: https://github.com/qinyongliang/resource-map
+name: qinyongliang/resource-map
+category: tools
+description:
+  en: 'Give it one URL and it traces the whole chain itself — DNS, reverse proxy, upstream, container, host and dependencies — then reports a root cause with evidence, so incident triage and routine operations run without anyone reciting where the machines or logs are.'
+  zh: 给它一个 URL，它自己把整条链路查完——域名解析、反向代理、上游服务、容器、宿主机与依赖逐层核对，最后给出带证据的根因，让故障排查和日常运维不再依赖某个人记得机器和日志在哪。
+icon: https://raw.githubusercontent.com/qinyongliang/resource-map/main/icon-180.png
