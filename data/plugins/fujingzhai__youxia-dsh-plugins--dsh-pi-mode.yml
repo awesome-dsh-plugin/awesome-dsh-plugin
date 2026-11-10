@@ -1,0 +1,6 @@
+url: https://github.com/fujingzhai/youxia-dsh-plugins/tree/main/dsh-pi-mode
+name: fujingzhai/youxia-dsh-plugins#dsh-pi-mode
+category: workflow
+description:
+  en: "Adds three DeepSeek Harness agent modes modelled on pi: Pi (lean baseline), Pi+ (adds the official apply_patch tool for editing several places in one file or several files), and Pi-IM (delivery adjusted for IM bots). One install registers all three; DSH's built-in modes are untouched."
+  zh: "为 DeepSeek Harness 新增三个以 pi 为蓝本的模式：Pi（精简基线）、Pi+（额外启用官方 apply_patch，便于批量改同一文件多处或多个文件）、Pi-IM（面向 IM 机器人调整交付方式）。一次安装注册三个模式，DSH 自带模式不受影响。"
