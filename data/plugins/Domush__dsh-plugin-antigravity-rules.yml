@@ -1,0 +1,6 @@
+url: https://github.com/Domush/dsh-plugin-antigravity-rules
+name: Domush/dsh-plugin-antigravity-rules
+category: dev
+description:
+  en: Native Google Antigravity engineering rules loader for DSH with automatic system prompt injection and dynamic domain activation.
+  zh: 原生 Google Antigravity 工程规范加载引擎，支持系统提示词注入与领域规则动态激活。
