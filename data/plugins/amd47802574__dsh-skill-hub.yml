@@ -1,0 +1,6 @@
+url: https://github.com/amd47802574/dsh-skill-hub
+name: amd47802574/dsh-skill-hub
+category: skill
+description:
+  en: 'Sidebar skill hub: browse and search DSH skills, import from a folder or GitHub, and read full SKILL.md bodies rendered as Markdown.'
+  zh: '侧栏技能中心：浏览、搜索 DSH 技能，从文件夹或 GitHub 导入技能，并以 Markdown 渲染查看完整技能正文。'
