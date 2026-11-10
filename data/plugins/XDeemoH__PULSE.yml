@@ -1,0 +1,7 @@
+url: https://github.com/XDeemoH/PULSE
+name: XDeemoH/PULSE
+category: ui
+icon: https://raw.githubusercontent.com/XDeemoH/PULSE/main/docs/logo.png
+description:
+  en: "Running panel for dsh showing live skill and tool calls, the skill-catalog budget against a line that follows the model's context window, a skill loadout window with dry run and undo, goals and ideas, and saved conversation excerpts."
+  zh: "dsh 运行面板：实时显示技能和工具调用、技能目录预算（预算线随模型上下文变化），带预演和撤销的技能装配窗口，目标与灵感，以及对话收藏。"
