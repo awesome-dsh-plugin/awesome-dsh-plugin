@@ -5645,7 +5645,7 @@ dsh plugin --profile web add dshmarket
 - [liuhange789/data-asset-inspector#research-data-provenance](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/research-data-provenance) — 科研数据溯源审计插件，审计血缘完整性、可复现性与FAIR原则合规性，输出溯源审计报告，支撑科研诚信与开放科学。
 - [liuhange789/data-asset-inspector#underground-pipeline-inspector](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/underground-pipeline-inspector) — 地下管线数据质量检查插件 — 检测覆盖率、接边精度、流向合理性，输出质量评分。默认规则取自国标与广东省导则（坐标系仅认 CGCS2000 及三度带 38–40 带，粗差率阈值 5%），可用配置 JSON 覆盖。
 - [liuhange789/data-asset-inspector#visibility-doctor](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/visibility-doctor) — 诊断 DSH 插件的可发现性（npm 关键词、README 安装写法、GitHub topics、市场收录）并生成改进建议；注册 diagnose_visibility 与 boost_exposure 两个工具。评分规则按作者自家 @liuhange 系列包调校，需联网访问 npm、GitHub API 与 dsh-plugin.org。
-- [liuhange789/dsh-cache-guard](https://github.com/liuhange789/dsh-cache-guard) — DSH 缓存健康度守卫与省钱教练 — 事前干预，不是事后计费面板。cache_guard_health 工具给出绿/黄/红健康度、一行干预建议与 PTC 切换提示，cache_guard_config 读写开关与灵敏度。
+- [liuhange789/dsh-cache-guard](https://github.com/liuhange789/dsh-cache-guard) — DSH 缓存健康度守卫与省钱教练：cache_guard_health 工具给出绿/黄/红健康度、一行干预建议与 PTC 切换提示，cache_guard_config 读写开关与灵敏度。
 - [liuhange789/party-eco-agent](https://github.com/liuhange789/party-eco-agent) — 面向党建引领街道产业生态场景的轻量规则工具：生成企业画像卡片、按品类与数量匹配供需、规整政策记录字段（不解析原文）、按优先级给出诉求处理人角色与预计天数；不调用任何外部系统。
 - [LiuJiaCheng11/dsh-postman](https://github.com/LiuJiaCheng11/dsh-postman) — 用 9 个工具在 dsh 里管理 Postman 云端集合——列出、浏览、新增（单个或批量）、修改、删除接口，导出或整体覆盖集合。
 - [liwei9745/dsh-genbox-plugin](https://github.com/liwei9745/dsh-genbox-plugin) — 通过本地 GenBox 服务生图、改图、生视频，并用 ffmpeg 本地剪辑；自带零成本测试台。
