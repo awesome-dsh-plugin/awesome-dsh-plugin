@@ -9043,6 +9043,7 @@ dsh plugin --profile web add dshmarket
 - [regrevia/dsh-unlag](https://github.com/regrevia/dsh-unlag) — DSH 桌面端自己的刷新按钮。开发插件要重启，可手里还有任务在跑？刷新一下！开久了页面越来越卡？刷新一下！一个按钮解决这些烦恼，正在进行的会话、排队消息和草稿都不受影响。
 - [dsh-myrules](https://github.com/Relistencode/dsh-extension-hub/tree/main/packages/dsh-myrules) — 在设置页的「个性化」页编辑此主机全局指令（~/.dsh/AGENTS.md），此机器上的所有会话都会应用。
 - [ris-cloud/dsh-ris-ide](https://github.com/ris-cloud/dsh-ris-ide) — DSH 网页版的本机开发面板：跟随服务日志、启停工作区程序、JDWP 调试 Java、浏览编辑工作区文件与文件名搜索。需要 DSH 0.2.0-rc.2 或更高版本；启动或调试 Java 程序需要本机 JDK 与 Maven，启动前端程序需要 Node。
+- [ris-cloud/dsh-ris-yds](https://github.com/ris-cloud/dsh-ris-yds) — YonBIP/YMS 本地开发运行时：解析项目配置、签发平台 API 凭据、拉取并适配中间件端点、通过 SOCKS 转发或直连访问内网数据库/缓存/服务、构建并启停本地 YMS 运行时、生成 IDE 启动/调试配置。不依赖 dsh-ris-ide。
 - [rj-jiangyichen/dsh-rules](https://github.com/rj-jiangyichen/dsh-rules) — 类 Claude Code rules.md 的规则提示词：按智能体读取或编辑文件的 glob 匹配自动激活规则文档，支持提示词注入与排序。
 - [ruaibeite/dsh-auto-observe](https://github.com/ruaibeite/dsh-auto-observe) — 当 agent 用 bash（sed/awk/cat）看过文件而非 read 工具时，为编辑目标补登记一次真实版本的观察记录，使文件系统观察策略不再以 FS_NOT_OBSERVED 拒绝编辑；只作用于编辑，整文件盲覆盖仍受保护。
 - [ruanimal/dsh-bash-env](https://github.com/ruanimal/dsh-bash-env) — 替换内置 bash 执行器，按每条命令的工作目录解析环境：可配置的 PATH 追加、Python venv 自动激活与 mise shims，并在 Web UI 设置中提供独立分区。
@@ -9483,6 +9484,7 @@ dsh plugin --profile web add dshmarket
 - [zhkkjF/dsh-cookie-sentinel](https://github.com/zhkkjF/dsh-cookie-sentinel) — 把本地 Host 的 HTTP 请求头上限提高到 128 KiB，并且只在真正签发新 dsh-auth cookie 的令牌交换响应里清理旧 Cookie；已经卡在 431 的桌面 profile 能恢复，之后随机端口启动只保留一条。
 - [zjuhbh/dsh-full-with-approval](https://github.com/zjuhbh/dsh-full-with-approval) — dsh 第四个权限预设：进程全权限（GPU 可用），同时工作区外与受保护文件（.git/**、.env*）的写入逐次向用户审批；纯插件实现，零核心改动。
 - [zoahdev/dsh-poison-guard](https://github.com/zoahdev/dsh-poison-guard) — DSH 插件安装前投毒扫描：AST（JS-X-Ray）+ 去混淆解码 + 正则启发式，发现即非零退出，可作 CI 门禁。
+- [zoushangkun-dev/dsh-startup-auth-cn](https://github.com/zoushangkun-dev/dsh-startup-auth-cn) — 给 DeepSeek Harness 的冷启动动画，工作区前加一道解锁门：PIN、Windows Hello 或验证器动态码，全部本地运行。
 - [zzstar101/dsh-sandbox-noop-escalation](https://github.com/zzstar101/dsh-sandbox-noop-escalation) — 去掉那些不会让当前沙箱模式变宽的 sandbox_permissions / justification 参数，避免调用报错「sandbox escalation to "workspace-write" is not strictly wider than this call's current "danger-full-access" mode」。GPT 系列模型往往每次调用都会填这两个可选参数，并选 workspace-write，而它比 danger-full-access 更窄。插件在 tools/pre-execute 阶段把请求的模式和会话沙箱策略给出的当前模式做比较：相同或更窄时去掉这两个字段（只有 justification 时也会去掉）。同时兼容 GPT 从 Codex shell 工具带过来的取值：null、空值和 use_default 视为没有请求；会话已经是 danger-full-access 时，任何取值（包括 require_escalated）都会去掉，因为不存在更宽的模式。真正的升权请求、无法识别的模式值，以及没有声明 DSH 升权参数的工具，都原样交给 DSH 处理。不会放宽任何权限。监控的工具列表可配置（默认 bash、pwsh、write、edit、run_code）。零依赖。
 
 ### 📱 远程与移动端
