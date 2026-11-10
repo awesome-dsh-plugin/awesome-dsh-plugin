@@ -476,6 +476,7 @@ dsh plugin --profile web add dshmarket
 - [choco9527/dsh-add-to-chat](https://github.com/choco9527/dsh-add-to-chat) — 为 DSH 助手回复添加轻量选中文本引用：选区以可删除的草稿上下文独立于编辑器保存，在原文旁保留标记，并在发送后显示为可悬浮查看的注释。
 - [choco9527/dsh-product-preview](https://github.com/choco9527/dsh-product-preview) — 以访达式分栏浏览对话节点中的本地图片、视频与 SVGA 产物。
 - [Choi-Peng/dsh-footer-order](https://github.com/Choi-Peng/dsh-footer-order) — DSH 侧边栏页脚排序：将 sidebar.footer.action 槽位改为上下堆叠，并允许用户配置各条目自上而下的排列顺序。
+- [chokingson/dsh-travel-wallpaper](https://github.com/chokingson/dsh-travel-wallpaper) — DeepSeek Harness 的旅行壁纸：三个内置角色（DS大肥鱼、GPT 龙娘、Claude 大小姐）任选其一，也可上传自己的参考图，或选择「观察世界」不启用角色；选一个世界和 20 种画风之一，插件整理画面提示词，经你自己配置的生图渠道（ChatGPT 或 Google 订阅、兼容 OpenAI 的 API、Gemini、火山 Seedream，或本地 ComfyUI/MOSS）生成壁纸，并设为 Windows 桌面或锁屏。角色旅行会得到世界见闻和角色来信，回信会影响下一幕；观察世界只写世界见闻，没有角色来信。旅行记录保留在可浏览的档案里，支持导出图片或 ZIP。另有每日壁纸、立即盲盒旅行和定时盲盒旅行。数据保存在 ~/.dsh/planet-news，渠道凭据由 DSH 凭据服务读取，插件不提供生图额度。
 - [cholot-Zhou/dsh-ui-overrides](https://github.com/cholot-Zhou/dsh-ui-overrides) — 基于本地 CSS 文件的界面覆盖——编辑 ~/.dsh/ui-overrides.css 并刷新，即可改任意插件元素的外观，例如让引用浮层完全不透明。
 - [chongfengdy-dev/dsh-message-outline](https://github.com/chongfengdy-dev/dsh-message-outline) — 当前会话消息大纲（左缘横杠）——你的消息在对话区左缘显示一列细横杠，hover 展开完整大纲（行号+文本），点击瞬间定位到对话里那条消息。纯前端、零外部服务依赖、sessions 快照驱动零轮询。
 - [chopperH0824/dsh-annotate-sync](https://github.com/chopperH0824/dsh-annotate-sync) — HTML 文档预览就地批注插件：点选元素写批注，按文件保存批注，可整批发送到当前对话，由 Agent 直接修改源文件。
@@ -5791,6 +5792,7 @@ dsh plugin --profile web add dshmarket
 - [OrderG-X/dsh-mac-computer-use#plugin](https://github.com/OrderG-X/dsh-mac-computer-use/tree/main/plugin) — Mac 的视觉优先 computer use：无障碍树不可用时照样能干活。11 个 desktop_* 工具——窗口枚举、截图、OCR 找文字、元素编号、坐标点击、输入、滚动、拖拽，外加 Codex 风格的浮层光标（带弹簧动效）。点击投递给目标进程，不移动真实鼠标、不抢前台。DSH 插件页里显示为「Mac 桌面操作」，设置页会逐项检查命令行引擎和屏幕录制 / 辅助功能权限，缺哪个直接给按钮。装上就能用：安装包自带 dsh-cu 引擎和浮层的通用二进制（Apple 芯片 + Intel，macOS 11 起，本地签名），由发版工作流从仓库里的 Swift 源码编译——不用 clone、不用 Xcode、不用 install.sh。唯一的设置是给 DeepSeek Harness 开一次屏幕录制和辅助功能权限。仅支持 macOS；在 Windows / Linux 上插件照常加载，只是不注册桌面工具。
 - [oTAKUBANG1/bili-follow-doctor#dsh-plugin](https://github.com/oTAKUBANG1/bili-follow-doctor/tree/main/dsh-plugin) — 扫描 B站关注列表，标出已注销、以及视频和动态都超过设定天数没更新的账号；确认后才取关，并自动跳过互关和播过的主播。
 - [OtterMind/sqlx#sqlx-dsh](https://github.com/OtterMind/sqlx/tree/main/integrations/dsh) — OtterMind SQLX 数据库工具：列出已保存的数据源、查看或测试连接、执行 SQL、打开本地结果页，缺少 sqlx CLI 时首次调用自动安装。
+- [Otto883/dsh-github-oss-radar](https://github.com/Otto883/dsh-github-oss-radar) — 常驻的 GitHub 优先开源检索：系统提示词里常驻一节，让模型在每次新请求时先提取 1-4 个关键词，只发一次带缓存与限流保护的 github_search 请求，回答前列出最多五个可复用仓库及其星标、语言、许可证、最近推送与话题。
 - [ouli-1242/dsh-plugin-tool-management](https://github.com/ouli-1242/dsh-plugin-tool-management) — 一个设置面板，统一管理 MCP、技能、记忆、子智能体、提示词和归档会话；可自定义搭配场景，一个场景即可切换整个环境；Agent也能帮你操作这个插件。
 - [OverDustD7/dsh-chat-digest](https://github.com/OverDustD7/dsh-chat-digest) — 把微信与 QQ 聊天记录里「必须做的、可以报名的、值得知道的」摘成一张面板：由一个常驻会话按计划或在你点 Fetch 时重读聊天记录并改写条目，每条可直链到原始文件或图片。
 - [ownduck/dsh-custom-env](https://github.com/ownduck/dsh-custom-env) — 在设置中管理 $DSH_HOME/.env，并同步到 Host 与 Windows/macOS 用户环境。
