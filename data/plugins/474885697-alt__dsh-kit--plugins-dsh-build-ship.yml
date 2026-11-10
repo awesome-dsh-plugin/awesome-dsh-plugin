@@ -1,0 +1,7 @@
+url: https://github.com/474885697-alt/dsh-kit/tree/main/plugins/dsh-build-ship
+name: 474885697-alt/dsh-kit#dsh-build-ship
+category: dev
+tarball: https://github.com/474885697-alt/dsh-kit/releases/download/v0.1.0/dsh-build-ship-0.1.0.tgz
+description:
+  zh: "构建与出货流水线：执行构建命令、收集产物、校验预期输出与哈希，每次运行留一份报告。"
+  en: "Runs a build command, collects the artifacts with sizes and SHA-256 prefixes, verifies expected outputs, and writes a report for each run."
