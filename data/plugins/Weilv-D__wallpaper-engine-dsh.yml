@@ -2,5 +2,5 @@ url: https://github.com/Weilv-D/wallpaper-engine-dsh
 name: Weilv-D/wallpaper-engine-dsh
 category: theme
 description:
-  en: "Transforms the local Wallpaper Engine library into a live background for DSH, with video and web wallpapers playing for real. An adaptive veil adjusts with picture brightness to keep text readable, while floating surfaces render as liquid glass. Includes a bilingual settings panel featuring framing adjustments, playlist rotation, library search, and real-time resource monitoring."
-  zh: "将本地 Wallpaper Engine 壁纸库化为 DSH 界面的动态背景,视频与网页壁纸真实播放。自适应遮罩根据画面亮度智能调节,保持文字清晰可读;壁纸生效时,悬浮组件呈现液态玻璃。内置中英双语设置面板,提供画面取景、轮播管理、搜索与实时资源监控。"
+  en: 'Transforms the local Wallpaper Engine library into a live background for DSH, with video and web wallpapers playing for real. An adaptive veil adjusts with picture brightness to keep text readable, while floating surfaces render as liquid glass. Includes a bilingual settings panel featuring framing adjustments, playlist rotation, library search, and real-time resource monitoring. Scene and application wallpapers are not supported.'
+  zh: '将本地 Wallpaper Engine 壁纸库化为 DSH 界面的动态背景,视频与网页壁纸真实播放。自适应遮罩根据画面亮度智能调节,保持文字清晰可读;壁纸生效时,悬浮组件呈现液态玻璃。内置中英双语设置面板,提供画面取景、轮播管理、搜索与实时资源监控。不支持场景与应用类壁纸。'

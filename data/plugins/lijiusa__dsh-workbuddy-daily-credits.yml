@@ -2,6 +2,6 @@ url: https://github.com/lijiusa/dsh-workbuddy-daily-credits
 name: lijiusa/dsh-workbuddy-daily-credits
 category: tools
 description:
-  en: 'Claim WorkBuddy (CodeBuddy CN / WorkBuddy global) daily check-in credits and benefit bonuses from a composer-dock card and an agent tool, using the official web OAuth login — no desktop client or third-party plugin needed.'
-  zh: '输入框工具行卡片与 agent 工具一键领取 WorkBuddy 每日签到积分与福利积分；走官方网页 OAuth 登录，无需桌面客户端或第三方插件。'
+  en: 'Claim WorkBuddy (CodeBuddy CN / WorkBuddy global) daily check-in credits and benefit bonuses from a composer-dock card and an agent tool, using the official web OAuth login — no desktop client or third-party plugin needed. If another WorkBuddy plugin has already saved a login in ~/.dsh/workbuddy-vault, it reuses that login instead of asking you to sign in again.'
+  zh: '输入框工具行卡片与 agent 工具一键领取 WorkBuddy 每日签到积分与福利积分；走官方网页 OAuth 登录，无需桌面客户端或第三方插件。若本机其他 WorkBuddy 插件已在 ~/.dsh/workbuddy-vault 里保存了登录态，会直接复用，不再让你重新授权。'
 tarball: https://github.com/lijiusa/dsh-workbuddy-daily-credits/releases/latest/download/dsh-workbuddy-daily-credits.tgz

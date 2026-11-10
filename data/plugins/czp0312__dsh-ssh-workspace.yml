@@ -2,5 +2,5 @@ url: https://github.com/czp0312/dsh-ssh-workspace
 name: czp0312/dsh-ssh-workspace
 category: remote
 description:
-  en: 'Keep SSH, WSL and Docker projects in the native DSH sidebar. Group directories by environment while choosing full remote DSH or lightweight local Agent mode per project. Manage shared full-backend connections together, keep lightweight connections independent, and selectively sync local Skills with difference previews.'
-  zh: '在当前 DSH 窗口的原生侧栏中管理 SSH / WSL / Docker 项目。目录按环境归组，每个项目独立选择全量远程后端或本机 Agent 轻量模式；共享全量连接统一管理，轻量连接独立控制，并可比较、选择性同步本机 Skill。'
+  en: 'Keep SSH, WSL and Docker projects in the native DSH sidebar. Group directories by environment while choosing full remote DSH or lightweight local Agent mode per project. Manage shared full-backend connections together, keep lightweight connections independent, and selectively sync local Skills with difference previews. Aimed at the Windows desktop client with Linux, WSL or Linux-container remotes that have Python 3 and Bash (macOS and Linux hosts untested); lightweight SSH needs an existing SSHFS mount, and Docker has not yet been run against a live daemon.'
+  zh: '在当前 DSH 窗口的原生侧栏中管理 SSH / WSL / Docker 项目。目录按环境归组，每个项目独立选择全量远程后端或本机 Agent 轻量模式；共享全量连接统一管理，轻量连接独立控制，并可比较、选择性同步本机 Skill。主要面向 Windows 桌面客户端与装有 Python 3、Bash 的 Linux / WSL / Linux 容器远端（macOS / Linux 本机未实机验证）；轻量 SSH 需已有 SSHFS 挂载，Docker 尚未在真实守护进程上验收。'

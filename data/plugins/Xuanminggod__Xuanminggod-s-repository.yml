@@ -3,5 +3,5 @@ name: Xuanminggod/Xuanminggod-s-repository
 category: notify
 icon: https://raw.githubusercontent.com/Xuanminggod/Xuanminggod-s-repository/main/icon-96.png
 description:
-  en: Shares Bilibili videos of chosen categories to QQ groups or friends on a randomized schedule, with per-recipient dedupe, quiet hours and an optional AI-written blurb.
-  zh: 按分区或关键词从 B 站挑公开视频，在不固定的时间点发到白名单 QQ 群或好友，带去重、安静时段与可选 AI 推荐语。
+  en: 'Shares Bilibili videos of chosen categories to the QQ groups or friends you list, at random intervals (4-10 hours, at most 3 a day, quiet 23:00-08:00 by default), with per-recipient dedupe and an optional AI-written blurb. Sends through your own OneBot v11 HTTP backend (NapCat, Lagrange, go-cqhttp compatible) logged in to a QQ account, and sends nothing until you add recipients.'
+  zh: '按分区或关键词从 B 站挑公开视频，在不固定的时间点（默认间隔 4-10 小时、每天最多 3 条、23:00-08:00 静音）发到你列出的 QQ 群或好友，带按收件人去重与可选 AI 推荐语。需要你自备已登录 QQ 账号的 OneBot v11 HTTP 后端（NapCat、Lagrange、go-cqhttp 兼容实现）；添加收件人之前不会发送。'

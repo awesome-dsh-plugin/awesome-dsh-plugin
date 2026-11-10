@@ -2,5 +2,5 @@ url: https://github.com/linsport/dsh-persona-manager
 name: linsport/dsh-persona-manager
 category: identity
 description:
-  en: 'Manage DeepSeek Harness agent presets (personas) from a Settings page: create one on top of a shipped base preset, edit a persona in place, lay it out in a rendered preview, and export or import it as JSON or Markdown. Edits to a hand-written profile patch are applied as text, so comments, quoting and loader expressions survive.'
-  zh: '在设置页里管理 DeepSeek Harness 的 Agent 预设（人设）：基于官方预设新建、就地编辑人设正文、用排版预览检查效果，并导出或导入 JSON 备份与 Markdown。改写 profile 里手写的预设时按文本替换，注释、引号和 loader 表达式都原样保留。'
+  en: 'Manage DeepSeek Harness agent presets (personas) from a Settings page: create one on top of a shipped base preset, edit a persona in place, lay it out in a rendered preview, and export or import it as JSON or Markdown. Edits to a hand-written profile patch are applied as text, so comments, quoting and loader expressions survive. Desktop app is the tested environment; creating from a base preset needs the yaml package that ships with DSH.'
+  zh: '在设置页里管理 DeepSeek Harness 的 Agent 预设（人设）：基于官方预设新建、就地编辑人设正文、用排版预览检查效果，并导出或导入 JSON 备份与 Markdown。改写 profile 里手写的预设时按文本替换，注释、引号和 loader 表达式都原样保留。实测环境为桌面版；基于基准预设新建需要随 DSH 发布的 yaml 包。'

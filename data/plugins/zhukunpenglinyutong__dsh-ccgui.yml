@@ -2,6 +2,6 @@ url: https://github.com/zhukunpenglinyutong/dsh-ccgui
 name: zhukunpenglinyutong/dsh-ccgui
 category: model
 description:
-  en: 'Run Claude Code, Kimi CLI, Codex CLI, PI CLI, OMP CLI, OpenCode and CodeBuddy CLI inside DeepSeek Harness sessions over ACP; tool calls, approvals and change summaries appear in the native DSH UI.'
-  zh: 在 DeepSeek Harness 会话里通过 ACP 直接使用 Claude Code、Kimi CLI、Codex CLI、PI CLI、OMP CLI、OpenCode 和 CodeBuddy CLI，工具调用、审批和改动摘要都走 DSH 原生界面。
+  en: 'Run Claude Code, Kimi CLI, Codex CLI, PI CLI, OMP CLI, OpenCode and CodeBuddy CLI (off by default, unverified) inside DeepSeek Harness sessions over ACP, with a CLI and model menu, a git changes panel and worktrees in the Web and Desktop UI. Needs each CLI installed and signed in (OMP, OpenCode and CodeBuddy must be installed first). The CLI runs outside the DSH sandbox and decides what to ask: only Claude Code in manual mode and OpenCode with ask permissions raise DSH approval cards, Codex, PI and OMP run commands without asking.'
+  zh: '在 DeepSeek Harness 会话里通过 ACP 使用 Claude Code、Kimi CLI、Codex CLI、PI CLI、OMP CLI、OpenCode 和 CodeBuddy CLI（CodeBuddy 默认关闭、未验证），Web/Desktop 界面提供 CLI 与模型菜单、git 变更面板和 Worktree。需要各 CLI 已安装并登录（OMP、OpenCode、CodeBuddy 须先自行安装）。CLI 在 DSH 沙箱之外运行、自己决定何时询问：只有 Claude Code 手动模式和配置为询问的 OpenCode 会弹 DSH 审批卡片，Codex、PI、OMP 直接执行。'
 icon: https://raw.githubusercontent.com/zhukunpenglinyutong/dsh-ccgui/main/assets/logo.png

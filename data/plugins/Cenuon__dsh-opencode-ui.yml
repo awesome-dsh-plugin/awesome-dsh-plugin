@@ -2,6 +2,6 @@ url: https://github.com/Cenuon/dsh-opencode-ui
 name: Cenuon/dsh-opencode-ui
 category: theme
 description:
-  en: "Skins the DSH Web UI to match the opencode console — theme tokens, sidebar, chat markdown, tables, the composer and the question dialog restyled through CSS — and shows the current workspace's git branch under the composer."
-  zh: "把 DSH Web UI 换成 opencode console 的视觉风格：通过 CSS 重绘主题 token、侧栏、对话区 Markdown、表格、输入框与提问弹窗，并在输入框下方显示当前工作区的 git 分支。"
+  en: 'Skins the DSH Web UI to match the opencode console — theme tokens, sidebar, chat markdown, tables, the composer and the question dialog restyled through CSS — and shows the current workspace''s git branch under the composer. It also hides the sidebar brand row and the New session button.'
+  zh: '把 DSH Web UI 换成 opencode console 的视觉风格：通过 CSS 重绘主题 token、侧栏、对话区 Markdown、表格、输入框与提问弹窗，并在输入框下方显示当前工作区的 git 分支；同时会隐藏侧栏品牌行与「新会话」按钮。'
 icon: https://raw.githubusercontent.com/Cenuon/dsh-opencode-ui/main/assets/icon-180.png

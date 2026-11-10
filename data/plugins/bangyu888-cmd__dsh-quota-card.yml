@@ -2,5 +2,5 @@ url: https://github.com/bangyu888-cmd/dsh-quota-card
 name: bangyu888-cmd/dsh-quota-card
 category: usage
 description:
-  en: Shows ChatGPT, Gemini and Grok Bot remaining usage with reset countdowns plus the DeepSeek balance in a compact card above the sidebar account row; thresholds, refresh interval and per-provider HTTP proxies are configurable.
-  zh: 在侧栏登录名上方以紧凑卡片显示 ChatGPT、Gemini、Grok Bot 的剩余额度与重置倒计时，以及 DeepSeek 余额；可配置阈值、刷新间隔与每个 provider 的 HTTP 代理。
+  en: 'Shows ChatGPT, Gemini and Grok Bot remaining usage with reset countdowns plus the DeepSeek balance in a compact card above the sidebar account row; thresholds, refresh interval and per-provider HTTP proxies are configurable. Needs existing sign-ins: Codex CLI login for ChatGPT, an Antigravity token for Gemini, a Cursor user API key (CURSOR_API_KEY) for Grok Bot, and a DeepSeek account signed in inside DSH; a row without its sign-in shows a login hint instead of numbers.'
+  zh: '在侧栏登录名上方以紧凑卡片显示 ChatGPT、Gemini、Grok Bot 的剩余额度与重置倒计时，以及 DeepSeek 余额；可配置阈值、刷新间隔与每个 provider 的 HTTP 代理。需事先具备各家登录态：ChatGPT 需 Codex CLI 登录（codex login）、Gemini 需 Antigravity 登录令牌、Grok Bot 需 Cursor 用户 API Key（CURSOR_API_KEY）、DeepSeek 余额需在 DSH 内登录账号；缺哪项，对应行只显示登录提示而不是数字。'

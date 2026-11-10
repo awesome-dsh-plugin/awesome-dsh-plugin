@@ -2,6 +2,5 @@ url: https://github.com/Wang-Shuanglin/dsh-cosplay-studio
 name: Wang-Shuanglin/dsh-cosplay-studio
 category: vision
 description:
-  en: 'Local ComfyUI cosplay photo sets: deploys Z-Image-Turbo with a self-test, then turns a character name, a reference image, or a hot-character pick into a live-action cosplay photo set with base-image and shot-script approval gates.'
-  zh: '?? ComfyUI ???? cosplay ??????? Z-Image-Turbo ?????????????????????????????????????????'
-tarball: https://github.com/Wang-Shuanglin/dsh-cosplay-studio/releases/latest/download/dsh-cosplay-studio.tgz
+  en: 'Local ComfyUI cosplay photo sets for Windows with an NVIDIA GPU (8 GB+ VRAM): deploys the ComfyUI Windows portable build and Z-Image-Turbo (8-10 GB of models) with a self-test, then turns a character name, a reference image, or a hot-character pick into a live-action cosplay photo set with base-image and shot-script approval gates.'
+  zh: '面向 Windows + NVIDIA 显卡（显存 ≥8 GB）的本机 ComfyUI cosplay 套图：自动部署 ComfyUI 便携版与 Z-Image-Turbo（模型约 8-10 GB）并自检，再把角色名、参考图或热门角色推荐变成真人 cosplay 套图，基准图与镜头脚本各设人工确认闸门。'

@@ -2,5 +2,6 @@ url: https://github.com/DSH-Extensions-list/dsh-elephant-goldfish-model
 name: DSH-Extensions-list/dsh-elephant-goldfish-model
 category: workflow
 description:
-  en: 'Standalone DeepSeek Harness port of Google’s Elephant-Goldfish Model with seven slash commands for design, documentation, and fresh-context reviews using native DSH subagents. Requires no other plugins.'
+  en: 'Standalone DeepSeek Harness port of Google’s Elephant-Goldfish Model with seven slash commands (/egm-*) for design, documentation, and fresh-context reviews using native DSH subagents. Requires no other plugins, but it registers the same /egm-* commands as other EGM ports, so install only one EGM plugin per profile.'
+  zh: 'Google Elephant-Goldfish Model 的 DeepSeek Harness 独立移植版：七条斜杠命令（/egm-*），用于设计、文档与借助 DSH 原生子代理的全新上下文评审。不依赖其他插件，但与其他 EGM 移植版注册的 /egm-* 命令同名，同一 profile 请只安装一个 EGM 插件。'
 icon: https://raw.githubusercontent.com/DSH-Extensions-list/dsh-elephant-goldfish-model/main/assets/logo.png
