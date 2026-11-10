@@ -3,6 +3,6 @@ name: hyun20202023-ui/dsh-qfish
 category: identity
 icon: https://raw.githubusercontent.com/hyun20202023-ui/dsh-qfish/main/assets/logo.png
 description:
-  en: 'Unofficial QQ bot plugin for DeepSeek Harness (requires a NapCat/OneBot v11 endpoint): editable persona, per-user memory with condensing, session rotation with summaries, image and Bilibili video understanding, sticker library, slang and catchphrase learning, favorability, group management, reminders, cross-group messaging, and a built-in web console. Listens for nothing until allowlists are configured.'
-  zh: 'DeepSeek Harness 的非官方 QQ 机器人插件（需要 NapCat/OneBot v11 端点）：可编辑人设、按人记忆并自动压缩、会话轮换带摘要、看图与 B 站视频理解（字幕/逐帧画面/弹幕/热评）、表情库、黑话与口头禅学习、好感度、群管理与定时提醒、跨群发消息，以及内置网页控制台。默认全拒，配置白名单后才响应。'
+  en: 'Default-deny: replies to nobody until QQ user and group allowlists are configured. Derived from dsh-onebot; cannot be installed together with dsh-onebot (both register /onebot/api and answer the same NapCat). Video frame grids need ffmpeg on PATH.'
+  zh: '默认全拒：配置 QQ 用户/群白名单前不回复任何人。基于 dsh-onebot 衍生，不能与 dsh-onebot 同装（都注册 /onebot/api 并抢同一个 NapCat 的消息）。视频逐帧画面需本机装有 ffmpeg。'
 # default-deny access: allowlists must be configured before the bot responds
