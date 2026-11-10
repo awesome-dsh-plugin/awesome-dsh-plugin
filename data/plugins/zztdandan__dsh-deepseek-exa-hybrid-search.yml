@@ -1,0 +1,6 @@
+url: https://github.com/zztdandan/dsh-deepseek-exa-hybrid-search
+name: zztdandan/dsh-deepseek-exa-hybrid-search
+category: tools
+description:
+  en: "DeepSeek Search API and Exa queried in parallel and merged into one URL-de-duplicated, cross-source-first web_search result list for DSH."
+  zh: "把 DeepSeek 搜索 API 与 Exa 并发查询，按 URL 去重合并成单份跨源优先的 web_search 结果列表。"
