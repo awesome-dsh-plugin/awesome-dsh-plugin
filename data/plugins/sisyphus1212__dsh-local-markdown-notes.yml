@@ -1,0 +1,6 @@
+url: https://github.com/sisyphus1212/dsh-local-markdown-notes
+name: sisyphus1212/dsh-local-markdown-notes
+category: docs
+description:
+  en: 'Local Markdown notes panel: import any local folder, browse its Markdown tree in the sidebar, edit files with auto-save, and search across every imported folder. Shows read-only Git context for each file — status, diff against HEAD with per-line change bars, and line blame — and exposes six notes_* tools so the agent works on the same folders. Files stay where they are on disk; the plugin never commits, stages or checks out.'
+  zh: '本地 Markdown 笔记面板：导入任意本地文件夹，在侧边栏树形浏览其中的 Markdown，就地编辑并自动保存，支持跨文件夹全文检索。为每个文件显示只读的 Git 上下文——状态、与 HEAD 的差异（逐行变更标记）、逐行 blame——并提供 notes_* 六个工具，让 Agent 直接操作同一批文件夹。文件留在原处，插件从不提交、暂存或检出。'
