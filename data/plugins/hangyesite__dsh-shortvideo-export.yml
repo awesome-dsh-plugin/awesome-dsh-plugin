@@ -1,0 +1,6 @@
+url: https://github.com/hangyesite/dsh-shortvideo-export
+name: hangyesite/dsh-shortvideo-export
+category: usage
+description:
+  en: 'Download watermark-free Douyin and Xiaohongshu videos, transcribe them with local or cloud speech recognition, proofread the text against a term list, and export Markdown, DOCX, SRT, VTT and other formats from a settings panel or agent tools.'
+  zh: 下载抖音和小红书无水印视频，用本地或云端语音识别转成文字、按术语表校正，并从设置面板或 agent 工具导出 Markdown、DOCX、SRT、VTT 等格式。
