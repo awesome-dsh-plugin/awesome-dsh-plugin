@@ -1,0 +1,6 @@
+url: https://github.com/Yukikaze-Ai/dsh-ladder-superagents
+name: Yukikaze-Ai/dsh-ladder-superagents
+category: agi
+description:
+  en: 'Ranks models in a ten-slot ladder, routes each subagent by a 1-10 difficulty, and falls back a tier when one fails.'
+  zh: '把模型排成十档阶梯，按 1–10 的难度给子代理选档，失败自动降一档。'
