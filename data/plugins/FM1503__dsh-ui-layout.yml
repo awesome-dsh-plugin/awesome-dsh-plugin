@@ -1,0 +1,8 @@
+url: https://github.com/FM1503/dsh-ui-layout
+name: FM1503/dsh-ui-layout
+category: ui
+description:
+  en: Declares a UI layout contract, measures pages in headless Chrome or Godot scenes and declared layouts, and audits overlap, occlusion, overflow, clipped text, undersized targets, dead controls, spacing drift and z-order traps, with a breakpoint matrix and a sidebar panel.
+  zh: 为 UI 开发声明布局契约，在无头 Chrome、Godot 场景或声明式布局中测量，并审计重叠、遮挡、溢出、文字截断、过小目标、死交互、间距漂移与层级倒置，附断点矩阵与侧边栏面板。
+icon: https://raw.githubusercontent.com/FM1503/dsh-ui-layout/main/assets/icon-180.png
+tarball: https://github.com/FM1503/dsh-ui-layout/releases/latest/download/dsh-ui-layout.tgz
