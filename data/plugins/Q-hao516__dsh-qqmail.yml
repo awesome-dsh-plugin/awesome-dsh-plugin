@@ -1,0 +1,6 @@
+url: https://github.com/Q-hao516/dsh-qqmail
+name: Q-hao516/dsh-qqmail
+category: tools
+description:
+  en: 'Read-only QQ Mail over IMAP: list, search, and read messages; the settings page verifies the account before saving.'
+  zh: '通过 IMAP 只读访问 QQ 邮箱：列出、搜索、读取邮件；设置页在保存前会先验证账号。'
