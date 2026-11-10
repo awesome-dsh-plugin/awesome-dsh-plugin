@@ -5,7 +5,7 @@
 #
 # Standalone repository: https://github.com/github-yousen/dsh-novel-mode
 # Public, default branch `main`, MIT, topic `dsh-plugin`.
-# v2.0.0: deterministic workflow engine (code-executed state machine, not a prompt pack).
+# v2.1.0: deterministic workflow engine (code-executed state machine, not a prompt pack).
 url: https://github.com/github-yousen/dsh-novel-mode
 name: github-yousen/dsh-novel-mode
 category: workflow
@@ -17,6 +17,4 @@ description:
 icon: https://raw.githubusercontent.com/github-yousen/dsh-novel-mode/main/assets/icon-180.png
 # Prebuilt tarball pinned to the published release tag (no build-script approval
 # needed); the name is version-free so the URL never rots across releases.
-tarball: https://github.com/github-yousen/dsh-novel-mode/releases/download/v2.0.1/dsh-novel-mode.tgz
-
-# Re-run the Submission gate after the repository passed the 1-day age bar (comment-only; no catalog data changed).
+tarball: https://github.com/github-yousen/dsh-novel-mode/releases/download/v2.1.0/dsh-novel-mode.tgz
