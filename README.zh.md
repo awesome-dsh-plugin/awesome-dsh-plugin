@@ -3803,7 +3803,7 @@ dsh plugin --profile web add dshmarket
 - [abangbang/dsh-delete-chat](https://github.com/abangbang/dsh-delete-chat) — 给 DSH 补上真正的会话删除：「⋯」里的 Delete chat 把会话目录移进 ~/.dsh/session-trash，侧栏回收站页面负责筛选、恢复与永久删除，另有 CLI 用同样的动词、不用开 GUI。
 - [accoutmissing/dsh-session-artifacts](https://github.com/accoutmissing/dsh-session-artifacts) — 右栏标签页：把各个 DSH 会话产出过的文件列成一列，当前会话置顶并默认展开；单击复制文件完整路径，双击在侧栏预览，文件可以单独置顶到本会话或全局置顶。
 - [Aeroscis/dsh-temptask](https://github.com/Aeroscis/dsh-temptask) — DeepSeek Harness 的临时任务模式：一键创建一次性的时间戳工作区并开会话，直接成为侧边栏原生工作区节点。
-- [AfeyGu/dsh-compaction-tower](https://github.com/AfeyGu/dsh-compaction-tower) — 自动压缩上下文：后台观察者提前把早期历史蒸成摘要块，占用越过触发线时逐块提交直到回到目标线以下，提交路径不调模型；材料用尽后块可合并成更高层，decompress 与 search_context 可按块读回原文。
+- [AfeyGu/dsh-compaction-tower](https://github.com/AfeyGu/dsh-compaction-tower) — 自动压缩上下文：后台观察者提前把早期历史蒸成摘要块，占用越过触发线时逐块提交直到回到目标线以下，提交路径不调模型；材料用尽后块可合并成更高层，decompress 与 search_context 可按块读回原文。后台观察者会消耗模型 token：默认沿用会话的 provider 与 model（可另选），默认最多同时进行 10 个蒸馏。
 - [agi321/dsh-temp-chat](https://github.com/agi321/dsh-temp-chat) — 用 /single-turn 与 /multi-turn 在独立子代理中作答，结果只留在当前对话，不进入主模型上下文。
 - [ai-v5/LLMAgentChatRoom](https://github.com/ai-v5/LLMAgentChatRoom) — 自托管聊天室：主人与编码 agent 共用一个房间。插件在服务未运行时启动本地 Node 服务（SQLite、REST、SSE），侧边栏入口在面板中打开房间界面，五个工具（room_join、room_send、room_read、room_status、room_leave）把收到的消息以标注发送者的用户消息推入会话并写入会话日志，Codex 连接器把房间消息经 codex queue 转发。每条消息带服务端盖章的 author、platform、seq，非主人消息按数据处理并标注发送者。需 Node.js 24+。
 - [aijacko/dsh-message-actions](https://github.com/aijacko/dsh-message-actions) — 为对话消息添加撤回、删除、删至末尾、多选分享与导出，并提供每条回答的用量统计与 DeepSeek 余额费用统计。
@@ -3814,7 +3814,7 @@ dsh plugin --profile web add dshmarket
 - [alchemistwu/dsh-tool-call-guard](https://github.com/alchemistwu/dsh-tool-call-guard) — 在 wire 层中性化 arguments 为非法 JSON 的 tool call，避免一次模型畸形输出让 session 在严格 OpenAI 兼容服务端上永久 400。
 - [aLIZELI/belief-merge#belief-merge](https://github.com/aLIZELI/belief-merge/tree/main/belief-merge) — 把其他会话的上下文合并进当前回合：按证据裁决冲突、前提被撤回时同步撤回结论、用信任格抵抗跨会话提示注入，并在 token 预算内打包。附带评测基准。
 - [amd47802574/dsh-session-fulltext-search](https://github.com/amd47802574/dsh-session-fulltext-search) — 开启 dsh 内置但默认关闭的会话全文搜索后端（session-query-sqlite，SQLite FTS5），侧边栏放大镜即可搜索消息正文并附摘要，而不只是标题。
-- [ame-code/dsh-workspace-move](https://github.com/ame-code/dsh-workspace-move) — 在工作区右键菜单里把整个工作区搬到另一个目录，顺带重命名：嵌套工作区与会话一起迁移并改写记录，失败自动回滚，移动后可一键撤销。
+- [ame-code/dsh-workspace-move](https://github.com/ame-code/dsh-workspace-move) — 在工作区右键菜单里把整个工作区搬到另一个目录，顺带重命名：嵌套工作区与会话一起迁移并改写记录，失败自动回滚，移动后可一键撤销。首先在 Windows 上开发与验证；macOS 与 Linux 走同一套代码路径。
 - [Angela-lwh/dsh-archive-purge](https://github.com/Angela-lwh/dsh-archive-purge) — 在已归档会话的行菜单里加入「删除会话」：永久移除会话日志目录、它启动的子代理会话日志、工作区归属、归档标记、投影缓存记录与 spill 溢出目录；宿主仍持有的会话先登记，下次启动或点「完成待删除清理」时完成。另外会清扫被放弃的空白占位、遗留的孤儿子代理与失效的投影缓存记录，并让空白占位不再出现在 @ 引用列表里。
 - [AngleNaris/slumberpavilion](https://github.com/AngleNaris/slumberpavilion) — 沉眠阁把 DSH 里已归档会话的日志与投影记录真正搬出加载路径，并提供归档、读取、还原、删除会话的工具。
 - [Anionex/dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) — 对话回退：基于持久 Change Ledger 回滚会话与工作区状态。
@@ -6017,7 +6017,7 @@ dsh plugin --profile web add dshmarket
 - [SIMON-WORLD/dsh-journal-monitor](https://github.com/SIMON-WORLD/dsh-journal-monitor) — 经济学优先的期刊/工作论文监控插件：NBER RSS + arXiv 经济学（4 类目）+ 中文经管期刊（世界经济-玛格泰克平台，中国农村观察/财贸经济/中国人口科学/经济管理-ajcass 平台）抓取、关键词过滤、dry-run/Webhook 推送、去重持久化、定时简报（schedule_create 兼容）。
 - [SIMON-WORLD/dsh-toolkit#dsh-at-file](https://github.com/SIMON-WORLD/dsh-toolkit/tree/main/packages/dsh-at-file) — DSH 的 @ 文件引用工具：注册 at_file_read 工具，把工作区内文件内容注入会话，含目录穿越防护与 50KB 截断（MIT）。
 - [SiriLee/dsh-edit-approval](https://github.com/SiriLee/dsh-edit-approval) — 每次 edit 与 bash 调用前都会询问：编辑前展示红绿行级 diff，命令前展示描述与命令面板——同意一次或拒绝，两个 gate 各带独立总开关（Settings → General）。
-- [SiriusYANG91/dsh-astro-plan](https://github.com/SiriusYANG91/dsh-astro-plan) — 星野摄影计划：按 18 类天象与深空目标、全国 173 站检索，结合光污染、方位、月相、星历事件与 7 天天气给出推荐排序、焦段与曝光，并附 Stellarium 风格 3D 天球画面模拟。
+- [SiriusYANG91/dsh-astro-plan](https://github.com/SiriusYANG91/dsh-astro-plan) — 星野摄影计划：按 18 类天象与深空目标、全国 173 站检索，结合光污染、方位、月相、星历事件与 7 天天气给出推荐排序、焦段与曝光，并附 Stellarium 风格 3D 天球画面模拟。7 天天气来自 Open-Meteo，需要联网；其余功能离线运行。
 - [siruignaw-sys/dsh-tool-bandit-search](https://github.com/siruignaw-sys/dsh-tool-bandit-search) — 使用上下文赌博机算法（Thompson 采样）学习何时使用快速搜索、何时使用深度搜索的 `search` 工具。 
 - [SixId666/dsh-math-plugin#dsh-math](https://github.com/SixId666/dsh-math-plugin/tree/main/plugins/dsh-math) — SymPy 驱动的考研数学一精确计算与独立验证：14 个工具、214 个算子，默认返回精确符号解，并由独立机制复核每个结果（需本机 Python 3.10+ 及 sympy、mpmath）。
 - [sixtysevenlf/dsh-blender-plugin](https://github.com/sixtysevenlf/dsh-blender-plugin) — 让 DSH agent 通过直连 TCP 通道驱动本地 Blender，提供 15 个工具：视口帧、自定义视角渲染、Python 执行、无头与作业卸载、事务回滚，以及 34 个 family / 228 个 op 的规划层。
@@ -6865,8 +6865,8 @@ dsh plugin --profile web add dshmarket
 - [xuanyuanluoxue/computer-use-vision](https://github.com/xuanyuanluoxue/computer-use-vision) — Windows 桌面识图+模拟操作能力：截图→vision模型→模拟鼠标键盘，内置自进化应用技巧库。支持插件工具模式和纯skill模式双形态。
 - [xuhairui-dzz/dsh-shengtu](https://github.com/xuhairui-dzz/dsh-shengtu) — 会话内多引擎生图：agent 工具 + 输入框下方的停靠面板，带启用开关、引擎预设（火山方舟 / 硅基流动 / OpenAI 兼容 / 自定义）和本地消耗统计。需自备所选引擎的 API Key。
 - [XXGJ666/dsh-feiyu-vision](https://github.com/XXGJ666/dsh-feiyu-vision) — 给 DSH 加识图：用智谱 GLM-4V 描述图片、读图中文字（需智谱 API Key，有免费额度），可选火山方舟认人、SauceNAO / trace.moe 反查动漫原图（各需自己的 Key）；GIF/WebP 图需要装 ffmpeg。Key 与 ffmpeg 路径在插件自带的设置页里配。
-- [yanming119/dsh-spectacles](https://github.com/yanming119/dsh-spectacles) — 只读你指定的那一个窗口：读字、看版式、看清小字；被别的窗口盖住也照样能读，绝不回退整屏。
-- [yanming119/dsh-spectacles#eyesight](https://github.com/yanming119/dsh-spectacles/tree/main/eyesight) — 一眼看清：先给一张 146 token 的整屏缩略地图，再按块 1:1 看清（单块上限 1400x900，字按原像素读），一个 sight_see 工具，界面上有一只眼睛随时开关；判据来自实测的 1600px 宿主缩图线。
+- [yanming119/dsh-spectacles](https://github.com/yanming119/dsh-spectacles) — 只读你指定的那一个窗口：读字、看版式、看清小字；被别的窗口盖住也照样能读，绝不回退整屏。仅支持 Windows 10/11。
+- [yanming119/dsh-spectacles#eyesight](https://github.com/yanming119/dsh-spectacles/tree/main/eyesight) — 一眼看清：先给一张 146 token 的整屏缩略地图，再按块 1:1 看清（单块上限 1400x900，字按原像素读），一个 sight_see 工具，界面上有一只眼睛随时开关；判据来自实测的 1600px 宿主缩图线。仅支持 Windows（依赖 PowerShell）；不点眼睛就不会截屏。
 - [Yinxe/deepseek-harness-plugins#vision-bridge](https://github.com/Yinxe/deepseek-harness-plugins/tree/main/plugins/vision-bridge) — 让纯文本模型也能看图：消息中出现图片占位符时模型调用 vision_describe 工具，插件把本轮图片引用与提问一起转交给多模态视觉模型识别，主模型失败时自动用备用模型重试。配置在设置页完成并通过官方 settings API 持久化到 settings.yaml，热重载不丢。
 - [YOUNG-FELIX/dsh-vision](https://github.com/YOUNG-FELIX/dsh-vision) — 任意会话都能让视觉模型读本地图片，包括会话本身用的是纯文本模型的情况。默认路径下插件通过 ctx.llm.stream() 在进程内调用宿主路线，宿主凭据留在 provider 适配器里；只有可选的 direct/自定义 OpenAI 兼容路线会读取密钥（来自插件配置或 apiKeyRef 指向的 ~/.dsh/.credentials.yaml）。
 - [ysiguu/dsh-novelai](https://github.com/ysiguu/dsh-novelai) — 把 NovelAI 生图接进 DSH：`nai_image`（画风预设、画师串、按模型自动转权重、token 预算提醒，出图直接内联显示）、`nai_status`、`nai_prompt`（build / check / guide 三个动作），外加带逐帧草稿预览的画室页面、独立 studio 和一个从四份教程里提炼的提示词手册。用自己的 `pst-` token。
