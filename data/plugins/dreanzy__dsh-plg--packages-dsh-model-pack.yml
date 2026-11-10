@@ -1,0 +1,6 @@
+url: https://github.com/dreanzy/dsh-plg/tree/main/packages/dsh-model-pack
+name: dreanzy/dsh-plg#dsh-model-pack
+category: model
+description:
+  en: 'Per-workspace model packs: bind a named provider, model and reasoning effort plus the four subagent tier routes to a directory. Applies to sessions created in that directory afterwards, leaving existing sessions untouched.'
+  zh: '按工作区指定模型：把 provider、model、reasoningEffort 与子智能体四档路由组合成具名 pack 绑定到目录，只影响该目录之后新建的会话，已有会话不受影响。'
