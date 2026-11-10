@@ -1,0 +1,6 @@
+url: https://github.com/wkscc310/dsh-client-ui-cpa-quota
+name: wkscc310/dsh-client-ui-cpa-quota
+category: usage
+description:
+  en: 'CLIProxyAPI quota for DeepSeek Harness: a ring beside the model picker plus a settings panel listing every account quota windows with plans and reset times.'
+  zh: 模型选择器旁的 CLIProxyAPI 额度圆环，设置面板仿 CPA 管理页列出全部账号的额度窗口、套餐与刷新时间。

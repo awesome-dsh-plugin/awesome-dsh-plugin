@@ -1,0 +1,7 @@
+url: https://github.com/zhaolianghz/dsh-turnscope
+name: zhaolianghz/dsh-turnscope
+category: session
+tarball: https://github.com/zhaolianghz/dsh-turnscope/releases/latest/download/dsh-turnscope.tgz
+description:
+  en: 'Per-turn file changes, per-file diffs and deterministic safety verdicts for DSH sessions, plus a preview-first rewind that refuses when the worktree has drifted since the preview.'
+  zh: '逐轮次文件变更与逐文件差异、确定性安全结论，外加 preview-first 安全回退：预览不写盘，确认后才应用，工作区在预览后发生漂移则直接拒绝。'

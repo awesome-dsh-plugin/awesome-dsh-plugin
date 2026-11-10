@@ -1,0 +1,6 @@
+url: https://github.com/y2zyyr/smart-session-title
+name: y2zyyr/smart-session-title
+category: session
+description:
+  en: Replacement session-title provider that compresses oversized or code-heavy first prompts before calling the model (in the tested DSH version the built-in provider rejects inputs above 4096 bytes without a model call) and waits for a real task instead of titling a greeting. Titles use the session’s own provider and model by default and manual titles are protected; title rules cover a character cap, an optional date affix, style, language and exclusion words, plus a per-session lock. Also re-titles stored sessions in bulk, with a progress overlay that keeps running after Settings is closed.
+  zh: 会话标题 provider 替换插件：先把过长或代码密集的首条 Prompt 压缩再调用模型（实测 DSH 版本的内建 provider 在超过 4096 bytes 时直接拒绝、不调用模型），遇到纯问候则等待真正的任务。默认使用该会话自身的 provider 与 model，保护人工标题；标题规则支持字数上限、可选日期前后缀、风格、语言与排除词，并可按会话锁定标题。还可批量重优化历史会话标题，进度浮层在关闭设置页后继续运行。

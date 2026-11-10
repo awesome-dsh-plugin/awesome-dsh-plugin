@@ -1,0 +1,6 @@
+url: https://github.com/1569126506-sudo/dsh-team-cost
+name: 1569126506-sudo/dsh-team-cost
+category: usage
+description:
+  en: 'Team cost captain: meters every model call (subagents included), attributes each call to a member by workspace rules, prices it with the built-in DeepSeek 2026-09 catalog (peak/off-peak, CNY/USD) or user overrides, and appends it to a local JSONL ledger. Adds hot-reloadable member budgets, 80%/100% webhook alerts, optional over-budget enforcement, a team_cost_report tool with CSV export, and a settings-page team dashboard served over a Typert RPC service.'
+  zh: '团队成本管家：按成员/工作空间计量每次模型调用的 token 与费用（含子代理），内置 DeepSeek 2026-09 价目表与自定义价格覆盖，成员预算热更新、阈值 Webhook 告警、可选超支拦截，提供成本报表工具与 CSV 导出，并在设置页提供团队成本看板。'

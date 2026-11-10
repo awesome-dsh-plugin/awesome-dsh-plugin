@@ -1,0 +1,6 @@
+url: https://github.com/KitanWang/dsh-figma-plugin
+name: KitanWang/dsh-figma-plugin
+category: tools
+description:
+  en: 'Figma design context for the agent: reads a frame''s node tree, auto-layout, paints and typography, resolves the variables it is bound to, and renders a screenshot to compare code against — plus four bundled design-to-code skills. Connect with one button against Figma''s own consent page; the plugin ships its own OAuth app, refreshes tokens automatically, and never asks for or displays a token.'
+  zh: '给 agent 用的 Figma 设计上下文：读取画板的节点树、自动布局、填充与字体，解析节点绑定的设计变量，并渲染截图用于对照代码 —— 另附四个设计转代码技能。点一个按钮即跳转 Figma 官方授权页完成连接；插件自带 OAuth 应用、自动续期令牌，全程不索取也不展示任何 Token。'

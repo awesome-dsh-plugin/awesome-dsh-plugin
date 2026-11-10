@@ -1,0 +1,6 @@
+url: https://github.com/hangyesite/dsh-shortvideo-export
+name: hangyesite/dsh-shortvideo-export
+category: voice
+description:
+  en: 'Download watermark-free Douyin and Xiaohongshu videos, transcribe them with local or cloud speech recognition, proofread the text against a term list, and export Markdown, DOCX, SRT, VTT and other formats from a settings panel or agent tools. Needs Python 3.10+ with pip packages (playwright, python-docx, numpy, and sherpa-onnx for the default local SenseVoice engine, which also downloads a ~228 MB model on first use), ffmpeg on PATH, and Chrome or Edge.'
+  zh: '下载抖音和小红书无水印视频，用本地或云端语音识别转成文字、按术语表校正，并从设置面板或 agent 工具导出 Markdown、DOCX、SRT、VTT 等格式。需自备 Python 3.10+（pip 安装 playwright、python-docx、numpy，默认的本地 SenseVoice 引擎另需 sherpa-onnx 并在首次使用时下载约 228 MB 模型）、PATH 中的 ffmpeg，以及 Chrome 或 Edge。'

@@ -1,0 +1,6 @@
+url: https://github.com/ThreeBody6666/dsh-im-hub
+name: ThreeBody6666/dsh-im-hub
+category: notify
+description:
+  en: 'Multi-platform IM gateway for DSH: Feishu (Lark) WebSocket long connection (no public URL), WeCom AES-encrypted callbacks, and Telegram long polling — per-chat agent sessions, whitelist access, and a visual settings card in the web GUI.'
+  zh: 多平台 IM 网关：飞书（Lark）WebSocket 长连接（无需公网）、企业微信 AES 加密回调、Telegram 长轮询；每会话独立 agent、白名单访问、Web GUI 可视化设置卡片。

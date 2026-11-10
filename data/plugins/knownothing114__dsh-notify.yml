@@ -1,0 +1,6 @@
+url: https://github.com/knownothing114/dsh-notify
+name: knownothing114/dsh-notify
+category: notify
+description:
+  en: Native desktop alerts when dsh needs the human — approvals, questions, plan reviews, turn completion, goals, errors and workflow runs — plus a Settings tab for every option, hot-applied.
+  zh: 当 dsh 需要你注意时发出桌面通知——权限确认、提问、计划审批、回合完成、目标、出错、工作流——并提供设置页「通知」选项卡，改动即时生效。

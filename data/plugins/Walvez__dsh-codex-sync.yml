@@ -1,0 +1,6 @@
+url: https://github.com/Walvez/dsh-codex-sync
+name: Walvez/dsh-codex-sync
+category: tools
+description:
+  en: 'Two-way Codex↔DSH bridge: skills from ~/.codex/skills, session import with workspace attach, live MCP mirroring of mcp_servers, and a Codex-side reverse MCP installer.'
+  zh: 'Codex 与 DSH 双向桥接：挂载 ~/.codex/skills、带工作区绑定的会话导入、mcp_servers 实时镜像，以及 Codex 端反向 MCP 安装器。'

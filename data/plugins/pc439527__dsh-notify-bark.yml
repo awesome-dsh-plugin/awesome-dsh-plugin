@@ -1,0 +1,6 @@
+url: https://github.com/pc439527/dsh-notify-bark
+name: pc439527/dsh-notify-bark
+category: notify
+description:
+  en: 'Bark push notifications to iPhone: turn completion, waiting-for-input, and approval events sent from the DSH Host.'
+  zh: Bark 推送通知到 iPhone：回合完成、等待回答、等待授权等事件由 Host 端发送。

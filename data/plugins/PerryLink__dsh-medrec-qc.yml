@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-medrec-qc
+name: PerryLink/dsh-medrec-qc
+category: tools
+description:
+  en: "Checks a medical-record front sheet for field completeness and for internal logical contradictions between its fields, against 国卫办医发〔2016〕24号 and other published documents. Lists what is missing or inconsistent for a human to review; it does not assess clinical correctness."
+  zh: "依据国卫办医发〔2016〕24号等公开文件，核对病案首页各字段的齐备性与字段间的逻辑矛盾。列出缺失或不一致之处供人复核，不评价临床正确性。"

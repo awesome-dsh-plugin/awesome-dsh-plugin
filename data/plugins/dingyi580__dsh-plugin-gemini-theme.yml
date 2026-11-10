@@ -1,0 +1,6 @@
+url: https://github.com/dingyi580/dsh-plugin-gemini-theme
+name: dingyi580/dsh-plugin-gemini-theme
+category: theme
+description:
+  en: Gemini-styled skin restyling the conversation ground, sidebar rows, hero greeting and composer through one stylesheet over the --dsw-* tokens, with light and dark both covered.
+  zh: Gemini 风格皮肤，用一张叠在 --dsw-* 令牌之上的样式表重塑对话区底色、侧栏胶囊行、首屏问候语与输入框，明暗主题都覆盖。

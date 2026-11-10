@@ -1,0 +1,6 @@
+url: https://github.com/gezi-wen/dsh-skill-authoring
+name: gezi-wen/dsh-skill-authoring
+category: skill
+description:
+  en: 'Ships a skill about writing DSH skills - SKILL.md frontmatter and root precedence, how to phrase a description so it actually triggers, length and splitting rules, and an A/B check that the finished skill changes agent behaviour. The package also carries the checker the skill uses to validate a skill directory.'
+  zh: '携带一份讲怎么写 DSH 技能的技能——SKILL.md 的 frontmatter 与技能根优先级、description 怎么写才会被触发、篇幅与拆分标准，以及「写完后怎么证明它真管用」的 A/B 验证。包里还带着供这份技能校验技能目录的检查脚本。'

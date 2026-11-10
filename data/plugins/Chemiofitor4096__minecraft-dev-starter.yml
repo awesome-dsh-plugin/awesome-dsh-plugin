@@ -1,0 +1,6 @@
+url: https://github.com/Chemiofitor4096/minecraft-dev-starter
+name: Chemiofitor4096/minecraft-dev-starter
+category: dev
+description:
+  en: Detects Minecraft mod and plugin projects (Fabric, Forge, NeoForge, Architectury, Paper) and runs their Gradle client or server task from the session header, with launch logs in a sidebar tab. One-shot tasks such as data generation and GameTest report a pass or fail verdict when they finish.
+  zh: 识别工作区里的 Minecraft 模组与插件工程（Fabric、Forge、NeoForge、Architectury、Paper），在会话标题栏运行 Gradle 的客户端或服务端任务，日志显示在侧栏标签；数据生成与 GameTest 这类会跑完的任务在结束时给出通过或失败的结论。

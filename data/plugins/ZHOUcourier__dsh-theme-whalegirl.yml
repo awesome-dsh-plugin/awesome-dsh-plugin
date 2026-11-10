@@ -1,0 +1,8 @@
+url: https://github.com/ZHOUcourier/dsh-theme-whalegirl
+name: ZHOUcourier/dsh-theme-whalegirl
+category: theme
+description:
+  en: 'Whale Girl light theme for the DSH Web UI, ported from a DreamSkin skin package: a full native --dsw-* token remap, the artwork as an ambient wallpaper behind a single light paper layer, and live controls for glass strength, conversation-only paper, wallpaper veil/focus/zoom and the composer focus glow, with a bilingual settings form on the installed-package page. Visual identity: 溟月 by 上善无形 → DeepSeek maid ver. by ZipZipPipe; artwork CC BY-NC-SA 4.0, code MIT.'
+  zh: '移植自 DreamSkin 皮肤包的 DSH Web UI 鲸鱼娘亮色主题：完整重映射原生 --dsw-* 令牌，插画作为环境壁纸衬在单层轻纸面之后，玻璃强度、对话区独立纸面、壁纸遮罩/焦点/缩放与输入框聚焦光晕均可实时调节，设置表单以中英双语呈现在已安装插件详情页。视觉定型：溟月（上善无形）→ DeepSeek 女仆装（ZipZipPipe）；插画 CC BY-NC-SA 4.0，代码 MIT。'
+icon: https://raw.githubusercontent.com/ZHOUcourier/dsh-theme-whalegirl/main/assets/icon.png
+tarball: https://github.com/ZHOUcourier/dsh-theme-whalegirl/releases/latest/download/dsh-theme-whalegirl.tgz

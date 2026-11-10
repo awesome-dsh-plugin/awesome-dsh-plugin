@@ -1,0 +1,6 @@
+url: https://github.com/Max-Null/dsh-quick-toolbar
+name: Max-Null/dsh-quick-toolbar
+category: ui
+description:
+  en: 'Plugin-button aggregator with carrier + on-site-LLM extensibility: gather any plugin''s scattered buttons into one entry (SSiD title bar / web floating ball), LLM registers per environment, right-click deregisters — pure data, no plugin source touched.'
+  zh: '插钮聚合器（载体+驻场 LLM 范式）：把任何插件的散落按钮聚合到统一入口（SSiD 标题栏 / web 悬浮球）——LLM 按环境注册、右键删除=注销，纯数据零代码，不动插件源码。'

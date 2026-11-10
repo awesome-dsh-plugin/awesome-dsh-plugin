@@ -1,0 +1,6 @@
+url: https://github.com/wiyi/dsh-web-service-manager
+name: wiyi/dsh-web-service-manager
+category: dev
+description:
+  en: 'Manage the DSH web service from a settings panel: status, version, restart, stop, and one-click updates.'
+  zh: 在设置面板中管理 DSH Web 服务:状态、版本、重启、停止与一键更新。

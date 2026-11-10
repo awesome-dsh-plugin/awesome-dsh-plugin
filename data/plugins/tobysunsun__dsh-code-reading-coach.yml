@@ -1,0 +1,16 @@
+# awesome-dsh-plugin registry 提交条目
+# 提交方式：fork https://github.com/awesome-dsh-plugin/awesome-dsh-plugin，
+# 把本文件内容添加到 data/plugins/tobysunsun__dsh-code-reading-coach.yml，
+# 运行 `node scripts/generate-readme.mjs` 刷新 README，然后提 PR。
+#
+# 规范要点（源自 contributing.md）：
+# - 只有 description.en 必填；zh 可选（写不了可留空，维护者会补）。
+# - 含西文 ": "（冒号+空格）的描述必须加引号，否则 YAML 解析成嵌套键。
+# - 描述只说功能、不营销、不夸大；category 选贴合功能的（tools = Tools & Capabilities）。
+# - 自动检查门槛：dsh.bundle manifest（已满足）、>1 天且 >=10 提交、dsh-plugin topic（已满足）。
+url: https://github.com/tobysunsun/dsh-code-reading-coach
+name: tobysunsun/dsh-code-reading-coach
+category: tools
+description:
+  en: 'Interactive code-reading coach for DeepSeek Harness: a five-phase guided walkthrough of the source behind a paper, starting by identifying its language and framework.'
+  zh: '代码研读教练：交互式引导研读论文对应的开源代码。五段研读法（锚定论文主张、地形扫描、入口追踪、核心映射、闭环验证），自动识别并告知语言的框架与架构，适合研读 AI 论文源码。'

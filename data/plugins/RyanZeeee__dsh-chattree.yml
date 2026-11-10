@@ -1,0 +1,6 @@
+url: https://github.com/RyanZeeee/dsh-chattree
+name: RyanZeeee/dsh-chattree
+category: session
+description:
+  en: Shows a DSH session as a conversation canvas — every turn is a node, any turn forks a real child session, and a compacted context folds into one green node you can keep talking from; the left rail groups canvases by DSH workspace and renames them in step with the session titles.
+  zh: 把 DSH 会话画成一张对话画布：每轮问答是一个节点，任意节点都能分叉出真实的子会话，压缩过的上下文收成一个绿色节点、可以从它继续对话；左侧栏按 DSH 工作区分组列出画布，重命名与 DSH 自己的会话标题同步。

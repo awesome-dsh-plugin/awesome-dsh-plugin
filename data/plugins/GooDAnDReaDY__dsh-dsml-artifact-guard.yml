@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-dsml-artifact-guard
+name: GooDAnDReaDY/dsh-dsml-artifact-guard
+category: security
+description:
+  en: "Sanitizes leaked DeepSeek DSML closing tags from model text streams."
+  zh: "清理模型文本流中泄漏的 DeepSeek DSML 闭合标签。"

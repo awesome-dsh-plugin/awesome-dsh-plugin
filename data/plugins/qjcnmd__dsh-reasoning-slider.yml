@@ -1,0 +1,6 @@
+url: https://github.com/qjcnmd/dsh-reasoning-slider
+name: qjcnmd/dsh-reasoning-slider
+category: ui
+description:
+  en: Codex-style reasoning-effort slider embedded in the model selector.
+  zh: Codex 风格推理等级滑块，内嵌于模型选择器，拖动切换推理档位。

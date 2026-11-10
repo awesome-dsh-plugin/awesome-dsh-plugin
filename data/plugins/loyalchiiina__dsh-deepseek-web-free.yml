@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-deepseek-web-free
+name: loyalchiiina/dsh-deepseek-web-free
+category: model
+description:
+  en: 'A fork of y-wi/dsh-deepseek-web that bridges the DeepSeek web client into DSH, so short-context conversations, workflows and skill packs run without an API key, and a picture pasted in DSH gets read for free. Ships a floating ball plus sidebar, one-click login that stays logged in, and a right-click action that sends any selected text into the web input after clearing it. It keeps the upstream provider id deepseek-web, so it cannot be installed next to another plugin that owns the same provider. Adapts DSH kernel 0.2.2-rc.1. Reuses your own signed-in chat.deepseek.com session (needs Chrome/Edge/Brave/Chromium or a managed browser download); this may violate DeepSeek''s terms and risks rate limiting or a ban. Cannot be installed alongside y-wi/dsh-deepseek-web.'
+  zh: 'y-wi/dsh-deepseek-web 的 fork：把 DeepSeek 网页版桥接进 DSH，不花 API 额度就能跑短上下文对话、工作流与技能包，直接发图片也能免费识图。带悬浮球与侧边栏，一键登录后长期保持登录；正文任意文字右键即可投送到网页端输入框，投送前自动清空原输入框。沿用上游 provider id deepseek-web，不能与占用同一 provider 的其他插件同时安装。适配 DSH 内核 0.2.2-rc.1。复用你自己已登录的 chat.deepseek.com 会话（需 Chrome/Edge/Brave/Chromium 或由插件下载托管浏览器），可能违反 DeepSeek 服务条款，有限流/封禁风险；不能与 y-wi/dsh-deepseek-web 同装。'

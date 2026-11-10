@@ -1,0 +1,6 @@
+url: https://github.com/yingtianlan/dsh-tauri-turnrewind
+name: yingtianlan/dsh-tauri-turnrewind
+category: git
+description:
+  en: 'Turn-level workspace undo for Git worktrees: every agent turn gets a private snapshot, /undo previews a red/green diff card that is confirmed in place, files changed after the turn are refused with a conflict diff unless --force or --skip-conflicts is passed, and HEAD, index, stash and commit history of the user repository are never written.'
+  zh: 'Git worktree 的 turn 级工作区撤销：每个 turn 建私有快照，/undo 先出红绿 diff 预览卡、卡内确认；turn 之后被改过的文件拒绝用冲突 diff 覆盖，只有显式 --force 或 --skip-conflicts 才继续；不写用户仓库的 HEAD、index、stash 与提交历史。'

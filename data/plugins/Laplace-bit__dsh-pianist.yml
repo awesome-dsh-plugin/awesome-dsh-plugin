@@ -1,0 +1,6 @@
+url: https://github.com/Laplace-bit/dsh-pianist
+name: Laplace-bit/dsh-pianist
+category: voice
+description:
+  en: 'Piano performance plugin: ask the agent to play a piece and it renders on a Canvas2D grand piano with real Salamander Grand samples, an immersive stage, and an interactive 88-key keyboard.'
+  zh: 让 Agent 弹一曲真钢琴：Salamander Grand 真实采样音色，Canvas2D 三角钢琴与沉浸式舞台渲染，88 键可弹。

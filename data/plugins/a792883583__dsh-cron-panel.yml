@@ -1,0 +1,6 @@
+url: https://github.com/a792883583/dsh-cron-panel
+name: a792883583/dsh-cron-panel
+category: workflow
+description:
+  en: "Scheduled tasks panel for managing DSH agent and system crontabs with natural language input and execution logs."
+  zh: "定时任务面板：分区管理 DSH 与系统 crontab、自然语言生成表达式、执行日志与完成后消息推送。"

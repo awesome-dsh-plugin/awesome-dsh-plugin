@@ -1,0 +1,7 @@
+url: "https://github.com/Wahwayhale/dsh-connect-doubao"
+name: "Wahwayhale/dsh-connect-doubao"
+category: model
+description:
+  en: 'Connects a Doubao account to DeepSeek Harness as a model provider after a single browser QR sign-in — chat models, the 「工作任务」 task-mode models (2.1 Lite / 2.1 Pro / Auto, spending the paid membership quota), deep thinking on by default, Seedream image generation, and a live quota panel covering the 5-hour, weekly and activity-grant windows, showing what is LEFT rather than what is used. Windows x64 only, since the session is sealed with DPAPI.'
+  zh: '浏览器扫码登录一次即可把豆包账号接入 DeepSeek Harness：对话模型、「工作任务」模型（2.1 Lite / 2.1 Pro / 自动，走会员付费额度）、默认开启的深度思考、Seedream 生图，以及一块实时额度看板，涵盖 5 小时、周与活动赠送额度，显示「还剩多少」而不是「已用多少」。仅 Windows x64：会话用 DPAPI 密封在本机。'
+icon: https://raw.githubusercontent.com/Wahwayhale/dsh-connect-doubao/main/docs/assets/dsh-connect-doubao-icon.png

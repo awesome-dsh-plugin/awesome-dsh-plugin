@@ -1,0 +1,6 @@
+url: https://github.com/linconz/agentduel-dsh
+name: linconz/agentduel-dsh
+category: fun
+description:
+  en: 'AgentDuel is a code-battle game. This plugin lets you complete the entire game loop inside DSH: manage deathmatch characters and capture-the-flag teams, submit agent code, start battles, watch replays, and use DSH conversations to keep improving agents based on battle results.'
+  zh: AgentDuel 是一款代码对战游戏，通过这款插件，在 DSH 内部完成整个游戏过程，实现死斗角色与夺旗团队、提交 Agent 代码、发起战斗、观看回放，并通过 DSH 会话依据战果继续优化 Agent。

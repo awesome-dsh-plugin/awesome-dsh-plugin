@@ -1,0 +1,6 @@
+url: https://github.com/sjh9714/routinekit
+name: sjh9714/routinekit
+category: workflow
+description:
+  en: Capture selected DSH, local MCP, or native WebMCP calls as reviewed, parameterized routines, expose typed tools, and replay with fresh approval.
+  zh: '把选定的 DSH、本地 MCP 或原生 WebMCP 调用捕获为经过评审的参数化例程，暴露为带类型的工具，重放时重新请求批准。'

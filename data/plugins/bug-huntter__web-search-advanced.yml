@@ -1,0 +1,6 @@
+url: https://github.com/bug-huntter/web-search-advanced
+name: bug-huntter/web-search-advanced
+category: browser
+description:
+  en: 'Switchable web-search provider for DSH: native DeepSeek web search or an OpenAI-compatible custom backend. Installation automatically routes DSH web searches to the plugin; only provider, API key and model are required. Published on npm as @lp181818/web-search-advanced@0.1.3.'
+  zh: 安装后自动将 DSH 网页搜索路由到本插件；只需配置服务商、API Key 和模型即可使用。支持 DeepSeek 原生搜索与 OpenAI 兼容自定义后端，已发布为 npm 包 @lp181818/web-search-advanced@0.1.3。

@@ -1,0 +1,6 @@
+url: https://github.com/nonewind/dsh-spend
+name: nonewind/dsh-spend
+category: usage
+description:
+  en: 'Token usage and estimated spend for the dsh web UI: floating panel with per-model, per-day, and per-session stats.'
+  zh: DSH Web 用量与费用统计插件：右下角悬浮窗，按模型/按天/按会话多维聚合与预计花费。

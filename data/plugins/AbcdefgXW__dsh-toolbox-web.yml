@@ -1,0 +1,6 @@
+url: https://github.com/AbcdefgXW/dsh-toolbox-web
+name: AbcdefgXW/dsh-toolbox-web
+category: tools
+description:
+  en: 'Toolbox plugin for the Web UI: session/trash/subdirectory/search/preset/config management, tag grouping, long-message collapse, and a scheduled heartbeat with optional IM channel push.'
+  zh: Web 界面工具箱：会话/回收站/子目录/搜索/预设/配置管理、标签分组、长消息折叠，以及支持 IM 渠道推送的定时心跳。

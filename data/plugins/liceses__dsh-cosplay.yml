@@ -1,0 +1,6 @@
+url: https://github.com/liceses/dsh-cosplay
+name: liceses/dsh-cosplay
+category: fun
+description:
+  en: 'Character cards for DeepSeek Harness: inject a persona section into the system prompt, or rewrite the user message through rule cards before the model sees it. Ships a preset card library, single-file card packs that carry artwork, and a Character tab in the conversation view.'
+  zh: '给 DeepSeek Harness 的角色卡：把人设注入系统提示词，或用规则卡在模型看到之前改写用户消息。自带预设卡库、含立绘的单文件卡包导入导出，以及会话区的「角色」页签。'

@@ -1,0 +1,6 @@
+url: https://github.com/falling-ts/dsh-force-compact
+name: falling-ts/dsh-force-compact
+category: session
+description:
+  en: "Forces context compression when running low-context llama.cpp models such as Qwen3.8-27B, improving model efficiency and usage smoothness, together with well-refined compaction prompts."
+  zh: "llama-cpp qwen3.8-27b 低上下文时，强制上下文压缩插件，提示模型使用效率和使用流畅度，外加完善的压缩提示。"

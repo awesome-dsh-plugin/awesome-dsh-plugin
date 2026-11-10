@@ -1,0 +1,6 @@
+url: https://github.com/flyxiu/dsh-simple-tps
+name: flyxiu/dsh-simple-tps
+category: usage
+description:
+  en: 'Per-turn first-token latency and output speed beside the built-in usage pill, folded on the host over the durable event log: first-token time is replayed from each message''s compact stream, so historical turns stay exact after a reload rather than showing an estimate.'
+  zh: '在自带用量胶囊旁显示每轮的首字延迟与输出速度，由宿主在持久事件日志上折叠得出：首字时刻从每条消息的压缩流中重放还原，所以刷新后历史轮次依然精确，而不是估算值。'

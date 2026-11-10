@@ -1,0 +1,6 @@
+url: https://github.com/AngelosZou/dsh-homepage
+name: AngelosZou/dsh-homepage
+category: dev
+description:
+  en: 'A personal home page for DSH that gathers feature entry points and readings into a card wall: one-click DSH core updates, security review of a plugin before install, local Skill management, session status and more. The page is customizable, and any other plugin can add its own cards through the interface.'
+  zh: '为 DSH 提供一个集成功能入口与信息浏览的个人主页：以卡片墙的形式内置一键更新 DSH 核心版本、审核外部插件安全性、管理本地 Skill、浏览会话状态等功能与信息展示。页面支持高度自定义，并可自由通过接口增加新的卡片。'

@@ -1,0 +1,7 @@
+url: https://github.com/sagirimo/BioDSH/tree/main/packages/dsh-biodsh
+name: sagirimo/BioDSH#dsh-biodsh
+category: skill
+description:
+  en: Bioinformatics agent preset with 17 BioDSH analysis skills (single-cell, bulk RNA-seq, survival, regression, ANOVA), a 2000+ skill library searched by a skill_library tool, per-message skill selection and a time/step convergence guard.
+  zh: 生信智能体预设，含 17 个 BioDSH 分析技能（单细胞、bulk RNA-seq、生存分析、回归、方差分析）、可用 skill_library 工具检索的 2000+ 技能库、按消息自动选技能和按时间/步数的收敛护栏。
+icon: https://raw.githubusercontent.com/sagirimo/BioDSH/main/docs/brand/png/app-light-256.png

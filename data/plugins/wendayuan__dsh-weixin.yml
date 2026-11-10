@@ -1,0 +1,6 @@
+url: https://github.com/wendayuan/dsh-weixin
+name: wendayuan/dsh-weixin
+category: notify
+description:
+  en: 'WeChat (iLink) channel: chat with your DSH agent from the WeChat app, one persistent session per conversation, reusing DSH credentials.'
+  zh: 微信（iLink）通道：用手机微信直接对话 DSH agent，每个对话一个持久会话，复用 DSH 凭据。

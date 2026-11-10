@@ -1,0 +1,6 @@
+url: https://github.com/DWJZ/dsh-allow
+name: DWJZ/dsh-allow
+category: security
+description:
+  en: 'Filesystem permissions for shell calls, granted per path and capability rather than per command name. The command line is parsed for the read, write, create, delete and execute effects it needs, a capability it lacks raises the approval card instead of a flat refusal, and the same rules are compiled into the macOS Seatbelt profile the process, its children and the code its arguments never showed all run under. An Approvals tab in the conversation reads the audit log back and shows which rule, automatic reviewer or person answered each call.'
+  zh: '按路径与能力（read / write / create / delete / execute）授予 shell 调用的文件权限，而不是按命令名判断。命令行的文件效果由解析得出，缺哪个能力就出审批卡片而不是一律拒绝，同一套规则还会编译成进程、它的子进程、以及命令行根本没露出来的代码共同运行其下的 macOS Seatbelt profile。会话里的「审批」标签页把审计日志读回来，显示每次判定是规则、自动复核还是人拍的板。'

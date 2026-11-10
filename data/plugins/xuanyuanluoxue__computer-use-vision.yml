@@ -1,0 +1,6 @@
+url: https://github.com/xuanyuanluoxue/computer-use-vision
+name: xuanyuanluoxue/computer-use-vision
+category: vision
+description:
+  en: "Windows computer-use capability for DSH: screenshot → vision model → simulated mouse/keyboard with self-evolving knowledge base. Dual-mode plugin tools + skill-only pwsh fallback."
+  zh: Windows 桌面识图+模拟操作能力：截图→vision模型→模拟鼠标键盘，内置自进化应用技巧库。支持插件工具模式和纯skill模式双形态。

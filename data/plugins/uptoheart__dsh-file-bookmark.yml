@@ -1,0 +1,6 @@
+url: https://github.com/uptoheart/dsh-file-bookmark   # 与仓库地址完全一致
+name: uptoheart/dsh-file-bookmark
+category: tools        # 从短键里选：ui / tools / session / usage / theme / model / identity / memory ...
+description:
+  en: Manage frequently used file bookmarks in DeepSeek Harness, supporting bookmark saving, listing and navigation. It also allows creation of frequently used projects, including management projects, code projects and more.
+  zh: 在 DeepSeek Harness 中管理常用的文件书签，支持保存、列出与跳转，并且可以创建常用的项目，包括管理类项目、代码类项目等。

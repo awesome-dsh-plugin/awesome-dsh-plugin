@@ -1,0 +1,6 @@
+url: https://github.com/hehetoshang/dsh-talebook-plugin
+name: hehetoshang/dsh-talebook-plugin
+category: tools
+description:
+  en: "DSH tools for operating a self-hosted Talebook library: search, download, upload and manage books and audiobooks, manage Legado book sources, and admin operations, with approval-gated writes."
+  zh: "在自托管 Talebook 书库上搜索、下载、上传和管理书籍与有声书，管理 Legado 书源及管理员操作；写入操作需经批准。"

@@ -1,0 +1,6 @@
+url: https://github.com/tma1-ai/dsh-otel
+name: tma1-ai/dsh-otel
+category: usage
+description:
+  en: Exports the agent loop to GreptimeDB as OpenTelemetry traces, metrics and logs, with seven Grafana dashboards covering token usage, cost, session outcomes and per-turn latency.
+  zh: 把 agent loop 以 OpenTelemetry traces、metrics、logs 导出到 GreptimeDB，附七个 Grafana dashboard，覆盖 token 用量、成本、会话结果和每轮耗时。

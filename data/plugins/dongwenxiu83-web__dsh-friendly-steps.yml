@@ -1,0 +1,6 @@
+url: https://github.com/dongwenxiu83-web/dsh-friendly-steps
+name: dongwenxiu83-web/dsh-friendly-steps
+category: ui
+description:
+  en: Folds Think and tool-call rows into a floating summary pill with red failure counts, for a cleaner writer-friendly chat view.
+  zh: 把 Think / 工具调用等过程行折叠成右下角摘要浮条，失败步骤红色计数，面向文字工作者的干净对话视图。

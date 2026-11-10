@@ -1,0 +1,7 @@
+url: https://github.com/boy1141/dsh-plugin-balance-chip
+name: boy1141/dsh-plugin-balance-chip
+category: usage
+description:
+  en: Shows the DeepSeek account balance and unused bonus credit in the session header, refreshing every 20 seconds and whenever the window regains focus.
+  zh: 在会话标题栏显示 DeepSeek 账户余额与未用完的赠送额度，每 20 秒自动刷新，窗口重新聚焦时立即刷新。
+tarball: https://github.com/boy1141/dsh-plugin-balance-chip/releases/latest/download/dsh-plugin-balance-chip.tgz

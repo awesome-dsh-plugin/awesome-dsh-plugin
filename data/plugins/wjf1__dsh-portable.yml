@@ -1,0 +1,6 @@
+url: https://github.com/wjf1/dsh-portable
+name: wjf1/dsh-portable
+category: tools
+description:
+  en: 'Export a whole working DSH home — profile, installed plugins with their node_modules, skills, hooks and task boards — into one .dshpkg tar and import it on another machine without network or pnpm; also streams over HTTP or a one-shot LAN link.'
+  zh: '把整套可用的 DSH 主目录——profile、带 node_modules 的已装插件、技能、hooks 与任务板——打包成单个 .dshpkg，在另一台机器上免联网、免 pnpm 还原；也支持 HTTP 上传与一次性局域网链接。'

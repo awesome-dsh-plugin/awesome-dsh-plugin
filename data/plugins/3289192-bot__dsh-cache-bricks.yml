@@ -1,0 +1,7 @@
+url: https://github.com/3289192-bot/dsh-cache-bricks
+name: 3289192-bot/dsh-cache-bricks
+category: usage
+description:
+  en: Visualizes prompt-cache hit rates and model request activity in DSH Web, with request details, comparison, and conversation navigation.
+  zh: 在 DSH Web 中可视化提示词缓存命中率与模型请求活动，支持请求详情、请求对比和对话定位。
+tarball: https://github.com/3289192-bot/dsh-cache-bricks/releases/latest/download/dsh-cache-bricks.tgz

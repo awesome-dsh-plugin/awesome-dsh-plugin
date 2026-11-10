@@ -1,0 +1,6 @@
+url: https://github.com/chunfenxiazhi-collab/dsh-stability-audit
+name: chunfenxiazhi-collab/dsh-stability-audit
+category: dev
+description:
+  en: "Stability audit for installed dsh plugins: static risk grading (hook surface, startup work, inject, entry, dep ranges) plus optional isolated install verification."
+  zh: "已安装 dsh 插件的稳定性审计：静态风险分级（钩子面/启动任务/inject/入口/依赖区间）加可选隔离安装验证。"

@@ -1,0 +1,8 @@
+url: https://github.com/SolvasHQ/dsh-theme
+name: SolvasHQ/dsh-theme
+category: theme
+icon: https://raw.githubusercontent.com/SolvasHQ/dsh-theme/main/assets/icon-180.png
+tarball: https://github.com/SolvasHQ/dsh-theme/releases/latest/download/dsh-theme.tgz
+description:
+  en: Theme presets, a DIY palette editor with per-mode accents, bold borders, fonts, and interface text size for the DeepSeek Harness Web GUI.
+  zh: 为 DeepSeek Harness Web GUI 提供主题预设、DIY 调色与各模式强调色、加粗边框、字体与界面字号。

@@ -1,0 +1,6 @@
+url: https://github.com/Ck-epsilon/aura-vision
+name: Ck-epsilon/aura-vision
+category: vision
+description:
+  en: Free vision OCR with adaptive tile recognition for long documents and Markdown/Word/PNG/Excel export.
+  zh: 免费视觉识别插件：自适应切块长文档识别，支持历史收藏与 MD/Word/长图/Excel 导出。

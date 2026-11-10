@@ -1,0 +1,6 @@
+url: https://github.com/furkancak1r/dsh-composer-plus
+name: furkancak1r/dsh-composer-plus
+category: ui
+description:
+  en: 'Composer and sidebar helpers in one plugin, each switchable in Settings: a git Changes panel (uncommitted / unstaged / staged / branch diffs), Turn rollback, Project memory (notes per project that later chats read, off by default), a Task board (kanban board of chats by their live state), Assistant (one lasting chat that sets reminders with dsh scheduled tasks and reads your other chats; it changes a chat only after your approval) with Assistant apart from chats, Assistant always free (long steps go to background subagents) and Assistant news from chats (off by default), Remote computers (another Mac''s dsh over Tailscale, off by default), 11 extra UI languages and Automatic updates.'
+  zh: '一个插件集成多项输入框与侧边栏增强，均可在设置中单独开关：git 改动面板（未提交 / 未暂存 / 已暂存 / 分支差异）、回合回退、项目记忆（按项目保存笔记，后续对话会读取，默认关闭）、任务看板（按实时状态排列对话的看板）、助理（一个长期保留的对话，用 dsh 定时任务设置提醒并读取其他对话；只有在你批准后才会更改对话）及助理独立于对话、助理始终空闲（较长步骤交给后台子代理）和助理播报对话动态（默认关闭）、远程电脑（通过 Tailscale 打开另一台 Mac 的 dsh，默认关闭）、11 种额外界面语言和自动更新。'

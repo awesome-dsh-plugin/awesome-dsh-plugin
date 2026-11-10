@@ -1,0 +1,7 @@
+url: "https://github.com/olimc2016/dsh-token-meter-panel"
+name: "olimc2016/dsh-token-meter-panel"
+category: "usage"
+description:
+  en: "Adds a sidebar panel to the DeepSeek Harness web UI that reports token usage and cost straight from DeepSeek's own usage API (today's spend, 7/30-day trends, today's hourly split, a history table, cost breakdown, peak/off-peak tier pricing), plus per-session detail from local logs. Zero-config: it reads the browser sign-in for the official figures, and falls back to local session logs with the source labelled."
+  zh: "在 DeepSeek Harness 侧栏加入 Token 用量与花费面板：直接采用 DeepSeek 官方用量接口（今日消费、7/30 天趋势、今日分时、历史表、成本构成、峰谷分档计价），并用本机会话日志给出按会话明细。凭据零配置——自动读取浏览器登录态取官方数据，取不到时退回本地日志并标明来源。"
+tarball: "https://github.com/olimc2016/dsh-token-meter-panel/releases/download/v0.6.2/dsh-token-meter-panel-0.6.2.tgz"

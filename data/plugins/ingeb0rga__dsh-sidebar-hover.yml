@@ -1,0 +1,6 @@
+url: https://github.com/ingeb0rga/dsh-sidebar-hover
+name: ingeb0rga/dsh-sidebar-hover
+category: ui
+description:
+  en: 'Claude Code-style sidebar for the macOS desktop app: hovering the collapsed sidebar toggle peeks the sidebar over the content, selecting a session collapses it, clicking the toggle pins it; plus back/forward session history arrows (⌘[ / ⌘]).'
+  zh: '仿 Claude Code 的侧栏（macOS 桌面版）：悬停在折叠的侧栏按钮上即可将侧栏浮层展开，选择会话后自动收起，点击按钮固定；另有会话历史前进/后退箭头（⌘[ / ⌘]）。'

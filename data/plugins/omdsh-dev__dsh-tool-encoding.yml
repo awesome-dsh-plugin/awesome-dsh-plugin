@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-dev/dsh-tool-encoding
+name: omdsh-dev/dsh-tool-encoding
+category: tools
+description:
+  en: base64/url/hex encoding, common hashes, and UUID generation.
+  zh: base64/url/hex 编解码、常用哈希、UUID 生成。

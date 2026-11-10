@@ -1,0 +1,7 @@
+url: https://github.com/GU143312/dsh-training-lens
+name: GU143312/dsh-training-lens
+category: dev
+description:
+  en: 'Training Lens opens a local TensorBoard scalar dashboard with selectable metrics, explicit improvement direction, optional EMA smoothing and Chinese/English UI; requires an existing Python environment with TensorBoard.'
+  zh: 'Training Lens · 训练视窗通过 DSH 工具打开本地 TensorBoard 标量监控页面，支持指标选择、改善方向、EMA 平滑和中英文界面；需要已有的 Python 与 TensorBoard 环境。'
+tarball: https://github.com/GU143312/dsh-training-lens/releases/download/v0.1.0/dsh-training-lens-0.1.0.tgz

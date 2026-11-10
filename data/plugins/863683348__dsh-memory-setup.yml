@@ -1,0 +1,6 @@
+url: https://github.com/863683348/dsh-memory-setup
+name: 863683348/dsh-memory-setup
+category: memory
+description:
+  en: 'Local, auditable personal memory for DeepSeek Harness: preferences, project conventions, workflows and error lessons persisted as a changelogged JSON file in the workspace, with onboarding, auto project-convention extraction and evidence-backed lessons.'
+  zh: 解决 AI 金鱼脑：本地可审计的个人记忆层——偏好、项目约定、工作流与纠错教训，以带变更日志与完整性校验的 JSON 持久化在工作区，支持一次性设置、项目约定自动提取、证据化教训与快照恢复。

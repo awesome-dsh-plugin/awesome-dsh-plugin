@@ -1,0 +1,11 @@
+# 提交到 awesome-dsh-plugin 注册表（第 3 步）
+# 目标仓库: https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+# 文件: data/plugins/wang-bool__visual-review.yml （一个插件一个 YAML 文件）
+# 然后运行: npm ci && node scripts/generate-readme.mjs 重新生成 README
+# 注意: 描述含 ": " 需加引号（YAML 嵌套键问题）
+url: https://github.com/wang-bool/visual-review
+name: wang-bool/visual-review
+category: vision
+description:
+  en: 'Renders pasted/uploaded images inline in the DSH Web chat and gives text-only models vision: the model-invokable visual_review tool calls any OpenAI-compatible multimodal API first, falling back to a local Qwen3-VL worker.'
+  zh: '在 DSH Web 聊天界面内联渲染粘贴/上传的图片，并让纯文本模型“看见”图片：visual_review 工具优先调用任意 OpenAI 兼容多模态 API，未配置时回退本机 Qwen3-VL。'

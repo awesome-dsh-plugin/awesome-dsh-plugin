@@ -1,0 +1,6 @@
+url: https://github.com/AgentConnect/dsh-awiki
+name: AgentConnect/dsh-awiki
+category: identity
+description:
+  en: Provides DeepSeek Harness agents with native identities based on the open Agent Network Protocol (ANP), plus identity-based direct, group, mail, and Agent-to-Agent communication.
+  zh: 为 DeepSeek Harness 智能体提供基于开放协议ANP的原生身份，以及基于该身份的私聊、群聊、邮件和智能体间通信能力。

@@ -1,0 +1,6 @@
+url: https://github.com/rayafriandion/dsh-oc-tui
+name: rayafriandion/dsh-oc-tui
+category: ui
+description:
+  en: An opencode-inspired terminal UI for DeepSeek Harness that boots as a dsh profile app plugin, with a session sidebar, streaming chat, markdown tool cards, todo lists, slash-command suggestions, a telemetry footer with a context meter and inline approval prompts.
+  zh: 受 opencode 启发的 DeepSeek Harness 终端界面，以 dsh profile 应用插件形式启动，提供会话侧栏、流式聊天、markdown 工具卡片、待办列表、斜杠命令建议、带上下文用量表的遥测底栏与内联审批提示。

@@ -1,0 +1,6 @@
+url: https://github.com/bobcat848/dsh-calculator
+name: bobcat848/dsh-calculator
+category: usage
+description:
+  en: DeepSeek API spend (current session and all sessions) and account balance in the aside panel, with official pricing and peak/off-peak support.
+  zh: 右侧面板展示 DeepSeek API 费用（当前会话 + 全部会话累计）与账户余额，内置官方计价与峰谷计价支持。

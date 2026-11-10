@@ -1,0 +1,6 @@
+url: https://github.com/john-walks-slow/dsh-clear-mind
+name: john-walks-slow/dsh-clear-mind
+category: memory
+description:
+  en: 'Model-autonomous context compaction for DeepSeek Harness: a mind_map tool surveys the agent context surface (stable seq ids, roles, token weights, clear-boundary markers, the clear-mind playbook), a clear_mind tool replaces a chosen conversation-history span with a model-written checkpoint through the native compaction transaction, call and result pairs self-collapse into one-line tombstones, and a proactive reminder nudges the model when the context grows long or a turn runs too many steps.'
+  zh: '让模型自主压缩自身上下文的 dsh 插件：mind_map 工具俯瞰模型自己的上下文表面（稳定 seq、角色、token 重量、清理边界标记，返回内附清理手册），clear_mind 工具把选定的对话历史区间替换成模型自写的检查点（走平台原生 compaction 事务，GUI 渲染可展开的压缩行），调用对自动折叠成单行墓碑，上下文过长或单轮步数过多时主动提醒模型清理；人类侧会话记录保持原样、可审计可回退。'

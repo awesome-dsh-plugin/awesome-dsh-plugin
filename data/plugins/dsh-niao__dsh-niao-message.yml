@@ -1,0 +1,6 @@
+url: https://github.com/dsh-niao/dsh-niao-message
+name: dsh-niao/dsh-niao-message
+category: notify
+description:
+  en: 'macOS system notifications for DeepSeek Harness: aborted, max-tokens, blocked, interrupted and error events, pending questions and approvals, and completion or subagent-end via terminal-notifier; clicking a banner opens a configured app and returning to the page auto-dismisses them.'
+  zh: 'DeepSeek Harness 的 macOS 系统通知插件：任务中止、超限、阻塞、中断、出错、等待提问或批准、完成或子代理结束等事件通过 terminal-notifier 弹系统横幅；点击横幅打开指定应用，回到页面自动清空。'

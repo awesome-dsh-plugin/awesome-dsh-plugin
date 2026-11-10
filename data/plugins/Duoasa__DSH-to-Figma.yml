@@ -1,0 +1,7 @@
+url: https://github.com/Duoasa/DSH-to-Figma
+name: Duoasa/DSH-to-Figma
+category: tools
+description:
+  en: 'Use natural language in DeepSeek Harness to read, create and edit Figma designs, with components and variables, native motion, screenshots and asset exports, capability checks, document reconnection and built-in guides. Local mode does not consume the official Figma MCP call quota. Needs Figma Desktop with the generated companion plugin imported.'
+  zh: '让 DeepSeek Harness 用自然语言读取、创建和编辑 Figma 设计，支持组件与变量、原生动效、截图与素材导出，并提供能力检测、文件重连和内置指南。本地模式不消耗官方 Figma MCP 调用额度。需 Figma 桌面版并导入配套插件。'
+tarball: https://github.com/Duoasa/DSH-to-Figma/releases/download/v0.3.5/dsh-to-figma-0.3.5.tgz

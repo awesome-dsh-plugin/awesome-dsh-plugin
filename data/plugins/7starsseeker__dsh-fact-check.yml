@@ -1,0 +1,6 @@
+url: https://github.com/7starsseeker/dsh-fact-check
+name: 7starsseeker/dsh-fact-check
+category: skill
+description:
+  en: 'Skill that fact-checks a claim against the open web rather than model memory: it splits the claim into independently checkable fact points, routes each point to the primary-source ladder for its domain (policy, academic, medical, financial, disaster and accidents, food safety, science, education, sports, entertainment, judicial, and more), searches domestic and international ecosystems in parallel, fetches primary pages, grades sources by type, re-searches with debunking keywords, and reports conclusion-first with a full URL and citation position behind every statement, keeping unverified and undecidable points separate from confirmed ones. Three factual judgements can be routed to a TypeSafe Jev (System One) decision model when a key is configured, falling back to the skill''s deterministic rules when it is not; a model verdict can only lower a confidence tier.'
+  zh: '事实核查技能：不依赖模型记忆，去公开互联网核实——把论断拆成可独立验证的事实点，先按事实范畴（政策、学术、医疗、金融、灾害事故、食品安全、科学常识、教育考试、体育、娱乐名人、司法案件等）选定该范畴的一手来源阶梯，国内外信息生态并行搜索，抓取一手页面并按来源类型分级，再用质疑关键词反查一轮，最后结论先行地输出报告，每条论断都带完整 URL 与引用位置，「未证实」「无法裁定」与「已证实」分档呈现。三类事实判断在配置了密钥时可交给 TypeSafe Jev（System One）决策模型，未配置则回退到内置的确定性规则；模型的判断只能降档、不能升档。'

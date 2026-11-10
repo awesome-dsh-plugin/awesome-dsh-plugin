@@ -1,0 +1,6 @@
+url: https://github.com/yangyongzhen/dsh-notify
+name: yangyongzhen/dsh-notify
+category: notify
+description:
+  en: Task-completion notifications via ServerChan / DingTalk / Feishu / generic webhooks.
+  zh: 任务完成通知：ServerChan / 钉钉 / 飞书 / 通用 Webhook。

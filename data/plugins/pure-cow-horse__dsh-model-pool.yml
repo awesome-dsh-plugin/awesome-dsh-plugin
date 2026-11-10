@@ -1,0 +1,7 @@
+url: https://github.com/pure-cow-horse/dsh-model-pool
+name: pure-cow-horse/dsh-model-pool
+category: model
+tarball: https://github.com/pure-cow-horse/dsh-model-pool/releases/latest/download/dsh-model-pool.tgz
+description:
+  en: "Merges your configured, runtime-registered and locally cached models into one panel, probes and minimal-request tests them, pulls each channel's upstream /v1/models catalog, and chains the keepers into named schemes. A virtual ModelPool provider fails over at request time with per-model cooldowns, exponential backoff, image-request avoidance for text-only models, and a 10-minute memory for rejected reasoning levels. Adds a token ledger by day and model with CSV export, and 21 regression probes. Not a fork of dsh-llm-fallbacks."
+  zh: "把已配置、运行时注册、本地缓存的模型合并进一个面板，做探测与最小请求测试，一键拉每家渠道的上游 /v1/models 目录，再把要留的模型串成命名方案。虚拟 provider ModelPool 在请求发起时顺延，带按模型冷却、指数退避、图片请求避开纯文本模型、被拒思考档位记忆 10 分钟。另有按天与模型的 token 台账（可导 CSV）和 21 个回归探针。不是 dsh-llm-fallbacks 的 fork。"

@@ -1,0 +1,6 @@
+url: https://github.com/XenoPhonLau/dsh-activity-bar
+name: XenoPhonLau/dsh-activity-bar
+category: ui
+description:
+  en: 'VS Code style 44px icon rails for the side panels DSH collapses: the left rail keeps the sidebar navigation and the bottom action rows, the right rail lists the sidebarRightTabs ledger so third-party tabs appear on their own, and the right panel is drag-resizable between 300px and 60% of the window. Two switches under Settings → Activity Bar, saved in this browser.'
+  zh: '把 DeepSeek Harness 收起后的两侧栏变成 VS Code 那样的 44px 图标条：左条接管侧边栏导航与底部动作行，右条按 sidebarRightTabs 清单自动列出第三方面板，右侧面板可拖动改宽（300px 至窗口 60%）。设置里的「活动栏」两个开关，按浏览器保存。'

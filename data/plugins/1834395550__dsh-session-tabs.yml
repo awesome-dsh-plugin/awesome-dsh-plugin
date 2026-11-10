@@ -1,0 +1,7 @@
+url: https://github.com/1834395550/dsh-session-tabs
+name: 1834395550/dsh-session-tabs
+category: ui
+description:
+  en: Browser-style Session tab bar for the DSH Web GUI - one tab per Session in a full-width strip at the top of the window, Sessions grouped per Workspace in collapsible boxes, tabs created only for the Sessions you actually open.
+  zh: 给 DSH Web GUI 的浏览器式顶部会话标签栏：窗口顶部一条整宽标签，一个标签对应一个会话，会话按工作区收在可折叠的方框里，只有真正打开过的会话才会成为标签。
+tarball: https://github.com/1834395550/dsh-session-tabs/releases/latest/download/dsh-session-tabs.tgz

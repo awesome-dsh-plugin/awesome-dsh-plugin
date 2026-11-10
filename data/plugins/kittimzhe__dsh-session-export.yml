@@ -1,0 +1,6 @@
+url: https://github.com/kittimzhe/dsh-session-export
+name: kittimzhe/dsh-session-export
+category: session
+description:
+  en: 'Evidence-grade reports beyond a plain export: /transcript writes styled HTML/Markdown/JSON with Mermaid lineage, editor diffs and a turn timeline; /stats prints a cost-aware card; /archive packs the raw JSONL with a metadata manifest, while /transcript --manifest and /bundle add the SHA-256 evidence manifest — full history, any backend.'
+  zh: '不止导出，而是证据级报告：/transcript 生成带 Mermaid 血统图、编辑器 diff、回合时间线的 HTML/Markdown/JSON；/stats 输出成本感知统计卡；/archive 打包原始 JSONL 并附元数据清单，SHA-256 证据清单由 /transcript --manifest 与 /bundle 提供——全历史、任意后端。'

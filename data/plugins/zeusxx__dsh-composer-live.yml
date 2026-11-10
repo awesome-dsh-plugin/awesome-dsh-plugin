@@ -1,0 +1,7 @@
+url: https://github.com/zeusxx/dsh-composer-live
+name: zeusxx/dsh-composer-live
+category: ui
+description:
+  en: 'Type Markdown, see it rendered live — Open-WebUI-style composer for the DeepSeek Harness (DSH) web, with syntax-highlighted code blocks, task lists, format toolbars and smart paste.'
+  zh: '打 Markdown，边打边渲染——给 DeepSeek Harness（DSH）Web 输入框带来 Open WebUI 风格的实时编辑体验，代码块语法高亮、任务列表、格式工具栏、智能粘贴。'
+icon: https://raw.githubusercontent.com/zeusxx/dsh-composer-live/main/assets/icon-180.png

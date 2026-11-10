@@ -1,0 +1,6 @@
+url: https://github.com/HuiHuitie-zhu/dsh-incognito
+name: HuiHuitie-zhu/dsh-incognito
+category: session
+description:
+  en: 'Incognito sessions: a standalone ephemeral sub-agent with its own preset (no parent context) and full toolset, draggable floating window, burned to zero traces on close.'
+  zh: 无痕会话：独立临时子 Agent（独立 preset 不继承父会话、全量工具集），浮窗可拖动，关闭即焚毁、磁盘零痕迹。

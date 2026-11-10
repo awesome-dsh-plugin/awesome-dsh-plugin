@@ -1,0 +1,6 @@
+url: https://github.com/PocketSWPU/dsh-serendipity
+name: PocketSWPU/dsh-serendipity
+category: fun
+description:
+  en: 'Turns the user into an RPG protagonist: after each finished user turn a random "adventure" may trigger, drawn from 700+ events across 7 themed pools (sci-fi, fantasy, ancient, anime, novels, wuxia, urban), growing six persistent attributes (strength, intelligence, agility, charisma, luck, vitality) with XP, levels and attribute-weighted story branches, configured via a settings-page UI.'
+  zh: 把用户本人当作 RPG 主角：每轮对话结束后有几率触发随机「奇遇」，事件库 700+，覆盖科幻/玄幻/远古/动漫/小说/武侠/都市七大主题，增减力量/智力/敏捷/魅力/幸运/体魄六维属性，积累经验升级并随等级解锁更宏大的事件，含属性加权分支与设置页可视化配置。

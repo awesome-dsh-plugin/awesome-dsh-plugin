@@ -1,0 +1,6 @@
+url: https://github.com/qinyre/dsh-plugin-install
+name: qinyre/dsh-plugin-install
+category: market
+description:
+  en: 'Install tab in Settings → Plugins: install, update and remove any plugin by npm spec, `github:user/repo` or local path through the same `dsh plugin add` CLI path; update checks against npm latest or GitHub HEAD with a downgrade guard and resolved-version verification, a pnpm 11 release-cooldown bypass on every add/remove, and service restart via the DSH Desktop shell or a relay process under standalone `dsh web`.'
+  zh: 设置 → 插件里的「安装」标签页：按 npm spec、`github:user/repo` 或本地路径安装、更新、卸载任意插件，走的都是 `dsh plugin add` 这条 CLI 路径；更新检查对照 npm latest 或 GitHub HEAD，带降级保护与装后版本核对，每次 add/remove 均附带 pnpm 11 发布冷静期豁免；服务重启在 DSH Desktop 由壳层执行，独立 `dsh web` 下由中转进程接力并交接回原终端。

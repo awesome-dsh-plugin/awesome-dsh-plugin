@@ -1,0 +1,6 @@
+url: https://github.com/dafantong01/dsh-memory-palace
+name: dafantong01/dsh-memory-palace
+category: memory
+description:
+  en: 'Local long-term memory for DSH sessions: archives older turns under context pressure, with four tiered hot-memory boards, project documents with optional owner-controlled family sharing, project hot memory, memory families with editable names and root transfer, root-abdication recovery, orphan-family takeover, summary keyword locator with segment-level candidates and paging, manual injection, 20K segmented reads, and tag-related retrieval. Includes staged recall cues, automatic compatibility with older memory layouts, and post-install version verification. All data stays in the workspace.'
+  zh: 'DSH 会话的本地长期记忆：上下文压力升高时归档较早轮次，提供四板块分级热记忆、项目档案与项目热记忆、可由拥有者控制的档案家族共用、记忆家族与根转移（家族名可独立修改，转移保留项目热记忆）、让位恢复与空根接管、摘要关键词定位与段级候选翻页、手动注入、20K 分段读取和 tag 关联检索；包含分级回忆 cue、旧版记忆布局自动兼容与安装后版本校验。数据都保存在工作区。'

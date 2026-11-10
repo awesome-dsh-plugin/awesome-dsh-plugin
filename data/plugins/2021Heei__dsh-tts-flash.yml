@@ -1,0 +1,7 @@
+url: https://github.com/2021Heei/dsh-tts-flash
+name: 2021Heei/dsh-tts-flash
+category: voice
+description:
+  en: 'Reads AI replies aloud as they stream, with voiced waiting phrases while the model thinks. Edge TTS built in, any OpenAI-compatible cloud engine supported.'
+  zh: 'AI 回复流式 TTS 朗读插件，思考等待期有文字与语音同步的趣味短语反馈。内置 Edge TTS，支持任意 OpenAI 兼容云端引擎。'
+tarball: https://github.com/2021Heei/dsh-tts-flash/releases/download/v0.1.0/dsh-tts-flash-0.1.0.tgz

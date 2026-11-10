@@ -1,0 +1,6 @@
+url: https://github.com/nyantused-cpun/folio/tree/main/plugins/folio-tools
+name: nyantused-cpun/folio#plugins/folio-tools
+category: workflow
+description:
+  en: 'Folio (兰亭) @nyantused/folio-dsh-tools: 15 schema-validated tools (memory + quality gates) plus an L0 guard of the consulting document-generation engine; pair with @nyantused/folio-dsh-events for the full session protocol.'
+  zh: Folio（兰亭）@nyantused/folio-dsh-tools：咨询/汇报材料生成引擎的 15 个 DSH 原生工具（记忆面 + 质量门禁）+ L0 守卫；与 @nyantused/folio-dsh-events 配套使用。

@@ -1,0 +1,7 @@
+url: https://github.com/vv5v5/dsh-memory-archive
+name: vv5v5/dsh-memory-archive
+category: memory
+tarball: https://github.com/vv5v5/dsh-memory-archive/releases/latest/download/dsh-memory-archive.tgz
+description:
+  zh: '基于 pmp tavern 的 RP 记忆库：利用原版压缩机制管理 RP 历史总结，并隔离一般工具会话。完整召回功能需配合下游 anima 插件。需要启用插件注入的角色扮演预设。'
+  en: 'RP memory built on pmp tavern: RP history summaries ride the native compaction pipeline, with plain tool sessions kept out of the way. Full recall requires the downstream anima plugin. Requires the plugin-provided roleplay preset to be enabled.'

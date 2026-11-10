@@ -1,0 +1,6 @@
+url: https://github.com/HaoyueQin/dsh-git-review
+name: HaoyueQin/dsh-git-review
+category: git
+description:
+  en: 'Review tab for DeepSeek Harness sessions: workspace changes versus HEAD or any two refs as a filterable file tree with side-by-side diffs, a lane commit graph with blame and file history, three-scope search, line comments back to the composer, and guarded stage/commit/branch/tag/stash/conflict operations.'
+  zh: 'DeepSeek Harness 会话审查标签页：工作区相对 HEAD 或任意两 ref 的变更，以可过滤文件树加双列差异呈现；泳道提交图带逐行追溯与单文件历史；三范围搜索；行内评论回写对话输入框；暂存、提交、分支、标签、贮藏与冲突操作全部设防。'

@@ -1,0 +1,6 @@
+url: https://github.com/LeslieWylie/dsh-task-relay
+name: LeslieWylie/dsh-task-relay
+category: session
+description:
+  en: 'Cross-session task queue with handoff notes: sessions and subagents push, claim, complete and cancel tasks on a shared file-backed queue, and leave a handoff summary for whoever picks up next.'
+  zh: 跨会话任务队列与交接摘要：会话与子 agent 在共享的文件队列上投递、认领、完成、取消任务，并留下交接摘要供后续会话查看。

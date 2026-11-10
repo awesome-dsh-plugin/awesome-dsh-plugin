@@ -1,0 +1,6 @@
+url: https://github.com/pg527322814/dsh-bayes-predict
+name: pg527322814/dsh-bayes-predict
+category: tools
+description:
+  en: Bayesian stock prediction plugin that fuses MACD, RSI, moving-average, volume and other technical signals into an up-move posterior probability with multi-horizon comparison, trend-state classification and position risk metrics for A-share and US stocks.
+  zh: 贝叶斯个股预测插件：多指标信号融合的上涨概率估计、趋势状态识别与持仓风险度量（A 股 + 美股）。

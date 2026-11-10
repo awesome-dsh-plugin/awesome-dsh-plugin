@@ -1,0 +1,6 @@
+url: https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-mcp-client-v2
+name: DamonKoy/dsh-plugins#dsh-mcp-client-v2
+category: tools
+description:
+  en: 'Enhanced MCP client: paginated tool discovery, non-blocking startup, mcp_tool_search, hand-rolled stdio/streamable-http transports.'
+  zh: MCP 客户端增强：分页工具发现、非阻塞启动、mcp_tool_search 搜索，自研 stdio/streamable-http 传输。

@@ -1,0 +1,6 @@
+url: https://github.com/PensiveFei/dsh-voice-scribe
+name: PensiveFei/dsh-voice-scribe
+category: voice
+description:
+  en: 'Voice input for the DSH web UI: tap or hold Alt to dictate into the composer. Local SenseVoice ASR by default — offline, zero config, zero key; auto-fallback to browser Web Speech, optional OpenAI-compatible ASR chain, polish through DSH-configured models, settings UI.'
+  zh: '面向 DSH Web UI 的语音输入插件：点按或按住 Alt 听写，结果落进输入框草稿。默认本地离线 SenseVoice（离线、零配置、零 key），自动回退浏览器 Web Speech，可选 OpenAI 兼容云端 ASR 服务链，可经 DSH 已配置模型润色，带设置页。'

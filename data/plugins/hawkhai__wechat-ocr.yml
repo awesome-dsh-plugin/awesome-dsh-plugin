@@ -1,0 +1,6 @@
+url: https://github.com/hawkhai/wechat-ocr
+name: hawkhai/wechat-ocr
+category: vision
+description:
+  en: 'Local WeChat OCR tool for DSH: `wechat_ocr_recognize` returns recognized text and the engine structured result for a local image path.'
+  zh: 'DSH 的本地微信 OCR 工具：`wechat_ocr_recognize` 针对本地图片路径返回识别文本和引擎的结构化结果。'

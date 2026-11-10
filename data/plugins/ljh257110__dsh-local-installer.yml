@@ -1,0 +1,6 @@
+url: https://github.com/ljh257110/dsh-local-installer
+name: ljh257110/dsh-local-installer
+category: market
+description:
+  en: 'Local plugin installer in the DSH web Settings: a file picker for .tgz plugin packages (multi-select) or a full machine path, installing them into the auto-detected profile via the official `dsh plugin add` with live CLI output — no terminal needed.'
+  zh: 本地插件安装器：DSH 网页设置页里的本地插件安装入口——文件选择器多选 .tgz 或输入本机完整路径，自动检测所在 profile 并执行官方 `dsh plugin add`，实时回显安装日志，无需终端。

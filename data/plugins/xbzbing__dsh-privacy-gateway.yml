@@ -1,0 +1,6 @@
+url: https://github.com/xbzbing/dsh-privacy-gateway
+name: xbzbing/dsh-privacy-gateway
+category: security
+description:
+  en: 'Redacts secrets, cookies and personal data in every model request at the host process undici dispatcher and restores the placeholders in the reply, so one interception covers every provider, adapters that plugins add included; per-kind actions mask / warn / block, an optional same-shape fake key, records written to disk by the day and a statistics card.'
+  zh: '在宿主进程的 undici dispatcher 上拦截所有发往模型的请求：密钥、Cookie 与个人信息换成占位符，回复里再还原，一处拦截覆盖所有 provider（含插件自带的 adapter）；按 kind 可选 mask / warn / block、可换成同形的假 key，记录按天落盘并带统计卡。'

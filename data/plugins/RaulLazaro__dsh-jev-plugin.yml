@@ -1,0 +1,6 @@
+url: https://github.com/RaulLazaro/dsh-jev-plugin
+name: RaulLazaro/dsh-jev-plugin
+category: tools
+description:
+  en: "A `jev` tool that asks Jev (TypeSafe System One) typed yes/no, choice and score questions about one block of text and returns probabilities and confidence, with the provider and API key configured per user in Settings, a judgment ledger with its spend, and daily call and token caps."
+  zh: "为 DSH 增加 `jev` 工具：就同一段文本向 Jev（TypeSafe System One）提出是/否、选择和评分问题，返回概率与置信度；provider 与 API key 在设置中按用户配置，并带判定账本、花费统计以及每日调用与 token 上限。"

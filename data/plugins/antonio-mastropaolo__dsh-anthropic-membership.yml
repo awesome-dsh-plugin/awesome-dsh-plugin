@@ -1,0 +1,6 @@
+url: https://github.com/antonio-mastropaolo/dsh-anthropic-membership
+name: antonio-mastropaolo/dsh-anthropic-membership
+category: model
+description:
+  en: Sign in to DeepSeek Harness with a Claude Pro/Max membership (no API key), downscale Anthropic request images to a 2000px long edge, slim /compact summarizer payloads, and show 5-hour/weekly plan usage plus DSH message counts.
+  zh: 用 Claude Pro/Max 会员登录 DeepSeek Harness（无需 API key），将 Anthropic 请求图片长边压到 2000px，精简 /compact 摘要请求，并显示 5 小时/每周套餐用量百分比与 DSH 消息数。

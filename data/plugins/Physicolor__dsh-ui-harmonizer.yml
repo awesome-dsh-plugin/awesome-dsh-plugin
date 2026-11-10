@@ -1,0 +1,6 @@
+url: https://github.com/Physicolor/dsh-ui-harmonizer
+name: Physicolor/dsh-ui-harmonizer
+category: ui
+description:
+  en: 'UI harmonizer for DeepSeek Harness: normalizes unfinished or self-contradictory official UI, reconciles style conflicts between installed plugins, and unifies the visual language via official design tokens — with live-customizable chat width, markdown font size, workspace scale, UI font stack and a rounded center-column card from Settings → General; client-only dsh bundle, zero model cost, no host side, removable without residue.'
+  zh: 'DeepSeek Harness UI 协调器：规范化官方未完善、自相矛盾的界面，协调已装插件间的样式冲突并统一视觉语言（全部遵循官方设计令牌）——支持实时自定义对话宽度、markdown 字号、工作区缩放、UI 字体栈，并在设置页提供圆角中栏卡片；纯客户端 dsh bundle，零模型开销，无 host 端，可无残留移除。'

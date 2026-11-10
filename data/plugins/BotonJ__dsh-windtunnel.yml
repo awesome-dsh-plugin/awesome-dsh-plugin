@@ -1,0 +1,6 @@
+url: https://github.com/BotonJ/dsh-windtunnel
+name: BotonJ/dsh-windtunnel
+category: dev
+description:
+  en: 'Contract regression harness for plugin authors: a scripted LLM adapter drives the real pipeline in isolated child processes with session-event assertions (load/contract/behavior/fault layers); zero API key, CI-ready.'
+  zh: 插件作者的契约回归风洞：剧本适配器在隔离子进程中驱动真实管线，会话事件断言覆盖加载/契约/行为/故障四层；零 API key，可进 CI。

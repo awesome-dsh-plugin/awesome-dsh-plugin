@@ -1,0 +1,7 @@
+url: https://github.com/Zylog82568/dsh-persona-slot
+name: Zylog82568/dsh-persona-slot
+category: identity
+description:
+  en: 'Persona slot for DeepSeek Harness: each session holds exactly one persona that a later write replaces, a global persona covers every session without its own, a /persona command edits both in conversation, and the Installed page exposes a multi-line panel for the global persona. Persona length is unbounded. Supports DSH 0.2.1-rc.2 through rc.5.'
+  zh: 'DeepSeek Harness 的人设插槽（支持 0.2.1-rc.2 到 rc.5）：每个会话只保留一份人设，再次设置是覆盖而非叠加；一条全局总人设覆盖所有没有独立人设的会话；`/persona` 命令在对话里改，已安装页提供多行编辑器改总人设。人设字数不限。'
+icon: https://raw.githubusercontent.com/Zylog82568/dsh-persona-slot/main/icon.png

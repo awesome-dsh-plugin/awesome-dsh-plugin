@@ -1,0 +1,6 @@
+url: https://github.com/MoonlitDropOfBlood/dsh-model-prompt-injector
+name: MoonlitDropOfBlood/dsh-model-prompt-injector
+category: model
+description:
+  en: 'Per-model system prompt injector for DeepSeek Harness: append custom prompt text to the END of the system prompt for locally configured models, matched by exact provider/model route or a provider-wide provider/* rule (both stack in order). A Settings page lists every configured provider and its models for per-route editing with instant effect, and rules persist to DSH_HOME so they survive restarts. Applies to main sessions, subagents, and workflow children alike.'
+  zh: 'DSH 按模型注入系统提示词：为本地已配置的模型把自定义提示词追加到系统提示词末尾，支持 provider/model 精确匹配与 provider/* 服务商级通配（两者按序叠加）。设置页自动列出每个已配置服务商及其模型，逐行编辑、即时生效；规则持久化保存、重启不丢；对主会话、subagent 与 workflow 子代理同样生效。'

@@ -1,0 +1,6 @@
+url: https://github.com/duhu2000/dsh-mcp-connector
+name: duhu2000/dsh-mcp-connector
+category: tools
+description:
+  en: 'MCP Connector for DeepSeek Harness: a specialist MCP marketplace and manager panel for Model Context Protocol data sources. Connect enterprise, financial, legal, patent, research and geospatial data; manage authorization, search tools and troubleshoot connections. Supports OAuth, API keys and HTTP/stdio. Provider permissions and fees apply.'
+  zh: 'MCP连接器：DeepSeek Harness 的专业 MCP 市场、数据市场与 MCP 管理面板，汇聚企业、金融、法律、专利、科研和地理等 Model Context Protocol（MCP）数据源。通过超百个 MCP连接器接入 MCP Server，支持连接管理、授权配置、跨连接搜索工具与排障；支持 OAuth、API Key、HTTP/stdio。由企查查/QCC团队维护；数据权限与费用以各服务商为准。'

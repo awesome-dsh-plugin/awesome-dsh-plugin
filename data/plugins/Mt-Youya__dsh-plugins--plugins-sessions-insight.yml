@@ -1,0 +1,6 @@
+url: https://github.com/Mt-Youya/dsh-plugins/tree/main/plugins/sessions-insight
+name: Mt-Youya/dsh-plugins#sessions-insight
+category: usage
+description:
+  en: Browse Claude Code, DSH and Codex session logs by working directory, with per-turn context composition, token usage, compaction markers and cost estimates.
+  zh: 按工作目录浏览 Claude Code、DSH 和 Codex 会话日志，查看每轮上下文构成、token 用量、压缩点和费用估算。

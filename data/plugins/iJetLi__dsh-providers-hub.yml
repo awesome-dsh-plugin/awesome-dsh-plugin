@@ -1,0 +1,6 @@
+url: https://github.com/iJetLi/dsh-providers-hub
+name: iJetLi/dsh-providers-hub
+category: model
+description:
+  en: 'Signs in and manages accounts for 16 AI coding providers, plus a cross-provider rotation channel: multi-account pools, automatic credential refresh, credit claiming where the provider offers it, and a local OpenAI-compatible gateway.'
+  zh: '登录并管理 16 个 AI 编程服务商的账号，另含一个跨渠道轮换渠道：多账号池、凭据自动续期、服务商支持时的积分领取，以及本地 OpenAI 兼容网关。'

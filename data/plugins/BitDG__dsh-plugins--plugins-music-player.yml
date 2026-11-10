@@ -1,0 +1,7 @@
+url: https://github.com/BitDG/dsh-plugins/tree/main/plugins/music-player
+name: BitDG/dsh-plugins#music-player
+category: fun
+tarball: https://github.com/BitDG/dsh-plugins/releases/download/music-player-v0.4.2/dship-music-player-0.4.2.tgz
+description:
+  en: 'Adds a sidebar music browser with multiple public sources, persistent background playback, queue advancement, and reviewed MusicFree-compatible source extensions.'
+  zh: '提供多公共音源的侧栏音乐浏览、持续后台播放、队列续播，以及经审核安装的 MusicFree 兼容音源扩展。'

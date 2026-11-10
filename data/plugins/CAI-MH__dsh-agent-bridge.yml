@@ -1,0 +1,6 @@
+url: https://github.com/CAI-MH/dsh-agent-bridge
+name: CAI-MH/dsh-agent-bridge
+category: notify
+description:
+  en: 'Bridge a Feishu bot to a DSH session: open a real session in a workspace, run tasks with the existing model and plugins, and report results back.'
+  zh: '飞书机器人 → DSH 会话桥：在指定工作区开真会话，用 DSH 现有模型+插件执行任务并回传结论。'

@@ -1,0 +1,6 @@
+url: https://github.com/kp-z/dsh-dev-git-graph/tree/main/packages/dsh-dev-git-graph
+name: kp-z/dsh-dev-git-graph#dsh-dev-git-graph
+category: git
+description:
+  en: "A Git Graph tab for DSH Web: a faithful port of vscode-git-graph 1.30.0 that registers a native tab in the dsh-better-sidebar right rail (prerequisite), auto-binds to the session workspace, runs the full git operations (checkout/merge/rebase/push/tag/stash) directly on the host, and opens file diffs in the built-in DiffTab."
+  zh: DSH Web 的 vscode-git-graph 1.30.0 忠实移植：入驻 dsh-better-sidebar 右侧栏的原生 Git Graph 提交图 tab（前置依赖），自动绑定会话工作区，host 直跑全套 git 操作（checkout/merge/rebase/push/tag/stash），文件 diff 复用内置 DiffTab 打开。

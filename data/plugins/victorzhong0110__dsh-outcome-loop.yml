@@ -1,0 +1,7 @@
+url: https://github.com/victorzhong0110/dsh-outcome-loop
+name: victorzhong0110/dsh-outcome-loop
+category: workflow
+tarball: https://github.com/victorzhong0110/dsh-outcome-loop/releases/download/v0.1.0-beta.8/dsh-outcome-loop-0.1.0-beta.8.tgz
+description:
+  en: Keeps a local task-outcome ledger for DSH, verifies acceptance criteria from deterministic evidence, records user disposition and token usage, and supports digest-bound export.
+  zh: 为 DSH 保存本地任务结果账本，依据确定性证据验证验收标准，记录用户处置与 token 用量，并支持摘要绑定导出。

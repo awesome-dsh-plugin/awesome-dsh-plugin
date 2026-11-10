@@ -1,0 +1,6 @@
+url: https://github.com/0x7A7A6572/dsh-forge-studio/tree/main/packages/plugin-daily-log
+name: 0x7A7A6572/dsh-forge-studio#plugin-daily-log
+category: workflow
+description:
+  en: 'Work reports for DeepSeek Harness: gathers Git commits and local agent conversations (DeepSeek/Claude/Codex) and renders daily, weekly or monthly reports from your own templates; the agent tool is injected on demand.'
+  zh: 'dsh 工作报告：汇总 Git 提交与本地 agent 对话（DeepSeek/Claude/Codex），按自定义模板生成日报/周报/月报，agent 工具按需注入。'

@@ -1,0 +1,6 @@
+url: https://github.com/dsboylw/LazyNoobsCockloft/tree/main/dsh-session-notes
+name: dsboylw/LazyNoobsCockloft#dsh-session-notes
+category: session
+description:
+  en: 'Session notes 0.3.1: multiple numbered notes per session (1 2 3… by creation order), session-level color and pin (one click in the popover title row), a copy picker (click any note to copy), per-session delete-all, compatible with DSH Desktop 0.8.2.'
+  zh: '会话备注 0.3.1：一个会话挂多条备注（1 2 3 按创建顺序编号），会话级颜色+置顶（弹窗标题行一键操作），复制挑选器（多条备注点哪条复制哪条），🗑 会话备注批量清理，兼容 DSH Desktop 0.8.2。'

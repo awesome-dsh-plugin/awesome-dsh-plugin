@@ -1,0 +1,6 @@
+url: https://github.com/Meteor-system/mattpocock-skills-for-dsh
+name: Meteor-system/mattpocock-skills-for-dsh
+category: skill
+description:
+  en: 'A DeepSeek Harness bundle of the 25 promoted mattpocock/skills with a native agent preset, an invocation-aware skill provider, and a light grilling-to-implement bootstrap.'
+  zh: '将 mattpocock/skills 的 25 个正式技能打包为 DeepSeek Harness bundle，附原生 Agent 预设、区分人触发与模型调用的技能 provider，以及轻量 grilling 到 implement 引导。'

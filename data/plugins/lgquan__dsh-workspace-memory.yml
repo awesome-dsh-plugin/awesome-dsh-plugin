@@ -1,0 +1,7 @@
+url: https://github.com/lgquan/dsh-workspace-memory
+name: lgquan/dsh-workspace-memory
+category: memory
+description:
+  en: Workspace-isolated durable memory for DSH, with searchable, auditable, correctable, and removable workspace memories plus controlled global memory.
+  zh: 为 DSH 提供工作区隔离的持久化记忆，让每个工作区拥有可检索、可审计、可纠错和可删除的独立记忆，并支持受控的全局记忆。
+tarball: https://github.com/lgquan/dsh-workspace-memory/releases/download/v0.2.14/flowingspring-dsh-workspace-memory-0.2.14.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/Missher12/dsh-missher-brain
+name: Missher12/dsh-missher-brain
+category: memory
+description:
+  en: Coordinates bounded project recall from compatible memory and learning providers, with shared settings and provider lifecycle management.
+  zh: 协调兼容的记忆与学习提供方进行有界项目召回，提供共享设置和提供方生命周期管理。
+tarball: https://github.com/Missher12/dsh-missher-brain/releases/download/v0.1.2/dsh-missher-brain-0.1.2.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/worksAssistant/dsh-quickref
+name: worksAssistant/dsh-quickref
+category: dev
+description:
+  en: 'Developer quick-reference toolbox for DSH: 12 themed categories (195 entries) plus zero-dependency tools — regex tester, JSON formatter, timestamp converter, Base64/URL codec, cron generator and line diff, in a searchable settings panel.'
+  zh: '开发者速查工具箱：12 个主题 195 条速查 + 6 个零依赖工具（正则实时测试、JSON 格式化、时间戳转换、Base64/URL 编解码、Cron 生成、行 diff），设置页可搜索查阅。'

@@ -1,0 +1,6 @@
+url: https://github.com/OliYogSothoth/dsh-plugin-session-purge
+name: OliYogSothoth/dsh-plugin-session-purge
+category: session
+description:
+  en: 'Two-step session deletion: the session menu moves a chat into a recycle bin without deleting anything, the bin panel restores an entry, deletes one for good right away, or empties the whole bin, and the next start wipes its log, projection cache, spill files and workspace membership.'
+  zh: '两步删除会话：会话菜单先把会话移入回收站（不删任何内容、可随时恢复），面板可恢复、可逐条立刻删除、也可整体清空，下次启动 DSH 时才真正清掉日志、投影缓存、spill 文件与工作区登记。'

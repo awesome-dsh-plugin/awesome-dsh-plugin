@@ -1,0 +1,6 @@
+url: https://github.com/Harvey-Will/dsh-vision-analysis
+name: Harvey-Will/dsh-vision-analysis
+category: vision
+description:
+  en: 'DeepSeek Harness vision plugin: 8 analysis modes (describe, OCR, chart data, UI review, object detection, compare, code-gen, debug), any OpenAI- or Anthropic-compatible vision API, with a built-in free vision model and automatic rate-limit failover.'
+  zh: 'DeepSeek Harness 图像理解插件：8 种分析模式（描述、OCR、图表取数、UI 评审、目标检测、对比、代码生成、诊断），支持任意 OpenAI/Anthropic 兼容视觉 API，内置免费视觉模型与限流自动切换。'

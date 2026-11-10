@@ -1,0 +1,6 @@
+url: https://github.com/nilesh32236/dsh-squad
+name: nilesh32236/dsh-squad
+category: workflow
+description:
+  en: "Cross-workspace worker fleets: one orchestrating session spawns named worker sessions in other project workspaces, queues or steers tasks into them, watches them in the background via a real host job, and collects their reports. Worker completions deliver themselves to the orchestrator's session rather than needing to be polled, so an idle orchestrator still reacts. Escalations and failed workers deliver by steer when the orchestrator is mid-turn and by queue when it is idle; a turn that ends without a report counts as a failure and the worker is replaced after a configurable limit. The roster persists to disk and each worker session carries a durable title, so a restart neither loses the fleet nor spawns duplicate sessions. Ships five agent presets at full plugin parity with the standard preset."
+  zh: "跨工作区的多智能体工舰队：一个编排会话在其他项目工作区中创建具名的 worker 会话，向其排队或插队下发任务，以后台任务的方式监视其进度，并收集其报告。worker 完成后主动把消息投递到编排会话，无需轮询，空闲的编排器同样能及时反应。当编排器正在执行任务时，升级提问与失败通知以 steer 方式送达，空闲时以 queue 方式送达；一个回合结束时若未提交报告即判定为失败，达到阈值后自动替换该 worker。名册持久化到磁盘，且每个 worker 会话带有持久标题，重启既不会丢失工舰队，也不会产生重复会话。附带五个智能体预设，插件清单与 standard 预设完全一致。"

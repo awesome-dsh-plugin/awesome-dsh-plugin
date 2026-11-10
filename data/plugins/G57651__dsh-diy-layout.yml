@@ -1,0 +1,7 @@
+url: https://github.com/G57651/dsh-diy-layout
+name: G57651/dsh-diy-layout
+category: ui
+tarball: https://github.com/G57651/dsh-diy-layout/releases/download/v0.2.0/dsh-diy-layout-0.2.0.tgz
+description:
+  en: 'Customizes the DSH home sidebar plugin entries without harness source changes: one- or two-column panel list, icon-only mode with 500ms hover tooltips, and per-entry ordering, hiding, and a settings page for the upper panel area and the footer plugin row.'
+  zh: '无需改动 Harness 源码即可自定义主页侧边栏的插件入口：上方面板列表支持单栏/双栏与仅图标（悬浮 500ms 显示名称），底部插件行支持默认横向/单列/双列，两个区域均可逐条目排序、显示或隐藏，并提供设置页。'

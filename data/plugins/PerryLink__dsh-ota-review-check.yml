@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-ota-review-check
+name: PerryLink/dsh-ota-review-check
+category: workflow
+description:
+  en: 'OTA guest-review reply ledger check: content and score, reply deadlines, responder, issue category and duplicate review ids.'
+  zh: 'OTA 点评回复台账核对：点评内容与评分、回复时限、回复人、问题分类与编号重复。'

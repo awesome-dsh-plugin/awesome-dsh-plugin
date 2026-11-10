@@ -1,0 +1,11 @@
+# Submission entry for https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+# Copy this file to data/plugins/wyouwd1__dsh-opencode-models.yml there,
+# regenerate the READMEs (npm ci && node scripts/generate-readme.mjs), commit
+# both, and open the PR. Keep this copy in sync when updating the entry.
+url: https://github.com/wyouwd1/dsh-opencode-models
+name: wyouwd1/dsh-opencode-models
+category: model
+tarball: https://github.com/wyouwd1/dsh-opencode-models/releases/latest/download/dsh-opencode-models.tgz
+description:
+  en: "Manages OpenCode Zen free-tier and Go-tier models in settings.yaml — fetches the live model listings from opencode.ai, reports configured-versus-live drift per route, and adds or removes entries through four agent tools and an OpenCode Models settings section."
+  zh: "在 settings.yaml 中管理 OpenCode Zen 免费档与 Go 档模型——实时拉取 opencode.ai 的最新模型列表，按路由对比已配置与线上差异，通过四个 agent 工具和设置页分区增删模型条目。"

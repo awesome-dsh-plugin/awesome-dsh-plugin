@@ -1,0 +1,6 @@
+url: https://github.com/Zhucy123/dsh-update
+name: Zhucy123/dsh-update
+category: git
+description:
+  en: One-click update for the local DeepSeek Harness checkout — compare versions, pull and rebuild, then restart, and roll back to any past release, all from a sidebar panel with live progress.
+  zh: 一键更新本地 DeepSeek Harness：侧边栏按钮对比版本、拉取重建并自动重启，还可选择回退到任一历史版本，全程实时进度。

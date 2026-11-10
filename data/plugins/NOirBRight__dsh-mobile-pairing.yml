@@ -1,0 +1,6 @@
+url: https://github.com/NOirBRight/dsh-mobile-pairing
+name: NOirBRight/dsh-mobile-pairing
+category: remote
+description:
+  en: 'Mobile remote pairing for DSH with QR offers, a loopback Host Gateway, encrypted Relay or Quick Tunnel transport, same-LAN WebRTC Direct, and revocable Device Tokens for the Android client.'
+  zh: 'DSH 手机远程配对：提供二维码 offer、回环 Host Gateway、加密 Relay 或 Quick Tunnel、同网 WebRTC Direct，以及可撤销的 Android Device Token。'

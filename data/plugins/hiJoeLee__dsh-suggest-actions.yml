@@ -1,0 +1,6 @@
+url: https://github.com/hiJoeLee/dsh-suggest-actions
+name: hiJoeLee/dsh-suggest-actions
+category: ui
+description:
+  en: Up to 5 clickable next steps under every reply — one click sends that sentence as your message. No extra model call, duplicate angles dropped, the recommended one moved to the top, and hovering shows the full text. A small button on the right fills the composer (clearing it first) so you can edit before sending.
+  zh: 每条回复下方给出最多 5 条可点的下一步：点一下那句话就直接发出去，不额外调用模型；角度重复的自动去掉，标了「推荐」的排最前，悬停可先看全文；右侧小按钮只把它填进输入框（先清空），改完再发。

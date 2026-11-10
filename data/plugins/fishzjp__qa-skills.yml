@@ -1,0 +1,6 @@
+url: https://github.com/fishzjp/qa-skills
+name: fishzjp/qa-skills
+category: skill
+description:
+  en: 'QA pipeline as 10 agent skills: requirement analysis, test strategy, case writing and review, E2E (Playwright) and API automation, exploratory, regression scope and bug analysis, backed by a shared knowledge base with format rules, risk model and schema validators.'
+  zh: 软件测试全流程技能包：10 个技能覆盖需求分析、测试策略、用例编写与审查、E2E（Playwright）与 API 自动化、探索式测试、回归范围与 Bug 分析，共享知识库提供格式规范、风险模型与 Schema 校验脚本。

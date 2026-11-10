@@ -1,0 +1,6 @@
+url: https://github.com/changlianxiya-139/dsh-ambiguity-handling
+name: changlianxiya-139/dsh-ambiguity-handling
+category: workflow
+description:
+  en: Appends ambiguity-handling rules to the dsh system prompt so the agent asks clarifying options before guessing.
+  zh: 向 dsh system prompt 追加歧义处理规则，让 agent 在猜测前先列出 A/B/C/D 选项请求澄清。

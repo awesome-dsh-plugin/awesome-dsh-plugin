@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-console-sentinel
+name: loyalchiiina/dsh-console-sentinel
+category: tools
+description:
+  en: 'A Windows-only DSH plugin that cleans up the taskbar in one click: preview first, then close the listed windows the graceful way (WM_CLOSE, what Alt+F4 sends, never a force-kill). Windows are shown as a compact icon grid or as grouped per-app cards, so one window, every window of one app, or a whole batch can be closed; elevated admin windows go through a single UAC prompt. Empty console shells can be hidden or truly closed, while the DSH host, Fluent/MPI/ANSYS solver processes, the foreground window and whitelisted programs are never touched. Adapts DSH kernel 0.2.2-rc.1.'
+  zh: 'Windows 专属的 DSH 插件：一键清理任务栏——先干跑预览，再对列出的窗口发优雅关闭（WM_CLOSE，等同 Alt+F4，不做强杀）。窗口有紧凑图标网格与按软件分组的详情卡两种视图，可关单个窗口、关掉整款软件或整批处理；管理员窗口通过一次 UAC 提权关闭。空控制台壳可隐藏或真正关闭，DSH 宿主、Fluent/MPI/ANSYS 求解进程、前台窗口与白名单程序永不被关。适配 DSH 内核 0.2.2-rc.1。'

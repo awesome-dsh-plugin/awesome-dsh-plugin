@@ -1,0 +1,6 @@
+url: https://github.com/ReWebaiyu/dsh-novel-assist/tree/main/dsh-novel-assist
+name: ReWebaiyu/dsh-novel-assist#dsh-novel-assist
+category: workflow
+description:
+  en: 'Novel writing panel for the DSH sidebar that binds a local manuscript folder, imports Agent Skills as analysis lenses, and scans platform rankings into story-structure outlines.'
+  zh: 'DSH 侧边栏的小说创作面板：绑定本地书稿目录，把导入的 Agent 技能当作分析视角，并扫描平台榜单归纳故事架构。'

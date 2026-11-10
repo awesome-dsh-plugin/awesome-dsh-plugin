@@ -1,0 +1,6 @@
+url: https://github.com/LanFeng97/dsh-workspace-create-dialog
+name: LanFeng97/dsh-workspace-create-dialog
+category: ui
+description:
+  en: 'Codex-style Create Workspace dialog: name it and the folder is created for you, or pick one with a native chooser that remembers where you were (the native chooser is Windows-only; elsewhere use the name field).'
+  zh: 'Codex 式的创建工作区对话框：填名称就自动建出目录，或者选文件夹——原生选择窗口会记得你上次在哪（原生选择窗口仅 Windows 可用，其它平台请直接填名称）。'

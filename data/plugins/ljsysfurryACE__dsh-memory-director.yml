@@ -1,0 +1,6 @@
+url: https://github.com/ljsysfurryACE/dsh-memory-director
+name: ljsysfurryACE/dsh-memory-director
+category: memory
+description:
+  en: 'LLM-driven remember/forget memory: after each turn a model decides what to keep (MemoryDirector), injects relevant memories before each step, dedups, and persists cross-session.'
+  zh: LLM 驱动的记忆记/忘插件：每轮对话后由模型决定记住什么/忘记什么（MemoryDirector），请求前注入相关记忆，自动去重，跨会话持久化。

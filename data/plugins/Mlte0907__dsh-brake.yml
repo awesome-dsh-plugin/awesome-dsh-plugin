@@ -1,0 +1,6 @@
+url: https://github.com/Mlte0907/dsh-brake
+name: Mlte0907/dsh-brake
+category: tools
+description:
+  en: 'Dead-loop brake for DSH agent sessions: detects repeated identical tool calls, repeating call sequences, and duplicate text, then reminds the agent or refuses the call before it runs.'
+  zh: 'DSH 会话死循环刹车器：检测重复的相同工具调用、循环的调用序列与重复文本，提醒 agent 或在执行前拒绝调用。'

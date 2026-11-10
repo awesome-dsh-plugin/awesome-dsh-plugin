@@ -1,0 +1,8 @@
+url: https://github.com/Weihao654/dsh-workflow/tree/main/plugins/l2-protocol
+name: Weihao654/dsh-workflow#l2-protocol
+category: workflow
+
+description:
+  en: 'Plan-native multi-agent workflow for DeepSeek Harness: plan directs, work coordinates, code writes, and review audits read-only. Ordinary tasks need no authorization card or budget form. Includes 14 chain_* tools for explicitly authorized controlled rounds, with a frozen T0 baseline, layered evidence, and blocking close gates. Provides per-role model settings. Requires the sibling l1-presets bundle.'
+  zh: 'DeepSeek Harness 的 Plan 原生多 Agent 工作流：plan 负责规划、work 负责协调、code 负责写入、review 负责只读审核。普通任务无需授权卡或预算表单。提供 14 个 chain_* 工具，支持显式授权的受控轮次，包括冻结 T0 基线、分层证据和阻塞式关轮门禁。支持按角色配置模型，需同时安装 l1-presets。'
+icon: https://raw.githubusercontent.com/Weihao654/dsh-workflow/main/assets/icon-1024.png

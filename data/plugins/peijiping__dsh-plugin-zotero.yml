@@ -1,0 +1,7 @@
+url: https://github.com/peijiping/dsh-plugin-zotero
+name: peijiping/dsh-plugin-zotero
+category: tools
+tarball: https://github.com/peijiping/dsh-plugin-zotero/releases/latest/download/dsh-plugin-zotero.tgz
+description:
+  en: 'Map your Zotero library into DSH: let AI operate Zotero for you and help you read papers. Browse collections and tags in the sidebar, read PDFs with highlights in place, and cite excerpts, annotations, notes or whole items into the chat. The model works from the source text for reviews, comparisons and data extraction, and can also search and organize the library, import papers and attach translations back to items; first use needs the Zotero MCP plugin and the local API enabled.'
+  zh: '把 Zotero 文献库映射进 DSH：用AI管理操作Zotero，读文献时让AI辅助你。右侧栏按分类与标签浏览，双击即在 DSH 内精读 PDF，划词摘录、标注、笔记或整篇文献一键引用进对话；从综述、方法对比、数据提取到检索整理、导入论文、回挂译文，都可由模型代劳。首次使用需在 Zotero 装集成 MCP 插件并开启本地 API。'

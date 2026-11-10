@@ -1,0 +1,6 @@
+url: https://github.com/swaylq/dsh-digipet
+name: swaylq/dsh-digipet
+category: fun
+description:
+  en: 'Digimon-style raising game: hatch an egg that feeds on real work (turns, tool calls, errors) and evolves along four branching lines shaped by how you work; zero tokens, invisible to the model.'
+  zh: 数码宝贝式养成：孵一颗吃真实工作长大的蛋（回合、工具调用、报错都是营养），按你的工作方式走四条进化分支；零 token，模型完全看不见。

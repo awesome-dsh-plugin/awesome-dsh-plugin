@@ -1,0 +1,8 @@
+# Entry for the awesome-dsh-plugin list.
+url: https://github.com/zirscard/dsh-ocr
+name: zirscard/dsh-ocr
+category: vision
+description:
+  en: 'Registers two tools for DeepSeek Harness. `doc_ocr` turns scanned PDFs and images into structured text (per-page text, financial tables with a balance-sheet tie-out check, contract-clause hits) through a local RapidOCR engine or a Zhipu GLM-OCR cloud engine, and `doc_preprocess` turns a directory of raw files into an Obsidian-ready knowledge base through a seven-stage pipeline with backend routing and sha256-based incremental skipping. Numbers that fail the tie-out are reported, not invented. The local engine needs Python 3 with rapidocr-onnxruntime, pypdfium2 and Pillow (pip install -r requirements.txt); the GLM engine needs ZHIPU_API_KEY.'
+  zh: '为 DeepSeek Harness 注册两个工具：`doc_ocr` 把扫描件 PDF 与图片转成结构化文本（逐页文本、带资产负债表平衡勾稽的财务报表行、合同条款命中），可用本机 RapidOCR 或智谱 GLM-OCR 云端引擎；`doc_preprocess` 用 7 阶段管线把一批原始文件整理成 Obsidian 可读知识库，含后端路由与 sha256 增量跳过。勾稽不平的数字只报出、不编造。本机引擎需 Python 3 并安装 rapidocr-onnxruntime、pypdfium2、Pillow（pip install -r requirements.txt）；GLM 引擎需设置 ZHIPU_API_KEY。'
+tarball: https://github.com/zirscard/dsh-ocr/releases/download/v0.3.0/dsh-ocr.tgz

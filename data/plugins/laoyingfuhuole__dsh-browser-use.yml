@@ -1,0 +1,6 @@
+url: https://github.com/laoyingfuhuole/dsh-browser-use
+name: laoyingfuhuole/dsh-browser-use
+category: browser
+description:
+  en: 'Fully background browser automation for DSH: an offscreen browser per conversation that never steals focus or pops windows, with real CDP input.'
+  zh: '完全后台静默运行的浏览器自动化：每个对话一个离屏浏览器，不抢焦点、不弹窗，提供真实 CDP 输入。'

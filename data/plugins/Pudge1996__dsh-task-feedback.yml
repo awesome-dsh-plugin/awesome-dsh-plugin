@@ -1,0 +1,6 @@
+url: https://github.com/Pudge1996/dsh-task-feedback
+name: Pudge1996/dsh-task-feedback
+category: notify
+description:
+  en: Live session status on the browser tab favicon with sound notifications for pending input and completed tasks.
+  zh: 浏览器标签页 Favicon 实时回显会话状态，并支持需介入/已完成时的音效提示。

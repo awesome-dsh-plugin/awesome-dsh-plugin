@@ -1,0 +1,6 @@
+url: https://github.com/AdonisSheldon/dsh-openai-oauth
+name: AdonisSheldon/dsh-openai-oauth
+category: model
+description:
+  en: Connect a ChatGPT account to Codex models in DeepSeek Harness through browser PKCE or device-code OAuth, with automatic token refresh and Web or headless login.
+  zh: 通过浏览器 PKCE 或设备码 OAuth 将 ChatGPT 账户接入 DeepSeek Harness 的 Codex 模型，并支持自动刷新令牌以及 Web 或无头登录。

@@ -1,0 +1,6 @@
+url: https://github.com/Ultroncn/dsh-archived-chats
+name: Ultroncn/dsh-archived-chats
+category: session
+description:
+  en: "Workspace-based archive management with scoped content search, conversation previews, tags and notes, ZIP backups, lineage graphs, confirmed permanent deletion and retries, and official Host updates. Requires DeepSeek Harness 0.2.2-rc.1 or later."
+  zh: "按工作区管理已归档与未归档会话，支持独立范围正文搜索、上下文预览、标签备注、ZIP 备份导入导出、会话谱系、永久删除确认与失败重试，以及官方宿主更新。最低要求 DeepSeek Harness 0.2.2-rc.1。"

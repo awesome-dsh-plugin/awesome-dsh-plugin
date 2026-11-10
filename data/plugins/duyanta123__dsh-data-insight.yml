@@ -1,0 +1,6 @@
+url: https://github.com/duyanta123/dsh-data-insight
+name: duyanta123/dsh-data-insight
+category: docs
+description:
+  en: 'Turn raw data (CSV / pasted table / SQL results / DuckDB) into a structured Markdown report with business conclusions, metrics and charts.'
+  zh: 把原始数据（CSV / 粘贴表格 / SQL 结果 / DuckDB）转成带业务结论、指标与图表的结构化 Markdown 报告。

@@ -1,0 +1,6 @@
+url: https://github.com/Bil812/dsh-balance-tasks
+name: Bil812/dsh-balance-tasks
+category: usage
+description:
+  en: Floating card showing DeepSeek balance, peak/off-peak tier countdown, and remaining tasks estimated from historical per-task token usage and the current context.
+  zh: 右下角悬浮卡显示 DeepSeek 余额与峰谷档位倒计时，并基于历史平均单任务 Token 消耗与当前上下文估算剩余任务数。

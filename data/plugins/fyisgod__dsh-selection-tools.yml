@@ -1,0 +1,6 @@
+url: https://github.com/fyisgod/dsh-selection-tools
+name: fyisgod/dsh-selection-tools
+category: ui
+description:
+  en: Select text in any Windows app to explain or translate it with the Harness agent, answered in a native always-on-top overlay.
+  zh: 在任意 Windows 应用里划词，用 Harness 自己的 agent 解释或翻译（自动带上选区所在的上下文段落），结果落在可拖动、可缩放的原生置顶浮窗里。

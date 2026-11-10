@@ -1,0 +1,6 @@
+url: https://github.com/dsh-ssh/dsh-ssh/tree/main/packages/dsh-ssh
+name: dsh-ssh/dsh-ssh#dsh-ssh
+category: remote
+description:
+  en: SSH remote workspace — run bash, file tools, glob and grep on a remote machine over plain sshd (exec + SFTP), zero remote install, purely additive.
+  zh: SSH 远端工作区——在远端机器上执行 bash、文件读写、glob 与 grep（基于 sshd 的 exec + SFTP），远端零安装，纯附加。

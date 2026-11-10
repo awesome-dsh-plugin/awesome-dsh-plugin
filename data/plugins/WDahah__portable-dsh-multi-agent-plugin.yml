@@ -1,0 +1,6 @@
+url: https://github.com/WDahah/portable-dsh-multi-agent-plugin
+name: WDahah/portable-dsh-multi-agent-plugin
+category: agi
+description:
+  en: Route each task to one model and its review to a different one, with qualification evidence, failover and a durable journal.
+  zh: 把任务派给一个模型、把评审交给另一个模型，并带有资格证据、故障转移与持久日志。

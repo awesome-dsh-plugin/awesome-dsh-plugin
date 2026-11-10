@@ -1,0 +1,6 @@
+url: https://github.com/EvilIrving/dsh-proof
+name: EvilIrving/dsh-proof
+category: workflow
+description:
+  en: 'Independent read-only acceptance layer: spawns a read-only verifier before each top-level turn closes and steers non-pass gaps back into the agent.'
+  zh: 独立只读验收层：顶层 turn 收尾前 spawn 只读 verifier，未通过时把缺口注回主 agent。

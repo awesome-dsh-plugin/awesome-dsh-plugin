@@ -1,0 +1,6 @@
+url: https://github.com/hawk2048/oh-my-dsh
+name: hawk2048/oh-my-dsh
+category: workflow
+description:
+  en: 'OMC-style multi-agent orchestration for DeepSeek Harness: 29 omd-* skills and 12 /omd-* slash commands over the plan-execute-review-verify pipeline and team/autopilot/ralph modes.'
+  zh: 'OMC 风格的多智能体编排层：29 个 omd-* skill + 12 条 /omd-* 命令，覆盖 plan-execute-review-verify 流水线与 team/autopilot/ralph 等模式。'

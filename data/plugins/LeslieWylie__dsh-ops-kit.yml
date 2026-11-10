@@ -1,0 +1,6 @@
+url: https://github.com/LeslieWylie/dsh-ops-kit
+name: LeslieWylie/dsh-ops-kit
+category: workflow
+description:
+  en: 'Evidence-first operating kit: six read-only tools (capability catalog, staged workflow plans, packaged skill reader, bounded local memory search, repository release audit, release checklist) and five packaged skills - plans and audits, never remote writes.'
+  zh: 证据优先的操作套件：六个只读工具（能力清单、分阶段编排计划、随包技能阅读、有上限的本地记忆检索、仓库发布审计、发布清单）加五个随包技能；只规划与审计，不做远程写入。

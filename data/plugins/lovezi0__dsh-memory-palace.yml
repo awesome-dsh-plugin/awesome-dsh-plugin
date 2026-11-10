@@ -1,0 +1,6 @@
+url: https://github.com/lovezi0/dsh-memory-palace
+name: lovezi0/dsh-memory-palace
+category: memory
+description:
+  en: 'Human-readable Markdown memory for DeepSeek Harness: user-level (~/.deepseek-harness/MEMORY.md) + workspace-level memory injected every turn, auto daily-log writing with distillation, bridges existing WorkBuddy/CodeBuddy memory dirs, memory_note / memory_note_user / memory_read tools with built-in dedup, and a bilingual settings page. Plain-text storage, no database.'
+  zh: 人类可读的 Markdown 记忆插件：用户级（~/.deepseek-harness/MEMORY.md）+ 工作区级双层记忆，每轮自动注入提示词，回合结束自动写日志并按期蒸馏沉淀；可桥接已有 WorkBuddy/CodeBuddy 记忆目录；内置 memory_note / memory_note_user / memory_read 三个工具（自动去重）与中英双语设置页。纯文件存储、无数据库，记事本即可编辑。

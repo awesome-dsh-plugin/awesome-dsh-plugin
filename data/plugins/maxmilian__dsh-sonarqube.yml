@@ -1,0 +1,6 @@
+url: https://github.com/maxmilian/dsh-sonarqube
+name: maxmilian/dsh-sonarqube
+category: security
+description:
+  en: 'Read-only SonarQube Community Build tools: instance status, project Quality Gate for a branch or pull request, issue and Security Hotspot search, single hotspot detail, and coverage, duplication or caller-selected measures. Issue and hotspot results carry a normalized location with component key, file path, line and text range.'
+  zh: '面向 SonarQube Community Build 的只读工具：实例状态、分支或 PR 的项目质量阈、议题与安全热点搜索、单个热点详情，以及覆盖率、重复率或调用方指定的度量项。议题与热点结果附带标准化的位置信息，包含组件 key、文件路径、行号与文本范围。'

@@ -1,0 +1,6 @@
+url: https://github.com/FYZB2020/dsh-voice-doubao
+name: FYZB2020/dsh-voice-doubao
+category: voice
+description:
+  en: Adds two Volcengine Doubao cloud speech recognizers to the DeepSeek Harness voice-input picker, optionally rewriting the transcript with an LLM.
+  zh: 给 DeepSeek Harness 的语音输入加入两个豆包云端识别器，可选再用大模型把口语顺成通顺的书面句子。

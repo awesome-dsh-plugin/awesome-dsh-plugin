@@ -1,0 +1,6 @@
+url: https://github.com/NOOBnoob163/dsh-self-restart
+name: NOOBnoob163/dsh-self-restart
+category: session
+description:
+  en: 'Turns "restarting the host" into one interrupt that many sessions can share. Several sessions queue onto the same restart (8 by default, configurable, joinable at any time including mid-wait); the host is closed once and relaunched once; then each waiting session is woken separately with its own reason and starts running its own work without waiting for the others. Each session decides independently whether to resume, one failed delivery never affects the rest, and a session can drop only itself without cancelling everyone else''s restart. Windows desktop only.'
+  zh: '把「重启宿主」变成一次中断、多个会话共用：若干会话可以排进同一次重启（默认上限 8 个、可配置，任意时刻都能加入，等待途中也行），宿主只关一次、只拉起一次，随后按名单逐个唤醒，每个会话拿回自己写下的理由并各自开工，互不等待。每个会话独立决定要不要续接，某一条投递失败不影响其余，某个会话也能只摘掉自己而不作废别人的重启。仅支持 Windows 桌面版。'

@@ -1,0 +1,6 @@
+url: https://github.com/bauerelizabeth07139/opencode-ppocr-mcp
+name: bauerelizabeth07139/opencode-ppocr-mcp
+category: vision
+description:
+  en: 'Local OCR with nothing sent to a cloud: mounts the PP-OCRv6 Medium stdio MCP server (PaddleOCR on ONNX Runtime, CPU) as mcp__ppocr__ocr_image and mcp__ppocr__ocr_pdf for images and multi-page PDFs.'
+  zh: '本地 OCR,不把文件发到云端:把 PP-OCRv6 Medium stdio MCP 服务器(PaddleOCR + ONNX Runtime CPU)挂成 mcp__ppocr__ocr_image 与 mcp__ppocr__ocr_pdf,识别图片和多页 PDF。'

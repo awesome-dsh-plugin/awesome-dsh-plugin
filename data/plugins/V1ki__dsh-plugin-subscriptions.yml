@@ -1,0 +1,6 @@
+url: https://github.com/V1ki/dsh-plugin-subscriptions
+name: V1ki/dsh-plugin-subscriptions
+category: model
+description:
+  en: Use ChatGPT (Codex), Claude, and Grok subscriptions as DeepSeek Harness LLM providers, with Settings login, model catalogs, usage, plus image_generate, video_generate, and x_search tools.
+  zh: 把 ChatGPT（Codex）、Claude、Grok 订阅当作 DeepSeek Harness 的 LLM 提供方：设置页登录、模型目录、用量展示，以及 image_generate、video_generate 与 x_search 工具。

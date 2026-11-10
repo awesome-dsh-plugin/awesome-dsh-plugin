@@ -1,0 +1,6 @@
+url: https://github.com/d0ublecl1ck/dsh-csdn-theme
+name: d0ublecl1ck/dsh-csdn-theme
+category: theme
+description:
+  en: Ports CSDN blog article typography into the DeepSeek Harness web GUI — heading hierarchy, quote blocks, solid-grid tables, inline code and Atom One syntax highlighting, in matching light and dark palettes.
+  zh: 把 CSDN 博文的配色与正文排版搬进 DeepSeek Harness 网页端：标题层级、引用块、实线网格表格、行内代码与 Atom One 语法高亮，浅色深色各一套。

@@ -1,0 +1,6 @@
+url: https://github.com/jax629321/dsh-agent-hub
+name: jax629321/dsh-agent-hub
+category: workflow
+description:
+  en: "Group-chat multi-agent orchestration console for DSH: autonomous decision-making, task dispatch, verification and iterative optimization for long tasks; bundles its own backend, installs with `dsh plugin add`."
+  zh: "DSH 群聊式多智能体协作控制台：自主决策、任务分发、验收复核与长任务自主优化；内置后端随包分发，一条命令即可安装。"

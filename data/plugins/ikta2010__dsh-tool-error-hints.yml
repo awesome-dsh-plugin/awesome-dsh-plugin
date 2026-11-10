@@ -1,0 +1,7 @@
+url: https://github.com/ikta2010/dsh-tool-error-hints
+name: ikta2010/dsh-tool-error-hints
+category: tools
+tarball: https://github.com/ikta2010/dsh-tool-error-hints/releases/latest/download/dsh-tool-error-hints.tgz
+description:
+  en: 'Appends actionable hints to failed tool results, such as the nearest existing directory when a path does not exist.'
+  zh: '给失败的工具结果追加可执行提示（如路径不存在时给出最近的已存在目录）。'

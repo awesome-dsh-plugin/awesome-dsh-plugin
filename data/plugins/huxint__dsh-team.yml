@@ -1,0 +1,6 @@
+url: https://github.com/huxint/dsh-team
+name: huxint/dsh-team
+category: workflow
+description:
+  en: 'Agent teams: spawn named long-lived teammates, coordinate them with a shared task list, member mailbox, and virtual workspaces, and watch the team live in a team-room tab.'
+  zh: 'Agent 团队：派生具名常驻队友，用共享任务列表、成员邮箱与虚拟工作区协作，并在协作室页签里实时观察团队。'

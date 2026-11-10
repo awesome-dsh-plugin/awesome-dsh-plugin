@@ -1,0 +1,6 @@
+url: https://github.com/CDeZT/better-basicfun
+name: CDeZT/better-basicfun
+category: memory
+description:
+  en: 'Native DSH foundation bundle that registers a persistent default workspace, provides paged read-only inspection of plugins, skills, memory, sessions, storage, settings, credentials, and DSH_HOME files, and synchronizes rich CLIProxyAPI model capabilities into native provider settings.'
+  zh: '原生 DSH 基础插件：注册持久化默认工作区，分页只读查看插件、skills、memory、会话、storage、settings、credentials 与 DSH_HOME 文件，并将 CLIProxyAPI 的模型能力同步到原生 Provider 设置。'

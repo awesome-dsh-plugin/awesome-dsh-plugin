@@ -1,0 +1,6 @@
+url: https://github.com/kevinchu1981/dsh-insurance-experts/tree/main/packages/insurance-actuary
+name: kevinchu1981/dsh-insurance-experts#insurance-actuary
+category: tools
+description:
+  en: Insurance actuary — runs real actuarial calculations (life & P&C reserve valuation under C-ROSS II BEL+RM, profit testing NBV/VNB/IRR, embedded value EV, pricing & loss-triangle reserving), not just explanations.
+  zh: 保险精算师（insurance-actuary）——真跑精算测算：寿险/财险准备金评估（偿二代二期 BEL+RM）、利润测试（NBV/VNB/IRR）、内含价值(EV)、产品定价与损失三角准备金，而非仅讲解。

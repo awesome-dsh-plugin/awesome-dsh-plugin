@@ -1,0 +1,6 @@
+url: https://github.com/idoall/dsh-session-colors
+name: idoall/dsh-session-colors
+category: session
+description:
+  en: 'Give any Session a colour mark, shown as a chip in the sidebar and picked from the conversation header; marks are stored on the Host, so a colour chosen on one device is visible on every other one.'
+  zh: '给任意会话加上颜色标记：在侧栏显示色条、从会话头部选择颜色；标记保存在宿主上，一台设备选的颜色在其他设备上同样可见。'

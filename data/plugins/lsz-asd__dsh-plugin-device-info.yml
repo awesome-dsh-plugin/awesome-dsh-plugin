@@ -1,0 +1,6 @@
+url: https://github.com/lsz-asd/dsh-plugin-device-info
+name: lsz-asd/dsh-plugin-device-info
+category: tools
+description:
+  en: 'Read-only Windows device information tools: one agent tool per Win32 device category (time, system, cpu, memory, disk, gpu, network, battery, processes, usb, audio, printers) via WMI/CIM and Node os collectors.'
+  zh: 只读的 Windows 设备信息工具：每个 Win32 设备类别一个 agent 工具（时间、系统、CPU、内存、磁盘、GPU、网络、电池、进程、USB、音频、打印机），基于 WMI/CIM 与 Node os 采集。

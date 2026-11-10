@@ -1,0 +1,7 @@
+url: https://github.com/wanted09527/dsh-progress-caption
+name: wanted09527/dsh-progress-caption
+category: ui
+tarball: https://github.com/wanted09527/dsh-progress-caption/releases/download/v0.3.0/dsh-progress-caption-0.3.0.tgz
+description:
+  en: 'A one-line caption above the composer that tells you what the AI is doing right now: the step number, the action (e.g. running npm test), and whether it is still going, done, or failed with a short plain-language reason. Inferred locally from tool calls and the thinking text; no model calls, no network requests, no writes to DSH data.'
+  zh: '在输入框上方加一行小字，告诉你 AI 现在第几步、在做什么、成没成，比如「第 3 步 · 正在执行命令 npm test · 琢磨中」。全部靠本机规则推断，不调模型、不联网、不改 DSH 的任何数据。'

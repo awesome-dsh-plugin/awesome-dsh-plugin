@@ -1,0 +1,6 @@
+url: https://github.com/lubenweimeiyoukaig/dsh-file-upload-local
+name: lubenweimeiyoukaig/dsh-file-upload-local
+category: tools
+description:
+  en: 'Local file upload: paperclip button and drag-and-drop, per-session storage under .dsh-uploads, and a read_document tool that pages text and OCRs images.'
+  zh: '本地文件上传：回形针按钮与拖拽上传、按会话隔离存储到 .dsh-uploads，并提供 read_document 工具分页读文本、对图片 OCR。'

@@ -1,0 +1,6 @@
+url: https://github.com/zxygithub/dsh-agnes-create
+name: zxygithub/dsh-agnes-create
+category: vision
+description:
+  en: 'Sidebar panel for Agnes image and video generation: switch between agnes-image-2.5-flash (1K-4K across eight aspect ratios) and agnes-video-2.5-flash (720p, 4-12 seconds, submitted as an async task and polled with a live percentage), see the result inline as an image or a seekable video, revisit the last eight generations, and repoint the API-key file or output directory from the panel settings without editing code or restarting. Polling backs off on the query endpoint 429 rate limit instead of failing the task, and a 503 queue-full submit retries automatically.'
+  zh: '侧边栏 Agnes 出图与出视频面板：可在 agnes-image-2.5-flash（1K/2K/3K/4K，8 种宽高比）与 agnes-video-2.5-flash（720p，4-12 秒，异步任务轮询并显示百分比进度）之间切换；结果内联展示，视频可拖动进度条；最近 8 条可回看；Key 文件路径与输出目录可在面板设置里修改，无需改代码或重启。查询接口 429 限流自动退避而非判任务失败，提交遇 503 队列满自动重试。'

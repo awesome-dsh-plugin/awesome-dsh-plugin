@@ -1,0 +1,7 @@
+url: https://github.com/Cloud017/dsh-prompt-reforge
+name: Cloud017/dsh-prompt-reforge
+category: ui
+description:
+  en: Adds a reforge control to the DSH composer that rewrites the current draft into a sharper prompt in place, as one undoable edit, with one-click revert and cancellation.
+  zh: 在 DSH 输入框工具栏加一个「重铸」按钮，把当前草稿就地改写成更精准的提示词——整段替换只占一步撤销，可一键恢复原文，也可中途取消。
+tarball: https://github.com/Cloud017/dsh-prompt-reforge/releases/latest/download/dsh-prompt-reforge.tgz

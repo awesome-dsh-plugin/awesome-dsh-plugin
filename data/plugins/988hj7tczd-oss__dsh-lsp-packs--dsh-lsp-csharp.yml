@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-lsp-packs/tree/main/dsh-lsp-csharp
+name: 988hj7tczd-oss/dsh-lsp-packs#dsh-lsp-csharp
+category: dev
+description:
+  en: 'C# LSP configuration plugin for DeepSeek Harness using OmniSharp.'
+  zh: '基于 OmniSharp 为 DeepSeek Harness 提供 C# 代码导航和语言服务配置。'

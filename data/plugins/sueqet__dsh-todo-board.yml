@@ -1,0 +1,6 @@
+url: https://github.com/sueqet/dsh-todo-board
+name: sueqet/dsh-todo-board
+category: ui
+description:
+  en: 'Cross-session TODO board as a draggable floating panel: tasks are grouped by working directory and reorderable by drag, each one carries a run mode (remind only, continue in the current session, or open a new session in the same directory), up to four attached images sent to the model as real image attachments, and an optional local time it may run at; two checkboxes track AI-done and user-verified, and the agent picks up the next unfinished task in that directory when it finishes one.'
+  zh: 跨会话 TODO 板：可拖动浮窗按工作目录分组、拖拽排序，每条待办带一个执行模式（仅提醒 / 在当前会话续跑 / 在同目录新开会话）、可附最多 4 张图片（派发时作为真正的图片附件发给模型）、以及一个可选的定时执行时间；两个勾选框分别记录 AI 已完成与用户已验收，AI 完成一项后自动接续该目录下一条未完成待办。

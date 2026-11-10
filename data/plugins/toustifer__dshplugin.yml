@@ -1,0 +1,6 @@
+url: https://github.com/toustifer/dshplugin
+name: toustifer/dshplugin
+category: tools
+description:
+  en: Generates 3Blue1Brown-style Manim animations to explain answers, with a right-column gallery and inline multi-modal file publishing.
+  zh: 调用 3Blue1Brown Manim 现做动画直观解释回答，配有右侧抽屉栏动画库及对话流多模态文件发布卡片。

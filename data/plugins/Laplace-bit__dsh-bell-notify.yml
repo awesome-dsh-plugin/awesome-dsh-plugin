@@ -1,0 +1,6 @@
+url: https://github.com/Laplace-bit/dsh-bell-notify
+name: Laplace-bit/dsh-bell-notify
+category: notify
+description:
+  en: 'Web Audio lifecycle cues for DeepSeek Harness: ten configurable events, three low-noise defaults, per-event custom sounds, and no shipped audio assets.'
+  zh: DeepSeek Harness 生命周期提示音：10 个可配置事件，默认只开启三项低打扰提示，可为每个事件更换自定义声音，内置音效不带音频资源。

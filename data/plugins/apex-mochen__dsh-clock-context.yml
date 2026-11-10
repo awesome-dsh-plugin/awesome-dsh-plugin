@@ -1,0 +1,6 @@
+url: https://github.com/apex-mochen/dsh-clock-context
+name: apex-mochen/dsh-clock-context
+category: tools
+description:
+  en: Injects the current date and time into the runtime context on every turn, so the agent can read the time instead of inferring it.
+  zh: 每一轮把当前日期时间注入运行上下文，让 agent 能读到准确时间而不是靠推算。

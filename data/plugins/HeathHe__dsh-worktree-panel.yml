@@ -1,0 +1,6 @@
+url: https://github.com/HeathHe/dsh-worktree-panel
+name: HeathHe/dsh-worktree-panel
+category: git
+description:
+  en: 'Git worktree panel for DSH Web: replaces the workspace sidebar with project → main/linked worktree → session groups, creates and removes worktrees, switches the main branch, and migrates configurable project-local or global storage with dirty-tree and active-session safeguards.'
+  zh: 'DSH Web 的 Git worktree 面板：将工作区侧栏替换为项目 → 主/关联 worktree → 会话分组，支持创建和删除 worktree、切换主分支，并在脏工作树与活跃会话保护下迁移可配置的项目内或全局存储位置。'

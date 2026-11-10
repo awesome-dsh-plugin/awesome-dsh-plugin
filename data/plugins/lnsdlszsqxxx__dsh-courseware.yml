@@ -1,0 +1,6 @@
+url: https://github.com/lnsdlszsqxxx/dsh-courseware
+name: lnsdlszsqxxx/dsh-courseware
+category: skill
+description:
+  en: Takes the user's own .pptx template plus a course outline (lesson plan / document / plain text) and produces a courseware .pptx that adopts the template's background, color scheme, fonts, and page skeleton. Pure plugin package, no built-in API keys; the image backend must be configured by the user.
+  zh: 拿用户自己的 .pptx 模板 + 一份课程大纲（教案/文档/纯文本），产出套用该模板背景、配色、字体、页面骨架的课件 .pptx。纯插件包，无内置密钥，图片后端需用户自行配置。

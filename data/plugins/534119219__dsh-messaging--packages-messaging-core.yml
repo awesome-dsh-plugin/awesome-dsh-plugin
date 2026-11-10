@@ -1,0 +1,6 @@
+url: https://github.com/534119219/dsh-messaging/tree/main/packages/messaging-core
+name: 534119219/dsh-messaging#messaging-core
+category: notify
+description:
+  en: 'Unified messaging gateway for DeepSeek Harness: 27 IM platforms (Telegram, QQ, WeChat, Discord, WhatsApp, Feishu and more) in one plugin, with QR scan-to-authorize, per-platform workspaces, slash commands, and a web setup dialog.'
+  zh: DeepSeek Harness 的统一消息网关：一个插件接入 27 个 IM 平台（Telegram、QQ、微信、Discord、WhatsApp、飞书等），支持扫码授权、每平台独立工作区、斜杠命令与 Web 配置弹窗。

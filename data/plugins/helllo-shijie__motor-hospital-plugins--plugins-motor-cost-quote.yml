@@ -1,0 +1,6 @@
+url: https://github.com/helllo-shijie/motor-hospital-plugins/tree/main/plugins/motor-cost-quote
+name: helllo-shijie/motor-hospital-plugins#motor-cost-quote
+category: tools
+description:
+  en: 'Combines historical supplier quotes and service rates into onsite-repair, factory-overhaul, green-remanufacture and replacement options for a motor, then recommends one by total cost of ownership.'
+  zh: '组合历史供应商报价与工时，生成现场抢修/返厂大修/绿色再制造/整机更换等维修方案，并按综合持有成本给出决策建议。'

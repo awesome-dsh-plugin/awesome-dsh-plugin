@@ -1,0 +1,8 @@
+
+url: https://github.com/HimA6652/dsh-client-ui-model-seat
+name: HimA6652/dsh-client-ui-model-seat
+category: ui
+icon: https://raw.githubusercontent.com/HimA6652/dsh-client-ui-model-seat/main/assets/icon-180.png
+description:
+  en: 'Merges AprilCrystal/dsh-client-ui-gpt-helper and zszz3/dsh-model-provider-prefix — two composer model-seat plugins that cannot be installed together — into one control: a Provider / Model trigger opening a two-column card where hovering the provider column swaps the models without moving the card, a separate reasoning-effort trigger with a particle slider, and a search that spans every provider while the card keeps its size.'
+  zh: '把 AprilCrystal/dsh-client-ui-gpt-helper 与 zszz3/dsh-model-provider-prefix 这两个无法同时安装的输入框模型控件合并成一个控件：「供应商/模型」钮点开是两栏卡片，鼠标所指供应商的模型就地切换、卡片不移动；推理强度是旁边的独立钮，带粒子滑杆；搜索跨全部供应商，且卡片尺寸保持不变。'

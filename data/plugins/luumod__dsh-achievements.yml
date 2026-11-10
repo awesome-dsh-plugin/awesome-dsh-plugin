@@ -1,0 +1,6 @@
+url: https://github.com/luumod/dsh-achievements
+name: luumod/dsh-achievements
+category: fun
+description:
+  en: 'Achievement and gamification plugin: unlock badges for turns, tool calls, sessions, daily streaks and coding behavior (edits/reads/tests), with a badge wall, unlock toasts and a ctx.achievements SDK.'
+  zh: 成就与游戏化插件：按回合、工具调用、会话、连续天数与编码行为（编辑/读取/测试）解锁徽章，带徽章墙、解锁 toast 与 ctx.achievements SDK。

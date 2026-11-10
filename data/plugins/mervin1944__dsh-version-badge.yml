@@ -1,0 +1,6 @@
+url: https://github.com/mervin1944/dsh-version-badge
+name: mervin1944/dsh-version-badge
+category: ui
+description:
+  en: 'Version badge above the sidebar settings button: shows the current dsh version, expands to list every core package version, and checks npm for updates with one-click deploy.'
+  zh: '侧边栏设置按钮上方的版本徽标：常驻显示当前 dsh 版本，展开可查看全部核心包版本，并支持检查 npm 更新与一键部署。'

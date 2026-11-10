@@ -1,0 +1,6 @@
+url: https://github.com/lsq-dsh-plugins/dsh-windows-notifications
+name: lsq-dsh-plugins/dsh-windows-notifications
+category: notify
+description:
+  en: Adds Windows desktop notifications, optional sounds, and DSH-styled in-page notifications for task events.
+  zh: 为任务事件提供 Windows 桌面通知、可选提示音和 DSH 风格的页面通知。

@@ -1,0 +1,7 @@
+url: https://github.com/GooDAnDReaDY/dsh-russian-lang
+name: GooDAnDReaDY/dsh-russian-lang
+category: ui
+description:
+  en: 'Adds Russian as a native option in Settings - General - Language for DeepSeek Harness, covering both the core UI and companion plugins. Localized Markdown export, in-message translation, live typography, slash-command aliases and an Alt+L layout fix, plus a settings card, all applied through a runtime locale snapshot rather than by modifying core files.'
+  zh: '给 DeepSeek Harness 的「设置 - 通用 - 语言」加入俄语，覆盖核心界面与生态插件的词条。提供会话 Markdown 导出、消息内嵌翻译、实时排版、斜杠命令别名与 Alt+L 布局更正，以及一张设置卡片，全部通过运行时 locale 快照实现，不修改核心文件。'
+

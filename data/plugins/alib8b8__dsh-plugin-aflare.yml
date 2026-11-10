@@ -1,0 +1,6 @@
+url: https://github.com/alib8b8/dsh-plugin-aflare
+name: alib8b8/dsh-plugin-aflare
+category: workflow
+description:
+  en: 'Workflow tools for the local aflare binary: generate, validate and run local-first deterministic YAML workflow DAGs (WAL crash recovery, Saga compensation) through the local aflare binary, with 300+ templates built in.'
+  zh: aflare 工作流工具：通过本地 aflare 二进制生成、校验并执行本地优先的确定性 YAML 工作流 DAG（WAL 崩溃恢复、Saga 补偿），内置 300+ 模板。

@@ -1,0 +1,6 @@
+url: https://github.com/hardlic/dsh-fitness
+name: hardlic/dsh-fitness
+category: tools
+description:
+  en: 'Workout logging plugin: a fitness_log agent tool (log, history, stats, weekly plans) storing data in local SQLite; the repo also ships a separate optional left-rail panel bundle under ui/.'
+  zh: '训练记录插件：fitness_log 工具（记录、历史、统计、每周计划），数据存本地 SQLite；同一仓库 ui/ 里另有需单独安装的左侧栏面板包。'

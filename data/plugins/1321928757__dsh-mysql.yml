@@ -1,0 +1,6 @@
+url: https://github.com/1321928757/dsh-mysql
+name: 1321928757/dsh-mysql
+category: tools
+description:
+  en: 'MySQL connector for DeepSeek Harness: configure multiple connections in the settings page with per-connection table allowlist and write permission, switch the active connection from the composer, and expose mysql_query / mysql_tables / mysql_execute tools to every agent preset.'
+  zh: DeepSeek Harness 的 MySQL 连接插件：在设置页配置多套连接（每连接可配表白名单与写权限），输入栏一键切换当前会话的连接，并为所有 Agent 预设提供 mysql_query / mysql_tables / mysql_execute 工具。

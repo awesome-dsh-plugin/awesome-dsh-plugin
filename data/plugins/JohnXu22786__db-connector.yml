@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/db-connector
+name: JohnXu22786/db-connector
+category: tools
+description:
+  en: "Safe, audited SQLite/PostgreSQL/MySQL access for dsh agents: schema introspection, enforced read-only queries, a write approval gate, and a durable JSONL SQL audit trail."
+  zh: "为 dsh agent 提供安全且可审计的 SQLite/PostgreSQL/MySQL 访问：schema 内省、强制只读查询、写审批门与持久化 JSONL SQL 审计追踪。"

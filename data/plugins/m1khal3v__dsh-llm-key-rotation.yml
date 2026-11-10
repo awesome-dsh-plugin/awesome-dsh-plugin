@@ -1,0 +1,6 @@
+url: https://github.com/m1khal3v/dsh-llm-key-rotation
+name: m1khal3v/dsh-llm-key-rotation
+category: usage
+description:
+  en: Rotates configured LLM API keys after quota, rate-limit, or authentication failures.
+  zh: 在配额、速率限制或身份验证失败后轮换已配置的 LLM API 密钥。

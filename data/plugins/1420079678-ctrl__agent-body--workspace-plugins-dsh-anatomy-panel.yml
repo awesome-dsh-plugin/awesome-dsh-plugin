@@ -1,0 +1,6 @@
+url: https://github.com/1420079678-ctrl/agent-body/tree/main/workspace/plugins/dsh-anatomy-panel
+name: 1420079678-ctrl/agent-body#dsh-anatomy-panel
+category: ui
+description:
+  en: 'Anatomy panel for the Agent-Body organs: serves a live vitals dashboard at /anatomy inside the harness itself - organs, heartbeat, healing ledger, self-training counters and the real pulse stream - read straight from the runtime files rather than retyped. Host-only, no client bundle and no build step.'
+  zh: 'Agent-Body 器官的解剖面板：在 harness 内部的 /anatomy 提供实时体征看板——器官、心跳、自愈账本、自训练计数与真实脉冲流，数据直接读自运行时文件而非誊写。仅 host 端，无客户端 bundle、无构建步骤。'

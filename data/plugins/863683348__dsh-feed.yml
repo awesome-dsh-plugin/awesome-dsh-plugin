@@ -1,0 +1,6 @@
+url: https://github.com/863683348/dsh-feed
+name: 863683348/dsh-feed
+category: market
+description:
+  en: 'Cross-ecosystem aggregation data layer: syncs the GitHub dsh-plugin topic and the npm registry into one open JSON index, queried by model tools, a CLI, and a minimal stdio MCP server.'
+  zh: '跨生态聚合数据层（"聚合的聚合"）：把 GitHub dsh-plugin 主题与 npm registry 归一化为开放 JSON 索引，供模型工具、CLI 与轻量 stdio MCP 服务查询。'

@@ -1,0 +1,6 @@
+url: https://github.com/lcthe/dsh-skills-hub
+name: lcthe/dsh-skills-hub
+category: ui
+description:
+  en: 'DSH Skill Manager: browse, enable/disable, import from Codex/Claude Code/ZCode/WorkBuddy/QCoderWork, auto-discover skills with symlink support.'
+  zh: 'DSH 技能管理器：浏览、启用/禁用、从 Codex/Claude Code/ZCode/WorkBuddy/QCoderWork 导入，自动发现技能并支持软链接。'

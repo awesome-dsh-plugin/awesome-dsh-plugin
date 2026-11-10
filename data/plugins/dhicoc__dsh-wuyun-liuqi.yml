@@ -1,0 +1,6 @@
+url: https://github.com/dhicoc/dsh-wuyun-liuqi
+name: dhicoc/dsh-wuyun-liuqi
+category: skill
+description:
+  en: 'Complete wuyun-liuqi (five-evolutions-six-qi / 五运六气) Traditional Chinese Medicine skill pack as a DeepSeek Harness Cordis plugin: annual and guest-qi calculation, clinical pattern differentiation, and pathogenesis reasoning.'
+  zh: 完整 wuyun-liuqi（五运六气）中医运气学技能包，封装为 DeepSeek Harness 插件：年度与客气推算、临床辨证、病机推演。

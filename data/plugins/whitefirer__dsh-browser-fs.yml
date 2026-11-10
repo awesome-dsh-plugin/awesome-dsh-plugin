@@ -1,0 +1,6 @@
+url: https://github.com/whitefirer/dsh-browser-fs
+name: whitefirer/dsh-browser-fs
+category: tools
+description:
+  en: 'Give agents access to files on the machine where the browser runs: user authorizes a local directory via File System Access, tool calls relay over the plugin''s own WebSocket; read-only compat mode for mobile/insecure contexts.'
+  zh: 让 agent 读写浏览器所在电脑上的文件：浏览器授权本地目录（File System Access），工具调用经插件自建 WebSocket 中继；移动端/非安全上下文自动降级只读兼容模式。

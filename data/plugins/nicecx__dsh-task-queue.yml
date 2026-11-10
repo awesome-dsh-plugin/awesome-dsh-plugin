@@ -1,0 +1,6 @@
+url: https://github.com/nicecx/dsh-task-queue
+name: nicecx/dsh-task-queue
+category: dev
+description:
+  en: 'Tiered task queue as the single source of truth for DSH↔Hermes work (reset > approve > review): enqueue tools for all submission paths, lease/claim model with concurrency 1, priority aging against starvation, atomic busy mutex, and a Hermes-side consumer (cron */1 + monitor gating) that drains tasks, writes review-handoff requests with single-slot checks, and invokes the reset agent.'
+  zh: 'DSH↔Hermes 协作的缓存梯队任务队列（reset > approve > review，queue.json 唯一真相源）：全部提审路径入队、租约/认领模型并发 1、优先级 aging 防饿死、原子忙锁；Hermes 侧消费端（cron */1 + monitor 门控）出队执行、单槽检查写审核请求、调用重置 agent。'

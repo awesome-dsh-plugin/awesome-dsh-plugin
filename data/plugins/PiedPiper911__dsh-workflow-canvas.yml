@@ -1,0 +1,6 @@
+url: https://github.com/PiedPiper911/dsh-workflow-canvas
+name: PiedPiper911/dsh-workflow-canvas
+category: workflow
+description:
+  en: Visual drag-and-drop workflow builder for DSH — orchestrate tool calls, sub-agents, and conditional branches on a React Flow canvas.
+  zh: DSH 可视化工作流编排画布，基于 React Flow 拖拽编排工具调用、子智能体与条件分支。

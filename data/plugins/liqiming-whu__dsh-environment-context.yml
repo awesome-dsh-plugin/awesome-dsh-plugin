@@ -1,0 +1,6 @@
+url: https://github.com/liqiming-whu/dsh-environment-context
+name: liqiming-whu/dsh-environment-context
+category: tools
+description:
+  en: 'Injects live time, weather, location, battery, and device context into the DSH system prompt, with a bilingual settings page.'
+  zh: '将实时的时间、天气、地点、电量和设备信息注入 DSH 系统提示，并提供双语设置页面。'

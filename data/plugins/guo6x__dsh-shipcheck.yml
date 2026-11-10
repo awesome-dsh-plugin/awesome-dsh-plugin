@@ -1,0 +1,6 @@
+url: https://github.com/guo6x/dsh-shipcheck
+name: guo6x/dsh-shipcheck
+category: dev
+description:
+  en: 'Evidence-first frontend release checks: real-browser content, accessibility, runtime, network, and baseline regression reports with screenshots.'
+  zh: 证据优先的前端交付验收：用真实浏览器检查内容、无障碍、运行时错误、网络失败与结构基线，并保存截图报告。

@@ -1,0 +1,6 @@
+url: https://github.com/lxp731/agents-plugins/tree/main/task-complete-notify-for-dsh
+name: lxp731/agents-plugins#task-complete-notify-for-dsh
+category: notify
+description:
+  en: 'Sends a desktop notification and chime when a DeepSeek Harness run completes, errors, or waits for approval, with a configurable duration threshold.'
+  zh: 'DSH 桌面通知插件：运行完成、出错或等待审批时发送桌面通知并播放提示音，支持可配置的时长阈值。'

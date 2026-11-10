@@ -1,0 +1,7 @@
+url: https://github.com/AaronandWork/dsh-evidence-gate
+name: AaronandWork/dsh-evidence-gate
+category: dev
+description:
+  en: Evidence-first conclusion gate that cross-checks first-hand claims against a durable per-session tool-activity index, blocks unverified guesses and tracks blocked-versus-converted metrics.
+  zh: 实证门——按会话将第一手结论与持久工具活动索引交叉核验、拦截未验证猜测并以台账统计拦截与转化，中英双语界面。
+tarball: https://github.com/AaronandWork/dsh-evidence-gate/releases/latest/download/dsh-evidence-gate.tgz

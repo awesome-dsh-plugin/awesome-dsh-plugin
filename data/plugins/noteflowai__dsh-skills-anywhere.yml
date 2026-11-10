@@ -1,0 +1,6 @@
+url: https://github.com/noteflowai/dsh-skills-anywhere
+name: noteflowai/dsh-skills-anywhere
+category: skill
+description:
+  en: "Live skill provider that adds skills from 60+ other agents' directories (Claude Code, Codex, Cursor, Gemini CLI, Copilot), Claude Code plugin marketplaces, and any git repository of skills to the dsh catalog without copying or symlinking; deduplicates, repairs frontmatter, renames name collisions, and ships a CLI (list, add, sync, doctor)."
+  zh: "实时技能提供器：把 60+ 个其他 Agent（Claude Code、Codex、Cursor、Gemini CLI、Copilot）的技能目录、Claude Code 插件市场以及任意 git 技能仓库中的技能接入 dsh 目录，零拷贝零软链接；自动去重、修复 frontmatter、处理同名冲突，并附带 CLI（list、add、sync、doctor）。"

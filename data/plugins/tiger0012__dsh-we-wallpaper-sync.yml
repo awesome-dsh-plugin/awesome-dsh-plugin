@@ -1,0 +1,6 @@
+url: https://github.com/tiger0012/dsh-we-wallpaper-sync
+name: tiger0012/dsh-we-wallpaper-sync
+category: skill
+description:
+  en: 'Reusable skill to browse, search and download Wallpaper Engine (Steam 431960) workshop wallpapers and wire them into the DSH skin center, including bypassing the Steam HTTP block and the region-mismatch sign-in block via a matching SOCKS proxy.'
+  zh: '可复用技能：批量浏览、搜索、下载 Wallpaper Engine（小红车，Steam 431960）创意工坊壁纸并接入 DSH 皮肤中心；含绕过 Steam HTTP 封锁与异地登录拦截（经出口 IP 与账号一致的 SOCKS 代理）。'

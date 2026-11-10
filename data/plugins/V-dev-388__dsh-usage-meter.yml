@@ -1,0 +1,6 @@
+url: https://github.com/V-dev-388/dsh-usage-meter
+name: V-dev-388/dsh-usage-meter
+category: usage
+description:
+  en: 'Settings-page usage dashboard: per-provider/model token summary across all sessions, with today/7-day/30-day CSS-bar trends and a cache-hit rate.'
+  zh: 设置页用量仪表盘：按服务商/模型汇总全部会话 token 用量，含今日/近 7 天/近 30 天趋势柱状图与缓存命中率。

@@ -1,0 +1,6 @@
+url: https://github.com/16601134718/dsh-codex-cua
+name: 16601134718/dsh-codex-cua
+category: browser
+description:
+  en: 'Installs the codex-cua skill so DeepSeek Harness can use Codex computer use: drives Chrome and native macOS apps through the runtime bundled with the ChatGPT/Codex desktop app, ships a persistent session client and a doctor self-check. Requires the ChatGPT/Codex desktop app with its Chrome extension, Python 3.9+, and macOS.'
+  zh: '安装 codex-cua 技能，让 DeepSeek Harness 使用 Codex computer use：通过 ChatGPT/Codex 桌面端自带的运行时操作 Chrome 与 macOS 原生应用，自带常驻会话客户端与 doctor 自检。需已装 ChatGPT/Codex 桌面端及 Chrome 扩展、Python 3.9+，仅 macOS。'

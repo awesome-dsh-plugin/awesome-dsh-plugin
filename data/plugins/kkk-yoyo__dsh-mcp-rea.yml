@@ -1,0 +1,6 @@
+url: https://github.com/kkk-yoyo/dsh-mcp-rea
+name: kkk-yoyo/dsh-mcp-rea
+category: tools
+description:
+  en: 'Mounts the REA (Reverse Engineer Anything) MCP server through two gateway tools instead of registering its 200+ tool schemas on every request: rea_list searches the catalog or returns one tool''s input schema, and rea_call invokes that tool, each call spawning a short-lived rea mcp process, so the tool definitions sent per step drop from about 780 KB (207 tools as measured in REA 6.5.0) to about 1-2 KB. When no rea entry point is found it installs rea-agents into a plugin-private directory with the pnpm bundled in DSH (dependency build scripts skipped) and links the reverse-engineer-anything and rea-gateway skills into the skills directory without overwriting existing ones.'
+  zh: '把 REA（逆向一切）的 MCP 服务收成两个网关工具，而不是每次请求都注册它的 200 多个工具 schema：rea_list 按名字/描述搜索工具目录、或取单个工具的完整 input schema，rea_call 按原始工具名调用，每次调用启动一个短命 rea mcp 子进程，每步请求的工具定义由约 780 KB（REA 6.5.0 实测 207 个工具）降到约 1-2 KB。找不到 rea 入口时，用 DSH 自带的 pnpm 把 rea-agents 装进插件私有目录（跳过依赖构建脚本），并把 reverse-engineer-anything 与 rea-gateway 两个技能链接进技能目录，已存在的同名技能不会被覆盖。'

@@ -1,0 +1,7 @@
+url: https://github.com/SAXEM1997/dsh-cherry-bridge
+name: SAXEM1997/dsh-cherry-bridge
+category: remote
+description:
+  en: Bridge DeepSeek Harness sessions to Cherry Studio desktops over the LAN - QR pairing, 15 cherry_* tools for agents, sessions, history and interactions, a settings page for devices and per-workspace tool scope, and an experimental subagent that delegates the way DSH's own subagent does (Claude Code / Codex style) with the child running on a Cherry Studio agent.
+  zh: 把 DeepSeek Harness 会话桥接到局域网内的 Cherry Studio 桌面端——二维码配对、15 个 cherry_* 工具（agent/会话/历史/交互）、设置页（设备管理、按工作区的工具启用范围），以及实验性子智能体（仿 DSH 官方 subagent / Claude Code · Codex 的委派方式，执行端换成 Cherry Studio 的 agent）。
+tarball: https://github.com/SAXEM1997/dsh-cherry-bridge/releases/latest/download/dsh-cherry-bridge.tgz

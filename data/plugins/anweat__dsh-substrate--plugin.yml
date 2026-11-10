@@ -1,0 +1,6 @@
+url: https://github.com/anweat/dsh-substrate/tree/master/plugin
+name: anweat/dsh-substrate#plugin
+category: dev
+description:
+  en: 'Diagnose duplicate DSH loader entry IDs before startup, report version-locked repair status in a read-only settings card, and apply or revert audited loader repairs through an external CLI.'
+  zh: '在 DSH 启动前诊断重复的 loader entry ID，通过只读设置卡片报告版本锁定的修复状态，并使用外部 CLI 应用或撤销经过审计的 loader 修复。'

@@ -1,0 +1,6 @@
+url: https://github.com/kenny2077/dsh-web-search-zai
+name: kenny2077/dsh-web-search-zai
+category: tools
+description:
+  en: "Web search for DeepSeek Harness through Z.ai or Zhipu, with Coding Plan MCP quota and REST API billing modes, a native bilingual settings card, and support for reusing an existing ZAI_API_KEY."
+  zh: "DeepSeek Harness 的 Z.ai / 智谱网页搜索插件，支持 Coding Plan MCP 套餐额度和 REST API 余额两种计费模式，提供原生中英文设置卡片，可复用现有 ZAI_API_KEY。"

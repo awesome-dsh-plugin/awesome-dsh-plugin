@@ -1,0 +1,6 @@
+url: https://github.com/Seetraum/harness-session-delete
+name: Seetraum/harness-session-delete
+category: session
+description:
+  en: 'Recycle bin for DSH sessions: sidebar delete icons, multi-select restore and permanent delete, live-session protection.'
+  zh: 'DSH 会话回收站：侧边栏删除图标、多选还原与彻底删除、活跃会话保护。'

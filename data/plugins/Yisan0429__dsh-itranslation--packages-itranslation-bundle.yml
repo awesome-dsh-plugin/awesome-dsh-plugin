@@ -1,0 +1,6 @@
+url: https://github.com/Yisan0429/dsh-itranslation/tree/main/packages/itranslation/bundle
+name: Yisan0429/dsh-itranslation#bundle
+category: workflow
+description:
+  en: 'Whole-book translation production line for DeepSeek Harness: deterministic chapter detection and segmentation, per-chapter subagent translation, glossary control, full-book review, targeted revision, and auditable meta.json evidence.'
+  zh: 'DeepSeek Harness 整本书翻译生产线：确定性章节识别与分段、子代理逐章翻译、术语表控制、全书审查、定向修订，以及可审计的 meta.json 证据链。'

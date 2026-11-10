@@ -1,0 +1,6 @@
+url: https://github.com/Ceelog/dsh-plugins/tree/main/src/plugins/dsh-plugin-setting-mcp
+name: Ceelog/dsh-plugins#dsh-plugin-setting-mcp
+category: ui
+description:
+  en: 'Manage MCP servers from the Web settings panel: view, add, edit, remove, enable or disable them, with hot reload on save.'
+  zh: 在 Web 设置面板中查看、添加、编辑、删除、启用或停用 MCP 服务器，保存后热重载。

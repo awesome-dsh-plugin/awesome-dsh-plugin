@@ -1,0 +1,6 @@
+url: https://github.com/shengsheng90/DSH-taskboard
+name: shengsheng90/DSH-taskboard
+category: workflow
+description:
+  en: 'Local SQLite taskboard as a native overlay page: projects, tasks, comments, relations, attachments and workflow automation, with backlog → todo → in_progress → in_review → done statuses, `taskboard_*` Agent tools that can only submit work to in_review, a headless JSON CLI and a packaged skill.'
+  zh: 本地 SQLite 任务板，以原生覆盖页呈现：项目、任务、评论、关联、附件与工作流自动化，状态流转 backlog → todo → in_progress → in_review → done；提供 `taskboard_*` Agent 工具（Agent 只能提交到 in_review，验收需人工）、无头 JSON CLI 与打包 skill。

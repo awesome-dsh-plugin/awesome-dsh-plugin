@@ -1,0 +1,7 @@
+url: https://github.com/KAIXIN2006/dsh-qwen-coupon-balance
+name: KAIXIN2006/dsh-qwen-coupon-balance
+category: usage
+description:
+  en: Shows your Alibaba Cloud cash-coupon balance - the credit that pays for Qwen and DashScope calls - in the DSH sidebar, with an AccessKey form that keeps the key on your machine.
+  zh: 在 DSH 侧边栏显示阿里云代金券余额（抵扣千问 / 百炼调用的那笔钱），AccessKey 只保存在本机。
+icon: https://raw.githubusercontent.com/KAIXIN2006/dsh-qwen-coupon-balance/main/assets/icon-180.png

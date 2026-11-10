@@ -1,0 +1,6 @@
+url: https://github.com/SnowAmberX/dsh-role-router
+name: SnowAmberX/dsh-role-router
+category: model
+description:
+  en: Routes agent requests to configurable default, planner, and subagent models, automatically using the planner role in plan mode, with per-role reasoning effort and Web UI configuration.
+  zh: 按 default、planner 和 subagent 角色将代理请求路由到可配置模型，在计划模式下自动使用 planner，并提供逐角色推理强度与 Web UI 配置。

@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-canteen-retention-check
+name: PerryLink/dsh-canteen-retention-check
+category: tools
+description:
+  en: 'Checks a canteen food-retention ledger for the four required record elements, the 125 g minimum, the 48-hour cold-storage window and template placeholders left in a cell.'
+  zh: '核对食堂留样台账的四个记录要素、125 克下限、48 小时冷藏窗口，以及单元格中残留的模板占位符。'

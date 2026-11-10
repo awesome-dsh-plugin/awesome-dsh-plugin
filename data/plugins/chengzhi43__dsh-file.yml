@@ -1,0 +1,6 @@
+url: https://github.com/chengzhi43/dsh-file
+name: chengzhi43/dsh-file
+category: ui
+description:
+  en: 'VS Code-style file manager: browse the conversation workspace in a sidebar tree and edit files in the center column with Monaco, with theme import/export and Markdown preview.'
+  zh: VS Code 风格文件管理器：侧边栏文件树浏览当前对话工作区，中间列用 Monaco 编辑文件，支持主题导入导出与 Markdown 预览。

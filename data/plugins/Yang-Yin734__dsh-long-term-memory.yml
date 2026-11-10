@@ -1,0 +1,7 @@
+url: https://github.com/Yang-Yin734/dsh-long-term-memory
+name: dsh-long-term-memory
+category: memory
+description:
+  en: "A long-term memory box for DeepSeek Harness settings: type it once and every new session carries it. 0.3.0 can also expand a rough note into a five-section requirement sheet that keeps every requirement of yours verbatim, marks anything the model had to invent as 推断 and deletable, and lists the dimensions you left open instead of deciding them for you."
+  zh: "在 DSH 设置页维护一份跨会话生效的长时记忆：填一次，之后每个新会话都带着它。0.3.0 可把草稿细化为五节需求说明——你写的要求逐条保留，模型补的每一条标为「推断」可删，你没提的维度单列出来问你；采用、换一版、不改都由你决定。"
+tarball: https://github.com/Yang-Yin734/dsh-long-term-memory/releases/latest/download/dsh-long-term-memory.tgz

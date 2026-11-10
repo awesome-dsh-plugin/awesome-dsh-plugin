@@ -1,0 +1,6 @@
+url: https://github.com/Tyan66666/billion-context-dsh
+name: Tyan66666/billion-context-dsh
+category: memory
+description:
+  en: 'Model-driven context compression (Active Context Pruning) for DeepSeek Harness: the model decides when and what to compress.'
+  zh: 模型驱动的上下文压缩（Active Context Pruning）：由模型决定何时压缩、压缩什么。

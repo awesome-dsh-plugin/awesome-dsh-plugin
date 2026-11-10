@@ -1,0 +1,6 @@
+url: https://github.com/shenkonghui/dsh-worktree-manager
+name: shenkonghui/dsh-worktree-manager
+category: git
+description:
+  en: "Git worktree management for dsh — group workspaces by repository, create and switch worktrees, and browse their changes, commit history and file diffs."
+  zh: "dsh 的 Git worktree 管理——按仓库聚合工作区，创建与切换 worktree，并查看变更、提交历史与文件差异。"

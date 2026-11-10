@@ -1,0 +1,6 @@
+url: https://github.com/yangyongzhen/dsh-scheduler
+name: yangyongzhen/dsh-scheduler
+category: workflow
+description:
+  en: 'Cron/one-shot scheduled tasks: run shell commands or fire webhooks on a schedule, with optional ServerChan/DingTalk/Feishu/webhook delivery of results.'
+  zh: cron / 一次性定时任务：按调度执行 shell 命令或投递 webhook，结果可推送到 ServerChan / 钉钉 / 飞书 / 通用 Webhook。

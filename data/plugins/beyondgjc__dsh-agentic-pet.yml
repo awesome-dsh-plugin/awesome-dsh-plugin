@@ -1,0 +1,6 @@
+url: https://github.com/beyondgjc/dsh-agentic-pet
+name: beyondgjc/dsh-agentic-pet
+category: fun
+description:
+  en: 'A model-driven desktop pet, derived from PC2005-cloud/dsh-pet (MIT): an always-on-top companion that follows your agent sessions, races the Web UI to answer approvals and questions, keeps a per-pet affection ledger, speaks through pet_say/pet_do tools or an autonomous inner voice, and can read those lines aloud through BreezeBlue TTS with your own BreezeBlue API key. It uses its own /whale598 route and ~/.dsh/whale598 data directory, so it is a separate pet from dsh-pet rather than a replacement for it.'
+  zh: '模型驱动的桌面宠物，派生自 PC2005-cloud/dsh-pet（MIT）：独立置顶小窗跟随会话状态，与 Web 界面竞速应答审批与提问，维护每宠独立的好感账本，经 pet_say/pet_do 工具或自主内心戏说话，并可用自备的 BreezeBlue API Key 通过 BreezeBlue 把台词读出来。它使用独立的 /whale598 路由与 ~/.dsh/whale598 数据目录，是独立于 dsh-pet 的另一只桌宠，不替代上游。'

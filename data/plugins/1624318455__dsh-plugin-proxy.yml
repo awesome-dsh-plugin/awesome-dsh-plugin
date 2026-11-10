@@ -1,0 +1,6 @@
+url: https://github.com/1624318455/dsh-plugin-proxy
+name: 1624318455/dsh-plugin-proxy
+category: dev
+description:
+  en: Runtime-switchable outbound HTTP/SOCKS5 proxy for DSH with a web settings card.
+  zh: DSH 运行时可切换的出站 HTTP/SOCKS5 代理，带网页设置卡片。

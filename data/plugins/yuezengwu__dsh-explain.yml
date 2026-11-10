@@ -1,0 +1,6 @@
+url: https://github.com/yuezengwu/dsh-explain
+name: yuezengwu/dsh-explain
+category: session
+description:
+  en: 'Local-first learning mode: cross-session learning threads with per-source explanations.'
+  zh: 本地优先学习模式：跨会话全局学习线程、按来源讲解。

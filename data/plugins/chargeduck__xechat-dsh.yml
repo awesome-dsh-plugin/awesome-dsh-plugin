@@ -1,0 +1,7 @@
+url: https://github.com/chargeduck/xechat-dsh
+name: chargeduck/xechat-dsh
+category: ui
+tarball: https://github.com/chargeduck/xechat-dsh/releases/latest/download/xechat-dsh.tgz
+description:
+  en: 'Dockable side panel that keeps an XEChat chat session connected over a single WebSocket: markdown messages with images and emoji, server switching through #showServer and #login, an online member list, a full-screen panic overlay, and dock side, width and visibility persisted to localStorage.'
+  zh: '可停靠的侧边面板，用一条 WebSocket 保持 XEChat 聊天在线：支持图片与表情的 Markdown 消息、通过 #showServer 与 #login 切换服务器、在线成员列表、全屏伪装覆盖层，停靠位置、宽度与可视状态持久化到 localStorage。'

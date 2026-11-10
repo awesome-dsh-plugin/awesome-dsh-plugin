@@ -1,0 +1,6 @@
+url: https://github.com/baixianger/dsh-weave
+name: baixianger/dsh-weave
+category: remote
+description:
+  en: Trusted Iroh mesh networking for DSH hosts, with encrypted peer discovery, remote session delivery, and reachability status.
+  zh: 基于 Iroh 的可信 DSH 主机网状网络：提供加密的节点发现、远程会话投递与连通状态。

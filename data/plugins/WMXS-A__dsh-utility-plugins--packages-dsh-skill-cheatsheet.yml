@@ -1,0 +1,6 @@
+url: https://github.com/WMXS-A/dsh-utility-plugins/tree/main/packages/dsh-skill-cheatsheet
+name: WMXS-A/dsh-utility-plugins#dsh-skill-cheatsheet
+category: ui
+description:
+  en: 'Composer button that opens a panel listing every skill available to the current session with Chinese titles, purposes and usage examples, and lets you catalogue newly installed skills in one click (saved locally).'
+  zh: '在输入框工具栏提供一个按钮，一键打开技能面板，列出当前会话的全部技能（中文标题、用途与例句），并可一键收录新安装但尚未录入词典的技能（保存在本机）。'

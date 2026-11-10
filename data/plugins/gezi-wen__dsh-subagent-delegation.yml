@@ -1,0 +1,6 @@
+url: https://github.com/gezi-wen/dsh-subagent-delegation
+name: gezi-wen/dsh-subagent-delegation
+category: workflow
+description:
+  en: 'Ships a skill about handing work to subagents instead of doing it inline - which tasks are worth fanning out, how many to run at once, how to send them in parallel, and how to check what they returned instead of trusting the summary.'
+  zh: '携带一份讲「什么该交给子 agent 做、而不是自己顺手做」的技能——哪些任务值得扇出、一次派几个、并行怎么发，以及子 agent 回来后怎么核对它真的做了什么，而不是信它的总结。'

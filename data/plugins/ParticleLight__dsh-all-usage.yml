@@ -1,0 +1,7 @@
+url: https://github.com/ParticleLight/dsh-all-usage
+name: ParticleLight/dsh-all-usage
+category: usage
+tarball: https://github.com/ParticleLight/dsh-all-usage/releases/download/v1.2.3/dsh-all-usage-1.2.3.tgz
+description:
+  en: 'Analyzes usage and cost across models, providers and workspaces over any date range: hourly single-day and daily cross-day trends, a 53-week heatmap, cache-hit and model/workspace shares, plus request logs, CSV export and a ledger that survives session and workspace deletion. Highlights: multi-dimensional usage analysis, model and workspace insight, configurable cost and balance, full history with incremental sync, and auditable day-to-day operations.'
+  zh: '统一分析多模型、多供应商、多工作区的用量与成本：任意起止日期、单日小时与跨日趋势、53 周热力图、缓存命中与模型/工作区占比，另有请求日志、CSV 导出与可跨会话恢复的持久账本。特点：多维用量分析，模型与工作区洞察，可配置成本与余额，完整历史与增量同步，可审计的日常操作。'

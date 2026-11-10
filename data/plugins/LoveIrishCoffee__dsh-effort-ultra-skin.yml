@@ -1,0 +1,12 @@
+url: https://github.com/LoveIrishCoffee/dsh-effort-ultra-skin
+name: LoveIrishCoffee/dsh-effort-ultra-skin
+category: theme
+description:
+  en: >-
+    A CSS skin that restyles the reasoning-tier control drawn by
+    hytime/dsh-thinking-effort into a blue-to-violet pill with a starfield and a
+    sheen sweep, with matching light and dark palettes. Requires that plugin to
+    be installed; it adds no UI of its own.
+  zh: >-
+    给 hytime/dsh-thinking-effort 已经画出来的推理等级控件换一层 CSS 皮肤：蓝紫渐变胶囊、
+    星点与流光，浅色与深色主题各一套配色。需先安装该插件，自身不新增任何界面。

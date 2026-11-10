@@ -1,0 +1,6 @@
+url: https://github.com/kelearns/dsh-token-usage
+name: kelearns/dsh-token-usage
+category: usage
+description:
+  en: 'Token usage heatmap for the Web UI: daily/weekly/cumulative views over a 12-month window with light/dark themes.'
+  zh: Token 用量热力图：日/周/累计视图，12 个月窗口，支持深浅色主题。

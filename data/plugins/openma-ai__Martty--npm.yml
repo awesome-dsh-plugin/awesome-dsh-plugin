@@ -1,0 +1,6 @@
+url: https://github.com/openma-ai/Martty/tree/main/npm
+name: openma-ai/Martty#npm
+category: ui
+description:
+  en: A DSH-first Rust/ratatui agent TUI with streamed tool calls, subagents, durable sessions, and a Cordis-extensible client UI.
+  zh: 面向 DeepSeek Harness 的 Rust/ratatui Agent TUI，支持流式工具调用、子代理、持久会话和可扩展的 Cordis 客户端界面。

@@ -1,0 +1,7 @@
+url: https://github.com/neobones/dsh-locale-es-cl
+name: neobones/dsh-locale-es-cl
+category: ui
+tarball: https://github.com/neobones/dsh-locale-es-cl/releases/download/v1.0.0/dsh-locale-es-cl-1.0.0.tgz
+description:
+  en: 'Adds Chilean Spanish (es-CL) to the Web UI language list: 2,603 strings across 57 namespaces, with per-key fallback to English.'
+  zh: 为 Web 界面新增智利西班牙语（es-CL）：57 个命名空间、2603 条文案，缺失项按 key 回退英文。

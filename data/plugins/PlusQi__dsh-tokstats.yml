@@ -1,0 +1,7 @@
+url: https://github.com/PlusQi/dsh-tokstats
+name: PlusQi/dsh-tokstats
+category: usage
+description:
+  en: 'A possibly useful DSH token usage plugin: cross-session stats on where your tokens went - four headline figures, context length distribution, a 12-week heatmap and weekly trend, plus workspace and model rankings; it also ships a next-turn token forecast and a draft-optimization feature.'
+  zh: '可能有用的 DSH token 用量插件，跨会话统计 token 都花在哪儿了：用量总览四项指标、上下文长度分布、近 12 周热力图与按周趋势，工作区与模型排行；另附有发送前 token 预告和输入草稿优化功能。'
+icon: https://raw.githubusercontent.com/PlusQi/dsh-tokstats/master/docs/assets/icon-180.png

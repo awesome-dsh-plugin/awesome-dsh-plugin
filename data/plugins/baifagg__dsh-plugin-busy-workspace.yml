@@ -1,0 +1,7 @@
+url: https://github.com/baifagg/dsh-plugin-busy-workspace
+name: baifagg/dsh-plugin-busy-workspace
+category: ui
+description:
+  en: 'Ranks workspaces holding a session that wants attention to the top of the sidebar session list - waiting on you first, then running, then finished-but-unopened, then just read - and draws those rows with a state bar, tinted surface and coloured title, plus a one-shot settle pulse when a run stops. Every colour is taken from the active theme''s own tokens, and the three windows that decide how long a finished session stays promoted are settings.'
+  zh: '把含“需要注意的会话”的工作区按紧急度排到侧栏会话列表最前——待你处理优先，其次运行中，再次完成未读，最后刚读过的——并为这些行画状态竖条、着色底与着色标题，一次运行结束时播放一次收敛动效。所有颜色都取自当前主题自身的变量；决定完成会话置顶时长的三个窗口都是可配置项。'
+tarball: https://github.com/baifagg/dsh-plugin-busy-workspace/releases/latest/download/dsh-plugin-busy-workspace.tgz

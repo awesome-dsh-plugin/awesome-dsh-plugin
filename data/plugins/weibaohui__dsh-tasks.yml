@@ -1,0 +1,6 @@
+url: https://github.com/weibaohui/dsh-tasks
+name: weibaohui/dsh-tasks
+category: workflow
+description:
+  en: "Scheduled tasks: run a prompt on cron schedules, each run opens a new agent session to do the work, with workspace binding, manual run, session auto-naming, and a fullscreen task management page."
+  zh: 定时任务：用 cron 表达式定时执行提示词，到点自动开一个新 agent 会话替你干活，支持绑定工作区、手动立即执行与会话自动命名。

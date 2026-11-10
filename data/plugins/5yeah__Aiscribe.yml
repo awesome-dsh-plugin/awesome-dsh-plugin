@@ -1,0 +1,6 @@
+url: https://github.com/5yeah/Aiscribe
+name: 5yeah/Aiscribe
+category: workflow
+description:
+  en: 'Reads local AI session history from 16 AI tools plus Windows recent-file activity, and generates daily or weekly work reports on your machine. Currently Windows x64 only: the plugin ships a bundled Windows sidecar (no Python needed); macOS/Linux are not supported yet.'
+  zh: 读取 16 个 AI 工具的本地会话记录，外加 Windows 最近文件活动，在本机生成日报或周报。目前仅支持 Windows x64：插件自带 Windows sidecar，无需安装 Python；macOS / Linux 暂不支持。

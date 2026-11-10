@@ -1,0 +1,6 @@
+url: https://github.com/YooRarely/dsh-open-explorer
+name: YooRarely/dsh-open-explorer
+category: ui
+description:
+  en: 'Adds buttons to open the current DSH workspace root in the host file manager.'
+  zh: '在 DSH 会话标题和工作区菜单中添加按钮，用系统文件管理器打开当前 Workspace 根目录。'

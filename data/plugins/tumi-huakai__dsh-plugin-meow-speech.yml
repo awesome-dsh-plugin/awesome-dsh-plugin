@@ -1,0 +1,6 @@
+url: https://github.com/tumi-huakai/dsh-plugin-meow-speech
+name: tumi-huakai/dsh-plugin-meow-speech
+category: ui
+description:
+  en: 'Display-layer text replacement for DSH chat messages: rewrite how any configured text appears on screen without touching the real conversation, with per-rule whole-word matching and code-block protection.'
+  zh: '显示层文本替换：自定义消息中任意文本的界面显示而不改动真实对话，支持逐条整词匹配、长词优先与代码块保护。'

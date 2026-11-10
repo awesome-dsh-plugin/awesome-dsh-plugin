@@ -1,0 +1,6 @@
+url: https://github.com/zshqzcn/dsh-plugin-agent-bridge
+name: zshqzcn/dsh-plugin-agent-bridge
+category: remote
+description:
+  en: 'Two-way agent bridge between two DeepSeek Harness hosts: either side can ask the other agent questions and run bounded dialogues over a PSK-authenticated TCP link, with a chat page on both sides and read-only tool posture by default. Both ends need the same shared key and a nodeId configured.'
+  zh: '两台 DeepSeek Harness 主机之间的双向 agent 桥：任一侧可向对端 agent 提问并运行有界多轮对话，链路经 PSK 认证；两侧提供聊天页，默认只读工具姿态。两端需配置相同的共享密钥与 nodeId。'

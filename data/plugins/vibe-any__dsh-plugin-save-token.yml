@@ -1,0 +1,6 @@
+url: https://github.com/vibe-any/dsh-plugin-save-token
+name: vibe-any/dsh-plugin-save-token
+category: memory
+description:
+  en: 'Reversible context slimming for DeepSeek Harness: TOON-style lossless tabular re-encoding of uniform JSON arrays, stride-sampled table windows with line numbers, and cross-turn dedup for repeated tool output; every replacement passes a byte-plus-token gate (≤72% bytes, strictly fewer estimated tokens) and the original is spilled to disk behind a `[save-token #id]` notice retrievable in one call via the `save_token_expand` tool, with billed and avoided token metering on a settings dashboard.'
+  zh: '可逆的上下文瘦身插件：均匀 JSON 数组走 TOON 式无损表格化重编码，管道表按行号抽样保留窗口，90 秒内字节级相同的工具输出跨轮去重；每次替换都要通过双重门（压缩后 ≤72% 字节且估算 token 严格下降），原文落盘并以 `[save-token #id]` 标记，可用 `save_token_expand` 工具一步取回；设置页仪表盘分别统计实际计费与节省的 token。'

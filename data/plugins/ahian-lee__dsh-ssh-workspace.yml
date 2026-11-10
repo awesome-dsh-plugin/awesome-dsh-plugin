@@ -1,0 +1,15 @@
+url: https://github.com/ahian-lee/dsh-ssh-workspace
+name: ahian-lee/dsh-ssh-workspace
+category: remote
+description:
+  en: >-
+    SSH workspaces for Windows DeepSeek Harness Desktop 0.2: discover OpenSSH
+    hosts, add or browse remote project directories, and route file, search and
+    Bash operations by workspace while the DSH runtime stays local. A Desktop
+    compatibility fork of Yan-Zero/dsh-remote-ssh that preserves local permission
+    defaults.
+  zh: >-
+    为 Windows DeepSeek Harness Desktop 0.2 提供 SSH 工作区：发现 OpenSSH
+    主机、添加或浏览远端项目目录，按工作区路由文件、搜索与 Bash 操作，DSH
+    运行时仍在本地。基于 Yan-Zero/dsh-remote-ssh 的 Desktop 兼容分支，保留本地默认权限。
+tarball: https://github.com/ahian-lee/dsh-ssh-workspace/releases/latest/download/dsh-ssh-workspace.tgz

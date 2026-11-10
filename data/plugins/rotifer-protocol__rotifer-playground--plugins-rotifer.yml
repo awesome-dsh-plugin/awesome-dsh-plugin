@@ -1,0 +1,6 @@
+url: https://github.com/rotifer-protocol/rotifer-playground/tree/main/plugins/rotifer
+name: rotifer-protocol/rotifer-playground#rotifer
+category: tools
+description:
+  en: "Rotifer Protocol skills plus the Rotifer MCP server, configured as instances of DSH's own skill provider and MCP client: search Genes, compare them on Arena rankings, install or roll back Genes in the local project, and create and run local Agents. The MCP server is version-pinned and limited to its evolve tool set, which leaves out publishing and login."
+  zh: 'Rotifer 协议的技能包加 Rotifer MCP 服务，以 DSH 自带的技能提供器与 MCP 客户端实例的形式挂载：搜索 Gene、按 Arena 排名比较、在本地项目里安装或回滚 Gene，并创建和运行本地 Agent。MCP 服务锁定版本，只开放 evolve 工具集，不含发布与登录。'

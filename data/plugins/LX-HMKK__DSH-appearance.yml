@@ -1,0 +1,6 @@
+url: https://github.com/LX-HMKK/DSH-appearance
+name: LX-HMKK/DSH-appearance
+category: theme
+description:
+  en: 'A lightweight font and theme plugin for the DSH client: Latin/Chinese/code font pickers that list only installed families, and five official palettes (One Dark Pro, Dracula, Nord, GitHub, Catppuccin) applied through the official theme tokens, including code-block syntax colors. No bundled fonts, no dependencies, no build step. Requires DSH 0.2.0-rc.2 or newer.'
+  zh: 轻量的 DSH 字体与主题插件：中英文与代码字体选择器（只列本机已安装的字体），以及 One Dark Pro、Dracula、Nord、GitHub、Catppuccin 五套官方色板预设，全部走官方主题 token（含代码块语法高亮），不打包字体、零依赖、零构建。需要 DSH 0.2.0-rc.2 或更新。

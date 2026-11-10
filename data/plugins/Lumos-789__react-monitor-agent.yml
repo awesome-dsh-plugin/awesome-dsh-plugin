@@ -1,0 +1,6 @@
+url: https://github.com/Lumos-789/react-monitor-agent
+name: Lumos-789/react-monitor-agent
+category: skill
+description:
+  en: 'Skill shell that installs, runs and troubleshoots React-Monitor-Agent, a human-agent operation board built on review replay and checkpoints: the agent writes its work as a structured replay timeline of screenshot, diff, text, link and file nodes, and the human decides at plan, progress, risk and delivery checkpoints, with verdicts branching the timeline and rejected branches kept greyed-out for audit. The skill guides cloning the source repo and starting a zero-dependency Node event service on 127.0.0.1:8790 plus a React board on localhost:5173 that ships an offline FIXTURE demo mode. The bundle embeds the skill only; product source stays in the repo.'
+  zh: '安装壳技能：安装、跑起并排障 React-Monitor-Agent 人机协作操作板——agent 把工作过程写成由截图、diff、文本、链接、文件节点组成的结构化回放时间线，人在方案/阶段/风险/完工四类检查点上拍板，决策改变时间线走向，被否定/改向的旧分支灰掉保留以供审计。技能引导克隆主仓，启动零依赖 Node 事件服务（127.0.0.1:8790）与 React 操作板（localhost:5173），操作板内置离线 FIXTURE 演示模式。bundle 只内嵌技能，产品源码以主仓为准。'

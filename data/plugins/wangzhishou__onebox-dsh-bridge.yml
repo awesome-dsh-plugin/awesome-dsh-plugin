@@ -1,0 +1,7 @@
+url: https://github.com/wangzhishou/onebox-dsh-bridge
+name: wangzhishou/onebox-dsh-bridge
+category: remote
+tarball: https://github.com/wangzhishou/onebox-dsh-bridge/releases/latest/download/onebox-dsh-bridge.tgz
+description:
+  en: 'Android client implementation for DeepSeek Harness: bridges local dsh web to the OneBox app with QR scan-to-pair and an end-to-end encrypted cloud relay tunnel.'
+  zh: 'DeepSeek Harness 的 Android 客户端实现:扫码配对 + 端到端加密云端中继,把本机 dsh web 桥接到万宝盒 App。'

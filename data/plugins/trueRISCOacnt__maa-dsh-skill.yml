@@ -1,0 +1,7 @@
+# data/plugins/<你的用户名>__<你的仓库名>.yml
+url: https://github.com/trueRISCOacnt/maa-dsh-skill
+name: trueRISCOacnt/maa-dsh-skill
+category: tools
+description:
+  en: A DeepSeek Harness Skill built on the official command-line tool maa-cli for MaaAssistantArknights (MAA), enabling direct control of MaaCore to automate daily tasks in Arknights.
+  zh: 基于 MaaAssistantArknights (MAA) 官方命令行工具 maa-cli 构建的 DeepSeek Harness Skill：让 DeepSeek Harness 直接驱动 MaaCore，自动化完成《明日方舟》日常任务。

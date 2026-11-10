@@ -1,0 +1,6 @@
+url: https://github.com/winditer/dsh-prompt-optimizer
+name: winditer/dsh-prompt-optimizer
+category: ui
+description:
+  en: Polishes the draft in the composer into a clearer, better-structured prompt from the ✨ button or Alt+O; streams the result live over SSE with reasoning shown first, and follows the session's default model with zero configuration or any OpenAI-compatible endpoint.
+  zh: 在输入框按 ✨ 或 Alt+O 一键把草稿润色成更清晰、更结构化的 prompt；默认零配置复用当前会话模型（SSE 真流式、推理过程先出），也可自配任意 OpenAI 兼容端点。

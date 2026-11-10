@@ -1,0 +1,7 @@
+url: https://github.com/ltmroberthk915/dsh-pet
+name: ltmroberthk915/dsh-pet
+category: fun
+tarball: https://github.com/ltmroberthk915/dsh-pet/releases/download/v1.5.0/dsh-pets-multiworkers-1.5.0.tgz
+description:
+  en: 'Multi-pet tank for DSH: every active top-level conversation gets its own companion at once. Animation and status bubbles show real work phases; model-based palettes and tok/s-driven running distinguish models and vendors; the conversation menu keeps a chosen pet on screen after its result is viewed. Shared feeding, affinity and naming keep the tank one workflow. A fork of zhu1090093659/dsh-pet (Apache-2.0); both register the same pet bundle row, so the two cannot be installed together.'
+  zh: 'DSH 一池多宠桌宠：所有活跃顶层会话同时各有一只宠物，不用切会话就能看到整条工作队列。动作与状态气泡显示真实工作阶段，模型配色与 tok/s 跑速区分模型/供应商；会话菜单「专属宠物保持」让指定对话的宠物在结果查看、切走后也不回收，多宠共享喂食、亲密度与命名。基于 zhu1090093659/dsh-pet（Apache-2.0）改造，两者注册同一个 pet bundle 行，不能与上游同装。'

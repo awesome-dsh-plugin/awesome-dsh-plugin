@@ -1,0 +1,6 @@
+url: https://github.com/vvvspec/better-reasoning-slider
+name: vvvspec/better-reasoning-slider
+category: ui
+description:
+  en: 'Official-style composer model trigger with a floating reasoning-effort slider popup.'
+  zh: 官方风格输入框 + 浮动推理能力滑块弹窗，节点与滑块对齐，弹窗跟随 Harness 主题自适应。

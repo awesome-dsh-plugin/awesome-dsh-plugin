@@ -1,0 +1,6 @@
+url: https://github.com/liustack/modlens
+name: liustack/modlens
+category: vision
+description:
+  en: 'Vision bridge for text-only models: paste an image, get structured JSON evidence (OCR, layout, semantics).'
+  zh: 为纯文本模型架起视觉桥梁：粘贴图片，输出结构化 JSON 证据（OCR、版面、语义）。

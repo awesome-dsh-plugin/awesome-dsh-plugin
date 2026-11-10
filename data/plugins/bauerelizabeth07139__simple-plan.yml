@@ -1,0 +1,6 @@
+url: https://github.com/bauerelizabeth07139/simple-plan
+name: bauerelizabeth07139/simple-plan
+category: skill
+description:
+  en: 'Strict verification for every task: plan 2-7 steps, execute them with worker subagents, verify each deliverable with an independent memoryless verifier subagent, and fix in at most three cycles before reporting honestly.'
+  zh: '给每个任务加上严格验证:把任务拆成 2-7 步,用 worker 子代理执行,每个交付物都由无记忆的独立 verifier 子代理验证,最多修 3 轮后如实汇报。'

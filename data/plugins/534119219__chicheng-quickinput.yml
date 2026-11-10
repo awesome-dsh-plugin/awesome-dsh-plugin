@@ -1,0 +1,6 @@
+url: https://github.com/534119219/chicheng-quickinput
+name: 534119219/chicheng-quickinput
+category: ui
+description:
+  en: 'Vault button beside the DSH composer: save keys, servers, phone numbers, addresses and URLs, auto-collected from conversations, password-protected with WebDAV backup; click to insert, Ctrl+click to send.'
+  zh: '输入栏旁的保险箱按钮：保存密钥、服务器、手机号、地址与网址，自动识别会话中的敏感信息提醒收录，密码保护并支持 WebDAV 备份；点击填入输入框，Ctrl+点击直接发送。'

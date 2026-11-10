@@ -1,0 +1,7 @@
+url: https://github.com/heshuren371/dsh-music-player
+name: heshuren371/dsh-music-player
+category: ui
+icon: https://raw.githubusercontent.com/heshuren371/dsh-music-player/main/assets/icon-180.png
+description:
+  en: 'Local music player: scans a folder for audio and video files, plays them in a Music tab with crossfade, a 10-band EQ and ReplayGain, and can write matched tags, covers and filenames back to the files with atomic replacement.'
+  zh: '本地音乐播放器：扫描目录中的音频与视频文件，在「音乐」标签页播放，支持交叉淡化、10 段均衡器与响度归一化，并可按歌手-歌名重命名回写标签、封面与文件名（原子替换）。'

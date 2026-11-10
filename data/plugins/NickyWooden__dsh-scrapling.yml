@@ -1,0 +1,6 @@
+url: https://github.com/NickyWooden/dsh-scrapling
+name: NickyWooden/dsh-scrapling
+category: skill
+description:
+  en: 'Bundles the official Scrapling agent skill into a DeepSeek Harness profile: anti-bot bypass, stealth browsing, the spiders framework, adaptive parsing and JavaScript rendering, discovered through the host skill catalog.'
+  zh: '把官方 Scrapling 技能包进 DeepSeek Harness profile：反反爬绕过、隐身浏览、spiders 框架、自适应解析与 JS 渲染，通过宿主技能目录发现。'

@@ -1,0 +1,6 @@
+url: https://github.com/ThinkofRain1213/dsh-smooth-cursor-patched
+name: ThinkofRain1213/dsh-smooth-cursor-patched
+category: ui
+description:
+  en: 'Comet-mode animated caret for the DSH Web composer: a glowing trail glides to the text position, with configurable accent color, thickness, trail, and a 500 ms idle blink. Extends the surface to ask-question card inputs, and fixes the caret vanishing on an empty composer or first focus, forward drag-selection not following the pointer, soft line breaks measuring against the previous line, and the caret painting outside the composer when long input scrolls. Maintained fork of Lacquervii/smooth-cursor.'
+  zh: 'DSH Web 输入框的彗星光标：发光拖尾随文字位置平滑滑动，可配置强调色、粗细、拖尾，并在静止 500ms 后呼吸。覆盖 ask-question 交互卡片的输入框，并修复空输入框或首次聚焦时光标消失、正向拖选不跟随鼠标、软换行按上一行测量、长内容滚动时光标绘制到输入框之外等问题。Lacquervii/smooth-cursor 的维护分支。'

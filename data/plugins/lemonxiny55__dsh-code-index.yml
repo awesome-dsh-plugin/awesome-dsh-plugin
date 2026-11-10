@@ -1,0 +1,6 @@
+url: https://github.com/lemonxiny55/dsh-code-index
+name: lemonxiny55/dsh-code-index
+category: tools
+description:
+  en: 'Local code intelligence for DSH: Impact X-Ray visualizes potential change impact with inspectable source evidence and uncertainty; also provides symbol navigation, bounded Context Packs and ArkTS support.'
+  zh: 'DSH 本地代码智能插件：Impact X-Ray 可视化展示潜在变更影响、源码证据与不确定性，并提供符号导航、有界 Context Pack 和 ArkTS 支持。'

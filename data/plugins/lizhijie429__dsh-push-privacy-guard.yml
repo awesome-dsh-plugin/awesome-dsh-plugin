@@ -1,0 +1,6 @@
+url: https://github.com/lizhijie429/dsh-push-privacy-guard
+name: lizhijie429/dsh-push-privacy-guard
+category: security
+description:
+  en: 'Privacy guard for git workflows: before git commit, git push or gh repo sync it scans the content that would enter git (local paths, user info, API keys, private keys, connection strings) and blocks anything not approved in the DSH approval UI; approved items go into a manageable, masked whitelist. Native DSH Config schema with live settings, first-push full-repository scan, fail-closed checks, zero npm runtime dependencies.'
+  zh: 'DSH 提交/推送前隐私检查：在 git commit、git push、gh repo sync 前只读扫描将要进入 git 的内容（本地路径、用户信息、API Key、私钥、连接串等），未授权内容不会上传；命中时通过 DSH 审批面板授权，授权项进入可管理的掩码白名单。支持原生 DSH Config（设置页热改开关）、首次推送全仓扫描、fail-closed，零 npm 运行时依赖。'

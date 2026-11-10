@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-phone-inbox
+name: PerryLink/dsh-phone-inbox
+category: session
+description:
+  en: 'Lists the attachments the current session actually received through the WeChat bridge and adopts one into the workspace on demand.'
+  zh: '列出当前会话通过微信桥实际收到的附件，并按需将其中一个采纳到工作区。'

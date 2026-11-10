@@ -1,0 +1,7 @@
+url: https://github.com/overflow7782/dsh-plugin-novel-reader
+name: overflow7782/dsh-plugin-novel-reader
+category: fun
+tarball: https://github.com/overflow7782/dsh-plugin-novel-reader/releases/latest/download/dsh-plugin-novel-reader.tgz
+description:
+  en: 'An offline novel reader: imports .txt and .epub into the right sidebar, shows the chapter being read in a resizable peek window above the composer, and resumes each book at the paragraph and in-paragraph position it was closed at.'
+  zh: '离线小说阅读器：把 .txt 与 .epub 导入右侧栏，在输入框上方用一个可缩放大小的速览窗显示正在读的章节，每本书都从关闭时的段落与段内位置继续。'

@@ -1,0 +1,6 @@
+url: https://github.com/Max-Samson/dsh-usage-chart
+name: Max-Samson/dsh-usage-chart
+category: usage
+description:
+  en: 'Token, cost, and balance dashboard under the composer: live indicator plus zero-dependency SVG charts for per-turn usage, estimated cost, and DeepSeek account balance.'
+  zh: 输入框下方的用量/成本/余额仪表盘：实时指标指示器 + 零依赖 SVG 用量图表，按轮次统计用量、估算成本并实时查询 DeepSeek 账户余额。

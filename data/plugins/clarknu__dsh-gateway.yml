@@ -1,0 +1,6 @@
+url: https://github.com/clarknu/dsh-gateway
+name: clarknu/dsh-gateway
+category: remote
+description:
+  en: 'HTTPS + login gateway for the DeepSeek Harness web surface: access your DSH Web UI securely from another machine on your LAN, or from the internet via port forwarding. Fail-closed defaults (loopback-only, no accounts until configured); setup and security notes in the README.'
+  zh: '为 DSH Web 界面提供 HTTPS + 登录保护的远程访问网关：局域网内其它设备可安全访问，配置端口映射后可从互联网访问。默认 fail-closed（仅本机监听、无内置账号，配置后才能登录），配置与安全说明见 README。'

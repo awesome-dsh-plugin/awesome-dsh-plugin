@@ -1,0 +1,6 @@
+url: https://github.com/darrien1998/dsh-ditto
+name: darrien1998/dsh-ditto
+category: workflow
+description:
+  en: "Review-first batch automation for DeepSeek Harness: three reviewed samples, a full preview, one approval, then a safe apply across many files."
+  zh: "DeepSeek Harness 的审核优先批量自动化：先审核三个样本，预览全部结果，一次批准，再安全地应用到多个文件。"

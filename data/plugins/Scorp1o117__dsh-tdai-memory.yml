@@ -1,0 +1,6 @@
+url: https://github.com/Scorp1o117/dsh-tdai-memory
+name: Scorp1o117/dsh-tdai-memory
+category: memory
+description:
+  en: TencentDB Agent Memory integration with conversation capture, structured memory extraction, automatic recall, and memory and conversation search tools.
+  zh: 集成 TencentDB Agent Memory，支持对话捕获、结构化记忆提取、自动召回，以及记忆和对话搜索工具。

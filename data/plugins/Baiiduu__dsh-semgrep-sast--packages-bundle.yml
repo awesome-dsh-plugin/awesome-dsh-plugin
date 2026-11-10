@@ -1,0 +1,6 @@
+url: https://github.com/Baiiduu/dsh-semgrep-sast/tree/main/packages/bundle
+name: Baiiduu/dsh-semgrep-sast#semgrep-sast
+category: security
+description:
+  en: 'Workspace-scoped Semgrep SAST tool for DeepSeek Harness with a managed Windows x64 runtime, structured bounded findings, cancellation and timeout controls, and user-approved sandbox escalation. Installs from npm as @aaub-software/dsh-semgrep-sast.'
+  zh: '面向 DeepSeek Harness 的工作区内 Semgrep SAST 工具，提供托管 Windows x64 运行时、结构化有界结果、取消与超时控制，以及经用户批准的沙箱权限升级。npm 包名为 @aaub-software/dsh-semgrep-sast。'

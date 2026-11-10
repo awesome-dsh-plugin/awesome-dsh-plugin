@@ -1,0 +1,7 @@
+url: https://github.com/fountainhead-gq/dsh-weread-gather
+name: fountainhead-gq/dsh-weread-gather
+category: ui
+description:
+  en: "Digital Study: a private WeRead study in the DSH sidebar, in a calm light-green paper palette. The shelf folds into ten categories; highlights and thoughts page through, copy per item, and export as front-matter Markdown (one file per book or a cross-book batch) into a folder you choose; the whole study backs up and restores as a single JSON bundle. A five-shade reading heatmap that separates future days from past days without reading, and a year-scoped KPI dashboard, sit on top. Sync is incremental: a local ledger plus per-book counts mean an unchanged library refreshes in 2-3 seconds instead of a full pull, and a banner reports progress and dismisses itself after eight seconds. Search covers shelf, books, highlights and thoughts with type filters. Reads WeRead through the official agent gateway using your own API key, keeps everything in local JSON and never writes back. Requires DSH >=0.2.2-rc.1."
+  zh: "数字书房：把微信读书搬进 DSH 侧栏的私人书房，清爽的浅绿纸感配色。书架折叠成 10 大类，划线与想法可分页、可单条复制，也能勾选导出成带 front-matter 的 Markdown（一本书一个文件，或跨书批量），存到你指定的目录；整间书房还能一键备份与恢复成一份 JSON。顶部是五档阅读热力图（区分未来日期与过去没读的日子）与可切换年份的统计表盘。同步是增量的：靠本地账本与每本书的计数比对，数据没变化时 2~3 秒就完成，不用整库重拉；进度提示条会在完成后 8 秒自动消失。书架、书籍、划线、想法都能搜索并支持类型筛选。通过官方 agent 网关用你自己的 API Key 读取，全部落在本机 JSON，绝不写回。要求 DSH >=0.2.2-rc.1。"
+icon: https://raw.githubusercontent.com/fountainhead-gq/dsh-weread-gather/main/assets/icon.png

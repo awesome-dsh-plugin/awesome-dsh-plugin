@@ -1,0 +1,6 @@
+url: https://github.com/LAYZR114/dsh-project-memory
+name: LAYZR114/dsh-project-memory
+category: memory
+description:
+  en: "Polaris Memory: local-first project memory plugin for DeepSeek Harness. Uses per-project .dsh-memory.json; provides memory_read/recall/write/update/delete tools, /memory command and settings UI, with tiered injection (resident user profile + scene-triggered memories with P1/P2/P3 importance), semantic recall (IDF + synonym layer), and a hard-guard mechanism for bottom-line memories (detect deny-semantics -> authorize -> block AI deletion; user can confirm-override)."
+  zh: "北极星记忆：DeepSeek Harness 本地优先项目记忆插件。每项目一份 .dsh-memory.json（按 cwd 隔离），提供 memory_read/recall/write/update/delete 工具、/memory 命令与设置页；分级注入（用户画像常驻 + 场景触发记忆带 P1/P2/P3 等级）、语义召回（IDF+同义词层）、底线记忆硬守卫机制（识别禁止语义→授权→拦截 AI 删除；用户可确认绕过）。"

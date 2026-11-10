@@ -1,0 +1,6 @@
+url: https://github.com/runcat-tommy/dsh-view-manager
+name: runcat-tommy/dsh-view-manager
+category: ui
+description:
+  en: "View tab manager for the DeepSeek Harness Web GUI session header: enable, hide, reorder and rename the conversation view tabs (Chat / Trajectory), with locale-aware zh/en copy and npm update reminders."
+  zh: "DSH 视图标签管理器（逃咪）：管理会话页头视图标签（对话/轨迹）——启停、隐藏、排序与重命名，文案随界面语言中英切换，并带 npm 更新提醒。"

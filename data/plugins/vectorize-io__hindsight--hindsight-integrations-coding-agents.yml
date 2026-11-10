@@ -1,0 +1,6 @@
+url: https://github.com/vectorize-io/hindsight/tree/main/hindsight-integrations/coding-agents
+name: vectorize-io/hindsight#coding-agents
+category: memory
+description:
+  en: 'Hindsight, agent memory that learns: long-term project memory with auto recall and retain, knowledge pages, deep reflection, and per-repo memory banks.'
+  zh: Hindsight：会学习的 Agent 长期记忆系统，自动召回/保存、知识页、深度反思与按仓库隔离的记忆银行。

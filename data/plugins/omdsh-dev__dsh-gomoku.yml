@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-dev/dsh-gomoku
+name: omdsh-dev/dsh-gomoku
+category: fun
+description:
+  en: Play Gomoku against the AI, or let two AIs battle it out.
+  zh: 与 AI 下五子棋，也可让 AI 对局比棋力。

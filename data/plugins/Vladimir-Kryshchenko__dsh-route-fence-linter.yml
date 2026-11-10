@@ -1,0 +1,6 @@
+url: https://github.com/Vladimir-Kryshchenko/dsh-route-fence-linter
+name: Vladimir-Kryshchenko/dsh-route-fence-linter
+category: security
+description:
+  en: 'Audits every plugin HTTP route in a profile for a browser-trust fence: plugin routes win the web server''s longest-prefix match ahead of the /api gateway, so they never see its trust check and must pin the Host to loopback themselves. Grades PASS/WARN/FAIL per route and fails a fence that compares Origin to Host without pinning it (bypassable by DNS rebinding). Ships as a CLI for CI and a route_fence_scan tool.'
+  zh: '审计 profile 内所有插件 HTTP 路由的浏览器信任围栏：插件路由在 Web 服务器的最长前缀匹配中优先，因此缺少围栏的路由会被静默暴露；逐条给出文件与行号级别的证据。'

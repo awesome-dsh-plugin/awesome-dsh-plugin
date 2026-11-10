@@ -1,0 +1,6 @@
+url: https://github.com/xsoc1/dsh-image-vision
+name: xsoc1/dsh-image-vision
+category: vision
+description:
+  en: 'Chat image-attachment bridge with a `view_image` tool for any OpenAI-compatible VLM (local Ollama or cloud): pasted/dropped images become `view_image` path markers before reaching text-only DeepSeek models.'
+  zh: 纯文本 DeepSeek 的聊天识图插件：view_image 工具转发任意 OpenAI 兼容 VLM（本地 Ollama 或云端），对话框粘贴/拖拽的图片自动改写为 view_image 路径标记供模型查看。

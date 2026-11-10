@@ -1,0 +1,6 @@
+url: https://github.com/pan17/dsh-wechat
+name: pan17/dsh-wechat
+category: remote
+description:
+  en: Bridges WeChat private chats into DSH, with two-way text, image, file, audio and video messaging and slash commands for sessions, workspaces, models, permissions and more; the goal is DSH's native experience inside WeChat.
+  zh: 将微信私聊消息桥接到 DSH，支持文本、图片、文件、音视频的双向传输，用 slash 命令管理会话、工作区、模型、权限等等，目标是在微信端还原 DSH 的原生体验。

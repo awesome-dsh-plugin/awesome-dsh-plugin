@@ -1,0 +1,6 @@
+url: https://github.com/webkubor/dsh-env-inspector
+name: webkubor/dsh-env-inspector
+category: tools
+description:
+  en: 'PC environment diagnostics & port control board: zero-dependency inspection of system, CLI toolchains, active listening ports with hover-to-kill release, and model key readiness. No external calls, zero plaintext secrets.'
+  zh: '环境自检与端口控制大屏：零依赖洞察系统架构、12 款核心 CLI 工具链、活跃监听端口与悬浮释放、模型凭据就绪状态。局域网主 IP 一键速查，零外联、零私有凭据明文。'

@@ -1,0 +1,6 @@
+url: https://github.com/cynch18/plugin-switch
+name: cynch18/plugin-switch
+category: market
+description:
+  en: 'Toggle switches for the plugin inventory: enable/disable any plugin live from Settings → Plugins → Plugin list without restarting, with groups/filters, bulk toggle, undo, and backup.'
+  zh: 插件清单页滑块开关：在设置 → 插件 → 插件清单实时启用/停用任意插件，无需重启；支持分组/筛选、批量开关、撤销与自动备份。

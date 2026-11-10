@@ -1,0 +1,7 @@
+url: https://github.com/zjukop3/dsh-review-outbox
+name: zjukop3/dsh-review-outbox
+category: workflow
+description:
+  en: 'Evidence-gated acceptance for research reports: claims, citations, data scope and method limits each need a tick plus written evidence before a deliverable can pass, with same-artifact revision history and a standalone SHA-256 receipt that says when the bytes moved.'
+  zh: '研究报告的证据门：结论、引用、数据口径、方法限制四项必填检查，勾选之外还要写清证据才能通过；同一成果保留 revision 历史，通过后生成带 SHA-256 的独立验收单，文件被改动后会在验收单里明确提示重新审阅。'
+icon: https://raw.githubusercontent.com/zjukop3/dsh-review-outbox/main/assets/icon-180.png

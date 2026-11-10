@@ -1,0 +1,6 @@
+url: https://github.com/skyhancloud/dsh-client-ui-quote
+name: skyhancloud/dsh-client-ui-quote
+category: ui
+description:
+  en: Adds a removable quote banner above the web chat composer for text selected from an AI reply, included in the next message.
+  zh: 在网页聊天输入框上方为选中的 AI 回复内容添加可移除的引用横幅，随下一条消息一并发送。

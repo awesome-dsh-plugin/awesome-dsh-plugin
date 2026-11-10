@@ -1,0 +1,6 @@
+url: https://github.com/mustakimabdullah25-tech/dsh-screen-translator
+name: mustakimabdullah25-tech/dsh-screen-translator
+category: ui
+description:
+  en: 'Universal on-screen translator for DeepSeek Harness Web UI: translates text, attributes, Shadow DOM, and iframes across 45+ languages.'
+  zh: 'DeepSeek Harness 界面即时屏幕翻译：支持菜单、设置、Shadow DOM 与嵌套 iframe，覆盖 45+ 种语言。'

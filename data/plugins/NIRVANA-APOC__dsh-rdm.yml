@@ -1,0 +1,6 @@
+url: https://github.com/NIRVANA-APOC/dsh-rdm
+name: NIRVANA-APOC/dsh-rdm
+category: tools
+description:
+  en: 'Resident multi-connection download engine for DeepSeek Harness: seven rdm_* agent tools plus a sidebar download panel, with resumable, SHA-256-verified and bandwidth-limited transfers that survive a kernel or DSH restart.'
+  zh: 'DeepSeek Harness 的常驻多连接下载引擎：七个 rdm_* 智能体工具加侧边栏下载面板，支持断点续传、SHA-256 校验与限速，内核或 DSH 重启后仍可续传。'

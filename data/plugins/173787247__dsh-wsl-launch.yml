@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-launch
+name: 173787247/dsh-wsl-launch
+category: wsl
+description:
+  en: Launches allowlisted Windows apps such as VS Code, Explorer, and browsers from WSL.
+  zh: 从 WSL 白名单启动 Windows 应用（如 VS Code、资源管理器、浏览器）。

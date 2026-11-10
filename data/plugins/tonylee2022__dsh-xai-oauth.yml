@@ -1,0 +1,6 @@
+url: https://github.com/tonylee2022/dsh-xai-oauth
+name: tonylee2022/dsh-xai-oauth
+category: model
+description:
+  en: Sign in to an xAI Grok subscription with device-code OAuth, refresh the access token, and use it as the xai route credential without an API key.
+  zh: 用设备码 OAuth 登录 xAI Grok 订阅，自动刷新访问令牌，并作为 xai 路由凭据使用，无需 API key。

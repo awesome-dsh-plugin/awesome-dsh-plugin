@@ -1,0 +1,6 @@
+url: https://github.com/lucky8197/dsh-weekly-digest
+name: lucky8197/dsh-weekly-digest
+category: dev
+description:
+  en: 'Weekly digest generator: aggregates git commits, DSH session activity and daily memory entries into a Markdown weekly report, read-only.'
+  zh: 周报生成器：聚合最近 N 天的 git 提交、会话活动与每日记忆，自动生成 Markdown 周报，全程只读。

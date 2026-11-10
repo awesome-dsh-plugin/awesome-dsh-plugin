@@ -1,0 +1,6 @@
+url: https://github.com/snow-The/dsh-session-handoff
+name: snow-The/dsh-session-handoff
+category: session
+description:
+  en: 'Session handoff & context management: structured handoff documents (export/resume/status) so a fresh session can continue seamlessly, plus active context pruning (acp_* tools via the official compaction API with model-authored summaries).'
+  zh: '会话交接与上下文管理：导出/恢复结构化交接文档，让新会话无缝续接；并集成了主动上下文裁剪（acp_* 工具，基于官方 compaction API 与模型自写摘要）。'

@@ -1,0 +1,7 @@
+url: https://github.com/ai-written/dsh-usage-badge
+name: ai-written/dsh-usage-badge
+category: usage
+description:
+  en: "Sidebar row with today's tokens and estimated spend for DeepSeek Harness; the dialog adds 24h, 7-day, 30-day, 12-month and per-year charts, a contributions heatmap, per-request peak/off-peak pricing from the official DeepSeek price list and the Chinese statutory holiday calendar, and optional WebDAV sync that merges usage across machines."
+  zh: "DeepSeek Harness 的侧边栏用量徽标：显示当天 token 总量与估算费用；弹窗里有 24 小时 / 近 7 日 / 近 30 日 / 近 12 个月与按年图表、活跃度热力图，按 DeepSeek 官方定价与中国法定节假日逐请求计算峰谷价，并可选 WebDAV 云同步合并多台机器的用量。"
+icon: https://raw.githubusercontent.com/ai-written/dsh-usage-badge/dev/assets/logo.jpg

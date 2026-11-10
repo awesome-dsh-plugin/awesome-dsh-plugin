@@ -1,0 +1,6 @@
+url: https://github.com/almazom/dsh-almazom-approve-escalate
+name: almazom/dsh-almazom-approve-escalate
+category: security
+description:
+  en: 'One-click Approve & escalate on the approval card: answers the pending request and switches the live session to a permission preset.'
+  zh: '审批卡片上的「批准并升级」一键操作：既应答当前待批请求，又把当前会话切换到指定的权限预设。'

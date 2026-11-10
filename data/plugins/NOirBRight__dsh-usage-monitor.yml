@@ -1,0 +1,6 @@
+url: https://github.com/NOirBRight/dsh-usage-monitor
+name: NOirBRight/dsh-usage-monitor
+category: usage
+description:
+  en: 'Settings usage dashboard: tokens, requests, output tokens, and cache-hit rate from session logs, with a stacked chart and a breakdown table by provider, model, or workspace.'
+  zh: 设置页用量仪表盘：从会话日志汇总 token、请求、输出 token 与缓存命中率，含堆叠图，并按供应商、模型或工作区分组列表。

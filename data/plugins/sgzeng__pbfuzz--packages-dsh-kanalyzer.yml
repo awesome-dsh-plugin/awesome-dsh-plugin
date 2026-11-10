@@ -1,0 +1,6 @@
+url: https://github.com/sgzeng/pbfuzz/tree/master/packages/dsh-kanalyzer
+name: sgzeng/pbfuzz#dsh-kanalyzer
+category: dev
+description:
+  en: 'LLVM static-analysis plugin that builds whole-program bitcode for C/C++ projects and runs kernel-analyzer (KAMain) reachability analysis on it, providing kanalyzer_* tools to the agent and a ctx.kanalyzer service to other plugins.'
+  zh: 'LLVM 静态分析插件，可为 C/C++ 项目构建整程序 LLVM bitcode，并在其上运行 kernel-analyzer（KAMain）可达性分析，向智能体提供 kanalyzer_* 工具，并向其他插件提供 ctx.kanalyzer 服务。'

@@ -1,0 +1,7 @@
+url: https://github.com/yyyy231209/ai-company-framework
+name: yyyy231209/ai-company-framework
+tarball: https://github.com/yyyy231209/ai-company-framework/releases/download/v0.3.10/ai-company-framework-0.3.10.tgz
+category: workflow
+description:
+  zh: "AI 公司框架：一句话开一家多 Agent 公司——15 个扁平 Skills（老板/流水线/岗位模板/11 个岗位/通用客户记忆）、7 个工作流模板、AgentTeams 运行时与活动面板、带会话隔离的员工侧边栏、飞书机器人桥（老板/任意员工机器人、群聊路由、自主推送、重大决策人工闸门、外部联系人指引）、客户档案 SQLite 数据库与三层记忆（跨群归并）、/company 公司模式开关；不含 RAG。"
+  en: "AI Company Framework: turn one sentence into a multi-agent company — 15 flat Skills (boss/pipeline/role-template/11 roles/generic customer-memory), 7 workflow templates, AgentTeams runtime + activity panel, employee sidebar with per-session isolation, Feishu bot bridge (boss and per-employee bots, group routing, autonomous push, human decision gate, external-contact guide), per-customer SQLite memory with three-layer memory (cross-group merge), /company mode switch; no RAG."

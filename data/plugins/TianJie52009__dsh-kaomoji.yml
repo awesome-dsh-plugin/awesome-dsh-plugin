@@ -1,0 +1,6 @@
+url: https://github.com/TianJie52009/dsh-kaomoji
+name: TianJie52009/dsh-kaomoji
+category: fun
+description:
+  en: Adds a mood-aware Japanese kaomoji to agent replies, picked from a curated kaomojiya.org whitelist and configurable from Settings → General.
+  zh: 给 dsh 回复按情绪添加日文颜文字，词库精选自颜文字屋（kaomojiya.org），可在「设置 → 通用设置」中调整。

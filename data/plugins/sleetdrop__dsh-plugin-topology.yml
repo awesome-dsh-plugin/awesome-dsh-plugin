@@ -1,0 +1,6 @@
+url: https://github.com/sleetdrop/dsh-plugin-topology
+name: sleetdrop/dsh-plugin-topology
+category: dev
+description:
+  en: 'Dependency graph inspector for DeepSeek Harness: snapshots the live Cordis plugin/service topology into a zoomable browser panel with graph-theory metrics, plus a graph.render tool for the model.'
+  zh: 'DeepSeek Harness 插件依赖图检查器：把运行中的 Cordis 插件/服务拓扑快照为可缩放的浏览器面板图，附带图论指标，以及面向模型的 graph.render 工具。'

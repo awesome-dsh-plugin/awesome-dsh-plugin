@@ -1,0 +1,6 @@
+url: https://github.com/Mengshang-spec/dsh-plugin-trustlens
+name: Mengshang-spec/dsh-plugin-trustlens
+category: security
+description:
+  en: "Read-only DSH plugin auditor with static scanning, current-session model review, and confirmation gates."
+  zh: "只读 DSH 插件审查器：静态扫描、当前会话模型审查和启用前确认。"

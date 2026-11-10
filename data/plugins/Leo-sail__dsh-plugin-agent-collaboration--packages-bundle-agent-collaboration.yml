@@ -1,0 +1,7 @@
+url: https://github.com/Leo-sail/dsh-plugin-agent-collaboration/tree/main/packages/bundle/agent-collaboration
+name: Leo-sail/dsh-plugin-agent-collaboration#agent-collaboration
+category: workflow
+description:
+  en: Persistent Bots and group rooms inside DSH — each Bot keeps its own model, permission preset, workspace and session across restarts; unaddressed messages can be triaged by the room leader, the room accumulates a shared experience card, and every answer is a run in a durable ledger the sidebar panel replays.
+  zh: DSH 里的常驻 Bot 与群聊房间——每个 Bot 有自己的模型、权限预设、工作区与重启后仍在的会话；未点名消息可由群主判断，群内经验会自动积累，每次回答都是持久运行记录里的一条 run，侧栏面板据此回放。
+tarball: https://github.com/Leo-sail/dsh-plugin-agent-collaboration/releases/download/v0.4.1/dsh-plugin-agent-collaboration-0.4.1.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/wqx11235/dsh-experience
+name: wqx11235/dsh-experience
+category: memory
+description:
+  en: 'Local-first experience library for DeepSeek Harness: error-signature retrieval, pre-step recall hints, failure-to-fix drafts, gap-to-entry closure, and a sidebar panel. Ships a sanitized starter library. No model calls, no network.'
+  zh: '本地优先的经验库：给 DeepSeek Harness 的索引化 markdown 知识，支持错误签名检索、开口前召回、失败→修复起草、缺口→条目闭环与侧边栏面板；自带脱敏起步库，不调模型、不联网。'

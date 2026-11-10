@@ -1,0 +1,6 @@
+url: https://github.com/nickhelion/dsh-plugins/tree/main/packages/serverchan-notify
+name: nickhelion/dsh-plugins#serverchan-notify
+category: notify
+description:
+  en: ServerChan3 (Server酱) push notifications when a turn finishes — title, model, project directory, git branch, status and a reply excerpt, with subagent filtering and fire-and-forget delivery.
+  zh: 回合结束时向 Server酱3 推送微信通知——标题、模型、项目目录、Git 分支、状态与回复摘要，支持子代理过滤，fire-and-forget 不阻塞主流程。

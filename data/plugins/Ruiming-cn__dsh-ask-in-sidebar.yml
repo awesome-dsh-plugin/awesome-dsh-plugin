@@ -1,0 +1,6 @@
+url: https://github.com/Ruiming-cn/dsh-ask-in-sidebar
+name: Ruiming-cn/dsh-ask-in-sidebar
+category: ui
+description:
+  en: 'Ask a sidebar assistant about selected assistant text: an ephemeral right-side panel answers from a snapshot of the main conversation''s LLM history with streaming Markdown, collapsible thinking and multi-turn follow-ups, without touching the main conversation.'
+  zh: 选中助手回答中的文本，在临时右侧面板向侧边栏助手提问：基于主对话 LLM 历史快照回答，支持流式 Markdown、可折叠思考与多轮追问，不打扰主对话。

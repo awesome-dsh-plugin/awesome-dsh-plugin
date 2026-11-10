@@ -1,0 +1,6 @@
+url: https://github.com/Stijnus/dsh-workspace-status
+name: Stijnus/dsh-workspace-status
+category: ui
+description:
+  en: 'Colored status marks on DeepSeek Harness sidebar workspace rows — waiting for you, running, or recently finished — aggregated per workspace, plus a pinned-conversations section above the list and pinned-only notifications, persisted across restarts.'
+  zh: '在 DeepSeek Harness 侧边栏的工作区行上显示彩色状态标记（等待你处理、运行中、刚刚完成，按工作区聚合），并在列表上方提供已置顶会话区与仅针对置顶会话的通知，持久保存。'

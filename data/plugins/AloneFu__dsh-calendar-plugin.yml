@@ -1,0 +1,7 @@
+url: https://github.com/AloneFu/dsh-calendar-plugin
+name: AloneFu/dsh-calendar-plugin
+category: ui
+tarball: https://github.com/AloneFu/dsh-calendar-plugin/releases/download/v1.0.0/dsh-calendar-1.0.0.tgz
+description:
+  en: "Obsidian daily notes, tasks and Day Planner time blocks in the DSH sidebar: a Monday-first month grid with per-day word-count and task dots, a compact timeline for HH:mm time blocks, the selected day's diary excerpt and task list, and write-back of checkbox state, task text and times to the Markdown files; a first-run wizard detects the vault or accepts a path."
+  zh: 'DSH 右侧栏里的 Obsidian 日记、待办与 Day Planner 时间块：周一起始的月历（带每天的字数点与任务点）、紧凑时间轴（HH:mm 时间块）、选中日的日记摘要与任务列表；勾选状态、任务内容与时间都会写回 Markdown 文件，首次使用有向导，可自动找到知识库或手填路径。'

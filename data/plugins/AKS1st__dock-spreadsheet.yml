@@ -1,0 +1,6 @@
+url: https://github.com/AKS1st/dock-spreadsheet
+name: AKS1st/dock-spreadsheet
+category: ui
+description:
+  en: 'Read-only XLSX, XLS, ODS, CSV and TSV viewer for dock-files with worksheet tabs, sorting, filters, search and cell links.'
+  zh: dock-files 的只读表格查看器，支持 XLSX、XLS、ODS、CSV、TSV 格式以及工作表切换、排序、筛选、搜索和单元格链接。

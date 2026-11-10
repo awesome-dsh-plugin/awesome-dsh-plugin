@@ -1,0 +1,6 @@
+url: https://github.com/zhengjy01/dsh-notify
+name: zhengjy01/dsh-notify
+category: notify
+description:
+  en: 'System-level desktop notifications: turn-completion and workflow-end banners, plus a modal alert when an approval is needed (macOS osascript / Linux notify-send).'
+  zh: 系统级桌面通知：回合完成 / 工作流完成横幅，需要审批时弹出模态提醒（macOS osascript / Linux notify-send）。

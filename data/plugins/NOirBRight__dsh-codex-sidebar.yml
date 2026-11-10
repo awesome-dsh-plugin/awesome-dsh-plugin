@@ -1,0 +1,6 @@
+url: https://github.com/NOirBRight/dsh-codex-sidebar
+name: NOirBRight/dsh-codex-sidebar
+category: ui
+description:
+  en: 'Codex-style details sidebar for DSH with Files, Review, Browser, and Terminal panes, transcript file links and diff stats, annotations, and Host-managed browser controls.'
+  zh: 'DSH 的 Codex 风格详情侧栏：提供 Files、Review、Browser 与 Terminal 面板、对话文件链接和 diff 统计、批注，以及 Host 管理的浏览器控制。'

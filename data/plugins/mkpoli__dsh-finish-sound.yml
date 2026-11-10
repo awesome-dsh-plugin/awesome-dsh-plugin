@@ -1,0 +1,7 @@
+url: https://github.com/mkpoli/dsh-finish-sound
+name: mkpoli/dsh-finish-sound
+category: notify
+tarball: https://github.com/mkpoli/dsh-finish-sound/releases/download/v0.2.1/dsh-finish-sound.tgz
+description:
+  en: Plays a cue when a turn finishes and a different one when the agent asks a question, with volume and preview in Settings.
+  zh: 回合结束时播放提示音，智能体提问时播放另一种提示音，设置里可调音量并试听。

@@ -1,0 +1,6 @@
+url: https://github.com/goecho/dsh-generation
+name: goecho/dsh-generation
+category: tools
+description:
+  en: Adds generation_fork and generation_run to copy an agent preset and run a task on a new session.
+  zh: 提供 generation_fork 与 generation_run，用于拷贝 Agent preset 并在新会话上跑任务。

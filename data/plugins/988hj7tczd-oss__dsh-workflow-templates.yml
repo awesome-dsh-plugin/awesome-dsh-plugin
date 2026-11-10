@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-workflow-templates
+name: 988hj7tczd-oss/dsh-workflow-templates
+category: workflow
+description:
+  en: "Preset workflow template library: 12 reusable orchestration script templates with wf_template_list / wf_template_search / wf_template_run / wf_template_validate tools and static template validation."
+  zh: "预置 Workflow 模板库：12 个可复用编排脚本模板，提供 wf_template_list / wf_template_search / wf_template_run / wf_template_validate 工具与模板格式静态校验。"

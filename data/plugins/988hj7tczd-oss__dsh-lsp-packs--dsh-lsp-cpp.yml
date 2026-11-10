@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-lsp-packs/tree/main/dsh-lsp-cpp
+name: 988hj7tczd-oss/dsh-lsp-packs#dsh-lsp-cpp
+category: dev
+description:
+  en: 'C/C++ LSP configuration plugin for DeepSeek Harness using clangd.'
+  zh: '基于 clangd 为 DeepSeek Harness 提供 C/C++ 代码导航和语言服务配置。'

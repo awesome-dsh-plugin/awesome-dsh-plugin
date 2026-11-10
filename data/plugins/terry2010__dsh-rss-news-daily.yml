@@ -1,0 +1,6 @@
+url: https://github.com/terry2010/dsh-rss-news-daily
+name: terry2010/dsh-rss-news-daily
+category: tools
+description:
+  en: 'RSS/news reader in the dsh sidebar: built-in source library + custom feeds (real-fetch validated on save) + OPML import; the fetch pipeline auto-translates foreign items and LLM-scores new items, generating a daily digest and hourly briefs to cut through information overload; with data backup/restore and preference customization.'
+  zh: '方便等待 AI 回复时看一眼新闻的 RSS/新闻阅读器。内置订阅源库，可自定义源；抓取管线自动翻译外文新闻、LLM 逐条评分，自动生成每日「日报」和每小时「快报」，解决信息过载；具有数据备份恢复，偏好自定义等功能。'

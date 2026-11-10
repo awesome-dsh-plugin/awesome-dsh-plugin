@@ -1,0 +1,6 @@
+url: https://github.com/luxueliu/luxueliu-usage-command
+name: luxueliu/luxueliu-usage-command
+category: usage
+description:
+  en: 'Daily cost card for your local LLM gateway: /usage reads gateway_usage.jsonl and itemizes spend per model and per hour, covering official direct, OpenRouter relay, and in-plan metered pools.'
+  zh: '本地 LLM 网关当日花费价目卡：/usage 读取 gateway_usage.jsonl，按模型×分小时列出消费，覆盖官方直连、OpenRouter 中转与套餐内计费池。'

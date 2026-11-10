@@ -1,0 +1,6 @@
+url: https://github.com/NeoXider/neoxider-agent-deck/tree/main/integrations/dsh-agent-deck
+name: NeoXider/neoxider-agent-deck#dsh-agent-deck
+category: ui
+description:
+  en: Opens the NeoXider Agent Deck desktop widget (chat, the slime pet avatar or the hinge handle) from a Harness session, and reports its mode, installed version, running state and whether it follows the same Harness.
+  zh: 在 Harness 会话里打开 NeoXider Agent Deck 桌面挂件（对话、史莱姆宠物头像或铰链把手），并报告其模式、已安装版本、运行状态以及是否跟随同一个 Harness。

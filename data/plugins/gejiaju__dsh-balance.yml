@@ -1,0 +1,6 @@
+url: https://github.com/gejiaju/dsh-balance
+name: gejiaju/dsh-balance
+category: usage
+description:
+  en: Shows DeepSeek API balance and tells whether the current moment is peak or off-peak pricing time, with a live countdown to the next switch.
+  zh: 显示 DeepSeek API 余额，并判断当前是否为高峰时段，实时倒计时到下次切换。

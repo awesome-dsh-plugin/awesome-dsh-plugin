@@ -1,0 +1,6 @@
+url: https://github.com/foggy-projects/foggy-deepseek-harness-plugin
+name: foggy-projects/foggy-deepseek-harness-plugin
+category: tools
+description:
+  en: Foggy Java data-analysis integration for DeepSeek Harness with a managed Runtime, CLI, Launcher, onboarding Skills, and semantic-layer workflows.
+  zh: 在 DeepSeek Harness 中管理 Foggy Java 数据分析 Runtime、CLI、Launcher 与 onboarding/语义查询 Skill，支持数据库接入和语义层建模。

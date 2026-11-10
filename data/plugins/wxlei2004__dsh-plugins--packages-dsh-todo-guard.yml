@@ -1,0 +1,15 @@
+# dshmarket submission entry for dsh-todo-guard.
+# Copy to <fork-of-awesome-dsh-plugin>/data/plugins/wxlei2004__dsh-plugins--packages-dsh-todo-guard.yml
+# and open a PR against https://github.com/awesome-dsh-plugin/awesome-dsh-plugin.
+#
+# Rules enforced by CI (pr-gate.yml / check-submission.mjs):
+#   - repo must contain a dsh.bundle declaration (package.json has dsh.bundle.patch)
+#   - repo must be >= 1 day old
+#   - filename must equal slugFor(url): <owner>__<repo>--<subpath-with-dashes>.yml
+#   - only keys: url, name, category, description, tarball
+url: https://github.com/wxlei2004/dsh-plugins/tree/main/packages/dsh-todo-guard
+name: wxlei2004/dsh-plugins#dsh-todo-guard
+category: workflow
+description:
+  en: "Task-list staleness guard for DeepSeek Harness: watches the session event stream and counts tool calls since the last todo_write; past a configurable threshold it appends one short notice before the next step, quoting the current list, so the model writes it back to the real progress instead of leaving a stale snapshot on screen. Pure prompt injection, no blocking and no data mutation."
+  zh: "任务清单陈旧度守卫：监听会话事件流，统计上一次 todo_write 之后又发生了多少次工具调用；超过可配置阈值时在下一步之前追加一条简短提醒，并附上当前清单内容，让模型把清单写回真实进度，而不是在界面上留一份过期的快照。纯提示注入，不阻断流程，也不改动任何数据。"

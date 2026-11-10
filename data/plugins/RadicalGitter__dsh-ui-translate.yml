@@ -1,0 +1,6 @@
+url: https://github.com/RadicalGitter/dsh-ui-translate
+name: RadicalGitter/dsh-ui-translate
+category: ui
+description:
+  en: Translates visible Chinese UI and content in DeepSeek Harness Web, using a browser-local OPUS-MT model for session titles, workspace names, messages, search results, and opted-in plugin prose while keeping remote translation limited to allowlisted UI labels.
+  zh: 在 DeepSeek Harness Web 中翻译可见的中文界面与内容：会话标题、工作区名称、消息、搜索结果和插件主动标记的正文使用浏览器本地 OPUS-MT，远程翻译仅限白名单界面标签。

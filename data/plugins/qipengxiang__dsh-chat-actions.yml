@@ -1,0 +1,6 @@
+url: https://github.com/qipengxiang/dsh-chat-actions
+name: qipengxiang/dsh-chat-actions
+category: ui
+description:
+  en: 'Hide or show each button under an assistant reply, reorder them by dragging, and collect the hidden ones behind a single ⋯ button.'
+  zh: '隐藏或显示助手回答底部的每个按钮，可拖动调整顺序，并把隐藏的收进一个「⋯」。'

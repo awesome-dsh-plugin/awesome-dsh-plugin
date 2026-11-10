@@ -1,0 +1,6 @@
+url: https://github.com/niuniuaba/dsh-subagent-vision
+name: niuniuaba/dsh-subagent-vision
+category: vision
+description:
+  en: Lets a text-only DeepSeek agent read images in the same session by delegating to a vision-capable subagent, with send-time image-to-path conversion.
+  zh: 让纯文本 DeepSeek 代理在同一会话内读图：委派给视觉子代理，发送时自动把图片转为文件路径。

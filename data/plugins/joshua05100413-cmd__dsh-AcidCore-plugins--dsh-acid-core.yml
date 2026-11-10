@@ -1,0 +1,7 @@
+url: https://github.com/joshua05100413-cmd/dsh-AcidCore-plugins/tree/main/dsh-acid-core
+name: joshua05100413-cmd/dsh-AcidCore-plugins#dsh-acid-core
+category: theme
+icon: https://raw.githubusercontent.com/joshua05100413-cmd/dsh-AcidCore-plugins/main/dsh-acid-core/assets/icon-512.png
+description:
+  en: 'Acid-graphics theme for the DeepSeek Harness Web UI: six complete palettes (acid, neon orange, electric cyan, violet, rose, warm orange-light) registered as switchable themes, plus an optional WebGL wireframe crystal backdrop driven by pointer and scroll, local wallpapers with a dimming mask and background lettering, a crystal startup animation with optional local video, and a Settings section that holds every control.'
+  zh: 'dsh 酸性科技风主题：六套完整配色（酸性 / 霓虹橙 / 电弧青 / 紫罗兰 / 玫红 / 暖橙白）注册为可选主题；另附可选的 WebGL 线框晶体背景（随鼠标与滚动形变）、本地壁纸与遮罩、背景大字、晶体开机动画（可选本地视频），控制项集中在「设置 → Acid Core」。'

@@ -1,0 +1,6 @@
+url: https://github.com/RaulLazaro/dsh-pwa-plugin
+name: RaulLazaro/dsh-pwa-plugin
+category: dev
+description:
+  en: "PWA plugin for DSH — adds offline support, service worker caching, and install-as-app capability."
+  zh: "DSH 的 PWA 插件：离线支持、Service Worker 缓存，并可作为应用安装。"

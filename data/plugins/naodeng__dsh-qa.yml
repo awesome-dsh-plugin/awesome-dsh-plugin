@@ -1,0 +1,6 @@
+url: https://github.com/naodeng/dsh-qa
+name: naodeng/dsh-qa
+category: workflow
+description:
+  en: 'QA project workbench for dsh: manage test projects, requirements, test cases, defects, milestones, reports and approval gates through a browser UI and 18 QA-domain tools.'
+  zh: 'dsh 质量项目工作台：通过浏览器界面和 18 个 QA 领域工具管理测试项目、需求、用例、缺陷、里程碑、报告与审批门禁。'

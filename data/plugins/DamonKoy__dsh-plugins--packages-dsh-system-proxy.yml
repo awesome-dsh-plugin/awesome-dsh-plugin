@@ -1,0 +1,6 @@
+url: https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-system-proxy
+name: DamonKoy/dsh-plugins#dsh-system-proxy
+category: dev
+description:
+  en: System proxy detection (scutil/env/PAC) with a status tool and a proxy_export bash snippet tool.
+  zh: 系统代理检测（scutil/env/PAC）：状态工具 + proxy_export 导出 bash 代理片段。

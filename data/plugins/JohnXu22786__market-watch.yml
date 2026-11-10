@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/market-watch
+name: JohnXu22786/market-watch
+category: tools
+description:
+  en: "Financial market monitor bundle for dsh: real-time quotes, a local watchlist, threshold alerts with cooldowns, periodic polling, and in-chat ASCII/mermaid charts for A-share stocks/indices and crypto (Tencent + CoinGecko)."
+  zh: "dsh 的金融行情监控插件:实时报价、本地自选列表、带冷却的阈值提醒、定时轮询,以及在会话内用 ASCII/mermaid 渲染 A 股与加密货币图表(数据源腾讯 + CoinGecko)。"

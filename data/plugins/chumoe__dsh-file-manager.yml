@@ -1,0 +1,6 @@
+url: https://github.com/chumoe/dsh-file-manager
+name: chumoe/dsh-file-manager
+category: ui
+description:
+  en: 'Replaces the sidebar workspace Files pane with a file manager that adds real composer chips for "@" file mentions, word and line selection across syntax highlighting, archives in and out, upload and download, and a jump menu to any directory on the machine.'
+  zh: '把侧边栏「工作区文件」面板换成文件管理器：加入对话时生成与输入框 @ 选文件一致的 chip，语法高亮下可双击选词、三击选行，支持压缩解压、上传下载，并可跳转到机器上任意目录。'

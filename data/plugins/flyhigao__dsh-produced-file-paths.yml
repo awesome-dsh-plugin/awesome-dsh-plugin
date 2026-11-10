@@ -1,0 +1,6 @@
+url: https://github.com/flyhigao/dsh-produced-file-paths
+name: flyhigao/dsh-produced-file-paths
+category: remote
+description:
+  en: Displays and copies absolute paths for files produced by DSH turns in remote Web.
+  zh: 在远程 Web 中显示并复制 DSH 每轮产出文件的绝对路径。

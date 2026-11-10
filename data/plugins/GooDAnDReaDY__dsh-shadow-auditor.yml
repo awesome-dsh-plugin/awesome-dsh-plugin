@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-shadow-auditor
+name: GooDAnDReaDY/dsh-shadow-auditor
+category: security
+description:
+  en: "Background security auditor for DeepSeek Harness: scans agent outputs for secret leakage, checks command safety before execution, and surfaces findings in a persistent audit log."
+  zh: "DeepSeek Harness 的后台安全审计器：扫描 Agent 输出中的秘密泄漏，在执行前检查命令安全性，并将发现记录到持久化审计日志中。"

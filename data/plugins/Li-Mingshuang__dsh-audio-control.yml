@@ -1,0 +1,6 @@
+url: https://github.com/Li-Mingshuang/dsh-audio-control
+name: Li-Mingshuang/dsh-audio-control
+category: ui
+description:
+  en: 'Floating audio control panel in the Web GUI: play/pause/next/previous for Windows media sessions (SMTC) and the system master volume/mute, served by a Node route half that runs a PowerShell helper.'
+  zh: Web 界面里的悬浮音频控制面板：控制 Windows 媒体会话（SMTC）的播放/暂停/上一首/下一首与系统主音量/静音，由注册路由的主机半调用 PowerShell 助手实现。

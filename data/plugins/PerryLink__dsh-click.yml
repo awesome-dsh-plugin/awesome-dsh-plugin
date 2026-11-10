@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-click
+name: PerryLink/dsh-click
+category: tools
+description:
+  en: 'Windows desktop computer-use tools (click, type, key, screenshot) with freshness checks, approval gating, process-identity verification around every action, and a sanitized audit trail.'
+  zh: 'Windows 桌面电脑操作工具（点击、输入、按键、截屏）：每次动作都带新鲜度校验、审批门、进程身份核验与脱敏审计。'

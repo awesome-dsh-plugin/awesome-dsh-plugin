@@ -1,0 +1,6 @@
+url: https://github.com/djs326/dsh-plugin-width-slider
+name: djs326/dsh-plugin-width-slider
+category: ui
+description:
+  en: 'All-in-one UI plugin for DSH Desktop (Windows): conversation-width slider with fullscreen preview and follow-window mode, thinking-block enhancements (forced Chinese, expand/collapse, Markdown rendering), an Open With header button, UI label localization, a resizable settings dialog, session delete, and workspace tabs.'
+  zh: 'DSH 桌面版多功能 UI 插件：对话宽度滑块（按下全屏预览、跟随窗口宽度）、思考块增强（思考/回复强制中文、展开收起、Markdown 渲染）、Open With 头部打开按钮、界面英文标签中文化、设置弹窗窗口化、会话删除与工作区分页。'

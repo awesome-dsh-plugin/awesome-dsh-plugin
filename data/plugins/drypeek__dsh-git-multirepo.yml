@@ -1,0 +1,6 @@
+url: https://github.com/drypeek/dsh-git-multirepo
+name: drypeek/dsh-git-multirepo
+category: git
+description:
+  en: 'Merged commit timeline for the Git repositories in a DSH workspace, with per-repository dirty and ahead/behind state, fetch, and right-sidebar file diffs.'
+  zh: '把 DSH 工作区内各 Git 仓库的提交合并在一条时间线中查看，并显示各仓库改动与领先／落后状态、支持拉取和右侧文件差异。'

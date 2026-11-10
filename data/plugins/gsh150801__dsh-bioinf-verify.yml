@@ -1,0 +1,6 @@
+url: https://github.com/gsh150801/dsh-bioinf-verify
+name: gsh150801/dsh-bioinf-verify
+category: workflow
+description:
+  en: 'Whole-report verification for scientific reports: per-claim checks against Crossref, PubMed (retraction scan), ClinicalTrials.gov, UniProtKB, GEO/SRA and PatentsView, URL accessibility and title agreement, claim-vs-source meaning at temperature 0, and a durable restartable audit ledger with an annotated report.'
+  zh: '面向科研报告的整篇校验工作流：逐条核对 Crossref、PubMed（含撤稿扫描）、ClinicalTrials.gov、UniProtKB、GEO/SRA 和 PatentsView，核验 URL 可访问性与标题一致性，以温度 0 判定声明与原文含义一致，输出可恢复的审计账本与标注版校验报告。'

@@ -1,0 +1,6 @@
+url: https://github.com/WLV-ZEDD/dsh-chatgpt-web
+name: WLV-ZEDD/dsh-chatgpt-web
+category: model
+description:
+  en: Free conversational ChatGPT Web (GPT 5.6 Luna) model provider for DeepSeek Harness with streaming Markdown.
+  zh: 基于免费 ChatGPT 网页端（GPT 5.6 Luna）的 DeepSeek Harness 零成本对话模型提供者，支持流式 Markdown。

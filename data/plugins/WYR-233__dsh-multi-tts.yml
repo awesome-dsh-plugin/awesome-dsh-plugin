@@ -1,0 +1,7 @@
+url: https://github.com/WYR-233/dsh-multi-tts
+name: WYR-233/dsh-multi-tts
+category: voice
+description:
+  en: 'Per-reply read-aloud with a multi-provider settings page — MiniMax or any OpenAI-compatible /audio/speech endpoint, with voice, emotion, speed and model selection plus an auto-read toggle.'
+  zh: '每条回复旁的朗读按钮与输入框自动朗读开关，设置页可选服务商与音色：MiniMax 或任意 OpenAI 兼容的 /audio/speech 端点，可调音色、情绪、语速与模型。'
+tarball: https://github.com/WYR-233/dsh-multi-tts/releases/latest/download/dsh-multi-tts.tgz

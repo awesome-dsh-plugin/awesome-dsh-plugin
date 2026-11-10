@@ -1,0 +1,6 @@
+url: https://github.com/Icstick/dsh-inject-scheduler
+name: Icstick/dsh-inject-scheduler
+category: memory
+description:
+  zh: "DSH 注入调度器：跨插件注入段的注册/排序/记账落在官方 storageDomain，含冲突检测与每会话预算汇总（B10 面板数据源）。"
+  en: "Injection scheduler for DeepSeek Harness injection planes: cross-plugin sections register/order/account on the official storageDomain, with conflict detection and per-session budget summaries (B10 panel data source)."

@@ -1,0 +1,6 @@
+url: https://github.com/Hzlin7/dsh-database-preview
+name: Hzlin7/dsh-database-preview
+category: tools
+description:
+  en: 'Read-only preview of SQLite files and MySQL / MariaDB / PostgreSQL / SQL Server connections in the right sidebar, with tables, paged rows, columns, indexes and draggable column widths, never writing to the database.'
+  zh: '在右侧边栏只读预览 SQLite 文件与 MySQL / MariaDB / PostgreSQL / SQL Server 连接：表、分页数据、列、索引，列宽可拖动，从不写库。'

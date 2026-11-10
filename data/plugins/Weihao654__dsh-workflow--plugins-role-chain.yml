@@ -1,0 +1,7 @@
+url: https://github.com/Weihao654/dsh-workflow/tree/main/plugins/role-chain
+name: Weihao654/dsh-workflow#role-chain
+category: workflow
+description:
+  en: 'Installs the whole role-chain toolchain in one step: four agent presets (plan, work, code and review) plus fourteen chain_* tools for evidence-bound rounds, with a settings card. It ships the protocol runtime itself, so no sibling package is needed. It replaces the separate l1-presets and l2-protocol entries, which must be removed before enabling this one.'
+  zh: '一步装齐角色分工工具链：四个智能体预设（plan、work、code、review）与十四个 chain_* 工具，用于证据可追溯的受控轮次，并带设置卡片。协议运行时随包提供，无需另装同级插件；它取代原先分开的 l1-presets 与 l2-protocol 两条，启用前需先移除那两条。'
+icon: https://raw.githubusercontent.com/Weihao654/dsh-workflow/main/assets/icon-1024.png

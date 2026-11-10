@@ -1,0 +1,6 @@
+url: https://github.com/TiChuXiXi/dsh-git-vcs
+name: TiChuXiXi/dsh-git-vcs
+category: git
+description:
+  en: A right-sidebar Git panel in the IDEA style — local changes with per-file checkbox commits, a commit tree with per-commit details, branch, remote and stash management, push with a credential fallback, all driven by the plain git CLI.
+  zh: 右侧栏的 IDEA 风格 Git 面板：本地变更与按文件勾选提交、提交树与提交详情、分支 / 远程 / 贮藏管理、带凭据兜底的推送，以及 git 命令流水，全部通过原生 git CLI 执行。

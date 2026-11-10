@@ -1,0 +1,6 @@
+url: https://github.com/YeqingTang/dsh-session-flow
+name: YeqingTang/dsh-session-flow
+category: session
+description:
+  en: 'Cross-session archive: overview workbench, folded timeline, subagent lineage, full-text search, rule+LLM summaries, ZIP export, live tracking. Native session-page embeds: turn rail, docked right panel (live mode, pinned to original session on switch), rename (official-synced), conclusion digest, health monitoring + persistent header chip (idle / active / tool-wait / stalled). dsh v0.1.2+: fuses with the official TurnNavigatorRail — vector-icon info chips (duration, tool calls, errors, thinking) plus lazy tool distribution inside the official preview card, right-click opens the workbench; the classic piano-key strip is on by default and delegates unloaded-turn jumps to the official auto-load engine; the official rail can be hidden entirely. Settings dialog section with 10 tunable behavior params.'
+  zh: 跨会话档案柜：总览工作台、折叠时间线、子代理血缘、全文检索、双模式摘要、ZIP 导出、实时跟踪。会话流标签页嵌入原生会话页：轮次悬浮条、详情并入右栏（实时模式，切换会话可钉住原会话直播）、会话重命名（对齐官方即时同步）、结论摘要行、健康监控与常驻头部胶囊（空闲 / 活跃 / 工具执行 / 疑似卡死四态）。dsh v0.1.2+ 与官方轮次导航融合：官方预览卡内嵌矢量图标信息段（耗时 / 工具调用 / 错误 / 思考 + 工具分布懒加载），右键唤起会话流工作台；经典钢琴键悬浮条默认开启并存，点击未载入轮次委托官方引擎自动加载跳转；可设置隐藏官方导航只留钢琴键。设置弹窗独立分节，10 项行为参数可调。

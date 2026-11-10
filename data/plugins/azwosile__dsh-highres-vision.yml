@@ -1,0 +1,6 @@
+url: https://github.com/azwosile/dsh-highres-vision
+name: azwosile/dsh-highres-vision
+category: vision
+description:
+  en: 'For the DeepSeek Harness native vision model deepseek-v4-flash-vision-exp, raises image admission limits to 32 MiB / 8192 px / 600 images and adds a highres_read tool that tiles large images, then returns the whole image plus 800x800 tiles through the host read_image tool.'
+  zh: '为 DeepSeek Harness 原生视觉模型 deepseek-v4-flash-vision-exp 提供高清识图：将图片准入上限提升至 32 MiB / 8192 px / 600 张，并新增 highres_read 工具，将大图切为整图与 800x800 分块后经宿主 read_image 注入模型。'

@@ -1,0 +1,6 @@
+url: https://github.com/Mutx163/dsh-model-memory
+name: Mutx163/dsh-model-memory
+category: model
+description:
+  en: "Reasoning-effort tier manager for custom API models plus cross-session preference memory: inline low/medium/high/max toggles inside Settings → Models, with atomic settings writes."
+  zh: "为自定义 API 模型提供推理强度分级管理与跨会话偏好记忆：在「设置 → 模型」中内联切换 low/medium/high/max，配置写入为原子操作。"

@@ -1,0 +1,6 @@
+url: https://github.com/StevenZha0/dsh-vae-theme
+name: StevenZha0/dsh-vae-theme
+category: theme
+description:
+  en: "An ink-wash theme for DeepSeek Harness inspired by Luzhou Moon, a guofeng song by the Chinese singer Vae. Built on dsh-theme-customizer, it repaints the app background, sidebar, composer, new-session button, settings panel, Cordis panel and floating panel with generated ink-landscape artwork, adds gold filigree frames and a full-screen rain effect, and rotates vertical lyrics drawn from 24 of his Chinese-style songs."
+  zh: "以许嵩国风作品《庐州月》为题的 DSH 水墨主题。基于 dsh-theme-customizer，为界面背景、侧边栏、输入区、新会话按钮、设置面板、Cordis 面板与浮窗面板换上程序生成的水墨画面，配金丝边框与全屏雨幕，并竖排轮播其 24 首国风作品的歌词。"

@@ -1,0 +1,6 @@
+url: https://github.com/s1lencewill/dsh-markdown-reader
+name: s1lencewill/dsh-markdown-reader
+category: docs
+description:
+  en: Renders workspace Markdown files in a standalone full-screen reader with GFM, KaTeX, Mermaid, outline navigation, live file reload, and browser printing/PDF export.
+  zh: 在独立全屏阅读器中渲染工作区 Markdown 文件，支持 GFM、KaTeX、Mermaid、目录导航、文件更新同步以及浏览器打印和 PDF 导出。

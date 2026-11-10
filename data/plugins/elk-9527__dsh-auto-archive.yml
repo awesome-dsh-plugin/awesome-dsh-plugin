@@ -1,0 +1,6 @@
+url: https://github.com/elk-9527/dsh-auto-archive
+name: elk-9527/dsh-auto-archive
+category: session
+description:
+  en: Automatically archives idle DSH conversations after a configurable number of days and clears the projection cache of archived sessions, without deleting transcripts or attachments.
+  zh: 按可配置天数自动归档闲置的 DSH 会话，并清理已归档会话的投影缓存，不删除会话记录或附件。

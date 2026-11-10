@@ -1,0 +1,6 @@
+url: https://github.com/FurinaLiF/dsh-tab-complete
+name: FurinaLiF/dsh-tab-complete
+category: ui
+description:
+  en: 'Predicts the next user message as composer ghost text using the configured DSH model; Tab fills the draft without sending, with time-aware context and cached suggestions.'
+  zh: '使用 DSH 已配置模型预测下一句，在输入框显示灰字，Tab 仅填入草稿；结合当前时间理解旧对话，并缓存建议。'

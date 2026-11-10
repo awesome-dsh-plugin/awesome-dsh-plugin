@@ -1,0 +1,6 @@
+url: https://github.com/ijry/DeepSeek-Harness-Desktop-Ultra/tree/main/plugins/dsh-plugin-taskboard
+name: ijry/DeepSeek-Harness-Desktop-Ultra#dsh-plugin-taskboard
+category: workflow
+description:
+  en: Task kanban where agents claim and hand off work through taskboard_* tools, which cannot move a task to done or canceled — acceptance stays with a human.
+  zh: 任务看板，agent 通过 taskboard_* 工具领活与交接；这些工具无法把任务移到 done 或 canceled，验收由人来做。

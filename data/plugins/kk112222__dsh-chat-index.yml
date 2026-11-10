@@ -1,0 +1,6 @@
+url: https://github.com/kk112222/dsh-chat-index
+name: kk112222/dsh-chat-index
+category: ui
+description:
+  en: 'Per-session question index for the DSH Web UI: a time-proportional dot rail on the right edge and an expandable chain panel showing every user question with its time, including branch/subagent sessions; clicking a node jumps to that message and highlights it.'
+  zh: 'DSH Web UI 会话提问索引：右缘时间比例圆点窄条与可展开链面板，展示每次用户提问的问题与时间，含分支/子会话；点击节点跳转并高亮对应消息。'

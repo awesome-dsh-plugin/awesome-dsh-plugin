@@ -1,0 +1,6 @@
+url: https://github.com/NamesMT/dsh-home-hosted
+name: NamesMT/dsh-home-hosted
+category: dev
+description:
+  en: "Starts your dsh web and other servers at boot, sets up and manages services like Gitea and Jellyfin just by asking, and puts them all under one home-hosted panel."
+  zh: "让 dsh web 与其他服务器随开机自动启动；只需一句提示就能搭建和管理 Gitea、Jellyfin 等服务，并统一收纳到一个 home-hosted 面板中。"

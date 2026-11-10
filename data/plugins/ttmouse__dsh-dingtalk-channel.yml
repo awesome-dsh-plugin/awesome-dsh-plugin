@@ -1,0 +1,6 @@
+url: https://github.com/ttmouse/dsh-dingtalk-channel
+name: ttmouse/dsh-dingtalk-channel
+category: notify
+description:
+  en: 'DingTalk IM channel via Stream-mode WebSocket: each chat drives its own tooled agent; replies stream back as messages, no public callback URL needed.'
+  zh: 钉钉 IM 双向 channel（Stream 模式）：每条单聊/群聊驱动一个 agent，思考与回复通过 WebSocket 长连接回流消息，免公网回调。

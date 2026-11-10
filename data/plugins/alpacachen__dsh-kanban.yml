@@ -1,0 +1,6 @@
+url: https://github.com/alpacachen/dsh-kanban
+name: alpacachen/dsh-kanban
+category: workflow
+description:
+  en: A shared kanban board that lets people and DSH agents manage workspace tasks through a Board tab and kanban tools.
+  zh: 一个由用户与 DSH Agent 共同维护的工作区看板，通过看板标签页和 kanban 工具管理任务。

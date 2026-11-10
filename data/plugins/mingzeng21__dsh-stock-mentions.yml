@@ -1,0 +1,6 @@
+url: https://github.com/mingzeng21/dsh-stock-mentions
+name: mingzeng21/dsh-stock-mentions
+category: market
+description:
+  en: Turns stock names and codes in DSH output text into clickable buttons for quotes and company news.
+  zh: 将 DSH 输出文本中的股票名称和代码转换为可点击按钮，并在侧边栏展示行情与资讯。

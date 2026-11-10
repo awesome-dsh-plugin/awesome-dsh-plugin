@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-dev/dsh-genui
+name: omdsh-dev/dsh-genui
+category: ui
+description:
+  en: 'Interactive UI components rendered inline in replies: layout, charts, forms, quizzes, mermaid, 3D scenes, and an action event loop back to the model.'
+  zh: 助手回复内渲染交互式 UI 组件：布局、图表、表单、测验、mermaid、3D 场景与回传事件循环。

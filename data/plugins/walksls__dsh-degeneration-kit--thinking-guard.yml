@@ -1,0 +1,6 @@
+url: https://github.com/walksls/dsh-degeneration-kit/tree/main/thinking-guard
+name: walksls/dsh-degeneration-kit#thinking-guard
+category: dev
+description:
+  en: 'Folds degenerate reasoning loops out of the model-visible history so they are not replayed upstream on the next turn. Detects two shapes — one sentence hammered repeatedly, and short-sentence rotation — and replaces the matched span in place; a companion escape valve aborts a turn that will not stop on its own.'
+  zh: '把退化的思考复读从模型可见历史里折叠掉，下一轮不再回传上游。能识别两种形态——同一句反复死磕、以及短句轮换——并对命中的那段做等价替换；配套的急停阀则对停不下来的回合当场中止。'

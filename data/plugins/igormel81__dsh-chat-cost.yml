@@ -1,0 +1,6 @@
+url: https://github.com/igormel81/dsh-chat-cost
+name: igormel81/dsh-chat-cost
+category: usage
+description:
+  en: 'Live token cost for every chat in the DSH Web UI: the chat, its subagents and the whole session tree, priced from a bundled models.dev snapshot of seven providers and 139 priced models, with cache read and write rates wherever the provider publishes them and DeepSeek from its own peak and off-peak table. Every finished answer carries its own price in the transcript, and a chat that is not currently open is priced from the log instead of disappearing. Spend is costed per interval from an append-only JSONL ledger in the project folder, so logged work keeps the tariff it was billed at. On top of it: budget-aware work plans packed against a money limit, routing scenarios that show which models are worth connecting, a generated plan document in English, Chinese or Russian, and a warning when spend belongs to no plan unit.'
+  zh: '为 DSH Web UI 的每个对话实时计算 token 费用：本对话、其子代理与整棵会话树，价格来自内置的 models.dev 快照：七家供应商、139 个有价模型，缓存读写费率按供应商实际公布的取值，DeepSeek 则使用其官方峰谷价格表。每个完成的回答都会在对话中显示自身费用，未打开的对话则按日志计价而不是整行消失。费用按区间计价，依据写入项目目录的只追加 JSONL 账本，因此已记录的工作保留当时的费率。此外还提供：按金额预算排布的工作计划、展示值得接入哪些模型的路由方案比较、以英语/中文/俄语生成的计划文档，以及当费用未归入任何计划单元时的提醒。'

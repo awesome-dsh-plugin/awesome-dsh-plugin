@@ -1,0 +1,6 @@
+url: https://github.com/ICCuse/dsh-premise-guard
+name: ICCuse/dsh-premise-guard
+category: memory
+description:
+  en: 'Post-compaction premise-drift guard: injects a one-shot notice when a compaction summary drops a critical literal anchor.'
+  zh: 压缩后前提漂移守卫：摘要丢失关键字面锚点时注入一次性提醒。

@@ -1,0 +1,7 @@
+url: https://github.com/Lequait/dsh-proxy-router
+name: Lequait/dsh-proxy-router
+category: tools
+tarball: https://github.com/Lequait/dsh-proxy-router/releases/download/v0.2.1/dsh-proxy-router-0.2.1.tgz
+description:
+  en: 'Imports a proxy subscription, supervises a local mihomo core (proxy-provider plus a url-test group), and fetches direct-first with automatic proxy fallback and per-host routing memory; exposes one proxy_router tool (status, start, stop, test, fetch, routes, forget).'
+  zh: '导入代理订阅并监督本地 mihomo 内核（proxy-provider + url-test 组），取回时直连优先、失败自动切代理并按主机记忆路由；对外只有一个 proxy_router 工具（status/start/stop/test/fetch/routes/forget）。'

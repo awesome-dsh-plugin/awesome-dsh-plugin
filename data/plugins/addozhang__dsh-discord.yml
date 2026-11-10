@@ -1,0 +1,6 @@
+url: https://github.com/addozhang/dsh-discord
+name: addozhang/dsh-discord
+category: notify
+description:
+  en: 'Discord adapter that installs into a dsh web or desktop profile: @mentions and threads bind to sessions with streaming replies and live tool-activity rows, nine slash commands cover workspace binding, permission presets and model selection, and tool approvals and user questions are claimed by whichever of Discord or the web UI answers first, behind a deny-first guild allowlist.'
+  zh: 装进 dsh web / desktop profile 的 Discord 适配器：@提及与线程绑定会话，回复流式渲染并带实时工具活动行；九条斜杠命令覆盖工作区绑定、权限预设和模型选择；工具审批与提问在 Discord 与 web 端谁先答谁生效；guild 白名单默认拒绝。

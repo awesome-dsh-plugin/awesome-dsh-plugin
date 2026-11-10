@@ -1,0 +1,6 @@
+url: https://github.com/Elohia/dsh-plugin-image-input
+name: Elohia/dsh-plugin-image-input
+category: vision
+description:
+  en: 'Image-to-text input for the Web UI: paste or drag an image and it is transcribed into structured text and sent, giving text-only LLMs image-input takeover (OpenAI-compatible vision API).'
+  zh: 图片转文字输入插件：粘贴/拖拽图片自动转为结构化文字描述发送，给纯文本 LLM 提供图片输入接管（OpenAI 兼容视觉 API）。

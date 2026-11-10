@@ -1,0 +1,6 @@
+url: https://github.com/mjnhmd/dsh-git-bar
+name: mjnhmd/dsh-git-bar
+category: git
+description:
+  en: 'Shows the repository, branch, working-tree change count and short commit SHA on the composer row, with a searchable branch switcher and a per-file diff pane in the right sidebar.'
+  zh: '在输入框那一行显示仓库、分支、改动数与短 SHA；点分支可搜索、切换或新建分支，点改动数在右侧边栏打开逐文件 diff 面板。'

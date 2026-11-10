@@ -1,0 +1,6 @@
+url: https://github.com/zoahdev/dsh-unplug
+name: zoahdev/dsh-unplug
+category: dev
+description:
+  en: Plug/unplug any DeepSeek Harness plugin cleanly — list every mounted layer (bundles + patch rows), remove with full cleanup, disable/enable without deleting, and audit for orphaned/dangling state. CLI + agent-callable unplug tool. Read-only by default; destructive operations require explicit confirmation.
+  zh: 让 DSH 插件的安装和卸载干净利落——列出所有加载层（Bundle + 补丁行）、完整卸载（清理 Bundle 列表+补丁行+依赖）、临时禁用以调试而不真正删除、以及审计残留的孤立行或悬空引用。CLI 与 agent 均可调用，默认只读，破坏性操作需二次确认。

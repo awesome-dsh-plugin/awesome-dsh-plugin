@@ -1,0 +1,6 @@
+url: https://github.com/icodesign/orbis/tree/main/packages/orbis-remote-dsh
+name: icodesign/orbis#orbis-remote-dsh
+category: remote
+description:
+  en: Native iOS and Android apps for remote control of DeepSeek Harness, with end-to-end encryption, workspace browsing, and real-time session updates.
+  zh: 提供 DeepSeek Harness 远程控制功能的原生 iOS/Android 应用，支持端到端加密、工作区浏览和会话实时更新等。

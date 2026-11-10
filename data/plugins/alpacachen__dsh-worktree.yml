@@ -1,0 +1,6 @@
+url: https://github.com/alpacachen/dsh-worktree
+name: alpacachen/dsh-worktree
+category: git
+description:
+  en: A minimal worktree management solution with only one button and one dialog.
+  zh: 极简 worktree 管理方案，只有一个按钮和一个弹窗。

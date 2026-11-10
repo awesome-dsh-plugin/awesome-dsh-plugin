@@ -1,0 +1,6 @@
+url: https://github.com/luomeii/dsh-review-squad
+name: luomeii/dsh-review-squad
+category: git
+description:
+  en: Runs a parallel code review squad of read-only reviewer subagents (security, correctness, tests, style), each optionally on its own model, and aggregates one severity-grouped report from /review or a code_review tool call.
+  zh: 通过 /review 命令或 code_review 工具并行派出只读评审员子代理小队（安全、正确性、测试、风格，各自可指定不同模型），并汇总为按严重度分组的结构化评审报告。

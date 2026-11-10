@@ -1,0 +1,6 @@
+url: https://github.com/Matcha-Eason/dsh-answer-highlighter
+name: Matcha-Eason/dsh-answer-highlighter
+category: ui
+description:
+  en: Automatically highlights key points, definitions, warnings, and questions in completed assistant answers using one separate model call.
+  zh: 在 DSH Web 的助手回答完成后，额外调用一次模型，自动高亮其中的关键点、定义、警告和问题。

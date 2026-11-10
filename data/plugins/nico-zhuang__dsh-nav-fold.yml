@@ -1,0 +1,7 @@
+url: https://github.com/nico-zhuang/dsh-nav-fold
+name: nico-zhuang/dsh-nav-fold
+category: ui
+description:
+  en: 'Folds and reorders global sidebar navigation; optional Workspaces, Activity, and Favorites tabs support user-bound shortcut navigation for folder and session focus, and macOS logo hiding adapts stoner-byte/dsh-hide-brand (MIT).'
+  zh: '折叠并排序全局侧栏导航；可按需开启工作区、活动与收藏三栏，用自定义入口键导航文件夹与会话焦点；macOS 隐藏 Logo 功能适配自 stoner-byte/dsh-hide-brand（MIT）。'
+tarball: https://github.com/nico-zhuang/dsh-nav-fold/releases/download/v0.4.10/dsh-nav-fold-0.4.10.tgz

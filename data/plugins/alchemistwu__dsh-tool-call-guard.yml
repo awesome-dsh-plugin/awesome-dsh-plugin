@@ -1,0 +1,6 @@
+url: https://github.com/alchemistwu/dsh-tool-call-guard
+name: alchemistwu/dsh-tool-call-guard
+category: session
+description:
+  en: Neutralize tool calls with invalid JSON arguments on the wire so one malformed model generation cannot brick a session against strict OpenAI-compatible servers.
+  zh: 在 wire 层中性化 arguments 为非法 JSON 的 tool call，避免一次模型畸形输出让 session 在严格 OpenAI 兼容服务端上永久 400。

@@ -1,0 +1,6 @@
+url: https://github.com/ijry/DeepSeek-Harness-Desktop-Ultra/tree/main/plugins/dsh-plugin-mobile-bridge
+name: ijry/DeepSeek-Harness-Desktop-Ultra#dsh-plugin-mobile-bridge
+category: remote
+description:
+  en: Token-authenticated REST and SSE bridge with QR pairing, so a phone app can read sessions, send messages and approve tool calls.
+  zh: 带令牌鉴权的 REST 与 SSE 接口，扫码配对后可在手机 App 上看会话、发消息、批准工具调用。

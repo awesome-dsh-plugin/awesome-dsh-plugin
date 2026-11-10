@@ -1,0 +1,6 @@
+url: https://github.com/Azhe0306/dsh-connectors/tree/main/packages/balance-widget
+name: Azhe0306/dsh-connectors#balance-widget
+category: usage
+description:
+  en: 'Session-header balance readout for DeepSeek Harness: shows the spendable account total (recharge and bonus wallets combined) in the conversation header, refreshed every two minutes, and renders nothing when the account is signed out or the query fails.'
+  zh: 'DSH 会话标题栏右上角的账户余额读数：显示可用总额（充值余额与赠金余额合并），每两分钟刷新一次；未登录或查询失败时不显示任何内容。'

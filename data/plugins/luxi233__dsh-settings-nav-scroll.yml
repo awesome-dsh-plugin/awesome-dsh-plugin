@@ -1,0 +1,7 @@
+url: https://github.com/luxi233/dsh-settings-nav-scroll
+name: luxi233/dsh-settings-nav-scroll
+category: ui
+tarball: https://github.com/luxi233/dsh-settings-nav-scroll/releases/download/v0.1.0/dsh-settings-nav-scroll-0.1.0.tgz
+description:
+  en: Adds a visible vertical scrollbar to the DSH Web settings navigation when its sections exceed the viewport.
+  zh: 当 DSH Web 设置导航的分区超出视口时，为其添加可见的纵向滚动条。

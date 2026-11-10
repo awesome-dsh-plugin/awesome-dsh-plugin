@@ -1,0 +1,6 @@
+url: https://github.com/shiliu153/dsh-mcp-manager
+name: shiliu153/dsh-mcp-manager
+category: tools
+description:
+  en: 'MCP server manager for DSH: nine mcp_manager_* tools, a CLI and a web panel that list, validate, probe, add, edit, enable/disable and remove servers in ~/.dsh/cordis.patch.yml, search and install servers from the official MCP Registry, and locate or rotate stored credentials.'
+  zh: 'DSH 的 MCP 服务器管理器：九个 mcp_manager_* 工具、命令行与网页面板，可列出、校验、探测、新增、编辑、启停、移除 ~/.dsh/cordis.patch.yml 中的服务器，从官方 MCP Registry 搜索并安装服务器，以及定位或轮换已存凭据。'

@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-lit-fetch
+name: loyalchiiina/dsh-lit-fetch
+category: tools
+description:
+  en: 'Free literature fetching: give it a DOI, a title or a keyword and it locates the paper, then walks 8 Sci-Hub mirrors first and falls back to Unpaywall open access only when every mirror fails. PDFs are checked for the %PDF- magic bytes and a minimum size, and a clickable manifest is generated for the ones that cannot be fetched. No paid subscription, no API key. Adapts DSH kernel 0.2.2-rc.1.'
+  zh: '免费文献下载：给 DOI、标题或关键词就能定位论文，先依次遍历 8 个 Sci-Hub 镜像，全部失败才用 Unpaywall 开放获取兜底。PDF 要过 %PDF- 魔数与最小体积校验，抓不到的论文生成可点击的批量获取清单。不需要付费订阅，也不需要 API Key。适配 DSH 内核 0.2.2-rc.1。'

@@ -1,0 +1,7 @@
+url: https://github.com/Han-1413141/dsh-codex-computer-use
+name: Han-1413141/dsh-codex-computer-use
+category: tools
+description:
+  en: "Let a DSH model inspect and operate Windows applications through an installed Codex Computer Use runtime, with per-session app approval."
+  zh: "让 DSH 当前模型通过已安装的 Codex Computer Use 运行时读取和操作 Windows 应用，并保留每个会话的应用授权。"
+tarball: https://github.com/Han-1413141/dsh-codex-computer-use/releases/download/v0.1.4/dsh-codex-computer-use-0.1.4.tgz

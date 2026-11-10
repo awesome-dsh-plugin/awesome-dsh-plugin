@@ -1,0 +1,6 @@
+url: https://github.com/XDTrees/dsh-opencode-xdbridge
+name: XDTrees/dsh-opencode-xdbridge
+category: model
+description:
+  en: 'Adds OpenCode Zen free models to DeepSeek Harness as one provider, backed by a managed, isolated OpenCode runtime, with a Settings page that lists each model and tests it.'
+  zh: '把 OpenCode Zen 的免费模型作为一组 provider 接入 DeepSeek Harness，底层是受管、隔离的 OpenCode 运行时，并在设置页列出每个模型并可逐个检测。'

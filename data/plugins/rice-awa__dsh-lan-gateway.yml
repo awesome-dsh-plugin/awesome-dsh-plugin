@@ -1,0 +1,6 @@
+url: https://github.com/rice-awa/dsh-lan-gateway
+name: rice-awa/dsh-lan-gateway
+category: remote
+description:
+  en: "Publishes the DSH Web GUI to LAN or internet with dsh kept on loopback. Every source must sign in for an HMAC session cookie unless passwordless LAN is opted into. Adds self-signed or custom TLS, a secureCookies override for plaintext-HTTP proxies, and a UUID shim for plain-HTTP origins."
+  zh: "把 DSH Web GUI 发布到局域网/公网，dsh 仍只绑定回环。除显式开启局域网免密外，所有来源均须登录换取 HMAC 会话 Cookie。提供自签名或自定义 TLS、用于明文 HTTP 代理的 secureCookies 覆盖项，以及让局域网纯 HTTP 来源正常打开工作区的 UUID shim。"

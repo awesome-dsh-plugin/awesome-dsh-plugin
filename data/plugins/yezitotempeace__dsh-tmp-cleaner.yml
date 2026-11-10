@@ -1,0 +1,6 @@
+url: https://github.com/yezitotempeace/dsh-tmp-cleaner
+name: yezitotempeace/dsh-tmp-cleaner
+category: tools
+description:
+  en: 'Keeps the /tmp cleanup daemon alive: an in-process watchdog revives it within about two minutes after Android kills it, runs the due cleanup inside dsh while it stays down, and adds a settings page for status, config, clean and dry-run. The cleaner ships inside the package (bin/tmp-clean, Python 3), so no extra install step is needed.'
+  zh: '保证 /tmp 清理守护进程常驻：被 Android 杀掉后约 2 分钟内由 dsh 进程内看门狗复活，守护进程持续不在时由 dsh 自己兜底清理；设置页可看状态、改配置、立即清理或演练。清理工具随包自带（bin/tmp-clean，Python 3），装好即用。'

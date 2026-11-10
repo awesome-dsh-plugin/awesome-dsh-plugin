@@ -1,0 +1,6 @@
+url: https://github.com/gitByteFree/dsh-mermaid-smooth
+name: gitByteFree/dsh-mermaid-smooth
+category: docs
+description:
+  en: Renders mermaid fences in dsh web chat as SVG diagrams by default, with cursor-anchored smooth zoom and pan, a per-fence diagram/code toggle persisted in localStorage, dark-mode follow, and a bundled offline engine.
+  zh: 将 dsh Web 对话中的 mermaid 代码围栏默认渲染为 SVG 图表，支持以指针为锚点的丝滑缩放拖拽、按围栏记忆的图/文案切换（localStorage 持久化）、明暗主题跟随，以及完全本地打包的离线渲染引擎。
