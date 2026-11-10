@@ -795,6 +795,7 @@ dsh plugin --profile web add dshmarket
 - [hg1048596-pixel/dsh-recall-unread](https://github.com/hg1048596-pixel/dsh-recall-unread) — 在输入框上方列出已发送但模型尚未读取的插话消息，可在模型读取前逐条或一次性撤回。
 - [hiJoeLee/dsh-suggest-actions](https://github.com/hiJoeLee/dsh-suggest-actions) — 每条回复下方给出最多 5 条可点的下一步：点一下那句话就直接发出去，不额外调用模型；角度重复的自动去掉，标了「推荐」的排最前，悬停可先看全文；右侧小按钮只把它填进输入框（先清空），改完再发。
 - [hiJoeLee/dsh-whale-brand](https://github.com/hiJoeLee/dsh-whale-brand) — 把自己做的矢量 Logo 换到 DSH 侧栏与首屏标题旁，接管 sidebar.brand.mark / sidebar.brand.name / conversation.hero.brand.mark 这三个 single 槽位。包里自带的补丁只把自己插进 loader——这三个槽位同时被官方品牌插件 @deepseek-ai/dsh-client-ui-brand-official 占着，所以要先在 profile 的 cordis.patch.yml 里把它 disabled，再重启 DSH。默认那只鲸鱼会游动，用 currentColor 跟随明暗主题，动效按侧栏 24px 的可读性调过。
+- [hijoywell/dsh-tjing-reading](https://github.com/hijoywell/dsh-tjing-reading) — 在 DSH 侧边栏阅读 EPUB、PDF、无 DRM 的 MOBI/AZW3 和 TXT。仿微信读书排版：目录、书签、划线、进度记忆，选中文本一键翻译成中文，AI 问书只依据书中检索到的段落作答。书籍与进度保存在本地 IndexedDB，不上传。支持四种主题（含豆沙绿护眼底色），PDF 纸色跟随主题。
 - [Hilbert-beinghappy/seektty](https://github.com/Hilbert-beinghappy/seektty) — 面向 DeepSeek Harness 的终端工作区，支持导入本地 VS Code JSON／JSONC 主题、继承终端背景效果、鼠标文本选择、结构化工具与 Diff 视图、Session／Profile／插件管理，以及 Skill／MCP 浏览。
 - [Him666233/dsh-inline-diff#plugin](https://github.com/Him666233/dsh-inline-diff/tree/main/plugin) — 为 edit、write、str_replace_editor 调用就地渲染内联差异卡片：旧/新行号、字符级高亮、57 种语言检测与红绿安全的语法配色，另有左右对照、Read 行范围，以及可配置的显示风格与高亮设置。
 - [HimA6652/dsh-client-ui-model-seat](https://github.com/HimA6652/dsh-client-ui-model-seat) — 把 AprilCrystal/dsh-client-ui-gpt-helper 与 zszz3/dsh-model-provider-prefix 这两个无法同时安装的输入框模型控件合并成一个控件：「供应商/模型」钮点开是两栏卡片，鼠标所指供应商的模型就地切换、卡片不移动；推理强度是旁边的独立钮，带粒子滑杆；搜索跨全部供应商，且卡片尺寸保持不变。
@@ -1821,6 +1822,7 @@ dsh plugin --profile web add dshmarket
 - [wsxwj123/dsh-plugins#dsh-turn-scrubber](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-turn-scrubber) — 右侧紧凑回合刻度条，悬停显示回合摘要，点击跳转到对应用户回合。npm 包名 `dsh-turn-scrubber`。
 - [wszhoho/dsh-file-attachment](https://github.com/wszhoho/dsh-file-attachment) — 拖拽/粘贴/上传文件和图片，非多模态模型下图片自动调用已配置 VLM 识别。
 - [wt0812/dsh-vocab-study](https://github.com/wt0812/dsh-vocab-study) — 离线背词面板：输入框旁一颗胶囊点开是词卡，可钉住的分页面板管着今日、进度、生词本与设置。
+- [WU55UY/dsh-pomodoro-box](https://github.com/WU55UY/dsh-pomodoro-box) — 在输入框下方的番茄钟上加一层藏品盲盒：每走完一个专注段开一个盲盒，15 件藏品分四档稀有度，进度记在 5x3 图鉴里。
 - [wuaisaber/dsh-think-zh-plus](https://github.com/wuaisaber/dsh-think-zh-plus) — 让 DSH 用简体中文思考，并自动展开 Web 界面里的所有 Think 行，展开的思考块与回复有视觉区分。
 - [wucl12/dsh-side-branch](https://github.com/wucl12/dsh-side-branch) — 右侧栏的只读侧枝会话：划选文字即可追问，答案不进入主会话的模型上下文；每轮追问都用主会话最新的已结算内容重建，写操作在执行层被拒，以保住提示词前缀缓存。
 - [WuHututu/dsh-side-chat](https://github.com/WuHututu/dsh-side-chat) — 在右侧边栏打开一个临时侧边对话，复用宿主原生会话界面，回答的 Markdown 渲染、工具步骤、用时与 Token 用量都与主对话一致；在主对话里选中一段回答，即可唤起该对话的侧聊并把选中内容作为引用胶囊停在输入框内，随下一条消息一起生效，并计入侧聊上下文。侧聊运行在独立的内存会话上：主对话快照只作为参考上下文，不写入会话日志。
