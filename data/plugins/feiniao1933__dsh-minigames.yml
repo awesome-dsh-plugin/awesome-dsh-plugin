@@ -2,5 +2,5 @@ url: https://github.com/feiniao1933/dsh-minigames
 name: feiniao1933/dsh-minigames
 category: ui
 description:
-  en: Add a mini-games box tab to the DSH right sidebar with Gomoku against an AI in three difficulties, placement sounds and a victory celebration.
-  zh: 在 DSH 右侧面板加入「游戏盒子」标签页：与三档难度的 AI 对弈五子棋，带落子音效，获胜时播放庆祝动画。
+  en: Add a mini-games box tab to the DSH right sidebar with Gomoku against an AI in three difficulties and a WeChat-style sky shooter, with synthesized sounds and a victory celebration.
+  zh: 在 DSH 右侧面板加入「游戏盒子」标签页：三档难度的五子棋人机对弈，以及微信经典打飞机射击小游戏，带合成音效与获胜庆祝动画。
