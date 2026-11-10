@@ -1,0 +1,6 @@
+url: https://github.com/LinYanZhi/dsh-mesh/tree/main/packages/dsh-mesh-ui
+name: LinYanZhi/dsh-mesh#dsh-mesh-ui
+category: remote
+description:
+  en: 'DSH sidebar page for a dsh-mesh network: peer topology, latency, TLS/version health and a delegation list. Resolves the installed dsh-mesh-node package for data.'
+  zh: 'dsh-mesh 网络的 DSH 左侧栏页面：节点拓扑、延迟、TLS/版本健康状态与委托列表；数据来自已安装的 dsh-mesh-node 包。'
