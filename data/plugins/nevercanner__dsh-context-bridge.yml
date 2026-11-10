@@ -1,0 +1,6 @@
+url: https://github.com/nevercanner/dsh-context-bridge
+name: nevercanner/dsh-context-bridge
+category: session
+description:
+  en: 'Automatic session handoff: at a configurable context threshold it turns the source session log into a compact handoff document (goal, done, next, project facts), creates a new session seeded with it and wakes it to continue, optionally inheriting the session-bus registered name as <name>-handoff.'
+  zh: '会话自动交接：上下文到阈值时把源会话日志压成一份紧凑交接文档（目标 / 已完成 / 下一步 / 项目事实），据此新建会话并唤醒它继续干活，可继承会话总线的注册名（<名>-handoff）。'
