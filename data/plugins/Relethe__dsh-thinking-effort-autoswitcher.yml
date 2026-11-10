@@ -1,0 +1,6 @@
+url: https://github.com/Relethe/dsh-thinking-effort-autoswitcher
+name: Relethe/dsh-thinking-effort-autoswitcher
+category: model
+description:
+  en: 'Scores the turn by how far the conversation has drifted from the main objective and by the number of failures, picks the thinking effort from that score, and labels every finished turn with the effort it sent.'
+  zh: '依照对话偏离主要目的的程度和失败次数进行打分，以此自动选择思考强度，同时每轮结束后标出该轮发送的档位。'
