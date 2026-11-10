@@ -1,6 +1,7 @@
 url: https://github.com/Boris-boomer/dsh-project-cockpit
 name: Boris-boomer/dsh-project-cockpit
 category: ui
+tarball: https://github.com/Boris-boomer/dsh-project-cockpit/releases/download/v0.2.0/dsh-project-cockpit-0.2.0.tgz
 description:
-  en: 'Desktop-style project workbench UI bundle that replaces the default DSH layout with a three-pane workspace.'
-  zh: '桌面式项目工作台 UI 插件包，用三栏工作区替换 DSH 默认布局。'
+  en: 'Floating cockpit panel (draggable, resizable, default 400x600) with five tabs — orchestration, matching, cost, signal, graph — aggregating four engines into unified /__dsh/project-cockpit/* webServer routes. Opens via a built-in launcher button; dsh-icon-grid icon is an optional extra entry.'
+  zh: '右下角浮动驾驶舱面板（可拖拽、可缩放，默认 400x600），含编排/选题/成本/信号/图谱五个页签，整合四大引擎为统一 /__dsh/project-cockpit/* webServer 路由。内置悬浮按钮即可打开，dsh-icon-grid 图标为可选入口。'
