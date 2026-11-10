@@ -1914,7 +1914,7 @@ dsh plugin --profile web add dshmarket
 - [xswt442-cmd/dsh-xswt-tauriapp#dsh-desktop-app](https://github.com/xswt442-cmd/dsh-xswt-tauriapp/tree/main/plugins/dsh-desktop-app) — 桌面外壳 dsh-xswt-tauriapp（一个 Tauri 写的 DeepSeek Harness 桌面壳）的安装引导：安装后首次启动 dsh 时，从发布页下载本平台安装包，先比对 SHA256SUMS、校验通过才落盘，再交给系统安装器打开；插件自己不安装任何东西，也不给 dsh 加界面。
 - [xt765/dsh-message-edit](https://github.com/xt765/dsh-message-edit) — 用户消息原位编辑与重发插件：在已发送消息气泡下方复制按钮旁提供铅笔编辑图标，点击原位展开圆角内联编辑框，支持从上一轮末尾分叉回退重发或在当前会话直接追发。
 - [xt765/dsh-selection-quote](https://github.com/xt765/dsh-selection-quote) — Cursor 与 GitHub PR Review 风格划词引用与批注插件：支持划词一键引用到对话（⌘L）、行内展开写批注（⇧⌘L）及输入框上方批注汇总栏一键插入。
-- [xuanfenglajiao/dsh-effort-menu](https://github.com/xuanfenglajiao/dsh-effort-menu) — 把输入框的模型菜单换成最近模型列表、全部模型飞出面板和一条可拖动的思考强度滑杆。
+- [xuanfenglajiao/dsh-effort-menu](https://github.com/xuanfenglajiao/dsh-effort-menu) — 把输入框的模型菜单换成最近模型列表、全部模型飞出面板和一条可拖动的思考强度滑杆。它接管输入框的模型位，请只装一个模型菜单类插件。
 - [xuanfu-web/dsh-metaphysics](https://github.com/xuanfu-web/dsh-metaphysics) — 玄学命理排盘：十九套体系——八套排盘（八字、紫微斗数、六爻、梅花易数、大六壬、奇门遁甲、合盘、塔罗）加十一套速查（黄历、农历互转、择日、称骨、小六壬、星座、生命数字、人生K线、风水、起名、十六型人格问卷），并可按所问之事生成可读报告；八字含交运日、岁运并临/伏吟反吟、通关、三书对照与杂气月取格/人元司权，紫微含 34 格局、十一类流派开关（含可显式开启的 61 颗杂曜全表，逐颗附安星诀与本盘落宫，诀文按多处独立辑本同表才收、同名异星不合并）、飞星串连与三方四正复合飞化，六爻与梅花含《周易》经文原文（64 卦辞、384 爻辞加用九用六，三本互校、异文括注），六爻含用神旺衰、全卦逐爻旺衰、伏神出伏与应期线索，风水含八宅与玄空飞星，起名含 1062 字库与 998 姓 / 82 复姓的姓氏库（逐姓康熙笔画）、五格剖象与音韵检查，塔罗含 78 张逐张牌义库（RWS 底本，牌面图像、核心义与占星对应经三处公开资料互核；宫廷牌两派映射冲突故不配星座并写明）；另建古籍引文库：66 种典籍、464 条索引（含《穷通宝鉴》120 格在内共 584 条可核验原文），逐句对照 341 页离线底本快照核为子串，异文并列不调和、今人按语与古籍正文分层，原文与白话只放在独立索引页、不进浏览器分块；每张结果可带可复现的影子盘短 ID（同参同 ID、跨版本自动字段 diff）与可选推导链（逐层规则、输入、结果、出处）；浏览器入口只带界面，按 tab 懒加载引擎分块（首屏 gzip 约 90KB），离线页仍是单文件；宿主面板与离线页共用同一套分组首屏（问一件事/看一个人/查日子），带最近用过与窄屏收纳，盘面先给一段人话结论、可一键复制问事提示与保存「我的命盘」，时辰未知改走三柱模式而不静默按子时；纯本地计算，默认不联网。npm 包内另附离线单文件页（命理排盘.html）：双击即开，十九个 tab 齐全，不用起服务、不用联网。
 - [xuanyuanchumo/dsh-codegraph-visualizer](https://github.com/xuanyuanchumo/dsh-codegraph-visualizer) — DSH 的交互式代码图谱：以侧栏入口呈现（装了 dsh-better-sidebar 时则是它的一个标签页），渲染 dsh-codegraph（.codegraph/codegraph.db 或 codegraph CLI）或 dsh-tool-lens 提供的数据，支持调用链追踪、循环依赖检测、依赖与影响分析、目录/文件/函数聚类、四种布局与 PNG/SVG/JSON 导出。需要 dsh-codegraph 或 dsh-tool-lens 提供数据源，否则图谱为空。
 - [xuexiaolei1997/dsh-plugin-stock-x](https://github.com/xuexiaolei1997/dsh-plugin-stock-x) — 全景金融量化工作台与股票盯盘：悬浮球与抽屉面板、A/港/美/全球指数实时行情、多周期K线与5日分时、五档盘口、资金流向、板块热点榜与AI投研诊断。
@@ -2098,7 +2098,7 @@ dsh plugin --profile web add dshmarket
 - [Zimeng-Luo/dsh-source-fold](https://github.com/Zimeng-Luo/dsh-source-fold) — 将输入框的模型选择器替换为紧凑面板，支持来源到模型的逐级选择和自适应思考强度滑块，保留 Default 档位，不支持调节的模型隐藏滑块。
 - [zingzheng/dsh-fish](https://github.com/zingzheng/dsh-fish) — 在 DSH 输入框上方以思考行样式显示自选股票行情，或阅读 TXT/EPUB 电子书。
 - [zirscard/dsh-taskboard-epic](https://github.com/zirscard/dsh-taskboard-epic) — DeepSeek Harness 的客户端面板：把 dsh-taskboard 项目里的总任务卡按 epic:children 顺序堆叠展示，标出每个模块在弧线上的位置、代号、名称与版本，并区分起点/中间/终点模块。顺序可拖拽或用按钮调整，新顺序通过 taskboard 自身的公开更新 API 写回，因此会持久化并对该项目的所有查看者共享。需要先安装 cloader/dsh-taskboard 插件。
-- [ZIye1208/dsh-clean-chat](https://github.com/ZIye1208/dsh-clean-chat) — 在右侧栏加一个刻意「无上下文」的对话面板：只发一句系统提示和你在面板里输入的内容，不带工具、不复制当前会话、不派生分支，面板历史只存在内存里。每条回复下方显示本轮 token 用量与缓存命中率。
+- [ZIye1208/dsh-clean-chat](https://github.com/ZIye1208/dsh-clean-chat) — 在右侧栏加一个刻意「无上下文」的对话面板：只发一句系统提示和你在面板里输入的内容，不带工具、不复制当前会话、不派生分支，面板历史只存在内存里。每条回复下方显示本轮 token 用量；在返回缓存统计的路由上同时显示缓存命中率。
 - [ZIye1208/dsh-settings-nav-manager](https://github.com/ZIye1208/dsh-settings-nav-manager) — 为 DSH 设置页导航加编辑模式：拖拽排序、逐个显隐、用命名可折叠抽屉分组，排版存在插件自己的设置命名空间；还能把最多 5 个分区钉到主界面侧栏，一键直达。
 - [zizhongfeiyang/dsh-settings-drawer](https://github.com/zizhongfeiyang/dsh-settings-drawer) — 让你选择 DeepSeek Harness 设置页左侧导航要显示哪些栏目。
 - [zkl22492-star/Toolfolk-for-DSH](https://github.com/zkl22492-star/Toolfolk-for-DSH) — 把插件与模型的调用过程可视化成 3D 办公室：六个固定工位、思维流气泡与交付纸。
@@ -2368,7 +2368,7 @@ dsh plugin --profile web add dshmarket
 - [KIDLi1412/dsh-session-cost](https://github.com/KIDLi1412/dsh-session-cost) — 对话底部的会话费用状态栏：按模型逐条计价估算 Token 费用（CNY），并实时显示 DeepSeek 账户余额（官方余额接口）。
 - [KIDLi1412/dsh-token-heatmap](https://github.com/KIDLi1412/dsh-token-heatmap) — 新建会话页的 GitHub 风格每日 Token 用量热力图：可选日历年度视图、绿/蓝配色与显示开关，并附今日/本月/累计总量。
 - [kikomaotu/ccs-balance](https://github.com/kikomaotu/ccs-balance) — 同步 cc-switch 各 provider 余额，按日/月/总量统计 token 用量与花费，支持中转站币种与汇率设置。
-- [KimiChen2000/dsh-conversation-costs](https://github.com/KimiChen2000/dsh-conversation-costs) — 按对话和每轮回复估算已记录的 DeepSeek 模型费用，并提供花费排序明细。
+- [KimiChen2000/dsh-conversation-costs](https://github.com/KimiChen2000/dsh-conversation-costs) — 按对话和每轮回复估算已记录的 DeepSeek 模型费用，并提供花费排序明细。内置价目表覆盖 2026-09-11 至 2026-12-31。
 - [kirigayakazima/dsh-usage-vendor-stats](https://github.com/kirigayakazima/dsh-usage-vendor-stats) — 按厂商（订阅/官方API）统计用量看板：按供应商/模型拆分 Token、缓存、输出等 KPI，53 周热力图，趋势折线图（今天按小时），模型钻取，费用估算，CSV 导出，以及健康度卡片（TTFT、生成速度、峰值 Context、错误率）。
 - [kober-basket/dsh-cachescope](https://github.com/kober-basket/dsh-cachescope) — 提示词缓存诊断页，展示 Provider 回传的 Token 用量、相邻逻辑输入变化与 Call TTFT。
 - [kongshan-zhuyu/dsh-balance-quota#dsh-balance](https://github.com/kongshan-zhuyu/dsh-balance-quota/tree/main/packages/dsh-balance) — DSH Web 的供应商余额与额度状态栏，支持模型能力设置、外部 JSON 健康监测、可视化字段绑定和逐模型状态详情。
@@ -2519,7 +2519,7 @@ dsh plugin --profile web add dshmarket
 - [solstice621/dsh-token-usage-dashboard](https://github.com/solstice621/dsh-token-usage-dashboard) — 根据 DSH 会话日志展示 Token 用量统计、每日与每周热力图、活跃情况和模型排名，并在本地持久保存汇总数据。
 - [songrui111/dsh-readprune](https://github.com/songrui111/dsh-readprune) — 为 DeepSeek Harness 会话节省 token：按行号或符号定位读取文件而不是整份读，并对过大的工具结果设上限且保留取回路径。修剪发生在源头，而不是内容进入上下文之后。在建模的 30 步会话上实测 prompt tokens 减少 43.9%。
 - [spartawhy117/dsh-token-dash](https://github.com/spartawhy117/dsh-token-dash) — DSH Token 看板：按供应商的月度预算、订阅配额（GLM / Kimi Coding）、账户余额，支持当天 / 7 天 / 30 天 / 全部范围查看费用与真实 Tokens，并可本地导出 / 导入备份。
-- [STao-Gee/dsh-token-curve](https://github.com/STao-Gee/dsh-token-curve) — 右栏 Token 曲线 + 账本：当前对话逐轮 token 与费用，本机全部会话按月/周汇总，逐轮明细可导出 Excel，顶部实时显示账户余额。只读会话日志，逐条按峰谷计价，分叉会话抄来的历史不重复计费。
+- [STao-Gee/dsh-token-curve](https://github.com/STao-Gee/dsh-token-curve) — 右栏 Token 曲线 + 账本：当前对话逐轮 token 与费用，本机全部会话按月/周汇总，逐轮明细可导出 Excel，顶部实时显示账户余额。只读会话日志，逐条按峰谷计价，分叉会话抄来的历史不重复计费。仅桌面端，仅在 Windows 上验证；实时余额需登录 DSH 账号。
 - [Starlight-bananice/dsh-status-bar](https://github.com/Starlight-bananice/dsh-status-bar) — 输入栏下可配置的 17 段会话状态栏，提供实时 TPS、按模型分别计价的费用估算，以及用量与费用弹窗。
 - [StarRob1n/dsh-account-balance](https://github.com/StarRob1n/dsh-account-balance) — 悬浮球显示已登录 DeepSeek 账户余额（OAuth），附带实时价格、今日价格走势与 token 消耗估算区间。
 - [stevenx65/dsh-balance-plugin](https://github.com/stevenx65/dsh-balance-plugin) — dsh 网页侧边栏的 DeepSeek 余额与 token 用量监控：今日/累计切换，并按 provider 过滤其他厂商。
@@ -5386,7 +5386,7 @@ dsh plugin --profile web add dshmarket
 - [JularDepick/dsh-question-timeout-protection](https://github.com/JularDepick/dsh-question-timeout-protection) — dsh提问超时保护插件: 一旦模型提问超时,将你的回答草稿保留在UI或上下文中,而不是直接丢弃。
 - [JularDepick/dsh-system-monitor-plugin](https://github.com/JularDepick/dsh-system-monitor-plugin) — 监控dsh进程及其派生子进程的资源占用,并以面板图表报告整机与各会话的CPU与内存占用
 - [JularDepick/dsh-wakatime-plugin](https://github.com/JularDepick/dsh-wakatime-plugin) — 将DSH的每一次Agent交互量化为可视化表现指标并自动同步至WakaTime,用数据展示你与Agent协作的生产力
-- [junecattle/dsh-attachment-cache](https://github.com/junecattle/dsh-attachment-cache) — 附件存储管理：按对话盘点、删除前说明影响，并可将 ~/.dsh/attachments 迁移到其他磁盘。
+- [junecattle/dsh-attachment-cache](https://github.com/junecattle/dsh-attachment-cache) — 附件存储管理：按对话盘点、删除前说明影响，并可将 ~/.dsh/attachments 迁移到其他磁盘（迁移仅在 Windows 11 上测试）。
 - [JungleYXu/dsh-loadout](https://github.com/JungleYXu/dsh-loadout) — 给每个对话选一套工具（套装），只把用得上的工具投给模型：三档底座（全部 / 仅内置 / 我的套装）、一次性加挂、token 账本估算省下的开销，并可在设置里指定新对话的默认套装。
 - [JunKoProject/dsh-read-book](https://github.com/JunKoProject/dsh-read-book) — 一个窗口同时搜四家免费图书馆：Project Gutenberg 走 OPDS 目录，书格走 WordPress 检索再取每本书页面上的 s.shuge.org 下载短链，国家哲学社会科学文献中心走它的 Solr 检索接口。中国哲学书电子化计划刻意只给链接——它明令禁止程序化抓取。两个工具：readbook_search 与 readbook_open，后者给 Gutenberg 和书格的真实下载地址，NCPSSD 只给页面链接。
 - [justinzyc271828-sys/dsh-ai-jobs](https://github.com/justinzyc271828-sys/dsh-ai-jobs) — 索引海外 AI 公司的公开招聘看板（Greenhouse、Ashby、Lever、Workable、SmartRecruiters），按 AI 相关性给岗位打分，从职位描述里提取招聘要求，并按计划每天生成 Markdown 摘要。
@@ -5463,7 +5463,7 @@ dsh plugin --profile web add dshmarket
 - [lifeodyssey/dsh-compressor#dsh-compressor](https://github.com/lifeodyssey/dsh-compressor/tree/main/plugins/dsh-compressor) — Headroom 的精简移植，在不影响模型上下文缓存以及 Agent 性能的情况下，压缩工具的输出，至多减少 20% 的上下文。
 - [lifeopsgo/dsh-capability-toggle-plugin](https://github.com/lifeopsgo/dsh-capability-toggle-plugin) — 在 DSH WebUI 中为技能、MCP 服务器、工具、提示词注入、审批升权和安全守卫提供会话、项目与全局三级控制，并在当前 agent 作用域内强制执行。
 - [lihanhong2002/dsh-minimax-multimodal](https://github.com/lihanhong2002/dsh-minimax-multimodal) — 为 DeepSeek Harness 添加 MiniMax 识图、文生图、语音合成和语音转写工具。
-- [lijieyu233/dsh-codex-account-tools](https://github.com/lijieyu233/dsh-codex-account-tools) — 为 Codex 订阅插件提供账号 JSON 导入、预览与导出，支持重复识别和完整备份确认。
+- [lijieyu233/dsh-codex-account-tools](https://github.com/lijieyu233/dsh-codex-account-tools) — 为 Codex 订阅插件提供账号 JSON 导入、预览与导出，支持重复识别和完整备份确认。需先安装 dsh-codex-subscription 3.2.6 或更高版本。
 - [lilixinsniper/dsh-intent-recognition](https://github.com/lilixinsniper/dsh-intent-recognition) — 五层意图识别流水线（规则、pgvector 向量检索、Jev 概率精判、微调仲裁、LLM 兜底），带场景管理界面、PostgreSQL 存储与可分发 API 服务。
 - [LIN-F1SH/dsh-prompt-lint](https://github.com/LIN-F1SH/dsh-prompt-lint) — 读你的历史会话，找出反复踩的提问坑（缺路径与版本、没定输出格式、漏说前置条件导致工具失败），每条给一段可直接粘贴的改写；输入框右侧一键把草稿改成更短的带约束版本。
 - [linfeicxy/dsh-idea-box](https://github.com/linfeicxy/dsh-idea-box) — 界面里一颗灯泡：写一句话或拖一张截图，回车就存成工作区里的 Markdown 文件。
@@ -5658,7 +5658,7 @@ dsh plugin --profile web add dshmarket
 - [nexscope-ai/dsh-nexscope-plugin](https://github.com/nexscope-ai/dsh-nexscope-plugin) — 面向 DeepSeek Harness 的电商研究插件：OAuth 接入 Nexscope MCP，覆盖亚马逊、TikTok Shop、沃尔玛、Shopee、Temu 与 1688 等市场数据，并捆绑 nexscope 技能。
 - [nicecx/insta360-ai-content-studio](https://github.com/nicecx/insta360-ai-content-studio) — Insta360 GO 3S 自动每日内容管线：BLE/WiFi 遥控拍摄鱼缸素材、无线取回、ffmpeg 质量评估与决策记录、自动剪辑（选段/旁白/配乐/字幕）、biliup 投稿（默认 dry-run）。
 - [nick-lei/Zuad-deepseek](https://github.com/nick-lei/Zuad-deepseek) — 通过 DeepSeek Harness 管理 Zuad 数字标牌节目、素材、播放排程和设备。需要已有 Zuad 信发系统后台及可用账号，在插件设置里登录，密码只保存在本地。
-- [Nico-2222/dsh-mys-checkin](https://github.com/Nico-2222/dsh-mys-checkin) — 米游社六个游戏每日签到（原神 / 崩坏：星穹铁道 / 绝区零 / 崩坏3 / 未定事件簿 / 崩坏学园2）：面板内扫码登录、按游戏勾选、每日定时（带随机延迟与启动补签），并提供四个 agent 工具。凭证仅存本机（0600），除官方接口外不会发往任何地方。
+- [Nico-2222/dsh-mys-checkin](https://github.com/Nico-2222/dsh-mys-checkin) — 米游社六个游戏每日签到（仅限国服：原神 / 崩坏：星穹铁道 / 绝区零 / 崩坏3 / 未定事件簿 / 崩坏学园2）：面板内扫码登录、按游戏勾选、每日定时（带随机延迟与启动补签），并提供四个 agent 工具。凭证仅存本机（0600），除官方接口外不会发往任何地方。
 - [NIDEXIANG/dwg-reader-plugin-20261029](https://github.com/NIDEXIANG/dwg-reader-plugin-20261029) — DSH 插件：直接读取 DWG/DXF 图纸、PDF 与图片，无需安装 AutoCAD 或 Tesseract；DXF 需本机安装 Python 3 与 ezdxf。
 - [ninetyhe-90/dsh-decision-review](https://github.com/ninetyhe-90/dsh-decision-review) — 让主模型把已形成的决策交给独立评审模型复核，支持 off、shadow、advisory 三种模式；需自备实现 POST /v1/decision 的复核服务。
 - [NingYuanLee/dsh-tavily-mcp](https://github.com/NingYuanLee/dsh-tavily-mcp) — 接入 Tavily 托管的 MCP 服务器并注册它公布的工具。API Key 从 TAVILY_API_KEY 凭据读取，不写入插件配置。
