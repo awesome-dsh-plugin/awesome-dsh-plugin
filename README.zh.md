@@ -7745,7 +7745,7 @@ dsh plugin --profile web add dshmarket
 - [Guard42/dsh-humanize](https://github.com/Guard42/dsh-humanize) — 把多阶段目标编排为可恢复 Flow 的 agent 预设：阶段带裁判、SHA-256 流锁身份、HMAC 终局评审门禁、事件溯源运行日志；附 15 个工具。
 - [gulagala001/dsh-workflow](https://github.com/gulagala001/dsh-workflow) — 可恢复的 JavaScript 工作流，支持原生子任务、共享预算与 worktree 隔离。
 - [gulagala001/oh-my-agents-above-all](https://github.com/gulagala001/oh-my-agents-above-all) — Codex、Grok Build、Cursor、Pi、ZCode 预设，提供原生会话、代码审阅、文档转换和工作流控制。
-- [gulagala001/oh-my-dsh](https://github.com/gulagala001/oh-my-dsh) — 长上下文预处理、Dream 记忆、任务验证、工作流与电脑操作。
+- [gulagala001/oh-my-dsh](https://github.com/gulagala001/oh-my-dsh) — 长上下文预处理、Dream 记忆、任务验证、工作流与电脑操作。需要 DSH 0.2.2-rc.1 与 Node.js 24.9+。默认安装配置开放完整的文件与命令访问并关闭执行审批；已有 profile 的显式设置优先。
 - [haaahhhis/MultiGameAssistant#dsh-plugin](https://github.com/haaahhhis/MultiGameAssistant/tree/main/packages/dsh-plugin) — 在 dsh 里管理游戏自动化脚本（仅 Windows）：安装和更新 MAA 等脚本，按定时流水线运行，监看日志并把出错和卡住交给 agent 处理，还会记录游戏活动。
 - [hackernotfound/dsh-tacit](https://github.com/hackernotfound/dsh-tacit) — 从不顺的轮次和你自己的纠正中学习你在提示词里没说出口的东西，并把学到的指令注入每个新对话的系统提示；指令可在设置中编辑，输入框按钮可用它们改写当前草稿。
 - [halftin/dsh-codex-runner](https://github.com/halftin/dsh-codex-runner) — 在 Windows 的 DSH 中运行本机 Codex CLI 任务，支持后台执行、进度查询、追加指令、已完成聊天记录展示及可选监督；需要 Node 22.23.4+、DSH >=0.2.1-rc.3 <0.3.0，以及已安装并登录的 Codex CLI。
