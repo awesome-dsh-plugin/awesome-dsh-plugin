@@ -1,6 +1,0 @@
-url: https://github.com/yanming119/dsh-spectacles/tree/main/eyesight
-name: yanming119/dsh-spectacles#eyesight
-category: vision
-description:
-  en: 'See the whole screen clearly: a 146-token overview map first, then 1:1 blocks up to 1400x900 so text is pixel-legible; a single sight_see tool with an on-screen eye toggle, measured against a 1600px host shrink limit.'
-  zh: '一眼看清：先给一张 146 token 的整屏缩略地图，再按块 1:1 看清（单块上限 1400x900，字按原像素读），一个 sight_see 工具，界面上有一只眼睛随时开关；判据来自实测的 1600px 宿主缩图线。'
