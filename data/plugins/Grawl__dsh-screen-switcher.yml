@@ -1,0 +1,6 @@
+url: https://github.com/Grawl/dsh-screen-switcher
+name: Grawl/dsh-screen-switcher
+category: ui
+description:
+  en: 'Ctrl+Tab switcher over every visited screen — Sessions, Settings sections and plugin pages — shown while Ctrl is held; release to switch, Esc to stay.'
+  zh: 'Ctrl+Tab 切换器：按住 Ctrl 时列出访问过的页面——会话、设置分区和插件页——松开即切换，Esc 取消。'
