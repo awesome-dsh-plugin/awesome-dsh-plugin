@@ -1,0 +1,7 @@
+url: https://github.com/tz-Wang510/dsh-safe-session-delete
+name: tz-Wang510/dsh-safe-session-delete
+category: session
+description:
+  en: 'Recoverable session deletion for DeepSeek Harness: session-row and Settings entry points move logs to a 30-day trash, then clean projection caches and subagent logs.'
+  zh: 'DeepSeek Harness 会话删除：会话行与设置页入口，将日志移入保留 30 天的回收站，同时清理投影缓存与子会话日志。'
+tarball: https://github.com/tz-Wang510/dsh-safe-session-delete/releases/download/v0.2.0/dsh-safe-session-delete-0.2.0.tgz
