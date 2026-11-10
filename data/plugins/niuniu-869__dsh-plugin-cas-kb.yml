@@ -1,0 +1,6 @@
+url: https://github.com/niuniu-869/dsh-plugin-cas-kb
+name: niuniu-869/dsh-plugin-cas-kb
+category: tools
+description:
+  en: 'Chinese accounting and tax knowledge base for DSH agents: answers questions on CAS enterprise accounting standards, the small-enterprise accounting standards, CSA auditing standards and tax law with original articles, decision procedures, applicability checks and tax-accounting differences, exposed through 10 MCP tools and a china-accounting-standards skill.'
+  zh: 为 DSH 智能体提供中国会计与税务知识库：查企业会计准则、小企业会计准则、审计准则与税法的原文条款、判断决策程序、适用性判定与税会差异，通过 10 个 MCP 工具与 china-accounting-standards 技能对外提供。
