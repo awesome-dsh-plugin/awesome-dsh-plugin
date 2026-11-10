@@ -1,0 +1,6 @@
+url: https://github.com/zhaoqiminggg/dsh-approval-explainer
+name: zhaoqiminggg/dsh-approval-explainer
+category: ui
+description:
+  en: 'Adds an Explain this action button under the permission approval card that asks the session model for a plain-language description of the pending operation — what it does, which files it touches, whether it modifies or deletes anything, and the privacy risk — plus a risk level and an allow or reject recommendation. Explanations are generated in Simplified Chinese.'
+  zh: '在权限审批卡片下面加一个「解释这条操作」按钮：调用当前会话模型，把待批准的操作翻成大白话——做什么、碰哪些文件、会不会改动或删除、有没有隐私风险——再给出风险等级和允许或拒绝的建议。解释以简体中文生成。'
