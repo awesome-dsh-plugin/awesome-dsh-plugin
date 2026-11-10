@@ -1110,6 +1110,7 @@ dsh plugin --profile web add dshmarket
 - [LoneLeave/aiplug#dsh-ai-import-ui](https://github.com/LoneLeave/aiplug/tree/main/packages/ui) — AI 历史导入插件的可视化面板：悬浮按钮加三栏向导，可预览对话、逐条勾选，并把它们归档进工作区文件夹。
 - [LonelyHerbivore/dsh-image-question#plugin](https://github.com/LonelyHerbivore/dsh-image-question/tree/main/plugin) — 带本地图片向用户提问；DSH Web 卡片支持缩放平移、框选、画笔与套索标注、NG/OK/不确定判定和说明，Agent 收回原图像素坐标下的标注。
 - [long6177/dsh-markdown-input](https://github.com/long6177/dsh-markdown-input) — DSH Web UI 输入区 Markdown 实时渲染：输入中的粗体/列表/代码块即时成型（CodeMirror 接管卡）；已发送的用户消息按 Markdown 呈现；粘贴富文本转为干净 Markdown。
+- [LoongYun/dsh-mindmap](https://github.com/LoongYun/dsh-mindmap) — 在侧栏查看、编辑并导出 XMind、FreeMind、OPML、KityMinder 和 VYM 思维导图，并提供供 agent 读写大纲的工具。
 - [Lostforest7/dsh-revise](https://github.com/Lostforest7/dsh-revise) — 可视化前端改稿台：点选真实页面元素、描述改动并送入当前 DSH 会话，再把固定视口的改动前后截图（1280x800 与 390x844）与抓取的源码 diff 并排复核，逐条验收。改稿记录按会话存放在项目的 .dsh-revise/ 目录，可导出为单文件 HTML 报告。
 - [lov0vo/dsh-composer-autopair](https://github.com/lov0vo/dsh-composer-autopair) — DSH 聊天输入框的括号/引号自动配对：输入左半边自动补右半边并把光标停在中间；也支持用符号包裹选中文字，以及中文输入法提交的括号。
 - [LoveIrishCoffee/dsh-effort-ultra](https://github.com/LoveIrishCoffee/dsh-effort-ultra) — 原生推理档位控件：蓝紫渐变档位条，带星点与流光。它自己占用模型座位并只对接官方 modelDirectories 服务，档位由每个模型自身的 reasoning 声明决定，不依赖任何其它插件。
@@ -1553,6 +1554,7 @@ dsh plugin --profile web add dshmarket
 - [shinelon/dsh-mcp-plugin](https://github.com/shinelon/dsh-mcp-plugin) — 在 Web 设置面板管理 DSH 的 MCP 服务器：实时状态、新增、编辑、删除、启用/禁用。
 - [shinelon/dsh-mermaid-plugin](https://github.com/shinelon/dsh-mermaid-plugin) — 将 DSH 会话消息中的 mermaid 代码块渲染为 SVG 图形，支持图形与源码切换、跟随深浅色主题，渲染失败时保留源码并显示错误。
 - [shinelon/dsh-workspace-group-plugin](https://github.com/shinelon/dsh-workspace-group-plugin) — 在侧边栏以自定义分组组织工作目录 - 拖拽变更分组与顺序、组内会话浏览与内容搜索，可一键切回官方工作区列表。
+- [Shiro-umi/dsh-system-monitor](https://github.com/Shiro-umi/dsh-system-monitor) — 输入框底栏监控插件，含 5 枚可拖拽重排胶囊（Context、Tokens、CPU、GPU、MEM）：20x5 上下文方格矩阵、当轮净上传/下载 Token 分步柱图，以及 200ms 原生 macOS Mach/IOKit 滚动柱状图与前 5 进程列表。
 - [shizhouyu/dsh-sidebar-notes](https://github.com/shizhouyu/dsh-sidebar-notes) — 右侧栏 Markdown 记事本，与聊天并排，带格式工具栏与本地自动保存。
 - [shushuiu/dsh-bookshelf](https://github.com/shushuiu/dsh-bookshelf) — 按豆瓣「想读」书单排出的书架：封面与评分、与本地电子书自动配对，可在面板内阅读 EPUB/PDF/TXT，并支持公版书下载。
 - [shuuul/dsh-bioviewer](https://github.com/shuuul/dsh-bioviewer) — 向 dsh-better-sidebar 注册 Mol* 文件预览器，支持 PDB、mmCIF、MRC 密度图、小分子和 Chimera .cmm 标记（含 .gz），并提供 BioViewer 工作区标签以及 bio_open / bio_add 工具。
