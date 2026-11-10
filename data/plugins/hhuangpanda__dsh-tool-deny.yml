@@ -1,0 +1,6 @@
+url: https://github.com/hhuangpanda/dsh-tool-deny
+name: hhuangpanda/dsh-tool-deny
+category: tools
+description:
+  en: Hides or disables specific tools for a customized list of agent presets, such as tools another plugin adds to every preset. Hidden tools are removed from the tool list and use no tokens, denied tools have calls refused. Can also blank system prompts added by other plugins. Configured in YAML.
+  zh: 为自定义的一组智能体预设隐藏或禁用特定工具，例如其他插件添加到所有预设的工具。隐藏的工具会从工具列表中移除，不占用 token；拒绝的工具调用会被拒绝。还可以清空其他插件添加的系统提示词。通过 YAML 配置。
