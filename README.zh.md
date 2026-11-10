@@ -195,6 +195,8 @@ dsh plugin --profile web add dshmarket
 - [439436269-ctrl/dsh-stl-preview](https://github.com/439436269-ctrl/dsh-stl-preview) — 在 DSH 右侧栏文档预览里打开 STL：浏览器解析二进制/ASCII 网格，用 WebGL 视口展示尺寸、体积、表面积与水密性。
 - [456erddgr/dsh-lag-guard](https://github.com/456erddgr/dsh-lag-guard) — 把打开会话时的历史取数收到 120 条消息，并在进入 React 之前把超过 20 万字符的工具 schema 换成空数组，让长会话打开时不再卡死界面。
 - [5101good/amoji#amoji](https://github.com/5101good/amoji/tree/main/adapters/dsh) — 用于双向聊天的 AI 原生表情：人看图片，纯文本模型读取固定语义；支持表情选择、自建表情、导入导出和两套画风。
+- [511659192/ai-plugins#drag-workspace](https://github.com/511659192/ai-plugins/tree/main/plugins/drag-workspace) — 把文件夹拖到左侧工作区列表，注册为工作区并打开新会话；桌面端直接取文件夹路径，普通浏览器页面回退到宿主的选择文件夹。
+- [511659192/ai-plugins#dsh-plugin-content-width](https://github.com/511659192/ai-plugins/tree/main/plugins/dsh-plugin-content-width) — 在会话头部切换问答区宽度（默认、较宽、全宽），并把对话里的网页链接与文件引用改为弹窗打开：显示地址、可复制、可在浏览器或侧边栏打开，文件引用还能在弹窗里预览内容。
 - [514006234/dsh-weekly-check#dsh-weekly-panel](https://github.com/514006234/dsh-weekly-check/tree/main/packages/dsh-weekly-panel) — 侧边栏面板：每周更新的中文 DSH 生态榜单——收录 31 个项目（其中 17 个是可安装插件，其余为周边工具/Skill），按实时星数排行并给出较上期涨星；另有「免费」模型的真实调用可用性实测。赞助位明确标注，且不参与排序。
 - [534119219/chicheng-peak](https://github.com/534119219/chicheng-peak) — DeepSeek 峰谷提醒：贴屏呼吸边框（高峰橙/低峰蓝）、流光效果与消息推送提醒。
 - [534119219/chicheng-quickinput](https://github.com/534119219/chicheng-quickinput) — 输入栏旁的保险箱按钮：保存密钥、服务器、手机号、地址与网址，自动识别会话中的敏感信息提醒收录，密码保护并支持 WebDAV 备份；点击填入输入框，Ctrl+点击直接发送。
@@ -2354,6 +2356,7 @@ dsh plugin --profile web add dshmarket
 - [KIDLi1412/dsh-session-cost](https://github.com/KIDLi1412/dsh-session-cost) — 对话底部的会话费用状态栏：按模型逐条计价估算 Token 费用（CNY），并实时显示 DeepSeek 账户余额（官方余额接口）。
 - [KIDLi1412/dsh-token-heatmap](https://github.com/KIDLi1412/dsh-token-heatmap) — 新建会话页的 GitHub 风格每日 Token 用量热力图：可选日历年度视图、绿/蓝配色与显示开关，并附今日/本月/累计总量。
 - [kikomaotu/ccs-balance](https://github.com/kikomaotu/ccs-balance) — 同步 cc-switch 各 provider 余额，按日/月/总量统计 token 用量与花费，支持中转站币种与汇率设置。
+- [KimiChen2000/dsh-conversation-costs](https://github.com/KimiChen2000/dsh-conversation-costs) — 按对话和每轮回复估算已记录的 DeepSeek 模型费用，并提供花费排序明细。
 - [kirigayakazima/dsh-usage-vendor-stats](https://github.com/kirigayakazima/dsh-usage-vendor-stats) — 按厂商（订阅/官方API）统计用量看板：按供应商/模型拆分 Token、缓存、输出等 KPI，53 周热力图，趋势折线图（今天按小时），模型钻取，费用估算，CSV 导出，以及健康度卡片（TTFT、生成速度、峰值 Context、错误率）。
 - [kober-basket/dsh-cachescope](https://github.com/kober-basket/dsh-cachescope) — 提示词缓存诊断页，展示 Provider 回传的 Token 用量、相邻逻辑输入变化与 Call TTFT。
 - [kongshan-zhuyu/dsh-balance-quota#dsh-balance](https://github.com/kongshan-zhuyu/dsh-balance-quota/tree/main/packages/dsh-balance) — DSH Web 的供应商余额与额度状态栏，支持模型能力设置、外部 JSON 健康监测、可视化字段绑定和逐模型状态详情。
@@ -6805,6 +6808,7 @@ dsh plugin --profile web add dshmarket
 - [shimingming520/dsh-audiogen](https://github.com/shimingming520/dsh-audiogen) — 面向 DeepSeek Harness Web 的 AI 音频插件 —— 多厂商 TTS、音乐、音效与音色设计，含侧边栏面板、模型对比、资源库与 Agent 工具。
 - [STARDUSTLC666/dsh-voice](https://github.com/STARDUSTLC666/dsh-voice) — 语音五工具：edge-tts 免费微软神经语音合成、OpenAI 兼容 ASR 转写、音色清单、批量音色试听与健康自检。
 - [SuCriss/dsh-voice-control](https://github.com/SuCriss/dsh-voice-control) — DSH 网页端语音控制：按住说话将语音转文字输入发送框（可自动发送），用浏览器语音合成朗读助手回复；右键麦克风打开设置面板，支持 Ctrl+M 全局快捷键。
+- [Sunshine334419520/dsh-minimax-voice](https://github.com/Sunshine334419520/dsh-minimax-voice) — DeepSeek Harness 的 MiniMax 音色工作台：用音频样本复刻音色，复刻后用接口返回的试听音频直接试听（不额外合成，因此不触发按音色计费），把文本合成为本地 mp3，用 asr-1.0 转写音频，并在设置面板里管理音色库、API Key 与这些操作；提供 4 个 agent 工具与本地 HTTP 接口。
 - [supersyh-sss/dsh-voice-assistant](https://github.com/supersyh-sss/dsh-voice-assistant) — dsh web 语音助手：说出唤醒词（如「小鲸」）即可免手听写，说话内容自动转成文字填入输入框；支持口述编辑指令（发送、清空、换行、停止朗读），并可用中文朗读 AI 回复。语音识别基于 sherpa-onnx WASM 在浏览器本地运行，离线可用、无需 API Key。
 - [tangzheng202202/dsh-voice-live](https://github.com/tangzheng202202/dsh-voice-live) — 基于火山流式 ASR/TTS 的实时双工语音：回复朗读、打断、唤醒词、实时字幕、30 个中文音色与先响应后思考；在 DSH monorepo 内构建。
 - [TaoruiLiu19/dsh-gsv](https://github.com/TaoruiLiu19/dsh-gsv) — 将本地高性能 TTS 引擎 GSV-TTS-Lite 实时接入 DeepSeek Harness：语音预设、自动朗读、引擎配置助手、朗读按钮与设置面板。
@@ -7021,6 +7025,7 @@ dsh plugin --profile web add dshmarket
 - [439436269-ctrl/dsh-video-pipeline](https://github.com/439436269-ctrl/dsh-video-pipeline) — 把一条短视频生产流水线的 19 个 skill（1 总入口 + 1 编排 + 17 原子）内置进 agent 技能目录：中文配音读音校正、文生图与文生视频、图片运镜、成片合成、封面、成片核验、数据复盘、四平台发布。本包只提供 skill 与脚本，不安装任何工具：要真跑通流水线，还得本机装好 ffmpeg、Python 3 + Pillow、Node.js 与 playwright，自备 B 站 biliup 凭据和视频号 / 抖音 / 小红书登录态，并把 skills/*/scripts/ 里的占位符改成自己的值。使用者自己的同名 skill 优先级更高。
 - [452926826/dsh-at-skill](https://github.com/452926826/dsh-at-skill) — 通过 @名称 标记调用用户可用的 Skill，并在对话输入框中显示匹配的 Skill 候选项。
 - [474885697-alt/dsh-kit#dsh-auto-skill](https://github.com/474885697-alt/dsh-kit/tree/main/plugins/dsh-auto-skill) — 按当前任务自动挑选并注入最合适的技能，无需点名或手动插入；同一技能每次会话只注入一次，并可从有效操作中积累经验。
+- [511659192/ai-plugins#alibaba-java-guidelines](https://github.com/511659192/ai-plugins/tree/main/plugins/alibaba-java-guidelines) — 把《阿里巴巴 Java 开发手册》精选 44 条做成内嵌技能：写、改、评审 Java 代码与建表语句时按手册约束，交付前按编号自检。
 - [7dgroup-ai/dsh-skill-7d-code-reviewer](https://github.com/7dgroup-ai/dsh-skill-7d-code-reviewer) — 模板驱动的代码审查技能：五步审查流程、严重/中等/轻微三级分级、四维评分（质量、安全、性能、可维护性），同时输出文本与 HTML 报告，内置按需加载的参考知识库。
 - [7starsseeker/dsh-fact-check](https://github.com/7starsseeker/dsh-fact-check) — 事实核查技能：不依赖模型记忆，去公开互联网核实——把论断拆成可独立验证的事实点，先按事实范畴（政策、学术、医疗、金融、灾害事故、食品安全、科学常识、教育考试、体育、娱乐名人、司法案件等）选定该范畴的一手来源阶梯，国内外信息生态并行搜索，抓取一手页面并按来源类型分级，再用质疑关键词反查一轮，最后结论先行地输出报告，每条论断都带完整 URL 与引用位置，「未证实」「无法裁定」与「已证实」分档呈现。三类事实判断在配置了密钥时可交给 TypeSafe Jev（System One）决策模型，未配置则回退到内置的确定性规则；模型的判断只能降档、不能升档。
 - [863683348/dsh-starter-zh](https://github.com/863683348/dsh-starter-zh) — DSH 新手入门包：欢迎语、从 0 到 1 学习路径、按场景推荐插件与新手自查清单，联动 dsh-handbook-zh 中文教程仓库。
@@ -8926,6 +8931,7 @@ dsh plugin --profile web add dshmarket
 - [swyaoguai/dsh-taptap-maker-dev](https://github.com/swyaoguai/dsh-taptap-maker-dev) — TapTap Maker 游戏开发工作台：内置 150+ 技能、自定义生图通道、ChatGPT 网页多账号轮换、CC0 音效库、网页 BGM，并强制"未经用户同意不花 Maker 额度"。
 - [tancheng33/dsh-spill-s3](https://github.com/tancheng33/dsh-spill-s3) — spill seam 的 S3 兼容后端：超长工具输出写入对象存储（S3、MinIO、R2），会话前缀经哈希、键不可猜测，而不是落在 agent 的本地磁盘上。
 - [Tang-mm95/dsh-single-instance-guard](https://github.com/Tang-mm95/dsh-single-instance-guard) — 检测到其他存活的 dsh 实例占用同一 DSH_HOME 数据目录时中止启动，防止并发写会话日志导致的历史损坏。
+- [tangyixiao/dsh-provider-doctor](https://github.com/tangyixiao/dsh-provider-doctor) — 面向「某个模型提供方突然不可用」的只读诊断。逐段走完整条连接链路——宿主运行时与 profile 身份、插件条目、provider 路由是否已注册、是否可配置、provider 自己报出的凭据元数据、模型目录、provider 自带诊断、最近一次请求记录——并把每一段标成直接观测、推断或无法取得，而不是猜。通过 WorkBuddy 与 ZCode 插件公开的诊断命令检查 `workbuddy`、`workbuddy-ai` 和 `zcode-cli` 三条路由，附带侧栏面板与可复制的脱敏报告。基础检查不发模型请求、不起进程、不读凭据文件；连接检查是单独的可选项，面板会在运行前说明它要做什么。
 - [taptap/instant-games-open-mcp#packages/dsh-maker](https://github.com/taptap/instant-games-open-mcp/tree/main/packages/dsh-maker) — DeepSeek Harness 的 TapTap Maker 集成：提供内置 MCP 工具、Maker 工作流与功能技能，以及用于项目初始化和诊断的随包 CLI 路径。
 - [tataCrayon/dsh-rampart](https://github.com/tataCrayon/dsh-rampart) — 按可用物理内存与提交内存分级，到线就拦重活（shell、workflow、subagent）。并在输入框旁显示 DSH 自己占用了整机多少资源，含整机 CPU 占比。
 - [taxueseek/dsh-healthcheck](https://github.com/taxueseek/dsh-healthcheck) — DSH 环境只读体检：磁盘/内存/延迟/缓存膨胀/插件版本落后检测，分级报告并对比历史基线趋势。只读，不删任何东西。
@@ -9685,6 +9691,7 @@ dsh plugin --profile web add dshmarket
 - [mingzeng21/dsh-stock-mentions](https://github.com/mingzeng21/dsh-stock-mentions) — 将 DSH 输出文本中的股票名称和代码转换为可点击按钮，并在侧边栏展示行情与资讯。
 - [mmmmlp-cloud/dsh-plugin-packs](https://github.com/mmmmlp-cloud/dsh-plugin-packs) — 在 dsh 插件页加「插件包」标签：左栏是正在一起用的包、右栏是装好但未启用的，支持箭头或拖拽在两栏间搬包、自定义标签、搜索、范围筛选、批量启停与撤销。标签与中文名存在 DSH_HOME 下的 packs.json 里而不是浏览器存储，换浏览器或清站点数据都不丢。
 - [moldkey/dsh-deepseekbase](https://github.com/moldkey/dsh-deepseekbase) — 把第三方 deepseekbase.com 的数据接进 DSH，八个工具加五个 DSHIO 标准技能（来自依赖包 @liangjiehappy/dsh-dshio）。能搜 8,400 个插件并附沙箱安装判定与风险等级（含红线警告：读凭证＋网络＝可能泄露 API Key）、在对话里提交插件做四阶段沙箱测试、查判定、查剩余免费额度，以及按 DSHIO/T 10 标准逐条检查插件是否合规。技能正文在启动时从 dshio.org 拉取并替换内置副本，更新不需重装。网络请求只发往 deepseekbase.com 与 dshio.org（提交测试前另查一次 npm registry）；不读写文件、不读凭证、不执行 shell。
+- [Mooling0602/dsh-better-plugin-updater](https://github.com/Mooling0602/dsh-better-plugin-updater) — 检查 DSH profile 内已装插件包更新的工具：从 GitHub 仓库或 release tarball 安装的插件，其详情页会出现 Version 分区，把已装 commit 或版本与确切目标版本对照；/plugin-updater 命令可列出插件包、检查 npm、Git 仓库与 GitHub release 三种来源并生成待确认的更新，确认后才执行；只读的 plugin_updates 工具让 Agent 只检查而不安装，npm registry 包继续使用 DSH 原生更新方式，固定版本或 commit 需显式允许才会升级，且本插件从不代为批准构建脚本。
 - [Moon-Cold-Sir/dsh-plugin-star-radar](https://github.com/Moon-Cold-Sir/dsh-plugin-star-radar) — 按 GitHub 收藏数排名的 DSH 插件热度榜：收藏 ≥ 3,000 或近 30 天下载 ≥ 10 万即收录， 排名下滑后仍保留 180 天（默认），热度过去几个月依然找得到。
 - [mozhi66/dsh-plugin-categories](https://github.com/mozhi66/dsh-plugin-categories) — 把当前 profile 已安装的插件按分类整理（皮肤、MCP、工具……），支持分类批量启停、拖拽排序与皮肤自动识别。
 - [Mrxieyong/dsh-mcp-market](https://github.com/Mrxieyong/dsh-mcp-market) — Web 侧边栏的 MCP 市场与管理面板：官方模板一键配置（Apifox 公有云/私有化、Apipost、MasterGo、Pixso）、粘贴完整 mcpServers JSON、我的服务增删改启停，热加载生效。
