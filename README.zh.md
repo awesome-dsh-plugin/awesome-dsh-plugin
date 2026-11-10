@@ -7942,7 +7942,7 @@ dsh plugin --profile web add dshmarket
 - [leinaldo/dsh-routines](https://github.com/leinaldo/dsh-routines) — 定时提示词任务：每次运行新开一个对话，支持 cron、一次性与手动触发，可指定工作目录，运行记录不进左侧列表。
 - [lemoncat7/dsh-partner](https://github.com/lemoncat7/dsh-partner) — 提供隔离记忆、微信渠道、Skill、定时任务、伙伴挂念与依赖任务看板的长期 AI 伙伴。
 - [lengrufeng2008/dsh-science-legion](https://github.com/lengrufeng2008/dsh-science-legion) — 面向数学、物理、天文、工程与生物医药证据的分层多智能体科研战役技能包：共享黑板、独立验证与红队、群狼与迂回战术、token/时间预算、已知答案评测、四智能体单摆 pilot，以及一次抓到并修正评测答案键错误的六智能体四阶 pilot。不宣称解决开放难题。
-- [Leo-sail/dsh-plugin-agent-collaboration#agent-collaboration](https://github.com/Leo-sail/dsh-plugin-agent-collaboration/tree/main/packages/bundle/agent-collaboration) — DSH 里的常驻 Bot 与群聊房间——每个 Bot 有自己的模型、权限预设、工作区与重启后仍在的会话；未点名消息可由群主判断，群内经验会自动积累，每次回答都是持久运行记录里的一条 run，侧栏面板据此回放。
+- [Leo-sail/dsh-plugin-agent-collaboration#agent-collaboration](https://github.com/Leo-sail/dsh-plugin-agent-collaboration/tree/main/packages/bundle/agent-collaboration) — DSH 里的常驻 Bot 与群聊房间。每个 Bot 有自己的模型、权限预设、工作区与重启后仍在的会话；Bot 也可以直接接管本机已安装的 agent CLI（Codex CLI、Claude Code、ACP agent），沿用该 CLI 自己的登录与模型。未点名消息可由群主判断，群内经验会自动积累，每次回答都是持久运行记录里的一条 run，侧栏面板据此回放。
 - [Lequait/dsh-subagent-watchdog](https://github.com/Lequait/dsh-subagent-watchdog) — 子代理被上游断线打死而不是正常跑完时，替它通知父代理：监听每个 agent 的 agent/error， 静置一小段时间后若子代理仍未恢复运行，就向父代理投递一条后续轮，带上子代理 id、失败原因 与父代理可选的处置方式；冷却时间与每子代理上限避免上游抖动时刷屏。
 - [LeslieWylie/agent-loop-workflow](https://github.com/LeslieWylie/agent-loop-workflow) — 面向 DeepSeek Harness、与具体项目无关的多智能体协作协议：阻止失控循环的循环守卫、六字段交接格式、按风险分级的评审路由，以及固定的验证→提交→推送→评审→关闭流程。用一个 skill 取代复制粘贴进每个 agent 指令里的相同规则。
 - [LeslieWylie/dsh-ops-kit](https://github.com/LeslieWylie/dsh-ops-kit) — 证据优先的操作套件：六个只读工具（能力清单、分阶段编排计划、随包技能阅读、有上限的本地记忆检索、仓库发布审计、发布清单）加五个随包技能；只规划与审计，不做远程写入。
@@ -8196,7 +8196,7 @@ dsh plugin --profile web add dshmarket
 - [WaldInsel/dsh-desktop-agent-bridge](https://github.com/WaldInsel/dsh-desktop-agent-bridge) — 让外部 MCP Agent 将任务交给现有 DSH 桌面端，并提供可见会话、用户接管与可选审批转交。
 - [Wang-Chuming/dsh-work-review](https://github.com/Wang-Chuming/dsh-work-review) — 面向 Obsidian 风格 vault 的工作回顾闭环：每晚生成当天 Dream 与编号 T/G 计划，只执行标记为「常规」的条目（默认只读，--live 才本地 commit），把七天汇总成 ISO 周周报，并在只读侧栏面板里展示日报与周报。
 - [wangbobo-coder/gitee-ai-employee](https://github.com/wangbobo-coder/gitee-ai-employee) — Gitee/GitHub AI 员工：在 issue 里 @ 机器人并指定目标分支（如"需要修改 release-v1.2 分支"），它自动克隆仓库开发、向指定分支提交 PR，可自动合并并自动关闭 issue。v1.2 新增代码安全扫描：配置扫描仓库后按内置/自定义提示词审计代码，去重后把新发现提交 issue。
-- [WaterDJiang/wtt-dsh-plugin#dsh-creation-workbench](https://github.com/WaterDJiang/wtt-dsh-plugin/tree/main/plugins/dsh-creation-workbench) — WTT 创作工作台用画布组织本地资料和技能任务，制作课程大纲与可编辑的 PPT，并保留成果版本。
+- [WaterDJiang/wtt-dsh-plugin#dsh-creation-workbench](https://github.com/WaterDJiang/wtt-dsh-plugin/tree/main/plugins/dsh-creation-workbench) — DeepSeek Harness 的 AI 创作画布。在同一个项目里整理资料、引用卡片与文件、调用本机 Skill，并管理文本、演示文稿、图片和视频的成果版本。
 - [wdj20050927/dsh-quality-guard](https://github.com/wdj20050927/dsh-quality-guard) — 动手回合前先过第二个模型的质检，一条命令装完：bundle 同时装上设置面板和同一个包里的引擎，两半一起起来。一次独立判官调用按编号判据逐条打 0-10 分，任一条低于 6 分即判不合格并打回重写，默认最多回炉 3 轮。出厂是演习模式，只把判定写进审计日志、不打回，看过日志再在面板里关掉。Web 面板编辑判据、阈值与判官提示词。
 - [weibaohui/dsh-flow](https://github.com/weibaohui/dsh-flow) — 执行流程图：把当前会话的执行过程画成一条纵向节点流（回合/用户/助手/工具/审批/重试/压缩），SSE 实时追加——会话执行到哪，图就画到哪，自动跟随滚动。
 - [weibaohui/dsh-process](https://github.com/weibaohui/dsh-process) — 工艺管理：把 ntd 的「工艺」（多阶段·多环节 agent 工作流模板）接进 dsh web——浏览/编辑/校验/导入导出/AI 生成工艺，内置库只读、我的库可写，文件改动实时同步；agent 可通过 process_* 工具读工艺库、按工艺分阶段推进。
