@@ -1,0 +1,6 @@
+url: https://github.com/suifei/dsh-ai-team
+name: suifei/dsh-ai-team
+category: agi
+description:
+  en: "Wenyuan Pavilion: an AI Team workbench for DSH with owned tasks, independent acceptance, an append-only ledger and concurrent projects."
+  zh: "文渊阁：DeepSeek Harness 的 AI Team 工作台——有 owner 的 Task、独立验收、append-only 账本与并发 Project。"
