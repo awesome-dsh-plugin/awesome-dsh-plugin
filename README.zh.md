@@ -780,6 +780,7 @@ dsh plugin --profile web add dshmarket
 - [Grampusworld/dsh-prompt-optimizor](https://github.com/Grampusworld/dsh-prompt-optimizor) — 一键把输入框草稿改写为更紧凑的提示词，再点一次还原原文；默认用 Harness 自带模型，也可接任意 OpenAI 兼容端点，润色提示词与长度、超时限制均可自行设置。
 - [GraptK/dsh-composer-enhance](https://github.com/GraptK/dsh-composer-enhance) — 用一次模型调用改写输入框草稿（或仅选中片段），参考最近对话，支持取消、回退、保真与长度校验，以及可选预览。
 - [GraptK/dsh-quick-restart](https://github.com/GraptK/dsh-quick-restart) — 在 DeepSeek Harness 桌面版账号菜单中加入「重启」项，带二次确认、进度与失败原因提示。
+- [Grawl/dsh-screen-switcher](https://github.com/Grawl/dsh-screen-switcher) — Ctrl+Tab 切换器：按住 Ctrl 时列出访问过的页面——会话、设置分区和插件页——松开即切换，Esc 取消。
 - [gu040303-ai/dsh-prompt-enhancer](https://github.com/gu040303-ai/dsh-prompt-enhancer) — 在 DeepSeek Harness 中一键优化纯文本提示词，并提供可选的本地检查和句级审阅。
 - [GuanYang14700/dsh-hermes-panel](https://github.com/GuanYang14700/dsh-hermes-panel) — 把 Hermes 放进 DSH 右侧栏：启停网关和 dashboard，聊天旁边就能看 dashboard，再把 DSH 和 Hermes 接起来。仅 Windows；需已安装 Hermes。
 - [guchang/draw2code](https://github.com/guchang/draw2code) — 运行在 dsh-better-sidebar 中的 Excalidraw 协作原型插件：结构化澄清产品需求、保护用户手工修改的人机画板更新，以及基于原型的前端生成。
@@ -3320,6 +3321,7 @@ dsh plugin --profile web add dshmarket
 - [Garybot126/dsh-subagent-models](https://github.com/Garybot126/dsh-subagent-models) — 在输入框旁的「子代理」胶囊里统一设置委派子代理使用的 provider、模型与思考强度：卡片的「本对话 / 全局默认」两个范围共用同一组控件，胶囊上始终显示当前生效的路由；在每个进程内子代理创建时生效（agent/created + agent.model.select()），不注册设置页、不改 agent preset、不给工具加模型参数。
 - [Gaudi-XIX/dsh-agy-cli](https://github.com/Gaudi-XIX/dsh-agy-cli) — Windows 专用的 Google Antigravity CLI 模型提供方，接续自 Darkings/dsh-agy-provider（包名 dsh-agy-cli，请勿与原版同装）。从 Windows 凭据管理器读取 Antigravity 令牌并只发往 Google Cloud Code 端点；Harness 工具策略由 DSH 全权负责，尾流式输出防回滚，并跟踪真实配额窗口。
 - [Gaudi-XIX/dsh-zcode-cli](https://github.com/Gaudi-XIX/dsh-zcode-cli) — 把本机已安装的 ZCode CLI 接成 DSH 的 `zcode` 模型路由：流量全部由官方二进制签名，插件自身不发请求、不伪造客户端请求、不把凭据传出本机（plan token 只在内存中解密并交还官方 CLI），不需要 API Key，付费一次性与免费 app-server 两条通道并存；v0.3.0 起内建 HTTP MCP 工具桥，工具调用走 DSH 的审批面；有契约文档与 node --test 测试门禁背书。
+- [gdyshi/dsh-connect-scnet-plus](https://github.com/gdyshi/dsh-connect-scnet-plus) — 把本机 SCNet（超算互联网）计算服务客户端已登录的模型接入 DSH，插件页提供逐模型开关标签页，并按 profile 实际解析到的 pi-ai 世代自动适配 transcript 形状。
 - [GeekRicardo/claude-in-dsh](https://github.com/GeekRicardo/claude-in-dsh) — 把一个 dsh web 会话交给本机 Claude Code CLI 驱动：输入框内的引擎选择器（DSH | Claude Code）按会话切换，模型座换成 Claude 的模型与 reasoning effort，访问模式换成 Claude 权限档；权限请求、AskUserQuestion、ExitPlanMode 分别接到 dsh 原生的审批卡、提问卡与计划审核卡。Claude 的流写成 dsh 原生会话事件，由内建转录、工具卡片与嵌套子 agent 渲染；斜杠命令并入命令面板；CLI 由独立 broker 持有，插件更新与 dsh 重启都不中断进行中的轮次。
 - [gengwg/dsh-agent-router](https://github.com/gengwg/dsh-agent-router) — 在子代理启动时按关键词规则一次性选路：首个命中委托标签或提示词的规则设置子代理的 provider/model/reasoningEffort，调用方显式指定的路由默认保留，未命中的委托原样放行。
 - [gentle-knight/dsh-cannbot-connect](https://github.com/gentle-knight/dsh-cannbot-connect) — 把 CANNBOT 网关的模型接入 DSH：复用 CANNWork 已为 opencode 建立的登录态，每个请求从磁盘现读 JWT 与虚拟密钥，不需要另起 OAuth 流程或额外填 key，账号可见的模型会注册进模型选择器。
@@ -4227,6 +4229,7 @@ dsh plugin --profile web add dshmarket
 - [mcf171/dsh-session-delete](https://github.com/mcf171/dsh-session-delete) — 在会话行菜单中永久删除会话：先归档、再删除日志目录并立即移除该行，带 Delete 快捷键；只使用官方扩展点，仅打开过、未在运行的会话依然可以删除。
 - [mdalboni/dsh-spotlight](https://github.com/mdalboni/dsh-spotlight) — 居中全局搜索弹窗：提供类似 Spotlight 与 IntelliJ 的会话及聊天消息实时检索与上下文预览。
 - [mdalboni/dsh-turn-title](https://github.com/mdalboni/dsh-turn-title) — 在首轮完整对话（提问+回复）后自动生成会话标题，并在聊天顶部工具栏提供更新/编辑标题按钮。
+- [melo7up/dsh-wait-reply](https://github.com/melo7up/dsh-wait-reply) — 让根轮次等自己启动的子智能体和本轮的 background job 都结束后，才在同一轮里要求模型产出完整、自洽的最终回答。只观察 job 是否结束、不消耗 job 的输出，不取消子智能体，也不判定任务成功。仅在 DSH 0.2.2-rc.1 上验证；其他宿主版本下插件保持未激活、只写一条警告，轮次按原生方式收尾。
 - [memoryovo/dsh-codex-ui-classic](https://github.com/memoryovo/dsh-codex-ui-classic) — 把 Codex UI 1.1.49 的侧边栏内置进插件，上游更新换不掉界面；提供 remote.workspaceRegistry.deleteSession 让会话菜单出现「删除会话」，放出被样式隐藏的「...」按钮，永久删除会话日志、工程记录与投影缓存，子智能体与派生对话可在家族树里逐项勾选。内置 MichengAI/dsh-codex-ui（Apache-2.0）1.1.49 侧边栏，请勿与上游同装；删除引擎改编自 Lzcdebear/better-dsh-session-deletetool（MIT）。
 - [meng-lx/dsh-autonomous-restart](https://github.com/meng-lx/dsh-autonomous-restart) — 由 agent 自己发起的重启，不是按钮。agent 调一个工具，之后由插件接管：等这台机器上所有 agent 与后台任务都空闲，走完十秒可见倒计时（点一下鼠标、滚一下滚轮、按任意键都会取消），再重启 DSH，并唤醒原会话让 agent 接着说下去。没有按钮、没有手动入口——工具是唯一入口。官方桌面端与官方网页端均已适配，第三方壳不在默认支持范围内。仅限 Windows。一点须知：DSH 桌面端每次启动都会往自己的 profile 里写一份新的身份 cookie，旧的不清理；攒多了会让下一次启动报 HTTP 431 与 Error: desktop welcome: Web authentication failed，窗口出不来。手动重启同样会遇到，这是 DSH 自身的行为；本插件重启更频繁，只是让这一天来得更早。
 - [mengwEX/dsh-block-ptc](https://github.com/mengwEX/dsh-block-ptc) — AI 自主管理上下文的 Auto Compact：在 Block PTC 预设会话中（需 DSH 0.2.2-rc.1 及以上），由 AI 根据任务进展决定何时整理上下文、保留哪些信息，不必等待固定 token 阈值触发。
