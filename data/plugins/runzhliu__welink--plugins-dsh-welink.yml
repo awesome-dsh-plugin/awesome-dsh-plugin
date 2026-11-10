@@ -1,0 +1,6 @@
+url: https://github.com/runzhliu/welink/tree/main/plugins/dsh-welink
+name: runzhliu/welink#dsh-welink
+category: tools
+description:
+  en: Provides read-only tools for querying authorized WeLink conversations by date or keyword.
+  zh: 提供只读工具，按日期或关键词查询已授权的 WeLink 聊天记录。

@@ -1,0 +1,8 @@
+url: https://github.com/zhangyong0010/dsh-oneshot
+name: zhangyong0010/dsh-oneshot
+category: market
+description:
+  en: 'Plugin updater with an automatic parallel scan on opening its left-sidebar panel. Reuses the completed scan to skip current plugins without rechecking them and installs only confirmed newer targets. Checks DSH compatibility and installed versions, attempts recovery after failed GitHub updates, and shows one history card per operation. Includes a dsh_oneshot_update agent tool.'
+  zh: '从左侧面板打开即并行扫描版本的插件更新器。一键更新复用已完成的扫描结果，已确认最新的插件不再重复查询或重装，仅安装已确认的新版本。保留 DSH 兼容检查、安装后版本核对和 GitHub 更新失败后的恢复尝试，并按每次操作展示一张历史卡片。内置 dsh_oneshot_update Agent 工具。'
+icon: https://raw.githubusercontent.com/zhangyong0010/dsh-oneshot/main/assets/icon-180.png
+tarball: https://github.com/zhangyong0010/dsh-oneshot/releases/download/v1.0.2/dsh-oneshot.tgz

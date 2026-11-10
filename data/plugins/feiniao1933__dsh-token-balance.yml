@@ -1,0 +1,6 @@
+url: https://github.com/feiniao1933/dsh-token-balance
+name: feiniao1933/dsh-token-balance
+category: usage
+description:
+  en: Shows the DeepSeek account balance (recharge plus bonus) in the DSH composer dock and refreshes it automatically.
+  zh: 在 DSH 输入框下方状态行显示 DeepSeek 账户余额（充值 + 赠送），并自动刷新。

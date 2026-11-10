@@ -1,0 +1,7 @@
+url: https://github.com/liuyifeng-code/dsh-read-zoom
+name: liuyifeng-code/dsh-read-zoom
+category: ui
+description:
+  en: "Adds a fixed enlarge button to every DeepSeek Harness answer's action row and opens that answer in a two-pane reading view: a list of all turns in the session (including turns not yet loaded, fetched on demand) plus a composer on the left, the selected prompt and answer zoomed 80-300% on the right, and failed or over-wide formulas tamed for math, physics and chemistry. The panel avoids full-screen blur so scrolling and typing stay light, animates open/close with opacity and transform only, toggles with Alt+Z or Alt+E even while the composer is focused, keeps cloned answers visible by dropping host layout classes and hidden/opacity traps, and marks turns whose answer was cut off as truncated instead of showing an empty answer."
+  zh: "在每条回答的操作行（用量图标左边）常驻一个放大按钮，点开进入两栏阅读视图：左栏列出本会话全部轮次（未加载的点了会自动补载）并带输入框（只填入不自动发送），右栏按 80%–300% 缩放显示选中的提问与回答，并对渲染失败或超宽的公式做降级与自适应，适合看数学、物理、化学长文；面板不做整屏模糊，滚动与输入不拖慢主线程；打开/关闭有轻微淡入淡出过渡，可用 Alt+Z / Alt+E 开关（焦点在输入框里也生效）；克隆回答时剥掉宿主布局类并展开隐藏/透明陷阱，回答不会出现「有字数却看不见」；被截断的轮次会明确标注「输出被截断，无回答」。"
+tarball: https://github.com/liuyifeng-code/dsh-read-zoom/releases/download/v0.3.8/dsh-read-zoom-0.3.8.tgz

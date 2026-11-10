@@ -1,0 +1,6 @@
+url: https://github.com/Lstalu/dsh-quota-meter-plus
+name: Lstalu/dsh-quota-meter-plus
+category: usage
+description:
+  en: 'Enhanced derivative of ai-shushu/dsh-quota-meter; cannot be installed alongside it (both serve /quota). Per-session spend and quota meter for DSH: bills real token usage against an editable model price table (including peak/off-peak pricing), shows a live progress bar and, in the session header, a balance capsule (the balance needs a DeepSeek API key), and blocks new model calls when a session budget runs out. Subagent and helper-call spending rolls up into the parent session ledger.'
+  zh: 'ai-shushu/dsh-quota-meter 的增强衍生版，不能与上游同装（都占用 /quota 路由）。DSH 的会话额度与花费监控：按可编辑的模型价目表（含峰谷价）对真实 token 用量记账，输入框上方显示消耗进度条、会话头部右侧显示余额胶囊（余额需 DeepSeek API Key），额度耗尽时拦截新的模型调用；子代理与辅助调用的消耗并入父会话账本。'

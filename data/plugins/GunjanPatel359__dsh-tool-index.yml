@@ -1,0 +1,5 @@
+url: https://github.com/GunjanPatel359/dsh-tool-index
+name: GunjanPatel359/dsh-tool-index
+category: tools
+description:
+  en: 'Sends deferred MCP tool definitions as an index of names, parameter signatures and one-line summaries grouped by server, with tool_details returning a full schema on request and call_tool running the real tool. Reading a schema or running a tool does not change the model-visible tool list, so the prompt cache is not invalidated.'

@@ -1,0 +1,6 @@
+url: https://github.com/XWIDE/DSH_X-Wide-Thought-Chain
+name: XWIDE/DSH_X-Wide-Thought-Chain
+category: dev
+description:
+  en: 'Freezes a six-step repair chain into callable tools — freeze the facts, measure the real shape, minimal repro, single-variable A/B, a judge that must say OK, delivery gate — plus a zero-dependency boot self-check (path drift, missing files, version sync, crash-log freshness), per-item tunables and a rollback ledger that backs up every action.'
+  zh: '把排障六步固化成可调用的链：冻结事实→量真形状→最小复现→单变量对照→判定器（没说 OK 不许说修好）→交活闸；另带零依赖开机自检（安装路径漂移、配方缺件、版本三处一致、崩溃日志新鲜度）、逐项说明的微调设置，以及每个动作都留备份的退回账本。'

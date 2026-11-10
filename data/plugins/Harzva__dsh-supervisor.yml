@@ -1,0 +1,6 @@
+url: https://github.com/Harzva/dsh-supervisor
+name: Harzva/dsh-supervisor
+category: session
+description:
+  en: 'Per-session supervision with role assignments and handoff workflows; off until enabled with /supervise. Requires @harzva/dsh-role-registry 0.1.0-alpha.1 (not on npm) installed first from its GitHub tag archive.'
+  zh: '为会话提供监督、角色分配和交接流程；默认关闭，用 /supervise 开启。需先从 GitHub 标签压缩包安装 @harzva/dsh-role-registry 0.1.0-alpha.1（未发布到 npm）。'
