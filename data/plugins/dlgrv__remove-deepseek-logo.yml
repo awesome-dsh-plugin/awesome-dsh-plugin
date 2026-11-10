@@ -1,0 +1,5 @@
+url: https://github.com/dlgrv/remove-deepseek-logo
+name: dlgrv/remove-deepseek-logo
+category: ui
+description:
+  en: Removes the DeepSeek Harness logo, brand name, version string, and the conversation hero fish from the sidebar.
