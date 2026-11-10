@@ -1,0 +1,7 @@
+url: https://github.com/SiliconSailor/dsh-dual-browser
+name: SiliconSailor/dsh-dual-browser
+category: browser
+description:
+  en: Agent browser for DeepSeek Harness built on playwright-core with two visibility modes, where hidden sessions for private research close themselves after 45 seconds of idling and visible sessions open in a real Edge or Chrome window on request, exposing eight browser_* tools (search, open, read, click, type, screenshot, close, status) and a left-sidebar panel with engine state, live sessions and an activity feed.
+  zh: еџєдєЋ playwright-core зљ„ DeepSeek Harness ж™єиѓЅдЅ“жµЏи§€е™ЁпјЊдё¤з§ЌеЏЇи§ЃжЂ§жЁЎејЏпјљйљђи—ЏдјљиЇќз”ЁдєЋз§Ѓдё‹жЈЂзґўе№¶ењЁй—ІзЅ® 45 з§’еђЋи‡ЄеЉЁе…ій—­пјЊеЏЇи§ЃдјљиЇќжЊ‰йњЂењЁзњџе®ћзљ„ Edge ж€– Chrome зЄ—еЏЈдё­ж‰“ејЂпј›жЏђдѕ›е…«дёЄ browser_* е·Ґе…·пј€searchгЂЃopenгЂЃreadгЂЃclickгЂЃtypeгЂЃscreenshotгЂЃcloseгЂЃstatusпј‰пјЊе·¦дѕ§ж Џйќўжќїжѕз¤єеј•ж“ЋзЉ¶жЂЃгЂЃжґ»еЉЁдјљиЇќдёЋж“ЌдЅњжµЃж°ґгЂ‚
+icon: https://raw.githubusercontent.com/SiliconSailor/dsh-dual-browser/main/assets/icon.png
