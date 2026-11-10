@@ -2,6 +2,6 @@ url: https://github.com/tyouter/dsh-notes
 name: tyouter/dsh-notes
 category: ui
 description:
-  en: 'A notebook inside DeepSeek Harness: one page, typeset as you type. Two spaces make a bullet, four the next level. A one-second pause brings a suggestion that TAB accepts and one Backspace removes. Structure and Translate write a draft that only lands when you apply it. History edits in place and copies standard Markdown. The board answers questions from the notebook with its own read-only query tools and pins the charts it builds. An immersive mode takes the page full screen, and the footer wraps rather than hiding a button in a narrow pane.'
-  zh: 'DeepSeek Harness 里的笔记本：一页纸，边写边排版。两个空格是项目符号，四个空格是下一级。停一秒出现建议，TAB 采纳、一次 Backspace 收回。结构化与翻译只写成草稿，应用后才落进正文。历史页就地编辑，并可复制标准 Markdown。看板用只读查询工具回答关于笔记的问题，并把图表钉在看板上。沉浸模式让页面独占整屏；面板变窄时页脚换行而不是隐藏按钮。'
+  en: 'A quiet page for thinking, inside DeepSeek Harness. For people who think by writing. · Minimal writing: typeset as you type — two spaces for a bullet, four for the next level; a suggestion after a pause, TAB accepts it, one Backspace takes it back. · History: every note listed, searched and edited in place, with one-click standard Markdown. · AI board: a data assistant that answers from your own notes and pins the charts it builds.'
+  zh: 'DeepSeek Harness 里一张安静的纸，用来思考。给喜欢边写边想的人。 · 极简写：边写边排版——两个空格是项目符号，四个是下一级；停一秒出现建议，TAB 采纳、一次 Backspace 收回。 · 历史记录：笔记可列、可搜、就地编辑，一键复制标准 Markdown。 · AI 看板：数据助手用你自己的笔记回答，并把生成的图表钉在看板上。'
 icon: https://raw.githubusercontent.com/tyouter/dsh-notes/main/docs/marketing/icon-180.png
