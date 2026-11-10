@@ -2,5 +2,5 @@ url: https://github.com/Hao0311/dsh-mimo-tts
 name: Hao0311/dsh-mimo-tts
 category: voice
 description:
-  en: 'Text-to-speech for DeepSeek Harness: a mimo_tts tool that writes MiMo TTS audio to a local file, a read-aloud action on each finalized answer, auto-read, and a sidebar panel for built-in voices, voice design by description, or voice cloning from an mp3/wav sample.'
-  zh: '把小米 MiMo TTS 接进 DSH：提供 mimo_tts 工具落盘音频、回答的「播报」按钮、自动播报，以及侧边栏语音设置（内置音色、文字描述生成音色、样本克隆）。'
+  en: 'Text-to-speech for DeepSeek Harness through Xiaomi MiMo TTS, needs a XIAOMI_API_KEY: a mimo_tts tool that writes audio to a local file, a read-aloud action on each finalized answer, auto-read, and a sidebar panel for built-in voices, voice design by description, or voice cloning from an mp3/wav sample. Same package name as lengmodkx/dsh-mimo-tts, so the two cannot be installed together.'
+  zh: '通过小米 MiMo TTS 为 DSH 提供语音合成，需要 XIAOMI_API_KEY：mimo_tts 工具落盘音频、回答的「播报」按钮、自动播报，以及侧边栏语音设置（内置音色、文字描述生成音色、样本克隆）。与 lengmodkx/dsh-mimo-tts 包名相同，不能同装。'

@@ -3,5 +3,5 @@ name: stallenlu/dsh-docx2md
 category: docs
 tarball: https://github.com/stallenlu/dsh-docx2md/releases/download/v0.6.5/dsh-docx2md-0.6.5.tgz
 description:
-  en: 'Converts formula-bearing Word documents into Markdown with LaTeX, handling OLE equation objects, native Word OMML equations and image-based formulas; keeps equation numbers and structure.'
-  zh: '把含公式的 Word 文档转成带 LaTeX 的 Markdown：OLE、Word 原生 OMML、图片公式三种载体都处理，保留公式编号与结构。'
+  en: 'Converts formula-bearing Word documents into Markdown with LaTeX, handling OLE equation objects, native Word OMML equations and image-based formulas; keeps equation numbers and structure. Needs Python 3.9+ (or uv); OLE and image formulas are transcribed by a vision-capable model from rendered images, and rendering needs Windows or LibreOffice.'
+  zh: '把含公式的 Word 文档转成带 LaTeX 的 Markdown：OLE、Word 原生 OMML、图片公式三种载体都处理，保留公式编号与结构。需要 Python 3.9+（或 uv）；OLE 与图片公式由具备视觉能力的模型读渲染图转写，渲染需 Windows 或 LibreOffice。'

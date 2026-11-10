@@ -2,5 +2,5 @@ url: https://github.com/lightcoloror/dsh-codex-handoff
 name: lightcoloror/dsh-codex-handoff
 category: workflow
 description:
-  en: 'Workspace-scoped Codex and DeepSeek Harness handoffs with durable replies, independent review, and restart-safe Windows endpoint discovery; no computer-use.'
-  zh: 'Codex 与 DeepSeek Harness 专属工作区交接，支持持久回传、独立验收和 Windows 重启端点发现，不使用 computer-use。'
+  en: 'Windows-only, workspace-scoped Codex to DeepSeek Harness handoffs with durable replies, independent review and restart-safe endpoint discovery; no computer-use. Built on code vendored from ESROAMER/codex-dsh-collab and Dax233/dsh-codex-bridge; it mounts the same default /codex-bridge route as codex-dsh-collab, so do not install both with default settings. Needs Python 3.11+ and a one-time pairing command.'
+  zh: '仅限 Windows 的 Codex 到 DeepSeek Harness 专属工作区交接，支持持久回传、独立验收和重启后端点自动发现，不使用 computer-use。内置 ESROAMER/codex-dsh-collab 与 Dax233/dsh-codex-bridge 的代码，默认与 codex-dsh-collab 同挂 /codex-bridge 路由，不能以默认配置同装。需要 Python 3.11+ 并执行一次配对命令。'

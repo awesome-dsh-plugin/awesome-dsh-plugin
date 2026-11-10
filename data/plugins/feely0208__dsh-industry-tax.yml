@@ -2,5 +2,5 @@ url: https://github.com/feely0208/dsh-industry-tax
 name: feely0208/dsh-industry-tax
 category: security
 description:
-  en: 'Scans a project directory for tax-industry compliance issues ahead of regulatory audits: accounting voucher and ledger retention under 30 years, invoice titles missing a taxpayer ID or inconsistent with the entity, tax data leaving China without a security assessment or standard contract, and e-invoices without verification or duplicate-reimbursement checks, with rule sources kept in rules/.'
-  zh: 稽查前给项目做财税行业专项体检：会计凭证与账簿保存期低于 30 年、发票抬头缺纳税人识别号或与主体不一致、税务数据出境未做安全评估或标准合同、电子发票未验真或存在重复报销，规则出处保留在 rules/。
+  en: 'Keyword-rule scan of a project directory for tax-industry compliance gaps ahead of regulatory audits: accounting voucher and ledger retention set under 30 years, invoice-title lines with no taxpayer ID, tax data leaving China with no security assessment or standard contract mentioned, and e-invoice lines with no verification or de-duplication mentioned, with rule sources kept in rules/.'
+  zh: '稽查前对项目目录做财税行业专项体检（关键词规则扫描）：会计凭证与账簿保存期配置低于 30 年、开票信息缺纳税人识别号、税务数据出境未提及安全评估或标准合同、电子发票未提及验真或查重，规则出处保留在 rules/。'

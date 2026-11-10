@@ -2,5 +2,5 @@ url: https://github.com/SheldonJinn/dsh-precise-billing
 name: SheldonJinn/dsh-precise-billing
 category: usage
 description:
-  en: Per-request DeepSeek billing with peak/off-peak and holiday pricing, a cost bar, sidebar card, usage dashboard (trends, calendar, yearly view) and a three-step hot restart.
-  zh: 按 DeepSeek 官方人民币价目（峰谷时段、节假日）逐请求精确计费，提供费用条、侧栏卡片、用量看板（趋势/日历/年视图）与三段式热重启。
+  en: 'Per-request DeepSeek billing with peak/off-peak and holiday pricing, a cost bar, sidebar card, usage dashboard (trends, calendar, yearly view) and a three-step hot restart (Windows DSH Desktop only).'
+  zh: '按 DeepSeek 官方人民币价目（峰谷时段、节假日）逐请求精确计费，提供费用条、侧栏卡片、用量看板（趋势/日历/年视图）与三段式热重启（热重启仅限 Windows 版 DSH 桌面端）。'

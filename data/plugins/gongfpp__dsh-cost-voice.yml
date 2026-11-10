@@ -1,5 +1,5 @@
 url: https://github.com/gongfpp/dsh-cost-voice
-name: 大白饭到账语音播报
+name: gongfpp/dsh-cost-voice
 category: usage
 description:
   en: 'Dabaifan Arrival Voice Announcements speaks the estimated spend per turn with the bundled Dabaifan voice by default; Alipay is optional. Amounts come from dsh-cost-meter or model-price estimates, not payment records. No runtime TTS service. Code is MIT; the bundled Alipay clips come from Reathin/XVoice (no licence), the Dabaifan voice is a MiMo clone and the icon is a fan-made meme, all for personal, non-commercial use with this plugin only.'

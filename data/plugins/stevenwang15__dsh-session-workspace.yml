@@ -2,6 +2,6 @@ url: https://github.com/stevenwang15/dsh-session-workspace
 name: stevenwang15/dsh-session-workspace
 category: session
 description:
-  en: 'Gives every new DeepSeek Harness conversation its own workspace directory and sandbox, with a composer toggle for the next conversation.'
-  zh: '让 DeepSeek Harness 的每个新对话自动拥有独立工作区和沙箱根，并在输入框旁提供临时开关。'
+  en: 'Gives each new DeepSeek Harness conversation started from the default workspace its own workspace directory and sandbox root (manually added project workspaces stay shared unless mode is set to all), with a composer toggle for the next conversation.'
+  zh: '让 DeepSeek Harness 默认工作区里新建的每个对话自动拥有独立工作区和沙箱根（手动添加的项目工作区默认保持共用，设 mode: all 才全部隔离），并在输入框旁提供临时开关。'
 tarball: https://github.com/stevenwang15/dsh-session-workspace/releases/download/v0.2.0/dsh-session-workspace-0.2.0.tgz

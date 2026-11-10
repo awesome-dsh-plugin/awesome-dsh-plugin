@@ -3,5 +3,5 @@ name: whoishuhu/dsh-tag-index
 category: market
 icon: https://raw.githubusercontent.com/whoishuhu/dsh-tag-index/main/icon.png
 description:
-  en: Adds an index of every installable plugin tagged dsh-plugin on GitHub or npm to Plugins → Discover, rebuilt daily.
-  zh: 把 GitHub 和 npm 上所有打了 dsh-plugin 标签、可以安装的插件，作为索引源加入「插件 → 发现」，每天更新。
+  en: 'Adds an index of every installable plugin tagged dsh-plugin on GitHub or npm to Plugins → Discover, rebuilt daily. On first run it also switches on the experimental Custom plugin index.'
+  zh: '把 GitHub 和 npm 上所有打了 dsh-plugin 标签、可以安装的插件，作为索引源加入「插件 → 发现」，每天更新。首次运行时会同时打开实验性的「自定义插件索引」。'

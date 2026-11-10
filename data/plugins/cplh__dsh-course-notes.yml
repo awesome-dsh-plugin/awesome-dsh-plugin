@@ -2,5 +2,5 @@ url: https://github.com/cplh/dsh-course-notes
 name: cplh/dsh-course-notes
 category: docs
 description:
-  en: "Bilibili course notes for DSH: watches Bilibili videos, builds subject knowledge maps, and delivers same-name Markdown + Word notes with the video link in a new session. Requires dsh-video-coursemap and dsh-memory-evolve; Windows only."
-  zh: "B站课程知识笔记：监听 B 站视频，生成学科知识地图，并在新会话交付带视频链接的同名 Markdown + Word 笔记。需先安装 dsh-video-coursemap 与 dsh-memory-evolve；仅 Windows。"
+  en: 'Bilibili course notes for DSH: turns the videos and subject knowledge maps recorded by dsh-video-coursemap into same-name Markdown + Word notes with the video link on top, and delivers them in a new session through dsh-memory-evolve. Requires both plugins (with memory-evolve session orchestration turned on), Python with python-docx for the Word file (the DSH bundled runtime works), and Windows.'
+  zh: 'B站课程知识笔记：把 dsh-video-coursemap 记录的视频与学科知识地图整理成视频链接置顶的同名 Markdown + Word 笔记，并通过 dsh-memory-evolve 在新会话交付。需先装这两个插件（并开启 memory-evolve 的「会话编排」），Word 需要带 python-docx 的 Python（DSH 捆绑运行时可用），仅 Windows。'
