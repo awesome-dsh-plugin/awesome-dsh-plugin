@@ -1,0 +1,6 @@
+url: https://github.com/shangyunqiang1/DSH_Eplan
+name: shangyunqiang1/DSH_Eplan
+category: tools
+description:
+  en: 'EPLAN Electric P8 automation for DeepSeek Harness: a bundled eplan-mcp server drives the running P8 2025 instance through the EPLAN Remote Client interface, a settings page sets the EPLAN install root, and five skills cover connection and safety, C# scripting, documentation lookup, EEC Pro development and setup. Five SQLite indexes answer P8 2025 API reference, P8 2025 platform help, P8 2026, P8 2027 and EEC Pro 2026 questions without network access; the P8 2026 and P8 2027 rows ship disabled and are enabled in settings once their index files are in place. A version panel records releases and applies a newer one from the repository.'
+  zh: 'DeepSeek Harness 的 EPLAN Electric P8 自动化插件：内置 eplan-mcp 通过 EPLAN Remote Client 接口驱动正在运行的 P8 2025，设置页配置 EPLAN 安装根目录，五个技能覆盖连接与安全、C# 脚本、文档查阅、EEC Pro 开发与安装排错。五套 SQLite 索引可在断网状态下检索 P8 2025 API 参考、P8 2025 平台帮助、P8 2026、P8 2027 与 EEC Pro 2026 文档；2026 与 2027 两行默认关闭，把索引文件放到位后可在设置中开启。版本面板记录发布历史，并可从仓库直接更新到较新版本。'
