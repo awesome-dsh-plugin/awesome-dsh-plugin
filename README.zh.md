@@ -3245,6 +3245,7 @@ dsh plugin --profile web add dshmarket
 - [liqiaohuia/dsh-proxy-routes](https://github.com/liqiaohuia/dsh-proxy-routes) — 按提供商（账号）分流的 SOCKS5/HTTP 代理池。基于 API 密钥识别账号实现精准分流，支持绝对直连（无视 DSH 全局代理）与内置联网工具代理热装。配置在 DSH 设置页图形化管理，保存即热生效。
 - [liubaicai/dsh-codebuddy-link](https://github.com/liubaicai/dsh-codebuddy-link) — 通过 ACP 将腾讯 CodeBuddy CLI 接入 DeepSeek Harness，支持 CLI 原生工具执行、多账户管理和 codebuddy_ask 独立问答。
 - [liubaicai/dsh-qoder-link](https://github.com/liubaicai/dsh-qoder-link) — 通过官方 Qoder CLI 以原生 ACP stdio 接入 Qoder 模型（无需逆向模型 API）；qoderclicn 中国版已通过真实 ACP 工具链路验证，qodercli 国际版可选但真实推理路径尚未验证。需 Node.js 22.18+，并在同一台机器上安装并登录所选 Qoder CLI；插件不安装 CLI、不管理账户。
+- [liuming-dev/dsh-plugins#cliproxyapi-plus](https://github.com/liuming-dev/dsh-plugins/tree/main/cliproxyapi-plus) — 在 DeepSeek Harness 中管理本地 CLIProxyAPIPlus，支持 Qoder、Codex 认证与额度查询，自动同步模型供应商及模型列表，并提供 YAML 编辑、服务启停、请求趋势和运行日志。
 - [LiZhenNet/dsh-antigravity](https://github.com/LiZhenNet/dsh-antigravity) — Google Antigravity / Cloud Code Assist 模型提供商插件，支持配额查看与模型选择管理。
 - [lj100886/dsh-framework-doctor](https://github.com/lj100886/dsh-framework-doctor) — 给一个调用网址就自动配好模型，体检框架健康度，并修复可自动修复的问题。
 - [llmpolska/oh-my-dsh](https://github.com/llmpolska/oh-my-dsh) — 面向 DeepSeek Harness 的分级模型路由：think/build 模型分级、视觉委派（视觉模型只负责描述图片，工作模型负责执行操作）、图片生成，以及高影响操作守卫。
@@ -5025,7 +5026,6 @@ dsh plugin --profile web add dshmarket
 - [Dobo233/dsh-codex-pilot](https://github.com/Dobo233/dsh-codex-pilot) — 把本机 Codex CLI 接成 DSH 的四个工具（codex_run / codex_resume / codex_queue / codex_probe），另带独立的回环桥：HTTP 接口 + 文件信箱。
 - [docsor1212/dsh-aesthete-agent](https://github.com/docsor1212/dsh-aesthete-agent) — 前端美学引擎的 17 个原生工具：118 块实证色板按语域选板、跨语域整页方向对比、四道机械检查（对比度、色盲、AI 味、评分）带指纹绑定，另有设计令牌表、页面审计、图表色板、中文字阶、渲染对账与量化叙事。全部本地运行，零联网。需 Python 3.8+。
 - [Dongze502/dsh-session-to-doc](https://github.com/Dongze502/dsh-session-to-doc) — 把 DSH 当前会话的对话记录重组成带大纲、章节层级和目录的结构化 Markdown 文档，而不是按时间顺序原样导出。三种入口：模型工具 session_to_doc、输入框按钮、仅回环的 Web 接口。
-- [donyue7/dsh-aoci-bind](https://github.com/donyue7/dsh-aoci-bind) — DSH Host 侧 AOCI 接入工具：发现带 AOCI 索引的工作区、诊断与修复 MCP 绑定、初始化未接入仓库，并提供状态与体检工具。
 - [dream-office/dsh-cross-workspace](https://github.com/dream-office/dsh-cross-workspace) — 跨工作区信使：让不同 DSH 工作区的会话互相发消息、传文件与 JSON，支持手动群组、指定成员、收件箱、等待/排队投递与可视化交流图。
 - [drscrewdriver/dsh-bash-terminal-ts](https://github.com/drscrewdriver/dsh-bash-terminal-ts) — 一个 shell 工具：Windows 上支持 PowerShell / Git Bash / WSL / MSYS2 四种后端，外加交互式 PTY 终端；MSYS2 后端以 bash.exe -lc 启动，让 /etc/profile 把 /usr/bin 与 /mingw64/bin 带进 PATH，并为 PTY 环境注入 MSYSTEM=MINGW64。TypeScript 编写，面向 DSH 0.1.2+。
 - [drscrewdriver/dsh-cookie-cleaner](https://github.com/drscrewdriver/dsh-cookie-cleaner) — 桌面客户端的赛博端粒不老药：解决启动报 `desktop welcome: Web authentication failed`（HTTP 431）的现象——Electron 随机端口启动，`dsh-auth-*` 登录 cookie 随端口越积越多（70 余条、单条约 229 B），启动请求头撑爆 Node 默认 16 KB 上限，客户端直接起不来。两味药：脚本化清理器——报告并清理 cookie 库（Chromium SQLite）里残留的登录凭据，显式、离线、保留 `.bak` 副本，`--expired-only` 可收窄范围；设置面 patch 功能——经由 profile 的 `cordis.patch.yml` 把启动端口固定化，保证客户端始终从单一端口启动，cookie 不再随不同端口累计（`port` 改写成 `!!js` 表达式可让 `--port` 旗标继续优先，按 profile 留快照、点一次即可回滚）。用法详见 README。界面、CLI 输出与市场元数据覆盖 9 语。清理需在客户端完全退出后运行包内 CLI（`dsh-cookie-cleaner --clean`），插件本体只读。npm 包名：`dsh-cookie-cleaner`。
@@ -8211,6 +8211,7 @@ dsh plugin --profile web add dshmarket
 - [Qing45/dsh-body-clock](https://github.com/Qing45/dsh-body-clock) — 可拖动的悬浮小窗，分吃饭、喝水、站立三个 tab：随机决定三餐（每天各 3 次机会、不重复、可增删菜品），记录喝水与站立，每类提醒各用一种音色响约 3 秒；可收成 32px 悬浮球。
 - [Qing45/dsh-feishu-chat](https://github.com/Qing45/dsh-feishu-chat) — 基于飞书官方 WebSocket 长连接的 DSH 双向聊天桥：消息路由到所选工作区的最新会话并自动回复，可在设置页切换机器人凭证与工作区。
 - [QinpanWan/dsh-hiboard-push](https://github.com/QinpanWan/dsh-hiboard-push) — 华为鸿蒙负一屏（智慧助手·今天）任务完成推送：hiboard_push / hiboard_verify 工具把 Markdown 任务结果推送到手机卡片流，与 OpenClaw today-task 技能线级兼容，授权码可在 dsh 设置面板配置。
+- [QYF1999/dsh-session-alerts](https://github.com/QYF1999/dsh-session-alerts) — 会话干完活时在应用图标上显示未读数字角标；会话报错或等待回答时弹出红色感叹号角标、黄色问号角标或 Windows 通知，三种状态各有提示音。
 - [ramwin/dsh-turn-music](https://github.com/ramwin/dsh-turn-music) — 回合提醒音乐：对话（回合）结束时播放铃声或任意本地音频提醒你回来——内置合成的电话「叮铃铃」，也可填宿主机绝对路径或直接在设置页上传；右下角浮标可暂停/继续/关闭，默认循环响到你手动停；设置项在「设置 → 内置插件」里，部署级默认值可写进 cordis.patch.yml。
 - [ray062/dsh-obvious-grid](https://github.com/ray062/dsh-obvious-grid) — DeepSeek Harness 全屏状态看板：会话状态网格与 token/速率图表一览无余，回合结束、出错或等待审批时通过 ntfy 推送与铃声提醒。
 - [renjianbuchai/dsh-session-attention](https://github.com/renjianbuchai/dsh-session-attention) — 会话在后台跑完、或在等你审批、计划审阅或回答时，弹出系统通知、标题加红点并点亮 PWA 任务栏徽标；回到窗口自动清除。
