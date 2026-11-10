@@ -1,0 +1,6 @@
+url: https://github.com/z-imagine/dsh-free-light-search
+name: z-imagine/dsh-free-light-search
+category: tools
+description:
+  en: "Multi-engine web search and fetch with 45+ backends, intelligent fallback, and API key rotation. Replaces DSH's default web_search/web_fetch providers."
+  zh: "多引擎网页搜索与抓取插件，支持45+搜索后端，智能回退与API密钥轮换。替换DSH默认的web_search/web_fetch提供者。"
