@@ -1,0 +1,6 @@
+url: https://github.com/EnderDAG/dsh-quote-archive
+name: EnderDAG/dsh-quote-archive
+category: tools
+description:
+  en: Archive, search, and recall group-chat quotes locally, with an AstrBot-style management page and a SnowLuma / OneBot v11 QQ channel.
+  zh: 本地收藏、检索并随机回放群聊语录，自带管理页，可通过 SnowLuma / OneBot v11 通道采集与回发。
