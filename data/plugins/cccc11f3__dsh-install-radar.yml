@@ -1,0 +1,6 @@
+url: https://github.com/cccc11f3/dsh-install-radar
+name: cccc11f3/dsh-install-radar
+category: tools
+description:
+  en: 'Session install radar for DeepSeek Harness: lists what each conversation installed (pip, npm, git clones, winget-like installers) with size, path, creation time, purpose, why it was installed, and what removing it costs. Ships a sidebar panel, 10 agent tools, a timestamp sweep of temp directories, a process-command-line audit, and a two-step confirmed cleanup limited to temp directories.'
+  zh: '会话安装雷达：按会话列出装了什么（pip、npm、git clone、winget 等），给出体积、安装位置、创建时间、用途、为什么装、卸载后果。含侧栏面板、10 个 agent 工具、临时目录时间戳扫描、进程命令行审计，以及仅限临时目录的两段式确认清理。'
