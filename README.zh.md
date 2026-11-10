@@ -6214,6 +6214,7 @@ dsh plugin --profile web add dshmarket
 - [vikasranax/dsh-plugin-cats](https://github.com/vikasranax/dsh-plugin-cats) — 为 AI 代理从公开 API 获取随机猫咪冷知识与猫图。
 - [VioletEverGarden-zc/dsh-rea-mcp-toggle](https://github.com/VioletEverGarden-zc/dsh-rea-mcp-toggle) — 在 DSH Web UI 会话标题栏或通过 rea_mcp_toggle 工具开关 rea-mcp 服务器：不用逆向时，170 个 mcp__rea__* 工具 schema 不再随每次请求发送（tools payload 由约 722 KB 降到约 95 KB），REA 子进程同时退出；选择存入 profile 级状态文件，重启后由行级 disabled 表达式恢复。
 - [visualcjy/nyaterm-bridge](https://github.com/visualcjy/nyaterm-bridge) — 在 NyaTerm 的真实终端会话里执行 AI 命令，复用已配置的分组、跳板机和本地终端，按工作区限制可用范围；命令与输出留在 NyaTerm 中，便于查看和审计。
+- [Vito-Li-tech/dsh-plugin-bili-share](https://github.com/Vito-Li-tech/dsh-plugin-bili-share) — 把 B 站链接转成 b23.tv 短链并取封面，提供工具、/bili 命令和分享卡片面板。
 - [Vncntvx/dsh-zotero](https://github.com/Vncntvx/dsh-zotero) — 面向 DeepSeek Harness 的 Zotero 插件：在对话中检索与阅读文献、在文献轨迹中核对记录，并在文献面板浏览文献库。
 - [Void-LifeStream/dsh-cuda](https://github.com/Void-LifeStream/dsh-cuda) — 在 DeepSeek Harness 里直接跑本地 NVIDIA CUDA GPU 的 Python 任务：设备状态、前台/后台作业、持久日志、每次运行实测的峰值显存。
 - [Void-LifeStream/dsh-phone-butler](https://github.com/Void-LifeStream/dsh-phone-butler) — 用 adb 查看并打理一台真实的 Android 手机：存储体检、未 root 也能读到的逐应用数据大小（来自 dumpsys diskstats）、只清缓存不动数据的清理、目录统计与截图——共五个工具；读取永不改动任何东西，写入必须显式确认。
