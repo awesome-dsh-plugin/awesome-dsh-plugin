@@ -1,0 +1,7 @@
+url: https://github.com/ZOTTALL/dsh-xiaoyu-qqbot
+name: ZOTTALL/dsh-xiaoyu-qqbot
+category: identity
+tarball: https://github.com/ZOTTALL/dsh-xiaoyu-qqbot/releases/download/v1.1.2/dsh-xiaoyu-qqbot-1.1.2.tgz
+description:
+  en: 'QQ-bot console for DeepSeek Harness on Windows, with NapCat/AstrBot deployment, GPT-SoVITS integration, persona editing, local hybrid memory retrieval and a 3D memory graph.'
+  zh: '面向 Windows 版 DeepSeek Harness 的 QQ 机器人控制台，提供 NapCat/AstrBot 部署、GPT-SoVITS 对接、人格编辑、本地混合记忆检索和三维记忆图。'
