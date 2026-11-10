@@ -5925,6 +5925,7 @@ dsh plugin --profile web add dshmarket
 - [sansff88-ops/dsh-cookbook](https://github.com/sansff88-ops/dsh-cookbook) — 菜谱面板 + 4 个 recipe_* 工具：373 道家常菜谱（以中式为主，兼收西式与日韩菜式），随包附带 347 张菜品图与 3 张厨房技巧插图，数据取自开源项目 HowToCook（Unlicense）并经清洗、单位修正与重排。按菜名、分类或手头食材找菜，每日推荐、收藏与「做过」标记、厨房技巧；数据随插件分发，离线可用，不热链、无遥测。
 - [Saunato/dsh-mac-cua](https://github.com/Saunato/dsh-mac-cua) — macOS 桌面应用 Computer Use 插件：以文本读取任意应用的无障碍树与元素索引，并据此点击、输入、粘贴、滚动、拖拽、选择文本与赋值，截图可回传为图片。由常驻 JavaScript REPL 驱动——智能体只拿到两个工具（`js`、`js_reset`），在其中调用 `sky` API，因此状态跨调用保持、能力增长时工具 schema 保持稳定。无障碍树在首次读取后以 diff 返回；动作按索引寻址，过期索引会被拒绝而非错用；输入前等待键盘焦点并回读输入框；粘贴会恢复剪贴板。需 macOS 14.4+、辅助功能权限（截图另需屏幕录制）与 Node 20+；随包提供预编译原生模块，安装时不需编译。
 - [SCP-CN-1059/dsh-zhouli](https://github.com/SCP-CN-1059/dsh-zhouli) — 主打「周礼模式」agent 预设：会话分三段依六官法度而行——开工「设官分职」、事中「依典援据」、收尾「岁终之会」依六计考成。另附 zhouli 工具，七种检索动作，检索内置 49,384 字《周礼》语料，每条结果带稳定坐标（篇序.职官序），含职官员额索引与 Kanripo 两本互校勘记。
+- [sdf123098/dsh-plugin-axolotl](https://github.com/sdf123098/dsh-plugin-axolotl) — 把美西螈启动器（Axolotl Launcher）自带的 MCP 服务器接进 DSH：269 个工具收成 9 个领域工具加 status 和 raw；代持常驻客户端应答启动器的 15 秒心跳，让控制会话撑过长任务；截图直接变成图片，不用落盘再读。
 - [sduwall/dsh-wall-mcp-manager](https://github.com/sduwall/dsh-wall-mcp-manager) — 在DeepSeek Harness内管理MCP服务的插件。
 - [SeaViod/dsh-plugin-deepsearch](https://github.com/SeaViod/dsh-plugin-deepsearch) — 给 DSH 内置 web_search 加一个开关：在 DeepSeek Search API（/v1/tools/search）与默认账号搜索之间切换，失败自动回退，并带设置页与侧栏开关。
 - [seetown/dsh-gui-control](https://github.com/seetown/dsh-gui-control) — DeepSeek Harness 的 Windows 桌面操控：读无障碍树、按控件名点击、动作投递判定，以及可重复执行的任务文件。
