@@ -1,0 +1,6 @@
+url: https://github.com/victorwwchan/FastCompact
+name: victorwwchan/dsh-fast-compact
+category: session
+description:
+  en: 'dsh-Fast-Compact plugin mainly solves two problems:1) Allow Local LLM to Skips model`s long summarizing time during compaction step entirely. no mid-conversation,  stalls while the model rewrites its own history.2)Help **Small context windows (e.g. 64 KB)** to run with lower context window'
+  zh: 'dsh-Fast-Compact 插件主要解决两个问题：1)让本地大语言模型在上下文压缩阶段完全跳过耗时的摘要生成过程，避免模型因重写自身的对话历史而导致对话中途卡顿。2)帮助上下文窗口较小（例如 64 KB）的模型在更低的上下文窗口配置下运行.'
