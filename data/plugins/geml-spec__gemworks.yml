@@ -2,5 +2,5 @@ url: https://github.com/geml-spec/gemworks
 name: geml-spec/gemworks
 category: workflow
 description:
-  en: 'Runs the agent through GEML workflows: work items move through flow steps, practices are recorded at the step they belong to, and a board tab in the right sidebar shows where each item stands. Also mounts the GEML MCP server and skills; when the project has a fixed workflow, a supervisor gates tool calls by its current state.'
-  zh: '用 GEML 流程带 agent 干活：工作项按流程一步步走，做法记在它所属的那一步，右侧栏的看板页签显示每件事走到哪了。同时挂上 GEML 的 MCP 服务和技能；项目里有固化流程时，监督器按流程当前状态把关工具调用。'
+  en: 'Runs the agent through GEML workflows: work items move through flow steps, practices are recorded at the step they belong to, and a board tab in the right sidebar shows where each item stands. Also mounts the GEML MCP server and skills; when the project has a fixed workflow, a supervisor gates tool calls by its current state. Needs Node.js 22+; the GEML MCP server is fetched with npx (@geml/geml) when a session starts.'
+  zh: '用 GEML 流程带 agent 干活：工作项按流程一步步走，做法记在它所属的那一步，右侧栏的看板页签显示每件事走到哪了。同时挂上 GEML 的 MCP 服务和技能；项目里有固化流程时，监督器按流程当前状态把关工具调用。需要 Node.js 22+；GEML MCP 服务器在会话启动时经 npx（@geml/geml）获取。'

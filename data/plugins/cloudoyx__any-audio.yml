@@ -2,5 +2,5 @@ url: https://github.com/cloudoyx/any-audio
 name: cloudoyx/any-audio
 category: voice
 description:
-  en: 'Agent audio studio for DeepSeek Harness: compose from note-level scores, narrate, add sound effects and mix, then fine-tune every track on an editable timeline where each generated sound arrives as its own clip.'
-  zh: '给 agent 用的音频工作室（DeepSeek Harness 插件）：写谱编曲、配音、音效与混音，生成的每个声音都以独立片段落到同一条可视化时间轴上，可逐轨试听、单独调节与微调。'
+  en: 'Agent audio studio for DeepSeek Harness: compose from note-level scores, narrate, add sound effects and mix, then fine-tune every track on an editable timeline where each generated sound arrives as its own clip. Speech uses Edge TTS (Microsoft''s public endpoint, needs ffmpeg) by default, or MiMo-V2.5-TTS with your own API key; needs Node.js 22.19+.'
+  zh: '给 agent 用的音频工作室（DeepSeek Harness 插件）：写谱编曲、配音、音效与混音，生成的每个声音都以独立片段落到同一条可视化时间轴上，可逐轨试听、单独调节与微调。配音默认走 Edge TTS（微软公共接口，需要 ffmpeg），也可选用 MiMo-V2.5-TTS（需自备 API Key）；需要 Node.js 22.19+。'

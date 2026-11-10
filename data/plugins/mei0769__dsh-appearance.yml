@@ -2,5 +2,5 @@ url: https://github.com/mei0769/dsh-appearance
 name: mei0769/dsh-appearance
 category: tools
 description:
-  en: Generate a persona appearance image from hair, outfit, accessory and expression text, then save it to a local gallery. Works with any OpenAI-compatible images API and also reports the composed prompt and backend status.
-  zh: "换装生图：按发色、服装、配件、表情生成人物形象图并存进本地画廊。对接任意 OpenAI 兼容的图片接口，同时能查到拼好的提示词与后端状态。"
+  en: 'Generate a persona appearance image from hair, outfit, accessory and expression text, then save it to a local gallery. Works with any OpenAI-compatible images API and also reports the composed prompt and backend status. Needs an images API key: it defaults to SiliconFlow (Qwen/Qwen-Image) and you set baseUrl, model and apiKey in the plugin config.'
+  zh: '换装生图：按发色、服装、配件、表情生成人物形象图并存进本地画廊。对接任意 OpenAI 兼容的图片接口，同时能查到拼好的提示词与后端状态。需要图片接口的 API Key：默认走硅基流动（Qwen/Qwen-Image），在插件配置里填 baseUrl、model 与 apiKey。'
