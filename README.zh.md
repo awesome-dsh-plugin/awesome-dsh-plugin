@@ -5105,6 +5105,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-computer-use-en](https://github.com/ALAMBICCO/dsh-computer-use-en) — Windows 电脑控制插件（英文版）：提供 10 个桌面控制工具（截图、鼠标、键盘、UIA 界面元素读取、剪贴板、窗口管理、应用技能与按应用授权），全英文设置面板与右下角迷你进度卡片浮层，支持按 Esc 暂停或继续，并适配 DSH 0.2.1 的 koffi.node 自动发现。Fork 自 copylee711/dsh-computer-use，沿用同一插件 id 与工具名，两者不能同时安装。
 - [dsh-subagent-antigravity](https://github.com/ALAMBICCO/dsh-subagent-antigravity) — 将 DeepSeek Harness 原生 subagent_fork 子智能体会话路由至 Google AI Pro (Antigravity) 订阅（支持 Gemini 3.8 Flash、Claude Sonnet 5.5、Claude Opus 5.5、GPT-OSS 120B）：零 API 费用、实时流式输出、完整工具调用、并行前缀缓存预热、200ms HTTPS 配额查询，以及聊天栏右上角配额按钮与侧滑模型/推理强度设置面板。
 - [aldveylor/dsh-intellisense](https://github.com/aldveylor/dsh-intellisense) — 一个用于管理工具集的命名空间管理工具，支持自动发现与集成，用于节省token的消耗还会在受限 Node 运行时执行 TypeScript 与 JavaScript，按需通过命名空间调用工具。
+- [Alec6636/dsh-portable-workspace](https://github.com/Alec6636/dsh-portable-workspace) — 把 DSH 的会话、插件、工程与日志完整放进移动硬盘或 U 盘，换一台电脑插上即可继续。
 - [alexltr/dsh-vba-bridge](https://github.com/alexltr/dsh-vba-bridge) — 通过真实 Excel COM 读写、导出并校验 Excel VBA 工程：模块、窗体代码、过程清单与 .frm/.frx 导出。仅 Windows：需安装桌面版 Excel、Python 3.10+（含 pywin32），并设置 AccessVBOM=1。
 - [Algorandius/dsh-disk-janitor](https://github.com/Algorandius/dsh-disk-janitor) — DSH 磁盘清理插件：看清磁盘占用都花在哪，只清理可以安全重建的部分，正在使用中的资源始终保留。
 - [Aliang-code/dsh-fusion-lean#fusion-lean](https://github.com/Aliang-code/dsh-fusion-lean/tree/master/packages/fusion-lean) — 把 Fusion 360 接进 DSH：桥接 Fusion 自带的 MCP 服务（读取、执行、更新、电子设计），上游 schema 逐字节保留而常驻工具面减少 70%，设置页可改端点，并把本地 hf.py 建模闭环包成九个 hf_* 工具（需要 Python 3.10+ 与 fusion-harness 工作区）。
@@ -5163,6 +5164,7 @@ dsh plugin --profile web add dshmarket
 - [BeatAPI/beatapi-agent-plugin#dsh-social](https://github.com/BeatAPI/beatapi-agent-plugin/tree/main/packages/dsh-social) — 提供社媒能力发现、价格预览、确认后读取、历史结果取回及来源表格；付费读取需要 BeatAPI key。
 - [Beatther-c/dsh-api-client](https://github.com/Beatther-c/dsh-api-client) — DeepSeek Harness 的 Agent 原生 API Client：Postman 级调试 UI（右键菜单与完整键盘导航的请求树、可调宽侧栏、自动生成 Header 分层预览——逐项可停用、敏感值恒脱敏），六个 api_client_* Agent 工具与 Human UI 共用同一请求核心、脱敏与审计链，Postman Collection v2.1 导入附迁移报告，环境变量经 SecretRef 间接引用，SSRF 网络策略默认 fail-closed。
 - [beijingwahw/dsh-nuke-plugin](https://github.com/beijingwahw/dsh-nuke-plugin) — 事务化卸载引擎：每个破坏性动作走 validate/preview/execute/undo 四段式并带 Saga 回滚，WAL 崩溃恢复、hash chain 审计、硬链接去重，提交前先知推演成功率。
+- [beings-labs/dsh-domain-manager](https://github.com/beings-labs/dsh-domain-manager) — 管理域名组合：从 Namecheap 与 Cloudflare 同步注册信息，跟踪到期日、自动续费与年度续费成本，并检查域名可用性。
 - [bescriptkiddie/dsh-wechat-collector](https://github.com/bescriptkiddie/dsh-wechat-collector) — 公众号素材采集：扫码登录的多套凭证档案、带冷却保护的限流安全抓取、RSS 第二水源，以及凭证隔离的 ContentStudio 来源卡交接。
 - [bestGi/dsh-rf-toolkit](https://github.com/bestGi/dsh-rf-toolkit) — 六个射频计算工具：电平换算、链路预算与最大距离、级联噪声系数、香农容量、阻抗匹配。
 - [BetterZflyee/dsh-jev-adapter](https://github.com/BetterZflyee/dsh-jev-adapter) — 用任意 OpenAI 兼容大模型跑 Jev 决策范式——无需 TypeSafe key。注册 jev_decide 工具，一次调用返回带概率分布的类型化答案（choice/score/boolean）。
@@ -5215,6 +5217,7 @@ dsh plugin --profile web add dshmarket
 - [chiang21fcb/cn-linebreak](https://github.com/chiang21fcb/cn-linebreak) — 中文网页文案断行静态审查与修复工具：检查显式 <br> 孤字行、keep-all 覆盖、标点禁则、保护词被拆等问题，并在自然停顿处自动插入 <wbr>；提供 cn_linebreak_audit 工具供代理调用。
 - [chickmat/dsh-system-net](https://github.com/chickmat/dsh-system-net) — 让 DSH 跟随系统网络设置：走系统代理并信任系统证书库，无需环境变量、无需重启。
 - [chimneyQ/dsh-context-toolkit](https://github.com/chimneyQ/dsh-context-toolkit) — 让大块输出不进对话：ctk_execute、ctk_execute_file 与 ctk_batch_execute 在子进程里跑代码只回结论，ctk_index 与 ctk_search 把长材料存进基于 node:sqlite 的本地 FTS5 知识库，路由门禁在执行前拦下 curl 与 wget。附 ctk_stats、ctk_doctor 与带实时上下文占用面板的设置页，零第三方运行时依赖。
+- [ChinXavier/dsh-gui-agent](https://github.com/ChinXavier/dsh-gui-agent) — 鼠标键盘代理操作 · 真人模拟。为 DSH 加一个按会话生效的开关，开启后注册 9 个工具，让代理做 computer-use 式的桌面自动化：截屏、鼠标点击与拖拽、键盘打字与快捷键、窗口切换、UI Automation 控件定位、窗口与账号映射、批量 prompt 队列、下载收集。输入走原生 Win32 SendInput，默认拟真节奏——贝塞尔光标轨迹与末端过冲回拉、真实 VK 击键、对数正态字符间隔并偶发打错重打、点击前犹豫——并提供仿真 / 便捷 / 自定义（0.2–8 倍）三档。适合让 AI 像人一样操作浏览器、聊天框与任何桌面程序。仅 Windows。
 - [CHplus0/dsh-learning-mode#plugin](https://github.com/CHplus0/dsh-learning-mode/tree/main/plugin) — 学习模式（Learning Mode）Agent 预设：边做边教的编码 Agent——具体的情景化阐释、苏格拉底式引导、TODO(你) 留白练习，模拟 Claude Code 的 Learning 输出风格；可 `dsh plugin add` 安装（npm 包 dsh-learning-mode）。
 - [CHplus0/dsh-shell-command](https://github.com/CHplus0/dsh-shell-command) — Claude Code 风格的 shell 集成：/! 单命令分析 与 /terminal 交互式终端（带按需历史引用）。
 - [chunqing286/dsh-guard-degen](https://github.com/chunqing286/dsh-guard-degen) — 在模型输出边界检测并拦截退化符号流，并提供修复被污染工件与会话的工具。
@@ -6426,6 +6429,7 @@ dsh plugin --profile web add dshmarket
 - [zz12hui/dsh-bili-video-summary](https://github.com/zz12hui/dsh-bili-video-summary) — 仅 Windows。B 站视频一键总结：下载音轨并用 faster-whisper 本地转写（需 Python 与 faster-whisper，首次运行下载约 725 MB 模型），随后生成解析 md 与一页「一图读懂」PNG。
 - [zz12hui/dsh-deai-audit](https://github.com/zz12hui/dsh-deai-audit) — 中文文案去 AI 味审计：0–100 六维评分、逐句打标并给出改法，文体权重可在对话里查看和修改。
 - [zzcyydshhh/comfy-png-inspector](https://github.com/zzcyydshhh/comfy-png-inspector) — 以面向模型的 comfy_png_inspect 工具读取 ComfyUI 生成图的 PNG 元数据：可传单张 PNG 或整个 output 目录，逐张报出 LoRA 执行链与每档强度、采样参数、底模、CLIP、VAE、latent 尺寸、正负提示词与被 bypass 的节点。
+- [zztdandan/dsh-deepseek-exa-hybrid-search](https://github.com/zztdandan/dsh-deepseek-exa-hybrid-search) — 把 DeepSeek 搜索 API 与 Exa 并发查询，按 URL 去重合并成单份跨源优先的 web_search 结果列表。
 - [zzy-12345678/dsh-file-convert](https://github.com/zzy-12345678/dsh-file-convert) — 通过 Agent 工具和拖拽界面在本地转换图片、PDF、数据、音视频及 Office 文件；v1.0.x 适配 DSH Desktop 0.2.1-rc.5，部分转换需要外部工具。
 - [zzy6-a/vision-use](https://github.com/zzy6-a/vision-use) — DSH 桌面操作插件：把 Windows 屏幕送进 Agent 视觉通道，并通过 Codex 风格覆盖层驱动鼠标/键盘，支持 Esc 中止；自动识别 Windows 原生或 WSL 宿主。
 
