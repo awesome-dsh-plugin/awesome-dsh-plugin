@@ -3712,6 +3712,7 @@ dsh plugin --profile web add dshmarket
 - [menghuanshiguang/dsh-sunder](https://github.com/menghuanshiguang/dsh-sunder) — 用自带的提示词包替换宿主身份块：identity、rules、footer 三个系统提示词分区，full/concise/dev 三档预设，每轮把一张规则卡片作为真实用户消息追加，公告源离线时回退到内置副本，检查 GitHub Releases 并可用命令应用更新，五个 `sunder_*` 工具，设置页里一个只读状态分区。
 - [MengYuil/dsh-ponytail](https://github.com/MengYuil/dsh-ponytail) — ponytail 移植：常驻的「懒惰资深开发者」编码人设，带强度档位与 review、audit、debt、gain、help 技能，适用于 DeepSeek Harness。
 - [moon-lzy/dsh-starpost](https://github.com/moon-lzy/dsh-starpost) — 星邮是给 AI bot 用的社交平台：一个 bot 一个账号，能加好友、建群、发动态评论、逛广场、扔漂流瓶、约一局预约制狼人杀，还带每日聊天额度和重复句式限制。本包是星邮在 DeepSeek Harness 上的客户端：17 个工具覆盖上面这些功能，收到的事件按可配置间隔（默认 20 秒）合并成一条提示注入会话，回复走同一套工具。需要自备星邮账号，首次运行在插件面板里注册。由 hth768 的 MIT 项目 cortico-world-starpost 移植而来（源码在 vendor/ 下），不能与上游 Coo 扩展同装。
+- [Muninn-and-Zmx/dsh-subtext](https://github.com/Muninn-and-Zmx/dsh-subtext) — 日常对话里读字面底下那一层，一进工作就自动让位。
 - [muretai/muretai-dsh-skill](https://github.com/muretai/muretai-dsh-skill) — 让智能体加入 Muretai 网络：拥有自己的身份，通过邀请相识，与属于其他人的智能体进行签名、端到端加密的通信；来信唤醒后可自行回复。
 - [mutexz/dsh-myself-preset](https://github.com/mutexz/dsh-myself-preset) — 语感花房是 DSH 的个人语气工作台：把你自己写的语料和纠正变成可解释的本地风格规则，可选当前模型深读，编译成按会话选用的 preset；改完在该会话的下一句话生效。
 - [MycatQieZi/dsh-persona-shaoxin](https://github.com/MycatQieZi/dsh-persona-shaoxin) — 把写在 Markdown 里的人设挂载成系统提示词段落：改 `~/.dsh/persona/*.md` 即可改变回答风格，保存后 150 毫秒自动重载而无需重启，项目级 `.dsh/persona/` 下的同名文件覆盖全局配置。
@@ -6012,6 +6013,7 @@ dsh plugin --profile web add dshmarket
 - [SIMON-WORLD/dsh-journal-monitor](https://github.com/SIMON-WORLD/dsh-journal-monitor) — 经济学优先的期刊/工作论文监控插件：NBER RSS + arXiv 经济学（4 类目）+ 中文经管期刊（世界经济-玛格泰克平台，中国农村观察/财贸经济/中国人口科学/经济管理-ajcass 平台）抓取、关键词过滤、dry-run/Webhook 推送、去重持久化、定时简报（schedule_create 兼容）。
 - [SIMON-WORLD/dsh-toolkit#dsh-at-file](https://github.com/SIMON-WORLD/dsh-toolkit/tree/main/packages/dsh-at-file) — DSH 的 @ 文件引用工具：注册 at_file_read 工具，把工作区内文件内容注入会话，含目录穿越防护与 50KB 截断（MIT）。
 - [SiriLee/dsh-edit-approval](https://github.com/SiriLee/dsh-edit-approval) — 每次 edit 与 bash 调用前都会询问：编辑前展示红绿行级 diff，命令前展示描述与命令面板——同意一次或拒绝，两个 gate 各带独立总开关（Settings → General）。
+- [SiriusYANG91/dsh-astro-plan](https://github.com/SiriusYANG91/dsh-astro-plan) — 星野摄影计划：按 18 类天象与深空目标、全国 173 站检索，结合光污染、方位、月相、星历事件与 7 天天气给出推荐排序、焦段与曝光，并附 Stellarium 风格 3D 天球画面模拟。
 - [siruignaw-sys/dsh-tool-bandit-search](https://github.com/siruignaw-sys/dsh-tool-bandit-search) — 使用上下文赌博机算法（Thompson 采样）学习何时使用快速搜索、何时使用深度搜索的 `search` 工具。 
 - [SixId666/dsh-math-plugin#dsh-math](https://github.com/SixId666/dsh-math-plugin/tree/main/plugins/dsh-math) — SymPy 驱动的考研数学一精确计算与独立验证：14 个工具、214 个算子，默认返回精确符号解，并由独立机制复核每个结果（需本机 Python 3.10+ 及 sympy、mpmath）。
 - [sixtysevenlf/dsh-blender-plugin](https://github.com/sixtysevenlf/dsh-blender-plugin) — 让 DSH agent 通过直连 TCP 通道驱动本地 Blender，提供 15 个工具：视口帧、自定义视角渲染、Python 执行、无头与作业卸载、事务回滚，以及 34 个 family / 228 个 op 的规划层。
