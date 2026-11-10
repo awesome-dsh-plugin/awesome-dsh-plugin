@@ -1,0 +1,6 @@
+url: https://github.com/ame-code/dsh-workspace-move
+name: ame-code/dsh-workspace-move
+category: session
+description:
+  en: 'Moves a workspace to another folder from its right-click menu: renames the folder, carries its nested workspaces and sessions along, rewrites their records, rolls back if anything fails, and can be undone in one click. Developed and verified on Windows first; macOS and Linux run the same code path.'
+  zh: '在工作区右键菜单里把整个工作区搬到另一个目录，顺带重命名：嵌套工作区与会话一起迁移并改写记录，失败自动回滚，移动后可一键撤销。首先在 Windows 上开发与验证；macOS 与 Linux 走同一套代码路径。'

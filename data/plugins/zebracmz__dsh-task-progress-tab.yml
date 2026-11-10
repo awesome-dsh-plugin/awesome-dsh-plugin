@@ -1,0 +1,6 @@
+url: https://github.com/zebracmz/dsh-task-progress-tab
+name: zebracmz/dsh-task-progress-tab
+category: ui
+description:
+  en: "Adds a Task Progress tab to the conversation view, next to the Context tab, with a progress bar for the session's todo list and completed items ordered by completion time."
+  zh: "在会话顶部“上下文”标签右侧增加“任务进度”标签页，用进度条显示已完成与未完成的任务，已完成项按完成顺序排列。"

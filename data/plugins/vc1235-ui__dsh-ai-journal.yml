@@ -1,0 +1,9 @@
+url: https://github.com/vc1235-ui/dsh-ai-journal
+name: vc1235-ui/dsh-ai-journal
+category: ui
+description:
+  en: Daily and weekly AI journals generated from your local DSH session logs, grouped by goal with deliverables and unfinished todos.
+  zh: 按天/按周汇总本机 DSH 会话：按目标分块的行动/结果/交付物与未完成待办，左侧栏图形化面板。
+icon: https://raw.githubusercontent.com/vc1235-ui/dsh-ai-journal/main/assets/icon-180.png
+# 可选：预构建 tarball（未发布 npm 时市场优先展示它，免去源码构建授权）
+tarball: https://github.com/vc1235-ui/dsh-ai-journal/releases/download/v0.1.2/dsh-ai-journal-0.1.2.tgz

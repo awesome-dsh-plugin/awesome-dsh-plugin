@@ -1,0 +1,7 @@
+url: https://github.com/kechao-sgp/dsh-frontend-design-skill
+name: kechao-sgp/dsh-frontend-design-skill
+category: skill
+description:
+  en: Registers a frontend-design skill that asks for a design plan and token system before writing code, and ships Chinese typography rules plus a measured no-screenshot self-check. It provides one skill and no tools, makes no network requests and writes no files.
+  zh: 注册一个前端设计技能：写码前先给设计计划与 token 系统，附中文排版规则和可实测的无截图自检。只提供一个技能，无工具、不联网、不写文件。
+icon: https://raw.githubusercontent.com/kechao-sgp/dsh-frontend-design-skill/main/assets/icon-180.png

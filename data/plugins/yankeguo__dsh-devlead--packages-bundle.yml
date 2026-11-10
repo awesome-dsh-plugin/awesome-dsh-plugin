@@ -1,0 +1,6 @@
+url: https://github.com/yankeguo/dsh-devlead/tree/main/packages/bundle
+name: yankeguo/dsh-devlead#bundle
+category: workflow
+description:
+  en: 'DevLead mode for DeepSeek Harness: a human-only switch turns one ordinary session into a lead with eight devlead_* tools to register workspaces and create, read, continue and watch other ordinary sessions; it dispatches work to those sessions, reviews the delivery and reports, is woken through a durable notification digest when a watched session''s turn settles, and can give a dispatched writing session its own Git worktree when the host provides the experimental worktree service.'
+  zh: 'DSH 的 DevLead 模式：人类专属开关把一个普通会话升级为 DevLead，获得 8 个 devlead_* 工具，用于注册工作区、创建/读取/继续/监督其他普通会话；它向这些会话派发任务、审阅交付并汇报，被监督会话的轮次结束时通过持久通知摘要将其唤醒，宿主提供实验性 worktree 服务时还可让被派发的写入会话使用独立 git worktree。'

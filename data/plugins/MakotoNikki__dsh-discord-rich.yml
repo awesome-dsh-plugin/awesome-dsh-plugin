@@ -1,0 +1,7 @@
+url: https://github.com/MakotoNikki/dsh-discord-rich
+name: MakotoNikki/dsh-discord-rich
+category: notify
+icon: https://raw.githubusercontent.com/MakotoNikki/dsh-discord-rich/main/assets/icon-1024.png
+description:
+  en: Shows the open DSH chat, working or idle status, timer and daily token count in Discord Rich Presence, with Russian, English and Chinese settings.
+  zh: 在 Discord Rich Presence 中显示当前打开的 DSH 聊天、工作或空闲状态、计时器和今日 Token 总数，设置页支持俄语、英语和中文。

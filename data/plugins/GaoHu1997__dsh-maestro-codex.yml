@@ -1,0 +1,6 @@
+url: https://github.com/GaoHu1997/dsh-maestro-codex
+name: GaoHu1997/dsh-maestro-codex
+category: workflow
+description:
+  en: 'Manage Claude Code, Codex and Grok CLIs inside dsh and dispatch tasks to them as headless subagents, with dsh models, skills and tools bridged into each task, resumable CLI subsessions, and a hierarchical task board in the right sidebar (the board tab requires the separate DSH-better-sidebar plugin; without it the tab is not registered).'
+  zh: '在 dsh 中管理 Claude Code / Codex / Grok CLI，并把任务派发给它们作为子智能体执行：dsh 的模型、技能与工具随任务桥接，CLI 子会话可回放续聊，右侧栏提供分层任务看板（看板 tab 需另装 DSH-better-sidebar 插件，未安装时不会注册）。'

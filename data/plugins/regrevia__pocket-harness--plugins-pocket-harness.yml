@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/pocket-harness/tree/main/plugins/pocket-harness
+name: regrevia/pocket-harness#pocket-harness
+category: voice
+description:
+  en: 'Pocket Harness: the phone side of DSH. Continue the same DSH session from your phone, with the same history, projects, goal, queue and pending questions, connected over your LAN, your own domain or a relay you run (no author-run server, no account). Needs the Android companion app (APK from the repo''s releases) paired by QR code; an optional pixel-whale desktop pet can talk and listen, and neural voice and local speech recognition are optional extras. Formerly dsh-pet-voice.'
+  zh: 'Pocket Harness：DSH 的手机端。在手机上接着用电脑里的同一份 DSH——同一条会话、历史、项目、目标、队列和待确认提问，可经局域网、自建域名或自建中转连接（不经作者服务器、无需账号）。需要配套的 Android App（仓库 Releases 里的 APK），扫码配对；可选的像素鲸鱼娘桌宠会听会说，神经语音与本机识别也是可选件。原名 dsh-pet-voice。'
+icon: https://raw.githubusercontent.com/regrevia/pocket-harness/main/assets/icon-180.png

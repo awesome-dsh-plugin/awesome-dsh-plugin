@@ -1,0 +1,6 @@
+url: https://github.com/Yyhy110421/dsh-human-step
+name: Yyhy110421/dsh-human-step
+category: workflow
+description:
+  en: 'Pauses a DSH task at steps that need a human, such as 2FA codes, QR scans, signatures or payments, and shows a native card with done, skip and cancel actions.'
+  zh: '人工步骤：在需要人做的步骤（验证码、扫码、签字、付款）弹出 DSH 原生卡片，用户点完成、跳过或取消后才继续。'

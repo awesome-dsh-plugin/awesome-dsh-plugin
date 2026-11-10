@@ -1,0 +1,7 @@
+url: https://github.com/AomiRaku/dsh-ui-alt
+name: AomiRaku/dsh-ui-alt
+category: ui
+icon: https://raw.githubusercontent.com/AomiRaku/dsh-ui-alt/main/assets/icon-512.png
+description:
+  en: 'A tidying pass over the stock UI that keeps its overall look: smaller radii, tighter spacing and a more orderly layout, for a calmer, more professional and more efficient interface. Most changes have their own switch in Settings.'
+  zh: '在保持原版 UI 大风格不变的情况下，进行减小圆角、紧凑化、秩序化、整洁化改进。使 UI 视觉更加冷静、专业、高效。多数改动可在设置中单独开关。'

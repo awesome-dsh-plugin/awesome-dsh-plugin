@@ -1,0 +1,8 @@
+url: https://github.com/Forget1672/dsh-serverchan-bot
+name: Forget1672/dsh-serverchan-bot
+category: notify
+description:
+  en: 'Two-way bridge to a Server酱³ Bot (not SendKey push): messages sent in the app drive a DSH session, question and approval cards can be answered from the phone or the web, and agent plus scheduled output is pushed back to the chat. Pairing is trust-on-first-use: while the allow list (allowChatIds) is empty, the first chat that messages the bot is trusted, so set allowChatIds to pin it to your own chat.'
+  zh: '与 Server酱³ Bot 的双向通道（不是 SendKey 单向推送）：在 App 里发消息即可驱动 DSH 会话，问题与批准卡片可在手机或网页任一端作答，Agent 与定时任务的输出再推回聊天。配对采用首次信任：allowChatIds 为空时，第一个给机器人发消息的聊天会被信任，请设置 allowChatIds 把它限定在你自己的聊天上。'
+icon: https://raw.githubusercontent.com/Forget1672/dsh-serverchan-bot/main/assets/icon-180.png
+tarball: https://github.com/Forget1672/dsh-serverchan-bot/releases/latest/download/dsh-serverchan-bot.tgz

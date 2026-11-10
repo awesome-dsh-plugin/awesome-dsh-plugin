@@ -1,0 +1,6 @@
+url: https://github.com/LizzzMax/dsh-tool-index
+name: LizzzMax/dsh-tool-index
+category: tools
+description:
+  en: DSH Lean Context indexes available tools locally and preselects a clear match or finds tools on demand.
+  zh: DSH Lean Context 为可用工具建立本地索引，明确命中时预选工具，其他情况按需搜索。

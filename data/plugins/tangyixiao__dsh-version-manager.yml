@@ -1,0 +1,8 @@
+url: https://github.com/tangyixiao/dsh-version-manager
+name: tangyixiao/dsh-version-manager
+category: market
+description:
+  en: Inspect plugins and Skills in the running DSH profile, preview updates, record verifiable snapshots and offer recovery only when replay evidence is available. Requires Node 22+ and DSH 0.2.2-rc.1 or a later declared-compatible host. Restoring a plugin version does not restore configuration, its complete dependency tree or agent presets.
+  zh: 在运行中的 DSH profile 中查看插件与 Skill，预览更新、记录可核验快照，并仅在具备回放证据时提供恢复。需 Node 22+ 与 DSH 0.2.2-rc.1 或声明兼容的后续宿主；恢复插件版本不等于恢复配置、完整依赖树或 agent 预设。
+icon: https://raw.githubusercontent.com/tangyixiao/dsh-version-manager/v0.1.4/assets/logo.webp
+tarball: https://github.com/tangyixiao/dsh-version-manager/releases/download/v0.1.4/dsh-version-manager-0.1.4.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/liufeicc/dsh-split-workspaces
+name: liufeicc/dsh-split-workspaces
+category: ui
+description:
+  en: "Tiles several workspaces side by side or stacked in the Web UI, one conversation per pane, with draggable splitters and pane swapping."
+  zh: "在 Web UI 主面板里把多个工作区并排或上下平铺，每个窗格一个会话，支持拖拽分隔条与交换窗格。"

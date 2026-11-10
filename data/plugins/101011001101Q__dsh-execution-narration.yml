@@ -1,0 +1,7 @@
+url: https://github.com/101011001101Q/dsh-execution-narration
+name: 101011001101Q/dsh-execution-narration
+category: ui
+description:
+  en: 'Translates the agent''s English execution narration into Simplified Chinese in place; the final answer, tool records and reasoning stay as they are, so the official reasoning-translation plugin keeps working alongside it. Whether a step is narration is decided by a render-time structural signal, not by English phrasing, and with no signal available it translates nothing automatically. Fenced code, inline code, URLs and file paths are masked before the request. Uses the host''s translator service (Bing by default, no API key).'
+  zh: '把 Agent 执行过程中的英文过程叙述原位翻译成简体中文；最终回答、工具记录与思考内容保持原样，因此官方思考翻译插件可同时启用。某一步是否属于过程叙述由渲染期结构信号判定，而非依据英文句式；拿不到该信号时不自动翻译。围栏代码、行内代码、URL 与文件路径在请求前打码。复用宿主的翻译服务（默认 Bing，无需 API Key）。'
+icon: https://raw.githubusercontent.com/101011001101Q/dsh-execution-narration/main/assets/icon-180.png

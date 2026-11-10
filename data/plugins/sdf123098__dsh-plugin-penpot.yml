@@ -1,0 +1,6 @@
+url: https://github.com/sdf123098/dsh-plugin-penpot
+name: sdf123098/dsh-plugin-penpot
+category: tools
+description:
+  en: "Connects Penpot to DSH across two independent channels with 9 tools: 5 MCP tools (execute_code, high_level_overview, api_info, export_shape, import_image), 2 browser-free REST tools (penpot_read and penpot_write to create files, pages and shapes or edit attributes without an open tab), plus penpot_status and penpot_control; supports official SaaS, local and self-hosted endpoints with auto-detection and config migration from DSH, Codex, Claude, Cursor, Gemini and .mcp.json, an isolated Chromium launcher, and a five-tab control panel."
+  zh: "把 Penpot 接进 DSH，提供两条独立通道与 9 个工具：5 个 MCP 工具（execute_code、high_level_overview、api_info、export_shape、import_image）、2 个免浏览器的 REST 读写工具（penpot_read 与 penpot_write，无需打开网页即可建文件、加页面、加图层与改属性），外加 penpot_status 与 penpot_control；支持官方托管、本地构建与自部署三档及从 DSH、Codex、Claude、Cursor、Gemini、.mcp.json 自动识别与迁移配置，附带独立 profile 的 Chromium 启动器与五标签页控制面板。"

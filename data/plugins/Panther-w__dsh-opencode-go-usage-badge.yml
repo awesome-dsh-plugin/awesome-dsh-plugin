@@ -1,0 +1,7 @@
+url: https://github.com/Panther-w/dsh-opencode-go-usage-badge
+name: Panther-w/dsh-opencode-go-usage-badge
+category: usage
+tarball: https://github.com/Panther-w/dsh-opencode-go-usage-badge/releases/download/v0.4.2/dsh-opencode-go-usage-badge-0.4.2.tgz
+description:
+  en: 'Sidebar badge for OpenCode Go quota windows, switching to the DeepSeek official balance for that model source. The OpenCode Go quota needs OPENCODE_GO_API_KEY (or an OpenCode Console login), and the DeepSeek balance needs DEEPSEEK_API_KEY configured in DSH.'
+  zh: '侧栏显示 OpenCode Go 套餐余量，切到 DeepSeek 官方模型时显示余额。OpenCode Go 套餐余量需要 OPENCODE_GO_API_KEY（或登录 OpenCode Console），DeepSeek 余额需要在 DSH 中配置 DEEPSEEK_API_KEY。'

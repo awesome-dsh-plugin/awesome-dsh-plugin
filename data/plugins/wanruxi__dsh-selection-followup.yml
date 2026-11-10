@@ -1,0 +1,7 @@
+url: https://github.com/wanruxi/dsh-selection-followup
+name: wanruxi/dsh-selection-followup
+category: ui
+description:
+  en: 'Select text in a conversation and quote it into the composer for a follow-up question. Uses the same package name as zzx-dear/dsh-selection-followup, so install only one of the two.'
+  zh: '在对话里选中文字，一键把选区作为引用块插进输入框，接着追问。与 zzx-dear/dsh-selection-followup 使用相同的包名，两者只能安装其一。'
+icon: https://raw.githubusercontent.com/wanruxi/dsh-selection-followup/main/assets/icon-180.png
