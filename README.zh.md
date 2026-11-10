@@ -683,10 +683,10 @@ dsh plugin --profile web add dshmarket
 - [Feizhaiqianqian/dsh-email-board](https://github.com/Feizhaiqianqian/dsh-email-board) — 只读的 DSH 未读邮件看板——把 dsh-email 里配置的各账号未读邮件按账号列成右侧栏卡片（发件人、主题、时间），按需手动刷新。
 - [FeiZhuNiU-INFJA/dsh-stock-ticker](https://github.com/FeiZhuNiU-INFJA/dsh-stock-ticker) — 一个悬浮的半透明行情小窗，实时显示上证指数、创业板指、科创50 与恒生科技的当前点位与涨跌幅。
 - [FelixJiashengFu/dsh-recent-deliverables](https://github.com/FelixJiashengFu/dsh-recent-deliverables) — DSH Web 的可拖动最近成品面板，合并已声明交付的文件与工作区最近修改的文件，支持文件名搜索、类型筛选、PDF/HTML/图片/文本内嵌预览，以及用桌面应用打开或在文件管理器中定位。
-- [feng-yifan/dsh-plugins#dsh-ask-highlight](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-ask-highlight) — 提问块高亮：把对话里已答复的「提问 n/n 已回答」工具块用柔和卡片样式凸显；等待中的提问块与其它工具块保持原样；可选择让提问块默认展开，设置页可配。
+- [feng-yifan/dsh-plugins#dsh-ask-highlight](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-ask-highlight) — 提问块高亮：把对话里已答复的「提问 n/n 已回答」工具块用柔和品牌色卡片凸显，明暗主题自适应；等待中的提问块与其它工具块保持原样。设置页可开关「高亮已答复提问块」与「默认展开」。
 - [feng-yifan/dsh-plugins#dsh-at-enhancement](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-at-enhancement) — @ 文件引用增强：扩展 Web GUI 的 `@` 补全，使其可逐级浏览并引用工作区外的任意绝对路径文件 / 目录（`@/`、`@~/`），选中后插入绝对路径（含空格时自动加引号）供模型读取。可在「设置 → 插件」中开关，关闭后与原生补全一致。
-- [feng-yifan/dsh-plugins#dsh-pwa-icon](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-pwa-icon) — PWA 图标：把 Web GUI 安装/添加到桌面时使用的图标（以及 manifest 应用名）换成自定义内容，包内自带默认图标集，也可配置自己的图片。
-- [feng-yifan/dsh-plugins#dsh-vertical-layout](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-vertical-layout) — 竖屏布局：电脑竖屏窗口下，导航占左列整高，文件/终端面板移到对话区上方，中间的分隔线可拖拽调整高度；手机/平板不受影响。
+- [feng-yifan/dsh-plugins#dsh-pwa-icon](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-pwa-icon) — PWA 图标：把 Web GUI 安装 / 添加到桌面时使用的图标与应用名换成自定义内容，覆盖桌面浏览器与 iOS 主屏幕。包内自带开箱即用的图标集，也支持换成自己的图片并覆盖 manifest 字段。
+- [feng-yifan/dsh-plugins#dsh-vertical-layout](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-vertical-layout) — 竖屏布局（仅电脑窗口）：浏览器窗口为竖屏时，左侧导航占整列，文件 / 终端面板移到对话区上方（右上），中间分隔线可拖拽调整高度（初始高度可配）。手机 / 平板不受影响。
 - [fengb3/dsh-session-icons](https://github.com/fengb3/dsh-session-icons) — 侧边栏会话标题图标：标题生成时用同一路由的辅助模型调用画一枚 24×24 单色 SVG 隐喻图标，显示在每行标题左侧，带磁盘缓存。
 - [fengMax1997/dsh-line-select](https://github.com/fengMax1997/dsh-line-select) — 行选区：浏览工作区文件、带行号预览代码、可视化选中行范围，一键把 `@path:start-end` 引用写入输入框，agent 发送时自动收到所选行原文，精准修改指定行。
 - [fengzhaoy/dsh-web-ide](https://github.com/fengzhaoy/dsh-web-ide) — dsh Web 客户端里的 IDE 标签页：Dark Modern 主题的 Monaco 编辑器，配文件树、Git 源代码管理（暂存/提交/推送）、xterm 集成终端与 ripgrep 全工作区搜索，作为会话视图标签打开。
@@ -4415,6 +4415,7 @@ dsh plugin --profile web add dshmarket
 - [TiFu799/dsh-wake-up](https://github.com/TiFu799/dsh-wake-up) — 按需叫醒休眠的 DSH 会话：当前没活着的会话会带着它上次用的 provider/model 路由从磁盘 resume 回来，让 QQ 通道、定时任务、webhook、别的插件这类外部集成能正常投递，而不是撞上「那间会话现在没活着」。提供 HTTP 端点、wake_session 工具和 ctx.wakeUp 服务；resume 只把历史读回内存，本身不消耗模型请求。
 - [TiJun-Prime/dsh-turn-delete](https://github.com/TiJun-Prime/dsh-turn-delete) — 从 DSH 会话中删除一个已结束的轮次而不删除会话本身——最后一条助手回复旁的垃圾桶按钮会把该轮的提问、这条回复与工具记录从对话界面和模型上下文中移除，而 Session id、标题、之后的轮次与只追加日志保持不变；删除以持久 tombstone 记录，刷新后依然生效。
 - [tinyblckc0000al/dsh-deepworker](https://github.com/tinyblckc0000al/dsh-deepworker) — DSH 会话工作台：轮次操作、引用出处、本地笔记与摘要、会话内查找、专注锁和多工作区命令按钮。
+- [TLEWA/dsh-fastload](https://github.com/TLEWA/dsh-fastload) — 把长会话首次打开时的历史页缩小到默认最多 100 条消息、尽量保留最新 2 个 turn；缩小的记录短于视口时，Web 端在后台调用内置「加载更早」把视口补齐。
 - [TLEWA/dsh-if](https://github.com/TLEWA/dsh-if) — 为 DSH 增加 /if 斜杠命令：第一行是条件，其余行是指令。由继承当前会话工具、system prompt 与消息历史的 fork 子代理判断条件并回答 YES 或 NO，只有 YES 才把指令作为一条普通用户消息发给主 agent，NO 则什么都不发送；条件、判断用的 prompt 与判断结果都不会写进主会话。模型工作时命令与普通消息一起排队，可在队列面板里编辑、删除、插话，设置里可切回 0.2.x 的后台模式。判断以只读方式运行，宿主没有可继承上下文的 fork provider 时回退为一次性模型调用加纯文本记录。适配 DSH 0.2.1-rc.5 及以上（已在 0.2.1-rc.5 与 0.2.2-rc.1 验证），需 Node.js 20.3 或更新版本。
 - [tmeeli/dsh-auto-goal-resume](https://github.com/tmeeli/dsh-auto-goal-resume) — DSH 重启后自动续跑有活跃目标的会话,无需人工说「继续」。
 - [tmpdot/dsh-checkpoint-diff](https://github.com/tmpdot/dsh-checkpoint-diff) — 把 dsh-checkpoint-rewind 产生的检查点变成时间线时间节点，任意两节点之间逐文件行级 diff；可从会话日志重放 trace 区间差异（无需快照生产者）；支持预览式工作区回滚与一次性撤销。提供 /diff、/rollback 命令、JSON HTTP API 与 GUI 面板。
@@ -5354,7 +5355,7 @@ dsh plugin --profile web add dshmarket
 - [fanyingnie2163663/dsh-whale-care](https://github.com/fanyingnie2163663/dsh-whale-care) — 天气关心：把预报变成一句能直接发出去的话——按体感温度、湿度、空气质量给穿衣与带伞建议，并照顾对方怕冷怕热、骑车还是开车。另有每日主动关心（可开关）、极端天气预警与提醒，在 agent 醒来时评估，可由 qq-bridge 这类宿主定时唤醒；偏好只存本机。
 - [fashionmascherine-svg/dsh-polymarket-knowhow](https://github.com/fashionmascherine-svg/dsh-polymarket-knowhow) — 面向 DeepSeek Harness 与 Claude Code 的 Polymarket 工具包：Gamma/CLOB/Data-API 行情工具（DSH 内 31 个模型工具，MCP 只暴露只读子集）、需显式开启的带鉴权交易工具、WebSocket 推流服务，以及内置的 Polymarket 知识技能。
 - [feigo313/dsh-subagent-omp](https://github.com/feigo313/dsh-subagent-omp) — DeepSeek Harness 的一次性子代理提供器——每次委派都会启动本地 `omp --print --mode json` CLI，沿用用户自己的 ~/.omp 配置与模型绑定运行，且委派串行执行，单会话本地引擎不会被并发压垮。需本机已安装 OMP（oh-my-pi）CLI，并要求 DSH 0.2.2-rc.1。
-- [feng-yifan/dsh-plugins#dsh-enter-plan-mode](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-enter-plan-mode) — 进入计划模式工具：给模型一个可调用的 `dsh_enter_plan_mode_enter_plan_mode`，把当前会话切进计划模式，与内置的 `exit_plan_mode` 配对，形成“先规划、后评审”的闭环。
+- [feng-yifan/dsh-plugins#dsh-enter-plan-mode](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-enter-plan-mode) — 进入计划模式工具：给模型一个可调用的 `dsh_enter_plan_mode_enter_plan_mode`，把当前会话切进计划模式先做非破坏性探索，再配合内置的 `exit_plan_mode` 提交方案评审。无设置项。
 - [fengxiforcy/dsh-geo-toolkit](https://github.com/fengxiforcy/dsh-geo-toolkit) — 面向规划/测绘的 GIS/CAD 分析工具：读 DXF、DWG 转 DXF、按图层/文字查实体、出带版式的分析图（SVG/PNG/JPG/PDF，PSD 仅 Windows x64），并对 SHP/GeoJSON/KML 做按类汇总、缓冲与叠加——解析用纯 JS，不依赖 GDAL。
 - [fenshal/dsh-migrator](https://github.com/fenshal/dsh-migrator) — 列出当前 DSH 配置里装过的全部插件，勾选后导出成「迁移单」文本，或直接打包成自包含 zip（本地插件源码 + 恢复脚本），新电脑上跑一次脚本即可还原。恢复脚本是 PowerShell；还原后需重启 DSH，插件页报待安装时还需 pnpm install。
 - [fffgfffff/cike-taskboard](https://github.com/fffgfffff/cike-taskboard) — DSH 本地任务排程：今天的自动任务从当前时间开始排，长任务自动绕午休分段，实时高亮当前任务；任务开始和下个任务前弹窗提醒；支持未来 7 天日历与可导出/导入的虚拟时间轴。
@@ -9771,7 +9772,7 @@ dsh plugin --profile web add dshmarket
 - [evanfang0054/dsh-tailscale-console](https://github.com/evanfang0054/dsh-tailscale-console) — Tailscale 远程访问运维面板：健康检查、HTTPS 入口（tailscale serve）开关、macOS 代理绕过、中继服务器运维与 ACL 片段生成。
 - [EviMing/dsh-qq-shell-commands](https://github.com/EviMing/dsh-qq-shell-commands) — 目的是能远程运行 Shell 命令，而不是让 DSH 运行，适用于需要重复工作或托管行为但不能直接给权限到 DSH 的情况。原理是通过 NapCat 进程与 QQ 进行交互，当 QQ 发送特定消息，判断是否完全相等与哪个键的字符串，并执行对应的 Shell 命令。执行 Shell="执行 Shell 命令：\n文本"。添加新的键值对="增加 Shell 命令：\n{"文本": \["Shell 命令", "使用哪个 Shell (例如 cmd，或 PowerShell) 运行 Shell 命令"]}"，最终会被拼接为 "Shell 命令" 的格式被系统运行，依赖前置插件 "EviMing/dsh-napcat-tools"需先安装 EviMing/dsh-napcat-tools，并准备 NapCat 与 Python 3.10+。
 - [fanrj3/dsh-presence](https://github.com/fanrj3/dsh-presence) — 像操作本地一样使用 ssh config 中的任意远程机器：持久连接、原生文件编辑、搜索、命令执行与终端，远端无需安装任何东西。
-- [feng-yifan/dsh-plugins#dsh-enhancement](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-enhancement) — DSH 增强套件：为 Web GUI 提供独立的密码访问网关（可选 HTTPS，适合局域网/远程访问），整合 PWA 安装与图标、桌面通知与 Web Push，并可把当前会话的 session id 注入第三方 API 请求头，在设置页统一配置。
+- [feng-yifan/dsh-plugins#dsh-enhancement](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-enhancement) — DSH 增强套件：为 Web GUI 提供独立的密码访问网关（可选 HTTPS，支持上传证书或由插件自签发本地 CA），无需 `?token=` 即可在局域网 / 远程登录；整合 PWA 安装与应用名 / 图标、桌面通知与手机 Web Push（任务完成、等待审批等事件），并可选地把当前会话的 session id 注入第三方 OpenAI 兼容路由的请求头，均在设置页统一配置。
 - [Firefox2100/dsh-proxy-trust](https://github.com/Firefox2100/dsh-proxy-trust) — 让 DSH Web UI 可在带身份验证的反向代理后运行，并分别控制受信任主机、跳过登录、跨站导航、本地页面信任和可选的网络监听器。
 - [flyhigao/dsh-produced-file-paths](https://github.com/flyhigao/dsh-produced-file-paths) — 在远程 Web 中显示并复制 DSH 每轮产出文件的绝对路径。
 - [FORGE-131/dsh-lan-pair](https://github.com/FORGE-131/dsh-lan-pair) — 手机接入 DSH Web 界面：内网配对 + 通过自备隧道命令（如 cloudflared）或固定公网地址的远程访问，自带局域网到隧道的自动降级与 dshlanpair:// 深链接；手机端需侧载仓库自带的 Android App（APK，需 Android 8+）。
