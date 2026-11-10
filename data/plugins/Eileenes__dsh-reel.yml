@@ -2,5 +2,5 @@ url: https://github.com/Eileenes/dsh-reel
 name: Eileenes/dsh-reel
 category: tools
 description:
-  en: A 插件宣传台 panel for DSH. Type a plugin name and generate a 28-second real-UI promo film — actual interface screenshots, the real install flow and four feature pages — plus a 1920×1080 poster; renders locally with the V0.1 Onetake/ffmpeg pipeline or the bundled Remotion template (Node.js 22+, Chrome).
-  zh: DSH 插件宣传台：输入插件名称，用 V0.1 真机管线生成 28 秒插件宣传片（真实界面截图、真实安装流程、四个功能页）与 1920×1080 封面；面板提供「安利墙 + 生成台」、实时阶段进度与终止/重渲染，本地经 Onetake/ffmpeg 渲染，也可用内置 Remotion 模板（需 Node.js 22+ 与 Chrome）。
+  en: 'Promo studio panel for DSH plugins: type a plugin name, match it to a case file and render a promo film and poster locally. The bundled Remotion template pipeline works from the npm package; the real-UI (V0.1) pipeline also needs a local Onetake runtime and the repository checkout, otherwise the panel reports the environment as not ready. The DSH tools reel_scan, reel_plan and reel_render are still scaffolding. Needs Node.js 22+ and Chrome or Chromium.'
+  zh: 'DSH 插件宣传台面板：输入插件名称，匹配案例文件，在本机渲染宣传片与海报。npm 包内置的 Remotion 模板管线可直接用；真机界面（V0.1）管线还需要本机 Onetake 运行时和仓库源码，否则面板提示环境未就绪。DSH 工具 reel_scan、reel_plan、reel_render 仍是脚手架。需要 Node.js 22+ 与 Chrome 或 Chromium。'

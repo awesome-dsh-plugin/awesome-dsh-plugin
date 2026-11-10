@@ -2,5 +2,5 @@ url: https://github.com/EnderDAG/dsh-quote-archive
 name: EnderDAG/dsh-quote-archive
 category: tools
 description:
-  en: Archive, search, and recall group-chat quotes locally, with an AstrBot-style management page and a SnowLuma / OneBot v11 QQ channel.
-  zh: 本地收藏、检索并随机回放群聊语录，自带管理页，可通过 SnowLuma / OneBot v11 通道采集与回发。
+  en: 'Archive, search, and recall group-chat quotes locally, with an AstrBot-style management page and a SnowLuma / OneBot v11 QQ channel. Needs Node.js 22.13+; QQ sync needs a running SnowLuma / OneBot v11 HTTP gateway, whose address and access token the plugin looks up in local SnowLuma and qq-bridge config files.'
+  zh: '本地收藏、检索并随机回放群聊语录，自带管理页，可通过 SnowLuma / OneBot v11 通道采集与回发。需要 Node.js 22.13+；QQ 同步需要运行中的 SnowLuma / OneBot v11 HTTP 网关，插件会从本机 SnowLuma 与 qq-bridge 的配置文件里查找网关地址和访问令牌。'

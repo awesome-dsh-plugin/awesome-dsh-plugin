@@ -2,5 +2,5 @@ url: https://github.com/jinferth/dsh-obsidian-vault
 name: jinferth/dsh-obsidian-vault
 category: tools
 description:
-  en: 'Obsidian vault tools: 13 tools for listing, reading and searching notes, editing by line range, frontmatter CRUD, tag queries, and renaming notes while rewriting the wikilinks that point at them; writes are atomic and keep CRLF and BOM.'
-  zh: 'Obsidian 笔记库工具集：13 个工具，覆盖列出/读取/检索笔记、按行号片段编辑、frontmatter 读写、标签查询，以及重命名笔记时自动改写指向它的双链；写入为原子操作并保留 CRLF 与 BOM。'
+  en: 'Obsidian vault tools: 13 tools for listing, reading and searching notes, creating, appending and editing by line range, deleting to the vault''s .trash folder, frontmatter CRUD, tag queries, image insertion, batch operations, and renaming notes while rewriting the wikilinks that point at them; writes are atomic and keep CRLF and BOM.'
+  zh: 'Obsidian 笔记库工具集：13 个工具，覆盖列出/读取/检索笔记、新建/追加/按行号片段编辑、删除（移入笔记库的 .trash 文件夹）、frontmatter 读写、标签查询、插入图片、批量操作，以及重命名笔记时自动改写指向它的双链；写入为原子操作并保留 CRLF 与 BOM。'

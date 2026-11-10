@@ -2,5 +2,5 @@ url: https://github.com/jinghuaihuaxiang-star/dsh-superagent-desktop
 name: jinghuaihuaxiang-star/dsh-superagent-desktop
 category: workflow
 description:
-  en: 'Desktop bundle of the dsh-superagent orchestrator: it turns GitHub issues or Feishu tickets into tasks executed by isolated DSH sessions, with a panel for sources, setup, prompts and run history.'
-  zh: 'dsh-superagent 编排器的桌面 bundle：把 GitHub issue 或飞书工单变成由独立 DSH 会话执行的任务，面板里管理来源、部署、提示词与运行记录。'
+  en: 'Desktop-bundle fork of the DeepSeek Harness team''s dsh-superagent research prototype: turns requests from allowed people on GitHub issues or Feishu into tickets worked by isolated DSH sessions, with a panel for sources, setup, prompts and run history. By default only people on a source''s allowed list can start work. Needs git 2.32+ and the gh CLI for one GitHub repository; Feishu is optional and needs lark-cli.'
+  zh: 'DeepSeek Harness 团队 dsh-superagent 研究原型的桌面 bundle 分支：把名单内的人在 GitHub issue 或飞书里提出的请求变成工单，交给相互隔离的 DSH 会话处理，面板里管理来源、部署、提示词与运行记录。默认只有来源名单里的人能发起工作。GitHub 来源需要 git 2.32+ 与 gh CLI；飞书可选，需要 lark-cli。'
