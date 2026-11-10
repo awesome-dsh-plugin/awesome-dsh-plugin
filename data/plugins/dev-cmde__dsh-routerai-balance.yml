@@ -1,0 +1,5 @@
+url: https://github.com/dev-cmde/dsh-routerai-balance
+name: dev-cmde/dsh-routerai-balance
+category: usage
+description:
+  en: 'Shows the RouterAI credit balance and the spend since the session started in the sidebar footer. Requires a RouterAI API key (`ROUTERAI_API_KEY`) and a model provider whose config key is `routerai`; without them it shows an em dash.'

@@ -1,0 +1,5 @@
+url: https://github.com/dev-cmde/dsh-routerai-prices
+name: dev-cmde/dsh-routerai-prices
+category: model
+description:
+  en: 'Lists RouterAI prompt, completion and cache-read prices per million tokens for the models configured in this profile, highlighting the active one. Requires a model provider whose config key is `routerai`; without it the table shows no data.'
