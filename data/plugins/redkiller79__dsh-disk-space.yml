@@ -2,5 +2,5 @@ url: https://github.com/redkiller79/dsh-disk-space
 name: redkiller79/dsh-disk-space
 category: tools
 description:
-  en: Read-only disk usage scan and interactive HTML cleanup report for Windows and macOS.
-  zh: 只读扫描 Windows 与 macOS 磁盘占用，生成带三级清理建议的交互式 HTML 报告。
+  en: 'Read-only disk usage scan and interactive HTML cleanup report for Windows and macOS. Needs Python 3 on the machine; the bundled scan scripts run offline as child processes.'
+  zh: '只读扫描 Windows 与 macOS 磁盘占用，生成带三级清理建议的交互式 HTML 报告。需要本机装有 Python 3；包内的扫描脚本以子进程方式离线运行。'

@@ -2,5 +2,5 @@ url: https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-at-enhance
 name: feng-yifan/dsh-plugins#dsh-at-enhancement
 category: ui
 description:
-  en: 'External @ file references: extends the Web GUI `@` completion so it can browse and reference absolute-path files and directories outside the workspace, level by level (`@/`, `@~/`), inserting the absolute path (quoted when it contains spaces) for the model to read. Toggleable in Settings; when off, completion matches native behaviour.'
-  zh: '@ 文件引用增强：扩展 Web GUI 的 `@` 补全，使其可逐级浏览并引用工作区外的任意绝对路径文件 / 目录（`@/`、`@~/`），选中后插入绝对路径（含空格时自动加引号）供模型读取。可在「设置 → 插件」中开关，关闭后与原生补全一致。'
+  en: 'External @ file references: extends the Web GUI `@` completion so it can browse and reference absolute-path files and directories outside the workspace, level by level (`@/`, `@~/`), inserting the absolute path (quoted when it contains spaces) for the model to read. Toggleable in Settings; when off, completion matches native behaviour. On by default, and the model''s reads of those paths are not limited by the sandbox; POSIX-style absolute paths only (no Windows drive letters).'
+  zh: '@ 文件引用增强：扩展 Web GUI 的 `@` 补全，使其可逐级浏览并引用工作区外的任意绝对路径文件 / 目录（`@/`、`@~/`），选中后插入绝对路径（含空格时自动加引号）供模型读取。可在「设置 → 插件」中开关，关闭后与原生补全一致。默认开启，模型对这些路径的读取不受沙箱限制；只支持 POSIX 风格的绝对路径（不支持 Windows 盘符）。'

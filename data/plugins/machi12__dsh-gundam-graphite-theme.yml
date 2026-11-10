@@ -2,7 +2,7 @@ url: https://github.com/machi12/dsh-gundam-graphite-theme
 name: machi12/dsh-gundam-graphite-theme
 category: theme
 description:
-  en: Dark mecha wallpaper theme with graphite glass panels, drifting particles and a pointer-following spring mesh, with 16 adjustable settings and a one-switch return to the native look.
-  zh: 黑灰机甲壁纸主题：石墨玻璃面板、流动粒子与鼠标弹性网络，内置 16 项可调设置，一个开关即可恢复原生外观。
+  en: 'Dark mecha wallpaper theme with graphite glass panels, drifting particles and a pointer-following spring mesh, with 16 adjustable settings and a one-switch return to the native look. The bundled Gundam wallpaper is not covered by the MIT license.'
+  zh: '黑灰机甲壁纸主题：石墨玻璃面板、流动粒子与鼠标弹性网络，内置 16 项可调设置，一个开关即可恢复原生外观。内置的高达壁纸不在 MIT 授权范围内。'
 icon: https://raw.githubusercontent.com/machi12/dsh-gundam-graphite-theme/main/assets/icon-180.png
 tarball: https://github.com/machi12/dsh-gundam-graphite-theme/releases/latest/download/dsh-gundam-graphite-theme.tgz

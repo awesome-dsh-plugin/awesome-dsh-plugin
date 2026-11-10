@@ -2,6 +2,6 @@ url: https://github.com/fxdfx/dsh-skill-quickpick
 name: fxdfx/dsh-skill-quickpick
 category: skill
 description:
-  en: "Skill quick-pick panel for the composer: lists the session's skills by source, inserts /name into the draft without sending it, and can disable, uninstall or track usage per skill."
-  zh: 输入框技能快捷面板：按来源列出当前会话的技能，把 /技能名 插入草稿（绝不自动发送），并可逐技能禁用、卸载与统计使用次数。
+  en: 'Skill quick-pick panel for the composer: lists the session''s skills by source, inserts /name into the draft without sending it, and can disable, uninstall or track usage per skill. Disabling skills (rewrites SKILL.md), uninstalling them (moves the folder to a trash), usage statistics (reads local session logs) and model translation of skill names are all off by default and switched on one by one in the panel settings.'
+  zh: '输入框技能快捷面板：按来源列出当前会话的技能，把 /技能名 插入草稿（绝不自动发送），并可逐技能禁用、卸载与统计使用次数。禁用技能（会改写 SKILL.md）、卸载技能（把目录移进回收站）、使用统计（读取本机会话日志）和用模型翻译技能名都默认关闭，要在面板设置里逐项开启。'
 icon: https://raw.githubusercontent.com/fxdfx/dsh-skill-quickpick/main/assets/icon.png

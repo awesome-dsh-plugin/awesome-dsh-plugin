@@ -2,5 +2,5 @@ url: https://github.com/Qiao-Fang/dsh-chinese-thinking-mode
 name: Qiao-Fang/dsh-chinese-thinking-mode
 category: agi
 description:
-  en: 'Delivers one required user-role runtime context that makes the agent reason in Simplified Chinese and keep a whale-loli in-thinking persona (calls itself 本鱼, lazy-arrogant tone) in both reasoning and the final reply, while proper nouns, identifiers, paths, commands, URLs and error text stay verbatim; persona, extra proper nouns and context order are configurable.'
-  zh: '通过一条 required 的 user-role 运行时上下文，让 agent 的深度思考使用简体中文，并在思考与最终回复中保持「鲸类萝莉」人设（自称本鱼、慵懒傲娇）；专用名词、代码标识符、路径、命令、URL 与报错保持原文；人设、附加名词与上下文顺序可配置。'
+  en: 'Delivers one required user-role runtime context that makes the agent reason in Simplified Chinese and keep a whale-loli in-thinking persona (calls itself 本鱼, lazy-arrogant tone) in both reasoning and the final reply, while proper nouns, identifiers, paths, commands, URLs and error text stay verbatim; persona, extra proper nouns and context order are configurable. Enabled by default for every agent in the profile, subagents included.'
+  zh: '通过一条 required 的 user-role 运行时上下文，让 agent 的深度思考使用简体中文，并在思考与最终回复中保持「鲸类萝莉」人设（自称本鱼、慵懒傲娇）；专用名词、代码标识符、路径、命令、URL 与报错保持原文；人设、附加名词与上下文顺序可配置。默认对该 profile 里的所有 agent（含子代理）生效。'

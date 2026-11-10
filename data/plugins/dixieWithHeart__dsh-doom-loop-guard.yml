@@ -2,5 +2,5 @@ url: https://github.com/dixieWithHeart/dsh-doom-loop-guard
 name: dixieWithHeart/dsh-doom-loop-guard
 category: tools
 description:
-  en: Detects repetitive loops in an agent's reasoning output and records, nudges, or cuts them, with a history report.
-  zh: 检测 Agent 推理输出中的重复循环，命中时记录、提醒或截断，并生成历史报告。
+  en: 'Detects repetitive loops in an agent''s reasoning output and records, nudges, or cuts them, with a history report. Defaults to a nudge (a reminder injected into the next request); cutting and auto-resuming is opt-in, and should not be combined with another plugin''s cutting such as dsh-loop-rescue. Needs DSH 0.2.1+ and Node.js 22.15+.'
+  zh: '检测 Agent 推理输出中的重复循环，命中时记录、提醒或截断，并生成历史报告。默认只是提醒（向下一次请求注入一条提示）；截断并自动续跑需手动开启，且不要和 dsh-loop-rescue 之类的截断同时开。需要 DSH 0.2.1+ 与 Node.js 22.15+。'

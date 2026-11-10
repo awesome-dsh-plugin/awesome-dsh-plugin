@@ -2,5 +2,5 @@ url: https://github.com/yhPrime/dsh-Engram
 name: yhPrime/dsh-Engram
 category: memory
 description:
-  en: 'Experience and skill engine with a sidebar console and exp_record / exp_recall / exp_feedback / exp_consolidate / exp_type tools, stored in a local JSON file.'
-  zh: '经验与技能引擎：左侧栏「经验库」控制台，注册 exp_record / exp_recall / exp_feedback / exp_consolidate / exp_type 五个工具，数据存本地 JSON 文件。'
+  en: 'Experience and skill engine with a sidebar console and exp_record / exp_recall / exp_feedback / exp_consolidate / exp_type tools, stored in a local JSON file. Optional Git backup (off until you configure a remote) pushes the library to a remote you choose; GitHub sign-in uses a device code or a token kept in local settings.'
+  zh: '经验与技能引擎：左侧栏「经验库」控制台，注册 exp_record / exp_recall / exp_feedback / exp_consolidate / exp_type 五个工具，数据存本地 JSON 文件。可选的 Git 备份（配置远端前不启用）会把经验库推送到你指定的远端；GitHub 登录用设备码，或使用存在本机设置里的 token。'

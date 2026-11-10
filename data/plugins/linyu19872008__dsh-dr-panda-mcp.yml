@@ -2,6 +2,6 @@ url: https://github.com/linyu19872008/dsh-dr-panda-mcp
 name: linyu19872008/dsh-dr-panda-mcp
 category: tools
 description:
-  en: Bridges a running DrPanda MCP service into DeepSeek Harness over Streamable HTTP for read-only production troubleshooting.
-  zh: 通过 Streamable HTTP 将已部署的 DrPanda MCP 只读排查服务桥接入 DeepSeek Harness。
+  en: 'Bridges a running DrPanda MCP service into DeepSeek Harness over Streamable HTTP for read-only production troubleshooting. Needs your own DrPanda MCP service and its Bearer token (DR_PANDA_MCP_URL, DR_PANDA_MCP_TOKEN).'
+  zh: '通过 Streamable HTTP 将已部署的 DrPanda MCP 只读排查服务桥接入 DeepSeek Harness。需要你自己部署的 DrPanda MCP 服务及其 Bearer token（DR_PANDA_MCP_URL、DR_PANDA_MCP_TOKEN）。'
 tarball: https://github.com/linyu19872008/dsh-dr-panda-mcp/releases/download/v0.1.0/dsh-dr-panda-mcp-0.1.0.tgz
