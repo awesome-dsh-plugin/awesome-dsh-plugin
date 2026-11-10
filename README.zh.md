@@ -1069,6 +1069,7 @@ dsh plugin --profile web add dshmarket
 - [liushimu/dsh-workspace-detached](https://github.com/liushimu/dsh-workspace-detached) — Windows x64 预览版：将工作区与会话导航分离到独立的 .NET Framework 4.6.2+/WebView2 Evergreen 窗口，支持分组层级、总览与聚焦模式、逻辑拖放、活动或手动排序，以及可调整高度的聚焦预览区；不修改 DSH Core，不运行时依赖 Better Workspace。衍生自 KannaKuron/dsh-better-workspace，不能与上游同装。
 - [liushQAQ/dsh-prompt-optimizer](https://github.com/liushQAQ/dsh-prompt-optimizer) — 提示词智能优化与思考强度动态自适应插件，支持会话输入框胶囊控制条、DSH已配置/自定义第三方双模型来源、一键撤销与重新优化及原生配置面板。
 - [liushuchang-2012/dsh-boot-splash](https://github.com/liushuchang-2012/dsh-boot-splash) — 网页界面的启动动画：页面加载时蓝鲸由下往上被墨色淹没成黑鲸，随后左移、从身后拉出 | deepseek HARNESS 字标，再把窗口交给应用。
+- [liuyifeng-code/dsh-read-zoom](https://github.com/liuyifeng-code/dsh-read-zoom) — 在每条回答的操作行（用量图标左边）常驻一个放大按钮，点开进入两栏阅读视图：左栏列出本会话全部轮次（未加载的点了会自动补载）并带输入框（只填入不自动发送），右栏按 80%–300% 缩放显示选中的提问与回答，并对渲染失败或超宽的公式做降级与自适应，适合看数学、物理、化学长文；面板不做整屏模糊，滚动与输入不拖慢主线程；打开/关闭有轻微淡入淡出过渡，可用 Alt+Z / Alt+E 开关（焦点在输入框里也生效）；克隆回答时剥掉宿主布局类并展开隐藏/透明陷阱，回答不会出现「有字数却看不见」；被截断的轮次会明确标注「输出被截断，无回答」。
 - [liuzwZYW/dsh-pwa-ui](https://github.com/liuzwZYW/dsh-pwa-ui) — 通过 Window Controls Overlay 让已安装的 dsh Web 应用拥有原生观感的窗口标题栏——清单路由带 display_override 返回，应用自身的侧边栏品牌行与会话 header 成为拖拽区，应用自身右侧控件自动让开浏览器标题栏 chrome。
 - [liwangzimo/dsh-calendar-diary](https://github.com/liwangzimo/dsh-calendar-diary) — DSH 侧边栏里的纯记事本日历：周一起始的 70 天网格，格子里直接显示当天内容；每天一条，写进你自己指定的 .xlsx，沿用 DesktopCal 两列格式（Excel 日期序列号 + 自由文本，新日期在前）。点某天即打开该日编辑框；导入导出走同一格式，导入先预览，冲突可选保留、覆盖、拼接或跳过。
 - [liweidong1722/dsh-work-list](https://github.com/liweidong1722/dsh-work-list) — 本地优先的 DSH Web 工作清单，支持富文本笔记、分类、折叠、拖拽排序、搜索、JSON 导入导出和可还原回收站。
@@ -1362,6 +1363,7 @@ dsh plugin --profile web add dshmarket
 - [ph4310822/dsh-edex-ui#bundle](https://github.com/ph4310822/dsh-edex-ui/tree/main/packages/bundle) — 在 DSH Web 界面上叠加 eDEX-UI 风格外壳：左侧系统遥测栏（含每核 CPU 迷你趋势图）、右侧 encom-globe 世界地图与上下行流量图、左下文件系统浏览器（带文件预览），以及跟随当前工作区的终端风格输入框。
 - [Phant0Meow/dsh-meow-smooth](https://github.com/Phant0Meow/dsh-meow-smooth) — 手机优先的 DSH 前端体验优化：输入框自动折叠、手机回车换行、侧边栏/顶部栏/设置页压缩、禁缩放回弹，以及审批/提问/任务完成通知（页面卡片、Web Push、webhook）；零 dsh 本体改动。
 - [Phoeky/dsh-refresh-plugin](https://github.com/Phoeky/dsh-refresh-plugin) — 为 DeepSeek Harness 桌面 Web UI 补上 F5 / Ctrl+R 页面刷新功能（生产版默认没有刷新菜单项与裸 F5 快捷键）。通过客户端捕获阶段按键监听绑定软刷新（F5、Ctrl+R）与防缓存硬刷新（F5 加修饰键、Ctrl+Shift+R，附加 _dsh_refresh 时间戳）。
+- [DliDli](https://github.com/phoenixyun/dsh-plugin-dlidl) — 把大模型的流式输出做成两种可切换的覆盖层：直播模式是右下角聊天时间线（底部对齐、逐条淡出、可调停留时间），弹幕模式是 B 站式全屏飞行弹幕（速度/轨道数可调）；支持内容过滤，并在编辑文件时实时播报「修改文件/新增类名」。
 - [Physicolor/dsh-lifeline](https://github.com/Physicolor/dsh-lifeline) — DeepSeek Harness 右侧消息导航轨道：逐条消息刻度、悬浮预览抽屉、平滑跳转、星标回看、实时平移动画（可打断）、完整会话索引与虚拟化、面板动态避让、官方 --dsw-* token 样式。
 - [Physicolor/dsh-ui-harmonizer](https://github.com/Physicolor/dsh-ui-harmonizer) — DeepSeek Harness UI 协调器：规范化官方未完善、自相矛盾的界面，协调已装插件间的样式冲突并统一视觉语言（全部遵循官方设计令牌）——支持实时自定义对话宽度、markdown 字号、工作区缩放、UI 字体栈，并在设置页提供圆角中栏卡片；纯客户端 dsh bundle，零模型开销，无 host 端，可无残留移除。
 - [Physicolor/dsh-widgets](https://github.com/Physicolor/dsh-widgets) — 在 DeepSeek Harness 右侧的可自定义部件栏：61 个部件覆盖会话统计、token 与缓存、上下文、后台任务、子代理、机器指标、OpenCode Go 与 Command Code 额度、会话成本、峰谷定价与 GitHub 待审队列；部件可在栏内市场安装，支持 1-4 列网格与 2x2 / 2x4 尺寸、逐实例配置、指针划过放大波峰与一键整栏收起。支持 DSH 0.1.x / 0.2.x，网页版与桌面端通用。
@@ -8685,6 +8687,7 @@ dsh plugin --profile web add dshmarket
 - [qiongqi-empty/dsh-cookie-fix](https://github.com/qiongqi-empty/dsh-cookie-fix) — 在每次启动的令牌交换中删除多余的 dsh-auth-* 会话 cookie，让 DeepSeek Harness 桌面端的 cookie 数量保持在 3 条以内，避免随机端口累积达到 16 KiB 请求头上限而出现 HTTP 431 启动失败。
 - [qtaik/dsh-noname-kit](https://github.com/qtaik/dsh-noname-kit) — 无名杀扩展开发工坊。AI 在确认协议、校验门禁与区块化写入的保护下编写武将技能与卡牌扩展。
 - [qwq1999/dsh-ide-database](https://github.com/qwq1999/dsh-ide-database) — 仿 JetBrains Database 的数据源树与 SQL/Redis 控制台，附 15 个 agent 工具。SQL 需本机 Java 8+，Redis 不需要。
+- [dsh-plugin-shelf](https://github.com/QYF-888/dsh-plugin-shelf) — 已安装 DSH 插件的书架：按名称/安装时间/大小排序，自由分组与一键启停，批量检查并可断点续装的自动更新。
 - [qyjqio/dsh-cursor-toolkit#llm-probe](https://github.com/qyjqio/dsh-cursor-toolkit/tree/main/packages/dsh-llm-probe) — 列出运行中 DSH 进程真实注册的 LLM 路由，并可跑一次真实流式调用。
 - [Ragnoryok1/dsh-plugin-doctor](https://github.com/Ragnoryok1/dsh-plugin-doctor) — dsh Web 界面的插件诊断：找出加载失败的插件、未启动的 bundle 行与失效的 file 链接，并报告扫描结果。只读：不修复、不写日志、不提供撤销。
 - [rand0wn/dsh-malware-audit](https://github.com/rand0wn/dsh-malware-audit) — 基于 AST 的已装插件恶意行为扫描：识别动态 eval、跨插件写入、外泄型网络调用等模式，并给出可复核的报告。
