@@ -1,6 +1,8 @@
 url: https://github.com/MosesMuxiXie/dsh-daily-brief
 name: MosesMuxiXie/dsh-daily-brief
 category: notify
+icon: https://raw.githubusercontent.com/MosesMuxiXie/dsh-daily-brief/main/assets/icon-512.png
+tarball: https://github.com/MosesMuxiXie/dsh-daily-brief/releases/latest/download/dsh-daily-brief.tgz
 description:
   en: Daily briefing plugin for DeepSeek Harness that collects watched X accounts, RSS/Atom/JSON/ICS feeds and arbitrary pages, YouTube and Bilibili updates, Steam news, Minecraft server and status pages, mailboxes and calendars into persona-styled rows, and opens a scheduled desktop popup on Windows.
   zh: 为 DeepSeek Harness 提供每日简报：汇总关注的 X 账号、RSS/Atom/JSON/ICS 订阅与网页、YouTube 与 Bilibili 更新、Steam 动态、Minecraft 服务器与状态页、邮箱与日历，按人格卡片渲染，并可在 Windows 上定时弹出桌面窗口。
