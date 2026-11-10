@@ -2,6 +2,6 @@ url: https://github.com/jkin8010/dsh-code-review
 name: jkin8010/dsh-code-review
 category: dev
 description:
-  en: 'Code review center for DSH, built on open-code-review: reviews current changes, commits, branch ranges, project architecture, code modules and business data flows, with live progress, a GitHub-style commit heatmap, fixed markers and one-click fix sessions.'
-  zh: 'DSH 代码评审中心：基于 open-code-review，支持当前改动、提交、分支对比、项目架构、代码模块与信息流业务工作流评审，提供实时进度、GitHub 风格提交热力图、已修复标识与一键修复会话。'
+  en: 'Code review center for DSH, built on open-code-review: reviews current changes, commits, branch ranges, project architecture, code modules and business data flows, with live progress, a GitHub-style commit heatmap, fixed markers, automatic fix verification, light/dark themes and one-click fix sessions.'
+  zh: 'DSH 代码评审中心：基于 open-code-review，支持当前改动、提交、分支对比、项目架构、代码模块与信息流业务工作流评审，提供实时进度、GitHub 风格提交热力图、已修复标识、自动修复校验、深浅色主题与一键修复会话。'
 icon: https://raw.githubusercontent.com/jkin8010/dsh-code-review/main/assets/icon-512.png
