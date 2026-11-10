@@ -2,5 +2,5 @@ url: https://github.com/Daphne999/dsh-fake-call
 name: Daphne999/dsh-fake-call
 category: usage
 description:
-  en: "Give your agent a phone: a local incoming-call screen that really rings in the browser, speaks a preset opening line with the OS voice (no API key, fully offline), and can call again if nobody picks up. The first sentence is fixed text rather than model-improvised, because schedules, amounts and addresses are the kind of thing you cannot let a model paraphrase."
-  zh: "让你的 agent 给你打电话：浏览器里真的会响铃的来电界面，用系统自带音色念出预置开场白（不需要任何 key、完全离线），没人接还会再打一次。第一句是固定文本而不是模型现编——日程、金额、地址这类内容不能被改写。"
+  en: 'Give your agent a phone: a local incoming-call screen that really rings in the browser, speaks a preset opening line with the OS voice (no API key, fully offline), and can call again if nobody picks up. The first sentence is fixed text rather than model-improvised, because schedules, amounts and addresses are the kind of thing you cannot let a model paraphrase. Windows only.'
+  zh: '让你的 agent 给你打电话：浏览器里真的会响铃的来电界面，用系统自带音色念出预置开场白（不需要任何 key、完全离线），没人接还会再打一次。第一句是固定文本而不是模型现编——日程、金额、地址这类内容不能被改写。仅支持 Windows。'

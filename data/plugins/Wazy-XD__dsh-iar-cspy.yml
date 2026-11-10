@@ -2,5 +2,5 @@ url: https://github.com/Wazy-XD/dsh-iar-cspy
 name: Wazy-XD/dsh-iar-cspy
 category: dev
 description:
-  en: 'Bridges the official IAR C-SPY MCP server into DeepSeek Harness: build .ewp projects, start simulator or hardware debug sessions, and read variables, registers, memory, the call stack and target output from the conversation. Windows only, and it needs an IAR Embedded Workbench installation.'
-  zh: '把官方 IAR C-SPY MCP Server 接入 DeepSeek Harness：在对话里编译 .ewp 工程、在模拟器或硬件上启动调试会话，并查看变量、寄存器、内存、调用栈与目标输出。仅支持 Windows，需要本机安装 IAR Embedded Workbench。'
+  en: 'Bridges the official IAR C-SPY MCP server into DeepSeek Harness: build .ewp projects, start simulator or hardware debug sessions, and read variables, registers, memory, the call stack and target output from the conversation. Windows only, and it needs an IAR Embedded Workbench installation. Setup needs Python 3.10+, Git and network access to GitHub and PyPI.'
+  zh: '把官方 IAR C-SPY MCP Server 接入 DeepSeek Harness：在对话里编译 .ewp 工程、在模拟器或硬件上启动调试会话，并查看变量、寄存器、内存、调用栈与目标输出。仅支持 Windows，需要本机安装 IAR Embedded Workbench。安装配置需要 Python 3.10+、Git，并能访问 GitHub 与 PyPI。'

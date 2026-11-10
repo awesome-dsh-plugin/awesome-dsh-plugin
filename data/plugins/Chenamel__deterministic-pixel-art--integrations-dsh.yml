@@ -1,6 +1,6 @@
 url: https://github.com/Chenamel/deterministic-pixel-art/tree/main/integrations/dsh
-name: Deterministic Pixel Art
+name: Chenamel/deterministic-pixel-art#dsh
 category: skill
 description:
-  en: 'Third-party DSH bundle carrying the original deterministic-pixel-art Skill for editable JSON/PNG pixel art, Python rendering and recoloring within declared regions.'
-  zh: '第三方 DSH bundle，携带原 deterministic-pixel-art Skill，支持可编辑 JSON/PNG 像素画、Python 渲染及声明区域内的改色。'
+  en: 'Third-party DSH bundle carrying the original deterministic-pixel-art Skill for editable JSON/PNG pixel art, Python rendering and recoloring within declared regions. Needs DSH 0.2.2-rc.1 (other DSH versions are not claimed compatible) and Python 3.10+ with Pillow.'
+  zh: '第三方 DSH bundle，携带原 deterministic-pixel-art Skill，支持可编辑 JSON/PNG 像素画、Python 渲染及声明区域内的改色。需要 DSH 0.2.2-rc.1（其他 DSH 版本未声明兼容）以及带 Pillow 的 Python 3.10+。'

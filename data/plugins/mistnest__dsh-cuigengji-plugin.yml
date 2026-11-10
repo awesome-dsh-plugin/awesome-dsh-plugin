@@ -1,5 +1,5 @@
 url: https://github.com/mistnest/dsh-cuigengji-plugin
-name: dsh-cuigengji-plugin
+name: mistnest/dsh-cuigengji-plugin
 category: workflow
 description:
   en: 'Cuigengji, your fiction-writing assistant and editor: organize settings, develop plots, draft chapters, and revise prose with AI. Share plot canvases, character cards, and worldbooks while you choose the direction, style, and what stays in the story.'

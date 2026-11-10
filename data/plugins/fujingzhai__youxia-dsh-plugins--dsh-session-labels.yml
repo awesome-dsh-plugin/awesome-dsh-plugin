@@ -2,5 +2,5 @@ url: https://github.com/fujingzhai/youxia-dsh-plugins/tree/main/dsh-session-labe
 name: fujingzhai/youxia-dsh-plugins#dsh-session-labels
 category: session
 description:
-  en: "Finder-style session labels: a hover button next to archive and pin, plus the native context menu, assign coloured labels; titles can take the first label's colour or a label symbol; view options gain a filter by label applied before grouping. Labels are stored by the Host and shared across workspaces."
-  zh: "Finder 风格的会话标签：悬浮按钮（位于原生归档、固定之后）与右键菜单都能给会话打彩色标签，标题可按第一个标签着色或显示标签符号，「视图选项」增加按标签筛选且在分组前生效；标签由 Host 保存，在同一 Host 的各工作区之间共享。"
+  en: 'Finder-style session labels: a hover button next to archive and pin, plus the native context menu, assign coloured labels; titles can take the first label''s colour or a label symbol; view options gain a filter by label applied before grouping. Labels are stored by the Host and shared across workspaces. Needs DSH 0.2.2-rc.1 or newer and Node.js 24.9+ (node:sqlite); the interface is available in Chinese and English only.'
+  zh: 'Finder 风格的会话标签：悬浮按钮（位于原生归档、固定之后）与右键菜单都能给会话打彩色标签，标题可按第一个标签着色或显示标签符号，「视图选项」增加按标签筛选且在分组前生效；标签由 Host 保存，在同一 Host 的各工作区之间共享。需要 DSH 0.2.2-rc.1 或更新版本与 Node.js 24.9+（node:sqlite）；界面仅提供中英文。'

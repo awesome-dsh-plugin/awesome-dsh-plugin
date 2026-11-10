@@ -2,6 +2,6 @@ url: https://github.com/gebi-one/dsh-hermes-recall
 name: gebi-one/dsh-hermes-recall
 category: skill
 description:
-  en: Auto-detects whichever memory tool local Hermes uses, then reuses its skills and memory in DeepSeek Harness, with always-available recall.
-  zh: 自动识别本机 Hermes 当前使用的记忆工具，把技能与记忆实时接入 DSH，检索始终可用。
+  en: 'Auto-detects whichever memory tool local Hermes uses, then reuses its skills and memory in DeepSeek Harness, with always-available recall. Needs python3 and a local Hermes installation; it only reads from Hermes.'
+  zh: '自动识别本机 Hermes 当前使用的记忆工具，把技能与记忆实时接入 DSH，检索始终可用。需要 python3 与本机已装的 Hermes；对 Hermes 只读。'
 icon: https://raw.githubusercontent.com/gebi-one/dsh-hermes-recall/main/assets/icon-180.png

@@ -2,6 +2,6 @@ url: https://github.com/nacivageer/framedelta/tree/master/plugins/dsh-framedelta
 name: nacivageer/framedelta#dsh-framedelta
 category: vision
 description:
-  en: 'Measures how much a short clip changed and when — changed-area share, displacement, cumulative drift — returning one labelled key-frame image plus the number behind each event; it does not pick shots for a storyboard.'
-  zh: '测量短片段里「变了多少、何时变」——变化面积占比、位移、累积漂移，返回一张标注代表帧与每个事件的数值；不做分镜选帧。'
+  en: 'Measures how much a short clip changed and when — changed-area share, displacement, cumulative drift — returning one labelled key-frame image plus the number behind each event; it does not pick shots for a storyboard. Needs Python 3.10+ with numpy and Pillow; reading mp4 also needs ffmpeg and ffprobe on PATH.'
+  zh: '测量短片段里「变了多少、何时变」——变化面积占比、位移、累积漂移，返回一张标注代表帧与每个事件的数值；不做分镜选帧。需要带 numpy 与 Pillow 的 Python 3.10+；读取 mp4 另需 PATH 中有 ffmpeg 与 ffprobe。'
 tarball: https://github.com/nacivageer/framedelta/releases/download/v0.1.0-alpha.2/dsh-framedelta-0.1.0-alpha.2.tgz

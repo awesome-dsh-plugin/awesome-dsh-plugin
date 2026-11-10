@@ -2,5 +2,5 @@ url: https://github.com/sdf123098/dsh-plugin-axolotl
 name: sdf123098/dsh-plugin-axolotl
 category: tools
 description:
-  en: "Makes the Axolotl Minecraft launcher's built-in MCP server usable from DSH: turns its 269 tools into nine domain tools plus status and raw, answers the launcher's 15-second session ping so the control session survives long turns, and returns screenshots as real images instead of files on disk."
-  zh: "把美西螈启动器（Axolotl Launcher）自带的 MCP 服务器接进 DSH：269 个工具收成 9 个领域工具加 status 和 raw；代持常驻客户端应答启动器的 15 秒心跳，让控制会话撑过长任务；截图直接变成图片，不用落盘再读。"
+  en: 'Makes the Axolotl Minecraft launcher''s built-in MCP server usable from DSH: turns its 269 tools into nine domain tools plus status and raw, answers the launcher''s 15-second session ping so the control session survives long turns, and returns screenshots as real images instead of files on disk. Needs Axolotl Launcher 1.11.0-beta.2 or later with its MCP server enabled.'
+  zh: '把美西螈启动器（Axolotl Launcher）自带的 MCP 服务器接进 DSH：269 个工具收成 9 个领域工具加 status 和 raw；代持常驻客户端应答启动器的 15 秒心跳，让控制会话撑过长任务；截图直接变成图片，不用落盘再读。需要 Axolotl Launcher 1.11.0-beta.2 或更新版本，并启用其 MCP 服务器。'

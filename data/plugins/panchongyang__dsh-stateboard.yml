@@ -2,5 +2,5 @@ url: https://github.com/panchongyang/dsh-stateboard
 name: panchongyang/dsh-stateboard
 category: workflow
 description:
-  en: A cross-session project board for managing projects, plans, tasks, and external document references in the DSH web UI and agent tools.
-  zh: 在 DSH 网页界面和 agent 工具中跨会话管理项目、计划、任务和外置文档引用。
+  en: 'A cross-session project board for managing projects, plans, tasks, and external document references in the DSH web UI and agent tools. Verified on Windows 11 x64 only.'
+  zh: '在 DSH 网页界面和 agent 工具中跨会话管理项目、计划、任务和外置文档引用。仅在 Windows 11 x64 上验证过。'

@@ -2,5 +2,5 @@ url: https://github.com/YONAN1269/dsh-sidebar-suite
 name: YONAN1269/dsh-sidebar-suite
 category: ui
 description:
-  en: Adds three switchable sidebar layouts, an always-expanded session list and disposable temporary sessions to DeepSeek Harness, with default-layout and feedback controls in the plugin detail page.
-  zh: 为 DeepSeek Harness 提供三种可切换的侧栏布局、默认全部展开的会话列表与用完即删的临时会话，并在插件详情页设置默认布局与反馈入口。
+  en: 'Adds three switchable sidebar layouts, an always-expanded session list and temporary sessions that are deleted when DSH exits (by default) to DeepSeek Harness, with default-layout and feedback controls in the plugin detail page.'
+  zh: '为 DeepSeek Harness 提供三种可切换的侧栏布局、默认全部展开的会话列表与默认在退出 DSH 时删除的临时会话，并在插件详情页设置默认布局与反馈入口。'
