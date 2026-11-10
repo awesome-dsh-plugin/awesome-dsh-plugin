@@ -871,6 +871,7 @@ dsh plugin --profile web add dshmarket
 - [IDKURLOVE/dsh-reset-button](https://github.com/IDKURLOVE/dsh-reset-button) — 在对话框工具栏「完全权限」右侧加一个「重启」按钮，点击即重启 DSH，装完插件不用再手动关掉重开。
 - [idoall/dsh-quick-replies](https://github.com/idoall/dsh-quick-replies) — 在会话输入区上方提供可管理的一点即发文本 chip；空闲时 queue、运行中 steer，不改写草稿。
 - [idoall/dsh-update-status](https://github.com/idoall/dsh-update-status) — 只读的 DeepSeek Harness Web 侧栏版本芯片，显示当前运行版本、npm latest/next/alpha 通道、兼容性标识，以及仅复制的升级命令。
+- [igdwei/dsh-store-ops-expert](https://github.com/igdwei/dsh-store-ops-expert) — 餐饮门店经营分析专家：对账体检、找差距、量价拆解、算让利效率，并交付一个数据本地的单文件经营看板。
 - [iimaguest/dsh-contradictions-indicator](https://github.com/iimaguest/dsh-contradictions-indicator) — 对当前 DSH 会话做并行矛盾分析，在会话标题栏显示 0–100 连贯性徽章与评注，支持手动触发和按轮数的自动分析（默认开启，可按会话或全局调整）。
 - [ikun1031/dsh-effort-dial-plus](https://github.com/ikun1031/dsh-effort-dial-plus) — 合并 dsh-effort-dial 的卡片结构与 reasoning-slider 的渐变/粒子效果：输入框里的 Codex 风格推理强度卡片，一个控件同时管理模型与档位，档位逐级变色，最高档显示额度提示并切换为蓝紫渐变与流动粒子。它接管输入框模型槽位，不能与 dsh-effort-dial、reasoning-slider 同时启用。
 - [imkingjh999/dsh-shorts-wall](https://github.com/imkingjh999/dsh-shorts-wall) — 在 DSH Web UI 中加入默认贴边的竖屏短视频墙：YouTube Shorts 与 B站双源、关键词轮换、四角缩放及 Alt+S/Alt+M 快捷键。
@@ -7021,6 +7022,7 @@ dsh plugin --profile web add dshmarket
 - [PolinniZhong/dsh-knit](https://github.com/PolinniZhong/dsh-knit) — 把会话工作区里已有的 Markdown 文档、源码、图片与视频列进 DSH 侧边栏，按与当前对话的相关性排序。默认的词法模式用最近几条消息在本地与标题、摘要、正文做带 IDF 加权的匹配（BM25）—— 不调用模型、没有网络出口，内容不出本机。列表来自工作区扫描，而不是「最近打开记录」，所以重启 DSH 或新开会话都不会变空。排序结果组织成主要 / 辅助 / 相关三层的阅读顺序，每一条都写明可核验的理由（命中了哪个字段、被哪一篇引用），点一行即可就地预览：Markdown 按渲染后的样子显示、相对路径图片真实渲染、源码走宿主自带的语法高亮、视频走 HTTP Range 流式播放。同一份 Context Pack 也作为 knit_docs 工具交给 agent。后续版本陆续补上读取证据与生命周期（归因在读那一刻冻结）、固定 / 排除（排除先于检索生效，且可恢复）、关系证据（引用 / 导入 / 测试，带行号）与增量索引（重启后复用）。v0.23 起还多一条可选的混合检索：默认关闭，只有你自己配好 Ollama 或 OpenAI 兼容的 embedding 服务才会生效。它生效时，发出去的是你这句查询原话加上每篇候选文件的标题与摘要 —— Markdown 的摘要取自正文首段（不超过 60 字），代码的摘要是它所在的工作区相对目录，图片 / 视频贡献的是文件名；完整正文与绝对路径都不发送，指向本机服务（loopback）时内容不出这台机器。v0.24 起还能做变更关联：用一条只读的 git status（固定 argv、不走 shell、子进程环境白名单），配合同一套引用 / 导入 / 测试 / 提及证据，指出这次改动大概率该一起看哪些文件 —— 默认关闭。语义检索的收益仍待真 provider 实测，因此不承诺召回提升。
 - [PyModel/dsh-research-plugins#dsh-mcp-context7](https://github.com/PyModel/dsh-research-plugins/tree/main/packages/dsh-mcp-context7) — 接入 Context7 托管 MCP 服务，为 agent 提供随版本更新的库文档查询；默认免密钥可用。
 - [QinpanWan/dsh-doc-quick](https://github.com/QinpanWan/dsh-doc-quick) — 拖拽文档进 dsh Web 对话框，Agent 直读本地文件处理，右侧侧栏展示产出与文件路径。
+- [quirekit/dsh-quirekit-md-editor](https://github.com/quirekit/dsh-quirekit-md-editor) — 在右侧栏直接编辑 Markdown，把行内评论发给 Agent，处理完自动标记解决。
 - [RainL-621/dsh-office-bridge](https://github.com/RainL-621/dsh-office-bridge) — 在 Windows 版 DSH Desktop 的侧边栏用本机安装的 ONLYOFFICE Document Server 编辑 xlsx/xls/csv/tsv/docx/pptx，保存直接写回磁盘上的原文件。
 - [reg4916/dsh-doc-reader](https://github.com/reg4916/dsh-doc-reader) — 把 PDF、DOCX、XLSX、PPTX 和文本文件读取为智能体工具，并用 tesseract.js 在本地对扫描版 PDF 或图片做 OCR。提供 doc_read、pdf_read、xlsx_read、doc_meta、doc_ocr 五个工具。
 - [reviso-si/reviso-dsh](https://github.com/reviso-si/reviso-dsh) — 把 Agent 产出发布到 Reviso 供人工评审，在侧边栏浏览已发布文档，并在产生这些文档的同一个 DSH 会话中再次找到它们。OAuth 由宿主中转：Reviso token 只保存在 DSH credentials 里，浏览器仅获得短时效的 embed 会话。需要 Reviso 账号或兼容的自建 Reviso 服务。
