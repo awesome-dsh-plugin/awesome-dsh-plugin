@@ -1,0 +1,8 @@
+url: https://github.com/5777-wq/dsh-openfin
+name: 5777-wq/dsh-openfin
+category: ui
+description:
+  en: 'Native DeepSeek Harness page with a live A-share and global market dashboard (11 indices, commodities, crypto and FX quotes, a market-cap heatmap of up to 96 A-share industry sectors, movers, market news) plus a plain-language finance library of 25 articles and a 293-term glossary. The plugin Host half fetches public quotes server-side, so the page needs no API key and no browser CORS workaround.'
+  zh: 'DSH 原生页面：A股与全球行情（11 个指数/商品/加密/外汇标的）、最多 96 个 A股行业板块的市值热力图、异动榜与财经快讯，外加 25 篇白话金融文章与 293 条词典。行情由插件 Host 半场在服务端抓取，页面不需要 API key，也没有浏览器 CORS 问题。'
+icon: https://raw.githubusercontent.com/5777-wq/dsh-openfin/main/docs/screenshots/icon-180.png
+tarball: https://github.com/5777-wq/dsh-openfin/releases/latest/download/dsh-openfin.tgz
