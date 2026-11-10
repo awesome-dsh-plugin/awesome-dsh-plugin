@@ -3066,7 +3066,7 @@ dsh plugin --profile web add dshmarket
 - [ymh0000123/dsh-theme-endfield](https://github.com/ymh0000123/dsh-theme-endfield) — 《明日方舟：终末地》工业编辑风主题：奶油纸底、墨黑文字、全局直角，两套强调色配色（谷地黄信号黄 / 武陵青青碧色）可在设置切换，另有可选的等高线地形背景、ENDFIELD 水印与启动加载屏。
 - [yq1930/dsh-skin-asuka-p01](https://github.com/yq1930/dsh-skin-asuka-p01) — 非官方明日香主题皮肤：双人物精绘立绘、城市穹顶日夜背景，含表现方式、穹顶背景开关、立绘位置、背景强度和人物大小五项设置。
 - [YRN-playmaker/dsh-wallpaper_share](https://github.com/YRN-playmaker/dsh-wallpaper_share) — 把 Wallpaper Engine 当前应用的壁纸经本地桥接同步为 DSH Web 界面背景：预览/捕获/完整三档渲染、显示器锁定、本地与市场壁纸库面板、专注透镜与眼动追踪、沉浸模式，以及支持直链与网盘分享链接安装、一键启动的 Windows 应用启动器。
-- [yrsxy/dsh-warm-theme](https://github.com/yrsxy/dsh-warm-theme) — 五套低蓝光暖色配色，整体重着色 DSH 界面（含侧栏、浮层与阴影），零布局改动，卸载即还原。
+- [yrsxy/dsh-warm-theme](https://github.com/yrsxy/dsh-warm-theme) — 五套低蓝光暖色配色，整体重着色 DSH 界面（含侧栏、浮层与阴影），零布局改动，卸载即还原。在「设置 → 通用」中切换配色。
 - [yryd/dafy-whale-theme](https://github.com/yryd/dafy-whale-theme) — 海洋蓝主题：游动鱼群、上升气泡、输入框上方的「每日鱼语」，以及左上角品牌区替换；「设置 → 海洋主题」提供 7 组 32 项可调（品牌文字与字号、徽章、主色、水印、鱼群、语录、整体缩放），改动即时生效无需刷新，并带二次确认的一键恢复默认。
 - [YSDLNGF/dsh-acrylic-light](https://github.com/YSDLNGF/dsh-acrylic-light) — 为 DeepSeek Harness 桌面版提供透明亚克力窗口材质与分层雾面面板：窗口透出桌面壁纸（模糊由 Windows Acrylic 负责），输入栏是一块毛玻璃，聊天文字在输入栏上沿硬裁切。注意：页面样式随插件安装，但「窗口透出壁纸」需要额外运行一次 app.asar 补丁脚本（仓库 Releases 里的补丁包，双击 enable-transparency.cmd），补丁重启后生效，DSH 更新后需重打。只装插件也能用，只是窗口保持不透明。
 - [yu502950715yang/dsh-use-wallpaper](https://github.com/yu502950715yang/dsh-use-wallpaper) — 把本机 Wallpaper Engine 壁纸放到 dsh Web 界面背后：scene 壁纸在浏览器内实时渲染（three.js 播放器 + Rust/WASM CPU 粒子模拟），视频与 web 壁纸原样播放，其余回退 preview 图，不需要安装 Wallpaper Engine 运行时。壁纸库从 Steam 创意工坊目录（431960）自动探测或手动指定，设置面板可选壁纸、配壁纸库与引擎目录、调光晕与暂停/画质。
@@ -3952,6 +3952,7 @@ dsh plugin --profile web add dshmarket
 - [fomalhaut1998/dsh-session-find](https://github.com/fomalhaut1998/dsh-session-find) — 会话内 Ctrl+F 全文查找（读会话 store 而非 DOM）：命中按来源分类（你/助手/思考/工具调用/工具输出/系统）、按轮次分组、同文合并，可切「只搜正文 / 搜全部内容」，支持正则/大小写/全词，全量高亮，并能把结果复制或导出为 Markdown。
 - [fredalxin/dsh-solo-thinking](https://github.com/fredalxin/dsh-solo-thinking) — 可视化分支头脑风暴：为每个方向创建独立 Session，自动处理父子继承、兄弟感知、进展与回传 Handoff，并提供完整树形 Tab 与可选 Better Sidebar 右栏。
 - [Frog755/dsh-client-auto-retry](https://github.com/Frog755/dsh-client-auto-retry) — 回合中断自动续跑：turn/end 因 error / interrupted / max-tokens 结束时自动发送「继续」，支持宽限期、冷却、指数退避、连续次数上限、启动扫描、设置卡片，以及输入框工具行的会话级停止/恢复按钮；不切换模型/provider。
+- [FrozMN/dsh-session-adopt](https://github.com/FrozMN/dsh-session-adopt) — 把在运行窗口之外（IDE/ACP 客户端、其他进程）创建的 DSH 会话归入对应工作区，并把本机其他 Agent Harness（如 pi）的会话导入为可续聊的 DSH 原生会话，提供侧边栏同步/导入入口与幂等重复导入。
 - [fujingzhai/youxia-dsh-plugins#dsh-session-labels](https://github.com/fujingzhai/youxia-dsh-plugins/tree/main/dsh-session-labels) — Finder 风格的会话标签：悬浮按钮（位于原生归档、固定之后）与右键菜单都能给会话打彩色标签，标题可按第一个标签着色或显示标签符号，「视图选项」增加按标签筛选且在分组前生效；标签由 Host 保存，在同一 Host 的各工作区之间共享。
 - [Full626/dsh-session-trash-90d](https://github.com/Full626/dsh-session-trash-90d) — 列出本地 DSH 配置中保存的全部会话（标题、工作区、最近修改时间、大小），把选中项移入保留 90 天的回收站，可随时还原或彻底删除；删除前会先摘掉宿主内存中的会话，侧栏无需重启应用即可刷新。
 - [FunnyDiodio/dsh-session-delete](https://github.com/FunnyDiodio/dsh-session-delete) — 给侧边栏每个会话的"…"菜单加上"删除会话"（官方只有归档/置顶/重命名/分叉，无持久 删除）。一键「强制删除」：逐出宿主内存态会话、停止后台工作后，彻底清除会话日志、 投影缓存与注册表记账，已连接的桌面 Web 端即时清行、不留幽灵。会话生成的工作区文件 保留，对话记录永久删除；第三方云端镜像（如经 Agents Anywhere 同步的手机 App）持有 各自副本、需在其 App 内管理。中英双语界面，本地回环路由带信任栅栏。需 DSH >=0.2.1-rc.1。
@@ -4778,6 +4779,7 @@ dsh plugin --profile web add dshmarket
 - [NoxTyrannus/dsh-cipher](https://github.com/NoxTyrannus/dsh-cipher) — 把 cipher 记忆平台原生带进 DSH：四类记忆每轮沉淀、跨会话确定性检索经 systemPrompt.context 注入、洞察复核只进沉淀、会话级 UNNI/LOOP 模式（记忆驱动自动续轮）、记忆检索/写入两个工具，以及设置页（SOUL 编辑器）与 AgentPool 面板。
 - [NyaaCaster/dsh-yuque-kb](https://github.com/NyaaCaster/dsh-yuque-kb) — 把语雀文档作为 dsh 的外部记忆：对话中自动检索并注入相关文档片段，支持目录快照检索、云端全文搜索与在线阅读。
 - [OakcoderX/solopup-memory](https://github.com/OakcoderX/solopup-memory) — 保留原话引用、修改历史并支持受管来源撤回的全局与项目文字记忆。公开测试版。
+- [Old-Friends-Gathering/sedimem#dsh-sedimem](https://github.com/Old-Friends-Gathering/sedimem/tree/main/plugin/dsh-sedimem) — sedimem 记忆中心：把本地跨客户端记忆层 sedimem 的只读观察台装进 DSH——侧边栏一行进入中列整页（今日变化 / 可手转 3D 记忆图谱 / 卫生趋势三页，可切分库）。宿主优先复用已在运行的观察台（observerUrl 指向即纯代理、零新进程），探测不到才 spawn 内嵌副本兜底，数据始终是同一份 ~/.memo；只读、仅回环，路由再叠一层防跨站栅栏。记忆写入链路（MCP memory_* 工具）与 DSH/Codex/Claude Code 三端共用配置不受影响。零依赖。
 - [OldManDing/dsh-ledger-watch](https://github.com/OldManDing/dsh-ledger-watch) — 自带一套最小账本工具：brief.ps1 查过往踩过的坑，add-lesson.ps1 记新的，安装时自动部署到技能目录并接好 AGENTS.md。模型动手前查一遍、踩坑后记成规则，同一个坑不必踩第二次。本插件负责盯着它有没有真的这么做，并把「查了几次、记了哪几条」摆在面板和输入框下方。
 - [omdsh-dev/dsh-kb-sieve](https://github.com/omdsh-dev/dsh-kb-sieve) — 从 md/txt/docx/pdf 构建可审计知识库包（SQLite FTS5），确定性检索与原文阅读。
 - [omdsh-dev/dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) — 由 Mnemon 驱动的 DeepSeek Harness（DSH）跨 Agent、本地优先的持久记忆插件。它可在支持 Mnemon 的 Agent 之间共享长期记忆，并提供运行时记忆、可检索项目档案、语义召回、知识图谱和 Sidebar UI。
