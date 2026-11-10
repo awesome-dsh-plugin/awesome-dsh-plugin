@@ -132,6 +132,7 @@ dsh plugin --profile web add dshmarket
 - [starkingcn/dsh-story#story-mode](https://github.com/starkingcn/dsh-story/tree/main/story-mode) — 面向 DeepSeek Harness 的故事模式预设：叙事 GM 人格、三条走向、.md 角色卡与世界书记忆、上下文提纯与前后置提示词。
 - [StarsHarryZhu/dsh-assistant](https://github.com/StarsHarryZhu/dsh-assistant) — 基于母 agent + worker 子代理架构的通用对话 agent，仅支持 DSH Desktop：侧栏入口直达每个助理的长期对话，母 agent 负责聊天，把日程、清单、备忘、流水、画像、人设和项目以纯文本文件记在该助理的工作区文件夹里，其余工作通过内置的 complete-subagent 交给后台 worker，从你勾选的模型里为每个 worker 选模型，并审批它们的写权限。心跳按时叫醒它处理提醒、每日早报和它自己设的唤醒，勿扰时段内不打扰。通过内置的 im-robot 接入微信：每条回复由模型用 im_route 决定是否同时发到微信，微信发来的图片和文件显示在对话里，并在工作区的 IM/WeChat 文件夹里保留可设置的天数。它的工具不会出现在普通会话里。
 - [StellaryToucher/dsh-muse-code](https://github.com/StellaryToucher/dsh-muse-code) — 为 DSH 增加 `muse` 子代理提供方与 `subagent_muse` 工具，主代理可把一整段任务外包给 Meta Muse Code CLI，只取回最终报告。这是 `@pascapone/dsh-muse-code` 的修补分叉，可在 DSH 0.2.1 上加载：内含被移除的 `settleRun` 导出与 `subagents.start` 方法的本地等价实现，并附网关流式 phase 缺陷的可选代理修正。需已安装 `muse` CLI。本分叉不能与上游 @pascapone/dsh-muse-code 同装：两者注册同一个 subagent-muse 加载行。
+- [suifei/dsh-ai-team](https://github.com/suifei/dsh-ai-team) — 文渊阁：DeepSeek Harness 的 AI Team 工作台——有 owner 的 Task、独立验收、append-only 账本与并发 Project。
 - [sxwpskd/dsh-milieu](https://github.com/sxwpskd/dsh-milieu) — 为 agent 准备一套工作区管理协议——认知、工具、外部信息三库，一条可选的、已读过工作区的预加载会话，以及工作区变化达到阈值后弹出的重读卡片。
 - [syyr1987/dsh-linghun](https://github.com/syyr1987/dsh-linghun) — DeepSeek Harness 的判断内核：认知循环让判断有来处、反馈有归因、规划收口；海马体把运行经历沉淀为可复用知识（序时账留痕、情景归档、低置信降权遗忘）；判分身份职责入架构（口径一致、判据绑定来源）；联动 dsh-linghun-assembler 的 A2A 记忆管理团队。需要 DSH ^0.1.0-rc.7（支持 rc.2）。
 - [syyr1987/dsh-linghun-assembler](https://github.com/syyr1987/dsh-linghun-assembler) — 灵魂的记忆提取侧·认知循环团队版：判断→捞取→组装→被判定→校准五步闭环，判官/捞手/史官/辩手/编辑/书记角色化子智能体承载，BM25 检索 + 时序素材 + LLM 组装「有用素材包」注入 linghun。与 dsh-linghun 组合使用。
@@ -4176,6 +4177,7 @@ dsh plugin --profile web add dshmarket
 - [liufeicc/dsh-btw-command](https://github.com/liufeicc/dsh-btw-command) — 新增 /btw 斜杠命令：主 agent 运行中也能问一个旁支问题或补充一条信息，不打断当前任务。
 - [liufeicc/dsh-clear-command](https://github.com/liufeicc/dsh-clear-command) — 新增 /clear 命令：清空某个会话的模型可见上下文，同时保留会话本身。
 - [liufeicc/dsh-session-delete](https://github.com/liufeicc/dsh-session-delete) — 在侧边栏会话菜单里新增「删除会话」，带确认弹窗，并由宿主动作彻底移除会话日志。
+- [liuhange789/dsh-session-recovery](https://github.com/liuhange789/dsh-session-recovery) — 中断续跑：对话走到关键节点时（连续两次成功的文件写入/编辑，或一次成功的测试命令），向本地 JSONL 追加一条轻量记录（时间、步骤类型、工具名、≤200 字参数摘要、结果状态），只保留最近 50 条并在 24 小时后过期。DSH 重启后，session_recovery 工具列出未完成的会话，恢复时新建会话，系统提示只携带最后三个检查点（≤500 字），而不是整段历史。
 - [liuyu-f/dsh-plugin-session-cascade-delete](https://github.com/liuyu-f/dsh-plugin-session-cascade-delete) — 从界面删除会话（会话头部按钮或侧栏行菜单），或由 agent 调用 session_delete 工具：先停止并释放运行中的 Agent 与会话，再清理日志目录、投影缓存与工作区记账，级联删除它拥有的子代理会话（分叉分支不受影响）。
 - [liuyuelintop/dsh-conversation-exporter](https://github.com/liuyuelintop/dsh-conversation-exporter) — 将当前 DSH 对话或选定轮次导出为干净、易读的 Markdown。
 - [ljp888/dsh-session-delete-next](https://github.com/ljp888/dsh-session-delete-next) — 在侧栏会话菜单中加入「删除会话」，永久删除该会话的本地记录；正在运行的会话会被拒绝。
