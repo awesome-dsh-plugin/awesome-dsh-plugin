@@ -1,0 +1,7 @@
+url: https://github.com/chensuqi631-max/zying-erp
+name: chensuqi631-max/zying-erp
+category: tools
+tarball: https://github.com/chensuqi631-max/zying-erp/releases/download/v1.2.0/zying-erp-1.2.0.tgz
+description:
+  en: 'Amazon product research workbench for DeepSeek Harness: category, brand and follow-seller collectors driven through the local Edge browser, a product library with unified filters, an FBA/FBM/self-operated profit calculator, blue-ocean category scoring with candidate picks, trademark lookup, supplier image search and Excel export.'
+  zh: '智赢ERP 搞薯条：亚马逊选品与跟卖分析工作台（类目/品牌/跟卖店铺采集、商品库与统一筛选、FBA/FBM/自营利润测算、蓝海选品五维评分与候选品、商标查重、找货源以图搜图、导出 Excel），采集全程驱动本机 Edge，不依赖第三方数据 API。'
