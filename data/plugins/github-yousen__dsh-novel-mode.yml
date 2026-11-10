@@ -17,4 +17,4 @@ description:
 icon: https://raw.githubusercontent.com/github-yousen/dsh-novel-mode/main/assets/icon-180.png
 # Prebuilt tarball pinned to the published release tag (no build-script approval
 # needed); the name is version-free so the URL never rots across releases.
-tarball: https://github.com/github-yousen/dsh-novel-mode/releases/download/v2.0.0/dsh-novel-mode.tgz
+tarball: https://github.com/github-yousen/dsh-novel-mode/releases/download/v2.0.1/dsh-novel-mode.tgz
