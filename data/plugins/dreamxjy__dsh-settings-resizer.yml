@@ -1,0 +1,8 @@
+url: https://github.com/dreamxjy/dsh-settings-resizer
+name: dreamxjy/dsh-settings-resizer
+category: ui
+description:
+  en: Makes the DeepSeek Harness settings window resizable and configurable in size, with presets, drag resizing, and sizes saved to the profile config.
+  zh: 让 DeepSeek Harness 设置窗口可配置大小并可拖动缩放，提供尺寸预设，并把尺寸保存到 profile 配置。
+icon: https://raw.githubusercontent.com/dreamxjy/dsh-settings-resizer/main/assets/icon-256.png
+tarball: https://github.com/dreamxjy/dsh-settings-resizer/releases/download/v1.2.4/dsh-settings-resizer-1.2.4.tgz
