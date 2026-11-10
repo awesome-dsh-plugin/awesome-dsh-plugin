@@ -4,4 +4,4 @@ category: ui
 description:
   en: "Narrow 40px icon rail for the DSH sidebar: panel icons move into a single column so the session list gets the full width, session titles gain a three-level hierarchy, and the DeepSeek account balance sits just above the sidebar footer with value-based colours."
   zh: "把面板图标收进 40px 窄栏、把宽度还给会话列表，会话标题分三级明暗，并在侧栏底部栏上方常显 DeepSeek 余额（按数值变色）。"
-tarball: https://github.com/xiaoxiaolelang-ai/dsh-rail/releases/download/v0.2.2/dsh-rail-0.2.2.tgz
+tarball: https://github.com/xiaoxiaolelang-ai/dsh-rail/releases/download/v0.3.3/dsh-rail-0.3.3.tgz
