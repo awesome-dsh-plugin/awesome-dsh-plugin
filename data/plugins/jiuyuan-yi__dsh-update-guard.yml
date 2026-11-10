@@ -2,5 +2,5 @@ url: https://github.com/jiuyuan-yi/dsh-update-guard
 name: jiuyuan-yi/dsh-update-guard
 category: dev
 description:
-  en: Compares installed plugins against a downloaded DSH update and reports which interfaces they use that the update no longer exposes. Runs before you install, with a dry-run diagnose command for when it declines to act. Windows only, on the DSH desktop app, with Node.js 18+.
-  zh: 在安装 DSH 更新之前，把已装插件用到的接口与更新包里的实际接口逐项比对，指出新版本已经不再提供的那几个；附一个只读的 diagnose 命令，用来查看判定卡在哪一环。仅支持 Windows 上的 DSH 桌面端，需要 Node.js 18+。
+  en: 'Checks installed plugins against a DSH update before you install it, and reports every host interface they depend on that the new version no longer exports — the case where an update installs cleanly but leaves plugins failing to load. Includes a read-only diagnose command. Windows only, DSH desktop, Node.js 18+.'
+  zh: '在装 DSH 更新之前，把已装插件依赖的宿主接口和新版本实际导出的接口逐项比对，列出新版本不再提供的那几个——也就是「更新装上了、插件却加载不起来」那种。附一个只读 diagnose 命令。仅支持 Windows 上的 DSH 桌面端，需要 Node.js 18+。'
