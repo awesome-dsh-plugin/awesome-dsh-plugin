@@ -1,0 +1,6 @@
+url: https://github.com/tyouter/dsh-recorder
+name: tyouter/dsh-recorder
+category: dev
+description:
+  en: Drives another DSH plugin's real interface from a script and records the real window to an animated GIF.
+  zh: 按脚本操作另一个 DSH 插件的真实界面，并把真实窗口录成 GIF。
