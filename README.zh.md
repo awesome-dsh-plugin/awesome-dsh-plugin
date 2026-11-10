@@ -1562,6 +1562,7 @@ dsh plugin --profile web add dshmarket
 - [secyborg/dsh-find-bar](https://github.com/secyborg/dsh-find-bar) — 桌面端浏览器式页内查找条（Cmd/Ctrl+F）：全文高亮、匹配计数，可在对话区与右侧面板间切换搜索范围。
 - [seeingrain/dsh-media-inline-preview](https://github.com/seeingrain/dsh-media-inline-preview) — 全能内联媒体预览插件，支持 mip-img/mip-video/mip-audio 围栏的流式播放、ffmpeg 转码回退、灯箱浏览及信任围栏局域网/移动端访问。
 - [seeingrain/dsh-upload-file](https://github.com/seeingrain/dsh-upload-file) — 允许将任意文件上传给 DSH，按工作区与会话隔离。输入框内置文件库，服务端生成缩略图，右键菜单可打开、复制、重新下载或删除。
+- [self-exiler/DSH-Comfyui-Prompt-Generator](https://github.com/self-exiler/DSH-Comfyui-Prompt-Generator) — 在侧栏面板中把碎片文本或图片整理成可直接粘贴的 ComfyUI 英文提示词，附中文翻译与补充说明。
 - [Semidia/dsh-sampling-sliders](https://github.com/Semidia/dsh-sampling-sliders) — 对话输入区的模型采样滑杆（temperature / maxTokens）：通过 agent/request 钩子对所有供应商的每次请求生效，支持热调/持久化两种模式。
 - [Semonxue/dsh-my-newhome](https://github.com/Semonxue/dsh-my-newhome) — 把 DeepSeek Harness 首屏换成自定义主页：可配置配色与背景图、自定义首屏与侧栏 Logo、默认 3×2 的最近工作区与常用入口（取自本机 Chrome 历史或自定义列表）、最多 4 个 API 用量组件（DeepSeek 余额、MiniMax、Cline Pass、OpenCode Go）且刷新间隔可调；卡片只在新建会话首屏出现，全部选项在自带设置面板里调整。
 - [senyayume/dsh-edit-diff](https://github.com/senyayume/dsh-edit-diff) — 接管 edit / write / insert / str_replace_editor 四种工具行：行级对齐后相同行只渲染一次、行内改动字符带下划线；run_code(PTC) 子调用同样覆盖；轮末给出本轮改动汇总卡片；工具行与卡片行都能右键「在资源管理器中打开」或复制文件/文件夹绝对路径，由插件自己的宿主路由完成。
@@ -5534,6 +5535,7 @@ dsh plugin --profile web add dshmarket
 - [lifeopsgo/dsh-capability-toggle-plugin](https://github.com/lifeopsgo/dsh-capability-toggle-plugin) — 在 DSH WebUI 中为技能、MCP 服务器、工具、提示词注入、审批升权和安全守卫提供会话、项目与全局三级控制，并在当前 agent 作用域内强制执行。
 - [lihanhong2002/dsh-minimax-multimodal](https://github.com/lihanhong2002/dsh-minimax-multimodal) — 为 DeepSeek Harness 添加 MiniMax 识图、文生图、语音合成和语音转写工具。
 - [lijieyu233/dsh-codex-account-tools](https://github.com/lijieyu233/dsh-codex-account-tools) — 为 Codex 订阅插件提供账号 JSON 导入、预览与导出，支持重复识别和完整备份确认。需先安装 dsh-codex-subscription 3.2.6 或更高版本。
+- [lijiusa/dsh-workbuddy-daily-credits](https://github.com/lijiusa/dsh-workbuddy-daily-credits) — 输入框工具行卡片与 agent 工具一键领取 WorkBuddy 每日签到积分与福利积分；走官方网页 OAuth 登录，无需桌面客户端或第三方插件。
 - [lilixinsniper/dsh-intent-recognition](https://github.com/lilixinsniper/dsh-intent-recognition) — 五层意图识别流水线（规则、pgvector 向量检索、Jev 概率精判、微调仲裁、LLM 兜底），带场景管理界面、PostgreSQL 存储与可分发 API 服务。
 - [LIN-F1SH/dsh-prompt-lint](https://github.com/LIN-F1SH/dsh-prompt-lint) — 读你的历史会话，找出反复踩的提问坑（缺路径与版本、没定输出格式、漏说前置条件导致工具失败），每条给一段可直接粘贴的改写；输入框右侧一键把草稿改成更短的带约束版本。
 - [linfeicxy/dsh-idea-box](https://github.com/linfeicxy/dsh-idea-box) — 界面里一颗灯泡：写一句话或拖一张截图，回车就存成工作区里的 Markdown 文件。
@@ -9534,6 +9536,7 @@ dsh plugin --profile web add dshmarket
 - [cube-ai/dsh-feishu-client](https://github.com/cube-ai/dsh-feishu-client) — DSH飞书客户端：1）用户（人）通过本插件提供UI访问远端智能体；2）本地DSH通过调用本插件提供工具访问远端智能体。支持的远端智能体包括且不限于：DSH、OpenClaw、WorkBuddy、Weknora等等。
 - [CWNU-Open-Source-Community/dsh-webgate](https://github.com/CWNU-Open-Source-Community/dsh-webgate) — Web GUI 远程访问：局域网二维码直连、cloudflared 快速隧道、frp 自有服务器反代，内置登录门户，并放行设置接口。
 - [cyuni1996/dsh-watch](https://github.com/cyuni1996/dsh-watch) — 在 Android 手表上继续 DeepSeek Harness 会话，支持通过电脑端向导安装手表应用。
+- [czp0312/dsh-ssh-workspace](https://github.com/czp0312/dsh-ssh-workspace) — 在当前 DSH 窗口的原生侧栏中管理 SSH / WSL / Docker 项目。目录按环境归组，每个项目独立选择全量远程后端或本机 Agent 轻量模式；共享全量连接统一管理，轻量连接独立控制，并可比较、选择性同步本机 Skill。
 - [DamonKoy/dsh-web-ui#dsh-remote-web-ui](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-remote-web-ui) — dsh web GUI 移动端远程控制：扫码配对 QR 入口、一次性配对 token。
 - [DamonKoy/dsh-web-ui#dsh-ssh](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-ssh) — dsh web GUI 远程 SSH 操作：主机配置存储、持久化会话。
 - [danilinao/dsh-telegram-channel-ru](https://github.com/danilinao/dsh-telegram-channel-ru) — DeepSeek Harness 的 Telegram 遥控器：在手机上接续正在运行的 Web 会话并回答问题，界面为俄语。hi-wenw/dsh-telegram-channel 的俄语分支（MIT）。
