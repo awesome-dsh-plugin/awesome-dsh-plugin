@@ -1,0 +1,7 @@
+url: https://github.com/Hungry-M/dsh-deepseek-import
+name: Hungry-M/dsh-deepseek-import
+category: session
+icon: https://raw.githubusercontent.com/Hungry-M/dsh-deepseek-import/main/assets/icon-180.png
+description:
+  en: Imports DeepSeek web chat exports into DeepSeek Harness as new sessions, saving thinking and the full transcript as sidecar files.
+  zh: 把 DeepSeek 网页对话导出后重建为 DeepSeek Harness 会话，思考与完整原文作为旁挂文件保存。
