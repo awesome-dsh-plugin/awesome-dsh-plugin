@@ -1,0 +1,6 @@
+url: https://github.com/1997liuyh-boop/dsh-studio-cineflow
+name: 1997liuyh-boop/dsh-studio-cineflow
+category: tools
+description:
+  en: "CineFlow media player studio with DSH integration and a separately configured local Electron service."
+  zh: "CineFlow 影音播放工作室，提供 DSH 联动，需单独配置本地 Electron 服务。"
