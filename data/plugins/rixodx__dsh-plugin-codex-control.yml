@@ -1,0 +1,7 @@
+url: https://github.com/rixodx/dsh-plugin-codex-control
+name: rixodx/dsh-plugin-codex-control
+category: workflow
+description:
+  en: 'Local CLI bridge for Codex or terminals to create and continue conversations in the running Harness desktop/Web Host, query progress, wait for output, and cancel tasks.'
+  zh: '让 Codex 或终端通过本机 CLI 桥接正在运行的 Harness 桌面/Web Host，创建与续接界面会话、查询进度、等待输出和取消任务。'
+tarball: https://github.com/rixodx/dsh-plugin-codex-control/releases/download/v1.0.2/dsh-plugin-codex-control-1.0.2.tgz
