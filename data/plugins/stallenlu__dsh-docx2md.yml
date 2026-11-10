@@ -1,0 +1,7 @@
+url: https://github.com/stallenlu/dsh-docx2md
+name: stallenlu/dsh-docx2md
+category: docs
+tarball: https://github.com/stallenlu/dsh-docx2md/releases/download/v0.6.5/dsh-docx2md-0.6.5.tgz
+description:
+  en: 'Converts formula-bearing Word documents into Markdown with LaTeX, handling OLE equation objects, native Word OMML equations and image-based formulas; keeps equation numbers and structure.'
+  zh: '把含公式的 Word 文档转成带 LaTeX 的 Markdown：OLE、Word 原生 OMML、图片公式三种载体都处理，保留公式编号与结构。'
