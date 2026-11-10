@@ -684,6 +684,7 @@ dsh plugin --profile web add dshmarket
 - [FeiZhuNiU-INFJA/dsh-stock-ticker](https://github.com/FeiZhuNiU-INFJA/dsh-stock-ticker) — 一个悬浮的半透明行情小窗，实时显示上证指数、创业板指、科创50 与恒生科技的当前点位与涨跌幅。
 - [FelixJiashengFu/dsh-recent-deliverables](https://github.com/FelixJiashengFu/dsh-recent-deliverables) — DSH Web 的可拖动最近成品面板，合并已声明交付的文件与工作区最近修改的文件，支持文件名搜索、类型筛选、PDF/HTML/图片/文本内嵌预览，以及用桌面应用打开或在文件管理器中定位。
 - [feng-yifan/dsh-plugins#dsh-ask-highlight](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-ask-highlight) — 提问块高亮：把对话里已答复的「提问 n/n 已回答」工具块用柔和卡片样式凸显；等待中的提问块与其它工具块保持原样；可选择让提问块默认展开，设置页可配。
+- [feng-yifan/dsh-plugins#dsh-at-enhancement](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-at-enhancement) — @ 文件引用增强：扩展 Web GUI 的 `@` 补全，使其可逐级浏览并引用工作区外的任意绝对路径文件 / 目录（`@/`、`@~/`），选中后插入绝对路径（含空格时自动加引号）供模型读取。可在「设置 → 插件」中开关，关闭后与原生补全一致。
 - [feng-yifan/dsh-plugins#dsh-pwa-icon](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-pwa-icon) — PWA 图标：把 Web GUI 安装/添加到桌面时使用的图标（以及 manifest 应用名）换成自定义内容，包内自带默认图标集，也可配置自己的图片。
 - [feng-yifan/dsh-plugins#dsh-vertical-layout](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-vertical-layout) — 竖屏布局：电脑竖屏窗口下，导航占左列整高，文件/终端面板移到对话区上方，中间的分隔线可拖拽调整高度；手机/平板不受影响。
 - [fengb3/dsh-session-icons](https://github.com/fengb3/dsh-session-icons) — 侧边栏会话标题图标：标题生成时用同一路由的辅助模型调用画一枚 24×24 单色 SVG 隐喻图标，显示在每行标题左侧，带磁盘缓存。
@@ -8984,6 +8985,7 @@ dsh plugin --profile web add dshmarket
 - [f-e-n-g-0531/dsh-code-report](https://github.com/f-e-n-g-0531/dsh-code-report) — 比较多个 Git/SVN 项目的版本差异，导出中文 Markdown 发布报告，并可明确授权模型分析。
 - [fakechris/dsh-harness-ops#dsh-restart-recover](https://github.com/fakechris/dsh-harness-ops/tree/main/plugins/dsh-restart-recover) — DeepSeek Harness web 重启恢复：崩溃或重启后，被打断的 agent 回合自动继续（host 侧 agent/created 监听，无浏览器时序竞态）。
 - [fancr-code/dsh-tray-launcher](https://github.com/fancr-code/dsh-tray-launcher) — Windows 系统托盘启动器：无窗口后台启动 dsh web（VBS/powershell 链），托盘菜单支持打开界面、日志、图标预设、开机自启与重启 Harness，一键安装与更新内置的 dsh-plugin-usage-meter，并可作为 dsh 插件安装使托盘随 Harness 一起启动。
+- [feng-yifan/dsh-plugins#dsh-alertmanager](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-alertmanager) — DSH 侧栏的 AlertManager 告警面板：并行读取多个 AlertManager HTTP API v2 实例，把告警聚合为可按搜索 / 状态 / 级别 / 实例筛选的严重度卡片；勾选任意告警并选择工作区后一键新建会话，把按实例分组的告警作为首条消息发给 agent 立即处理。支持每实例独立鉴权与 TLS、自动刷新，以及可配置的派发提示词。
 - [first-fluke/oh-my-agent#dsh](https://github.com/first-fluke/oh-my-agent/tree/main/integrations/dsh) — 在工具执行前后以及尝试结束当前轮次时运行项目 OMA 检查。随插件安装 OMA CLI 依赖，并在首次使用时初始化未配置的项目。需要 Node.js 22+；首次初始化需要网络连接和项目目录写入权限。
 - [Fishquito7/dsh-skill-mcp-panel](https://github.com/Fishquito7/dsh-skill-mcp-panel) — 在 DSH Web 设置中管理技能与 MCP 服务器：技能卡片热启停、工作区作用域、分组、批量迁移与拖拽导入，以及 stdio/HTTP MCP 增删改查、连接测试、密钥脱敏，并附带统一 dsh-panel 命令行。
 - [FleetingEcho/dsh-powerdesk](https://github.com/FleetingEcho/dsh-powerdesk) — DSH Web 界面的可停靠 IDE 工作台：GPU 加速终端（restty 渲染器 + Rust PTY）、CodeMirror 编辑器、文件浏览器、笔记、沙箱浏览器，以及基于 ripgrep 的内容搜索。
