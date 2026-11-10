@@ -1,0 +1,7 @@
+url: https://github.com/dshbot-by-TingXia/dsh-tg-tools
+name: dshbot-by-TingXia/dsh-tg-tools
+category: notify
+description:
+  en: 'Telegram tools for DSH sessions: list chats, read cached messages, send text, photos, stickers, GIFs and dice, set reactions, forward/edit/delete messages, typing and chat members, plus optional getUpdates polling that wakes the target session. Bot API only, no MTProto.'
+  zh: '给 DSH 会话用的 Telegram 工具：列 chat、看缓存消息、发文字/图片/贴纸/GIF/骰子、加 reaction、转发/编辑/删除、typing、查成员，可选开启 getUpdates 轮询并唤醒目标会话。只走 Bot API，不依赖 MTProto。'
+tarball: https://github.com/dshbot-by-TingXia/dsh-tg-tools/releases/download/v1.0.0/dsh-tg-tools-1.0.0.tgz
