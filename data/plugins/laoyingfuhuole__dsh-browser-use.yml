@@ -2,5 +2,5 @@ url: https://github.com/laoyingfuhuole/dsh-browser-use
 name: laoyingfuhuole/dsh-browser-use
 category: browser
 description:
-  en: 'Background browser automation for DSH: one Electron host gives each conversation its own window, with shared login state, CDP input, snapshot refs and no focus stealing.'
-  zh: '面向 DSH 的后台浏览器自动化插件：一个 Electron host 为每个对话分配独立窗口，共享登录状态，支持 CDP 输入与快照 ref，不抢焦点。'
+  en: 'Fully background browser automation for DSH: an offscreen browser per conversation that never steals focus or pops windows, with real CDP input.'
+  zh: '完全后台静默运行的浏览器自动化：每个对话一个离屏浏览器，不抢焦点、不弹窗，提供真实 CDP 输入。'
