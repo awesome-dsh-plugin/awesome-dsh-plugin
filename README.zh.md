@@ -5587,6 +5587,9 @@ dsh plugin --profile web add dshmarket
 - [liuhange789/data-asset-inspector#match-registration-agency](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/match-registration-agency) — 登记机构匹配插件 — 基于数据类型推荐数据交易所/登记机构
 - [liuhange789/data-asset-inspector#registration-precheck](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/registration-precheck) — 登记预检插件 — 按国家数据产权登记规则做四项检查（国家安全、来源合规、权属纠纷、材料真实性承诺），并输出《登记预检报告》。
 - [liuhange789/data-asset-inspector#research-data-provenance](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/research-data-provenance) — 科研数据溯源审计插件，审计血缘完整性、可复现性与FAIR原则合规性，输出溯源审计报告，支撑科研诚信与开放科学。
+- [liuhange789/data-asset-inspector#underground-pipeline-inspector](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/underground-pipeline-inspector) — 地下管线数据质量检查插件 — 检测覆盖率、接边精度、流向合理性，输出质量评分
+- [liuhange789/data-asset-inspector#visibility-doctor](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/visibility-doctor) — dsh 插件曝光度诊断与采用率提升 CLI 工具
+- [liuhange789/party-eco-agent](https://github.com/liuhange789/party-eco-agent) — 党建引领街边产业生态协作插件 — 企业画像、供需匹配、政策解析、诉求派单
 - [LiuJiaCheng11/dsh-postman](https://github.com/LiuJiaCheng11/dsh-postman) — 用 9 个工具在 dsh 里管理 Postman 云端集合——列出、浏览、新增（单个或批量）、修改、删除接口，导出或整体覆盖集合。
 - [liwei9745/dsh-genbox-plugin](https://github.com/liwei9745/dsh-genbox-plugin) — 通过本地 GenBox 服务生图、改图、生视频，并用 ffmpeg 本地剪辑；自带零成本测试台。
 - [liwuzhan/agent-native-trade#dsh-plugin](https://github.com/liwuzhan/agent-native-trade/tree/main/packages/dsh-plugin) — 为模型原生交易提供目录检索、交易方联络、合同签名、结算协调、人工任务交接和签名评价回执工具。
