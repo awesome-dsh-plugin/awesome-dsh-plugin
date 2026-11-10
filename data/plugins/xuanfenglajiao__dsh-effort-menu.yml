@@ -1,0 +1,6 @@
+url: https://github.com/xuanfenglajiao/dsh-effort-menu
+name: xuanfenglajiao/dsh-effort-menu
+category: ui
+description:
+  en: 'Replaces the composer model menu with a recent-models list, an all-providers flyout and a draggable reasoning-effort slider. It takes over the composer model slot, so install only one model-menu plugin.'
+  zh: '把输入框的模型菜单换成最近模型列表、全部模型飞出面板和一条可拖动的思考强度滑杆。它接管输入框的模型位，请只装一个模型菜单类插件。'

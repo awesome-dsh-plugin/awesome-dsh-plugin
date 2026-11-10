@@ -1,0 +1,8 @@
+url: https://github.com/991206772-debug/dsh-agentrix
+name: 991206772-debug/dsh-agentrix
+category: workflow
+description:
+  en: 'DSH Agentrix coordinates native subagents with task planning, configurable execution and review models, progress tracking, and evidence-based acceptance. Verified only on Windows with PowerShell 7 (pwsh) and Git; other systems are untested.'
+  zh: 'DSH Agentrix 提供多 Agent 编排与验收，主控拆分任务，子代理按角色模型执行和审查，展示进度并保留验证证据。目前仅在 Windows + PowerShell 7（pwsh）+ Git 环境验证，其他系统未验证。'
+icon: https://raw.githubusercontent.com/991206772-debug/dsh-agentrix/main/assets/icon.png
+tarball: https://github.com/991206772-debug/dsh-agentrix/releases/download/v1.7.3/dsh-agentrix.tgz

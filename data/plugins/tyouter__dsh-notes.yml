@@ -1,0 +1,7 @@
+url: https://github.com/tyouter/dsh-notes
+name: tyouter/dsh-notes
+category: ui
+description:
+  en: 'A notebook inside DeepSeek Harness: one page, typeset as you type. Two spaces make a bullet, four the next level. A one-second pause brings a suggestion that TAB accepts and one Backspace removes. Structure and Translate write a draft that only lands when you apply it. History edits in place and copies standard Markdown. The board answers questions from the notebook with its own read-only query tools and pins the charts it builds. An immersive mode takes the page full screen, and the footer wraps rather than hiding a button in a narrow pane.'
+  zh: 'DeepSeek Harness 里的笔记本：一页纸，边写边排版。两个空格是项目符号，四个空格是下一级。停一秒出现建议，TAB 采纳、一次 Backspace 收回。结构化与翻译只写成草稿，应用后才落进正文。历史页就地编辑，并可复制标准 Markdown。看板用只读查询工具回答关于笔记的问题，并把图表钉在看板上。沉浸模式让页面独占整屏；面板变窄时页脚换行而不是隐藏按钮。'
+icon: https://raw.githubusercontent.com/tyouter/dsh-notes/main/docs/marketing/icon-180.png

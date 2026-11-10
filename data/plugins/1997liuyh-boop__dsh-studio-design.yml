@@ -1,0 +1,6 @@
+url: https://github.com/1997liuyh-boop/dsh-studio-design
+name: 1997liuyh-boop/dsh-studio-design
+category: dev
+description:
+  en: 'Design studio with MasterGo MCP node inspection, built-in implementation prompts and Reborn UI references. Needs the MasterGo desktop app with Vibe MCP enabled, and the dsh-studio-projects runtime and the dsh-worktable container from 1997liuyh-boop/dsh-studio-library installed first.'
+  zh: '设计工作室，提供 MasterGo MCP 节点检查、内置实现提示词及 Reborn UI 参考。需本机 MasterGo 桌面端并开启 Vibe MCP，且先安装 1997liuyh-boop/dsh-studio-library 的 dsh-studio-projects 运行时与 dsh-worktable 容器。'

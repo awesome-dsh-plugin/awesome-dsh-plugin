@@ -1,0 +1,7 @@
+url: https://github.com/haodanhui521/dsh-model-protocol-matrix
+name: haodanhui521/dsh-model-protocol-matrix
+category: model
+description:
+  en: 'Per-model wire protocol for DeepSeek Harness (desktop profile only): compiles model-level protocol intent into legal llm-pi-ai provider routes, probes Chat Completions, Responses and Anthropic Messages with a differential control probe, and lets you hide models no protocol can serve. Mutually exclusive with dsh-gearbox.'
+  zh: '让 DSH 的每个模型单独选择请求协议（仅 desktop profile）：把模型级协议意图编译成合法的 llm-pi-ai 路由，用对照探针实测 Chat Completions、Responses、Anthropic Messages 三种协议，并可把任何协议都不可用的模型从选择器隐藏。与 dsh-gearbox 二选一。'
+icon: https://raw.githubusercontent.com/haodanhui521/dsh-model-protocol-matrix/master/assets/icon-180.png
