@@ -1212,6 +1212,7 @@ dsh plugin --profile web add dshmarket
 - [MarushiruDonato/dsh-rgb](https://github.com/MarushiruDonato/dsh-rgb) — 为 DeepSeek Harness 提供 RGB 动效：消息输入框光环、侧边栏光条、活动会话指示器与品牌 Logo 矢量发光。
 - [matata2017/dsh-paste-collapse](https://github.com/matata2017/dsh-paste-collapse) — Codex 同款粘贴折叠：DSH 输入框里超过 1000 字符的粘贴变成 `[Pasted Content N chars]` 占位符，同样长度再粘一次编成 `#2`；模型读到之前宿主把占位符换回全文，一个字符不少。输入框上沿留一枚胶囊显示预览，发出的消息里也是同一枚胶囊，点开在右侧抽屉看全文并复制。全部在内存里：不写磁盘，也不省 token。
 - [Matcha-Eason/dsh-answer-highlighter](https://github.com/Matcha-Eason/dsh-answer-highlighter) — 在 DSH Web 的助手回答完成后，额外调用一次模型，自动高亮其中的关键点、定义、警告和问题。
+- [Matthew-Laplace/dsh-conversation-archive](https://github.com/Matthew-Laplace/dsh-conversation-archive) — 在 DSH 里用 Codex CLI 重建 Codex 对话窗口：浏览本机线程、查看历史，并通过 CLI 把消息发回原线程。
 - [Max-Null/dsh-chat-rail](https://github.com/Max-Null/dsh-chat-rail) — DeepSeek Harness 画卷式消息导航栏：会话面板右侧一条竖排导轨，每条用户消息一个指示点，scroll-spy 跟随阅读位置，hover 展开画卷查看完整消息预览，点击跳转任意历史消息；与 better-sidebar 面板动画同步避让。
 - [Max-Null/dsh-node-appearance](https://github.com/Max-Null/dsh-node-appearance) — DeepSeek Harness Web GUI 会话节点外观插件：按节点类别/工具名可配置着色（左侧色条 + 淡色底），附带"显示思考过程"开关；纯前端渲染增强，改动即时生效并持久化到 DSH 用户设置文件。
 - [Max-Null/dsh-quick-toolbar](https://github.com/Max-Null/dsh-quick-toolbar) — 插钮聚合器（载体+驻场 LLM 范式）：把任何插件的散落按钮聚合到统一入口（SSiD 标题栏 / web 悬浮球）——LLM 按环境注册、右键删除=注销，纯数据零代码，不动插件源码。
@@ -1896,6 +1897,7 @@ dsh plugin --profile web add dshmarket
 - [xiamubumu/dsh-composer-launcher](https://github.com/xiamubumu/dsh-composer-launcher) — 启动器面板：统管能力组合、插件清单与 MCP 桥，并引导安装浏览器标签页扩展。
 - [XIANGDEEN/dsh-sidebar-video-player](https://github.com/XIANGDEEN/dsh-sidebar-video-player) — 右侧栏视频播放器：文件夹播放列表支持首帧缩略图、时长、按名称/时长/修改时间/大小排序、全屏，以及写权限文件夹下的重命名/复制/删除/刷新右键菜单；同时显示缓冲区间、解码帧率与丢帧，并只读解析 MP4/MOV 的编码档次/级别、精确帧数、每轨码率与旋转；不注册智能体工具，文件写入仅在用户以写权限选择文件夹后通过浏览器 File System Access API 执行。
 - [xianrui69/dsh-quick-phrases](https://github.com/xianrui69/dsh-quick-phrases) — 为 DeepSeek Harness 增加可拖拽、位置会记住的快捷短语条，以及 `/` 触发的短语菜单；每条短语可单独设置置顶、斜杠菜单、是否上条和点击即发送。
+- [xiao-xiao-bai-ya/dsh-cn-menu-kit](https://github.com/xiao-xiao-bai-ya/dsh-cn-menu-kit) — 技能与命令的中文增强：菜单中的技能显示中文标题、支持中文搜索与悬浮详情，命令与技能的顺序可自由拖拽。
 - [Xiaofei-fei/dsh-prompt-history](https://github.com/Xiaofei-fei/dsh-prompt-history) — 为 DSH Web 输入框提供终端式体验：↑/↓ 历史（前缀搜索、Ctrl+R）、Codex 风格的历史补全与下一句预测（Tab/→ 接受）、选中工具栏（复制/引用/侧聊追问）、右键直接粘贴、可拖动会话目录，以及能在右栏并行跑第二条 agent 线程的侧聊（fork 全上下文、浮动/分屏、双向桥接、并发写提醒）。
 - [xiaokaizhou/dsh-media-preview](https://github.com/xiaokaizhou/dsh-media-preview) — 在 DSH 聊天记录中自动将本地音视频路径渲染为可播放预览：将路径替换为同源 /api/media-preview/* 路由支持的 <audio>/<video> 播放器，并返回明确的错误状态码。
 - [XiaoLuoMin/dsh-resource-monitor](https://github.com/XiaoLuoMin/dsh-resource-monitor) — DSH 侧栏的 Windows 资源监控：每 60 秒采集 CPU、内存与主频，保留 30 天历史，CPU 与内存各一张 24 小时 / 7 天独立曲线（带 85% / 90% 告警线），另有一张频率曲线标注有负载时的降频，并判定 CPU 持续 ≥ 85%（10 分钟）、内存持续 ≥ 90%（10 分钟）、有负载时频率 ≤ 最高频率 70%（5 分钟）三类异常。
@@ -4600,6 +4602,7 @@ dsh plugin --profile web add dshmarket
 - [EvoMap/evolver-dsh-plugin](https://github.com/EvoMap/evolver-dsh-plugin) — 越用越聪明的 harness，告别金鱼记忆。每条 prompt 前，Evolver 从本地经验和 EvoMap 网络召回一条验证过的策略；回合结束后，它凭测试结果、改动是否被保留、你的下一句反馈给策略打分，再回报网络按证据加权。每一次成功都变成下一次的捷径，每一次失败都变成下一次的避坑指南。
 - [fangqiing/dsh-knowledge-lite](https://github.com/fangqiing/dsh-knowledge-lite) — 本地知识库：每篇笔记一个 Markdown 文件，支持标签、层级目录、全文检索、附件用系统默认程序打开、Office 零依赖文本抽取，以及引用到对话。面向宿主 DSH 0.2.0-rc.2；Windows 下默认根目录为 E:/dsh-kb。
 - [fanyingnie2163663/dsh-whale-journal](https://github.com/fanyingnie2163663/dsh-whale-journal) — 给陪伴型 agent 的日记 / 叙事记忆：按天、按 scope 写「自己视角」的话，每条尽量能回指到当天的消息；附带只读日记页（简笔画 / 照片跟着句子走）与接地审计。
+- [faruzanCN/dsh-memory-cloud](https://github.com/faruzanCN/dsh-memory-cloud) — 把 DSH 全部会话记忆可视化为可交互的 3D 星云，提供神经元信号皮肤、按记忆量缩放的星云团、缩放分级细节，以及基于 SSE 的实时存取活动流。
 - [Firefox2100/dsh-agentic-roleplay#state](https://github.com/Firefox2100/dsh-agentic-roleplay/tree/main/packages/dsh-roleplay-state) — 为 DSH 角色扮演插件提供持久化 SQLite 会话状态、故事记忆与回忆、数据仓库以及面向模型的记录工具。
 - [fish9988/dsh-supermemory](https://github.com/fish9988/dsh-supermemory) — 基于 Supermemory 的跨会话长期记忆：在 pre-step 按需执行语义与历史对话片段召回（同会话去重、首轮附带静态画像），回合结束后防抖上传脱敏对话并由后台模型提炼增删改事实（字面二元组与向量语义双层查重），提供 memory_search、memory_save、memory_forget 三个工具，支持全局或按工作区分库，并内置插件设置页管理 API Key、增删改查记忆、预览召回结果与查看活动日志。需自备 Supermemory API Key（有每月免费额度），对话片段会上传到 Supermemory 云端。
 - [fjzzwxp/dsh-mnemosyne-memory](https://github.com/fjzzwxp/dsh-mnemosyne-memory) — DSH 永久记忆插件，支持向量搜索、LLM 反思和知识页面生成。
@@ -6026,6 +6029,7 @@ dsh plugin --profile web add dshmarket
 - [taxueseek/argo#dsh-plugin](https://github.com/taxueseek/argo/tree/main/packages/dsh-plugin) — 面向 agent 的统一搜索与证据核验：120+ 引擎多语言路由，垂直域与结构化模态卡，10 个 MCP 工具与 wide_research 编排，fetch 核验回填证据分的证据闭环。
 - [taxueseek/dsh-snippets](https://github.com/taxueseek/dsh-snippets) — DSH 极简片段/命令工具箱：5 个工具，一个可手工编辑的 JSONL 文件，零 UI、零数据库、零网络，只有明确说存才存。
 - [TecFancy/dsh-deeptutor](https://github.com/TecFancy/dsh-deeptutor) — DeepTutor 学习辅导桥接插件：通过 deeptutor_run / deeptutor_kb / deeptutor_note 工具为 agent 接入深度讲解、自测题、学习路径规划、个人知识库检索（RAG）与笔记归档。
+- [tedcriss/dsh-matlab](https://github.com/tedcriss/dsh-matlab) — 把 MathWorks 的 MATLAB Agentic Toolkit 技能与 MATLAB MCP Server 工具接入 DeepSeek Harness。
 - [Tencent/WeKnora#dsh-weknora](https://github.com/Tencent/WeKnora/tree/main/packages/dsh-weknora) — 把 WeKnora 知识库接入 dsh 的四个只读工具：列出知识库、混合检索原文片段、按顺序还原单篇文档，以及直接取用 WeKnora 自己带引用的 RAG 或 ReAct agent 回答（含可续聊的 session id）。
 - [TencentCloudBase/CloudBase-AI-Toolkit#dsh-plugin](https://github.com/TencentCloudBase/CloudBase-AI-Toolkit/tree/main/dsh-plugin) — 把腾讯云 CloudBase 后端接入 DeepSeek Harness——在对话里搭好并部署全栈应用，查询结果渲染为表格卡片（分页、排序、导出 CSV），部署后可预览真实域名，并提供 CloudBase MCP 工具集（`mcp__cloudbase__*`），登录走 device-code 流程。
 - [terry2010/dsh-rss-news-daily](https://github.com/terry2010/dsh-rss-news-daily) — 方便等待 AI 回复时看一眼新闻的 RSS/新闻阅读器。内置订阅源库，可自定义源；抓取管线自动翻译外文新闻、LLM 逐条评分，自动生成每日「日报」和每小时「快报」，解决信息过载；具有数据备份恢复，偏好自定义等功能。
@@ -6462,6 +6466,7 @@ dsh plugin --profile web add dshmarket
 - [Chaos-Paradox/dsh-search-proxy](https://github.com/Chaos-Paradox/dsh-search-proxy) — 提供 SearXNG 网页搜索，支持托管本地运行环境、连接已有实例、Web 设置及可选的 DSH 进程代理。
 - [chendefine/dsh-web-fetch-playwright](https://github.com/chendefine/dsh-web-fetch-playwright) — 为内置 web_fetch 工具提供 Playwright/CDP 后端：用真实浏览器渲染网页，经 Readability + DOMPurify 降噪后返回 Markdown。
 - [chendefine/dsh-web-search-aggregation](https://github.com/chendefine/dsh-web-search-aggregation) — 聚合式网页搜索提供方：为内置 web_search 工具提供一条按优先级排序的搜索队列，覆盖 AnySearch、TinyFish、Tavily、Brave、Exa、Firecrawl、Jina、SerpApi、Serper 九家服务，每家支持多把 API Key 轮换，失败时逐级回退，并附带实时生效的设置卡片。
+- [Chenghui-Liang/dsh-web-pick](https://github.com/Chenghui-Liang/dsh-web-pick) — 在 DSH 桌面版内置浏览器里加一个元素 / 区域选取层：悬停显示所指元素，点选记下元素、拖框记下矩形，每条当场在选取框旁弹小卡片写说明；整批会写成一段文字插进对话输入框，并把每条裁剪截图作为附件挂上，不会自动发送，检查、改完再自己按回车。仅桌面版可用：Web 版浏览器是 iframe，选取层不会出现。
 - [Chip-G0202/dsh-deepseek-search-account](https://github.com/Chip-G0202/dsh-deepseek-search-account) — 为聊天模型走第三方订阅或网关（例如 OpenCode Go）的 DeepSeek Harness 会话提供基于已登录 DeepSeek 账号的网页搜索与抓取：注册 deepseek-account-search 和 deepseek-account-fetch 两个提供方，用账号 token 调用官方 Search / Fetch API，无需 DEEPSEEK_API_KEY 也能让内置 web_search 与 web_fetch 继续可用。
 - [CJYLZS/dsh-browser](https://github.com/CJYLZS/dsh-browser) — 让 agent 在一台真实 Chrome 或 Edge 里干活，侧栏同步镜像，你能看着，也能随时接手：每个对话一台独立的浏览器进程，各自的 profile 与 CDP 端口，登录态不会在对话之间串。它驱动机器上已有的 Chrome 或 Edge，不下载浏览器，不需要配套应用或扩展；侧栏镜像开着时，另一个 Playwright 或 DevTools 也能附加到同一个 CDP 端口。
 - [clusterstar1229/dsh-sidebar-control](https://github.com/clusterstar1229/dsh-sidebar-control) — 控制 DSH 右栏内置 Browser 的 Agent 插件：快照返回编号控件，支持点击/输入/按键/选择/滚动，按问题检索阅读与变化对比，一次调用最多 12 步，并可切换和关闭多个标签。
@@ -7104,6 +7109,7 @@ dsh plugin --profile web add dshmarket
 - [sharework-ai/dsh-docwright](https://github.com/sharework-ai/dsh-docwright) — 面向 DeepSeek Harness 的文档生成插件：以 JSON 为核心输出物，结构化管理文档内容输出；统一规范文档生成过程中的参数定义与继承、素材提取、校验结果检查及评分机制，使文档生成紧扣要求，快速且节约 Token；内置 COSMIC 文档生成场景包作为范例，并内置编写场景包的指南。
 - [shshjjj456/dsh-mp4](https://github.com/shshjjj456/dsh-mp4) — 用原生播放器在 DSH 右栏播放 MP4 / M4V / MOV，替掉「此文件类型不支持预览」的占位提示。
 - [simikangtao/dsh-storyboard](https://github.com/simikangtao/dsh-storyboard) — 对话收尾可视化故事板：storyboard 工具把 JSON 规范渲染为自包含 HTML 卡片（内嵌 SVG 流程图、编号步骤、事实网格、时间线），写入 ~/.dsh/storyboard/<session>/ 并在侧边栏打开；系统提示词段落与 /storyboard 命令触发生成。纯服务端、零运行时依赖。
+- [sisyphus1212/dsh-local-markdown-notes](https://github.com/sisyphus1212/dsh-local-markdown-notes) — 本地 Markdown 笔记面板：导入任意本地文件夹，在侧边栏树形浏览其中的 Markdown，就地编辑并自动保存，支持跨文件夹全文检索。为每个文件显示只读的 Git 上下文——状态、与 HEAD 的差异（逐行变更标记）、逐行 blame——并提供 notes_* 六个工具，让 Agent 直接操作同一批文件夹。文件留在原处，插件从不提交、暂存或检出。
 - [SkanderBog/dsh-pdf-reader](https://github.com/SkanderBog/dsh-pdf-reader) — 读取和搜索本地 PDF 并提供页码引用，将页面渲染为图片，可用 Tesseract 对扫描页或混合页面进行 OCR；需要 Poppler。
 - [SongFengManZhu/dsh-deep-reading-wl](https://github.com/SongFengManZhu/dsh-deep-reading-wl) — 扫描版教材流水线：在本机 Python 3.10+ 环境（需 pymupdf、rapidocr、openvino、numpy）下，OCR 提速约 5 倍，先出骨架地图，再按章阅读。
 - [stallenlu/dsh-docx2md](https://github.com/stallenlu/dsh-docx2md) — 把含公式的 Word 文档转成带 LaTeX 的 Markdown：OLE、Word 原生 OMML、图片公式三种载体都处理，保留公式编号与结构。需要 Python 3.9+（或 uv）；OLE 与图片公式由具备视觉能力的模型读渲染图转写，渲染需 Windows 或 LibreOffice。
@@ -7119,6 +7125,7 @@ dsh plugin --profile web add dshmarket
 - [tylina/dsh-tylina#bundle-wasm](https://github.com/tylina/dsh-tylina/tree/main/bundle-wasm) — Typst 文档编辑工具：WYSIWYG 编辑排版论文、报告、试卷、简历、图表、海报、乐谱和可导出为 PPTX 的 Slides。
 - [UnitySirx/dsh-kp-notes#dsh-kp-notes](https://github.com/UnitySirx/dsh-kp-notes/tree/main/plugin/dsh-kp-notes) — DeepSeek Harness 知识点笔记插件：把 Markdown 笔记目录变成卡片式学习画布，目录 = 章节、文件 = 小节、正文 = 知识点；题目可遮挡答案自测，支持 KaTeX 公式、Mermaid 流程图、思维导图与面板内编辑。
 - [Velestia-star/dsh-docdesk](https://github.com/Velestia-star/dsh-docdesk) — 只收主动加入的 Markdown 文档，支持工作区挑选、带指针滞回的固定网格拖拽、右键框选与批量移入文件夹、文件夹解散/删除、移动与行高亮持久标记、全屏标签页与沉浸式阅读、GFM 表格、书签，以及 Mermaid/代码块图表本地渲染。
+- [violector/dsh-latex-studio](https://github.com/violector/dsh-latex-studio) — 面向 Windows 桌面版的 LaTeX 工作区，提供 24 个模板入口、dsh AI 写作与选区修改、受管 TeX 编译、PDF 预览和 BibTeX 校验。
 - [void2anything/dsh-qingagent](https://github.com/void2anything/dsh-qingagent) — 青简写作桥：agent 通过 qing_ 前缀工具起草改稿，右侧宣纸面板排版呈现（mermaid、drawio、表格、公式）；每处修改先摆在纸上供审阅，提交才落稿。需本机运行开源的青简桌面客户端。
 - [w4xxx/dsh-xia-plugins#packages/gameassist-knowledge](https://github.com/w4xxx/dsh-xia-plugins/tree/main/packages/gameassist-knowledge) — 树状 Markdown 知识库：为 DSH Agent 提供 kb_list/kb_read/kb_write 工具、目录/正文 HTTP 接口，并配套浏览器面板。
 - [walvka-code/proj-doc-builder](https://github.com/walvka-code/proj-doc-builder) — 用随包的 Python 3.12+ 工具扫描仓库，为每个源码目录生成一份 Markdown 大纲，并随索引发布可证明文档与代码一致的哈希 manifest；自带读取器在输出概览或单份文档前会先校验 manifest。项目根需已有 project_docs/ 目录与 CLAUDE.md 入口。
