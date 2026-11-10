@@ -137,7 +137,7 @@ dsh plugin --profile web add dshmarket
 - [syyr1987/dsh-linghun-assembler](https://github.com/syyr1987/dsh-linghun-assembler) — 灵魂的记忆提取侧·认知循环团队版：判断→捞取→组装→被判定→校准五步闭环，判官/捞手/史官/辩手/编辑/书记角色化子智能体承载，BM25 检索 + 时序素材 + LLM 组装「有用素材包」注入 linghun。与 dsh-linghun 组合使用。
 - [Tests4gptplay/deepseek-servant](https://github.com/Tests4gptplay/deepseek-servant) — DSH 自主 AI 助理与多 Agent 协作：通过前台对话明确目标，后台规划、多 Worker 执行与结果验收，支持暂停接续、故障恢复、任务历史与成果记录、工作记忆和技能积累，提供标准本地模式及可选的实验性私有 Git 协作。
 - [Tisitan/dsh-my-go](https://github.com/Tisitan/dsh-my-go) — 多智能体编排预设：主编（Sisyphus）调度 + 内置工种名册 + 报告落板；读/写双泳道池化编排、按工种绑定模型，含 go_work/continue/need_help/forward 通信，以及 Web UI 树状图面板与设置页。
-- [tyr1105/dsh-buddy#dsh-buddy](https://github.com/tyr1105/dsh-buddy/tree/main/packages/plugin) — 在 DSH 里组建 AI 团队：给队友分配角色和项目任务，交付由你验收，不合格就退回重做。队友自己盯文件、网页和日志，有事才调用模型，需要拍板或出问题时才来找你。
+- [tyr1105/dsh-buddy#dsh-buddy](https://github.com/tyr1105/dsh-buddy/tree/main/packages/plugin) — 带像素办公室的 AI 团队：显示每位队友当前的状态和当天做过的事。项目会话由负责人安排分工，队友互相 @；队友每天自己开工的次数和 token 有上限。仅支持 macOS 上的 DSH 桌面版。
 - [WDahah/portable-dsh-multi-agent-plugin](https://github.com/WDahah/portable-dsh-multi-agent-plugin) — 把任务派给一个模型、把评审交给另一个模型，并带有资格证据、故障转移与持久日志。
 - [ws1234567891011/dsh-interim-narration](https://github.com/ws1234567891011/dsh-interim-narration) — 让 agent 边做边说：每轮先用一两句说明怎么理解消息、准备怎么做、第一步是什么，并在工具调用批次之间写过程叙述；插件页可直接调整详略、句数上限与开关。
 - [wuanthony397-hash/dsh-codex-peer](https://github.com/wuanthony397-hash/dsh-codex-peer) — 让 DeepSeek Harness agent 与本机 Codex CLI 对等协作：把目标拆成共享工作清单、派活与交接、互相审查，并把每一步的提示词、事件流与回答留档在本地。
@@ -8014,6 +8014,7 @@ dsh plugin --profile web add dshmarket
 - [stuarthu/dsh-crew](https://github.com/stuarthu/dsh-crew) — 以角色团队的方式干活：产品经理先写 PRD 或 DoD 并等你确认，再启动架构师、工程师、QA 与各类评审；每个角色的工具集按角色锁定，彼此通过磁盘文件协作。
 - [sueqet/dsh-complex-project-preset](https://github.com/sueqet/dsh-complex-project-preset) — 给 DSH 的 Agent 预设：标准模式的工具栈，外加写进人格提示的四条工作纪律——每个项目最多四个文档（项目介绍、方案设定、改动记录、现状与下一步）；文档只写当前状态，不记 AI 修改历史、不留被推翻的旧方案；用户没有明确指令就不提交、不推送、不开 PR；动手前先复述目标与验收标准、只做手术式最小改动、没验证不说已修复，汇报用大白话。
 - [sunaono1/dsh-plugin-dual-brain](https://github.com/sunaono1/dsh-plugin-dual-brain) — 双脑协作 agent 预设：主脑先出框架，再把执行步骤委派给锁定另一模型的子代理。内置 brain-ds（DeepSeek-V4.1-Flash 规划、MiMo-V2.6-Flash 执行）与 brain-mimo（反向），按会话切换。需配置 Xiaomi MiMo 与 DeepSeek 账号两个 provider，主脑须手动选择。
+- [SunneeYang/LogicMargin#deepseek-harness](https://github.com/SunneeYang/LogicMargin/tree/main/plugins/deepseek-harness) — 用有来源依据的流程图和代码差异开展人工评审，保留批注、回复与多轮修订。
 - [SuperWheel/dsh-cliworker-now](https://github.com/SuperWheel/dsh-cliworker-now) — 适用于 macOS / Windows 和 DeepSeek Harness 0.2.0-rc.2 的多 CLI 智能体侧栏插件，提供任务派遣、实时对话查看、停止与续聊及自定义角色预设。
 - [sxwer001/dsh-collab-dev](https://github.com/sxwer001/dsh-collab-dev) — 保存架构和可校验计划，批准后通过原生 AgentTeams 并行开发与独立审查，并汇总进度、验证结果和交付阻塞。
 - [tangzheng202202/dsh-sparkos](https://github.com/tangzheng202202/dsh-sparkos) — 自媒体工作台插件：8 tab 看板（今日简报/叙事主线/选题/草稿/知识卡蒸馏审核/信息源/发布表现/系统建议），五守卫硬执行，VAULT 数据与代码分离，intel 模块只读接入并遵守四条红线。
@@ -10247,6 +10248,7 @@ dsh plugin --profile web add dshmarket
 - [TryDing-T/dsh-Plugin--ChineseChess](https://github.com/TryDing-T/dsh-Plugin--ChineseChess) — DSH 侧边栏中国象棋棋盘：用户执红，当前 DSH 模型执黑，Host 负责棋规与局面版本校验。
 - [txlznbzsdj-collab/dsh-deepseek-pet](https://github.com/txlznbzsdj-collab/dsh-deepseek-pet) — 浮动在 DSH Web 页面上的 DeepSeek 蓝色小鲸鱼桌宠：可拖拽，说话气泡与心情姿势随互动切换，模型可调用 pet_say 工具让它开口，对话开始/结束时自动进入思考与庆祝状态。
 - [uceqi114/dsh-ice-probe](https://github.com/uceqi114/dsh-ice-probe) — 在模型写出的每句话结尾（含思维链）补一个小冰块标记，并为每次补冰播放一声短促的合成音效。
+- [ukkyo1/dsh-novel-reader](https://github.com/ukkyo1/dsh-novel-reader) — 在对话窗口里阅读本地 txt 小说：自动识别章节，正文在助手思考块里分页显示，可点「下一章」在同一条回复里继续读，会记住阅读进度，可见回复是固定总结。
 - [use3346631993/dsh-xiaod-pet](https://github.com/use3346631993/dsh-xiaod-pet) — 鲸鱼正太 × 女仆装 × 二次元的桌面桌宠：四种表情跟随对话状态，可拖拽、点击切换；右下角立牌每轮显示 token 消耗与思考时间，点击有 q 弹与独立余额气泡；另附聊天壁纸、液态玻璃输入框；人格自称小D，称呼你为主人并带喵~ 等语气词；设置里可一键开关，还能自定义称呼。
 - [V01d-Project/dsh-chaos-plugins#dsh-chaos-crash-fixer](https://github.com/V01d-Project/dsh-chaos-plugins/tree/main/packages/dsh-chaos-crash-fixer) — 拆掉 dsh-chaos-rivals-crasher 的引信，让 DSH 在检测到 codex / Claude Code 时也不退出。警告：必须和一号插件一起装；宿主已经退出后它救不回来。玩笑插件。
 - [V01d-Project/dsh-chaos-plugins#dsh-chaos-fixer-crash-fixer](https://github.com/V01d-Project/dsh-chaos-plugins/tree/main/packages/dsh-chaos-fixer-crash-fixer) — 拆掉 dsh-chaos-fixer-crasher 的引信，让四个插件互相咬的链子保持稳定。警告：它只拆这一种崩溃，不处理其它未捕获退出。玩笑插件。
