@@ -1,0 +1,6 @@
+url: https://github.com/JJJACKsong/dsh-plugin-context-cleanup-master
+name: JJJACKsong/dsh-plugin-context-cleanup-master
+category: fun
+description:
+  en: 'A prank one-click cleanup ball: reports real recent-session token usage, plays a cleaner animation, then opens a brand-new session; it deletes nothing.'
+  zh: '整蛊向的一键清理悬浮球：统计近期会话的真实 token 消耗、播放管家式清理动画，最后打开一个全新会话；不删除任何数据。'
