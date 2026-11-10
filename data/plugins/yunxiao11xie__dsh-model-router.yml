@@ -1,0 +1,7 @@
+url: https://github.com/yunxiao11xie/dsh-model-router
+name: yunxiao11xie/dsh-model-router
+category: tools
+icon: https://raw.githubusercontent.com/yunxiao11xie/dsh-model-router/main/assets/icon-180.png
+description:
+  en: "Serial model orchestration: a delegate tool over a built-in catalog of current Chinese-market models (DeepSeek, GLM, Doubao, Hunyuan, MiniMax, MiMo, Kimi, Qwen, GPT). The main agent splits work, picks a model per subtask with a required reason, waits for each result, and falls back to a default model; every route is checked against the Session model-selection policy before a child starts."
+  zh: "串行模型编排层：内置国内现役模型档案（DeepSeek、GLM、豆包、混元、MiniMax、MiMo、Kimi、千问、GPT）的 delegate 工具。主代理拆解任务、按子任务特征自选模型并必填选型理由、串行等待结果、宽松兜底到默认模型；每条路由都先经会话模型选择策略校验。"
