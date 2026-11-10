@@ -1,0 +1,9 @@
+url: https://github.com/boyingliu01/dsh-aot-runner/tree/main/plugin
+name: boyingliu01/dsh-aot-runner#plugin
+category: dev
+description:
+  en: >-
+    Drop-in replacement for the Node.js subprocess runner with a NativeAOT binary,
+    cutting per-spawn overhead by 59-67% (p50 156ms to 63ms) while staying byte-identical
+    on 28 A/B cases; Windows x64 only and requires a one-line upstream patch.
+  zh: '子进程 runner 的 NativeAOT 替代实现：每次调用开销降低 59~67%（p50 156ms → 63ms），28 个用例与 Node 版字节级一致；仅限 Windows x64，且当前需要一个上游补丁。'
