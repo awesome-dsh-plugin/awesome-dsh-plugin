@@ -1,0 +1,7 @@
+url: https://github.com/Otto883/dsh-github-oss-radar
+name: Otto883/dsh-github-oss-radar
+category: tools
+description:
+  en: 'Standing GitHub-first open-source check: a system-prompt section makes the agent extract 1-4 keywords on every new request and make one cached, rate-limit-aware github_search call, so the answer can list up to five reusable repositories with stars, language, license, last push and topics.'
+  zh: '常驻的 GitHub 优先开源检索：系统提示词里常驻一节，让模型在每次新请求时先提取 1-4 个关键词，只发一次带缓存与限流保护的 github_search 请求，回答前列出最多五个可复用仓库及其星标、语言、许可证、最近推送与话题。'
+icon: https://raw.githubusercontent.com/Otto883/dsh-github-oss-radar/main/assets/icon-512.png
