@@ -1,0 +1,6 @@
+url: https://github.com/tangyixiao/dsh-pr-release-workspace
+name: tangyixiao/dsh-pr-release-workspace
+category: git
+description:
+  en: Read-only GitHub pull request and release workspace for DSH with diffs, comments, CI checks and local review drafts.
+  zh: 在 DSH 中只读查看 GitHub 拉取请求与发布状态，浏览差异、评论和 CI 检查，并保存本地评审草稿。
