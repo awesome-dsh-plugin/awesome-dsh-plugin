@@ -2,5 +2,5 @@ url: https://github.com/weiaisuyan/dsh-split-view
 name: weiaisuyan/dsh-split-view
 category: ui
 description:
-  en: 'Hermes-style tabbed workspace that replaces the DSH main area: drag a session or a tab onto the outer 20% of a pane to open a new column on that side (up to four), each column keeps a complete conversation with its own composer, tools and context stats, and each column has its own tab strip with middle-click or double-click close. The view switcher is width-adaptive (one row when it fits, two otherwise, overflow goes into a menu) and is built purely from the host view registry, so views registered by other plugins show up automatically.'
-  zh: '把 DSH 主区换成 Hermes 式多栏工作区：把会话或标签拖到某一栏正文最外侧 20%，就在那侧新开一栏（最多四栏）；每栏都是完整会话，自带输入框、工具调用与上下文统计，每栏一条独立标签条，支持中键或双击关闭。视图切换条按栏宽自适应一行或两行、放不下的收进菜单，内容完全来自宿主视图注册表，其他插件注册的视图自动出现。'
+  en: 'Multi-column tabbed workspace for the DSH main area: up to four sessions side by side, each with its own tab strip, composer and host view switcher.'
+  zh: '把 DSH 主区换成多栏标签工作区：最多四栏会话并排，每栏自带标签条、输入框和宿主视图切换条。'
