@@ -5168,6 +5168,7 @@ dsh plugin --profile web add dshmarket
 - [DamonKoy/dsh-plugins#dsh-mcp-client-v2](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-mcp-client-v2) — MCP 客户端增强：分页工具发现、非阻塞启动、mcp_tool_search 搜索，自研 stdio/streamable-http 传输。
 - [danieldu168/dsh-stash](https://github.com/danieldu168/dsh-stash) — 把外部数据库与文献语料登记成模型可调用的取数工具；每条库声明取数边界，钥匙台账只记引用名不存值，取数台账只留指纹与内容哈希而不留响应体。
 - [danshuyue/dsh-onebot-channel](https://github.com/danshuyue/dsh-onebot-channel) — 经 OneBot 11 把 QQ 私聊和群聊接进 DSH，提供 qq_send 等工具，让 agent 能回消息、发表情、等待对方接话。
+- [Daphne999/dsh-media-kit](https://github.com/Daphne999/dsh-media-kit) — 用 ffmpeg 从本地视频里抽帧、抽音轨，只返回文件路径，让 agent 用自己的视觉去看。五个工具：探测、均匀抽帧、指定时刻取帧、场景变化抽帧（逐帧分析的实用版）、抽音轨。不碰模型、不上传、不需要配任何 provider，所以不存在路由选错的问题。
 - [DarbeChan/dsh-qizhoucnc-cam](https://github.com/DarbeChan/dsh-qizhoucnc-cam) — 数控程序（NC/CNC/G-code）刀路识别、三维显示与大界面编辑，支持代码引用到对话框，适用于 DeepSeek Harness。
 - [david-zdw/dsh-image-studio](https://github.com/david-zdw/dsh-image-studio) — DSH 侧边栏生图工作台：Agnes、OpenAI GPT Image、Grok、OpenAI 兼容接口各自独立 Key，支持文生图和最多 5 张参考图、本地历史、/image 工具，以及插件内 GitHub 更新按钮。
 - [DayuanJiang/next-ai-draw-io#dsh-plugin](https://github.com/DayuanJiang/next-ai-draw-io/tree/main/packages/dsh-plugin) — dsh 的 draw.io 绘图插件：通过 next-ai-drawio MCP 服务器作图，点回复里的链接在右侧栏打开实时预览，可以手动修改图，AI 的每次修改都是可以恢复的版本。需 Node.js 18+，首次使用由 npx 下载 MCP 服务器。
@@ -7083,6 +7084,7 @@ dsh plugin --profile web add dshmarket
 - [QinpanWan/dsh-doc-quick](https://github.com/QinpanWan/dsh-doc-quick) — 拖拽文档进 dsh Web 对话框，Agent 直读本地文件处理，右侧侧栏展示产出与文件路径。
 - [quirekit/dsh-quirekit-md-editor](https://github.com/quirekit/dsh-quirekit-md-editor) — 在右侧栏直接编辑 Markdown，把行内评论发给 Agent，处理完自动标记解决。
 - [RainL-621/dsh-office-bridge](https://github.com/RainL-621/dsh-office-bridge) — 在 Windows 版 DSH Desktop 的侧边栏用本机安装的 ONLYOFFICE Document Server 编辑 xlsx/xls/csv/tsv/docx/pptx，保存直接写回磁盘上的原文件。
+- [Red-Rayux/dsh-formula-docx](https://github.com/Red-Rayux/dsh-formula-docx) — 把 Markdown 转成公式为 Word 原生对象（OMML）的 .docx，并导出 PDF 逐页校验公式渲染。
 - [reg4916/dsh-doc-reader](https://github.com/reg4916/dsh-doc-reader) — 把 PDF、DOCX、XLSX、PPTX 和文本文件读取为智能体工具，并用 tesseract.js 在本地对扫描版 PDF 或图片做 OCR。提供 doc_read、pdf_read、xlsx_read、doc_meta、doc_ocr 五个工具。
 - [reviso-si/reviso-dsh](https://github.com/reviso-si/reviso-dsh) — 把 Agent 产出发布到 Reviso 供人工评审，在侧边栏浏览已发布文档，并在产生这些文档的同一个 DSH 会话中再次找到它们。OAuth 由宿主中转：Reviso token 只保存在 DSH credentials 里，浏览器仅获得短时效的 embed 会话。需要 Reviso 账号或兼容的自建 Reviso 服务。
 - [Roland0511/dsh-marktext](https://github.com/Roland0511/dsh-marktext) — 基于 MarkText 内核 muya 的右侧栏所见即所得 Markdown 编辑器：打开 .md 按渲染结果编辑，保存走 ctx.fs 并带版本守卫。
