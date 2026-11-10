@@ -1,0 +1,7 @@
+url: https://github.com/Edsenpai/page-between
+name: Edsenpai/page-between
+category: docs
+description:
+  en: Paste an article link to get a structure mind map, bolded key points, a section-by-section reading and a written critique, keep any sentence as a draggable polaroid note, and copy the whole reading as Notion-ready Markdown; the interface and every digest can switch between Simplified Chinese, Traditional Chinese and English.
+  zh: 贴一个链接，把文章读成结构导图、加粗要点、逐段精读与读后评论；任意一句可收成拍立得便签（可拖动、缩放、改字），全文可一键复制成 Notion 版，简/繁/英三种语言可随时切换。
+icon: https://raw.githubusercontent.com/Edsenpai/page-between/main/docs/icon-180.png
