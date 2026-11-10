@@ -5841,6 +5841,7 @@ dsh plugin --profile web add dshmarket
 - [RoderickWilliams/dsh-local-3d-studio](https://github.com/RoderickWilliams/dsh-local-3d-studio) — 本地三维工作室编排：每次调用都现场探测 Blender、COLMAP 与 ComfyUI 并按其支持情况选路线；另带 Three.js 兜底通道，可按图元描述生成模型、修改或缩放 GLB、生成离线预览页并在没有 Blender 时渲染多视角 PNG。
 - [RoderickWilliams/dsh-picture-text-reader](https://github.com/RoderickWilliams/dsh-picture-text-reader) — 需 Python 3.12+；小红书需 xiaohongshu-mcp 后端并扫码登录（OCR/ffmpeg 可选）。批量抓取小红书笔记与微信公众号文章：逐篇取正文、图片文字（本地 OCR）、视频抽帧文字与评论样本，输出结构化 JSON/Markdown，每条结果带原文链接。只读，不发布、不点赞、不关注、不评论。
 - [RoseSamaras/reaudit-ai-plugin#dsh-reaudit](https://github.com/RoseSamaras/reaudit-ai-plugin/tree/main/packages/dsh-reaudit) — 通过内置的 @deepseek-ai/dsh-mcp-client 桥接挂载托管的 Reaudit MCP 服务（https://mcp.reaudit.io/mcp），用 REAUDIT_API_KEY 做 bearer 鉴权：238 个 mcp__reaudit__* 工具，覆盖品牌在 AI 回答里的可见度（ChatGPT、Perplexity、Gemini、Google AI Overviews）、竞品与引用分析、站点审计、内容生成与社媒排期。
+- [Rosmeowtis/dsh-aria2-rpc](https://github.com/Rosmeowtis/dsh-aria2-rpc) — 连接已有的 aria2 JSON-RPC 服务，提供四个工具：提交单文件直链（可选保存目录、文件名、校验和、任务级代理）、读任务状态、列任务、暂停/恢复/取消；由它提交的任务完成或失败时，回报给发起它的会话。设置页保存主机、端口、密钥与超时，并带一个不保存配置、不创建任务的连接测试；不自带、不启动、不管理 aria2。
 - [Rosynb666/dsh-whale-catch](https://github.com/Rosynb666/dsh-whale-catch) — 右侧栏「鱼篓」不用 agent 登记，自动汇总本场会话产出或改动的文件，支持预览、一键打包 zip 与归档。
 - [rotifer-protocol/rotifer-playground#rotifer](https://github.com/rotifer-protocol/rotifer-playground/tree/main/plugins/rotifer) — Rotifer 协议的技能包加 Rotifer MCP 服务，以 DSH 自带的技能提供器与 MCP 客户端实例的形式挂载：搜索 Gene、按 Arena 排名比较、在本地项目里安装或回滚 Gene，并创建和运行本地 Agent。MCP 服务锁定版本，只开放 evolve 工具集，不含发布与登录。
 - [Royalsan/dsh-github-trending](https://github.com/Royalsan/dsh-github-trending) — Harness Web UI 里的 GitHub 趋势雷达：抓取日榜/周榜/月榜（可按编程语言筛选），把每个仓库分析成简介、star 增量、技术栈、亮点与风险，渲染为可筛选、可分页的卡片面板，并注册 github_trending 工具与 /github-trending 命令。
@@ -6592,6 +6593,7 @@ dsh plugin --profile web add dshmarket
 - [br1nosense/dsh-vision-solution](https://github.com/br1nosense/dsh-vision-solution) — 为 DSH 纯文本模型补充视觉能力：识图技能（图片理解/OCR/文档解析，竞速池→自定义通道→本地）+ 幂等宿主补丁，让图片消息能送达模型侧。
 - [bug-huntter/dsh-vision-plugin](https://github.com/bug-huntter/dsh-vision-plugin) — 为纯文本 DSH 模型增加可配置识图能力：在 DSH 0.1.7-rc.2 中，上传图片会完整通过适配链路，由 OpenAI 兼容视觉模型转写为文字后交给主模型；支持 OpenAI / Anthropic / Gemini / Azure 风格密钥鉴权，缺少 API Key 时会在发起请求前明确提示。
 - [BW741/dsh-video-eyes](https://github.com/BW741/dsh-video-eyes) — 让模型真的「看见」视频：本地 ffmpeg 按时间抽静帧、faster-whisper 转写音轨，模型逐帧读真实像素，而不是只读一段文字摘要。全程本地、不上传画面；音轨没有语音时如实报告而不是硬编。仅限 Windows；需已装 Python 3.10+ 与 ffmpeg，首次运行 video_eyes_setup 约下载 700 MB（faster-whisper 及其模型）。
+- [Byton-Patrica/dsh-super-image](https://github.com/Byton-Patrica/dsh-super-image) — 通过两个独立配置的 OpenAI Images 兼容或 ComfyUI 后端并行生成图像，比较候选图并可选择融合。
 - [CAI-MH/dsh-gpt-image](https://github.com/CAI-MH/dsh-gpt-image) — 控制已登录的网页版 ChatGPT 生成图片并下载到本地。
 - [cctv2333/dsh-vidlens](https://github.com/cctv2333/dsh-vidlens) — 按人看片的顺序取样，而不是下载整片：先元数据与章节，再按时间码抽帧看画面、字幕优先转录（平台没有字幕才走本地 ASR）、AudioSet 527 类声音事件标签与高赞评论——21 个工具共用一个磁盘缓存，并带跨进程锁。需要 Python 3.10+、ffmpeg 与 vidlens 包（pip install vidlens-mcp）；缺依赖时回给你的是两种修法，而不是一句 ImportError。
 - [charovo0059/dsh-model-vision](https://github.com/charovo0059/dsh-model-vision) — 补上 DSH「获取可用模型」漏记的视觉能力，让能看图的模型不再被当成纯文本，并在模型名后标出「可看图」。
