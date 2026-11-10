@@ -1,0 +1,7 @@
+url: https://github.com/szhuangzan/rofilter-mcp
+name: szhuangzan/rofilter-mcp
+category: tools
+description:
+  en: 'Reverse-osmosis membrane system design tools: element library lookup, feed-water and scaling analysis, and full multi-stage system design.'
+  zh: '反渗透膜系统设计工具：膜元件库查询、进水水质与结垢分析、完整多段系统设计。'
+icon: https://raw.githubusercontent.com/szhuangzan/rofilter-mcp/main/logo.jpg
