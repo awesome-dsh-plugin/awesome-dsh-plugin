@@ -1,0 +1,6 @@
+url: https://github.com/tedcriss/dsh-matlab
+name: tedcriss/dsh-matlab
+category: tools
+description:
+  en: Adds the MathWorks MATLAB Agentic Toolkit skills and the MATLAB MCP Server tools to DeepSeek Harness.
+  zh: 把 MathWorks 的 MATLAB Agentic Toolkit 技能与 MATLAB MCP Server 工具接入 DeepSeek Harness。
