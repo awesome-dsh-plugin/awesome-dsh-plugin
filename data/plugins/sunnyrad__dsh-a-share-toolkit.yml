@@ -1,0 +1,6 @@
+url: https://github.com/SunnyRad/dsh-a-share-toolkit
+name: SunnyRad/dsh-a-share-toolkit
+category: tools
+description:
+  en: 'Offline A-share checkups as four agent tools: valuation percentile (PE/PB/PS history, with negative-PE exclusion for loss-makers and a sample-length floor) and financial-statement review (three-statement reconciliation, DuPont decomposition, red flags, peer percentiles). Bring your own data; the plugin never fetches quotes and ships no data source.'
+  zh: '把 A 股估值分位体检与个股财务体检做成 4 个可直接调用的工具：估值分位（PE/PB/PS 历史序列，亏损股负 PE 剔除、样本量门槛、周期股切 PB）与三表体检（勾稽校验、杜邦拆解、造假红旗、同业分位）。数据由调用方自带，本插件不取行情、不自带数据源。'
