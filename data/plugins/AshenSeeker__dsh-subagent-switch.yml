@@ -1,5 +1,5 @@
-url: https://github.com/wld12314/dsh-subagent-switch
-name: wld12314/dsh-subagent-switch
+url: https://github.com/AshenSeeker/dsh-subagent-switch
+name: AshenSeeker/dsh-subagent-switch
 category: model
 description:
   en: 'Picks each subagent model from the local catalog by task category, unless the caller already named one. Free and quota tiers are ranked together by per-model capability tags; a pricier model is used only when no cheap model is tagged as good at that kind of work. Only providers whose remaining balance is readable, or that are account-backed, enter the candidate pool; the rest stay listed but are not routed. A panel adds per-model manual priority above the automatic order plus allow/revoke controls.'

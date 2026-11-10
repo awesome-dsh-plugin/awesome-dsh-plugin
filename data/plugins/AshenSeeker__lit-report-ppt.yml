@@ -1,5 +1,5 @@
-url: https://github.com/wld12314/lit-report-ppt
-name: wld12314/lit-report-ppt
+url: https://github.com/AshenSeeker/lit-report-ppt
+name: AshenSeeker/lit-report-ppt
 category: skill
 description:
   en: Turns one journal paper PDF into three deliverables by default — a Chinese group-meeting literature report deck (.pptx) in the Nanyang Normal University physics template, a matching Word speaker script, and a two-colour defence-prediction Q&A HTML (ten-odd questions with short direct answers). Requires Python 3 with python-pptx, python-docx, Pillow and pymupdf (pypdf fallback); install them with pip install -r requirements.txt.

@@ -2,6 +2,6 @@ url: https://github.com/ET921/dsh-git-management
 name: ET921/dsh-git-management
 category: git
 description:
-  en: 'Git panel for the DSH right sidebar: staging, commits, branch switching, fetch/pull/push, worktrees, a Cursor-style commit graph and GitHub pull requests. It drives the system git binary, so the panel and the terminal always agree.'
-  zh: 'DSH 右側邊欄 Git 面板：暫存、提交、切分支、fetch/pull/push、工作樹、Cursor 風格提交圖與 GitHub PR。直接呼叫系統 git，面板與終端狀態永遠一致。'
+  en: 'Git panel for the DSH right sidebar: staging, commits, branch switching, fetch/pull/push, worktrees, a Cursor-style commit graph and GitHub pull requests (the GitHub card needs a GitHub token). It drives the system git binary, so the panel and the terminal always agree.'
+  zh: 'DSH 右侧栏 Git 面板：暂存、提交、切换分支、fetch/pull/push、工作树、Cursor 风格提交图与 GitHub PR（GitHub 卡片需要 GitHub 令牌）。直接调用系统 git，面板与终端状态保持一致。'
 tarball: https://github.com/ET921/dsh-git-management/releases/latest/download/dsh-git-management.tgz

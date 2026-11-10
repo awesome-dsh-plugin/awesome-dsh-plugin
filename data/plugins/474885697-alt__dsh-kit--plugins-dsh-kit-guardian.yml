@@ -3,5 +3,5 @@ name: 474885697-alt/dsh-kit#dsh-kit-guardian
 category: dev
 tarball: https://github.com/474885697-alt/dsh-kit/releases/download/v0.1.0/dsh-kit-guardian-0.1.0.tgz
 description:
-  zh: "配置清单与启动体检：校验清单 JSON、依赖与打包与补丁三处一致、最近崩溃原因，并支持备份与一键回滚。"
-  en: "Checks a DSH profile manifest for JSON errors, dependency/bundle/patch mismatches and recent startup crashes, and can back up or roll back the manifest files."
+  en: 'Checks a DSH profile manifest for JSON errors and dependency/bundle/patch mismatches, reads recent startup crash logs (Windows DSH Desktop only), and can back up or roll back the manifest files.'
+  zh: '校验 DSH 配置清单的 JSON 错误与依赖/打包/补丁不一致，读取最近启动崩溃日志（仅 Windows 桌面端），并支持备份与回滚清单文件。'
