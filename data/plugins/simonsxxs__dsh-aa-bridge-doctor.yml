@@ -2,5 +2,5 @@ url: https://github.com/simonsxxs/dsh-aa-bridge-doctor
 name: simonsxxs/dsh-aa-bridge-doctor
 category: remote
 description:
-  en: Watches the Agents Anywhere bridge for the wedge that leaves the device offline on your phone; notifies by default, auto-restart is opt-in.
-  zh: 监测 Agents Anywhere 桥接的持续离线故障并弹窗提醒，可选开启自动重启 Connector。
+  en: 'Watches the Agents Anywhere bridge and notifies you when it wedges and leaves your phone offline; a crashed Connector is relaunched by default (guarded), restarting a wedged one is opt-in. Needs the Agents Anywhere bridge plugin; macOS tested, Windows untested.'
+  zh: '监测 Agents Anywhere 桥接卡死（进程存活但手机端离线）并弹窗提醒；Connector 进程退出时默认自动拉起（带护栏），卡死时的自动重启需手动开启。需已安装并登录 Agents Anywhere 桥接插件；macOS 已实测，Windows 未测。'
