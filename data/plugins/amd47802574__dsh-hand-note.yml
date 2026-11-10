@@ -1,5 +1,5 @@
-url: https://github.com/amd47802574/dsh-scribble
-name: amd47802574/dsh-scribble
+url: https://github.com/amd47802574/dsh-hand-note
+name: amd47802574/dsh-hand-note
 category: memory
 description:
   en: 'Local jot-down notes for DSH: one Markdown file per note with a redesigned card UI, custom tag management (create tags ahead of use, delete one everywhere), flat quick-scan list, full-text search, Markdown preview, autosave, zero-dependency Office text extraction, and one-key citation or AI write-back from conversations. Heavily reworked from dsh-knowledge-lite; data-compatible with E:/dsh-kb.'
