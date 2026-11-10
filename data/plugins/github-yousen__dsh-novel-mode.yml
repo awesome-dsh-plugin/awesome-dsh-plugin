@@ -5,6 +5,7 @@
 #
 # Standalone repository: https://github.com/github-yousen/dsh-novel-mode
 # Public, default branch `main`, MIT, topic `dsh-plugin`.
+# v2.0.0: deterministic workflow engine (code-executed state machine, not a prompt pack).
 url: https://github.com/github-yousen/dsh-novel-mode
 name: github-yousen/dsh-novel-mode
 category: workflow
