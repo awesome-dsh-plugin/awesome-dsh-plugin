@@ -2,5 +2,5 @@ url: https://github.com/1997liuyh-boop/dsh-studio-knowledge
 name: 1997liuyh-boop/dsh-studio-knowledge
 category: workflow
 description:
-  en: "User-configured learning roadmaps with local progress, notes and JSON progress backup; includes an original six-node example."
-  zh: "用户自定义学习路线，提供本机进度、笔记及 JSON 进度备份，附带原创六节点示例。"
+  en: 'Learning-plan tracker with local progress, notes and JSON progress backup. Ships one original six-node example roadmap; adding your own roadmaps means editing roadmaps.ts and rebuilding the plugin. Needs the dsh-studio-projects runtime and the dsh-worktable container from 1997liuyh-boop/dsh-studio-library installed first.'
+  zh: '学习计划追踪：本机进度、笔记与 JSON 进度备份，附带一条原创六节点示例路线；添加自己的路线需编辑 roadmaps.ts 并重新构建插件。需先安装 1997liuyh-boop/dsh-studio-library 的 dsh-studio-projects 运行时与 dsh-worktable 容器。'

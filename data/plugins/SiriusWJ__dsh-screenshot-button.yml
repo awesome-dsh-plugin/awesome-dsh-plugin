@@ -2,5 +2,5 @@ url: https://github.com/SiriusWJ/dsh-screenshot-button
 name: SiriusWJ/dsh-screenshot-button
 category: ui
 description:
-  en: 'A camera button in the DSH composer toolbar that opens the OS screenshot tool (Windows Snipping Tool, macOS screencapture, Linux GNOME Screenshot / Spectacle / scrot) and leaves the shot on the clipboard for Ctrl+V; the host route only accepts loopback POSTs.'
-  zh: '在 DSH 输入面板工具行加一个相机按钮，点击调起系统自带截图工具（Windows 截图工具、macOS screencapture、Linux GNOME Screenshot / Spectacle / scrot），截图进剪贴板后按 Ctrl+V 粘贴；宿主路由只接受本机回环地址的 POST。'
+  en: 'A camera button in the DSH composer toolbar that opens the OS screenshot tool (Windows Snipping Tool; macOS screencapture and Linux GNOME Screenshot / Spectacle / scrot are untested, and scrot needs wl-copy or xclip) and leaves the shot on the clipboard for Ctrl+V; the host route only accepts requests whose Host header is loopback.'
+  zh: '在 DSH 输入面板工具行加一个相机按钮，点击调起系统自带截图工具（Windows 截图工具已实测；macOS screencapture、Linux GNOME Screenshot / Spectacle / scrot 未实机验证，scrot 需 wl-copy 或 xclip），截图进剪贴板后按 Ctrl+V 粘贴；宿主路由只接受 Host 为本机回环地址的 POST。'

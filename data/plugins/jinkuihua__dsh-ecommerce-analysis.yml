@@ -2,7 +2,7 @@ url: https://github.com/jinkuihua/dsh-ecommerce-analysis
 name: jinkuihua/dsh-ecommerce-analysis
 category: skill
 description:
-  en: "E-commerce order analysis skill for DSH: refund-type classification, return-rate statistics, interception and refund-abuse loss accounting, with Markdown + Excel reports including per-order detail sheets and a sampling verification list."
-  zh: "电商订单数据分析技能：退款类型分类、退货率统计、拦截件与白嫖损耗核算，输出与 Markdown 同规格的 Excel 报告（含明细订单编号与抽样验证清单）。"
+  en: 'E-commerce order analysis skill for DSH: refund-type classification, return-rate statistics, interception and refund-abuse loss accounting, after-sales analysis with product warnings, delivered as a single Excel workbook with a per-order detail sheet and a sampling verification sheet (the agent builds it with Python: pandas, openpyxl, matplotlib).'
+  zh: '电商订单数据分析技能：退款类型分类、退货率统计、拦截件与白嫖损耗核算、售后深度与商品预警，交付为单个 Excel 工作簿（含订单明细表与抽样验证表）；由智能体用 Python（pandas、openpyxl、matplotlib）生成。'
 icon: https://raw.githubusercontent.com/jinkuihua/dsh-ecommerce-analysis/main/icon.png
 # recheck

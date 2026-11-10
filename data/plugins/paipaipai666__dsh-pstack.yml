@@ -2,6 +2,6 @@ url: https://github.com/paipaipai666/dsh-pstack
 name: paipaipai666/dsh-pstack
 category: workflow
 description:
-  en: 'Ports the pstack workflow system to dsh and keeps it working: 58 skills, five presets, a bundled script runner that works without node on PATH, a doctor for script prerequisites, and a translation layer for the remaining Cursor vocabulary.'
-  zh: '把 pstack 工作流体系移植到 dsh 并补齐可用性：58 个技能、5 个 preset、不依赖 PATH 里 node 的脚本运行器、脚本前置检查，以及 Cursor 词汇的翻译层。'
+  en: 'Community fork of l246804/dsh-pstack (cannot be installed alongside it: same plugin ids and tool names) that ports the pstack workflow system to dsh: 58 skills, five presets, a bundled script runner that works without node on PATH, a doctor for script prerequisites, and a translation layer for the remaining Cursor vocabulary.'
+  zh: 'l246804/dsh-pstack 的社区 fork（与上游不能同装：插件 id 与工具名相同），把 pstack 工作流体系移植到 dsh 并补齐可用性：58 个技能、5 个 preset、不依赖 PATH 里 node 的脚本运行器、脚本前置检查，以及 Cursor 词汇的翻译层。'
 icon: https://raw.githubusercontent.com/paipaipai666/dsh-pstack/main/assets/logo.png

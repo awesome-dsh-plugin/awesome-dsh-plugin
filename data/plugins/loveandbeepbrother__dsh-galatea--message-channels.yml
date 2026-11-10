@@ -2,5 +2,5 @@ url: https://github.com/loveandbeepbrother/dsh-galatea/tree/main/message-channel
 name: loveandbeepbrother/dsh-galatea#message-channels
 category: remote
 description:
-  en: 'Chat with your Galatea assistant from QQ and WeChat: the same conversation, persona and memory as on the desktop, replies go back where you wrote, and more chat apps can be added. Requires the Galatea framework.'
-  zh: 在 QQ、微信上和 Galatea 助手聊天：和桌面是同一段对话、同一个人格和记忆，回复发回你说话的地方，可扩展更多聊天软件。需要先装 Galatea 框架。
+  en: 'Chat with your Galatea assistant from QQ (official bot) and WeChat: the same conversation, persona and memory as on the desktop, only the paired owner''s private chat is accepted, replies go back where you wrote, and more chat apps can be added. Requires the Galatea framework.'
+  zh: '在 QQ（官方机器人）、微信上和 Galatea 助手聊天：和桌面是同一段对话、同一个人格和记忆，只接收配对本人的私聊，回复发回你说话的地方，可扩展更多聊天软件。需要先装 Galatea 框架。'

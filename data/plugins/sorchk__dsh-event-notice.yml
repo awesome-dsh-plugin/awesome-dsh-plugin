@@ -2,6 +2,6 @@ url: https://github.com/sorchk/dsh-event-notice
 name: sorchk/dsh-event-notice
 category: notify
 description:
-  en: 'Send DSH event notifications to Gotify, a generic webhook, or ntfy when a task finishes, is interrupted, needs approval, or needs an answer. The message carries only the session title, working directory and event reason, never the conversation body, and a failed send is logged without interrupting the session.'
-  zh: '在任务完成、任务中断、需要审批、需要回答问题时，把 DSH 事件通知发到 Gotify、通用 Webhook 或 ntfy：通知只包含会话标题、工作目录与事件原因，不包含会话正文；发送失败只写日志，不会打断会话。'
+  en: 'Send DSH event notifications to Gotify, a generic webhook, or ntfy when a task finishes, is interrupted, needs approval, or needs an answer. The message carries only the session title, workspace name and event reason, never the conversation body, and a failed send is logged without interrupting the session.'
+  zh: '在任务完成、任务中断、需要审批、需要回答问题时，把 DSH 事件通知发到 Gotify、通用 Webhook 或 ntfy：通知只包含会话标题、工作区名称与事件原因，不包含会话正文；发送失败只写日志，不会打断会话。'
 icon: https://raw.githubusercontent.com/sorchk/dsh-event-notice/main/assets/icon-180.png

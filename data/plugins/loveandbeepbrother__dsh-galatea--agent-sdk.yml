@@ -2,5 +2,5 @@ url: https://github.com/loveandbeepbrother/dsh-galatea/tree/main/agent-sdk
 name: loveandbeepbrother/dsh-galatea#agent-sdk
 category: model
 description:
-  en: 'Run DSH sessions on Claude Code (Opus, Sonnet), with Galatea''s memory and tools. Sign in with an Anthropic API key or your existing Claude Code login. Requires the Galatea framework.'
-  zh: 用 Claude Code（Opus、Sonnet）跑 DSH 会话，带着 Galatea 的记忆和工具。可用 Anthropic API key，或本机 Claude Code 已有的登录。需要先装 Galatea 框架。
+  en: 'Run DSH sessions on the local Claude Code (Opus, Sonnet), with Galatea''s memory and tools. Pick an auth mode in the profile (Anthropic API key recommended, or your existing Claude Code login). Requires the Galatea framework.'
+  zh: '让 DSH 会话跑在本机 Claude Code 上（Opus、Sonnet），带着 Galatea 的记忆和工具；需在 profile 里选登录方式（推荐 Anthropic API key，或沿用本机 Claude Code 已有登录）。需要先装 Galatea 框架。'

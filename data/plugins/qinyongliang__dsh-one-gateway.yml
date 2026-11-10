@@ -2,6 +2,6 @@ url: https://github.com/qinyongliang/dsh-one-gateway
 name: qinyongliang/dsh-one-gateway
 category: model
 description:
-  en: 'OpenAI-compatible gateway for every connected model: groups with failover, aliases, session stickiness, usage charts, API keys and a LAN listener.'
-  zh: '把已连接模型以 OpenAI 兼容接口对外提供：分组与故障转移、别名、会话粘滞、调用图表、API 密钥与局域网监听。'
+  en: 'OpenAI-compatible gateway for every connected model: groups with failover, aliases, session stickiness, usage charts, API keys and a LAN listener (open to the whole network until you create an API key).'
+  zh: '把已连接模型以 OpenAI 兼容接口对外提供：分组与故障转移、别名、会话粘滞、调用图表、API 密钥与局域网监听（创建 API 密钥前对局域网完全开放）。'
 icon: https://raw.githubusercontent.com/qinyongliang/dsh-one-gateway/main/assets/icon-180.png

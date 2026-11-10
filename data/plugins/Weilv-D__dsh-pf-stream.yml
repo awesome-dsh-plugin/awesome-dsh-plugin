@@ -2,5 +2,5 @@ url: https://github.com/Weilv-D/dsh-pf-stream
 name: Weilv-D/dsh-pf-stream
 category: vision
 description:
-  en: 'Local video understanding for agents: extracts keyframes adaptively based on motion and pauses, inspects any timestamp at full resolution, and aligns visuals with dialogue from embedded subtitles or configured ASR. Requires ffmpeg and ffprobe.'
-  zh: 让智能体看懂本地视频：根据画面运动与停顿自适应抽取关键帧，支持任意时间点全分辨率定点检视；自动从内嵌字幕或配置的语音转写（ASR）中提取台词并与画面时间轴对齐。需预装 ffmpeg 与 ffprobe。
+  en: 'Local video understanding for agents: extracts keyframes adaptively based on motion and pauses, inspects any timestamp at full resolution, and aligns visuals with dialogue from embedded subtitles or configured ASR. Requires ffmpeg and ffprobe; clips without subtitles also need a transcription engine for dialogue (a ~190 MB local whisper model, a cloud API key, or the official voice-input model).'
+  zh: '让智能体看懂本地视频：根据画面运动与停顿自适应抽取关键帧，支持任意时间点全分辨率定点检视；自动从内嵌字幕或配置的语音转写（ASR）中提取台词并与画面时间轴对齐。需预装 ffmpeg 与 ffprobe；无字幕视频要台词另需转写引擎（约 190 MB 本地 whisper 模型、云端 API Key 或官方语音输入模型）。'

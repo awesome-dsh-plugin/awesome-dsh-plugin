@@ -2,5 +2,5 @@ url: https://github.com/taoziliyouchong/dsh-evolve-preset/tree/main/packages/dsh
 name: taoziliyouchong/dsh-evolve-preset#dsh-evolve-preset
 category: workflow
 description:
-  en: 'An agent preset that adds a working mode to DeepSeek Harness: requirement analysis and a task tree before acting, the user profile file injected at session start, a gate document per reply, and a fixed three-block reply shape. The mode text ships in this package; the companion plugins (task tree, term dictionary, profile panel) are separate packages and only act under this mode id.'
-  zh: '给 DeepSeek Harness 增加一个工作模式的 agent preset：动手前做需求分析与任务树，会话开场注入画像文件，每轮回复生成关卡文档，回复固定三块；模式正文在本包里，配套插件（任务树、术语字典、画像面板）是独立包，只在进化模式生效。'
+  en: 'An agent preset that adds a working mode to DeepSeek Harness: the mode text has the model analyze requirements and plan before acting, open a gate document, and reply in a fixed three-block shape. The task tree and session-start profile injection are separate companion packages in the same repository, installed from a clone with scripts/install.mjs; only the term dictionary (dsh-term-dict) comes with this package, and without the task tree the model writes its own alignment bar. Needs DSH 0.2.1-alpha.1 or later.'
+  zh: '给 DeepSeek Harness 增加一个工作模式的 agent preset：模式正文要求模型动手前做需求分析与计划、建关卡文档，回复固定三块。任务树与开场画像注入是同仓库的独立配套包，需克隆仓库后用 scripts/install.mjs 装；装本包只会自动带上术语字典（dsh-term-dict），没有任务树时由模型自己写对齐栏。需要 DSH 0.2.1-alpha.1 及以上。'
