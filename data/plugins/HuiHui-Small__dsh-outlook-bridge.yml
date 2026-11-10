@@ -1,0 +1,7 @@
+url: https://github.com/HuiHui-Small/dsh-outlook-bridge
+name: HuiHui-Small/dsh-outlook-bridge
+category: notify
+description:
+  en: Adds an Outlook mailbox and calendar to DeepSeek Harness, with unread badges and AI-assisted email drafts.
+  zh: 在 DeepSeek 助理中接入 Outlook 邮箱和日历，支持未读角标与 AI 邮件草稿。
+tarball: https://github.com/HuiHui-Small/dsh-outlook-bridge/releases/download/v0.3.0/dsh-outlook-bridge-0.3.0.tgz
