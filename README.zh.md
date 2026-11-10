@@ -7837,6 +7837,7 @@ dsh plugin --profile web add dshmarket
 - [tszmzz1026/dsh-epindel-boot-animation#dsh-productivity](https://github.com/tszmzz1026/dsh-epindel-boot-animation/tree/main/packages/dsh-productivity) — 为 DeepSeek Harness 提供搜索、检查点、上下文管理、主聊旁聊、长期记忆、目标待办与今日计划。
 - [ttmouse/dsh-taskboard](https://github.com/ttmouse/dsh-taskboard) — 内嵌于 DSH Web GUI 的完整本地优先任务看板：看板/列表/Gantt/工作流/仪表盘视图、任务 AI 对话、附件与标签、dsh-routines 驱动的待办自动认领——数据存本地 SQLite（dsh plugin add @ttmouse/dsh-taskboard）。
 - [tucaogege/dsh-workflow-panel](https://github.com/tucaogege/dsh-workflow-panel) — 只读的 DSH 工作流面板：概览、六道门、里程碑、组织模板、任务流与人员卡——项目数据来自 project.json，人员卡来自 DSH 实时状态，台账只读其目录。以 Cordis bundle 形式安装，只注册两条 GET 路由，不写入项目文件或 DSH 状态文件。
+- [TZUKWAN/METIS_ACADEMIC](https://github.com/TZUKWAN/METIS_ACADEMIC) — 在 DSH 中与 AI 共建研究流程，按步骤绑定技能，查看实际执行网络并审阅项目文档，已有项目保留原配置。
 - [upJiang/dsh-cron-job](https://github.com/upJiang/dsh-cron-job) — DeepSeek Harness Agent 定时任务：创建前强制完成端到端测试，提供运行历史，并通过九种通讯渠道双向收发消息。
 - [usersx/dsh-automation-center](https://github.com/usersx/dsh-automation-center) — 面向 Workspace 调度 Agent 任务，每次运行创建全新 Result Session 并持久保留审计历史；原版 DSH 使用会话标签，存在对应 Slot 时使用全局 Shell 页面。
 - [vaniawang/dsh-trigger-hub](https://github.com/vaniawang/dsh-trigger-hub) — DeepSeek Harness 的事件源插件：cron、webhook、文件监听与确定性 procedure，带账本、控制台和并发上限。
@@ -10051,6 +10052,7 @@ dsh plugin --profile web add dshmarket
 - [zhanshenovo/dsh-bushaoxin](https://github.com/zhanshenovo/dsh-bushaoxin) — 一个对话文风层：谈到「便宜的路有坑」这类取舍时，把警告换成另一种说法——快而便宜的是隔壁黑心店，慢而可靠的老店在立规矩。附带改写引擎，可把任意文本拧成固定骨架的对白，有五个互相独立的旋钮（幕数、招牌台词密度、收尾走向、种子、预设档）；一个四档强度滑条；以及 /bushaoxin 命令，按会话的工具调用记录生成一份段子式的「烧心指数」病历。每篇改写末尾永远附一行真实技术结论，不可关闭。零依赖、无构建步骤，引擎是纯函数。
 - [dsh-multi-role-groupchat](https://github.com/zhdzh-good/multi-role-groupchat/tree/main/multi-role-groupchat) — DeepSeek Harness 多角色群聊面板：你以一个角色加入，和 2–3 个 AI 成员对话；支持按对话对象智能路由、其他人按概率接话、显式 @ 接话，以及全局角色库、失败诊断、失败回应重试、群内消息搜索、场景便利贴、长历史分页、多标签同步、私有记忆与私人关系、模型目录下拉和角色/群配置 JSON 导入导出。
 - [zhu1090093659/dsh-pet](https://github.com/zhu1090093659/dsh-pet) — 常驻界面的鲸鱼娘：随智能体状态切换动画，可摸头互动、喂小鱼干养亲密度，从幼鲸一路养成。
+- [ziyefbk/podwhale#podwhale](https://github.com/ziyefbk/podwhale/tree/main/podwhale) — 个人 Agent 协作社区，提供桌宠聊天、阅读社交和主人审批。
 - [zmm863-commits/dsh-dice-game](https://github.com/zmm863-commits/dsh-dice-game) — 🎲 骰子大作战 — 六种经典骰子玩法（吹牛、猜红点、猜红蓝、猜大小、猜单双、猜顺子），单人 vs AI + PeerJS 联机，全量中英双语，侧边栏入口打开游戏面板。
 - [zuoyunlai/dsh-pet-plugin](https://github.com/zuoyunlai/dsh-pet-plugin) — DSH 窗口里的超写实桌宠：五个形象各有五张表情立绘，跳舞、撩发、走路三套动作以 24fps VP9 alpha 视频片段播放，另有一条「走到中间跳完再走回」的 10 秒单镜头片段、全程不切镜；按活跃时段主动说话（可选 edge-tts 神经音色），带泼墨、撒花、乌云、起雾、炸弹特效、右键菜单与 /dsh-pet 斜杠命令，旁边的小输入框通过一次性宿主模型调用回话、不写进你的会话。界面文案内置中、英、西、葡、印五语。
 - [ZutoMayoo/totoTheCat](https://github.com/ZutoMayoo/totoTheCat) — DSH Web 界面的桌宠插件：可拖拽的像素猫，带番茄闹钟、经验等级与 30 条可解锁的托托事实。
