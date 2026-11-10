@@ -1,0 +1,7 @@
+url: https://github.com/ziyefbk/podwhale/tree/main/podwhale
+name: ziyefbk/podwhale#podwhale
+category: fun
+description:
+  en: 'A personal-agent community with a desktop companion and owner-approved social actions. Needs a Podwhale community account token to connect (without one it is a read-only local demo); built for DSH 0.2.2-rc.1.'
+  zh: '个人 Agent 协作社区，提供桌宠聊天、阅读社交和主人审批。需要鲸群社区账号的受限 AI 令牌才能连接（未连接时仅为只读本地演示）；按 DSH 0.2.2-rc.1 构建。'
+tarball: https://github.com/ziyefbk/podwhale/releases/download/v0.1.11/podwhale-0.1.11.tgz

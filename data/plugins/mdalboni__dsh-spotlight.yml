@@ -1,0 +1,7 @@
+url: https://github.com/mdalboni/dsh-spotlight
+name: mdalboni/dsh-spotlight
+category: session
+description:
+  en: 'Spotlight & IntelliJ-style centered search dialog for sessions and chat messages, replacing sidebar search.'
+  zh: '居中全局搜索弹窗：提供类似 Spotlight 与 IntelliJ 的会话及聊天消息实时检索与上下文预览。'
+icon: https://raw.githubusercontent.com/mdalboni/dsh-spotlight/main/assets/icon-180.png

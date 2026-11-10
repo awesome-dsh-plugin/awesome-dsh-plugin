@@ -1,0 +1,7 @@
+url: https://github.com/XinpengWei/dsh-wechat-bg
+name: XinpengWei/dsh-wechat-bg
+category: ui
+description:
+  en: Scan a QR code with WeChat, upload a photo from the phone, and use it as the DSH Web UI background.
+  zh: 手机微信扫码，从相册传一张照片，换成 DSH 的全屏背景。
+icon: https://raw.githubusercontent.com/XinpengWei/dsh-wechat-bg/main/assets/icon-180.png

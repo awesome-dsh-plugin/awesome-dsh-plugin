@@ -4,4 +4,5 @@ category: dev
 icon: https://raw.githubusercontent.com/DonGeeo87/cg-shell-janitor/main/assets/icon-180.png
 tarball: https://github.com/DonGeeo87/cg-shell-janitor/releases/latest/download/cg-shell-janitor.tgz
 description:
-  en: "Closes DeepSeek Harness runner processes that stay alive after their shell command finished on Windows, reclaiming about 140 MB each. A runner is closed only when its shell is gone and it supervises nothing, as a workaround for the runner not exiting by itself."
+  en: 'Closes DeepSeek Harness runner processes that stay alive after their shell command finished on Windows, reclaiming about 140 MB each. A runner is closed only when its shell is gone and it supervises nothing, as a workaround for the runner not exiting by itself.'
+  zh: '在 Windows 上关闭 shell 命令已结束、却仍然存活的 DeepSeek Harness runner 进程，每个可回收约 140 MB。仅当其 shell 已不存在且不再监管任何子进程时才会关闭，用作 runner 不会自行退出问题的变通办法。'

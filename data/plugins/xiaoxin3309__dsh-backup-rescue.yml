@@ -1,0 +1,6 @@
+url: https://github.com/xiaoxin3309/dsh-backup-rescue
+name: xiaoxin3309/dsh-backup-rescue
+category: dev
+description:
+  en: 'Back up and restore the whole $DSH_HOME: one-click or scheduled ZIP archives (optional password encryption applies to manual and agent-made backups only; scheduled ones are not encrypted), a settings section, agent tools to create, list, restore and prune backups, and a standalone restorer (Windows .bat or POSIX .sh) that runs without DeepSeek Harness installed.'
+  zh: '备份与恢复整个 $DSH_HOME：支持一键或定时生成 ZIP 归档（可选密码加密，仅限手动与智能体发起的备份，定时备份不加密）、提供设置页、给智能体的创建/列出/恢复/清理备份工具，并附带无需安装 DSH 也能运行的独立恢复器（Windows .bat 或 POSIX .sh）。'

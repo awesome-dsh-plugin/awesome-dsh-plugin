@@ -1,0 +1,6 @@
+url: https://github.com/KeS1Ke/reminder-dsh
+name: KeS1Ke/reminder-dsh
+category: notify
+description:
+  en: 'Windows native notifications and a taskbar badge for DeepSeek Harness: toasts on task completion and approval requests titled with the session name, quick reply and approve/deny buttons on the toast, and an unread count on the taskbar icon (opt-in in Settings; needs PowerShell 7 on PATH).'
+  zh: '为 DeepSeek Harness 提供 Windows 原生系统通知与任务栏角标：任务完成和审批请求时弹出以会话名为标题的系统通知，可在通知里快速回复或允许/拒绝审批，任务栏图标显示未读完成数（需在设置中开启，并要求 PATH 中有 PowerShell 7）。'

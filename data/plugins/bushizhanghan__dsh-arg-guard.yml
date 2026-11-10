@@ -1,0 +1,22 @@
+url: https://github.com/bushizhanghan/dsh-arg-guard
+name: bushizhanghan/dsh-arg-guard
+category: security
+description:
+  en: >-
+    Validates every tool call against that tool's own parameters schema before it runs, and denies with the
+    exact path and type. The host renders a tool's parameters into the prompt but never checks a call against
+    them, so a wrong-typed value reaches the tool body: a number lands in path.join and the caller gets a raw
+    TypeError instead of an answer. This plugin hooks tools/pre-execute, resolves the definition, and returns a
+    deny whose reason reads "demo_tool.dir: expected string, got number (123)". Covers primitive types and
+    unions, required, enum/const, nested properties, array items, additionalProperties:false, and
+    oneOf/anyOf/allOf. Fails open on purpose: an internal error, an unknown tool, or a schema construct it
+    cannot read allows the call. mode deny or warn, plus a skip list. Two read-only tools, arg_guard_status and
+    arg_guard_check.
+  zh: >-
+    在工具真正执行前，用这个工具自己的 parameters 校验入参，被拒时给出精确的字段路径与类型。宿主只把
+    parameters 渲染进 prompt，从不按它校验调用，所以类型错误的值会一路走到工具体内：一个数字进了
+    path.join，调用方拿到的是一句原始 TypeError 而不是回答。本插件挂在 tools/pre-execute 上，取出工具定义，
+    返回 deny，reason 形如「demo_tool.dir: expected string, got number (123)」。覆盖原始类型与联合类型、
+    required、enum/const、嵌套 properties、数组 items、additionalProperties:false、oneOf/anyOf/allOf。
+    故意 fail-open：自身出错、工具未注册、或遇到读不懂的 schema 构造，一律放行。mode 可选 deny 或 warn，
+    另有 skip 名单。两个只读工具：arg_guard_status 与 arg_guard_check。

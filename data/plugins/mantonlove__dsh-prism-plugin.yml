@@ -1,0 +1,8 @@
+url: https://github.com/mantonlove/dsh-prism-plugin
+name: mantonlove/dsh-prism-plugin
+category: theme
+description:
+  en: 'DSH Background adds custom photo/GIF backgrounds to the DSH Web interface, with adjustable glass, typography, accent colors, aurora, six presets, and portable themes. Needs DSH 0.2.2-rc.1 or later.'
+  zh: 'DSH Background 可为 DSH Web 界面上传自定义图片或 GIF 背景，并调节毛玻璃、字体、强调色、极光、六套预设与可迁移主题。需 DSH 0.2.2-rc.1 及以上。'
+icon: https://raw.githubusercontent.com/mantonlove/dsh-prism-plugin/main/assets/icon-180.png
+tarball: https://github.com/mantonlove/dsh-prism-plugin/releases/latest/download/dsh-prism-plugin.tgz

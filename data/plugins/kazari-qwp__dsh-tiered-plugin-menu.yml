@@ -1,0 +1,7 @@
+url: https://github.com/kazari-qwp/dsh-tiered-plugin-menu
+name: kazari-qwp/dsh-tiered-plugin-menu
+category: market
+description:
+  en: Manage DSH plugins per client, workspace and session, with independent enable/disable controls, separate configurations, inherited defaults and reuse of original plugin settings pages.
+  zh: 按客户端、工作区和会话分层管理 DSH 插件，支持独立开关、不同配置、逐级继承及复用原插件的设置页面。
+tarball: https://github.com/kazari-qwp/dsh-tiered-plugin-menu/releases/download/v0.6.4/dsh-tiered-plugin-menu-0.6.4.tgz

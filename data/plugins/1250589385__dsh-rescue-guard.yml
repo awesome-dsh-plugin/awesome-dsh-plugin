@@ -1,0 +1,7 @@
+url: https://github.com/1250589385/dsh-rescue-guard
+name: 1250589385/dsh-rescue-guard
+tarball: https://github.com/1250589385/dsh-rescue-guard/releases/download/v0.3.1/dsh-rescue-guard-0.3.1.tgz
+category: dev
+description:
+  en: 'Standalone rescue for a broken DeepSeek Harness profile: a CLI that runs without DSH diagnoses the crash logs (six classified causes, from real incidents), pre-flights the profile for command-name collisions and files plugins read at construction time, arms a safe mode that loads only official bundles until a healthy boot restores them, and keeps manifest snapshots for rollback. A resident watcher watches the crash-log directories via OS file events — idle costs nothing, and when the loader dies the report is written within seconds, one file overwritten per crash. Windows only: crash logs are read from %APPDATA% and the watcher autostarts from the Windows Startup folder.'
+  zh: '在 DSH 打不开时救回配置：不依赖 DSH 的命令行工具，把崩溃日志归类（六类原因，全部来自真实事故），启动前预检命令名冲突与插件构造期读取的文件，布防安全模式（只加载官方 bundle，启动正常后自动还原），并保留清单快照供回滚。另有一个常驻守护进程，用操作系统文件事件盯着崩溃日志目录——空闲零开销，加载器一死几秒内写出自检报告，每次崩溃只覆盖一份文件。仅限 Windows：崩溃日志读自 %APPDATA%，守护进程经 Windows「启动」文件夹自启。'

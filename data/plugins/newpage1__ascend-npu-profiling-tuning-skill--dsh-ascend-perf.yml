@@ -1,0 +1,7 @@
+url: https://github.com/newpage1/ascend-npu-profiling-tuning-skill/tree/main/dsh-ascend-perf
+name: newpage1/ascend-npu-profiling-tuning-skill#dsh-ascend-perf
+category: dev
+tarball: https://github.com/newpage1/ascend-npu-profiling-tuning-skill/releases/download/v1.0.0/dsh-ascend-perf-1.0.0.tgz
+description:
+  en: "Read-only Ascend NPU fleet monitor for DeepSeek Harness: environments are read from envs.json, npu-smi is collected locally or over SSH with one connection per environment, and the sidebar shows each environment's idle/partial/busy occupancy, running processes, per-card and per-chip details, five-minute background polling, manual refresh, and a field-by-field configuration modal. It never starts or stops services or containers and never writes to the remote host."
+  zh: "DeepSeek Harness 的昇腾 NPU 多环境占用看板：环境从 envs.json 读取，通过本机或 SSH 只读采集 npu-smi（每环境一条连接），在侧栏显示每个环境的空闲/部分/高负载占用、占用进程与逐卡逐 chip 详情，支持每 5 分钟静默采集、手动刷新与逐字段配置弹窗；不启停服务/容器，不写远端。"

@@ -1,0 +1,6 @@
+url: https://github.com/dreanzy/dsh-plg/tree/main/packages/dsh-plugin-pack
+name: dreanzy/dsh-plg#dsh-plugin-pack
+category: dev
+description:
+  en: 'Disable plugins per workspace: a disabled plugin stops contributing tools to the model tool list and prompt sections to the system prompt, cutting the per-turn schema cost. A plugin is switched as a whole, with packs evaluated by workspace binding, then default.'
+  zh: '按工作区停用插件：停用后该插件不再向模型工具表提供工具、也不再向 system prompt 注入提示词段，减少每轮固定开销。插件按整包开关，pack 按工作区绑定值、再按 default 求值。'

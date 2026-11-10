@@ -1,0 +1,7 @@
+url: https://github.com/WU55UY/dsh-pomodoro-box
+name: WU55UY/dsh-pomodoro-box
+category: ui
+tarball: https://github.com/WU55UY/dsh-pomodoro-box/releases/download/v1.2.2/dsh-pomodoro-box-1.2.2.tgz
+description:
+  en: "Adds a collectible blind-box layer to a composer-dock pomodoro timer: each finished focus session opens one of 15 items across four rarity tiers, tracked in a 5x3 gallery."
+  zh: "在输入框下方的番茄钟上加一层藏品盲盒：每走完一个专注段开一个盲盒，15 件藏品分四档稀有度，进度记在 5x3 图鉴里。"

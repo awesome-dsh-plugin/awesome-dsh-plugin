@@ -1,0 +1,6 @@
+url: https://github.com/dcd887/dsh-doc-read
+name: dcd887/dsh-doc-read
+category: docs
+description:
+  en: 'Token-efficient document reader for DeepSeek Harness: outline / ranged read / grep for PDF, DOCX, XLSX, TXT.'
+  zh: '省 token 的文档读取器：对 PDF、DOCX、XLSX、TXT 提供大纲、按页读取、关键词检索。'

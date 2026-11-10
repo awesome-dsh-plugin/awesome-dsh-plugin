@@ -1,0 +1,6 @@
+url: https://github.com/Geng-zy/aurabot-qq-mac
+name: Geng-zy/aurabot-qq-mac
+category: identity
+description:
+  en: 'macOS (Apple silicon) fork of aureth-labs/dsh-aurabot-qq: the same QQ persona bot (chat, voice notes, stickers, memory, song covers, modules) with the Windows-only code removed. It connects to a OneBot v11 gateway such as SnowLuma running in OrbStack or Docker, falls back to the macOS `say` voice, sends files over 30 MB to a containerised gateway through a loopback-only temporary download link, and installs the song-cover environment (Applio, audio-separator, uv, Rubber Band, separation models) at pinned versions. It keeps the upstream package name and plugin id (dsh-aurabot-qq), so it replaces upstream and cannot be installed alongside it; use upstream on Windows.'
+  zh: '把 aureth-labs/dsh-aurabot-qq 移植到 macOS（Apple 芯片）的分叉：同样是住进 QQ 的人设机器人（聊天、语音条、表情包、记忆、翻唱、模块），删掉了 Windows 专用代码。接 OrbStack 或 Docker 里的 SnowLuma 等 OneBot v11 网关，语音兜底用 macOS 自带的 say，超过 30 MB 的文件通过只对本机开放的临时下载口发给容器里的网关，翻唱环境（Applio、audio-separator、uv、Rubber Band、分离模型）按固定版本一键安装。与上游同包名、同插件 id（dsh-aurabot-qq），安装即替换上游，不能与上游同装；Windows 请用上游。'

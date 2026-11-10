@@ -1,0 +1,7 @@
+url: https://github.com/phoenixyun/dsh-plugin-dlidl
+name: phoenixyun/dsh-plugin-dlidl
+category: ui
+description:
+  en: 'Danmaku and live-chat overlays for DSH: stream reasoning and answers as a right-hand chat timeline (bottom anchored, per-row fade, adjustable lifetime) or as Bilibili-style flying bullets across the whole window; mode-specific settings, content filters, and semantic edit announcements while files are being written.'
+  zh: '把大模型的流式输出做成两种可切换的覆盖层：直播模式是右下角聊天时间线（底部对齐、逐条淡出、可调停留时间），弹幕模式是 B 站式全屏飞行弹幕（速度/轨道数可调）；支持内容过滤，并在编辑文件时实时播报「修改文件/新增类名」。'
+tarball: https://github.com/phoenixyun/dsh-plugin-dlidl/releases/download/v0.2.0/dsh-plugin-dlidl-0.2.0.tgz
