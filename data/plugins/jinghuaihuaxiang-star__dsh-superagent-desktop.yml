@@ -1,0 +1,6 @@
+url: https://github.com/jinghuaihuaxiang-star/dsh-superagent-desktop
+name: jinghuaihuaxiang-star/dsh-superagent-desktop
+category: workflow
+description:
+  en: 'Desktop bundle of the dsh-superagent orchestrator: it turns GitHub issues or Feishu tickets into tasks executed by isolated DSH sessions, with a panel for sources, setup, prompts and run history.'
+  zh: 'dsh-superagent 编排器的桌面 bundle：把 GitHub issue 或飞书工单变成由独立 DSH 会话执行的任务，面板里管理来源、部署、提示词与运行记录。'
