@@ -954,6 +954,7 @@ dsh plugin --profile web add dshmarket
 - [jy007/dsh-calendar-board](https://github.com/jy007/dsh-calendar-board) — DSH 主栏里的月视图日历面板：可直接在日期格里写/改当天事项，叠加定时任务（只显示今天和明天，按运行状态配色），并合并 iCalendar 订阅与本机「日历」里已同步的日历；同一个 calendar_board 工具把事项开放给任意 Agent 会话。
 - [k-ying/dsh-vsceditor](https://github.com/k-ying/dsh-vsceditor) — 在 GUI 页签内嵌真实的 VSCode 编辑器（code-server，或通过自带 bridge 扩展连接本机桌面 VS Code）：Agent 的文件改动弹出按对话轮次累计的红绿 diff，关标签、刷新页面都不丢，写入期间文件自动锁定，看门狗托管进程、崩溃升级不留孤儿。
 - [k623615746/dsh-chat-split](https://github.com/k623615746/dsh-chat-split) — 对话区分屏：左侧栏入口最多开四屏（1 屏铺满 / 2 屏左右并排 / 3–4 屏两列两行），从侧栏把会话拖进对话区即自动分屏，拖一屏的信息头到另一屏可换位，点一下把某屏铺满整个区域；网格是宿主正文区里的真子节点，宿主标题栏、页签行与左侧栏原样保留，每屏自带序号/工作区/标题信息头，屏数加减与关闭挂在宿主顶栏页签行右侧。
+- [k623615746/dsh-sysload](https://github.com/k623615746/dsh-sysload) — 在 DeepSeek Harness 会话顶栏实时显示 CPU、GPU 与内存占用：三个小格各带百分比和 2 px 细条，75 %、90 % 变色；CPU 取 os.cpus() 差值，GPU 优先 nvidia-smi（Windows 下可退回性能计数器）。
 - [Kadima-code/dsh-subagent-fold](https://github.com/Kadima-code/dsh-subagent-fold) — 把原生子代理下拉按使用批次折叠为 历史 / 今日 / 上次 / 本次 四组，本次始终展开；不改动原版头部。
 - [Kadima-code/dsh-subagent-toolkit](https://github.com/Kadima-code/dsh-subagent-toolkit) — 子代理工具箱：把原生子代理下拉按使用批次折叠为 历史 / 今日 / 上次 / 本次 四组（本次常展开），支持行内/整组删除子代理会话，并让子代理模型名单实时生效（逐任务选模型）；不改动原版头部。
 - [kahomesl/dsh-chat-diff-summary-legacy](https://github.com/kahomesl/dsh-chat-diff-summary-legacy) — 输入框上方的本轮改动统计条，显示这一轮改了哪些文件、增删多少行，适配 DeepSeek Harness 0.1.5-rc.1 至 0.1.7。
@@ -3038,6 +3039,7 @@ dsh plugin --profile web add dshmarket
 - [Zeppeli777/dsh-stardew-skin](https://github.com/Zeppeli777/dsh-stardew-skin) — 星露谷物语主题·组件替换版：走 dsh 官方客户端主题机制，在完整保留的官方 React UI 上叠加奶油纸面 alias token 层、缝合像素字体与山谷壁纸。npm 包名 dsh-theme-stardew-valley。
 - [Zeppeli777/dsh-theme-stardew-fullskin](https://github.com/Zeppeli777/dsh-theme-stardew-fullskin) — 星露谷物语主题·整皮版，仅适用于 dsh Web 界面：把 Web 前端整体换成自包含的像素农场界面——祝尼魔对话、农场选预设、任务日志 HUD、会话即游戏日的山谷日历、8-bit 音效与桌宠。不支持桌面原生窗口，请勿与其他会改变 UI 的插件同时启用。
 - [zhang66633/dsh-pixel-ui](https://github.com/zhang66633/dsh-pixel-ui) — 四套配色的像素风 DSH Web 皮肤（木屋/羊皮纸/暖阳/终端绿）；中文像素字体由插件自身的 host 路由发货；完全平面、无阴影。
+- [zhangcaiqian/wenfang-themes#dsh](https://github.com/zhangcaiqian/wenfang-themes/tree/main/packages/dsh) — 为 DeepSeek Harness 提供六套中式外观配色：墨、纸、海、瓷，深浅各半，可在插件市场主题页切换；与 Codex 端共用同一份设计源。
 - [zhijun-dai/Catppuccin-dsh-theme](https://github.com/zhijun-dai/Catppuccin-dsh-theme) — 🐱 Catppuccin 主题插件：充满活力、令人放松的柔和彩色主题。遵循官方 26 色粉彩盘，🌻 Latte / 🪴 Frappé / 🌺 Macchiato / 🌿 Mocha 四档一键切换，全界面按色盘上色，鼠标滑过交互变主题色。
 - [zhijun-dai/dsh-Fonts](https://github.com/zhijun-dai/dsh-Fonts) — 字体系统插件：随插件离线分发的 OFL 开源字体预设、自定义 woff2 字体导入，以及供其他插件扩展的 ctx.fonts 注册表。
 - [zhijun-dai/Solarized-dsh-theme](https://github.com/zhijun-dai/Solarized-dsh-theme) — Solarized 主题插件：经典低对比护眼配色双体系——Ethan Schoonover 的 Solarized 与 Selenized（改良版）深浅各一套，专为长时间使用设计，遵循经典语法色。
@@ -5692,6 +5694,7 @@ dsh plugin --profile web add dshmarket
 - [ninetyhe-90/dsh-decision-review](https://github.com/ninetyhe-90/dsh-decision-review) — 让主模型把已形成的决策交给独立评审模型复核，支持 off、shadow、advisory 三种模式；需自备实现 POST /v1/decision 的复核服务。
 - [NingYuanLee/dsh-tavily-mcp](https://github.com/NingYuanLee/dsh-tavily-mcp) — 接入 Tavily 托管的 MCP 服务器并注册它公布的工具。API Key 从 TAVILY_API_KEY 凭据读取，不写入插件配置。
 - [NINKCH/dsh-infinite_canvas](https://github.com/NINKCH/dsh-infinite_canvas) — DeepSeek Harness 的节点式创作工作室——在无限画布上完成剧本、分镜、参考图与多镜头视频生成，可由对话批量驱动；图像/视频/TTS 需自带服务商（OpenAI 风格接口，或 Seedance/Sora 风格视频 API），未配置时整条流水线以离线演示模式运行、只产出占位素材。
+- [NIRVANA-APOC/dsh-litnotes](https://github.com/NIRVANA-APOC/dsh-litnotes) — 面向 DeepSeek Harness 的本地优先 AI 文献阅读台：导入并解析论文（MinerU 或本机 pdf.js），原文/双语阅读与页边批注，带引用跳转的 grounded AI 问答，以及单篇/全库知识图谱；七个 agent 工具共享同一文献库。
 - [NIRVANA-APOC/dsh-rdm](https://github.com/NIRVANA-APOC/dsh-rdm) — DeepSeek Harness 的常驻多连接下载引擎：七个 rdm_* 智能体工具加侧边栏下载面板，支持断点续传、SHA-256 校验与限速，内核或 DSH 重启后仍可续传。
 - [nisew2/dsh-whale-dive](https://github.com/nisew2/dsh-whale-dive) — 会话内读 B站与抖音：B站走 WBI 签名接口，全部请求共用一个限速器（默认 4 请求/秒，吃 412 后按主机冷却），覆盖视频、热门、搜索、UP主、评论、弹幕、字幕；抖音则通过 CDP 驱动本机 Edge 渲染，读热榜、视频、推荐流与搜索。
 - [niuniu-869/dsh-plugin-cas-kb](https://github.com/niuniu-869/dsh-plugin-cas-kb) — 为 DSH 智能体提供中国会计与税务知识库，由托管服务 Quaesto（api.accountingllm.site）提供，需联网、无需账号或 API key，但查询内容会发往该服务：查企业会计准则、小企业会计准则、审计准则与税法的原文条款、判断决策程序、适用性判定与税会差异，通过 10 个 MCP 工具与 china-accounting-standards 技能对外提供。
@@ -5897,6 +5900,7 @@ dsh plugin --profile web add dshmarket
 - [shuxidemosheng/dsh-plan-mode-plus](https://github.com/shuxidemosheng/dsh-plan-mode-plus) — dsh 计划模式的 ZCode 式增强：模型可主动调用 enter_plan_mode 进入计划模式，计划期间写类工具在分发前被硬拦截，并注入「探索 → 设计 → 评审 → 退出」四阶段工作流提示词；复用官方 plan/mode 状态机与退出评审流，只做增量。
 - [shuxidemosheng/dsh-skill-compat-plus](https://github.com/shuxidemosheng/dsh-skill-compat-plus) — 技能兼容层：把 Claude Code / Codex / ZCode 的技能目录挂载为 dsh 的只读技能提供方——支持 frontmatter 字段映射、名称 slug 规范化与热重载。
 - [shuxidemosheng/dsh-tool-todo-plus](https://github.com/shuxidemosheng/dsh-tool-todo-plus) — 官方 todo_write 的增强 fork：任务项支持优先级标签、会话内完整清单渲染，并提供可拖动的会话内浮动任务面板（位置记忆 / 双击复位 / 当前动作显示）。
+- [SilverlingFox/dsh-pixelbar](https://github.com/SilverlingFox/dsh-pixelbar) — 把花再 Halo PixelBar 桌面像素屏变成 DSH 工具：经 HID 推短文字、切场景、设屏色、调氛围灯与音量，并可按需切回时钟。
 - [SIMON-WORLD/dsh-eco-indicator](https://github.com/SIMON-WORLD/dsh-eco-indicator) — 世界银行开放数据经济指标查询：GDP、通胀、贸易、人口等，无需 API 密钥。
 - [SIMON-WORLD/dsh-journal-monitor](https://github.com/SIMON-WORLD/dsh-journal-monitor) — 经济学优先的期刊/工作论文监控插件：NBER RSS + arXiv 经济学（4 类目）+ 中文经管期刊（世界经济-玛格泰克平台，中国农村观察/财贸经济/中国人口科学/经济管理-ajcass 平台）抓取、关键词过滤、dry-run/Webhook 推送、去重持久化、定时简报（schedule_create 兼容）。
 - [SIMON-WORLD/dsh-toolkit#dsh-at-file](https://github.com/SIMON-WORLD/dsh-toolkit/tree/main/packages/dsh-at-file) — DSH 的 @ 文件引用工具：注册 at_file_read 工具，把工作区内文件内容注入会话，含目录穿越防护与 50KB 截断（MIT）。
