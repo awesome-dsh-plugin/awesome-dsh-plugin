@@ -4329,6 +4329,7 @@ dsh plugin --profile web add dshmarket
 - [spike237/dsh-task-groups](https://github.com/spike237/dsh-task-groups) — 给侧边栏加上自定义任务分组和活动铃铛：把会话拖进拖出分组、手动排序、折叠分组，并在一处集中查看运行中、待确认和未读的会话。
 - [SpookySandwich/dsh-plugin-message-edit](https://github.com/SpookySandwich/dsh-plugin-message-edit) — 编辑已发送的消息即可从该轮次回溯并分叉对话，用气泡下方的计数器切换版本，并在轮次级版本树中浏览所有分支。
 - [SpookySandwich/dsh-plugin-no-workspace](https://github.com/SpookySandwich/dsh-plugin-no-workspace) — 无需强制绑定工作区即可新建和分离独立会话，同时保留 DSH 原生的工作区界面。
+- [sss-1012/dsh-sidebar-sessions](https://github.com/sss-1012/dsh-sidebar-sessions) — 最近优先的会话侧边栏：自定义分组、工作区树、归档、状态点与拖动排序。
 - [starslittle/dsh-queue-plus](https://github.com/starslittle/dsh-queue-plus) — DSH 排队消息增强面板，支持编辑、删除、插话、排序和批量删除。
 - [startime-ltk/dsh-handover](https://github.com/startime-ltk/dsh-handover) — 把旧 DSH 会话压成有字数上限的交接包（进度、动过的文件、改变过状态的命令、待办），让当前会话接着干；旧会话全程只读，list / pack / search / read 由同一个工具承担。
 - [stevenwang15/dsh-session-workspace](https://github.com/stevenwang15/dsh-session-workspace) — 让 DeepSeek Harness 默认工作区里新建的每个对话自动拥有独立工作区和沙箱根（手动添加的项目工作区默认保持共用，设 mode: all 才全部隔离），并在输入框旁提供临时开关。
@@ -7875,6 +7876,7 @@ dsh plugin --profile web add dshmarket
 - [Madao1210/dsh-deep-reading](https://github.com/Madao1210/dsh-deep-reading) — 读书工作流：导入 EPUB/Markdown/TXT/PDF 拆章，逐章由子任务精读（原文不进主会话），保存带 \[n] 定位的章节记忆、支持跨会话续读，可导出笔记或 EPUB。
 - [Making-acid/dsh-approval-preflight](https://github.com/Making-acid/dsh-approval-preflight) — 先交计算图、逐节点批准的权限预检：节点写清这件事的本质（下载什么到哪里、写什么、删什么），用户按节点批准，一次批准只对一次成功执行生效；未申报的操作仍走原生审批卡；节点被未答复的审批卡住时会自动挂起，先做不依赖它的工作；节点内实际跑过什么留有审计痕迹。
 - [makooslee/dsh-company](https://github.com/makooslee/dsh-company) — dsh-company：多智能体 AI 团队、子智能体公司。员工管理、CEO 认单派活、n8n 式工作流编排：拖拽员工节点到画布、连线、并行执行。DeepSeek Harness 插件，七个内置角色（项目总监、产品经理、技术总监、工程师、数据分析师、测试工程师、审核员），每人各有人设、模型与工具白名单。任务广播下去，员工自己决定接不接——回复第一行必须是【接单】或【不接】——接单的人并行开工，而不是走流水线。工作流画布用开始节点串起员工节点，用 {{input}} 引用上游产出，图按拓扑分层执行：跨员工并行、同员工串行、上游失败下游自动跳过。附员工管理、任务板与员工对话详情的网页面板，/dsh-company 斜杠命令，与内置 agent-team 面板的实时联动，可删除的任务，以及每员工独立的记忆目录。
+- [MarchLiu/dsh-cybernetics](https://github.com/MarchLiu/dsh-cybernetics) — 把 DSH 会话代理组织为显式控制回路：持久的会话目标驱动每轮由任务、验证、分诊代理组成的 workflow 执行，目标修订只追加不改写，并提供可选硬门——顶层代理仅保留读取与编排工具，一切变更须经目标循环。含客户端「目标」标签页与子代理审批透传。
 - [MaRi23333/dsh-subagent-library](https://github.com/MaRi23333/dsh-subagent-library) — 具名子代理名册：设置页可视化维护角色条目（模型、persona、工具过滤、深度、后台模式），热生效；模型用 list_subagents 选人、delegate 按 id 派活，支持前台、后台与可续聊。
 - [mario841859784/dsh-expert-orchestrator](https://github.com/mario841859784/dsh-expert-orchestrator) — 多智能体编排 agent preset：首席编排者不亲自实施——先分诊、请 PM 专家规划、经合并专家花名册（召唤工具）把实施委派给领域专家，依赖 DAG 任务板与落盘消息总线调度并行协作，交付前经独立评审门禁。出厂内置 11 位核心专家；更多专家团（Agency agents 中英文、classic 集合）可在设置页一键下载，走 GitHub/CDN 双通道并经 sha256 验签。npm 包名 dsh-expert-orchestrator（要求 DSH >= 0.1.7-alpha.2）。
 - [matata2017/dsh-codex-hooks](https://github.com/matata2017/dsh-codex-hooks) — 把 Codex 的钩子管理移植到 dsh：从配置、插件与项目三处发现 hooks.json，每条钩子钉在 sha256 指纹上、批准后才运行；输入框里的审查弹窗、`/hooks` 浏览器、逐条运行统计，以及在 设置 → 钩子 里管信任、启用与试跑。配置文件用 dsh 自己的格式与事件名。
@@ -9140,6 +9142,7 @@ dsh plugin --profile web add dshmarket
 - [SOVLOOKUP/dsh-mise](https://github.com/SOVLOOKUP/dsh-mise) — 需本机先安装 mise。用 mise 管理本机工具链 —— 设置页列出生效 / 已装 / 可用版本，按 .mise.toml 安装、切换、卸载与清理，加载时把 mise 的 shims 放进 Host PATH 最前，并给 agent 九个工具（状态、版本、PATH 扫描、安装、切换、清理、卸载、激活、进度）。
 - [SpaceRelay/dsh-subagent-control#human-wait](https://github.com/SpaceRelay/dsh-subagent-control/tree/main/human-wait) — 把 PTC 模式 run_code 的执行预算在人机等待期间暂停，提问、计划审议或审批可以超过出厂的 120 秒而不被中断。
 - [SpaceRelay/dsh-subagent-control#team-limits](https://github.com/SpaceRelay/dsh-subagent-control/tree/main/team-limits) — 调整 Agent Team 的人数、任务数、单条消息大小与清理超时。
+- [sss-1012/DeepSeek-Harness-Manager#plugin](https://github.com/sss-1012/DeepSeek-Harness-Manager/tree/main/plugin) — 在 DSH Web 界面左下角加一个「管理器」按钮，一键打开 Windows 版 DeepSeek Harness Manager（未安装则跳转下载页）。
 - [StanElka/dsh-vscode#dsh-door](https://github.com/StanElka/dsh-vscode/tree/main/packages/dsh-door) — 为正在运行的 DeepSeek Harness 内核提供仅监听本机回环地址的 ACP 接入点，供 VS Code 等本机客户端连接，共用模型、工具、记忆和会话，并支持历史查看、权限切换及调用 DSH 插件已注册的能力。
 - [STARDUSTLC666/dsh-flakefinder](https://github.com/STARDUSTLC666/dsh-flakefinder) — 测试稳定性工具：重复运行 vitest/jest/pytest/node:test，识别 flaky 用例，历史留档、隔离清单与健康自检。
 - [Starfie1d1272/dsh-builtin-toggles](https://github.com/Starfie1d1272/dsh-builtin-toggles) — DSH Web 内置 capability 的 evidence-backed 检查器：展示运行/配置溯源、兼容性与漂移诊断，并仅为 9 个经过审阅的 UI leaf 提供 fail-closed 控制。
