@@ -2,6 +2,6 @@ url: https://github.com/callmeocean1/dsh-taskbar-status
 name: callmeocean1/dsh-taskbar-status
 category: notify
 description:
-  en: Shows Windows taskbar progress while a turn runs, turns amber and flashes when an approval or question is waiting, and latches red after a failed turn.
-  zh: 回合运行中在 Windows 任务栏显示进度条，等待审批或提问时变成琥珀色并闪烁，回合失败后保持红色。
+  en: 'Shows Windows taskbar progress while a turn runs, turns amber and flashes when an approval or question is waiting, and latches red after a failed turn. A fork of Joker2377/dsh-taskbar-status whose packaging change makes koffi an optional peer dependency, so it installs on DSH Desktop without a native build-script approval; do not install it together with the original.'
+  zh: '回合运行中在 Windows 任务栏显示进度条，等待审批或提问时变成琥珀色并闪烁，回合失败后保持红色。Joker2377/dsh-taskbar-status 的分支，打包上的改动是把 koffi 改成可选的 peer 依赖，使其在 DSH Desktop 上安装时不再需要原生构建脚本授权；不要与原版同时安装。'
 tarball: https://github.com/callmeocean1/dsh-taskbar-status/releases/download/v0.6.2/dsh-taskbar-status-0.6.2.tgz

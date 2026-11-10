@@ -2,5 +2,5 @@ url: https://github.com/90le/dsh-channel-octo
 name: 90le/dsh-channel-octo
 category: notify
 description:
-  en: Connects Octo direct messages, groups, and topics to DeepSeek Harness Web, with separate conversations, channel settings, and reply progress cards.
-  zh: 将 Octo 私聊、群聊和子区接入 DeepSeek Harness Web，提供独立会话、渠道设置和回复进度卡。
+  en: 'Connects Octo direct messages, groups, and topics to DeepSeek Harness Web, with separate conversations, channel settings, and reply progress cards. Needs an Octo bot token and Node.js 24 or 26, and ships switched off until you enable it; private chats are admitted by a local allowlist or Octo friendship, and groups and topics need an explicit @mention.'
+  zh: '将 Octo 私聊、群聊和子区接入 DeepSeek Harness Web，提供独立会话、渠道设置和回复进度卡。需要 Octo 机器人令牌与 Node.js 24 或 26，安装后默认关闭收发；私聊按本地白名单或 Octo 好友关系准入，群聊与子区需要明确 @。'

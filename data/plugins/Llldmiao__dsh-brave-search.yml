@@ -2,5 +2,5 @@ url: https://github.com/Llldmiao/dsh-brave-search
 name: Llldmiao/dsh-brave-search
 category: tools
 description:
-  en: 'Five Brave Search tools — web/news/image/video results, token-budgeted page context, cited AI answers, local places, and autocomplete/spellcheck — plus a brave search provider for the built-in web_search tool.'
-  zh: '五个 Brave 搜索工具：网页/新闻/图片/视频结果、按 token 预算裁剪的正文、带引用的 AI 回答、本地地点、联想与拼写纠错；另提供一个 brave 搜索 provider，供内置 web_search 使用。'
+  en: 'Five Brave Search tools — web/news/image/video results, token-budgeted page context, cited AI answers, local places, and autocomplete/spellcheck — plus a brave search provider for the built-in web_search tool. Needs a Brave Search API key (BRAVE_SEARCH_API_KEY; some endpoints need a higher plan). Based on Brave''s official Search API skills; it uses the same plugin id as BuffMcBigHuge/dsh-brave-search, so install only one of the two.'
+  zh: '五个 Brave 搜索工具：网页/新闻/图片/视频结果、按 token 预算裁剪的正文、带引用的 AI 回答、本地地点、联想与拼写纠错；另提供一个 brave 搜索 provider，供内置 web_search 使用。需要 Brave Search API 密钥（BRAVE_SEARCH_API_KEY，部分接口要更高档的套餐）。基于 Brave 官方的 Search API skills；与 BuffMcBigHuge/dsh-brave-search 使用同一个插件 id，二者只装其一。'

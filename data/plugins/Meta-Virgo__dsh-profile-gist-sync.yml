@@ -2,6 +2,6 @@ url: https://github.com/Meta-Virgo/dsh-profile-gist-sync
 name: Meta-Virgo/dsh-profile-gist-sync
 category: dev
 description:
-  en: "Backs up a DSH profile's text configuration to an unlisted secret GitHub Gist, and syncs it back on another machine: a settings page with three buttons (status / upload / sync), a config_backup agent tool, a reversible merge-style restore, and credential stores, binaries, lockfiles and local usage counters left out of every backup and named in the UI."
-  zh: "把本机 DSH profile 的文本配置备份到不公开列出的 secret GitHub Gist，并在另一台机器上同步回来：设置页只有三个按钮（状态／上传／同步），另有 config_backup 工具；恢复是合并式的、可撤销；凭据库、二进制文件、锁文件与本机用量计数不进入备份，并在界面上逐项列明。"
+  en: 'Backs up a DSH profile''s text configuration to an unlisted secret GitHub Gist, and syncs it back on another machine: a settings page with three buttons (status / upload / sync), a config_backup agent tool, a reversible merge-style restore, and credential stores, binaries, lockfiles and local usage counters left out of every backup and named in the UI. Needs a GitHub token with the gist scope (DSH_GITHUB_TOKEN, GITHUB_TOKEN or a signed-in gh CLI). Files are uploaded as plain text without redaction, so keys written into cordis.patch.yml or .npmrc end up in a Gist that anyone with its link can read.'
+  zh: '把本机 DSH profile 的文本配置备份到不公开列出的 secret GitHub Gist，并在另一台机器上同步回来：设置页只有三个按钮（状态／上传／同步），另有 config_backup 工具；恢复是合并式的、可撤销；凭据库、二进制文件、锁文件与本机用量计数不进入备份，并在界面上逐项列明。需要带 gist 权限的 GitHub 令牌（DSH_GITHUB_TOKEN、GITHUB_TOKEN 或已登录的 gh CLI）。文件按原文上传、不做脱敏，写进 cordis.patch.yml 或 .npmrc 的密钥会进入 Gist，任何拿到链接的人都能读。'
 icon: https://raw.githubusercontent.com/Meta-Virgo/dsh-profile-gist-sync/main/assets/icon-256.png
