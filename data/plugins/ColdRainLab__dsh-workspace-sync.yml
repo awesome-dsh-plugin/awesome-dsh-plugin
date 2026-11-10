@@ -1,0 +1,8 @@
+url: https://github.com/ColdRainLab/dsh-workspace-sync
+name: ColdRainLab/dsh-workspace-sync
+category: tools
+tarball: https://github.com/ColdRainLab/dsh-workspace-sync/releases/download/v0.1.2/dsh-workspace-sync-0.1.2.tgz
+
+description:
+  zh: '把工作区、会话记录与自动化任务同步到你自己的云端目录（网盘同步文件夹，后端可扩展），换机器登录后拉取即见。'
+  en: 'Sync workspaces, session history and automations to your own cloud folder (any folder-synced backend), so a new machine picks up where you left off.'
