@@ -1295,6 +1295,7 @@ dsh plugin --profile web add dshmarket
 - [NKUhan123/dsh-jupyterlab](https://github.com/NKUhan123/dsh-jupyterlab) — DSH 的 JupyterLab 风格 notebook：代码与输出左右分栏并可拖动，长 cell 滚动时输出贴住视口，支持 Jupyter 快捷键（a/b/dd、m/y、Shift+Enter 与 Ctrl+Enter 区分）、左侧剪刀删除 cell、py/md 标签切换代码与 Markdown。基于 @beihaizb/dsh-notebook 的修改版：两者注册同一批 nb_* 工具，不能与上游同装，装前请先卸载原版；所选 Python 内核需安装 ipykernel、jupyter_client 与 nbformat。
 - [nnnanann/Deepseek-harness-freeze-content-on-window-resize](https://github.com/nnnanann/Deepseek-harness-freeze-content-on-window-resize) — 固定 DSH Web GUI 的正文列宽度，并在窗口缩放后把阅读位置对回原处。
 - [NoCandles/dsh-stock-bar](https://github.com/NoCandles/dsh-stock-bar) — 钉在 DSH 窗口顶部的常驻行情条：自选股、带股数与成本价的持仓、盈亏、K 线与分时图、五档盘口、交易流水、价格预警，以及用 DSH 已配置模型流式生成的 AI 复盘。
+- [nohappiness/dsh-linux-shortcut](https://github.com/nohappiness/dsh-linux-shortcut) — 让 Linux 上的网页端拥有 Windows / macOS 端那套快捷键：宿主半在 index.html 注入一行脚本，使 Linux 浏览器在快捷键服务读取平台之前报告 Windows 平台，内置键位表因此生效而不是空白；设置页额外显示一行，指示映射是否真的生效。
 - [NOirBRight/dsh-codex-sidebar](https://github.com/NOirBRight/dsh-codex-sidebar) — DSH 的 Codex 风格详情侧栏：提供 Files、Review、Browser 与 Terminal 面板、对话文件链接和 diff 统计、批注，以及 Host 管理的浏览器控制。
 - [NOirBRight/dsh-llm-assistant](https://github.com/NOirBRight/dsh-llm-assistant) — 常驻 Web 席位，背后是独立助理会话：对话、图片、提醒、值班心跳，以及按需只读引用当前任务。
 - [NOirBRight/dsh-llm-providers-ui](https://github.com/NOirBRight/dsh-llm-providers-ui) — LLM Providers 设置页的挂载 owner：provider 卡片、拖拽排序与 picker 排序。
@@ -5934,6 +5935,7 @@ dsh plugin --profile web add dshmarket
 - [Xin-kon/dsh-lang-guard](https://github.com/Xin-kon/dsh-lang-guard) — 把「用中文思考和回答」钉进系统提示词，并每步注入一条运行时提醒，避免工具返回英文后语言漂移。零运行时依赖、单文件，带能力探测与降级注册，宿主 API 变更时仅记日志、不抛错。
 - [xing-he888/dsh-database-explorer](https://github.com/xing-he888/dsh-database-explorer) — DeepSeek Harness 的数据库浏览器：在对话区第三个页签连接 SQLite、MySQL/MariaDB、PostgreSQL、SQL Server、MongoDB、ClickHouse、Redis、Elasticsearch 与 Qdrant——浏览结构树、分页查看数据、编辑单元格、插入行、建表/改表/删表、执行 SQL、CSV/JSON/SQL/Markdown 导入导出，以及可编辑的 E-R 关系图。只读连接按语句白名单硬拒绝写路径，agent 工具默认只读、写工具需显式授权，所有写操作（含被拒尝试）进入可查可删的审计日志；附带 MCP stdio 服务器，把同一份连接暴露给任意外部 AI 客户端。
 - [xing666173/dsh-vision-hub#file-drop](https://github.com/xing666173/dsh-vision-hub/tree/main/file-drop) — 拖拽上传 PDF/Word/Excel/图片等文件:落盘为本地路径引用,对话里不塞 base64 大文本。
+- [xingbei437/dsh-cbm-autorefresh](https://github.com/xingbei437/dsh-cbm-autorefresh) — 零配置的 codebase-memory 保鲜插件：会话开始时、以及每次切换工作目录时，自动刷新该会话自己那个仓库的索引，让每个会话里的每个项目都查得到与当前代码一致的图；索引重活仍在共享 daemon 里完成。
 - [XINGMENG2333/dsh-plugin-optimize-ai-reply](https://github.com/XINGMENG2333/dsh-plugin-optimize-ai-reply) — 把大模型生成的文本改成读起来像人写的：本地密度扫描 + 事实/强度/安全确定性校验，改写不达标自动回退原文。
 - [xingxue-ux/dsh-comfyUI-control](https://github.com/xingxue-ux/dsh-comfyUI-control) — 新增「绘图模式」Agent 预设，含 19 个 comfyui_* 工具：Anima/Krea2 出图、LoRA 检索与下载、Danbooru 角色 tag、PNG 元数据、上游复刻自检、小番茄解混淆。
 - [xingxue-ux/dsh-reverse-mode](https://github.com/xingxue-ux/dsh-reverse-mode) — 逆向工程 agent 预设。把 REA（rea-agents）的原生二进制、JavaScript/Electron、托管程序集、归档与安装包分析能力作为 MCP 工具挂载——默认全量 170 个——但只在选择该预设的会话里生效，其它预设零加载。附带安装后环境自检：报告本机已装哪个原生分析引擎（Hopper / Ghidra / IDA），并给出接入所需的 env 片段。本插件是 dsh-rea（JeremyWangCY，MIT）的二次开发分支，改为 agent 预设，请勿与上游 dsh-rea 同时安装。
