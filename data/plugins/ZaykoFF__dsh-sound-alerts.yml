@@ -1,0 +1,6 @@
+url: https://github.com/ZaykoFF/dsh-sound-alerts
+name: ZaykoFF/dsh-sound-alerts
+category: notify
+icon: https://raw.githubusercontent.com/ZaykoFF/dsh-sound-alerts/main/assets/icon-256.png
+description:
+  en: 'Sound cues played by the host operating system, not the browser: three bundled WAV files fire through the machine''s own audio (SoundPlayer on Windows, afplay on macOS, paplay/aplay on Linux) when an agent''s turn completes, when the context is compacted and when the agent is waiting for your answer; subagent turns can be included, cues fired closer than a configurable interval are skipped, and each bundled sound can be replaced with your own file via plugin config.'
