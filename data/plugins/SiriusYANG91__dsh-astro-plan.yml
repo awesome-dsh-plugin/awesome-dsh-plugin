@@ -1,0 +1,6 @@
+url: https://github.com/SiriusYANG91/dsh-astro-plan
+name: SiriusYANG91/dsh-astro-plan
+category: tools
+description:
+  en: 'Astrophotography planner: 18 target types across 173 Chinese sites, ranked by light pollution, altitude, moon phase, ephemeris events and 7-day weather, with framing and exposure advice plus a Stellarium-style 3D sky preview.'
+  zh: '星野摄影计划：按 18 类天象与深空目标、全国 173 站检索，结合光污染、方位、月相、星历事件与 7 天天气给出推荐排序、焦段与曝光，并附 Stellarium 风格 3D 天球画面模拟。'
