@@ -1,0 +1,6 @@
+url: https://github.com/HughPython/dsh-tc-mail
+name: HughPython/dsh-tc-mail
+category: notify
+description:
+  en: 'Tencent Agent Mail client: a sidebar panel for inbox and sent browsing, HTML reading in a sandboxed frame with remote images blocked by default, compose/reply/forward with attachments, search and permanent delete, adjustable font and surface opacity, plus five agent tools (mail_health, mail_list, mail_read, mail_search, mail_send) sending through an OAuth-authorized agently-cli account.'
+  zh: '腾讯智能体邮箱（Agent Mail）客户端：侧边栏面板浏览收件箱与发件箱，HTML 正文在沙箱内渲染并默认拦截外链图片，支持写信、回复、转发、附件收发、搜索与永久删除，可调字体与界面透明度；另注册 5 个工具（mail_health、mail_list、mail_read、mail_search、mail_send），发信走已授权的 agently-cli 账号。'
