@@ -1744,7 +1744,7 @@ dsh plugin --profile web add dshmarket
 - [tuoLuoSuan/dsh-peak](https://github.com/tuoLuoSuan/dsh-peak) — 输入框工具行左端的小胶囊：点一下就知道此刻 DeepSeek 按高峰价还是空闲价计费。点开是当前状态与计费方式、下次切换时间与倒计时，以及此刻为什么是这个状态：周末、具名的法定节假日、调休上班日，或者只是不在高峰时段内。判定用北京时间并显式写死 UTC 偏移，不看本机时钟；内置 2026 年中国法定节假日表（33 天节假日、6 个调休上班日），表外的年份直接说不知道，不猜。
 - [TussalZeus18028/dsh-open-folder](https://github.com/TussalZeus18028/dsh-open-folder) — 在工作区侧边栏的会话行 ⋯ 菜单中增加「打开文件夹」项，用系统文件管理器打开该会话所属工作区的文件夹。
 - [TWFU-wcy/dsh-scroll-boost](https://github.com/TWFU-wcy/dsh-scroll-boost) — 让视口外的聊天行与轨迹行不参与渲染，长会话滚动更稳；行高按实测保留，滚动条不跳，屏幕内画面不变。
-- [tyouter/dsh-notes](https://github.com/tyouter/dsh-notes) — DeepSeek Harness 里的笔记本：一页纸，边写边排版。两个空格是项目符号，四个空格是下一级。停一秒出现建议，TAB 采纳、一次 Backspace 收回。结构化与翻译只写成草稿，应用后才落进正文。历史页就地编辑，并可复制标准 Markdown。看板用只读查询工具回答关于笔记的问题，并把图表钉在看板上。沉浸模式让页面独占整屏；面板变窄时页脚换行而不是隐藏按钮。
+- [tyouter/dsh-notes](https://github.com/tyouter/dsh-notes) — DeepSeek Harness 里一张安静的纸，用来思考。给喜欢边写边想的人。 · 极简写 — 一页纸，边写边排版。 · AI 自动补全 — 停笔片刻给出建议，TAB 采纳。 · 沉浸式书写 — 全屏，只有这张纸。 · 历史记录 — 笔记可列、可搜、就地编辑，一键复制标准 Markdown。 · AI 看板 — 数据助手用你的笔记回答，并把图表钉在看板上。
 - [tyvtjhj/system-resource-monitor#dsh-hardware-monitor](https://github.com/tyvtjhj/system-resource-monitor/tree/main/plugins/dsh-hardware-monitor) — DSH 本机硬件监控插件：侧边栏完整面板、输入框下方的 CPU/内存/GPU 挂件，以及 hardware_monitor_status 工具。数据来自另装的本地 Python 服务：需在仓库根用 install-dsh.ps1 安装（Windows、Python 3.10）；只装 DSH 插件时面板与工具均不可用。
 - [TZHR-invest/dsh-plugins#dsh-mobile-ui](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-mobile-ui) — Web GUI 移动端适配：窄屏全宽响应式布局、会话抽屉、44px 触摸目标、安全区适配与阅读增强，桌面端零影响。
 - [TZYCeng/dsh-model-visibility](https://github.com/TZYCeng/dsh-model-visibility) — 管理哪些模型出现在输入框的模型菜单里。设置页按 Provider 列出模型，支持逐模型开关、渠道级批量显隐、整组折叠和按类型筛选；关闭的模型从菜单中消失，当前会话正在使用的模型保留。还能按名称 / ID 搜索，按能力（多模态、支持推理）和上下文下限（128K / 256K / 512K / 1M）过滤。每行标注模型类型，对话模型另外标注是否支持推理、适配器公布的思考强度档位、上下文窗口和输入模态。标签按优先级合并手动覆盖、设置文档、适配器、中转站 GET /models 响应、内置 pi-ai / models.dev 目录、模型名推断和厂商校正，悬停显示来源，虚线边框表示推断值。任意模型都可以手动指定类型、上下文窗口、输入模态和思考强度档位；这些覆盖不写 profile 补丁，并且可以写回模型提供商的设置。工具栏的「重新获取能力」会让全部缓存作废并重新询问适配器与所有中转站。一个默认开启的开关让声明纯文本输入的中转站模型真正能接收图片，只在内存里生效，不改配置文件。隐藏列表保存在 profile patch 中，并镜像到 $DSH_HOME。
@@ -7247,6 +7247,7 @@ dsh plugin --profile web add dshmarket
 - [cheshireez/dsh-skill-hub](https://github.com/cheshireez/dsh-skill-hub) — DSH Web GUI 技能中枢：基于官方 ctx.skills 注册表浏览、搜索、启停、查看、诊断并新建本地技能，附技能市场：来源快照跟踪、一键全量更新。
 - [ChthollyFan/dsh-cpp-optimization](https://github.com/ChthollyFan/dsh-cpp-optimization) — C++ 审查技能：先探测目标工程真实的 C++ 标准再给建议，随后按 RAII 与所有权、移动语义、异常安全、性能与内存、容器与算法、并发、模板与编译期、标准边界、类型安全、ABI 与接口设计逐条给出结论，每条含检查点、原因、反例→正例与适用标准。
 - [Chu-Xin-r/wanjiqi-meme](https://github.com/Chu-Xin-r/wanjiqi-meme) — 玩机器（6657 直播间）烂梗技能包：22771 条真实弹幕蒸馏而成，涵盖玩机器式弹幕烂梗、CS×DOTA 双料梗、选手锐评与解说吐槽。
+- [cnhenaihui/dsh-skill-manager](https://github.com/cnhenaihui/dsh-skill-manager) — 带内容寻址版本历史的技能管理器：快照、逐文件与行级差异、回滚、zip 导入导出、按技能停用或启用。
 - [Crayonnan/dsh-math-modeling-skills-Gatecraft-](https://github.com/Crayonnan/dsh-math-modeling-skills-Gatecraft-) — 面向 DeepSeek Harness 的门控式数学建模 skill 套件：五阶段流水线、阶段门、国奖写作范式、灵敏度分析、统计诊断与竞赛预设。
 - [creght-dev/skills](https://github.com/creght-dev/skills) — Creght 平台建站技能包：CLI 拉取/推送同步、页面与组件规范、CMS、表单、Auth、SEO、发布与版本回滚。
 - [d0ublecl1ck/dsh-skill-dollar](https://github.com/d0ublecl1ck/dsh-skill-dollar) — 用 $name 手势调用 DSH skill（与 / 命令不冲突），带输入框候选菜单，并让 $name 获得与 /name 相同的蓝色文本引用高亮。
