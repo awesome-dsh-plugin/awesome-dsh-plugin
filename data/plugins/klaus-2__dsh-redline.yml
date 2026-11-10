@@ -1,0 +1,7 @@
+url: https://github.com/klaus-2/dsh-redline
+name: klaus-2/dsh-redline
+category: browser
+description:
+  en: "Visual review for the harness browser: pick any element to comment on it, adjust styles live with rollback, sketch on a free-form annotation canvas, and send everything as structured context attached to the next message, with cropped or full-page screenshots composited with the drawings."
+  zh: "在 harness 浏览器里做可视化评审：选中任意元素添加评论、实时调整样式并可回滚、在自由画布上批注草图，然后作为结构化上下文随下一条消息发送，截图（局部或整页）会合成所画的批注。"
+icon: https://raw.githubusercontent.com/klaus-2/dsh-redline/main/docs/assets/icon.png
