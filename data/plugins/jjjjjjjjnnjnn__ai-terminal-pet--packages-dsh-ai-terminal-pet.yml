@@ -5,5 +5,5 @@ category: notify
 tarball: https://github.com/jjjjjjjjnnjnn/ai-terminal-pet/releases/download/dsh-plugin-v1.2.0/dsh-ai-terminal-pet-1.2.0.tgz
 icon: https://raw.githubusercontent.com/jjjjjjjjnnjnn/ai-terminal-pet/main/packages/dsh-ai-terminal-pet/icon.png
 description:
-  en: 'A floating desktop overlay for Windows that shows which terminal of yours is waiting: it aggregates OpenCode, Claude Code, Antigravity and DeepSeek Harness session state over a named pipe and renders one small always-on-top panel, so you stop tabbing between windows to find out which agent needs approval. Click a row to jump to that terminal, or approve straight from the panel.'
-  zh: 'Windows 上的桌面浮窗：把 OpenCode、Claude Code、Antigravity 与 DeepSeek Harness 的会话状态经命名管道汇总成一个常驻置顶的小面板，一眼看出哪个终端在等你——不必逐个窗口来回切。点某一行可直接跳到对应终端，也能在面板上直接放行审批。'
+  en: 'A floating desktop overlay for Windows that shows which terminal of yours is waiting: it aggregates OpenCode, Claude Code, Antigravity and DeepSeek Harness session state over a named pipe and renders one small always-on-top panel, so you stop tabbing between windows to find out which agent needs approval. Click a row to jump to that terminal. For DeepSeek Harness sessions the panel only shows the state (working, waiting for approval, error, idle) and jumps to the DSH window; approving is still done in DSH.'
+  zh: 'Windows 上的桌面浮窗：把 OpenCode、Claude Code、Antigravity 与 DeepSeek Harness 的会话状态经命名管道汇总成一个常驻置顶的小面板，一眼看出哪个终端在等你——不必逐个窗口来回切。点某一行可直接跳到对应终端。对 DeepSeek Harness 会话，面板只显示状态（工作中、等待审批、出错、空闲）并跳到 DSH 窗口，审批仍在 DSH 里完成。'
