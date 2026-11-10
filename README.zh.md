@@ -5704,6 +5704,7 @@ dsh plugin --profile web add dshmarket
 - [Ruixinhua/dsh-universe-api](https://github.com/Ruixinhua/dsh-universe-api) — 面向 DeepSeek Harness 的离线确定性公共 API 目录检索，支持中英文查询，以及认证、HTTPS、CORS、状态、来源层级与分类的精确筛选。
 - [runcat-tommy/dsh-unitverse](https://github.com/runcat-tommy/dsh-unitverse) — 单位换算：提供 convert 工具，覆盖长度/面积/体积/时间/角度/速度/温度/压力/热量/功率十大类共 82 个单位，支持中英文单位名与温差（Δ）换算，并在 DSH Web 会话视图中提供按类别分模块、跟随中英文界面语言的「单位换算」标签页。
 - [runcat-tommy/dsh-windows-c-cleanup](https://github.com/runcat-tommy/dsh-windows-c-cleanup) — DSH 的 Windows 系统盘（C 盘）清理能力：按规则库扫描、五级安全分级、带台账可回滚的暂存区、UAC 提权与迁移到其他盘 —— 既有模型工具，也有 Web 面板。
+- [runzhliu/welink#dsh-welink](https://github.com/runzhliu/welink/tree/main/plugins/dsh-welink) — 提供只读工具，按日期或关键词查询已授权的 WeLink 聊天记录。
 - [RyanShen3/dsh-toutiao-reader](https://github.com/RyanShen3/dsh-toutiao-reader) — 读网页/头条文章全文的 webfetch 工具：三级策略（直连 → Edge 常驻无头浏览器 CDP → dump-dom 兜底），自动识别头条反爬质询页，附 toutiao-reader 实战经验技能。
 - [S1n7T/dsh-everything](https://github.com/S1n7T/dsh-everything) — 基于本机 Everything（voidtools）索引的全盘文件搜索工具：通过仅回环监听的 HTTP 快速通道（es.exe 兜底）为 Agent 提供毫秒级路径查询；后端缺失时自动下载并校验安装最新稳定版 Everything 与 ES CLI（验签名、支持代理）。仅支持 Windows。
 - [Sacredbluedragon/dsh-bili-watch](https://github.com/Sacredbluedragon/dsh-bili-watch) — 把 B 站视频解析成模型可消费的结构化内容：元数据、评论、弹幕、字幕、本地 ASR 转写、抽帧 OCR。本地跑不上传、字幕诱饵检测（可疑时抽帧核对）、二次读瞬时、输出 manifest + 摘要。抽帧 OCR 需 ffmpeg；本地 ASR/OCR 需 Python 3.10+ 虚拟环境（Windows 另需 VC++ 运行库）；AI 字幕需登录 B 站。
