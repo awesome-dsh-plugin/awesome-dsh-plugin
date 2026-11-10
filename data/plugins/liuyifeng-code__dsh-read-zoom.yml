@@ -4,4 +4,4 @@ category: ui
 description:
   en: "A reading layer for long DeepSeek Harness sessions: keep your distance from the screen. A fixed enlarge button on every answer opens a two-pane view with 80-300% type, an outline of every turn in the session (turns not yet loaded are fetched on demand), and a composer that fills the real DSH input without sending. Formulas, tables and code stay exactly as rendered; over-wide formulas shrink to fit, failed ones degrade quietly, and turns whose answer was cut off are labelled as truncated."
   zh: "为长时间看 DSH 的人做的阅读层：不用把脸凑到屏幕上。每条回答的操作行（用量图标左边）常驻一个放大按钮，点开是两栏阅读视图——左栏列出本会话全部轮次（未加载的点了自动补载）并带一个「只填充、不发送」的输入框，右栏把选中的提问与回答放大到 80%–300% 阅读。公式、表格、代码保持真实渲染结果，超宽公式自动缩小、渲染失败安静降级，被截断的轮次会标注「输出被截断，无回答」。"
-tarball: https://github.com/liuyifeng-code/dsh-read-zoom/releases/download/v0.3.9/dsh-read-zoom-0.3.9.tgz
+tarball: https://github.com/liuyifeng-code/dsh-read-zoom/releases/download/v0.4.0/dsh-read-zoom-0.4.0.tgz
