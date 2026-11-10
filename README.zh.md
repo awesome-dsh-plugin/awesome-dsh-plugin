@@ -1330,7 +1330,7 @@ dsh plugin --profile web add dshmarket
 - [NONEMIN/dsh-sidebar-panels](https://github.com/NONEMIN/dsh-sidebar-panels) — 在 设置 → 通用 里集中管理左侧全局面板图标：显示或隐藏、拖动排序；自带侧栏开关的插件，其开关与本插件保持同步。
 - [NormanFxxkingRockwell/dsh-keyboard-history](https://github.com/NormanFxxkingRockwell/dsh-keyboard-history) — DSH 会话输入框的极简输入历史：按 ↑/↓ 翻阅发过的消息。只有方向键，别无其他。
 - [Nothree-code/folder-tree-sh](https://github.com/Nothree-code/folder-tree-sh) — 工作区文件树插件：多标签预览（文本/DOCX/PDF/Markdown/CSV/图片）、Markdown 内联编辑、Git 变更面板与右键文件操作（重命名/删除/复制/移动/新建）。
-- [nothurry/stronger-dsh](https://github.com/nothurry/stronger-dsh) — 黑白灰淡紫界面、原生智能体协作、Token用量、本机技能、对话导入及仅本人可用的微信控制。
+- [nothurry/stronger-dsh](https://github.com/nothurry/stronger-dsh) — 黑白灰淡紫界面与动效、会话定时、共享记忆、原生协作、网页与OCR证据。
 - [nuet9/dsh-internal-folder-browser](https://github.com/nuet9/dsh-internal-folder-browser) — 在 Harness 内浏览本地文件目录，支持目标文件高亮与八种查看布局；图片缩略图和系统文件图标仅在 Windows 下提供。
 - [null-dat/dsh-whale-tail](https://github.com/null-dat/dsh-whale-tail) — 针对 DSH 思考模式鲸鱼尾巴的动画，丰富成 4 种动画。
 - [Num86/dsh-functions](https://github.com/Num86/dsh-functions) — 给 DSH 顶端加一个可扩展的「功能」栏：插件注册的一键动作都在这里，支持分级确认与二级菜单。0.4.0 起自带了「重启 DSH」功能，不再需要单独安装重启插件。
@@ -1911,6 +1911,7 @@ dsh plugin --profile web add dshmarket
 - [xswt442-cmd/dsh-xswt-tauriapp#dsh-desktop-app](https://github.com/xswt442-cmd/dsh-xswt-tauriapp/tree/main/plugins/dsh-desktop-app) — 桌面外壳 dsh-xswt-tauriapp（一个 Tauri 写的 DeepSeek Harness 桌面壳）的安装引导：安装后首次启动 dsh 时，从发布页下载本平台安装包，先比对 SHA256SUMS、校验通过才落盘，再交给系统安装器打开；插件自己不安装任何东西，也不给 dsh 加界面。
 - [xt765/dsh-message-edit](https://github.com/xt765/dsh-message-edit) — 用户消息原位编辑与重发插件：在已发送消息气泡下方复制按钮旁提供铅笔编辑图标，点击原位展开圆角内联编辑框，支持从上一轮末尾分叉回退重发或在当前会话直接追发。
 - [xt765/dsh-selection-quote](https://github.com/xt765/dsh-selection-quote) — Cursor 与 GitHub PR Review 风格划词引用与批注插件：支持划词一键引用到对话（⌘L）、行内展开写批注（⇧⌘L）及输入框上方批注汇总栏一键插入。
+- [xuanfenglajiao/dsh-effort-menu](https://github.com/xuanfenglajiao/dsh-effort-menu) — 把输入框的模型菜单换成最近模型列表、全部模型飞出面板和一条可拖动的思考强度滑杆。
 - [xuanfu-web/dsh-metaphysics](https://github.com/xuanfu-web/dsh-metaphysics) — 玄学命理排盘：十九套体系——八套排盘（八字、紫微斗数、六爻、梅花易数、大六壬、奇门遁甲、合盘、塔罗）加十一套速查（黄历、农历互转、择日、称骨、小六壬、星座、生命数字、人生K线、风水、起名、十六型人格问卷），并可按所问之事生成可读报告；八字含交运日、岁运并临/伏吟反吟、通关、三书对照与杂气月取格/人元司权，紫微含 34 格局、十一类流派开关（含可显式开启的 61 颗杂曜全表，逐颗附安星诀与本盘落宫，诀文按多处独立辑本同表才收、同名异星不合并）、飞星串连与三方四正复合飞化，六爻与梅花含《周易》经文原文（64 卦辞、384 爻辞加用九用六，三本互校、异文括注），六爻含用神旺衰、全卦逐爻旺衰、伏神出伏与应期线索，风水含八宅与玄空飞星，起名含 1062 字库与 998 姓 / 82 复姓的姓氏库（逐姓康熙笔画）、五格剖象与音韵检查，塔罗含 78 张逐张牌义库（RWS 底本，牌面图像、核心义与占星对应经三处公开资料互核；宫廷牌两派映射冲突故不配星座并写明）；另建古籍引文库：66 种典籍、464 条索引（含《穷通宝鉴》120 格在内共 584 条可核验原文），逐句对照 341 页离线底本快照核为子串，异文并列不调和、今人按语与古籍正文分层，原文与白话只放在独立索引页、不进浏览器分块；每张结果可带可复现的影子盘短 ID（同参同 ID、跨版本自动字段 diff）与可选推导链（逐层规则、输入、结果、出处）；浏览器入口只带界面，按 tab 懒加载引擎分块（首屏 gzip 约 90KB），离线页仍是单文件；宿主面板与离线页共用同一套分组首屏（问一件事/看一个人/查日子），带最近用过与窄屏收纳，盘面先给一段人话结论、可一键复制问事提示与保存「我的命盘」，时辰未知改走三柱模式而不静默按子时；纯本地计算，默认不联网。npm 包内另附离线单文件页（命理排盘.html）：双击即开，十九个 tab 齐全，不用起服务、不用联网。
 - [xuanyuanchumo/dsh-codegraph-visualizer](https://github.com/xuanyuanchumo/dsh-codegraph-visualizer) — DSH 的交互式代码图谱：以侧栏入口呈现（装了 dsh-better-sidebar 时则是它的一个标签页），渲染 dsh-codegraph（.codegraph/codegraph.db 或 codegraph CLI）或 dsh-tool-lens 提供的数据，支持调用链追踪、循环依赖检测、依赖与影响分析、目录/文件/函数聚类、四种布局与 PNG/SVG/JSON 导出。需要 dsh-codegraph 或 dsh-tool-lens 提供数据源，否则图谱为空。
 - [xuexiaolei1997/dsh-plugin-stock-x](https://github.com/xuexiaolei1997/dsh-plugin-stock-x) — 全景金融量化工作台与股票盯盘：悬浮球与抽屉面板、A/港/美/全球指数实时行情、多周期K线与5日分时、五档盘口、资金流向、板块热点榜与AI投研诊断。
