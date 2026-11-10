@@ -1,0 +1,7 @@
+url: https://github.com/youshanlian/dsh-plugin-strata
+name: youshanlian/dsh-plugin-strata
+tarball: https://github.com/youshanlian/dsh-plugin-strata/releases/latest/download/dsh-plugin-strata.tgz
+category: model
+description:
+  en: 'Integrated control plane for the local strata model stack: manage the strata-hop :8080 model-switching router (status/models/warm/logs), stream live model-switch and load state into the web GUI status chip and the strata_status tool, preload a model engine the moment it is selected, edit run-config and shared chat settings from a GUI tuning panel or strata_params, and ship the dsh provider patch that routes chats to the router with Effort-level mappings. Read-only toward inference: it never sends a prompt and spends no tokens; bring your own running strata plus strata-hop (defaults :8080 hop, :8756 monitor).'
+  zh: '本地 strata 模型栈的一体化控制面：管理 strata-hop :8080 模型切换路由（status/models/warm/logs），把模型切换与加载状态实时送进 Web GUI 状态芯片和 strata_status 工具，选中模型即预热引擎，GUI 调参面板/strata_params 编辑 run-config 与共享聊天设置，并自带把聊天路由到路由器的 dsh provider 补丁（含 Effort 档位映射）。对推理只读：从不发 prompt、不消耗 token；需自备运行中的 strata 与 strata-hop（默认 :8080 路由、:8756 监控）。'
