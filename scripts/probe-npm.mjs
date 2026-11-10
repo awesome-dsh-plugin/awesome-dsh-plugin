@@ -30,6 +30,7 @@
  */
 import fs from 'node:fs'
 import LOCALES from '../site/locales.mjs'
+import { publishedNpmName } from './lib/npm-name.mjs'
 
 const MAP_FILE = 'data/npm-map.json'
 // Unpublished verdicts expire after a day, not a month: authors publish to npm
@@ -115,8 +116,9 @@ async function probe(url) {
   const sub = repoPath.includes('/tree/') ? repoPath.split('/tree/')[1].replace(/^[^/]+\//, '') : null
   try {
     const pkg = await fetchJson(`https://raw.githubusercontent.com/${repo}/HEAD/${sub ? sub + '/' : ''}package.json`)
-    const name = typeof pkg.name === 'string' ? pkg.name : null
-    if (name === null) return { npm: null, version: null, checkedAt: today }
+    const declaredName = typeof pkg.name === 'string' ? pkg.name : null
+    if (declaredName === null) return { npm: null, version: null, checkedAt: today }
+    const name = publishedNpmName(repo, declaredName)
     const meta = await fetchJson(`https://registry.npmjs.org/${encodeURIComponent(name)}`)
     // Registry documents can retain repository metadata from the first
     // publication at the top level. Resolve the current `latest` manifest
