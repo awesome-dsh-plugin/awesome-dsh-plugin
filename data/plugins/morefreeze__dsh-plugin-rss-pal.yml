@@ -1,0 +1,7 @@
+url: https://github.com/morefreeze/dsh-plugin-rss-pal
+name: morefreeze/dsh-plugin-rss-pal
+category: docs
+description:
+  en: Local-first RSS/Atom reader with full-text search, bulk read marking, on-demand AI summaries and native reading companion.
+  zh: 本地优先的 RSS/Atom 阅读器，支持全文搜索、批量标记已读、按需 AI 总结和原生伴读。
+tarball: https://github.com/morefreeze/dsh-plugin-rss-pal/releases/download/v0.1.0/rss-pal-dsh-0.1.0.tgz
