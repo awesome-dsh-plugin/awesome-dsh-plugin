@@ -1,0 +1,5 @@
+url: https://github.com/Meatware-Engineering/DSH-AnnotateAnything
+name: Meatware-Engineering/DSH-AnnotateAnything
+category: ui
+description:
+  en: 'Annotates elements or dragged regions in the Harness interface and Desktop Browser pages, then sends comments and cropped PNG screenshots to the current conversation.'
