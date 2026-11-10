@@ -1,0 +1,7 @@
+url: https://github.com/ligap123/dsh-real-whale-pet
+name: ligap123/dsh-real-whale-pet
+category: fun
+description:
+  en: 'A realistic humpback whale desktop pet for Windows: a DSH host bundle that spawns its own Electron overlay above the desktop (not inside the web UI), with click-triggered full-screen water ripples and screen refraction, 20 local sound effects, and 121 offline one-liners. No model calls, no network by default.'
+  zh: 'Windows 上的写实座头鲸桌宠：DSH Host bundle 启动独立 Electron 悬浮层（不在网页内），点击触发全屏水波与屏幕折射，自带 20 个本地音效和 121 条离线台词，默认不调用模型、不联网。'
+icon: https://raw.githubusercontent.com/ligap123/dsh-real-whale-pet/main/assets/icon.png
