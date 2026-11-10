@@ -4313,6 +4313,7 @@ dsh plugin --profile web add dshmarket
 - [SpookySandwich/dsh-plugin-message-edit](https://github.com/SpookySandwich/dsh-plugin-message-edit) — 编辑已发送的消息即可从该轮次回溯并分叉对话，用气泡下方的计数器切换版本，并在轮次级版本树中浏览所有分支。
 - [SpookySandwich/dsh-plugin-no-workspace](https://github.com/SpookySandwich/dsh-plugin-no-workspace) — 无需强制绑定工作区即可新建和分离独立会话，同时保留 DSH 原生的工作区界面。
 - [starslittle/dsh-queue-plus](https://github.com/starslittle/dsh-queue-plus) — DSH 排队消息增强面板，支持编辑、删除、插话、排序和批量删除。
+- [startime-ltk/dsh-handover](https://github.com/startime-ltk/dsh-handover) — 把旧 DSH 会话压成有字数上限的交接包（进度、动过的文件、改变过状态的命令、待办），让当前会话接着干；旧会话全程只读，list / pack / search / read 由同一个工具承担。
 - [stevenwang15/dsh-session-workspace](https://github.com/stevenwang15/dsh-session-workspace) — 让 DeepSeek Harness 默认工作区里新建的每个对话自动拥有独立工作区和沙箱根（手动添加的项目工作区默认保持共用，设 mode: all 才全部隔离），并在输入框旁提供临时开关。
 - [Stijnus/dsh-move-to-workspace](https://github.com/Stijnus/dsh-move-to-workspace) — 从侧边栏菜单把已有的 DeepSeek Harness 会话移动到其他工作区：会话记录与标题一并带过去，可在同一对话框里登记新的工作区文件夹，原会话归档且可恢复。
 - [Stmol/dsh-prompt-lib](https://github.com/Stmol/dsh-prompt-lib) — 提示词库存放在插件配置中，含 Settings 页面与输入框选择器：勾中的提示词注入该会话的每一步模型调用，subagent 继承其最近祖先会话的选择。
@@ -6590,6 +6591,7 @@ dsh plugin --profile web add dshmarket
 - [specstream/specstream-tools#dsh-plugin-specstream](https://github.com/specstream/specstream-tools/tree/main/packages/dsh-plugin-specstream) — 把托管的 SpecStream MCP 服务器注册到 harness 的 MCP 管理器，并把 API Key 存入凭据库。该服务器以结构化行返回实时网页数据，每个值都附来源 URL；只有报价上限获批后才会开始运行。
 - [sryimnoob123/dsh-web-search-ollama](https://github.com/sryimnoob123/dsh-web-search-ollama) — 让 DSH 的 web_search 工具走 Ollama 联网搜索 API，复用 OLLAMA_API_KEY，无需 DeepSeek 官方 Key。
 - [Starp1ume/dsh-chat-mode](https://github.com/Starp1ume/dsh-chat-mode) — 在 DSH 桌面版标题栏加入聊天/工作切换：聊天模式用原生 webview 内嵌 DeepSeek 网页版（chat.deepseek.com），插件自身不调用 DSH API，首次启动默认进入聊天；工作模式保留原生 Agent 界面，切换时网页保持挂载；「带入工作」对话框需先确认，只会填入工作模式草稿、不自动发送。
+- [startime-ltk/dsh-explorers](https://github.com/startime-ltk/dsh-explorers) — 通过本机 MV3 扩展与回环桥把 Chrome、Edge、QQ 浏览器接入 DSH，提供 12 个浏览器工具用于导航、快照、点击、输入、提取与截图。
 - [stormbuf/dsh-tavily-pool](https://github.com/stormbuf/dsh-tavily-pool) — 用 Tavily 接管内置的 web_search 与 web_fetch 提供方，两者各有一个开关：密钥池按余额调度（从 /usage 读取真实余额），失败自动切换，冷却中与额度耗尽的密钥硬排除，并记录调用历史与 14 天额度图表。
 - [stuarthu/dsh-chrome](https://github.com/stuarthu/dsh-chrome) — Chrome 侧边栏内嵌 dsh 网页界面，让 agent 读取当前页面、捕获 HTTP 流量并操作浏览器。
 - [Suguyun/dsh-insight](https://github.com/Suguyun/dsh-insight) — Chrome/Edge 浏览器伴侣扩展：在网页上选中文字后点浮标，dsh 的解读会以 Markdown 显示在侧栏或页面浮窗，并支持多轮追问；宿主侧工具让智能体读取当前页面、抓取 HTTP 流量、操作浏览器。stuarthu/dsh-chrome（MIT）的 fork：桥接、浏览器工具与页面注入来自上游，本仓库在其上加了划词解读、侧栏原生多轮追问、设置内嵌与外观定制。注册的 browser_* 工具与上游同名，不能与 stuarthu/dsh-chrome 同装。
@@ -7279,6 +7281,7 @@ dsh plugin --profile web add dshmarket
 - [hoshino114/dsh-skill-hub](https://github.com/hoshino114/dsh-skill-hub) — 技能中心：浏览与管理本地 Agent Skills，并在同一视图中搜索、预览、安装 ClawHub、ModelScope、QwenPaw 三个市场的技能，支持来源与分类筛选；同时提供 skill_hub 工具，让 agent 也能自助安装技能。
 - [hoyyang/dsh-best-ponytail](https://github.com/hoyyang/dsh-best-ponytail) — 把「最懒资深工程师」规则集 ponytail 装进 DeepSeek Harness：7 级最小代码阶梯（YAGNI、复用、标准库、平台原生、已装依赖、一行、最小实现），六个技能（主规则、过度工程 review、全仓 audit、debt 欠账台账、gain 计分板、help 速查），/ponytail 会话级调档命令（lite/full/ultra/off），以及可选的每轮常驻规则注入。上游内容 MIT 原样打包，零工具注册，卸载零残留。
 - [huanlin-labs/dsh-skill-cockpit](https://github.com/huanlin-labs/dsh-skill-cockpit) — DSH 应用级导航里的「技能中心」页（sidebar.panellist 席位）：列出本机实际暴露的全部技能（覆盖六类技能根），说明某技能为何不可见（被丢弃的原因、根目录缺失、已停用），只改入口文件名（SKILL.md 与 SKILL.md.disabled）即可单独启停；项目级技能根保持只读。
+- [huaweicloudskill/scenes-skill-creator](https://github.com/huaweicloudskill/scenes-skill-creator) — DeepSeek Harness 技能创建面板：调用官方通用/华为云技能创建器生成技能，并提供评测、修复、安装与创建记录。
 - [hxlog/dsh-skills-tools](https://github.com/hxlog/dsh-skills-tools) — 在 DSH 设置中从 Git 仓库导入 Agent Skills，按仓库分组管理，并逐项启用或停用。
 - [hyhmrright/brooks-lint](https://github.com/hyhmrright/brooks-lint) — 提供六个代码质量技能，涵盖代码审查、架构审计、技术债、测试质量、健康看板与修复。
 - [hzh5021/dsh-research-commands](https://github.com/hzh5021/dsh-research-commands) — 把装好的研究技能变成斜杠命令：/idea、/novelty、/review、/poster……一共十五条，敲一下就把对应的 SKILL.md 塞进对话，照着跑那个技能。技能不随包提供，须已装在 ~/.dsh/skills 或 ~/.agents/skills 下，否则命令只提示找不到技能。
@@ -9435,6 +9438,7 @@ dsh plugin --profile web add dshmarket
 - [slywalker2006/dsh-passwords](https://github.com/slywalker2006/dsh-passwords) — 让 DeepSeek Harness 变成服务器级多租户平台：远程访问 + 自动 HTTPS、子用户权限与配额、沙盒强制、加密认证与审计日志。
 - [SodaZheng/dsh-totp](https://github.com/SodaZheng/dsh-totp) — 面向个人 DeepSeek Harness Web 实例的纯 TOTP 访问验证，支持设置内扫码绑定、一次性恢复码、动态启停保护和撤销所有页面授权。
 - [STARDUSTLC666/dsh-code-security](https://github.com/STARDUSTLC666/dsh-code-security) — 确定性代码安全审查：40+ 规则、密钥熵检测、staged diff 审查、SARIF 导出、基线接受、SBOM-lite 依赖清单与健康自检。面板内置 4 步首次使用引导，看一次后不再出现。
+- [startime-ltk/dsh-mimavault](https://github.com/startime-ltk/dsh-mimavault) — 把本机 MimaVault 密码库接入 DSH，提供 7 个工具用于元数据检索、条目读取、剪贴板复制、动态验证码、口令生成、域名受限的 API 调用与需人工确认的清空请求。
 - [SteelUnion/dsh-confirm-gate](https://github.com/SteelUnion/dsh-confirm-gate) — 按轮统计持久化操作，按总数逐级升级：先提醒，再给明确的停止指令，最后请求确认。每次调用都现读会话的沙箱模式，在 read-only 与 workspace-write 下保持沉默。
 - [SternChiri/dsh-auto-preset-guard](https://github.com/SternChiri/dsh-auto-preset-guard) — 让「自动审批」熬过重启：应用退出时，自动审查的卸载迁移不再把在用的自动审批会话改写成「完全权限」；集成缺席时，存留的自动审批会话也不会打不开。
 - [sujingkpo/dsh-auto-pass](https://github.com/sujingkpo/dsh-auto-pass) — 延续 simon300000/dsh-auto 的 DSH WebUI 自动审批权限档位：每次审批只走一次单轮模型审查、不再起审查子代理，只自动放行审查通过的动作、其余全部转回人工审批；并会把用户确认过的决定记成项目级与全局级的允许/拒绝名单，右侧栏另有审批时间线。
@@ -10145,6 +10149,7 @@ dsh plugin --profile web add dshmarket
 - [MichengAI/dsh-codex-pet](https://github.com/MichengAI/dsh-codex-pet) — DSH Web 页内宠物，提供多会话任务提醒，可打开任务、停止当前轮次，并处理受支持的审批和问答请求。
 - [miku00039-01/dsh-whale-pet](https://github.com/miku00039-01/dsh-whale-pet) — DeepSeek Harness 的鲸鱼娘桌面宠物，一键启动/停止/监测服务，双击唤起 GUI。
 - [minybear/DeepSeek-Harness-Pet](https://github.com/minybear/DeepSeek-Harness-Pet) — Codex 风格桌面宠物：右下角悬浮动画精灵，随 agent 运行状态实时变化（工作、等待、报错、完成）。
+- [Mng12345/dsh-desktop-pet-codex#plugin](https://github.com/Mng12345/dsh-desktop-pet-codex/tree/main/plugin) — DeepSeek Harness 的桌面宠物：置顶角色加一块会话面板，显示受关注会话的实时状态；七套动画、按 Workspace 分组、子代理挂在父会话下面、点击一行即可打开会话。包内自带 Windows、macOS（Intel 与 Apple 芯片）和 Linux 的窗口可执行文件，安装时不跑脚本、无需构建。
 - [Moeblack/deepseek-manners](https://github.com/Moeblack/deepseek-manners) — 给每次消息后注入感谢语，做个有礼貌的人。
 - [Moolight/dsh-tes-spinner](https://github.com/Moolight/dsh-tes-spinner) — 可拖动的浮动 TES 陀螺挂件：点击抽一下就会转，转速按恒定摩擦线性衰减（转得越快停得越久），用滑条调转速，播放内置歌曲并同步滚动 LRC 歌词；位置与转速会被记住。
 - [MoonlitDropOfBlood/dsh-whale-pet](https://github.com/MoonlitDropOfBlood/dsh-whale-pet) — 鲸港 WhaleHarbor 大白鲸娘桌面窗宠：13 个 AI 生成零件以 CSS 纸片人方式驱动（呼吸、眨眼、呆毛摇摆、汗滴、蹦跳与抖动），八种状态实时反映 DSH 工作情况——空闲、忙碌、审批、提问、出错、庆祝、打盹、子代理分身——支持戳一戳、拖动、三档尺寸、托盘开关与气泡实时统计。需 WhaleHarbor 桌面壳（当前提供 Windows 构建）。
@@ -10201,6 +10206,7 @@ dsh plugin --profile web add dshmarket
 - [stallenlu/dsh-game-center](https://github.com/stallenlu/dsh-game-center) — 面板插件：把开发的小游戏集中到一处，并在同一窗口内直接游玩。首发俄罗斯方块：10×20 棋盘、七种方块、落点虚影与下一个方块预览、消行与等级计分、三档难度，最高分存在 localStorage。
 - [Stellum-Waq/dsh-pet-ronaldo](https://github.com/Stellum-Waq/dsh-pet-ronaldo) — DSH 桌宠：Web 界面右下角的 C 罗精灵，动画随 Agent 状态切换——工具执行中颠球、回合中思考、等待审批、出错假摔——回合完成时跳起 SIU 庆祝并由宿主进程播放提示音；支持拖动、悬停注视光标、连点三次假摔，设置面板可管理多只宠物并导入自定义 spritesheet。同时提供一个无边框、始终置顶的原生 Windows 窗口，关掉浏览器也还在：悬停显示当前工作区与对话名，双击用 Edge 打开 Harness 页面，拖动、滚轮改大小、右键菜单都可用，位置/大小/行为与网页设置面板共用同一份状态。素材单格分辨率不限、等比缩放（atlas.scaling: smooth | pixelated）。v2.2 新增视频路线：喂一段视频（绿幕或普通素材都行），里面的真实动作直接变成宠物动作——自动取幕布色、色度抠像带溢色抑制、按运动量切分动作、并集包围盒对齐落格；也支持直接喂已经抽好的 PNG 帧（不需要装视频解码器），并能把视频原声按动作切成音效。宠物还可按 DPSL-1.0 分享协议发布到宠物社区，并从社区一键安装。 v2.3 适配 DSH 0.2 桌面版——宿主不再提供 shell 服务时，庆祝音效改为直接启动 PowerShell 播放——并让单击播放一段可配置的挑衅动作（`interactions.clickAnim`）。
 - [stitchmaps/dsh-ikunchick-pet](https://github.com/stitchmaps/dsh-ikunchick-pet) — DSH 右下角的「鸡你太美」篮球小鸡桌面宠物：像素帧动画、拖拽吸附、点击音效、会话等待回答或授权时弹提醒、每轮消耗气泡、账单明细与 DeepSeek 余额角标。
+- [Sumcam-L/dsh-big-coming](https://github.com/Sumcam-L/dsh-big-coming) — 盯着官方 DeepSeek 模型有没有变：每轮读取模型目录，并对每个受关注的模型发一次最小补全请求，比对系统指纹、返回的模型名、响应信封结构、目录元数据和固定输入的 token 数。任一项变化就弹一张随机表情包，列出具体改了什么，并放一声轰鸣。
 - [sunqing975/dsh-avatar](https://github.com/sunqing975/dsh-avatar) — 常驻界面的 VRM 数字人，支持通过工具控制表情与 VRMA 动作，并提供模型和动作资产管理。
 - [Sutera-Diffusus/dsh-whale-musume](https://github.com/Sutera-Diffusus/dsh-whale-musume) — 鲸鱼娘桌宠：45 项成就、每日任务与周签到、三个小游戏、92 张立绘、620 条台词、成长日记、天气与节日反应、按工具类型切换工作姿态、跨端存档导出/导入（JSON 文件或迁移码）、无障碍模式，以及可选的 MiMo TTS 台词播报。数据只存放在宿主 localStorage，无遥测；已在 DSH 桌面端 0.2.0-rc.2 验收，兼容 0.2.1-rc.1/rc.2 与旧版 0.1.x Web。
 - [suzuran0y/Cute-Partner#cute-partner](https://github.com/suzuran0y/Cute-Partner/tree/main/integrations/harness) — 把 Harness 的对话和任务交互集成到 Windows 桌面上的 Live2D 角色中，采用抽屉式记忆设计。桌面程序默认搭载大肥鱼「哦鲸鲸」。角色功能采用模块化设计，语音组件按需安装，支持语音交流和自定义角色音色。
