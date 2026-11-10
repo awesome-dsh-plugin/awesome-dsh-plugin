@@ -1,0 +1,6 @@
+url: https://github.com/Alec6636/dsh-portable-workspace
+name: Alec6636/dsh-portable-workspace
+category: tools
+description:
+  en: 'Keep a complete DeepSeek Harness workspace - sessions, plugins, projects and logs - on a removable drive or USB stick, and resume it on another computer.'
+  zh: '把 DSH 的会话、插件、工程与日志完整放进移动硬盘或 U 盘，换一台电脑插上即可继续。'
