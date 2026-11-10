@@ -1,0 +1,7 @@
+url: https://github.com/shallinta/dsh-agentic-word-book
+name: 随记单词本(dsh-agentic-word-book)
+category: tools
+icon: https://raw.githubusercontent.com/shallinta/dsh-agentic-word-book/main/assets/suiji-wordbook-logo.webp
+description:
+  en: 'Suiji Word Book: a word book panel that shows one word per page with picture, phonetics, pronunciation, five phrases and an example sentence, plus fill-in-the-letters spelling practice and a 12-type word-recognition quiz. Word data is kept as plain files in a local directory, and an included skill lets an AI add cards from a word list.'
+  zh: '随记单词本：一个词一页，插图、音标、发音、五条词组和例句，外加挖字母拼写练习与 12 种题型的单词辨析；词库以普通文件保存在本地目录，附带技能可让 AI 按词表批量建卡。'
