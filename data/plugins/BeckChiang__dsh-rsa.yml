@@ -1,0 +1,6 @@
+url: https://github.com/BeckChiang/dsh-rsa
+name: BeckChiang/dsh-rsa
+category: ui
+description:
+  en: Configurable startup animation (splash screen) for DeepSeek Harness — real main-process splash with live preview, light/dark themes, and deep deploy into app.asar.
+  zh: 可配置的 DeepSeek Harness 启动动画（splash）：主进程真实启动画面、设置页实时预览、深浅色跟随、深度部署进 app.asar。
