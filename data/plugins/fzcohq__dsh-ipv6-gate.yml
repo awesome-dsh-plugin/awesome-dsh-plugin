@@ -1,0 +1,6 @@
+url: https://github.com/fzcohq/dsh-ipv6-gate
+name: fzcohq/dsh-ipv6-gate
+category: remote
+description:
+  en: IPv6 remote access gateway with DDNS, ACME HTTPS, QR scan-to-connect and a settings UI, zero relay and zero system-level config.
+  zh: 手机 IPv6 远程访问 DSH——DDNS 自动更新、免费 HTTPS 证书、扫码直达、设置页管理，零中继零费用。
