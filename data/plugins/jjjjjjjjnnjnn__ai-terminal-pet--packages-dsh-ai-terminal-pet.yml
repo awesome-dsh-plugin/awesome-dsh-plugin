@@ -2,7 +2,7 @@
 url: https://github.com/jjjjjjjjnnjnn/ai-terminal-pet/tree/main/packages/dsh-ai-terminal-pet
 name: jjjjjjjjnnjnn/ai-terminal-pet#dsh-ai-terminal-pet
 category: notify
-tarball: https://github.com/jjjjjjjjnnjnn/ai-terminal-pet/releases/download/dsh-plugin-v1.0.0/dsh-ai-terminal-pet-1.0.0.tgz
+tarball: https://github.com/jjjjjjjjnnjnn/ai-terminal-pet/releases/download/dsh-plugin-v1.2.0/dsh-ai-terminal-pet-1.2.0.tgz
 icon: https://raw.githubusercontent.com/jjjjjjjjnnjnn/ai-terminal-pet/main/packages/dsh-ai-terminal-pet/icon.png
 description:
   en: 'A floating desktop overlay for Windows that shows which terminal of yours is waiting: it aggregates OpenCode, Claude Code, Antigravity and DeepSeek Harness session state over a named pipe and renders one small always-on-top panel, so you stop tabbing between windows to find out which agent needs approval. Click a row to jump to that terminal, or approve straight from the panel.'
