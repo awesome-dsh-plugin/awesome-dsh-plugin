@@ -2,5 +2,5 @@ url: https://github.com/SilverlingFox/dsh-pixelbar
 name: SilverlingFox/dsh-pixelbar
 category: tools
 description:
-  en: 'Turn the Edifier Halo PixelBar desktop pixel display into a DSH tool: push short text, switch scenes, set screen color, ambient light and volume over HID, and restore the clock on demand.'
-  zh: '把花再 Halo PixelBar 桌面像素屏变成 DSH 工具：经 HID 推短文字、切场景、设屏色、调氛围灯与音量，并可按需切回时钟。'
+  en: 'Turn the Edifier Halo PixelBar desktop pixel display into a DSH tool: push short text, switch scenes, set screen color, ambient light and volume over HID, and restore the clock on demand. USB-connected device only; tested on Windows only; needs Python 3.8+ with hidapi (pip install hidapi).'
+  zh: '把花再 Halo PixelBar 桌面像素屏变成 DSH 工具：经 HID 推短文字、切场景、设屏色、调氛围灯与音量，并可按需切回时钟。需 USB 连接设备；仅在 Windows 上验证；需要 Python 3.8+ 与 hidapi（pip install hidapi）。'

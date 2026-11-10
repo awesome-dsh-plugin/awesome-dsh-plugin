@@ -2,5 +2,5 @@ url: https://github.com/meiyuxuan2007/dsh-sidebar-more
 name: meiyuxuan2007/dsh-sidebar-more
 category: ui
 description:
-  en: 'Fold the left sidebar panel entries into a More menu, freeing height for the workspace and session list; entries can be opened from the menu, restored in one click, and the choice persists across reloads.'
-  zh: '把左侧栏的面板入口收进「更多」菜单，给下方工作区与会话列表腾出高度；入口可从菜单打开、一键全部还原，选择跨刷新保留。'
+  en: 'Fold the left sidebar panel entries into a More menu, freeing height for the workspace and session list; entries can be opened from the menu, restored in one click, and the choice persists across reloads. First install folds Taskboard, QQ Bot, Context Insights and SSH, and newly installed plugins fold by default (switchable).'
+  zh: '把左侧栏的面板入口收进「更多」菜单，给下方工作区与会话列表腾出高度；入口可从菜单打开、一键全部还原，选择跨刷新保留。首次安装默认收起任务看板、QQ 机器人、上下文洞察与 SSH，之后新装的插件也默认收进「更多」（可关）。'

@@ -2,5 +2,5 @@ url: https://github.com/GnaneshKunal/dsh-session-coldstore
 name: GnaneshKunal/dsh-session-coldstore
 category: session
 description:
-  en: "Tiered cold storage for DSH sessions: idle sessions move out of the live root into an on-disk cold tier instead of being deleted, an FTS5 index over that tier keeps them searchable, and a restore path moves a session back into the live root."
-  zh: DSH 会话的分层冷存储：闲置会话移出实时根目录、转入磁盘冷层而不被删除；冷层上的 FTS5 索引让它们仍可检索，需要时可将会话恢复回实时根目录。
+  en: 'Tiered cold storage for DSH sessions: idle sessions move out of the live root into an on-disk cold tier instead of being deleted, an FTS5 index over that tier keeps them searchable, and a restore path moves a session back into the live root. Dry-run by default: nothing moves until you turn it off in Settings.'
+  zh: 'DSH 会话的分层冷存储：闲置会话移出实时根目录、转入磁盘冷层而不被删除；冷层上的 FTS5 索引让它们仍可检索，需要时可将会话恢复回实时根目录。默认为演练模式，在设置页关闭后才会真正移动会话。'

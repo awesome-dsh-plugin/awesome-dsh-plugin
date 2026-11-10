@@ -3,5 +3,5 @@ name: Rosmeowtis/dsh-aria2-rpc
 category: tools
 tarball: https://github.com/Rosmeowtis/dsh-aria2-rpc/releases/latest/download/dsh-aria2-rpc.tgz
 description:
-  en: 'Controls an existing aria2 JSON-RPC service from DSH with four tools: submit a single HTTP/HTTPS link (optional directory, filename, checksum, per-task proxy), read one task, list tasks, and pause/resume/cancel. A task it submitted that finishes or fails reports back to the session that started it. A settings page holds host, port, secret and timeout, with a connection test that does not save or create anything; it never bundles, starts or manages aria2 itself.'
-  zh: '连接已有的 aria2 JSON-RPC 服务，提供四个工具：提交单文件直链（可选保存目录、文件名、校验和、任务级代理）、读任务状态、列任务、暂停/恢复/取消；由它提交的任务完成或失败时，回报给发起它的会话。设置页保存主机、端口、密钥与超时，并带一个不保存配置、不创建任务的连接测试；不自带、不启动、不管理 aria2。'
+  en: 'Controls an existing aria2 JSON-RPC service from DSH with four tools: submit a single HTTP/HTTPS link (optional directory, filename, checksum, per-task proxy), read one task, list tasks, and pause/resume/cancel. A task it submitted that finishes or fails reports back to the session that started it. A settings page holds host, port, secret and timeout, with a connection test that does not save or create anything; it never bundles, starts or manages aria2 itself. Creating and controlling downloads only works in full-access mode (not plan mode).'
+  zh: '连接已有的 aria2 JSON-RPC 服务，提供四个工具：提交单文件直链（可选保存目录、文件名、校验和、任务级代理）、读任务状态、列任务、暂停/恢复/取消；由它提交的任务完成或失败时，回报给发起它的会话。设置页保存主机、端口、密钥与超时，并带一个不保存配置、不创建任务的连接测试；不自带、不启动、不管理 aria2。创建与控制下载仅在完全访问模式（非计划模式）下可用。'
