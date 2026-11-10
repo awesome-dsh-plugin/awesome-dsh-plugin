@@ -1,0 +1,6 @@
+url: https://github.com/alvinlui-hk/dsh-browser-bridge
+name: alvinlui-hk/dsh-browser-bridge
+category: browser
+description:
+  en: Let agents read and control the web page open in the right Sidebar Browser tab — read text, run JS, click (HTML and SVG), type, scroll, screenshot, with a per-command token bridge behind the Harness connection fence.
+  zh: 俾 agent 讀取同控制右邊 Sidebar 瀏覽器開住嘅網頁——讀文字、執行 JS、點擊（HTML/SVG）、輸入、捲動、截圖；命令橋接行喺 Harness connection 防護欄之後。
