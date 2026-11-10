@@ -1,0 +1,6 @@
+url: https://github.com/calmzealA/dsh-decide
+name: calmzealA/dsh-decide
+category: model
+description:
+  en: Connects DSH to decision models (TypeSafe Jev, TokenRhythm NeoHorse-Jev, OpenAI Decisions, and local System One endpoints) with decide, gate, rerank, and judge tools plus a settings page.
+  zh: 把 DSH 接入决策模型（TypeSafe Jev、基元律动 NeoHorse-Jev、OpenAI Decisions、本地 System One），提供 decide / 守门 / 重排 / 验收工具和设置页。
