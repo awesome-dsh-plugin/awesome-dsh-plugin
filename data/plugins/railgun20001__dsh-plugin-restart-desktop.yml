@@ -1,0 +1,6 @@
+url: https://github.com/railgun20001/dsh-plugin-restart-desktop
+name: railgun20001/dsh-plugin-restart-desktop
+category: dev
+description:
+  en: "One-click restart for the DSH desktop app that keeps the window position, size, maximized state and display, with an optional resume of the sessions the restart interrupted (not only the one you had open). The entry is an icon at the right of the sidebar footer account row plus a /restart-desktop slash command; when the account row cannot be recognised it falls back to the sidebar.footer.action seat, so the button does not disappear."
+  zh: "DSH 桌面版一键重启：保留窗口位置、大小、最大化状态与所在显示器，可选在重启后自动续上被打断的会话（不只你当前打开的那个）。入口是侧栏底部账号行右侧的图标按钮，另有 /restart-desktop 斜杠命令；账号行认不出来时自动回落到 sidebar.footer.action 座位，按钮不会凭空消失。"
