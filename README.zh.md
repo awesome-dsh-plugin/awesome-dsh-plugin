@@ -3914,6 +3914,7 @@ dsh plugin --profile web add dshmarket
 - [chenkai2/dsh-team-admin](https://github.com/chenkai2/dsh-team-admin) — DSH Web GUI 的智能体团队管理：查看任意会话的成员，删除角色及其持久会话（目录移入回收站，可恢复），在 0.2.2-rc.1 之前的旧版团队上回收释放的成员名额，让已删除成员不再出现在子智能体选择器与团队面板，并在 0.2.2-rc.1+ 恢复会话页头的只读成员面板；新旧两版智能体团队实现都能用，不需要改 DSH 源码。
 - [chenkui-luo/dsh-session-attachment-repair](https://github.com/chenkui-luo/dsh-session-attachment-repair) — 在设置页列出历史引用了本地附件库中已丢失对象的会话，先备份日志、再把悬空引用替换成文本占位，使这些会话能重新发送消息。修复脚本需要 Node 22.15 及以上；设置卡片目前仅在 Windows 上验证过。
 - [chenproton/dsh-history](https://github.com/chenproton/dsh-history) — 会话历史消息查看：列出当前会话全部你发送的消息，支持排序、搜索、一键复制与点击跳转定位（目标未加载时自动加载更早历史）。
+- [chenshanhan0711/dsh-session-grep](https://github.com/chenshanhan0711/dsh-session-grep) — 在对话页顶栏按字面文字搜索工作区内全部历史会话。内置索引按 unicode61 分词、只匹配整词，这个插件直接扫描本地会话日志，因此句中片段与两字中文词也能命中；默认只搜用户与助手正文（工具输出需手动开启），结果按会话轮转，避免单个长会话占满列表，点开后滚动定位并高亮命中。只读本地会话日志，零网络请求。
 - [CHIANGANGSTER/dsh-session-window#dsh-session-window-client](https://github.com/CHIANGANGSTER/dsh-session-window/tree/main/plugin/dsh-session-window-client) — 配合仓库的原生 Desktop 壳补丁，为 DSH 会话菜单添加“在新窗口中打开”。
 - [chinacaa/dsh-session-save](https://github.com/chinacaa/dsh-session-save) — 把整个 DSH 会话存成单个 .dsproj 工程文件，并能再打开回来。会话标题栏上多了打开、保存、另存为三个按钮和自动保存开关，空会话页面另有自己的打开入口。第一次保存会问存到哪里，之后一键覆盖；打开 .dsproj 会导入该会话并切过去，按需可以把包里的工作区记忆合并回本机。
 - [Chinesezjc/dsh-interconnect](https://github.com/Chinesezjc/dsh-interconnect) — 跨实例互联：经 interconnect 服务在多个 DSH 实例间转发消息与事件。
@@ -7657,6 +7658,7 @@ dsh plugin --profile web add dshmarket
 
 ### 🔁 工作流与自动化
 
+- [0-0-user/dsh-plan-note](https://github.com/0-0-user/dsh-plan-note) — 给 DSH 计划评审加选区批注：选中计划原文、逐条写意见，一次性把结构化反馈发回给 agent。
 - [0x7A7A6572/dsh-forge-studio#plugin-daily-log](https://github.com/0x7A7A6572/dsh-forge-studio/tree/main/packages/plugin-daily-log) — dsh 工作报告：汇总 Git 提交与本地 agent 对话（DeepSeek/Claude/Codex），按自定义模板生成日报/周报/月报，agent 工具按需注入。
 - [1052326311/dsh-plan-lattice](https://github.com/1052326311/dsh-plan-lattice) — 为长期或定义不完整的 Harness 任务提供持久执行合同、递归工作图、关键澄清与证据门禁。
 - [11111353535/dsh-folderwatch](https://github.com/11111353535/dsh-folderwatch) — 监视目录，在文件树安静后投递批量合并、去重的变更清单，并过滤掉本会话自己的写入；投递方式按监视器选择，可起新回合或排队到下一步。
