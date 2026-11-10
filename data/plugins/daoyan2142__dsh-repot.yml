@@ -1,0 +1,9 @@
+url: https://github.com/daoyan2142/dsh-repot
+name: daoyan2142/dsh-repot
+category: dev
+
+description:
+  en: "Carries a DSH environment between machines through one private GitHub or Gitee repository: third-party plugins (reinstalled from a version, or carried as a tarball or source tree), the four profile configuration files, and folder snapshots. A restore resolves each folder through an absolute path, a registered root, or a confirmed new path, compares file by file, leaves locally edited files alone, backs up anything it replaces, and refuses writes that escape a root, cross a junction, or land on a directory the plugin does not own."
+  zh: "通过一个私有 GitHub / Gitee 仓库在机器之间搬运 DSH 环境：第三方插件（按版本重装，或携带 tarball / 源码目录）、四个 profile 配置文件、以及文件夹快照。还原时逐文件比对，本机改过的文件不覆盖，被替换的文件先备份，并按绝对路径、已登记的根、或显式确认三级解析落点；逃出根、穿越 junction、覆盖非本插件目录的写入一律拒绝。"
+
+icon: https://raw.githubusercontent.com/daoyan2142/dsh-repot/main/assets/icon.png
