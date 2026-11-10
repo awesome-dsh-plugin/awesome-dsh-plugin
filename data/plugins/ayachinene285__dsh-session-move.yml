@@ -1,0 +1,6 @@
+url: https://github.com/ayachinene285/dsh-session-move
+name: ayachinene285/dsh-session-move
+category: session
+description:
+  en: Adds nested folders above workspaces in the sidebar, drag-to-reorder for workspaces, folders and sessions, and moves a session to another workspace together with its working directory.
+  zh: 在侧栏工作区之上加一层可嵌套文件夹，支持工作区/文件夹/会话拖动排序，并能把会话连同工作目录移动到其它工作区。

@@ -1,0 +1,6 @@
+url: https://github.com/WU-HINS/dsh-webui-oauth
+name: WU-HINS/dsh-webui-oauth
+category: security
+description:
+  en: 'Fork of Yuuz12/dsh-webui-auth adding a deny-by-default allowlist route gate over resources, plugin bundles, /api and WebSocket upgrades; password and OIDC/SSO login with an SSO-only mode; server-side sessions with HttpOnly cookies plus a per-browser session list and selective revocation; an OAuth 2.1 device authorization flow (RFC 8628) for app and CLI access, with independent device sessions that expire only on explicit revocation; and a core session bridge that exchanges the launch cookie on the server without exposing the launch token. It is a fork of Yuuz12/dsh-webui-auth and cannot be installed alongside it — remove the original from the profile''s bundle list first.'
+  zh: 'Yuuz12/dsh-webui-auth 的分支，新增默认拒绝的白名单路由闸门（资源、插件 bundle、/api、WebSocket 升级）；密码与 OIDC/SSO 登录及「仅允许 SSO」模式；服务端会话 + HttpOnly Cookie，浏览器会话列表与单条吊销；面向 App/CLI 的 OAuth 2.1 设备授权（RFC 8628），设备会话独立、仅主动吊销失效；核心会话桥在服务端换取 launch Cookie，不向客户端暴露 launch token。 本插件是 Yuuz12/dsh-webui-auth 的分支，不能与原版同装——安装前请先从 profile 的 bundle 列表移除原版。'

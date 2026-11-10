@@ -1,0 +1,7 @@
+url: https://github.com/szhuangzan/rofilter-mcp
+name: szhuangzan/rofilter-mcp
+category: tools
+description:
+  en: 'Mounts the hosted ROFilter MCP service (rofilter.cn) through the in-box @deepseek-ai/dsh-mcp-client bridge: reverse-osmosis element library lookup, feed-water and scaling analysis, and full multi-stage system design. Ships a shared trial token (1,000 calls per day for all users) and run_design is metered, so use your own rofilter.cn token for real work.'
+  zh: '通过内置的 @deepseek-ai/dsh-mcp-client 桥接接入托管的 ROFilter MCP 服务（rofilter.cn）：膜元件库查询、进水水质与结垢分析、完整多段系统设计。包内带全站共享的试用令牌（1000 次/天），run_design 计费，正式使用请换成自己的 rofilter.cn 令牌。'
+icon: https://raw.githubusercontent.com/szhuangzan/rofilter-mcp/main/logo.jpg

@@ -1,0 +1,7 @@
+url: https://github.com/duroey/dsh-study-tree
+name: duroey/dsh-study-tree
+category: session
+description:
+  en: 'Fork selected text into contextual learning branches, continue native DSH chat in each session, and navigate the branches in a tree.'
+  zh: '划词派生继承上下文的学习分支，在每个会话中继续原生 DSH 聊天，并用树状导航切换分支。'
+tarball: https://github.com/duroey/dsh-study-tree/releases/download/v0.1.6/dsh-study-tree-0.1.6.tgz

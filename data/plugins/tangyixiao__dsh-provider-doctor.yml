@@ -1,0 +1,6 @@
+url: https://github.com/tangyixiao/dsh-provider-doctor
+name: tangyixiao/dsh-provider-doctor
+category: dev
+description:
+  en: 'Read-only diagnosis for a model provider that stopped working. Walks the connection chain one link at a time — host runtime and profile identity, the plugin row, whether the provider route is registered, whether it is configurable, the credential metadata the provider itself reports, the model catalogue, the provider''s own diagnostic and the last recorded request — and labels each link observed, inferred or unavailable rather than guessing. Diagnoses the `workbuddy`, `workbuddy-ai` and `zcode-cli` routes from their plugins'' public diagnostic commands, and adds a sidebar panel plus a copyable redacted report. The offline pass sends no model request, starts no process and reads no credential file; the connection check is a separate opt-in the panel describes before running it.'
+  zh: '面向「某个模型提供方突然不可用」的只读诊断。逐段走完整条连接链路——宿主运行时与 profile 身份、插件条目、provider 路由是否已注册、是否可配置、provider 自己报出的凭据元数据、模型目录、provider 自带诊断、最近一次请求记录——并把每一段标成直接观测、推断或无法取得，而不是猜。通过 WorkBuddy 与 ZCode 插件公开的诊断命令检查 `workbuddy`、`workbuddy-ai` 和 `zcode-cli` 三条路由，附带侧栏面板与可复制的脱敏报告。基础检查不发模型请求、不起进程、不读凭据文件；连接检查是单独的可选项，面板会在运行前说明它要做什么。'

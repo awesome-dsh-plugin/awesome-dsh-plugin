@@ -1,0 +1,7 @@
+url: https://github.com/tyr1105/dsh-buddy/tree/main/packages/plugin
+name: tyr1105/dsh-buddy#dsh-buddy
+category: agi
+description:
+  en: "Build an AI team in DeepSeek Harness: assign roles and project tasks, review the work, and send it back when it falls short. Teammates watch files, web pages and logs, call the model only when there is something to do, and reach you only for decisions or problems."
+  zh: 在 DSH 里组建 AI 团队：给队友分配角色和项目任务，交付由你验收，不合格就退回重做。队友自己盯文件、网页和日志，有事才调用模型，需要拍板或出问题时才来找你。
+tarball: https://github.com/tyr1105/dsh-buddy/releases/latest/download/dsh-buddy.tgz

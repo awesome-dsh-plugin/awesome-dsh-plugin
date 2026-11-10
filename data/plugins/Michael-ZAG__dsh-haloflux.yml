@@ -1,0 +1,6 @@
+url: https://github.com/Michael-ZAG/dsh-haloflux
+name: Michael-ZAG/dsh-haloflux
+category: theme
+description:
+  en: "A full-frame animated HUD background for the DSH Web GUI — a rotating light ring that mirrors the live session, with token capture and tool beams following the token stream and tool calls. Press C for the settings panel (117 parameters, six palettes, presets, import/export); press H to show or hide the right-hand HUD. A fork of Ke-wood/dsh-haloflux (itself the DSH port of Ryder191's HALOFLUX) whose display, HUD and control layers were rebuilt; same package name and bundle id as upstream, so it cannot be installed alongside it."
+  zh: "DSH Web GUI 的全帧动态 HUD 背景：旋转光环随当前会话实时变化，词元抓取与工具光束跟随词元流与工具调用。按 C 打开设置面板（117 项参数、6 套配色、预设、导入导出），按 H 显示或隐藏右侧 HUD。基于 Ke-wood/dsh-haloflux（Ryder191 的 HALOFLUX 的 DSH 移植）的分支，显示、HUD 与控制层均已重写；沿用上游包名与 bundle id，不能与 Ke-wood/dsh-haloflux 同装。"

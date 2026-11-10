@@ -1,0 +1,7 @@
+url: https://github.com/Kris8888888/dsh-desktop-pet
+name: Kris8888888/dsh-desktop-pet
+category: fun
+description:
+  en: "A whale or pixel-crab pet that perches on the DSH input box and reacts to the current session (working, awaiting approval, done, error), eats the tokens each turn spends and keeps a diary."
+  zh: "扒在 DSH 输入框上的小鲸鱼或像素小螃蟹，跟着当前对话变化状态（干活、等你确认、完成、出错），吃掉每轮花掉的 token，还会写日记。"
+icon: https://raw.githubusercontent.com/Kris8888888/dsh-desktop-pet/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/leecisen/dsh-token-bill
+name: leecisen/dsh-token-bill
+category: usage
+description:
+  en: 'Estimates what each conversation costs, with built-in official prices from 16 vendors (DeepSeek peak/off-peak hours and long-context tiers included), a breakdown panel with a currency picker under the composer, and each conversation''s cost in the sidebar.'
+  zh: '估算每个对话的费用：内置 16 家厂商的官方价格（含 DeepSeek 高峰/空闲时段和长上下文阶梯价），输入框下方可展开明细并切换币种，侧边栏显示每个对话的费用。'

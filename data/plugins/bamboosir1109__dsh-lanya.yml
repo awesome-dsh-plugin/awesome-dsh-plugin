@@ -1,0 +1,7 @@
+url: https://github.com/bamboosir1109/dsh-lanya
+name: bamboosir1109/dsh-lanya
+category: identity
+description:
+  en: 'A Windows QQ character development preview for DeepSeek Harness with persona injection and a local control panel; full setup requires companion services.'
+  zh: 'Windows 上的 DSH QQ 角色开发预览，提供人设注入与本地控制台，完整部署需另配本机服务。'
+icon: https://raw.githubusercontent.com/bamboosir1109/dsh-lanya/49ecf5b8af29023b485ae0ffca5f379fa8d36006/docs/assets/icon.png

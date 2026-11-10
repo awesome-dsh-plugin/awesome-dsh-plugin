@@ -1,0 +1,8 @@
+# 路线 B：拆独立公开仓库后使用。
+# 文件名：data/plugins/yubi233__dsh-phone-remote.yml
+url: https://github.com/yubi233/dsh-phone-remote
+name: yubi233/dsh-phone-remote
+category: remote
+description:
+  en: 'Host-side dsh plugin that pairs a phone to a dsh instance through a self-hosted relay: one outbound connection carries the session list, streaming chat, approvals, attachments and file previews to a dedicated mobile web shell, and devices pair with a one-time QR link and can be revoked from a console inside the dsh web GUI.'
+  zh: 'dsh 的 Host 侧插件：经自托管中继把手机配到 dsh 实例，一条出站连接承载会话列表、流式对话、审批、附件与文件预览，送达专用手机网页壳；设备用一次性二维码链接配对，可在 dsh 网页内的控制台随时撤销。'

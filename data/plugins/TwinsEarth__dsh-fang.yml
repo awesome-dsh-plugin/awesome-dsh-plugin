@@ -1,0 +1,6 @@
+url: https://github.com/TwinsEarth/dsh-fang
+name: TwinsEarth/dsh-fang
+category: dev
+description:
+  en: Isolated mother, essence, and fork workspaces for developing and testing DeepSeek Harness plugins.
+  zh: 为 DeepSeek Harness 插件开发与测试提供母体、元主、分身隔离工作区。
