@@ -1,0 +1,7 @@
+url: https://github.com/SunneeYang/LogicMargin/tree/main/plugins/deepseek-harness
+name: SunneeYang/LogicMargin#deepseek-harness
+category: workflow
+description:
+  en: Source-backed logic reviews with diagrams, code diffs, and resumable human feedback.
+  zh: 用有来源依据的流程图和代码差异开展人工评审，保留批注、回复与多轮修订。
+tarball: https://github.com/SunneeYang/LogicMargin/releases/download/v0.9.14/dsh-plugin-logicmargin-0.9.14.tgz
