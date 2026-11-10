@@ -1,0 +1,6 @@
+url: https://github.com/weiaisuyan/dsh-split-view
+name: weiaisuyan/dsh-split-view
+category: ui
+description:
+  en: 'Multi-column tabbed workspace for the DSH main area: up to four sessions side by side, each with its own tab strip, composer and host view switcher.'
+  zh: '把 DSH 主区换成多栏标签工作区：最多四栏会话并排，每栏自带标签条、输入框和宿主视图切换条。'
