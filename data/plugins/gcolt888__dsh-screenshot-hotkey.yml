@@ -1,0 +1,6 @@
+url: https://github.com/gcolt888/dsh-screenshot-hotkey
+name: gcolt888/dsh-screenshot-hotkey
+category: ui
+description:
+  en: 'WeChat-style screenshot and annotation for the DSH composer, with a system-wide hotkey that captures without raising the DSH window.'
+  zh: '微信式截图标注，直接插进 DSH 输入框；系统级热键截图时不会把 DSH 弹到前台。'
