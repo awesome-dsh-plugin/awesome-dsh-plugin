@@ -3814,7 +3814,7 @@ dsh plugin --profile web add dshmarket
 - [bingzhu44-blip/brutal-monkey](https://github.com/bingzhu44-blip/brutal-monkey) — dsh暴力删除：永久删除 DSH 会话的磁盘数据——单条删除或跨工作区批量删除，支持 Ctrl+A 全选与 Delete 快捷删除，彻底清理对话记录、投影缓存、工作区归属、附件与子会话，不可恢复。
 - [bitqyh/dsh-codex-bridge](https://github.com/bitqyh/dsh-codex-bridge) — 在 DSH 输入框下方列出可接续的 Codex 聊天，按每个聊天所属的具体项目分组，把机械提取的恢复上下文插入草稿、不自动发送。项目归属取自 Codex 的项目注册表并做路径边界匹配，同时标注这个判断有多可靠：有记录的会话归属、登记目录、元数据不可读、或同一目录登记给多个项目（后者标为未知而不是猜一个）。存档落后于日志末尾时也会提示——那通常说明该轮没有正常结束。聊天列表需要 PATH 上有 python3 ≥3.8；Windows 暂未适配，缺少 python3 时列表会静默为空。
 - [BJ1919810/dsh-session-mail](https://github.com/BJ1919810/dsh-session-mail) — 同一宿主内 DSH 会话之间的代理传话。`send_session_message` 可等对方回合结束再送达、也可插进正在跑的回合；发信方 id 由插件自己写，伪造的 From 抬头会被拒；每条消息带 id —— 回信可用 replyTo 引用、thread 防止同一件事排队两次、supersedes 撤回尚未投递的旧消息。`read_session_info` 只读地看对方：标题、最后一轮回复、最后一次 present 的文件、以及忙闲与队列深度。
-- [BlueOcean3214/dsh-handoff-session](https://github.com/BlueOcean3214/dsh-handoff-session) — 为 DeepSeek Harness 提供会话交接：上下文压力到阈值时写交接文档与可搜索转录，并在新会话里自动继续；输入框下方状态点随压力从绿 → 蓝 → 琥珀 → 红逐级变色。
+- [BlueOcean3214/dsh-handoff-session](https://github.com/BlueOcean3214/dsh-handoff-session) — 为 DeepSeek Harness 提供会话交接：长会话降智前自动写交接文档，并在同一工作目录开新会话继续；子智能体随交接迁移——仍在运行的先打断，未完成的任务写进续接提示交给新子智能体接手；没有子智能体时就是一次普通交接。输入框下方常驻压力提示，状态点与文字颜色随压力从绿 → 蓝 → 琥珀 → 红逐级变化。
 - [Blueteemo/dsh-smart-namer](https://github.com/Blueteemo/dsh-smart-namer) — 会话与工作区的智能命名：点一下让模型基于条目自身内容给出短名候选，选中即改名。
 - [Session Lens](https://github.com/bobostudio/dsh-session-lens) — DeepSeek Harness 的会话洞察，并可一键导出为可分享的 HTML 回放。
 - [Boliban/dsh-enter-customizer](https://github.com/Boliban/dsh-enter-customizer) — 接管聊天输入框的回车等快捷键，每个快捷键的行为都能单独配置。
@@ -8325,6 +8325,7 @@ dsh plugin --profile web add dshmarket
 - [bakkhos8/dsh-macos-share#dsh-macos-share](https://github.com/bakkhos8/dsh-macos-share/tree/main/plugins/dsh-macos-share) — macOS 分享菜单接收端：把分享的文件、图片、文本和链接追加到 DeepSeek Harness 当前会话的草稿附件（需先安装 DSH Share App）。
 - [baosfeng/my-dsh-plugins#dsh-my-notify](https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-my-notify) — 会话（本轮）结束 / agent 询问 / 等待审批时弹浏览器通知 + 滴声，点击通知跳转会话；预留远程触发接口与 SSE 实时通道（npm: `dsh-my-notify`）。
 - [better-er/dsh-notify-ding](https://github.com/better-er/dsh-notify-ding) — 会话出现待回复交互或一轮跑完落到空闲时弹出浏览器系统通知，提示音由系统通知自带；不判断页面是否聚焦，每个会话最多保留一条通知、新通知顶掉旧的，空闲时若还有后台任务会在正文里说明数量。
+- [BI4PYM/dsh-deepseek-status-monitor](https://github.com/BI4PYM/dsh-deepseek-status-monitor) — 定期读取 DeepSeek 状态源，在 DSH 页面上以可自定义的气泡、横幅或胶囊提示服务中断、性能下降与服务恢复；常驻状态胶囊位置独立，支持六种位置、三种大小与中英双语。
 - [BiBoyang/dsh-im-bridge](https://github.com/BiBoyang/dsh-im-bridge) — 微信（iLink）双向桥：turn 完成/批准请求推送、聊天内批准与消息注入、持久去重与长回复收敛分段；通道层为多 IM 预留。
 - [bill9109/dsh-web-ui-notify](https://github.com/bill9109/dsh-web-ui-notify) — 桌面通知提醒。
 - [bill9109/dsh-webbridge](https://github.com/bill9109/dsh-webbridge) — DSH 结合 Kimi WebBridge。
@@ -8710,6 +8711,7 @@ dsh plugin --profile web add dshmarket
 - [biedongbin/dsh-claude-compat](https://github.com/biedongbin/dsh-claude-compat) — 把 Claude Code 的 .claude/ 目录零迁移桥接进 DSH：项目与用户级 skills、 斜杠命令、rules（单条 system-reminder 信封注入）、agent 文件、hooks （PreToolUse/PostToolUse/UserPromptSubmit/SessionStart/SessionEnd）、 .mcp.json 服务器，并支持 Claude Code 插件 marketplace。自带 /cc-plugin 插件与市场全管理（claude CLI 优先、自实现兜底）、/cc-resume 列出并把 Claude Code 会话导入为 DSH 原生事件日志、/cc-export 把 DSH skill 导出为 Claude Code skill。Claude Code 与 DSH 的双向桥。
 - [BigBlueBaby/codex2dsh](https://github.com/BigBlueBaby/codex2dsh) — 把 Codex（OpenAI Codex CLI / Desktop）的 MCP 服务器、技能、全局指令、记忆与会话历史迁移进 DeepSeek Harness（DSH），支持可视化面板与命令行，带 dry-run 预览。
 - [BotonJ/dsh-windtunnel](https://github.com/BotonJ/dsh-windtunnel) — 插件作者的契约回归风洞：剧本适配器在隔离子进程中驱动真实管线，会话事件断言覆盖加载/契约/行为/故障四层；零 API key，可进 CI。
+- [boyingliu01/dsh-aot-runner#plugin](https://github.com/boyingliu01/dsh-aot-runner/tree/main/plugin) — 子进程 runner 的 NativeAOT 替代实现：每次调用开销降低 59~67%（p50 156ms → 63ms），28 个用例与 Node 版字节级一致；仅限 Windows x64，且当前需要一个上游补丁。
 - [br1nosense/dsh-project-manager](https://github.com/br1nosense/dsh-project-manager) — 在 DSH Web 界面以悬浮窗口管理开发项目：添加/删除、一键启动/停止/重启、文件变更热重载自动重启、实时日志查看与持久化。
 - [BrambleXu/dsh-prompt-profile](https://github.com/BrambleXu/dsh-prompt-profile) — DeepSeek Harness 可复用 Markdown Prompt Profile，支持单轮模型选择、参数替换和状态恢复。
 - [brungcm/dsh-server-resources](https://github.com/brungcm/dsh-server-resources) — 在右侧边栏新增“资源”页，在 Linux、macOS 和 Windows 上实时显示 CPU、内存、交换区和磁盘用量，并列出占用最多的进程、文件夹和文件；只读、无依赖，需要 dsh-better-sidebar。
