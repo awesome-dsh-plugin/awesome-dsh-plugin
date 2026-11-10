@@ -2,5 +2,5 @@ url: https://github.com/9963KK/workbuddy-monitor
 name: 9963KK/workbuddy-monitor
 category: usage
 description:
-  en: Monitors WorkBuddy credit usage and the free-tier 24-hour window quota in real time, with composer badges, a settings panel, multi-account rotation and free/paid plan detection.
-  zh: 实时监控 WorkBuddy 积分用量与免费用户的 24h 窗口额度：输入框徽标 + 设置面板，支持多账号轮询与免费/付费识别。
+  en: Monitors WorkBuddy credit usage and the free-tier 24-hour window quota (local estimate) in real time, with composer badges, a settings panel, multi-account rotation and free/paid plan detection.
+  zh: 实时监控 WorkBuddy 积分用量与免费用户的 24h 窗口额度（本机估算）：输入框徽标 + 设置面板，支持多账号轮换与免费/付费识别。
