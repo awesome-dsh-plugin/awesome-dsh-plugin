@@ -1,0 +1,14 @@
+url: https://github.com/daoyan2142/dsh-plugin-git-sync
+name: daoyan2142/dsh-plugin-git-sync
+category: dev                     # Development & Runtime
+
+description:
+  en: Packs the third-party plugins installed in a DSH profile into tarballs and pushes them to a GitHub or Gitee repository; another machine pulls the manifest, compares versions and installs only what is missing or out of date.
+  zh: 把 DSH 配置档里已安装的第三方插件连同源码打包成 tarball 推送到 GitHub 或 Gitee 仓库；另一台电脑拉取清单、比对版本，只安装缺失或过期的插件。
+
+# Storefront tile: a GitHub-hosted raster image, drawn at ~96 px.
+icon: https://raw.githubusercontent.com/daoyan2142/dsh-plugin-git-sync/main/assets/icon.png
+
+# Optional: offer a prebuilt tarball instead of a source install.
+# The asset name stays version-free so latest/download/ never rots.
+# tarball: https://github.com/daoyan2142/dsh-plugin-git-sync/releases/latest/download/dsh-plugin-git-sync.tgz
