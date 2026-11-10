@@ -2,6 +2,6 @@ url: https://github.com/miiy/dsh-access-gateway
 name: miiy/dsh-access-gateway
 category: remote
 description:
-  en: 'Access the DSH Web GUI from your LAN: a password-gated listener on the address you set forwards the browser to the loopback GUI with this process''s launch token, and 0.0.0.0 answers on Wi-Fi, VPN and wired alike. Address, port, session lifetime and password are edited in an Access section of Settings, and the gateway stores a scrypt hash rather than the password.'
-  zh: '在局域网中访问 DSH Web GUI：在设置的地址上监听并用密码把关，通过后把浏览器转发到回环上的 GUI，并带上当前进程的启动 token；地址填 0.0.0.0 则 Wi-Fi、VPN、有线都能进。地址、端口、免密天数与密码在设置的「访问入口」分区里修改，保存下来的是密码的 scrypt 哈希，而不是密码本身。'
+  en: 'Access the DSH Web GUI from your LAN: a listener on the address you set forwards the browser to the loopback GUI with this process''s launch token, and 0.0.0.0 answers on Wi-Fi, VPN and wired alike. Address, port, session lifetime and password are edited in an Access section of Settings. The password is on by default — a fresh entry starts with a generated random one — and can be switched off on a network you trust for direct access; the Host stores only its scrypt hash.'
+  zh: '在局域网中访问 DSH Web GUI：在设置的地址上监听，通过后把浏览器转发到回环上的 GUI，并带上当前进程的启动 token；地址填 0.0.0.0 则 Wi-Fi、VPN、有线都能进。地址、端口、免密天数与密码在设置的「访问入口」分区里修改。密码默认开启，首次启动随机生成一个；在信任的网络里可以关掉密码直接访问。宿主保存的只是密码的 scrypt 哈希。'
 icon: https://raw.githubusercontent.com/miiy/dsh-access-gateway/main/icon-180.png
