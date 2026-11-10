@@ -1,0 +1,6 @@
+url: https://github.com/fujingzhai/youxia-dsh-plugins/tree/main/dsh-session-fee
+name: fujingzhai/youxia-dsh-plugins#dsh-session-fee
+category: usage
+description:
+  en: "Shows the current session's equivalent cost in the stats bar above the input, priced from a bundled table of published token prices. Uncached input, cache reads and writes, and output including reasoning are priced separately; model changes add up as separate per-currency segments; subagent costs are included. Clicking the cost opens a per-session and per-subagent breakdown."
+  zh: "在输入框上方的统计条显示当前会话按刊例 token 价折算的等值费用：未缓存输入、缓存读取与写入、输出（含推理）分别计价；换模型分段相加、各币种不换算；子代理费用计入总数。点击费用项可展开主会话与各子代理的明细。"
