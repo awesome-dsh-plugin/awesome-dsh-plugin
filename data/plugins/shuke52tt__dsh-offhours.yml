@@ -1,0 +1,6 @@
+url: https://github.com/shuke52tt/dsh-offhours
+name: shuke52tt/dsh-offhours
+category: workflow
+description:
+  en: "Runs your kanban backlog during off-peak hours: per-card git worktrees, evidence-gated completion, merge-back, budget and idle gates; point the plugin at one git repo and it works."
+  zh: "在低谷时段自动跑看板待办：每卡独立 git worktree、证据门禁、合并回收、预算/空闲闸门；配置一个 git 仓库即可用。"
