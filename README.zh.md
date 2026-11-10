@@ -1913,6 +1913,7 @@ dsh plugin --profile web add dshmarket
 - [Xingkong42/dsh-zh-labels](https://github.com/Xingkong42/dsh-zh-labels) — 每次启动自动将 DSH 界面英文工具与状态标签修补为中文，升级 DSH 后自动恢复，无需手动改文件。
 - [xingxingbk-git/dsh-deepseek-chat](https://github.com/xingxingbk-git/dsh-deepseek-chat) — 在 DSH 桌面版中提供 DeepSeek 网页聊天与 Harness 工作区之间的切换。
 - [xingyeai23/dsh-comfyui-studio](https://github.com/xingyeai23/dsh-comfyui-studio) — DSH 侧栏里的 ComfyUI 工作室：连接本机或局域网 ComfyUI，选择已保存的图片工作流，清理/改写提示词、编辑 LoRA 与节点、生成图片并预览结果，可复制种子。
+- [xingzhen199186/dsh-entry-drawer](https://github.com/xingzhen199186/dsh-entry-drawer) — 把 DSH 左侧栏入口列表的第一行变成开关，一键收起/展开其余入口，把空间还给会话历史。
 - [xinjiguaike/dsh-session-location](https://github.com/xinjiguaike/dsh-session-location) — 在单列表的每个会话行标题下方显示所属工作区与当前 Git 分支。
 - [xinming-chenniang/dsh-button](https://github.com/xinming-chenniang/dsh-button) — DSH 输入框旁的可编辑提示词快捷按钮：把反复重打的提示词、常用语存成按钮，点一下发送预设文字或只填入草稿；可排序、换位置、调大小。纯文字动作，不执行宿主命令；有草稿时不覆盖；按钮还能在点击时现读上一条消息、当前草稿或选区，带 {{名字}} 的会先让你填再执行。
 - [xinming-chenniang/dsh-open-at-last-input](https://github.com/xinming-chenniang/dsh-open-at-last-input) — 打开已结束的会话时，聊天视口落在你最近一条本人发言处而不是页面底部；正在运行的会话仍跟到底。纯客户端：不碰文件、凭据、子进程与网络。
@@ -5157,6 +5158,7 @@ dsh plugin --profile web add dshmarket
 - [DamonKoy/dsh-plugins#dsh-mcp-client-v2](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-mcp-client-v2) — MCP 客户端增强：分页工具发现、非阻塞启动、mcp_tool_search 搜索，自研 stdio/streamable-http 传输。
 - [danieldu168/dsh-stash](https://github.com/danieldu168/dsh-stash) — 把外部数据库与文献语料登记成模型可调用的取数工具；每条库声明取数边界，钥匙台账只记引用名不存值，取数台账只留指纹与内容哈希而不留响应体。
 - [danshuyue/dsh-onebot-channel](https://github.com/danshuyue/dsh-onebot-channel) — 经 OneBot 11 把 QQ 私聊和群聊接进 DSH，提供 qq_send 等工具，让 agent 能回消息、发表情、等待对方接话。
+- [david-zdw/dsh-image-studio](https://github.com/david-zdw/dsh-image-studio) — DSH 侧边栏生图工作台：Agnes、OpenAI GPT Image、Grok、OpenAI 兼容接口各自独立 Key，支持文生图和最多 5 张参考图、本地历史、/image 工具，以及插件内 GitHub 更新按钮。
 - [DayuanJiang/next-ai-draw-io#dsh-plugin](https://github.com/DayuanJiang/next-ai-draw-io/tree/main/packages/dsh-plugin) — dsh 的 draw.io 绘图插件：通过 next-ai-drawio MCP 服务器作图，点回复里的链接在右侧栏打开实时预览，可以手动修改图，AI 的每次修改都是可以恢复的版本。需 Node.js 18+，首次使用由 npx 下载 MCP 服务器。
 - [Deanyu148/dsh-balance-inquiry](https://github.com/Deanyu148/dsh-balance-inquiry) — 余额看板，可以添加多个按量计费/Token plan，同时查询余额。
 - [Deanyu148/dsh-import-newapi](https://github.com/Deanyu148/dsh-import-newapi) — 一键从new api站点导入复制的连接信息。
