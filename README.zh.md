@@ -2408,6 +2408,7 @@ dsh plugin --profile web add dshmarket
 - [kikomaotu/ccs-balance](https://github.com/kikomaotu/ccs-balance) — 同步 cc-switch 各 provider 余额，按日/月/总量统计 token 用量与花费，支持中转站币种与汇率设置。
 - [KimiChen2000/dsh-conversation-costs](https://github.com/KimiChen2000/dsh-conversation-costs) — 按对话和每轮回复估算已记录的 DeepSeek 模型费用，并提供花费排序明细。内置价目表覆盖 2026-09-11 至 2026-12-31。
 - [kirigayakazima/dsh-usage-vendor-stats](https://github.com/kirigayakazima/dsh-usage-vendor-stats) — 按厂商（订阅/官方API）统计用量看板：按供应商/模型拆分 Token、缓存、输出等 KPI，53 周热力图，趋势折线图（今天按小时），模型钻取，费用估算，CSV 导出，以及健康度卡片（TTFT、生成速度、峰值 Context、错误率）。
+- [knight02-bit/dsh-opencode-go-usage](https://github.com/knight02-bit/dsh-opencode-go-usage) — 在 DSH 输入框下方显示 OpenCode Go 的 rolling、weekly、monthly 剩余百分比，并用浮层给出配速预算：每个窗口折算成每天、每周可花多少，再标出当前消耗是超前还是落后。
 - [kober-basket/dsh-cachescope](https://github.com/kober-basket/dsh-cachescope) — 提示词缓存诊断页，展示 Provider 回传的 Token 用量、相邻逻辑输入变化与 Call TTFT。
 - [kongshan-zhuyu/dsh-balance-quota#dsh-balance](https://github.com/kongshan-zhuyu/dsh-balance-quota/tree/main/packages/dsh-balance) — DSH Web 的供应商余额与额度状态栏，支持模型能力设置、外部 JSON 健康监测、可视化字段绑定和逐模型状态详情。
 - [KouzakiUmi/dsh-subusage](https://github.com/KouzakiUmi/dsh-subusage) — 在 DeepSeek Harness 模型选择器旁显示 28 条提供商入口的订阅额度与账户余额，附统一设置页和只读额度查询工具。
