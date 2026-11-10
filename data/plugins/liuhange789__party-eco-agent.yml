@@ -2,5 +2,5 @@ url: https://github.com/liuhange789/party-eco-agent
 name: liuhange789/party-eco-agent
 category: tools
 description:
-  zh: "党建引领街边产业生态协作插件 — 企业画像、供需匹配、政策解析、诉求派单"
-  en: "Party-building led street industry ecosystem collaboration plugin — enterprise profiling, supply-demand matching, policy parsing, grievance dispatch."
+  en: 'Lightweight rule-based tools for street-level industry ecosystem work (party-building scenario): format enterprise profile cards, match supply and demand by category and quantity, normalize policy record fields (no raw-text parsing), and map grievance priority to an assignee role and estimated days. Calls no external systems.'
+  zh: '面向党建引领街道产业生态场景的轻量规则工具：生成企业画像卡片、按品类与数量匹配供需、规整政策记录字段（不解析原文）、按优先级给出诉求处理人角色与预计天数；不调用任何外部系统。'

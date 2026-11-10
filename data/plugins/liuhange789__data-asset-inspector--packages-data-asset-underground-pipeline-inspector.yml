@@ -2,5 +2,5 @@ url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data
 name: liuhange789/data-asset-inspector#underground-pipeline-inspector
 category: tools
 description:
-  zh: "地下管线数据质量检查插件 — 检测覆盖率、接边精度、流向合理性，输出质量评分"
-  en: "Underground pipeline data quality inspection plugin — checks coverage, edge matching, flow direction, outputs quality score."
+  en: 'Underground pipeline data quality inspection plugin — checks coverage, edge matching, flow direction, outputs quality score. Default rules follow Chinese standards and a Guangdong guideline (accepted SRIDs: CGCS2000 and 3° zones 38–40; gross-error threshold 5%); override via config JSON.'
+  zh: '地下管线数据质量检查插件 — 检测覆盖率、接边精度、流向合理性，输出质量评分。默认规则取自国标与广东省导则（坐标系仅认 CGCS2000 及三度带 38–40 带，粗差率阈值 5%），可用配置 JSON 覆盖。'
