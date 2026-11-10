@@ -9540,11 +9540,13 @@ dsh plugin --profile web add dshmarket
 - [SilverKurali/dsh-mesh-access](https://github.com/SilverKurali/dsh-mesh-access) — 用手机远程控制电脑上的 DSH：在服务进程内部把端口开到组网网卡上，手机浏览器打开就是你在电脑上用的那个界面，同一实例、同一份会话，不用 SSH、不用第二个 dsh。顺带笔记本、NAS、电视盒子也能开。
 - [siqyka/dsh-ssh-workspace](https://github.com/siqyka/dsh-ssh-workspace) — 通过SSH方式，将远程主机的文件夹当成DSH的工作区，可以在本地DSH控制远程主机工作目录，不需要手动同步、不需要挂载驱动、不需要装任何第三方文件系统
 - [skyzzq/dsh-ssh-mac](https://github.com/skyzzq/dsh-ssh-mac) — 基于 @linxin666/dsh-ssh 的二次开发（两者不能同时启用）：建链前先按网卡 MAC 把主机解析成当前 IP，DHCP 换号不用改配置。
+- [soffits/dsh-desktop-view](https://github.com/soffits/dsh-desktop-view) — 在 DSH 网页界面中实时查看 Agent 所在机器的桌面（含声音），经 DSH 自身登录转发。遇到验证码或扫码登录时可接管，支持剪贴板与文件传输，手机上也能用。需要同一台机器上 Cua 桌面镜像自带的 cua-spacesd。
 - [somebdly/dsh-docker](https://github.com/somebdly/dsh-docker) — dsh-docker 是 DeepSeek Harness Web 的 Docker 管理面板插件：支持本机 CLI 与 SSH 远端多目标一键切换，统一管理 Docker MCP（部署/移除/搜索官方 Catalog/启停重启 Gateway/自定义部署）与容器镜像（启停/删除/日志/详情/交互式终端/新建/构建/导入）。凭据经 Windows DPAPI 加密存储，HTTP 仅限本机 loopback 访问，命令参数白名单防注入；免构建、纯 ESM、Client 零依赖。
 - [songofhawk/dsh-alpha](https://github.com/songofhawk/dsh-alpha) — DSH 的多机多 Agent 编排与控制平台：发现各设备上的 Agent 与工作区，按机器、仓库、能力和负载将任务路由到本地或远程 Agent Runtime，统一回传进度、审批与结果，并在断线后恢复持久任务。
 - [SOVLOOKUP/dsh-tunnel-preview](https://github.com/SOVLOOKUP/dsh-tunnel-preview) — 通过 Cloudflare Tunnel 将本地监听端口暴露为公网 HTTPS 预览链接，支持自动管理 DNS 记录与一键模板创建 API Token。
 - [sqzw-x/dsh-plugins#dsh-lan-link](https://github.com/sqzw-x/dsh-plugins/tree/main/packages/dsh-lan-link) — 把当前 harness 进程的局域网访问交给其他设备：把 harness 端口的已认证链接按本机 IPv4 地址写进一个 token 文件，并在 shell 环境注册 DSH_LAN_LINK；可选的网关在固定局域网端口上对外服务，会话凭据留在本机、设备不需要 token，转发时重写 Host 与 Origin 以通过宿主的同源校验，并注入主机声明让页面按完整桌面界面渲染而不是远程访客模式。设备按 CIDR 放行，可选 Basic 认证。
 - [ssy-in/dsh-my-phone](https://github.com/ssy-in/dsh-my-phone) — 让手机连上本机的 DeepSeek Harness 桌面版：局域网或 Cloudflare 隧道二维码配对，实时消息列表与授权提醒，桌面悬浮球。局域网与 Cloudflare 隧道两个入口默认都开启；每台手机用自己的配对令牌。
+- [stlin256/DSH-Harmony#dsh-harmony](https://github.com/stlin256/DSH-Harmony/tree/main/plugins/dsh-harmony) — DSH Harmony 鸿蒙原生客户端的插件端：通过宿主令牌交换完成原生登录（可选 Pocket ID Passkey），提供会话列表与实时更新、任务概览、按设备设置的通知等级和网页会话定位；以预构建 tarball 发布，无需独立 relay 或常驻网关进程。
 - [sunChargedd/dsh-plugins#dsh-ssh-manage](https://github.com/sunChargedd/dsh-plugins/tree/main/dsh-ssh-manage) — DSH 的 SSH 主机管理插件：浏览 ~/.ssh/config，保存 AES-256-GCM 加密密码，执行批量命令与 SFTP，并在可保持的侧边栏标签页中打开交互式 PTY 终端。
 - [sunrulin123/dsh-community-web-ui](https://github.com/sunrulin123/dsh-community-web-ui) — DeepSeek Harness 独立远程 Web UI：适配手机视口、软键盘与触控热区，同时保持原生桌面端界面不变。
 - [swarm-apps/dsh-swarmdrop](https://github.com/swarm-apps/dsh-swarmdrop) — 在 agent 和你自己的手机之间开一条设备通道：agent 把刚产出的文件发过去，手机传回来的东西可以在输入框里 @ 引用。底层经 SwarmDrop CLI 走端到端加密的 P2P，不需要账号，也不需要公网 IP；节点状态、已配对设备与扫码配对都在侧边栏面板里。
