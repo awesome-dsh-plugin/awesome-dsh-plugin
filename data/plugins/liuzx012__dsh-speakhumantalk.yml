@@ -1,0 +1,7 @@
+url: https://github.com/liuzx012/dsh-speakhumantalk
+name: liuzx012/dsh-speakhumantalk
+category: usage
+description:
+  en: Strips AI phrasing and stock openers; on in every session.
+  zh: 删掉 AI 腔与套话，每会话自动生效。
+icon: https://raw.githubusercontent.com/liuzx012/dsh-speakhumantalk/main/assets/icon-180.png
