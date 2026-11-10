@@ -1,0 +1,8 @@
+url: https://github.com/yhzsir/dsh-market-star-sort
+name: yhzsir/dsh-market-star-sort
+category: market
+tarball: https://github.com/yhzsir/dsh-market-star-sort/releases/latest/download/dsh-market-star-sort.tgz
+icon: https://raw.githubusercontent.com/yhzsir/dsh-market-star-sort/main/icon.png
+description:
+  en: 'Adds a Stars order to the plugin Discover tab, ranking entries by GitHub star counts taken from the market index site public catalog. Ships a star snapshot so the order works offline from the first launch, then refreshes it daily in the background.'
+  zh: '在「插件 → 发现」的排序菜单里增加「Star 数」，按市场索引站点公开目录中的 GitHub Star 数从高到低排序。随包带一份星标快照，首次启动即可离线排序，之后每天在后台刷新。'
