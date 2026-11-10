@@ -1,0 +1,6 @@
+url: https://github.com/wjloven/dsh-miniflux-digest
+name: wjloven/dsh-miniflux-digest
+category: tools
+description:
+  en: Read Miniflux inside DeepSeek Harness in a three-column panel (feeds, article list, article) and ask the assistant for unread digests, per-category briefings, full-text reads and read/star actions on the same account.
+  zh: 在 DeepSeek Harness 里用三栏面板读 Miniflux（订阅源、文章列表、正文），并让助手在同一账号上生成未读速览、按分类写简报、读全文、标已读或收藏。
