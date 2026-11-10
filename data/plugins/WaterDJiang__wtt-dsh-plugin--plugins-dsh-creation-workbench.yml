@@ -1,0 +1,6 @@
+url: https://github.com/WaterDJiang/wtt-dsh-plugin/tree/main/plugins/dsh-creation-workbench
+name: WaterDJiang/wtt-dsh-plugin#dsh-creation-workbench
+category: workflow
+description:
+  en: WTT Creation Workbench is a DSH canvas for organizing local files, running skills, and producing versioned course outlines and editable PowerPoint decks.
+  zh: WTT 创作工作台用画布组织本地资料和技能任务，制作课程大纲与可编辑的 PPT，并保留成果版本。
