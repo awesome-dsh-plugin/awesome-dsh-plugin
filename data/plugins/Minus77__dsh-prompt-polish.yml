@@ -2,7 +2,6 @@ url: https://github.com/Minus77/dsh-prompt-polish
 name: Minus77/dsh-prompt-polish
 category: ui
 icon: https://raw.githubusercontent.com/Minus77/dsh-prompt-polish/main/assets/icon-180.png
-tarball: https://github.com/Minus77/dsh-prompt-polish/releases/latest/download/dsh-prompt-polish.tgz
 description:
   en: 'Polishes the composer draft: opening the panel optimizes once with the default template, replacing the draft shows a line-by-line diff first, and a 9-second undo sits on the entry pill. Five templates (basics, structure, examples, reasoning, iteration) switch without spending a call; history and version chains stay on this machine, and the UI follows the Harness language.'
   zh: '输入框旁的提示词优化器：打开面板即按默认模板优化一次，替换草稿前先给逐行 diff，替换后 9 秒内可撤销。五种模板（基础 / 结构 / 示范 / 推理 / 迭代）换选择不计费，历史与版本链存在本机，界面跟随 Harness 语言切换。'
