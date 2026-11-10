@@ -3425,6 +3425,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-local-ai](https://github.com/PerryLink/dsh-local-ai) — DeepSeek Harness 的 Ollama 接入：模型管理、健康检查、基于规则的本地路由与云端回退。
 - [PerseusNana7mi/dsh-model-kit](https://github.com/PerseusNana7mi/dsh-model-kit) — 从 models.dev 补全缺失的模型参数，从已配置供应商导入模型，并按字段覆盖内置模型；价格可按美元或原生人民币设为手动单价，或按参考价乘自定义倍率。
 - [pgjh/dsh-model-metadata](https://github.com/pgjh/dsh-model-metadata) — DSH 插件：按模型名在运行时查一次目录，把你在自定义网关上声明的模型该有的能力元数据补上——上下文长度、输出上限、推理等级、能否看图；插件自己不写你的设置文档。
+- [Phoeky/dsh-scnet-connect](https://github.com/Phoeky/dsh-scnet-connect) — DSH 的 SCNet 模型接入。有客户端时直接读其已落盘的凭据，没有客户端也能在设置页用手机短信验证码登录；注册客户端目录里的免费模型（SCNet-Max），并可在运行时切换「只显示免费模型」。
 - [Phoeky/dsh-sensenova-pool](https://github.com/Phoeky/dsh-sensenova-pool) — 把商汤日日新（SenseNova）模型接入 dsh，并提供按 Key 轮换的 Key 池：粘贴任意多把 API Key，请求在多把 Key 之间轮转；遇 429 限流立即换下一把 Key 重试，每把 Key 独立指数退避冷却；本地 RPM 预限流从源头避开限流，池子耗尽时回报 503 与 Retry-After，使 429 不会传到调用方。内置可离线使用的模型目录并从 /v1/models 刷新，设置卡片提供脱敏 Key 列表、单把探活与删除。
 - [pigman18/dsh-openai-gateway](https://github.com/pigman18/dsh-openai-gateway) — 把 DeepSeek Harness 里已配置的全部 provider 与模型暴露成一个固定端口的 OpenAI 兼容接口，并在侧边栏提供地址、密钥、端口与模型 ID 的复制页面。
 - [Plocr/dsh-commandcode](https://github.com/Plocr/dsh-commandcode) — Command Code for DSH｜订阅接入：通过 llm-pi-ai 供应商配置接入 Go / GOAT / Pro / Max 订阅，支持模型同步预览、收藏与隐藏、逐模型推理预设、主动调用诊断、用量提醒、配置导入导出和联网搜索。
@@ -4832,6 +4833,7 @@ dsh plugin --profile web add dshmarket
 - [SQHLnb666/mindsea](https://github.com/SQHLnb666/mindsea) — 给 DeepSeek Harness 的长期记忆插件。每轮聊完自动把话判一遍，存进本地 SQLite（话、事、版本、阶段、决定五层），带一块能翻能筛的面板。
 - [sqzw-x/dsh-plugins#dsh-notes-context](https://github.com/sqzw-x/dsh-plugins/tree/main/packages/dsh-notes-context) — 为 DeepSeek Harness 提供笔记式上下文压缩：用模型维护的持久笔记本取代 LLM 摘要式压缩，并保留可恢复的原始历史，窗口边界本身不产生模型调用。
 - [stas130286-blip/dsh-brainagent](https://github.com/stas130286-blip/dsh-brainagent) — 受大脑启发的认知插件:情景、语义、程序与情绪记忆,带强化学习信号;目标栈支持时间触发器,好奇心驱动的自主网络研究与主动提议。
+- [summerscar/dsh-plugins#dsh-mnemon-sync](https://github.com/summerscar/dsh-plugins/tree/main/plugins/dsh-mnemon-sync) — 给 dsh-mnemon 做备份与恢复：它的三类记忆组件（记忆空间、项目档案、运行时记忆）可任选，打包到 S3 兼容存储或 WebDAV，之后可浏览备份列表并只恢复选中的部分。SQLite 库经 node:sqlite 的 backup() 在线复制，写入方同时写也不会撕开副本；每个文件带 SHA-256，上传前校验一次、恢复前再校验一次；恢复默认只做预览，写回数据库前会先删掉残留的 -wal/-shm。备份文件名是 mnemon-sync-<设备名>-<时间戳>.zip，多台机器备份到同一目录也能分辨来源。定时器只有一个，间隔从每小时到每周；凭据存在 DSH profile 之外的 0600 文件里；除 Node 外没有其他依赖。
 - [suomir1995/dsh-notes](https://github.com/suomir1995/dsh-notes) — 把笔记存成你选定根目录下按分组组织的本地 Markdown 文件，带侧栏页面，并把 AGENTS 等规则 md 作为写作上下文，另有六个 agent 工具。
 - [super3ben/agent-feedback-loop#agent-feedback-loop-dsh](https://github.com/super3ben/agent-feedback-loop/tree/main/templates/dsh-plugin) — 把 dsh 的每一轮 prompt 送入本地 agent-feedback-loop 反馈记忆管线——捕获用户不满、离线评审沉淀为反思，并把编译好的复发规则上下文附着回当前轮次，从不阻塞 prompt。需要先安装 agent-feedback-loop 运行时；安装后执行 agent-feedback-loop install 会自动接线已有的 dsh profile。
 - [Swd146296/dsh-memos-bridge](https://github.com/Swd146296/dsh-memos-bridge) — 通过 MCP 桥接 MemOS 记忆服务：agent 获得 mcp__memos__* 记忆写入/检索/更新/删除、多 Cube 共享与记忆调度工具。
@@ -5125,6 +5127,7 @@ dsh plugin --profile web add dshmarket
 - [cat-Logan/dsh-rayburst](https://github.com/cat-Logan/dsh-rayburst) — 把 DeepSeek Harness 的下载交给 Rayburst（aria2 引擎），提供 rayburst_download、rayburst_wait、rayburst_status 三个工具。需先在本机安装并运行 Rayburst 桌面端（aria2-next），插件会读取它的 aria2.conf 获取 RPC 端口与密钥。
 - [CAT0998/dsh-ai-cursor](https://github.com/CAT0998/dsh-ai-cursor) — 给 AI 的第二只光标加一个浮动控制面板，可调透明度、颜色、大小与提示显隐，并按只能由人提高的权限等级限制它；从不移动你的真实鼠标指针。仅支持 Windows 10 2004 及以上——浮层是 Win32 程序，macOS 与 Linux 没有实现。
 - [cayan0x/Lume](https://github.com/cayan0x/Lume) — DSH Desktop 人设与记忆插件：从聊天记录、小说、剧本或设定文档蒸馏角色；支持长期与临时记忆、风格学习、认可语料、人设切换纠偏、记忆星图和角色卡导入导出。任务侧仅保留轻量工作纪律，不再注入计划、台账或动态提醒。
+- [cccc11f3/dsh-install-radar](https://github.com/cccc11f3/dsh-install-radar) — 会话安装雷达：按会话列出装了什么（pip、npm、git clone、winget 等），给出体积、安装位置、创建时间、用途、为什么装、卸载后果。含侧栏面板、10 个 agent 工具、临时目录时间戳扫描、进程命令行审计，以及仅限临时目录的两段式确认清理。
 - [cerebrixos-org/dsh-asimovbox](https://github.com/cerebrixos-org/dsh-asimovbox) — 通过 API 密钥认证的工具将 DeepSeek Harness 连接到 AsimovBox，用于创建、更新、渲染和完成视频。
 - [changingwang/dsh-stage-gate](https://github.com/changingwang/dsh-stage-gate) — 阶段门治理工具：模型可直接调用的 gate_open / gate_check / gate_list / gate_close，为多阶段工作提供内存态、按会话隔离的验收核对与通过/阻塞结论。
 - [chaorenzeng/dsh-use-codex](https://github.com/chaorenzeng/dsh-use-codex) — 把独立任务从 DeepSeek Harness 委派给本机 OpenAI Codex CLI 执行，并把结果返回当前会话。提供四个工具（任务执行、状态检查、危险模式开关、启停开关），强制真实路径白名单并做软链逃逸防护，默认使用 Codex workspace-write 沙箱模式，任务正文以单个 argv 参数传递避免 shell 注入，超时或取消时终止完整 Codex 进程组，并限制输出长度。需要 Node.js >= 20 和支持 codex exec 的 Codex CLI。
@@ -6119,6 +6122,7 @@ dsh plugin --profile web add dshmarket
 - [wanwulizhi/dsh-claude-code-sdk](https://github.com/wanwulizhi/dsh-claude-code-sdk) — 需本机已安装并登录 Claude Code。通过 Claude Agent SDK 把编码任务委派给本机 Claude Code，报告改动文件、支持一键回退，并在输入框旁提供「Claude 模式」开关。
 - [Wanyi424/dsh-quick-translate](https://github.com/Wanyi424/dsh-quick-translate) — 不离开 DSH 就能中英互译：复用已配置的模型，免填 API Key；译文边生成边显示，提示词可自定义，历史自动存在本地，可随时回看重译。
 - [warmwine/dsh-memoryleak](https://github.com/warmwine/dsh-memoryleak) — 把随手记和待办写进工作区的 Markdown 文件里：/ml 加一句话就记进当天日志；待办分三种——截止日、睡到某天自动唤醒、随时；/ml view 打几个字母就能模糊打开任意文件。全程零 token，不经过大模型；笔记就是普通的本地文件，git 和任何编辑器都能直接用。
+- [Wazy-XD/tabby-serial-mcp#dsh-bundle](https://github.com/Wazy-XD/tabby-serial-mcp/tree/main/dsh-bundle) — 接入 Tabby 串口 MCP 桥接服务并注册 tabby-serial 技能：agent 可以列出、新建、读写 Tabby 里已经打开的串口，同时你还能在同一个终端里继续敲键盘。需要在 Tabby 里安装 tabby-serial-mcp 插件。
 - [wbb316/dsh-novel](https://github.com/wbb316/dsh-novel) — 小说创作台：5 个 novel_* 工具（列目录、读文件、取上下文、存章节、管角色），外加侧栏开书向导、人物关系图与流式续写。
 - [wbin0001/dsh-comfyui-canvas](https://github.com/wbin0001/dsh-comfyui-canvas) — 从对话到画布再到作品——DSH 里驾驭 ComfyUI 的可视化工作流 IDE。把 ComfyUI（本地或云端）以画布分屏嵌入 DeepSeek Harness Web，agent 在对话里激发创意、书写提示词与脚本，实时落到你眼前的画布上，产出图像、音乐、视频、3D。从灵感到成品，全程不离开对话，不用切换任何前端工具：画布操作——搭建编排、读写工作流、修改节点、连线、运行、调整参数、工作流查错，所见即所得，实时落在你眼前的画布上；生产任务——批量扫参（batch_run）、自动取回出图（get_outputs）带回对话，实现图像、音乐、视频、3D 等多任务智能创作与批量生产；环境维护——一键启动 ComfyUI、一键升级核心与全部自定义节点（upgrade），省心维护不间断。本仓库集成了 DSH 侧插件（画布副驾）+ ComfyUI 侧桥接节点，无人值守/规模化执行时可配合官方 ComfyUI MCP 服务器使用。
 - [webkubor/dsh-env-inspector](https://github.com/webkubor/dsh-env-inspector) — 环境自检与端口控制大屏：零依赖洞察系统架构、12 款核心 CLI 工具链、活跃监听端口与悬浮释放、模型凭据就绪状态。局域网主 IP 一键速查，零外联、零私有凭据明文。
@@ -9140,6 +9144,7 @@ dsh plugin --profile web add dshmarket
 - [walksls/dsh-degeneration-kit#thinking-guard](https://github.com/walksls/dsh-degeneration-kit/tree/main/thinking-guard) — 把退化的思考复读从模型可见历史里折叠掉，下一轮不再回传上游。能识别两种形态——同一句反复死磕、以及短句轮换——并对命中的那段做等价替换；配套的急停阀则对停不下来的回合当场中止。
 - [wangtie-010101/wangtie-os](https://github.com/wangtie-010101/wangtie-os) — 构建在 DeepSeek Harness Web 之上的全屏业务应用框架：深色侧边栏工作台，集成数据库连通测试与 SQL 查询、票据/会计二级知识库（本地检索与 Word 文档投喂）、元数据环境比对与变更 SQL 生成、数据字典、Agent 日志检索报告演示、系统测试用例执行、印象笔记风格记事本、常用开发工具与小游戏。
 - [Wanyi424/dsh-performance](https://github.com/Wanyi424/dsh-performance) — 小而美？看清 DSH 的 CPU、内存与卡顿：按插件、终端、MCP 拆分占用，对照卡顿时刻，复制诊断报告。仅限 Windows x64。
+- [Wazy-XD/dsh-iar-cspy](https://github.com/Wazy-XD/dsh-iar-cspy) — 把官方 IAR C-SPY MCP Server 接入 DeepSeek Harness：在对话里编译 .ewp 工程、在模拟器或硬件上启动调试会话，并查看变量、寄存器、内存、调用栈与目标输出。仅支持 Windows，需要本机安装 IAR Embedded Workbench。
 - [wbb316/dsh-profile-sync](https://github.com/wbb316/dsh-profile-sync) — 在 DSH 的各 profile 之间迁移插件（默认 web → desktop）：算差异、预检、为 CLI 管的 profile 生成离线脚本、重启后核对。它自己不安装任何东西。
 - [we39/dsh-pve](https://github.com/we39/dsh-pve) — 通过对话管理 Proxmox VE：116 个只读 + 116 个写工具，覆盖虚拟机、容器、存储、节点、集群、备份与防火墙，支持 API Token 或用户名密码（ticket）鉴权。
 - [weibaohui/dsh-fde-tools](https://github.com/weibaohui/dsh-fde-tools) — FDE 工具箱全家桶：安装一个插件带上一批常用 dsh 插件（代码仓库 / 挂载盘 / 知识库 / 定时任务 / 自动续跑 / 界面微调 / 自动复盘 / 文件管理 / 智能标题 / 任务看板 / 插件市场 / 上下文 / IM 接入 / 侧栏增强），面板看状态、一键补装。
