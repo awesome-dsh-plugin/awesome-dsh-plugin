@@ -1,0 +1,7 @@
+url: https://github.com/Nuke0519/dsh-status-box
+name: Nuke0519/dsh-status-box
+category: ui
+icon: https://raw.githubusercontent.com/Nuke0519/dsh-status-box/main/docs/screenshots/icon-180.png
+description:
+  en: 'macOS menu-bar status box for DSH: a whale status item shows running / waiting / completed counts and colours, its menu lists sessions grouped by workspace, a top-bar pill mirrors the counts inside the window, and the global hotkey ⌥⌘⇧D opens a single-field capture window that queues a task and sends it to the chosen workspace as a new session (queued while DSH is closed, delivered when it opens). A settings page adds an open-after-send switch.'
+  zh: 'DSH 的 macOS 菜单栏状态盒：小鲸鱼状态项显示运行中/待处理/已完成数量并随状态变色，点开菜单按工作区分组列出会话，窗口顶部胶囊同步显示数量；全局热键 ⌥⌘⇧D 唤出单行输入窗，把任务排队并在指定工作区新建会话直接发送（DSH 关着时排队，打开后自动发出）；设置页含「发送后打开对话页」开关。'
