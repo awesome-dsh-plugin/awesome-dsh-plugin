@@ -1,0 +1,6 @@
+url: https://github.com/superltmajor-pixel/dsh-minimal-ui
+name: superltmajor-pixel/dsh-minimal-ui
+category: ui
+description:
+  en: Refines the DeepSeek Harness interface for reading by adjusting layouts and reducing persistent controls.
+  zh: 调整 DeepSeek Harness 界面布局并减少常驻按钮，以突出阅读内容。
