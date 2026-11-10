@@ -2288,7 +2288,7 @@ dsh plugin --profile web add dshmarket
 - [GIN0076/dsh-token-usage](https://github.com/GIN0076/dsh-token-usage) — DSH 设置面板词元用量统计：从会话日志折叠出日/周/月 × 模型（或按厂商合并）的词元统计，storage-domain 持久化、经同源 /token-usage-rpc 路由出数；SVG 折线图（十字线悬浮按日拆到每个模型）+ 占比排行（含可选金额）+ 缓存命中率与缓存读写卡片 + 用户自备的每百万 token 价目表 + 日/月预算告警 + 当前区间导出 CSV/JSON + 可见时自动刷新 + 预设与自定义起止日期 + 重建（存储里存在日志已不存在的历史时先要一次确认）。
 - [GLFzr/dsh-opencode-go-quota](https://github.com/GLFzr/dsh-opencode-go-quota) — 模型选择器左侧的 OpenCode Go 额度圆环：点击循环切换 5 小时/每周/每月用量窗口，按紧急程度着色（绿/蓝/橙/红），悬停显示百分比与重置倒计时。
 - [golitter/dsh-deepseek-billing](https://github.com/golitter/dsh-deepseek-billing) — 在 DSH 中查看 DeepSeek API 账户余额与计费信息，并提供 /deepseek-billing 斜杠命令。
-- [gongfpp/dsh-cost-voice](https://github.com/gongfpp/dsh-cost-voice) — 每轮会话结束用支付宝音效播报本轮花费估算（也可换成内置的大白饭梗音色）；金额优先取 dsh-cost-meter，未安装时按模型单价估算；音频全部内置、运行时不联网。
+- [大白饭到账语音播报](https://github.com/gongfpp/dsh-cost-voice) — 大白饭到账语音播报：每轮结束默认用内置大白饭语音提醒本轮估算花费，也可切换支付宝；优先读取 dsh-cost-meter，否则按模型单价估算，不是支付通知，无需联网语音服务。代码 MIT；随包支付宝片段来自无许可证的 Reathin/XVoice、大白饭音色为 MiMo 克隆、图标为网友二创梗图，这些素材仅限随本插件个人非商用。
 - [GooDAnDReaDY/dsh-cost-meter](https://github.com/GooDAnDReaDY/dsh-cost-meter) — 在 DeepSeek Harness 对话标题栏显示会话费用芯片：实时分桶 Token 用量、高峰/非高峰费率，以及到下次费率切换的倒计时。
 - [GooDAnDReaDY/dsh-key-limits](https://github.com/GooDAnDReaDY/dsh-key-limits) — 在 DSH 界面与设置中显示 API Key 和订阅账户的额度限制。
 - [GooDAnDReaDY/dsh-usage-guard](https://github.com/GooDAnDReaDY/dsh-usage-guard) — 规范化异常的 Token 用量样本，使损坏的会话历史仍可加载。
@@ -3588,6 +3588,7 @@ dsh plugin --profile web add dshmarket
 - [Britneycode/dsh-fish-soul](https://github.com/Britneycode/dsh-fish-soul) — 活在 QQ（经 SnowLuma / OneBot 11）、B站、抖音（抖音通道需一台常开的 Windows 桌面）三端的单角色智能体：人格卡与慢慢长出来的人格、按人隔离的记忆（艾宾浩斯衰减、可纠正、聊完自动记）、虚拟时钟驱动的作息与主动开口；设置面板共十个标签，覆盖检索、人格、自走、记忆检视、三端通道、习惯、模型与用量。QQ 群默认拒绝：只有列进群白名单、或显式打开「所有群」的群才会被回应，且仍需 @ 它；私聊只回 QQ 好友。B站 / 抖音自动回复默认关闭：B站只回主人、白名单与互关，抖音只回主人与白名单（「回所有人」需另行打开）。内置了 dsh-qq-bridge 与 dsh-douyin-bridge 的 MIT 授权代码，源码与 LICENSE 内均有署名；不必与这两个插件同装。
 - [buger-gif/cyber-im-avatar#dsh-plugin](https://github.com/buger-gif/cyber-im-avatar/tree/main/dsh-plugin) — 把「替你值守 IM」做成 DSH 侧边栏的常驻席位：复用本机已登录的飞书/Lark、企业微信、钉钉（需在面板里先启用）CLI 按节奏拉取会话，新消息进来就唤醒你绑定的 DSH 会话，由它读上下文、以你本人的语气起草回复；默认先把草稿给你看，你明确说全自动才直接发出。群要你加进值守名单才开始轮询，且默认只有 @你 的消息唤醒 agent；屏蔽的会话永不拉取，消息正文只留在本机状态文件里，插件不开任何端口。
 - [BuildWithAIHub/dsh-codex-account-switcher](https://github.com/BuildWithAIHub/dsh-codex-account-switcher) — 在 DSH 插件页管理 Codex 子智能体使用的登录账号：保存/切换 auth.json 快照，并显示该账号的 Codex 额度。
+- [bychance6600/dsh-roost](https://github.com/bychance6600/dsh-roost) — 一个由事件流驱动、只能长大不能被设定的人格，而非可配置的角色卡或助手。
 - [CAI-MH/dsh-reply-language](https://github.com/CAI-MH/dsh-reply-language) — 通过系统提示词强制模型全程使用指定语言回复（默认中文简体），可用工具随时切换。
 - [ccl4-56-23-5/DSH-Plugins#top-directive](https://github.com/ccl4-56-23-5/DSH-Plugins/tree/main/最高指令插件/1.1.2) — 通过多行编辑框与开关配置全局系统提示词段，持久保存并保留正文原文。
 - [cheems135/dsh-qq-bridge](https://github.com/cheems135/dsh-qq-bridge) — 把 DeepSeek Harness 接到 QQ（NapCat / OneBot 11）：预设与自定义人设、可分组表情库与联网搜图、edge-tts 或自建 HTTP TTS 语音消息、可切换的查证引擎、定时记忆压缩、号主代发，以及十一页标签的管理面板（实时监听与单轮成本）。
