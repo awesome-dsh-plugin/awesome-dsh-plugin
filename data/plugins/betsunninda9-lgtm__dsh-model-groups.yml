@@ -2,5 +2,5 @@ url: https://github.com/betsunninda9-lgtm/dsh-model-groups
 name: betsunninda9-lgtm/dsh-model-groups
 category: model
 description:
-  en: 'Hierarchical model selection and multi-key configuration in the web UI of DSH 0.2.2-rc.1 (the native app model menu is unchanged); automatically backs up and patches host files on activation, then requires an engine restart.'
-  zh: '适用于 DSH 0.2.2-rc.1 网页界面的分层模型选择与多密钥配置（不改动 App 原生模型菜单）；加载时自动备份并修改宿主文件，随后需重启引擎。'
+  en: 'Hierarchical model selection and collapsible multi-key configuration in the DSH 0.2.2-rc.1 web UI (native app menus unchanged); host patches are explicitly enabled, updated or restored from settings with verified backups and require an engine restart. Ordinary uninstall does not restore patches.'
+  zh: '适用于 DSH 0.2.2-rc.1 网页界面的分层模型选择与可折叠多密钥配置（不改 App 原生菜单）；在设置页手动启用、更新或还原宿主补丁，校验备份后需重启引擎。普通卸载不会还原补丁。'
