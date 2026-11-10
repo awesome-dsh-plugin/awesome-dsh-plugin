@@ -1,0 +1,7 @@
+url: https://github.com/kuangdang123/dsh-zotero
+name: kuangdang123/dsh-zotero
+category: tools
+description:
+  en: 'Zotero bridge: search, read, add, update and trash items in a local Zotero library, read PDF annotations and notes, pull indexed full text, and find related papers by DOI.'
+  zh: 'Zotero 直连：检索、新增、修改、回收本机条目，读 PDF 高亮批注与笔记，取已索引全文，按 DOI 找相关论文。'
+icon: https://raw.githubusercontent.com/kuangdang123/dsh-zotero/main/icon.png
