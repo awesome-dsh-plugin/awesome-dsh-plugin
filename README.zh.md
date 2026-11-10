@@ -5973,7 +5973,7 @@ dsh plugin --profile web add dshmarket
 - [xsnnnnnn/dsh-coros](https://github.com/xsnnnnnn/dsh-coros) — 把高驰（COROS）官方 MCP 服务接入 DeepSeek Harness：自包含的本机 stdio↔HTTP 桥 + 本机 OAuth 登录，在当前端点上提供 34 个工具，覆盖睡眠、HRV、静息心率、恢复、训练负荷、活动与 FIT 文件，以及训练课程与训练计划的增删改查和排期。
 - [xtt-xt/dsh-custom-tool-studio](https://github.com/xtt-xt/dsh-custom-tool-studio) — 用 Python 在网页、对话或 dsh-go 手机 App 的原生面板里编写自定义工具，保存后免重启注册成 DSH 工具；危险工具每次执行都走内置审批，工具可分组成包，还可选「解锁模式」按对话逐步放出。需 PATH 中有 Python 3。
 - [xuanyuanchumo/dsh-kaogong](https://github.com/xuanyuanchumo/dsh-kaogong) — 离线公务员备考学习面板，整合 15 个上游开源题库，提供 SRS 错题本、整卷模考、申论离线评改、可交互知识图谱与白盒可观测。npm 包不含题库数据：安装后需在题库管理里克隆必选包（约 363 MB，15 个上游仓库全量约 2.2 GB）。
-- [xuedipiaofei/dsh-drawio-chat](https://github.com/xuedipiaofei/dsh-drawio-chat) — 聊天内联的 draw.io 图表：模型创建、读取和修改原生 .drawio 文件，聊天里直接渲染可交互的 draw.io 视图，图保存在工作区 diagrams/ 目录。不登录 draw.io、不需要 npx MCP server、不用装本地编辑器。
+- [xuedipiaofei/dsh-drawio-chat](https://github.com/xuedipiaofei/dsh-drawio-chat) — 聊天里画 draw.io：说一句需求，对话里直接出可交互图表；内置 12 个中文场景模板；可继续改图、撤销同一个 .drawio 文件；右侧栏预览不再是 XML。不登录 draw.io、不需要 MCP server、不用装编辑器。
 - [xuezuoys/dsh-blender-mcp-bridge](https://github.com/XuezuoYS/dsh-blender-mcp-bridge) — 此项目旨在桥接 Blender MCP Add-on，使 DSH 上的模型可便捷对接接入当前用户工作的 Blender 以辅助创作，且满足基础安全需要。
 - [XuRui2022/dsh-paper-manager](https://github.com/XuRui2022/dsh-paper-manager) — 面向学生与研究者的论文阅读与引用管理器：左侧栏论文库、原样 PDF 阅读器、六种引用格式、Word 文末参考文献，以及 AI 翻译/概括/思维导图/术语。基于 jypjypjypjyp/dsh-paper-reader（现名 dsh-vibe-reading，MIT）扩展，默认共用 `~/.paper_reading` 工作目录——不要与上游同装。需先安装 dsh-better-sidebar 插件。
 - [xuxue04403/dsh-tool-gate](https://github.com/xuxue04403/dsh-tool-gate) — 按项目控制工具可见性：每一步装配前，会话从工作目录向上最多 32 层查找 `.dsh/tool-gate.json`，据此裁剪交给模型的工具集 —— 支持 allow / deny 名单与 `prefix*` 通配，找不到规则文件时为 off；另有 `tool_gate_status` 工具报告当前模式、规则文件来源与被隐藏的工具。
