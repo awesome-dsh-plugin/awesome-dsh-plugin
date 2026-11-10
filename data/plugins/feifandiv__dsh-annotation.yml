@@ -1,0 +1,6 @@
+url: https://github.com/feifandiv/dsh-annotation
+name: feifandiv/dsh-annotation
+category: ui
+description:
+  en: Inline annotations for DeepSeek Harness replies and sidebar documents, with a composer card and a right-sidebar list.
+  zh: 给 DeepSeek Harness 的回复和侧边栏文档加划词标注，聚合成输入框卡片并一键发给 AI，右侧边栏可查看列表。

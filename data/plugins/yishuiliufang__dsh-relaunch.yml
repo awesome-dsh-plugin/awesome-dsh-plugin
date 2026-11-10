@@ -1,0 +1,6 @@
+url: https://github.com/yishuiliufang/dsh-relaunch
+name: yishuiliufang/dsh-relaunch
+category: dev
+description:
+  en: 'Restart button for the Harness desktop app: one sidebar entry that closes every Harness process and starts the application again, launched without a console window and without a close-confirmation dialog. Windows only.'
+  zh: 'DSH 桌面应用重启按钮：侧栏一个入口，关闭全部 Harness 进程后重新启动应用；启动过程无控制台窗口、无关闭确认框。仅支持 Windows。'

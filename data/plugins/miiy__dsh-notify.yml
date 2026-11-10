@@ -1,0 +1,7 @@
+url: https://github.com/miiy/dsh-notify
+name: miiy/dsh-notify
+category: notify
+description:
+  en: 'Cross-device notifications for DeepSeek Harness. While a long task runs unattended, a finished turn, a pending approval or a question reaches you through the enabled channels: desktop toast, browser tab, ntfy push or Feishu bot.'
+  zh: 'DeepSeek Harness 的跨设备通知插件。执行长任务期间无需值守：任务结束、等待审批或等待回答时，通过已启用的渠道发出提醒，可选桌面通知、浏览器标签页、ntfy 推送或飞书机器人。'
+icon: https://raw.githubusercontent.com/miiy/dsh-notify/main/icon-180.png

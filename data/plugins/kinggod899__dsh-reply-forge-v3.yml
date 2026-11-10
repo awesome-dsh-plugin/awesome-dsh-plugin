@@ -4,4 +4,4 @@ category: session
 description:
   en: Edits assistant replies and thinking chains in DSH sessions so the model sees the edited text, live via message projection or on disk.
   zh: 编辑 DSH 会话中的助手回复与思维链，让模型采信改后的内容：在线经 message projection 立即生效，或落盘改写会话记录。
-tarball: https://github.com/kinggod899/dsh-reply-forge-v3/releases/download/v3.2.0/dsh-reply-forge-3.2.0.tgz
+tarball: https://github.com/kinggod899/dsh-reply-forge-v3/releases/download/v3.4.1/dsh-reply-forge-3.4.1.tgz

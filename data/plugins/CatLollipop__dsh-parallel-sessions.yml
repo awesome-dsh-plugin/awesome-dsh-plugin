@@ -1,0 +1,7 @@
+url: https://github.com/CatLollipop/dsh-parallel-sessions
+name: CatLollipop/dsh-parallel-sessions
+category: session
+description:
+  en: Cross-session coordination for DeepSeek Harness that lists parallel sessions, relays messages with sender attribution between them, and pauses or resumes a session when task phases conflict.
+  zh: DeepSeek Harness 并行会话协调：列出并行会话、在会话之间转发带发起方归属的消息，并在任务阶段冲突时暂停或恢复另一个会话。
+icon: https://raw.githubusercontent.com/CatLollipop/dsh-parallel-sessions/main/assets/icon-180.png

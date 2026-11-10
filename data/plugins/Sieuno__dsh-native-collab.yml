@@ -1,0 +1,6 @@
+url: https://github.com/Sieuno/dsh-native-collab
+name: Sieuno/dsh-native-collab
+category: workflow
+description:
+  en: 'Enhances native DSH subagents and teams with persistent subagents, improved subagent messaging, and per-member model selection for teams. Adds no extra tools or context beyond the native features.'
+  zh: 'DSH原生子代理和团队增强。提供持久子代理功能，及子代理消息增强。额外支持指定团队成员模型。与原生功能相比，无附加工具及上下文。'

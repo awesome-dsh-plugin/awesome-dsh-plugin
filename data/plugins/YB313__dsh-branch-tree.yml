@@ -1,0 +1,6 @@
+url: https://github.com/YB313/dsh-branch-tree
+name: YB313/dsh-branch-tree
+category: session
+description:
+  en: 'Turns a session into a folder in the left sidebar: fork it into an independent branch — full copy, a compressed digest of its memory, or only the opening request — and browse the branches as a tree.'
+  zh: '把会话变成左侧栏里的文件夹：可分叉出独立分支（完整复制 / 压缩记忆 / 只继承开头），并以树状浏览。'

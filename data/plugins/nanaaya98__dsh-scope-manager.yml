@@ -1,0 +1,6 @@
+url: https://github.com/nanaaya98/dsh-scope-manager
+name: nanaaya98/dsh-scope-manager
+category: ui
+description:
+  en: 'Scope manager for DeepSeek Harness: binds presets, persona cards, tools, skills and MCP connections to global / workspace / session layers, with a sidebar.'
+  zh: 'DeepSeek Harness 的作用域管家：把预设、角色卡、工具、技能与 MCP 连接按「全局 / 工作区 / 会话」三层作用域绑定，带侧边栏。'

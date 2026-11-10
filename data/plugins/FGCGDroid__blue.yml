@@ -1,0 +1,6 @@
+url: https://github.com/FGCGDroid/blue
+name: FGCGDroid/blue
+category: security
+description:
+  en: 'Blue-team defense mode for CTF and incident response: 30 defensive tools, six worker roles, SQLite findings and tasks, and a standalone console with full view.'
+  zh: 'CTF 网络攻防蓝队防御模式：30 个防御工具、六个执行角色、SQLite 事实库与任务队列，以及带全面浏览的独立控制台。'

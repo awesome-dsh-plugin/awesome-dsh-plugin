@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-artifact-linker
+name: loyalchiiina/dsh-artifact-linker
+category: ui
+description:
+  en: 'Adds a resident system-prompt rule asking the assistant to report every file it produces as a full absolute path (a soft rule, not enforced), and replaces the official context menu on a file link with eight actions: open in the sidebar, open in a floating window, open with the default app, reveal in Explorer, save a copy elsewhere, copy the file, copy its path, and add it to the chat box, so a result reaches a friend in one click (copy-file and save-as are Windows only). Adapts DSH kernel 0.2.2-rc.1.'
+  zh: '常驻系统提示词规则，要求助手为每个产物给出完整绝对路径（软约束，不保证），并把文件链接上的官方右键菜单替换成八项：在侧边栏打开、在悬浮窗打开、用默认程序打开、在资源管理器中定位、另存为到指定位置、复制文件、复制文件路径、添加到对话框，产物一键分享给好友（复制文件与另存为仅 Windows）。适配 DSH 内核 0.2.2-rc.1。'

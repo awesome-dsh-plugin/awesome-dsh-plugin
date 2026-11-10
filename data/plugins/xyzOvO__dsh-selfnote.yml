@@ -1,0 +1,7 @@
+url: https://github.com/xyzOvO/dsh-selfnote
+name: xyzOvO/dsh-selfnote
+category: memory
+tarball: https://github.com/xyzOvO/dsh-selfnote/releases/download/v0.11.1/dsh-selfnote-0.11.1.tgz
+description:
+  en: 'Self-narrative memory in five budgeted segments (800 chars, not a full context): a first-person note the model writes to itself, a profile of you aggregated from approved facts, environment facts kept separate from who you are, heat-ranked conclusions, and habits. Every injected fact is traceable to a fact id and can be retired; the profile can be edited by hand, and self-notes stay plain lines you can clear. Facts fade by use and time without ever changing their credibility. Preference-like lines you say are auto-detected as candidates (never auto-approved), with conflicts kept side by side. Recall over past conversations with citations, an incremental index that only decodes newly appended frames, a pointer-required warm layer, a doctor that says which part is broken, a heartbeat proving injection is alive, and export/import so the whole thing moves to another machine.'
+  zh: '五段预算制的自我叙述记忆（共 800 字，不是整段上下文）：模型写给自己看的第一人称自述、从已采纳记忆聚合的「关于你」画像、与本机环境事实分开的画像、按热度排序的结论、以及习惯。每条注入的事实都能回溯到具体事实 id，可一键退役；画像可手改覆盖，自述则是可清空的纯文本行。事实按使用与时间衰减，但可信度不随时间变。你说过的长期要求会被自动识别成候选（永不自动采纳），互相冲突的两条并排留着。另外带出处的历史检索、只解新增帧的增量索引、必须有指针的温层摘要、能说清哪里坏了的体检，证明注入还活着的心跳，以及能整体搬到另一台机器的导出/导入。'

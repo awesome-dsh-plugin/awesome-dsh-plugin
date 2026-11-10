@@ -1,0 +1,7 @@
+url: https://github.com/vaniawang/dsh-trigger-hub
+name: vaniawang/dsh-trigger-hub
+category: workflow
+tarball: https://github.com/vaniawang/dsh-trigger-hub/releases/download/v0.2.1/dsh-trigger-hub-0.2.1.tgz
+description:
+  en: "Event-source plugin for DeepSeek Harness: cron, webhook, file watch, and deterministic procedures, with a ledger, console, and concurrency limits."
+  zh: "DeepSeek Harness 的事件源插件：cron、webhook、文件监听与确定性 procedure，带账本、控制台和并发上限。"

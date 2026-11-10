@@ -1,0 +1,6 @@
+url: https://github.com/TABmk/dsh-theme-ascetic
+name: TABmk/dsh-theme-ascetic
+category: theme
+description:
+  en: 'Compact ASCII / terminal skin for DeepSeek Harness: 19 palettes with a picker in the status line, 3 UI densities, a vim-style status line, ascii.rest art on empty sessions and a retro boot intro with custom logo text.'
+  zh: '紧凑的 ASCII / 终端风格皮肤：19 套配色（可在状态栏切换）、3 档界面密度、vim 风格状态栏、空会话中的 ascii.rest 字符画，以及可自定义 Logo 文字的复古开机动画。'

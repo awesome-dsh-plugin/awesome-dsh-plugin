@@ -3,5 +3,5 @@ name: HUANGjiale123-bit/dsh-desktop-control#dsh-desktop-control
 category: tools
 tarball: https://github.com/HUANGjiale123-bit/dsh-desktop-control/releases/latest/download/dsh-desktop-control.tgz
 description:
-  en: 'Windows desktop observation and control: accessibility tree, screenshots, OCR fallback, mouse and keyboard, with session-scoped approvals and an ESC halt gate.'
-  zh: Windows 桌面观察与操作：无障碍树、截图、OCR 兜底、鼠标键盘，带会话级授权与 ESC 急停。
+  en: 'Windows desktop observation and control: accessibility tree, screenshots, OCR fallback, mouse and keyboard, with session-scoped approvals and an ESC halt gate. Computer use and desktop automation for DSH, including GUI automation fallbacks.'
+  zh: Windows 桌面观察与操作：无障碍树、截图、OCR 兜底、鼠标键盘，带会话级授权与 ESC 急停；适用于电脑操作、桌面自动化与 GUI 自动化场景。

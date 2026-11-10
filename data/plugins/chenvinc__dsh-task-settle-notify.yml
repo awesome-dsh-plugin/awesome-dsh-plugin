@@ -1,0 +1,7 @@
+url: https://github.com/chenvinc/dsh-task-settle-notify
+name: chenvinc/dsh-task-settle-notify
+category: notify
+icon: https://raw.githubusercontent.com/chenvinc/dsh-task-settle-notify/main/docs/assets/icon-512.png
+description:
+  en: Notifies the DSH session that started a task-board card when that card settles, queueing the title, outcome, duration and next step into it; successes merge inside a configurable window (30 seconds by default) and failures are sent at once. A card that stops to ask is relayed to the same session, which answers through a tool.
+  zh: 任务看板卡片结算后，把标题、成败、耗时与下一步排队送进发起该卡的那个 DSH 会话；成功卡按可配置窗口合并（默认 30 秒），失败卡立即发送。卡片执行中提问时，问题也送回同一个会话，再由它把回答交回卡片。

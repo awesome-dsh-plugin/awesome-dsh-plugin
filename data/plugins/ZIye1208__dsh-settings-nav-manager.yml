@@ -1,0 +1,6 @@
+url: https://github.com/ZIye1208/dsh-settings-nav-manager
+name: ZIye1208/dsh-settings-nav-manager
+category: ui
+description:
+  en: "Adds edit mode to the DSH settings nav for drag-reordering, per-section show/hide and named collapsible drawer grouping saved in the plugin's own settings namespace, plus pinning up to five sections to the main sidebar for one-click access."
+  zh: "为 DSH 设置页导航加编辑模式：拖拽排序、逐个显隐、用命名可折叠抽屉分组，排版存在插件自己的设置命名空间；还能把最多 5 个分区钉到主界面侧栏，一键直达。"

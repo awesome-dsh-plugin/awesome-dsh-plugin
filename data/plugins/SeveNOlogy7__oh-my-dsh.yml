@@ -1,0 +1,6 @@
+url: https://github.com/SeveNOlogy7/oh-my-dsh
+name: SeveNOlogy7/oh-my-dsh
+category: workflow
+description:
+  en: Agent orchestration for DeepSeek Harness with eleven selectable presets, planning, delegation, review gates and durable project state.
+  zh: 面向 DeepSeek Harness 的智能体编排插件：11 个可选 preset、规划、委派、评审门与 .omd 持久状态。

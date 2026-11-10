@@ -1,0 +1,6 @@
+url: https://github.com/Tsechiyuan/dsh-session-manager
+name: Tsechiyuan/dsh-session-manager
+category: session
+description:
+  en: 'Session manager and session settings for the DSH sidebar: sessions grouped by workspace with archive filters, title search, batch archive and a read-only transcript preview; global and per-workspace name, occupation and instructions injected into the system prompt; optional recent-only and hide-workspace filters for the sidebar.'
+  zh: 'DSH 侧栏的会话管理与会话设定：按工作区浏览会话，支持归档筛选、标题搜索、批量归档与只读预览；全局/工作区两级的称呼、职业与长期指令可注入系统提示；另有「只显示最近工作区」「隐藏工作区」两种侧栏过滤。'

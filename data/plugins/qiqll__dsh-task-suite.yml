@@ -1,0 +1,7 @@
+url: https://github.com/qiqll/dsh-task-suite
+name: qiqll/dsh-task-suite
+category: workflow
+description:
+  en: 'File-based task pool and dispatcher for DeepSeek Harness: keeps a P0-P3 backlog as Markdown, hands one task at a time to a background subagent, gates delivery by rerunning the project test command, and accepts the result against a git commit or a file snapshot; git and non-git directories both work.'
+  zh: 'DeepSeek Harness 的文件制任务池与调度器：用 Markdown 维护 P0–P3 待办，每次只把一个任务交给后台 subagent，重跑项目测试命令做机器验收，并按 git 提交或文件快照核对结果；git 与非 git 目录都能用。'
+icon: https://raw.githubusercontent.com/qiqll/dsh-task-suite/main/assets/icon-512.png

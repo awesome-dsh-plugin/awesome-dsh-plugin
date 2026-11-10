@@ -1,0 +1,7 @@
+url: https://github.com/abbaababa/dsh-workplan
+name: abbaababa/dsh-workplan
+category: workflow
+tarball: "https://github.com/abbaababa/dsh-workplan/releases/download/v2.2.6/dsh-workplan-2.2.6.tgz"
+description:
+  en: 'Durable task-decomposition plans for DeepSeek Harness with a self-learning loop: every department subtask runs in three ordered phases (plan, execute, verify), the verify phase must submit a retrospective of problems, detours and resolutions, and that retrospective is written to a permanent lessons file, ranked against the new subtask and injected into later dispatches so the same mistake is not repeated. Adds a read-only dsh_workplan_lessons tool (11 model tools in total), a progress panel drawn as a ring, a stacked bar and per-stage steps, and a public ISO/IEC 15408:2026 security self-assessment with zero runtime dependencies.'
+  zh: '为 DeepSeek Harness 提供持久化任务分解计划，并加入自我学习闭环：每个部门子任务按「计划→执行→验证」三阶段推进，验证阶段必须提交问题、弯路与解决方式的复盘，写入永久教训记忆文件，下次派发时按部门与关键词排序注入，避免重犯。新增只读 dsh_workplan_lessons 工具（共 11 个模型工具）、环形图/四段构成条/逐阶段步进条进度面板，以及按 ISO/IEC 15408:2026 结构编写的公开安全自评估——每条声明都可被读者核对，零运行时依赖。'

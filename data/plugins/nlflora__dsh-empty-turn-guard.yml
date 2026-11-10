@@ -1,0 +1,6 @@
+url: https://github.com/nlflora/dsh-empty-turn-guard
+name: nlflora/dsh-empty-turn-guard
+category: agi
+description:
+  en: Recovers a DeepSeek Harness turn that ended with reasoning only, with no text and no tool call, by steering the same turn one more step. Structure-only detection, so it costs no extra model call.
+  zh: 识别「整轮只有思考、既无正文也无工具调用」的空回合，让同一轮再走一步；纯结构判定，不额外调用模型。

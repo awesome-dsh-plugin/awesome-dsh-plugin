@@ -1,0 +1,7 @@
+url: https://github.com/zhenyu-24/dsh-workspace-manager
+name: zhenyu-24/dsh-workspace-manager
+category: session
+tarball: https://github.com/zhenyu-24/dsh-workspace-manager/releases/download/v1.2.0/zhenyu-24-dsh-workspace-manager-1.2.0.tgz
+description:
+  en: 'Workspace manager in the sidebar: a workspace-to-session tree table with name and path search, column sorting, unarchived-session counts, batch archive, session and workspace rename, workspace removal that keeps files and logs, and extra source folders per workspace passed to the agent as context without granting file access; the same operations are exposed as a workspace_manager tool.'
+  zh: '侧栏工作区管理：工作区→会话树形表格，支持按名称与路径搜索、按列排序、未归档会话计数、批量归档、会话与工作区重命名、移除工作区（保留文件与会话日志），并可为每个工作区添加额外源文件夹——作为上下文提供给 AI，不授予文件访问权限；同一套操作也以 workspace_manager 工具暴露。'

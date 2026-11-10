@@ -1,0 +1,6 @@
+url: https://github.com/ALittleLov/dsh-soundcheck
+name: ALittleLov/dsh-soundcheck
+category: voice
+description:
+  en: Turns a local audio file into a short plain-language verdict on tempo, key, dynamics, clipping and arrangement shape, and keeps the raw measurements in a separate block; audio never leaves the machine.
+  zh: 把本地音频拆成速度、调性、动态、削波与编曲形状，合成一段人话结论，原始测量值另列；音频不出本机。

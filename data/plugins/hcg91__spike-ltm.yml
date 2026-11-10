@@ -1,0 +1,6 @@
+url: https://github.com/hcg91/spike-ltm
+name: hcg91/spike-ltm
+category: memory
+description:
+  en: Local long-term memory for DeepSeek Harness with SQLite storage, automatic extraction, semantic recall, corrections, reliable forgetting, and an in-app summary dialog.
+  zh: DeepSeek Harness 的本地长期记忆：SQLite 存储、自动提炼、语义召回、纠错、可靠遗忘，以及内置记忆摘要弹窗。

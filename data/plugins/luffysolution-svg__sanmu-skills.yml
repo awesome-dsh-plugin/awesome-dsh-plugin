@@ -1,0 +1,8 @@
+url: https://github.com/luffysolution-svg/sanmu-skills
+name: luffysolution-svg/sanmu-skills
+category: tools
+description:
+  en: "Research Agent skills, literature search with citation tracking, document-to-markdown knowledge base builder, and in-depth reading with browser workbench for DeepSeek Harness."
+  zh: "三木科研 Agent Skills 合集：多源学术检索与原位引文追溯、LaTeX/KaTeX 高精度文档解析转 Obsidian 知识库、证据链精读与完整科研工作台。"
+icon: https://raw.githubusercontent.com/luffysolution-svg/sanmu-skills/main/assets/icon.png
+tarball: https://github.com/luffysolution-svg/sanmu-skills/releases/download/v1.10.3/sanmu-skills-1.10.3.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/lg6169219/dsh-fatfish-level
+name: lg6169219/dsh-fatfish-level
+category: fun
+description:
+  en: Adds a token-burn leveling widget to DSH with 14 DeepSeek-whale levels, daily quests, streaks and achievements.
+  zh: '按累计 token 消耗给右下角大肥鱼升级的 DSH 挂件：14 级 DeepSeek 鲸鱼图标、今日任务、连击与成就。'
+icon: https://raw.githubusercontent.com/lg6169219/dsh-fatfish-level/main/assets/icon-180.png

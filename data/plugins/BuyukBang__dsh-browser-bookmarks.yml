@@ -1,0 +1,7 @@
+url: https://github.com/BuyukBang/dsh-browser-bookmarks
+name: BuyukBang/dsh-browser-bookmarks
+category: browser
+description:
+  en: 'Bookmark manager for the sidebar browser: toolbar star button, dropdown list with one-click navigation, inline editing and reordering.'
+  zh: '侧边栏浏览器的书签管理器：工具栏星标按钮，下拉列表一键打开书签，支持就地编辑与排序。'
+icon: https://raw.githubusercontent.com/BuyukBang/dsh-browser-bookmarks/main/assets/icon-180.png

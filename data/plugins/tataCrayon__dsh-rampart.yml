@@ -1,0 +1,11 @@
+# 投稿存底：提交到 awesome-dsh-plugin/awesome-dsh-plugin 的 data/plugins/tataCrayon__dsh-rampart.yml，完整理由见 PUBLISHING.md §4。
+# tarball 必需：npm 把 github:owner/repo 解析成 ssh://git@github.com/...，没配 SSH 密钥的人会 Permission denied (publickey)。
+# 描述逐字对着代码核过：gradeOf() 只读四个内存阈值，CPU 全仓无阈值配置，写成「按内存/CPU 分级」就是夸大、会被打回。
+url: https://github.com/tataCrayon/dsh-rampart
+name: tataCrayon/dsh-rampart
+category: dev
+tarball: https://github.com/tataCrayon/dsh-rampart/releases/download/v0.2.0/dsh-rampart.tgz
+description:
+  en: 'Grades free physical and commit memory and refuses heavy tools (shell, workflow, subagent) before the machine thrashes. Also shows in the composer how much of the machine dsh itself is using, including whole-machine CPU.'
+  zh: '按可用物理内存与提交内存分级，到线就拦重活（shell、workflow、subagent）。并在输入框旁显示 DSH 自己占用了整机多少资源，含整机 CPU 占比。'
+icon: https://raw.githubusercontent.com/tataCrayon/dsh-rampart/master/assets/icon-180.png

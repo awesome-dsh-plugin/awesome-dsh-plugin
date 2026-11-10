@@ -1,0 +1,7 @@
+url: https://github.com/hangdingding/breezetts-dsh
+name: hangdingding/breezetts-dsh
+category: voice
+description:
+  en: "Breeze TTS for DeepSeek Harness: read replies aloud in full or as a short summary, one-click Breeze CLI login with automatic key import, voice search and design, smart companionship, and lunch/dinner reminders."
+  zh: "DeepSeek Harness 的 Breeze 语音插件：可按全文或概要朗读回复，一键登录 Breeze CLI 并自动导入 Key，支持音色搜索与设计、智能陪伴，以及午饭/晚饭提醒。"
+icon: https://raw.githubusercontent.com/hangdingding/breezetts-dsh/main/icon.png

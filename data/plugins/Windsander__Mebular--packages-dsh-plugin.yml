@@ -1,0 +1,7 @@
+url: https://github.com/Windsander/Mebular/tree/main/packages/dsh-plugin
+name: Windsander/Mebular#packages/dsh-plugin
+category: memory
+icon: https://raw.githubusercontent.com/Windsander/Mebular/main/packages/dsh-plugin/assets/icon-180.png
+description:
+  en: "🌌 Mebular · shared memory and task collaboration for agents. Through a DSH-native plugin, it provides cross-device, cross-agent memory sharing and task-graph capabilities — so physical devices are no longer the boundary of your agents. Secure, controllable, and decentralized! The plugin attaches to an existing Mebular app or CLI runtime; when none exists, the panel installs the shared runtime on demand, and it never starts or downloads Mebular silently."
+  zh: "🌌 Mebular 忆云 · 智能体共享记忆与任务协作。通过 DSH 原生插件接入，提供跨设备、跨 Agent 记忆共享与任务图功能，让物理设备不再是你智能体的边界，安全、可控、去中心化！插件连接已有的 Mebular App/CLI 运行时；没有时可在面板里按提示安装共享运行时，不会静默启动或下载 Mebular。"

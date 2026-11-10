@@ -1,0 +1,7 @@
+url: https://github.com/AAAjzx111/dsh-theme-jing-chiyang
+name: AAAjzx111/dsh-theme-jing-chiyang
+category: theme
+description:
+  en: 'Honor of Kings inspired theme for DeepSeek Harness. Each launch starts with an about 5 second mirror-break opening: the key art appears as a glass pane, cracks outward from the impact point, bursts into 56 shards with gold edges, depth and spin, hangs still, then rotates back together before a golden flash reveals the picture, the sun halo and the light beams. The key art is also inlined as the window backdrop and the texture of both main panels over an ink night sky with a molten sun, frosted mirror shards and drifting embers; the mirror emblem at the bottom left switches motion between full, calm and off, and colours come from overridden design tokens so panels, bubbles, menus and code blocks follow the theme.'
+  zh: '王者荣耀「镜 · 炽阳神光」主题。每次启动先播一段约 5 秒的镜面破碎开场：原图先作为一面玻璃浮出，从撞击点向外裂开，炸成 56 片带金边、各有景深与自转的碎片，短暂悬停后逆向旋转重组，金色闪光推开镜面，日轮光环与光束随之展开。主视觉同时内联为整窗底图与两个主面板的肌理，底子是墨色夜空、熔金日轮与光冕、磨砂镜片与漂浮金烬；左下角「镜」徽记可在 神光 / 静谧 / 关闭 三档动效间切换，配色通过覆写设计令牌实现，面板、气泡、菜单与代码块一并跟随。'
+icon: https://raw.githubusercontent.com/AAAjzx111/dsh-theme-jing-chiyang/main/icon-256.png

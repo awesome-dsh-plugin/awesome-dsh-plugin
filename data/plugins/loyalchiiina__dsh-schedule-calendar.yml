@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-schedule-calendar
+name: loyalchiiina/dsh-schedule-calendar
+category: ui
+description:
+  en: 'Sidebar schedule assistant for dsh-better-sidebar (required: the tab registers through it; DSH 0.2.2+): today plan, calendar, to-dos, weather, an almanac and horoscope block you can switch off, a daily check-in, and automatic daily and weekly reports built from what you actually finished. It can also watch a QQ mailbox over IMAP. Adapts DSH kernel 0.2.2-rc.1.'
+  zh: '给 dsh-better-sidebar 用的侧边栏日程助手（必须先装该插件；需 DSH 0.2.2+）：今日安排、日历、待办、天气，可开关的黄历与星座运势，每日签到攒运气，并按实际完成情况自动生成日报与周报。另可通过 IMAP 监控 QQ 邮箱。适配 DSH 内核 0.2.2-rc.1。'

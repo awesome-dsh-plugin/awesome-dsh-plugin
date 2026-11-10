@@ -2,5 +2,5 @@ url: https://github.com/SiriLee/dsh-rewind
 name: SiriLee/dsh-rewind
 category: session
 description:
-  en: 'In-place conversation rewind in the same session window without forking (Claude Code /rewind semantics): a per-message ↶ button cuts the model context back to any user message, with an optional Claude-Code-style file restore from disk-persisted before-backups.'
-  zh: '同一会话窗口内的 in-place 对话回退（不 fork，Claude Code /rewind 语义）：每条消息的 ↶ 按钮把模型上下文回退到任意用户消息，可选用磁盘持久化的 before-backups 还原工作区文件。'
+  en: 'Conversation rewind: one click back to any earlier user message, in the same window — no new branch, no leftover copy; the target message is refilled into the composer, with optional workspace-file restore — the full Claude Code /rewind semantics.'
+  zh: 对话回退：一键回到任意更早的用户消息，同窗口内完成，不新建分支、不残留副本；目标消息自动填回输入框，可一并还原工作区文件——即完整的 Claude Code /rewind 语义。

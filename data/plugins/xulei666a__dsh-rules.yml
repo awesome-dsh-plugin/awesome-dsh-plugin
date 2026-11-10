@@ -1,0 +1,7 @@
+url: https://github.com/xulei666a/dsh-rules
+name: xulei666a/dsh-rules
+category: memory
+icon: https://raw.githubusercontent.com/xulei666a/dsh-rules/main/docs/icon.png
+description:
+  en: 'Unified rules/guidelines layer for DeepSeek Harness. Keeps every agent guideline in one local rule library with default (always-on) vs local (task-domain) coverage, syncs the effective set into the AGENTS.md managed section, and adds semantic routing, a classification tree, a management page / right-sidebar panel, an in-panel assistant that can collect existing guidelines, calibrate pending rules, re-classify them, and report an issue ledger grouped by owner, rule copies (right-click move/copy, folder copy, jump to origin), decision points with branch conflicts, and per-session branch choice.'
+  zh: 'DSH 统一准则/规则层：把 agent 的所有准则收进一份本地规则库，区分默认（常驻）与局部（按任务域）适用面，把生效规则同步进 AGENTS.md 托管段；并提供语义路由、分类树、管理页/右栏面板、面板内助手（读取规则、校准待复核、个性化分类、按归属汇报问题台账），以及规则副本（右键移动/复制、文件夹整体复制、跳转原规则）、决策点与分支冲突、本对话选择分支。'

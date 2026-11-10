@@ -1,0 +1,7 @@
+url: https://github.com/xueyufu/dsh-sidebar-groups
+name: xueyufu/dsh-sidebar-groups
+category: ui
+description:
+  en: 'A sidebar plugin wall with local automatic grouping, drag-and-drop organization, search, and configurable compact footer components. Replaces the built-in sidebar.'
+  zh: '提供本地自动分组、拖动整理、搜索与可配置紧凑底部组件的侧栏插件墙。会替换内置侧栏。'
+tarball: https://github.com/xueyufu/dsh-sidebar-groups/releases/download/v2.4.1/local-sidebar-groups-2.4.1.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/William20100221/dsh-context-graph
+name: William20100221/dsh-context-graph
+category: memory
+description:
+  en: 'Indexes each chat of a workspace into a small topic graph every 4 turns (one model call, verbatim source kept under .context-graph/), appends up to 5 matching topics from the other chats to each message, searching a named day such as "yesterday" first, and adds a recall tool that returns the original text by topic, chat, day or turn. On and shared by default; /context-graph off and unshare opt a chat out, and stats, build, map and find inspect it.'
+  zh: '每 4 轮把工作区里的每个对话索引成小型主题图谱（一次模型调用，原文保存在 .context-graph/），在每条消息末尾附上其他对话中最多 5 个匹配主题，提到“昨天”等时间时先搜那一天，并提供 recall 工具按主题、对话、日期或轮次取回原文。默认开启并共享；/context-graph off 与 unshare 可让某个对话退出，stats、build、map、find 用于查看。'

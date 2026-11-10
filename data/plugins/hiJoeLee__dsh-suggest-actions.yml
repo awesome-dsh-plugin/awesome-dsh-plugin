@@ -2,5 +2,5 @@ url: https://github.com/hiJoeLee/dsh-suggest-actions
 name: hiJoeLee/dsh-suggest-actions
 category: ui
 description:
-  en: Clickable next-step suggestions under every reply; one click sends that sentence as your message.
-  zh: 在每条回复下方给出可点的下一步建议，点一下就把那句话作为你的消息发出去。
+  en: 'Up to 5 clickable next steps under every reply: click one to send it, or fill it into the composer and edit first. The suggestions come from the main model as it closes the turn — no extra model call.'
+  zh: 每条回复末尾最多 5 条可点的下一步：点一条直接发出，或填入输入框改完再发。建议由本轮主模型在收尾时给出，不额外调用模型。

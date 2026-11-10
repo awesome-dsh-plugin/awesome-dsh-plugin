@@ -1,0 +1,7 @@
+url: https://github.com/WangZW928/Career-PPTagent
+name: WangZW928/Career-PPTagent
+category: skill
+description:
+  en: 'Editable PowerPoint authoring workflow (a DSH-skill adaptation of icip-cas/PPTAgent) with concise Chinese business styling, HTML slide rendering and PPTX export review. Linux/WSL or macOS (Apple Silicon only); install LibreOffice, Chinese fonts, Node.js 22+ and uv first, then run the one-time setup, which creates a uv-managed Python 3.12 environment and installs Playwright Chromium.'
+  zh: '可编辑 PowerPoint 制作工作流（基于 icip-cas/PPTAgent 的 Skill 版本改造），包含简洁中文商业风格、HTML 幻灯片渲染与 PPTX 导出复查。仅 Linux/WSL 或 macOS（仅 Apple Silicon）；首次使用需先装 LibreOffice、中文字体、Node.js 22+ 与 uv，再执行一次 setup——它会用 uv 建 Python 3.12 环境并安装 Playwright Chromium。'
+tarball: https://github.com/WangZW928/Career-PPTagent/releases/download/v0.1.0/dsh-career-pptagent-0.1.0.tgz

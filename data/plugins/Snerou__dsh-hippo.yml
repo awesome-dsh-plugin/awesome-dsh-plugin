@@ -1,0 +1,6 @@
+url: https://github.com/Snerou/dsh-hippo
+name: Snerou/dsh-hippo
+category: memory
+description:
+  en: 'Hippocampus: renders workspace files, DSH memories and past sessions as a rotatable neuron graph in the sidebar, with Chinese-friendly labels and automatic re-indexing on every start.'
+  zh: '海马体：把工作区文件、DSH 记忆和历史会话画成一张可旋转的神经元网络，挂在侧栏随时翻；条目名自动整理成中文短句，每次启动自动重新索引。'

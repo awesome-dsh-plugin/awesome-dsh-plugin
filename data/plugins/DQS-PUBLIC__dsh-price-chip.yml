@@ -1,0 +1,6 @@
+url: https://github.com/DQS-PUBLIC/dsh-price-chip
+name: DQS-PUBLIC/dsh-price-chip
+category: ui
+description:
+  en: Sidebar chip showing the current DeepSeek price period (peak or off-peak), the selected model's price per million tokens for cache hits, cache misses and output, the account balance and today's spend.
+  zh: 侧边栏价格小挂件：显示当前 DeepSeek 时段（高峰或空闲）、所选模型每百万 token 的缓存命中、未命中与输出价格，以及账户余额和今日消费。

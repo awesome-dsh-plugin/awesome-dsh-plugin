@@ -1,0 +1,8 @@
+url: https://github.com/StarWind97/dsh-fatfish-notes
+name: StarWind97/dsh-fatfish-notes
+category: docs
+description:
+  en: 'Save conversations, organize Markdown notes and attachments, import or export notebooks, and sync through your own private GitHub repository.'
+  zh: '保存会话，管理 Markdown 笔记与附件，导入导出笔记库，通过自己的 GitHub 私有仓库同步。'
+icon: https://raw.githubusercontent.com/StarWind97/dsh-fatfish-notes/main/assets/icon-180.png
+tarball: https://github.com/StarWind97/dsh-fatfish-notes/releases/download/v0.7.0/dsh-fatfish-notes-0.7.0.tgz

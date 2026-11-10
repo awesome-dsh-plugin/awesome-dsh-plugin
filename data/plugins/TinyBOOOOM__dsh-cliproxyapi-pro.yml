@@ -2,5 +2,5 @@ url: https://github.com/TinyBOOOOM/dsh-cliproxyapi-pro
 name: TinyBOOOOM/dsh-cliproxyapi-pro
 category: model
 description:
-  en: Connects one or more CLIProxyAPI (CPA) servers to DeepSeek Harness, discovers each server's models and syncs the selected ones into the model picker, routing each model over its native protocol (Anthropic Messages, OpenAI Responses or OpenAI Chat) with per-model parameter overrides; with a CPA management key it shows per-credential upstream quota in a settings tab and as a badge beside the model picker, and it checks for its own updates and installs them through dshmarket when that is present.
-  zh: 把一个或多个 CLIProxyAPI（CPA）服务接入 DeepSeek Harness，发现各服务的模型并把勾选的模型同步到模型选择器，每个模型按原生协议（Anthropic Messages、OpenAI Responses 或 OpenAI Chat）请求，并支持单模型参数覆盖；填写 CPA 管理密钥后，可在设置页的额度标签和模型选择器旁的徽标查看各凭证的上游额度；还能检查插件自身更新，装有 dshmarket 时通过它安装。
+  en: Connects CLIProxyAPI (CPA) to DeepSeek Harness (DSH) with multiple accounts, model filtering, native protocols, quota lookup and image / video generation; once configured, the selected models appear in the model picker automatically.
+  zh: 在 DeepSeek Harness（DSH）中接入 CLIProxyAPI（CPA），支持多账户、模型筛选、原生协议直连、额度查询、生图生视频，选好配置后自动出现在模型选择器中。
