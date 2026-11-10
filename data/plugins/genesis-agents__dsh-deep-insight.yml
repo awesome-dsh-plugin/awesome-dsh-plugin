@@ -1,0 +1,7 @@
+﻿url: https://github.com/genesis-agents/dsh-deep-insight
+name: genesis-agents/dsh-deep-insight
+category: workflow
+description:
+  en: Evidence-based research workspaces with archived sources, sentence citations and exportable reports.
+  zh: 提供保留原始来源、句内证据引用和可导出报告的循证研究工作区。
+tarball: https://github.com/genesis-agents/dsh-deep-insight/releases/download/v0.2.0-alpha.30/dsh-deep-insight-0.2.0-alpha.30.tgz
