@@ -7,4 +7,4 @@ category: skill
 icon: https://raw.githubusercontent.com/metapeka/dsh-modern-web-guidance/main/icon.png
 # Quoted because the description contains ": " — an unquoted colon breaks the YAML parser.
 description:
-  en: 'Bundles Google Chrome''s Modern Web Guidance offline: three tools that search, retrieve and list 193 Baseline-aware web-platform guides, plus the modern-web-guidance and chrome-extensions skills.'
+  en: 'Bundles Google Chrome''s Modern Web Guidance offline: three tools that search, retrieve and list 208 Baseline-aware web-platform guides, plus the modern-web-guidance and chrome-extensions skills.'
