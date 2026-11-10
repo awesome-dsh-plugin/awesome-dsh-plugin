@@ -2,5 +2,5 @@ url: https://github.com/WaterDJiang/wtt-dsh-plugin/tree/main/plugins/dsh-creatio
 name: WaterDJiang/wtt-dsh-plugin#dsh-creation-workbench
 category: workflow
 description:
-  en: An AI creation canvas for DeepSeek Harness. Organize project materials, reference cards and files, run local Skills, and manage versions of text, presentations, images, and video.
-  zh: DeepSeek Harness 的 AI 创作画布。在同一个项目里整理资料、引用卡片与文件、调用本机 Skill，并管理文本、演示文稿、图片和视频的成果版本。
+  en: 'An AI creation canvas for DeepSeek Harness. Organize project materials, reference cards and files, run local Skills, and manage versions of text, presentations, images, and video. Requires DSH 0.2.1-rc.5 or newer; document handling needs Python 3, PPT page rendering needs LibreOffice, video preview needs ffprobe, and generating images or video needs a Jimeng API service and account that you set up yourself.'
+  zh: 'DeepSeek Harness 的 AI 创作画布。在同一个项目里整理资料、引用卡片与文件、调用本机 Skill，并管理文本、演示文稿、图片和视频的成果版本。需要 DSH 0.2.1-rc.5 或更新版本；文档处理需要 Python 3，PPT 分页渲染需要 LibreOffice，视频预览需要 ffprobe，生成图片或视频需要自行配置即梦 API 服务和账号。'

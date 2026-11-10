@@ -2,5 +2,5 @@ url: https://github.com/sunqing975/dsh-email-monitor
 name: sunqing975/dsh-email-monitor
 category: notify
 description:
-  en: 'Email assistant forked from dsh-email with host-side 163 IMAP monitoring that creates DSH conversations for summaries and reply suggestions, manual suggestions for selected messages, and persistent automatic/manual processing records with session links. Includes multi-provider mailbox browsing; automatic monitoring currently supports 163 IMAP only.'
-  zh: '基于 dsh-email 的邮件助手：后台监听 163 IMAP 新邮件并创建 DSH 对话生成摘要和回复建议，也可选择已有邮件手动生成建议；持久记录自动及手动处理结果并关联会话。支持多品牌邮箱浏览，自动监听目前仅支持 163 IMAP。'
+  en: 'Email assistant forked from dsh-email with host-side 163 IMAP monitoring that creates DSH conversations for summaries and reply suggestions, manual suggestions for selected messages, and persistent automatic/manual processing records with session links. Includes multi-provider mailbox browsing; automatic monitoring currently supports 163 IMAP only. Install it instead of dsh-email, not alongside (both mount the same tool-email row). It registers no send or draft tools; mail text goes to your configured model and is kept in the session logs; monitoring needs DSH running continuously and a 163 IMAP authorization code.'
+  zh: '基于 dsh-email 的邮件助手：后台监听 163 IMAP 新邮件并创建 DSH 对话生成摘要和回复建议，也可选择已有邮件手动生成建议；持久记录自动及手动处理结果并关联会话。支持多品牌邮箱浏览，自动监听目前仅支持 163 IMAP。请用它替换 dsh-email，不要同时启用（两者挂载同一个 tool-email 行）；不注册发信和草稿工具；邮件正文会交给你配置的模型并保存在会话记录里；监听需要 DSH 持续运行和 163 IMAP 授权码。'
