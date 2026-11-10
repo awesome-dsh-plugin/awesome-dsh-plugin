@@ -1924,7 +1924,7 @@ dsh plugin --profile web add dshmarket
 - [Xchcy/dsh-codex-kit#projects-browser](https://github.com/Xchcy/dsh-codex-kit/tree/main/projects-browser) — 把侧边栏的工作区列表替换成 Codex 风格的浏览器：置顶 / 项目 / 最近三个分区标题滚动时固定在顶部，行首标记正在工作、等待审批、意外停止和已完成四种状态，支持右键切换排序、重命名和删除工作区，以及会话行的置顶和归档菜单。
 - [Xchcy/DSH-Reflex](https://github.com/Xchcy/DSH-Reflex) — 在 DSH 消息里右键链接或文件引用，弹出类似 ChatGPT 的菜单：默认打开方式、打开方式…、在文件管理器中打开、复制文件地址、复制文件名、复制文件内容、另存为…
 - [XcodeFish/dsh-file-link-menu](https://github.com/XcodeFish/dsh-file-link-menu) — 为聊天输出中的文件引用添加右键菜单，列出系统关联应用（带图标）供选择打开，在文件管理器中定位文件，并复制基于会话工作区解析的绝对或相对路径；代码块、普通文本与外部链接保持原生菜单。
-- [XDeemoH/PULSE](https://github.com/XDeemoH/PULSE) — dsh 运行面板：实时显示技能和工具调用、技能目录预算（预算线随模型上下文变化），带预演和撤销的技能装配窗口，目标与灵感，以及对话收藏。
+- [XDeemoH/PULSE](https://github.com/XDeemoH/PULSE) — dsh 运行面板：实时显示技能和工具调用、技能目录预算（预算线随模型上下文变化），带预演和撤销的技能装配窗口，目标与灵感，以及对话收藏。应用技能装配会在共享的 ~/.agents/skills 与 ~/.agents/skills-parked 之间移动技能目录（先预演、可撤销），其他应用也会受影响；自动翻译、目标推断和灵感收集只有在首次打开时选择开启后，才会调用你的默认模型。
 - [XenoPhonLau/dsh-activity-bar](https://github.com/XenoPhonLau/dsh-activity-bar) — 把 DeepSeek Harness 收起后的两侧栏变成 VS Code 那样的 44px 图标条：左条接管侧边栏导航与底部动作行，右条按 sidebarRightTabs 清单自动列出第三方面板，右侧面板可拖动改宽（300px 至窗口 60%）。设置里的「活动栏」两个开关，按浏览器保存。
 - [XHR666/dsh-mpkg-wallpaper](https://github.com/XHR666/dsh-mpkg-wallpaper) — 在浏览器里直接加载 Wallpaper Engine 的 .mpkg 作为 DSH 网页背景：内嵌视频、多时段切换、统一磨砂虚化、本地壁纸库与轮换。
 - [xi-zhao/OpenQuantum#openquantum-web-branding](https://github.com/xi-zhao/OpenQuantum/tree/main/packages/openquantum-web-branding) — 为 DeepSeek Harness 原生 Web 界面应用 OpenQuantum 品牌、浏览器元数据与 PWA 资产。
@@ -8605,7 +8605,7 @@ dsh plugin --profile web add dshmarket
 - [HughPython/dsh-tc-mail](https://github.com/HughPython/dsh-tc-mail) — 腾讯智能体邮箱（Agent Mail）客户端：侧边栏面板浏览收件箱与发件箱，HTML 正文在沙箱内渲染并默认拦截外链图片，支持写信、回复、转发、附件收发、搜索与永久删除，可调字体与界面透明度；另注册 5 个工具（mail_health、mail_list、mail_read、mail_search、mail_send），发信走已授权的 agently-cli 账号。需腾讯账号（设备码授权），面板可一键安装 agently-cli；仅在 Windows 上实测。
 - [HUHUhim/dsh-taskbar-badge](https://github.com/HUHUhim/dsh-taskbar-badge) — 在 Windows 任务栏图标上显示 DSH 未读会话数，并恢复上次关闭时的窗口大小和位置。
 - [huhui-tech/dsh-host-notify](https://github.com/huhui-tech/dsh-host-notify) — 宿主侧 macOS 系统通知：提问/审批/回复完成即时送达，免疫渲染层隐藏丢通知，带图标、提示音与点击抬窗。
-- [HuiHui-Small/dsh-outlook-bridge](https://github.com/HuiHui-Small/dsh-outlook-bridge) — 在 DeepSeek 助理中接入 Outlook 邮箱和日历，支持未读角标与 AI 邮件草稿。
+- [HuiHui-Small/dsh-outlook-bridge](https://github.com/HuiHui-Small/dsh-outlook-bridge) — 在 DeepSeek 助理中接入 Outlook 邮箱和日历，支持未读角标与 AI 邮件草稿。登录使用你在设置里填写客户端 ID 的 Microsoft Entra 应用；不填则回退到微软自己的 Office 客户端 ID，微软可能拒绝（个人账户会报 AADSTS65002）。申请的权限包括邮件读写与发信、日历和 To Do 读写。AI 功能会把邮件内容交给你配置的模型；欢迎页天气会请求 Open-Meteo，使用当前位置时还会请求 BigDataCloud。
 - [iArxic/dsh-agents-notch](https://github.com/iArxic/dsh-agents-notch) — Windows 屏幕顶部始终置顶的刘海：每个会话一个小机器人，显示哪些在工作、哪些在等你、哪些已完成或失败；不抢焦点，全屏应用下自动隐藏，带独立设置页。
 - [idoall/dsh-notify](https://github.com/idoall/dsh-notify) — 带可折叠状态通知、提示音与会话跳转的页内任务通知插件。
 - [imetn/dsh-lark-bridge](https://github.com/imetn/dsh-lark-bridge) — DeepSeek Harness 的飞书/Lark 双向控制器，支持 Project 与 Session 路由、交互卡片、审批、附件和任务控制。
