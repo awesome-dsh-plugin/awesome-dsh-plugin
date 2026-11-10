@@ -1,0 +1,6 @@
+url: https://github.com/modusensus/dsh-artifacts
+name: modusensus/dsh-artifacts
+category: ui
+description:
+  en: 'Sidebar artifact shelf that collects the images, videos, files and links sessions deliver, deduplicated by SHA-256 content hash, with five filter tabs and counts, keyword search, video thumbnails, a lightbox, manual link saving, image paste, upload up to 25 MB, one-time backfill of past session logs, and a save_artifact tool the model can call.'
+  zh: '侧边栏产物架：把会话交付过的图片、视频、文件和链接收进一处，按 SHA-256 内容哈希去重；五个分类标签带计数、关键词搜索、视频缩略图、灯箱查看、手动收藏链接、粘贴图片、上传文件（≤25MB）、首次启动回填历史会话日志，并提供 save_artifact 工具供模型主动收藏。'
