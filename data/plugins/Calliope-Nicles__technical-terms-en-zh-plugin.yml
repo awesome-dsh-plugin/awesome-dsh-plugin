@@ -2,7 +2,7 @@ url: https://github.com/Calliope-Nicles/technical-terms-en-zh-plugin
 name: Calliope-Nicles/technical-terms-en-zh-plugin
 category: identity
 description:
-  en: 'Helps students and programming beginners learn technical English while working on projects. Chinese replies introduce English technical terms with Chinese definitions on first mention, then reuse the English names within the same reply. Supports Codex; the DSH integration requires macOS and DSH 0.2.1-rc.3.'
-  zh: '帮助学生和编程初学者边做项目，边学习专业英语。中文回答首次标注英文术语及中文释义，同条后续沿用英文名称。支持 Codex；DSH 接入要求 macOS 和宿主 0.2.1-rc.3。'
+  en: 'Helps students and programming beginners learn technical English while working on projects. Chinese replies introduce English technical terms with Chinese definitions on first mention, then reuse the English names within the same reply. Supports Codex; the DSH integration requires macOS with DSH 0.2.1-rc.3 or 0.2.2-rc.1.'
+  zh: '帮助学生和编程初学者边做项目，边学习专业英语。中文回答首次标注英文术语及中文释义，同条后续沿用英文名称。支持 Codex；DSH 接入要求 macOS，宿主版本为 0.2.1-rc.3 或 0.2.2-rc.1。'
 icon: https://raw.githubusercontent.com/Calliope-Nicles/technical-terms-en-zh-plugin/v2.0.0/assets/pitaya-icon.png
-tarball: https://github.com/Calliope-Nicles/technical-terms-en-zh-plugin/releases/download/v2.0.0/dsh-plugin-technical-terms-en-zh-2.0.0.tgz
+tarball: https://github.com/Calliope-Nicles/technical-terms-en-zh-plugin/releases/download/v2.0.1/dsh-plugin-technical-terms-en-zh-2.0.1.tgz
