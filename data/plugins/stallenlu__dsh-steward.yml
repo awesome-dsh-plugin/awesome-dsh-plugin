@@ -1,0 +1,6 @@
+url: https://github.com/stallenlu/dsh-steward
+name: stallenlu/dsh-steward
+category: dev
+description:
+  en: Read-only diagnostics for a DSH install — boot-crash logs and the cause named in them, config drift against a recorded fingerprint, backup freshness, workspace growth, plugin updates, host-version compatibility, duplicate client ids, and model availability — plus an action layer that always shows a plan first and needs a single-use fingerprint and explicit confirmation before anything is written.
+  zh: 对 DSH 安装做只读诊断——启动崩溃日志及日志里点名的病因、配置相对基线指纹的漂移、备份新鲜度、工作区增长、插件更新、宿主版本兼容、客户端 id 重复、模型可用性——另有一层动作：每次先给计划，写入前要单次指纹加显式确认。
