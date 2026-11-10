@@ -1920,7 +1920,7 @@ dsh plugin --profile web add dshmarket
 - [xiaosurongjia/dsh-improved-inline-edit](https://github.com/xiaosurongjia/dsh-improved-inline-edit) — 为 DeepSeek Harness Web 提供运行中修改要求输入条：agent 工作时在 composer 上方弹出输入框，通过 agent.steer() 将修改要求注入下一步决策而无需停止对话；输入草稿按会话持久化，消息气泡旁可撤回未被读取的注入，支持可选注入引导前缀。
 - [xiaotuchu/dsh-file-tree](https://github.com/xiaotuchu/dsh-file-tree) — 在原生预览旁添加可调整宽度的工作区文件树，支持目录展开、已加载文件筛选和刷新。
 - [xiaoxiaolelang-ai/dsh-next-steps](https://github.com/xiaoxiaolelang-ai/dsh-next-steps) — 在每轮回复下方按 2×2 给出最多四条可点的下一步建议；按轮次投影，不会把上一轮的建议带到下一轮。
-- [xiaoxiaolelang-ai/dsh-rail](https://github.com/xiaoxiaolelang-ai/dsh-rail) — 把面板图标收进 40px 窄栏、把宽度还给会话列表，会话标题分三级明暗，并在侧栏底部栏上方常显 DeepSeek 余额（按数值变色）。
+- [xiaoxiaolelang-ai/dsh-rail](https://github.com/xiaoxiaolelang-ai/dsh-rail) — 把面板图标收进 40px 窄栏、把宽度还给会话列表，会话标题分三级明暗；侧栏底部栏上方常显 DeepSeek 余额，并按余额差值记录今日与累计消费（按数值变色）。
 - [xiaoxin3309/dsh-mini](https://github.com/xiaoxin3309/dsh-mini) — 仅 Windows（需要 Edge WebView2 运行时）：把当前会话一键弹出为常驻置顶的 WebView2 小窗（自绘标题栏、可自由缩放、可跳回主窗），并附整屏与框选截图直插输入框、任意程序划词后的「问大肥鱼」快捷按钮、全局快捷键与设置页。
 - [xiaoyangcheng84-svg/dsh-skin-manager](https://github.com/xiaoyangcheng84-svg/dsh-skin-manager) — DSH Web GUI 皮肤管理器：自动发现已安装皮肤，在独立设置页一键互斥切换，热载入无需重启。
 - [xiaoyaoguhuaxian/dsh-highlight-plugin](https://github.com/xiaoyaoguhuaxian/dsh-highlight-plugin) — 在 DSH 会话界面划选任意语句即可标为高亮色块（黄/绿/蓝）。色块画在独立覆盖层上， 框架重渲染冲不掉；按引文上下文锚定，按会话分文件持久保存、跨重启保留，可单独删除。
@@ -3812,6 +3812,7 @@ dsh plugin --profile web add dshmarket
 - [alchemistwu/dsh-tool-call-guard](https://github.com/alchemistwu/dsh-tool-call-guard) — 在 wire 层中性化 arguments 为非法 JSON 的 tool call，避免一次模型畸形输出让 session 在严格 OpenAI 兼容服务端上永久 400。
 - [aLIZELI/belief-merge#belief-merge](https://github.com/aLIZELI/belief-merge/tree/main/belief-merge) — 把其他会话的上下文合并进当前回合：按证据裁决冲突、前提被撤回时同步撤回结论、用信任格抵抗跨会话提示注入，并在 token 预算内打包。附带评测基准。
 - [amd47802574/dsh-session-fulltext-search](https://github.com/amd47802574/dsh-session-fulltext-search) — 开启 dsh 内置但默认关闭的会话全文搜索后端（session-query-sqlite，SQLite FTS5），侧边栏放大镜即可搜索消息正文并附摘要，而不只是标题。
+- [ame-code/dsh-workspace-move](https://github.com/ame-code/dsh-workspace-move) — 在工作区右键菜单里把整个工作区搬到另一个目录，顺带重命名：嵌套工作区与会话一起迁移并改写记录，失败自动回滚，移动后可一键撤销。
 - [Angela-lwh/dsh-archive-purge](https://github.com/Angela-lwh/dsh-archive-purge) — 在已归档会话的行菜单里加入「删除会话」：永久移除会话日志目录、它启动的子代理会话日志、工作区归属、归档标记、投影缓存记录与 spill 溢出目录；宿主仍持有的会话先登记，下次启动或点「完成待删除清理」时完成。另外会清扫被放弃的空白占位、遗留的孤儿子代理与失效的投影缓存记录，并让空白占位不再出现在 @ 引用列表里。
 - [AngleNaris/slumberpavilion](https://github.com/AngleNaris/slumberpavilion) — 沉眠阁把 DSH 里已归档会话的日志与投影记录真正搬出加载路径，并提供归档、读取、还原、删除会话的工具。
 - [Anionex/dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) — 对话回退：基于持久 Change Ledger 回滚会话与工作区状态。
