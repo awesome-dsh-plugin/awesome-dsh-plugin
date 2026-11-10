@@ -1,0 +1,6 @@
+url: https://github.com/1997liuyh-boop/dsh-studio-film
+name: 1997liuyh-boop/dsh-studio-film
+category: tools
+description:
+  en: "Studio adapter for a separately configured Printfilm service, with DSH session controls and upstream integration patches."
+  zh: "连接单独配置的 Printfilm 服务的工作室适配器，提供 DSH 会话控制与上游集成补丁。"

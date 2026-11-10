@@ -1,0 +1,6 @@
+url: https://github.com/1997liuyh-boop/dsh-studio-media
+name: 1997liuyh-boop/dsh-studio-media
+category: tools
+description:
+  en: "Studio adapter for a separately configured Toonflow service, with DSH session controls and upstream integration patches."
+  zh: "连接单独配置的 Toonflow 服务的工作室适配器，提供 DSH 会话控制与上游集成补丁。"
