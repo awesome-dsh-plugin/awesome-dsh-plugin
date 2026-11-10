@@ -1,0 +1,6 @@
+url: https://github.com/68110923/dsh-mobile-ux
+name: 68110923/dsh-mobile-ux
+category: ui
+description:
+  en: Mobile UX fixes for the DSH web shell — narrow-screen layout, iOS keyboard and viewport handling, one-tap session switching.
+  zh: DSH Web 壳层的手机端体验优化：窄屏布局修复、iOS 键盘与视口跟随、侧边栏单击切换会话。
