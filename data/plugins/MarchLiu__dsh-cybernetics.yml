@@ -1,0 +1,6 @@
+url: https://github.com/MarchLiu/dsh-cybernetics
+name: MarchLiu/dsh-cybernetics
+category: workflow
+description:
+  en: Runs a DSH session as an explicit control loop over a persistent goal board, advancing task, verify and triage subagents one workflow round at a time, with quick and full round depths, append-only goal revisions, and an optional hard gate that removes change tools from the session agent.
+  zh: 把 DSH 会话跑成显式控制回路：以持久化目标看板推进 task、verify、triage 子代理逐轮执行，支持 quick 与 full 两种轮次深度、目标只追加式修订，以及可把变更类工具从会话 agent 上移除的 hard gate。
