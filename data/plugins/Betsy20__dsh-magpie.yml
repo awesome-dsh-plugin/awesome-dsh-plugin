@@ -1,0 +1,6 @@
+url: https://github.com/Betsy20/dsh-magpie
+name: Betsy20/dsh-magpie
+category: ui
+description:
+  en: 'Embeds the original Magpie web UI in the DSH sidebar: downloads the Magpie binary when missing, starts `magpie serve --web` in the background, and serves it through a local reverse proxy that injects the login cookie server-side.'
+  zh: '把 Magpie 原版 Web UI 嵌进 DSH 侧边栏：缺 Magpie 二进制时自动下载，后台启动 `magpie serve --web`，并经由在服务端注入登录 Cookie 的本地反向代理提供页面。'
