@@ -1,0 +1,6 @@
+url: https://github.com/comet9699/dsh-agy
+name: comet9699/dsh-agy
+category: model
+description:
+  en: Connect a locally installed agy CLI to DeepSeek Harness 0.2.2-rc.1, with separate thinking levels, quota display, and Harness-owned tools.
+  zh: 将本机 agy CLI 接入 DeepSeek Harness 0.2.2-rc.1，提供独立思考档位、额度显示和由 Harness 执行的工具调用。
