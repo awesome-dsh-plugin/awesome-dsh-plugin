@@ -377,6 +377,7 @@ dsh plugin --profile web add dshmarket
 - [bagpipe1289/dsh-paperflight#plugin](https://github.com/bagpipe1289/dsh-paperflight/tree/main/plugin) — 纸航 PaperFlight 是实验性的未来复古 DSH Web 工作台，提供会话管理、文件预览、审批和按预设启用的可选浏览器与终端工具。
 - [Bai-2008/dsh-better-panel](https://github.com/Bai-2008/dsh-better-panel) — 接管 DSH 输入框的模型按钮，点开是自建的两级面板（provider 列表 → 模型列表，带搜索），核心是一条连续可拖动的推理等级滑条：填充由蓝渐变到紫罗兰，高档位带星云与星尘粒子，一档一色。点模型不关面板，滑条落到该模型的中间档。实现起点是 Microqian2th/dsh-codex-effort-slider 1.0.0（README 中有致谢），面板、接管、离线测试与文档为新增。
 - [baifagg/dsh-plugin-busy-workspace](https://github.com/baifagg/dsh-plugin-busy-workspace) — 把含“需要注意的会话”的工作区按紧急度排到侧栏会话列表最前——待你处理优先，其次运行中，再次完成未读，最后刚读过的——并为这些行画状态竖条、着色底与着色标题，一次运行结束时播放一次收敛动效。所有颜色都取自当前主题自身的变量；决定完成会话置顶时长的三个窗口都是可配置项。
+- [bailishta/dsh-sidebar-mode-indicator](https://github.com/bailishta/dsh-sidebar-mode-indicator) — 在左侧栏的会话行显示该会话运行的模式（agent preset）胶囊，并可在设置页按模式配置圆点颜色。
 - [bainianlaoyao/easy-archive](https://github.com/bainianlaoyao/easy-archive) — 工作区侧边栏行内两击归档：点一次变红确认，再点即归档，归档项不再出现在 ⋮ 菜单里。
 - [baisama-cloud/dsh-composer-history](https://github.com/baisama-cloud/dsh-composer-history) — DSH 输入框命令历史：按 ↑/↓ 浏览此前发送的指令，回到历史末尾时恢复原草稿；官方桌面端与 Web profile 均可用。
 - [Baisbt/dsh-GreaterClarity-plugin](https://github.com/Baisbt/dsh-GreaterClarity-plugin) — 增强 DSH Web 会话视图：一键折叠思考链与工具链、历史快速定位、Markdown 导出、AI 头像。
@@ -1593,6 +1594,7 @@ dsh plugin --profile web add dshmarket
 - [simmon-clap/dsh-intelligent-ui](https://github.com/simmon-clap/dsh-intelligent-ui) — 把 DeepSeek Harness 对话里的回答渲染成可交互卡片，内置 24 个白名单组件和回合尾部持久卡片。
 - [SiriLee/dsh-approval-hotkeys](https://github.com/SiriLee/dsh-approval-hotkeys) — Web UI 面板快捷键：在审批、提问、计划审查等交互面板上，Enter 触发确认操作、Esc 触发取消操作。
 - [SiriusWJ/dsh-screenshot-button](https://github.com/SiriusWJ/dsh-screenshot-button) — 在 DSH 输入面板工具行加一个相机按钮，点击调起系统自带截图工具（Windows 截图工具已实测；macOS screencapture、Linux GNOME Screenshot / Spectacle / scrot 未实机验证，scrot 需 wl-copy 或 xclip），截图进剪贴板后按 Ctrl+V 粘贴；宿主路由只接受 Host 为本机回环地址的 POST。
+- [SivanCola/dsh-note](https://github.com/SivanCola/dsh-note) — 本地 Markdown 笔记库：三栏布局（导航栏、目录树、编辑器）、双栏实时预览、标签、收藏与置顶、聚合全库复选框并回写文件的待办中心、全文搜索、会话沉淀成笔记、把笔记插入对话、把回答保存为笔记、跳回来源回答的链接、笔记库目录与字号设置，以及四个 note_* 工具。
 - [sixzjd/dsh-folder-attach](https://github.com/sixzjd/dsh-folder-attach) — 在 DeepSeek Harness 网页版直接拖文件夹进输入框，不再提示「只有桌面端支持添加文件夹」。新增主机文件夹选择框、/folder 命令，拖入/粘贴自动解析为 @路径 引用。纯浏览器可用，无需桌面端。
 - [sjrslh/dsh-ui-zoom](https://github.com/sjrslh/dsh-ui-zoom) — Ctrl+滚轮整页缩放（60%–180%，记住比例），右下角常驻「设置」入口可打开宿主设置面板，Ctrl+0 复位。
 - [SkyblueeeLabs/dsh-iconic-launcher](https://github.com/SkyblueeeLabs/dsh-iconic-launcher) — 自定义 DeepSeek Harness 桌面快捷方式图标：选预设或上传图片，自动去除白底、生成多尺寸 ICO，一键写入桌面快捷方式。
@@ -8566,6 +8568,7 @@ dsh plugin --profile web add dshmarket
 - [xmanrui/dsh-im](https://github.com/xmanrui/dsh-im) — 通过二维码或机器人凭据将 IM 机器人接入 DeepSeek Harness（支持飞书、微信、钉钉、企业微信、QQ、Slack、Telegram、Discord 和 WhatsApp 共 9 种渠道）。
 - [xmanrui/dsh-weixin](https://github.com/xmanrui/dsh-weixin) — 通过微信扫码把微信机器人接入 DeepSeek Harness。
 - [xsxElricor/dsh-notion-toolkit](https://github.com/xsxElricor/dsh-notion-toolkit) — 在 DSH 里读写 Notion：10 个工具覆盖页面与数据库，正文按 Notion 风味 Markdown 读写；写入带内容哈希版本校验、diff 预览和一键撤销，你在 Notion 里手改的内容不会被静默覆盖。dsh plugin add 即可安装，无需构建。需自备 Notion 集成令牌（或个人访问令牌），并把要读写的页面/数据库共享给该集成。
+- [Xuanminggod/Xuanminggod-s-repository](https://github.com/Xuanminggod/Xuanminggod-s-repository) — 按分区或关键词从 B 站挑公开视频，在不固定的时间点发到白名单 QQ 群或好友，带去重、安静时段与可选 AI 推荐语。
 - [XuChenXinXc/dsh-plugin-daily-summary](https://github.com/XuChenXinXc/dsh-plugin-daily-summary) — 每日定时弹窗推送昨日对话要点提炼与双轨待办事项管理。
 - [xueyingneko/qqbridge-plus](https://github.com/xueyingneko/qqbridge-plus) — 把水鱼（舞萌DX）查分接进 QQ：#查分 查 B50 并渲染带曲绘的成绩图，走 OAuth 授权、不限管理员、且不依赖桥接运行；另附 qq-bridge 聊天拓展——余额与自动关机、推理档位按计费峰谷切换、节假日表覆盖、开机/关机提示词、QQ 内功能开关。
 - [xwzkj/dsh-audio-alert](https://github.com/xwzkj/dsh-audio-alert) — Linux 上 DSH Web 的宿主侧会话提醒：回合结束、出错或等待审批/回答时，服务器音频设备直接发声，无需打开浏览器。
