@@ -1,0 +1,6 @@
+url: https://github.com/Leni-More/dsh-market-watching
+name: Leni-More/dsh-market-watching
+category: ui
+description:
+  en: 'A market card pinned to the DSH sidebar: live price and 24-hour change for crypto pairs, A-share / Hong Kong / US stocks and world indices, FX majors and London spot gold and silver. An optional long or short cost basis plus a position size turn the change column into a P&L percentage and a cash amount; symbols, order and refresh interval are chosen in DSH settings. No login and no API key.'
+  zh: '钉在 DSH 侧栏的行情卡片：加密货币、A股 / 港股 / 美股与世界主要指数、外汇直盘、伦敦金银的实时价格与 24 小时涨跌幅。填上买入或做空成本价与持仓数量后，涨跌列会切换成盈亏百分比与浮动金额；标的、顺序、刷新间隔都在 DSH 设置页里决定。免登录、免密钥。'
