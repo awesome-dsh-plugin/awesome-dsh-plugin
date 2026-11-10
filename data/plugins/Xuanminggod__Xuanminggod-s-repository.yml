@@ -1,0 +1,7 @@
+url: https://github.com/Xuanminggod/Xuanminggod-s-repository
+name: Xuanminggod/Xuanminggod-s-repository
+category: notify
+icon: https://raw.githubusercontent.com/Xuanminggod/Xuanminggod-s-repository/main/icon-96.png
+description:
+  en: Shares Bilibili videos of chosen categories to QQ groups or friends on a randomized schedule, with per-recipient dedupe, quiet hours and an optional AI-written blurb.
+  zh: 按分区或关键词从 B 站挑公开视频，在不固定的时间点发到白名单 QQ 群或好友，带去重、安静时段与可选 AI 推荐语。
