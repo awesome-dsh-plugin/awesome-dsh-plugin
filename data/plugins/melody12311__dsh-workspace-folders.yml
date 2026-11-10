@@ -1,0 +1,7 @@
+url: https://github.com/melody12311/dsh-workspace-folders
+name: melody12311/dsh-workspace-folders
+category: dev
+description:
+  en: 'Extra folders registered for a workspace become real workspace roots: the session runtime context lists them, a workspace_roots tool reports each root top-level entries, git branch and AGENTS.md/README/manifests, and file tools read, write, patch, move and delete inside them without approval prompts. Folders are edited per workspace from a sidebar hover action or from Settings. On Windows a confined shell stays inside the workspace, because ACL confinement cannot take extra roots.'
+  zh: '为某个工作区登记的额外文件夹会被当作真正的工作区根目录：会话运行时上下文会列出它们，workspace_roots 工具给出每个根目录的顶层结构、git 分支与 AGENTS.md/README/清单文件，文件工具在这些目录里读写、打补丁、移动、删除都不再弹审批。入口是侧栏工作区行的悬停按钮或设置页。Windows 上系统沙箱无法给进程追加可写目录，因此 pwsh 仍限制在工作区内。'
+tarball: https://github.com/melody12311/dsh-workspace-folders/releases/download/v0.1.0/dsh-workspace-folders-0.1.0.tgz
