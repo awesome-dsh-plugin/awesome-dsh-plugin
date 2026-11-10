@@ -1,0 +1,6 @@
+url: https://github.com/philomelcc/dsh-workbench/tree/main/packages/download-center
+name: philomelcc/dsh-workbench#downloads
+category: tools
+description:
+  en: Download queue with aria2 and optional Xunlei engines, magnet links, and a per-session history.
+  zh: 下载队列：aria2 与可选迅雷双引擎、磁力链接、按会话记录下载历史。
