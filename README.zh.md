@@ -1108,6 +1108,7 @@ dsh plugin --profile web add dshmarket
 - [liujuntao123/dsh-mobile-keys](https://github.com/liujuntao123/dsh-mobile-keys) — 为 DSH Web 输入框增加「移动端热键模式」：自动检测移动/触控设备后切换为 Ctrl+Enter 发送、裸 Enter 换行，桌面键位保持不变，并提供设置面板开关、/mobilekeys 命令与 window.__dshMobileKeys 控制台 API。
 - [liuming-dev/dsh-plugins#annotation-rewind-scroll](https://github.com/liuming-dev/dsh-plugins/tree/main/annotation-rewind-scroll) — 为回复和文档添加随下一条消息发送的注释，编辑历史用户消息并从该处重新执行，使用快捷键浏览用户消息或在输入框调出历史输入。
 - [liumorrisclaw/dsh-composer-input-history](https://github.com/liumorrisclaw/dsh-composer-input-history) — 在 DSH 输入框用 ↑ 调回本会话已发送的消息；↓ 前翻并恢复你正在写的草稿，再按一次 ↓ 丢弃草稿、清空输入框。
+- [liunianlh/dsh-aihot](https://github.com/liunianlh/dsh-aihot) — 侧边栏 AI 热点面板：24 小时精选、近期全部、热点 Top10 榜、每日日报与关键词搜索，数据全部取自 AIHOT 公开 JSON API。精选与全部支持六类筛选；信息流卡片显示分类、来源、时间、热度分、摘要，并在 AIHOT 提供时显示推荐理由。精选、全部与搜索三个信息流按北京时间按日分组，并以游标分页、每页 10 条滚动加载，同时提供「加载更多」兜底。面板只读、纯浏览器端取数，无需 API key、无构建步骤，配色跟随宿主主题 token。
 - [LiuPack/dsh-beads-panel](https://github.com/LiuPack/dsh-beads-panel) — Web 界面左侧栏的 Beads 任务图谱面板：按可领取、进行中、待处理、全部筛选，查看任务描述、备注、依赖与评论，并通过 bd CLI 新建、领取或关闭任务。需要 PATH 上的 bd CLI，以及已初始化 Beads 数据库的工作区。
 - [liupengprivate-blip/dsh-baidu](https://github.com/liupengprivate-blip/dsh-baidu) — DSH 侧栏里的模拟搜索页：调用本地搜索接口，列出前 10 条结果。
 - [liushimu/dsh-workspace-detached](https://github.com/liushimu/dsh-workspace-detached) — Windows x64 预览版：将工作区与会话导航分离到独立的 .NET Framework 4.6.2+/WebView2 Evergreen 窗口，支持分组层级、总览与聚焦模式、逻辑拖放、活动或手动排序，以及可调整高度的聚焦预览区；不修改 DSH Core，不运行时依赖 Better Workspace。衍生自 KannaKuron/dsh-better-workspace，不能与上游同装。
@@ -6918,7 +6919,7 @@ dsh plugin --profile web add dshmarket
 - [haoku123/dsh-voice](https://github.com/haoku123/dsh-voice) — Web UI 全双工语音对话：点按切换或按住说话（发送键或 `Ctrl`）并显示实时字幕，宿主端 SenseVoice（sherpa-onnx）转写，回复按句流式朗读，开口说话即打断播放与正在运行的回合（真 barge-in），无需 API key。
 - [honwee/dsh-plugin-mynah](https://github.com/honwee/dsh-plugin-mynah) — 给 Agent 一张会说话的脸：七个工具驱动自托管的 Mynah 实时数字人——开口说话（排队或打断）、播放动作片段、打断、查看在线会话与频道、健康检查、往知识库加文本。
 - [huguangyu666/dsh-plugin-notify](https://github.com/huguangyu666/dsh-plugin-notify) — 通知出口：agent 主动通过桌面通知 / 中文语音 / 音效（炸裂、胜利、警报）联系你，60 秒确认窗口后语音呼叫，音量增强，设置面板。
-- [huliux/dsh-asr-plugin](https://github.com/huliux/dsh-asr-plugin) — 为 Apple Silicon macOS 上的 DeepSeek Harness 提供本地会议转写、麦克风与系统音频录制、说话人标签及文本导出。
+- [huliux/dsh-asr-plugin](https://github.com/huliux/dsh-asr-plugin) — 为 Apple Silicon macOS 上的 DeepSeek Harness 提供本地会议转写、麦克风与系统音频录制、说话人标签及 @ 引用的总结、决策与待办。
 - [jerryqx/dsh-ximalaya](https://github.com/jerryqx/dsh-ximalaya) — 在 DSH Web 界面收听喜马拉雅播客/有声书：搜索专辑、分页浏览曲目，播放条支持上下集/进度/音量/倍速；扫码登录后「我的」页可看收藏的声音（点击即播）、我的订阅（带最新一集提示）与关注的主播（含其公开专辑）；Host 端音频流代理支持 Range 拖动，并注册 `ximalaya_play` 模型工具让 agent 按需搜索播放。
 - [Jesse-njx/dsh-voice](https://github.com/Jesse-njx/dsh-voice) — 语音输入、语音输出：把口述音频转写为用户消息（transcribe），让 agent 朗读回复（speak），本地优先，音频存于 ~/.dsh/voice。
 - [joeseesun/qiaomu-audio-dsh](https://github.com/joeseesun/qiaomu-audio-dsh) — 在 Harness 中朗读 Markdown、听写和转写音频，并导出配音媒体。
