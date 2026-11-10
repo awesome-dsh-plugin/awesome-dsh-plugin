@@ -1,0 +1,6 @@
+url: https://github.com/1997liuyh-boop/dsh-studio-library/tree/main/packages/worktable
+name: 1997liuyh-boop/dsh-studio-library#worktable
+category: ui
+description:
+  en: "Collapsible project drawer, split workspaces and session console for DSH studios, adapted from Aisland-SJL/dsh-worktable."
+  zh: "工作室的可折叠项目抽屉、分屏工作区与会话控制台，基于 Aisland-SJL/dsh-worktable 开发。"
