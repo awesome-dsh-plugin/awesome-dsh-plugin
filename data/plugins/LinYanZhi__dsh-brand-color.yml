@@ -1,6 +1,0 @@
-url: https://github.com/LinYanZhi/dsh-mesh/tree/main/packages/dsh-brand-color
-name: LinYanZhi/dsh-brand-color
-category: theme
-description:
-  en: 'Independent DSH plugin: Settings → brand color with preset swatches and a custom color picker; recolors only the sidebar/hero logo mark and favicon, never text. Works with DSH 0.2.0 and 0.2.2.'
-  zh: '独立 DSH 插件：设置页「品牌颜色」，预设色卡 + 自定义取色，只给侧栏/首页 logo 和 favicon 上色，不改文字；兼容 DSH 0.2.0 / 0.2.2。'
