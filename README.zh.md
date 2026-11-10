@@ -7458,7 +7458,7 @@ dsh plugin --profile web add dshmarket
 - [jakehemmerle/dsh-aris-better](https://github.com/jakehemmerle/dsh-aris-better) — 新增一个 ARIS agent preset，加载 84 个 ARIS 研究工作流技能，并让评审者作为会话内子代理、使用与会话模型不同的模型族运行；其他 preset 不变。本插件是 wanshuiyin/Auto-claude-code-research-in-sleep 的 dsh-aris 分支的 fork：应当替代上游 dsh-aris 安装，不能与上游同装——两者注册同一组 mcp__codex__codex 评审工具和同名 ARIS 技能。
 - [Janrilw/dsh-gear-mode](https://github.com/Janrilw/dsh-gear-mode) — 会话级行动档位：对话区左缘的滑轨切换 P/R/NT/NC/NE/M-/M+/D/A，并向每条请求注入当前档位的行为提示词；模型的 set_gear 只能降档，手刹 H 拦截全部工具调用。模型的 set_gear 只能自行降档，升档需用户在卡片上批准。
 - [jax629321/dsh-agent-hub](https://github.com/jax629321/dsh-agent-hub) — DSH 群聊式多智能体协作控制台：自主决策、任务分发、验收复核与长任务自主优化；内置后端随包分发，一条命令即可安装。
-- [Jaylor-Wang/dsh-awesome-agent-preset](https://github.com/Jaylor-Wang/dsh-awesome-agent-preset) — 专为日常编码打造的极简 Agent 预设插件：移除沉重编排机制与冗余组件，直达核心工具循环，响应迅速。
+- [Jaylor-Wang/dsh-awesome-preset](https://github.com/Jaylor-Wang/dsh-awesome-preset) — 专为日常编码打造的极简预设插件：消除编排开销与前置报幕废话，专注外科手术式精准修改与高效工具执行。
 - [jerryjiao/dsh-wewrite](https://github.com/jerryjiao/dsh-wewrite) — 公众号 AI 写作管线：六步成文（选题、大纲、成稿、门禁、渲染、配图）+ 启动 brief 合同、热榜逐条 AI 速览、RRULE 定时推草稿箱、写作台与对话工具（/wewrite 命令与 @ 引用），推送草稿箱前经宿主审批 fail-closed 确认。
 - [jerryxff26-alt/dsh-delivery-board](https://github.com/jerryxff26-alt/dsh-delivery-board) — 面向客户项目交付团队的交付看板：阶段流水线（default 或 governance 模板，也可自定义阶段），卡片含负责人、截止日、验收标准与 DoD，卡片跨阶段时自动记录交接审计日志，进展/风险/阻塞/决策日志，Markdown 客户周报，仅绑定 127.0.0.1 的可拖拽本地看板与只读 HTML 导出；状态保存在工作区的 delivery.json（11 个 delivery_* 工具与 /delivery 命令）。
 - [Jesse-njx/dsh-routines](https://github.com/Jesse-njx/dsh-routines) — 定时 Agent：按 cron 计划运行 prompt，把摘要送到你已有的地方，内置重叠/漏跑/超时安全策略。
@@ -9355,6 +9355,7 @@ dsh plugin --profile web add dshmarket
 - [polaris-smart/dsh-devices](https://github.com/polaris-smart/dsh-devices) — 去中心化多设备舰队：mDNS 同网发现、密钥配对、SSH 跨网直连指挥。
 - [qiaohelenjoe/dsh-app#dsh-mobile-tunnel](https://github.com/qiaohelenjoe/dsh-app/tree/main/dsh-mobile-tunnel) — DeepSeek Harness 移动端：用手机使用你电脑上的 DSH。安卓 App 用同一账号登录，在设备列表里选中这台电脑，就能在手机上打开并进入它的 DeepSeek Harness 界面。桌面端插件负责注册与连接，本机不用开公网端口；界面会自己适应屏幕——手机上变成适合手指操作的布局，折叠屏展开或窗口变大时回到桌面布局。PC 端面板可以看到登录态、设备配额、设备列表与 App 下载二维码。
 - [QIC-9821/dsh-pc-bridge](https://github.com/QIC-9821/dsh-pc-bridge) — 本机回环 HTTP 桥：让对端机器 ping 并执行 shell 命令，可选 ssh 反向隧道看守。
+- [rainfish-home/dsh-mobi-web](https://github.com/rainfish-home/dsh-mobi-web) — 手机优先的 DeepSeek Harness 客户端，/m/ 页面提供紧凑的手机界面而不是代理完整桌面 UI；手机发起的 turn 审批留在手机，Mermaid 在设备上渲染。
 - [Raiyan007-gb/dsh-remote-tunnel-easy](https://github.com/Raiyan007-gb/dsh-remote-tunnel-easy) — 在设置中扫描二维码，通过 cloudflared 快速隧道在手机上于当前会话中打开 DeepSeek Harness 网页端。
 - [raven3005672/dsh-plugin-im-remote-control](https://github.com/raven3005672/dsh-plugin-im-remote-control) — 飞书机器人远程控制 DSH 会话——消息进入会话，回合结果回到飞书，ask 档的审批可以在飞书里批准或拒绝。
 - [regrevia/dsh-mobile-use](https://github.com/regrevia/dsh-mobile-use) — 手机装进 DSH 右栏：读一次界面 120 ms、200-1300 token，截图那套要 0.5-3.2 s、1.5-2k 图片 token；点一下就是点真机（61 ms），圈一处带圈图和控件回到会话。不截图也能说清屏上有什么、刚才那下点中了没有。需要宿主上的 adb 与 ffmpeg；OCR 兜底仅支持 macOS。
