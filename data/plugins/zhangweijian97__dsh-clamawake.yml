@@ -1,0 +1,6 @@
+url: https://github.com/zhangweijian97/dsh-clamawake
+name: zhangweijian97/dsh-clamawake
+category: tools
+description:
+  en: "ClamAwake for DSH — keeps the host Mac awake while DSH agents run. Self-contained (bundles arm64 vd-engine), binds to DSH host lifecycle, auto-restarts the engine on crash. Requires macOS arm64."
+  zh: "DSH 的 ClamAwake 插件——DSH 智能体运行期间保持宿主 Mac 清醒。自包含（随包分发 arm64 vd-engine）、绑定 DSH 宿主生命周期、引擎崩溃自动重启。需要 macOS arm64。"
