@@ -1,0 +1,7 @@
+url: https://github.com/Green233233/dsh_tray_follower/tree/main/packages/dsh-tray-follower
+name: Green233233/dsh_tray_follower#dsh-tray-follower
+category: notify
+description:
+  en: Per-workspace DSH conversation status in the Windows system tray, plus native DeepSeek Harness notifications when a conversation needs approval, a choice or free-text input, completes, or fails. Idle conversations stay out of the tray by default; nine live options are editable in a Tray follower settings page. The optional desktop bridge is installed once from the package with a reversible user-level script.
+  zh: '在 Windows 系统托盘里按工作区显示 DSH 对话状态，并在对话需要批准 / 选择 / 输入、完成或失败时，由 DeepSeek Harness 应用本身弹出原生通知。空闲对话默认不进入托盘；托盘行数、顶部计数、页脚、通知类型、前台免打扰、提示音共 9 项可在「托盘随航」设置页实时调整。可选的桌面桥接通过包内脚本一次性安装，用户级、可卸载。'
+tarball: https://github.com/Green233233/dsh_tray_follower/releases/download/v0.2.3/dsh-tray-follower-0.2.3.tgz
