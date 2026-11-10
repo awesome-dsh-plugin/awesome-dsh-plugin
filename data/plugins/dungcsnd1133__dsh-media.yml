@@ -1,0 +1,6 @@
+url: https://github.com/dungcsnd1133/dsh-media
+name: dungcsnd1133/dsh-media
+category: vision
+description:
+  en: Adds three session tools — create_image and edit_image over GPT Image or Gemini, and speak for text-to-speech — plus a viewer in the chat UI for the images and audio they produce.
+  zh: 增加三个会话工具——基于 GPT Image 或 Gemini 的 create_image、edit_image，以及文本转语音的 speak——并在聊天界面里提供这些图片和音频的查看器。
