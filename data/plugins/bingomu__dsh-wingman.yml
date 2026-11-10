@@ -1,0 +1,9 @@
+# tarball is pinned to the release asset built by npm pack
+url: https://github.com/bingomu/dsh-wingman
+name: 对话工具条（dsh-wingman）
+category: workflow
+description:
+  en: 'A slim tool strip beside the conversation: one-line notes into a sticky note, a follow-up or a reminder; selected text quoted, saved or handed to the model; saved prompts into the composer in one click; a recap of this thread or the previous one; a read-only panel for context use, tokens, subagents and open follow-ups; plus custom entries that open a path or run a command.'
+  zh: '挂在对话旁的贴边工具条：一句话记成便签、跟进或提醒；选中文字可引用、留存或交给模型；常用指令一键插回输入框；总结当前或上一个会话；只读面板看上下文占用、本轮 token、子代理和未完成跟进；设置里还能加自定义入口（打开路径或运行命令）。'
+icon: https://raw.githubusercontent.com/bingomu/dsh-wingman/main/assets/icon-180.png
+tarball: https://github.com/bingomu/dsh-wingman/releases/download/v1.0.5/bingomu-dsh-wingman-1.0.5.tgz
