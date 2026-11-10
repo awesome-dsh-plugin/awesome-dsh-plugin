@@ -1,0 +1,6 @@
+url: https://github.com/1997liuyh-boop/dsh-studio-floorplan
+name: 1997liuyh-boop/dsh-studio-floorplan
+category: tools
+description:
+  en: "Floor plan and room furnishing studio adapted from wy51ai/floorplan-3d, with local Three.js assets."
+  zh: "基于 wy51ai/floorplan-3d 的户型与家具布置工作室，使用本地 Three.js 资源。"
