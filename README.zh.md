@@ -1160,6 +1160,7 @@ dsh plugin --profile web add dshmarket
 - [lumoping/dsh-todo-inbox](https://github.com/lumoping/dsh-todo-inbox) — DSH Web 全局跨会话待办收件箱：任意会话的 agent 通过 inbox_add/inbox_done/inbox_list 登记等待人类处理的事项（合并 MR、审批工单、评审等）；侧边栏入口显示未完成数角标与可展开的待办列表，支持打开与完成，数据持久化到 ~/.dsh/todo-inbox.json。
 - [luoshuizhiwei/dsh-desktop-restart](https://github.com/luoshuizhiwei/dsh-desktop-restart) — 在桌面版加一个「重启」按钮：有任务在跑时先问过你，重启后告诉你停机了多久。入口可放在侧栏、会话标题栏、账号菜单或设置页，不想要的能逐个关掉。附带功能：检查登录数据占用（避免应用启动失败）、预览遗留临时文件（只统计不删除）、隐藏账号菜单里的「意见反馈」。仅适用于桌面版。
 - [Lushdawn/dsh-effort-dial](https://github.com/Lushdawn/dsh-effort-dial) — 输入框里的 Codex 风格推理强度卡片：接管模型选择器，显示当前档位、模型行，以及覆盖模型适配器所报全部档位的分段滑块；另带模型列表、重置，以及最高档时的紫色极光与闪烁粒子。
+- [LusJourney/dsh-limitup-widget](https://github.com/LusJourney/dsh-limitup-widget) — DSH 浮层里的 A 股涨停直播卡片：显示涨停/炸板/跌停数、炸板率、连板高度、昨日涨停溢价、热门题材与 localStorage 自选股；可关闭且浮层无残留（从侧边栏底部恢复）；数据经同源代理取自随仓库附带的 Python 看板后端，可探活并自动拉起。
 - [LUX09947-CMYK/dsh-re](https://github.com/LUX09947-CMYK/dsh-re) — 在 DeepSeek Harness 桌面端顶部标题栏「编辑」右边加一个「刷新」按钮，只重载界面、不重启应用。
 - [luxi233/dsh-settings-nav-scroll](https://github.com/luxi233/dsh-settings-nav-scroll) — 当 DSH Web 设置导航的分区超出视口时，为其添加可见的纵向滚动条。
 - [luyiheng1111/dsh-context-window-picker](https://github.com/luyiheng1111/dsh-context-window-picker) — 在 DeepSeek Harness 模型弹窗的「推理等级」旁增加会话级上下文窗口选择器：显示当前生效窗口的胶囊按钮可展开默认窗口以下的档位下拉，选择只作用于该会话的下一次请求，新建会话自动回到 Profile 默认值。不改任何配置文件，也不向会话日志写入内容。
@@ -1735,6 +1736,7 @@ dsh plugin --profile web add dshmarket
 - [Veduis/dsh-workspace-tints](https://github.com/Veduis/dsh-workspace-tints) — 为每个工作区分配稳定的暖到冷色调，把工作区名设为分组标题并把会话缩进其下，同时在会话完成未读时整行染绿。
 - [vibeinging/dsh-turn-navigator](https://github.com/vibeinging/dsh-turn-navigator) — 对话轮次导航。
 - [victormshan/dsh-web-relay](https://github.com/victormshan/dsh-web-relay) — dsh 三方协作协议插件：Step List 状态机、五级审核链（含本地 Claude Code 混合审）、alternatives 裁决、无介入续跑与能力持久化体系。
+- [ViewWay/dsh-prompt-optimizer#bundle](https://github.com/ViewWay/dsh-prompt-optimizer/tree/main/packages/bundle) — DSH 输入框提示词优化器。一键对草稿执行「改写 → 自审」多轮优化，逐轮差异预览，被拒绝的结果作为上一次尝试进入下一轮；五个固定重跑方向（更精简／更详尽／更技术／结构化／强化验收）；包内自带 165 个角色的角色库，可按草稿推荐或显式指定；命中的已安装技能以精确名称约束并入元提示词；结果可存入提示词库（浏览、插入、再优化、两步删除）；机械验收准则附带可执行的检查命令模板；输出语言跟随 Agent 界面语言。
 - [Vinzelles/dsh-clearview](https://github.com/Vinzelles/dsh-clearview) — 为 DSH Web 客户端新增「阅读」页签：按源顺序呈现过程步骤与实时思考，成功轮次收起只留最终回答，原有页签、输入框与工具保持不变。
 - [vioeveann/dsh-avatar-frame](https://github.com/vioeveann/dsh-avatar-frame) — 在每轮回复左侧显示角色头像与可编辑 ID，并可用系统语音或你自己指定的本地 TTS 服务朗读回复；含预设、带暂停与上下句的播放控制条、语气与语速调节，以及一键启动该服务。
 - [VioletScar-Hui/dsh-chat-history](https://github.com/VioletScar-Hui/dsh-chat-history) — 给 DSH 聊天输入框加 CLI 风格历史记忆：按上下方向键召回之前发送过的消息。
@@ -2301,6 +2303,7 @@ dsh plugin --profile web add dshmarket
 - [Han-1413141/dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) — 会话与当日 API 费用统计、预算图框（已用%）、官方余额、历史看板，支持峰谷计价与官方价格一键同步。
 - [Hann428/dsh-hann-usage-dashboard](https://github.com/Hann428/dsh-hann-usage-dashboard) — DeepSeek Harness 用量页签：展示 DeepSeek 账户余额、官方峰谷时段价格、动态倒计时、平台用量页入口和本地余额告警灯。
 - [hansomgar/dsh-recent-usage-metrics](https://github.com/hansomgar/dsh-recent-usage-metrics) — 在「性能与用量」设置里增加极客档：输入区状态行实时显示最新一次请求的首字延迟、生成速度、输出 Token、总用时与折算速度，并可展开抽屉查看最近 10 次请求及一行平均值。输出 Token 取自上游返回的 usage，仅当 usage 缺失时才使用按内容类型标定的字符估算。
+- [Hao0311/dsh-price-badge](https://github.com/Hao0311/dsh-price-badge) — 输入框旁的峰谷计价徽标：显示 DeepSeek API 的高峰/低谷时段与倒计时，仅在会话模型是 DeepSeek 路由时显示。
 - [HaoyueQin/dsh-deepseek-monitor](https://github.com/HaoyueQin/dsh-deepseek-monitor) — 在官方供应商卡片内实时监控 DeepSeek 余额与开放平台用量——输入框工具行模型名称左侧的余额 chip，可展开的账户明细面板含按模型用量与每日堆叠图表。
 - [HaoyueQin/dsh-usage-statistics-panel](https://github.com/HaoyueQin/dsh-usage-statistics-panel) — 用量统计设置面板：26 周活跃热力图、按日 Token 趋势与缓存命中率曲线、模型用量环形图与明细、时间范围筛选、汇总卡片，支持历史会话回扫与无损重建。
 - [haozheou/dsh-discipline-guard](https://github.com/haozheou/dsh-discipline-guard) — DSH Agent 纪律卫士：在 harness 边界强制四道闸门（循环熔断、Token 成本熔断、路由切换警示、计划审批卡），模型无法用文字绕过；🛡 芯片一键解除，daily 档对有缓存路由零打扰，把无缓存失控从每回合数百万 token 封顶到约 50 万。
@@ -6783,6 +6786,7 @@ dsh plugin --profile web add dshmarket
 - [GooDAnDReaDY/dsh-voice](https://github.com/GooDAnDReaDY/dsh-voice) — Web UI 语音输入：按停顿分段的听写与语音消息，各自拥有独立的服务商回退链（Deepgram、Groq、HuggingFace、本地 whisper.cpp 或 OpenAI 兼容接口）。
 - [hangdingding/breezetts-dsh](https://github.com/hangdingding/breezetts-dsh) — DeepSeek Harness 的 Breeze 语音插件：可按全文或概要朗读回复，一键登录 Breeze CLI 并自动导入 Key，支持音色搜索与设计、智能陪伴，以及午饭/晚饭提醒。
 - [hangyesite/dsh-shortvideo-export](https://github.com/hangyesite/dsh-shortvideo-export) — 下载抖音和小红书无水印视频，用本地或云端语音识别转成文字、按术语表校正，并从设置面板或 agent 工具导出 Markdown、DOCX、SRT、VTT 等格式。需自备 Python 3.10+（pip 安装 playwright、python-docx、numpy，默认的本地 SenseVoice 引擎另需 sherpa-onnx 并在首次使用时下载约 228 MB 模型）、PATH 中的 ffmpeg，以及 Chrome 或 Edge。
+- [Hao0311/dsh-mimo-tts](https://github.com/Hao0311/dsh-mimo-tts) — 把小米 MiMo TTS 接进 DSH：提供 mimo_tts 工具落盘音频、回答的「播报」按钮、自动播报，以及侧边栏语音设置（内置音色、文字描述生成音色、样本克隆）。
 - [haoku123/dsh-voice](https://github.com/haoku123/dsh-voice) — Web UI 全双工语音对话：点按切换或按住说话（发送键或 `Ctrl`）并显示实时字幕，宿主端 SenseVoice（sherpa-onnx）转写，回复按句流式朗读，开口说话即打断播放与正在运行的回合（真 barge-in），无需 API key。
 - [honwee/dsh-plugin-mynah](https://github.com/honwee/dsh-plugin-mynah) — 给 Agent 一张会说话的脸：七个工具驱动自托管的 Mynah 实时数字人——开口说话（排队或打断）、播放动作片段、打断、查看在线会话与频道、健康检查、往知识库加文本。
 - [huguangyu666/dsh-plugin-notify](https://github.com/huguangyu666/dsh-plugin-notify) — 通知出口：agent 主动通过桌面通知 / 中文语音 / 音效（炸裂、胜利、警报）联系你，60 秒确认窗口后语音呼叫，音量增强，设置面板。
@@ -9181,6 +9185,7 @@ dsh plugin --profile web add dshmarket
 - [GooDAnDReaDY/dsh-shadow-auditor](https://github.com/GooDAnDReaDY/dsh-shadow-auditor) — DeepSeek Harness 的后台安全审计器：扫描 Agent 输出中的秘密泄漏，在执行前检查命令安全性，并将发现记录到持久化审计日志中。
 - [GooDAnDReaDY/dsh-time-machine](https://github.com/GooDAnDReaDY/dsh-time-machine) — 为 DeepSeek Harness 提供智能检查点、工作区安全防护和即时回滚。
 - [GreenLv/dsh-completion-guard](https://github.com/GreenLv/dsh-completion-guard) — 避免 DSH Agent 在长任务中忘记你的要求：它会把重要条件和完成依据保存在本机，在上下文压缩或恢复会话后重新带回，防止漏掉关键限制，或只做完一部分就说整个任务已经完成。
+- [Hao0311/dsh-deferred-approvals](https://github.com/Hao0311/dsh-deferred-approvals) — 非阻塞审批与定时提问：越权请求挂起为待办、模型继续干活、批准后重试；ask_user_question 用 timed 模式，提问不再卡住回合。
 - [heyuanliu3-byte/dsh-auto-preset](https://github.com/heyuanliu3-byte/dsh-auto-preset) — 重新打开会话时恢复该会话上次设置的权限预设；首次打开不干预。需排在 dsh-experimental-auto-review 之后加载才能恢复 auto 预设。
 - [hhl123hhl/dsh-privacy-shield](https://github.com/hhl123hhl/dsh-privacy-shield) — 请求离开本机前，把 system/developer/user/assistant/tool 五类消息的模型可见副本改写为稳定 HMAC 占位符；本地会话日志、对话记录与还原后的工具调用仍保留真值。
 - [howmp/dsh-pentest](https://github.com/howmp/dsh-pentest) — 面向 DeepSeek Harness 的授权渗透模式：以探索链路记录目标、线索、资产与漏洞，并在 Web 中可视化展示。
