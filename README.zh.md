@@ -651,6 +651,7 @@ dsh plugin --profile web add dshmarket
 - [FeatherHunter/dsh-im-companion](https://github.com/FeatherHunter/dsh-im-companion) — dsh-im辅助插件：创造助理/家的概念，把飞书/微信/QQ等机器人收进DSH工作区，并提供更多强大的扩展功能。增强DSH原生会话状态:哪些在执行任务、哪些在等你回复、哪些有异常。感谢使用🌹。
 - [FeatherHunter/dsh-prompt](https://github.com/FeatherHunter/dsh-prompt) — 🌹将一切重复、烦躁的模板化提示词保存下来，只需要鼠标点击就注入对话框，节省您的精力损耗
 - [FeatherHunter/ilife#dsh-life-pack](https://github.com/FeatherHunter/ilife/tree/master/packages/plugin-manager) — ⚠️内测中勿下载⚠️爱生活-覆盖你居家生活的方方面面。
+- [feiniao1933/dsh-whale-icon](https://github.com/feiniao1933/dsh-whale-icon) — 将 DSH 输入框的发送 / 停止按钮换成 DeepSeek 品牌蓝色鲸鱼，运行时游动起来。
 - [feiyaochang123-sys/dsh-starred-turns](https://github.com/feiyaochang123-sys/dsh-starred-turns) — 在对话右侧轮次导航条上右键收藏某一轮：该短横线变为导航条满宽并换成强调色，便于之后一眼找到，再次右键取消。收藏按对话隔离（取当前选中会话 id）并持久保存，刷新后仍在；不引起布局跳动，导航条保持固定间距。
 - [Feizhaiqianqian/dsh-email-board](https://github.com/Feizhaiqianqian/dsh-email-board) — 只读的 DSH 未读邮件看板——把 dsh-email 里配置的各账号未读邮件按账号列成右侧栏卡片（发件人、主题、时间），按需手动刷新。
 - [FeiZhuNiU-INFJA/dsh-stock-ticker](https://github.com/FeiZhuNiU-INFJA/dsh-stock-ticker) — 一个悬浮的半透明行情小窗，实时显示上证指数、创业板指、科创50 与恒生科技的当前点位与涨跌幅。
@@ -2299,6 +2300,7 @@ dsh plugin --profile web add dshmarket
 - [hiJoeLee/dsh-session-cost-daily](https://github.com/hiJoeLee/dsh-session-cost-daily) — 给走中转站的 DSH 用户做的费用条：输入框下方常驻本次与今日花费（今日累计含已关闭的会话），峰谷时段一眼可辨，不查官方余额接口。点开看分模型明细，窄窗口优先保留费用读数。改自 KIDLi1412/dsh-session-cost（MIT），与原版使用相同的插件 id 和 /api/session-cost/summary 路由，不能与原版同装。
 - [Hmuer/dsh-deepseek-wallet](https://github.com/Hmuer/dsh-deepseek-wallet) — 在输入框工具栏实时显示 DeepSeek 账户余额，并在每轮完成对话的 token 用量旁显示按官方峰谷价计费的人民币金额：北京时间工作日上下午为高峰价，周末与法定节假日为空闲价。余额需要 DEEPSEEK_API_KEY 凭据，仅通过 DeepSeek OAuth 登录的账号不显示余额。
 - [hojas/dsh-price-tip](https://github.com/hojas/dsh-price-tip) — 在 Web 界面侧栏底部常驻一个价格时段标记，显示 DeepSeek API 当前处于 空闲时段还是高峰时段、距下次切换还有多久；点开是规则说明、当前生效的价目表，以及已登录 DeepSeek 账户的余额。
+- [Holdon2099/dsh-whale-girl-stats](https://github.com/Holdon2099/dsh-whale-girl-stats) — 读取本机 DSH 会话日志，展示真实 Token 总量、会话数、估算成本与预算、14 天消耗时间线、逐会话明细和 CPU 监控，并提供可拖动的 Token/成本状态小窗，以及随 Token 消耗干饭的鲸鱼娘。
 - [Hongcheng-LI/dsh-magpie](https://github.com/Hongcheng-LI/dsh-magpie) — 一键查看本机 Magpie 网关下全部 AI 账号的额度，并支持按天/周/月查看用量明细。
 - [Hou-DL/dsh-token-pulse](https://github.com/Hou-DL/dsh-token-pulse) — DSH 设置内的本地 Token 用量热图：GitHub 风格周/月/季度/年视图、每日小时级展开、模型与供应商 Top 5，历史持久化，删除会话不丢数据。零联网、零计费。
 - [Hou-mingyuan/glm-coding-quota](https://github.com/Hou-mingyuan/glm-coding-quota) — 输入框下方实时显示 GLM Coding Plan 额度环 - 5 小时与每周额度窗口、等级、自动刷新与一键重试。需 GLM Coding Plan 订阅与 key，并配置 BigModel 的 organization 与 project ID（团队额度接口缺了它们会返回空）。
@@ -3520,6 +3522,7 @@ dsh plugin --profile web add dshmarket
 - [YV919/dmxapi-dsh](https://github.com/YV919/dmxapi-dsh) — 配置 DMXAPI Chat、Responses、Anthropic 和自定义服务商，并直接编辑已有预设服务商的模型。
 - [ZChenW/dsh-codex-switch](https://github.com/ZChenW/dsh-codex-switch) — 通过 OAuth 连接 ChatGPT 账号，支持手动或自动切换，并为 DeepSeek Harness 添加带用量限额信息的 Codex 模型。
 - [zdt3476/dsh-subagent-routes](https://github.com/zdt3476/dsh-subagent-routes) — 按工作区目录给子智能体指定 provider、模型与思考等级的路由表：最长前缀匹配后注入子代理配置，支持全局默认策略、设置页规则编辑与会话输入区就地切换。
+- [zemyao7/dsh-totonai](https://github.com/zemyao7/dsh-totonai) — 在 DeepSeek Harness 里用账号接入 ToTonAI 中转站:设置面板里登录或注册,使用 65 个主流模型(GPT、Claude、Gemini、DeepSeek、豆包、Grok、GLM),并可在同一面板选档位、显示收款码、付款后申报开通。上游 API Key 只留在服务器上。
 - [zeng6125-rgb/dsh-llm-retry-settings](https://github.com/zeng6125-rgb/dsh-llm-retry-settings) — LLM 自动重试设置卡片：在设置页实时调整重试次数、退避与抖动，并可勾选额外可重试错误码（retryableCodes）—— 默认补入 INVALID_REQUEST，OpenAI thinking 模式 HTTP 400 reasoning_text 报错开箱即自动重试。
 - [zenVibeCoding/dsh-ai-gateway-provider](https://github.com/zenVibeCoding/dsh-ai-gateway-provider) — 同时接入多台 OpenAI 兼容网关：每台在模型选择器里各成一组、可单独隐藏且配置保留、按地址即可获取自身公开信息，并逐网关管理模型、跑模型测试、按需显示额度。
 - [zenVibeCoding/dsh-newapi-provider](https://github.com/zenVibeCoding/dsh-newapi-provider) — New API 网关提供商：多网关同一时间激活一个，每个网关独立的模型清单与上下文/多模态标注、额度查询，以及生图与视频生成工具。
