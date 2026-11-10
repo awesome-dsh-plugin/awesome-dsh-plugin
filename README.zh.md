@@ -3666,6 +3666,7 @@ dsh plugin --profile web add dshmarket
 - [Len7183/DSH-Think-zh](https://github.com/Len7183/DSH-Think-zh) — 把模型思考语言锁定为「设置 → 通用设置 → 思考语言」里选定的档位（简体中文，或只约束回复、把思考交还模型的默认英文），实现方式是以 order -1000000 注入 system prompt section，并在 assemble 瀑布末端把它重排到首位兜底；另可开启每轮前置同一指令的用户消息通道，用于对静态 section 服从弱的模型。
 - [let-mi-think/agent-manager](https://github.com/let-mi-think/agent-manager) — 在一个设置分区里新建与配置 Agent 预设——人格提示词、勾选后注入系统提示的知识库条目清单、四个知识库工具的独立开关、按 Agent 收窄 MCP 连接，以及知识库批量导入。
 - [LGY13880006259-coder/dsh-conversation-style](https://github.com/LGY13880006259-coder/dsh-conversation-style) — 在左侧栏底部增加一个切换开关，把助手在「严谨专业」与「轻松幽默」两种语气之间切换：以一条靠后的中英双语系统提示段落实现；模式为 profile 全局、持久化在 DSH_HOME，并从下一条请求起生效。
+- [linsport/dsh-persona-manager](https://github.com/linsport/dsh-persona-manager) — 在设置页里管理 DeepSeek Harness 的 Agent 预设（人设）：基于官方预设新建、就地编辑人设正文、用排版预览检查效果，并导出或导入 JSON 备份与 Markdown。改写 profile 里手写的预设时按文本替换，注释、引号和 loader 表达式都原样保留。
 - [lirenjie95/IamChinese#iamchinese](https://github.com/lirenjie95/IamChinese/tree/main/plugins/iamchinese) — 把会话当作中国大陆用户（简体中文、Asia/Shanghai、ISO 日期、人民币），并生成彼此自洽的测试人设：五个工具、六项交叉校验，身份证校验位、号段与运营商 ASN、区划码与地址互相对得上。
 - [lloydzhou/dsh-feishu-oauth](https://github.com/lloydzhou/dsh-feishu-oauth) — 通过飞书 OAuth 登录减少分发 DSH owner token 的需要，同时保留 token 登录；获准用户使用原生 owner 会话 Cookie，共享 owner 权限，不提供逐用户隔离。
 - [Lutisure/cyrene-dsh-plugin](https://github.com/Lutisure/cyrene-dsh-plugin) — 给 DSH 用的昔涟主题 agent，包括可自定义美化主题（配色、壁纸、粒子效果、背景音乐、打字音效）与代码安全扫描。拥有世界书、长期记忆与说话方式修正（一千个人心中有一千个昔涟），剧情检索增强回答。
@@ -7606,6 +7607,7 @@ dsh plugin --profile web add dshmarket
 - [drliuhuan/dsh-plugin-folder-trust](https://github.com/drliuhuan/dsh-plugin-folder-trust) — 仅 Windows：新增工作区时授权一次，补齐 workspace-write 沙箱所需的 NTFS 权限，并把授权与 Low 完整性标签铺进已有子目录；修复过程带实时进度与日志。
 - [dryw/dsh-egm](https://github.com/dryw/dsh-egm) — 面向 DeepSeek Harness 的设计评审闸门，移植自 Google 的 Elephant-Goldfish Model：具备完整上下文的“大象”起草设计，再由零上下文的只读“金鱼”评审者严格审查，通过后才进入实现。注册的插件 id 为 `egm`，同一 profile 请只安装一个 EGM 插件。
 - [dsh-agent-roster/dsh-agent-roster](https://github.com/dsh-agent-roster/dsh-agent-roster) — 用 YAML/JSON 定义多智能体团队档案，校验后把成员桥接成 dsh-agent-teams 的建员参数，并对照运行中的团队核对结果。
+- [DSH-Extensions-list/dsh-elephant-goldfish-model](https://github.com/DSH-Extensions-list/dsh-elephant-goldfish-model) — Standalone DeepSeek Harness port of Google’s Elephant-Goldfish Model with seven slash commands for design, documentation, and fresh-context reviews using native DSH subagents. Requires no other plugins.
 - [dsh-plugin-collection/dsh-later](https://github.com/dsh-plugin-collection/dsh-later) — 给 DSH 加上定时提醒与延迟发送：一句话到点送达——/later 以你的身份发出，定时面板或 /schedule 发提醒行；关掉网页也准时触发。（定时发送 / 定时提醒 / 延迟发送 / 提醒）
 - [duhu2000/dsh-pre-duediligence](https://github.com/duhu2000/dsh-pre-duediligence) — 访前尽调智能体：面向拜访前调查，提供企业尽调、客户尽调、客户背景调查、工商核验与风险信息整理；使用企查查 MCP，设有调用预算授权和主体确认。
 - [duhu2000/dsh-tender-workbench](https://github.com/duhu2000/dsh-tender-workbench) — 招投标智能体：支持招投标搜索、招标查询、投标查询、标讯查询、拟建项目与项目筛选，辅助商机发现、人工复核及 Excel/PDF 导出，使用客户自备授权的企查查 MCP。
