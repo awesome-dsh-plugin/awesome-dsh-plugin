@@ -1,0 +1,6 @@
+url: https://github.com/JMINN0/dsh-go-plugin-adb
+name: JMINN0/dsh-go-plugin-adb
+category: tools
+description:
+  en: Gives a DSH agent a real adb shell on the phone itself over loopback, with no root and no PC.
+  zh: 让 DSH 智能体在手机内部通过回环拿到真实的 adb shell，无需 root，也不需要电脑。
