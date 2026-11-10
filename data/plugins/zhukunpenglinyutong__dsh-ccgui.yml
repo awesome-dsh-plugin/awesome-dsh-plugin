@@ -1,0 +1,7 @@
+url: https://github.com/zhukunpenglinyutong/dsh-ccgui
+name: zhukunpenglinyutong/dsh-ccgui
+category: model
+description:
+  en: 'Run Claude Code, Kimi CLI, Codex CLI, PI CLI, OMP CLI, OpenCode and CodeBuddy CLI inside DeepSeek Harness sessions over ACP; tool calls, approvals and change summaries appear in the native DSH UI.'
+  zh: 在 DeepSeek Harness 会话里通过 ACP 直接使用 Claude Code、Kimi CLI、Codex CLI、PI CLI、OMP CLI、OpenCode 和 CodeBuddy CLI，工具调用、审批和改动摘要都走 DSH 原生界面。
+icon: https://raw.githubusercontent.com/zhukunpenglinyutong/dsh-ccgui/main/assets/logo.png
