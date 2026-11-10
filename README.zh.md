@@ -2720,7 +2720,7 @@ dsh plugin --profile web add dshmarket
 - [GptsApp/dsh-stylevault](https://github.com/GptsApp/dsh-stylevault) — 为 DeepSeek Harness 提供 30 套经典开源主题配色（Catppuccin、Nord、Tokyo Night、Gruvbox、Solarized 等），映射官方 ThemeService token；带 Style Settings 面板，可实时调整颜色/字体/圆角，并支持 JSON 导出/导入分享配置。
 - [Gsaecy/Zero-State-Radar](https://github.com/Gsaecy/Zero-State-Radar) — 赛博朋克皮肤：空会话时扫描线自上而下扫过，扫过处浮现点阵世界地图与城市航线，左下角带信号监控；发出第一条消息即整体退场。
 - [gulagala001/dsh-theme-plugin](https://github.com/gulagala001/dsh-theme-plugin) — 为 DeepSeek Harness 提供主题、配色、背景与外观设置。
-- [GXinnnnnn/dsh-SAO](https://github.com/GXinnnnnn/dsh-SAO) — 仿刀剑神域主题：在应用外壳之前独立渲染的 Link Start 启动动画，配桐人／亚丝娜语音；另有主题色与界面底色、液态／磨砂玻璃、各组件透明度、九张内置壁纸或自传壁纸，以及输入区的模型强度滑条。
+- [GXinnnnnn/dsh-SAO](https://github.com/GXinnnnnn/dsh-SAO) — 刀剑神域主题：双 Link Start 启动动画与桐人／亚丝娜语音，可选全部功能或仅限启动动画；明暗主题色独立记忆、界面底色与本机字体、带主题色的玻璃设置及 220ms 平移选项，优化滚动和主题切换；液态／磨砂玻璃、分组件透明度与连续右栏／上下文背景；紧凑会话标签与单行状态读数；九张内置壁纸、本地图片或 4K／5K 循环视频及静态省电；模型思考强度滑条。
 - [H2CO3w/dsh-theme-frost](https://github.com/H2CO3w/dsh-theme-frost) — 把文件夹里的图片设为 DSH 网页端全局磨砂壁纸，配色沿用官方原版。
 - [haihaiaicode/dsh-cutesnowgirl-background](https://github.com/haihaiaicode/dsh-cutesnowgirl-background) — 在 Harness 工作区后播放静音循环视频，并在开屏动画结束后将输入区域显示为半透明。
 - [hanyi7867069-create/dsh-moonrise](https://github.com/hanyi7867069-create/dsh-moonrise) — 月升暗色主题——深蓝夜色打底、琥珀月光点缀。
