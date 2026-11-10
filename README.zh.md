@@ -8507,7 +8507,7 @@ dsh plugin --profile web add dshmarket
 - [tsurumi-yizhou/dsh-live-notify](https://github.com/tsurumi-yizhou/dsh-live-notify) — 为模型提供 UpdateNotify 工具，并在 DSH Web UI 输入框上方停靠一个实时进度窗，让模型在一轮任务进行中随时播报刚做了什么、发现了什么、在等什么。
 - [ttmouse/dsh-dingtalk-channel](https://github.com/ttmouse/dsh-dingtalk-channel) — 钉钉 IM 双向 channel（Stream 模式）：每条单聊/群聊驱动一个 agent，思考与回复通过 WebSocket 长连接回流消息，免公网回调。
 - [unifilitence/dsh-notify-say](https://github.com/unifilitence/dsh-notify-say) — 为 DSH 提供 Windows 桌面通知，默认把回合结果读出来：Windows TTS 零下载即可用，另有 13 个 VOICEVOX 语音包可在设置页下载。完成提醒会等子代理与后台任务结束后再响；审批、提问、出错立即提醒。语音包从 GitHub 下载，下载前需确认使用条款。
-- [Vayne-bit/dsh-island](https://github.com/Vayne-bit/dsh-island) — Windows 上的 DSH 置顶状态胶囊：把每个会话的回合状态（思考并计时、等待审批、完成、失败）浮在所有窗口之上，思考持续时缩成小圆点，回合结束后几秒内消失，最多并排显示三个会话、其余折成 +N 角标，前台是全屏应用时自动隐藏。点击可把 DSH 拉到前台，拖动可改位置；复用 DSH Desktop 自带的 Electron，不额外下载。插件页里的设置卡片可调缩放、迷你尺寸、位置、收起时间、动效和各状态开关。
+- [Vayne-bit/dsh-island](https://github.com/Vayne-bit/dsh-island) — Windows 上的 DSH 置顶状态胶囊：把每个会话的回合状态（思考并计时、等待审批、完成、失败）浮在所有窗口之上；DSH 在后台时胶囊下方会浮出气泡，可直接批准工具请求（允许一次 / 拒绝）或回答 Agent 的提问，不用切回应用；DSH 在前台或浮层被隐藏时不拦截，仍由官方卡片处理。会话可每行一个纵向排列（行数可调），或按优先级折成 +N 角标；状态结束后缩成小圆点，前台是全屏应用时自动隐藏；点击可把 DSH 拉到前台，拖动可改位置；复用 DSH Desktop 自带的 Electron，不额外下载。插件页里的设置卡片可调缩放、迷你尺寸、位置、布局、行数、收起时间、动效、气泡开关和各状态开关。
 - [Vergil-long/dsh-email-notify](https://github.com/Vergil-long/dsh-email-notify) — DSH 邮件通知插件，带一个「离开模式」开关：任务完成、工具等你授权、助手向你提问时发邮件给你；标题与正文都是可自定义的模板。
 - [Very12345/dsh-lark-link](https://github.com/Very12345/dsh-lark-link) — amlyczz/dsh-lark-link（MIT）的分叉，由 Very12345 维护；提供每会话推理强度控制、多应用隔离与任务状态流式卡片。
 - [w2018/dsh-qq-group-digest](https://github.com/w2018/dsh-qq-group-digest) — QQ机器人、QQbot：通过 OneBot 11 监听指定 QQ 群，按消息数阈值分批，调用 DSH 已配置的模型总结每批消息，再按群私聊投递到指定好友；支持按关键词与成员过滤消息，带设置页、本地网页控制台与总结归档。
