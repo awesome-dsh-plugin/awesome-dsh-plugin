@@ -1,0 +1,6 @@
+url: https://github.com/lightcoloror/dsh-codex-handoff
+name: lightcoloror/dsh-codex-handoff
+category: workflow
+description:
+  en: 'Workspace-scoped Codex and DeepSeek Harness handoffs with durable replies, independent review, and restart-safe Windows endpoint discovery; no computer-use.'
+  zh: 'Codex 与 DeepSeek Harness 专属工作区交接，支持持久回传、独立验收和 Windows 重启端点发现，不使用 computer-use。'
