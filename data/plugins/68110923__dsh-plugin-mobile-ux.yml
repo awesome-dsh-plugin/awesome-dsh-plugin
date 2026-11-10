@@ -1,5 +1,5 @@
-url: https://github.com/68110923/dsh-mobile-ux
-name: 68110923/dsh-mobile-ux
+url: https://github.com/68110923/dsh-plugin-mobile-ux
+name: 68110923/dsh-plugin-mobile-ux
 category: ui
 description:
   en: Mobile UX fixes for the DSH web shell — narrow-screen layout, iOS keyboard and viewport handling, one-tap session switching.
