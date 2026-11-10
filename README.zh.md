@@ -332,6 +332,7 @@ dsh plugin --profile web add dshmarket
 - [asd13006/dsh-multi-lang-ui](https://github.com/asd13006/dsh-multi-lang-ui) — 為 DeepSeek Harness Web UI 語言選單新增六種語言（繁體中文、日本語、한국어、Français、Deutsch、Español）：各語言逐條精譯，缺字串自動兜底（繁中即時簡轉繁、其他語言回退英文），官方更新與第三方插件都能覆蓋。
 - [asfre/dsh-mcp-global-manager](https://github.com/asfre/dsh-mcp-global-manager) — 扫描本机各工具的 MCP 配置（28 个内置源，支持自定义源），把差异同步进 DSH，并在 DSH 侧栏直接导入、写回或增删改 MCP 服务器。
 - [ashz555/dsh-term-glossary](https://github.com/ashz555/dsh-term-glossary) — 在 DSH 对话里选中一个术语、点旁边的「搜索」按钮，就地解释基本含义、用途与用法，并显示这次回答消耗的 token；该调用是旁路调用，不写入会话日志。
+- [asots/dsh-longsession](https://github.com/asots/dsh-longsession) — 在会话标题栏添加带深浅色状态圆点的可逆「收起历史」开关：未收起时点击卸载页面已渲染的旧历史、只保留最近两轮，按钮变为「已收起历史」；再点还原之前的窗口。手动还原后本会话不再自动收起；阈值与请求上限在 设置 → 长会话。
 - [Asterlyra/dsh-panel-organizer](https://github.com/Asterlyra/dsh-panel-organizer) — 把左侧栏用不到的面板按来源分组收起；「更多」按钮变成一键展开/折叠全部面板的开关。
 - [Asteroid-Code-Channel/dsh-workspace-atlas](https://github.com/Asteroid-Code-Channel/dsh-workspace-atlas) — AGENTS & Skills 工作台：编辑 AGENTS.md，按 Agent Skills 规范创建 SKILL.md，管理和重命名技能文件夹，并从 Anthropic、OpenAI、Cursor、Matt Pocock 四源技能目录安装技能。
 - [asukasec/dsh-message-preview](https://github.com/asukasec/dsh-message-preview) — 右侧用户消息导航条，根据消息数量与可用高度自适应排布导航块，并支持悬停预览、键盘操作与点击跳转。
@@ -602,6 +603,7 @@ dsh plugin --profile web add dshmarket
 - [EastMG/dsh-gacha-calendar](https://github.com/EastMG/dsh-gacha-calendar) — 二游卡池/活动排期速查：侧边栏按钮展示 28 款二游的当期卡池与活动起止，支持自动刷新、搜索、Windows 到期提醒与 .ics 导出。
 - [ecbob/dsh-window-size-keeper](https://github.com/ecbob/dsh-window-size-keeper) — 让 DSH 桌面端窗口保持你离开时的大小：记录主窗口最后一次的外框尺寸（物理像素），下次启动恢复并居中到工作区，而且赶在窗口露面之前改完，启动动画不会播在错误的分辨率上。设置页有 12 个常用分辨率（1024×768 到 3840×2160）、任意自定义宽高、「恢复时居中」开关与「立即应用」，选中即生效并持久化。改尺寸走一个在使用者本机现编的小助手 exe：C# 源码随插件一起发布，首次运行用 Windows 自带的 csc.exe 编一次（实测约 110 毫秒），产物与同名 .cs 缓存到状态文件同目录，之后起进程约 90 毫秒；编不出来时退回临时 powershell.exe 进程。包里不含二进制、package.json 不声明任何依赖、不发任何外部网络请求。仅限 Windows。
 - [EchoTint/dsh-notes-wall](https://github.com/EchoTint/dsh-notes-wall) — 钉在侧栏的便签墙：一键打开整页墙面，边写边自动保存，正文里写 #标签 就会变成可点击的筛选胶囊。六种纸色、置顶、搜索，支持 JSON 导出与导入。
+- [EchoTint/dsh-pomodoro](https://github.com/EchoTint/dsh-pomodoro) — 番茄钟侧栏工作台与独立桌面悬浮窗，支持任务、专注统计和 WebDAV/S3 备份。桌面悬浮窗需另备 Electron 运行时。
 - [ECNU/EduWork#dsh-annotation](https://github.com/ECNU/EduWork/tree/main/packages/dsh-annotation) — 选取回复文字、编辑编号批注并随问题一起发送，复用 DSH 原生输入框引用、草稿保存和发送流程；需 DSH 0.2.x 系列中的 0.2.1-rc.2 或更新版本。
 - [Edge-HH/GrokBot_in_DeepseekHerness](https://github.com/Edge-HH/GrokBot_in_DeepseekHerness) — 将GrokBot带入DSH。
 - [EdwardXiao-bit/dsh-run-button](https://github.com/EdwardXiao-bit/dsh-run-button) — 为回答里的命令行代码框加「运行」按钮，通过宿主 shell 服务执行该命令，输出显示在右下角浮动面板，或每个运行一个底部面板标签页。
@@ -1607,6 +1609,7 @@ dsh plugin --profile web add dshmarket
 - [swyc520/dsh-plugin-model-whitelist](https://github.com/swyc520/dsh-plugin-model-whitelist) — 在设置里逐个勾选要显示的模型，未勾选的从模型选择器菜单中隐藏；provider 分组可在设置面板中折叠。
 - [syx2bzd/dsh-ricewhale](https://github.com/syx2bzd/dsh-ricewhale) — DSH Web 界面的「鲸鱼女仆」物理挂件：拖拽投掷、吃 token 币计分、每满 500 个 token 冒一碗白饭。
 - [syzke/dsh-translate-on-select](https://github.com/syzke/dsh-translate-on-select) — 在 DSH 里用鼠标选中外文，选区正下方就地浮出简体中文译文卡片。
+- [Takeoff0518/dsh-katex-inline-copy](https://github.com/Takeoff0518/dsh-katex-inline-copy) — 在 DSH 对话里复制含公式的内容时，剪贴板里得到 $...$ / $$...$$ 的 LaTeX 源码，而不是 KaTeX 渲染碎片；代码块与输入框保持原生复制。
 - [tangu2023/dsh-menu](https://github.com/tangu2023/dsh-menu) — 为侧边栏「工作区文件」树添加自定义右键菜单：新建文件夹、重命名、在文件管理器中显示、浏览器打开、VS Code 打开、复制路径、流式 ZIP 下载、删除。
 - [Tansukii/dsh-screenshot](https://github.com/Tansukii/dsh-screenshot) — 区域截图工具，支持标注、放大器取色与剪贴板输出，并跟随 DSH 界面语言。仅限 Windows。
 - [tao1020/dsh-global-pins](https://github.com/tao1020/dsh-global-pins) — 会话散落在不同工作区，重要内容不好找？全局置顶把你选中的会话集中到侧边栏顶部，支持拖拽排序和清晰的插入位置提示，也可按最近更新时间自动排序。会话完成后小绿点提醒。还有 Codex 同款行内操作：运行中的会话右侧持续转圈显示进度，支持归档/恢复、点开就全选标题的重命名，右键菜单可 Fork 和上下移动。侧边栏「全局置顶」旁的放大镜打开搜索浮层：先按会话标题和工作区名匹配，再查消息正文索引（部署开启内容索引时可用），结果按「会话」「内容」小标题分组，内容命中带摘要。
@@ -5022,7 +5025,7 @@ dsh plugin --profile web add dshmarket
 - [Duoasa/DSH-to-Figma](https://github.com/Duoasa/DSH-to-Figma) — 让 DSH 用自然语言读取、创建和修改 Figma 设计，支持批量调整图层、组件与变量、截图及素材导出。本地模式不消耗官方 Figma MCP 调用额度。
 - [dxxCaO/wincu](https://github.com/dxxCaO/wincu) — 给 DeepSeek Harness 用的 Windows 计算机操作插件：常驻 PowerShell UIA 后端，对外只有 16 个合并入口（读取/点击/输入/观测/验证）；带加固的策略层（红线拒绝、显式审批、观测绑定、落点归属与前台焦点守卫）与一轮性能优化（后端预热、缓存、像素哈希稳定探测）。fork 自 dsh-computer-use-win。
 - [DYF-zs/dsh-qboson-ising-solver](https://github.com/DYF-zs/dsh-qboson-ising-solver) — 将 QBoson Kaiwu 的 Ising 矩阵求解能力作为 solve_ising Agent Tool 接入 DeepSeek Harness。
-- [Eason-22/dsh-cua-driver-indicator](https://github.com/Eason-22/dsh-cua-driver-indicator) — 给 DSH 官方内置的 Cua Driver 电脑控制通道加一层可见提示：顶部横幅显示是哪个会话、基于什么目标在控制电脑，按 Esc 真正停止；官方通道没装时还会弹窗询问是否安装，并支持一键安装。仅支持 Windows。
+- [Eason-22/dsh-cua-driver-indicator](https://github.com/Eason-22/dsh-cua-driver-indicator) — 给 DSH 官方内置的 Cua Driver 电脑控制通道加一层可见提示与精度工具：顶部横幅显示是哪个会话、基于什么目标在控制电脑，按 Esc 真正停止；四件精度工具点得更准 —— 点前查落点有没有被别的窗口挡住、点后校验界面变了没有、按控件名字定位、最多连点 5 个控件、等某个控件出现；控件还可以按元素 ID 精确定位，应用支持时能在后台运行。官方通道没装时还会弹窗询问是否安装，并支持一键安装。仅支持 Windows。
 - [easun-zhu/dsh-cap-manager](https://github.com/easun-zhu/dsh-cap-manager) — 一个面板统一管理全局 / Profile / 项目三个作用域的 MCP 服务与技能：实时状态与工具数、导入导出、回收站与备份，并可安装/更新/卸载 Anthropic 官方 claude-plugins-official 市场的 Claude Code 插件。
 - [ECNU/EduWork#dsh-literature](https://github.com/ECNU/EduWork/tree/main/packages/dsh-literature) — 检索 DBLP 与 arXiv 文献、获取 BibTeX 和全文，支持归属当前会话的后台任务；由 EduWork 接续维护的 SihanLv/dsh-literature 分支。
 - [ECNU/EduWork#dsh-mail](https://github.com/ECNU/EduWork/tree/main/packages/dsh-mail) — 通过只读 IMAP 检索邮件与获取附件，按 DSH 权限发送 SMTP 邮件，提供独立收发开关和接入凭据存储的设置页。
@@ -9520,6 +9523,7 @@ dsh plugin --profile web add dshmarket
 - [ymck-x/dsh-plugin-index](https://github.com/ymck-x/dsh-plugin-index) — DSH 内的插件索引，收录 1 万余个按 package.json 里的 dsh.bundle 声明校验过的第三方插件（不按星数判定），支持一键安装，另有配套网站。
 - [yyyyukari/dsh-plugin-workshop](https://github.com/yyyyukari/dsh-plugin-workshop) — 创意工坊式插件浏览器：侧栏常驻入口，搜索/最热/最新/近 7-90 天飙升榜、中文关键词映射、描述与 README 机翻、插件特征验证过滤、一键安装/更新。
 - [zhangrui824/dsh-upgrade-assistant](https://github.com/zhangrui824/dsh-upgrade-assistant) — 在 DSH 插件页新增「升级」标签：集中检查全部插件的 npm 新版本，升级前预检 engines.dsh 兼容性，一键原地升级并绕过 pnpm 的 24 小时发布冷却期； 支持刷新 GitHub 来源插件内含的依赖全家桶，并可检查 DSH 本体是否有新版。
+- [zhangyong0010/dsh-oneshot](https://github.com/zhangyong0010/dsh-oneshot) — 从左侧面板打开即并行扫描版本的插件更新器。一键更新复用已完成的扫描结果，已确认最新的插件不再重复查询或重装，仅安装已确认的新版本。保留 DSH 兼容检查、安装后版本核对和 GitHub 更新失败后的恢复尝试，并按每次操作展示一张历史卡片。内置 dsh_oneshot_update Agent 工具。
 - [zhu1090093659/dsh-web#packages/dsh-plugin-manager](https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-plugin-manager) — 设置 → 插件 分区里的插件管理 Tab：从 npm/git 安装带进度、下次启动生效的启停开关、安装冲突对账可撤销、失败一键转交修复会话。
 - [zirscard/dsh-wind-finance](https://github.com/zirscard/dsh-wind-finance) — 为 DeepSeek Harness 注册一个 `wind_finance` 工具：把金融问题路由到正确的 Wind 数据域，经 Wind meta-router MCP 端点（或批量模式下的分域 CLI）执行，并用按日回执避免同一份数据在共享日额度下被重复取数。认证、额度与网络失败如实返回错误码，不换数据源兜底。凭据只从环境变量读取，不随插件分发。
 - [zuwenyin/dsh-plugin-upgrader](https://github.com/zuwenyin/dsh-plugin-upgrader) — 在「插件」页新增「版本」标签：一键升级，能就地替换时就地替换（不卸载、启用状态保留；拿不到 profile 写入锁时退回卸载再装，并在日志写明走了哪条路），实时显示 pnpm 输出、每步耗时并可取消，列出全部已发布版本并一键回滚，每个版本先与当前运行的 DSH 核对，装不了的标出并禁用按钮，回滚时装回却无法激活的情况与包丢失分开说明，profile manifest 读写走 harness 自己的写入锁，升级失败后按包各留一条可恢复的 journal 记录，标出镜像落后上游的缺口，安装源可选并写进 profile。
