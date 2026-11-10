@@ -1,0 +1,6 @@
+url: https://github.com/niszhum/dsh-compact-codex
+name: niszhum/dsh-compact-codex
+category: session
+description:
+  en: 'Replaces the dsh compaction backend with a Codex-style window reset: the checkpoint is a handoff assembled from the session log by code, not a model-written summary, so a reset costs no summarization calls. A task ledger with a two-check gate keeps intent, next steps and the files still in play across resets, and a new_context tool lets the model reset on its own.'
+  zh: '以代码从会话日志拼出的交接信息替换 dsh 的压缩后端，采用 Codex 风格的换窗方式：检查点不经过模型摘要，换窗不产生摘要调用。任务账本与换窗前两道门槛让意图、下一步与仍在改动的文件跨窗口留存，模型也可以用 new_context 工具自行换窗。'
