@@ -1,0 +1,6 @@
+url: https://github.com/beyondgjc/dsh-persona-presets
+name: beyondgjc/dsh-persona-presets
+category: ui
+description:
+  en: 'Three custom agent presets, one editable character card each, edited from the settings page; edits apply on the next turn with no restart.'
+  zh: 三个自定义 agent 预设，每个预设一张可编辑的角色卡——在设置页「角色卡」区块取名与编辑，保存后下一回合生效，无需重启。
