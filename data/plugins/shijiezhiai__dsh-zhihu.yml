@@ -1,0 +1,7 @@
+url: https://github.com/shijiezhiai/dsh-zhihu
+name: shijiezhiai/dsh-zhihu
+category: tools
+description:
+  en: 'Zhihu inside DeepSeek Harness: hot, recommendation and follow lanes plus in-site search, formatted question and column bodies, a per-item discussion that runs as a real Session, and one-key export to Obsidian through its REST API. Reads with your own signed-in cookie, kept in the credentials service.'
+  zh: '在 DeepSeek Harness 里刷知乎：热榜、推荐、关注流与站内搜索，问题与专栏正文带格式渲染，每条内容可以开一个跑成真实会话的讨论，一键经 Obsidian REST API 存成 Markdown 笔记。用你自己的登录 Cookie，存放在 credentials 服务里。'
+tarball: https://github.com/shijiezhiai/dsh-zhihu/releases/latest/download/dsh-zhihu.tgz
