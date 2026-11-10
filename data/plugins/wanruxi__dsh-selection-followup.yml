@@ -2,6 +2,6 @@ url: https://github.com/wanruxi/dsh-selection-followup
 name: wanruxi/dsh-selection-followup
 category: ui
 description:
-  en: 'Select text in a conversation and quote it into the composer for a follow-up question. Uses the same package name as zzx-dear/dsh-selection-followup, so install only one of the two.'
-  zh: '在对话里选中文字，一键把选区作为引用块插进输入框，接着追问。与 zzx-dear/dsh-selection-followup 使用相同的包名，两者只能安装其一。'
+  en: 'Select text in a conversation and park it as a quote card above the composer; the input box keeps only your question, and the quoted text rides along with the message you send. Package name: dsh-quote-tray.'
+  zh: '在对话里选中文字，选区变成输入框上方的一张引用卡片，输入框里只写问题；发送时引用原文自动跟在消息后面，模型能读到完整内容。包名 dsh-quote-tray。'
 icon: https://raw.githubusercontent.com/wanruxi/dsh-selection-followup/main/assets/icon-180.png
