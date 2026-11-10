@@ -1688,6 +1688,7 @@ dsh plugin --profile web add dshmarket
 - [thanhvinh0265-art/dsh-locale-vi](https://github.com/thanhvinh0265-art/dsh-locale-vi) — 为 DeepSeek Harness Web UI 增加越南语：61 个命名空间、3,477 条人工翻译词条，在「设置 → 语言」里选中越南语即生效；另带 /vi-sync 命令，用 Harness 内置翻译服务补译新版本新增的字符串。
 - [The-latest-one/dsh-branch-workspace-folders](https://github.com/The-latest-one/dsh-branch-workspace-folders) — 非递归显式栈侧边栏分支树，支持双轨缩进解耦、平滑跑马灯与物理级联删除事务。
 - [Theembers/dsh-quick-tasks](https://github.com/Theembers/dsh-quick-tasks) — 左侧栏「后台任务」面板：管理需要后台运行的本地服务，一键启动/停止/重启/删除，查看状态、端口、PID、运行时长与实时日志。任务在插件配置里描述，任何本地服务都能接管，删除任务同时把它从配置里移除。默认 attached 模式下 DSH 退出即停服务；另提供对话入口，新会话里预填插件维护说明，由 agent 接手新增服务。
+- [Theembers/dsh-workspace-icons](https://github.com/Theembers/dsh-workspace-icons) — 为 DeepSeek Harness 侧栏添加逐工作区图标与默认会话图标。工作区图标在原有的「重命名工作区」弹窗里选取；没有 IM 渠道的会话显示默认图标，画法与 IM 插件同源的标题伪元素一致、两者对齐，已有渠道 logo 的会话保持原样。会话行相对工作区多缩进一级并带一条竖直引导线。图标来自 73 个内置 Lucide 图标、上传的 SVG，或从官方目录关联的 Iconify 图标库；配色跟随主题，不提供自定义调色。
 - [TheGoodMorty/chat-pace](https://github.com/TheGoodMorty/chat-pace) — 可配置的聊天自动滚动——按节定速阅读（停顿时长与篇幅成比例）、平滑跟随、单步与固定模式，支持快捷键与按会话记忆打开位置。
 - [ThinkofRain1213/dsh-smooth-cursor-patched](https://github.com/ThinkofRain1213/dsh-smooth-cursor-patched) — DSH Web 输入框的彗星光标：发光拖尾随文字位置平滑滑动，可配置强调色、粗细、拖尾，并在静止 500ms 后呼吸。覆盖 ask-question 交互卡片的输入框，并修复空输入框或首次聚焦时光标消失、正向拖选不跟随鼠标、软换行按上一行测量、长内容滚动时光标绘制到输入框之外等问题。Lacquervii/smooth-cursor 的维护分支。
 - [thomasvvugt/dsh-wide-stats-footer](https://github.com/thomasvvugt/dsh-wide-stats-footer) — 解除输入框统计行的宽度限制：较长的轮次与 token 统计行横跨输入框全宽居中显示，不再以省略号截断。
@@ -2581,6 +2582,7 @@ dsh plugin --profile web add dshmarket
 - [tma1-ai/dsh-otel](https://github.com/tma1-ai/dsh-otel) — 把 agent loop 以 OpenTelemetry traces、metrics、logs 导出到 GreptimeDB，附七个 Grafana dashboard，覆盖 token 用量、成本、会话结果和每轮耗时。
 - [TuDouPn/dsh-grok-xai](https://github.com/TuDouPn/dsh-grok-xai) — DeepSeek Harness 的 SuperGrok / X Premium 订阅插件：设备码登录、xai 提供商、账号可见对话模型与上下文/百万 token 价格、按模型能力读取的推理强度，以及订阅用量。
 - [Tuhuaqing/just-dsh-plugins#dsh-auto-update](https://github.com/Tuhuaqing/just-dsh-plugins/tree/main/plugins/dsh-auto-update) — 一键升级Deepseek Harness, 支持侧边栏显示版本号.
+- [turboegg1145/dsh-prompt-inspector](https://github.com/turboegg1145/dsh-prompt-inspector) — 逐条列出为某个会话装配的系统提示词分段、上下文块与工具 schema，并给出各自的 token 估算；可就地改写分段文本或隐藏工具，改动只对该会话之后生效。
 - [V-dev-388/dsh-usage-meter](https://github.com/V-dev-388/dsh-usage-meter) — 设置页用量仪表盘：按服务商/模型汇总全部会话 token 用量，含今日/近 7 天/近 30 天趋势柱状图与缓存命中率。
 - [v587d/dsh-opencode-go-usage](https://github.com/v587d/dsh-opencode-go-usage) — 在输入框上方 dock 显示 OpenCode Go 订阅用量（5h 滚动/每周/每月窗口与重置倒计时），内置凭据编辑器。
 - [Vast-Unhurried/dsh-toolkit#dsh-api-balance](https://github.com/Vast-Unhurried/dsh-toolkit/tree/main/packages/dsh-api-balance) — 在会话界面里直接显示 DeepSeek API 余额与每轮对话花费。
@@ -6768,6 +6770,7 @@ dsh plugin --profile web add dshmarket
 - [vamyane/dsh-local-studio](https://github.com/vamyane/dsh-local-studio) — 本地创作工具箱：连接本机 ComfyUI 出图、连接本地 GPT-SoVITS 配音，检查服务是否在线，并把生成的文件保存到工作区。
 - [vitas/dsh-ocr-free](https://github.com/vitas/dsh-ocr-free) — 在 macOS 上使用 Apple Vision 的本地 OCR：从截图、照片和扫描件中读取文字，无需安装、无需联网、无需 API 密钥。
 - [wang-bool/visual-review](https://github.com/wang-bool/visual-review) — 在 DSH Web 聊天界面内联渲染粘贴/上传的图片，并让纯文本模型“看见”图片：visual_review 工具优先调用任意 OpenAI 兼容多模态 API，未配置时回退本机 Qwen3-VL。
+- [Wang-Shuanglin/dsh-cosplay-studio](https://github.com/Wang-Shuanglin/dsh-cosplay-studio) — ?? ComfyUI ???? cosplay ??????? Z-Image-Turbo ?????????????????????????????????????????
 - [wanshichenguang/dsh-tool-vision](https://github.com/wanshichenguang/dsh-tool-vision) — 面向模型的 image_describe（识图）工具（DashScope OpenAI 兼容接口，qwen3.7-flash）+ 粘贴桥：纯文本模型会话里粘贴的图片在发送时自动转为文件路径并在聊天记录中回显，不再触发图片准入拦截。自带 DASHSCOPE_API_KEY；端点/模型/预算可配置，重定向防护 HTTP 客户端，所有 Agent 预设均可用。
 - [wbb316/dsh-comfyui-image](https://github.com/wbb316/dsh-comfyui-image) — 用本地 ComfyUI 出图：一个 generate_image 工具覆盖文生图、图生图、局部重绘与去背景。
 - [Weilv-D/dsh-pf-stream](https://github.com/Weilv-D/dsh-pf-stream) — 让智能体看懂本地视频：根据画面运动与停顿自适应抽取关键帧，支持任意时间点全分辨率定点检视；自动从内嵌字幕或配置的语音转写（ASR）中提取台词并与画面时间轴对齐。需预装 ffmpeg 与 ffprobe；无字幕视频要台词另需转写引擎（约 190 MB 本地 whisper 模型、云端 API Key 或官方语音输入模型）。
@@ -7898,6 +7901,7 @@ dsh plugin --profile web add dshmarket
 - [que3sui/dsh-darwin#forge](https://github.com/que3sui/dsh-darwin/tree/main/packages/forge) — 自进化执行器：消费会话日志挖掘出的问题工单，在评测门（hold-out canary 防作弊）下合成技能候选，人工确认晋级到项目 .dsh/skills 并支持确定性回滚。
 - [R-LEI2536/dsh-more-agent-presets](https://github.com/R-LEI2536/dsh-more-agent-presets) — 为 DSH 提供更多智能体预设，衍生自其他编程智能体（例如 Qwen Code、iFlow）。
 - [R-roker315/dsh-flowforge](https://github.com/R-roker315/dsh-flowforge) — 流程锻造——在侧边面板编排多步骤提示词工作流，支持自检门禁、引擎执行的跳转规则、主对话 AI 逐步执行与实时运行面板。
+- [rabbitRa-git/dsh-progress-report](https://github.com/rabbitRa-git/dsh-progress-report) — DSH 长任务进度检查点——到点由宿主侧提示模型一边干活一边补一行进度，跑偏能及时纠正；汇报间隔与步数兜底都能在设置页里调。
 - [rainbowzhu22-eng/dsh-document-redactor](https://github.com/rainbowzhu22-eng/dsh-document-redactor) — 基于 whatcccup/cece_legal_skills（MIT）适配的 DeepSeek Harness 文书脱敏工作台。在本机处理 DOCX、PDF、TXT 和 Markdown，提供人工复核、PDF 框选遮盖与 OCR 行核对、同案占位符、Word 还原、历史记录及可选 Agent 规则预览与回退。需 Python 3.9+，首次准备依赖需要联网；仅规则生成需要模型。1.4.0 为预发布，已在 macOS Web 与 DSH 桌面验证；新增 Windows 安装与 OCR 路径待实机复验。上游是独立离线工具/SkillHub 技能，不是 DSH 插件，无法在 DSH 内与本插件同装。
 - [Rainier-Z/dsh-workspace-monitor](https://github.com/Rainier-Z/dsh-workspace-monitor) — 一个适配 DeepSeek Harness 的工作区监测插件，按周期检测并报告文件的新增、修改和删除。
 - [randomix777/dsh-image-gen](https://github.com/randomix777/dsh-image-gen) — dsh-image-gen 优化版：支持批量生图（count 参数）、画廊分页懒加载、请求超时/重试，兼容 7 个提供商：Gemini/OpenAI/Seedream/通义万相/Agnes/智谱 GLM/Stability AI。
