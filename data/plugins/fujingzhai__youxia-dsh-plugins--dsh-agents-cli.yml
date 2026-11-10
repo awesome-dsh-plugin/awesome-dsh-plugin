@@ -1,0 +1,6 @@
+url: https://github.com/fujingzhai/youxia-dsh-plugins/tree/main/dsh-agents-cli
+name: fujingzhai/youxia-dsh-plugins#dsh-agents-cli
+category: tools
+description:
+  en: "Runs local CLI agents (Claude Code, Codex, Antigravity and Pi by default, auto-detected) as panels inside DSH, reusing the official subprocess.spawnTerminal with an embedded xterm.js. Names, commands, colours and order are configurable. Requires DSH 0.2.2-rc.1 or newer."
+  zh: "在 DSH 主面板里运行本机 CLI Agents（默认 Claude Code、Codex、Antigravity、Pi，自动识别已安装入口），进程复用官方 subprocess.spawnTerminal、画面使用内嵌 xterm.js；名称、指令、颜色与顺序可自定义。需 DSH 0.2.2-rc.1 或更新版本。"
