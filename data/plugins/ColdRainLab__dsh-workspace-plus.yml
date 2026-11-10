@@ -1,8 +1,0 @@
-url: https://github.com/ColdRainLab/dsh-workspace-plus
-name: ColdRainLab/dsh-workspace-plus
-category: ui
-tarball: https://github.com/ColdRainLab/dsh-workspace-plus/releases/download/v0.3.2/dsh-workspace-plus-0.3.2.tgz
-
-description:
-  zh: '把侧栏工作区的「＋」改成自定义创建框：输入名称即自动建同名文件夹并新建工作区，不再弹文件夹选择器。'
-  en: 'Turns the sidebar "+" into a quick-create box: type a name, get a folder with that name and a new workspace, with no folder picker.'
