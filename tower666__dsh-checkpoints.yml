@@ -1,0 +1,7 @@
+url: https://github.com/tower666/dsh-checkpoints
+name: tower666/dsh-checkpoints
+category: git
+description:
+  en: Per-turn git checkpoints of the workspace with a previewed, undoable revert.
+  zh: 每个回合的工作区 git 快照，支持预览、可撤销的回退。
+icon: https://raw.githubusercontent.com/tower666/dsh-checkpoints/master/assets/icon.png
