@@ -2,5 +2,5 @@ url: https://github.com/wisdom-km/dsh-territory-cursor
 name: wisdom-km/dsh-territory-cursor
 category: tools
 description:
-  en: "Opens a desktop settings page named 地盘光标. This version does not move the system mouse or operate windows."
-  zh: "打开名为地盘光标的桌面设置页。当前版本不移动系统鼠标，也不操作窗口。"
+  en: "Gives the desktop agent one whole screen, or one half of a single screen. It lists windows whose center is inside, snapshots that rectangle, and left-clicks or replaces a control value. It does not move the system mouse."
+  zh: "给桌面代理一整块屏幕，或单屏的半边。列出中心落在里面的窗口，截下这块矩形，并做左键或整段赋值。不移动系统鼠标。"
