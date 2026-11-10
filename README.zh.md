@@ -4376,6 +4376,7 @@ dsh plugin --profile web add dshmarket
 - [yingqi-studio/dsh-material-library](https://github.com/yingqi-studio/dsh-material-library) — dsh 材料库：把对话里产出的目录、文件或笔记收进真实文件夹并打标签，按 Finder 方式浏览，点一下跳回原始会话。内置 materials_archive 工具与自动归档规则：手动收过一次某任务的成品，之后每次定时任务跑完都会自动把新成品收进同一个文件夹。
 - [ymck-x/dsh-session-continuity](https://github.com/ymck-x/dsh-session-continuity) — 新会话开始时注入一条很小的接续指针，说明上一个会话是谁、工作区有没有交接文档；没有交接文档时复用 DSH 已有的压缩摘要。
 - [yoinchen23-oss/dsh-message-branch](https://github.com/yoinchen23-oss/dsh-message-branch) — 原位编辑纯文本用户提问，并在新的 DSH 会话分支中重新发送。
+- [you-qilin/dsh-task-instructions](https://github.com/you-qilin/dsh-task-instructions) — DeepSeek Harness 插件：输入框旁的「任务指令」按钮，把可复用的任务要求固定到整场会话，压缩上下文也不变形。
 - [youqu68/dsh-delete-chat](https://github.com/youqu68/dsh-delete-chat) — 在设置页中归档、恢复并删除会话。
 - [yoyococo1234/dsh-drag-graft](https://github.com/yoyococo1234/dsh-drag-graft) — Codex 同款拖拽引用对话：把侧栏的会话行拖到对话区，它就变成输入框里一枚原生会话引用 chip，可以继续打字再发送。拖侧栏的工作区（文件夹）行，则把那个文件夹的路径插进草稿，整个目录一起交给模型。候选按 session id 匹配而不是按标题，标题重名或为空都不会插错对话。引用条数由宿主决定（原版 3 条），插件在运行时从宿主读取该上限而不写死，宿主侧调大后自动跟随、不用改插件。chip 插不进时降级为直接发一条只含引用的消息，不会静默失败。
 - [yoza10635/dsh-argp](https://github.com/yoza10635/dsh-argp) — DeepSeek Harness 守卫式上下文压缩——LLM 提议、确定性守卫裁决：逐原子缩放（verbatim 守卫下 extract/summary/false）+ 引用图延迟剪枝（0-LLM）+ append-only 日志逐字节精确召回。
@@ -9760,6 +9761,7 @@ dsh plugin --profile web add dshmarket
 - [weibaohui/experts-management](https://github.com/weibaohui/experts-management) — 专家管理：管理 ntd 格式的专家与专家团队（plugin.json + Agent MD + 技能集），内置 50+ 专家市场，`/expert-名称` 以专家身份执行任务，不占模型目录 token。
 - [WhatCannotBeSaid/dsh-disable-unofficial-plugins](https://github.com/WhatCannotBeSaid/dsh-disable-unofficial-plugins) — 在 DSH 插件页的「已安装」分组标题右端加一个勾选式开关：点开是当前方向下非官方插件的清单，默认全选，只切换你保留勾选的那些；全部停用后按钮翻转成启用侧。只做启用/停用，从不卸载插件、也不删除插件文件与配置，界面文案跟随应用语言。
 - [white-sand-grand/dsh-plugin-doctor](https://github.com/white-sand-grand/dsh-plugin-doctor) — DSH 插件生态的社区搜索、相似度分析与安装/去重/自建决策工具。
+- [whoishuhu/dsh-tag-index](https://github.com/whoishuhu/dsh-tag-index) — 把 GitHub 和 npm 上所有打了 dsh-plugin 标签、可以安装的插件，作为索引源加入「插件 → 发现」，每天更新。
 - [why-sir/dsh-bootstrap](https://github.com/why-sir/dsh-bootstrap) — DSH 新人引导插件：按八个领域推荐插件（GitHub Star 与 npm 近月下载加权排序），先出计划再一键安装，并可导出／导入记录 profile 插件清单、精确版本与启用状态的环境码。
 - [whyihaveyou/dsh-suite#plugin-manager](https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-manager) — DSH Web UI 内置插件商店：浏览、搜索、一键安装、兼容性徽章。
 - [WilShi/dsh-mcp-station](https://github.com/WilShi/dsh-mcp-station) — 聚合式 MCP 市场：26 个精选预设、MCP 官方注册表与用户自定义 JSON 源，支持搜索、来源筛选、连通性检测与一键安装到 profile。
