@@ -1,0 +1,7 @@
+url: https://github.com/dotv-ai/connectors/tree/main/bundles/deepseek-harness
+name: dotv-ai/connectors#deepseek-harness
+category: tools
+description:
+  en: 'Drive the DOTV infinite canvas from DeepSeek Harness: the agent lists your canvases and their nodes, adds text nodes, and runs image/video/audio generations — over DOTV''s public API, with no runtime dependencies and no build step. It reuses the `dotv` CLI login on the machine, or takes an API key in the plugin settings. Generations consume credits on your account, exactly as they do in the app.'
+  zh: '在 DeepSeek Harness 里驱动 DOTV 无限画布：agent 能列出画布与节点、加文本节点、跑图片/视频/音频生成 —— 走 DOTV 的公开 API，零运行时依赖、免构建。默认复用本机 `dotv` CLI 的登录态，也可以在插件设置里填 API key。跑生成消耗账号积分，跟在应用里做一样。'
+tarball: https://github.com/dotv-ai/connectors/releases/latest/download/dotv-dsh-canvas.tgz
