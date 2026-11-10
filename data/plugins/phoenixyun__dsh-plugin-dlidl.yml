@@ -1,5 +1,5 @@
 url: https://github.com/phoenixyun/dsh-plugin-dlidl
-name: DliDli
+name: phoenixyun/dsh-plugin-dlidl
 category: ui
 description:
   en: 'Danmaku and live-chat overlays for DSH: stream reasoning and answers as a right-hand chat timeline (bottom anchored, per-row fade, adjustable lifetime) or as Bilibili-style flying bullets across the whole window; mode-specific settings, content filters, and semantic edit announcements while files are being written.'

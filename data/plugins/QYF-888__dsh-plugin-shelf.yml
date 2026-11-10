@@ -1,5 +1,5 @@
 url: "https://github.com/QYF-888/dsh-plugin-shelf"
-name: "dsh-plugin-shelf"
+name: "QYF-888/dsh-plugin-shelf"
 category: dev
 description:
   en: "Browse, sort, group, toggle and batch-update every DSH plugin you already installed — with groups, filters and resumable updates."
