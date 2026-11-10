@@ -1,0 +1,7 @@
+url: https://github.com/ChinXavier/dsh-gui-agent
+name: ChinXavier/dsh-gui-agent
+category: tools
+icon: https://raw.githubusercontent.com/ChinXavier/dsh-gui-agent/main/assets/icon-180.png
+description:
+  en: 'Computer-use for DSH on Windows: a session-scoped toggle in the composer that registers nine tools for screenshots, mouse clicks and drags, keyboard typing and shortcuts, window switching, UI Automation element lookup, window-to-account mapping, a batch prompt queue and download collection. Desktop automation input is native Win32 SendInput and defaults to human-like pacing - bezier cursor paths with overshoot correction, real VK keystrokes, log-normal typing with occasional typo corrections and a pause before each click - with realistic, fast and custom (0.2-8x) speed presets. Windows only.'
+  zh: 鼠标键盘代理操作 · 真人模拟。为 DSH 加一个按会话生效的开关，开启后注册 9 个工具，让代理做 computer-use 式的桌面自动化：截屏、鼠标点击与拖拽、键盘打字与快捷键、窗口切换、UI Automation 控件定位、窗口与账号映射、批量 prompt 队列、下载收集。输入走原生 Win32 SendInput，默认拟真节奏——贝塞尔光标轨迹与末端过冲回拉、真实 VK 击键、对数正态字符间隔并偶发打错重打、点击前犹豫——并提供仿真 / 便捷 / 自定义（0.2–8 倍）三档。适合让 AI 像人一样操作浏览器、聊天框与任何桌面程序。仅 Windows。
