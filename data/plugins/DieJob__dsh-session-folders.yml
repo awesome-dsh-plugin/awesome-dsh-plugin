@@ -1,0 +1,6 @@
+url: https://github.com/DieJob/dsh-session-folders
+name: DieJob/dsh-session-folders
+category: session
+description:
+  en: Creates a dedicated subfolder for each session inside a workspace on its first message and makes it that session's working directory, toggleable per workspace.
+  zh: 在工作区内为每个会话的首次对话自动创建独立子文件夹，并把该会话的工作目录切换到其中，可按工作区开关。
