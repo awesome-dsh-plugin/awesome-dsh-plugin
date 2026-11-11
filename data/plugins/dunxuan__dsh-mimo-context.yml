@@ -1,0 +1,6 @@
+url: https://github.com/dunxuan/dsh-mimo-context
+name: dunxuan/dsh-mimo-context
+category: memory
+description:
+  en: 'Writes MiMo Code-style checkpoints and project memory at configured token thresholds, rebuilds the model window from a structured dump before native compaction, and falls back to ordinary compaction when no usable checkpoint exists.'
+  zh: '按配置的 token 阈值写入 MiMo Code 风格的 checkpoint 与项目记忆，在原生压缩前用结构化 dump 重建模型窗口，没有可用 checkpoint 时退回普通 compaction。'
