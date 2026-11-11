@@ -1,0 +1,6 @@
+url: https://github.com/divisioncassini05-lab/find-nyaa-anime-release/tree/main/plugins/dsh-find-nyaa-anime-release
+name: divisioncassini05-lab/find-nyaa-anime-release#dsh-find-nyaa-anime-release
+category: tools
+description:
+  en: 'Search Nyaa anime releases with quality and Chinese subtitle checks, manage scheduled tracking and qBittorrent delivery, and browse Bangumi lists with manual progress sync (dsh-find-anime).'
+  zh: 'dsh-find-anime：按画质与中文字幕要求搜索 Nyaa 动漫资源，管理定时追番与 qBittorrent 下载，浏览 Bangumi 番单并手动同步进度。'
