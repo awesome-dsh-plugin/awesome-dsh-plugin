@@ -1,0 +1,7 @@
+url: https://github.com/echoVic/dsh-workspace-ide
+name: echoVic/dsh-workspace-ide
+category: ui
+description:
+  en: 'A VS Code-like workspace panel: lazy file tree with a syntax-highlighted editable code viewer, workspace-wide text search, git status/changes/history with coloured diffs, six VS Code colour themes plus follow-DSH, and a Markdown source/preview toggle. Seven authenticated host routes serve the filesystem and git reads.'
+  zh: '类 VS Code 的工作区面板：懒加载文件树，带语法高亮的可编辑代码查看器，全工作区文本搜索，Git 状态/变更/历史与彩色 diff，六套 VS Code 配色并支持跟随 DSH 主题，以及 Markdown 源码/预览切换；Host 端七条鉴权路由提供全部文件系统与 Git 读取。'
+icon: https://raw.githubusercontent.com/echoVic/dsh-workspace-ide/main/assets/icon-180.png
