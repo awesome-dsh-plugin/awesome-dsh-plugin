@@ -110,6 +110,7 @@ dsh plugin --profile web add dshmarket
 - [Kanadego/dsh-heartbeat](https://github.com/Kanadego/dsh-heartbeat) — 让 agent 不定期醒来的插件：默认 60 分钟一次，上下浮动 20%（48~72 分钟）。按你设的兴趣范围上网逛逛，看到的东西存进本地素材池，顺手维护一份你的兴趣画像。攒够值得说的，就往你绑定的会话递一份短素材——说不说、说哪条，交给那个会话里的 agent 按眼前处境定。静默时段、忙时窗口、每日上限、冷却都在代码层判；判别说时，闸门之后的决策与表达两相不再调用模型（闲逛相在闸门之前，另算）。支持 Windows、Linux 与 macOS（Linux / macOS 为最小支持）。
 - [kenz1117/dsh-engram](https://github.com/kenz1117/dsh-engram) — 跨会话长期记忆，纯本地 SQLite：双层分库（用户级 + 按 git origin 隔离的项目级）、FTS5 + 本地向量 RRF 融合检索、强制给出充分性判定的证据门、来源审计链、SM-2 间隔重复复习、巩固蒸馏与衰减遗忘，以及九视图「记忆宫殿」侧栏面板。22 个窄参数工具，无外部服务、无 API Key、无 Docker。
 - [KunKun24/dsh-global-prompt](https://github.com/KunKun24/dsh-global-prompt) — 写一段全局提示词或人设，之后每条新对话都会自动带上。
+- [KunKun24/dsh-until-done](https://github.com/KunKun24/dsh-until-done) — 回合正常结束但任务没做完时自动续跑，回复以「完成」收尾才算真正完成。
 - [leeyoung1/dsh-advisor-plugin](https://github.com/leeyoung1/dsh-advisor-plugin) — 通过零参数 advisor() 咨询和按步巡逻检查，为执行模型接入更强的审查模型，返回计划、纠偏或停止信号。
 - [liangzz1998/dsh-thinking-language](https://github.com/liangzz1998/dsh-thinking-language) — 通过注入一条系统提示词让 agent 用指定语言思考与回复（默认简体中文），思考与回复语言可分别配置，支持追加自定义要求，兼容标准、PTC 与自定义预设，极简模式不生效。
 - [lifangjin/dsh-maoying](https://github.com/lifangjin/dsh-maoying) — 网文创作辅助插件：主 agent 任主编，把大纲、写作、审校、设定维护、素材考据委派给五个帮手，按七阶段工作流推进；整部小说就是工作区里结构化的 novel/ 目录（角色卡、伏笔状态机、时间线、叙事记忆），另带侧栏创作台面板与六条零依赖 CLI 命令。
