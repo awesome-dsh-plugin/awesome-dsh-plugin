@@ -1,0 +1,7 @@
+url: https://github.com/1924225725-collab/dsh-DKN-Workbench
+name: 1924225725-collab/dsh-DKN-Workbench
+category: workflow
+description:
+  en: 'Integrates native Codex projects, CLI model providers, and project-based agent collaboration into DSH.'
+  zh: '在 DSH 中集成原生 Codex 项目、CLI 模型提供方与项目级 Agent 协作。'
+tarball: https://github.com/1924225725-collab/dsh-DKN-Workbench/releases/download/v2.0.2/dsh-dkn-agent-2.0.2.tgz
