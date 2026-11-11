@@ -1,0 +1,6 @@
+url: https://github.com/solla-h/dsh-plugin-mobile-gateway
+name: solla-h/dsh-plugin-mobile-gateway
+category: remote
+description:
+  en: Mobile gateway plugin that pairs DSH Mobile App with a self-hosted DeepSeek Harness host over an authenticated WebSocket.
+  zh: 让 DSH Mobile App 通过认证的 WebSocket 与自托管 DeepSeek Harness 宿主配对的手机网关插件。
