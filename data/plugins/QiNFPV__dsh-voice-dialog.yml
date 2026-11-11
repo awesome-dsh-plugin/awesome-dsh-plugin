@@ -1,0 +1,7 @@
+url: https://github.com/QiNFPV/dsh-voice-dialog
+name: QiNFPV/dsh-voice-dialog
+category: voice
+description:
+  en: 'Continuous voice conversation for DSH: auto sentence splitting, a 2-second confirm window before sending, and spoken replies you can interrupt by speaking.'
+  zh: 'DSH 连续语音对话：自动断句、发送前 2 秒确认窗口、回复朗读且开口即打断。'
+tarball: https://github.com/QiNFPV/dsh-voice-dialog/releases/download/v0.1.3/dsh-voice-dialog-0.1.3.tgz
