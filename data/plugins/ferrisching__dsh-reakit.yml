@@ -1,0 +1,6 @@
+url: https://github.com/ferrisching/dsh-reakit
+name: ferrisching/dsh-reakit
+category: tools
+description:
+  en: 'Registers the REA reverse-engineering toolset in DSH and manages its Node and REA runtime, with a global tool switch, a live composer status indicator and in-place runtime upgrades.'
+  zh: '把 REA 逆向分析工具集接入 DSH，并托管其 Node 与 REA 运行时：提供全局工具开关、输入框状态指示点和就地运行时升级。'
