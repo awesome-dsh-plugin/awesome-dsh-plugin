@@ -1,0 +1,7 @@
+url: https://github.com/hh5631/dsh-code-studio
+name: hh5631/dsh-code-studio
+category: ui
+description:
+  en: 'Edit code and Markdown inside DeepSeek Harness''s native file area: the file tree sits beside the editor, edits auto-save with one Monaco instance reused per file, a Git panel shows patch diffs of changed files, and Markdown preview is a toggle. Derived from Lenonss/DSH_VsCodeMode''s code-studio package, rebuilt around the native file area with the agent diff-review stack removed; images, PDF and Office files stay with DSH''s native previewers.'
+  zh: '在 DSH 原生文件区里编辑代码和 Markdown：文件树位于编辑器旁，输入后自动保存，每个文件复用同一个 Monaco 实例；Git 面板按需查看变更文件的 patch，Markdown 预览一键切换。源自 Lenonss/DSH_VsCodeMode 的 code-studio 包，围绕原生文件区重做并移除 Agent 差异审查体系；图片、PDF 与 Office 文件仍由 DSH 原生预览处理。'
+tarball: https://github.com/hh5631/dsh-code-studio/releases/latest/download/dsh-code-studio.tgz

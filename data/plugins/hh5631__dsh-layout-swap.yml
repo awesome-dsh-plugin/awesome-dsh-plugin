@@ -1,0 +1,7 @@
+url: https://github.com/hh5631/dsh-layout-swap
+name: hh5631/dsh-layout-swap
+category: ui
+description:
+  en: 'Swap the DSH Web three-column layout: workspace files and the embedded browser move to the centre column and chat moves to the right, with a draggable splitter, arrow-key resizing and the layout persisted in the browser. Falls back to the native layout when the right panel is closed or the window is narrow.'
+  zh: '交换 DSH Web 的三列布局：工作区文件和内嵌浏览器放到中间，聊天移到右侧；分隔线可拖动、聚焦后可用方向键微调，布局与宽度保存在浏览器中。右侧面板关闭、进入全局页面或窗口过窄时自动回到原生布局。'
+tarball: https://github.com/hh5631/dsh-layout-swap/releases/latest/download/dsh-layout-swap.tgz
