@@ -4,3 +4,4 @@ category: memory
 description:
   en: Local-first knowledge base for DeepSeek Harness: workspace Markdown notes with provenance, review status, BM25 search, and four km_* tools.
   zh: DeepSeek Harness 的本地知识库：工作区 Markdown 笔记，带来源、审核状态、BM25 检索与 4 个 km_* 工具。
+icon: https://raw.githubusercontent.com/calmzealA/dsh-km/main/assets/icon-180.png
