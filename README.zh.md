@@ -687,6 +687,7 @@ dsh plugin --profile web add dshmarket
 - [faxble/dsh-model-picker](https://github.com/faxble/dsh-model-picker) — 模型速选器：在模型下拉框左侧添加按钮，弹出全量模型选择窗口（提供商分组、实时搜索、提供商筛选、读取用户配置的真实能力标签、推理徽章、最近使用与推理档位选择器），选中后立即回写原生下拉框并生效。
 - [faxble/dsh-open-with-vscode](https://github.com/faxble/dsh-open-with-vscode) — 在会话头部「打开方式」左侧新增按钮，一键在 VS Code 中打开当前工作区目录，修复桌面宿主 ELECTRON_RUN_AS_NODE 环境变量泄漏导致内置 open-in-app 启动 VS Code 失败（HTTP 502）的问题。仅支持 Windows：按 Code.exe 路径定位，macOS / Linux 尚未适配。
 - [Fayelin12/dsh-office](https://github.com/Fayelin12/dsh-office) — 办公室工作区/会话仪表盘：悬浮 6 列精灵面板，可视化工作区、会话、token 用量与子代理，并提供 Agent Mail 与办公日志页签。飞书相关视图（消息流、会议日程、妙记逐字稿）另需自行安装并授权 `@larksuite/cli`。
+- [Feahter/dsh-plugins#mind-canvas](https://github.com/Feahter/dsh-plugins/tree/main/plugins/mind-canvas) — 侧栏里的无限画布脑图：Tab 长出节点、一键把分支整理成树、让助手把一个节点发散成子想法，可导出 Markdown / OPML / FreeMind / JSON / PNG。
 - [FeatherHunter/dsh-im-companion](https://github.com/FeatherHunter/dsh-im-companion) — dsh-im辅助插件：创造助理/家的概念，把飞书/微信/QQ等机器人收进DSH工作区，并提供更多强大的扩展功能。增强DSH原生会话状态:哪些在执行任务、哪些在等你回复、哪些有异常。感谢使用🌹。
 - [FeatherHunter/dsh-prompt](https://github.com/FeatherHunter/dsh-prompt) — 🌹将一切重复、烦躁的模板化提示词保存下来，只需要鼠标点击就注入对话框，节省您的精力损耗
 - [FeatherHunter/ilife#dsh-life-pack](https://github.com/FeatherHunter/ilife/tree/master/packages/plugin-manager) — ⚠️内测中勿下载⚠️爱生活-覆盖你居家生活的方方面面。
@@ -4076,6 +4077,7 @@ dsh plugin --profile web add dshmarket
 - [FallnStrelitzia/dsh-chat-settings](https://github.com/FallnStrelitzia/dsh-chat-settings) — 为单个对话设置系统提示词、按轮数折叠上下文、采样参数，并提供低 token 的纯聊天模式。
 - [fallow5/dsh-pin-sessions](https://github.com/fallow5/dsh-pin-sessions) — 把会话置顶到 Web 侧边栏顶部：独立置顶面板、归档区、原生三点菜单集成。
 - [Fan-sx/dsh-session-focus](https://github.com/Fan-sx/dsh-session-focus) — 从会话行、悬浮卡或会话头一点即可标记「进行中／挂起」；侧边栏底部和折叠的工作区名旁始终显示还有几条。面板把标记过的会话与侧边栏本就跟踪的状态（等待回复、在跑、已完成未查看）列在一起，底部读数则直接跳到最该处理的那一条。
+- [Feahter/dsh-plugins#archive-rsi](https://github.com/Feahter/dsh-plugins/tree/main/plugins/archive-rsi) — 会话归档：标签、备注与会话指标；对归档语料跑 Plan-Do-Check-Act，产出 prompt 与 AGENTS.md 规则，采纳后在后续会话上重新度量。纯本地运行，不调用模型。
 - [feiertu/dsh-input-rewriter](https://github.com/feiertu/dsh-input-rewriter) — 你只管正常打字，停下约两秒，它就把你刚写的话改写成更清晰、以第一人称表达的版本，更容易得到好答案；贴进来的代码、网址、长文原样不动，缺的信息用占位符标出而不乱猜，一次问几件事也一件不漏、排好顺序。
 - [feigo313/dsh-structured](https://github.com/feigo313/dsh-structured) — DSH 人格模式 + 结构化输出：身份头 / 三卡 / 收尾由插件渲染，模型只交 persona 内容块；人格默认开启、可显式关闭，结构化按会话开关。
 - [fengxiforcy/dsh-surrogate-guard](https://github.com/fengxiforcy/dsh-surrogate-guard) — 在工具输出写入会话日志前中和落单的 UTF-16 代理字符，避免会话永久 400 无法继续。
@@ -5629,6 +5631,7 @@ dsh plugin --profile web add dshmarket
 - [Jesse-njx/dsh-skillport](https://github.com/Jesse-njx/dsh-skillport) — 把已有的 Agent Skills（SKILL.md）技能库带进 DSH：扫描 Claude/Codex/Cursor/Gemini 技能目录、注入渐进式索引，按需加载技能正文。
 - [Jestions-dev/dsh-download-server](https://github.com/Jestions-dev/dsh-download-server) — DSH 的全自动轻量常驻下载服务器 —— 任务活过会话、扛过重启，断点按字节续传。
 - [Jfreey/dsh-searxng-search](https://github.com/Jfreey/dsh-searxng-search) — 自建 SearXNG 搜索源：随包脚本在 macOS/Linux/WSL 上安装并守护本地实例（需 git 与 Python 3.11+），免 API Key、无追踪；实测本机各引擎的可达性与延迟后，一键应用推荐集。
+- [jhao0413/dsh-video-clip](https://github.com/jhao0413/dsh-video-clip) — 按时间区间下载视频片段（yt-dlp 分段；长视频的 DASH 直链无法定位时改用 HLS 分片），下载后用 ffprobe 与抽帧拼图核对起止边界，并把成片起成带 Range 的内网 HTTP 下载链接。提供 video_clip_download / video_clip_verify / file_share 三个工具和一个 video-clip skill；需要 ffmpeg/ffprobe。
 - [jiahaozhang516-svg/caopazi](https://github.com/jiahaozhang516-svg/caopazi) — 南京林业大学 ACM AI Hub 每日签到与该校图书馆座位预约（两个站点地址写死），带设置页与完成度角标；面向 Android 上的 DeepSeek Harness Mobile。
 - [jiangzhenguo/dsh-codegraph](https://github.com/jiangzhenguo/dsh-codegraph) — DSH 插件，注册 13 个原生 codegraph_* 工具包装 codegraph CLI，让代理初始化、维护并查询预索引的代码知识图谱（符号查询、区域探索、节点轨迹、callers/callees、影响分析、受影响测试），无需 grep 文件。
 - [jiayan-xu/dsh-codebase-memory](https://github.com/jiayan-xu/dsh-codebase-memory) — codebase-memory-mcp 的代码知识图谱桥：语义符号搜索（BM25）、源码片段、Leiden 社区架构总览、调用/数据流/跨服务追踪、图增强 grep。
@@ -5735,6 +5738,7 @@ dsh plugin --profile web add dshmarket
 - [kuangdang123/dsh-zotero](https://github.com/kuangdang123/dsh-zotero) — Zotero 直连：检索、新增、修改、回收本机条目，读 PDF 高亮批注与笔记，取已索引全文，按 DOI 找相关论文。需要 Zotero 7 及以上并开启其本地 API；首次写入会触发 Zotero 授权提示（密钥存在 plugin-data/dsh-zotero/auth.json），永久删除需要确认。检索与新增文献会查询 OpenAlex、Crossref、arXiv、PubMed 和 Open Library。包名与 Vncntvx/dsh-zotero 相同（dsh-zotero），同一个 profile 里只能装其中一个。
 - [kunjienie50-creator/dsh-shared-kb](https://github.com/kunjienie50-creator/dsh-shared-kb) — 团队共享知识库：一个人在自己电脑跑零依赖 Hub，其他人装插件后粘一个邀请码即可加入。上传素材按十类归档，带摘要、置信度与要点；15 个 agent 工具支持上传、检索、聚合回顾、评论与阅读。标为重要的资料必须手写推荐语，并置顶到每位成员读过为止；每个账号还各有本地私有库、收藏夹、每周简报与版本对比。
 - [kunjinkao-os/dsh-mobile-gui-agent](https://github.com/kunjinkao-os/dsh-mobile-gui-agent) — Android GUI Agent：ADB 截图、压缩 UI hierarchy 定位、逐步动作验证、审批和 Mobile Web 视图。
+- [KunWu1980/dsh-douyin-kb](https://github.com/KunWu1980/dsh-douyin-kb) — 一个简单的人工提供抖音链接（可通过抖音PC客户端获得），由本插件自动将视频内容转化文字记录，并自动导入到Obsidian中，适用于harness、个人知识库搭建初学者上手。
 - [l2685209197/dsh-pdf-translate](https://github.com/l2685209197/dsh-pdf-translate) — 用 DeepSeek 或兼容 API 翻译文本型 PDF，保留版式、字体、图片与链接，输出可编辑 PDF。
 - [laa1991/dsh-health](https://github.com/laa1991/dsh-health) — 把声明式的健康读数（来源、判据、结论）合成为一个只读的总判定；读不到的来源报 `unknown`，绝不报成健康。
 - [lacrimosa-da/dsh-etf-monitor](https://github.com/lacrimosa-da/dsh-etf-monitor) — DeepSeek Harness 侧边面板：纯 Node 直取东财与腾讯行情，盘中跟踪 15 只国家队 ETF 篮子，含资金流、分时护盘脉冲与综合判读。
@@ -7123,6 +7127,7 @@ dsh plugin --profile web add dshmarket
 - [do-nothing/media-suite#media-qwen](https://github.com/do-nothing/media-suite/tree/main/packages/media-qwen) — Qwen 媒体工具：通过阿里云百炼提供多模态视频音频理解、带预置音色的语音合成，以及场景音频生成。
 - [duoduoqian708/dsh-voice-talk](https://github.com/duoduoqian708/dsh-voice-talk) — DSH Web 的语音对话模式：点一下麦克风进入全屏通话，边说边听，AI 回复边生成边朗读。界面中英双语，适配明暗主题，支持语速调节与音色切换。
 - [fangqian616/dsh-say](https://github.com/fangqian616/dsh-say) — 让你的 DSH 用你喜欢的声音开口说话、汇报内容，过长的汇报先压缩再念。角色声线不需要自己训练：一段 3-10 秒参考音就能克隆，也能直接用别人训练好的模型；不必为此装一整套 6.4 GB 的 GPT-SoVITS —— 运行时和声线都由插件自己装好。已有 GPT-SoVITS 的话也能直接接上，两者跑的是同一套声线。
+- [Feahter/dsh-plugins#realtime-voice](https://github.com/Feahter/dsh-plugins/tree/main/plugins/realtime-voice) — 输入框连续听写：本机 CPU 跑 SenseVoice ONNX 模型，说话时实时显示识别文字，停顿后整句写入输入框，音频不出本机。
 - [february2015/dsh-dingo](https://github.com/february2015/dsh-dingo) — 多对话并行的声音提醒 + 对话直达：当前对话当/当当（crisp 清脆档），其他对话叮/叮叮（soft 柔和档）+ 右上角小卡片，点一下直达对应对话。
 - [fenglin-ai/dsh-funasr-voice](https://github.com/fenglin-ai/dsh-funasr-voice) — DSH Web 本地离线语音输入：麦克风经本地 FunASR（SenseVoiceSmall）识别后填入输入框，支持一键安装，全程离线。
 - [fishcg/dsh-airpod-control](https://github.com/fishcg/dsh-airpod-control) — 需 macOS 与支持头部追踪的 AirPods。戴着 AirPods 用点头/摇头回答 DSH 的权限许可与提问——点头＝允许或确认，摇头＝拒绝或切换选项；会话里一张卡片就能装好配套的 macOS 菜单栏 App。
@@ -7518,6 +7523,7 @@ dsh plugin --profile web add dshmarket
 - [eve1329/dsh-shared-handoff](https://github.com/eve1329/dsh-shared-handoff) — 共享交接套件的 dsh 版:handoff 与 task-id-bootstrap 技能 + host 侧自动化——基线状态注入、每轮快照与 Auto Log 轨迹、task=<id> 路由、续接关键词重注入、达阈值报警的压缩守护、子代理只读保护;与 Codex、Claude、pi 版写同一份 .agents/state/,一个仓库多代理共享交接。
 - [fanghedeng/dsh-skill-gogo](https://github.com/fanghedeng/dsh-skill-gogo) — 技能面板：按来源浏览 skill，用彩色分类文件夹归类，预览文件，导出 zip、复制到项目、在磁盘上重命名，并在输入区菜单里插入 /skill 调用。
 - [FantastyQAQ/dsh-doxygen](https://github.com/FantastyQAQ/dsh-doxygen) — 为 C/C++（含 Qt）源码生成与维护 Doxygen 注释的工作流：文件头、函数、模块分组、行尾与简短注释，并扫描出签名指纹已过期、需要更新的注释。运行时需要 Python 3.10+ 并 `pip install tree-sitter tree-sitter-cpp`。
+- [Feahter/dsh-plugins#dsh-360](https://github.com/Feahter/dsh-plugins/tree/main/plugins/dsh-360) — 体检 DSH 配置：技能与 agent 说明书、子代理定义、预设共用一套 18 档 S~E 等级评分，带侧栏面板、四个 dsh360_* 工具，每次写入都有备份可撤销。
 - [FeatherHunter/dsh-chinese-skill-patch](https://github.com/FeatherHunter/dsh-chinese-skill-patch) — 中文技能名零改造直用：输入 /私 自动补全 私家大厨。为 DSH 打上技能发现、斜杠手势与 skill 工具补丁，Unicode 技能名（私家大厨/卡路里/作息管家…）补全、直达、加载全可用；不改 SKILL.md、零配置；运行时改动随卸载恢复，但写进 DSH 三个依赖包磁盘文件里的正则补丁会保留到下次 DSH 升级覆盖为止。
 - [FeatherHunter/dsh-mattpocock-skills-deck](https://github.com/FeatherHunter/dsh-mattpocock-skills-deck) — 🌹安装即自带mattpocock/skills v1.3.1的27个工程与效率技能，无需手动装技能。400亿token打造本插件，在原始技能之上提供10倍的开发效率，也能帮助新手更快上手该技能套件。全力支持GitHub issue；Markdown为预览版；GitLab暂不支持。感谢您的使用和支持💗
 - [fenshal/dsh-skillbox](https://github.com/fenshal/dsh-skillbox) — 把机器上散落的技能收进一页：列出 DSH、WorkBuddy、Claude Code、Codex、豆包的已装技能，可一键导入为 DSH 技能；发现页支持 GitHub 与 ClawHub 目录（按真实下载量排序）。专家可按会话挂载，回复上方显示署名。
@@ -8484,6 +8490,7 @@ dsh plugin --profile web add dshmarket
 - [ET921/dsh-git-management](https://github.com/ET921/dsh-git-management) — DSH 右侧栏 Git 面板：暂存、提交、切换分支、fetch/pull/push、工作树、Cursor 风格提交图与 GitHub PR（GitHub 卡片需要 GitHub 令牌）。直接调用系统 git，面板与终端状态保持一致。
 - [f-e-n-g-0531/dsh-code-review](https://github.com/f-e-n-g-0531/dsh-code-review) — 复用当前 DSH Agent 模型只读审查 Git 与 SVN 变更，支持变更预览、显式上下文及经审批的模型请求。
 - [f-e-n-g-0531/dsh-vcs](https://github.com/f-e-n-g-0531/dsh-vcs) — 在 DeepSeek Harness 内只读审阅 Git 与 SVN 变更，支持仓库浏览和并排差异对比。
+- [Feahter/dsh-plugins#github-manager](https://github.com/Feahter/dsh-plugins/tree/main/plugins/github-manager) — 侧栏 GitHub 面板加 github_* 工具：列出仓库、查看 Issue 与 PR，新建、更新或评论 Issue。
 - [FeatureAgents/AgentsGitFlowController](https://github.com/FeatureAgents/AgentsGitFlowController) — AI 编码智能体分支角色守卫：可配置集成/预览/生产/归档角色，拦截对受保护分支的直接推送、强推与删除，以及智能体对生产/归档分支的合并。
 - [Fectivnfy112357/github-explore](https://github.com/Fectivnfy112357/github-explore) — 基于 gh CLI 的 GitHub 搜索/发现/审计技能包（SKILL.md 打包）：仓库搜索、多轴探索、趋势、仓库概览、相似项目、代码搜索、issue/PR 搜索与组织审计；以 dsh bundle 形式安装（并已发布 npm）。
 - [fengbinmov/dsh-git-panel](https://github.com/fengbinmov/dsh-git-panel) — 会话页里多出一个 Git 页；左侧是未暂存 / 已暂存的改动，右侧是带行级操作条（暂存 / 丢弃）的 diff 预览。
