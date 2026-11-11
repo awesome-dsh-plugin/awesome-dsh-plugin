@@ -2,5 +2,5 @@ url: https://github.com/elsebit/dsh-deepseek-usage-extended
 name: elsebit/dsh-deepseek-usage-extended
 category: usage
 description:
-  en: A personal-use fork of dsh-deepseek-usage that adds IKunCode account balance queries alongside the upstream provider readers and subscription usage windows.
+  en: A personal-use fork of dsh-deepseek-usage that adds IKunCode account balance support and shows the provider name above the balance.
 tarball: https://github.com/elsebit/dsh-deepseek-usage-extended/releases/latest/download/dsh-deepseek-usage-extended.tgz
