@@ -385,6 +385,7 @@ dsh plugin --profile web add dshmarket
 - [azkbzxf/dsh-account-balance-pill](https://github.com/azkbzxf/dsh-account-balance-pill) — 在 DSH 对话底栏（输入框下方的统计行）显示当前 DeepSeek 账户的剩余余额，定时刷新，并在每轮对话结束后立即更新。
 - [azkbzxf/dsh-vscode-scrollbar](https://github.com/azkbzxf/dsh-vscode-scrollbar) — 把 DSH 对话界面改成 Visual Studio Code 编辑器风格：14px 常驻滚动条、扁平半透明滑块，并在右侧加上 VS Code 式 Minimap（小地图）：高度不超过半屏、悬停才显示滑块、点击/滚轮即可跳转滚动，同时自动展开“加载更早”的过往对话。
 - [AzureSkyHuHu/dsh-chinese-mode-modern](https://github.com/AzureSkyHuHu/dsh-chinese-mode-modern) — 在输入框左侧加一个中文模式开关，点开可分别切换回复、思考与工具说明的语言，配置随 profile 持久化。
+- [Azusa-299/dsh-ba-click-fx](https://github.com/Azusa-299/dsh-ba-click-fx) — 为 DSH Web 界面添加蔚蓝档案风格的点击/触摸特效与鼠标拖尾，并在设置的 Click FX 页提供主题色、大小、不透明度、辉光、速度与开关。
 - [B612wang/dsh-ui-transparency](https://github.com/B612wang/dsh-ui-transparency) — 侧边栏底部一个按钮，点开是 0-90% 的滑块，用来调整整个 DSH 窗口的透明度，数值自动记住。只设置窗口 alpha，不改样式、不加面板、不影响其它功能。仅支持 Windows。
 - [bagpipe1289/dsh-paperflight#plugin](https://github.com/bagpipe1289/dsh-paperflight/tree/main/plugin) — 纸航 PaperFlight 是实验性的未来复古 DSH Web 工作台，提供会话管理、文件预览、审批和按预设启用的可选浏览器与终端工具。
 - [Bai-2008/dsh-better-panel](https://github.com/Bai-2008/dsh-better-panel) — 接管 DSH 输入框的模型按钮，点开是自建的两级面板（provider 列表 → 模型列表，带搜索），核心是一条连续可拖动的推理等级滑条：填充由蓝渐变到紫罗兰，高档位带星云与星尘粒子，一档一色。点模型不关面板，滑条落到该模型的中间档。实现起点是 Microqian2th/dsh-codex-effort-slider 1.0.0（README 中有致谢），面板、接管、离线测试与文档为新增。
