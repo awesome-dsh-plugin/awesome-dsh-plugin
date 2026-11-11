@@ -1,0 +1,6 @@
+url: https://github.com/aoilang/dsh-english-cards
+name: aoilang/dsh-english-cards
+category: session
+description:
+  en: 'Save English learning cards while interacting with DeepSeek Harness.'
+  zh: '在DeepSeek Harness里使用英文时，自动保存英语学习卡片，利用和Agent的日常交互提高英语。'
