@@ -1,6 +1,0 @@
-url: https://github.com/LinYanZhi/dsh-mesh/tree/main/packages/dsh-mesh-host
-name: LinYanZhi/dsh-mesh#dsh-mesh-host
-category: remote
-description:
-  en: 'DSH host-side bridge for a multi-device mesh: exposes local sessions and tools over a token-protected loopback HTTP endpoint so the dsh-mesh server on this machine (separate npm package dsh-mesh-node) can create sessions, prompt them and call tools for paired peers.'
-  zh: '多设备 mesh 的 DSH 宿主桥：通过带 token 的本机回环 HTTP 暴露本地会话与工具，供本机另装的 dsh-mesh server（npm 包 dsh-mesh-node）为已配对 peer 创建会话、发消息、调用工具。'
