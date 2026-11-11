@@ -1,0 +1,7 @@
+url: https://github.com/Dogegg-1/dsh-godot-workbench-plugin
+name: Dogegg-1/dsh-godot-workbench-plugin
+category: dev
+tarball: https://github.com/Dogegg-1/dsh-godot-workbench-plugin/releases/download/v0.1.8/godot-workbench-0.1.8.tgz
+description:
+  en: Godot game development workbench for DeepSeek Harness.
+  zh: 在 DeepSeek Harness 中规划、制作和验证 Godot 独立游戏。
