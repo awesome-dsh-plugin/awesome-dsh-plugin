@@ -2950,6 +2950,7 @@ dsh plugin --profile web add dshmarket
 - [InkStain258/dsh-glass-skin](https://github.com/InkStain258/dsh-glass-skin) — 把 DeepSeek Harness 窗口换成磨砂亚克力玻璃，可透视桌面；叠加在当前主题之上而非替换主题。Windows 11 上透出桌面还需另跑仓库自带安装器（npx github:InkStain258/dsh-glass-skin，会带备份地修改 DSH Desktop 的 app.asar）。
 - [inMessionante19/dsh-desktop-glass](https://github.com/inMessionante19/dsh-desktop-glass) — 为 Windows 11 版 DeepSeek Harness 提供可切换的原生毛玻璃与完全透明背景，实时显示 Wallpaper Engine 壁纸；需先手动安装一次桌面原生适配；需 Node 20+。
 - [Iris-change/dsh-eva-skins](https://github.com/Iris-change/dsh-eva-skins) — 四套 EVA 主题皮肤（二号机／零号机／初号机／八号机）。每套通过主题样式层重绘侧栏、输入框与窗口边框，并带一段 20 秒的开机动画（Canvas 绘制，含身份确认、可跳过、可重播）。输入框旁的胶囊可弹出列表切换皮肤。
+- [iroha1145/DSH-Modern-UI#modern-ui](https://github.com/iroha1145/DSH-Modern-UI/tree/main/packages/modern-ui) — 给未改动的官方 DSH 换一套网页界面：思考过程分组折叠、对话轮次时间轴与可调阅读宽度、工具调用卡片、模型与思考强度选择面板、子智能体编队视图、回答里可选的图表与流程图组件、明暗主题和手机布局。从 npm 安装，卸载即恢复官方界面。
 - [Isilsolme/dsh-anthropic-fonts](https://github.com/Isilsolme/dsh-anthropic-fonts) — Anthropic Sans/Serif/Mono 字体：界面 Sans、对话 Serif、代码 Mono，中文回退思源字体。
 - [iStarryDust/dsh-ui-liquid-glass](https://github.com/iStarryDust/dsh-ui-liquid-glass) — 可折射的液态玻璃皮肤 UI：可自定义壁纸、多个可调折射液态玻璃面、随时段轮换的壁纸、四档主题色、选中项带水滴状高亮飞镜、右下可自定义每个控件参数。
 - [jiangsuyuan/dsh-theme-550C](https://github.com/jiangsuyuan/dsh-theme-550C) — 流浪地球 550C 控制台配色的 DSH 界面皮肤，含暗色 2px 边框与琥珀选中态。
@@ -3010,6 +3011,7 @@ dsh plugin --profile web add dshmarket
 - [longgege-cd/dsh-skin-pixel-anime](https://github.com/longgege-cd/dsh-skin-pixel-anime) — 像素动态星空主题：五套配色、四套分层文字方案、五款像素字体（含简体中文像素字体）、方角与圆角可选、旋转像素星空与流星、顶栏像素时钟，均在插件设置页配置。
 - [Longxiangjunlin/dsh-endfield-theme](https://github.com/Longxiangjunlin/dsh-endfield-theme) — 《明日方舟：终末地》主题：炭黑与警戒黄的工业 HUD、在外壳渲染前注入的开屏动画、对话区背景，以及重新配色的 Windows 标题栏。侧栏品牌会改为「终末地工业 / ENDFIELD INDUSTRIES」，可用 URL 参数还原。
 - [LoveIrishCoffee/dsh-effort-ultra-skin](https://github.com/LoveIrishCoffee/dsh-effort-ultra-skin) — 给 hytime/dsh-thinking-effort 已经画出来的推理等级控件换一层 CSS 皮肤：蓝紫渐变胶囊、 星点与流光，浅色与深色主题各一套配色。需先安装该插件，自身不新增任何界面。
+- [lty-hongsejinwei/dsh-luotianyi-skin](https://github.com/lty-hongsejinwei/dsh-luotianyi-skin) — 洛天依和雅音宫羽主题皮肤，天依蓝配色。
 - [lucky01222/dsh-workbench-theme](https://github.com/lucky01222/dsh-workbench-theme) — DSH Web 明暗配色主题：APTX 胶囊标志、浏览器标签标题与图标、可选的灰原哀（名侦探柯南）展示素材，在「设置 → 通用 → 外观」中配置，可选无装饰模式。
 - [luo0712yan0219-blip/dsh-whale-decor](https://github.com/luo0712yan0219-blip/dsh-whale-decor) — 给 DSH Web GUI 的深海鲸蓝换肤：亮/暗两套共 14 个主题 token、5 处鲸尾女仆角色元素、时钟与天气卡片，以及可上下伸缩的硬件状态悬浮窗（CPU / 内存 / GPU / 硬盘温度，温度需 HWiNFO 提供）。包内不含背景图，放一张你自己的即可。源码与角色素材均为 MIT。
 - [luongthimydieu/dsh-client-ui-skin-kitty](https://github.com/luongthimydieu/dsh-client-ui-skin-kitty) — DSH Web UI 的 Hello Kitty 粉色主题皮肤：覆盖 --dsw-alias-* 语义 token（浅色/深色），并给主框架铺上自定义壁纸；作为静态 profile 插件安装，Harness 每次启动自动恢复。
@@ -5805,7 +5807,7 @@ dsh plugin --profile web add dshmarket
 - [liuhange789/data-asset-inspector#research-data-provenance](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/research-data-provenance) — 科研数据溯源审计插件，审计血缘完整性、可复现性与FAIR原则合规性，输出溯源审计报告，支撑科研诚信与开放科学。
 - [liuhange789/data-asset-inspector#underground-pipeline-inspector](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/underground-pipeline-inspector) — 地下管线数据质量检查插件 — 检测覆盖率、接边精度、流向合理性，输出质量评分。默认规则取自国标与广东省导则（坐标系仅认 CGCS2000 及三度带 38–40 带，粗差率阈值 5%），可用配置 JSON 覆盖。
 - [liuhange789/data-asset-inspector#visibility-doctor](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/visibility-doctor) — 诊断 DSH 插件的可发现性（npm 关键词、README 安装写法、GitHub topics、市场收录）并生成改进建议；注册 diagnose_visibility 与 boost_exposure 两个工具。评分规则按作者自家 @liuhange 系列包调校，需联网访问 npm、GitHub API 与 dsh-plugin.org。
-- [liuhange789/dsh-cache-guard](https://github.com/liuhange789/dsh-cache-guard) — DSH 缓存健康度守卫与省钱教练：cache_guard_health 工具给出绿/黄/红健康度、一行干预建议与 PTC 切换提示，cache_guard_config 读写开关与灵敏度。
+- [liuhange789/dsh-cache-guard](https://github.com/liuhange789/dsh-cache-guard) — DSH 提示缓存健康度守卫与省钱教练：npm 包名是 dsh-prompt-cache-guard（与无关的 dsh-cache-guard 不是同一个包）。cache_guard_health 工具给出绿/黄/红健康度、一行干预建议与 PTC 切换提示，cache_guard_config 读写开关与灵敏度。
 - [liuhange789/dsh-mcp-lazy](https://github.com/liuhange789/dsh-mcp-lazy) — MCP 工具按需加载。会话工具集里只保留 coreTools 白名单（最多 5 个）中的 mcp__* 工具，其余 MCP 工具定义经由会话级 tools.restrict() 真正从请求中移除，模型调用 lazy_load_tool 后才装回；tools/pre-execute 闸门把未加载工具的调用拒绝成「请先装载」的提示，会话结束自动重置。
 - [liuhange789/party-eco-agent](https://github.com/liuhange789/party-eco-agent) — 面向党建引领街道产业生态场景的轻量规则工具：生成企业画像卡片、按品类与数量匹配供需、规整政策记录字段（不解析原文）、按优先级给出诉求处理人角色与预计天数；不调用任何外部系统。
 - [LiuJiaCheng11/dsh-postman](https://github.com/LiuJiaCheng11/dsh-postman) — 用 9 个工具在 dsh 里管理 Postman 云端集合——列出、浏览、新增（单个或批量）、修改、删除接口，导出或整体覆盖集合。
@@ -10002,7 +10004,7 @@ dsh plugin --profile web add dshmarket
 - [liguobao/ds-harness-remote](https://github.com/liguobao/ds-harness-remote) — 通过端到端加密通道远程访问 DeepSeek Harness 及兼容的编码工作区，支持自适应 Relay/WebRTC 传输、设备授权、工作区文件、只读预览、终端和可选的 Codex Remote。
 - [Linjiangxian0203/dsh-remote-tunnel](https://github.com/Linjiangxian0203/dsh-remote-tunnel) — 远程主机隧道管理器：把 dsh web 跑在远程 Linux 服务器上（systemd 守护、免 root），本地经自动重连的 SSH 隧道访问；远程端口自动分配并在服务器登记留档，支持多人共用与 audit 审查。
 - [LinYanZhi/dsh-mesh#dsh-mesh](https://github.com/LinYanZhi/dsh-mesh/tree/main/packages/dsh-mesh) — 多设备 DSH 网络：侧栏拓扑、节点健康、委托、文件传输与节点管理，支持 TLS、局域网与公网隧道。DSH 启动时会把它的 mesh 服务（127.0.0.1:8124）以分离进程拉起、退出后重启，且服务始终在 UDP 0.0.0.0:8129 应答局域网发现。peer 配对后，默认 ACL 允许它读取、检索、写入 ~/Code 下的文件，读取会话历史和日志，并把任务委托给你本机的 DSH 会话；shell_run、频道消息、远程桌面和 repair 在你放开之前是关闭的。本机装了 SakuraFrp 时，会读取其 Launcher 的账号 token（或 SAKURA_TOKEN）去查询 api.natfrp.com 的隧道。它的 /api/dsh-mesh 路由只靠对端地址是否回环来放行。
-- [lishuaibing521/dsh-hermes-feishu](https://github.com/lishuaibing521/dsh-hermes-feishu) — DeepSeek Harness 的飞书/Lark 通道：长连接收发消息、Markdown 表格渲染成飞书原生 table 组件、13 个飞书操作工具，带 Web 设置页、语音收发、媒体上传与模型故障转移链。
+- [lishuaibing521/dsh-hermes-feishu](https://github.com/lishuaibing521/dsh-hermes-feishu) — DeepSeek Harness 的飞书/Lark 通道：长连接收发消息，agent 正在跑任务时新消息插进当前这一轮而不是排队；Markdown 表格渲染成飞书原生 table 组件，代码块单独成行；13 个飞书操作工具，语音收发、媒体上传、模型故障转移链，设置页按六个分组标签排布。走自建飞书应用的长连接，不需要公网回调地址。
 - [litestartup-com/dsh-api-gateway](https://github.com/litestartup-com/dsh-api-gateway) — 为第三方客户端提供 REST + SSE 网关：API 密钥鉴权、token 流式回包、会话工作区分组，并可接管 GUI 会话继续对话。
 - [liushQAQ/dsh-anywhere](https://github.com/liushQAQ/dsh-anywhere) — 专为 DSH iOS App 与移动端协同打造的远程连接插件，支持扫码配对、锁屏恢复与隧道管理。
 - [liyuhan7/dsh-phone-mirror](https://github.com/liyuhan7/dsh-phone-mirror) — 在 DSH 右侧栏通过 adb 投屏并反控安卓手机/平板，视频、短视频和聊天留在电脑上，在工位上不必再拿手机；声音转发需 Android 11+，仅支持 Windows。
