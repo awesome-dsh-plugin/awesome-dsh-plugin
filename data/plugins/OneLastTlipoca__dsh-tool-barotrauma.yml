@@ -1,0 +1,6 @@
+url: https://github.com/OneLastTlipoca/dsh-tool-barotrauma
+name: OneLastTlipoca/dsh-tool-barotrauma
+category: tools
+description:
+  en: 'Adds 17 barotrauma_* tools to DeepSeek Harness for making Barotrauma mods: environment probing, mod skeleton, item and weapon XML, afflictions, creatures, random events, Lua and C# script scaffolding, localization, validation, icon generation, zip packaging and Steam Workshop publish notes.'
+  zh: '为 DeepSeek Harness 增加 17 个 barotrauma_* 工具，用于制作潜渊症 mod：环境探测、内容包骨架、物品/武器/状态效果/角色/随机事件 XML、Lua 与 C# 脚本脚手架、本地化、校验、图标生成、打包与创意工坊发布文案。'
