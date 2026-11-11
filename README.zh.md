@@ -4069,7 +4069,7 @@ dsh plugin --profile web add dshmarket
 - [glk1220/dsh-session-git](https://github.com/glk1220/dsh-session-git) — 把分叉会话里做完的工作合并回原会话：/merge 直接从分支的会话记录整理出摘要、不调用模型（每轮的提问与回复、改动的文件、执行的命令、你做的选择、待办和最终结论），随你的下一条消息交给 agent，或用 --wake 立即处理；同一分支再次合并只带新增的轮次。另有 /branches、带合并状态的右侧栏分支地图、输入框上方的未合并提醒，以及供 agent 使用的 session_branches / session_branch_merge 工具。
 - [GnaneshKunal/dsh-session-coldstore](https://github.com/GnaneshKunal/dsh-session-coldstore) — DSH 会话的分层冷存储：闲置会话移出实时根目录、转入磁盘冷层而不被删除；冷层上的 FTS5 索引让它们仍可检索，需要时可将会话恢复回实时根目录。默认为演练模式，在设置页关闭后才会真正移动会话。
 - [GoetheDady/dsh-no-project-sessions](https://github.com/GoetheDady/dsh-no-project-sessions) — 为不属于任何项目的会话提供「不在项目中工作」选项，按首条消息在 ~/Documents/dsh/<日期>/ 下创建可读的独立工作目录，并在侧栏「最近」分区集中展示。
-- [good-saltfish/dsh-multi-session](https://github.com/good-saltfish/dsh-multi-session) — 多会话一体：在一个会话内按工作区总览全部会话的实时状态，钉住最多三个并排看对话正文，可直接发消息或打断，不用来回切换。
+- [good-saltfish/dsh-multi-session](https://github.com/good-saltfish/dsh-multi-session) — 多会话一体：在一个会话内按工作区总览全部会话的实时状态，钉住最多三个并排看对话正文。每张卡片标出它自你上次查看后是否跑完、是否卡在等你回话、是否停滞不动，并列出它改过哪些文件。可直接发消息或打断，不用来回切换，消息会显示排队中／已送达／处理中。可以跨全部会话搜索、把一轮对话转发给另一个会话，也能直接在卡片上换模型。
 - [GooDAnDReaDY/dsh-session-control](https://github.com/GooDAnDReaDY/dsh-session-control) — DSH 侧边栏会话管理：固定对话、搜索内容、读取归档记录并隐藏噪音。
 - [Gorkaseto/dsh-delete-sessions](https://github.com/Gorkaseto/dsh-delete-sessions) — 在侧边栏会话菜单中添加“删除会话”选项，从磁盘上永久删除该会话。
 - [GreenLv/dsh-session-insights](https://github.com/GreenLv/dsh-session-insights) — 回头看看你是怎么使用 AI 的：`/session-insights` 会整理一段时间内的 DSH 会话，找出哪些做法有效、哪些问题总在重复、最终真正留下了哪些成果，并生成一份保存在本机的复盘报告。
