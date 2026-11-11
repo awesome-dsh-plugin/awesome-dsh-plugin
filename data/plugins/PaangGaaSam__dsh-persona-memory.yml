@@ -1,0 +1,6 @@
+url: https://github.com/PaangGaaSam/dsh-persona-memory
+name: PaangGaaSam/dsh-persona-memory
+category: memory
+description:
+  en: Daily session digest that grows a user profile and a companion personality, gated by evidence, and injects both into every prompt.
+  zh: 每日会话摘要，按证据门槛生长用户画像与陪伴性格，并注入每次对话。
