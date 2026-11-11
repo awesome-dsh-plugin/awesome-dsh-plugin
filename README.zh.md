@@ -852,6 +852,7 @@ dsh plugin --profile web add dshmarket
 - [hl3207/dsh-movie](https://github.com/hl3207/dsh-movie) — 为 DSH 网页版的左侧栏加一块影视雷达：把近 21 天内上映与未来 31 天内定档的电影和剧集排成一张加权榜单，美国、欧洲五国、日本和韩国取自 JustWatch，中国取自豆瓣。每行带海报（图床不可达时用绘制的占位图）、五句以内简介、豆瓣与烂番茄评分和豆瓣热门短评。搜索框输入即筛，并向豆瓣、TVMaze 与 iTunes 查询片名，三路结果合并为一条，榜单内命中单独成组。简介、短评与缺失片名经宿主翻译服务转成面板语言，中英文切换后整块重绘。不需要 API Key，也不需要账号。
 - [hmr-BH/dsh-round-rightclick](https://github.com/hmr-BH/dsh-round-rightclick) — 在 DSH Web 对话轮次上点击右键弹出的圆盘菜单：从此轮分叉出新会话、打断生成、复制工作目录路径与会话 ID、打开工作目录、导出会话日志。
 - [Hobartoakes/dsh-model-shelf](https://github.com/Hobartoakes/dsh-model-shelf) — 把聊天模型选择器换成按服务商分组的可折叠列表（最大 640x720），每款模型显示名称、服务商名称、服务商 ID 与精确模型 ID，另有手动整理的「不常用」列表和独立的收藏列表。分类只由用户决定：不统计使用频率、不自动分类。搜索覆盖模型名称、模型 ID、服务商名称、服务商 ID 与账号备注。
+- [Hocete/dsh-skill-card](https://github.com/Hocete/dsh-skill-card) — 技能卡库：把已安装的 DSH 技能渲染成游戏卡牌，支持四种轮播模式浏览、按分类/来源/标签筛选，并可可视化修改稀有度、星数、五维数值、标签与卡面；卡牌数据存在旁路文件里，不改动 SKILL.md，同时支持新建与删除技能目录。
 - [hongcha-dsh/dsh-watchlist](https://github.com/hongcha-dsh/dsh-watchlist) — 在侧边栏对话列表上方增加关注区：每行一个状态圆点（未读、待回复、运行中、失败），有新回复的置顶、运行中的置底，模型选择器左侧还有关注按钮。
 - [HongMing-Huang/dsh-file-upload](https://github.com/HongMing-Huang/dsh-file-upload) — Claude 风格拖拽/回形针文件上传：内容嗅探、文档转 Markdown（微软 MarkItDown，内置 JS 兜底）、文本直插输入框、read_document 工具。
 - [hongxin/dsh-tvision](https://github.com/hongxin/dsh-tvision) — Turbo Vision 式字符窗口管理器：带投影的重叠窗口、Borland 菜单栏、功能键提示条、鼠标拖拽缩放、模态审批对话框，五套皮肤含经典 Borland 蓝。
@@ -2554,6 +2555,7 @@ dsh plugin --profile web add dshmarket
 - [mov-eax-eax/dsh-token-anxiety](https://github.com/mov-eax-eax/dsh-token-anxiety) — 实时按任务追踪 token 成本的小部件：高峰/低谷定价时段、涨价后预测成本、可排序的每任务成本表、多币种（默认 COP/USD/CNY，另有 40 余种）与汇率，以及一键流式解释高成本任务。
 - [mozhuanzuojing/dsh-liangwengu](https://github.com/mozhuanzuojing/dsh-liangwengu) — 按北京时间提醒 DeepSeek API 定价高峰/空闲时段的游戏化插件：可拖动血条胶囊、日夜主题、隐藏彩蛋与修仙突破动画。
 - [mpinaev/dsh-context-governor](https://github.com/mpinaev/dsh-context-governor) — 上下文占用档位、按模型窗口推算的每会话压缩阈值、按缓存读取/写入费率计算的单步费用、缓存命中率、DeepSeek 余额与高峰/低谷费率，以及一键交接。它从不调用模型，也不消耗 token。
+- [MR-MaoJiu/dsh-account-balance](https://github.com/MR-MaoJiu/dsh-account-balance) — 在输入框下方状态栏显示 DeepSeek 账户余额，点击展开钱包明细面板。
 - [Mt-Youya/dsh-plugins#sessions-insight](https://github.com/Mt-Youya/dsh-plugins/tree/main/plugins/sessions-insight) — 按工作目录浏览 Claude Code、DSH 和 Codex 会话日志，查看每轮上下文构成、token 用量、压缩点和费用估算。
 - [mtty-ai/mmx-quota-tool](https://github.com/mtty-ai/mmx-quota-tool) — DSH 网页 MiniMax 配额悬浮卡：会话输入区显示水滴形 5h 已用百分比，点击展开详情面板，列出每个模型的 5h/周用量与重置倒计时，当前默认模型非 MiniMax 时自动隐藏。
 - [Mu-scorpio/token-usage-counter](https://github.com/Mu-scorpio/token-usage-counter) — 持久化 provider 上报的 Token 用量统计，支持按会话、按模型和按日活跃度查看。
