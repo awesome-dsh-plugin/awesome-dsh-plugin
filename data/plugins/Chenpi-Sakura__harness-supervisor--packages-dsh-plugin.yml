@@ -1,0 +1,6 @@
+url: https://github.com/Chenpi-Sakura/harness-supervisor/tree/main/packages/dsh-plugin
+name: Chenpi-Sakura/harness-supervisor#dsh-harness-supervisor
+category: workflow
+description:
+  en: Delegate DSH tasks to independent Pi, Qoder and MiniMax Code workers through session-scoped MCP, with persistent sessions and a shared WebUI for results, events, approvals and cancellation.
+  zh: 通过按会话限定的 MCP，将 DSH 任务委派给独立的 Pi、Qoder 和 MiniMax Code Worker，支持持续会话，并提供查看结果、轨迹、审批和取消任务的共用 WebUI。
