@@ -1,0 +1,7 @@
+url: https://github.com/627666/dsh-sidebar-compact-macos
+name: 627666/dsh-sidebar-compact-macos
+category: ui
+description:
+  en: For the macOS desktop app - replaces the sidebar brand row with four equal buttons (New session, Plugins, Scheduled tasks, More) and tightens the workspace list so more conversations fit; browser and Windows layouts are untouched.
+  zh: macOS 桌面版专用——用「新会话、插件、自动化任务、更多」四个等宽按钮替换侧边栏品牌行，并收紧工作区列表，让侧边栏容纳更多对话；浏览器与 Windows 布局不受影响。
+icon: https://raw.githubusercontent.com/627666/dsh-sidebar-compact-macos/main/assets/icon.png
