@@ -3441,6 +3441,7 @@ dsh plugin --profile web add dshmarket
 - [lsdt45/dsh-model-config](https://github.com/lsdt45/dsh-model-config) — 在 DSH 设置面板为 llm-pi-ai 与官方 DeepSeek 提供方按模型配置思考开关与思考等级，并为各模型配置多模态输入类型。
 - [lucagiftzek/dsh-request-image-cap](https://github.com/lucagiftzek/dsh-request-image-cap) — 把发给模型的每张图片按单边像素上限（默认 2000 px）压缩：通过包装 attachments.readImageRequest 实现，修复 Anthropic 多图请求报错，且不改动已存储的图片。
 - [lucagiftzek/dsh-subagent-tiering](https://github.com/lucagiftzek/dsh-subagent-tiering) — 为未指定 provider/model/effort 的 subagent 调用补上更便宜的同类路由（例如 Opus → Sonnet 5.5 @ medium、Qwen max → Qwen flash）；显式指定的选择与 subagent_fork 保持不动。需在设置里启用 subagent-model-selection 且目标路由在其 allowedModels 中，否则插件不产生任何效果。
+- [LuckyOneTwoThree/dsh-hitchfin](https://github.com/LuckyOneTwoThree/dsh-hitchfin) — 将 WorkBuddy、Qoder、Trae 的订阅模型接入 DSH，支持多账号故障转移、账号级 HTTP(S) 代理与模型可见性管理。
 - [lujianjun19/dsh-llm-github-copilot](https://github.com/lujianjun19/dsh-llm-github-copilot) — GitHub Copilot LLM 适配器：OAuth 设备码登录、从 Copilot API 动态发现模型、视觉模型图片输入支持（gpt-4.1、gpt-4o），以及 Chat Completions 与 Responses 双协议，按模型自动路由。
 - [LycorisRadiataX/dsh-model-tabs](https://github.com/LycorisRadiataX/dsh-model-tabs) — 零配置的输入框模型选择器：每个 provider 一个 tab、各自独立滚动，支持带渠道徽标的跨渠道搜索和推理强度 chips，并与内置 /model 弹窗共享同一份模型目录。
 - [lyingloong/dsh-llm-pool](https://github.com/lyingloong/dsh-llm-pool) — DeepSeek Harness 的统一模型池：会话粘性、能力感知映射与自动故障切换。
@@ -7260,6 +7261,7 @@ dsh plugin --profile web add dshmarket
 - [Romebody/dsh-docx-format](https://github.com/Romebody/dsh-docx-format) — 把生成的 .docx 统一到一套中文公文版式：方正小标宋标题、仿宋正文 29 磅固定行距、段前段后 0、字符单位首行缩进 2 字符，表格每个单元格都水平居中并带重复表头，页脚居中「— 1 —」页码。附件长条目按 2 / 6 / 5 / 6 字符缩进阶梯自动分段，折行点由 Word 实测得到。只有请求里提到「公文」时才套用版式，用户没有明确要求时默认不写落款。
 - [RyanZhangK/dsh-paper-translate](https://github.com/RyanZhangK/dsh-paper-translate) — DSH 的整篇 PDF 文献翻译：BabelDOC（Python CLI 及其 config.toml 里的 OpenAI 兼容 API Key）需自行安装配置；输出双语对照 PDF，跑之前先给 token 成本预估，按领域跨论文复用术语表，并关掉翻译环节服务端默认开启的 thinking 推理开销。
 - [s1lencewill/dsh-markdown-reader](https://github.com/s1lencewill/dsh-markdown-reader) — 在独立全屏阅读器中渲染工作区 Markdown 文件，支持 GFM、KaTeX、Mermaid、目录导航、文件更新同步以及浏览器打印和 PDF 导出。
+- [SamyiHu/dsh-visio](https://github.com/SamyiHu/dsh-visio) — 在 DSH 面板里打开和编辑 Visio（.vsdx）图纸：实时 SVG 预览、图形与连接线编辑、布局检查，另有一个让 Agent 直接读写图纸的 visio 工具。引擎是纯 Python，不需要装 Visio 或 Office。
 - [scientificmaniac/dsh-code-highlight](https://github.com/scientificmaniac/dsh-code-highlight) — 报告代码高亮：一个 highlight_code 工具，68 种语言、15 套主题、11 种输出（内联 HTML、Word 可插 SVG/PNG、LaTeX 等），含 codeinword.com 同款 SyntaxHighlighter 经典主题。PNG 输出需 Python 3 与 Pillow，其他格式无额外依赖。
 - [sd0426301x-dotcom/dsh-knowledge-base](https://github.com/sd0426301x-dotcom/dsh-knowledge-base) — 本地优先的 DSH 工作区侧边栏知识库：索引项目、文档和插件，自动归类，支持搜索、文件预览和可编辑笔记；数据保存在工作区。
 - [sharework-ai/dsh-docwright](https://github.com/sharework-ai/dsh-docwright) — 面向 DeepSeek Harness 的文档生成插件：以 JSON 为核心输出物，结构化管理文档内容输出；统一规范文档生成过程中的参数定义与继承、素材提取、校验结果检查及评分机制，使文档生成紧扣要求，快速且节约 Token；内置 COSMIC 文档生成场景包作为范例，并内置编写场景包的指南。
