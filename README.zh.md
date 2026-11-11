@@ -92,6 +92,7 @@ dsh plugin --profile web add dshmarket
 - [ccll/dsh-advisor-flow](https://github.com/ccll/dsh-advisor-flow) — 移植自 pi-advisor-flow 的执行者/顾问工作流：执行者经 ask_advisor 工具按需请求第二意见（可附问题、草稿、仓库上下文档位与点名文件）；等价工具调用重复达到阈值时在执行前拦截，由顾问以 proceed/revise/blocked 三值裁决，硬模式下回合收口前强制评审；提供逐次 token 与成本台账、/advisor status 状态读数、仓库上下文与文件内容分级授权、六类密钥形状脱敏与 web 设置卡；advisor 失败不停摆主循环。
 - [Clearailhc/clearai-dsh](https://github.com/Clearailhc/clearai-dsh) — 以证据为准的研究用智能体预设：每一步只能靠系统核验过的观测推进，L3 以上的结论交给独立评估者，整场会话折成一份可重放的账本，并长成可浏览的领域本体。需要 DSH >=0.1.7-alpha.1。
 - [DDL095/dsh-moa-native](https://github.com/DDL095/dsh-moa-native) — 原生生成时 MoA：每轮参考模型并行预演同一会话上下文产出草稿，单一聚合模型带完整工具循环执行；配置即模型配方、F 镜像 / R 裁剪双视野、子会话门控（双形态会话目录索引，修复后实效）、按成分派生的配方级视觉（视觉参考路可为纯文本聚合转述图像）、节拍节奏（定调与巡检两套阵容、拍间冻结复用）、退化守卫（剔除退化的参考输出）、模型面匿名（失败提示零供应商身份）、缓存友好化注入（预演记录钉在产出它的那一步而非每步追加到请求末尾，缓存前缀覆盖它、每步只付新增量，缺省开启、全 cadence 档生效）。
+- [Domush/dsh-plugin-antigravity-agents](https://github.com/Domush/dsh-plugin-antigravity-agents) — 原生 Google Antigravity Agent 规范加载与子代理编排引擎，支持模型选择与 Web 设置界面集成。
 - [DoreiHime/dsh-help-me-to-ask](https://github.com/DoreiHime/dsh-help-me-to-ask) — 每个聊天窗口的第一段工作内容前，先问清缺失的目标、交付物、限制与验收标准，再把回答整理成简短的任务说明注入聊天；纯寒暄不会触发。
 - [FelixJiashengFu/dsh-force-collab](https://github.com/FelixJiashengFu/dsh-force-collab) — 强制协作：在输入框左侧选 0–6 个子 Agent，开启后每个动手的任务都必须通过没有数量参数的 collab_fanout 工具拆给正好这么多个子 Agent 并行，再由主 Agent 汇总。
 - [FelixJiashengFu/dsh-muse-code](https://github.com/FelixJiashengFu/dsh-muse-code) — 在 DSH 里使用 Meta 的 Muse Code CLI：输入框开关启动 muse serve，右侧边栏面板与五个聊天工具（muse_open、muse_prompt、muse_read、muse_status、muse_interrupt）共享同一个 Muse 会话，审批只能在面板里决定，本地花费护栏默认到 $10 硬停止。仅限 Windows；需已装好并登录 Muse Code CLI。$10 上限为本机估算，只管本插件启动的 muse serve。
@@ -8976,6 +8977,7 @@ dsh plugin --profile web add dshmarket
 - [DeLightor/dsh-depguard](https://github.com/DeLightor/dsh-depguard) — 依赖拓扑安全：装前预测 + 装后检测 @deepseek-ai/dsh-* 多副本、版本漂移与插件私包，防 Symbol 键冲突崩溃（Cannot read properties of undefined (reading 'prepare')）。
 - [dennisrongo/dsh-plugins#dsh-headless-plus](https://github.com/dennisrongo/dsh-plugins/tree/main/plugins/dsh-headless-plus) — 替换无界面启动流程，为 dsh headless 运行添加 --model provider/model、--resume <id|latest>、--continue 与 --session-info 标志。
 - [disyli/dsh-tool-call-stats](https://github.com/disyli/dsh-tool-call-stats) — 进程内工具调用统计：提供 `tool_stats` 工具，按工具汇报调用次数、失败次数与平均耗时。
+- [Domush/dsh-plugin-antigravity-rules](https://github.com/Domush/dsh-plugin-antigravity-rules) — 原生 Google Antigravity 工程规范加载引擎，支持系统提示词注入与领域规则动态激活。
 - [DonGeeo87/cg-shell-janitor](https://github.com/DonGeeo87/cg-shell-janitor) — 在 Windows 上关闭 shell 命令已结束、却仍然存活的 DeepSeek Harness runner 进程，每个可回收约 140 MB。仅当其 shell 已不存在且不再监管任何子进程时才会关闭，用作 runner 不会自行退出问题的变通办法。
 - [dphmoblie/dsh-error-tell#client-tell](https://github.com/dphmoblie/dsh-error-tell/tree/main/packages/client-tell) — dsh web 启动看门狗：检测并持久化禁用问题插件，让界面正常打开，并提供隔离账本、探针自动恢复与一键恢复。
 - [dragoncdj/dsh-devship](https://github.com/dragoncdj/dsh-devship) — 右栏控制台：识别工作区里带 Spring Boot 启动类的 Maven 模块与 Vite 前端，一键启动 / 停止（支持批量；「关 DSH 不停止」脱离模式默认开启，仅 Windows 可用）、Maven 或 pnpm 打包、经 SSH/SFTP 上传到可命名的多个发布环境（带进度条、每台独立远端目录）、重启对应 docker 容器并校验状态；受保护环境需二次确认。需本机装有 Maven、JDK 与 pnpm；SSH 密码以明文保存在 deploy.json。
