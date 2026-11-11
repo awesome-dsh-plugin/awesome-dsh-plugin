@@ -2825,6 +2825,7 @@ dsh plugin --profile web add dshmarket
 - [cjjchina3088191870-sudo/dsh-plugin-miku-theme](https://github.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme) — 玫瑰女王与初音未来双主题套装，内置主题管理，支持浅深色外观、手机布局和自定义启动视频。
 - [CloudSen/dsh-umbrella-theme](https://github.com/CloudSen/dsh-umbrella-theme) — 生化危机保护伞公司主题，提供明暗双外观、自转保护伞水印与 HUD 装饰。
 - [cngtn/dsh-cngtn-pond](https://github.com/cngtn/dsh-cngtn-pond) — 纸墨主题，提供暖色纸面、细描边和近方形圆角，并在整个界面后方绘制动态 ASCII 锦鲤池；主题不指定字体，沿用 DSH 自带字体栈（或设置中选择的字体）。
+- [cnhenaihui/dsh-ios-theme](https://github.com/cnhenaihui/dsh-ios-theme) — iOS 风格外观插件：浅色/深色/自动模式、iOS 系统色强调色板、夜间护眼、OpenCode 调色板与字体排版、本地背景图（模糊、透明、轮换）。
 - [codeMonkey-Pine/dsh-wallpaper](https://github.com/codeMonkey-Pine/dsh-wallpaper) — Wallpaper Engine 壁纸联动：把本机下载的 WE 壁纸（创意工坊 431960 + 本地 projects）设为 DSH Web GUI 页面背景（图片/视频/网页原样渲染，场景壁纸柔化为静态预览），侧边栏「壁纸设计」面板可调不透明度、作用范围、填充、模糊、暗角、帧率、视差、轮播与主题联动，附 wallpaper_scan/list/set/config 四个 agent 工具。
 - [CoolTea001/dsh-cool-theme](https://github.com/CoolTea001/dsh-cool-theme) — 主题插件 —— 支持深色/浅色外观切换，提供 34 款预设主题，支持创建/分享/导入自定义主题。
 - [CosmerHomura/dsh-yoimiya-theme](https://github.com/CosmerHomura/dsh-yoimiya-theme) — 《原神》宵宫主题：严格核算过对比度的明暗双色板、程序化生成的烟花粒子层，以及一个读取你自己本地文件的播放器——歌曲与封面不上传到任何地方。语法高亮为暖色，标识为自绘金鱼；除壁纸外所有画面都由 CSS 渐变与手写 SVG 生成。
@@ -3943,6 +3944,7 @@ dsh plugin --profile web add dshmarket
 - [chyxhtc/dsh-ws-recency](https://github.com/chyxhtc/dsh-ws-recency) — DSH 侧栏会话管理：工作区分组按最近活跃排序，过期历史折叠成一个「展开历史」控件，所有置顶会话汇总到顶部置顶区，运行中/未读/需跟进三色标记，删除会话移入可恢复的回收站（面板同时管理已归档会话），按工具拆分、参数与结果分开的 token 消耗统计，把会话移动到另一个工作区，以及一键把游离会话重新挂回工作区。
 - [cindyguyuehu123/dsh-webchatlike](https://github.com/cindyguyuehu123/dsh-webchatlike) — 更贴近 deepseek 网页版/App 的聊天体验：原位编辑提问、重新生成回复、每条消息带 <i/N> 版本翻页器（树状版本模型，跨对话保持稳定）。
 - [CJXIAO0718/dsh-plugin-session-share](https://github.com/CJXIAO0718/dsh-plugin-session-share) — 把任意 DSH 会话导出为单文件、离线可打开的 HTML 分享页：可按单条消息挑选、工具调用折叠，并默认脱敏本机路径与密钥。
+- [cnhenaihui/dsh-session-export](https://github.com/cnhenaihui/dsh-session-export) — 把一次会话及其智能体编队从同一份冻结快照导出为两份 Markdown：可读叙事摘要与完整原始存档。导出位置按会话文件策略校验，不可写时自动改存工作区 exports 目录。
 - [ColdRainLab/dsh-session-delete](https://github.com/ColdRainLab/dsh-session-delete) — 为侧栏增加「移入垃圾箱」与会话垃圾箱：删掉的会话可在工作区侧栏里恢复或彻底删除。
 - [columforge/dsh-session-timeline](https://github.com/columforge/dsh-session-timeline) — 右侧栏会话时间线：以鱼骨布局展示工作区全部会话，含原生 fork/handoff 血缘、手工拖拽衔接、分支扇出、归档会话显示与逐轮详情浏览。
 - [CooperZhuang/dsh-plugins-cooper-custom#dsh-session-ops](https://github.com/CooperZhuang/dsh-plugins-cooper-custom/tree/main/packages/dsh-session-ops) — DeepSeek Harness 的会话运维：真正删除持久化会话（未分组、临时、归档、子代理四种筛选；运行中、仍在宿主加载中与属于工作区的会话默认拒绝删除），并在工作区之间搬迁会话（日志迁移、header.cwd 改写、workspace 注册表跟随）。内含共享的会话存储库。
@@ -4680,6 +4682,7 @@ dsh plugin --profile web add dshmarket
 - [djasdh/interest-memory](https://github.com/djasdh/interest-memory) — 由本地 Go 服务支撑的跨会话长期记忆（约 50MB 内存，SQLite-vec + 经验证增强的论断）：每条用户消息零延迟注入召回、会话结束时摄入对话记录，提供 memory_search / memory_logs / memory_ingest 工具。安装：`dsh plugin --profile web add @djasdh/interest-memory-dsh-bridge`。仅为协议桥：Go 主服务不随 `dsh plugin add` 安装，需先按仓库 README 安装并启动；服务未运行时工具静默返回空。
 - [dogbotowo-oss/dsh-long-memory](https://github.com/dogbotowo-oss/dsh-long-memory) — DeepSeek Harness 长会话记忆插件：把已经定下来的决定、用户的纠正和精确数字连同统计口径与来源存下来，压缩或重启后仍能找回、复用，适合 100–1000+ 轮会话；每步只注入一小段有预算的证据块，已启用的 skill 规则也在这块里按任务重新装配。
 - [domitor-syh/dsh-knowbase](https://github.com/domitor-syh/dsh-knowbase) — DeepSeek Harness 的本地知识库：每个库对应一个本地文件夹，支持 UTF-8 文本、文本型 PDF 与图片 OCR 资料；每轮对话前用中文 n-gram 与 BM25 从本会话所选库中检索，回答带可在右侧阅读器打开原文的引用；并提供 kb_list、kb_search、kb_read、kb_stats、kb_propose_text 五个工具与 /kb 系列命令（新建、选用、文件、检索、重扫）。
+- [Domush/dsh-plugin-context-mode](https://github.com/Domush/dsh-plugin-context-mode) — 原生支持 context-mode (mksglu/context-mode)，通过 SQLite FTS5 拦截工具大输出并提供 BM25+RRF 搜索与会话连续性恢复。
 - [drscrewdriver/dsh-prime-memory](https://github.com/drscrewdriver/dsh-prime-memory) — 分层记忆插件，面向 Agent 暴露 10 个工具：高权限写入（memory_add / memory_delete / memory_import）、反刍控制（memory_ruminate / _cancel / _status）与记忆图谱（memory_search_graph / memory_expand_graph_node），底层为 L0–L3 蒸馏管线，并在每步模型调用前召回注入相关记忆。
 - [DSH-Raising-Plan/dsh-context-budget](https://github.com/DSH-Raising-Plan/dsh-context-budget) — 长对话裁剪工具：trim_context / estimate_context_tokens 保留系统人设与最后一条消息，按轮丢弃最旧的用户/助手对话以压到轮数或 token 预算内，并回报裁剪前后的估算；不调用工具就不会自动裁剪。
 - [DSH-Raising-Plan/dsh-mnemosyne](https://github.com/DSH-Raising-Plan/dsh-mnemosyne) — DSH 演化记忆基础设施：用证据、时间、情境与纠错支撑长期连续性；后台是本地 Python 3.11+ 记忆服务（fastapi/uvicorn/pydantic，插件以 python3 子进程自动启动）。
@@ -7793,6 +7796,7 @@ dsh plugin --profile web add dshmarket
 - [do-nothing/media-suite#media-runninghub](https://github.com/do-nothing/media-suite/tree/main/packages/media-runninghub) — 把 RunningHub 云端 ComfyUI 工作流当作后台任务池来跑：提交一批任务后，watcher 按并发上限自动派发、逐轮询每个任务、把产物全部下载到本地，池子排空时唤醒会话。共享台账记录批次、费用、实例规格、发起与完成时间以及每个文件的保存位置，右侧边栏有实时看板。
 - [dogbotowo-oss/dsh-agent-manager](https://github.com/dogbotowo-oss/dsh-agent-manager) — DeepSeek Harness 的子代理和团队队友管理：停掉正在跑的实例，或者真正移除——日志一行不删，只在原位置把记录标记为已移除，子会话目录移入可恢复的回收站；带模型工具、会话头部面板和离线 CLI。
 - [Dogwind221/dwguard-dsh-hmos](https://github.com/Dogwind221/dwguard-dsh-hmos) — DSH 侧鸿蒙交付编排插件：冻结四维验收任务包（可量化判据带机器可校验断言）、派发前对抗预审、以 Goal 模式交给 DevEco Code，再用独立取证（截图 / 布局树 / 日志 / 带 SHA-256 的证据包）做外部审计，按实测值重算断言判定并生成返工单；含带官方引用的规则目录、用户确认状态与闸门校准账本。
+- [Domush/dsh-plugin-grill-me](https://github.com/Domush/dsh-plugin-grill-me) — 仿照 Google Antigravity /grill-me 工作流的结构化需求澄清与方案规划斜杠命令。
 - [DrizzleGig/dsh-novel-beat](https://github.com/DrizzleGig/dsh-novel-beat) — 小说写作的剧情决策闸：七个 beat_* 工具把会改变故事的节点登记成决策点、给出 2–4 个带结构化状态变化的走向；作者拍板写入全书账本（canon + 义务），后续章节的 compile/verify 都会继承；beat_gate 在没拍完前返回 pass:false，beat_compile 产出本章契约，beat_verify 检查正文是否漏了变化、踩了禁项、或到期义务没回应。默认关闭，/beat on 或输入框按钮开启。
 - [Drkoh-wz/team-craft#team-flowise](https://github.com/Drkoh-wz/team-craft/tree/main/packages/team-flowise) — DSH 的多角色团队编排插件：给每个角色各自的模型、人设与工具，按依赖跑节点图，带独立评审与有上限的返工，并在界面里看进度。
 - [drliuhuan/dsh-plugin-folder-trust](https://github.com/drliuhuan/dsh-plugin-folder-trust) — 仅 Windows：新增工作区时授权一次，补齐 workspace-write 沙箱所需的 NTFS 权限，并把授权与 Low 完整性标签铺进已有子目录；修复过程带实时进度与日志。
