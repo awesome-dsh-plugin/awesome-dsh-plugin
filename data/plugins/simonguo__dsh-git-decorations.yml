@@ -1,0 +1,7 @@
+url: https://github.com/simonguo/dsh-git-decorations
+name: simonguo/dsh-git-decorations
+category: git
+description:
+  en: Adds read-only Git status colors, file badges and directory change summaries to the native DSH file tree, with cached status reads and a manual refresh button.
+  zh: 在 DSH 原生文件树中显示只读 Git 状态颜色、文件标记和目录变更汇总，提供状态缓存及手动刷新按钮。
+tarball: https://github.com/simonguo/dsh-git-decorations/releases/download/v0.1.0/dsh-git-decorations.tgz
