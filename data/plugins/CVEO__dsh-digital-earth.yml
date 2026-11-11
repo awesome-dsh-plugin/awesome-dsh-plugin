@@ -1,0 +1,17 @@
+# 投稿条目：awesome-dsh-plugin/awesome-dsh-plugin
+# 目标路径：data/plugins/CVEO__dsh-digital-earth.yml
+# 规则来源：https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md
+# 注意：一个 PR 只加这一个文件；描述必须与代码一致，不要带营销词。
+
+url: https://github.com/CVEO/dsh-digital-earth
+name: CVEO/dsh-digital-earth
+category: ui
+description:
+  en: 'Interactive 3D earth panel with 3D Tiles and 3DGS layers, plus Agent tools for scene editing, GEOJSON annotation, measurement, spatial analysis and shader presets.'
+  zh: '在对话同屏的三维地球上叠加 3D Tiles / 3DGS 图层，并提供场景读写、GEOJSON 标注、量测、空间分析与视觉特效等 Agent 工具。'
+
+icon: https://raw.githubusercontent.com/CVEO/dsh-digital-earth/main/assets/icon.png
+
+# 可选：tarball 仅在你的仓库无法从源码安装时才需要；已发 npm，无需填写。
+# 已发布 npm 包（@cveo/dsh-digital-earth），条目里不要手写 npm: 字段——会被校验拒绝，
+# 注册表映射由 CI 通过 package.json 的 repository 字段自动关联。
