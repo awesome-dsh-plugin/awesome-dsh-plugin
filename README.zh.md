@@ -9523,6 +9523,7 @@ dsh plugin --profile web add dshmarket
 - [tuogusa/dsh-skill-manager](https://github.com/tuogusa/dsh-skill-manager) — 在 Web 设置面板中浏览、搜索、删除/撤回并更新用户技能，支持从 GitHub/Gitee Release 检查技能更新。
 - [TwinsEarth/DSH-2Xray](https://github.com/TwinsEarth/DSH-2Xray) — 为 DSH 提供 Xray 受管内核与分流：VLESS 导入、全局/国内直连/白名单路由、三卡片实时面板与自更新。
 - [TwinsEarth/dsh-fang](https://github.com/TwinsEarth/dsh-fang) — 为 DeepSeek Harness 插件开发与测试提供母体、元主、分身隔离工作区。
+- [tyouter/dsh-recorder](https://github.com/tyouter/dsh-recorder) — 按脚本操作另一个 DSH 插件的真实界面，并把真实窗口录成 GIF。
 - [vamyane/dsh-skill-audit](https://github.com/vamyane/dsh-skill-audit) — 给 DeepSeek Harness 的技能与插件做体检的审核台：扫描本地技能目录和已安装插件，检查容易导致安装失败的打包规则，逐项打分并导出 Markdown 修复报告。
 - [ven314/dsh-conflict-doctor](https://github.com/ven314/dsh-conflict-doctor) — DSH 插件冲突诊断与修复建议。把运行期能力图谱与磁盘上的 cordis.patch.yml 层对齐，并与真正在运行的宿主（而不是 profile 里可能过期的副本）比对导入、peer 范围与配置，检出那些不会自己报错的静默故障：卡在 PENDING 等待无人提供的服务、浏览器半区注入了无人提供的客户端模块、两个插件注册同一个 tool id、Loader entry id 重复、某层停用又被后一层重新插入的行、导入了运行宿主未通过 exports 暴露的子路径、以及 inject 声明之间成环。每条结论都带证据、归属置信度与带风险分级的修复：用 --dry-run 在内存里试修并看修改前后差异，或用 --fix-out 拿到独立的 .patch.yml 文件自己挑（这些文件不会被 DSH 加载，挑错也不影响运行）。
 - [Verchiel666/dsh-aosp](https://github.com/Verchiel666/dsh-aosp) — 从 codeload 拉 AOSP 源码快照，在本机用 ripgrep 检索，九个工具覆盖镜像列表、预设包、拉取、增量更新、跨模块正则搜索、启发式调用链追踪与按行读取，不需要 git、root 或编译。
