@@ -1,0 +1,6 @@
+url: https://github.com/Domush/dsh-plugin-grill-me
+name: Domush/dsh-plugin-grill-me
+category: workflow
+description:
+  en: Structured planning and requirement gathering slash command mimicking the Google Antigravity /grill-me workflow.
+  zh: 仿照 Google Antigravity /grill-me 工作流的结构化需求澄清与方案规划斜杠命令。
