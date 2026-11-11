@@ -1,0 +1,8 @@
+url: https://github.com/Starsky16/dsh-compat
+name: Starsky16/dsh-compat
+category: dev
+tarball: https://github.com/Starsky16/dsh-compat/releases/latest/download/dsh-compat.tgz
+icon: https://raw.githubusercontent.com/Starsky16/dsh-compat/main/assets/icon-180.png
+description:
+  en: 'Compatibility layer for DSH on Termux/Linux: an opt-in loader patch keeps one broken client plugin from blanking the whole page, overlay surfaces render solid, and a pre-install doctor checks plugin manifests and client dependencies. The loader patch is anchored to DSH 0.2.2-rc.1.'
+  zh: 'DSH 兼容层（Termux/Linux）：可选的加载器补丁让单个坏插件不再整页白屏，弹层改实色渲染，装插件前用 doctor 体检清单与客户端依赖。加载器补丁仅锚定 DSH 0.2.2-rc.1。'

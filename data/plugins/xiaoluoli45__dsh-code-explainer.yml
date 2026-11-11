@@ -1,0 +1,6 @@
+url: https://github.com/xiaoluoli45/dsh-code-explainer
+name: xiaoluoli45/dsh-code-explainer
+category: ui
+description:
+  en: 'Adds a Chinese end-of-line comment to every line of code shown in a DSH tool card - grey for the call being made, blue arrows for code in the output - written instantly by a local rule set and, for lines the rules cannot judge, by the current session model; a header toggle returns the block to plain code, and credentials are masked before anything is sent or cached.'
+  zh: '在 DSH 工具卡的代码块上给每一行加中文行尾注释：输入侧是灰色「//」，输出侧的代码用蓝色箭头，规则能判的行即时给出、判不出的行用当前会话的模型补一版；顶部「注释：开/关」可关回纯代码，内容在发给模型与落盘前先做凭据掩码。'

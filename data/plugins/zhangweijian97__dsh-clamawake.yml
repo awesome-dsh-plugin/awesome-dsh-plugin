@@ -1,0 +1,6 @@
+url: https://github.com/zhangweijian97/dsh-clamawake
+name: zhangweijian97/dsh-clamawake
+category: tools
+description:
+  en: 'Keeps the Mac awake for as long as the DSH host is running, whether or not an agent is working: starts ClamAwake''s virtual display (mirroring the main screen) plus caffeinate -d, stops both when DSH exits and restarts the engine if it crashes. Self-contained (bundles the arm64 vd-engine, GPL-3.0). Requires macOS on Apple Silicon.'
+  zh: '只要 DSH 宿主在运行就让 Mac 保持清醒，不论智能体是否在工作：启动 ClamAwake 的虚拟屏（镜像主屏）并挂 caffeinate -d，DSH 退出时一并停止，引擎崩溃自动重启。自包含（随包带 arm64 vd-engine，GPL-3.0）。需要 Apple Silicon 的 macOS。'

@@ -1,0 +1,6 @@
+url: https://github.com/aooom4/dsh-qq-dice
+name: aooom4/dsh-qq-dice
+category: ui
+description:
+  en: 'Adds a DSH settings panel for QQ proactive-message dice rolls, showing per-conversation progress, hit statistics and quiet/guarantee countdowns, with editable parameters that apply immediately. Reads from an auto-detected local bridge, a custom HTTP status endpoint, or a built-in demo engine.'
+  zh: '在 DSH 设置里显示 QQ 主动消息投骰进度：逐会话计数、命中统计、安静与保底倒计时，参数可改并立即生效；数据源支持自动探测本机桥接、自定义 HTTP 接口或内置演示引擎。'

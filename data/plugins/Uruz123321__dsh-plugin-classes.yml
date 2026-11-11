@@ -1,0 +1,6 @@
+url: https://github.com/Uruz123321/dsh-plugin-classes
+name: Uruz123321/dsh-plugin-classes
+category: session
+description:
+  en: "Plugin classes for DeepSeek Harness: installing a plugin is global, so every session sees every tool. This plugin splits installed plugins into mutually invisible classes and registers each composition as an ordinary @deepseek-ai/dsh-agent-preset, so a session mounts only the plugins of the classes it belongs to; classes are toggled from a chip next to the model selector. Deleting a class only hides it (its preset stays registered), so sessions already bound to it still open."
+  zh: "插件管理：DSH 装插件是全局的，每个会话都会看到所有工具。本插件把已安装插件切成互不可见的“插件类”，每个组合注册成普通的 @deepseek-ai/dsh-agent-preset，会话只挂载它所属类的插件，类在输入框左侧的芯片里切换；删除类只做隐藏（preset 继续注册），已绑定它的会话不会打不开。"

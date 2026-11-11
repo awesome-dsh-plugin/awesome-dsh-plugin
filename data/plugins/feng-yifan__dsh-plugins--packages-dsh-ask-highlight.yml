@@ -2,5 +2,5 @@ url: https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-ask-highli
 name: feng-yifan/dsh-plugins#dsh-ask-highlight
 category: ui
 description:
-  en: 'Highlights answered ask blocks (question n/n answered) in the conversation with a soft card style; pending asks and other tool blocks keep their native look; optional expand-by-default and a settings page.'
-  zh: '提问块高亮：把对话里已答复的「提问 n/n 已回答」工具块用柔和卡片样式凸显；等待中的提问块与其它工具块保持原样；可选择让提问块默认展开，设置页可配。'
+  en: 'Highlights answered ask blocks (the “question n/n answered” tool rows) in the conversation with a soft brand-tinted card that follows the light/dark theme; pending asks and other tool blocks keep their native look. Settings can toggle highlighting and expand-by-default.'
+  zh: '提问块高亮：把对话里已答复的「提问 n/n 已回答」工具块用柔和品牌色卡片凸显，明暗主题自适应；等待中的提问块与其它工具块保持原样。设置页可开关「高亮已答复提问块」与「默认展开」。'

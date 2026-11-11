@@ -1,0 +1,6 @@
+url: https://github.com/NoneadChina/dsh-nonead-prompt-rewind
+name: NoneadChina/dsh-nonead-prompt-rewind
+category: session
+description:
+  en: 'Conversation rewind for DSH: rewind in place to any earlier user message with one click or the /rewind and /undo commands, without a new branch or window, and optionally restore workspace files edited by write tools. A Settings page lists recent rewinds per workspace and can undo the file changes from the latest one. Derived from SiriLee/dsh-rewind and maintained separately; do not install both (they share the /rewind and /undo commands and the rewind-snapshots directory).'
+  zh: 'DSH 对话回退：一键就地回退到任意更早的用户消息（也可用 /rewind、/undo 命令），无需新建分支或切换窗口，并可一并还原被写类工具修改过的工作区文件；设置页按工作区列出最近的回退记录，可撤销最新一次回退的文件改动。基于 SiriLee/dsh-rewind 派生并独立维护，不能与上游同装（共用 /rewind、/undo 命令和 rewind-snapshots 备份目录）。'

@@ -1,0 +1,6 @@
+url: https://github.com/nacivageer/dsh-skill-history
+name: nacivageer/dsh-skill-history
+category: skill
+description:
+  en: Skill usage history rebuilt from local session logs, with per-day counts, session drill-down and custom groups.
+  zh: 从本机会话日志回填的技能使用历史：按天计数、下钻到会话、自定义分组。

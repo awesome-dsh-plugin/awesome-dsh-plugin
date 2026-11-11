@@ -1,0 +1,8 @@
+url: https://github.com/ZhongqiXiao/dsh-annotator
+name: ZhongqiXiao/dsh-annotator
+category: browser
+description:
+  en: 'Pick elements on a real Chrome, Edge or ego lite page inside DeepSeek Harness, comment and screenshot them, then insert the annotation as a chat reference chip — the agent receives the CSS selector, page position, comment and screenshot, and edits the front end you are looking at. It launches Chrome or Edge with its own profile and a random local debugging port and injects an overlay into the pages; for ego lite it attaches to the instance you already have open unless DSH_VISUAL_ANNOTATOR_ADOPT_RUNNING=0.'
+  zh: '在 DeepSeek Harness 里拾取真实 Chrome / Edge / ego lite 页面上的元素，写评论、截元素图，再把标注插入对话输入框——agent 拿到 CSS 选择器、页面位置、评论与截图，照着你眼前的界面改前端。它用自己的用户目录和随机本地调试端口启动 Chrome 或 Edge，并在页面里注入一个悬浮层；选 ego lite 时会接入你已经开着的那个实例（把 DSH_VISUAL_ANNOTATOR_ADOPT_RUNNING 设为 0 可关闭）。'
+icon: https://raw.githubusercontent.com/ZhongqiXiao/dsh-annotator/main/assets/icon-180.png
+tarball: https://github.com/ZhongqiXiao/dsh-annotator/releases/latest/download/dsh-annotator.tgz

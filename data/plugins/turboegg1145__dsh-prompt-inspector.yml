@@ -1,0 +1,7 @@
+url: https://github.com/turboegg1145/dsh-prompt-inspector
+name: turboegg1145/dsh-prompt-inspector
+category: usage
+description:
+  en: 'Lists every system-prompt section, context block and tool schema assembled for a session with per-item token estimates, and lets you rewrite sections or hide tools for that session.'
+  zh: '逐条列出为某个会话装配的系统提示词分段、上下文块与工具 schema，并给出各自的 token 估算；可就地改写分段文本或隐藏工具，改动只对该会话之后生效。'
+icon: https://raw.githubusercontent.com/turboegg1145/dsh-prompt-inspector/main/assets/icon-256.png

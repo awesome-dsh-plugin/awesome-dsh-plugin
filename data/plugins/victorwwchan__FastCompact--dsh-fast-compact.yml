@@ -1,0 +1,6 @@
+url: https://github.com/victorwwchan/FastCompact/tree/main/dsh-fast-compact
+name: victorwwchan/FastCompact#dsh-fast-compact
+category: session
+description:
+  en: "Deterministic, zero-LLM compaction engine for DeepSeek Harness: the checkpoint is compiled locally from the session log with no summarizing round-trip, and dropped tool traffic becomes seq reference lines the model can restore with recall, which helps on small context windows. Ships as two packages: install dsh-fast-compact and dsh-fast-compact-preset, add both to the profile's bundles, pick the Fast Compact (standard) preset and start a new session. Needs dsh >=0.1.5-rc.2 <0.3.0."
+  zh: "面向 DeepSeek Harness 的确定性、零 LLM 压缩引擎：直接从会话日志在本地编出检查点，不走摘要往返；被丢弃的工具往返变成 seq 引用行，模型可用 recall 取回，对小上下文窗口尤其有用。由 dsh-fast-compact 与 dsh-fast-compact-preset 两个包组成：需都安装并加入 profile 的 bundles，再选「Fast Compact (standard)」预设并新开会话；要求 dsh >=0.1.5-rc.2 <0.3.0。"

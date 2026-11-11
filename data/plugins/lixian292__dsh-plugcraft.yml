@@ -1,0 +1,8 @@
+url: https://github.com/lixian292/dsh-plugcraft
+name: lixian292/dsh-plugcraft
+category: dev
+icon: https://raw.githubusercontent.com/lixian292/dsh-plugcraft/main/assets/icon-180.png
+tarball: https://github.com/lixian292/dsh-plugcraft/releases/download/v0.12.0/dsh-plugcraft-0.12.0.tgz
+description:
+  en: "Reuse-first plugin authoring workbench: clarifies a plugin need, searches installed plugins, the curated market and GitHub for reusable implementations, then decomposes the remaining gaps and verifies the generated bundle before installation."
+  zh: "复用优先的插件创作工作台：先澄清需求，检索已装插件、市场目录与 GitHub 中可复用的实现，再解构剩余缺口，并在安装前校验生成的插件包。"

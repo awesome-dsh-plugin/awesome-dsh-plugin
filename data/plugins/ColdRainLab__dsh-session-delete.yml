@@ -1,0 +1,8 @@
+url: https://github.com/ColdRainLab/dsh-session-delete
+name: ColdRainLab/dsh-session-delete
+category: session
+tarball: https://github.com/ColdRainLab/dsh-session-delete/releases/download/v0.2.4/dsh-session-delete-0.2.4.tgz
+
+description:
+  zh: '为侧栏增加「移入垃圾箱」与会话垃圾箱：删掉的会话可在工作区侧栏里恢复或彻底删除。'
+  en: 'Adds "move to trash" and a session trash to the sidebar: restore removed sessions or delete them for good.'

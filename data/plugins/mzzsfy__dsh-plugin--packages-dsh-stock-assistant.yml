@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-stock-assistant
+name: mzzsfy/dsh-plugin#dsh-stock-assistant
+category: tools
+description:
+  en: 'Stock workspace for eight markets: watchlists with groups and price marks, quotes, K-line charts and a floating ticker; default data source needs no account. Needs @mzzsfy/dsh-session-manager installed (it loads the shared client library).'
+  zh: '股票工作台:八市场自选(分组/置顶/价格标记)、行情、K 线图与悬浮盯盘;默认数据源免注册,页面状态不随会话切换销毁。需同时安装 @mzzsfy/dsh-session-manager(代挂公共 client 依赖)。'
+icon: https://raw.githubusercontent.com/mzzsfy/dsh-plugin/main/assets/icons/png/dsh-stock-assistant.png

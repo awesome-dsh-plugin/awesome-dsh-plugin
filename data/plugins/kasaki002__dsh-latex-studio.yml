@@ -1,0 +1,6 @@
+url: https://github.com/kasaki002/dsh-latex-studio
+name: kasaki002/dsh-latex-studio
+category: docs
+description:
+  en: 'LaTeX studio for DeepSeek Harness on Windows: a portable MiKTeX engine (xelatex / pdflatex) behind a conversation tab and a web editor with a formula panel, plus compile, PDF preview and download. The engine installs on first use; nothing is written to the registry or PATH.'
+  zh: 'LaTeX 工作室（Windows）：便携 MiKTeX（xelatex / pdflatex）引擎，提供会话页签、带公式面板的网页编辑器，以及编译、PDF 预览与下载；首次使用时一键安装引擎，不写注册表、不改 PATH。'

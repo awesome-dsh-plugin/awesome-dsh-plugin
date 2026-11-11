@@ -1,0 +1,7 @@
+url: https://github.com/dream-office/dsh-note-wall
+name: dream-office/dsh-note-wall
+category: ui
+tarball: https://github.com/dream-office/dsh-note-wall/releases/download/v1.2.0/dsh-note-wall-1.2.0.tgz
+description:
+  en: 'Sidebar sticky-note wall for DeepSeek Harness: capture notes locally, color-code and group them, attach links and images; data stays on your machine.'
+  zh: DSH 侧栏便签墙：随手记录灵感，用颜色和分类整理，支持链接与图片，数据只存本机。

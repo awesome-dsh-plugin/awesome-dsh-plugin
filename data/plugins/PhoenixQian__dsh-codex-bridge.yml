@@ -1,0 +1,7 @@
+url: https://github.com/PhoenixQian/dsh-codex-bridge
+name: PhoenixQian/dsh-codex-bridge
+category: workflow
+description:
+  en: 'Tongzhou: named local Codex–DSH discussions and read-only conversation views, with a DSH bundle and optional one-click Codex skill setup. Initially supports macOS with DSH Desktop 0.2.2-rc.1.'
+  zh: '同舟：Codex 与 DSH 的本机具名讨论和只读会话阅读，提供 DSH 插件与可选的一键 Codex 技能接入。首版支持 macOS 和 DSH Desktop 0.2.2-rc.1。'
+tarball: https://github.com/PhoenixQian/dsh-codex-bridge/releases/download/v0.3.0/dsh-codex-bridge-0.3.0.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/suifei/dsh-ai-team
+name: suifei/dsh-ai-team
+category: agi
+description:
+  en: 'Wenyuan Pavilion: an AI Team workbench for DSH with owned tasks, independent acceptance, an append-only ledger and concurrent projects. Install it into its own profile (dsh plugin --profile ai-team add @suifei/dsh-ai-team), not web or desktop: its patch sets that profile''s sandbox to danger-full-access and approvals to never, and the member agents run with full access. The project''s PMO acts automatically by default (every 60 s it resolves pending decisions and wakes owners to dispatch the next tasks); turn off PMO auto to send decisions to your inbox.'
+  zh: '文渊阁：DeepSeek Harness 的 AI Team 工作台——有 owner 的 Task、独立验收、append-only 账本与并发 Project。请装进专用 profile（dsh plugin --profile ai-team add @suifei/dsh-ai-team），不要装进 web 或 desktop：插件的 patch 会把该 profile 的沙箱设为 danger-full-access、审批设为 never，成员 Agent 以完全权限运行。项目的 PMO 默认自动运行（每 60 秒自动处理待决事项，并唤醒负责人派发下一批任务），关掉“PMO 自动”后决策才会进你的收件箱。'

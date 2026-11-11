@@ -1,0 +1,7 @@
+url: https://github.com/CoraxEldridge/dsh-managed-workspaces
+name: CoraxEldridge/dsh-managed-workspaces
+category: ui
+description:
+  en: 'Creates DSH workspaces under a configurable base directory, links several external folders into one workspace, and relocates a workspace without losing its conversations. Its managed_workspace tool lets the agent create, adopt, link, move and unregister workspaces (moving relocates the whole folder and leaves a link at the old path when it has conversations), and its HTTP routes (/dsh-managed-workspaces/api/...) have no DSH access check beyond a marker header.'
+  zh: '在可配置的根目录下创建 DSH 工作区，把多个外部文件夹关联到同一个工作区，并能在不丢失对话的情况下迁移工作区。它的 managed_workspace 工具允许模型创建、接管、关联、迁移和注销工作区（迁移会移动整个文件夹，有会话时在原路径留一个链接），插件的 HTTP 路由（/dsh-managed-workspaces/api/…）除一个标记头外没有 DSH 的访问检查。'
+icon: https://raw.githubusercontent.com/CoraxEldridge/dsh-managed-workspaces/main/assets/icon-180.png

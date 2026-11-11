@@ -2,6 +2,6 @@ url: https://github.com/ybniaobu/dsh-3d-viewer
 name: ybniaobu/dsh-3d-viewer
 category: ui
 description:
-  en: 'Preview FBX, OBJ, glTF, GLB, and STL models plus TGA, EXR, and HDR textures from the current session''s workspace in DSH''s right sidebar. Open a model to orbit, zoom, auto-rotate, switch materials and environments, and play embedded animations.'
-  zh: '在 DSH 右侧边栏预览当前会话工作区里的 FBX、OBJ、glTF、GLB、STL 模型，以及 TGA、EXR、HDR 纹理。打开模型即可旋转、缩放、自动旋转、切换材质与环境，并播放内置动画。'
+  en: 'Preview 3D models and textures from the session workspace in DSH''s right sidebar. Supported formats include FBX, OBJ, glTF, GLB, and STL models, plus TGA, EXR, and HDR textures.'
+  zh: '在 DSH 右侧边栏预览会话工作区中的 3D 模型和纹理。支持 FBX、OBJ、glTF、GLB、STL 模型，以及 TGA、EXR、HDR 纹理。'
 icon: https://raw.githubusercontent.com/ybniaobu/dsh-3d-viewer/main/assets/icon-180.png
