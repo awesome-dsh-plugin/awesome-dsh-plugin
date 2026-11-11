@@ -1,0 +1,7 @@
+url: https://github.com/1326007879-sys/companion-memory
+name: 1326007879-sys/companion-memory
+category: memory
+description:
+  en: 'Local long-term memory core for DeepSeek Harness with plain-text notes, a bounded index, five tools, optional host-model consolidation and auditable evidence.'
+  zh: 'DeepSeek Harness 的本地长期记忆内核：明文笔记、限长索引、五个工具、可选的宿主模型整理，并保留可追溯原话。'
+icon: https://raw.githubusercontent.com/1326007879-sys/companion-memory/main/icon.png
