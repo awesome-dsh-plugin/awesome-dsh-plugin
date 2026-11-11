@@ -2,7 +2,7 @@ url: https://github.com/rirtue/dsh-breeze-speak
 name: rirtue/dsh-breeze-speak
 category: voice
 description:
-  en: 'Reads each reply aloud through the BreezeBlue / Breeze TTS 2 API. Synthesis starts as soon as the reply first sentence is complete rather than after the whole reply, and the audio is streamed as raw PCM into Web Audio so it plays continuously while it arrives.'
-  zh: '通过云端 BreezeBlue / Breeze TTS 2 API 朗读每轮回复：回复的第一句一完整就发起合成、不必等整段说完，音频以 PCM 裸流边收边推给 Web Audio 连续播放。'
+  en: 'Reads each reply aloud through the BreezeBlue / Breeze TTS 2 API. Synthesis starts as soon as the reply first sentence is complete rather than after the whole reply, and the audio is streamed as raw PCM into Web Audio so it plays continuously while it arrives. Needs a BreezeBlue API key, entered on the settings page or via BREEZE_API_KEY; a key saved on the settings page is stored as plain text in ~/.dsh/breeze-speak.json. By default only the first sentence of each reply (up to 120 characters) is spoken, and that text is sent to api.breeze.blue. The default voice is just an example, so pick one available to your account on the settings page.'
+  zh: '通过云端 BreezeBlue / Breeze TTS 2 API 朗读每轮回复：回复的第一句一完整就发起合成、不必等整段说完，音频以 PCM 裸流边收边推给 Web Audio 连续播放。需要 BreezeBlue API Key，在设置页填写或用 BREEZE_API_KEY 环境变量；设置页保存的 Key 以明文写在 ~/.dsh/breeze-speak.json。默认只念每条回复的第一句（最多 120 字），这段文字会发给 api.breeze.blue。默认音色只是示例，请在设置页里挑一个自己账号可用的。'
 icon: https://raw.githubusercontent.com/rirtue/dsh-breeze-speak/main/assets/icon-512.png
 tarball: https://github.com/rirtue/dsh-breeze-speak/releases/download/v1.0.1/dsh-breeze-speak-1.0.1.tgz
