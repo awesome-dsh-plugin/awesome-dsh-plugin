@@ -6218,6 +6218,7 @@ dsh plugin --profile web add dshmarket
 - [VANuVANuu/dsh-plugin-undermind](https://github.com/VANuVANuu/dsh-plugin-undermind) — 把 Undermind 的文献检索接进 DeepSeek Harness。插件自己维护远端 MCP 服务要求的 OAuth 授权码 + PKCE 登录，在到期前刷新并轮换 refresh token、在服务端丢弃会话时重新初始化，并把 Undermind tools/list 返回的每个工具注册成 mcp__undermind__* 工具，另加一个常驻的 undermind_auth 工具用于查状态、登录、登出与重试。需要一个 Undermind 账号和一个 client id：Undermind 接受 Client ID Metadata Document URL（CIMD）或预注册 client id，不支持动态客户端注册。
 - [Veagau/dsh-countdown-days](https://github.com/Veagau/dsh-countdown-days) — 记录倒数日和重复日期，并可设置提醒。
 - [veeduzyl-hue/mindforge-guard-labs-dsh-evidence-check](https://github.com/veeduzyl-hue/mindforge-guard-labs-dsh-evidence-check) — 面向 DeepSeek Harness 的合成智能体主张证据审阅插件，通过确定性规则输出有限判定、理由与证据引用。
+- [Verchiel666/dsh-echochat-plugin](https://github.com/Verchiel666/dsh-echochat-plugin) — 加一个工具 echo_judge：对 1–4 条回复候选按「感知／心智状态推理／支持策略」三步打分，用级联门控与步骤级信用分配合成总分，并指出最弱、该重做的那一步；打分走引擎自带的 ctx.llm，不需要 API key。
 - [VermilionPasvikin/dsh-coderag](https://github.com/VermilionPasvikin/dsh-coderag) — 以 MCP 服务器形态提供的代码库检索引擎：四个工具（code_search、code_outline、code_index、index_status），底层是 SQLite FTS5 索引 + BM25 排序 + 中文 bigram 索引，tree-sitter 按声明边界分块、增量重建索引，并带三层密钥过滤。bigram 索引让中文提问也能命中英文代码，且默认路径不需要向量库或 embedding 模型。需要先用 scripts/install.sh 装好本机 Python 3.10–3.12 引擎，并在 profile patch 里设置 CODERAG_ROOT。
 - [Very12345/dsh-bash-windows](https://github.com/Very12345/dsh-bash-windows) — Windows 上的一键 Git Bash 开关，替换四种内置模式的 PowerShell，极简模式保留持久终端。
 - [Very12345/dsh-computer-use-windows](https://github.com/Very12345/dsh-computer-use-windows) — Windows 桌面操作插件，提供绑定窗口的截图与无障碍状态、文本回读、DSH 审批和操作提示层。
@@ -7812,6 +7813,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-agent-roster/dsh-agent-roster](https://github.com/dsh-agent-roster/dsh-agent-roster) — 用 YAML/JSON 定义多智能体团队档案，校验后把成员桥接成 dsh-agent-teams 的建员参数，并对照运行中的团队核对结果。
 - [DSH-Extensions-list/dsh-elephant-goldfish-model](https://github.com/DSH-Extensions-list/dsh-elephant-goldfish-model) — Google Elephant-Goldfish Model 的 DeepSeek Harness 独立移植版：七条斜杠命令（/egm-*），用于设计、文档与借助 DSH 原生子代理的全新上下文评审。不依赖其他插件，但与其他 EGM 移植版注册的 /egm-* 命令同名，同一 profile 请只安装一个 EGM 插件。
 - [dsh-plugin-collection/dsh-later](https://github.com/dsh-plugin-collection/dsh-later) — 给 DSH 加上定时提醒与延迟发送：一句话到点送达——/later 以你的身份发出，定时面板或 /schedule 发提醒行；关掉网页也准时触发。（定时发送 / 定时提醒 / 延迟发送 / 提醒）
+- [DSM-DSM/dsh-ai-company](https://github.com/DSM-DSM/dsh-ai-company) — 多工作区 Agent 联邦：持久化 Ticket 树、并行 Worker 会话、结构化证据报告、独立验收、重试停止与重启恢复。
 - [duhu2000/dsh-pre-duediligence](https://github.com/duhu2000/dsh-pre-duediligence) — 访前尽调智能体：面向拜访前调查，提供企业尽调、客户尽调、客户背景调查、工商核验与风险信息整理；使用企查查 MCP，设有调用预算授权和主体确认。
 - [duhu2000/dsh-tender-workbench](https://github.com/duhu2000/dsh-tender-workbench) — 招投标智能体：支持招投标搜索、招标查询、投标查询、标讯查询、拟建项目与项目筛选，辅助商机发现、人工复核及 Excel/PDF 导出，使用客户自备授权的企查查 MCP。
 - [ECCVIK/lmtagent](https://github.com/ECCVIK/lmtagent) — 软件研发与安全审计多智能体工作流：内置 8 个角色预设（Captain 主控与 CEO、Designer、Eng Manager、Reviewer/CSO、Builder、QA Lead、Release 七个执行预设）、默认 6 并发槽（1-12 可调）的 4-Wave DAG 调度、PostgreSQL Wire v3 与 SQLite WAL 双模事实库、29 个随包技能及右侧常驻 Web 控制台。
