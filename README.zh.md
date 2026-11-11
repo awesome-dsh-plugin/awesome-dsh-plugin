@@ -9794,6 +9794,7 @@ dsh plugin --profile web add dshmarket
 - [we39/dsh-jumpserver](https://github.com/we39/dsh-jumpserver) — 通过对话查询与管理 JumpServer：资产、用户、账号、授权、会话、命令审计、命令过滤与 RBAC 角色，使用 AccessKeyID/AccessKeySecret（HTTP 签名）鉴权。
 - [weibaohui/user-management](https://github.com/weibaohui/user-management) — 用户管理：给 dsh web 加登录门禁，未登录访问弹登录/注册页，首个注册者自动成为管理员；管理员可管理用户/角色，带登录与访问审计。
 - [weisofns/dsh-security-guard](https://github.com/weisofns/dsh-security-guard) — DSH 插件安全卫士：28 条规则静态扫描、风险评分、白名单/黑名单、本地 Web 仪表盘与 DSH 内风险弹窗。
+- [wjl906/dsh-slowmist-security-guard](https://github.com/wjl906/dsh-slowmist-security-guard) — DeepSeek Harness (Cordis) 安全防护插件：在 pre-execute 阶段按慢雾 Agent Security 规则审查每一次工具调用，对高危命令、MCP 服务器与技能加载、外部 URL 与代码仓库、不可信文档、EVM 或 Solana 链上地址给出拒绝或警告；执行后对工具结果做提示注入扫描，内置 slowmist_scan 审计工具并注入安全策略提示词。规则遵循慢雾开源的 Agent Security Skill（MIT）。
 - [wld007/dsh-medical-anonymizer](https://github.com/wld007/dsh-medical-anonymizer) — 在 DeepSeek Harness 中批量匿名化病历文本、CSV、JSON 与 XLSX：先跑确定性标识符规则，可选 OpenAI 兼容模型做发现与复核；按精确区间替换以保持文件结构，同一值保持同一假名，并输出审计报告与映射库。DICOM 影像按 PS3.15 附录 E 只处理头部元数据，像素数据逐字节保留。
 - [Wldpm/dsh-fileguard](https://github.com/Wldpm/dsh-fileguard) — 文件守卫：拦截危险的文件删除/写入命令，需用户提供 token 才放行。
 - [wojiao42/dsh-approval-audit](https://github.com/wojiao42/dsh-approval-audit) — 把每个活动会话强制切到完全权限预设（等于关闭审批闸门），并把审批、沙箱与工具调用事件逐条追加到本机 JSONL，用于事后核对。审计路径可配置，不上传任何数据。
@@ -10333,6 +10334,7 @@ dsh plugin --profile web add dshmarket
 - [baixiaoustc/dsh-kidlab#kid-sysmon](https://github.com/baixiaoustc/dsh-kidlab/tree/main/plugins/kid-sysmon) — 系统小监控：一张卡片看 CPU、内存、磁盘概况。
 - [bbtnoctrl/dsh-naiwa](https://github.com/bbtnoctrl/dsh-naiwa) — 每轮 DeepSeek Harness 回答结束时，让奶蛙桌宠捧腹大笑一次。仅 Windows；需先安装奶蛙桌宠。
 - [beyondgjc/dsh-agentic-pet](https://github.com/beyondgjc/dsh-agentic-pet) — 模型驱动的桌面宠物，派生自 PC2005-cloud/dsh-pet（MIT）：独立置顶小窗跟随会话状态，与 Web 界面竞速应答审批与提问，维护每宠独立的好感账本，经 pet_say/pet_do 工具或自主内心戏说话，并可用自备的 BreezeBlue API Key 通过 BreezeBlue 把台词读出来。它使用独立的 /whale598 路由与 ~/.dsh/whale598 数据目录，是独立于 dsh-pet 的另一只桌宠，不替代上游。
+- [BeyondGu/klein-cat-pet](https://github.com/BeyondGu/klein-cat-pet) — 一只住在 DSH 网页界面上的三状态动态黑猫：点击在黄水晶占卜、打瞌睡、喝甜冰茶之间循环，并播放对应音效。
 - [bigharm/dsh-agentnoodle](https://github.com/bigharm/dsh-agentnoodle) — DeepSeek Harness 插件：可扩展的 AI 群像聊天游戏框架。输入一个行动，多个 NPC 各自回应，每条反应独立成带头像插图的聊天室消息；世界、地点、NPC 与功能扩展（如接入第三方绘图 API 实现 NPC 动态表情动作）都可以在对话框里让 agent 直接添加修改，无需写代码。
 - [BitDG/dsh-plugins#music-player](https://github.com/BitDG/dsh-plugins/tree/main/plugins/music-player) — 提供多公共音源的侧栏音乐浏览、持续后台播放、队列续播，以及经审核安装的 MusicFree 兼容音源扩展。
 - [blackstar-baba/dsh-bird-bike](https://github.com/blackstar-baba/dsh-bird-bike) — 一只戴头盔的像素小鸡骑行在 GUI 底部的我的世界像素风骑行带里，带 80 秒昼夜循环、按铃音符、跳跃、车头灯与骑行统计。白天苦力怕出没，夜晚僵尸被撞飞。需要 DSH >=0.2.1-alpha。
