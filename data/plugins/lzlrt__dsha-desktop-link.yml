@@ -1,0 +1,7 @@
+url: https://github.com/lzlrt/dsha-desktop-link
+name: lzlrt/dsha-desktop-link
+category: remote
+description:
+  en: 'Adds one button to the sidebar foot that opens the desktop DSH Web GUI — in the system browser on a phone, in a new tab on a desktop. The target address is read from plugin config, DSH_DESKTOP_URL, or ~/.dsh/desktop-url.txt, and falls back to the relay origin published by dsh-remote-web-ui; the button renders inert with a hint when nothing is configured.'
+  zh: '在侧栏底部加一个按钮，点一下打开桌面版 DSH 的 Web GUI——手机上交给系统浏览器，电脑上开新标签页。目标地址取自插件配置、DSH_DESKTOP_URL 或 ~/.dsh/desktop-url.txt，取不到时回退到 dsh-remote-web-ui 发布的固定中继地址；什么都没配时按钮置灰并给出提示。'
+icon: https://raw.githubusercontent.com/lzlrt/dsha-desktop-link/main/assets/icon-180.png
