@@ -1,0 +1,6 @@
+url: https://github.com/atlasmarkz/dsh-quota-meter
+name: atlasmarkz/dsh-quota-meter
+category: usage
+description:
+  en: 'Plan usage and running cost in the composer dock: DeepSeek wallet balance, OpenCode Go 5h/weekly/monthly windows with reset times, and a per-session cost estimate from DeepSeek list prices — sources are config-driven, plain JavaScript, no build step.'
+  zh: '输入框下方显示余额与订阅用量：DeepSeek 钱包余额、OpenCode Go 的 5 小时 / 周 / 月窗口及重置时间，并按 DeepSeek 官方价格估算本次会话花费；数据来源可配置扩展，纯 JavaScript 无需构建。'
