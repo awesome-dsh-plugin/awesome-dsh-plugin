@@ -9891,6 +9891,7 @@ dsh plugin --profile web add dshmarket
 - [liaosiliangCodeLife/harness-mate-dsh](https://github.com/liaosiliangCodeLife/harness-mate-dsh) — 把跑在本机的 DeepSeek Harness 智能体接入 HarnessMate 平台：手机 / 浏览器即可对话、收发文件、审批工具调用。
 - [liguobao/ds-harness-remote](https://github.com/liguobao/ds-harness-remote) — 通过端到端加密通道远程访问 DeepSeek Harness 及兼容的编码工作区，支持自适应 Relay/WebRTC 传输、设备授权、工作区文件、只读预览、终端和可选的 Codex Remote。
 - [Linjiangxian0203/dsh-remote-tunnel](https://github.com/Linjiangxian0203/dsh-remote-tunnel) — 远程主机隧道管理器：把 dsh web 跑在远程 Linux 服务器上（systemd 守护、免 root），本地经自动重连的 SSH 隧道访问；远程端口自动分配并在服务器登记留档，支持多人共用与 audit 审查。
+- [LinYanZhi/dsh-mesh#dsh-mesh](https://github.com/LinYanZhi/dsh-mesh/tree/main/packages/dsh-mesh) — 多设备 DSH 网络：侧栏拓扑、节点健康、委托、文件传输与节点管理，支持 TLS、局域网与公网隧道。
 - [LinYanZhi/dsh-mesh#dsh-mesh-autostart](https://github.com/LinYanZhi/dsh-mesh/tree/main/packages/dsh-mesh-autostart) — 在 DSH 宿主进程内托管 dsh-mesh server，使其在引擎重启后自动恢复；解析已安装的 dsh-mesh-node 包，缺失时明确报错而不是静默失效。
 - [LinYanZhi/dsh-mesh#dsh-mesh-host](https://github.com/LinYanZhi/dsh-mesh/tree/main/packages/dsh-mesh-host) — 多设备 mesh 的 DSH 宿主桥：通过带 token 的本机回环 HTTP 暴露本地会话与工具，供本机另装的 dsh-mesh server（npm 包 dsh-mesh-node）为已配对 peer 创建会话、发消息、调用工具。
 - [LinYanZhi/dsh-mesh#dsh-mesh-ui](https://github.com/LinYanZhi/dsh-mesh/tree/main/packages/dsh-mesh-ui) — dsh-mesh 网络的 DSH 左侧栏页面：节点拓扑、延迟、TLS/版本健康状态与委托列表；数据来自已安装的 dsh-mesh-node 包。
