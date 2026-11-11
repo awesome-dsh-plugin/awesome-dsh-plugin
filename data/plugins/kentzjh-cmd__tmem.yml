@@ -1,0 +1,6 @@
+url: https://github.com/kentzjh-cmd/tmem
+name: kentzjh-cmd/tmem
+category: memory
+description:
+  en: Invisible backward-slicing execution trace memory compiler for DSH, compressing sessions into guarded L0/L1/L2 playbooks.
+  zh: 隐式后向切片执行轨迹记忆编译器，将会话自动提炼为带守卫条件的 L0/L1/L2 执行剧本。
