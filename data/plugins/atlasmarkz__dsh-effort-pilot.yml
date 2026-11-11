@@ -5,3 +5,4 @@ description:
   en: 'Per-step thinking-effort pilot for DeepSeek Harness: simple tool rounds stay cheap, failures and heavy work lift one declared step, and agents can change their own depth through a set_effort tool without switching models.'
   zh: '为 DeepSeek Harness 提供逐步思考强度驾驶：简单工具轮保持低档、失败与重活自动升一档，Agent 还能通过 set_effort 工具在不切换模型的情况下调整自身思考深度。'
 icon: https://raw.githubusercontent.com/atlasmarkz/dsh-effort-pilot/main/assets/icon-180.png
+tarball: https://github.com/atlasmarkz/dsh-effort-pilot/releases/latest/download/dsh-effort-pilot.tgz
