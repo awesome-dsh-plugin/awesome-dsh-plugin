@@ -1,0 +1,7 @@
+url: https://github.com/hanhan9999999999999999999/dsh-memory-nebula
+name: hanhan9999999999999999999/dsh-memory-nebula
+category: memory
+description:
+  en: Local-first memory nebula for DeepSeek Harness with graph views, evidence chains, hygiene checks, and offline snapshots.
+  zh: 面向 DeepSeek Harness 的本地优先记忆星图，提供图形视图、证据链、记忆体检与离线快照。
+icon: https://raw.githubusercontent.com/hanhan9999999999999999999/dsh-memory-nebula/main/market/assets/icon-180.png
