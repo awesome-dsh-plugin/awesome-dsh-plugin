@@ -15,7 +15,7 @@
  */
 import semver from 'semver'
 import { parseMarketIndex } from '@deepseek-ai/dsh-plugin-market-index'
-import { slugOf } from './terms.mjs'
+import { slugOf, slugHref } from './terms.mjs'
 
 export const INDEX_ORIGIN = 'https://awesome-dsh-plugin.com'
 
@@ -126,7 +126,7 @@ export function buildMarketIndex({ entries, npmMap, locales, origin = INDEX_ORIG
       name: record.npm,
       title: entry.name,
       ...(description === undefined ? {} : { description }),
-      homepage: `${origin}/p/${slugOf(entry.url)}/`,
+      homepage: `${origin}/p/${slugHref(slugOf(entry.url))}/`,
       repository: repositoryOf(entry.url),
       // Everything the format defaults is left out: `keywords: []` and
       // `engines: {}` cost bytes in every one of ~3,000 entries and say

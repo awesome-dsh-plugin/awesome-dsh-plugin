@@ -19,7 +19,7 @@ import COMMENTS from '../site/comments.mjs'
 import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
 import { buildMarketIndex } from './lib/market-index.mjs'
 import { firstAddedDate } from './lib/added-dates.mjs'
-import { slugOf, termOf } from './lib/terms.mjs'
+import { slugOf, slugHref, termOf } from './lib/terms.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
@@ -66,12 +66,6 @@ const CAT_IDS = ENTRY_CAT_IDS
 
 const ldSafe = (s) => s.replaceAll('<', '\\u003c')
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
-// A slug is a URL path built from the entry URL as-is. When that URL carries a
-// percent-encoded byte (a monorepo directory whose name contains a space), the
-// byte is data here, not an escape: emitting `%20` raw makes the browser decode
-// it a second time into a space and request a path no file has, so every URL
-// built from a slug re-encodes `%` before it reaches href/canonical/sitemap.
-const slugHref = (slug) => encodeURI(slug)
 
 // ── advertising ─────────────────────────────────────────────────────────────
 // One AdSense head tag, gated behind a build variable. Unset — the default —
