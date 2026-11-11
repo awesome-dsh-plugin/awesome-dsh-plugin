@@ -3,5 +3,5 @@ name: Citrusrr/dsh-think-fold
 category: ui
 tarball: https://github.com/Citrusrr/dsh-think-fold/releases/latest/download/dsh-think-fold.tgz
 description:
-  en: "Expands the row that is running — the official Think row and the official tool cards — and folds it back when it settles. While a turn runs its whole procedure sits in one height-capped window that scrolls itself, so the page stops growing; when the turn finishes that procedure merges into the built-in \"processed\" header with only the final answer left on screen. It clicks the official disclosure rows and caps the official process body rather than drawing its own panel, never overrides rows you opened by hand, and restores the official settings it changed on uninstall."
-  zh: '运行中的思考行和工具卡自动展开、结束后自动收起；跑着的一轮把整段过程收进一个限高窗口自己滚到底，页面不再被越堆越长的步骤拽着走；一轮结束再把这一轮的过程行（连同中间的旁白）并进官方内建的「已完成」表头，只留最终回复。只点击官方的折叠行、只给官方过程体加限高，不自绘面板；你手动开合过的行永不被覆盖，卸载后还原它改过的官方设置。'
+  en: "The row that is running expands itself and folds back when it settles. A running turn keeps its whole procedure in one height-capped window that scrolls itself; a finished turn merges into the built-in finished header, leaving only the final answer. It works by driving the official disclosure rows rather than drawing its own panel, leaves rows you opened by hand alone, and restores the official settings on uninstall."
+  zh: '正在跑的那一行自动展开、跑完自动收起；跑着的一轮把过程收进一个限高窗口，页面不再被越堆越长的步骤拽着走；一轮结束并进官方那条「已完成」表头，只留最终回复。做法是点官方自己的折叠行、给官方过程体加限高，不自绘面板；你手动开合过的行不动，卸载时把改过的官方设置还原。'
