@@ -1,5 +1,6 @@
 url: https://github.com/PhilYue/dsh-llm-manage
 name: PhilYue/dsh-llm-manage
+icon: https://raw.githubusercontent.com/PhilYue/dsh-llm-manage/master/assets/icon-180.png
 category: model
 description:
   en: 'Model manager for the composer picker: probes a model on demand and keeps the timestamped reason it failed, counts usage from committed assistant messages to rank models by proficiency level, pins, favourites and hides rows, and switches along a failover chain when a turn fails, asking the new model to pick the work back up.'
