@@ -2,6 +2,6 @@ url: https://github.com/nothurry/stronger-dsh
 name: nothurry/stronger-dsh
 category: ui
 description:
-  en: Monochrome UI and motion, shared memory, native collaboration, MCP discovery and Windows controls.
-  zh: 黑白灰淡紫界面与动效、共享记忆、原生协作、MCP发现与Windows控件操作。
-tarball: https://github.com/nothurry/stronger-dsh/releases/download/v0.19.12/dsh-ui-stronger-0.19.12.tgz
+  en: UI and motion, team sidebar, scoped peer messaging, layered memory and opt-in WeChat notifications.
+  zh: 界面与动效、团队侧栏、成员互通、分层记忆与可选微信主动通知。
+tarball: https://github.com/nothurry/stronger-dsh/releases/download/v0.19.13/dsh-ui-stronger-0.19.13.tgz
