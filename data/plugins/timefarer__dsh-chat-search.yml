@@ -1,5 +1,5 @@
-url: https://github.com/yhaix/dsh-chat-search
-name: yhaix/dsh-chat-search
+url: https://github.com/timefarer/dsh-chat-search
+name: timefarer/dsh-chat-search
 category: session
 description:
   en: 'Paragraph- and file-level search across the current conversation and all sessions, with a date/turn filter window and a jump that highlights the match. Defaults to the last 14 days and the latest 30 turns of each session; leave a limit empty to remove it.'
