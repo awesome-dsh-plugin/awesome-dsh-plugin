@@ -1,0 +1,7 @@
+url: https://github.com/cthulhu-tww/dsh-solmirror
+name: cthulhu-tww/dsh-solmirror
+category: model
+description:
+  en: "Connects the Solmirror open platform to DeepSeek Harness as MCP tools covering image and video generation, a model catalog, cost estimates, reference uploads, result queries and media URLs. Generation jobs submit as native dsh background tasks that notify on completion and run in parallel within one message, with in-chat video playback and an image wall. A settings page takes the platform API key, server URL, per-group model visibility and a test-connection check; the key is stored in the local dsh credential store. Reference uploads (image, video, audio) return reusable ids kept one day unused or three days after last use — 50 MB per file, video up to 30 s, audio up to 60 s. Usage bills platform points at in-site prices, with quotes before a run and automatic refunds on failure."
+  zh: "把瞬镜开放平台的图片、视频生成能力接入 DeepSeek Harness：MCP 工具覆盖模型目录、估价、参考素材上传、文生图/图生图、文生视频/图生视频、结果查询与媒体地址。生成提交为 dsh 原生后台任务，完成自动通知，同一消息内并行执行；对话内视频播放、图片出图墙。设置页配置平台 API 密钥、服务器地址、可见模型组与测试连接，密钥只存本机凭据存储。参考素材（图片/视频/音频）上传一次可复用，未用保留 1 天、用过自最后使用保留 3 天（单文件 ≤50MB，视频 ≤30 秒，音频 ≤60 秒）；按平台价格计积分，生成前可询价，失败自动退款。"
+icon: https://raw.githubusercontent.com/cthulhu-tww/dsh-solmirror/master/assets/icon-192.png
