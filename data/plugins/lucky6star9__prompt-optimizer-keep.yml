@@ -1,0 +1,7 @@
+url: https://github.com/lucky6star9/prompt-optimizer-keep
+name: lucky6star9/prompt-optimizer-keep
+category: usage
+description:
+  en: 'Rewrites a draft prompt against the current project: a composer button, slash command and agent tool ground the rewrite in the workspace stack, structure and conventions.'
+  zh: 结合当前项目重写提示词：通过输入框按钮、斜杠命令或 Agent 工具，依据工作区的技术栈、结构与约定改写草稿。
+icon: https://raw.githubusercontent.com/lucky6star9/prompt-optimizer-keep/main/assets/icon-512.png
