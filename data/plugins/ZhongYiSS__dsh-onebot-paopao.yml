@@ -1,0 +1,6 @@
+url: https://github.com/ZhongYiSS/dsh-onebot-paopao
+name: ZhongYiSS/dsh-onebot-paopao
+category: notify
+description:
+  en: "Connects a QQ account through NapCat: two-way chat, Bilibili video picking and review from sampled frames, voice and images, plus weight-based proactive messages."
+  zh: "通过 NapCat 接一个 QQ 号：双向聊天、挑 B站 视频与按采样帧看视频、语音与图片，外加按权重自己开口的主动消息。"
