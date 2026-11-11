@@ -1,0 +1,6 @@
+url: https://github.com/JJJACKsong/dsh-plugin-context-cleanup-master
+name: JJJACKsong/dsh-plugin-context-cleanup-master
+category: fun
+description:
+  en: 'A next-generation context performance layer for DeepSeek Harness: zero-model-call session profiling, context-health auditing on a floating dashboard, a real-time token ledger, and a pristine zero-context workspace provisioned in one click. It is, in fact, just /new.'
+  zh: '面向 DeepSeek Harness 的下一代上下文性能层：零模型调用完成近期会话画像与上下文健康度审计，悬浮仪表盘实时呈现 token 账本，一键供给纯净的零上下文工作区。其实只是 /new。'
