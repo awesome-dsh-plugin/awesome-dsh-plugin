@@ -1,0 +1,6 @@
+url: https://github.com/aoilang/dsh-english-cards
+name: aoilang/dsh-english-cards
+category: session
+description:
+  en: 'Save English learning cards while interacting with DeepSeek Harness. It adds a line to the system prompt on every step telling the model to check your English and call english_cards_capture first; cards stay on this machine unless you turn on the sync switch (off by default), which after an OAuth login in your browser sends your original and corrected sentences with their cards to aoilang.com.'
+  zh: '在DeepSeek Harness里使用英文时，自动保存英语学习卡片，利用和Agent的日常交互提高英语。它会在每一步的系统提示词里加一句，让模型先检查你的英文并调用 english_cards_capture；卡片默认只存在本机，打开同步开关（默认关闭）并在浏览器里完成 OAuth 登录后，会把你的原句、更正后的句子和卡片发到 aoilang.com。'

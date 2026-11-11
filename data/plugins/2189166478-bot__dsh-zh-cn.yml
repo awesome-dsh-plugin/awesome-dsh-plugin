@@ -1,0 +1,6 @@
+url: https://github.com/2189166478-bot/dsh-zh-cn
+name: 2189166478-bot/dsh-zh-cn
+category: ui
+description:
+  en: Translates the interfaces of installed DSH plugins into Chinese with an offline dictionary and a DOM translation layer, toggleable in settings.
+  zh: 用离线词典和 DOM 翻译层把已安装 DSH 插件的英文界面换成中文，可在设置里随时开关。
