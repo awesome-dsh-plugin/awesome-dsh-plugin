@@ -1,0 +1,6 @@
+url: https://github.com/MaiiNor/openclaw-skill-bridge
+name: MaiiNor/openclaw-skill-bridge
+category: skill
+description:
+  en: 'Registers an openclaw skill provider that walks nested OpenClaw skill roots down to a configurable depth, flattens them into the one-level DSH catalog, and rewrites {baseDir} to each skill directory.'
+  zh: '注册 openclaw 技能源，按可配置深度递归扫描嵌套的 OpenClaw 技能目录，摊平进 DSH 的一级技能目录，并把 {baseDir} 重写为技能目录。'
