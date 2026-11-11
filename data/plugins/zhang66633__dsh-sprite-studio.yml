@@ -2,6 +2,6 @@ url: https://github.com/zhang66633/dsh-sprite-studio
 name: zhang66633/dsh-sprite-studio
 category: fun
 description:
-  en: 'Sprite-sheet workspace on an infinite canvas: slice by grid, row scan or alpha connectivity, matte solid-color backgrounds, compose characters from a 1066-item Liberated Pixel Cup material library, generate seamless backgrounds and 12 procedural effects, then export ZIP or an atlas with Aseprite-format JSON.'
-  zh: 画布式精灵图工作台：按网格、行扫描或 alpha 连通域切分，抠掉纯色背景，用 1066 件 LPC 素材库拼角色，生成无缝背景与 12 种程序化特效，最后导出 ZIP 或带 Aseprite 字段的图集。
+  en: 'Sprite-sheet workspace on an infinite canvas: slice by grid, row scan or alpha connectivity, matte solid-color backgrounds, compose characters from a 1066-item Liberated Pixel Cup material library, generate seamless backgrounds and 12 procedural effects, then export ZIP or an atlas with Aseprite-format JSON. The LPC character parts are fetched on demand from raw.githubusercontent.com (LiberatedPixelCup), so GitHub must be reachable.'
+  zh: '画布式精灵图工作台：按网格、行扫描或 alpha 连通域切分，抠掉纯色背景，用 1066 件 LPC 素材库拼角色，生成无缝背景与 12 种程序化特效，最后导出 ZIP 或带 Aseprite 字段的图集。LPC 角色素材按需从 raw.githubusercontent.com（LiberatedPixelCup）获取，需要能访问 GitHub。'
 icon: https://raw.githubusercontent.com/zhang66633/dsh-sprite-studio/master/assets/icon-180.png

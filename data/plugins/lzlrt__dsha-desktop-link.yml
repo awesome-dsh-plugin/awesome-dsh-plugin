@@ -2,6 +2,6 @@ url: https://github.com/lzlrt/dsha-desktop-link
 name: lzlrt/dsha-desktop-link
 category: remote
 description:
-  en: 'Adds one button to the sidebar foot that opens the desktop DSH Web GUI — in the system browser on a phone, in a new tab on a desktop. The target address is read from plugin config, DSH_DESKTOP_URL, or ~/.dsh/desktop-url.txt, and falls back to the relay origin published by dsh-remote-web-ui; the button renders inert with a hint when nothing is configured.'
-  zh: '在侧栏底部加一个按钮，点一下打开桌面版 DSH 的 Web GUI——手机上交给系统浏览器，电脑上开新标签页。目标地址取自插件配置、DSH_DESKTOP_URL 或 ~/.dsh/desktop-url.txt，取不到时回退到 dsh-remote-web-ui 发布的固定中继地址；什么都没配时按钮置灰并给出提示。'
+  en: 'Adds one button to the sidebar foot that opens the desktop DSH Web GUI — in the system browser on a phone, in a new tab on a desktop. The target address is read from plugin config, DSH_DESKTOP_URL, or ~/.dsh/desktop-url.txt, and falls back to the relay origin published by dsh-remote-web-ui; the button renders inert with a hint when nothing is configured. It also adds a small gear button that saves the address into ~/.dsh/desktop-url.txt; on a phone with no separate launch address set, a click asks the local pairing service (/api/pair/issue) for a one-time pairing link and opens it; its HTTP routes (/api/desktop-link/…) have no DSH access check.'
+  zh: '在侧栏底部加一个按钮，点一下打开桌面版 DSH 的 Web GUI——手机上交给系统浏览器，电脑上开新标签页。目标地址取自插件配置、DSH_DESKTOP_URL 或 ~/.dsh/desktop-url.txt，取不到时回退到 dsh-remote-web-ui 发布的固定中继地址；什么都没配时按钮置灰并给出提示。另有一个齿轮按钮，可在界面里把地址存进 ~/.dsh/desktop-url.txt；手机上如果没单独配置点击地址，点按钮时会向本机配对服务（/api/pair/issue）申请一次性配对链接再打开；插件的 HTTP 路由（/api/desktop-link/…）没有 DSH 的访问检查。'
 icon: https://raw.githubusercontent.com/lzlrt/dsha-desktop-link/main/assets/icon-180.png

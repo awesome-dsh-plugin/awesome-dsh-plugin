@@ -2,6 +2,6 @@ url: https://github.com/1326007879-sys/companion-memory
 name: 1326007879-sys/companion-memory
 category: memory
 description:
-  en: 'Local long-term memory core for DeepSeek Harness with plain-text notes, a bounded index, five tools, optional host-model consolidation and auditable evidence.'
-  zh: 'DeepSeek Harness 的本地长期记忆内核：明文笔记、限长索引、五个工具、可选的宿主模型整理，并保留可追溯原话。'
+  en: 'Local long-term memory core for DeepSeek Harness with plain-text notes, a bounded index, five tools, optional host-model consolidation and auditable evidence. It appends every user and assistant message under 32,000 characters to ~/.companion/cold/<date>.jsonl in plain text, with no built-in cleanup, and adds a short index of its notes to every system prompt; the optional model-based consolidation is off by default and, once on, sends those messages to the session''s model.'
+  zh: 'DeepSeek Harness 的本地长期记忆内核：明文笔记、限长索引、五个工具、可选的宿主模型整理，并保留可追溯原话。它会把每条不超过 32,000 字符的用户和助手消息以明文追加到 ~/.companion/cold/<日期>.jsonl，没有内置清理，并在每次的系统提示词里加一份笔记索引；基于模型的整理默认关闭，打开后会把这些消息发给当前会话的模型。'
 icon: https://raw.githubusercontent.com/1326007879-sys/companion-memory/main/icon.png

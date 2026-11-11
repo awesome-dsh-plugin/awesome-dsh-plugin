@@ -2,5 +2,5 @@ url: https://github.com/wjloven/dsh-miniflux-digest
 name: wjloven/dsh-miniflux-digest
 category: tools
 description:
-  en: Read Miniflux inside DeepSeek Harness in a three-column panel (feeds, article list, article) and ask the assistant for unread digests, per-category briefings, full-text reads and read/star actions on the same account.
-  zh: 在 DeepSeek Harness 里用三栏面板读 Miniflux（订阅源、文章列表、正文），并让助手在同一账号上生成未读速览、按分类写简报、读全文、标已读或收藏。
+  en: 'Read Miniflux inside DeepSeek Harness in a three-column panel (feeds, article list, article) and ask the assistant for unread digests, per-category briefings, full-text reads and read/star actions on the same account. Needs your own Miniflux server (2.0 or later; 2.3.2 for batch starring) and an API token, kept in the Harness credential vault (the MINIFLUX_BASE_URL and MINIFLUX_API_TOKEN environment variables also work).'
+  zh: '在 DeepSeek Harness 里用三栏面板读 Miniflux（订阅源、文章列表、正文），并让助手在同一账号上生成未读速览、按分类写简报、读全文、标已读或收藏。需要你自己的 Miniflux 服务（2.0 及以上，批量收藏需 2.3.2）和 API 令牌，令牌保存在 Harness 的凭据管理器里，也可用环境变量 MINIFLUX_BASE_URL、MINIFLUX_API_TOKEN。'
