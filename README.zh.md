@@ -2280,6 +2280,7 @@ dsh plugin --profile web add dshmarket
 - [Arun1016/dsh-cost](https://github.com/Arun1016/dsh-cost) — DeepSeek Harness 的账户余额及费用统计胶囊。它在会话输入框下方的官方统计行右侧新增一枚胶囊，集成计费时段（高峰/低谷，用颜色区分）、账户余额与会话费用；点击展开可查看本次会话的详细费用统计，包括缓存命中输入、缓存未命中输入、输出三项金额，以及按模型拆分的花费。费率表随插件版本更新，以跟随官方调价。
 - [Assidefok/dsh-opencodego-status](https://github.com/Assidefok/dsh-opencodego-status) — 在 Harness Web UI 上悬浮显示 OpenCode Go 用量：5 小时滚动、每周与每月百分比、重置倒计时与续订日期，支持设备码登录与静默刷新。
 - [Astervolans/dsh-opencode-go-usage](https://github.com/Astervolans/dsh-opencode-go-usage) — 常驻侧边栏的 OpenCode GO 套餐额度组件：滚动/周/月三条用量条、每条下方一条已流逝与剩余时间条、同源用量代理、/opencode-go 命令，以及针对 GO 网关聊天请求的运行时 x-opencode-session 修复。fork 自 yumusb/dsh-opencode-go-usage。
+- [atlasmarkz/dsh-quota-meter](https://github.com/atlasmarkz/dsh-quota-meter) — 输入框下方显示余额与订阅用量：DeepSeek 钱包余额、OpenCode Go 的 5 小时 / 周 / 月窗口及重置时间，并按 DeepSeek 官方价格估算本次会话花费；数据来源可配置扩展，纯 JavaScript 无需构建。
 - [AyahaShirane/dsh-deepseek-usage-meter](https://github.com/AyahaShirane/dsh-deepseek-usage-meter) — 在输入栏统计行、官方 token 用量条旁加一枚费用与余额胶囊：本次会话的 DeepSeek 估算费用、峰谷时段指示灯与已登录账号的剩余额度，明细里按计费项列出各自金额；仅在检测到 DeepSeek 官方渠道时激活。
 - [Ayelsh/dsh-zhipu-plan](https://github.com/Ayelsh/dsh-zhipu-plan) — 在 DeepSeek Harness 中登录智谱编程套餐，查看额度与用量并执行额度重置。
 - [Ayowait/dsh-usage-insights](https://github.com/Ayowait/dsh-usage-insights) — 在 DSH 设置里加一页「用量查询」：把每次模型调用记进本地账本，按天、接口、模型汇总请求数、Token 与费用估算，支持单价修改与 CSV 导出。
@@ -6141,6 +6142,7 @@ dsh plugin --profile web add dshmarket
 - [sheilacraig/dsh-rea-mcp](https://github.com/sheilacraig/dsh-rea-mcp) — 纯配置型 DeepSeek Harness 插件，用本体自带的 MCP 客户端桥，经 stdio 连接 morluto/rea，让 agent 从应用行为一路逆向到底层原生二进制。
 - [sheilacraig/dsh-windows-mcp-lite](https://github.com/sheilacraig/dsh-windows-mcp-lite) — 纯配置型 DeepSeek Harness 插件，用本体自带的 MCP 客户端桥接 CursorTouch/Windows-MCP，默认排除 PowerShell、FileSystem、Registry、Process、Scrape（上游 0.8.8 共 21 个工具，保留 16 个）。需要 uv 在 PATH 上。
 - [shengyvself/dsh-prompt-only-forge](https://github.com/shengyvself/dsh-prompt-only-forge) — 点会话输入框右座 ✨，把「打磨提示词」模板写进输入栏——当前草稿自动嵌进 `<内容>` 位置，不发送、不联网、不调模型，由当前会话的主 agent 带着全部上下文改写。替代 narrative-prompt-polish（2026-09-14 更名并整体重构）。
+- [shijiezhiai/dsh-zhihu](https://github.com/shijiezhiai/dsh-zhihu) — 在 DeepSeek Harness 里刷知乎：热榜、推荐、关注流与站内搜索，问题与专栏正文带格式渲染，每条内容可以开一个跑成真实会话的讨论，一键经 Obsidian REST API 存成 Markdown 笔记。用你自己的登录 Cookie，存放在 credentials 服务里。
 - [shiliu153/dsh-mcp-manager](https://github.com/shiliu153/dsh-mcp-manager) — DSH 的 MCP 服务器管理器：九个 mcp_manager_* 工具、命令行与网页面板，可列出、校验、探测、新增、编辑、启停、移除 ~/.dsh/cordis.patch.yml 中的服务器，从官方 MCP Registry 搜索并安装服务器，以及定位或轮换已存凭据。
 - [shinji00222/dsh-windows-computer-use](https://github.com/shinji00222/dsh-windows-computer-use) — Windows 电脑控制插件（C# 原生引擎）：纯文本 DeepSeek 模型也能读取 UI Automation 控件、批量填表并逐项回读，不需要截图；控件重新渲染后可按唯一身份找回；遇到验证码和动态码拒绝代填，通过 DSH 审批框交给你处理；随时按 Esc 停止。本项目基于 Yu-tao-Li/dsh-computer-use-win 改造；请勿与上游插件同装，两者会争抢同一张桌面。
 - [ShiXiangYu2/dsh-translate-pro](https://github.com/ShiXiangYu2/dsh-translate-pro) — 专业翻译：18 种目标语言、4 种风格（正式/口语/技术/直译）、术语表控制译名、整文件翻译（README/文档/字幕）并保留 Markdown 与代码块格式；经 SiliconFlow 调用 DeepSeek。
