@@ -1,5 +1,5 @@
-url: https://github.com/AIpRoBuilder/FlowX/plugins/deepseek-harness-flowx
-name: AIpRoBuilder/FlowX
+url: https://github.com/AIpRoBuilder/FlowX/tree/main/plugins/deepseek-harness-flowx
+name: AIpRoBuilder/FlowX#deepseek-harness-flowx
 category: ui
 description:
   en: View FlowX workflow graphs and artifacts in DeepSeek Harness.
