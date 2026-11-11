@@ -1,0 +1,7 @@
+url: https://github.com/AIpRoBuilder/FlowX
+name: AIpRoBuilder/FlowX
+category: ui
+description:
+  en: View FlowX workflow graphs and artifacts in DeepSeek Harness.
+  zh: 在 DeepSeek Harness 中查看 FlowX 工作流图和构建产物。
+icon: https://raw.githubusercontent.com/AIpRoBuilder/FlowX/main/assets/flowx_log.png
