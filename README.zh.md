@@ -4698,6 +4698,7 @@ dsh plugin --profile web add dshmarket
 - [bufan528/dsh-longterm-memory](https://github.com/bufan528/dsh-longterm-memory) — 为 DSH 提供本地 Markdown 长期记忆：Obsidian 兼容仓库、侧边栏管理页、四个记忆工具，以及按预算的每回合召回。
 - [busabase/busabase-dsh-plugin](https://github.com/busabase/busabase-dsh-plugin) — 把 DeepSeek Harness 接入 Busabase：检索工作区知识、操作结构化记录与应用、将写入提交为可审阅的 ChangeRequest，并在实时卡片中查看结果。
 - [caimc21069065-prog/dsh-reflect](https://github.com/caimc21069065-prog/dsh-reflect) — 把对模型的纠正变成永久规则：remember: 显式触发与自动检测的纠正经确认条确认后写入 AGENTS.md 的标记段（全局或项目作用域，可编辑、可跳过），当前会话立即生效，新会话由 dsh 原生指令加载器读取；规则去重、版本守卫写入、疑似密钥拒绝落盘。
+- [calmzealA/dsh-km](https://github.com/calmzealA/dsh-km) — DeepSeek Harness 的本地知识库：工作区 Markdown 笔记，带来源、审核状态、BM25 检索与 4 个 km_* 工具。
 - [ccch713/deepddw#ddw-teams-panel](https://github.com/ccch713/deepddw/tree/main/plugins/ddw-teams-panel) — 为 DSH Web 客户端增加多用户设置面板：使用模式选择、成员管理与在线状态、一人多设备绑定，以及各成员记忆体和知识库的切换与共享。
 - [CDeZT/better-basicfun](https://github.com/CDeZT/better-basicfun) — 原生 DSH 基础插件：注册持久化默认工作区，分页只读查看插件、skills、memory、会话、storage、settings、credentials 与 DSH_HOME 文件，并将 CLIProxyAPI 的模型能力同步到原生 Provider 设置。
 - [CeilCelia/dsh-eli-mode#packages/eli-mode](https://github.com/CeilCelia/dsh-eli-mode/tree/main/packages/eli-mode) — 知识库驱动的 Agent 预设：wiki 长期记忆、网页知识库、管理页、可选界面润色。
