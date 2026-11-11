@@ -6,3 +6,4 @@ category: tools
 description:
   en: 'Forges a rough spoken request into a structured prompt, saves it as a /qp-<slug> slash command, and runs it again in one command — the slash command and the model-side quick_prompt tool share one local JSON library.'
   zh: '把一句口语需求炼化成结构化 Prompt，存成 /qp-<slug> 快捷命令，一键复跑；斜杠命令与模型侧 quick_prompt 工具共用一个本地 JSON 库。'
+icon: https://raw.githubusercontent.com/wyylalala/QuickPrompt/main/icon-256.png
