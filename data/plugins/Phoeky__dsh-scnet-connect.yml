@@ -2,5 +2,5 @@ url: https://github.com/Phoeky/dsh-scnet-connect
 name: Phoeky/dsh-scnet-connect
 category: model
 description:
-  en: 'SCNet models for DSH. Free SCNet-Max, no client login needed; tokenizer, template and deterministic-output fingerprints match DeepSeek-V4.1-Flash-1017 (README).'
-  zh: '把 SCNet 模型接入 DeepSeek Harness。可免客户端登录，使用免费模型（SCNet-Max，基座为 DeepSeek Flash 系列 —— 经分词器、对话模板与确定性输出的模型指纹比对，与 DeepSeek-V4.1-Flash-1017 一致，证据见 README 的「基座认定」）。'
+  en: 'SCNet models for DSH. Free SCNet-Max, no client login needed; tokenizer, template and deterministic-output fingerprints match DeepSeek-V4.1-Flash-1017 (README). It reads the SCNet desktop client''s stored login when one exists, and otherwise logs in with a phone SMS code from the settings page.'
+  zh: '把 SCNet 模型接入 DeepSeek Harness。可免客户端登录，使用免费模型（SCNet-Max，基座为 DeepSeek Flash 系列 —— 经分词器、对话模板与确定性输出的模型指纹比对，与 DeepSeek-V4.1-Flash-1017 一致，证据见 README 的「基座认定」）。它会读取 SCNet 桌面客户端落盘的登录态；没有客户端时在设置页用手机短信验证码登录。'
