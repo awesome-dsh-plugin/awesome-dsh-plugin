@@ -9050,6 +9050,7 @@ dsh plugin --profile web add dshmarket
 - [DeLightor/dsh-depguard](https://github.com/DeLightor/dsh-depguard) — 依赖拓扑安全：装前预测 + 装后检测 @deepseek-ai/dsh-* 多副本、版本漂移与插件私包，防 Symbol 键冲突崩溃（Cannot read properties of undefined (reading 'prepare')）。
 - [dennisrongo/dsh-plugins#dsh-headless-plus](https://github.com/dennisrongo/dsh-plugins/tree/main/plugins/dsh-headless-plus) — 替换无界面启动流程，为 dsh headless 运行添加 --model provider/model、--resume <id|latest>、--continue 与 --session-info 标志。
 - [disyli/dsh-tool-call-stats](https://github.com/disyli/dsh-tool-call-stats) — 进程内工具调用统计：提供 `tool_stats` 工具，按工具汇报调用次数、失败次数与平均耗时。
+- [Dogegg-1/dsh-godot-workbench-plugin](https://github.com/Dogegg-1/dsh-godot-workbench-plugin) — 在 DeepSeek Harness 中规划、制作和验证 Godot 独立游戏。
 - [Domush/dsh-plugin-antigravity-rules](https://github.com/Domush/dsh-plugin-antigravity-rules) — 把 ~/.agents/rules 和工作区 .agents/rules 里的 Google Antigravity 规则加进系统提示：always_on 规则全文注入，其余以目录形式列出，模型可用 antigravity_rule 工具加载，或在触及的文件匹配规则 glob 时自动激活。规则只是提示词层面的指引，不是强制执行，模型也能用同一个工具把它们关掉。设置写在工作区的 .agents/rules/settings.json。
 - [DonGeeo87/cg-shell-janitor](https://github.com/DonGeeo87/cg-shell-janitor) — 在 Windows 上关闭 shell 命令已结束、却仍然存活的 DeepSeek Harness runner 进程，每个可回收约 140 MB。仅当其 shell 已不存在且不再监管任何子进程时才会关闭，用作 runner 不会自行退出问题的变通办法。
 - [dphmoblie/dsh-error-tell#client-tell](https://github.com/dphmoblie/dsh-error-tell/tree/main/packages/client-tell) — dsh web 启动看门狗：检测并持久化禁用问题插件，让界面正常打开，并提供隔离账本、探针自动恢复与一键恢复。
