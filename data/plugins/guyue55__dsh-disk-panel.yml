@@ -1,0 +1,8 @@
+url: https://github.com/guyue55/dsh-disk-panel
+name: guyue55/dsh-disk-panel
+category: ui
+description:
+  en: 'Left sidebar disk panel for the DSH Web UI: volume free space, per-Workspace folder sizes, moving build artifacts to the macOS Trash with an audit log and restore, sending scan results to an agent, and a host-side low-space watchdog with OS notifications.'
+  zh: 'DSH Web UI 左侧栏磁盘面板：各卷剩余空间、按工作区统计目录占用、把构建产物安全移入 macOS 废纸篓（带审计与恢复）、把扫描结果交给 Agent 分析，以及 Host 端低空间看门狗与系统通知。'
+icon: https://raw.githubusercontent.com/guyue55/dsh-disk-panel/main/assets/icon-180.png
+tarball: https://github.com/guyue55/dsh-disk-panel/releases/latest/download/dsh-disk-panel.tgz
