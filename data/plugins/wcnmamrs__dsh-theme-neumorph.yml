@@ -1,0 +1,8 @@
+url: https://github.com/wcnmamrs/dsh-theme-neumorph
+name: wcnmamrs/dsh-theme-neumorph
+category: theme
+description:
+  en: Neumorphism skin for the DSH web UI that re-keys 72 design tokens to a cool-grey palette with a steel-blue accent in both light and dark mode, and adds soft shadows to the composer, cards, floating surfaces and session rows.
+  zh: DSH 网页界面的新拟态皮肤：把 72 个设计 token 重写成冷灰底、钢蓝强调色，浅色与深色同时生效，并给输入区、卡片、浮层与会话行加上柔和阴影。
+icon: https://raw.githubusercontent.com/wcnmamrs/dsh-theme-neumorph/main/assets/icon-180.png
+tarball: https://github.com/wcnmamrs/dsh-theme-neumorph/releases/latest/download/dsh-theme-neumorph.tgz

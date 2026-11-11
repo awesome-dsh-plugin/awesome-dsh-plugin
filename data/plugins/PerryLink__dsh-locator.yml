@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-locator
+name: PerryLink/dsh-locator
+category: tools
+description:
+  en: 'Whole-disk file-name search for DSH with a self-built cross-platform index, agent tools and a Web panel; no Everything required. It indexes your home directory by default; the first content search also builds a local full-text index (SQLite in the platform cache directory) of text and source files there (by extension, up to 1 MB each, 200,000 files) and of your recent DSH session messages; locator_export writes a SQLite copy of the index to any absolute path it is given, replacing an existing file when overwrite is true. The engine is a prebuilt Go binary shipped for six platforms (source in engine/), and the plugin makes no network requests.'
+  zh: '为 DSH 提供自建跨平台索引的全盘文件名搜索，带 agent 工具和 Web 面板，不依赖 Everything。默认索引你的主目录；第一次内容搜索时还会在本机建全文索引（SQLite，放在系统缓存目录），范围是主目录下按扩展名认定的文本和源码文件（每个最大 1 MB、最多 20 万个）以及你最近的 DSH 会话消息；locator_export 会把索引的 SQLite 副本写到给定的任意绝对路径，overwrite 为 true 时会替换已有文件。引擎是随包提供的预编译 Go 程序（六个平台，源码在 engine/ 里），插件不发任何网络请求。'

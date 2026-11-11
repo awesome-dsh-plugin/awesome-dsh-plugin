@@ -1,0 +1,6 @@
+url: https://github.com/fujingzhai/youxia-dsh-plugins/tree/main/dsh-speed-pair
+name: fujingzhai/youxia-dsh-plugins#dsh-speed-pair
+category: ui
+description:
+  en: 'Replaces the stat-bar output speed with two figures, for example 207(122) tok/s: outside the parentheses the decoding speed after the first token, inside it the speed over the whole request including first-token latency. Clicking it opens a breakdown of turns, steps, TTFT and per-phase timings. It replaces the native session-stats item; needs DSH 0.2.1-rc.5 or newer.'
+  zh: '把底栏输出速度改成双口径，例如 207(122) tok/s：括号外是首字之后的解码速度，括号内是含首字延迟的整段速度。点击可展开轮次、步数、首字延迟与各阶段用时明细。会取代原生的会话统计项；需要 DSH 0.2.1-rc.5 或更新版本。'

@@ -1,0 +1,6 @@
+url: https://github.com/timefarer/dsh-chat-search
+name: timefarer/dsh-chat-search
+category: session
+description:
+  en: 'Paragraph- and file-level search across the current conversation and all sessions, with a date/turn filter window and a jump that highlights the match. Defaults to the last 14 days and the latest 30 turns of each session; leave a limit empty to remove it.'
+  zh: '按段落与文件名检索当前或全部会话，支持日期与轮次筛选，跳转后高亮命中词。默认只搜最近 14 天、每个会话最近 30 轮，清空某项限制即可不限。'

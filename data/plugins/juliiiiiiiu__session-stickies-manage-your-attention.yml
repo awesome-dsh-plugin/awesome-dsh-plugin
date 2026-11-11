@@ -1,0 +1,7 @@
+url: https://github.com/juliiiiiiiu/session-stickies-manage-your-attention
+name: juliiiiiiiu/session-stickies-manage-your-attention
+category: session
+description:
+  en: 'Session-specific sticky cards with optional, explicitly authorized agent follow-ups. Targets the DSH desktop/web profile (protocol 0.2.2-rc.1); installed from GitHub.'
+  zh: '会话专属便签卡片，可选择明确授权智能体按顺序处理便签。面向 DSH 桌面/Web 配置（协议 0.2.2-rc.1），从 GitHub 安装。'
+icon: https://raw.githubusercontent.com/juliiiiiiiu/session-stickies-manage-your-attention/main/westie-bulb.png
