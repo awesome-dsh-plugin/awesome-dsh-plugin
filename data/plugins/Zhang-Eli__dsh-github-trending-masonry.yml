@@ -4,3 +4,4 @@ category: git
 description:
   en: 'GitHub Trending in the DSH sidebar: daily, weekly and monthly boards with category chips, model-written project intros in the UI language, and one-click starring that syncs to a GitHub account or stays in a local collection.'
   zh: '在 DSH 侧栏浏览 GitHub Trending：日/周/月三榜加分类标签，由模型用界面语言撰写项目简介，一键加星可同步到 GitHub 账号或存入本地收藏。'
+icon: https://raw.githubusercontent.com/Zhang-Eli/dsh-github-trending-masonry/master/assets/icon-180.png
