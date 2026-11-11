@@ -1,0 +1,6 @@
+url: https://github.com/xinchen262/dsh-whale-balance-pet
+name: xinchen262/dsh-whale-balance-pet
+category: ui
+description:
+  en: A floating whale-girl pet for DeepSeek Harness that shows the live account balance and per-minute token spend.
+  zh: 一只显示 DeepSeek 余额和 token 每分钟花费的小鲸桌宠。
