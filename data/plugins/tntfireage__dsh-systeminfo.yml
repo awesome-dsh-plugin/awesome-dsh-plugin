@@ -1,0 +1,7 @@
+url: https://github.com/tntfireage/dsh-systeminfo
+name: tntfireage/dsh-systeminfo
+category: ui
+icon: https://raw.githubusercontent.com/tntfireage/dsh-systeminfo/main/assets/icon-180.png
+description:
+  en: Adds a live system dashboard with per-core CPU, memory, GPU, processes, disk usage and a STOP action for ending processes, plus per-process energy on macOS, exposed as a browser page, a GUI panel and a `systemInfo` service other plugins can inject.
+  zh: 在 DSH 中提供 CPU（逐核）、内存、GPU、进程、磁盘占用与 STOP 结束进程的实时仪表盘，macOS 上另含逐进程能耗，并提供浏览器页面、侧栏面板与供其他插件注入的 systemInfo 服务。
