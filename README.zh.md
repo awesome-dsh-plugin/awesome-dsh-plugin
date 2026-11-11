@@ -437,6 +437,7 @@ dsh plugin --profile web add dshmarket
 - [Boris-boomer/dsh-project-cockpit](https://github.com/Boris-boomer/dsh-project-cockpit) — 右下角浮动驾驶舱面板（可拖拽、可缩放，默认 400x600），含编排/选题/成本/信号/图谱五个页签，整合四大引擎为统一 /__dsh/project-cockpit/* webServer 路由。内置悬浮按钮即可打开，dsh-icon-grid 图标为可选入口。
 - [breakc0re/dsh-yandex-music](https://github.com/breakc0re/dsh-yandex-music) — 在 DSH 侧边栏里使用 Яндекс.Музыка：搜索、可拖拽并可循环与随机播放的队列、支持拖拽编辑的播放列表、700 个「我的波」电台以及任意歌手的波、带真实时间轴与俄语翻译的卡拉 OK 歌词、音量、媒体按键，以及重启后从上次位置继续播放。需要 Яндекс 账号与 Plus 订阅。
 - [BrianHIO-x/dsh-think-expand](https://github.com/BrianHIO-x/dsh-think-expand) — 手动点开的 Think 默认保持展开，并提供每会话开关批量展开或收起全部思考；工具卡保持折叠，状态随页面刷新重置。
+- [brickhu/dsh-plugins#icon-studio](https://github.com/brickhu/dsh-plugins/tree/main/icon-studio) — 项目级图标库：右栏「Icons」面板 + 四个 agent 工具（icon_list、icon_get、icon_save、icon_annotate），把 SVG 变成有名称、有应用规则、可被指代的资产；图形可粘贴、从 Iconify / IconMCP 导入、从工作区扫描收编或用 AI 生成，改一次图形，代码里的所有引用一起更新。
 - [brickhu/dsh-plugins#references](https://github.com/brickhu/dsh-plugins/tree/main/references) — 右栏「参考链接」标签页：汇总对话里出现的全部 http(s) URL，支持置顶、每条链接的轮次统计（可点开查看具体轮次并跳转）、搜索、手动改名、隐藏单条或整个主机，以及 Cmd/Ctrl+Shift+L 快捷键。标题只来自对话本身（Markdown 标签、联网搜索结果的标题、抓取到的页面标题），不做远程标题抓取，也不调用模型。
 - [BroCC57/dsh-pending-review-glow](https://github.com/BroCC57/dsh-pending-review-glow) — 按待审批、运行中、刚完成三种状态给侧边栏会话行上色并加呼吸动效，行尾配同色状态点。
 - [btsd321/dsh-oh-my-terminal](https://github.com/btsd321/dsh-oh-my-terminal) — DSH Web GUI 底部终端面板插件，基于 node-pty 提供多标签交互式终端（Windows ConPTY / POSIX openpty），支持拆分面板、右侧终端列表与下拉新建/拆分菜单。同时兼容 DSH-better-sidebar——运行时自动检测并切换为底部工作台 tab，PTY 会话不绑定 DSH session 的 write handle。
@@ -7465,6 +7466,7 @@ dsh plugin --profile web add dshmarket
 - [AmethystLuna/logicprobe](https://github.com/AmethystLuna/logicprobe) — 声称核查技能：将设计文档与计划中的每条声称对照代码库事实核验，行为类声称升级为状态机/数据模型逻辑原语验证，支持前后回归、领域约束与并发风险挖掘。
 - [Andiii208/dsh-ultramath](https://github.com/Andiii208/dsh-ultramath) — 数学建模竞赛多 Agent 求解工作流：「UltraMath」主控预设一个预设跑通 读题→框架→推导→编码→验算→论文→审稿 全流程，另有 数学家/工程师/作家/审稿人 4 个单阶段角色预设与 33 篇模型库技能文档。
 - [appthin/dsh-skills-manager-plus](https://github.com/appthin/dsh-skills-manager-plus) — 在 DSH 设置中管理技能与命令：跨全局与项目作用域查看、启用/停用、编辑、删除与添加技能，并把常用提示词保存为斜杠命令。
+- [Apq/dsh-skill-author](https://github.com/Apq/dsh-skill-author) — 模型侧的 skill_manage 工具，可在用户级或项目级保存、替换、删除 Harness 技能，并常驻一段系统提示督促模型在收尾时评估技能沉淀。
 - [AshenSeeker/dsh-group-meeting-slides](https://github.com/AshenSeeker/dsh-group-meeting-slides) — 把英文论文 PDF 做成中文组会汇报 PPT，图表用原文真实像素。
 - [AshenSeeker/lit-report-ppt](https://github.com/AshenSeeker/lit-report-ppt) — 把一篇期刊论文默认做成三份产物 —— 中文组会文献汇报 PPT（南阳师范学院物理模板）、配套 Word 讲稿、双色答辩预测问答 HTML（十题左右，答案简短直接）。需本机 Python 3 及 python-pptx、python-docx、Pillow、pymupdf（pypdf 兜底）依赖，可用 pip install -r requirements.txt 安装。
 - [Azzygoatcoder/agent-useful-skills](https://github.com/Azzygoatcoder/agent-useful-skills) — 模块化 AI 科研/工程技能包，dsh plugin add 一键安装——在 ctx.skills 注册 27 个技能（安全审计、论文读写、绘图、开发工作流、存储分析）。
