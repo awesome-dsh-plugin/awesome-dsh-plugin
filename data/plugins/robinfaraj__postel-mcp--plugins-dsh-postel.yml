@@ -1,0 +1,7 @@
+url: https://github.com/robinfaraj/postel-mcp/tree/main/plugins/dsh-postel
+name: robinfaraj/postel-mcp#dsh-postel
+category: tools
+description:
+  en: 'Connects DeepSeek Harness to Postel over MCP: search a library of X posts that went viral by topic, write posts and X threads in the user''s saved voice, and save, schedule or publish them to X, LinkedIn, Bluesky and Mastodon; adds a postel-writing skill. Research works without an API key.'
+  zh: '通过 MCP 把 DeepSeek Harness 连接到 Postel：按主题搜索走红的 X 帖子库，以用户保存的文风撰写帖子和 X 长串，并保存、定时或发布到 X、LinkedIn、Bluesky 和 Mastodon；附带 postel-writing 技能。调研功能无需 API Key。'
+icon: https://raw.githubusercontent.com/robinfaraj/postel-mcp/main/assets/icon-400.png

@@ -1,0 +1,6 @@
+url: https://github.com/Ravi666688/dsh-screen-glow
+name: Ravi666688/dsh-screen-glow
+category: ui
+description:
+  en: 'Edge glow for DeepSeek Harness: blue while it drives your mouse and keyboard, amber while it asks a question, red while it waits for approval, plus a top banner naming the current action. Desktop only: the overlay is a separate Electron process (auto-detected from the DSH desktop app or dsh-pet; override with DSH_ELECTRON_PATH) and stays dark without one.'
+  zh: '为 DeepSeek Harness 加光：模型接管键盘鼠标时屏幕四边亮蓝光、提问时琥珀、等你批准时红色，并在屏幕中上方显示正在做什么。仅桌面端：覆盖层是独立 Electron 进程（从 DSH 桌面版或 dsh-pet 自动查找，可用 DSH_ELECTRON_PATH 覆盖），没有 Electron 时不会亮。'

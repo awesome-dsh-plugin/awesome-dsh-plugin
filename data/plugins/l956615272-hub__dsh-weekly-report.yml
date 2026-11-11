@@ -1,0 +1,6 @@
+url: https://github.com/l956615272-hub/dsh-weekly-report
+name: l956615272-hub/dsh-weekly-report
+category: workflow
+description:
+  en: 'Report generator that follows your own style: pick DSH sessions by time window and slice each one to the turns inside it, optionally merge Git commits from several repositories filtered by author, then a new session reads the evidence with read-only collector scripts and writes a daily, weekly or monthly Markdown report matching a pasted sample; finished reports stay in a local library.'
+  zh: '按你给定的样例风格生成日报/周报/月报：按时间窗口挑选 DSH 会话并只取窗口内的回合，可选合并多个仓库中按作者过滤的 git 提交，再由新会话用只读采集脚本读取证据写出 Markdown 报告；成品进入本地报告库。'

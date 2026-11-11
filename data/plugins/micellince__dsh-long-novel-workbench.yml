@@ -2,5 +2,5 @@ url: https://github.com/micellince/dsh-long-novel-workbench
 name: micellince/dsh-long-novel-workbench
 category: workflow
 description:
-  en: "Long-form Chinese novel workbench for DeepSeek Harness, built around a read → annotate → review → revise loop: continuous reading, in-page editing, reader annotations, four review tracks (logic, attention, AI-flavor, reader), paragraph-level proposals, and run actions, backed by attention design, a fact ledger, and a world map."
-  zh: "长篇中文小说工作台（DSH 插件），围绕「读—批注—审—改」：正文页优先的连续阅读与页内编辑、读者批注、四路审阅（逻辑·注意力·AI 味·读者）、段落级提案，以及全文动作 run；配合注意力设计、账本与世界地图。"
+  en: "A long-form Chinese novel workbench inside DeepSeek Harness: read, edit and annotate the manuscript in place; AI reports problems with ready-to-adopt revision drafts, and the text changes only when you accept. A ledger for characters, facts and foreshadowing plus a world map keep a long novel consistent, and AI can continue, expand or rewrite chapters."
+  zh: "装在 DeepSeek Harness 里的长篇中文小说工作台：正文页直接阅读、编辑和批注；AI 找问题并写好修改稿，你采纳后正文才会变。人物、事实、伏笔的账本加世界地图，让长篇不前后打架；还能让 AI 续写、扩写或改写整章。"

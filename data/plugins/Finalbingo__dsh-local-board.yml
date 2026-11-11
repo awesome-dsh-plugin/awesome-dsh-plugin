@@ -1,0 +1,6 @@
+url: https://github.com/Finalbingo/dsh-local-board
+name: Finalbingo/dsh-local-board
+category: ui
+description:
+  en: 'A local-first todo board for the DSH sidebar with Todo/Doing/Done columns organised by project, storing everything in one Markdown file inside a folder you pick on first run. Cards carry due dates down to the minute, a colour stripe, a private blur that hides the title until you reveal it, notes and per-project roles, and can be dragged between columns or onto another project. The agent also gets a kanban tool that reads and edits every card, masked ones included. On macOS it installs three launchd jobs that run /usr/bin/python3 and post system notifications (a 09:00 digest, a check every 30 minutes for cards due within 2 hours, a Monday weekly review), which you can retime or disable in the in-panel Automations tab.'
+  zh: '本地优先的待办看板：左侧导航里的 Todo/Doing/Done 三列，按项目组织，所有数据都在你首次使用时自己选的文件夹里的一个 Markdown 文件中。卡片支持精确到分钟的截止时间、颜色标记、私密打码（默认遮罩，点击才显示）、备注与项目角色，可在列与项目之间拖拽；agent 另有 kanban 工具，可读写全部卡片（含已打码的）。macOS 上会安装三个 launchd 定时任务，由 /usr/bin/python3 运行并发系统通知（每天 09:00 摘要、每 30 分钟检查 2 小时内到期的卡片、每周一回顾），可在面板「自动化」标签里改时间或停用。'

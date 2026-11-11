@@ -1,0 +1,8 @@
+url: https://github.com/anbulang/dsh-connect-teleagent
+name: anbulang/dsh-connect-teleagent
+category: model
+description:
+  en: 'Connect DeepSeek Harness to the TeleAgent (China Telecom TeleAI desktop app) models through the app''s own local kernel after signing in there, keeping DSH''s streaming, multi-turn, images, tool calls, reasoning and points balance. macOS and Windows only, with TeleAgent 2.7.1+ installed and signed in. It reads the app''s saved login token and points cookies (macOS Keychain / Windows DPAPI), starts the app''s own kernel binary as a local child process, and needs the gateway apiKey the desktop app ships with, supplied through TELEAGENT_API_KEY or a local.secrets.json in the plugin folder. Daily points claiming is on by default; adding or switching accounts backs up and rewrites the app''s login files. It registers the same teleagent model provider as the listed alvinhuang0509-design/dsh-connect-teleagent, so install only one; since 0.14.0 the package names differ. The author''s disclaimer asks you to follow TeleAgent''s terms of use.'
+  zh: '把本机已登录的 TeleAgent（天翼 AI 星辰超级智能体桌面端）模型经其本地内核接入 DSH，保留流式、多轮、图片、工具调用、思维链与积分。仅支持 macOS 与 Windows，需已安装并登录 TeleAgent 2.7.1 及以上。会读取桌面端保存的登录 token 与积分 Cookie（macOS 钥匙串 / Windows DPAPI），把桌面端自带的 kernel 作为本地子进程启动，并需要自备桌面端内置的网关 apiKey（环境变量 TELEAGENT_API_KEY，或插件目录下的 local.secrets.json）。每日积分自动领取默认开启；添加或切换账号会备份并改写桌面端的登录文件。与已收录的 alvinhuang0509-design/dsh-connect-teleagent 注册同一个 teleagent provider，只能装其一；自 0.14.0 起包名已区分。作者在免责声明中提示须遵守 TeleAgent 使用条款。'
+icon: https://raw.githubusercontent.com/anbulang/dsh-connect-teleagent/main/icon.png
+tarball: https://github.com/anbulang/dsh-connect-teleagent/releases/download/v0.14.0/anbulang-dsh-connect-teleagent-0.14.0.tgz

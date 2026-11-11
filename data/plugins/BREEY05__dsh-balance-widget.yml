@@ -1,0 +1,6 @@
+url: https://github.com/BREEY05/dsh-balance-widget
+name: BREEY05/dsh-balance-widget
+category: usage
+description:
+  en: Shows the selected provider's balance below the Harness composer and estimates spend from observed balance drops.
+  zh: 跟随所选模型供应商显示余额，并根据观察到的余额下降估算消耗。

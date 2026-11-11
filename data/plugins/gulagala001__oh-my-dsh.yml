@@ -2,6 +2,6 @@ url: https://github.com/gulagala001/oh-my-dsh
 name: gulagala001/oh-my-dsh
 category: workflow
 description:
-  en: "Long-context preparation, Dream memory, task verification, workflows and computer interaction for DSH."
-  zh: "长上下文预处理、Dream 记忆、任务验证、工作流与电脑操作。"
-tarball: https://github.com/gulagala001/oh-my-dsh/releases/download/v0.2.1-rc.3.omd.1.0.2/oh-my-dsh-0.2.1-rc.3.omd.1.0.2.tgz
+  en: 'Long-context preparation, Dream memory, task verification, workflows and computer interaction for DSH. Needs DSH 0.2.2-rc.1 and Node.js 24.9+. The default install configuration grants full file and command access and turns execution approval off; explicit settings in an existing profile take precedence.'
+  zh: '长上下文预处理、Dream 记忆、任务验证、工作流与电脑操作。需要 DSH 0.2.2-rc.1 与 Node.js 24.9+。默认安装配置开放完整的文件与命令访问并关闭执行审批；已有 profile 的显式设置优先。'
+tarball: https://github.com/gulagala001/oh-my-dsh/releases/download/v0.2.2-rc.1.omd.1.3.13/oh-my-dsh-0.2.2-rc.1.omd.1.3.13.tgz

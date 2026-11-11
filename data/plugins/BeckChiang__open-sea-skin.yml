@@ -1,0 +1,7 @@
+url: https://github.com/BeckChiang/open-sea-skin
+name: BeckChiang/open-sea-skin
+category: theme
+tarball: https://github.com/BeckChiang/open-sea-skin/releases/download/v2.0.6/open-sea-skin-dsh-2.0.6.tgz
+description:
+  en: 'Realtime ocean skin for DeepSeek Harness, rebuilt from d-dev0101/open-sea-skin 1.2.7 under MIT. Wave height follows the live session load, the sky comes from a local NOAA ephemeris, the star field is a real 2851-star HYG subset with 88 constellations, one boat per running subagent, plus a searchable 11-group settings panel and three quality tiers. Published to npm as "open-sea-skin-dsh"; it keeps the upstream bundle id, so uninstall d-dev0101/open-sea-skin first — the two cannot be installed side by side.'
+  zh: '给 DeepSeek Harness 的实时海洋皮肤，基于 d-dev0101/open-sea-skin 1.2.7（MIT）重新构建。浪高跟随会话负载，天色来自本地 NOAA 星历，星空是 2851 颗真实恒星的 HYG 子集与 88 个星座，每个运行中的子智能体一艘船，另有可搜索的 11 组设置面板与三档画质。已以 open-sea-skin-dsh 发布到 npm；bundle id 仍与上游相同，安装前须先卸载 d-dev0101/open-sea-skin，两者不能同时安装。'

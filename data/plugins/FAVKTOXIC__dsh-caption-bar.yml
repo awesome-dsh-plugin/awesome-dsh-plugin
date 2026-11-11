@@ -1,0 +1,6 @@
+url: https://github.com/FAVKTOXIC/dsh-caption-bar
+name: FAVKTOXIC/dsh-caption-bar
+category: ui
+description:
+  en: Moves conversation views into the Windows caption row and header utilities into a compact right rail on DSH Desktop with Codex UI, reclaiming a full row of vertical space while preserving the session title, fullscreen control, dynamic status counts and menus.
+  zh: 将会话视图移入 Windows 标题栏、其余顶栏工具压缩进紧凑右轨，在 DSH Desktop 与 Codex UI 中保留会话标题、全屏、动态状态计数与菜单功能，同时省下一整行垂直空间。

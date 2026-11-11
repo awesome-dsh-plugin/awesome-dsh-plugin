@@ -2,6 +2,6 @@ url: https://github.com/Duoasa/DSH-to-Figma
 name: Duoasa/DSH-to-Figma
 category: tools
 description:
-  en: 'Create and edit Figma designs through natural-language requests in DSH, read existing UI frames to support frontend development, and capture screenshots or export assets. Requires a companion plugin running in Figma.'
-  zh: '让 DSH 用自然语言创建和修改 Figma 设计，读取已有 UI 画板辅助前端开发，并支持画布截图与素材导出。需在 Figma 中运行配套插件。'
-tarball: https://github.com/Duoasa/DSH-to-Figma/releases/download/v0.2.3/dsh-to-figma-0.2.3.tgz
+  en: "Read, create and edit native Figma UI with DSH: screenshot comparison, design references, components and variables, motion, assets and scoped recovery. Local companion by default, with official MCP connections retained. Requires Figma Desktop and the generated companion."
+  zh: "让 DSH 用自然语言读取、创建和编辑 Figma UI，支持参考图比对、设计参考、组件与变量、动效、素材和局部恢复。默认走本地配套插件，保留官方 MCP 接入；需 Figma 桌面版并导入 DSH 生成的配套插件。"
+icon: https://raw.githubusercontent.com/Duoasa/DSH-to-Figma/main/assets/icon.png

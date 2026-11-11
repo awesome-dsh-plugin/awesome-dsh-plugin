@@ -1,0 +1,7 @@
+url: https://github.com/vinson1101/dsh-task-dispatch
+name: vinson1101/dsh-task-dispatch
+category: session
+description:
+  en: 'Dispatch a task to a real DSH session by workspace path or session id; results land in a persistent task ledger that can be queried without triggering the model. It serves HTTP on 127.0.0.1:7391 with no authentication unless a token is configured, so any local program can dispatch tasks into your sessions and read the ledger; task results are stored as JSON files under ~/.dsh/relay/tasks, and an optional notifyUrl receives each finished result.'
+  zh: '按工作空间或会话 id 给真实的 DSH 会话派发任务；结果写入持久任务台账，查询时不会触发模型。它在 127.0.0.1:7391 提供 HTTP 接口，不配置 token 就不需要认证，本机任何程序都能向你的会话派发任务、读取台账；任务结果以 JSON 文件存在 ~/.dsh/relay/tasks，可选的 notifyUrl 会收到每个完成任务的结果。'
+tarball: https://github.com/vinson1101/dsh-task-dispatch/releases/download/v0.6.0/dsh-task-dispatch-0.6.0.tgz

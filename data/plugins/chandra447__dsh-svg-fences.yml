@@ -1,0 +1,7 @@
+url: https://github.com/chandra447/dsh-svg-fences
+name: chandra447/dsh-svg-fences
+category: docs
+description:
+  en: Renders SVG code fences in chat as theme-aware inline figures with source, copy, download and zoom.
+  zh: 将聊天中的 SVG 代码块渲染为跟随主题的内联图形，支持源码、复制、下载与缩放。
+icon: https://raw.githubusercontent.com/chandra447/dsh-svg-fences/main/assets/icon-180.png

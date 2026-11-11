@@ -1,0 +1,6 @@
+url: https://github.com/JMINN0/dsh-go-plugin-adb
+name: JMINN0/dsh-go-plugin-adb
+category: tools
+description:
+  en: 'Gives a DSH agent a real adb shell on the phone itself over loopback, with no root and no PC. Needs DSH Go with android-tools-adb installed in its Ubuntu environment and a one-time Wireless debugging pairing; adb has to be switched to TCP port 5555, which then also accepts connections from the local network (still key-authenticated).'
+  zh: '让 DSH 智能体在手机内部通过回环拿到真实的 adb shell，无需 root，也不需要电脑。需要 DSH Go，并在其 Ubuntu 环境里装好 android-tools-adb，且先用「无线调试」配对一次；adb 需切到 TCP 5555 端口，该端口随后也接受局域网内的连接（仍需 adb 密钥认证）。'

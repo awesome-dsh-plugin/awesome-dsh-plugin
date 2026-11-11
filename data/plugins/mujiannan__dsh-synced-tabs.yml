@@ -1,0 +1,6 @@
+url: https://github.com/mujiannan/dsh-synced-tabs
+name: mujiannan/dsh-synced-tabs
+category: ui
+description:
+  en: Session tabs for the DeepSeek Harness Web GUI whose open-session set is shared across every device attached to the same host, with workspace grouping, status dots, and a bottom bar that collapses into a drawer on narrow screens.
+  zh: DSH Web GUI 的会话标签栏：同一宿主下的所有设备共享一份「打开过的会话」集合，带 workspace 分组、状态点，窄屏时横条贴底并收进抽屉。

@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-readme-reel
+name: dingchenhui0618-arch/dsh-readme-reel
+category: docs
+description:
+  en: 'Turns a plugin repository''s existing screenshots into a 6-second silent looping hero reel: a VP9 webm that keeps real alpha, a matted gif, and a cover frame, plus a manifest with per-scene holds and sha256s. The timeline is exact by construction (integer holds plus transitions sum to durationMs, and the last scene transitions back into the first so t=0 equals t=duration). Zero runtime dependencies: PNG decode/encode on node:zlib, an SDF card compositor, and ffmpeg as the only external binary, discovered at runtime. Ships a conversation-view panel (pick, reorder, generate, copy the README markdown) and a CLI with a storyboard.json contract.'
+  zh: '把插件仓库里已有的截图排成一条 6 秒无声循环首屏短片：VP9 webm（保留真 alpha）、压平垫底的 gif、封面帧，外加记录每幕停留与 sha256 的清单。时间轴按构造即精确（整数停留 + 转场之和等于 durationMs，最后一幕转场回第一幕，t=0 与 t=结束同一帧）。零运行时依赖：PNG 编解码基于 node:zlib，自写 SDF 卡片合成器，唯一外部程序是运行时发现的 ffmpeg。带对话视图面板（选图、排序、生成、复制 README Markdown）与一条接受 storyboard.json 的 CLI。'

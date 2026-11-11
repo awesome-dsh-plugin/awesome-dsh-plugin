@@ -1,0 +1,6 @@
+url: https://github.com/Koewen/dsh-window-size-lock
+name: Koewen/dsh-window-size-lock
+category: wsl
+description:
+  en: "Windows only (binds user32.dll via koffi; inert on macOS/Linux). Remembers the DeepSeek Harness main window's size AND position: restores both on every launch (re-asserted during a grace period to beat the default layout), saves stable manual moves/resizes as the new lock, never records minimized/maximized/fullscreen states, never adopts the default rect DSH itself places the window at (so the app's own layout resets can never poison the lock), and stays on-screen when monitors change. Compatible with DSH 0.2.1-rc.3+."
+  zh: "仅限 Windows（用 koffi 绑定 user32.dll，macOS/Linux 上不生效）。记住 DeepSeek Harness 主窗口的尺寸与位置：启动时恢复上次的位置和大小，并在宽限期内反复断言以压过默认布局；手动移动或调整窗口后自动保存为新锁定；最小化/最大化/全屏状态不会被记录；DSH 自行放置的默认矩形永远不会被采纳，应用自身的布局重置无法污染锁定；更换显示器时自动防屏外。兼容 DSH 0.2.1-rc.3+。"

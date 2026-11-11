@@ -1,0 +1,7 @@
+url: https://github.com/HeartQwQ/dsh-prompt-library
+name: HeartQwQ/dsh-prompt-library
+category: usage
+description:
+  en: 'A searchable library of 60 Chinese task templates with variables, examples, sources and Skill methods, plus draft-safe prompt optimization using a configured DSH model.'
+  zh: '提供 60 条中文任务模板的搜索、变量填写、示例、来源与 Skill 方法，并使用 DSH 已配置模型优化提示词，保护原有草稿。'
+tarball: https://github.com/HeartQwQ/dsh-prompt-library/releases/download/v0.3.0/dsh-prompt-library-0.3.0.tgz

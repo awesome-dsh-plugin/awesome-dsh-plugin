@@ -1,0 +1,7 @@
+url: https://github.com/lubenkov/dsh-pajama-whale
+name: lubenkov/dsh-pajama-whale
+category: fun
+description:
+  en: 'A draggable pet in a blue-whale onesie: sticks to window edges, squashes flat, blinks, sleeps, and shows agent status in a thought cloud.'
+  zh: '一个穿着蓝色鲸鱼连体衣、可拖动的宠物：会贴住窗口边缘、被压扁，会眨眼、睡觉，并用气泡显示智能体状态。'
+icon: https://raw.githubusercontent.com/lubenkov/dsh-pajama-whale/master/assets/icon.png

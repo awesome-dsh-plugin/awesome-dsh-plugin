@@ -1,0 +1,7 @@
+url: https://github.com/heavenJiang/dsh-switchboard
+name: heavenJiang/dsh-switchboard
+category: remote
+description:
+  en: 'Command DeepSeek Harness from Telegram and Feishu (Lark): one live progress message per turn, approvals and questions as buttons, files and voice, delivery that survives outages and restarts, QR setup for Feishu, and per-person roles.'
+  zh: 在 Telegram 和飞书中指挥 DeepSeek Harness：每轮一条实时进度消息，按钮审批与提问，收发文件和语音，断线和重启不丢消息，飞书扫码接入，按人设置权限。
+icon: https://raw.githubusercontent.com/heavenJiang/dsh-switchboard/main/assets/icon-180.png

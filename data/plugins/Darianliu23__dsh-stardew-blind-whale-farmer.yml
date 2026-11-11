@@ -1,0 +1,6 @@
+url: https://github.com/Darianliu23/dsh-stardew-blind-whale-farmer
+name: Darianliu23/dsh-stardew-blind-whale-farmer
+category: fun
+description:
+  en: 'DSH plugin for Blind Whale Farmer, a SMAPI mod in the same repo that turns Stardew Valley into a text game state so an AI can play it through MCP tools: farming, fishing, mining, gifts, festivals and marriage, plus LAN co-op on the same PC where you chat with her in Chinese (F6). A config card on the plugin page sets play limits (days and minutes), time freeze while thinking, the co-op mode, extra instructions and the guide, and pushes them to the running game; an optional session preset or a single stardew gateway tool (both off by default); and an automatic "keep playing" when a session stops on a tool call that came back as plain text. Needs the mod installed in the game.'
+  zh: '大肥鱼种白饭（Blind Whale Farmer）的 DSH 插件。同仓库里的 SMAPI 模组把星露谷的游戏状态转成文字，让 AI 通过 MCP 工具来玩：种地、钓鱼、下矿、送礼、过节日、恋爱结婚，也能和你在同一台电脑上联机一起玩，按 F6 用中文聊天。插件在插件页的配置卡片里调整每次游玩的天数和时长、思考时冻结时间、联机模式、给 AI 的额外要求和攻略，自动推送到游戏；可选会话预设或单个 stardew 入口工具（默认都关闭），会话因工具调用中断时会自动发“接着玩”。需要先在游戏里装好模组。'

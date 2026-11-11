@@ -1,0 +1,6 @@
+url: https://github.com/Takeoff0518/dsh-katex-inline-copy
+name: Takeoff0518/dsh-katex-inline-copy
+category: ui
+description:
+  en: "Makes copying math from DSH chat put LaTeX source ($...$ or $$...$$) on the clipboard instead of rendered KaTeX markup; code blocks and the prompt box keep native copy behavior."
+  zh: "在 DSH 对话里复制含公式的内容时，剪贴板里得到 $...$ / $$...$$ 的 LaTeX 源码，而不是 KaTeX 渲染碎片；代码块与输入框保持原生复制。"

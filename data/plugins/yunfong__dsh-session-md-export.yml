@@ -1,0 +1,6 @@
+url: https://github.com/yunfong/dsh-session-md-export
+name: yunfong/dsh-session-md-export
+category: session
+description:
+  en: 'Export the current session as a readable Markdown file with dialogue only: user messages, assistant text, and ask_user_question answers, from a session-header button or the /md command.'
+  zh: '把当前会话导出为可读的 Markdown 文件，只保留对话正文：用户消息、助手文本与 ask_user_question 问答，通过会话标题栏按钮或 /md 命令触发。'

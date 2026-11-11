@@ -1,0 +1,6 @@
+url: https://github.com/kinglhy2006/dsh-crt-theme
+name: kinglhy2006/dsh-crt-theme
+category: theme
+description:
+  en: CRT terminal skin with a phosphor-green palette, scanlines and monospace type for DeepSeek Harness. Also adds a sidebar dashboard with output speed, CPU/memory and DeepSeek balance; the key stays in the host process.
+  zh: 深色磷光绿 CRT 终端皮肤，带扫描线和等宽字体，用于 DeepSeek Harness。另在侧栏加仪表盘：输出速度、CPU/内存与 DeepSeek 余额；密钥只留在宿主进程。

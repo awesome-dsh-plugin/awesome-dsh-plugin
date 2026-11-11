@@ -2,6 +2,5 @@ url: https://github.com/EasonMWS/dsh-plugin-health
 name: EasonMWS/dsh-plugin-health
 category: dev
 description:
-  en: Multi-host compatibility matrix, official format-1 market index builder, and a read-only plugin_health tool for DeepSeek Harness plugins.
-  zh: DSH 插件的多宿主兼容矩阵、官方 format-1 市场索引生成器，以及只读的 plugin_health 诊断工具。
-# recheck submission gate after the repository turned 1 day old
+  en: 'Fixes plugins a DSH upgrade left behind: rehearse each rejected plugin in a throwaway home, grant a reversible exact-version exemption when it boots, and refuse when it does not. Also a multi-host compatibility matrix, a public table of every catalogued plugin, and a read-only plugin_health tool.'
+  zh: '修复 DSH 升级后被落下的插件：每个被拒绝的插件先在一次性环境里试装试启动，能启动才写一条可撤销的精确版本豁免，不能启动就明确拒绝。另有：多宿主兼容矩阵、覆盖全部已收录插件的公开兼容表，以及只读的 plugin_health 工具。'

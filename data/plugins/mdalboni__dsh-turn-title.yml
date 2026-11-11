@@ -1,0 +1,7 @@
+url: https://github.com/mdalboni/dsh-turn-title
+name: mdalboni/dsh-turn-title
+category: session
+description:
+  en: 'Auto-titles conversations after the first user+assistant exchange, with a chat header button to update or manually edit titles.'
+  zh: '在首轮完整对话（提问+回复）后自动生成会话标题，并在聊天顶部工具栏提供更新/编辑标题按钮。'
+icon: https://raw.githubusercontent.com/mdalboni/dsh-turn-title/main/assets/icon-180.png

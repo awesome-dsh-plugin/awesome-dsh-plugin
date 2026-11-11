@@ -1,6 +1,7 @@
 url: https://github.com/Vncntvx/dsh-zotero
 name: Vncntvx/dsh-zotero
 category: tools
+icon: https://raw.githubusercontent.com/Vncntvx/dsh-zotero/main/docs/images/icon.png
 description:
-  en: 'Zotero as an evidence store for agents: search your library, inspect metadata and notes, retrieve evidence passages, open source PDFs, and generate citations and bibliographies.'
-  zh: 面向 Agent 研究工作流的 Zotero 插件：搜索文献、查看元数据与笔记、提取与问题相关的证据段落、打开原文 PDF、生成引用与参考文献表。
+  en: 'Zotero plugin for DeepSeek Harness: search and read papers in conversation, audit the literature trail, and browse the literature panel. It uses the same package name (dsh-zotero) as kuangdang123/dsh-zotero, so only one of the two can be installed per profile.'
+  zh: '面向 DeepSeek Harness 的 Zotero 插件：在对话中检索与阅读文献、在文献轨迹中核对记录，并在文献面板浏览文献库。包名与 kuangdang123/dsh-zotero 相同（dsh-zotero），同一个 profile 里只能装其中一个。'

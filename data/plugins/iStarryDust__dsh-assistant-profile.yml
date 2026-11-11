@@ -2,5 +2,5 @@ url: https://github.com/iStarryDust/dsh-assistant-profile
 name: iStarryDust/dsh-assistant-profile
 category: identity
 description:
-  en: 'Agent persona: gives DSH one global persona (name, language, persona prompt) that every new session carries at the front of its system prompt; personas can be defined and saved, with three Big fat fish personas included by default. A Big fat fish persona is active right after install.'
-  zh: 'Agent人格：给 DSH 一份全局人格（名称、语言、人格提示词），每个新会话的系统提示都带着它；可以自行定义/另存人格；默认带三个大肥鱼人格提示词；装好后默认启用大肥鱼人格。'
+  en: 'Agent persona: gives DSH one global persona (name, language, persona prompt) that every new session carries at the front of its system prompt, plus a long-term memory you grow from any chat in one click; three built-in presets ship with it, and a Big fat fish persona is active right after install; chat sessions can also be deleted from the sidebar row menu.'
+  zh: 'Agent人格：给 DSH 一份全局人格（名称、语言、人格提示词），每个新会话的系统提示都带着它，外加一份长期记忆，聊天里点一下就能把选中的对话提炼进去；自带三个内置预设，装好默认启用大肥鱼人格；侧栏会话行还能直接删除会话。'

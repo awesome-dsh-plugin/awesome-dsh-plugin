@@ -1,0 +1,7 @@
+url: https://github.com/Lionad-Morotar/dsh-jump
+name: Lionad-Morotar/dsh-jump
+category: ui
+icon: https://raw.githubusercontent.com/Lionad-Morotar/dsh-jump/main/assets/icon-180.png
+description:
+  en: 'Press a chord, then type a letter label to click or focus any visible target.'
+  zh: '按下组合键后，用字母标签选中并点击或聚焦任意可见目标。'

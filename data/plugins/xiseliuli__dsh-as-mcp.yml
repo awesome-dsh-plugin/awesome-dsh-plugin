@@ -1,0 +1,7 @@
+url: https://github.com/xiseliuli/dsh-as-mcp
+name: xiseliuli/dsh-as-mcp
+category: tools
+description:
+  en: 'Exposes a running DeepSeek Harness as an MCP server over Streamable HTTP or a bundled stdio bridge, so an external agent can create workspaces and sessions, prompt, fork, rename and switch the model on them, read and write files, run foreground and background shell commands, call the instance''s own agent tools by name, and read per-turn and cumulative token usage with a cost receipt when a price plugin is installed.'
+  zh: '把正在运行的 DeepSeek Harness 暴露为 MCP server（Streamable HTTP，或附带的 stdio 桥），外部 agent 可创建 workspace 与会话，发起 prompt、fork、重命名、切换模型，读写文件，运行前台与后台 shell 命令，按名调用该实例自身的 agent 工具，并读取单轮与累计 token 用量；装了计价插件时还给出费用回执。'
+icon: https://raw.githubusercontent.com/xiseliuli/dsh-as-mcp/main/icon.png

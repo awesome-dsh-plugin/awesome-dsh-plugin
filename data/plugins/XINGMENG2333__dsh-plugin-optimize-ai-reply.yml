@@ -1,0 +1,8 @@
+url: https://github.com/XINGMENG2333/dsh-plugin-optimize-ai-reply
+name: XINGMENG2333/dsh-plugin-optimize-ai-reply
+category: tools
+description:
+  en: Strips AI-flavor from LLM text with local density scanning and deterministic fact/strength/safety checks; a rewrite that fails verification falls back to the original.
+  zh: 把大模型生成的文本改成读起来像人写的：本地密度扫描 + 事实/强度/安全确定性校验，改写不达标自动回退原文。
+tarball: https://github.com/XINGMENG2333/dsh-plugin-optimize-ai-reply/releases/latest/download/dsh-plugin-optimize-ai-reply.tgz
+icon: https://raw.githubusercontent.com/XINGMENG2333/dsh-plugin-optimize-ai-reply/main/assets/icons/icon128.png

@@ -1,0 +1,6 @@
+url: https://github.com/heiyedehen/dsh-half-page
+name: heiyedehen/dsh-half-page
+category: ui
+description:
+  en: 'A reading room kept for the agent: through reading_* tools it reads a book from ~/.dsh/reading one chapter at a time, writes notes beside chapters and keeps its own writing there, and a panel shows its reading progress. It adds lines to the system prompt telling the agent the room is its own and optional. Not a to-do list.'
+  zh: '给智能体用的书房：它通过 reading_* 工具一章一章读 ~/.dsh/reading 里的书，在章节旁写读后感，也把自己写的东西放在这里，面板显示它的阅读进度。插件会往系统提示里加几行，告诉智能体这间书房归它自己、读不读随它。不是待办清单。'

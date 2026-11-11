@@ -1,0 +1,6 @@
+url: https://github.com/DarknessLED/dsh-loom
+name: DarknessLED/dsh-loom
+category: workflow
+description:
+  en: 'Human-in-the-loop self-improvement loop: one objective becomes an auditable work chain that iterates in child sessions while the main agent stays idle.'
+  zh: '人在环的自我改进循环：给一个目标，工作链在子会话里一轮轮迭代，主 agent 始终保持空闲。'

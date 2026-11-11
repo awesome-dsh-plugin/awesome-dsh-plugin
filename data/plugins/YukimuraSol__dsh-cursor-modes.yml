@@ -1,0 +1,6 @@
+url: https://github.com/YukimuraSol/dsh-cursor-modes
+name: YukimuraSol/dsh-cursor-modes
+category: workflow
+description:
+  en: 'Cursor-style mode switching for the dsh web UI: plan mode with a delegation gate, multitask mode with a tool-call quota, and the create_plan / request_more_edits / list_running_agent tools. Adds a plan card with Build buttons and compacts the subagent dropdown to running rows.'
+  zh: '为 dsh 网页端提供类 Cursor 的模式切换：带委派闸门的计划模式、带工具调用配额的多任务模式，以及 create_plan / request_more_edits / list_running_agent 三个工具。另有带 Build 按钮的计划卡片，并把子代理下拉收成只显示运行中的行。'

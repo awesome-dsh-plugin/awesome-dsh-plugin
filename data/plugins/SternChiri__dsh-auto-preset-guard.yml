@@ -1,0 +1,6 @@
+url: https://github.com/SternChiri/dsh-auto-preset-guard
+name: SternChiri/dsh-auto-preset-guard
+category: security
+description:
+  en: 'Keeps the Auto permission preset across DSH restarts: the auto-review unload migration no longer rewrites a live Auto Session to Full access during application shutdown, and a stored Auto Session no longer fails to open when its integration is absent.'
+  zh: '让「自动审批」熬过重启：应用退出时，自动审查的卸载迁移不再把在用的自动审批会话改写成「完全权限」；集成缺席时，存留的自动审批会话也不会打不开。'

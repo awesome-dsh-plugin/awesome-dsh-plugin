@@ -1,0 +1,6 @@
+url: https://github.com/k623615746/dsh-chat-split
+name: k623615746/dsh-chat-split
+category: ui
+description:
+  en: 'Splits the conversation area into up to four panes inside a sidebar panel: drag a session from the sidebar onto the conversation and it opens as a new pane, drag one pane header onto another to swap them, fill a single pane across the whole area, and keep the host title bar, view tabs and sidebar untouched by portalling the grid into the conversation body; every pane carries its own index, workspace and title header, and the pane-count controls (+ / - / x) sit in the host tab row.'
+  zh: '对话区分屏：左侧栏入口最多开四屏（1 屏铺满 / 2 屏左右并排 / 3–4 屏两列两行），从侧栏把会话拖进对话区即自动分屏，拖一屏的信息头到另一屏可换位，点一下把某屏铺满整个区域；网格是宿主正文区里的真子节点，宿主标题栏、页签行与左侧栏原样保留，每屏自带序号/工作区/标题信息头，屏数加减与关闭挂在宿主顶栏页签行右侧。'

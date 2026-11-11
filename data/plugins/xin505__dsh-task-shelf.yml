@@ -1,0 +1,7 @@
+url: https://github.com/xin505/dsh-task-shelf
+name: xin505/dsh-task-shelf
+category: session
+tarball: https://github.com/xin505/dsh-task-shelf/releases/download/v1.1.0/dsh-task-shelf-1.1.0.tgz
+description:
+  en: Organizes task materials and supports session handoffs across workspaces.
+  zh: 整理任务资料，支持跨工作区的会话交接。

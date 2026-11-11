@@ -1,0 +1,6 @@
+url: https://github.com/cq-guojia/dsh-task-ledger/tree/main/packages/plugin
+name: cq-guojia/dsh-task-ledger#plugin
+category: workflow
+description:
+  en: 'Task ledger: a dsh plugin that has the agent create, claim, advance and close tasks, writing each step straight into a plain-text ledger in the workspace so the owner, the current state and the next step stay on record; no cloud service is involved, single-user and multi-user both work with Git synchronisation, and a control panel summarises in-flight, overdue and stalled work with weekly trends.'
+  zh: '任务台账：任务由代理创建、认领、推进与结案，每一步直接写入工作区内的纯文本台账，使负责人、当前状态与下一步全程留痕；不涉及云服务，单人多人皆可用、以 Git 同步，看板汇总进行中、逾期与停滞的任务与每周趋势。'

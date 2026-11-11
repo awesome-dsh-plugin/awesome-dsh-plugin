@@ -1,0 +1,7 @@
+url: https://github.com/66-zhimeng/dsh-chart-lab
+name: 66-zhimeng/dsh-chart-lab
+category: ui
+description:
+  en: 'Interactive chart cards in the conversation: the host loads a workspace dataset, and the browser card switches chart type, dimension, aggregation, filtering, Top-N and colour scheme, then exports CSV or PNG — all locally, with no model round-trips.'
+  zh: '对话里的可交互图表卡片：数据由宿主从工作区读取，浏览器卡片本地切换图表类型、维度、聚合、筛选、Top-N 与配色，并可导出 CSV / PNG，全程不产生模型往返。'
+icon: https://raw.githubusercontent.com/66-zhimeng/dsh-chart-lab/main/assets/icon-180.png

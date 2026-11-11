@@ -1,0 +1,7 @@
+url: https://github.com/lucagiftzek/dsh-note-keeper
+name: lucagiftzek/dsh-note-keeper
+category: memory
+description:
+  en: "Obsidian-compatible Markdown notes in the DSH sidebar with search, tags, backlinks, graph, audio notes with transcription, a paint canvas, OCR (needs tesseract), client-side encryption and notes_* agent tools; the release tarball and the npm package carry a prebuilt Linux x64 daemon, other platforms build it from source with Go."
+  zh: "DSH 侧栏里的 Obsidian 兼容 Markdown 笔记：搜索、标签、反向链接、图谱、带转写的语音笔记、画布、OCR（需 tesseract）、客户端加密与 notes_* agent 工具；release tarball 与 npm 包自带预构建的 Linux x64 daemon，其他平台需用 Go 从源码构建。"
+tarball: https://github.com/lucagiftzek/dsh-note-keeper/releases/download/v0.3.0/dsh-note-keeper-0.3.0.tgz

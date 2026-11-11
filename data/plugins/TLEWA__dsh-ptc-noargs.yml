@@ -1,0 +1,6 @@
+url: https://github.com/TLEWA/dsh-ptc-noargs
+name: TLEWA/dsh-ptc-noargs
+category: dev
+description:
+  en: 'Normalizes an omitted or undefined first argument to {} for TypeScript PTC run_code calls, so no-argument tools such as tools.job_list() stop failing with "binding arguments must be lossless JSON".'
+  zh: '把 PTC run_code（TypeScript function-body）中省略或为 undefined 的工具首参归一化为 {}，tools.job_list() 这类无参调用不再报 binding arguments must be lossless JSON。'

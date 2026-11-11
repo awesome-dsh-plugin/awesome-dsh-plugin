@@ -1,0 +1,8 @@
+url: https://github.com/lyy-hast/dsh-coros-plugin
+name: lyy-hast/dsh-coros-plugin
+category: ui
+tarball: https://github.com/lyy-hast/dsh-coros-plugin/releases/download/v1.0.3/dsh-coros-sport-1.0.3.tgz
+icon: https://raw.githubusercontent.com/lyy-hast/dsh-coros-plugin/main/assets/icon-180.png
+description:
+  en: 'COROS Sport panel for DeepSeek Harness: sign in to COROS inside the panel, read the account, bound devices, recovery, fitness, recent workouts, daily health and the training schedule in one dashboard, and get a plan from the model with /coros-plan. The plan page writes a fixed four-week, 16-session plan to the account only after a two-step confirmation.'
+  zh: '在 DeepSeek Harness 内登录高驰（COROS）账号，用一个面板查看账号、绑定设备、恢复、体能、近期运动、每日健康与训练安排，并可用 /coros-plan 让模型按账号数据给出训练计划；计划页只在二次确认后才把固定的四周 16 节课写入账号。'

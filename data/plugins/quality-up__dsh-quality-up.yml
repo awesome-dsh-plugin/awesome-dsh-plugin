@@ -1,0 +1,6 @@
+url: https://github.com/quality-up/dsh-quality-up
+name: quality-up/dsh-quality-up
+category: tools
+description:
+  en: Tracks manufacturing quality issues and 8D improvement projects, analyzes process capability and SPC control charts, and exports reports from a local SQLite database.
+  zh: 管理制造质量问题和 8D 改进项目，分析过程能力与 SPC 控制图，并从本地 SQLite 数据库导出报表。

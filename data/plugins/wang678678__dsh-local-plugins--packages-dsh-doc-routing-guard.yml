@@ -1,0 +1,6 @@
+url: https://github.com/wang678678/dsh-local-plugins/tree/main/packages/dsh-doc-routing-guard
+name: wang678678/dsh-local-plugins#dsh-doc-routing-guard
+category: docs
+description:
+  en: Adds a global document-routing prompt so PDFs, images, and Office files are read with the right tool.
+  zh: 加入全局文档路由提示，让 PDF、图片和 Office 文件自动走正确的读取工具。

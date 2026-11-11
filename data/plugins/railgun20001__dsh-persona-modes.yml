@@ -1,0 +1,6 @@
+url: https://github.com/railgun20001/dsh-persona-modes
+name: railgun20001/dsh-persona-modes
+category: identity
+description:
+  en: "Switches the tone of DSH replies from Settings → 人格模式 or the /persona command (/persona catgirl, /persona off), effective from the next turn. Only the active persona is injected, as runtime context, so the system prompt keeps a single stable short strategy; with the mode off the injected persona text is 0 characters. Facts, code and engineering discipline are unchanged."
+  zh: "在「设置 → 人格模式」或 /persona 命令（/persona catgirl、/persona off）里切换回复语气，下一轮对话生效。同一时刻只注入当前这一条（放在运行时上下文里，系统提示词只保留一条约 50 字的稳定策略），关闭时注入 0 字；只改语气，不改事实、代码与工程纪律。"

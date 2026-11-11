@@ -1,0 +1,7 @@
+url: https://github.com/Nico-2222/dsh-mys-checkin
+name: Nico-2222/dsh-mys-checkin
+category: tools
+description:
+  en: 'Daily check-in for MiYoushe (米游社) across six miHoYo games (mainland China servers only): Genshin Impact, Honkai: Star Rail, Zenless Zone Zero, Honkai Impact 3rd, Tears of Themis and Honkai Gakuen 2. QR-code login inside the plugin panel, per-game selection, a daily schedule with random jitter and startup catch-up, and four agent tools. Credentials stay on the local machine (mode 0600) and are never sent anywhere but the official miHoYo API.'
+  zh: '米游社六个游戏每日签到（仅限国服：原神 / 崩坏：星穹铁道 / 绝区零 / 崩坏3 / 未定事件簿 / 崩坏学园2）：面板内扫码登录、按游戏勾选、每日定时（带随机延迟与启动补签），并提供四个 agent 工具。凭证仅存本机（0600），除官方接口外不会发往任何地方。'
+icon: https://raw.githubusercontent.com/Nico-2222/dsh-mys-checkin/main/assets/icon-180.png

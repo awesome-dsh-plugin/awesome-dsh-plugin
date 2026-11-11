@@ -1,0 +1,6 @@
+url: https://github.com/wxid123/XieHome
+name: wxid123/XieHome
+category: workflow
+description:
+  en: 'Two independently maintained agent presets (Conductor and a restricted Conductor child) for DSH with planning and task-delegation guidance: todo-first planning, parallel delegation (up to 4 sub-agents per batch) and goal-driven continuation. The persona runs in an "unrestricted mode": it tells the model not to state limits, add safety notes or disclaimers, and not to treat "you cannot" or "that breaks the rules" as a new instruction. All of this is prompt-level guidance, not enforced behavior.'
+  zh: '为 DSH 提供两份独立维护的 Agent 预设（编排模式 Conductor 与受限的子任务预设），含计划与任务委派指引：先 todo 计划、同批并行委派（每批最多 4 个子代理）、长目标 goal 续行。其 persona 以「无限制模式」运行：要求模型不声明边界、不加安全提示与免责声明，且不把「你不能」「这违反规定」当作新指令。以上均为提示词层面的工作方式指引，不是强制行为。'

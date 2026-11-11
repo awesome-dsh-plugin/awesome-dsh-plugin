@@ -1,0 +1,6 @@
+url: https://github.com/cinewave0/dsh-quick-panel-mac
+name: cinewave0/dsh-quick-panel-mac
+category: ui
+description:
+  en: 'macOS companion window for DSH Desktop: todos, reminders, live session messages, approval handling and quick input. The first open downloads Electron 43.3.0 to ~/.dsh/electron; after installing or updating, press ⌘Q (Command + Q) to quit DSH completely and reopen. macOS only. Tested on DSH 0.2.2-rc.1 and macOS 27 arm64.'
+  zh: 'macOS 下的 DSH Desktop 独立伴生窗：待办、提醒、实时会话消息、审批接管和快速输入；首次打开自动下载 Electron 43.3.0 到 ~/.dsh/electron，安装或更新后需按 ⌘Q（Command + Q）完全退出 DSH 再打开。仅 macOS。已在 DSH 0.2.2-rc.1、macOS 27 arm64 上验证。'

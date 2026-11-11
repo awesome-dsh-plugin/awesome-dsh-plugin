@@ -1,0 +1,6 @@
+url: https://github.com/solstice621/dsh-conversation-cost
+name: solstice621/dsh-conversation-cost
+category: usage
+description:
+  en: "Shows per-answer and conversation cost estimates from recorded token usage, with automatic model pricing updates and detailed price-source breakdowns."
+  zh: "根据已记录的 Token 用量估算每轮回答和会话费用，支持自动更新模型价格及查看价格来源明细。"

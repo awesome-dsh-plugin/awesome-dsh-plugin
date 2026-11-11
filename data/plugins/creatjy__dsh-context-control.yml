@@ -1,0 +1,8 @@
+url: https://github.com/creatjy/dsh-context-control
+name: creatjy/dsh-context-control
+category: usage
+tarball: https://github.com/creatjy/dsh-context-control/releases/download/v0.6.8/dsh-context-control-0.6.8.tgz
+icon: https://raw.githubusercontent.com/creatjy/dsh-context-control/main/icon.png
+description:
+  zh: "DeepSeek Harness 上下文管控：按模块查看请求侧与会话侧的 token 构成；技能、MCP、插件可按会话切成加载、简介、隐藏三档，提示段与工具可逐项开关；支持立即压缩或按 5%–95% 阈值自动压缩。"
+  en: "Context control for DeepSeek Harness: inspect token usage across request and conversation; switch skills, MCP servers and plugins between loaded, brief and hidden per session; toggle prompt sections and tools; compact on demand or at a configurable 5–95% threshold."

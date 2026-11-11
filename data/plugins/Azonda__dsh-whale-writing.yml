@@ -1,0 +1,6 @@
+url: https://github.com/Azonda/dsh-whale-writing
+name: Azonda/dsh-whale-writing
+category: tools
+description:
+  en: 'Adds a writing console above the composer with four style tiers (T1-T4) and five rigor tiers (L1-L5), selectable by hand or left to automatic choice; keeps project terminology and banned phrasing in .mem/config.md with a read-only human section; and provides a whale_polish tool that rewrites expression without changing facts.'
+  zh: '在输入框上方增加写作控制台：四种风格档（T1–T4）与五种严谨档（L1–L5）可手动选择或自动判断；把术语、禁用写法等记入 .mem/config.md（人工区只读）；并提供只改表达、不改事实的 whale_polish 润色工具。'

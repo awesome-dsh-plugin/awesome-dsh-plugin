@@ -1,0 +1,7 @@
+url: https://github.com/0tests/dsh-approval-consult
+name: 0tests/dsh-approval-consult
+category: security
+icon: https://raw.githubusercontent.com/0tests/dsh-approval-consult/main/assets/icon-180.png
+description:
+  en: "Ask the executing AI — and the auto-review AI when DSH's auto-review plugin is installed and enabled — about a pending tool approval before you allow or reject it; the executing AI's answers are saved into the session."
+  zh: "审批等待期间，向执行 AI 提问，装了并启用 DSH 的自动审查插件时也可问自动审查 AI，问清风险与后果再决定；执行 AI 的回答会留在会话里。"

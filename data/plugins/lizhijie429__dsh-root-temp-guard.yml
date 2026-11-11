@@ -1,0 +1,7 @@
+url: https://github.com/lizhijie429/dsh-root-temp-guard
+name: lizhijie429/dsh-root-temp-guard
+category: dev
+description:
+  en: Blocks tool calls that create temporary files or directories in the workspace root, moves new root-level temp entries into tmp/_quarantine at turn end, and provides a graphical settings page.
+  zh: 拦截在仓库根目录创建临时文件或目录的工具调用，在回合结束时把新增的根目录临时项移入 tmp/_quarantine，并提供图形化设置页。
+icon: https://raw.githubusercontent.com/lizhijie429/dsh-root-temp-guard/main/docs/icons/root-temp-guard.png

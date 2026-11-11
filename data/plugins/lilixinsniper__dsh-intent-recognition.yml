@@ -1,0 +1,16 @@
+# dsh-market 收录条目草稿
+# 用法：fork https://github.com/awesome-dsh-plugin/awesome-dsh-plugin ，
+# 在 data/plugins/ 下新增文件 lilixinsniper__dsh-intent-recognition.yml，
+# 内容如下，然后提 PR（一个 PR 只加这一个文件；不要手工编辑两个 README，它们由脚本生成）。
+# 前提：仓库创建满 1 天、已添加 dsh-plugin topic、代码已推送（package.json 含 dsh.bundle、根目录有 cordis.patch.yml）。
+
+url: https://github.com/lilixinsniper/dsh-intent-recognition   # 必须与仓库完全一致
+name: lilixinsniper/dsh-intent-recognition
+category: tools                                         # 维护者认为更合适时会直接改，不会打回
+description:
+  en: Five-layer intent recognition pipeline (rules, pgvector retrieval, Jev scoring, fine-tuned arbitration, LLM fallback) with scenario management UI, PostgreSQL storage and distributable API services.
+  zh: 五层意图识别流水线（规则、pgvector 向量检索、Jev 概率精判、微调仲裁、LLM 兜底），带场景管理界面、PostgreSQL 存储与可分发 API 服务。
+# 可选：GitHub 托管的方形位图作为市场卡片图标（~96px 显示），不提供则回退到作者头像
+# icon: https://raw.githubusercontent.com/lilixinsniper/dsh-intent-recognition/main/assets/icon-180.png
+# 可选：不发 npm 时，用 GitHub Release 的预构建 tarball（文件名不要带版本号，否则下次发版即 404）
+# tarball: https://github.com/lilixinsniper/dsh-intent-recognition/releases/latest/download/dsh-intent-recognition.tgz

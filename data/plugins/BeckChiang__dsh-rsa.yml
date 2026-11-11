@@ -1,0 +1,6 @@
+url: https://github.com/BeckChiang/dsh-rsa
+name: BeckChiang/dsh-rsa
+category: ui
+description:
+  en: 'Configurable startup splash screen for the DeepSeek Harness desktop app on Windows only — a real main-process splash with live preview and light/dark themes. Deploys by rewriting the app''s app.asar (a backup is kept) and takes effect on the next launch after you quit DSH; redeploy after each DSH upgrade.'
+  zh: '仅限 Windows 桌面版 DeepSeek Harness 的可配置启动动画（splash）：主进程真实启动画面、设置页实时预览、深浅色跟随。通过改写 app.asar 部署（会保留备份），退出 DSH 后下次启动生效；DSH 升级后需重新部署。'

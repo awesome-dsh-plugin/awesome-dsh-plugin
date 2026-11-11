@@ -1,0 +1,8 @@
+url: https://github.com/qcann/dsh-chat-in-harness
+name: qcann/dsh-chat-in-harness
+category: browser
+description:
+  en: A conversation-independent floating window for chat.deepseek.com, rendered in a webview, draggable and resizable, with page zoom, opacity control and an optional floating ball. It makes no API calls, stores no credentials and injects no scripts.
+  zh: 与会话无关的 chat.deepseek.com 浮窗，用 webview 渲染，可拖动、缩放、调不透明度，可选悬浮球。不调接口、不存凭据、不注入脚本。
+icon: https://raw.githubusercontent.com/qcann/dsh-chat-in-harness/main/assets/icon-180.png
+tarball: https://github.com/qcann/dsh-chat-in-harness/releases/latest/download/dsh-chat-in-harness.tgz

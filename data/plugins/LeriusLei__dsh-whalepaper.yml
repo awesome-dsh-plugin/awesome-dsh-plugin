@@ -1,0 +1,7 @@
+url: https://github.com/LeriusLei/dsh-whalepaper
+name: LeriusLei/dsh-whalepaper
+category: theme
+description:
+  en: Animated ASCII orca-ocean wallpaper for DeepSeek Harness that follows local time, with native plugin settings for brightness, saturation and composition.
+  zh: 随系统时间变化的 ASCII 虎鲸海洋动态壁纸，可在 DSH 原生插件设置中调节亮度、饱和度与构图。
+tarball: https://github.com/LeriusLei/dsh-whalepaper/releases/latest/download/dsh-whalepaper.tgz
