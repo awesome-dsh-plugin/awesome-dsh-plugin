@@ -1,0 +1,6 @@
+url: https://github.com/rosemary-ewe/dsh-blunt-dev
+name: rosemary-ewe/dsh-blunt-dev
+category: identity
+description:
+  en: 'It is like automatically inputting prompts into DSH to try to remove AI stereotype language: that is, removing subheadings, bold text and emoji overload, quoted famous sayings, and grand finales.'
+  zh: 相当于自动向dsh中输入尽量去ai刻板印象语言的提示词：即去掉小标题、加粗与 emoji 堆砌、引用的名言和结尾升华。
