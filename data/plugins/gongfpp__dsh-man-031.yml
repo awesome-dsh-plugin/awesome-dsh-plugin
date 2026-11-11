@@ -2,6 +2,6 @@ url: https://github.com/gongfpp/dsh-man-031
 name: Man！花了这么多钱！
 category: usage
 description:
-  en: 'Shows a Kobe iced-tea side popup and announces estimated per-turn costs from dsh-cost-meter with twenty randomized offline phrases, CNY/USD support, and three-decimal rounding. Includes selectable phrase and amount previews. Requires dsh-cost-meter for turn-cost records; no runtime TTS service or API key.'
-  zh: '每轮结束弹出科比冰红茶人物，使用二十句随机离线台词播报 dsh-cost-meter 提供的本轮估算花费；支持人民币/美元、三位小数四舍五入，以及指定金额和句子试听。费用记录需启用 dsh-cost-meter，无需在线语音服务或 API Key。'
+  en: 'Shows a Kobe iced-tea side popup and reports per-turn costs or token counts with bundled offline audio. Uses dsh-cost-meter first, or estimates each request from native usage and public prices. Includes twenty cost phrases, four token phrases, CNY/USD, three-decimal rounding and custom previews; no runtime TTS service or API key.'
+  zh: '每轮结束弹出科比冰红茶人物，离线播报本轮费用或 Token 用量；费用优先使用 dsh-cost-meter，不可用时按各请求原生用量与公开单价估算并标明来源。含二十句金额台词、四句 Token 台词，支持人民币/美元、三位小数四舍五入及自定义试听；无需在线语音服务或 API Key。'
 icon: https://raw.githubusercontent.com/gongfpp/dsh-man-031/main/icon.png
