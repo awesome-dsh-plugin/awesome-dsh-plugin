@@ -1,0 +1,7 @@
+url: https://github.com/HMYDK/dsh-notify
+name: HMYDK/dsh-notify
+category: notify
+description:
+  en: Desktop notifications when a DeepSeek Harness session finishes a turn or needs your approval.
+  zh: 会话完成一轮任务或需要你审批时，弹出系统桌面通知。
+icon: https://raw.githubusercontent.com/HMYDK/dsh-notify/main/assets/icon-180.png
