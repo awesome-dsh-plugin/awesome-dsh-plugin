@@ -1,0 +1,7 @@
+url: https://github.com/CoraxEldridge/dsh-managed-workspaces
+name: CoraxEldridge/dsh-managed-workspaces
+category: ui
+description:
+  en: Creates DSH workspaces under a configurable base directory, links several external folders into one workspace, and relocates a workspace without losing its conversations.
+  zh: 在可配置的根目录下创建 DSH 工作区，把多个外部文件夹关联到同一个工作区，并能在不丢失对话的情况下迁移工作区。
+icon: https://raw.githubusercontent.com/CoraxEldridge/dsh-managed-workspaces/main/assets/icon-180.png
