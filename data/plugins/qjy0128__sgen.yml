@@ -1,0 +1,7 @@
+url: https://github.com/qjy0128/sgen
+name: qjy0128/sgen
+category: vision
+description:
+  en: Sidebar playground for SenseNova and Agnes image and video generation, per-provider API keys and default models, local result management, and sgen_* tools for conversations.
+  zh: 侧栏试验场调用商汤与 Agnes 生成图片和视频，按供应商设置 Key 与默认模型，管理本机生成结果，并向对话提供 sgen_* 工具。
+tarball: https://github.com/qjy0128/sgen/releases/latest/download/sgen-dsh-plugin.tgz
