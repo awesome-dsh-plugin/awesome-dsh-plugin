@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-lawcite-adapter
+name: PerryLink/dsh-lawcite-adapter
+category: tools
+description:
+  en: 'Legal citation check: statute name, article number, text and validity status.'
+  zh: '法条引用名称、条号、原文与效力状态核对。'

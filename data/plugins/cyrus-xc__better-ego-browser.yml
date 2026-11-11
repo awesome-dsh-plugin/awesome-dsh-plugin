@@ -1,0 +1,6 @@
+url: https://github.com/cyrus-xc/better-ego-browser
+name: cyrus-xc/better-ego-browser
+category: browser
+description:
+  en: 'Windows-only derivative of the official ego lite DSH plugin (@ego-lite/dsh-plugin, citrolabs/ego-lite) that cannot be installed alongside it: connects DeepSeek Harness to the installed Windows ego lite app through authenticated loopback HTTP for task spaces, navigation, page reading, clicks, form input and screenshots.'
+  zh: 'ego lite 官方 DSH 插件（@ego-lite/dsh-plugin，citrolabs/ego-lite）的 Windows 衍生版，不能与官方插件同装：通过带认证的本机 HTTP 连接已安装的 Windows ego lite，提供任务空间、导航、页面读取、点击、表单输入和截图。'

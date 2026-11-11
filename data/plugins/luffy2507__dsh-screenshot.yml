@@ -1,0 +1,7 @@
+url: https://github.com/luffy2507/dsh-screenshot
+name: luffy2507/dsh-screenshot
+category: tools
+description:
+  en: A manual screenshot button for the DeepSeek Harness composer that captures a screen region and sends it to the model as an image attachment. Windows only.
+  zh: 给 DeepSeek Harness 输入框加一个手动截图按钮：框选屏幕区域后自动作为图片附件发给模型。仅支持 Windows。
+icon: https://raw.githubusercontent.com/luffy2507/dsh-screenshot/main/assets/icon-256.png

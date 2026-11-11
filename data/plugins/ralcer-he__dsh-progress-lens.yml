@@ -1,0 +1,7 @@
+url: https://github.com/ralcer-he/dsh-progress-lens
+name: ralcer-he/dsh-progress-lens
+category: ui
+description:
+  en: "A right-side panel that tells you in plain words what a long-running task has finished, what it is doing right now, and what it will most likely do next — read-only, never touches your session, and you can ask it a question or just chat with it while the task keeps running. Requires the dsh-better-sidebar plugin, whose right sidebar hosts the panel."
+  zh: "在右侧栏用大白话告诉你长任务做完了什么、现在手头是什么、接下来大概要做什么：不是复述思考链，而是攒一段时间或几件大事压成两三句；工具名和报错码都翻成人话。只读不写会话，跑着的时候也能随时问一句，或者随便聊两句。 需先安装 dsh-better-sidebar（面板借用它的右栏）。"
+icon: https://raw.githubusercontent.com/ralcer-he/dsh-progress-lens/main/assets/icon-180.png

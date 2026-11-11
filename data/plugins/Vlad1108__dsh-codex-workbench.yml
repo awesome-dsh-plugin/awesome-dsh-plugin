@@ -1,0 +1,6 @@
+url: https://github.com/Vlad1108/dsh-codex-workbench
+name: Vlad1108/dsh-codex-workbench
+category: model
+description:
+  en: 'Adds ChatGPT sign-in, Codex subscription quota (5-hour and weekly windows) and Codex-backed web search to DeepSeek Harness; installing it switches the profile''s web search provider to openai-codex.'
+  zh: '为 DeepSeek Harness 增加 ChatGPT 登录、Codex 订阅额度（5 小时与每周窗口）以及由 Codex 驱动的网页搜索；安装后整个 profile 的网页搜索会切到 openai-codex。'

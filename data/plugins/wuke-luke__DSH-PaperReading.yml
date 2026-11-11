@@ -1,0 +1,7 @@
+url: https://github.com/wuke-luke/DSH-PaperReading
+name: wuke-luke/DSH-PaperReading
+category: docs
+description:
+  en: Paper-reading workspace for DeepSeek Harness — page-by-page bilingual PDF translation, select-to-translate, paper-aware chat with page citations, notes, diagrams and cloud sync.
+  zh: DeepSeek Harness 的论文阅读工作台：中英整页对照翻译、划词即译、带页码引用的伴读对话，以及笔记、框架图与云同步。
+icon: https://raw.githubusercontent.com/wuke-luke/DSH-PaperReading/master/docs/icon.png

@@ -1,0 +1,7 @@
+url: https://github.com/vfuncyy/dsh-edge-bridge/tree/main/plugin
+name: vfuncyy/dsh-edge-bridge#plugin
+category: browser
+description:
+  en: 'Drives the Edge already open on your machine through a local WebSocket bridge and an unpacked MV3 extension: the agent reads the page as Markdown, dumps its interactive elements with stable refs, clicks and types with pre-action assertions and a three-valued effect state, and can capture pages from the extension popup as self-contained HTML snapshots, filed into a kb.py literature knowledge base when one is configured (kbRoot or DSH_KB_ROOT). Seven browser tools stay unregistered until edge_bridge is started, so an idle session pays no context cost.'
+  zh: '通过本地 WebSocket 桥与一个免打包的 MV3 扩展，驱动你机器上已经开着的 Edge：agent 把页面读成 Markdown、转储带稳定 ref 的可交互元素、在动作前用 expect 断言目标再点击填表，回执带 committed/unknown/none 三值效果状态，还能在扩展弹窗里把页面抓成自包含的 HTML 快照，配置了带 kb.py 的文献知识库（kbRoot 或 DSH_KB_ROOT）时一并归档进去。七个浏览器工具要等 edge_bridge 启动后才注册，闲置会话不占上下文。'
+icon: https://raw.githubusercontent.com/vfuncyy/dsh-edge-bridge/main/docs/assets/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/wisdom-km/dsh-territory-cursor
+name: wisdom-km/dsh-territory-cursor
+category: tools
+description:
+  en: 'Gives the desktop agent one whole screen, or one half of a single screen. It lists windows whose center is inside, snapshots that rectangle, and left-clicks or replaces a control value. These tools do not move the system mouse, but the package also registers desktop_step, which drives the real mouse and keyboard across the whole virtual desktop (up to 20 actions per call, including key combinations such as Alt+F4 and typed text), plus get_screen_metrics; asking before acting is only in the tool description, not enforced. Windows only; compiles a C# helper with csc on first use; its tool names match dsh-desktop-tools-plugin, so do not enable both.'
+  zh: '给桌面代理一整块屏幕，或单屏的半边。列出中心落在里面的窗口，截下这块矩形，并做左键或整段赋值。这几个工具不移动系统鼠标，但包里另外注册了 desktop_step：它会在整个虚拟桌面上操作真实的鼠标和键盘（每次最多 20 个动作，含 Alt+F4 之类组合键和键入文本），还有 get_screen_metrics；“先询问再执行”只写在工具描述里，并未强制。仅支持 Windows，首次使用会用 csc 编译一个 C# 辅助程序；工具名与 dsh-desktop-tools-plugin 相同，不要同时启用。'

@@ -1,0 +1,6 @@
+url: https://github.com/jiangzhenguo/dsh-safebox
+name: jiangzhenguo/dsh-safebox
+category: security
+description:
+  en: Adds a DSH Settings panel for write-only local credentials and exposes only secret metadata and references to agents.
+  zh: 在 DSH 设置中提供只写式本地凭据管理面板，只向 Agent 暴露密钥元数据和引用。

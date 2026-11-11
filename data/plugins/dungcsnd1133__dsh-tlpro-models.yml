@@ -1,0 +1,6 @@
+url: https://github.com/dungcsnd1133/dsh-tlpro-models
+name: dungcsnd1133/dsh-tlpro-models
+category: model
+description:
+  en: Declares two model routes in the llm-pi-ai settings section — a TLPro gateway and Z.ai's GLM-5.3 endpoint — with per-model context windows, output caps and reasoning-effort ladders, so the stock model picker can select and tune them. Requires your own TLPRO_API_KEY and a Z.ai coding-plan ZAI_API_KEY; the patch replaces the whole llm-pi-ai row config.
+  zh: 在 llm-pi-ai 设置节声明两条模型路由——TLPro 网关与 Z.ai 的 GLM-5.3 端点——逐模型给出上下文窗口、输出上限与推理档位，让自带的模型选择器可以选中并调节它们。需自备 TLPRO_API_KEY 与 Z.ai 编程套餐的 ZAI_API_KEY；该补丁会整体替换 llm-pi-ai 行的配置。

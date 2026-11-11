@@ -1,0 +1,6 @@
+url: https://github.com/LGY13880006259-coder/dsh-conversation-style
+name: LGY13880006259-coder/dsh-conversation-style
+category: identity
+description:
+  en: 'Adds a switch to the left sidebar footer that toggles the assistant between a rigorous professional register and a relaxed, humorous one by registering a late bilingual system-prompt section; the mode is profile-wide, persists in DSH_HOME, and applies from the next request.'
+  zh: '在左侧栏底部增加一个切换开关，把助手在「严谨专业」与「轻松幽默」两种语气之间切换：以一条靠后的中英双语系统提示段落实现；模式为 profile 全局、持久化在 DSH_HOME，并从下一条请求起生效。'

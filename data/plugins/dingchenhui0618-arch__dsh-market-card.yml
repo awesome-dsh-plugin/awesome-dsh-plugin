@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-market-card
+name: dingchenhui0618-arch/dsh-market-card
+category: docs
+description:
+  en: 'Turns a repository''s README.md and docs/*.png into a publishable market card: bilingual title and tagline, install command, a screenshot wall, capabilities, and an explicit limitations section — as self-contained HTML, a 2400px 2x PNG, a paste-ready card.md, and provenance-rich card.json. It refuses to invent copy: missing English goes into a missing-fields list, --strict exits 2, and a normal run stamps DRAFT. PNG rendering uses the local Chrome or Edge headlessly; without one the HTML is still written and the CLI exits 3. 48 node --test tests, zero runtime dependencies.'
+  zh: '把仓库的 README.md 与 docs/*.png 变成一张可发布的市场卡片：中英双语标题与一句话、安装命令、截图墙、能力，以及一段必须显式写出的限制声明——输出自包含 HTML、2400px 的 2x PNG、可直接粘贴的 card.md，以及带 provenance 的 card.json。它不编造文案：缺英文就进缺失字段列表，--strict 退出码 2，普通运行会盖 DRAFT 章。PNG 用本机 Chrome / Edge 无头渲染；没有浏览器时仍写 HTML，CLI 退出码 3。48 个 node --test 测试，零运行时依赖。'

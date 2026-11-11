@@ -1,0 +1,8 @@
+url: https://github.com/Jason25417/dsh-composer-tweaks
+name: Jason25417/dsh-composer-tweaks
+category: ui
+description:
+  en: 'Composer tweaks for the DSH input box: a Markdown source/view toggle, Markdown rendering for user messages, one mixed file-and-folder picker backed by the macOS open panel, a GenUI prompt switch inside the plus menu, an open-in-new-window action on sidebar Session rows (needs the separate `dsh-popout-window` host plugin), and a collapsible subagent tree. Requires DSH 0.2.x.'
+  zh: 'DSH 输入框增强：Markdown 源码/视图开关、用户消息按 Markdown 渲染、把「添加文件」与「添加文件夹」合并成一个 macOS 原生面板混选入口、把 GenUI 提示词开关收进加号菜单，并在侧栏会话行提供「在新窗口打开」（需另装 `dsh-popout-window` 宿主插件）与可展开的子会话树。需要 DSH 0.2.x。'
+icon: https://raw.githubusercontent.com/Jason25417/dsh-composer-tweaks/main/assets/icon-180.png
+tarball: https://github.com/Jason25417/dsh-composer-tweaks/releases/latest/download/dsh-composer-tweaks.tgz

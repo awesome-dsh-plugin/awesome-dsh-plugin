@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-compress-bench
+name: dingchenhui0618-arch/dsh-compress-bench
+category: tools
+description:
+  en: 'A local mirrored A/B benchmark for context compression, not another compressor. It runs one fixed read-only scenario twice with the same model and temperature — compression off, then on — and reports input tokens, turns, tool-call success, fact coverage, answer similarity and a per-line diff, with JSON, a self-contained SVG and raw warnings. 18 node --test tests, zero dependencies. The first measured run: 63,029 → 6,927 locally estimated input tokens (−89.0%), 3 → 3 turns, facts 3/3 → 3/3, answer similarity 1.00 on one sample.'
+  zh: '给上下文压缩做本机镜像 A/B 的量具，不是又一个压缩插件。同一个只读场景、同一模型、temperature 0，压缩关跑一遍、开再跑一遍，记录输入 token、轮数、工具调用成功率、事实覆盖、答案相似度与逐行差异，产出 JSON、自包含 SVG 和原始警告。18 个 node --test 测试，零依赖。首次实测：本地估算输入 token 63,029 → 6,927（−89.0%），轮数 3 → 3，事实 3/3 → 3/3，答案相似度 1.00（单样本）。'

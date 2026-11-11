@@ -1,0 +1,7 @@
+url: https://github.com/chenglixue66-dotcom/dsh-rococo-theme
+name: chenglixue66-dotcom/dsh-rococo-theme
+category: theme
+description:
+  en: 'Rococo theme for the DSH Web GUI, shipped as a CSS overlay: misty-blue, silver and ivory surfaces with champagne hairlines, die-cut hang-tag sidebar rows, a scalloped-paper composer card with a bow, frosted assistant bubbles, gold-plaque code-block banners, and per-message avatar badges; a sidebar panel shows the stylesheet state and live avatar previews. Light and dark palettes follow the app theme.'
+  zh: '洛可可风 DSH Web GUI 主题，以一份 CSS 覆盖层实现：雾蓝/银蓝/奶白配色与香槟金细线、模切吊牌侧栏、带蝴蝶结的扇贝纸输入卡、磨砂助手气泡、鎏金代码块横幅、每条消息的头像徽章；侧栏面板显示样式表状态与头像预览。深浅色跟随应用主题自动切换。'
+icon: https://raw.githubusercontent.com/chenglixue66-dotcom/dsh-rococo-theme/main/assets/icon-180.png

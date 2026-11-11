@@ -2,5 +2,5 @@ url: https://github.com/dolacmeo/dsh-restart-and-update
 name: dolacmeo/dsh-restart-and-update
 category: market
 description:
-  en: 'Sidebar plugin updates with publish dates: each update pins an exact version and re-reads the installed manifest to confirm it landed, and updates whose new code needs a full relaunch are counted on a restart button — whose replacement process is started through WMI so it inherits no console. The full relaunch is Windows desktop only; the in-page GUI reload works on any platform.'
-  zh: '在侧栏更新插件并显示发布时间：锁定精确版本，装完回读磁盘清单确认已到位；需要完全重启才生效的更新会计到重启按钮上，而完全重启经 WMI 拉起替代进程，新进程不继承任何控制台。完全重启仅在 Windows 桌面端可用，页面内 GUI 重载各平台都能用。'
+  en: 'One-click plugin updates and restart from the sidebar: see every plugin''s current and new version with publish dates, update them through the profile''s own launcher, and keep the Desktop window where you left it across restarts. Windows desktop only.'
+  zh: '侧栏一键更新插件与重启：列出各插件的当前与新版本及发布时间，走 profile 自带安装器更新；完全重启后窗口回到上次的位置。仅限 Windows 桌面版。'

@@ -1,0 +1,6 @@
+url: https://github.com/LingHXiao/dsh-effort-mascot
+name: LingHXiao/dsh-effort-mascot
+category: ui
+description:
+  en: "Replaces the composer's reasoning-effort dropdown with a card that shows one illustration per level (off / low / high / max); the four levels keep their original meanings, and swapping an illustration only means replacing a file in assets/."
+  zh: "把输入框的推理强度下拉换成一张卡片，每一档配一张插画（off / low / high / max）；四档取值与原来一致，换插画只需替换 assets/ 下的同名文件。"

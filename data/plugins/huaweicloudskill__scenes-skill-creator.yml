@@ -1,0 +1,6 @@
+url: https://github.com/huaweicloudskill/scenes-skill-creator
+name: huaweicloudskill/scenes-skill-creator
+category: skill
+description:
+  en: 'DeepSeek Harness web panel for creating, evaluating, repairing, and installing skills, delegating generation to the official generic and Huawei Cloud skill creators. Needs git, bash and python3, and network access to gitcode.com (the creators and reference data are pulled from there); the creator runs shell commands with danger-full-access by default.'
+  zh: 'DeepSeek Harness 技能创建面板：调用官方通用/华为云技能创建器生成技能，并提供评测、修复、安装与创建记录。需要 git、bash 与 python3，并能访问 gitcode.com（创建器与参考数据从那里拉取）；创建器默认以 danger-full-access 权限执行 shell 命令。'

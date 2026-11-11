@@ -1,0 +1,6 @@
+url: https://github.com/AkarinLiu/dsh-plugin-discourse
+name: AkarinLiu/dsh-plugin-discourse
+category: tools
+description:
+  en: 'A Discourse forum management and AI Agent plugin designed for DeepSeek Harness.'
+  zh: '一个为 DeepSeek Harness 而设计的 Discourse 论坛管理和 AI Agent 插件。'

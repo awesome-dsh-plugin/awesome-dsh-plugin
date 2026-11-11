@@ -1,5 +1,5 @@
 url: https://github.com/kleinklein0824/dsh-obsidian-quote/tree/main/harness-plugin
-name: kleinklein0824/dsh-obsidian-quote#harness-plugin
+name: kleinklein0824/dsh-obsidian-quote#dsh-obsidian-quote
 category: memory
 description:
   en: 'Adds a knowledge-base sidebar backed by the separately installed local Obsidian Quote service: select registered vaults or folders, retrieve read-only note excerpts and cited context, extract rules, generate project convention briefs, and view shared citation statistics.'

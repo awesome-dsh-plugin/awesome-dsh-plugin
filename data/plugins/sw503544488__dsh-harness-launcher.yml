@@ -1,0 +1,7 @@
+url: https://github.com/sw503544488/dsh-harness-launcher
+name: sw503544488/dsh-harness-launcher
+category: ui
+description:
+  en: 'One Windows desktop shortcut for DeepSeek Harness: it opens the authenticated UI when the harness is running and starts it with no console window when it is not, with the same open, restart and close actions in a sidebar panel.'
+  zh: 'Windows 上的 DSH 桌面图标：Harness 在运行时直接打开已认证的界面，未运行时以隐藏窗口启动，侧栏面板提供同样的打开、重启与关闭。'
+icon: https://raw.githubusercontent.com/sw503544488/dsh-harness-launcher/main/assets/icon-180.png

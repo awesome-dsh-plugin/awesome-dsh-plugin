@@ -1,0 +1,6 @@
+url: https://github.com/ACGNnsj/dsh-plugin-versions
+name: ACGNnsj/dsh-plugin-versions
+category: ui
+description:
+  en: 'A versions tab on the plugin page: every installed bundle with its current version, the newest published version and a status (update available, up to date, follows the harness version, or not updatable from a registry). A row opens the official bundle page, where the update button lives; check results are cached and re-checked oldest first. The bundle page also gets a jump-to-bottom and a back-to-top button.'
+  zh: 插件页新增「版本一览」标签页：列出每个已安装组合包的当前版本、最新发布版本与状态（可更新、已是最新、随 DSH 版本更新、来源不支持更新）。点一行跳到官方组合包页，更新仍在官方页面完成；检查结果会缓存，并按缓存时间从旧到新重新核对。组合包页另加「到底部」与「回到顶部」两个按钮。

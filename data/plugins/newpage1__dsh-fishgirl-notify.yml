@@ -1,0 +1,8 @@
+url: https://github.com/newpage1/dsh-fishgirl-notify
+name: newpage1/dsh-fishgirl-notify
+icon: https://raw.githubusercontent.com/newpage1/dsh-fishgirl-notify/main/assets/icon-192.png
+category: notify
+tarball: https://github.com/newpage1/dsh-fishgirl-notify/releases/download/v1.0.1/dsh-fishgirl-notify-1.0.1.tgz
+description:
+  en: "DSH finish reminder: a cute fish-girl pops up “Done!” on your phone via Feishu, ntfy or Web Push, and plays an animated popup inside the DSH page."
+  zh: "DSH 完成提醒：回合结束时肥鱼娘在手机弹出「做好啦」（飞书 / ntfy / Web Push），并在 DSH 页面内播放可爱的弹窗动效。"

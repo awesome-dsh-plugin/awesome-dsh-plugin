@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-pet-ledger
+name: dingchenhui0618-arch/dsh-pet-ledger
+category: fun
+description:
+  en: 'A pet ledger whose achievements come only from real DeepSeek Harness session events: tool-failure streaks, long completed turns, red-to-green test runs, and commit+push success. Every achievement expands into the session id and the actual tool-call evidence (command, result, duration); demo cards are a separate in-memory list with a visible 演示 watermark and never count or persist. Daily quests are generated from the day’s real active time and command types, then frozen. Host + client halves, zero runtime dependencies, 70 tests, local JSON only.'
+  zh: '宠物账本：成就只从 DSH 真实会话事件里长出来——工具连续失败、长任务完成、测试红转绿、提交并推送成功。每条成就可展开看会话 id 与当时的工具调用证据（命令、结果、耗时）；演示卡片是独立的内存数组，带「演示」水印，不计入成就也不落盘。今日任务按当天真实有效使用时长与实际跑过的命令类型生成，生成后冻结。host + client 双半、零运行时依赖、70 个测试，只写本机 JSON。'

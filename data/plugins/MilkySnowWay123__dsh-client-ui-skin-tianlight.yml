@@ -2,5 +2,5 @@ url: https://github.com/MilkySnowWay123/dsh-client-ui-skin-tianlight
 name: MilkySnowWay123/dsh-client-ui-skin-tianlight
 category: theme
 description:
-  en: "Tianlight skin for DeepSeek Harness: 4K video/image wallpapers, local upload and auto-rotation, optional WebWallGL scenes, liquid glass, and a Mint cat companion. Alt+W opens the wallpaper panel."
-  zh: "DeepSeek Harness 的「遐蝶·天光」皮肤：4K 视频/图片壁纸、本地上传与自动轮播、可选 WebWallGL 场景、液态玻璃与薄荷猫桌宠；Alt+W 打开壁纸面板。"
+  en: "Tianlight theme/skin for DeepSeek Harness: full-screen video and image wallpapers with upload, rotation, URL and ShaderToy GLSL sources; optional WebWallGL scene wallpapers; liquid glass; and a draggable Mint cat companion with permission-gated AI chat, local chat history and per-look action packs. Alt+W opens the wallpaper panel."
+  zh: "DeepSeek Harness 的「天光」主题皮肤：全屏视频/图片壁纸（支持上传、轮播、URL 与 ShaderToy GLSL 代码来源）、可选 WebWallGL 场景壁纸、液态玻璃，以及可拖拽的薄荷猫桌宠（严格权限的 AI 对话、本地对话历史、每个形象的动作包）；Alt+W 打开壁纸面板。"

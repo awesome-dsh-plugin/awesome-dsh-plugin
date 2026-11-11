@@ -1,0 +1,6 @@
+url: https://github.com/william-jin-cmu/dsh-screen
+name: william-jin-cmu/dsh-screen
+category: tools
+description:
+  en: Lets the agent read the app, title, URL and text of the window in front through the macOS Accessibility API, with opt-in on-device screen memory it can search.
+  zh: 让 agent 通过 macOS 辅助功能 API 读取最前窗口的应用、标题、URL 和文字，并可选开启本机屏幕记忆供其检索。

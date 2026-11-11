@@ -1,0 +1,7 @@
+url: https://github.com/Jimmy-Official/dsh-task-notifications
+name: Jimmy-Official/dsh-task-notifications
+category: notify
+description:
+  en: 'Desktop notifications for DeepSeek Harness when a task finishes, with the final assistant reply as the notification body, plus optional approval and question alerts and synthesized or imported sounds. Derived from ltao0829/dsh-task-notify; install this fork or the upstream plugin, not both — they claim the same task-notify bundle row.'
+  zh: 'DeepSeek Harness 任务结束时弹出系统级通知，正文是本轮最后一条回复；另可开启审批与提问提醒，并支持合成提示音或导入自定义提示音。本插件派生自 ltao0829/dsh-task-notify；与上游插件不能同装——两者占用同一个 task-notify bundle 行。'
+tarball: https://github.com/Jimmy-Official/dsh-task-notifications/releases/latest/download/dsh-codex-notification.tgz

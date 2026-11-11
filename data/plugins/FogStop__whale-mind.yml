@@ -1,0 +1,6 @@
+url: https://github.com/FogStop/whale-mind
+name: FogStop/whale-mind
+category: memory
+description:
+  en: "Memory engine for a long-lived companion agent: a six-module loop (gate, solidify, store, retrieve, inject, decay) that decides what is worth keeping, distils raw turns into long-term entries, fuses short and long term at recall time, and fades entries that stop being used. Runs offline by default; if DEEPSEEK_API_KEY is set it also sends each message to the DeepSeek API to judge and distil it. Zero runtime dependencies and no build step; ships three switchable panels over the same store - neural brain, memory ring and memory galaxy - so you can watch what it remembers. Non-commercial license: commercial use needs the author's permission."
+  zh: "面向长期陪伴型智能体的记忆引擎：门控、固化、存储、检索、注入、衰减六个模块组成闭环——判断什么值得记住，把原始对话提炼成长期条目，召回时融合短期与长期记忆，并让不再被用到的条目逐渐淡忘。默认离线运行；设置了 DEEPSEEK_API_KEY 时，会把每条消息另发给 DeepSeek API 做判断与提炼。零运行时依赖、无需构建；同一份记忆库配三块可切换的面板——神经脑、记忆环、记忆星系——让你看得见它记住了什么。非商业许可：商用需获得作者授权。"

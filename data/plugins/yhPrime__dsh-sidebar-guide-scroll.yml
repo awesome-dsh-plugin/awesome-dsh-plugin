@@ -1,0 +1,6 @@
+url: https://github.com/yhPrime/dsh-sidebar-guide-scroll
+name: yhPrime/dsh-sidebar-guide-scroll
+category: ui
+description:
+  en: Make the right sidebar Start page scroll when its tool cards overflow.
+  zh: 右侧栏「开始」页的工具卡片超出可视区域时让页面可滚动，并按需显示滚动条。

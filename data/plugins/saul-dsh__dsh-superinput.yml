@@ -1,0 +1,6 @@
+url: https://github.com/saul-dsh/dsh-superinput
+name: saul-dsh/dsh-superinput
+category: ui
+description:
+  en: 'Super input suite — model and effort picker, prompt enhancer, follow-up suggestion chips, a full cost engine with daily heatmap and Coding Plan quotas, voice-input light effects and transcript cleanup (needs the built-in voice-input bundle enabled), prompt templates, selection reference chips with comments, a compaction ring and a settings hub. Bundles the author''s standalone dsh-cost, dsh-power-picker, dsh-prompt-enhancer, dsh-followup, dsh-siri-voice and dsh-compaction-control; uninstall those before installing.'
+  zh: '超级输入框套件——模型与推理强度选择器、提示词增强、跟进建议 chips、带每日热力图与 Coding Plan 配额的完整费用引擎、语音输入光效与转写清理（需先启用官方语音输入包）、Prompt 模板库、划选引用与评论 chip、压缩圆环和设置总览。已并入作者原独立插件 dsh-cost、dsh-power-picker、dsh-prompt-enhancer、dsh-followup、dsh-siri-voice、dsh-compaction-control，安装前请先卸载它们。'

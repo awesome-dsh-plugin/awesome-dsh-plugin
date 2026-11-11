@@ -1,0 +1,6 @@
+url: https://github.com/mount9527/dsh-CET6-learn
+name: mount9527/dsh-CET6-learn
+category: tools
+description:
+  en: 'CET-6 training panel with word drills (core and syllabus lists, three modes), 25-question listening in three sections, cloze, long reading, careful reading, partial and full translation, timed writing, a vocabulary notebook and a wrong-answer notebook. Ships only an original sample bank (345 words, one mock paper); the full ~2,500-word core list, ~6,000-word syllabus list, papers, transcripts and audio come from your own files, built locally from a data-pack folder and never uploaded.'
+  zh: '大学英语六级训练台：核心词与大纲词背记（三种模式）、听力三段 25 题、选词填空 / 长篇阅读 / 仔细阅读、片段与全篇翻译、作文计时、生词本与错题本。包内只带原创示例题库（345 词 + 1 套模拟卷）；约 2500 核心词、约 6000 大纲词、真题、听力原文与录音需自备，按分类放进本机 data-pack 目录后本地构建，不上传、不分发。'

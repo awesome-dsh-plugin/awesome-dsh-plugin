@@ -1,0 +1,6 @@
+url: https://github.com/kelunisi/dsh-neocortex
+name: kelunisi/dsh-neocortex
+category: memory
+description:
+  en: 'Zhinao (second brain) for DeepSeek Harness: Markdown-authoritative layered memory (L1 long-term model gated by user confirmation / L2 knowledge with mandatory sources / L3 recent status under daily quotas), a local recall ledger explaining every injection, lifecycle engine with weekly review and a Web panel. First-run wizard initializes a blank brain, adopts an existing Zhinao directory read-only, or fills in only missing skeleton files; existing files are never touched.'
+  zh: '智脑（第二大脑）—— DeepSeek Harness 的 Markdown 权威记忆插件：分层记忆（L1 长期模型经用户确认 / L2 知识必须留源 / L3 近况每日配额），本地召回账本可解释每次注入，生命周期引擎带周回顾与 Web 面板。首次运行向导支持空白脑新建、只读接管现有智脑目录、或仅补齐缺失骨架文件，均不改动已有文件。'

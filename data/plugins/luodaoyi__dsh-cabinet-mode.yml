@@ -1,0 +1,6 @@
+url: https://github.com/luodaoyi/dsh-cabinet-mode
+name: luodaoyi/dsh-cabinet-mode
+category: workflow
+description:
+  en: 'Agent preset for DeepSeek Harness that adds Cabinet Mode: a research-team Lead and four bureau members. A right-sidebar Cabinet panel shows the roster and task assignment, and Settings → Cabinet members edits each office''s name, portrait, prompt and model.'
+  zh: '为 DeepSeek Harness 增加内阁模式的研究团队预设：首辅与四阁臣。右侧栏「内阁」面板显示成员与派活状态，设置页「内阁成员」可编辑各成员的名称、画像、提示词与模型。'

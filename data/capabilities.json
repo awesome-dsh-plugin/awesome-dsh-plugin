@@ -38524,9 +38524,9 @@
     "scannedAt": "2026-09-24T17:02:46.730Z",
     "tool": "dsh-trust-check@0.1.13"
   },
-  "https://github.com/Ultronen/dsh-archived-chats": {
+  "https://github.com/Ultroncn/dsh-archived-chats": {
     "version": "1.4.2",
-    "spec": "github:Ultronen/dsh-archived-chats",
+    "spec": "github:Ultroncn/dsh-archived-chats",
     "capabilities": [
       "shell",
       "fs-write",
@@ -38538,9 +38538,9 @@
     "scannedAt": "2026-09-24T17:02:46.730Z",
     "tool": "dsh-trust-check@0.1.13"
   },
-  "https://github.com/Ultronen/dsh-liquid-glass": {
+  "https://github.com/Ultroncn/dsh-liquid-glass": {
     "version": "0.1.0",
-    "spec": "github:Ultronen/dsh-liquid-glass",
+    "spec": "github:Ultroncn/dsh-liquid-glass",
     "capabilities": [],
     "redLines": [],
     "scannedAt": "2026-09-24T17:02:46.730Z",

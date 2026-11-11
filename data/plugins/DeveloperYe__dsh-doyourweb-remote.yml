@@ -1,0 +1,7 @@
+url: https://github.com/DeveloperYe/dsh-doyourweb-remote
+name: DeveloperYe/dsh-doyourweb-remote
+category: browser
+description:
+  en: 'Fork of SheepofSheep/dsh-doyourweb that puts the browser on another machine: the MV3 extension dials out to this plugin over TLS, so DSH reads and acts on a remote Chrome or Edge rather than a local one. It also generates ready-paired extension packages for the current configuration, adds tab open and close tools, writes annotation detail to a file instead of pasting it into the chat, and shows a checklist naming which part of a remote setup is misconfigured. It reuses the same browser-tabs plugin id as the upstream, so do not install both in the same profile. Requires Chrome or Edge 125+ and an unpacked MV3 extension loaded manually on the browser machine; the plugin does not install the extension. With tls: true, trust the generated ca.crt as a root certificate there.'
+  zh: 'SheepofSheep/dsh-doyourweb 的 fork，把浏览器放到另一台机器：MV3 扩展主动经 TLS 出站连接插件，DSH 因此能读取并操作远程的 Chrome/Edge，而不限于本机浏览器。此外按当前配置生成已配对的扩展包、新增开/关标签页工具、把批注明细落盘而不是塞进聊天，并提供远程接入自检表指出配置哪一环不对。 它与上游共用同一个 browser-tabs 插件 id，不能与 SheepofSheep/dsh-doyourweb 同装。需要 Chrome/Edge 125+，并在浏览器所在机器手动加载解包的 MV3 扩展（插件不会自动安装）；走 TLS 时还要把生成的 ca.crt 装进受信任的根证书颁发机构。'
+icon: https://raw.githubusercontent.com/DeveloperYe/dsh-doyourweb-remote/main/extension/icons/icon-128.png

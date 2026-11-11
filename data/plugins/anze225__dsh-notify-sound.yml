@@ -1,6 +1,0 @@
-url: https://github.com/anze225/dsh-notify-sound
-name: anze225/dsh-notify-sound
-category: notify
-description:
-  en: Plays a completion chime — the same sound as OpenAI Codex — on turn end or when the agent needs you (approval, question, plan review). Subagent turns are skipped; mute and volume are adjustable.
-  zh: 一轮回复结束、或需要你介入（授权、提问、计划评审）时，播放提示音（与 OpenAI Codex 同款）；忽略 subagent 子会话，可静音与调节音量。

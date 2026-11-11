@@ -1,0 +1,7 @@
+url: https://github.com/cococo1ng/dsh-jianxian-widget/tree/main/plugin
+name: "cococo1ng/dsh-jianxian-widget#plugin"
+category: usage
+description:
+  en: "A resident bottom-right widget for the DeepSeek Harness Web UI: a sword-cultivator character that reads your account balance and token spend, keeps a local ledger broken down by model, and has 10 switchable sound effects. Reminders cover low balance, a model waiting on your answer, a pending approval, and staying up too late. Ships 23 idle poses plus a 24-frame sword dance, 22 menu-icon skins, six panel tabs, a line-by-line speech-bubble editor, and black or white robes that follow the light or dark theme. Runs entirely locally and registers no agent tools."
+  zh: "DSH 网页界面右下角的常驻挂件：一位剑修守在角落，读取账户余额与 token 消耗，本地记一本按模型拆占比的账，10 路音效各带开关。余额告急、模型在等你回答、等你批准、深夜该睡了，都会开口提醒。23 个常驻姿态加 24 帧剑舞、22 件法宝（菜单图标皮肤）、6 个面板页签、可逐行编辑的气泡编辑器，黑衣白衣跟着明暗主题换。全本地运行，不向 agent 注册工具。"
+icon: https://raw.githubusercontent.com/cococo1ng/dsh-jianxian-widget/main/plugin/icon.png

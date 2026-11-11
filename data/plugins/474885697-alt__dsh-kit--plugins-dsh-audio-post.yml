@@ -1,0 +1,7 @@
+url: https://github.com/474885697-alt/dsh-kit/tree/main/plugins/dsh-audio-post
+name: 474885697-alt/dsh-kit#dsh-audio-post
+category: voice
+tarball: https://github.com/474885697-alt/dsh-kit/releases/download/v0.1.0/dsh-audio-post-0.1.0.tgz
+description:
+  zh: "本地音频后期：响度标准化、静音裁剪、格式转换，以及游戏音效与音乐平台上传的一键预设，由本机 ffmpeg 驱动。"
+  en: "Runs loudness normalization, silence trimming, format conversion and batch processing through local ffmpeg, with presets for game sound effects, music uploads and voice cleanup."

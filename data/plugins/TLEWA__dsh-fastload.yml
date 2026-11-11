@@ -1,0 +1,6 @@
+url: https://github.com/TLEWA/dsh-fastload
+name: TLEWA/dsh-fastload
+category: session
+description:
+  en: 'Shrinks the first history page of long DSH sessions to at most 100 messages, targeting the latest two turns, and fills the viewport in the background with the built-in load-earlier control when the trimmed transcript is shorter than the window.'
+  zh: '把长会话首次打开时的历史页缩小到默认最多 100 条消息、尽量保留最新 2 个 turn；缩小的记录短于视口时，Web 端在后台调用内置「加载更早」把视口补齐。'

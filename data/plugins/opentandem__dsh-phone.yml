@@ -1,0 +1,7 @@
+url: https://github.com/opentandem/dsh-phone
+name: opentandem/dsh-phone
+category: remote
+description:
+  en: Adds a Phone page to dsh web that shows a QR code; scan it, sign in to OpenTandem on the phone and tap Allow, then send tasks to this computer's dsh from OpenTandem. Installs the OpenTandem command line and a background Runner on first use.
+  zh: 在 dsh web 中新增「手机连接」页并显示二维码，用手机扫码、登录 OpenTandem 并点「允许」后，即可在 OpenTandem 里把任务发给这台电脑上的 dsh。首次使用会安装 OpenTandem 命令行和后台 Runner。
+icon: https://raw.githubusercontent.com/opentandem/dsh-phone/main/docs/icon.png

@@ -1,0 +1,7 @@
+url: https://github.com/che0911/dsh-bilingual-description
+name: che0911/dsh-bilingual-description
+category: tools
+description:
+  en: 'Blocks tool calls whose description argument is not written in both Chinese and English: adds a system-prompt section stating the 中文:“…” 英文:“…” format and a tool guard that rejects English-only calls before they run. By default it checks every tool that declares a description parameter; set DSH_BILINGUAL_DESCRIPTION_SCOPE=shell to limit it to shell tools.'
+  zh: '拦截 description 参数没有同时写中文和英文的工具调用：加一段说明「中文:“…” 英文:“…”」格式的系统提示，并在执行前用工具守卫拒绝只写英文的调用。默认检查所有声明了 description 参数的工具，可用环境变量 DSH_BILINGUAL_DESCRIPTION_SCOPE=shell 限定为命令行类工具。'
+icon: https://raw.githubusercontent.com/che0911/dsh-bilingual-description/main/assets/icon-180.png

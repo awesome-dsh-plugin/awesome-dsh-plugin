@@ -1,0 +1,6 @@
+url: https://github.com/1314521gjy/dsh-wujie-canvas
+name: 1314521gjy/dsh-wujie-canvas
+category: ui
+description:
+  en: 'Adds a 无界画布 page to the DSH left sidebar with a bundled front-end, local workbench status/start, and DSH Agent tools that read and edit the open canvas; the canvas has no built-in Agent. Requires a local 无界工作台 installation with ComfyUI; the plugin bundles neither ComfyUI, CUDA, models nor API keys.'
+  zh: '在 DSH 左侧栏加入无界画布页面：内置画布前端、本机工作台状态与启动，并让 DSH Agent 通过工具读写当前画布；画布不再内置 Agent。需本机已安装无界工作台与 ComfyUI；插件不打包 ComfyUI、CUDA、模型或 API Key。'

@@ -1,0 +1,6 @@
+url: https://github.com/Iceseas/dsh-ds-whale
+name: Iceseas/dsh-ds-whale
+category: usage
+description:
+  en: 'Bottom-right whale widget showing DeepSeek balance, today''s spend from the official usage API, per-turn cost narrated after each turn, and a peak/off-peak pricing countdown, with six expressions, click-to-refresh, weather and a bilingual (中文/English) UI.'
+  zh: '右下角小鲸鱼挂件：显示 DeepSeek 余额与官网口径的今日用量，每轮结束播报本轮花费，并提供峰谷定价倒计时；另有六种状态立绘、点击刷新、天气查询与中英双语界面。'

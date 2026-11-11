@@ -1,0 +1,7 @@
+url: https://github.com/tyouter/dsh-notes
+name: tyouter/dsh-notes
+category: ui
+description:
+  en: 'A page for writing notes inside DeepSeek Harness. · Minimal writing — one page that typesets as you type. · AI completion — a suggestion arrives when you pause, and TAB takes it. · Immersive writing — full screen, with only the page on it. · History — every note listed, searched and edited in place, and copied out as standard Markdown. · AI board — a data assistant that answers from your notes and pins the charts it builds.'
+  zh: 'DeepSeek Harness 里的笔记页。 · 极简写 — 一页纸，边写边排版。 · AI 自动补全 — 停笔片刻给出建议，TAB 采纳。 · 沉浸式书写 — 全屏，只有这张纸。 · 历史记录 — 笔记可列、可搜、就地编辑，一键复制标准 Markdown。 · AI 看板 — 数据助手用你的笔记回答，并把图表钉在看板上。'
+icon: https://raw.githubusercontent.com/tyouter/dsh-notes/main/docs/marketing/icon-180.png

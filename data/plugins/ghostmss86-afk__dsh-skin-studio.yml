@@ -1,0 +1,7 @@
+url: https://github.com/ghostmss86-afk/dsh-skin-studio
+name: ghostmss86-afk/dsh-skin-studio
+category: theme
+description:
+  en: 'Interface theme and wallpaper plugin: preset skins, gradients, image wallpapers, and local video wallpapers with a playlist, prev/next buttons and fullscreen playback. Needs DSH 0.2.2-rc.1; videos whose audio Chromium cannot decode need ffmpeg and ffprobe on PATH, otherwise they play silently.'
+  zh: '界面换肤与壁纸插件：预设皮肤、渐变、图片壁纸，以及本地视频壁纸（播放列表、上一个/下一个、双击全屏，自动为 Chromium 解不了的音轨生成 AAC 侧车）。需要 DSH 0.2.2-rc.1；视频里 Chromium 解不了的音轨需要 PATH 里有 ffmpeg 和 ffprobe，没有时视频无声。'
+icon: https://raw.githubusercontent.com/ghostmss86-afk/dsh-skin-studio/main/icon-180.png

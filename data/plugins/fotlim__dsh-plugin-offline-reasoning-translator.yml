@@ -1,0 +1,8 @@
+url: https://github.com/fotlim/dsh-plugin-offline-reasoning-translator
+name: fotlim/dsh-plugin-offline-reasoning-translator
+category: tools
+description:
+  en: 'Translates the English reasoning text of DSH sessions into Chinese on this machine, using a local Marian NMT model (ONNX, about 108 MiB) that you download once from the plugin panel (Hugging Face or the hf-mirror.com mirror). No API key and no network request at translation time; identifiers, code spans and URLs are masked so they come back unchanged.'
+  zh: '把 DSH 会话里的英文思考内容在本机翻成中文：本地 Marian NMT（ONNX，约 108 MiB）需在插件面板里点「下载」一次（来自 Hugging Face 或 hf-mirror.com 镜像）；翻译时不需要 API key、也不发任何网络请求；标识符、代码片段与链接会被掩码保护，译文里原样还原。'
+icon: https://raw.githubusercontent.com/fotlim/dsh-plugin-offline-reasoning-translator/HEAD/icon.png
+tarball: https://github.com/fotlim/dsh-plugin-offline-reasoning-translator/releases/download/v0.6.2/dsh-plugin-offline-reasoning-translator-0.6.2.tgz

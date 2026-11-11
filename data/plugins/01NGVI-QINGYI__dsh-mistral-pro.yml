@@ -1,0 +1,7 @@
+url: https://github.com/01NGVI-QINGYI/dsh-mistral-pro
+name: 01NGVI-QINGYI/dsh-mistral-pro
+category: model
+description:
+  en: 'Mistral subscription for DeepSeek Harness: model route, multi-account failover, and a composer usage panel.'
+  zh: '在 DeepSeek Harness 中接入 Mistral 订阅，提供模型路由、多账号故障切换和输入框额度面板。'
+icon: https://raw.githubusercontent.com/01NGVI-QINGYI/dsh-mistral-pro/main/assets/icon-180.png

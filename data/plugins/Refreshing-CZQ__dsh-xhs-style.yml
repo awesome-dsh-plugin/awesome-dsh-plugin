@@ -1,0 +1,6 @@
+url: https://github.com/Refreshing-CZQ/dsh-xhs-style
+name: Refreshing-CZQ/dsh-xhs-style
+category: identity
+description:
+  en: "Adds a four-part reply-formatting contract to the system prompt, so every answer is laid out like a Xiaohongshu post: a conclusion-first hook, a star-rated comparison table, emoji-headed bullets with four to six concrete steps or numbers each, numbered sections grouped by entry threshold, images that each carry a caption and one source link, and a banned-word list covering nickname terms, hype words and marketing catchphrases. Code, commands, paths and formal documents keep their original formatting. Host-only static prompt section: no config, no client UI, no dependencies."
+  zh: "把一份四段式回复规范注入系统提示词，让每条回答按小红书图文排：结论钩子开场、星级对比表、emoji 分点且每条写到 4-6 条可执行步骤或数值、按门槛分组的编号小节、配图逐张写图注并一图一来源链接，另附一份屏蔽称呼词、感叹烂词与营销话术的黑名单。代码、命令、路径与对外文档保持原格式。纯 host 侧静态提示词小节：无配置项、无前端 UI、无依赖。"

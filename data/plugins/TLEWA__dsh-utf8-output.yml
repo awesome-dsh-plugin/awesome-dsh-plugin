@@ -1,0 +1,6 @@
+url: https://github.com/TLEWA/dsh-utf8-output
+name: TLEWA/dsh-utf8-output
+category: dev
+description:
+  en: Re-decodes collected subprocess bytes with strict UTF-8 then GB18030 before they reach the agent, so GBK/CP936 output from Windows cmd and PowerShell tools stops arriving as U+FFFD mojibake.
+  zh: 在字节被解码前接管子进程输出采集，按严格 UTF-8、必要时 GB18030 重新解码，Windows 下 cmd 与 PowerShell 的 GBK/CP936 输出不再变成 U+FFFD 乱码。

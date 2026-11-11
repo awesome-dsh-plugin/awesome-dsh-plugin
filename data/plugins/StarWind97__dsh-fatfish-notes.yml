@@ -1,8 +1,8 @@
 url: https://github.com/StarWind97/dsh-fatfish-notes
-name: '肥鱼笔记 · Fatfish Notes'
+name: StarWind97/dsh-fatfish-notes
 category: docs
 description:
-  en: 'Save conversations, manage notes with images, export files, and sync across devices through your own private GitHub repository.'
-  zh: '保存会话、管理图文笔记、导出文件，通过自己的 GitHub 私有仓库跨设备同步。'
+  en: 'Save conversations and manage Markdown notes in DSH or a separate window, with search, history, templates and private GitHub sync. Verified on Windows only; sync needs your own GitHub account (Git or the GitHub CLI).'
+  zh: '保存会话，在 DSH 内或独立窗口管理 Markdown 笔记，支持查找、历史恢复、模板与 GitHub 私库同步。仅在 Windows 上验证过；同步需要你自己的 GitHub 账号（Git 或 GitHub CLI）。'
 icon: https://raw.githubusercontent.com/StarWind97/dsh-fatfish-notes/main/assets/icon-180.png
-tarball: https://github.com/StarWind97/dsh-fatfish-notes/releases/download/v0.6.0/dsh-fatfish-notes-0.6.0.tgz
+tarball: https://github.com/StarWind97/dsh-fatfish-notes/releases/download/v0.8.0/dsh-fatfish-notes-0.8.0.tgz

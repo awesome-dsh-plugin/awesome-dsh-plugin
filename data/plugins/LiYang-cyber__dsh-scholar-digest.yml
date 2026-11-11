@@ -1,0 +1,6 @@
+url: https://github.com/LiYang-cyber/dsh-scholar-digest
+name: LiYang-cyber/dsh-scholar-digest
+category: skill
+description:
+  en: 'DeepSeek Harness bundle with an academic research agent preset and the download-paper skill: four literature sources (CNKI, arXiv, PubMed, Semantic Scholar), CNKI Space links mapped to the main-site kns.cnki.net page server-side, and a delivery contract that puts an offline HTML index, XLSX table, BibTeX, RIS and an arXiv download script in one topic directory. Requires DSH 0.2.x, uv (the CNKI, arXiv and Semantic Scholar MCP servers start through it) and Node.js (PubMed starts via npx).'
+  zh: 'DeepSeek Harness 学术研究 preset 与 download-paper 技能：知网、arXiv、PubMed、Semantic Scholar 四路检索，知网空间链接在服务端换算为主站 kns.cnki.net 链接，并按交付契约把一个专题整理成同一目录下的离线 HTML 索引、XLSX 总表、BibTeX、RIS 与 arXiv 下载脚本。 需要 DSH 0.2.x、uv（知网、arXiv、Semantic Scholar 三个 MCP 源经它启动）与 Node.js（PubMed 源经 npx 启动）。'

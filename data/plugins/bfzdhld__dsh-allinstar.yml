@@ -1,0 +1,6 @@
+url: https://github.com/bfzdhld/dsh-allinstar
+name: bfzdhld/dsh-allinstar
+category: tools
+description:
+  en: 'Stars the GitHub repositories behind installed DSH plugins from a tab beside Installed on the Plugins page and a control on each plugin detail page; resolves a token from the environment, a saved credential record or the gh CLI, and asks once before the first star because starring is public.'
+  zh: '在插件页「已安装」旁的标签页和插件详情页给已安装插件对应的 GitHub 仓库点星；令牌依次取自环境变量、已保存的凭据记录或已登录的 gh CLI，因为 star 是公开行为，首次点星前会提示一次。'

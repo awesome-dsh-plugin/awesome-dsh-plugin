@@ -1,0 +1,7 @@
+url: https://github.com/Shiro-umi/dsh-system-monitor
+name: Shiro-umi/dsh-system-monitor
+category: ui
+description:
+  en: 'Composer dock monitor with 5 drag-reorderable pills (Context, Tokens, CPU, GPU, MEM): a 20x5 context brick matrix, per-turn net upload/download token bars, and 200ms native macOS Mach/IOKit scrolling charts with top-5 process lists. The native sampler is compiled on first start and needs clang (Xcode Command Line Tools); without it the charts fall back to 1-second samples.'
+  zh: '输入框底栏监控插件，含 5 枚可拖拽重排胶囊（Context、Tokens、CPU、GPU、MEM）：20x5 上下文方格矩阵、当轮净上传/下载 Token 分步柱图，以及 200ms 原生 macOS Mach/IOKit 滚动柱状图与前 5 进程列表。原生采样器首次启动时现场编译，需要 clang（Xcode 命令行工具）；没有则退回每秒一次的采样。'
+tarball: https://github.com/Shiro-umi/dsh-system-monitor/releases/download/v0.1.0/dsh-system-monitor.tgz

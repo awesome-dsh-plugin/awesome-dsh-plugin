@@ -1,0 +1,6 @@
+url: https://github.com/cgartlab/dsh-tac
+name: cgartlab/dsh-tac
+category: ui
+description:
+  en: "Project and session board in the native right sidebar, a floating session list, a keyboard-first command palette over sessions, projects and settings, and task notifications."
+  zh: "在原生右侧栏提供项目与会话看板，另有悬浮会话列表、键盘优先的命令面板（可搜索会话、项目与设置），以及任务通知。"

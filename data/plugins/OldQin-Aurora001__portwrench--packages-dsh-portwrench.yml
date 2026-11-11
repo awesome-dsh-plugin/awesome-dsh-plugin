@@ -1,0 +1,9 @@
+# awesome-dsh-plugin 市场条目 · 子包路径条目（bundle 声明在 packages/dsh-portwrench/，根目录无 package.json）
+# 规矩自查：url 指向含 dsh.bundle 的子包目录｜描述事实性无营销词｜含「: 」的值已整体加引号｜分类=tools
+url: https://github.com/OldQin-Aurora001/portwrench/tree/main/packages/dsh-portwrench
+name: OldQin-Aurora001/portwrench#dsh-portwrench
+category: tools
+description:
+  en: 'PortWrench panel for DSH: view local listening ports, see which app owns each one, and close the target process tree. Requires PortWrench (Windows) to be installed and running.'
+  zh: 在 DSH 内嵌端口扳手面板：查看本机监听端口、识别归属、关闭目标进程树。需先安装并运行 PortWrench（Windows）。
+icon: https://raw.githubusercontent.com/OldQin-Aurora001/portwrench/main/icon.png

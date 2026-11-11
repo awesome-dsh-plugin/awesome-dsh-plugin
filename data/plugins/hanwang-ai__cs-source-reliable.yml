@@ -1,0 +1,8 @@
+url: https://github.com/hanwang-ai/cs-source-reliable
+name: hanwang-ai/cs-source-reliable
+category: tools
+tarball: https://github.com/hanwang-ai/cs-source-reliable/releases/latest/download/cs-source-reliable.tgz
+icon: https://raw.githubusercontent.com/hanwang-ai/cs-source-reliable/main/assets/icon-180.png
+description:
+  en: 'Bundled registry of 119 computer-science sources (textbooks, official docs, standards, preprints) across the 17 CS2023 knowledge areas, each tagged with an authority tier, evidence type and refresh interval, plus cs_source_find and cs_source_audit tools that look up a source or audit the URLs in a draft.'
+  zh: '内置 119 条计算机信源（教材、官方文档、标准、预印本），覆盖 17 个 CS2023 知识领域，逐条标注权威等级、证据类型与刷新周期；提供 cs_source_find 与 cs_source_audit 两个工具，用于查源和审计草稿中的引用。'

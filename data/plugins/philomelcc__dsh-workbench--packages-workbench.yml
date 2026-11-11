@@ -1,0 +1,6 @@
+url: https://github.com/philomelcc/dsh-workbench/tree/main/packages/workbench
+name: philomelcc/dsh-workbench#workbench
+category: ui
+description:
+  en: 'Workbench shell: a fixed top bar (account, balance, Restart DSH button) with a second row of page tabs, plus a small module API for full-page plugins. Does nothing without a module; Restart DSH exits the web host and only works where a Windows scheduled task named philomel-dsh-web relaunches it.'
+  zh: '工作台外壳：固定顶栏（账号、余额、「重启 DSH」按钮）加第二行页面标签，外加一套给整页插件用的模块 API。没有模块时不起作用；「重启 DSH」会退出 Web 宿主进程，仅在存在名为 philomel-dsh-web 的 Windows 计划任务来重新拉起时才有效。'

@@ -1,6 +1,6 @@
 tarball: https://github.com/bingomu/dsh-image-zoom/releases/download/v1.0.1/dsh-image-zoom-1.0.1.tgz
 url: https://github.com/bingomu/dsh-image-zoom
-name: bingomu/dsh-image-zoom
+name: 图片缩放查看器（dsh-image-zoom）
 category: ui
 description:
   en: 'In-chat image viewer for DeepSeek Harness: wheel and trackpad pinch zoom at the pointer, two-finger and drag panning, gallery navigation, downloads named from the image description and timestamp, and opening workspace originals in the system default app.'

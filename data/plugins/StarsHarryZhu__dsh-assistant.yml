@@ -1,0 +1,6 @@
+url: https://github.com/StarsHarryZhu/dsh-assistant
+name: StarsHarryZhu/dsh-assistant
+category: agi
+description:
+  en: "General-purpose chat agent on a parent agent + worker sub-agent split, for DSH Desktop only: a sidebar row opens each assistant's long-running conversation, where the parent chats, records schedule, lists, memos, logs, profile, persona and projects as plain files in that assistant's workspace folder, and hands other work to background workers through the bundled complete-subagent, picking each worker's model from the ones you enable and approving their write access. A heartbeat wakes it for reminders, a daily brief and wake-ups it sets itself, and holds back during quiet hours. Through the bundled im-robot it chats over WeChat: the model decides per reply with im_route whether the reply also goes to WeChat, and images and files sent from WeChat appear in the conversation and stay in the workspace's IM/WeChat folder for a set number of days. Its tools never appear in normal sessions."
+  zh: "基于母 agent + worker 子代理架构的通用对话 agent，仅支持 DSH Desktop：侧栏入口直达每个助理的长期对话，母 agent 负责聊天，把日程、清单、备忘、流水、画像、人设和项目以纯文本文件记在该助理的工作区文件夹里，其余工作通过内置的 complete-subagent 交给后台 worker，从你勾选的模型里为每个 worker 选模型，并审批它们的写权限。心跳按时叫醒它处理提醒、每日早报和它自己设的唤醒，勿扰时段内不打扰。通过内置的 im-robot 接入微信：每条回复由模型用 im_route 决定是否同时发到微信，微信发来的图片和文件显示在对话里，并在工作区的 IM/WeChat 文件夹里保留可设置的天数。它的工具不会出现在普通会话里。"

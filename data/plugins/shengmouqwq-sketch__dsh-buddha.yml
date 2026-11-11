@@ -1,0 +1,6 @@
+url: https://github.com/shengmouqwq-sketch/dsh-buddha
+name: shengmouqwq-sketch/dsh-buddha
+category: fun
+description:
+  en: 'Rewrites every assistant reply into Buddha-says ciphertext (佛又曰：…) with the 与佛论禅 AES-256-CBC + Chinese-character substitution scheme, rewriting the final block text as well as the streamed deltas; history sent back to the model is decrypted first, internal calls that carry a purpose pass through untouched, and a config file in ~/.dsh/buddha toggles it live.'
+  zh: '把助手的每一条回复就地加密成「佛又曰：…」（与佛论禅的 AES-256-CBC + 佛字替换表），流式增量与最终块文本一起改写；回灌给模型的历史会先解回明文，带 purpose 的内调用原样透传，~/.dsh/buddha 下的配置即时生效。'

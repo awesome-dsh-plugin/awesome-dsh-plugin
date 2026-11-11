@@ -1,0 +1,7 @@
+url: https://github.com/yuanzephyr920-oss/dsh-idle-crt
+name: yuanzephyr920-oss/dsh-idle-crt
+category: ui
+description:
+  en: 'CRT idle screensaver for DSH pages: when no session is running and the page has seen no mouse or keyboard input for ten minutes (configurable), a retro CRT plate covers the window with scanlines and a looping inversion sweep. An in-window click or key press dismisses it, the wheel only locks scrolling, and the whole frame drifts slightly after the cursor; rendering is fully GPU-composited frame by frame. An adaptation of justawebsite/dsh-splash-crt (MIT), turned from a boot splash into an idle screensaver.'
+  zh: 'DSH 待机显像管屏保：没有会话在运行、且页面上十分钟（可调）没有鼠标键盘输入时，盖上一块带扫描线与循环反色扫掠的 CRT 板；窗口内点一下或按个键即消失，滚轮只锁滚动，画面随指针轻微视差偏移，逐帧全 GPU 合成。改自 justawebsite/dsh-splash-crt（MIT），把开屏动画改成待机屏保。'
+icon: https://raw.githubusercontent.com/yuanzephyr920-oss/dsh-idle-crt/main/assets/icon-180.png

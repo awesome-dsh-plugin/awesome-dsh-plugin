@@ -1,0 +1,7 @@
+url: https://github.com/limomss-dunang/dsh-aidrama
+name: limomss-dunang/dsh-aidrama
+category: workflow
+icon: https://raw.githubusercontent.com/limomss-dunang/dsh-aidrama/main/assets/icon-180.png
+description:
+  en: 'Pre-production studio for AI short dramas: imports a TXT/Markdown/DOCX script or pasted text, splits it into episodes, structures the bible, characters, scenes, props, episodes, shots and prompts, compiles prompts for the selected video-model dialect (Seedance 2.0/2.5, MiniMax H3, Kling, Wan), and hard-validates IDs, beat durations, dialogue capacity and look/identity locks before generation, and warns when a shot looks like it has more than one action.'
+  zh: 'AI 短剧 / 漫剧制片台：导入 TXT、Markdown、DOCX 或直接粘贴剧本并自动拆集，把总纲、角色、场景、道具、分集、分镜、提示词结构化；提示词按所选视频模型方言编译（Seedance 2.0/2.5、MiniMax H3、Kling、Wan），生成前硬校验 ID 与引用、节拍时长、台词容量、身份锁与 LOOK，并对一镜多动作给出提示。'

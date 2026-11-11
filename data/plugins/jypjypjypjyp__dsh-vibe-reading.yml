@@ -1,0 +1,6 @@
+url: https://github.com/jypjypjypjyp/dsh-vibe-reading
+name: jypjypjypjyp/dsh-vibe-reading
+category: docs
+description:
+  en: 'Paper reading in a DSH sidebar tab: the PDF keeps its original layout and fonts, a selection becomes a highlight, a note or a question in the current chat, and annotations plus paper-level notes are mirrored to Markdown in a per-paper folder that also holds the parsed text and the linked open-source code. Ships a `vibe_reading` tool and a reading skill so the agent can build that record itself.'
+  zh: '在 DSH 右侧边栏里读论文：PDF 保留原始排版与字体，选中文字即可高亮、写笔记或直接在当前会话提问；标注与论文级笔记以 Markdown 同步到每篇论文自己的目录，与解析正文、关联的开源代码放在一起。附带 `vibe_reading` 工具与阅读 skill，AI 能自己写这份记录。'

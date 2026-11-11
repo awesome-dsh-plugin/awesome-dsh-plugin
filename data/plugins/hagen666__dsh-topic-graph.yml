@@ -1,0 +1,7 @@
+url: https://github.com/hagen666/dsh-topic-graph
+name: hagen666/dsh-topic-graph
+category: session
+description:
+  en: 'Splits a session into turns and incrementally clusters them into named topics and stages, with per-topic token / tool / time stats, a workflow view, a turn timeline, a relation graph and per-turn AI analysis.'
+  zh: '把会话按轮次聚合成话题与阶段，按话题统计 token / 工具 / 耗时，提供工作流、时间线、关系图谱三种视图和单轮 AI 分析。'
+icon: https://raw.githubusercontent.com/hagen666/dsh-topic-graph/main/assets/icon-180.png

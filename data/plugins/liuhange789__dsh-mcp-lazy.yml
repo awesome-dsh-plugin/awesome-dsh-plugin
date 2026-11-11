@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/dsh-mcp-lazy
+name: liuhange789/dsh-mcp-lazy
+category: tools
+description:
+  en: "On-demand MCP tool loading. Only the mcp__* tools listed in the coreTools whitelist (max 5) stay in a session's tool set; every other MCP tool definition is actually removed from the request through the session-scoped tools.restrict() API and comes back only after the model calls lazy_load_tool. A tools/pre-execute gate turns calls to unloaded tools into a load-it-first error, and activation resets when the session ends."
+  zh: "MCP 工具按需加载。会话工具集里只保留 coreTools 白名单（最多 5 个）中的 mcp__* 工具，其余 MCP 工具定义经由会话级 tools.restrict() 真正从请求中移除，模型调用 lazy_load_tool 后才装回；tools/pre-execute 闸门把未加载工具的调用拒绝成「请先装载」的提示，会话结束自动重置。"

@@ -1,0 +1,7 @@
+url: https://github.com/SunneeYang/LogicMargin/tree/main/plugins/deepseek-harness
+name: SunneeYang/LogicMargin#deepseek-harness
+category: workflow
+description:
+  en: 'Source-backed logic reviews with diagrams, code diffs, and resumable human feedback. The first activation downloads the official LogicMargin release (SHA-256 verified); on macOS and Linux this needs curl, unzip and shasum or sha256sum.'
+  zh: '用有来源依据的流程图和代码差异开展人工评审，保留批注、回复与多轮修订。首次启用时会下载 LogicMargin 官方发行包（校验 SHA-256）；macOS / Linux 上需要 curl、unzip 与 shasum 或 sha256sum。'
+tarball: https://github.com/SunneeYang/LogicMargin/releases/download/v0.9.14/dsh-plugin-logicmargin-0.9.14.tgz

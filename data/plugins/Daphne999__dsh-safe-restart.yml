@@ -1,0 +1,6 @@
+url: https://github.com/Daphne999/dsh-safe-restart
+name: Daphne999/dsh-safe-restart
+category: workflow
+description:
+  en: "Restart DSH and find out whether it actually came back. Windows has no external way to make Electron quit cleanly (WM_CLOSE just minimises the window), so this plugin does not pretend: it terminates the host, relaunches it with retries, then polls the host port until it really serves again, and reports the outcome to a local result file plus a QQ message when qq-notify credentials (appId/clientSecret/openid) are configured in the desktop profile. Verified end to end on 2026-11-08."
+  zh: '重启 DSH 并告诉你到底成没成。Windows 上没有「从外部让 Electron 干净退出」的通道（发 WM_CLOSE 只会最小化窗口），所以这个插件不装优雅：强制结束宿主、带重试地重新拉起、再轮询宿主端口确认它真的在服务，最后把结果写进本地文件，并在 desktop profile 配好 qq-notify 凭据（appId/clientSecret/openid）时发一条 QQ 消息。2026-11-08 端到端实测通过。'
