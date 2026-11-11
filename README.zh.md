@@ -4068,6 +4068,7 @@ dsh plugin --profile web add dshmarket
 - [Heeweelee/dsh-session-plugin](https://github.com/Heeweelee/dsh-session-plugin) — 在输入框内按 ↑/↓ 回填历史消息，并支持右键归档（隐藏）工作区会话。
 - [heiheiha798/dsh-plugin-subagent-delete](https://github.com/heiheiha798/dsh-plugin-subagent-delete) — 带归属校验的工具与 HTTP 路由，用于列出、释放和永久删除子代理会话，删除后自动刷新 web UI。
 - [hellodigua/dsh-share](https://github.com/hellodigua/dsh-share) — 一键分享你的对话。
+- [hellokidder/dsh-hotkey](https://github.com/hellokidder/dsh-hotkey) — 键盘流 DSH 会话导航：按住 Control 在侧边栏显示 1-9 编号、Control+Tab 轮转、Control+J 从覆盖全部会话（含折叠分组与未渲染行）的面板跳转；双击 Option 为可点击控件显示字母提示，Option+Enter 聚焦输入框。
 - [helo060228/dsh-chat-search](https://github.com/helo060228/dsh-chat-search) — DSH 对话搜索插件：支持全局跨会话与当前对话内精准搜索，高亮定位并快速跳转。
 - [Hercules-debug/dsh-fork-map](https://github.com/Hercules-debug/dsh-fork-map) — 每个工作区一个持久化 Fork 库：每轮已结束的回复下多一个书签按钮，把这一轮结束处的完整上下文压缩存成快照，源会话删掉后仍可用；对话区的「Fork 库」标签把当前工作区的 Fork 列成树（从某个 Fork 启动的会话里再存的 Fork 挂在它下面），显示名称、轮数、最后一问一答、备注和来源链接，点「从这里启动新会话」可从任意 Fork 反复开新会话。存下后 Fork 会用自己的上下文给自己起名：把快照还原后追加一条命名请求，这次问答不写进快照、也不写进任何会话。
 - [HERO476/dsh-conversation-recycle-bin](https://github.com/HERO476/dsh-conversation-recycle-bin) — 在会话列表菜单或会话页头部删除对话，可勾选一并删除该对话关联的记忆节点（确认框先显示命中条数）；删除进入插件回收站可恢复，每次操作写入审计日志，批量删除有限流与逐会话回滚。
