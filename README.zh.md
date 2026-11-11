@@ -8915,6 +8915,7 @@ dsh plugin --profile web add dshmarket
 - [YZz-S/dsh-notifier](https://github.com/YZz-S/dsh-notifier) — 任务完成或需要确认/输入时发送操作系统原生通知：Windows toast、macOS osascript、Linux notify-send。
 - [zach-bworld/dsh-session-notify](https://github.com/zach-bworld/dsh-session-notify) — 你在别的项目里工作时，后台会话跑完会在侧边栏显示角标并发出系统通知，点角标可直接跳到该会话。
 - [zaofan-make/dsh-qqbot](https://github.com/zaofan-make/dsh-qqbot) — QQ 官方机器人通道（tencent-connect/dsh-qqbot 的增强 fork）：群/私聊ai陪聊、富媒体收发、表情包打标入库+检索发图、入群审批/禁言/群发、定时唤醒、QQ 远程审批与提问卡、互动按钮卡、多账号多实例、扩展接口、群友记忆注入、按消息价值唤醒省token、上下文自动压缩、悬浮球设置面板。
+- [ZaykoFF/dsh-sound-alerts](https://github.com/ZaykoFF/dsh-sound-alerts) — Sound cues played by the host operating system, not the browser: three bundled WAV files fire through the machine's own audio (SoundPlayer on Windows, afplay on macOS, paplay/aplay on Linux) when an agent's turn completes, when the context is compacted and when the agent is waiting for your answer; subagent turns can be included, cues fired closer than a configurable interval are skipped, and each bundled sound can be replaced with your own file via plugin config.
 - [zepeng-jin/dsh-completion-notifier](https://github.com/zepeng-jin/dsh-completion-notifier) — DeepSeek Harness 原生任务完成通知与审批提醒插件，集成设置面板。
 - [zhang-tod/dsh-win-notify](https://github.com/zhang-tod/dsh-win-notify) — DSH 宿主层 Windows 原生 Toast 通知：回合完成、出错或中断、子代理完成、后台任务完成，以及模型提问与工具审批待处理时的提醒。通知逻辑跑在 DSH 宿主进程里，标签页或浏览器关掉也照响；用 Win32 前台探测，正在看 DSH 时不打扰。仅支持 Windows。
 - [zhangjie-2007/dsh-voice](https://github.com/zhangjie-2007/dsh-voice) — Windows 上的 DeepSeek Harness 语音提示：一轮对话正常结束时朗读一句可自定义的话（默认「已完成当前任务」），智能体需要你做选择时——提问、批准计划或权限确认——朗读第二句（默认「老大老大，等你做选择呢」），开始一个新对话时再按系统时间问候一句（默认「早上好／中午好／下午好／晚上好！有什么工作需要做吗？」）。页面左下角还有一个小悬浮泡，点一下就把所有播报静音或恢复（自带开关音效）。朗读用微软 Edge 神经语音合成（被中断或出错的回合、子代理回合、以及 goal 仍在续跑的回合不朗读），结果缓存在 DSH 主目录并本地播放，网络不可用时回退到系统 SAPI 桌面语音。
@@ -9797,6 +9798,7 @@ dsh plugin --profile web add dshmarket
 - [zhengqiuyang/dsh-read-guard](https://github.com/zhengqiuyang/dsh-read-guard) — 确定性注入拦截：文件读取、仓库搜索与网络抓取的工具结果在进入模型上下文前被扫描；高危发现隔离包裹或阻断，凭证类文件按路径即隔离。
 - [zhengqiuyang/dsh-trust-panel](https://github.com/zhengqiuyang/dsh-trust-panel) — 信任面板：把 dsh 信任插件族九个通道（注入拦截、写拒绝、出网拦截、custody 链校验、工具面/系统提示词漂移、残留扫描、压缩遗忘约束、profile 组成）聚合成右侧栏一块仪表盘——一个状态灯 + 事件卡片，把引擎术语翻译成非安全背景用户能看懂并知道要不要处理的句子；read/egress 引擎随包自带 npm 依赖，未装兄弟插件也能工作，缺失的通道仅显示未安装。
 - [zhkkjF/dsh-cookie-sentinel](https://github.com/zhkkjF/dsh-cookie-sentinel) — 把本地 Host 的 HTTP 请求头上限提高到 128 KiB，并且只在真正签发新 dsh-auth cookie 的令牌交换响应里清理旧 Cookie；已经卡在 431 的桌面 profile 能恢复，之后随机端口启动只保留一条。
+- [zhknb/dsh-approval-why](https://github.com/zhknb/dsh-approval-why) — 在 DSH 的审批卡上就地解释「为什么需要越权」：按钮展开所需权限、风险、不授权的后果、系统真正要执行的参数，以及每个路径是否落在会话工作区之外；卡片下方常驻一行风险与拒绝后果，模型给出的原始理由按「需要的权限 / 风险 / 不授权」分段显示，而不是挤成一坨。
 - [zjuhbh/dsh-full-with-approval](https://github.com/zjuhbh/dsh-full-with-approval) — dsh 第四个权限预设：进程全权限（GPU 可用），同时工作区外与受保护文件（.git/**、.env*）的写入逐次向用户审批；纯插件实现，零核心改动。
 - [zoahdev/dsh-poison-guard](https://github.com/zoahdev/dsh-poison-guard) — DSH 插件安装前投毒扫描：AST（JS-X-Ray）+ 去混淆解码 + 正则启发式，发现即非零退出，可作 CI 门禁。
 - [zoushangkun-dev/dsh-startup-auth-cn](https://github.com/zoushangkun-dev/dsh-startup-auth-cn) — 给 DeepSeek Harness 的冷启动动画，工作区前加一道解锁门：PIN、Windows Hello 或验证器动态码，全部本地运行。
