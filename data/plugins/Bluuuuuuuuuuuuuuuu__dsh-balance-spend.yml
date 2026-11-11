@@ -1,0 +1,6 @@
+url: https://github.com/Bluuuuuuuuuuuuuuuu/dsh-balance-spend
+name: Bluuuuuuuuuuuuuuuu/dsh-balance-spend
+category: usage
+description:
+  en: 'Account balance chip beside the Harness mark, per-session spend beside each Session row, and a sidebar-foot list of what running sessions are spending — all priced from each session log''s token usage, with a live ≈ estimate while a call is streaming.'
+  zh: '在 Harness 品牌位旁显示账户余额，在每个会话行旁显示该会话消耗，并在侧栏底部列出运行中会话正在花多少——全部按会话日志里的 token 用量计价，调用流式进行中时给出 ≈ 实时估算。'
