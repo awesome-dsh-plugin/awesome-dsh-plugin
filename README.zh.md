@@ -5992,6 +5992,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-lawcite-adapter](https://github.com/PerryLink/dsh-lawcite-adapter) — 法条引用名称、条号、原文与效力状态核对。
 - [PerryLink/dsh-laya](https://github.com/PerryLink/dsh-laya) — 把 Laya 的有类型决策（`noul` 是/否、`choice`、`score`）接成一等 Cordis 服务（`ctx.laya`）与两个模型可见工具 `laya_ask`、`laya_plan`。插件自身不安装也不下载任何东西：它是你自己启动的 `laya-mcp serve` 边车的客户端，边车未运行时会明确报出，而不是在首次工具调用时隐晦失败。
 - [PerryLink/dsh-lc-doc-check](https://github.com/PerryLink/dsh-lc-doc-check) — 信用证单据与 UCP600 不符点核对。
+- [PerryLink/dsh-locator](https://github.com/PerryLink/dsh-locator) — 为 DSH 提供自建跨平台索引的全盘文件名搜索，带 agent 工具和 Web 面板，不依赖 Everything。
 - [PerryLink/dsh-lsp-actions](https://github.com/PerryLink/dsh-lsp-actions) — DSH 的 LSP 动作面：诊断、格式化、补全、代码动作、符号、签名提示、inlay 提示与重命名，全部由真实语言服务器驱动。
 - [PerryLink/dsh-medrec-qc](https://github.com/PerryLink/dsh-medrec-qc) — 依据国卫办医发〔2016〕24号等公开文件，核对病案首页各字段的齐备性与字段间的逻辑矛盾。列出缺失或不一致之处供人复核，不评价临床正确性。
 - [PerryLink/dsh-nsfc-form-check](https://github.com/PerryLink/dsh-nsfc-form-check) — 国自然申请书形式审查与匿名化核对。
@@ -6190,7 +6191,7 @@ dsh plugin --profile web add dshmarket
 - [taxueseek/argo#dsh-plugin](https://github.com/taxueseek/argo/tree/main/packages/dsh-plugin) — 面向 agent 的统一搜索与证据核验：120+ 引擎多语言路由，垂直域与结构化模态卡，10 个 MCP 工具与 wide_research 编排，fetch 核验回填证据分的证据闭环。
 - [taxueseek/dsh-snippets](https://github.com/taxueseek/dsh-snippets) — DSH 极简片段/命令工具箱：5 个工具，一个可手工编辑的 JSONL 文件，零 UI、零数据库、零网络，只有明确说存才存。
 - [TecFancy/dsh-deeptutor](https://github.com/TecFancy/dsh-deeptutor) — DeepTutor 学习辅导桥接插件：通过 deeptutor_run / deeptutor_kb / deeptutor_note 工具为 agent 接入深度讲解、自测题、学习路径规划、个人知识库检索（RAG）与笔记归档。
-- [tedcriss/dsh-matlab](https://github.com/tedcriss/dsh-matlab) — 把 MathWorks 的 MATLAB Agentic Toolkit 技能与 MATLAB MCP Server 工具接入 DeepSeek Harness。需要本机 MATLAB R2021a 及以上，且安装插件后需重启 DSH。默认（autoProvision）首次使用时会下载 MathWorks MCP Server 并安装工具包的最新 Release。MathWorks 遥测默认关闭，把 disableTelemetry 设为 false 才会重新开启。下载区域为 china（插件里设置或 DSH 市场已选）或配置了 GitHub 前缀时，MCP Server 二进制和工具包压缩包会先经该前缀（默认 gh-proxy.com、ghfast.top）下载，失败再直连；下载来的二进制不做校验和检查就会运行。
+- [tedcriss/dsh-matlab](https://github.com/tedcriss/dsh-matlab) — 把 MathWorks 的 MATLAB Agentic Toolkit 技能与 MATLAB MCP Server 工具接入 DeepSeek Harness。需要本机 MATLAB R2021a 及以上，且安装插件后需重启 DSH。默认（autoProvision）首次使用时会下载 MathWorks MCP Server 并安装工具包的最新 Release。MathWorks 遥测默认关闭，把 disableTelemetry 设为 false 才会重新开启。下载区域为 china（插件里设置或 DSH 市场已选）或配置了 GitHub 前缀时，MCP Server 二进制和工具包压缩包会先经该前缀（默认 gh-proxy.com、ghfast.top）下载，失败再直连。能读取 Release 元数据时，下载的 MCP Server 二进制会按 GitHub 公布的资产 SHA-256 摘要校验，不一致就拒绝安装。
 - [Tencent/WeKnora#dsh-weknora](https://github.com/Tencent/WeKnora/tree/main/packages/dsh-weknora) — 把 WeKnora 知识库接入 dsh 的四个只读工具：列出知识库、混合检索原文片段、按顺序还原单篇文档，以及直接取用 WeKnora 自己带引用的 RAG 或 ReAct agent 回答（含可续聊的 session id）。
 - [TencentCloudBase/CloudBase-AI-Toolkit#dsh-plugin](https://github.com/TencentCloudBase/CloudBase-AI-Toolkit/tree/main/dsh-plugin) — 把腾讯云 CloudBase 后端接入 DeepSeek Harness——在对话里搭好并部署全栈应用，查询结果渲染为表格卡片（分页、排序、导出 CSV），部署后可预览真实域名，并提供 CloudBase MCP 工具集（`mcp__cloudbase__*`），登录走 device-code 流程。
 - [terry2010/dsh-rss-news-daily](https://github.com/terry2010/dsh-rss-news-daily) — 方便等待 AI 回复时看一眼新闻的 RSS/新闻阅读器。内置订阅源库，可自定义源；抓取管线自动翻译外文新闻、LLM 逐条评分，自动生成每日「日报」和每小时「快报」，解决信息过载；具有数据备份恢复，偏好自定义等功能。
