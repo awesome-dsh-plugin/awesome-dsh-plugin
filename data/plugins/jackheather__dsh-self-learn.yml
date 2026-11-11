@@ -1,0 +1,6 @@
+url: https://github.com/jackheather/dsh-self-learn
+name: jackheather/dsh-self-learn
+category: tools
+description:
+  en: "Learn from Bilibili videos, web pages, local files and live streams: local ASR, on-screen OCR and extractive digests add up to about 1.5KB of text per source, so the model reads a summary instead of a full transcript."
+  zh: "把 B 站视频、网页、本地文件和直播变成可检索的学习库：本地转写、画面 OCR、抽取式摘要，每个来源交回约 1.5KB 文本，让模型读摘要而不是全文。"
