@@ -2,5 +2,5 @@ url: https://github.com/amd47802574/dsh-hand-note
 name: amd47802574/dsh-hand-note
 category: memory
 description:
-  en: 'Local jot-down notes for DSH: one Markdown file per note with a redesigned card UI, custom tag management (create tags ahead of use, delete one everywhere), flat quick-scan list, full-text search, Markdown preview, autosave, batch deletion, zero-dependency Office text extraction, and AI write-back from conversations. Heavily reworked from dsh-knowledge-lite; data-compatible with E:/dsh-kb.'
-  zh: '随手笔记：本地 Markdown 笔记插件。卡片式全新界面，自定义标签管理（可提前建标签、一处删除全局生效），平铺速览列表，全文检索，Markdown 预览，自动保存，批量删除，Office 零依赖文本抽取，支持 AI 回写。由 dsh-knowledge-lite 深度改造而来，数据与 E:/dsh-kb 完全兼容。'
+  en: 'Local jot-down notes for DSH: one Markdown file per note, stored under ~/dsh随手笔记 by default (portable home path, no drive-letter assumption). Redesigned card UI, trash bin (deletions restorable for 30 days), custom tag management with stable per-tag colors (create tags ahead of use, delete one everywhere), compact/comfortable density, adjustable font size and line width, flat quick-scan list, full-text search, Markdown preview, autosave, batch deletion, zero-dependency Office text extraction, and AI write-back from conversations. Heavily reworked from dsh-knowledge-lite; pick the old library via the in-app root picker to migrate.'
+  zh: '随手笔记：本地 Markdown 笔记插件，默认存放在用户主目录 ~/dsh随手笔记（跨平台、无盘符依赖）。卡片式全新界面，回收站（删除 30 天内可恢复），自定义标签管理（可提前建标签、一处删除全局生效、同名标签固定配色），列表密度切换与字号/行宽调节，平铺速览列表，全文检索，Markdown 预览，自动保存，批量删除，Office 零依赖文本抽取，支持 AI 回写。由 dsh-knowledge-lite 深度改造而来；老用户可在状态栏「库位置」选回旧库自动迁移。'
