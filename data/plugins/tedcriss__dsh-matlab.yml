@@ -1,5 +1,5 @@
 url: https://github.com/tedcriss/dsh-matlab
-name: tedcriss/dsh-matlab
+name: MATLAB Agentic Toolkit
 category: tools
 description:
   en: 'Adds the MathWorks MATLAB Agentic Toolkit skills and the MATLAB MCP Server tools to DeepSeek Harness. Needs a local MATLAB R2021a or later, and DSH must be restarted after installing the plugin. By default (autoProvision) it downloads the MathWorks MCP Server binary and installs the newest Agentic Toolkit release on first use. MathWorks telemetry is disabled by default; set disableTelemetry to false to re-enable it. When the download region is China (set in the plugin or by DSH''s market) or a GitHub prefix is configured, the server binary and the toolkit archive are fetched through that prefix first (gh-proxy.com and ghfast.top by default) and then directly. The downloaded server binary is verified against the SHA-256 digest GitHub publishes for its release asset when the release metadata can be read, and a mismatch refuses the install.'
