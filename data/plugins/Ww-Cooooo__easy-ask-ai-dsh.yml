@@ -1,0 +1,7 @@
+url: https://github.com/Ww-Cooooo/easy-ask-ai-dsh
+name: Easy Ask AI DSH
+category: workflow
+description:
+  en: Clarify requirements in existing chats and track questions, user answers, AI assumptions, version approvals and progress in a native sidebar.
+  zh: 在原聊天中澄清需求，通过原生侧栏查看问题、用户回答、AI 猜测、版本认可与整体进度。
+tarball: https://github.com/Ww-Cooooo/easy-ask-ai-dsh/releases/download/v0.4.10/eh3-dsh-easy-ask-ai-0.4.10.tgz
