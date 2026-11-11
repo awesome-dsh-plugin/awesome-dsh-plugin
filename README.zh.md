@@ -695,7 +695,6 @@ dsh plugin --profile web add dshmarket
 - [FeatherHunter/dsh-prompt](https://github.com/FeatherHunter/dsh-prompt) — 🌹将一切重复、烦躁的模板化提示词保存下来，只需要鼠标点击就注入对话框，节省您的精力损耗
 - [FeatherHunter/ilife#dsh-life-pack](https://github.com/FeatherHunter/ilife/tree/master/packages/plugin-manager) — ⚠️内测中勿下载⚠️爱生活-覆盖你居家生活的方方面面。
 - [feifandiv/dsh-annotation](https://github.com/feifandiv/dsh-annotation) — 给 DeepSeek Harness 的回复和侧边栏文档加划词标注，聚合成输入框卡片并一键发给 AI，右侧边栏可查看列表。
-- [feiniao1933/dsh-minigames](https://github.com/feiniao1933/dsh-minigames) — 在 DSH 右侧面板加入「游戏盒子」标签页：三档难度的五子棋人机对弈、微信经典打飞机，以及海底主题的鲸鱼版 Flappy 飞行小游戏，带合成音效与获胜庆祝动画。
 - [feiniao1933/dsh-whale-icon](https://github.com/feiniao1933/dsh-whale-icon) — 将 DSH 输入框的发送 / 停止按钮换成 DeepSeek 品牌蓝色鲸鱼，运行时游动起来。
 - [feiyaochang123-sys/dsh-starred-turns](https://github.com/feiyaochang123-sys/dsh-starred-turns) — 在对话右侧轮次导航条上右键收藏某一轮：该短横线变为导航条满宽并换成强调色，便于之后一眼找到，再次右键取消。收藏按对话隔离（取当前选中会话 id）并持久保存，刷新后仍在；不引起布局跳动，导航条保持固定间距。
 - [Feizhaiqianqian/dsh-email-board](https://github.com/Feizhaiqianqian/dsh-email-board) — 只读的 DSH 未读邮件看板——把 dsh-email 里配置的各账号未读邮件按账号列成右侧栏卡片（发件人、主题、时间），按需手动刷新。
@@ -859,7 +858,7 @@ dsh plugin --profile web add dshmarket
 - [Him666233/dsh-inline-diff#plugin](https://github.com/Him666233/dsh-inline-diff/tree/main/plugin) — 为 edit、write、str_replace_editor 调用就地渲染内联差异卡片：旧/新行号、字符级高亮、57 种语言检测与红绿安全的语法配色，另有左右对照、Read 行范围，以及可配置的显示风格与高亮设置。
 - [HimA6652/dsh-client-ui-model-seat](https://github.com/HimA6652/dsh-client-ui-model-seat) — 把 AprilCrystal/dsh-client-ui-gpt-helper 与 zszz3/dsh-model-provider-prefix 这两个无法同时安装的输入框模型控件合并成一个控件：「供应商/模型」钮点开是两栏卡片，鼠标所指供应商的模型就地切换、卡片不移动；推理强度是旁边的独立钮，带粒子滑杆；搜索跨全部供应商，且卡片尺寸保持不变。
 - [himeope/dsh-queue-first-enter](https://github.com/himeope/dsh-queue-first-enter) — agent 正在处理任务时，输入框空着按回车，队列第一条消息就会插话送进当前回合。
-- [HimLeoing/dsh-task-progress](https://github.com/HimLeoing/dsh-task-progress) — 可拖动的任务进度面板，展示本地估算、独立队友进度、可选 AI 评估与探针费用诊断。
+- [HimLeoing/dsh-task-progress](https://github.com/HimLeoing/dsh-task-progress) — 可拖动的任务进度面板，展示本地估算、独立队友进度、可选 AI 评估与探针费用诊断。alpha 版本，仅限 Web profile，需要 Node 24.9 及以上与 Harness 0.2.2-rc.1。AI 观察默认关闭，开启后会消耗当前会话所用服务商的 token。包名和挂载 id（dsh-task-progress）与 chen8923/dsh-task-progress 相同，只能装其中一个。
 - [hiocobueno653-pixel/dsh-ui-polish](https://github.com/hiocobueno653-pixel/dsh-ui-polish) — DSH 网页端界面打磨层：补上浮层毛玻璃材质，用可拖动滑杆替换推理等级单选列表，模型菜单一次点击直达列表、Esc 一次关闭。
 - [hj9178/dsh-throwtomatoes-plugin](https://github.com/hj9178/dsh-throwtomatoes-plugin) — 任务运行中且输入框为空时，把发送键换成番茄键。点一两下会让模型在下一步收到一条不对用户显示的提醒，要求它反思做法并以提问用户如何继续收尾；一秒内连点三下则先停止任务，再发同样的提醒。丢番茄特效与音效可在设置中关闭，设置页同时显示累计扔出的番茄总数。
 - [hjj345/dsh-sm-context-piano](https://github.com/hjj345/dsh-sm-context-piano) — 为 DeepSeek Harness Web GUI 提供 Codex 式对话导航与预览。
@@ -8090,7 +8089,7 @@ dsh plugin --profile web add dshmarket
 - [Kayungko/dsh-plugin-product-design](https://github.com/Kayungko/dsh-plugin-product-design) — 产品设计工作流套件：一个路由加九个 pd-* 技能，把想法从最小设计简报推进到视觉方向、证据化调研与审计、URL 克隆、前端构建与阻断式设计 QA 闸门。
 - [Kayungko/dsh-plugin-task-coordinator](https://github.com/Kayungko/dsh-plugin-task-coordinator) — 总控式工作流编排：确认闸门批量派发、团队编组、向运行中任务纠偏、等待收口与模型路线发现——11 个 task_* 工具加 /tasks 斜杠命令。
 - [KelaoHu/dsh-lowtide#dsh-lowtide](https://github.com/KelaoHu/dsh-lowtide/tree/main/packages/dsh-lowtide) — lowtide（退潮）插件能够实现闲时自动批量跑任务——任务框架高度自定义，四种执行策略，L1–L3 半自动/全自动裁决，支持任务编辑与预检，Cordis 微内核集成，桌面网页端通用。
-- [Kippythisway/dsh-team-v3](https://github.com/Kippythisway/dsh-team-v3) — AgentTeams 的团队预置：内置 audit6 / impl5 / lite2 三套编制与 seed 任务 DAG（每个角色带回报合同），并注入一段 captain 开团纪律——新会话一次批准就开出结构正确的团队，不用再贴提示词。引擎 @nanmicoder/dsh-agent-teams 作为 bundle 依赖随包启用。
+- [Kippythisway/dsh-team-v3](https://github.com/Kippythisway/dsh-team-v3) — AgentTeams 的团队预置：内置 audit6 / impl5 / lite2 三套编制与 seed 任务 DAG（每个角色带回报合同），并注入一段 captain 开团纪律——新会话一次批准就开出结构正确的团队，不用再贴提示词。需要先把引擎 @nanmicoder/dsh-agent-teams 装进同一个 profile；团队补丁按 id 指向该引擎，并会整段替换其 agent-teams 配置。
 - [kira905/dsh-task-board-local](https://github.com/kira905/dsh-task-board-local) — 自维护的 DSH 网页任务看板：带人工验收闸门、卡片类型与已执行卡片的可编辑备注。
 - [kkomia/dsh-code-team](https://github.com/kkomia/dsh-code-team) — DeepSeek Harness 的「项目开发模式」预设与聊天内开发看板：主对话只澄清需求并向 Agent Team 派活，悬浮看板把每个用户修改点按派单、执行、测试、验收追踪（含 7 个看板工具）。
 - [kongbai9420/dsh-boss-worker](https://github.com/kongbai9420/dsh-boss-worker) — 具备主控审查门禁、文件范围隔离与悬浮工作台的多模型主从协同插件。
@@ -10434,6 +10433,7 @@ dsh plugin --profile web add dshmarket
 - [FaMuer/dsh-real-fish-pet](https://github.com/FaMuer/dsh-real-fish-pet) — 在 dsh web 界面右下角游动的 3D 渲染鲸鱼桌面宠物，任务完成或出错时播放 attention 动画与鲸吟声。
 - [fask112/dsh-tarot-divination](https://github.com/fask112/dsh-tarot-divination) — 塔罗占卜：可发牌翻牌牌桌、抽牌工具，以及可复盘的历史记录。
 - [fbbDirge/dsh-xiaoheihe](https://github.com/fbbDirge/dsh-xiaoheihe) — 定时浏览小黑盒帖子，支持可选的人格评论与回复、扫码登录和浏览历史。
+- [feiniao1933/dsh-minigames](https://github.com/feiniao1933/dsh-minigames) — 在 DSH 右侧面板加入「游戏盒子」标签页：三档难度的五子棋人机对弈、微信经典打飞机，以及海底主题的鲸鱼版 Flappy 飞行小游戏，带合成音效与获胜庆祝动画。
 - [FeWOO/DeepSeek-meme](https://github.com/FeWOO/DeepSeek-meme) — DSH 表情包库：输入区按钮打开默认表情（10 张 GPT 绘制）与社区二创梗图（8 张）两个包，点一下发送 180px 贴纸，模型也能通过 send_sticker 理解并回发表情。
 - [Firefly26710Lover/dsh-firefly-pet](https://github.com/Firefly26710Lover/dsh-firefly-pet) — 流萤桌宠：透明置顶的桌面伴侣，走宿主模型聊天、点击切换动画、定时碎碎念、按会话播报任务进度，并可查询账户余额。依赖 DSH Desktop 自带的 Electron 运行时（~/.dsh/electron），缺失时桌宠不会出现；仅支持 Windows。
 - [Firefox2100/dsh-agentic-roleplay#core](https://github.com/Firefox2100/dsh-agentic-roleplay/tree/main/packages/dsh-agentic-roleplay-core) — 为 DSH 提供具有结构化世界、自主角色、持久会话、世界创作、语音与图像生成功能的智能体角色扮演系统。需要安装并启用 Firefox2100/dsh-agentic-roleplay#state。
