@@ -1,0 +1,7 @@
+url: https://github.com/colin4k/DSH-webtokens-desktop
+name: colin4k/DSH-webtokens-desktop
+category: model
+description:
+  en: 'A Desktop 0.2.2-rc.1 adaptation of DSH WebTokens that registers a signed-in Chrome DeepSeek web session as the deepseek-web model in DeepSeek Harness, with tool-call transport, reply validation, a Chrome bridge extension, plus install and rollback scripts.'
+  zh: 'DSH WebTokens 的 Desktop 0.2.2-rc.1 适配版：把已登录的 Chrome DeepSeek 网页会话注册为 Harness 的 deepseek-web 模型，提供工具调用传输、回复校验、Chrome 桥接扩展，以及安装与回滚脚本。'
+tarball: https://github.com/colin4k/DSH-webtokens-desktop/releases/latest/download/dsh-web-bridge.tgz
