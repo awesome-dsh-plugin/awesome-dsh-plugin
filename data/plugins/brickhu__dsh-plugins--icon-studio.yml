@@ -1,0 +1,6 @@
+url: https://github.com/brickhu/dsh-plugins/tree/main/icon-studio
+name: brickhu/dsh-plugins#icon-studio
+category: ui
+description:
+  en: 'Project-level icon library: a right-sidebar Icons panel plus four agent tools (icon_list, icon_get, icon_save, icon_annotate) that turn SVG shapes into named, rule-described assets. Artwork can be pasted, imported from Iconify or IconMCP, adopted from a workspace scan, or generated; editing one drawing rewrites every code reference to it.'
+  zh: '项目级图标库：右栏「Icons」面板 + 四个 agent 工具（icon_list、icon_get、icon_save、icon_annotate），把 SVG 变成有名称、有应用规则、可被指代的资产；图形可粘贴、从 Iconify / IconMCP 导入、从工作区扫描收编或用 AI 生成，改一次图形，代码里的所有引用一起更新。'
