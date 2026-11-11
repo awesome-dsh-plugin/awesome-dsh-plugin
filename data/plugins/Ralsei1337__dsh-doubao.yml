@@ -4,3 +4,4 @@ category: fun
 description:
   en: 'Rewrites DSH model output as "Doubao-speak": a barrage of superlatives, a long list of negations, healing diagnoses, verbatim repeats and a service-style closing question. Two independent channels (a system-prompt style bible and an llm/stream post-processor), three transform modes, and every length knob adjustable live in a settings page with a preview.'
   zh: '把 DSH 的模型输出改造成「豆包语」：超长排比、密集否定清单、疗愈式诊断、原样复读、服务化收尾。两条独立通道（系统提示注入风格圣经 + llm/stream 输出流后处理），三种后处理模式，所有长度参数都能在设置页实时调节并预览。'
+tarball: https://github.com/Ralsei1337/dsh-doubao/releases/latest/download/dsh-doubao-1.0.0.tgz
