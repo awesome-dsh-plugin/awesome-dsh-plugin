@@ -1,0 +1,7 @@
+url: https://github.com/thus-zhou/dsh-chapter-whale
+name: thus-zhou/dsh-chapter-whale
+category: workflow
+tarball: https://github.com/thus-zhou/dsh-chapter-whale/releases/download/v0.2.0-rc.1/dsh-chapter-whale-0.2.0-rc.1.tgz
+description:
+  en: 'Windows x64 DSH workbench for scheduled, unattended novel writing and Fanqie publishing, with configurable tasks and optional free-quota model channels.'
+  zh: '码章鲸：Windows x64 无人值守小说写作与番茄发布工作台，可自定义日更任务，接入部分免费模型并支持部分厂商账号授权。'
