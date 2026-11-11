@@ -805,6 +805,7 @@ dsh plugin --profile web add dshmarket
 - [HanaAyane/dsh-reasoning-effort](https://github.com/HanaAyane/dsh-reasoning-effort) — 为 DSH 原生模型选择器加入大肥鱼思考强度滑块，按模型声明的档位调节推理强度，拖动时奔跑动画随之加速。
 - [hanbernate/dsh-save-button](https://github.com/hanbernate/dsh-save-button) — 在 DSH Web GUI 交付卡片上增加下载按钮，present 交付的文件可直接从浏览器下载。
 - [HandsYe/dsh-input-history](https://github.com/HandsYe/dsh-input-history) — DSH 对话框的持久输入历史：↑/↓ 回溯已发送内容（重启不丢），输入框有内容时按 ↑ 仅在前缀匹配项中翻找，清空未发送的草稿不会入历史。
+- [HandsYe/dsh-lock-screen](https://github.com/HandsYe/dsh-lock-screen) — 一键锁屏：侧栏按钮用当前 Windows 桌面壁纸铺满并遮住整个界面，连按两次 Esc 解锁。
 - [Hanmiao33/dsh-bubble-explain](https://github.com/Hanmiao33/dsh-bubble-explain) — 对话中框选任意文字后点击「解释」按钮，弹出 Markdown 实时流式解释气泡，支持递归追问。
 - [hanrr92/dsh-code-quote](https://github.com/hanrr92/dsh-code-quote) — 输入框代码引用折叠：粘贴「路径:行号 + 代码」时自动折叠为「文件图标+文件名:行号」引用芯片（Ctrl+Z 可还原），发送时由 agent/pre-step 钩子将完整代码快照作为独立上下文消息注入给模型。0.5 起支持侧边栏「添加到对话框」大段选区（仅插路径行时按会话工作目录读磁盘取代码），并在捕获阶段抢权接管 Ctrl+V 粘贴。
 - [HansHuang2683/dsh-quote-annotate](https://github.com/HansHuang2683/dsh-quote-annotate) — 在对话里划选任意一段文字即可就地批注：原文高亮并带编号角标，发送时把原文、出处（谁说的、第几轮）和你的批注一起折进消息，模型能对上每一句指代。
@@ -899,6 +900,7 @@ dsh plugin --profile web add dshmarket
 - [hytime/dsh-client-ui-shortcuts](https://github.com/hytime/dsh-client-ui-shortcuts) — 为 DSH Web 提供按 profile 管理的键盘快捷键：支持 Question 和 Approval 卡片、Standard/Vim/Custom 配置，并按能力提供 Session 与 Workspace 导航。
 - [hyzyn/dsh-plugin-kit#kit-settings](https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/kit-settings) — DSH Web GUI 中 kit 插件配置的宿主页：经官方 settings.section 扩展点在「设置」里注册一行与「通用设置」平级的「插件配置」页，并声明子 slot「settings.kit.item」，供 dsh-plugin-kit 各插件把自己的配置卡片渲染到该页。只装本包时该页显示「暂无可用配置项」，卡片随注册该 slot 的 kit 插件出现。
 - [hyzyn/dsh-plugin-kit#tty](https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/tty) — DSH Web GUI 的终端面板：侧边栏「终端」打开多标签页 xterm.js 全交互终端（node-pty 真实 PTY），支持 ssh2 原生 SSH 远程标签页（agent/key/password 三种认证），cwd 跟随当前会话，并提供 tty_list / tty_capture / tty_send 三个 agent 工具。
+- [hZsFN/dsh-sidebar-panel-visibility](https://github.com/hZsFN/dsh-sidebar-panel-visibility) — 在侧边栏「更多」菜单里给每个面板入口加一行显隐开关，右侧标出当前状态；选择存 localStorage，插件重载后自动回放。插件面板本身固定显示，不可隐藏。
 - [hzys7/dsh-prompt-expander](https://github.com/hzys7/dsh-prompt-expander) — 在模型选择器旁加一个 ✨ 按钮，把草稿改写成规模随草稿而变的执行规格（小请求只给两三条步骤，多部分请求才展开成清单），再按一次按钮恢复原文；问候与闲聊直接放行，不调用模型。
 - [Iambatman1928/dsh-lawagent-ui](https://github.com/Iambatman1928/dsh-lawagent-ui) — 法学学习实训工作台：三栏学术风界面，直读「明律」（lawagent preset）的学习档案（案件卷宗/背诵卡/错题本/笔记），并可一键把指令送进明律会话。
 - [Iambatman1928/dsh-lawkb-ui](https://github.com/Iambatman1928/dsh-lawkb-ui) — 法律知识库工作台：直读本地法规 .doc/.docx 语料，关键词/统计语义/向量三路融合检索、双维度筛选、案名索引与民事案由树、文书编辑器，以及引用核验/合同审查/AI 分析/AI 文书生成四件套。
@@ -3249,6 +3251,7 @@ dsh plugin --profile web add dshmarket
 - [chengzhi-c/dsh-wtq-pool](https://github.com/chengzhi-c/dsh-wtq-pool) — 把本机 WorkBuddy、Trae、Qoder 的桌面登录接进 DeepSeek Harness，每家一个 OpenAI 兼容的本地端点，带账号池、限流自动换号与设置面板。
 - [ChimeSky/dsh-effort-keeper](https://github.com/ChimeSky/dsh-effort-keeper) — 按 Provider + Model 记住你最后一次明确选择的推理档位，切回该模型时用同一次原生选择调用恢复，不替换 DSH 原生模型选择器。
 - [chimneyQ/dsh-model-rotator](https://github.com/chimneyQ/dsh-model-rotator) — 把本机已发现的 DSH 模型按实测连通性与速度排序，当前模型无输出失败时在同一回合内切到下一个候选。附带设置页：按渠道分组的模型列表、逐模型与逐渠道开关，以及额度耗尽后休息到次日的冷却策略。
+- [Chip-G0202/dsh-model-radar](https://github.com/Chip-G0202/dsh-model-radar) — 在 DeepSeek Harness 内跑四题 150 分模型智商评测（秦始皇 60 / 庞贝 45 / 鹈鹕 22.5 / 糖果 22.5）：每个「模型 × 推理档位」组合在独立子会话中逐题执行，秦始皇与鹈鹕按 rubric 由所选裁判模型打分，庞贝与糖果程序判定，批次保留分数、产物与费用；另按模型 × 推理档位从本地会话日志计算 0–1000 真实性能分（输出速度、首字延迟、思考速度、工具节奏、工具耗时、工具成功率、缓存命中 七个维度），附基线偏差与受控测速，并在侧边栏提供排行、性能、历史与设置四个视图。
 - [Chrono-rigger/dsh-model-rotation](https://github.com/Chrono-rigger/dsh-model-rotation) — DSH 模型选择器里的有序轮换：成员被限流或超时到上限就交给下一位，只超时过的成员进入一轮复测，最后由 DSH 平台模型兜底。附带可编辑链路的设置页与短时限流原地重试开关。
 - [Chruix/dsh-team-model](https://github.com/Chruix/dsh-team-model) — 为每个 Agent Teams 队友单独指定模型与推理强度，可在聊天工具行或设置页切换。
 - [cjc-github/dsh-model-provider-picker](https://github.com/cjc-github/dsh-model-provider-picker) — 把输入框的模型菜单改成「先选厂商、再选模型」的两级列表，当前模型位同时显示厂商名，点模型后再选推理等级；设置里可按厂商或单个模型把条目从选择器中隐藏。
@@ -10230,6 +10233,7 @@ dsh plugin --profile web add dshmarket
 - [a86582751/dsh-nexttavern](https://github.com/a86582751/dsh-nexttavern) — NextTavern 是面向 DeepSeek Harness 0.1.7-rc.2 Web 的长篇角色扮演插件，支持角色卡导入与创作、世界线、世界书、分层长期记忆、关键词／语义／混合检索、角色 Agent，以及角色卡或小说导出；支持 SillyTavern 角色卡导入，v0.2.9 修复分发与安装问题。
 - [A8Chann/dsh-pet-live2d#dsh-live2d-pet](https://github.com/A8Chann/dsh-pet-live2d/tree/main/dsh-live2d-pet) — DSH Web GUI 的 Live2D 桌宠：可拖动、跟随鼠标，跟着会话状态换动作、表情与装扮，右键呼出控制面板。
 - [Aik358/dsh-draw-gacha](https://github.com/Aik358/dsh-draw-gacha) — 在发送按钮旁拉动 3D 拉杆，把模型思维链的文本信号变成一场像素风抽卡演出。
+- [alanwang87/dsh-weread-moyu](https://github.com/alanwang87/dsh-weread-moyu) — 扫码登录微信读书，把当前书页正文以低对比度文字层垫在整个 DSH 界面背后，聊天区半透明浮在上面，支持整本离线缓存、看清当前页浮层和书架/章节/透明度/字号/滚动速度调节。
 - [Alterssss/dsh-bili-whale](https://github.com/Alterssss/dsh-bili-whale) — 一条按自己作息过日子的 B 站插件：宿主里每 60 秒一次心跳，在设定的作息窗口里随机挑一个时刻叫醒专用会话（今天不想看是按概率跳过），再交给自带的 38 个子命令——信息流、字幕、弹幕、评论、ffmpeg 抽帧、两本日记。每天最多发 N 条评论/动态并 @ 主人（默认 3，按配额账本计数，撞到限流或验证码就停手）。同时轮询评论回复、私信和直播间弹幕；除主人以外的回复先入队，等主人在设置页批准。设置 → 养鱼 写 ~/.dsh/bili-whale.config.json；cookie 单独在 ~/.bili-ai/credentials.json，只写不回显。HTTP 路由只认回环地址并过 DSH 信任栅栏。抽帧需要 Node 18+ 与 ffmpeg。
 - [AmeKrance/anan-thermal-monitor](https://github.com/AmeKrance/anan-thermal-monitor) — 紫白桌宠悬浮球，贴边停靠实时显示 CPU/内存/GPU/NVMe 温度与硬件信息。
 - [AnacondaKC/dsh-douyin](https://github.com/AnacondaKC/dsh-douyin) — 侧栏短视频：原生播放器、系列导航、精确历史回放。
@@ -10548,6 +10552,7 @@ dsh plugin --profile web add dshmarket
 - [zczgagat/token2rice](https://github.com/zczgagat/token2rice) — 每花掉 N token,就从 DSH 窗口顶端掉下一碗白米饭:米饭自由落体、落地弹跳,可以拖着扔出去;一个漩涡按钮(带音效)能把它们全部吸走,把某一碗拖上去松手则只吸那一碗。每碗额度、米饭大小、最多摆几碗、落地是否自动回正、米饭图都能在面板里调。
 - [ZelinW1/dsh-cosplay](https://github.com/ZelinW1/dsh-cosplay) — 让 DeepSeek Harness 的 Agent 扮演任何角色：全局扮演开关、酒馆 v2 角色卡（JSON 导入导出）、中立/角色化思考切换，内置 skill 支持一句话生成角色卡。
 - [zenglihunter/dsh-petdex-pet](https://github.com/zenglihunter/dsh-petdex-pet) — DSH Web 界面里的桌面宠物：右下角悬浮、可拖拽，随智能体活动切换精灵动画；设置页可管理大小、启停切换、图库搜索与一键安装宠物。内置 4 个全职猎人主角宠物包。
+- [zhang66633/dsh-sprite-studio](https://github.com/zhang66633/dsh-sprite-studio) — 画布式精灵图工作台：按网格、行扫描或 alpha 连通域切分，抠掉纯色背景，用 1066 件 LPC 素材库拼角色，生成无缝背景与 12 种程序化特效，最后导出 ZIP 或带 Aseprite 字段的图集。
 - [zhangmin510/dsh-heixia-pet#dsh-pet](https://github.com/zhangmin510/dsh-heixia-pet/tree/main/dsh-pet) — DeepSeek Harness 宠物黑侠，动作以黑侠的照片和视频为主，支持会话状态联动、聊天和余额展示。基于 PC2005-cloud/dsh-pet 的分支，沿用同一插件 id，会替代原版，请勿与原版同时安装。
 - [zhanshenovo/dsh-brake-pedal](https://github.com/zhanshenovo/dsh-brake-pedal) — 一个制动踏板自检彩蛋。DSH 网页界面上有一颗可拖动的胶囊，做六脚全力制动测试：支架在第二到第六脚之间伪随机地断裂，也可能整轮通过，随后弹出一份虚构通报。踏板力由会话事实推导并在界面上标为推导值，而这些事实取自真实会话日志。它从不拦截、延迟或接管真实的停止动作。
 - [zhanshenovo/dsh-bushaoxin](https://github.com/zhanshenovo/dsh-bushaoxin) — 一个对话文风层：谈到「便宜的路有坑」这类取舍时，把警告换成另一种说法——快而便宜的是隔壁黑心店，慢而可靠的老店在立规矩。附带改写引擎，可把任意文本拧成固定骨架的对白，有五个互相独立的旋钮（幕数、招牌台词密度、收尾走向、种子、预设档）；一个四档强度滑条；以及 /bushaoxin 命令，按会话的工具调用记录生成一份段子式的「烧心指数」病历。每篇改写末尾永远附一行真实技术结论，不可关闭。零依赖、无构建步骤，引擎是纯函数。
