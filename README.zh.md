@@ -182,6 +182,7 @@ dsh plugin --profile web add dshmarket
 - [1jincheng/dsh-first-paint](https://github.com/1jincheng/dsh-first-paint) — 首帧启动页：把品牌启动页作为 index 注入行写进 DSH 的首帧 HTML，桌面端窗口出现时直接是启动页，而不是白屏或加载态。检测到启动动画插件开始（`window.__DSH_STARTUP_RUNNING__`）后自动淡出让位；默认 6 秒兜底（可用 maxMs 调整），不会把应用卡在启动页里。普通 dsh.bundle 插件，不改宿主、不碰 app.asar。
 - [2002XiaoYu/dsh-session-diff](https://github.com/2002XiaoYu/dsh-session-diff) — 为 DSH Web 右侧栏提供按会话的 diff 视图：打开当前对话改动过的文件时原位渲染，按 git 风格显示新增/删除行底色、+/− 行标记、新旧双行号与语法高亮，头部带 +新增 −删除 计数、「仅看改动 / 整个文件」切换和「重新读取」按钮；另有一个配套标签页列出本次会话改动过的所有文件，点开即进入同一视图。当前对话没有改动过的文件仍使用自带文本查看器。
 - [2026heshao/dsh-draft-attachments](https://github.com/2026heshao/dsh-draft-attachments) — 按会话持久化输入框中尚未发送的附件：切页、切换会话乃至重启应用后回到该会话，草稿图片与文件会经官方 createDrafts/addAttachments 通道自动恢复；消息发出或手动移除后不会再出现。
+- [2189166478-bot/dsh-zh-cn](https://github.com/2189166478-bot/dsh-zh-cn) — 用离线词典和 DOM 翻译层把已安装 DSH 插件的英文界面换成中文，可在设置里随时开关。
 - [2370998716-jpg/dsh-turn-eta](https://github.com/2370998716-jpg/dsh-turn-eta) — 对话头部实时显示本轮耗时、token、速度与只减不增的倒计时预估；发送前在输入框上方预估产出 token、上下文大小、费用与耗时。
 - [2384418321/dsh-integration-settings](https://github.com/2384418321/dsh-integration-settings) — 在 DSH 设置里加两个可视化页面。MCP 管理以 JSON 为真理源整体重写 profile patch 受管区块（写入前做 YAML 校验与时间戳备份），并支持粘贴 mcpServers JSON、先列出将新增/将覆盖的条目再写入。思考解锁对每个 OpenAI 兼容网关探测它真正声明的思考档位并逐模型写回，手写的其他 YAML 片段逐字节保留；可用模型清单由独立按钮同步，先预览将新增/将移除，确认后与思考档位同批写入，也可绑定页面上的定时更新。
 - [2404376192/dsh-dian-du](https://github.com/2404376192/dsh-dian-du) — 点选回答中的段落或某一行代码，在右侧独立栏里向模型提问；左侧对话内容不被修改。
@@ -3539,6 +3540,7 @@ dsh plugin --profile web add dshmarket
 - [roclee2692/dsh-model-groups](https://github.com/roclee2692/dsh-model-groups) — DeepSeek Harness 的平台与厂家折叠模型选择器，保留 provider/model 路由与思考等级。
 - [Root-7-KHX/habit-hint](https://github.com/Root-7-KHX/habit-hint) — 《习惯提示小模型》：本地小模型每隔几轮读一次近期对话，生成「习惯 / 重点 / 提示语」并注入系统提示词，训练与模型数据都在本机。需要带 torch/transformers/peft 的 Python 虚拟环境，以及用户自备的 Qwen3-0.6B 基座与 LoRA 适配器（插件不打包）；默认只在开启伴侣记忆（companion-memory）的会话里工作，路径没配好时静默不注入。
 - [Sakana07X/dsh-plugin-team-subagent-control](https://github.com/Sakana07X/dsh-plugin-team-subagent-control) — 为 DeepSeek Desktop 的 Agent Teams 提供成员级模型与思考强度路由，并允许主理人释放（删除）团队成员的子智能体运行实例。
+- [sanmumu-325/dsh-qwenwork-models](https://github.com/sanmumu-325/dsh-qwenwork-models) — 把本机已登录的千问办公（QwenWork）桌面端对话模型接入 Harness 模型列表：多账号池、会话粘性与故障切换、凭证到期前自动续签、看护式保活、按模型独立开关/上下文窗口/输入类型，并展示账号状态与积分余额。非官方本地集成，复用使用者本人已登录客户端凭证，仅限本人账号自用。
 - [sanser9/dsh-opencode-connect](https://github.com/sanser9/dsh-opencode-connect) — 把本机已安装的 OpenCode CLI 免费模型接入 DSH：自动拉起或复用本地 opencode serve，读取实时模型目录并每五分钟刷新，再通过仅绑定回环、校验 Host 与 Origin 的 shim 把会话事件流转换为 OpenAI 兼容 SSE。
 - [Saretheya/dsh-lantern](https://github.com/Saretheya/dsh-lantern) — 把本机 DeepSeek Harness 已配置的全部模型，以 OpenAI / Anthropic 兼容接口开放给同一局域网；自带 API Key、按 Key 限流、熔断、模型过滤与用量报告。
 - [Scorp1o117/dsh-reasoning-options](https://github.com/Scorp1o117/dsh-reasoning-options) — 通过 DSH 设置为自定义 pi-ai 模型补充缺失的推理强度声明，启用原生强度选择器，并自动处理后续添加的模型。
@@ -8533,6 +8535,7 @@ dsh plugin --profile web add dshmarket
 - [zengxiaolou/dsh-github-link](https://github.com/zengxiaolou/dsh-github-link) — 把对话里的 GitHub / GitLab / Gitee 链接变成带缓存元数据的悬停卡片，点击在 DSH 右侧栏浏览器中打开；裸 URL 与 GenUI 块都覆盖，且不修改 GenUI 本体。
 - [zengxiaolou/dsh-pr-panel](https://github.com/zengxiaolou/dsh-pr-panel) — fork 自 ItQianChen/dsh-github-flow 并裁剪：本会话 PR 的浮窗与右列审阅面板，显示 CI 状态、评审意见与合并状态；同时注册 github_* 工具（含合并/评审 PR、密钥、原始 API），勿与原版同装。
 - [Zeppeli777/idea-git](https://github.com/Zeppeli777/idea-git) — IDEA 风格的 Git 工作台：提交图（泳道与引用标签）、日志筛选、提交详情、并排与统一差异、按 hunk 暂存、零上下文的细粒度模式、本地更改（含修补与 sign-off）、跟随重命名的文件历史、逐行注解、Stash、分支操作、比较、标签、交互式变基与冲突解决。按活跃会话盖上 Assisted-by trailer 记录提交由哪个模型产生，并把已有的 trailer 渲染成标签，让 AI 参与的历史可追溯。
+- [Zhang-Eli/dsh-github-trending-masonry](https://github.com/Zhang-Eli/dsh-github-trending-masonry) — 在 DSH 侧栏浏览 GitHub Trending：日/周/月三榜加分类标签，由模型用界面语言撰写项目简介，一键加星可同步到 GitHub 账号或存入本地收藏。
 - [zhitiaojun/dsh-auto-git](https://github.com/zhitiaojun/dsh-auto-git) — 在 DSH 每次注册新工作区时自动 git init 并补一个空提交；已在工作树内的目录会被跳过。
 - [zhu1090093659/dsh-web#packages/dsh-git-graph](https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-git-graph) — 输入框上方提供 Git 分支选择器，并把分支泳道与提交历史画成图谱，沿着时间线找到任意变更。作者已将其退役并改用官方 workspace-changes 插件；已发布的 npm 包仍可安装，但不再开发。
 - [Zhucy123/dsh-update](https://github.com/Zhucy123/dsh-update) — 一键更新本地 DeepSeek Harness：侧边栏按钮对比版本、拉取重建并自动重启，还可选择回退到任一历史版本，全程实时进度。
