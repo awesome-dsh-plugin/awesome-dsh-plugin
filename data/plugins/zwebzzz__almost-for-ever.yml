@@ -1,0 +1,6 @@
+url: https://github.com/zwebzzz/almost-for-ever
+name: zwebzzz/almost-for-ever
+category: memory
+description:
+  en: 'Derives the index from your Markdown memory files on every turn instead of keeping a hand-written index table, so renames, splits and deletions never leave a stale entry. Retrieval ranks by library tags, section tags, title tokens and body text, then injects the matching line ranges rather than whole files. Writing is model-proposed and user-confirmed through a sticky note; entries are appended after the target section''s format is detected. Ships a structure panel showing each library and section with line ranges and token estimates, a starter template for an empty memory directory, and optional appearance controls.'
+  zh: '每轮从你的 Markdown 记忆文件现场派生索引，不维护手写索引表，所以改名、拆库、删库都不会留下指向虚空的旧条目。检索按库标签、章节标签、标题词与正文多维排序，注入命中的行号区间而不是整篇文件。写入由模型提议、你在便利贴上确认，落盘前先探测目标章节的格式再追加。自带结构面板（每个库与章节的行号区间和 token 估算）、空记忆目录的一键起手模板，以及可选的外观调整。'
