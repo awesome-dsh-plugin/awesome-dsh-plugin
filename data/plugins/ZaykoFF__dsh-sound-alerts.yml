@@ -4,3 +4,4 @@ category: notify
 icon: https://raw.githubusercontent.com/ZaykoFF/dsh-sound-alerts/main/assets/icon-256.png
 description:
   en: 'Sound cues played by the host operating system, not the browser: three bundled WAV files fire through the machine''s own audio (SoundPlayer on Windows, afplay on macOS, paplay/aplay on Linux) when an agent''s turn completes, when the context is compacted and when the agent is waiting for your answer; subagent turns can be included, cues fired closer than a configurable interval are skipped, and each bundled sound can be replaced with your own file via plugin config.'
+  zh: '由宿主操作系统（而非浏览器）播放的提示音：智能体一轮结束、上下文被压缩、以及智能体在等你回答时，通过本机自己的音频播放随包的三个 WAV（Windows 用 SoundPlayer，macOS 用 afplay，Linux 用 paplay/aplay）；可包含子代理轮次，间隔小于可配置时长的提示会被跳过，每个随包音效都可在插件配置里换成你自己的文件。'

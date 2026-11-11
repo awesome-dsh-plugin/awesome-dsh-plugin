@@ -2,5 +2,5 @@ url: https://github.com/atlasmarkz/dsh-quota-meter
 name: atlasmarkz/dsh-quota-meter
 category: usage
 description:
-  en: 'Plan usage and running cost in the composer dock: DeepSeek wallet balance, OpenCode Go 5h/weekly/monthly windows with reset times, and a per-session cost estimate from DeepSeek list prices — sources are config-driven, plain JavaScript, no build step.'
-  zh: '输入框下方显示余额与订阅用量：DeepSeek 钱包余额、OpenCode Go 的 5 小时 / 周 / 月窗口及重置时间，并按 DeepSeek 官方价格估算本次会话花费；数据来源可配置扩展，纯 JavaScript 无需构建。'
+  en: 'Plan usage and running cost in the composer dock: DeepSeek wallet balance, OpenCode Go 5h/weekly/monthly windows with reset times, and a per-session cost estimate from DeepSeek list prices — sources are config-driven, plain JavaScript, no build step. API keys are looked up in the plugin config, then the environment (DEEPSEEK_API_KEY, OPENCODE_GO_API_KEY), then OpenCode''s auth.json (OpenCode Go only), then the DSH credential service; each key is sent only to its own provider (api.deepseek.com, opencode.ai), and the figures are polled periodically.'
+  zh: '输入框下方显示余额与订阅用量：DeepSeek 钱包余额、OpenCode Go 的 5 小时 / 周 / 月窗口及重置时间，并按 DeepSeek 官方价格估算本次会话花费；数据来源可配置扩展，纯 JavaScript 无需构建。API 密钥依次从插件配置、环境变量（DEEPSEEK_API_KEY、OPENCODE_GO_API_KEY）、OpenCode 的 auth.json（仅 OpenCode Go）、DSH 凭据服务里查找；每个密钥只发给对应的服务商（api.deepseek.com、opencode.ai），数据会定时轮询。'

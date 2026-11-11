@@ -2,7 +2,7 @@ url: https://github.com/light-cheng/DSH-Translate
 name: light-cheng/DSH-Translate
 category: ui
 description:
-  en: 'Bilingual reasoning, selection translation, composer polish, an offline English–Chinese dictionary with IPA, pronunciation and a vocabulary notebook for DeepSeek Harness.'
-  zh: '为 DeepSeek Harness 提供双语推理、划词翻译、输入框润色，以及带音标、发音和生词本的离线英汉词典。'
+  en: 'Bilingual reasoning, selection translation, composer polish, an offline English–Chinese dictionary with IPA, pronunciation and a vocabulary notebook for DeepSeek Harness. Instant selection translation is on by default and, on the cloud engine, sends the selected text to the model; pronunciation audio is fetched from Youdao when clicked or hovered; the bundled dictionary data (ECDICT and ipa-dict) is GPL-3.0.'
+  zh: '为 DeepSeek Harness 提供双语推理、划词翻译、输入框润色，以及带音标、发音和生词本的离线英汉词典。划词即时翻译默认开启，使用云端引擎时会把选中的文字发给模型；发音音频在点击或悬停时从有道获取；随包词典数据（ECDICT 与 ipa-dict）为 GPL-3.0。'
 icon: https://raw.githubusercontent.com/light-cheng/DSH-Translate/main/assets/icon.png
 tarball: https://github.com/light-cheng/DSH-Translate/releases/download/v0.1.3/dsh-translate-0.1.3.tgz
