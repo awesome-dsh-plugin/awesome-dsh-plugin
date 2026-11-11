@@ -1,0 +1,11 @@
+# Copy this file into a PR against https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+# as data/plugins/<owner>__dsh-session-trash.yml  (filename: owner__repo.yml)
+# Replace "zhaoqianguo" with your GitHub username before submitting.
+url: https://github.com/zhaoqianguo/dsh-session-trash
+name: zhaoqianguo/dsh-session-trash
+category: session
+description:
+  en: 'Adds a recoverable trash bin for DeepSeek Harness sessions: right-click delete, restore, permanent purge, configurable retention with automatic expiry, batch restore and purge, capacity stats for bin / archived / active sessions, archive takeover that can unarchive or move archived sessions into the bin, and 10 agent tools.'
+  zh: '给 DSH 加上可恢复的会话回收站：右键删除、恢复、彻底删除、按保留天数自动到期清理、批量恢复与批量彻底删除、回收站/归档/活动会话的容量统计、接管归档会话（取消归档或移入回收站），并附带 10 个 agent 工具。'
+# optional: GitHub-hosted raster image (<=180px square). Falls back to your avatar.
+# icon: https://raw.githubusercontent.com/zhaoqianguo/dsh-session-trash/main/icon.png
