@@ -7870,6 +7870,7 @@ dsh plugin --profile web add dshmarket
 - [Ceelog/dsh-plugins#dsh-plugin-scheduled-tasks](https://github.com/Ceelog/dsh-plugins/tree/main/src/plugins/dsh-plugin-scheduled-tasks) — 按项目调度提示词，在全新的无头 Agent 会话中执行，支持单次、固定间隔和 cron 计划，并持久化运行历史。
 - [ChangJiang326/dsh-codex-bridge](https://github.com/ChangJiang326/dsh-codex-bridge) — 在指定 Harness 会话中接入本机已安装并登录的 Codex CLI，提供方案、代码审查和可选图片识别；CLI 需另行安装并授权。已在 Windows 实机验证，macOS 与 Linux 走手动安装 CLI 的方式、尚未实机验收。
 - [changlianxiya-139/dsh-ambiguity-handling](https://github.com/changlianxiya-139/dsh-ambiguity-handling) — 向 dsh system prompt 追加歧义处理规则，让 agent 在猜测前先列出 A/B/C/D 选项请求澄清。
+- [Chenpi-Sakura/harness-supervisor#dsh-harness-supervisor](https://github.com/Chenpi-Sakura/harness-supervisor/tree/main/packages/dsh-plugin) — 通过按会话限定的 MCP，将 DSH 任务委派给独立的 Pi、Qoder 和 MiniMax Code Worker，支持持续会话，并提供查看结果、轨迹、审批和取消任务的共用 WebUI。
 - [ChenXu233/dsh-agent-teams](https://github.com/ChenXu233/dsh-agent-teams) — DeepSeek Harness 的 AgentTeams 多智能体团队协作插件，NanmiCoder/dsh-agent-teams 的独立设计分支；不要与上游同装：两者注册同一个 `agent-teams` 行。提供队长与成员、带依赖的任务与消息传递，全部由自然语言驱动，Web 界面提供树状实时监视。
 - [Chlyz621/dsh-unstuck](https://github.com/Chlyz621/dsh-unstuck) — 让 DeepSeek Harness 的回合自己接上：轮次异常结束时补一条继续；工具调用被中转站当成正文吐出、回合却仍记为正常结束时，补一条带指向性的继续，让它重新发起工具调用；模型请求不再出流时掐掉当前轮重来。卡在审批或提问只记录并提醒，不代为回答。
 - [ChongCyrus/Vibe-Mathematics](https://github.com/ChongCyrus/Vibe-Mathematics) — 为 DSH 安装四个多代理数学研究预设：v2（概率驱动流水线 + 多验证器辩论）、v3（论文式 Markdown 知识库 + 规划代理 + 可复用方法库）、v4（常驻自组织成员，靠留言与开会决定一切）、v5（研究所：院士拆解并分派任务、有表决权的研究员、临时工、群聊与 CAS 任务板）；四套均支持断点续跑、人工干预，以及可调档的 Lean 形式化验证（off/encourage/require，一旦跑通，表决转为对 Lean 陈述的忠实性核对）。
@@ -9287,6 +9288,7 @@ dsh plugin --profile web add dshmarket
 - [Lostforest7/dsh-apirevise](https://github.com/Lostforest7/dsh-apirevise) — 接口回归验收台：登记端点后先快照响应基线，模型改完后端一键重跑，把结构化字段级差异（状态码、字段增删、数值新旧值与差值）与源码 diff 并排展示，逐项验收后再导出 Markdown / 单文件 HTML 报告。
 - [louisyeaaah/dsh-reload](https://github.com/louisyeaaah/dsh-reload) — 不用重启 DSH 就能重载刚装好的插件或技能。reload_plugin 清掉该插件自己的模块缓存、卸载旧实例再重新 import，新代码报错时自动换回旧模块；reload_skill 强制重新发现技能目录。工具与 /reload-plugin、/reload-skill 两个命令都有。
 - [lpeixin/dsh-project-compass](https://github.com/lpeixin/dsh-project-compass) — 项目罗盘 — 静态扫描代码库并构建依赖图，生成带 path:line 证据引用的架构、模块、调用链与上手指南，并基于本地检索索引提供项目级问答（默认不联网、不调用 LLM，LLM 叙事为可选项，需手动开启）。
+- [lpeixin/dsh-qualityforge](https://github.com/lpeixin/dsh-qualityforge) — QualityForge 是一个面向企业级项目的 DeepSeek Harness QA 插件，自动执行系统性端到端测试，并通过 P0–P3 严重度分级、可勾选的测试报告与质量门禁，帮助开发者快速识别问题并确定修复优先级。
 - [lsz-asd/dsh-chameleon#bundle](https://github.com/lsz-asd/dsh-chameleon/tree/main/bundle) — 可自修改的 DeepSeek Harness 桌面工作台：完整 dsh web 副本 + 编辑模式，agent 在对话中实时修改工作台（补丁层、插件、UI）并热更新生效。
 - [lucky01222/dsh-workbench-agent-studio](https://github.com/lucky01222/dsh-workbench-agent-studio) — DSH Web Agent 工作室：配置模型、提示词、按插件绑定的工具与 Skills；支持编辑工具结果的试运行和运行历史，保留会话能力快照，导出独立 Preset，并通过引导式创建预设生成 Agent 草稿。
 - [lucky8197/dsh-doc-guard](https://github.com/lucky8197/dsh-doc-guard) — 文档与代码一致性守护：版本号/更新记录表/结构树/模块清单/测试计数/交叉引用漂移审计与修复建议，全程只读。
