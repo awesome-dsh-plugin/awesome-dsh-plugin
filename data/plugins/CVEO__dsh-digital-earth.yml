@@ -7,8 +7,8 @@ url: https://github.com/CVEO/dsh-digital-earth
 name: CVEO/dsh-digital-earth
 category: ui
 description:
-  en: 'Digital Earth: interactive 3D earth panel with 3D Tiles and 3DGS layers, plus Agent tools for scene editing, GEOJSON annotation, measurement, spatial analysis and shader presets.'
-  zh: '数字地球：在对话同屏的三维地球上叠加 3D Tiles / 3DGS 图层，并提供场景读写、GEOJSON 标注、量测、空间分析与视觉特效等 Agent 工具。'
+  en: 'Digital Earth: opens a 3D globe beside the chat where you can load city models or drone-scanned scenes, measure distances, take screenshots, and run flood or sunlight analysis — or just ask the AI to do it (3D Tiles / 3DGS).'
+  zh: '数字地球：在对话旁边打开三维地球，加载城市模型或实景三维数据就能浏览；量距离、截图、做淹没和日照分析，也可以一句话让 AI 代劳（支持 3D Tiles / 3DGS）。'
 
 icon: https://raw.githubusercontent.com/CVEO/dsh-digital-earth/main/assets/icon.png
 
