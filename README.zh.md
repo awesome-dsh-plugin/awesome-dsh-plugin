@@ -505,6 +505,7 @@ dsh plugin --profile web add dshmarket
 - [chumoe/dsh-file-manager](https://github.com/chumoe/dsh-file-manager) — 把侧边栏「工作区文件」面板换成文件管理器：加入对话时生成与输入框 @ 选文件一致的 chip，语法高亮下可双击选词、三击选行，支持压缩解压、上传下载，并可跳转到机器上任意目录。
 - [chzisnull/dsh-file-finder](https://github.com/chzisnull/dsh-file-finder) — 工作区文件查找面板：按文件名或内容搜索，用 DSH 原生右侧栏预览打开结果，需要时在内置编辑器里修改文本，并在保存前检查版本冲突。
 - [CIBUDAYI3906/dsh-prompt-trove](https://github.com/CIBUDAYI3906/dsh-prompt-trove) — 输入框常用提示词库：全局与项目两层的 Markdown 提示词，点一下或 @ 触发追加进草稿、不覆盖已写内容；全局库装好即用，项目库需在 profile 的 cordis.patch.yml 里给该插件配 config.root 后才会出现。
+- [CIBUDAYI3906/dsh-workspace-nest](https://github.com/CIBUDAYI3906/dsh-workspace-nest) — 侧边栏工作区多级树：任意一级都能新建子工作区与会话，会话可置顶到所属的最近一级文件夹，刷新不丢。
 - [Cieux/dsh-zoom-scale](https://github.com/Cieux/dsh-zoom-scale) — DSH 整体界面缩放（75%–200%，5% 一档）：设置行、会话头部步进器、Ctrl/⌘+滚轮三种入口；内置 shim 换算 rect、视口单位、媒体查询与指针坐标，使 position: fixed 浮层始终贴住触发元素。
 - [Cillivian/wecom-file-dsh](https://github.com/Cillivian/wecom-file-dsh) — 在 DeepSeek Harness 输入条添加企业微信微盘选择器：可拖动的浮动窗口提供列表、分栏、画廊三种查看方式，支持搜索、排序与多选，把选中的文件 / 文档 / 文件夹写成官方 `@` 引用 chip。数据来自本机 wecom-cli，缺少 CLI 时回退到官方 doc.weixin.qq.com 选择器；附带 wecom-wedrive-ref 技能，按 id 前缀把 chip 路由到对应的 wecomcli-* 文档技能。
 - [cinewave0/cinewave0-dsh-quick-panel](https://github.com/cinewave0/cinewave0-dsh-quick-panel) — Windows 下的 DSH Desktop 独立伴生窗：待办、提醒、实时会话消息、审批接管和快速输入；独立窗复用 %USERPROFILE%\.dsh\electron\electron.exe（通常由 dsh-pet 下载），缺失时打不开。
@@ -929,6 +930,7 @@ dsh plugin --profile web add dshmarket
 - [IDKURLOVE/dsh-reset-button](https://github.com/IDKURLOVE/dsh-reset-button) — 在对话框工具栏「完全权限」右侧加一个「重启」按钮，点击即重启 DSH，装完插件不用再手动关掉重开。
 - [idoall/dsh-quick-replies](https://github.com/idoall/dsh-quick-replies) — 在会话输入区上方提供可管理的一点即发文本 chip；空闲时 queue、运行中 steer，不改写草稿。
 - [idoall/dsh-update-status](https://github.com/idoall/dsh-update-status) — 只读的 DeepSeek Harness Web 侧栏版本芯片，显示当前运行版本、npm latest/next/alpha 通道、兼容性标识，以及仅复制的升级命令。
+- [ifengz/dsh-compactUI](https://github.com/ifengz/dsh-compactUI) — 把 DSH 侧栏改成 Codex 风格紧凑布局：顶部一行放 Logo、内联会话搜索和菜单按钮；插件、市场、自动化入口收进浮层，点 + 就加回侧栏；置顶会话单独成块，项目折叠也不丢。纯前端实现、零依赖。
 - [igdwei/dsh-store-ops-expert](https://github.com/igdwei/dsh-store-ops-expert) — 餐饮门店经营分析专家：对账体检、找差距、量价拆解、算让利效率，并交付一个数据本地的单文件经营看板。
 - [iimaguest/dsh-contradictions-indicator](https://github.com/iimaguest/dsh-contradictions-indicator) — 对当前 DSH 会话做并行矛盾分析，在会话标题栏显示 0–100 连贯性徽章与评注，支持手动触发和按轮数的自动分析（默认开启，可按会话或全局调整）。
 - [ikun1031/dsh-effort-dial-plus](https://github.com/ikun1031/dsh-effort-dial-plus) — 合并 dsh-effort-dial 的卡片结构与 reasoning-slider 的渐变/粒子效果：输入框里的 Codex 风格推理强度卡片，一个控件同时管理模型与档位，档位逐级变色，最高档显示额度提示并切换为蓝紫渐变与流动粒子。它接管输入框模型槽位，不能与 dsh-effort-dial、reasoning-slider 同时启用。
@@ -1889,6 +1891,7 @@ dsh plugin --profile web add dshmarket
 - [wilsonchengassistant/dsh-mobile-sidebar](https://github.com/wilsonchengassistant/dsh-mobile-sidebar) — 視窗闊度細過 1024px 時，側欄完全移出 shell frame，改由頁首按鈕以浮動抽屜方式打開，令對話可以用盡整個螢幕闊度；闊螢幕版面唔受影響。
 - [wilsonchengassistant/dsh-quick-workspace](https://github.com/wilsonchengassistant/dsh-quick-workspace) — 將「新增工作區」流程中喺主機彈出嘅資料夾選擇器，改成輸入名稱嘅對話框，令遠端瀏覽器可以直接建立並開啟工作區。
 - [wilsonchengassistant/dsh-zh-hant](https://github.com/wilsonchengassistant/dsh-zh-hant) — 為網頁介面加入繁體中文（zh-Hant）語言，經語言服務註冊，每個 namespace 各有一份字典，並可在「設定 → 一般 → 語言」揀選。
+- [winditer/dsh-intertidal](https://github.com/winditer/dsh-intertidal) — 给 DSH 加一个按间隔浮现的整屏海：默认每 120 分钟浮现 3 分钟，到点自己淡出。时段、天色与月相由宿主按城市表算出的太阳位置决定，所以光和真实的时间地点对得上。海面可以是 canvas 程序化绘制（按透视随机分布的水面斑块，近处大、远处细碎，带碎光、近岸白浪与白天掠过的海鸥；夜里有一轮月亮），也可以是自选目录里的图片/视频，或从网页链接抓取一次后缓存的素材，再按此刻天光着色。包含静默时段、输入中推迟、今天跳过、可拖拽的右下角小窗与可选的合成海浪声。不采集数据；唯一的网络请求是你自己填的链接。
 - [winditer/dsh-paste-spill](https://github.com/winditer/dsh-paste-spill) — 把 DSH 输入框里每次 4–50 KB 的粘贴折叠成独立的一枚 chip（可单独展开或删除），50 KB 及以上的粘贴转成真附件。声明 DSH >=0.1.7-rc.2 <0.3.0-0，因此在 0.2 版本线上保持可见。
 - [winditer/dsh-prompt-optimizer](https://github.com/winditer/dsh-prompt-optimizer) — 在输入框按 ✨ 或 Alt+O 一键把草稿润色成更清晰、更结构化的 prompt；默认零配置复用当前会话模型（SSE 真流式、推理过程先出），也可自配任意 OpenAI 兼容端点。
 - [winditer/dsh-recent-tasks](https://github.com/winditer/dsh-recent-tasks) — DSH 侧边栏里常驻末位、可折叠的「最近任务」工作区分组：侧边栏入口与 Mod+Alt+N / Mod+Shift+N 快捷键在专用目录里开新对话，对话因此归入这个分组，而不是「未分组」。该分组是真正的工作区记录，而非插件画出来的仿制品，折叠、改名、搜索与拖拽排序都正常可用；目录、分组名、常驻末尾与自动重建都是实时设置。
