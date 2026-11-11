@@ -700,7 +700,7 @@ dsh plugin --profile web add dshmarket
 - [fengb3/dsh-session-icons](https://github.com/fengb3/dsh-session-icons) — 侧边栏会话标题图标：标题生成时用同一路由的辅助模型调用画一枚 24×24 单色 SVG 隐喻图标，显示在每行标题左侧，带磁盘缓存。
 - [fengMax1997/dsh-line-select](https://github.com/fengMax1997/dsh-line-select) — 行选区：浏览工作区文件、带行号预览代码、可视化选中行范围，一键把 `@path:start-end` 引用写入输入框，agent 发送时自动收到所选行原文，精准修改指定行。
 - [fengzhaoy/dsh-web-ide](https://github.com/fengzhaoy/dsh-web-ide) — dsh Web 客户端里的 IDE 标签页：Dark Modern 主题的 Monaco 编辑器，配文件树、Git 源代码管理（暂存/提交/推送）、xterm 集成终端与 ripgrep 全工作区搜索，作为会话视图标签打开。
-- [ferrisching/dsh-prompt-predict](https://github.com/ferrisching/dsh-prompt-predict) — 助手回复结束后预测用户的下一句话，以灰色 ghost text 浮在输入框里；Tab 整条采纳、Alt+→ 逐段采纳、↻ 换一条、Esc 忽略。
+- [ferrisching/dsh-prompt-predict](https://github.com/ferrisching/dsh-prompt-predict) — 助手回复结束后预测用户的下一句话，以灰色 ghost text 浮在输入框里；Tab 采纳、↓ 生成下一条、↑ 回到上一条、Esc 忽略。
 - [fewoot/dsh-whale-particles](https://github.com/fewoot/dsh-whale-particles) — 给 DSH Web 加一层点阵背景:点阵可组成鲸鱼剪影,或导入透明 PNG 按 alpha 取主体;每颗粒子各自持有低频外力,手动模式下跟随光标扰动,自动屏保模式则用 360° 任意方向的扫波与全屏呼吸带动整幅图案;鼠标/自动与鲸鱼/照片在参数面板里切换,入口在 设置 → 插件。
 - [FFFFFFcn/dsh-intent-translator](https://github.com/FFFFFFcn/dsh-intent-translator) — 在输入框工具行增加「译」按钮：把口语草稿改写成结构清晰、术语准确的专业提示词，并把其中若干口语表达对照成专业术语、各附一句解释；「只查术语」模式只返回专业说法，不改写草稿。
 - [FideFeiPlane/dsh-auto-maximize](https://github.com/FideFeiPlane/dsh-auto-maximize) — DSH 桌面版启动时自动最大化主窗口，等价于手动点一次最大化按钮。跨平台（Windows/macOS/Linux），尽力而为，host-only 插件。
@@ -4996,7 +4996,7 @@ dsh plugin --profile web add dshmarket
 - [stas130286-blip/dsh-brainagent](https://github.com/stas130286-blip/dsh-brainagent) — 受大脑启发的认知插件:情景、语义、程序与情绪记忆,带强化学习信号;目标栈支持时间触发器,好奇心驱动的自主网络研究与主动提议。
 - [summerscar/dsh-plugins#dsh-mnemon-sync](https://github.com/summerscar/dsh-plugins/tree/main/plugins/dsh-mnemon-sync) — 给 dsh-mnemon 做备份与恢复：它的三类记忆组件（记忆空间、项目档案、运行时记忆）可任选，打包到 S3 兼容存储或 WebDAV，之后可浏览备份列表并只恢复选中的部分。SQLite 库经 node:sqlite 的 backup() 在线复制，写入方同时写也不会撕开副本；每个文件带 SHA-256，上传前校验一次、恢复前再校验一次；恢复默认只做预览，写回数据库前会先删掉残留的 -wal/-shm。备份文件名是 mnemon-sync-<设备名>-<时间戳>.zip，多台机器备份到同一目录也能分辨来源。定时器只有一个，间隔从每小时到每周；凭据存在 DSH profile 之外的 0600 文件里；除 Node 外没有其他依赖。
 - [suomir1995/dsh-notes](https://github.com/suomir1995/dsh-notes) — 把笔记存成你选定根目录下按分组组织的本地 Markdown 文件，带侧栏页面，并把 AGENTS 等规则 md 作为写作上下文，另有六个 agent 工具。
-- [super3ben/agent-feedback-loop#agent-feedback-loop-dsh](https://github.com/super3ben/agent-feedback-loop/tree/main/templates/dsh-plugin) — 把 dsh 的每一轮 prompt 送入本地 agent-feedback-loop 反馈记忆管线——捕获用户不满、离线评审沉淀为反思，并把编译好的复发规则上下文附着回当前轮次，从不阻塞 prompt。需要先安装 agent-feedback-loop 运行时；安装后执行 agent-feedback-loop install 会自动接线已有的 dsh profile。
+- [super3ben/agent-feedback-loop#agent-feedback-loop-dsh](https://github.com/super3ben/agent-feedback-loop/tree/main/templates/dsh-plugin) — 把 dsh 的每一轮 prompt 送入本地 agent-feedback-loop 反馈记忆管线——捕获用户不满、离线评审沉淀为反思，并把编译好的复发规则上下文附着回当前轮次，从不阻塞 prompt。教训被编译成分层规则区块（每轮点名全部家族、按需展开指令），同类反思会合并，避免同一课教训被当作多份重复读取；索引事实按「现行 → 可能已过期 → 休眠」降级，而不是被永久信任。需要先安装 agent-feedback-loop 运行时；安装后执行 agent-feedback-loop install 会自动接线已有的 dsh profile。
 - [Swd146296/dsh-memos-bridge](https://github.com/Swd146296/dsh-memos-bridge) — 通过 MCP 桥接 MemOS 记忆服务：agent 获得 mcp__memos__* 记忆写入/检索/更新/删除、多 Cube 共享与记忆调度工具。
 - [swenbo1-web/agents-learning](https://github.com/swenbo1-web/agents-learning) — 项目级 SQLite 记忆，支持渐进检索、有界上下文、聊天框按键与可视化审批。安装仓库根 DSH Bundle 后，用本机 Python 3.10+ 执行 /learning-init 加项目绝对路径完成初始化。
 - [sxwer001/dsh-context-control](https://github.com/sxwer001/dsh-context-control) — 上下文用量环，支持按字符自定义自动压缩阈值、手动压缩、保留用户要求和回查原文，适配 DSH 0.2.0-rc.2。
@@ -5441,6 +5441,7 @@ dsh plugin --profile web add dshmarket
 - [feng-yifan/dsh-plugins#dsh-enter-plan-mode](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-enter-plan-mode) — 进入计划模式工具：给模型一个可调用的 `dsh_enter_plan_mode_enter_plan_mode`，把当前会话切进计划模式先做非破坏性探索，再配合内置的 `exit_plan_mode` 提交方案评审。无设置项。
 - [fengxiforcy/dsh-geo-toolkit](https://github.com/fengxiforcy/dsh-geo-toolkit) — 面向规划/测绘的 GIS/CAD 分析工具：读 DXF、DWG 转 DXF、按图层/文字查实体、出带版式的分析图（SVG/PNG/JPG/PDF，PSD 仅 Windows x64），并对 SHP/GeoJSON/KML 做按类汇总、缓冲与叠加——解析用纯 JS，不依赖 GDAL。
 - [fenshal/dsh-migrator](https://github.com/fenshal/dsh-migrator) — 列出当前 DSH 配置里装过的全部插件，勾选后导出成「迁移单」文本，或直接打包成自包含 zip（本地插件源码 + 恢复脚本），新电脑上跑一次脚本即可还原。恢复脚本是 PowerShell；还原后需重启 DSH，插件页报待安装时还需 pnpm install。
+- [ferrisching/dsh-reakit](https://github.com/ferrisching/dsh-reakit) — 把 REA 逆向分析工具集接入 DSH，并托管其 Node 与 REA 运行时：提供全局工具开关、输入框状态指示点和就地运行时升级。
 - [fffgfffff/cike-taskboard](https://github.com/fffgfffff/cike-taskboard) — DSH 本地任务排程：今天的自动任务从当前时间开始排，长任务自动绕午休分段，实时高亮当前任务；任务开始和下个任务前弹窗提醒；支持未来 7 天日历与可导出/导入的虚拟时间轴。
 - [fire-disposal/dsh-mojibake-interceptor](https://github.com/fire-disposal/dsh-mojibake-interceptor) — DSH 乱码拦截器 bundle：写入前特征值/编码回环检测乱码并复查放行（原样重试即通过），pwsh 写入编码执行前审计（ANSI/GBK/UTF-16/默认编码），Windows 与中文场景优先。
 - [fireworksss/LeisureTimeQueue](https://github.com/fireworksss/LeisureTimeQueue) — LeisureTimeQueue 是一个基于 DeepSeek Harness 的本地闲时任务队列插件。
