@@ -1614,6 +1614,7 @@ dsh plugin --profile web add dshmarket
 - [Sama05/dsh-download-progress](https://github.com/Sama05/dsh-download-progress) — 在浮层或输入框上方的胶囊里显示下载、安装、抓取、搜索的进度，并列出没有进度可画的后台任务。
 - [samsam560/chat-share-card](https://github.com/samsam560/chat-share-card) — 把任意一条 AI 回答一键变成精美的 PNG 分享卡片：点回复下面的按钮，回答会被重新排版画到画布上（8 套渐变预设、深浅主题、三种字体、宽度 720/880/1080、圆角、内边距、字号、行高、1×–3× 导出倍率、代码折行/高亮/行号、自定义标题与页脚）。纯本地渲染，不联网、不上传、无第三方依赖。
 - [samsam560/dog-kjdh](https://github.com/samsam560/dog-kjdh) — DeepSeek Harness 的开场 / 退场动画：5 套纯代码自绘样式（鲸鱼光扫 / 极简脉冲 / 星尘汇聚 / 打字机 / 雷达环），也可以换成你自己的视频或动图；设置页可调速度、粒子数、主色、文案、静音与画面适配。退场动画需先运行 node tools/patch-asar.mjs --apply 给桌面壳打补丁（可回滚）；不打补丁时关闭只隐藏窗口。
+- [SanKuanYoYi/dsh-ui-font-plus](https://github.com/SanKuanYoYi/dsh-ui-font-plus) — 为 DSH 字体设置面板增加代码字号独立轴，并为每个插件提供单独的字号滑杆。
 - [sanlisanxun/dsh-plugin-nickname](https://github.com/sanlisanxun/dsh-plugin-nickname) — 给 dsh 插件列表里的插件自定义中文备注名，直接显示在原生设置页。
 - [Sanqi-normal/dsh-model-picker](https://github.com/Sanqi-normal/dsh-model-picker) — dsh web 输入栏模型选择面板：左侧提供商栏 + 右侧模型列表，两侧独立滚动，支持跨提供商搜索。
 - [sanqiPanax/dsh-sticker-board](https://github.com/sanqiPanax/dsh-sticker-board) — 输入框上方的冰箱贴纸栏：把常用任务（科技新闻、GitHub 推荐等）做成贴纸，点击即向当前会话发送预置 prompt 并执行，按长期/短期分组。
@@ -7998,7 +7999,7 @@ dsh plugin --profile web add dshmarket
 - [Guard42/dsh-humanize](https://github.com/Guard42/dsh-humanize) — 把多阶段目标编排为可恢复 Flow 的 agent 预设：阶段带裁判、SHA-256 流锁身份、HMAC 终局评审门禁、事件溯源运行日志；附 15 个工具。
 - [gulagala001/dsh-workflow](https://github.com/gulagala001/dsh-workflow) — 可恢复的 JavaScript 工作流，支持原生子任务、共享预算与 worktree 隔离。
 - [gulagala001/oh-my-agents-above-all](https://github.com/gulagala001/oh-my-agents-above-all) — Codex、Grok Build、Cursor、Pi、ZCode 预设，提供原生会话、代码审阅、文档转换和工作流控制。
-- [gulagala001/oh-my-dsh](https://github.com/gulagala001/oh-my-dsh) — 长上下文预处理、Dream 记忆、任务验证、工作流与电脑操作。需要 DSH 0.2.2-rc.1 与 Node.js 24.9+。默认安装配置开放完整的文件与命令访问并关闭执行审批；已有 profile 的显式设置优先。
+- [gulagala001/oh-my-dsh](https://github.com/gulagala001/oh-my-dsh) — 长上下文预处理、Dream 记忆、任务验证、工作流与电脑操作。需要 DSH 0.2.2-rc.2 与 Node.js 24.9+。默认安装配置开放完整的文件与命令访问并关闭执行审批；已有 profile 的显式设置优先。
 - [haaahhhis/MultiGameAssistant#dsh-plugin](https://github.com/haaahhhis/MultiGameAssistant/tree/main/packages/dsh-plugin) — 在 dsh 里管理游戏自动化脚本（仅 Windows）：安装和更新 MAA 等脚本，按定时流水线运行，监看日志并把出错和卡住交给 agent 处理，还会记录游戏活动。
 - [hackernotfound/dsh-tacit](https://github.com/hackernotfound/dsh-tacit) — 从不顺的轮次和你自己的纠正中学习你在提示词里没说出口的东西，并把学到的指令注入每个新对话的系统提示；指令可在设置中编辑，输入框按钮可用它们改写当前草稿。
 - [halftin/dsh-codex-runner](https://github.com/halftin/dsh-codex-runner) — 在 Windows 的 DSH 中运行本机 Codex CLI 任务，支持后台执行、进度查询、追加指令、已完成聊天记录展示及可选监督；需要 Node 22.23.4+、DSH >=0.2.1-rc.3 <0.3.0，以及已安装并登录的 Codex CLI。
