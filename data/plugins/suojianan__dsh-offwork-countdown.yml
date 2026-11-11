@@ -5,4 +5,4 @@ description:
   en: "Windows desktop companion: installs and launches a semi-transparent, always-on-top off-work countdown widget. It counts down to the configured end time, keeps counting overtime, shows rest days, remembers its position and opacity, and provides a tray menu plus Ctrl+Alt+D click-through. Windows 10/11 x64 only; the widget is a separate desktop process, not a Harness page panel."
   zh: "Windows 桌面伴随插件：安装后启动一个半透明、始终置顶的下班倒计时小窗。支持上下班时间、加班计时、周末休息、位置与透明度记忆、托盘菜单和 Ctrl+Alt+D 鼠标穿透；仅支持 64 位 Windows 10/11。小窗是独立的桌面进程，不是 Harness 页面内的面板。"
 icon: https://raw.githubusercontent.com/suojianan/dsh-offwork-countdown/main/icon.png
-tarball: https://github.com/suojianan/dsh-offwork-countdown/releases/download/v1.0.0/dsh-offwork-countdown-1.0.0.tgz
+tarball: https://github.com/suojianan/dsh-offwork-countdown/releases/download/v1.0.1/dsh-offwork-countdown-1.0.1.tgz
