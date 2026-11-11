@@ -1,0 +1,7 @@
+url: https://github.com/SoulZhou/dsh-multi-root-files
+name: SoulZhou/dsh-multi-root-files
+category: ui
+description:
+  en: 'Sidebar file tree that covers the session workspace root together with every additional root registered through multi-root-workspace, so sibling checkouts are browsable from one tab. Directory levels load lazily, changed and untracked files carry Git markers, and clicking a file opens its content inline beside the tree. Read-only: it never writes, renames or deletes anything.'
+  zh: '侧栏文件树，把会话主目录与 multi-root-workspace 登记的每个附加根放在一起浏览：平级仓库在同一个页签里都能看，目录按需懒加载，改动和未跟踪文件带 Git 标记，点文件在树旁边直接内联预览。纯只读，不会写入、重命名或删除任何文件。'
+icon: https://raw.githubusercontent.com/SoulZhou/dsh-multi-root-files/main/assets/icon-512.png
