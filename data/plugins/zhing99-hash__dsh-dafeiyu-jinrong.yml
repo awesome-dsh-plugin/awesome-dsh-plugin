@@ -1,0 +1,8 @@
+url: https://github.com/zhing99-hash/dsh-dafeiyu-jinrong
+name: zhing99-hash/dsh-dafeiyu-jinrong
+category: fun
+description:
+  en: Desktop BigFish companion for DeepSeek Harness with editable bubbles, action packs, market sentiment and a read-only dsh-meme gallery.
+  zh: DeepSeek Harness 的桌面大肥鱼伙伴：可编辑气泡、动作包、行情情绪，以及只读的 dsh-meme 斗图图库。
+icon: https://raw.githubusercontent.com/zhing99-hash/dsh-dafeiyu-jinrong/main/assets/icon-180.png
+tarball: https://github.com/zhing99-hash/dsh-dafeiyu-jinrong/releases/download/v0.4.0/dsh-dafeiyu-jinrong-0.4.0.tgz
