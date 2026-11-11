@@ -1,0 +1,6 @@
+url: https://github.com/little-thing/claude-code-mode
+name: little-thing/claude-code-mode
+category: ui
+description:
+  en: A session workspace for DeepSeek Harness modeled on the Claude app, with forked sessions nested in one tree, up to four sessions on one screen, and a right rail per pane.
+  zh: 参照 Claude 应用会话界面的 DSH 工作区：fork 会话收进一棵树，一屏最多四个会话并排，每屏带自己的右栏。
