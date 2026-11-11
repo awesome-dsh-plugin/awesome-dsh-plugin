@@ -2,6 +2,6 @@ url: https://github.com/ruisenbai/dsh-annotation
 name: ruisenbai/dsh-annotation
 category: session
 description:
-  en: 'Annotate selected text in the main or sidebar chat, files, and code changes; send notes together and jump back to their sources.'
-  zh: '在主会话或侧栏选中文字添加注解，也可标注文件和代码差异；多条注解可随消息发送，并能跳回原文。'
+  en: 'Annotate selected text beside its source in the main chat or sidebar. Mark up files and diffs, send several notes with one message, and jump back to the source from the annotation list.'
+  zh: '在主会话或侧栏选中文字，直接在原文旁写注解。也可标注文件和代码差异，将多条注解随消息一起发送，并从注解记录跳回原文。'
 tarball: https://github.com/ruisenbai/dsh-annotation/releases/latest/download/dsh-annotation.tgz
