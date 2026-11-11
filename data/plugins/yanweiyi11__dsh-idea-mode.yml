@@ -1,0 +1,7 @@
+url: https://github.com/yanweiyi11/dsh-idea-mode
+name: yanweiyi11/dsh-idea-mode
+category: dev
+description:
+  en: JetBrains IDEA agent preset for DeepSeek Harness that adds an IDEA mode with IDE MCP tools plus projectPath, parameter-name, and tool-name compatibility helpers.
+  zh: 为 DeepSeek Harness 提供 IDEA 模式：接入 IDEA MCP 工具，并自动补全 projectPath、兼容参数命名与工具名差异。
+icon: https://raw.githubusercontent.com/yanweiyi11/dsh-idea-mode/main/icon.png
