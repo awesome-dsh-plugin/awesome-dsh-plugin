@@ -2,5 +2,5 @@ url: https://github.com/lijiacong-666/dsh-impl-gate
 name: lijiacong-666/dsh-impl-gate
 category: workflow
 description:
-  en: Turn one sentence of requirements into a detailed design doc that AI agents can build from.
-  zh: 把一句话需求变成 AI 能直接开工的详细设计文档。
+  en: 'Requirement to a detailed design doc another AI can build from: the model fills a plan, the plugin validates it and emits a SPEC plus task cards, then independent review and implementation evidence check the result.'
+  zh: '需求 → 另一 AI 能直接开工的详细设计文档：模型填 plan，插件校验后产出 SPEC 与任务卡，再由独立评审与实现证据复核。'
