@@ -1,0 +1,6 @@
+url: https://github.com/janehk416-alt/dsh-FocusCapture
+name: janehk416-alt/dsh-FocusCapture
+category: tools
+description:
+  en: "Windows screenshot and annotation plugin with configurable global hotkeys, always-on-top pinned images, and capture delivery to the current DSH chat draft; requires a compatible Python runtime."
+  zh: "Windows 截图与标注插件，支持自定义全局快捷键、置顶贴图和添加到当前 DSH 聊天附件草稿；需要兼容的 Python 运行环境。"
