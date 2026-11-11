@@ -1,0 +1,6 @@
+url: https://github.com/TONG5395/dsh-qqbot-expands
+name: TONG5395/dsh-qqbot-expands
+category: tools
+description:
+  en: 'Add-on layer over the official QQ bot plugin @tencent-connect/dsh-qqbot: gates group messages before they reach the agent (probability, debounce with backlog, invalid-message filtering, admin approval before reading attachments), greets idle private chats, and adds emoji stickers via dsh-meme, TTS/ASR voice replies, image generation and one settings page.'
+  zh: '官方 QQ 机器人插件 @tencent-connect/dsh-qqbot 的拓展层：群聊消息进 agent 前先按概率、防抖加积压、无效消息过滤做频控收敛，非管理员附件需管理员回「同意」才读取，私聊按空闲时长主动问候，并补上表情包、TTS/ASR 语音条、绘图与统一设置页。'
