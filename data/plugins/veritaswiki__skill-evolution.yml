@@ -1,0 +1,7 @@
+url: https://github.com/veritaswiki/skill-evolution
+name: veritaswiki/skill-evolution
+category: skill
+description:
+  en: 'Reviews each finished turn, distills reusable skills as drafts, runs code-level checks over them, and holds each draft until the user approves or rejects it with a directive; every write is recorded in a SHA-256 ledger that supports rolling back a single entry.'
+  zh: '回合结束后复盘会话，把经验蒸馏成技能草稿，经代码级检查后等你批示采纳或驳回；每次落盘都记入 SHA-256 账本，支持按单条回滚。'
+icon: https://raw.githubusercontent.com/veritaswiki/skill-evolution/main/assets/icon-180.png

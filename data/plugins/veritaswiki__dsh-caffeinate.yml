@@ -1,0 +1,7 @@
+url: https://github.com/veritaswiki/dsh-caffeinate
+name: veritaswiki/dsh-caffeinate
+category: tools
+description:
+  en: 'Runs macOS caffeinate with -w bound to the DSH host process id, so the sleep-prevention process exits when the host exits, and exposes /keepawake to report status and switch sleep-prevention modes.'
+  zh: '以 -w 把 macOS caffeinate 绑定到 DSH 宿主进程 pid，宿主退出即随之退出；并提供 /keepawake 指令查看状态与切换防休眠模式。'
+icon: https://raw.githubusercontent.com/veritaswiki/dsh-caffeinate/main/assets/icon-180.png

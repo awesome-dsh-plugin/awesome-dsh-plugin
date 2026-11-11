@@ -1,0 +1,7 @@
+url: https://github.com/veritaswiki/dsh-macos-notifier
+name: veritaswiki/dsh-macos-notifier
+category: notify
+description:
+  en: 'Posts a macOS notification titled with the session name when that session finishes a turn, and clicking it returns to the session; an in-app notice is shown as a fallback when the system banner is not permitted.'
+  zh: '会话结束本轮时弹出以会话名为标题的 macOS 通知，点击通知回到该会话；系统横幅未获授权时以应用内提示兜底。'
+icon: https://raw.githubusercontent.com/veritaswiki/dsh-macos-notifier/main/assets/icon-180.png
