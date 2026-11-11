@@ -1,0 +1,7 @@
+url: https://github.com/BeastyZ/dsh-remote-agent
+name: BeastyZ/dsh-remote-agent
+category: remote
+description:
+  en: SSH workbench for launching remote agent CLIs with durable sessions, terminal, file editing, Git worktrees and local port forwarding.
+  zh: 连接 Linux 服务器的 Agent 工作台，支持持久会话、远程终端、文件编辑、Git worktree 和端口转发。
+tarball: https://github.com/BeastyZ/dsh-remote-agent/releases/latest/download/dsh-remote-agent.tgz
