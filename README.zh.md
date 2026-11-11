@@ -10270,7 +10270,7 @@ dsh plugin --profile web add dshmarket
 - [Jfreey/dsh-plugin-sync](https://github.com/Jfreey/dsh-plugin-sync) — 插件一键备份，换机一键还原：清单、版本、配置与本地插件源码存进自己的 GitHub 私有仓库。
 - [jiang4wqy/dsh-dejaview](https://github.com/jiang4wqy/dsh-dejaview) — 在动手写 dsh 插件前，检索 awesome-dsh-plugin 注册表与 dsh-plugin GitHub topic，判断是否已有相似插件，并返回带证据的排序结果。
 - [jing-hy/dsh-unified-market](https://github.com/jing-hy/dsh-unified-market) — 面向 DSH Desktop（EAC）桌面壳的统一插件市场：聚合精选目录、GitHub dsh-plugin 生态与 npm registry 三源，提供来源白名单、冲突预检、试装安装验证、手动/批量/自动三档更新与功能包（.dshpack）管理。
-- [kazari-qwp/dsh-tiered-plugin-menu](https://github.com/kazari-qwp/dsh-tiered-plugin-menu) — 按客户端、工作区和会话分层管理 DSH 插件，支持独立开关、不同配置、逐级继承及复用原插件的设置页面。
+- [kazari-qwp/dsh-tiered-plugin-menu](https://github.com/kazari-qwp/dsh-tiered-plugin-menu) — 按客户端、工作区和会话分层配置 DSH 插件、MCP 与 Skill，支持独立开关、不同配置、逐级继承及下级默认配置。
 - [kimiya1010/dsh-plugin-market](https://github.com/kimiya1010/dsh-plugin-market) — DeepSeek Harness 插件市场：在 Web 界面里搜索并一键安装 GitHub 上的 dsh-plugin 插件。
 - [kingOfSoySauce/dsh-skin-market](https://github.com/kingOfSoySauce/dsh-skin-market) — 原生皮肤市场与生命周期管理器，发现社区皮肤、展示预览与兼容状态，并提供已验证的一键安装或手动安装入口。
 - [kinmat-A/dsh-theme-switch](https://github.com/kinmat-A/dsh-theme-switch) — DSH 主题切换：自动检测已安装的皮肤/主题，在设置页一键互斥切换，全部停用时回退官方默认外观，切换即时生效并跨重启保留。
