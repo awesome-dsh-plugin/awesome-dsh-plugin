@@ -2,7 +2,7 @@ url: https://github.com/yanweiyi11/dsh-pause-continue
 name: yanweiyi11/dsh-pause-continue
 category: ui
 description:
-  en: Pause a running DeepSeek Harness answer and continue it from the break point.
-  zh: 在回答生成时暂停，并从断点继续生成。
+  en: 'Codex-style pause and continue for DeepSeek Harness: stop a running answer at any moment, then pick it up from the break point. Interaction modelled on Codex and Cursor.'
+  zh: '把 Codex、Cursor 式暂停与继续带进 DeepSeek Harness：生成中随时暂停，再从断点接着写。'
 icon: https://raw.githubusercontent.com/yanweiyi11/dsh-pause-continue/main/assets/icon-180.png
 tarball: https://github.com/yanweiyi11/dsh-pause-continue/releases/latest/download/dsh-pause-continue.tgz
