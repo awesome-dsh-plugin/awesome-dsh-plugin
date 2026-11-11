@@ -1,0 +1,6 @@
+url: https://github.com/Darwin-2002/dsh-multi-persona
+name: Darwin-2002/dsh-multi-persona
+category: identity
+description:
+  en: Switches which assistant persona answers, based on how the message addresses it (alias matching, with names inside quotes and copula phrases such as "is/was" excluded); each persona is a folder holding its own prompt, aliases, colour, avatar and optional lore, several personas can answer one turn, and a settings panel plus a per-turn routing log make each switch checkable.
+  zh: 按这句话怎么称呼助手来切换作答的人格（别名匹配，引号内的名字与「是 / 为」这类系词不算称呼）；每个人格是一个文件夹，装着自己的提示词、别名、配色、头像与可选世界书；一轮可以让多个人格同时作答；设置页有面板和逐轮判定日志，每次切换都可复查。
