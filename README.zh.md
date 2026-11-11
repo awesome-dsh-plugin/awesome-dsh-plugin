@@ -2521,7 +2521,7 @@ dsh plugin --profile web add dshmarket
 - [liumiaozhi/dsh-token-gauge](https://github.com/liumiaozhi/dsh-token-gauge) — 侧边栏 Token 仪表盘：实时输出速度表、当前会话与今日 Token 用量、按 DeepSeek 列表价（峰谷半价）估算的费用，以及 70–100% 缓存命中率表盘，支持单表/双表两种布局与四种皮肤。
 - [liuyun2025/dsh-token-rmb](https://github.com/liuyun2025/dsh-token-rmb) — 在本轮对话的操作行「用量 / 时间」右侧追加该轮 token 费用估算（人民币）。单价来自内置的 DeepSeek 峰谷价目（北京时间，周一至周五 9:00–12:00、14:00–18:00），可在 profile 的 cordis.patch.yml 里整表覆盖；没有配置单价的模型显示「¥—」，不套用其它价格。跟随官方「性能与用量 = 简洁」设置一起隐藏。只算 token 费用、只显示本轮。
 - [liuzhihao-min/dsh-answer-timing](https://github.com/liuzhihao-min/dsh-answer-timing) — 逐次回答耗时拆解：把每次回复分成模型、工具与其它三段，给出首字、生成与各工具耗时，并在本地落一份 JSONL 账本。需要 DSH 运行时为 Node 24 或更新版本。
-- [liuzx012/dsh-speakhumantalk](https://github.com/liuzx012/dsh-speakhumantalk) — 删掉 AI 腔与套话：在每个会话的 system prompt 里加一段风格层（默认开启，可用 deslop_mode 关闭），附带 deslop_* 四个工具（扫描、改写、档位、声音画像）和四个 skill，启动时会复制到 DSH 的 skills 目录，同名 SKILL.md 会被覆盖。
+- [liuzx012/dsh-speakhumantalk](https://github.com/liuzx012/dsh-speakhumantalk) — 删掉 AI 腔与套话，让回复和文档说人话：每个会话自动注入去 AI 味风格层（默认开启，可用 deslop_mode 关闭），配 deslop_* 四个工具（0 到 100 分扫描、确定性改写、档位切换、声音画像）与四个 skill（改稿、对话、技术文档、中文报告），启动时复制到 DSH 的 skills 目录。效果可量化：一段典型 AI 腔中文经 deslop_rewrite 清洗后，评分由 49 降到 6。
 - [lizilong1993/dsh-offpeak](https://github.com/lizilong1993/dsh-offpeak) — 高峰时段只暂停指向官方或拦截列表内模型的请求，其余照常放行；峰谷时段、按模型的拦截列表与会话「畅跑」都能在徽标面板里编辑。
 - [ljr282341583/dsh-convo-cost](https://github.com/ljr282341583/dsh-convo-cost) — 当前对话实时费用统计：输入框下方一行显示运行中的 token 用量与 DeepSeek 官方价格估算（基础价与峰谷价）。
 - [lksa09871234/dsh-tokeneconomizer](https://github.com/lksa09871234/dsh-tokeneconomizer) — TokenEconomizer 的 DSH 移植版，提供跨会话项目知识、需主动应用的工具裁剪、失败循环引导与 token 用量记录。
@@ -9798,7 +9798,7 @@ dsh plugin --profile web add dshmarket
 - [xiezouqu12/dsh-info-records](https://github.com/xiezouqu12/dsh-info-records) — 本机加密的 DeepSeek Harness 账密库：侧边栏管理记录，智能体登录前按站点取用；对话收录默认关闭，逐条可设仅手动；AES-256-GCM 加密，密钥由 Windows DPAPI / macOS 钥匙串 / Linux Secret Service 保护。
 - [xlennart/dsh-auto-review-jev](https://github.com/xlennart/dsh-auto-review-jev) — 面向 DSH ^0.2.2-rc.1 的 Jev Review 审批模式：通过 System One（Jev／D3）逐次审查原生及 PTC 内层工具调用，提供审计日志和设置页；需配套 Jev 宿主扩展。fork 自 gbthui/dsh-auto-review；请勿与上游同装，两者都会接管工具调用的审批判定。
 - [xtd1145/dsh-full-access-switch](https://github.com/xtd1145/dsh-full-access-switch) — 给 DeepSeek Harness 加 Full access 一次性开关：新工作区与新对话默认 danger-full-access 并跳过逐个确认；可作为 dsh bundle 安装，也可用脚本打补丁。
-- [xuanyuanchumo/dsh-recency-guard](https://github.com/xuanyuanchumo/dsh-recency-guard) — DeepSeek Harness 的插件崩溃恢复守护：记录第三方/实验性插件的安装与更新时间线并自动备份配置；崩溃后按「最近更新」自动锁定嫌疑插件并在下次启动前拦截，多次崩溃逐级扩大隔离，稳定后自动恢复；恢复判定分级（唯一嫌疑即时关闭/多嫌疑连续 N 轮确认）+ 两阶段提交与重启对账；离线逃生通道 rescue CLI（零依赖只读，CJK 宽度对齐输出）；面板提供生命周期状态机、马尔可夫转移矩阵、休哈特控制带、CUSUM 变点等量化可观测视图与可交互能力图谱，含插件信息与 GitHub 反馈入口；多项目按分区键隔离记账，项目间数据互不污染。
+- [xuanyuanchumo/dsh-recency-guard](https://github.com/xuanyuanchumo/dsh-recency-guard) — DeepSeek Harness 的插件崩溃恢复守护：记录插件的安装更新时序与声明的兼容元数据，崩溃后在下一次启动前拦下问题嫌疑插件，稳定后自动恢复。带可交互能力图谱、只观测不行动的预警指标、按项目分区隔离、归档重置与离线救援 CLI。
 - [Yazzyk/dsh-file-shield](https://github.com/Yazzyk/dsh-file-shield) — 屏蔽 agent 对指定文件或目录的读取、搜索、写入与编辑，使其内容不进入对话——含敏感词的文件也在其中，避免它们的文字让之后的 provider 请求以 400 失败。规则在插件页面上点选。
 - [Yersi88/dsh-ollama-tool-guard](https://github.com/Yersi88/dsh-ollama-tool-guard) — 每次工具调用前由本机 Ollama 决策模型判定：可疑调用升级为确认提示，模型不可达时停止所有调用。需 DSH 0.2.x，并先装好本机 Ollama 0.35.1+、拉取默认约 6 GB 的 clef-flash 模型；否则所有工具调用都会被拒绝。
 - [yiyunet/dsh-proxy-egress](https://github.com/yiyunet/dsh-proxy-egress) — DSH 插件：本地出口代理（egress）桥——把只接受无凭据 HTTP(S) 代理地址的消费方，接到需要账号密码的上游代理上，凭据只在需要的那一跳注入；默认失败即断联，绝不降级为直连。零构建、零运行依赖。
