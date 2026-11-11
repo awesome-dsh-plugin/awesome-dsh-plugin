@@ -4330,6 +4330,7 @@ dsh plugin --profile web add dshmarket
 - [niszhum/dsh-compact-codex](https://github.com/niszhum/dsh-compact-codex) — 以代码从会话日志拼出的交接信息替换 dsh 的压缩后端，采用 Codex 风格的换窗方式：检查点不经过模型摘要，换窗不产生摘要调用。任务账本与换窗前两道门槛让意图、下一步与仍在改动的文件跨窗口留存，模型也可以用 new_context 工具自行换窗。整份重述四个内置 agent preset（与 dsh 0.2.2-rc.1 官方版本一致，升级 dsh 后需重跑 sync-presets.mjs）；空闲缓存保活默认开启，会发真实请求消耗额度（keepalive: false 可关）。
 - [NIU-001-LIU/dsh-win-minimal](https://github.com/NIU-001-LIU/dsh-win-minimal) — Windows 极简模式 preset：单句 persona、三工具、无运行时上下文。
 - [nlflora/dsh-workspace-heal](https://github.com/nlflora/dsh-workspace-heal) — 有会话绑定的工作区目录被删时自动重建；并把失去归属的会话折叠成摘要，供新会话导入。
+- [No-ni/billion-context-patched](https://github.com/No-ni/billion-context-patched) — 自包含的 billion-context 补丁构建：快照复用校验、fork 继承父会话、出站请求体压缩、图片看过一次即折叠，并内置模型请求加速器。
 - [NoiraBaka/dsh-compact-suite](https://github.com/NoiraBaka/dsh-compact-suite) — 接管所有已挂载压缩引擎的触发阈值：把 headroomTokens 强制成 −1e6，使比值成为触发点的唯一决定项；在每条下发路径上保证保留量低于触发点；把压缩调用改派到指定模型；并提供一键立即压缩与本会话压缩记录面板。
 - [NoneadChina/dsh-nonead-prompt-rewind](https://github.com/NoneadChina/dsh-nonead-prompt-rewind) — DSH 对话回退：一键就地回退到任意更早的用户消息（也可用 /rewind、/undo 命令），无需新建分支或切换窗口，并可一并还原被写类工具修改过的工作区文件；设置页按工作区列出最近的回退记录，可撤销最新一次回退的文件改动。基于 SiriLee/dsh-rewind 派生并独立维护，不能与上游同装（共用 /rewind、/undo 命令和 rewind-snapshots 备份目录）。
 - [nonefora11/dsh-intent-debt-radar](https://github.com/nonefora11/dsh-intent-debt-radar) — 把聊天里被顺口搁置的“回头再说”记成一份带利息的账本：每句承诺是一张卡，搁得越久排名越靠前，点一下回到当初那句话所在的会话。
@@ -7118,6 +7119,7 @@ dsh plugin --profile web add dshmarket
 - [honwee/dsh-plugin-mynah](https://github.com/honwee/dsh-plugin-mynah) — 给 Agent 一张会说话的脸：七个工具驱动自托管的 Mynah 实时数字人——开口说话（排队或打断）、播放动作片段、打断、查看在线会话与频道、健康检查、往知识库加文本。
 - [huguangyu666/dsh-plugin-notify](https://github.com/huguangyu666/dsh-plugin-notify) — 通知出口：agent 主动通过桌面通知 / 中文语音 / 音效（炸裂、胜利、警报）联系你，60 秒确认窗口后语音呼叫，音量增强，设置面板。
 - [huliux/dsh-asr-plugin](https://github.com/huliux/dsh-asr-plugin) — 为 Apple Silicon macOS 上的 DeepSeek Harness 提供本地会议转写、麦克风与系统音频录制、说话人标签及 @ 引用的总结、决策与待办。
+- [ictrektech/V-yovoice#tool-audio-transcription](https://github.com/ictrektech/V-yovoice/tree/main/integrations/v-harness/tool-audio-transcription) — 使用 V-yovoice 转写会话音频，展示波形播放器和转写原文。
 - [jerryqx/dsh-ximalaya](https://github.com/jerryqx/dsh-ximalaya) — 在 DSH Web 界面收听喜马拉雅播客/有声书：搜索专辑、分页浏览曲目，播放条支持上下集/进度/音量/倍速；扫码登录后「我的」页可看收藏的声音（点击即播）、我的订阅（带最新一集提示）与关注的主播（含其公开专辑）；Host 端音频流代理支持 Range 拖动，并注册 `ximalaya_play` 模型工具让 agent 按需搜索播放。
 - [Jesse-njx/dsh-voice](https://github.com/Jesse-njx/dsh-voice) — 语音输入、语音输出：把口述音频转写为用户消息（transcribe），让 agent 朗读回复（speak），本地优先，音频存于 ~/.dsh/voice。
 - [joeseesun/qiaomu-audio-dsh](https://github.com/joeseesun/qiaomu-audio-dsh) — 在 Harness 中朗读 Markdown、听写和转写音频，并导出配音媒体。
