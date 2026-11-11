@@ -109,6 +109,7 @@ dsh plugin --profile web add dshmarket
 - [Jonah-Wu23/dsh-gungnir#dsh-plugin](https://github.com/Jonah-Wu23/dsh-gungnir/tree/main/packages/dsh-plugin) — 面向 DeepSeek Harness 的证据驱动目标校验插件。通过 /ultragoal 锁定目标，并依据命令退出码与生成产物验证完成状态，防止模型虚报任务完成。
 - [Kanadego/dsh-heartbeat](https://github.com/Kanadego/dsh-heartbeat) — 让 agent 不定期醒来的插件：默认 60 分钟一次，上下浮动 20%（48~72 分钟）。按你设的兴趣范围上网逛逛，看到的东西存进本地素材池，顺手维护一份你的兴趣画像。攒够值得说的，就往你绑定的会话递一份短素材——说不说、说哪条，交给那个会话里的 agent 按眼前处境定。静默时段、忙时窗口、每日上限、冷却都在代码层判；判别说时，闸门之后的决策与表达两相不再调用模型（闲逛相在闸门之前，另算）。支持 Windows、Linux 与 macOS（Linux / macOS 为最小支持）。
 - [kenz1117/dsh-engram](https://github.com/kenz1117/dsh-engram) — 跨会话长期记忆，纯本地 SQLite：双层分库（用户级 + 按 git origin 隔离的项目级）、FTS5 + 本地向量 RRF 融合检索、强制给出充分性判定的证据门、来源审计链、SM-2 间隔重复复习、巩固蒸馏与衰减遗忘，以及九视图「记忆宫殿」侧栏面板。22 个窄参数工具，无外部服务、无 API Key、无 Docker。
+- [KunKun24/dsh-global-prompt](https://github.com/KunKun24/dsh-global-prompt) — 写一段全局提示词或人设，之后每条新对话都会自动带上。
 - [leeyoung1/dsh-advisor-plugin](https://github.com/leeyoung1/dsh-advisor-plugin) — 通过零参数 advisor() 咨询和按步巡逻检查，为执行模型接入更强的审查模型，返回计划、纠偏或停止信号。
 - [liangzz1998/dsh-thinking-language](https://github.com/liangzz1998/dsh-thinking-language) — 通过注入一条系统提示词让 agent 用指定语言思考与回复（默认简体中文），思考与回复语言可分别配置，支持追加自定义要求，兼容标准、PTC 与自定义预设，极简模式不生效。
 - [lifangjin/dsh-maoying](https://github.com/lifangjin/dsh-maoying) — 网文创作辅助插件：主 agent 任主编，把大纲、写作、审校、设定维护、素材考据委派给五个帮手，按七阶段工作流推进；整部小说就是工作区里结构化的 novel/ 目录（角色卡、伏笔状态机、时间线、叙事记忆），另带侧栏创作台面板与六条零依赖 CLI 命令。
@@ -1057,6 +1058,7 @@ dsh plugin --profile web add dshmarket
 - [Kseleven/dsh-pomodoro-timer](https://github.com/Kseleven/dsh-pomodoro-timer) — 输入框下方的番茄钟：专注/短休息/长休息循环、可恢复倒计时、提示音、可选系统通知与中英双语设置。
 - [kuanfu0430/dsh-sidebar-branch-chat](https://github.com/kuanfu0430/dsh-sidebar-branch-chat) — 在 dsh-better-sidebar 新增分支对话页签：开出独立封存 session，注入头／中／尾脉络摘要，并使用与主对话相同的工具。
 - [KukaNo996/dsh-prompt-optimization](https://github.com/KukaNo996/dsh-prompt-optimization) — DSH 输入框提示词优化：把粗糙草稿改写成结构清晰、无歧义的提示词，支持一键撤回、引用芯片保护、三种模型来源与断连即停。
+- [KunKun24/dsh-enter-newline](https://github.com/KunKun24/dsh-enter-newline) — 按 Enter 只换行、不发送：长提示词写到一半不会飞出去。
 - [kw12121212/writing-anything#dsh-writing-viewer](https://github.com/kw12121212/writing-anything/tree/main/plugins/dsh-writing-viewer) — writing-anything 工作区的只读写作面板：作品总览卡片、单元树、YAML 产物的语义卡片与源码高亮视图、素材清单与决策／复核清单，以及面板内单元审阅（反馈经 wa-cli 写回）。
 - [kw78/academic-agent#academic-dsh-ui](https://github.com/kw78/academic-agent/tree/main/packages/academic-dsh-ui) — DSH 侧边栏与面板：课程、任务、计划、连接、课程资料、自动化与设置。
 - [kyanray-dev/dsh-markdown-input](https://github.com/kyanray-dev/dsh-markdown-input) — 输入框 Markdown 书写辅助：发送内容保持原始 Markdown，同时把列表显示为圆点和复选框，实时呈现粗体、斜体、行内代码、删除线、标题、引用与代码块，Shift+Enter 自动续写列表，选中文字可用 Cmd/Ctrl+B、I、E 加格式。
@@ -4251,6 +4253,7 @@ dsh plugin --profile web add dshmarket
 - [kkkkk-tubu/dsh-deep-purge](https://github.com/kkkkk-tubu/dsh-deep-purge) — 真正删除 DSH 会话，而不是只归档（仅限 Windows）。一次清掉六处本地存储：会话日志、标题缓存、billion-context SQLite 索引（含 VACUUM）、侧栏注册表、成本台账、桥接日志。带预演、自动备份、逐字节回滚，以及「退出→删除→重启」全自动流程。
 - [kkwalking/dsh-stall-guard](https://github.com/kkwalking/dsh-stall-guard) — 监测你所选模型每一轮的收尾，交给另一个模型判断这一轮是否真的结束了：如果助手说完话却没有工具调用就停了，会记录 continue / finished / uncertain 三态判定并展示在侧边栏面板。suggest 模式只报告，auto-continue 模式在本轮真正 idle 后调用 agent.followup() 发送续跑消息，且受每轮次数上限约束。单步收尾始终复查，监测模型支持精确多选与不区分大小写的正则匹配，续跑文案可自定义。
 - [kumiiwaka/dsh-intercom](https://github.com/kumiiwaka/dsh-intercom) — 给已经开着的窗口装内线电话，不建团队、不生新会话，只让平级窗口互相递话（带跳数上限防环）。
+- [KunKun24/dsh-fold-delete](https://github.com/KunKun24/dsh-fold-delete) — 长对话只显示最近的消息，不需要的会话可以彻底删除。
 - [Kyf-eng/dsh-threads](https://github.com/Kyf-eng/dsh-threads) — Claude 式的项目与讨论串：项目主对话为能独立完成的任务开讨论串（可以点开直接对话的真实会话），默认最多 3 个同时运行，可各自在独立的 git worktree 里工作，做完把回报发回主对话。
 - [kyle123740/dsh-message-recall](https://github.com/kyle123740/dsh-message-recall) — 给会话里的每条消息加上「撤回 / 删除 / 删除此处及之后」悬浮按钮：以 append-only 墓碑让内容同时从模型上下文与对话界面消失，带空内容兜底，旧删除不会打回严格校验的 provider。已实测支持 DSH 2.0 桌面版。
 - [L7X6899/dsh-Session-Turncate](https://github.com/L7X6899/dsh-Session-Turncate) — 单个会话的空闲定时上下文截断：可配置空闲多少小时后整段丢弃较早的对话（不生成摘要），避免长期存活的会话把上一个任务带进下一个；带每会话开关、会话上方的「上下文截断」选项卡，以及 IM 桥接可直接驱动的 /truncate 命令。
@@ -5844,6 +5847,7 @@ dsh plugin --profile web add dshmarket
 - [liwei9745/dsh-genbox-plugin](https://github.com/liwei9745/dsh-genbox-plugin) — 通过本地 GenBox 服务生图、改图、生视频，并用 ffmpeg 本地剪辑；自带零成本测试台。
 - [liwuzhan/agent-native-trade#dsh-plugin](https://github.com/liwuzhan/agent-native-trade/tree/main/packages/dsh-plugin) — 为模型原生交易提供目录检索、交易方联络、合同签名、结算协调、人工任务交接和签名评价回执工具。
 - [liwuzhan/cad-tool#dsh-cad-studio](https://github.com/liwuzhan/cad-tool/tree/main/packages/dsh-cad-studio) — 为 DSH 添加参数化 CAD 建模、几何验证、预览、设计历史和 STEP/STL 导出能力。
+- [lizi600jin/dsh-ensp](https://github.com/lizi600jin/dsh-ensp) — 面向华为 eNSP 的自动化工具：生成 .topo 拓扑、启停设备、逐条下发配置并在每条命令后核对结果。
 - [lizzkkafei/my-projects#zhizhen-cut](https://github.com/lizzkkafei/my-projects/tree/main/zhizhen-cut) — 从 DSH 会话进入的单窗口视频剪辑工作台：多视频导入、磁吸时间线修剪与掠视、音频角色和自动闪避、本地静音检测粗剪、脚本字幕、9 种调色与 MP4 导出（浏览器不支持 MP4 录制时回退 WebM）。
 - [LizzzMax/dsh-tool-index](https://github.com/LizzzMax/dsh-tool-index) — DSH Lean Context 为可用工具建立本地索引，明确命中时预选工具，其他情况按需搜索。
 - [ljwzhaoxiaoniu/DLR#dsh-tsm-agent](https://github.com/ljwzhaoxiaoniu/DLR/tree/2.0/DSH-based%20Agent%20Service/dsh-tsm-agent) — 把 tsm-core-dlr 语义服务（LanceDB 向量 + 图）挂为 MCP 工具，并携带与场景无关的 DLR/TSM 建模技能、服务状态浮层与 agent 规则；该服务是硬依赖，须先运行、bundle 才能激活。
