@@ -1,0 +1,6 @@
+url: https://github.com/ma1833577561/dsh-plugin-voice-autosend
+name: ma1833577561/dsh-plugin-voice-autosend
+category: voice
+description:
+  en: 'Offline voice input for the composer: records with the microphone, transcribes locally with SenseVoice, and sends the message automatically.'
+  zh: '输入框离线语音输入：麦克风录音后用 SenseVoice 在本机转写，转写完成即自动发送消息。'
