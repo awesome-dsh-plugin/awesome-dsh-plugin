@@ -1,0 +1,6 @@
+url: https://github.com/KunWu1980/dsh-douyin-kb
+name: KunWu1980/dsh-douyin-kb
+category: tools
+description:
+  en: "Paste a Douyin video link (easy to copy from the Douyin PC app) and the plugin downloads the video, transcribes the speech offline into timed Chinese text, and imports it into Obsidian as a Markdown note. Built for DeepSeek Harness and for beginners building a personal knowledge base."
+  zh: "一个简单的人工提供抖音链接（可通过抖音PC客户端获得），由本插件自动将视频内容转化文字记录，并自动导入到Obsidian中，适用于harness、个人知识库搭建初学者上手。"
