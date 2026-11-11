@@ -1,0 +1,6 @@
+url: https://github.com/elsebit/dsh-ikuncode-usage
+name: elsebit/dsh-ikuncode-usage
+category: usage
+description:
+  en: Displays the IKunCode account balance and provider name in a standalone DSH sidebar card using a locally configured credential reference.
+tarball: https://github.com/elsebit/dsh-ikuncode-usage/releases/latest/download/dsh-ikuncode-usage.tgz
