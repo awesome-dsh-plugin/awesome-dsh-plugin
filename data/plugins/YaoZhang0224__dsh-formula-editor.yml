@@ -1,5 +1,5 @@
 url: https://github.com/YaoZhang0224/dsh-formula-editor
-name: dsh-formula-editor
+name: YaoZhang0224/dsh-formula-editor
 category: ui
 description:
   en: 'Image-to-LaTeX formula editor: point it at any OpenAI-compatible vision model and a dropped or pasted screenshot is read into LaTeX, a MathLive field edits the formula in place with a 272-symbol palette, and the result copies into Word as a native equation or exports to .docx.'
