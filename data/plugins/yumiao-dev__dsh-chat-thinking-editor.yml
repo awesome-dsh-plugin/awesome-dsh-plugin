@@ -1,0 +1,6 @@
+url: https://github.com/yumiao-dev/dsh-chat-thinking-editor
+name: yumiao-dev/dsh-chat-thinking-editor
+category: ui
+description:
+  en: Adds an edit action to finalized assistant replies in DeepSeek Harness, letting you rewrite the reply text or reasoning chain; the edit is saved as a surface replacement.
+  zh: 为 DeepSeek Harness 已完成的助手回复增加编辑入口，可改写正文或思维链，改动以 surface replacement 形式保存。

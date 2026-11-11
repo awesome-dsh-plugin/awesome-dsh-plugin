@@ -1,0 +1,6 @@
+url: https://github.com/Ushio155/dsh-verify-cheap
+name: Ushio155/dsh-verify-cheap
+category: skill
+description:
+  en: 'Ships a skill for verifying a change with the cheapest check that still yields a definite answer: an L0-L3 cost ladder from static checks to a single suite, condition polling with a timeout instead of fixed sleeps, assertions that can actually fail, and durations that are measured rather than remembered. The package also carries the two zero-dependency Node tools the skill calls - wait-until.mjs (poll a command, a file, or a port until it is ready) and measure-runtime.mjs (wall-clock timing for any command, plus a segmented timer for library use).'
+  zh: '携带一份技能：用仍然能给出确定结论的最便宜手段验证改动——L0–L3 成本阶梯（静态检查到单个测试套件）、用条件轮询加超时替代固定延时、断言必须能失败、耗时必须实测而不是凭印象。包里还带着这份技能调用的两个零依赖 Node 工具：wait-until.mjs（轮询命令 / 文件 / 端口直到就绪）与 measure-runtime.mjs（测任意命令的墙钟耗时，库模式下提供分段计时）。'

@@ -1,0 +1,6 @@
+url: https://github.com/DeZhou123/dsh-model-orchestrator
+name: DeZhou123/dsh-model-orchestrator
+category: model
+description:
+  en: "Two-level model routing: pick the best model group first, then the best channel within that model; a failure switches channel before switching model. Preference mode pins one model across its channels, a status bar under the composer shows the live model, channel health and the day's token usage, and a speed/intelligence report can be imported as the routing prior. Exposes a model_orchestrator tool and a /route command."
+  zh: "两级模型调度：先在模型层选最优模型组，再在该模型的渠道层选最佳渠道；失败时先换同模型的其它渠道，整个模型不可用才换模型。偏好模式把单个模型锁在它的各条渠道上，输入框下方的状态条实时显示当前模型、渠道健康与今日 token 用量，并可从测速/智力报告导入路由先验；另提供 model_orchestrator 工具与 /route 命令。"

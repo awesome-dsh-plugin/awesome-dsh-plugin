@@ -1,0 +1,6 @@
+url: https://github.com/IDrinkMoreWater/dsh-openspec-opsx
+name: IDrinkMoreWater/dsh-openspec-opsx
+category: workflow
+description:
+  en: "OpenSpec spec-driven workflows for DeepSeek Harness, generated from OpenSpec 1.14.3: twelve /opsx-* slash commands that carry the workflow prompt plus the arguments you type, and twelve openspec-* skills the model loads on its own."
+  zh: "把 OpenSpec 的规格驱动工作流接入 DeepSeek Harness，内容由 OpenSpec 1.14.3 生成：12 个 /opsx-* 斜杠命令会把工作流提示词与你输入的参数一起注入会话，另有 12 个由模型自行加载的 openspec-* 技能。"

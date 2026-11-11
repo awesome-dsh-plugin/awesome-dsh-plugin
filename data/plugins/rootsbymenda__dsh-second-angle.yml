@@ -1,0 +1,7 @@
+url: https://github.com/rootsbymenda/dsh-second-angle
+name: rootsbymenda/dsh-second-angle
+category: agi
+description:
+  en: 'Checks each claim in a finished answer against the tool output that same turn read: a contradiction whose quote is found in that output steers one correction in the same turn, and claims the output does not back are flagged in the session log and on stderr. A free scan for absolute words and unmatched numbers runs first, and a turn that ran no tool never reaches the model.'
+  zh: '把成品回答里的每条断言，和同一回合工具实际读到的内容对照：引用能在输出里找到的矛盾会在同一回合触发一次纠正；输出不支撑的断言则写进会话日志与 stderr。先跑一遍绝对化措辞与对不上数字的免费扫描，整回合没调用工具的就不进模型。'
+tarball: https://github.com/rootsbymenda/dsh-second-angle/releases/download/v0.1.0/dsh-second-angle-0.1.0.tgz

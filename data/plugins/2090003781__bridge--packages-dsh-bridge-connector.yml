@@ -1,0 +1,7 @@
+url: https://github.com/2090003781/bridge/tree/main/packages/dsh-bridge-connector
+name: 2090003781/bridge#dsh-bridge-connector
+category: remote
+tarball: https://github.com/2090003781/bridge/releases/latest/download/dsh-bridge-connector.tgz
+description:
+  en: Loopback HTTP/SSE service that lets an Obsidian plugin drive DSH sessions and inject vault notes into the system prompt (path-based, re-read every turn, so edits show up next turn); needs the companion plugin running inside Obsidian.
+  zh: 让 Obsidian 插件驱动 DSH 会话、并把库内笔记注入系统提示词的回环 HTTP/SSE 服务（按路径每轮重读磁盘，笔记改了下一轮就生效）；需要 Obsidian 内配套运行的插件。

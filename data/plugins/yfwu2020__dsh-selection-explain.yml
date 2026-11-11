@@ -1,0 +1,6 @@
+url: https://github.com/yfwu2020/dsh-selection-explain
+name: yfwu2020/dsh-selection-explain
+category: ui
+description:
+  en: Select text in the DSH web UI to stream a translation and an explanation of what it means in that specific context, read against the conversation it came from; the panel keeps a replayable history and can be promoted into a full session.
+  zh: 在 DSH Web 界面划词，小窗流式给出翻译，并结合这段文字所在的会话上下文解释它在这里的具体含义；面板带可回放的历史记录，也能一键升格为正式会话。

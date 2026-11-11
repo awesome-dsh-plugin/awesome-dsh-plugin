@@ -1,0 +1,6 @@
+url: https://github.com/3082838272n-max/dsh-mailbox
+name: 3082838272n-max/dsh-mailbox
+category: workflow
+description:
+  en: 'Mailbox for DeepSeek Harness: sessions pass letters through a shared folder, and an hourly randomized scheduler can wake a session on its own (mutual letters between two sessions, or a gentle nudge to the owner). Per-recipient hourly rate limit and a UTF-8 log.'
+  zh: 'DSH 会话信箱：两间会话用文件夹互相传信，另加按小时随机调度——互递信，或主动找主人说话；每个收信人每小时限流，带 UTF-8 日志。'

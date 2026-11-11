@@ -1,0 +1,6 @@
+url: https://github.com/konglong87/dsh-input-list
+name: konglong87/dsh-input-list
+category: ui
+description:
+  en: 'DSH prompt library and reusable snippets plugin: save, edit, delete, and append prompt templates, workflow instructions, and reusable text from a button beside the composer without sending.'
+  zh: 'DSH 常用内容、提示词收藏与 Prompt 管理插件：在 composer 输入框旁保存、编辑、删除和一键回填常用提示词、Prompt 模板、工作流指令与可复用文本，不自动发送。'

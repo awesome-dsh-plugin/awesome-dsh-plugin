@@ -1,0 +1,6 @@
+url: https://github.com/TheFold060629/dsh-task-assist
+name: TheFold060629/dsh-task-assist
+category: skill
+description:
+  en: 'Adds an Assist button beside the composer send key. It scans the skills and MCP tools available in the session, ranks them against the text currently in the input box, and lets you inject the selected ones into the running conversation as a steering message.'
+  zh: '在对话框发送键旁添加一个「辅助」按钮：扫描本会话可用的技能与 MCP 工具，按输入框里的当前草稿排序，并可把选中的技能作为 steering 消息注入正在运行的对话。'

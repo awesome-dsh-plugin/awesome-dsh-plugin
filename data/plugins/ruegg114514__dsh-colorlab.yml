@@ -1,0 +1,6 @@
+url: https://github.com/ruegg114514/dsh-colorlab
+name: ruegg114514/dsh-colorlab
+category: theme
+description:
+  en: 'Colour engine for the chat UI: ships the Mariana palette as the default preset, exposes 18 colour slots and 9 Markdown prose roles, lets you save up to 12 presets, and colours LaTeX blocks by running Sublime''s own LaTeX syntax.'
+  zh: '对话界面配色引擎：内置 Mariana 配色作为默认预设，提供 18 个颜色槽位与 9 个 Markdown 正文角色色，最多可保存 12 套预设；LaTeX 代码块通过移植 Sublime 自身的语法来上色。'

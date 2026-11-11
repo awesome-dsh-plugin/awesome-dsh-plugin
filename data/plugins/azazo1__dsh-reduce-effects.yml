@@ -1,0 +1,7 @@
+url: https://github.com/azazo1/dsh-reduce-effects
+name: azazo1/dsh-reduce-effects
+category: ui
+tarball: https://github.com/azazo1/dsh-reduce-effects/releases/latest/download/dsh-reduce-effects.tgz
+description:
+  en: 'Adds a UI effects page to Settings that switches off DSH Web animations and transitions, loading and progress animations, backdrop blur, smooth scrolling, hover title scroll, shadows, gradients and JS motion one category at a time, to cut browser rendering cost.'
+  zh: '在设置里新增 "前端特效" 页, 按分类关掉 DSH Web 的动画与过渡, 加载与进度动画, 毛玻璃, 平滑滚动, 标题 hover 滚动, 阴影, 渐变与 JS 动效, 降低浏览器渲染负担.'

@@ -1,0 +1,6 @@
+url: https://github.com/lenrendre/dsh-screenshot-native
+name: lenrendre/dsh-screenshot-native
+category: ui
+description:
+  en: 'WeChat-style screenshot: freeze the desktop, drag a region or click a window, and the crop lands in the composer. A Windows-only fork of Durandalw/dsh-plugin-screenshot; do not install it alongside the upstream plugin.'
+  zh: '微信式截图：点一下冻结桌面，框选区域或单击窗口，截图直接进输入框。Windows 专用的 Durandalw/dsh-plugin-screenshot 衍生版，请勿与原版同时安装。'

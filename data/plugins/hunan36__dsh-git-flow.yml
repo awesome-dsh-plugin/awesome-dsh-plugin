@@ -1,0 +1,6 @@
+url: https://github.com/hunan36/dsh-git-flow
+name: hunan36/dsh-git-flow
+category: git
+description:
+  en: Branch chip in the composer tool row that switches, creates, and refreshes workspace branches, commits a checked subset of changed files with a message the session's own model writes from the diff, and pushes the current branch.
+  zh: 位于 composer 工具栏的分支标记：切换、新建、刷新工作区分支；提交时可勾选部分改动文件，提交信息由当前 Session 的模型根据 diff 生成；并可推送当前分支。

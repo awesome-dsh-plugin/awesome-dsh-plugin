@@ -2,5 +2,5 @@ url: https://github.com/173787247/dsh-wsl-editor
 name: 173787247/dsh-wsl-editor
 category: wsl
 description:
-  en: Opens a WSL Linux path in Windows Cursor, VS Code, or Notepad.
-  zh: 用 Windows 的 Cursor、VS Code 或 Notepad 打开 WSL 中的 Linux 路径。
+  en: Opens a WSL Linux path in Windows Cursor, VS Code, or Notepad (optional line/column; win_editor_status).
+  zh: 用 Windows 的 Cursor、VS Code 或 Notepad 打开 WSL 路径（可选行列；含 win_editor_status）。

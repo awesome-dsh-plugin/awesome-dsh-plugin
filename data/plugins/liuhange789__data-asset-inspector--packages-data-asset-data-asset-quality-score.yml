@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-quality-score
+name: liuhange789/data-asset-inspector#data-asset-quality-score
+category: tools
+description:
+  zh: "依据 GB/T 36344-2018 国家标准，从规范性、完整性等六个维度对数据质量进行量化评分，为企业数据资产入表提供可审计的底稿。"
+  en: "Quantitative data quality scoring based on GB/T 36344-2018, providing auditable quality reports for data asset capitalization."

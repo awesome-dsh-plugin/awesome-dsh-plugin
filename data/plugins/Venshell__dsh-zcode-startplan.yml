@@ -1,0 +1,6 @@
+url: https://github.com/Venshell/dsh-zcode-startplan
+name: Venshell/dsh-zcode-startplan
+category: model
+description:
+  en: 'Connects the free ZCode plan to the model picker: a multi-account pool with rotation, per-account rate-limit and quota display, and bigmodel/zai device login.'
+  zh: '把 ZCode 赠送的免费 plan 接进模型选择器：多账号池轮换、按账号的限流与额度展示、bigmodel/zai 双渠道设备登录。'

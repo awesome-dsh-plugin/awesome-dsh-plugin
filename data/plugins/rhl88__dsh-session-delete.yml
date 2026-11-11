@@ -1,0 +1,7 @@
+url: https://github.com/rhl88/dsh-session-delete
+name: rhl88/dsh-session-delete
+category: session
+tarball: https://github.com/rhl88/dsh-session-delete/releases/latest/download/dsh-session-remove.tgz
+description:
+  en: 'Deletes a session from the sidebar session menu after a confirmation dialog, removing its log directory, projection-cache record and workspace/pin/archive accounting; registry calls are timeout-guarded so a stuck workspace registry cannot block the removal.'
+  zh: '在侧边栏会话菜单里二次确认后删除会话：移除会话日志目录、投影缓存记录与工作区/置顶/归档记账；所有注册表调用带超时保护，工作区注册表卡住也能完成删除。'

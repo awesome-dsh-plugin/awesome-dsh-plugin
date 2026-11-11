@@ -1,0 +1,6 @@
+url: https://github.com/Enc-hanted/dsh-pulse
+name: Enc-hanted/dsh-pulse
+category: usage
+description:
+  en: "Cross-session usage and cost observatory for DSH — token trends from hourly lines to 90-day and 1-year heatmaps, per-model DeepSeek peak/off-peak pricing reconciled against the official balance, GLM/Kimi/MiniMax subscription-quota windows with burn-rate forecasts, cache-hit ring, project rankings, CSV export, and a dsh-tui terminal face."
+  zh: "跨会话用量与费用观测台——分时走势与 90 天/1 年热力图、逐模型峰谷计价并与官方余额对账、GLM/Kimi/MiniMax 订阅额度与燃速预估、缓存命中环、项目排行、CSV 导出，另有 dsh-tui 终端面。"

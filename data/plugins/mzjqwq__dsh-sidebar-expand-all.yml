@@ -1,0 +1,7 @@
+url: https://github.com/mzjqwq/dsh-sidebar-expand-all
+name: mzjqwq/dsh-sidebar-expand-all
+category: ui
+description:
+  en: 'Expands every session in the DSH Desktop sidebar. Its control page (/dsh-sidebar-expand-all) applies four equal-length patches to the app.asar workspace client bundle, with backup and one-click restore; after that the "Expand remaining N sessions" row reveals all hidden sessions in one click, collapsing returns to exactly 5, and a workspace reopens fully expanded instead of resetting to five. Needs an app restart, and a DSH update reverts the patch.'
+  zh: '让 DSH 桌面版侧栏的会话全部展开。它的控制页（/dsh-sidebar-expand-all）对 app.asar 内 workspace client bundle 打四处等长补丁，带备份与一键还原；之后「展开其余 N 个会话」点一次就展开该工作区全部剩余会话，「收起」严格回到 5 个，重开工作区也保持全展开而不是退回五个。需要重启应用，DSH 升级后补丁会被覆盖。'
+icon: https://raw.githubusercontent.com/mzjqwq/dsh-sidebar-expand-all/main/assets/icon-180.png

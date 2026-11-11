@@ -1,0 +1,6 @@
+url: https://github.com/soffits/dsh-desktop-view
+name: soffits/dsh-desktop-view
+category: remote
+description:
+  en: 'Live view of the agent machine''s desktop in the DSH Web UI, with sound, relayed through DSH''s own login. Take control for a CAPTCHA or QR login, with clipboard and file transfer, also from a phone. Needs cua-spacesd from a Cua desktop image on the same machine.'
+  zh: '在 DSH 网页界面中实时查看 Agent 所在机器的桌面（含声音），经 DSH 自身登录转发。遇到验证码或扫码登录时可接管，支持剪贴板与文件传输，手机上也能用。需要同一台机器上 Cua 桌面镜像自带的 cua-spacesd。'

@@ -1,0 +1,6 @@
+url: https://github.com/iceriverlin/dsh-session-upload
+name: iceriverlin/dsh-session-upload
+category: ui
+description:
+  en: "Composer attach button for DSH Web: multi-file picks become inline draft capsules, files are stored under the workspace uploads root with an auto-extracted UTF-8 .txt sidecar (txt/docx/xlsx/pptx/zip/odt, zero dependencies), and sent messages carry only the file name — never a raw path."
+  zh: "DSH Web 输入框附件按钮：多选文件以内联草稿胶囊形式插入；文件存储到工作区 uploads 目录并自动生成 UTF-8 .txt 提取件（txt/docx/xlsx/pptx/zip/odt，零依赖），任何纯文本 Agent 都能直接读取；发送消息只带文件名，不泄漏路径。"

@@ -1,0 +1,6 @@
+url: https://github.com/bauerelizabeth07139/opencode-eyes-nvidia
+name: bauerelizabeth07139/opencode-eyes-nvidia
+category: vision
+description:
+  en: 'Vision through NVIDIA NIM: mounts the bundled stdio MCP server as mcp__opencode_eyes_nvidia__describe_image, which describes an image with any of seven hosted vision models (MiniMax-M3 by default) and rotates several API keys.'
+  zh: '走 NVIDIA NIM 的视觉能力:把随插件分发的 stdio MCP 服务器挂成 mcp__opencode_eyes_nvidia__describe_image,用 7 个托管视觉模型之一(默认 MiniMax-M3)描述图片,并支持多 Key 轮换。'

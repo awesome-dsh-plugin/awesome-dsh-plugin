@@ -1,0 +1,6 @@
+url: https://github.com/huaComPj/dsh-workflow-plugin
+name: huaComPj/dsh-workflow-plugin
+category: workflow
+description:
+  en: Configurable serial agent-team workflows with a Manager, role Actors, an independent Judge, and a visual workflow editor.
+  zh: 可配置的串行 Agent 团队工作流，提供 Manager、角色 Actor、独立 Judge 和可视化工作流编辑器。

@@ -1,0 +1,6 @@
+url: https://github.com/docsor1212/dsh-scholar-suite
+name: docsor1212/dsh-scholar-suite
+category: skill
+description:
+  en: Eight academic skills bundled for one-command install — publication-ready academic figures designed from real data with visual review, AI-text humanization, paper polishing and rewriting, PubMed citation verification (DOI/PMID reconciliation), Chinese citation and medical-book reference checks, and WeChat medical article structuring. Three skills run fully local, five call external services only when used (NCBI E-utilities, DOI resolvers, publishing platforms), declared per skill. Zero telemetry, no install-time scripts. Skills run local Python 3.8+; the academic-figures skill also needs its pip dependencies installed.
+  zh: 八个学术技能一次装齐——学术图表（按真实数据设计+视觉审核）、去 AI 味改写、论文润色与改写、PubMed 引文核验（DOI/PMID 逐条对账）、中文著作引用核验、公众号医学文章结构化。三项纯本地运行，五项按功能访问外部服务（NCBI、DOI 解析、发布平台）并逐技能如实声明；零遥测、无安装期脚本。技能经本机 Python 3.8+ 运行；academic-figures 另需安装其 pip 依赖。

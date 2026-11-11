@@ -1,0 +1,6 @@
+url: https://github.com/XXGJ666/dsh-feiyu-affinity
+name: XXGJ666/dsh-feiyu-affinity
+category: tools
+description:
+  en: "Per-person affinity for DSH personas on a QQ channel (a QQ bridge such as dsh-onebot-qq is required — the person is identified by the QQ number in each message; on the plain web UI nothing is injected): per-user scores with daily decay, reasons history, sulking and forgiveness, plus a global mood that colors replies."
+  zh: "在 QQ 通道上给 DSH 人设按人记好感度（需先装 QQ 通道插件，如 dsh-onebot-qq；身份取自消息里的 QQ 号，纯 Web 界面下不会注入）：分数、每日衰减、理由回看、生闷气与哄好，外加影响整体语气的综合情绪。"

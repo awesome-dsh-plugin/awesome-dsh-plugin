@@ -1,0 +1,6 @@
+url: https://github.com/BioAIEvolu/dsh-md-studio
+name: BioAIEvolu/dsh-md-studio
+category: docs
+description:
+  en: 'Native right-sidebar Markdown preview with Mermaid diagrams, KaTeX math, GFM tables and syntax highlighting — rendering engine bundled, fully offline.'
+  zh: '在 DSH 原生右侧文件预览中渲染 Mermaid 图表、KaTeX 公式、GFM 表格与代码高亮，渲染引擎随包内置，完全离线。'

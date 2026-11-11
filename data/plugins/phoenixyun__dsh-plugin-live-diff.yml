@@ -1,0 +1,7 @@
+url: https://github.com/phoenixyun/dsh-plugin-live-diff
+name: phoenixyun/dsh-plugin-live-diff
+category: ui
+description:
+  en: 'Live streaming diffs for DSH file edits: a floating panel and an edit/write transcript card render the change while the model is still emitting the tool call, and the same reading is painted behind the whole app as a frosted-glass backdrop with liquid-glass refraction, pointer light and an in-app appearance tuner. Relies on DSH-internal client surfaces and replaces the built-in edit/write tool cards; verified on DSH 0.1.5-rc.1 and the desktop app 0.2.1-rc.5 (Windows).'
+  zh: 'DSH 文件编辑的实时流式 diff：悬浮面板与 edit/write 对话卡片在模型还在输出工具调用参数时就开始渲染改动；同一份读数还画在整个应用背后，做成可调的磨砂玻璃背景（含液态玻璃折射、鼠标光效与应用内外观面板）。依赖 DSH 内部客户端接口并替换内置 edit/write 工具卡片；仅在 DSH 0.1.5-rc.1 与桌面端 0.2.1-rc.5（Windows）上验证。'
+tarball: https://github.com/phoenixyun/dsh-plugin-live-diff/releases/download/v0.2.1/dsh-plugin-live-diff-0.2.1.tgz

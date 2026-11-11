@@ -1,0 +1,6 @@
+url: https://github.com/Fleey/dsh-workspace-capabilities
+name: Fleey/dsh-workspace-capabilities
+category: tools
+description:
+  en: 'Chooses which skills and MCP servers each workspace may use, from a "Skills & MCP" item in the workspace row''s "..." menu; unchecked skills leave the session catalog, the `skill` tool and `/name`, and unchecked servers have their `mcp__<server>__*` tools denied for that workspace''s sessions, running ones included from the next turn.'
+  zh: '在侧栏工作区行的「…」菜单中新增「技能与 MCP」，按工作区勾选可用的技能与 MCP 服务器；取消勾选的技能从会话技能目录、`skill` 工具和 `/技能名` 中消失，取消勾选的服务器其 `mcp__<服务器>__*` 工具对该工作区的会话禁用，已在运行的会话从下一轮起生效。'

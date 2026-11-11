@@ -1,0 +1,6 @@
+url: https://github.com/chinahhy/DSH-plugins/tree/main/packages/dsh-tether-ios
+name: chinahhy/DSH-plugins#dsh-tether-ios
+category: remote
+description:
+  en: iOS remote companion for DSH Desktop 0.2.0-rc.2 on macOS Apple Silicon, with pairing, approval notifications, and device revocation.
+  zh: 面向 macOS Apple Silicon 上 DSH Desktop 0.2.0-rc.2 的 iOS 远程控制插件，支持配对、审批通知与设备撤销。

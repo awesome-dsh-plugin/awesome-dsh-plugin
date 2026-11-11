@@ -1,0 +1,6 @@
+url: https://github.com/ALittleLov/dsh-clock-tools
+name: ALittleLov/dsh-clock-tools
+category: tools
+description:
+  en: 'Task timing for DSH agents: a task_clock tool that measures elapsed time on the host monotonic clock, resumes across DSH or system restarts with the gap estimated, and returns unknown rather than inventing a number; it does not touch presets.'
+  zh: '给 DSH Agent 的任务计时工具：task_clock 用宿主单调时钟测实际耗时，DSH 或系统重启后可续算并标注空档为估算，桥接不了时返回 unknown 而不是编造数字；不覆盖任何 preset。'

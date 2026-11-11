@@ -1,0 +1,6 @@
+url: https://github.com/David060323/dsh-phone-remote
+name: David060323/dsh-phone-remote
+category: remote
+description:
+  en: 'iOS home-screen fix and always-on kit for DeepSeek Harness remote access: overrides the PWA manifest start_url to /pair-app so the phone icon stops hitting the harness 401, and ships a hidden watchdog that keeps the desktop host and its tunnel alive while the PC is on. Requires @linxin666/dsh-remote-web-ui (it serves /pair-app); the watchdog scripts are Windows-only.'
+  zh: 'DSH 手机远程访问的开箱即用修复套件：把 PWA manifest 的 start_url 改到 /pair-app，解决 iOS「添加到主屏幕」后打开停在 401 的问题；附常驻/守护脚本、自动登录与电源设置说明、中文排错手册。需安装 @linxin666/dsh-remote-web-ui（/pair-app 由它提供）；守护脚本仅 Windows。'

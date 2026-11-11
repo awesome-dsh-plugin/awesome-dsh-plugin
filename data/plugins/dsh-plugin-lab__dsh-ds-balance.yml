@@ -1,0 +1,6 @@
+url: https://github.com/dsh-plugin-lab/dsh-ds-balance
+name: dsh-plugin-lab/dsh-ds-balance
+category: tools
+description:
+  en: Shows the DeepSeek account balance at the bottom of the sidebar, with a configuration card on the Plugins page.
+  zh: 在侧边栏底部显示 DeepSeek 账户余额，并在插件页提供配置卡。

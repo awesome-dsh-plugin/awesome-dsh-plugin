@@ -1,0 +1,6 @@
+url: https://github.com/kgmkm/dsh-genspark
+name: kgmkm/dsh-genspark
+category: tools
+description:
+  en: Genspark tools for DeepSeek Harness - web search, crawl, image/video/audio generation, media analysis, X/Instagram/Reddit search and model listing through @genspark/cli, with 17 typed tools and 18 /genspark-* commands. Requires @genspark/cli installed and logged in (gsk login), or GSK_API_KEY set.
+  zh: 将 Genspark 能力接入 DeepSeek Harness：网页搜索、抓取、图片/视频/音频生成、媒体理解、X/Instagram/Reddit 搜索与模型列表，提供 17 个工具和 18 个 /genspark-* 命令。需安装并登录 @genspark/cli（gsk login），或设置 GSK_API_KEY。

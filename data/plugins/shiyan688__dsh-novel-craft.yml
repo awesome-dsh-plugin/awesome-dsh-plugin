@@ -1,0 +1,6 @@
+url: https://github.com/shiyan688/dsh-novel-craft
+name: shiyan688/dsh-novel-craft
+category: workflow
+description:
+  en: 'A novel-writing workbench for DeepSeek Harness: you tap thumbs-up or thumbs-down on candidate passages, and the model distils them into a short preference profile that carries into later drafting calls while the manuscript stays out of the drafting context. Adds a chapter board, per-chapter writing packs, annotation-scoped revision that rewrites only the annotated paragraph and verifies the rest byte-for-byte, a project ledger, and local pacing checks.'
+  zh: DeepSeek Harness 的小说写作工作台：你在候选段落上点赞或点踩，模型把这批点选蒸馏成一份简短的「作者偏好档案」带进后续写稿，正文本身不进写稿上下文。另有章节看板、每章写作包、只改被批注段落并逐字核对其余段落的批注式微调、项目台账，以及不把正文送进模型的本地情节体检。

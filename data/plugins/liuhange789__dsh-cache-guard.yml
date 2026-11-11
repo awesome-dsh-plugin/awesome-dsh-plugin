@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/dsh-cache-guard
+name: liuhange789/dsh-cache-guard
+category: tools
+description:
+  en: 'DSH cache health guard and cost coach: cache_guard_health returns green/yellow/red health, a one-line hint and a PTC suggestion; cache_guard_config reads or updates settings.'
+  zh: 'DSH 缓存健康度守卫与省钱教练：cache_guard_health 工具给出绿/黄/红健康度、一行干预建议与 PTC 切换提示，cache_guard_config 读写开关与灵敏度。'

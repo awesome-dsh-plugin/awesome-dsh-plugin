@@ -1,0 +1,7 @@
+url: https://github.com/PolitaryMonicy/dsh-agent-clean
+name: PolitaryMonicy/dsh-agent-clean
+category: session
+description:
+  en: 'Removes subagent entries and orphaned projection caches from DeepSeek Harness session logs after the app quits, always dry-run first and with a full backup.'
+  zh: '在 DSH 完全退出后清理会话日志里的子代理条目与孤儿投影缓存，默认先试演并整份备份。'
+tarball: https://github.com/PolitaryMonicy/dsh-agent-clean/releases/latest/download/dsh-agent-clean.tgz

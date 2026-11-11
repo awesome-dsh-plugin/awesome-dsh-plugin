@@ -1,0 +1,6 @@
+url: https://github.com/milu7/dsh-directory-plugin
+name: milu7/dsh-directory-plugin
+category: ui
+description:
+  en: Starts the DSH desktop New Workspace folder picker in a directory you configure (Windows only) and adds a settings page for it, falling back to the stock picker when the saved folder is missing.
+  zh: 让 DSH 桌面端「新建工作区」的文件夹选择框从你设定的目录开始（仅 Windows），并在设置里提供配置入口；目录不存在时静默回退到原生选择框。

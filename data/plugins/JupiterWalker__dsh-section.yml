@@ -1,0 +1,8 @@
+url: https://github.com/JupiterWalker/dsh-section
+name: JupiterWalker/dsh-section
+category: ui
+tarball: https://github.com/JupiterWalker/dsh-section/releases/download/v0.1.0/local-dsh-section-0.1.0.tgz
+icon: https://raw.githubusercontent.com/JupiterWalker/dsh-section/main/assets/icon-180.png
+description:
+  en: 'Cross-project session grouping for the DSH sidebar: define named sections, assign sessions from any project into them, then collapse, rename, archive or move a whole project in one action; a toggle in the Sections panel swaps the host session browser for the section tree and restores it on demand, and each row flags live work or a completion you have not looked at yet.'
+  zh: '把不同项目的会话收进左侧边栏里可折叠的自定义分组：会话行与项目行各有菜单，可加入分组、移出分组、重命名、归档，或把整个项目一次性移入某个分组；分组面板里的开关可把宿主侧栏切换成分组树、随时恢复，行尾还会提示会话正在跑或跑完还没看过。'

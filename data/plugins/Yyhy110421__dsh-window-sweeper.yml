@@ -1,0 +1,6 @@
+url: https://github.com/Yyhy110421/dsh-window-sweeper
+name: Yyhy110421/dsh-window-sweeper
+category: workflow
+description:
+  en: 'Minimizes or closes only the windows the agent opened during a task, using a baseline snapshot; pre-existing user windows and shell processes are left alone. Windows only.'
+  zh: '清场：任务收尾时只收 AI 本次新开的窗口，默认最小化，不碰用户原有窗口；仅 Windows。'

@@ -1,0 +1,8 @@
+url: https://github.com/Eason-22/dsh-autorestart
+name: Eason-22/dsh-autorestart
+category: session
+description:
+  en: 'DeepSeek Harness plugin: restart without losing work. It waits until every conversation is idle, restarts the host, and picks the interrupted work back up instead of dying with it; where a supervisor already manages the host it asks that supervisor, and it never starts a second host next to a running one. It also fixes a common one: stale login cookies pile up on every launch until the request header overflows and the host will not start; the plugin clears them before each restart. Every restart is preceded by a snapshot of the configuration and the installed plugins - 2 are kept by default, up to 10 are allowed, and old or incomplete ones are pruned. That snapshot is never applied automatically: the plugin does not watch the host and does not restore anything on its own; it is only there for you to look at, or to roll back by hand. When the work is done it counts down and powers the machine off, so nobody has to stay up at night. It works on the Windows desktop client, and on a hosted dsh web instance - verified on WSL with systemd; Windows-hosted web, WSL without systemd, and native Linux are untested.'
+  zh: '重启不丢工作：等所有对话空闲后自动重启，重启后接着干、不中断；已有守护的机器交给守护重启，绝不双开。 还顺手治一个常见毛病：反复启动攒下的过期登录 cookie 会把请求头撑爆、让 DSH 起不来，插件在每次重启前先清掉它们。 每次重启前自动备份配置和已装插件，默认留 2 份、最多 10 份，旧的和不完整的自动清理。 这份备份不会被自动使用：插件不监视宿主、不自动还原，它只是给你留一份可以手工翻回去的存档。 所有工作完成后倒数关机，晚上无需人值守。 桌面客户端可用；dsh web 托管端已在 WSL（有 systemd）上验证；Windows 上的 web、无 systemd 的 WSL、原生 Linux 尚未验证。'
+icon: https://raw.githubusercontent.com/Eason-22/dsh-autorestart/main/assets/icon-180.png
+

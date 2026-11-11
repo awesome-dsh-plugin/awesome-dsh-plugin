@@ -1,0 +1,6 @@
+url: https://github.com/DogEgg-alR/dsh-plugin-installer
+name: DogEgg-alR/dsh-plugin-installer
+category: market
+description:
+  en: 'Install, update and remove DSH plugins from a tab in the Plugins page. Installs call the profile''s in-process pluginManager service, so a plugin can be added while the desktop app is running instead of only through the CLI. Updates are delegated to dsh-market''s public update API v1 (required for that section) and show the reported phase, percent and downloaded bytes as a progress bar, with rollback when the market reports a restore point. When removal is refused because the bundle is in use, it disables the bundle, drops it from the profile manifest, and queues the leftover files under the profile for a sweep after the next start.'
+  zh: '在插件页的一个标签里安装、更新和卸载 DSH 插件。安装直接调用 profile 进程内的 pluginManager 服务，因此桌面端运行中也能装，不必只靠命令行。更新委托给 dsh-market 的公开 update API v1（该区需要装 dsh-market），把市场报告的阶段、百分比与已下载字节显示成进度条，市场提供恢复点时给出一键回滚。卸载被「插件正在使用中」拒绝时，先停用该组合包，再从 profile 清单里摘除，并把残留文件记入 profile 下的待清理队列，下次启动后自动清扫。'

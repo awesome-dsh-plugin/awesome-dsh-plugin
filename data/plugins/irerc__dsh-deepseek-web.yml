@@ -1,0 +1,7 @@
+url: https://github.com/irerc/dsh-deepseek-web
+name: irerc/dsh-deepseek-web
+category: model
+description:
+  en: 'Adds a browserless deepseek-web provider that drives chat.deepseek.com, with an account pool (rotation, cooldown, auto-failover), in-panel login (browser, or email + password with MFA) and token usage stats.'
+  zh: '把 chat.deepseek.com 网页版接成 deepseek-web provider：纯 HTTP 无浏览器，多账号轮换/冷却/自动切换，插件内登录（浏览器，或邮箱+密码+验证码），带 token 用量统计。'
+tarball: https://github.com/irerc/dsh-deepseek-web/releases/latest/download/dsh-deepseek-web.tgz

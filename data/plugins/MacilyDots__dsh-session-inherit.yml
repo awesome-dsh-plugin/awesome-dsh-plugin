@@ -1,0 +1,7 @@
+url: https://github.com/MacilyDots/dsh-session-inherit
+name: MacilyDots/dsh-session-inherit
+category: session
+description:
+  en: 'Adds an Inherit row to the session menu: mechanically extracts concrete anchors (task, recent instructions, files edited, recent failures, commands, todos) from a long session into a handoff and continues in a clean session, with the same preset, no history copied and no model call.'
+  zh: '会话菜单新增「继承」：把长会话里的具体锚点（任务原文、最近的用户指令、改过的文件、最近的失败、命令、待办）机械提取成交接单，在干净的新会话里接着干——预设默认一并继承，不复制历史，也不调用模型。'
+tarball: https://github.com/MacilyDots/dsh-session-inherit/releases/latest/download/dsh-session-inherit.tgz

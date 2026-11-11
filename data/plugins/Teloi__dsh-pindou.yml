@@ -1,0 +1,6 @@
+url: https://github.com/Teloi/dsh-pindou
+name: Teloi/dsh-pindou
+category: fun
+description:
+  en: 'A small bead-art game in the DSH Web right sidebar for the wait while the model replies: 12 built-in templates with guide beads, free drawing in 16 colors on 12/16/24 boards, a pattern drawn by the model from one sentence, on-device picture-to-pattern conversion (pictures are never uploaded), ironing finished pieces onto a wall of up to 60 works, and PNG export.'
+  zh: '在 DSH Web 右侧边栏拼小拼豆的轻量小游戏，等模型回复的空档拼一张：12 个带引导豆的内置图案、16 色在 12/16/24 格板上自由拼、一句话让模型生成图纸、照片在本机转成图纸（不上传）、拼完熨烫存入最多 60 件的作品墙，并可导出 PNG。'

@@ -1,0 +1,6 @@
+url: https://github.com/androidly/dsh-restart-control
+name: androidly/dsh-restart-control
+category: ui
+description:
+  en: 'Adds a restart control at the DSH Web sidebar foot: the host exits through its own graceful path and the detected supervisor (systemd, Kubernetes or Docker) boots the replacement, or the plugin starts one directly when it finds no supervisor; a frame-wide notice polls the host pid until a new process answers.'
+  zh: '在 DSH Web 侧边栏底部添加重启控件：宿主经自身的优雅退出通道退出，由检测到的进程守护（systemd、Kubernetes 或 Docker）拉起新进程，没有守护时插件自行拉起；右下角提示条轮询宿主 pid，直到新进程应答。'

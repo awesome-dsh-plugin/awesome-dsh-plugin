@@ -1,0 +1,6 @@
+url: https://github.com/Mooling0602/dsh-better-plugin-updater
+name: Mooling0602/dsh-better-plugin-updater
+category: market
+description:
+  en: 'Update checker for plugin bundles installed in a DSH profile: a Version section on the detail page of a plugin installed from a GitHub repository or release tarball compares the installed commit or version with the exact target, and the /plugin-updater commands list bundles, check npm, Git-repository and GitHub-release sources, and prepare an update that runs only after confirmation; a read-only plugin_updates tool lets an agent check without installing, npm registry packages keep DSH native update controls, a fixed version or commit stays pinned unless explicitly allowed, and the plugin never approves build scripts.'
+  zh: '检查 DSH profile 内已装插件包更新的工具：从 GitHub 仓库或 release tarball 安装的插件，其详情页会出现 Version 分区，把已装 commit 或版本与确切目标版本对照；/plugin-updater 命令可列出插件包、检查 npm、Git 仓库与 GitHub release 三种来源并生成待确认的更新，确认后才执行；只读的 plugin_updates 工具让 Agent 只检查而不安装，npm registry 包继续使用 DSH 原生更新方式，固定版本或 commit 需显式允许才会升级，且本插件从不代为批准构建脚本。'

@@ -2,5 +2,5 @@ url: https://github.com/nzl153/dsh-pet-whale
 name: nzl153/dsh-pet-whale
 category: fun
 description:
-  en: 'Desktop pet drawn from the official whale outline: pure-SVG animation follows agent state (thinking, working, celebrating, error), with poke and double-click flip interactions, cursor avoidance, 7 palettes, light/dark theme sync, and a playable web preview.'
-  zh: 官方鲸鱼轮廓的桌宠：纯 SVG 动画随 agent 状态切换（思考／工作／完成／报错），可戳可拖、双击翻滚，光标停留在身侧会自己避让，7 套色板并跟随亮暗主题，附网页预览可直接试玩。
+  en: 'Desktop pet drawn from the official whale outline, for both the desktop app and the web UI: SVG animations and facial expressions follow agent state (thinking, working, done, error, waiting for confirmation), and it can follow other running sessions with a count badge; poke it, drag it, shake it dizzy, squash it against a screen edge, or rub the cursor over its head for a headpat; 7 palettes, 4 sizes, synthesized sounds, light/dark theme sync, and a playable web preview.'
+  zh: 官方鲸鱼轮廓的桌宠，桌面端和网页端都能用：SVG 动画和表情随 agent 状态切换（思考／工作／完成／报错／等待确认），还能跟随其他在跑的会话并用角标显示个数；可戳可拖、能甩晕、按在屏幕边上会压扁，鼠标在头顶来回蹭就是摸头；7 套色板、4 档大小、合成音效，跟随亮暗主题，附网页预览可直接试玩。

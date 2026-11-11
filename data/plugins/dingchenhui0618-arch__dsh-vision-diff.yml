@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-vision-diff
+name: dingchenhui0618-arch/dsh-vision-diff
+category: vision
+description:
+  en: 'Pixel-level screenshot diff for visual regression. Two local PNGs in; a machine-readable first line (`PIXEL_CHANGED=true|false`, greppable as an assertion), then the difference ratio, per-region bounding boxes, maximum channel delta and mean absolute error, plus a self-contained HTML comparison page. An ignore-region list with absolute or fractional coordinates excludes clocks, cursors and other per-render noise. It deliberately does no content recognition: it answers only "did this change", which is the part that can be made deterministic. Entirely local — no model call, no network, no upload.'
+  zh: '面向视觉回归的像素级截图比对。输入两张本地 PNG，第一行是可机器判定的结论（`PIXEL_CHANGED=true|false`，可以直接 grep 当断言），随后是差异比例、差异区域包围盒、最大通道差与平均绝对误差，并生成一份自包含的 HTML 对照页。可用绝对或比例坐标声明忽略区，排除时钟、光标这类每次渲染都会变的部分。它刻意不做内容识别——只回答「变没变」，因为这一步可以做成确定性的。全部本地完成：不调模型、不联网、不上传。'

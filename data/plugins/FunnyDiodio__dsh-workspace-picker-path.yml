@@ -1,0 +1,7 @@
+url: https://github.com/FunnyDiodio/dsh-workspace-picker-path
+name: FunnyDiodio/dsh-workspace-picker-path
+category: ui
+description:
+  en: 'Adds a General settings row choosing where the Add-workspace directory picker opens: a fixed custom path (typed, pasted, or picked visually) or the last directory you confirmed. Quoted and CJK paths are accepted, and a This PC level reaches other Windows drives.'
+  zh: '在通用设置中新增一行，控制点击"添加工作区"时目录选择框从哪里打开：固定自定义路径（可输入、粘贴或可视化选取），或上次确认的目录。容忍带引号与中文路径，并提供「此电脑」层以跨盘选择。'
+icon: https://raw.githubusercontent.com/FunnyDiodio/dsh-workspace-picker-path/HEAD/assets/icon-180.png

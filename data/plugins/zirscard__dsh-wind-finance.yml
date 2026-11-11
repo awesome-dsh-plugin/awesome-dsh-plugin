@@ -1,0 +1,8 @@
+# Entry for the awesome-dsh-plugin list.
+url: https://github.com/zirscard/dsh-wind-finance
+name: zirscard/dsh-wind-finance
+category: market
+description:
+  en: 'Registers one `wind_finance` tool for DeepSeek Harness: it routes a financial question to the right Wind data domain, executes it over the Wind meta-router MCP endpoint (or the per-domain CLI in batch mode), and keeps a per-day receipt so the same dataset is not pulled twice against one shared daily quota. Authentication, quota and network failures are reported with their error codes instead of falling back to another data source. Credentials are read from the environment and are never bundled with the plugin.'
+  zh: '为 DeepSeek Harness 注册一个 `wind_finance` 工具：把金融问题路由到正确的 Wind 数据域，经 Wind meta-router MCP 端点（或批量模式下的分域 CLI）执行，并用按日回执避免同一份数据在共享日额度下被重复取数。认证、额度与网络失败如实返回错误码，不换数据源兜底。凭据只从环境变量读取，不随插件分发。'
+tarball: https://github.com/zirscard/dsh-wind-finance/releases/download/v0.1.0/dsh-wind-finance.tgz

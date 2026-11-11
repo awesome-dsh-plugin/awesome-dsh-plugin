@@ -1,0 +1,6 @@
+url: https://github.com/lishuo4096/artifact-center
+name: lishuo4096/artifact-center
+category: tools
+description:
+  en: 'Cross-session artifact center: agent tools that register deliverable files (PDF, Excel, PPT, code, JSON) into one shared directory, plus a sidebar panel that filters them by category, extension or keyword.'
+  zh: '跨会话产物中心：agent 产出重要文件时用工具登记（默认复制一份到统一目录），侧边栏面板按分类、后缀或关键词即时筛选。'

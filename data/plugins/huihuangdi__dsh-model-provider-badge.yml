@@ -1,0 +1,6 @@
+url: https://github.com/huihuangdi/dsh-model-provider-badge
+name: huihuangdi/dsh-model-provider-badge
+category: ui
+description:
+  en: Shows the provider behind a session's current model as a compact badge in the DSH Web composer tool row, left of the model selector.
+  zh: 在 DSH Web 输入框工具行、模型选择器左侧显示当前会话所用模型的供应商。

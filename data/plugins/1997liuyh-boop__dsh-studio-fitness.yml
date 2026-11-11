@@ -1,0 +1,6 @@
+url: https://github.com/1997liuyh-boop/dsh-studio-fitness
+name: 1997liuyh-boop/dsh-studio-fitness
+category: tools
+description:
+  en: 'Local fitness studio recording workouts, exercise duration and training volume within the DSH workspace, stored in the browser. Needs the dsh-studio-projects runtime and the dsh-worktable container from 1997liuyh-boop/dsh-studio-library installed first.'
+  zh: 'DSH 工作区内的本机健身工作室，记录训练、运动时长与训练容量，数据存于浏览器本地存储。需先安装 1997liuyh-boop/dsh-studio-library 的 dsh-studio-projects 运行时与 dsh-worktable 容器。'

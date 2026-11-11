@@ -1,0 +1,6 @@
+url: https://github.com/oyhdd/dsh-git-changes/tree/main/packages/dsh-git-changes
+name: oyhdd/dsh-git-changes#dsh-git-changes
+category: git
+description:
+  en: "Right-sidebar Git review panel for DSH: staged and unstaged change tree, inline and side-by-side diffs, stage/unstage/discard, commit and push, AI-generated commit messages, and line blame. A fork of sadgsk/dsh-review-panel 0.3.1; install either this or the upstream panel, not both."
+  zh: "DSH 右侧栏 Git 审查面板：暂存 / 未暂存改动树、内联与左右并排 diff、暂存 / 取消暂存 / 放弃更改、提交与推送、AI 生成提交信息、行级 Blame。本条目是 sadgsk/dsh-review-panel 0.3.1 的 fork，与上游面板不能同时安装。"

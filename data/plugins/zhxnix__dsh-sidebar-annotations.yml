@@ -1,0 +1,7 @@
+url: https://github.com/zhxnix/dsh-sidebar-annotations
+name: zhxnix/dsh-sidebar-annotations
+category: ui
+description:
+  en: Browser and mini-program element annotations with collapsible composer notes and source locations.
+  zh: 为 DSH 提供网页与小程序元素注释、折叠注释附件及源码定位。
+tarball: https://github.com/zhxnix/dsh-sidebar-annotations/releases/latest/download/dsh-sidebar-annotations.tgz

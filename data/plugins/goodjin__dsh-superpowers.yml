@@ -1,0 +1,6 @@
+url: https://github.com/goodjin/dsh-superpowers
+name: goodjin/dsh-superpowers
+category: skill
+description:
+  en: 'Runs Superpowers as an agent preset and gives each skill its own subagent model from a Settings table, so TDD, debugging and verification no longer all inherit the parent model.'
+  zh: '把 Superpowers 作为 Agent 预设运行，并在设置表里为每个技能单独指定子代理模型，测试、系统调试与收尾验证不再全部沿用父会话的模型。'

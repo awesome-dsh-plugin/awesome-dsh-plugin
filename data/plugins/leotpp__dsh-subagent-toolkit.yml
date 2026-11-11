@@ -1,0 +1,6 @@
+url: https://github.com/leotpp/dsh-subagent-toolkit
+name: leotpp/dsh-subagent-toolkit
+category: model
+description:
+  en: "Adds a Settings page to pin one OpenAI-compatible subagent model (or follow the main model), writes the official subagent-model-selection allowlist, reminds the parent to pass that route, and optionally runs one-shot tasks through an isolated Pi CLI provider."
+  zh: "在设置里为子代理单独指定一个 OpenAI 兼容模型（或不选则跟随主模型），写入官方 subagent-model-selection 白名单，并在仅有一条路由时提醒主代理显式传参；可选提供与 DSH 进程隔离的 Pi CLI 一次性子代理。"

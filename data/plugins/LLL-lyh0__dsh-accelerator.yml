@@ -1,0 +1,8 @@
+url: https://github.com/LLL-lyh0/dsh-accelerator
+name: LLL-lyh0/dsh-accelerator
+category: dev
+icon: https://raw.githubusercontent.com/LLL-lyh0/dsh-accelerator/main/docs/store/icon-180.png
+tarball: https://github.com/LLL-lyh0/dsh-accelerator/releases/latest/download/dsh-accelerator.tgz
+description:
+  en: "Repairs domains blocked by SNI filtering on Windows from inside DSH, without any self-hosted server."
+  zh: "在 Windows 上从 DSH 内部修复被 SNI 阻断的域名，不依赖任何自建服务器。"

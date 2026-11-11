@@ -1,0 +1,6 @@
+url: https://github.com/zdkcomeon/dsh-mcp-link
+name: zdkcomeon/dsh-mcp-link
+category: tools
+description:
+  en: "Scans MCP configurations from 13 local AI clients and from project workspaces, imports selected servers into the active DSH profile, and adds connection testing, in-place reconnect, JSON import and visual add, edit and removal controls."
+  zh: "扫描 Cursor、Claude Code、Codex CLI、Gemini CLI、VS Code 等 13 种客户端和项目工作区的 MCP 配置，把选中服务接入当前 DSH profile，并提供连接测试、原地重连、JSON 导入和图形化新增、编辑和移除。"

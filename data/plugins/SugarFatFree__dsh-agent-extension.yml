@@ -1,0 +1,6 @@
+url: https://github.com/SugarFatFree/dsh-agent-extension
+name: SugarFatFree/dsh-agent-extension
+category: skill
+description:
+  en: Discovers workspace Markdown commands, skills and path-scoped rules from .dsh and .agents directories.
+  zh: 从 .dsh 与 .agents 目录发现工作区 Markdown 命令、技能和按路径生效的规则。

@@ -1,0 +1,7 @@
+url: https://github.com/Zeppeli777/dsh-stardew-skin
+name: Zeppeli777/dsh-stardew-skin
+category: theme
+description:
+  en: 'Stardew Valley theme (component-override edition): an official-mechanism client theme that stacks a cream-paper alias-token layer, stitched pixel font and valley wallpaper over the intact official React UI. npm: dsh-theme-stardew-valley.'
+  zh: '星露谷物语主题·组件替换版：走 dsh 官方客户端主题机制，在完整保留的官方 React UI 上叠加奶油纸面 alias token 层、缝合像素字体与山谷壁纸。npm 包名 dsh-theme-stardew-valley。'
+icon: https://raw.githubusercontent.com/Zeppeli777/dsh-stardew-skin/main/assets/Junimo_Star.png

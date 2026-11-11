@@ -1,0 +1,6 @@
+url: https://github.com/V01d-Project/dsh-chaos-plugins/tree/main/packages/dsh-chaos-fixer-crasher
+name: V01d-Project/dsh-chaos-plugins#dsh-chaos-fixer-crasher
+category: fun
+description:
+  en: 'Exits the DSH host with code 1 when the dsh-chaos-crash-fixer repair plugin is installed. Warning: it crashes DSH on boot while the repair plugin is present; install dsh-chaos-fixer-crash-fixer to disarm it. Joke plugin.'
+  zh: '发现 dsh-chaos-crash-fixer（修复器）在岗就让 DSH 宿主以 1 退出。警告：修复器在的时候它会开机即崩，必须装 dsh-chaos-fixer-crash-fixer 拆引信。玩笑插件。'

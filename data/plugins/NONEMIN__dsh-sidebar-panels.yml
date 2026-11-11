@@ -1,0 +1,6 @@
+url: https://github.com/NONEMIN/dsh-sidebar-panels
+name: NONEMIN/dsh-sidebar-panels
+category: ui
+description:
+  en: 'Manage the left global panel list from Settings → General: show or hide entries, reorder them by dragging in the sidebar or in the dialog, and keep entries that have their own sidebar switch in step with it.'
+  zh: 在 设置 → 通用 里集中管理左侧全局面板图标：显示或隐藏、拖动排序；自带侧栏开关的插件，其开关与本插件保持同步。

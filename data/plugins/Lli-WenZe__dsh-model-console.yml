@@ -1,0 +1,6 @@
+url: https://github.com/Lli-WenZe/dsh-model-console
+name: Lli-WenZe/dsh-model-console
+category: ui
+description:
+  en: 'Model console panel: switch the model for every conversation at once or one at a time, filter sessions by idle time, fold subagents under their parent session, and bulk archive or release sessions.'
+  zh: '模型控制台面板：一次性切换所有对话的模型或单独切换某一个，按闲置时间筛选会话，把子代理折叠在所属主对话下面，并批量归档或释放会话。'

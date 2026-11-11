@@ -1,0 +1,6 @@
+url: https://github.com/zhujiuyi/dsh-tokenDashBoard
+name: zhujiuyi/dsh-tokenDashBoard
+category: usage
+description:
+  en: 'Token usage dashboard in the DeepSeek Harness sidebar: daily totals from session logs with a 12-month heatmap, per-provider breakdown over today/7d/30d/all (hourly for today) including each route''s average output speed, and a per-session ranking that includes archived and deleted sessions and folds subagent usage into its parent.'
+  zh: 'DeepSeek Harness 侧栏的 Token 用量看板：从本机会话日志统计每日消耗并给出近 12 个月热力图；按供应商渠道查看今天/近 7 天/近 30 天/全部的用量（今天按小时展开）及各渠道平均输出速度；按会话排行，包含已归档与已删除会话，子代理消耗并入父会话。'

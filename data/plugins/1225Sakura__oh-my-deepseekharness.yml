@@ -1,0 +1,6 @@
+url: https://github.com/1225Sakura/oh-my-deepseekharness
+name: 1225Sakura/oh-my-deepseekharness
+category: workflow
+description:
+  en: Multi-agent orchestration layer for DeepSeek Harness — autopilot/ralph/team execution modes, 19 role cards, 40 bilingual skills, and a bundled MCP state server, ported from oh-my-claudecode.
+  zh: DeepSeek Harness 的多智能体编排层——autopilot/ralph/team 三种执行模式、19 张角色卡、40 个双语技能与内置 MCP 状态服务，移植自 oh-my-claudecode。

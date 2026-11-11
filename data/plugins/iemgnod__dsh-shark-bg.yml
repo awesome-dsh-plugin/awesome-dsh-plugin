@@ -1,0 +1,7 @@
+url: https://github.com/iemgnod/dsh-shark-bg
+name: iemgnod/dsh-shark-bg
+category: theme
+description:
+  en: 'ASCII sharks and schooling fish swim behind the DSH Web interface, with a settings page for veil opacity, shark count, size, fish density, swim speed and grid strength.'
+  zh: '在 DSH Web 界面背景中游动的 ASCII 鲨鱼与鱼群，设置页可调遮罩浓度、鲨鱼数量与体型、鱼群密度、游速和网格浓度。'
+icon: https://raw.githubusercontent.com/iemgnod/dsh-shark-bg/main/assets/icon-180.png

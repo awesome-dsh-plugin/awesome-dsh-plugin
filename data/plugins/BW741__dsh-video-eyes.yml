@@ -1,0 +1,7 @@
+url: https://github.com/BW741/dsh-video-eyes
+name: BW741/dsh-video-eyes
+category: vision
+description:
+  en: 'Lets the model actually see a video: local ffmpeg samples timestamped stills and faster-whisper transcribes the audio track, so the agent reads real pixels frame by frame instead of trusting a text summary. Fully local, nothing uploaded; reports honestly when the audio has no speech. Windows only; needs Python 3.10+ and ffmpeg installed, and the first video_eyes_setup run downloads about 700 MB (faster-whisper and its model).'
+  zh: '让模型真的「看见」视频：本地 ffmpeg 按时间抽静帧、faster-whisper 转写音轨，模型逐帧读真实像素，而不是只读一段文字摘要。全程本地、不上传画面；音轨没有语音时如实报告而不是硬编。仅限 Windows；需已装 Python 3.10+ 与 ffmpeg，首次运行 video_eyes_setup 约下载 700 MB（faster-whisper 及其模型）。'
+tarball: https://github.com/BW741/dsh-video-eyes/releases/download/v1.0.0/dsh-video-eyes-1.0.0.tgz

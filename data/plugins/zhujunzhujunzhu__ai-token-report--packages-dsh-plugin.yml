@@ -1,0 +1,6 @@
+url: https://github.com/zhujunzhujunzhu/ai-token-report/tree/main/packages/dsh-plugin
+name: zhujunzhujunzhu/ai-token-report#dsh-plugin
+category: usage
+description:
+  en: 'Token usage panel for DeepSeek Harness: a bar above the composer opens billing token totals, trend charts, per-model and per-project breakdowns and a custom date range, read from local session logs of DSH, Codex, Claude Code, Trae and WorkBuddy. With a self-hosted portal URL and an app key it also reports usage events to that portal; with neither configured it collects nothing. It exposes token_usage tools plus a ctx.tokenReport service, and never collects conversation content.'
+  zh: 'DSH 的 token 用量面板：输入框上方一条用量条，点开是计费总量、趋势图、按模型/项目/来源的分组明细与自定义日期范围，数据来自本机 DSH / Codex / Claude Code / Trae / WorkBuddy 的会话日志；填了自建服务端地址与 appKey 后，用量事件会实时上报到那个服务端，两者都没配时一个字节都不采集；另提供 token_usage 工具与 ctx.tokenReport 服务。不采集对话内容。'

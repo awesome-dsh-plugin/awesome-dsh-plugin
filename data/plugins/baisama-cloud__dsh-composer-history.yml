@@ -2,5 +2,5 @@ url: https://github.com/baisama-cloud/dsh-composer-history
 name: baisama-cloud/dsh-composer-history
 category: ui
 description:
-  en: "Command history for the Web UI composer: press Up/Down to cycle through previously sent instructions, then restore the draft at the end of the history."
-  zh: "Web UI 输入框命令历史：按 ↑/↓ 浏览此前发送的指令，回到历史末尾时恢复原草稿。"
+  en: "Command history for the DSH composer: press Up/Down to cycle through previously sent instructions, then restore the draft at the end of the history; works in the official desktop app and web-profile builds."
+  zh: "DSH 输入框命令历史：按 ↑/↓ 浏览此前发送的指令，回到历史末尾时恢复原草稿；官方桌面端与 Web profile 均可用。"

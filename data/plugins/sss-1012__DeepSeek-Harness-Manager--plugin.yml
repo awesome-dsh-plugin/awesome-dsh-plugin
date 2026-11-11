@@ -1,0 +1,6 @@
+url: https://github.com/sss-1012/DeepSeek-Harness-Manager/tree/main/plugin
+name: sss-1012/DeepSeek-Harness-Manager#plugin
+category: dev
+description:
+  en: Adds a launcher button in the DSH web UI that opens the Windows DeepSeek Harness Manager, or its download page when the app is not installed.
+  zh: 在 DSH Web 界面左下角加一个「管理器」按钮，一键打开 Windows 版 DeepSeek Harness Manager（未安装则跳转下载页）。

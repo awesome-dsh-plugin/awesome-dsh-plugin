@@ -1,0 +1,6 @@
+url: https://github.com/xufu5438-netizen/dsh-boot-video
+name: xufu5438-netizen/dsh-boot-video
+category: ui
+description:
+  en: Full-screen video boot splash — play an mp4 at startup, skip with a click, import your own clip, and non-playable codecs are transcoded to H.264 automatically.
+  zh: 视频开机片头：启动时全屏播放 mp4，点击或 Esc 跳过，可导入自己的视频，浏览器解不了的编码自动转成 H.264。

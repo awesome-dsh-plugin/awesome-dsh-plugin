@@ -1,0 +1,6 @@
+url: https://github.com/zhang66633/dsh-memvault
+name: zhang66633/dsh-memvault
+category: memory
+description:
+  en: "Bridges DSH to a local MemVault store: core memory blocks injected into the system prompt, finished turns extracted through MemVault's own pipeline, and a panel to browse, trace, review and replay what was stored."
+  zh: "把 DSH 接到本机 MemVault 记忆库：核心记忆块注入系统提示词、结束的轮次经由 MemVault 自己的管线抽取，并提供浏览、追溯、复核与重抽的面板。"

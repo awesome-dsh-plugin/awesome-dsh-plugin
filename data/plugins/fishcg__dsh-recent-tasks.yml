@@ -1,0 +1,7 @@
+url: https://github.com/fishcg/dsh-recent-tasks
+name: fishcg/dsh-recent-tasks
+category: ui
+description:
+  en: "A collapsible Recent tasks folder at the top of the sidebar above 工作区: the most recently updated sessions, pinning that ignores recency, running-state spinners, and a per-row menu with rename, fork and archive."
+  zh: "侧边栏「工作区」上方多一个可折叠的「最近任务」文件夹：最近更新的会话一目了然，可置顶常用会话（不参与时间排序），运行中的任务带转圈标记，行内菜单支持重命名、在新会话里接着聊与归档。"
+icon: https://raw.githubusercontent.com/fishcg/dsh-recent-tasks/main/assets/icon-180.png

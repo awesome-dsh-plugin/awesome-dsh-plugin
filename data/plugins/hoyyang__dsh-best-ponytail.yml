@@ -1,0 +1,6 @@
+url: https://github.com/hoyyang/dsh-best-ponytail
+name: hoyyang/dsh-best-ponytail
+category: skill
+description:
+  en: 'Ponytail lazy-senior-dev ruleset for DeepSeek Harness: a 7-rung minimal-code ladder (YAGNI, reuse, stdlib, native, installed deps, one line, minimum), six skills (main rules, over-engineering review, repo audit, debt ledger, gain scoreboard, help), a /ponytail session command for lite/full/ultra/off levels, and optional always-on ruleset injection via config. Vendored verbatim from upstream ponytail (MIT), zero tools registered, clean uninstall.'
+  zh: '把「最懒资深工程师」规则集 ponytail 装进 DeepSeek Harness：7 级最小代码阶梯（YAGNI、复用、标准库、平台原生、已装依赖、一行、最小实现），六个技能（主规则、过度工程 review、全仓 audit、debt 欠账台账、gain 计分板、help 速查），/ponytail 会话级调档命令（lite/full/ultra/off），以及可选的每轮常驻规则注入。上游内容 MIT 原样打包，零工具注册，卸载零残留。'

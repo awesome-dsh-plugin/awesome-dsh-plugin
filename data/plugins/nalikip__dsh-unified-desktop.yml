@@ -1,0 +1,6 @@
+url: https://github.com/nalikip/dsh-unified-desktop
+name: nalikip/dsh-unified-desktop
+category: tools
+description:
+  en: "One MCP tool surface over two Windows desktop-automation backends (dsh-computer-use-win and windows-mcp). Both must be installed first: dsh-computer-use-win as a DSH plugin, windows-mcp via uv tool install windows-mcp --python 3.14, then run the bundled scripts/patch-backend.mjs once (it rewrites the local windows-mcp source; without it screenshot/read_webpage/launch_app fail) and disable the standalone wincu mount. It merges their 44 tools into 29 by dropping 10 duplicates, 4 dangerous ones (PowerShell, Registry, FileSystem, Process) and 1 tool-management entry, and blocks dangerous calls before forwarding through a reversibility-graded guard."
+  zh: "把两个需自行安装的 Windows 桌面自动化后端（dsh-computer-use-win 插件 + 用 uv 装的 windows-mcp，Python 3.14）合成一个 MCP 工具面：装完还要跑一次随包的 scripts/patch-backend.mjs 改写本机 windows-mcp 源码（不跑则 screenshot/read_webpage/launch_app 会失败），并在 profile 里禁用单独挂载的 wincu。44 个后端工具去重为 29 个（去掉 10 个重复、4 个危险工具 PowerShell/Registry/FileSystem/Process、1 个工具管理入口），并在转发前用按可逆性分级的守卫拦截危险调用。"

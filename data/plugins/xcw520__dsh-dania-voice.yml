@@ -1,0 +1,6 @@
+url: https://github.com/xcw520/dsh-dania-voice
+name: xcw520/dsh-dania-voice
+category: voice
+description:
+  en: Local GPT-SoVITS text-to-speech that reads DeepSeek Harness assistant replies aloud, with a draggable mascot toggle and a one-click installer. Requires Python 3.10–3.12 preinstalled (the installer only locates it, it does not install Python); about 5 GB of disk and a GPU are recommended.
+  zh: 用本地 GPT-SoVITS 把 DeepSeek Harness 的助手回复读出来，带可拖动的挂件开关与一键部署。需预装 Python 3.10–3.12（安装器只负责定位，不负责安装）；建议约 5 GB 磁盘与 GPU。

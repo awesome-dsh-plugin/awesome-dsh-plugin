@@ -1,0 +1,6 @@
+url: https://github.com/rsbsnv/dsh-mobile-adapt
+name: rsbsnv/dsh-mobile-adapt
+category: ui
+description:
+  en: "Mobile layer for DSH Web: swipe-gesture drawer sidebar with adjustable width, layered back key, bigger tap targets, Enter inserts a newline instead of sending, keyboard avoidance and a 15px font floor."
+  zh: "手机上的 DSH 界面优化：侧边栏变可滑动抽屉、手势开关侧栏、宽度可调、返回键逐层退出、按钮放大、回车换行而不是直接发送、键盘不挡输入框、字号不小于 15px。"

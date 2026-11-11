@@ -1,0 +1,6 @@
+url: https://github.com/mjnn/dsh-agent-desktop
+name: mjnn/dsh-agent-desktop
+category: tools
+description:
+  en: "Wraps the separately installed agent-desktop CLI (`npm i -g agent-desktop`) as nine DSH tools (ad_status, ad_list_windows, ad_snapshot, ad_find, ad_click, ad_type, ad_press, ad_launch, ad_close_app) so an agent can list windows, read an accessibility tree, click a snapshot ref, type text, send keys, launch an app and close it gracefully. The plugin adds no automation logic of its own: it validates arguments, calls the CLI and returns the parsed JSON envelope, and asks the caller to take a fresh snapshot instead of retrying a stale ref, so a click never lands on a shifted target."
+  zh: 把需另行安装的 agent-desktop CLI（`npm i -g agent-desktop`）封装成 9 个 DSH 工具（ad_status、ad_list_windows、ad_snapshot、ad_find、ad_click、ad_type、ad_press、ad_launch、ad_close_app），让 Agent 直接列窗口、读无障碍树、按快照 ref 点击、输入文本、发送按键、启动与优雅关闭应用。插件本身不含自动化逻辑，只做参数校验、调用 CLI、解析 JSON 信封；ref 过期时要求调用方重新快照，不自动重试，避免误点。

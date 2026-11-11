@@ -1,0 +1,6 @@
+url: https://github.com/Mzy123l/dsh-plugin-remote-access
+name: Mzy123l/dsh-plugin-remote-access
+category: remote
+description:
+  en: 'Exposes the local DSH web GUI to one chosen CIDR range only (Tailscale by default) instead of binding 0.0.0.0: the proxy listens on addresses inside that range, rejects peers outside it, and admits clients by either a tokenised URL or a 4-12 character alphanumeric access code. Remote pages can be forced into a phone layout without changing the local UI, and the official appearance, font size, transcript view, code view and performance settings can be stored in the plugin config and re-applied on every remote page load.'
+  zh: '只把本机 DSH 网页界面开放给指定的一个网段（默认 Tailscale 100.64.0.0/10），不绑 0.0.0.0：网段外的对端一律拒绝，进入方式可选带票网址或 4–12 位数字/字母访问密码；远程页面可强制手机布局而不动本机界面，官方「通用设置」里的外观 / 字号大小 / 工作步骤展示 / 显示代码工作视图 / 性能与用量可存进本插件配置，并在每次打开远程页面时重新套用。'

@@ -1,0 +1,6 @@
+url: https://github.com/kkwalking/dsh-stall-guard
+name: kkwalking/dsh-stall-guard
+category: session
+description:
+  en: 'Watches the turn endings of the models you select and asks a second model whether the turn was actually finished: if the assistant stopped after text with no tool call, a three-way verdict of continue, finished or uncertain is recorded and shown in a sidebar panel. In suggest mode it only reports; in auto-continue mode it calls agent.followup() once the turn is idle to send a continuation message, up to a per-turn limit. Single-step turns are always rechecked, watched models can be picked exactly or matched by case-insensitive regex, and the resume text is configurable.'
+  zh: '监测你所选模型每一轮的收尾，交给另一个模型判断这一轮是否真的结束了：如果助手说完话却没有工具调用就停了，会记录 continue / finished / uncertain 三态判定并展示在侧边栏面板。suggest 模式只报告，auto-continue 模式在本轮真正 idle 后调用 agent.followup() 发送续跑消息，且受每轮次数上限约束。单步收尾始终复查，监测模型支持精确多选与不区分大小写的正则匹配，续跑文案可自定义。'

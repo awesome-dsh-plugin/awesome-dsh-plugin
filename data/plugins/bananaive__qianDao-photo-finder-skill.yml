@@ -1,0 +1,6 @@
+url: https://github.com/bananaive/qianDao-photo-finder-skill
+name: bananaive/qianDao-photo-finder-skill
+category: skill
+description:
+  en: 'Find photo candidates from the 2026 Qiandao Lake cycling race by bib number and visible gear, with local helper scripts and album snapshot comparison. Needs the event''s photo album link; snapshot comparison uses Python 3.10+, bib OCR is macOS only (Swift and Apple Vision), and the optional gear ranking needs Pillow, PyTorch, Transformers and a local DINOv2 model directory.'
+  zh: '按号码牌和可见装备查找 2026 届千岛湖自行车比赛照片候选，提供本地辅助脚本和相册快照比对。需要提供本届赛事的相册直播链接；相册快照比对需要 Python 3.10+，号码 OCR 仅限 macOS（Swift 与 Apple Vision），可选的装备排序需要 Pillow、PyTorch、Transformers 和本地 DINOv2 模型目录。'

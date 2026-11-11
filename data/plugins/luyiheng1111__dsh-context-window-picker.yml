@@ -1,0 +1,6 @@
+url: https://github.com/luyiheng1111/dsh-context-window-picker
+name: luyiheng1111/dsh-context-window-picker
+category: ui
+description:
+  en: 'Adds a session-scoped context window selector next to the reasoning-effort row in the DeepSeek Harness model popup: a pill showing the effective window opens a dropdown of presets below the model default, the choice applies to the next request of that session only, and a new session falls back to the profile default. It writes no config file and appends nothing to the session log.'
+  zh: '在 DeepSeek Harness 模型弹窗的「推理等级」旁增加会话级上下文窗口选择器：显示当前生效窗口的胶囊按钮可展开默认窗口以下的档位下拉，选择只作用于该会话的下一次请求，新建会话自动回到 Profile 默认值。不改任何配置文件，也不向会话日志写入内容。'

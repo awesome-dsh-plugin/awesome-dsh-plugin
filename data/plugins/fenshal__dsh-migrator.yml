@@ -1,0 +1,6 @@
+url: https://github.com/fenshal/dsh-migrator
+name: fenshal/dsh-migrator
+category: tools
+description:
+  en: 'Lists every plugin installed in the current DSH profile, lets you tick the ones to keep, and exports them either as a migration sheet for a new machine or as a self-contained zip (local plugin sources plus a restore script) that a fresh DSH can install in one run. The restore script is PowerShell; a DSH restart (plus pnpm install if the plugin page reports pending installs) is needed afterwards.'
+  zh: '列出当前 DSH 配置里装过的全部插件，勾选后导出成「迁移单」文本，或直接打包成自包含 zip（本地插件源码 + 恢复脚本），新电脑上跑一次脚本即可还原。恢复脚本是 PowerShell；还原后需重启 DSH，插件页报待安装时还需 pnpm install。'

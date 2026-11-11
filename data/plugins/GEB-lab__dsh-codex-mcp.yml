@@ -1,0 +1,7 @@
+url: https://github.com/GEB-lab/dsh-codex-mcp
+name: GEB-lab/dsh-codex-mcp
+category: workflow
+description:
+  en: 'MCP bridge that lets Codex start and resume DSH headless sessions through three tools: dsh_env, dsh_run and dsh_resume.'
+  zh: 让 Codex 通过 dsh_env、dsh_run、dsh_resume 三个 MCP 工具启动和续跑 DSH headless 会话的桥。
+tarball: https://github.com/GEB-lab/dsh-codex-mcp/releases/latest/download/dsh-codex-mcp.tgz

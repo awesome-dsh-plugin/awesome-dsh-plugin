@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-einvoice
+name: PerryLink/dsh-einvoice
+category: workflow
+description:
+  en: 'Chinese e-invoice (OFD/XML) inbox: ingest, parse, deduplicate, queue for review, record receipts and archive locally — 10 `invoice.*` tools, nothing uploaded.'
+  zh: '中文电子发票（OFD/XML）收件箱：导入、解析、去重、进入复核队列、登记回执并本地归档——10 个 `invoice.*` 工具，数据不出本机。'

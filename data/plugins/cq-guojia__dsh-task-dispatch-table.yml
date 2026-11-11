@@ -1,0 +1,6 @@
+url: https://github.com/cq-guojia/dsh-task-dispatch-table
+name: cq-guojia/dsh-task-dispatch-table
+category: workflow
+description:
+  en: 'Scheduled task dispatcher: a dsh host plugin that drives recurring agent tasks from a single task table, dispatching each run as an independent dsh session; scheduling is pure logic and uses zero model calls.'
+  zh: '定时任务调度器：一张任务表驱动周期性运行的 agent 任务，每次调度为一个独立的 dsh 会话；调度本身纯逻辑实现，不消耗任何模型调用。'

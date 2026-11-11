@@ -1,0 +1,6 @@
+url: https://github.com/zsspub/dsh-personal-todo
+name: zsspub/dsh-personal-todo
+category: workflow
+description:
+  en: 'Persistent personal todos shared across DeepSeek Harness sessions and projects: SQLite storage, Agent tools, a native sidebar and turn-tail cards, with user-managed workflows or optional dispatch of individual todos to Agent sessions.'
+  zh: '跨 DeepSeek Harness 会话与项目共享的持久个人待办：使用 SQLite 存储，提供 Agent 工具、原生侧栏与对话尾部卡片，既可由用户自行管理，也可按需将单条待办交给 Agent 会话执行。'

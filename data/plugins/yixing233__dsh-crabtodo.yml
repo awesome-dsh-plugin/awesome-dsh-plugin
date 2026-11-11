@@ -1,0 +1,7 @@
+url: https://github.com/yixing233/dsh-crabtodo
+name: yixing233/dsh-crabtodo
+category: workflow
+tarball: https://github.com/yixing233/dsh-crabtodo/releases/download/v0.1.0/dsh-crabtodo-0.1.0.tgz
+description:
+  en: 'A shared todo list for DeepSeek Harness: you and your agent manage the same tasks from a sidebar page or todo tools, with per-project and global todos, and one-click task references into the composer.'
+  zh: 'DeepSeek Harness 的人机共享待办：你和 AI 通过侧边栏或待办工具管理同一份任务，支持项目级与全局待办，并可一键把任务引用进输入框。'

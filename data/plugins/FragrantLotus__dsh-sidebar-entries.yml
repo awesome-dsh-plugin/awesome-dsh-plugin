@@ -1,0 +1,6 @@
+url: https://github.com/FragrantLotus/dsh-sidebar-entries
+name: FragrantLotus/dsh-sidebar-entries
+category: ui
+description:
+  en: 'Sidebar overhaul for the dsh web UI: long-press drag to reorder the panel icon rail, one arrow to fold it away, whole-row height caps on both the panel list and the pinned section (30% of the rail, rounded down to whole rows), a pinned-session section that mirrors the shipped row''s live status (spinner, waiting-for-reply, relative time), drag-to-reorder conversation view tabs, archived Sessions sunk to the bottom of each group newest-first, forked child Sessions following their parent into the pinned section, and a generic lift that moves any plugin''s sidebar-footer entry up into the rail. Each subsystem starts behind its own guard, so one that fails returns null and the rest of the plugin still mounts.'
+  zh: 'dsh 网页端侧边栏整体增强：长按拖拽重排面板图标栏，一个箭头即可整栏折叠；面板列表与置顶区都按整行限制高度（占侧栏 30%，向下取整行）；置顶会话区镜像原生行的实时状态（转圈、待回复、相对时间）；顶部会话视图标签可拖拽换位；归档会话按时间新到旧沉到每组末尾；分叉出的子会话自动跟进父会话所在的置顶区；并把任意插件注册在侧栏底部的入口提升到同一栏内。每个子系统各自带启动守卫，单个失败只返回 null，不影响整个插件挂载。'

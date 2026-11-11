@@ -1,0 +1,6 @@
+url: https://github.com/AlyceStocking/dsh-harness-switch
+name: AlyceStocking/dsh-harness-switch
+category: model
+description:
+  en: "Adds Kimi models to native DSH sessions with per-model selection of the embedded Kimi core or DSH native execution."
+  zh: "在 DSH 原生会话中接入 Kimi 模型，并按模型选择嵌入式 Kimi 核心或 DSH 原生执行方式。"

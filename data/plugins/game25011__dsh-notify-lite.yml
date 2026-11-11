@@ -1,0 +1,7 @@
+url: https://github.com/game25011/dsh-notify-lite
+name: game25011/dsh-notify-lite
+category: notify
+description:
+  en: "A lightweight task completion notification plugin for DSH (dsh-notify-lite). When the agent finishes its work, it delivers Windows native Toast notifications with the first paragraph of the latest reply (40 characters by default). Supports taskbar unread badges, audio alerts, and configurable notification options. With no resident tray or background service, it keeps you focused without interruptions. Fully open source under the MIT license, with continuous DSH compatibility."
+  zh: "为 DSH 打造的轻量任务完成通知插件（dsh-notify-lite）。在 agent 结束工作时，通过 Windows 原生 Toast 弹窗即时提醒，正文取最后一条回复的首段（默认 40 字）。支持任务栏未读角标、提示音与可配置提醒；不常驻托盘或后台服务，聚焦不打扰。MIT 开源，持续跟进 DSH 兼容。"
+tarball: https://github.com/game25011/dsh-notify-lite/releases/latest/download/dsh-notify-toast.tgz

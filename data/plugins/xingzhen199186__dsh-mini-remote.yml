@@ -1,0 +1,6 @@
+url: https://github.com/xingzhen199186/dsh-mini-remote
+name: xingzhen199186/dsh-mini-remote
+category: remote
+description:
+  en: "A minimal phone remote control for DeepSeek Harness: the phone page carries only the instruction you send and the AI's final conclusion, while tool calls, file access, sub-agent dispatch, and reasoning traces stay on the computer, reachable over LAN, Tailscale, or a Cloudflare tunnel with a QR code, link, and password for each route."
+  zh: "给 DeepSeek Harness 用的极简手机遥控器：手机页面上只有你发出的指令和 AI 最后的结论，工具调用、文件读写、子 Agent 调度与思考过程全部留在电脑上；可通过内网、Tailscale 或 Cloudflare 隧道连接，每条路径各配二维码、链接和密码。"

@@ -1,0 +1,7 @@
+url: https://github.com/caidows/dsh-codex-model-picker
+name: caidows/dsh-codex-model-picker
+category: ui
+description:
+  en: 'Codex-style composer model picker: a card showing the current model and a draggable slider that sets reasoning effort, with one stop per level the model advertises and an Off stop when the provider supports it. The slider snaps only to whole stops and updates the effort label while dragging; selecting a model or effort still goes through the session model directory, so it stays in sync with the rest of the composer.'
+  zh: 'Codex 风格的输入框模型选择器：卡片显示当前模型，底部用可拖动的滑杆设置推理强度，每个档位都对应模型真实声明的推理等级（提供商支持时有 Off 档）。滑杆只停在整档上，拖动过程中推理强度文字即时更新；模型与档位的切换仍走会话的模型目录，与输入框其他部分保持同步。'
+icon: https://raw.githubusercontent.com/caidows/dsh-codex-model-picker/main/assets/icon.png

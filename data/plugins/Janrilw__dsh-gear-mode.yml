@@ -1,0 +1,6 @@
+url: https://github.com/Janrilw/dsh-gear-mode
+name: Janrilw/dsh-gear-mode
+category: workflow
+description:
+  en: "Session-level autonomy gears for DSH: a rail on the edge of the conversation area switches P/R/NT/NC/NE/M-/M+/D/A and injects the active gear's behavioral prompt into every request; the model's set_gear tool can only downshift, and handbrake H blocks all tool calls. The set_gear tool can downshift on its own; upshifts need user approval."
+  zh: "会话级行动档位：对话区左缘的滑轨切换 P/R/NT/NC/NE/M-/M+/D/A，并向每条请求注入当前档位的行为提示词；模型的 set_gear 只能降档，手刹 H 拦截全部工具调用。模型的 set_gear 只能自行降档，升档需用户在卡片上批准。"

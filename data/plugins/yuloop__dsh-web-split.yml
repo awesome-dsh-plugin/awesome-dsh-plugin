@@ -1,0 +1,7 @@
+url: https://github.com/yuloop/dsh-web-split
+name: yuloop/dsh-web-split
+category: ui
+tarball: https://github.com/yuloop/dsh-web-split/releases/latest/download/dsh-web-split.tgz
+description:
+  en: 'Split-screen panel for the Web UI: draggable panes, each rendering one Session''s real conversation, with unread dots and a layout saved per browser.'
+  zh: '网页端分屏面板：可拖拽的窗格，每个窗格渲染一个会话的完整对话；窗格标题带未读点，布局按浏览器保存。'

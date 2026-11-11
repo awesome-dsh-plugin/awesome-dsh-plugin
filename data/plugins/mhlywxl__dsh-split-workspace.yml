@@ -1,0 +1,6 @@
+url: https://github.com/mhlywxl/dsh-split-workspace
+name: mhlywxl/dsh-split-workspace
+category: ui
+description:
+  en: 'Split the DSH conversation area into unlimited native panes — side by side, stacked, 2×2 and an automatic grid — each a real session with its own composer, streaming and approvals.'
+  zh: '把 DSH 对话区拆成任意数量的原生窗格：左右、上下、田字 2×2 与自动网格，每个窗格都是独立会话。'

@@ -1,0 +1,6 @@
+url: https://github.com/FuriousKinght/dsh-fk-rollback
+name: FuriousKinght/dsh-fk-rollback
+category: dev
+description:
+  en: 'Config snapshot and rollback for DSH: auto-captures before risky changes, ships a standalone restore script that works even when DSH won''t boot. Windows only; the restore script is a .bat and needs Node.js.'
+  zh: 'DSH 配置快照与回滚：危险操作前自动留痕，附带独立还原脚本，DSH 起不来时也能救回。仅 Windows；还原脚本为 .bat，需 Node.js。'

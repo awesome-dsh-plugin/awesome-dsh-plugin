@@ -1,0 +1,6 @@
+url: https://github.com/kenz1117/dsh-ui-rainbowspeak
+name: kenz1117/dsh-ui-rainbowspeak
+category: ui
+description:
+  en: 'RainbowSpeak — a flowing rainbow marquee border around the chat composer card, driven by a conic-gradient ring. Live settings for speed, width, seven color schemes, direction, sides and breathing, plus session-state awareness that reacts to running, attention, error and celebration moments.'
+  zh: '虹语（RainbowSpeak）——沿聊天输入框边界持续流动的彩虹跑马灯，由锥形渐变环带驱动。支持流速、宽度、七种配色、方向、边与呼吸效果的实时设置，并具备会话状态感知：运行中加速、需关注变琥珀、出错红脉冲、庆祝闪动。'

@@ -1,0 +1,16 @@
+url: https://github.com/AZ-666316/dsh-prompt-optimizer-button
+name: AZ-666316/dsh-prompt-optimizer-button
+category: ui
+# Optional. Square raster icon served from GitHub (png/jpg/webp, ~96px+).
+icon: https://raw.githubusercontent.com/AZ-666316/dsh-prompt-optimizer-button/main/assets/icon-180.png
+description:
+  en: >-
+    Prompt optimizer inside the DSH composer. One click rewrites the current draft with the
+    model you already selected: it classifies the scenario (paper / agent task / daily question /
+    English writing), returns a compact three-check diagnosis panel (is acceptance testable?
+    missing information or capability? raising depth or widening scope?), and lets you pin a
+    scenario manually. The draft is replaced in place, with no extra chat turn.
+  zh: >-
+    DSH 输入框内的提示词优化器。点一下就用当前选中的模型就地改写草稿：自动识别场景（论文 / 派活 /
+    日常 / 英文），弹出三自检诊断面板（验收能否机器判定？缺信息还是缺能力？在抬深度还是扩范围？），
+    并可手动钉住场景。改写结果直接替换输入框草稿，不新增对话轮次。

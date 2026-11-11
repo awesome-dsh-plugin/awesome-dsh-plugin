@@ -1,0 +1,6 @@
+url: https://github.com/huangfuren/dsh-sync
+name: huangfuren/dsh-sync
+category: dev
+description:
+  en: 'Move an entire dsh installation to another machine and check it item by item. Three layers go across: the declaration layer (settings, credentials, plugin declarations and vendored link: sources), the state layer (sessions, storages, skills, attachments) and, optionally, the workspace project code. Sessions are rewritten at the zstd header frame only, workspace paths are remapped through an explicit path mapping, and at the end 14 checks (I1–I13 plus I6b) report PASS / FAIL / WARN. A LAN route pairs two machines and pulls the bundle over directly; merge mode diffs a bundle against a machine that has already been in use and stops before writing anything while conflicts are undecided.'
+  zh: '把整台机器的 dsh 搬到另一台并逐条核对。三层一起走：声明层（设置、凭据、插件声明与 link: 插件源码）、状态层（会话、storages、skills、附件），以及可选的工作区项目代码。会话只改写 zstd 首帧，工作区路径按显式映射改写，最后核对 14 项检查（I1–I13，另含 I6b）并给出 PASS / FAIL / WARN。另可局域网配对直传；merge 模式把 bundle 与「已经在用的机器」逐项比对，分歧未决议就停在写盘之前。'

@@ -1,0 +1,8 @@
+url: https://github.com/ColdRainLab/dsh-workspace-sync
+name: ColdRainLab/dsh-workspace-sync
+category: tools
+tarball: https://github.com/ColdRainLab/dsh-workspace-sync/releases/download/v0.1.2/dsh-workspace-sync-0.1.2.tgz
+
+description:
+  en: 'Sync workspaces, session history and automations to your own cloud folder (any folder-synced backend), so a new machine picks up where you left off. The cloud folder holds plaintext session logs; workspaces hidden or locked by dsh-workspace-vault are not uploaded.'
+  zh: '把工作区、会话记录与自动化任务同步到你自己的云端目录（网盘同步文件夹，后端可扩展），换机器登录后拉取即见。云端目录里是明文会话日志；被 dsh-workspace-vault 隐藏或加锁的工作区不会上传。'

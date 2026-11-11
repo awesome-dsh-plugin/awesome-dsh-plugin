@@ -2,5 +2,5 @@ url: https://github.com/173787247/dsh-wsl-notify
 name: 173787247/dsh-wsl-notify
 category: wsl
 description:
-  en: Shows a Windows MessageBox when a long WSL task finishes.
-  zh: 长任务结束后弹出 Windows 提示框。
+  en: Shows a short Windows MessageBox or toast (BalloonTip) from WSL when a long task finishes.
+  zh: 长任务结束后从 WSL 弹出 Windows MessageBox 或 toast（气球提示）。

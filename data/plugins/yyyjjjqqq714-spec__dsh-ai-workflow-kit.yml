@@ -1,0 +1,6 @@
+url: https://github.com/yyyjjjqqq714-spec/dsh-ai-workflow-kit
+name: yyyjjjqqq714-spec/dsh-ai-workflow-kit
+category: workflow
+description:
+  en: '340-entry code-animation style library, 8 prompt templates and 5 renderable code templates in a sidebar panel, plus agent tools (awkit_search / awkit_get_style / awkit_render_template) so the model can pick a style and render a template during a turn; content ships inside the package, no extra download.'
+  zh: '340 条代码动画风格库、8 个提示词模板与 5 个可渲染代码模板，集成在侧栏面板；同一套内容也作为 Agent 工具（awkit_search / awkit_get_style / awkit_render_template）供模型在对话中检索与渲染；内容随包分发，无需额外下载。'

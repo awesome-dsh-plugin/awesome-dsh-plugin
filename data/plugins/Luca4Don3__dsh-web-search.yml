@@ -1,0 +1,6 @@
+url: https://github.com/Luca4Don3/dsh-web-search
+name: Luca4Don3/dsh-web-search
+category: browser
+description:
+  en: 'Web search and fetch provider for DeepSeek Harness and Pi: anonymous-first routing across Exa, Tavily, Parallel, Firecrawl and TinyFish, with opt-in billing, quota preflight and bounded cancellation.'
+  zh: '同时兼容 DSH 与 Pi 的搜索与抓取提供方：Exa、Tavily、Parallel、Firecrawl、TinyFish 匿名优先路由，计费需显式授权，带额度预检与有界取消。'

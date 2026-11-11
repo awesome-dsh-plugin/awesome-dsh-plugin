@@ -1,0 +1,7 @@
+url: https://github.com/kai-GitHubaccount/dsh-usage-panel
+name: kai-GitHubaccount/dsh-usage-panel
+category: usage
+description:
+  en: DeepSeek balance and per-session token usage in the session header, with a three-level balance alert and editable thresholds, one-click top-up links, a segmented token bar with cache-hit statistics, and a visibility-aware poller.
+  zh: 会话头部显示 DeepSeek 余额与本会话 Token 用量：三级余额预警、自定义阈值、一键充值入口、分段 Token 条与缓存命中率，并采用可见时才轮询的省流策略。
+

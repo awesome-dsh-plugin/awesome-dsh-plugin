@@ -1,0 +1,8 @@
+url: https://github.com/ltmroberthk915/dsh-computer-use
+name: ltmroberthk915/dsh-computer-use
+category: tools
+tarball: https://github.com/ltmroberthk915/dsh-computer-use/releases/download/v2.2.8/dsh-codex-style-computer-use-2.2.8.tgz
+icon: https://raw.githubusercontent.com/ltmroberthk915/dsh-computer-use/main/docs/images/icon-180.png
+description:
+  en: 'Windows Computer Use for DeepSeek Harness with 21 tools and verified targeting: controls are addressed through their UI Automation identity and patterns, and numbered marks are checked against the live window before input, so a stale target is refused instead of clicked. A known sequence runs in one computer_batch call, one model round trip; incremental observations, compact receipts (normally no more than about 6 KiB extra) bounded handoff waits (HANDOFF_WAIT_TIMEOUT/HANDOFF_HELD_TIMEOUT as continuations) and the desktop-block cycle boundary plus a deterministic 100 s owner-scoped leave backstop and the host-debug settings client keep context small and prevent a stuck handoff from waiting out the tool deadline. Human handoff, approval modes, a model-visible stop brake and prebuilt native workers.'
+  zh: '给 DeepSeek Harness 的 Windows 桌面操控，21 个工具，定位可验证：控件按 UI Automation 的真实身份与控件模式寻址，编号标记在派发前对照实时窗口校验，过期目标拒绝而不是点错。已知流程用一次 computer_batch 跑完，只花一轮模型往返；增量观察、默认精简回执（通常最多再加约 6 KiB）有界的交接等待（HANDOFF_WAIT_TIMEOUT/HANDOFF_HELD_TIMEOUT，均作为可继续检查点）与“离开桌面块就 release”的边界与 100 秒 owner-scoped 自动释放兜底，并修复 host-debug 设置页加载让上下文保持轻量，也避免卡住的交接等到工具超时。含人工接管、审批模式、能传进模型的停止刹车，原生组件随包提供。'

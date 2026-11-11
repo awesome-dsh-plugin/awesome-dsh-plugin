@@ -1,0 +1,7 @@
+url: https://github.com/CoraxEldridge/dsh-win11-material
+name: CoraxEldridge/dsh-win11-material
+category: theme
+description:
+  en: 'Windows 11 Mica, Acrylic and Tabbed backdrop materials for the DSH desktop window, with adjustable page opacity; a bundled app.asar patch makes the window transparent so the wallpaper shows through. Windows only. The transparency patch is a separate step you run yourself (node tools/window-bridge.mjs apply, with DSH closed): it edits the installed app.asar, keeps a backup next to it, and restore undoes it.'
+  zh: '为 DSH 桌面窗口换上 Windows 11 的 Mica、Acrylic、Tabbed 系统材质，页面不透明度可调；随包附带的 app.asar 补丁让窗口透明，壁纸才会透出来。仅限 Windows。透明补丁是要你自己另外运行的一步（关闭 DSH 后执行 node tools/window-bridge.mjs apply）：它会修改已安装的 app.asar，并在旁边留一份备份，restore 可还原。'
+icon: https://raw.githubusercontent.com/CoraxEldridge/dsh-win11-material/main/assets/icon-180.png

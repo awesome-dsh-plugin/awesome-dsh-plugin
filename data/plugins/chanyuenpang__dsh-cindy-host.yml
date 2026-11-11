@@ -1,0 +1,6 @@
+url: https://github.com/chanyuenpang/dsh-cindy-host
+name: chanyuenpang/dsh-cindy-host
+category: remote
+description:
+  en: 'Host-side plugin that links the Cindy mobile app to DSH: phone channels for sessions, messages, approvals, todos and goals, plus a settings card.'
+  zh: 'Host 侧插件：将 Cindy 手机客户端接入 DSH，提供会话、消息、审批、todo、goal 的手机通道，以及配套的设置卡片。'

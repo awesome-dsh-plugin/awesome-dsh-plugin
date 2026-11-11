@@ -1,0 +1,7 @@
+url: "https://github.com/aa2246740/dsh-notch/tree/main/companions/dsh-notch-focus"
+name: "aa2246740/dsh-notch#dsh-notch-focus"
+category: "notify"
+description:
+  en: "Companion for DSH Notch that synchronizes session navigation and read state with DSH Desktop and Web."
+  zh: "DSH Notch 的配套助手，同步 Desktop、Web 与 Notch 之间的会话跳转和已读状态。"
+tarball: "https://github.com/aa2246740/dsh-notch/releases/download/v0.3.4/dsh-notch-focus-0.1.2.tgz"

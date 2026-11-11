@@ -1,0 +1,8 @@
+# Submission entry for awesome-dsh-plugin.
+# File: data/plugins/HorusJiang__dsh-jev-tools.yml
+url: https://github.com/HorusJiang/dsh-jev-tools
+name: HorusJiang/dsh-jev-tools
+category: tools
+description:
+  en: 'DeepSeek Harness plugin that turns Jev judgments into three automatic actions — pruning oversized tool output to the segments relevant to the request, screening fetched pages for instructions aimed at the model, and picking which skill fits the next step — plus the jev_ask and jev_gate tools, a judgment ledger that survives restarts, and a /jev-status report. Needs a TypeSafe API key; without one it is inert and sends nothing.'
+  zh: '把 Jev 判定变成三件自动动作的 DeepSeek Harness 插件：精简超长工具输出、筛查抓取页面里针对模型的指令、挑选下一步该用的 skill；另有 jev_ask 与 jev_gate 两个工具、可跨重启的判定账本，以及 /jev-status 报告。需要 TypeSafe API key，没有时完全惰性，不发任何请求。'

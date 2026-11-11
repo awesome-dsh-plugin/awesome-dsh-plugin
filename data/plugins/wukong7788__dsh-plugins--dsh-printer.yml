@@ -1,0 +1,6 @@
+url: https://github.com/wukong7788/dsh-plugins/tree/main/dsh-printer
+name: wukong7788/dsh-plugins#dsh-printer
+category: ui
+description:
+  en: Adds a Print action next to Copy that opens a preview and prints the assistant message.
+  zh: 在复制按钮旁增加打印操作，预览后调用系统打印助手消息。

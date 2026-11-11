@@ -1,0 +1,6 @@
+url: https://github.com/ccneedb/dsh-information-environment-governance
+name: ccneedb/dsh-information-environment-governance
+category: dev
+description:
+  en: "Governs the persistent information and project constraints an agent works with - project orientation and scope, information and document lifecycle, and persistent workspace mutation - through one additive system-prompt section plus deterministic runtime checks."
+  zh: "治理代理在项目中持续接触的持久信息与项目约束：项目定位与范围、信息与文档生命周期、持久工作区变更；通过一个附加的系统提示章节与确定性的运行时检查落地。"

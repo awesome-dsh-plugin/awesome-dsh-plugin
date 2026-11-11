@@ -1,0 +1,8 @@
+url: https://github.com/GEMLZC/dsh-font-studio
+name: GEMLZC/dsh-font-studio
+category: ui
+icon: https://raw.githubusercontent.com/GEMLZC/dsh-font-studio/main/assets/icon-180.png
+description:
+  en: 'Typography settings page: text, code and terminal font size and family, plus interface, conversation and code text colour, weight, italic, letter spacing and line height, with a live preview.'
+  zh: '字体设置页：正文、代码与终端的字号和字体族，外加界面、会话与代码的文字颜色、字重、斜体、字间距与行高，带实时预览。'
+

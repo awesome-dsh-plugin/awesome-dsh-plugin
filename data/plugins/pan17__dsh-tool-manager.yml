@@ -1,0 +1,6 @@
+url: https://github.com/pan17/dsh-tool-manager
+name: pan17/dsh-tool-manager
+category: tools
+description:
+  en: Manage tool availability and groups for each Agent Preset, load tools on demand like Skills, and reduce model context usage.
+  zh: DSH 工具管理插件：按 Agent Preset 开关和分组工具，像 Skill 一样按需加载工具，减少模型上下文占用。

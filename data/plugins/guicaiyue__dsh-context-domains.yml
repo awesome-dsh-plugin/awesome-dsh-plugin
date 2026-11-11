@@ -1,0 +1,12 @@
+url: https://github.com/guicaiyue/dsh-context-domains
+name: guicaiyue/dsh-context-domains
+category: session
+description:
+  en: 'Puts a domain bar at the top of the session: a domain is a user-defined group of skills and tools toggled as one block, so a single click loads or unloads every member instead of switching items one by one. Hovering a chip lists its members, split into skills and tools. A settings page maintains domains and memberships and suggests groupings from skill folders and tool prefixes. Tool removal goes through tools.restrict plus a guard; hiding a skill re-registers that skill for the session with modelInvocable false, so it leaves the model catalog while /name still works. Sessions that belong to another preset are left untouched.'
+  zh: '在会话顶部放一条领域横条：领域是用户自定义的 skill 与 tool 分组，点一下整块加载或卸载，不必逐条开关。悬停芯片展开成员，按技能、工具两段列出名字；设置页维护领域与成员，并能按 skill 目录与工具前缀给出建域建议。工具的移除走 tools.restrict 加 guard；skill 的隐藏是在该会话作用域重投同名 skill 并标记不可被模型调用，于是它从模型目录里消失而 /名字 仍可用。属于别的 preset 的会话一律不动。'
+# 注意：这里**不要**手写 npm: 字段 —— awesome-dsh-plugin 的校验会直接拒绝，
+# npm 映射由 nightly 的 scripts/probe-npm.mjs 自动采集（读仓库 package.json 的
+# name，再要求 registry 里该包的 repository 指回同一个 GitHub 仓库）。
+# 稳定别名：每次发版都指向最新 Release，条目不用跟着改版本号
+tarball: https://github.com/guicaiyue/dsh-context-domains/releases/latest/download/dsh-context-domains.tgz
+icon: https://raw.githubusercontent.com/guicaiyue/dsh-context-domains/main/assets/icon-180.png

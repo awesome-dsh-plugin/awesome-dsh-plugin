@@ -1,0 +1,6 @@
+url: https://github.com/xgxx666/dsh-clear-usage
+name: xgxx666/dsh-clear-usage
+category: usage
+description:
+  en: 'Local Token usage dashboard in DSH Settings with hourly activity, daily heatmaps, custom date ranges, model breakdowns, local/API filters, and native cache-hit accounting, without cost estimates or composer overrides. Requires DSH 0.2.0-rc.2 or newer.'
+  zh: '在 DSH 设置中统计本地 Token 用量，支持小时活动图、日历热力图、自定义日期、模型用量分布、本地/API 筛选和原生缓存命中口径，不估算费用，不替换输入框状态栏。需要 DSH 0.2.0-rc.2 或更高兼容版本。'

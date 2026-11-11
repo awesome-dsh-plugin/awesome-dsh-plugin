@@ -1,0 +1,7 @@
+url: https://github.com/stlin256/DSH-Harmony/tree/main/plugins/dsh-harmony
+name: stlin256/DSH-Harmony#dsh-harmony
+category: remote
+description:
+  en: 'The plugin half of the DSH Harmony native HarmonyOS client: native login through the host token exchange (optional Pocket ID passkey), session list and live updates, task overview, per-device notification levels and web session handoff. Published as a prebuilt tarball; no separate relay or gateway daemon is required.'
+  zh: 'DSH Harmony 鸿蒙原生客户端的插件端：通过宿主令牌交换完成原生登录（可选 Pocket ID Passkey），提供会话列表与实时更新、任务概览、按设备设置的通知等级和网页会话定位；以预构建 tarball 发布，无需独立 relay 或常驻网关进程。'
+tarball: https://github.com/stlin256/DSH-Harmony/releases/download/plugin-v0.4.0/dsh-harmony-plugin-0.4.0.tgz

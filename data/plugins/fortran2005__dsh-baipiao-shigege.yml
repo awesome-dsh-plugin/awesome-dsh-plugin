@@ -1,0 +1,6 @@
+url: https://github.com/fortran2005/dsh-baipiao-shigege
+name: fortran2005/dsh-baipiao-shigege
+category: model
+description:
+  en: 'Tiers free-channel models into three 1M fallback chains plus a custom chain; orders them by measured throughput, drops models below throughput or error-rate thresholds, and rotates accounts. Requires an OpenAI-compatible gateway (default :8326).'
+  zh: '把白嫖渠道模型按倍率分成三条 1M 降级链，另加自定义链；按实测吞吐排序，低于吞吐线或错误率过高的模型不进链，账号到期优先并轮流。需 OpenAI 兼容网关（默认 :8326）。'

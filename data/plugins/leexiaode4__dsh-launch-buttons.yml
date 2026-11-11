@@ -1,0 +1,6 @@
+url: https://github.com/leexiaode4/dsh-launch-buttons
+name: leexiaode4/dsh-launch-buttons
+category: ui
+description:
+  en: 'Multiple named launch targets in the DSH composer: left-click starts the default target, right-click opens the list.'
+  zh: '对话输入框的多启动项按钮：左键启动默认项，右键弹出列表，每项可绑定一个程序或目录。'

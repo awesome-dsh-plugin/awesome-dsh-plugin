@@ -1,0 +1,8 @@
+url: https://github.com/HanYu-me/dsh-small-toolkit
+name: HanYu-me/dsh-small-toolkit
+category: notify
+description:
+  en: 'Two small macOS features in one plugin. keepAwake stops the display and system from sleeping while dsh runs (caffeinate tied to the host process). taskNotify posts a system notification when a top-level conversation finishes its turn, with the outcome (completed, error, blocked, output cap) and the duration; clicking the notification brings DeepSeek Harness forward. Click-to-focus needs Xcode Command Line Tools to build the notifier; without the toolchain the notification still appears but clicking it opens Script Editor. Subagents and Agent Teams members never notify, and a stop you pressed is silent by default. Both features can be switched off separately.'
+  zh: '一个插件里的两个 macOS 小功能。keepAwake：dsh 运行期间不让屏幕和系统休眠（caffeinate 跟随宿主进程，dsh 退出即解除）。taskNotify：主对话一轮结束时发系统通知，写明结果（完成、出错、被拦截、输出达到上限）和用时；点击通知会切回 DeepSeek Harness。点击切回需要 Xcode Command Line Tools 构建通知助手；没有工具链时仍会提醒，但点击打开的是「脚本编辑器」。子智能体和 Agent Teams 成员不提醒，你手动停止的任务默认不提醒。两个功能可以分别关闭。'
+icon: https://raw.githubusercontent.com/HanYu-me/dsh-small-toolkit/main/assets/icon-180.png
+tarball: https://github.com/HanYu-me/dsh-small-toolkit/releases/latest/download/dsh-small-toolkit.tgz

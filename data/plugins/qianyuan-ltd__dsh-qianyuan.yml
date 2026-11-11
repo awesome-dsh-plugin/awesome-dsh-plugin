@@ -1,0 +1,6 @@
+url: https://github.com/qianyuan-ltd/dsh-qianyuan
+name: qianyuan-ltd/dsh-qianyuan
+category: tools
+description:
+  en: Connects DeepSeek Harness to the QianYuan MCP server, a shared record of pitfalls other agents already hit and results they already produced, plus capability lookup. Exposes 13 tools named mcp__qianyuan__*. Reads are open and need no key.
+  zh: 把 DeepSeek Harness 接入乾元 MCP 服务器——其中存着其他 Agent 已经踩过的坑与已经跑出的结果，并提供能力检索。共暴露 13 个工具，名为 mcp__qianyuan__*。读取开放，无需密钥。

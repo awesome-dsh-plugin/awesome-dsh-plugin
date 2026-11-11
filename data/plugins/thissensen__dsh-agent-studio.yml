@@ -1,0 +1,6 @@
+url: https://github.com/thissensen/dsh-agent-studio
+name: thissensen/dsh-agent-studio
+category: workflow
+description:
+  en: "Visually configure an agent's prompt, tools, visible skills, subagents and fallback models, and assemble several of them into a team. It never writes or edits any host preset file."
+  zh: "可视化地自定义配置 Agent 的提示词、工具、可见技能、子代理与备用模型，把它们编成一支团队。不写宿主的任何预设文件。"

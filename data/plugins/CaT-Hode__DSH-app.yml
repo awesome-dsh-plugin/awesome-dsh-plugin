@@ -1,0 +1,6 @@
+url: https://github.com/CaT-Hode/DSH-app
+name: CaT-Hode/DSH-app
+category: ui
+description:
+  en: Windows Electron companion sharing the DSH Web profile, conversations and plugins, with startup logs, update recovery and diagnostics.
+  zh: 共用 DSH Web 配置、对话与插件的 Windows Electron 客户端，提供启动日志、更新恢复与诊断。

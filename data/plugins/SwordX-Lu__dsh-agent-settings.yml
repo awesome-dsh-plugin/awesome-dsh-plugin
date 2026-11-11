@@ -1,0 +1,7 @@
+url: https://github.com/SwordX-Lu/dsh-agent-settings
+name: SwordX-Lu/dsh-agent-settings
+category: tools
+description:
+  en: 'Agent Settings: manage reusable sub-agent profiles in the sidebar, each with a when-to-use description and its own provider/model route, and let the agent start the matching one as a subagent.'
+  zh: '智能体设置：在侧边栏管理可复用的子智能体档案，为每个档案写明适用场景与所用提供方/模型，任务中由智能体按场景自动拉起对应的子智能体。'
+icon: https://raw.githubusercontent.com/SwordX-Lu/dsh-agent-settings/main/assets/icon-180.png

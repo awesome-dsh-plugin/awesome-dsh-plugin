@@ -2,5 +2,5 @@ url: https://github.com/PC2005-cloud/dsh-pet/tree/main/dsh-pet
 name: PC2005-cloud/dsh-pet#dsh-pet
 category: fun
 description:
-  en: Desktop pet for the DSH Web UI with 25 transparent animations, screen wandering, click reactions and drag, plus a reproducible asset-generation pipeline.
-  zh: DSH Web UI 桌面宠物：25 个透明动画、屏幕漫游、点击反应与拖拽，附可复现的素材生成链。
+  en: 'Desktop pet for the DSH Web UI on Windows, macOS and Linux: 106 transparent animations in the browser overlay or a transparent always-on-top desktop window, throw-and-bounce drag physics with squash and particle scoring, a work-status bubble driven by live session events, self-talk and chat with persistent memory, balance display, meme-image bubbles, multiple pets on screen, and drop-in custom animations and pet packs.'
+  zh: 'DSH Web UI 桌面宠物，Windows / macOS / Linux 三端可用：浏览器浮层或透明置顶桌面窗口，106 个透明动画、带挤压与粒子的甩抛反弹物理、随会话事件实时联动的工作状态气泡、碎碎念与带持久记忆的对话、余额展示、表情包配图、多开同屏，并支持直接放入的自定义动画与宠物种类（pet pack）。'

@@ -1,0 +1,6 @@
+url: https://github.com/fengbinmov/dsh-git-panel
+name: fengbinmov/dsh-git-panel
+category: git
+description:
+  en: 'The session page has an extra "Git" page; on the left is a preview of the non-staged/staged changes, and on the right is a diff preview with a row-level action bar (staged/discarded).'
+  zh: '会话页里多出一个 Git 页；左侧是未暂存 / 已暂存的改动，右侧是带行级操作条（暂存 / 丢弃）的 diff 预览。'

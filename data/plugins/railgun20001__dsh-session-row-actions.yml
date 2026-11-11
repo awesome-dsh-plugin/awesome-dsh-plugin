@@ -1,0 +1,6 @@
+url: https://github.com/railgun20001/dsh-session-row-actions
+name: railgun20001/dsh-session-row-actions
+category: ui
+description:
+  en: "Turns the buttons at the end of each sidebar session row into a configurable row: every action of the official \"…\" menu can be ticked as a hover button and reordered by dragging, and right-clicking a row opens the official \"…\" menu (pin / rename / fork / archive / copy session ID). The hover-button list and the more-menu list sort independently, and both are configured on this plugin's own page."
+  zh: "把侧栏会话行悬停时行尾那排按钮变成可配置的一排：官方「…」菜单里的动作都能勾成悬浮按钮并拖动排序，在行上右键直达官方「…」菜单（置顶 / 重命名 / 分叉 / 归档 / 复制 Session ID）；悬浮按钮与「更多菜单」两个列表各自独立排序，配置在本插件自己的页面里。"

@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-tool-gate
+name: mzzsfy/dsh-plugin#dsh-tool-gate
+category: tools
+description:
+  en: 'Deferred tool loading gate: inject allowlisted tools in full, mark the rest for the host deferred-loading chain, and expose them as searchable placeholders with a settings card.'
+  zh: '全局层工具白名单延迟加载：白名单内工具全量注入，其余交宿主按需加载链以 tool_search 检索激活，设置卡可视配置。'
+icon: https://raw.githubusercontent.com/mzzsfy/dsh-plugin/main/assets/icons/png/dsh-tool-gate.png

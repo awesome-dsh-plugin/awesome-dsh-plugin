@@ -1,0 +1,6 @@
+url: https://github.com/240xu/dsh-session-lazy-view
+name: 240xu/dsh-session-lazy-view
+category: session
+description:
+  en: 'Read-only lazy session viewer: lists sessions with stat only, then decompresses just the tail Zstandard frames to inspect recent events; includes search, stats, and export in a standalone /lazyview panel. Requires Node.js 24+.'
+  zh: '只读会话惰性查看器：仅 stat 列出会话，再只解压尾部 Zstandard 帧查看最近事件；独立 /lazyview 面板支持搜索、统计和导出。需 Node.js 24+。'

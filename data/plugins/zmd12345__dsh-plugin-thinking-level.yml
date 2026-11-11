@@ -1,0 +1,8 @@
+url: https://github.com/zmd12345/dsh-plugin-thinking-level
+name: zmd12345/dsh-plugin-thinking-level
+category: usage
+description:
+  en: Judges the right reasoning level locally from the current draft and recent turns and switches it in one click; nudges a new session when the conversation grows long — less overthinking on simple tasks, enough reasoning on hard ones.
+  zh: 根据当前任务和最近几轮对话在本地判断合适的推理等级，一键切换；会话过长时提醒并可直接新建会话：简单任务不过度思考、节省 token，复杂任务给足推理。
+icon: https://raw.githubusercontent.com/zmd12345/dsh-plugin-thinking-level/main/assets/icon-180.png
+tarball: https://github.com/zmd12345/dsh-plugin-thinking-level/releases/download/v0.4.2/dsh-plugin-thinking-level-0.4.2.tgz
