@@ -7775,6 +7775,7 @@ dsh plugin --profile web add dshmarket
 - [zhu1090093659/dsh-web#packages/dsh-skill-explorer](https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-skill-explorer) — 技能中心：按来源分级浏览已加载的全部 skill，启用/禁用模型调用、创建新技能、删除进可恢复回收站。
 - [ZihaoVistonWang/Stata-AI-Skill#dsh-plugin](https://github.com/ZihaoVistonWang/Stata-AI-Skill/tree/main/dsh-plugin) — 在 DeepSeek Harness 中运行 Stata：Stata AI Skill 原生服务随 DSH 自动启动（内置 macOS/Windows 多平台二进制），无需手动配置即可跑回归、do 文件与计量工作流。
 - [zimai233/dsh-adhd-copilot](https://github.com/zimai233/dsh-adhd-copilot) — ADHD 行为辅导技能：任务拆解、事项过载管理、启动仪式与失败重启。
+- [ZiMing-X/wishos-plan-book](https://github.com/ZiMing-X/wishos-plan-book) — 给 DeepSeek Harness 的文档态计划任务书插件：一个入口技能，加上「四要素校验 / 骨架生成 / 包自检」三个工具，规程全文随包分发。只有生成工具会写盘，且默认拒绝覆盖已存在文件（需显式 force）。
 - [ZiYuan258/dsh-skill-router](https://github.com/ZiYuan258/dsh-skill-router) — DeepSeek Harness 的按需技能工具：注册 skill_search / skill_load / skill_ref 三个工具，让模型先从分层的技能库里检索、再按需加载正文，库里的技能因而不必进入常驻目录、不占每轮上下文；并在对话视图栏加一个「技能」标签页，回读整个会话、列出本次真正加载过哪些技能及其轮次。零依赖，所有技能调用记录只在客户端渲染，不进入模型上下文。
 - [zjsthmjialin/commercial-ui-ux-codex-skill#dsh-commercial-ui-ux](https://github.com/zjsthmjialin/commercial-ui-ux-codex-skill/tree/main/dsh-commercial-ui-ux) — 注册 commercial-ui-ux 技能：以任务为中心的商业界面 UI/UX/GUI 设计、审查、修复与实现（SaaS、仪表盘、后台、表单、表格、设计系统），带参考文档体系与质量门禁。
 - [znlgis/dsh-opengis-skill](https://github.com/znlgis/dsh-opengis-skill) — 把 opengis-skills 的 32 个 gis/ 技能（GDAL、QGIS、GeoServer、PostGIS、PROJ、PDAL、GRASS GIS、JTS、GeoPandas、Shapely、CesiumJS、OpenLayers、Leaflet、deck.gl 等）打包进 DSH 技能目录；目录只列出名称与描述，技能正文与参考文档按需加载。
@@ -8245,8 +8246,8 @@ dsh plugin --profile web add dshmarket
 - [shengyvself/dsh-autoresume](https://github.com/shengyvself/dsh-autoresume) — dsh 会话因 web 重启或上游瞬时故障（限流、5xx、余额/配额错误）中断时，自动注入「继续」让本轮接着跑，不需要手动点、不会丢上下文；带死循环守卫，重试没反应就把会话交回给你。
 - [shengyvself/narrative-prompt-polish](https://github.com/shengyvself/narrative-prompt-polish) — DSH 主输入框旁的 ✨ 一键提示词打磨：点击后 Agent 在侧边对话多轮改写草稿，你满意后再手动回填。
 - [shenhuanageshei/dsh-thincoder-suite](https://github.com/shenhuanageshei/dsh-thincoder-suite) — 导师评审逐轮收敛、工程模式写入需持设计令牌、把任务转交给更强的模型、并行多模型会诊；设置页可改各模型路由、超时与预算。
+- [shinerain1/dsh-label-workbench](https://github.com/shinerain1/dsh-label-workbench) — 通过 DSH 工具管理可迭代文本标注，绑定规则版本、隔离旧任务结果、保留人工审核并导出可追溯数据集；需另行安装 Python 后端。
 - [shinerain1/dsh-ml-workbench](https://github.com/shinerain1/dsh-ml-workbench) — 将 MLflow 适配为 DSH 工具，管理本地 CSV 分类与回归实验的追踪、分支、比较和复现交付；需另行安装 Python 后端。默认情况下训练作为独立的本机工作进程运行，DSH 退出后仍会继续（executionMode 设为 dsh 则随 DSH 停止）；运行你自己的 Python 预处理或估计器代码要打开 allowCustomCode（默认关闭）；插件不发网络请求。
-- [shinerain1/dsh-project-2](https://github.com/shinerain1/dsh-project-2) — 通过 DSH 工具管理可迭代文本标注，绑定规则版本、隔离旧任务结果、保留人工审核并导出可追溯数据集；需另行安装 Python 后端。
 - [shiyan688/dsh-novel-craft](https://github.com/shiyan688/dsh-novel-craft) — DeepSeek Harness 的小说写作工作台：你在候选段落上点赞或点踩，模型把这批点选蒸馏成一份简短的「作者偏好档案」带进后续写稿，正文本身不进写稿上下文。另有章节看板、每章写作包、只改被批注段落并逐字核对其余段落的批注式微调、项目台账，以及不把正文送进模型的本地情节体检。
 - [shuke52tt/dsh-offhours](https://github.com/shuke52tt/dsh-offhours) — 在 DeepSeek 低谷时段、电脑空闲时自动跑看板待办：每卡独立 git worktree、证据门禁、合并回收、预算/空闲闸门。仅支持 Linux/WSL（需 bash、python3、git、jq、flock），首次需在 git 仓库执行 `npx dsh-offhours init`。
 - [shuxidemosheng/dsh-tool-workflow-plus](https://github.com/shuxidemosheng/dsh-tool-workflow-plus) — 官方 workflow 工具的 drop-in 增强版：在逐字 fork 的官方工具之上，用 ctx.storageDomain 提供持久化的 saved workflow 库（workflow_save / workflow_list / workflow_get / workflow_delete / workflow_run_saved），可把编排脚本存库、检索并带新参数重跑。
