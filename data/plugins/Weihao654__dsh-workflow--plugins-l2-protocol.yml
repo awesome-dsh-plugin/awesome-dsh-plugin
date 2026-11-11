@@ -3,6 +3,6 @@ name: Weihao654/dsh-workflow#l2-protocol
 category: workflow
 
 description:
-  en: 'Plan-native multi-agent workflow for DeepSeek Harness: plan directs, work coordinates, code writes, and review audits read-only. Ordinary tasks need no authorization card or budget form. Includes 14 chain_* tools for explicitly authorized controlled rounds, with a frozen T0 baseline, layered evidence, and blocking close gates. Provides per-role model settings. Requires the sibling l1-presets bundle.'
-  zh: 'DeepSeek Harness 的 Plan 原生多 Agent 工作流：plan 负责规划、work 负责协调、code 负责写入、review 负责只读审核。普通任务无需授权卡或预算表单。提供 14 个 chain_* 工具，支持显式授权的受控轮次，包括冻结 T0 基线、分层证据和阻塞式关轮门禁。支持按角色配置模型，需同时安装 l1-presets。'
+  en: 'Plan-native multi-agent workflow for DeepSeek Harness: plan directs, work coordinates, code writes, and review audits read-only. Ordinary tasks need no authorization card or budget form. Includes 14 chain_* tools for explicitly authorized controlled rounds, with a frozen T0 baseline, layered evidence, and blocking close gates. Provides per-role model settings. Requires the sibling l1-presets bundle. For new installs, Weihao654/dsh-workflow#role-chain provides this runtime and the four presets in a single bundle. Do not enable role-chain alongside either legacy l1-presets or l2-protocol.'
+  zh: 'DeepSeek Harness 的 Plan 原生多 Agent 工作流：plan 负责规划、work 负责协调、code 负责写入、review 负责只读审核。普通任务无需授权卡或预算表单。提供 14 个 chain_* 工具，支持显式授权的受控轮次，包括冻结 T0 基线、分层证据和阻塞式关轮门禁。支持按角色配置模型，需同时安装 l1-presets。新安装可使用 Weihao654/dsh-workflow#role-chain：一个 bundle 同时提供本运行时与四个预设。请勿将 role-chain 与旧 l1-presets 或 l2-protocol 同时启用。'
 icon: https://raw.githubusercontent.com/Weihao654/dsh-workflow/main/assets/icon-1024.png
