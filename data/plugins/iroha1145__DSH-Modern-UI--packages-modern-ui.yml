@@ -1,0 +1,7 @@
+url: https://github.com/iroha1145/DSH-Modern-UI/tree/main/packages/modern-ui
+name: iroha1145/DSH-Modern-UI#modern-ui
+category: theme
+description:
+  en: 'Replacement web interface for the unmodified official DSH release: collapsible reasoning groups, a turn timeline with adjustable reading width, cards for tool calls, a model and reasoning-effort picker, an Agents view that shows subagents as a tree, optional chart and diagram widgets in answers, light and dark themes, and a phone layout. Installs from npm; uninstalling restores the official interface.'
+  zh: '给未改动的官方 DSH 换一套网页界面：思考过程分组折叠、对话轮次时间轴与可调阅读宽度、工具调用卡片、模型与思考强度选择面板、子智能体编队视图、回答里可选的图表与流程图组件、明暗主题和手机布局。从 npm 安装，卸载即恢复官方界面。'
+tarball: https://github.com/iroha1145/DSH-Modern-UI/releases/latest/download/modern-ui.tgz
