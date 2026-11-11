@@ -1,0 +1,8 @@
+url: https://github.com/passenfall/dsh-deliver-studio
+name: passenfall/dsh-deliver-studio
+category: docs
+description:
+  en: 'HTML deliverable workbench in the file preview: viewport presets (desktop, laptop, tablet, mobile, A4), click-to-annotate elements with a notes/QA panel that docks to any edge or floats and sends the notes to the agent as one message, delivery QA grouped by category (figure/table numbering, orphans, clipping, overflow, page whitespace, WCAG contrast, images, dead anchors, banned words), PDF export through a local Chromium-based browser, and export of a self-contained annotated HTML that reviewers open in a browser to reply; also provides the `deliver_qa` and `deliver_export_pdf` tools and a `/deliver` command.'
+  zh: '文件预览里的 HTML 交付物工作台：桌面、笔记本、平板、手机、A4 视口预设；点选元素就地批注，批注与 QA 收在可停靠任一边或浮动的面板里，批注可整理成一条消息发给 Agent；交付 QA 按类别分组（图表编号与引用、孤字、截断、溢出、页面留白、WCAG 对比度、图片、页内死链、禁用字样）；用本机 Chromium 内核浏览器导出 PDF；可导出自包含的带批注 HTML，审阅者在浏览器里打开即可回答；另提供 `deliver_qa`、`deliver_export_pdf` 工具与 `/deliver` 命令。'
+icon: https://raw.githubusercontent.com/passenfall/dsh-deliver-studio/main/docs/icon-256.png
+tarball: https://github.com/passenfall/dsh-deliver-studio/releases/latest/download/dsh-deliver-studio.tgz
