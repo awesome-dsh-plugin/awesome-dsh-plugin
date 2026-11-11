@@ -1,0 +1,6 @@
+url: https://github.com/Lion-Li-git/dsh-wait-guard
+name: Lion-Li-git/dsh-wait-guard
+category: dev
+description:
+  en: 'Adds budgets to agent waiting: caps job_output waits, refuses runaway foreground commands inside run_code, breaks status-polling loops after four no-progress probes, and explains run_code deadlines and parse errors.'
+  zh: '给 agent 的等待加预算：限制 job_output 等待、拦截 run_code 里超长的前台命令、连续四次只查状态就熔断轮询，并解释 run_code 的截止时间与解析错误。'
