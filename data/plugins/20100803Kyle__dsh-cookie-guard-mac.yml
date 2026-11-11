@@ -1,0 +1,6 @@
+url: https://github.com/20100803Kyle/dsh-cookie-guard-mac
+name: 20100803Kyle/dsh-cookie-guard-mac
+category: dev
+description:
+  en: Deletes the dsh-auth-* login cookies DSH Desktop appends on every launch, which otherwise pile up past the 16 KB request-header limit and make the app fail with HTTP 431.
+  zh: 清理 DSH 桌面端每次启动新增的 dsh-auth-* 登录 Cookie，避免累积超过 16KB 请求头上限后出现 HTTP 431、打不开。
