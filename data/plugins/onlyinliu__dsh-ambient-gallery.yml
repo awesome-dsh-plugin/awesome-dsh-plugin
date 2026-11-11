@@ -1,0 +1,6 @@
+url: https://github.com/onlyinliu/dsh-ambient-gallery
+name: onlyinliu/dsh-ambient-gallery
+category: ui
+description:
+  en: 'Ambient Gallery: a breathing wall of pictures behind the main panel. Each window rotates up to twenty images on its own phase offset, ships with canvas-generated abstract art so it never looks empty, picks your own local pictures from a click or a drop, and reserves one discreet window that quietly loops a local video. Mounted on the frame-wide overlay with pointer events off, so text scrolls over it and nothing ever intercepts a click, a scroll or a keystroke.'
+  zh: '氛围图墙：给主面板背后铺一层会呼吸的图片墙。每个窗口独立按相位错开轮播，最多 20 张图；不放图时用 canvas 现场生成抽象渐变，永远不会空着；点一下或拖文件进来即可换成自己的本地图片；其中一个窗口可隐蔽地循环播放本地视频。整面墙挂在整帧浮层上且关闭指针事件，所以文字照常从上面流过，点击、滚动、键盘输入一律不受影响。'
