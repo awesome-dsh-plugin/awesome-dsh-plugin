@@ -1,0 +1,6 @@
+url: https://github.com/hua-1111/dsh-logos-forge
+name: hua-1111/dsh-logos-forge
+category: ui
+description:
+  en: 'Prompt forge for DeepSeek Harness: one draft becomes three parallel rewrites, read for intent first and scored blind by the model, with the sentences each version added highlighted — then bind one back into the composer.'
+  zh: 'DeepSeek Harness 的提示词炼成阵：先读意图，再让一份草稿并行炼出三个版本，模型盲评打分排序、新增句子高亮标出，最后择一写回输入框。'
