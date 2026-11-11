@@ -1,0 +1,7 @@
+url: https://github.com/AstralHorizon4/dsh-shared-reading
+name: AstralHorizon4/dsh-shared-reading
+category: ui
+description:
+  en: 'Read books inside DSH: import EPUB, TXT, Markdown or HTML into a paginated reader, highlight a passage and ask about it in that book''s own agent session, with four reading tools that refuse chapters you have not reached yet.'
+  zh: '在 DSH 里读书：导入 EPUB、TXT、Markdown、HTML 分页阅读，划出句子就在这本书专属的 agent 会话里追问；四个 reading_* 工具按已读到第几章拒绝未读内容。'
+icon: https://raw.githubusercontent.com/AstralHorizon4/dsh-shared-reading/main/assets/icon-180.png
