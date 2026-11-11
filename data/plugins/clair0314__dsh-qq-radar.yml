@@ -1,0 +1,6 @@
+url: https://github.com/clair0314/dsh-qq-radar
+name: clair0314/dsh-qq-radar
+category: skill
+description:
+  en: 'Turns the QQ groups you follow into a Chinese daily digest. Pulls chat history through a local NapCat/OneBot 11 service into SQLite, summarizes each group, and renders an HTML/Markdown report with an opportunity radar that surfaces repeated complaints, tool requests and unmet needs as product ideas; can push a card to Feishu on a schedule.'
+  zh: '把关注的 QQ 群聊总结成中文日报。经本机 NapCat/OneBot 11 拉取历史消息存入 SQLite，逐群摘要，生成带「机会雷达」的 HTML/Markdown 报告（从抱怨、求工具、求助里找产品机会），并可按计划推送到飞书。'
