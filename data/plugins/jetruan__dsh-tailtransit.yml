@@ -1,0 +1,7 @@
+url: https://github.com/jetruan/dsh-tailtransit
+name: jetruan/dsh-tailtransit
+category: dev
+description:
+  en: Runs a userspace tailscaled for Harness so web fetch, shell, plugin and LLM traffic can each use a Tailscale exit node, leaving routes and DNS untouched.
+  zh: 为 Harness 单独运行一个用户态 tailscaled：网页抓取、命令行、其他插件、大模型四类流量各自选择是否走 Tailscale 出口节点，系统路由与 DNS 不变。
+icon: https://raw.githubusercontent.com/jetruan/dsh-tailtransit/main/assets/icon-180.png
