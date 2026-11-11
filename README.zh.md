@@ -3482,6 +3482,7 @@ dsh plugin --profile web add dshmarket
 - [leotpp/dsh-subagent-toolkit](https://github.com/leotpp/dsh-subagent-toolkit) — 在设置里为子代理单独指定一个 OpenAI 兼容模型（或不选则跟随主模型），写入官方 subagent-model-selection 白名单，并在仅有一条路由时提醒主代理显式传参；可选提供与 DSH 进程隔离的 Pi CLI 一次性子代理。
 - [Lequait/dsh-glm-web](https://github.com/Lequait/dsh-glm-web) — 非官方的智谱清言（chatglm.cn）网页版 provider——用网页版登录态与积分驱动 DSH，支持流式输出与提示词桥工具调用。
 - [LFELKEEA/dsh-default-model](https://github.com/LFELKEEA/dsh-default-model) — 修改并固定共享的默认模型：新建对话、重启、以及在对话里切换模型都不会再改写它。
+- [liaiaaa/dsh-team-member-model](https://github.com/liaiaaa/dsh-team-member-model) — 为 Agent Teams 的子队友单独指定模型——在成员会话输入框的胶囊里固定一个模型，或让成员每一步跟随主对话当前使用的模型；指定重启后仍生效。
 - [liaoyuqing/dsh-llm-error-retry](https://github.com/liaoyuqing/dsh-llm-error-retry) — 大模型请求重试插件：命中配置的 HTTP 状态码、机器码或 provider 返回字段=值时，按该条规则独立配置的时长休眠后自动重新请求，让订阅套餐的限额、限流报错（429 / insufficient_quota）不打断运行。
 - [liaoyuqing/model-failover-manager](https://github.com/liaoyuqing/model-failover-manager) — 模型选择弹窗＋路由分组：模型失败后自动换到组内下一个可用模型并继续本轮；另含数据看板与免费渠道页签。页签一键安装六个渠道插件 —— Our Free Model（唯一不登录、不填 API Key 也能用的）、CodeArts、WorkBuddy、Trae、Qoder、Providers Hub，覆盖 23 个平台：华为云 CodeArts、腾讯 CodeBuddy、WorkBuddy、有道 LobsterAI、Qoder、TRAE、Cline、讯飞 Loomy、商汤 Raccoon、MiniMax、智谱 ZCode、Gemini Code Assist、阿里 Accio、讯飞 AStudio、OpenCode、OfficeAce、AutoClaw、魔搭 ModelScope、七牛云 Qiniu、Codely、MonkeyCode、百智云、超级麦吉 MagiCrew 等平台。
 - [libre-webui/dsh-native-provider](https://github.com/libre-webui/dsh-native-provider) — 在 [Libre WebUI](https://github.com/libre-webui/libre-webui) 中使用 DSH 模型进行聊天、沙箱 Work 任务和用量统计，提供商凭据保留在 DSH 中。需要 Libre WebUI 0.37.0 或更高版本。
@@ -5630,6 +5631,7 @@ dsh plugin --profile web add dshmarket
 - [it-glen/dsh-mcp-manager](https://github.com/it-glen/dsh-mcp-manager) — 面向 DSH 的 MCP 服务器管理器：在面板中增删改、启用或停用 Model Context Protocol 服务器，支持 stdio 与 streamable-HTTP 两种传输、按服务器设置工具调用超时、实时查看连接状态与工具数量，并持久化到项目级或主目录的 mcp.json。@wingsky-1/dsh-mcp-manager 的维护分支。
 - [iTanzhao/dsh-d365-kit](https://github.com/iTanzhao/dsh-d365-kit) — 面向 Dynamics 365 CE / Dataverse 的 DSH 工具箱：15 个工具，支持跨环境查询元数据与解决方案层、快照与差异、字段影响面反查、迁移风险评估、GitLab MR 检查、契约漂移、环境健康，以及需人工确认的元数据写入。
 - [izwarm195/dsh-net-tools](https://github.com/izwarm195/dsh-net-tools) — 让沙箱里的 agent 通过你的本地代理联网：net_fetch 抓取网页，net_proxy_status 查看代理状态。
+- [jackheather/dsh-self-learn](https://github.com/jackheather/dsh-self-learn) — 把 B 站视频、网页、本地文件和直播变成可检索的学习库：本地转写、画面 OCR、抽取式摘要，每个来源交回约 1.5KB 文本，让模型读摘要而不是全文。
 - [Jamailar/beav-deepseek-harness](https://github.com/Jamailar/beav-deepseek-harness) — 将 DSH 连接到本机 Beav，面向小红书（RED/RedNote）、社交媒体运营和自媒体 AI 创作，覆盖选题研究、知识库、文案、图片、音频与短视频工作流，并保留审批和产物追踪。
 - [James-web11/dsh-matlab-mcp](https://github.com/James-web11/dsh-matlab-mcp) — 把 MathWorks MATLAB/Simulink MCP 服务器注册进 dsh profile，让会话获得 mcp__matlab__* 工具，用于运行 MATLAB 代码以及读取、编辑与测试 Simulink 模型。
 - [janehk416-alt/dsh-FocusCapture](https://github.com/janehk416-alt/dsh-FocusCapture) — Windows 截图与标注插件，支持自定义全局快捷键、置顶贴图和添加到当前 DSH 聊天附件草稿；需要兼容的 Python 运行环境。随包带有预编译的 Windows 可执行文件（native/DualCtrlSnip.exe）和一个只轮询所选快捷键状态的 Python 辅助程序。
@@ -6261,6 +6263,7 @@ dsh plugin --profile web add dshmarket
 - [SunnyRad/dsh-a-share-toolkit](https://github.com/SunnyRad/dsh-a-share-toolkit) — 把 A 股估值分位体检与个股财务体检做成 4 个可直接调用的工具：估值分位（PE/PB/PS 历史序列，亏损股负 PE 剔除、样本量门槛、周期股切 PB）与三表体检（勾稽校验、杜邦拆解、造假红旗、同业分位）。数据由调用方自带，本插件不取行情、不自带数据源。需要 Python 3.8 及以上（只用标准库）。
 - [suomir1995/dsh-link-collect](https://github.com/suomir1995/dsh-link-collect) — 把收藏的链接存成你指定文件夹里的 Markdown 文件，带侧栏页面管理收藏夹与链接、全库搜索、自动抓取图标，以及三个 agent 工具。
 - [supart/DSH-FHL-Image-Plugin](https://github.com/supart/DSH-FHL-Image-Plugin) — 为 DeepSeek Harness 提供 FHL Images 生图与多参考图编辑，含三个 Agent 工具、最多十个 API Key Worker 的池，以及聊天内配置 Key。
+- [super-ding/dsh-influxdb](https://github.com/super-ding/dsh-influxdb) — DeepSeek Harness 的 InfluxDB 2.x 插件：6 个智能体工具加一个侧边面板，可执行 Flux 查询、查看 schema 与 bucket、管理连接、写入 line protocol。
 - [superdesigndev/treg](https://github.com/superdesigndev/treg) — 给 Agent 的工具目录：按「要做的事」检索约 2,600 个外部接口（SEO 与 SERP、外链、社交、人物与公司信息补全、广告库、抓取），查看参数与单次调用价格后直接调用，凭据由服务端注入。附带技能，MCP 行在未设置 TREG_TOKEN 前保持禁用。
 - [Sur-Cai/macos-computer-use-kit#dsh](https://github.com/Sur-Cai/macos-computer-use-kit/tree/main/packages/dsh) — DeepSeek Harness 的 macOS computer use：基于无障碍树的稳定 ref 定位、后台输入、Unicode 输入、菜单与应用、set-of-mark 截图、本地 OCR 与动作校验——11 个工具桥接 macos-cu CLI。
 - [suyunxing/dsh-draw-mode](https://github.com/suyunxing/dsh-draw-mode) — 把 ComfyUI 接给 agent：五个 draw_* 工具（状态、工作流、模型、生图、反推）与侧栏面板。插件本身不带任何工作流、也不假设你用什么模型：放进工作流目录的每个 API 格式 JSON 都会被自动检查，找出 prompt / 负向提示词 / 宽高 / steps / cfg / 种子 / LoRA 落位，可用同名 sidecar 文件覆盖检测结果；LoRA 能插进任意连线图。所有路径都可配置、可在面板里改并保存到设置文件，因此对着远程或已经开着的 ComfyUI 也能用。无头自动启动与空闲关闭默认关闭，需自行开启。
@@ -9944,6 +9947,7 @@ dsh plugin --profile web add dshmarket
 - [baixianger/dsh-weave](https://github.com/baixianger/dsh-weave) — 基于 Iroh 的可信 DSH 主机网状网络：提供加密的节点发现、远程会话投递与连通状态。
 - [baosfeng/my-dsh-plugins#dsh-my-remote](https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-my-remote) — 远程控制：把 ask / 审批 / 会话结束事件推送到外部通道 webhook，可用 token 鉴权在手机上回答问题、批准请求、查询状态或继续会话（npm: `dsh-my-remote`）。
 - [bbtssama/dsh-webui-mobile](https://github.com/bbtssama/dsh-webui-mobile) — DSH Web 界面的移动端外壳：抽屉式侧栏、可拖拽悬浮按钮、移动端输入框修复，以及悬浮在输入框上方的图片上传按钮（原生相册/拍照，走加图校验管线），桌面端零影响。已发布到 npm（dsh-webui-mobile）。
+- [BeastyZ/dsh-remote-agent](https://github.com/BeastyZ/dsh-remote-agent) — 连接 Linux 服务器的 Agent 工作台，支持持久会话、远程终端、文件编辑、Git worktree 和端口转发。
 - [beiheng127/dsh-dfy-qq](https://github.com/beiheng127/dsh-dfy-qq) — 给 DeepSeek Harness 加一层 QQ 对话行为：人设文件注入每一轮、按 QQ 号认人的群友档案、带概率与大保底的表情包挑选、可选的主动接话、从群友原话蒸馏出的语气子人格，以及定时消息。开启内置 QQ 通道后，任何 QQ 用户私聊机器人、任何群里 @ 机器人都能驱动 Agent；没有发送者白名单，请用群白名单限制或保持通道关闭。
 - [Bernardxu123/dsh-mobile-gate](https://github.com/Bernardxu123/dsh-mobile-gate) — 局域网手机访问网关：独立子进程反向代理 + 首次访问审批 + 设备令牌绑定 + 限流 + 手机端紧凑排版注入（输入区权限/模型小胶囊、randomUUID polyfill）。
 - [better-er/dsh-remote-file-system](https://github.com/better-er/dsh-remote-file-system) — 模型可直接调用的 ssh 远程文件三件套：read_remote 按行号分页读远端 UTF-8 文本，write_remote 只新建文件、目标已存在即拒绝且没有覆写分支，edit_remote 做唯一匹配的字面替换，三者共用取自 ~/.ssh/config 的「别名:路径」一个 file_path 字段。
