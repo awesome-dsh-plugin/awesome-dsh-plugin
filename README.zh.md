@@ -815,6 +815,7 @@ dsh plugin --profile web add dshmarket
 - [HansHuang2683/dsh-quote-annotate](https://github.com/HansHuang2683/dsh-quote-annotate) — 在对话里划选任意一段文字即可就地批注：原文高亮并带编号角标，发送时把原文、出处（谁说的、第几轮）和你的批注一起折进消息，模型能对上每一句指代。
 - [hansomgar/dsh-settings-resize](https://github.com/hansomgar/dsh-settings-resize) — 在「通用设置」里用三个滑动条调节设置弹窗的宽度、高度与透明度，重启后仍然保留。
 - [HanYu-me/dsh-project-kanban](https://github.com/HanYu-me/dsh-project-kanban) — dsh 侧边栏里的项目看板。每个项目一个区块，固定四列（待办 / 进行中 / 待反馈 / 已完成）：新建、重命名、换色、排序、删除项目和任务，点一下把任务推到下一列，拖拽或卡片菜单调整顺序，删除可撤销，项目可折叠。点开项目还有一个「数据与结果」页：左边数据树、右边结果树，可拖拽整理、合并成章节、连线看出结果来自哪份数据；节点可加星标并「只看星标」，让结果之间互相关联，按类别给节点和连线着色，支持撤销 / 重做（Cmd+Z）。颜色、圆角和阴影取自 dsh 主题变量，跟随浅色 / 深色，宽度不够时从四列变两列再变单列。
+- [haonan108/dsh-plugin-screenshot-tool](https://github.com/haonan108/dsh-plugin-screenshot-tool) — macOS 输入框工具栏截图按钮：剪刀分体按钮调起系统原生 screencapture 框选（右侧下拉可先隐藏 Harness 窗口），截图自动进剪贴板并附成输入框草稿；会先检查屏幕录制授权，未授权时提示去设置，而不是返回一张只有壁纸的图。
 - [HaoyueQin/dsh-diff-stat](https://github.com/HaoyueQin/dsh-diff-stat) — 在编辑/写入工具行内联 +N −M 徽标，每轮末尾给出可折叠的文件变更汇总卡：对齐差异、逐文件审查与撤销；覆盖原生 edit/write、str_replace_editor 与 Code Dispatch 子调用，不依赖 git。
 - [HapyRain/dsh-router-laya](https://github.com/HapyRain/dsh-router-laya) — 为 DeepSeek Harness 提供自动思考档位路由：本地微调的 7 题分类模型（ModernBERT，842MB，CPU 推理 <1s）对无档位指令的消息自动选择 low/high/max；会话内检测到重试自动沿阶梯升档，受「别用 max」类排除约束压制；判定服务不可达时熔断降级，会话不断。前端档位芯片实时显示当前档位与最近 20 轮判断原因。判定全程本地推理，任务文本不出本机。
 - [Harzva/dsh-superterminal](https://github.com/Harzva/dsh-superterminal) — 面向 macOS 上 DSH 0.1.1-rc.2 的原生终端，支持本地终端 AI 会话、可接回原任务的 SSH 远程终端、有限轮次群讨论，以及任务交接、验收与返工。
@@ -4371,6 +4372,7 @@ dsh plugin --profile web add dshmarket
 - [qinu321/dsh-session-rename](https://github.com/qinu321/dsh-session-rename) — 新增 session_rename 工具，让 AI 能重命名自己所在的 DSH 会话。
 - [QIUZAIYOU/dsh-workspace-control](https://github.com/QIUZAIYOU/dsh-workspace-control) — 侧栏里的工作区面板：迁移、重建、合并、重命名、删除整个工作区——迁移会用新目录的 header 重新发布会话日志，修复工作区归属并刷新标题缓存，每张卡片标明会话是在运行还是仅被打开。
 - [qiyu166/dsh-client-ui-session-mention](https://github.com/qiyu166/dsh-client-ui-session-mention) — 输入 @ 引用另一个对话：选择历史会话，将其压缩总结注入当前提示词。
+- [QLX-Hub/dsh-config#dsh-session-trash](https://github.com/QLX-Hub/dsh-config/tree/main/plugins/dsh-session-trash) — 在每个会话条目的右键菜单加入「删除会话（放入回收站）」和「彻底删除会话」，并提供可恢复的会话回收站。
 - [QqiqiQ/dsh-session-toolkit](https://github.com/QqiqiQ/dsh-session-toolkit) — 在会话头部添加按钮，可把已开始的会话迁移到另一个工作区，或切换已开始会话的 Agent 预设。
 - [que3sui/dsh-darwin#sentinel](https://github.com/que3sui/dsh-darwin/tree/main/packages/sentinel) — 会话体检：基于官方 session-query 接缝，机械挖掘会话日志为结构化问题工单（重试环/工具错误簇/中断回合/Token 浪费）；可独立安装使用。
 - [quecai-niu/dsh-session-find](https://github.com/quecai-niu/dsh-session-find) — 跨全部会话日志的字面检索（内置 FTS5 分词搜不到中文整句）；右侧栏面板可双击跳转并滚动到命中那一行，另提供 session_find 模型工具。
@@ -10542,6 +10544,7 @@ dsh plugin --profile web add dshmarket
 - [V01d-Project/dsh-chaos-plugins#dsh-chaos-fixer-crash-fixer](https://github.com/V01d-Project/dsh-chaos-plugins/tree/main/packages/dsh-chaos-fixer-crash-fixer) — 拆掉 dsh-chaos-fixer-crasher 的引信，让四个插件互相咬的链子保持稳定。警告：它只拆这一种崩溃，不处理其它未捕获退出。玩笑插件。
 - [V01d-Project/dsh-chaos-plugins#dsh-chaos-fixer-crasher](https://github.com/V01d-Project/dsh-chaos-plugins/tree/main/packages/dsh-chaos-fixer-crasher) — 发现 dsh-chaos-crash-fixer（修复器）在岗就让 DSH 宿主以 1 退出。警告：修复器在的时候它会开机即崩，必须装 dsh-chaos-fixer-crash-fixer 拆引信。玩笑插件。
 - [V01d-Project/dsh-chaos-plugins#dsh-chaos-rivals-crasher](https://github.com/V01d-Project/dsh-chaos-plugins/tree/main/packages/dsh-chaos-rivals-crasher) — 检测到电脑上的 codex 或 Claude Code 就让 DSH 宿主以 66 退出。警告：在装有 codex 或 Claude Code 的机器上单装会变成启动崩溃循环，请先装 dsh-chaos-crash-fixer，或设 DSH_CHAOS_MODE=log。这是玩笑插件，与 OpenAI、Anthropic 无关。
+- [vector985/dsh-zen-garden](https://github.com/vector985/dsh-zen-garden) — DeepSeek Harness 的像素植物园：八个花盆、六种植物，浇水开花收金币，读取 Open-Meteo 实时天气，附大肥鱼托管与 garden_status/garden_action 工具。
 - [vegetable-kun/DSH_Plugin_Taffy](https://github.com/vegetable-kun/DSH_Plugin_Taffy) — Taffy 表情包状态机：右下角表情实时联动 agent 状态——待审批 / 已批准 / 被拒 / 求饶、思考、工具执行、插话、等你回答、压缩记忆、长任务疲惫、审批没人理、空闲 / 休眠；SSE 推流同步、拖拽定位、中键控制台、工具卡片镜像控制台、表情锁定、外观设置持久化与今日时长统计。
 - [Very12345/dsh-codex-pet](https://github.com/Very12345/dsh-codex-pet) — Windows 悬浮桌面宠物，提供任务通知、原生会话控制及使用已配置本地识别器和 Windows 系统语音的连续本地通话。
 - [vlln/whale-girl](https://github.com/vlln/whale-girl) — 桌面宠物（QQ 宠物形态）：右下角悬浮、可拖拽/投喂/玩耍。
