@@ -9930,6 +9930,7 @@ dsh plugin --profile web add dshmarket
 - [LUMIAO9527/DSH-Connect](https://github.com/LUMIAO9527/DSH-Connect) — 在手机浏览器中打开电脑上运行的完整 DeepSeek Harness，支持局域网 HTTPS 扫码配对，会话与工作区共用；跨网访问需自备 HTTPS 入口或自建中继（不提供公共中继）。连接与认证代码部分改编自 saya-ch/dsh-mobile。
 - [lunaship/dsh-links](https://github.com/lunaship/dsh-links) — Android 配套桥接：局域网扫码配对（可吊销的设备 Token 与 TLS 指纹）、手机连接与设备管理面板，以及向配对原生 App 提供会话、实时事件与审批的 HTTPS 接入代理。
 - [Lunatic029/dsh-clash-proxy](https://github.com/Lunatic029/dsh-clash-proxy) — 让 DeepSeek Harness 的出网流量走本地 Clash 代理，代理关闭时自动回落直连。
+- [lzlrt/dsha-desktop-link](https://github.com/lzlrt/dsha-desktop-link) — 在侧栏底部加一个按钮，点一下打开桌面版 DSH 的 Web GUI——手机上交给系统浏览器，电脑上开新标签页。目标地址取自插件配置、DSH_DESKTOP_URL 或 ~/.dsh/desktop-url.txt，取不到时回退到 dsh-remote-web-ui 发布的固定中继地址；什么都没配时按钮置灰并给出提示。
 - [mcdottok/dsh-vscode-connect](https://github.com/mcdottok/dsh-vscode-connect) — 把 DSH 和 VS Code 连接起来，提供类似 Claude Code for VS Code 的使用体验，直接在 VS Code 中接续同一工作区与同一会话：下载 VS Code 扩展 DSH Coding Agent，插件在 Windows 同机会自动发现并连接，其他平台可复制连接地址后手动连接。
 - [MDR-EX1000/dsh-rw](https://github.com/MDR-EX1000/dsh-rw) — Remote-SSH 风格工作区：把 SSH 主机上的远程目录变成原生 DSH 工作区，agent 通过 12 个 rw_* 工具（SFTP/exec）直接操作远程文件，路径限定在工作区内并校验 known_hosts。
 - [Memorial-coder/dsh-remote-plugin](https://github.com/Memorial-coder/dsh-remote-plugin) — 通过 frp 隧道把本机 DSH Web 面板暴露到手机或外网，带扫码配对、TOTP 两步验证、设备管理与 IP 黑名单。仅支持 Windows 10/11（macOS/Linux 需自备同版本 frpc）；默认官方托管需在 remote.ymzcc.com 免费注册账号、流量经该服务器中转；Windows Defender 可能拦截包内 frpc.exe，需先运行附带的 fix-antivirus 脚本。
@@ -10562,6 +10563,7 @@ dsh plugin --profile web add dshmarket
 - [zhanshenovo/dsh-brake-pedal](https://github.com/zhanshenovo/dsh-brake-pedal) — 一个制动踏板自检彩蛋。DSH 网页界面上有一颗可拖动的胶囊，做六脚全力制动测试：支架在第二到第六脚之间伪随机地断裂，也可能整轮通过，随后弹出一份虚构通报。踏板力由会话事实推导并在界面上标为推导值，而这些事实取自真实会话日志。它从不拦截、延迟或接管真实的停止动作。
 - [zhanshenovo/dsh-bushaoxin](https://github.com/zhanshenovo/dsh-bushaoxin) — 一个对话文风层：谈到「便宜的路有坑」这类取舍时，把警告换成另一种说法——快而便宜的是隔壁黑心店，慢而可靠的老店在立规矩。附带改写引擎，可把任意文本拧成固定骨架的对白，有五个互相独立的旋钮（幕数、招牌台词密度、收尾走向、种子、预设档）；一个四档强度滑条；以及 /bushaoxin 命令，按会话的工具调用记录生成一份段子式的「烧心指数」病历。每篇改写末尾永远附一行真实技术结论，不可关闭。零依赖、无构建步骤，引擎是纯函数。
 - [dsh-multi-role-groupchat](https://github.com/zhdzh-good/multi-role-groupchat/tree/main/multi-role-groupchat) — DeepSeek Harness 多角色群聊面板：你以一个角色加入，和 2–3 个 AI 成员对话；支持按对话对象智能路由、其他人按概率接话、显式 @ 接话，以及全局角色库、失败诊断、失败回应重试、群内消息搜索、场景便利贴、长历史分页、多标签同步、私有记忆与私人关系、模型目录下拉和角色/群配置 JSON 导入导出。
+- [zhing99-hash/dsh-dafeiyu-jinrong](https://github.com/zhing99-hash/dsh-dafeiyu-jinrong) — DeepSeek Harness 的桌面大肥鱼伙伴：可编辑气泡、动作包、行情情绪，以及只读的 dsh-meme 斗图图库。
 - [zhu1090093659/dsh-pet](https://github.com/zhu1090093659/dsh-pet) — 常驻界面的鲸鱼娘：随智能体状态切换动画，可摸头互动、喂小鱼干养亲密度，从幼鲸一路养成。
 - [ziyefbk/podwhale#podwhale](https://github.com/ziyefbk/podwhale/tree/main/podwhale) — 个人 Agent 协作社区，提供桌宠聊天、阅读社交和主人审批。需要鲸群社区账号的受限 AI 令牌才能连接（未连接时仅为只读本地演示）；按 DSH 0.2.2-rc.1 构建。
 - [zmm863-commits/dsh-dice-game](https://github.com/zmm863-commits/dsh-dice-game) — 🎲 骰子大作战 — 六种经典骰子玩法（吹牛、猜红点、猜红蓝、猜大小、猜单双、猜顺子），单人 vs AI + PeerJS 联机，全量中英双语，侧边栏入口打开游戏面板。
