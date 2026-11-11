@@ -1251,6 +1251,7 @@ dsh plugin --profile web add dshmarket
 - [MarkTina/dsh-activity-heat](https://github.com/MarkTina/dsh-activity-heat) — 按距最后一次活动的时间给会话与工作区打 0–100% 热度分，并在侧边栏图标、会话标题前的小热度圆点、会话悬浮卡片和可筛选的会话/工作区面板中呈现；工作区卡片还汇总该工作区的轮次、步数、Token 与会话时长。
 - [Martlet-Tech/dsh-open-folder-fix](https://github.com/Martlet-Tech/dsh-open-folder-fix) — 修正 Windows 上「打开工作目录」的行为。官方调用 `explorer.exe "<file:// URI>"`，在某些主机上会报告成功却不弹窗口——因为成功判据是退出码，分不出「窗口开了」和「什么都没发生」。本插件把该操作改走 `explorer.exe /e,<目录>`，稳定新开窗口；菜单里其它应用仍走官方路径。
 - [MarushiruDonato/dsh-rgb](https://github.com/MarushiruDonato/dsh-rgb) — 为 DeepSeek Harness 提供 RGB 动效：消息输入框光环、侧边栏光条、活动会话指示器与品牌 Logo 矢量发光。
+- [MasterLTX/dsh-session-icon](https://github.com/MasterLTX/dsh-session-icon) — 在 DSH 左侧每一条会话行前画一个图标，由会话本身决定：先按标题关键词，再读会话内容（标题、首条用户消息与工具名），再走可选的模型一次性判类，最后按工作区兜底。445 个 Ant Design outlined 图标内联离线可用，规则、颜色、关键词与行缩进都可在设置页调整。
 - [matata2017/dsh-paste-collapse](https://github.com/matata2017/dsh-paste-collapse) — Codex 同款粘贴折叠：DSH 输入框里超过 1000 字符的粘贴变成 `[Pasted Content N chars]` 占位符，同样长度再粘一次编成 `#2`；模型读到之前宿主把占位符换回全文，一个字符不少。输入框上沿留一枚胶囊显示预览，发出的消息里也是同一枚胶囊，点开在右侧抽屉看全文并复制。全部在内存里：不写磁盘，也不省 token。
 - [Matcha-Eason/dsh-answer-highlighter](https://github.com/Matcha-Eason/dsh-answer-highlighter) — 在 DSH Web 的助手回答完成后，额外调用一次模型，自动高亮其中的关键点、定义、警告和问题。
 - [Matthew-Laplace/dsh-conversation-archive](https://github.com/Matthew-Laplace/dsh-conversation-archive) — 在 DSH 里用 Codex CLI 重建 Codex 对话窗口：浏览本机线程、查看历史，并通过 CLI 把消息发回原线程。需要本机已安装 Codex CLI 与 Python。
