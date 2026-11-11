@@ -2,6 +2,6 @@ url: https://github.com/HimLeoing/dsh-task-progress
 name: HimLeoing/dsh-task-progress
 category: ui
 description:
-  en: 'A draggable task progress panel with independent teammate progress, optional Off reasoning observations, and probe cost diagnostics.'
-  zh: '可拖动的任务进度面板，展示独立队友进度、可选 Off 推理评估与探针费用诊断。'
-tarball: https://github.com/HimLeoing/dsh-task-progress/releases/download/v0.1.0-rc1/dsh-task-progress-0.1.0-rc1.tgz
+  en: 'A draggable task progress panel with local estimates, independent teammate progress, optional AI observations, and probe cost diagnostics.'
+  zh: '可拖动的任务进度面板，展示本地估算、独立队友进度、可选 AI 评估与探针费用诊断。'
+tarball: https://github.com/HimLeoing/dsh-task-progress/releases/download/v0.1.1-alpha3/dsh-task-progress-0.1.1-alpha3.tgz
