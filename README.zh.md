@@ -796,6 +796,7 @@ dsh plugin --profile web add dshmarket
 - [guchang/draw2code](https://github.com/guchang/draw2code) — 运行在 dsh-better-sidebar 中的 Excalidraw 协作原型插件：结构化澄清产品需求、保护用户手工修改的人机画板更新，以及基于原型的前端生成。
 - [guhanfei-ai/dsh-mindmap](https://github.com/guhanfei-ai/dsh-mindmap) — 对话式 Markdown 思维脑图工作台：逐步编辑完整文档，实时同步右侧可视化，并在工作目录中打开、管理和导出脑图。
 - [GuihaiHU/dsh-temp-note](https://github.com/GuihaiHU/dsh-temp-note) — DSH 右侧边栏的临时笔记，支持会话级、工作区级与全局三种范围、自动保存、一键复制，以及用默认模型一键优化为 Markdown。
+- [guiyuan77/dsh-peek](https://github.com/guiyuan77/dsh-peek) — 在右侧栏标签里读取 dsh 已注册工作区内的 EPUB、TXT、Markdown 与 HTML，记住上次阅读位置，并可用 Esc 一键收起整个右侧栏回到会话。零运行时依赖、无需构建。
 - [gulagala001/dsh-deepseek-workbench](https://github.com/gulagala001/dsh-deepseek-workbench) — 仅 Desktop。在 DSH 中使用 DeepSeek 网页聊天、临时侧栏对话、API 平台与会话迁移。
 - [gulagala001/dsh-intelligent-ui](https://github.com/gulagala001/dsh-intelligent-ui) — DSH 原生交互式回答、可编辑卡片与按需界面技能。
 - [guo-ziao/dsh-interrupt-button](https://github.com/guo-ziao/dsh-interrupt-button) — 发送按钮旁的绿色打断按钮：运行时一键静默中断 AI，AI 停止后总结进展并向你征求新要求，支持自定义打断提示词。
@@ -9023,6 +9024,7 @@ dsh plugin --profile web add dshmarket
 - [AphyTOT/dsh-plugin-preflight](https://github.com/AphyTOT/dsh-plugin-preflight) — 投稿社区精选列表前的插件自检：校验 dsh.bundle 清单、cordis.patch.yml 接线、客户端 bundle 形态，以及会静默排除预发布版 harness 的 peer 版本范围。提供 CLI 与一个只读的 agent 工具。
 - [Areium/dsh-fail-logger](https://github.com/Areium/dsh-fail-logger) — 全模式调用工具失败自动实录：把原生工具 / PTC run_code / 代码内嵌工具调用的失败错因去重计数后写入 skill，越用越少错。
 - [Arlenman/dsh-backup-sync](https://github.com/Arlenman/dsh-backup-sync) — DSH 的备份 / 恢复 / 换机迁移：把技能（技能目录在 ~/.dsh 之外的 ~/.agents/skills）、插件清单、核心配置、记忆、待办、以及可选的会话打成一个带 sha256 边车的 tar.gz，再在另一台机器上以「带基线的三方合并」导入 —— 逐文件列出差异，而不是直接覆盖对方改过的东西。凭据永不进包（27 个文件名 + 7 个私钥后缀的黑名单，外加内容特征闸，导入侧再过一遍），每次导入前先写一份可原样还原的快照；归档可以推到任意 WebDAV 服务（绿联 NAS / 群晖 / 坚果云 / Nextcloud）并在新机器上下载回来。另含定时备份、单文件只读查看、面板内的云端卡片；零 npm 运行时依赖（打包用系统 tar）。
+- [Arthas1in/dsh-net-hosts](https://github.com/Arthas1in/dsh-net-hosts) — 看清本机每个软件在连哪些 host：经本地 Clash/mihomo 还原真实域名，并给出精确到秒的首次/最近时间。
 - [asdf17128/dsh-doctor](https://github.com/asdf17128/dsh-doctor) — 注册 `config_doctor` 工具，检查 harness 自身配置里那些会静默通过启动的问题：patch 整体替换 config 而丢失的字段、指向不存在 entry id 的 patch、工具重名冲突。只读。
 - [asdf17128/dshp](https://github.com/asdf17128/dshp) — 注册 `list_profiles` 与 `export_profile`：让 agent 列出本机有哪些配置，并把整套 profile（bundle 顺序、插件版本、patch）导出成一个可直接分享的文件。只读。
 - [ayahunter/dsh-plugin-clinic](https://github.com/ayahunter/dsh-plugin-clinic) — 已安装 DSH 插件集合的只读体检诊所：加载健康、依赖完整、版本兼容、安装脚本风险、重复与 patch 引用，交付模型工具、设置面板与 JSON 报告。
