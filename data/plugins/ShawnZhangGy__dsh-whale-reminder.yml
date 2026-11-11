@@ -1,0 +1,7 @@
+url: https://github.com/ShawnZhangGy/dsh-whale-reminder
+name: ShawnZhangGy/dsh-whale-reminder
+category: notify
+description:
+  en: 'Windows session-end reminder for DeepSeek Harness: an in-window unread badge that lists session names and jumps to the session when clicked, two Web Audio chimes, taskbar flashing, and a tray badge on the whale icon; only visible sessions are counted, and the settings page has seven options including a zh/en switch.'
+  zh: 'Windows 会话结束提醒：窗口内未读浮层列出会话名、点击即跳转到该会话，两段 Web Audio 提示音，任务栏闪烁，并在托盘鲸鱼图标上叠加数字徽章；只统计可见会话，设置页含中英文切换等七项。'
+icon: https://raw.githubusercontent.com/ShawnZhangGy/dsh-whale-reminder/main/assets/icon-180.png
