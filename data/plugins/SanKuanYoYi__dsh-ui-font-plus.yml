@@ -1,0 +1,6 @@
+url: https://github.com/SanKuanYoYi/dsh-ui-font-plus
+name: SanKuanYoYi/dsh-ui-font-plus
+category: ui
+description:
+  en: A maintained fork of dsh-ui-font whose global font-size slider also scales code blocks, inline code and tool output (upstream only rewrites the var() fallback, so code text stayed fixed).
+  zh: dsh-ui-font 的维护分支：全局字号滑杆现在也会缩放代码块、行内代码与工具输出（上游只重写 var() 兜底值，代码族一直没被放大）�?
