@@ -1,0 +1,6 @@
+url: https://github.com/LinYanZhi/dsh-mesh/tree/main/packages/dsh-mesh
+name: LinYanZhi/dsh-mesh#dsh-mesh
+category: remote
+description:
+  en: 'Multi-device DSH network: sidebar topology, peer health, delegation, file transfer, and node management over TLS, LAN, and public tunnels.'
+  zh: '多设备 DSH 网络：侧栏拓扑、节点健康、委托、文件传输与节点管理，支持 TLS、局域网与公网隧道。'
