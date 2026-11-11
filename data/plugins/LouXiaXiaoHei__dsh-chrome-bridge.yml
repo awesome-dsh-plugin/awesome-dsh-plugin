@@ -2,6 +2,6 @@ url: https://github.com/LouXiaXiaoHei/dsh-chrome-bridge
 name: LouXiaXiaoHei/dsh-chrome-bridge
 category: browser
 description:
-  en: 'Lets the agent drive the Chrome tab you @-mention — 12 tools for tabs, snapshots, clicking, typing, keys, scrolling, dragging and screenshots, with input sent as real CDP events so pages see isTrusted true and a pointer drawn inside the page.'
-  zh: '用 @ 提及真实 Chrome 标签页直接读写——12 个工具覆盖标签页、快照、点击、输入、按键、滚动、拖拽与截图；输入以真实 CDP 事件投递，页面看到的 isTrusted 为真，并在页面内画出指针。'
+  en: 'Lets the agent drive the Chrome tab you @-mention — 13 tools for tabs, snapshots, clicking, typing, keys, scrolling, dragging and screenshots, with input sent as real CDP events so pages see isTrusted true and a pointer drawn inside the page. Needs the bundled Manifest V3 extension loaded by hand in Chrome (developer mode; it requests the debugger and all-URLs permissions), talks to it over a WebSocket on 127.0.0.1 ports 30795-30805, and saves screenshots under ~/.dsh/chrome-tab-shots; the macOS native input channel also needs Accessibility permission and the Xcode command-line tools.'
+  zh: '用 @ 提及真实 Chrome 标签页直接读写——13 个工具覆盖标签页、快照、点击、输入、按键、滚动、拖拽与截图；输入以真实 CDP 事件投递，页面看到的 isTrusted 为真，并在页面内画出指针。需要在 Chrome 里手动加载随包的 Manifest V3 扩展（开发者模式，申请 debugger 与所有网址权限），通过 127.0.0.1 的 30795–30805 端口 WebSocket 与扩展通信，截图保存在 ~/.dsh/chrome-tab-shots；macOS 原生输入通道另需辅助功能权限和 Xcode 命令行工具。'
 icon: https://raw.githubusercontent.com/LouXiaXiaoHei/dsh-chrome-bridge/main/assets/icon-180.png

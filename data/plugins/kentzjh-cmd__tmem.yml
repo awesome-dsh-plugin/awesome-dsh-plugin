@@ -2,5 +2,5 @@ url: https://github.com/kentzjh-cmd/tmem
 name: kentzjh-cmd/tmem
 category: memory
 description:
-  en: Invisible backward-slicing execution trace memory compiler for DSH, compressing sessions into guarded L0/L1/L2 playbooks.
-  zh: 隐式后向切片执行轨迹记忆编译器，将会话自动提炼为带守卫条件的 L0/L1/L2 执行剧本。
+  en: 'Invisible backward-slicing execution trace memory compiler for DSH, compressing sessions into guarded L0/L1/L2 playbooks. It needs Python 3 on PATH (or TMEM_PYTHON) and runs python3 -m tmem.cli synchronously, with a 5-second timeout, on every agent step and every tool result; the sliced traces are stored in .tmem/ inside each project and in ~/.tmem/ shared across projects, and matching memories are injected into the model request as notice messages. It makes no network requests.'
+  zh: '隐式后向切片执行轨迹记忆编译器，将会话自动提炼为带守卫条件的 L0/L1/L2 执行剧本。需要 PATH 里有 Python 3（或设置 TMEM_PYTHON）；每个 agent 步骤和每条工具结果都会同步执行一次 python3 -m tmem.cli（超时 5 秒）；切片后的轨迹存在每个项目的 .tmem/ 和跨项目共用的 ~/.tmem/ 里，命中的记忆会作为提示消息注入模型请求；不发任何网络请求。'

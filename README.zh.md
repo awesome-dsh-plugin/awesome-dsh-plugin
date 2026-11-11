@@ -1475,7 +1475,7 @@ dsh plugin --profile web add dshmarket
 - [pkui1mpression-design/dsh-sidebar-installed-plugins](https://github.com/pkui1mpression-design/dsh-sidebar-installed-plugins) — 侧边栏面板：列出当前 profile 已安装的插件，每行带一个启用/停用开关。
 - [plolpl789/dsh-raw-html](https://github.com/plolpl789/dsh-raw-html) — 让 DeepSeek Harness Web GUI 把 agent 输出的 HTML 渲染成真实界面，支持视觉卡片、KaTeX 公式、Mermaid 图表与内置开源字体，并向 agent 注入设计规范。
 - [plyflai/dsh-ux-plus](https://github.com/plyflai/dsh-ux-plus) — DSH Web 对话界面的 UX 增强包：一个插件持续收纳各种界面小改进，每项都有独立开关，位于 设置 → UX Plus，改动即时生效——对话字号与阅读宽度（设置 → 通用 → 对话区）、会话行菜单可复制会话 ID 或把当前对话继承到所选模型的新会话里继续、工作区与会话行按最近活跃排序（闲置超过 24 小时自动收起并显示上次更新时间）、已结束的提问卡片默认展开。开关列表由插件自身的功能注册表生成，功能会持续增加，不固定在某个数量。
-- [poluce/dsh-chat-embed](https://github.com/poluce/dsh-chat-embed) — 桌面版的多标签 AI 聊天面板：七个服务（DeepSeek、豆包、ChatGPT、MiniMax、Kimi、Gemini、Grok）各自在独立 webview 与独立登录分区中运行，聊天页可放在左栏主面板或右栏标签里——哪边点开就由哪边承载。
+- [poluce/dsh-chat-embed](https://github.com/poluce/dsh-chat-embed) — 桌面版的多标签 AI 聊天面板：七个服务（DeepSeek、豆包、ChatGPT、MiniMax、Kimi、Gemini、Grok）各自在独立 webview 与独立登录分区中运行，聊天页可放在左栏主面板或右栏标签里——哪边点开就由哪边承载。仅限桌面版；登录态只在本次运行内有效，要跨重启保持需自行给桌面版的 resources/app.asar 打可选补丁（tools/shell-patch），restore-shell-patch.cmd 可还原。
 - [polychromate/dsh-sidebar-footer-rows](https://github.com/polychromate/dsh-sidebar-footer-rows) — 把侧边栏底部的动作按钮改成一行一个、铺满整行，并让各行的图标落在同一条竖线上。
 - [pomelo-ccc/dsh-pi-composer](https://github.com/pomelo-ccc/dsh-pi-composer) — 把输入框的模型控件换成 PI-Desktop 风格的选择器：双栏菜单（搜索、按 provider 分组、上下文窗口与能力徽标）、推理强度滑块、↑/↓ 提示词历史回溯，以及带撤销的提示词改写按钮。
 - [PPsz-qqq/dsh-restart-button](https://github.com/PPsz-qqq/dsh-restart-button) — 会话标题栏右端的重启按钮，可重启整个客户端：Windows 桌面版（Electron 外壳与 Host，走 Host 自身的优雅关闭流程）或 dsh web 服务。可等正在运行的回合与后台作业结束后再重启；重启后回到原会话，被中断的会话可一键继续；提示需重启才生效的插件更新；悬停显示 Host 运行时长与内存。
@@ -4811,7 +4811,7 @@ dsh plugin --profile web add dshmarket
 - [JunNanLYS/dsh-layered-memory](https://github.com/JunNanLYS/dsh-layered-memory) — dsh 长期记忆：对话自动蒸馏为原子事实、场景摘要与用户画像，每步模型调用前自动注入相关记忆。开箱零配置——BM25 + 向量混合检索，可选本地离线嵌入，chat/work 双族隔离。
 - [Kagurazaka135/dsh-memory](https://github.com/Kagurazaka135/dsh-memory) — 明文 YAML 的分层跨会话记忆：事实带版本链而非覆盖，会话开始注入简报，夜间整理并在超过阈值后按主题分片。零运行时依赖，在 dsh 安卓版实测可用。
 - [kelunisi/dsh-neocortex](https://github.com/kelunisi/dsh-neocortex) — 智脑（第二大脑）—— DeepSeek Harness 的 Markdown 权威记忆插件：分层记忆（L1 长期模型经用户确认 / L2 知识必须留源 / L3 近况每日配额），本地召回账本可解释每次注入，生命周期引擎带周回顾与 Web 面板。首次运行向导支持空白脑新建、只读接管现有智脑目录、或仅补齐缺失骨架文件，均不改动已有文件。
-- [kentzjh-cmd/tmem](https://github.com/kentzjh-cmd/tmem) — 隐式后向切片执行轨迹记忆编译器，将会话自动提炼为带守卫条件的 L0/L1/L2 执行剧本。
+- [kentzjh-cmd/tmem](https://github.com/kentzjh-cmd/tmem) — 隐式后向切片执行轨迹记忆编译器，将会话自动提炼为带守卫条件的 L0/L1/L2 执行剧本。需要 PATH 里有 Python 3（或设置 TMEM_PYTHON）；每个 agent 步骤和每条工具结果都会同步执行一次 python3 -m tmem.cli（超时 5 秒）；切片后的轨迹存在每个项目的 .tmem/ 和跨项目共用的 ~/.tmem/ 里，命中的记忆会作为提示消息注入模型请求；不发任何网络请求。
 - [kialajin-l/DSH_Plus#dsh-nexus-memory](https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-nexus-memory) — 基于本地 SQLite 的长期记忆：新会话自动注入项目相关记忆（噪声过滤），支持轻量规则或模型辅助提取，写入去重与反馈加权排序。Python 桥默认使用 $NEXUS_PYTHON 或 <DSH home>/dsh-runtimes/dsh-primary-runtime/dependencies/python/ 下的解释器（需 3.8+）。
 - [kianajunjie/dsh-hippocampus](https://github.com/kianajunjie/dsh-hippocampus) — 给长期陪伴型机器人的记忆层：事件编码、情绪加权遗忘、召回分三档确定度、改口即失效、按人隔离，另有关系、事实、章节、技能、缺口五张表。包含命令行、HTTP 接口和 DSH 插件三件套。
 - [kiefeng/dsh-lan-memory](https://github.com/kiefeng/dsh-lan-memory) — 澜·轻量本地记忆与人格系统：四层文件记忆（pinned / memory / facts / experience）、可编辑 SOUL/MOOD 人格、零 LLM 捕获、BM25 检索与状态池卡片；无独立管理面板，不依赖 Python 服务、向量库或 API Key。
@@ -4915,7 +4915,7 @@ dsh plugin --profile web add dshmarket
 - [omdsh-dev/dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) — 由 Mnemon 驱动的 DeepSeek Harness（DSH）跨 Agent、本地优先的持久记忆插件。它可在支持 Mnemon 的 Agent 之间共享长期记忆，并提供运行时记忆、可检索项目档案、语义召回、知识图谱和 Sidebar UI。
 - [orangeshinee/dsh-mem0](https://github.com/orangeshinee/dsh-mem0) — 自托管 mem0 记忆读写插件：agent 直接读写自有 mem0 服务（增删查改、搜索、历史、重置、状态），并带设置面板配置卡片。
 - [OverDustD7/dsh-experience-recall](https://github.com/OverDustD7/dsh-experience-recall) — 把在别的项目里记下的经验在当前工作命中时找出来，由本机小模型判断是否在下一步之前插入一条简短提示。需要本机 Ollama（默认 qwen3.5:9b）以及 dsh-mnemon 记忆库与 mnemon CLI；缺了只会观察记录、不会注入。
-- [PaangGaaSam/dsh-persona-memory](https://github.com/PaangGaaSam/dsh-persona-memory) — 每日会话摘要，按证据门槛生长用户画像与陪伴性格，并注入每次对话。
+- [PaangGaaSam/dsh-persona-memory](https://github.com/PaangGaaSam/dsh-persona-memory) — 每日会话摘要，按证据门槛生长用户画像与陪伴性格，并注入每次对话。默认每天 17:00 自动运行，每次最多处理 20 个会话，使用宿主模型 deepseek-v4-pro，结果自动应用，并把最多 1200 字的用户画像与性格注入每次对话。包名 dsh-persona-memory 与列表中其他条目相同，只能装其中一个。
 - [PerryLink/dsh-library](https://github.com/PerryLink/dsh-library) — 将本地 Markdown 与文本文档转为可检索的知识库，支持语义与关键词混合搜索、引用校验与来源注入。
 - [PerryLink/dsh-memento](https://github.com/PerryLink/dsh-memento) — 有界、分层、带审批门、可审计的跨会话记忆：`ctx.memory` 服务 + 零依赖 SQLite 存储 + `memory` 工具与冻结快照注入，并预演 dsh-memory-protocol v1——适配器注册表与可分发的一致性套件。
 - [Phant0Meow/dsh-meow-memory](https://github.com/Phant0Meow/dsh-meow-memory) — 项目级跨会话记忆：node:sqlite 七层存储（soul/user/project/fact/lesson/rules/topic），首条消息缓存友好注入 + 每条消息关键词命中，memory_remember/search/find_similar/read/update/project 工具，空闲窗口自动整理记忆（dream，峰时抑制）。prompt 文案按语言数据文件加载——框架支持多语言用户。
@@ -6323,7 +6323,7 @@ dsh plugin --profile web add dshmarket
 - [WindyPro-rourou/dsh-logcat](https://github.com/WindyPro-rourou/dsh-logcat) — DSH Web GUI 安卓实机调试工作台：自动附加 logcat 流（级别/关键词过滤、崩溃自动快照），真机屏幕实时投屏与远程点击/滑动/文字操控，内存/进程/frida 逆向工具链，30 个 agent 工具。
 - [wing-tn/astro-ph-researcher](https://github.com/wing-tn/astro-ph-researcher) — 面向天文的 DSH/Codex 研究工作台：NADC 术语、参考文献库、写作、评分、作者确认、推荐书籍、FITS/XML 格式与分析引导。
 - [wingsky-1/dsh-plugin-hub#packages/dsh-mcp-manager](https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-mcp-manager) — MCP 服务器管理器（stdio / streamable-http）：按工作目录分项目级/全局两级配置；项目级 MCP 默认经中间层收敛为 4 个原子工具（`middleware: all` 连同全局服务器一并收敛，设置页热切换）；工作空间隔离防串台；配置只存 `${ENV}` 引用、不落盘明文密钥；提供运行时注册接口供其他插件注入 MCP。
-- [wisdom-km/dsh-territory-cursor](https://github.com/wisdom-km/dsh-territory-cursor) — 给桌面代理一整块屏幕，或单屏的半边。列出中心落在里面的窗口，截下这块矩形，并做左键或整段赋值。不移动系统鼠标。
+- [wisdom-km/dsh-territory-cursor](https://github.com/wisdom-km/dsh-territory-cursor) — 给桌面代理一整块屏幕，或单屏的半边。列出中心落在里面的窗口，截下这块矩形，并做左键或整段赋值。这几个工具不移动系统鼠标，但包里另外注册了 desktop_step：它会在整个虚拟桌面上操作真实的鼠标和键盘（每次最多 20 个动作，含 Alt+F4 之类组合键和键入文本），还有 get_screen_metrics；“先询问再执行”只写在工具描述里，并未强制。仅支持 Windows，首次使用会用 csc 编译一个 C# 辅助程序；工具名与 dsh-desktop-tools-plugin 相同，不要同时启用。
 - [Wiselfx/dsh-freeweb](https://github.com/Wiselfx/dsh-freeweb) — 无需 API Key 的网页搜索提供方：并发查询 Startpage、DuckDuckGo、Exa 等多个来源，再做共识合并。
 - [wjf1/dsh-portable](https://github.com/wjf1/dsh-portable) — 把整套可用的 DSH 主目录——profile、带 node_modules 的已装插件、技能、hooks 与任务板——打包成单个 .dshpkg，在另一台机器上免联网、免 pnpm 还原；也支持 HTTP 上传与一次性局域网链接。
 - [wjloven/dsh-miniflux-digest](https://github.com/wjloven/dsh-miniflux-digest) — 在 DeepSeek Harness 里用三栏面板读 Miniflux（订阅源、文章列表、正文），并让助手在同一账号上生成未读速览、按分类写简报、读全文、标已读或收藏。需要你自己的 Miniflux 服务（2.0 及以上，批量收藏需 2.3.2）和 API 令牌，令牌保存在 Harness 的凭据管理器里，也可用环境变量 MINIFLUX_BASE_URL、MINIFLUX_API_TOKEN。
@@ -6731,7 +6731,7 @@ dsh plugin --profile web add dshmarket
 - [liustack/modsearch](https://github.com/liustack/modsearch) — 纯文本 agent 的联网搜索桥：搜索网页与 X，返回结构化 JSON 证据（search/fetch/引用）。
 - [LockyBee/dsh-douyin-agent](https://github.com/LockyBee/dsh-douyin-agent) — 在专用浏览器中按每日时段和额度观看抖音，共享本地人格与兴趣，提供原生设置、自检、用量和观看日报。回复与分享限定所选好友和群聊，群聊仅在被 @ 或叫到设定昵称时回复；公开评论需单独开启。
 - [longmiaoo/dsh-native-browser](https://github.com/longmiaoo/dsh-native-browser) — DSH 浏览器插件（Browser）：以 Codex 浏览器操作为体验参考，直接使用已登录的 Chrome 浏览器，平滑虚拟鼠标，支持页面读取、填表、截图与控制交还；安装后从侧栏「浏览器」完成配置。需要 macOS + Google Chrome（125+），并一次性以解压加载方式安装随包的 MV3 扩展；Edge、Windows 与完整的 Linux 安装仍属实验。
-- [LouXiaXiaoHei/dsh-chrome-bridge](https://github.com/LouXiaXiaoHei/dsh-chrome-bridge) — 用 @ 提及真实 Chrome 标签页直接读写——12 个工具覆盖标签页、快照、点击、输入、按键、滚动、拖拽与截图；输入以真实 CDP 事件投递，页面看到的 isTrusted 为真，并在页面内画出指针。
+- [LouXiaXiaoHei/dsh-chrome-bridge](https://github.com/LouXiaXiaoHei/dsh-chrome-bridge) — 用 @ 提及真实 Chrome 标签页直接读写——13 个工具覆盖标签页、快照、点击、输入、按键、滚动、拖拽与截图；输入以真实 CDP 事件投递，页面看到的 isTrusted 为真，并在页面内画出指针。需要在 Chrome 里手动加载随包的 Manifest V3 扩展（开发者模式，申请 debugger 与所有网址权限），通过 127.0.0.1 的 30795–30805 端口 WebSocket 与扩展通信，截图保存在 ~/.dsh/chrome-tab-shots；macOS 原生输入通道另需辅助功能权限和 Xcode 命令行工具。
 - [loyalchiiina/dsh-browser-hub](https://github.com/loyalchiiina/dsh-browser-hub) — 给侧边栏「浏览器」Tab 增加搜索引擎选择、书签面板（多级文件夹、增删改、导入书签 HTML），以及地址栏输入关键词回车直接搜索。需先装 dsh-better-sidebar >=0.20.0（客户端 inject 其 betterSidebar 服务，缺了不会加载）。书签存本地 JSON，不依赖外部浏览器。
 - [Luca4Don3/dsh-web-search](https://github.com/Luca4Don3/dsh-web-search) — 同时兼容 DSH 与 Pi 的搜索与抓取提供方：Exa、Tavily、Parallel、Firecrawl、TinyFish 匿名优先路由，计费需显式授权，带额度预检与有界取消。
 - [Lumos-789/malo-browser](https://github.com/Lumos-789/malo-browser) — Electron 浏览器，两种形态。对 agent 是运行时：守护进程按端口发放租约，多个 agent 可同时驱动隔离且可复用登录态的 session（25 个 session 工具——导航、交互、观察、截图、批量执行、文件上传——其中 network_capture/responses 用真浏览器取 XHR/fetch 响应体），全程不需要窗口。对演示是舞台：把网页演示拆成给观众看的 Stage 与隐藏录制的 Recorder（CDP 抓帧、1080p30 出片、证据文件），不 fork 浏览器内核；流程编排成 scene.yaml 场景包，由 Director 控制台与 127.0.0.1:7317 本地控制 API 驱动；无头录制不显示窗口、不抢焦点、不占 Dock。需要 Node 22.12+（22 线）、24.x 或 26+（不含 23 与 25）。
@@ -7235,7 +7235,7 @@ dsh plugin --profile web add dshmarket
 - [guicaiyue/dsh-archify-projects](https://github.com/guicaiyue/dsh-archify-projects) — 代码库架构图册：登记本地仓库，由受限 agent（跑在子代理会话里，不占会话列表）用 archify skill 读代码，按分支维护结构图与领域图，支持概念提取、临时/永久自定义图、只读追问，并可在设置里挑选 DSH 已配好的模型来跑分析。
 - [gychen-NJU/dsh-overleaf](https://github.com/gychen-NJU/dsh-overleaf) — 把 Overleaf 站点（公有云或自托管实例）经同源反向代理嵌入会话页标签，支持 Cookie 或弹窗登录、选区引用、光标处插入、编译日志驱动的修复、文档大纲跳转与 .bib / .tex 双向同步。
 - [hairyf/dsh-office-kit](https://github.com/hairyf/dsh-office-kit) — 通过 `/documents`、`/pdf`、`/presentations`、`/spreadsheets` 创建、读取与编辑 DOCX、PDF、PPTX、XLSX，把页面渲染出来核对排版，并将侧边栏预览中的选区变成发给会话的修改要求。需 Python 3.10–3.13。
-- [hanwang-ai/dsh-uml-drawio](https://github.com/hanwang-ai/dsh-uml-drawio) — 用 JSON spec 生成可编辑的 UML 时序图 .drawio：Python 负责参与者、片段与标签布局，draw.io 桌面 CLI 按 1x-4x 渲染 PNG，Pillow 校验输出尺寸。生成结果确定可复现，遇到手工改过的文件会拒绝覆盖。
+- [hanwang-ai/dsh-uml-drawio](https://github.com/hanwang-ai/dsh-uml-drawio) — 用 JSON spec 生成可编辑的 UML 时序图 .drawio：Python 负责参与者、片段与标签布局，draw.io 桌面 CLI 按 1x-4x 渲染 PNG，Pillow 校验输出尺寸。生成结果确定可复现，遇到手工改过的文件会拒绝覆盖。需要 Python（含 Pillow 12.x）和 draw.io 桌面版；默认路径是 Windows 路径（Python 在 C:\Program Files\Python314、draw.io 在 D:\drawio），可在设置卡片里修改。
 - [hanzhangzzz/dsh-diagram](https://github.com/hanzhangzzz/dsh-diagram) — 把 DSH 会话中的文章整理成会话内的 Excalidraw 画布：Agent 用 diagram_create 起草结构，你在画布中修改文字、节点和布局并自动保存，可导出 PNG、SVG 或 .excalidraw，Agent 再用 diagram_read 读回你改过的画布。0.6 新增大型三层分类树的可编辑总览与完整明细索引。
 - [HaoKuo/dsh-notebook-studio](https://github.com/HaoKuo/dsh-notebook-studio) — 把最多 30 篇上传的 PDF 文献变成提示词驱动的文献综述、关键信息提取、研究思路与研究设计，并导出带页码引用的报告（DOCX/PDF）或演示文稿（PPTX/PDF）。
 - [HaoKuo/DSH-Paper-DeepRead](https://github.com/HaoKuo/DSH-Paper-DeepRead) — 把文献精读库与 paper-deepread-html 精读技能打包成 dsh 插件：侧边栏浏览交互式报告、上传 PDF 到托管书库、由 Agent 或可选接入的站点自动精读 worker 精读、管理或重建书库；提供 paper_deepread、paper_deepread_uploads、paper_deepread_reports 三个模型工具。精读摄取与成稿需要 Python 3（内置技能首次会准备 PyMuPDF 解释器；重建索引会退化为纯 python3）。

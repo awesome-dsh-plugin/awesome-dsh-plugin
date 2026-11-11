@@ -2,5 +2,5 @@ url: https://github.com/PaangGaaSam/dsh-persona-memory
 name: PaangGaaSam/dsh-persona-memory
 category: memory
 description:
-  en: Daily session digest that grows a user profile and a companion personality, gated by evidence, and injects both into every prompt.
-  zh: 每日会话摘要，按证据门槛生长用户画像与陪伴性格，并注入每次对话。
+  en: 'Daily session digest that grows a user profile and a companion personality, gated by evidence, and injects both into every prompt. Runs daily at 17:00 by default over up to 20 sessions per run on the host model (deepseek-v4-pro), applies the results automatically, and injects up to 1200 characters of profile and persona into every prompt. Its package name, dsh-persona-memory, is also used by other listed entries, so install only one of them.'
+  zh: '每日会话摘要，按证据门槛生长用户画像与陪伴性格，并注入每次对话。默认每天 17:00 自动运行，每次最多处理 20 个会话，使用宿主模型 deepseek-v4-pro，结果自动应用，并把最多 1200 字的用户画像与性格注入每次对话。包名 dsh-persona-memory 与列表中其他条目相同，只能装其中一个。'

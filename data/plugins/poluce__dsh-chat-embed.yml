@@ -2,7 +2,7 @@ url: https://github.com/poluce/dsh-chat-embed
 name: poluce/dsh-chat-embed
 category: ui
 description:
-  en: "A multi-tab AI chat panel for the desktop app: seven services (DeepSeek, 豆包, ChatGPT, MiniMax, Kimi, Gemini, Grok) each run in their own webview and login partition, and the chat can live in the left navigation panel or in a right sidebar tab — whichever one you open owns it."
-  zh: "桌面版的多标签 AI 聊天面板：七个服务（DeepSeek、豆包、ChatGPT、MiniMax、Kimi、Gemini、Grok）各自在独立 webview 与独立登录分区中运行，聊天页可放在左栏主面板或右栏标签里——哪边点开就由哪边承载。"
+  en: 'A multi-tab AI chat panel for the desktop app: seven services (DeepSeek, 豆包, ChatGPT, MiniMax, Kimi, Gemini, Grok) each run in their own webview and login partition, and the chat can live in the left navigation panel or in a right sidebar tab — whichever one you open owns it. Desktop app only; logins last until the app restarts unless you apply the optional manual patch (tools/shell-patch) to the desktop app''s resources/app.asar, and restore-shell-patch.cmd reverts it.'
+  zh: '桌面版的多标签 AI 聊天面板：七个服务（DeepSeek、豆包、ChatGPT、MiniMax、Kimi、Gemini、Grok）各自在独立 webview 与独立登录分区中运行，聊天页可放在左栏主面板或右栏标签里——哪边点开就由哪边承载。仅限桌面版；登录态只在本次运行内有效，要跨重启保持需自行给桌面版的 resources/app.asar 打可选补丁（tools/shell-patch），restore-shell-patch.cmd 可还原。'
 icon: https://raw.githubusercontent.com/poluce/dsh-chat-embed/main/assets/icon-180.png
 tarball: https://github.com/poluce/dsh-chat-embed/releases/download/v0.5.0/dsh-chat-embed-0.5.0.tgz
