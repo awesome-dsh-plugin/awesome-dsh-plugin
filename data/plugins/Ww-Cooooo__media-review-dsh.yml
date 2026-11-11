@@ -1,0 +1,7 @@
+url: https://github.com/Ww-Cooooo/media-review-dsh
+name: Media Review DSH
+category: workflow
+description:
+  en: Review local audio and video with time-range and frame annotations, send feedback to a Harness session, and compare revised versions.
+  zh: 在 Harness 中标注音视频片段和画面、发送修改意见，并对照新版逐条复核。
+tarball: https://github.com/Ww-Cooooo/media-review-dsh/releases/download/v0.1.0-rc.6/media-review-dsh-0.1.0-rc.6.tgz
