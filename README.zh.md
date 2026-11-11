@@ -2914,7 +2914,7 @@ dsh plugin --profile web add dshmarket
 - [GptsApp/dsh-stylevault](https://github.com/GptsApp/dsh-stylevault) — 为 DeepSeek Harness 提供 30 套经典开源主题配色（Catppuccin、Nord、Tokyo Night、Gruvbox、Solarized 等），映射官方 ThemeService token；带 Style Settings 面板，可实时调整颜色/字体/圆角，并支持 JSON 导出/导入分享配置。
 - [Gsaecy/Zero-State-Radar](https://github.com/Gsaecy/Zero-State-Radar) — 赛博朋克皮肤：空会话时扫描线自上而下扫过，扫过处浮现点阵世界地图与城市航线，左下角带信号监控；发出第一条消息即整体退场。
 - [gulagala001/dsh-theme-plugin](https://github.com/gulagala001/dsh-theme-plugin) — 为 DeepSeek Harness 提供主题、配色、背景与外观设置。
-- [GXinnnnnn/dsh-SAO](https://github.com/GXinnnnnn/dsh-SAO) — 刀剑神域主题：双 Link Start 启动动画与桐人／亚丝娜语音，可选全部功能或仅限启动动画；明暗主题色独立记忆、界面底色与本机字体、带主题色的玻璃设置及 220ms 平移选项，优化滚动和主题切换；液态／磨砂玻璃、分组件透明度与连续右栏／上下文背景；紧凑会话标签与单行状态读数；九张内置壁纸、本地图片或 4K／5K 循环视频及静态省电；模型思考强度滑条。
+- [GXinnnnnn/dsh-SAO](https://github.com/GXinnnnnn/dsh-SAO) — 刀剑神域主题：双 Link Start 启动动画与桐人／亚丝娜语音，可选全部功能或仅限启动动画，启动白底以真实透明通道自然透出已加载界面；明暗主题色独立记忆、界面底色与本机字体、完整设置主题与清晰控件状态；液态玻璃边缘折射与方向反光，减轻整圈泛白，亦可选磨砂；浮层跟随当前页面取景，仅折射实际可见壁纸；分组件透明度、连续右栏与上下文玻璃、紧凑标签与单行读数；九张壁纸、本地图片或 4K／5K 循环视频及静态省电；模型思考强度滑条。
 - [H2CO3w/dsh-theme-frost](https://github.com/H2CO3w/dsh-theme-frost) — 把文件夹里的图片设为 DSH 网页端全局磨砂壁纸，配色沿用官方原版。
 - [haihaiaicode/dsh-cutesnowgirl-background](https://github.com/haihaiaicode/dsh-cutesnowgirl-background) — 在 Harness 工作区后播放静音循环视频，并在开屏动画结束后将输入区域显示为半透明。
 - [hanyi7867069-create/dsh-moonrise](https://github.com/hanyi7867069-create/dsh-moonrise) — 月升暗色主题——深蓝夜色打底、琥珀月光点缀。
@@ -4339,7 +4339,7 @@ dsh plugin --profile web add dshmarket
 - [nuet9/dsh-session-categories](https://github.com/nuet9/dsh-session-categories) — 工作区内会话分类，支持拖拽排序、分组折叠、任务状态提示及路径添加工作区。
 - [Nwflower/dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) — 把 13 家 coding agent（Claude Code、Codex、ChatGPT、Cursor、Gemini、opencode 等）的完整对话历史导入为可续聊的 DeepSeek Harness 会话，并支持反向导出回 Claude Code。
 - [Nwflower/dsh-file-claim](https://github.com/Nwflower/dsh-file-claim) — 同一工作区并行多会话的文件认领与写入保护（claim/release、心跳 stale 接管、pending 三路合并）。
-- [Oak-liuhj/dsh-session-rollover](https://github.com/Oak-liuhj/dsh-session-rollover) — 长会话默认每 10 条用户消息自动分卷，携带待办交接快照继续工作，支持来源回溯与归档只读。
+- [Oak-liuhj/dsh-session-rollover](https://github.com/Oak-liuhj/dsh-session-rollover) — 长会话默认每 10 条用户消息自动分卷，支持待办快照续接、来源回溯、归档只读与宿主兼容检查。
 - [Ok541151/dsh-session-media](https://github.com/Ok541151/dsh-session-media) — DSH 的会话档案层。每轮把一个按工作区定位的 Markdown 记忆文件注入系统提示；跨历史会话检索 对话原文，支持多关键词 AND、时间窗与工作区过滤；还能取出历史会话携带的图片和文档，给出原始 本地路径或批量复制到指定目录。另外提供体检：索引版本、条目数、缓存占用、高频会话，以及未知 归档格式的告警。仅关键词检索，不依赖向量服务。
 - [OliYogSothoth/dsh-plugin-session-purge](https://github.com/OliYogSothoth/dsh-plugin-session-purge) — 两步删除会话：会话菜单先把会话移入回收站（不删任何内容、可随时恢复），面板可恢复、可逐条立刻删除、也可整体清空，下次启动 DSH 时才真正清掉日志、投影缓存、spill 文件与工作区登记。
 - [omdsh-dev/dsh-sidechain](https://github.com/omdsh-dev/dsh-sidechain) — `/side` 持续性侧会话与 `/btw` 一次性侧问，在临时 fork 中运行、不写入主会话历史。
@@ -7906,6 +7906,7 @@ dsh plugin --profile web add dshmarket
 - [DSM-DSM/dsh-ai-company](https://github.com/DSM-DSM/dsh-ai-company) — 多工作区 Agent 联邦：持久化 Ticket 树、并行 Worker 会话、结构化证据报告、独立验收、重试停止与重启恢复。Worker 在工单目录里拥有 shell 与文件工具，company_verify 会在宿主上用 shell 重新执行工单的验收命令；scope 白名单是任务授权语义，不是沙箱。状态存放在 ~/.dsh/ai-company；可选的 company_repo_* 工具会在给定的任意路径上运行另行安装的 aoci / codegraph 命令。
 - [duhu2000/dsh-pre-duediligence](https://github.com/duhu2000/dsh-pre-duediligence) — 访前尽调智能体：面向拜访前调查，提供企业尽调、客户尽调、客户背景调查、工商核验与风险信息整理；使用企查查 MCP，设有调用预算授权和主体确认。
 - [duhu2000/dsh-tender-workbench](https://github.com/duhu2000/dsh-tender-workbench) — 招投标智能体：支持招投标搜索、招标查询、投标查询、标讯查询、拟建项目与项目筛选，辅助商机发现、人工复核及 Excel/PDF 导出，使用客户自备授权的企查查 MCP。
+- [dylan9707/dsh-questtree](https://github.com/dylan9707/dsh-questtree) — 任务树：把长任务维护成一条主线加分支树，侧边栏展示状态、进度、markdown 备注与「你在这」标记，防止跑偏。
 - [ECCVIK/lmtagent](https://github.com/ECCVIK/lmtagent) — 软件研发与安全审计多智能体工作流：内置 8 个角色预设（Captain 主控与 CEO、Designer、Eng Manager、Reviewer/CSO、Builder、QA Lead、Release 七个执行预设）、默认 6 并发槽（1-12 可调）的 4-Wave DAG 调度、PostgreSQL Wire v3 与 SQLite WAL 双模事实库、29 个随包技能及右侧常驻 Web 控制台。是 Jueze-2019/dsh-redteam-mode 的分支，沿用其包名、挂载 id 与 redteam_* 工具名，不能与原版同时安装。环境变量里设了 REDTEAM_PG_URL、DSH_PG_URL、DATABASE_URL 或 PGHOST 时事实库用 PostgreSQL，否则用 $DSH_HOME/redteam 下的本地 SQLite；角色预设写入 $DSH_HOME/.agent-presets/redteam。
 - [Eclipse-NotFound/dsh-flow-queue](https://github.com/Eclipse-NotFound/dsh-flow-queue) — 右侧栏可视化流程编辑器：把提示词、切换模型、命令、条件分支与循环连成一张图，只在轮次边界执行，在途请求与断连重试保持原模型。
 - [eightHundreds/dsh-plannotator](https://github.com/eightHundreds/dsh-plannotator) — 打开官方 Plannotator 应用（plannotator.ai）审代理写好的计划：批注、批准，或打回重写。
