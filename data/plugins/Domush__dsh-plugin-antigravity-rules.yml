@@ -2,5 +2,5 @@ url: https://github.com/Domush/dsh-plugin-antigravity-rules
 name: Domush/dsh-plugin-antigravity-rules
 category: dev
 description:
-  en: Native Google Antigravity engineering rules loader for DSH with automatic system prompt injection and dynamic domain activation.
-  zh: 原生 Google Antigravity 工程规范加载引擎，支持系统提示词注入与领域规则动态激活。
+  en: 'Loads Google Antigravity rules from ~/.agents/rules and the workspace''s .agents/rules into the system prompt: always-on rules in full, the rest as a catalog the model can load with the antigravity_rule tool, or that activates when a touched file matches a rule''s globs. The rules are prompt guidance rather than hard enforcement, and the model can toggle them off with the same tool. Settings are written to .agents/rules/settings.json in the workspace.'
+  zh: '把 ~/.agents/rules 和工作区 .agents/rules 里的 Google Antigravity 规则加进系统提示：always_on 规则全文注入，其余以目录形式列出，模型可用 antigravity_rule 工具加载，或在触及的文件匹配规则 glob 时自动激活。规则只是提示词层面的指引，不是强制执行，模型也能用同一个工具把它们关掉。设置写在工作区的 .agents/rules/settings.json。'

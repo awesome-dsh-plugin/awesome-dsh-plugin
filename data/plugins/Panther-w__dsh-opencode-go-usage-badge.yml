@@ -3,5 +3,5 @@ name: Panther-w/dsh-opencode-go-usage-badge
 category: usage
 tarball: https://github.com/Panther-w/dsh-opencode-go-usage-badge/releases/download/v0.4.3/dsh-opencode-go-usage-badge-0.4.3.tgz
 description:
-  en: "A quiet, unobtrusive one-line DSH badge for OpenCode Go quota, switching to the DeepSeek official balance when that model source is selected. Read-only, no telemetry."
-  zh: "一个安静无感的 DSH 一行小徽标：看 OpenCode Go 额度，切到 DeepSeek 官方模型自动显示余额。无需设置，安静运行。"
+  en: 'One-line sidebar badge for OpenCode Go quota (5-hour, weekly and monthly windows), switching to the DeepSeek official balance when that model source is selected. Read-only, no telemetry. The OpenCode Go quota needs OPENCODE_GO_API_KEY configured in DSH, or an OpenCode Console login (its local credential file is read as a fallback), and the DeepSeek balance needs DEEPSEEK_API_KEY configured in DSH.'
+  zh: '侧栏底部的一行小徽标：显示 OpenCode Go 额度（5 小时 / 本周 / 本月窗口），切到 DeepSeek 官方模型时显示余额。只读，无遥测。OpenCode Go 额度需要在 DSH 中配置 OPENCODE_GO_API_KEY，或登录 OpenCode Console（会兜底读取其本地凭据文件）；DeepSeek 余额需要在 DSH 中配置 DEEPSEEK_API_KEY。'
