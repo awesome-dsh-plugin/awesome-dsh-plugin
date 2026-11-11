@@ -1,0 +1,7 @@
+url: https://github.com/18518182595-cell/dsh-arknights-splash
+name: 18518182595-cell/dsh-arknights-splash
+category: theme
+description:
+  en: 'Arknights-style procedural opening film and silent looping chat backdrop for the DeepSeek Harness Web UI: Canvas-drawn visuals, synthesized WebAudio sound, click-anywhere skip, cross-dissolve into the interface, live-adjustable opacity; zero dependencies and no media files.'
+  zh: '明日方舟风格的程序化开屏短片 + 静音循环聊天背景：Canvas 实时绘制、WebAudio 合成音效、点击画面跳过、片尾交叉溶解进界面、透明度实时可调；零依赖、无媒体文件。'
+icon: https://raw.githubusercontent.com/18518182595-cell/dsh-arknights-splash/main/assets/icon-180.png
