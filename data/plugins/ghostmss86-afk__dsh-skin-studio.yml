@@ -1,0 +1,7 @@
+url: https://github.com/ghostmss86-afk/dsh-skin-studio
+name: ghostmss86-afk/dsh-skin-studio
+category: theme
+description:
+  en: 'Interface theme and wallpaper plugin: preset skins, gradients and image wallpapers, plus local video wallpapers that play with sound — audio Chromium cannot decode (E-AC-3, DTS, TrueHD) gets an AAC sidecar through ffmpeg. Videos are folded into season folders and play in order, with F7/F8/F9, fullscreen and a draggable progress strip above the composer. Glass surfaces reuse the app''s own sidebar and layer tokens. Needs DSH 0.2.2-rc.1.'
+  zh: '界面换肤与壁纸插件：预设皮肤、渐变与图片壁纸，以及有声的本地视频壁纸——Chromium 解不了的音轨（E-AC-3、DTS、TrueHD）由 ffmpeg 生成 AAC 侧车。视频按季折叠成文件夹并可整季顺播，支持 F7/F8/F9、双击全屏与输入框上方的可拖动进度带；毛玻璃面板复用 App 侧栏与层级 token。需要 DSH 0.2.2-rc.1。'
+icon: https://raw.githubusercontent.com/ghostmss86-afk/dsh-skin-studio/main/icon-180.png
