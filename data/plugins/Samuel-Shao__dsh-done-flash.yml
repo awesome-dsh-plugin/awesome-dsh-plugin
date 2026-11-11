@@ -1,0 +1,7 @@
+url: https://github.com/Samuel-Shao/dsh-done-flash
+name: Samuel-Shao/dsh-done-flash
+category: notify
+icon: https://raw.githubusercontent.com/Samuel-Shao/dsh-done-flash/main/assets/icon-180.png
+description:
+  en: Blinks the DeepSeek Harness tray whale when a task finishes in the background, and keeps blinking until you switch back (Windows).
+  zh: 任务在后台完成时让 DeepSeek Harness 托盘的鲸鱼图标闪动，并且一直闪到你切回窗口为止（Windows）。
