@@ -2,5 +2,5 @@ url: https://github.com/Kide-Lee/dsh-locus-bridge
 name: Kide-Lee/dsh-locus-bridge
 category: dev
 description:
-  en: 'Lets DSH act as a Locus client and drive the Unity editor through the Locus native broker: 7 unity_* tools cover connection and editor status, C# evaluation on the editor main thread, Play/Edit mode switching, console log reading, compilation with domain reload, revision-guarded asset editing, and scene object search and property edits.'
-  zh: '让 DSH 扮演 Locus 客户端，通过 Locus 原生 broker 操作 Unity 编辑器：7 个 unity_* 工具覆盖连接与编辑器状态、在主线程执行 C#、Play/Edit 模式切换、读取 Console、编译并等待域重载、带 revision 守卫的资产编辑，以及场景对象检索与属性修改。'
+  en: 'Lets DSH act as a Locus client and drive the Unity editor through the Locus native broker: 10 unity_* tools cover connection and editor status, C# evaluation on the editor main thread, Play/Edit mode switching, console log reading, compilation with domain reload, revision-guarded asset editing, and scene object search and property edits, Unity Test Framework runs, asset reference graphs, and Game/Scene view captures. Requires the Locus Unity package (com.farlocus.locus) with its native bridge enabled.'
+  zh: '让 DSH 扮演 Locus 客户端，通过 Locus 原生 broker 操作 Unity 编辑器：10 个 unity_* 工具覆盖连接与编辑器状态、在主线程执行 C#、Play/Edit 模式切换、读取 Console、编译并等待域重载、带 revision 守卫的资产编辑，以及场景对象检索与属性修改、Unity Test Framework 测试运行、资产引用图和 Game/Scene 视图截图。需要先在 Unity 里装好 Locus 包（com.farlocus.locus）并开启其 NativeBridge。'

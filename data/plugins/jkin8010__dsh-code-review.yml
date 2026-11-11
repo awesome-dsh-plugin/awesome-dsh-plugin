@@ -2,6 +2,6 @@ url: https://github.com/jkin8010/dsh-code-review
 name: jkin8010/dsh-code-review
 category: dev
 description:
-  en: 'Code review center for DSH, built on open-code-review: reviews current changes, commits, branch ranges, project architecture, code modules and business data flows, with live progress, a GitHub-style commit heatmap, fixed markers, automatic fix verification, light/dark themes and one-click fix sessions.'
-  zh: 'DSH 代码评审中心：基于 open-code-review，支持当前改动、提交、分支对比、项目架构、代码模块与信息流业务工作流评审，提供实时进度、GitHub 风格提交热力图、已修复标识、自动修复校验、深浅色主题与一键修复会话。'
+  en: 'Code review center for DSH, built on open-code-review: reviews current changes, commits, branch ranges, project architecture, code modules and business data flows, with live progress, a GitHub-style commit heatmap, fixed markers, automatic fix verification, light/dark themes and one-click fix sessions. Requires git and the open-code-review CLI 1.13 or later (npm i -g @alibaba-group/open-code-review); reviewed code is sent to the LLM configured for that CLI, or to the session model when the review is delegated to it, and reopening a report after a fix session re-runs the review to verify the fixes.'
+  zh: 'DSH 代码评审中心：基于 open-code-review，支持当前改动、提交、分支对比、项目架构、代码模块与信息流业务工作流评审，提供实时进度、GitHub 风格提交热力图、已修复标识、自动修复校验、深浅色主题与一键修复会话。需要 git 和 open-code-review 命令行（1.13 及以上，npm i -g @alibaba-group/open-code-review）；被评审的代码会发给该命令行所配置的模型，委托给会话时则发给当前会话模型；开过修复会话的报告再次打开时会重跑一次评审来校验修复。'
 icon: https://raw.githubusercontent.com/jkin8010/dsh-code-review/main/assets/icon-512.png

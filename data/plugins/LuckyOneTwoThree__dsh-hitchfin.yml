@@ -2,7 +2,7 @@ url: https://github.com/LuckyOneTwoThree/dsh-hitchfin
 name: LuckyOneTwoThree/dsh-hitchfin
 category: model
 description:
-  en: 'Bring WorkBuddy, Qoder and Trae subscription models into DeepSeek Harness with multi-account failover, per-account HTTP(S) proxies and model visibility controls.'
-  zh: '将 WorkBuddy、Qoder、Trae 的订阅模型接入 DSH，支持多账号故障转移、账号级 HTTP(S) 代理与模型可见性管理。'
+  en: 'Bring WorkBuddy, Qoder and Trae subscription models into DeepSeek Harness with multi-account failover, per-account HTTP(S) proxies and model visibility controls. Sign-in and chat calls go through the community opencode-*-auth adapter packages (installed with the plugin at pinned versions) to each vendor''s China-region service; accounts and tokens are kept in DSH''s credential store, and a free-models-only filter is on by default.'
+  zh: '将 WorkBuddy、Qoder、Trae 的订阅模型接入 DSH，支持多账号故障转移、账号级 HTTP(S) 代理与模型可见性管理。登录与对话经社区维护的 opencode-*-auth 适配包（随插件安装、版本固定）访问各家国内站点；账号与令牌存放在 DSH 凭据库，默认只显示免费模型。'
 icon: https://raw.githubusercontent.com/LuckyOneTwoThree/dsh-hitchfin/main/assets/icon.png
 tarball: https://github.com/LuckyOneTwoThree/dsh-hitchfin/releases/latest/download/dsh-hitchfin.tgz
