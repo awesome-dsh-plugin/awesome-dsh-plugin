@@ -1,0 +1,8 @@
+url: https://github.com/Vhow123/dsh-model-probe
+name: Vhow123/dsh-model-probe
+category: model
+description:
+  en: Test configured DSH models with streaming requests, concurrency controls, latency measurements, token usage and expandable diagnostics.
+  zh: 通过流式请求测试 DSH 已配置模型，支持并发控制、耗时统计、Token 用量与可展开的诊断详情。
+icon: https://raw.githubusercontent.com/Vhow123/dsh-model-probe/main/assets/icon-180.png
+tarball: https://github.com/Vhow123/dsh-model-probe/releases/latest/download/dsh-model-probe.tgz
