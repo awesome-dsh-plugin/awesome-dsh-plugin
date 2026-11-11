@@ -1,0 +1,6 @@
+url: https://github.com/william-jin-cmu/dsh-native-runtimes
+name: william-jin-cmu/dsh-native-runtimes
+category: model
+description:
+  en: Runs sessions on your own Claude Code and Codex CLIs from the model picker, and lets a DSH agent hand background tasks to them and follow up.
+  zh: 在模型选择器里用你本机的 Claude Code 和 Codex CLI 跑会话，也让 DSH agent 把后台任务交给它们并继续追问。
