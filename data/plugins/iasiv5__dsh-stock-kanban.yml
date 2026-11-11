@@ -1,0 +1,6 @@
+url: https://github.com/iasiv5/dsh-stock-kanban
+name: iasiv5/dsh-stock-kanban
+category: tools
+description:
+  en: "Multi-market watchlist and portfolio tracker for DSH: a draggable floating capsule with live price and change percent, grouped watchlists for A-share, HK, US and crypto markets with drag-and-drop reordering, position P&L with per-currency totals, target-price alerts with triggered B/S markers, intraday and daily/weekly/monthly candlestick charts, and an optional merged capsule segment for quota-watch; data lives in the DSH instance and is shared across browsers."
+  zh: 'DSH 多市场盯盘与持仓查看：可拖拽悬浮胶囊显示现价与涨跌幅，A股/港股/美股/加密货币分组自选与拖拽排序，持仓盈亏按币种汇总，目标价触达显示 B/S 标记，分时与日/周/月 K 线；可选与 quota-watch 合并为单枚两段胶囊。数据存 DSH 实例，跨浏览器共享。'
