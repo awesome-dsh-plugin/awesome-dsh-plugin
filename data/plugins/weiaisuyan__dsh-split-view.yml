@@ -2,5 +2,5 @@ url: https://github.com/weiaisuyan/dsh-split-view
 name: weiaisuyan/dsh-split-view
 category: ui
 description:
-  en: 'Multi-column tabbed workspace for the DSH main area: up to four sessions side by side, each with its own tab strip, composer and host view switcher. Cannot be enabled together with luckybilly''s dsh-split-view; installs as the package dsh-multipane.'
-  zh: '把 DSH 主区换成多栏标签工作区：最多四栏会话并排，每栏自带标签条、输入框和宿主视图切换条。不能与 luckybilly 的 dsh-split-view 同时启用；安装的包名是 dsh-multipane。'
+  en: 'Multi-pane split view (also split screen, split pane, multi-column): turns the DSH main area into one tabbed workspace of up to four side-by-side columns (panes), each with its own tab strip (tabs), composer and view switcher. Drag a tab to a pane edge to split off a new pane; covers dual-pane and four-pane layouts, left/right split and tiling, with no multi-window switching. Installs as dsh-multipane; cannot be enabled together with luckybilly''s dsh-split-view.'
+  zh: '把 DSH 主区拆成最多四栏会话并排的标签工作区（多栏视图）：每栏自带标签条（标签页）、输入框和视图切换；把标签拖到栏边缘即可拖拽分屏，支持左右分屏、双栏、四栏并排、多标签、多列、多会话平铺与窗口分割（窗口分屏）。也叫多栏分屏、分屏视图、分栏视图、多窗格布局、多窗口（同一窗口内分栏，不是开多个窗口）。安装包名 dsh-multipane，不能与 luckybilly 的 dsh-split-view 同时启用。'
