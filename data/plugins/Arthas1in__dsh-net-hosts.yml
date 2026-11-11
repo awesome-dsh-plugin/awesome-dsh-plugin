@@ -1,0 +1,8 @@
+url: https://github.com/Arthas1in/dsh-net-hosts
+name: Arthas1in/dsh-net-hosts
+category: dev
+description:
+  en: 'Shows which hosts each local app connects to, restores real domain names through the local Clash/mihomo controller, and records first/last-seen times to the second.'
+  zh: '看清本机每个软件在连哪些 host：经本地 Clash/mihomo 还原真实域名，并给出精确到秒的首次/最近时间。'
+icon: https://raw.githubusercontent.com/Arthas1in/dsh-net-hosts/main/icon.png
+tarball: https://github.com/Arthas1in/dsh-net-hosts/releases/latest/download/dsh-net-hosts.tgz
