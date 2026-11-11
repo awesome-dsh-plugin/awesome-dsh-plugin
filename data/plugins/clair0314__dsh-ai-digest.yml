@@ -1,0 +1,6 @@
+url: https://github.com/clair0314/dsh-ai-digest
+name: clair0314/dsh-ai-digest
+category: workflow
+description:
+  en: Scans Bilibili's AI videos daily, ranks them by view velocity and engagement, checks the comments, and pushes a 12-15 item digest to Feishu.
+  zh: 每天扫一遍 B站的 AI 内容，按播放速度和互动率排序、补上评论交叉验证，筛成 12–15 条推给飞书。
