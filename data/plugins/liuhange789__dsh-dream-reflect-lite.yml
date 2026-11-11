@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/dsh-dream-reflect-lite
+name: Dream Reflect Lite
+category: memory
+description:
+  en: 'Lightweight cross-session reflection: at the end of each turn it writes 3-5 reusable facts (tool chain, file paths, config items, pitfalls) as a card in .dsh/reflections/{date}.md, and on a new session it injects the last 3 cards at the end of the system prompt. Extraction uses the real ctx.llm.stream; when no model route is available it falls back to a heuristic built only from the session log and labels the source honestly on the card. No timers, no quarantine, no approval flow; cards are plain Markdown you can edit or delete.'
+  zh: 轻量级跨会话反思：每轮结束时把 3–5 条可复用事实（工具链、文件路径、配置项、踩过的坑）写成 .dsh/reflections/{日期}.md 卡片，新会话启动时自动把最近 3 张卡片注入系统提示词末尾。提炼走真实的 ctx.llm.stream，模型不可用时降级为只读会话日志的启发式提取，并在卡片上如实标注来源。没有定时器、隔离区和审批流；卡片是普通 Markdown，可直接编辑删除。
