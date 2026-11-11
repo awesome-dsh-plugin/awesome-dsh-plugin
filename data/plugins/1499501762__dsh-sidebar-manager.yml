@@ -1,0 +1,7 @@
+url: https://github.com/1499501762/dsh-sidebar-manager
+name: 1499501762/dsh-sidebar-manager
+category: ui
+description:
+  en: 'Sidebar and conversation top-bar menu editor for DSH web: reorder, group, hide and re-icon entries (drag and drop, group flyouts, custom SVG or uploaded icons), reserves a configurable minimum height for the workspace tree, and exposes window.__dshSidebarManager for agents.'
+  zh: 'DSH Web 的侧边栏与对话顶栏菜单编辑器：排序、分组、隐藏、逐条换图标（支持拖拽、分组浮层、SVG 或上传图标），为工作区树保留可配置的保底高度，并暴露 window.__dshSidebarManager 供 Agent 调用。'
+tarball: https://github.com/1499501762/dsh-sidebar-manager/releases/download/v1.0.0/dsh-sidebar-manager-1.0.0.tgz
