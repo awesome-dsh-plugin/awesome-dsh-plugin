@@ -1,0 +1,8 @@
+name: dsh-chat-reply-coach
+description: 输入聊天上下文，生成 3 条高情商回复候选，附带判断依据和策略方向。
+repo: https://github.com/ximing-chat/dsh-chat-reply-coach
+author: ximing-chat
+tags:
+  - chat
+  - assistant
+  - productivity
