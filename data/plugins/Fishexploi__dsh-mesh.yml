@@ -1,0 +1,6 @@
+url: https://github.com/Fishexploi/dsh-mesh
+name: Fishexploi/dsh-mesh
+category: workflow
+description:
+  en: "LAN task delegation between DSH hosts on one network: the parent dispatches a task to a child host, the child works in its own session and workspace, results and files return to the parent's inbox, sensitive actions wait for the parent's approval, and a finished task can be continued with one follow-up inside the child's existing session."
+  zh: '局域网内的 DSH 多机任务委派：上级把任务派给子级主机，子级在自己的会话与工作区里执行，结果与文件回到上级收件箱，敏感动作等待上级审批，完成的任务还能在子级原会话里接着追问一轮。'
