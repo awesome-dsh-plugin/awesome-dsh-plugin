@@ -1,0 +1,6 @@
+url: https://github.com/SilverIodide42/dsh-usage-panel-plus
+name: SilverIodide42/dsh-usage-panel-plus
+category: usage
+description:
+  en: 'Standalone usage statistics panel for DSH: per-session breakdowns with model drill-down, per-row cache hit rates, an all-time range and CSV export.'
+  zh: '独立的 DSH 用量统计面板：按会话拆分并可下钻模型、逐行缓存命中率、「全部」时间范围与 CSV 导出。'
