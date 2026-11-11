@@ -1,0 +1,6 @@
+url: https://github.com/adithyanraj03/dsh-video-gen-plugin
+name: adithyanraj03/dsh-video-gen-plugin
+category: vision
+tarball: https://github.com/adithyanraj03/dsh-video-gen-plugin/releases/latest/download/plugin.tgz
+description:
+  en: "Generates video through the user's own OpenAI-style asynchronous endpoint and plays the finished clip in the conversation, with live progress and cancel."
