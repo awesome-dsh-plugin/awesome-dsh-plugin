@@ -1,0 +1,7 @@
+url: https://github.com/jerodji/dsh-plugin-turn-cost
+name: jerodji/dsh-plugin-turn-cost
+category: usage
+description:
+  en: "Shows each turn's cost and the running session cost in CNY or USD, with session budgets, balance reminders, billing statistics and Excel export."
+  zh: "在每轮对话底部显示本轮与累计会话花费（人民币或美元），并提供会话预算、余额提醒、计费统计与 Excel 导出。"
+icon: https://raw.githubusercontent.com/jerodji/dsh-plugin-turn-cost/main/assets/icon-180.png
