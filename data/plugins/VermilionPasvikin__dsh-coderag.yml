@@ -1,0 +1,6 @@
+url: https://github.com/VermilionPasvikin/dsh-coderag
+name: VermilionPasvikin/dsh-coderag
+category: tools
+description:
+  en: 'Code retrieval engine exposed as an MCP server: four tools (code_search, code_outline, code_index, index_status) over a SQLite FTS5 index with BM25 ranking, CJK bigram indexing, declaration-aware tree-sitter chunking, incremental reindexing, and a three-layer secret filter. The bigram index matches Chinese-language queries against English code, and the default path needs no vector store or embedding model. Requires a local Python 3.10-3.12 engine installed by scripts/install.sh, and CODERAG_ROOT set in the profile patch.'
+  zh: '以 MCP 服务器形态提供的代码库检索引擎：四个工具（code_search、code_outline、code_index、index_status），底层是 SQLite FTS5 索引 + BM25 排序 + 中文 bigram 索引，tree-sitter 按声明边界分块、增量重建索引，并带三层密钥过滤。bigram 索引让中文提问也能命中英文代码，且默认路径不需要向量库或 embedding 模型。需要先用 scripts/install.sh 装好本机 Python 3.10–3.12 引擎，并在 profile patch 里设置 CODERAG_ROOT。'

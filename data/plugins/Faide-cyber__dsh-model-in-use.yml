@@ -1,0 +1,6 @@
+url: https://github.com/Faide-cyber/dsh-model-in-use
+name: Faide-cyber/dsh-model-in-use
+category: ui
+description:
+  en: Marks models in use by other running sessions in the DSH model menu, and restores the remembered reasoning effort and group collapse state for each model.
+  zh: 让 DSH 的模型菜单看见会话占用、记住模型推理档位与折叠状态。

@@ -1,0 +1,6 @@
+url: https://github.com/songrui111/dsh-publisher-radar
+name: songrui111/dsh-publisher-radar
+category: market
+description:
+  en: Market-gap radar for DSH plugin developers. Splits the catalog into categories and topics, tags every topic empty, thin, contested or crowded, and ranks the emptiest directions first, so you know what to build before writing it; it also browses the whole market with copy-ready install commands.
+  zh: 面向 DSH 插件开发者的市场空白雷达。把目录拆到大类与方向，每档标出空位、稀少、有竞争或红海，空位最多的方向排在前面，动手前先知道该做什么；同时可浏览整个市场并一键复制安装命令。

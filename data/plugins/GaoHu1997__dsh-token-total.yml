@@ -1,0 +1,7 @@
+url: https://github.com/GaoHu1997/dsh-token-total
+name: GaoHu1997/dsh-token-total
+tarball: https://github.com/GaoHu1997/dsh-token-total/releases/download/v1.0.4/dsh-token-total-1.0.4.tgz
+category: usage
+description:
+  en: 'Token usage dashboard and per-session tree statistics: provides time-range filtering, 6 summary metric cards, GitHub-style activity heatmap, model stacked-bar charts with cache hit rate curves, and Top-5 model/provider rankings; enhances the native session status bar to display aggregated token usage across main agents and all subagents with detailed breakdowns.'
+  zh: 'Token 用量统计看板与会话树用量统计：提供快捷时间范围筛选、6 个汇总指标卡片、GitHub 风格活跃热力图、分模型堆叠柱状图与缓存命中率平滑曲线，以及按模型和供应商的 Top5 排行；接管并增强会话底部状态栏，汇总主智能体与全部子智能体的完整用量及分项明细。'

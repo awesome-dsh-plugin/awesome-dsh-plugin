@@ -1,0 +1,6 @@
+url: https://github.com/Suren-ViLL/dsh-plugin-doc-review
+name: Suren-ViLL/dsh-plugin-doc-review
+category: docs
+description:
+  en: 'Review AI-generated Word, PowerPoint, PDF and HTML in the official preview: box problems, edit the text in place, and hand the notes to the agent. PDF and images are annotate-only; editing relies on the Harness bundled LibreOffice kit and Python.'
+  zh: 在官方预览里审阅 Word、PowerPoint、PDF 与 HTML：框选问题、就地改字，再把批注交给 AI。PDF 与图片仅可批注；改字依赖 Harness 自带的 LibreOffice 与 Python。

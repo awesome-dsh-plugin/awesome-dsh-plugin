@@ -1,0 +1,6 @@
+url: https://github.com/Chenfan2/dsh-bilibili-subtitles
+name: Chenfan2/dsh-bilibili-subtitles
+category: skill
+description:
+  en: 'Extract Bilibili platform/AI subtitles or external/embedded/ASR/OCR fallback and render Markdown, Word, PDF, TXT, SRT or JSON with timestamps, bilingual alignment and a quality report. Requires Python 3.10+; platform/AI subtitles need a Bilibili SESSDATA cookie; OCR/ASR/PDF need ffmpeg, faster-whisper and LibreOffice or reportlab.'
+  zh: '从 Bilibili 视频或本地视频提取字幕，输出 Markdown、Word、PDF、TXT、SRT 或 JSON，支持时间戳、双语对齐和质量报告。需 Python 3.10+；平台/AI 字幕需 Bilibili SESSDATA Cookie；OCR/ASR/PDF 需 ffmpeg、faster-whisper，以及 LibreOffice 或 reportlab。'

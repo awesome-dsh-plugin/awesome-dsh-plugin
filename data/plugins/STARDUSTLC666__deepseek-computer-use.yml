@@ -1,0 +1,6 @@
+url: https://github.com/STARDUSTLC666/deepseek-computer-use
+name: STARDUSTLC666/deepseek-computer-use
+category: tools
+description:
+  en: Windows desktop control through UI Automation, window screenshots and mouse/keyboard input, with per-session app consent and action approvals.
+  zh: 通过 UI Automation、窗口截图和鼠标键盘操作 Windows 桌面软件，支持会话独立应用授权和操作审批。

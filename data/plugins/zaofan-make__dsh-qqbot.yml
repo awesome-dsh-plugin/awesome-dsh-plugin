@@ -1,0 +1,6 @@
+url: https://github.com/zaofan-make/dsh-qqbot
+name: zaofan-make/dsh-qqbot
+category: notify
+description:
+  en: 'QQ official bot channel (enhanced fork of tencent-connect/dsh-qqbot): full agent chat in groups and DMs, rich media, an auto-tagged sticker library with AI image replies, join approval, mute and broadcast, scheduled wakeups, remote approvals over QQ, interactive cards, multi-account instances, extensions, member profiles, and token-saving value-scored wakeups.'
+  zh: 'QQ 官方机器人通道（tencent-connect/dsh-qqbot 的增强 fork）：群/私聊ai陪聊、富媒体收发、表情包打标入库+检索发图、入群审批/禁言/群发、定时唤醒、QQ 远程审批与提问卡、互动按钮卡、多账号多实例、扩展接口、群友记忆注入、按消息价值唤醒省token、上下文自动压缩、悬浮球设置面板。'

@@ -1,0 +1,9 @@
+url: https://github.com/379385796-sys/dsh-environment-packer
+name: 379385796-sys/dsh-environment-packer
+category: tools
+description:
+  en: Private Windows DSH cold archives and guarded fresh-environment recovery. v0.7.0 adds precise browser-proof diagnostics and restrained, reduced-motion-aware UI feedback; strict dependency, transaction and verify/commit gates remain. Verified ZIP integrity does not certify private business recovery.
+  zh: Windows DSH 私人冷备份与受门禁保护的新环境恢复。v0.7.0 精确区分浏览器证明诊断，精修界面与减少动态效果支持；保留严格依赖、事务及 verify/commit 门禁。ZIP 完整性不代表私人业务恢复认证。
+tarball: https://github.com/379385796-sys/dsh-environment-packer/releases/download/v0.7.1/dsh-environment-packer-0.7.1.tgz
+# TGZ SHA-256: 7e9fd68553c81aca1c94083adcde8130f8f1921e501b113274faf5b51e7dd521
+# Checksums: https://github.com/379385796-sys/dsh-environment-packer/releases/download/v0.7.1/SHA256SUMS.txt

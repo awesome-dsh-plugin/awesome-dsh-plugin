@@ -1,0 +1,6 @@
+url: https://github.com/majia007/dsh-session-context-config
+name: majia007/dsh-session-context-config
+category: session
+description:
+  zh: "为新会话选择注入的工具集合与系统提示词：档位表逐组切换工具、system 段逐项开关，被延迟的工具保留名字与功能摘要占位，工具表和前缀缓存保持稳定。"
+  en: "Context profiles for new sessions: pick which tools and which system prompt each new conversation receives. Deferred tools stay as name+summary placeholders, keeping the tool list and the prompt prefix cache stable."

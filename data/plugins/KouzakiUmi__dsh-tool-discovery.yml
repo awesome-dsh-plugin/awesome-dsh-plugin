@@ -1,0 +1,6 @@
+url: https://github.com/KouzakiUmi/dsh-tool-discovery
+name: KouzakiUmi/dsh-tool-discovery
+category: tools
+description:
+  en: 'Progressive tool discovery through tool_list, tool_search and tool_load, exposing tool schemas on demand while preserving host execution permissions.'
+  zh: '通过 tool_list、tool_search 和 tool_load 渐进式发现工具，按需披露工具 schema，保留宿主执行权限约束。'

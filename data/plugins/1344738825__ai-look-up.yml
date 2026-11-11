@@ -1,0 +1,11 @@
+# 放进 awesome-dsh-plugin 的：data/plugins/1344738825__ai-look-up.yml
+# 仓库：https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+# 文件名必须叫 1344738825__ai-look-up.yml（owner__repo.yml），一个插件一个文件。
+# 注意：含 ": " 的值必须加引号，否则 YAML 会当成嵌套键。
+
+url: https://github.com/1344738825/ai-look-up
+name: 1344738825/ai-look-up
+category: workflow
+description:
+  en: 'AI Look-Up: detects aimless grinding (repeated commands, failure loops, long runs with no output) and injects mid-run self-review nudges, plus a real local-clock anchor so the agent stops estimating elapsed time.'
+  zh: 'AI 抬头：检测空跑（重复命令 / 连续失败 / 久跑零产出）并在运行中途注入自我审查提醒，同时定期注入真实本地时间，校准 AI 的时间感。'

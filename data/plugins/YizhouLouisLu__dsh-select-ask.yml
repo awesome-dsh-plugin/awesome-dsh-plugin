@@ -1,0 +1,6 @@
+url: https://github.com/YizhouLouisLu/dsh-select-ask
+name: YizhouLouisLu/dsh-select-ask
+category: ui
+description:
+  en: Select text in the chat to quote it into the composer as an annotation, or to ask about it in a throwaway side panel that leaves no record.
+  zh: 在对话里划词引用进输入框（显示为「N 条注释」小框），或在侧栏一次性小窗里就这段内容提问（不留任何记录）。

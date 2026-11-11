@@ -1,0 +1,6 @@
+url: https://github.com/FNOSP/fnos-dsh/tree/main/plugins/dsh-failover-search-plugin
+name: FNOSP/fnos-dsh#dsh-failover-search-plugin
+category: tools
+description:
+  en: 'Multi-source web search and fetch failover for DeepSeek Harness sessions: takes over the session searchProvider and fetchProvider seams and tries configured sources in a chosen order — TinyFish, Tavily and the official search as a fallback that always participates and can be repositioned but not removed. Multiple API keys per platform are spread round-robin, usage snapshots drive pre-flight exclusion of exhausted accounts, and per-request timeouts plus same-platform retry control failover granularity. Web fetching runs local HTTP first, then falls back to TinyFish Fetch server-side rendering and Tavily Extract, so pages still load when local egress is blocked by proxy or DNS policies. A per-platform panel shows key usage and plan limits. Install from npm with `dsh plugin --profile web add @tnnevol/dsh-failover-search`.'
+  zh: '为 DeepSeek Harness 会话提供多来源网页搜索与抓取故障转移：接管会话的 searchProvider 与 fetchProvider 接缝，按可配置顺序尝试已配置来源——TinyFish、Tavily 与官方搜索，官方固定参与兜底、位置可调但不可移除。每平台可配多个 key 轮转分摊，基于用量快照做请求前账号排除，单请求超时与同平台重试控制转移粒度。网页抓取本地 HTTP 优先，失败后依次兜底 TinyFish Fetch 服务端渲染与 Tavily Extract，本机网络受限时代理或 DNS 拦不住页面抓取。插件页按平台展示各账号用量与套餐额度。npm 安装：`dsh plugin --profile web add @tnnevol/dsh-failover-search`。'

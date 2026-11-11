@@ -1,0 +1,7 @@
+url: https://github.com/bufan528/dsh-longterm-memory
+name: bufan528/dsh-longterm-memory
+category: memory
+description:
+  en: 'Local Markdown long-term memory for DSH: an Obsidian-compatible vault, a sidebar management page, four memory tools, and budgeted per-turn recall.'
+  zh: '为 DSH 提供本地 Markdown 长期记忆：Obsidian 兼容仓库、侧边栏管理页、四个记忆工具，以及按预算的每回合召回。'
+tarball: https://github.com/bufan528/dsh-longterm-memory/releases/latest/download/dsh-longterm-memory.tgz

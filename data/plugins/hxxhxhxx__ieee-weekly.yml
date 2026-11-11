@@ -1,0 +1,6 @@
+url: https://github.com/hxxhxhxx/ieee-weekly
+name: hxxhxhxx/ieee-weekly
+category: tools
+description:
+  en: Monitors IEEE Xplore journal Early Access through Crossref, has an LLM screen every new paper against your keywords, and emails a Markdown weekly digest.
+  zh: 按关键词盯 IEEE 期刊 Early Access：Crossref 抓新收录，逐篇交给大模型研判，生成 Markdown 周报并发到邮箱。

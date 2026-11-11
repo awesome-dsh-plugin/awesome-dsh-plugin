@@ -1,0 +1,6 @@
+url: https://github.com/Fan-sx/dsh-session-focus
+name: Fan-sx/dsh-session-focus
+category: session
+description:
+  en: 'Marks a Session as focus or parked in one click from its sidebar row, its hover card, or the conversation header, and keeps a count visible at the foot of the sidebar and next to workspace folder names when those groups are collapsed. A panel lists every marked Session alongside the states the sidebar already tracks (waiting for a reply, running, finished-unread), and the sidebar foot opens whichever one needs a reply first.'
+  zh: '从会话行、悬浮卡或会话头一点即可标记「进行中／挂起」；侧边栏底部和折叠的工作区名旁始终显示还有几条。面板把标记过的会话与侧边栏本就跟踪的状态（等待回复、在跑、已完成未查看）列在一起，底部读数则直接跳到最该处理的那一条。'

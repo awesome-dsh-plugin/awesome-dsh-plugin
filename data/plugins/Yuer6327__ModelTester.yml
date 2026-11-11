@@ -1,0 +1,6 @@
+url: https://github.com/Yuer6327/ModelTester
+name: Yuer6327/ModelTester
+category: model
+description:
+  en: "Model attribution panel for the dsh web chat — local, zero-network structural fingerprinting (template token leaks, glitch canaries, tokenizer usage-vector matching) that scores which of 29 AI vendors a session's responses most resemble, with a per-claim evidence ledger and a 12-probe active battery."
+  zh: "在 dsh 网页端挂载模型归属面板，用纯本地、零联网的结构指纹匹配（模板特殊 token 泄漏、glitch 金丝雀、tokenizer usage 向量比对）判断当前会话的回答最像 29 家 AI 厂商中的哪一家，每个结论附带可展开的证据账本，另附 12 探针主动取证电池。"

@@ -1,0 +1,7 @@
+url: https://github.com/stallenlu/dsh-scihub
+name: stallenlu/dsh-scihub
+category: tools
+tarball: https://github.com/stallenlu/dsh-scihub/releases/download/v0.4.2/dsh-scihub-0.4.2.tgz
+description:
+  en: 'Adds the scihub_pdf and scihub_batch model tools that resolve a DOI or article URL through Sci-Hub mirrors, download the paper PDFs into the session workspace and report per-DOI status honestly; the mirror list is configurable at runtime without a restart.'
+  zh: '为 DSH 注册 scihub_pdf 与 scihub_batch 两个模型工具：按 DOI 或文章 URL 经 Sci-Hub 镜像解析并下载论文 PDF 到会话工作区，逐条如实返回下载状态；镜像列表可在运行时配置，修改后无需重启。'

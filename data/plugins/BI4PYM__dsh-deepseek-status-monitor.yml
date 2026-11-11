@@ -1,0 +1,6 @@
+url: https://github.com/BI4PYM/dsh-deepseek-status-monitor
+name: BI4PYM/dsh-deepseek-status-monitor
+category: notify
+description:
+  en: Polls the DeepSeek status feed and shows configurable outage, degradation and recovery notices in the DSH Web UI, with an independently positioned persistent status pill, six notice positions, three sizes and Chinese/English copy.
+  zh: 定期读取 DeepSeek 状态源，在 DSH 页面上以可自定义的气泡、横幅或胶囊提示服务中断、性能下降与服务恢复；常驻状态胶囊位置独立，支持六种位置、三种大小与中英双语。

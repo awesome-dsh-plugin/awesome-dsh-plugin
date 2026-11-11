@@ -1,0 +1,6 @@
+url: https://github.com/flyinghouse-ma/dsha-tts-bridge
+name: flyinghouse-ma/dsha-tts-bridge
+category: voice
+description:
+  en: Host-side TTS bridge for dsh that synthesizes speech over the Edge TTS protocol and serves MP3 on a same-origin route, for containers with no audio device.
+  zh: 宿主侧语音桥：用 Edge TTS 协议合成语音并以 MP3 同源提供，解决容器无声卡、WebView 念不出中文的问题。

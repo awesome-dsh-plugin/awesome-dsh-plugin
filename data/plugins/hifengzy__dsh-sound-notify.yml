@@ -1,0 +1,16 @@
+# Catalog entry for https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+#
+# Submission (after the repository is at least 1 day old):
+#   1. Fork awesome-dsh-plugin.
+#   2. Copy this file to data/plugins/hifengzy__dsh-sound-notify.yml.
+#   3. Open one PR that adds only that file.
+#
+# The optional tarball points at the version-free release asset uploaded by
+# .github/workflows/release.yml, so it keeps working across releases.
+url: https://github.com/hifengzy/dsh-sound-notify
+name: hifengzy/dsh-sound-notify
+category: notify
+description:
+  en: Plays a sound when a DSH task completes, fails, or waits for approval, with per-category switches.
+  zh: 在 DSH 任务完成、失败或等待授权时播放提示音，并提供分类开关。
+tarball: https://github.com/hifengzy/dsh-sound-notify/releases/latest/download/dsh-sound-notify.tgz

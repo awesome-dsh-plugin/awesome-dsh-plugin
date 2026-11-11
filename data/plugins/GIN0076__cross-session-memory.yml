@@ -1,0 +1,6 @@
+url: https://github.com/GIN0076/cross-session-memory
+name: GIN0076/cross-session-memory
+category: memory
+description:
+  en: 'Cross-session lesson book (the agent wrong-answer notebook) for DeepSeek Harness: injects a memory index capped at 2 KB verbatim into every turn, adds mem_recall and mem_save model tools whose write gate demands four sections, a locatable reference and explicit human approval before anything reaches disk, registers the /memory command, and keeps every lesson as a zero-dependency Markdown entry in the .memory/ directory.'
+  zh: '跨会话记忆「错题本」插件：每轮把 ≤2 KB 的记忆索引原文注入提示词；mem_recall / mem_save 模型工具，写入闸要求四段结构 + 可定位引用 + 人工批准才落盘；注册 /memory 命令；所有教训以零依赖 Markdown 条目存放在 .memory/ 目录。'

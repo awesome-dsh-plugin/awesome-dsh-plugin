@@ -1,0 +1,6 @@
+url: https://github.com/mogragsigma/dsh-dual-host-plugin
+name: mogragsigma/dsh-dual-host-plugin
+category: workflow
+description:
+  en: 'Single-owner cloud tasks for DeepSeek Harness (大肥鱼 bot): submit from local chat or either IM bot, run continuously in a native cloud worker, and follow overall progress and artifacts in one workbench. Task permissions are independent of IM; includes agreed delivery and session archive recovery.'
+  zh: 'DSH 单用户云端任务（大肥鱼 bot）：从本地对话或双端 IM 机器人交办，云端原生持续执行，在工作台查看整体进展与成果并继续跟进。任务权限独立于 IM，支持约定交付及会话归档恢复。'

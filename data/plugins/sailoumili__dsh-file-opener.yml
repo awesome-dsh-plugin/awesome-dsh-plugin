@@ -1,0 +1,6 @@
+url: https://github.com/sailoumili/dsh-file-opener
+name: sailoumili/dsh-file-opener
+category: ui
+description:
+  en: 'Turns file and directory paths in DSH chat into clickable buttons: click one to preview the file in the right sidebar, or open it with the system default application.'
+  zh: '把 DSH 对话中的文件与目录路径变成可点击按钮：点击即在右侧侧边栏预览，或用系统默认程序打开。'

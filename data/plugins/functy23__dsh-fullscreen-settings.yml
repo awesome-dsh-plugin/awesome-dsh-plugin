@@ -1,0 +1,6 @@
+url: https://github.com/functy23/dsh-fullscreen-settings
+name: functy23/dsh-fullscreen-settings
+category: ui
+description:
+  en: Opens the DSH settings dialog as a full-page screen and moves the close control to a back row at the top left.
+  zh: 让 DSH 的设置弹窗以整页全屏打开，并把退出入口移到左上角的返回行。

@@ -1,0 +1,6 @@
+url: https://github.com/Nyco1d/dsh-prompt-optimizer
+name: Nyco1d/dsh-prompt-optimizer
+category: ui
+description:
+  en: 'One-click prompt optimizer next to the composer, with a side-by-side diff panel and per-mode settings. Output length follows your request: ask for a short version and it writes a 350–650 character brief, otherwise it expands to as many as 1400 characters. The prompt templates are original; the official-template comparison mode needs a local Prompt Optimizer installation.'
+  zh: '输入框旁的一键提示词优化器，带左右对比面板与模式设置。输出长度跟着你的话走：说「简洁」就写 350–650 字的精简版，不说才展开到最多 1400 字。提示词模板为原创；「官方模板对照」模式需要本机已装 Prompt Optimizer。'

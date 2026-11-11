@@ -1,0 +1,7 @@
+url: https://github.com/aichixiaojuzi/dsh-model-quick-switch
+name: aichixiaojuzi/dsh-model-quick-switch
+category: model
+icon: https://raw.githubusercontent.com/aichixiaojuzi/dsh-model-quick-switch/main/assets/icon-180.png
+description:
+  en: 'Provider-first model picker for the composer. Every provider is listed in the left rail and its models in the right pane. Providers, models within a provider, and pins reorder by drag or Alt+Arrow; providers take a local display alias; one provider can be the panel default; a model''s reasoning levels expand inline; search matches model names, provider names and aliases. Switching goes through the shipped model directory service, so the /model popup and this panel always agree.'
+  zh: '输入框里的供应商优先模型选择器：左栏列出全部供应商，右栏列出选中供应商的模型。供应商、组内模型与收藏都可用拖拽或 Alt+方向键排序；可给供应商起本地显示别名、可指定面板默认供应商；推理档位内联展开；搜索同时匹配模型名、供应商名与别名。切换走官方模型目录服务，/model 弹窗与面板始终一致。'

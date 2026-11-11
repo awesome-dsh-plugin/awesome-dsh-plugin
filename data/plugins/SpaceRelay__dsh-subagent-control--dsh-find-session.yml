@@ -1,0 +1,6 @@
+url: https://github.com/SpaceRelay/dsh-subagent-control/tree/main/dsh-find-session
+name: SpaceRelay/dsh-subagent-control#dsh-find-session
+category: session
+description:
+  en: Find keywords in the current conversation or across every session, with highlight and jump.
+  zh: 在当前对话或所有会话里按关键词查找，命中可高亮、可跳转。

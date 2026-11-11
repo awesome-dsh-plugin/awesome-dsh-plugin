@@ -1,0 +1,6 @@
+url: https://github.com/BossKrabs/product/tree/main/packages/dsh-madara-pixel-pet
+name: BossKrabs/product#dsh-madara-pixel-pet
+category: fun
+description:
+  en: 'A Windows pixel Madara desktop companion with 16 animation clips driven by Harness task events, using the original BigFish runtime dependency.'
+  zh: 'Windows 像素宇智波斑桌宠：16 组动作随 Harness 任务事件变化，直接依赖原作者的大肥鱼运行库。'

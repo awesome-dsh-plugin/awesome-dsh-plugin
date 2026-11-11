@@ -1,0 +1,7 @@
+url: https://github.com/fvvef121-cell/dsh-aliyun-coupon
+name: fvvef121-cell/dsh-aliyun-coupon
+category: usage
+description:
+  en: Alibaba Cloud coupon balance, used amount and expiry in the sidebar footer, read through the read-only BSS OpenAPI.
+  zh: 在侧栏页脚显示阿里云代金券的剩余余额、已用额度与到期时间，数据来自只读 BSS OpenAPI。
+icon: https://raw.githubusercontent.com/fvvef121-cell/dsh-aliyun-coupon/main/assets/icon.png

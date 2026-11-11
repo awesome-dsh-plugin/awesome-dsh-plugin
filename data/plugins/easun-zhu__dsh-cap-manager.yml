@@ -1,0 +1,7 @@
+url: https://github.com/easun-zhu/dsh-cap-manager
+name: easun-zhu/dsh-cap-manager
+category: tools
+description:
+  en: 'One panel for MCP servers, skills and Claude Code plugins across global/profile/project scopes: live status, import/export, trash & backups, and the official claude-plugins-official market (install/update/uninstall).'
+  zh: '一个面板统一管理全局 / Profile / 项目三个作用域的 MCP 服务与技能：实时状态与工具数、导入导出、回收站与备份，并可安装/更新/卸载 Anthropic 官方 claude-plugins-official 市场的 Claude Code 插件。'
+icon: https://raw.githubusercontent.com/easun-zhu/dsh-cap-manager/main/docs/images/tile-360.png

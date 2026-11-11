@@ -1,0 +1,7 @@
+url: https://github.com/drowsylazy/dsh-thinking-effort-rheostat
+name: drowsylazy/dsh-thinking-effort-rheostat
+category: ui
+description:
+  en: 'A Claude Desktop-inspired composer slider for adjusting model reasoning effort with click, drag, or keyboard controls.'
+  zh: '借鉴 Claude Desktop 的思考强度滑块，在输入框中通过点击、拖拽或键盘调整模型推理档位。'
+icon: https://raw.githubusercontent.com/drowsylazy/dsh-thinking-effort-rheostat/main/icon.png

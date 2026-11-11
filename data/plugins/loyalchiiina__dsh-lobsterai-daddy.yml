@@ -2,5 +2,5 @@ url: https://github.com/loyalchiiina/dsh-lobsterai-daddy
 name: loyalchiiina/dsh-lobsterai-daddy
 category: ui
 description:
-  en: 'Drags the LobsterDaddy multi-account console onto the DSH window as a floating ball: drag it anywhere and the position persists, click to slide out a drawer that embeds the full web console through a loopback-only same-origin reverse proxy (so the panel stays byte-identical to the browser version), plus a resizable persisted drawer, a live online/offline dot and an account-count badge.'
-  zh: '把 LobsterDaddy 多账号控制台变成 DSH 界面上的悬浮球：可拖到任意位置并自动记忆坐标，点开以抽屉内嵌完整网页控制台（经由仅限本机的同源反向代理，界面与网页版保持一致），抽屉可拖动缩放并记忆尺寸，另有在线状态圆点与账号数徽标。'
+  en: 'Bridges LobsterAI (Youdao Lobster) into DSH: its free daily check-in credits become usable inside DeepSeek Harness, so conversations, workflows and skill packs run on those credits. Requires the LobsterAI desktop app (Windows); new-account login and gateway sync need the separate LobsterDaddy console (not in this repo). Unmaintained since 2026-10-21.'
+  zh: '把 LobsterAI（有道龙虾）桥接进 DSH：免费签到积分直接接进 DSH 对话，用这些额度跑对话、工作流与技能包。需 LobsterAI 桌面端（Windows）；登录新账号与同步网关需另装 LobsterDaddy 控制台（不在本仓库）。作者已于 2026-10-21 停止维护。'

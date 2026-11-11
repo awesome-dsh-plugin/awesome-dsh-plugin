@@ -1,4 +1,7 @@
 {
+  "https://github.com/Lovenndme/dsh-profile-stats": [
+    "https://raw.githubusercontent.com/Lovenndme/dsh-profile-stats/main/docs/preview.png"
+  ],
   "https://github.com/anweat/dsh-context-console": [
     "https://raw.githubusercontent.com/anweat/dsh-context-console/main/docs/images/context-console-trajectory.png",
     "https://raw.githubusercontent.com/anweat/dsh-context-console/main/docs/images/context-console-inventory.png",
@@ -406,16 +409,16 @@
     "https://raw.githubusercontent.com/Totoro-qaq/dsh-plugin-bridge/main/assets/cover/cover-en.png",
     "https://raw.githubusercontent.com/Totoro-qaq/dsh-plugin-bridge/main/assets/bridge-demo.en.gif"
   ],
-  "https://github.com/Ultronen/dsh-archived-chats": [
-    "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/1-archived-chats.png",
-    "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/2-search.png",
-    "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/3-delete-confirm.png",
-    "https://raw.githubusercontent.com/Ultronen/dsh-archived-chats/main/assets/screenshots/4-group-menu.png"
+  "https://github.com/Ultroncn/dsh-archived-chats": [
+    "https://raw.githubusercontent.com/Ultroncn/dsh-archived-chats/main/assets/screenshots/1-archived-chats.png",
+    "https://raw.githubusercontent.com/Ultroncn/dsh-archived-chats/main/assets/screenshots/2-search.png",
+    "https://raw.githubusercontent.com/Ultroncn/dsh-archived-chats/main/assets/screenshots/3-delete-confirm.png",
+    "https://raw.githubusercontent.com/Ultroncn/dsh-archived-chats/main/assets/screenshots/4-group-menu.png"
   ],
-  "https://github.com/Ultronen/dsh-liquid-glass": [
-    "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/1-settings.png",
-    "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/2-glass-shell.png",
-    "https://raw.githubusercontent.com/Ultronen/dsh-liquid-glass/main/assets/screenshots/3-settings-wallpaper.png"
+  "https://github.com/Ultroncn/dsh-liquid-glass": [
+    "https://raw.githubusercontent.com/Ultroncn/dsh-liquid-glass/main/assets/screenshots/1-settings.png",
+    "https://raw.githubusercontent.com/Ultroncn/dsh-liquid-glass/main/assets/screenshots/2-glass-shell.png",
+    "https://raw.githubusercontent.com/Ultroncn/dsh-liquid-glass/main/assets/screenshots/3-settings-wallpaper.png"
   ],
   "https://github.com/V1ki/dsh-plugin-subscriptions": [
     "https://raw.githubusercontent.com/V1ki/dsh-plugin-subscriptions/main/docs/images/subscriptions.png",
@@ -508,9 +511,6 @@
   ],
   "https://github.com/coolbreezecoin/dsh-wechat-mp": [
     "https://raw.githubusercontent.com/coolbreezecoin/dsh-wechat-mp/main/assets/demo.gif"
-  ],
-  "https://github.com/corrinehu/dsh-buddy-checkin": [
-    "https://raw.githubusercontent.com/corrinehu/dsh-buddy-checkin/main/assets/1.png"
   ],
   "https://github.com/corrinehu/dsh-chat-imagine": [
     "https://raw.githubusercontent.com/corrinehu/dsh-chat-imagine/main/assets/1.png",
@@ -1061,11 +1061,6 @@
   "https://github.com/acebang0303/dsh-quick-launch": [
     "https://raw.githubusercontent.com/acebang0303/dsh-quick-launch/main/docs/preview.png"
   ],
-  "https://github.com/corrinehu/dsh-workbuddy-connect": [
-    "https://raw.githubusercontent.com/corrinehu/dsh-workbuddy-connect/main/assets/1.png",
-    "https://raw.githubusercontent.com/corrinehu/dsh-workbuddy-connect/main/assets/2.png",
-    "https://raw.githubusercontent.com/corrinehu/dsh-workbuddy-connect/main/assets/3.png"
-  ],
   "https://github.com/tipoLi5890/dsh-file-mention": [
     "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-browse.png",
     "https://raw.githubusercontent.com/tipoLi5890/dsh-file-mention/main/assets/screenshots/file-mention-drag-drop.png",
@@ -1369,8 +1364,26 @@
     "https://raw.githubusercontent.com/liguobao/deepseek-harness-remote/main/docs/images/host-list.png",
     "https://raw.githubusercontent.com/liguobao/deepseek-harness-remote/main/docs/images/remote.png"
   ],
-  "https://github.com/qinyre/dsh-plugin-archive-manager": [
-    "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-rail.png",
-    "https://raw.githubusercontent.com/qinyre/dsh-plugin-atlas/main/docs/images/screenshot-archive.png"
+  "https://github.com/LFY-bot/dsh-api-probe": [
+    "https://raw.githubusercontent.com/LFY-bot/dsh-api-probe/main/assets/panel-form.png",
+    "https://raw.githubusercontent.com/LFY-bot/dsh-api-probe/main/assets/report-result.png",
+    "https://raw.githubusercontent.com/LFY-bot/dsh-api-probe/main/assets/report-failure.png",
+    "https://raw.githubusercontent.com/LFY-bot/dsh-api-probe/main/assets/report-metrics.png"
+  ],
+  "https://github.com/MJorgin/dsh-media-skills": [
+    "https://raw.githubusercontent.com/MJorgin/dsh-media-skills/main/docs/screenshots/panel-generate.png",
+    "https://raw.githubusercontent.com/MJorgin/dsh-media-skills/main/docs/screenshots/panel-works.png",
+    "https://raw.githubusercontent.com/MJorgin/dsh-media-skills/main/docs/screenshots/install-dialog.png"
+  ]
+,
+  "https://github.com/loyalchiiina/dsh-skill-browser": [
+    "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-01.png",
+    "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-02.png",
+    "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-03.png",
+    "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-04.png",
+    "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-05.png",
+    "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-06.png",
+    "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-07.png",
+    "https://raw.githubusercontent.com/loyalchiiina/dsh-skill-browser/main/docs/images/shot-11.png"
   ]
 }

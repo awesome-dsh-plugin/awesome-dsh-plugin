@@ -1,0 +1,6 @@
+url: https://github.com/Akiyuki1130/dsh-ark-coding-provider
+name: Akiyuki1130/dsh-ark-coding-provider
+category: model
+description:
+  en: 'Unofficial Volcengine Ark Coding Plan LLM provider: registers an `ark-coding` route with 12 models (capacity facts measured per model), multi-account with automatic rotation, a bundled pinned arkcli for the official model catalog and live plan quota, plus a settings wizard and a sidebar usage card.'
+  zh: 非官方火山方舟 Coding Plan 模型接入插件：注册 `ark-coding` 路由，12 个模型的容量事实逐项实测，多账户自动轮换，内置钉版 arkcli 拉官方模型目录与真实套餐额度，含设置向导与侧边栏用量卡片。

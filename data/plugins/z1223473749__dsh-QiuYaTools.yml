@@ -1,0 +1,7 @@
+url: https://github.com/z1223473749/dsh-QiuYaTools
+name: z1223473749/dsh-QiuYaTools
+category: ui
+description:
+  en: "AI animated themes, computer control, standalone windows, attachment previews, Git management, session pop-outs and annotations, cross-app file drag-and-drop, and AI prompt suggestions. Computer control is enabled from the settings; on macOS it needs Screen Recording, Accessibility and Input Monitoring permission, Windows standalone windows need the Edge WebView2 runtime, and prompt suggestions and AI themes consume extra model usage."
+  zh: "AI 智能动效主题、电脑操控、独立窗口、附件预览、Git 管理、会话分窗与批注、跨应用文件拖拽、AI 提示词。电脑操控需在设置里开启；macOS 上需授予屏幕录制、辅助功能与输入监控权限，Windows 独立窗口需 Edge WebView2 运行时；提示词建议与 AI 主题会额外消耗模型用量。"
+tarball: https://github.com/z1223473749/dsh-QiuYaTools/releases/latest/download/dsh-qiuya-tools.tgz

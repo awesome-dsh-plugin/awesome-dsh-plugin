@@ -1,0 +1,6 @@
+url: https://github.com/cjc-github/dsh-model-provider-picker
+name: cjc-github/dsh-model-provider-picker
+category: model
+description:
+  en: Turns the composer's model menu into a two-level list (provider first, then that provider's models), shows the current model together with its provider name, asks for a reasoning effort after a model is picked, and adds settings switches that hide whole providers or single models from the picker.
+  zh: 把输入框的模型菜单改成「先选厂商、再选模型」的两级列表，当前模型位同时显示厂商名，点模型后再选推理等级；设置里可按厂商或单个模型把条目从选择器中隐藏。

@@ -1,0 +1,8 @@
+url: https://github.com/GXinnnnnn/dsh-SAO
+name: GXinnnnnn/dsh-SAO
+category: theme
+description:
+  en: 'Sword Art Online theme with two Link Start animations and Kirito/Asuna voices; full or startup-only mode; independent light/dark accents, theme and surface colours, local fonts, accent-tinted glass settings with 220ms sliding selectors, optimized scrolling and theme transitions; liquid/frosted glass, per-component transparency and continuous sidebar/context surfaces; compact conversation tabs and single-line status readouts; nine built-in wallpapers, local images or 4K/5K looping video with power-saving mode; model reasoning-intensity slider.'
+  zh: '刀剑神域主题：双 Link Start 启动动画与桐人／亚丝娜语音，可选全部功能或仅限启动动画；明暗主题色独立记忆、界面底色与本机字体、带主题色的玻璃设置及 220ms 平移选项，优化滚动和主题切换；液态／磨砂玻璃、分组件透明度与连续右栏／上下文背景；紧凑会话标签与单行状态读数；九张内置壁纸、本地图片或 4K／5K 循环视频及静态省电；模型思考强度滑条。'
+icon: https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/main/icon.png
+tarball: https://github.com/GXinnnnnn/dsh-SAO/releases/latest/download/dsh-SAO.tgz

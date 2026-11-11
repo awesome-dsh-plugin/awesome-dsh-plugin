@@ -1,0 +1,6 @@
+url: https://github.com/chimneyQ/dsh-model-rotator
+name: chimneyQ/dsh-model-rotator
+category: model
+description:
+  en: 'Ranks the models a DeepSeek Harness install already discovered by measured connectivity and speed, and switches to the next candidate inside the same turn when the one in use fails without producing any output. Ships a settings page with a grouped model list, per-model and per-channel switches, and a quota-aware cooldown that rests an exhausted model until the next day.'
+  zh: '把本机已发现的 DSH 模型按实测连通性与速度排序，当前模型无输出失败时在同一回合内切到下一个候选。附带设置页：按渠道分组的模型列表、逐模型与逐渠道开关，以及额度耗尽后休息到次日的冷却策略。'

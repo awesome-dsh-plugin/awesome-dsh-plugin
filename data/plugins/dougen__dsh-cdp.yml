@@ -1,0 +1,6 @@
+url: https://github.com/dougen/dsh-cdp
+name: dougen/dsh-cdp
+category: browser
+description:
+  en: 'Drives a Chromium browser you are already running — Chrome, Edge, Brave, Vivaldi, Opera, Chromium, Arc or Thorium — over one long-lived CDP connection, so the remote-debugging approval is asked once instead of per command. Commands for tabs, navigation, JS evaluation, DOM snapshots, clicks, typing, screenshots and CSS/DOM/pixel assertions go over a loopback HTTP route that the agent calls with the shell tool it already has, so no new tools are registered, and the plugin registers its own usage skill with no runtime dependencies.'
+  zh: '通过一条常驻 CDP 连接驱动本机已在运行的 Chromium 内核浏览器——Chrome、Edge、Brave、Vivaldi、Opera、Chromium、Arc、Thorium，远程调试授权只需点一次，而不是每条命令都点。标签页、导航、执行 JS、DOM 快照、点击、输入、截图以及 CSS/DOM/像素断言都走本机回环 HTTP 路由，agent 用已有的 shell 工具发命令，因此不注册新工具；插件自带使用说明 skill，零运行时依赖。'

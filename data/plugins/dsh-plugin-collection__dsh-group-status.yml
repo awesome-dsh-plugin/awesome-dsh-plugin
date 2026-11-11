@@ -1,0 +1,6 @@
+url: https://github.com/dsh-plugin-collection/dsh-group-status
+name: dsh-plugin-collection/dsh-group-status
+category: ui
+description:
+  en: 'Aggregated status badges on collapsed sidebar groups in DSH: a folded folder row shows in-progress / awaiting-approval / done / scheduled / review-pending counts, with numbers and hover detail. (sidebar badge / group status / aggregate)'
+  zh: 'DSH 侧栏折叠分组聚合徽标：收起的文件夹行显示进行中/待审批/已完成/定时任务/等待评审的聚合状态，带数字与悬停明细。（侧栏徽标 / 分组状态 / 聚合）'

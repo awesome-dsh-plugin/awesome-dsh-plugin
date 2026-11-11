@@ -1,0 +1,8 @@
+url: https://github.com/zhangyong0010/dsh-handshake
+name: zhangyong0010/dsh-handshake
+category: workflow
+description:
+  en: 'Hand off local development tasks between Codex and DeepSeek Harness with original requirements, project agreements, workspace checks, and a relay board. Needs the Codex desktop app (or a codexBinary path in the settings); verified on macOS only.'
+  zh: '在 Codex 与 DeepSeek Harness 间接力本地开发任务，保留原始要求、项目共识、代码状态检查及接力记录。需要 Codex 桌面应用（或在设置里指定 codexBinary 路径）；仅在 macOS 上验证过。'
+icon: https://raw.githubusercontent.com/zhangyong0010/dsh-handshake/main/assets/icon-180.png
+tarball: https://github.com/zhangyong0010/dsh-handshake/releases/latest/download/dsh-handshake.tgz

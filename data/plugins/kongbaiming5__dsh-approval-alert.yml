@@ -1,0 +1,7 @@
+url: https://github.com/kongbaiming5/dsh-approval-alert
+name: kongbaiming5/dsh-approval-alert
+category: notify
+tarball: https://github.com/kongbaiming5/dsh-approval-alert/releases/download/v0.3.0/dsh-approval-alert-0.3.0.tgz
+description:
+  en: macOS 13+. Plays a macOS system sound when DeepSeek Harness needs a tool approval, an agent question, a macOS permission prompt, or an administrator password sheet, then repeats on a 0/25/20/15/10/5 second cadence until the request is resolved. Ships as a bundle with a switch and a config form in the Plugins page.
+  zh: 需 macOS 13+。在 DeepSeek Harness 需要工具审批、Agent 提问、macOS 权限弹窗或管理员密码弹窗时播放系统提示音，并按 0/25/20/15/10/5 秒节奏重复提醒，直到请求被处理。以 bundle 形式提供，在侧边栏插件页带开关和中文配置表单；需 macOS 13+。

@@ -1,0 +1,6 @@
+url: https://github.com/2026heshao/dsh-obsidian-board
+name: 2026heshao/dsh-obsidian-board
+category: tools
+description:
+  en: 'Turns a local Obsidian vault into a dedicated RAG chat panel: a sidebar page with the note browser, the retrieval-augmented chat and the cited source side by side, answering from fully local BM25 plus CJK-bigram retrieval over your notes and streaming through the DSH model channel, with clickable [n] citations and mtime-based incremental indexing.'
+  zh: '把本地 Obsidian 仓库变成专属 RAG 对话面板：侧栏一个完整页面，左侧笔记浏览、中间检索增强对话、右侧引用原文；检索用完全本地的 BM25 加中文 bigram，回答走 DSH 模型通道，[n] 引用可点击，索引按 mtime 增量更新。'

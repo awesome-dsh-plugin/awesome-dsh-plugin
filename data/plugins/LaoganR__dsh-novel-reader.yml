@@ -1,0 +1,6 @@
+url: https://github.com/LaoganR/dsh-novel-reader
+name: LaoganR/dsh-novel-reader
+category: ui
+description:
+  en: 'Local TXT novel reader in the DSH right sidebar: bookshelf with file, directory and path import, chapter table of contents with jump, click-to-turn or vertical-scroll paging, reading progress restored across restarts, and font, line-spacing, background and night themes.'
+  zh: 'DSH 右侧栏本地 TXT 小说阅读器：书架三种导入、章节目录跳转、点击翻页与上下滚动、重启后进度恢复、字体/行距/背景/夜间阅读主题。'

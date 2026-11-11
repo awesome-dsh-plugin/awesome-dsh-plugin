@@ -1,0 +1,6 @@
+url: https://github.com/wshdp123/dsh-connect-qoder-pro
+name: wshdp123/dsh-connect-qoder-pro
+category: model
+description:
+  en: 'Connects DSH to the local Qoder desktop client''s sign-in to expose Qoder CN models (qmodel, qfmodel). Windows only: the credential is decrypted with DPAPI.'
+  zh: 连接 DSH 与本地 Qoder 桌面客户端登录态，接入 Qoder CN 官方模型（qmodel、qfmodel）。仅 Windows：凭据读取依赖 DPAPI。

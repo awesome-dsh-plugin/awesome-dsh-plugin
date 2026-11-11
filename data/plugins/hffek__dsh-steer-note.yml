@@ -1,0 +1,6 @@
+url: https://github.com/hffek/dsh-steer-note
+name: hffek/dsh-steer-note
+category: ui
+description:
+  en: Adds a compact mid-turn steering box above the composer for text, images, and files, with read and pending status, cancel, and unfinished-draft rescue.
+  zh: 在输入框上方增加独立插话栏，支持文字、图片和普通文件，显示读取状态并可在未读取时取消，任务结束时救援未发送草稿。

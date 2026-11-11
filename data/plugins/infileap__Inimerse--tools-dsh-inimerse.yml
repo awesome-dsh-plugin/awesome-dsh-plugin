@@ -1,0 +1,6 @@
+url: https://github.com/infileap/Inimerse/tree/main/tools/dsh-inimerse
+name: infileap/Inimerse#tools/dsh-inimerse
+category: tools
+description:
+  en: Five tools that build, test and run the Inimerse engine, and drive its Verse layers over the server's line protocol. Needs a local Inimerse checkout built with CMake; point the bundle's repoRoot at it (the shipped default is the author's path).
+  zh: 五个工具，用于构建、测试与运行 Inimerse 引擎，并通过服务端行协议驱动其 Verse 层。需要本机有 Inimerse 源码检出并用 CMake 构建；在 bundle 配置中把 repoRoot 指向它（默认值是作者本机路径）。

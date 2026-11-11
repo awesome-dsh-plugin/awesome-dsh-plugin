@@ -1,0 +1,6 @@
+url: https://github.com/lucagiftzek/dsh-mail
+name: lucagiftzek/dsh-mail
+category: tools
+description:
+  en: "Mail for DSH: IMAP, POP3, SMTP and OAuth2 accounts with a reading tab, API senders, scheduled and CSV bulk sends with unsubscribe handling, and mail_* agent tools. The Mail tab appears inside dsh-better-sidebar; the agent tools work without it."
+  zh: "DSH 的邮件客户端：接入 IMAP、POP3、SMTP 与 OAuth2 账号，提供侧栏阅读标签页、API 发信、定时与 CSV 批量发信（含退订处理），以及 mail_* agent 工具。阅读标签页需配合 dsh-better-sidebar，未装时 agent 工具仍可用。"

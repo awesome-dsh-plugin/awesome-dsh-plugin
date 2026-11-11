@@ -1,0 +1,6 @@
+url: https://github.com/Yanlrx/dsh-memory-v2
+name: Yanlrx/dsh-memory-v2
+category: memory
+description:
+  en: 'Long-term memory for DeepSeek Harness agents: per-turn archival and recall, two-phase consolidation of the per-day scene log (the host prompts every five unconsolidated rounds and the caller confirms with an ackToken), and validity, weight and expiry as three independent functions.'
+  zh: '给 DeepSeek Harness 的长期记忆插件：每轮自动存档与召回，对按天保存的情景原文做两阶段巩固（攒满五轮未巩固时由宿主提醒，调用方用 ackToken 确认），有效性、权重、过期三个函数各管一件事。'

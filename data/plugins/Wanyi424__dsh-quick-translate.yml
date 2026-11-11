@@ -1,0 +1,6 @@
+url: https://github.com/Wanyi424/dsh-quick-translate
+name: Wanyi424/dsh-quick-translate
+category: tools
+description:
+  en: 'Translate between Chinese and English without leaving DSH, using your configured models with no extra API key: streaming output, a customizable prompt, and local history to revisit and re-translate.'
+  zh: '不离开 DSH 就能中英互译：复用已配置的模型，免填 API Key；译文边生成边显示，提示词可自定义，历史自动存在本地，可随时回看重译。'

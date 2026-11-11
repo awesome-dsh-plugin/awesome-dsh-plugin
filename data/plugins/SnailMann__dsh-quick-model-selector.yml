@@ -1,0 +1,7 @@
+url: https://github.com/SnailMann/dsh-quick-model-selector
+name: SnailMann/dsh-quick-model-selector
+category: model
+description:
+  en: Search-first model selector with favorites, recent models, collapsible provider groups and keyboard navigation.
+  zh: 模型再多也好找：搜索、收藏、最近使用、服务商分组折叠与键盘快速切换。
+icon: https://raw.githubusercontent.com/SnailMann/dsh-quick-model-selector/main/icon.png

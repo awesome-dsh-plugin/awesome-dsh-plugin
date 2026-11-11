@@ -1,0 +1,7 @@
+url: https://github.com/SnowBeatRain/dsh-offwork
+name: SnowBeatRain/dsh-offwork
+category: ui
+icon: https://raw.githubusercontent.com/SnowBeatRain/dsh-offwork/main/assets/icon-256.png
+description:
+  en: 'A DeepSeek Harness page companion with animated characters, a clock-out countdown, estimated earnings, hydration reminders, quiet time and salary masking, with separate cards opened from the context menu.'
+  zh: 'DeepSeek Harness 页面陪伴插件，提供动态角色、下班倒计时、收入估算、喝水提醒、免打扰和工资隐藏，各功能通过右键菜单打开独立卡片。'

@@ -1,0 +1,7 @@
+url: https://github.com/JiewiW/dsh-step-governor
+
+name: JiewiW/dsh-step-governor
+category: workflow
+description:
+  en: 'Deterministic step governance for DSH agents: rejects over-budget agent steps and denies risky tool executions before they run, with shadow mode by default and fail-open on errors.'
+  zh: 为 DSH 代理提供确定性步数治理，在超预算的 agent 步执行前拒绝、在风险工具调用执行前阻断，默认影子模式，出错时放行不阻断业务。

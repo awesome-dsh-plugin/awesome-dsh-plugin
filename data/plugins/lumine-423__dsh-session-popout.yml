@@ -1,0 +1,7 @@
+url: https://github.com/lumine-423/dsh-session-popout
+name: lumine-423/dsh-session-popout
+category: ui
+description:
+  en: 'Drag a session out of the DSH sidebar and it opens in its own native OS window, showing the full standard conversation UI (Markdown, toolbar, settings) with only the sidebar trimmed away, so several sessions can be watched side by side instead of switching back and forth. Windows verified; macOS and Linux untested. Runs in the DSH desktop app (Electron).'
+  zh: '把 DSH 侧边栏里的会话拖出来，即在独立的原生系统窗口中打开；窗口内是完整的标准会话界面（Markdown、工具栏、设置都在），只裁掉侧边栏，因此可以同时盯住多个会话，不必来回切换。Windows 已验证，macOS/Linux 未实测；需在 DSH 桌面端（Electron）中使用。'
+tarball: https://github.com/lumine-423/dsh-session-popout/releases/download/v0.2.0/dsh-session-popout.tgz

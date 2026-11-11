@@ -1,0 +1,6 @@
+url: https://github.com/nlflora/dsh-workspace-heal
+name: nlflora/dsh-workspace-heal
+category: session
+description:
+  en: Recreates a workspace folder that was deleted while sessions were still bound to it, and summarizes a stranded session so its context can be reused.
+  zh: 有会话绑定的工作区目录被删时自动重建；并把失去归属的会话折叠成摘要，供新会话导入。

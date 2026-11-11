@@ -1,0 +1,7 @@
+url: https://github.com/qwq1999/dsh-ide-database
+name: qwq1999/dsh-ide-database
+category: dev
+description:
+  en: JetBrains Database-style data source tree and SQL/Redis consoles with 15 agent tools for DeepSeek Harness. SQL needs Java 8+ installed, Redis does not.
+  zh: 仿 JetBrains Database 的数据源树与 SQL/Redis 控制台，附 15 个 agent 工具。SQL 需本机 Java 8+，Redis 不需要。
+tarball: https://github.com/qwq1999/dsh-ide-database/releases/latest/download/dsh-ide-database.tgz

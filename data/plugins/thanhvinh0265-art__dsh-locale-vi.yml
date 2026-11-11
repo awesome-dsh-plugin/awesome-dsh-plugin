@@ -1,0 +1,7 @@
+url: https://github.com/thanhvinh0265-art/dsh-locale-vi
+name: thanhvinh0265-art/dsh-locale-vi
+category: ui
+description:
+  en: 'Vietnamese (tiếng Việt) language pack for the DeepSeek Harness Web UI: hand-translated dictionaries for 61 namespaces (3,477 strings) that take effect when Vietnamese is picked in Settings → Language, plus a /vi-sync command that translates strings added by newer plugin versions through the harness translator service.'
+  zh: '为 DeepSeek Harness Web UI 增加越南语：61 个命名空间、3,477 条人工翻译词条，在「设置 → 语言」里选中越南语即生效；另带 /vi-sync 命令，用 Harness 内置翻译服务补译新版本新增的字符串。'
+icon: https://raw.githubusercontent.com/thanhvinh0265-art/dsh-locale-vi/main/icon.png

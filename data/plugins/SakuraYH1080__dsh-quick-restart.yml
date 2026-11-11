@@ -1,0 +1,6 @@
+url: https://github.com/SakuraYH1080/dsh-quick-restart
+name: SakuraYH1080/dsh-quick-restart
+category: dev
+description:
+  en: Adds a Quick Restart entry to the DSH Desktop account menu that quits and relaunches the app in one click. Windows desktop app only.
+  zh: 在 DSH 桌面端账号菜单中新增“快速重启”入口，一键退出并重新打开 DSH。仅 Windows 桌面端。

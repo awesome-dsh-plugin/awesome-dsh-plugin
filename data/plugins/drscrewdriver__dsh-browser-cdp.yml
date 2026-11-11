@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-browser-cdp
+name: drscrewdriver/dsh-browser-cdp
+category: browser
+description:
+  en: 'Visible agent browser for DSH over CDP, also driving egolite, Tabbit, Chrome, Edge, Brave and Lightpanda backends. Only bcdp_status stays resident (401 chars); the other 33 context-optimized bcdp_* tools unlock per activity batch, so non-browser sessions pay no schema tax (-91.9% measured). Realtime watch panel with direct click/scroll/IME input, element picks quoted into the composer as balanced @"picks/*.json" references, and human-verification notices; non-CDP channels (ego CLI / Tabbit CLI) sync frames by 3s polling. Cross-version support for DSH 0.1.7-rc.1 ~ 0.2.2-rc.1 (exact enumeration of 10 rc).'
+  zh: '看得见的 Agent 浏览器（CDP 接入），同时驱动 egolite、Tabbit、Chrome、Edge、Brave 与 Lightpanda 后端。常驻只有 bcdp_status（401 字符），其余 33 个经过上下文优化的 bcdp_* 工具按活动批次解锁——不碰浏览器的会话不缴 schema token 税（实测 -91.9%）。实时观察窗支持直接点击/滚动/中文输入，点选元素以 @"picks/*.json" 引用投进输入框，人机验证提醒；非 CDP 通道（ego CLI / Tabbit CLI）以 3s 轮询同步画面。DSH 0.1.7-rc.1 ~ 0.2.2-rc.1 跨版本支持（精确枚举 10 个 rc）。'

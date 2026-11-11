@@ -1,0 +1,6 @@
+url: https://github.com/VNHUYY/dsh-sidebar-autohide
+name: VNHUYY/dsh-sidebar-autohide
+category: ui
+description:
+  en: 'Adds Notion-style auto-hide to the left and right DSH sidebars: hover the matching window edge to expand, move away to collapse, and click the sidebar button to pin it open.'
+  zh: '为 DSH 左右侧边栏加上 Notion 式自动收起：指针移到窗口对应边缘时展开，移开后收起，点击侧边栏按钮可固定展开。'

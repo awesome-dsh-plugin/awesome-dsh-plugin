@@ -1,0 +1,7 @@
+url: https://github.com/S-anZZz/dsh-deepseek-web-sync
+name: S-anZZz/dsh-deepseek-web-sync
+category: ui
+description:
+  en: 'Desktop only. DeepSeek Web in the Harness right Sidebar with synchronized theme, automatic launch, one-time web sign-in, and one-click question transfer.'
+  zh: '仅 Desktop。把 DeepSeek 网页版放进 Harness 右侧栏：同步主题、自动打开、网页登录一次即可保持，并一键把提问带入当前对话。'
+tarball: https://github.com/S-anZZz/dsh-deepseek-web-sync/releases/latest/download/dsh-deepseek-web-sync.tgz

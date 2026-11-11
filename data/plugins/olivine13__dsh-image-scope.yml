@@ -1,0 +1,7 @@
+url: https://github.com/olivine13/dsh-image-scope
+name: olivine13/dsh-image-scope
+category: ui
+description:
+  en: 'Adds a pixel-coordinate viewer to the sidebar image preview: hover coordinates, one adjustable dashed rectangle with start/end/size labels, edge snapping, and true-pixel measurements across zoom.'
+  zh: '在侧栏图片预览中加入像素坐标查看器：悬浮读取坐标，用一个可移动/缩放的虚线选框标注起点、终点与宽高，越界自动吸附，缩放后仍按图片真实像素计算。'
+icon: https://raw.githubusercontent.com/olivine13/dsh-image-scope/release/assets/icon-180.png

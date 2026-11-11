@@ -1,0 +1,6 @@
+url: https://github.com/wwwangzilin/dsh-character-presets
+name: wwwangzilin/dsh-character-presets
+category: workflow
+description:
+  en: 'Luna preset for DeepSeek Harness — a little-demon persona on the full standard tool set, composed by six deterministic rule layers (perception, understanding, state, style, regulation, memory) plus a derived vitals layer, with a gated, suppressible cross-session memory file.'
+  zh: 'DeepSeek Harness 的露娜预设：小恶魔人设配完整的 standard 工具面，由感知、理解、状态、表达、调节、记忆六层确定性规则驱动，外加生理派生层；跨会话记忆写入经证据门控，遗忘用抑制而非删除。'

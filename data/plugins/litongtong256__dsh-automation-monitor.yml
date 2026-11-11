@@ -1,0 +1,6 @@
+url: https://github.com/litongtong256/dsh-automation-monitor
+name: litongtong256/dsh-automation-monitor
+category: workflow
+description:
+  en: "Read-only Automations tab in the conversation view. It aggregates what other plugins are scheduled to run: last run time, next run time and a rough token-cost estimate, plus today's total spend and remaining balance. It owns no tasks and starts nothing."
+  zh: "会话视图里的只读「自动化」标签页。把其他插件排的自动化汇总成一张表：上次运行、下次运行时间、大致 token 花费，另附今日总花费与余额。它不拥有任何任务，也不会启动任何东西。"

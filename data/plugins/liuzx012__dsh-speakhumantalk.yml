@@ -1,0 +1,7 @@
+url: https://github.com/liuzx012/dsh-speakhumantalk
+name: liuzx012/dsh-speakhumantalk
+category: usage
+description:
+  en: 'Strips AI phrasing and stock openers: adds a style section to the system prompt of every session (on by default, switch it off with deslop_mode), four deslop_* tools (scan, rewrite, mode, voice) and four skills that are copied into the DSH skills folder at startup, overwriting same-named SKILL.md files.'
+  zh: '删掉 AI 腔与套话：在每个会话的 system prompt 里加一段风格层（默认开启，可用 deslop_mode 关闭），附带 deslop_* 四个工具（扫描、改写、档位、声音画像）和四个 skill，启动时会复制到 DSH 的 skills 目录，同名 SKILL.md 会被覆盖。'
+icon: https://raw.githubusercontent.com/liuzx012/dsh-speakhumantalk/main/assets/icon-180.png

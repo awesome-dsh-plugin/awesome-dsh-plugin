@@ -1,0 +1,7 @@
+url: https://github.com/ccl4-56-23-5/DSH-Plugins/tree/main/最高指令插件/1.1.2
+name: ccl4-56-23-5/DSH-Plugins#top-directive
+category: identity
+description:
+  en: Configure a global system-prompt section with a multiline editor, an enable toggle, and persistent storage that preserves the original text.
+  zh: 通过多行编辑框与开关配置全局系统提示词段，持久保存并保留正文原文。
+tarball: https://github.com/ccl4-56-23-5/DSH-Plugins/releases/download/top-directive-v1.1.2/dsh-top-directive-1.1.2.tgz

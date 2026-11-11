@@ -1,0 +1,7 @@
+url: https://github.com/fcz20060311/dsh-life-planner
+name: fcz20060311/dsh-life-planner
+category: workflow
+description:
+  en: 'A personal life planner derived from Meltllsy/dsh-todo-reminder (do not install both: they share the same data-dsh-todo-css style node): tasks with due-time reminders, countdowns to a target date, a month calendar, a forward-only focus timer and a 26-week activity heatmap.'
+  zh: '个人生活时间管理（基于 Meltllsy/dsh-todo-reminder 二次开发，不能与其同装：两者共用同一个 data-dsh-todo-css 样式节点）：待办与到期提醒、目标日倒计时、月历、正向专注计时、26 周活动热力图。'
+tarball: https://github.com/fcz20060311/dsh-life-planner/releases/latest/download/dsh-life-planner.tgz

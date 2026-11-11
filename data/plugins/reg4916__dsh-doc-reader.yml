@@ -1,0 +1,6 @@
+url: https://github.com/reg4916/dsh-doc-reader
+name: reg4916/dsh-doc-reader
+category: docs
+description:
+  en: "Read PDF, DOCX, XLSX, PPTX and text documents as agent tools, and OCR scanned PDFs or images locally with tesseract.js. Exposes doc_read, pdf_read, xlsx_read, doc_meta and doc_ocr."
+  zh: "把 PDF、DOCX、XLSX、PPTX 和文本文件读取为智能体工具，并用 tesseract.js 在本地对扫描版 PDF 或图片做 OCR。提供 doc_read、pdf_read、xlsx_read、doc_meta、doc_ocr 五个工具。"

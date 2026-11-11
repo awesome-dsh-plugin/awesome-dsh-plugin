@@ -1,0 +1,7 @@
+url: https://github.com/FallenWings27/dsh-provider-card-release
+name: FallenWings27/dsh-provider-card-release
+category: ui
+tarball: https://github.com/FallenWings27/dsh-provider-card-release/releases/latest/download/dsh-provider-card.tgz
+description:
+  en: 'Plays a character entrance card beside the composer when you switch model: identity name, six scored axes (intelligence, coding, speed, stability, cost, context), quota hint and a dialogue line. 23 curated cards across 15 providers; models without a curated card fall back to a data card derived from public benchmarks, or a generic card when no benchmark data exists. A web client plugin with no dependencies and no hooks.'
+  zh: '切换模型时在会话输入框旁播一张角色登场卡：身份名、六轴分数（智力／编码／速度／稳定／性价比／上下文）、额度提示与台词；23 张精选卡覆盖 15 个 provider，库里没有精选卡的模型按公开基准派生数据卡；基准集里也没有分数的则回退为通用卡。web 客户端插件，无依赖、无 hooks。'

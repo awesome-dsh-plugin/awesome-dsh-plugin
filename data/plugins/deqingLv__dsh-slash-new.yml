@@ -1,0 +1,6 @@
+url: https://github.com/deqingLv/dsh-slash-new
+name: deqingLv/dsh-slash-new
+category: session
+description:
+  en: "Adds a /new slash command that opens a blank session in the current workspace (reusing an existing blank one when there is one) and carries the old session's permission preset and agent preset into it, so starting fresh never changes what the agent may do."
+  zh: "/new 指令：在当前工作区打开空白会话（已有空会话可直接复用），并把原会话的权限预设与 Agent 预设带入新会话，开新会话不会悄悄改变代理的可用权限。"

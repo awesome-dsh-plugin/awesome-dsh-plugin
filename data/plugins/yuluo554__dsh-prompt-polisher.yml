@@ -1,0 +1,6 @@
+url: https://github.com/yuluo554/dsh-prompt-polisher
+name: yuluo554/dsh-prompt-polisher
+category: ui
+description:
+  en: 'Composer prompt polisher: a button in the input tool row rewrites the current draft through the session model (workflow engine, enabled automatically) or an OpenAI-compatible standalone API with host-side key storage, backfills the rewritten text with a replace/give-up dialog when the draft changed mid-run, and ships concise/structured style presets, custom templates with a {draft} placeholder, one-click restore from the status dock and reference-chip protection.'
+  zh: '输入框提示词优化：一键把当前草稿交给会话模型（自动启用 workflow 引擎）或 OpenAI 兼容独立 API（密钥只存宿主侧）改写并回填，草稿中途变更时弹出替换/放弃确认；提供 concise/structured 风格预设、自定义模板（{draft} 占位符）、状态条一键还原与引用记号保护。'

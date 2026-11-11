@@ -1,0 +1,6 @@
+url: https://github.com/whybebabo/dsh-code-nav
+name: whybebabo/dsh-code-nav
+category: ui
+description:
+  en: 'Code preview for dsh-better-sidebar with per-language syntax highlighting, symbol outline, in-file search, and selection-to-conversation.'
+  zh: '为 dsh-better-sidebar 提供代码预览：按文件类型语法高亮、符号大纲、文件内查找，选中代码可直接加入对话。'

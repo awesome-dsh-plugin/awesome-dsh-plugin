@@ -1,0 +1,7 @@
+url: https://github.com/mkpoli/dsh-history-search
+name: mkpoli/dsh-history-search
+category: tools
+tarball: https://github.com/mkpoli/dsh-history-search/releases/download/v0.1.0/dsh-history-search.tgz
+description:
+  en: 'Adds one agent tool (read-only on your transcripts) that searches Claude Code, Codex and DSH session transcripts and returns each match with its resume command. Needs ripgrep (rg) and zstd (zstdcat) on PATH and keeps a plain-text cache of DSH sessions under ~/.dsh/cache/history-search.'
+  zh: '给智能体增加一个检索 Claude Code、Codex 与 DSH 会话记录的工具（不改动原记录），并为每条结果给出恢复命令。需要 PATH 上有 ripgrep（rg）与 zstd（zstdcat），并会在 ~/.dsh/cache/history-search 保留 DSH 会话的明文缓存。'

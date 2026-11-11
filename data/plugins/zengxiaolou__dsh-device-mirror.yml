@@ -1,0 +1,6 @@
+url: https://github.com/zengxiaolou/dsh-device-mirror
+name: zengxiaolou/dsh-device-mirror
+category: dev
+description:
+  en: 'Mirror an iOS Simulator or Android emulator into DSH as floating overlay windows, several at once, and tap, drag or type on the mirrored screen with the input forwarded back to the device.'
+  zh: '把 iOS 模拟器或安卓模拟机投进 DSH 的浮窗，可同时开多个，并在投屏画面上点、拖、打字，输入回传到设备。'

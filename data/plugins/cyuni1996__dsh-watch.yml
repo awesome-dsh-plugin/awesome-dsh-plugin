@@ -1,0 +1,7 @@
+url: https://github.com/cyuni1996/dsh-watch
+name: cyuni1996/dsh-watch
+category: remote
+description:
+  en: Continue DeepSeek Harness conversations on an Android watch and install the watch app with a desktop wizard.
+  zh: 在 Android 手表上继续 DeepSeek Harness 会话，支持通过电脑端向导安装手表应用。
+icon: https://raw.githubusercontent.com/cyuni1996/dsh-watch/main/docs/media/icon.png

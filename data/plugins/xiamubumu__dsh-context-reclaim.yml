@@ -1,0 +1,7 @@
+url: https://github.com/xiamubumu/dsh-context-reclaim
+name: xiamubumu/dsh-context-reclaim
+category: session
+description:
+  en: 'Context governance for DSH: folds oversized tool results, collapses the tool surface and keeps the prompt cache warm, so long sessions stop getting more expensive.'
+  zh: 上下文治理：折叠超大工具结果、收拢工具面、稳住提示词缓存命中，长会话不再越聊越贵。
+tarball: https://github.com/xiamubumu/dsh-context-reclaim/releases/download/v1.1.0/dsh-context-reclaim-1.1.0.tgz

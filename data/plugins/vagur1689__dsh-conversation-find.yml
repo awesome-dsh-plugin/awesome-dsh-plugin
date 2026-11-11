@@ -1,0 +1,6 @@
+url: https://github.com/vagur1689/dsh-conversation-find
+name: vagur1689/dsh-conversation-find
+category: session
+description:
+  en: 'In-conversation keyword search for the current session: pages the history back to its first window before matching, then highlights every hit and scrolls to the one you pick.'
+  zh: '当前会话内的关键词搜索：先把会话历史翻回最早一页再匹配，命中处高亮并滚动定位到所选项。'

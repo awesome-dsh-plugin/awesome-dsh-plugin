@@ -1,0 +1,6 @@
+url: https://github.com/yiyunet/dsh-dingtalk-connector
+name: yiyunet/dsh-dingtalk-connector
+category: tools
+description:
+  en: 'DSH plugin: read and write DingTalk AI Tables through the official dws CLI, adding ten DingTalk AI Table tools (nine `dingtalk_aitable_*` plus `dingtalk_sync_job`), a settings panel, and scheduled CSV export.'
+  zh: DSH 插件：包装钉钉官方 dws CLI，读写钉钉 AI 表格，提供 10 个钉钉 AI 表格工具（9 个 `dingtalk_aitable_*` 加 1 个 `dingtalk_sync_job`）、设置面板与定时 CSV 导出。

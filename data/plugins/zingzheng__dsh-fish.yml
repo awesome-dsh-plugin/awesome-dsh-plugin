@@ -1,0 +1,7 @@
+url: https://github.com/zingzheng/dsh-fish
+name: zingzheng/dsh-fish
+category: ui
+description:
+  en: 'A reasoning-style row above the DSH composer with a stock watchlist and a host-backed TXT/EPUB reader; reading progress is shared across browsers.'
+  zh: '在 DSH 输入框上方以思考行样式显示自选股票行情，或阅读 TXT/EPUB 电子书。'
+icon: https://raw.githubusercontent.com/zingzheng/dsh-fish/main/assets/icon-180.png

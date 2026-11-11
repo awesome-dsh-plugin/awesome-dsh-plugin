@@ -1,0 +1,6 @@
+url: https://github.com/962599627/agent-development-constraints
+name: 962599627/agent-development-constraints
+category: dev
+description:
+  en: Installs a self-evolving development-constraints rule library, exposes it to the agent through a constraints tool and a once-per-session reminder, and audits AI token cost and context usage.
+  zh: 把一套会自我进化的开发约束规则库装进项目，通过 constraints 工具和「每会话一次」的提醒交给智能体，并可审计 AI 的 token 成本与上下文占用。

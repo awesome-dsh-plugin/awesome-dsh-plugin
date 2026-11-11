@@ -1,0 +1,7 @@
+url: https://github.com/adithyanraj03/dsh-spell-check
+name: adithyanraj03/dsh-spell-check
+category: ui
+tarball: https://github.com/adithyanraj03/dsh-spell-check/releases/latest/download/plugin.tgz
+description:
+  en: "Chrome-style spell check for the dsh composer: the misspelled word under the caret gets a suggestion strip, and Tab accepts it. Local only — no network, no LLM, no telemetry."
+  zh: '给 dsh 输入框做像 Chrome 那样的拼写检查：光标所在的错词上方出现建议条，按 Tab 直接接受；错词下画蓝色波浪线，右键可看完整候选。完全本机运行，不联网、不调用模型。'

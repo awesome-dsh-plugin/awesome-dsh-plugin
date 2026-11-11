@@ -1,0 +1,7 @@
+url: https://github.com/RoderickWilliams/dsh-picture-text-reader
+name: RoderickWilliams/dsh-picture-text-reader
+category: tools
+description:
+  en: 'Requires Python 3.12+; Xiaohongshu reading needs the xiaohongshu-mcp backend and a QR sign-in (ffmpeg/OCR optional). Batch-read Xiaohongshu notes and WeChat public-account articles: per-note body, image text via local OCR, video frame text and comment samples, structured JSON/Markdown output, and the original source URL on every result. Read-only: it never publishes, likes, follows or comments.'
+  zh: '需 Python 3.12+；小红书需 xiaohongshu-mcp 后端并扫码登录（OCR/ffmpeg 可选）。批量抓取小红书笔记与微信公众号文章：逐篇取正文、图片文字（本地 OCR）、视频抽帧文字与评论样本，输出结构化 JSON/Markdown，每条结果带原文链接。只读，不发布、不点赞、不关注、不评论。'
+tarball: https://github.com/RoderickWilliams/dsh-picture-text-reader/releases/download/v1.0.0/dsh-picture-text-reader-1.0.0.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/Qing45/dsh-body-clock
+name: Qing45/dsh-body-clock
+category: notify
+description:
+  en: 'A draggable floating window with three tabs — meals, water, standing. It picks breakfast, lunch and dinner at random (three tries a day, no repeats, editable food lists), counts water cups and standing breaks, and reminds you with a distinct 3-second chime per tab. Collapses to a 32px ball.'
+  zh: '可拖动的悬浮小窗，分吃饭、喝水、站立三个 tab：随机决定三餐（每天各 3 次机会、不重复、可增删菜品），记录喝水与站立，每类提醒各用一种音色响约 3 秒；可收成 32px 悬浮球。'
+icon: https://raw.githubusercontent.com/Qing45/dsh-body-clock/main/assets/icon-180.png

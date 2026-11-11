@@ -1,0 +1,6 @@
+url: https://github.com/achievejia/dsh-session-completion-notify
+name: achievejia/dsh-session-completion-notify
+category: notify
+description:
+  en: 'Sends a macOS native notification when a root DSH session turn completes normally: the title is the session title and the body a sanitized, truncated preview of the reply. Subagents, cancellations and errors are skipped by default and no conversation text is stored.'
+  zh: '主会话每轮回复正常完成后发送 macOS 系统通知：标题为会话标题，正文为脱敏截断的回复摘要。默认跳过子代理、取消与错误，不保存会话内容。'

@@ -1,0 +1,7 @@
+url: https://github.com/GodLike2020/dsh-mqtt-tools
+name: GodLike2020/dsh-mqtt-tools
+category: ui
+icon: https://raw.githubusercontent.com/GodLike2020/dsh-mqtt-tools/main/assets/icon-180.png
+description:
+  en: "MQTT client and embedded broker for DeepSeek Harness: one sidebar panel with saved connections, a live message log and a local broker, plus nine mqtt_* agent tools."
+  zh: "DeepSeek Harness 的 MQTT 面板：客户端连接池、实时消息日志与内嵌 Broker，并提供九个 mqtt_* 智能体工具。"

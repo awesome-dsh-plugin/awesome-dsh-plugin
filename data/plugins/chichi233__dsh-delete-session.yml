@@ -1,0 +1,6 @@
+url: https://github.com/chichi233/dsh-delete-session
+name: chichi233/dsh-delete-session
+category: session
+description:
+  en: 'Adds a "Delete session" item to the sidebar session menu that moves the session transcript directory to the Windows Recycle Bin, or to a plugin trash folder under ~/.dsh/plugin-data when that is unavailable (restorable either way), and deletes its spill files and projection cache in one request, detaching a live session first and cascading to its subagent sessions. A setting switches the confirmation step off so deleting takes one click; duplicate delete items registered by other plugins are collapsed so only one remains.'
+  zh: '在侧栏会话菜单里加一条「删除会话」，一次请求就把会话记录目录移进 Windows 回收站（用不了时移进 ~/.dsh/plugin-data 下的插件回收站，两种都可还原），并删除其溢出文件和投影缓存，正在使用的会话会先被摘下来，子代理会话一并级联清理。设置里可以关掉「删除前再次确认」，关掉后点一下就删；其它插件注册的同名菜单项会被合并，只留一条。'

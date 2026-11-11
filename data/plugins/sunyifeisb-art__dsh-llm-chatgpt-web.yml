@@ -1,0 +1,6 @@
+url: https://github.com/sunyifeisb-art/dsh-llm-chatgpt-web
+name: sunyifeisb-art/dsh-llm-chatgpt-web
+category: model
+description:
+  en: 'Answers model calls by driving your own logged-in chatgpt.com session in a local Chrome, so inference spends the ChatGPT web quota rather than Codex quota, and adds a JSON tool-call protocol so the web model can run DSH tools.'
+  zh: '用本地 Chrome 驱动你自己已登录的 chatgpt.com 会话作答，消耗的是 ChatGPT 网页额度而非 Codex 额度；并用 JSON 工具调用协议让网页端模型可以调用 DSH 工具。'

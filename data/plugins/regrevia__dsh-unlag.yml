@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/dsh-unlag
+name: regrevia/dsh-unlag
+category: dev
+description:
+  en: 'The desktop app has its own refresh button. Edited a plugin but a run is still going? Refresh. Window sluggish after hours of use? Refresh. One button fixes both — running sessions, queued messages and drafts are untouched.'
+  zh: 'DSH 桌面端自己的刷新按钮。开发插件要重启，可手里还有任务在跑？刷新一下！开久了页面越来越卡？刷新一下！一个按钮解决这些烦恼，正在进行的会话、排队消息和草稿都不受影响。'
+icon: https://raw.githubusercontent.com/regrevia/dsh-unlag/main/icon.png

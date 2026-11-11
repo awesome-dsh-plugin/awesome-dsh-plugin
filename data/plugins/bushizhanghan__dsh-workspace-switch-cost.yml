@@ -1,0 +1,16 @@
+url: https://github.com/bushizhanghan/dsh-workspace-switch-cost
+name: bushizhanghan/dsh-workspace-switch-cost
+category: usage
+description:
+  en: >-
+    Quantify what switching projects costs. Measures each workspace's cold-start overhead (AGENTS.md + skill
+    catalog + tool schemas + runtime context), its steady state, and how many turns it takes to reach it — then
+    compares workspaces and attributes the difference. Attribution requires at least three workspaces and says
+    so instead of inventing a correlation from two points; a factor with no spread across workspaces is
+    reported as a property of the profile, not of the project. Recommends which workspaces to keep warm, which
+    to archive, by entry cost times visit frequency. Deterministic.
+  zh: >-
+    工作区切换成本量化：量每个工作区的冷启动开销（AGENTS.md + 技能目录 + 工具 schema + 运行时上下文）、稳态值、
+    几轮到达稳态，然后横向对比并归因。归因需要至少三个工作区，不到就明说数据不够而不是拿两个点编一个相关性；
+    在所有工作区之间没有差异的因素被标注为 profile 的属性而非项目的属性。按"进入成本 × 访问频率"给出常驻/
+    归档建议。纯确定性。

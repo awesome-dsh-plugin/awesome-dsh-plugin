@@ -1,0 +1,6 @@
+url: https://github.com/flycucu/dsh-icon-changer
+name: flycucu/dsh-icon-changer
+category: ui
+description:
+  en: 'Replaces the DeepSeek Harness desktop app icon (exe, tray and Start Menu) with any uploaded .ico, and restores the stock icon on demand.'
+  zh: '更换 DeepSeek Harness 桌面端应用图标（exe、托盘、开始菜单），支持上传任意 .ico，并可随时还原官方默认图标。'

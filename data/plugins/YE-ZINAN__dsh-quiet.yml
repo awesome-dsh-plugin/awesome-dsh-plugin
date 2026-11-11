@@ -1,0 +1,6 @@
+url: https://github.com/YE-ZINAN/dsh-quiet
+name: YE-ZINAN/dsh-quiet
+category: notify
+description:
+  en: 'Attention gate for DeepSeek Harness: sorts run events into blocked / terminal / progress and alerts only on the first two, holding everything non-blocking during a /focus block and delivering it when the block ends. Alerts flash the taskbar button only - no toast, no sound, no focus steal. Windows only.'
+  zh: 'DeepSeek Harness 的注意力闸门：把运行事件分成「卡住 / 终态 / 中间进展」三级，只对前两级提醒；专注块内的非阻塞事件一律攒着，块结束时一次性交付。提醒只闪任务栏按钮——不弹通知、不出声、不抢焦点。仅 Windows。'

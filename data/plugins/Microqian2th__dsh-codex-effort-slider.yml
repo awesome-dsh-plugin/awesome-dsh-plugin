@@ -1,0 +1,7 @@
+url: https://github.com/Microqian2th/dsh-codex-effort-slider
+name: Microqian2th/dsh-codex-effort-slider
+category: ui
+description:
+  en: 'Drags the official reasoning-effort row into a continuous track: blue-to-violet fill, a starfield on the higher levels, and the official value text tinted to the current level. Off stays gray; no official text is rewritten.'
+  zh: '把官方「推理等级」那一行改成一条可拖动的连续轨道：填充从蓝渐变到紫罗兰，较高档位带星尘粒子，官方数值文字跟着档位变色。Off 档保持官方灰，不改写官方任何文字。'
+tarball: https://github.com/Microqian2th/dsh-codex-effort-slider/releases/download/v1.0.0/dsh-codex-effort-slider-1.0.0.tgz

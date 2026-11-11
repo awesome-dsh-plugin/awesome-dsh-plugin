@@ -1,0 +1,6 @@
+url: https://github.com/matata2017/dsh-codex-hooks
+name: matata2017/dsh-codex-hooks
+category: workflow
+description:
+  en: "Codex-style hook management ported to dsh: hooks.json discovered from config, plugins and projects, each hook pinned to a sha256 fingerprint that must be approved before it runs; a review dialog in the composer, a `/hooks` browser, per-hook run stats, and trust / enable / dry run in Settings -> Hooks. The config file is dsh's own, with dsh event names."
+  zh: "把 Codex 的钩子管理移植到 dsh：从配置、插件与项目三处发现 hooks.json，每条钩子钉在 sha256 指纹上、批准后才运行；输入框里的审查弹窗、`/hooks` 浏览器、逐条运行统计，以及在 设置 → 钩子 里管信任、启用与试跑。配置文件用 dsh 自己的格式与事件名。"

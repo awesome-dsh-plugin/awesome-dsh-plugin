@@ -1,0 +1,6 @@
+url: https://github.com/OStarsO/dsh-processing-status
+name: OStarsO/dsh-processing-status
+category: ui
+description:
+  en: Shows processing time and rotating Chinese tips above the DSH composer.
+  zh: 在 DSH 输入框上方显示处理中计时和轮换的中文趣味提示。
