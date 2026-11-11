@@ -1,7 +1,7 @@
 url: https://github.com/tan000tan/dsh-solidworks
 name: tan000tan/dsh-solidworks
 category: tools
-tarball: https://github.com/tan000tan/dsh-solidworks/releases/download/v0.3.0/dsh-solidworks-0.3.0.tgz
+tarball: https://github.com/tan000tan/dsh-solidworks/releases/download/v0.3.1/dsh-solidworks-0.3.1.tgz
 description:
-  en: 'Connects DeepSeek Harness to a local SolidWorks install through an MCP server, with a read-only default mode and per-call confirmation for high-risk operations. Windows 10/11 x64 only; needs Python 3.10+ x64 and a local SolidWorks desktop (README: 2020-2026, verified on 2026) started at least once; npm run setup builds a local .venv with the Python packages and registers the pywin32 COM components. On start, if the Python interpreter it finds lacks mcp or pywin32, it runs pip install for them automatically in that interpreter (Tsinghua PyPI mirror, pypi.org as a second index) unless pythonPath is set.'
-  zh: '通过 MCP 服务器把 DeepSeek Harness 接入本机 SolidWorks，默认只读模式，高风险操作逐次确认。仅 Windows 10/11 x64；需 Python 3.10+ x64，且本机已安装并至少启动过一次 SolidWorks 桌面版（README 标称 2020–2026，实机仅验证 2026）；npm run setup 会建本地 .venv 装好 Python 依赖并注册 pywin32 的 COM 组件。启动时如果找到的 Python 解释器缺少 mcp 或 pywin32，会自动在该解释器里 pip 安装（清华 PyPI 镜像，pypi.org 作为第二个源），配置了 pythonPath 则不会。'
+  en: Connects DeepSeek Harness to a local SolidWorks install through an MCP server, with a read-only default mode and per-call confirmation for high-risk operations.
+  zh: 通过 MCP 服务器把 DeepSeek Harness 接入本机 SolidWorks，默认只读模式，高风险操作逐次确认。
