@@ -1,0 +1,8 @@
+url: https://github.com/Fadegentle/dsh-session-booth
+name: Fadegentle/dsh-session-booth
+category: session
+description:
+  en: Persistent multi-session split view in the DSH main window — open one or more sessions side by side in resizable panes with grid, shelf and column layouts, drag-to-reorder panes, and a sidebar entry to reopen the booth.
+  zh: 在 DSH 主窗口提供持久化的多会话分屏视图——可同时打开多个会话于可调大小的窗格中，支持网格/横排/纵排布局、拖拽排序，并提供侧边栏入口重新打开会话廊。
+icon: https://raw.githubusercontent.com/Fadegentle/dsh-session-booth/main/assets/icon-180.png
+tarball: https://github.com/Fadegentle/dsh-session-booth/releases/latest/download/dsh-session-booth.tgz
