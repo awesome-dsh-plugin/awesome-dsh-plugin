@@ -1,0 +1,6 @@
+url: https://github.com/elsebit/dsh-deepseek-usage-extended
+name: elsebit/dsh-deepseek-usage-extended
+category: usage
+description:
+  en: A fork of dsh-deepseek-usage that adds IKunCode account balance queries alongside the upstream provider readers, subscription usage windows, and model price snapshots.
+tarball: https://github.com/elsebit/dsh-deepseek-usage-extended/releases/latest/download/dsh-deepseek-usage-extended.tgz
