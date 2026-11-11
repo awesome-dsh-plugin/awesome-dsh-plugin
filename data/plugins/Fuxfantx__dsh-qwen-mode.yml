@@ -1,0 +1,6 @@
+url: https://github.com/Fuxfantx/dsh-qwen-mode
+name: Fuxfantx/dsh-qwen-mode
+category: model
+description:
+  en: 'Qwen mode for DSH: manages local GenieX and Alibaba Cloud QwenCloud providers, normalizes thinking and sampling, detects model capabilities, and shows per-turn latency and decode speed.'
+  zh: 'DSH 的 Qwen 模式：管理本机 GenieX 与阿里云百炼 QwenCloud 提供商，归一化思考与采样参数，识别模型能力，并显示每轮首字延迟与解码速度。'
