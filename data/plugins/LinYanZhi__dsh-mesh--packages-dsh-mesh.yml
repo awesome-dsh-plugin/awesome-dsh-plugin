@@ -2,5 +2,5 @@ url: https://github.com/LinYanZhi/dsh-mesh/tree/main/packages/dsh-mesh
 name: LinYanZhi/dsh-mesh#dsh-mesh
 category: remote
 description:
-  en: 'Multi-device DSH network: sidebar topology, peer health, delegation, file transfer, and node management over TLS, LAN, and public tunnels.'
-  zh: '多设备 DSH 网络：侧栏拓扑、节点健康、委托、文件传输与节点管理，支持 TLS、局域网与公网隧道。'
+  en: 'Multi-device DSH network: sidebar topology, peer health, delegation, file transfer and node management over TLS, LAN and public tunnels. DSH spawns its mesh server (127.0.0.1:8124) detached at startup and restarts it if it exits, and the server always answers LAN discovery on UDP 0.0.0.0:8129. Once a peer is paired, the default ACL lets it read, search and write files under ~/Code, read session history and logs, and delegate tasks to your DSH sessions; shell_run, channel messages, remote desktop and repair stay off until you allow them. If SakuraFrp is installed it reads that launcher''s account token (or SAKURA_TOKEN) to query api.natfrp.com tunnels. Its /api/dsh-mesh routes are guarded only by a loopback peer-address check.'
+  zh: '多设备 DSH 网络：侧栏拓扑、节点健康、委托、文件传输与节点管理，支持 TLS、局域网与公网隧道。DSH 启动时会把它的 mesh 服务（127.0.0.1:8124）以分离进程拉起、退出后重启，且服务始终在 UDP 0.0.0.0:8129 应答局域网发现。peer 配对后，默认 ACL 允许它读取、检索、写入 ~/Code 下的文件，读取会话历史和日志，并把任务委托给你本机的 DSH 会话；shell_run、频道消息、远程桌面和 repair 在你放开之前是关闭的。本机装了 SakuraFrp 时，会读取其 Launcher 的账号 token（或 SAKURA_TOKEN）去查询 api.natfrp.com 的隧道。它的 /api/dsh-mesh 路由只靠对端地址是否回环来放行。'
