@@ -1,0 +1,8 @@
+url: https://github.com/KunKun24/dsh-until-done
+name: KunKun24/dsh-until-done
+category: agi
+description:
+  en: Keep working when a turn ends without finishing, and only stop once the reply ends with a completion keyword.
+  zh: 回合正常结束但任务没做完时自动续跑，回复以「完成」收尾才算真正完成。
+icon: https://raw.githubusercontent.com/KunKun24/dsh-until-done/main/assets/icon-180.png
+tarball: https://github.com/KunKun24/dsh-until-done/releases/download/v1.2.0/dsh-until-done-1.2.0.tgz
