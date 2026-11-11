@@ -1,0 +1,6 @@
+url: https://github.com/lpeixin/dsh-qualityforge
+name: lpeixin/dsh-qualityforge
+category: dev
+description:
+  en: 'QualityForge is an enterprise-grade DeepSeek Harness QA plugin that automates systematic end-to-end testing and delivers P0–P3 severity-based, actionable reports and quality gates to help developers identify issues and prioritize fixes.'
+  zh: 'QualityForge 是一个面向企业级项目的 DeepSeek Harness QA 插件，自动执行系统性端到端测试，并通过 P0–P3 严重度分级、可勾选的测试报告与质量门禁，帮助开发者快速识别问题并确定修复优先级。'
