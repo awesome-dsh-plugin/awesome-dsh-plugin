@@ -1,0 +1,6 @@
+url: https://github.com/wjl906/dsh-slowmist-security-guard
+name: wjl906/dsh-slowmist-security-guard
+category: security
+description:
+  en: 'Security guard for DeepSeek Harness (Cordis): reviews every tool call in pre-execute against SlowMist agent-security rules, denying or flagging risky commands, MCP servers and skill loads, external URLs and repositories, untrusted documents, and EVM or Solana addresses; scans tool results for prompt injection after execution and ships a slowmist_scan audit tool plus an injected security policy prompt. Rules follow the open-source SlowMist Agent Security Skill (MIT).'
+  zh: 'DeepSeek Harness (Cordis) 安全防护插件：在 pre-execute 阶段按慢雾 Agent Security 规则审查每一次工具调用，对高危命令、MCP 服务器与技能加载、外部 URL 与代码仓库、不可信文档、EVM 或 Solana 链上地址给出拒绝或警告；执行后对工具结果做提示注入扫描，内置 slowmist_scan 审计工具并注入安全策略提示词。规则遵循慢雾开源的 Agent Security Skill（MIT）。'
