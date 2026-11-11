@@ -1,0 +1,7 @@
+url: https://github.com/adithyanraj03/dsh-skills-pack
+name: adithyanraj03/dsh-skills-pack
+category: skill
+description:
+  en: 'Registers 36 bundled agent skills (research writing, LaTeX, experiments, design review, office documents, animation, Windows shell and dsh plugin conventions) as one host-only skill provider with no UI, no network calls and no telemetry of its own; skill scripts run with the user''s permissions only when invoked, local skills of the same name take priority, and uninstall removes all 36.'
+tarball: https://github.com/adithyanraj03/dsh-skills-pack/releases/latest/download/plugin.tgz
+icon: https://raw.githubusercontent.com/adithyanraj03/dsh-skills-pack/main/assets/icon.png
