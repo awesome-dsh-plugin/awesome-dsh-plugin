@@ -1,0 +1,8 @@
+url: https://github.com/DDL095/dsh-depth-tool-gate
+name: DDL095/dsh-depth-tool-gate
+category: tools
+description:
+  en: 'Tool-surface governance for DeepSeek Harness: every subagent is cut down to the tools its role actually needs at creation time, by policy rather than by hope. Six scope-separated deny lists (baseline, per-role extra denies, per-role exemptions, main-session denies and their per-preset variants) are composed per agent and applied through the host''s own tools.restrict() API, so the reduction happens where a subagent cannot talk its way out of it. Newly appearing tool names are held in a pending gate until you rule on them, a per-role brief replaces the bulk global instruction set, dead prompt sections about absent tools are masked out, and dispatch_composed assembles a minimal surface on demand from capability tags. Every decision lands in an append-only ledger, and the explain_gate tool reads the current surface back with the reason for each cut. A seven-tab settings panel edits the policy and replays the ledger. Requires DSH >= 0.2.2-rc.1 and Node >= 24.9.0.'
+  zh: 'DeepSeek Harness 的工具面治理：每个子代理在创建那一刻就被裁到岗位真正需要的工具，靠策略而非靠自觉。六张按作用域分开的名单（地板名单、按岗位的额外禁用与豁免、主会话的禁用及其按 preset 变体）逐 agent 合成，用宿主自己的 tools.restrict() 施加 —— 裁剪发生在子代绕不过去的地方。新出现的工具名进入待裁决闸门，等你裁决；按岗位的短引导取代全量全局引导；关于缺失工具的死提示段被遮蔽；dispatch_composed 可按能力标签临时组装最小面。每个决策都写进 append-only 台账，explain_gate 工具能读回当前工具面与每一处裁剪的原因。七 Tab 设置面板可编辑策略并回放台账。需 DSH >= 0.2.2-rc.1、Node >= 24.9.0。'
+icon: https://raw.githubusercontent.com/DDL095/dsh-depth-tool-gate/main/docs/assets/icon-180.png
+tarball: https://github.com/DDL095/dsh-depth-tool-gate/releases/download/v0.13.2/dsh-depth-tool-gate-0.13.2.tgz
