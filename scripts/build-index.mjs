@@ -8,8 +8,8 @@
  *
  * Reads the same inputs as build-site.mjs (data/plugins, data/npm-map.json and
  * the locale files) and never touches the network: publish times come from
- * probe-npm.mjs, which records them from the packument it already fetches.
- * Entries it cannot express — no npm package, no version, or no publish time
+ * probe-npm.mjs or reviewed Git release records in data/git-releases.json.
+ * Entries it cannot express — no npm/Git record, no version, or no publish time
  * yet — are counted and left out rather than guessed at.
  *
  * Usage: node scripts/build-index.mjs [--check]
@@ -25,15 +25,16 @@ const NPM_MAP_FILE = 'data/npm-map.json'
 const OUT_FILE = 'docs/index.json'
 const checkOnly = process.argv.includes('--check')
 
+const gitMap = fs.existsSync('data/git-releases.json') ? JSON.parse(fs.readFileSync('data/git-releases.json', 'utf8')) : {}
 const npmMap = fs.existsSync(NPM_MAP_FILE) ? JSON.parse(fs.readFileSync(NPM_MAP_FILE, 'utf8')) : {}
 const entries = readEntries()
-const { index, skipped, refused } = buildMarketIndex({ entries, npmMap, locales: LOCALES })
+const { index, skipped, refused } = buildMarketIndex({ entries, npmMap, gitMap, locales: LOCALES })
 
 const listable = entries.length - skipped.noNpm - skipped.noVersion - skipped.noPublishTime - skipped.refused
 console.log(`index: ${index.plugins.length} of ${entries.length} entries listed`)
-console.log(`  no npm package: ${skipped.noNpm}`)
-console.log(`  npm but no version recorded: ${skipped.noVersion}`)
-console.log(`  npm version without a publish time yet (next probe fills it): ${skipped.noPublishTime}`)
+console.log(`  no npm package or reviewed Git release: ${skipped.noNpm}`)
+console.log(`  source but no version recorded: ${skipped.noVersion}`)
+console.log(`  version without a publish time: ${skipped.noPublishTime}`)
 if (skipped.refused > 0) {
   console.log(`  refused by the format: ${skipped.refused}`)
   for (const line of refused.slice(0, 10)) console.log(`    ${line}`)
