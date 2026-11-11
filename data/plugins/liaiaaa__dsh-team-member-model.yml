@@ -1,0 +1,6 @@
+url: https://github.com/liaiaaa/dsh-team-member-model
+name: liaiaaa/dsh-team-member-model
+category: model
+description:
+  en: Per-teammate model selection for Agent Teams - a chip in the teammate's own composer pins one model for that member, or the member follows the lead conversation's current model on every step; pins survive restarts.
+  zh: 为 Agent Teams 的子队友单独指定模型——在成员会话输入框的胶囊里固定一个模型，或让成员每一步跟随主对话当前使用的模型；指定重启后仍生效。
