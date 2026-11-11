@@ -1,0 +1,8 @@
+url: https://github.com/DDL095/dsh-depth-tool-gate
+name: DDL095/dsh-depth-tool-gate
+category: tools
+description:
+  en: 'Tool-surface governance for DeepSeek Harness: six scope-separated deny lists cut each agent''s tool visibility through the host tools.restrict() API, unseen tool names wait in a pending gate, and dispatch_composed assembles a minimal surface from capability tags — a tasks array runs subagents in parallel, and a continued subagent keeps its original surface. Decisions go to an append-only ledger.'
+  zh: 'DeepSeek Harness 的工具面治理：六张作用域分开的名单经宿主 tools.restrict() API 逐 agent 裁剪工具可见性，新见工具名进待裁决闸门，dispatch_composed 按能力标签组装最小面——传 tasks 数组可并行跑子代理，续派的子代理保持原有工具面。决策写入 append-only 台账。'
+icon: https://raw.githubusercontent.com/DDL095/dsh-depth-tool-gate/main/docs/assets/icon-180.png
+tarball: https://github.com/DDL095/dsh-depth-tool-gate/releases/download/v0.13.2/dsh-depth-tool-gate-0.13.2.tgz
