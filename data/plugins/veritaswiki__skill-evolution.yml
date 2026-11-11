@@ -1,0 +1,8 @@
+url: https://github.com/veritaswiki/skill-evolution
+name: veritaswiki/skill-evolution
+category: skill
+description:
+  en: 'Post-turn skill review and self-evolution: distills session trajectories into staged SKILL.md drafts with a Chinese briefing, mandatory user directive fusion, a four-stage gatekeeper, a SHA-256 content-addressed ledger with single-entry rollback, and LLM umbrella consolidation across Web, mobile PWA, and Remote.'
+  zh: '回合后技能复盘与自进化：自动将有效会话蒸馏为 SKILL.md 草稿，提供中文审阅简报与强制批示融合、四道安全校验闸门、SHA-256 内容寻址账本与单条回滚、LLM 建伞合并，以及桌面视图、手机端 PWA 与 Remote 审阅卡片。'
+icon: https://raw.githubusercontent.com/veritaswiki/skill-evolution/main/assets/icon-180.png
+tarball: https://github.com/veritaswiki/skill-evolution/releases/latest/download/skill-evolution.tgz
