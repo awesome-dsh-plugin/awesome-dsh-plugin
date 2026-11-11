@@ -1,0 +1,6 @@
+url: https://github.com/wangxiaocuo/dsh-session-trash
+name: wangxiaocuo/dsh-session-trash
+category: session
+description:
+  en: 'Session trash for DeepSeek Harness: move cold sessions out of the sidebar into a recoverable trash, restore them within the retention window (30 days by default), or delete their logs permanently. A trashed subagent tree moves and restores as a whole, a shared DSH toast offers undo, and the settings page supports search, sorting, multi-select batch restore and emptying the whole trash.'
+  zh: 'DeepSeek Harness 的会话回收站：把冷会话从侧边栏移入可恢复的回收站，保留期（默认 30 天）内可恢复，也可以永久删除日志。含隐藏 subagent 子会话的条目按整树移入、整树恢复；移入后 DSH 共享 Toast 提供撤销；设置页支持搜索、排序、勾选批量恢复与清空回收站。'
