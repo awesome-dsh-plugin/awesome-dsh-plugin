@@ -1,0 +1,7 @@
+url: https://github.com/DSM-DSM/dsh-ai-company
+name: DSM-DSM/dsh-ai-company
+category: workflow
+description:
+  en: Multi-workspace agent federation with persistent ticket trees, parallel worker sessions, structured evidence reports, independent acceptance checks, retry/stop and restart recovery.
+  zh: 多工作区 Agent 联邦：持久化 Ticket 树、并行 Worker 会话、结构化证据报告、独立验收、重试停止与重启恢复。
+icon: https://raw.githubusercontent.com/DSM-DSM/dsh-ai-company/main/assets/icon-180.png
