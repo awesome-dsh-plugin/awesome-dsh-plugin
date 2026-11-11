@@ -1,6 +1,0 @@
-url: https://github.com/LinYanZhi/dsh-mesh/tree/main/packages/dsh-mesh-autostart
-name: LinYanZhi/dsh-mesh#dsh-mesh-autostart
-category: remote
-description:
-  en: 'Keeps a dsh-mesh server alive across DSH engine restarts by supervising it from inside the host process; resolves the installed dsh-mesh-node package and fails loud when it is missing.'
-  zh: '在 DSH 宿主进程内托管 dsh-mesh server，使其在引擎重启后自动恢复；解析已安装的 dsh-mesh-node 包，缺失时明确报错而不是静默失效。'
