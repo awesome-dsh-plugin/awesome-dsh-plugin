@@ -1,0 +1,6 @@
+url: https://github.com/2930136787xy-tech/dsh-memory-nebula-bridge
+name: 2930136787xy-tech/dsh-memory-nebula-bridge
+category: memory
+description:
+  en: 'Bridges a memory-nebula store into DSH: a panel inside the Harness UI to search, edit, pin and forget memories, plus three agent tools to check, search and revise them.'
+  zh: '把记忆星云记忆库接进 DSH：页面内面板可搜索、编辑、置顶、忘掉记忆，另注册三个工具让智能体查看、检索和修订记忆。'
