@@ -1,0 +1,6 @@
+url: https://github.com/wisdom-km/dsh-territory-cursor
+name: wisdom-km/dsh-territory-cursor
+category: tools
+description:
+  en: "Gives the desktop agent one whole screen, or one half of a single screen. It lists windows whose center is inside, snapshots that rectangle, and left-clicks or replaces a control value. It does not move the system mouse."
+  zh: "给桌面代理一整块屏幕，或单屏的半边。列出中心落在里面的窗口，截下这块矩形，并做左键或整段赋值。不移动系统鼠标。"
