@@ -1,0 +1,7 @@
+url: https://github.com/ictrektech/V-yovoice/tree/main/integrations/v-harness/tool-audio-transcription
+name: ictrektech/V-yovoice#tool-audio-transcription
+category: voice
+description:
+  en: Transcribe session audio through V-yovoice and display a waveform player and transcript.
+  zh: 使用 V-yovoice 转写会话音频，展示波形播放器和转写原文。
+tarball: https://github.com/ictrektech/V-yovoice/releases/download/harness-plugin-latest/audio-transcription.tgz
