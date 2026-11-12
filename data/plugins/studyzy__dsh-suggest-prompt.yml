@@ -1,0 +1,6 @@
+url: https://github.com/studyzy/dsh-suggest-prompt
+name: studyzy/dsh-suggest-prompt
+category: ui
+description:
+  en: After each completed agent turn, a bounded auxiliary LLM call writes one suggested next prompt into the session log; the web composer renders it as ghost placeholder text, adopted via Tab.
+  zh: 每次完成的 agent 回合后，一次有界的辅助 LLM 调用把一条建议的下一句 prompt 写入会话日志；Web 输入框将其渲染为幽灵占位文字，按 Tab 采纳。

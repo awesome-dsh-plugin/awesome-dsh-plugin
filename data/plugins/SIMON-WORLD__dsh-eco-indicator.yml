@@ -1,0 +1,6 @@
+url: https://github.com/SIMON-WORLD/dsh-eco-indicator
+name: SIMON-WORLD/dsh-eco-indicator
+category: tools
+description:
+  en: 'Economic indicator lookup via World Bank open data (GDP, inflation, trade, population), no API key required.'
+  zh: '世界银行开放数据经济指标查询：GDP、通胀、贸易、人口等，无需 API 密钥。'

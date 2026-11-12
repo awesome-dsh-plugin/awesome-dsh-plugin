@@ -1,0 +1,6 @@
+url: https://github.com/yfwu2020/dsh-reply-visual
+name: yfwu2020/dsh-reply-visual
+category: docs
+description:
+  en: 'Adds a diagram button under every finished reply in the DSH Web UI: the configured model writes a single-file HTML page with inline SVG and the right sidebar renders it in a sandboxed iframe, with diagram, source and original-text views, a per-session replay history that is served from a disk cache instead of calling the model again, redraw, and save to a .html file.'
+  zh: '在 DSH Web 界面每条定稿回复下加一个「图解」按钮：模型产出单文件 HTML（内联 SVG），右侧栏以沙箱 iframe 渲染；带图解／源码／原文三个视图、命中磁盘缓存即回放（不再调用模型）的会话内历史列表、重画与另存 .html。'

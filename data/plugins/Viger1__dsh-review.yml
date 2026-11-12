@@ -1,0 +1,6 @@
+url: https://github.com/Viger1/dsh-review
+name: Viger1/dsh-review
+category: git
+description:
+  en: Adversarial code review — parallel finders inspect a diff through separate lenses (correctness, lifecycle, contract, security), then each finding goes to independent verifiers tasked with refuting it, and one refutation drops it.
+  zh: 对抗式代码审查：多个 finder 并行地从不同视角（正确性、生命周期、契约、安全）审查改动，随后每条发现都交给独立验证者去推翻它，只要有一票推翻就丢弃。

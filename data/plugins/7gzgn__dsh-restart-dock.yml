@@ -1,0 +1,6 @@
+url: "https://github.com/7gzgn/dsh-restart-dock"
+name: "dsh-restart-dock"
+category: dev
+description:
+  en: "A small dock in the DSH Web UI: restart the host or reload the page in one click. Restart asks first (now / 30s / 60s / 2min / cancel); the dock drags to any edge only after a 320ms hold, and stays anchored when the window resizes. Refresh refuses to run unless the plugin bundle is verifiably loadable (timestamp baseline + real bundle fetch + syntax compile), so a reload can never brick the app. Restart is Windows-only (PowerShell 5.1); the UI and page refresh work on all platforms."
+  zh: DSH 界面上一小框：一键重启宿主、一键刷新页面。重启会先问「立即 / 30 秒 / 60 秒 / 2 分钟 / 取消」，倒计时可撤回；小框需长按 320ms 才能拖动（避免手一抖就粘住），拖到边缘自动吸附，窗口缩放时跟着走。刷新前会真正确认插件包能加载（文件时间戳 + 取回 bundle + 语法编译三重检查），任何一项拿不到就不刷——宁可多点一次，也不把应用刷成起不来的样子。重启仅 Windows（PowerShell 5.1）；界面与刷新功能全平台可用。

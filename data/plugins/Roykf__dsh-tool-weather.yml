@@ -1,0 +1,6 @@
+url: https://github.com/Roykf/dsh-tool-weather
+name: Roykf/dsh-tool-weather
+category: tools
+description:
+  en: Model-facing weather tool that queries current conditions and 7-day forecasts from public Open-Meteo APIs, with no API key required.
+  zh: 面向模型的天气工具，基于公开 Open-Meteo API 查询当前天气与 7 天预报，无需 API Key。

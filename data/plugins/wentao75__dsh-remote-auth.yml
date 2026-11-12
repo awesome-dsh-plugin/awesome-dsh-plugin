@@ -1,0 +1,6 @@
+url: https://github.com/wentao75/dsh-remote-auth
+name: wentao75/dsh-remote-auth
+category: remote
+description:
+  en: DSH remote-access authorization page that shows the current process browser-session URL as a clickable link or QR code, behind an optional authority/subnet allow-list and PIN.
+  zh: DSH 远程授权页：以可点击链接或二维码呈现当前进程的浏览器会话 URL，可选主机/网段白名单与 PIN 门禁。

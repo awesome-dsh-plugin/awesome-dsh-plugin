@@ -1,0 +1,6 @@
+url: https://github.com/AKS1st/dock-git
+name: AKS1st/dock-git
+category: ui
+description:
+  en: 'Git history visualization for the dock workbench: swimlane commit graph, branch and tag management, stage/commit/push and remote operations.'
+  zh: dock 系列 Git 历史可视化插件：泳道式提交图、分支/标签管理、暂存/提交/推送与远端操作。

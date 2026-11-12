@@ -1,0 +1,6 @@
+url: https://github.com/chintoleung/dsh-ping
+name: chintoleung/dsh-ping
+category: notify
+description:
+  en: 'Telegram notifications for DeepSeek Harness questions, approval requests, and completed turns. Notification-only: one runtime file, zero runtime dependencies, no custom question cards.'
+  zh: 为 DeepSeek Harness 的提问、审批请求与回合完成发送 Telegram 通知。仅通知不改交互：单运行时文件、零运行时依赖、不自建问题卡片。

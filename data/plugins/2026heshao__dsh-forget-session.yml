@@ -1,0 +1,6 @@
+url: https://github.com/2026heshao/dsh-forget-session
+name: 2026heshao/dsh-forget-session
+category: session
+description:
+  en: 'Adds a Forget action to every session row menu, confirmed by a second click in the menu, that removes the session from the sidebar and from disk: running work is stopped, workspace, archive and pin records are detached through official channels, the log directory and projection-cache entries are deleted, and a revive guard re-deletes anything a late write or a lingering handle recreates; memories, attachments and other sessions are left alone.'
+  zh: '在会话行菜单加入「遗忘会话」（菜单内二次点击确认），把会话从侧栏与磁盘彻底移除：先停掉正在运行的工作，经官方通道解除工作区、归档与置顶记录，删除日志目录与投影缓存条目，并由复活守卫在一个窗口内补删迟到写入或句柄残留重建的文件；灵枢记忆、附件与其他会话不受影响。'

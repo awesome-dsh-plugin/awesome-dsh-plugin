@@ -1,0 +1,6 @@
+url: https://github.com/Witherwithwinter/DSH-Codinput
+name: Witherwithwinter/DSH-Codinput
+category: ui
+description:
+  en: 'Replaces the chat composer with an editor-style input panel on CodeMirror 6: line numbers, edit + markdown-preview split, a floating window mode and a full-height sidebar tab — one input surface at a time. Drafts ride the official input machine; the official voice-input button is rendered when the host provides one, and the stats row and context meter read the same data as the official dock.'
+  zh: '把聊天输入框换成 CodeMirror 6 的编辑器式输入面板：行号、编辑 + Markdown 预览分屏、悬浮窗与全高侧栏标签，同一时刻只有一个输入入口。草稿走官方输入机；宿主有语音输入按钮时原样渲染官方语音组件，数据行与上下文小圈与官方 dock 同源。'

@@ -1,0 +1,6 @@
+url: https://github.com/waning-sun/dsh-session-wake
+name: waning-sun/dsh-session-wake
+category: session
+description:
+  en: 'Wakes a DSH conversation on demand and hands work to it: pick one or more sessions to auto-wake when DSH starts, give each session its own provider, model and reasoning effort, and let the agent call another conversation with the session_task tool — it wakes that session, delivers the content, waits for it to finish and brings the answer back. Also ships list_sessions and wake_session tools plus a settings page titled 会话唤醒; no QQ or bridge dependency. The three tools are available to every agent and can reach any session in the profile; the auto-wake list is empty by default, a session''s boot prompt is delivered at every DSH start, and session_task waits up to 300 seconds by default.'
+  zh: '按需唤醒 DSH 里的对话并给它派活：可以挑一个或几个会话在 DSH 启动时自动唤醒，为每间会话单独指定 provider、模型与思考强度，还能用 session_task 工具叫醒另一个对话——把内容递过去、等它干完、再把答复原文带回来；另外提供 list_sessions、wake_session 两个工具和一个「会话唤醒」设置页，不依赖 QQ 或任何桥接。三个工具对所有 agent 开放，能触达 profile 里的任意会话；自动唤醒列表默认为空，每次 DSH 启动都会向对应会话投递其开机提示词；session_task 默认最多等待 300 秒。'

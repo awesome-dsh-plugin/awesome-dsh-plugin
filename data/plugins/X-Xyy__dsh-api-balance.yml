@@ -1,0 +1,6 @@
+url: https://github.com/X-Xyy/dsh-api-balance
+name: X-Xyy/dsh-api-balance
+category: usage
+description:
+  en: 'Live DeepSeek API balance and this session''s token usage in the conversation header, with a detail panel for the topped-up / granted balance split, request count, input, output and cache-hit tokens, and context pressure. The API key is read on every query and is never cached, written to disk or returned to the browser.'
+  zh: '在对话标题栏实时显示 DeepSeek API 余额与本会话 token 用量，详情面板展开余额拆分（充值／赠送）、请求次数、输入／输出／缓存命中 tokens 与上下文占用；API Key 每次查询现取，不缓存、不落盘、不返回浏览器。'

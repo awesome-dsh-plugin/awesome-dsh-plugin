@@ -1,0 +1,7 @@
+url: https://github.com/liunianlh/dsh-aihot
+name: liunianlh/dsh-aihot
+category: ui
+icon: https://raw.githubusercontent.com/liunianlh/dsh-aihot/main/assets/icon-96.png
+description:
+  en: 'AI news panel for the sidebar: 24-hour picks, recent stories, a top-ten trending board, the daily digest and keyword search, all read from the public AIHOT JSON API. Picks and All filter by six categories; feed cards show category, source, time, heat score, summary and, when AIHOT supplies one, its recommendation note. The Picks, All and Search feeds group stories by Beijing-time day and page ten at a time with cursor endless scroll plus a Load more fallback. Read-only and client-side only, with no API key, no build step and colors taken from the host theme tokens.'
+  zh: '侧边栏 AI 热点面板：24 小时精选、近期全部、热点 Top10 榜、每日日报与关键词搜索，数据全部取自 AIHOT 公开 JSON API。精选与全部支持六类筛选；信息流卡片显示分类、来源、时间、热度分、摘要，并在 AIHOT 提供时显示推荐理由。精选、全部与搜索三个信息流按北京时间按日分组，并以游标分页、每页 10 条滚动加载，同时提供「加载更多」兜底。面板只读、纯浏览器端取数，无需 API key、无构建步骤，配色跟随宿主主题 token。'

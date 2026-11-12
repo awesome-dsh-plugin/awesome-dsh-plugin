@@ -1,0 +1,7 @@
+url: https://github.com/lcestou/dsh-oh-my-claude
+name: lcestou/dsh-oh-my-claude
+category: model
+description:
+  en: "Runs your logged-in Claude Code CLI as a dsh model provider: live model list, session resume, approval relay, rewind, memory panel and remote SSH workspaces."
+  zh: "把已登录的 Claude Code CLI 作为 dsh 的模型提供方：实时模型列表、按会话恢复、审批中转、回退、记忆面板，以及远程 SSH 主机上的工作区。"
+icon: https://raw.githubusercontent.com/lcestou/dsh-oh-my-claude/main/docs/media/icon-180.png

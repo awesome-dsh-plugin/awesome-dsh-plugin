@@ -1,0 +1,6 @@
+url: https://github.com/anonamerjaxon-dev/dsh-preset-categorizer
+name: anonamerjaxon-dev/dsh-preset-categorizer
+category: tools
+description:
+  en: 'Reads the installed plugins, MCP servers and skills, groups them by capability, and reports which preset each belongs in; can register one preset per category on request.'
+  zh: '读取已安装的插件、MCP 服务器与技能，按能力分组，报告每项能力应属于哪个预设；可按需为每个类别注册一个预设。'

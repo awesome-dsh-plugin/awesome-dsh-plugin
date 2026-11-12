@@ -1,0 +1,6 @@
+url: https://github.com/Vergil-long/dsh-email-notify
+name: Vergil-long/dsh-email-notify
+category: notify
+description:
+  en: 'Email notifications for DSH with an away-mode switch: mails you when a turn ends, a tool waits for approval, or the assistant asks a question. Title and body are editable templates.'
+  zh: 'DSH 邮件通知插件，带一个「离开模式」开关：任务完成、工具等你授权、助手向你提问时发邮件给你；标题与正文都是可自定义的模板。'

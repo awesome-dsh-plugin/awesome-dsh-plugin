@@ -1,0 +1,7 @@
+url: https://github.com/joeseesun/qiaomu-home-dsh
+name: joeseesun/qiaomu-home-dsh
+category: ui
+description:
+  en: "Add a Harness start page with session search, recent conversations, daily tasks, and a focus timer."
+  zh: "为 Harness 添加起始页，集中查看会话搜索、最近会话、今日待办和专注计时。"
+tarball: https://github.com/joeseesun/qiaomu-home-dsh/releases/download/v0.3.3/qiaomu-home-dsh-0.3.3.tgz

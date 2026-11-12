@@ -1,0 +1,6 @@
+url: https://github.com/LaoYueHanNi/dsh-token-usage
+name: LaoYueHanNi/dsh-token-usage
+category: usage
+description:
+  en: 'Detailed model usage and cost analysis, with per-session usage stats and usage queries for GLM, MiniMax, OpenCode Go, DeepSeek and more.'
+  zh: 详细的模型用量、费用分析，支持会话级用量统计，支持GLM、MiniMax、OpenCode Go、DS等用量查询。

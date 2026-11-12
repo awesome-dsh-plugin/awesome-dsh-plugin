@@ -1,0 +1,6 @@
+url: https://github.com/Wenaixi/dsh-prompt-history
+name: Wenaixi/dsh-prompt-history
+category: ui
+description:
+  en: 'Claude Code-style prompt history, double-Esc picker, selection quote/copy & right-click paste.'
+  zh: 'Claude Code 风格上下键历史回溯、双击 Esc 历史搜索、选中文本引用/自动复制与鼠标右键直接粘贴。'

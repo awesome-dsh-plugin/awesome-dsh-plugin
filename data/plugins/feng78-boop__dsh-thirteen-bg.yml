@@ -1,0 +1,10 @@
+# Submission entry for the awesome-dsh-plugin list.
+# File goes to: data/plugins/<owner>__<repo>.yml  (owner = your GitHub username)
+# After adding it, run `node scripts/generate-readme.mjs` in the awesome-dsh-plugin
+# repo and commit the regenerated README.md + README.zh.md together with this file.
+url: https://github.com/feng78-boop/dsh-thirteen-bg
+name: feng78-boop/dsh-thirteen-bg
+category: theme
+description:
+  en: 'Animated and video live wallpaper for the DeepSeek Harness Web GUI — GIF, animated WebP/APNG and static PNG/JPEG images, plus MP4/WebM video backgrounds, with auto format detection, a dim slider, and UI chrome tone matching.'
+  zh: 'DeepSeek Harness Web 界面动态壁纸插件：支持 GIF / 动图 WebP / APNG 与静态 PNG/JPG 图片，以及 MP4 / WebM 视频背景，格式自动识别，自带压暗与亮度调节，可让界面色调跟随背景。'

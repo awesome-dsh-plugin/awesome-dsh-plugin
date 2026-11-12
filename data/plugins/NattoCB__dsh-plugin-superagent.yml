@@ -1,0 +1,6 @@
+url: https://github.com/NattoCB/dsh-plugin-superagent
+name: NattoCB/dsh-plugin-superagent
+category: workflow
+description:
+  en: Project control plane with durable tickets, replaceable DSH sessions, a project matrix, and bidirectional UI navigation.
+  zh: 项目控制台，支持持久化任务、可替换的执行会话、项目卡片矩阵和 DSH 双向切换。

@@ -1,0 +1,6 @@
+url: https://github.com/tangzheng202202/dsh-sparkos
+name: tangzheng202202/dsh-sparkos
+category: workflow
+description:
+  en: 'Self-media workbench plugin: 8-tab dashboard (daily brief, narrative lines, topics, drafts, knowledge-card distill review, sources, publish, advice) with hard guards (48h window, event dedup, card/line existence, read-only advice) and a read-only intel module following the four red lines.'
+  zh: '自媒体工作台插件：8 tab 看板（今日简报/叙事主线/选题/草稿/知识卡蒸馏审核/信息源/发布表现/系统建议），五守卫硬执行，VAULT 数据与代码分离，intel 模块只读接入并遵守四条红线。'

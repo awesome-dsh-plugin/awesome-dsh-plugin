@@ -1,0 +1,6 @@
+url: https://github.com/hg1048596-pixel/dsh-ppt-canvas
+name: hg1048596-pixel/dsh-ppt-canvas
+category: ui
+description:
+  en: 'Element-level PowerPoint canvas that edits the opened .pptx in place: click, marquee-select or pick a whole slide, describe the change, and the AI writes byte-preserving OOXML patches with undo and redo.'
+  zh: '元素级 PPT 画布，就地改写已打开的 .pptx：点选、框选或整页选中后用自然语言描述改动，AI 以字节保真的 OOXML 补丁写入，支持撤销与重做。'

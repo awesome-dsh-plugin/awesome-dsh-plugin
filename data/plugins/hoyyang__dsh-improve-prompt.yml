@@ -1,0 +1,6 @@
+url: https://github.com/hoyyang/dsh-improve-prompt
+name: hoyyang/dsh-improve-prompt
+category: ui
+description:
+  en: 'One-click prompt improvement for the DSH composer: press the sparkle button to rewrite the draft into an agent-ready prompt, replaced in place and undoable, with a deterministic fidelity check that keeps every path, identifier, number, URL and backticked token verbatim, plus a length ceiling that blocks inflation.'
+  zh: 'DSH 输入框一键增强提示词：点 ✦ 把草稿改写成 Agent 可执行的提示词，直接替换并可一键撤回；保真闸机械校验硬事实（路径、标识符、数字与版本、URL、反引号代码）逐字存活，长度闸防止把一句话需求膨胀成规格书。'

@@ -1,0 +1,6 @@
+url: https://github.com/jorinyang/dsh-clawshell
+name: jorinyang/dsh-clawshell
+category: dev
+description:
+  en: 'Self-healing runtime layer: a resource control loop with strategy switching and repair escalation, error-storm and fiber-failure insight, cross-session knowledge carry-over, a self-healing dashboard and 7 tools.'
+  zh: 运行时自愈层：资源控制闭环（策略切换 + 修复升级链）、错误风暴与 fiber 失败洞察、跨会话知识传承，附自愈可视化面板与 7 个工具。

@@ -1,0 +1,8 @@
+url: https://github.com/ColdRainLab/dsh-workspace-plus
+name: ColdRainLab/dsh-workspace-plus
+category: ui
+tarball: https://github.com/ColdRainLab/dsh-workspace-plus/releases/download/v0.3.2/dsh-workspace-plus-0.3.2.tgz
+
+description:
+  en: 'Replaces the sidebar workspace folder picker with a name box (type a name, get a same-named folder and a new workspace), adds a Move to workspace action that clones a session into another workspace and archives the original, and optional per-workspace memory that opens a continuation session after compaction and adds a workspace_memory search tool.'
+  zh: '把侧栏的工作区文件夹选择器换成命名框（输入名称，自动建同名文件夹并新建工作区）；会话菜单新增「移动到工作区」（把会话克隆到目标工作区并归档原会话）；可按工作区开启的记忆：压缩后自动开续接会话，并提供 workspace_memory 检索工具。'

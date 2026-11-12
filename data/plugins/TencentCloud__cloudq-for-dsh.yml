@@ -1,0 +1,6 @@
+url: https://github.com/TencentCloud/cloudq-for-dsh
+name: TencentCloud/cloudq-for-dsh
+category: skill
+description:
+  en: 'Tencent CloudQ integration: AIOps chat mode with usage, inspiration, artifact and architecture panels.'
+  zh: '腾讯云智能顾问集成：CloudQ 对话模式，附用量、灵感、制品与架构图面板。'

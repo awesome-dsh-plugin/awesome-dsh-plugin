@@ -1,0 +1,7 @@
+url: https://github.com/xinming-chenniang/dsh-closeout
+name: xinming-chenniang/dsh-closeout
+category: session
+tarball: https://github.com/xinming-chenniang/dsh-closeout/releases/download/v0.7.0/dsh-closeout-0.7.0.tgz
+description:
+  en: 'Before closing a coding session or the DSH app itself, checks what would be lost — uncommitted work, unpushed commits, scratch files, missing handoff notes, pending restarts, broken profile bundles — and prints a three-level verdict; when a handoff is needed it writes the seven-section handoff file into the workspace ledger. Read-only by default.'
+  zh: '关会话或关 DSH 之前先查会丢什么：未提交改动、未推提交、临时文件、缺交接件、待重启标记、profile 里重启后装不上的包；给出三档结论，该交接时把七节交接件写进工作区台账。默认只读。'

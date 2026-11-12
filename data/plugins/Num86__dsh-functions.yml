@@ -1,0 +1,6 @@
+url: https://github.com/Num86/dsh-functions
+name: Num86/dsh-functions
+category: ui
+description:
+  en: 'Adds an extensible Functions menu to the DSH top bar, where plugins register one-click actions with staged confirmations and submenus. Since 0.4.0 it bundles a built-in "Restart DSH" action, so no separate restart plugin is needed.'
+  zh: '给 DSH 顶端加一个可扩展的「功能」栏：插件注册的一键动作都在这里，支持分级确认与二级菜单。0.4.0 起自带了「重启 DSH」功能，不再需要单独安装重启插件。'

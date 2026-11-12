@@ -1,0 +1,6 @@
+url: https://github.com/xing666173/dsh-vision-hub/tree/main/file-drop
+name: xing666173/dsh-vision-hub#file-drop
+category: tools
+description:
+  en: 'Drag-and-drop file upload for PDF, Word, Excel and images: dropped files are saved to a local directory and referenced by path, no base64 bloat in the chat.'
+  zh: '拖拽上传 PDF/Word/Excel/图片等文件:落盘为本地路径引用,对话里不塞 base64 大文本。'

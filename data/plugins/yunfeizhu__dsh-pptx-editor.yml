@@ -1,0 +1,6 @@
+url: https://github.com/yunfeizhu/dsh-pptx-editor
+name: yunfeizhu/dsh-pptx-editor
+category: docs
+description:
+  en: Preview and edit attached PowerPoint presentations in the DSH sidebar through conversation or manual controls, with shared undo/redo and PPTX download.
+  zh: 在 DSH 侧栏预览附件中的 PowerPoint 演示文稿，通过对话或手动操作编辑，共享撤销与重做历史，并下载编辑后的 PPTX。

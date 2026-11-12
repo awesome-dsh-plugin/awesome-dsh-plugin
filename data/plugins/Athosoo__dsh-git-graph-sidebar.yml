@@ -1,0 +1,8 @@
+url: https://github.com/Athosoo/dsh-git-graph-sidebar
+name: Athosoo/dsh-git-graph-sidebar
+category: git
+tarball: https://github.com/Athosoo/dsh-git-graph-sidebar/releases/latest/download/dsh-git-graph-sidebar.tgz
+icon: https://raw.githubusercontent.com/Athosoo/dsh-git-graph-sidebar/main/assets/icon-180.png
+description:
+  en: 'A Git graph plugin for DSH: repository tree and SVG lane history (curves, merge diamonds, ref badges, terminus notches, export) in a dsh-better-sidebar tab, plus conventions that reach the model - seven built-in frameworks (or your own templates, hidden built-ins), injected into every model step and checked against the last 20 commits. Shares the /git prefix with the upstream plugin, so pick one.'
+  zh: 'DSH 的 Git 图谱插件：better-sidebar 里看多仓库提交图（泳道、合并菱形、短槽、导出），七套内置规范（可自建、可隐藏）注入每个模型步骤并体检最近 20 条提交。与上游同占 /git 前缀，二选一。'

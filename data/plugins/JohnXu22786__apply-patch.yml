@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/apply-patch
+name: JohnXu22786/apply-patch
+category: tools
+description:
+  en: 'Applies structured unified diffs (git format) to the real filesystem: multi-file/hunk parsing, fuzzy hunk location with line-offset correction, all-or-nothing application with typed conflict reports, reverse-patch undo journal and dry-run - four patch_* dsh tools plus a CLI.'
+  zh: '将结构化 unified diff（git 格式）应用到真实文件系统：多文件/多 hunk 解析、带行号偏移修正的模糊定位、全有或全无的应用与类型化冲突报告、反向补丁撤销日记及 dry-run——4 个 patch_* dsh 工具外加一个 CLI。'

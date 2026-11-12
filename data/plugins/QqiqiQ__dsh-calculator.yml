@@ -1,0 +1,8 @@
+url: https://github.com/QqiqiQ/dsh-calculator
+name: QqiqiQ/dsh-calculator
+category: tools
+description:
+  en: Adds a calculate tool backed by a hand-written parser with no eval, batch evaluation and an exact-decimal mode for money math.
+  zh: 为 agent 提供 calculate 工具，内置零依赖表达式解析器（不用 eval），支持批量求值与金额精确小数模式。
+icon: https://raw.githubusercontent.com/QqiqiQ/dsh-calculator/main/icon.png
+tarball: https://github.com/QqiqiQ/dsh-calculator/releases/latest/download/dsh-calculator.tgz

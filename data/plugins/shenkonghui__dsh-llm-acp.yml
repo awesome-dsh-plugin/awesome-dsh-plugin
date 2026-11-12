@@ -1,0 +1,6 @@
+url: https://github.com/shenkonghui/dsh-llm-acp
+name: shenkonghui/dsh-llm-acp
+category: model
+description:
+  en: "LLM provider adapter that routes model calls through any ACP (Agent Client Protocol) server — Claude Code, Codex, Gemini CLI, Devin and more — with a registry browser, per-server settings UI, lazy authentication, and dynamic model discovery."
+  zh: "通过 ACP（Agent Client Protocol）将任意外部 agent 作为 LLM 提供方接入——支持 Claude Code、Codex、Gemini CLI、Devin 等，内置注册表浏览与服务管理界面，支持惰性认证、模型动态发现与热切换。"

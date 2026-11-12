@@ -1,0 +1,6 @@
+url: https://github.com/xiaoyi-xx/dsh-peak-status
+name: xiaoyi-xx/dsh-peak-status
+category: ui
+description:
+  en: Header chip for the DSH web GUI that shows whether the current Beijing time is inside DeepSeek's API peak window, with a live clock and countdown to the next transition.
+  zh: DSH Web GUI 会话头部高峰指示灯，实时显示当前北京时间是否处于 DeepSeek API 高峰时段，附实时时钟与下一转折倒计时。

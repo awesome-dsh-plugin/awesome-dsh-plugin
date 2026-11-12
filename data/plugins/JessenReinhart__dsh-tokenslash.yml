@@ -1,0 +1,6 @@
+url: https://github.com/JessenReinhart/dsh-tokenslash
+name: JessenReinhart/dsh-tokenslash
+category: usage
+description:
+  en: Intelligent token optimization via Jev System One triage, dynamic tool pruning, and subagent routing.
+  zh: 基于 Jev System One 分流、动态工具裁剪与子代理路由的智能 Token 优化插件。

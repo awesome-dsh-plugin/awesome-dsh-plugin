@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-todo-float-ball
+name: loyalchiiina/dsh-todo-float-ball
+category: ui
+description:
+  en: 'Forces a todo list at the start of every turn and rewrites it in full each time, so finished items stay listed instead of being replaced. The floating ball shows the complete history, including plans that were lost when you cut in mid-turn, so what got done and what got dropped is always clear. Adapts DSH kernel 0.2.2-rc.1.'
+  zh: '强制每个 turn 先写 todo 清单并整表覆盖式重写，已完成项保留不删。悬浮球可看完整历史，含被插话打断后丢失的安排，干了什么、什么没干一目了然。适配 DSH 内核 0.2.2-rc.1。'

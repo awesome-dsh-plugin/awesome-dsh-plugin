@@ -1,0 +1,6 @@
+url: https://github.com/lof6yo/dsh-just-settings
+name: lof6yo/dsh-just-settings
+category: ui
+description:
+  en: Replaces the sidebar's More menu with a single button that opens Settings.
+  zh: 把侧栏左下角的「更多」菜单换成一个直接打开设置的按钮。

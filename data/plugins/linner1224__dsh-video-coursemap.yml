@@ -1,0 +1,7 @@
+url: https://github.com/linner1224/dsh-video-coursemap
+name: linner1224/dsh-video-coursemap
+category: memory
+description:
+  en: 'Windows-only plugin that watches the foreground window title, recognizes Bilibili video courses, classifies them by subject, fetches metadata/danmaku/comments, and generates Markdown + Mermaid knowledge maps and Word study manuals (Word output needs a local Python install).'
+  zh: '仅限 Windows：读取前台窗口标题，识别 B 站视频课程并按学科分类，抓取简介/弹幕/评论，生成 Markdown + Mermaid 知识地图与 Word 学习手册（Word 输出依赖本机 Python）。'
+tarball: https://github.com/linner1224/dsh-video-coursemap/releases/download/v2.0.0/dsh-video-coursemap-2.0.0.tgz

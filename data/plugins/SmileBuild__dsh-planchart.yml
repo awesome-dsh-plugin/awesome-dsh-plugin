@@ -1,0 +1,6 @@
+url: https://github.com/SmileBuild/dsh-planchart
+name: SmileBuild/dsh-planchart
+category: ui
+description:
+  en: 'Publishes a project plan the agent writes: ordered steps in a panel docked to the right of the frame, and the framework graph as an auto-laid-out diagram in its own centre tab, downloadable as SVG or PNG. Charts are rebuilt from the session log, so they survive restart and resume.'
+  zh: '把 agent 写出的项目规划显示出来：有序步骤在窗口右侧停靠的面板里，框架图在单独的中间标签页中自动排版，可下载为 SVG 或 PNG。图表由会话日志重建，重启与恢复后依然保留。'

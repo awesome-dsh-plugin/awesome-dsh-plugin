@@ -1,0 +1,6 @@
+url: https://github.com/zer0zio-stack/dsh-opencode-go-quota
+name: zer0zio-stack/dsh-opencode-go-quota
+category: usage
+description:
+  en: 'Bottom-right 余额 badge for the DSH Web UI: on expand it fetches the currently-selected provider''s OpenCode Go plan limits or DeepSeek prepaid balance, plus local token usage and pricing-based spend estimates.'
+  zh: DSH Web 右下角「余额」徽标：展开时读取当前所选提供方，显示 OpenCode Go 计划限额或 DeepSeek 预充值余额，并附本机 token 用量与按定价表估算的消费金额。

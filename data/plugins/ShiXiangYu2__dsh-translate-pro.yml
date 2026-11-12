@@ -1,0 +1,6 @@
+url: https://github.com/ShiXiangYu2/dsh-translate-pro
+name: ShiXiangYu2/dsh-translate-pro
+category: tools
+description:
+  en: 'Professional translation for DSH: 18 target languages, 4 styles (formal/casual/technical/literal), glossary-controlled terminology, and whole-file translation (README/docs/subtitles) with Markdown/code-block format preservation; powered by DeepSeek via SiliconFlow.'
+  zh: 专业翻译：18 种目标语言、4 种风格（正式/口语/技术/直译）、术语表控制译名、整文件翻译（README/文档/字幕）并保留 Markdown 与代码块格式；经 SiliconFlow 调用 DeepSeek。

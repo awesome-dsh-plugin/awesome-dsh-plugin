@@ -1,0 +1,6 @@
+url: https://github.com/sanlisanxun/dsh-plugin-nickname
+name: sanlisanxun/dsh-plugin-nickname
+category: ui
+description:
+  en: Custom Chinese nicknames for dsh plugins, displayed directly in the native plugin list.
+  zh: 给 dsh 插件列表里的插件自定义中文备注名，直接显示在原生设置页。

@@ -1,0 +1,6 @@
+url: https://github.com/Wiselfx/dsh-opencode-go-panel
+name: Wiselfx/dsh-opencode-go-panel
+category: usage
+description:
+  en: 'OpenCode Go subscription, model allowance, usage meter, and per-million-token rate panel for the DeepSeek Harness sidebar.'
+  zh: 'DeepSeek Harness 侧栏中的 OpenCode Go 面板：订阅、模型额度、用量计量与按每百万 token 计的费率。'

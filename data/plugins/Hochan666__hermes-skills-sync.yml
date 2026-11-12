@@ -1,0 +1,8 @@
+url: https://github.com/Hochan666/hermes-skills-sync
+name: Hochan666/hermes-skills-sync
+category: skill
+icon: https://raw.githubusercontent.com/Hochan666/hermes-skills-sync/main/assets/icon-180.png
+tarball: https://github.com/Hochan666/hermes-skills-sync/releases/download/v1.3.0/hermes-skills-sync-1.3.0.tgz
+description:
+  en: 'Imports skills from a local Hermes Agent installation into DSH. It scans the Hermes home directories and each profile below them, lists every skill with its description, file count and size, and copies a selected skill into the DSH global skills root or into one project, keeping the original folder name. Only a frontmatter name that DSH would reject is rewritten, an existing skill of the same name is never overwritten without a choice, and several skills can be imported in one batch with a per-item report.'
+  zh: '把本机 Hermes Agent 安装里的技能导入 DSH：扫描 Hermes 家目录及其下的各个 profile，列出每个技能的描述、文件数与体积，并把选中的技能复制到 DSH 全局 skills 目录或指定项目，目标目录名保持原样。只有 DSH 不接受的 frontmatter name 才会被改写，遇到同名技能必须先做选择才会写入，多个技能可以批量导入并给出逐项结果。'

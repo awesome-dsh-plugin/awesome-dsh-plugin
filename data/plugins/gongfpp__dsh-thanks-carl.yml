@@ -1,0 +1,7 @@
+url: https://github.com/gongfpp/dsh-thanks-carl
+name: gongfpp/dsh-thanks-carl
+category: fun
+icon: https://raw.githubusercontent.com/gongfpp/dsh-thanks-carl/main/assets/icon-180.png
+description:
+  en: "Local Carl companion with 12 pre-generated AI sprite actions, pat reactions, a 25/45-minute focus timer, quick menu, edge wandering and local reminders; no runtime model calls or chat messages."
+  zh: "带 12 种预生成 AI 动作的刺猬卡尔桌宠，支持摸摸、25/45 分钟专注、快捷菜单、边缘闲逛和本地提醒；不发送聊天消息、不调用模型。"

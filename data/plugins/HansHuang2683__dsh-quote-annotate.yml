@@ -1,0 +1,6 @@
+url: https://github.com/HansHuang2683/dsh-quote-annotate
+name: HansHuang2683/dsh-quote-annotate
+category: ui
+description:
+  en: Select any passage in a DSH conversation to annotate it in place; the quoted text, the turn it came from and your comment are folded into the message on send, so the model can tell exactly what each remark refers to.
+  zh: 在对话里划选任意一段文字即可就地批注：原文高亮并带编号角标，发送时把原文、出处（谁说的、第几轮）和你的批注一起折进消息，模型能对上每一句指代。

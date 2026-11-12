@@ -1,0 +1,6 @@
+url: https://github.com/mike-lee0120/dsh-cost-dashboard
+name: mike-lee0120/dsh-cost-dashboard
+category: usage
+description:
+  en: 'Cost dashboard for DeepSeek Harness: aggregates model input/output/cache tokens across all local sessions, prices them with a builtin table (including DeepSeek peak/off-peak), and shows daily trends plus per-model and per-session tables.'
+  zh: '费用看板：汇总本机全部会话的模型输入/输出/缓存 token，按内置价格表计费（含 DeepSeek 峰谷），展示每日趋势与按模型/会话明细。'

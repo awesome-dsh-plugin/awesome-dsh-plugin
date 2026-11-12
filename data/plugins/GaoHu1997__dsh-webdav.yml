@@ -1,0 +1,7 @@
+url: https://github.com/GaoHu1997/dsh-webdav
+name: GaoHu1997/dsh-webdav
+category: model
+tarball: https://github.com/GaoHu1997/dsh-webdav/releases/download/v1.2.9/dsh-webdav-sync-1.2.9.tgz
+description:
+  en: "Syncs DSH model providers and models across computers through any WebDAV server: the backup is sealed with a passphrase before it leaves this machine, so a new machine opens with the same model list."
+  zh: "通过任意 WebDAV 服务在多台电脑之间同步 DSH 的模型供应商与模型：备份离开本机之前先用口令封好，新机器打开就是同一份模型清单。"

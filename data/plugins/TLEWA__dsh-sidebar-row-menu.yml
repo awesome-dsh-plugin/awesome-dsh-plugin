@@ -1,0 +1,8 @@
+url: https://github.com/TLEWA/dsh-sidebar-row-menu
+name: TLEWA/dsh-sidebar-row-menu
+category: ui
+description:
+  en: 'Right-click menus for DSH sidebar rows: on DSH 0.2.2+ both rows use the host menus — workspace rows follow the session grouping (new session, copy path and reveal, pinned open-with apps, an open-with submenu, bulk delete) and session rows extend the menu that opens at the pointer with pinned open-with apps, an open-with submenu and permanent deletion of archived sessions; entries stay in the right-click menu by default and can be opted one by one into the shared "…" menu. On 0.2.1 the workspace menu is drawn by the plugin. Adapted from miao-ge/dsh-sidebar-context-menu and 0imzero/dsh-workspace-menu; do not install it alongside either - all of them attach right-click menus to the same sidebar rows.'
+  zh: 'DSH 侧边栏行右键菜单：在 DSH 0.2.2 及以上，两类行用的都是宿主菜单——工作区行按会话菜单的分组排入新建会话、复制路径与在文件夹显示、置顶打开方式、打开方式子菜单与批量删除；会话行在指针处展开菜单，并追加置顶打开方式、打开方式子菜单以及已归档会话的永久删除。条目默认只出现在右键菜单，可在设置里逐项开启「同时放进「…」菜单」；0.2.1 上工作区菜单由插件自绘。 改编自 miao-ge/dsh-sidebar-context-menu 与 0imzero/dsh-workspace-menu，请勿与它们同时安装——三者都会给同一批侧边栏行挂右键菜单。'
+icon: https://raw.githubusercontent.com/TLEWA/dsh-sidebar-row-menu/main/assets/icon-180.png
+tarball: https://github.com/TLEWA/dsh-sidebar-row-menu/releases/latest/download/dsh-sidebar-row-menu.tgz

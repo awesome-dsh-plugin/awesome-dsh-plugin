@@ -1,0 +1,6 @@
+url: https://github.com/13071301808/dsh-composer-expand
+name: 13071301808/dsh-composer-expand
+category: ui
+description:
+  en: 'Composer expand/collapse toggle for the Web UI: a ⬆/⬇ button in the composer tool row grows the input to a tall 70vh writing view for long drafts.'
+  zh: Web UI 输入框展开/收起：composer 工具行新增 ⬆/⬇ 按钮，一键把输入框扩大到 70vh 高度，方便写长 prompt。

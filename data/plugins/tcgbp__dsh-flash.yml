@@ -1,0 +1,7 @@
+url: https://github.com/tcgbp/dsh-flash
+name: tcgbp/dsh-flash
+category: ui
+description:
+  en: 'The Quick Control panel core for DSH Web: a standalone floating shortcut panel whose switches other plugins register through the quickControl service, with the skin system and zh/en i18n. The dock-base Workbench integration ships separately as the dock-flash adapter.'
+  zh: 'DSH Web 快捷控制面板核心：可独立浮动的快捷面板，开关项由其它插件通过 quickControl 服务注册，内置皮肤系统与中英文 i18n；dock-base 工作台集成由 dock-flash 适配器单独提供。'
+tarball: https://github.com/tcgbp/dsh-flash/releases/latest/download/dsh-flash.tgz

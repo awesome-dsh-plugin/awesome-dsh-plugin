@@ -1,0 +1,6 @@
+url: https://github.com/llafztq/dsh-video-tool
+name: llafztq/dsh-video-tool
+category: tools
+description:
+  en: 'Video editing toolset for DSH: probe, trim, concat, audio handling, subtitle burn-in, transform, transcode and frame grabbing, powered by ffmpeg downloaded on first use.'
+  zh: 'DSH 视频剪辑工具集：探测、裁剪、拼接、音轨处理、字幕烧录、变速、转码与抽帧，引擎为首次使用时自动下载的 ffmpeg。'

@@ -1,0 +1,6 @@
+url: https://github.com/zzhzz/dsh-ask-peer
+name: zzhzz/dsh-ask-peer
+category: workflow
+description:
+  en: 'Peer-to-peer colleague-agent consultation for DSH: ask one or several configured peers, queue asynchronous questions, discover peers through signed friend cards, and review inbound requests in the Web UI.'
+  zh: '面向 DSH 的点对点同事 Agent 咨询：可向单个或多个已配置 Peer 提问、异步排队问题、通过签名 Friend Card 推荐发现 Peer，并在 Web UI 审批入站请求。'

@@ -1,0 +1,6 @@
+url: https://github.com/OtterMind/sqlx/tree/main/integrations/dsh
+name: OtterMind/sqlx#sqlx-dsh
+category: tools
+description:
+  en: 'SQLX database tools: list saved datasources, show or test a connection, execute SQL and open a local result page, with the sqlx CLI installed on first use.'
+  zh: 'OtterMind SQLX 数据库工具：列出已保存的数据源、查看或测试连接、执行 SQL、打开本地结果页，缺少 sqlx CLI 时首次调用自动安装。'

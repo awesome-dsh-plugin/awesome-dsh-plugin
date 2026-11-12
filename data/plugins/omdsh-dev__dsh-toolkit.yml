@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-dev/dsh-toolkit
+name: omdsh-dev/dsh-toolkit
+category: tools
+description:
+  en: 'Zero-dependency toolkit: time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema — ten deterministic tools in one install.'
+  zh: 零依赖工具包：time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema 十件套一键安装。

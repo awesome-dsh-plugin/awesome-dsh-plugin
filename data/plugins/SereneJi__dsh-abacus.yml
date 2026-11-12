@@ -1,0 +1,6 @@
+url: https://github.com/SereneJi/dsh-abacus
+name: SereneJi/dsh-abacus
+category: usage
+description:
+  en: Buckets every model call by local date, provider and model, then shows the totals in a sidebar card, a per-chat pill under the composer and a settings page, alongside each provider's account balance and subscription windows.
+  zh: 把每次模型调用按本地日期、供应商与模型记账，在侧栏卡片、输入框下方的单会话胶囊和设置页里展示用量合计，并同列展示各供应商的账户余额与套餐窗口。

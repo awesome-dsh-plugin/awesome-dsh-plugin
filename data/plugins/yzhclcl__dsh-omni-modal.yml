@@ -1,0 +1,6 @@
+url: https://github.com/yzhclcl/dsh-omni-modal
+name: yzhclcl/dsh-omni-modal
+category: vision
+description:
+  en: 'Adds an Omni-modal settings section to DeepSeek Harness that points the harness at any OpenAI-compatible image and video endpoint: switchable config profiles with separate endpoint, API key, model, path and size for each side, free-form extra request parameters, a connectivity test that does not spend generation quota, and three model-visible tools — generate_image, generate_video and check_video — with async video tasks that survive restarts.'
+  zh: '为 DeepSeek Harness 增加「全模态设置」分区：可把生图 / 生视频指向任意 OpenAI 兼容端点，多套配置档案可随时切换，图片与视频各自独立的接口地址、API Key、模型、路径与尺寸，支持自由填写额外请求参数、不消耗额度的连通性测试，并注册 generate_image / generate_video / check_video 三个模型可见工具，异步视频任务可跨重启保留。'

@@ -1,0 +1,6 @@
+url: https://github.com/lovezi0/dsh-workspace-acl-allow
+name: lovezi0/dsh-workspace-acl-allow
+category: security
+description:
+  en: 'Windows workspace pre-authorization: adds an explicit full-control DACL ACE (including WRITE_OWNER, required by dsh >=0.1.7 sandbox startup) to user-declared workspace directories, removing the repeated full-access escalation prompt. Grants only on explicit intent — new workspace records or paths added in the plugin settings page; system directories are hard-blocked. Windows only.'
+  zh: 'Windows 工作区预授权：为用户显式声明的工作区目录补一条完全控制的 DACL 授权项（含 dsh ≥0.1.7 沙箱启动所需的 WRITE_OWNER），消除反复出现的完全访问升权弹框。仅在新增工作区记录或插件设置页手动添加路径时授权，系统目录硬拒绝。仅支持 Windows。'

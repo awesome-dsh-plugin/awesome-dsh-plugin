@@ -1,0 +1,6 @@
+url: https://github.com/NoneadChina/dsh-nonead-ursim
+name: NoneadChina/dsh-nonead-ursim
+category: tools
+description:
+  en: "A DeepSeek Harness (DSH) plugin that lets you control Universal Robots (UR) collaborative arms directly from natural language — by default an offline, kinematics-level simulated arm, with a real-robot channel that stays off until it is explicitly enabled. Needs a Python install with numpy and paramiko (pip install -r requirements.txt). Developed by Suzhou Nonead Robot Technology Co., Ltd. based on the same logic as the company's own nUR MCP Server. (Suzhou Nonead Robot Technology Co., Ltd.)"
+  zh: "让 DSH 用自然语言直接控制 Universal Robots（UR）协作机械臂的插件——默认是一台离线、运动学级的仿真机械臂，真机通道在显式开启前始终关闭。需本机 Python 并 pip install -r requirements.txt（numpy、paramiko）。由拓德科技（Nonead）基于自研 nUR MCP Server 的同源逻辑开发。（Suzhou Nonead Robot Technology Co., Ltd.）"

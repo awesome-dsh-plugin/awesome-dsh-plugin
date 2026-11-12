@@ -1,0 +1,6 @@
+url: https://github.com/user-Mrz/dsh-system-prompt-studio
+name: user-Mrz/dsh-system-prompt-studio
+category: ui
+description:
+  en: 'Per-conversation system prompt studio for DeepSeek Harness. Append text, shadow-replace one named first-party prompt section, or replace the whole system prompt; changes apply on the next model request without a restart. Overrides persist per session and are inherited by forked conversations along the parent chain, with a Pin action to freeze the inherited result locally. The panel lists the real assembled sections and guards unsaved edits.'
+  zh: '按对话管理 DeepSeek Harness 的系统提示词：追加文本、按名替换某一第一方段落，或整段替换，保存后下一次模型请求即生效，无需重启。覆盖按会话持久化，fork 出的对话会沿父链继承上游规则，并可用「在此固定」把继承结果固化成本地规则。面板会列出真实的装配段清单，并对未保存的修改做保护。'

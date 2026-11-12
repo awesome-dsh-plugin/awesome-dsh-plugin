@@ -1,0 +1,7 @@
+url: https://github.com/haozheou/dsh-discipline-guard
+name: haozheou/dsh-discipline-guard
+category: usage
+tarball: https://github.com/haozheou/dsh-discipline-guard/releases/download/v1.0.0/dsh-discipline-guard-1.0.0.tgz
+description:
+  zh: "DSH Agent 纪律卫士：在 harness 边界强制四道闸门（循环熔断、Token 成本熔断、路由切换警示、计划审批卡），模型无法用文字绕过；🛡 芯片一键解除，daily 档对有缓存路由零打扰，把无缓存失控从每回合数百万 token 封顶到约 50 万。"
+  en: "Agent discipline guard for DeepSeek Harness: four gates enforced at the harness boundary — loop circuit-breaker, token-cost fuse, route-switch warning, plan approval — where prompt-level reminders can't reach, so an agent can no longer burn a weekly quota in minutes; one-click 🛡 chip, hot-reloadable thresholds, and presets from invisible-but-armored to warn-only."

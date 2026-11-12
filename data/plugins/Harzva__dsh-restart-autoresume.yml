@@ -1,0 +1,7 @@
+url: https://github.com/Harzva/dsh-restart-autoresume
+name: Harzva/dsh-restart-autoresume
+category: session
+description:
+  en: 'Adds confirmed DSH restart actions and durable automatic continuation for eligible top-level sessions through an existing compatible dsh-restart Host provider.'
+  zh: '通过现有兼容的 dsh-restart Host 提供方，为符合条件的顶层会话增加确认式 DSH 重启与持久自动续作。'
+tarball: https://github.com/Harzva/dsh-restart-autoresume/releases/download/v0.1.0-alpha.1/harzva-dsh-restart-autoresume-0.1.0-alpha.1.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/melano514/dsh-plugin-paper-radar
+name: melano514/dsh-plugin-paper-radar
+category: skill
+icon: https://raw.githubusercontent.com/melano514/dsh-plugin-paper-radar/main/icon.png
+description:
+  en: "Searches medical and life-science literature by topic, keyword or DOI through Europe PMC, PubMed, OpenAlex and Crossref; decides open-access status through Unpaywall/OpenAlex/Europe PMC; downloads the PDF when an OA route exists (verified by magic bytes and page count) and otherwise writes a decision card with the exact failure reason plus four manual fallback channels: AbleSci assistance, Sci-Hub, SciDown and X-MOL. The bundled Python tool uses only the standard library."
+  zh: "按领域、检索词或 DOI 检索医学与生命科学文献（Europe PMC / PubMed / OpenAlex / Crossref），用 Unpaywall 等源判定开放获取状态，能拿到 OA 全文时自动下载并通过文件头与页数校验；拿不到时生成决策卡，写清自动下载失败的具体原因，并给出科研通互助、Sci-Hub、SciDown、X-MOL 四条人工通道的直达链接，人工取回后用一条命令登记入库。随包 Python 工具仅依赖标准库。"

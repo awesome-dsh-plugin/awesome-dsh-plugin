@@ -1,0 +1,7 @@
+url: https://github.com/Totoro-qaq/dsh-jot
+name: Totoro-qaq/dsh-jot
+category: ui
+description:
+  en: Adds a human-editable notes workspace with folders, full-text search, rich text, checklists, resizable tables, attachments, exports, and opt-in agent collaboration.
+  zh: 提供可直接编辑的笔记空间，支持文件夹、全文搜索、富文本、核对清单、可调整列宽的表格、附件、导出和可选的 Agent 协作。
+tarball: https://github.com/Totoro-qaq/dsh-jot/releases/latest/download/dsh-jot.tgz

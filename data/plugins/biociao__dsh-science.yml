@@ -1,0 +1,6 @@
+url: https://github.com/biociao/dsh-science
+name: biociao/dsh-science
+category: workflow
+description:
+  en: 'Claude Science-style research workbench: ReAct research-loop engine (research_* tools), versioned artifacts with provenance (artifact_* tools), and 10 science skills for genomics/pathogens/bioinformatics.'
+  zh: 面向 DSH 的 Claude Science 式科研工作台：ReAct 研究循环引擎（research_* 工具）、带溯源的版本化工件（artifact_* 工具）与面向基因组/病原体/生物信息的 10 个科研技能。

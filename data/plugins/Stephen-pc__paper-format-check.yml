@@ -1,0 +1,6 @@
+url: https://github.com/Stephen-pc/paper-format-check
+name: Stephen-pc/paper-format-check
+category: skill
+description:
+  en: 'Format checker for theses and lab reports: verifies body font size, first-line indent, line spacing, Chinese font, header student ID and name, page margins, and figure/table caption numbering against a JSON rules preset, then reports each problem with its paragraph location and the concrete fix. Read-only, zero dependencies (Python standard library only), and it refuses to report a pass when no check actually ran. Requires Python 3.8 or newer on PATH.'
+  zh: '论文 / 实验报告格式体检：对照 JSON 规则预设核验正文字号、首行缩进、行距、中文字体、页眉学号姓名、页边距、图题表题编号，逐条给出段落定位与具体修法。只读、零依赖（纯 Python 标准库），实际执行的检查项为 0 时拒绝判通过。需要 PATH 中有 Python 3.8 或更高版本。'

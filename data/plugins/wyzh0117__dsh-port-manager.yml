@@ -1,0 +1,6 @@
+url: https://github.com/wyzh0117/dsh-port-manager
+name: wyzh0117/dsh-port-manager
+category: dev
+description:
+  en: Native DSH right-sidebar tab that lists the ports this machine is listening on together with the process behind each one, and offers per-port actions to open it, copy its address, reveal its working directory or end the process.
+  zh: dsh 原生右侧栏页签：列出本机监听的端口及占用它的进程，并可对每个端口执行打开、复制地址、定位工作目录或结束进程。

@@ -1,0 +1,6 @@
+url: https://github.com/xiaobaifly7/dsh-codex-conductor
+name: xiaobaifly7/dsh-codex-conductor
+category: workflow
+description:
+  en: 'Delegates coding tasks from DeepSeek Harness to Codex CLI in WSL, with required acceptance criteria, background progress and cancellation, thread resume, per-criterion reports, change tracking, and optional workspace guardrails. Requires Windows with WSL2, Python 3.11+ and a logged-in Codex CLI in WSL.'
+  zh: '将 DeepSeek Harness 的编码任务委派给 WSL 内的 Codex CLI，提供必填验收标准、后台进度与取消、线程续跑、逐条结果汇报、改动记录及可选工作区护栏。需要 Windows 与 WSL2；WSL 内需有 Python 3.11+ 和已登录的 Codex CLI。'

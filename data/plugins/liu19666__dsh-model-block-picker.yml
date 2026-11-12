@@ -1,0 +1,6 @@
+url: https://github.com/liu19666/dsh-model-block-picker
+name: liu19666/dsh-model-block-picker
+category: ui
+description:
+  en: 'Composer model selector grouped by provider: pick a provider card, then drill into that provider to choose a model, with cross-provider search and Reasoning Effort kept.'
+  zh: '按来源分块的输入框模型选择器：先选来源渠道卡片，再下钻进该渠道选择模型，保留跨来源搜索与推理强度调节。'

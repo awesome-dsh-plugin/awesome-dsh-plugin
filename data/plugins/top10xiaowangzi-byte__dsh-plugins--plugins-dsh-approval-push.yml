@@ -1,0 +1,7 @@
+url: https://github.com/top10xiaowangzi-byte/dsh-plugins/tree/main/plugins/dsh-approval-push
+name: top10xiaowangzi-byte/dsh-plugins#dsh-approval-push
+category: notify
+description:
+  en: 'Approval reminder: an in-page card with Allow once / Reject when a session waits for permission, plus optional desktop notification, sound and phone push through PushPlus, ServerChan, ntfy, WeCom or a custom webhook.'
+  zh: '审批提醒：会话等待权限时在页面右下角弹出提醒卡，可直接「允许一次」/「拒绝」，并可发桌面通知、提示音，或通过 PushPlus / Server酱 / ntfy / 企业微信机器人 / 自定义 webhook 推送到手机。'
+icon: https://raw.githubusercontent.com/top10xiaowangzi-byte/dsh-plugins/main/plugins/dsh-approval-push/icon-192.png

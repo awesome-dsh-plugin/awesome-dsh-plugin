@@ -1,0 +1,6 @@
+url: https://github.com/dsh-plugins/dsh-auxiliary
+name: dsh-plugins/dsh-auxiliary
+category: tools
+description:
+  en: Dedicated model routes, tools, and system guidance for vision, compaction, reviews, subagents, titles, and image generation.
+  zh: 为视觉理解、上下文压缩、审批审查、子代理、会话标题与图片生成提供独立的模型路由、工具与系统提示。

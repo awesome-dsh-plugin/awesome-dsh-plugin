@@ -1,0 +1,6 @@
+url: https://github.com/Wanyi424/dsh-markdown-notes
+name: Wanyi424/dsh-markdown-notes
+category: docs
+description:
+  en: 'Write and read Markdown notes: switch between reading, editing and side-by-side preview, with an outline, three preview themes, math and Mermaid, nested folders, and autosave to local .md files.'
+  zh: '随手记、随时读：阅读、编辑、并排预览一键切换，附大纲与三套排版主题，支持公式与 Mermaid，多级文件夹管理，自动存为本地 .md 文件。'

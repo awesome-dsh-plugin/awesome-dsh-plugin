@@ -1,0 +1,6 @@
+url: https://github.com/islibaodong/dsh-login
+name: islibaodong/dsh-login
+category: security
+description:
+  en: 'Multi-user login gateway for the DSH web UI: the first visit creates the admin account, admins add and manage users in the GUI settings panel, ordinary users see only their own conversations, and unauthenticated visitors are redirected to /login.'
+  zh: '为 DSH Web 界面提供多用户登录网关：首次访问创建管理员账户，管理员在 GUI 设置面板中添加和管理用户，普通用户只能看到自己的会话，未登录访问重定向到 /login。'

@@ -1,0 +1,8 @@
+url: https://github.com/stallenlu/dsh-freellmapi
+name: stallenlu/dsh-freellmapi
+category: model
+description:
+  en: 'Registers FreeLLMAPI as a dsh model provider, with the router itself bundled in the plugin. It launches the vendored server with the host binary and exposes the freellmapi route; the sidebar panel starts and stops that process, lists the router catalogue, probes which claimed models actually answer, and ranks them by the stability, speed and intelligence scores the router computes for itself. Provider keys, routing strategy and usage remain in the router console, which the panel links to.'
+  zh: '把 FreeLLMAPI 注册为 dsh 的模型 provider，路由本体随插件打包。插件用宿主二进制启动内置服务并暴露 freellmapi 路由；侧栏面板负责启停该进程、列出路由的模型目录、实测哪些自称可用的模型真能回答，并按路由自身计算的稳定、速度、智能评分排序。provider key、路由策略与用量仍在路由自带控制台，面板里给了入口。'
+tarball: https://github.com/stallenlu/dsh-freellmapi/releases/download/v1.2.11/dsh-freellmapi-1.2.11.tgz
+icon: https://raw.githubusercontent.com/stallenlu/dsh-freellmapi/main/assets/icon-180.png

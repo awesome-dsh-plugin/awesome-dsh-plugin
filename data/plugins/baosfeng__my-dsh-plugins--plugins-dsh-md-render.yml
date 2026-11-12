@@ -1,0 +1,6 @@
+url: https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-md-render
+name: baosfeng/my-dsh-plugins#dsh-md-render
+category: docs
+description:
+  en: 'Conversation rendering: every fenced block is rendered by the plugin itself (markdown for text fences, language-banner code blocks with highlight.js for others), mermaid fences become zoomable diagram cards, plus context-body rendering, whole-content copy and a MarkdownView export (npm: `dsh-md-render`).'
+  zh: '对话渲染：围栏块由插件自身渲染（text 家族按 markdown，其余为真实语言名 banner + highlight.js 高亮的代码块），mermaid 块渲染为可缩放图表卡片，另支持上下文注入块渲染、整段复制与 MarkdownView 导出（npm: `dsh-md-render`）。'

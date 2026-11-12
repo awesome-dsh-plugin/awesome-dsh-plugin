@@ -1,0 +1,6 @@
+url: https://github.com/LeemanCheung/dsh-skin-studio
+name: LeemanCheung/dsh-skin-studio
+category: theme
+description:
+  en: Local semantic-token theme editor with palette extraction, WCAG auditing, preview, and export.
+  zh: 本地语义令牌主题编辑器，支持色板提取、WCAG 审计、预览和导出。

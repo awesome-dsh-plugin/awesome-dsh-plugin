@@ -1,0 +1,6 @@
+url: https://github.com/Len7183/DSH-Think-zh
+name: Len7183/DSH-Think-zh
+category: identity
+description:
+  en: 'Pins the model''s reasoning language to a tier picked in Settings - General - Thinking language (Simplified Chinese, or a default tier that only constrains replies and leaves reasoning to the model), by injecting a system-prompt section at order -1000000 and re-hoisting it to first place at the end of the assemble waterfall, plus an optional per-turn copy placed ahead of each user message for models that follow static sections weakly.'
+  zh: '把模型思考语言锁定为「设置 → 通用设置 → 思考语言」里选定的档位（简体中文，或只约束回复、把思考交还模型的默认英文），实现方式是以 order -1000000 注入 system prompt section，并在 assemble 瀑布末端把它重排到首位兜底；另可开启每轮前置同一指令的用户消息通道，用于对静态 section 服从弱的模型。'

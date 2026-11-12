@@ -1,0 +1,212 @@
+name: PR guard
+
+# Catches the two states no other check can catch, because both of them are
+# states in which no other check runs.
+#
+# 1. A pull request with NO checks at all. `pr-check.yml` is a `pull_request`
+#    workflow, and for that event GitHub takes the workflow file from the PR's
+#    own merge ref — so a PR that DELETES `.github/workflows/pr-check.yml`
+#    deletes the job that would have judged it. Nothing runs, no `check`
+#    appears, and `Submission gate` (which triggers on `PR check` completing)
+#    never fires either. #1635 did exactly this: five workflow files removed,
+#    zero check runs, and in a queue scan it is indistinguishable from "CI has
+#    not started yet".
+#
+# 2. A pull request that touches `.github/` at all. Contributors do not do this
+#    on purpose — it is what a stale fork looks like when its `.github` predates
+#    our CI and gets pushed back (#1614, #1635). Merging one silently reverts
+#    the workflows. It is not a reason to reject the submission, only a reason
+#    it must not merge until those files are dropped from the branch.
+#
+# This runs on a schedule from the default branch, so it is not in the blast
+# radius of the pull request it is judging — that is the whole point, and it is
+# why it cannot be folded into pr-check.yml.
+#
+# SECURITY: no checkout, no PR code, no npm. It reads metadata through the API
+# and writes check runs, nothing else.
+
+on:
+  schedule:
+    - cron: '37 * * * *'
+  workflow_dispatch:
+
+permissions:
+  checks: write
+  pull-requests: read
+
+concurrency:
+  group: pr-guard
+  cancel-in-progress: true
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        env:
+          # A pull request is only flagged for having no checks once CI has had
+          # time to start. Below this it is simply too early to tell.
+          #
+          # 90 rather than 20: a fork PR from a first-time contributor sits with
+          # no checks at all until a maintainer approves the run, and that wait
+          # is measured in hours, not minutes. At 20 the job was reliably
+          # flagging normal submissions for being new. Genuinely undispatched
+          # PRs (#1680) are not time-sensitive — they stay broken until someone
+          # pushes — so waiting longer costs nothing and stops the guard from
+          # crying wolf at the people it is meant to help.
+          MIN_AGE_MINUTES: '90'
+        with:
+          script: |
+            const { owner, repo } = context.repo
+            const MIN_AGE_MS = Number(process.env.MIN_AGE_MINUTES) * 60000
+            const NAME = 'Repository config guard'
+
+            // One GraphQL query per 50 pull requests, carrying both the file
+            // list and the head commit's check runs. The REST equivalent is one
+            // request per pull request for files plus one for checks — ~350
+            // against a 1000/hr repository budget the submission gate depends
+            // on. Cost discipline here is not premature: exhausting that budget
+            // is what made six unchecked submissions look green on 2026-08-18.
+            const query = `
+              query($owner:String!, $repo:String!, $cursor:String) {
+                repository(owner:$owner, name:$repo) {
+                  pullRequests(states:OPEN, first:50, after:$cursor) {
+                    pageInfo { hasNextPage endCursor }
+                    nodes {
+                      number isDraft createdAt
+                      files(first:100) { totalCount nodes { path } }
+                      commits(last:1) { nodes { commit {
+                        oid
+                        checkSuites(first:20) { nodes { checkRuns(first:20) { nodes { name conclusion } } } }
+                      } } }
+                    }
+                  }
+                }
+              }`
+
+            const prs = []
+            let cursor = null
+            do {
+              const res = await github.graphql(query, { owner, repo, cursor })
+              const page = res.repository.pullRequests
+              prs.push(...page.nodes)
+              cursor = page.pageInfo.hasNextPage ? page.pageInfo.endCursor : null
+            } while (cursor)
+            core.info(`${prs.length} open pull request(s)`)
+
+            const post = (head_sha, conclusion, title, summary) =>
+              github.rest.checks.create({
+                owner, repo, name: NAME, head_sha, status: 'completed', conclusion,
+                output: { title, summary: summary.slice(0, 65000) },
+              })
+
+            let flagged = 0
+            for (const pr of prs) {
+              if (pr.isDraft) continue
+              const commit = pr.commits.nodes[0]?.commit
+              if (!commit) continue
+              const sha = commit.oid
+
+              const runs = new Map()
+              // GraphQL returns check conclusions as a SCREAMING_CASE enum
+              // (FAILURE), while the REST API this job posts with uses
+              // lowercase. Comparing the two directly is silently always false,
+              // which is exactly how the first version of the retraction below
+              // never fired. Normalise once, here.
+              for (const s of commit.checkSuites.nodes) for (const r of s.checkRuns.nodes) if (!runs.has(r.name)) runs.set(r.name, (r.conclusion ?? '').toLowerCase())
+              const names = new Set(runs.keys())
+              const mine = runs.get(NAME) ?? null
+
+              // The "no checks ran" verdict is about a moment, and the moment
+              // passes: a fork PR whose run is queued for maintainer approval
+              // has no checks until someone approves it, which can be hours.
+              // The first version of this job posted a failure and then skipped
+              // the commit forever, so #1624 kept a red X after its checks came
+              // back green. A stale red is the mirror of the stale green this
+              // whole guard exists to prevent, so the verdict is recomputed
+              // every pass and cleared when it no longer holds. Posting only on
+              // a *change* keeps that from becoming an hourly stream of
+              // identical check runs.
+
+              // `files(first:100)` is a cap, not a filter: a stale-fork PR can
+              // carry hundreds of paths and the `.github/` ones may fall outside
+              // the page. Paying for one REST call in that rare case beats
+              // reporting "no config files touched" from a partial list.
+              let paths = pr.files.nodes.map((f) => f.path)
+              if (pr.files.totalCount > paths.length) {
+                try {
+                  const all = await github.paginate(github.rest.pulls.listFiles, { owner, repo, pull_number: pr.number, per_page: 100 })
+                  paths = all.map((f) => f.filename)
+                } catch (e) {
+                  core.warning(`#${pr.number}: could not list all ${pr.files.totalCount} files (${e.status ?? e.message})`)
+                }
+              }
+              const config = paths.filter((p) => p.startsWith('.github/'))
+
+              if (config.length) {
+                if (mine === 'failure') continue // already flagged, and still true
+                const list = config.map((p) => `- \`${p}\``).join('\n')
+                await post(sha, 'failure', `${config.length} repository config file(s) changed`,
+                  [
+                    'This pull request changes files under `.github/`:',
+                    '',
+                    list,
+                    '',
+                    'A plugin submission never needs to. This is almost always a **stale fork**:',
+                    "the fork's `.github` predates the CI on `main`, and syncing the branch pushes",
+                    'the old copies back — merging it would silently revert the workflows for',
+                    'everyone.',
+                    '',
+                    'It is not a problem with your plugin. Drop these files from the branch and',
+                    'the submission is judged normally:',
+                    '',
+                    '```bash',
+                    'git fetch https://github.com/' + owner + '/' + repo + ' main',
+                    'git checkout FETCH_HEAD -- .github',
+                    'git commit -m "restore .github from upstream"',
+                    'git push',
+                    '```',
+                    '',
+                    'If your `git push` is rejected because your token lacks the `workflow` scope,',
+                    'that is the same root cause seen from the other side — the fix is the same.',
+                  ].join('\n'))
+                flagged++
+                continue
+              }
+
+              // The normal checks ran. If this job had previously said they had
+              // not, retract that rather than leaving a contradiction sitting
+              // on the commit.
+              if (names.has('check')) {
+                if (mine === 'failure') {
+                  await post(sha, 'success', 'Checks are present',
+                    [
+                      'This pull request was briefly flagged here for having no checks. It has them',
+                      'now, so that verdict is withdrawn — most often the run was simply waiting for',
+                      'a maintainer to approve it, which is normal for a first-time contributor.',
+                      '',
+                      'Nothing is required from you.',
+                    ].join('\n'))
+                  core.info(`#${pr.number}: cleared a stale "no checks" verdict`)
+                }
+                continue
+              }
+              if (Date.now() - Date.parse(pr.createdAt) < MIN_AGE_MS) continue
+              if (mine === 'failure') continue // already flagged, and still true
+
+              await post(sha, 'failure', 'No checks ran on this pull request',
+                [
+                  '`PR check` produced no result for this commit, so nothing has verified this',
+                  'submission — not the lint, not the generated READMEs, not the repository',
+                  'behind the entry.',
+                  '',
+                  'An unchecked pull request is not a passing one. It is reported here because a',
+                  'missing verdict looks exactly like a pending one when scanning a list of open',
+                  'pull requests, and that is how an unchecked submission gets merged.',
+                  '',
+                  'Push any commit to re-trigger the checks. If they still do not run, a',
+                  'maintainer needs to look at this — say so here.',
+                ].join('\n'))
+              flagged++
+            }
+            core.info(`flagged ${flagged} pull request(s)`)

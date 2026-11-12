@@ -1,0 +1,6 @@
+url: https://github.com/Yuki-cutesnow/dsh-session-groups
+name: Yuki-cutesnow/dsh-session-groups
+category: ui
+description:
+  en: 'Adds a display-only session group section to the DeepSeek Harness sidebar: user-defined multi-level nested groups, drag sessions into groups, and a panel height you can adjust. Host workspace membership and session ownership are not modified.'
+  zh: '在 DeepSeek Harness 侧栏新增一个纯展示的会话分组分区：支持自定义多层嵌套分组、把会话拖进分组、调整分区高度；不修改 Host 的工作区归属与会话所有权。'

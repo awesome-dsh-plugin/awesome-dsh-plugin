@@ -1,0 +1,7 @@
+url: https://github.com/afawfawffaf/dsh-plugin-lx-music
+name: afawfawffaf/dsh-plugin-lx-music
+category: ui
+tarball: https://github.com/afawfawffaf/dsh-plugin-lx-music/releases/download/v0.4.1/dsh-plugin-lx-music-0.4.1.tgz
+description:
+  en: 'Shows the lyrics LX Music is playing in a floating panel on the right of the DSH conversation page, with previous / play-pause / next controls. Scroll the lyric window to read ahead, double-click a line to start the song there, and if the player is not running, pressing play starts it in the system tray. Windows only, and LX Music has to be installed with its local Open API enabled.'
+  zh: '把落雪音乐（LX Music）正在播放的歌词贴在 DSH 对话页右侧，配上上一首 / 播放暂停 / 下一首。可滚动歌词窗看前后几句、双击某句从那里开始唱；播放器没开时点播放会自动把它从系统托盘拉起来。仅 Windows，需要本机装好落雪并打开它的开放 API。'

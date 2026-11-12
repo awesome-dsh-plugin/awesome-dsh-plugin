@@ -1,0 +1,6 @@
+url: https://github.com/yongfanbeta/dsh-pomodoro
+name: yongfanbeta/dsh-pomodoro
+category: ui
+description:
+  en: Classic 25/5/15 pomodoro timer for DSH that ties each run to the current session task or a manual project name, with a stats panel, a 365-day heatmap, a draggable floating timer and a corner pill, local JSON storage, and CSV export.
+  zh: DSH 番茄钟：经典 25/5/15 计时，可将每次专注关联当前会话任务或手动输入项目名，内置统计面板与全年热力图，配可拖动悬浮计时卡与角落迷你药丸，数据本地持久化并支持导出 CSV。

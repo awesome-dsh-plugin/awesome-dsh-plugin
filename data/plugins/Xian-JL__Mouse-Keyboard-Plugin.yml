@@ -1,0 +1,7 @@
+url: https://github.com/Xian-JL/Mouse-Keyboard-Plugin
+name: Xian-JL/Mouse-Keyboard-Plugin
+category: tools
+description:
+  en: "Windows x64 desktop tools for DeepSeek Harness to restore and foreground existing windows, observe screenshots and UI Automation elements, left-click, and type text or supported keys, with repeatable control sessions and physical Esc to stop."
+  zh: "面向 DeepSeek Harness 的 Windows x64 桌面工具，可恢复并前置已有窗口、观察截图与 UI Automation 元素、左键点击、输入文字或支持的按键，支持反复开启和交还控制，并可按物理 Esc 停止。"
+tarball: https://github.com/Xian-JL/Mouse-Keyboard-Plugin/releases/download/v0.3.0/mouse-keyboard-plugin-0.3.0.tgz

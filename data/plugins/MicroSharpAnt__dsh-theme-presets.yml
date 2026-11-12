@@ -1,0 +1,6 @@
+url: https://github.com/MicroSharpAnt/dsh-theme-presets
+name: MicroSharpAnt/dsh-theme-presets
+category: theme
+description:
+  en: Adds Nord, Dracula, Catppuccin, Tokyo Night, One Dark, Gruvbox, Solarized, GitHub, Everforest, Kanagawa and Rosé Pine presets to the DSH Web GUI theme picker, layered over the built-in light/dark/system appearance.
+  zh: 在 DSH Web GUI 的主题选择中加入 Nord、Dracula、Catppuccin、Tokyo Night、One Dark、Gruvbox、Solarized、GitHub、Everforest、Kanagawa、Rosé Pine 十一套配色预设，与内置的浅色/深色/跟随系统正交叠加。

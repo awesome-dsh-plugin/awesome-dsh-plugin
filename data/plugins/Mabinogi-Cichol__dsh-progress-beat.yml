@@ -1,0 +1,6 @@
+url: https://github.com/Mabinogi-Cichol/dsh-progress-beat
+name: Mabinogi-Cichol/dsh-progress-beat
+category: session
+description:
+  en: 'Makes the agent narrate progress during long tool chains instead of staying silent until the final answer: a standing system-prompt rule that travels with every request, plus a notice injected after every N tool calls. A panel on the plugin page tunes the cadence, the reminder budget, and both texts; changes apply live.'
+  zh: '让 agent 在长工具链中途说明进度，而不是一路静默到最终答复：一条随每次请求下发的常驻系统提示词规则，加上每 N 次工具调用后注入的一条提醒。插件页内的面板可调整步频、提醒上限与两段文本，保存即热生效。'

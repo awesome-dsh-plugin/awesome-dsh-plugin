@@ -1,0 +1,7 @@
+url: https://github.com/shawnclink/dsh-bookmarks/tree/main/packages/dsh-bookmarks
+name: shawnclink/dsh-bookmarks#dsh-bookmarks
+category: tools
+description:
+  en: 'Pulls the bookmarks of X, YouTube, Reddit, Bilibili, Zhihu and Xiaohongshu into one DeepSeek Harness panel: a daily three-item review page, filters by platform, folder and role, and one-click export to Obsidian, Reminders or Calendar. Collection runs through the opencli browser extension, so it needs Chrome with that extension installed and logged in.'
+  zh: '把 X、YouTube、Reddit、B 站、知乎、小红书的收藏汇总到一个 DeepSeek Harness 面板：每天三条待读、按平台 / 收藏夹 / 角色筛选，一键导出到 Obsidian、提醒事项或日历。采集走 opencli 的浏览器扩展，需要 Chrome 装好扩展并登录这几个站。'
+icon: https://raw.githubusercontent.com/shawnclink/dsh-bookmarks/main/assets/icon-180.png

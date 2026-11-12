@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-pipeline-check
+name: PerryLink/dsh-pipeline-check
+category: workflow
+description:
+  en: 'Project document chain integrity check: stage order, completeness and amount parseability.'
+  zh: '项目全流程文件链条核对：环节顺序、文件齐备与金额可解析。'

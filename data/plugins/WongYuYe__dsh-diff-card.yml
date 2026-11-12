@@ -1,0 +1,7 @@
+url: https://github.com/WongYuYe/dsh-diff-card
+name: WongYuYe/dsh-diff-card
+category: ui
+tarball: https://github.com/WongYuYe/dsh-diff-card/releases/latest/download/dsh-diff-card.tgz
+description:
+  en: 'Per-turn file-change card for DSH Desktop: +N −M badges, aligned diffs, and Mac/Windows file open (system app, Finder/Explorer, VS Code).'
+  zh: 给 DSH Desktop 用的轮末改动卡：编辑/写入行显示 +N −M，点开审 diff；macOS 和 Windows 可用系统应用、文件夹或 VS Code 打开文件。

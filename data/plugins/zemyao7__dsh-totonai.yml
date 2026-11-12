@@ -1,0 +1,6 @@
+url: https://github.com/zemyao7/dsh-totonai
+name: zemyao7/dsh-totonai
+category: model
+description:
+  en: "Account-based access to the ToTonAI gateway inside DeepSeek Harness: sign in or register in the settings panel, use 65 mainstream models (GPT, Claude, Gemini, DeepSeek, Doubao, Grok, GLM), and pick a plan then pay by QR code in the same panel. Upstream API keys stay on the server."
+  zh: "在 DeepSeek Harness 里用账号接入 ToTonAI 中转站:设置面板里登录或注册,使用 65 个主流模型(GPT、Claude、Gemini、DeepSeek、豆包、Grok、GLM),并可在同一面板选档位、显示收款码、付款后申报开通。上游 API Key 只留在服务器上。"

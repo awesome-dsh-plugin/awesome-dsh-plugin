@@ -1,0 +1,6 @@
+url: https://github.com/lucagiftzek/dsh-subagent-tiering
+name: lucagiftzek/dsh-subagent-tiering
+category: model
+description:
+  en: 'Fills in a cheaper sibling route for subagent calls that name no provider, model or effort (for example Opus to Sonnet 5.5 at medium, Qwen max to Qwen flash); explicit choices and subagent_fork are left alone. Requires the subagent-model-selection policy to be enabled with the target route in its allowedModels - without it the plugin does nothing.'
+  zh: '为未指定 provider/model/effort 的 subagent 调用补上更便宜的同类路由（例如 Opus → Sonnet 5.5 @ medium、Qwen max → Qwen flash）；显式指定的选择与 subagent_fork 保持不动。需在设置里启用 subagent-model-selection 且目标路由在其 allowedModels 中，否则插件不产生任何效果。'

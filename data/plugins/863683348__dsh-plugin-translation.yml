@@ -1,0 +1,6 @@
+url: https://github.com/863683348/dsh-plugin-translation
+name: 863683348/dsh-plugin-translation
+category: tools
+description:
+  en: 'Translation toolkit for DSH agents: sentence segmentation, term and glossary extraction, source-target QA (numbers, units, brackets), tone guides, and a durable workspace translation memory.'
+  zh: 为 DSH agent 提供翻译工具包：句子分块、术语与术语表提取、译文质检（数字、单位、括号）、语气指南与工作区持久化翻译记忆。

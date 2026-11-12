@@ -1,0 +1,6 @@
+url: https://github.com/lllirunze/dsh-codecraft
+name: lllirunze/dsh-codecraft
+category: dev
+description:
+  en: 'A lightweight, DSH-native code editor with intelligent coding assistance, minimizing reliance on external IDEs.'
+  zh: '轻量化 DSH 原生代码编辑器，集成智能编程辅助能力，减少对外部 IDE 的依赖。'

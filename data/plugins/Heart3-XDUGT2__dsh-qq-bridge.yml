@@ -1,0 +1,6 @@
+url: https://github.com/Heart3-XDUGT2/dsh-qq-bridge
+name: Heart3-XDUGT2/dsh-qq-bridge
+category: remote
+description:
+  en: "QQ bridge for the dsh-memory-agent (Echo) companion: OneBot 11 plus an optional official QQ text transport, bounded group context, file handling and delivery auditing. Requires dsh-memory-agent; the OneBot path also needs a OneBot 11 client such as NapCat or SnowLuma, and the official transport is a separate opt-in package in the same repo."
+  zh: "dsh-memory-agent（Echo）的 QQ 桥：支持 OneBot 11 与可选的官方 QQ 文字通道、有限群聊上下文、文件处理和投递审计。需先安装 dsh-memory-agent；OneBot 通道另需 NapCat 或 SnowLuma 等 OneBot 11 客户端，官方通道是同仓库里需单独安装的可选包。"

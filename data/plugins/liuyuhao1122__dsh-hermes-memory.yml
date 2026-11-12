@@ -1,0 +1,6 @@
+url: https://github.com/liuyuhao1122/dsh-hermes-memory
+name: liuyuhao1122/dsh-hermes-memory
+category: memory
+description:
+  en: 'Layered long-term memory for DeepSeek Harness with automatic model distillation, source-linked encrypted session logs, and guarded compaction.'
+  zh: '为 DeepSeek Harness 提供分层长期记忆，支持自动模型提炼、可追溯的加密会话日志和带校验的记忆压缩。'

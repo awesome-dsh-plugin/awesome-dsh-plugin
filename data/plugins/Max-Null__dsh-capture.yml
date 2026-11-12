@@ -1,0 +1,6 @@
+url: https://github.com/Max-Null/dsh-capture
+name: Max-Null/dsh-capture
+category: vision
+description:
+  en: 'Dual-engine screen capture for DSH: inside the SSiD desktop shell, a global hotkey or tray opens a fullscreen box-select overlay (all monitors, per-display pixel-perfect frames) with in-place red-box annotation and a WeChat-style toolbar; in plain DSH (browser), the composer camera button captures the display via getDisplayMedia and reuses the same single-phase box-select + annotation overlay in-page. The cropped image lands in the current conversation composer through the official attachment intake.'
+  zh: 'DSH 双引擎截图：思灵桌面壳内，全局快捷键/托盘打开全屏框选浮层（多显示器、逐屏像素级抓帧），选区定格后工具条就地画红框，一次确认送进输入框；纯 DSH（浏览器）下由输入框相机按钮经 getDisplayMedia 捕获屏幕，复用同一套单阶段框选+标注遮罩。均走官方附件通道。'

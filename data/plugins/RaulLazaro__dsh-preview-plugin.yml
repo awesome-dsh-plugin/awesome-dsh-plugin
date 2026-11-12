@@ -1,0 +1,6 @@
+url: https://github.com/RaulLazaro/dsh-preview-plugin
+name: RaulLazaro/dsh-preview-plugin
+category: ui
+description:
+  en: "Live preview tab for DSH — embed any dev server in an iframe with transparent SPA proxying."
+  zh: "DSH 实时预览标签页：把任意 dev server 嵌入 iframe，透明代理 SPA 路由。"

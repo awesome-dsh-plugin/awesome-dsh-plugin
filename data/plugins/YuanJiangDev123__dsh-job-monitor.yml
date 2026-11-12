@@ -1,0 +1,6 @@
+url: https://github.com/YuanJiangDev123/dsh-job-monitor
+name: YuanJiangDev123/dsh-job-monitor
+category: ui
+description:
+  en: 'A dedicated background-job dashboard for the DSH Web UI: merges jobs from every session, shows producer-reported or parsed progress with an honest estimate fallback, groups by status, purpose, session or kind, streams live output, and keeps a local history ledger.'
+  zh: '跨会话的后台任务面板：进度按「任务自报 / 输出解析 / 历史耗时估算」三档显示，可按状态、用途、会话或类型分组，支持实时输出、输出内搜索与本地历史台账。'

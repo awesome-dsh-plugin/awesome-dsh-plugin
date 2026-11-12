@@ -1,0 +1,7 @@
+url: https://github.com/nuet9/dsh-session-categories
+name: nuet9/dsh-session-categories
+category: session
+description:
+  en: Workspace conversation categories with drag-and-drop ordering, collapsible groups, activity indicators, and workspace registration by directory path.
+  zh: 工作区内会话分类，支持拖拽排序、分组折叠、任务状态提示及路径添加工作区。
+tarball: https://github.com/nuet9/dsh-session-categories/releases/download/v1.0.2/local-session-categories-1.0.2.tgz

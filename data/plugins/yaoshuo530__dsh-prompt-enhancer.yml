@@ -1,0 +1,6 @@
+url: https://github.com/yaoshuo530/dsh-prompt-enhancer
+name: yaoshuo530/dsh-prompt-enhancer
+category: ui
+description:
+  en: 'Prompt enhancement for the composer: an "✨ Enhance" button rewrites your draft prompt into a clearer, more structured version with first-principles thinking, grounded in session context, memory and recent conversation; asks clarifying questions in a card when key info is missing, then previews the result before applying it to the input.'
+  zh: 输入框提示词增强：✨ 增强按钮用第一性原理、结合会话上下文/记忆/最近对话，把草稿扩写为更清晰、更结构化的提示词；关键信息缺失时以提问卡片澄清，预览确认后再应用到输入框。

@@ -1,0 +1,6 @@
+url: https://github.com/lokih1028/dsh-plugin-canvas-pro
+name: lokih1028/dsh-plugin-canvas-pro
+category: ui
+description:
+  en: Adds a Canvas drawer and eight model tools to create, patch, version, and export HTML, Markdown, Mermaid, SVG, and React artifacts.
+  zh: 为 DSH Web 增加 Canvas 抽屉与八个模型工具，用于创建、局部补丁、版本管理和导出 HTML、Markdown、Mermaid、SVG 与 React 工件。

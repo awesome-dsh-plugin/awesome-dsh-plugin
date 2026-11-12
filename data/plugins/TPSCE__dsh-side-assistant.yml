@@ -1,0 +1,6 @@
+url: https://github.com/TPSCE/dsh-side-assistant
+name: TPSCE/dsh-side-assistant
+category: ui
+description:
+  en: A right-sidebar assistant that knows the main session's finished turns, follows the main agent's running steps and background jobs, and answers in the panel; its model, context budget and answer style are configurable.
+  zh: 侧边栏助手：知道主会话已完成的回合，跟随主 Agent 正在跑的步骤与后台 job，在面板里回答问题；模型、上下文预算与回答风格可配置。

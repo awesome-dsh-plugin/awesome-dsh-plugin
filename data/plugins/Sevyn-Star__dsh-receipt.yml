@@ -1,0 +1,6 @@
+url: https://github.com/Sevyn-Star/dsh-receipt
+name: Sevyn-Star/dsh-receipt
+category: ui
+description:
+  en: Adds a corner card that estimates how much a session spent repeating a failed or empty tool call with the same arguments.
+  zh: 在左下角显示这一场里，失败或空结果之后又用同一组参数重试花了多少钱。

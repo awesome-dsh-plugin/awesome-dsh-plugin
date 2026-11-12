@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-chat-image-lightbox
+name: loyalchiiina/dsh-chat-image-lightbox
+category: ui
+description:
+  en: 'Shows chat images as a thumbnail grid inside the message body instead of one collapsed icon, so several pictures are readable at a glance, with the column count adjustable from 1 to 12 (3 by default) and a hide-images switch. Clicking a thumbnail opens a lightbox that zooms by wheel or buttons, drags to pan, pages between images and downloads the original. Adapts DSH kernel 0.2.2-rc.1.'
+  zh: '把对话里的图片展开成正文内的缩略图网格，列数 1–12 可调（默认 3 列），多张图一眼看清，不再折叠成一个图标，并可一键隐藏。点开灯箱可滚轮或按钮放大、拖动平移、左右切换、下载原图。适配 DSH 内核 0.2.2-rc.1。'

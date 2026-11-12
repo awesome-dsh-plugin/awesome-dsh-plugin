@@ -1,0 +1,8 @@
+url: https://github.com/ccl4-56-23-5/DSH-Plugins/tree/main/Token用量插件/1.0.0
+name: ccl4-56-23-5/DSH-Plugins#usage-statistics-fish
+category: usage
+description:
+  en: "A customized usage-statistics-panel dashboard with a 52-week square heatmap, bar-only token trends, and ended-turn labels, using the upstream collector and history. Same package name as upstream HaoyueQin/dsh-usage-statistics-panel, so the two cannot be installed together."
+  zh: "基于 usage-statistics-panel 定制统计看板，提供 52 周方块热力图、纯柱状 Token 趋势与已结束轮次标签，沿用上游采集与历史数据。与上游 HaoyueQin/dsh-usage-statistics-panel 同包名，二者不能同时安装。"
+icon: https://raw.githubusercontent.com/ccl4-56-23-5/DSH-Plugins/main/Token用量插件/1.0.0/lib/assets/icon.png
+tarball: https://github.com/ccl4-56-23-5/DSH-Plugins/releases/download/token-usage-v1.0.0/dsh-usage-statistics-panel-1.0.0.tgz

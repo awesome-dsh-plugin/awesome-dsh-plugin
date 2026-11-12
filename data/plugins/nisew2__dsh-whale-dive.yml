@@ -1,0 +1,7 @@
+url: https://github.com/nisew2/dsh-whale-dive
+
+name: nisew2/dsh-whale-dive
+category: tools
+description:
+  en: 'Read Bilibili and Douyin from a session: WBI-signed Bilibili API calls behind one shared pacer (4 req/s, per-host cooldown after a 412) for video, feed, search, author, comments, danmaku and subtitles, plus Douyin hot list, video, feed and search rendered in a locally launched Edge over CDP.'
+  zh: 会话内读 B站与抖音：B站走 WBI 签名接口，全部请求共用一个限速器（默认 4 请求/秒，吃 412 后按主机冷却），覆盖视频、热门、搜索、UP主、评论、弹幕、字幕；抖音则通过 CDP 驱动本机 Edge 渲染，读热榜、视频、推荐流与搜索。

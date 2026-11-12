@@ -1,0 +1,6 @@
+url: https://github.com/lim1202/dsh-agent-theater
+name: lim1202/dsh-agent-theater
+category: ui
+description:
+  en: A conversation view beside Chat and Trajectory that turns a DSH session into a character stage, with Codex Pet sprites, comic bubbles and a completion report listing the files and attachments the turn produced.
+  zh: 与 Chat、Trajectory 并列的会话视图，把会话变成角色舞台：支持 Codex Pet 精灵动画与漫画气泡，并在完成时汇报本轮产生的文件和附件。

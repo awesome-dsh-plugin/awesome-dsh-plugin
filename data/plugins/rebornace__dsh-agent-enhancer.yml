@@ -1,0 +1,6 @@
+url: https://github.com/rebornace/dsh-agent-enhancer
+name: rebornace/dsh-agent-enhancer
+category: ui
+description:
+  en: 'Agent enhancements for DeepSeek Harness Desktop: prompt history, one-click optimize with undo, next-prompt prediction, conversation and tracked-file restore, model bill, context details with compact, Auto routing, and per-provider DeepSeek balance.'
+  zh: 'DeepSeek Harness Desktop 智能体增强：提示词历史、一键优化与撤销、下一条预测、对话与已跟踪文件恢复、模型账单、上下文明细与压缩、Auto 路由，以及分账号 DeepSeek 余额显示。'

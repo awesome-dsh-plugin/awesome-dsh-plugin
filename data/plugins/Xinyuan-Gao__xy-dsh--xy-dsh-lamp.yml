@@ -1,0 +1,6 @@
+url: https://github.com/Xinyuan-Gao/xy-dsh/tree/main/xy-dsh-lamp
+name: Xinyuan-Gao/xy-dsh#xy-dsh-lamp
+category: ui
+description:
+  en: 'Always-on-top lamp board for macOS: one lamp per agent, one row per session, collapsing to one lamp per running task; a lamp turns blue and blinks while an approval or a question is waiting on you, and the root agent finishing raises a system notification.'
+  zh: 'macOS 系统级置顶灯板：每个 Agent 一盏灯、一个会话一行，收起时一个任务一盏灯；有审批或提问等你处理时该灯转蓝闪烁，根 Agent 结束时发系统通知。'

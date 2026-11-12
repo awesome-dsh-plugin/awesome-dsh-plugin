@@ -1,0 +1,6 @@
+url: https://github.com/yakoylp/dsh-md-convert
+name: yakoylp/dsh-md-convert
+category: workflow
+description:
+  en: 'Convert Office documents and PDFs (including scanned ones) to structurally formatted Markdown via a CPU-first routing OCR pipeline (RapidOCR/SLANet/FormulaNet).'
+  zh: '将 Office 文档与 PDF（含扫描件）转换为保留结构的 Markdown，采用 CPU 优先的路由 OCR 流水线（RapidOCR/SLANet/FormulaNet）。'

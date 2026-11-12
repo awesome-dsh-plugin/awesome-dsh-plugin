@@ -1,0 +1,12 @@
+# 提交到精选列表（awesome-dsh-plugin）的条目。
+# 上架 = 把这个文件以 data/plugins/<owner>__dsh-ledger-wealth.yml 的路径提一个 PR。
+# 站点与 DSH 插件市场都从这份数据生成，合并后通常一天内自动收录；两个 README 由脚本生成，不要手改。
+#
+# url 必须与仓库完全一致；描述里的 ": " 必须加引号，否则 YAML 解析失败。
+url: https://github.com/ainachoneko/dsh-ledger-wealth
+name: ainachoneko/dsh-ledger-wealth
+category: tools
+description:
+  en: "Local-first bookkeeping plus a separate wealth-holdings ledger: text entries and receipt OCR through an optional local provider, a running balance, a strictly degrading daily profit chain, and a two-section month-end report where cash and wealth totals are never merged."
+  zh: "本地优先的记账插件，附带独立的理财持仓账本：文字记账与小票 OCR（可选本地 OCR 提供方）、running balance、严格降级的每日收益链，以及现金与理财永不合并的月末双节报告。"
+icon: https://raw.githubusercontent.com/ainachoneko/dsh-ledger-wealth/main/assets/icon-180.png

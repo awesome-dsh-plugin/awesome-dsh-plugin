@@ -1,0 +1,6 @@
+url: https://github.com/KNGLOKIKO/dsh-plugin-approval-zh
+name: KNGLOKIKO/dsh-plugin-approval-zh
+category: ui
+description:
+  en: 'Localizes the DeepSeek Harness approval panel in the web client and translates authorization reasons from English to Chinese, with a built-in phrase dictionary first and a model-router fallback for reasons the dictionary does not cover.'
+  zh: '在 Web 客户端把 DeepSeek Harness 的权限审批面板本地化为中文：授权原因优先走内置词表翻译，词表未收录的由宿主侧模型路由兜底。'

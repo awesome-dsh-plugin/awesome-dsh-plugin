@@ -1,0 +1,6 @@
+url: https://github.com/Leo-Cjw/dsh-pharos
+name: Leo-Cjw/dsh-pharos
+category: notify
+description:
+  en: 'Desktop notifications for DSH: a system toast, a per-kind chime and a tab-title marker when the agent needs you (approval, plan review, question) or a reply finishes in the background; errors, interrupts, usage limits and multi-agent workflow progress alert too. A host half adds SSE delivery, webhook push (WeCom/Feishu/DingTalk/generic), per-turn token/cache/TPS stats, plus three message-format presets (concise, detailed, custom); settings changes auto-save.'
+  zh: 'DSH 桌面消息提醒：模型需要你操作（审批、方案确认、提问）或后台回复完成时，弹系统通知、提示音并标记标签页标题；出错、中断、用量上限与多 agent 工作流进展同样提醒。宿主半提供 SSE 投递、Webhook 推送（企业微信 / 飞书 / 钉钉 / 通用）与当轮统计（token / 缓存 / TPS），以及三档消息格式（简洁 / 详细 / 自定义）与自动保存。'

@@ -1,0 +1,8 @@
+url: https://github.com/YujpVc/ppt-assistant
+name: YujpVc/ppt-assistant
+category: docs
+description:
+  en: End-to-end PowerPoint assistant preset for DeepSeek Harness with editable deck generation, template-preserving edits, rendering and structural quality checks. Needs Python 3.10+ with requirements.txt installed; rendering also needs LibreOffice and pdftoppm, and OCR of scanned documents needs Tesseract.
+  zh: DeepSeek Harness 的一条龙 PowerPoint 助手预设，支持可编辑演示文稿生成、保留模板的修改、渲染和结构质量检查。需 Python 3.10+ 并安装 requirements.txt；渲染另需 LibreOffice 与 pdftoppm，扫描件 OCR 需 Tesseract。
+icon: https://raw.githubusercontent.com/YujpVc/ppt-assistant/master/assets/logo.png
+tarball: https://github.com/YujpVc/ppt-assistant/releases/download/v1.0.0/ppt-assistant-1.0.0.tgz

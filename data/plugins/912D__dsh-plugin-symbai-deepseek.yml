@@ -1,0 +1,6 @@
+url: https://github.com/912D/dsh-plugin-symbai-deepseek
+name: 912D/dsh-plugin-symbai-deepseek
+category: workflow
+description:
+  en: 'A white-box rule workbench for DeepSeek Harness: turn plain-language rules into readable, auditable rule chains executed by a deterministic 171-atom forward-chain engine. Business records stay on the machine; rule generation sends field names and rule text only.'
+  zh: '用 DeepSeek 把大白话业务规则转成可读、可导出的规则链，再由 171 原子前向链引擎确定性执行；业务数据留在本机，生成规则时只发送字段名与规则文本，附完整逻辑库/数据库工作台。'

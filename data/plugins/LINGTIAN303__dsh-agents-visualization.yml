@@ -1,0 +1,6 @@
+url: https://github.com/LINGTIAN303/dsh-agents-visualization
+name: LINGTIAN303/dsh-agents-visualization
+category: tools
+description:
+  en: 'Views, creates and edits AGENTS.md and other AI rule files from the DSH settings page: the project directory chain from project root to cwd, both DSH global roots (~/.dsh and ~/.agents), and user-level rule files of 25 third-party AI tools. Markdown preview is rendered with .mdc frontmatter stripped, edits save in place with conflict detection, files whose content is identical across tools are flagged, and tools outside the built-in list are discovered heuristically. Zero runtime dependencies.'
+  zh: '在 DSH 设置页查看、创建与编辑 AGENTS.md 等 AI 规则文件：项目级跟随工作区从项目根到 cwd 的目录链，全局级覆盖 ~/.dsh 与 ~/.agents，另含 25 个第三方 AI 工具的用户级规则文件。预览以渲染态展示并自动剥离 .mdc 的 frontmatter，就地编辑并带冲突检测，内容完全相同的跨工具文件会互相标注，内置清单之外的工具按目录特征自动发现。零运行时依赖。'

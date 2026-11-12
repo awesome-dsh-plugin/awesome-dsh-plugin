@@ -1,0 +1,6 @@
+url: https://github.com/d0ublecl1ck/dsh-skill-dollar
+name: d0ublecl1ck/dsh-skill-dollar
+category: skill
+description:
+  en: Invoke DSH skills with a $name gesture instead of /name, with a composer picker and the same blue text-reference decoration as /name.
+  zh: 用 $name 手势调用 DSH skill（与 / 命令不冲突），带输入框候选菜单，并让 $name 获得与 /name 相同的蓝色文本引用高亮。

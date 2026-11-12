@@ -1,0 +1,6 @@
+url: https://github.com/yuehancn/dsh-tool-protobuf
+name: yuehancn/dsh-tool-protobuf
+category: tools
+description:
+  en: 'Read, audit and diff Protocol Buffer definitions without installing protoc: a zero-dependency .proto parser exposing six tools (status, outline, describe, diff, audit, next_number). diff classifies every change as breaking, risky or additive and names the wire-format consequence; audit catches what protoc accepts but a reviewer should not — duplicated or illegal field numbers, reserved-range collisions, unresolved types, and unreserved gaps below the high-water mark.'
+  zh: '无需安装 protoc 即可阅读、审查和对比 Protocol Buffer 定义：零依赖 .proto 解析器，提供六个工具（status / outline / describe / diff / audit / next_number）。diff 会把每处改动分级为 breaking、risky、additive 并说明其线上格式后果；audit 能发现 protoc 接受但审查者不该放过的隐患——重复或非法字段编号、与 reserved 区间冲突、类型无法解析，以及高水位线以下未声明的空洞。'

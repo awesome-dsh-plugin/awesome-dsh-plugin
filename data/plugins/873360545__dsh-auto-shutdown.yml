@@ -1,0 +1,6 @@
+url: https://github.com/873360545/dsh-auto-shutdown
+name: 873360545/dsh-auto-shutdown
+category: workflow
+description:
+  en: "Windows-only: adds a switch to Settings → General that powers the computer off when the finished conversation ends (default delay 60 s, configurable 5–86400 s), behind a native countdown dialog that cancels the pending shutdown in one click (shutdown /a)."
+  zh: "仅 Windows：在「设置 → 通用」增加一个开关，本次对话完成后按设定延迟（默认 60 秒，可设 5–86400 秒）自动关机，并弹出原生倒计时窗口，点一下即执行 shutdown /a 取消本次关机。"

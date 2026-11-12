@@ -1,0 +1,7 @@
+url: https://github.com/Morgiana-V3/dsh-feed-the-seek
+name: Morgiana-V3/dsh-feed-the-seek
+category: memory
+description:
+  en: 'Personal cross-session memory in local SQLite, with automatic conversation learning, companion states, and optional semantic retrieval. Currently intended for single-user local use on Windows.'
+  zh: '大肥鱼饲养手册：基于本地 SQLite 的个人跨会话记忆，支持对话自动学习、伙伴状态与可选语义检索，目前面向 Windows 单人本地使用。'
+icon: https://raw.githubusercontent.com/Morgiana-V3/dsh-feed-the-seek/main/public/assets/plugin-icon-v6.png

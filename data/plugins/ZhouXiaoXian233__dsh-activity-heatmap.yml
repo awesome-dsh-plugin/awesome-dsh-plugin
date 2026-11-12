@@ -1,0 +1,7 @@
+url: https://github.com/ZhouXiaoXian233/dsh-activity-heatmap
+name: ZhouXiaoXian233/dsh-activity-heatmap
+category: usage
+description:
+  en: GitHub-style activity heatmap in the sidebar, one cell per day over 30/90/365-day ranges, with token usage and estimated cost per model and editable per-model prices.
+  zh: 侧边栏里的活动热力图，一格一天，支持近 30、90、365 天，统计 token 用量与按模型估算的费用，单价可自行修改。
+icon: https://raw.githubusercontent.com/ZhouXiaoXian233/dsh-activity-heatmap/main/assets/icon.png

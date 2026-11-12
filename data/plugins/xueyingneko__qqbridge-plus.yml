@@ -1,0 +1,6 @@
+url: https://github.com/xueyingneko/qqbridge-plus
+name: xueyingneko/qqbridge-plus
+category: notify
+description:
+  en: 'Diving-Fish score lookup for MaimaiDX inside QQ, plus qq-bridge chat extensions. #查分 renders a B50 with song artwork from an OAuth authorisation that any member can use, and works without the bridge running; the extensions cover balance and auto-shutdown, reasoning tier switching by billing peak hours, holiday-table coverage, start/shutdown greetings, and an in-QQ feature toggle.'
+  zh: '把水鱼（舞萌DX）查分接进 QQ：#查分 查 B50 并渲染带曲绘的成绩图，走 OAuth 授权、不限管理员、且不依赖桥接运行；另附 qq-bridge 聊天拓展——余额与自动关机、推理档位按计费峰谷切换、节假日表覆盖、开机/关机提示词、QQ 内功能开关。'

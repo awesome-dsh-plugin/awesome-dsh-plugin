@@ -1,0 +1,6 @@
+url: https://github.com/yuehancn/dsh-tool-archive
+name: yuehancn/dsh-tool-archive
+category: tools
+description:
+  en: 'Pack a directory into a deterministic tar, read an archive''s contents without extracting it, unpack while refusing every member that could reach outside the destination, and verify what came out against what went in by SHA-256. No external dependency — the tar format is written and read in this plugin. Extraction is deliberately more permissive on reading than on writing, because a reader''s job is to report what an archive says, while a writer must never emit what it cannot read back. A tar has no central index, so the walk tracks whether it reached the end-of-archive marker: without that, a half-file checksums fine and reads as complete.'
+  zh: '把目录打成确定性 tar、不解包就列出内容、解包时逐个成员拒绝任何能写到目标目录之外的名字、并用 SHA-256 核对「解出来的东西 == 打进去的东西」。零外部依赖 —— tar 格式在这个插件里自己写、自己读。读比写更宽容是刻意的：读方的职责是如实报告归档说了什么，写方则绝不能写出自己读不回来的东西。tar 没有中央索引，所以遍历必须跟踪「有没有走到归档结束标记」—— 少了这一步，一个被截断的文件校验和照样正确、照样被读成完整。'

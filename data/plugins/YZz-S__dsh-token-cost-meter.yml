@@ -1,0 +1,6 @@
+url: https://github.com/YZz-S/dsh-token-cost-meter
+name: YZz-S/dsh-token-cost-meter
+category: usage
+description:
+  en: Real-time session token usage and estimated cost in the composer stats row, with pricing fetched from DeepSeek official pricing page.
+  zh: 在输入框下方统计行实时显示当前会话累计 token 消耗与估算费用（人民币），价格从 DeepSeek 官方价格页动态获取。

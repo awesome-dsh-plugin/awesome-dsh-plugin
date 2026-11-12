@@ -1,0 +1,6 @@
+url: https://github.com/SiriusWJ/dsh-updater-npm
+name: SiriusWJ/dsh-updater-npm
+category: dev
+description:
+  en: 'DSH updater + official docs sync in Settings: one-click npm update of @deepseek-ai/dsh with live progress (npm output stream, elapsed timer, monotonic bar), multi-copy protection that only touches the running instance, source-tree mode via git pull, one-click PowerShell 7 install on Windows, incremental sync of the official docs/ with progress, and the dsh_docs_search / dsh_docs_read model tools.'
+  zh: '设置页内的 DSH 更新器 + 官方文档同步器：一键以 npm 全局更新 @deepseek-ai/dsh 并带实时进度（npm 输出流、已运行计时、单调进度条），多副本保护只更新当前运行实例，源码树模式走 git pull；Windows 缺 PowerShell 7 时可一键安装；官方 docs/ 增量同步（按 blob sha 跳过未变文件）带进度条，并提供 dsh_docs_search / dsh_docs_read 模型工具。'

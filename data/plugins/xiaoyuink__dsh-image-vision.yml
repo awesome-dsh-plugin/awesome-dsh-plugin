@@ -1,0 +1,6 @@
+url: https://github.com/xiaoyuink/dsh-image-vision
+name: xiaoyuink/dsh-image-vision
+category: vision
+description:
+  en: 'Image understanding for any DSH model: vision, OCR, grounding, and crop tools with domain presets for histopathology, cell biology, anatomy, clinical images and scientific figures.'
+  zh: '让任意 DSH 模型都能识图：提供 vision/OCR/定位/裁剪四件套工具，内置病理、细胞、解剖、临床与科研统计图等专业预设。'

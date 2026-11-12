@@ -1,0 +1,6 @@
+url: https://github.com/hanxuanliang/dsh-chaos
+name: hanxuanliang/dsh-chaos
+category: workflow
+description:
+  en: Durable multi-agent collaboration for DeepSeek Harness with channels, threads, tasks, and resumable agent sessions.
+  zh: 面向 DeepSeek Harness 的持久化多 Agent 协作插件，提供频道、话题、任务与可恢复的 Agent 会话。

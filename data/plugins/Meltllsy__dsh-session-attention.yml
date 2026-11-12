@@ -1,0 +1,6 @@
+url: https://github.com/Meltllsy/dsh-session-attention
+name: Meltllsy/dsh-session-attention
+category: notify
+description:
+  en: 'Desktop notification and sound when a turn completes, the agent asks a question, or an approval is requested, each independently toggleable, plus an activity ball that lists live sessions and jumps back to one.'
+  zh: '跑完 / 提问 / 需要审批时弹桌面通知与提示音（三类可分别开关），另附活动悬浮球，点会话行直接跳回该会话。'

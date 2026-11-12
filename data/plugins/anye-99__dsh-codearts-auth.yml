@@ -1,0 +1,6 @@
+url: https://github.com/anye-99/dsh-codearts-auth
+name: anye-99/dsh-codearts-auth
+category: model
+description:
+  en: Signs in to Huawei Cloud CodeArts and registers CodeBuddy, WorkBuddy, LobsterAI, Qoder (global and China), TRAE, Cline, Loomy, Raccoon Work, MiniMax Code, TeleAgent, ZCode, Step Code and Antigravity as LLM providers, with per-provider account pools; several of them also show quota balance and daily check-in in the same panel.
+  zh: 华为云 CodeArts 浏览器登录，并把 CodeBuddy、WorkBuddy、LobsterAI、Qoder（国际版与中国版）、TRAE、Cline、Loomy、Raccoon Work、MiniMax Code、TeleAgent、ZCode、Step Code、Antigravity 注册为 LLM 提供商；各 provider 独立账号池，其中多家在同一面板内提供额度余额与每日签到。

@@ -1,0 +1,6 @@
+url: https://github.com/hackernotfound/dsh-tacit
+name: hackernotfound/dsh-tacit
+category: workflow
+description:
+  en: 'Learns what you leave unsaid in your prompts from messy turns and your own corrections, and injects the learned directives into the system prompt of every new conversation; the directives are editable in Settings and a composer button rewrites the current draft with them.'
+  zh: '从不顺的轮次和你自己的纠正中学习你在提示词里没说出口的东西，并把学到的指令注入每个新对话的系统提示；指令可在设置中编辑，输入框按钮可用它们改写当前草稿。'

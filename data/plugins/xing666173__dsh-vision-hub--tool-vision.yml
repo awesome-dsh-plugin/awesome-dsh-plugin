@@ -1,0 +1,6 @@
+url: https://github.com/xing666173/dsh-vision-hub/tree/main/tool-vision
+name: xing666173/dsh-vision-hub#tool-vision
+category: vision
+description:
+  en: 'Enhanced vision toolbox: 14 pixel-level vision tools (describe, ground, detect, crop, pixel-diff, OCR, long-screenshot OCR, vectorize, colors, cutout, screenshot, present, materialize, html-screenshot) driven by one OpenAI-compatible endpoint, with clean \[图片: path] bridge markers, content-safety classification and rate-limit auto-retry.'
+  zh: '增强版视觉工具箱:14 个像素级视觉工具(看图问答/定位/检测/裁剪/像素比对/OCR/长截图OCR/矢量化/取色/抠图/截图/展示/落盘/网页截图),单一 OpenAI 兼容端点驱动,桥接标记极简、规则下沉系统提示,带内容安全识别与限流自动重试。'

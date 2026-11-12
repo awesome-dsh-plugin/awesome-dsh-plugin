@@ -1,0 +1,6 @@
+url: https://github.com/greyoak111/siyuan-codex-bridge
+name: greyoak111/siyuan-codex-bridge
+category: memory
+description:
+  en: 'Connects DeepSeek Harness to a local SiYuan (思源笔记) desktop app: registers its note tools as mcp__siyuan__<tool>, exposes the AI configured in SiYuan together with its agent loop as one more tool, ships a notes skill, and enforces a readonly/authoring/full profile on every call while keeping the tool list available when the app is closed.'
+  zh: '把 DeepSeek Harness 接到本机思源笔记桌面端：把笔记工具注册为 mcp__siyuan__<tool>，额外把思源里配置好的 AI 与其 agent 回路也做成一个工具（按档位门禁），附带笔记使用技能，并在每次调用上执行只读/创作/完整三级策略；思源关闭时工具列表依然可用。'

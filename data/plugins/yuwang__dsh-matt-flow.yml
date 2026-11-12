@@ -1,0 +1,6 @@
+url: https://github.com/yuwang/dsh-matt-flow
+name: yuwang/dsh-matt-flow
+category: workflow
+description:
+  en: "A six-stage development workflow preset for the Matt Pocock skill suite: grill, spec, tickets, implement, review, wrap-up. Adds a stage chip in the composer tool row and decision cards that ask up to three multiple-choice questions at a time."
+  zh: "把 Matt Pocock 技能套件编成六阶段带前置条件的开发工作流预设：拷问、规范、任务、实现、评审、收尾。提供输入框工具行的阶段胶囊，以及一次最多三问、带选项和补充输入框的决策卡片。"

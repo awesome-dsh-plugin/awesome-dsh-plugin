@@ -1,0 +1,6 @@
+url: https://github.com/MichengAI/dsh-automation
+name: MichengAI/dsh-automation
+category: workflow
+description:
+  en: Runs scheduled coding tasks in isolated DeepSeek Harness sessions, managed from Settings or the agent.
+  zh: 在独立会话里按计划执行编码任务，可在设置页或对话里管理。

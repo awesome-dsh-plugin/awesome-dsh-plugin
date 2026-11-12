@@ -1,0 +1,6 @@
+url: https://github.com/SocFeng/dsh-query-jump
+name: SocFeng/dsh-query-jump
+category: session
+description:
+  en: DSH WebUI session query navigation with a faint conversation-edge rail, a hover list of real user queries, and click-to-jump back to the matching bubble.
+  zh: DSH WebUI 会话提问导航：对话区右缘淡色短横线，悬停列出真实用户提问，点击跳回对应气泡。

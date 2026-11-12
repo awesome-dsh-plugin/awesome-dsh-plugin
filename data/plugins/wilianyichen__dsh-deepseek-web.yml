@@ -1,0 +1,6 @@
+url: https://github.com/wilianyichen/dsh-deepseek-web
+name: wilianyichen/dsh-deepseek-web
+category: tools
+description:
+  en: 'Read-only DeepSeek web archive tools for DSH: list/download/search sessions, share-list, and a digest tool that compresses the 100-session history into one high-density page with activity bars and topic clusters. Write operations are intentionally not exposed (the web client rate-limits them). Requires the separately installed deepseek-ops Python client (github.com/Panniantong/deepseek-ops, by another author) with QR-code login; set scriptDir to its path.'
+  zh: 'DSH 内只读访问 DeepSeek 网页版会话归档：列会话/下载全文/搜索索引/分享列表，以及把 100 段会话压缩成一页高密度摘要（含活跃度直方图与主题聚类）的 digest 工具。刻意不暴露写操作（网页版有限流）。需另外安装第三方 deepseek-ops Python 客户端（github.com/Panniantong/deepseek-ops，另一位作者）并扫码登录，在插件配置里把 scriptDir 指向它。'

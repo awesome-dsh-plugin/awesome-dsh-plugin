@@ -1,0 +1,6 @@
+url: https://github.com/xiajiajun516/dsh-config-manager
+name: xiajiajun516/dsh-config-manager
+category: tools
+description:
+  en: 'One-click backup, export, import and migration of a whole DSH config: settings, plugins, MCP, skills and workspaces. Secrets are excluded by default and, if you opt in, are AES-256-GCM encrypted rather than written in the clear; imports preview first and auto-backup with rollback, profiles hold multiple setups, and remote sync pushes portable config through a private Git repo with secrets excluded.'
+  zh: 一键备份、导出、导入与迁移整套 DSH 配置：设置、插件、MCP、技能与工作区。密钥默认不导出；若选择包含，则以 AES-256-GCM 加密而非明文写出。导入先预览、自动备份并可回滚，profile 可保存多套配置，远程同步经私有 Git 仓库推送可移植配置且不含密钥。

@@ -1,0 +1,6 @@
+url: https://github.com/ltl0312/my-dsh-plugins/tree/main/packages/tlsearch
+name: ltl0312/my-dsh-plugins#tlsearch
+category: tools
+description:
+  zh: '低 Token 联网搜索：只把结果裁成 {title, url, snippet} 三个字段返回，厂商附带的 answer / score / raw_content 等一律不进上下文。后端可在 Tavily、Brave、SearXNG、Google CSE、Exa 五种之间配置，主后端失败时按 fallback / chain 顺序自动切换到下一个可用后端（同一后端去重）。返回的 URL 与摘要经清洗，除去跟踪参数。'
+  en: 'Low-token web search that returns only {title, url, snippet} per hit — vendor extras such as answer, score and raw_content never enter the context. Five interchangeable backends (Tavily, Brave, SearXNG, Google CSE, Exa) with automatic failover to the next usable one in fallback / chain order when the primary fails, deduplicating repeated providers. Returned URLs and snippets are sanitized of tracking parameters.'

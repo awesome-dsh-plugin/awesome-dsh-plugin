@@ -1,0 +1,6 @@
+url: https://github.com/henrytian1998/dsh-doctor
+name: henrytian1998/dsh-doctor
+category: dev
+description:
+  en: Diagnose DSH home, leftover processes, ports, and oversized sessions, then write a paste-ready /doctor report.
+  zh: 诊断 DSH home、残留进程、端口与过大 session，并生成可粘贴的 /doctor 报告。

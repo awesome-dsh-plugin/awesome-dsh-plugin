@@ -1,0 +1,7 @@
+url: https://github.com/yunxiao11xie/dsh-compact-header
+name: yunxiao11xie/dsh-compact-header
+category: ui
+icon: https://raw.githubusercontent.com/yunxiao11xie/dsh-compact-header/main/assets/icon-180.png
+description:
+  en: "Compacts the conversation header, moves the View tab row into the title row on wide windows, shows a local clock with session totals, and hides the duplicate composer statistics pills."
+  zh: "收紧会话头部，宽窗口时把 View 标签行并入标题行，在角落显示本地时钟与会话统计，并隐藏输入框下方重复的统计气泡。"

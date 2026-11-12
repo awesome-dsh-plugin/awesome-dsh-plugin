@@ -1,0 +1,7 @@
+url: https://github.com/xueccci/dsh-prompt-lab
+name: xueccci/dsh-prompt-lab
+category: usage
+description:
+  en: 'Agent-structured prompt optimizer for DeepSeek Harness: rewrites composer drafts into role/task/context/constraint/format with normal, slim, and expand modes, a confirm modal with score, continue-optimize, and local, hybrid, DSH, or cloud-API engines.'
+  zh: 'DeepSeek Harness 的 Agent 结构化提示词优化：将输入栏草稿改写为角色/任务/上下文/约束/格式，支持普通/精简/扩写，弹窗含评分与继续优化，引擎可选本地、hybrid、DSH 或云端 API。'
+tarball: https://github.com/xueccci/dsh-prompt-lab/releases/latest/download/dsh-prompt-lab.tgz

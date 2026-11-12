@@ -1,0 +1,6 @@
+url: https://github.com/rakibulrocky14/dsh-cli
+name: rakibulrocky14/dsh-cli
+category: ui
+description:
+  en: Full-screen terminal TUI for DeepSeek Harness with Web-GUI parity, live streaming, agent presets, and DeepSeek blue styling.
+  zh: DeepSeek Harness 全屏终端 TUI 界面，具备 Web GUI 级对齐能力，支持实时流式输出、智能体预设与经典蓝配色。

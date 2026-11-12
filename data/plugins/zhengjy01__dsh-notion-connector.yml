@@ -1,0 +1,6 @@
+url: https://github.com/zhengjy01/dsh-notion-connector
+name: zhengjy01/dsh-notion-connector
+category: memory
+description:
+  en: 'Notion connector for DeepSeek Harness: search, read, query, create, update, and append Notion pages and databases via six agent tools, with a Web settings page — configured once with an Integration Token.'
+  zh: 配置一次 Notion Integration Token，Agent 即可搜索、读取、查询、创建、更新、追加 Notion 页面与数据库内容，并提供 Web 设置页。

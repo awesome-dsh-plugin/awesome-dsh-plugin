@@ -1,0 +1,6 @@
+url: https://github.com/Leni-More/dsh-conv-calendar
+name: Leni-More/dsh-conv-calendar
+category: usage
+description:
+  en: 'GitHub-style contribution grid in the Web sidebar showing how many prompts you sent each day, with a switch to count conversations, total tokens or output tokens instead. Counts only messages you sent yourself; injected context is excluded.'
+  zh: 'Web 侧边栏的 GitHub 风格日历网格，按天展示你发出的对话条数，可切换为会话数、Token 总量或输出 Token。只统计你亲手发送的消息，注入的上下文不计入。'

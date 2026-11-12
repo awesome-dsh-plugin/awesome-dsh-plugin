@@ -1,0 +1,6 @@
+url: https://github.com/Firefly-TheHerta/dsh-boot-video-manager
+name: Firefly-TheHerta/dsh-boot-video-manager
+category: ui
+description:
+  en: 'A companion playlist panel for the dsh-boot-animation intro-video plugin: add clips without leaving the app, order them, and switch between sequential, random and single-clip playback. Sequential order is made deterministic by parking every clip except the one due to play in a disabled/ subdirectory of the same asset folder and rotating it back in on each boot, leaving the upstream plugin unpatched. Also supports recycling instead of deleting, pinning one clip for every launch, per-clip opt-out, and .mp4/.webm/.m4v/.mov files including non-ASCII names.'
+  zh: '给开屏动画插件 dsh-boot-animation 配的播放入口面板：不用离开 app 就能加入视频、排好先后，并在「顺序播放 / 随机播放 / 单次播放」之间切换。顺序播放不修改上游插件也能做到确定性——除该播的那支外，参与播放的素材都停在同一个素材目录下的 disabled/ 里排队，每次启动自动轮换。还支持回收而不是删除、固定每次播同一支、逐条取消参与，以及 .mp4/.webm/.m4v/.mov（含非 ASCII 文件名）。'

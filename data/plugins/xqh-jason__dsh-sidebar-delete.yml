@@ -1,0 +1,6 @@
+url: https://github.com/xqh-jason/dsh-sidebar-delete
+name: xqh-jason/dsh-sidebar-delete
+category: session
+description:
+  en: "Delete sessions for real from the dsh sidebar (local logs and projection cache included, subagent and fork children cascade) and manage workspaces and ungrouped sessions, with an optional daily cleanup of ungrouped sessions."
+  zh: "在 dsh 侧栏真正删除会话（连带本地日志与投影缓存，子代理与 fork 子会话级联）并管理工作区与未分组会话，可选每天定时清理未分组会话。"

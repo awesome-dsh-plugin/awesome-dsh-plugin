@@ -1,0 +1,6 @@
+url: https://github.com/MoonlitDropOfBlood/dsh-token-stats
+name: MoonlitDropOfBlood/dsh-token-stats
+category: usage
+description:
+  en: 'Token usage statistics for DeepSeek Harness: per-model daily and range charts plus a yearly contributions heatmap.'
+  zh: 'DeepSeek Harness 的 Token 用量统计：近 7 天/30 天按模型的柱状图、饼图，外加近一年每日活跃热力图。'

@@ -1,0 +1,6 @@
+url: https://github.com/jgao9906-droid/dsh-task-toast
+name: jgao9906-droid/dsh-task-toast
+category: notify
+description:
+  en: Top-right status plate for six session states (complete, error, approval, question, unopenable, subagent), plus an OS notification when you are away.
+  zh: 右上角状态提示板，覆盖六种会话状态（完成、出错、待授权、待回答、会话打不开、子 agent 在跑），不在看 DSH 时发系统通知。

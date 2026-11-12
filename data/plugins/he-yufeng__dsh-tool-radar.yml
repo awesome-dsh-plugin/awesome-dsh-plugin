@@ -1,0 +1,6 @@
+url: https://github.com/he-yufeng/dsh-tool-radar
+name: he-yufeng/dsh-tool-radar
+category: git
+description:
+  en: 'Score a GitHub repo''s contribution-friendliness from live merge and maintainer evidence.'
+  zh: '用活的合并与维护者证据，给一个 GitHub 仓库的对外贡献友好度打分。'

@@ -1,0 +1,6 @@
+url: https://github.com/liliuCourier/dsh-chat-outline
+name: liliuCourier/dsh-chat-outline
+category: ui
+description:
+  en: 'Persistent conversation outline: per-turn questions and final replies, keyword filter, one-click jump, light/full history modes, and Ctrl/Shift+click to open the same position in the Trajectory view.'
+  zh: 对话栏左侧常驻大纲：按轮次列出提问与最后回复，关键词过滤与一键跳转，轻便/全面两种历史模式，按住 Ctrl/Shift 单击可跳到轨迹视图同一位置。

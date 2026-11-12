@@ -1,0 +1,7 @@
+url: https://github.com/nanwu98/dsh-desktop-autostart-win
+name: nanwu98/dsh-desktop-autostart-win
+category: dev
+tarball: https://github.com/nanwu98/dsh-desktop-autostart-win/releases/download/v1.0.0/dsh-desktop-autostart-win-1.0.0.tgz
+description:
+  en: Adds a Settings page with one switch that writes or removes the current user's Windows Run entry for the DeepSeek Harness desktop app, detects the installed executable from the running app, App Paths, the default install folders or the installer records, and clears the Task Manager disabled flag.
+  zh: 在设置里增加一页和一个开关，用于写入或删除当前用户的 Windows 启动项（HKCU Run）；从正在运行的桌面版、App Paths、默认安装目录或安装器记录中自动找到 exe，并清除任务管理器里的禁用标记。

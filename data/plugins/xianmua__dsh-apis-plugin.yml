@@ -1,0 +1,6 @@
+url: https://github.com/xianmua/dsh-apis-plugin
+name: xianmua/dsh-apis-plugin
+category: tools
+description:
+  en: Registers any set of HTTP APIs as paired doc-query and request tools for the agent.
+  zh: 把任意一套 HTTP 接口注册成 agent 可用的文档查询与请求双工具。

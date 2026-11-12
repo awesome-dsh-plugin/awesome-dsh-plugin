@@ -1,0 +1,6 @@
+url: https://github.com/Q1hangL/dsh-ask-guard
+name: Q1hangL/dsh-ask-guard
+category: tools
+description:
+  en: 'Cooperative timeout guard for ask_user_question: lost or unanswered questions resolve as a structured ASK_TIMEOUT instead of hanging the turn forever.'
+  zh: 为 ask_user_question 提供协作式超时守卫：提问卡片丢失或用户未答复时以结构化 ASK_TIMEOUT 结束调用，避免回合无限挂起。

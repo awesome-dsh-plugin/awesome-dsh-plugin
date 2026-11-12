@@ -1,0 +1,6 @@
+url: https://github.com/wodongx123/dsh-qq-notify
+name: wodongx123/dsh-qq-notify
+category: notify
+description:
+  en: 'Send QQ private-message notifications via a local NapCat bot: qq_send / qq_status / qq_napcat / qq_deploy native tools plus one-click deployment scripts.'
+  zh: '通过本机 NapCat 机器人向主号 QQ 发送私聊通知：qq_send/qq_status/qq_napcat/qq_deploy 原生工具与一键部署脚本。'

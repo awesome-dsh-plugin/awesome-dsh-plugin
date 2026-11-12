@@ -1,0 +1,6 @@
+url: https://github.com/beijingwahw/dsh-nuke-plugin
+name: beijingwahw/dsh-nuke-plugin
+category: tools
+description:
+  en: 'Transactional uninstall engine: every destructive action runs validate/preview/execute/undo with Saga rollback, WAL crash recovery, hash-chain audit, hardlink dedup, and a Bayesian oracle that predicts success probability before you commit.'
+  zh: '事务化卸载引擎：每个破坏性动作走 validate/preview/execute/undo 四段式并带 Saga 回滚，WAL 崩溃恢复、hash chain 审计、硬链接去重，提交前先知推演成功率。'

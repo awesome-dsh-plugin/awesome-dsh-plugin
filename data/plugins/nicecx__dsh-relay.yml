@@ -1,0 +1,6 @@
+url: https://github.com/nicecx/dsh-relay
+name: nicecx/dsh-relay
+category: notify
+description:
+  en: 'Relay agent approval requests and questions to iMessage / Email / WeChat channels and resolve them by replying with the request number (#N 批准 / 拒绝 / 回答).'
+  zh: 把 agent 的审批与提问诉求推送到 iMessage / 邮件 / 微信通道，回复 `#编号 批准/拒绝/回答` 即可处理，无需打开网页。

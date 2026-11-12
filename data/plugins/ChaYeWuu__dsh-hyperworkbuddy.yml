@@ -1,0 +1,7 @@
+url: https://github.com/ChaYeWuu/dsh-hyperworkbuddy
+name: ChaYeWuu/dsh-hyperworkbuddy
+category: model
+description:
+  en: Bring the WorkBuddy accounts signed in on this machine into DSH, managing CN and international accounts separately. Supports automatic failover between accounts, one-click refresh of model catalogs and credits, the CN daily check-in, and a togglable OpenAI-compatible endpoint.
+  zh: 将本机登录的 WorkBuddy 多账号接入 DSH，国内版与国际版分开管理。支持账号故障自动切换、一键刷新模型目录与积分、国内版每日签到，以及可开关的 OpenAI 兼容端点。
+

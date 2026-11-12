@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-sensitivity-classification
+name: liuhange789/data-asset-inspector#data-sensitivity-classification
+category: tools
+description:
+  zh: "数据敏感度分类插件 — 自动识别敏感字段+分级（高/中/低/公开）"
+  en: "Data sensitivity classification plugin that auto-identifies sensitive fields and classifies them into high/medium/low/public levels."

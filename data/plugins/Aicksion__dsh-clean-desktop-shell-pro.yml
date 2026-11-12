@@ -1,0 +1,6 @@
+url: https://github.com/Aicksion/dsh-clean-desktop-shell-pro
+name: Aicksion/dsh-clean-desktop-shell-pro
+category: ui
+description:
+  en: 'Enhanced desktop shell for DSH: auto-starts the local backend on launch (no browser tab), asks before closing the backend on quit, and starts the backend in parallel with Electron for faster cold start. Fork of dsh-clean-desktop-shell.'
+  zh: 'DSH 桌面壳增强版：启动即自动拉起后端（不弹浏览器）、退出时询问是否关闭后端、后端与窗口并行启动加速冷启动。基于 dsh-clean-desktop-shell 的 fork。'

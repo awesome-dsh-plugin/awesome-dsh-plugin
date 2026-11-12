@@ -1,0 +1,6 @@
+url: https://github.com/ysyyhhh/dsh-pet
+name: ysyyhhh/dsh-pet
+category: ui
+description:
+  en: Native desktop pet for DSH that follows agent activity, supports Codex pet packages, and imports approved pets directly from Petdex without its CLI.
+  zh: 跟随 agent 状态的 DSH 原生桌宠，兼容 Codex 桌宠包，并可在插件内直接从 Petdex 导入已审核桌宠，无需 Petdex CLI。

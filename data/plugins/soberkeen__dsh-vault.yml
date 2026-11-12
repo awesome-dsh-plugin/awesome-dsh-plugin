@@ -1,0 +1,7 @@
+url: https://github.com/soberkeen/dsh-vault
+name: soberkeen/dsh-vault
+category: tools
+description:
+  en: 'Encrypted, chunked full backups of a DSH installation: config, sessions, plugins, workspaces and Hindsight memory packed into AES-256-GCM volumes that unlock by passphrase, recovery code or this machine''s DPAPI slot, each package carrying a self-contained restorer, GFS rotation (last, daily, weekly, monthly, plus a total size cap and a recycle bin) and network or WebDAV targets. Zero external dependencies — node: builtins only, no 7z, openssl or rclone.'
+  zh: '把 DSH 的配置、会话、插件、工作区与 Hindsight 记忆加密分卷打包：AES-256-GCM 卷可用口令、恢复码或本机 DPAPI 免密槽解开，包内自带自包含还原器；GFS 四档滚动保留（最近 / 每日 / 每周 / 每月，另有总体积上限与回收站），支持网络路径与 WebDAV 目标。零外部依赖，只用 node: 内置模块，不需要 7z、openssl 或 rclone。'
+tarball: https://github.com/soberkeen/dsh-vault/releases/download/v0.2.0/lingfengmow-dsh-vault-0.2.0.tgz

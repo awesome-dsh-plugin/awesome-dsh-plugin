@@ -1,0 +1,6 @@
+url: https://github.com/Z-Asset/ZA_analysis
+name: Z-Asset/ZA_analysis
+category: workflow
+description:
+  en: Model training stage — end-to-end analysis, model training, and estimation for asset pricing and machine learning research. Ships one skill.
+  zh: 模型训练与结论阶段——资产定价与机器学习研究的端到端分析、模型训练与估计。附带一个 skill。

@@ -1,0 +1,6 @@
+url: https://github.com/DaJiang07/dsh-plugin-backup
+name: DaJiang07/dsh-plugin-backup
+category: dev
+description:
+  en: "Moves a DSH profile to another machine with its plugins, not only its files: packs the plugin bundle selection and the whole settings layer into one JSON file, then on restore writes the configuration back, restores local plugin sources and plugin-owned data, and installs the plugin bundles the backup recorded that the new machine is missing (plugin manager first, pnpm as a fallback)."
+  zh: '换机迁移 DSH profile，连插件本身一起：把插件包选择与整个配置层打包成一个 JSON 文件，恢复时写回配置、还原本地插件源码与插件数据，并安装备份里记录、新机器缺失的插件包（优先插件管理器，失败回退 pnpm）。'

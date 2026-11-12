@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-invoice-tools
+name: 988hj7tczd-oss/dsh-invoice-tools
+category: tools
+description:
+  en: "Parse Chinese e-invoice PDFs (XML attachment first, text-layer regex fallback) into structured JSON with amount cross-check, and generate expense reports (Markdown / xlsx)."
+  zh: "解析增值税电子发票 PDF（XML 附件优先、文本层正则兜底）为结构化 JSON + 金额勾稽校验，多张汇总生成报销单（Markdown / xlsx）。"

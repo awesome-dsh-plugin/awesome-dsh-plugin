@@ -1,0 +1,7 @@
+url: https://github.com/ruisenbai/dsh-turn-fold
+name: ruisenbai/dsh-turn-fold
+category: ui
+description:
+  en: 'Folds streaming reasoning and tool calls into collapsed step bars and collapses each finished turn into a single summary bar; step bars show native tool icons, filenames, edited line counts, and failure counts, finished turns restore duration, first-token time, token usage, generation speed, and cache hit metrics from recorded Session events, and preferences persist on the Host. Changes browser presentation only. Requires DSH 0.1.5-alpha.1.'
+  zh: '流式回复期间将推理与工具调用折叠为收起的步骤栏，回合完成后整轮收拢为一条摘要栏；步骤栏显示原生工具图标、文件名、编辑增删行数与失败计数，已完成回合从记录的 Session 事件恢复耗时、首字延迟、Token 用量、生成速度与缓存命中率，偏好由 Host 持久保存。仅改变浏览器呈现，需要 DSH 0.1.5-alpha.1。'
+tarball: https://github.com/ruisenbai/dsh-turn-fold/releases/latest/download/dsh-turn-fold.tgz

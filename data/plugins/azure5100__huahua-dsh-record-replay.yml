@@ -1,0 +1,6 @@
+url: https://github.com/azure5100/huahua-dsh-record-replay
+name: azure5100/huahua-dsh-record-replay
+category: session
+description:
+  en: 'Full-featured record & replay for DSH (works on Windows) from the huahua plugin series: replay every auto-recorded session as a readable timeline, export/import shareable replay packs, re-run conversations in a fresh session, and record screen operations to auto-generate installable SKILL.md skills. Includes a 4-file Windows adaptation of kangshifu1/dsh-record-replay for DSH rc.5 (see README derivative notice).'
+  zh: '功能完整的 DSH 录制回放插件（huahua 出品，Windows 实测可用）：会话时间线回放、回放包导出/导入、复刻会话重新执行、录屏自动生成可安装技能。基于 kangshifu1/dsh-record-replay 做 4 处 Windows/rc.5 适配（见 README 衍生声明）。'

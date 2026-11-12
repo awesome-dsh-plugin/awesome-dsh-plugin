@@ -1,0 +1,6 @@
+url: https://github.com/swarm-apps/dsh-swarmdrop
+name: swarm-apps/dsh-swarmdrop
+category: remote
+description:
+  en: 'Device channel between the agent and your own phone: it sends files it just produced, and you @-reference what your phone sent back. End-to-end encrypted P2P through the SwarmDrop CLI, with no account and no public IP; node status, paired devices and QR pairing sit in a sidebar panel.'
+  zh: '在 agent 和你自己的手机之间开一条设备通道：agent 把刚产出的文件发过去，手机传回来的东西可以在输入框里 @ 引用。底层经 SwarmDrop CLI 走端到端加密的 P2P，不需要账号，也不需要公网 IP；节点状态、已配对设备与扫码配对都在侧边栏面板里。'

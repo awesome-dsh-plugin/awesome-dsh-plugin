@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-mcp-registry
+name: drscrewdriver/dsh-mcp-registry
+category: dev
+description:
+  en: 'A governed registry for MCP connectors (stdio and streamable-http): four-level fail-closed authorization, mcpServers JSON import that rejects malformed args, credential redaction at every output boundary, an agent bridge that returns an honest review verdict instead of a fake approval, and a /mcp-reg operator console plus a settings page.'
+  zh: 'MCP 连接器（stdio / streamable-http）的受治理注册表：四级 fail-closed 授权、mcpServers JSON 导入对畸形 args 大声报错、输出边界全程脱敏、agent 桥接返回诚实 review 而非伪装放行，配 /mcp-reg 操作台与设置页。'

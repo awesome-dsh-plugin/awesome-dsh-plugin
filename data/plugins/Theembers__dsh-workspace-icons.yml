@@ -1,0 +1,7 @@
+url: https://github.com/Theembers/dsh-workspace-icons
+name: Theembers/dsh-workspace-icons
+category: ui
+description:
+  en: 'Adds per-workspace icons and a default session icon to the DeepSeek Harness sidebar. The workspace icon is picked inside the existing rename-workspace dialog; sessions without an IM channel get a default icon drawn with the same title pseudo-element the IM plugin uses, so the two stay aligned, while IM sessions keep their channel logo. Session rows are indented one level under their workspace with a vertical guide line. Icons come from 73 built-in Lucide glyphs, uploaded SVGs, or linked Iconify collections browsed from the official catalog, and follow the theme colors instead of a custom palette.'
+  zh: '为 DeepSeek Harness 侧栏添加逐工作区图标与默认会话图标。工作区图标在原有的「重命名工作区」弹窗里选取；没有 IM 渠道的会话显示默认图标，画法与 IM 插件同源的标题伪元素一致、两者对齐，已有渠道 logo 的会话保持原样。会话行相对工作区多缩进一级并带一条竖直引导线。图标来自 73 个内置 Lucide 图标、上传的 SVG，或从官方目录关联的 Iconify 图标库；配色跟随主题，不提供自定义调色。'
+icon: https://raw.githubusercontent.com/Theembers/dsh-workspace-icons/main/assets/icon-180.png

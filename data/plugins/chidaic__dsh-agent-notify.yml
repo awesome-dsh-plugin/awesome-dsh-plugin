@@ -1,0 +1,6 @@
+url: https://github.com/chidaic/dsh-agent-notify
+name: chidaic/dsh-agent-notify
+category: notify
+description:
+  en: 'Windows system-level notifications when the agent finishes a task or needs your input: task-done, question, approval and plan-review alerts via the browser Notification API, click-to-open the session, background-only mode, and a first-level settings page (Settings → 任务提示).'
+  zh: 任务完成或需要你输入/批准时弹出 Windows 系统通知（浏览器 Notification API）：完成/提问/审批/计划审阅提醒，点击气泡直达会话，支持后台模式，设置页在官方设置 → 任务提示。

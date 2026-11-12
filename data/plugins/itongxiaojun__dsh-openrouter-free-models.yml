@@ -1,0 +1,6 @@
+url: https://github.com/itongxiaojun/dsh-openrouter-free-models
+name: itongxiaojun/dsh-openrouter-free-models
+category: model
+description:
+  en: "Discovers OpenRouter's free models, measures their real speed and context size, and writes them into the DeepSeek Harness model list fastest-first, with speed and context in each display name, plus a Settings section to configure and run it."
+  zh: "自动筛选 OpenRouter 免费模型，实测真实速度与上下文大小，并按速度从快到慢写入 DeepSeek Harness 模型列表，模型名中带上速度与上下文，同时在设置中新增「免费模型」配置页。"

@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-date-wrapper
+name: drscrewdriver/dsh-date-wrapper
+category: session
+description:
+  en: Compresses DSH time-context from ~280 chars to 46 chars by injecting a compact date line into the runtime-context snapshot; zero runtime dependencies.
+  zh: 将 DSH 时间上下文从约 280 字符压缩到 46 字符，向运行期快照注入紧凑日期行，无运行时依赖。

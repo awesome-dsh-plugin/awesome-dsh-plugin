@@ -1,0 +1,6 @@
+url: https://github.com/EPCN-fla/dsh-prompt-translation
+name: EPCN-fla/dsh-prompt-translation
+category: tools
+description:
+  en: Translates user prompts before sending and translates model reasoning and replies back into the user's language via translation APIs or configured DSH models, with independent content toggles and a composer menu.
+  zh: 通过翻译 API 或 DSH 已配置的模型，在发送前翻译用户提示词，并将模型思考文本和回答译回用户语言，提供独立内容开关和输入框快捷菜单。

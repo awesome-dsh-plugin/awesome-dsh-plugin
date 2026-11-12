@@ -1,0 +1,6 @@
+url: https://github.com/naturalth2012/dsh-ai-nav
+name: naturalth2012/dsh-ai-nav
+category: tools
+description:
+  en: 'Hao123-style AI navigation page: 95 verified entries across 8 categories, a search box matching names, aliases and pinyin initials, per-site in-site search, bookmark HTML import, a favicon proxy that keeps the page free of third-party requests, and an offline rules-based recommender that suggests a complementary tool stack for a stated need.'
+  zh: '早期导航站风格的 AI 入口页：8 个分类共 95 个核验过的入口，搜索框支持名称、别名与拼音缩写，可跳到站点自带搜索，支持浏览器书签导入；图标走同源代理，页面不直连第三方；另有离线规则推荐，按一句话需求给出互补的工具组合。'

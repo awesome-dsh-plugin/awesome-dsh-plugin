@@ -1,0 +1,6 @@
+url: 'https://github.com/AmethystLuna/embedded-workbench'
+name: AmethystLuna/embedded-workbench
+category: skill
+description:
+  en: 'Embedded C/C++ firmware development toolbox: agents and skills covering FreeRTOS, interrupts, NVM storage, Keil MDK, ARMCLANG, HardFault triage, state machines, architecture, and LVGL patterns.'
+  zh: 嵌入式 C/C++ 固件开发工具箱：代理与技能覆盖 FreeRTOS、中断、NVM 存储、Keil MDK、ARMCLANG、HardFault 分析、状态机、架构原则与 LVGL 陷阱。

@@ -1,0 +1,6 @@
+url: https://github.com/GreyRaphael/dsh-web-fetch-moli
+name: GreyRaphael/dsh-web-fetch-moli
+category: browser
+description:
+  en: 'Ultra-lightweight Moli (Rust headless browser) web-fetch provider for DeepSeek Harness: renders complex SPAs, micro-frontends, and dynamic pages with ~60MB memory.'
+  zh: '基于超轻量 Rust 无头浏览器 Moli 的 web_fetch 提供方：专为微前端与复杂 SPA 渲染设计，内存占用仅约 60MB。'

@@ -1,0 +1,6 @@
+url: https://github.com/Yeoksin/dsh-usage-wallet
+name: Yeoksin/dsh-usage-wallet
+category: usage
+description:
+  en: "Unofficial fork of dougen/dsh-deepseek-usage (baseline v0.16.0): sidebar balance and quota card for the active model provider, covering DeepSeek, Moonshot, Z.ai, OpenRouter, Kimi, MiniMax and OpenCode, plus Alibaba Cloud voucher balance for qwen-token-plan (BSS OpenAPI with AccessKey) and Xiaomi MiMo console balance with token-plan usage (console cookie). Ships a provider query-status page and per-token unit prices. Do not install it alongside upstream dsh-deepseek-usage: both render the same sidebar card."
+  zh: "dougen/dsh-deepseek-usage 的非官方分支（基线 v0.16.0）：侧边栏余额与配额卡片，显示当前模型提供商的账户读数：DeepSeek、Moonshot、Z.ai、OpenRouter、Kimi、MiniMax、OpenCode；并为 qwen-token-plan 读取阿里云代金券余额（BSS OpenAPI + AccessKey），为小米 MiMo 读取控制台余额与套餐用量（控制台 Cookie）。另提供各提供商查询状态页与每 token 单价。不要与上游 dsh-deepseek-usage 同装：两者会渲染同一张侧边栏卡片。"

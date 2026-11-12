@@ -1,0 +1,6 @@
+url: https://github.com/ltayshark0637/dsh-Shutdown-Guard
+name: ltayshark0637/dsh-Shutdown-Guard
+category: ui
+description:
+  en: 'Adds a sidebar card to DeepSeek Harness (Windows verified) that shuts the machine down once every task finishes and the card is armed, holding back while background jobs, errored sessions or manual interruptions are still in play; the 1.6.1 beta adds restart, sleep, hibernation, lock, sign-out and user-supplied scripts, and mounts on macOS and Linux too (implemented, not yet tested there).'
+  zh: '在 DeepSeek Harness 侧边栏加一张卡片（Windows 已验证），武装后等所有任务结束自动关机；后台任务在跑、本批次有会话报错、或你手动中断过，都会按条件暂缓并说明原因。1.6.1 beta 另加重启、睡眠、休眠、锁屏、注销与自定义脚本，并可在 macOS 与 Linux 上挂载（已实现，尚未在真机实测）。'

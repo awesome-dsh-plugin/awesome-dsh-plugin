@@ -1,0 +1,6 @@
+url: https://github.com/D2Moqi/dsh-openwiki
+name: D2Moqi/dsh-openwiki
+category: docs
+description:
+  en: 'Brings the codebase knowledge-base capability of langchain-ai/openwiki into DSH — one-click generate/read/update of the repository Wiki, Grounded Claims (source-traced knowledge cards) and a project knowledge base built from uploaded local files, reusing the model DSH already has configured, with no second API key.'
+  zh: '把 langchain-ai/openwiki 的代码库知识库能力搬进 dsh —— 一键生成 / 阅读 / 更新仓库 Wiki 与 Grounded Claims（溯源知识卡片）与项目知识库（上传本地文件），直接复用 DSH 已配置的模型，无需二次填 Key。'

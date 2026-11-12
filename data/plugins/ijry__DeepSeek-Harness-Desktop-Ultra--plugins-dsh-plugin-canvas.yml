@@ -1,0 +1,6 @@
+url: https://github.com/ijry/DeepSeek-Harness-Desktop-Ultra/tree/main/plugins/dsh-plugin-canvas
+name: ijry/DeepSeek-Harness-Desktop-Ultra#dsh-plugin-canvas
+category: session
+description:
+  en: Infinite canvas for sessions, with regions bound to workspaces and agent presets, pinned session cards, sticky notes and alignment guides.
+  zh: 无限会话画布，区域绑定工作区与智能体预设，可钉住会话卡片、放置便签，带对齐参考线。

@@ -1,0 +1,6 @@
+url: https://github.com/Nancy0-0/dsh-code-nav/tree/main/packages/symbol-links
+name: Nancy0-0/dsh-code-nav#symbol-links
+category: docs
+description:
+  en: Makes identifiers inside inline code in chat clickable; resolves a definition, then a wrapper, then the next occurrence, and opens the file at that line in the sidebar preview.
+  zh: 让聊天里行内代码中的标识符可点击：按定义、包装函数、顺序出现三级回退解析，在右侧预览打开文件并定位到对应行。

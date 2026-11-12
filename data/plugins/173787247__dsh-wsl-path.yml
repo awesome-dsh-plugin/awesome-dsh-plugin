@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-path
+name: 173787247/dsh-wsl-path
+category: wsl
+description:
+  en: Converts Linux and Windows paths with /mnt/c caveats for WSL.
+  zh: 在 WSL 下转换 Linux 与 Windows 路径，并说明 /mnt/c 注意点。

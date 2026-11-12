@@ -1,0 +1,6 @@
+url: https://github.com/ankye/dsh-image-generation/tree/main/packages/tool-image-generation
+name: ankye/dsh-image-generation#tool-image-generation
+category: vision
+description:
+  en: Model-facing image-generation tool with a configurable channel and normalized image parameters.
+  zh: 面向模型的图像生成工具，提供可配置通道和标准化图像参数。

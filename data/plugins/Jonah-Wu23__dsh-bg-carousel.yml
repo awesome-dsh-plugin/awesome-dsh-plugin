@@ -1,0 +1,7 @@
+url: https://github.com/Jonah-Wu23/dsh-bg-carousel
+name: Jonah-Wu23/dsh-bg-carousel
+category: theme
+description:
+  en: Rotates images and videos from a media folder as the DSH UI background, with panel controls for the rotation interval and UI opacity.
+  zh: 把媒体目录中的图片与视频自动轮换为 DSH 界面背景，面板可调轮播间隔与界面透明度。
+tarball: https://github.com/Jonah-Wu23/dsh-bg-carousel/releases/download/v0.3.0/jonahwu-dsh-bg-carousel-0.3.0.tgz

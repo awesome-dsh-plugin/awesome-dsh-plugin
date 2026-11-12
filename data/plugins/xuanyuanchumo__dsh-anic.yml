@@ -1,0 +1,8 @@
+url: https://github.com/xuanyuanchumo/dsh-anic
+name: xuanyuanchumo/dsh-anic
+category: workflow
+icon: https://github.com/xuanyuanchumo/dsh-anic/raw/master/assets/icon-180.png
+description:
+  en: 'AI-native iteration cycle: 24 anic_* tools and 77 HTTP routes that run evaluation, convergence gates, and auto-fix loops across projects, with a live white-box panel (interactive workflow graph, invocation feed, autonomy gauge, gate ledger, HITL queue) and an inline installable SKILL.md workflow kit.'
+  zh: 'AI 原生迭代循环：24 个 anic_* 工具与 77 个 HTTP 路由驱动跨项目评估、收敛门禁与自动修复循环，附带实时白盒面板（可交互工作流图、调用流、自主级仪表带、门禁账本、HITL 队列）与可内联安装的 SKILL.md 工作流套件。'
+tarball: https://github.com/xuanyuanchumo/dsh-anic/releases/latest/download/dsh-anic.tgz

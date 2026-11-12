@@ -1,0 +1,6 @@
+url: https://github.com/guoliyuan97-png/dsh-game-hud
+name: guoliyuan97-png/dsh-game-hud
+category: ui
+description:
+  en: 'Game-style floating HUD: balance HP bar, context MP bar, official peak/valley pricing with countdown, auto-compaction under 5% remaining, and memory-carrying new conversation.'
+  zh: '游戏风格悬浮 HUD：余额血条、上下文蓝条、官方峰谷定价与切换倒计时、上下文不足5%自动压缩、携带记忆开启新对话。'

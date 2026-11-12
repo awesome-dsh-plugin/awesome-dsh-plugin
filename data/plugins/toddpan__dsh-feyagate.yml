@@ -1,0 +1,7 @@
+url: https://github.com/toddpan/dsh-feyagate
+name: toddpan/dsh-feyagate
+category: tools
+description:
+  en: DSH plugin that installs, supervises and auto-upgrades the local miloco-mcp-server background service, bridges its MCP tools into DSH and adds service, account and license settings panels.
+  zh: 在 DSH 中安装、守护并自动升级本机 miloco-mcp-server 后台服务，把它的 MCP 工具接入 DSH，并提供服务、账号与授权设置界面。
+tarball: https://github.com/toddpan/dsh-feyagate/releases/download/v0.3.2/dsh-external-dsh-feyagate-gateway-0.3.2.tgz

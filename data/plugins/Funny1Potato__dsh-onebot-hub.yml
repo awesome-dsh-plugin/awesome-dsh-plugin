@@ -1,0 +1,6 @@
+url: https://github.com/Funny1Potato/dsh-onebot-hub
+name: Funny1Potato/dsh-onebot-hub
+category: notify
+description:
+  en: 'OneBot v11 hub: sits between an upstream OneBot implementation (LLOneBot and similar) and downstream bot implementations, relaying events and actions verbatim, and gives the agent a per-session timeline, an action ledger, layered memory (active topics and tasks, long-term events, person and group profiles) and onebot_* tools for replying, media, members and raw API calls.'
+  zh: 'OneBot v11 枢纽：夹在上游 OneBot 实现（LLOneBot 等）与下游 bot 实现之间，逐字转发事件与动作；给 agent 一条按会话的时间线、动作账本、分层记忆（进行中的话题与任务、长期事件、人物与群档案）以及一组 onebot_* 工具（回复、媒体、成员、原始 API 调用）。'

@@ -1,0 +1,6 @@
+url: https://github.com/let-mi-think/agent-manager
+name: let-mi-think/agent-manager
+category: identity
+description:
+  en: Create and configure Agent presets from a single settings section — persona prompt, a checked knowledge-base entry list injected into the system prompt, individual switches for four knowledge-base tools, per-Agent narrowing of MCP connections, and batch knowledge-base import.
+  zh: 在一个设置分区里新建与配置 Agent 预设——人格提示词、勾选后注入系统提示的知识库条目清单、四个知识库工具的独立开关、按 Agent 收窄 MCP 连接，以及知识库批量导入。

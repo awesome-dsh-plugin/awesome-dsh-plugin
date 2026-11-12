@@ -1,0 +1,6 @@
+url: https://github.com/ZSeven-W/dsh-noema
+name: ZSeven-W/dsh-noema
+category: memory
+description:
+  en: 'Long-term memory for DSH agents — durable, inspectable memories with recall, search, browse and knowledge-graph tools, import from ten other AI coding tools, and a settings page.'
+  zh: '为 DSH Agent 提供长期记忆——可检索、可检视的持久记忆，带回忆、搜索、浏览与知识图谱工具，支持从十个其他 AI 编码工具导入记忆，并附设置页。'

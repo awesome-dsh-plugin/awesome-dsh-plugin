@@ -1,0 +1,6 @@
+url: https://github.com/Da0Mine/dsh-hide-update-badge
+name: Da0Mine/dsh-hide-update-badge
+category: ui
+description:
+  en: 'Hides the built-in DSH Desktop update badge (the download-arrow "新版本" pill beside the account button): a CSS rule for the current build plus accessible-label matching with a throttled MutationObserver, so it keeps working after a DSH upgrade. Update checking, the manual "Check for updates" menu item and the connection indicator are untouched.'
+  zh: '隐藏 DSH 桌面版自带的更新角标（账号按钮右边那颗「下载箭头 + 新版本」胶囊）：当前构建用一条 CSS 规则压掉，再叠一层按无障碍标签识别 + 节流 MutationObserver 的兜底，宿主升级后仍大概率有效；更新检查、菜单里的「检查更新」和连接指示器都不受影响。'

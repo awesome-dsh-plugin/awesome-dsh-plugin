@@ -1,0 +1,6 @@
+url: https://github.com/Hudson-Junior-Wang/dsh-search-switcher
+name: Hudson-Junior-Wang/dsh-search-switcher
+category: ui
+description:
+  en: 'One-click search-engine switcher beside the DeepSeek Harness model picker; changes the dsh-free-search provider, handy on overseas university networks that block the DeepSeek Official search endpoint.'
+  zh: '在 DeepSeek Harness 模型选择器旁一键切换搜索服务商的下拉菜单；海外大学网络常拦截 DeepSeek 官方搜索，可借此切到其他引擎规避。'

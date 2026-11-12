@@ -1,0 +1,6 @@
+url: https://github.com/ffseika0304/code-ownership-audit
+name: ffseika0304/code-ownership-audit
+category: skill
+description:
+  en: 'Decides whether Python code is original or a derivative work: reports the longest identical expression span against an upstream tree, an exemption rationale per finding, and a risk list. Pure stdlib `ast` analysis — offline, no model calls.'
+  zh: '判定 Python 代码是原创还是演绎作品：给出与上游最长相同表达片段、逐条豁免依据和风险清单。纯标准库 `ast` 分析——离线运行，不调用模型。'

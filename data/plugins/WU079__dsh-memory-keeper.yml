@@ -1,0 +1,6 @@
+url: https://github.com/WU079/dsh-memory-keeper
+name: WU079/dsh-memory-keeper
+category: memory
+description:
+  en: 'Cross-session memory for DSH: export every session to readable Markdown transcripts, keep one long-term MEMORY.md, and get a wake-up summary in a fresh window.'
+  zh: '跨会话记忆：会话自动导出成能读的 Markdown（带出处），维护一份长期 MEMORY.md，新窗口醒来先看摘要。'

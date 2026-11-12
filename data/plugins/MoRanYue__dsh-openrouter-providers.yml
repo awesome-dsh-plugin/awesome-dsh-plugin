@@ -1,0 +1,6 @@
+url: https://github.com/MoRanYue/dsh-openrouter-providers
+name: MoRanYue/dsh-openrouter-providers
+category: model
+description:
+  en: Route OpenRouter requests through a configured provider list and quantization cap, injected as provider.only/order with allow_fallbacks, plus provider.quantizations.
+  zh: 配置 OpenRouter 请求使用的提供商列表与量化位数上限，注入 provider.only/order（allow_fallbacks）与 provider.quantizations 路由参数。

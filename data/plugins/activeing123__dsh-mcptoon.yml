@@ -1,0 +1,6 @@
+url: https://github.com/activeing123/dsh-mcptoon
+name: activeing123/dsh-mcptoon
+category: tools
+description:
+  en: 'Mounts the mcptoon MCP gateway as one stdio server, so the agent discovers the tools of every MCP server you have configured through mcptoon''s compressed view instead of full JSON schemas on each turn. Ships a doctor CLI that checks the mcptoon executable resolves and prints the exact command/args override when it does not.'
+  zh: '把 mcptoon 作为一条 stdio MCP 服务接入，让 agent 通过 mcptoon 的压缩视图发现已配置 MCP server 的工具，而非每轮支付完整 JSON schema。附带 doctor CLI：校验 mcptoon 可执行文件能否解析，不能时打印精确的 command/args 覆盖配置。'

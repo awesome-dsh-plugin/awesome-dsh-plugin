@@ -1,0 +1,6 @@
+url: https://github.com/iasiv5/dsh-skins
+name: iasiv5/dsh-skins
+category: theme
+description:
+  en: "Hot-switchable brand skins for the DSH Web UI: an OpenBMC skin, a UEFI skin and an unofficial fan-made skin based on A Record of a Mortal's Journey to Immortality, each with light/dark schemes, plus a personal wallpaper gallery, per-skin tagline and transparency controls, and a one-click path back to the official look."
+  zh: 'DSH Web 多品牌皮肤热切换：OpenBMC、UEFI 与《凡人修仙传》非官方同人画作三套皮肤，各带明暗双态配色，附个人壁纸图库、双语标语与通透度调节，随时一键回到官方界面。'

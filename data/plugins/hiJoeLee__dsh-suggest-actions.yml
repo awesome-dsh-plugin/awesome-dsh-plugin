@@ -1,0 +1,6 @@
+url: https://github.com/hiJoeLee/dsh-suggest-actions
+name: hiJoeLee/dsh-suggest-actions
+category: ui
+description:
+  en: 'Up to 5 clickable next steps under every reply: click one to send it, or fill it into the composer and edit first. The suggestions come from the main model as it closes the turn — no extra model call.'
+  zh: 每条回复末尾最多 5 条可点的下一步：点一条直接发出，或填入输入框改完再发。建议由本轮主模型在收尾时给出，不额外调用模型。

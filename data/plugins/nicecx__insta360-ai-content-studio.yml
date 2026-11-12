@@ -1,0 +1,6 @@
+url: https://github.com/nicecx/insta360-ai-content-studio
+name: nicecx/insta360-ai-content-studio
+category: tools
+description:
+  en: 'Automated daily content pipeline for Insta360 GO 3S: BLE/WiFi remote capture of aquarium footage, wireless import, ffmpeg quality evaluation with decision log, Auto editing (segment selection, TTS narration, music, subtitles), and Bilibili upload via biliup (dry-run by default).'
+  zh: 'Insta360 GO 3S 自动每日内容管线：BLE/WiFi 遥控拍摄鱼缸素材、无线取回、ffmpeg 质量评估与决策记录、自动剪辑（选段/旁白/配乐/字幕）、biliup 投稿（默认 dry-run）。'

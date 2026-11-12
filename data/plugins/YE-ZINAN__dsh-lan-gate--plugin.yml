@@ -1,0 +1,6 @@
+url: https://github.com/YE-ZINAN/dsh-lan-gate/tree/main/plugin
+name: YE-ZINAN/dsh-lan-gate#plugin
+category: remote
+description:
+  en: 'Control surface for the dsh-lan-gate LAN gateway: a button beside Settings that shows whether the gateway is running and how many phones or tablets are waiting for approval, opens the loopback-only approval page in one click instead of typing its URL, and starts the gateway through its scheduled task first when it is not running. Not rendered on phone or tablet surfaces.'
+  zh: 'dsh-lan-gate 局域网网关的控制面：设置图标旁的一个按钮，显示网关是否在跑、有几台手机或平板在等批准；一次点击打开只认回环地址的批准页，省去手敲 URL；网关没在跑时先经计划任务把它拉起。在手机或平板界面上不渲染。'

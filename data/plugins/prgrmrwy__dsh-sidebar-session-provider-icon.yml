@@ -1,0 +1,6 @@
+url: https://github.com/prgrmrwy/dsh-sidebar-session-provider-icon
+name: prgrmrwy/dsh-sidebar-session-provider-icon
+category: ui
+description:
+  en: 'DeepSeek Harness plugin: show a provider + model icon in the sidebar for every session, updated live from the composer model selector with a last-request fallback for history sessions; aggregator routes render the provider logo with a 10px model logo in the corner.'
+  zh: 'DeepSeek Harness 插件：在侧边栏为每个会话显示 provider 与 model 图标，跟随输入框选择器即时更新，历史会话回退到最近一次请求；聚合路由（如 opencode-go、traex）显示 provider 主图并叠加 10px model 小图标。'

@@ -1,0 +1,6 @@
+url: https://github.com/ai-eks/dsh-docking-layout
+name: ai-eks/dsh-docking-layout
+category: ui
+description:
+  en: Dockable DSH Web UI layout that organizes conversations as tabs across draggable split groups.
+  zh: 可停靠的 DSH Web UI 布局插件，将对话组织为标签页，并支持拖拽拆分对话分组。

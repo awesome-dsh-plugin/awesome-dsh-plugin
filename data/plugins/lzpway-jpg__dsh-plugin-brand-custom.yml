@@ -1,0 +1,6 @@
+url: https://github.com/lzpway-jpg/dsh-plugin-brand-custom
+name: lzpway-jpg/dsh-plugin-brand-custom
+category: ui
+description:
+  en: Custom brand icon and name for the DSH Web sidebar and conversation hero, editable live from a settings card on the plugin detail page.
+  zh: 自定义 DSH Web 侧边栏与会话页的品牌图标和名称，插件详情页内置设置卡片，保存即生效。

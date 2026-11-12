@@ -1,0 +1,6 @@
+url: https://github.com/Justin-Mai/dsh-role-prompts
+name: Justin-Mai/dsh-role-prompts
+category: session
+description:
+  en: 'Adds job-role prompts to the DSH composer: type - at the start of the input to pick a role, which becomes a reference chip in the draft and is then injected as a system prompt section on every turn of that conversation, so the instruction keeps applying without showing up in the transcript. Roles are added and edited on a Settings page and stored in ~/.dsh/dsh-role-prompts.md.'
+  zh: '在 DSH 输入框里用岗位角色约束整个会话：在输入框开头键入 - 选一个角色，它会以引用 chip 的形式落在草稿里，随后作为 system prompt 的一部分在这一会话的每一轮注入，指令持续生效且不会出现在对话记录中。角色在设置页新增和编辑，保存在 ~/.dsh/dsh-role-prompts.md。'

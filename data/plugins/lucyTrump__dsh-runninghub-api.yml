@@ -1,0 +1,6 @@
+url: https://github.com/lucyTrump/dsh-runninghub-api
+name: lucyTrump/dsh-runninghub-api
+category: workflow
+description:
+  en: Run RunningHub cloud ComfyUI workflows from chat — settings card, sha256 media upload cache, concurrency gate, and background task ledger.
+  zh: 在对话中运行 RunningHub 云端 ComfyUI 工作流：设置卡片、sha256 媒体上传缓存、并发闸门与后台任务台账。

@@ -1,0 +1,7 @@
+url: https://github.com/WickCrisp/dsh-oneshotNiko-widget
+name: WickCrisp/dsh-oneshotNiko-widget
+category: fun
+description:
+  en: 'A OneShot-themed desktop pet (World Machine) with the original game-style dialogue window, per-turn token usage , an optional OpenAI-compatible chat API, lightweight memory and a customizable persona card.'
+  zh: 'OneShot桌宠（世界机器），还原了游戏对话框，每轮对话后显示 token 消耗花费，可接入 OpenAI 兼容 API 文字聊天，支持简单记忆与自定义人格卡。'
+icon: https://raw.githubusercontent.com/WickCrisp/dsh-oneshotNiko-widget/main/assets/icon-192.png

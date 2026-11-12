@@ -1,0 +1,7 @@
+url: https://github.com/SJCxuanyi/dsh-ai-assistant
+name: SJCxuanyi/dsh-ai-assistant
+category: skill
+description:
+  en: "Bundles 50 AMD ROSS agent skills for Vivado, Vitis HLS, Versal segmented configuration, Vitis AI, and hardware debug into DeepSeek Harness, with a left-sidebar catalog panel for filtering, searching, and copying skill invocations."
+  zh: "把 AMD ROSS 的 50 个 Vivado、Vitis HLS、Versal 分段配置、Vitis AI 与硬件调试技能装进 DeepSeek Harness，并在左侧栏提供可筛选、搜索、展开与复制的技能目录面板。"
+icon: https://raw.githubusercontent.com/SJCxuanyi/dsh-ai-assistant/main/assets/icon-180.png

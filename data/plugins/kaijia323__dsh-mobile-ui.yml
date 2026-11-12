@@ -1,0 +1,6 @@
+url: https://github.com/kaijia323/dsh-mobile-ui
+name: kaijia323/dsh-mobile-ui
+category: ui
+description:
+  en: Mobile web shell for DSH Web with drawer navigation, touch-sized controls, safe areas and a full-width conversation; the desktop layout stays unchanged.
+  zh: 为 DSH Web 提供手机端外壳：抽屉导航、触控尺寸控件、安全区适配和全宽对话区，桌面端布局保持不变。

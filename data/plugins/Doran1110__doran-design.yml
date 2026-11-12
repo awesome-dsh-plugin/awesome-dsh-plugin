@@ -1,0 +1,7 @@
+url: https://github.com/Doran1110/doran-design
+name: Doran1110/doran-design
+category: skill
+tarball: https://github.com/Doran1110/doran-design/releases/download/v0.1.1/doran-design-0.1.1.tgz
+description:
+  en: Registers a web-design skill and a compact system-prompt rule set for a three-layer shadcn/ui, Canvas UI and ThreeUI workflow, with Radix UI Colors and strict interface rules.
+  zh: 注册一个网页设计技能和一组系统提示规则，按 shadcn/ui、Canvas UI、ThreeUI 三层体系执行，并强制 Radix UI Colors 与界面细节规范。

@@ -1,0 +1,7 @@
+url: https://github.com/crisvollerei/dsh-persona-shell
+name: crisvollerei/dsh-persona-shell
+category: ui
+description:
+  en: 'Re-speaks each assistant report in a chosen persona outside the working prompt, with four built-in presets, per-session switches, and the original available on demand.'
+  zh: '在系统提示词之外，用选定人格转述每条助手汇报；内置四个预设，支持会话级开关，原文随时可查。'
+icon: https://raw.githubusercontent.com/crisvollerei/dsh-persona-shell/main/icon.png

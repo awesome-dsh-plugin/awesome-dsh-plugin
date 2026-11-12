@@ -1,0 +1,6 @@
+url: https://github.com/58fly/dsh-language-guard
+name: 58fly/dsh-language-guard
+category: identity
+description:
+  en: 'Locks the model''s reasoning, replies and tool-call descriptions to a chosen target language (Simplified Chinese by default) with system-prompt sections at the head, middle and tail of the prompt, offering three strength levels, an auto mode that follows the DSH interface language, a settings panel that shows the language currently in effect, and a sidebar quick switch.'
+  zh: '把模型的思考过程、回复与工具调用描述锁定为指定语言（默认简体中文）：在 system prompt 首、中、尾注入约束段落，提供基础、强化、周期三档强度，可跟随 DSH 界面语言自动选择，设置页显示当前生效语言，并带侧栏快速切换。'

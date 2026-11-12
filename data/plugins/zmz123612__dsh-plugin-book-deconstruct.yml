@@ -1,0 +1,6 @@
+url: https://github.com/zmz123612/dsh-plugin-book-deconstruct
+name: zmz123612/dsh-plugin-book-deconstruct
+category: docs
+description:
+  en: Host plugin that adds the /dsh-plugin-book-deconstruct command and the dsh-plugin-book-deconstruct tool to any session for a full book walkthrough plus one deep insight.
+  zh: Host 插件：任意会话可用 /dsh-plugin-book-deconstruct 命令与 dsh-plugin-book-deconstruct 工具，输入书名与作者后讲透全书并给出一段深度思想。

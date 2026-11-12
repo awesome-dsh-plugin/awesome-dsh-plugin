@@ -1,0 +1,7 @@
+url: https://github.com/hoyyang/dsh-code-graph
+name: hoyyang/dsh-code-graph
+category: dev
+description:
+  en: 'Branch-aware code knowledge graph for DSH - callers, impact, trace and architecture over 158+ languages, freshness-gated, one dispatcher tool, zero MCP sessions.'
+  zh: 'DSH 原生分支感知代码知识图谱：调用链/影响面/路径/架构覆盖 158+ 语言，保鲜门控，切分支索引自动跟随，单工具分发零 MCP 会话。'
+tarball: https://github.com/hoyyang/dsh-code-graph/releases/download/v0.2.0/hoyyang-dsh-code-graph-0.2.0.tgz

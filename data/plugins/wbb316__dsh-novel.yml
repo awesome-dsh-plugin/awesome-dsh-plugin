@@ -1,0 +1,6 @@
+url: https://github.com/wbb316/dsh-novel
+name: wbb316/dsh-novel
+category: tools
+description:
+  en: 'Novel-writing console for DSH: five novel_* tools for the agent (list, read, context, save chapter, cast) plus a side panel with a book wizard, a cast/relation view and streaming chapter continuation.'
+  zh: '小说创作台：5 个 novel_* 工具（列目录、读文件、取上下文、存章节、管角色），外加侧栏开书向导、人物关系图与流式续写。'

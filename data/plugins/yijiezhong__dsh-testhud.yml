@@ -1,0 +1,6 @@
+url: https://github.com/yijiezhong/dsh-testhud
+name: yijiezhong/dsh-testhud
+category: tools
+description:
+  en: "On-screen test-progress HUD for DSH — a click-through panel drawn over the app under test, showing each step's expectation vs actual and whether the waiting human may take back the mouse and keyboard. Ships a universal prebuilt binary (arm64 + x86_64), so no Xcode Command Line Tools are needed; the panel itself requires macOS 14+."
+  zh: "把自动测试的进展画在被测界面之上的浮层：每步的期待与实际，以及等待的人现在能不能动鼠标键盘。包内附带通用预编译二进制（arm64 + x86_64），无需 Xcode 命令行工具；浮层面板自身要求 macOS 14 及以上。"

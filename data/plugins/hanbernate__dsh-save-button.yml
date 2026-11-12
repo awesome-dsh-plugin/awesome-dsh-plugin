@@ -1,0 +1,6 @@
+url: https://github.com/hanbernate/dsh-save-button
+name: hanbernate/dsh-save-button
+category: ui
+description:
+  en: Adds a Download button to DSH Web GUI delivery cards, so files delivered with present save straight from the browser.
+  zh: 在 DSH Web GUI 交付卡片上增加下载按钮，present 交付的文件可直接从浏览器下载。

@@ -1,0 +1,7 @@
+url: https://github.com/kkisok0123/dsh-sidechat
+name: kkisok0123/dsh-sidechat
+category: ui
+description:
+  en: 'Side conversations forked from the main session, with native conversation rendering, selection annotations and handback.'
+  zh: '从主会话分叉独立侧聊，支持原生会话渲染、划选注释和结论回流。'
+tarball: https://github.com/kkisok0123/dsh-sidechat/releases/download/v0.4.6/dsh-sidechat-0.4.6.tgz

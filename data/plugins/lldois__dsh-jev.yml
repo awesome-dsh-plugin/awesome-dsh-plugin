@@ -1,0 +1,7 @@
+url: https://github.com/lldois/dsh-jev
+name: lldois/dsh-jev
+category: tools
+description:
+  en: 'Semantic tool routing, skill discovery, and typed System One decisions for DeepSeek Harness powered by TypeSafe Jev.'
+  zh: '基于 TypeSafe Jev 的 DeepSeek Harness 语义工具路由、技能发现与类型化 System One 决策插件。'
+

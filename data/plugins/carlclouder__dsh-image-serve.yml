@@ -1,0 +1,6 @@
+url: https://github.com/carlclouder/dsh-image-serve
+name: carlclouder/dsh-image-serve
+category: docs
+description:
+  en: Serve any local file in DSH web sessions - /ws/<absolute-path> maps disk files to same-origin http URLs that session markdown can render. Any drive, no staging directory.
+  zh: 让会话 markdown 直接渲染本地任意位置的图片与文件：/ws/<本地绝对路径> 同源路由，跨盘符、中文路径、深层嵌套与 UNC 均可，无需先复制到特定目录。

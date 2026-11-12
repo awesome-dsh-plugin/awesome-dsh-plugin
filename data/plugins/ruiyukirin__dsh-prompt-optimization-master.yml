@@ -1,0 +1,6 @@
+url: https://github.com/ruiyukirin/dsh-prompt-optimization-master
+name: ruiyukirin/dsh-prompt-optimization-master
+category: ui
+description:
+  en: Adds a button to the composer that rewrites the unsent draft into a clearer, more specific prompt, with one-click restore, a settings page and an optional per-request model override.
+  zh: 在输入框加一个按钮，把未发送的草稿改写为更清晰、更具体的提示词；支持一键还原、独立设置页，以及单次调用的模型覆盖。

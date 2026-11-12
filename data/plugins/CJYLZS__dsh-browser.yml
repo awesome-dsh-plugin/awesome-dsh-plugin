@@ -1,0 +1,6 @@
+url: https://github.com/CJYLZS/dsh-browser
+name: CJYLZS/dsh-browser
+category: browser
+description:
+  en: 'A real Chrome or Edge for the agent to work in, mirrored in the sidebar so you can watch and take over: every conversation gets its own browser process, with its own profile and its own CDP port, so sign-ins never leak between conversations. It drives the Chrome or Edge already on the machine, downloads no browser, needs no companion app or extension, and another Playwright or DevTools can attach to the same CDP port while the sidebar is live.'
+  zh: '让 agent 在一台真实 Chrome 或 Edge 里干活，侧栏同步镜像，你能看着，也能随时接手：每个对话一台独立的浏览器进程，各自的 profile 与 CDP 端口，登录态不会在对话之间串。它驱动机器上已有的 Chrome 或 Edge，不下载浏览器，不需要配套应用或扩展；侧栏镜像开着时，另一个 Playwright 或 DevTools 也能附加到同一个 CDP 端口。'

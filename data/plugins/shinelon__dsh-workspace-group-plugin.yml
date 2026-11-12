@@ -1,0 +1,7 @@
+url: https://github.com/shinelon/dsh-workspace-group-plugin
+name: shinelon/dsh-workspace-group-plugin
+category: ui
+description:
+  en: Custom sidebar workspace groups for DeepSeek Harness - group directories, drag to regroup and reorder, per-group session browsing and content search, with a one-click fallback to the official workspace list.
+  zh: 在侧边栏以自定义分组组织工作目录 - 拖拽变更分组与顺序、组内会话浏览与内容搜索，可一键切回官方工作区列表。
+tarball: https://github.com/shinelon/dsh-workspace-group-plugin/releases/download/v1.0.0/dsh-workspace-group-plugin-1.0.0.tgz

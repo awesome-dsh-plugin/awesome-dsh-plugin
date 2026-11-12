@@ -1,0 +1,6 @@
+url: https://github.com/qphotoai/dsh-computer-use-windows
+name: qphotoai/dsh-computer-use-windows
+category: tools
+description:
+  en: 'Windows-only Computer Use plugin for DeepSeek Harness with UIA, cua-driver, and optional GLM vision.'
+  zh: '适用于 Windows 的 DeepSeek Harness Computer Use 插件，支持 UIA、cua-driver 和可选 GLM 视觉。'

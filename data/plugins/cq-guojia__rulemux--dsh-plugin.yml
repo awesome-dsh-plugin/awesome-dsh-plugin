@@ -1,0 +1,6 @@
+url: https://github.com/cq-guojia/rulemux/tree/master/dsh-plugin
+name: cq-guojia/rulemux#dsh-plugin
+category: dev
+description:
+  en: 'DeepSeek Harness plugin for rulemux: asks the local rulemux CLI for the rules rendered for this workspace (rulemux inject --agent dsh) and injects the output into the session at the first user turn, once per session. Nothing is written into the workspace for rules; skills are the only part that lands on disk.'
+  zh: 'rulemux 的 DeepSeek Harness 插件：通过 rulemux inject --agent dsh 取当前工作区渲染出的规则，在每次会话的首条用户消息时把输出注入一次。规则不往工作区写任何文件；只有技能会落盘。'

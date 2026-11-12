@@ -1,0 +1,8 @@
+# 上架条目：把这个文件原样放到 awesome-dsh-plugin 仓库的 data/plugins/ 下。
+# 文件名已经是最终形态（<owner>__<repo>.yml），不要改。
+url: https://github.com/TelethaMithril/dsh-hot-restart-row
+name: TelethaMithril/dsh-hot-restart-row
+category: ui
+description:
+  en: Adds a "Hot restart" row under "Sign out" in the DSH account menu; it reconciles the profile plugin tree in place and reloads the page, without restarting the DSH process or dropping the current conversation.
+  zh: 在 DSH 账号菜单「退出登录」下面加一行「热重启」：原地对账 profile 插件树并刷新页面，不重启 DSH 进程，当前对话不丢。

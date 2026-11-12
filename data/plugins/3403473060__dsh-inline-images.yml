@@ -1,0 +1,6 @@
+url: https://github.com/3403473060/dsh-inline-images
+name: 3403473060/dsh-inline-images
+category: session
+description:
+  en: Render local image paths from assistant replies inline in the message body (9 formats, click-to-zoom lightbox, adjustable size).
+  zh: 对话内联图片：LLM 回复中输出的本地图片路径在消息正文直接渲染为图片（9 种格式、点击放大灯箱、可调尺寸）。

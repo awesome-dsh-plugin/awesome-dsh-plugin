@@ -1,0 +1,7 @@
+url: https://github.com/psychiiii/dsh-three-window/tree/publish/packages/personal-web
+name: psychiiii/dsh-three-window#personal-web
+category: ui
+description:
+  en: 'Three-window workbench for dsh web: chat, construct, and a read-only review window side by side for each workspace, per-window hooks, and an anonymous multi-model review that asks before it runs, groups findings by issue, and reports in Markdown.'
+  zh: 'dsh web 的三窗工作台：每个工作区并排显示聊天、施工和只读审核三个窗口，各窗口独立配置 hook；审核窗提供匿名多模型评审，先确认再运行，按同一件事归组，报告为 Markdown。'
+tarball: https://github.com/psychiiii/dsh-three-window/releases/latest/download/dsh-three-window.tgz

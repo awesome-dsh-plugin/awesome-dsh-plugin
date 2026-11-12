@@ -1,0 +1,6 @@
+url: https://github.com/rinsoraa/dsh-pulse-rail
+name: rinsoraa/dsh-pulse-rail
+category: ui
+description:
+  en: 'Turns the DSH turn-navigation rail into a music visualiser: each thin bar grows and thickens with its own frequency band, from system audio captured with WASAPI loopback. Geometry only, no colour or glow, and the rail keeps its native hover preview, click-to-jump and wheel scrolling.'
+  zh: '把 DSH 的轮次导航条变成音乐可视化：每根细横条按自己的频段变长变粗（系统声音用 WASAPI loopback 采集）。只改几何、不加颜色或发光，导航条原有的悬停预览、点击跳转与滚轮滚动都保留。'

@@ -1,0 +1,6 @@
+url: https://github.com/XiLuovo/dsh-session-timeline
+name: XiLuovo/dsh-session-timeline
+category: ui
+description:
+  en: 'Session timeline down the left of the conversation: every user message at a glance, current-message tracking, hover preview of the message and its reply, click to jump, collapsible.'
+  zh: 会话左侧的短横线时间轴：整个会话的用户消息一览、当前消息定位、悬停预览消息与回复、点击跳转，可收起展开。

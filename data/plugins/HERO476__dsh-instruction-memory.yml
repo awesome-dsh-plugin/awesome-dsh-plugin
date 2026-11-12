@@ -1,0 +1,6 @@
+url: https://github.com/HERO476/dsh-instruction-memory
+name: HERO476/dsh-instruction-memory
+category: memory
+description:
+  en: Standing instructions edited in the DSH settings UI and injected into the system prompt of every subsequent turn.
+  zh: 在 DSH 设置界面维护常驻指令，自动注入此后每一轮对话的系统提示词。

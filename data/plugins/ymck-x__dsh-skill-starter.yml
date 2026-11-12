@@ -1,0 +1,6 @@
+url: https://github.com/ymck-x/dsh-skill-starter
+name: ymck-x/dsh-skill-starter
+category: skill
+description:
+  en: Skill manager for DSH with a pack system. Installs skills as versioned packs and never overwrites files you have edited - upgrades skip your changes and report them. Also ships 6 built-in skills, a problem-grouped settings panel, and tools that let the agent read and write the skill library in conversation.
+  zh: DSH 技能管理器，带技能包机制。技能以带版本的包安装，升级时绝不覆盖你改过的文件，只跳过并如实报告。另自带 6 个基础技能、按「你遇到的问题」分组的面板，以及让模型在对话里直接读写技能库的工具。

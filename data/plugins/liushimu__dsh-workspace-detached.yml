@@ -1,0 +1,7 @@
+url: https://github.com/liushimu/dsh-workspace-detached
+name: liushimu/dsh-workspace-detached
+category: ui
+description:
+  en: 'Windows x64 preview that detaches workspace/session navigation into a separate .NET Framework 4.6.2+/WebView2 Evergreen window, with grouped trees, overview/focused modes, logical drag-and-drop, activity/manual ordering and a resizable focused-view preview; no DSH Core patch and no Better Workspace runtime dependency. Derived from KannaKuron/dsh-better-workspace — do not install both.'
+  zh: 'Windows x64 预览版：将工作区与会话导航分离到独立的 .NET Framework 4.6.2+/WebView2 Evergreen 窗口，支持分组层级、总览与聚焦模式、逻辑拖放、活动或手动排序，以及可调整高度的聚焦预览区；不修改 DSH Core，不运行时依赖 Better Workspace。衍生自 KannaKuron/dsh-better-workspace，不能与上游同装。'
+tarball: https://github.com/liushimu/dsh-workspace-detached/releases/download/v0.2.3/dsh-workspace-detached-0.2.3.tgz

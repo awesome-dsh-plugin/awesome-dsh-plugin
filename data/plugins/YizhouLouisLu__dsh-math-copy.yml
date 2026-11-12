@@ -1,0 +1,6 @@
+url: https://github.com/YizhouLouisLu/dsh-math-copy
+name: YizhouLouisLu/dsh-math-copy
+category: ui
+description:
+  en: Copying rendered math from the chat puts the formula's LaTeX source on the clipboard instead of KaTeX's visual glyph text.
+  zh: 在对话中复制渲染后的数学公式时，剪贴板里得到的是公式的 LaTeX 源码，而不是 KaTeX 的字形文本。

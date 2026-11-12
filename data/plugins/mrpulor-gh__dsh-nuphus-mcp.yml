@@ -1,0 +1,6 @@
+url: https://github.com/mrpulor-gh/dsh-nuphus-mcp
+name: mrpulor-gh/dsh-nuphus-mcp
+category: tools
+description:
+  en: 'Official DSH plugin for nuphus-mcp (by the nuphus-mcp maintainers): desktop and browser automation (38 tools) with PaddleOCR element perception and Chrome CDP browsing, via a persistent stdio MCP child process.'
+  zh: nuphus-mcp 官方 DSH 插件（由 nuphus-mcp 维护者发布）：桌面 + 浏览器自动化（38 个工具），配 PaddleOCR 元素感知与 Chrome CDP 浏览，经常驻 stdio MCP 子进程接入。

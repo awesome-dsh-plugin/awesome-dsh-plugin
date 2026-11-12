@@ -1,0 +1,6 @@
+url: https://github.com/RyensX/dsh-message-fold
+name: RyensX/dsh-message-fold
+category: session
+description:
+  en: Provides Codex-style session message folding for DeepSeek Harness.
+  zh: 为 DeepSeek Harness 提供 Codex 风格的会话消息折叠。

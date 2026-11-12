@@ -1,0 +1,6 @@
+url: https://github.com/nailing10086-zx/dsh-custom-ui
+name: nailing10086-zx/dsh-custom-ui
+category: ui
+description:
+  en: Right-side file-tree sidebar that opens workspace files, plus a DeepSeek account balance meter in the composer stats line.
+  zh: 右侧文件树侧栏，可打开工作区文件；并在输入框状态行显示 DeepSeek 账户余额。

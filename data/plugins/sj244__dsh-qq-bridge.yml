@@ -1,0 +1,6 @@
+url: https://github.com/sj244/dsh-qq-bridge
+name: sj244/dsh-qq-bridge
+category: notify
+description:
+  en: Connects one existing DSH session to QQ through OneBot/NapCat without starting a new session, and uses a fail-closed whitelist plus @-mention, nickname and configurable-probability wake rules to decide which messages reach the model.
+  zh: 把一个固定的 DSH 会话接到 QQ（OneBot/NapCat），不新建会话、保留原上下文；白名单 fail-closed，@ 与昵称必唤醒，其余按可调概率唤醒。

@@ -1,0 +1,6 @@
+url: https://github.com/Aik358/dsh-cua-pre
+name: Aik358/dsh-cua-pre
+category: tools
+description:
+  en: 'Windows desktop automation for DeepSeek Harness: accessibility-first observe/act loop with 30 standard tools (element/coordinate targets, auto/a11y/event strategy routing), superseded-observations and no-replay safety semantics, persistent kill switch, RuntimeId/rect-drift stale protection, chat cards and a floating panel (live ops, frame wall, env auto-detect settings), tiled vision describe for low-res models, JSONL audit trail and a pid allowlist. Requires Windows 10+ and Python 3.9+ with uiautomation and pillow (installable from the settings page).'
+  zh: 'Windows 桌面自动化插件：无障碍优先的观察-动作回路（30 个标准工具，元素/坐标双目标与 auto/a11y/event 策略路由），写后作废与禁重放安全语义，持久急停开关，RuntimeId/矩形漂移防错位，对话卡片与悬浮面板（实况/画面/环境自检设置），面向低分辨率模型的分块识图，JSONL 审计与 pid 白名单。需 Windows 10+ 与 Python 3.9+，并安装 uiautomation 与 pillow（设置页可一键安装）。'

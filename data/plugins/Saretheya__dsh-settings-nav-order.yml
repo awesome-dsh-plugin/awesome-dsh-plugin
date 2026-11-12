@@ -1,0 +1,6 @@
+url: https://github.com/Saretheya/dsh-settings-nav-order
+name: Saretheya/dsh-settings-nav-order
+category: ui
+description:
+  en: 'Reorder the settings panel nav by long-pressing and dragging a section: the dragged row turns translucent and follows the pointer, the order is saved to the plugin''s own folder, and uninstalling restores the official order.'
+  zh: '长按拖动即可重排设置面板左侧大项：被拖项半透明并跟随指针，顺序保存在插件自己的目录而非 settings.yaml，卸载后自动恢复官方原序。'

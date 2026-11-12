@@ -1,0 +1,6 @@
+url: https://github.com/truelove-dreamer/dsh-plugin-hooks
+name: truelove-dreamer/dsh-plugin-hooks
+category: workflow
+description:
+  en: 'Claude-Code-style lifecycle hooks: configured shell commands run before/after model tool calls with a JSON payload on stdin; a non-zero pre-tool exit blocks the call.'
+  zh: Claude Code 风格生命周期 hooks：工具调用前后自动执行 shell 命令（stdin 收 JSON payload），pre-tool 非零退出即阻断调用。

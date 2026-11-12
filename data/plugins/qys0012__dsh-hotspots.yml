@@ -1,0 +1,7 @@
+url: https://github.com/qys0012/dsh-hotspots
+name: qys0012/dsh-hotspots
+category: ui
+description:
+  en: 'Real-time hot topics panel for the DSH web GUI: AI news and engineering news, each item with a distilled summary and the source link, shown from a sidebar entry with three views, keyword/source filters, read-state marking and hotkeys.'
+  zh: 'DSH Web 时事热点面板：AI 大事与工科热点实时聚合，每条含要点提炼与来源链接；侧边栏入口、三视图、关键词与来源筛选、已读标记与快捷键。'
+tarball: https://github.com/qys0012/dsh-hotspots/releases/latest/download/dsh-hotspots.tgz

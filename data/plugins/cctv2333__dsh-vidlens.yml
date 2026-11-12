@@ -1,0 +1,7 @@
+url: https://github.com/cctv2333/dsh-vidlens
+name: cctv2333/dsh-vidlens
+category: vision
+icon: https://raw.githubusercontent.com/cctv2333/dsh-vidlens/main/assets/icon-180.png
+description:
+  en: 'Samples a video the way a person does instead of downloading it: metadata and chapters first, then timestamped frames as images, subtitle-first transcripts (local ASR only when the platform carries no subtitles), AudioSet 527-class sound tags and top comments — 21 tools sharing one on-disk cache behind a cross-process lock. Needs Python 3.10+, ffmpeg and the vidlens package (pip install vidlens-mcp); a missing install comes back with the two ways to fix it instead of a bare ImportError.'
+  zh: '按人看片的顺序取样，而不是下载整片：先元数据与章节，再按时间码抽帧看画面、字幕优先转录（平台没有字幕才走本地 ASR）、AudioSet 527 类声音事件标签与高赞评论——21 个工具共用一个磁盘缓存，并带跨进程锁。需要 Python 3.10+、ffmpeg 与 vidlens 包（pip install vidlens-mcp）；缺依赖时回给你的是两种修法，而不是一句 ImportError。'

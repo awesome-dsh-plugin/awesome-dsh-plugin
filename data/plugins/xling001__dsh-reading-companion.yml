@@ -1,0 +1,6 @@
+url: https://github.com/xling001/dsh-reading-companion
+name: xling001/dsh-reading-companion
+category: fun
+description:
+  en: 'Local TXT reader in a right-sidebar tab plus a spoiler-safe AI reading companion: the model only sees what you have already read — the current chapter, the tail of the previous chapter, and a per-book background file it grows as you go. Excerpts, thoughts and the companion replies become structured Markdown notes exportable to Obsidian; raw text unlocks only for a book you mark as finished.'
+  zh: '右侧栏本地 TXT 阅读器 + 不剧透的 AI 陪读：模型只能看到你已经读到的部分（本章全文、上一章结尾，以及随进度增量补齐的背景认识）；摘抄、感想与 AI 回应写成结构化 Markdown 笔记，可导出到 Obsidian。只有你标记「已读完」的那一本才向它放开原文。'

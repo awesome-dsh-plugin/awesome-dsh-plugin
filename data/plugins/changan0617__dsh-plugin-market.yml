@@ -1,0 +1,6 @@
+url: https://github.com/changan0617/dsh-plugin-market
+name: changan0617/dsh-plugin-market
+category: market
+description:
+  en: 'A Plugin Market entry in the DSH settings sidebar that opens dshmarket.com, the community plugin market for DeepSeek Harness, in a new tab. The light-weight alternative to installing the market itself, for people who only want the button.'
+  zh: '在 DSH 设置侧边栏加入「Plugin Market」入口，点击即在新标签页打开 DeepSeek Harness 的社区插件市场 dshmarket.com。是安装市场本体之外的轻量选择，适合只想要一个按钮的人。'

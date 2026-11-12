@@ -1,0 +1,6 @@
+url: https://github.com/LL-cmyk-so/dsh-balance-widget
+name: LL-cmyk-so/dsh-balance-widget
+category: usage
+description:
+  en: 'A balance and cost widget for the DSH web GUI: a sidebar footer card shows the account balance, a remaining-ratio bar and today costs; clicking opens a four-tier cost breakdown (last prompt / this session / today-this-project / today-all) with term explanations and a one-click top-up link. Zero external dependencies, works on Node 24.'
+  zh: 'DSH Web GUI 的余额与成本小部件：侧边栏底部卡片显示账户余额、剩余比例条与今日花费；点击展开四层级成本明细（最近提问 / 本会话 / 今日·本项目 / 今日·全部），带名词解释与一键充值入口。零依赖，兼容 Node 24。'

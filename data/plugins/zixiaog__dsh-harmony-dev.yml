@@ -1,0 +1,6 @@
+url: https://github.com/zixiaog/dsh-harmony-dev
+name: zixiaog/dsh-harmony-dev
+category: dev
+description:
+  en: 'HarmonyOS development kit for DSH: five tools for spec search, code generation and rule checks over 366 curated entries.'
+  zh: '面向鸿蒙原生开发的 DSH 插件：5 个工具，覆盖规范检索、代码生成与规则校验，内置 366 条内容。'

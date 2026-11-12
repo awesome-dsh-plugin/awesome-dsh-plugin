@@ -1,0 +1,6 @@
+url: https://github.com/tr1v3r/dsh-proxy
+name: tr1v3r/dsh-proxy
+category: tools
+description:
+  en: Hot-switches in-process DSH fetch traffic among direct, manual HTTP(S)/SOCKS5 proxy, and ambient system-proxy modes, with no-proxy rules and optional proxy-environment export for newly spawned child processes.
+  zh: 在直连、手动 HTTP(S)/SOCKS5 代理和环境/系统代理模式间热切换 DSH 进程内 fetch 流量，支持免代理规则，并可为之后启动的子进程导出代理环境变量。

@@ -1,0 +1,6 @@
+url: https://github.com/ICCuse/dsh-knowledge
+name: ICCuse/dsh-knowledge
+category: memory
+description:
+  en: 'Bridge into a global Markdown knowledge base shared with the Codex kb.cmd CLI: kb_add/kb_search/kb_show/kb_timeline tools with byte-compatible frontmatter.'
+  zh: 全局知识库桥：kb_add/kb_search/kb_show/kb_timeline 读写与 Codex 共享的 D:\knowledge（格式逐字节兼容）。

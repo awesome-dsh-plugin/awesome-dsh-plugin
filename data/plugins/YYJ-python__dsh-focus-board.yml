@@ -1,0 +1,7 @@
+url: https://github.com/YYJ-python/dsh-focus-board
+name: YYJ-python/dsh-focus-board
+category: session
+description:
+  en: 'Cross-session task ledger for DeepSeek Harness: one item per request with a step chain, an accordion strip above the composer, unfinished items injected into every step, staleness review with artifact fingerprints, clickable choices that learn repeated decisions, a grant ledger whose four-mode control sits inside every authorization-blocked card, blind-work backfill checklists, and a scheduler that re-judges an item only when a new assistant answer mentions it.'
+  zh: '跨会话焦点账本：每条请求一条焦点（带步骤链），输入框上方条带展开阅读，未收尾项注入每一步，按产物指纹做过期复核，选择题学习重复决策，授权台账的四档控制直接嵌在每张受授权阻塞的卡片里，盲操作附带回填清单，调度器只在新增 AI 回答提到某条时才重新判断。'
+tarball: https://github.com/YYJ-python/dsh-focus-board/releases/latest/download/dsh-focus-board.tgz

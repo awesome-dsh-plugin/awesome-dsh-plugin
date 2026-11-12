@@ -1,0 +1,6 @@
+url: https://github.com/Baboo-ming/dsh-session-delete
+name: Baboo-ming/dsh-session-delete
+category: session
+description:
+  en: A plugin to completely delete sessions and clean up the associated files in the .dsh/sessions directory.
+  zh: 用于彻底删除 DeepSeek Harness 会话，并同步清理 .dsh/sessions 目录下相关文件的插件。

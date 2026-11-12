@@ -1,0 +1,7 @@
+url: https://github.com/baibaiyi/dsh-shot-ocr
+name: baibaiyi/dsh-shot-ocr
+category: vision
+description:
+  en: Captures a dragged desktop region with a global hotkey and either recognises its text with Windows OCR or attaches the screenshot to the chat draft.
+  zh: 全局快捷键截取桌面选区，用 Windows OCR 识别文字填入输入框，或直接把截图插入对话。
+icon: https://raw.githubusercontent.com/baibaiyi/dsh-shot-ocr/main/assets/icon-180.png

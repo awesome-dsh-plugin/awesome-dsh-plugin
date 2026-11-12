@@ -1,0 +1,6 @@
+url: https://github.com/0xyxy/dsh-maid-atelier-tod
+name: 0xyxy/dsh-maid-atelier-tod
+category: theme
+description:
+  en: 'Post-build patch for the maid-atelier skin, mounted as a bundle: the window backdrop walks six time-of-day bands on the local clock with continuously interpolated sky and interior light, and the figure moves on its own (breath, weight shift, float, blinks, optional hem and hair displacement); applied to an already-installed skin and reverted from client.js.orig when the plugin is removed.'
+  zh: '以 bundle 形式挂载的女仆工坊皮肤补丁：窗景按本机时间在破晓、黎明、早中、傍晚、晚上、深夜六档连续插值，立绘自带呼吸、重心移动、浮动与眨眼，可选裙摆与长发位移场；对已安装的皮肤生效，卸载即从 client.js.orig 还原。'

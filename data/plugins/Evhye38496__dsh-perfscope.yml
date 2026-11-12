@@ -1,0 +1,6 @@
+url: https://github.com/Evhye38496/dsh-perfscope
+name: Evhye38496/dsh-perfscope
+category: dev
+description:
+  en: "One-click health check for DeepSeek Harness: 0-100 score, plain-language issue list, and safe reversible fixes via the profile's cordis.patch.yml."
+  zh: "一键体检你的 DeepSeek Harness：0-100 健康评分、问题清单，以及写入 profile 的 cordis.patch.yml 的安全可逆一键修复。"

@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-team-rooms
+name: PerryLink/dsh-team-rooms
+category: workflow
+description:
+  en: Persistent, cross-session multi-agent team rooms for DeepSeek Harness — members, a message bus, a shared task board, and a shared timeline that survive restarts.
+  zh: 持久化、跨会话的多 Agent 团队房间：成员、消息总线、共享任务板与共享时间线，重启后仍然保留。

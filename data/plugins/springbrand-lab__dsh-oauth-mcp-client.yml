@@ -1,0 +1,6 @@
+url: https://github.com/springbrand-lab/dsh-oauth-mcp-client
+name: springbrand-lab/dsh-oauth-mcp-client
+category: tools
+description:
+  en: 'OAuth 2.1 MCP client for Streamable HTTP servers: add a connection in Settings, sign in through the browser (PKCE with dynamic client registration), and have its tools registered in DSH, with tokens kept in the credential service and the connection written to the profile.'
+  zh: '面向 Streamable HTTP 服务的 OAuth 2.1 MCP 客户端：在设置页添加连接，通过浏览器登录（PKCE + 动态客户端注册），其工具随即注册进 DSH；令牌存于凭据服务，连接写入 profile。'

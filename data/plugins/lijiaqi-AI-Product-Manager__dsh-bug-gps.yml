@@ -1,0 +1,8 @@
+url: https://github.com/lijiaqi-AI-Product-Manager/dsh-bug-gps
+name: lijiaqi-AI-Product-Manager/dsh-bug-gps
+category: browser
+description:
+  en: "Records browser bugs, freezes expected results, and verifies fixes against a fresh original-code control."
+  zh: "录制浏览器问题、固定预期，并通过独立原代码对照复核修复。"
+icon: https://raw.githubusercontent.com/lijiaqi-AI-Product-Manager/dsh-bug-gps/main/assets/buggps-icon.png
+tarball: https://github.com/lijiaqi-AI-Product-Manager/dsh-bug-gps/releases/download/v1.0.0/dsh-bug-gps-1.0.0.tgz

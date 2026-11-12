@@ -1,0 +1,6 @@
+url: https://github.com/cinewave0/cinewave0-dsh-quick-panel
+name: cinewave0/cinewave0-dsh-quick-panel
+category: ui
+description:
+  en: 'Windows companion window for DSH Desktop: todos, reminders, live session messages, approval handling and quick input. The standalone window reuses the Electron binary at %USERPROFILE%\.dsh\electron\electron.exe (usually installed by dsh-pet) and fails to open when it is missing.'
+  zh: 'Windows 下的 DSH Desktop 独立伴生窗：待办、提醒、实时会话消息、审批接管和快速输入；独立窗复用 %USERPROFILE%\.dsh\electron\electron.exe（通常由 dsh-pet 下载），缺失时打不开。'

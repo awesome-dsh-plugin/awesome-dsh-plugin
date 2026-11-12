@@ -1,0 +1,7 @@
+url: https://github.com/yzyg6/dsh-splitview
+name: yzyg6/dsh-splitview
+category: ui
+description:
+  en: 'Adds drag-to-split conversation panes and horizontal draggable tabs to DSH, preserving each tab’s reading position and restoring the layout after refresh or restart.'
+  zh: '为 DSH 提供拖拽分屏和横向会话标签，保留每个标签的阅读位置，并在刷新或重启后恢复布局。'
+tarball: https://github.com/yzyg6/dsh-splitview/releases/download/v0.2.1/dsh-splitview-0.2.1.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/nanwu98/dsh-hide-account-models
+name: nanwu98/dsh-hide-account-models
+category: model
+tarball: https://github.com/nanwu98/dsh-hide-account-models/releases/download/v1.0.0/dsh-hide-account-models-1.0.0.tgz
+description:
+  en: "Hides the signed-in deepseek-account model group from the model picker and rewrites an already-saved account selection to deepseek-official in prepareCall and stream, so a stale conversation cannot spend on the account; no settings page and no runtime dependencies. Requires an official API key configured under Settings → Models first — without one there is no model left to select after the account group is hidden."
+  zh: "在模型选择器中隐藏登录账号的 deepseek-account 模型分组，并在 prepareCall 与 stream 中把已保存的账号选择改写到 deepseek-official，旧会话不会再扣账号额度；没有设置页，也没有运行时依赖。需先在「设置 → 模型」配置官方 API Key，否则隐藏账号分组后就没有模型可选。"

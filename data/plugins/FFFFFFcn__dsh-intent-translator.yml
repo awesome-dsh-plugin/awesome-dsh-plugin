@@ -1,0 +1,7 @@
+url: https://github.com/FFFFFFcn/dsh-intent-translator
+name: FFFFFFcn/dsh-intent-translator
+category: ui
+icon: https://raw.githubusercontent.com/FFFFFFcn/dsh-intent-translator/main/assets/icon-180.png
+description:
+  en: 'Adds a composer control that turns a plain-language draft into a structured, terminology-precise prompt, shows the professional term behind selected colloquial phrases with a one-line explanation, and offers a terms-only mode that returns professional terminology without rewriting the draft.'
+  zh: '在输入框工具行增加「译」按钮：把口语草稿改写成结构清晰、术语准确的专业提示词，并把其中若干口语表达对照成专业术语、各附一句解释；「只查术语」模式只返回专业说法，不改写草稿。'

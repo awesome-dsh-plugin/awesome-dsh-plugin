@@ -1,0 +1,6 @@
+url: https://github.com/runcat-tommy/dsh-skill-mini-manager
+name: runcat-tommy/dsh-skill-mini-manager
+category: dev
+description:
+  en: "Skill manager page in the DSH Web Settings panel, at the same level as Plugins: lists every skill the installation serves with its own summary, source and disk footprint, and removes any of them into a recoverable trash."
+  zh: "DSH Web 设置里的 skill 管理器页面，与「插件」同级：列出当前安装提供的全部 skill 及其自己的简介、来源与占用，并可逐个移除（移除是移入可恢复的回收站）。"

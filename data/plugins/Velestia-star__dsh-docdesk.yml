@@ -1,0 +1,7 @@
+url: https://github.com/Velestia-star/dsh-docdesk
+name: Velestia-star/dsh-docdesk
+category: docs
+description:
+  en: An add-only Markdown library for DeepSeek Harness with a workspace file picker, a fixed icon grid with pointer-first hysteresis drag targeting, marquee selection and bulk folder moves, drag-to-folder and dissolve/delete folder actions, persistent move and line highlights, full-screen tabs, immersive reading, GFM tables, bookmarks, and local Mermaid/chart rendering.
+  zh: 只收主动加入的 Markdown 文档，支持工作区挑选、带指针滞回的固定网格拖拽、右键框选与批量移入文件夹、文件夹解散/删除、移动与行高亮持久标记、全屏标签页与沉浸式阅读、GFM 表格、书签，以及 Mermaid/代码块图表本地渲染。
+icon: https://raw.githubusercontent.com/Velestia-star/dsh-docdesk/main/docs/icon.png

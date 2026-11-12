@@ -1,0 +1,6 @@
+url: https://github.com/439436269-ctrl/dsh-session-path
+name: 439436269-ctrl/dsh-session-path
+category: session
+description:
+  en: 'Copies a session log path (or a paste-ready handoff block) and turns the multi-frame zstd log into a readable file another session can continue from.'
+  zh: '复制会话日志路径（或可直接粘贴的接续块），并把多帧 zstd 会话日志转成可读文件，供另一个会话读取接续。'

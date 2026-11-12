@@ -1,0 +1,6 @@
+url: https://github.com/wwweljf/dsh-plugins/tree/master/plugins/dsh-ding-sound
+name: wwweljf/dsh-plugins#dsh-ding-sound
+category: voice
+description:
+  en: 'Turn-end notification sound for DSH: built-in internet meme voices (ni gan ma ai yo, ji ni tai mei, shen ying ge, etc.), Settings panel with preview/switch/random, custom audio folder support.'
+  zh: 'DSH 对话结束提示音：内置网络热梗原声（你干嘛哎呦、鸡你太美、神鹰哥等），设置面板可试听/切换/随机，支持自定义音频目录。'

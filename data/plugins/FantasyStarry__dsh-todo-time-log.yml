@@ -1,0 +1,6 @@
+url: https://github.com/FantasyStarry/dsh-todo-time-log
+name: FantasyStarry/dsh-todo-time-log
+category: workflow
+description:
+  en: 'Todo plugin that records when each task is created and completed, with table, kanban, gantt and calendar views over the same data, categories, priority and type, @workspace-file links, JSON/CSV import and export, and a todo_time_log agent tool with /todo commands.'
+  zh: '待办插件：自动记录每条待办的创建与完成时间，表格 / 看板 / 甘特图 / 日历四视图共用同一份数据与筛选，支持分类、优先级、类型、@工作区文件、JSON/CSV 导入导出，以及 todo_time_log 智能体工具与 /todo 命令。'

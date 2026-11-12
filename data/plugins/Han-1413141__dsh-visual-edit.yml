@@ -1,0 +1,7 @@
+url: https://github.com/Han-1413141/dsh-visual-edit
+name: Han-1413141/dsh-visual-edit
+category: dev
+description:
+  en: "Select elements, draw arrows or frame areas in DSH previews, send visual feedback to chat and compare before-and-after snapshots."
+  zh: "在 DSH 预览中点选元素、画箭头或框选区域，将修改意见加入对话，并查看更新前后的截图对比。"
+tarball: https://github.com/Han-1413141/dsh-visual-edit/releases/download/v0.5.2/dsh-visual-edit-0.5.2.tgz

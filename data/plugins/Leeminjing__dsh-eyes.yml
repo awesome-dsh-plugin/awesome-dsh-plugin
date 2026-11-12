@@ -1,0 +1,6 @@
+url: https://github.com/Leeminjing/dsh-eyes
+name: Leeminjing/dsh-eyes
+category: vision
+description:
+  en: 'On-demand vision for text-only DeepSeek models: upload images, and the model calls a view_image tool backed by any OpenAI-compatible vision endpoint (Qwen/DashScope by default).'
+  zh: '为纯文本 DeepSeek 模型提供按需视觉：上传图片后，模型通过 view_image 工具调用任意 OpenAI 兼容视觉端点（默认 Qwen/DashScope）。'

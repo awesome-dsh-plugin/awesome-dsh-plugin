@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="168" height="20" role="img" aria-label="awesome · DSH plugin">
+  <title>awesome · DSH plugin</title>
+  <rect x="0.5" y="0.5" width="167" height="19" rx="3" fill="#f6f2ea" stroke="#2b2620"/>
+  <text x="10" y="14" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11" fill="#2b2620">awesome · DSH plugin</text>
+  <rect x="146" y="2.5" width="15" height="15" rx="2" fill="#c0392b"/>
+  <text x="153.5" y="13.5" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="10" fill="#f6f2ea" text-anchor="middle" font-weight="bold">✓</text>
+</svg>

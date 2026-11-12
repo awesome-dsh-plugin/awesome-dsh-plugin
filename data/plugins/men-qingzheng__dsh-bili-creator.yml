@@ -1,0 +1,6 @@
+url: https://github.com/men-qingzheng/dsh-bili-creator
+name: men-qingzheng/dsh-bili-creator
+category: tools
+description:
+  en: 'Bilibili companion for DSH, derived from c1overzz/dsh-bili-scroll (do not install both: they share the plugin entry id bili-scroll). Understand any video with AI summaries, chapters and subtitles; make your own with edge-tts voice-over, captions and ffmpeg; publish, post dynamics, reply to fans and read creator stats (publishing and dynamics stay off until Creator mode is enabled); plus an optional daily curated feed report. First run needs a one-time in-app install of Python dependencies (a uv venv plus PyPI packages such as bili-agent and edge-tts) and a Bilibili QR login.'
+  zh: '给 DSH 的 B 站搭档，衍生自 c1overzz/dsh-bili-scroll（两者共用插件条目 id bili-scroll，不能同装）：看懂视频（AI 总结 / 章节 / 字幕），自己做视频（edge-tts 配音 + 字幕 + ffmpeg 合成），投稿、发动态、回粉丝、看创作数据（投稿与发动态须先打开「创作者模式」，默认关闭），另有可选的每日精选日报值班轮。首次使用需在设置页一键安装 Python 依赖（uv 虚拟环境 + PyPI 上的 bili-agent、edge-tts 等）并扫码登录 B 站。'

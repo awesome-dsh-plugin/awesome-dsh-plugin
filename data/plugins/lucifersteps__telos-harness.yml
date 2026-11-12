@@ -1,0 +1,7 @@
+url: https://github.com/lucifersteps/telos-harness
+name: lucifersteps/telos-harness
+category: workflow
+description:
+  en: WeChat personal assistant that manages Apple Calendar and Reminders with confirmation before writes and sends scheduled WeChat messages, for macOS 14+ on Apple Silicon.
+  zh: 通过微信管理 Apple 日历与提醒事项，写入前展示预览并确认，支持微信定时消息；适用于 macOS 14+ 的 Apple Silicon Mac。
+tarball: https://github.com/lucifersteps/telos-harness/releases/download/v0.4.11/telos-harness-0.4.11-macos-arm64.tgz

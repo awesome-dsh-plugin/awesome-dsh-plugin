@@ -1,0 +1,6 @@
+url: https://github.com/Inoue-Cyrene/dsh-ctrl-wheel-zoom
+name: Inoue-Cyrene/dsh-ctrl-wheel-zoom
+category: ui
+description:
+  en: 'Hold Ctrl and roll the mouse wheel to zoom the whole Harness Web UI around the pointer, 50-200% in 10% steps; Ctrl +/- and Ctrl 0 from the keyboard; a bottom-right chip and a Page zoom row in Settings → General show and reset the level.'
+  zh: '按住 Ctrl 滚动鼠标滚轮即可缩放整个 Harness 网页界面，以指针位置为锚点、50%–200% 每档 10%；另支持 Ctrl 加减号与 Ctrl+0 快捷键；右下角缩放胶囊与「设置 → 通用」里的页面缩放行显示当前档位并可一键复位；档位保存在 localStorage。'

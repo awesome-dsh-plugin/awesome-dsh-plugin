@@ -1,0 +1,6 @@
+url: https://github.com/CARVIN94/dsh-router-traework
+name: CARVIN94/dsh-router-traework
+category: model
+description:
+  en: TRAE SOLO supplier plugin for dsh-router, ported from traework2api. Provides the traework supplier, a free SOLO chat channel, and reports single-account status to dsh-router core.
+  zh: dsh-router 的 TRAE SOLO 供应商插件，移植自 traework2api。提供 traework 供应商这一免费 SOLO 聊天通道，并向 dsh-router 核心上报单账号状态。

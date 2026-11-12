@@ -1,0 +1,6 @@
+url: https://github.com/framecy/dsh-ssh-shell
+name: framecy/dsh-ssh-shell
+category: remote
+description:
+  en: 'Password SSH into a remote host: an ssh_remote tool with connect/exec/close/status over a persistent ControlMaster session, plus a floating browser terminal panel on a real PTY.'
+  zh: '用密码直连远程主机的 SSH 终端：ssh_remote 工具提供 connect/exec/close/status 四个动作，底层是 ControlMaster 常驻会话；另带浏览器浮动终端面板，跑真实 PTY。'

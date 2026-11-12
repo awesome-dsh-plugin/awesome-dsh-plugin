@@ -1,0 +1,6 @@
+url: https://github.com/jixishi/dsh-adapter-qq
+name: jixishi/dsh-adapter-qq
+category: remote
+description:
+  en: 'QQ Official Bot adapter for C2C single chat, interactive action boards, workspace session management, and real-time Web UI sync.'
+  zh: 'QQ 官方单聊机器人适配器：支持交互操作板、工作区会话管理与 Web UI 实时双向同屏。'

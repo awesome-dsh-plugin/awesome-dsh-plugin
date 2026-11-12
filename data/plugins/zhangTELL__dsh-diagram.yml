@@ -1,0 +1,6 @@
+url: https://github.com/zhangTELL/dsh-diagram
+name: zhangTELL/dsh-diagram
+category: ui
+description:
+  en: 'Renders mermaid code blocks in the chat as diagrams in place (flowchart, sequence, class, state, ER, gantt, pie), with zoom, source toggle, copy PNG and SVG download.'
+  zh: 将聊天中的 mermaid 代码块原位渲染为图表（流程图/时序图/类图/状态图/ER图/甘特图/饼图），支持放大、源码切换、复制 PNG 与下载 SVG。

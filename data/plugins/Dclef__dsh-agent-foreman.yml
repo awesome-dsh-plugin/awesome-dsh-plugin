@@ -1,0 +1,6 @@
+url: https://github.com/Dclef/dsh-agent-foreman
+name: Dclef/dsh-agent-foreman
+category: workflow
+description:
+  en: 'Parent-agent dispatch with review: split a task into work orders, hand each to a contractor you picked (its own provider, model, and reasoning effort), then pass or fail every delivery — failed ones are re-dispatched with your feedback.'
+  zh: 父智能体派单、子智能体干活的包工头：把任务拆成工单，每张派给你自选的承包商（各自指定 provider、模型、思考等级），交付后逐单验收，打回的单带着你的反馈重新派下去。

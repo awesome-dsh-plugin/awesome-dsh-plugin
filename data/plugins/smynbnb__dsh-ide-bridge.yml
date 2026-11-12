@@ -1,0 +1,7 @@
+url: https://github.com/smynbnb/dsh-ide-bridge
+name: smynbnb/dsh-ide-bridge
+category: dev
+description:
+  en: 'JetBrains IDE bridge for DeepSeek Harness on Windows: installs as a DSH bundle, publishes the authenticated DSH URL, registers the open IDE project, relays the IDE MCP server, and serves a compact tool-window panel with streaming, approvals, Plan/Act, steer sending, session switching and archived-session filtering. The matching IDEA plugin is attached to the same release; your DSH agent can install it.'
+  zh: 'DeepSeek Harness 的 JetBrains IDE 桥（Windows）：以 DSH bundle 安装，发布带 token 的 DSH 地址、注册当前 IDE 项目、转发 IDE MCP，并提供带流式输出、审批、Plan/Act、插话、会话切换与归档过滤的精简工具窗口面板；对应的 IDEA 插件附在同一 Release，可由 DSH agent 代装。'
+tarball: https://github.com/smynbnb/dsh-ide-bridge/releases/download/v0.5.6/dsh-ide-bridge-0.5.6.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/elfgzp/dsh-agent-team-playbook
+name: elfgzp/dsh-agent-team-playbook
+category: workflow
+description:
+  en: 'Injects the non-obvious operating rules of Agent Teams into the Lead session through one ordered system-prompt section: plan the roster before spawning, roster slots are never released, write scopes are advisory, and wait_agent short-circuits when no peer is running.'
+  zh: '通过一条有序的 system-prompt 段落把 Agent Teams 的隐性操作规则注入 Lead 会话：先规划名额再派员、名额不可回收、写入范围只是约定、没有同伴在跑时 wait_agent 会立刻返回。'

@@ -1,0 +1,7 @@
+url: https://github.com/Mulibaixi/dsh-composer-extension
+name: Mulibaixi/dsh-composer-extension
+category: workflow
+description:
+  en: "Links source material and main-chat instructions, and coordinates translation and refinement tasks with the companion translation plugin. Linked submission needs submissions protocol 1: when the host lacks it, Windows Desktop installs a bundled host patch on first use (a full exit and reopen is required); other platforms need a host that already provides it."
+  zh: "将原稿与主聊天要求联动提交，配合翻译插件协调翻译与润色任务。联动发送需要 submissions protocol 1：宿主没有该接口时，Windows 桌面版会在首次使用时安装随包的宿主补丁（需完全退出并重开 DSH）；其他平台则需要宿主本身已提供该接口。"
+tarball: https://github.com/Mulibaixi/dsh-composer-extension/releases/download/v0.4.7/dsh-composer-extension-0.4.7.tgz

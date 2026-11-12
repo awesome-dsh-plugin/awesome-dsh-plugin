@@ -1,0 +1,6 @@
+url: https://github.com/senyayume/dsh-edit-diff
+name: senyayume/dsh-edit-diff
+category: ui
+description:
+  en: 'Redraws line-level diffs on edit, write, insert and str_replace_editor tool cards — unchanged lines render once and changed characters are underlined — covers run_code (PTC) sub-calls, adds a per-turn changed-files card, and opens or copies any of those paths from the card rows and the tool rows through a host route the plugin serves itself.'
+  zh: '接管 edit / write / insert / str_replace_editor 四种工具行：行级对齐后相同行只渲染一次、行内改动字符带下划线；run_code(PTC) 子调用同样覆盖；轮末给出本轮改动汇总卡片；工具行与卡片行都能右键「在资源管理器中打开」或复制文件/文件夹绝对路径，由插件自己的宿主路由完成。'

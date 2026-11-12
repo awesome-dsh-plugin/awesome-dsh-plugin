@@ -1,0 +1,8 @@
+url: https://github.com/135ty/dsh-git-commit-panel
+name: 135ty/dsh-git-commit-panel
+category: git
+description:
+  en: 'Floating commit panel for the DSH web UI: it appears when the current session workspace has unstaged or untracked changes, takes a hand-written or AI-drafted commit message (AI drafts follow Conventional Commit), and commits or commits and pushes. Works in the DSH web UI and CLI only; the desktop app cannot install it.'
+  zh: 'DSH 网页界面的悬浮提交面板：当前对话所在工作区出现未暂存或未跟踪改动时浮出，提交信息可手写或由 AI 起草（AI 起草按 Conventional Commit 生成），支持提交与提交并推送。仅支持 DSH Web / CLI，桌面版无法安装。'
+icon: https://raw.githubusercontent.com/135ty/dsh-git-commit-panel/main/assets/icon-180.png
+tarball: https://github.com/135ty/dsh-git-commit-panel/releases/latest/download/dsh-git-commit-panel.tgz

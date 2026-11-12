@@ -1,0 +1,6 @@
+url: https://github.com/adrianleb/dsh-tmux-cc
+name: adrianleb/dsh-tmux-cc
+category: ui
+description:
+  en: Persistent tmux control-mode cockpit for DSH Web that mirrors native panes in a dock.
+  zh: 为 DSH Web 提供持久的 tmux 控制模式驾驶舱，在停靠栏中镜像原生窗格。

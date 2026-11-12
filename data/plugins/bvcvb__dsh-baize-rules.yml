@@ -1,0 +1,6 @@
+url: https://github.com/bvcvb/dsh-baize-rules
+name: bvcvb/dsh-baize-rules
+category: session
+description:
+  en: Injects durable user-set must-do and must-not requirements into the model at conversation start.
+  zh: 在会话开始时向模型注入用户设定的“必须做 / 不能做”持久要求。

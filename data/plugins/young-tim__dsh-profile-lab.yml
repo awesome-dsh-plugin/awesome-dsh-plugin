@@ -1,0 +1,6 @@
+url: https://github.com/young-tim/dsh-profile-lab
+name: young-tim/dsh-profile-lab
+category: dev
+description:
+  en: Runs reproducible DSH profile and patch experiments with guided case authoring, assertions, Web comparison reports, recovery, and policy gates.
+  zh: 运行可复现的 DSH Profile 与 Patch 实验，并提供引导式用例构建、断言、Web 对比报告、恢复和策略门禁。

@@ -1,0 +1,6 @@
+url: https://github.com/DragonHorizon-xtihc/dsh-optimized-tools
+name: DragonHorizon-xtihc/dsh-optimized-tools
+category: tools
+description:
+  en: 'Per-session control of which skills and MCP tools/servers the model can see (built-in tools are untouched): default shows everything, auto asks the model each turn what to keep, smart picks from your saved groups, or tick groups by hand, with a switcher under the composer and fail-open to full visibility on any error. The default state is auto, which adds one model call per turn (the session model unless judgeModel is set).'
+  zh: '按会话控制模型能看到哪些技能与 MCP 工具/服务器（不碰内置工具）：default 全部可见，auto 每轮由模型判定保留哪些，smart 从你建好的分组里选，也可手动勾选分组；输入框下方可随时切换，任何出错都回到全部可见。默认状态为 auto，每轮多一次模型调用（默认沿用当前会话模型，可用 judgeModel 指定）。'

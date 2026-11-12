@@ -1,0 +1,6 @@
+url: https://github.com/wly8691-jpg/dsh-office-com
+name: wly8691-jpg/dsh-office-com
+category: tools
+description:
+  en: 'COM-driven real Microsoft Office automation for DeepSeek Harness: drives a running Excel/Word instance through OfficeMCP — VBA macros, pivot tables, live formula recalculation, and deep document layout; plus an accounting suite (double-entry journal posting with debit/credit balance check, and SUMIF general ledger).'
+  zh: COM 驱动真实 Microsoft Office 实例的 DeepSeek Harness 插件：经 OfficeMCP 操作运行中的 Excel/Word——VBA 宏、透视表、活公式重算、文档深度排版；含会计场景（复式记账分录 + 借贷平衡校验、SUMIF 科目总账）。

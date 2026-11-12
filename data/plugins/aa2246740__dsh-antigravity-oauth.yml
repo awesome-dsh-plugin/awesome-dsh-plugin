@@ -1,0 +1,7 @@
+url: "https://github.com/aa2246740/dsh-antigravity-oauth"
+name: "aa2246740/dsh-antigravity-oauth"
+category: "model"
+description:
+  en: "Unofficial Gemini Cloud Code Assist OAuth integration with isolated account storage; carries account-ban risk."
+  zh: "提供独立账户存储的非官方 Gemini Cloud Code Assist OAuth 接入，存在封号风险。"
+tarball: "https://github.com/aa2246740/dsh-antigravity-oauth/releases/download/v0.2.3/dsh-antigravity-oauth-0.2.3.tgz"

@@ -1,0 +1,6 @@
+url: https://github.com/CJYLZS/dsh-remote-development
+name: CJYLZS/dsh-remote-development
+category: remote
+description:
+  en: 'Remote development over SSH: pick a directory on a registered machine as the session workspace and the file, shell, bash, and search tools run on the remote host — the agent works there with the same local tools, and no extra model-facing tools are added.'
+  zh: '基于 SSH 的远程开发：把注册机器上的目录选为会话工作区后，文件、shell、bash 与搜索工具即改在远程主机上执行——agent 用与本地相同的工具在那里工作，不新增任何面向模型的工具。'

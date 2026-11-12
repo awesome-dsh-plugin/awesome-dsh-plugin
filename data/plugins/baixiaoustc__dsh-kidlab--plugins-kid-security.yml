@@ -1,0 +1,6 @@
+url: https://github.com/baixiaoustc/dsh-kidlab/tree/main/plugins/kid-security
+name: baixiaoustc/dsh-kidlab#kid-security
+category: fun
+description:
+  en: "Computer safety shown as castle guards: firewall, disk encryption, lock screen, remote ports and login history."
+  zh: "电脑安全小城堡守卫：防火墙、磁盘加密、锁屏、远程端口、登录记录。"

@@ -1,0 +1,6 @@
+url: https://github.com/DeLightor/dsh-depguard
+name: DeLightor/dsh-depguard
+category: dev
+description:
+  en: 'Dependency-topology guard: pre-install conflict prediction and post-install detection of duplicate @deepseek-ai/dsh-* copies, version drift, and vendored core services that cause Symbol-key crashes like "Cannot read properties of undefined (reading ''prepare'')".'
+  zh: 依赖拓扑安全：装前预测 + 装后检测 @deepseek-ai/dsh-* 多副本、版本漂移与插件私包，防 Symbol 键冲突崩溃（Cannot read properties of undefined (reading 'prepare')）。

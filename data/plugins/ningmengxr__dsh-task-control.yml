@@ -1,0 +1,7 @@
+url: https://github.com/ningmengxr/dsh-task-control
+name: ningmengxr/dsh-task-control
+category: session
+description:
+  en: 'Task control for DeepSeek Harness: one-click emergency stop and force-termination of stuck downloads and tool calls, download progress, stuck detection, pwsh activity monitoring, and append-condition / pause / resume with invisible recovery.'
+  zh: 'DeepSeek Harness 任务控制：卡死的下载与工具调用一键急停与强制终止、下载进度、卡死识别、pwsh 运行状态检测，以及追加条件/暂停/恢复（恢复指令隐形注入，不打扰聊天）。'
+# verified: repo declares dsh.bundle manifest and is actively maintained (v0.4.2)

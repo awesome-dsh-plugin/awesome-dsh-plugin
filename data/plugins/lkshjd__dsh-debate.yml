@@ -1,0 +1,6 @@
+url: https://github.com/lkshjd/dsh-debate
+name: lkshjd/dsh-debate
+category: workflow
+description:
+  en: 'Multi-agent isolated debate for DeepSeek Harness: debaters of different temperaments research independently (no herding), then cross-examine, then judges converge to a conclusion. Runs as a background job with per-agent progress, token accounting, wave-parallel execution, and session-referenced resume.'
+  zh: 'DeepSeek Harness 多 agent 隔离辩论：不同底色的辩手各自独立联网取证（互不可见防人云亦云）、交叉辩论互相反驳、评审收敛出结论。后台 job 运行，逐 agent 进度可见、token 统计、波次并行、断点续传。'

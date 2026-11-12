@@ -1,0 +1,6 @@
+url: https://github.com/Ndsanes/dsh-rules
+name: Ndsanes/dsh-rules
+category: dev
+description:
+  en: 'Discovers rule files from every convention OMP supports and injects them into the system prompt as an always-apply layer plus a rulebook index, then enforces them with time-traveling stream rules that abort violating output mid-turn, deny a matching tool call, fold a reminder into that call''s result, or ask a judge model about the finished reply. The same tool lets the model write new rules, and an audit panel on the Plugins page says why each rule is in force.'
+  zh: '从 OMP 支持的每一种约定中发现规则文件,以 always-apply 层加规则索引注入系统提示词,并用时间旅行流规则强制执行——在模型输出中途打断违规内容、拦下会违规的工具调用、把提醒折进该调用的结果,或在回复完成后交由裁判模型判断。同一个工具也让模型能写入新规则;Plugins 页的审计面板会说明每条规则为何生效。'

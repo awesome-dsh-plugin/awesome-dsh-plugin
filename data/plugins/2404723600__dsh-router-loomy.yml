@@ -1,0 +1,6 @@
+url: https://github.com/2404723600/dsh-router-loomy
+name: 2404723600/dsh-router-loomy
+category: model
+description:
+  en: Registers the Xunfei Loomy cloud channel as an OpenAI-compatible supplier in dsh-router, adding model listing and streaming chat completions.
+  zh: 把讯飞 Loomy 云端通道作为 OpenAI 兼容供应商接入 dsh-router，提供模型列表与流式对话补全。

@@ -1,0 +1,6 @@
+url: https://github.com/Choi-Peng/dsh-footer-order
+name: Choi-Peng/dsh-footer-order
+category: ui
+description:
+  en: 'DSH sidebar footer ordering: forces the sidebar.footer.action slot into a vertical stack and lets users configure the top-to-bottom order of its entries.'
+  zh: 'DSH 侧边栏页脚排序：将 sidebar.footer.action 槽位改为上下堆叠，并允许用户配置各条目自上而下的排列顺序。'

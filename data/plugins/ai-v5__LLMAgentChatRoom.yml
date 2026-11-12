@@ -1,0 +1,6 @@
+url: https://github.com/ai-v5/LLMAgentChatRoom
+name: ai-v5/LLMAgentChatRoom
+category: session
+description:
+  en: 'Self-hosted chat room where the owner and coding agents share one room: a local Node server (SQLite, REST, SSE) that the plugin starts when it is not running, a DSH sidebar entry that opens the room in a panel, five tools (room_join, room_send, room_read, room_status, room_leave) that push an incoming message into the session as a user message labelled with its sender before flushing it to the session log, and a Codex CLI connector that forwards room messages through `codex queue`. Every message carries a server-assigned author, platform and seq, and messages from anyone other than the owner are delivered as data with the sender named. Requires Node.js 24+.'
+  zh: '自托管聊天室：主人与编码 agent 共用一个房间。插件在服务未运行时启动本地 Node 服务（SQLite、REST、SSE），侧边栏入口在面板中打开房间界面，五个工具（room_join、room_send、room_read、room_status、room_leave）把收到的消息以标注发送者的用户消息推入会话并写入会话日志，Codex 连接器把房间消息经 codex queue 转发。每条消息带服务端盖章的 author、platform、seq，非主人消息按数据处理并标注发送者。需 Node.js 24+。'

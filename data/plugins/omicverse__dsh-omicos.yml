@@ -1,0 +1,6 @@
+url: https://github.com/omicverse/dsh-omicos
+name: omicverse/dsh-omicos
+category: tools
+description:
+  en: Runs OmicVerse/OmicOS bioinformatics analyses in a persistent Python kernel, with capability-catalog search, kernel inspection and an account tab.
+  zh: 在持久 Python 内核里跑 OmicVerse/OmicOS 生信分析，附能力目录检索、内核变量查看与账号订阅页签。

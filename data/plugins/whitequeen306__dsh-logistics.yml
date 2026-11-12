@@ -1,0 +1,7 @@
+url: https://github.com/whitequeen306/dsh-logistics
+name: whitequeen306/dsh-logistics
+category: dev
+description:
+  en: 'Ships a set of /logi commands for project housekeeping: dispatches security, logic-correctness, maintainability, reliability and performance experts to inspect the whole project, then produces one consolidated improvement report.'
+  zh: '提供一组 /logi 命令来做项目收尾工作，为你的项目派发「安全/逻辑正确/可维护/健壮/性能」5 位专家深入检查你的项目，并出一份优化总报告。'
+icon: https://raw.githubusercontent.com/whitequeen306/dsh-logistics/main/assets/icon-512.png

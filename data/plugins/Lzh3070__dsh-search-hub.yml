@@ -1,0 +1,6 @@
+url: https://github.com/Lzh3070/dsh-search-hub
+name: Lzh3070/dsh-search-hub
+category: browser
+description:
+  en: 'Configurable web search hub for the built-in web_search tool: switch the active entry between DeepSeek official native search and Zhipu GLM web_search, with entry and credential management on a Settings page tab.'
+  zh: '可配置的原生 web_search 后端：在 DeepSeek 官方原生搜索与智谱 GLM web_search 之间切换当前生效入口，并在设置页管理搜索入口与凭证引用。'

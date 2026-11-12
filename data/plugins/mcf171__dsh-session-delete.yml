@@ -1,0 +1,6 @@
+url: https://github.com/mcf171/dsh-session-delete
+name: mcf171/dsh-session-delete
+category: session
+description:
+  en: Permanently delete a session from the session row menu — archives the id, removes the log directory and drops the row at once, with a Delete shortcut; built only on shipped extension points, and a session that was merely opened stays deletable.
+  zh: 在会话行菜单中永久删除会话：先归档、再删除日志目录并立即移除该行，带 Delete 快捷键；只使用官方扩展点，仅打开过、未在运行的会话依然可以删除。

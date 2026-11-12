@@ -1,0 +1,8 @@
+url: https://github.com/Lzh3070/dsh-model-visibility
+name: Lzh3070/dsh-model-visibility
+category: usage
+description:
+  en: >-
+    Model visibility manager for DeepSeek Harness: hide or show any model in the conversation model selector from a dedicated settings page. Per-model switches, search, provider-level batch actions, reset-all. Zero intrusion - writes only its own hidden list, never the provider config; hiding a model in use never interrupts a running session.
+  zh: >-
+    DSH 模型可见性管理：在独立的设置分区页里按渠道/模型隐藏或显示模型选择菜单中的条目。逐模型开关、实时搜索、渠道级批量隐藏/显示、一键恢复全部。零侵入——只写插件自己的隐藏列表，不改 Provider 配置，隐藏正在使用的模型不会中断会话。

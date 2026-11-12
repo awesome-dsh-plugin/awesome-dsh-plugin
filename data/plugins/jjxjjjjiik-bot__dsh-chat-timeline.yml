@@ -1,0 +1,6 @@
+url: https://github.com/jjxjjjjiik-bot/dsh-chat-timeline
+name: jjxjjjjiik-bot/dsh-chat-timeline
+category: ui
+description:
+  en: '1:1 port of DeepSeek''s official web right-side chat navigation rail (ScrollNav): hover-expandable rail, reading-position highlight, click-to-jump.'
+  zh: 1:1 复刻 DeepSeek 官网右侧对话导航栏（ScrollNav）：悬停展开面板、阅读位置高亮、点击跳转。

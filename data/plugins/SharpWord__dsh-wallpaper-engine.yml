@@ -1,0 +1,6 @@
+url: https://github.com/SharpWord/dsh-wallpaper-engine
+name: SharpWord/dsh-wallpaper-engine
+category: theme
+description:
+  en: Windows only. With Wallpaper Engine installed it follows the active wallpaper or a pinned pick from the Workshop library; without it the plugin ships four starter wallpapers in a drop folder. Translucent panels, per-block blur and wallpaper-matched text contrast.
+  zh: 仅 Windows。装了 Wallpaper Engine 就跟随当前壁纸，或从创意工坊库里固定一张；没装也能用，投放文件夹里自带四张起始壁纸。面板半透明、分块模糊、字色自动跟随壁纸。

@@ -1,0 +1,6 @@
+url: https://github.com/weimingyu9312/DSHSwitch
+name: weimingyu9312/DSHSwitch
+category: ui
+description:
+  en: Adds customizable switch shortcut buttons to the left of the DSH Web GUI chat input for one-click slash-command insertion.
+  zh: 在 DSH Web GUI 聊天输入框左侧添加可自定义的 switch 快捷按钮，一键插入斜杠命令。

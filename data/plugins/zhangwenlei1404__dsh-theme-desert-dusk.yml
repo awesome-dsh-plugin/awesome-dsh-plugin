@@ -1,0 +1,10 @@
+url: https://github.com/zhangwenlei1404/dsh-theme-desert-dusk
+name: zhangwenlei1404/dsh-theme-desert-dusk
+
+category: theme
+
+description:
+  en: 'Desert-dusk theme for the Harness Web GUI: paints a desert scene behind the app with four flocks of geese flying south over the long river at sunset, and overrides 18 --dsw-alias design tokens with a matching warm palette.'
+  zh: '大漠黄昏主题：在 Harness Web GUI 背后铺一层大漠场景——落日沉入长河、四群归雁向南飞去，并覆盖 18 个 --dsw-alias 设计变量，换成配套的暖沙色板。'
+
+icon: https://raw.githubusercontent.com/zhangwenlei1404/dsh-theme-desert-dusk/main/icon-180.png

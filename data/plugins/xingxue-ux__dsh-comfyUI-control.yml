@@ -1,0 +1,6 @@
+url: https://github.com/xingxue-ux/dsh-comfyUI-control
+name: xingxue-ux/dsh-comfyUI-control
+category: tools
+description:
+  en: 'Adds a Drawing Mode agent preset whose 19 comfyui_* tools drive a local ComfyUI: Anima and Krea2 generation, LoRA search and download, Danbooru character tags, PNG metadata, an upstream repro check, and xiaofanqie de-obfuscation.'
+  zh: '新增「绘图模式」Agent 预设，含 19 个 comfyui_* 工具：Anima/Krea2 出图、LoRA 检索与下载、Danbooru 角色 tag、PNG 元数据、上游复刻自检、小番茄解混淆。'

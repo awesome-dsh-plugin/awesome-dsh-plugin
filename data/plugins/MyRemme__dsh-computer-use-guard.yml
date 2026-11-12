@@ -1,0 +1,6 @@
+url: https://github.com/MyRemme/dsh-computer-use-guard
+name: MyRemme/dsh-computer-use-guard
+category: security
+description:
+  en: 'Three-tier deny/ask/auto gate for the computer-use (cua-driver) tool family: each tool category gets one segmented control in Settings, and an allow list or deny list overrides the tiers per tool name.'
+  zh: '给 computer-use（cua-driver）工具族加三档「禁止 / 询问 / 自动授权」闸门：每个工具类别在设置里各占一个分段控件，另可用放行名单或拒绝名单按工具名覆盖档位。'

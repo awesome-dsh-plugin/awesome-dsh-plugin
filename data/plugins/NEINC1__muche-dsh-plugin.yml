@@ -1,0 +1,6 @@
+url: https://github.com/NEINC1/muche-dsh-plugin
+name: NEINC1/muche-dsh-plugin
+category: agi
+description:
+  en: Chat panel for the MuChe companion with per-user backend settings, plus an outbound bridge that runs tasks on the user's local dsh.
+  zh: 连接小沐的 dsh 插件：和有持续状态的小沐聊天，小沐可调用本机 dsh 执行任务。

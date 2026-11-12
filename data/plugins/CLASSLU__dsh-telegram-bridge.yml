@@ -1,0 +1,6 @@
+url: https://github.com/CLASSLU/dsh-telegram-bridge
+name: CLASSLU/dsh-telegram-bridge
+category: remote
+description:
+  en: 'Remote-control your dsh agent from Telegram: chat, skills, workspace browsing, and file transfer.'
+  zh: '通过 Telegram 遥控 dsh Agent：对话、技能调用、工作目录浏览与文件传输。'

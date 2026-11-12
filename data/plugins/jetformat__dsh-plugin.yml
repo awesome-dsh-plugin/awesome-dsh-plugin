@@ -1,0 +1,6 @@
+url: https://github.com/jetformat/dsh-plugin
+name: jetformat/dsh-plugin
+category: docs
+description:
+  en: 'Tools over the local jetformat CLI: convert DOCX, XLSX, and PPTX to PDF, extract text, validate files, and inspect, merge, extract pages from, or render PDFs. Requires the jetformat CLI.'
+  zh: '基于本地 jetformat CLI 的工具：将 DOCX、XLSX、PPTX 转为 PDF，提取文本，校验文件，以及查看、合并、抽页或渲染 PDF。需要安装 jetformat CLI。'

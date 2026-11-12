@@ -1,0 +1,6 @@
+url: https://github.com/AhaCrazy/dsh-stock-quotes
+name: AhaCrazy/dsh-stock-quotes
+category: ui
+description:
+  en: 'Watchlist panel for A-share, Hong Kong and US quotes plus Eastmoney boards, with intraday sparklines and an agent stock_quote tool.'
+  zh: 'A 股 / 港股 / 美股与板块自选面板，带分时迷你走势图，并向 agent 提供 stock_quote 工具。'

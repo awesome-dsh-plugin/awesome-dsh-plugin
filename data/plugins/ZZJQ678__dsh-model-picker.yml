@@ -1,0 +1,6 @@
+url: https://github.com/ZZJQ678/dsh-model-picker
+name: ZZJQ678/dsh-model-picker
+category: ui
+description:
+  en: 'Replaces the chat input model picker with a provider-grouped, collapsible list: groups models by provider, folds vision-bridge mirror providers back into their upstream, and carries the reasoning-effort options each model declares in settings. Tested on DSH Desktop only; the DSH web build is untested.'
+  zh: '把聊天输入框的模型选择器换成按渠道商分组、可折叠的列表：按渠道商归组，把视觉桥镜像渠道商折叠回上游，并逐模型带上设置里声明的思考强度选项。仅在 DSH 桌面版实测，Web 版未测试。'

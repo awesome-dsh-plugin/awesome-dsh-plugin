@@ -1,0 +1,7 @@
+url: https://github.com/VICqiufeeng/dsh-minimax-connect
+name: VICqiufeeng/dsh-minimax-connect
+category: model
+description:
+  en: Turns the MiniMax Code (Mavis) subscription already signed in on this machine into a DSH model provider, renewing the OAuth token itself so the desktop client can stay closed, with points, check-in and subscription-quota panels.
+  zh: 把本机已登录的 MiniMax Code（Mavis）订阅接入 DSH 作为模型 provider，自己完成 OAuth 续期所以桌面客户端可以一直关着，并提供积分、签到与订阅额度面板。
+tarball: https://github.com/VICqiufeeng/dsh-minimax-connect/releases/latest/download/dsh-minimax-connect.tgz

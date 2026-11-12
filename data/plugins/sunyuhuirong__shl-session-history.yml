@@ -1,0 +1,6 @@
+url: https://github.com/sunyuhuirong/shl-session-history
+name: sunyuhuirong/shl-session-history
+category: session
+description:
+  en: 'Conversation history rail on the left edge of the chat: each tick is one real user request, hover to preview its text, click to jump to that turn.'
+  zh: '会话历史迷你滑轨：对话区左侧垂直居中的短横线，每条横线代表一条真实用户请求，悬停预览请求内容，点击跳转到对应轮次。'

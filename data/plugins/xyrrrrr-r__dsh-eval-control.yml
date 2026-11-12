@@ -1,0 +1,6 @@
+url: https://github.com/xyrrrrr-r/dsh-eval-control
+name: xyrrrrr-r/dsh-eval-control
+category: dev
+description:
+  en: "Host-side DSH evaluation control plugin: injects one evaluation trial's variables, budget limits, session root and fork lineage into the agent process, routes its model calls through a host broker under a gateway lease, and writes a schema-versioned bundle descriptor for evidence attribution."
+  zh: "宿主侧 DSH 评测控制插件：把单次评测试次的变量、预算上限、会话根目录与 fork 血统一次性注入 agent 进程，模型调用经宿主 broker 走网关租约，并写出 schema 版本化的 bundle descriptor 做证据归属。"

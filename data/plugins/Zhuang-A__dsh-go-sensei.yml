@@ -1,0 +1,6 @@
+url: https://github.com/Zhuang-A/dsh-go-sensei
+name: Zhuang-A/dsh-go-sensei
+category: tools
+description:
+  en: 'Go (weiqi) review coach: parses SGF records, backfills winrate and score analysis with a bundled KataGo engine, explains the costly moves in the chat, and writes the commentary back into an SGF copy; a web panel shows the board with problem moves, AI choices and variations.'
+  zh: '围棋复盘教练：解析 SGF 棋谱，用自带 KataGo 引擎补算胜率与目差，在对话里逐手讲解问题手，并把讲解写回 SGF 副本；Web 面板用棋盘展示问题手、AI 首选与变化图。'

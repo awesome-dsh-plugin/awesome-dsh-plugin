@@ -1,0 +1,6 @@
+url: https://github.com/magicOF2/dsh-autoload-history
+name: magicOF2/dsh-autoload-history
+category: ui
+description:
+  en: Automatically loads the full conversation history when a session opens, so older messages are ready without clicking "Load earlier".
+  zh: 打开会话时自动加载全部历史消息，免去反复点击「加载更早」。

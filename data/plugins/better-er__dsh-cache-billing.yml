@@ -1,0 +1,6 @@
+url: https://github.com/better-er/dsh-cache-billing
+name: better-er/dsh-cache-billing
+category: usage
+description:
+  en: 'Per-call cache billing inside the context-meter popover: current step, round and session totals with hit/miss/output tokens and amounts, automatic Beijing working-hour peak/off-peak pricing, per-model rates, and third-party relays billed too.'
+  zh: '在上下文圆环弹层里实时算账：当前步、当前轮、会话累计三块明细，缓存命中/未命中/输出各带 token 与金额，官方峰谷价与模型分价自动判定，第三方中转照常记账。'

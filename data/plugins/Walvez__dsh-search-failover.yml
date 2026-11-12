@@ -1,0 +1,6 @@
+url: https://github.com/Walvez/dsh-search-failover
+name: Walvez/dsh-search-failover
+category: tools
+description:
+  en: 'Web search pool for the native web_search tool: fails over across 8 free/paid backends with quota-aware circuit breaking, settings-page API key management, custom SearXNG instances, failover/rotate strategy switching and live SerpApi quota.'
+  zh: '原生 web_search 的搜索池：8 个免费/付费后端自动故障转移与额度感知熔断，设置页管理 API Key、自定义 SearXNG 实例、failover/rotate 策略切换与 SerpApi 实时额度查询。'

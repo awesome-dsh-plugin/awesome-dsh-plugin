@@ -1,0 +1,6 @@
+url: https://github.com/sorawithcat/dsh-settings-sync
+name: sorawithcat/dsh-settings-sync
+category: market
+description:
+  en: Exports the plugin profile together with selected $DSH_HOME files and browser localStorage into one JSON, imports it back after a per-file preview, and can run pnpm install to reinstall the listed plugins; the format is interchangeable with the dsh-market profile backup.
+  zh: 把插件清单与 profile 配置、选定的 $DSH_HOME 文件、浏览器 localStorage 导出成一份 JSON，按文件预览后导入，并可在 profile 目录执行 pnpm install 重装清单里的插件；格式与插件市场的 profile 备份互通。

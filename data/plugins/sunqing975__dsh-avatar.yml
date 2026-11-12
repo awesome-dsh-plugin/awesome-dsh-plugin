@@ -1,0 +1,7 @@
+url: https://github.com/sunqing975/dsh-avatar
+name: sunqing975/dsh-avatar
+category: fun
+description:
+  en: 'A floating VRM avatar with tool-driven expressions and VRMA animations, plus model and motion asset management.'
+  zh: '常驻界面的 VRM 数字人，支持通过工具控制表情与 VRMA 动作，并提供模型和动作资产管理。'
+icon: https://raw.githubusercontent.com/sunqing975/dsh-avatar/main/assets/icon-180.png

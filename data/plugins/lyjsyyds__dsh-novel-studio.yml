@@ -1,0 +1,7 @@
+url: https://github.com/lyjsyyds/dsh-novel-studio
+name: lyjsyyds/dsh-novel-studio
+category: tools
+description:
+  en: 'A novel-writing workspace: one folder per book, YAML/Markdown sections, an auto-wired relationship graph, consistency checks, four LLM tasks and four export formats.'
+  zh: 小说创作工作区：一本书一个文件夹、YAML/Markdown 分区、关系图自动连边、一致性校验、四个 AI 任务与四种导出格式。
+tarball: https://github.com/lyjsyyds/dsh-novel-studio/releases/download/v0.2.1/dsh-novel-studio-lyjs-0.2.1.tgz

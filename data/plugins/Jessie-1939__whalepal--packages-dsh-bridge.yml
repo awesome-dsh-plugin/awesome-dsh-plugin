@@ -1,0 +1,6 @@
+url: https://github.com/Jessie-1939/whalepal/tree/main/packages/dsh-bridge
+name: Jessie-1939/whalepal#dsh-bridge
+category: fun
+description:
+  en: Bridges DeepSeek Harness agent state (status, tool calls, errors, approval waits) over loopback to WhalePal, a standalone desktop pet app, so the desktop pet follows the real agent state instead of guessing from screenshots.
+  zh: 把 DeepSeek Harness 的 agent 状态（思考、工具调用、报错、等待确认）通过本机回环推给桌面宠物应用「鲸伴 WhalePal」，让这只桌面宠物跟着真实状态反应，而不是靠截屏猜。

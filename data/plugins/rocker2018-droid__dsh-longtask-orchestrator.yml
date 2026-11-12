@@ -1,0 +1,6 @@
+url: https://github.com/rocker2018-droid/dsh-longtask-orchestrator
+name: rocker2018-droid/dsh-longtask-orchestrator
+category: workflow
+description:
+  en: 'Long-task orchestration loop: Codex plans/scores/reviews, DeepSeek executes, Kimi supplements (vision acceptance, summarization, cross-check).'
+  zh: 长任务编排闭环：Codex 规划/打分/审核，DeepSeek 执行，Kimi 补充（视觉验收/摘要/交叉验证）。

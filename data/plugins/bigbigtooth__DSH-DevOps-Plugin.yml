@@ -1,0 +1,7 @@
+url: https://github.com/bigbigtooth/DSH-DevOps-Plugin
+name: bigbigtooth/DSH-DevOps-Plugin
+category: remote
+description:
+  en: 'Remote operations for the DSH Web app: manages SSH servers, collects hardware and process metrics, inspects logs with a read-only AI pass, and deploys a Git repo over SSH using git pull --ff-only plus a health check. Credentials are AES-256-GCM encrypted. Linux and macOS hosts; no Windows support.'
+  zh: 'DSH Web 远程运维插件：管理 SSH 服务器、采集硬件与进程指标、以只读 AI 巡检日志，并通过 SSH 部署 Git 仓库（git pull --ff-only 加健康检查）。凭据 AES-256-GCM 加密存储。支持 Linux 与 macOS，不支持 Windows。'
+tarball: https://github.com/bigbigtooth/DSH-DevOps-Plugin/releases/latest/download/dsh-devops-latest.tgz

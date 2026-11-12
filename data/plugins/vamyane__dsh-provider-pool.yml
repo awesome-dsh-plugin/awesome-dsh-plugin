@@ -1,0 +1,7 @@
+url: https://github.com/vamyane/dsh-provider-pool
+name: vamyane/dsh-provider-pool
+category: model
+description:
+  en: Provider pool for DeepSeek Harness. It runs a local OpenAI-compatible proxy that tries configured LLM providers in priority order and falls back on authentication, quota, rate-limit or server errors, with per-provider usage statistics.
+  zh: 模型 Provider 池：在本地跑一个 OpenAI 兼容代理，按优先级依次尝试配置好的模型服务，遇到鉴权、额度、限流或服务端错误时自动切换，并记录各 provider 的调用统计。
+icon: https://raw.githubusercontent.com/vamyane/dsh-provider-pool/main/assets/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/wpeng77/dsh-llm-trace
+name: wpeng77/dsh-llm-trace
+category: dev
+description:
+  en: 'Wire-level LLM inspector: captures the raw HTTP request and response bodies of model provider calls and attributes each capture to the session that caused it through the llm/stream waterfall. The request pane renders the body as a collapsible tree with per-node sizes — one measured request was 98.6% a single 973-entry array — and the response pane reassembles the OpenAI-style SSE chunk stream into reasoning, content, tool calls and usage. Shown in a Conversation View tab and a loopback viewer page.'
+  zh: '线路层 LLM 检查器：抓取模型调用的原始 HTTP 请求与响应报文，经 llm/stream 瀑布把每次抓取归属到发起它的会话。请求面板把报文渲染成带每节点大小的可折叠树——实测一次请求有 98.6% 是单个 973 项的数组——响应面板则把 OpenAI 风格的 SSE chunk 流重新组装成推理、正文、工具调用与用量。在对话栏标签页与本地查看页展示。'

@@ -1,0 +1,6 @@
+url: https://github.com/linhut/dsh-stock-terminal
+name: linhut/dsh-stock-terminal
+category: theme
+description:
+  en: 'Stock market skin + real-time ticker plugin for DSH Web GUI: candlestick (K-line) popup with day/week/month periods, watchlist with pinyin fuzzy search, portfolio P&L tracker, trading session indicators, support for A-share/HK/US/crypto/forex.'
+  zh: 股市行情皮肤与功能插件：全局交易终端皮肤 + 跑马灯 + 个股 K 线弹窗（日K/周K/月K 切换）、自选拼音首字母模糊搜索、持仓盈亏管理、交易时段指示，支持 A股 / 港股 / 美股 / 加密货币 / 外汇。

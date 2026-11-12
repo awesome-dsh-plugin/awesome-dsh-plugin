@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-token-caveman
+name: WODE25500/dsh-token-caveman
+category: skill
+description:
+  en: "Terse prose for DeepSeek Harness — compress the agent's own output so every reply costs fewer tokens (layer 4). Style, never substance."
+  zh: "DeepSeek Harness 的输出极简——压缩 agent 自己的输出让每句回复更省 token(layer 4)。只改措辞，不丢内容。"

@@ -1,0 +1,6 @@
+url: https://github.com/TianJie52009/Tdsh-emoji
+name: TianJie52009/Tdsh-emoji
+category: fun
+description:
+  en: Adds standard Unicode emoji to dsh replies at the point that best matches the content, and keeps emoji out of any sentence that already carries a kaomoji.
+  zh: 给 dsh 回复在内容最匹配的位置添加标准 emoji，并避免与颜文字出现在同一句。

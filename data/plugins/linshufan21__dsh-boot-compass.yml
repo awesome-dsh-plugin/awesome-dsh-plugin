@@ -1,0 +1,6 @@
+url: https://github.com/linshufan21/dsh-boot-compass
+name: linshufan21/dsh-boot-compass
+category: ui
+description:
+  en: Desktop full-screen boot splash. It covers DSH's loading card before first paint, plays a 4.5 s five-stage compass sequence, then hands off to the app; clicking anywhere skips ahead, and reopening the window from the tray replays it. The first cold start may hitch once, then runs smoothly.
+  zh: 桌面端全屏启动动画：在 DSH 加载卡出现前接住首帧，播放 4.5 秒五阶段罗盘序列后交接；点按任意处可跳过，从托盘重开窗口会重播。冷启动首帧可能顿一下，之后流畅。

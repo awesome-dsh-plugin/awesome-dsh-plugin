@@ -1,0 +1,6 @@
+url: https://github.com/devome/dsh-panel-layout
+name: devome/dsh-panel-layout
+category: ui
+description:
+  en: 'Sidebar panel menu layout: switch between a button row and a list, cap the button row at one to three rows, drag any entry to reorder it, hide the entries past the cap and list them in the shell More menu, and absorb Settings, Feedback and Sign in from the bottom-left launcher. Based on ruanimal/dsh-sidebar-panel-buttons; the two cannot be enabled at the same time.'
+  zh: '侧边栏面板菜单布局：在按钮行与列表之间切换，按钮行可限一到三行，任意项可拖动排序，超出上限的项收进宿主「更多」菜单，并把左下角「更多」里的设置、意见反馈、登录并入面板菜单。基于 ruanimal/dsh-sidebar-panel-buttons；两者不能同时启用。'

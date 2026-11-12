@@ -1,0 +1,6 @@
+url: https://github.com/wanwulizhi/dsh-claude-code-sdk
+name: wanwulizhi/dsh-claude-code-sdk
+category: tools
+description:
+  en: Requires Claude Code installed and signed in on this machine. Delegates coding tasks to the local Claude Code agent through the Claude Agent SDK, reports which files changed, supports one-command revert, and adds a Claude Mode toggle to the composer.
+  zh: 需本机已安装并登录 Claude Code。通过 Claude Agent SDK 把编码任务委派给本机 Claude Code，报告改动文件、支持一键回退，并在输入框旁提供「Claude 模式」开关。

@@ -1,0 +1,6 @@
+url: https://github.com/nxz1026/SinglePlayer
+name: nxz1026/SinglePlayer
+category: fun
+description:
+  en: 'AI-native music player plugin for DeepSeek Harness: aggregates NetEase Cloud Music, QQ Music and KuGou search with cross-provider playback fallback, renders word-by-word karaoke lyrics synced live over USB HID to HALO PIXELBAR speakers, and exposes search, playback, queue, alarm and speaker control as model tools.'
+  zh: '运行于 DeepSeek Harness 的 AI 原生音乐播放器（music player）：聚合网易云（NetEase）、QQ Music 与酷狗（KuGou）搜索并支持跨源播放回退，逐字卡拉OK歌词（karaoke lyrics）经 USB HID 实时同步至花再音箱（HALO PIXELBAR），搜索、播放、队列、闹钟与音箱控制均可由对话操控。'

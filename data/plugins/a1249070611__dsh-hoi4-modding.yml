@@ -1,0 +1,6 @@
+url: https://github.com/a1249070611/dsh-hoi4-modding
+name: a1249070611/dsh-hoi4-modding
+category: skill
+description:
+  en: 'DeepSeek Harness skill bundle for Hearts of Iron IV 1.19.3 modding: registers 15 skills and mounts 20 local MCP tools (a Python stdio server) to scaffold, statically verify, install and debug mods - focus trees, events, decisions, ideas, characters, technologies, MIO, special projects, scripted GUI and topbar buttons, localisation, DDS icons, 18-slot tank designer layouts, 3D tank models, CJK font auditing and error.log triage - plus a 23-workshop-mod technique survey and a multi-agent playbook. Requires DSH >=0.2.0 <0.3.0 and Python 3.9+ on PATH (standard library only, no third-party packages); no game assets are shipped.'
+  zh: '面向《钢铁雄心4》1.19.3 Mod 开发的 DSH 技能包：注册 15 个技能，并在本地挂载 20 个 MCP 工具（Python stdio 服务器），用于生成、静态校验、安装与排查 Mod——国策树、事件、决议、理念、角色、科技、MIO、特殊项目、scripted GUI 与顶栏按钮、本地化、DDS 图标、18 槽坦克设计器布局、3D 坦克模型、中文字体审计与 error.log 分诊——另含 23 个工坊 Mod 技法总览与多 agent 分工规范。要求 DSH >=0.2.0 <0.3.0 与 PATH 上有 Python 3.9+（仅标准库，无第三方依赖）；不含游戏素材。'

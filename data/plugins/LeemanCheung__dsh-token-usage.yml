@@ -1,0 +1,6 @@
+url: https://github.com/LeemanCheung/dsh-token-usage
+name: LeemanCheung/dsh-token-usage
+category: usage
+description:
+  en: 'Local-first four-bucket Token observability: persistent session/provider/model/day dashboards, trends, budget and anomaly signals, public-rate estimates, safe aggregate exports, and explicit opt-in usage or session-trajectory analysis.'
+  zh: 本地优先的四 bucket Token 可观测性：持久会话/provider/model/日期仪表盘、趋势、预算与异常信号、公开费率估算、安全聚合导出，以及显式触发的用量/会话轨迹分析。

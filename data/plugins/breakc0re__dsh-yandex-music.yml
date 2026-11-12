@@ -1,0 +1,7 @@
+url: https://github.com/breakc0re/dsh-yandex-music
+name: breakc0re/dsh-yandex-music
+category: ui
+description:
+  en: 'Yandex Music inside the DSH sidebar: search, a draggable queue with repeat and shuffle, playlists with drag-and-drop editing, 700 My Wave stations plus a wave by any artist, karaoke lyrics with real timecodes and a Russian translation, volume, media keys, and playback that resumes where it stopped after a restart. Requires a Yandex account and a Plus subscription.'
+  zh: '在 DSH 侧边栏里使用 Яндекс.Музыка：搜索、可拖拽并可循环与随机播放的队列、支持拖拽编辑的播放列表、700 个「我的波」电台以及任意歌手的波、带真实时间轴与俄语翻译的卡拉 OK 歌词、音量、媒体按键，以及重启后从上次位置继续播放。需要 Яндекс 账号与 Plus 订阅。'
+icon: https://raw.githubusercontent.com/breakc0re/dsh-yandex-music/main/assets/icon-180.png

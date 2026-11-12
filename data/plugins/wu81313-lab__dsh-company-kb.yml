@@ -1,0 +1,6 @@
+url: https://github.com/wu81313-lab/dsh-company-kb
+name: wu81313-lab/dsh-company-kb
+category: memory
+description:
+  en: 'Local-folder knowledge base for DSH: builds a SQLite FTS5 index over Office, text, PDF and scanned files, ships five tools (kb_search / kb_read / kb_list / kb_status / kb_session) plus a Web panel, and retrieves or syncs only when the user explicitly asks.'
+  zh: 'DSH 本地文件夹知识库：把 Office、文本、PDF 与扫描件建成 SQLite FTS5 索引，提供 kb_search / kb_read / kb_list / kb_status / kb_session 五个工具与 Web 面板；仅在用户点名时检索，仅在手动触发时同步。'

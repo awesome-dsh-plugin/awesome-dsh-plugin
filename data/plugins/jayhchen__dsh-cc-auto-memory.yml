@@ -1,0 +1,7 @@
+url: https://github.com/jayhchen/dsh-cc-auto-memory
+name: jayhchen/dsh-cc-auto-memory
+category: memory
+description:
+  en: 'Claude Code-compatible persistent memory: the host injects the MEMORY.md index at session start, the model maintains memory files with plain read/write/edit tools, and a Settings page lists saved memories. Same on-disk format as Claude Code; claude mode shares the exact memory directory.'
+  zh: 'Claude Code 兼容的持久记忆：每个会话开始时自动注入 MEMORY.md 索引，模型用普通 read/write/edit 文件工具维护记忆，Settings 内置记忆列表页。落盘格式与 Claude Code 完全一致，claude 模式直接共享同一记忆目录。'
+icon: https://raw.githubusercontent.com/jayhchen/dsh-cc-auto-memory/main/assets/icon-180.png

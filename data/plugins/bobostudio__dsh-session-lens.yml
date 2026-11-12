@@ -1,0 +1,6 @@
+url: https://github.com/bobostudio/dsh-session-lens
+name: Session Lens
+category: session
+description:
+  en: Session insights and one-click shareable HTML replay for DeepSeek Harness.
+  zh: 'DeepSeek Harness 的会话洞察，并可一键导出为可分享的 HTML 回放。'

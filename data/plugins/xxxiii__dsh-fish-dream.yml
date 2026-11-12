@@ -1,0 +1,6 @@
+url: https://github.com/xxxiii/dsh-fish-dream
+name: xxxiii/dsh-fish-dream
+category: fun
+description:
+  en: 'Dreams for the pet in dsh-fish: once she has been quiet long enough, it picks real events from her event stream, follows one of six dream theories, and hands her a dream seed to write out in her own words. Ships three tools (dream_recall, dream_record, dream_now), never calls a model itself, and keeps its data in ~/.dsh-fish-dream. Every dream is rebuilt from events that actually happened; the theory only decides how they are put together.'
+  zh: '给 dsh-fish 里的她做梦：安静够久之后，从她真实的事件流里挑碎片，按六种梦理论之一拼成「梦的种子」，她自己把梦写完。提供三个工具（dream_recall、dream_record、dream_now），插件自己不调用模型，数据放在 ~/.dsh-fish-dream。梦只能用真实发生过的事重拼，理论只决定怎么拼。'

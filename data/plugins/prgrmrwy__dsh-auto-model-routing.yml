@@ -1,0 +1,6 @@
+url: https://github.com/prgrmrwy/dsh-auto-model-routing
+name: prgrmrwy/dsh-auto-model-routing
+category: model
+description:
+  en: 'Use Jev to adjust main-chat reasoning effort without switching its model, independently select and apply fresh sub-agent capability and effort, and inspect decisions with per-reply allocation feedback.'
+  zh: '通过 Jev 调整主会话推理投入而不换模型，为 fresh 子任务独立选择并应用能力与投入，展示决策分布并收集逐回复资源分配反馈。'

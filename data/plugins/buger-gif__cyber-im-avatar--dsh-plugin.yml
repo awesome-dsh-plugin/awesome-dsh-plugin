@@ -1,0 +1,6 @@
+url: https://github.com/buger-gif/cyber-im-avatar/tree/main/dsh-plugin
+name: buger-gif/cyber-im-avatar#dsh-plugin
+category: identity
+description:
+  en: 'IM stand-in seat for DeepSeek Harness: a sidebar panel polls Feishu/Lark, WeCom and DingTalk (switched on from the panel) through the platform CLI you are already logged in to, and wakes the DSH session you bound when a new message arrives, so that session reads it and replies as you — drafts are shown to you first unless you have explicitly allowed sending without confirmation. Groups are polled only after you add them to the watch list, and by default only @-mentions wake the agent; blocked chats are never fetched, message bodies stay in a local state file, and the plugin opens no port of its own.'
+  zh: '把「替你值守 IM」做成 DSH 侧边栏的常驻席位：复用本机已登录的飞书/Lark、企业微信、钉钉（需在面板里先启用）CLI 按节奏拉取会话，新消息进来就唤醒你绑定的 DSH 会话，由它读上下文、以你本人的语气起草回复；默认先把草稿给你看，你明确说全自动才直接发出。群要你加进值守名单才开始轮询，且默认只有 @你 的消息唤醒 agent；屏蔽的会话永不拉取，消息正文只留在本机状态文件里，插件不开任何端口。'

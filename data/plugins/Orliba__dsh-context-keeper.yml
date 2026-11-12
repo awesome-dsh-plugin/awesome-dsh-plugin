@@ -1,0 +1,6 @@
+url: https://github.com/Orliba/dsh-context-keeper
+name: Orliba/dsh-context-keeper
+category: session
+description:
+  en: 'Watches the context budget of a DeepSeek Harness session: a colour dot in every turn footer (green <50%, yellow 50-65%, orange 65-80%, red >=80%) read from the official contextPressure projection, a reminder panel with a one-click new-session handoff at orange/red, the /context-watch and /handoff commands, and a static reasoning-rule prompt section. Budget and handoff read local session files only; the badge and reminder spend no tokens until the button is clicked.'
+  zh: '看护 DeepSeek Harness 会话的上下文预算：每轮回复底部一个颜色点（绿<50%、黄50-65%、橙65-80%、红≥80%，读官方 contextPressure 投影），橙/红档在输入框下方出现提醒与「一键开新会话」交接按钮，另有 /context-watch 与 /handoff 命令和一个静态思考规则提示段。预算与交接只读本地会话文件，徽章和提醒不点按钮不花 token。'

@@ -1,0 +1,6 @@
+url: https://github.com/hhse/dsh-usage-peak
+name: hhse/dsh-usage-peak
+category: usage
+description:
+  en: Peak/valley pricing and spend dashboard for DeepSeek Harness, with a sidebar pill showing today's spend and tokens plus a details page with hourly, 14-day and per-model breakdowns.
+  zh: DeepSeek Harness 用量峰谷仪表盘：侧栏胶囊常显峰谷、今日花费与 tokens，详情页提供 24 小时、近 14 天与按模型的用量拆分。

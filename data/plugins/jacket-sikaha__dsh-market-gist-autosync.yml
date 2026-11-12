@@ -1,0 +1,6 @@
+url: https://github.com/jacket-sikaha/dsh-market-gist-autosync
+name: jacket-sikaha/dsh-market-gist-autosync
+category: dev
+description:
+  en: Back up your DSH profile configuration to a private GitHub Gist on a schedule, with merged restore.
+  zh: 定时把 DSH 配置备份到私有 GitHub Gist，支持合并恢复。

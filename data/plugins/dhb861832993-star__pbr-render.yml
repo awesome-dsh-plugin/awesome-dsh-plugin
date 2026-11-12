@@ -1,0 +1,6 @@
+url: https://github.com/dhb861832993-star/pbr-render
+name: dhb861832993-star/pbr-render
+category: ui
+description:
+  en: 'PBR 3D model preview for game art: GLB/GLTF with textures, IBL environment lighting, orbit controls, and a material channel inspector (baseColor/normal/roughness/metallic/AO/emissive/wireframe); scalar channels shown as grayscale per PBR spec, via the pbr3d fence and pbr_render tool.'
+  zh: 游戏美术 PBR 3D 模型预览：GLB/GLTF 带贴图纹理、IBL 环境光照、轨道控制，以及材质通道检查器（基础色/法线/粗糙度/金属度/AO/自发光/线框），标量通道按 PBR 规范以灰度显示，通过 pbr3d 围栏与 pbr_render 工具使用。

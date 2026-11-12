@@ -1,0 +1,6 @@
+url: https://github.com/LittleGreyy/dsh-session-archaeology
+name: LittleGreyy/dsh-session-archaeology
+category: session
+description:
+  en: 'Turns a past session into a reusable Skill offline: it extracts the verified steps, the files that were edited, failure/fix pairs and the final checks, each tagged with its session event number.'
+  zh: '把一段历史会话离线蒸馏成可复用的 Skill：提取跑通的步骤、改过的文件、失败与修正、验证命令，并标注各自的会话事件序号。'

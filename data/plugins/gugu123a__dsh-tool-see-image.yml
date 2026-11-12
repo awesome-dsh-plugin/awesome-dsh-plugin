@@ -1,0 +1,6 @@
+url: https://github.com/gugu123a/dsh-tool-see-image
+name: gugu123a/dsh-tool-see-image
+category: tools
+description:
+  en: 'Provides the see_image tool for DSH: send an image file to a configurable OpenAI-compatible vision model and relay its description back to a text-only model.'
+  zh: '为 DSH 提供 see_image 工具：将图片文件发送到可配置的 OpenAI 兼容视觉模型，并把其描述回传给纯文本模型。'

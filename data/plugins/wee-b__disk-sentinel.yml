@@ -1,0 +1,6 @@
+url: https://github.com/wee-b/disk-sentinel
+name: wee-b/disk-sentinel
+category: tools
+description:
+  en: Analyze Windows disk usage, compare scans, and manage cache cleanup and developer environment migration in DSH Web.
+  zh: 在 DSH Web 中分析 Windows 磁盘占用、对比扫描结果，并管理缓存清理与开发环境迁移。

@@ -1,0 +1,7 @@
+url: https://github.com/raven3005672/dsh-plugin-im-remote-control
+name: raven3005672/dsh-plugin-im-remote-control
+category: remote
+description:
+  en: Feishu (Lark) bot for DSH remote control — messages become session turns, results return to the chat, and ask-mode approval requests can be approved or denied in Feishu.
+  zh: 飞书机器人远程控制 DSH 会话——消息进入会话，回合结果回到飞书，ask 档的审批可以在飞书里批准或拒绝。
+icon: https://raw.githubusercontent.com/raven3005672/dsh-plugin-im-remote-control/master/icon.png

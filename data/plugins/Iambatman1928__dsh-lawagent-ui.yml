@@ -1,0 +1,7 @@
+url: https://github.com/Iambatman1928/dsh-lawagent-ui
+name: Iambatman1928/dsh-lawagent-ui
+category: ui
+tarball: https://github.com/Iambatman1928/dsh-lawagent-ui/releases/latest/download/lawagent-ui.tgz
+description:
+  zh: '法学学习实训工作台：三栏学术风界面，直读「明律」（lawagent preset）的学习档案（案件卷宗/背诵卡/错题本/笔记），并可一键把指令送进明律会话。'
+  en: 'Legal training workbench: three-pane academic UI that reads the "Minglü" (lawagent preset) learning profile (case dossiers, flashcards, wrong-answer book, notes) and sends instructions into a Minglü session with one click.'

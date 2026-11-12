@@ -1,0 +1,6 @@
+url: https://github.com/elegant01/dsh-scalpel
+name: elegant01/dsh-scalpel
+category: session
+description:
+  en: Compare two or three answers in one session and drop chosen turns from every later model request.
+  zh: 在同一会话里对比两三次回答，并从之后每次模型请求中剔除指定的轮次。

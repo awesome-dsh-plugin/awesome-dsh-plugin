@@ -1,0 +1,6 @@
+url: https://github.com/Tlyer233/dsh-vscode-review/tree/main/dsh-review
+name: Tlyer233/dsh-vscode-review#dsh-review
+category: git
+description:
+  en: Records every agent write, edit and shell `rm` into a shadow git repository, then reviews them hunk by hunk in VS Code — accept or revert each one. Needs the companion dsh-review-vscode extension; the panel only appears inside VS Code's webview.
+  zh: 把 agent 的每次写入、编辑和 shell `rm` 删除记录进一个 shadow git 仓库，然后在 VS Code 里逐 hunk 接受或撤回。需要配合 dsh-review-vscode 扩展；面板只出现在 VS Code 的 webview 里，独立浏览器中的对话界面不变。

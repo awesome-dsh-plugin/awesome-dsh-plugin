@@ -1,0 +1,7 @@
+url: https://github.com/yingqi-studio/dsh-panel-compact
+name: yingqi-studio/dsh-panel-compact
+category: ui
+description:
+  en: 'Fold the sidebar plugin-panel list to three entries, drag them to reorder, and keep every other panel one click away in a More menu — order and pins persist in localStorage.'
+  zh: '侧栏插件面板入口压缩：默认只留三个，按住鼠标拖动排序，其余全部收进「更多」菜单（点名字直接打开，✓/＋ 决定去留），选择和顺序记在 localStorage。'
+icon: https://raw.githubusercontent.com/yingqi-studio/dsh-panel-compact/main/docs/after.png

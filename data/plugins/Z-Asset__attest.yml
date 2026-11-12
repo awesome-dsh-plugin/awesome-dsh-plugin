@@ -1,0 +1,6 @@
+url: https://github.com/Z-Asset/attest
+name: Z-Asset/attest
+category: workflow
+description:
+  en: Training attestation — reproducible, attributable, auditable off-site standardized training for asset pricing. Hard-gates four failure modes (half-refresh, hash mismatch, unknown-read-as-pass, master pollution). Ships one skill.
+  zh: 训练鉴证——把资产定价的异地标准化训练钉成可复算、可归因、可审计的裁决链，四道闸硬拦（半拉子刷新、账物不符、判不了当通过、污染母本）。附带一个 skill。

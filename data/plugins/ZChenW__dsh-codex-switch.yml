@@ -1,0 +1,6 @@
+url: https://github.com/ZChenW/dsh-codex-switch
+name: ZChenW/dsh-codex-switch
+category: model
+description:
+  en: Connects ChatGPT accounts through OAuth, switches among them manually or automatically, and adds Codex models with usage limits to DeepSeek Harness.
+  zh: 通过 OAuth 连接 ChatGPT 账号，支持手动或自动切换，并为 DeepSeek Harness 添加带用量限额信息的 Codex 模型。

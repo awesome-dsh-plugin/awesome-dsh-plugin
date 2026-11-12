@@ -1,0 +1,6 @@
+url: https://github.com/Firefox2100/dsh-ai-providers/tree/main/packages/dsh-ai-anthropic
+name: Firefox2100/dsh-ai-providers#anthropic
+category: model
+description:
+  en: Anthropic provider using the native Messages API for language models in DSH. Requires Firefox2100/dsh-ai-providers#runtime to be installed and enabled.
+  zh: 使用原生 Messages API 为 DSH 提供语言模型能力的 Anthropic 提供商。需要安装并启用 Firefox2100/dsh-ai-providers#runtime。

@@ -1,0 +1,6 @@
+url: https://github.com/fufengyuan/dsh-stool-plugin
+name: fufengyuan/dsh-stool-plugin
+category: tools
+description:
+  en: 'Nine consolidated tools that give agents full access to the stool ops CLI: server management, database query/redis, log search/tail, CI/CD deploy and history, MFA codes, git operations, notes, todos, and misc utilities (accounting, weekly reports, audit, project listing, nginx presets).'
+  zh: 将 stool 运维 CLI 的全部能力整合为 9 个合并工具，Agent 可直接调用：服务器管理、数据库查询与 Redis、日志搜索与尾部查看、CI/CD 部署与历史、MFA 动态码、Git 仓库操作、笔记管理、待办任务，以及记账、周报、审计、项目列表、Nginx 预设等杂项工具。

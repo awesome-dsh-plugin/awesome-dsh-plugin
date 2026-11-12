@@ -1,0 +1,6 @@
+url: https://github.com/jeffreyren1/dsh-custom-js
+name: jeffreyren1/dsh-custom-js
+category: ui
+description:
+  en: Load, edit, manage, and hot-reload trusted JavaScript and TypeScript userscripts in DeepSeek Harness.
+  zh: 在 DeepSeek Harness 中加载、编辑、管理和热重载可信的 JavaScript / TypeScript 用户脚本。

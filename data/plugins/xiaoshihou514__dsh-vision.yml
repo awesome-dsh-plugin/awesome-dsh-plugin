@@ -1,0 +1,6 @@
+url: https://github.com/xiaoshihou514/dsh-vision
+name: xiaoshihou514/dsh-vision
+category: vision
+description:
+  en: Native vision capability extension, using either Zhipu (free) or Qwen-VL (local).
+  zh: 极简的原生视觉能力增强，支持免费的智谱模型或本地千问视觉模型。

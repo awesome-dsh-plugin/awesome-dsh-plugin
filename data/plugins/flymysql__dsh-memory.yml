@@ -1,0 +1,6 @@
+url: https://github.com/flymysql/dsh-memory
+name: flymysql/dsh-memory
+category: memory
+description:
+  en: 'Cross-session memory vault: remember / recall / forget tools, per-turn prompt injection, and a settings-page entry browser.'
+  zh: 跨会话记忆库：remember / recall / forget 工具、每轮提示注入与设置页条目浏览。

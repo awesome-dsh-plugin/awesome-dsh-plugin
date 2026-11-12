@@ -1,0 +1,6 @@
+url: https://github.com/Deanyu148/dsh-balance-inquiry        # must match the repo exactly / 必须与仓库完全一致
+name: Deanyu148/dsh-balance-inquiry                          # link text shown in the list / 列表中显示的链接文字
+category: tools                              # see the category list below / 见下方分类列表
+description:
+  en: 'Balance dashboard, allowing the addition of multiple pay-as-you-go/Token plans, while simultaneously checking balances.'
+  zh: '余额看板，可以添加多个按量计费/Token plan，同时查询余额。'   # optional — a maintainer will add it / 可选，维护者会补

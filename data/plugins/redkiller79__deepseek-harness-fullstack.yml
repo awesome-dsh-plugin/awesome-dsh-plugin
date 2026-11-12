@@ -1,0 +1,6 @@
+url: https://github.com/redkiller79/deepseek-harness-fullstack
+name: redkiller79/deepseek-harness-fullstack
+category: skill
+description:
+  en: 'Registers bundled full-stack, frontend-design and browser-automation skill documents as four read-only tools; a focus argument selects which reference file is returned alongside the skill body.'
+  zh: '把内置的全栈开发、前端设计与浏览器自动化三份技能文档注册为四个只读工具，用 focus 参数指定随技能正文一并返回的参考文档。'

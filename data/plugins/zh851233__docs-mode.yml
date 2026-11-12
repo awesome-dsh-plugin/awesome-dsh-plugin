@@ -1,0 +1,6 @@
+url: https://github.com/zh851233/docs-mode
+name: zh851233/docs-mode
+category: docs
+description:
+  en: "Technical documentation agent preset for DeepSeek Harness: template-driven writing with a self-learning template library, AI-flavor removal for tech docs, and a quality-assurance toolkit (document audit, cross-document consistency, numbering resequencing, version sync, PDF and Word export, screenshot automation)."
+  zh: "面向 DeepSeek Harness 的技术文档撰写 Agent 模式：模板驱动写作与自学习模板库、技术文档去 AI 味，以及文档质量保障工具集（量化体检、多文档口径一致性校验、图/表编号重排、版本同步检查、Word/PDF 导出与界面截图自动化）。"

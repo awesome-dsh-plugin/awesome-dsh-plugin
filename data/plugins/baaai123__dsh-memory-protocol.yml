@@ -1,0 +1,6 @@
+url: https://github.com/baaai123/dsh-memory-protocol
+name: baaai123/dsh-memory-protocol
+category: memory
+description:
+  en: 'Memory protocol enforcement plugin: bridges the opencode-memory MCP server, forces memory_weave before tool calls, auto-ingests turns, and injects memory context into agent steps.'
+  zh: 记忆强制协议插件：桥接 opencode-memory MCP 服务器，工具调用前强制 memory_weave、每轮自动存档、自动注入记忆上下文。

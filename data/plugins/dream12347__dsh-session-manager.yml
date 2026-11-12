@@ -1,0 +1,6 @@
+url: https://github.com/dream12347/dsh-session-manager
+name: dream12347/dsh-session-manager
+category: session
+description:
+  en: "DSH session manager: delete with trash/restore/purge, restore archived sessions, recent-activity stats, continue/pause, open log folder, unread markers, fork into a new chat, workspace grouping and sorting, context compaction threshold."
+  zh: "DSH 会话管理插件：删除（回收站可恢复或彻底清除）、恢复归档会话、活动统计、继续/暂停、打开日志目录、未读标记、新聊天中继续、工作区分组与排序、上下文压缩阈值设置。"

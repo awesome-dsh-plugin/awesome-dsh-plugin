@@ -1,0 +1,6 @@
+url: https://github.com/minyang-chen/dsh-stock-lookup
+name: minyang-chen/dsh-stock-lookup
+category: tools
+description:
+  en: Resolves a company name or ticker to a verified stock symbol via SEC EDGAR, then fetches a live quote with price, P/E, EPS, market cap, 52-week range, and dividend yield from yahoo-finance2.
+  zh: 通过 SEC EDGAR 将公司名称或股票代码解析为已验证的股票代号，再从 yahoo-finance2 获取实时行情，包括价格、市盈率、每股收益、市值、52周区间和股息率。

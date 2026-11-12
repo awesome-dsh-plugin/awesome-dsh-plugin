@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-imagegen-skill
+name: dingchenhui0618-arch/dsh-imagegen-skill
+category: skill
+description:
+  zh: "把 imagegen skill 注册进 skill 注册表，无需往 $DSH_HOME/skills 手工拷贝文件，每个会话都能生成或编辑图片：agent 调用随包附带的 image_gen.py CLI，对接任意 OpenAI 兼容的 GPT Image 端点，支持文生图、参考图编辑与透明背景抠图。"
+  en: "Registers the imagegen skill on the skill registry, so generating and editing raster images needs no hand-copied files under $DSH_HOME/skills. The agent drives a bundled image_gen.py CLI against any OpenAI-compatible GPT Image endpoint for text-to-image, reference-image editing, and transparent-background cutouts."

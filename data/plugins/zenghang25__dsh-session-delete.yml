@@ -1,0 +1,6 @@
+url: https://github.com/zenghang25/dsh-session-delete
+name: zenghang25/dsh-session-delete
+category: session
+description:
+  en: 'Adds a one-click delete-session row to the DSH sidebar session menu: moves the session log and its per-conversation .dsh-sessions artifact directory to the Windows Recycle Bin, with no confirmation dialog.'
+  zh: '在 DSH 侧栏会话菜单中加入一键「删除会话」：把会话日志与该对话的 .dsh-sessions 产出目录移入 Windows 回收站，没有确认弹窗。'

@@ -1,0 +1,6 @@
+url: https://github.com/uio-o/dsh-model-control
+name: uio-o/dsh-model-control
+category: model
+description:
+  en: 'Replaces the composer model seat with a search-first picker and adds a model management page: create and edit llm-pi-ai channels, choose which of an endpoint''s models exist, and declare per-model thinking ladders and capabilities.'
+  zh: '接管输入框的模型座位并新增模型管理页：增改删 llm-pi-ai 渠道、挑选端点里的哪些模型进入本软件、按模型声明思考档位与能力。'

@@ -1,0 +1,7 @@
+url: https://github.com/gychen-NJU/dsh-overleaf
+name: gychen-NJU/dsh-overleaf
+category: docs
+tarball: https://github.com/gychen-NJU/dsh-overleaf/releases/download/v1.0.0/dsh-overleaf-1.0.0.tgz
+description:
+  en: 'Embeds an Overleaf site (overleaf.com or a self-hosted instance) into a conversation tab through a same-origin reverse proxy, with cookie or popup login, selection quoting, caret insertion, compile-log driven fixes, outline navigation, and .bib / .tex synchronization.'
+  zh: '把 Overleaf 站点（公有云或自托管实例）经同源反向代理嵌入会话页标签，支持 Cookie 或弹窗登录、选区引用、光标处插入、编译日志驱动的修复、文档大纲跳转与 .bib / .tex 双向同步。'

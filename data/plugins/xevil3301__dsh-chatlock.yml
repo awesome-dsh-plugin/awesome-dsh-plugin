@@ -1,0 +1,7 @@
+url: https://github.com/xevil3301/dsh-chatlock
+name: xevil3301/dsh-chatlock
+category: security
+description:
+  en: Session password lock plus an encrypted directory vault for DeepSeek Harness.
+  zh: 给 DeepSeek Harness 的会话加密码锁，并把目录整体加密成保险箱。
+icon: https://raw.githubusercontent.com/xevil3301/dsh-chatlock/main/assets/icon-180.png

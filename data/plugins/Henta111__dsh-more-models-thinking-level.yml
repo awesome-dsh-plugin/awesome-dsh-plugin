@@ -1,0 +1,6 @@
+url: https://github.com/Henta111/dsh-more-models-thinking-level
+name: Henta111/dsh-more-models-thinking-level
+category: model
+description:
+  en: 'Per-model reasoning effort (off/minimal/low/medium/high/xhigh) for GPT, Codex, Gemini and OpenAI-compatible models. Installs a helper, not a runtime adapter: run enable-capabilities.ps1 once per profile (Windows) and restart — it declares the levels in ~/.dsh/settings.yaml, with a disable script and a backup to revert.'
+  zh: '为 GPT、Codex、Gemini 与 OpenAI-compatible 模型提供按模型的推理等级（off/minimal/low/medium/high/xhigh）。装的是 helper 而不是运行时适配器：需按 profile 手动跑一次 enable-capabilities.ps1（Windows）并重启——它把等级声明写进 ~/.dsh/settings.yaml，附带还原脚本与备份。'

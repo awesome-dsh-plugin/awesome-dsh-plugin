@@ -1,0 +1,6 @@
+url: https://github.com/CK-Rebi/dsh-preset-reload
+name: CK-Rebi/dsh-preset-reload
+category: dev
+description:
+  en: 'Rebind running sessions onto a rebuilt agent-preset revision, so preset changes apply without restarting dsh.'
+  zh: '把正在运行的会话重绑到重建后的预设 revision 上，让预设改动无需重启 dsh 即可生效。'

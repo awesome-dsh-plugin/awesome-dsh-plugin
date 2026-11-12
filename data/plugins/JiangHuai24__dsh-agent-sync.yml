@@ -1,0 +1,6 @@
+url: https://github.com/JiangHuai24/dsh-agent-sync
+name: JiangHuai24/dsh-agent-sync
+category: session
+description:
+  en: Mirrors other coding agents' sessions into DeepSeek Harness as continuable tasks, one workspace per application, with content-fingerprint deduplication.
+  zh: 把本机其他 AI 编程助手的会话实时镜像成 DeepSeek Harness 的任务，每个应用一个工作区，并按内容指纹去重。

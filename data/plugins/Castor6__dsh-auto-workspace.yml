@@ -1,0 +1,6 @@
+url: https://github.com/Castor6/dsh-auto-workspace
+name: Castor6/dsh-auto-workspace
+category: session
+description:
+  en: 'Project-less chats for dsh: a session created without a workspace gets its own directory under ~/Documents/DSH/<date>/chat-NN, reused whenever the chat is reopened and left in Ungrouped rather than made a sidebar project; the new-session hero gains a hover clear badge and a "work without a project" row, and a client-only sentinel workspace keeps that hero and its composer usable.'
+  zh: '为 dsh 提供无项目聊天：不选工作区创建的会话会获得自己的目录（~/Documents/DSH/<日期>/chat-NN），重新打开会话时复用，并留在「未分组」而不会变成侧栏项目；新建会话的 Hero 上新增悬浮清除徽标与「不在工作区中工作」一行，另有一个仅存在于浏览器端的哨兵工作区，让该 Hero 及其输入框保持可用。'

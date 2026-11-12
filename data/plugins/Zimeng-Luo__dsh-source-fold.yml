@@ -1,0 +1,6 @@
+url: https://github.com/Zimeng-Luo/dsh-source-fold
+name: Zimeng-Luo/dsh-source-fold
+category: ui
+description:
+  en: 'Replaces the composer model picker with a compact panel for provider-to-model navigation and an adaptive reasoning-effort slider, with a Default stop and no slider for models without adjustable efforts.'
+  zh: '将输入框的模型选择器替换为紧凑面板，支持来源到模型的逐级选择和自适应思考强度滑块，保留 Default 档位，不支持调节的模型隐藏滑块。'

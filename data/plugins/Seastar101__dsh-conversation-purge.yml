@@ -1,0 +1,6 @@
+url: https://github.com/Seastar101/dsh-conversation-purge
+name: Seastar101/dsh-conversation-purge
+category: session
+description:
+  en: Permanently delete one conversation (archived or not) from its sidebar row menu, including its log, projection cache, archive state, and reminders.
+  zh: 在侧栏会话菜单里彻底删除单个对话（含已归档），同时清理会话日志、投影缓存、归档状态与提醒。

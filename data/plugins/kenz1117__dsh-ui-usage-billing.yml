@@ -1,0 +1,6 @@
+url: https://github.com/kenz1117/dsh-ui-usage-billing
+name: kenz1117/dsh-ui-usage-billing
+category: usage
+description:
+  en: 'Sidebar billing dashboard: real usage aggregated from session logs (per-model and per-day calls/tokens/cache), cost estimated in CNY from a current multi-provider pricing catalog, subscription-plan (coding/token/agent) routes exempt, and per-provider health dots.'
+  zh: 侧边栏计费仪表盘：从会话日志聚合真实用量（按模型/按日统计调用、Token、缓存），按最新多厂商官方价格估算人民币费用，订阅套餐（coding/token/agent）通道豁免计费，并带各厂商健康状态圆点。

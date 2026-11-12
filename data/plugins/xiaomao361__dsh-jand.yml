@@ -1,0 +1,7 @@
+url: https://github.com/xiaomao361/dsh-jand
+name: xiaomao361/dsh-jand
+category: remote
+description:
+  en: Encrypted file handoffs and cross-device agent collaboration with background message reception and managed task execution in DeepSeek Harness.
+  zh: 在 DeepSeek Harness 中进行加密文件交接与跨设备 Agent 协作，支持后台收件和受管任务执行。
+icon: https://raw.githubusercontent.com/xiaomao361/dsh-jand/main/assets/icon-180.png

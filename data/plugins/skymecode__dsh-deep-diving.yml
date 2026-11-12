@@ -1,0 +1,7 @@
+url: https://github.com/skymecode/dsh-deep-diving
+name: skymecode/dsh-deep-diving
+category: theme
+description:
+  en: Adds selectable animated skins to the "Deep diving..." status row, with configurable size and optional status-text replacement.
+  zh: 为“Deep diving...”状态行添加可选动态皮肤，并支持调整尺寸和可选状态文案替换。
+tarball: https://github.com/skymecode/dsh-deep-diving/releases/download/v0.1.0/dsh-deep-dive-skins-0.1.0.tgz

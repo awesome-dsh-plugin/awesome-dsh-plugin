@@ -1,0 +1,6 @@
+url: https://github.com/PyModel/dsh-research-plugins/tree/main/packages/dsh-mcp-context7
+name: PyModel/dsh-research-plugins#dsh-mcp-context7
+category: docs
+description:
+  en: 'Context7 MCP bridge: gives the model up-to-date, version-specific library documentation and code examples through the Context7 MCP server, keyless by default.'
+  zh: '接入 Context7 托管 MCP 服务，为 agent 提供随版本更新的库文档查询；默认免密钥可用。'

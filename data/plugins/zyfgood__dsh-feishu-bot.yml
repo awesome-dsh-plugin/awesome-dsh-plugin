@@ -1,0 +1,6 @@
+url: https://github.com/zyfgood/dsh-feishu-bot
+name: zyfgood/dsh-feishu-bot
+category: remote
+description:
+  en: 'Binds a Feishu/Lark bot to DeepSeek Harness over a WebSocket long connection: incoming messages run through an agent session and stream back to the chat, chat commands such as /attach manage the live session, and feishu_* tools let the model push messages.'
+  zh: '通过 WebSocket 长连接把飞书机器人绑到 DeepSeek Harness：收到的消息跑在 agent 会话里并流式回传，/attach 等聊天命令管理活动会话，模型可调用 feishu_* 工具推送消息。'

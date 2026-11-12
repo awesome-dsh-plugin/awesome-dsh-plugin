@@ -1,0 +1,6 @@
+url: https://github.com/GeekRicardo/dsh-convmap
+name: GeekRicardo/dsh-convmap
+category: ui
+description:
+  en: 'Conversation-map rail down the left edge of the transcript: one tick per user turn, read from the full session log on the host rather than from the rendered page, so long sessions are covered end to end. Hovering fans the neighbouring ticks open by pixel distance and floats a scrollable preview of that turn prompt and its last reply; clicking scrolls to the turn, paging older history in first when it has not been rendered yet; the tick for the visible turn stays highlighted while you scroll.'
+  zh: '主对话区左缘的对话地图刻度列：每条刻度是一轮用户提问，刻度由宿主直读会话完整日志得来，不受客户端分页窗口限制，长会话也是全量覆盖。hover 时邻近刻度按像素距离连续展开，右侧浮出该轮提问与最后一次回复的预览卡（可进卡滚动看完）；点击跳转到该轮，老轮次尚未渲染时先自动分页加载再跳；滚动对话时当前轮次的刻度保持高亮。'

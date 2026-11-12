@@ -1,0 +1,6 @@
+url: https://github.com/MyRemme/dsh-lan-pair
+name: MyRemme/dsh-lan-pair
+category: remote
+description:
+  en: 'LAN-only remote access for DSH: pair a phone or another PC by QR code or token to open the same web UI, with optional key-free access inside the LAN.'
+  zh: '仅内网的远程访问：手机或另一台电脑通过扫码或令牌接入同一份 DSH Web 界面，并可选内网免密钥直连。'

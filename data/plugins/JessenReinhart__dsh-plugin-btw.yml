@@ -1,0 +1,6 @@
+url: https://github.com/JessenReinhart/dsh-plugin-btw
+name: JessenReinhart/dsh-plugin-btw
+category: session
+description:
+  en: Adds /btw and /side slash commands that answer ephemeral side questions in an isolated forked sub-session without polluting the main conversation context.
+  zh: 新增 /btw 与 /side 斜杠命令，在隔离的分叉子会话中回答临时旁问，不污染主会话上下文。

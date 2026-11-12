@@ -1,0 +1,6 @@
+url: https://github.com/643048695/dsh-egm
+name: 643048695/dsh-egm
+category: workflow
+description:
+  en: "Pre-implementation design review gate: an Elephant agent drafts the design, zero-context Goldfish subagents attack it from fixed reviewer roles, and you approve before implementation."
+  zh: "动工前的设计评审闸门：大象代理写设计图纸，零上下文金鱼子代理按固定角色挑刺，你拍板后才开始实现。"

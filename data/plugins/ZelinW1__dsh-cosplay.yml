@@ -1,0 +1,6 @@
+url: https://github.com/ZelinW1/dsh-cosplay
+name: ZelinW1/dsh-cosplay
+category: fun
+description:
+  en: 'Turns the DeepSeek Harness agent into any character: a global cosplay switch, SillyTavern v2 role cards with JSON import/export, a neutral/role thinking-style toggle, and natural-language card authoring via a built-in skill.'
+  zh: '让 DeepSeek Harness 的 Agent 扮演任何角色：全局扮演开关、酒馆 v2 角色卡（JSON 导入导出）、中立/角色化思考切换，内置 skill 支持一句话生成角色卡。'

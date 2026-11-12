@@ -1,0 +1,6 @@
+url: https://github.com/54nanmiao/dsh-peak-reminder
+name: 54nanmiao/dsh-peak-reminder
+category: usage
+description:
+  en: 'Peak-hour reminder: while DeepSeek charges peak rates it shows a banner at the top of the DSH Web UI every N minutes (default 5, range 1-120), adds one at each peak/valley switch, stays silent during valley hours, and keeps a sidebar row with the current state and a countdown to the next switch. Peak rules (Beijing time Mon-Fri 09:00-12:00 and 14:00-18:00; weekends, Chinese public holidays and 调休 weekends are valley all day) are evaluated in the host and served over two no-auth routes, /plugins/dsh-peak-reminder/state and /config; settings live in settings.section and are stored in ~/.dsh/peak-reminder.json.'
+  zh: '峰时提醒：DeepSeek 走高峰计价时，每隔 N 分钟（默认 5，可设 1–120）在 DSH Web 界面顶部提醒一次「现在是峰时」，峰↔谷切换各提醒一条，谷时完全不打扰；侧边栏底部常驻一行显示当前峰/谷状态与下次切换倒计时。峰谷规则（北京时间工作日 09:00–12:00、14:00–18:00；周末、法定节假日与调休周末全天谷价）由宿主判定，经 /plugins/dsh-peak-reminder/state 与 /config 两个免鉴权路由供界面读取；开关与间隔在设置页一节里改，存到 ~/.dsh/peak-reminder.json。'

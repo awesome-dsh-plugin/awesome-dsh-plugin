@@ -1,0 +1,7 @@
+url: https://github.com/Lostforest7/dsh-sheetflow
+name: Lostforest7/dsh-sheetflow
+category: workflow
+description:
+  en: 'Recurring Excel template fill and reconciliation review: declare the file, sheet, header row, match key and amount columns once, preview every cell write before it lands, compare amounts as exact two-decimal values, list the unmatched rows as exceptions, and export a filled template copy with an HTML report and a JSON trace back to the source rows.'
+  zh: 周期性 Excel 模板填充与对账复核：一次声明文件、工作表、表头行、匹配键与金额列，写入前逐格预览，按精确两位小数比较金额，把未匹配行列为异常项，最后导出填好的模板副本并附 HTML 报告与可回溯到源行的 JSON 轨迹。
+tarball: https://github.com/Lostforest7/dsh-sheetflow/releases/download/v0.1.0-pre/dsh-sheetflow-0.1.0.tgz

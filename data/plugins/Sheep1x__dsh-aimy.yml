@@ -1,0 +1,6 @@
+url: https://github.com/Sheep1x/dsh-aimy
+name: Sheep1x/dsh-aimy
+category: model
+description:
+  en: Manages a relay station's many groups and rates for DSH, switching the station's billing group in place and refreshing the model list and rate on stations that expose /v1/token/group; stations without it fall back to read-only and keep serving models.
+  zh: 解决中转站多分组多倍率不方便管理的问题：在提供 /v1/token/group 的站点上就地切换分组并同步刷新模型列表与计费倍率；缺少该接口的站点自动降级为只读，模型仍可正常拉取与调用。

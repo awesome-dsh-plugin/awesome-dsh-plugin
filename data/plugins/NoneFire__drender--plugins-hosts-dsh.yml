@@ -1,0 +1,6 @@
+url: https://github.com/NoneFire/drender/tree/main/plugins/hosts/dsh
+name: NoneFire/drender#dsh-drender-plugin
+category: docs
+description:
+  en: 'DeepSeek Harness tools and a Skill for md-report/1: validate and render Markdown plus declared SQLite/CSV datasets into one offline interactive HTML report or dashboard, with AntV G2 charts (ECharts fallback) and chart/table data and source-SQL views.'
+  zh: '为 DeepSeek Harness 提供 md-report/1 报告的校验与渲染工具：把 Markdown 与声明的 SQLite/CSV 数据集生成单个离线可交互 HTML 报告或仪表盘，图表默认用 AntV G2、复杂图表回退 ECharts，并提供图表/数据/SQL 与数据表/数据/SQL 视图。'

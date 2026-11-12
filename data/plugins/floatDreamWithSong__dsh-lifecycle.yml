@@ -1,0 +1,8 @@
+url: https://github.com/floatDreamWithSong/dsh-lifecycle
+name: floatDreamWithSong/dsh-lifecycle
+category: security
+description:
+  en: 'WEB ONLY: designed specifically for the Web profile, NOT Electron Desktop. Windows support means Web on Windows, not the Desktop application; installing into Desktop can break startup or restart. Refresh immediately after installation or open /login; HTTP 401 on an old page means sign-in is required, not installation failure. Only an uninitialized data directory displays the temporary password; existing passwords survive reinstalling. Initialize in a trusted network and change the publicly displayed initial password immediately; passwords are never printed in terminal logs. Web lock screen, password/OTP/Passkey, persistent sessions and wallpapers; Windows Web power services can be enabled from the page. Linux/macOS need the bundled controller; npm updates require a dedicated managed install. Stopping interrupts active tasks. Auth kernel adapted from xbzbing/dsh-auth-gateway (MIT); do not co-install.'
+  zh: '【仅支持 Web，不支持 Electron Desktop】专为 Web profile 设计；Windows 支持仅指 Windows 上的 Web 版，不是桌面应用。请勿安装到 Desktop profile，误装可能导致启动或重启失败。安装后立即刷新页面或打开 /login，旧页 401 不代表安装失败。仅未初始化的数据目录展示临时初始密码；已有密码不会因重装而清空或再次展示。首次密码在页面公开展示，终端不打印，请在受控网络立即改密。提供 Web 锁屏、密码／OTP／Passkey、持久登录和壁纸，Windows Web 支持页面一键配置电源服务。Linux/macOS 需部署独立控制服务；npm 更新限独立托管安装，停止会中断运行任务。认证内核改编自 xbzbing/dsh-auth-gateway（MIT），不能与其同装。'
+tarball: https://github.com/floatDreamWithSong/dsh-lifecycle/releases/download/v0.1.11/dsh-lifecycle-0.1.11.tgz
+icon: https://raw.githubusercontent.com/floatDreamWithSong/dsh-lifecycle/main/assets/icon.png

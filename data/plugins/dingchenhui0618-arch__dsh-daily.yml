@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-daily
+name: dingchenhui0618-arch/dsh-daily
+category: workflow
+description:
+  en: 'Daily brief for DeepSeek Harness. Every day at a fixed hour it ranks the plugin market by real install counts and stars, cross-checks it against your own agent memory and working conventions, and proposes two kinds of item: concrete deltas on the plugins people actually use (original does A, the proposal does B) and directions nobody has built yet. The popularity numbers come from the catalog the market itself publishes and are quoted into the prompt rather than guessed; an entry the market has not measured is shown as unmeasured, never as zero. Approving an item opens a new session named after it and hands that session a fixed delivery contract — implement independently, never fork, test green before publishing. Rejected sources are remembered so they stop coming back.'
+  zh: 'DSH 日报：每天定点按真实下载量与 star 把插件市场排一遍，再对照你自己的 agent 记忆与工作约定，产出两类条目——对已经有很多人在用的插件的具体改法（原版是 A，提案做成 B），以及生态里还没有的新方向。热度数字取自市场对外发布的目录并原样写进提示词，不由模型猜测；市场没测到的条目会标成「无热门度数据」，绝不当作 0。批准一条会按它的项目名新建一个会话，并把一份固定交付契约交给那个会话：独立实现、不许 fork、测试全绿才发布。标记「不感兴趣」的来源会被记住，不再重复出现。'

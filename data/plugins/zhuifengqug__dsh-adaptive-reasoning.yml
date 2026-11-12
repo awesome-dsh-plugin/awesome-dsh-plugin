@@ -1,0 +1,6 @@
+url: https://github.com/zhuifengqug/dsh-adaptive-reasoning
+name: zhuifengqug/dsh-adaptive-reasoning
+category: ui
+description:
+  en: "Pixel-art reasoning-effort slider for DSH Web with continuous 0–100 dragging, 16ms throttled writes, snap-to-level commits, and a WebGL ember fire that ignites as the slider moves."
+  zh: "炭灰余烬风格的 DSH Web 像素推理强度滑块：以近黑木炭、暗红裂纹和橙红高温核心呈现 4px 像素化 WebGL 火焰，拖动时逐档点燃；支持 0–100 无极拖动、16ms 节流写入与松手吸附。"

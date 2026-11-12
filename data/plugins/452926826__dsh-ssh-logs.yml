@@ -1,0 +1,6 @@
+url: https://github.com/452926826/dsh-ssh-logs
+name: 452926826/dsh-ssh-logs
+category: remote
+description:
+  en: Read and search logs and run permitted commands over SSH according to configured permissions.
+  zh: 根据配置的权限通过 SSH 读取和搜索日志，并运行允许的命令。

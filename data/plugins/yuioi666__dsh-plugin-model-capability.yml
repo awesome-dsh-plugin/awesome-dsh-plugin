@@ -1,0 +1,6 @@
+url: https://github.com/yuioi666/dsh-plugin-model-capability
+name: yuioi666/dsh-plugin-model-capability
+category: model
+description:
+  en: 'Model Capability Manager for DSH Web: thinking levels, context window, output caps, input modalities, gateway compat presets, EN/中文 UI.'
+  zh: 'DSH 网页端模型能力管理插件：控制推理档位、上下文与输出上限、输入模态及网关兼容预设，双语界面。'

@@ -1,0 +1,7 @@
+url: https://github.com/Da0Mine/dsh-talk-map
+name: Da0Mine/dsh-talk-map
+category: session
+description:
+  en: 'A visual map for your sessions: every conversation is a card on an infinite whiteboard — workspaces become frames that fold their overflow into a drawer, card positions are never rearranged, lines between cards carry context (drag one to fork with an injected digest), and each card shows a status lamp for running, waiting, unread or interrupted.'
+  zh: '会话地图：每个对话都是白板上的一张卡片——工作区是会自动折叠溢出的框，点开是抽屉；卡片位置摆好就不会被打乱；卡片之间的连线承载上下文（拉一条就能带摘要分叉），每张卡还有运行中 / 等你回复 / 待查看 / 已中断的状态灯。'
+icon: https://raw.githubusercontent.com/Da0Mine/dsh-talk-map/main/docs/icon.png

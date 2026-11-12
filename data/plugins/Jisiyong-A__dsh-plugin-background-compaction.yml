@@ -1,0 +1,7 @@
+url: https://github.com/Jisiyong-A/dsh-plugin-background-compaction
+name: Jisiyong-A/dsh-plugin-background-compaction
+category: session
+tarball: https://github.com/Jisiyong-A/dsh-plugin-background-compaction/releases/download/v2.0.1/dsh-plugin-background-compaction-2.0.1.tgz
+description:
+  en: 'Precomputes the compaction summary in the background and commits the held result when pressure compaction fires, removing the foreground model round-trip. Registers itself as the session compaction engine, pins the span it summarised so the payload fingerprint still matches at commit time, prunes tool results before committing, and falls back to the stock foreground path on payload drift or context overflow.'
+  zh: '作为会话压缩引擎注册，后台预计算压缩摘要，压力压缩触发时直接提交已持有的结果，省去前台模型往返。锁定已摘要的区间以保证提交时载荷指纹仍然匹配，提交前先裁剪工具结果；载荷漂移或上下文溢出时回退到原生前台路径。'

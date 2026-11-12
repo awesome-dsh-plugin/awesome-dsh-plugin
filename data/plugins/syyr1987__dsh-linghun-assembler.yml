@@ -1,0 +1,6 @@
+url: https://github.com/syyr1987/dsh-linghun-assembler
+name: syyr1987/dsh-linghun-assembler
+category: agi
+description:
+  en: 'Memory-assembly team for DeepSeek Harness: every message triggers a five-step cognition loop (judge, retrieve, assemble, feedback, calibrate) carried by role-playing subagents (judge, retriever, archivist, advocate, editor, scribe), using BM25 retrieval, time-ordered material, and LLM assembly to build useful material packs injected into linghun. Works with dsh-linghun.'
+  zh: '灵魂的记忆提取侧·认知循环团队版：判断→捞取→组装→被判定→校准五步闭环，判官/捞手/史官/辩手/编辑/书记角色化子智能体承载，BM25 检索 + 时序素材 + LLM 组装「有用素材包」注入 linghun。与 dsh-linghun 组合使用。'

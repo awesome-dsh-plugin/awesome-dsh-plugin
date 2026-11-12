@@ -1,0 +1,6 @@
+url: https://github.com/YZz-S/dsh-bili-summary
+name: YZz-S/dsh-bili-summary
+category: tools
+description:
+  en: 'Provides the bili_summary tool: Bilibili video metadata, subtitle timeline, and sharp-based frame capture with built-in error handling and graceful degradation.'
+  zh: 提供 bili_summary 工具：B 站视频元数据、字幕时间轴与 sharp 切帧配图，内置错误处理与优雅降级。

@@ -1,0 +1,6 @@
+url: https://github.com/hulibuld/dsh-salary-flap
+name: hulibuld/dsh-salary-flap
+category: ui
+description:
+  en: "A split-flap salary board for the DSH Web UI. Enter monthly salary, hours per day, working days per month and a start time, and the board settles today's earnings every 2 seconds on eight flip cells (currency symbol, four integer digits, decimal point, two decimals). Shows 0.00 before the shift, caps at the daily wage after it, and handles shifts that cross midnight. Six color schemes, drag anywhere (the position is kept on this machine), and a close button that collapses the board into a pill in the session header. Pure client-side bundle: no network calls and no dependencies."
+  zh: "挂在 DSH 网页界面上的翻牌工资看板。填好月薪、每天工时、每月工作天数、上班时间，板子每 2 秒结算一次今天赚了多少，用八格翻牌显示（人民币符号、四位整数、小数点、两位小数）。上班前显示 0.00，下班后封顶日薪，跨午夜的班次同样处理。六套配色，可拖到任意位置（位置存在本机），点关闭按钮收进会话顶栏的胶囊。纯前端 bundle，不联网、无依赖。"

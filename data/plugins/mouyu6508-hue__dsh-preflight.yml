@@ -1,0 +1,6 @@
+url: https://github.com/mouyu6508-hue/dsh-preflight
+name: mouyu6508-hue/dsh-preflight
+category: dev
+description:
+  en: 'Checkup for the whole plugin lifecycle: before install it verifies dsh.bundle, engine and peer compatibility, native build needs, platform limits and whether the new patch would mount a loader name that is already installed (install-shadow prediction); after install it groups every installed plugin by capability; before update it runs the same checks against the new version and reports only the problems the update introduces. Ships a CLI that runs even when DSH will not boot, plus three read-only tools.'
+  zh: '管插件全生命周期的体检：装之前检查 dsh.bundle、引擎与 peer 兼容性、是否需要编译原生模块、平台限制，以及新插件的 patch 会不会挂出已存在的 loader 名（install-shadow 预判）；装之后把已装插件按能力分类；更新前对新版本跑同一套检查，只报这次更新引入的问题。带一条 DSH 起不来时也能跑的 CLI，和三个只读工具。'

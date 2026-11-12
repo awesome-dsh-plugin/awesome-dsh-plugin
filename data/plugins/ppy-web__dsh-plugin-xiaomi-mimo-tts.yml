@@ -1,0 +1,6 @@
+url: https://github.com/ppy-web/dsh-plugin-xiaomi-mimo-tts
+name: ppy-web/dsh-plugin-xiaomi-mimo-tts
+category: voice
+description:
+  en: Adds Xiaomi MiMo, Doubao, Breeze and browser speech to DSH, with external provider and local model adapters, text filtering, streaming read-aloud, audio downloads, sound effects, desktop pets, QQ Bot and AI Passport integration.
+  zh: 为 DSH 提供小米 MiMo、豆包、Breeze 和浏览器语音，支持接入外部供应商与本地模型、文本过滤、实时流式朗读、音频下载、音效、桌宠及 QQ Bot、AI Passport 联动。

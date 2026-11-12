@@ -1,0 +1,6 @@
+url: https://github.com/Smith-yue/harness-plugin
+name: Smith-yue/harness-plugin
+category: theme
+description:
+  en: Adds two switchable themes, built-in and local-folder background slideshows, and per-session token usage details to DeepSeek Harness Web and Desktop.
+  zh: 为 DeepSeek Harness Web 与桌面端提供两套可切换主题、内置及本地文件夹背景轮播和逐会话 Token 用量明细。

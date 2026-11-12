@@ -1,0 +1,6 @@
+url: https://github.com/chen731215-dev/dsh-muv-engine
+name: chen731215-dev/dsh-muv-engine
+category: ui
+description:
+  en: 'MUV engine for DeepSeek Harness: runs the regex_scripts from a character card against model output, tracks variables, renders a status bar, expands macros and LaTeX, and styles tagged code blocks such as letter, terminal, newspaper and phone. Needs dsh-muv-table installed as well, which is its companion plugin.'
+  zh: 'MUV 引擎：执行角色卡的 regex_scripts 实时替换模型输出，追踪变量、渲染状态栏、展开宏与 LaTeX、为标签代码块（信纸／终端／报纸／手机）套样式。需同时安装伴生插件 dsh-muv-table。'

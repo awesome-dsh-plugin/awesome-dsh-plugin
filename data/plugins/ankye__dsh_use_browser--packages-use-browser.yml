@@ -1,0 +1,6 @@
+url: https://github.com/ankye/dsh_use_browser/tree/main/packages/use-browser
+name: ankye/dsh_use_browser#use-browser
+category: browser
+description:
+  en: 'Generic browser automation with six tools (browser_open, browser_click, browser_type, browser_extract, browser_screenshot, browser_eval), @e element references, and dual Playwright-headless / CDP (connect to your own Chrome) backends.'
+  zh: '通用浏览器自动化：browser_open、browser_click、browser_type、browser_extract、browser_screenshot、browser_eval 六个工具，@e 元素引用，Playwright 无头与 CDP（连接本机 Chrome）双后端。'

@@ -1,0 +1,6 @@
+url: https://github.com/Lorvaste/DSH-Project-Initialization
+name: Lorvaste/DSH-Project-Initialization
+category: workflow
+description:
+  en: "An agent preset that turns a one-line idea into requirements, tech plan and maintenance baseline — every step is restated and confirmed by you before proceeding. No scenario presets: 73 atomic skills (6 master skills + a verify dispatcher + 66 sub-skills) load by context."
+  zh: '「想法落地」agent preset：一句话想法 → 需求规格 → 技术方案 → 维护基准；每一步先复述、你确认、再继续。无场景预设：73 个原子 skill（6 主 + verify 调度 + 66 子）按上下文加载。'

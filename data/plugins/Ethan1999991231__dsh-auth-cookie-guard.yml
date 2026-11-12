@@ -1,0 +1,7 @@
+url: https://github.com/Ethan1999991231/dsh-auth-cookie-guard
+name: Ethan1999991231/dsh-auth-cookie-guard
+category: security
+description:
+  en: Expires the dsh-auth-* cookies that earlier launches bound to other ports once a response already carries more than four of them, and answers an HPE_HEADER_OVERFLOW rejection with a redirect that clears them, so a desktop profile that reached the HTTP header limit opens again without clearing its cookies by hand. Derivative of jitianjiyan/dsh-auth-cookie-guard (already listed); it declares the same npm package name, so the two cannot be installed alongside. Requires DSH 0.2.1-rc.5 or newer.
+  zh: 当一次响应里已经带上 4 条以上 dsh-auth-* Cookie 时，把更早启动绑定到其它端口的那些逐条过期；对已经撞上 HTTP 头长度上限的请求回一个顺带清掉它们的跳转，让卡住的桌面端无需手动清 Cookie 也能重新打开。是 jitianjiyan/dsh-auth-cookie-guard 的衍生版本（目录中已收录）；两者声明同名 npm 包，不能同时安装。需要 DSH 0.2.1-rc.5 或更新版本。
+icon: https://raw.githubusercontent.com/Ethan1999991231/dsh-auth-cookie-guard/main/icon.png

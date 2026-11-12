@@ -1,0 +1,7 @@
+url: https://github.com/lima1217/dsh-bookshelf
+name: lima1217/dsh-bookshelf
+category: ui
+description:
+  en: 'Personal reading log panel: track books as want to read, reading or finished with dates, page progress, ratings, tags, notes and excerpts; yearly reading stats; covers looked up from Apple Books, Google Books and Open Library; Goodreads and Douban CSV import and CSV export; and five agent tools: bookshelf_list, bookshelf_stats, bookshelf_add, bookshelf_update and bookshelf_add_excerpt.'
+  zh: '个人阅读记录面板：按想读、在读、读完管理书籍，记录日期、页码进度、评分、标签、笔记和摘录；年度阅读统计；从 Apple Books、Google Books、Open Library 补全封面；支持导入 Goodreads、豆瓣 CSV 和导出 CSV；并提供 bookshelf_list、bookshelf_stats、bookshelf_add、bookshelf_update、bookshelf_add_excerpt 五个 Agent 工具。'
+icon: https://raw.githubusercontent.com/lima1217/dsh-bookshelf/master/docs/icon.png

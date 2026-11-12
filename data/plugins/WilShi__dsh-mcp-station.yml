@@ -1,0 +1,7 @@
+url: https://github.com/WilShi/dsh-mcp-station
+name: WilShi/dsh-mcp-station
+category: market
+description:
+  en: 'Aggregated MCP market for DeepSeek Harness: 26 curated presets plus the official MCP Registry and user-added JSON sources, with search, source filters, connectivity tests and one-click install into the profile.'
+  zh: 聚合式 MCP 市场：26 个精选预设、MCP 官方注册表与用户自定义 JSON 源，支持搜索、来源筛选、连通性检测与一键安装到 profile。
+icon: https://raw.githubusercontent.com/WilShi/dsh-mcp-station/main/docs/screenshots/store.png

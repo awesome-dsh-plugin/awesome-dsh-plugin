@@ -1,0 +1,7 @@
+url: https://github.com/zhuran305-web/dsh-feedback-combined
+name: zhuran305-web/dsh-feedback-combined
+category: ui
+tarball: https://github.com/zhuran305-web/dsh-feedback-combined/releases/download/v0.1.5/dsh-feedback-combined-0.1.5.tgz
+description:
+  en: 'One-click thumbs up/down feedback UI that injects rating summaries into model context.'
+  zh: '一键点赞/点踩反馈 UI，评分摘要自动注入模型上下文。'

@@ -1,0 +1,6 @@
+url: https://github.com/a574676848/dsh-compaction-sticky-window
+name: a574676848/dsh-compaction-sticky-window
+category: memory
+description:
+  en: 'Replaces the summarizing context compactor with a handoff note the model writes itself and a fresh window that keeps only the system prompt, the note, and the current turn.'
+  zh: '用模型自写的交接便签替代摘要式上下文压缩：换窗后只保留系统提示、便签与当前 turn，并提供预算感知与归档回查。'

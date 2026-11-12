@@ -1,0 +1,6 @@
+url: https://github.com/Zn-Dk/dsh-zhipu-toolkit
+name: Zn-Dk/dsh-zhipu-toolkit
+category: model
+description:
+  en: Dual-endpoint Zhipu BigModel GLM provider catalog (Coding Plan and ordinary API) with live model discovery, live-tested thinking-tier mapping, and a settings card for keys, endpoints and the default reasoning tier.
+  zh: 智谱 BigModel GLM 双端点模型目录（Coding Plan 与普通 API），支持实时模型发现与实测校准的思考档位映射，提供凭据、端点与默认推理档的可视化设置卡片。

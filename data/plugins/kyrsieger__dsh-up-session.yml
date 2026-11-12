@@ -1,0 +1,6 @@
+url: https://github.com/kyrsieger/dsh-up-session
+name: kyrsieger/dsh-up-session
+category: ui
+description:
+  en: Adds cross-workspace pinned and recent session sections to the DSH sidebar, with status indicators and display settings.
+  zh: 在 DSH 侧边栏跨工作区汇总置顶与最近会话，提供状态标记和显示设置。

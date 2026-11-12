@@ -1,0 +1,6 @@
+url: https://github.com/Kenerlee/dsh-moments-aieo
+name: Kenerlee/dsh-moments-aieo
+category: skill
+description:
+  en: "AIEO (GEO/AEO) delivery method as one isolated skill provider: AI-visibility diagnosis on a 0-9 score, positioning, search-term mining restricted to whitelisted platform exports, periodic monitoring and an HTML monitoring dashboard, chained by one shared question library, plus a landing-page cloner."
+  zh: "AIEO（GEO/AEO）交付方法论，挂载为一个独立的 skill provider：0-9 分制的 AI 可见性诊断、产品定位、仅限白名单平台导出数据的搜索热词挖掘、周期性效果监控与 HTML 监控面板，由同一份共享问题库串联，另附一个落地页复刻 skill。"

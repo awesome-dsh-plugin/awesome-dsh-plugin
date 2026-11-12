@@ -1,0 +1,6 @@
+url: https://github.com/643048695/dsh-compaction-route
+name: 643048695/dsh-compaction-route
+category: session
+description:
+  en: "Route conversation-compaction calls to a chosen summarizer model in the Web settings page, and retry them on a configured fallback model when the primary ends in an error."
+  zh: "在 Web 设置页里为会话压缩指定摘要模型，并在主模型出错时改用配置的兜底模型重试。"

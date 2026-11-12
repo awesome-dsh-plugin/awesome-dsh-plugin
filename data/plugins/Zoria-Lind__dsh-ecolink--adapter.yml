@@ -1,0 +1,6 @@
+url: https://github.com/Zoria-Lind/dsh-ecolink/tree/main/adapter
+name: Zoria-Lind/dsh-ecolink#adapter
+category: memory
+description:
+  en: 'Shares a local memory pool between DeepSeek web chat and Harness, with full-answer saving and sidebar browsing and injection. The optional Windows desktop patch for DSH 0.2.2-rc.1 adds shadow sessions that sync completed web turns to Harness, display Harness replies in the original web chat, and hand tasks off to Harness.'
+  zh: '让 DeepSeek 网页与 Harness 共用本地记忆池，支持保存完整回答、侧栏浏览和注入。可选的 Windows 桌面补丁适用于 DSH 0.2.2-rc.1，提供影子会话，可将已完成的网页问答同步到 Harness、在原网页对话查看 Harness 的回答，并从网页向 Harness 交办任务。'

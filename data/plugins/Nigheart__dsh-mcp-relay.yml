@@ -1,0 +1,6 @@
+url: https://github.com/Nigheart/dsh-mcp-relay
+name: Nigheart/dsh-mcp-relay
+category: workflow
+description:
+  en: 'Expose a running DeepSeek Harness instance over MCP, so an external agent can list, create and continue that instance''s own sessions, delegate a turn and collect its result, answer the questions the DSH agent asks, and set how future approval requests resolve.'
+  zh: '把正在运行的 DeepSeek Harness 实例通过 MCP 暴露出来：外部 agent 可以列出、新建并继续该实例自己的会话，委派一轮并取回结果，回答 DSH agent 提出的问题，并决定后续审批请求如何裁决。'

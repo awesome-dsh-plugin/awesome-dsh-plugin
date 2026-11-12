@@ -1,0 +1,7 @@
+url: https://github.com/Oak-liuhj/dsh-session-rollover
+name: Oak-liuhj/dsh-session-rollover
+category: session
+description:
+  en: 'Automatically split long DSH conversations into volumes (every 10 user messages by default), with todo handoff snapshots, source navigation, read-only archives and host compatibility checks.'
+  zh: '长会话默认每 10 条用户消息自动分卷，支持待办快照续接、来源回溯、归档只读与宿主兼容检查。'
+icon: https://raw.githubusercontent.com/Oak-liuhj/dsh-session-rollover/main/assets/icon.png

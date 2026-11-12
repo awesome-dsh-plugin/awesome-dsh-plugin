@@ -1,0 +1,6 @@
+url: https://github.com/Luke-Yong/dsh-plugin-project-management
+name: Luke-Yong/dsh-plugin-project-management
+category: tools
+description: 
+  en: 'A DeepSeek Harness plugin that interviews the user about a project, generates a project timeline / Gantt chart, and exports it as Word or Excel. '
+  zh: '一个 DeepSeek Harness 插件，通过与用户进行项目需求访谈，生成项目时间线 / 甘特图，并导出为 Word 或 Excel 格式。'

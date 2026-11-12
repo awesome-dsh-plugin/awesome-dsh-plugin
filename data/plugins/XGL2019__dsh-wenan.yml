@@ -1,0 +1,6 @@
+url: https://github.com/XGL2019/dsh-wenan
+name: XGL2019/dsh-wenan
+category: tools
+description:
+  en: 'Extract short-video scripts and captions from Douyin, Bilibili, Kuaishou and YouTube, including titles, authors, hashtags and engagement data, through a bundled Python extractor.'
+  zh: '提取抖音、B站、快手与 YouTube 短视频的文案与字幕，并带标题、作者、话题与互动数据；抽取器以 Python 随包提供。'

@@ -1,0 +1,6 @@
+url: https://github.com/MJorgin/dsh-agent-conductor
+name: MJorgin/dsh-agent-conductor
+category: workflow
+description:
+  en: Dispatches tasks from DSH to 11 external agent CLIs and provides a sidebar panel for CLI availability and dispatch status.
+  zh: 从 DSH 向 11 种外部 Agent CLI 派遣任务，并在侧栏面板显示 CLI 可用性和派遣状态。

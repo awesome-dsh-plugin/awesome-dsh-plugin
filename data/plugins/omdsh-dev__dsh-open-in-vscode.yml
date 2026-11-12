@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-dev/dsh-open-in-vscode
+name: omdsh-dev/dsh-open-in-vscode
+category: notify
+description:
+  en: Open DSH workspace directories in VS Code directly from the web GUI.
+  zh: 从 Web GUI 一键在 VS Code 中打开工作区目录。

@@ -1,0 +1,6 @@
+url: https://github.com/MarsStorm/dsh-hierarchical-fishmemory
+name: MarsStorm/dsh-hierarchical-fishmemory
+category: memory
+description:
+  en: 'Layered long-term memory for DeepSeek Harness - a merge of AirPineApplea/feiyu-memory 4.0.2, dsh-soul-md and dsh-shallow-memory (do not install it alongside those plugins): a diary distilled from finished turns, a hand-written feelings diary, a persona card with version history, a hand-note injected in full every turn, and a short-TTL note layer, each capped separately so per-turn injection stays small; ships agent tools and a sidebar panel for recall, editing, compaction, and backup or restore from a local file, WebDAV or a gzip archive.'
+  zh: '面向 DeepSeek Harness 的分层长期记忆，合并自 AirPineApplea/feiyu-memory 4.0.2、dsh-soul-md 与 dsh-shallow-memory（请勿与这几个插件同时安装）：从结束的对话自动蒸馏的共度时光日记、手写的情感日记、带版本历史的人设卡、每轮全量注入的人格手记，以及带 TTL 的浅层记忆，各自独立限量以控制每轮注入开销；附带一组智能体工具与侧栏面板，可召回、编辑、压缩，并支持本地文件、WebDAV 与 gzip 整包备份还原。'

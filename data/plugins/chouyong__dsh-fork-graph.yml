@@ -1,0 +1,6 @@
+url: https://github.com/chouyong/dsh-fork-graph
+name: chouyong/dsh-fork-graph
+category: session
+description:
+  en: 'Git-style conversation fork graph in the session header: colored lanes and fork curves show which session branched from which, with click-to-jump navigation.'
+  zh: 会话标题栏内联的 Git 风格 fork 血缘图：用彩色轨道与分叉曲线显示会话从何处分支，并可点击跳转。

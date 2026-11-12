@@ -1,0 +1,6 @@
+url: https://github.com/yangdongzhen590/dsh-knj-version-control
+name: yangdongzhen590/dsh-knj-version-control
+category: git
+description:
+  en: 'Version-control workbench for the DSH Web sidebar: local changes grouped by type, per-file and multi-file staging, preview-confirmed commit / update / push, and a failure dialog that shows the raw Git output instead of a four-second toast.'
+  zh: 'DSH Web 侧栏的版本控制工作台：改动按类型分组，支持单文件与多文件暂存，提交/拉取/推送均先预览再确认，失败时弹窗展示 Git 原始输出。'

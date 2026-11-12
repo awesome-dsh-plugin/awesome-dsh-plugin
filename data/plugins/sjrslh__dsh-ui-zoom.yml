@@ -1,0 +1,6 @@
+url: https://github.com/sjrslh/dsh-ui-zoom
+name: sjrslh/dsh-ui-zoom
+category: ui
+description:
+  en: "Ctrl+wheel page zoom (60–180%, remembered) for the whole DSH UI, plus a bottom-right Settings entry that opens the host settings panel, with Ctrl+0 to reset."
+  zh: "Ctrl+滚轮整页缩放（60%–180%，记住比例），右下角常驻「设置」入口可打开宿主设置面板，Ctrl+0 复位。"

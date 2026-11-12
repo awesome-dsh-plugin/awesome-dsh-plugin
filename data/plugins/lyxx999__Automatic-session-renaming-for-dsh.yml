@@ -1,0 +1,6 @@
+url: https://github.com/lyxx999/Automatic-session-renaming-for-dsh
+name: lyxx999/Automatic-session-renaming-for-dsh
+category: session
+description:
+  en: 'Auto-renames DSH sessions with LLM-summarized titles: runs after the first prompt and on /handoff, or manually via a header button or /autotitle, with configurable title language and max title bytes.'
+  zh: 'DSH 会话自动重命名（session rename）：基于全部会话消息的 LLM 总结标题，首条提示词与 /handoff 后自动命名，会话头按钮或 /autotitle 手动触发，标题语言与最大字节数可设置。'

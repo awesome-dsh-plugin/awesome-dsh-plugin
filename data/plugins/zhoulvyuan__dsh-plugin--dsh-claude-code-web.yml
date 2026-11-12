@@ -1,0 +1,6 @@
+url: https://github.com/zhoulvyuan/dsh-plugin/tree/master/dsh-claude-code-web
+name: zhoulvyuan/dsh-plugin#dsh-claude-code-web
+category: agi
+description:
+  en: 'Claude Code-style workbench in DSH: workspace/session sidebar, streaming document-style transcript with unified tool cards and thinking, Markdown and Mermaid rendering, dark theme, and a draggable overlay panel backed by an in-host HTTP/WebSocket service.'
+  zh: '在 DSH 内提供 Claude Code 风格工作台：工作区/会话侧栏、流式文档式对话与统一工具卡、思考过程、Markdown 与 Mermaid 渲染、暗色主题，以及由宿主内 HTTP/WebSocket 服务驱动的可拖动悬浮面板。'

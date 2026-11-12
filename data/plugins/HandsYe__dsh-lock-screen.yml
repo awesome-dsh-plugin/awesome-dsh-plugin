@@ -1,0 +1,8 @@
+url: https://github.com/HandsYe/dsh-lock-screen
+name: HandsYe/dsh-lock-screen
+category: ui
+description:
+  en: 'One-click lock screen: a sidebar button covers the whole interface with the current Windows wallpaper, and two Esc presses unlock it.'
+  zh: '一键锁屏：侧栏按钮用当前 Windows 桌面壁纸铺满并遮住整个界面，连按两次 Esc 解锁。'
+icon: https://raw.githubusercontent.com/HandsYe/dsh-lock-screen/main/assets/icon.png
+tarball: https://github.com/HandsYe/dsh-lock-screen/releases/latest/download/dsh-lock-screen.tgz

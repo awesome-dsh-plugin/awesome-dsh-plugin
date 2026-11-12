@@ -1,0 +1,6 @@
+url: https://github.com/sumomok/dsh-plugins/tree/main/packages/balance
+name: sumomok/dsh-plugins#balance
+category: usage
+description:
+  en: 'DeepSeek account balance in the sidebar footer plus spend per session, today, this month and all time, priced by a configurable time-of-day price table per currency (DeepSeek CNY/USD defaults included). Two read-only remote methods, no host routes, key read through the host credentials seam on every call, egress only to the configured provider origin.'
+  zh: '侧栏脚注显示 DeepSeek 账户余额，并按会话/今日/本月/累计统计花费，按可配置的分时价格表（按币种分表，内置 DeepSeek 人民币/美元默认表）计价。两个只读远程方法，无宿主路由，密钥每次经宿主凭据缝读取，只向配置的供应商域名出网。'

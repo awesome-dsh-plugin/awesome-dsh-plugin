@@ -1,0 +1,7 @@
+url: https://github.com/Theembers/dsh-quick-tasks
+name: Theembers/dsh-quick-tasks
+category: ui
+icon: https://raw.githubusercontent.com/Theembers/dsh-quick-tasks/main/assets/icon-180.png
+description:
+  en: 'Sidebar panel for background local services: start, stop, restart, remove and inspect each task (status, port, PID, uptime, live log). Tasks are described in the plugin config, so any local service can be managed, and removing a task also drops it from that config. In the default attached mode the managed services are stopped when DSH quits, and a chat entry opens a new session with prefilled notes so an agent can add a service.'
+  zh: '左侧栏「后台任务」面板：管理需要后台运行的本地服务，一键启动/停止/重启/删除，查看状态、端口、PID、运行时长与实时日志。任务在插件配置里描述，任何本地服务都能接管，删除任务同时把它从配置里移除。默认 attached 模式下 DSH 退出即停服务；另提供对话入口，新会话里预填插件维护说明，由 agent 接手新增服务。'

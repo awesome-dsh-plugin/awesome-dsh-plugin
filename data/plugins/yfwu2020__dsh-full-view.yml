@@ -1,0 +1,6 @@
+url: https://github.com/yfwu2020/dsh-full-view
+name: yfwu2020/dsh-full-view
+category: ui
+description:
+  en: Keeps the current chat in a movable, resizable floating window when the right file or browser panel enters full view, with a compact input bar, a whale restore button and a return to the original split layout.
+  zh: 右侧文件或浏览器面板进入完整视图时，将原会话保留为可移动、缩放的聊天小窗，支持紧凑输入条、鲸鱼球恢复入口和返回原来的分栏布局。

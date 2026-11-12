@@ -1,0 +1,6 @@
+url: https://github.com/Stijnus/dsh-composer-predictions
+name: Stijnus/dsh-composer-predictions
+category: ui
+description:
+  en: 'Tab autocomplete for the DeepSeek Harness desktop and web composer: next-message ghost text, inline draft completion, and Alt+Up/Alt+Down candidate cycling.'
+  zh: '为 DeepSeek Harness 桌面端与 Web 界面的输入框提供 Tab 自动补全：下一条消息的灰色幽灵文本、草稿行内续写，以及 Alt+Up/Alt+Down 切换候选。'

@@ -1,0 +1,6 @@
+url: https://github.com/Stijnus/dsh-move-to-workspace
+name: Stijnus/dsh-move-to-workspace
+category: session
+description:
+  en: 'Moves an existing DeepSeek Harness conversation into another workspace from the sidebar menu: the transcript and title carry over, a new workspace folder can be registered in the same dialog, and the original session is archived and restorable.'
+  zh: '从侧边栏菜单把已有的 DeepSeek Harness 会话移动到其他工作区：会话记录与标题一并带过去，可在同一对话框里登记新的工作区文件夹，原会话归档且可恢复。'

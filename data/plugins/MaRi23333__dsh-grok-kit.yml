@@ -1,0 +1,6 @@
+url: https://github.com/MaRi23333/dsh-grok-kit
+name: MaRi23333/dsh-grok-kit
+category: model
+description:
+  en: 'Unofficial Grok integration for eligible X Subscription, SuperGrok, or X Premium accounts: shared Grok CLI OAuth, chat with optional main-loop web/X search, and experimental image generation, image editing, and video generation (all media features disabled by default).'
+  zh: '面向符合资格的 X Subscription、SuperGrok 或 X Premium 账号的非官方 Grok 集成：共用 Grok CLI OAuth 登录，支持对话及可选的主循环网页/X 搜索；实验性的图片生成、图生图编辑和视频生成均默认关闭，需主动开启。'

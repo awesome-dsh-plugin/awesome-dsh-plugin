@@ -1,0 +1,7 @@
+url: https://github.com/zhubaohi/dsh-gpu-pulse
+name: zhubaohi/dsh-gpu-pulse
+category: ui
+description:
+  en: 'Floating GPU monitor for the DSH Web UI: a compact, draggable strip with one row per discrete GPU (exact name, utilization, VRAM, temperature, power draw) from nvidia-smi, stays visible over side panels and side cards, with a top-VRAM-process list when the driver reports it; degrades to an n/a pill on machines without an NVIDIA driver.'
+  zh: 'DSH Web 界面内置的悬浮 GPU 监控：紧凑可拖动的条带，每张独立 GPU 一行（精确名称、利用率、显存、温度、功耗），数据来自 nvidia-smi；侧边面板或侧边卡片打开时保持在最上层；驱动支持时还列出显存占用最高的进程；无 NVIDIA 驱动的机器会退化为 n/a 胶囊。'
+tarball: https://github.com/zhubaohi/dsh-gpu-pulse/releases/download/v1.2.0/dsh-gpu-pulse-1.2.0.tgz

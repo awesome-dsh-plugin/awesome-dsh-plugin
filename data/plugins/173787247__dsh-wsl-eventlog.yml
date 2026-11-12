@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-eventlog
+name: 173787247/dsh-wsl-eventlog
+category: wsl
+description:
+  en: Read recent Windows event log entries from WSL, filtered by log name, level, provider and time window.
+  zh: Windows 事件日志：按日志名、级别、来源与时间窗读取近期条目。

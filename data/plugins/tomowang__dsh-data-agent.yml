@@ -1,0 +1,6 @@
+url: https://github.com/tomowang/dsh-data-agent
+name: tomowang/dsh-data-agent
+category: tools
+description:
+  en: 'Database connections and SQL for DeepSeek Harness: register data sources, browse and comment schemas, run AST-checked SQL with a per-source read-only toggle, and render bar, line and pie charts, from chat or the Settings page.'
+  zh: 'DeepSeek Harness 的数据库连接与 SQL 插件：注册数据源，浏览并注释表结构，通过 AST 校验执行 SQL（每个数据源可单独切换只读），并渲染柱状图、折线图和饼图，可在对话或设置页中使用。'

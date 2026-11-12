@@ -1,0 +1,7 @@
+url: https://github.com/reshuibuduo/tmcra-plugin-deepseek-harness
+name: reshuibuduo/tmcra-plugin-deepseek-harness
+category: memory
+description:
+  en: 'Cross-app project memory for DeepSeek Harness with role-separated writeback, a visual knowledge workspace, confirmed corrections, session controls, local Writer and organizer settings, and an account-free Windows local installation preview.'
+  zh: 面向 DeepSeek Harness 的跨应用项目记忆，支持角色分离写回、可视化知识工作台、确认后纠错、会话控制、本地 Writer 与整理模型设置，以及免账号 Windows 本地安装预览。
+tarball: https://github.com/reshuibuduo/tmcra-plugin-deepseek-harness/releases/download/v1.0.0-rc.1/dsh-tmcra-memory-1.0.0-rc.1.tgz

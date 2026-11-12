@@ -1,0 +1,6 @@
+url: https://github.com/a179-sanae/dsh-auto-collapse
+name: a179-sanae/dsh-auto-collapse
+category: ui
+description:
+  en: 'Codex-style workflow auto-collapse: finished turns fold into a single "processed in Xs" row leaving only the final answer; tool calls and think blocks collapse into live-summary chips that follow streaming; expand level by level, fully reversible on uninstall.'
+  zh: Codex 风格工作流自动折叠：回合完成收成一行「已处理 X秒」只留最终正文，工具/思考块折叠成实时摘要 chip（运行中跟随流式滚动），逐级点击展开；卸载完整还原。

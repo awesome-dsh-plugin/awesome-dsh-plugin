@@ -1,0 +1,8 @@
+url: https://github.com/Lphehe/dsh-composer-assist
+name: Lphehe/dsh-composer-assist
+category: ui
+description:
+  en: "DSH input assistant for next-message prediction, draft autocomplete (text completion), and prompt polishing/rewrite. Session-local suggestions; Tab accepts into the draft without sending. Requires a configured model; calls may incur charges. Source-available; modifications require prior written permission."
+  zh: "DSH 输入助手：输入预测、草稿补全（自动补全）、提示词润色（prompt 优化）；根据对话给出下一句建议。Tab 接受只填入草稿、不自动发送，建议按会话保留。需配置模型，调用可能计费。源码可见，修改须事先取得书面许可。"
+tarball: https://github.com/Lphehe/dsh-composer-assist/releases/download/v0.1.1/dsh-composer-assist.tgz
+icon: https://raw.githubusercontent.com/Lphehe/dsh-composer-assist/ce104ff926789d6b6271f6ef91fb65315960e04c/screenshots/icon-zh.png

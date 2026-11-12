@@ -1,0 +1,7 @@
+url: https://github.com/addie-ace/dsh-mattpocock-skills
+name: addie-ace/dsh-mattpocock-skills
+category: skill
+tarball: https://github.com/addie-ace/dsh-mattpocock-skills/releases/download/v0.2.0/dsh-mattpocock-skills-0.2.0.tgz
+description:
+  en: 'Skill pack plugin: the 25 promoted skills from mattpocock/skills (engineering and productivity), translated to Chinese, registered as a bundled DSH skill provider.'
+  zh: '技能包插件：把 mattpocock/skills 的 25 个 promoted 技能（工程与效率）全文汉化，注册为 DSH 捆绑技能 provider，经技能系统发现与调用。'

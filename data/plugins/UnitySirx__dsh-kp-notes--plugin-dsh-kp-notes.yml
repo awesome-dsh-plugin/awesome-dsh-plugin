@@ -1,0 +1,6 @@
+url: https://github.com/UnitySirx/dsh-kp-notes/tree/main/plugin/dsh-kp-notes
+name: UnitySirx/dsh-kp-notes#dsh-kp-notes
+category: docs
+description:
+  en: 'Knowledge-point notebook for DeepSeek Harness: turns a Markdown notes folder into a card canvas — folder = chapter, file = section, body = knowledge points — with masked-answer questions for self-testing, KaTeX formulas, Mermaid flowcharts, a mind map view and in-panel editing.'
+  zh: 'DeepSeek Harness 知识点笔记插件：把 Markdown 笔记目录变成卡片式学习画布，目录 = 章节、文件 = 小节、正文 = 知识点；题目可遮挡答案自测，支持 KaTeX 公式、Mermaid 流程图、思维导图与面板内编辑。'

@@ -1,0 +1,6 @@
+url: https://github.com/fashionmascherine-svg/formalswarm
+name: fashionmascherine-svg/formalswarm
+category: workflow
+description:
+  en: "Runs a thesis-antithesis-seal debate whose verdict is computed from real command exit codes and case counts, never from agent prose."
+  zh: "运行「正题—反题—封印」三方辩论，其结论由真实命令的退出码与用例数计算得出，绝不采信智能体的文字陈述。"

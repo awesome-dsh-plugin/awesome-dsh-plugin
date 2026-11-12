@@ -1,0 +1,6 @@
+url: https://github.com/rpegorov/agent-pet/tree/main/plugins/dsh-agent-pet
+name: rpegorov/agent-pet#dsh-agent-pet
+category: notify
+description:
+  en: Reports DeepSeek Harness session state (working, done, error) to the agent-pet macOS desktop overlay and lets it open sessions or start a chat.
+  zh: 把 DeepSeek Harness 的会话状态（工作中、完成、出错）报告给 agent-pet 的 macOS 桌面悬浮宠物，并可从宠物打开会话或开始新对话。

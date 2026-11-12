@@ -1,0 +1,16 @@
+# awesome-dsh-plugin 上架条目。
+# 提交方式：fork https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+# 把这个文件放到 `data/plugins/let-mi-think__wechat-agent-router.yml`（文件名必须与仓库一致），
+# 然后提 PR。README 由脚本自动生成，**不要手工编辑 README**。
+#
+# 提 PR 前确认：
+#   1. package.json 里声明了 dsh.bundle（本仓库已有）+ 根目录有 cordis.patch.yml（已有）；
+#   2. GitHub 仓库已加 `dsh-plugin` topic；
+#   3. 仓库创建满 1 天（CI 会检查）；
+#   4. 一个 PR 最多 3 条，且只改自己这一条。
+url: https://github.com/let-mi-think/wechat-agent-router
+name: let-mi-think/wechat-agent-router
+category: session
+description:
+  en: Route each WeChat group session to a different Agent preset by group name, reusing dsh-wechat-assistant without changing its code.
+  zh: 按群名把每个微信群会话路由到不同的 Agent 预设，不改动 dsh-wechat-assistant 的任何代码。

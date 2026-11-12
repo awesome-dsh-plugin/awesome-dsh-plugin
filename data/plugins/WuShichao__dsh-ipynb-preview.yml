@@ -1,0 +1,6 @@
+url: https://github.com/WuShichao/dsh-ipynb-preview
+name: WuShichao/dsh-ipynb-preview
+category: docs
+description:
+  en: Renders Jupyter notebooks in the document preview, with syntax-highlighted code, offline KaTeX for inline and display math, and a zoomable figure viewer.
+  zh: 在文档预览中渲染 Jupyter 笔记本，支持代码语法高亮、离线 KaTeX 行内与块级公式，以及可缩放的图像查看器。

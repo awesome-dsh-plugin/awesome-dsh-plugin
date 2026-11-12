@@ -1,0 +1,6 @@
+url: https://github.com/john-walks-slow/dsh-hybrid-notify
+name: john-walks-slow/dsh-hybrid-notify
+category: notify
+description:
+  en: 'Multi-channel notification plugin for DeepSeek Harness: dispatches in-page toasts in the foreground and PWA system notifications (Service Worker) or browser notifications in the background, with per-event toggles for task complete, approval request, question, plan review and errors, persistent notifications, and Web Audio synthesized alert sounds without audio files.'
+  zh: 'DeepSeek Harness 多通道通知插件：前台弹页面内 toast，后台按可用性切换 PWA 系统通知（Service Worker）或浏览器通知兜底；任务完成、审批请求、提问、计划评审、出错等事件可逐项开关，重要通知驻留不消失，并用 Web Audio 实时合成提示音效、零音频文件零网络上报。'

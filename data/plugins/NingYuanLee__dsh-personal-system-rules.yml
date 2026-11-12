@@ -1,0 +1,6 @@
+url: https://github.com/NingYuanLee/dsh-personal-system-rules
+name: NingYuanLee/dsh-personal-system-rules
+category: workflow
+description:
+  en: 'Inject a personal rules file into the DeepSeek Harness system prompt, with silent-step and repeated-action loop guards editable from the settings dialog.'
+  zh: '把个性化规则文件注入 DeepSeek Harness 系统提示，并提供静默提醒与重复操作循环检测，可在设置弹窗中编辑。'

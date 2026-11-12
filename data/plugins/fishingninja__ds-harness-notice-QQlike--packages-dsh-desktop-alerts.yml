@@ -1,0 +1,7 @@
+url: https://github.com/fishingninja/ds-harness-notice-QQlike/tree/main/packages/dsh-desktop-alerts
+name: fishingninja/ds-harness-notice-QQlike#dsh-desktop-alerts
+category: notify
+description:
+  en: "QQ-style attention alerts for the DSH desktop client: one short cue when a session needs you, a notification-area icon that blinks like an unread message, and an unread dock. The blink stops only once every triggering session has been read."
+  zh: "DSH 桌面客户端的 QQ 风格提醒：会话需要你处理时响一声短促提示音，系统托盘图标像未读消息一样闪动，右下角还有未读浮窗。只有把触发过提醒的会话全部读掉，闪动才会停止。"
+icon: https://raw.githubusercontent.com/fishingninja/ds-harness-notice-QQlike/main/packages/dsh-desktop-alerts/assets/icon-192.png

@@ -1,0 +1,7 @@
+url: https://github.com/SoulZhou/dsh-multi-root-changes
+name: SoulZhou/dsh-multi-root-changes
+category: git
+description:
+  en: 'Git tab that covers the session workspace root together with every additional root registered through multi-root-workspace, so sibling checkouts appear as separate sections with their own branch, ahead/behind, line counts, directory tree and commit history; clicking a file opens its unified diff (or whole content, for untracked files) and clicking a commit opens its patch. Each section also has a commit box that stages and commits only the listed files (`git add -- <files>` + `git commit -- <files>`).'
+  zh: 'Git 页签，把会话主目录与 multi-root-workspace 登记的每个附加根放在一起展示：平级仓库各自一节，带自己的分支、ahead/behind、增删行数、目录树与提交历史；点文件看 unified diff（未跟踪文件显示全文），点提交看该提交的 patch。每节还带提交框，只暂存并提交列出的文件（`git add -- <files>` + `git commit -- <files>`）。'
+icon: https://raw.githubusercontent.com/SoulZhou/dsh-multi-root-changes/main/assets/icon-512.png

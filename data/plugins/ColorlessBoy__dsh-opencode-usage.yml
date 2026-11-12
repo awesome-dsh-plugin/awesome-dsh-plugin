@@ -1,0 +1,6 @@
+url: https://github.com/ColorlessBoy/dsh-opencode-usage
+name: ColorlessBoy/dsh-opencode-usage
+category: usage
+description:
+  en: Shows the remaining OpenCode Go quota (5-hour, weekly, monthly) in the DeepSeek Harness Web composer dock.
+  zh: 在 DeepSeek Harness 的 Web 输入框 dock 显示 OpenCode Go 套餐的 5 小时 / 每周 / 每月剩余额度。

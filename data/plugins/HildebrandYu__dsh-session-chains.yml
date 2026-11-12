@@ -1,0 +1,7 @@
+url: https://github.com/HildebrandYu/dsh-session-chains
+name: HildebrandYu/dsh-session-chains
+category: session
+tarball: https://github.com/HildebrandYu/dsh-session-chains/releases/latest/download/session-chains.tgz
+description:
+  en: Groups the sessions that hand off to each other into one chain in the DSH sidebar — automatic chain detection from the handoff prompt, per-chain numbering, in-place rename, search, drag and multi-select to re-chain, pinning a chain to the top, archiving chains out of the sidebar into a panel-only archive, a per-session context/steps readout, and configurable handoff thresholds that can trigger an automatic handoff (write the next prompt, open a new session, paste it, switch over).
+  zh: 把互相交接的對話自動聚成一條鏈：從交接提示詞自動判定、場次編號、就地改名、搜尋、拖拉／多選歸鏈、把鏈置頂、把鏈封存進面板裡的封存庫（側欄不再顯示，有新場次也留在封存庫）、本場上下文與請求數讀數，以及可調的交接門檻（達到可自動交接：寫提示詞→開新對話→貼上→切換）。

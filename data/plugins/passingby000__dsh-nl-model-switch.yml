@@ -1,0 +1,6 @@
+url: https://github.com/passingby000/dsh-nl-model-switch
+name: passingby000/dsh-nl-model-switch
+category: model
+description:
+  en: Switch the current DSH session's model with a natural-language sentence, on web, TUI, or IM bridges (WeChat, Feishu), without touching the panel.
+  zh: 用一句自然语言切换当前 DSH 会话模型，可在 Web、TUI 及 IM 桥接的微信、飞书等对话框中使用，无需操作面板。

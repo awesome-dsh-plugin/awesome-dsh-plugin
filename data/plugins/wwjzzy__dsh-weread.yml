@@ -1,0 +1,6 @@
+url: https://github.com/wwjzzy/dsh-weread
+name: wwjzzy/dsh-weread
+category: ui
+description:
+  en: 'WeChat Reading (WeRead) right-sidebar bookshelf and chapter reader: QR or Cookie login, store search, resume reading, and weread_shelf / weread_search / weread_book / weread_chapter agent tools.'
+  zh: '微信读书右侧栏书架与章节阅读器：支持扫码或 Cookie 登录、书城搜索与续读，并提供 weread_shelf / weread_search / weread_book / weread_chapter 工具。'

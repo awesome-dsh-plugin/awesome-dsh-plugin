@@ -1,0 +1,8 @@
+url: https://github.com/dakouchiya/dsh-auto-router
+name: dakouchiya/dsh-auto-router
+category: model
+description:
+  en: 'Routes model and reasoning effort per turn: a cheap classifier reads each request and picks one of five tiers, a supervisor model re-routes on tool errors and checkpoints, and upgrading to the stronger model waits for confirmation.'
+  zh: '按每轮请求的实际内容选择模型与推理等级：便宜的分类模型先判档，监督模型在工具报错和检查点中途改档，升到更强模型前会先弹窗确认。'
+icon: https://raw.githubusercontent.com/dakouchiya/dsh-auto-router/main/assets/icon-180.png
+tarball: https://github.com/dakouchiya/dsh-auto-router/releases/download/v1.1.2/dsh-auto-router-1.1.2.tgz

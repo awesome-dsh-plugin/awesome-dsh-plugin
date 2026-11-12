@@ -1,0 +1,7 @@
+url: https://github.com/Fwkkk666/dsh-za-warudo
+name: Fwkkk666/dsh-za-warudo
+category: theme
+tarball: https://github.com/Fwkkk666/dsh-za-warudo/releases/download/v1.0.1/dsh-za-warudo-1.0.1.tgz
+description:
+  en: Adds an Appearance switch to the DSH sidebar with a three-second time-stop transition, synchronized sound, and light/dark theme switching.
+  zh: 在 DSH 侧栏加入“外观”开关，切换明暗主题时播放三秒时停转场与同步音效。

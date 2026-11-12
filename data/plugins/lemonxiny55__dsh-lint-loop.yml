@@ -1,0 +1,6 @@
+url: https://github.com/lemonxiny55/dsh-lint-loop
+name: lemonxiny55/dsh-lint-loop
+category: dev
+description:
+  en: 'dsh-lint-loop v0.7.0 adds bounded, read-only evidence checks for observable shell/bash/pwsh and file-tool changes; uncertain evidence remains incomplete. [Release](https://github.com/lemonxiny55/dsh-lint-loop/releases/tag/v0.7.0).'
+  zh: 'dsh-lint-loop v0.7.0 通过有界、只读检查点追踪 shell/bash/pwsh 与文件工具产生的可观察变更；证据归因不确定或不足时保留为 incomplete。[正式 Release](https://github.com/lemonxiny55/dsh-lint-loop/releases/tag/v0.7.0)。'

@@ -1,0 +1,6 @@
+url: https://github.com/couldbeme/dsh-write-gate
+name: couldbeme/dsh-write-gate
+category: security
+description:
+  en: 'Commitment write-gate: operator-authored rules enforced before a tool call runs — a deterministic guard tier plus an LLM-judge tier, fail-closed by default, every block written to a contradictions log.'
+  zh: '承诺写入闸门：由运营者编写的规则在工具调用执行前生效——先是一层确定性守卫，再是一层 LLM 裁判，默认失败即拒绝，每一次拦截都写进矛盾日志。'

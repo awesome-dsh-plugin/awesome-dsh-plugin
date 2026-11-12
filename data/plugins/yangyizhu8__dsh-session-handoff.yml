@@ -1,0 +1,7 @@
+url: https://github.com/yangyizhu8/dsh-session-handoff
+name: yangyizhu8/dsh-session-handoff
+category: session
+tarball: https://github.com/yangyizhu8/dsh-session-handoff/releases/download/v0.2.5/dsh-session-handoff-0.2.5.tgz
+description:
+  en: "Session handoff for DeepSeek Harness: the session menu creates a successor session that rebuilds the old session's memory, tasks and rules through an eight-section takeover packet, with light context via on-demand transcript readback."
+  zh: "会话工作移交：会话行菜单一键移交，新会话按八节交接包复刻老会话的记忆、任务与铁律，原始上下文经按需回读保持轻量。"

@@ -1,0 +1,6 @@
+url: https://github.com/weibaohui/dsh-gaokao
+name: weibaohui/dsh-gaokao
+category: fun
+description:
+  en: "Gaokao countdown blackboard: counts down the days to the gaokao on a desktop blackboard widget that collapses into a slim bar on double-click, and quizzes random knowledge cards while the agent works; open Markdown knowledge-card framework — drop .md files under subject/category folders and they load automatically, with cross-links, favorites, priority subjects and importing your own knowledge base."
+  zh: 梦回高三：桌面小黑板高考倒计时（双击收成竖条），AI 干活时随机抽背知识点卡；Markdown 开放知识卡框架——按学科/分类放 md 即自动加载，支持关联跳转/收藏/重点学科/导入自己的知识库。

@@ -1,0 +1,8 @@
+url: https://github.com/shengyvself/dsh-prompt-only-forge
+name: shengyvself/dsh-prompt-only-forge
+category: tools
+description:
+  en: >-
+    Prompt-polish template injector for DSH: click ✨ in the composer to inject a "polish my prompt" template (current draft auto-embedded), no send, no network, no model — the main agent rewrites with full context. Replaces narrative-prompt-polish (2026-09-14 migration).
+  zh: >-
+    点会话输入框右座 ✨，把「打磨提示词」模板写进输入栏——当前草稿自动嵌进 `<内容>` 位置，不发送、不联网、不调模型，由当前会话的主 agent 带着全部上下文改写。替代 narrative-prompt-polish（2026-09-14 更名并整体重构）。

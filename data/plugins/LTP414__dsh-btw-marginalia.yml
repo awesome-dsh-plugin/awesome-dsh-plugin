@@ -1,0 +1,7 @@
+url: https://github.com/LTP414/dsh-btw-marginalia
+name: LTP414/dsh-btw-marginalia
+category: ui
+description:
+  en: 'Read-only /btw side questions for DeepSeek Harness: forks the current session, injects the running turn''s task, recent tool calls and partial answer so a mid-turn question has context, denies every tool call at execution time, and keeps a per-session topic history with follow-up, stop, retry and delete.'
+  zh: 'DeepSeek Harness 的只读 /btw 旁问：fork 当前会话，并在主回合仍在运行时补入当前任务、最近的工具调用和流式输出作为上下文；执行期拒绝所有工具调用；按会话保留支持追问、停止、重试和删除的主题历史。'
+icon: https://raw.githubusercontent.com/LTP414/dsh-btw-marginalia/main/assets/icon-512.png

@@ -1,0 +1,7 @@
+url: https://github.com/Mi-Chuan/box-select-copy
+name: Mi-Chuan/box-select-copy
+category: ui
+description:
+  en: Alt+drag a rectangular box over the DSH conversation to copy the text inside it.
+  zh: 在 DSH 对话中按住 Alt 拖拽矩形选框，复制框内文本。
+tarball: https://github.com/Mi-Chuan/box-select-copy/releases/download/v1.1.1/box-select-copy-1.1.1.tgz

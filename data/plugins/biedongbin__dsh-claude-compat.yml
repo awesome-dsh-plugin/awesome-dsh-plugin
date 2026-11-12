@@ -1,0 +1,22 @@
+url: https://github.com/biedongbin/dsh-claude-compat
+name: biedongbin/dsh-claude-compat
+category: dev
+description:
+  en: >-
+    Bridge Claude Code's .claude/ directories into DSH with zero migration:
+    project and user-level skills, commands, rules (one system-reminder
+    envelope), agent files, hooks (PreToolUse/PostToolUse/UserPromptSubmit/
+    SessionStart/SessionEnd) and .mcp.json servers, plus Claude Code plugin
+    marketplaces. Ships /cc-plugin for full plugin/marketplace management
+    (claude CLI first, self-implemented fallback), /cc-resume to list and
+    import Claude Code sessions into DSH as native event-sourced logs, and
+    /cc-export to write DSH skills back as Claude Code skills. Two-way
+    Claude Code <-> DSH bridge, versioned and released as dsh-claude-compat.
+  zh: >-
+    把 Claude Code 的 .claude/ 目录零迁移桥接进 DSH：项目与用户级 skills、
+    斜杠命令、rules（单条 system-reminder 信封注入）、agent 文件、hooks
+    （PreToolUse/PostToolUse/UserPromptSubmit/SessionStart/SessionEnd）、
+    .mcp.json 服务器，并支持 Claude Code 插件 marketplace。自带 /cc-plugin
+    插件与市场全管理（claude CLI 优先、自实现兜底）、/cc-resume 列出并把
+    Claude Code 会话导入为 DSH 原生事件日志、/cc-export 把 DSH skill 导出为
+    Claude Code skill。Claude Code 与 DSH 的双向桥。

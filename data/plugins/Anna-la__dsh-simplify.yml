@@ -1,0 +1,6 @@
+url: https://github.com/Anna-la/dsh-simplify
+name: Anna-la/dsh-simplify
+category: ui
+description:
+  en: 'Clean-mode for the Web GUI: hover any element and right-click to remove it; removals survive reloads and are restorable from the settings page.'
+  zh: 'Web 界面清理：清理模式下悬浮元素右键即可移除，刷新后依然生效，设置页中可原样恢复。'

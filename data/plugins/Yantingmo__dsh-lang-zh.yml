@@ -1,0 +1,6 @@
+url: https://github.com/Yantingmo/dsh-lang-zh
+name: Yantingmo/dsh-lang-zh
+category: session
+description:
+  en: Injects a fixed system-prompt section so the agent always replies in Simplified Chinese — including the short narration between tool calls — unless you explicitly ask for another language. Applies to every session and preset without overriding the persona.
+  zh: 向系统提示注入固定语言指令，让 Agent 始终用简体中文回复（含工具调用之间的叙述文字），除非你明确要求其他语言；对所有会话与预设生效，且不覆盖 persona。

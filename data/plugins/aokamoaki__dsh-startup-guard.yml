@@ -1,0 +1,6 @@
+url: https://github.com/aokamoaki/dsh-startup-guard
+name: aokamoaki/dsh-startup-guard
+category: dev
+description:
+  en: Boot-time guard that repairs corrupt session logs, preflights plugin composition, vm-checks client artifacts, smoke-tests host apply() and quarantines crash-causing bundles, so a broken plugin can never brick startup.
+  zh: 启动守卫：修复会话日志、预检插件组合、校验客户端工件、冒烟宿主 apply() 并隔离崩溃源，让坏插件再也无法砖掉启动。

@@ -1,0 +1,6 @@
+url: https://github.com/LiuJiaCheng11/dsh-postman
+name: LiuJiaCheng11/dsh-postman
+category: tools
+description:
+  en: Manage Postman cloud collections from dsh with 9 tools — list, browse, add one or many requests, edit and delete them, and export or overwrite a whole collection.
+  zh: 用 9 个工具在 dsh 里管理 Postman 云端集合——列出、浏览、新增（单个或批量）、修改、删除接口，导出或整体覆盖集合。

@@ -1,0 +1,6 @@
+url: https://github.com/duyanta123/arch-doc
+name: duyanta123/arch-doc
+category: docs
+description:
+  en: 'Analyze a codebase and generate architecture documentation: module responsibilities, dependencies, entry points and run methods.'
+  zh: 分析代码库并生成架构文档：模块职责、依赖关系、入口点与运行方式。

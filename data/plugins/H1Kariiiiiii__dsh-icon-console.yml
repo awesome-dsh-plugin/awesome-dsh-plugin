@@ -1,0 +1,6 @@
+url: https://github.com/H1Kariiiiiii/dsh-icon-console
+name: H1Kariiiiiii/dsh-icon-console
+category: ui
+description:
+  en: 'Icon console for the DSH desktop app: import one icon and apply it to the desktop and Start Menu shortcuts (immediately), the application window image and the system tray image (after a restart), with automatic backup, one-click restore, a named icon library, and restart/exit controls.'
+  zh: 'DSH 桌面端图标控制台：导入一个图标即可应用到桌面与开始菜单快捷方式（立即生效）、应用窗口图标与系统托盘图标（重启后生效），带官方图标自动备份、一键恢复、图标库管理，以及重启/退出控制。'

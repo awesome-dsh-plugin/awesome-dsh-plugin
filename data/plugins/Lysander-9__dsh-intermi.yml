@@ -1,0 +1,6 @@
+url: https://github.com/Lysander-9/dsh-intermi
+name: Lysander-9/dsh-intermi
+category: dev
+description:
+  en: View and interact with the persistent terminal used by each DSH Agent.
+  zh: 查看并操作每个 DSH Agent 使用的持久终端。

@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-lsp-packs/tree/main/dsh-lsp-pyright
+name: 988hj7tczd-oss/dsh-lsp-packs#dsh-lsp-pyright
+category: dev
+description:
+  en: 'Python LSP configuration plugin for DeepSeek Harness using Pyright.'
+  zh: '基于 Pyright 为 DeepSeek Harness 提供 Python 代码导航和语言服务配置。'

@@ -1,0 +1,7 @@
+url: https://github.com/hoyyang/dsh-project-manager
+name: hoyyang/dsh-project-manager
+category: workflow
+description:
+  en: 'Project board, task schedule (gantt) and project memory: sessions opened from a card auto-load the latest project STATE; persisting progress without losing facts needs python3 and is unavailable on Windows.'
+  zh: '项目看板 + 任务日程（甘特图）+ 项目记忆：从卡片打开的会话自动带上项目最新记忆；一句话落盘不丢事实需要 python3，Windows 上不可用。'
+tarball: https://github.com/hoyyang/dsh-project-manager/releases/download/v0.57.0/dsh-project-manager-0.57.0.tgz

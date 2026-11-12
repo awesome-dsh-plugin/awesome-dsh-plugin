@@ -1,0 +1,6 @@
+url: https://github.com/Jessicaisleep/dsh-dsml-guard
+name: Jessicaisleep/dsh-dsml-guard
+category: session
+description:
+  en: 'Strips DSML markers that leak into the assistant text stream and resumes a turn only when it genuinely produced nothing — an invoke-block leak with no tool call emitted, or a closing-tag leak whose prose is near-empty; upstream jitter codes retry, while quota, rate-limit, auth and context-window errors never do. Requires DSH 0.2.1-rc.2 or newer, below 0.3.0, and Node 20 or newer.'
+  zh: '抹掉漏进助手正文的 DSML 标记；只在确实毫无产出的轮次补一条继续——整段调用写进正文且没有发出任何工具调用，或只剩闭合标签且正文近乎为空。上游抖动类错误会续跑，额度、限流、鉴权与上下文超限一律不续。适用 DSH 0.2.1-rc.2 起、0.3.0 以下，Node 20 起。'

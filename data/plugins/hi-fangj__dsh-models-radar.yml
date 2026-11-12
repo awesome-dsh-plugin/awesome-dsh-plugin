@@ -1,0 +1,6 @@
+url: https://github.com/hi-fangj/dsh-models-radar
+name: hi-fangj/dsh-models-radar
+category: model
+description:
+  en: Displays CodexRadar model capability benchmarks in a Settings page and shows the selected session model's DeepSWE score beside the composer.
+  zh: 在设置页展示 CodexRadar 模型能力评测，并在输入框旁显示当前会话所选模型的 DeepSWE 分数。

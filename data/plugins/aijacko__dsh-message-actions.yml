@@ -1,0 +1,6 @@
+url: https://github.com/aijacko/dsh-message-actions
+name: aijacko/dsh-message-actions
+category: session
+description:
+  en: Adds recall, delete-to-end, multi-select share and export to conversation messages, with per-answer usage statistics and DeepSeek balance cost tracking.
+  zh: 为对话消息添加撤回、删除、删至末尾、多选分享与导出，并提供每条回答的用量统计与 DeepSeek 余额费用统计。

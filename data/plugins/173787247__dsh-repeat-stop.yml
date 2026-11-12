@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-repeat-stop
+name: 173787247/dsh-repeat-stop
+category: security
+description:
+  en: Hard-stop consecutive identical tool calls after a configurable streak so the agent cannot spin in place.
+  zh: 在可配置次数后硬拦截连续相同的工具调用，避免 Agent 原地空转。

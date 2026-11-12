@@ -1,0 +1,6 @@
+url: https://github.com/yingjian666/dsh-zh-thinking
+name: yingjian666/dsh-zh-thinking
+category: session
+description:
+  en: Injects one system-prompt section so the agent's chain-of-thought, planning and tool-invocation reasoning stay in Simplified Chinese. Zero external dependencies - clone and link-install from any local directory, no npm build or publish required.
+  zh: 注入一条系统提示词段落，让 Agent 的思维链、规划与工具调用推理全程使用简体中文；零外部依赖，git clone 后可从任意本地目录 link 安装，无需 npm 构建或发布。

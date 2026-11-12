@@ -1,0 +1,6 @@
+url: https://github.com/Vladimir-Human/ru-marketplace-mcp/tree/main/dsh
+name: Vladimir-Human/ru-marketplace-mcp#dsh
+category: skill
+description:
+  en: '15 skills and three mutually exclusive optional MCP rows (ru-marketplace-compare, ru-marketplace-decision, ru-marketplace-full) for twelve marketplaces: price comparison across Wildberries, Detsky Mir and Yandex Market, plus per-source search, product cards and reviews, including Ozon, Avito, AliExpress, Taobao, Megamarket, Lamoda, DNS, Citilink and Cian. The 15 skills load on install; the MCP rows stay disabled until RU_MARKETPLACE_MCP_DIR points at a local clone, which needs Python 3.12+ and uv.'
+  zh: 面向十二家电商与分类信息平台的 15 个技能与三行互斥可选 MCP（ru-marketplace-compare、ru-marketplace-decision、ru-marketplace-full）：跨 Wildberries、Detsky Mir、Yandex Market 比价，以及各平台（含 Ozon、Avito、AliExpress、Taobao、Megamarket、Lamoda、DNS、Citilink 与 Cian 房产）的搜索、商品卡与评论。安装后 15 个技能立即可用；三行 MCP 默认关闭，需将 RU_MARKETPLACE_MCP_DIR 指向本地克隆，该克隆需要 Python 3.12+ 与 uv。

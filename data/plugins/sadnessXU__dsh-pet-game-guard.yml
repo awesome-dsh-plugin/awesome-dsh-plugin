@@ -1,0 +1,8 @@
+url: https://github.com/sadnessXU/dsh-pet-game-guard
+name: sadnessXU/dsh-pet-game-guard
+category: fun
+icon: https://raw.githubusercontent.com/sadnessXU/dsh-pet-game-guard/main/icon.png
+tarball: https://github.com/sadnessXU/dsh-pet-game-guard/releases/latest/download/dsh-pet-game-guard.tgz
+description:
+  zh: "打游戏或全屏应用在前台时，自动把 dsh-pet 的桌宠窗口收起来，退出后原样放回。用「全屏窗口铺满显示器 + 前台进程在游戏目录 + 系统全屏状态」三重信号判定，连续两次采样一致才动作，避免切窗口时闪隐；只切换窗口可见性，不改 dsh-pet 的任何配置，也不动它的安装目录。托盘菜单可暂停、立即恢复、重载配置。仅 Windows。"
+  en: "Hides the dsh-pet desktop pet while a game or fullscreen app is in the foreground, then brings it back. Decides from three signals — a captionless window covering the whole monitor, the foreground process living in a game directory, and the system's full-screen notification state — and requires two consistent polls before acting, so alt-tabbing does not make the pet flicker. It only toggles window visibility; dsh-pet's configuration and install directory are never touched. A tray menu offers pause, restore now, and reload config. Windows only."

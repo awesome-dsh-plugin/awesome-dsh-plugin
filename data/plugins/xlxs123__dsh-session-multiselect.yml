@@ -1,0 +1,7 @@
+url: https://github.com/xlxs123/dsh-session-multiselect
+name: xlxs123/dsh-session-multiselect
+category: session
+tarball: https://github.com/xlxs123/dsh-session-multiselect/releases/latest/download/dsh-session-multiselect.tgz
+description:
+  en: 'A searchable, workspace-grouped multi-select panel over DSH conversations for batch delete, archive and pin, with Shift-range and Ctrl-add selection.'
+  zh: '为 DSH 对话加入可搜索、按工作区分组的多选面板，支持 Shift 范围选择与 Ctrl/Cmd 追加选择，然后批量删除、归档或置顶。'

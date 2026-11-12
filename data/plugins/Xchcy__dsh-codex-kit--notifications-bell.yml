@@ -1,0 +1,6 @@
+url: https://github.com/Xchcy/dsh-codex-kit/tree/main/notifications-bell
+name: Xchcy/dsh-codex-kit#notifications-bell
+category: notify
+description:
+  en: 'Adds a bell to the sidebar header: yellow when a conversation waits for approval, red when a turn was interrupted, blue when a conversation completed; clicking it opens a status summary panel and a session board, and a status with exactly one session opens that session directly.'
+  zh: '在侧边栏右上角加一个铃铛：有会话等待审批时显示黄点，有回合意外停止时显示红点，有会话完成时显示蓝点；点开后是状态摘要面板和会话看板，某个状态只有一条会话时直接打开该会话。'

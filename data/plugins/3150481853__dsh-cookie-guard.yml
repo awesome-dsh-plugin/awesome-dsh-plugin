@@ -1,0 +1,7 @@
+url: https://github.com/3150481853/dsh-cookie-guard
+name: 3150481853/dsh-cookie-guard
+category: usage
+description:
+  en: "Windows-only. Counts the dsh-auth-* login cookies the DSH desktop shell has accumulated, shows how much of the 16 KiB request-header budget they eat and how many launches are left before the shell stops opening with \"desktop welcome: Web authentication failed\". The web UI gets a draggable floating card that re-checks every 10 minutes, keeps one snapshot per local date and can refresh on demand; a standalone Windows checker ships in desktop/."
+  zh: "仅支持 Windows。数出 DSH 桌面外壳已累积的 dsh-auth-* 登录 cookie 条数，显示它们占掉 16 KiB 请求头预算的多少，以及还差几次启动就会打不开并报 \"desktop welcome: Web authentication failed\"。网页里有一张可拖动的浮窗卡片，每 10 分钟自检、每个本地日期保留一条快照，也能手动刷新；另附 desktop/ 下的独立 Windows 自查工具。"
+icon: https://raw.githubusercontent.com/3150481853/dsh-cookie-guard/main/assets/icon-180.png

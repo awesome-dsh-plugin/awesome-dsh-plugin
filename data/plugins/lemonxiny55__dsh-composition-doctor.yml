@@ -1,0 +1,6 @@
+url: https://github.com/lemonxiny55/dsh-composition-doctor
+name: lemonxiny55/dsh-composition-doctor
+category: dev
+description:
+  en: 'Explain supported DSH plugin failures with composition source paths and manual next steps: duplicate insertions, missing bundle patches and peer mismatches; standalone CLI and report viewer, read-only diagnosis offline by default, with unobserved runtime left unknown.'
+  zh: '通过组合来源路径和人工下一步解释受支持的 DSH 插件故障：重复引入、bundle patch 缺失和 peer 不匹配；提供独立 CLI 与报告查看器，默认只读离线诊断，未观察的 runtime 保留 unknown。'

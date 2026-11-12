@@ -1,0 +1,6 @@
+url: https://github.com/AngleNaris/slumberpavilion
+name: AngleNaris/slumberpavilion
+category: session
+description:
+  en: 'Slumber Pavilion physically moves archived DSH sessions out of the load path into ~/DSH-Archive, and ships archive, read, restore and delete tools for them.'
+  zh: '沉眠阁把 DSH 里已归档会话的日志与投影记录真正搬出加载路径，并提供归档、读取、还原、删除会话的工具。'

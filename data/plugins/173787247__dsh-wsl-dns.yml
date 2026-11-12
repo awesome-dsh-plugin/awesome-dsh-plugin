@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-dns
+name: 173787247/dsh-wsl-dns
+category: wsl
+description:
+  en: Compares WSL versus Windows DNS resolution for common endpoints.
+  zh: 对比 WSL 与 Windows 对常用域名的 DNS 解析结果。

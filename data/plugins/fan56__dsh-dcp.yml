@@ -1,0 +1,6 @@
+url: https://github.com/fan56/dsh-dcp
+name: fan56/dsh-dcp
+category: tools
+description:
+  en: "Deterministic context compression for dsh — zero LLM calls, rule-based pruning that preserves paths, commands, error traces, and open todos verbatim. Compresses ~80k tokens to a few hundred."
+  zh: "dsh 的确定性上下文压缩后端：零 LLM 摘要调用，基于规则剪枝，逐字保留路径/命令/报错原文/未完成 todo，约 8 万 token 压到几百。"

@@ -1,0 +1,6 @@
+url: https://github.com/Xingkong42/dsh-zh-labels
+name: Xingkong42/dsh-zh-labels
+category: ui
+description:
+  en: Re-applies Chinese UI labels to the DSH client modules on every start, so translations survive upgrades.
+  zh: 每次启动自动将 DSH 界面英文工具与状态标签修补为中文，升级 DSH 后自动恢复，无需手动改文件。

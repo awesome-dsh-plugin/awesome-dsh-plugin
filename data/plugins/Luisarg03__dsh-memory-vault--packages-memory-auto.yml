@@ -1,0 +1,6 @@
+url: https://github.com/Luisarg03/dsh-memory-vault/tree/main/packages/memory-auto
+name: Luisarg03/dsh-memory-vault#memory-auto
+category: memory
+description:
+  en: 'Session-memory autopilot: watches DSH sessions and extracts OKF entries in-process through the harness LLM (ctx.llm, deepseek-official by default) at idle, commit, compaction and end checkpoints, storing them via the vault MCP server.'
+  zh: '会话记忆自动驾驶：监听 DSH 会话，在会话结束与压缩前通过宿主 LLM（ctx.llm，默认 deepseek-official）就地抽取 OKF 条目，无需外部 API Key。'

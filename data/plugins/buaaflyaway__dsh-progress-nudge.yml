@@ -1,0 +1,6 @@
+url: https://github.com/buaaflyaway/dsh-progress-nudge
+name: buaaflyaway/dsh-progress-nudge
+category: agi
+description:
+  en: 'Counts the assistant rounds that call tools without writing anything to the user, then inserts a short progress reminder as a visible user message at the next model-request boundary, so a long silent tool loop reports what it has done before continuing. A Settings page adjusts the silence threshold (default 10), the reminder wording, the language (en / zh-CN / zh-TW), whether the reminder repeats every further threshold of silent rounds, whether subagent sessions are counted, and whether Agent Teams nudges the lead only or every member.'
+  zh: '统计「只调用工具、没有向用户输出文字」的助手轮数，在下一次模型请求的边界把一条简短的过程汇报提醒作为可见的用户消息插入，让长时间沉默的工具循环先汇报已完成的工作再继续。设置页可调整沉默阈值（默认 10）、提醒文案、文案语言（en / zh-CN / zh-TW）、是否每再积累一个阈值就再次提醒、是否统计子代理会话，以及启用智能体团队时只提醒 Lead 还是所有成员。'

@@ -1,0 +1,6 @@
+url: https://github.com/NOirBRight/dsh-llm-opencode-go
+name: NOirBRight/dsh-llm-opencode-go
+category: model
+description:
+  en: 'OpenCode Go subscription chat for DSH with per-model Completions, Responses, or Anthropic protocol selection, model discovery, context, vision and thinking metadata, effort defaults, and usage meters.'
+  zh: 'DSH 的 OpenCode Go 订阅聊天：按模型选择 Completions、Responses 或 Anthropic 协议，支持模型发现、上下文、视觉与思考元数据、effort 默认值和用量仪表。'

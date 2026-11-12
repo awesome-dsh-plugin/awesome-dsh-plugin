@@ -1,0 +1,6 @@
+url: https://github.com/universe-st/dsh-game-material-master
+name: universe-st/dsh-game-material-master
+category: tools
+description:
+  en: Generates game art from reference images via Seedream image generation and MiniMax image-to-video, assembling eight-direction sprites, sequence frames, and skeleton animations with local green-screen keying.
+  zh: 基于 Seedream 生图与 MiniMax 图生视频，从参考图生成游戏素材，本地绿幕抠像后合成八方向精灵图、序列帧与骨骼动画。

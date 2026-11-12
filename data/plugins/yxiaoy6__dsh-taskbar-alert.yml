@@ -1,0 +1,6 @@
+url: https://github.com/yxiaoy6/dsh-taskbar-alert
+name: yxiaoy6/dsh-taskbar-alert
+category: notify
+description:
+  en: Flashes the DeepSeek Harness taskbar button on Windows when an approval, a question or a plan review is waiting, or when a turn finishes.
+  zh: Windows 上审批、提问或方案确认在等你、或一轮回复完成时，让 DeepSeek Harness 的任务栏按钮闪动。

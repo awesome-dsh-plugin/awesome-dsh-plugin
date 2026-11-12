@@ -1,0 +1,6 @@
+url: https://github.com/SMPcosy/dsh-memnexus
+name: SMPcosy/dsh-memnexus
+category: memory
+description:
+  zh: "统一长期记忆中枢：自动捕获对话沉淀为 L0 原始证据，后台分层蒸馏为 L1 事实 / L2 场景 / L3 画像（层数可配），BM25+模糊混合检索召回，13 个 memory_* 工具，记忆谱系可回溯到原始记录，可选 Hindsight 云记忆后端，内置记忆管理面板（设置页、侧边栏、独立整页三入口）。"
+  en: "Unified long-term memory hub: captures turns into L0 evidence, distills in the background into L1 facts / L2 scenes / L3 profile (depth configurable), recalls via hybrid BM25+fuzzy search, ships 13 memory_* tools, traceable lineage back to source turns, optional Hindsight backend, and a built-in memory panel with three entry points."

@@ -1,0 +1,7 @@
+url: https://github.com/YaphetHayate/codeRDD/tree/master/dsh/rdd-goal-tree
+name: YaphetHayate/codeRDD#dsh-rdd-goal-tree
+category: ui
+tarball: https://github.com/YaphetHayate/codeRDD/releases/latest/download/dsh-rdd-goal-tree.tgz
+description:
+  en: 'Read-only goal-tree status strip above the composer: planners see the full node tree, workers see their claimed node, and worker reports call back to the planner session.'
+  zh: '输入框上方的只读 goal-tree 状态条：规划者看全树，Worker 只看认领节点，Worker 回报可唤醒规划者会话。'

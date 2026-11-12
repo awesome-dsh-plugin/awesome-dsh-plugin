@@ -1,0 +1,7 @@
+url: https://github.com/QIUZAIYOU/dsh-workspace-control
+name: QIUZAIYOU/dsh-workspace-control
+category: session
+description:
+  en: 'A sidebar panel that moves, rebuilds, merges, renames and deletes whole workspaces: a move re-publishes each session log with the new directory in its header, repairs the workspace record, refreshes the cached title, and every card shows whether its sessions are running or only open.'
+  zh: '侧栏里的工作区面板：迁移、重建、合并、重命名、删除整个工作区——迁移会用新目录的 header 重新发布会话日志，修复工作区归属并刷新标题缓存，每张卡片标明会话是在运行还是仅被打开。'
+icon: https://raw.githubusercontent.com/QIUZAIYOU/dsh-workspace-control/main/icon.png

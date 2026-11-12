@@ -1,0 +1,6 @@
+url: https://github.com/kongshan-zhuyu/dsh-balance-quota/tree/main/packages/dsh-balance
+name: kongshan-zhuyu/dsh-balance-quota#dsh-balance
+category: usage
+description:
+  en: Provider balance and quota status bar for DSH Web, with model capability settings, external JSON health monitoring, visual field binding, and per-model status details.
+  zh: DSH Web 的供应商余额与额度状态栏，支持模型能力设置、外部 JSON 健康监测、可视化字段绑定和逐模型状态详情。

@@ -1,0 +1,6 @@
+url: https://github.com/zengxiaolou/dsh-github-link
+name: zengxiaolou/dsh-github-link
+category: git
+description:
+  en: 'Turns GitHub, GitLab and Gitee URLs in the transcript into hover cards with cached repository metadata, and opens them in the DSH sidebar browser on click; plain URLs and GenUI blocks are covered without patching GenUI itself.'
+  zh: '把对话里的 GitHub / GitLab / Gitee 链接变成带缓存元数据的悬停卡片，点击在 DSH 右侧栏浏览器中打开；裸 URL 与 GenUI 块都覆盖，且不修改 GenUI 本体。'

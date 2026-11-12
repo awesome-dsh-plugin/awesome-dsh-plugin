@@ -1,0 +1,6 @@
+url: https://github.com/TelosmaYLX/dsh-session-notify
+name: TelosmaYLX/dsh-session-notify
+category: notify
+description:
+  en: Notifies you with a browser notification and toast whenever a session turn ends, with 5-language templates and custom presets.
+  zh: 会话轮次结束时推送浏览器系统通知与页内提示，内置 5 种语言模板与自定义预设。

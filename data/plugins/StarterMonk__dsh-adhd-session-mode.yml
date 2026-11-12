@@ -1,0 +1,6 @@
+url: https://github.com/StarterMonk/dsh-adhd-session-mode
+name: StarterMonk/dsh-adhd-session-mode
+category: skill
+description:
+  en: 'ADHD-friendly output shaping where the mode belongs to one session, not a global setting: switch it with /i-have-adhd on|off in the conversations you want shaped, and the state stays with that session. Ported from ayghri/i-have-adhd.'
+  zh: 'ADHD 友好输出塑形插件：模式属于单个会话，而不是一项全局设置——用 /i-have-adhd on|off 在你想要塑形的对话里开启/关闭功能，状态随该会话保留。移植自 ayghri/i-have-adhd。'

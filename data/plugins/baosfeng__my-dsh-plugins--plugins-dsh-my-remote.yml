@@ -1,0 +1,6 @@
+url: https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-my-remote
+name: baosfeng/my-dsh-plugins#dsh-my-remote
+category: remote
+description:
+  en: 'Remote control: pushes ask / approval / session-end events to an external channel webhook and lets you answer, approve, query status or continue a session from your phone with token auth (npm: `dsh-my-remote`).'
+  zh: '远程控制：把 ask / 审批 / 会话结束事件推送到外部通道 webhook，可用 token 鉴权在手机上回答问题、批准请求、查询状态或继续会话（npm: `dsh-my-remote`）。'

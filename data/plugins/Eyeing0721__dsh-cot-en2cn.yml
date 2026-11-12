@@ -1,0 +1,6 @@
+url: https://github.com/Eyeing0721/dsh-cot-en2cn
+name: Eyeing0721/dsh-cot-en2cn
+category: ui
+description:
+  en: 'Shows a Chinese translation under each English thinking block in the DSH web chat, without modifying the session transcript; per-chunk caching, a configurable translation model, and a settings panel.'
+  zh: '在 DSH 网页对话里把每段英文思考的中文译文显示在原文正下方，不改动会话记录；按译文块缓存、可指定翻译模型，并带设置面板。'

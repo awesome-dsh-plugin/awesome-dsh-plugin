@@ -1,0 +1,7 @@
+url: https://github.com/JiuRiWu/dsh-restart
+name: JiuRiWu/dsh-restart
+category: ui
+icon: https://raw.githubusercontent.com/JiuRiWu/dsh-restart/main/icon.png
+description:
+  en: 'Adds a Restart button to the DSH Desktop sidebar. It opens the same native confirmation dialog as the tray Exit item and, once approved, shuts the app down gracefully and relaunches it. This plugin only draws the button: it also needs the companion shell patch shipped in shell-patch/ in the same repository, which has to be applied from outside DSH while the app is closed. Installed on its own, the button stays disabled and a tooltip explains why. The companion shell patch is Windows only and rewrites the installed app.asar.'
+  zh: '给 DSH Desktop 侧边栏底部加一个「重启」按钮：弹出与托盘「退出 DeepSeek Harness」完全相同的原生确认框，确认后优雅关闭并重新拉起。注意：本插件只负责画这个按钮，必须同时应用同一仓库 shell-patch/ 里的外壳补丁，且该补丁要在 DSH 关闭时由 DSH 之外的脚本执行。单独安装插件时按钮为禁用状态，悬停提示会说明原因。配套外壳补丁仅支持 Windows，会改写已安装的 app.asar。'

@@ -1,0 +1,6 @@
+url: https://github.com/CAI-MH/dsh-plugin-forge
+name: CAI-MH/dsh-plugin-forge
+category: dev
+description:
+  en: 'Scaffold DSH local bundles in the dph format from any workspace and keep a pitfall experience library to steer later development.'
+  zh: '在任意工作区按 dph 格式脚手架 DSH 本地插件，并维护踩坑经验库持续修正开发。'

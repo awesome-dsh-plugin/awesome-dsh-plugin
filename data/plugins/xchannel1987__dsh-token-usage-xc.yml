@@ -1,0 +1,6 @@
+url: https://github.com/xchannel1987/dsh-token-usage-xc
+name: xchannel1987/dsh-token-usage-xc
+category: usage
+description:
+  en: "Token usage statistics plugin for DeepSeek Harness - today's token consumption by model, cache hit rate, 7-day trend chart, optional header badge, persistent storage with auto cleanup."
+  zh: "DSH Token 用量统计插件 - 今日 Token 用量按模型分桶、缓存命中率、7 日趋势图、可选顶栏徽标、持久化存储自动清理。"

@@ -1,0 +1,6 @@
+url: https://github.com/log-li/dsh-peakrate
+name: log-li/dsh-peakrate
+category: model
+description:
+  en: 'Peak / off-peak rate badges for the model selector (every row) and the composer tool row, judged per provider by its own time zone and schedule; the live catalog is served from the host over a fenced route.'
+  zh: '为模型选择器（每一行）与 composer 工具行显示峰谷倍率，按每个 provider 自己的时区与时段规则判定；实时目录由 host 经带信任围栏的路由下发。'

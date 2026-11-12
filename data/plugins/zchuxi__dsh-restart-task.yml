@@ -1,0 +1,6 @@
+url: https://github.com/zchuxi/dsh-restart-task
+name: zchuxi/dsh-restart-task
+category: session
+description:
+  en: 'Recovers broken DSH turns: widens the product''s own retry budget and renders the wait as a live countdown inside the same step, keeps a truncated output alive inside the same turn, and can open an opt-in continuation round when a turn has already ended; while the composer is empty it hands the send button to that continuation.'
+  zh: '修复被打断的 DSH 回合：放大产品自带的重试预算并把等待渲染成同一步内的实时倒计时，输出被截断时在同一轮内续写，回合已结束时可选地新开一轮继续；输入框为空时把「继续」交给发送键。'

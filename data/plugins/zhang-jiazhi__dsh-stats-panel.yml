@@ -1,0 +1,6 @@
+url: https://github.com/zhang-jiazhi/dsh-stats-panel
+name: zhang-jiazhi/dsh-stats-panel
+category: usage
+description:
+  en: "Token usage statistics for DeepSeek Harness. Per-channel usage with balances and plan quotas for mainstream providers, CNY cost estimates, and daily charts — a settings-sidebar section."
+  zh: "DeepSeek Harness Token 用量统计。按渠道区分统计，官方渠道自动显示余额，套餐渠道显示 5 小时/7 天/30 天用量余量，人民币计费估算，含每日图表与模型分布，集成在设置页侧边菜单。"

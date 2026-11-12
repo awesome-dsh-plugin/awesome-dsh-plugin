@@ -1,0 +1,7 @@
+url: https://github.com/xuedipiaofei/dsh-drawio-chat
+name: xuedipiaofei/dsh-drawio-chat
+category: tools
+description:
+  en: "Draw.io in chat: describe it, get an interactive diagram in the transcript; 12 Chinese scenario templates; keep editing or undo the same .drawio file; right-sidebar preview. No account, no MCP server, no editor."
+  zh: "聊天里画 draw.io：说一句需求，对话里直接出可交互图表；内置 12 个中文场景模板；可继续改图、撤销同一个 .drawio 文件；右侧栏预览不再是 XML。不登录 draw.io、不需要 MCP server、不用装编辑器。"
+icon: https://raw.githubusercontent.com/xuedipiaofei/dsh-drawio-chat/main/assets/icon-512.png

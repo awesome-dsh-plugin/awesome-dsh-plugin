@@ -1,0 +1,8 @@
+url: https://github.com/Xingkong42/dsh-inputbox-game
+name: Xingkong42/dsh-inputbox-game
+category: fun
+description:
+  en: 'Turns the chat composer into an auto-playing mini-game arcade while a task runs — snake, pong, flappy, ecology, horse race, runner, number rush and maze all play themselves with no input; focusing the composer restores the normal editor.'
+  zh: '任务运行期间把对话输入框变成自动运行的小游戏娱乐场：贪吃蛇、乒乓、小鸟、生态箱、赛马、跳跃跑酷、数值跑酷、走迷宫八款游戏全自动操作，人只管看；点击输入框之外开始游戏，点击输入框即恢复正常编辑。'
+icon: https://raw.githubusercontent.com/Xingkong42/dsh-inputbox-game/main/assets/icon-180.png
+tarball: https://github.com/Xingkong42/dsh-inputbox-game/releases/download/v0.2.10/dsh-inputbox-game-0.2.10.tgz

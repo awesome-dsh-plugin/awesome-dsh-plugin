@@ -1,0 +1,6 @@
+url: https://github.com/lvxianchao/dsh-web-guard
+name: lvxianchao/dsh-web-guard
+category: security
+description:
+  en: Password gate for the DeepSeek Harness Web UI that also removes the 403 a reverse proxy causes, with revocable sessions, an admin page and zero dependencies.
+  zh: 给 DSH Web UI 加密码登录，同时修掉反向代理导致的 403，带可吊销会话、管理页和零依赖。

@@ -1,0 +1,6 @@
+url: https://github.com/danshuyue/dsh-agent-soul
+name: danshuyue/dsh-agent-soul
+category: memory
+description:
+  en: 'Adds personality injection, a decaying memory card, a mood state and a daily diary so the agent keeps identity and history across sessions.'
+  zh: '给 agent 加人格注入、会衰减的记忆卡、心情状态和每日日记，让它跨会话保留身份和历史。'

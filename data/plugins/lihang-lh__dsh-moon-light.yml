@@ -1,0 +1,6 @@
+url: https://github.com/lihang-lh/dsh-moon-light
+name: lihang-lh/dsh-moon-light
+category: ui
+description:
+  en: 'A marquee mood-light ring around the DSH web UI edge that reacts to session state, turning green while the agent works, pink when done, and yellow when something needs attention, with colors, ring width, rotation speed, and flash frequency configurable from the settings panel.'
+  zh: DSH Web 界面边缘的跑马灯氛围光环：随会话状态自动变色（运行中绿色流动、完成粉色、有待处理黄色警告），设置面板可调颜色、光圈宽度、转速与闪动频率。

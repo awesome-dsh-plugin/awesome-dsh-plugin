@@ -1,0 +1,7 @@
+url: https://github.com/PILIHU2022/dsh-proxy-failover
+name: PILIHU2022/dsh-proxy-failover
+category: browser
+description:
+  en: "Loopback relay as DSH's process-wide proxy route: web_fetch works under TUN fake-ip; a dead proxy gets same-request direct fallback, and a probe switches back."
+  zh: "把回环 HTTP 中继设为 DSH 的进程级代理路由，让 web_fetch 在 Mihomo/Clash TUN fake-ip 下正常出网；上游代理不可用时，同一请求内改走直连，1.5 秒探活发现代理恢复后自动切回。"
+icon: https://raw.githubusercontent.com/PILIHU2022/dsh-proxy-failover/main/assets/icon-180.png

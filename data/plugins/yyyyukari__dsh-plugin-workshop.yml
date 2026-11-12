@@ -1,0 +1,6 @@
+url: https://github.com/yyyyukari/dsh-plugin-workshop
+name: yyyyukari/dsh-plugin-workshop
+category: market
+description:
+  en: 'Steam Workshop-style in-app plugin browser: search, hot/newest/trending (7/30/90-day) sorting, Chinese keyword mapping, bilingual descriptions and README translation, plugin-signature filtering, and one-click install/update.'
+  zh: 创意工坊式插件浏览器：侧栏常驻入口，搜索/最热/最新/近 7-90 天飙升榜、中文关键词映射、描述与 README 机翻、插件特征验证过滤、一键安装/更新。

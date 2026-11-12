@@ -1,0 +1,7 @@
+url: https://github.com/BrianHIO-x/dsh-think-expand
+name: BrianHIO-x/dsh-think-expand
+category: ui
+description:
+  en: Keeps manually opened Think rows expanded by default, with a per-session switch to open or close every Think row; tool cards stay collapsed and state resets on page reload.
+  zh: 手动点开的 Think 默认保持展开，并提供每会话开关批量展开或收起全部思考；工具卡保持折叠，状态随页面刷新重置。
+tarball: https://github.com/BrianHIO-x/dsh-think-expand/releases/latest/download/dsh-think-expand.tgz

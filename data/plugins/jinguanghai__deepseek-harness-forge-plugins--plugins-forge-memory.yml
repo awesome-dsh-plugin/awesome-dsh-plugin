@@ -1,0 +1,6 @@
+url: https://github.com/jinguanghai/deepseek-harness-forge-plugins/tree/main/plugins/forge-memory
+name: jinguanghai/deepseek-harness-forge-plugins#forge-memory
+category: memory
+description:
+  en: BM25 keyword-based memory recall.
+  zh: 基于 BM25 关键词检索的记忆召回。

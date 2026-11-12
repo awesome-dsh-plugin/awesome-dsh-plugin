@@ -1,0 +1,6 @@
+url: https://github.com/lloggc-Dante/dsh-conversation-manager
+name: lloggc-Dante/dsh-conversation-manager
+category: session
+description:
+  en: 'Adds a red delete row to the sidebar session menu, plus a multi-select delete that confirms before running, and permanently removes the stored data behind a conversation — session directory and log, projection-cache record, workspace membership and pin.'
+  zh: '在侧栏会话菜单加入红色「删除对话」，并支持多选批量删除（二次确认），永久清除对话的磁盘数据——会话目录与日志、投影缓存记录、工作区归属与置顶。'

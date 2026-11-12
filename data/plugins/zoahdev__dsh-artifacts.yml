@@ -1,0 +1,6 @@
+url: https://github.com/zoahdev/dsh-artifacts
+name: zoahdev/dsh-artifacts
+category: tools
+description:
+  en: Render Markdown + JSON into self-contained HTML documents, cards, dashboards, and galleries (CLI + artifact_render tool).
+  zh: 把 Markdown + JSON 渲染成自包含 HTML 文档/卡片/仪表盘/画廊（CLI + 内置 artifact_render 工具）。

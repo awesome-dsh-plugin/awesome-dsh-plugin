@@ -1,0 +1,6 @@
+url: https://github.com/oxlyn/dsh-model-health
+name: oxlyn/dsh-model-health
+category: model
+description:
+  en: 'Model Health panel in Settings: lists every model configured in settings.yaml and batch-tests availability and latency for each.'
+  zh: 设置页「模型健康」面板：列出 settings.yaml 配置的全部模型，一键批量测试可用性与延迟。

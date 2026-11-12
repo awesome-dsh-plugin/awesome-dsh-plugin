@@ -1,0 +1,7 @@
+url: https://github.com/zzsszz1122/dsh-agnes-media
+name: zzsszz1122/dsh-agnes-media
+category: vision
+description:
+  en: 'Sidebar panel for Agnes image and video generation that also ships a node canvas and a short-drama mode. Canvas nodes are chained by extracting the previous shot''s tail frame with ffmpeg and submitting it as the next shot''s first frame; short-drama mode turns an imported script into storyboard shots. Generation and polling run in the Host process, so tasks survive a page reload or a closed panel, and results plus an 80-entry history are stored on disk.'
+  zh: '侧边栏 AI 创作面板，除生图与生视频外还带画布节点图和短剧模式：画布上用 ffmpeg 抽取上一镜尾帧，作为下一镜首帧自动串联；短剧模式可导入剧本拆解为分镜。生成与轮询都在宿主进程后台执行，刷新页面或关闭面板都不中断，结果与最多 80 条历史保存在本机。'
+icon: https://raw.githubusercontent.com/zzsszz1122/dsh-agnes-media/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/Pappet/dsh-tool-imagegen
+name: Pappet/dsh-tool-imagegen
+category: tools
+description:
+  en: "Text-to-image and image-to-image generation via OpenRouter's unified Image API: configurable model aliases with parameters gated against the live model capability listing, reference-image inputs, a settings card, and inline chat display of results."
+  zh: "通过 OpenRouter 统一 Image API 的文生图与图生图：以别名配置模型，参数按实时模型能力列表校验，支持参考图输入、设置卡片与对话内联展示结果。"

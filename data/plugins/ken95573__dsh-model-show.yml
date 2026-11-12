@@ -1,0 +1,6 @@
+url: https://github.com/ken95573/dsh-model-show
+name: ken95573/dsh-model-show
+category: model
+description:
+  en: 'Shows Provider/Model in the DSH Web composer model selector trigger; the dropdown list and its search are unchanged.'
+  zh: 'DSH Web 对话框模型选择器的触发器显示「供应商/模型」；下拉列表与其搜索均不变。'

@@ -1,0 +1,6 @@
+url: https://github.com/xingxue-ux/dsh-reverse-mode
+name: xingxue-ux/dsh-reverse-mode
+category: tools
+description:
+  en: 'Reverse-engineering agent preset. Mounts REA (rea-agents) as MCP tools for native binaries, JavaScript/Electron apps, managed assemblies, archives and installers — the full 170-tool catalog by default — but only inside sessions that select the preset; other presets load nothing. Ships an install-time check that reports which native analysis engine (Hopper, Ghidra, IDA) is present and prints the env snippet to wire one in. A fork of dsh-rea (JeremyWangCY, MIT) retargeted as an agent preset; do not install it together with dsh-rea.'
+  zh: '逆向工程 agent 预设。把 REA（rea-agents）的原生二进制、JavaScript/Electron、托管程序集、归档与安装包分析能力作为 MCP 工具挂载——默认全量 170 个——但只在选择该预设的会话里生效，其它预设零加载。附带安装后环境自检：报告本机已装哪个原生分析引擎（Hopper / Ghidra / IDA），并给出接入所需的 env 片段。本插件是 dsh-rea（JeremyWangCY，MIT）的二次开发分支，改为 agent 预设，请勿与上游 dsh-rea 同时安装。'

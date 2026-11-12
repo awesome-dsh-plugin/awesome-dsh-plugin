@@ -1,0 +1,6 @@
+url: https://github.com/EIGHTfs/dsh-skill-scoreboard
+name: EIGHTfs/dsh-skill-scoreboard
+category: skill
+description:
+  en: 'Skill usage scoreboard for DSH: counts both per-session deduplicated and per-load usage, scores `skill` tool calls and direct `read` of skill files, and shows the tally in a three-tab settings page (skill ranking, session board, management) with paging and JSON import/export.'
+  zh: DSH 的 Skill 使用记分板：同时记录按会话去重与每次加载两种次数，统计 skill 工具调用与直接 read skill 文件两种记分来源，设置页三选项卡（Skill 排行 / 会话榜 / 管理）展示，支持分页与记分 JSON 导入导出。

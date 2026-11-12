@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-mnt
+name: 173787247/dsh-wsl-mnt
+category: wsl
+description:
+  en: Warns when the workspace path sits on slow /mnt/c.
+  zh: 当工作区路径落在缓慢的 /mnt/c 上时发出告警。

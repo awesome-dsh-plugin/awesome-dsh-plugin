@@ -1,0 +1,6 @@
+url: https://github.com/john-walks-slow/dsh-message-datetime
+name: john-walks-slow/dsh-message-datetime
+category: session
+description:
+  en: 'One-line clock context for DeepSeek Harness: a Current time timestamp reading (weekday, date, time, UTC offset, IANA timezone) opens every conversation turn and a Turn ended reading closes it, so the model always knows the time, date and idle gap across turns without asking.'
+  zh: '每轮对话开始向模型上下文注入单行时间戳读数（星期 / 日期 / 时间 / UTC 偏移 / IANA 时区），收尾再注入 Turn ended 关闭读数——模型始终知道现在几点、今天星期几、上一轮何时结束，日期运算与跨轮间隔不再靠猜；轻量时钟感知，每条约 30 token。'

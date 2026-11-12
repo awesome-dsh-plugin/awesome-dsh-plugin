@@ -1,0 +1,6 @@
+url: https://github.com/qiqibabyy/dsh-pet-desktop
+name: qiqibabyy/dsh-pet-desktop
+category: fun
+description:
+  en: 'Desktop companion pet in its own always-on-top window: imports Codex pet folders from ~/.codex/pets as-is, with affinity ranks, session-linked activity bubbles, snap-to-edge dragging, a right-click-reachable smart click-through mode and a daily token meter that mirrors the dsh-usage ledger when installed.'
+  zh: '独立置顶窗口的桌面宠物：直接导入 ~/.codex/pets 的 Codex 宠物，含亲密度段位、会话活动气泡、贴边吸附拖拽、右键可达的智能鼠标穿透；已装 dsh-usage 时自动对齐其当日 token 台账。'

@@ -1,0 +1,6 @@
+url: https://github.com/1HelloMan1/dsh-usage-dashboard-plus
+name: 1HelloMan1/dsh-usage-dashboard-plus
+category: usage
+description:
+  en: Shows DeepSeek balance and estimated daily spend, merges external vision-call JSONL records, and adds a per-session dashboard with model statistics, TTFT, cache rate, call logs, cost estimates, filters, and CSV export.
+  zh: 显示 DeepSeek 余额与今日花费估算，合并外部视觉调用 JSONL 记录，并提供含模型统计、TTFT、缓存率、调用日志、费用估算、筛选与 CSV 导出的会话看板。

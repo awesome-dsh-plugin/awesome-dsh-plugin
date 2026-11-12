@@ -1,0 +1,6 @@
+url: https://github.com/martindye/dsh-voice
+name: martindye/dsh-voice
+category: voice
+description:
+  en: 'Two-way voice for the DSH web app: dictate with the unified composer, hear replies with speaker buttons and auto-read, on any device. Needs DSH 0.1.7+, Node 22+, Python 3 with numpy and requests, a TTS model, and a microphone.'
+  zh: 'DSH Web 的双向语音：用统一输入框听写、用朗读按钮与自动朗读听回复，任意设备可用。需 DSH 0.1.7+、Node 22+、Python 3（含 numpy 与 requests）、TTS 模型与麦克风。'

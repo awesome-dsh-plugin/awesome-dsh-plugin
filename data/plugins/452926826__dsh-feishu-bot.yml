@@ -1,0 +1,6 @@
+url: https://github.com/452926826/dsh-feishu-bot
+name: 452926826/dsh-feishu-bot
+category: remote
+description:
+  en: Connect Feishu chats to DeepSeek Harness projects, conversations, replies, and scoped tool approvals over WebSocket.
+  zh: 通过 WebSocket 将飞书聊天连接到 DeepSeek Harness 的项目、对话、回复和限定范围的工具审批。

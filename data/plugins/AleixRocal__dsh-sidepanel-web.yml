@@ -1,0 +1,7 @@
+url: https://github.com/AleixRocal/dsh-sidepanel-web
+name: AleixRocal/dsh-sidepanel-web
+category: browser
+description:
+  en: 'Right-sidebar browser for DSH Web: renders public sites over CDP, local/dev pages through a same-origin proxy, emulates desktop and phone viewports, and turns element picks into chat annotations. Fork of zengxiaolou/dsh-annotate-browser (MIT), install one or the other — both add their own right-sidebar browser tab and drive a separate Chromium. Requires DSH 0.2.1-rc.2 to 0.2.x, Node.js 22.19+ and a Chromium-based browser on the host (auto-detected, or set chromePath).'
+  zh: 'DSH Web 的右侧栏浏览器：经 CDP 渲染公开网站，本地/开发页面经同源代理访问，可模拟桌面与手机视口，并把元素点选转成聊天批注。fork 自 zengxiaolou/dsh-annotate-browser（MIT），两者二选一安装——都会新增自己的右侧栏浏览器标签页并驱动各自独立的 Chromium。需要 DSH 0.2.1-rc.2 至 0.2.x、Node.js 22.19+，以及宿主机上的 Chromium 系浏览器（自动检测，或设置 chromePath）。'
+icon: https://raw.githubusercontent.com/AleixRocal/dsh-sidepanel-web/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/dongfangxy/dsh-agents-md-settings
+name: dongfangxy/dsh-agents-md-settings
+category: ui
+description:
+  en: 'Adds a Settings → General row that opens ~/.dsh/AGENTS.md in the system editor, so the instruction file can be opened without hunting for it. On Windows it launches Notepad and raises the window.'
+  zh: '在「设置 → 通用」里增加一行，用系统编辑器打开 ~/.dsh/AGENTS.md，不必再去文件管理器里翻这个指令文件；Windows 上直接拉起记事本并把窗口提到前台。'

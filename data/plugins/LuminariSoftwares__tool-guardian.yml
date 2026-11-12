@@ -1,0 +1,6 @@
+url: https://github.com/LuminariSoftwares/tool-guardian
+name: LuminariSoftwares/tool-guardian
+category: tools
+description:
+  en: 'Fronts stdio MCP servers with three router tools (list_capabilities, describe_tool, call_tool) so schemas load on demand instead of riding every request; shapes every tool result through a deterministic output ladder that archives the original first (retrieve_spill reads it back); prices tool groups in tokens and can hide built-in groups per agent. Bridges to a standard-library Python router, so Python 3.9+ is required.'
+  zh: '用三个路由工具（list_capabilities、describe_tool、call_tool）代理 stdio MCP 服务器，schema 按需加载，不再随每次请求发送；所有工具结果经过确定性输出阶梯压缩，有损处理前先归档原文（retrieve_spill 可读回）；按 token 为工具分组标价，并可按 agent 隐藏内置分组。桥接到纯标准库的 Python 路由器，需要 Python 3.9+。'

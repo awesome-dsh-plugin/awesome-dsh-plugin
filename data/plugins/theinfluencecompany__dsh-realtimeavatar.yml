@@ -1,0 +1,6 @@
+url: https://github.com/theinfluencecompany/dsh-realtimeavatar
+name: theinfluencecompany/dsh-realtimeavatar
+category: tools
+description:
+  en: 'Realtime Avatar (realtimeavatar.ai) for agents: the developer API key held by the harness credentials store, the public docs as five on-demand skills, rta_* tools over the public REST API (balance, avatars, clips, sessions, usage) with approval-gated credit spending, and a /rta command that walks a developer from no key to a live avatar call.'
+  zh: 'Realtime Avatar（realtimeavatar.ai）实时数字人工具：开发者 API key 由 harness 凭据存储保管，公开文档打包为五个按需加载的技能，rta_* 工具封装公开 REST API（余额、数字人、动作片段、会话、用量），消耗额度的操作需审批，/rta 命令引导开发者从零到一次真实的数字人通话。'

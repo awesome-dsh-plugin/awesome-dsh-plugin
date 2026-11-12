@@ -1,0 +1,6 @@
+url: https://github.com/a903067276-rgb/dsh-file-mentions
+name: a903067276-rgb/dsh-file-mentions
+category: ui
+description:
+  en: 'Clickable file paths in DSH replies: Codex-style inline open, reveal in file manager, and a mentioned-files chip list at the turn tail.'
+  zh: DSH 回复中的文件路径可点击：Codex 风格行内打开、文件管理器定位、回合尾部文件 chip 列表。

@@ -1,0 +1,6 @@
+url: https://github.com/Noob-stupid/dsh-connection-card-host
+name: Noob-stupid/dsh-connection-card-host
+category: session
+description:
+  en: 'Makes a connection between two DSH sessions a first-class object: drag from the composer anchor or a session row to open one, set a permission in each direction, and mount cards on it. Each end gets five host tools for messaging at a chosen urgency, reading the peer work state, and sharing a convention box; awareness is pull-based, so an idle connection costs no context.'
+  zh: '把两个 DSH 会话之间的「连接」做成一等对象：从输入框锚点或会话行拖拽建连，两个方向各自设权限，并可在连接上装载卡片。两端各获得五个宿主工具，用于按指定紧急度传话、读取对端工作状态、共用公约盒；感知为拉取式，空闲连接不占上下文。'

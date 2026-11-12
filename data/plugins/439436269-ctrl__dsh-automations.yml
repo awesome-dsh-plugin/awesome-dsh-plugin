@@ -1,0 +1,6 @@
+url: https://github.com/439436269-ctrl/dsh-automations
+name: 439436269-ctrl/dsh-automations
+category: tools
+description:
+  en: 'Runs a local command, an HTTP request or a log entry on DSH lifecycle events (startup, session start/idle/end, user messages, tool results) or on a daily or interval schedule; a left-rail panel and five agent tools manage the same rule set.'
+  zh: '在 DSH 启动、会话开始/空闲/结束、收到消息、工具执行后，或按每天/固定间隔，自动执行本机命令、发 HTTP 请求或写一条日志；左侧栏面板与五个 agent 工具管理同一批规则。'

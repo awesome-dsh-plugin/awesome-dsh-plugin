@@ -1,0 +1,6 @@
+url: https://github.com/ozjxnxh/dsh-session-trash
+name: ozjxnxh/dsh-session-trash
+category: session
+description:
+  en: "Adds delete and multi-select batch delete to the sidebar session menu, removing session chat logs with an automatic backup and one-click undo while leaving workspace files untouched."
+  zh: "在侧栏会话菜单新增删除与多选批量删除，连聊天记录一起删除（删前自动备份、可一键撤销），不改动工作区项目文件。"

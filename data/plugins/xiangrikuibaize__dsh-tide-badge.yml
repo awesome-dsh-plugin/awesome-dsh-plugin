@@ -1,0 +1,6 @@
+url: https://github.com/xiangrikuibaize/dsh-tide-badge
+name: xiangrikuibaize/dsh-tide-badge
+category: usage
+description:
+  en: 'Billing-period and balance pill under the DSH composer: it shows the account balance and the current conversation cost alongside the peak/off-peak state and a countdown to the next switch. The peak/off-peak rules cover China statutory holidays and weekends, and the conversation cost is measured as the decrease in account balance between the plugin''s 60-second idle balance refreshes.'
+  zh: 'DSH 输入框下方的计费时段与余额药丸：常显账户余额与本次对话花费，并显示峰价/谷价档位与距下次切换的倒计时。峰谷判定含中国法定节假日与周末；本次对话花费按余额差值记账，采样点是插件自带的「对话停止满一分钟后刷新余额」。'

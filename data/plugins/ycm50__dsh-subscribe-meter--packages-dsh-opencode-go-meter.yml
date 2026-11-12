@@ -1,0 +1,6 @@
+url: https://github.com/ycm50/dsh-subscribe-meter/tree/main/packages/dsh-opencode-go-meter
+name: ycm50/dsh-subscribe-meter#dsh-opencode-go-meter
+category: usage
+description:
+  en: 'Session cost meter forked from dsh-cost-meter, retargeted at OpenCode Go: per-session and per-day cost, a 90+ model price catalog with automatic matching, OpenCode Go subscription usage as rolling 5-hour / weekly / monthly percentages with progress bars, Coding Plan quotas, provider balances, peak/off-peak pricing notices, bilingual UI. It provides service:cost-meter like Han-1413141/dsh-cost-meter and the other dsh-subscribe-meter variants, so install only one cost meter: it replaces dsh-cost-meter rather than running alongside it.'
+  zh: 'dsh-cost-meter 的 OpenCode Go 定制版：本会话与当日费用、内置 90+ 模型价格目录与自动匹配、OpenCode Go 订阅用量（滚动 5 小时 / 本周 / 本月百分比 + 进度条）、Coding Plan 额度、自定义 Provider 余额、峰谷计价提醒，界面中英双语。 它与 Han-1413141/dsh-cost-meter 及同仓库其它变体提供同一个 service:cost-meter，只能装一个费用统计插件：本条目替代 dsh-cost-meter 安装，不能与上游同装。'

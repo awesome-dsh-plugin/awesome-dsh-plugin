@@ -1,0 +1,6 @@
+url: https://github.com/ozanstn1-stack/dsh-drive-backup
+name: ozanstn1-stack/dsh-drive-backup
+category: tools
+description:
+  en: 'Rclone backup tooling with four tools: target inventory, local/remote status, rclone check verification, and approved copy/sync transfers with dry-run previews and an audit line. Requires rclone installed and a remote configured with `rclone config`; the plugin never reads the rclone config or credentials.'
+  zh: '基于 rclone 的备份工具，含四个工具：目标清单、本地/远端状态、rclone check 校验，以及带预演与审计行的审批式 copy/sync 传输。需已安装 rclone 并用 `rclone config` 配好远端；插件不读取 rclone 配置或凭据。'

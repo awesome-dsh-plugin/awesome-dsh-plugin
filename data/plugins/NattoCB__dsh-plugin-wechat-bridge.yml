@@ -1,0 +1,6 @@
+url: https://github.com/NattoCB/dsh-plugin-wechat-bridge
+name: NattoCB/dsh-plugin-wechat-bridge
+category: remote
+description:
+  en: Bridges WeChat (ilink bot) private chats into DSH agent sessions and streams replies back, with hot-plug and a Settings tab.
+  zh: 把微信私聊桥接进 DSH agent 会话并流式回传回复，支持热插拔与设置页签。

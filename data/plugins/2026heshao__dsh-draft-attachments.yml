@@ -1,0 +1,6 @@
+url: https://github.com/2026heshao/dsh-draft-attachments
+name: 2026heshao/dsh-draft-attachments
+category: ui
+description:
+  en: 'Persists unsent composer attachments per session, so images and files pasted into the input box survive page switches, conversation switches and app restarts: the bytes are mirrored in IndexedDB and handed back through the official createDrafts/addAttachments channel, and are dropped as soon as the message is sent or you remove them.'
+  zh: '按会话持久化输入框中尚未发送的附件：切页、切换会话乃至重启应用后回到该会话，草稿图片与文件会经官方 createDrafts/addAttachments 通道自动恢复；消息发出或手动移除后不会再出现。'

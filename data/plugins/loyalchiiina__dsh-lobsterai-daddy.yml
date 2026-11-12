@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-lobsterai-daddy
+name: loyalchiiina/dsh-lobsterai-daddy
+category: ui
+description:
+  en: 'Bridges LobsterAI (Youdao Lobster) into DSH: its free daily check-in credits become usable inside DeepSeek Harness, so conversations, workflows and skill packs run on those credits. Requires the LobsterAI desktop app (Windows); new-account login and gateway sync need the separate LobsterDaddy console (not in this repo). Unmaintained since 2026-10-21.'
+  zh: '把 LobsterAI（有道龙虾）桥接进 DSH：免费签到积分直接接进 DSH 对话，用这些额度跑对话、工作流与技能包。需 LobsterAI 桌面端（Windows）；登录新账号与同步网关需另装 LobsterDaddy 控制台（不在本仓库）。作者已于 2026-10-21 停止维护。'

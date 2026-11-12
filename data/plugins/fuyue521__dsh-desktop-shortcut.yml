@@ -1,0 +1,6 @@
+url: https://github.com/fuyue521/dsh-desktop-shortcut
+name: fuyue521/dsh-desktop-shortcut
+category: dev
+description:
+  en: 'Windows desktop shortcut for dsh web: launches the server, auto-opens the browser when ready, and stops the service when the Harness window closes.'
+  zh: Windows 桌面快捷方式：一键启动 dsh web，就绪后自动打开浏览器，关闭 Harness 窗口即停服务。

@@ -1,0 +1,6 @@
+url: https://github.com/AbnerAI/dsh-monitor
+name: AbnerAI/dsh-monitor
+category: tools
+description:
+  en: Persistent background watchers that wake the agent on new messages (file inbox or command-output delta) — the harness analog of Claude Code's Monitor tool.
+  zh: 常驻后台监视器：文件收件箱（NDJSON）或命令输出增量一到就唤醒 agent，相当于 Claude Code Monitor 工具的 Harness 实现。

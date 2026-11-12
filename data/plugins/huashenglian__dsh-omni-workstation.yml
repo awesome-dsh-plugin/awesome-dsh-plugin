@@ -1,0 +1,6 @@
+url: https://github.com/huashenglian/dsh-omni-workstation
+name: huashenglian/dsh-omni-workstation
+category: vision
+description:
+  en: 'Omni-modal workstation for DSH: analyze_image over an ordered multi-card VLM failover chain, a six-tool vision toolkit (zoom, colour sampling, pixel diff, OCR, element detection, inline display) sharing the same image resolver, generate_image over OpenAI/DashScope/ComfyUI protocols, multi-card async generate_video with a /build-video-tool builder, and speak/clone_voice TTS over seven providers, all driven by one auto-saving settings page.'
+  zh: '面向 DSH 的全模态工作站：analyze_image 走有序多卡片 VLM 故障转移链；六个视觉工具箱工具（局部放大、色调采样、像素比对、OCR、元素检测、内联展示）共用同一套图片来源解析；generate_image 支持 OpenAI/DashScope/ComfyUI 协议；多卡片异步 generate_video 配 /build-video-tool 构建器；speak/clone_voice 语音合成覆盖七家供应商；全部由一个自动保存的设置页驱动。'

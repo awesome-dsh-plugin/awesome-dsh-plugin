@@ -1,0 +1,6 @@
+url: https://github.com/Firefox2100/dsh-rws-tarot/tree/main/packages/tarot
+name: Firefox2100/dsh-rws-tarot#tarot
+category: fun
+description:
+  en: Rider-Waite-Smith tarot for DSH with a right-dock table for the Celtic Cross, Waite's alternative and thirty-five-card methods, plain draws, and three- or nine-card layouts; the plugin handles drawing and placement, then turns each card into the conversation for model interpretation from Waite's Pictorial Key.
+  zh: DSH 的莱德-韦特-史密斯塔罗牌插件，在右侧栏提供凯尔特十字、韦特的替代与三十五张牌方法、普通抽牌以及三张牌和九张牌布局；插件负责抽牌与摆放，再将每张翻开的牌逐轮送入对话，由模型依据韦特《塔罗图解》进行解读。

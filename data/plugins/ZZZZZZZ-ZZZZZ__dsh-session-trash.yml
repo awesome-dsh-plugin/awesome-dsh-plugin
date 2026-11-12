@@ -1,0 +1,6 @@
+url: https://github.com/ZZZZZZZ-ZZZZZ/dsh-session-trash
+name: ZZZZZZZ-ZZZZZ/dsh-session-trash
+category: session
+description:
+  en: "Session trash: move conversations to a trash instead of deleting them, restore them, or delete them permanently after a second confirmation; a session opened in this run is hidden and moved at the next start."
+  zh: "会话回收站：把对话移到回收站而不是直接删除，可以恢复，或再次确认后永久删除；本次启动中打开过的会话先隐藏，下次启动时再移入。"

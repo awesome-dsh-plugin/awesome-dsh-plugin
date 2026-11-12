@@ -1,0 +1,6 @@
+url: https://github.com/dadazhangn/dsh-prompt-snippets
+name: dadazhangn/dsh-prompt-snippets
+category: ui
+description:
+  en: 'Save reusable prompt snippets with categories and {{placeholders}}; manage them with /snippet commands (add, list, rm, optimize) and insert into the composer from a draggable dock panel, with one-click AI refinement through the default model.'
+  zh: '保存带分类与 {{占位符}} 的可复用提示词片段：用 /snippet 命令（add/list/rm/optimize）管理，从输入框下方可拖拽面板一键插入草稿，并支持用默认模型一键 AI 优化。'

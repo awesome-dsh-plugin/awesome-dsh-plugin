@@ -1,0 +1,6 @@
+url: https://github.com/EPCN-fla/dsh-custom-headers
+name: EPCN-fla/dsh-custom-headers
+category: tools
+description:
+  en: Adds configurable HTTP header profiles that can be selected per model.
+  zh: 添加可配置的 HTTP 请求头配置档，并支持按模型选择。

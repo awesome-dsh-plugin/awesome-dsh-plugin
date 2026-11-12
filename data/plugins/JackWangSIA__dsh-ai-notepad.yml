@@ -1,0 +1,8 @@
+url: https://github.com/JackWangSIA/dsh-ai-notepad
+name: JackWangSIA/dsh-ai-notepad
+category: docs
+description:
+  en: "AI-native text editor for DeepSeek Harness: tabs, encoding-safe saves, selection/document AI with diff review, Markdown preview, and Windows file associations."
+  zh: "DSH 的 AI 原生文本编辑器：多标签、编码保留、选区/全文 AI 与 Diff 审阅、Markdown 预览及 Windows 文件关联。"
+icon: https://raw.githubusercontent.com/JackWangSIA/dsh-ai-notepad/main/assets/icon-180.png
+tarball: https://github.com/JackWangSIA/dsh-ai-notepad/releases/latest/download/dsh-ai-notepad.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/WhXcjm/dsh-cost-bar
+name: WhXcjm/dsh-cost-bar
+category: usage
+description:
+  en: "Cost pill at the right end of the composer stats row, showing the estimated cost of the current turn and the session total; clicking it opens a two-column panel with input, cache and output spend for the turn and the session, dialogue turns, today's and lifetime spend, and this session's cache-hit rate and cache saving. Rates follow the official DeepSeek price table including peak pricing (double on weekdays 09:00–12:00 and 14:00–18:00 Beijing time, statutory holidays excluded), each message is priced at the time it settled, and prices.json reloads without a restart."
+  zh: "位于输入框统计行右端的成本胶囊，显示估算的本轮费用与会话总费用；点开后是双栏面板，列出本轮与本会话的输入、缓存、输出支出，对话轮数，今日与总计支出，以及本会话缓存命中率和缓存节省。价格取自 DeepSeek 官方价目表并含峰时计价（北京时间工作日 09:00–12:00、14:00–18:00 加倍，法定节假日除外），每条消息按结算时刻取价，prices.json 改动后无需重启即可生效。"
+icon: https://raw.githubusercontent.com/WhXcjm/dsh-cost-bar/main/design/icon.png

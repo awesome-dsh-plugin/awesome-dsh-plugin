@@ -1,0 +1,6 @@
+url: https://github.com/shaobeichen/dsh-pocket
+name: shaobeichen/dsh-pocket
+category: notify
+description:
+  en: 'Remote phone access to the DSH Web UI: scan a QR code for LAN or public (cloudflared tunnel) access with real-time sync, a mobile-adaptive layout, and a settings tab.'
+  zh: 手机远程访问 DSH Web 界面：扫码即用局域网或公网（cloudflared 隧道）访问，实时同屏、移动端适配布局，带设置页管理。

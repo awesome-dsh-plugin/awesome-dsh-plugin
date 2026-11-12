@@ -1,0 +1,6 @@
+url: https://github.com/EugeneVl/dsh_session_folders
+name: EugeneVl/dsh_session_folders
+category: ui
+description:
+  en: One-level session folders for the web sidebar - group sessions per workspace, move them by drag-and-drop or context menu, archive and restore, server-side persistence.
+  zh: 为网页侧边栏提供单层会话文件夹——按工作区分组会话，支持拖拽或右键菜单移动、归档与恢复，数据在服务端持久化。

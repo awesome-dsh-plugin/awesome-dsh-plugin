@@ -1,0 +1,6 @@
+url: https://github.com/shimingming520/dsh-conversation-process-collapse
+name: shimingming520/dsh-conversation-process-collapse
+category: ui
+description:
+  en: Collapses each settled turn's process rows into one expandable disclosure in the DeepSeek Harness Web conversation while keeping the final answer visible.
+  zh: 将 DeepSeek Harness Web 对话中已结束回合的过程行折叠成一个可展开的总结，同时保留最终答案可见。

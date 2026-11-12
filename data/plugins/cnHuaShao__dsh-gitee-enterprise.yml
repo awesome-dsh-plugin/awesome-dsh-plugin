@@ -1,0 +1,6 @@
+url: https://github.com/cnHuaShao/dsh-gitee-enterprise
+name: cnHuaShao/dsh-gitee-enterprise
+category: git
+description:
+  en: 'Gitee Enterprise work-item workbench in the Harness sidebar: browse projects and tasks, requirements, and bugs; inspect details, child tasks, comments, and Markdown; create or edit work items; and reference them with @.'
+  zh: '在 Harness 侧栏提供 Gitee 企业版工作台：浏览项目及任务、需求、缺陷，查看详情、子任务、评论与 Markdown，支持新建或编辑工作项，并可通过 @ 引用。'

@@ -1,0 +1,14 @@
+url: https://github.com/QXingYShu/dsh-comfyui-image
+name: QXingYShu/dsh-comfyui-image
+category: vision
+description:
+  en: "Generate images from the agent on the user's own GPU by queueing a
+    workflow on a local ComfyUI install over its HTTP API: Z-Image-Turbo for
+    fast drafts and Qwen-Image-2.1 for final assets and legible in-image text.
+    Registers comfyui_generate and comfyui_status plus a skill covering model
+    selection and prompt craft, has no runtime dependencies, and starts
+    ComfyUI headless when no server is listening."
+  zh: "通过本地 ComfyUI 的 HTTP 接口把工作流排到用户自己的 GPU 上，由 Agent
+    直接生图：Z-Image-Turbo 适合快速草稿，Qwen-Image-2.1 适合成图与图中文字排版。
+    注册 comfyui_generate、comfyui_status 两个工具和一个涵盖模型选择与提示词
+    写法的 skill，无运行时依赖；没有 ComfyUI 在跑时会自动 headless 启动一个。"

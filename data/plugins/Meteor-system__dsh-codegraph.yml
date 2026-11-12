@@ -1,0 +1,6 @@
+url: https://github.com/Meteor-system/dsh-codegraph
+name: Meteor-system/dsh-codegraph
+category: tools
+description:
+  en: Indexes the current workspace into a relation graph and exposes one agent tool, codegraph_explore, for reachability, callers, and impact, plus a Web sidebar graph pane.
+  zh: 将当前工作区索引为关系图，向 agent 暴露一个工具 codegraph_explore（可达性、调用者、影响面），并在 Web 右侧栏提供图形面板。

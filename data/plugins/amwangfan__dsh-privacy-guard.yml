@@ -1,0 +1,6 @@
+url: https://github.com/amwangfan/dsh-privacy-guard
+name: amwangfan/dsh-privacy-guard
+category: security
+description:
+  en: 'Control panel for a local credential-redaction gateway in DeepSeek Harness: gateway and model health, audit metrics, a dry-run leak tester, an exemption whitelist, encrypted key management, credential-protected model entries and deployment controls.'
+  zh: 'DeepSeek Harness 本地凭据脱敏网关的控制面板：网关与小模型健康状态、审计指标、泄密探测沙箱、豁免白名单、加密密钥管理、凭据保护模型入口与部署控制。'

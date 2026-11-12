@@ -1,0 +1,6 @@
+url: https://github.com/AKS1st/dock
+name: AKS1st/dock
+category: ui
+description:
+  en: 'VSCode-style workbench shell for the DSH Web UI: activity bar, side bar, editor area, panel and status bar, with a registry service (ctx.workbench) for mounting panels, views and commands.'
+  zh: DSH Web 工作台基座插件：提供 VSCode 风格布局外壳（活动栏/侧边栏/编辑器区/面板/状态栏）和 ctx.workbench 开放注册表，供功能插件挂载面板、视图与命令。

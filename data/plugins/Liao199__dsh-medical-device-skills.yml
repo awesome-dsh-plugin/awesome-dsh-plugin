@@ -1,0 +1,6 @@
+url: https://github.com/Liao199/dsh-medical-device-skills
+name: Liao199/dsh-medical-device-skills
+category: skill
+description:
+  en: 'Repackages the MedXpert skill collection (zhaoxinghua09-cell/medxpert-skills, Apache-2.0): twenty-one medical-device regulatory skills for NMPA, FDA, EU MDR, and PMDA workflows. Do not install the same skills twice (do not also copy them into ~/.dsh/skills).'
+  zh: '把 MedXpert 技能集合（zhaoxinghua09-cell/medxpert-skills，Apache-2.0）打包为 21 个医疗器械法规技能，覆盖 NMPA、FDA、EU MDR 与 PMDA；请勿重复安装同一套技能。'

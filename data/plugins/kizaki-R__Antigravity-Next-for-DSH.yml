@@ -1,0 +1,7 @@
+url: https://github.com/kizaki-R/Antigravity-Next-for-DSH
+name: kizaki-R/Antigravity-Next-for-DSH
+category: model
+description:
+  en: 'Antigravity provider for DeepSeek Harness: resolves the OAuth client from the locally installed official desktop app and supports multiple accounts with quota-based automatic switching.'
+  zh: 'DeepSeek Harness 的 Antigravity 模型供應商：從本機安裝的官方桌面應用程式解析 OAuth client，支援多帳號管理與額度自動切換。'
+icon: https://raw.githubusercontent.com/kizaki-R/Antigravity-Next-for-DSH/main/assets/icon-512.png

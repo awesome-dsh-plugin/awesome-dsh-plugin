@@ -1,0 +1,6 @@
+url: https://github.com/yangyunsong023/dsh-sxs-news-collector
+name: yangyunsong023/dsh-sxs-news-collector
+category: tools
+description:
+  en: 'Trending-topics collector aggregating Baidu / Toutiao / Douyin / Weibo hot lists in one call (Weibo optional cookie), returning titles with heat values for content creators — tool: `sxs_news_hot`.'
+  zh: 时事热点采集：一次调用聚合百度热搜 / 头条热榜 / 抖音热点 / 微博热搜（微博可选 cookie），返回标题+热度值，供内容创作借势——工具：`sxs_news_hot`。

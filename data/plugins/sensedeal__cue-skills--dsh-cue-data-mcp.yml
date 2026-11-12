@@ -1,0 +1,6 @@
+url: https://github.com/sensedeal/cue-skills/tree/main/dsh/cue-data-mcp
+name: sensedeal/cue-skills#cue-data-mcp
+category: tools
+description:
+  en: 'Exposes Cue public data MCP services to DeepSeek Harness: 15 streamable-http domains (~104 tools) for regulatory, macro, disclosures, statute, holdings, entity, academic, IPO, ESOP, buyback, footnote and fact-index data as native mcp__cue_<domain>__* tools.'
+  zh: '向 DeepSeek Harness 暴露 Cue 公开数据 MCP 服务：15 个 streamable-http 域（约 104 工具），覆盖制裁/宏观/披露/法规/持仓/主体/学术/IPO/ESOP/回购/脚注/事实索引，以原生 mcp__cue_<domain>__* 工具提供。'

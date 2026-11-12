@@ -1,0 +1,6 @@
+url: https://github.com/abuluoshuai/DSH-color-style
+name: abuluoshuai/DSH-color-style
+category: theme
+description:
+  en: Ten Markdown-reader colour schemes for DeepSeek Harness that repaint the window background and the rendered Markdown typography, with a dedicated settings page to switch between them.
+  zh: 为 DeepSeek Harness 提供十种来自 Markdown 阅读器的阅读配色：整个窗口背景与正文排版跟随方案变化，并提供独立设置页切换。

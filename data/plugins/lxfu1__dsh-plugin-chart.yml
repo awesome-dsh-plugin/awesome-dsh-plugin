@@ -1,0 +1,6 @@
+url: https://github.com/lxfu1/dsh-plugin-chart
+name: lxfu1/dsh-plugin-chart
+category: tools
+description:
+  en: Enhances data visualization in DeepSeek Harness by automatically selecting chart types from user input and generating images for trends, comparisons, proportions, relationships, and flows.
+  zh: 增强 DeepSeek Harness 数据可视化能力，根据用户输入自动选择图表类型并生成图片，支持趋势、比较、占比、关系和流程等可视化场景。

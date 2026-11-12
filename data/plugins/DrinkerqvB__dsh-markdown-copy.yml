@@ -1,0 +1,8 @@
+url: https://github.com/DrinkerqvB/dsh-markdown-copy
+name: DrinkerqvB/dsh-markdown-copy
+category: session
+icon: https://raw.githubusercontent.com/DrinkerqvB/dsh-markdown-copy/main/icon-96.png
+tarball: https://github.com/DrinkerqvB/dsh-markdown-copy/releases/download/v0.1.1/dsh-markdown-copy-0.1.1.tgz
+description:
+  en: Copies a text selection anywhere in the DSH conversation as Markdown source on Ctrl+C, restoring headings, lists, GFM tables, fenced code blocks and TeX math.
+  zh: 在 DSH 会话中任意选中文本后按 Ctrl+C，把选区还原为 Markdown 源码，保留标题、列表、GFM 表格、代码围栏与 TeX 公式。

@@ -1,0 +1,6 @@
+url: https://github.com/LeemanCheung/dsh-image-gen
+name: LeemanCheung/dsh-image-gen
+category: vision
+description:
+  en: 'GPT Image 2 `image_gen` with Codex subscription OAuth by default or explicit API-key mode: developing card, up to three live API partials, durable attachment replay/lightbox/download, text-only model output, and bounded credential-safe requests.'
+  zh: GPT Image 2 `image_gen`：默认复用 Codex 订阅 OAuth，也可显式使用 API Key；显影卡片、最多 3 张 API 实时局部图、持久附件回放/灯箱/下载、纯文本模型输出和受限的凭据安全请求。

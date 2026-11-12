@@ -1,0 +1,6 @@
+url: https://github.com/Isilsolme/dsh-splash-launcher
+name: Isilsolme/dsh-splash-launcher
+category: ui
+description:
+  en: Windows one-click launcher with a borderless WPF startup animation (stroke-by-stroke HARNESS lettering) that starts dsh web in the background and fades into the GUI once ready, plus a desktop_launch tool.
+  zh: Windows 一键启动器：无边框 WPF 启动动画（HARNESS 逐笔描边），后台拉起 dsh web 并在 GUI 就绪后淡入，附 desktop_launch 工具。

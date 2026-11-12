@@ -1,0 +1,6 @@
+url: https://github.com/lemoncat7/dsh-knowledge
+name: lemoncat7/dsh-knowledge
+category: memory
+description:
+  en: 'Provides local and remote knowledge bases with project- and session-scoped recall, controlled write-back, and an embedded Web management console.'
+  zh: 提供本地与远程知识库，支持项目和会话范围检索、可控回写以及内嵌 Web 管理台。

@@ -1,0 +1,6 @@
+url: https://github.com/chaquchi/dsh-branch-discussion
+name: chaquchi/dsh-branch-discussion
+category: session
+description:
+  en: "Soft-branches a self-contained sub-question into a child session and returns only a bounded digest, so the main context grows by a short summary instead of the whole investigation."
+  zh: "把自包含的子问题软分支到子会话，只把一页以内的结构化摘要带回主上下文。"

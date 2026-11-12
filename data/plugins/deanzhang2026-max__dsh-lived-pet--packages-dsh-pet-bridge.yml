@@ -1,0 +1,6 @@
+url: https://github.com/deanzhang2026-max/dsh-lived-pet/tree/main/packages/dsh-pet-bridge
+name: deanzhang2026-max/dsh-lived-pet#dsh-pet-bridge
+category: ui
+description:
+  en: 'Writes the harness agent live state (thinking, working, waiting, done, error) to a state file that a bundled Electron Live2D desktop pet polls, so the pet bubble and face follow what the agent is doing.'
+  zh: '把 harness agent 的实时状态（思考、干活、等待、完成、出错）写入状态文件，配套的 Electron Live2D 桌宠轮询该文件，气泡与表情随 agent 的实际动作变化。'

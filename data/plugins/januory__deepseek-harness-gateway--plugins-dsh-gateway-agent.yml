@@ -1,0 +1,6 @@
+url: https://github.com/januory/deepseek-harness-gateway/tree/main/plugins/dsh-gateway-agent
+name: januory/deepseek-harness-gateway#dsh-gateway-agent
+category: remote
+description:
+  en: 'Customer-machine access plugin for deepseek-harness-gateway: opens a single outbound WebSocket to the gateway and relays the machine local dsh web UI over that tunnel using pairing-code + HMAC auth, so no inbound port, port mapping, or public IP is needed.'
+  zh: '客户机接入插件：以单条出站 WebSocket 连接网关，把本机 dsh web 界面经隧道转发给门户，配对接入码 + HMAC 认证；无需入站端口、端口映射或公网 IP。'

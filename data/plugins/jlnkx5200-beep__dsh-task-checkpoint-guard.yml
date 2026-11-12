@@ -1,0 +1,7 @@
+url: https://github.com/jlnkx5200-beep/dsh-task-checkpoint-guard
+name: jlnkx5200-beep/dsh-task-checkpoint-guard
+category: memory
+description:
+  en: 'Local task checkpoints and bounded recovery for DSH, with optional L0–L3 hierarchical memory, dependency-aware retrieval, prerequisite-aware context, and six opt-in memory tools.'
+  zh: '为 DSH 提供本地任务检查点与有界恢复，并可选启用 L0–L3 层级记忆、依赖感知检索、先修知识上下文和六个按需启用的记忆工具。'
+tarball: https://github.com/jlnkx5200-beep/dsh-task-checkpoint-guard/releases/download/v0.2.1/dsh-task-checkpoint-guard-0.2.1.tgz

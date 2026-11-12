@@ -1,0 +1,6 @@
+url: https://github.com/Yijian-quiet/dsh-mol/tree/main/dsh-ui
+name: Yijian-quiet/dsh-mol#dsh-ui
+category: tools
+description:
+  en: "A chemistry workbench panel in the DSH web UI. Draw structures on a Ketcher canvas (a script downloads the build; it renders locally in the browser with no backend), then compute on the current molecule with RDKit without calling a model — formula, molecular weight, exact mass, logP, TPSA, hydrogen-bond donors and acceptors, ring counts, Fsp3, stereocentres, Lipinski and Veber rule-by-rule checks, QED, PAINS/BRENK structural alerts and the Murcko scaffold, plus SMARTS substructure matching, fingerprint similarity, format conversion, standardisation and batch clean-up. A retrosynthesis tab talks to a pluggable backend (Retro* by default) over a single JSON-in/JSON-out process, and states what is missing when the backend is not installed instead of inventing a route. The calculations run in this repository's Python package (rdkit), which is installed with pip separately."
+  zh: "DSH Web 界面里的化学工作台面板。在 Ketcher 画板上画结构（构建由脚本下载，浏览器本地渲染、不经后端），然后对本机 RDKit 直接计算，不调用模型——分子式、分子量、精确质量、logP、TPSA、氢键供体与受体、环数、Fsp3、立体中心，Lipinski 与 Veber 逐条判定、QED、PAINS/BRENK 结构警报与 Murcko 骨架，另有 SMARTS 子结构匹配、指纹相似度、格式互转、标准化与批量清洗。逆合成页签通过「JSON 进 JSON 出」的单进程协议对接可插拔后端（默认 Retro*），后端没装好时如实说明缺什么，不编造路线。实际计算由本仓库的 Python 包（rdkit）完成，需另外 pip 安装。"

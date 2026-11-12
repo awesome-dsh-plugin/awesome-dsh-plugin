@@ -1,0 +1,6 @@
+url: https://github.com/zhangyy0423/dsh-veripipe
+name: zhangyy0423/dsh-veripipe
+category: session
+description:
+  en: Keeps a per-turn receipt that later turns do not clear (final todo counts, goal id and phase, end reason, and a fail-closed pass/fail/inconclusive plan verdict), plus a read-only tool to read recent receipts. Stores counts and ids only.
+  zh: 为每个回合保留一张不会被后续回合清空的凭据(回合结束时的 todo 计数、目标 id 与阶段、结束原因,以及 fail-closed 的 pass/fail/inconclusive 完成判定),并提供一个只读工具回读最近的凭据。只存计数和 id。

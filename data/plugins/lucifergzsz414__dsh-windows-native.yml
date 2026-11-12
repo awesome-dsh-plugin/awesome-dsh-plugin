@@ -1,0 +1,6 @@
+url: https://github.com/lucifergzsz414/dsh-windows-native
+name: lucifergzsz414/dsh-windows-native
+category: wsl
+description:
+  en: Injects native-Windows (non-WSL) PowerShell, encoding, filesystem, and cross-platform-build gotchas into the system prompt.
+  zh: 向系统提示注入原生 Windows（非 WSL）环境下 PowerShell、字符编码、文件系统与跨平台构建的常见坑点。

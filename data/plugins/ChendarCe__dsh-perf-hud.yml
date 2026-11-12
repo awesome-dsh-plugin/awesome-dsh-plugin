@@ -1,0 +1,6 @@
+url: https://github.com/ChendarCe/dsh-perf-hud
+name: ChendarCe/dsh-perf-hud
+category: ui
+description:
+  en: 'A transparent, draggable performance HUD for the DeepSeek Harness Web UI: CPU, GPU and memory usage in three compact rows that float directly over the interface without any card background, snapping to the nearest window corner so resizing or maximising keeps them in place; CPU package temperature comes from an optional elevated helper (LibreHardwareMonitor + PawnIO) and the plugin itself stays at a fraction of a percent of CPU. Windows only.'
+  zh: 'DSH 界面上的透明性能悬浮窗：三行小字直接浮在界面上显示 CPU、GPU、内存占用率，没有底色也没有边框，可拖动并吸附到最近的窗口角，最大化或改变窗口大小都不会跑位；CPU 封装温度由可选的高权限助手（LibreHardwareMonitor + PawnIO）读取，插件自身开销不到单核百分之一。仅 Windows。'

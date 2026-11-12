@@ -1,0 +1,6 @@
+url: https://github.com/plankton12138/dsh-darkSoulGuide
+name: plankton12138/dsh-darkSoulGuide
+category: tools
+description:
+  en: 'Answers Dark Souls III questions from your own Windows PC save (default `%APPDATA%\DarkSoulsIII\*\DS30000.sl2`): level and stats, current area, bonfires/rings/spells/covenants counted by family, kill state for the 24 bosses, and Steam achievements when Steam is installed - exposed as model tools plus a progress pill beside the composer and a 19-area sidebar page with next-step suggestions. The save stays read-only and is parsed locally by a bundled Python 3 script; Python 3 and the `cryptography` package must be installed, and the game data ships with the plugin.'
+  zh: '读你自己的《黑暗之魂3》Windows 存档（默认 `%APPDATA%\DarkSoulsIII\*\DS30000.sl2`）回答问题：等级与属性、当前区域、按家族统计的篝火/戒指/法术/誓约完成度、24 个 Boss 的击杀状态，装有 Steam 时还包括 Steam 成就；以模型工具提供，另配输入框旁的进度药丸和 19 区域侧栏页。存档只读，由随包提供的 Python 3 脚本本地解析；运行前需装好 Python 3 与 `cryptography`，游戏数据随插件分发。'

@@ -1,0 +1,7 @@
+url: https://github.com/mikugui/dsh-session-eater
+name: mikugui/dsh-session-eater
+category: session
+description:
+  en: 'Session cleanup for the DSH sidebar: drag a conversation row onto the balance widget''s whale and it eats the row — the session directory goes to a recycle bin, not to rm. Deletion asks one short question first (how many tokens it burned, and that prompt can be turned off in Settings). Undo from the persistent toast or the 12-entry log in Settings. Clicking the whale jumps straight to the plugin''s Settings, where you can swap the avatar, drag the mouth into place and rewrite all 17 UI strings; blank, currently-open and running sessions are refused in place with a reason.'
+  zh: 'DSH 侧边栏的会话清理：把会话行拖到余额挂件的小胖鱼嘴边，它张嘴吃掉 —— 会话目录移入回收站，不是 rm。删除前只问一句「消耗了多少 token，真的给我吃吗？」（可在设置里关掉）；撤销走常驻回执或设置里 12 条持久台账。点侧栏那条小鱼直达插件设置：换形象、拖拽校准嘴位、改写全部 17 段界面文案；空白会话 / 正在聊的 / 正在跑的会被就地拒绝并写明原因。'
+tarball: https://github.com/mikugui/dsh-session-eater/releases/latest/download/dsh-session-eater.tgz

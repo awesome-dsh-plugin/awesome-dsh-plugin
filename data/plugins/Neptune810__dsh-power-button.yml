@@ -1,0 +1,6 @@
+url: https://github.com/Neptune810/dsh-power-button
+name: Neptune810/dsh-power-button
+category: ui
+description:
+  en: 'Adds a draggable power pill to the DeepSeek Harness Web GUI: a live status dot plus restart and stop actions, where restart is handed to a detached helper that resumes the same boot invocation once the port is released.'
+  zh: '在 DeepSeek Harness Web 界面加一个可拖动的电源胶囊：实时状态点，加上重启与结束两个动作；重启交给脱离终端的辅助进程，等端口释放后按原启动命令重新拉起。'

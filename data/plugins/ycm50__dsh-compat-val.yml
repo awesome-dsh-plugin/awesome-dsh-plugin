@@ -1,0 +1,6 @@
+url: https://github.com/ycm50/dsh-compat-val
+name: ycm50/dsh-compat-val
+category: session
+description:
+  en: 'One settings card that gives every DSH agent mode its own compaction threshold: it registers <mode>-compact-<ratio> preset copies with compaction-basic.thresholdRatio rewritten, re-registers when the value or the selection changes, and can adopt one copy as the default mode (standard > cordis > minimal > ptc).'
+  zh: '一个设置项把压缩阈值铺到所有 Agent 模式：注册 <模式>-compact-<阈值> 预设副本并改写 compaction-basic.thresholdRatio，阈值或勾选变化时重新注册，还可把副本设为默认模式（标准 > 创造 > 极简 > ptc）。'

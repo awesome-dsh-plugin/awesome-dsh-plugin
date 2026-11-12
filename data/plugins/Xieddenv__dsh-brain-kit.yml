@@ -1,0 +1,6 @@
+url: https://github.com/Xieddenv/dsh-brain-kit
+name: Xieddenv/dsh-brain-kit
+category: security
+description:
+  en: 'A hard hat for AI coding: graded writes (L0 read-only / L1 workspace-only / L2 full) put privileged edits in a cage. Below the level it refuses to write and hands back a paste-ready block instead. Every path passes a raw-string traversal check plus realpath, so junction escapes are caught.'
+  zh: '给 AI 编程戴上安全帽：L0 到 L2 分级拦截，把越权操作关进笼子——权限不够就不落盘，改给你一段可直接粘贴的替换稿；路径过两道闸，junction 逃逸也拦得住。'

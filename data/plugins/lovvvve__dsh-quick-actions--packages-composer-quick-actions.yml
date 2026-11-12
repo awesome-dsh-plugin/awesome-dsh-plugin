@@ -1,0 +1,6 @@
+url: https://github.com/lovvvve/dsh-quick-actions/tree/main/packages/composer-quick-actions
+name: lovvvve/dsh-quick-actions#composer-quick-actions
+category: ui
+description:
+  en: Global Quick Actions beside every session-backed composer in DSH. One press sends a preset or your own saved text, with per-action send confirmation.
+  zh: 在 DSH 每个由会话支持的消息编辑器旁提供全局快捷动作。一键发送预置或你自己保存的文本，每个动作可单独设置发送确认。

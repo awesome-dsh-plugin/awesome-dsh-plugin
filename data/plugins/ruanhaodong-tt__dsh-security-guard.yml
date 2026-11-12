@@ -1,0 +1,7 @@
+url: https://github.com/ruanhaodong-tt/dsh-security-guard
+name: ruanhaodong-tt/dsh-security-guard
+category: security
+description:
+  en: 'Runtime security guard for DSH: loader import confinement, HTTP Host header validation, and source patch for VM sandbox escapes (4 CVEs). AI-assisted.'
+  zh: 'DSH 运行时安全守卫：配置加载导入约束、HTTP Host 头校验、附带 VM 沙箱逃逸源码补丁（4 个 CVE）。AI 辅助制作。'
+tarball: https://github.com/ruanhaodong-tt/dsh-security-guard/releases/latest/download/dsh-security-guard.tgz

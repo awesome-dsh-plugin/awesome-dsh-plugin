@@ -1,0 +1,6 @@
+url: https://github.com/v587d/dsh-opencode-go-usage
+name: v587d/dsh-opencode-go-usage
+category: usage
+description:
+  en: OpenCode Go subscription usage (rolling/weekly/monthly windows with reset countdowns) in the composer dock, with a built-in credential editor.
+  zh: 在输入框上方 dock 显示 OpenCode Go 订阅用量（5h 滚动/每周/每月窗口与重置倒计时），内置凭据编辑器。

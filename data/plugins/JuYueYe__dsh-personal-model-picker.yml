@@ -1,0 +1,6 @@
+url: https://github.com/JuYueYe/dsh-personal-model-picker
+name: JuYueYe/dsh-personal-model-picker
+category: ui
+description:
+  en: Switch providers from the left column and choose a model from the right; hover, focus or click a provider to update the model list.
+  zh: 左侧切换供应商，右侧直接选择模型；悬停、聚焦或点击供应商即可切换右侧模型列表。
