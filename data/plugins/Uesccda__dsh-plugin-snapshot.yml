@@ -2,5 +2,5 @@ url: https://github.com/Uesccda/dsh-plugin-snapshot
 name: Uesccda/dsh-plugin-snapshot
 category: tools
 description:
-  en: 'Pre-upgrade snapshots, one-step rollback, static diagnostics, and a Settings panel with lock-probed, four-state-verified auto-update for DeepSeek Harness plugins.'
-  zh: '为 DeepSeek Harness 插件提供升级前快照、一键回滚、静态体检，以及带占用探针与四态判定的设置页自动更新面板。'
+  en: 'Checks and upgrades your installed DSH plugins automatically: a snapshot before every upgrade, automatic rollback on failure, plus one-click rollback and a static health check.'
+  zh: '自动检查并升级你安装的 DSH 插件：每次升级前自动打快照，失败自动回滚；也可一键回滚与静态体检。'
