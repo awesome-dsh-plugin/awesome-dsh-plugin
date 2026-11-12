@@ -1643,6 +1643,7 @@ dsh plugin --profile web add dshmarket
 - [sailoumili/dsh-sidebar-plus](https://github.com/sailoumili/dsh-sidebar-plus) — 基于 DSH 官方侧边栏的文件视图增强插件，提供源码视图、原位编辑、行号显示、搜索和字体缩放功能。
 - [Saknutella/dsh-thinking-quips](https://github.com/Saknutella/dsh-thinking-quips) — 为 DSH 运行中状态行做轻量个性化：可轮换的中英俏皮话、可配置的动态加载图标（5 种样式 x 3 档尺寸）、一键匹配当前主题色，全部集中在「通用设置」里，外加一个用 # Chinese / # English 分段的俏皮话编辑框。零依赖、无构建、不写配置文件。
 - [sakuraqqq/dsh-auto-paste](https://github.com/sakuraqqq/dsh-auto-paste) — 在输入框粘贴大段文本时自动保存为附件文件；装了 dsh-better-sidebar 时，药丸上的「查看」可在侧栏编辑器打开并保存回原文件。
+- [salvare013/dsh-agents-md-presets](https://github.com/salvare013/dsh-agents-md-presets) — 为 DSH 维护多套具名 AGENTS.md 预设：正文存在 $DSH_HOME/agents-md-presets，在会话里选一套写入该会话工作区的 AGENTS.md，正文用本机编辑器修改，覆盖前把原文件留一份最近备份。
 - [Sama05/dsh-download-progress](https://github.com/Sama05/dsh-download-progress) — 在浮层或输入框上方的胶囊里显示下载、安装、抓取、搜索的进度，并列出没有进度可画的后台任务。
 - [samsam560/chat-share-card](https://github.com/samsam560/chat-share-card) — 把任意一条 AI 回答一键变成精美的 PNG 分享卡片：点回复下面的按钮，回答会被重新排版画到画布上（8 套渐变预设、深浅主题、三种字体、宽度 720/880/1080、圆角、内边距、字号、行高、1×–3× 导出倍率、代码折行/高亮/行号、自定义标题与页脚）。纯本地渲染，不联网、不上传、无第三方依赖。
 - [samsam560/dog-kjdh](https://github.com/samsam560/dog-kjdh) — DeepSeek Harness 的开场 / 退场动画：5 套纯代码自绘样式（鲸鱼光扫 / 极简脉冲 / 星尘汇聚 / 打字机 / 雷达环），也可以换成你自己的视频或动图；设置页可调速度、粒子数、主色、文案、静音与画面适配。退场动画需先运行 node tools/patch-asar.mjs --apply 给桌面壳打补丁（可回滚）；不打补丁时关闭只隐藏窗口。
@@ -1884,6 +1885,7 @@ dsh plugin --profile web add dshmarket
 - [wang6077/dsh-ide-vscode](https://github.com/wang6077/dsh-ide-vscode) — DSH 右侧栏里的工作区文件树与代码编辑器：跟随所在会话的工作区，新建 / 重命名 / 删除文件与文件夹（默认进回收站），带行号与语法高亮地编辑、Ctrl+S 保存、Ctrl+D 复制当前行，可预览图片、播放音频视频、查看并解压压缩包或用系统 tar 打包成 zip，能按文件名搜索或粘贴路径跳转，Windows 下图标用系统自己那套（SHGetFileInfo）。
 - [wang678678/dsh-local-plugins#dsh-kb-picker](https://github.com/wang678678/dsh-local-plugins/tree/main/packages/dsh-kb-picker) — 在 DSH 输入框中加入知识库选择器与原生附件回形针。
 - [wang678678/dsh-local-plugins#dsh-workspace-flow](https://github.com/wang678678/dsh-local-plugins/tree/main/packages/dsh-workspace-flow) — 把添加工作区的目录对话框换成路径输入、盘符快捷和系统文件夹选择。
+- [wangjianghu/dsh-composer-lists](https://github.com/wangjianghu/dsh-composer-lists) — 输入框有序/无序列表编排：自动续号与重排、标记感知的光标移动、层级升降，以及可撤销的 AI 提示词优化按钮。
 - [wangsrGit119/dsh-nanny-calendar](https://github.com/wangsrGit119/dsh-nanny-calendar) — 育儿嫂日历看板：记录上户、下户、休假与工资发放，按月汇总，并统计从首次上户到今天的累计在岗与休假天数，同时按 30 天周期在日历上自动标出发薪日。
 - [wangtheme-coder/dsh-greeting](https://github.com/wangtheme-coder/dsh-greeting) — 给 DSH 主页 / 新会话 hero 区加一行按时段变化的问候语：按本地时间分 7 个时段随机抽句、内置傲娇鲸鱼娘台词、可用 ~/.dsh/greeting.json 覆盖任意时段，并顺手把 Ctrl+R / F5 接回页面刷新。
 - [wangtheme-coder/dsh-stellar-effort](https://github.com/wangtheme-coder/dsh-stellar-effort) — 在输入框上方加一条推理强度滑轨：拖动或用键盘预览并提交当前模型支持的档位（Off 到 Max），滑轨背后由程序实时渲染的微缩宇宙随档位收缩、坍缩成黑洞。档位通过 DSH 自身的模型选择接口提交，显示的是 DSH 确认后的等级；插件只写入 $DSH_HOME/stellar-effort/。
@@ -2610,6 +2612,7 @@ dsh plugin --profile web add dshmarket
 - [m1khal3v/dsh-llm-key-rotation](https://github.com/m1khal3v/dsh-llm-key-rotation) — 在配额、速率限制或身份验证失败后轮换已配置的 LLM API 密钥。
 - [Make0209/dsh-usage-stats](https://github.com/Make0209/dsh-usage-stats) — GitHub 风格用量热力图看板：按工作区统计使用次数与 Token 花费（含缓存命中率）、DeepSeek 账户余额查询、工作区别名管理。
 - [mako-o-o/dsh-opendesign-limit](https://github.com/mako-o-o/dsh-opendesign-limit) — OpenDesign（AMR）额度读数：输入框旁显示 Design Plan 的 5 小时与 7 天窗口、钱包余额与外推天数，走本机 controlKey 或浏览器会话两条通道。本机来源会读取 ~/.amr/config.json 里的 controlKey；浏览器来源会打开一个临时 Chrome 窗口，你登录后通过 CDP 收集会话 cookie 存进 DSH 的凭据库。
+- [maqimakabaka/dsh-liangwengu](https://github.com/maqimakabaka/dsh-liangwengu) — DSH 谷价调度器：把写好的指令排在 DeepSeek Harness谷价时段自动发送，附带峰谷价格与时段抓取、余额提醒与本机用量记账。
 - [MaudieHakimi/dsh-entry-shaper](https://github.com/MaudieHakimi/dsh-entry-shaper) — 代理 provider：每次出网前按类别跑 op 链重塑 payload 再转交上游，使 prompt 前缀在回合之间保持单调、未变的历史不必按全价重付；op 名只表示传输方式（exec / http / inline），可接入用户自定义算法。
 - [Max-Samson/dsh-usage-chart](https://github.com/Max-Samson/dsh-usage-chart) — 输入框下方的用量/成本/余额仪表盘：实时指标指示器 + 零依赖 SVG 用量图表，按轮次统计用量、估算成本并实时查询 DeepSeek 账户余额。
 - [Melatonin-CZ/dsh-balance-strip](https://github.com/Melatonin-CZ/dsh-balance-strip) — 输入框下方状态行里的余额状态条：色带随余额在绿与红之间变化，可关动态、换纹理，并带图形化设置面板。
@@ -8465,6 +8468,7 @@ dsh plugin --profile web add dshmarket
 - [victorzhong0110/dsh-code-reference](https://github.com/victorzhong0110/dsh-code-reference) — 在开发前检索本地代码与 GitHub/npm 的可复用实现，评估复用与重写成本，并检查架构耦合。
 - [victorzhong0110/dsh-outcome-loop](https://github.com/victorzhong0110/dsh-outcome-loop) — 为 DSH 保存本地任务结果账本，依据确定性证据验证验收标准，记录用户处置与 token 用量，并支持摘要绑定导出。
 - [virggle/dsh-shutdown-after-task](https://github.com/virggle/dsh-shutdown-after-task) — 任务完成后自动关机：右下角按钮开启模式，任务成功完成后进入可取消的倒计时（取消走 shutdown /a），零运行时依赖。
+- [visangela/dsh-novel-assistant](https://github.com/visangela/dsh-novel-assistant) — 长篇小说创作工作流：七份可查账的设定库、改稿影响追踪、活的图谱，以及用试笔稿选写手的机制。
 - [vitas/dsh-jev-subagent-dispatch](https://github.com/vitas/dsh-jev-subagent-dispatch) — 降低 LLM 成本：Jev（System One）分类器按声明式策略审查每一轮任务并推荐 subagent 模型路由，让常规工作以 flash 价格运行、主模型专注难点；显式 /route 触发、运行时代理能力门控、凭据脱敏，以及基于判定日志的离线策略回放。
 - [vlln/dsh-loop](https://github.com/vlln/dsh-loop) — 定时循环：`/loop` 命令 + loop 工具 + 活动状态条。
 - [waafer1/dsh-jipu](https://github.com/waafer1/dsh-jipu) — 读者优先的长篇小说工序：人物卡与设定卡先行、21 个门禁脚本、1000 条桥段与 700 条主题种子、每章最多两个桥段，每个脚本自带自检；脚本依赖宿主上的 Python 3 运行。
