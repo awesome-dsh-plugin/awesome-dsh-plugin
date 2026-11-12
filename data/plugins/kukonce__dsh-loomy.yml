@@ -1,0 +1,7 @@
+url: https://github.com/kukonce/dsh-loomy
+name: kukonce/dsh-loomy
+category: model
+icon: https://raw.githubusercontent.com/kukonce/dsh-loomy/main/icon.png
+description:
+  en: 'Unofficial Loomy (iFlytek) model provider: signs in with an SMS code or by adopting the Loomy desktop app session already on the machine, registers one provider route per account from the live per-account catalog, and renews the daily 5000 free credits on startup and at local midnight.'
+  zh: 非官方 Loomy（讯飞）模型接入插件：用手机验证码登录，或直接复用本机 Loomy 桌面端已有的登录态；按账号实时拉取模型目录并注册独立路由；启动时与本地零点自动续领每日赠送的 5000 积分。
