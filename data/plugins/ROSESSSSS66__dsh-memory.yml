@@ -1,0 +1,8 @@
+url: https://github.com/ROSESSSSS66/dsh-memory
+name: ROSESSSSS66/dsh-memory
+category: memory
+description:
+  en: 'Local long-term memory for DSH: extracts preferences and project facts from sessions, injects the most relevant ones before each turn using local SQLite FTS5 search, and supersedes outdated facts. Requires Node 24+; the offline self-evolution loop needs an OpenAI-compatible LLM endpoint and API key.'
+  zh: 'DSH 本地长期记忆：从会话中提取偏好与项目事实，每轮提问前用本地 SQLite FTS5 检索注入最相关的几条，并取代过时事实。需要 Node 24+；离线自进化需配置 OpenAI 兼容的 LLM 接口与 API Key。'
+icon: https://raw.githubusercontent.com/ROSESSSSS66/dsh-memory/main/assets/dorodoro-logo.jpg
+tarball: https://github.com/ROSESSSSS66/dsh-memory/releases/download/v0.8.2/dsh-memory-0.8.2.tgz
