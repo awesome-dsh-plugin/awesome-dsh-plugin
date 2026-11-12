@@ -1,0 +1,6 @@
+url: https://github.com/dunxuan/dsh-mimo-context
+name: dunxuan/dsh-mimo-context
+category: memory
+description:
+  en: 'Port MiMo Code infinite context to dsh.'
+  zh: '把 MiMo Code 无限上下文移植到 dsh。'
