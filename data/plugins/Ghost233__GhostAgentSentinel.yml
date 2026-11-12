@@ -1,0 +1,7 @@
+url: https://github.com/Ghost233/GhostAgentSentinel
+name: Ghost233/GhostAgentSentinel
+category: notify
+tarball: https://github.com/Ghost233/GhostAgentSentinel/releases/latest/download/ghost-agent-sentinel.tgz
+description:
+  en: Tracks DSH session and subagent activity in a sidebar, summarizes progress and blockers, and can send desktop notifications.
+  zh: 在侧栏查看 DSH 会话与子代理活动、进展摘要和阻塞原因，并可接收桌面提醒。
