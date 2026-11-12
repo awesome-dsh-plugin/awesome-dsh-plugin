@@ -1,0 +1,6 @@
+url: https://github.com/Fushena/dsh-qwen-token-plan-full
+name: Fushena/dsh-qwen-token-plan-full
+category: model
+description:
+  en: 'Unofficial Qwen Token Plan provider: registers a `qwen-token-plan-full` route with a model catalog fetched from the gateway, Responses and Chat Completions protocols, server-side built-in tools, image and video generation tools, and per-entitlement budget tracking that disables a benefit once its quota is exhausted.'
+  zh: 非官方千问 Token Plan 全能路由插件：注册 `qwen-token-plan-full` 路由，从网关拉取模型目录，支持 Responses 与 Chat Completions 双协议、服务端内置工具、图片与视频生成工具，并按权益做预算跟踪，额度耗尽即停用对应权益。
