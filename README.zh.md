@@ -899,6 +899,7 @@ dsh plugin --profile web add dshmarket
 - [Htao-uu/dsh-mobile-shell](https://github.com/Htao-uu/dsh-mobile-shell) — 为 DSH Web UI 提供接近 DeepSeek App 的移动端壳层：抽屉导航、App 风格输入与设置；Android 返回键需搭配 dsh-android App（单独安装也能用，但作者不建议且可能有 bug）。
 - [hu669293657/dsh-turn-tools](https://github.com/hu669293657/dsh-turn-tools) — 在每轮对话末尾添加产出文件按钮（用系统默认程序打开），并提供可在轮次间快速跳转的悬浮圆点导航栏。
 - [Hu9956/DSH-model-controls](https://github.com/Hu9956/DSH-model-controls) — 切换供应商、模型与思考强度，每个模型各自记住档位。
+- [hua-1111/dsh-logos-forge](https://github.com/hua-1111/dsh-logos-forge) — DeepSeek Harness 的提示词炼成阵：先读意图，再让一份草稿并行炼出三个版本，模型盲评打分排序、新增句子高亮标出，最后择一写回输入框。
 - [huaguoxingkong/dsh-prompt-rewriter](https://github.com/huaguoxingkong/dsh-prompt-rewriter) — 在输入框旁加一个按钮，把草稿直接原地改写成更完整的提示词（无预览步骤），支持撤销、随时停止、可选参考本会话上下文。
 - [huahuazz/DSH_question_map](https://github.com/huahuazz/DSH_question_map) — 在对话里选中文字横向追问（空上下文的浮卡），所有追问连成一张可浏览的网状图，支持导出 PNG。
 - [hualidan42-beep/dsh-plugin-task-radar](https://github.com/hualidan42-beep/dsh-plugin-task-radar) — 在浮动面板中查看工作区会话、子代理状态、待办进度与 Token 用量。
@@ -9032,6 +9033,7 @@ dsh plugin --profile web add dshmarket
 - [sflaer/dsh-telegram-relay](https://github.com/sflaer/dsh-telegram-relay) — DeepSeek Harness 的 Telegram 桥：把代理提问（带内联按钮）、工具审批请求、回合摘要和子代理消息转发到 Telegram 机器人，答案可从 Telegram 或 DSH Web 界面给出，以先到者为准。自带本地控制面板，纯宿主插件，不含前端界面。
 - [shangjian2023/dsh-rss-daily](https://github.com/shangjian2023/dsh-rss-daily) — 每日要闻日报：46 个精选 RSS 源，用 dsh 里已配好的模型做主编式编辑，经 webhook 送到微信/Telegram，并以模型回答的样式插播在对话里，零上下文消耗。
 - [shaobeichen/dsh-pocket](https://github.com/shaobeichen/dsh-pocket) — 手机远程访问 DSH Web 界面：扫码即用局域网或公网（cloudflared 隧道）访问，实时同屏、移动端适配布局，带设置页管理。
+- [ShawnZhangGy/dsh-whale-reminder](https://github.com/ShawnZhangGy/dsh-whale-reminder) — Windows 会话结束提醒：窗口内未读浮层列出会话名、点击即跳转到该会话，两段 Web Audio 提示音，任务栏闪烁，并在托盘鲸鱼图标上叠加数字徽章；只统计可见会话，设置页含中英文切换等七项。
 - [ShiXiangYu2/dsh-feishu-remote](https://github.com/ShiXiangYu2/dsh-feishu-remote) — 从飞书/Lark 操作 DeepSeek Harness：私聊发送任务，agent 用你配置的模型执行并把结果回到会话；feishu_send 工具可让 agent 主动推送结果。基于 lark-cli 的 WebSocket 长连接，无需公网 webhook，并附常驻启动器。注意：插件不校验发送者身份，因此任何能私聊到该机器人的人（默认即该飞书应用所属企业内的成员）都能驱动一个使用宿主机自身模型凭据与文件权限运行的 agent。安装不是一条 `dsh plugin add` 就完事：需要先全局安装并登录一次 `lark-cli`，并在飞书开放平台建一个带 README 所列权限的自建应用。
 - [shrekcg/dsh-im-channel](https://github.com/shrekcg/dsh-im-channel) — DeepSeek Harness 的统一 IM 渠道：飞书、Telegram、钉钉、Slack、Discord —— 持久会话、真流式回复、40 个飞书 MCP 工具、斜杠命令，以及插件设置页中的 IM 机器人状态页。
 - [SilverLark257/move45clock](https://github.com/SilverLark257/move45clock) — Move45clock · 健康钟：每工作 45 分钟弹出引导式休息卡片，内置 12 套 12～15 分钟坐/站计划；支持可视化编辑计划、弹窗放大、21:30/22:00/22:30 夜间提醒，以及可选的动作名语音播报；Windows 下可把托盘窗口叫回前台。
