@@ -1,0 +1,6 @@
+url: https://github.com/clair0314/dsh-ai-digest
+name: clair0314/dsh-ai-digest
+category: notify
+description:
+  en: Scans Bilibili for AI videos each day and pushes a short digest of the ones worth watching to Feishu.
+  zh: 每天扫一遍 B 站的 AI 视频，挑出值得看的写成日报推到飞书。
