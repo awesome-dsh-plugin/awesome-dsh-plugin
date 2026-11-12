@@ -2,6 +2,6 @@ url: https://github.com/Ww-Cooooo/media-review-dsh
 name: Media Review DSH
 category: workflow
 description:
-  en: Review local audio and video on Windows with time-range and frame annotations, send feedback to a Harness session, and compare revised versions.
-  zh: 在 Windows 的 Harness 中标注音视频片段和画面、发送修改意见，并对照新版逐条复核。
-tarball: https://github.com/Ww-Cooooo/media-review-dsh/releases/download/v0.1.0-rc.6/media-review-dsh-0.1.0-rc.6.tgz
+  en: 'Review local audio and video in a resizable Harness sidebar on Windows, send annotated feedback, and compare revisions; for other Agents, see [Media Review Skill](https://github.com/Ww-Cooooo/media-review/releases/tag/v0.3.0-beta.11).'
+  zh: '在 Windows 的 Harness 侧栏标注音视频、交接修改意见并逐条复核；其他 Agent 可用独立的 [Media Review Skill](https://github.com/Ww-Cooooo/media-review/releases/tag/v0.3.0-beta.11)。'
+tarball: https://github.com/Ww-Cooooo/media-review-dsh/releases/download/v0.1.0-rc.8/media-review-dsh-0.1.0-rc.8.tgz
