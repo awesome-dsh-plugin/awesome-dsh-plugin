@@ -2395,6 +2395,7 @@ dsh plugin --profile web add dshmarket
 - [dxxo77/dsh-plugin-quota-balance](https://github.com/dxxo77/dsh-plugin-quota-balance) — 余额显示quota-balance：在输入框下方的用量行最左侧显示账户余额，点开可查看普通余额与赠送额度的分项、更新时间，并可跳转充值；徽标与浮层读取宿主表面 token，可跟随 dsh-plugin-wallpaper-engine 的玻璃参数、明暗主题与壁纸切换。
 - [eatone9254/dsh-balance-badge](https://github.com/eatone9254/dsh-balance-badge) — 在 DeepSeek Harness 主界面右下角常驻账户余额，60 秒自动刷新，点击即可立即查询。
 - [Eclipse-NotFound/dsh-usage-replay](https://github.com/Eclipse-NotFound/dsh-usage-replay) — 从 Harness 自身会话日志回放聚合的跨会话分模型 token 用量，含侧边栏用量面板（需安装 dsh-better-sidebar）与单对话按模型弹层。
+- [elsebit/dsh-deepseek-usage-extended](https://github.com/elsebit/dsh-deepseek-usage-extended) — A personal-use fork of dsh-deepseek-usage that adds IKunCode account balance support and shows the provider name above the balance.
 - [Enc-hanted/dsh-pulse](https://github.com/Enc-hanted/dsh-pulse) — 跨会话用量与费用观测台——分时走势与 90 天/1 年热力图、逐模型峰谷计价并与官方余额对账、GLM/Kimi/MiniMax 订阅额度与燃速预估、缓存命中环、项目排行、CSV 导出，另有 dsh-tui 终端面。
 - [ericw0315/dsh-usage-lite](https://github.com/ericw0315/dsh-usage-lite) — 侧边栏面板展示账户余额与本地 Token 用量，包含供应商/模型明细和 27 周每日热力图。
 - [errolleefin/dsh-tide-badge](https://github.com/errolleefin/dsh-tide-badge) — DSH 输入框下方的峰谷计费与余额药丸，基于 xiangrikuibaize/dsh-tide-badge 修改。与原版不同的是：本次对话花费按本会话的 token 用量（未命中 / 缓存命中 / 缓存写入 / 输出）乘官方价目表计算，而不是余额差值，因此同账号的其他对话与 API Key 消耗不会被算进来。它与上游同包名，装上会替换 npm 上的上游版本，两者不能同时安装。
@@ -6703,6 +6704,7 @@ dsh plugin --profile web add dshmarket
 - [QiYunqv-jxd/dsh-desktop-autostart](https://github.com/QiYunqv-jxd/dsh-desktop-autostart) — 给 DeepSeek Harness 桌面版加一个登录自启开关：只管理用户启动文件夹里的一个快捷方式，不写注册表、不需要管理员权限、不额外常驻进程。
 - [road-kid/dsh-terminal-shell](https://github.com/road-kid/dsh-terminal-shell) — 选择 Windows 终端工具背后的 shell：PowerShell、本地 Git Bash 或 cmd.exe。
 - [stallenlu/dsh-wsl-suite](https://github.com/stallenlu/dsh-wsl-suite) — 为 DeepSeek Harness 增加 WSL 工作区：侧栏 W 按钮列出发行版并把 Linux 目录注册为宿主工作区（以 UNC 路径表示），WSL 会话的侧栏终端在发行版内打开真实 Linux pty。发行版内常驻一个零依赖 agent，通过 JSON-lines 管道响应文件、shell 与搜索请求，空闲时没有轮询计时器触碰发行版，/mnt 盘符也保持可达；grep 与 glob 在发行版内调用自带的 ripgrep。附带 wsl-standard 等 WSL 孪生预设，替换 shell 与 fs 工具。本插件是 6Mikao9/dsh-wsl-workspace 的重写版，不能与上游同装——两者都在侧栏挂同一个 W 入口、发布同名的 wsl-<mode> 预设，并各自包装宿主的单槽终端 provider。
+- [suojianan/dsh-offwork-countdown](https://github.com/suojianan/dsh-offwork-countdown) — Windows 桌面伴随插件：安装后启动一个半透明、始终置顶的下班倒计时小窗。支持上下班时间、加班计时、周末休息、位置与透明度记忆、托盘菜单和 Ctrl+Alt+D 鼠标穿透；仅支持 64 位 Windows 10/11。小窗是独立的桌面进程，不是 Harness 页面内的面板。
 - [TGWgulugu/dsh-wsl-bridge](https://github.com/TGWgulugu/dsh-wsl-bridge) — 在当前 WSL 发行版里运行持久 bash 以及 Linux 路径的文件与搜索工具。新建对话选中 WSL 后，从该发行版的文件夹里指定工作区，且不会在发行版内安装任何东西。
 - [Wang1462604987/dsh-wsl-sidebar](https://github.com/Wang1462604987/dsh-wsl-sidebar) — 用于 Harness 的 WSL 控制台：管理发行版、以表单编辑 .wslconfig 与 wsl.conf，并用自带的 wslx-* 工具在任意发行版内执行命令、读写文件、运行长驻进程。
 - [WilliamShi666/dsh-wsl-workspace-picker](https://github.com/WilliamShi666/dsh-wsl-workspace-picker) — Web UI 增强版工作区目录选择器：WSL 下 /mnt Windows 盘符一键直达、完整面包屑层级与常显路径输入框。
