@@ -1,0 +1,6 @@
+url: https://github.com/Cnily03/dsh-delete-archived-session
+name: Cnily03/dsh-delete-archived-session
+category: session
+description:
+  en: Permanently delete archived sessions from the sidebar row hover strip and the more-menu with a two-step confirm (click arms, second click deletes); deletion stops the session's running work and removes its log directory, projection-cache record and workspace accounting.
+  zh: 从侧边栏行悬浮按钮与「更多」菜单两步确认永久删除已归档会话（第一次点击进入待确认状态，再点一次删除）；删除会停止会话正在运行的任务，并移除其日志目录、投影缓存记录与工作区记账。
