@@ -1,0 +1,16 @@
+url: https://github.com/stevenjj33/dsh-obsidian-skills
+name: stevenjj33/dsh-obsidian-skills
+category: skill
+description:
+  en: >-
+    Agent skills for Obsidian, vendored verbatim from the official repository
+    kepano/obsidian-skills (MIT, Steph Ango). Six skills covering Obsidian
+    Flavored Markdown (wikilinks, embeds, callouts, properties), Bases (.base),
+    JSON Canvas (.canvas), the Obsidian CLI, Defuddle and Knap. Documentation
+    only: no CLI binaries are bundled, so obsidian/defuddle/knap are installed
+    separately by the user.
+  zh: >-
+    从官方库 kepano/obsidian-skills（MIT，Steph Ango）逐字收录的 Obsidian
+    技能包。六个技能覆盖 Obsidian 风格 Markdown（双向链接、嵌入、标注块、属性）、
+    Bases（.base）、JSON Canvas（.canvas）、Obsidian CLI、Defuddle 与 Knap。
+    只含文档，不含任何 CLI 本体；obsidian/defuddle/knap 需用户自行安装。

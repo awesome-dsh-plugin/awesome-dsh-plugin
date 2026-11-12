@@ -1,7 +1,7 @@
-url: https://github.com/shinerain1/dsh-project-2
-name: shinerain1/dsh-project-2
+url: https://github.com/shinerain1/dsh-label-workbench
+name: shinerain1/dsh-label-workbench
 category: workflow
 description:
   en: 'Manage iterative text annotation through DSH tools with rule versions, stale-result isolation, human review preservation and traceable exports; requires a separately installed Python backend.'
   zh: '通过 DSH 工具管理可迭代文本标注，绑定规则版本、隔离旧任务结果、保留人工审核并导出可追溯数据集；需另行安装 Python 后端。'
-tarball: https://github.com/shinerain1/dsh-project-2/releases/download/v0.1.0/dsh-label-workbench-0.1.0.tgz
+tarball: https://github.com/shinerain1/dsh-label-workbench/releases/download/v0.1.0/dsh-label-workbench-0.1.0.tgz

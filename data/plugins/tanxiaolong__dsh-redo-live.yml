@@ -1,0 +1,6 @@
+url: https://github.com/tanxiaolong/dsh-redo-live
+name: tanxiaolong/dsh-redo-live
+category: session
+description:
+  en: "Edit and resend or regenerate a message you already sent, including while its answer is still streaming: the plugin stops the running turn through the official Session.cancel, waits for the session to go idle (8s cap), then rewinds that message in place the same way dsh-redo does. Command is /relive so it can coexist with dsh-redo."
+  zh: "生成中也能编辑已发送的消息：点「编辑重发」或「重新生成」时，如果这一轮还在跑，先通过官方 Session.cancel 停掉并等会话空闲（上限 8 秒），再按上游 dsh-redo 的方式原地撤回并重发。命令为 /relive，可与 dsh-redo 同时安装。"
