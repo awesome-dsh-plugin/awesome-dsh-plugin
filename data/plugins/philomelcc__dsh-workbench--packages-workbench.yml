@@ -1,5 +1,5 @@
-url: https://github.com/philomelcc/dsh-workbench
-name: philomelcc/dsh-workbench
+url: https://github.com/philomelcc/dsh-workbench/tree/main/packages/workbench
+name: philomelcc/dsh-workbench#workbench
 category: ui
 description:
   en: 'Workbench shell: mirrors native sidebar entries into a fixed system bar, adds a second row of page tabs for modules, and exposes a small module API for full-page plugins. The restart button needs an external supervisor (DSH_RESTART_CMD or a scheduled task named by DSH_RESTART_TASK).'
