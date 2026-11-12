@@ -1,0 +1,6 @@
+url: https://github.com/muhadif/dsh-wallet-tracker
+name: muhadif/dsh-wallet-tracker
+category: tools
+description:
+  en: 'Multi-chain wallet tracker: keep a named book of Solana, EVM and Bitcoin addresses, see balances, prices and estimated FIFO PnL per wallet or combined, and open any token for its chart, latest trades and top holders.'
+icon: https://raw.githubusercontent.com/muhadif/dsh-wallet-tracker/main/docs/icon-180.png
