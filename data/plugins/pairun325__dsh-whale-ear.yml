@@ -1,0 +1,6 @@
+url: https://github.com/pairun325/dsh-whale-ear
+name: pairun325/dsh-whale-ear
+category: voice
+description:
+  en: 'Two ears for the whale: hear system audio and the microphone, and transcribe speech to text offline with Whisper.'
+  zh: '给鲸鱼娘两只耳朵：听系统声音和麦克风，用 Whisper 本地离线转写成文字。'

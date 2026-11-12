@@ -1,0 +1,6 @@
+url: https://github.com/pairun325/dsh-ai-relay
+name: pairun325/dsh-ai-relay
+category: model
+description:
+  en: 'Bring your own models to DSH: ask an external provider such as Qwen and get the answer back inside the conversation.'
+  zh: '把别家模型接进 DSH：一句话问千问等外部模型，答案直接回到对话里。'
