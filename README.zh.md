@@ -368,6 +368,7 @@ dsh plugin --profile web add dshmarket
 - [astelirons-ai/dsh-local-monitor](https://github.com/astelirons-ai/dsh-local-monitor) — Windows 上 Harness 网页界面的浮动可拖动传感器面板：左侧显示 GPU-Z 的 GPU 温度、频率和专用显存，右侧显示 CPU 温度、频率和系统内存。
 - [Asterlyra/dsh-panel-organizer](https://github.com/Asterlyra/dsh-panel-organizer) — 把左侧栏用不到的面板按来源分组收起；「更多」按钮变成一键展开/折叠全部面板的开关。
 - [Asteroid-Code-Channel/dsh-workspace-atlas](https://github.com/Asteroid-Code-Channel/dsh-workspace-atlas) — AGENTS & Skills 工作台：编辑 AGENTS.md，按 Agent Skills 规范创建 SKILL.md，管理和重命名技能文件夹，并从 Anthropic、OpenAI、Cursor、Matt Pocock 四源技能目录安装技能。
+- [AstralHorizon4/dsh-shared-reading](https://github.com/AstralHorizon4/dsh-shared-reading) — 在 DSH 里读书：导入 EPUB、TXT、Markdown、HTML 分页阅读，划出句子就在这本书专属的 agent 会话里追问；四个 reading_* 工具按已读到第几章拒绝未读内容，书、进度与对话都留在本地纯文件里。
 - [asukasec/dsh-message-preview](https://github.com/asukasec/dsh-message-preview) — 右侧用户消息导航条，根据消息数量与可用高度自适应排布导航块，并支持悬停预览、键盘操作与点击跳转。
 - [asun-labs/dsh-plugin-agent-switch](https://github.com/asun-labs/dsh-plugin-agent-switch) — 提供支持页签和网格布局的 agent-switch CLI 交互终端、Codex 委派任务卡片，以及右侧面板中的实时与历史任务输出。需 PATH 上有 agent-switch、至少一个目标编码 CLI，并在插件页放行 node-pty 原生构建；目前只在 Windows 验证过。
 - [asxiuxiu/dsh-quick-open](https://github.com/asxiuxiu/dsh-quick-open) — Web GUI 的快速打开面板：Ctrl+P 在会话工作区的内存索引上做模糊检索（约 5.1 万条目，查询中位数 5 ms），支持逐段路径锚定、dir: 与 file: 前缀、Tab 目录下钻与 :行号 跳转；选中文件走 DSH 原生右栏打开，Ctrl+Enter 把文件引用放进会话草稿。另为内置文件预览补上文件内查找（Ctrl+F）与选中加入会话。
@@ -8889,6 +8890,7 @@ dsh plugin --profile web add dshmarket
 - [hi-wenw/dsh-telegram-channel](https://github.com/hi-wenw/dsh-telegram-channel) — Telegram 手机遥控器：附着本机正在跑的 Web 会话，支持 /sessions 工作区→会话选择、/last 查看上次问答、/model 切换模型，以及原生 Rich Message 回复。
 - [hifengzy/dsh-sound-notify](https://github.com/hifengzy/dsh-sound-notify) — 在 DSH 任务完成、失败或等待授权时播放提示音，并提供分类开关。
 - [hmlyx/dsh-notify](https://github.com/hmlyx/dsh-notify) — 在输入框右边加了一个泡泡窗口，你可以接入插件或者告诉 AI 什么时候使用它。
+- [HMYDK/dsh-notify](https://github.com/HMYDK/dsh-notify) — 会话完成一轮任务或需要你审批时，弹出系统桌面通知。
 - [HonestShine/dsh-desktop-notify](https://github.com/HonestShine/dsh-desktop-notify) — DSH 的原生桌面通知。窗口在后台时权限确认直接出现在系统通知里；平台支持通知按钮时，点「拒绝 / 允许一次」即把结果交回宿主审批流程，切回窗口或超时则退回应用内审批面板。权限确认与提问还会播放独立于窗口焦点的交互提示音；任务完成、提问、错误提醒、通知铃声与提示音都在「通知提醒」设置页配置。
 - [HOPE-LGNF/dsh-state-notifier](https://github.com/HOPE-LGNF/dsh-state-notifier) — 为 DeepSeek Harness 提供五类任务状态提醒（完成、审批、提问、受阻、出错）：四种浏览器合成音方案、可在通知中显示提问正文、可选的原生 Windows/WSL 通知通道（可越过专注助手），没有就绪浏览器时降级为终端 BEL。
 - [hoyin-law/dsh-feishu-cli](https://github.com/hoyin-law/dsh-feishu-cli) — 通过飞书官方 lark-cli 接入 DeepSeek Harness：侧边栏面板完成应用初始化与扫码登录，内置命令控制台，并提供 Agent 工具执行任意 lark-cli 命令，覆盖 18 大业务域、200+ 高层命令与全量 OpenAPI；首次使用时自动下载对应平台的官方 CLI（Windows / macOS / Linux）。
