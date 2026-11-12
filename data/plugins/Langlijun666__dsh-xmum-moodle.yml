@@ -1,0 +1,6 @@
+url: https://github.com/Langlijun666/dsh-xmum-moodle
+name: Langlijun666/dsh-xmum-moodle
+category: tools
+description:
+  en: 'XMUM Moodle in the sidebar: courses grouped by term, a schedule merged from the calendar, assignment and quiz deadlines and dated announcements, and batch downloads filed by term, course and material type.'
+  zh: '把 XMUM 的 Moodle 搬进侧边栏：课程按学期分组，日程合并日历、作业与测验截止时间以及带日期的公告，批量下载按学期、课程和资料类型归档。'
