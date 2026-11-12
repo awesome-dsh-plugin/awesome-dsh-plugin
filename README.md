@@ -3213,6 +3213,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zxbingoo/dsh-minimalist-appearance](https://github.com/zxbingoo/dsh-minimalist-appearance) - Color and conversation-background presets for DeepSeek Harness, preserving native typography, layout, and interactions.
 - [zys2026/dsh-theme-tide](https://github.com/zys2026/dsh-theme-tide) - Coastal light and dark palette for the DeepSeek Harness web GUI, built as a token-only ThemeRuntime overlay covering all 107 official alias tokens.
 
+[DeepSeek to PDF](https://chromewebstore.google.com/detail/ecmcbpjdknbbcfbohfcjjilgkgclgdbc) - Export DeepSeek chats to PDF, Markdown, or JSON. One-click archiver with full formatting and math support.
 ### Models & Providers
 
 - [01NGVI-QINGYI/dsh-mistral-pro](https://github.com/01NGVI-QINGYI/dsh-mistral-pro) - Mistral subscription for DeepSeek Harness: model route, multi-account failover, and a composer usage panel.
@@ -10768,4 +10769,3 @@ Listed here? Show it off:
 This is a community-maintained index. Plugins are developed and maintained by their respective authors; listing here is not an endorsement, and no guarantees are made about any plugin's safety, quality, or maintenance. Installing a plugin runs third-party code on your machine — review the source and install at your own risk. This project is not affiliated with DeepSeek.
 
 Issues here are for the list and its website only. Problems inside the plugin market UI go to [dsh-market](https://github.com/dsh-market/dsh-market/issues); problems with `dsh` itself go to [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness/issues); a bug in a plugin goes to that plugin's own repository.
-
