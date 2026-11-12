@@ -2,5 +2,5 @@ url: https://github.com/huangziyuan-general/dsh-novel-forge
 name: huangziyuan-general/dsh-novel-forge
 category: workflow
 description:
-  en: 'AI novels die four ways: settings drift, forgotten context, padded chapters, machine-flavored prose — this plugin seals all four in code. An unapproved outline blocks the chapter; ledger value changes are rejected on the spot; repeated passages are caught by deterministic audit; a six-dimension AI-flavor scan costs zero tokens. The right-panel forge covers TTS playback, whole-book checks and batch drafting with checkpoint resume. 24 novel_* tools enforce all of it — proposal-only revisions, old-draft extraction and semantic teardown included. You tell the story; the code keeps the gates.'
-  zh: 'AI 写长篇的四个死法：设定崩、看不见前文、水文超字数、满屏 AI 味——这个插件全用代码堵死。细纲不批准就不给写章，设定改值直接拒绝，重复句段机审拦下，六维去 AI 味扫描零 token。右侧栏锻炉面板带听书、全书体检、批量起草断点续跑；24 个 novel_* 工具，你只管讲故事，把关交给代码。'
+  en: 'Novel-writing guardrails: 24 novel_* tools enforce fact-ledger consistency, outline and chapter gates, a deterministic machine audit with a zero-token AI-flavor scan, and proposal-only revisions; a right-panel workbench covers reading, TTS playback, whole-book checks and batch drafting with checkpoint resume.'
+  zh: '网文写作护栏：24 个 novel_* 工具把设定账本一致性、细纲与章节门禁、确定性机审（含零 token 的去 AI 味扫描）和仅提议式修订落到代码里；右侧工作台支持阅读、TTS 朗读、全书检查和带断点续跑的批量起草。'
