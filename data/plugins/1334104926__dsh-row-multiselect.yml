@@ -3,7 +3,7 @@
 # 放在那个仓库里，一条 PR 只加这一个文件。
 url: https://github.com/1334104926/dsh-row-multiselect
 name: 1334104926/dsh-row-multiselect
-category: ui
+category: session
 icon: https://raw.githubusercontent.com/1334104926/dsh-row-multiselect/main/assets/icon-180.png
 description:
   en: Multi-select sessions in the sidebar and archive the whole batch at once, through the same archive call the row action uses.
