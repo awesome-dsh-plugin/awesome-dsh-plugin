@@ -3115,6 +3115,7 @@ dsh plugin --profile web add dshmarket
 - [ShokouP/dsh-theme-liuguang#liuguang](https://github.com/ShokouP/dsh-theme-liuguang/tree/main/liuguang) — 给 DSH 界面的两套可切换设计语言：内部发光的液态玻璃，与米色/血红/墨黑的苏联构成主义海报；附带个性化面板、投放式 CSS 皮肤包与 7 种表情的鲸鱼娘桌宠。
 - [Sim-xia/dsh-vscode-theme](https://github.com/Sim-xia/dsh-vscode-theme) — 导入为 Visual Studio Code 设计的 .vsix 主题文件并应用到 DSH Web UI。
 - [Simon-yyy/dsh-theme-escook](https://github.com/Simon-yyy/dsh-theme-escook) — 移植自 VS Code 经典的彬哥主题：包含 4 款经典美学配色（经典暗黑、柔和暗黑、紫韵浅色、柔和浅色）与高对比度语法高亮。
+- [simonguo/dsh-icons](https://github.com/simonguo/dsh-icons) — 使用本地打包的 vscode-icons 图标和文件名映射替换 DSH 原生文件树的文件与文件夹图标，保留原生交互及文件夹展开状态。
 - [skymecode/dsh-deep-diving](https://github.com/skymecode/dsh-deep-diving) — 为“Deep diving...”状态行添加可选动态皮肤，并支持调整尺寸和可选状态文案替换。
 - [SLin-code/dsh-custom-skin](https://github.com/SLin-code/dsh-custom-skin) — DSH Web 的浏览器本地壁纸与半透明面板插件，支持多图切换、填充与位置选择、遮罩、模糊和面板透明度调节。
 - [Small-tailqwq/dsh-deep-whale#maid-atelier](https://github.com/Small-tailqwq/dsh-deep-whale/tree/main/maid-atelier) — DSH Web 鲸鱼娘皮肤系列（深海女仆工坊 maid-atelier）。
@@ -3681,6 +3682,7 @@ dsh plugin --profile web add dshmarket
 - [Venshell/dsh-zcode-startplan](https://github.com/Venshell/dsh-zcode-startplan) — 把 ZCode 赠送的免费 plan 接进模型选择器：多账号池轮换、按账号的限流与额度展示、bigmodel/zai 双渠道设备登录。
 - [verneuil/dsh-ocg-session-head](https://github.com/verneuil/dsh-ocg-session-head) — 为以自定义供应商名接入的 OpenCode Go 路由，按会话注入 x-opencode-session 请求头：走宿主官方 llm-pi-ai/request-headers 瀑布；零依赖、不替换 fetch，且不覆盖他人已写入的同名头。
 - [verson00/dsh-local-llm](https://github.com/verson00/dsh-local-llm) — 在设置页管理本机 llama.cpp 的 Qwen3.5-4B（仅 Windows + NVIDIA GPU，8 GB 显存可跑 4B Q4）：启停与重启、启动参数、部署路径与存在性检测、把模型路由与压缩策略同步进 profile patch、本机请求捕获代理，以及一个按文件路径把翻译/OCR/抽帧杂活交给本地模型的 local_worker 工具。需自备 llama-server.exe（在 b12069 验证）与 Qwen3.5-4B 的 GGUF 量化 + mmproj 文件，视频抽帧另需 ffmpeg。
+- [Vhow123/dsh-model-probe](https://github.com/Vhow123/dsh-model-probe) — 检测 DSH 已配置模型的连接、行为指纹及动态或自定义 SVG 生成能力，支持 SVG 快速模式限制、并发控制、耗时与 Token 统计及安全清洗的预览。
 - [VICqiufeeng/dsh-minimax-connect](https://github.com/VICqiufeeng/dsh-minimax-connect) — 把本机已登录的 MiniMax Code（Mavis）订阅接入 DSH 作为模型 provider，自己完成 OAuth 续期所以桌面客户端可以一直关着，并提供积分、签到与订阅额度面板。
 - [Vikrant-Aleph/dsh-opencode-bridge](https://github.com/Vikrant-Aleph/dsh-opencode-bridge) — 在 DSH 中使用 OpenCode 免费模型，支持模型列表动态刷新与可选的代理出口轮换，并提供默认拒绝不安全转换的工具桥与离线、按 Agent 作用域的兼容性审计。
 - [vitas/dsh-model-pricing](https://github.com/vitas/dsh-model-pricing) — DSH 设置页中的模型价格表：约 7,250 个模型 / 213 个提供商（叠加本地路由目录），诚实的最低标价比较、按实际路由计价的会话成本、缓存泄漏归因，以及经验证的促销信息源。
