@@ -2,5 +2,5 @@ url: https://github.com/karla-zhang/dsh-plugin-account-sync
 name: karla-zhang/dsh-plugin-account-sync
 category: tools
 description:
-  en: Syncs the same DeepSeek account's terminals: plugin inventory and enablement, app settings, selected workspace files, session logs and skills / agent presets. Four transports (shared folder, git, WebDAV, LAN) and five independent content toggles, with a dry-run plan, conflict copies and additive-only session import.
-  zh: 同步同一 DeepSeek 账号下的多台终端：插件清单与启用状态、应用设置、选定的工作区文件、会话记录、技能 / Agent 预设。四种传输方式（共享文件夹、Git、WebDAV、局域网）与五类独立内容开关，支持预演计划、冲突副本和会话只增不改。
+  en: "Syncs the same DeepSeek account's terminals: plugin inventory and enablement, app settings, selected workspace files, session logs and skills / agent presets. Four transports (shared folder, git, WebDAV, LAN) and five independent content toggles, with a dry-run plan, conflict copies and additive-only session import."
+  zh: "同步同一 DeepSeek 账号下的多台终端：插件清单与启用状态、应用设置、选定的工作区文件、会话记录、技能 / Agent 预设。四种传输方式（共享文件夹、Git、WebDAV、局域网）与五类独立内容开关，支持预演计划、冲突副本和会话只增不改。"
