@@ -1,0 +1,7 @@
+url: https://github.com/SoulZhou/dsh-multi-root-files
+name: SoulZhou/dsh-multi-root-files
+category: git
+description:
+  en: 'File explorer tab that lists the session workspace root together with every additional root registered through multi-root-workspace, so sibling checkouts are browsable in one tree; clicking a file previews it inline (line-by-line with git status badges, images, and rendered Markdown with a preview/source toggle), and a right-click offers copy-path and reveal-in-file-manager.'
+  zh: '文件浏览器页签，把会话主目录与 multi-root-workspace 登记的每个附加根放进同一棵树：平级仓库一键切换浏览；点文件右侧内联预览（逐行源码带 Git 状态徽标、图片直显、Markdown 排版渲染并可切回源码），右键可复制路径或在系统文件管理器中打开。'
+icon: https://raw.githubusercontent.com/SoulZhou/dsh-multi-root-files/main/assets/icon-512.png
