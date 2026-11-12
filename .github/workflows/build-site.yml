@@ -129,7 +129,14 @@ jobs:
       #    each push build rebuilt docs/ from it, undoing the nightly. Live
       #    counts ran ~42% under npm's own figures with no staleness signal.
       #    Restoring the nightly's copy here is what makes the refresh stick.
-      - uses: actions/cache@v4
+      #
+      # Restore here, save only after a build that actually probed (the
+      # `Save downloads cache` step below). With a save in every run's
+      # post-step, a push build that skipped the probes re-saved exactly what
+      # it had restored under a newer key; prefix restores order by creation
+      # time, so that stale copy masked the nightly's fresher one and the site
+      # sat a day behind until the next nightly (#14322).
+      - uses: actions/cache/restore@v4
         with:
           path: data/downloads.json
           key: downloads-v1-${{ github.run_id }}
@@ -144,6 +151,7 @@ jobs:
           key: updates-v1-${{ github.run_id }}
           restore-keys: updates-v1-
       - name: Build
+        id: build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # The nightly run is the authoritative refresh: it re-checks every
@@ -208,6 +216,7 @@ jobs:
             # which previously stranded the updates cache in a permanent miss
             # and failed every nightly.
             node scripts/probe-updates.mjs
+            echo "probed=1" >> "$GITHUB_OUTPUT"
           else
             echo "push build with cached probe data — skipping probes"
           fi
@@ -231,6 +240,13 @@ jobs:
           # executes nothing from the scanned package and opens no sockets.
           node scripts/probe-capabilities.mjs
           node scripts/build-site.mjs
+      # Only a build that ran the probes has anything newer to remember.
+      - name: Save downloads cache
+        if: steps.build.outputs.probed == '1'
+        uses: actions/cache/save@v4
+        with:
+          path: data/downloads.json
+          key: downloads-v1-${{ github.run_id }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
