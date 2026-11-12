@@ -1,0 +1,7 @@
+url: https://github.com/gaolin89898/dsh-kite
+name: gaolin89898/dsh-kite
+category: remote
+description:
+  en: P2P, end-to-end encrypted remote access to DeepSeek Harness, CodeX, Claude Code, Pi and other agent workspaces from web and mobile clients.
+  zh: 基于 P2P 网络与端到端加密，从手机、浏览器和电脑远程访问 DeepSeek Harness、CodeX、Claude Code、Pi 等工作区。
+icon: https://raw.githubusercontent.com/gaolin89898/dsh-kite/main/icon.png
