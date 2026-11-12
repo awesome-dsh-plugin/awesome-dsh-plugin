@@ -358,7 +358,7 @@ dsh plugin --profile web add dshmarket
 - [ARustamA/dsh-strata-monitor](https://github.com/ARustamA/dsh-strata-monitor) — 在 DeepSeek Harness 图形界面中实时监控本地 Strata 模型服务：状态、令牌速率、显存、GPU 与 CPU 温度以及上一次请求，显示在输入框旁。
 - [Arvin-work/dsh-plugin-file-annotate](https://github.com/Arvin-work/dsh-plugin-file-annotate) — DSH 右侧栏可批注文件编辑器，提供懒加载文件树、行内批注、跨文件批注导航、Markdown 预览，以及批注加入对话草稿。
 - [asd13006/dsh-multi-lang-ui](https://github.com/asd13006/dsh-multi-lang-ui) — 為 DeepSeek Harness Web UI 語言選單新增六種語言（繁體中文、日本語、한국어、Français、Deutsch、Español）：各語言逐條精譯，缺字串自動兜底（繁中即時簡轉繁、其他語言回退英文），官方更新與第三方插件都能覆蓋。
-- [asfre/dsh-mcp-global-manager](https://github.com/asfre/dsh-mcp-global-manager) — 扫描本机各工具的 MCP 配置（28 个内置源，支持自定义源），把差异同步进 DSH，并在 DSH 侧栏直接导入、写回或增删改 MCP 服务器。
+- [asfre/dsh-mcp-global-manager](https://github.com/asfre/dsh-mcp-global-manager) — 扫描本机各工具的 MCP 配置（28 个内置源，支持自定义源），把差异同步进 DSH，并在 DSH 侧栏直接导入、同步回或增删改 MCP 服务器。
 - [ashz555/dsh-term-glossary](https://github.com/ashz555/dsh-term-glossary) — 在 DSH 对话里选中一个术语、点旁边的「搜索」按钮，就地解释基本含义、用途与用法，并显示这次回答消耗的 token；该调用是旁路调用，不写入会话日志。
 - [asots/dsh-longsession](https://github.com/asots/dsh-longsession) — 在会话标题栏添加带深浅色状态圆点的可逆「收起历史」开关：未收起时点击卸载页面已渲染的旧历史、只保留最近两轮，按钮变为「已收起历史」；再点还原之前的窗口。手动还原后本会话不再自动收起；阈值与请求上限在 设置 → 长会话。
 - [astelirons-ai/dsh-local-monitor](https://github.com/astelirons-ai/dsh-local-monitor) — Windows 上 Harness 网页界面的浮动可拖动传感器面板：左侧显示 GPU-Z 的 GPU 温度、频率和专用显存，右侧显示 CPU 温度、频率和系统内存。
@@ -6320,7 +6320,7 @@ dsh plugin --profile web add dshmarket
 - [taxueseek/argo#dsh-plugin](https://github.com/taxueseek/argo/tree/main/packages/dsh-plugin) — 面向 agent 的统一搜索与证据核验：120+ 引擎多语言路由，垂直域与结构化模态卡，10 个 MCP 工具与 wide_research 编排，fetch 核验回填证据分的证据闭环。
 - [taxueseek/dsh-snippets](https://github.com/taxueseek/dsh-snippets) — DSH 极简片段/命令工具箱：5 个工具，一个可手工编辑的 JSONL 文件，零 UI、零数据库、零网络，只有明确说存才存。
 - [TecFancy/dsh-deeptutor](https://github.com/TecFancy/dsh-deeptutor) — DeepTutor 学习辅导桥接插件：通过 deeptutor_run / deeptutor_kb / deeptutor_note 工具为 agent 接入深度讲解、自测题、学习路径规划、个人知识库检索（RAG）与笔记归档。
-- [tedcriss/dsh-matlab](https://github.com/tedcriss/dsh-matlab) — 把 MathWorks 的 MATLAB Agentic Toolkit 技能与 MATLAB MCP Server 工具接入 DeepSeek Harness。需要本机 MATLAB R2021a 及以上。从插件自己的预构建 Release 包安装。通常不需要重启 DSH：市场会热挂载插件，刷新页面即可看到 MATLAB 设置页；只有市场提示热挂载失败时才需要重启。默认（autoProvision）首次使用时会下载 MathWorks MCP Server 并安装工具包的最新 Release。下载区域为 china 或配置了 GitHub 前缀时，两者都会先经实测最快的加速前缀（插件自己的、DSH 市场的，或中国区内置的 gh-proxy.com、ghfast.top）下载，失败再直连。能读取 Release 元数据时，下载的 MCP Server 二进制会按 GitHub 公布的资产 SHA-256 摘要校验，不一致就拒绝安装；api.github.com 连不上时摘要也经同一个镜像读取，这时的校验只能发现下载损坏或被截断。MathWorks 遥测默认关闭，把 disableTelemetry 设为 false 才会重新开启。
+- [tedcriss/dsh-matlab](https://github.com/tedcriss/dsh-matlab) — MathWorks 官方 MATLAB Agentic Toolkit 技能包 + MATLAB MCP Server 连接器。要求本机版本为 MATLAB R2021a 及以上。支持在设置页自定义开启技能组。该技能包由 MathWorks 官方仓库 https://github.com/matlab/matlab-agentic-toolkit 提供，MATLAB 相关操作触发率达到 90% 以上，可以调用原生 MCP 服务器，让你的 AI 完全规范化工作。
 - [Tencent/WeKnora#dsh-weknora](https://github.com/Tencent/WeKnora/tree/main/packages/dsh-weknora) — 把 WeKnora 知识库接入 dsh 的四个只读工具：列出知识库、混合检索原文片段、按顺序还原单篇文档，以及直接取用 WeKnora 自己带引用的 RAG 或 ReAct agent 回答（含可续聊的 session id）。
 - [TencentCloudBase/CloudBase-AI-Toolkit#dsh-plugin](https://github.com/TencentCloudBase/CloudBase-AI-Toolkit/tree/main/dsh-plugin) — 把腾讯云 CloudBase 后端接入 DeepSeek Harness——在对话里搭好并部署全栈应用，查询结果渲染为表格卡片（分页、排序、导出 CSV），部署后可预览真实域名，并提供 CloudBase MCP 工具集（`mcp__cloudbase__*`），登录走 device-code 流程。
 - [terry2010/dsh-rss-news-daily](https://github.com/terry2010/dsh-rss-news-daily) — 方便等待 AI 回复时看一眼新闻的 RSS/新闻阅读器。内置订阅源库，可自定义源；抓取管线自动翻译外文新闻、LLM 逐条评分，自动生成每日「日报」和每小时「快报」，解决信息过载；具有数据备份恢复，偏好自定义等功能。
@@ -6913,7 +6913,7 @@ dsh plugin --profile web add dshmarket
 - [SZMY-haruhi/dsh-tavily](https://github.com/SZMY-haruhi/dsh-tavily) — 为 DSH 提供 Tavily 网页搜索：设置开关、默认无 Key，以及连通测试。
 - [T-Markus-Liang/dsh-webmcp](https://github.com/T-Markus-Liang/dsh-webmcp) — WebMCP 桥接器：让 agent 通过内置无头 Chromium，发现并调用网站按 W3C WebMCP 协议暴露的站点工具。
 - [Tabbit-Browser/dsh-tabbit](https://github.com/Tabbit-Browser/dsh-tabbit) — 让 DeepSeek Harness 能够控制 Tabbit 浏览器：安装即自动加载 tabbit-browser skill，检测国际版 Tabbit 与国内版 Tabbit Browser 正式版（>= 1.9.0），检查 tabbit-cli 常驻运行时，按平台诊断调用 CLI 所需的 DSH sandbox 模式，并在没有合格版本时通过后台任务下载与系统地区匹配的正式版安装包。
-- [tao1020/dsh-chrome-use](https://github.com/tao1020/dsh-chrome-use) — 操纵你正在使用的 Chrome 浏览器：新建或复用已登录的标签页，让模型读取页面、点击、填写、拖拽页面元素、滚动、截图，新建标签页并分组、关闭本会话打开的标签页，并查看控制台与网络日志，调试浏览器等。需要 Chrome 120 或更新版本；扩展从 Chrome 应用商店安装，用 8 位配对码连接。
+- [tao1020/dsh-chrome-use](https://github.com/tao1020/dsh-chrome-use) — 操纵你正在用的 Chrome：复用已登录的标签页，读取页面、点击、填写、拖拽、滚动、截图、上传文件、导出 PDF，查看控制台与网络日志，共 33 个工具。多个 Harness 可以同时连同一个 Chrome，各自操作不同标签页，同一个标签页只归一个 Harness，不会互相抢；它们之间还能互相留言传话。前台模式可以关闭，关闭后操作不抢窗口焦点。需要 Chrome 120 或更新版本；装扩展后用 8 位配对码连接。
 - [TC635807/better-crawler4agent](https://github.com/TC635807/better-crawler4agent) — 把真实浏览器抓取注册进 DSH profile：fetch_url 与 fetch_urls 渲染 JS 页面与中文反爬站点（知乎、CSDN、掘金、博客园），返回带分层诊断的干净正文 JSON，crawler_status 报告浏览器是否可用。装好后需要一次性安装 Python 依赖。
 - [Tencent/BrowserSkill#dsh-plugin-browserskill](https://github.com/Tencent/BrowserSkill/tree/main/packages/dsh-plugin-browserskill) — BrowserSkill 的 DeepSeek Harness 浏览器自动化桥接插件，通过原生浏览器工具控制可见的 Chrome 和 Edge Agent Window，支持可访问性与 VOM 页面观察、截图、隔离的多会话控制和 Web UI 实时观察浮层。
 - [Tests4gptplay/dsh-dots](https://github.com/Tests4gptplay/dsh-dots) — 在 DSH 全幅页面使用 ChatGPT Dots，支持 Desktop 启动预加载、切换面板保留网页状态、中英文主题工具栏、刷新和外部浏览器打开。可选的登录保持（仅 DSH Desktop）：设置页按钮会先备份、再修改 DSH Desktop 安装目录里 app.asar 的浏览器分区代码（可「恢复原版」），需完全重启 DSH，DSH 升级后须重新应用；带系统代码签名的 macOS 应用会被拒绝。
@@ -8662,7 +8662,7 @@ dsh plugin --profile web add dshmarket
 - [Shyboy0499/dsh-git-tools](https://github.com/Shyboy0499/dsh-git-tools) — 为 DeepSeek Harness 提供四个零依赖本地 git 工具（status、diff、log、commit），作用于会话工作区。
 - [simonguo/dsh-git-decorations](https://github.com/simonguo/dsh-git-decorations) — 在 DSH 原生文件树中显示只读 Git 状态颜色、文件标记和目录变更汇总，提供状态缓存及手动刷新按钮。
 - [songni370/dsh-plugins-git-sync](https://github.com/songni370/dsh-plugins-git-sync) — 用你自己的 Git 仓库备份、恢复并双向同步 DSH 插件与配置，支持冲突处理、快照与 6 个 Agent 工具。
-- [SoulZhou/dsh-multi-root-changes](https://github.com/SoulZhou/dsh-multi-root-changes) — Git 页签，把会话主目录与 multi-root-workspace 登记的每个附加根放在一起展示：平级仓库各自一节，带自己的分支、ahead/behind、增删行数、目录树与提交历史；点文件看 unified diff（未跟踪文件显示全文），点提交看该提交的 patch。每节还带提交框，只暂存并提交列出的文件（`git add -- <files>` + `git commit -- <files>`）。
+- [SoulZhou/dsh-multi-root-changes](https://github.com/SoulZhou/dsh-multi-root-changes) — Git 页签，把会话主目录与 multi-root-workspace 登记的每个附加根放在一起展示：平级仓库各自一节，带自己的分支、ahead/behind、增删行数、目录树与提交历史。点文件看 unified diff（未跟踪文件显示全文），Markdown 文件默认排版渲染、可切回 diff/源码。每节带提交框，只提交已勾选的文件（`git add -- <files>` + `git commit -- <files>`），信息留空自动 AI 生成，支持提交、推送与提交+推送；工具栏保留仓库切换、按范围刷新、逐文件勾选，以及等比缩放整个面板的字体大小设置。
 - [STARDUSTLC666/dsh-review](https://github.com/STARDUSTLC666/dsh-review) — 绑定代码快照的多智能体 Git 审阅，支持独立复核、多数投票、问题处置追踪和 AI 审阅门禁。
 - [Starfie1d1272/dsh-github-skills](https://github.com/Starfie1d1272/dsh-github-skills) — 四个面向 GitHub 工程工作流的 DSH Skill：PR 分诊、review 反馈、GitHub Actions 诊断和安全的 draft PR 发布；优先复用现有 DSH 能力，必要时回退到 gh/git。
 - [sunshaobei/dsh-session-review](https://github.com/sunshaobei/dsh-session-review) — 输入框上方的条带列出当前会话修改过的文件（默认折叠），Review 按钮打开会话变更面板，基于会话自身的 edit/write 工具结果展示前后差异块，无需 git。
@@ -8671,7 +8671,7 @@ dsh plugin --profile web add dshmarket
 - [temotee2103/dsh-ci-co-pilot](https://github.com/temotee2103/dsh-ci-co-pilot) — 让 DeepSeek Harness Agent 化身 GitHub 副驾：PR 审查、CI 失败修复、Issue 分类与自动发版说明。
 - [TiChuXiXi/dsh-git-vcs](https://github.com/TiChuXiXi/dsh-git-vcs) — 右侧栏的 IDEA 风格 Git 面板：本地变更与按文件勾选提交、提交树与提交详情、分支 / 远程 / 贮藏管理、带凭据兜底的推送，以及 git 命令流水，全部通过原生 git CLI 执行。
 - [Tlyer233/dsh-vscode-review#dsh-review](https://github.com/Tlyer233/dsh-vscode-review/tree/main/dsh-review) — 把 agent 的每次写入、编辑和 shell `rm` 删除记录进一个 shadow git 仓库，然后在 VS Code 里逐 hunk 接受或撤回。需要配合 dsh-review-vscode 扩展；面板只出现在 VS Code 的 webview 里，独立浏览器中的对话界面不变。
-- [tower666/dsh-checkpoints](https://github.com/tower666/dsh-checkpoints) — 按轮次为工作区拍 git 检查点：撤销某一轮的改动，或回到某一轮结束时的状态；执行前展示差异预览，回退本身还能再撤销。
+- [tower666/dsh-checkpoints](https://github.com/tower666/dsh-checkpoints) — 按轮次为工作区拍 git 检查点：撤销某一轮的改动，或回到某一轮结束时的状态，并把这些对话从模型上下文中遗忘；执行前展示差异预览。
 - [truelove-dreamer/dsh-plugin-git-workflow](https://github.com/truelove-dreamer/dsh-plugin-git-workflow) — 一等公民的 Git 工具：status / diff / log / commit / branch，参数与路径校验、零 shell 调用，杜绝注入。
 - [txy-ucas/dsh-workspace-snapshot](https://github.com/txy-ucas/dsh-workspace-snapshot) — 以结构化数据返回有界、相对仓库根的 Git 状态，不暂存、不提交，也不切换分支。
 - [UponNoise/dsh-code-review](https://github.com/UponNoise/dsh-code-review) — DSH 左侧栏代码审查面板。用当前配置的模型审查本地 diff、提交或 GitHub PR，采用 Codex 的审查 rubric，输出 P0–P3 分级发现。GitHub PR 审查需本机已登录 `gh` CLI。
@@ -10760,7 +10760,7 @@ dsh plugin --profile web add dshmarket
 - [zhanshenovo/dsh-brake-pedal](https://github.com/zhanshenovo/dsh-brake-pedal) — 一个制动踏板自检彩蛋。DSH 网页界面上有一颗可拖动的胶囊，做六脚全力制动测试：支架在第二到第六脚之间伪随机地断裂，也可能整轮通过，随后弹出一份虚构通报。踏板力由会话事实推导并在界面上标为推导值，而这些事实取自真实会话日志。它从不拦截、延迟或接管真实的停止动作。
 - [zhanshenovo/dsh-bushaoxin](https://github.com/zhanshenovo/dsh-bushaoxin) — 一个对话文风层：谈到「便宜的路有坑」这类取舍时，把警告换成另一种说法——快而便宜的是隔壁黑心店，慢而可靠的老店在立规矩。附带改写引擎，可把任意文本拧成固定骨架的对白，有五个互相独立的旋钮（幕数、招牌台词密度、收尾走向、种子、预设档）；一个四档强度滑条；以及 /bushaoxin 命令，按会话的工具调用记录生成一份段子式的「烧心指数」病历。每篇改写末尾永远附一行真实技术结论，不可关闭。零依赖、无构建步骤，引擎是纯函数。
 - [dsh-multi-role-groupchat](https://github.com/zhdzh-good/multi-role-groupchat/tree/main/multi-role-groupchat) — DeepSeek Harness 多角色群聊面板：你以一个角色加入，和 2–3 个 AI 成员对话；支持按对话对象智能路由、其他人按概率接话、显式 @ 接话，以及全局角色库、失败诊断、失败回应重试、群内消息搜索、场景便利贴、长历史分页、多标签同步、私有记忆与私人关系、模型目录下拉和角色/群配置 JSON 导入导出。
-- [zhing99-hash/dsh-dafeiyu-jinrong](https://github.com/zhing99-hash/dsh-dafeiyu-jinrong) — DeepSeek Harness 的桌面大肥鱼伙伴：可编辑气泡、动作包、行情情绪，以及只读的 dsh-meme 斗图图库。默认行为：每分钟用你的 DeepSeek API 密钥（或已登录的账户）查询一次余额并显示在气泡里；行情情绪默认关闭，开启后会轮询腾讯和东方财富的行情接口（填了 Tushare token 还会请求 Tushare）。它从约 200 MB 的发布包安装，里面带着桌面端助手程序。
+- [zhing99-hash/dsh-dafeiyu-jinrong](https://github.com/zhing99-hash/dsh-dafeiyu-jinrong) — DeepSeek Harness 的桌面大肥鱼伙伴：可编辑气泡工坊、动作包、IP 天气、每日倒计时、上证/深证/创指等大盘指数、股票一行、行情情绪，以及只读的 dsh-meme 斗图图库。默认行为：每分钟用你的 DeepSeek API 密钥（或已登录的账户）查询一次余额并显示在气泡里；行情情绪默认关闭，开启后会轮询腾讯和东方财富的行情接口（填了 Tushare token 还会请求 Tushare）。它从约 200 MB 的发布包安装，里面带着桌面端助手程序。
 - [zhu1090093659/dsh-pet](https://github.com/zhu1090093659/dsh-pet) — 常驻界面的鲸鱼娘：随智能体状态切换动画，可摸头互动、喂小鱼干养亲密度，从幼鲸一路养成。
 - [ziyefbk/podwhale#podwhale](https://github.com/ziyefbk/podwhale/tree/main/podwhale) — 个人 Agent 协作社区，提供桌宠聊天、阅读社交和主人审批。需要鲸群社区账号的受限 AI 令牌才能连接（未连接时仅为只读本地演示）；按 DSH 0.2.2-rc.1 构建。
 - [zmm863-commits/dsh-dice-game](https://github.com/zmm863-commits/dsh-dice-game) — 🎲 骰子大作战 — 六种经典骰子玩法（吹牛、猜红点、猜红蓝、猜大小、猜单双、猜顺子），单人 vs AI + PeerJS 联机，全量中英双语，侧边栏入口打开游戏面板。
