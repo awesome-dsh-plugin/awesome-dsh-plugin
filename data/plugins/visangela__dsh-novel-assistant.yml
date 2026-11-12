@@ -1,0 +1,7 @@
+url: https://github.com/visangela/dsh-novel-assistant
+name: visangela/dsh-novel-assistant
+category: workflow
+description:
+  en: 'Long-form fiction workflow for DSH: seven queryable bibles, edit-impact tracking, living relationship and plot maps, and a first-chapter tryout that picks your writer.'
+  zh: '长篇小说创作工作流：七份可查账的设定库、改稿影响追踪、活的图谱，以及用试笔稿选写手的机制。'
+tarball: https://github.com/visangela/dsh-novel-assistant/releases/download/v0.26.2/dsh-novel-assistant-0.26.2.tgz
