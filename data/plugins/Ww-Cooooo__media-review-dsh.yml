@@ -2,6 +2,6 @@ url: https://github.com/Ww-Cooooo/media-review-dsh
 name: Media Review DSH
 category: workflow
 description:
-  en: 'A Windows Harness adaptation of [Media Review Skill](https://github.com/Ww-Cooooo/media-review/releases/tag/v0.3.0-beta.11) for annotated audio/video review and revision comparison; other Agents with local file and command access can use the original Skill.'
-  zh: '基于 [Media Review Skill](https://github.com/Ww-Cooooo/media-review/releases/tag/v0.3.0-beta.11) 改造的 Windows Harness 音视频审片插件，支持标注、返修交接与逐条复核；其他支持本机文件访问与命令执行的 Agent 可使用原版 Skill。'
+  en: "A Windows Harness adaptation of [Media Review Skill](https://github.com/Ww-Cooooo/media-review) for AI video feedback: annotate frame regions or time ranges and jump to recognized speech or imported subtitle cues; other Agents with local file and command access can use the original Skill."
+  zh: "让 AI 视频改稿反馈更直接：框选画面、拖选时间段或定格写意见，点击识别台词或导入字幕定位；基于 [Media Review Skill](https://github.com/Ww-Cooooo/media-review) 改造的 Windows Harness 插件，其他支持本机文件访问与命令执行的 Agent 可用原版 Skill。"
 tarball: https://github.com/Ww-Cooooo/media-review-dsh/releases/download/v0.1.0-rc.8/media-review-dsh-0.1.0-rc.8.tgz
