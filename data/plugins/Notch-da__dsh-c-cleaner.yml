@@ -1,0 +1,7 @@
+url: https://github.com/Notch-da/dsh-c-cleaner
+name: Notch-da/dsh-c-cleaner
+category: tools
+description:
+  zh: "Windows C 盘清理：扫描临时文件、浏览器缓存、更新残留、服务日志与崩溃转储并逐项预览占用，只清理白名单目录、跳过目录联接与被占用文件，同一套实现还提供三个 Agent 工具。"
+  en: "C drive cleaner for Windows: scans temp files, browser caches, update leftovers, servicing logs and crash dumps with a per-item size preview, deletes only inside whitelisted paths while skipping junctions and in-use files, and exposes the same operations as three agent tools."
+# repo declares dsh.bundle.patch (./cordis.patch.yml) and dsh.client for the sidebar panel
