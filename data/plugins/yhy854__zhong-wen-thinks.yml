@@ -1,6 +1,6 @@
-﻿url: https://github.com/yhy854/zhong-wen-thinks
+url: https://github.com/yhy854/zhong-wen-thinks
 name: yhy854/zhong-wen-thinks
 category: session
 description:
-  en: 'Registers a system prompt section at order -900 that keeps the agent reasoning, planning and tool analysis in Simplified Chinese.'
-  zh: '在系统提示词 order -900 位置注册段落，让 Agent 的思维链、规划与工具调用分析保持简体中文。'
+  en: 'A Chinese-thinking plugin built for Chinese users: registers a system prompt section at order -900 so the agent reasons in Simplified Chinese.'
+  zh: '适合中国宝宝的中文思考插件：在系统提示词 order -900 注册段落，让 Agent 用简体中文思考。'
