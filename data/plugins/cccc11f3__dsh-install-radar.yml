@@ -1,0 +1,6 @@
+url: https://github.com/cccc11f3/dsh-install-radar
+name: cccc11f3/dsh-install-radar
+category: tools
+description:
+  en: 'Knows what your conversations installed. For every session it shows the packages, tools and programs that ended up on this machine — how large they are, where they live, and what removing them would cost. It also catches disk growth no session caused, such as temporary files left behind by browser automation.'
+  zh: '知道你每次对话往这台电脑里装了什么。按会话列出真正落到本机的依赖、工具与程序，给出体积、安装位置和卸载后会怎样；也能发现不是会话造成的磁盘增长，比如浏览器自动化留下的临时文件。'
