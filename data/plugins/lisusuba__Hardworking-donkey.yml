@@ -3,4 +3,4 @@ name: lisusuba/Hardworking-donkey
 category: ui
 description:
   en: "A full-viewport donkey-mill background for the DSH Web UI: an animated top-down donkey or a Chinese-character form circles the millstone, accelerating with the model's live token throughput and plodding slowly when idle; a bottom-right panel switches form, adjusts opacity and hides the scene, persisting in localStorage."
-  zh: "DSH Web UI 鐨勫叏灞忛┐鎷夌（鑳屾櫙锛氫刊瑙嗗姩鐢婚┐鎴栨眽瀛楀舰鎬佺粫纾ㄧ洏杞姩锛岃浆閫熼殢妯″瀷瀹炴椂 token 鍚炲悙鍔犲揩銆佺┖闂叉椂缂撴參韪辨锛涘彸涓嬭闈㈡澘鍙垏鎹㈠舰鎬併€佽皟鑺傞€忔槑搴︺€侀殣钘忚儗鏅紝璁剧疆淇濆瓨鍦?localStorage銆?
+  zh: "DSH Web UI 的全屏驴拉磨背景：俯视动画驴或汉字形态绕磨盘转动，转速随模型实时 token 吞吐加快、空闲时缓慢踱步；右下角面板可切换形态、调节透明度、隐藏背景，设置保存在 localStorage。"
