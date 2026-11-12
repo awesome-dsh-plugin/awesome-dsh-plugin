@@ -3321,6 +3321,7 @@ dsh plugin --profile web add dshmarket
 - [Asheblog/dsh-ollama-cloud](https://github.com/Asheblog/dsh-ollama-cloud) — Ollama Cloud 供应商：安装即配好聊天路由，按 Ollama 模型自身元数据公布每个模型的思维链档位（供 composer 的推理强度选择），模型清单可由端点自动刷新（/api/tags 与 /api/show，并带离线缓存），账户额度改从 /api/balance 读取并显示在 Models 页与侧栏（端点不上报时侧栏那行自动隐藏），还把 Ollama 的 web_search / web_fetch 作为可选的 DSH 网页能力提供方。
 - [AshenSeeker/dsh-subagent-switch](https://github.com/AshenSeeker/dsh-subagent-switch) — 未由调用方指定模型时，按任务类型从本机模型目录为每个子代理挑一个模型。免费与额度档合并后按逐模型能力标签排序；只有当便宜档里没有任何模型声明擅长这类工作时，才升到更贵的档。只有余额可读或账号接入的 provider 进候选池，其余仍列出但不参与路由。面板提供盖过自动顺序的逐模型手动优先级，以及放行/收回开关。
 - [Atlantis-LA/dsh-laci-engine](https://github.com/Atlantis-LA/dsh-laci-engine) — 面向 DSH 的本地模型调度插件（仅 Windows 10/11，需 DSH Desktop 0.2.x），内置控制台，支持引擎/模型导入、显存预估、加载关闭和 OpenAI 兼容网关。
+- [atlasmarkz/dsh-effort-pilot](https://github.com/atlasmarkz/dsh-effort-pilot) — 为 DeepSeek Harness 提供逐步思考强度驾驶：简单工具轮保持低档、失败与重活自动升一档，Agent 还能通过 set_effort 工具在不切换模型的情况下调整自身思考深度。
 - [Ayelsh/reasoning-setup](https://github.com/Ayelsh/reasoning-setup) — 为未声明思考档位的模型编辑推理强度档位与思考格式。
 - [Ayowait/dsh-official-reasoning-effort](https://github.com/Ayowait/dsh-official-reasoning-effort) — 输入框里的官方同款「模型 / 推理等级」控制。直接复用官方组件，即使网关模型（如 deepseek-v4.1-flash）未声明思考强度，也始终提供与官方一致的 Off/Low/High/Max 四档；上游未原生支持时，在面板底部显示一行小字提示。
 - [Ayowait/dsh-reasoning-effort-new](https://github.com/Ayowait/dsh-reasoning-effort-new) — dsh-reasoning-effort 的分支：输入框里的两级模型选择器（Provider 列表 + 右侧滑出的模型栏）、搜索与紧凑行，并保留推理强度滑块与最高档特效。
@@ -3345,6 +3346,7 @@ dsh plugin --profile web add dshmarket
 - [CARVIN94/dsh-router-codebuddy](https://github.com/CARVIN94/dsh-router-codebuddy) — dsh-router 的 CodeBuddy 供应商插件。单账号负责轮询式 OAuth 登录与令牌刷新，选号、冷却与签到交由 dsh-router 核心处理。
 - [CARVIN94/dsh-router-qoder](https://github.com/CARVIN94/dsh-router-qoder) — dsh-router 的 Qoder 供应商插件，同时覆盖国内版与国际版。以个人访问令牌认证、对 Qoder 的 cosy 网关签名请求，并把上游 SSE 转成 OpenAI SSE；模型列表同时上报上游显示名与 key，选号与冷却仍由 dsh-router 核心处理。
 - [CARVIN94/dsh-router-traework](https://github.com/CARVIN94/dsh-router-traework) — dsh-router 的 TRAE SOLO 供应商插件，移植自 traework2api。提供 traework 供应商这一免费 SOLO 聊天通道，并向 dsh-router 核心上报单账号状态。
+- [catfish1277-png/dsh-magpie-bridge](https://github.com/catfish1277-png/dsh-magpie-bridge) — 自动发现本机 Magpie 网关并同步聊天模型，支持 Codex 与 Gemini 生图并自动配置匹配的工作台生图来源。
 - [cc1104666/dsh-plugins#dsh-grok-online](https://github.com/cc1104666/dsh-plugins/tree/main/packages/dsh-grok-online) — 在本机跑一个 OpenAI 兼容反代，把 DSH 的对话请求转给 grok.online，无需 API key 即可在模型选择器里用它的两个对话模型。
 - [cc1104666/dsh-plugins#dsh-grok3ai](https://github.com/cc1104666/dsh-plugins/tree/main/packages/dsh-grok3ai) — 直连 grok3ai.org 仅用 iframe 嵌进去的两个公开 Hugging Face Space（MiniMax-VL-01 与 Llama-2-7B-Chat），当作 OpenAI 兼容模型使用。
 - [cc1104666/dsh-plugins#dsh-ima](https://github.com/cc1104666/dsh-plugins/tree/main/packages/dsh-ima) — 微信扫码登录 ima.qq.com（腾讯 IMA），在本机起一个 OpenAI 兼容反代，把请求翻译成它的 SSE 对话接口，让背后的四个模型出现在模型选择器中。
@@ -5104,6 +5106,7 @@ dsh plugin --profile web add dshmarket
 - [sidleo/llm-wiki#dsh-wiki](https://github.com/sidleo/llm-wiki/tree/main/packages/dsh) — 纯 OKF v0.2 Markdown 的通用 agent 知识库：13 个 wiki_* 读写工具、渐进披露、backlinks、AGENTS.md 门控写入、index/log 自动维护、lint 体检，以及命名多目录 bundle 切换（会话级或全局）。
 - [SiriusWJ/dsh-lite-memory](https://github.com/SiriusWJ/dsh-lite-memory) — SQLite 条目化记忆、日历到点提醒，以及 cron 驱动的定时 agent 任务；13 个模型工具，中英双语界面。
 - [skepsun/dsh-engram](https://github.com/skepsun/dsh-engram) — 零 LLM 自动捕获 + 符号化 \[ENGRAM\] 索引渐进披露，配 ESR-lite 任务/证据闭环（esr_task / esr_node / esr_close / esr_link）、按工作区的真实使用遥测与离线召回基准（npm run eval）。
+- [skyline654654/dsh-memory-drive](https://github.com/skyline654654/dsh-memory-drive) — 在 DSH 设置里查看、编辑、删除各记忆插件写下的记忆文件，并同步到一个网盘（冲突安全的三方同步）；其他网盘只做上传备份。
 - [slow-stack/mneme#dsh-mneme](https://github.com/slow-stack/mneme/tree/main/dsh-mneme) — 会做梦的记忆 — DeepSeek Harness 跨会话记忆插件：跨会话记住你与项目，空闲时自动巩固记忆（autoDream），冲突记忆先冻结待你裁决，全程可回放审计。记忆落在本机：SQLite 存储配可人工编辑的 Markdown 镜像；附带四路召回（关键词、向量、BM25、实体图谱）与交互式记忆库面板，另有 10 个模型工具、MCP 服务端、外部 API 与 CLI。摘要与巩固走你已配置的宿主模型；把嵌入换成本地模型后，语义检索可完全离线运行。
 - [SMPcosy/dsh-memnexus](https://github.com/SMPcosy/dsh-memnexus) — 统一长期记忆中枢：自动捕获对话沉淀为 L0 原始证据，后台分层蒸馏为 L1 事实 / L2 场景 / L3 画像（层数可配），BM25+模糊混合检索召回，13 个 memory_* 工具，记忆谱系可回溯到原始记录，可选 Hindsight 云记忆后端，内置记忆管理面板（设置页、侧边栏、独立整页三入口）。
 - [snaiheihei/dsh-snail-memory](https://github.com/snaiheihei/dsh-snail-memory) — 为 DeepSeek Harness 提供分层的全局与工作区记忆：Web 面板中查看、控制条目并调整记忆整理与整合设置；索引常驻上下文、详情按需加载，每个对话手动选择要加载的记忆层。
@@ -7915,6 +7918,7 @@ dsh plugin --profile web add dshmarket
 - [yanglaofish/dsh-skill-manager](https://github.com/yanglaofish/dsh-skill-manager) — DeepSeek Harness 技能生命周期管理：技能库（纯技能池）、工作区启用白名单、会话勾选三层模型；Web 设置面板与对话页内嵌视图，支持技能文件浏览/编辑、zip 与文件夹批量导入、引擎实际加载校验。
 - [yangyiqun747/dsh-plugin-playbook](https://github.com/yangyiqun747/dsh-plugin-playbook) — DeepSeek Harness 的经验复用与交付闸门：把成功任务沉淀为结构化 playbook，同质任务自动作为原生 Skill 召回；交付闸门经用户确认后，写文件前必须逐项拿到客观证据，否则动作被硬拦截。
 - [Yanshi-Robotics/yanshifu-plugin-cn](https://github.com/Yanshi-Robotics/yanshifu-plugin-cn) — 为《一起手搓机器人》SO-101 课程提供三个技能：yanshifu 读取学员的项目文件，判断进度并建议下一步；ask 根据四份配套资料回答问题；update 检查并更新本地配套资料。
+- [yanweiyi11/dsh-ponytail](https://github.com/yanweiyi11/dsh-ponytail) — 给 DeepSeek Harness 注入极简编码规则，附 review、audit、debt、gain、help 五个技能，支持按会话切换 lite/full/ultra，并可按固定上游提交同步规则。
 - [yeemio/dsh-owlrunkit](https://github.com/yeemio/dsh-owlrunkit) — 把 OwlCoda RunKit 技能加入 DSH 技能目录：目标、WorkItem、候选身份、验证回执、交接和恢复保存在项目工件中。只安装指令；项目本地的 owlrunkit CLI 仍需单独安装。
 - [yinhcao/yinchao-ai-music-skill](https://github.com/yinhcao/yinchao-ai-music-skill) — 根据提示词或歌词生成完整 AI 歌曲和 BGM，并支持参考音频创作与歌曲续写。
 - [Ylight-cpu/dsh-creative-studio](https://github.com/Ylight-cpu/dsh-creative-studio) — 面向 DeepSeek Harness 的美工与视频剪辑工具包——可分档抠图、局部重绘改图、标题与 logo 合成、平台规格批量导出与图片体检；视频侧含 AI 抠像换背景（RVM ONNX，另有绿幕色键路径）、淡入/滑入/打字机/卡拉OK 动效文字、53 种转场与风格化变体、光效与调色预设（支持 LUT），以及素材通览、精确裁切、字幕烧入、配乐混音与平台规格导出；通过内置引导脚本自备本地 Python 运行时。
