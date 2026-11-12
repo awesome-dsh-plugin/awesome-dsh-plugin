@@ -190,6 +190,7 @@ dsh plugin --profile web add dshmarket
 - [2370998716-jpg/dsh-turn-eta](https://github.com/2370998716-jpg/dsh-turn-eta) — 对话头部实时显示本轮耗时、token、速度与只减不增的倒计时预估；发送前在输入框上方预估产出 token、上下文大小、费用与耗时。
 - [2384418321/dsh-integration-settings](https://github.com/2384418321/dsh-integration-settings) — 在 DSH 设置里加两个可视化页面。MCP 管理以 JSON 为真理源整体重写 profile patch 受管区块（写入前做 YAML 校验与时间戳备份），并支持粘贴 mcpServers JSON、先列出将新增/将覆盖的条目再写入。思考解锁对每个 OpenAI 兼容网关探测它真正声明的思考档位并逐模型写回，手写的其他 YAML 片段逐字节保留；可用模型清单由独立按钮同步，先预览将新增/将移除，确认后与思考档位同批写入，也可绑定页面上的定时更新。
 - [2404376192/dsh-dian-du](https://github.com/2404376192/dsh-dian-du) — 点选回答中的段落或某一行代码，在右侧独立栏里向模型提问；左侧对话内容不被修改。
+- [2750599332-art/dsh-inkwell](https://github.com/2750599332-art/dsh-inkwell) — 输入框工具栏按钮：通过 Harness 的 LLM 路由把草稿提示词改写为更清晰、更完整的版本，并提供撤回控件恢复改写前的原文；设置页可填写风格关键词，并可单独指定优化所用的模型。
 - [2768651338/dsh-effort-slider](https://github.com/2768651338/dsh-effort-slider) — 仿 Claude Code 的推理等级滑块：无极拖动、松手吸附、WebGL 火焰跟随，任何自定义第三方模型/提供商都能获得真实生效的思考强度调节。
 - [2nd1st/dsh-plugin-open-app](https://github.com/2nd1st/dsh-plugin-open-app) — 把 open-mcp-apps 接进 DSH：每个 MCP app 都是侧边栏里自己的容器，带独立 workspace、会话与 App mode，应用下方是 agent 状态条，普通聊天里也能行内渲染 app。
 - [3309602454/dsh-quick-restart](https://github.com/3309602454/dsh-quick-restart) — DSH 会话标题栏的一键重启按钮：重启前会检查并警告正在运行的会话与后台任务，点击后关闭并重新启动桌面端，全程不弹控制台窗口。仅限 Windows 桌面版：通过临时的 Windows 计划任务完成重启，重启会中断正在运行的工作。
@@ -4107,6 +4108,7 @@ dsh plugin --profile web add dshmarket
 - [CresBigB/dsh-session-namer](https://github.com/CresBigB/dsh-session-namer) — 根据会话首条消息判断任务类型，为标题加上「emoji + 分类」前缀（探索、研究、修复、研发、设计、文档、配置、问答、整理），模型调用失败时自动降级为本地规则。
 - [Cui-CN/dsh-session-md-purge](https://github.com/Cui-CN/dsh-session-md-purge) — 在会话右键菜单加入可恢复的“删除会话”：归档会话、解除项目归属，并把会话目录连同该会话写过的 Markdown 文件移入 $DSH_HOME/session-trash；有运行中任务的会话会被拒绝。
 - [Curiouslv/dsh-session-board](https://github.com/Curiouslv/dsh-session-board) — 会话看板：悬浮球一览所有工作区会话，实时显示思考与工具进展、任务耗时、上下文用量，支持近 12h/30 天用量统计，点击直达会话。
+- [Cyberbolt/dsh-snapcompact](https://github.com/Cyberbolt/dsh-snapcompact) — DSH 上下文压缩插件：路由支持图片时，把会话历史的中段在本地渲染成单色位图帧交给视觉模型阅读；精确的首尾文本、有上限的精确 token 索引与 FILES 文件索引仍以文字保留。
 - [cyh3436332528/dsh-plugin-session-purge#plugin](https://github.com/cyh3436332528/dsh-plugin-session-purge/tree/main/plugin) — 永久删除 DSH 会话（而非仅归档），级联清理它的日志目录、投影缓存、工作区记账与子会话（子代理）。提供设置页面板：按工作区分组，显示体积、时间与「打开中 / 已归档 / 子会话 N / 无工作区」标记，支持筛选与批量删除，每条删除都在行下方内联二次确认。
 - [czm15053/dsh-peer-link](https://github.com/czm15053/dsh-peer-link) — 让 dsh 和 Claude Code 会话直接互发消息，附带可点击的会话列表卡片（搜索/刷新/弹窗发送）。
 - [d0ublecl1ck/dsh-session-radar](https://github.com/d0ublecl1ck/dsh-session-radar) — DSH Web 侧边栏的未读、待办与状态读数中枢：铃铛按顺序定位未读会话，快捷键依次走到正在等你输入的会话，⌘⇧, / ⌘⇧. 在访问过的对话之间前后切换；另有总览把未读与待决策会话分两区铺开；底部一行六项会话状态读数，每个图标都能点，点了跳到下一个同类会话；账本落在 host 半边，重启也不丢——未读会话重启后仍然显示行内绿色小标，启动时还会把上次被切断的会话列成清单，一键重发续跑消息。
@@ -4429,6 +4431,7 @@ dsh plugin --profile web add dshmarket
 - [MYCF711/dsh-session-superagent](https://github.com/MYCF711/dsh-session-superagent) — 会话级 superagent：盯一个 GitHub 仓库，issue/PR 有变化就唤醒本会话；需已登录 gh CLI，凭证留在插件内，不进模型。
 - [myqy91615-web/dsh-conversation-folders](https://github.com/myqy91615-web/dsh-conversation-folders) — 每个会话一个专属文件夹：自动存档对话记录，会话空闲 10 分钟后把调研产出的表格、图表等文件按类别归档并自动命名，会话菜单中提供删除入口，删除会话时连同文件夹一起彻底删除。
 - [Mzgnk/dsh-bz](https://github.com/Mzgnk/dsh-bz) — 三级规则注入器：长对话里反复重发规则，带熔断、内容指纹去重、会话持久化与设置面板编辑器。
+- [mzzsfy/dsh-plugin#dsh-keep-working](https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-keep-working) — 回合未声明结案就静默结束时自动补一条用户消息把 AI 拉回:结案规则(present,或末行 (TASK_DONE) / (TASK_BLOCKED: 原因))经文提示词常驻注入,按静默结束、可恢复错误、输出截断、重启中断分类补发,等待/冷却/退避可控;冷启动扫描存储会话恢复未结案回合,并重新武装宿主重启后 disarm 的 active goal。主开关与节奏在插件设置卡片里。
 - [mzzsfy/dsh-plugin#dsh-session-manager](https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-session-manager) — 会话生命周期:按可配置阈值与检查周期自动归档超期会话,归档面板支持取消归档与删除;删除把会话产物移入系统回收站,无回收站的环境降级到插件回收区,台账可把已还原的会话重新挂载。
 - [nannan-first/dsh-continuity](https://github.com/nannan-first/dsh-continuity) — 长任务续接：每轮结束自动写一条断点（做了什么、用了哪些工具，这一轮没正常结束时还差什么；下一步需手动调用 continuity_breakpoint 记录），同一工作区的新会话开头会把最近几条注入为快照，接着往下干而不是从头再来。同时给人设卡、配置这类文件存 SHA-256 指纹，事后能验出是否被人改过。四个工具（continuity_breakpoint / continuity_breakpoints / continuity_ledger / continuity_attest），数据是以纯 JSONL 存在 <工作区>/.dsh-continuity/，零依赖、不联网。注意：目前没有任何代码会自动写 ledger.jsonl，continuity_ledger 只能读。
 - [ne-ilyxa/dsh-session-drafts](https://github.com/ne-ilyxa/dsh-session-drafts) — Cursor 风格的新会话：每次点击都新建一个空白草稿会话（首条消息前即持久化），不再复用工作区唯一的空会话；侧栏新增草稿切换器，可同时保留多个空会话。
@@ -6077,6 +6080,7 @@ dsh plugin --profile web add dshmarket
 - [moldkey/dsh-plugin-mfgabc](https://github.com/moldkey/dsh-plugin-mfgabc) — mfgabc.com 只读页面查询：标准页、产业带城市指南、工艺集群与跨境合规，共 5 个工具；每个只返回页面状态、标题与链接，不含正文。仅网络访问。
 - [moldkey/dsh-plugin-mj7](https://github.com/moldkey/dsh-plugin-mj7) — mj7.cn 只读工具：检索标准、产品与材料，另有 HS 编码联想、Incoterms、贸易单证与人民币汇率，共 6 个工具。仅网络访问，不写本地。
 - [momasiku/dsh-pilot](https://github.com/momasiku/dsh-pilot) — 让 DeepSeek Harness 看见并操作 Windows 上的任何程序。模型直接看真实屏幕，自己驱动鼠标、键盘和窗口。特点是快：好几步动作在一次往返里跑完，输入前还能先把目标窗口聚焦，点击就落在正确的窗口上。你在桌面上能做的事它都能做，包括但不限于画 CAD、电路图仿真、发消息。
+- [monagisa/dsh-plugin-shop-accounts](https://github.com/monagisa/dsh-plugin-shop-accounts) — 把拼多多、淘宝/天猫、抖音、京东、1688 的商家店铺登录态集中管起来：一店一份隔离的 Chrome / ego lite 浏览器档案，上架与采集脚本复用同一份登录态；支持静默与定时检测、掉线自动代填、按「平台→采集域→指标」目录执行定时采集作业，以及只部署经校验 commit 的自更新。
 - [MonSp/dsh-analyze#dsh-analyze](https://github.com/MonSp/dsh-analyze/tree/main/packages/dsh-analyze) — DSH 本地数据分析工具：CSV/JSONL 入库一次后，用 head、schema、stats_describe、transform_agg、list、export、rm 在工作区 .dsh-analyze/ 存储上分析，由路径受限的 dsh-analyze CLI 执行。需另行安装该 Rust CLI（GitHub Releases 有 Windows x64、macOS、Linux x64 预编译包）并放入 PATH 或设 DSH_ANALYZE_CLI_PATH；缺失时插件不注册任何工具。
 - [moon16u/dsh-pouch#dsh-mcp-console](https://github.com/moon16u/dsh-pouch/tree/main/packages/dsh-mcp-console) — 插件页 MCP 服务器控制台：运行时管理官方 @deepseek-ai/dsh-mcp-client——新增/编辑/删除服务器、启停/重连、工具级开关、SSE 实时状态与工具列表、mcpServers JSON 导入、自动迁移 profile YAML 里的 MCP 条目；卸载后留下原生 fallback 块，同一批服务器仍可加载。
 - [moononnn/DeepSeek-Harness-biaoqingbao](https://github.com/moononnn/DeepSeek-Harness-biaoqingbao) — 表情包表达插件：让助手用表情包表达情绪，按情绪自动配图，含图库管理、AI 识图打标、方言口音、学我说话，还能点「和助手聊聊」直接调教标签。
@@ -9555,6 +9559,7 @@ dsh plugin --profile web add dshmarket
 - [muyuanjin/dsh-ptc-plus](https://github.com/muyuanjin/dsh-ptc-plus) — 把 DSH PTC 模式的顶层 run_code 变成会话绑定的持久 TypeScript REPL：变量与导入在多次 run_code 调用间保持可用，edit_run_code 只替换一行而无需重发整段，import/export 模块语法经 AST 改写适配，持久绑定在冷重启后由会话日志恢复。
 - [mwk719/dsh-restart](https://github.com/mwk719/dsh-restart) — 给桌面端 Windows 标题栏加一个「重启」按钮：点一下先弹出确认框（并说明有几个会话会被中断），确认后退出并重新打开应用。
 - [myd74108520/cadence-skill](https://github.com/myd74108520/cadence-skill) — 面向 Cadence Virtuoso 版图工程师的 SKILL 脚本助手：官方文档锚定的 API 检索（5 本 IC6.1.8 手册 3557 条，签名带置信度，查不到绝不臆造）＋不执行代码的深度静态检查——词法深度坐标系可精确判定跨行循环体与同行闭合，覆盖迭代中删除（copy 位置敏感）、printf 占位符与实参对账、循环内 nth O(N^2)、废弃 API（带页码引用），另有危险需求拦截与 CIW 错误日志定位修复。宿主半区零第三方依赖。
+- [mzzsfy/dsh-plugin#dsh-bug-perf](https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-bug-perf) — 官方修复落地前的宿主缺陷兜底:合并 session/follow 重复重建、终端输出停滞自愈、会话流空闲保活、任务状态流条数上限、会话加载停滞自愈、宿主侧会话列表投影瘦身、首屏历史窗口收敛。每项独立开关,宿主结构不匹配时该项跳过,记录原因或静默降级,不影响页面与其它补丁。
 - [mzzsfy/dsh-plugin#dsh-maintain](https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-maintain) — DSH 版本与运维一体化：自动发现新版本、一键升级、安全重启，重启后页面自动恢复。
 - [NamesMT/dsh-home-hosted](https://github.com/NamesMT/dsh-home-hosted) — 让 dsh web 与其他服务器随开机自动启动；只需一句提示就能搭建和管理 Gitea、Jellyfin 等服务，并统一收纳到一个 home-hosted 面板中。
 - [nanwu98/dsh-desktop-autostart-win](https://github.com/nanwu98/dsh-desktop-autostart-win) — 在设置里增加一页和一个开关，用于写入或删除当前用户的 Windows 启动项（HKCU Run）；从正在运行的桌面版、App Paths、默认安装目录或安装器记录中自动找到 exe，并清除任务管理器里的禁用标记。
