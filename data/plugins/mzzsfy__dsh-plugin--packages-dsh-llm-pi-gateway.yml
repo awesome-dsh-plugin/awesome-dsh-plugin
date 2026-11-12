@@ -2,6 +2,6 @@ url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-llm-pi-gateway
 name: mzzsfy/dsh-plugin#dsh-llm-pi-gateway
 category: model
 description:
-  en: 'Session-affinity routing for LLM gateways: injects the session ID into every request sent to NewApi-style gateways so the gateway can pin requests per session and raise prompt-cache hits; takes over the official pi-ai routing on install and restores it on uninstall.'
-  zh: 'LLM 网关会话粘性路由：把会话 sessionId 注入发往 NewApi 类网关的每个请求，供网关做请求亲和以提升 prompt cache 命中，装上即接管官方 pi-ai 路由，卸载即还原。'
+  en: 'Session-affinity keys for LLM gateway requests: it decorates the official pi-ai adapter so Chat Completions calls carry session_id and x-client-request-id headers and Anthropic Messages calls carry a session-derived metadata.user_id, which lets a gateway pin requests per session and raise prompt-cache hits. It registers no provider and takes nothing over — the official llm-pi-ai keeps serving, and disabling or uninstalling the plugin leaves its behaviour unchanged.'
+  zh: 'LLM 网关会话亲和键:装饰官方 pi-ai adapter,Chat Completions 请求补 session_id 与 x-client-request-id 头,Anthropic Messages 注入按会话派生的 metadata.user_id,供网关按会话钉住请求、提升 prompt cache 命中。不注册 provider、不接管官方 llm-pi-ai:官方继续服务,禁用或卸载后行为回到原样。'
 icon: https://raw.githubusercontent.com/mzzsfy/dsh-plugin/main/assets/icons/png/dsh-llm-pi-gateway.png
