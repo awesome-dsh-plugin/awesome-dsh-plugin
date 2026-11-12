@@ -3572,6 +3572,7 @@ dsh plugin --profile web add dshmarket
 - [Mars-Sea/dsh-commandcode-provider](https://github.com/Mars-Sea/dsh-commandcode-provider) — 非官方 Command Code 模型接入插件：注册 `commandcode` 路由，带实时模型目录与推理强度支持。
 - [marsma-101/dsh-qoder-connect](https://github.com/marsma-101/dsh-qoder-connect) — 将 Qoder CN 桌面版的模型接入 DeepSeek Harness，零用户交互：解密本地 OSCrypt 凭据，以 COSY 签名对接国内网关，14 个模型含免费额度标注。
 - [marsma-101/dsh-trae-connect](https://github.com/marsma-101/dsh-trae-connect) — 将 Trae CN 桌面版的模型接入 DeepSeek Harness，无需单独 OAuth：复用桌面端登录，17 个模型（含 deepseek-v4.1-flash）带倍率标注与思考强度映射。
+- [maryhodges5070-art/dsh-llm-vertex](https://github.com/maryhodges5070-art/dsh-llm-vertex) — 在 DeepSeek Harness 中接入 Google Cloud Vertex AI（Gemini）：支持 ADC 或服务账号凭证、项目与区域配置、工具调用的签名回传、限流，以及带连通性测试的设置页。
 - [masknull/dsh-qoder-connect](https://github.com/masknull/dsh-qoder-connect) — 通过个人访问令牌将 Qoder（国内版与国际版）接入 DSH，两版各自独立的凭证与模型目录，支持多令牌切换、侧栏额度卡、按模型开关、上下文窗口偏好与每日自动签到。
 - [mengge237/dsh-model-priority](https://github.com/mengge237/dsh-model-priority) — 模型顺序：在「设置 → 模型」的提供方卡片里拖动调整；卡片格被别的插件占用时，入口在设置左导航的「模型顺序」分区。顺序通过宿主 settings 服务带版本校验写回，设置页与模型选择器保持同步；设置左导航本身也可拖拽排序。
 - [mhxy13867806343/dsh-plugin-select-model](https://github.com/mhxy13867806343/dsh-plugin-select-model) — 在模型菜单底部增加「添加模型」与「管理已添加模型」：接入第三方服务商并写入 DSH 模型配置，可编辑 / 删除条目，并一键切换当前对话的模型、高亮正在使用的那一行。
@@ -6510,6 +6511,7 @@ dsh plugin --profile web add dshmarket
 - [wuzhican/dsh-qbittorrent](https://github.com/wuzhican/dsh-qbittorrent) — 基于 qBittorrent WebAPI v2 的九个模型侧工具，写操作需显式 confirm，并提供孤儿种子诊断。
 - [wwwort/dsh-win-computer-use](https://github.com/wwwort/dsh-win-computer-use) — DSH 的 Windows 原生电脑操控：两个工具即可驱动并读取任意桌面应用。一次批量调用把找控件、点击、输入、按键、读取、等待、截图放进同一次引擎请求，步骤可事前确定的整件事只花一轮模型往返；读取返回窗口文本而非图像，输入与抓取优先走 UIA 模式、Win32 消息与 PrintWindow 离屏抓取，用户的焦点与鼠标全程不受打扰。
 - [wxkingstar/SpecFusion](https://github.com/wxkingstar/SpecFusion) — 通过五个只读工具和一个运行时 Skill，搜索 20 个中国开放平台的 65,600+ 篇 API 文档。
+- [wyylalala/QuickPrompt](https://github.com/wyylalala/QuickPrompt) — 把一句口语需求炼化成结构化 Prompt，存成 /qp-<slug> 快捷命令，一键复跑；斜杠命令与模型侧 quick_prompt 工具共用一个本地 JSON 库。
 - [x2802490130-prog/dsh-tool-writing](https://github.com/x2802490130-prog/dsh-tool-writing) — 写文引擎：用独立 DeepSeek key 分流并发生成草稿/细纲/点子，设定与伏笔管理、语义向量检索、书库（饲料区）、用量总账、机械校对与本地连载计划。
 - [x2802490130-prog/dsh-writing-remote](https://github.com/x2802490130-prog/dsh-writing-remote) — 写文引擎的 host 侧数据通道：把项目分卷、章节状态、书库、全文检索、演化条目与线索图谱以 Typert remote 暴露给客户端写作面板。
 - [Xantares330/dsh-codex-consult](https://github.com/Xantares330/dsh-codex-consult) — 需先安装 Codex CLI 并完成 `codex login`。为 DeepSeek Harness 增加三个按需咨询 OpenAI Codex CLI 的工具：codex_consult 在只读沙箱中运行 Codex、自动内联证据文件、从 Codex rollout 记录校验实际模型与推理档位、断流自动重试，并记录调用前后的额度；codex_quota 查询当前 5 小时与每周额度；codex_calls 列出最近调用。
