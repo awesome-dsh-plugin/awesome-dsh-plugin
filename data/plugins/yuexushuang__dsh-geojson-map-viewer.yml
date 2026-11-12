@@ -1,0 +1,6 @@
+url: https://github.com/yuexushuang/dsh-geojson-map-viewer
+name: yuexushuang/dsh-geojson-map-viewer
+category: tools
+description:
+  en: Renders GeoJSON payloads from session messages and file cards on an interactive Leaflet map with base-map switching and a feature property table.
+  zh: 将会话中的 GeoJSON 消息文本或文件卡片以 Leaflet 交互地图呈现，支持底图切换与要素属性表。
