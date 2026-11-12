@@ -225,6 +225,8 @@ dsh plugin --profile web add dshmarket
 - [7AAAAAH/dsh-restart-app](https://github.com/7AAAAAH/dsh-restart-app) — 窗口标题栏左上角、收起侧边栏按钮右侧的重启按钮：一次点击停掉这个桌面应用的全部进程（窗口外壳、宿主、渲染进程与工具子进程），再重新拉起可执行文件，新实例就绪后自动刷新页面。仅支持 Windows 桌面版，其它宿主里按钮自动隐藏。
 - [dsh-my-plugins](https://github.com/7gzgn/dsh-my-plugins) — 「我装的插件」：顶栏一颗药丸告诉你这个 DSH 到底加载了多少插件，点开是可搜索的清单——每个插件的名字、版本、一句人话作用，自带和第三方分开标。只读、零配置。
 - [822376583-hub/dsh-works-gallery](https://github.com/822376583-hub/dsh-works-gallery) — 在右侧栏把工作区里所有图片和视频按时间倒序铺开，带缩略图、类型筛选、搜索和灯箱查看。
+- [879745uhjun/dsh-approval-zh](https://github.com/879745uhjun/dsh-approval-zh) — 把 DSH 审批提示和 ask_user_question 卡片里的英文说明翻成中文显示；审批结果、选项标签、工具名和 JSON 参数保持不变，审批审计记录里仍是英文原文。
+- [879745uhjun/dsh-notepad](https://github.com/879745uhjun/dsh-notepad) — 在 DSH Web 界面加一个记事本：可悬浮为四边吸附、可调尺寸的卡片，也可停靠进真实底栏布局行，两种模式随时切换并共享文字和图片；内容自动保存（文字存 localStorage，图片存 IndexedDB），跟随当前主题。
 - [9426Haruka/dsh-markdown-live](https://github.com/9426Haruka/dsh-markdown-live) — 在 DSH 输入框内实时渲染 Markdown，并让已发送的用户消息按 Markdown 显示；提交文本保持字面 Markdown 不变。
 - [978064659/dsh-restart-button](https://github.com/978064659/dsh-restart-button) — 在 Windows 标题栏最小化按钮左侧加一个重启按钮，结束并重新拉起桌面外壳与 Host，让刚装好的插件立即生效。
 - [A-f-ish/dsh-emotion-feedback](https://github.com/A-f-ish/dsh-emotion-feedback) — 每回合判定工作模型自身的情绪，并在下一回合开始前静默回注给它，形成「自省 → 状态留存 → 行为调整」 的闭环。包含宿主插件、输入框上方的情绪面板、只读的 emotion_status 工具与可选的只读 HTTP 路由。
@@ -1878,6 +1880,7 @@ dsh plugin --profile web add dshmarket
 - [waterha/dsh-pintop](https://github.com/waterha/dsh-pintop) — 提供 DSH 软件窗口置顶功能，让其不会乱隐藏，仅 Windows；需 PATH 上有 PowerShell 7（pwsh.exe）。
 - [watershow666/dsh-sidebar-icon-row](https://github.com/watershow666/dsh-sidebar-icon-row) — 把 DSH 侧栏的面板入口与底部入口改成只显示图标的并排方块，悬停显示名称；提供四档图标大小、逐项显隐开关与上下排序，并在底部加一个设置入口。
 - [Waverly-W/dsh-scratchpad](https://github.com/Waverly-W/dsh-scratchpad) — DeepSeek Harness Web GUI 临时对话工作区自动化管理插件。
+- [wdxtub/dsh-wdx-relief](https://github.com/wdxtub/dsh-wdx-relief) — DSH Web 界面的一组顺手小件：输入框下方灰字预测下一句、Tab 填入；输入框上方逐轮一行摘要（也可以放到下方）、不进入模型上下文；右侧栏面板管待跟进、会话回顾与旁问，旁问可单独选模型；回复长度、风格与「便于行动」也在插件配置里调。
 - [wefio/dsh-cache-miss](https://github.com/wefio/dsh-cache-miss) — 提示缓存未命中（cache miss）时，在重建缓存的 assistant 回复下方显示一条黄色缓存提示，展示未缓存（uncached）重新计费（re-billed）的输入 token、缓存命中 token 与首字延迟（TTFT）。
 - [weiaisuyan/dsh-split-view](https://github.com/weiaisuyan/dsh-split-view) — 把 DSH 主区换成多栏标签工作区：最多四栏会话并排，每栏自带标签条、输入框和宿主视图切换条。不能与 luckybilly 的 dsh-split-view 同时启用；安装的包名是 dsh-multipane。
 - [weibaohui/dsh-dashboard](https://github.com/weibaohui/dsh-dashboard) — 使用量仪表盘：离线扫描会话日志，统计每日/每周/每月 token、估算费用、模型/工具/技能/命令榜、输出速度、工作时段与质量指标；gridstack+ECharts 卡片可拖拽编排，支持自定义公式与 AI 编排（提示词往返导入）。
@@ -2993,6 +2996,7 @@ dsh plugin --profile web add dshmarket
 - [inMessionante19/dsh-desktop-glass](https://github.com/inMessionante19/dsh-desktop-glass) — 为 Windows 11 版 DeepSeek Harness 提供可切换的原生毛玻璃与完全透明背景，实时显示 Wallpaper Engine 壁纸；需先手动安装一次桌面原生适配；需 Node 20+。
 - [Iris-change/dsh-eva-skins](https://github.com/Iris-change/dsh-eva-skins) — 四套 EVA 主题皮肤（二号机／零号机／初号机／八号机）。每套通过主题样式层重绘侧栏、输入框与窗口边框，并带一段 20 秒的开机动画（Canvas 绘制，含身份确认、可跳过、可重播）。输入框旁的胶囊可弹出列表切换皮肤。
 - [iroha1145/DSH-Modern-UI#modern-ui](https://github.com/iroha1145/DSH-Modern-UI/tree/main/packages/modern-ui) — 给未改动的官方 DSH 换一套网页界面：思考过程分组折叠、对话轮次时间轴与可调阅读宽度、工具调用卡片、模型与思考强度选择面板、子智能体编队视图、回答里可选的图表与流程图组件、明暗主题和手机布局。从 npm 安装，卸载即恢复官方界面。可选的 jev_presentation_advice 工具只有在你保存 TypeSafe 密钥后才会启用，它会把最近最多四条用户消息和一份简短的回答提纲发送到 api.typesafe.ai。
+- [iShawnWang/dsh-theme-neon](https://github.com/iShawnWang/dsh-theme-neon) — 给 DeepSeek Harness 的三套霓虹配色——青、粉、黄，在「设置 → 通用设置」的「外观」下面一行三个色块里点选切换，每套配色各自带明暗两套 token；深浅仍由内置的「外观」开关决定。
 - [Isilsolme/dsh-anthropic-fonts](https://github.com/Isilsolme/dsh-anthropic-fonts) — Anthropic Sans/Serif/Mono 字体：界面 Sans、对话 Serif、代码 Mono，中文回退思源字体。
 - [iStarryDust/dsh-ui-liquid-glass](https://github.com/iStarryDust/dsh-ui-liquid-glass) — 可折射的液态玻璃皮肤 UI：可自定义壁纸、多个可调折射液态玻璃面、随时段轮换的壁纸、四档主题色、选中项带水滴状高亮飞镜、右下可自定义每个控件参数。
 - [jiangsuyuan/dsh-theme-550C](https://github.com/jiangsuyuan/dsh-theme-550C) — 流浪地球 550C 控制台配色的 DSH 界面皮肤，含暗色 2px 边框与琥珀选中态。
@@ -6456,6 +6460,7 @@ dsh plugin --profile web add dshmarket
 - [wlc114514/dsh-upload-origin](https://github.com/wlc114514/dsh-upload-origin) — 通过文件名、大小和 sha256 反查上传到 .dsh-uploads 的文件在本地原始位置的绝对路径。
 - [wly8691-jpg/dsh-office-com](https://github.com/wly8691-jpg/dsh-office-com) — COM 驱动真实 Microsoft Office 实例的 DeepSeek Harness 插件：经 OfficeMCP 操作运行中的 Excel/Word——VBA 宏、透视表、活公式重算、文档深度排版；含会计场景（复式记账分录 + 借贷平衡校验、SUMIF 科目总账）。
 - [wly8691-jpg/knowlp-rag](https://github.com/wly8691-jpg/knowlp-rag) — Markdown 笔记的双知识图谱 RAG，带半衰期记忆衰减：前置依赖 + 相似关联双图（P/S-Agent 遍历）、段落级匹配、ngram/embedding 混合检索、显式权重反馈闭环——原生 Cordis 插件，npm 包 @eqman00003/knowlp-rag。
+- [wocwo/dsh-info-tools](https://github.com/wocwo/dsh-info-tools) — DSH 的跨领域信息与 A 股工具：arXiv、Crossref、GitHub、Hacker News、Hugging Face、Product Hunt，以及行情、走势与公告。
 - [WODE25500/dsh-ip-info](https://github.com/WODE25500/dsh-ip-info) — DeepSeek Harness 的 IP/域名情报：ip_lookup、dns_lookup、whois_lookup 工具，走免费免 key API(ipwho.is、Google DoH、RDAP)。
 - [WODE25500/dsh-lan-share](https://github.com/WODE25500/dsh-lan-share) — 通过浏览器把 DSH 工作区分享到局域网：手机、平板、其它电脑可浏览、下载、上传文件，无需 DSH 登录。带令牌门卫、路径边界、只读模式与速率限制，零依赖(node:http)。
 - [WODE25500/dsh-public-apis](https://github.com/WODE25500/dsh-public-apis) — 把 public-apis 目录接入 DeepSeek Harness：按关键词、分类、auth、https、cors 搜索 1716 个免费公共 API 并直接调用。
