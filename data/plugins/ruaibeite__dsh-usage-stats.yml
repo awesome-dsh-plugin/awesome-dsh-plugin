@@ -2,6 +2,6 @@ url: https://github.com/ruaibeite/dsh-usage-stats
 name: ruaibeite/dsh-usage-stats
 category: usage
 description:
-  en: 'Device-wide token usage on the Settings Usage page: Chat, Cowork and Code cards with input, output and cache rows, a daily token chart that groups by scene or by model, and a per-model table that merges providers, all folded read-only from the local session logs.'
-  zh: '设置页「用量」：本机 Token 用量统计，按 Chat / Cowork / Code 场景分卡展示输入、输出与缓存明细，每日 Token 图可按场景或模型分组，并按模型汇总（跨 provider 合并）；全部只读本地会话日志推导。'
+  en: 'Device-wide token usage on the Settings Usage page: Chat and Code cards with input, output and cache rows, a daily token chart that groups by scene or by model, and a per-model table that merges providers, all folded read-only from the local session logs.'
+  zh: '设置页「用量」：本机 Token 用量统计，按 Chat / Code 场景分卡展示输入、输出与缓存明细，每日 Token 图可按场景或模型分组，并按模型汇总（跨 provider 合并）；全部只读本地会话日志推导。'
 icon: https://raw.githubusercontent.com/ruaibeite/dsh-usage-stats/main/assets/icon-180.png
