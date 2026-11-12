@@ -866,7 +866,7 @@ dsh plugin --profile web add dshmarket
 - [Him666233/dsh-inline-diff#plugin](https://github.com/Him666233/dsh-inline-diff/tree/main/plugin) — 为 edit、write、str_replace_editor 调用就地渲染内联差异卡片：旧/新行号、字符级高亮、57 种语言检测与红绿安全的语法配色，另有左右对照、Read 行范围，以及可配置的显示风格与高亮设置。
 - [HimA6652/dsh-client-ui-model-seat](https://github.com/HimA6652/dsh-client-ui-model-seat) — 把 AprilCrystal/dsh-client-ui-gpt-helper 与 zszz3/dsh-model-provider-prefix 这两个无法同时安装的输入框模型控件合并成一个控件：「供应商/模型」钮点开是两栏卡片，鼠标所指供应商的模型就地切换、卡片不移动；推理强度是旁边的独立钮，带粒子滑杆；搜索跨全部供应商，且卡片尺寸保持不变。
 - [himeope/dsh-queue-first-enter](https://github.com/himeope/dsh-queue-first-enter) — agent 正在处理任务时，输入框空着按回车，队列第一条消息就会插话送进当前回合。
-- [HimLeoing/dsh-task-progress](https://github.com/HimLeoing/dsh-task-progress) — 可拖动的任务进度面板，展示本地估算、独立队友进度、可选 AI 评估与探针费用诊断。alpha 版本，仅限 Web profile，需要 Node 24.9 及以上与 Harness 0.2.2-rc.1。AI 观察默认关闭，开启后会消耗当前会话所用服务商的 token。包名和挂载 id（dsh-task-progress）与 chen8923/dsh-task-progress 相同，只能装其中一个。
+- [HimLeoing/dsh-task-progress](https://github.com/HimLeoing/dsh-task-progress) — 可拖动的任务进度面板，展示本地估算、独立队友进度、可选 AI 评估与探针费用诊断。候选版本，仅限 Web profile，需要 Node 24.9 及以上与 Harness >=0.2.2-rc.1，已验证 0.2.2-rc.2。AI 观察默认关闭，开启后会消耗当前会话所用服务商的 token。包名和挂载 id（dsh-task-progress）与 chen8923/dsh-task-progress 相同，只能装其中一个。
 - [hiocobueno653-pixel/dsh-ui-polish](https://github.com/hiocobueno653-pixel/dsh-ui-polish) — DSH 网页端界面打磨层：补上浮层毛玻璃材质，用可拖动滑杆替换推理等级单选列表，模型菜单一次点击直达列表、Esc 一次关闭。
 - [hj9178/dsh-throwtomatoes-plugin](https://github.com/hj9178/dsh-throwtomatoes-plugin) — 任务运行中且输入框为空时，把发送键换成番茄键。点一两下会让模型在下一步收到一条不对用户显示的提醒，要求它反思做法并以提问用户如何继续收尾；一秒内连点三下则先停止任务，再发同样的提醒。丢番茄特效与音效可在设置中关闭，设置页同时显示累计扔出的番茄总数。
 - [hjj345/dsh-sm-context-piano](https://github.com/hjj345/dsh-sm-context-piano) — 为 DeepSeek Harness Web GUI 提供 Codex 式对话导航与预览。
@@ -3607,7 +3607,7 @@ dsh plugin --profile web add dshmarket
 - [realchendahuang/dsh-provider-studio](https://github.com/realchendahuang/dsh-provider-studio) — 在一个设置页里管理 llm-pi-ai 供应商、API Key 与模型：新增或编辑供应商、测试模型连通性、从端点拉取模型，内置 218 个供应商模板。
 - [REALOIYO/dsh-qwenwork-connector](https://github.com/REALOIYO/dsh-qwenwork-connector) — 非官方的千问办公（QwenWork）模型 provider，改编自 dsh-magpie-connect 与 magpie（MIT）：设备码登录与请求签名均在插件内实现，不需要桌面客户端或本地转发进程。需有效的千问办公套餐，DSH 0.2.x。
 - [recyvan/dsh-model-proxy](https://github.com/recyvan/dsh-model-proxy) — 把 DeepSeek Harness 的模型 API 请求送进系统代理、自定义代理或 SOCKS 代理，清单之外的请求一律直连。
-- [Relethe/dsh-thinking-effort-autoswitcher](https://github.com/Relethe/dsh-thinking-effort-autoswitcher) — 用「模型 + 思考强度」选择器替换输入框的模型选择器并新增 Auto 档；Auto 依照对话偏离主要目的的程度和重复失败次数给每轮打分（每轮多一次小模型判分调用），据此选择思考强度，并在每轮结束后标出该轮发送的档位。
+- [Relethe/dsh-thinking-effort-autoswitcher](https://github.com/Relethe/dsh-thinking-effort-autoswitcher) — 用「模型 + 思考强度」选择器替换输入框的模型选择器：← → 切换思考档位，↑ ↓ 切换模型；Auto 档依照对话偏离主要目的的程度和重复失败次数给每轮打分（每轮多一次小模型判分调用），据此选择思考强度，并在每轮结束后标出该轮发送的档位。
 - [dsh-zed-provider](https://github.com/RGarrido03/dsh-zed-provider) — 在 DSH 中使用 Zed AI 托管模型。
 - [ringoage/dsh-subagent-model-picker](https://github.com/ringoage/dsh-subagent-model-picker) — 主模型选择器旁的子代理模型选择器：按会话选择模型与思考程度，应用到所有进程内子代理。
 - [robbywang25/dsh-llm-mlx](https://github.com/robbywang25/dsh-llm-mlx) — 通过回环 OpenAI-compatible 提供方在 DeepSeek Harness 中使用本机 MLX-LM 或 MLX-VLM 模型，并可选由 DSH 托管模型服务进程。
