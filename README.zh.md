@@ -1932,6 +1932,7 @@ dsh plugin --profile web add dshmarket
 - [wlllyj/dsh-prompt-forge](https://github.com/wlllyj/dsh-prompt-forge) — 在输入框旁加一个 ✦ Prompt 按钮：点一下就按可替换的提示词心法改写草稿，结果按行返回而不是直接覆盖草稿；同一个面板里还能直接改插件设置。
 - [WLV-ZEDD/dsh-btw](https://github.com/WLV-ZEDD/dsh-btw) — 交互式侧边助手坞：用 /btw 快速提问，实时显示思考状态，历史记录分页浏览。
 - [wmengxiang/dsh-prompt-optimizer](https://github.com/wmengxiang/dsh-prompt-optimizer) — 在输入框新增图标按钮，一键调用当前模型把提示词优化得更清晰具体。
+- [wmingzhou7-cell/DSH-English-learning](https://github.com/wmingzhou7-cell/DSH-English-learning) — 输入框下方轮播单词与短语闪卡，右侧栏提供当前会话主题英文简报、主题词汇与生词本。
 - [WMXS-A/dsh-utility-plugins#dsh-skill-cheatsheet](https://github.com/WMXS-A/dsh-utility-plugins/tree/main/packages/dsh-skill-cheatsheet) — 在输入框工具栏提供一个按钮，一键打开技能面板，列出当前会话的全部技能（中文标题、用途与例句），并可一键收录新安装但尚未录入词典的技能（保存在本机）。
 - [wodongx123/dsh-desktop-tray](https://github.com/wodongx123/dsh-desktop-tray) — 为 DSH Desktop 增加系统托盘图标，可在设置中选择最小化或关闭时隐藏到托盘，应用更新后自动恢复。
 - [Woeful001/dsh-refresh](https://github.com/Woeful001/dsh-refresh) — 在侧边栏底部添加一个刷新按钮，一键重载插件列表与页面，让新安装的插件无需重启应用即可生效。
@@ -2180,6 +2181,7 @@ dsh plugin --profile web add dshmarket
 - [zba0326/dsh-fold-panel-list](https://github.com/zba0326/dsh-fold-panel-list) — 在侧栏面板列表顶部固定一行开关，收起时这一行仍然留着，所以「插件 … 更多」整列（含末尾的「更多」）塌成一行、工作区随之上移；⌥⌘P（Windows/Linux 为 Ctrl+Alt+P）同样能切换，状态存 localStorage，重开保持。
 - [zclDragon/dsh-side-chat](https://github.com/zclDragon/dsh-side-chat) — Codex 风格 /side 侧边对话插件：在当前对话旁开一个浮动分叉面板，继承上下文、不打断主任务。
 - [zealot00/dsh-pet](https://github.com/zealot00/dsh-pet) — DSH Web UI 桌面宠物：精灵图动画、agent 状态联动、拖拽、闹钟（每天/一次）与番茄钟，皮肤下拉选择 + 预览。
+- [zeasonvan/Days-Are-Yours](https://github.com/zeasonvan/Days-Are-Yours) — 本地优先的侧边栏生活助手：退休与假期倒计时、年假与拼假、日历、可选天气、愿望清单、时间胶囊，以及一只时光团子。
 - [zebracmz/dsh-task-progress-tab](https://github.com/zebracmz/dsh-task-progress-tab) — 在会话顶部“上下文”标签右侧增加“任务进度”标签页，用进度条显示已完成与未完成的任务，已完成项按完成顺序排列。
 - [zeme56/dsh-landmarks](https://github.com/zeme56/dsh-landmarks) — 左侧边栏加一个全屏 3D 展厅，看四座程序化建模的地标——埃菲尔铁塔、长城、紫禁城、泰姬陵——另带一个「五间安静的屋子」入口。
 - [zengchunhua-boost/dsh-cat-star](https://github.com/zengchunhua-boost/dsh-cat-star) — 给猫颜值打分的 DSH 插件：CFA 风格评分卡、国内市场参考价，可发布到公开榜单。
@@ -7525,7 +7527,6 @@ dsh plugin --profile web add dshmarket
 - [988hj7tczd-oss/dsh-math-olympiad](https://github.com/988hj7tczd-oss/dsh-math-olympiad) — 竞赛数学解题（IMO/Putnam/USAMO/AIME）：纯推理求解 + 新鲜上下文 subagent 对抗验证 + 校准信心输出（high / medium / 诚实「无把握解」）；可选 LaTeX 编译 PDF。
 - [988hj7tczd-oss/dsh-modernize-code](https://github.com/988hj7tczd-oss/dsh-modernize-code) — 遗留代码现代化工作流（preflight → assess → map → transform），含 Cordis 挂载插件、离线 Python 脚本与冒烟测试。
 - [988hj7tczd-oss/dsh-skill-creator](https://github.com/988hj7tczd-oss/dsh-skill-creator) — 一键生成 DSH 技能（SKILL.md）的 Cordis 插件：在会话内捕获意图、起草、校验、打包分发并优化技能描述（skill_new / skill_validate / skill_package / skill_improve_description）。
-- [a1249070611/dsh-hoi4-modding](https://github.com/a1249070611/dsh-hoi4-modding) — 面向《钢铁雄心4》1.19.3 Mod 开发的 DSH 技能包：注册 15 个技能，并在本地挂载 20 个 MCP 工具（Python stdio 服务器），用于生成、静态校验、安装与排查 Mod——国策树、事件、决议、理念、角色、科技、MIO、特殊项目、scripted GUI 与顶栏按钮、本地化、DDS 图标、18 槽坦克设计器布局、3D 坦克模型、中文字体审计与 error.log 分诊——另含 23 个工坊 Mod 技法总览与多 agent 分工规范。要求 DSH >=0.2.0 <0.3.0 与 PATH 上有 Python 3.9+（仅标准库，无第三方依赖）；不含游戏素材。
 - [aa2246740/dsh-skillhub](https://github.com/aa2246740/dsh-skillhub) — 浏览和管理 DSH 及受支持 Agent 主目录中已有的用户技能。
 - [AAAlenwow/dsh-spring-admin-kit](https://github.com/AAAlenwow/dsh-spring-admin-kit) — Spring Boot 后台开发套件：EasyExcel 批量导入导出代码生成与 Thymeleaf + LayUI 模板安全守卫。
 - [aawef/dsh-skill-manager-tags](https://github.com/aawef/dsh-skill-manager-tags) — 按标签筛选技能：给 DSH 技能打标签，再用布尔表达式为每个工作区或对话选出下发给模型的子集（例如 `pdf + docx` 或 `aegis * plugin`）。命中以外的技能会被 deny-shadow 真正从模型目录里移走，而不只是在设置页隐藏；表达式之外的技能可手动添加或强制禁用，另附带 `tagging-skills` 教 agent 从本机技能清单自建标签体系。
@@ -7666,6 +7667,7 @@ dsh plugin --profile web add dshmarket
 - [kechao-sgp/dsh-impeccable-skill](https://github.com/kechao-sgp/dsh-impeccable-skill) — 为 DeepSeek Harness 打造的 Impeccable 前端设计技能：24 个设计剧本覆盖界面塑造、评审、审查、打磨、布局、排版、动效、无障碍与设计系统文档，靠技能自带的参考文件加项目里的 PRODUCT.md / DESIGN.md 驱动，不下载任何引擎二进制。注册 impeccable 技能；读取项目文件并在 .impeccable/ 下产出设计产物。依赖二进制的环节（实浏览器桥、像素测量、字体匹配）降级为静态变体、截图与显式声明的人工估算。改编自 pbakaus/impeccable（Apache-2.0）。
 - [kedeshuai/dsh-plugin](https://github.com/kedeshuai/dsh-plugin) — 嵌入式 C 白盒测试工作流技能：宿主机打桩 harness、wb.py 测试驱动与 gcov 覆盖率门禁、控制逻辑学习手册模板。
 - [Kenerlee/dsh-moments-aieo](https://github.com/Kenerlee/dsh-moments-aieo) — AIEO（GEO/AEO）交付方法论，挂载为一个独立的 skill provider：0-9 分制的 AI 可见性诊断、产品定位、仅限白名单平台导出数据的搜索热词挖掘、周期性效果监控与 HTML 监控面板，由同一份共享问题库串联，另附一个落地页复刻 skill。
+- [Kiant98/dsh-hoi4-modding](https://github.com/Kiant98/dsh-hoi4-modding) — 面向《钢铁雄心4》Mod 开发的 DeepSeek Harness 组合包：注册 15 个技能（国策树、事件、决议、理念、角色、科技、本地化、GUI 与 error.log 分诊），并在本地挂载 20 个 MCP 工具（Python stdio 服务器），用于生成内容、静态校验 Mod、以原版游戏建 SQLite FTS5 知识库、离线预览国策树。附 163 篇参考库；要求 DSH >=0.2.0 <0.3.0 与 PATH 上有 Python 3.9+（仅标准库，不含游戏素材）。
 - [kinggkl/dsh-network-engineer](https://github.com/kinggkl/dsh-network-engineer) — 网络工程师助手预设 + 12 厂商 96 篇交换机/路由器/防火墙命令知识库技能（华为/新华三/锐捷/迪普/思科 IOS·NX-OS/Junos/Arista EOS/FortiOS/中兴/VyOS/MikroTik），支持知识库优先检索、跨厂商命令对照、拓扑与 CLI 截图识图、带引用的联网查手册，并对高危命令强制 ⚠️ 风险标注；仅回答网络工程主题。是 sososilencing/dsh-network-engineer 的社区延续版（见 NOTICE.md）；两者注册同一个 network-command-kb 技能和同一个「网络工程师助手」预设，不能与上游同装。
 - [Kirisame1969/dsh-project-based-learning](https://github.com/Kirisame1969/dsh-project-based-learning) — 项目制教学教练：学科无关的教学引擎 + 可替换领域包（随包提供 Unity/C#），同时以 DSH 技能与可安装组合包分发。技能协议强制"先做后教"与分级提示；零依赖校验器会拒绝证据不支撑的能力结论，并在存在未解决阻塞项时阻止阶段通过。
 - [kissfirembx/dsh-skill-map](https://github.com/kissfirembx/dsh-skill-map) — 在右侧栏用一个或多个「工作区」给已加载的 skill 分类：每个工作区有自己的分类表和每个 skill 的归属，分类可就地新建、改名、排序、删除，skill 可拖动或用选择器改归位；首次使用可以让这个 profile 的模型从零分一版，也可以先自己建分类再让模型按分类分配。点击行复制 /skill-name，悬停展开 skill 自带的描述。
@@ -8364,6 +8366,7 @@ dsh plugin --profile web add dshmarket
 - [shengyvself/dsh-autoresume](https://github.com/shengyvself/dsh-autoresume) — dsh 会话因 web 重启或上游瞬时故障（限流、5xx、余额/配额错误）中断时，自动注入「继续」让本轮接着跑，不需要手动点、不会丢上下文；带死循环守卫，重试没反应就把会话交回给你。
 - [shengyvself/narrative-prompt-polish](https://github.com/shengyvself/narrative-prompt-polish) — DSH 主输入框旁的 ✨ 一键提示词打磨：点击后 Agent 在侧边对话多轮改写草稿，你满意后再手动回填。
 - [shenhuanageshei/dsh-thincoder-suite](https://github.com/shenhuanageshei/dsh-thincoder-suite) — 导师评审逐轮收敛、工程模式写入需持设计令牌、把任务转交给更强的模型、并行多模型会诊；设置页可改各模型路由、超时与预算。
+- [shinerain1/dsh-evidence-lineage](https://github.com/shinerain1/dsh-evidence-lineage) — 通过 DSH 工具追踪网页摘录与结构化 Agent 汇报的来源关系，折叠有同源记录的重复正文，并导出可追溯证据。
 - [shinerain1/dsh-label-workbench](https://github.com/shinerain1/dsh-label-workbench) — 通过 DSH 工具管理可迭代文本标注，绑定规则版本、隔离旧任务结果、保留人工审核并导出可追溯数据集；需另行安装 Python 后端。
 - [shinerain1/dsh-ml-workbench](https://github.com/shinerain1/dsh-ml-workbench) — 将 MLflow 适配为 DSH 工具，管理本地 CSV 分类与回归实验的追踪、分支、比较和复现交付；需另行安装 Python 后端。默认情况下训练作为独立的本机工作进程运行，DSH 退出后仍会继续（executionMode 设为 dsh 则随 DSH 停止）；运行你自己的 Python 预处理或估计器代码要打开 allowCustomCode（默认关闭）；插件不发网络请求。
 - [shiyan688/dsh-novel-craft](https://github.com/shiyan688/dsh-novel-craft) — DeepSeek Harness 的小说写作工作台：你在候选段落上点赞或点踩，模型把这批点选蒸馏成一份简短的「作者偏好档案」带进后续写稿，正文本身不进写稿上下文。另有章节看板、每章写作包、只改被批注段落并逐字核对其余段落的批注式微调、项目台账，以及不把正文送进模型的本地情节体检。
