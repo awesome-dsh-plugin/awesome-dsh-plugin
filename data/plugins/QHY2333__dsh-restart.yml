@@ -1,0 +1,7 @@
+url: https://github.com/QHY2333/dsh-restart
+name: QHY2333/dsh-restart
+category: ui
+description:
+  en: Adds a one-click Restart DSH button to the sidebar footer so newly installed plugins load without quitting the app.
+  zh: 在侧栏底部添加一键重启 DSH 按钮，安装插件后无需退出应用即可重新加载。
+icon: https://raw.githubusercontent.com/QHY2333/dsh-restart/main/assets/icon-180.png
