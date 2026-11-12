@@ -2,7 +2,7 @@ url: https://github.com/Vhow123/dsh-model-probe
 name: Vhow123/dsh-model-probe
 category: model
 description:
-  en: Test configured DSH models with connectivity or animated SVG probes, concurrency controls, latency and token metrics, sanitized animation previews, and expandable diagnostics.
-  zh: 通过连接或动态 SVG 请求测试 DSH 已配置模型，支持并发控制、耗时与 Token 统计、安全清洗的动画预览及可展开的诊断详情。
+  en: Test configured DSH models with connectivity, behavioral fingerprint, animated or custom SVG probes, optional quick SVG limits, concurrency controls, latency and token metrics, and sanitized previews.
+  zh: 检测 DSH 已配置模型的连接、行为指纹及动态或自定义 SVG 生成能力，支持 SVG 快速模式限制、并发控制、耗时与 Token 统计及安全清洗的预览。
 icon: https://raw.githubusercontent.com/Vhow123/dsh-model-probe/main/assets/icon-180.png
 tarball: https://github.com/Vhow123/dsh-model-probe/releases/latest/download/dsh-model-probe.tgz
