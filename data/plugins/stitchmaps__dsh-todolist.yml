@@ -1,0 +1,8 @@
+url: https://github.com/stitchmaps/dsh-todolist
+name: stitchmaps/dsh-todolist
+category: workflow
+description:
+  en: 'To-do list panel for DeepSeek Harness: large task cards in collapsible sections, hour-precision due times, per-task reminder lead times, and DingTalk notifications through a group robot webhook or an enterprise-app work notice. Each task can bind to a workspace session and jump to it on click.'
+  zh: 'DSH 待办清单面板：可折叠分组中的大卡片任务，截止时间精确到小时，可按任务设置提前提醒，并通过钉钉群机器人 Webhook 或企业应用工作通知推送；任务可绑定工作区会话，点击直达。'
+icon: https://raw.githubusercontent.com/stitchmaps/dsh-todolist/main/assets/icon-180.png
+tarball: https://github.com/stitchmaps/dsh-todolist/releases/download/v0.2.1/dsh-todolist-0.2.1.tgz

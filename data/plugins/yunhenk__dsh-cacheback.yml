@@ -1,0 +1,8 @@
+url: https://github.com/yunhenk/dsh-cacheback
+name: yunhenk/dsh-cacheback
+category: usage
+description:
+  en: 'The missing receipt for DeepSeek prefix caching: replays local DSH sessions, prices every call at official peak/off-peak rates, and produces an HTML receipt plus a shareable card.'
+  zh: '把 DeepSeek 前缀缓存省下的钱逐笔算清：回放本地 DSH 会话、按官方峰谷价计费，生成 HTML 账单与可分享卡片。'
+icon: https://raw.githubusercontent.com/yunhenk/dsh-cacheback/main/docs/icon-180.png
+tarball: https://github.com/yunhenk/dsh-cacheback/releases/latest/download/dsh-cacheback.tgz

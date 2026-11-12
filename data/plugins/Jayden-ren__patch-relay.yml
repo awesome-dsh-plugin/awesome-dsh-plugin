@@ -1,0 +1,6 @@
+url: https://github.com/Jayden-ren/patch-relay
+name: Jayden-ren/patch-relay
+category: dev
+description:
+  en: "Keeps code edits in a review loop instead of letting the model edit files: each change is proposed as a two-column diff card with line numbers, applied by hand or with one click, and handed back for verification with another click."
+  zh: "把代码修改放进评审回路，而不是让模型直接改文件：每处改动以带行号的两列 diff 卡片提出，用户手动落地或一键应用，再点一下把接力棒交回给 AI 复核。"

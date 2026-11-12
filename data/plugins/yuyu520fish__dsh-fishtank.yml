@@ -1,0 +1,7 @@
+url: https://github.com/yuyu520fish/dsh-fishtank
+name: yuyu520fish/dsh-fishtank
+category: fun
+description:
+  en: 'A small living fish with its own memory, mood and quiet thoughts. It remembers you between sessions, and the fish itself is one JSON file you can export and carry.'
+  zh: '一条养在 Harness 里的小鱼：有自己的记忆、心情和心事，隔天还记得你；鱼本身就是一个能导出带走的 JSON。'
+icon: https://raw.githubusercontent.com/yuyu520fish/dsh-fishtank/main/assets/icon-180.png

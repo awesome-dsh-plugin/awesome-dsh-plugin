@@ -1,0 +1,6 @@
+url: https://github.com/xiaoxue-car/dsh-card-workbench
+name: xiaoxue-car/dsh-card-workbench
+category: workflow
+description:
+  en: 'Card-based task orchestration for DeepSeek Harness: splits work into cards, dispatches and monitors tasks, handles stalls, verifies results, and adopts work conversations.'
+  zh: '为 DeepSeek Harness 提供卡片任务编排：拆分任务、派单盯办、处理卡顿、核对结果，并接管工作对话。'

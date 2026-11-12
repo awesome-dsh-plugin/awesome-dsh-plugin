@@ -1,0 +1,6 @@
+url: https://github.com/Chess12333/dsh-ming-graph
+name: Chess12333/dsh-ming-graph
+category: memory
+description:
+  en: 'A graph of your memory store for DSH: one node per real memory, and every edge must state why the two are connected — a quoted keyword, a shared term, a project, or temporal adjacency. Pure filesystem reads with no model in the loop; unreadable sources are reported, never replaced with fake nodes.'
+  zh: 'DSH 的记忆关系图：每条真实记忆一个点，每条边都得答得出「凭什么连」——引用、共词、归属、按时间补边，四种理由都能读出来。纯读盘、不过模型，读不到就报错，不拿假数据顶上。'

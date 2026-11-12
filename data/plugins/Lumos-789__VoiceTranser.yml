@@ -1,0 +1,6 @@
+url: https://github.com/Lumos-789/VoiceTranser
+name: Lumos-789/VoiceTranser
+category: skill
+description:
+  en: 'Fully local push-to-talk voice input for macOS: hold a global hotkey, speak, release — transcription is pasted at your cursor. Local-first STT (Qwen3-ASR 0.6B 4bit on MLX/Metal by default, SenseVoice and mlx-whisper fallbacks), zero external APIs, launchd self-healing service and an 8-point diagnose script. The bundled skill lets the agent install, configure (Karabiner hotkey wiring, launchd, engine switching) and troubleshoot the whole toolchain for you.'
+  zh: macOS 本地按住说话语音输入：按住全局热键说话、松开即转写粘贴到光标处。纯本地 STT（默认 Qwen3-ASR 0.6B 4bit 走 MLX/Metal，SenseVoice / mlx-whisper 双 fallback），零外部 API，launchd 自愈常驻 + 8 项自检。内置技能让 agent 代你完成安装、Karabiner 热键接线、launchd 配置、引擎切换与全链排障。

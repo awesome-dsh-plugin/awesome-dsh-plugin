@@ -1,0 +1,6 @@
+url: https://github.com/kiefeng/dsh-avatar-top
+name: kiefeng/dsh-avatar-top
+category: ui
+description:
+  en: Moves the sidebar account avatar out of the bottom strip with four placements, including a zero-height inline mode in the brand row, and three heights down to an avatar-only row, with adjustable spacing and a settings card on the Plugins page, while other plugins' footer widgets stay pinned at the bottom.
+  zh: 把侧栏底部的账号头像移出，支持四种位置（含零高度的品牌行内嵌）、三档高度（最小仅头像）、可调间距，并在插件页提供设置卡；其他插件的底栏小组件保持原位贴底。

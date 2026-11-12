@@ -1,0 +1,6 @@
+url: https://github.com/disantosmyha-cloud/tempguard/tree/main/dsh-plugin-tempguard
+name: disantosmyha-cloud/tempguard#dsh-plugin-tempguard
+category: tools
+description:
+  en: "Two DeepSeek Harness tools for the local tempguard watchdog: read temperatures and alertd health, and send alerts through alertd; it does not start or stop the watchdog. Needs the separate tempguard Python watchdog and its alertd service running locally, with projectDir and alertdToken set in the profile patch; there is no npm package, so install from a local clone of the repository subfolder."
+  zh: "为本地 tempguard 温度守护提供两个 DSH 工具：读取温度与 alertd 健康状态，以及通过 alertd 发送告警。需另行在本机运行 tempguard Python 看门狗及其 alertd 服务，并在 profile patch 里配置 projectDir 与 alertdToken；暂无 npm 包，需克隆仓库后从子目录本地安装。"

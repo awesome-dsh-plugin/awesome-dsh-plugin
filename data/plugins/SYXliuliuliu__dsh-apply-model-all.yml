@@ -1,0 +1,6 @@
+url: https://github.com/SYXliuliuliu/dsh-apply-model-all
+name: SYXliuliuliu/dsh-apply-model-all
+category: model
+description:
+  en: 'Apply the current session''s model to every other session in one click, from a control beside the composer''s model picker.'
+  zh: 在输入框模型位旁边加一个控件，一键把当前会话的模型应用到其余所有会话。

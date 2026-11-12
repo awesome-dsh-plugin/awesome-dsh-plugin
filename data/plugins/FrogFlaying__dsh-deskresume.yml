@@ -1,0 +1,6 @@
+url: https://github.com/FrogFlaying/dsh-deskresume
+name: FrogFlaying/dsh-deskresume
+category: tools
+description:
+  en: 'Restores the Windows desktop after a restart or power loss: snapshots open apps, documents, folders and window positions, and reopens them on demand. Windows 10+ only; automatic capture before shutdown needs two scheduled tasks registered once with collector/install-tasks.ps1.'
+  zh: '重启或断电后恢复 Windows 桌面：快照已打开的程序、文档、文件夹与窗口位置，可一键重开。仅支持 Windows 10 及以上；关机前自动抓取需先用 collector/install-tasks.ps1 注册两个计划任务。'

@@ -1,0 +1,6 @@
+url: https://github.com/AmethystLuna/dsh-model-everything
+name: AmethystLuna/dsh-model-everything
+category: dev
+description:
+  en: 'Turns what a design, plan or document claims into a model and decides it: UML diagrams rendered, read and reviewed; state machines, protocols and data models checked as models; migrations tested for coverage and rollback symmetry; concurrency claims mined and routed to the checker that can decide them; dependency graphs audited; reports diffed.'
+  zh: '把设计、计划或文档里的声称抽成模型再判定：UML 图渲染、读取与审查；状态机、协议与数据模型按模型判定；迁移检查覆盖与回滚对称；并发声称挖掘后分派给能判定它的工具；依赖图审查；报告对比。'

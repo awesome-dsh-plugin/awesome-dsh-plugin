@@ -1,0 +1,6 @@
+url: https://github.com/imlishiyuan/dsh-keep-running
+name: imlishiyuan/dsh-keep-running
+category: usage
+description:
+  en: 'Watchdog for quota exhaustion: on a 429 or quota error it creates a recurring schedule that re-sends a continue-the-task prompt until a turn closes normally, so a long task resumes without manual restarts; /keep-running list and /keep-running cancel <id> manage those schedules. Requires @deepseek-ai/dsh-schedule to be mounted first (it registers the schedules).'
+  zh: '配额看门狗：遇到 429 或配额错误时建立循环调度，持续重发「继续任务」提示直到某一轮正常结束，长任务不必手动重开；/keep-running list 与 /keep-running cancel <id> 用于查看和取消。需先挂载 @deepseek-ai/dsh-schedule（调度由它注册）。'

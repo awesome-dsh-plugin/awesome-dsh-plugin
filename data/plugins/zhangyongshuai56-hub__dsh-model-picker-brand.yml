@@ -1,0 +1,7 @@
+url: https://github.com/zhangyongshuai56-hub/dsh-model-picker-brand
+name: zhangyongshuai56-hub/dsh-model-picker-brand
+category: ui
+description:
+  en: 'Provider logos and model IDs in the DSH model picker, registered as a label decorator on the official conversation.input.model.label slot; providers match by token, display name, model ID and explicit override, falling back to a letter monogram when unknown.'
+  zh: '在 DSH 模型选择器中显示各提供商的 logo 与模型 ID：通过官方 conversation.input.model.label 插槽注册标签装饰器；按 token、显示名、模型 ID 与显式覆盖四级匹配，未知提供商回退为字母 monogram。'
+icon: https://raw.githubusercontent.com/zhangyongshuai56-hub/dsh-model-picker-brand/main/assets/icon-180.png

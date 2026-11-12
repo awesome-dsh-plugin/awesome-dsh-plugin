@@ -1,0 +1,7 @@
+url: https://github.com/simmon-clap/dsh-intelligent-ui
+name: simmon-clap/dsh-intelligent-ui
+category: ui
+tarball: https://github.com/simmon-clap/dsh-intelligent-ui/releases/download/v0.2.1/dsh-intelligent-ui-0.2.1.tgz
+description:
+  en: Renders model answers as interactive cards inside DeepSeek Harness chat, with 24 whitelisted components and persistent turn cards.
+  zh: 把 DeepSeek Harness 对话里的回答渲染成可交互卡片，内置 24 个白名单组件和回合尾部持久卡片。

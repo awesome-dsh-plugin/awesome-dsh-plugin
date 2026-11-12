@@ -1,0 +1,6 @@
+url: https://github.com/fanyingnie2163663/dsh-whale-care
+name: fanyingnie2163663/dsh-whale-care
+category: tools
+description:
+  en: "Weather care for DeepSeek Harness: turns a forecast into one sentence you can send — clothing and umbrella advice from feels-like temperature, humidity and air quality, adjusted for how cold-sensitive the user is and how they commute. Also a switchable daily care push, extreme-weather alerts and reminders, evaluated when the agent wakes (a host such as qq-bridge can wake it on schedule). Preferences stay on the local machine."
+  zh: "天气关心：把预报变成一句能直接发出去的话——按体感温度、湿度、空气质量给穿衣与带伞建议，并照顾对方怕冷怕热、骑车还是开车。另有每日主动关心（可开关）、极端天气预警与提醒，在 agent 醒来时评估，可由 qq-bridge 这类宿主定时唤醒；偏好只存本机。"

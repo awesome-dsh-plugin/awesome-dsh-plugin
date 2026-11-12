@@ -1,0 +1,7 @@
+url: https://github.com/KevenUnderwood/dsh-usage-hub
+name: dsh-usage-hub
+category: usage
+description:
+  en: 'Usage panel for the provider account behind the current model: quota windows, credit balance and token usage, following the model automatically. It renders as a full page, plus a sidebar entry and a per-session usage chip in the conversation header.'
+  zh: '当前模型背后的大模型账户用量面板：额度窗口、账户余额与 token 用量，随模型自动切换，支持dsh中内置的主流大模型厂商，支持详情查看与页面左下角概览查看。'
+icon: https://raw.githubusercontent.com/KevenUnderwood/dsh-usage-hub/main/assets/icon-180.png

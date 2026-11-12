@@ -1,0 +1,7 @@
+url: https://github.com/Root-7-KHX/ai-voice
+name: Root-7-KHX/ai-voice
+category: voice
+tarball: https://github.com/Root-7-KHX/ai-voice/releases/download/v0.2.1/local-ai-voice-0.2.1.tgz
+description:
+  en: 'A local AI voice studio for DeepSeek Harness with nine local TTS engines for voice design, voice cloning, emotional performance, a reference-audio library and audio export. It only registers /ai-voice/api routes; the UI lives in the companion-memory plugin''s integrations page, and every engine needs its own Python virtualenv and downloaded model weights, which are not bundled.'
+  zh: '《AI语音》：本地音色工作台，内置 9 个本地 TTS 引擎，支持文字描述造声、参考音复刻、情绪表演、参考音库与音频导出。本插件只注册 /ai-voice/api 接口，界面由 companion-memory 插件的「接入软件」页承载；每个引擎都需要自备 Python 虚拟环境与自行下载的模型权重，插件不打包。'

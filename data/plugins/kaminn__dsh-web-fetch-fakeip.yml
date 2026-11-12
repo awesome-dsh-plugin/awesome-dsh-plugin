@@ -1,0 +1,6 @@
+url: https://github.com/kaminn/dsh-web-fetch-fakeip
+name: kaminn/dsh-web-fetch-fakeip
+category: browser
+description:
+  en: 'A fake-ip-aware ctx.web fetch provider that takes over the stock http provider id: a hostname is accepted when every DNS answer is a placeholder inside the proxy''s fake-ip block (198.18.0.0/15 by default), so web_fetch works under mihomo/Clash TUN mode without disabling fake-ip or setting proxy environment variables. IP literals and private, loopback and reserved destinations stay blocked.'
+  zh: 'ctx.web 的 fake-ip 感知抓取后端，接管官方 http provider id：当某主机名的每一条 DNS 应答都是代理 fake-ip 段（默认 198.18.0.0/15）内的占位地址时予以接受，从而在 mihomo/Clash TUN 模式下无需关闭 fake-ip、也无需设置代理环境变量即可使用 web_fetch；IP 字面量与私有、回环、保留地址仍被拒绝。'

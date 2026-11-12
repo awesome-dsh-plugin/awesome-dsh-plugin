@@ -1,0 +1,6 @@
+url: https://github.com/cosmoliu2002/dsh-prompt-enhancer
+name: cosmoliu2002/dsh-prompt-enhancer
+category: ui
+description:
+  en: Adds a ✨ button and an /enhance command to the composer that rewrite the draft into a structured prompt, flag open questions below the input, follow the current session model, and offer an undo.
+  zh: 在输入框加入 ✨ 按钮与 /enhance 命令，把草稿改写成结构化提示词、在输入框下方列出待确认项，跟随当前会话模型，并可撤销改写。

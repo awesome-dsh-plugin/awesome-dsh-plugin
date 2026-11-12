@@ -21,8 +21,10 @@
     "deepseek"
   ],
   "devDependencies": {
+    "@deepseek-ai/dsh-plugin-market-index": "^0.2.1-alpha.4",
     "dsh-trust-check": "^0.2.1",
     "js-yaml": "^5.3.0",
-    "marked": "^18.0.9"
+    "marked": "^18.0.9",
+    "semver": "^7.8.5"
   }
 }

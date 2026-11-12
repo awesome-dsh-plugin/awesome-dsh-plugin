@@ -1,0 +1,6 @@
+url: https://github.com/liufeicc/dsh-clear-command
+name: liufeicc/dsh-clear-command
+category: session
+description:
+  en: "Adds a /clear command that clears one conversation's model-visible context while keeping the session itself."
+  zh: "新增 /clear 命令：清空某个会话的模型可见上下文，同时保留会话本身。"

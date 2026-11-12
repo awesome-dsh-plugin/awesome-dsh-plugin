@@ -1,0 +1,7 @@
+url: https://github.com/scientificmaniac/dsh-faremeter
+name: scientificmaniac/dsh-faremeter
+category: usage
+description:
+  en: Shows per-turn, per-session and per-workspace conversation costs in CNY, priced by DeepSeek's official tiers with peak/off-peak hours and per-request Search/Fetch billing.
+  zh: 按 DeepSeek 官方价目显示每轮、每会话与每工作区的对话费用人民币金额，支持峰谷分时与 Search/Fetch 按次计费。
+icon: https://raw.githubusercontent.com/scientificmaniac/dsh-turn-cost/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/alb233/dsh-error-monitor
+name: alb233/dsh-error-monitor
+category: session
+description:
+  en: "Lists this session's runtime errors — turn errors, tool failures, command failures and subagent failures — as copyable cards in a conversation tab."
+  zh: "把本会话的运行时错误——回合错误、工具失败、命令失败、子智能体异常——汇总成可复制的卡片，显示在会话标签页里。"

@@ -1,0 +1,6 @@
+url: https://github.com/2370998716-jpg/dsh-turn-eta
+name: 2370998716-jpg/dsh-turn-eta
+category: ui
+description:
+  en: "Shows elapsed time, tokens, tokens per second and a shrinking countdown estimate in the chat header for the running turn, and estimates output tokens, context size, cost and duration above the composer before you send."
+  zh: "对话头部实时显示本轮耗时、token、速度与只减不增的倒计时预估；发送前在输入框上方预估产出 token、上下文大小、费用与耗时。"

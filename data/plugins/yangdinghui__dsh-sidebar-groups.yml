@@ -1,0 +1,7 @@
+url: https://github.com/yangdinghui/dsh-sidebar-groups
+name: yangdinghui/dsh-sidebar-groups
+category: ui
+description:
+  en: "Groups the sidebar's panel rows: two stay pinned, the rest fold under a collapsible Tools row, and rows can be dragged between the two groups."
+  zh: "侧边栏面板分组：两行常驻，其余收进可折叠的「工具」组，支持拖动互相搬运。"
+icon: https://raw.githubusercontent.com/yangdinghui/dsh-sidebar-groups/main/assets/icon-180.png

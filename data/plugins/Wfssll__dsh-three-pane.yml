@@ -1,0 +1,7 @@
+url: https://github.com/Wfssll/dsh-three-pane
+name: Wfssll/dsh-three-pane
+category: ui
+description:
+  en: 'Adds an independently toggled native file explorer beside the conversation, with local and SSH file operations, fast remote @ completion, and native previews in the right sidebar.'
+  zh: '在聊天左侧显示可独立开关的原生文件栏，支持本地和 SSH 工作区的文件操作与远程 @ 补全，文件继续由右侧原生侧栏预览。'
+tarball: https://github.com/Wfssll/dsh-three-pane/releases/download/v0.5.1/dsh-three-pane-0.5.1.tgz

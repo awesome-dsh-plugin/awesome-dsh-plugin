@@ -1,0 +1,6 @@
+url: https://github.com/OwlNjust/dsh-peer-sessions
+name: OwlNjust/dsh-peer-sessions
+category: identity
+description:
+  en: "Peer channels between conversations at the same level: user-granted, symmetric, with durable grants that survive a restart and burst messages merged into one ordered delivery."
+  zh: "平级对话之间的通道：经用户授权、对称，授权跨重启保留；忙时多条消息合并成一批按发送时间排序投递。"

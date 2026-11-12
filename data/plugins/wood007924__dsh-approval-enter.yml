@@ -1,0 +1,6 @@
+url: https://github.com/wood007924/dsh-approval-enter
+name: wood007924/dsh-approval-enter
+category: ui
+description:
+  en: 'Keyboard confirmation for approval cards: the card takes focus when it appears, so Enter allows once and Esc rejects, and those two keys are forwarded through the card handler when focus has moved elsewhere. It never auto-approves and never steals focus from a text field.'
+  zh: '审批卡片的键盘确认：卡片出现时自动聚焦，按 Enter 允许一次、按 Esc 拒绝；焦点离开卡片后这两个键仍会转交给卡片处理。不会自动批准，也不会抢输入框的焦点。'

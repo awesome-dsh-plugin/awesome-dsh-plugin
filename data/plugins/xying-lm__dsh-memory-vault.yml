@@ -1,0 +1,7 @@
+url: https://github.com/xying-lm/dsh-memory-vault
+name: xying-lm/dsh-memory-vault
+category: memory
+tarball: https://github.com/xying-lm/dsh-memory-vault/releases/latest/download/dsh-memory-vault.tgz
+description:
+  en: "Disk-backed long-term memory for DSH: a SQLite FTS5 vault that captures every conversation turn, injects relevant past turns into new sessions within a per-turn character budget, groups sessions into resumable conversation files, and ships a web panel for search, paging and capacity."
+  zh: "为 DSH 提供磁盘上的长期记忆：SQLite FTS5 记忆库自动采集每轮对话，新会话按预算把相关的旧片段注入上下文，会话可按「对话文件」串成可续接的线索，并带一个可检索、可翻页、可调容量的网页面板。"

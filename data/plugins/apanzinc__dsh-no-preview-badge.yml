@@ -1,0 +1,7 @@
+url: https://github.com/apanzinc/dsh-no-preview-badge
+name: apanzinc/dsh-no-preview-badge
+category: ui
+icon: https://raw.githubusercontent.com/apanzinc/dsh-no-preview-badge/main/icon.png
+description:
+  en: Removes the Preview badge on DSH.
+  zh: 去除在DSH上的预览版标签。

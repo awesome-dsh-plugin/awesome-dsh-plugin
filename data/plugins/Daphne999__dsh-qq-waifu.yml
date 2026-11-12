@@ -1,0 +1,6 @@
+url: https://github.com/Daphne999/dsh-qq-waifu
+name: Daphne999/dsh-qq-waifu
+category: fun
+description:
+  en: 'Waifu mode for QQ: splits every reply into several short chat bubbles with a human-like typing delay, drops trailing periods, and keeps tables and code blocks intact. Works by patching @tencent-connect/dsh-qqbot in the desktop profile: run node outbound/apply-patch.mjs once, set im-qqbot streaming: false, then restart — until then only the waifu_* tools work.'
+  zh: '让 AI 在 QQ 里一句一句发消息：把每条回复拆成几个气泡、按字数给打字停顿、句末不留句号；表格和代码块整条不切。做法是给 desktop profile 里的 @tencent-connect/dsh-qqbot 发送链打补丁：先手动运行一次 node outbound/apply-patch.mjs、把 im-qqbot 的 streaming 设为 false 并重启；在此之前只有 waifu_* 工具可用。'

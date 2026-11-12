@@ -1,0 +1,6 @@
+url: https://github.com/thirteenkai/dsh-resend-editor
+name: thirteenkai/dsh-resend-editor
+category: session
+description:
+  en: 'Edit a sent message in place and resend it as a forked chat, keeping the original: change the text, remove, reorder or add images and files, with session image limits checked before sending (the first message opens a new chat in the same workspace). Also @-references pending images by file name, drag-reorders composer attachments, copies messages together with their images, and adds copy, download and drag-to-composer for images in the conversation.'
+  zh: 在消息位置编辑已发消息并以 fork 出的新聊天重发，原聊天保留：改文字、删图、调整图片顺序、补图片或文件，发送前按会话图片限制校验（第一条消息在同一工作区新开聊天）。另外支持输入 @ 按文件名引用待发送图片、拖动调整输入框附件顺序、复制消息时连图片一起复制，以及对话图片的复制、下载和拖进输入框。

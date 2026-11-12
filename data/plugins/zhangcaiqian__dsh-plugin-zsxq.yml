@@ -1,0 +1,6 @@
+url: https://github.com/zhangcaiqian/dsh-plugin-zsxq
+name: zhangcaiqian/dsh-plugin-zsxq
+category: tools
+description:
+  en: 'Knowledge-planet (zsxq) knowledge base toolkit: sync posts and attachments, extract docx/PDF text and images, rebuild an index, search, and self-check — pure JS, no Python. Requires a Knowledge-planet subscription and its Cookie, pasted into config.json.'
+  zh: '知识星球知识库工具集：同步帖子与附件、抽取 docx/PDF 正文与图片、重建索引、检索与自检，纯 JS 无需 Python。需要知识星球订阅账号，并把订阅 Cookie 写进 config.json。'

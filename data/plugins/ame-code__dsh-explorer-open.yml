@@ -1,0 +1,11 @@
+url: https://github.com/ame-code/dsh-explorer-open
+name: ame-code/dsh-explorer-open
+category: wsl
+description:
+  en: 'Adds a right-click command "通过 dsh 打开" (open with dsh) to the Windows Explorer right-click menu for a folder, a folder''s empty
+    background and any file: it launches DeepSeek Harness on that folder, creates a new session every time, and puts
+    the clicked file into the new draft as an @ reference. Ships a packaged-COM menu for the Windows 11 modern menu plus
+    a registry entry for the classic menu; first install asks once for a certificate trust (native/trust-cert.bat).'
+  zh: '给 Windows 资源管理器右键菜单加「通过 dsh 打开」：文件夹、文件夹空白处、任意文件都能用。点击后在对应文件夹启动
+    DeepSeek Harness 并新建会话；文件右键会把这个文件以 @ 引用预置进新会话草稿。Win11 新式菜单用打包 COM 组件，经典菜单
+    用注册表项；首次安装需要点一次证书受信（native/trust-cert.bat）。'

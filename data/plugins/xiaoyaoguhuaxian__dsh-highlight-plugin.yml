@@ -1,0 +1,14 @@
+url: https://github.com/xiaoyaoguhuaxian/dsh-highlight-plugin
+name: xiaoyaoguhuaxian/dsh-highlight-plugin
+category: ui
+description:
+  en: >-
+    Select any sentence in a DSH chat session and mark it with a colored
+    highlight (yellow, green or blue). Marks are drawn on an independent
+    overlay so framework re-renders cannot wipe them, are anchored by quote
+    context, stored per session and persist across restarts until deleted
+    individually.
+  zh: >-
+    在 DSH 会话界面划选任意语句即可标为高亮色块（黄/绿/蓝）。色块画在独立覆盖层上，
+    框架重渲染冲不掉；按引文上下文锚定，按会话分文件持久保存、跨重启保留，可单独删除。
+tarball: https://github.com/xiaoyaoguhuaxian/dsh-highlight-plugin/releases/latest/download/dsh-highlight-plugin.tgz

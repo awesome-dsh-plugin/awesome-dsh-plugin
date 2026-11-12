@@ -1,0 +1,6 @@
+url: https://github.com/drliuhuan/dsh-plugin-vrmpet3d
+name: drliuhuan/dsh-plugin-vrmpet3d
+category: fun
+description:
+  en: A VRM 3D desktop pet with task-state animations, a floating desktop window, body-part interactions, and optional AI chatter.
+  zh: 支持任务状态联动动画、独立悬浮窗、部位互动和可选 AI 碎碎念的 VRM 3D 桌宠。

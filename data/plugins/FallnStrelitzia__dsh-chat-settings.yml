@@ -1,0 +1,7 @@
+url: https://github.com/FallnStrelitzia/dsh-chat-settings
+name: FallnStrelitzia/dsh-chat-settings
+category: session
+icon: https://raw.githubusercontent.com/FallnStrelitzia/dsh-chat-settings/main/icon-180.png
+description:
+  en: Per-conversation system prompt, turn-based context folding, sampling overrides and a low-token pure chat mode for DeepSeek Harness.
+  zh: 为单个对话设置系统提示词、按轮数折叠上下文、采样参数，并提供低 token 的纯聊天模式。

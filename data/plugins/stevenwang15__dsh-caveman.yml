@@ -1,0 +1,7 @@
+url: https://github.com/stevenwang15/dsh-caveman
+name: stevenwang15/dsh-caveman
+category: skill
+description:
+  en: "Apache-2.0 port of the caveman skill family (JuliusBrussee/caveman) into DeepSeek Harness as 14 native skills — three terseness levels (caveman, ultracave, megacave) plus commit, review, help, stats, an in-session compress whose gate rejects a dropped code block, heading, URL, negation or env var, or a result that did not shrink, and six workflow-discipline skills; commands, paths and error text stay verbatim."
+  zh: "把 caveman 技能家族（JuliusBrussee/caveman，Apache-2.0）整套移植为 DeepSeek Harness 的 14 个原生技能：三档语气（caveman、ultracave、megacave），commit、review、help、stats，以及会话内压缩（闸门会拦下代码块/标题/URL/否定词/环境变量丢失，或压缩后未变小的情况），外加 6 个工作流纪律技能；命令、路径与报错原文保留。"
+tarball: https://github.com/stevenwang15/dsh-caveman/releases/download/v0.2.2/dsh-caveman-0.2.2.tgz

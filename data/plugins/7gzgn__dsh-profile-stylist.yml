@@ -1,0 +1,6 @@
+url: "https://github.com/7gzgn/dsh-profile-stylist"
+name: "dsh-profile-stylist"
+category: identity
+description:
+  en: "Describe the persona you want and the agent writes it: nickname, bio, taglines and links come from the host model, the avatar comes from your local asset library (or a path you give), then it fills your profile page and hands the picture to the site's own uploader. Dry-run by default - it only touches profile fields, never passwords or security settings."
+  zh: "你说想要什么样的人设，它把文案写出来并把资料页填好：昵称/简介/标语/链接由宿主模型生成，头像取本地素材库（或你给的路径），再由站点自己的上传控件完成头像入库。**默认 dry-run**，只写资料字段 —— 不碰密码、邮箱、安全设置。"

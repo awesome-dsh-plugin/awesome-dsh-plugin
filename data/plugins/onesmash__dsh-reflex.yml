@@ -1,0 +1,6 @@
+url: https://github.com/onesmash/dsh-reflex
+name: onesmash/dsh-reflex
+category: workflow
+description:
+  en: 'Reflex arc for DS Bot: runs as a sibling DSH plugin with no change to ds-bot, collects facts in cheap layers, scores them with a local decision model, and wakes a Bot only when something crosses a threshold.'
+  zh: '给 DS Bot 的反射弧：作为兄弟插件运行、不改 ds-bot，用低成本层持续采集事实并在本地决策模型上打分，只有越过阈值时才唤醒 Bot 的推理层。'

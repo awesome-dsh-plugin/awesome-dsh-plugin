@@ -1,0 +1,7 @@
+url: https://github.com/RainL-621/dsh-office-bridge
+name: RainL-621/dsh-office-bridge
+category: docs
+description:
+  en: Edit xlsx/xls/csv/tsv/docx/pptx files in the DSH sidebar on Windows DSH Desktop through a locally installed ONLYOFFICE Document Server; saved edits are written back to the original file on disk.
+  zh: 在 Windows 版 DSH Desktop 的侧边栏用本机安装的 ONLYOFFICE Document Server 编辑 xlsx/xls/csv/tsv/docx/pptx，保存直接写回磁盘上的原文件。
+tarball: https://github.com/RainL-621/dsh-office-bridge/releases/latest/download/dsh-office-bridge.tgz

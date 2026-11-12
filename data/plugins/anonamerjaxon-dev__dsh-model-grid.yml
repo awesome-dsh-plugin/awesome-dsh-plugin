@@ -1,0 +1,7 @@
+url: https://github.com/anonamerjaxon-dev/dsh-model-grid
+name: anonamerjaxon-dev/dsh-model-grid
+category: ui
+tarball: https://github.com/anonamerjaxon-dev/dsh-model-grid/releases/download/v1.0.0/dsh-model-grid-1.0.0.tgz
+description:
+  en: 'Responsive card grid for the DeepSeek Harness composer model picker, grouped by provider. Host-only: injects a stylesheet through webserver/index-inject without rebuilding the client bundle, and supports both the stock picker and the dsh-peakrate menu.'
+  zh: '把 DeepSeek Harness 输入框的模型选择器改成按供应商分组的响应式卡片网格。纯宿主端：通过 webserver/index-inject 注入样式、无需重建前端包，同时支持官方选择器与 dsh-peakrate 菜单。'

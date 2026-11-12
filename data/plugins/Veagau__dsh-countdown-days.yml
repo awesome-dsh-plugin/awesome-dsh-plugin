@@ -1,0 +1,7 @@
+url: https://github.com/Veagau/dsh-countdown-days
+name: Veagau/dsh-countdown-days
+category: tools
+tarball: https://github.com/Veagau/dsh-countdown-days/releases/download/v1.0.1/dsh-countdown-days.tgz
+description:
+  en: Track countdowns and recurring dates with optional reminders.
+  zh: 记录倒数日和重复日期，并可设置提醒。

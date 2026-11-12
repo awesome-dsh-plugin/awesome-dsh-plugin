@@ -1,0 +1,7 @@
+url: https://github.com/Hungry-M/dsh-deepseek-import
+name: Hungry-M/dsh-deepseek-import
+category: session
+icon: https://raw.githubusercontent.com/Hungry-M/dsh-deepseek-import/main/assets/icon-180.png
+description:
+  en: 'Imports chats captured from chat.deepseek.com by the repo''s companion Edge extension (loaded unpacked in Edge) into DeepSeek Harness as new sessions; thinking is saved as a sidecar thinking.md, and trimmed, branched or very long chats also get the full transcript.md.'
+  zh: '把配套 Edge 扩展（需在 Edge 里“加载已解压的扩展”）从 chat.deepseek.com 抓取并导出的对话重建为 DeepSeek Harness 新会话；思考存为旁挂 thinking.md，被截断、分叉或超长的对话另存完整原文 transcript.md。'

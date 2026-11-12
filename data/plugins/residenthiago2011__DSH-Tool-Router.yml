@@ -1,0 +1,7 @@
+url: https://github.com/residenthiago2011/DSH-Tool-Router
+name: residenthiago2011/DSH-Tool-Router
+category: tools
+tarball: https://github.com/residenthiago2011/DSH-Tool-Router/releases/latest/download/dsh-tool-router.tgz
+description:
+  en: 'Hides tool schemas from the model''s prefill and reveals one tool at a time through a decision model API. Requires a running decision-model API endpoint and pnpm on PATH.'
+  zh: '通过决策模型 API 把工具 schema 从模型 prefill 中隐藏，每次按需揭示一个工具。需运行决策模型 API 端点，且 PATH 中有 pnpm。'

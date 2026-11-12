@@ -1,0 +1,7 @@
+url: https://github.com/Joshua1ya/dsh-tray-restart
+name: Joshua1ya/dsh-tray-restart
+category: dev
+description:
+  en: Restart control for the DeepSeek Harness desktop app on Windows. A session header button or a tray icon stops the app and its host process, waits for both to exit, clears a stale profile lock, and relaunches, so a newly installed plugin loads without quitting the app by hand.
+  zh: 仅支持 Windows 的 DeepSeek Harness 桌面端重启开关。会话头部按钮与系统托盘图标都会结束应用及其 Host 进程、等待完全退出、清理残留的 profile 锁，然后重新拉起应用，装好新插件后不必手动退出再进。
+icon: https://raw.githubusercontent.com/Joshua1ya/dsh-tray-restart/main/assets/icon-96.png

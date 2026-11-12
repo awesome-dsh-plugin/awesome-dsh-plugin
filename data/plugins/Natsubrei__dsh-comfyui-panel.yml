@@ -1,0 +1,7 @@
+url: https://github.com/Natsubrei/dsh-comfyui-panel
+name: Natsubrei/dsh-comfyui-panel
+category: ui
+tarball: https://github.com/Natsubrei/dsh-comfyui-panel/releases/latest/download/dsh-comfyui-panel.tgz
+description:
+  en: The real ComfyUI editor as a sidebar tab in DeepSeek Harness, with per-session tools that read and edit the graph on screen and a panel that can start, stop and restart ComfyUI without installing anything into it.
+  zh: 把真正的 ComfyUI 编辑器作为侧栏标签嵌进 DeepSeek Harness，每会话的工具直接读写屏幕上那张工作流，面板可启停 ComfyUI，且不向 ComfyUI 安装任何东西。

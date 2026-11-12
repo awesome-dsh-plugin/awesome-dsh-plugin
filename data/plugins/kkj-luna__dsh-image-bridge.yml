@@ -1,0 +1,6 @@
+url: https://github.com/kkj-luna/dsh-image-bridge
+name: kkj-luna/dsh-image-bridge
+category: model
+description:
+  en: Text-to-image and image-to-image for a model that cannot draw, through any OpenAI-compatible image API, with multiple providers and an automatic fallback model.
+  zh: 让没有生图/修图能力的模型接入任意 OpenAI 兼容生图接口：支持文生图与图生图，可添加多个服务商，并为生图与修图各选主用与备用模型，主模型连不上时自动切换到备用。

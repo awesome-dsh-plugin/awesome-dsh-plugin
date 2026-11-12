@@ -1,0 +1,6 @@
+url: https://github.com/wweir/dsh-advisor
+name: wweir/dsh-advisor
+category: dev
+description:
+  en: 'Automatic second-opinion review: a restricted child session re-reads the agent''s recent work with read-only tools and delivers at most one evidence-backed note, or stays silent. Requires a model route in the config; the plugin stays disabled until one is set.'
+  zh: 自动二审：受限子会话用只读工具复核 agent 最近的工作，最多投递一条有证据支撑的提醒，没有问题则保持沉默。

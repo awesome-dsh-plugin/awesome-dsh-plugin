@@ -1,0 +1,6 @@
+url: https://github.com/AnJiaqi0926/dsh-plugin-switchboard
+name: AnJiaqi0926/dsh-plugin-switchboard
+category: ui
+description:
+  en: 'Toggles installed plugins from a sidebar panel, groups them by origin (official, marketplace, local), flags changes that need a Host restart, and installs curated plugins from a Discover tab.'
+  zh: '在侧边栏面板里一键启停已安装插件，按来源分组（官方自带、市场安装、本地导入），标出需要重启 Host 才生效的改动，并在「发现」页一键安装精选插件。'

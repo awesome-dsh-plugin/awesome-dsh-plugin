@@ -1,0 +1,7 @@
+url: https://github.com/zhe97396-tech/dsh-lazy-mcp
+name: zhe97396-tech/dsh-lazy-mcp
+category: tools
+tarball: https://github.com/zhe97396-tech/dsh-lazy-mcp/releases/latest/download/dsh-lazy-mcp.tgz
+description:
+  en: MCP gateway for dsh that connects each server on first use and disconnects it after an idle window; tool lists are cached on disk, existing mcpServers files can be imported, and child-process environment variables are scrubbed.
+  zh: dsh 的按需 MCP 网关：每个 server 首次使用时才连接、空闲后自动断开，工具列表缓存在磁盘，可导入现有的 mcpServers 配置，并对子进程环境变量做脱敏。

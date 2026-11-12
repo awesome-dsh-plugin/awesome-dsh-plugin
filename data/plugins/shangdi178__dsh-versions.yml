@@ -1,0 +1,6 @@
+url: https://github.com/shangdi178/dsh-versions
+name: shangdi178/dsh-versions
+category: dev
+description:
+  en: 'Version manager for the dsh host in a settings section of its own: shows the installed version against npm dist-tags, checks for updates, and installs, upgrades, downgrades or reinstalls any published version with a pre-upgrade local snapshot, failure rollback, snapshot-based rollback and an upgrade history. Before a cross-minor install it compares the @deepseek-ai/dsh-settings exports of the target release with the named imports of installed plugins to flag those that would stop loading, and it can apply or remove reversible compat shims that port removed legacy APIs back into framework files. Upgrade, restore and restart engines are Windows-only; version listing and checks work on every platform.'
+  zh: 'dsh 主程序版本管理，位于独立设置分区：对照 npm dist-tags 显示已装版本、检查更新，可安装/升级/降级/重装任意已发布版本，升级前自动建本地快照，失败自动回滚，支持基于快照的回滚与升级历史。跨次版本安装前，会比对目标版本 @deepseek-ai/dsh-settings 的导出与已装插件的具名导入，标出升级后将无法加载的插件；并可启用/停用可逆兼容垫片，把被移除的旧 API 移植回框架文件。升级/恢复/重启引擎仅 Windows 可用，版本查看与更新检查各平台通用。'

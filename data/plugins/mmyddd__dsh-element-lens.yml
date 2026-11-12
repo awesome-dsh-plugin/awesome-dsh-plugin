@@ -1,0 +1,8 @@
+url: https://github.com/mmyddd/dsh-element-lens
+name: mmyddd/dsh-element-lens
+category: browser
+tarball: https://github.com/mmyddd/dsh-element-lens/releases/latest/download/dsh-element-lens.tgz
+icon: https://raw.githubusercontent.com/mmyddd/dsh-element-lens/main/assets/icon-180.png
+description:
+  en: 'Picks an element in the right-Sidebar browser and inserts its selector, computed style, and HTML into the chat draft as a chip you can remove one by one.'
+  zh: '在右侧栏浏览器里拾取元素，把它的选择器、计算样式与 HTML 以可逐条删除的胶囊插入对话草稿。'

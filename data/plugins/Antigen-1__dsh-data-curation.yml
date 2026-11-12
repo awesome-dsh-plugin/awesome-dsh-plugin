@@ -1,0 +1,6 @@
+url: https://github.com/Antigen-1/dsh-data-curation
+name: Antigen-1/dsh-data-curation
+category: tools
+description:
+  en: "Data cleanup and reconciliation for dsh, built around reviewable evidence: original sources stay read-only, a cell is accepted only after independent checks agree, and every accepted value keeps its provenance and audit trail."
+  zh: "用于数据核对与清洗的 dsh 插件：原始材料保持只读，一格数据只有在多个独立校验一致后才被接受，每个接受值都保留来源与审计痕迹。"

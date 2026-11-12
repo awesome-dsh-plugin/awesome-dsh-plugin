@@ -1,0 +1,6 @@
+url: https://github.com/LinJohn8/dsh-local-Sub2api
+name: LinJohn8/dsh-local-Sub2api
+category: tools
+description:
+  en: "Embeds a private local Sub2API gateway (Sub2API + PostgreSQL + Redis via Docker) into the DeepSeek Harness sidebar with automatic local login. Windows only, with Docker Desktop and its WSL2 backend already installed; the first start pulls about 250 MB of images and needs local ports 18080 and 18081 free."
+  zh: "把一套本机私有的 Sub2API 网关（Sub2API + PostgreSQL + Redis，Docker 方式）内嵌到 DeepSeek Harness 侧栏，并自动本地登录。仅限 Windows，需已装好 Docker Desktop 与 WSL2 后端；首次启动要从 Docker Hub 拉取约 250 MB 镜像，并占用本机 18080、18081 端口。"

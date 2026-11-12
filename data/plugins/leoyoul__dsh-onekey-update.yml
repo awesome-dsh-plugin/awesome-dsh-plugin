@@ -1,0 +1,6 @@
+url: https://github.com/leoyoul/dsh-onekey-update
+name: leoyoul/dsh-onekey-update
+category: market
+description:
+  en: Checks enabled plugins for newer versions at startup, lists them in a corner card and upgrades them all with one click, reporting per-plugin success or failure; resolves the bundled dsh CLI on macOS, Windows and Linux instead of assuming a Windows executable.
+  zh: 启动后检查已启用插件的新版本，在右下角列出并一键逐个升级，逐条给出成功或失败结果；通过解析应用自带的 dsh CLI 在 macOS、Windows、Linux 上执行更新，不假定 Windows 可执行文件。

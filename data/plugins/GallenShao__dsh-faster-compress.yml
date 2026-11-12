@@ -1,0 +1,6 @@
+url: https://github.com/GallenShao/dsh-faster-compress
+name: GallenShao/dsh-faster-compress
+category: session
+description:
+  en: Prepares context summaries in the background and applies them at safe step boundaries, with native compaction fallback and a per-conversation history of summaries, application status, timings, and token usage.
+  zh: 在后台准备上下文摘要并于安全步骤应用，保留原生压缩回退，并提供摘要内容、应用状态、耗时与用量的会话压缩历史。

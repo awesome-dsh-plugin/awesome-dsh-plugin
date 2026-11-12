@@ -1,0 +1,6 @@
+url: https://github.com/k0ndrateff/dsh-plugins/tree/main/packages/gitlab
+name: k0ndrateff/dsh-plugins#gitlab
+category: git
+description:
+  en: 'Merge requests, review threads and pipeline job logs for GitLab over its REST API with a personal access token, in a side panel, with comment, reply, resolve and approve actions that wait for confirmation. Reads need the read_api scope, writes need api.'
+  zh: '在侧栏面板里通过 GitLab REST API 与个人访问令牌查看合并请求、评审讨论串与流水线作业日志，并可评论、回复、解决讨论与批准；写操作均需二次确认（读需 read_api，写需 api）。'

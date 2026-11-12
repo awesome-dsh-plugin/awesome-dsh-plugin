@@ -1,0 +1,6 @@
+url: https://github.com/mengge237/dsh-model-priority
+name: mengge237/dsh-model-priority
+category: model
+description:
+  en: 'Reorder your own models: drag inside a provider card on the Models settings page, or use the Model order section when another plugin already occupies that card. The order is written through the host settings service with a revision check, so the settings page and the model picker stay in sync. The settings left nav can be reordered by drag as well.'
+  zh: '模型顺序：在「设置 → 模型」的提供方卡片里拖动调整；卡片格被别的插件占用时，入口在设置左导航的「模型顺序」分区。顺序通过宿主 settings 服务带版本校验写回，设置页与模型选择器保持同步；设置左导航本身也可拖拽排序。'

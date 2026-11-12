@@ -2,5 +2,5 @@ url: https://github.com/rebron1900/dsh-web-search-9router
 name: rebron1900/dsh-web-search-9router
 category: tools
 description:
-  en: '9router-backed web search + fetch providers for DeepSeek Harness (ctx.web). Wires the native web_search/web_fetch tools to 9router''s /v1/search and /v1/web/fetch endpoints.'
-  zh: '9router 网页搜索与网页抓取 provider，为 DeepSeek Harness 提供搜索和抓取能力。'
+  en: '9router-backed web search and fetch for DeepSeek Harness. Enabling the bundle automatically routes native web_search/web_fetch tools to 9router; disabling it restores the remaining provider configuration.'
+  zh: '为 DeepSeek Harness 提供 9router 网页搜索与抓取。启用插件包后自动接管原生 web_search/web_fetch，停用后恢复其余配置层的提供方选择。'

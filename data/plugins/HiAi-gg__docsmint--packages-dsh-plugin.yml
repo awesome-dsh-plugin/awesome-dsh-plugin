@@ -1,0 +1,7 @@
+url: https://github.com/HiAi-gg/docsmint/tree/main/packages/dsh-plugin
+name: HiAi-gg/docsmint#dsh-docsmint
+category: memory
+description:
+  en: DocsMint workspace panel and agent tools for document search, reading, creation and updates through Cloud OAuth or self-hosted API keys.
+  zh: DocsMint 工作区面板与智能体工具，支持文档搜索、读取、创建和更新，可连接 Cloud OAuth 或自托管 API 密钥。
+icon: https://raw.githubusercontent.com/HiAi-gg/docsmint/main/packages/dsh-plugin/icon.png

@@ -1,0 +1,7 @@
+url: https://github.com/yuxiangwhn/dsh-chat-wallpaper
+name: yuxiangwhn/dsh-chat-wallpaper
+category: ui
+tarball: https://github.com/yuxiangwhn/dsh-chat-wallpaper/releases/download/v1.1.1/dsh-chat-wallpaper-1.1.1.tgz
+description:
+  en: 'Image wallpaper behind the DSH chat UI: the composer card, the user''s own bubbles and the new-chat button become frosted glass, the blur deepens by 5px once the composer has text or the conversation already has messages, and a settings-style window frosts the whole backdrop while it stays sharp itself.'
+  zh: '在 DSH 聊天界面背后铺一张本地图片：输入框卡片、用户气泡、新会话按钮换成磨砂玻璃，输入框有文字或对话已有消息时磨砂自动加深 5px，设置类窗口打开时整片背景瞬间磨砂、窗口本身保持清晰。'

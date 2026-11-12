@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-adaptive
+name: dingchenhui0618-arch/dsh-adaptive
+category: tools
+description:
+  en: 'Version-adaptive tooling for DeepSeek Harness: it reads the running DSH version from the plugin manager, mirrors app-boot plugin-compatibility rules (engines.dsh first, then @deepseek-ai/dsh* peers, prerelease-inclusive comparison, exact-version exemptions) to score every installed plugin, and statically flags source still using APIs renamed or deprecated between v0.1.6 and v0.2.1. Ships a conversation-view panel, an agent tool and HTTP state/scan/report routes. Read-only, offline.'
+  zh: 'DSH 版本自适应：自检当前运行时版本，按 DSH 自己的规则（engines.dsh 优先，否则检查 @deepseek-ai/dsh* peer；预发布参与比较；精确版本例外）逐条判定已装插件，并用官方 release notes 摘出的规则标出源码里仍在使用 v0.1.6 起已改名/弃用接口的位置。带会话视图面板、agent 工具与 HTTP 状态/重扫/报告入口；只读、离线。'

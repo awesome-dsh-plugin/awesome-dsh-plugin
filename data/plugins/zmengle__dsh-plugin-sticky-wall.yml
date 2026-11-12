@@ -1,0 +1,6 @@
+url: https://github.com/zmengle/dsh-plugin-sticky-wall
+name: zmengle/dsh-plugin-sticky-wall
+category: ui
+description:
+  en: 'Sidebar sticky-note wall with colour-coded notes, checklists, folding, a trash drawer that restores deleted notes, drag and resize, and five sticky_wall_* model tools for writing and restoring notes from chat.'
+  zh: '侧栏便签墙：彩色便签、待办勾选、折叠、可恢复的回收站抽屉、拖拽与改尺寸，并给模型 5 个 sticky_wall_* 工具从对话里记事和恢复。'

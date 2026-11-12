@@ -1,0 +1,7 @@
+url: https://github.com/winlin926/dsh-roam
+name: winlin926/dsh-roam
+category: remote
+description:
+  en: 'Remote access to running DeepSeek Harness sessions from a phone browser: scan a one-time QR code to continue conversations, answer approvals and start new tasks over Wi-Fi or a tunnel.'
+  zh: '远程连接正在运行的 DeepSeek Harness 会话：手机浏览器扫码即可继续对话、处理审批、新建任务，支持同一 Wi-Fi 或临时隧道。'
+icon: https://raw.githubusercontent.com/winlin926/dsh-roam/main/assets/icon-180.png

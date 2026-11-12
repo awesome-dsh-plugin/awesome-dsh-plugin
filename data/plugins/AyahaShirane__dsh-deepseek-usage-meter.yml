@@ -1,0 +1,6 @@
+url: https://github.com/AyahaShirane/dsh-deepseek-usage-meter
+name: AyahaShirane/dsh-deepseek-usage-meter
+category: usage
+description:
+  en: Adds a cost-and-balance chip to the composer stats row beside the shipped token-usage pill — the session's estimated DeepSeek cost, a peak/off-peak light and the signed-in account's remaining balance, with each billing item priced in the breakdown; it activates only when a DeepSeek official route is present.
+  zh: 在输入栏统计行、官方 token 用量条旁加一枚费用与余额胶囊：本次会话的 DeepSeek 估算费用、峰谷时段指示灯与已登录账号的剩余额度，明细里按计费项列出各自金额；仅在检测到 DeepSeek 官方渠道时激活。

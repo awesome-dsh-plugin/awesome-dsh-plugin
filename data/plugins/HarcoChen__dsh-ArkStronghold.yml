@@ -1,0 +1,6 @@
+url: https://github.com/HarcoChen/dsh-ArkStronghold
+name: HarcoChen/dsh-ArkStronghold
+category: fun
+description:
+  en: Native DSH tools for playing Stronghold Protocol solo games over the game site's WebSocket connection, with compact state views, explicit actions and public card lookups.
+  zh: 通过游戏站原生 WebSocket 连接进行 Stronghold Protocol 单人对局的 DSH 工具，支持紧凑局面查看、明确动作执行和公开卡牌查询。

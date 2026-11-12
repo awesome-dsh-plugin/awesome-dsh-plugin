@@ -1,0 +1,6 @@
+url: https://github.com/melo7up/dsh-wait-reply
+name: melo7up/dsh-wait-reply
+category: session
+description:
+  en: 'Keeps a root turn open until the child agents and current-turn background jobs it started settle, then asks for one self-contained final answer in that same turn. It observes job settlement without consuming job output, never cancels children, and does not decide task success. Verified on DSH 0.2.2-rc.1 only; on any other host version it stays inactive, logs one warning, and turns close natively. Each batch of results that arrives after a reply costs one extra model call; ordinary questions add none.'
+  zh: '让根轮次等自己启动的子智能体和本轮的 background job 都结束后，才在同一轮里要求模型产出完整、自洽的最终回答。只观察 job 是否结束、不消耗 job 的输出，不取消子智能体，也不判定任务成功。仅在 DSH 0.2.2-rc.1 上验证；其他宿主版本下插件保持未激活、只写一条警告，轮次按原生方式收尾。回复之后每到一批结果会多一次模型调用，普通问答不增加。'

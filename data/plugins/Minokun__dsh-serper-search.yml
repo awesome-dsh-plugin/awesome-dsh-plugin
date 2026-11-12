@@ -1,0 +1,6 @@
+url: https://github.com/Minokun/dsh-serper-search
+name: Minokun/dsh-serper-search
+category: tools
+description:
+  en: 'Complementary web-search provider: every web_search merges the DeepSeek Search API (primary) with serper.dev Google results (secondary) at a fixed 2:1 ratio. Both sides are direct HTTP retrievals with no auxiliary model turn: URL-deduped sources, long DeepSeek summaries clipped into snippets, per-backend timeouts and graceful degradation to whichever backend answers.'
+  zh: 互补式网页搜索 provider：每次 web_search 由 DeepSeek 官方 Search API（主）与 serper.dev 的 Google 结果（补）按固定 2:1 交错合并。两路均为直连检索、无辅助模型调用；来源按 URL 去重，官方长摘要截断注入，单路超时自动降级到另一路。

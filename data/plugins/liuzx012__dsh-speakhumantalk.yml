@@ -1,0 +1,7 @@
+url: https://github.com/liuzx012/dsh-speakhumantalk
+name: liuzx012/dsh-speakhumantalk
+category: usage
+description:
+  en: 'Removes AI phrasing so replies and documents sound human: an always-on de-slop style section injected into every session (on by default, switch it off with deslop_mode), four deslop_* tools (0-100 slop scan, deterministic rewrite, intensity switch, voice profile) and four skills (rewriting, conversation, technical docs, Chinese reports), copied into the DSH skills folder at startup. The effect is measurable: a typical AI-flavoured Chinese paragraph scores 49 before deslop_rewrite and 6 after.'
+  zh: '删掉 AI 腔与套话，让回复和文档说人话：每个会话自动注入去 AI 味风格层（默认开启，可用 deslop_mode 关闭），配 deslop_* 四个工具（0 到 100 分扫描、确定性改写、档位切换、声音画像）与四个 skill（改稿、对话、技术文档、中文报告），启动时复制到 DSH 的 skills 目录。效果可量化：一段典型 AI 腔中文经 deslop_rewrite 清洗后，评分由 49 降到 6。'
+icon: https://raw.githubusercontent.com/liuzx012/dsh-speakhumantalk/main/assets/icon-180.png

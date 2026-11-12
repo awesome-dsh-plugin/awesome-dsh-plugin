@@ -1,0 +1,7 @@
+url: https://github.com/xt765/dsh-doubao-image
+name: xt765/dsh-doubao-image
+category: workflow
+description:
+  en: 'Registers native doubao_generate_image and doubao_image_status Agent tools to automate Doubao Web (doubao.com) via Tabbit Browser, automatically extracting watermark-free 2.7K wm0 original images into local files and multimodal chat attachments.'
+  zh: '豆包网页生图 Agent 原生工具插件：向 Agent 注册 doubao_generate_image 与 doubao_image_status 工具，通过 Tabbit 操控 doubao.com 提交生图提示词、选择比例与风格，自动优选 2.7K wm0 无水印超清原图落盘并注入对话附件。'
+tarball: https://github.com/xt765/dsh-doubao-image/releases/latest/download/dsh-doubao-image.tgz

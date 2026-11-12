@@ -1,0 +1,6 @@
+url: https://github.com/3450892121/dsh-task-monitor/tree/main/dsh-task-monitor
+name: 3450892121/dsh-task-monitor#dsh-task-monitor
+category: ui
+description:
+  en: Right-side overlay panel for DSH sessions showing git status, background jobs, skills and MCP usage, artifacts and visited pages, with a commit/push dialog and one-click GitHub publish.
+  zh: DSH 会话右侧独立监控面板：git 状态、后台进程、技能与 MCP、产出与网页查阅，附提交/推送对话框与一键发布到 GitHub。

@@ -1,0 +1,7 @@
+url: https://github.com/lyx0717/dsh-washer
+name: lyx0717/dsh-washer
+category: ui
+description:
+  zh: "常驻桌面的桌宠（桌面宠物）：一台滚筒洗衣机，把会话状态渲染成洗衣动作，四套皮肤（精密家电 / 复古奶油 / 工笔重彩 / 太空舱）可切换，多会话计数、洗完 / 卡住 / 等你确认主动提醒；macOS 与 Windows 均可运行，详情面板可看最近几轮与耗时。"
+  en: "An always-on-top desktop pet (a washing machine) that renders session state as washing actions: four switchable skins, multi-session counters, and proactive done / stuck / approval alerts on macOS and Windows, plus a detail panel with recent turns and timings."
+icon: https://raw.githubusercontent.com/lyx0717/dsh-washer/main/docs/market-icon.png

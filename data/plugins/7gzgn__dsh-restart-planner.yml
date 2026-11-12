@@ -1,0 +1,6 @@
+url: "https://github.com/7gzgn/dsh-restart-planner"
+name: "dsh-restart-planner"
+category: tools
+description:
+  en: "Let the agent restart its own DSH host: schedule a self-restart, finish the turn first, then a detached helper stops and relaunches the app and reports what happened. Dry-run, a status check, and an optional \"when can I blink\" confirmation are built in."
+  zh: "让 agent 自己安排宿主重启：工具立刻返回，等这一轮回复送达、会话日志落盘安静后再停+拉，并留下报告；自带 dry-run、体检与「什么时候可以眨一下眼」的确认。"

@@ -1,0 +1,6 @@
+url: https://github.com/wanwujiehuyi-web/dsh-browser-lens
+name: wanwujiehuyi-web/dsh-browser-lens
+category: browser
+description:
+  en: 'Zero-dependency browser hand & eye over CDP: drives your own Chrome/Edge with real clicks, Chinese IME typing, scrolling and text/selector element picking, and captures whole-page evidence into one replayable folder — DOM, accessibility tree, screenshots, cookies, storage, console, HAR, resource waterfall and perf metrics.'
+  zh: '零依赖的浏览器「手和眼」（CDP 接入）：直接驱动本机 Chrome/Edge，真实点击、中文输入、滚动、按文字或选择器定位；并能把整页抓成可离线复盘的证据包——DOM、无障碍树、截图、Cookie、本地存储、控制台、HAR、资源瀑布与性能指标。'

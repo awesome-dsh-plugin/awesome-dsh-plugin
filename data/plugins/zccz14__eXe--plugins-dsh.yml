@@ -1,0 +1,6 @@
+url: https://github.com/zccz14/eXe/tree/main/plugins/dsh
+name: zccz14/eXe#dsh
+category: remote
+description:
+  en: 'Runs shell commands on machines you have paired with eXe, over its relay, and reads images back from them as image blocks for the model: three model tools (device list, shell, image — take a screenshot with the shell tool, then read the file), plus a sidebar page that shows the caller address of this machine, edits the device and trusted-caller lists with labels, and times a real call to each device on demand. Needs the eXe client running on those machines and a caller key from `exe mcp init` on this machine.'
+  zh: '在你已与 eXe 配对的机器上跑 shell，并把设备上的图片作为图片内容块交给模型，往返经 eXe 中继：三个模型工具（设备列表、shell、图片——截图需先用 shell 工具生成再读回），外加一页侧边栏——本机调用方地址、可改名的设备与受信调用方清单，以及按设备一键测量一次真实调用的往返耗时。那些机器上需运行 eXe 客户端，本机需有 `exe mcp init` 生成的调用方键。'

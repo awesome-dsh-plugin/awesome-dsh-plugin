@@ -1,0 +1,7 @@
+url: https://github.com/QIUZAIYOU/dsh-composer-rewind
+name: QIUZAIYOU/dsh-composer-rewind
+category: ui
+description:
+  en: "Composer history that restores the whole input state: composer contents, image and file attachments, @ references and slash commands, plus the model, thinking effort, permission and agent preset used."
+  zh: "记录并还原整个输入框状态：文字、图片/文件附件、@ 引用和 / 指令，以及当时的模型、思考程度、权限预设和使用模式；还原后与记录时一致。"
+icon: https://raw.githubusercontent.com/QIUZAIYOU/dsh-composer-rewind/main/assets/icon-180.png

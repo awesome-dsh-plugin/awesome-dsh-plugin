@@ -1,0 +1,6 @@
+url: https://github.com/why-sir/dsh-bootstrap
+name: why-sir/dsh-bootstrap
+category: market
+description:
+  en: 'DSH onboarding plugin: recommends plugins across eight domains ranked by weighted GitHub stars and npm monthly downloads, installs the recommended set in one click behind a reviewable plan, and exports or imports an environment code recording a profile''s plugin list, exact versions and enabled flags.'
+  zh: 'DSH 新人引导插件：按八个领域推荐插件（GitHub Star 与 npm 近月下载加权排序），先出计划再一键安装，并可导出／导入记录 profile 插件清单、精确版本与启用状态的环境码。'

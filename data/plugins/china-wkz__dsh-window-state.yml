@@ -1,0 +1,7 @@
+url: https://github.com/china-wkz/dsh-window-state
+name: china-wkz/dsh-window-state
+category: ui
+icon: https://raw.githubusercontent.com/china-wkz/dsh-window-state/main/assets/icon-180.png
+description:
+  en: 'Remembers the DSH desktop window position, size, and maximized state on Windows, and restores them on the next launch.'
+  zh: '在 Windows 上记住 DSH 桌面窗口的位置、尺寸与最大化状态，下次启动时自动恢复。'

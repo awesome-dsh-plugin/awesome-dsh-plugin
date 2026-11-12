@@ -1,0 +1,6 @@
+url: https://github.com/Hou-mingyuan/glm-coding-quota
+name: Hou-mingyuan/glm-coding-quota
+category: usage
+description:
+  en: "GLM Coding Plan usage quota ring in the composer dock - 5-hour and weekly credit windows with level, auto-refresh and one-click retry. Requires a GLM Coding Plan subscription and key, plus your BigModel organization and project IDs (the team quota API returns empty without them)."
+  zh: "输入框下方实时显示 GLM Coding Plan 额度环 - 5 小时与每周额度窗口、等级、自动刷新与一键重试。需 GLM Coding Plan 订阅与 key，并配置 BigModel 的 organization 与 project ID（团队额度接口缺了它们会返回空）。"

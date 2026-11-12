@@ -1,0 +1,6 @@
+url: https://github.com/w2018/dsh-qq-group-digest
+name: w2018/dsh-qq-group-digest
+category: notify
+description:
+  en: 'QQbot, QQ机器人 — watches chosen QQ groups over OneBot 11, batches messages by a count threshold, summarizes each batch with a model already configured in DSH, and sends the per-group report to chosen friends as a QQ private message. Messages can be filtered by keyword and by sender; ships a settings page, a local web console and a summary archive.'
+  zh: 'QQ机器人、QQbot：通过 OneBot 11 监听指定 QQ 群，按消息数阈值分批，调用 DSH 已配置的模型总结每批消息，再按群私聊投递到指定好友；支持按关键词与成员过滤消息，带设置页、本地网页控制台与总结归档。'

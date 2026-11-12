@@ -1,0 +1,7 @@
+# 提交到 awesome-dsh-plugin 仓库: data/plugins/lugezuishuai__dsh-token-chart.yml
+url: https://github.com/lugezuishuai/dsh-token-chart
+name: lugezuishuai/dsh-token-chart
+category: usage
+description:
+  en: 'Token usage statistics for DeepSeek Harness with a session drawer and today / last-3-day / last-7-day panels, plus configurable charts and metrics.'
+  zh: '统计 DeepSeek Harness 的 Token 用量：会话抽屉与今日 / 近 3 天 / 近 7 天面板，图表与指标可配置。'

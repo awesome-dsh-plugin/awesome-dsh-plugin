@@ -1,0 +1,6 @@
+url: https://github.com/111xjyuan/dsh-desktop-sidecar
+name: 111xjyuan/dsh-desktop-sidecar
+category: tools
+description:
+  en: "Native Windows desktop control for DSH, 21 tools: UIA control tree plus offline OCR to see the screen, click a control by its name, type CJK without touching your clipboard, and drive WeChat / Office / browsers / online-class pages. It never steals your mouse or keyboard (it waits for you to stop), never resizes your windows, lets you type corrections mid-task from a sidebar panel, and after every action it reads the screen back and tells you honestly when it could not confirm. Persistent built-in browser channel. No driver, no extra runtime."
+  zh: "原生 Windows 桌面控制，共 21 个工具：UIA 控件树 + 离线 OCR 看屏幕、按控件名字点击、不占剪贴板地打中文，微信 / Office / 浏览器 / 网课都能操作。不抢你的鼠标键盘（你在用它会等）、从不改你的窗口大小，侧边栏「指挥台」可随时打字纠正，每步操作后都会回头核对屏幕并如实说明结果。内置持久登录的网页通道，无需驱动、无额外运行时。"

@@ -1,0 +1,7 @@
+url: https://github.com/Making-acid/dsh-plugin-comfyui
+name: Making-acid/dsh-plugin-comfyui
+category: tools
+description:
+  en: Local ComfyUI image generation for DeepSeek Harness — discovers or starts the ComfyUI installed on the machine, generates a text-to-image result from a chat request, and attaches it to the conversation.
+  zh: 让 DeepSeek Harness 用本机 ComfyUI 真正生图——自动查找或启动本地服务，在对话里完成文生图并附图。
+icon: https://raw.githubusercontent.com/Making-acid/dsh-plugin-comfyui/main/assets/icon-180.png

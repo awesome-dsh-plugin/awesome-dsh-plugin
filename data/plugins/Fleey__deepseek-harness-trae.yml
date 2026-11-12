@@ -1,0 +1,6 @@
+url: https://github.com/Fleey/deepseek-harness-trae
+name: Fleey/deepseek-harness-trae
+category: model
+description:
+  en: Connects Trae enterprise models to DeepSeek Harness from a personal access token alone, calling llm_raw_chat directly with no trae2api or traecli process; fetches the model catalog from upstream on startup and shows remaining quota for personal packs and enterprise seats.
+  zh: 仅凭一个个人访问令牌（PAT）把 Trae 企业版模型接入 DeepSeek Harness，直连 llm_raw_chat，不需要 trae2api 或 traecli 进程；启动时从上游拉取模型目录，并显示个人额度包与企业席位的剩余额度。

@@ -1,0 +1,7 @@
+url: https://github.com/zdt3476/dsh-tide-theme
+name: zdt3476/dsh-tide-theme
+category: theme
+icon: https://raw.githubusercontent.com/zdt3476/dsh-tide-theme/main/icon.png
+description:
+  en: "Deep-sea tidal-blue theme for the DeepSeek Harness Web client with a single accent color and matte (non-glass) surfaces in light and dark modes. Same-token UI additions: a single-line dock HUD reading real session projections (context usage vs. window, TPS, cache-hit rate, elapsed time), per-turn subagent delegation cards showing token usage and an optional cost estimate from OpenRouter public prices, sidebar pagination with pinned sections and type-to-filter, and model / reasoning-effort / permission controls under the composer. Each addition can be toggled in the plugin settings."
+  zh: "给 DeepSeek Harness Web 的深海潮汐蓝主题：单一强调色、磨砂（非玻璃）材质，明暗双态一致。同套令牌下的界面增强：单行底栏 HUD（读取真实会话投影的上下文占用与上限、TPS、缓存命中率、耗时）、按回合绘制的子代理委派卡片（显示 token 用量，并可附上按 OpenRouter 公开单价估算的金额）、侧栏分页与置顶小节加实时筛选、输入框下方的模型/思考等级/权限控件，每项均可在插件设置中单独开关。"

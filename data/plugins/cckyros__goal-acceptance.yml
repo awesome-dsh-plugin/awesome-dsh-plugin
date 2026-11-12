@@ -1,0 +1,6 @@
+url: https://github.com/cckyros/goal-acceptance
+name: cckyros/goal-acceptance
+category: workflow
+description:
+  en: 'Acceptance-criteria-driven goal completion: locks verifiable criteria, tracks task dependencies, and gates completion behind formal reviewer validation (18 MCP tools).'
+  zh: '验收标准驱动的目标完成：锁定可验证的验收标准、跟踪任务依赖，以 reviewer 正式验收作为完成门禁（18 个 MCP 工具）。'

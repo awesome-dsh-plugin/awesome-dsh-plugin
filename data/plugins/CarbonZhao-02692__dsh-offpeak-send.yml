@@ -1,0 +1,6 @@
+url: https://github.com/CarbonZhao-02692/dsh-offpeak-send
+name: CarbonZhao-02692/dsh-offpeak-send
+category: usage
+description:
+  en: Queues composer messages sent during DeepSeek peak billing hours and delivers them 3 s after the next off-peak window starts. A dock above the composer shows the countdown with send-now / edit / cancel, the queue survives closing the browser or restarting DSH, and attachments are staged on the host.
+  zh: 高峰时段按发送自动排队，到谷时（半价）开始后 3 秒投递；输入框上方 dock 显示倒计时并提供立即发送/修改/取消，关掉浏览器或重启 DSH 队列不丢，支持附件。

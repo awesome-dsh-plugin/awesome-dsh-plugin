@@ -1,0 +1,6 @@
+url: https://github.com/self-exiler/DSH-Comfyui-Prompt-Generator
+name: self-exiler/DSH-Comfyui-Prompt-Generator
+category: ui
+description:
+  en: 'Turns rough notes or images into ready-to-paste English ComfyUI prompts with a Chinese translation and notes, in a workspace side panel. The bundled default system prompt tells the model to drop content restrictions and refusals (override it with config.systemPrompt); image input needs a vision-capable model.'
+  zh: '在侧栏面板中把碎片文本或图片整理成可直接粘贴的 ComfyUI 英文提示词，附中文翻译与补充说明。内置默认系统提示词会要求模型取消内容限制与拒答（可用 config.systemPrompt 覆盖）；图片输入需选用支持视觉的模型。'

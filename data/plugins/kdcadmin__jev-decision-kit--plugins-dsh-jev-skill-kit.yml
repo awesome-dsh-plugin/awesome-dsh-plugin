@@ -1,0 +1,6 @@
+url: https://github.com/kdcadmin/jev-decision-kit/tree/main/plugins/dsh-jev-skill-kit
+name: kdcadmin/jev-decision-kit#dsh-jev-skill-kit
+category: skill
+description:
+  en: Injects a per-turn skill-selection preface chosen by the local JEV model of the jev-decision-kit workspace, so the agent loads exactly those skills instead of browsing. Requires a separately set-up jev-decision-kit workspace (Python .venv, host/preface_worker.py, models/jev/head.json); without it the plugin injects nothing.
+  zh: 每轮对话前用本机 JEV 模型选好技能，把一行选择结果作为前言注入，让智能体只加载该加载的技能。需另行准备好 jev-decision-kit 工作区（Python .venv、host/preface_worker.py、models/jev/head.json）；没有它插件不会注入任何内容。

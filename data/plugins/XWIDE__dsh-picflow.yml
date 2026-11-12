@@ -1,0 +1,6 @@
+url: https://github.com/XWIDE/dsh-picflow
+name: XWIDE/dsh-picflow
+category: ui
+description:
+  en: 'Pasted screenshots become numbered references: each Ctrl+V image is stored in the attachment library under a stable number, listed in a composer-dock thumbnail panel with an image source in the @ menu, and inserted as a reference chip at the caret — automatically after paste when the auto-insert switch is on.'
+  zh: '粘贴即编号引用：Ctrl+V 的截图入库后拿到固定编号「图片N」，在输入框旁面板里以缩略图列出，可经 @图片 菜单插入引用；开着「自动插入」时粘贴后直接落到光标处。'

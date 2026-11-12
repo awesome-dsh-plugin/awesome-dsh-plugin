@@ -1,0 +1,7 @@
+url: https://github.com/MengXingXiaoMing/dsh-tianjige
+name: MengXingXiaoMing/dsh-tianjige
+category: tools
+tarball: https://github.com/MengXingXiaoMing/dsh-tianjige/releases/download/v1.3.0/dsh-tianjige-1.3.0.tgz
+description:
+  en: Algorithm field guide for graphics, animation, physics and AI work — 219 entries with tradeoffs and links to existing implementations, exposed as 10 agent tools and a sidebar page. AI-assisted tools require DEEPSEEK_API_KEY.
+  zh: 图形/动画/物理/AI 算法的可查询天书——219 条术法，带取舍说明与现成实现链接，提供 10 个 agent 工具与侧栏页面。AI 工具需 DEEPSEEK_API_KEY。

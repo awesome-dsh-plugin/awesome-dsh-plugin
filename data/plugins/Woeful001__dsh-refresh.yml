@@ -1,0 +1,6 @@
+url: https://github.com/Woeful001/dsh-refresh
+name: Woeful001/dsh-refresh
+category: ui
+description:
+  en: Adds a refresh button to the sidebar footer that reloads the plugin list and the page so newly installed plugins take effect without restarting the desktop app.
+  zh: 在侧边栏底部添加一个刷新按钮，一键重载插件列表与页面，让新安装的插件无需重启应用即可生效。

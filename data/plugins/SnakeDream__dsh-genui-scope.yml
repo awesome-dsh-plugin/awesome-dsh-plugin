@@ -1,0 +1,7 @@
+url: https://github.com/SnakeDream/dsh-genui-scope
+name: SnakeDream/dsh-genui-scope
+category: usage
+description:
+  en: 'Trims the GenUI card component prompt per global, workspace, or session scope; the built-in presets cut 24% to 61% of the prompt.'
+  zh: '按全局、工作区、会话三级裁剪 GenUI 卡片组件提示词；内置预设削减 24% 到 61% 的提示词。'
+tarball: https://github.com/SnakeDream/dsh-genui-scope/releases/latest/download/dsh-genui-scope.tgz

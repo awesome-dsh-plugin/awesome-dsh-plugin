@@ -1,0 +1,6 @@
+url: https://github.com/zzt0818/dsh-task-details
+name: zzt0818/dsh-task-details
+category: ui
+description:
+  en: 'Task details sidebar for DeepSeek Harness: a "View task details" button under every finished turn opens a resizable right-sidebar panel showing that task''s input files, intermediate artifacts, output files, tools and skills used, inferred languages, a step-by-step flow timeline, and the model provider with token usage and cache hit rate.'
+  zh: 'DeepSeek Harness 任务详情侧边栏：每个已结束任务的最下方显示「查看任务详情」，点开后从右侧边栏打开可拖拽调宽的面板，列出该任务的输入文件、中间产物、输出文件、所用工具与 skill、推断出的语言、按步骤组织的流程时间线，以及模型提供方与 Token 用量、缓存命中率。'

@@ -1,0 +1,6 @@
+url: https://github.com/MochiNek0/dsh-ghost-prompt
+name: MochiNek0/dsh-ghost-prompt
+category: ui
+description:
+  en: 'Predicts your next message after each completed turn and shows it as ghost text in the composer: press → to accept, or keep typing and finish it word by word with Ctrl+→, Esc to dismiss. The prediction model follows the session by default or can be picked in the settings card, which also has an on/off switch and a speed test.'
+  zh: '每轮对话结束后预测你的下一句话，以灰色幽灵文字显示在输入框里：按 → 接受，也可以直接开始打字、用 Ctrl+→ 逐词补齐，Esc 关闭。预测模型默认跟随当前会话，也能在设置卡片里指定；卡片里还有总开关和测速。'

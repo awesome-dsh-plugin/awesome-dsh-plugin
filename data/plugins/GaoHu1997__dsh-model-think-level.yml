@@ -1,0 +1,6 @@
+url: https://github.com/GaoHu1997/dsh-model-think-level
+name: GaoHu1997/dsh-model-think-level
+category: model
+description:
+  en: 'Thinking levels, image input and image generation for third-party models in the official Models page; multiple keys per provider routed by model, automatic failover between keys on failure, per-route custom request headers, and balance display.'
+  zh: '在官方「模型」页为第三方模型补上思考等级、图片输入与生图；一个供应商可配多把密钥，按模型分流、失败自动换密钥重试，并可配置按路由的请求头、查看余额。'

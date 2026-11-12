@@ -1,0 +1,6 @@
+url: https://github.com/binskyz/dsh-yunpa
+name: binskyz/dsh-yunpa
+category: browser
+description:
+  en: 'Windows-only local encrypted credential vault (DPAPI-wrapped AES-256-GCM) plus a headless-Chrome login keeper: 31 agent tools log a site in once, keep the session on disk, and fetch login-walled pages (Tieba, NGA, Pixiv, one book site) with per-floor post extraction. The live page mirrors into a draggable, collapsible right-edge dock where clicks, typing and scrolling replay over CDP, so a captcha can be solved without a separate browser window. Edge/Chrome saved passwords can be migrated: the plugin reads the browser''s Login Data store, decrypts v10/v11 entries in-process, and copies the store and its key blobs into its own controlled profile so the browser can autofill them (v20 app-bound entries can only be autofilled, not decrypted offline). Ships a one-command installer that repairs the DSH profile registration and a built-in self-test.'
+  zh: '仅 Windows：本地加密凭据库（DPAPI 包裹的 AES-256-GCM）配无头 Chrome 登录态保管：31 个 agent 工具登录一次即可把会话存到本机，之后抓登录墙内的页面（贴吧、NGA、Pixiv、书屋）并逐楼层提取正文。页面实时镜像到可拖动、可收起的右边缘抽屉，点击、打字、滚动经 CDP 回放，验证码不必再开独立浏览器窗口。可迁移 Edge/Chrome 已存密码：插件会读取浏览器的 Login Data 密码库，在进程内解密 v10/v11 条目，并把密码库及其密钥复制进自己的受控 profile 让浏览器自动填充（v20 App-Bound 条目只能自动填充、无法离线解密）。另附一条命令修复 DSH profile 登记的安装器，以及内置自检。'

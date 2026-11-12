@@ -1,0 +1,7 @@
+url: https://github.com/LuoShanHui/dsh-doc-ledger
+name: LuoShanHui/dsh-doc-ledger
+category: docs
+description:
+  en: 'Per-session document ledger in the DSH sidebar (Windows only, Chinese-language UI): which documents a session read, created or modified, with time ordering, type grouping, search, two preview modes and a cross-session view.'
+  zh: '在 DSH 右侧栏按会话查看文档台账（仅 Windows，界面仅中文）：用过哪些文档、创建/修改了哪些，带时间排序、类型分组、搜索与两种预览。'
+icon: https://raw.githubusercontent.com/LuoShanHui/dsh-doc-ledger/main/docs/icon-512.png

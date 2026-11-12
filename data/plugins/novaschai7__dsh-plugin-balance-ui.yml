@@ -1,0 +1,6 @@
+url: https://github.com/novaschai7/dsh-plugin-balance-ui
+name: novaschai7/dsh-plugin-balance-ui
+category: usage
+description:
+  en: Shows DeepSeek account balance and today's token usage in the sidebar footer, and reconciles locally estimated spend against the balance the account actually lost over the days it has sampled.
+  zh: 在侧边栏底部显示 DeepSeek 账户余额与今日 token 用量，并把本地估算的花费与账户余额实际减少量按采样覆盖的时长对账。

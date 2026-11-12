@@ -1,0 +1,7 @@
+url: https://github.com/liuyize-CHE/dsh-spanish-tutor
+name: liuyize-CHE/dsh-spanish-tutor
+category: fun
+description:
+  en: 'Spanish practice panel for DeepSeek Harness: six locally graded drill types (verb conjugation across 11 tenses, noun gender, plurals, vocabulary recognition, sentence cloze, ser/estar and subjunctive grammar points) plus a model-graded scenario-writing tab, 8-level spaced repetition, and four agent tools. Answers are computed and graded inside the plugin, so the model is only used for teaching and explanations.'
+  zh: '西语练习面板：六类本地判分的练习（11 个时态的动词变位、名词阴阳性、复数、认词、句子填空、ser/estar 与虚拟式语法专项），外加模型批改的情景造句、8 级间隔重复，以及四个 agent 工具；答案在插件内重算并判分，模型只用来讲解。'
+icon: https://raw.githubusercontent.com/liuyize-CHE/dsh-spanish-tutor/main/assets/icon-180.png

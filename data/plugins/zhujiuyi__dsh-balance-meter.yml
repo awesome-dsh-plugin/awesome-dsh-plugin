@@ -1,0 +1,6 @@
+url: https://github.com/zhujiuyi/dsh-balance-meter
+name: zhujiuyi/dsh-balance-meter
+category: usage
+description:
+  en: 'Reads the API balance or subscription quota behind the current DSH route — including OpenDesign (AMR) wallet and Design Plan windows via the control plane — and never guesses a figure: a miss reports its cause (the raw response is echoed only when parsing fails). OpenDesign needs `vela login` or a desktop `controlKey` in `~/.amr/config.json`.'
+  zh: '读取当前 DSH 路由背后的 API 余额或订阅余量——包括经控制面读取 OpenDesign（AMR）的钱包与 Design Plan 窗口——绝不猜数字：查不到时如实说明原因（仅解析失败时附原始响应）；OpenDesign 需先 `vela login` 或在桌面端写入 `~/.amr/config.json` 的 controlKey。'

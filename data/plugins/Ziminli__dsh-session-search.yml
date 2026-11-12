@@ -1,0 +1,7 @@
+url: https://github.com/Ziminli/dsh-session-search
+name: Ziminli/dsh-session-search
+category: session
+tarball: https://github.com/Ziminli/dsh-session-search/releases/download/v1.3.6/dsh-session-search-1.3.6.tgz
+description:
+  en: 'Search stored DSH conversation text across all or selected workspaces and sessions, with exact, regular-expression, typo-tolerant or word-internal subsequence matching.'
+  zh: '在所有或指定工作区、会话中搜索已存储的 DSH 对话文本，支持精确、正则表达式、拼写容错及词内子序列匹配。'

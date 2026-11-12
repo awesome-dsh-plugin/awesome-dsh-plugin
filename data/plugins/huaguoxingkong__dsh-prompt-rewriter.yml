@@ -1,0 +1,6 @@
+url: https://github.com/huaguoxingkong/dsh-prompt-rewriter
+name: huaguoxingkong/dsh-prompt-rewriter
+category: ui
+description:
+  en: 'Adds one button beside the composer that rewrites the draft into a more complete prompt in place, with no preview step, plus undo, a stop action, and optional conversation context.'
+  zh: '在输入框旁加一个按钮，把草稿直接原地改写成更完整的提示词（无预览步骤），支持撤销、随时停止、可选参考本会话上下文。'

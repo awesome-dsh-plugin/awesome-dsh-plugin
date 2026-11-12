@@ -1,0 +1,6 @@
+url: https://github.com/wfengq/dsh/tree/main/packages/tally
+name: wfengq/dsh#tally
+category: usage
+description:
+  en: "Per-request cost ledger covering retries and subagents, holiday-aware peak/off-peak pricing, shared pricing/usage/balance/budget services, and DeepSeek bill reconciliation."
+  zh: "按请求记录费用，涵盖重试与子代理，支持节假日峰谷计价、共享计价/用量/余额/预算服务和 DeepSeek 账单对账。"

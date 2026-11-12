@@ -1,0 +1,7 @@
+url: https://github.com/ghang/dsh-cache-helper
+name: ghang/dsh-cache-helper
+category: usage
+description:
+  en: 'Cache-hit metrics, request-prefix risk confirmation, and per-step cache-miss diagnostics for DSH.'
+  zh: '展示缓存命中、发送前确认请求前缀风险，并按调用步骤定位缓存失效。'
+tarball: https://github.com/ghang/dsh-cache-helper/releases/latest/download/dsh-cache-helper.tgz

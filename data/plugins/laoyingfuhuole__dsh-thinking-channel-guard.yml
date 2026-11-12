@@ -1,0 +1,7 @@
+url: https://github.com/laoyingfuhuole/dsh-thinking-channel-guard
+name: laoyingfuhuole/dsh-thinking-channel-guard
+category: dev
+description:
+  en: 'Moves reasoning that a provider leaks into the visible text channel back into the reasoning channel, and emits a text block when a whole turn of answer text lands only in the reasoning channel. Catches three shapes: `<thinking>`-tagged text, text that continues a reasoning tail which ended mid-token, and an answer-only reasoning turn that stops. Healthy streams pass through unchanged, block order is preserved, and each of the four rules can be switched off in one JSON config.'
+  zh: '把供应商漏进可见正文通道的思考搬回思考通道；若整轮回答只落在思考通道，则补发一个正文块。覆盖三种形态：带 `<thinking>` 标记的正文、接在悬空思维尾部继续写的正文、以及以 stop 收尾却只有思考的回答。健康流量原样透传、块顺序不变，四条规则可在同一个 JSON 配置里逐条关闭。'
+tarball: https://github.com/laoyingfuhuole/dsh-thinking-channel-guard/releases/download/v1.1.0/dsh-thinking-channel-guard-1.1.0.tgz

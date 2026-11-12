@@ -1,0 +1,7 @@
+url: https://github.com/zengxiaolou/dsh-effort-dial
+name: zengxiaolou/dsh-effort-dial
+category: ui
+description:
+  en: 'Reasoning-effort slider for the DeepSeek Harness composer: drag through the thinking levels the current model declares and release to write the chosen level into the session. An auto band escalates one level after a tool error and another after two or more, and optional model routing picks a provider/model per task type.'
+  zh: 'DeepSeek Harness 输入框里的推理强度滑杆：按当前模型声明的思考档位拖动，松手把档位写入本会话；可选「自动区间」在工具报错后逐档上调，另有可选模型路由按任务类型挑 provider/model。'
+icon: https://raw.githubusercontent.com/zengxiaolou/dsh-effort-dial/main/docs/images/icon-180.png

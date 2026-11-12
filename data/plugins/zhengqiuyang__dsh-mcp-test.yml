@@ -1,0 +1,6 @@
+url: https://github.com/zhengqiuyang/dsh-mcp-test
+name: zhengqiuyang/dsh-mcp-test
+category: security
+description:
+  en: 'Tool-surface snapshot and drift gate: baselines the full visible tool registry (name/description/parameters, MCP tools included) into a committable JSON file and warns loudly when an upgrade adds, removes or reshapes a tool.'
+  zh: '工具面快照与漂移门：全量可见工具注册表（含 MCP 工具）基线化为可提交的 JSON，升级新增、移除或改动工具时响亮告警。'

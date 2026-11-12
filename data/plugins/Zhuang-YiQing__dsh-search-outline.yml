@@ -1,0 +1,6 @@
+url: https://github.com/Zhuang-YiQing/dsh-search-outline
+name: Zhuang-YiQing/dsh-search-outline
+category: ui
+description:
+  en: "Right-sidebar file-preview enhancement built on `dsh-better-sidebar` (required — without it the plugin stays inert): a floating find bar for any text file (Ctrl+F, literal or regex, case-sensitive, match counter, next/previous) plus a collapsible Structure panel that lists classes, methods and file-level variables for Java, JavaScript, TypeScript and Python and an element outline for HTML (including .vue/.svelte), with click-to-line jumps. Read-only, no separate tab."
+  zh: "基于 `dsh-better-sidebar` 的右栏文件预览增强（必须先装它，否则插件静默不生效）：为任意文本文件提供漂浮查找条（Ctrl+F，字面量或正则、区分大小写、命中计数、上一个/下一个），并在代码右侧提供可折叠的「结构」面板——Java、JavaScript、TypeScript、Python 列出类/方法/文件级变量，HTML（含 .vue/.svelte）给元素大纲，点条目跳到对应行。只读，不注册独立页签。"

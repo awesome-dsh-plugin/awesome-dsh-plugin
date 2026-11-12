@@ -1,0 +1,7 @@
+url: https://github.com/inMessionante19/dsh-desktop-glass
+name: inMessionante19/dsh-desktop-glass
+category: theme
+tarball: https://github.com/inMessionante19/dsh-desktop-glass/releases/download/v0.3.0/dsh-desktop-glass-0.3.0.tgz
+description:
+  en: 'Native Acrylic and fully transparent window backgrounds for DeepSeek Harness on Windows 11, with a mode selector and live Wallpaper Engine backdrop; requires a one-time manual desktop adapter installation. Node 20+.'
+  zh: '为 Windows 11 版 DeepSeek Harness 提供可切换的原生毛玻璃与完全透明背景，实时显示 Wallpaper Engine 壁纸；需先手动安装一次桌面原生适配；需 Node 20+。'

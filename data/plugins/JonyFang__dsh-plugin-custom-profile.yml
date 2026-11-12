@@ -1,0 +1,6 @@
+url: https://github.com/JonyFang/dsh-plugin-custom-profile
+name: JonyFang/dsh-plugin-custom-profile
+category: identity
+description:
+  en: Replaces the signed-in sidebar account name and avatar on this device only, without changing the account or uploading anything.
+  zh: 只在本机替换已登录侧栏账号行的名称和头像，不修改账号，也不上传。

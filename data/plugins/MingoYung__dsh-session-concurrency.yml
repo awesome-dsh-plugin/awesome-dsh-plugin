@@ -1,0 +1,7 @@
+url: https://github.com/MingoYung/dsh-session-concurrency
+name: MingoYung/dsh-session-concurrency
+category: session
+description:
+  en: Sets a per-root-session inference limit of 1–10; at 1, queues native subagent dispatches and runs child branches serially while the parent waits.
+  zh: 按根会话设置 1–10 路推理并发；设为 1 时排队原生子任务派发、按分支串行执行，并让父 Agent 等待结果。
+tarball: https://github.com/MingoYung/dsh-session-concurrency/releases/download/v0.2.1/local-session-concurrency-0.2.1.tgz

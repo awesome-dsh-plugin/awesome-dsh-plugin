@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-signal-pet
+name: dingchenhui0618-arch/dsh-signal-pet
+category: ui
+description:
+  en: 'A small pet in the corner of the interface that reads the real event stream instead of guessing: it drifts when idle, speeds up while the agent is thinking, draws a flowing line per running tool call, turns red and shakes with the error summary on a failure, and celebrates a turn that ran longer than ten seconds. The same widget is the at-a-glance busy and error indicator, so there is no spinner to stare at. The host half folds real harness events into a snapshot and the client half only draws it; it performs no content recognition, and it positions itself away from the composer so it never sits over what you are typing.'
+  zh: '界面角落里的一只小宠物，读的是真实事件流而不是猜：空闲时慢慢飘，agent 思考时动得更快，每个正在运行的工具调用拉一条流动的连线，出错时变红、抖一下并显示错误摘要，跑超过十秒的回合结束时庆祝。它同时就是那个一眼可见的忙碌/出错指示器，不用再盯着转圈。宿主半区把真实 harness 事件折叠成快照，客户端半区只负责画；它不做内容识别，并且会主动避开输入框，不会趴在你正在打字的地方。'

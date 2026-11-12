@@ -1,0 +1,6 @@
+url: https://github.com/MjxUpUp/dsh-visual
+name: MjxUpUp/dsh-visual
+category: ui
+description:
+  en: 'Interactive HTML or flowchart cards inside the conversation: the tool blocks until the user submits, then returns the clicked action, fields, comments and card state.'
+  zh: '在对话里发可交互的 HTML 或流程图卡片；工具阻塞到用户提交，再把点击、字段、评论和卡片状态作为结果交还。'

@@ -1,0 +1,8 @@
+url: https://github.com/wlllyj/dsh-prompt-forge
+name: wlllyj/dsh-prompt-forge
+category: ui
+description:
+  en: "Adds one Prompt button beside the composer: clicking it rewrites the draft with an editable prompt-engineering doctrine and returns the result as pickable rows instead of overwriting the draft, and the same panel edits the plugin's own settings in place."
+  zh: "在输入框旁加一个 ✦ Prompt 按钮：点一下就按可替换的提示词心法改写草稿，结果按行返回而不是直接覆盖草稿；同一个面板里还能直接改插件设置。"
+icon: https://raw.githubusercontent.com/wlllyj/dsh-prompt-forge/main/docs/icon-180.png
+tarball: https://github.com/wlllyj/dsh-prompt-forge/releases/download/v0.10.1/dsh-prompt-forge-0.10.1.tgz

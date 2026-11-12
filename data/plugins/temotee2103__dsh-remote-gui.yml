@@ -1,0 +1,6 @@
+url: https://github.com/temotee2103/dsh-remote-gui
+name: temotee2103/dsh-remote-gui
+category: remote
+description:
+  en: Embeds a remote DeepSeek Harness GUI in the local DSH window over an SSH tunnel, lists the remote sessions, and switches between the local instance and any remote host.
+  zh: 通过 SSH 隧道把远端 DSH 的 GUI 嵌进本地 DSH 界面，列出远端会话，并在本地实例与任意远端主机之间切换。

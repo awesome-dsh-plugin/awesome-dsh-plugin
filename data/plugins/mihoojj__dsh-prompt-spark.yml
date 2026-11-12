@@ -1,0 +1,7 @@
+url: https://github.com/mihoojj/dsh-prompt-spark
+name: mihoojj/dsh-prompt-spark
+category: ui
+description:
+  en: 'Composer button that rewrites the current draft with four style presets, selection-only rewriting, a keyboard shortcut and instant undo; no settings page.'
+  zh: '输入框一键改写草稿：四种风格档位、划词改写、快捷键与即时撤销，无设置页。'
+icon: https://raw.githubusercontent.com/mihoojj/dsh-prompt-spark/main/docs/icon-180.png

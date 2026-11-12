@@ -1,0 +1,6 @@
+url: https://github.com/fishcg/dsh-input-prediction
+name: fishcg/dsh-input-prediction
+category: ui
+description:
+  en: "Input prediction: the likely continuation of your draft appears as grey ghost text after the caret and Tab accepts it, and after each assistant turn 1-3 clickable follow-up suggestions appear above the input box and send on click. Ghost completion, suggestions and the suggestion count can be toggled in Settings, Built-in plugins."
+  zh: 输入预测：在输入框里用灰字续写你草稿最可能的后续，按 Tab 接受后落进输入框、可继续编辑；每轮回答结束后在输入框上方给出 1–3 条你可能会发的下一条，点一下就发送。灰字补全、回复后推荐与推荐条数都能在「设置 → 内置插件 → 输入预测」里开关。

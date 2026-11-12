@@ -1,0 +1,6 @@
+url: https://github.com/chaorenzeng/dsh-use-codex
+name: chaorenzeng/dsh-use-codex
+category: tools
+description:
+  en: 'Delegates independent tasks from DeepSeek Harness to the local OpenAI Codex CLI and returns the result to the current conversation. Provides four tools (task execution, status check, danger-mode toggle, enable/disable switch), enforces a real-path working-directory whitelist with symlink-escape protection, defaults to Codex workspace-write sandbox mode, passes the task body as a single argv argument to avoid shell injection, kills the whole Codex process group on timeout or cancel, and caps output length. Requires Node.js >= 20 and a Codex CLI build supporting codex exec.'
+  zh: '把独立任务从 DeepSeek Harness 委派给本机 OpenAI Codex CLI 执行，并把结果返回当前会话。提供四个工具（任务执行、状态检查、危险模式开关、启停开关），强制真实路径白名单并做软链逃逸防护，默认使用 Codex workspace-write 沙箱模式，任务正文以单个 argv 参数传递避免 shell 注入，超时或取消时终止完整 Codex 进程组，并限制输出长度。需要 Node.js >= 20 和支持 codex exec 的 Codex CLI。'

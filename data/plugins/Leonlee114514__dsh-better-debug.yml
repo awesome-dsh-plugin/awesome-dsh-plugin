@@ -1,0 +1,7 @@
+url: https://github.com/Leonlee114514/dsh-better-debug
+name: Leonlee114514/dsh-better-debug
+category: dev
+description:
+  en: 'Appends one short user message before the next step when the model is circling: the same absolute path written three times, the same normalised tool error returned twice, or two steps since the last write with neither a verify nor a search. Verification is recognised from four tool names (`ops_bash`, `lsp_diagnostics`, `verify`, `run_tests`), searching from eight. Each signal fires once per turn and only after a new write or error, is silenced for the whole turn when you say not to search, and is skipped in subagent sessions. Ships the `stuck-gate` skill at bundled rank 600, so a user-level copy at rank 400 overrides its wording without touching code, plus a read-only gain panel at `/better-debug` that counts firings, sessions covered and whether the next tool call changed class; it does not estimate tokens saved.'
+  zh: '模型打转时，在下一步之前追加一条简短用户消息：同一绝对路径写了第三次、归一化后的同一工具报错第二次出现、或最后一次写入后过了两步却既没验证也没搜。验证按四个工具名识别（`ops_bash`、`lsp_diagnostics`、`verify`、`run_tests`），搜索按八个识别。每条信号每回合最多一次且必须出现新的写入或报错，用户说别搜时整回合静音，子会话跳过。自带 `stuck-gate` 技能（bundled rank 600，用户级 rank 400 的同名技能可覆盖措辞），并附只读增益面板 `/better-debug`：数触发次数、覆盖会话、以及下一条工具调用是否换了类别；不估算省下的 token。'
+tarball: https://github.com/Leonlee114514/dsh-better-debug/releases/download/v0.1.1/dsh-better-debug-0.1.1.tgz

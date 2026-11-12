@@ -1,0 +1,6 @@
+url: https://github.com/loveandbeepbrother/dsh-galatea/tree/main/framework
+name: loveandbeepbrother/dsh-galatea#framework
+category: memory
+description:
+  en: 'Galatea: shape an AI assistant of your own. One assistant with its own persona and long-term memory (git-versioned plain files); long chats hand off to a fresh conversation without forgetting, and it tidies its memory in the background while you are away. It runs on whatever model DSH is set to and keeps its memory when you switch; every module can be turned off, and other plugins can extend it. Phone chat (QQ, WeChat) and Claude Code sessions come from the separate Galatea channels and agent-sdk plugins. Preview; needs DSH 0.2.2-rc.1 or a later 0.2.x.'
+  zh: '加拉忒亚——塑造专属于你的 AI 助手。一个有自己人格和长期记忆（git 版本化的普通文件）的助手；聊得再久也会自己换到新对话、不失忆，你不在时它在后台整理记忆。会话跑在 DSH 里设的模型上，换模型记忆不丢；各模块都能单独关闭，也能用别的插件扩展。QQ/微信聊天与 Claude Code 会话由另外两个 Galatea 插件提供。预览版，需要 DSH 0.2.2-rc.1 或之后的 0.2.x。'

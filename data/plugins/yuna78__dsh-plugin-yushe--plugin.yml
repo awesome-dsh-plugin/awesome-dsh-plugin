@@ -1,0 +1,7 @@
+url: https://github.com/yuna78/dsh-plugin-yushe/tree/main/plugin
+name: yuna78/dsh-plugin-yushe#yushe
+category: fun
+description:
+  en: 'YuShe, a Dafeiyu (big fat fish) virtual pet for DSH: a guided visual setup hatches an AI fish girl with her own personality (15 species, 16 poses each, 200 stat points you allocate), who chats with you, answers in the workspace you bind her to, browses Bilibili on her own account and grows from what she sees, and reports back with a daily plan, diary, letters and, once you configure an image-generation API, photos; everything she posts goes through a local content gate.'
+  zh: '鱼社 · 大肥鱼虚拟养成系统：可视化引导一键领养一条有性格的 AI 鱼（15 种鱼、每位 16 个姿势、200 点五维由你分配），她陪你聊天、在绑定的工作区里替你干活，用自己的 B站号刷视频、学东西、按经历成长，每天写打算和日记、写信、配好生图 API 后拍照片回来；她对外发的每句话都先过本地闸门。'
+icon: https://raw.githubusercontent.com/yuna78/dsh-plugin-yushe/main/docs/icon.png

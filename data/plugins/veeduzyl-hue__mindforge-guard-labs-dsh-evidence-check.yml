@@ -1,0 +1,6 @@
+url: https://github.com/veeduzyl-hue/mindforge-guard-labs-dsh-evidence-check
+name: veeduzyl-hue/mindforge-guard-labs-dsh-evidence-check
+category: tools
+description:
+  en: 'Deterministic review of synthetic AI-agent claims in DeepSeek Harness, reporting bounded verdicts, reasons, and evidence references.'
+  zh: '面向 DeepSeek Harness 的合成智能体主张证据审阅插件，通过确定性规则输出有限判定、理由与证据引用。'

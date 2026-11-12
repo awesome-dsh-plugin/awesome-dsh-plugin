@@ -1,0 +1,6 @@
+url: https://github.com/nomxy/dsh-balance
+name: nomxy/dsh-balance
+category: usage
+description:
+  en: DeepSeek balance chip in the sidebar name row, showing the balance, the current peak or off-peak window, and a countdown to the next switch; click to refresh.
+  zh: 侧栏名字行里的 DeepSeek 余额胶囊，显示余额、当前峰谷时段与下次切换倒计时，点一下刷新。

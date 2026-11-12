@@ -1,0 +1,6 @@
+url: https://github.com/Yutai233/dsh-selective-subagent
+name: Yutai233/dsh-selective-subagent
+category: model
+description:
+  en: 'Asks which provider and model to use before each in-process subagent starts, listing the models from your configured LLM providers; if nothing is chosen within 60 seconds the subagent keeps the DSH default route.'
+  zh: '在每个进程内子代理启动前询问要用的 provider / 模型，候选列表来自你已配置的 LLM Provider；60 秒内不做选择则子代理沿用 DSH 原本的路由。'

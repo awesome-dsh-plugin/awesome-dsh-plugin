@@ -1,0 +1,6 @@
+url: https://github.com/Thomas-zz/dsh-luanji
+name: Thomas-zz/dsh-luanji
+category: memory
+description:
+  en: 'Local-first quick capture: select text in a DSH conversation to save it as a quote with its source (model and session), or jot quick notes from the sidebar; records stay in a local JSON file, with optional sync to a self-hosted service.'
+  zh: '本地优先的随手记录：划选 DSH 对话原话存成带来源（模型、会话）的引用，或从侧栏随手记便签；记录只存本机 JSON 文件，可选同步到自建数据服务。'

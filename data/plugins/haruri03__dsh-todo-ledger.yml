@@ -1,0 +1,7 @@
+url: https://github.com/haruri03/dsh-todo-ledger
+name: haruri03/dsh-todo-ledger
+category: workflow
+description:
+  en: 'Keeps a repository''s task ledger as a resident prompt section with eleven native tools, plus a sidebar panel and a floating window for browsing the queue and signing off review tasks.'
+  zh: '把仓库里的任务账本做成常驻提示段与十一个原生工具，另有侧栏面板与浮动窗，可浏览队列并签收待复核任务。'
+icon: https://raw.githubusercontent.com/haruri03/dsh-todo-ledger/main/assets/icon-180.png

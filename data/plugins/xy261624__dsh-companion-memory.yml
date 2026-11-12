@@ -1,0 +1,6 @@
+url: https://github.com/xy261624/dsh-companion-memory
+name: xy261624/dsh-companion-memory
+category: memory
+description:
+  en: 'Long-term memory written by the character itself. A sorting plugin watches the workspace and, once conversations have been quiet past a threshold, opens its own session to run the bundled extraction script and turn the recent exchanges into memory files; a heartbeat plugin later re-opens sessions on a probability curve that rises with the time since the last exchange, with quiet hours and a random delay. Ships the memory templates, the sorting guide and the extraction script. Needs Python 3.8+ with zstandard, plus manual setup after install (a preset with agent-instructions, templates copied into the workspace, defaultPreset/sortPreset set to real preset ids; a wrong id fails silently with one log line). Plugin-opened sessions run with full permissions by default. Tested on DSH 0.2.0-rc.2.'
+  zh: '由角色自己写成的长期记忆。整理插件盯着工作区，会话静默超过阈值后自己开会话，跑包里的提取脚本，把最近的对话整理进记忆文件；心跳插件之后按概率曲线重新开会话，间隔越久概率越高，带静默时段和随机延迟。附记忆文件模板、整理流程和提取脚本。需要 Python 3.8+ 与 zstandard；装完还须手动配置（建带 agent-instructions 的模式、把模板/脚本复制进工作区、把 defaultPreset 与 sortPreset 改成真实模式 id，填错会静默失败、仅日志一行）；插件自开的会话默认全权限；仅在 DSH 0.2.0-rc.2 实测。'

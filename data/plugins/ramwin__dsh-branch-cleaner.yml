@@ -1,0 +1,6 @@
+url: https://github.com/ramwin/dsh-branch-cleaner
+name: ramwin/dsh-branch-cleaner
+category: git
+description:
+  en: 'Redundant branch cleaner: finds branches whose work already landed in the mainline — merged, squash-merged, patch-equivalent after rebase or cherry-pick, upstream-gone, or PR-merged — and deletes them when asked. It only reports by default, never switches branches or rebases, and backs every deleted local branch up under refs/backup/branch-cleaner/ (deleting remote branches has no backup).'
+  zh: 冗余分支清理：找出已经落地到主线的分支（普通合并 / squash 合并 / rebase 或 cherry-pick 落地 / 上游已删除 / PR 已合并），确认后再删除。默认只报告，不切换分支、不 rebase，删除前把每个本地分支备份到 refs/backup/branch-cleaner/（删除远端分支不备份）。

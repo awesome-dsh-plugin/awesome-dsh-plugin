@@ -1,0 +1,6 @@
+url: https://github.com/itsbuyru-bit/dsh-model-price
+name: itsbuyru-bit/dsh-model-price
+category: usage
+description:
+  en: 'Per-model API price table with Peak and Off-Peak rates in USD or CNY, the DeepSeek account balance and live session spend under the composer, an all-time total, a collapsible source URL and check date per model, and optional per-model Peak schedules.'
+  zh: '按模型设置高峰/低谷价格（USD 或 CNY），在输入框下方显示 DeepSeek 账户余额与本次会话花费，累计总花费，每条价格可记录来源链接与核对日期，并支持为单个模型覆盖高峰时段。'

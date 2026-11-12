@@ -1,0 +1,6 @@
+url: https://github.com/BlackThunder2191026/dsh-deepseek-usage
+name: BlackThunder2191026/dsh-deepseek-usage
+category: usage
+description:
+  en: Shows your DeepSeek API balance in the DSH sidebar and every Turn's cost in CNY, billed Search requests included. Requires the official DeepSeek (deepseek-official) provider and its API key (DEEPSEEK_API_KEY) in a Web-UI profile.
+  zh: 在 DSH 侧边栏显示 DeepSeek 余额，并在每轮对话底部显示该轮花费（人民币，含搜索请求费用）。需要官方 DeepSeek（deepseek-official）渠道及其 API Key（DEEPSEEK_API_KEY），且只在带 Web 界面的 profile 中生效。

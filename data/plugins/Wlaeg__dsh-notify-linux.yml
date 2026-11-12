@@ -1,0 +1,6 @@
+url: https://github.com/Wlaeg/dsh-notify-linux
+name: Wlaeg/dsh-notify-linux
+category: notify
+description:
+  en: 'Linux desktop notifications and a chime for DeepSeek Harness, sent by the host process so they still arrive with the browser page closed: turn completion, pending questions, tool approvals and turn errors, delivered through notify-send and paplay with a canberra-gtk-play fallback. A browser half adds an in-page toast, a Web Notification and a synthesized Web Audio chime as fallback; every switch lives in a Settings page or a JSON file.'
+  zh: 'DeepSeek Harness 的 Linux 桌面通知与提示音，由宿主进程发出，浏览器页面关闭后依然可达：回合结束、等待选择、工具批准与回合出错四类事件，走 notify-send 与 paplay（回退 canberra-gtk-play）。浏览器半身作为兜底提供页内浮层、Web Notification 与 Web Audio 合成提示音；所有开关都在设置页或 JSON 配置文件中。'

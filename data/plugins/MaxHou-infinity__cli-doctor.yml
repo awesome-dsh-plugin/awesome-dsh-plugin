@@ -1,0 +1,16 @@
+url: https://github.com/MaxHou-infinity/cli-doctor
+name: MaxHou-infinity/cli-doctor
+category: tools
+description:
+  en: >-
+    Read-only audit of the local CLI toolchain as a sidebar panel in the DSH web
+    GUI: lists installed versions across Homebrew, npm global, pip, Rust/Bun/uv
+    and self-updating CLIs, flags which ones have a newer release available, and
+    shows the dependency impact for installed packages. It reports only and never
+    runs an upgrade, so no tool on the machine is modified. The DSH plugin ships
+    on npm as `dsh-cli-doctor`.
+  zh: >-
+    DSH 侧栏的只读 CLI 工具链体检面板：按生态列出 Homebrew、npm 全局、pip、
+    Rust/Bun/uv 与自更新类 CLI 的本机版本，标出哪些有可用更新，并展示已安装包
+    的依赖影响。只报不升，不会改动本机任何工具。DSH 插件在 npm 上以
+    `dsh-cli-doctor` 发布。

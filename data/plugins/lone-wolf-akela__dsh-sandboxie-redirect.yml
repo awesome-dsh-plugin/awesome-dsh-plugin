@@ -1,0 +1,6 @@
+url: https://github.com/lone-wolf-akela/dsh-sandboxie-redirect
+name: lone-wolf-akela/dsh-sandboxie-redirect
+category: security
+description:
+  en: 'Copy-on-write permission preset: shell commands run inside a per-workspace Sandboxie box, so writes outside the workspace land in the box copy while the real disk stays untouched (Windows only, requires Sandboxie-Plus).'
+  zh: '写时复制权限预设：shell 命令在工作区专属的 Sandboxie 沙盒内运行，工作区外的写入落进沙盒副本、真实磁盘不受影响（仅 Windows，需先安装 Sandboxie-Plus）。'

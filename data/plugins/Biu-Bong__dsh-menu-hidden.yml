@@ -1,0 +1,8 @@
+url: https://github.com/Biu-Bong/dsh-menu-hidden
+name: Biu-Bong/dsh-menu-hidden
+category: ui
+description:
+  en: Lazy Menu for DSH — hide the duplicate DeepSeek account / official API entries in the model picker, in Settings → Models and in the subagent model list, plus sidebar and account-menu items (14 toggles); auto-fill reasoning levels (low / medium / high / max), context window and image input for new models; on DSH Desktop, add Reload / Restart to the application menu with a one-click patch to the app shell main.js (backup and one-click restore included; needs an app restart, and a DSH update reverts the patch).
+  zh: 懒人菜单：收起模型选择框、设置·模型、子智能体里重复的 DeepSeek 账号 / 官方 API 分组，隐藏侧边栏五项与账号菜单三项（共 14 个开关）；给新模型自动补推理等级（low / medium / high / max）、上下文窗口与图片支持；桌面版可一键给应用外壳 main.js 打补丁，把刷新与重启加进应用菜单（写入前自动备份、可一键还原；需重启应用，DSH 升级后补丁会失效）。
+icon: https://raw.githubusercontent.com/Biu-Bong/dsh-menu-hidden/main/docs/icon-180.png
+

@@ -1,0 +1,7 @@
+url: https://github.com/fu-silent/dsh-sidebar-home
+name: fu-silent/dsh-sidebar-home
+category: ui
+description:
+  en: Adds a Home panel to the sidebar for choosing a workspace; focus mode then shows only that workspace's sessions and folds the other workspaces below, and exiting focus restores the shipped sidebar.
+  zh: 在侧栏新增「主页」面板用于选择工作区；进入专注后侧栏只显示该工作区的会话，其他工作区折叠在底部，退出专注即恢复原生侧栏。
+icon: https://raw.githubusercontent.com/fu-silent/dsh-sidebar-home/main/assets/icon-180.png

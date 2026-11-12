@@ -1,0 +1,6 @@
+url: https://github.com/Imzl-zl/deepseek-harness-mobile/tree/main/connector
+name: Imzl-zl/deepseek-harness-mobile#connector
+category: remote
+description:
+  en: 'Desktop side of a native Android DSH phone app: scan a QR code to pair, then chat, approve tool calls, answer questions, drive subagents and follow background jobs from the phone over an end-to-end-encrypted channel; one device at a time.'
+  zh: '原生安卓手机 App 的电脑侧：扫码配对后，就能在手机上对话、审批工具调用、回答提问、驱动子智能体、跟进后台任务，通道端到端加密；同一时刻只服务一台设备。'

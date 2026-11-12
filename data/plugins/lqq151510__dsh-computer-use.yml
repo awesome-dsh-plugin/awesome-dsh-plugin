@@ -1,0 +1,7 @@
+url: https://github.com/lqq151510/dsh-computer-use
+name: lqq151510/dsh-computer-use
+category: tools
+description:
+  en: 'macOS computer use with eight computer_* tools: accessibility-tree and Vision OCR screen reading, actions by element index or visible label that also reach background windows, and CoreGraphics mouse and keyboard events with a resident low-latency daemon for game-grade input sequences; its Swift helpers compile on first use, so there is no runtime dependency.'
+  zh: 'macOS 电脑操作：8 个 computer_* 工具，读屏走辅助功能树与 Vision OCR，按元素 index 或可见文字执行 press / focus / set_value / click（后台窗口也能操作），CoreGraphics 鼠标键盘事件走常驻 daemon 低延迟通道，支持游戏级连招序列；自带的 Swift 助手首次调用时编译，无运行时依赖。'
+icon: https://raw.githubusercontent.com/lqq151510/dsh-computer-use/main/assets/icon-180.png

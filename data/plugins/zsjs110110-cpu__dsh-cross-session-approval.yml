@@ -1,0 +1,7 @@
+url: https://github.com/zsjs110110-cpu/dsh-cross-session-approval
+name: zsjs110110-cpu/dsh-cross-session-approval
+category: session
+description:
+  en: 'Cross-session task delegation for DeepSeek Harness: spawn durable top-level sessions and send them tasks, read or steer them by base62 session alias, and approve their sandbox escalation requests through an approval bridge that refuses destructive deletes.'
+  zh: 'DeepSeek Harness 的跨会话派活与协同：新建顶层任务会话并投递任务，用 base62 会话别名读取或干预，并通过审批桥批准子会话的沙箱提权——命中破坏性删除一律强制拒绝。'
+tarball: https://github.com/zsjs110110-cpu/dsh-cross-session-approval/releases/latest/download/dsh-cross-session-approval.tgz

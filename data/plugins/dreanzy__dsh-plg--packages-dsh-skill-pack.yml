@@ -1,0 +1,6 @@
+url: https://github.com/dreanzy/dsh-plg/tree/main/packages/dsh-skill-pack
+name: dreanzy/dsh-plg#dsh-skill-pack
+category: skill
+description:
+  en: 'Per-workspace skill visibility: each workspace binds one named switch table, so which skills the model may call on its own follows the project instead of every installed skill being listed every turn. Cannot be installed together with dsh-skill-scope.'
+  zh: '按工作区控制 skill 可见性：工作区绑定一张具名开关表，模型每轮能自动调用的 skill 随项目而定，不再每轮列出全部已安装 skill。不能与 dsh-skill-scope 同装。'

@@ -1,0 +1,6 @@
+url: https://github.com/JasperPengC/dsh-agent-blackbox
+name: JasperPengC/dsh-agent-blackbox
+category: ui
+description:
+  en: 'Flight recorder panel for DSH sessions: live monitoring, timeline replay with a tool waterfall and event inspector, per-agent cost attribution, and a cross-session cost overview.'
+  zh: 'DSH 会话飞行记录仪面板：实时监视、时间轴回放（工具瀑布与事件检查器）、按 agent 归因成本，以及跨会话成本总览。'

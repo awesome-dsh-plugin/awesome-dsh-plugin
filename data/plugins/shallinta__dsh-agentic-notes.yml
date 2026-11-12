@@ -1,0 +1,7 @@
+url: https://github.com/shallinta/dsh-agentic-notes
+name: shallinta/dsh-agentic-notes
+category: tools
+description:
+  en: 'Suiji (随记) is a local-first notebook plugin for DeepSeek Harness: quick capture, AI filing, diary, todos, sticky notes, and MCP access for AI sessions.'
+  zh: '随记：DSH 本地笔记插件，随手记录、AI 自动归档、日记、待办、便笺，并支持 MCP 让 AI 会话直接读写。'
+icon: https://raw.githubusercontent.com/shallinta/dsh-agentic-notes/main/assets/suiji-logo.webp

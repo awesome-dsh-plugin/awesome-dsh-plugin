@@ -1,0 +1,8 @@
+url: https://github.com/sambazhu/dsh-longevity-coach
+name: sambazhu/dsh-longevity-coach
+category: tools
+description:
+  en: 'Daily longevity coach built on the 64 graded population studies in HowToLiveLonger: a sidebar page with three actions for today, a day timeline, nine situation guides, keyword search over all 64 records and a check-in trail, plus five agent tools that make the model state the A/B/C/D evidence grade before answering questions about sleep, diet, exercise, sitting or supplements.'
+  zh: '把 HowToLiveLonger 的 64 条分级人群证据做成日常教练：侧栏页面含今日三件事、一天时间轴、9 个处境场景、64 条证据检索与打卡轨迹，另有 5 个工具让模型在回答作息、饮食、运动、久坐、保健品问题时先说明 A/B/C/D 证据等级。'
+tarball: https://github.com/sambazhu/dsh-longevity-coach/releases/download/v1.0.0/dsh-longevity-coach-1.0.0.tgz
+icon: https://raw.githubusercontent.com/sambazhu/dsh-longevity-coach/main/assets/icon-180.png

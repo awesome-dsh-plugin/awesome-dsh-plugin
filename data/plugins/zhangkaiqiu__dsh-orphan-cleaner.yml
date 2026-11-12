@@ -1,0 +1,6 @@
+url: https://github.com/zhangkaiqiu/dsh-orphan-cleaner
+name: zhangkaiqiu/dsh-orphan-cleaner
+category: dev
+description:
+  en: Finds process trees whose parent is gone, groups them as high-confidence or review-only, and terminates the selected groups after a rescan.
+  zh: 找出父进程已退出的进程树，按高置信与待确认分档展示，二次扫描后才结束选中的进程组。

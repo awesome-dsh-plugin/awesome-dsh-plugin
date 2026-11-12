@@ -1,0 +1,6 @@
+url: https://github.com/YE-ZINAN/dsh-skin-im2005
+name: YE-ZINAN/dsh-skin-im2005
+category: theme
+description:
+  en: '2005-era instant-messenger skin for the DeepSeek Harness client: right-angle 1px window chrome, a blue-gradient title bar, SimSun for the Chinese UI, a buddy-group sidebar with an avatar card and editable signature, per-message name/time headers, and three switchable intensities. All artwork is original SVG; the reskinned toolbar also carries a cross-session notepad, a running-session panel, and an 8-ball game, minesweeper, a token garden and heads-up poker that a built-in focus mode silences.'
+  zh: 'DeepSeek Harness 客户端的 2005 年代即时通讯皮肤：直角 1px 窗框、蓝色渐变标题条、中文界面统一宋体、好友分组式侧栏（含头像档案卡与可编辑签名）、每条消息带名字与时间抬头，皮肤档位三档可实时切换。美术全部为原创 SVG；重绘后的工具条另带跨会话备注框、后台任务面板，以及美式八球、扫雷、Token 农场和德州扑克——插件内置的专注模式会把它们静音。'

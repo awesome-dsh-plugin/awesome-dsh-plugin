@@ -1,0 +1,6 @@
+url: https://github.com/nohappiness/dsh-linux-shortcut
+name: nohappiness/dsh-linux-shortcut
+category: ui
+description:
+  en: 'Gives the web UI the same keyboard shortcuts on Linux that Windows and macOS already get: the host half injects one script into index.html, so a Linux browser reports a Windows platform before the shortcut service reads it, and the built-in table resolves instead of staying empty; a Settings row reports whether the mapping took effect.'
+  zh: '让 Linux 上的网页端拥有 Windows / macOS 端那套快捷键：宿主半在 index.html 注入一行脚本，使 Linux 浏览器在快捷键服务读取平台之前报告 Windows 平台，内置键位表因此生效而不是空白；设置页额外显示一行，指示映射是否真的生效。'

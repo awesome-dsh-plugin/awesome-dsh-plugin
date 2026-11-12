@@ -1,0 +1,7 @@
+url: https://github.com/justskill-ai/justskill-design
+name: justskill-ai/justskill-design
+category: skill
+description:
+  en: 'Registers the justSkill design skill in DSH, adds a workbench that lists design files across workspaces, and opens a file''s live canvas in the session''s right sidebar. The agent edits a validated HTML file one operation at a time while the user reviews and adjusts on the canvas.'
+  zh: '在 DSH 中注册 justSkill 设计技能，提供跨工作区的设计文件工作台，并在会话右侧栏打开实时画布：Agent 逐条修改受校验的 HTML 文件，用户在画布上审阅调整。'
+icon: https://raw.githubusercontent.com/justskill-ai/justskill-design/main/docs/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-attestation
+name: liuhange789/data-asset-inspector#data-asset-attestation
+category: tools
+description:
+  zh: "数据资产认证报告插件 — 生成带证据链的认证级数据质量报告"
+  en: "Data asset attestation plugin that generates certification-level data quality reports with evidence chains."

@@ -1,0 +1,6 @@
+url: https://github.com/WiseXin/dsh-session-intent-title
+name: WiseXin/dsh-session-intent-title
+category: session
+description:
+  en: "Zero-UI-overhead DeepSeek Harness plugin that automatically classifies conversation intents and names sessions with clean emoji prefixes (optimize, fix, feature, explore, etc.)."
+  zh: "零 UI 侵入的 DeepSeek Harness 会话意图自动分类命名插件，新会话自动生成前缀图标与主题（优化、修复、功能、探索等 8 类意图）。"

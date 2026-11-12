@@ -1,0 +1,6 @@
+url: https://github.com/sixzjd/dsh-usage-dash-board
+name: sixzjd/dsh-usage-dash-board
+category: usage
+description:
+  en: 'Cross-session usage rollup that resolves opaque route keys to real model names, with a per-request log, an editable four-bucket price table that leaves unknown models unpriced instead of guessing, and a calendar-day-filled bar trend whose values appear only on hover or keyboard focus.'
+  zh: '本机跨会话用量汇总：把 qfmodel 这类不透明路由键解析为真实模型名，含逐请求明细表与可编辑的四桶价格表（无公开单价的模型标为未计价而非猜测），趋势柱状图按日历日补齐、数值仅在悬浮或键盘聚焦时显示。'

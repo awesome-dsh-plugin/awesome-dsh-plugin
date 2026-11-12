@@ -17,8 +17,10 @@ import { Marked } from 'marked'
 import LOCALES from '../site/locales.mjs'
 import COMMENTS from '../site/comments.mjs'
 import { CAT_IDS as ENTRY_CAT_IDS, readEntries } from './lib/entries.mjs'
+import { buildMarketIndex } from './lib/market-index.mjs'
 import { firstAddedDate } from './lib/added-dates.mjs'
-import { slugOf, termOf } from './lib/terms.mjs'
+import { slugOf, slugHref, termOf } from './lib/terms.mjs'
+import { releaseMetadataFor } from './lib/release-manifest.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
@@ -44,6 +46,11 @@ const tarballVerdicts = fs.existsSync(TARBALLS_FILE) ? JSON.parse(fs.readFileSyn
 // parsed out of the READMEs, which carry no file path; the added-date
 // derivation below needs one to ask git when an entry first appeared.
 const entryFiles = Object.fromEntries(readEntries().map((e) => [e.url, e.file]))
+const iconMap = Object.fromEntries(
+  readEntries()
+    .filter((e) => e.icon !== undefined)
+    .map((e) => [e.url, e.icon]),
+)
 const tarballMap = Object.fromEntries(
   readEntries()
     .filter((e) => {
@@ -172,7 +179,25 @@ const N = ordered.length
 // ever written back; git history is the ledger.
 const dates = fs.existsSync(DATES_FILE) ? JSON.parse(fs.readFileSync(DATES_FILE, 'utf8')) : {}
 const npmMap = fs.existsSync(NPM_MAP_FILE) ? JSON.parse(fs.readFileSync(NPM_MAP_FILE, 'utf8')) : {}
+
+// The plugin market index (format 1) that hosts read as a market source.
+// Built here rather than in a second pass so the page can tell whether THIS
+// deploy actually carries one: a push build restores the probe cache, and a
+// cache from before the publish-time field existed lists nothing — in that
+// case the panel is left out instead of advertising a URL that 404s.
+const builtIndex = buildMarketIndex({ entries: readEntries(), npmMap, locales: LOCALES, origin: ORIGIN })
+const indexBuilt = builtIndex.index.plugins.length > 0
+// Minified, not pretty: the host that reads this has a fixed 15 s fetch
+// timeout (dsh 0.2.1 `fetchTimeoutMs`), and one-space indentation added 25%
+// to a document already close to that budget on slow networks.
+if (indexBuilt) fs.writeFileSync('docs/index.json', JSON.stringify(builtIndex.index) + '\n')
+{
+  const { index, skipped } = builtIndex
+  const unpublished = skipped.noNpm + skipped.noVersion
+  console.log(`index: ${index.plugins.length} listed (${unpublished} entries have no npm package or version yet${skipped.noPublishTime > 0 ? `, ${skipped.noPublishTime} await a publish-time probe` : ''})`)
+}
 const starsMap = fs.existsSync('data/stars.json') ? JSON.parse(fs.readFileSync('data/stars.json', 'utf8')) : {}
+const releasesMap = fs.existsSync('data/releases.json') ? JSON.parse(fs.readFileSync('data/releases.json', 'utf8')) : {}
 // Missing (not yet bootstrapped, or an entry with no npm package) is a
 // normal, permanent state for most entries — unlike stars.json, absence
 // here needs no publish-blocking floor of its own: probe-downloads.mjs
@@ -435,6 +460,7 @@ for (const e of ordered) {
   e.tarball = tarballMap[e.url] ?? null
   e.cmdTarball = e.tarball ? `dsh plugin --profile web add "${e.tarball}"` : null
   e.stars = starsMap[e.url]?.stars ?? null
+  e.releaseMetadata = releaseMetadataFor(e, releasesMap[e.url])
   // Last-30-days npm downloads (probe-downloads.mjs), null for the ~60% of
   // entries with no npm package at all — a coverage gap, not a zero.
   // Consumers must tell "not published" apart from "published, unused".
@@ -449,7 +475,7 @@ for (const e of ordered) {
   // `npm` for "on the registry"; treat missing/null version as "unknown",
   // not as "github-only".
   // Surfaced for dsh-market's discover list (dsh-market#348).
-  e.version = e.npm ? (npmMap[e.url]?.version ?? null) : null
+  e.version = e.npm ? (npmMap[e.url]?.version ?? null) : (e.releaseMetadata.releaseManifest?.version ?? null)
   // The detail-page path, the sitemap entry and the comment term all read
   // this one derivation (scripts/lib/terms.mjs): the term is the join key a
   // plugin's discussion is filed under, and it has to match the path the
@@ -505,10 +531,11 @@ function ranked(only) {
   return ordered.filter((e) => !only || e.cat === only).slice().sort(byDownloads)
 }
 
-// The install command the card shows. npm when the entry has a package, otherwise
-// the github: spec. Kept next to the catalog so the two cannot drift.
+// Match the detail page: prefer a verified npm package, then the declared
+// prebuilt tarball, and use Git only when neither is available. Both static
+// cards and the virtual catalog use this function.
 function cardCmd(e) {
-  return e.npm ? `dsh plugin --profile web add ${e.npm}` : e.cmdGit
+  return e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit)
 }
 
 // download-ranked card grid; `only` limits to one category (category pages).
@@ -533,11 +560,11 @@ function buildRows(loc, only, limit) {
     ].filter(Boolean).join(' ')
     return `    <li class="card" ${attrs}>
       <div class="top">
-        <h3><a href="${loc.urlPath}p/${e.slug}/" translate="no"><span class="owner">${esc(e.owner)}/</span>${esc(short)}</a></h3>
+        <h3><a href="${loc.urlPath}p/${slugHref(e.slug)}/" translate="no"><span class="owner">${esc(e.owner)}/</span>${esc(short)}</a></h3>
         ${e.stars != null ? `<span class="stars" translate="no">${e.stars}</span>` : ''}
         ${e.downloads != null ? `<span class="dl" translate="no" title="${loc.strings.P_DOWNLOADS}">${fmtNum(e.downloads)}</span>` : ''}
       </div>
-      <a class="desc-link" href="${loc.urlPath}p/${e.slug}/" tabindex="-1"><p>${esc(e.descs[loc.code])}</p></a>
+      <a class="desc-link" href="${loc.urlPath}p/${slugHref(e.slug)}/" tabindex="-1"><p>${esc(e.descs[loc.code])}</p></a>
       <div class="foot">
         <a class="tag" href="${loc.urlPath}${e.cat}/">${loc.categories[e.cat]}</a>
         <details class="inst">
@@ -590,7 +617,7 @@ function catalogPayload(loc, only) {
         slug: e.slug,
         desc: e.descs[loc.code] || '',
         cmd: cardCmd(e),
-        href: `${loc.urlPath}p/${e.slug}/`,
+        href: `${loc.urlPath}p/${slugHref(e.slug)}/`,
       }
     }),
   }
@@ -651,6 +678,13 @@ function langRedirect(current) {
   return `\n<script>{const p=new URLSearchParams(location.search);const v=p.get('lang');${cases}}</script>`
 }
 
+const INDEX_LINE = `    <div class="indexline">
+      <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8 13l2 2 4-4"/></svg>
+      <span class="lead">__T_INDEX_LEAD__ <code translate="no">cdn.jsdelivr.net/npm/dsh-plugin-catalog/index.json</code></span>
+      <button class="copy" type="button" data-cmd="https://cdn.jsdelivr.net/npm/dsh-plugin-catalog/index.json">__T_INDEX_COPY__</button>
+    </div>`
+
+
 const master = fs.readFileSync('site/template.html', 'utf8')
 
 for (const loc of LOCALES) {
@@ -682,6 +716,7 @@ for (const loc of LOCALES) {
     // this site's CLS. The hero total is the full list. The search counter
     // starts at the baked slice so a no-JS visitor is not told every plugin is
     // on the page; the script rewrites it to the full total before first paint.
+    .replaceAll('__INDEX_LINE__', () => indexBuilt ? INDEX_LINE : '')
     .replaceAll('__CARD_COUNT__', () => String(N))
     .replaceAll('__FALLBACK_COUNT__', () => String(Math.min(FALLBACK_CARDS, N)))
     .replaceAll(AD_HEAD_TOKEN, () => adHead())
@@ -862,11 +897,11 @@ function renderReadme(rm) {
 }
 for (const loc of LOCALES) {
   for (const e of ordered) {
-    const url = `${ORIGIN}${loc.urlPath}p/${e.slug}/`
+    const url = `${ORIGIN}${loc.urlPath}p/${slugHref(e.slug)}/`
     const catUrl = `${loc.urlPath}${e.cat}/`
     const dHreflangs = [
-      ...LOCALES.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}p/${e.slug}/">`),
-      `<link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}p/${e.slug}/">`,
+      ...LOCALES.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${ORIGIN}${l.urlPath}p/${slugHref(e.slug)}/">`),
+      `<link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}p/${slugHref(e.slug)}/">`,
     ].join('\n')
     const desc = e.descs[loc.code]
     // Trim to a boundary rather than mid-word: a description cut at "config" ->
@@ -922,7 +957,7 @@ for (const loc of LOCALES) {
       .filter((r) => r.cat === e.cat && r.url !== e.url)
       .sort((a, b) => (b.stars ?? -1) - (a.stars ?? -1))
       .slice(0, 6)
-      .map((r) => `      <li><h3><a href="${loc.urlPath}p/${r.slug}/" translate="no">${esc(r.name)}</a>${r.stars != null ? `<span class="stars" translate="no">★ ${r.stars}</span>` : ''}</h3><a class="desc-link" href="${loc.urlPath}p/${r.slug}/" tabindex="-1"><p>${esc(r.descs[loc.code])}</p></a></li>`)
+      .map((r) => `      <li><h3><a href="${loc.urlPath}p/${slugHref(r.slug)}/" translate="no">${esc(r.name)}</a>${r.stars != null ? `<span class="stars" translate="no">★ ${r.stars}</span>` : ''}</h3><a class="desc-link" href="${loc.urlPath}p/${slugHref(r.slug)}/" tabindex="-1"><p>${esc(r.descs[loc.code])}</p></a></li>`)
       .join('\n')
 
     // Map a plugin, rather than a rendered URL, to its Discussion. This keeps
@@ -1019,7 +1054,7 @@ ${readmeHtml}
       .replaceAll('__JSONLD__', () => ldSafe(jsonldDetail))
       .replaceAll('__HOME__', () => loc.urlPath)
       .replaceAll('__PRIVACY__', () => loc.privacyPath)
-      .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}p/${e.slug}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
+      .replaceAll('__LOCALE_LINKS__', () => LOCALES.filter((l) => l.code !== loc.code).map((l) => `<a class="lang-btn" href="${l.urlPath}p/${slugHref(e.slug)}/" hreflang="${l.code}" rel="alternate">${l.label}</a>`).join('\n        '))
       .replaceAll('__CAT_URL__', () => catUrl)
       .replaceAll(AD_HEAD_TOKEN, () => adHead())
       .replaceAll('__CAT_NAME__', () => loc.categories[e.cat])
@@ -1102,7 +1137,7 @@ const registry = {
       name: shortName(e.name),
       owner: e.owner,
       url: e.url,
-      page: `${ORIGIN}/p/${e.slug}/`,
+      page: `${ORIGIN}/p/${slugHref(e.slug)}/`,
       category: e.cat,
       description: Object.fromEntries(LOCALES.map((l) => [l.code, e.descs[l.code]])),
       npm: e.npm,
@@ -1118,6 +1153,8 @@ const registry = {
       // probed with no latest tag. Not the same signal as `downloads`.
       version: e.version,
       stars: e.stars,
+      starsCheckedAt: starsMap[e.url]?.checkedAt ?? null,
+      ...e.releaseMetadata,
       downloads: e.downloads,
       downloadsStart: downloadsMap[e.url]?.start ?? null,
       downloadsEnd: downloadsMap[e.url]?.end ?? null,
@@ -1132,6 +1169,9 @@ const registry = {
       }),
       install: e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit),
       added: e.added,
+      // Optional, author-declared storefront tile; omitted when absent so the
+      // payload stays lean and a consumer falls back to the owner avatar.
+      ...(iconMap[e.url] === undefined ? {} : { icon: iconMap[e.url] }),
       // Optional, author-maintained (data/screenshots.json); omitted when
       // absent so the payload stays lean. Storefronts fall back to their own
       // README extraction (dsh-market #61).
@@ -1235,10 +1275,10 @@ ${LOCALES.map((l) => `  <url>
 ${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code}" href="${ORIGIN}${l2.privacyPath}"/>`), `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].privacyPath}"/>`].join('\n')}
   </url>`).join('\n')}
 ${LOCALES.flatMap((l) => ordered.map((e) => `  <url>
-    <loc>${ORIGIN}${l.urlPath}p/${e.slug}/</loc>
+    <loc>${ORIGIN}${l.urlPath}p/${slugHref(e.slug)}/</loc>
     <lastmod>${e.added}</lastmod>
     <changefreq>weekly</changefreq>
-${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code}" href="${ORIGIN}${l2.urlPath}p/${e.slug}/"/>`), `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}p/${e.slug}/"/>`].join('\n')}
+${[...LOCALES.map((l2) => `      <xhtml:link rel="alternate" hreflang="${l2.code}" href="${ORIGIN}${l2.urlPath}p/${slugHref(e.slug)}/"/>`), `      <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}${LOCALES[0].urlPath}p/${slugHref(e.slug)}/"/>`].join('\n')}
   </url>`)).join('\n')}
 </urlset>
 `)

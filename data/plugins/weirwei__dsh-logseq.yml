@@ -1,0 +1,6 @@
+url: https://github.com/weirwei/dsh-logseq
+name: weirwei/dsh-logseq
+category: memory
+description:
+  en: Syncs Logseq 2.0 DB graphs (including E2EE) with a Logseq sync server via the headless Logseq CLI, adds 11 logseq_* tools to search, query and edit them, and a Settings section to log in and configure sync.
+  zh: 通过无头运行的 Logseq CLI，把 Logseq 2.0 DB 图谱（含 E2EE 加密图谱）与同步服务器保持同步，提供 11 个 logseq_* 工具用于搜索、查询和编辑，并在设置页里登录和配置同步。

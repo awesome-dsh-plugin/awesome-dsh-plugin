@@ -1,0 +1,6 @@
+url: https://github.com/a331266223/dsh-multi-model-discussion
+name: a331266223/dsh-multi-model-discussion
+category: model
+description:
+  en: 'Multi-model deliberation pipeline for DeepSeek Harness: independent proposals, blind peer review, program-executed evidence verification, immutable revision and independent acceptance on a fresh context.'
+  zh: 'DSH 多模型协作研讨插件：独立提案、互审、证据核验、完整稿修订与新上下文验收。'

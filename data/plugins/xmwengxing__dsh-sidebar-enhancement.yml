@@ -1,0 +1,6 @@
+url: https://github.com/xmwengxing/dsh-sidebar-enhancement
+name: xmwengxing/dsh-sidebar-enhancement
+category: ui
+description:
+  en: 'Enhanced right-sidebar files panel: rename, create, upload, download (a directory is zipped on the fly), copy the full path and delete from the tree; an editable document renderer for 128 text extensions with Ctrl/Cmd+S save and conflict detection; plus an independent bottom terminal panel with tabs and a quick-command library persisted under the DSH home.'
+  zh: '侧边栏文件树增强：重命名、新建、上传、下载（目录当场打包为 zip）、复制完整路径与删除；128 种文本扩展名的可编辑文档渲染器，支持 Ctrl/Cmd+S 保存与版本冲突检测；另有一个独立的下侧终端面板，带标签页与持久化在 DSH home 里的快捷命令库。'

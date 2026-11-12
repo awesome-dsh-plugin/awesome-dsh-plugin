@@ -1,0 +1,7 @@
+url: https://github.com/mutexz/dsh-myself-preset
+name: mutexz/dsh-myself-preset
+category: identity
+description:
+  en: 'Yugan Huafang (语感花房) is a personal voice workshop for DeepSeek Harness: your own writing and corrections become explainable local style rules, optionally distilled by the current model, then compiled into a preset you pick per session; edits apply on the next message in that session.'
+  zh: '语感花房是 DSH 的个人语气工作台：把你自己写的语料和纠正变成可解释的本地风格规则，可选当前模型深读，编译成按会话选用的 preset；改完在该会话的下一句话生效。'
+icon: https://raw.githubusercontent.com/mutexz/dsh-myself-preset/main/assets/icon-180.png

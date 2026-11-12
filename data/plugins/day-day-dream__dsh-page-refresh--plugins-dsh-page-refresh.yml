@@ -1,0 +1,6 @@
+url: https://github.com/day-day-dream/dsh-page-refresh/tree/main/plugins/dsh-page-refresh
+name: day-day-dream/dsh-page-refresh#dsh-page-refresh
+category: ui
+description:
+  en: 'Adds a refresh button and a power menu (restart / close DeepSeek Harness) to the conversation header. Client-only, zero tokens, no dependencies. The power menu is Windows-only.'
+  zh: '在 DeepSeek Harness 会话头部加一个刷新按钮和一个电源菜单（重启 / 关闭 DeepSeek Harness）。纯客户端、零 token、零依赖。电源菜单目前仅支持 Windows。'

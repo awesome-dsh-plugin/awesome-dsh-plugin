@@ -1,0 +1,7 @@
+url: https://github.com/Oliveryfaso/dsh-pet-company
+name: Oliveryfaso/dsh-pet-company
+category: notify
+tarball: https://github.com/Oliveryfaso/dsh-pet-company/releases/download/v0.2.0/dsh-pet-company-0.2.0.tgz
+description:
+  en: 'Quiet break, water, long-session and late-night reminders delivered by three bundled chibi companions, with cloud bubbles and a light bounce. Works in-page without extra downloads; the optional macOS desktop window uses a separately downloaded Electron helper.'
+  zh: '用三套内置 Q 版角色提供久坐、喝水、连续工作与深夜关怀，带云朵气泡和轻回弹；页面内显示无需额外下载，可选 macOS 桌面窗口使用单独下载的 Electron 组件。'

@@ -1,0 +1,6 @@
+url: https://github.com/lishuo4096/dsh-plugin-authoring
+name: lishuo4096/dsh-plugin-authoring
+category: skill
+description:
+  en: Gives agents the DSH (Cordis) plugin authoring contract and the dsh plugin market submission process, from the bundle manifest and entry module to the pull request.
+  zh: 给 agent 一套 DSH（Cordis）插件编写规范与 dsh 插件市场收录流程，从 bundle manifest、入口模块一直讲到提交 PR。

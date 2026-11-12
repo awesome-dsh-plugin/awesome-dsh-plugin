@@ -1,0 +1,6 @@
+url: https://github.com/a961282799-crypto/dsh-timeband
+name: a961282799-crypto/dsh-timeband
+category: usage
+description:
+  en: "Shows DeepSeek API peak/off-peak status, a countdown to the next switch and a mini timeline next to the DSH desktop avatar, with a 24-hour Beijing-time timeline on click; holiday calendars update automatically from holiday-cn, and an optional reminder fires 5 minutes before each peak period."
+  zh: "在 DSH 桌面端头像旁显示 DeepSeek API 峰谷时段、切换倒计时与迷你时间轴，点击查看北京时间 24 小时时间轴；节假日日历从 holiday-cn 自动更新，可选在峰时段开始前 5 分钟提醒。"

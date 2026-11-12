@@ -1,0 +1,6 @@
+url: https://github.com/liufangrui1105/dsh-plugin-github
+name: liufangrui1105/dsh-plugin-github
+category: git
+description:
+  en: 'Agent-facing GitHub repository tools: binds an account through a first-run prompt, then clones into the workspace and reads, exact-replaces, commits and pushes files, with writes off by default.'
+  zh: '面向 Agent 的 GitHub 仓库工具：首次调用弹窗绑定账号，之后把仓库克隆到工作区并读写文件、精确替换、提交与推送，写远端默认关闭。'

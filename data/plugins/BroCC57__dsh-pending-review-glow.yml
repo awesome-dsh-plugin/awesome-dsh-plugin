@@ -1,0 +1,6 @@
+url: https://github.com/BroCC57/dsh-pending-review-glow
+name: BroCC57/dsh-pending-review-glow
+category: ui
+description:
+  en: Highlights sidebar session rows by state (pending approval, running, just finished) with color, animation and a matching status dot.
+  zh: 按待审批、运行中、刚完成三种状态给侧边栏会话行上色并加呼吸动效，行尾配同色状态点。

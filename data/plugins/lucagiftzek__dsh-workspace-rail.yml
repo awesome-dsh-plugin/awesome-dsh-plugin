@@ -1,0 +1,6 @@
+url: https://github.com/lucagiftzek/dsh-workspace-rail
+name: lucagiftzek/dsh-workspace-rail
+category: ui
+description:
+  en: "Replaces the DSH sidebar list with a workspace rail: pinned chats and folders, projects that are folders with their own AGENTS.md and files, a virtualized Recents list ordered by the last finished turn, a project_search tool, unread markers, a collapsed icon column with an unread count and a live browser tab title."
+  zh: '用工作区栏替代 DSH 侧栏列表：置顶会话与文件夹；项目即带自有 AGENTS.md 和文件的文件夹；Recents 为按最后一次完成 turn 排序的虚拟列表；提供 project_search 工具、未读标记、带未读数的折叠图标栏，以及随会话实时更新的浏览器标签标题。'

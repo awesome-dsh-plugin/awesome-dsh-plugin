@@ -1,0 +1,6 @@
+url: https://github.com/i11ustriouS/dsh-mnemosyne
+name: i11ustriouS/dsh-mnemosyne
+category: memory
+description:
+  zh: "给 DeepSeek Harness 的分层长期记忆：每轮只注入「人设框架 + 相关记忆索引」，原文留在磁盘按需展开，不把整个库塞进上下文。事实层按槽位做冲突消解，改口后旧值自动失效；人设框架由模型从记忆里自行归纳，带三道防污染闸门（拒收开发流水、拦截自身注入的回流、同一件事按共享实词归并）。记忆周期性固化——合并近似重复、把大话题压成摘要、归档低价值旧条目，全程只打标签不删原文；追加式存储也会就地压缩（实测 4.7 MB → 355 KB）。零第三方依赖，无构建步骤。⚠️ 注意：每轮注入会不可避免地降低缓存命中率，请勿在工作场景使用。"
+  en: "Layered long-term memory for DeepSeek Harness: each turn injects a persona frame plus a relevance-ranked memory index while full transcripts stay on disk and are expanded on demand, so the vault never floods the context window. Facts are slot-keyed, so a changed mind retires the old value instead of recalling two contradictory answers. The persona frame is derived from memory by the model itself, behind three anti-pollution gates (rejecting development chatter, blocking echoes of its own injection, and merging restatements by shared content words). Periodic consolidation merges near-duplicates, rolls long topics into digests, and archives low-value old entries by tagging only — raw text is never deleted. The append-only store is compacted in place (measured 4.7 MB to 355 KB). Zero third-party dependencies, no build step. Note: per-turn injection inevitably lowers prompt-cache hit rates, so this plugin is not recommended for work scenarios."

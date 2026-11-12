@@ -1,0 +1,7 @@
+url: https://github.com/sarsgy-wenjian/dsh-wenjian-team
+name: sarsgy-wenjian/dsh-wenjian-team
+category: workflow
+description:
+  en: 'Long-form manuscript verification team for DSH: installs 10 skills that run a read-only content/structure check, three-tier revision proposals, a human-selection gate, exact replacements and a final re-check; it never edits the manuscript by itself and requires Agent Teams to spawn teammates.'
+  zh: '长篇/设定集文稿校验团队：安装 10 个技能，跑「只读校验→三档建议→作者勾选→定点替换→逐字复核」六步流水线；不自动改稿，需要 Agent Teams 组队。'
+icon: https://raw.githubusercontent.com/sarsgy-wenjian/dsh-wenjian-team/main/assets/icon.png

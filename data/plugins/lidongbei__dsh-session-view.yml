@@ -1,0 +1,6 @@
+url: https://github.com/lidongbei/dsh-session-view
+name: lidongbei/dsh-session-view
+category: ui
+description:
+  en: 'Session-first DSH sidebar: pinned, active and recent sections, workspace grouping, focus groups, search and a session trash bin.'
+  zh: 'DSH 的会话优先左侧栏：置顶、活跃、最近分区，工作区分组，专注模式，搜索与会话回收站。'

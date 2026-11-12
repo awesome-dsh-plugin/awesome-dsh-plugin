@@ -1,0 +1,7 @@
+url: https://github.com/HeShen-1/dsh-composer-enhance
+name: HeShen-1/dsh-composer-enhance
+category: ui
+tarball: https://github.com/HeShen-1/dsh-composer-enhance/releases/download/v0.3.1/dsh-composer-enhance-0.3.1.tgz
+description:
+  en: "Composer prompt enhancement for DSH Web: a ✨ button rewrites the current draft in place after asking only about genuine ambiguity, and an empty composer shows a grey next-message ghost that Tab or a click fills into the draft without sending."
+  zh: "DSH Web 输入框提示词增强：✨ 按钮先判断歧义、再原地改写草稿；空草稿时以灰色 ghost 给出下一步建议，Tab 或点击填入草稿且不自动发送。"

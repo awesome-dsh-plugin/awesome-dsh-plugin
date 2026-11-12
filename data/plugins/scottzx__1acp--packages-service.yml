@@ -1,0 +1,7 @@
+url: https://github.com/scottzx/1acp/tree/main/packages/service
+name: scottzx/1acp#acp-service
+category: workflow
+description:
+  en: Persistent Codex, Grok Build and Claude Code sessions through ACP, with native model controls, permission approvals and optional A2A delegation.
+  zh: 通过 ACP 使用持久化的 Codex、Grok Build 和 Claude Code 会话，支持原生模型控制、权限审批及可选的 A2A 委派。
+tarball: https://github.com/scottzx/1acp/releases/download/acp-service-v0.6.0/1agents-acp-service-0.6.0.tgz

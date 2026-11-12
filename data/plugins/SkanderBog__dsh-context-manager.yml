@@ -1,0 +1,6 @@
+url: https://github.com/SkanderBog/dsh-context-manager
+name: SkanderBog/dsh-context-manager
+category: session
+description:
+  en: 'Preview conversation context and selectively keep, summarize, or omit exchange groups before applying persistent compaction through Harness session services.'
+  zh: '预览会话上下文，按对话分组选择保留、摘要或省略，确认后通过 Harness 会话服务持久化压缩结果。'

@@ -1,0 +1,6 @@
+url: https://github.com/publieople/dsh-plugin-autoupdate
+name: publieople/dsh-plugin-autoupdate
+category: market
+description:
+  en: Plugin updater for DeepSeek Harness that delegates every version decision to the dsh CLI, so the pnpm release-age policy still decides what is eligible; it snapshots before applying, can roll back, keeps a lock list, and can check or auto-apply on a schedule the user turns on.
+  zh: DSH 插件更新器：把版本决策交给 dsh CLI，继续受 pnpm 发布年龄策略约束；应用前先快照、可回滚、带锁定清单，用户打开开关后可定时检查或自动应用。

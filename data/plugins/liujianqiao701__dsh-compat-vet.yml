@@ -1,0 +1,6 @@
+url: https://github.com/liujianqiao701/dsh-compat-vet
+name: liujianqiao701/dsh-compat-vet
+category: dev
+description:
+  en: 'Plugin compatibility vet for dsh that compares installed plugins peerDependencies against the running dsh version to flag which ones the startup preflight will refuse to load, prints copy-pasteable fix commands, and offers a top-of-page banner in dsh web to isolate, uninstall or upgrade them, with an automatic backup before the change and rollback if the re-check fails.'
+  zh: 'dsh 插件兼容性体检：把已装插件的 peerDependencies 与当前 dsh 运行时比对，提前指出哪些会在下次启动被预检拒绝加载，并给出可直接执行的中文修复命令；dsh web 顶部横幅可按键隔离、卸载或升级，改动前自动备份、复检不过自动回滚。'

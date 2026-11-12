@@ -1,0 +1,6 @@
+url: https://github.com/FrogFlaying/dsh-onshelf
+name: FrogFlaying/dsh-onshelf
+category: market
+description:
+  en: Onshelf for DeepSeek Harness. It registers 1 agent tool (onshelf).
+  zh: 扫描本地插件、体检收录规则、生成投稿材料，一键开 PR 到 awesome-dsh-plugin。

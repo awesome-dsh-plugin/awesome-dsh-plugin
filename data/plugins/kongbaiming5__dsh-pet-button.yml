@@ -1,0 +1,7 @@
+url: https://github.com/kongbaiming5/dsh-pet-button
+name: kongbaiming5/dsh-pet-button
+category: ui
+tarball: https://github.com/kongbaiming5/dsh-pet-button/releases/download/v0.1.0/dsh-pet-button-0.1.0.tgz
+description:
+  en: 'macOS arm64 only; requires dsh-pet installed (the bundled binary is a closed prebuilt). Desktop switch for the dsh-pet pet: one click to show or hide it, and it can start DeepSeek Harness when that is closed.'
+  zh: '仅 macOS arm64，需先安装 dsh-pet（自带的是闭源预编译二进制）。桌宠开关：一键开/关桌面上的 dsh-pet 桌宠，Harness 关闭时还能顺手把它启动起来。'

@@ -1,0 +1,6 @@
+url: https://github.com/ycm50/dsh-delete
+name: ycm50/dsh-delete
+category: session
+description:
+  en: 'Session and image management for DSH: a sidebar panel deletes selected sessions together with their on-disk files after DSH has archived them, with multi-select, sub-agent / team-member / whole-family cascade and per-session size; a right-sidebar tab counts a session images and offloads or deletes the selected ones, optionally removing source files and attachment objects from disk.'
+  zh: 'DSH 会话与图片管理：侧边栏多选面板在 DSH 归档后把选中的会话连同磁盘文件一起删除，支持子 agent / 团队成员 / 整族级联与逐个大小统计；右侧栏页签统计会话图片张数并多选摘除，可另行删除磁盘上的源文件与附件对象。'

@@ -1,0 +1,6 @@
+url: https://github.com/mwk719/dsh-skill-center
+name: mwk719/dsh-skill-center
+category: skill
+description:
+  en: 'Skill browser and switchboard for the DSH web GUI: a sidebar entry lists skills from configurable source directories as cards, clicking a card opens the full SKILL.md, and the per-card switch writes disable-model-invocation and registers or removes that skill in the agent skill catalog, so the model can load exactly the skills that are switched on. It also recognises WorkBuddy expert-team folders and shows avatar, tags, quick prompts and members, registering its lead prompt as a skill when switched on. Source directories are editable in the panel.'
+  zh: 'DSH Web GUI 的技能中心：侧栏入口把可配置来源目录里的技能铺成卡片，点击卡片查看完整 SKILL.md；卡片上的开关会写入 disable-model-invocation，并同步把该技能注册进或移出模型可用的技能表，让「模型能加载的技能」与开关一致。同时识别 WorkBuddy 专家团目录（带 agents 的 .codebuddy-plugin/plugin.json），以头像、描述、标签、快捷提示与团队成员的形式展示，打开开关即把它的 lead 提示词注册为技能（不写这些文件）。卡片还支持在文件管理器中定位、复制路径，来源目录本身也可在面板里编辑。'

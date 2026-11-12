@@ -1,0 +1,6 @@
+url: https://github.com/yutao8/dsh-custom-style
+name: yutao8/dsh-custom-style
+category: ui
+description:
+  en: Adds a Custom CSS section to Settings for adjusting dialog dimensions, font sizes, full-window wallpapers, and inspecting stable selectors.
+  zh: 在设置界面中调节弹窗尺寸、字号、全屏背景图与选择器速查，热注入自定义 CSS。

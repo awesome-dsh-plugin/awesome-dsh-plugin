@@ -1,0 +1,6 @@
+url: https://github.com/jediliu005/dsh-sim-folder
+name: jediliu005/dsh-sim-folder
+category: ui
+description:
+  en: 'Folder-style session panel: organize sidebar sessions into your own folders with drag-to-assign, per-session aliases and archived dimming. Display-only — it never touches DSH grouping.'
+  zh: 文件夹式会话面板：把侧栏会话装进自建文件夹，支持拖拽归类、会话别名与归档变淡；只做显示，不改 DSH 自己的分组。

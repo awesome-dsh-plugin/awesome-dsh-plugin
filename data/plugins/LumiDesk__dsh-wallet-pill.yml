@@ -1,0 +1,6 @@
+url: https://github.com/LumiDesk/dsh-wallet-pill
+name: LumiDesk/dsh-wallet-pill
+category: usage
+description:
+  en: A composer-dock wallet pill for DeepSeek Harness that shows the account balance behind DEEPSEEK_API_KEY and opens a panel with the peak/off-peak billing window, a live switch countdown, and per-model token prices.
+  zh: DeepSeek Harness 的余额胶囊：在输入框下方显示 DEEPSEEK_API_KEY 对应账户的余额，点开可查看峰谷计费时段、切换倒计时与各模型价目表。

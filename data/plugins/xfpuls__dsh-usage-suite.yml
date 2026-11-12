@@ -1,0 +1,6 @@
+url: https://github.com/xfpuls/dsh-usage-suite
+name: xfpuls/dsh-usage-suite
+category: usage
+description:
+  en: Tracks this turn cost under the input box, today tokens and spend in the sidebar with peak and idle pricing, and pins the latest question to the top of the conversation.
+  zh: 输入框下方显示本轮花费；侧栏显示今日 token、消费与高峰/空闲时段；对话区顶部钉住最新提问，点击可跳回。

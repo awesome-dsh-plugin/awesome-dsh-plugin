@@ -1,0 +1,6 @@
+url: https://github.com/MoonSand/dsh-ui-optimize
+name: MoonSand/dsh-ui-optimize
+category: ui
+description:
+  en: 'Switches that tune how DeepSeek Harness looks and behaves across the whole interface, not just a few screens; each works on its own and more arrive as the shell grows. Theme gallery of eight minimalist themes, each defining one palette for light and one for dark and applied through a single theme-token layer, plus sidebar panel folding that collapses the rail rows into one Panels launcher with search and keyboard control, and reload/restart actions at the sidebar foot. Each feature is gated by runtime detection: what the current build cannot do is disabled with a stated reason, and an unknown probe stays enabled. The sidebar Reload/Restart buttons are ported from the separately listed MoonSand/dsh-desktop-restart; uninstall that plugin before installing this one — with both, the sidebar foot shows two sets of buttons.'
+  zh: '调 DeepSeek Harness 整体观感与操作的开关集合，管的是整套界面而不只是某几块；每个开关独立生效，随宿主能力增长继续增加。包含 8 套极简主题的画廊（每套为浅色与深色各定义一组配色，通过单一主题变量层整套换色）、把侧栏面板行收成一个「面板」入口的收纳功能（点开是两列启动面板，带搜索与键盘操作），以及侧栏底部的刷新/重启按钮。 各项功能按当前运行环境自动判断：当前版本做不到的会置灰并写明原因，探测不出来则保持可用。侧栏的刷新/重启按钮从已收录的 MoonSand/dsh-desktop-restart 移植而来，装本插件前请先卸载它；两者同装会在侧栏底部出现两套按钮。'

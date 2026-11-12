@@ -1,0 +1,6 @@
+url: https://github.com/Vansnc/dsh-feiyu-say
+name: Vansnc/dsh-feiyu-say
+category: voice
+description:
+  en: 'Synthesises speech through Alibaba Bailian''s WebSocket TTS and returns a WAV file plus a preview URL, with an optional per-turn hint that nudges the model towards voice. Needs a Bailian API key and ffmpeg, and the text is sent to Alibaba Cloud; the plugin does not send messages itself — delivery is left to the session''s own transport.'
+  zh: '调用阿里百炼 WebSocket TTS 合成语音，返回 WAV 文件与试听地址，并可按轮提示模型使用语音。需要百炼 API Key 与 ffmpeg，文本会发送到阿里云；插件本身不发消息，怎么发由当前会话的传输方式决定。'

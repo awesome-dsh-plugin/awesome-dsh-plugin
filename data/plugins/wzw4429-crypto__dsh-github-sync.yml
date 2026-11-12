@@ -1,0 +1,6 @@
+url: https://github.com/wzw4429-crypto/dsh-github-sync
+name: wzw4429-crypto/dsh-github-sync
+category: git
+description:
+  en: 'Bidirectional GitHub repository sync for DSH: git sync with conflict rollback and pre-push checks, Actions/CI monitoring with per-step run detail, repository add/remove/rename, a web panel with local and remote file browsers, scheduled automation, and six agent tools.'
+  zh: 'DSH 的 GitHub 仓库同步插件：带冲突回滚与推送前检查的双向 git 同步、可下钻到每一步的 Actions/CI 监控、仓库添加/移除/改名、含本地与远端文件浏览的 Web 面板、定时自动化流水线，以及六个 Agent 工具。'

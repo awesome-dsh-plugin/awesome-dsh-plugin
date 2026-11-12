@@ -1,0 +1,6 @@
+url: https://github.com/MoreanP2003/dsh-speed-gauge
+name: MoreanP2003/dsh-speed-gauge
+category: usage
+description:
+  en: 'Real-time generation-speed gauge for DSH: a half-circle dial and a flowing trend curve, sampling tok/s 50 times a second for finer, more accurate measurement.'
+  zh: 'DSH 生成速度仪表盘：半圆表盘与流动曲线趋势图，一秒 50 次获取 tok/s，测量更细更精准。'

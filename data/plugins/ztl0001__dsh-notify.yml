@@ -1,0 +1,6 @@
+url: https://github.com/ztl0001/dsh-notify
+name: ztl0001/dsh-notify
+category: notify
+description:
+  en: 'Windows toast notifications when a DeepSeek Harness task finishes: the session title, the outcome, and a summary of the final reply, sent once when the agent really stops rather than once per round of a running goal.'
+  zh: 'DSH 任务完成时，在 Windows 通知栏弹出原生通知，带上会话标题、结果状态与最后一条回复的摘要；在 agent 真正停下来时才发一条，而不是每跑一个回合就响一次。'

@@ -1,0 +1,6 @@
+url: https://github.com/datit309/supergraph
+name: datit309/supergraph
+category: workflow
+description:
+  en: 'Disciplined engineering workflow system for AI coding agents: planning, TDD, auto-fix loops, codebase knowledge graphs, and multi-agent wave execution. Needs codebase-memory-mcp (pip install "codebase-memory-mcp>=0.10.8,<0.11.0"); /scan stops without it.'
+  zh: '面向 AI 编程智能体的工程工作流系统：规范计划、TDD 测试驱动、自动修复闭环、代码知识图谱与多智能体分波次执行。需先安装 codebase-memory-mcp（pip install "codebase-memory-mcp>=0.10.8,<0.11.0"），缺它 /scan 会直接停止。'

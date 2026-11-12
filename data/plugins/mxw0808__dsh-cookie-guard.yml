@@ -1,0 +1,7 @@
+# entry for dsh-market index
+url: https://github.com/mxw0808/dsh-cookie-guard
+name: mxw0808/dsh-cookie-guard
+category: usage
+description:
+  en: "Windows-only guard against the desktop shell locking itself out: it counts the dsh-auth-* launch cookies the shell has accumulated, reports how much of the 16 KiB request-header budget they consume, and once the count passes 40 it backs up the whole Cookies database and lets DSH rebuild it, so every cookie in that profile is cleared. Install is one command: on load the plugin registers its own weekly scheduled task pointing at the scripts inside the package, and uninstalling it removes that task — nothing to copy into your home directory and no schtasks line to run by hand. The check itself runs while the app is closed (it waits up to 3 hours for the shell to exit). It does not raise the header budget or keep a floating panel; scripts/ can also be run standalone without the app installed."
+  zh: "仅 Windows，防止桌面外壳把自己锁死：数出已累积的 dsh-auth-* 启动 cookie，报出它们占掉 16 KiB 请求头预算的比例；超过 40 条时把整个 Cookies 数据库备份后移走、由 DSH 重建，因此该 profile 下的所有 cookie 都会被清掉。安装只需一条命令：插件加载时自己注册指向包内脚本的每周计划任务，卸载时又把该任务一并删除——不用往用户目录复制文件，也不用手工敲 schtasks。检查本身在应用关闭时执行（会最多等 3 小时让外壳退出）。不抬高请求头预算、不挂常驻浮窗；scripts/ 里的脚本不装应用也能单独跑。"

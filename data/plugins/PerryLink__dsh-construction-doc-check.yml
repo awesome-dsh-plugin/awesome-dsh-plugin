@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-construction-doc-check
+name: PerryLink/dsh-construction-doc-check
+category: tools
+description:
+  en: 'Checks a project document archive for missing required document types, stale revisions and empty files, using folder and file names rather than document contents.'
+  zh: '按项目资料归档要求检查缺失的必需资料类型、过期版本与空文件；只读文件夹与文件名，不读文档内容。'

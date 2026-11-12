@@ -1,0 +1,6 @@
+url: https://github.com/kviiinh/dsh-whale-particles-bg
+name: kviiinh/dsh-whale-particles-bg
+category: theme
+description:
+  en: 'Animated whale background for the DSH Web UI: a particle field sampled from the whale silhouette plus a dot-grid layer, both full-screen click-through canvases mounted in the shell.overlay seat; the particles gather on load, breathe when idle and are pushed away from the pointer, the grid dots swell near it, and the palette follows the page light/dark theme.'
+  zh: '为 DSH Web 界面加的一层动态鲸鱼背景：由鲸鱼剪影采样出的粒子场，加上一层点阵网格，两者都是挂在 shell.overlay 上的全屏点击穿透 canvas；粒子加载时聚合、空闲时呼吸、指针靠近时被推开，网格点靠近指针会放大，配色跟随页面明暗主题。'

@@ -1,0 +1,6 @@
+url: https://github.com/778672151/my-fullstack-journey/tree/main/align-mode
+name: 778672151/my-fullstack-journey#align-mode
+category: workflow
+description:
+  en: 'Deliver-and-align mode: the agent hands over one block at a time through an align_deliver tool, each block lands on disk immediately so you can edit it in place, and the agent re-reads your version before continuing.'
+  zh: '交付对齐模式：AI 通过 align_deliver 工具一次只交付一块，每块直接落盘、你可以就地在文件里改，AI 重读你的版本后再继续；方向错了可带时间戳备份安全返工。'

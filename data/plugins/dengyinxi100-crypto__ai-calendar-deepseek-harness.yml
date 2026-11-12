@@ -1,0 +1,6 @@
+url: https://github.com/dengyinxi100-crypto/ai-calendar-deepseek-harness
+name: dengyinxi100-crypto/ai-calendar-deepseek-harness
+category: ui
+description:
+  en: "Embeds a full calendar app as a sidebar panel and adds a draggable, resizable scheduled-task widget on the DSH page. Registers six agent tools (status, list, create, update, delete, summarize) that read and write the same SQLite database. The calendar's own AI is routed to the DeepSeek route already configured in DSH, and each reply shows token usage and cost, accumulated per day."
+  zh: "把完整的日历应用嵌成侧栏面板，并在 DSH 页面上挂一个可拖动、可缩放的定时任务浮窗。注册六个 Agent 工具（状态、查询、新增、修改、删除、总结），读写同一个 SQLite 数据库。日历内的 AI 改走 DSH 已配置的 DeepSeek 路由，每条回复下方显示 token 用量与费用，并按天累计。"

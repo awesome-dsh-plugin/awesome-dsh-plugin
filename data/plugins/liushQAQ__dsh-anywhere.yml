@@ -1,0 +1,6 @@
+url: https://github.com/liushQAQ/dsh-anywhere
+name: liushQAQ/dsh-anywhere
+category: remote
+description:
+  en: Remote access and mobile sync bridge for DSH iOS App with QR pairing, screen-lock resume, and tunnel management.
+  zh: 专为 DSH iOS App 与移动端协同打造的远程连接插件，支持扫码配对、锁屏恢复与隧道管理。

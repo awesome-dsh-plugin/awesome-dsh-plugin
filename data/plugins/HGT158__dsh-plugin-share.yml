@@ -1,0 +1,6 @@
+url: https://github.com/HGT158/dsh-plugin-share
+name: HGT158/dsh-plugin-share
+category: market
+description:
+  en: 'Turn a set of DSH plugins into one pasteable share code, then install it plugin by plugin — with a QR code to carry it to a phone.'
+  zh: '把一套 DSH 插件变成一段可粘贴的分享码，别人贴进去就能逐条安装，也能生成二维码带到手机上。'

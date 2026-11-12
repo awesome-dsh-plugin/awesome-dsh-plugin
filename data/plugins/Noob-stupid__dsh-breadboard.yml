@@ -1,0 +1,6 @@
+url: https://github.com/Noob-stupid/dsh-breadboard
+name: Noob-stupid/dsh-breadboard
+category: tools
+description:
+  en: 'DSH hardware sandbox plugin: assemble a 3D scene of ESP32 / BME280 / PIR / LED components with protocol- and voltage-checked port wiring, run real Python project code in the loop against simulated I2C/GPIO hardware with fault injection, let networked device simulators report over HTTP to a real backend (validated end-to-end against a live seat-reservation system), observe a real device read-only and map its state onto the scene, and add support for new boards through data-driven pin definitions. Ships 16 hw_* agent tools plus a bundled SKILL.md.'
+  zh: 'DSH 嵌入式硬件沙盒插件：在 3D 面包板场景里摆放 ESP32 / BME280 / PIR / LED 等器件、按协议与电压校验接线；让真实 Python 项目代码在环运行、经 Python shim 读虚拟 I2C/GPIO 的寄存器级读数，支持故障注入（断线 / NACK / busy / 强制读数）；联网设备模拟器可向真实 HTTP 后端周期上报（已在真实"智能选座"系统全链路验证）；还可只读观察真机状态，并用数据驱动的型号定义支持新硬件。随插件带 16 个 hw_* 工具与一份 SKILL.md。'

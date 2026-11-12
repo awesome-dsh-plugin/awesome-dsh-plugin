@@ -1,0 +1,6 @@
+url: https://github.com/moondrop12138/dsh-zcode-workspace-memory
+name: moondrop12138/dsh-zcode-workspace-memory
+category: memory
+description:
+  en: 'Workspace memory for DeepSeek Harness ported from ZCode: one Markdown memory directory per workspace (a MEMORY.md index plus one file per fact), injected into each main session and refreshed by a background extraction request after completed turns; a sidebar page browses the stored files read-only.'
+  zh: '把 ZCode 的工作区记忆移植到 DeepSeek Harness：每个工作区一份 Markdown 记忆目录（MEMORY.md 索引 + 一事实一文件），主会话开始时注入，每轮成功对话后由后台提取请求补充；左栏页面只读浏览已存文件。'

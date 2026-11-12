@@ -1,0 +1,19 @@
+# Entry for awesome-dsh-plugin/awesome-dsh-plugin
+#
+# Install as:  data/plugins/uos1231234__dsh-plugin-virtuoso-layout--dsh-plugin-virtuoso-layout.yml
+#
+# Why the monorepo form (`#subname` + a /tree/ url): in this repository the plugin
+# package lives in a subdirectory, so that is where package.json and
+# cordis.patch.yml are. Pointing `url` at the repository root would point at a
+# place with no manifest, and `dsh plugin add` would have nothing to install.
+# 657 entries in the list already use this form.
+#
+# The description is quoted because it contains ": " -- unquoted, YAML reads that
+# as a nested key and the parser fails. That is called out in contributing.md.
+
+url: https://github.com/uos1231234/dsh-plugin-virtuoso-layout/tree/main/dsh-plugin-virtuoso-layout
+name: uos1231234/dsh-plugin-virtuoso-layout#dsh-plugin-virtuoso-layout
+category: tools
+description:
+  en: 'Drives Cadence Virtuoso from the host: VM lifecycle, SKILL execution through the bridge, window capture, Calibre DRC parsing and a write-confirmation gate, in 12 host-only tools.'
+  zh: '从宿主机驱动 Cadence Virtuoso 画版图：虚拟机生命周期、经 bridge 执行 SKILL、窗口截图、Calibre DRC 解析，以及写入确认闸门，共 12 个宿主侧工具。'

@@ -1,0 +1,6 @@
+url: https://github.com/zhengqiuyang/dsh-compaction-guard
+name: zhengqiuyang/dsh-compaction-guard
+category: security
+description:
+  en: 'Compaction integrity: directive lines (never/must/必须 style markers) extracted from the compacted range are verified against the summary — verbatim or by content-word coverage — and every constraint the session silently forgot is reported and written to a JSONL ledger; pinned constraints from config are checked on every compaction.'
+  zh: '压缩监护：从被压缩范围提取指令行（never/must/必须 类标记），对照摘要做逐字或内容词覆盖存续校验；会话悄悄遗忘的约束会被响亮上报并写入 JSONL 台账；配置中的 pinned 约束每次压缩必验。'

@@ -1,0 +1,8 @@
+url: https://github.com/weixiurui/dsh-firefly-forest
+name: weixiurui/dsh-firefly-forest
+category: theme
+icon: https://raw.githubusercontent.com/weixiurui/dsh-firefly-forest/main/assets/icon-180.png
+tarball: https://github.com/weixiurui/dsh-firefly-forest/releases/latest/download/dsh-firefly-forest.tgz
+description:
+  en: 'Ambient firefly forest behind the DSH Web UI: a full-window canvas with a dark shrub layer, breathing fireflies on grass blades, and an owl or a moth that lights up when a drifting spark passes; on DSH Desktop a workbench panel adjusts brightness, firefly density, owl frequency, season and UI transparency.'
+  zh: 'DSH Web 界面的环境背景：全窗口 canvas 铺一层暗色灌木林，草叶上的萤火虫呼吸明灭，飞过的光点会照亮猫头鹰或蛾子；在 DSH Desktop 上另有工作台面板，可调亮度、萤火虫密度、猫头鹰频率、季节与界面透明化。'

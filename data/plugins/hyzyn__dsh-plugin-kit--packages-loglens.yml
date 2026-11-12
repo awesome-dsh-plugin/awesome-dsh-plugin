@@ -1,0 +1,6 @@
+url: https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/loglens
+name: hyzyn/dsh-plugin-kit#loglens
+category: tools
+description:
+  en: 'Log query card for the DSH Web GUI over Elasticsearch / OpenSearch: one query surface with per-dialect query strings and clickable examples, field-name completion, filter chips, a time histogram whose bars zoom into that window, field facets that turn a bucket into a filter, and a result list with level colors, stack-continuation rows, columns and paging; Docker container logs are a collection source that reuses the docker plugin. Ships five read-only loglens_* tools (sources / search / fields / facets / context) sharing the same execution layer as the panel. Outbound requests only reach configured sources, judged on the resolved IP, without following redirects and with size and timeout caps.'
+  zh: 'DSH Web GUI 的日志查询卡片（Elasticsearch / OpenSearch）：一个查询面——按来源方言给查询串与可点例子、字段名补全、筛选芯片、可点柱缩放时间窗的时间分布、把分组的桶点成筛选、带级别染色与堆栈续行标记的结果列表（可选列、可翻页）；Docker 容器日志作为采集来源复用 docker 插件。agent 侧五个只读 loglens_* 工具（sources / search / fields / facets / context）与面板共用同一执行层。出站只打到已配置的来源，按解析后的 IP 判定，不跟随重定向，并有体积与超时上限。'

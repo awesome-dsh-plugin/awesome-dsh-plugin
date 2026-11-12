@@ -1,0 +1,6 @@
+url: https://github.com/HPNY/dsh-portfolio
+name: HPNY/dsh-portfolio
+category: ui
+description:
+  en: "A-share and OTC fund dashboard forked from SuCriss/dsh-leekbox (MIT): indices, market boards, limit-up sentiment thermometer, dragon-tiger list, full-market search, a watchlist with in-place position editing and price alerts, a stock detail window with K-line, money flow and F10, a signal screener, 7x24 news, AI stock analysis, and an OTC fund tab with NAV, estimated NAV and a fund detail window showing stage returns, a NAV chart and the disclosed top-10 holdings with live quotes. It keeps upstream's /api/leekbox/* routes and $DSH_HOME/.leekbox-*.json data files, so install it instead of SuCriss/dsh-leekbox rather than alongside it."
+  zh: '持仓看板：A 股与场外基金看板，fork 自 SuCriss/dsh-leekbox（MIT）——大盘指数、板块、涨停情绪温度计、龙虎榜、全市场搜索、可原地编辑持仓成本与份额并带价格预警的自选、含 K 线 / 资金流向 / F10 的个股详情浮窗、技术信号选股、7×24 快讯、AI 个股分析，以及带净值与估值、阶段涨幅、净值曲线和最新披露前十大重仓实时涨跌的场外基金页。它沿用上游的 /api/leekbox/* 路由与 $DSH_HOME/.leekbox-*.json 数据文件，请替代而非并装 SuCriss/dsh-leekbox。'

@@ -1,0 +1,7 @@
+url: https://github.com/jamen-jiang/dsh-qoder-worktree
+name: jamen-jiang/dsh-qoder-worktree
+category: git
+description:
+  en: 'Qoder-style workspace mode and branch chips on the session row; picking a branch arms it, and the first message creates a dedicated git worktree and moves the session into it. Windows only: the write grant runs PowerShell Set-Acl; elsewhere Worktree mode reports an error and stays in the main checkout.'
+  zh: 'Qoder 风格的工作区模式与分支 chip，选择分支即挂起意图，发送第一条消息时自动创建独立 git worktree 并把会话迁入其中。仅 Windows：放行写入依赖 PowerShell Set-Acl，其他平台进 Worktree 会报错并留在主检出。'
+icon: https://raw.githubusercontent.com/jamen-jiang/dsh-qoder-worktree/main/assets/icon-180.png

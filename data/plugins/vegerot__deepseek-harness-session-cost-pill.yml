@@ -1,0 +1,6 @@
+url: https://github.com/vegerot/deepseek-harness-session-cost-pill
+name: vegerot/deepseek-harness-session-cost-pill
+category: usage
+description:
+  en: "Live estimated session spend in the composer dock, pricing each assistant step at DeepSeek's peak or off-peak rate for its own timestamp."
+  zh: "在输入框底栏显示当前会话的预估花费，每一步都按其自身时间戳采用 DeepSeek 的峰时或非峰时单价计价。"

@@ -1,0 +1,7 @@
+url: https://github.com/SivanCola/dsh-note
+name: SivanCola/dsh-note
+category: ui
+description:
+  en: 'Local Markdown notebook: a three-column vault (rail, folder tree, editor), split live preview, tags, stars and pins, a todo centre that gathers every checkbox in the vault and writes ticks back to the file, full-text search, session-to-note deposit, insert a note into a conversation, save an answer as a note, links back to the originating answer, vault-directory and text-size settings, and four note_* tools.'
+  zh: '本地 Markdown 笔记库：三栏布局（导航栏、目录树、编辑器）、双栏实时预览、标签、收藏与置顶、聚合全库复选框并回写文件的待办中心、全文搜索、会话沉淀成笔记、把笔记插入对话、把回答保存为笔记、跳回来源回答的链接、笔记库目录与字号设置，以及四个 note_* 工具。'
+icon: https://raw.githubusercontent.com/SivanCola/dsh-note/main/assets/icon-180.png

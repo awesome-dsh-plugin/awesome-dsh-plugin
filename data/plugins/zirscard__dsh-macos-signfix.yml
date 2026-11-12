@@ -1,0 +1,8 @@
+# Entry for the awesome-dsh-plugin list.
+url: https://github.com/zirscard/dsh-macos-signfix
+name: zirscard/dsh-macos-signfix
+category: dev
+description:
+  en: 'Registers one `doc_ocr_sign_fix` tool for DeepSeek Harness: on macOS it diagnoses and repairs the condition where the bundled Python cannot load native extensions (onnxruntime, cv2, pypdfium2) because of the hardened runtime and library validation, by injecting the disable-library-validation entitlement and re-signing the interpreter, then verifying the imports. Operations are idempotent and the original binary is backed up first. It never touches the enclosing application bundle.'
+  zh: '为 DeepSeek Harness 注册一个 `doc_ocr_sign_fix` 工具：在 macOS 上诊断并修复内置 Python 因 hardened runtime + Library Validation 拒绝加载 onnxruntime / cv2 / pypdfium2 原生扩展的问题——注入 disable-library-validation entitlement 并 ad-hoc 重签解释器，再验证导入。操作幂等，签名前先备份原二进制。绝不触碰外层 App。'
+tarball: https://github.com/zirscard/dsh-macos-signfix/releases/download/v0.1.0/dsh-macos-signfix.tgz

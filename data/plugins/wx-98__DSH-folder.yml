@@ -1,0 +1,6 @@
+url: https://github.com/wx-98/DSH-folder
+name: wx-98/DSH-folder
+category: ui
+description:
+  en: "Folder explorer for the DeepSeek Harness right sidebar: open any local folder, browse a tree with file-type icons, rename/create/delete/copy files and folders, and add files to the chat as @ references."
+  zh: "DeepSeek Harness 右侧栏的文件夹资源管理器：打开任意本地文件夹、按类型显示彩色图标、重命名/新建/删除/复制文件与文件夹，并可把文件作为 @ 引用添加到对话。"

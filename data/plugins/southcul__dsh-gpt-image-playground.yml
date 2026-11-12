@@ -1,0 +1,17 @@
+# awesome-dsh-plugin 收录条目
+#
+# 提交方式：fork https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+# 把本文件放到 data/plugins/southcul__dsh-gpt-image-playground.yml，然后开 PR。
+# 只加这一个文件，不要手改 README（两个 README 由脚本生成）。
+#
+# 注意：
+# - url 必须与仓库完全一致
+# - description.en 里出现「: 」时必须加引号，否则 YAML 会当成嵌套键
+# - 描述会被维护者对着代码核对，不要写夸大或营销词
+
+url: https://github.com/southcul/dsh-gpt-image-playground
+name: southcul/dsh-gpt-image-playground
+category: vision
+description:
+  en: 'Image generation and editing for GPT Image, Gemini (Nano Banana) and Grok, with official, OpenAI-compatible, api.toolify-ai.com and custom HTTP providers. Text-to-image, reference-image editing, canvas annotation, mask editing and Agent multi-turn chat, with images and history kept on your machine. The workbench UI is the MIT-licensed GPT Image Playground v0.9.0 build by CookSleep, bundled unchanged; that upstream is a standalone web app, not a DSH plugin.'
+  zh: '支持 GPT Image、Gemini（Nano Banana）和 Grok 的图片生成与编辑工具，支持官方接口、OpenAI 兼容接口、api.toolify-ai.com 与自定义 HTTP 供应商。支持文本生图、参考图编辑、画板标注、遮罩编辑与 Agent 多轮对话，图片和历史记录保存在本地。界面为上游 CookSleep/gpt_image_playground 的 MIT 构建 v0.9.0，原样打包；上游是独立网页应用而非 DSH 插件。'

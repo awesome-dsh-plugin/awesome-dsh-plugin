@@ -1,0 +1,6 @@
+url: https://github.com/Zzz11042/dsh-research-kit/tree/master/plugin
+name: Zzz11042/dsh-research-kit#plugin
+category: usage
+description:
+  en: "Local-first research toolkit for DSH: registers kb_grep, kb_list, and kb_save model tools. kb_grep searches the markdown knowledge base with ripgrep when present and falls back to grep, while kb_list and kb_save go through the scoped ctx.fs filesystem service; the KB defaults to ~/dsh-kb. The repo also ships two skills (local-first-research and session-memory) that must be copied into a DSH skills directory yourself; they are not installed by the plugin bundle. The plugin is pure Node ESM with no npm runtime dependencies and ships a framework-free node test harness. Installable via plugin_manager install_bundle; no client UI is bundled."
+  zh: "面向 DSH 的本地优先研究工具包：注册 kb_grep / kb_list / kb_save 三个模型工具。kb_grep 用 ripgrep（没有时回退 grep）搜索 markdown 知识库，kb_list / kb_save 则经由作用域化的 ctx.fs 文件系统服务读写，知识库默认 ~/dsh-kb；仓库另附两个 skill（local-first-research 与 session-memory），需自行复制到 DSH 的 skills 目录，插件包不会安装它们。插件为纯 Node ESM、无 npm 运行时依赖，附无框架的 node 测试。通过 plugin_manager 的 install_bundle 安装；不含前端 UI。"

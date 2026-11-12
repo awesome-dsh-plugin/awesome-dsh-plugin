@@ -1,0 +1,6 @@
+url: https://github.com/krodon998/dsh-get-memory
+name: krodon998/dsh-get-memory
+category: memory
+description:
+  en: Pulls GitHub repo content into DSH conversations at start and writes extracted long-term memory back with SHA-locked multi-file commits at conversation end; per-file read/write permissions, native settings page, turn indicators and global change notices.
+  zh: 对话开始时自动拉取 GitHub 仓库内容注入上下文，对话结束时提取长期记忆按文件写回并提交；文件权限中心、原生设置页、回合写回指示与全局变动提示。

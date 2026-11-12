@@ -1,0 +1,6 @@
+url: https://github.com/JessenReinhart/dsh-time-context
+name: JessenReinhart/dsh-time-context
+category: session
+description:
+  en: 'Injects the exact current local time and the timestamp, day relation and recency gap of the previous user message into every prompt, and adds a /time command that prints the injected block.'
+  zh: '为每次请求注入精确的本地当前时间，以及上一条用户消息的时间、日期关系与间隔；并提供 /time 命令查看注入内容。'

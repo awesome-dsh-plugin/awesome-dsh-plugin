@@ -1,0 +1,6 @@
+url: https://github.com/recued/dsh-recued
+name: recued/dsh-recued
+category: tools
+description:
+  en: Adds your own Recued server as an MCP server, so the agent can read your notes, tasks and the things you own and propose changes that wait for your approval in Recued.
+  zh: '把你自己搭建的 Recued 服务器接成 MCP 服务，让 agent 读取你的笔记、任务与物品，并提交需要你在 Recued 里确认的修改。'

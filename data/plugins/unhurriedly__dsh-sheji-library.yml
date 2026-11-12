@@ -1,0 +1,7 @@
+url: https://github.com/unhurriedly/dsh-sheji-library
+name: unhurriedly/dsh-sheji-library
+category: ui
+description:
+  en: 'Adds a sidebar panel that browses the 设记 Design Memory component library by asset type, with live previews, design tokens, and copyable HTML, CSS, and JavaScript. Component pages ship with the plugin; fonts and images load from the public library site.'
+  zh: '在侧边栏增加设记 Design Memory 组件库面板：按资产类型浏览，支持实时预览、查看设计参数并复制 HTML/CSS/JS。组件页面随插件打包，字体与图片从公开资源库站点加载。'
+icon: https://raw.githubusercontent.com/unhurriedly/dsh-sheji-library/main/assets/icon-180.png

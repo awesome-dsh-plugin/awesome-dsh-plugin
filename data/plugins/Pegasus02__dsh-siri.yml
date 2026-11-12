@@ -1,0 +1,6 @@
+url: https://github.com/Pegasus02/dsh-siri
+name: Pegasus02/dsh-siri
+category: voice
+description:
+  en: 'Talk to DeepSeek Harness through Siri and iPhone Shortcuts: a bearer-key POST /siri endpoint on your computer answers each spoken request for Siri to read aloud, with a settings page (key, port, workspace, model, Agent Preset, rate limit, allowed addresses), optional DS Bot routing, and a ready-made Shortcut.'
+  zh: 用 Siri 和 iPhone 快捷指令对话 DeepSeek Harness：电脑上的 POST /siri 接口（Bearer 密钥鉴权）回答每一句语音请求并交给 Siri 朗读，附设置页（密钥、端口、工作区、模型、Agent Preset、限频、来源地址）、可选的 DS Bot 路由和现成的快捷指令。

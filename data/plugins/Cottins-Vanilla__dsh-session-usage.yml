@@ -1,0 +1,7 @@
+url: https://github.com/Cottins-Vanilla/dsh-session-usage
+name: Cottins-Vanilla/dsh-session-usage
+category: usage
+description:
+  en: 'Session usage dashboard for DeepSeek Harness: price, tokens, per-turn curves, and per-answer cost badges.'
+  zh: 'DeepSeek Harness 会话用量面板：价格、token、每轮累计曲线，以及每个回答末尾的价格标记。'
+icon: https://raw.githubusercontent.com/Cottins-Vanilla/dsh-session-usage/main/assets/icon-180.png

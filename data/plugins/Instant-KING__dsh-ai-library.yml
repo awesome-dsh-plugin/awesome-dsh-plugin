@@ -1,0 +1,6 @@
+url: https://github.com/Instant-KING/dsh-ai-library
+name: Instant-KING/dsh-ai-library
+category: tools
+description:
+  en: 'Local library panel for DSH: indexes files and artifacts into a searchable card tree with PDF, Office and image preview, plus paper search across arXiv/OpenAlex/Crossref and others, web-page archiving to markdown snapshots, a plugin-market tab, and one-click switching for resources found in installed plugins (personas, meme packs, whale widget assets). Ships 18 tools and 22 host routes.'
+  zh: 'DSH 的本地资料馆：把本机文件与产物索引成可搜索的卡片树，支持 PDF / Office / 图片预览，另带论文检索（arXiv、OpenAlex、Crossref 等）、把网页存成 markdown 快照、插件市场标签页，以及已装插件资源的同步与一键切换（人设、表情包图集、鲸鱼挂件素材）。包含 18 个工具与 22 条宿主路由。'

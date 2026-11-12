@@ -1,0 +1,7 @@
+url: https://github.com/Chaos-Paradox/dsh-search-proxy
+name: Chaos-Paradox/dsh-search-proxy
+category: browser
+description:
+  en: 'SearXNG web search with a managed local runtime, external instance support, Web settings, and an optional DSH process proxy.'
+  zh: '提供 SearXNG 网页搜索，支持托管本地运行环境、连接已有实例、Web 设置及可选的 DSH 进程代理。'
+tarball: https://github.com/Chaos-Paradox/dsh-search-proxy/releases/download/v0.5.0/dsh-search-proxy-0.5.0.tgz

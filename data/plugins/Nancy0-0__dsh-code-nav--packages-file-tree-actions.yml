@@ -1,0 +1,6 @@
+url: https://github.com/Nancy0-0/dsh-code-nav/tree/main/packages/file-tree-actions
+name: Nancy0-0/dsh-code-nav#file-tree-actions
+category: ui
+description:
+  en: Right-click menu and drag support for the Files sidebar on Windows - copy absolute or workspace-relative paths, create files and folders, rename, move entries to the Recycle Bin, and drop a row into the composer to insert an @ reference.
+  zh: Windows 上给 Files 侧栏补右键菜单与拖拽：复制绝对或工作区相对路径、新建文件与文件夹、重命名、把条目移到回收站，以及把行拖进对话栏插入 @ 引用。

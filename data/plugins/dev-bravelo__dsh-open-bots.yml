@@ -1,0 +1,7 @@
+url: https://github.com/dev-bravelo/dsh-open-bots
+name: dev-bravelo/dsh-open-bots
+category: identity
+description:
+  en: "Adds lasting bots with their own name, photo, persona, memory, voice and model, a Bots panel in the sidebar, and a hidden helper subagent per bot that follows the conversation, searches ahead and leaves notes the bot reads; voice uses your own ElevenLabs, OpenAI, Groq, Mistral or Deepgram key. Interface and prompts in Brazilian Portuguese."
+  zh: "添加长期存在的机器人，每个都有自己的名字、头像、人设、记忆、声音和模型，侧边栏提供 Bots 面板；每个机器人背后有一个隐藏的辅助子代理，跟随对话、提前搜索并留下供机器人阅读的笔记；语音使用你自己的 ElevenLabs、OpenAI、Groq、Mistral 或 Deepgram 密钥。界面和提示词为巴西葡萄牙语。"
+tarball: https://github.com/dev-bravelo/dsh-open-bots/releases/download/v0.1.0/dsh-open-bots-0.1.0.tgz

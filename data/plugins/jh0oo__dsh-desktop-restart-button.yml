@@ -1,0 +1,7 @@
+url: https://github.com/jh0oo/dsh-desktop-restart-button
+name: jh0oo/dsh-desktop-restart-button
+category: ui
+description:
+  en: 'Adds a restart button to the Windows desktop app title bar and replaces the cold-start "loading settings" overlay with an animated boot sequence.'
+  zh: "在 Windows 桌面端标题栏加一个重启按钮，并把冷启动时的「正在加载设置…」换成一段科技感动画。"
+icon: https://raw.githubusercontent.com/jh0oo/dsh-desktop-restart-button/main/assets/icon-512.png

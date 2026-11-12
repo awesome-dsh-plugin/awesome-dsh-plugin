@@ -1,0 +1,6 @@
+url: https://github.com/Arrosam/dsh-smart-prompt
+name: Arrosam/dsh-smart-prompt
+category: ui
+description:
+  en: 'One-click prompt refinement for the DSH composer: the ✦ button next to Send rewrites the draft into an agent-ready prompt in Standard or Light mode, with Revert and Retry; asks follow-up questions through the question card when the draft is missing information; checks that paths, identifiers, numbers, URLs, inline code and @mentions survive the rewrite and adds back any that were dropped; runs on the conversation model or a dedicated model chosen on the Plugins page.'
+  zh: '在 DSH 输入框一键改写提示词：点「发送」旁的 ✦，按「标准」或「轻」档把草稿改写成 Agent 可直接执行的提示词，可撤回或重试；草稿缺少信息时通过提问卡片追问；校验路径、标识符、数字、URL、行内代码与 @ 提及在改写后逐字保留，丢失的会补回；可使用会话模型，或在插件页面指定专用模型。'

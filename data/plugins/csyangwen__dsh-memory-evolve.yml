@@ -1,0 +1,6 @@
+url: https://github.com/csyangwen/dsh-memory-evolve
+name: csyangwen/dsh-memory-evolve
+category: memory
+description:
+  en: 'A purely plugin-based implementation that brings "cross-session long-term memory + background self-evolution" capabilities to DeepSeek Harness: five-track memory · git branch awareness · in-turn self-review · skill self-evolution and skill manager · four-track to-do · COI scheduling · session broadcast · session search · prompt manager · temporary info notes—zero core modifications, zero runtime dependencies, ready to use upon installation and completely removable upon uninstallation.'
+  zh: '为 DeepSeek Harness 带来「跨会话长期记忆 + 后台自我进化」能力的纯插件实现：五轨记忆 · git 分支感知 · 回合内自我审查 · 技能自我进化与技能管理器 · 四轨待办 · COI 调度 · 会话广播 · 会话搜索 · 提示词管理器 · 临时信息便签——零核心修改、零运行时依赖，随装随用、卸载即净。'

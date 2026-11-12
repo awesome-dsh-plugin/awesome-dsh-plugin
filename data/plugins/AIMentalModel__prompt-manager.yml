@@ -1,0 +1,6 @@
+url: https://github.com/AIMentalModel/prompt-manager
+name: AIMentalModel/prompt-manager
+category: ui
+description:
+  en: "Prompt manager for DSH: imports prompts from JSON or Markdown sources and DSH's own system sections, then controls what is injected into the system prompt — per prompt, or per agent preset — with title editing, drag ordering, LLM translation and the option to inject either the original text or its translation."
+  zh: "DSH 提示词管理面板：从 JSON/Markdown 来源与 DSH 自身的系统提示词段收集提示词，按条、按 agent 预设控制哪些内容注入系统提示词，支持改标题、拖拽排序、调用大模型翻译，并可选择注入原文或译文。"

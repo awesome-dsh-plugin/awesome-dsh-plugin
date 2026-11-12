@@ -1,0 +1,6 @@
+url: https://github.com/linlin539/dsh-skill-writing-plans
+name: linlin539/dsh-skill-writing-plans
+category: skill
+description:
+  en: Adds a writing-plans skill that generates a structured implementation plan document before coding, then executes simple tasks inline or offers an execution choice for complex work.
+  zh: 添加 writing-plans 技能，在写代码前生成结构化实现计划文档，简单任务直接执行，复杂任务提供执行方式选择。

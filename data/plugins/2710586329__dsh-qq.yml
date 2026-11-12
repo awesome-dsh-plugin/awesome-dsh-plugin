@@ -1,0 +1,6 @@
+url: https://github.com/2710586329/dsh-qq
+name: 2710586329/dsh-qq
+category: remote
+description:
+  zh: "把 QQ 接进 DeepSeek Harness：私聊群聊、本地语音转文字、看图，以及十个互动工具（戳一戳、贴表情、点赞、发图、发文件、撤回等）。需要本机另跑一个 OneBot 11 实现（如 NapCat）。"
+  en: "Bridges QQ into DeepSeek Harness over OneBot 11: private and group chats, on-device voice-to-text, image support, and ten interaction tools (poke, react, like, image, file, recall and more). Needs an OneBot 11 implementation such as NapCat running alongside."

@@ -1,0 +1,6 @@
+url: https://github.com/439436269-ctrl/dsh-sticky-notes
+name: 439436269-ctrl/dsh-sticky-notes
+category: ui
+description:
+  en: 'A tiled sticky-notes board for the DSH sidebar (a notes plugin): per-row density, colours, pins, search and colour filters, a trash with restore, Markdown export, and note_* tools that read and write the same notes.'
+  zh: 'DSH 左侧栏的彩色便签墙（便签插件 / 记事贴）：每行 2–5 个或自适应、置顶、搜索与颜色筛选、带恢复的回收站、Markdown 导出；四个 note_* 工具读写同一批便签。'

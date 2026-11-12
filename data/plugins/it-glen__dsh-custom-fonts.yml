@@ -1,0 +1,7 @@
+url: https://github.com/it-glen/dsh-custom-fonts
+name: it-glen/dsh-custom-fonts
+category: ui
+tarball: https://github.com/it-glen/dsh-custom-fonts/releases/download/v1.1.1/dsh-custom-fonts-1.1.1.tgz
+description:
+  en: Fonts and code-font settings for the UI with an English-only glyph scale (100-160%), a -4..+8 px content-size offset that actually applies, and settings kept across refreshes - a maintained fork of lsh2002/dsh-custom-fonts.
+  zh: 在设置页自定义界面中英文与代码字体，支持只放大拉丁字形的英文字形缩放（100-160%）与 -4..+8 px 的内容字号偏移，刷新后保留设置；lsh2002/dsh-custom-fonts 的维护分支。

@@ -1,0 +1,6 @@
+url: https://github.com/penghao73551/dsh-desktop-quick-actions
+name: penghao73551/dsh-desktop-quick-actions
+category: ui
+description:
+  en: "Two round buttons at the foot of the DSH desktop sidebar on Windows: restart the app without a console window ever flashing on screen, and open the DeepSeek top-up page in your browser. The restart path launches the helper through WMI and wscript so the new process never inherits a console; it verifies the executable path before killing anything and preserves the original command line. Windows 10/11 only (the package declares os: win32)."
+  zh: "在 Windows 的 DSH 桌面端侧边栏底部加两个圆形按钮：重启应用（全程不闪黑窗）和打开 DeepSeek 充值页。重启走 WMI + wscript 拉起 helper，新进程不继承控制台；动手前会先核对可执行文件路径，并保留原始命令行。仅支持 Windows 10/11（包声明 os: win32）。"

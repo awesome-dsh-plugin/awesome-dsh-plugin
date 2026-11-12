@@ -1,0 +1,6 @@
+url: https://github.com/Daphne999/dsh-qq-archive
+name: Daphne999/dsh-qq-archive
+category: memory
+description:
+  en: "Local searchable archive of DSH chat history: decodes the multi-frame zstd session logs (thousands of concatenated frames), extracts user and assistant text into SQLite, and exposes sync / search / stats tools. Idempotent imports, no external service, nothing leaves the disk."
+  zh: '把会话日志归档成本地可检索的聊天库：逐帧解码几千帧相接的 zstd 日志，抽取 user/assistant 文本入 SQLite，提供同步/检索/统计三个工具。幂等导入，不依赖外部服务，数据不出本机。'

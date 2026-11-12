@@ -1,0 +1,6 @@
+url: https://github.com/lof6yo/dsh-opencode-live
+name: lof6yo/dsh-opencode-live
+category: tools
+description:
+  en: Runs OpenCode as a DSH subagent over ACP and shows each task live in the right sidebar — its agent and model, tool calls, and the subagents OpenCode spawns itself; permission requests become DSH question cards with allow once, allow always or reject.
+  zh: 通过 ACP 把 OpenCode 作为 DSH 子智能体运行，并在右侧边栏实时展示它的 agent 与模型、工具调用和它自己派生的子 agent；权限请求会变成 DSH 问题卡片，可选允许一次、始终允许或拒绝。

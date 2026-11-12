@@ -1,0 +1,7 @@
+url: https://github.com/likaileave/dsh-model-billing
+name: likaileave/dsh-model-billing
+category: usage
+description:
+  en: 'Reorder configured models in the composer model picker, set cache-hit, cache-miss and output prices per million tokens, and estimate per-turn and session costs with built-in DeepSeek peak/off-peak rates.'
+  zh: '在输入框右下角的模型选择器中自定义模型顺序，按每百万 tokens 设置缓存命中、缓存未命中与输出三档价格，并结合内置的 DeepSeek 峰谷价估算逐轮和本会话费用。'
+tarball: https://github.com/likaileave/dsh-model-billing/releases/latest/download/dsh-model-billing.tgz

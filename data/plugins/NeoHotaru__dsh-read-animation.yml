@@ -1,0 +1,6 @@
+url: https://github.com/NeoHotaru/dsh-read-animation
+name: NeoHotaru/dsh-read-animation
+category: vision
+description:
+  en: 'Reads animated GIF and WebP as animations: a pasted one keeps playing in the UI while the model gets a labelled sheet of frames sampled across it, and the read_animation tool samples a file on demand.'
+  zh: '把 gif 和动图 webp 当作动画来读：贴进聊天框的照常播放，模型收到的是横跨整段采样、带帧号与时长的胶片条；工作区里的文件由 read_animation 按需采样。'

@@ -1,0 +1,6 @@
+url: https://github.com/aix-plugin/ai-courses/tree/main/package
+name: aix-plugin/ai-courses#package
+category: tools
+description:
+  en: Turns a learning request and local materials into a structured, locally stored AI course with outline, lessons, diagrams and learning progress.
+  zh: 把学习诉求和手头资料变成结构化、纯本地的 AI 课程，含大纲、知识点内容、图表与学习进度。

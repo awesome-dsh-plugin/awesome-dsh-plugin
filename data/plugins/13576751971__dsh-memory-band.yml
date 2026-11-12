@@ -1,0 +1,8 @@
+url: https://github.com/13576751971/dsh-memory-band
+name: 13576751971/dsh-memory-band
+category: memory
+tarball: https://github.com/13576751971/dsh-memory-band/releases/latest/download/dsh-memory-band.tgz
+icon: https://raw.githubusercontent.com/13576751971/dsh-memory-band/main/assets/icon-180.png
+description:
+  en: 'Local three-band memory for DeepSeek Harness: a 24h protection band, query recall and scene replay, injected into sessions without embedding or model calls.'
+  zh: '给 DeepSeek Harness 的本地三段式记忆带：24 小时保护带、按话题召回、场景回放，自动注入会话，不调用 embedding 或模型。'

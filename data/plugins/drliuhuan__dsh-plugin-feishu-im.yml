@@ -1,0 +1,6 @@
+url: https://github.com/drliuhuan/dsh-plugin-feishu-im
+name: drliuhuan/dsh-plugin-feishu-im
+category: remote
+description:
+  en: 'Feishu IM bridge for dsh: create a dedicated Feishu bot by scanning a QR code, get one Card JSON 2.0 notice per finished turn, answer tool approvals and structured questions from the chat, and drive a session from it — listing and switching the bound session with /sessions and /resume, steering a running turn, and choosing per-chat permission modes (read-only, workspace, Auto Review, full). Long output paginates instead of being cut. Owner binding: the QR scan binds the scanner; with manually entered credentials the first sender claims ownership and everyone else is refused.'
+  zh: '飞书 IM 通道：扫码创建专属飞书机器人；每轮结束推一张卡片，在飞书里授权工具调用、回答结构化提问，并直接用聊天驱动会话（/sessions 列会话、/resume 切换绑定会话、任务进行中可插话引导），还能按对话设置权限模式（只读 / 工作区读写 / Auto Review / 完全权限）。消息以卡片 JSON 2.0 发送，超长内容分页而不是截断。归属绑定：扫码创建时绑定扫码人；手填凭据时由首个发消息的人认领，其余人一律拒绝。'

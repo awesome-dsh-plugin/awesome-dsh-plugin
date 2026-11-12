@@ -1,0 +1,7 @@
+url: https://github.com/lzyxczw-cyber/dsh-thinking-cn/tree/main/skills/zh-thinking
+name: lzyxczw-cyber/dsh-thinking-cn#zh-thinking
+category: skill
+description:
+  en: 'Skill that switches the displayed reasoning to Simplified Chinese: it enables the built-in experimental reasoning translation, pins provider bing and target language zh, then verifies and troubleshoots the result. The same repository also ships an optional one-install preset plugin for users who want the same setup without running the steps. Requires the DSH 0.2.1 line with the experimental reasoning-translation bundle and a Web or Desktop GUI; the default provider is bing, so expanded reasoning text is sent to Bing.'
+  zh: '把思考过程切换成简体中文显示的技能：启用内置实验性思考翻译、固定 bing + zh，并给出验证与排障步骤；同一仓库另提供可选的一键预设插件，供不想逐步操作的用户直接安装。需要带实验性思考翻译包的 DSH 0.2.1 线以及 Web/桌面 GUI；默认 provider 为 bing，展开的思考正文会发送给 Bing。'
+icon: https://raw.githubusercontent.com/lzyxczw-cyber/dsh-thinking-cn/main/assets/icon-180.png

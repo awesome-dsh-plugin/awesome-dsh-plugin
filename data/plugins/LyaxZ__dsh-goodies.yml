@@ -1,0 +1,7 @@
+url: https://github.com/LyaxZ/dsh-goodies
+name: LyaxZ/dsh-goodies
+category: ui
+tarball: https://github.com/LyaxZ/dsh-goodies/releases/latest/download/dsh-goodies.tgz
+description:
+  en: 'Effort slider in the model menu, a live tokens-per-second and turn-total readout beside the running status, a per-answer input/output/cached report, and a completion notification when a turn finishes, for the DeepSeek Harness Web GUI.'
+  zh: '模型菜单里的思考强度滑块、运行状态旁的实时速度与本轮用量、每条回答的输入/输出/缓存成绩单，以及每轮结束的完成通知；各自独立开关，只作用于界面。'

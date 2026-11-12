@@ -1,0 +1,6 @@
+url: https://github.com/qwq-wny/dsh-eta-forecast
+name: qwq-wny/dsh-eta-forecast
+category: ui
+description:
+  en: 'Adds an ETA widget to the DSH web and desktop UI that estimates when the current turn will finish from the todo list and step pace, and shows the remaining time, a progress bar and a confidence badge.'
+  zh: '给 DSH 网页端与桌面端加一个 ETA 挂件：按 todo 清单与步进节奏估算本轮何时完成，显示剩余时长、进度条与置信度徽章。'

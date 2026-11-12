@@ -1,0 +1,6 @@
+url: https://github.com/Ianzhyh/workbuddy-to-dsh/tree/main/dsh-plugin
+name: Ianzhyh/workbuddy-to-dsh#dsh-plugin
+category: model
+description:
+  en: 'Registers a local OpenAI-compatible bridge as a native dsh model provider: reuses the models already signed in on the desktop app on this machine, manages the bridge and its local dashboard process, and adds five tools, a /workbuddy command and a nine-tab settings panel. Requires the desktop app to be installed and signed in on the same machine; the bridge binds 127.0.0.1 only.'
+  zh: '把本机的本地 OpenAI 兼容桥注册成 dsh 原生模型 provider：复用这台机器桌面端已登录的模型，管理桥与其本地控制台进程，并附带 5 个工具、/workbuddy 命令与 9 个标签页的设置面板。需同机已安装并登录该桌面端；桥只监听 127.0.0.1。'

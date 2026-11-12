@@ -2,5 +2,5 @@ url: https://github.com/chromoany/dsh-notify-me
 name: chromoany/dsh-notify-me
 category: notify
 description:
-  en: Message alerts and desktop notification for DSH — a system toast, a sound and a tab-title marker when the agent needs your input (approval, plan review, question) or a reply finishes in the background; the Settings page holds the master switch, sound and volume, the per-case toggles and the zh/en notification language.
-  zh: 消息提醒 / 桌面通知 / 后台回复完成提醒：模型需要你操作（审批、方案确认、提问）或后台回复完成时，弹出系统通知与提示音，并标记标签页标题；设置页可开关提醒、调音量、切换中英文通知语言。
+  en: Notification reminders, message alerts and desktop notification for DSH — a desktop notifier that raises a system toast, a sound and a tab-title marker when the agent needs your input (approval, plan review, question) or a reply is finished in the background (task complete / completion alerts, notify when done); the Settings page holds the master switch, sound and volume, the per-case toggles and the zh/en notification language.
+  zh: 通知提醒 / 消息提醒 / 消息通知 / 桌面通知弹窗 / 桌面提醒 / 弹窗通知、弹窗提醒 / 任务提醒、任务完成提醒 / 后台提醒、回复完成提醒 / 审批提醒：模型需要你操作（审批、方案确认、提问）或任务、回复跑完时，弹出系统通知（可操作提醒、审批通知、完成通知）与提示音，并标记标签页标题；这是一款 DSH 通知提醒插件、DSH 提醒插件、消息通知插件，设置页可开关提醒、调音量、切换中英文通知语言。

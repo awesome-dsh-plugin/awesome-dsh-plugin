@@ -1,0 +1,6 @@
+url: https://github.com/Switcha57/dsh-mistral-spend
+name: Switcha57/dsh-mistral-spend
+category: usage
+description:
+  en: Shows real-time Mistral Vibe and API budget usage in the sidebar, with per-model token cost tracking, cached-token spend, and API-key management. Requires a Mistral API key (MISTRAL_API_KEY by default, or a custom apiKeyEnv).
+  zh: 在侧边栏实时显示 Mistral Vibe 与 API 预算使用情况，按模型追踪令牌成本与缓存令牌支出，并支持管理 API 密钥。需要配置 Mistral API key（默认环境变量 MISTRAL_API_KEY，或自定义 apiKeyEnv）。

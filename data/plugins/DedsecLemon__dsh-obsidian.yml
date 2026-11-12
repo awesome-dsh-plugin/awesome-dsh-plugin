@@ -1,0 +1,6 @@
+url: https://github.com/DedsecLemon/dsh-obsidian
+name: DedsecLemon/dsh-obsidian
+category: ui
+description:
+  en: 'Your real Obsidian vault in the DSH right Sidebar: vault tree, full-vault search, read-view typography, wikilinks and heading anchors, properties, backlinks, highlights, in-place editing, an outline, and a right-click menu for handoff, rename and .trash.'
+  zh: '把你真实的 Obsidian 知识库放进 DSH 右侧栏：目录树、全库搜索、阅读视图排版、双向链接与标题锚点、属性区、关系图谱、高亮、就地编辑、大纲，以及右键菜单（引入对话、重命名、移到 .trash）。'

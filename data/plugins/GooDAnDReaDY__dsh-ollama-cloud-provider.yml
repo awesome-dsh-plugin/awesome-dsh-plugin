@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-ollama-cloud-provider
+name: GooDAnDReaDY/dsh-ollama-cloud-provider
+category: model
+description:
+  en: "Ollama Cloud provider for DeepSeek Harness with native and OpenAI-compatible transports."
+  zh: "为 DeepSeek Harness 提供 Ollama Cloud 模型接入，支持原生及 OpenAI 兼容传输。"

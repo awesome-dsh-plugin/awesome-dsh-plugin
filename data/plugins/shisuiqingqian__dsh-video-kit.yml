@@ -1,0 +1,7 @@
+url: https://github.com/shisuiqingqian/dsh-video-kit
+name: shisuiqingqian/dsh-video-kit
+category: vision
+description:
+  en: 'Reads a local video or page link with ffmpeg and Paraformer ASR, returning a timestamped transcript plus key-frame images the agent can open; finds candidate videos by keyword and installs its own runtime dependencies on first use. Requires Python 3.8+ on PATH; video_discover also needs a one-time douyin/xiaohongshu login.'
+  zh: '用 ffmpeg 与 Paraformer 读取本地视频或网页链接，返回带时间轴的逐字稿与可逐帧打开的关键帧图片；可按关键词检索候选视频，首次使用时自动安装运行时依赖。需 PATH 上有 Python 3.8+；video_discover 还需一次性登录抖音/小红书。'
+tarball: https://github.com/shisuiqingqian/dsh-video-kit/releases/latest/download/dsh-video-kit.tgz

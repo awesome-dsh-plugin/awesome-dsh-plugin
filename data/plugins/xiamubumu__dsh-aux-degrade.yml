@@ -1,0 +1,7 @@
+url: https://github.com/xiamubumu/dsh-aux-degrade
+name: xiamubumu/dsh-aux-degrade
+category: model
+description:
+  en: 'Stops compaction summaries and session titles from burning their output budget on reasoning, by lowering the thinking level and raising the token floor for auxiliary calls only.'
+  zh: 辅助调用降级：压缩摘要与会话标题不再被高思考档烧光输出预算，主循环完全不受影响。
+tarball: https://github.com/xiamubumu/dsh-aux-degrade/releases/download/v1.1.0/dsh-aux-degrade-1.1.0.tgz

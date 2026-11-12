@@ -1,0 +1,6 @@
+url: https://github.com/1497105876/dsh-mimotts
+name: 1497105876/dsh-mimotts
+category: voice
+description:
+  en: 'MiMo TTS speech synthesis for DeepSeek Harness: a speak button on finalized assistant messages with an inline player (draggable progress bar), a plugin-page configuration card with preview playback, and a voice-history settings page.'
+  zh: MiMo TTS 语音合成——已定稿助手回复的朗读按钮与内联播放器（可拖动进度条）、插件页配置卡片（支持试听）和语音历史设置页。

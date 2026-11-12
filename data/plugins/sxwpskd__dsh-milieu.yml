@@ -1,0 +1,6 @@
+url: https://github.com/sxwpskd/dsh-milieu
+name: sxwpskd/dsh-milieu
+category: agi
+description:
+  en: "Prepares a workspace management protocol for an agent — three libraries (cognition, tools, external information), an optional preloaded session that has already read the workspace, and a re-read card when the workspace has changed enough."
+  zh: "为 agent 准备一套工作区管理协议——认知、工具、外部信息三库，一条可选的、已读过工作区的预加载会话，以及工作区变化达到阈值后弹出的重读卡片。"

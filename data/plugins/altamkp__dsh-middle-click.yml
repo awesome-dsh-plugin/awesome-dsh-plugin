@@ -1,0 +1,8 @@
+url: https://github.com/altamkp/dsh-middle-click
+name: altamkp/dsh-middle-click
+category: ui
+icon: https://raw.githubusercontent.com/altamkp/dsh-middle-click/main/assets/icon-180.png
+tarball: https://github.com/altamkp/dsh-middle-click/releases/latest/download/dsh-middle-click.tgz
+description:
+  en: 'Middle-click closes a session or a sidebar tab in the DeepSeek Harness Web UI. A session closes through the row''s own archive action, so the confirmation for running work and the undo notice stay exactly as the Harness renders them; a tab closes through its own close control, leaving the rule that a lone guide tab cannot be closed untouched. The gesture settles on press-and-release on the same element, so a middle drag never closes anything. Two switches on the plugin''s own Settings tab turn each half off, remembered per browser.'
+  zh: '在 DeepSeek Harness 的 Web 界面里，用鼠标中键关闭会话或侧边栏标签页。会话走这一行自带的归档操作，因此运行中任务的确认框和撤销通知仍由 Harness 原样渲染；标签页走自己的关闭按钮，「唯一的指南页不能关」这条规则不受影响。手势要求在同一元素上按下并松开，所以中键拖动不会误关。插件自带独立设置页，两个开关分别关闭这两项，并按浏览器记住。'

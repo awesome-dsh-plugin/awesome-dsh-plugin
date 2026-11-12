@@ -1,0 +1,6 @@
+url: https://github.com/JOJO-Adam/dsh-comfyui
+name: JOJO-Adam/dsh-comfyui
+category: tools
+description:
+  en: "Production pack for ComfyUI inside DeepSeek Harness: submit API-format workflows to a local or remote server, batch-generate and fetch outputs, and diagnose bad images with measured parameter ranges and a failure-mode decision tree (black frames, duplicated subjects, color fringes, OOM)."
+  zh: "ComfyUI 在 DeepSeek Harness 里的生产包：向本地或远程服务提交 API 格式工作流、批量出图并取回产物，附实测参数区间与崩图排查决策树（黑图、主体重复、彩边、显存不足）。"

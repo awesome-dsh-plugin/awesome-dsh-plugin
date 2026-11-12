@@ -1,0 +1,6 @@
+url: https://github.com/yupaoa/dsh-persona-switcher
+name: yupaoa/dsh-persona-switcher
+category: identity
+description:
+  en: Switches the running session's persona and speaking style in place, via the composer's persona button or `/role`; each persona can bind its own on-screen mascot, the persona is appended as its own prompt section after the deployment persona without touching tools or skills, and each switch is announced in the transcript.
+  zh: 用输入框的「人设」按钮或 `/role` 指令就地切换当前会话的人设与说话风格，每个人设可单独绑定屏幕吉祥物立绘；人设作为独立的 prompt section 追加在部署人设之后，不动工具与技能，切换人设后会在会话里声明一次。

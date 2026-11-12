@@ -1,0 +1,7 @@
+url: https://github.com/CTX666666/dsh-prompt-polish
+name: CTX666666/dsh-prompt-polish
+category: ui
+icon: https://raw.githubusercontent.com/CTX666666/dsh-prompt-polish/main/assets/icon-180.png
+description:
+  en: 'Polish button in the composer that rewrites the draft with the model the current conversation already uses: four styles, a fidelity guard that keeps every concrete fact verbatim, one-click revert, and no API key of its own.'
+  zh: '输入框润色按钮：用当前会话正在使用的模型改写草稿，四种风格，代码层保真校验确保数字、版本、路径、URL、引号内容与代码标识符逐字保留，支持一键还原，无需自备 API Key。'

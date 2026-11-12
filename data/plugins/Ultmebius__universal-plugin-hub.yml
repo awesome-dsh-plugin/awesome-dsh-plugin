@@ -2,5 +2,5 @@ url: https://github.com/Ultmebius/universal-plugin-hub
 name: Ultmebius/universal-plugin-hub
 category: market
 description:
-  en: 'A visual plugin marketplace for DSH: browse multiple Git sources, install plugins with one click, and wire skills, subagents, MCP connectors, LSP servers and hooks into the harness automatically.'
-  zh: DSH 的可视化插件市场：多源浏览、一键安装，技能、子代理、MCP 连接器、LSP 服务器与 hooks 自动接入。
+  en: 'Use plugins from ecosystems such as Claude Code and Codex in DSH: add Git plugin sources and marketplaces, upload plugins and skills, add MCP servers, automatically discover and toggle local skills, and manage plugins, skills and MCP in one place, including plugin-provided subagents, Hooks and LSP.'
+  zh: '在 DSH 中使用 Claude Code、Codex 等软件生态的插件，一站式管理插件、Skills 与 MCP。支持添加 Git 插件源和 marketplace、上传插件和 Skills、添加 MCP 服务器，自动扫描并开关本地 Skills，接入插件提供的子代理、MCP、Hooks 与 LSP。'

@@ -1,0 +1,6 @@
+url: https://github.com/anime-fan-5903/dsh-sync
+name: anime-fan-5903/dsh-sync
+category: dev
+description:
+  en: 'Synchronizes native DSH instructions, user Skills, and reviewed portable settings across devices through Microsoft OneDrive, with optional cloud encryption and explicit conflict resolution; conversations and credentials are excluded.'
+  zh: '通过 Microsoft OneDrive 跨设备同步 DSH 原生指令、用户 Skills 和经过审核的可迁移设置，支持可选云端加密与明确的冲突处理；不同步会话和凭据。'

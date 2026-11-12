@@ -1,0 +1,6 @@
+url: https://github.com/SpaceRelay/dsh-subagent-control/tree/main/human-wait
+name: SpaceRelay/dsh-subagent-control#human-wait
+category: dev
+description:
+  en: Keeps the PTC run_code deadline from firing while DSH waits for your answer, plan review or approval, so a question can stay open longer than the shipped 120 s budget.
+  zh: 把 PTC 模式 run_code 的执行预算在人机等待期间暂停，提问、计划审议或审批可以超过出厂的 120 秒而不被中断。

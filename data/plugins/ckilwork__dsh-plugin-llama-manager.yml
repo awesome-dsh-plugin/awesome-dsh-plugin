@@ -1,0 +1,7 @@
+url: https://github.com/ckilwork/dsh-plugin-llama-manager
+name: ckilwork/dsh-plugin-llama-manager
+category: model
+description:
+  en: Manages local llama.cpp servers and GGUF launch profiles on Windows and exposes the profiles in the DSH model picker.
+  zh: 在 Windows 上管理本地 llama.cpp 服务和 GGUF 启动配置，并将已配置的模型登记到 DSH 模型选择器。
+tarball: https://github.com/ckilwork/dsh-plugin-llama-manager/releases/download/v1.4.6/dsh-plugin-llama-manager-1.4.6.tgz

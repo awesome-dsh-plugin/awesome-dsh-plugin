@@ -1,0 +1,6 @@
+url: https://github.com/Nero0427/dsh-purge-lite
+name: Nero0427/dsh-purge-lite
+category: identity
+description:
+  en: 'Trimmed derivative of HunYiSage/dsh-purge (formerly YuJunZhiXue/dsh-purge) — do not install both, since both use the `dsh-purge` package name and row id: system-prompt injection and host patching for DeepSeek Harness, with reversible patches, a /purge command, CLI and HTTP status endpoints.'
+  zh: 'HunYiSage/dsh-purge（原 YuJunZhiXue/dsh-purge）的精简衍生版——不要与上游同装：两者使用同一个 `dsh-purge` 包名与行 id。功能为 DeepSeek Harness 提示词注入与宿主补丁，提供可逆补丁、/purge 命令、命令行与 HTTP 状态接口。'

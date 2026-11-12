@@ -1,0 +1,6 @@
+url: https://github.com/SouthernSibyl/dsh-quick-prompt
+name: SouthernSibyl/dsh-quick-prompt
+category: ui
+description:
+  en: Adds a composer button that rewrites the current draft into a precise prompt in place, in one click, with a revert action.
+  zh: 在输入框加一个按钮，点一下就把草稿原地改写成精确提示词，可一键恢复原文。

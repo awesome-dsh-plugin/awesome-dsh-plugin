@@ -1,0 +1,7 @@
+url: https://github.com/tasuma-qwq/baifanyu-ofm-bridge
+name: tasuma-qwq/baifanyu-ofm-bridge
+category: model
+
+description:
+  en: 'Connects DSH Web and qq-bridge to OFM, defaulting to the DeepSeek public pool while preserving reasoning effort and manual model selection; loads the official OFM dependency when absent and reports account-rotation receipts.'
+  zh: '为 DSH Web / qq-bridge 接入 OFM，默认先选 DeepSeek 免费池并保留思考档位；缺少 OFM 时装载官方依赖，支持自有账号与轮换回执，不限制手动选模。'

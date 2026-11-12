@@ -1,0 +1,6 @@
+url: https://github.com/chaowei08/dsh-big-fish-speak
+name: chaowei08/dsh-big-fish-speak
+category: voice
+description:
+  en: Makes the dsh-pet desktop pet read model replies aloud in its own configured voice. Newer dsh-pet gets the whole text in one request (up to its 500-char cap); older versions automatically fall back to 60-char chunks. Each piece is verified against the pet log to confirm it actually played.
+  zh: 让 dsh-pet 桌宠用设置页里选定的音色朗读模型输出。新版桌宠整段一次下发（受其单次 500 字上限约束），旧版自动按 60 字切段兜底；每一段都回读桌宠日志，确认真的念了出来。

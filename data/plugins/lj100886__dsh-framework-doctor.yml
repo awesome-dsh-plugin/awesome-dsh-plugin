@@ -1,0 +1,6 @@
+url: https://github.com/lj100886/dsh-framework-doctor
+name: lj100886/dsh-framework-doctor
+category: model
+description:
+  en: Configure model providers by probing their endpoint, check DeepSeek Harness health, and repair what can be fixed.
+  zh: 给一个调用网址就自动配好模型，体检框架健康度，并修复可自动修复的问题。

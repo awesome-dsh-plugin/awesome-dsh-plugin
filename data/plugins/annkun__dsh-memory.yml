@@ -1,0 +1,12 @@
+url: https://github.com/annkun/dsh-memory
+
+name: annkun/dsh-memory
+
+category: memory
+
+description:
+
+  en: 'Hierarchical Claude Code-style memory: user + project scopes (project memories committed to git for the team), MEMORY.md index auto-injected at session start, context-window guards, pure files.'
+
+  zh: 分层 Claude Code 式记忆：用户级+项目级双作用域（项目记忆随 git 团队共享），MEMORY.md 索引会话启动自动注入，上下文护栏，纯文件零依赖。
+

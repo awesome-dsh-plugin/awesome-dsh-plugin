@@ -1,0 +1,6 @@
+url: https://github.com/moondrop12138/dsh-opencode-go-usage
+name: moondrop12138/dsh-opencode-go-usage
+category: usage
+description:
+  en: 'Full-page OpenCode Go usage view in the DSH Web UI opened from the sidebar: official 5-hour, weekly and monthly used-percent rings, reset countdowns, a local pacing forecast and a 7-day sampling trail, with multiple API-key accounts you can switch between. Add your key as OPENCODE_GO_API_KEY in DSH credentials first.'
+  zh: '在 DSH 网页界面侧栏打开的整页 OpenCode Go 用量视图：官方 5 小时、每周、每月已用百分比三环、重置倒计时、本地节奏预测与 7 天采样轨迹，并可在多个 API Key 账号之间切换；需先在 DSH 凭据里配置 OPENCODE_GO_API_KEY。'

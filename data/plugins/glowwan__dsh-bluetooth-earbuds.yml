@@ -1,0 +1,7 @@
+url: https://github.com/glowwan/dsh-bluetooth-earbuds
+name: glowwan/dsh-bluetooth-earbuds
+category: voice
+description:
+  en: 'Windows-wide Bluetooth earbud shortcuts for AI work: a left-earbud volume-down gesture starts or stops Windows voice typing (Win+H), and a right-earbud volume-up gesture sends Backspace. The DSH settings page offers manual key mapping, test actions, Backspace count, volume-gesture detection, and a 1.6-second cooldown so one triple-tap performs one action. The helper is compiled locally from included C# source. The plugin itself does not record or upload audio; Windows voice typing processes speech under its own privacy settings.'
+  zh: 'Windows 桌面级蓝牙耳机快捷键：左侧耳机音量减手势启动/停止 Windows 语音输入（Win+H），右侧耳机音量加手势发送 Backspace 回删；设置页支持手动映射、测试、回删次数、音量手势检测与 1.6 秒冷却，确保一次三击只执行一次。助手由随包 C# 源码在本机编译；插件本身不录音、不上传音频，语音由 Windows 语音输入按其隐私设置处理。'
+tarball: https://github.com/glowwan/dsh-bluetooth-earbuds/releases/latest/download/dsh-bluetooth-earbuds.tgz

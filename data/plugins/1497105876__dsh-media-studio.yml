@@ -1,0 +1,6 @@
+url: https://github.com/1497105876/dsh-media-studio
+name: 1497105876/dsh-media-studio
+category: tools
+description:
+  zh: "在对话里直接生成图片和视频并发送到会话：generate_image / generate_video / send_media 三个工具，内置 Agnes 免费额度与任意 OpenAI 兼容后端，长耗时生成走后台任务完成后自动推送，内联画廊与视频卡片支持下载、灯箱查看和系统默认应用打开。"
+  en: "Generate images and videos directly in chat and deliver them to the conversation: generate_image / generate_video / send_media tools, a built-in Agnes free tier plus any OpenAI-compatible backend, background jobs that auto-push finished media, and inline gallery and video cards with download, lightbox, and native open."

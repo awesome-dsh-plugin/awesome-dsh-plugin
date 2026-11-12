@@ -1,0 +1,7 @@
+url: https://github.com/wangsrGit119/dsh-nanny-calendar
+name: wangsrGit119/dsh-nanny-calendar
+category: ui
+description:
+  en: 'Sidebar calendar board for tracking a nanny or caregiver: onboarding and offboarding dates, leave days and salary payouts, with per-month and all-time totals and automatic payday markers on a 30-day cycle.'
+  zh: '育儿嫂日历看板：记录上户、下户、休假与工资发放，按月汇总，并统计从首次上户到今天的累计在岗与休假天数，同时按 30 天周期在日历上自动标出发薪日。'
+icon: https://raw.githubusercontent.com/wangsrGit119/dsh-nanny-calendar/main/assets/icon-180.png

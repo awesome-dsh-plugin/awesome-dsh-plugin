@@ -1,0 +1,6 @@
+url: https://github.com/XiaoMa-PM/dsh-cross-session-agent-pre
+name: XiaoMa-PM/dsh-cross-session-agent-pre
+category: session
+description:
+  en: 'Cross-workspace DSH messaging and sender navigation, with bounded same-workspace context and opt-in local Claude Code messaging.'
+  zh: '支持 DSH 跨工作区消息与发送方导航、同工作区受限上下文，以及可选的本机 Claude Code 双向通信。'

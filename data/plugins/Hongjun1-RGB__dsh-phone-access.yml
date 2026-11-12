@@ -1,0 +1,7 @@
+url: https://github.com/Hongjun1-RGB/dsh-phone-access
+name: Hongjun1-RGB/dsh-phone-access
+category: remote
+description:
+  en: Adds a toggle to the DSH UI that opens the current session to a phone browser through an embedded loopback reverse proxy and a Cloudflare quick tunnel, and pushes each new tunnel address to WeChat.
+  zh: 在 DSH 界面里加一个开关，经由内嵌的 loopback 反向代理与 Cloudflare 快速隧道把当前会话开放给手机浏览器，并把每次的新隧道地址推送到微信。
+tarball: https://github.com/Hongjun1-RGB/dsh-phone-access/releases/latest/download/dsh-phone-access.tgz

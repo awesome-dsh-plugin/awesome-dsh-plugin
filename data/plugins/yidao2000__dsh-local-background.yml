@@ -1,0 +1,6 @@
+url: https://github.com/yidao2000/dsh-local-background
+name: yidao2000/dsh-local-background
+category: theme
+description:
+  en: 'Local-folder wallpaper for the DSH Web UI: it defaults to your Pictures library (C:\Users\<you>\Pictures) and the host serves those images over same-origin HTTP, rotating one every N minutes (0-1440, default 5) in a shuffled pass with no repeats; the settings page under Plugins picks a different folder through the native system dialog, and tunes image opacity (100%), darkening scrim (25%) and panel opacity (15%) with changes applied live. Dialogs, modals and menus keep the default opaque background so text stays readable. Reads .jpg .jpeg .png .webp .gif .avif .bmp straight from disk, and keeps per-user settings under $DSH_HOME so upgrades never ship your folder path.'
+  zh: '用本地文件夹当 DSH Web 壁纸：默认就用当前用户的「图片」库（C:\Users\<用户名>\Pictures），宿主通过同源 HTTP 提供其中的图片，每 N 分钟轮换一张（0-1440，默认 5），洗牌后一轮内不重复；「插件」页的设置界面可用系统原生文件夹对话框换目录，并可调节背景图不透明度（100%）、压暗遮罩（25%）与面板不透明度（15%），改动即时生效。弹窗、对话框与菜单保持默认不透明底色，字更清楚。直接读取 .jpg .jpeg .png .webp .gif .avif .bmp，用户配置写入 $DSH_HOME，升级不会带上你的目录路径。'

@@ -1,0 +1,6 @@
+url: https://github.com/WFMinerva/dsh-turn-cost
+name: WFMinerva/dsh-turn-cost
+category: usage
+description:
+  en: Per-turn and per-session estimated cost in the DSH Web UI, computed from provider-reported token usage in four buckets with the built-in official DeepSeek CNY peak/off-peak card — peak hours are Monday-Friday 9:00-12:00 and 14:00-18:00 Beijing time, weekends and Chinese statutory holidays are off-peak all day. An optional local JSON rate table overlays prices for other or self-hosted models, and models without a price show tokens only.
+  zh: 在 DSH Web 界面显示每轮与整个会话的预估费用：按 provider 上报的 token 用量（四桶）与内置官方 DeepSeek 人民币峰谷价目计价，高峰为北京时间周一至周五 9:00–12:00、14:00–18:00，周末与中国法定节假日全天按空闲价；可用本机费率表叠加其它或自部署模型的单价，没有单价的模型只显示 token。

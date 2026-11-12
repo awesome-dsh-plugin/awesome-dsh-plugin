@@ -1,0 +1,6 @@
+url: https://github.com/wang678678/dsh-local-plugins/tree/main/packages/dsh-kb-picker
+name: wang678678/dsh-local-plugins#dsh-kb-picker
+category: ui
+description:
+  en: Adds a knowledge-base picker and a native-attachment paperclip to the DSH composer.
+  zh: 在 DSH 输入框中加入知识库选择器与原生附件回形针。

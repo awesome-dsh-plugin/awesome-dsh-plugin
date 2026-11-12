@@ -2,5 +2,5 @@ url: https://github.com/Jockjrop/dsh-usage-stats
 name: Jockjrop/dsh-usage-stats
 category: usage
 description:
-  en: Desktop-only token statistics, provider quotas, custom quota queries, optional WorkBuddy credits and an advanced model selector.
-  zh: DSH 桌面端用量统计、供应商配额、自定义查询、可选 WorkBuddy 积分与高级模型选择器。
+  en: In DSH Desktop, see the tokens, cost and speed of every request, compare spending by model and provider, merge different names for the same model, check balances and compare real model performance.
+  zh: 在 DSH 桌面端看清每一次请求的 Token、费用与速度，按模型和供应商汇总花费，统一同一模型的不同名称，核对余额并比较模型实际表现。

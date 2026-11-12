@@ -1,0 +1,6 @@
+url: https://github.com/DragonHorizon-xtihc/dsh-connect-workbuddy-models
+name: DragonHorizon-xtihc/dsh-connect-workbuddy-models
+category: model
+description:
+  en: Aggregates every WorkBuddy account already signed in on this machine into one model pool, with manual and scheduled check-in, credits and expiry monitoring, per-model credit multipliers, and account switching with remaining credits right below the composer.
+  zh: 把本机所有登录过的 WorkBuddy 账号聚合成一个模型池，带手动与自动签到、积分与到期监控、模型倍率，并可在输入框下方切换账号、查看剩余总积分。

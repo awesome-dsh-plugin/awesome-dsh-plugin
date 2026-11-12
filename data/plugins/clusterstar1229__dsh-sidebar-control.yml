@@ -1,0 +1,6 @@
+url: https://github.com/clusterstar1229/dsh-sidebar-control
+name: clusterstar1229/dsh-sidebar-control
+category: browser
+description:
+  en: 'Controls the Browser panel DSH renders in the right Sidebar: numbered refs from a snapshot, click/type/press/select/scroll, query-scoped reads and change diffs, up to 12 steps in one call, and multi-tab focus/close.'
+  zh: '控制 DSH 右栏内置 Browser 的 Agent 插件：快照返回编号控件，支持点击/输入/按键/选择/滚动，按问题检索阅读与变化对比，一次调用最多 12 步，并可切换和关闭多个标签。'

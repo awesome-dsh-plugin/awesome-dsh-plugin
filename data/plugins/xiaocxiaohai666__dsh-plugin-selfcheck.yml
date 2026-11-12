@@ -1,0 +1,6 @@
+url: https://github.com/xiaocxiaohai666/dsh-plugin-selfcheck
+name: xiaocxiaohai666/dsh-plugin-selfcheck
+category: dev
+description:
+  en: 'Prints every plugin in the DeepSeek Harness loader tree at boot, with the exception text for anything that failed, and checks dependency version drift, profile config validity, web port reachability and registered tools.'
+  zh: '启动时打印 DeepSeek Harness 插件树中每一行的状态（失败的附异常内容），并检查依赖版本漂移、配置文件合法性、端口可达性与已注册工具。'

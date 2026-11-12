@@ -1,0 +1,14 @@
+url: https://github.com/Lequait/dsh-context-rescue
+name: Lequait/dsh-context-rescue
+category: session
+description:
+  en: >-
+    Recovers a session the host already refused for exceeding the context window: it re-checks the
+    gateway message the built-in classifier misses, takes the real window out of that message, and
+    folds the oldest span into one checkpoint without a model call (tool-result pruning, the host
+    compaction engine when it can shrink the projection, or a mechanical digest fold), then retries
+    the failed step; a context_rescue tool and /rescue, /rescue-status expose the same path by hand.
+  zh: >-
+    抢救已经被上下文窗口拒掉的会话：补上宿主分类器漏判的网关文案，从失败信息里拿到真实窗口，
+    不调用模型就把最旧的一段历史折成一个检查点（工具结果裁剪、借宿主压缩引擎、或纯机械摘要折叠），
+    然后重试失败的那一步；context_rescue 工具与 /rescue、/rescue-status 可手动走同一条路径。

@@ -1,0 +1,6 @@
+url: https://github.com/hotheat/dsh-claude-codex-mode
+name: hotheat/dsh-claude-codex-mode
+category: tools
+description:
+  en: 'Keeps discussion read-only and hands every repository code edit to the Codex CLI through a bundled MCP server; switches between the DSH model and the Claude Code CLI in the plugin form, with preflight checks and a write guard that blocks structured edits to repo files.'
+  zh: '讨论阶段只读，改仓库代码一律交给 Codex CLI（插件自带 MCP server）；在插件表单里可在 DSH 主模型与 Claude Code CLI 之间切换，带前置检查，并用写文件 guard 拦截对仓库文件的结构化写入。'

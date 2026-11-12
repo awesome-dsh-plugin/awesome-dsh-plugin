@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-bankrec
+name: PerryLink/dsh-bankrec
+category: workflow
+description:
+  en: 'Bank statement reconciliation: ingest CAMT.053 and MT940, match them against ledger entries and export the workpaper — 6 `bankrec.*` tools.'
+  zh: '银行对账单核对：导入 CAMT.053 与 MT940，与账簿条目匹配并导出工作底稿——6 个 `bankrec.*` 工具。'
