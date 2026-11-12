@@ -1,6 +1,0 @@
-url: https://github.com/clair0314/dsh-repo-watcher
-name: clair0314/dsh-repo-watcher
-category: notify
-description:
-  en: Watches a GitHub or Gitee repository and files new or changed issues and pull requests into DSH.
-  zh: 盯住 GitHub / Gitee 仓库，把新增或有变化的 issue、PR 收进 DSH。
