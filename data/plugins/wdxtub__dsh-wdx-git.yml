@@ -1,0 +1,7 @@
+url: https://github.com/wdxtub/dsh-wdx-git
+name: wdxtub/dsh-wdx-git
+category: git
+icon: https://raw.githubusercontent.com/wdxtub/dsh-wdx-git/main/icon.png
+description:
+  en: 'Git inside your DSH session: a right-sidebar panel for the current workspace and a global page listing every workspace, one sync button that becomes Fetch, Pull, Push, Publish branch or Sync, a commit tab that opens first with every change checked, AI-written commit messages from the staged diff, plus history, branches, stash and in-panel conflict resolution.'
+  zh: '在 DSH 会话里用 Git：右栏面板管当前工作区仓库，左侧栏全局页列出所有工作区；一个同步按钮按状态变成 Fetch / Pull / Push / Publish branch / Sync；打开面板先看到提交页、改动默认全选；提交信息由 AI 读本次会提交的 diff 生成；另含历史、分支、stash 与面板内冲突解决。'
