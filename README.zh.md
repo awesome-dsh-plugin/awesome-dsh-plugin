@@ -961,6 +961,7 @@ dsh plugin --profile web add dshmarket
 - [Inoue-Cyrene/dsh-ctrl-wheel-zoom](https://github.com/Inoue-Cyrene/dsh-ctrl-wheel-zoom) — 按住 Ctrl 滚动鼠标滚轮即可缩放整个 Harness 网页界面，以指针位置为锚点、50%–200% 每档 10%；另支持 Ctrl 加减号与 Ctrl+0 快捷键；右下角缩放胶囊与「设置 → 通用」里的页面缩放行显示当前档位并可一键复位；档位保存在 localStorage。
 - [iqingyoung/search2chart-mcp#dsh](https://github.com/iqingyoung/search2chart-mcp/tree/main/dsh) — 原生 DSH 插件：把结构化数据渲染成对话流内联图表，零运行时依赖。
 - [Isilsolme/dsh-splash-launcher](https://github.com/Isilsolme/dsh-splash-launcher) — Windows 一键启动器：无边框 WPF 启动动画（HARNESS 逐笔描边），后台拉起 dsh web 并在 GUI 就绪后淡入，附 desktop_launch 工具。
+- [iswalterwu/agent-site#dsh-plugin](https://github.com/iswalterwu/agent-site/tree/main/packages/dsh-plugin) — 从本机 DSH 打开 Windows 桌面像素会话监控，查看 pi、Claude Code 和 DSH；桌面组件需单独解压，DSH 为只读。
 - [it-glen/dsh-custom-fonts](https://github.com/it-glen/dsh-custom-fonts) — 在设置页自定义界面中英文与代码字体，支持只放大拉丁字形的英文字形缩放（100-160%）与 -4..+8 px 的内容字号偏移，刷新后保留设置；lsh2002/dsh-custom-fonts 的维护分支。
 - [itchenshi/dsh-keys-setting](https://github.com/itchenshi/dsh-keys-setting) — 在设置窗口的通用页配置 Enter、Shift+Enter、Ctrl/Cmd+Enter 是发送消息还是换行；未改动前完全保持引擎默认行为。
 - [ityyq777/dsh-workbench#host](https://github.com/ityyq777/dsh-workbench/tree/main/packages/host) — 个人工作台共享宿主：本地 SQLite、业务域注册、agent 工具、HTTP/SSE，以及任务/标签/站点/物品插件的可选云端同步。
@@ -3293,7 +3294,7 @@ dsh plugin --profile web add dshmarket
 - [2861292267/DSH-Official-WorkBuddy-Credit-Proxy](https://github.com/2861292267/DSH-Official-WorkBuddy-Credit-Proxy) — 把本机已登录的 WorkBuddy 账号汇成一个自动故障转移的模型池，同一池子对外提供 OpenAI Chat、OpenAI Responses 与 Anthropic Messages 三种协议，并支持模型别名、用量统计与积分自动化。
 - [474885697-alt/dsh-kit#dsh-kit-ai-gateway](https://github.com/474885697-alt/dsh-kit/tree/main/plugins/dsh-kit-ai-gateway) — 本机 AI 密钥池：密钥只存一处，通过仅限本机的接口按用量轮询借出，统计调用次数但不转发请求。
 - [643048695/dsh-auto-retry](https://github.com/643048695/dsh-auto-retry) — 模型请求失败自动重试：拦截每一次请求错误，按 2/5/10/20 秒的阶梯退避后重放同一个 step，中转站抖动与限流不再中断整轮对话。
-- [643048695/dsh-subagent-role-router](https://github.com/643048695/dsh-subagent-role-router) — 基于 dingminhua/dsh-subagent-default-model 的衍生作品（不要与上游同装）：按角色为子代理派发选路由，带候补池、跨供应商故障转移与 fork 活跃窗口切片；标题栏显示正在运行的子代理及其时长与 token；支持运行中与批量换模型，并给模型提供可调用的路由工具。
+- [643048695/dsh-subagent-role-router](https://github.com/643048695/dsh-subagent-role-router) — 基于 dingminhua/dsh-subagent-default-model 的衍生作品（不要与上游同装）：按角色为子代理派发选路由，带候补池、跨供应商故障转移与 fork 活跃窗口切片；标题栏显示正在运行的子代理及其时长与 token；支持运行中与批量换模型，并给模型提供可调用的路由工具。子代理页另有上下文/用量统计条（上下文占用、输出速度、缓存命中、分桶 token），模型菜单只列该页白名单——选了名单外的模型会被替换成允许的模型，而不是照样跑起来。
 - [66rapper/dsh-model-auto-enricher](https://github.com/66rapper/dsh-model-auto-enricher) — DSH 模型补齐助手：解决添加新渠道后还要把几十个模型一个个手动点开调百万上下文、调最大输出、勾多模态发图（\[text, image]）、配思考强度档位（{low, high, max}）的繁琐痛点，支持设置页添加模型保存后自动补齐与可视化一键补齐。
 - [836157055/dsh-teleagent-pool](https://github.com/836157055/dsh-teleagent-pool) — 把两个 LLM 账号池注册为模型提供方：TeleAgent（中国电信天翼 AI 星辰超级智能体，需手工粘贴一次 token）支持每天 09:00（UTC+8）全量自动签到，目前提供签到、余额与模型目录，对话仍被客户端签名密钥挡住；AutoClaw（智谱桌面端，Windows）的 token 由本机 DPAPI 保护的凭据解出，对话经桌面端桥接流式返回。两个号池都能查询积分余额与模型目录；额度耗尽时会自动在本地桌面端实例之间转移，切换 AutoClaw 账号则需在设置中开启（默认关闭）。设置页与左侧边栏均有面板。
 - [a1141171521/dsh-multi-agent-gateway](https://github.com/a1141171521/dsh-multi-agent-gateway) — 把六个 AI 编程平台接进 DSH——OpenCode、Qoder、Qoder CN、TRAE、WorkBuddy 与国际版——每个平台在原生模型选择器里各自成组；在一个设置页里统一管理账号，平台有签到接口就每日签到、可查积分余额，账号被限流时自动改用同平台其它账号。平台声明了积分倍率的模型会标注倍率。OpenCode 匿名免费层无需任何凭证；TRAE 默认隐藏，在设置里启用后才出现。
@@ -5091,6 +5092,7 @@ dsh plugin --profile web add dshmarket
 - [QIANLING-0831/dsh-memory-plus#dsh-memory-bundle](https://github.com/QIANLING-0831/dsh-memory-plus/tree/main/packages/dsh-memory-bundle) — 记忆 profile 组合：中文会话检索、混合召回、workspace 持久事实、用户固定规则与可复用原生技能。通过单条 dsh plugin add 命令安装版本化 Release 独立包。需 Node.js 24 与 PATH 上的 pnpm。
 - [qibo30/dsh-worklog](https://github.com/qibo30/dsh-worklog) — 给 agent 的跨会话开发日志：worklog_add 往当天文件追加一行（可带 tag），worklog_list 按天回读或列出有记录的日期。条目是 $DSH_HOME/worklog 下的纯 JSON，下一次会话能接上上一次停在哪。
 - [QIC-9821/dsh-memory-sync](https://github.com/QIC-9821/dsh-memory-sync) — 每次打开 DeepSeek Harness，自动把本机的 git 记忆目录和另一台机器双向同步一次——开机就有最新记忆，不用常驻后台。
+- [qihao1123/dsh-whale-pal](https://github.com/qihao1123/dsh-whale-pal) — dsh 的跨会话记忆与压缩档案插件，另带人格内核。每轮有实质内容时由一次后台模型调用萃出事实、偏好、未完成的事与答应过的事；条目带编号，久不提会淡化，按类限额，也可以纠正。宿主动压缩时，被压掉的一段落成档案卡写进笔记库，目录注入会话，需要细节时按编号读回原文。另有只追加台账、设置页、/whale 命令组与九个工具。
 - [Qinling-Melon-Farmers/dsh-memoir](https://github.com/Qinling-Melon-Farmers/dsh-memoir) — 仅本地运行、零捆绑运行时依赖（仅使用 DSH 宿主 peer）且不调用外部服务的项目记忆：以 JSON 为单一事实源并自动生成 PROJECT_MEMORY.md、按 token 有界且按会话冻结的 Hot Memory 以保持 prompt-prefix cache 稳定、带查询缓存的跨项目 BM25 召回、可信 session/turn 溯源、可解释的写前重复/冲突治理、可编辑的重要度/置顶/标签/supersede/归档生命周期、可配置的顶层回合自动蒸馏，以及支持搜索、检查、诊断和实时设置的中英双语 Web GUI。
 - [QqiqiQ/dsh-profile-vault](https://github.com/QqiqiQ/dsh-profile-vault) — 带授权的本地个人信息库：以姓名为索引存人，以「姓名 + 条目」取值，未获当次会话授权不会读取任何档案。敏感条目（证件、银行卡、住址、健康）默认掩码，凭证类数据写入时直接拒收；年龄和下次生日一律查询时现算，asOf 能复原过去某天的答案，身高体重住址这类会过期的条目带新鲜度提醒。提供五个 profile_* 工具和设置页，可浏览、编辑、删除与撤销授权。
 - [QuantumKuba/dsh-continuum](https://github.com/QuantumKuba/dsh-continuum) — 持久化项目记忆、事件溯源的任务生命周期、上下文预算控制与多智能体协作交接。
