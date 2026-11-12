@@ -1,0 +1,7 @@
+url: https://github.com/ItLeLeYa/dsh-pdl-center
+name: ItLeLeYa/dsh-pdl-center
+category: tools
+description:
+  en: 'A batch workbench and six-step wizard for the PDL engine: group raw well files by well, merge them into delivery tables, and export GeoEast-ready load packages, with run records and reference libraries.'
+  zh: 'PDL 井数据整理加载中台：以批次工作台与六步向导驱动 PDL 引擎，把原始井资料按井归集、汇总成交付表，并导出 GeoEast 可直接导入的加载包，附带运行记录与参考库。'
+tarball: https://github.com/ItLeLeYa/dsh-pdl-center/releases/download/v1.0.0/dsh-pdl-center-1.0.0.tgz
