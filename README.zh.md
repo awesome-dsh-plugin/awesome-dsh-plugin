@@ -226,7 +226,7 @@ dsh plugin --profile web add dshmarket
 - [7Andrew-Chu/dsh-todolist](https://github.com/7Andrew-Chu/dsh-todolist) — Harness 界面上的毛玻璃待办卡片：可拖动、可缩放、可收起，支持四个状态视图与艾森豪威尔四象限模式。
 - [dsh-my-plugins](https://github.com/7gzgn/dsh-my-plugins) — 「我装的插件」：顶栏一颗药丸告诉你这个 DSH 到底加载了多少插件，点开是可搜索的清单——每个插件的名字、版本、一句人话作用，自带和第三方分开标。只读、零配置。
 - [822376583-hub/dsh-works-gallery](https://github.com/822376583-hub/dsh-works-gallery) — 在右侧栏把工作区里所有图片和视频按时间倒序铺开，带缩略图、类型筛选、搜索和灯箱查看。
-- [879745uhjun/dsh-approval-zh](https://github.com/879745uhjun/dsh-approval-zh) — 把 DSH 审批提示和 ask_user_question 卡片里的英文说明翻成中文显示；审批结果、选项标签、工具名和 JSON 参数保持不变，审批审计记录里仍是英文原文。
+- [879745uhjun/dsh-approval-zh](https://github.com/879745uhjun/dsh-approval-zh) — 把 DSH 审批提示和 ask_user_question 卡片里的英文说明翻成中文显示；审批结果、选项标签、工具名和 JSON 参数保持不变，审批审计记录里仍是英文原文。文本会发送到微软 Edge 翻译接口（edge.microsoft.com）翻译，所以审批提示和问题的内容（包括命令文本）会离开本机。
 - [879745uhjun/dsh-notepad](https://github.com/879745uhjun/dsh-notepad) — 在 DSH Web 界面加一个记事本：可悬浮为四边吸附、可调尺寸的卡片，也可停靠进真实底栏布局行，两种模式随时切换并共享文字和图片；内容自动保存（文字存 localStorage，图片存 IndexedDB），跟随当前主题。
 - [9426Haruka/dsh-markdown-live](https://github.com/9426Haruka/dsh-markdown-live) — 在 DSH 输入框内实时渲染 Markdown，并让已发送的用户消息按 Markdown 显示；提交文本保持字面 Markdown 不变。
 - [978064659/dsh-restart-button](https://github.com/978064659/dsh-restart-button) — 在 Windows 标题栏最小化按钮左侧加一个重启按钮，结束并重新拉起桌面外壳与 Host，让刚装好的插件立即生效。
@@ -2918,7 +2918,7 @@ dsh plugin --profile web add dshmarket
 - [cjjchina3088191870-sudo/dsh-plugin-miku-theme](https://github.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme) — 玫瑰女王与初音未来双主题套装，内置主题管理，支持浅深色外观、手机布局和自定义启动视频。
 - [CloudSen/dsh-umbrella-theme](https://github.com/CloudSen/dsh-umbrella-theme) — 生化危机保护伞公司主题，提供明暗双外观、自转保护伞水印与 HUD 装饰。
 - [cngtn/dsh-cngtn-pond](https://github.com/cngtn/dsh-cngtn-pond) — 纸墨主题，提供暖色纸面、细描边和近方形圆角，并在整个界面后方绘制动态 ASCII 锦鲤池；主题不指定字体，沿用 DSH 自带字体栈（或设置中选择的字体）。
-- [cnhenaihui/dsh-theme-wallpaper](https://github.com/cnhenaihui/dsh-theme-wallpaper) — 配色主题与壁纸插件：62 套源自 OpenCode 的配色主题，每套自带 Markdown 与语法高亮配色，另有一层把低于 4.5:1 的语义色推回可读对比度，并支持本地背景图（铺满或平铺、模糊、遮罩、轮换）。
+- [cnhenaihui/dsh-theme-wallpaper](https://github.com/cnhenaihui/dsh-theme-wallpaper) — 配色主题与壁纸插件：62 套配色主题（37 套内置、源自 OpenCode 调色板，另有 25 套 IP 预设），每套自带 Markdown 与语法高亮配色，另有一层把低于 4.5:1 的语义色推回可读对比度，并支持本地背景图（铺满或平铺、模糊、遮罩、轮换）。取代此前的 cnhenaihui/dsh-ios-theme。
 - [codeMonkey-Pine/dsh-wallpaper](https://github.com/codeMonkey-Pine/dsh-wallpaper) — Wallpaper Engine 壁纸联动：把本机下载的 WE 壁纸（创意工坊 431960 + 本地 projects）设为 DSH Web GUI 页面背景（图片/视频/网页原样渲染，场景壁纸柔化为静态预览），侧边栏「壁纸设计」面板可调不透明度、作用范围、填充、模糊、暗角、帧率、视差、轮播与主题联动，附 wallpaper_scan/list/set/config 四个 agent 工具。
 - [CoolTea001/dsh-cool-theme](https://github.com/CoolTea001/dsh-cool-theme) — 主题插件 —— 支持深色/浅色外观切换，提供 34 款预设主题，支持创建/分享/导入自定义主题。
 - [CoraxEldridge/dsh-win11-material](https://github.com/CoraxEldridge/dsh-win11-material) — 为 DSH 桌面窗口换上 Windows 11 的 Mica、Acrylic、Tabbed 系统材质，页面不透明度可调；随包附带的 app.asar 补丁让窗口透明，壁纸才会透出来。仅限 Windows。透明补丁是要你自己另外运行的一步（关闭 DSH 后执行 node tools/window-bridge.mjs apply）：它会修改已安装的 app.asar，并在旁边留一份备份，restore 可还原。
