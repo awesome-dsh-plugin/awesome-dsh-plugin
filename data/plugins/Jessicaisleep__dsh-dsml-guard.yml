@@ -2,5 +2,5 @@ url: https://github.com/Jessicaisleep/dsh-dsml-guard
 name: Jessicaisleep/dsh-dsml-guard
 category: session
 description:
-  en: 'Strips DSML markers that leak into the assistant text stream and resumes a turn only when it genuinely produced nothing — an invoke-block leak with no tool call emitted, or a closing-tag leak whose prose is near-empty; upstream jitter codes retry, while quota, rate-limit, auth and context-window errors never do. Requires DSH 0.2.1-rc.2 or newer, below 0.3.0, and Node 20 or newer.'
-  zh: '抹掉漏进助手正文的 DSML 标记；只在确实毫无产出的轮次补一条继续——整段调用写进正文且没有发出任何工具调用，或只剩闭合标签且正文近乎为空。上游抖动类错误会续跑，额度、限流、鉴权与上下文超限一律不续。适用 DSH 0.2.1-rc.2 起、0.3.0 以下，Node 20 起。'
+  en: 'Strips DSML markers that leak into assistant prose and resumes a turn only when a "continue" genuinely helps — a no-output marker leak, local or upstream network blips, a single-reply output token cap (max-tokens), and empty or stream errors — with message-level classification for codes upstream miscategorises and a default cap of 3 consecutive failures that any normal reply resets; quota, rate-limit, auth and context-window errors, and user aborts, never resume. Requires DSH 0.2.1-rc.2 or newer, below 0.3.0, and Node 20 or newer.'
+  zh: '抹掉漏进助手正文的 DSML 标记；只在发「继续」确实有用时补一条——毫无产出的标记泄漏、本机或上游网络波动、单次回复输出 token 到顶（max-tokens）、空响应或流中断——并对被上游误分类的错误码按报文细分；默认连续 3 次失败后停下，任何正常回复都会清零。额度、限流、鉴权、上下文总体超限与人为取消一律不续。适用 DSH 0.2.1-rc.2 起、0.3.0 以下，Node 20 起。'
