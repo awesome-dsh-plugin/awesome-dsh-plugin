@@ -1,0 +1,6 @@
+url: https://github.com/whoisyanhaoooo/ZJU-mooc-assistant
+name: whoisyanhaoooo/ZJU-mooc-assistant
+category: tools
+description:
+  en: A DeepSeek Harness plugin for ZJU students on icourse163 that plays course videos, handles quizzes and exams, posts course discussions, and shows live task progress.
+  zh: 浙大中国大学 MOOC 上课助手：按章节看视频、做测验和作业、参加考试、在讨论区提问，并实时显示任务进度。
