@@ -1,0 +1,7 @@
+url: https://github.com/SAS-159/dsh-evidence-audit
+name: SAS-159/dsh-evidence-audit
+category: session
+description:
+  en: 'Audits the latest answer against what the session’s own tool calls actually returned: every checkable sentence (paths, numbers with units, inline code, URLs) is graded supported, partial or no-evidence, with the anchors it could not find listed. Coverage shows on the composer pill; the report copies as Markdown.'
+  zh: '把最后一条回答逐句对回本会话工具调用实际返回的内容：含路径、带单位数字、行内代码或 URL 的句子被判定为有据 / 部分有据 / 无据，并列出找不到的锚点。覆盖率直接显示在输入框胶囊上，报告可复制为 Markdown。'
+icon: https://raw.githubusercontent.com/SAS-159/dsh-evidence-audit/main/assets/icon-180.png
