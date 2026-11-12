@@ -2,5 +2,5 @@ url: https://github.com/1997liuyh-boop/dsh-desktop-tools
 name: 1997liuyh-boop/dsh-desktop-tools
 category: tools
 description:
-  en: "Desktop toolkit combining a selection toolbar, floating assistant, screenshots and screen recording, with separate settings for each feature."
-  zh: "桌面工具套件，合并划词工具栏、悬浮球、截屏和录屏，并为每项功能提供独立设置。"
+  en: 'DSH Desktop toolkit with separate settings for each feature: a selection toolbar, a floating assistant, and screenshot, long screenshot and screen recording modes opened by global shortcuts from a toolbar at the top of the screen. Screenshots support shapes, pen, arrows, text and numbered markers, mosaic, pin to desktop, saving, and forwarding to a DSH conversation or the system share panel (Windows and macOS); recordings capture an area, a window or a full screen as MP4, GIF or WebM with optional system sound and microphone. Extract text, Translate and Knowledge graph on captures use the OCR tools of dsh-vision-router, which is installed separately (the settings page offers a one-click install). Requires DSH Desktop >=0.2.2-rc.1 <0.3.0-0 and uses its bundled Electron; system sound recording is not available on Linux.'
+  zh: '为 DSH 桌面端提供划词工具栏、悬浮球，以及通过全局快捷键唤起、在屏幕顶部工具栏切换的截图、长截图和录屏，每项功能独立设置。截图支持形状、画笔、箭头、文本与序号、马赛克、钉在桌面、保存，以及转发到 DSH 对话或系统分享面板（Windows 和 macOS）；录屏可录制区域、窗口或全屏，输出 MP4、GIF 或 WebM，可选录制系统声音和麦克风。截图的提取文字、翻译和知识图谱使用 dsh-vision-router 的 OCR 工具，该插件需另行安装（设置页提供一键安装）。需要 DSH Desktop >=0.2.2-rc.1 <0.3.0-0，使用其自带的 Electron；Linux 不支持录制系统声音。'
