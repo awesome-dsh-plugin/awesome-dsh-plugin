@@ -1,0 +1,6 @@
+url: https://github.com/Ssupervipuser/dsh-archived-cleanup
+name: Ssupervipuser/dsh-archived-cleanup
+category: session
+description:
+  en: Lists archived conversations and permanently deletes the ones selected, removing their session logs, cached projections, and workspace entries.
+  zh: 列出已归档的对话，并彻底删除选中的对话，同时移除其会话日志、投影缓存与工作区记录。
