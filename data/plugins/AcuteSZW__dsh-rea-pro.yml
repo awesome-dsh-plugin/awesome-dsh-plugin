@@ -1,0 +1,6 @@
+url: https://github.com/AcuteSZW/dsh-rea-pro
+name: AcuteSZW/dsh-rea-pro
+category: tools
+description:
+  en: Mounts REA's reverse-engineering MCP toolset in DeepSeek Harness behind a composer chip; it is on by default once installed, and switching it off withdraws the tools and stops the MCP child process so idle sessions pay no context for them.
+  zh: 把 REA 的逆向工程 MCP 工具集接进 DeepSeek Harness，输入框工具条上一个开关，装好即默认开启；关掉后工具全部撤走、MCP 子进程退出，不需要它的会话就不花这份上下文。
