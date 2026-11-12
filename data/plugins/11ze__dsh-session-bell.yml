@@ -1,0 +1,7 @@
+url: https://github.com/11ze/dsh-session-bell
+name: 11ze/dsh-session-bell
+category: notify
+description:
+  en: "Raises one desktop notification when a turn stops, a question waits, or an approval waits. Each event has its own switch; subagent Sessions stay quiet; a click opens the Session. Uses the page's own Notification API, so there is no helper app or install-time registration."
+  zh: '回合结束、有提问等待回答或有审批等待决定时各发一条桌面通知。每类事件可单独开关；子代理会话不发通知；点击通知打开对应会话。走页面自带的 Notification API，不需要辅助程序或安装时注册。'
+icon: https://raw.githubusercontent.com/11ze/dsh-session-bell/main/assets/icon-180.png
