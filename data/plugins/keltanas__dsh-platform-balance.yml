@@ -1,0 +1,5 @@
+url: https://github.com/keltanas/dsh-platform-balance
+name: keltanas/dsh-platform-balance
+category: usage
+description:
+  en: 'DeepSeek Platform wallet balances in USD and CNY, CBR RUB conversion with an 18:00 MSK rate cache, and current-session and current-day spend estimates in a floating card and session header pill.'
