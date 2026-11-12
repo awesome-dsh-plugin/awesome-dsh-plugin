@@ -3237,6 +3237,7 @@ dsh plugin --profile web add dshmarket
 - [xinxing1708/DSH-Codex-Style](https://github.com/xinxing1708/DSH-Codex-Style) — 为 Windows 上的 DSH 提供 Codex 风格深色界面，包含导航、项目与会话侧栏、模型和思考强度控件。
 - [xiongyecpu/dsh-pixel-themes](https://github.com/xiongyecpu/dsh-pixel-themes) — 为 DeepSeek Harness Web 客户端提供 21 套水果主题（原创配色与像素水果），含设置页画廊与会话内换肤入口。
 - [xiyunyunyun/dsh-client-ui-seaglass](https://github.com/xiyunyunyun/dsh-client-ui-seaglass) — Seaglass是一个高自由度的玻璃质感主题。
+- [xmlans/dsh-telegram-style](https://github.com/xmlans/dsh-telegram-style) — 为 DSH 换上 Telegram 的主题——纯色底加染色涂鸦图案的墙纸、浮动的会话列表卡片、带头像和时间的会话行、消息气泡、悬浮输入条，以及经典、玻璃、粉色三套配色
 - [yaanlaan/deepseek-colorful](https://github.com/yaanlaan/deepseek-colorful) — 专为 DeepSeek Harness 打造的 UI 个性化配色、毛玻璃拟态与全景壁纸/动态视频外观定制插件。
 - [YE-ZINAN/dsh-skin-im2005](https://github.com/YE-ZINAN/dsh-skin-im2005) — DeepSeek Harness 客户端的 2005 年代即时通讯皮肤：直角 1px 窗框、蓝色渐变标题条、中文界面统一宋体、好友分组式侧栏（含头像档案卡与可编辑签名）、每条消息带名字与时间抬头，皮肤档位三档可实时切换。美术全部为原创 SVG；重绘后的工具条另带跨会话备注框、后台任务面板，以及美式八球、扫雷、Token 农场和德州扑克——插件内置的专注模式会把它们静音。
 - [yefengliu1/dsh-theme-songgrid](https://github.com/yefengliu1/dsh-theme-songgrid) — 宋律 Songgrid —— 宋代美学主题，宣纸（浅）与夜墨（深）双变体；汝窑天青承担交互态、窑铜只用于引用块；另附 4pt 间距阶与 46 个 mask 图标。
@@ -5334,6 +5335,7 @@ dsh plugin --profile web add dshmarket
 - [acebang0303/dsh-quick-launch](https://github.com/acebang0303/dsh-quick-launch) — 一键创建、更新或删除 DeepSeek Harness 桌面快捷方式，图标可自定义上传切换，蓝白金鲸鱼悬浮按钮可拖动，点击旋转 90° 弹出面板。
 - [activeing123/dsh-mcptoon](https://github.com/activeing123/dsh-mcptoon) — 把 mcptoon 作为一条 stdio MCP 服务接入，让 agent 通过 mcptoon 的压缩视图发现已配置 MCP server 的工具，而非每轮支付完整 JSON schema。附带 doctor CLI：校验 mcptoon 可执行文件能否解析，不能时打印精确的 command/args 覆盖配置。
 - [acttk/dsh-bili-interactor](https://github.com/acttk/dsh-bili-interactor) — 替你在 B 站上真的动手：搜视频、点赞、投币、发弹幕、发评论、回别人的评论，别人回了还能接着聊。会读视频的 B 站 AI 字幕（没有字幕时可本地转写），所以评论说的是视频里真正讲了什么；挑该回谁之前也会先看一遍视频内容。它不抄别人的句子，而是总结「怎么说话才像真人」的规律，跑得越多 AI 味越淡。会跳过刷过的视频、同一楼不重复回复；跟同一个人在同一个评论区来回聊太多轮时会先审查这段对话有没有营养 —— 如果像两个机器人在互相捧场，就说最后一句、之后不再回复他。还能查每条评论是真公开了还是只有你自己看得见，可以按任意时间范围（最近 1 小时 / 24 小时 / 3 天 / 全部）批量扫描并列出别人看不到的那些，总览上直接告警有多少条被折叠。六页签设置面板，改任何一项立刻生效、不用重启；手动「跑一轮」撞上后台监听会排队而不是被拒；自带环境自检，缺什么直接告诉你。B 站操作需要 Python 3，内置自检会列出缺少的依赖。
+- [AcuteSZW/dsh-rea-pro](https://github.com/AcuteSZW/dsh-rea-pro) — 把 REA 的逆向工程 MCP 工具集接进 DeepSeek Harness，输入框工具条上一个开关，装好即默认开启；关掉后工具全部撤走、MCP 子进程退出，不需要它的会话就不花这份上下文。
 - [AdenXie/dsh-vercel](https://github.com/AdenXie/dsh-vercel) — 通过 OAuth 把 DeepSeek Harness 连接到 Vercel 官方 MCP 服务，支持按 Agent 按需加载工具、精简工具 schema、长结果分页，并附带 34 个 Vercel 技能。
 - [adithyanraj03/dsh-graft-plugin](https://github.com/adithyanraj03/dsh-graft-plugin) — 显示当前 dsh 会话所用的 graft 索引、以及它是否仍与代码一致，并把 graft_ask、graft_grep、graft_callers、graft_skeleton、graft_map 作为原生工具交给模型。
 - [adithyanraj03/dsh-mcp-summon](https://github.com/adithyanraj03/dsh-mcp-summon) — 休眠式 MCP：只注册一个 mcp_summon 工具，召唤后该服务器的工具在本次会话内以原生 mcp__<server>__<tool> 名称注册，释放即注销并停止进程。
