@@ -1,0 +1,7 @@
+url: https://github.com/AntheaLaffy/dsh-plugin-tomato-todo/tree/main/plugin
+name: AntheaLaffy/dsh-plugin-tomato-todo#plugin
+category: workflow
+description:
+  en: Pomodoro timer, tasks and study planning in DSH, with a chat assistant that can read and update the same local records as the UI. Needs the separate tomato-runtime service (Linux release bundle from the project) running on 127.0.0.1:43987.
+  zh: 在 DSH 中管理番茄钟、任务与学习计划；对话中的学习助手可读写与界面相同的本地记录。需另行安装并运行项目发行包里的 tomato-runtime 本地服务（Linux 发行包，监听 127.0.0.1:43987）。
+icon: https://raw.githubusercontent.com/AntheaLaffy/dsh-plugin-tomato-todo/main/plugin/assets/icon-180.png

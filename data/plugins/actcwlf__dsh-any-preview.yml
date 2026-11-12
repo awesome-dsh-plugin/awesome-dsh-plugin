@@ -1,0 +1,7 @@
+url: https://github.com/actcwlf/dsh-any-preview
+name: actcwlf/dsh-any-preview
+category: ui
+description:
+  en: 'Previews what DSH does not cover, including video and audio, 3D models, archives, SQLite and model weights, and searches large CSV, log and JSONL files.'
+  zh: '预览 DSH 未覆盖的格式，包括音视频、3D 模型、压缩包、SQLite 与模型权重，并可在超大 CSV、日志与 JSONL 中搜索。'
+icon: https://raw.githubusercontent.com/actcwlf/dsh-any-preview/dev/assets/logo.png

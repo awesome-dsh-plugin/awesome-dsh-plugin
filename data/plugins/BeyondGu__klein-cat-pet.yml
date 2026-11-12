@@ -1,0 +1,7 @@
+url: https://github.com/BeyondGu/klein-cat-pet
+name: BeyondGu/klein-cat-pet
+category: fun
+description:
+  en: A three-state animated black cat that lives over the DSH web interface and cycles crystal divination, dozing, and iced tea when clicked, with a synthesized sound for each state.
+  zh: 一只住在 DSH 网页界面上的三状态动态黑猫：点击在黄水晶占卜、打瞌睡、喝甜冰茶之间循环，并播放对应音效。
+tarball: https://github.com/BeyondGu/klein-cat-pet/releases/download/v0.1.2/dsh-klein-cat-pet-0.1.2.tgz

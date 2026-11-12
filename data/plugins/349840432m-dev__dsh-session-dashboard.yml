@@ -1,0 +1,8 @@
+url: https://github.com/349840432m-dev/dsh-session-dashboard
+name: 349840432m-dev/dsh-session-dashboard
+category: session
+description:
+  en: 'Read-only session dashboard for DeepSeek Harness over the local ~/.dsh data: a sidebar overview of every session (tokens, estimated cost, turns, tool calls, model mix, daily activity, searchable and sortable session table) and an in-conversation Dashboard view that shows the current conversation turn by turn with per-turn tokens, cost, timing and tools. Zero dependencies, no network.'
+  zh: '会话仪表盘，只读本机 ~/.dsh：侧栏总览全部会话（Token、估算成本、轮次、工具调用、模型构成、每日活动、可搜索可排序的会话表），并在会话内提供「仪表盘」视图，逐轮展示当前对话的 Token、成本、耗时与工具。零依赖、不联网。'
+icon: https://raw.githubusercontent.com/349840432m-dev/dsh-session-dashboard/main/assets/icon-180.png
+tarball: https://github.com/349840432m-dev/dsh-session-dashboard/releases/latest/download/dsh-session-dashboard.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/KratosLee-6/dsh-plugin-spark
+name: KratosLee-6/dsh-plugin-spark
+category: skill
+description:
+  en: 'Compose two skill contracts into a traceable, unverified draft with declared gaps and preserved constraints; the composition engine runs locally with no model call.'
+  zh: '把两个技能契约本地组合成可追溯的未验证草案，列出缺口并保留双方约束；组合引擎在本机运行，不调用模型。'

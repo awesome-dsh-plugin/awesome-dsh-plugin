@@ -1,0 +1,7 @@
+url: https://github.com/jin-ni/dsh-bili-study
+name: jin-ni/dsh-bili-study
+category: tools
+description:
+  en: 'Bilibili study assistant: finds courses or reads local documents, writes structured notes and spaced-repetition cards, with QR login and scheduled lessons.'
+  zh: 'B 站学习助手：自己找课或读本地文档，写结构化笔记与间隔重复复习卡，支持扫码登录和定时学习。'
+tarball: https://github.com/jin-ni/dsh-bili-study/releases/download/v0.4.1/dsh-bili-learn-0.4.1.tgz

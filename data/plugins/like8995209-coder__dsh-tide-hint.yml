@@ -1,0 +1,6 @@
+url: https://github.com/like8995209-coder/dsh-tide-hint
+name: like8995209-coder/dsh-tide-hint
+category: usage
+description:
+  en: 'Sidebar DeepSeek peak/off-peak pricing hint with a Beijing-time countdown, Chinese public holidays and make-up workdays, daily pricing-rule refresh, official top-up offer status, and your account balance converted to input tokens (read with the DeepSeek platform sign-in already stored in DSH).'
+  zh: '侧边栏 DeepSeek 峰谷计费提示，显示北京时间倒计时、中国法定节假日与调休、每日定价规则刷新、官方充值优惠状态，以及按当前时段折算成输入 tokens 的账户余额（使用 DSH 里已保存的 DeepSeek 平台登录凭据读取）。'

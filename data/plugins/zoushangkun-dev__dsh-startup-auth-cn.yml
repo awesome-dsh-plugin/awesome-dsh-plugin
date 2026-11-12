@@ -1,0 +1,7 @@
+url: https://github.com/zoushangkun-dev/dsh-startup-auth-cn
+name: zoushangkun-dev/dsh-startup-auth-cn
+category: security
+description:
+  en: 'Cold-start boot animation for DeepSeek Harness, with an unlock gate in front of the workspace: PIN, Windows Hello or an authenticator code, all local.'
+  zh: '给 DeepSeek Harness 的冷启动动画，工作区前加一道解锁门：PIN、Windows Hello 或验证器动态码，全部本地运行。'
+icon: https://raw.githubusercontent.com/zoushangkun-dev/dsh-startup-auth-cn/master/assets/icon-180.png

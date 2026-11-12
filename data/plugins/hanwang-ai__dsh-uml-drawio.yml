@@ -1,0 +1,6 @@
+url: https://github.com/hanwang-ai/dsh-uml-drawio
+name: hanwang-ai/dsh-uml-drawio
+category: docs
+description:
+  en: 'UML sequence diagrams as editable .drawio files from a JSON spec: Python places participants, fragments and labels, the draw.io desktop CLI renders a PNG at 1x-4x, and Pillow verifies the output size. Generation is deterministic and refuses to overwrite a file edited by hand. Needs Python with Pillow 12.x and the draw.io desktop app; the default paths are Windows ones (Python under C:\Program Files\Python314, draw.io under D:\drawio) and can be changed in the settings card.'
+  zh: '用 JSON spec 生成可编辑的 UML 时序图 .drawio：Python 负责参与者、片段与标签布局，draw.io 桌面 CLI 按 1x-4x 渲染 PNG，Pillow 校验输出尺寸。生成结果确定可复现，遇到手工改过的文件会拒绝覆盖。需要 Python（含 Pillow 12.x）和 draw.io 桌面版；默认路径是 Windows 路径（Python 在 C:\Program Files\Python314、draw.io 在 D:\drawio），可在设置卡片里修改。'

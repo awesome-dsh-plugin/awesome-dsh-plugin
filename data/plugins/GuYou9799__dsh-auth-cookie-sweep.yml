@@ -1,0 +1,6 @@
+url: https://github.com/GuYou9799/dsh-auth-cookie-sweep
+name: GuYou9799/dsh-auth-cookie-sweep
+category: security
+description:
+  en: "Serves a live /auth-cookie-sweep page showing how full the local Host's cookie jar is, how many random-port launches are left before the 431, and repairs the jar in one click, and expires stale dsh-auth-* cookies once a few have piled up, so a profile already locked out recovers after one restart."
+  zh: "由本地 Host 直接渲染一个 /auth-cookie-sweep 体检页，随时看到 cookie 罐有多满、离 16KB 的 431 还能再启动几次，并一键清理；旧 dsh-auth-* cookie 攒到几条后即失效，已经卡死的 profile 重启一次即可恢复。"

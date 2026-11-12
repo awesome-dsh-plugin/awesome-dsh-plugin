@@ -1,0 +1,6 @@
+url: https://github.com/ma1833577561/dsh-plugin-voice-autosend
+name: ma1833577561/dsh-plugin-voice-autosend
+category: voice
+description:
+  en: 'Offline voice input for the composer: records with the microphone, transcribes locally with SenseVoice, and sends the message automatically. A derivative of the official voice-input plugin that adds auto-submit; first use downloads the SenseVoice model (about 242 MB) to ~/.dsh/speech-to-text/sensevoice, and it registers the same speech provider rows as the built-in Voice Input, so disable that one first.'
+  zh: '输入框离线语音输入：麦克风录音后用 SenseVoice 在本机转写，转写完成即自动发送消息。是官方语音输入插件的衍生版，加入了自动发送；首次使用会把 SenseVoice 模型（约 242 MB）下载到 ~/.dsh/speech-to-text/sensevoice，并注册与内置语音输入相同的语音服务条目，请先停用内置的语音输入。'
