@@ -1,0 +1,7 @@
+url: https://github.com/595708049/dsh-session-purger
+name: 595708049/dsh-session-purger
+icon: https://raw.githubusercontent.com/595708049/dsh-session-purger/main/screenshots/icon.png
+category: session
+description:
+  en: 'Permanently delete DSH session records from the sidebar context menu, removing the session log directory, the projection cache entry and the workspace registration in one action. A confirmation dialog guards every delete.'
+  zh: '在侧栏会话右键菜单里彻底删除会话记录，一次清除会话日志目录、投影缓存与工作区登记；删除前有二次确认对话框。'
