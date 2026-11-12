@@ -4338,6 +4338,7 @@ dsh plugin --profile web add dshmarket
 - [Leeminjing/dsh-messages-sanitizer](https://github.com/Leeminjing/dsh-messages-sanitizer) — 工具调度崩溃后自动修复 messages 数组（孤儿 tool_calls / tool 消息），防止 400 INVALID_REQUEST 会话卡死。
 - [leoan698-tom/dsh-sessivra](https://github.com/leoan698-tom/dsh-sessivra) — Sessivra：拖拽会话自由分屏、调宽，拖入草稿插入原生 @ 引用；支持关联回复、共享裁决、验收后继续排队任务及会话树。npm 包名 dsh-plugin-sessivra。
 - [leogottadothebest/dsh-plugin-archived-conversations](https://github.com/leogottadothebest/dsh-plugin-archived-conversations) — 在设置界面管理已归档对话：一键取消归档，或经确认后永久删除。
+- [leoriczhao/dsh-session-butler](https://github.com/leoriczhao/dsh-session-butler) — DeepSeek Harness 的会话管家：设置里给已归档会话一个列表，会话菜单里给一个真正的删除，并提供列出、查看、新建、分叉会话的模型工具。
 - [Lequait/dsh-context-rescue](https://github.com/Lequait/dsh-context-rescue) — 抢救已经被上下文窗口拒掉的会话：补上宿主分类器漏判的网关文案，从失败信息里拿到真实窗口， 不调用模型就把最旧的一段历史折成一个检查点（工具结果裁剪、借宿主压缩引擎、或纯机械摘要折叠）， 然后重试失败的那一步；context_rescue 工具与 /rescue、/rescue-status 可手动走同一条路径。
 - [LeslieWylie/dsh-session-search-pro](https://github.com/LeslieWylie/dsh-session-search-pro) — 通过 harness 自带的 `sessionQuery` 服务搜索、列出、读取历史与当前会话：部署启用了 SQLite FTS5 索引时走索引，未启用时回退到有上限的倒序扫描。
 - [LeslieWylie/dsh-task-relay](https://github.com/LeslieWylie/dsh-task-relay) — 跨会话任务队列与交接摘要：会话与子 agent 在共享的文件队列上投递、认领、完成、取消任务，并留下交接摘要供后续会话查看。
@@ -6081,6 +6082,7 @@ dsh plugin --profile web add dshmarket
 - [mrpulor-gh/dsh-nuphus-mcp](https://github.com/mrpulor-gh/dsh-nuphus-mcp) — nuphus-mcp 官方 DSH 插件（由 nuphus-mcp 维护者发布）：桌面 + 浏览器自动化（38 个工具），配 PaddleOCR 元素感知与 Chrome CDP 浏览，经常驻 stdio MCP 子进程接入。
 - [MrWeiCodes/dsh-fs-encoding](https://github.com/MrWeiCodes/dsh-fs-encoding) — 文件编码守护：为 GBK、Big5、Shift-JIS、EUC-KR、Windows-125x、UTF-16、UTF-32 文件提供字节级无损读写与编辑，改完仍是原编码而不是被悄悄转成 UTF-8；UTF-8 BOM 原样保留，CRLF/LF/CR 换行符保持，编码表示不了的字符拒绝写入而不是写成「?」；非 UTF-8 文件会列出候选编码，模型可显式指定重读。
 - [MSSZSD3925/dsh-msszsd-toolkit](https://github.com/MSSZSD3925/dsh-msszsd-toolkit) — DSH 会话小工具：向另一个会话提问（带上下文守卫）、从界面暂停当前回合、在 Windows 上重启 DSH 并自动续跑（依赖 install-restart.ps1 创建的计划任务）、贵时段纪律与按功能设定允许时段、定时巡检会话日志发现被中断的回合。插件详情页按模块分组开关。
+- [muhadif/dsh-atlassian-mcp](https://github.com/muhadif/dsh-atlassian-mcp) — 以纯配置包的形式接入 Atlassian 远程 MCP，提供 Confluence 与 Jira：只加一行 MCP 客户端配置，OAuth 交给 mcp-remote、令牌缓存在 ~/.mcp-auth，没有登录命令也没有界面。工具名为 mcp__atlassian__*（CQL 搜索、页面、评论、JQL 问题、状态流转）。
 - [MuyuYanran/dsh-rea-mcp-lite#dsh-plugin](https://github.com/MuyuYanran/dsh-rea-mcp-lite/tree/main/dsh-plugin) — 同一个仓库里的 REA 逆向工具网关（rea-mcp-lite）的设置页：勾选加载哪些功能族、看清每族的工具数与 token 成本、把当前加载组合存成命名预设随时切回、热切换无需重启，并可检查本仓库与 REA 的更新、归类 REA 新版新增的工具。页面按功能分区，带子菜单、筛选与分页。需已装 REA（rea-agents），并按仓库 README 把网关注册为名为 rea 的 MCP 服务器。
 - [MuzeWinter/dscomputer-control](https://github.com/MuzeWinter/dscomputer-control) — 为 dsh 提供 Windows 桌面自动化：14 个工具，可枚举应用与窗口、抓取被遮挡也能截的窗口截图、读取无障碍树，并执行真实输入——点击、输入文字（含中文）、按组合键、滚动与拖拽。加载机器上已安装的官方电脑控制运行时（@oai/sky），按厂商目录枚举发现，引擎升级换目录也不会失效。
 - [mzzsfy/dsh-plugin#dsh-shared-terminal](https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-shared-terminal) — 共享交互式终端：AI terminal 单工具与官方侧栏 xterm 共用 Session shell，用户可输入并查看当前屏幕。
@@ -10034,6 +10036,7 @@ dsh plugin --profile web add dshmarket
 - [xlennart/dsh-auto-review-jev](https://github.com/xlennart/dsh-auto-review-jev) — 面向 DSH ^0.2.2-rc.1 的 Jev Review 审批模式：通过 System One（Jev／D3）逐次审查原生及 PTC 内层工具调用，提供审计日志和设置页；需配套 Jev 宿主扩展。fork 自 gbthui/dsh-auto-review；请勿与上游同装，两者都会接管工具调用的审批判定。
 - [xtd1145/dsh-full-access-switch](https://github.com/xtd1145/dsh-full-access-switch) — 给 DeepSeek Harness 加 Full access 一次性开关：新工作区与新对话默认 danger-full-access 并跳过逐个确认；可作为 dsh bundle 安装，也可用脚本打补丁。
 - [xuanyuanchumo/dsh-recency-guard](https://github.com/xuanyuanchumo/dsh-recency-guard) — DeepSeek Harness 的插件崩溃恢复守护：记录插件的安装更新时序与声明的兼容元数据，崩溃后在下一次启动前拦下问题嫌疑插件，稳定后自动恢复。带可交互能力图谱、只观测不行动的预警指标、按项目分区隔离、归档重置与离线救援 CLI。
+- [YangHua-ovo/dsh-secure-memory](https://github.com/YangHua-ovo/dsh-secure-memory) — 跨工作区安全记忆：本地优先、加密的 DSH 跨工作区记忆插件，具备逐会话授权与提示词注入隔离功能。
 - [Yazzyk/dsh-file-shield](https://github.com/Yazzyk/dsh-file-shield) — 屏蔽 agent 对指定文件或目录的读取、搜索、写入与编辑，使其内容不进入对话——含敏感词的文件也在其中，避免它们的文字让之后的 provider 请求以 400 失败。规则在插件页面上点选。
 - [Yersi88/dsh-ollama-tool-guard](https://github.com/Yersi88/dsh-ollama-tool-guard) — 每次工具调用前由本机 Ollama 决策模型判定：可疑调用升级为确认提示，模型不可达时停止所有调用。需 DSH 0.2.x，并先装好本机 Ollama 0.35.1+、拉取默认约 6 GB 的 clef-flash 模型；否则所有工具调用都会被拒绝。
 - [yiyunet/dsh-proxy-egress](https://github.com/yiyunet/dsh-proxy-egress) — DSH 插件：本地出口代理（egress）桥——把只接受无凭据 HTTP(S) 代理地址的消费方，接到需要账号密码的上游代理上，凭据只在需要的那一跳注入；默认失败即断联，绝不降级为直连。零构建、零运行依赖。
@@ -10445,7 +10448,7 @@ dsh plugin --profile web add dshmarket
 - [Jfreey/dsh-plugin-sync](https://github.com/Jfreey/dsh-plugin-sync) — 插件一键备份，换机一键还原：清单、版本、配置与本地插件源码存进自己的 GitHub 私有仓库。
 - [jiang4wqy/dsh-dejaview](https://github.com/jiang4wqy/dsh-dejaview) — 在动手写 dsh 插件前，检索 awesome-dsh-plugin 注册表与 dsh-plugin GitHub topic，判断是否已有相似插件，并返回带证据的排序结果。
 - [jing-hy/dsh-unified-market](https://github.com/jing-hy/dsh-unified-market) — 面向 DSH Desktop（EAC）桌面壳的统一插件市场：聚合精选目录、GitHub dsh-plugin 生态与 npm registry 三源，提供来源白名单、冲突预检、试装安装验证、手动/批量/自动三档更新与功能包（.dshpack）管理。
-- [kazari-qwp/dsh-tiered-plugin-menu](https://github.com/kazari-qwp/dsh-tiered-plugin-menu) — 按客户端、工作区和会话分层配置 DSH 插件、MCP 与 Skill，支持独立开关、不同配置、逐级继承及下级默认配置。
+- [kazari-qwp/dsh-tiered-plugin-menu#web](https://github.com/kazari-qwp/dsh-tiered-plugin-menu/tree/master/packages/web) — 在桌面和 Web 界面按客户端、工作区和会话分层配置 DSH 插件、MCP 与 Skill，支持独立开关、不同配置、逐级继承及下级默认。
 - [kimiya1010/dsh-plugin-market](https://github.com/kimiya1010/dsh-plugin-market) — DeepSeek Harness 插件市场：在 Web 界面里搜索并一键安装 GitHub 上的 dsh-plugin 插件。
 - [kingOfSoySauce/dsh-skin-market](https://github.com/kingOfSoySauce/dsh-skin-market) — 原生皮肤市场与生命周期管理器，发现社区皮肤、展示预览与兼容状态，并提供已验证的一键安装或手动安装入口。
 - [kinmat-A/dsh-theme-switch](https://github.com/kinmat-A/dsh-theme-switch) — DSH 主题切换：自动检测已安装的皮肤/主题，在设置页一键互斥切换，全部停用时回退官方默认外观，切换即时生效并跨重启保留。
