@@ -3,5 +3,5 @@ name: fleekelon/dsh-fintax
 category: tools
 icon: https://raw.githubusercontent.com/fleekelon/dsh-fintax/main/assets/icon-180.png
 description:
-  en: "Chinese tax and cross-border e-commerce workbench: 4 read-only Tencent IMA knowledge-base tools (ima_list_kbs, ima_browse, ima_search, ima_read), a 5-scenario deterministic tax calculator (fintax_calc), and 4 bundled compliance skills. Optional IMA OpenAPI credentials are read from environment variables or ~/.config/ima/ and sent only to ima.qq.com; zero runtime dependencies."
-  zh: "中国财税与跨境电商工作台：注册 4 个腾讯 IMA 知识库只读检索工具（ima_list_kbs、ima_browse、ima_search、ima_read）、5 场景确定性税额试算工具（fintax_calc）与 4 项合规自查技能。可选的 IMA OpenAPI 凭证从环境变量或 ~/.config/ima/ 读取并仅发送至官方 ima.qq.com；纯 ESM 零运行时依赖。"
+  en: "Chinese tax and cross-border e-commerce workbench: 4 read-only Tencent IMA knowledge-base tools (ima_list_kbs, ima_browse, ima_search, ima_read), a 7-scenario deterministic tax and reconciliation calculator (fintax_calc), 4 bundled compliance skills, and an in-app settings section. Optional IMA OpenAPI credentials are read from environment variables or ~/.config/ima/ (write-only via authenticated /api/fintax routes, never echoed back) and sent only to ima.qq.com; zero runtime dependencies."
+  zh: "中国财税与跨境电商工作台：注册 4 个腾讯 IMA 知识库只读检索工具（ima_list_kbs、ima_browse、ima_search、ima_read）、7 场景确定性算税与四层口径差额桥接工具（fintax_calc）、4 项合规自查技能及内置设置面板。可选的 IMA OpenAPI 凭证从环境变量或 ~/.config/ima/ 读取（/api/fintax 路由逐请求经宿主 connection 准入校验，密钥只写不回传明文）并仅发送至官方 ima.qq.com；纯 ESM 零运行时依赖。"
