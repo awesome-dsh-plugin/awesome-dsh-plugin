@@ -1,0 +1,7 @@
+url: https://github.com/QcWyGm/dsh-config-sync
+name: QcWyGm/dsh-config-sync
+category: git
+description:
+  en: 'Multi-machine config sync for DeepSeek Harness: a health-check panel compares this machine against the dsh-config git repository — branch, remote, uncommitted changes, bundle and plugin manifest drift — and generates the push/pull/restore scripts that run after DSH quits, plus one-click self-update from its release channel. The sync itself never runs inside the app: the panel only reads, and the scripts it writes are what touch the repository.'
+  zh: 'dsh 多机配置同步：体检面板对比本机与 dsh-config 仓库的分支、远端、未提交改动、bundle 与插件清单差异，并生成 DSH 退出后才执行的推送/拉取/还原脚本，另带从发布渠道一键自更新。同步动作不在应用内执行：面板只做读取，真正动仓库的是它生成的脚本。'
+icon: https://raw.githubusercontent.com/QcWyGm/dsh-config-sync/main/docs/panel.png
