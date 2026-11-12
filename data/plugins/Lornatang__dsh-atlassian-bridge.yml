@@ -1,0 +1,5 @@
+url: https://github.com/Lornatang/dsh-atlassian-bridge
+name: Lornatang/dsh-atlassian-bridge
+category: tools
+description:
+  en: Connect Atlassian Cloud and self-hosted Jira and Confluence to DeepSeek Harness, with tools and a Jira issue board.
