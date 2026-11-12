@@ -1500,7 +1500,7 @@ dsh plugin --profile web add dshmarket
 - [ph4310822/dsh-edex-jarvis-ui#bundle](https://github.com/ph4310822/dsh-edex-jarvis-ui/tree/main/packages/bundle) — 在 DSH Web 界面上叠加 JARVIS 风格科幻 HUD 外壳：电光青色 VITAL SIGNS 生命体征 / RT-MONITOR 实时监控 / RT-LOG 事件日志左栏，右侧 POWER CORE 能源核心仪表、旋转扫描的 RADAR 雷达盘与上下行流量图，左下文件系统浏览器（带文件预览），以及带 JARVIS 头部横幅、跟随当前工作区的终端风格输入框。
 - [ph4310822/dsh-edex-ui#bundle](https://github.com/ph4310822/dsh-edex-ui/tree/main/packages/bundle) — 在 DSH Web 界面上叠加 eDEX-UI 风格外壳：左侧系统遥测栏（含每核 CPU 迷你趋势图）、右侧 encom-globe 世界地图与上下行流量图、左下文件系统浏览器（带文件预览），以及跟随当前工作区的终端风格输入框。
 - [Phant0Meow/dsh-meow-smooth](https://github.com/Phant0Meow/dsh-meow-smooth) — 手机优先的 DSH 前端体验优化：输入框自动折叠、手机回车换行、侧边栏/顶部栏/设置页压缩、禁缩放回弹，以及审批/提问/任务完成通知（页面卡片、Web Push、webhook）；零 dsh 本体改动。
-- [philomelcc/dsh-workbench#workbench](https://github.com/philomelcc/dsh-workbench/tree/main/packages/workbench) — 工作台外壳：固定顶栏（账号、余额、「重启 DSH」按钮）加第二行页面标签，外加一套给整页插件用的模块 API。没有模块时不起作用；「重启 DSH」会退出 Web 宿主进程，仅在存在名为 philomel-dsh-web 的 Windows 计划任务来重新拉起时才有效。
+- [philomelcc/dsh-workbench#workbench](https://github.com/philomelcc/dsh-workbench/tree/main/packages/workbench) — 工作台外壳：把原生侧栏项镜像成固定的系统栏，给模块加第二行页面标签，并提供一套给整页插件用的模块 API；重启按钮需要外部管理器（DSH_RESTART_CMD 或 DSH_RESTART_TASK 指定的计划任务）。
 - [Phoeky/dsh-refresh-plugin](https://github.com/Phoeky/dsh-refresh-plugin) — 为 DeepSeek Harness 桌面 Web UI 补上 F5 / Ctrl+R 页面刷新功能（生产版默认没有刷新菜单项与裸 F5 快捷键）。通过客户端捕获阶段按键监听绑定软刷新（F5、Ctrl+R）与防缓存硬刷新（F5 加修饰键、Ctrl+Shift+R，附加 _dsh_refresh 时间戳）。
 - [phoenixyun/dsh-plugin-dlidl](https://github.com/phoenixyun/dsh-plugin-dlidl) — 把大模型的流式输出做成两种可切换的覆盖层：直播模式是右下角聊天时间线（底部对齐、逐条淡出、可调停留时间），弹幕模式是 B 站式全屏飞行弹幕（速度/轨道数可调）；支持内容过滤，并在编辑文件时实时播报「修改文件/新增类名」。
 - [phoenixyun/dsh-plugin-live-diff](https://github.com/phoenixyun/dsh-plugin-live-diff) — DSH 文件编辑的实时流式 diff：悬浮面板与 edit/write 对话卡片在模型还在输出工具调用参数时就开始渲染改动；同一份读数还画在整个应用背后，做成可调的磨砂玻璃背景（含液态玻璃折射、鼠标光效与应用内外观面板）。依赖 DSH 内部客户端接口并替换内置 edit/write 工具卡片；仅在 DSH 0.1.5-rc.1 与桌面端 0.2.1-rc.5（Windows）上验证。
@@ -1762,6 +1762,7 @@ dsh plugin --profile web add dshmarket
 - [suyunxing/dsh-welcome-greeting](https://github.com/suyunxing/dsh-welcome-greeting) — 用新会话已选定的模型，按当地时间、城市与实时天气写一句简短问候，替换首屏标题；没有可用模型时退回本地按小时计算的问候。
 - [SUZUNAMI/dsh-workspace-hide](https://github.com/SUZUNAMI/dsh-workspace-hide) — 在 DSH 侧边栏隐藏指定工作区，并把它的会话一并归档，避免这些会话溢出到「未分组」列表。纯本地、完全可逆；装了 dsh-archive-manager 时执行真归档且可撤销，未装时退化为纯显示层。随时可在设置页恢复。
 - [sw503544488/dsh-harness-launcher](https://github.com/sw503544488/dsh-harness-launcher) — Windows 上的 DSH 桌面图标：Harness 在运行时直接打开已认证的界面，未运行时以隐藏窗口启动。设置页提供生成该图标、两次点击的重启与关闭，以及把入口从侧栏移开的开关。
+- [sweet-boby/dsh-markdown-outline](https://github.com/sweet-boby/dsh-markdown-outline) — 为会话提供 Markdown 目录与回复全文搜索，支持章节引用、可逆隐藏轮次及从所选轮次创建新会话。
 - [sweet560/dsh-plugin-deepseek-chat](https://github.com/sweet560/dsh-plugin-deepseek-chat) — 在 DSH 左侧栏加入 DeepSeek 聊天入口，主内容区全宽内嵌 chat.deepseek.com（仅桌面版），恢复上次会话，并把内嵌页崩溃限制在面板内。
 - [swenbo1-web/dsh-web-search-button](https://github.com/swenbo1-web/dsh-web-search-button) — DeepSeek Harness 的直接联网搜索按钮与 /search 斜杠命令插件。
 - [swiftlc/dsh-annotation](https://github.com/swiftlc/dsh-annotation) — 为 dsh Web 输入框增加选中文字标注工具和标注 chip。
@@ -6160,8 +6161,8 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-translate](https://github.com/PerryLink/dsh-translate) — DeepSeek Harness 的工具输出修复层：JSON Schema 校验、参数映射与 JSON 修复。
 - [pg527322814/dsh-bayes-predict](https://github.com/pg527322814/dsh-bayes-predict) — 贝叶斯个股预测插件：多指标信号融合的上涨概率估计、趋势状态识别与持仓风险度量（A 股 + 美股）。
 - [philmingdao/anno#dsh-native](https://github.com/philmingdao/anno/tree/main/adapters/dsh-native) — 面向编码代理的本地优先 HTML 审阅与标注工作区：在浏览器编辑器中打开文件的隔离副本，收集文本修改、格式调整与元素/区域评注，并把持久的交接（handoff）交还给代理认领和落实。
-- [philomelcc/dsh-workbench#downloads](https://github.com/philomelcc/dsh-workbench/tree/main/packages/download-center) — 下载队列：aria2 与可选迅雷双引擎、磁力链接、按会话记录下载历史；aria2 不随包附带，需自行安装，迅雷引擎需自装 SDK 并提供 API Key；主要面向 Windows。
-- [philomelcc/dsh-workbench#status-monitor](https://github.com/philomelcc/dsh-workbench/tree/main/packages/status-monitor) — 磁盘、CPU/内存/GPU、监听端口与会话用量的卡片，可放大到整页；端口卡片仅支持 Windows，GPU 卡片需要 nvidia-smi。
+- [philomelcc/dsh-downloads](https://github.com/philomelcc/dsh-downloads) — 下载队列：aria2 与可选迅雷双引擎、磁力链接、按会话记录下载历史；aria2 不随包附带，需自行安装，迅雷引擎需自装 SDK 并提供 API Key；主要面向 Windows。
+- [philomelcc/dsh-status-monitor](https://github.com/philomelcc/dsh-status-monitor) — 磁盘、CPU/内存/GPU、监听端口与会话用量四张卡片，可放大到整页；既可作工作台模块，也能独立运行。端口卡片仅支持 Windows，GPU 卡片需要 nvidia-smi。
 - [PicGo/dsh-plugin](https://github.com/PicGo/dsh-plugin) — 通过 PicGo 已有配置（PicGo Cloud、GitHub、S3、腾讯云 COS、七牛，或任意已安装的上传插件）把本地图片和文件上传到图床，提供 `picgo_upload` 工具与 `/picgo` 命令。
 - [PiedPiper911/dsh-video-tools](https://github.com/PiedPiper911/dsh-video-tools) — 基于 FFmpeg.wasm 的浏览器端音视频工具集，支持抽帧、截图、图片压缩与视频转 GIF。
 - [PipeDream941/dsh-subagent-antigravity](https://github.com/PipeDream941/dsh-subagent-antigravity) — 把 Google 官方 Antigravity CLI（agy）作为一次性编码子智能体接入 DeepSeek Harness，提供 subagent_antigravity 委派工具，可直接使用 Gemini 4 Argon 等 Antigravity 订阅模型。需安装并登录 Antigravity CLI（agy 1.4+）。
@@ -7502,6 +7503,7 @@ dsh plugin --profile web add dshmarket
 - [wx971025/dsh-openspec](https://github.com/wx971025/dsh-openspec) — 在 Web UI 会话标题栏打开当前项目的 openspec/ 目录，浏览、预览、编辑并保存其中的文件，自动跟随会话工作区。
 - [xiayifan1024/dsh-pdf-math-reader](https://github.com/xiayifan1024/dsh-pdf-math-reader) — DeepSeek Harness 的段落级双语 PDF 阅读器：支持单页、选中文本与全文翻译，提示词要求保留公式、引用与 DOI；术语表强制指定译名，提供双语/仅译文/仅原文三种视图，段落笔记带页面高亮，可基于文档提问，并导出 Markdown 与可打印 HTML。
 - [yang1604454533-netizen/dsh-ASD-100](https://github.com/yang1604454533-netizen/dsh-ASD-100) — 强制所有回复和文档按 ASD-STE100 简化技术英语输出。命令：/asd100 on、/asd100 off、/asd100。
+- [Yaohua-Leo/dsh-latex](https://github.com/Yaohua-Leo/dsh-latex) — DeepSeek Harness 的 LaTeX 工作台：打开 .tex 即在右侧栏显示带行号的编辑器，保存时写回源码并用本机 TeX Live latexmk 编译，已打开的 PDF 预览原地刷新。包含结构化 file:line 诊断、SyncTeX、失败保留上一版预览，以及 7 个 Agent 工具。
 - [ycAlphi/dsh-dokuwiki](https://github.com/ycAlphi/dsh-dokuwiki) — 给 DeepSeek Harness 的 DokuWiki 集成：用原生工具读取、搜索、写入、删除 wiki 页面并上传媒体文件，按 ACL 开放工具，密码存入 DSH 凭据服务。
 - [yfwu2020/dsh-reply-visual](https://github.com/yfwu2020/dsh-reply-visual) — 在 DSH Web 界面每条定稿回复下加一个「图解」按钮：模型产出单文件 HTML（内联 SVG），右侧栏以沙箱 iframe 渲染；带图解／源码／原文三个视图、命中磁盘缓存即回放（不再调用模型）的会话内历史列表、重画与另存 .html。
 - [yimengsuper2432/dsh-auto-convert](https://github.com/yimengsuper2432/dsh-auto-convert) — 在 read、read_image 与 vision_* 打开文件之前先处理：长边超 2048 像素或体积超 8 MB 的图降采样（同一轮可降到 1280 再试一次），BMP/TIFF 转 PNG，按字节纠正标错的上传类型，并把 docx/xlsx/pptx、有文字层的 PDF、csv/tsv 与 html 转成 Markdown，不依赖任何外部程序。
@@ -9522,6 +9524,7 @@ dsh plugin --profile web add dshmarket
 - [QYF-888/dsh-plugin-shelf](https://github.com/QYF-888/dsh-plugin-shelf) — 已安装 DSH 插件的书架：按名称/安装时间/大小排序，自由分组与一键启停，批量检查并可断点续装的自动更新。
 - [qyjqio/dsh-cursor-toolkit#llm-probe](https://github.com/qyjqio/dsh-cursor-toolkit/tree/main/packages/dsh-llm-probe) — 列出运行中 DSH 进程真实注册的 LLM 路由，并可跑一次真实流式调用。
 - [Ragnoryok1/dsh-plugin-doctor](https://github.com/Ragnoryok1/dsh-plugin-doctor) — dsh Web 界面的插件诊断：找出加载失败的插件、未启动的 bundle 行与失效的 file 链接，并报告扫描结果。只读：不修复、不写日志、不提供撤销。
+- [railgun20001/dsh-error-digest](https://github.com/railgun20001/dsh-error-digest) — 把会话日志里的工具失败、回合失败与模型重试折叠成一张表，跨会话合并后按出现频次排序，每行显示类别 / 来源 / 错误码 / 出现次数 / 最近时间 / 摘要；每条错误可一键在新会话草稿框里预填「分析」或「防范」提示词（发送仍需用户确认），「忽略」只影响本面板显示、不删日志。
 - [railgun20001/dsh-plugin-restart-desktop](https://github.com/railgun20001/dsh-plugin-restart-desktop) — DSH 桌面版一键重启：保留窗口位置、大小、最大化状态与所在显示器，可选在重启后自动续上被打断的会话（不只你当前打开的那个）。入口是侧栏底部账号行右侧的图标按钮，另有 /restart-desktop 斜杠命令；账号行认不出来时自动回落到 sidebar.footer.action 座位，按钮不会凭空消失。仅支持 Windows 桌面版。
 - [rand0wn/dsh-malware-audit](https://github.com/rand0wn/dsh-malware-audit) — 基于 AST 的已装插件恶意行为扫描：识别动态 eval、跨插件写入、外泄型网络调用等模式，并给出可复核的报告。
 - [rand0wn/dsh-minimal-anchor](https://github.com/rand0wn/dsh-minimal-anchor) — 只在会话首轮把工具清单裁剪到白名单并注入一段结构化前言，之后每一轮原样放行。
