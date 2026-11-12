@@ -1,0 +1,7 @@
+url: https://github.com/Ww-Cooooo/harness-share-dsh
+name: Harness Share
+category: workflow
+description:
+  en: Share selected theme settings, installed plugins and skills by QR code, then review and install them together from an image or screenshot.
+  zh: 将所选主题配置、已安装插件与 Skill 的安装信息写入二维码，接收者识别图片或截图后即可查看清单、一键安装，复用分享者的配置。
+tarball: https://github.com/Ww-Cooooo/harness-share-dsh/releases/download/v0.2.0/eh3-dsh-harness-share-0.2.0.tgz
