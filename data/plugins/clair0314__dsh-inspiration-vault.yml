@@ -1,0 +1,6 @@
+url: https://github.com/clair0314/dsh-inspiration-vault
+name: clair0314/dsh-inspiration-vault
+category: memory
+description:
+  en: Captures an idea in one line and finds it again with a few keywords, stored as plain local Markdown.
+  zh: 一句话记下灵感，用几个关键词找回来；纯本地 Markdown，不评分、不生成待办。
