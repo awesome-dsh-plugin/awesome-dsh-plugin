@@ -1,0 +1,7 @@
+url: https://github.com/RDYRD/dsh-session-files
+name: RDYRD/dsh-session-files
+category: session
+description:
+  en: 'Adds a sidebar tab that lists every file a conversation produced — the deliverables it presented and the files its tools wrote — with the absolute path, size and a reversible trash. Click a row to preview it without leaving the tab: PDFs stream in an iframe, Markdown and CSV get real formatting, code gets light syntax highlighting, and Office files say so instead of dumping their bytes. Each row can also jump back to the turn that produced it, pulling older history in when that early turn is not mounted yet.'
+  zh: '在侧边栏加一个标签页，列出本次会话产出的每一个文件——agent 明确交付过的，以及各种工具实际写过的——带完整路径、大小和可恢复的回收站。点一行就在标签页里预览：PDF 用 iframe 内嵌，Markdown 和 CSV 渲染成排版与表格，代码做轻量高亮，Office 格式会直说无法预览而不是把字节倒出来。每一行还能跳回产出它的那一轮对话，早期轮次没挂载时会自动把更早的历史加载进来。'
+icon: https://raw.githubusercontent.com/RDYRD/dsh-session-files/main/assets/icon.png
