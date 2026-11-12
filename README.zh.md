@@ -1116,6 +1116,7 @@ dsh plugin --profile web add dshmarket
 - [liaoyuqing/dsh-shutdown-idle](https://github.com/liaoyuqing/dsh-shutdown-idle) — 会话全部结束、后台任务也安静下来后自动执行电源动作（关机 / 重启 / 休眠 / 睡眠 / 锁定 / 注销）：插件每秒采样进程内会话，运行中的会话始终算「在忙」；后台任务检测是可配置项 considerJobs（默认开启，设置页直接显示当前计数）；确认窗口后进入可取消倒计时，右下角浮窗卡片显示当前阶段与剩余秒数并支持拖动；开关不会随宿主重启保留（重启后一律回到关闭），任何会话新启动或点取消都会中止倒计时；拿不到 agents 服务时一律按「在忙」处理，绝不触发。仅支持 Windows（使用系统自带 shutdown / rundll32），其他平台除 none 外均降级为 none。
 - [lidongbei/dsh-session-view](https://github.com/lidongbei/dsh-session-view) — DSH 的会话优先左侧栏：置顶、活跃、最近分区，工作区分组，专注模式，搜索与会话回收站。
 - [liggest/dsh-alt-enter-newline](https://github.com/liggest/dsh-alt-enter-newline) — 给 dsh 的网页输入框加上 Alt+Enter 换行。
+- [LighghtEeloo/dsh-next-actions](https://github.com/LighghtEeloo/dsh-next-actions) — 在回复下方给出至多 3 条可点击的下一步建议；点击只填入输入框，不会自动发送。
 - [light-cheng/DSH-Translate](https://github.com/light-cheng/DSH-Translate) — 为 DeepSeek Harness 提供双语推理、划词翻译、输入框润色，以及带音标、发音和生词本的离线英汉词典。划词即时翻译默认开启，使用云端引擎时会把选中的文字发给模型；发音音频在点击或悬停时从有道获取；随包词典数据（ECDICT 与 ipa-dict）为 GPL-3.0。
 - [Light-EI/dsh-chat-perf-css](https://github.com/Light-EI/dsh-chat-perf-css) — 一段渲染了大量 LaTeX 公式的长会话容易卡顿：屏幕外的消息和公式仍会被浏览器反复计算样式、布局和绘制。本插件给屏幕外的消息体加上 content-visibility: auto，让这部分工作被跳过，卡顿随之减少。
 - [liguobao/dsh-file-viewer](https://github.com/liguobao/dsh-file-viewer) — Web 客户端只读文件预览面板，支持图片、PDF、CSV/TSV、文本、源代码、Markdown、JSON 与 YAML 渲染、大文件分段读取，以及面向非本地内容的 provider API。
@@ -4133,6 +4134,7 @@ dsh plugin --profile web add dshmarket
 - [glk1220/dsh-session-git](https://github.com/glk1220/dsh-session-git) — 把分叉会话里做完的工作合并回原会话：/merge 直接从分支的会话记录整理出摘要、不调用模型（每轮的提问与回复、改动的文件、执行的命令、你做的选择、待办和最终结论），随你的下一条消息交给 agent，或用 --wake 立即处理；同一分支再次合并只带新增的轮次。另有 /branches、带合并状态的右侧栏分支地图、输入框上方的未合并提醒，以及供 agent 使用的 session_branches / session_branch_merge 工具。
 - [GnaneshKunal/dsh-session-coldstore](https://github.com/GnaneshKunal/dsh-session-coldstore) — DSH 会话的分层冷存储：闲置会话移出实时根目录、转入磁盘冷层而不被删除；冷层上的 FTS5 索引让它们仍可检索，需要时可将会话恢复回实时根目录。默认为演练模式，在设置页关闭后才会真正移动会话。
 - [GoetheDady/dsh-no-project-sessions](https://github.com/GoetheDady/dsh-no-project-sessions) — 为不属于任何项目的会话提供「不在项目中工作」选项，按首条消息在 ~/Documents/dsh/<日期>/ 下创建可读的独立工作目录，并在侧栏「最近」分区集中展示。
+- [GoGoZeppeli-towa/dsh-dsml-leak-guard](https://github.com/GoGoZeppeli-towa/dsh-dsml-leak-guard) — 丢弃只含泄漏 DSML 工具调用标签的整段文本；若整轮没有产生任何可见内容，把结尾改写成可重试错误，交给宿主内置重试重新请求；正文夹带标签的输出原样放行。
 - [good-saltfish/dsh-multi-session](https://github.com/good-saltfish/dsh-multi-session) — 多会话一体：在一个会话内按工作区总览全部会话的实时状态，钉住最多三个并排看对话正文。每张卡片标出它自你上次查看后是否跑完、是否卡在等你回话、是否停滞不动，并列出它改过哪些文件。可直接发消息或打断，不用来回切换，消息会显示排队中／已送达／处理中。可以跨全部会话搜索、把一轮对话转发给另一个会话，也能直接在卡片上换模型。
 - [GooDAnDReaDY/dsh-session-control](https://github.com/GooDAnDReaDY/dsh-session-control) — DSH 侧边栏会话管理：固定对话、搜索内容、读取归档记录并隐藏噪音。
 - [Gorkaseto/dsh-delete-sessions](https://github.com/Gorkaseto/dsh-delete-sessions) — 在侧边栏会话菜单中添加“删除会话”选项，从磁盘上永久删除该会话。
@@ -6326,6 +6328,7 @@ dsh plugin --profile web add dshmarket
 - [Tianbuyu-wwx/DSH-FormatForge#dsh-formatforge](https://github.com/Tianbuyu-wwx/DSH-FormatForge/tree/main/packages/dsh-formatforge) — FormatForge：把 30+ 种文件格式（PDF、DOCX、PPTX、XLSX、EML、EPUB、TOML、压缩包）锻造成 AI 可读文本——网页拖拽入箱自动转换，提供 ff_translate/ff_formats/ff_result 工具与 CLI；扫描件回退本地 OCR 或交给会话模型增强。
 - [tianfangliu98-cpu/dsh-image-hub](https://github.com/tianfangliu98-cpu/dsh-image-hub) — 多 API 生图：Labnana、OpenAI、Gemini、Seedream、DashScope、xAI、智谱、ComfyUI 八种接口，支持多套配置、对话画廊与 Labnana 积分计量。
 - [tiantianlaolao/dsh-astock-research](https://github.com/tiantianlaolao/dsh-astock-research) — A股个股研究：搜股票、查任意区间公告、财报卡、估值画像与交易信号科普（约 5000 只、2011 年至今，公共只读数据服务），另有一个跳转外部交易推演产品的链接工具。
+- [tianxiaohei6/dsh-smarthome](https://github.com/tianxiaohei6/dsh-smarthome) — 在 DSH 里控制 Home Assistant：实体状态、历史、服务调用、通知、天气与实时家庭仪表盘卡片。
 - [tianxingdao/dsh-shell-switch](https://github.com/tianxingdao/dsh-shell-switch) — 让 bash 工具在本机设置里选定的 shell（Niubash、Git Bash、MSYS2、Cygwin 或 PATH 上的 bash.exe）中执行命令，不再改写为 PowerShell，并在 Windows 下隐藏 pwsh 工具。
 - [tianyao2003/dsh-find-ideas](https://github.com/tianyao2003/dsh-find-ideas) — GitHub 项目检索与解析工具：一句话输入开发想法，agent 在 GitHub 搜索相关项目，按相关性与 star 加权排序后返回一张结构化的卡片（包括各项目的更新时间、相关性分数、star数、加权后得分、使用的开发语言、一句话简介）。选择几个仓库后，它还能直接读取这些项目的 README、依赖清单、目录树和关键文件等，梳理它们的架构。让你在动手开发前，先“站在巨人的肩膀上”。
 - [TindalosKorone/dsh-cheatengine](https://github.com/TindalosKorone/dsh-cheatengine) — 让 DSH Agent 通过 Cheat Engine 进行动态内存调试：扫描、指针分析、断点与游戏内存修改。
