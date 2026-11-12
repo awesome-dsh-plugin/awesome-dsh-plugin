@@ -811,6 +811,7 @@ dsh plugin --profile web add dshmarket
 - [gulagala001/dsh-intelligent-ui](https://github.com/gulagala001/dsh-intelligent-ui) — DSH 原生交互式回答、可编辑卡片与按需界面技能。
 - [guo-ziao/dsh-interrupt-button](https://github.com/guo-ziao/dsh-interrupt-button) — 发送按钮旁的绿色打断按钮：运行时一键静默中断 AI，AI 停止后总结进展并向你征求新要求，支持自定义打断提示词。
 - [guoliyuan97-png/dsh-game-hud](https://github.com/guoliyuan97-png/dsh-game-hud) — 游戏风格悬浮 HUD：余额血条、上下文蓝条、官方峰谷定价与切换倒计时、上下文不足5%自动压缩、携带记忆开启新对话。
+- [guyue55/dsh-disk-panel](https://github.com/guyue55/dsh-disk-panel) — DSH Web UI 左侧栏磁盘面板：各卷剩余空间、按工作区统计目录占用、把构建产物安全移入 macOS 废纸篓（带审计与恢复）、把扫描结果交给 Agent 分析，以及 Host 端低空间看门狗与系统通知。
 - [H1Kariiiiiii/dsh-icon-console](https://github.com/H1Kariiiiiii/dsh-icon-console) — DSH 桌面端图标控制台：导入一个图标即可应用到桌面与开始菜单快捷方式（立即生效）、应用窗口图标与系统托盘图标（重启后生效），带官方图标自动备份、一键恢复、图标库管理，以及重启/退出控制。
 - [hadesybil-hub/dsh-restart-button](https://github.com/hadesybil-hub/dsh-restart-button) — 在 DSH 网页界面右下角"关机"按钮旁新增一个"重启"按钮，点击并确认后重启 dsh web，服务器自动拉起并重新打开浏览器。
 - [hahajing233-source/dsh-sticky-wall](https://github.com/hahajing233-source/dsh-sticky-wall) — 侧边栏里的便签墙：五种纸面、五种墨色、七种字体、四档字号，图钉或胶带或回形针固定，随手记下自动保存。
@@ -1702,6 +1703,7 @@ dsh plugin --profile web add dshmarket
 - [songoao25/dsh-bottom-info-bar#plugin](https://github.com/songoao25/dsh-bottom-info-bar/tree/main/plugin) — DSH 底部信息栏：一行显示服务商/模型、真实余额、高峰(琥珀)/空闲(绿)价与倒计时，以及本对话·今日·近一月·全部花费（真实落盘统计）。
 - [songshuhuoban/dsh-next-input](https://github.com/songshuhuoban/dsh-next-input) — 助手完成后，沿用会话模型与滚动上下文摘要，在空输入框中建议下一条用户回复，按 Tab 接受。
 - [SorenLorn/dsh-otaku-study-board](https://github.com/SorenLorn/dsh-otaku-study-board) — 溯时学习工作台，为DSH提供番茄计时、任务管理与学习热力图的学习工作台插件。记录只存在浏览器的 localStorage（可导出 JSON 备份），插件不发任何网络请求。
+- [SoulZhou/dsh-multi-root-files](https://github.com/SoulZhou/dsh-multi-root-files) — 侧栏文件树，把会话主目录与 multi-root-workspace 登记的每个附加根放在一起浏览：平级仓库在同一个页签里都能看，目录按需懒加载，改动和未跟踪文件带 Git 标记，点文件在树旁边直接内联预览。纯只读，不会写入、重命名或删除任何文件。
 - [southcul/demian-trade-suite-dsh-plugin](https://github.com/southcul/demian-trade-suite-dsh-plugin) — 在 DSH 侧边栏增加外贸工作台入口，用于外贸单证与装柜计算：报价单、PI/CI/PL/合同/报关资料、装柜方案与逐层装柜动画。现有离线单文件工作台通过同源页面嵌入面板。
 - [SouthernSibyl/dsh-quick-prompt](https://github.com/SouthernSibyl/dsh-quick-prompt) — 在输入框加一个按钮，点一下就把草稿原地改写成精确提示词，可一键恢复原文。
 - [southsnowL/dsh-bulletin#dsh-bulletin-panel](https://github.com/southsnowL/dsh-bulletin/tree/main/plugins/dsh-bulletin-panel) — 侧边栏面板：把公告和投递状态表放进 DSH 界面 —— 列出公告以及每条有几个会话见过，并让用户发布、编辑、删除条目。需要第三方插件 dsh-better-sidebar。
@@ -5375,6 +5377,7 @@ dsh plugin --profile web add dshmarket
 - [Cjrrrrrrrr/dsh-plugins#dsh-scholar](https://github.com/Cjrrrrrrrr/dsh-plugins/tree/main/packages/dsh-scholar) — DSH 学术检索工具：四个模型可用工具 paper_search / paper_get / paper_citations / book_search，覆盖 OpenAlex、arXiv、Crossref、Semantic Scholar、PubMed 五个库，并用 Unpaywall 解析开放获取 PDF。
 - [cl2458228286-creator/dsh-plugin-workbuddy-checkin](https://github.com/cl2458228286-creator/dsh-plugin-workbuddy-checkin) — 用独立 Chrome 登录态自动签到并领取 WorkBuddy 积分，无需令牌。
 - [ClaireXi99/dsh-data-insight](https://github.com/ClaireXi99/dsh-data-insight) — 数据分析工具包：CSV/TSV/JSON 数据画像、IQR 与 z-score 异常检测、带质量问题提示的结构化摘要、以及无需写代码的筛选/分组/聚合查询。
+- [clear0/dsh-sag-wiki](https://github.com/clear0/dsh-sag-wiki) — 通过本机 SAG CLI 提供四个工具查询 SAG Wiki 本地索引：语义检索、精确或正则匹配，以及索引状态查询与增删。
 - [clockclock1/dsh-nitro](https://github.com/clockclock1/dsh-nitro) — 按会话独立的极速交付模式，从输入框切换。新对话默认开启；对话运行期间拒绝切换，并在会话头部显示只读开/关徽标。一个开关驱动三个子系统：测试与构建命令断路器（不真正执行，直接返回成功回执）、按 SEARCH/REPLACE 冲突块原子写入的 apply_patch 工具（任一锚点未命中则整次回滚）、以及把终端输出脱水成一句通过或最后 15 行错误的脱水器。
 - [clrockrock/dsh-graphify](https://github.com/clrockrock/dsh-graphify) — 为 DeepSeek Harness 提供代码库知识图谱：7 个 graphify_* Agent 工具、/graphify 命令与 Graphify 页面，用本地 AST 解析构建并查询项目图谱（无需 API Key），支持路径 / 解释 / 枢纽节点查询与 wiki、HTML、SVG、GraphML、Obsidian 导出。需先安装 graphify CLI（graphifyy）；只有含文档 / PDF / 图片的完整抽取需要 LLM Key。
 - [cmm00100/dsh-autocad-bridge#bundle-autocad-ui](https://github.com/cmm00100/dsh-autocad-bridge/tree/main/bundle-autocad-ui) — 通过 COM 驱动本机安装的 AutoCAD，把它暴露成 18 个 mcp__autocad__ 工具：连接与状态、取消当前命令、列出本机注册的 ProgID、列出或新建文档、保存、新建与列出图层、绘制直线/圆/矩形/多段线/圆弧/文字、列出图元、缩放到范围，以及透传任意 AutoCAD 原生命令。侧边栏面板托管驱动它的 Python 桥进程——启动、停止、重启、安装依赖、实时日志与崩溃自动重启——所有路径在运行时解析，同一个 bundle 在 Web 版与桌面版都能用。仅 Windows，Python 3.10-3.12，文档覆盖 AutoCAD 2022-2024（默认 2024；其他版本需把 CAD_PROG_ID 设为对应 ProgID）。
@@ -8410,6 +8413,7 @@ dsh plugin --profile web add dshmarket
 - [WilShi/dsh-workflow-library](https://github.com/WilShi/dsh-workflow-library) — 可复用的工作流库：编排脚本存成 .dsh/workflows 下的文件，从项目中自动发现，按名字带参数运行，可进 git、可团队共享。四个工具：list、show、run、save。
 - [WintryGrass/dsh-multi-candidate](https://github.com/WintryGrass/dsh-multi-candidate) — 多候选模式插件（test-time scaling）：悬浮球面板配置，模型对任务自动执行并行候选加验证选优，仅当前会话生效。
 - [wuuuuu123-32/dsh-tandem](https://github.com/wuuuuu123-32/dsh-tandem) — 双 agent 协作：把互不依赖的子任务并行交给本机 Codex（同时最多三路），并在方案交给你看之前先让它盲审一轮，必须回「结论 / 证据 / 反例 / 验证方式」四段；缺超时或缺验收判据的派活会被插件当场拒绝，不靠模型自己记得。
+- [Media Review DSH](https://github.com/Ww-Cooooo/media-review-dsh) — 让 AI 视频改稿反馈更直接：框选画面、拖选时间段或定格写意见，点击识别台词或导入字幕定位；基于 [Media Review Skill](https://github.com/Ww-Cooooo/media-review) 改造的 Windows Harness 插件，其他支持本机文件访问与命令执行的 Agent 可用原版 Skill。
 - [wwwangzilin/dsh-character-presets](https://github.com/wwwangzilin/dsh-character-presets) — DeepSeek Harness 的露娜预设：小恶魔人设配完整的 standard 工具面，由感知、理解、状态、表达、调节、记忆六层确定性规则驱动，外加生理派生层；跨会话记忆写入经证据门控，遗忘用抑制而非删除。
 - [wwweljf/dsh-plugins#dsh-wx-push](https://github.com/wwweljf/dsh-plugins/tree/master/plugins/dsh-wx-push) — DSH 会话任务结束后自动把结果原文推送到微信（iLink 直发，真实校验送达，失败如实报错）。需配置 wechat-acp 守护进程——一个需要另外安装并扫码登录微信的独立进程。
 - [wxid123/XieHome](https://github.com/wxid123/XieHome) — 为 DSH 提供两份独立维护的 Agent 预设（编排模式 Conductor 与受限的子任务预设），含计划与任务委派指引：先 todo 计划、同批并行委派（每批最多 4 个子代理）、长目标 goal 续行。其 persona 以「无限制模式」运行：要求模型不声明边界、不加安全提示与免责声明，且不把「你不能」「这违反规定」当作新指令。以上均为提示词层面的工作方式指引，不是强制行为。
