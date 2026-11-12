@@ -1653,6 +1653,7 @@ dsh plugin --profile web add dshmarket
 - [sevenhsu7/dsh-codex-like-markdown](https://github.com/sevenhsu7/dsh-codex-like-markdown) — 让右侧栏的 Markdown 预览就地可编辑：文档保持自带渲染器的排版，点段落、标题、列表、代码围栏或表格单元格时光标落在点击处，只有被编辑的那段经 ctx.fs.writeText 写回，并可带上读取时的版本作为护栏。
 - [SeverusZh/dsh-skills-mcp-group-manager](https://github.com/SeverusZh/dsh-skills-mcp-group-manager) — 将已安装的技能分组管理、独立开关 MCP 服务器：按启用分组过滤模型可见的技能目录（并集去重），全部操作集中在左侧面板。
 - [Sevyn-Star/dsh-receipt](https://github.com/Sevyn-Star/dsh-receipt) — 在左下角显示这一场里，失败或空结果之后又用同一组参数重试花了多少钱。
+- [sezhiyanhua/dsh-dual-mode](https://github.com/sezhiyanhua/dsh-dual-mode) — 在左上角新增 Harness/Chat 双模式切换与网页对话工作区，通过持久化无头浏览器驱动你自己登录的 chat.deepseek.com，支持一键提取任务发送到 Harness 会话并把执行结果回传网页对话。
 - [sfunction-guo/dsh-screenshot](https://github.com/sfunction-guo/dsh-screenshot) — 输入框旁的截图标注工具：冻结屏幕、拖框选区、就地标注，完成后直接插入输入框。仅 Windows；选区器为内置 WinForms 程序（缺失时用随包的 C# 源码重建），依赖系统自带 .NET Framework 4.x。
 - [Shall0vv/dsh-conversation-files](https://github.com/Shall0vv/dsh-conversation-files) — 左侧栏画廊：汇总所有对话里助手写入、修改或交付的文件，按类型分组、显示预览缩略图，点击即可用默认应用打开。文档预览与「用默认应用打开 / 选择应用 / 移到废纸篓」需要 macOS；画廊本身、文本预览与筛选在任何平台可用。
 - [SHAN5246992ZHUI/dsh-select-translate](https://github.com/SHAN5246992ZHUI/dsh-select-translate) — 在任意 Windows 应用里划词，鼠标旁弹出只含译文的置顶卡片；译文流式出现并跟随最新一行，单次上限 15000 字。仅 Windows。
@@ -2913,6 +2914,7 @@ dsh plugin --profile web add dshmarket
 - [d-dev0101/open-sea-skin](https://github.com/d-dev0101/open-sea-skin) — 实时 WebGPU 海洋皮肤，可快捷调节波浪、日光、玻璃不透明度与自动昼夜循环。
 - [d0ublecl1ck/dsh-csdn-theme](https://github.com/d0ublecl1ck/dsh-csdn-theme) — 把 CSDN 博文的配色与正文排版搬进 DeepSeek Harness 网页端：标题层级、引用块、实线网格表格、行内代码与 Atom One 语法高亮，浅色深色各一套。
 - [dataizu/dsh-whale-aqua-theme](https://github.com/dataizu/dsh-whale-aqua-theme) — DeepSeek Harness Web 界面的 macOS 风格皮肤：水中鲸鱼动态背景与点阵鲸鱼发送按钮，明暗双主题。
+- [DawnCHL/dsh-islands-ui](https://github.com/DawnCHL/dsh-islands-ui) — 为 DeepSeek Harness 设计的浮岛式界面皮肤，包含常驻左侧栏、置顶聚合与可调强调色。
 - [Ddamage/dsh-shunshun-wallpaper](https://github.com/Ddamage/dsh-shunshun-wallpaper) — 以网络主播张顺飞为主题的粉丝同人二创壁纸插件：彩色飞马高清旋转动图全屏壁纸，支持主题融合与突出度调节；附带 B站音乐播放器，可粘贴链接添加歌曲、删除、调音量、拖进度条、切换单曲/列表/随机循环，并有侧栏迷你播放器。
 - [ddbj-hub/dsh-wallpaper-skin](https://github.com/ddbj-hub/dsh-wallpaper-skin) — dsh Web 界面的持久化壁纸皮肤：静态图片或静音循环视频作为应用背景，面板半透明化，右下角悬浮面板一键换壁纸。
 - [dennisrongo/dsh-plugins#dsh-theme](https://github.com/dennisrongo/dsh-plugins/tree/main/plugins/dsh-theme) — 为 DSH Web 界面提供 12 套精选配色、8 种强调色、对比度滑块与字体/缩放覆盖，并内联首帧脚本防止主题闪烁。
@@ -4052,6 +4054,7 @@ dsh plugin --profile web add dshmarket
 - [corlinniu/dsh-daily-chat](https://github.com/corlinniu/dsh-daily-chat) — 把 DSH Web 侧边栏的「新会话」拆成两种模式：「日常聊天」在专属工作区里用插件自己安装到 harness home 的 `daily` 预设开一个只有人格、网页检索/抓取、提问和上下文压缩的轻量会话（没有文件、Shell、计划模式和子代理），侧边栏只列这些日常会话；「开始工作」保持原有编码 Agent；原生「新会话」按钮被隐藏，其余「新会话」入口按当前模式路由，模式存在 localStorage。
 - [cq-guojia/dsh-session-title-pattern](https://github.com/cq-guojia/dsh-session-title-pattern) — 把 dsh 会话标题统一成「日期｜类型｜主题」（类型与主题由模型对整段对话总结），并支持可逆的会话隐藏：暂时不用的会话从侧边栏收起，不删除、随时一键显示回来。
 - [CresBigB/dsh-session-namer](https://github.com/CresBigB/dsh-session-namer) — 根据会话首条消息判断任务类型，为标题加上「emoji + 分类」前缀（探索、研究、修复、研发、设计、文档、配置、问答、整理），模型调用失败时自动降级为本地规则。
+- [Cui-CN/dsh-session-md-purge](https://github.com/Cui-CN/dsh-session-md-purge) — 在会话右键菜单加入可恢复的“删除会话”：归档会话、解除项目归属，并把会话目录连同该会话写过的 Markdown 文件移入 $DSH_HOME/session-trash；有运行中任务的会话会被拒绝。
 - [Curiouslv/dsh-session-board](https://github.com/Curiouslv/dsh-session-board) — 会话看板：悬浮球一览所有工作区会话，实时显示思考与工具进展、任务耗时、上下文用量，支持近 12h/30 天用量统计，点击直达会话。
 - [cyh3436332528/dsh-plugin-session-purge#plugin](https://github.com/cyh3436332528/dsh-plugin-session-purge/tree/main/plugin) — 永久删除 DSH 会话（而非仅归档），级联清理它的日志目录、投影缓存、工作区记账与子会话（子代理）。提供设置页面板：按工作区分组，显示体积、时间与「打开中 / 已归档 / 子会话 N / 无工作区」标记，支持筛选与批量删除，每条删除都在行下方内联二次确认。
 - [czm15053/dsh-peer-link](https://github.com/czm15053/dsh-peer-link) — 让 dsh 和 Claude Code 会话直接互发消息，附带可点击的会话列表卡片（搜索/刷新/弹窗发送）。
@@ -7554,6 +7557,7 @@ dsh plugin --profile web add dshmarket
 - [cheshireez/dsh-skill-hub](https://github.com/cheshireez/dsh-skill-hub) — DSH Web GUI 技能中枢：基于官方 ctx.skills 注册表浏览、搜索、启停、查看、诊断并新建本地技能，附技能市场：来源快照跟踪、一键全量更新。包名 dsh-skill-hub 和挂载 id skill-hub 与 hoshino114/dsh-skill-hub、amd47802574/dsh-skill-hub 相同，三者只能装一个。
 - [ChthollyFan/dsh-cpp-optimization](https://github.com/ChthollyFan/dsh-cpp-optimization) — C++ 审查技能：先探测目标工程真实的 C++ 标准再给建议，随后按 RAII 与所有权、移动语义、异常安全、性能与内存、容器与算法、并发、模板与编译期、标准边界、类型安全、ABI 与接口设计逐条给出结论，每条含检查点、原因、反例→正例与适用标准。
 - [Chu-Xin-r/wanjiqi-meme](https://github.com/Chu-Xin-r/wanjiqi-meme) — 玩机器（6657 直播间）烂梗技能包：22771 条真实弹幕蒸馏而成，涵盖玩机器式弹幕烂梗、CS×DOTA 双料梗、选手锐评与解说吐槽。
+- [clair0314/dsh-qq-radar](https://github.com/clair0314/dsh-qq-radar) — 把关注的 QQ 群聊总结成中文日报。经本机 NapCat/OneBot 11 拉取历史消息存入 SQLite，逐群摘要，生成带「机会雷达」的 HTML/Markdown 报告（从抱怨、求工具、求助里找产品机会），并可按计划推送到飞书。
 - [cnhenaihui/dsh-skill-manager](https://github.com/cnhenaihui/dsh-skill-manager) — 带内容寻址版本历史的技能管理器：快照、逐文件与行级差异、回滚、zip 导入导出、按技能停用或启用。
 - [Crayonnan/dsh-math-modeling-skills-Gatecraft-](https://github.com/Crayonnan/dsh-math-modeling-skills-Gatecraft-) — 面向 DeepSeek Harness 的门控式数学建模 skill 套件：五阶段流水线、阶段门、国奖写作范式、灵敏度分析、统计诊断与竞赛预设。
 - [creght-dev/skills](https://github.com/creght-dev/skills) — Creght 平台建站技能包：CLI 拉取/推送同步、页面与组件规范、CMS、表单、Auth、SEO、发布与版本回滚。
