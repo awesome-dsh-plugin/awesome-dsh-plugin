@@ -1,0 +1,8 @@
+url: https://github.com/xiaoshuzh/dsh-task-desk
+name: xiaoshuzh/dsh-task-desk
+category: workflow
+tarball: https://github.com/xiaoshuzh/dsh-task-desk/releases/latest/download/dsh-task-desk.tgz
+description:
+  en: 'A project / issue / step task tree where unfinished work carries over to every later day, with day, week and project views and full lineage; agents report progress and submit conclusions through a task_desk tool, and only you approve them.'
+  zh: '一棵「项目 › 问题 › 步骤」任务树：未完成任务自动延续到之后每一天，日、周、项目三视图，看得清每个任务的来龙去脉；agent 用 task_desk 工具回写进展并提交结论，只有你能验收。'
+icon: https://raw.githubusercontent.com/xiaoshuzh/dsh-task-desk/main/assets/icon-180.png
