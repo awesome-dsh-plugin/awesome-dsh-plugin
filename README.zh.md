@@ -6838,7 +6838,7 @@ dsh plugin --profile web add dshmarket
 - [KNLCXY/dsh-websift](https://github.com/KNLCXY/dsh-websift) — 省 token 的网页阅读：底层是真 Chrome/Edge（CDP），一次调用读完多个页面、按相关性筛掉不相关的，只回一段带账本的摘要（实测省 80–98% 上下文）。真实搜索链接、登录态、截图、三档代理。
 - [kyo615/dsh-browser-control](https://github.com/kyo615/dsh-browser-control) — 基于 Playwright MCP 的 AI 浏览器控制：驱动真实可见的 Chrome（导航/点击/输入/快照，约 80 个 browser_* 工具），并在 GUI 内嵌实时截图面板，每次操作后自动刷新。
 - [L1818346/dsh-browser-takeover](https://github.com/L1818346/dsh-browser-takeover) — 浏览器网址接管：维护一份「要登录的网址」清单（只存网址与添加时间，不存账号密码），访问前先回答这条地址在不在清单里；按该站点的会话 cookie 名字判断调试浏览器此刻是否已登录（确定／可能／未登录，_gh_sess 这类匿名 cookie 不计），在带调试端口的浏览器里打开清单中的地址，并按可见文字点击一个元素（会搜索所有 iframe）。一次调用最多点一个元素，不做批量爬取。
-- [laoyingfuhuole/dsh-browser-use-automation](https://github.com/laoyingfuhuole/dsh-browser-use-automation) — 完全后台静默运行的浏览器自动化：每个对话一个离屏浏览器窗口，提供真实 CDP 输入与截图，像 headless 一样工作却不抢焦点、不弹窗。
+- [laoyingfuhuole/dsh-browser-use-automation](https://github.com/laoyingfuhuole/dsh-browser-use-automation) — 完全后台静默运行的浏览器自动化：每个对话一个离屏浏览器窗口，提供真实 CDP 输入与截图，像 headless 一样工作却不抢焦点、不弹窗。基于 Electron 运行，cookie 保存在持久化的用户数据目录里，登录过的页面在之后的会话里仍保持登录。
 - [lemoncat7/dsh-web-search](https://github.com/lemoncat7/dsh-web-search) — 为 DeepSeek Harness 提供可配置联网搜索，支持 SearXNG、Wikipedia、Tavily、Brave 与 Gemini，并支持客户端引擎选择和受控重试。
 - [liangzz1998/dsh-web-devtools](https://github.com/liangzz1998/dsh-web-devtools) — 通过 17 个工具把 Chrome DevTools Protocol 接给 agent，提供页面概览、元素定位、操作时间线、控制台、网络、登录态与下载，读取对象可以是插件自带的专用浏览器，也可以经浏览器扩展读取你当前正在浏览的标签页。
 - [lightrivers/dsh-proxy-switch](https://github.com/lightrivers/dsh-proxy-switch) — 修复开着 Clash / Surge / v2rayN（TUN、fake-IP）时 web_fetch 报 non-public IP address 的问题：自动找到本机 HTTP 代理，代理开着走代理、关了直连；侧栏可一键切换「自动 / 走代理 / 直连」。默认只接管 web_fetch，不影响模型调用。
@@ -9071,7 +9071,7 @@ dsh plugin --profile web add dshmarket
 - [zjbc2000/attention-plugins](https://github.com/zjbc2000/attention-plugins) — 面向 DSH 的任务分级会话通知：标记的主线任务完成或失败时立即提醒，其余会话汇总为一声；另有逐条提醒的均衡模式与完全不响的静音模式（提问与权限请求仍提醒）。支持每类事件独立音效或自定义音频、按会话静音、点击通知直达会话，以及等待子代理结束再提醒。
 - [zjhaaa042-cloud/dsh-mobile-notify](https://github.com/zjhaaa042-cloud/dsh-mobile-notify) — DSH 任务停下来时把通知推送到手机，支持 10 个渠道：ntfy、Bark、钉钉、企业微信、飞书、Server酱、PushPlus、Telegram、Qmsg 与通用 webhook；消息里带会话、目录、耗时、回合号与回复摘要，运行在 Host 侧而不是浏览器页面里。
 - [ztl0001/dsh-notify](https://github.com/ztl0001/dsh-notify) — DSH 任务完成时，在 Windows 通知栏弹出原生通知，带上会话标题、结果状态与最后一条回复的摘要；在 agent 真正停下来时才发一条，而不是每跑一个回合就响一次。
-- [zxlbxx/dsh-feishu-channel](https://github.com/zxlbxx/dsh-feishu-channel) — 飞书/Lark 通道：把会话完成或出错的结果推到手机，并把群里的消息回投给工作区会话。
+- [zxlbxx/dsh-feishu-channel](https://github.com/zxlbxx/dsh-feishu-channel) — 飞书/Lark 通道：把会话完成或出错的结果推到手机，并把群里的消息回投给工作区会话。群里的消息会作为用户消息投递进会话，所以能在 task.chats 所列群里发言的人都能以该会话的工具权限指挥 agent；默认没有列出任何群。应用密钥明文存放在 ~/.dsh/feishu/app.json。
 - [zy12342/dsh-approval-toast](https://github.com/zy12342/dsh-approval-toast) — DSH 的 Windows 授权通知：后台时可直接在通知上点「允许一次 / 拒绝」，前台时当前对话走应用内审批框、其他对话照常提醒；另含完成 / 出错通知，子代理会话保持静默。
 - [zzx-dear/dsh-capybara-notify](https://github.com/zzx-dear/dsh-capybara-notify) — 水豚秘书：桌面宠物气泡+叮咚通知、告警收件箱 API、会话智能提醒（任务完成/需要确认/阻塞）、磁盘/HTTP/进程巡检脚本，以及每日高口碑插件推荐，另附 API 冒烟测试。
 
@@ -9316,7 +9316,7 @@ dsh plugin --profile web add dshmarket
 - [JayYuen666/dsh-quality-gate](https://github.com/JayYuen666/dsh-quality-gate) — 回合收口质量门禁：本回合改过代码或配置时，把改过的文件逐个上溯到项目根，从固定白名单里为该根跑一条检查（`pnpm check` / `cargo check` / `ruff check .` / `tsc --noEmit`）；只有真跑过且失败才带着输出开新轮修复，而不是让回合直接收尾。
 - [JesmonX/dsh-web-shell](https://github.com/JesmonX/dsh-web-shell) — 右侧停靠的可折叠 Web 终端（xterm.js），经 WebSocket 桥接宿主 PTY：支持 bash/zsh 切换、拖拽调宽，折叠时保留会话。
 - [Jesse-njx/dsh-tmuxctl](https://github.com/Jesse-njx/dsh-tmuxctl) — 掌控你的 tmux 面板：list/send-keys/capture、在面板中运行长任务并 watch，破坏性命令需审批。
-- [jetruan/dsh-tailtransit](https://github.com/jetruan/dsh-tailtransit) — 为 Harness 单独运行一个用户态 tailscaled：网页抓取、命令行、其他插件、大模型四类流量各自选择是否走 Tailscale 出口节点，系统路由与 DNS 不变。
+- [jetruan/dsh-tailtransit](https://github.com/jetruan/dsh-tailtransit) — 为 Harness 单独运行一个用户态 tailscaled：网页抓取、命令行、其他插件、大模型四类流量各自选择是否走 Tailscale 出口节点，系统路由与 DNS 不变。需要另行安装 Tailscale 的 tailscaled；它会再启动一个用户级守护进程，把所选流量经本机回环代理转发，并通过 ifconfig.me 查询出口 IP。若设置了 auth key，会保存在插件配置里。
 - [jhuanxx44/dsh-sseye](https://github.com/jhuanxx44/dsh-sseye) — DeepSeek Harness 里的 LLM 调试台：在 llm/stream 层完整捕获每次模型调用（请求参数、流式块、用量、真实 wire 协议），以 DevTools 风格停靠面板展示，支持上下文共享前缀折叠对比、wire JSON 重建、JSON 导出与运行时可调的抓取策略。
 - [JieCore/dsh-team-dev](https://github.com/JieCore/dsh-team-dev) — 为 Agent Teams 的 teammate 提供按回合的工具调用步数预算，并随包提供 team-dev 与 team-boot 技能。
 - [jijijitian/dsh-plugin-syncup](https://github.com/jijijitian/dsh-plugin-syncup) — 通过私有 GitHub Gist 在多台机器间同步插件清单，并把已装插件更新到 npm 或 GitHub 上的最新发布版。推送前先展示差异：版本冲突默认取较新一方，仅线上有的条目默认保留，仅本机有的直接推送。每次更新可逐项选择 npm 或 GitHub 通道，安装全程走插件管理器并输出实时日志。
