@@ -2703,6 +2703,7 @@ dsh plugin --profile web add dshmarket
 - [TetraSsky/dsh-offpeak](https://github.com/TetraSsky/dsh-offpeak) — 在你配置的高峰时段内不发送 DeepSeek 模型调用，直到该时段结束再发出，从而按低谷价格计费；等待期间暂停进行中的目标，并显示账户余额与 8 小时消费图表。
 - [The-five-stooges/dsh-deepseek-usage](https://github.com/The-five-stooges/dsh-deepseek-usage) — 在侧边栏脚部显示一行 DeepSeek 账户余额（带刷新按钮），点击打开弹层：余额卡、7/30 天每日 Token 与估算费用图表、按模型明细表，以及平台用量页外链。余额取自官方 /user/balance 接口；用量由本机 DSH 会话日志聚合，按官方峰谷单价以人民币估算，因此界面明确标注为估算值并写明统计范围。
 - [Thedeergod666/dsh-musage](https://github.com/Thedeergod666/dsh-musage) — 在 composer 输入框旁显示 5 家 AI 套餐用量与余额（MiniMax、DeepSeek、Kimi、OpenRouter、智谱），跟随当前模型自动切换，复用 DSH 模型设置里已配的 API Key。
+- [themachinecorp/dsh-minimax-radar](https://github.com/themachinecorp/dsh-minimax-radar) — MiniMax Token Plan 的黑白仪表盘：侧边栏常驻 5 小时与周窗口余量及两级重置倒计时，主面板另有本机按日、按模型的 token 消耗与按量价目估算费用。
 - [ThinkofRain1213/deepseek-harness-wallet-patched](https://github.com/ThinkofRain1213/deepseek-harness-wallet-patched) — feibi-mochi/deepseek-harness-control-center 的维护分支，上游自 2026-09-09 起未再更新。计价改为跟随官方模型池、而非硬编码模型前缀，因此 DeepSeek V4.1 Flash（`deepseek-flash`）能正常计价并显示峰谷时钟；官方价格页改为结构化解析，模型改名或下架不再中断价格同步。界面在原有中文之外增加英文。其余与原插件一致：余额、本会话花费与 token 拆分、24 小时峰谷时钟、Z.ai 套餐额度与本机用量账本，并跟随宿主明暗主题。
 - [TINGOD2006/dsh-tps](https://github.com/TINGOD2006/dsh-tps) — 当前会话的实时 tokens/s 读数卡片，可停靠左侧栏或作为悬浮卡片拖动，形态在卡片右上角切换。
 - [tma1-ai/dsh-otel](https://github.com/tma1-ai/dsh-otel) — 把 agent loop 以 OpenTelemetry traces、metrics、logs 导出到 GreptimeDB，附七个 Grafana dashboard，覆盖 token 用量、成本、会话结果和每轮耗时。
@@ -2923,6 +2924,7 @@ dsh plugin --profile web add dshmarket
 - [dyx003/dsh-client-ui-aqua-patched](https://github.com/dyx003/dsh-client-ui-aqua-patched) — 适配 DSH 0.2.1-rc.2 的 Aqua 玻璃主题，提供悬浮玻璃侧栏，并修复 Windows 侧栏和标题栏控件布局。
 - [EIGHTfs/dsh-theme-mediascape](https://github.com/EIGHTfs/dsh-theme-mediascape) — DSH Web UI 媒体景观主题：立绘/视频壁纸（mp4/webm，本地+在线）+ 开屏动画 + 基底配色（单真源 JSON + 预设包 + 取色器 + 胶囊宿主元素样式）+ 氛围粒子 + 背景音乐播放器（封面/歌单/随机）+ 打字音效 + 可拖动 dock 工具条；dock「传」统一上传壁纸与音乐（按文件后缀识别）——上传中途不落盘、暂停落 .part 快照可续传、文件名+大小去重预检「已跳过」、移除真实删除并前后刷新列表。
 - [elalamiimed/dsh-prism-themes](https://github.com/elalamiimed/dsh-prism-themes) — Prism 主题工作室为 DeepSeek Harness Web UI 带来 24 套明暗双生主题和实时主题工作室。
+- [elegant01/dsh-workbuddy-theme](https://github.com/elegant01/dsh-workbuddy-theme) — 把 DSH Web GUI 改成腾讯 WorkBuddy 桌面的样子：薄荷绿品牌色 #00c29a、灰阶侧栏、24px 圆角输入框配单层细描边、对话栏 848px。取值逐项取自 WorkBuddy v5.0.2 安装包里的设计令牌，不是照着照片调；只做浅色，纯 CSS，移除注入的样式即还原。
 - [elong16/dsh-skin-xuyuanwu](https://github.com/elong16/dsh-skin-xuyuanwu) — 许愿屋古风主题皮肤：暖灯琥珀色调、今日真实月相与轨迹、字落生辉打字萤火、纯原生风铃音效与每日许愿签。
 - [elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) — 前置要求：DeepSeek Harness 0.1.5-rc.1+（DSH Desktop ≥ 2.0.7）且 dsh-better-sidebar ≥ 0.19.0，安装或更新本插件前请先更新两者。把本机 Wallpaper Engine 的 Video/Web 壁纸实时播放到聊天界面后方，Scene 壁纸由内置渲染器输出完整场景帧，支持内容分级/类型过滤、自定义壁纸上传与 iOS 液态玻璃设置窗口。
 - [EnderBull/dsh-mist-ink-theme](https://github.com/EnderBull/dsh-mist-ink-theme) — 低对比度石墨灰深色主题，侧边栏、输入区与弹层使用可调强度的毛玻璃。
@@ -10404,6 +10406,7 @@ dsh plugin --profile web add dshmarket
 - [9livewolf/dsh-think-bounce-pet](https://github.com/9livewolf/dsh-think-bounce-pet) — 这个插件的功能就是让两只大肥鱼在界面弹来弹去，无实意
 - [a86582751/dsh-nexttavern](https://github.com/a86582751/dsh-nexttavern) — NextTavern 是面向 DeepSeek Harness 0.1.7-rc.2 Web 的长篇角色扮演插件，支持角色卡导入与创作、世界线、世界书、分层长期记忆、关键词／语义／混合检索、角色 Agent，以及角色卡或小说导出；支持 SillyTavern 角色卡导入，v0.2.9 修复分发与安装问题。
 - [A8Chann/dsh-pet-live2d#dsh-live2d-pet](https://github.com/A8Chann/dsh-pet-live2d/tree/main/dsh-live2d-pet) — DSH Web GUI 的 Live2D 桌宠：可拖动、跟随鼠标，跟着会话状态换动作、表情与装扮，右键呼出控制面板。
+- [AAAjzx111/dsh-douyin-agent](https://github.com/AAAjzx111/dsh-douyin-agent) — DSH 里的抖音：限时自主观看（抽帧故事板 + 弹幕采样）、人格与兴趣记忆、观看日报，并给许可名单里的好友自动回私信、每天问候一次。本条目是基于 dafeiyu1314520/dsh-douyin-agent 1.4.7 的维护分支，修掉了关注名单读取超时、会话点不开、漏回消息、问候发一条就停等问题。
 - [Aik358/dsh-draw-gacha](https://github.com/Aik358/dsh-draw-gacha) — 在发送按钮旁拉动 3D 拉杆，把模型思维链的文本信号变成一场像素风抽卡演出。
 - [alanwang87/dsh-weread-moyu](https://github.com/alanwang87/dsh-weread-moyu) — 扫码登录微信读书，把当前书页正文以低对比度文字层垫在整个 DSH 界面背后，聊天区半透明浮在上面，支持整本离线缓存、看清当前页浮层和书架/章节/透明度/字号/滚动速度调节。微信读书登录 cookie 以明文保存在 ~/.dsh/weread-moyu/session.json（权限 0600），整本缓存（最多 500 MB）放在 ~/.dsh/weread-moyu/cache；只访问 weread.qq.com。
 - [Alterssss/dsh-bili-whale](https://github.com/Alterssss/dsh-bili-whale) — 一条按自己作息过日子的 B 站插件：宿主里每 60 秒一次心跳，在设定的作息窗口里随机挑一个时刻叫醒专用会话（今天不想看是按概率跳过），再交给自带的 38 个子命令——信息流、字幕、弹幕、评论、ffmpeg 抽帧、两本日记。每天最多发 N 条评论/动态并 @ 主人（默认 3，按配额账本计数，撞到限流或验证码就停手）。同时轮询评论回复、私信和直播间弹幕；除主人以外的回复先入队，等主人在设置页批准。设置 → 养鱼 写 ~/.dsh/bili-whale.config.json；cookie 单独在 ~/.bili-ai/credentials.json，只写不回显。HTTP 路由只认回环地址并过 DSH 信任栅栏。抽帧需要 Node 18+ 与 ffmpeg。
