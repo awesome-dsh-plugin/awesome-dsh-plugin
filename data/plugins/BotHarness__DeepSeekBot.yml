@@ -1,0 +1,6 @@
+url: https://github.com/BotHarness/DeepSeekBot
+name: BotHarness/DeepSeekBot
+category: identity
+description:
+  en: 'Tobs (formerly DeepSeekBot): a personal bot team with persistent Git-backed memory per bot, group chat and task delegation, scheduled tasks, a bot marketplace, and bridges to Slack, Discord, Feishu/Lark, QQ and WeChat.'
+  zh: 'Tobs（原 DeepSeekBot）：个人 Bot 团队，每个 Bot 有可审阅的 Git 记忆，支持群聊协作、任务委派、定时任务和 Bot 市场，并可接入 Slack、Discord、飞书/Lark、QQ 和微信。'
