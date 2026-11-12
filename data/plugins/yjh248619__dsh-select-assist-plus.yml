@@ -1,0 +1,7 @@
+url: https://github.com/yjh248619/dsh-select-assist-plus
+name: yjh248619/dsh-select-assist-plus
+category: ui
+description:
+  en: Windows selection overlay for DSH, Codex and Claude desktops that explains, summarizes or translates the selected text and can quote it into the active agent input box; it renders LaTeX formulas, keeps several panels open and folds or minimizes them to the taskbar.
+  zh: Windows 划词浮窗：在 DSH、Codex、Claude 桌面选中文字即可解释、总结、翻译，或把引用粘贴进当前 Agent 输入框；支持 LaTeX 公式渲染、多窗口并存、折叠与最小化到任务栏。
+icon: https://raw.githubusercontent.com/yjh248619/dsh-select-assist-plus/main/assets/icon-180.png
