@@ -1,0 +1,6 @@
+url: https://github.com/Ztqing4Agents/dsh-skill-panel
+name: Ztqing4Agents/dsh-skill-panel
+category: skill
+description:
+  en: 'Panel for the DSH web GUI that keeps built-in, local and market-installed skills in one list, decides each row by on-disk evidence (symlink, install ledger) under a fixed precedence, listing a duplicated name once, from the higher-precedence source. Switches rewrite disable-model-invocation in its own SKILL.md; built-in skills have no writable file, so the panel stores their state and says the registry is unchanged; symlinks are read-only. The add dialog takes a local directory or a public github.com link (.git, /tree, #path:), shallow-cloned. A market tab browses the skillhub.cn mirror across three source scopes and installs into ~/.dsh/skills, with update checks and rollback on failure. UI ships in Chinese and English. Package name and mount id are dsh-skill-panel, so it installs alongside dsh-skill-center.'
+  zh: 'DSH Web GUI 的技能面板：内置、本地与市场装的技能列在同一页，每行按磁盘证据（软链、安装台账）在固定优先级下判归属，同名只列一次，取高优先级那份。开关改写技能自己 SKILL.md 里的 disable-model-invocation；内置技能没有可写文件，状态存在面板自己的存储里，面板也说明改的不是注册表；软链技能只读。添加弹窗收本机目录路径或 github.com 公开仓库链接（.git、/tree、#path:），用浅克隆取回。市场页签查 skillhub.cn 镜像的三档来源并装到 ~/.dsh/skills，带更新检查与失败回滚。界面中英双语。包名与挂载 id 都是 dsh-skill-panel，可与 dsh-skill-center 同时安装。'
