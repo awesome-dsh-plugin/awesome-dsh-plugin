@@ -223,6 +223,7 @@ dsh plugin --profile web add dshmarket
 - [764475881/dsh-chat-width](https://github.com/764475881/dsh-chat-width) — 为 DeepSeek Harness 网页界面提供可拖拽的聊天内容宽度：文字列右缘的把手覆盖内置的 748px 宽度（默认 1040px、范围 520~2400、按浏览器记忆，双击恢复默认）。
 - [778672151/dsh-session-turn-eta](https://github.com/778672151/dsh-session-turn-eta) — 在输入框下方显示当前这一轮 DeepSeek Harness 任务的实时进度条、百分比与预计剩余时间；估计随轮次实时重锚，任务失败或中断时进度条变红。
 - [7AAAAAH/dsh-restart-app](https://github.com/7AAAAAH/dsh-restart-app) — 窗口标题栏左上角、收起侧边栏按钮右侧的重启按钮：一次点击停掉这个桌面应用的全部进程（窗口外壳、宿主、渲染进程与工具子进程），再重新拉起可执行文件，新实例就绪后自动刷新页面。仅支持 Windows 桌面版，其它宿主里按钮自动隐藏。
+- [7Andrew-Chu/dsh-todolist](https://github.com/7Andrew-Chu/dsh-todolist) — Harness 界面上的毛玻璃待办卡片：可拖动、可缩放、可收起，支持四个状态视图与艾森豪威尔四象限模式。
 - [dsh-my-plugins](https://github.com/7gzgn/dsh-my-plugins) — 「我装的插件」：顶栏一颗药丸告诉你这个 DSH 到底加载了多少插件，点开是可搜索的清单——每个插件的名字、版本、一句人话作用，自带和第三方分开标。只读、零配置。
 - [822376583-hub/dsh-works-gallery](https://github.com/822376583-hub/dsh-works-gallery) — 在右侧栏把工作区里所有图片和视频按时间倒序铺开，带缩略图、类型筛选、搜索和灯箱查看。
 - [879745uhjun/dsh-approval-zh](https://github.com/879745uhjun/dsh-approval-zh) — 把 DSH 审批提示和 ask_user_question 卡片里的英文说明翻成中文显示；审批结果、选项标签、工具名和 JSON 参数保持不变，审批审计记录里仍是英文原文。
@@ -959,6 +960,7 @@ dsh plugin --profile web add dshmarket
 - [iwanant/dsh-emotion-ball](https://github.com/iwanant/dsh-emotion-ball) — 给 DSH 的桌面情绪小球：44×44 置顶小挂件，实时反映 agent 正在做什么（思考、检索、联网、出错、等待输入）；任务在你不看时完成、或有问题等你回答时，右上角亮「!」「?」角标。仅 Windows；首次使用会自行下载 Electron 运行时。
 - [Iwctwbh/dsh-flowglass](https://github.com/Iwctwbh/dsh-flowglass) — DeepSeek Harness 会话实时流程图，可查看工具调用、并行分组、子代理分支和逐层详情。
 - [j62268781-alt/dsh-skills-mcp-manager](https://github.com/j62268781-alt/dsh-skills-mcp-manager) — 在 DSH 设置面板里一站式管理技能与 MCP 服务器。技能以磁盘为准：浏览、搜索、预览正文、新建、重命名、删除，删除前自动写一份备份。全局 MCP 就是 cordis.patch.yml 里的真实 Loader 行，项目级条目只挂到对应项目的会话。展开卡片会列出该服务器实际注册的工具，并可只保留需要的那些——被挡下的工具不进工具注册表，因此不占用每一轮的上下文。每张卡片带连接状态标签（已连接并显示工具数 / 重试中 / 已放弃重试 / 激活失败）与一键重连，让启动时连不上、工具悄悄消失的服务器看得见。另可从 26 个 MCP 客户端导入既有配置。
+- [jackdu2333/dsh-hermes-workspace](https://github.com/jackdu2333/dsh-hermes-workspace) — DSH 侧栏面板通过 JSON-RPC 直连本机运行的 Hermes TUI Gateway：切换 Bot profile、恢复各自的 Bot Chat 会话、流式显示消息与工具增量，并可内嵌 Hermes 终端视图。
 - [JackEngineer/dsh-quick-screenshot](https://github.com/JackEngineer/dsh-quick-screenshot) — 悬浮在任意 DSH 页面上的一键截图按钮（输入框工具行里另有一个）：用宿主侧工具截取 DeepSeek Harness 窗口（按住修饰键可截整个桌面），并把 PNG 放到用得上的地方——直接作为附件落进输入框草稿，没有输入框时放进剪贴板。Windows 实测，另带 macOS/Linux 后端；零依赖、无构建步骤。
 - [JackieJam/dsh-iridescent-model-selector](https://github.com/JackieJam/dsh-iridescent-model-selector) — 用一个面板替换输入框的模型按钮：按服务商分组的模型列表与搜索、置顶的收藏模型，以及按模型声明档位分级的思考程度滑杆，其极光渐变与光晕随档位增强；切回某个模型时恢复上次用过的档位，内置选择器仍作为备用保持注册。
 - [jackma5477001/dsh-system-monitor](https://github.com/jackma5477001/dsh-system-monitor) — 在 DSH Web 界面右上角实时显示运行 DSH 服务端机器的 CPU 与内存使用情况。
@@ -7512,6 +7514,7 @@ dsh plugin --profile web add dshmarket
 - [zh851233/docs-mode](https://github.com/zh851233/docs-mode) — 面向 DeepSeek Harness 的技术文档撰写 Agent 模式：模板驱动写作与自学习模板库、技术文档去 AI 味，以及文档质量保障工具集（量化体检、多文档口径一致性校验、图/表编号重排、版本同步检查、Word/PDF 导出与界面截图自动化）。
 - [zhangj1164/dsh-mega-plugins#dsh-openwiki-visualize](https://github.com/zhangj1164/dsh-mega-plugins/tree/main/packages/openwiki/dsh-openwiki-visualize) — 在 DSH Web 右侧边栏预览工作区的 OpenWiki：识别 wiki 目录，用官方 `openwiki visualize` 阅读器在本地回环端口提供服务并嵌入自有标签页，同时对照可配置的版本下限报告 openwiki 与 DSH 版本，并向 registry 检查自身更新。
 - [zhtx2024/dsh-pdf](https://github.com/zhtx2024/dsh-pdf) — DSH 的 PDF 解析工具：pdf_info、pdf_extract_text、pdf_render_page 三件套，pdfjs 与自研渲染器双引擎，未内嵌 CJK 字体的 PDF 也能用系统字体渲染出图。
+- [zhuyuhan327/dsh-translation-reader](https://github.com/zhuyuhan327/dsh-translation-reader) — 双语论文阅读插件：按原段落位置逐段翻译 PDF 论文，支持对照阅读、论文问答、断点续译与导出。
 - [zjsthmjialin/inspiration-deck-workshop#dsh-inspiration-deck-workshop](https://github.com/zjsthmjialin/inspiration-deck-workshop/tree/master/dsh-inspiration-deck-workshop) — 注册灵感演示工坊技能：本地静态 HTML 演示文稿（6 套 deck 模板、25+ 布局、23 套主题与动效展示馆），带 validate 校验与 PNG/PDF 导出 CLI 和 smoke 测试，零运行时依赖。
 - [zjsthmjialin/pdf-background-gray-codex-skill#dsh-pdf-background-gray](https://github.com/zjsthmjialin/pdf-background-gray-codex-skill/tree/main/dsh-pdf-background-gray) — 注册 remove-pdf-background-gray 技能：去除扫描 PDF 的灰色/米白底色，保持分辨率、页面几何与抗锯齿文字边缘（无损 Flate 写回），核心为单文件 Python 脚本（pypdf + Pillow + numpy）。
 - [zmz123612/dsh-plugin-book-deconstruct](https://github.com/zmz123612/dsh-plugin-book-deconstruct) — Host 插件：任意会话可用 /dsh-plugin-book-deconstruct 命令与 dsh-plugin-book-deconstruct 工具，输入书名与作者后讲透全书并给出一段深度思想。
