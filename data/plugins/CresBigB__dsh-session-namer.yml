@@ -1,0 +1,6 @@
+url: https://github.com/CresBigB/dsh-session-namer
+name: CresBigB/dsh-session-namer
+category: session
+description:
+  en: 'Classifies each session from its first user message and prefixes the title with an emoji category (explore, research, fix, build, design, docs, config, qa, tidy), falling back to a local keyword rule when the model call fails.'
+  zh: 根据会话首条消息判断任务类型，为标题加上「emoji + 分类」前缀（探索、研究、修复、研发、设计、文档、配置、问答、整理），模型调用失败时自动降级为本地规则。

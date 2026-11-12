@@ -1,0 +1,17 @@
+# 投稿条目：awesome-dsh-plugin/awesome-dsh-plugin
+# 目标路径：data/plugins/CVEO__dsh-digital-earth.yml
+# 规则来源：https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md
+# 注意：一个 PR 只加这一个文件；描述必须与代码一致，不要带营销词。
+
+url: https://github.com/CVEO/dsh-digital-earth
+name: CVEO/dsh-digital-earth
+category: ui
+description:
+  en: 'Digital Earth: opens a 3D globe beside the chat where you can load city models or drone-scanned scenes, measure distances, take screenshots, and run flood or sunlight analysis — or just ask the AI to do it (3D Tiles / 3DGS).'
+  zh: '数字地球：在对话旁边打开三维地球，加载城市模型或实景三维数据就能浏览；量距离、截图、做淹没和日照分析，也可以一句话让 AI 代劳（支持 3D Tiles / 3DGS）。'
+
+icon: https://raw.githubusercontent.com/CVEO/dsh-digital-earth/main/assets/icon.png
+
+# 可选：tarball 仅在你的仓库无法从源码安装时才需要；已发 npm，无需填写。
+# 已发布 npm 包（@cveo/dsh-digital-earth），条目里不要手写 npm: 字段——会被校验拒绝，
+# 注册表映射由 CI 通过 package.json 的 repository 字段自动关联。

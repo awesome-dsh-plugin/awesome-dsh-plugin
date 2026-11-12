@@ -1,0 +1,7 @@
+url: https://github.com/DSM-DSM/dsh-ai-company
+name: DSM-DSM/dsh-ai-company
+category: workflow
+description:
+  en: 'Multi-workspace agent federation with persistent ticket trees, parallel worker sessions, structured evidence reports, independent acceptance checks, retry/stop and restart recovery. Workers get shell and file tools in the ticket''s directory, company_verify re-runs the ticket''s acceptance commands in a shell on the host, and scope lists are task authorization rather than a sandbox. State is stored in ~/.dsh/ai-company; the optional company_repo_* tools run separately installed aoci/codegraph commands on any path they are given.'
+  zh: '多工作区 Agent 联邦：持久化 Ticket 树、并行 Worker 会话、结构化证据报告、独立验收、重试停止与重启恢复。Worker 在工单目录里拥有 shell 与文件工具，company_verify 会在宿主上用 shell 重新执行工单的验收命令；scope 白名单是任务授权语义，不是沙箱。状态存放在 ~/.dsh/ai-company；可选的 company_repo_* 工具会在给定的任意路径上运行另行安装的 aoci / codegraph 命令。'
+icon: https://raw.githubusercontent.com/DSM-DSM/dsh-ai-company/main/assets/icon-180.png

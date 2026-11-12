@@ -1,0 +1,6 @@
+url: https://github.com/LycorisRadiataX/dsh-model-tabs
+name: LycorisRadiataX/dsh-model-tabs
+category: model
+description:
+  en: A zero-config composer model picker with one provider per tab, independent scrolling per provider, cross-provider search with provider badges and reasoning-effort chips; selections stay in sync with the built-in /model dialog.
+  zh: 零配置的输入框模型选择器：每个 provider 一个 tab、各自独立滚动，支持带渠道徽标的跨渠道搜索和推理强度 chips，并与内置 /model 弹窗共享同一份模型目录。

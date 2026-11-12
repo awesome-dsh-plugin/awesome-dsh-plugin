@@ -1,0 +1,6 @@
+url: https://github.com/Domush/dsh-plugin-grill-me
+name: Domush/dsh-plugin-grill-me
+category: workflow
+description:
+  en: 'Adds a /grill-me slash command that switches the session to plan mode and prompts the agent to ask 3 to 20 structured questions about your goal, each with a recommended option and alternatives, through ask_user_question before it plans.'
+  zh: '添加 /grill-me 斜杠命令：把会话切到计划模式，并提示 agent 在规划前通过 ask_user_question 就你的目标提出 3 到 20 个结构化问题，每个问题带推荐选项和备选项。'

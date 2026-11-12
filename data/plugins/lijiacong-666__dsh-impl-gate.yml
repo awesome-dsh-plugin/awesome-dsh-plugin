@@ -1,0 +1,6 @@
+url: https://github.com/lijiacong-666/dsh-impl-gate
+name: lijiacong-666/dsh-impl-gate
+category: workflow
+description:
+  en: 'Requirement to a detailed design doc another AI can build from: the model fills a plan, the plugin validates it and emits a SPEC plus task cards, then independent review and implementation evidence check the result. Needs Python 3.11 or newer; the spec-graph engine it calls is bundled in the package.'
+  zh: '需求 → 另一 AI 能直接开工的详细设计文档：模型填 plan，插件校验后产出 SPEC 与任务卡，再由独立评审与实现证据复核。需要 Python 3.11 及以上；它调用的 spec-graph 引擎已随包附带。'

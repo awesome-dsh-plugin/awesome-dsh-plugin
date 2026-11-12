@@ -1,0 +1,7 @@
+url: https://github.com/caigou114/dsh-teleagent-skill-builder
+name: caigou114/dsh-teleagent-skill-builder
+category: skill
+description:
+  en: 'Installs a TeleAgent skill-authoring standard as a DSH skill: the full spec, a validator that reproduces the platform checks (and fails on .pyc bytecode), a scaffolder, a packer and a TeleAgent installer.'
+  zh: '把 TeleAgent 技能制作规范装成 DSH 技能：规范全文、复刻平台校验的校验器（含 .pyc 直接判失败）、脚手架、打包器、TeleAgent 安装器。'
+tarball: https://github.com/caigou114/dsh-teleagent-skill-builder/releases/download/v0.1.0/dsh-teleagent-skill-builder-0.1.0.tgz

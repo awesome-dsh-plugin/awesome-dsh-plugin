@@ -1,0 +1,6 @@
+url: https://github.com/ITxuezhe/dsh-skill-pilot
+name: ITxuezhe/dsh-skill-pilot
+category: skill
+description:
+  en: 'A skill picker beside the composer that lists installed skills under Chinese categories, searches them by name or purpose, and suggests up to three skills matching the draft you are typing.'
+  zh: '输入框旁的技能面板：把已安装的技能按中文分类列出，可按名字或用途搜索，并根据你正在写的草稿推荐最多三个相关技能。'

@@ -1,0 +1,7 @@
+url: https://github.com/darkneu/dsh-finesse-visualizer
+name: darkneu/dsh-finesse-visualizer
+category: ui
+description:
+  en: 'Visualizes Finesse 3 KatScript in the conversation and adds a drag-and-drop optical bench designer that generates the Finesse model. It scans every user and assistant message for KatScript or a Finesse Python cell and renders them in the background with the first Python interpreter that can import finesse (Finesse 3, NumPy and Matplotlib required; interpreter overridable with FINESSE_VIZ_PYTHON), keeping the code and figures under ~/.dsh/finesse-vis.'
+  zh: '在对话中自动把 Finesse 3 KatScript 渲染成光学构型图，并提供拖拽式光学设计器实时生成对应的 Finesse 模型。它会扫描每条用户和助手消息里的 KatScript 或 Finesse Python 单元，在后台用第一个能 import finesse 的 Python 解释器渲染（需要 Finesse 3、NumPy 和 Matplotlib，可用 FINESSE_VIZ_PYTHON 指定解释器），代码和图存在 ~/.dsh/finesse-vis。'
+tarball: https://github.com/darkneu/dsh-finesse-visualizer/releases/latest/download/dsh-finesse-visualizer.tgz
