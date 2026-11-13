@@ -1,0 +1,6 @@
+url: https://github.com/Less410/dsh-aidevops
+name: Less410/dsh-aidevops
+category: dev
+description:
+  en: Bridges an AI DevOps control plane into DeepSeek Harness as native tools for platform health, agent delivery status, synced cloud resources and delivery tasks.
+  zh: 把 AI DevOps 控制台接入 DeepSeek Harness，提供平台健康检查、智能体交付状态、已同步云资源与交付任务等原生工具。
