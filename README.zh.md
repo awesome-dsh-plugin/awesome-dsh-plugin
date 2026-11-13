@@ -1262,6 +1262,7 @@ dsh plugin --profile web add dshmarket
 - [LUgABeEEE/dsh-adapt-packs](https://github.com/LUgABeEEE/dsh-adapt-packs) — 第三方 DSH 插件面板的手机适配包：44px 触控地板、宽度回收、外壳命中区与浮动控件让位；由 dsh-mobile 插件从其 extensions 目录加载（须先装 dsh-mobile 才会生效），附设置页一键装/卸与插件兼容清单。
 - [LUgABeEEE/dsh-global-todo](https://github.com/LUgABeEEE/dsh-global-todo) — 侧边栏里的全局跨会话待办清单，人和 agent 共用同一份：十个 global_todo_* 工具可在任意会话中新增、批量抓取、修改、挂文档与链接、追加进展记录、标记完成；每条待办可按四种方式交给 agent 会话，派发结果记回条目本身。清单存成一个 JSON 文件。
 - [LUgABeEEE/dsh-sidebar-density](https://github.com/LUgABeEEE/dsh-sidebar-density) — 轻量级侧栏 UI：五个折叠开关、三档密度预设与三档宽度预设，入口收在底部一行与设置分区；无依赖、无后台服务。
+- [lukeinx/dsh-workboard](https://github.com/lukeinx/dsh-workboard) — 新增工作台页面，可自由排布 内置 widget，包括会话与后台任务、待办、ICS 日历、天气、热榜、RSS 订阅、行情和系统监控；也可让 Agent 按一句话描述生成沙箱隔离的自定义 widget。
 - [LUMIAO9527/DSH-Focus](https://github.com/LUMIAO9527/DSH-Focus) — 把主页侧栏入口按工作区上方和下方重新分组，可逐个开关已安装插件的入口，改动即时保存。
 - [LUMIAO9527/DSH-suggestions](https://github.com/LUMIAO9527/DSH-suggestions) — 根据会话生成下一条消息建议并优化草稿，支持候选翻页、快捷键录制和配套 MCP 工具。
 - [lumine-423/dsh-session-popout](https://github.com/lumine-423/dsh-session-popout) — 把 DSH 侧边栏里的会话拖出来，即在独立的原生系统窗口中打开；窗口内是完整的标准会话界面（Markdown、工具栏、设置都在），只裁掉侧边栏，因此可以同时盯住多个会话，不必来回切换。Windows 已验证，macOS/Linux 未实测；需在 DSH 桌面端（Electron）中使用。
@@ -1988,6 +1989,7 @@ dsh plugin --profile web add dshmarket
 - [wowswows/dsh-req-workbench](https://github.com/wowswows/dsh-req-workbench) — 让对话中的 AI 在会话需求页整理、合并和更新通俗的功能清单。基于 Songran241/dsh-req-workbench 的非官方重构版，沿用上游包名，不能与原版同时安装。
 - [wqx-txdsyl/dsh-ds-attach](https://github.com/wqx-txdsyl/dsh-ds-attach) — **DeepSeek Chat（chat.deepseek.com）同款附件**：回形针上传按钮、240×64 DS 风格文件卡片（官方彩色文档图标，从 DS 前端 bundle 提取）、拖拽上传、文本提取（PDF/DOCX/XLSX/TXT）注入消息、对话流中渲染真实附件卡片（自定义 user 渲染器）且模型读取完整内容。
 - [wqx11235/dsh-github-profile](https://github.com/wqx11235/dsh-github-profile) — 在 DSH 侧栏里看 GitHub 档案：仓库卡（语言与星标）与一年贡献热力图，只读公开信息。
+- [wqx11235/dsh-sidebar-fold-37](https://github.com/wqx11235/dsh-sidebar-fold-37) — DSH 侧栏收纳：把插件注册的面板行收成一行「更多」，悬停或点击在行内向下展开；右键进设置页，可勾选哪些面板留在外面。
 - [WSL043/dsh-reasoning-slider](https://github.com/WSL043/dsh-reasoning-slider) — 为模型添加推理强度滑块，支持原生与动画模式、明暗配色，以及全局或按模型配色。
 - [WsTe47/dsh-step-clock](https://github.com/WsTe47/dsh-step-clock) — 在网页版输入框上方用一句中文显示当前正在执行的智能体步骤：步号、正在执行的工具、以及已运行多久。步骤结束后会保留该步用时，直到下一步开始，因此慢步骤事后也能查证。
 - [wsxwj123/dsh-plugins#dsh-composer-tools](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-composer-tools) — 输入框工具集：方向键调取历史消息（限首/末行触发，兼容输入法与命令菜单）、指令查看/编辑器（全局与项目级 AGENTS.md / CLAUDE.md）、提示词库（780 条中文提示词，源自 Cherry Studio agents-zh 语料，AGPL-3.0，一键插入输入框）。npm 包名 `dsh-composer-tools`。
@@ -2924,6 +2926,7 @@ dsh plugin --profile web add dshmarket
 - [abuluoshuai/DSH-color-style](https://github.com/abuluoshuai/DSH-color-style) — 为 DeepSeek Harness 提供十种来自 Markdown 阅读器的阅读配色：整个窗口背景与正文排版跟随方案变化，并提供独立设置页切换。
 - [acdsh4869/dsh-aqua-theme](https://github.com/acdsh4869/dsh-aqua-theme) — Aqua 玻璃质感主题（适配 DSH v0.2.x 与桌面端 v0.22.3+）：顶栏、侧边栏、输入框、统计行与轨迹视图悬浮在 WebGL 流体板或图片/视频壁纸上的磨砂玻璃片，云母/兼容双布局，模糊、磨砂、色调、亮度可调，海洋装饰（粒子鲸鱼、小鱼、网状交互、鼠标辉光），一键恢复默认，总开关关闭即完全还原原生界面；承 WYH66666666 原作（0.1.x）与 du-u-uck 的 0.1.1-rc.2 适配。
 - [ahian-lee/dsh-bliss-glass](https://github.com/ahian-lee/dsh-bliss-glass) — 让 XP 时代的风景壁纸与现代磨砂玻璃界面同框的主题：DeepSeek Harness Web 界面 之下的固定壁纸底板、经主题 token 应用的面板玻璃样式、支持导入自定义图片的 壁纸选择器与明暗切换按钮——桌面与移动端均可使用。
+- [AIcivilization/dsh-her](https://github.com/AIcivilization/dsh-her) — DSH 桌面女友：住在桌面上、壁纸里或 dsh 网页里，语音聊天，会先开口，记得你；可以设好几个人物，形象和编排都能自己定。
 - [AIR-pixel/air-pixel-liquid-glass](https://github.com/AIR-pixel/air-pixel-liquid-glass) — 为 DeepSeek Harness 提供可配置的液态玻璃主题，包含半透明界面、壁纸、桌面透出、窗口模糊、自定义光标、点击涟漪和消息辨识选项。
 - [AKS1st/dsh-cyber-particle](https://github.com/AKS1st/dsh-cyber-particle) — 为 DSH Web 界面提供粒子网络动态背景：全屏覆盖、点击穿透、零运行时依赖。
 - [AKS1st/ikun-theme-skin](https://github.com/AKS1st/ikun-theme-skin) — ikun 主题皮肤：星蓝昼/夜与背带裤黑金三套配色接入系统主题列表，全屏照片壁纸轮播、音乐盒与发送音效。
@@ -5537,6 +5540,7 @@ dsh plugin --profile web add dshmarket
 - [cuiyuexin428/dsh-cpp-probe](https://github.com/cuiyuexin428/dsh-cpp-probe) — Windows + CDB 下的 C++ 运行时信息探针：cpp_trace 一次会话多断点打印变量（替换手打 print），cpp_probe 条件断点输出调用栈。安装：dsh plugin --profile web add dsh-cpp-probe。
 - [curtainsmall/dsh-electro-lab](https://github.com/curtainsmall/dsh-electro-lab) — DSH 电气电子计算插件：所有计算都通过专用工具完成，基于 SI 基本单位的自描述复数值对象；附带隔离的计算智能体预设与记录面板，每次求解落盘存档。
 - [curtainsmall/dsh-reckoner](https://github.com/curtainsmall/dsh-reckoner) — 面向 DeepSeek Harness 的确定性计算引擎，附带一个预设：引导 LLM 通过引擎而非文本生成来完成计算。
+- [cybeshi/dsh-plugin-whale-butler](https://github.com/cybeshi/dsh-plugin-whale-butler) — 说人话就能记的本地账本。一句话或一张截图记一笔收支，支持账户、类别、退款、分期、债权、债务和离线 HTML 图表；账本存在本地 JSONL 文件里。
 - [czcdr/dsh-plugin-rea](https://github.com/czcdr/dsh-plugin-rea) — 第三方适配插件：把上游 REA（逆向一切，github.com/morluto/rea）的 MCP 服务接入 DeepSeek Harness，提供 mcp__rea__* 工具。2.x 自带供给：把 Node、REA CLI、JDK、Ghidra 装到 <DSH_HOME>/plugins/rea-bundle 下，再经 shim 启动 REA —— 干净机器跑一次 setup 即可用；1.x（v1 分支 / npm 1.0.6）是纯配置适配器，需要你自己装好 REA 与 Ghidra。逆向分析能力由 REA 提供，覆盖原生二进制（Hopper/Ghidra/IDA）、JavaScript/Electron 应用、.NET 程序集、网站、Android APK 与 adb 设备、固件与进程捕获。
 - [czdcm/dsh-plugin-corpus#plugin](https://github.com/czdcm/dsh-plugin-corpus/tree/main/plugin) — DeepSeek Harness 的本地知识库与文档检索插件：全文搜索、PDF/Word/PPT/Excel/Markdown 导入与按行读取、扫描件 OCR、ACL 和 Web 面板。
 - [CZX2244/dsh-bilibili](https://github.com/CZX2244/dsh-bilibili) — B站视频分析工具：提取元数据、字幕文稿（必剪/本地 ASR 兜底）、评论与弹幕，抓取清晰关键帧并可选本地视觉描述。
@@ -5691,6 +5695,7 @@ dsh plugin --profile web add dshmarket
 - [GooDAnDReaDY/dsh-moa](https://github.com/GooDAnDReaDY/dsh-moa) — DeepSeek Harness 的混合智能体（MoA）插件：/moa 斜杠命令将提示词并发分发给多个模型，在文件工作区合并响应，并与 Live Canvas 集成以呈现可视化输出。
 - [Gorkaseto/dsh-markdownize](https://github.com/Gorkaseto/dsh-markdownize) — 将 PDF、Word、PowerPoint、Excel、HTML、CSV、JSON、ZIP 等文档转换为 Markdown 供模型读取，内置 JavaScript 引擎，也可使用 Microsoft MarkItDown。
 - [Gorkaseto/dsh-plugin-updater](https://github.com/Gorkaseto/dsh-plugin-updater) — 通过简单的可用性 UI 帮助跟踪从 github 添加的插件的更新。
+- [GUANUI/dsh-campus-net](https://github.com/GUANUI/dsh-campus-net) — 校园网自动登录插件：查看状态、一键登录、本地设置页和可选的开机自启守护。内置南京审计大学预设，也支持自定义 JSON 门户。
 - [gugu123a/dsh-tool-see-image](https://github.com/gugu123a/dsh-tool-see-image) — 为 DSH 提供 see_image 工具：将图片文件发送到可配置的 OpenAI 兼容视觉模型，并把其描述回传给纯文本模型。
 - [guhanfei-ai/dsh-grafana](https://github.com/guhanfei-ai/dsh-grafana) — 对话式 Grafana 运维：跨多个命名源站查看实时大盘数据，再通过审批与版本校验安全、可审阅地修改大盘。
 - [GunjanPatel359/dsh-tool-index](https://github.com/GunjanPatel359/dsh-tool-index) — 把延迟加载的 MCP 工具定义以索引形式发送——按服务器分组的名称、参数签名和一行摘要；tool_details 按需返回完整 schema，call_tool 运行真正的工具。读取 schema 或运行工具不会改变模型可见的工具列表，因此不会使提示缓存失效。
@@ -8827,6 +8832,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-github](https://github.com/PerryLink/dsh-github) — 官方级 GitHub CI 集成：composite action.yml、轮询 PR 评审机器人（幂等行内评论 + status-check 门禁）以及 PR/issue 工具，所有写入走人工审批门。
 - [pinzza/dsh-git-statusline](https://github.com/pinzza/dsh-git-statusline) — DSH Web 的紧凑 Git 状态行：显示当前分支、已暂存与未暂存的行数改动、相对 upstream 的领先/落后提交数以及工作区干净标记；可放在侧边栏底部、会话标题栏或输入框上方/下方，位置在设置页切换。
 - [Qcsj777/dsh-worktree-branch](https://github.com/Qcsj777/dsh-worktree-branch) — 在 DSH 新建会话页提供 Codex 风格的工作位置、worktree 与分支切换器，git 操作全部由 Host 半执行。
+- [QcWyGm/dsh-config-sync](https://github.com/QcWyGm/dsh-config-sync) — 对比本机与云端 DSH 配置仓库的差异（改了哪些文件、领先或落后几个提交、有没有新会话和新技能还没抓取），并生成客户端退出后执行的推送、拉取与还原脚本。拉取被本地改动挡住时两侧文件都会备份，面板里逐项选择保留哪边；每次应用前自动备份配置，之后可还原到任一份快照。
 - [qingyou002/dsh-git-commit](https://github.com/qingyou002/dsh-git-commit) — DSH 斜杠命令 /commit：暂存全部更改，用会话当前模型总结暂存区 diff 后提交；不依赖浏览器界面，模型调用失败时回退到本地规则生成提交信息。
 - [RaditPasya/dsh-web-git-sidebar](https://github.com/RaditPasya/dsh-web-git-sidebar) — DSH Web 左侧栏的源代码管理面板：搜索、切换与创建分支并显示领先/落后提交数，拓扑序提交图，点击任意提交可展开查看其文件（A/M/D）、增删行数、提交信息、作者与时间。设置上方常驻一个底部停靠区，包含分支下拉与最近提交并跟随当前会话；fetch 与快进 pull 合并为一个按钮；另有 git_worktree 工具供智能体创建、列出与移除 worktree。
 - [ramwin/dsh-branch-cleaner](https://github.com/ramwin/dsh-branch-cleaner) — 冗余分支清理：找出已经落地到主线的分支（普通合并 / squash 合并 / rebase 或 cherry-pick 落地 / 上游已删除 / PR 已合并），确认后再删除。默认只报告，不切换分支、不 rebase，删除前把每个本地分支备份到 refs/backup/branch-cleaner/（删除远端分支不备份）。
@@ -9387,6 +9393,7 @@ dsh plugin --profile web add dshmarket
 - [DaJiang07/dsh-plugin-backup](https://github.com/DaJiang07/dsh-plugin-backup) — 换机迁移 DSH profile，连插件本身一起：把插件包选择与整个配置层打包成一个 JSON 文件，恢复时写回配置、还原本地插件源码与插件数据，并安装备份里记录、新机器缺失的插件包（优先插件管理器，失败回退 pnpm）。
 - [DamonKoy/dsh-plugin-toggle](https://github.com/DamonKoy/dsh-plugin-toggle) — 设置→插件开关面板：每个已加载插件的卡片显示简述与运行阶段，支持模糊搜索与运行时启动/关闭（不改写配置文件）。
 - [DamonKoy/dsh-plugins#dsh-system-proxy](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-system-proxy) — 系统代理检测（scutil/env/PAC）：状态工具 + proxy_export 导出 bash 代理片段。
+- [DanYikona/DSH-script-hub](https://github.com/DanYikona/DSH-script-hub) — 把任意会话里写出的脚本归档到按类别分好的目录，逐个生成 Markdown 文档，并能启动/停止、按真实进程与计划任务核对状态。
 - [daoyan2142/dsh-plugin-git-sync](https://github.com/daoyan2142/dsh-plugin-git-sync) — 把 DSH 配置档里已安装的第三方插件连同源码打包成 tarball 推送到 GitHub 或 Gitee 仓库；另一台电脑拉取清单、比对版本，只安装缺失或过期的插件。需要对该仓库有写权限的个人访问令牌（存于 DSH 凭据服务）；压缩包含各插件已安装的源码，建议使用私有仓库。
 - [daoyan2142/dsh-repot](https://github.com/daoyan2142/dsh-repot) — 通过一个私有 GitHub / Gitee 仓库在机器之间搬运 DSH 环境：第三方插件（按版本重装，或携带 tarball / 源码目录）、四个 profile 配置文件、以及文件夹快照。还原时逐文件比对，本机改过的文件不覆盖，被替换的文件先备份，并按绝对路径、已登记的根、或显式确认三级解析落点；逃出根、穿越 junction、覆盖非本插件目录的写入一律拒绝。配置文件和文件夹内容原样上传（不做密钥脱敏），插件也不检查仓库是否私有；访问令牌保存在凭据服务里，首次启动会把 dsh-plugin-git-sync 留下的 GIT_SYNC_* 令牌复制过来。需要 Node 22.12 及以上。
 - [daoyan2142/dsh-runtime-kit](https://github.com/daoyan2142/dsh-runtime-kit) — 面向 dsh 的快速执行运行时：上下文治理（4 KB 工具返回截断与字段投影）、零 LLM 快路径模板（幂等键）、PTC 容器脚本（中间结果不进上下文）、三级沙箱（文件/命令/网络规则、注入检测、敏感信息脱敏、快照与回收站）与追加式审计日志；10 个 runtime_kit_* 斜杠命令，零业务依赖。
