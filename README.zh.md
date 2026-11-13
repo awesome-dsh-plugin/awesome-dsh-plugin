@@ -1368,6 +1368,7 @@ dsh plugin --profile web add dshmarket
 - [milestone-17/dsh-git-branch-switcher](https://github.com/milestone-17/dsh-git-branch-switcher) — 让 git 操作不离开 DSH 聊天窗口。输入框工具行的胶囊实时显示当前分支；TRAE 风格弹层一键切换/新建分支、同步远端、勾选改动提交推送、按来源 -> 目标流向合并分支、暂存与恢复部分改动。所有面板停靠在输入框上方，不遮挡草稿；菜单打开时预取改动列表；工作区不干净时先确认再操作。非 git 目录自动隐藏。
 - [milu7/dsh-directory-plugin](https://github.com/milu7/dsh-directory-plugin) — 让 DSH 桌面端「新建工作区」的文件夹选择框从你设定的目录开始（仅 Windows），并在设置里提供配置入口；目录不存在时静默回退到原生选择框。
 - [mimateinn/dsh-i18n](https://github.com/mimateinn/dsh-i18n) — 为 DeepSeek Harness 界面新增 20 种语言（繁体中文香港/台湾、日语、韩语、法语、德语、西班牙语、葡萄牙语、意大利语、俄语、乌克兰语、波兰语、荷兰语、土耳其语、阿拉伯语、印地语、印尼语、越南语、泰语、瑞典语），逐条精译并带运行时兜底，另加自动翻译，把市场与第三方文本翻译成你的语言。
+- [mimidor/dsh-stock-dock](https://github.com/mimidor/dsh-stock-dock) — DSH 输入框下方的 A 股 / 港股 / 美股自选股行情条：卡片带迷你 K 线，点开有分时、5 分钟、日/周/月 K 线、五档盘口、A 股换手率与涨跌停价，按交易时段自动调节刷新，腾讯不可用时切新浪。
 - [Minajka/dsh-todo-list](https://github.com/Minajka/dsh-todo-list) — 放在右侧边栏、不进入对话的待办清单：添加、勾选完成、删除，拖动行即可排序。数据只保存在浏览器的 localStorage 里，插件不注册任何给模型用的工具；会话头部有个按钮可打开面板。
 - [Minecraftbe/dsh-toolfold](https://github.com/Minecraftbe/dsh-toolfold) — Codex 风格的工具调用折叠，将多个工具调用折叠到一行内。
 - [MingoYung/dsh-awakening](https://github.com/MingoYung/dsh-awakening) — 启动动画选择器，内置DeepSeek、Codex和Claude Code三套主题，支持本地MP4/WebM导入和插件内社区动画库；已支持的Windows DSH NEXT构建可选安装和恢复首屏兼容层。
@@ -4374,6 +4375,7 @@ dsh plugin --profile web add dshmarket
 - [jingleboat/dsh-session-cleaner-host](https://github.com/jingleboat/dsh-session-cleaner-host) — 从侧栏会话菜单删除整个会话；聊天里划词右键弹出「复制 / 引用 / 提问」：引用把 Markdown 引用块插入输入框，提问把选区与问题交给同一个复用的可继续子智能体（label `ask`，宿主重启后经子智能体目录找回），回答在右侧栏流式显示。
 - [JinYihang1011/dsh-plugins#dsh-session-ops](https://github.com/JinYihang1011/dsh-plugins/tree/main/dsh-session-ops) — 给侧栏会话行菜单补上三项操作：打开工作区位置、移动到其它工作区、删除会话（进回收站，可撤销）。
 - [Jisiyong-A/dsh-plugin-background-compaction](https://github.com/Jisiyong-A/dsh-plugin-background-compaction) — 作为会话压缩引擎注册，后台预计算压缩摘要，压力压缩触发时直接提交已持有的结果，省去前台模型往返。锁定已摘要的区间以保证提交时载荷指纹仍然匹配，提交前先裁剪工具结果；载荷漂移或上下文溢出时回退到原生前台路径。
+- [jkzing/dsh-session-profiler](https://github.com/jkzing/dsh-session-profiler) — 给每个会话加一个「分析」标签页，把会话画成时间线：按类别分道的调用轨迹、火焰图，以及按类别、按工具的耗时统计，覆盖模型调用、工具调用与后台进程。运行中的会话自动刷新，可在插件配置里用正则规则自定义泳道。
 - [JMILI/dsh-seesion-copy-enhance](https://github.com/JMILI/dsh-seesion-copy-enhance) — 复制用户消息时连同图片与文件一起捕获，粘贴到任意会话：文字进入输入框，每个附件经官方 createDrafts/addAttachments 通道重建为真实草稿，可正常上传并发送。
 - [JoblessJoe/smart-compaction](https://github.com/JoblessJoe/smart-compaction) — 让模型自己挑安全时机触发压缩：提供 compact_now 工具（回合进行中也能用），另有 context_status 工具，按会话真实的上下文窗口报告 token 占用。
 - [JochenYang/dsh-rewind-plugin](https://github.com/JochenYang/dsh-rewind-plugin) — 撤回已发送的消息：会话日志只追加、不删除任何东西，被撤回的回合退出模型上下文并从对话界面消失、原文回到输入框，被这些回合改动的文件留在隔离区里——设置里独立一页，可查看可清理。
@@ -8171,6 +8173,7 @@ dsh plugin --profile web add dshmarket
 - [abworks-dev/dsh-hooks](https://github.com/abworks-dev/dsh-hooks) — DSH 的 Codex 风格生命周期命令钩子，支持工具参数显式共享、执行前拒绝，以及通知与本地审计示例。
 - [achenjins/dsh-runninghub-plugin](https://github.com/achenjins/dsh-runninghub-plugin) — 在 DSH 中调用你的 RunningHub ComfyUI 工作流生成图片、视频和音频，提供工作流配置面板、后台任务和多 Key 管理。
 - [adithyanraj03/dsh-schedule-later](https://github.com/adithyanraj03/dsh-schedule-later) — 把消息排进 dsh 会话稍后再发：消息框里带日期与时间选择器的「定时」按钮、跨会话列出待发消息的侧栏面板、浏览器关着也由宿主按时投递成一条普通用户消息，以及 schedule_message / list_scheduled_messages / cancel_scheduled_message 三个工具，模型因而能自己回到某个会话。
+- [Ados6666/dsh-review-note](https://github.com/Ados6666/dsh-review-note) — 给阶段交付做可批注的验收单：在正文上划词、逐条写意见，一次回传结构化结果；单次 ask_user_question 三题以上合并成一屏提交。
 - [advance-lion/dsh-history-plugin](https://github.com/advance-lion/dsh-history-plugin) — 按设备记录 DSH 插件成功安装历史，通过用户授权的百度网盘账号跨设备合并账本，并支持预检后的批量重装。
 - [AK-blank/dsh-plugin-auto-answer](https://github.com/AK-blank/dsh-plugin-auto-answer) — 无人值守时没人回答 ask_user_question，也让会话继续走：站在问题 waterfall 前面，有人回答就原样放行；超过可配置窗口（默认 120 秒）后提交标了（推荐）/(Recommended) 的选项，或按 first/last 兜底；计划审批默认仍交给人，需显式开启。
 - [alib8b8/dsh-plugin-aflare](https://github.com/alib8b8/dsh-plugin-aflare) — aflare 工作流工具：通过本地 aflare 二进制生成、校验并执行本地优先的确定性 YAML 工作流 DAG（WAL 崩溃恢复、Saga 补偿），内置 300+ 模板。
