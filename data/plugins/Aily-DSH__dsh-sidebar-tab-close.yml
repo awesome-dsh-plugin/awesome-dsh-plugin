@@ -1,0 +1,6 @@
+url: https://github.com/Aily-DSH/dsh-sidebar-tab-close
+name: Aily-DSH/dsh-sidebar-tab-close
+category: ui
+description:
+  en: 'Makes Ctrl+W close the active right-sidebar tab first, and closes a tab on double click.'
+  zh: '让 DSH 的 Ctrl+W 先关闭右侧栏当前标签页，并支持双击标签关闭。'

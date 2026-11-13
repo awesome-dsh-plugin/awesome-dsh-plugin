@@ -1,0 +1,6 @@
+url: https://github.com/Aily-DSH/dsh-test-window
+name: Aily-DSH/dsh-test-window
+category: dev
+description:
+  en: 'Opens windows launched by the agent on a display you choose instead of covering the DSH window on Windows.'
+  zh: '让 Agent 拉起的测试窗口开在你指定的显示器上，不再盖住 DSH 窗口（Windows）。'
