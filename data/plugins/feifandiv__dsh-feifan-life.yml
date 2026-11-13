@@ -1,0 +1,6 @@
+url: https://github.com/feifandiv/dsh-feifan-life
+name: feifandiv/dsh-feifan-life
+category: tools
+description:
+  en: A local life-management workspace with tasks, planning, finance, lists and inventory, habit check-ins, an inspiration library and reviews; data stays in a local JSON file.
+  zh: 本地生活管理工作台：任务、规划、财务记账、清单与物资、习惯打卡、灵感库、复盘八个模块，数据以本地 JSON 保存。
