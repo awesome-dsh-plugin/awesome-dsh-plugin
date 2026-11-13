@@ -1,0 +1,6 @@
+url: https://github.com/JacobCodeShow/dsh-github-copilot-accounts
+name: JacobCodeShow/dsh-github-copilot-accounts
+category: usage
+description:
+  en: 'Multi-account manager for GitHub Copilot in DSH: device-code sign-in for GitHub.com and GitHub Enterprise Cloud tenants on `*.ghe.com`, one-click account switching, per-account plan and AI credits display, and a preset Copilot provider route with first-login model catalog fallback.'
+  zh: 'DSH 的 GitHub Copilot 多账号管理：设备码登录（支持 GitHub.com 与使用 `*.ghe.com` 域名的 GitHub Enterprise Cloud）、一键切换账号、每账号套餐与 AI credits 用量展示，预置 Copilot 提供方路由，首次登录兜底填充模型目录。'
