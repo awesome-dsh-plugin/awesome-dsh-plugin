@@ -1,0 +1,6 @@
+url: https://github.com/Stopning/dsh-usage-stats
+name: Stopning/dsh-usage-stats
+category: usage
+description:
+  en: 'Session token usage, cost estimation, monthly budget and host CPU dashboard for DeepSeek Harness.'
+  zh: 'DSH 会话 Token 用量、成本估算、月度预算与宿主 CPU 监控仪表盘。'
