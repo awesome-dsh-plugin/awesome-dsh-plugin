@@ -1,0 +1,5 @@
+url: https://github.com/kuznecov-anatoliy/dsh-sidebar-suite
+name: kuznecov-anatoliy/dsh-sidebar-suite
+category: ui
+description:
+  en: Replaces the sidebar's workspace browser with a project column and a per-project session list that supports pin, rename, fork, copy id and archive plus an archive view; on Windows it also moves the panel buttons into the window caption strip, and it adds an account balance chip.
