@@ -1,0 +1,7 @@
+url: https://github.com/yinqiang/dsh-plugins/tree/main/packages/dsh-solar-term
+name: yinqiang/dsh-plugins#dsh-solar-term
+category: ui
+description:
+  en: 'Current solar term at the top-left of the conversation, with a countdown to the next one.'
+  zh: '对话左上角显示当前节气，以及到下一个节气的倒计时。'
+# tarball: https://github.com/yinqiang/dsh-plugins/releases/latest/download/dsh-solar-term.tgz
