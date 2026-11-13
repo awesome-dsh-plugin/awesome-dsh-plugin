@@ -1,0 +1,6 @@
+url: https://github.com/wychmod/dsh-mini-superagent/tree/main/dsh-mini-superagent
+name: wychmod/dsh-mini-superagent#dsh-mini-superagent
+category: agi
+description:
+  en: 'Dispatches main-session work to independent background sub-sessions: dispatch_launch returns immediately and the worker reports back through dispatch_report, which arrives as a message and wakes a busy or idle main session; dispatch_message follows up or steers a running task, with dispatch_cancel and dispatch_wait alongside it, and a sidebar board shows concurrent, queued and archived tasks with their report summaries plus a per-workspace dispatch target and a composer picker. Ten dispatch_* tools, zero runtime dependencies, state in one local JSON file, single-writer and not coordinated across processes; the board needs the Web UI.'
+  zh: '把主会话的活派给独立的后台子会话：dispatch_launch 立即返回，子会话跑完用 dispatch_report 把报告当消息投回，主会话空闲时被唤醒、忙碌时并进下一个 step；dispatch_message 用来追问纠偏，另有 dispatch_cancel 与 dispatch_wait，侧边栏看板显示并发、排队与归档任务及报告摘要，并支持按工作区派发和输入框派发目标选择器。共 10 个 dispatch_* 工具，零运行时依赖，状态存在一个本地 JSON 文件里，单写、不跨进程协调；看板需要 Web 形态。'
