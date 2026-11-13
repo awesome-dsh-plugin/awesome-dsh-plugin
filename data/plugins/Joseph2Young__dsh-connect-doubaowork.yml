@@ -1,0 +1,6 @@
+url: https://github.com/Joseph2Young/dsh-connect-doubaowork
+name: Joseph2Young/dsh-connect-doubaowork
+category: model
+description:
+  en: Runs a loopback OpenAI-compatible gateway that routes DeepSeek Harness model requests to Doubao work mode, exposing Doubao, DeepSeek, Kimi and GLM models with streaming replies.
+  zh: 在本机拉起 OpenAI 兼容回环网关，把 DeepSeek Harness 的模型请求按豆包工作模式协议转发，接入豆包、DeepSeek、Kimi、GLM 系列模型，支持流式回复。
