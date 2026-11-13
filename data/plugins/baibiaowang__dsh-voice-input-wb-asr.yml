@@ -2,5 +2,5 @@ url: https://github.com/baibiaowang/dsh-voice-input-wb-asr
 name: baibiaowang/dsh-voice-input-wb-asr
 category: voice
 description:
-  en: Hold-to-talk microphone in the composer that streams the recording to the WorkBuddy cloud recognizer and inserts the text at the caret, with no local speech model to download.
-  zh: 输入框里的按住说话麦克风，录制同时流式送到 WorkBuddy 云端识别，松开即在光标处插入文字，不需要下载本地语音模型。
+  en: Hold-to-talk microphone in the composer that recognizes through the WorkBuddy cloud, using the accounts already signed in on this machine. International and domestic builds are separate settings, international by default.
+  zh: 输入框里的按住说话麦克风，走 WorkBuddy 云端识别，直接用本机已登录的账号。国际版与国内版分开设置，默认国际版。
