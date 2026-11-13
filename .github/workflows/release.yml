@@ -1,0 +1,17 @@
+name: Release
+on:
+  push:
+    tags: ['v*']
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Package
+        run: tar -czf dsh-life-engine-${{ github.ref_name }}.tar.gz package.json cordis.patch.yml index.js lib/kb.cjs README.md LICENSE INSTALL.md docs/
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: dsh-life-engine-${{ github.ref_name }}.tar.gz
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
