@@ -1,0 +1,6 @@
+url: https://github.com/Lornatang/dsh-codex-security
+name: Lornatang/dsh-codex-security
+category: security
+description:
+  en: Agent-native security review workbench for DeepSeek Harness, with sealed scans, stable finding identities, deep-scan orchestration and SARIF/JSON export.
+  zh: 面向 DeepSeek Harness 的 agent 原生安全审查工作台，提供密封扫描产物、稳定的 finding 标识、深扫编排与 SARIF/JSON 导出。
