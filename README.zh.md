@@ -527,7 +527,7 @@ dsh plugin --profile web add dshmarket
 - [cinewave0/cinewave0-dsh-quick-panel](https://github.com/cinewave0/cinewave0-dsh-quick-panel) — Windows 下的 DSH Desktop 独立伴生窗：待办、提醒、实时会话消息、审批接管和快速输入；独立窗复用 %USERPROFILE%\.dsh\electron\electron.exe（通常由 dsh-pet 下载），缺失时打不开。
 - [cinewave0/dsh-quick-panel-mac](https://github.com/cinewave0/dsh-quick-panel-mac) — macOS 下的 DSH Desktop 独立伴生窗：待办、提醒、实时会话消息、审批接管和快速输入；首次打开自动下载 Electron 43.3.0 到 ~/.dsh/electron，安装或更新后需按 ⌘Q（Command + Q）完全退出 DSH 再打开。仅 macOS。已在 DSH 0.2.2-rc.1、macOS 27 arm64 上验证。
 - [Citrusrr/dsh-think-fold](https://github.com/Citrusrr/dsh-think-fold) — 正在跑的那一行自动展开、跑完自动收起；跑着的一轮把过程收进一个限高窗口，页面不再被越堆越长的步骤拽着走；一轮结束并进官方那条「已完成」表头，只留最终回复。做法是点官方自己的折叠行、给官方过程体加限高，不自绘面板；你手动开合过的行不动，卸载时把改过的官方设置还原。
-- [cjjchina3088191870-sudo/dsh-plugin-ekko-skin-manager](https://github.com/cjjchina3088191870-sudo/dsh-plugin-ekko-skin-manager) — 在 DSH 设置中切换初音与玫瑰主题，调整人物装饰、背景浓度与手机导航。
+- [cjjchina3088191870-sudo/dsh-plugin-ekko-skin-manager](https://github.com/cjjchina3088191870-sudo/dsh-plugin-ekko-skin-manager) — 丝柯克、玫瑰女王与初音未来主题套装的旧版管理器兼容入口；新用户只需安装 dsh-plugin-miku-theme。
 - [cjm-m/dsh-paste-code-block](https://github.com/cjm-m/dsh-paste-code-block) — Cherry Studio 式粘贴：把多行/缩进/围栏文本或代码粘进 DSH Web 输入框时收成带边框、可折叠、带语言标签的卡片，发送时还原为围栏代码块。
 - [Cjrrrrrrrr/dsh-plugins#dsh-sidebar-tidy](https://github.com/Cjrrrrrrrr/dsh-plugins/tree/main/packages/dsh-sidebar-tidy) — DSH Web 侧边栏布局修正：给插件动作区限高并允许滚动、缩小内联配对二维码、收紧品牌行——底部插件变高时，工作区与会话列表依然点得到。
 - [clarag0d/dsh-locale-multilingual](https://github.com/clarag0d/dsh-locale-multilingual) — 为 DeepSeek Harness 增加四种界面语言（繁體中文、日本語、한국어、Français），语料随包内置，完全离线。
@@ -2950,7 +2950,7 @@ dsh plugin --profile web add dshmarket
 - [cherrchen/dsh-theme-studio](https://github.com/cherrchen/dsh-theme-studio) — 在「设置 → 通用」的官方「外观」与「字号」之间注入「主题」行：8 套内置配色 + 默认项，悬停预览不写盘、点击应用并由 Host 持久化；支持导入/导出自定义 dsh-theme.json 主题文件，另有可选的 Theme Creator skill（/dsh-theme-creator）。
 - [chouxiaohuai/dsh-uiskin-theme](https://github.com/chouxiaohuai/dsh-uiskin-theme) — DeepSeek Harness Web 的海洋幻想玻璃皮肤：清澈海洋背景、玻璃气泡、海洋侧边栏（金色渐变「HARNESS」字标 + 底部卡通角色）、鲸鱼设置按钮、渐变模型文字。
 - [Cicero010/dsh-whale-atelier](https://github.com/Cicero010/dsh-whale-atelier) — DSH Web 界面全屏鲸鱼皮肤包：多层壁纸、金/银描边、蕾丝蝴蝶结、随 Agent 状态反应的角落立绘与环境粒子，并支持可安装的第三方皮肤包格式。
-- [cjjchina3088191870-sudo/dsh-plugin-miku-theme](https://github.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme) — 玫瑰女王与初音未来双主题套装，内置主题管理，支持浅深色外观、手机布局和自定义启动视频。
+- [cjjchina3088191870-sudo/dsh-plugin-miku-theme](https://github.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme) — 丝柯克、玫瑰女王与初音未来三主题套装，内置主题管理、手机布局、首页入场动画及自定义启动视频。
 - [CloudSen/dsh-umbrella-theme](https://github.com/CloudSen/dsh-umbrella-theme) — 生化危机保护伞公司主题，提供明暗双外观、自转保护伞水印与 HUD 装饰。
 - [cngtn/dsh-cngtn-pond](https://github.com/cngtn/dsh-cngtn-pond) — 纸墨主题，提供暖色纸面、细描边和近方形圆角，并在整个界面后方绘制动态 ASCII 锦鲤池；主题不指定字体，沿用 DSH 自带字体栈（或设置中选择的字体）。
 - [cnhenaihui/dsh-theme-wallpaper](https://github.com/cnhenaihui/dsh-theme-wallpaper) — 配色主题与壁纸插件：62 套配色主题（37 套内置、源自 OpenCode 调色板，另有 25 套 IP 预设），每套自带 Markdown 与语法高亮配色，另有一层把低于 4.5:1 的语义色推回可读对比度，并支持本地背景图（铺满或平铺、模糊、遮罩、轮换）。取代此前的 cnhenaihui/dsh-ios-theme。
