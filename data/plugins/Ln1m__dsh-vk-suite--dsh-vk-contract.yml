@@ -1,0 +1,6 @@
+url: https://github.com/Ln1m/dsh-vk-suite/tree/main/dsh-vk-contract
+name: Ln1m/dsh-vk-suite#dsh-vk-contract
+category: ui
+description:
+  en: 'Slot contract for the three-column layout: the slot table, pane registry and neutral service names.'
+  zh: '三栏布局的槽位契约：槽位表、栏目注册表与中立服务名。'

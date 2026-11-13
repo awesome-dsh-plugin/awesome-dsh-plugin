@@ -1,0 +1,6 @@
+url: https://github.com/Ln1m/dsh-chrome-suite/tree/main/dsh-restart-button
+name: Ln1m/dsh-chrome-suite#dsh-restart-button
+category: dev
+description:
+  en: 'Two-click restart button in the session header that restarts exactly this instance.'
+  zh: '会话头两击确认重启，按本进程身份重启同一实例。'

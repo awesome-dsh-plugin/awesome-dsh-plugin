@@ -1,0 +1,6 @@
+url: https://github.com/Ln1m/dsh-tool-suite/tree/main/dsh-local-file-search
+name: Ln1m/dsh-tool-suite#dsh-local-file-search
+category: tools
+description:
+  en: 'Machine-wide file search from the composer @ menu, kept out of the workspace index.'
+  zh: '@ 列表里的全机文件搜索，不进文件栏与工作区索引。'

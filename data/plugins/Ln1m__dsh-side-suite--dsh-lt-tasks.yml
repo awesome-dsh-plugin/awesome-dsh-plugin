@@ -1,0 +1,6 @@
+url: https://github.com/Ln1m/dsh-side-suite/tree/main/dsh-lt-tasks
+name: Ln1m/dsh-side-suite#dsh-lt-tasks
+category: workflow
+description:
+  en: 'Multi-window long-running task management where a task is a durable folder with handoff docs.'
+  zh: '多窗口长期任务管理：一个任务就是一个持久文件夹加对接文档。'
