@@ -395,6 +395,7 @@ dsh plugin --profile web add dshmarket
 - [AZ-666316/dsh-prompt-optimizer-button](https://github.com/AZ-666316/dsh-prompt-optimizer-button) — DSH 输入框内的提示词优化器。点一下就用当前选中的模型就地改写草稿：自动识别场景（论文 / 派活 / 日常 / 英文），弹出三自检诊断面板（验收能否机器判定？缺信息还是缺能力？在抬深度还是扩范围？）， 并可手动钉住场景。改写结果直接替换输入框草稿，不新增对话轮次。
 - [azazo1/dsh-deep-diving-back](https://github.com/azazo1/dsh-deep-diving-back) — 恢复 DSH 0.1.6 及以前在对话流末尾显示的蓝色流光深度求索中回合状态行.
 - [azazo1/dsh-reduce-effects](https://github.com/azazo1/dsh-reduce-effects) — 在设置里新增 "前端特效" 页, 按分类关掉 DSH Web 的动画与过渡, 加载与进度动画, 毛玻璃, 平滑滚动, 标题 hover 滚动, 阴影, 渐变与 JS 动效, 降低浏览器渲染负担.
+- [Azerz/dsh-video-insight](https://github.com/Azerz/dsh-video-insight) — DeepSeek Harness 侧边栏的视频解析面板。粘贴 YouTube / 哔哩哔哩链接即可抓取字幕，生成总结、章节、思维导图，以及带「依据」时间戳的转写稿问答；内置播放器，点时间戳会跳到对应位置并继续播放。没有字幕时用本机 Whisper / SenseVoice 转写兜底（音频不出本机），纯无声视频则用 macOS Vision 做画面文字识别，或让视觉模型描述画面。按视频缓存分析结果、保留最近 20 条历史，并注册 video_digest、video 两个 agent 工具。
 - [Azetus/dsh-quorfloat](https://github.com/Azetus/dsh-quorfloat) — DeepSeek Harness（DSH）的系统级桌面悬浮窗插件：按下全局快捷键即可呼出桌面悬浮窗口，支持工作区与会话切换、审批与追问处理，以及插件自身的诊断日志导出。
 - [azkbzxf/dsh-account-balance-pill](https://github.com/azkbzxf/dsh-account-balance-pill) — 在 DSH 对话底栏（输入框下方的统计行）显示当前 DeepSeek 账户的剩余余额，定时刷新，并在每轮对话结束后立即更新。
 - [azkbzxf/dsh-vscode-scrollbar](https://github.com/azkbzxf/dsh-vscode-scrollbar) — 把 DSH 对话界面改成 Visual Studio Code 编辑器风格：14px 常驻滚动条、扁平半透明滑块，并在右侧加上 VS Code 式 Minimap（小地图）：高度不超过半屏、悬停才显示滑块、点击/滚轮即可跳转滚动，同时自动展开“加载更早”的过往对话。
@@ -6633,6 +6634,7 @@ dsh plugin --profile web add dshmarket
 - [welsione/dsh-mmx-bridge](https://github.com/welsione/dsh-mmx-bridge) — MiniMax 多模态桥接：一个 `mmx_bridge` 工具覆盖图片理解/生成、视频、语音合成、音乐、翻唱、联网搜索与用量查询；可选接管 `web_search`/`read_image`；对话流直接内嵌播放器与图片预览（npm: `dsh-mmx-bridge`）。
 - [Where227-arch/dsh-booth-search](https://github.com/Where227-arch/dsh-booth-search) — 在会话旁的 BOOTH 独立页或两个只读工具里搜 VRChat 素材（衣服、着色器、素体、配饰、贴图、动画、小物）；中文关键词在宿主侧转日文再检索，界面不出现日文词。
 - [whitefirer/dsh-browser-fs](https://github.com/whitefirer/dsh-browser-fs) — 让 agent 读写浏览器所在电脑上的文件：浏览器授权本地目录（File System Access），工具调用经插件自建 WebSocket 中继；移动端/非安全上下文自动降级只读兼容模式。
+- [whoisyanhaoooo/ZJU-mooc-assistant](https://github.com/whoisyanhaoooo/ZJU-mooc-assistant) — 浙大中国大学 MOOC 上课助手：按章节看视频、做测验和作业、参加考试、在讨论区提问，并实时显示任务进度。
 - [whyzsm/dsh-clipfile](https://github.com/whyzsm/dsh-clipfile) — 在输入框附加文件和文件夹：剪贴板粘贴、原生文件/文件夹选择器、@-mention 路径搜索；文件夹转分页 Markdown 供智能体逐页读取。仅支持 macOS（剪贴板读取与选择器依赖 osascript）。
 - [wilianyichen/dsh-deepseek-web](https://github.com/wilianyichen/dsh-deepseek-web) — DSH 内只读访问 DeepSeek 网页版会话归档：列会话/下载全文/搜索索引/分享列表，以及把 100 段会话压缩成一页高密度摘要（含活跃度直方图与主题聚类）的 digest 工具。刻意不暴露写操作（网页版有限流）。需另外安装第三方 deepseek-ops Python 客户端（github.com/Panniantong/deepseek-ops，另一位作者）并扫码登录，在插件配置里把 scriptDir 指向它。
 - [william-jin-cmu/dsh-screen](https://github.com/william-jin-cmu/dsh-screen) — 让 agent 通过 macOS 辅助功能 API 读取最前窗口的应用、标题、URL 和文字，并可选开启本机屏幕记忆供其检索。
@@ -8986,6 +8988,7 @@ dsh plugin --profile web add dshmarket
 ### 🔔 通知与集成
 
 - [0QwQ0/dsh-discord-richpresence](https://github.com/0QwQ0/dsh-discord-richpresence) — 将模糊或丰富的 DSH 交互状态实时推送到本地 Discord 客户端作为 Rich Presence——不携带任何工作区内容，状态消息列表可自由编辑，并可在设置中切换丰富模式。
+- [11ze/dsh-session-bell](https://github.com/11ze/dsh-session-bell) — 回合结束、有提问等待回答或有审批等待决定时各发一条桌面通知。每类事件可单独开关；子代理会话不发通知；点击通知打开对应会话。走页面自带的 Notification API，不需要辅助程序或安装时注册。
 - [3150481853/molly-qq-whale#dsh-qq-whale](https://github.com/3150481853/molly-qq-whale/tree/main/plugin/dsh-qq-whale) — 基于 OneBot 11 / NapCat 的 QQ 通道：跨会话保持同一人设并带长期记忆，在群聊和私聊里接话，会发表情包、会发语音，另附一个本地 Web 控制台，能看见她此刻在做什么。人设与记忆文件由你自己写，仓库只提供样例。
 - [423324324/dsh-complete-chime](https://github.com/423324324/dsh-complete-chime) — 一轮任务真正跑完时播放提示音或一小段旋律：五种合成音色加自定义音频上传，可选语音播报、可选系统通知，子代理任务可单独开关，设置持久化在宿主侧。
 - [534119219/chicheng-push](https://github.com/534119219/chicheng-push) — DSH 多渠道消息推送插件：支持 Server酱、PushPlus、Bark、钉钉、企业微信、Telegram、飞书、ntfy、自定义 Webhook 等，可在设置面板配置多个渠道，并通过 pushNotifier 服务供其他插件调用。
