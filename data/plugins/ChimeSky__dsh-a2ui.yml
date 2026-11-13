@@ -4,4 +4,4 @@ category: ui
 description:
   en: Renders Google A2UI 1.0 surfaces (cards, tables, charts, forms, sliders and function plots) inside DSH conversations; local interactions need no model call, and action buttons return one user message to the agent.
   zh: 在 DSH 对话内渲染 Google A2UI 1.0 界面（卡片、表格、图表、表单、滑块与函数图像）；本地交互不产生模型调用，按钮与表单把一次动作回传给 Agent。
-tarball: https://github.com/ChimeSky/dsh-a2ui/releases/download/v0.1.0/dsh-a2ui-0.1.0.tgz
+tarball: https://github.com/ChimeSky/dsh-a2ui/releases/download/v0.2.0/dsh-a2ui-0.2.0.tgz
