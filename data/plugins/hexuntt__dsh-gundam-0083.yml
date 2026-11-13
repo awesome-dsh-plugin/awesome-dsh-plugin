@@ -1,0 +1,7 @@
+url: https://github.com/hexuntt/dsh-gundam-0083
+name: hexuntt/dsh-gundam-0083
+category: ui
+description:
+  en: "Turns the DSH Web UI into the Albion's U.C.0083 panoramic cockpit: hangar-door boot sequence, seven-step EFSF self-check, parallax canopy frame, three-section MFD deck, local BGM and a cold dark theme."
+  zh: "把 DSH Web UI 变成阿鲁比昂号的 U.C.0083 全景座舱：舱门启动序列、七项 EFSF 自检、视差座舱框、三段式 MFD 仪表台、本地 BGM 与冷调深色主题。"
+icon: https://raw.githubusercontent.com/hexuntt/dsh-gundam-0083/main/assets/icon-512.png
