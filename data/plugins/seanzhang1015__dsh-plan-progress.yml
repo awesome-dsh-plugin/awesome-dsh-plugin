@@ -1,0 +1,6 @@
+url: https://github.com/seanzhang1015/dsh-plan-progress
+name: seanzhang1015/dsh-plan-progress
+category: ui
+description:
+  en: 'Plan progress bar rendered above the composer dock with overall completion %, ETA and per-subtask percentages.'
+  zh: '输入框上方展示任务总进度条、剩余预估时间与分子任务完成百分比，直接读取会话 Todo 投影，支持折叠与多会话自动隔离。'
