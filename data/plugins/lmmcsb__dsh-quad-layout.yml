@@ -1,0 +1,7 @@
+url: https://github.com/lmmcsb/dsh-quad-layout
+name: lmmcsb/dsh-quad-layout
+category: ui
+description:
+  en: 'Four-column layout: split the DSH left sidebar into a 56px icon rail plus a full-height workspace column, and keep the icon rail visible when the sidebar is collapsed.'
+  zh: '四栏布局：把 DSH 左侧栏拆成 56px 图标轨 + 占满整列高度的工作区列，侧栏折叠时仍保留图标轨。'
+tarball: https://github.com/lmmcsb/dsh-quad-layout/releases/latest/download/dsh-quad-layout.tgz

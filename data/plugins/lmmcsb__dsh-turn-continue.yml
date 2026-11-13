@@ -1,0 +1,7 @@
+url: https://github.com/lmmcsb/dsh-turn-continue
+name: lmmcsb/dsh-turn-continue
+category: session
+description:
+  en: 'Auto-continue a stalled turn: re-prompt after an empty turn, a max-tokens cutoff or a listed model error, and switch to a healthy backup route before retrying.'
+  zh: '会话守护：空回合、单次输出截断或指定模型错误导致回合终止时自动补一句「继续」；模型连续失败先切到备用路由再重试。'
+tarball: https://github.com/lmmcsb/dsh-turn-continue/releases/latest/download/dsh-turn-continue.tgz
