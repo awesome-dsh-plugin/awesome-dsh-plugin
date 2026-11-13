@@ -1,0 +1,7 @@
+url: https://github.com/kute/dsh-keelwatch
+name: kute/dsh-keelwatch
+category: dev
+description:
+  en: 'Watches installed DSH bundles for load failures and dependency drift, brakes repeatedly failing tools, and attributes token cost per message source.'
+  zh: '检查已装 DSH 插件的加载失败与依赖漂移，给反复失败的工具加冷却刹车，并按消息来源归因 token 成本。'
+tarball: https://github.com/kute/dsh-keelwatch/releases/download/v0.4.3/kutebai-dsh-keelwatch-0.4.3.tgz
