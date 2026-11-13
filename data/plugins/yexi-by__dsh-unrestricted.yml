@@ -1,0 +1,7 @@
+url: https://github.com/yexi-by/dsh-unrestricted
+name: yexi-by/dsh-unrestricted
+tarball: https://github.com/yexi-by/dsh-unrestricted/releases/latest/download/dsh-unrestricted.tgz
+category: workflow
+description:
+  en: 'Toggleable unrestricted execution mode that fuses direct-delivery rules into the standard, ptc, cordis, minimal, subagent:explore and subagent:general system prompts via systemPrompt.register and system-prompt/assemble, with a plugins.bundle.config card for per-preset status and prompt preview, plus GitHub Release update checks and self-update.'
+  zh: '可切换的破限执行模式插件：通过 systemPrompt.register 与 system-prompt/assemble 将直出交付规则结构化融合进 standard、ptc、cordis、minimal、subagent:explore 与 subagent:general 六种系统提示词预设，并在插件设置页提供总开关、各预设状态与完整提示词预览，以及 GitHub Release 更新检测与一键更新。'
