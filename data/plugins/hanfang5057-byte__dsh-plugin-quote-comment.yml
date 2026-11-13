@@ -1,6 +1,7 @@
 url: https://github.com/hanfang5057-byte/dsh-plugin-quote-comment
 name: hanfang5057-byte/dsh-plugin-quote-comment
 category: ui
+icon: https://raw.githubusercontent.com/hanfang5057-byte/dsh-plugin-quote-comment/main/assets/icon-180.png
 description:
   en: Asks for a comment when you quote a selection, then inserts the quote and the comment as one block.
   zh: 引用选区时先索要一条评论，再把引用与评论作为一个整体插入输入框。
