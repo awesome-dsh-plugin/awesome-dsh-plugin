@@ -874,6 +874,7 @@ dsh plugin --profile web add dshmarket
 - [HelmsmanOfDesire/dsh-countdown](https://github.com/HelmsmanOfDesire/dsh-countdown) — 常驻 DSH 任意页面的下班倒计时沙漏。沙量按当前时段已过去的比例变化；工作时段可自由增删改，支持跨零点；当前时间不在任何时段内时面板显示未配置，而不是继续倒数。
 - [逐段翻译 · dsh-bilingual](https://github.com/Hemuchuan/dsh-bilingual) — 给 DeepSeek Harness 桌面端的助手回复加逐段翻译与中英双语对照：中文段落下补英文、英文段落下补中文，会话头部有开关；代码块、公式不翻译，表格会生成一张完整的译文表附在下方。译文由 DeepSeek API 生成（插件复用 DSH 已保存的 DEEPSEEK_API_KEY，也可在设置里粘贴 Key），需要联网，每段未命中缓存的文本都会产生一次计费请求。
 - [HengryLiang/dsh-plugin-ai-drama](https://github.com/HengryLiang/dsh-plugin-ai-drama) — 面向 DeepSeek Harness 的 AI 短剧工作区：独立的「短剧模式」Agent 预设、35 个 Agent 工具与 10 个随包技能，覆盖立项、总纲、人物、剧本、分镜与导出。
+- [henry1996-yl/dsh-weather-badge](https://github.com/henry1996-yl/dsh-weather-badge) — 侧栏账号旁常驻双表盘：衬线时钟盘加天气盘，账号下方一条天气横条；两枚表盘可在圆形/方形、六款表盘主题、五种字体、本机/网络时间之间切换，另有 weather 工具与完整预报面板（实况、24 小时图、7 天预报），预报源三级自动切换。
 - [HERO476/dsh-sidecard-ask](https://github.com/HERO476/dsh-sidecard-ask) — 在 DSH Web 界面划词就地追问（浮出按钮，或 Alt+Q 快捷键）：答案由不继承父上下文的独立子代理流式产出到侧边卡片，承载面为原生右侧栏 / dsh-better-sidebar / 内置浮层，也可把问题改为落回主对话。
 - [HeShen-1/dsh-composer-enhance](https://github.com/HeShen-1/dsh-composer-enhance) — DSH Web 输入框提示词增强：✨ 按钮先判断歧义、再原地改写草稿；空草稿时以灰色 ghost 给出下一步建议，Tab 或点击填入草稿且不自动发送。
 - [heshuren371/dsh-music-player](https://github.com/heshuren371/dsh-music-player) — 本地音乐播放器：扫描目录中的音频与视频文件，在「音乐」标签页播放，支持交叉淡化、10 段均衡器与响度归一化，并可按歌手-歌名重命名回写标签、封面与文件名（原子替换）。
@@ -2073,6 +2074,7 @@ dsh plugin --profile web add dshmarket
 - [xiex16070-jpg/dsh-prompt-enhance](https://github.com/xiex16070-jpg/dsh-prompt-enhance) — 在输入框动作行的模型选择器左侧加一颗增强芯片：用当前会话已选的模型就地改写草稿，五种风格，可一键撤销，另有 /enhance 斜杠命令。
 - [xiezouqu12/agent-trees](https://github.com/xiezouqu12/agent-trees) — 在 DeepSeek Harness 的对话页和右侧边栏中以多叉树展示当前会话的智能体工作流，每个卡片显示状态、计划进度、Token、费用（需挂载 dsh-cost-meter）和运行时间。
 - [XiLuovo/dsh-session-timeline](https://github.com/XiLuovo/dsh-session-timeline) — 会话左侧的短横线时间轴：整个会话的用户消息一览、当前消息定位、悬停预览消息与回复、点击跳转，可收起展开。
+- [XinAnzzZ/dsh-session-manager](https://github.com/XinAnzzZ/dsh-session-manager) — 在 DSH 侧栏用嵌套文件夹整理会话：按工作区新建、嵌套并拖动排序文件夹，用拖动或右键菜单移动会话，点击文件夹上的活动计数直达对应会话，会话标签可在顶部筛选；树上同样支持撤销、重命名、归档、搜索和键盘导航。
 - [xinchen262/dsh-whale-balance-pet](https://github.com/xinchen262/dsh-whale-balance-pet) — 一只显示 DeepSeek 余额和 token 每分钟花费的小鲸桌宠。
 - [xindady/dsh-prompt-enhancer](https://github.com/xindady/dsh-prompt-enhancer) — 在输入框工具栏添加增强提示词按钮，调用模型改写草稿，逐字保留 @文件引用，并可一键撤回。
 - [DSH Canvas](https://github.com/xindong/dsh-client-canvas) — AI 原生多模态画布，支持图片、视频、音频、3D 模型、PDF、文档与代码等文件展示与预览；通过节点连线组织素材，与 Agent 共享上下文、协作编辑，内容持久保存在本机。
@@ -2576,6 +2578,7 @@ dsh plugin --profile web add dshmarket
 - [itsbuyru-bit/dsh-model-price](https://github.com/itsbuyru-bit/dsh-model-price) — 按模型设置高峰/低谷价格（USD 或 CNY），在输入框下方显示 DeepSeek 账户余额与本次会话花费，累计总花费，每条价格可记录来源链接与核对日期，并支持为单个模型覆盖高峰时段。
 - [ium9khbep8834-maker/dsh-cache-saver](https://github.com/ium9khbep8834-maker/dsh-cache-saver) — 按 agent 收敛过大的 MCP 工具 JSON Schema（调度不变），并在设置页展示 token 用量、缓存命中与上下文构成。
 - [izz-BLUE/dsh-deepseek-usage-dashboard](https://github.com/izz-BLUE/dsh-deepseek-usage-dashboard) — DSH Web 的 DeepSeek API 用量仪表盘：基于会话日志统计每日缓存命中/未命中输入与输出 Token，并展示分模型费用估算、账户余额、7 日趋势和 composer 用量摘要。
+- [JacobCodeShow/dsh-github-copilot-accounts](https://github.com/JacobCodeShow/dsh-github-copilot-accounts) — DSH 的 GitHub Copilot 多账号管理：设备码登录（支持 GitHub.com 与使用 `*.ghe.com` 域名的 GitHub Enterprise Cloud）、一键切换账号、每账号套餐与 AI credits 用量展示，预置 Copilot 提供方路由，首次登录兜底填充模型目录。
 - [jacujay/dsh-model-balance](https://github.com/jacujay/dsh-model-balance) — 自动识别当前模型厂商（内置 7 家），在输入框内显示余额或配额，未内置厂商可配置自定义接口。
 - [Jadramcool/dsh-workspace-hub](https://github.com/Jadramcool/dsh-workspace-hub) — DSH 工作区中枢：侧边栏将工作区按彩色分组管理（分组/工作区/会话三级拖拽排序、内联编辑、一键展开折叠、标题+消息双通道搜索），基于真实会话日志统计每工作区与每会话的 Token 与花费（任意 deepseek 模型自动按官方峰谷价计费、三种时段口径、悬停明细卡、总览面板），另含 OpenCode Go 额度；分组与结果持久化到本机磁盘，30 秒实时刷新。
 - [jakehemmerle/dsh-usage-limits](https://github.com/jakehemmerle/dsh-usage-limits) — 在 DSH 中显示 OpenAI 与 Codex 的用量配额：Web 端用环形表与面板展示 5 小时 / 7 天窗口，dst 端在状态行显示同样的窗口。
