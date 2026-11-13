@@ -1,5 +1,5 @@
-url: https://github.com/CoolTea001/dsh-cool-theme
-name: CoolTea001/dsh-cool-theme
+url: https://github.com/CoolTea001/dsh-cool-plugins/tree/master/plugins/dsh-cool-theme
+name: CoolTea001/dsh-cool-plugins#dsh-cool-theme
 category: theme
 description:
   en: 'Theme plugin — supports dark/light appearance switching, ships 34 preset themes, and supports creating, sharing, and importing custom themes.'
