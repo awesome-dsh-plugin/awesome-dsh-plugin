@@ -1,0 +1,6 @@
+url: https://github.com/L050110/dsh-vx-workbench
+name: L050110/dsh-vx-workbench
+category: workflow
+description:
+  en: 'Repairs the CAD import path of Visual X-Space 4.8 by locating the decision branch from a byte signature instead of a fixed file offset, with backup, read-back verification and restore, and keeps a fingerprint-based skill ledger across local skill roots and an optional OpenViking catalog.'
+  zh: '按字节特征定位（而非固定文件偏移）修复 Visual X-Space 4.8 的 CAD 导入判定分支（含备份、回读校验与还原），并维护跨本地技能根与可选 OpenViking 目录的指纹台账。'
