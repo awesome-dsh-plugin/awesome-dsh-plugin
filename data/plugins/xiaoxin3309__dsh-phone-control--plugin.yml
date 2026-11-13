@@ -1,0 +1,7 @@
+url: https://github.com/xiaoxin3309/dsh-phone-control/tree/main/plugin
+name: xiaoxin3309/dsh-phone-control#plugin
+category: remote
+icon: https://raw.githubusercontent.com/xiaoxin3309/dsh-phone-control/main/assets/icon-180.png
+description:
+  en: 'Control a paired Android phone from DeepSeek Harness: read the accessibility node tree, tap by text, type into fields, take screenshots, launch apps, and read or write files over an encrypted WebSocket. Needs the companion Android app (Android 11+; the APK is attached to every release since v0.0.45, so no local build is needed — the source is in the repo if you would rather compile it with JDK 21 and Android SDK 36) and a network route from the phone to the computer (same Wi-Fi or a tunnel; the bridge listens on all interfaces by default). Pairing is a DSH settings section (8-digit code or QR code, listening port); the permission switches live in the phone app, and by default the agent cannot drive the bridge app itself.'
+  zh: '从 DeepSeek Harness 控制已配对的 Android 手机：读取无障碍节点树、按文字点击、输入文字、截图、启动应用，还能读写手机上的文件；连接走加密 WebSocket。需要配套的 Android App（Android 11+；自 v0.0.45 起每个 Release 都附了安装包，直接下载即可、不必自己编译；想自己编也可以，源码在仓库里，需 JDK 21 与 Android SDK 36），且手机要能连到电脑（同一 Wi-Fi 或隧道；桥默认监听所有网卡）。配对在 DSH 的设置页完成（8 位配对码或二维码、监听端口）；权限开关在手机 App 里，且默认不允许智能体操作桥接 App 自身。'

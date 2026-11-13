@@ -1,0 +1,8 @@
+url: https://github.com/miko-cn/dsh-commandcode-quota
+name: miko-cn/dsh-commandcode-quota
+category: usage
+description:
+  en: 'Command Code usage panel for DeepSeek Harness: plan credits, 5-hour and weekly windows, per-period request stats, plan tiers, and an in-app API key editor, delivered as a Settings tab plus a draggable floating capsule.'
+  zh: 'DSH 里的 Command Code 用量面板：套餐额度、5 小时 / 每周窗口、本期请求统计、套餐档位与内置 API key 编辑，包含设置页与可拖动浮窗。'
+icon: https://raw.githubusercontent.com/miko-cn/dsh-commandcode-quota/main/icon.png
+tarball: https://github.com/miko-cn/dsh-commandcode-quota/releases/latest/download/dsh-commandcode-quota.tgz

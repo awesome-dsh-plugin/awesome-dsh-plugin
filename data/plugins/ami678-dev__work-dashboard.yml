@@ -1,0 +1,6 @@
+url: https://github.com/ami678-dev/work-dashboard
+name: ami678-dev/work-dashboard
+category: usage
+description:
+  en: 'Floating HUD for the DeepSeek Harness Web GUI: live session token speed, input/output/total token counts and cache hit rate, DeepSeek account balance, and per-model cost estimates in a draggable, resizable panel.'
+  zh: '浮在 DeepSeek Harness Web 界面上的 HUD：实时显示会话 Token 速度、输入/输出/总量与缓存命中率、DeepSeek 账户余额，以及按模型估算的费用；面板可拖动、可缩放。'

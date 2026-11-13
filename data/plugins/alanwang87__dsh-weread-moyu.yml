@@ -1,0 +1,7 @@
+url: https://github.com/alanwang87/dsh-weread-moyu
+name: alanwang87/dsh-weread-moyu
+category: fun
+description:
+  en: 'Sign in to WeRead by QR code and lay the current book page behind the whole DSH UI as a low-contrast text layer, with whole-book offline caching, a peek overlay and shelf/chapter/opacity/font/speed controls. The WeRead login cookie is stored in plain text at ~/.dsh/weread-moyu/session.json (mode 0600) and the whole-book cache (up to 500 MB) lives under ~/.dsh/weread-moyu/cache; the only host it talks to is weread.qq.com.'
+  zh: '扫码登录微信读书，把当前书页正文以低对比度文字层垫在整个 DSH 界面背后，聊天区半透明浮在上面，支持整本离线缓存、看清当前页浮层和书架/章节/透明度/字号/滚动速度调节。微信读书登录 cookie 以明文保存在 ~/.dsh/weread-moyu/session.json（权限 0600），整本缓存（最多 500 MB）放在 ~/.dsh/weread-moyu/cache；只访问 weread.qq.com。'
+tarball: https://github.com/alanwang87/dsh-weread-moyu/releases/latest/download/dsh-weread-moyu.tgz

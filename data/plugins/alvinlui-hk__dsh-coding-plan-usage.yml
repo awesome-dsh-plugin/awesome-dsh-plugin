@@ -1,0 +1,6 @@
+url: https://github.com/alvinlui-hk/dsh-coding-plan-usage
+name: alvinlui-hk/dsh-coding-plan-usage
+category: usage
+description:
+  en: "Shows Qwen Token Plan, Z.ai GLM Coding Plan and MiniMax Coding Plan quota usage in three cards under Settings → Models, reusing the configured provider API keys for Z.ai and MiniMax and a dedicated browser-window sign-in for Qwen."
+  zh: "在「设置 → 模型」底部用三张卡片集中显示 Qwen Token Plan、Z.ai GLM Coding Plan 和 MiniMax Coding Plan 的套餐用量，Z.ai 与 MiniMax 复用已配置的 provider API key，Qwen 通过独立浏览器窗口登录取数。"

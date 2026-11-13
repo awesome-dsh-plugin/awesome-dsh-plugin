@@ -1,0 +1,7 @@
+url: https://github.com/hl3207/dsh-movie
+name: hl3207/dsh-movie
+category: ui
+icon: https://raw.githubusercontent.com/hl3207/dsh-movie/main/icon-180.png
+description:
+  en: 'Adds a left-sidebar panel to the DSH Web GUI: one ranked board of the films and series released in the past 21 days or due within the next 31 days, taken from JustWatch for the US, five European countries, Japan and Korea and from Douban for China. Each row carries a poster (or a drawn placeholder when the poster CDN will not load), a synopsis of five sentences or fewer, Douban and Rotten Tomatoes ratings and popular Douban comments. A search box filters the board as you type and asks Douban, TVMaze and the iTunes storefront about a title, merging the three into one record and listing the matches already on the board separately. Synopses, comments and titles are translated through the host translator service, so the Chinese/English switch re-renders the board. No API key and no account.'
+  zh: '为 DSH 网页版的左侧栏加一块影视雷达：把近 21 天内上映与未来 31 天内定档的电影和剧集排成一张加权榜单，美国、欧洲五国、日本和韩国取自 JustWatch，中国取自豆瓣。每行带海报（图床不可达时用绘制的占位图）、五句以内简介、豆瓣与烂番茄评分和豆瓣热门短评。搜索框输入即筛，并向豆瓣、TVMaze 与 iTunes 查询片名，三路结果合并为一条，榜单内命中单独成组。简介、短评与缺失片名经宿主翻译服务转成面板语言，中英文切换后整块重绘。不需要 API Key，也不需要账号。'

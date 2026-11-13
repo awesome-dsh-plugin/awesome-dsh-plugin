@@ -2,7 +2,7 @@ url: https://github.com/GXinnnnnn/dsh-SAO
 name: GXinnnnnn/dsh-SAO
 category: theme
 description:
-  en: 'SAO (Sword Art Online) theme for DeepSeek Harness: a Link Start startup animation rendered ahead of the app shell, with Kirito/Asuna voice lines, plus theme and surface colours, liquid or frosted glass, per-component transparency, nine built-in or uploaded wallpapers, and a model-intensity slider.'
-  zh: '仿刀剑神域主题：在应用外壳之前独立渲染的 Link Start 启动动画，配桐人／亚丝娜语音；另有主题色与界面底色、液态／磨砂玻璃、各组件透明度、九张内置壁纸或自传壁纸，以及输入区的模型强度滑条。'
+  en: 'Sword Art Online theme with two Link Start animations and Kirito/Asuna voices; full or startup-only mode with a true-alpha white-background transition into the loaded interface; independent light/dark accents and surface colours, local fonts, fully themed settings and clear control states; improved liquid-glass edge refraction and directional reflections with reduced white halos, or frosted glass; popovers sample the current page and only refract visible wallpaper; per-component transparency, continuous sidebar/context glass, compact tabs and single-line status readouts; nine wallpapers, local images or 4K/5K looping video with power-saving mode; model reasoning-intensity slider.'
+  zh: '刀剑神域主题：双 Link Start 启动动画与桐人／亚丝娜语音，可选全部功能或仅限启动动画，启动白底以真实透明通道自然透出已加载界面；明暗主题色独立记忆、界面底色与本机字体、完整设置主题与清晰控件状态；液态玻璃边缘折射与方向反光，减轻整圈泛白，亦可选磨砂；浮层跟随当前页面取景，仅折射实际可见壁纸；分组件透明度、连续右栏与上下文玻璃、紧凑标签与单行读数；九张壁纸、本地图片或 4K／5K 循环视频及静态省电；模型思考强度滑条。'
 icon: https://raw.githubusercontent.com/GXinnnnnn/dsh-SAO/main/icon.png
-tarball: https://github.com/GXinnnnnn/dsh-SAO/releases/download/v3.0.0/dsh-SAO.tgz
+tarball: https://github.com/GXinnnnnn/dsh-SAO/releases/latest/download/dsh-SAO.tgz

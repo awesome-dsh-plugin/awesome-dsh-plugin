@@ -1,0 +1,8 @@
+url: https://github.com/vector985/dsh-zen-garden
+name: vector985/dsh-zen-garden
+category: fun
+description:
+  en: 'Pixel zen-garden plugin for DeepSeek Harness: eight pots and six plants, watering and bloom coins, live Open-Meteo weather, a local helper, and garden_status/garden_action agent tools.'
+  zh: 'DeepSeek Harness 的像素植物园：八个花盆、六种植物，浇水开花收金币，读取 Open-Meteo 实时天气，附大肥鱼托管与 garden_status/garden_action 工具。'
+icon: https://raw.githubusercontent.com/vector985/dsh-zen-garden/main/assets/icon-180.png
+tarball: https://github.com/vector985/dsh-zen-garden/releases/latest/download/dsh-zen-garden.tgz

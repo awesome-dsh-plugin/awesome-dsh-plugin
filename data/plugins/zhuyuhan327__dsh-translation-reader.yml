@@ -1,0 +1,7 @@
+url: https://github.com/zhuyuhan327/dsh-translation-reader
+name: zhuyuhan327/dsh-translation-reader
+category: docs
+description:
+  en: 'Bilingual PDF paper reader: translates papers paragraph by paragraph in place, with compare view, paper Q&A, resumable translation and PDF export.'
+  zh: '双语论文阅读插件：按原段落位置逐段翻译 PDF 论文，支持对照阅读、论文问答、断点续译与导出。'
+tarball: https://github.com/zhuyuhan327/dsh-translation-reader/releases/download/v0.4.3/dsh-quiet-reader-0.4.3.tgz

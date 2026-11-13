@@ -1,0 +1,7 @@
+url: https://github.com/SavaStone/dsh-provider-limits
+name: SavaStone/dsh-provider-limits
+category: usage
+description:
+  en: 'Provider limits in the DSH sidebar footer: the remaining OpenRouter credit balance and OpenCode Go rolling 5-hour, weekly and monthly quota windows, shown as bars or percentages with a Remaining/Used choice, plus a Creator-mode request when the active provider is not supported.'
+  zh: '在 DSH 侧栏底部显示供应商额度：OpenRouter 剩余余额，以及 OpenCode Go 滚动 5 小时、每周和每月的配额窗口，以进度条或百分比展示，可切换「剩余 / 已用」；当前供应商不受支持时，还会提供 Creator 模式请求。'
+tarball: https://github.com/SavaStone/dsh-provider-limits/releases/download/v0.4.0/dsh-provider-limits-0.4.0.tgz

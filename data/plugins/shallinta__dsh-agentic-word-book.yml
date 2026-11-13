@@ -1,0 +1,7 @@
+url: https://github.com/shallinta/dsh-agentic-word-book
+name: shallinta/dsh-agentic-word-book
+category: tools
+icon: https://raw.githubusercontent.com/shallinta/dsh-agentic-word-book/main/assets/suiji-wordbook-logo.webp
+description:
+  en: 'Suiji Word Book: a word book panel that shows one word per page with picture, phonetics, pronunciation, five phrases and an example sentence, plus fill-in-the-letters spelling practice and a 12-type word-recognition quiz. Word data is kept as plain files in a local directory, and an included skill lets an AI add cards from a word list. The “+Word” button (hidden until enabled in Settings) starts an AI session and by default switches it to danger-full-access; turn that off in Settings.'
+  zh: '随记单词本：一个词一页，插图、音标、发音、五条词组和例句，外加挖字母拼写练习与 12 种题型的单词辨析；词库以普通文件保存在本地目录，附带技能可让 AI 按词表批量建卡。「+单词」按钮（默认隐藏，需在设置里开启）会新建 AI 会话并默认把它切到 danger-full-access，可在设置里关闭。'

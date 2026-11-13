@@ -2,6 +2,7 @@ url: https://github.com/tyr1105/dsh-buddy/tree/main/packages/plugin
 name: tyr1105/dsh-buddy#dsh-buddy
 category: agi
 description:
-  en: Persistent named AI teammates that watch your sources, wake only when there is a reason, decide their own next check, and bring you questions, approvals and alerts in chat threads.
-  zh: 常驻有名字的机器人队友：替你盯着信息源，有理由才唤醒思考，自己约下次自查，提问、审批与告警以卡片出现在对话线程里。
+  en: "AI team with a pixel-art office showing each teammate's status and daily trail. A lead runs project sessions; daily caps per teammate. DSH Desktop, macOS only."
+  zh: '带像素办公室的 AI 团队：显示每位队友当前的状态和当天做过的事。项目会话由负责人安排分工，队友互相 @；队友每天自己开工的次数和 token 有上限。仅支持 macOS 上的 DSH 桌面版。'
+icon: https://raw.githubusercontent.com/tyr1105/dsh-buddy/main/packages/plugin/assets/icon.png
 tarball: https://github.com/tyr1105/dsh-buddy/releases/latest/download/dsh-buddy.tgz

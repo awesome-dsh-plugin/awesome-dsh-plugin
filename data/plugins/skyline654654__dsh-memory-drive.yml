@@ -1,0 +1,8 @@
+url: https://github.com/skyline654654/dsh-memory-drive
+name: skyline654654/dsh-memory-drive
+category: memory
+description:
+  en: 'Manage memory files written by DSH memory plugins inside Settings (view/edit/delete), and sync them to one cloud drive with conflict-safe three-way sync; other drives take upload-only backups.'
+  zh: 在 DSH 设置里查看、编辑、删除各记忆插件写下的记忆文件，并同步到一个网盘（冲突安全的三方同步）；其他网盘只做上传备份。
+icon: https://raw.githubusercontent.com/skyline654654/dsh-memory-drive/main/assets/icon-180.png
+tarball: https://github.com/skyline654654/dsh-memory-drive/releases/latest/download/dsh-memory-drive.tgz

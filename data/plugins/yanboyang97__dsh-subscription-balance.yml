@@ -1,0 +1,6 @@
+url: https://github.com/yanboyang97/dsh-subscription-balance
+name: yanboyang97/dsh-subscription-balance
+category: usage
+description:
+  en: Shows the balance or quota behind the current conversation's model for DeepSeek, Kimi Code and OpenAI, plus local usage and priced estimates for every provider configured in DSH.
+  zh: 按当前会话模型显示 DeepSeek、Kimi Code 与 OpenAI 的余额或配额，并为 DSH 中配置的每个提供商提供本地用量与价格估算。

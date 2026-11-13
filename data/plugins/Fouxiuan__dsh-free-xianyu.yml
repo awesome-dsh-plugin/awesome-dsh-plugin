@@ -1,0 +1,7 @@
+url: https://github.com/Fouxiuan/dsh-free-xianyu
+name: Fouxiuan/dsh-free-xianyu
+category: tools
+description:
+  en: 'Hosts the ai-goofish-monitor scraper for the Xianyu second-hand marketplace: managed backend lifecycle, thirteen goofish_* agent tools, a sidebar panel, and AI listing analysis through the dsh-our-free-model gateway by default.'
+  zh: '托管闲鱼二手市场监控后端 ai-goofish-monitor：管理其进程生命周期，提供十三个 goofish_* agent 工具与侧边栏面板，并把商品分析默认接到 dsh-our-free-model 的免费模型网关。'
+icon: https://raw.githubusercontent.com/Fouxiuan/dsh-free-xianyu/main/assets/icon-180.png

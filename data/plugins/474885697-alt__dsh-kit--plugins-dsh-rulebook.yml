@@ -1,0 +1,7 @@
+url: https://github.com/474885697-alt/dsh-kit/tree/main/plugins/dsh-rulebook
+name: 474885697-alt/dsh-kit#dsh-rulebook
+category: tools
+tarball: https://github.com/474885697-alt/dsh-kit/releases/download/v0.1.0/dsh-rulebook-0.1.0.tgz
+description:
+  zh: "把桌游或跑团规则书（docx/txt/md）抽成结构化 JSON：章节、编号条款、关键词表与数值，并检查缺失数值和重复条目。"
+  en: "Extracts chapters, numbered clauses, keyword tables and numeric values from a docx, txt or md rulebook into JSON, and flags duplicate clauses and missing values."

@@ -1,0 +1,7 @@
+url: https://github.com/SilverIodide42/dsh-session-consistency
+name: SilverIodide42/dsh-session-consistency
+category: session
+description:
+  en: 'Session manager panel for DSH: checks the three session stores (session dirs, metadata cache, workspace index), backs up before deleting, manages archive/restore, and runs a workspace health check with the workspace-doctor libs.'
+  zh: 'DSH 会话管理面板：校验会话目录 / 元数据缓存 / 工作区索引三处存储的一致性，删除前恒先备份，支持归档恢复，并借助 workspace-doctor 库做工作区体检。'
+tarball: https://github.com/SilverIodide42/dsh-session-consistency/releases/download/v0.1.2/dsh-session-consistency-0.1.2.tgz

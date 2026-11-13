@@ -1,0 +1,6 @@
+url: https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-alertmanager
+name: feng-yifan/dsh-plugins#dsh-alertmanager
+category: dev
+description:
+  en: 'AlertManager panel in the DSH sidebar: reads multiple AlertManager HTTP API v2 instances in parallel, aggregates their alerts into severity-colored cards filterable by search, state, severity and instance, and dispatches any selection into a new session in a chosen workspace; the instance-grouped alerts become the first message to the agent, which then starts handling them immediately. Supports per-instance auth and TLS, auto-refresh, and a configurable dispatch prompt.'
+  zh: 'DSH 侧栏的 AlertManager 告警面板：并行读取多个 AlertManager HTTP API v2 实例，把告警聚合为可按搜索 / 状态 / 级别 / 实例筛选的严重度卡片；勾选任意告警并选择工作区后一键新建会话，把按实例分组的告警作为首条消息发给 agent 立即处理。支持每实例独立鉴权与 TLS、自动刷新，以及可配置的派发提示词。'

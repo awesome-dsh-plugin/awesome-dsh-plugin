@@ -1,0 +1,6 @@
+url: https://github.com/Iris-change/dsh-eva-skins
+name: Iris-change/dsh-eva-skins
+category: theme
+description:
+  en: "Four EVA-themed skins for DeepSeek Harness — Units 02, 00, 01 and 08. Each one restyles the sidebar, composer and window frame from the theme token layer, and ships a 20-second canvas boot sequence with a confirm step, a skip button and a replay hotkey. Switch skins from a popup on the composer chip."
+  zh: "四套 EVA 主题皮肤（二号机／零号机／初号机／八号机）。每套通过主题样式层重绘侧栏、输入框与窗口边框，并带一段 20 秒的开机动画（Canvas 绘制，含身份确认、可跳过、可重播）。输入框旁的胶囊可弹出列表切换皮肤。"

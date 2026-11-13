@@ -1,0 +1,7 @@
+url: https://github.com/AyahaShirane/dsh-network-continue
+name: AyahaShirane/dsh-network-continue
+category: remote
+description:
+  en: 'Maintained continuation of dsh-network: authenticated LAN, Tailnet and HTTPS access to a DSH host, with pairing QR and current Web browser-auth support. Replaces the upstream dsh-network (remove it first; both register the same /dsh-network routes); the gateway listens on 0.0.0.0:3081 by default, set bindHost to restrict it.'
+  zh: 'dsh-network 的维护续作：为 DSH 主机提供经认证的局域网、Tailnet 与 HTTPS 接入，含配对二维码并适配新版 Web 浏览器认证。替代上游 dsh-network（先卸载它，两者注册相同的 /dsh-network 路由）；网关默认监听 0.0.0.0:3081，可用 bindHost 限制。'
+icon: https://raw.githubusercontent.com/AyahaShirane/dsh-network-continue/main/assets/app-icon.png

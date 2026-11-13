@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-liars-dice
+name: dingchenhui0618-arch/dsh-liars-dice
+category: fun
+description:
+  en: 'A hot-seat Chinese Liar''s Dice table for DeepSeek Harness: 2–6 seats, 3/5/7 dice, wild ones, an LLM opponent that only sees its own hand and is re-validated by the rules, a post-reveal referee, a replay that keeps the current round''s dice hidden until the challenge, and a switchable exact-binomial probability panel. 54 node --test tests, zero runtime dependencies, four real rendered screenshots.'
+  zh: '给 DeepSeek Harness 的中文吹牛骰子热座牌桌：2–6 个座位、每人 3/5/7 颗骰、万能 1；Agent 对手只看自己的手骰，动作由服务端规则复核；开盅后有裁判复盘；每一次叫价和开盅都可回放，当前回合的骰子在开盅前对回放接口保密；概率面板用精确二项分布，可随时关掉。54 个 node --test 测试，零运行时依赖，四张真实渲染截图。'

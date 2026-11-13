@@ -1,0 +1,6 @@
+url: https://github.com/nacivageer/dsh-price-period
+name: nacivageer/dsh-price-period
+category: usage
+description:
+  en: Shows whether the DeepSeek API is currently billing at the peak or off-peak (half-price) rate in the conversation title bar, with a live countdown once the next switch is under 30 minutes away and the Chinese statutory-holiday calendar built in.
+  zh: 在会话标题栏显示 DeepSeek API 此刻按高峰还是半价计费；离下次切换不足 30 分钟时把倒计时直接显示在标签上，内置中国法定节假日表。

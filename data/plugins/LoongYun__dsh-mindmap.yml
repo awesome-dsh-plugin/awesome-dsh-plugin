@@ -1,0 +1,6 @@
+url: https://github.com/LoongYun/dsh-mindmap
+name: LoongYun/dsh-mindmap
+category: ui
+description:
+  en: 'View XMind, FreeMind, OPML, KityMinder and VYM mind maps in the sidebar, edit and save all of them except read-only XMind (convert it to .mm first), export to .mm, and read or edit outlines through agent tools.'
+  zh: '在侧栏查看 XMind、FreeMind、OPML、KityMinder 和 VYM 思维导图，除只读的 XMind（需先转成 .mm）外均可编辑保存，并可导出为 .mm，另提供供 agent 读写大纲的工具。'

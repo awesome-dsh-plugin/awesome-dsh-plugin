@@ -1,0 +1,6 @@
+url: https://github.com/Wazy-XD/tabby-serial-mcp/tree/main/dsh-bundle
+name: Wazy-XD/tabby-serial-mcp#dsh-bundle
+category: tools
+description:
+  en: 'Connects the Tabby serial MCP bridge and registers a tabby-serial skill: the agent can list, open, read and write the serial ports already open in Tabby, and the same terminal keeps accepting your keystrokes while it works. Requires the tabby-serial-mcp plugin inside Tabby.'
+  zh: '接入 Tabby 串口 MCP 桥接服务并注册 tabby-serial 技能：agent 可以列出、新建、读写 Tabby 里已经打开的串口，同时你还能在同一个终端里继续敲键盘。需要在 Tabby 里安装 tabby-serial-mcp 插件。'

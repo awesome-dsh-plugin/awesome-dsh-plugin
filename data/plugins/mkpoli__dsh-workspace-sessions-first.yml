@@ -1,0 +1,7 @@
+url: https://github.com/mkpoli/dsh-workspace-sessions-first
+name: mkpoli/dsh-workspace-sessions-first
+category: ui
+tarball: https://github.com/mkpoli/dsh-workspace-sessions-first/releases/download/v0.1.0/dsh-workspace-sessions-first-0.1.0.tgz
+description:
+  en: Renders a workspace's own sessions above its nested workspace folders in the sidebar's Workspace Tree.
+  zh: 把侧栏工作区树里每个工作区自身的会话排在它嵌套的子工作区文件夹之前。

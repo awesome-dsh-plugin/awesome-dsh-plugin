@@ -1,0 +1,7 @@
+url: https://github.com/HighToward/dsh-plugins-sidebar-manager
+name: HighToward/dsh-plugins-sidebar-manager
+category: ui
+description:
+  en: "Sorts the entries of the DSH sidebar panel list into one or two levels of categories, draws a titled collapsible header for each group, and shows or hides each entry, all edited from a Plugin Sidebar page in Settings and mirrored to $DSH_HOME/plugins-sidebar-manager.json."
+  zh: "把 DSH 侧栏的面板入口按一级或二级分类归位，为每个分类在侧栏画出可折叠的标题行，并能逐个显示或隐藏；都在设置的「插件侧栏管理」里调整，布局同时写入 $DSH_HOME/plugins-sidebar-manager.json。"
+icon: https://raw.githubusercontent.com/HighToward/dsh-plugins-sidebar-manager/main/assets/icon-180.png

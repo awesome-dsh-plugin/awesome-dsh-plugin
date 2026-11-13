@@ -1,0 +1,6 @@
+url: https://github.com/DarbeChan/dsh-qizhoucnc-cam
+name: DarbeChan/dsh-qizhoucnc-cam
+category: tools
+description:
+  en: CNC (NC/CNC/G-code) toolpath recognition, 3D display and a large editing view with quote-to-composer for DeepSeek Harness.
+  zh: 数控程序（NC/CNC/G-code）刀路识别、三维显示与大界面编辑，支持代码引用到对话框，适用于 DeepSeek Harness。

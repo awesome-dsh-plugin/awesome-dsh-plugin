@@ -1,0 +1,6 @@
+url: https://github.com/brianmoney/dsh-codex-usage-panel
+name: brianmoney/dsh-codex-usage-panel
+category: usage
+description:
+  en: 'Codex quota card at the sidebar foot, styled like the Command Code panel, plus a quota dashboard: a ring, one row per quota window with reset time and remaining percentage, and a dashboard with credits, spend-limit and reset-credit tiles. Reads the ChatGPT quota that dsh-codex-subscription reports over its bridge.'
+  zh: '侧边栏底部的 Codex 额度卡片（样式与 Command Code 面板一致），并附带额度仪表盘：环形进度、每个额度窗口一行（含重置时间与剩余百分比），仪表盘展示点数、消费上限与重置次数。数据来自 dsh-codex-subscription 通过其桥接上报的 ChatGPT 额度。'

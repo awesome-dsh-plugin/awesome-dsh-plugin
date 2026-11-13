@@ -1,0 +1,7 @@
+url: https://github.com/Diomchen/dsh-cross-agent
+name: Diomchen/dsh-cross-agent
+category: remote
+icon: https://raw.githubusercontent.com/Diomchen/dsh-cross-agent/main/assets/icon-180.png
+description:
+  en: 'Peer sessions between DeepSeek Harness instances on a LAN: UDP discovery, an explicit one-way allow list with open or confirm approval, HMAC-signed HTTP with a ±60 s window and nonce replay protection, a `跨端 · <peer>` session for delivered prompts, two-phase file transfer up to 100 MiB with SHA-256 receipts, and seven agent tools that call the named tools listed in `exposedTools` on the receiving side. Its local /cross-agent panel routes are guarded only by a loopback check, without DSH''s Host/Origin admission.'
+  zh: '同一局域网内两台机器上的 DSH 建立跨端会话：UDP 发现、显式单向放行与 open/confirm 审核、带 ±60 秒时间窗和 nonce 防重放的 HMAC 签名 HTTP、把指令投进 `跨端 · <对端名>` 会话、两阶段传输 ≤100 MiB 的文件并校验 sha256，以及七个只能调用对方 `exposedTools` 白名单内具名工具的 agent 工具。本机的 /cross-agent 面板路由只用回环地址检查把关，没有 DSH 的 Host/Origin 准入。'

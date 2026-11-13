@@ -1,0 +1,7 @@
+url: https://github.com/zhangcaiqian/wenfang-themes/tree/main/packages/dsh
+name: zhangcaiqian/wenfang-themes#dsh
+category: theme
+description:
+  en: 'Six Chinese-aesthetic appearance palettes for DeepSeek Harness — ink, paper, sea and porcelain, three dark and three light, switchable from the plugin market themes tab and generated from the same design source as the Codex port.'
+  zh: '为 DeepSeek Harness 提供六套中式外观配色：墨、纸、海、瓷，深浅各半，可在插件市场主题页切换；与 Codex 端共用同一份设计源。'
+icon: https://raw.githubusercontent.com/zhangcaiqian/wenfang-themes/main/assets/icon-180.png

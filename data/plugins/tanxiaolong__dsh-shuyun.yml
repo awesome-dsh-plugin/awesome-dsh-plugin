@@ -1,0 +1,6 @@
+url: https://github.com/tanxiaolong/dsh-shuyun
+name: tanxiaolong/dsh-shuyun
+category: security
+description:
+  en: "macOS only. Shows a live badge in DSH and an optional SwiftBar menu-bar item reporting what the Yunshu (Eagleyun SASE) endpoint agent is doing on this Mac right now — TCC permission requests, its own agent logs (screen capture, clipboard, browser URL reads, browser window counts), DLP scan paths and the process table. Read-only: it never blocks, disables or modifies the agent, keeps the last 60 events in memory only, writes three state files locally and makes no network calls. Requires the Yunshu agent to be installed; SwiftBar is optional."
+  zh: "仅 macOS。在 DSH 顶栏和可选的 SwiftBar 菜单栏显示云枢（Yunshu / 鹰云 SASE）终端 agent 此刻在本机做什么：TCC 权限申请、云枢自身日志（截屏、剪贴板读写、读取前台浏览器地址、各浏览器窗口数）、DLP 扫描的文件路径、进程表。纯只读——不拦截、不禁用、不修改云枢，只在内存保留最近 60 条动作，本地写三个状态文件，不联网。需要本机已安装云枢；SwiftBar 可选，不装也能用。"

@@ -1,0 +1,8 @@
+url: https://github.com/KunKun24/dsh-fold-delete
+name: KunKun24/dsh-fold-delete
+category: session
+description:
+  en: Collapse older messages in long conversations and permanently delete sessions you no longer need.
+  zh: 长对话只显示最近的消息，不需要的会话可以彻底删除。
+icon: https://raw.githubusercontent.com/KunKun24/dsh-fold-delete/main/assets/icon-180.png
+tarball: https://github.com/KunKun24/dsh-fold-delete/releases/download/v1.1.0/dsh-fold-delete-1.1.0.tgz

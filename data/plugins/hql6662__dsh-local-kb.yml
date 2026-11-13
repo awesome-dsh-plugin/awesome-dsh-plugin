@@ -1,0 +1,8 @@
+url: https://github.com/hql6662/dsh-local-kb
+name: hql6662/dsh-local-kb
+category: tools
+description:
+  en: 'Local full-disk knowledge base: indexes documents from C:/ and E:/ into a SQLite FTS5 trigram index over filename, body, and path, with a searchable DSH sidebar panel, no-keyword browse, usefulness/topic tags, and a token-efficient kb agent tool. Windows only; building the index needs a system Python 3 with PyMuPDF and python-docx (plus python-pptx and openpyxl for PPTX/XLSX), and no prebuilt index ships with the plugin.'
+  zh: '本地全盘知识库：把 C:/ 与 E:/ 的文档抽取进 SQLite FTS5 trigram 索引（文件名、正文、路径三列可搜），提供可搜索的 DSH 侧栏面板、无关键词浏览、有用度与主题双标签，以及省 token 的 kb 智能体工具。仅限 Windows；建索引需要系统 Python 3 及 PyMuPDF、python-docx（PPTX/XLSX 另需 python-pptx、openpyxl），插件不自带索引。'
+icon: https://raw.githubusercontent.com/hql6662/dsh-local-kb/main/assets/icon-180.png
+tarball: https://github.com/hql6662/dsh-local-kb/releases/latest/download/dsh-local-kb.tgz

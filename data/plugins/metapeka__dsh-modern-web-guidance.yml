@@ -1,0 +1,11 @@
+# Entry file for the awesome-dsh-plugin catalog.
+# Submit as: data/plugins/metapeka__dsh-modern-web-guidance.yml (one file, one PR).
+url: https://github.com/metapeka/dsh-modern-web-guidance
+name: metapeka/dsh-modern-web-guidance
+category: skill
+# Raster, GitHub-hosted, 512x512 (the catalog refuses SVG). The tile breaks if this file moves.
+icon: https://raw.githubusercontent.com/metapeka/dsh-modern-web-guidance/main/icon.png
+# Quoted because the description contains ": " — an unquoted colon breaks the YAML parser.
+description:
+  en: 'Bundles Google Chrome''s Modern Web Guidance offline: three tools that search, retrieve and list 208 Baseline-aware web-platform guides, plus the modern-web-guidance and chrome-extensions skills.'
+  zh: '离线内置 Google Chrome 的 Modern Web Guidance：三个工具用于搜索、读取和列出 208 篇关注 Baseline 兼容性的 Web 平台指南，另附 modern-web-guidance 与 chrome-extensions 两个技能。'

@@ -1,0 +1,7 @@
+url: https://github.com/MrKillerBad/dsh-session-delete
+name: MrKillerBad/dsh-session-delete
+category: session
+description:
+  en: 'Permanently deletes one session from its sidebar context menu after a confirmation dialog: the log directory under the DSH home, the projection-cache thumbnail, its id in every workspace.json, and its archived and pinned entries. Sessions resumed since launch are detached from both the sessions and the agents stores first, so the deleted row does not return to the sidebar as an orphan. Refuses while the session is running a turn, and never touches the workspace folder itself.'
+  zh: '在会话右键菜单里永久删除一个会话（先弹确认框）：DSH home 下的日志目录、投影缓存缩略图、每个 workspace.json 里的会话 id、以及归档与置顶列表里的条目。本次启动后 resume 进内存的会话会先从 sessions 与 agents 两个 store 里摘除，删掉的会话不会以幽灵条目的形式回到侧边栏。会话正在跑一轮对话时拒绝删除；工作区目录本身不受影响。'
+icon: https://raw.githubusercontent.com/MrKillerBad/dsh-session-delete/main/icon.png

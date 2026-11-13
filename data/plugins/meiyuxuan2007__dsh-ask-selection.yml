@@ -1,0 +1,6 @@
+url: https://github.com/meiyuxuan2007/dsh-ask-selection
+name: meiyuxuan2007/dsh-ask-selection
+category: ui
+description:
+  en: 'Right-click selected text in a chat answer or a right-sidebar preview (Markdown, text, code, PDF, Office, Excel) to quote it to the model together with its source — file path, heading and line range, or page number (Excel: the current cell and sheet) — then send it at once or insert it into the composer for editing.'
+  zh: '在会话回答或右侧栏文档预览（Markdown、文本、代码、PDF、Office、Excel）里选中文字后右键，带着来源（文件路径、标题与行号范围，或页码；Excel 为当前单元格与工作表）引用给模型，可直接发送，也可先插入输入框继续编辑。'

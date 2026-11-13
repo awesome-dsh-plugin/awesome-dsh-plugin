@@ -1,0 +1,7 @@
+url: https://github.com/chensuqi631-max/zying-erp
+name: chensuqi631-max/zying-erp
+category: tools
+tarball: https://github.com/chensuqi631-max/zying-erp/releases/download/v1.2.1/zying-erp-1.2.1.tgz
+description:
+  en: 'Amazon product research workbench for DeepSeek Harness: category, brand and follow-seller collectors driven through the local Edge browser, a product library with unified filters, an FBA/FBM/self-operated profit calculator, blue-ocean category scoring with candidate picks, trademark lookup, supplier image search and Excel export. Proprietary software: it installs and starts without a license, but every data call returns 403 until the author issues a device-bound license key. Needs Edge started with --remote-debugging-port=9222 and signed in to Amazon; starts a local backend on port 3088. The separate 智赢 collector browser extension is optional and adds size, weight, trademark and monthly-sales fields.'
+  zh: '智赢ERP 搞薯条：亚马逊选品与跟卖分析工作台（类目/品牌/跟卖店铺采集、商品库与统一筛选、FBA/FBM/自营利润测算、蓝海选品五维评分与候选品、商标查重、找货源以图搜图、导出 Excel），采集驱动本机 Edge。商业授权软件：未获授权时可安装、可启动，但所有数据接口都返回 403，需向作者申请与设备绑定的 license.key。需以 --remote-debugging-port=9222 启动 Edge 并登录亚马逊，会在本机 3088 端口启动后端；可选搭配「智赢」采集扩展，多采尺寸、重量、商标与月销量。'

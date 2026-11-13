@@ -1,0 +1,7 @@
+url: https://github.com/zilta-amaze/dsh-recovery-memory
+name: zilta-amaze/dsh-recovery-memory
+category: memory
+icon: https://raw.githubusercontent.com/zilta-amaze/dsh-recovery-memory/main/assets/icon.png
+description:
+  en: "Conversation memory behind a 20-letter recovery code: /recovery create packs the current conversation into one local record, and /recovery memory <code> injects it into a new conversation, where the model first summarises the recovered session and ends its reply with 记忆已恢复. Records are plain JSON under $DSH_HOME/recovery (mode 0600) with no network calls; the restored transcript is complete unless it exceeds the configured character budget, and /recovery where plus the dir option or DSH_RECOVERY_DIR move the directory to shared storage or a synced folder."
+  zh: "用 20 字母恢复码承接对话记忆：/recovery create 把当前对话打包成本地记录，/recovery memory <恢复码> 在新对话中注入该记忆，模型先总结上一段会话并在结尾写「记忆已恢复」。记录是本机 $DSH_HOME/recovery 下的明文 JSON（0600），不联网；字符预算内完整注入、超限才截取头尾，/recovery where 查看目录，dir 配置或 DSH_RECOVERY_DIR 可把目录换到共享存储、同步盘。"

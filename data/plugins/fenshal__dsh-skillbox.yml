@@ -2,5 +2,5 @@ url: https://github.com/fenshal/dsh-skillbox
 name: fenshal/dsh-skillbox
 category: skill
 description:
-  en: 'Lists skills already installed for DSH, WorkBuddy, Claude Code, Codex and Doubao, imports any of them as a DSH skill, and adds session-scoped experts with a per-turn avatar header.'
-  zh: '列出 DSH、WorkBuddy、Claude Code、Codex、豆包本地已装技能，可导入为 DSH 技能；专家可选挂到单个会话，按轮显示头像署名。'
+  en: 'One page for every skill on your machine: lists what DSH, WorkBuddy, Claude Code, Codex and Doubao have installed, imports any of them as a DSH skill, and discovers more on GitHub or the ClawHub directory (sorted by real downloads). Experts can be attached per session with a per-turn avatar header.'
+  zh: '把机器上散落的技能收进一页：列出 DSH、WorkBuddy、Claude Code、Codex、豆包的已装技能，可一键导入为 DSH 技能；发现页支持 GitHub 与 ClawHub 目录（按真实下载量排序）。专家可按会话挂载，回复上方显示署名。'
