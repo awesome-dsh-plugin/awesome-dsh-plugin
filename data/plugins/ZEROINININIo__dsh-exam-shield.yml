@@ -1,0 +1,6 @@
+url: https://github.com/ZEROINININIo/dsh-exam-shield
+name: ZEROINININIo/dsh-exam-shield
+category: tools
+description:
+  en: 'Windows screen-capture guard for DSH: a tool that drives an overlay window which never appears in screenshots or recordings, plus window reconnaissance, full-screen grab, a local question bank and a human-like answer pacing planner.'
+  zh: 'DSH 的 Windows 截屏隐身守卫：驱动一个不会出现在截图和录屏里的覆盖层窗口，附带窗口侦察、全屏截图、本地题库和拟人化作答节奏表。'
