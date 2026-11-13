@@ -1,0 +1,7 @@
+url: https://github.com/factyy163/dsh-theme-paper-warm
+name: factyy163/dsh-theme-paper-warm
+category: theme
+description:
+  en: 'Warm paper theme for the DSH Web GUI: overrides canvas, surface, text, border and scrollbar tokens to a warm palette (canvas #F2F0E5, ink #100F0F) and adds a toggle row in Settings → General.'
+  zh: '为 DSH 网页界面提供暖纸配色：覆盖画布、表面、文字、描边与滚动条等 token（画布 #F2F0E5、正文 #100F0F），并在「设置 → 通用」增加一行开关。'
+icon: https://raw.githubusercontent.com/factyy163/dsh-theme-paper-warm/main/assets/icon-180.png
