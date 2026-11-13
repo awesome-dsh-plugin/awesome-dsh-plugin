@@ -1,0 +1,7 @@
+url: https://github.com/DanYikona/DSH-script-hub
+name: DanYikona/DSH-script-hub
+category: dev
+tarball: https://github.com/DanYikona/DSH-script-hub/releases/download/v0.2.3/dsh-script-hub-0.2.3.tgz
+description:
+  en: "Archives scripts written in any DSH session into a per-category folder, writes a Markdown doc for each one, and starts or stops them with status verified against real processes and scheduled tasks."
+  zh: "把任意会话里写出的脚本归档到按类别分好的目录，逐个生成 Markdown 文档，并能启动/停止、按真实进程与计划任务核对状态。"
