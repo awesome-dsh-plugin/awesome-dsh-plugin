@@ -44,7 +44,7 @@ import { SCANNER_SCHEMA, factsFromScan, rememberPrevious, scanSourceFor, shouldR
 const OUT_FILE = 'data/capabilities.json'
 const NPM_MAP_FILE = 'data/npm-map.json'
 const TARBALLS_FILE = 'data/tarballs.json'
-const TOOL = process.env.CAPABILITY_SCANNER ?? 'dsh-trust-check@0.2.1'
+const TOOL = process.env.CAPABILITY_SCANNER ?? 'dsh-trust-check@0.2.5'
 
 /**
  * How to invoke the scanner.
