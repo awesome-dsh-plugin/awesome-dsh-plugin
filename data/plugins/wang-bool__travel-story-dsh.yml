@@ -1,0 +1,6 @@
+url: https://github.com/wang-bool/travel-story-dsh
+name: wang-bool/travel-story-dsh
+category: workflow
+description:
+  en: 'Travel-planning agent mode: the full Travel Story app (map, timeline, playback) takes over the DSH page with chat as a floating panel — 18 agent tools for place search, weather, routing and itinerary editing, with live UI-context injection.'
+  zh: '旅行规划 agent 模式：完整 Travel Story 应用（地图/时间线/播放）整页接管 DSH 页面、对话变浮窗——18 个 agent 工具覆盖地点搜索、天气、路线与行程编辑，并注入实时界面上下文。'
