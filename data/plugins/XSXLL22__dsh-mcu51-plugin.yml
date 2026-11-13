@@ -1,0 +1,7 @@
+url: https://github.com/XSXLL22/dsh-mcu51-plugin
+name: XSXLL22/dsh-mcu51-plugin
+category: dev
+description:
+  en: 'Windows x64 8051 toolbox with 12 DSH tools, bundled STC UART ISP, serial debugging, hardware options, image buffers, chip catalog and offline helpers; requires the prebuilt release.'
+  zh: 'Windows x64 的 51 单片机工具箱：12 个 DSH 工具，内置 STC UART 烧录、串口调试、硬件选项、镜像缓冲区、芯片目录和离线辅助；需安装完整预构建发行包。'
+tarball: https://github.com/XSXLL22/dsh-mcu51-plugin/releases/download/v0.3.0-alpha.3/dsh-mcu51-0.3.0-alpha.3-win32-x64.tgz
