@@ -1,0 +1,22 @@
+url: https://github.com/Zhang-Eli/dsh-one-pack
+name: Zhang-Eli/dsh-one-pack
+category: tools
+description:
+  en: >-
+    Back up and restore a whole DSH environment (installed plugins, DSH and
+    plugin settings, skills, sessions and explicitly registered workspace
+    files) into one private GitHub repository. Multiple machines share a
+    single repo through per-device namespaces that never overwrite each
+    other, and a pull can restore from this device, the latest backup or a
+    chosen device. Push previews a read-only plan before writing, pull backs
+    up local data first, secret-looking settings are redacted and key files
+    are never uploaded. It calls api.github.com with the GitHub token you
+    save in the panel (kept host-side only); its HTTP routes
+    (/one-pack/api/...) require DSH browser auth.
+  zh: >-
+    把整套 DSH 环境（已装插件、DSH 与插件设置、技能、会话、显式登记的工作区文件）
+    打包同步到一个私有 GitHub 仓库。多台设备共用同一仓库时各写自己的设备命名空间、
+    互不覆盖，拉取可选本设备、最新备份或指定设备；推送前先只读预览计划，拉取前自动
+    备份本地数据；疑似密钥字段写成掩码、密钥文件硬排除，GitHub token 只保存在
+    Host 本地。它会用面板里保存的 token 访问 api.github.com；HTTP 路由
+    （/one-pack/api/…）要求 DSH 浏览器鉴权。
