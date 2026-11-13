@@ -1,0 +1,7 @@
+url: https://github.com/iceshard999/dsh-appview
+name: iceshard999/dsh-appview
+category: ui
+description:
+  en: Turns the DSH right sidebar into a searchable app launcher with drag ordering and saved layouts.
+  zh: 将 DSH 右侧栏变为应用桌面，支持搜索、拖拽排序和布局保存。
+tarball: https://github.com/iceshard999/dsh-appview/releases/download/v0.3.1/dsh-appview-0.3.1.tgz
