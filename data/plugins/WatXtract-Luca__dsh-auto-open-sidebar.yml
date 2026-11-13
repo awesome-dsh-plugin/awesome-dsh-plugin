@@ -1,0 +1,6 @@
+url: https://github.com/WatXtract-Luca/dsh-auto-open-sidebar
+name: WatXtract-Luca/dsh-auto-open-sidebar
+category: ui
+description:
+  en: Automatically opens the right sidebar for blank top-level chats on wide screens, skipping saved layouts containing tabs and leaving non-blank chats unchanged.
+  zh: 在宽屏上为顶层空白会话自动展开右侧栏，跳过包含标签页的已保存布局，不更改非空白会话。
