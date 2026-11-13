@@ -2,5 +2,5 @@ url: https://github.com/cjjchina3088191870-sudo/dsh-plugin-ekko-skin-manager
 name: cjjchina3088191870-sudo/dsh-plugin-ekko-skin-manager
 category: ui
 description:
-  en: Switch installed Rose and Miku themes and customize artwork, background opacity, and phone navigation in DSH settings.
-  zh: 在 DSH 设置中切换初音与玫瑰主题，调整人物装饰、背景浓度与手机导航。
+  en: Legacy compatibility entry for the bundled Skirk, Rose Queen and Hatsune Miku themes; new users only need dsh-plugin-miku-theme.
+  zh: 丝柯克、玫瑰女王与初音未来主题套装的旧版管理器兼容入口；新用户只需安装 dsh-plugin-miku-theme。
