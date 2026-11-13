@@ -1,0 +1,6 @@
+url: https://github.com/Ados6666/dsh-review-note
+name: Ados6666/dsh-review-note
+category: workflow
+description:
+  en: 'Annotatable checkpoint reviews: highlight any passage of a delivered document, comment on each decision point, and return one structured note; a single ask_user_question with three or more questions is answered on one sheet.'
+  zh: '给阶段交付做可批注的验收单：在正文上划词、逐条写意见，一次回传结构化结果；单次 ask_user_question 三题以上合并成一屏提交。'
