@@ -1,0 +1,6 @@
+url: https://github.com/juju114514/qq-bridge/tree/main/plugin
+name: juju114514/qq-bridge-plugin
+category: notify
+description:
+  zh: "把 QQ 接进 DSH 的通道插件：OneBot v11 双向通路（群/私聊各成一个会话）、进程内 qq_* 工具（发消息、引用回复、读最近/未读、等新消息）、群聊记忆交接与跨会话人物笔记；同一份 state 只允许一个通道收消息（通道互斥），并附带只读控制台与守护进程视图。"
+  en: "QQ channel for DSH as a self-contained plugin: a bidirectional OneBot v11 link (one session per group/private chat), in-process qq_* tools (send, quoted reply, recent/unread reads, wait-for-message), per-chat handoff memory and cross-session people notes, plus a channel mutex so only one channel receives messages per state directory. Ships with a read-only console and a supervisor view."
