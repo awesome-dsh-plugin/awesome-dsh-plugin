@@ -1,0 +1,7 @@
+url: https://github.com/hahavguoqu/dsh-genshin-launch
+name: hahavguoqu/dsh-genshin-launch
+category: fun
+description:
+  en: Adds a composer button to launch locally installed Genshin Impact on Windows, with installation detection and a file picker.
+  zh: 在输入框添加按钮启动 Windows 本机安装的国服原神，支持自动查找安装位置和手动选择游戏程序。
+tarball: https://github.com/hahavguoqu/dsh-genshin-launch/releases/download/v1.2.1/dsh-genshin-launch-1.2.1.tgz
