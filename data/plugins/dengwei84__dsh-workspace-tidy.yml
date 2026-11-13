@@ -1,0 +1,6 @@
+url: https://github.com/dengwei84/dsh-workspace-tidy
+name: dengwei84/dsh-workspace-tidy
+category: tools
+description:
+  en: Workspace tidy-up plugin: moves stray temp files, render leftovers and generated scripts into a hidden .dsh folder at the end of each turn, keeping the workspace root clean without blocking or deleting anything.
+  zh: 工作区自动整理插件：每轮结束时把根目录的临时文件、渲染产物和生成脚本收进隐藏的 .dsh 目录，不拦截、不删除，让工作区保持整洁。
