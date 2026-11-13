@@ -1,0 +1,6 @@
+url: https://github.com/qwy13579vvb-sudo/membrain
+name: qwy13579vvb-sudo/membrain
+category: memory
+description:
+  en: 'Long-term memory for AI agents — four layers, Ebbinghaus forgetting, spaced repetition, supersession and evidence labels. Zero dependencies, Node built-in SQLite.'
+  zh: '给 AI 的长期记忆 —— 四层结构、艾宾浩斯遗忘、间隔重复、替代链与证据标注。零依赖，只用 Node 内置 SQLite。'
