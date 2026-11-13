@@ -1,0 +1,6 @@
+url: https://github.com/bocchii-the-code/dsh-nerd-mode
+name: bocchii-the-code/dsh-nerd-mode
+category: skill
+description:
+  en: 'Study switch for DeepSeek Harness: it teaches in steps, stops where a choice changes the result, checks understanding with unseen questions and a graded teach-back, and keeps a dated course record that survives restarts.'
+  zh: 'DeepSeek Harness 的学习开关：分步教学，在会改变结果的分岔处停下，用未见过的题目与评分复述检查理解，并保留重启后仍在的带日期课程记录。'
