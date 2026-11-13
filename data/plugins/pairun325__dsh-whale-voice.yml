@@ -1,0 +1,6 @@
+url: https://github.com/pairun325/dsh-whale-voice
+name: pairun325/dsh-whale-voice
+category: voice
+description:
+  en: 'Make the agent speak: a subtitle projector pinned to the bottom of the screen plus system text-to-speech.'
+  zh: '让 agent 开口：屏幕底部的字幕投影，配系统语音朗读，说的每句都能看见也能听见。'

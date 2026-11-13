@@ -1,0 +1,6 @@
+url: https://github.com/pairun325/dsh-game-pilot
+name: pairun325/dsh-game-pilot
+category: fun
+description:
+  en: 'Game autopilot for DSH: screen capture, real keyboard and mouse input, and in-game coordinate readout, so the agent can actually play.'
+  zh: '让 DSH 真的能代打：截图看画面、真实键鼠操作、F3+C 读游戏内坐标，一套工具把操作落到画面上。'
