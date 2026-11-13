@@ -1,0 +1,6 @@
+url: https://github.com/subeichen1/dsh-feishu-digest
+name: subeichen1/dsh-feishu-digest
+category: notify
+description:
+  en: 'Feishu (Lark) group notifications for DeepSeek Harness: when a turn ends, pushes a compact digest — conclusion, artifacts and follow-ups — to a custom-bot webhook. Successful turns without follow-ups batch into one-line messages per project; failures and pending items get a detail card; the full text is archived locally; sends retry with exponential backoff and alert after repeated failures.'
+  zh: '把 DeepSeek Harness 每个回合的结果压缩成「结论 / 产物 / 待办」推送到飞书群自定义机器人：成功且无待办的回合按项目聚合成一行型消息，失败或含待办时发详情卡片，可选 LLM 压缩并带本地兜底，全文本地归档，发送失败指数退避重试、连续失败后告警。'
