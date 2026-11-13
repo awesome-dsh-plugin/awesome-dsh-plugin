@@ -1,7 +1,7 @@
 url: https://github.com/kingcharleslzy-ai/dsh-qwen-studio
-name: kingcharleslzy-ai/dsh-qwen-studio
+name: DSH-Spicy
 category: vision
 description:
-  en: 'Qwen Image 2.1 editing, MiniMax H3 video and multi-shot filmmaking with character cards, shot review, narration and an MP4 master. Includes agent skills for self-hosted model setup and production.'
-  zh: '集成 Qwen Image 2.1 生图改图、MiniMax H3 有声视频和多镜头长片，支持角色卡、逐镜审片、旁白与母版导出，附本机或远程模型部署和对话创作技能。'
+  en: 'An NSFW content creation plugin for purge.'
+  zh: '完美适配 purge 的 nsfw content creation 插件。'
 tarball: https://github.com/kingcharleslzy-ai/dsh-qwen-studio/releases/latest/download/dsh-qwen-studio.tgz
