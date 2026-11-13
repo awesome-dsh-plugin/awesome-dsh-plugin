@@ -1447,6 +1447,7 @@ dsh plugin --profile web add dshmarket
 - [nnnanann/Deepseek-harness-freeze-content-on-window-resize](https://github.com/nnnanann/Deepseek-harness-freeze-content-on-window-resize) — 固定 DSH Web GUI 的正文列宽度，并在窗口缩放后把阅读位置对回原处。
 - [NoCandles/dsh-stock-bar](https://github.com/NoCandles/dsh-stock-bar) — 钉在 DSH 窗口顶部的常驻行情条：自选股、带股数与成本价的持仓、盈亏、K 线与分时图、五档盘口、交易流水、价格预警，以及用 DSH 已配置模型流式生成的 AI 复盘。
 - [nohappiness/dsh-linux-shortcut](https://github.com/nohappiness/dsh-linux-shortcut) — 让 Linux 上的网页端拥有 Windows / macOS 端那套快捷键：宿主半在 index.html 注入一行脚本，使 Linux 浏览器在快捷键服务读取平台之前报告 Windows 平台，内置键位表因此生效而不是空白；设置页额外显示一行，指示映射是否真的生效。
+- [nohappiness/dsh-rightbar-max-keep-rail](https://github.com/nohappiness/dsh-rightbar-max-keep-rail) — 把右侧边栏的「面板全屏」改成只覆盖会话区：全屏面板从左侧会话列表栏的右缘开始铺到窗口右缘，最大化时会话列表依然可见，并跟随左栏的拖宽、折叠与窄屏抽屉实时变化。
 - [NOirBRight/dsh-codex-sidebar](https://github.com/NOirBRight/dsh-codex-sidebar) — DSH 的 Codex 风格详情侧栏：提供 Files、Review、Browser 与 Terminal 面板、对话文件链接和 diff 统计、批注，以及 Host 管理的浏览器控制。
 - [NOirBRight/dsh-llm-assistant](https://github.com/NOirBRight/dsh-llm-assistant) — 常驻 Web 席位，背后是独立助理会话：对话、图片、提醒、值班心跳，以及按需只读引用当前任务。
 - [NOirBRight/dsh-llm-providers-ui](https://github.com/NOirBRight/dsh-llm-providers-ui) — LLM Providers 设置页的挂载 owner：provider 卡片、拖拽排序与 picker 排序。
@@ -8033,6 +8034,7 @@ dsh plugin --profile web add dshmarket
 - [240xu/verdict-engine#dsh-tech-lead](https://github.com/240xu/verdict-engine/tree/main/packages/dsh-tech-lead) — 单包 21 个只读生命周期治理工具：任务分级、状态/计划/证据校验、Gate 预检与聚合、发布与安装审计、上下文与推进分析、关键路径、续跑对账，以及始终拒绝执行的变更预览。npm 包名 @240xu/dsh-tech-lead。
 - [2507483326/dsh-eteams](https://github.com/2507483326/dsh-eteams) — 领队主导的多智能体团队：把目标拆成任务，按执行链派发给运行在各自子会话里的成员，每个成员可配不同模型。
 - [3082838272n-max/dsh-mailbox](https://github.com/3082838272n-max/dsh-mailbox) — DSH 会话信箱：两间会话用文件夹互相传信，另加按小时随机调度——互递信，或主动找主人说话；每个收信人每小时限流，带 UTF-8 日志。
+- [329604421/dsh-agent-todo](https://github.com/329604421/dsh-agent-todo) — 把多项目待办工作台装进 DSH：全局胶囊浮层随手记想法，归到项目、拆成脑图，再把待办一键导出到输入框交给 Agent。
 - [534119219/chicheng-cron](https://github.com/534119219/chicheng-cron) — 定时任务调度器：侧栏管理界面，按 cron 表达式或间隔执行脚本、技能与 Agent 任务，支持完成后推送通知与会话归档。
 - [544244857/dsh-work-assistant](https://github.com/544244857/dsh-work-assistant) — 微信工作助理：把你交代的事记进 SQLite 任务账本，按紧急度排序，到点提醒，从笔记里抽取人物与关系，并把任务分派给独立的助手会话。自带微信机器人通道（扫码登录，仅私聊）与整页仪表盘。
 - [58fly/dsh-stack](https://github.com/58fly/dsh-stack) — 以 agent preset 形式提供的 DSH 常驻工作方式：复述任务、改前先读、每步用真实命令验证、控制上下文体积。内含 29 个技能（计划循环、评审循环、TDD、卡住换思路、PR 跟踪），以及一个回合守卫：当本轮改了文件却没有在之后跑成任何检查时出言打回，第二次再犯时措辞更硬。
@@ -9246,6 +9248,7 @@ dsh plugin --profile web add dshmarket
 - [474885697-alt/dsh-kit#dsh-kit-guardian](https://github.com/474885697-alt/dsh-kit/tree/main/plugins/dsh-kit-guardian) — 校验 DSH 配置清单的 JSON 错误与依赖/打包/补丁不一致，读取最近启动崩溃日志（仅 Windows 桌面端），并支持备份与回滚清单文件。
 - [474885697-alt/dsh-kit#dsh-project-checkup](https://github.com/474885697-alt/dsh-kit/tree/main/plugins/dsh-project-checkup) — 按项目里的 dsh-checkup.json 运行检查（文件、语法、JSON、HTTP 健康、资源计数，以及你列出的 node/npm 脚本与命令），没有配置时回退到自动探测的默认项。
 - [566001/dsh-wrapup-guard](https://github.com/566001/dsh-wrapup-guard) — 收尾自检哨兵：任务收尾时强制「全面检查 → 修复 → 再全面检查」循环，自动跑测试/lint/audit，有未修复的问题就打回，直到连续三轮零问题才判定完成并通知用户。
+- [66-zhimeng/dsh-tool-dispatch](https://github.com/66-zhimeng/dsh-tool-dispatch) — 把互不依赖的工具调用合并进一次模型往返：run_tools 并发派发多步（after 表达先后依赖），run_parallel 并行派发子 agent，减少往返次数与墙钟时间。
 - [777-Zen/dsh-capability-index](https://github.com/777-Zen/dsh-capability-index) — DSH agent 的插件库起飞检查：向运行时上下文注入按步骤触发的提示，让合适的已装插件从「碰巧想起」变成「可预期使用」。
 - [dsh-restart-dock](https://github.com/7gzgn/dsh-restart-dock) — DSH 界面上一小框：一键重启宿主、一键刷新页面。重启会先问「立即 / 30 秒 / 60 秒 / 2 分钟 / 取消」，倒计时可撤回；小框需长按 320ms 才能拖动（避免手一抖就粘住），拖到边缘自动吸附，窗口缩放时跟着走。刷新前会真正确认插件包能加载（文件时间戳 + 取回 bundle + 语法编译三重检查），任何一项拿不到就不刷——宁可多点一次，也不把应用刷成起不来的样子。重启仅 Windows（PowerShell 5.1）；界面与刷新功能全平台可用。
 - [7starsseeker/MCModsDevBridge](https://github.com/7starsseeker/MCModsDevBridge) — Minecraft 26.3 mod 开发工具：按 JSON 实例登记启动真实的专用服与客户端，通过带鉴权的 HTTP 探针驱动两端，并对世界、UI 与日志状态做断言，覆盖 Fabric / Forge / NeoForge；每轮运行留下取证目录，且不随包分发任何游戏或加载器文件。需 JDK 25 与 Minecraft 26.3 实例。
@@ -10831,6 +10834,7 @@ dsh plugin --profile web add dshmarket
 - [Rain-Shuoyu/dsh-client-deep-sneak](https://github.com/Rain-Shuoyu/dsh-client-deep-sneak) — 摸鱼伴侣：右下角小窗播放 B站视频（原生播放器/弹幕/评论/搜索），agent 需要你时自动暂停提醒，处理完从原位置精确续播。
 - [raymondkm2025/dsh-go-game](https://github.com/raymondkm2025/dsh-go-game) — 圍棋插件：完整規則引擎、三檔內建 AI、死子估算、可選 LLM 覆盤、SGF 匯入匯出，以及可選的 KataGo GTP 引擎橋接。
 - [reisen-ww/dsh-bonk-pet](https://github.com/reisen-ww/dsh-bonk-pet) — DSH Web GUI 角落里的悬浮鲸鱼娘。agent 干活时它跟着内置歌曲唱歌；工具报错时天上掉钢管砸它脑袋。点它敲头上的铁盆，每敲一次扣 12 米饭——敲多了就饿，饿了会去讨饭，米饭随机出现在页面某处，它咻地冲过去吃掉。可拖动且始终留在视口内，吃米途中被抓住会挣扎，音量与玩法在设置里可调。全部素材、音效与歌曲都打包在插件内。
+- [ruaibeite/dsh-token-slime](https://github.com/ruaibeite/dsh-token-slime) — 输入框下方的史莱姆：吃掉模型写出的 token 长大、分裂成群，按工具构成长出头饰，每次上下文压缩蜕壳留下年轮，并在右侧栏汇总所有会话的总族群。
 - [sadnessXU/dsh-pet-game-guard](https://github.com/sadnessXU/dsh-pet-game-guard) — 打游戏或全屏应用在前台时，自动把 dsh-pet 的桌宠窗口收起来，退出后原样放回。用「全屏窗口铺满显示器 + 前台进程在游戏目录 + 系统全屏状态」三重信号判定，连续两次采样一致才动作，避免切窗口时闪隐；只切换窗口可见性，不改 dsh-pet 的任何配置，也不动它的安装目录。托盘菜单可暂停、立即恢复、重载配置。仅 Windows。
 - [Sakura7301/MeiHuaYi](https://github.com/Sakura7301/MeiHuaYi) — 梅花易数卜卦插件：在聊天里或面板上按时间、数字、一字占、手动指定四种方式起卦，输出主卦、互卦、变卦、动爻与体用生克，并把卦例、外应与学习笔记保存在本机。
 - [SATA260/dsh-mood](https://github.com/SATA260/dsh-mood) — 通过状态面板、更新工具和聊天表情包管理 AI 搭档的情绪与性格。
