@@ -1,0 +1,6 @@
+url: https://github.com/SternChiri/dsh-panel-tidy
+name: SternChiri/dsh-panel-tidy
+category: ui
+description:
+  en: 'Drag any sidebar panel to reorder it, or drop one onto More to fold it into the More submenu; the order and the folded set are remembered across restarts.'
+  zh: '拖动左侧栏任意面板调整顺序，或把它拖到「更多」上收进二级菜单；顺序与收纳状态重启后保留。'
