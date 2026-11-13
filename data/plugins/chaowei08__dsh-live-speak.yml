@@ -1,6 +1,7 @@
 url: https://github.com/chaowei08/dsh-live-speak
 name: chaowei08/dsh-live-speak
 category: voice
+icon: https://raw.githubusercontent.com/chaowei08/dsh-live-speak/main/icon-180.png
 description:
   en: 'Reads assistant replies aloud while they stream: sentence-by-sentence speech with highlighted lines in a sidebar player, pause, mute and stop controls, and automatic quieting for code blocks.'
   zh: '边生成边把回复念出来：按句合成语音，侧栏播放器里当前句逐句滚动高亮，可暂停、静音、停止，遇到代码块自动静音。'
