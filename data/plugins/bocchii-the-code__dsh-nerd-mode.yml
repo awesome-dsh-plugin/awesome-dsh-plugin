@@ -2,5 +2,5 @@ url: https://github.com/bocchii-the-code/dsh-nerd-mode
 name: bocchii-the-code/dsh-nerd-mode
 category: skill
 description:
-  en: 'Study switch for DeepSeek Harness: it teaches in steps, stops where a choice changes the result, checks understanding with unseen questions and a graded teach-back, and keeps a dated course record that survives restarts.'
-  zh: 'DeepSeek Harness 的学习开关：分步教学，在会改变结果的分岔处停下，用未见过的题目与评分复述检查理解，并保留重启后仍在的带日期课程记录。'
+  en: 'Turns an ordinary conversation into a guided study session, keeping progress and lectures as dated files that survive a restart. A Study tab shows how far you have got and which ideas are still shaky without writing anything, and a Lectures tab lists each course''s lectures as draft, dated, or archived.'
+  zh: '把一段普通对话变成有引导的学习，进度和讲义都按日期存成文件，重启后还在。Study 标签页显示学到了哪里、哪些概念还不牢，只读不写。Lectures 标签页按课程列出讲义，标明草稿、已授课或已归档。'
