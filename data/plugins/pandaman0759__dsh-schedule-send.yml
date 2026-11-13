@@ -1,0 +1,6 @@
+url: https://github.com/pandaman0759/dsh-schedule-send
+name: pandaman0759/dsh-schedule-send
+category: notify
+description:
+  en: 'Schedule a message to be sent in the current conversation later: after this turn finishes, every N hours and minutes for a set number of repetitions, or at a clock time on chosen days (once / daily / weekly / monthly). The message arrives as the user''s own words, delivered through the same channel as typing a prompt, and a card above the composer lists the pending sends with a countdown. Also registers schedule_send / schedule_cancel tools so an agent can set its own wake-ups: come back in N minutes, check again at a given time, or after the current turn ends.'
+  zh: '在当前会话里排一条定时发送的消息：本轮结束后发、每隔 X 小时 Y 分钟发 N 次，或按选定的日期时间发（不重复 / 每天 / 每周几 / 每月几号）。消息以用户自己的口吻送达，走与手动输入 prompt 同一条通道；输入框上方有待发送卡片和倒计时。另注册 schedule_send / schedule_cancel 工具，让 Agent 也能给自己定闹钟：过 N 分钟回来复查、指定时刻提醒、或本轮结束后再动手。'
