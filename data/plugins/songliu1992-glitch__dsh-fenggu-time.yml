@@ -1,0 +1,7 @@
+url: https://github.com/songliu1992-glitch/dsh-fenggu-time
+name: songliu1992-glitch/dsh-fenggu-time
+category: ui
+description:
+  en: Titlebar badge that shows one of two labels during Beijing office hours, with a statutory-holiday table refreshed from Settings.
+  zh: 标题栏徽章，按北京时间办公时段在两种文字间切换；法定节假日表可在设置里检查更新。
+icon: https://raw.githubusercontent.com/songliu1992-glitch/dsh-fenggu-time/main/assets/icon-180.png
