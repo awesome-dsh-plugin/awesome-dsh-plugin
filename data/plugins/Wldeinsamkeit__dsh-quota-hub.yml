@@ -1,0 +1,7 @@
+url: https://github.com/Wldeinsamkeit/dsh-quota-hub
+name: Wldeinsamkeit/dsh-quota-hub
+category: usage
+description:
+  en: 'Quota Hub: live AI quota dashboard in the DSH sidebar. A semicircle rainbow gauge (one arc per provider, filled by remaining quota) with 5h/weekly mode switch, fill-up animations and hover details, plus per-provider cards with level-colored bars per quota. Zero-config: reads the DSH credential store, Codex OAuth and mmx locally. Ships a companion macOS menu-bar app sharing the same state.'
+  zh: '额度中心：DSH 侧边栏实时额度面板。半圆彩虹拱（每道弧一个 AI，按剩余额度填充），支持 5 小时/每周切换、加满动画与悬浮详情；详情卡片中每条额度独立分档色进度条。零配置：自动读本机凭据库、Codex OAuth 与 mmx，附带 macOS 菜单栏小彩虹配套应用。'
+icon: https://raw.githubusercontent.com/Wldeinsamkeit/dsh-quota-hub/main/assets/icon-180.png
