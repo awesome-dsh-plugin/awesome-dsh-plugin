@@ -1,0 +1,6 @@
+url: https://github.com/Lornatang/dsh-notion
+name: Lornatang/dsh-notion
+category: tools
+description:
+  en: Connect Notion's official MCP server to DeepSeek Harness for workspace tools and resources.
+  zh: 通过 Notion 官方 MCP 将工作区工具和资源接入 DeepSeek Harness。
