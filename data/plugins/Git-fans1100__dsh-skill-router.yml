@@ -1,0 +1,6 @@
+url: https://github.com/Git-fans1100/dsh-skill-router
+name: Git-fans1100/dsh-skill-router
+category: skill
+description:
+  en: Skill and MCP capability router that replaces always-mounted skill metadata with on-demand capability_search and capability_load meta tools, with usage stats and per-bot preheat mounting.
+  zh: '技能/MCP 能力调度插件：用按需检索与加载替代全量元数据常驻会话，含使用统计与 Bot 会话预热挂载。'
