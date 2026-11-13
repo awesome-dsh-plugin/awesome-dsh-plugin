@@ -2588,7 +2588,7 @@ dsh plugin --profile web add dshmarket
 - [Leni-More/dsh-conv-calendar](https://github.com/Leni-More/dsh-conv-calendar) — Web 侧边栏的 GitHub 风格日历网格，按天展示你发出的对话条数，可切换为会话数、Token 总量或输出 Token。只统计你亲手发送的消息，注入的上下文不计入。
 - [LexVolkov/dsh-ledger-kitty](https://github.com/LexVolkov/dsh-ledger-kitty) — 窗台上的白猫记账助手：显示每条回答与会话的 token 和花费、提示缓存省下的钱、上下文占模型窗口的比例、下一次峰谷换价时间与实时 DeepSeek 余额；可摸头打呼噜，随 agent 工作状态做出反应，所有音效均为合成。
 - [lhylhy2024/dsh-simple-cost](https://github.com/lhylhy2024/dsh-simple-cost) — 在侧边栏账户区上方显示 DeepSeek 账户余额、当前会话累计花费与逐轮费用，并对超出 token 阈值的单轮提供一键 AI 分析。
-- [licyer/dsh-token-monitor](https://github.com/licyer/dsh-token-monitor) — 会话头部余量徽标 + 用量监控页签：实时展示各供应商余额/额度余量与重置倒计时，按会话/供应商/模型/客户端统计请求量、Token（输入/输出/缓存读/缓存写）、缓存命中率、预估费用与平均时延，本地 SQLite 留存历史，支持跨设备导入导出。
+- [licyer/dsh-token-monitor](https://github.com/licyer/dsh-token-monitor) — 会话头部余量徽标 + 用量监控页签：实时展示各供应商余额/余量与重置倒计时，按会话/供应商/模型/客户端统计请求量、Token（输入/输出/缓存读/缓存写）、缓存命中率、预估费用与平均 TPS，本地 SQLite 留存历史，支持跨设备导入导出。
 - [likaileave/dsh-model-billing](https://github.com/likaileave/dsh-model-billing) — 在输入框右下角的模型选择器中自定义模型顺序，按每百万 tokens 设置缓存命中、缓存未命中与输出三档价格，并结合内置的 DeepSeek 峰谷价估算逐轮和本会话费用。
 - [like8995209-coder/dsh-tide-hint](https://github.com/like8995209-coder/dsh-tide-hint) — 侧边栏 DeepSeek 峰谷计费提示，显示北京时间倒计时、中国法定节假日与调休、每日定价规则刷新、官方充值优惠状态，以及按当前时段折算成输入 tokens 的账户余额（使用 DSH 里已保存的 DeepSeek 平台登录凭据读取）。
 - [limlnx523/dsh-plus-plus](https://github.com/limlnx523/dsh-plus-plus) — 新增 /dshpp 斜杠命令，从 Harness 会话日志汇总会话数与 token 用量、缓存命中率与估算成本；同仓库还附带用于生命周期、Provider、会话与插件安全管理的 CLI 与本地 Web 控制台。
@@ -9901,7 +9901,7 @@ dsh plugin --profile web add dshmarket
 - [Existence001100/dsh-budget-guard-plugin](https://github.com/Existence001100/dsh-budget-guard-plugin) — 为 DSH 每次任务设置预算线，支持按金额或 Token 限制消耗，并在达到阈值时自动拦截，防止 Agent 过度消费。
 - [fb0sh/dsh-pentester](https://github.com/fb0sh/dsh-pentester) — 基于 PTES 的渗透测试插件，采用 Root-Orchestrator 架构，用于 DeepSeek Harness。
 - [feely0208/dsh-industry-tax](https://github.com/feely0208/dsh-industry-tax) — 稽查前对项目目录做财税行业专项体检（关键词规则扫描）：会计凭证与账簿保存期配置低于 30 年、开票信息缺纳税人识别号、税务数据出境未提及安全评估或标准合同、电子发票未提及验真或查重，规则出处保留在 rules/。
-- [FGCGDroid/blue](https://github.com/FGCGDroid/blue) — CTF 网络攻防蓝队防御模式：36 个防御工具、六个执行角色、SQLite 事实库与任务队列，可选诱饵程序、欺骗防御与蜜罐闭环，以及带全面浏览的独立控制台。
+- [FGCGDroid/blue](https://github.com/FGCGDroid/blue) — CTF 网络攻防蓝队防御模式：37 个防御工具、MITRE ATT&CK 覆盖映射、六个执行角色、SQLite 事实库与任务队列，可选诱饵程序、欺骗防御与蜜罐闭环，以及带全面浏览的独立控制台。
 - [floatDreamWithSong/dsh-lifecycle](https://github.com/floatDreamWithSong/dsh-lifecycle) — 【仅支持 Web，不支持 Electron Desktop】专为 Web profile 设计；Windows 支持仅指 Windows 上的 Web 版，不是桌面应用。请勿安装到 Desktop profile，误装可能导致启动或重启失败。安装后立即刷新页面或打开 /login，旧页 401 不代表安装失败。仅未初始化的数据目录展示临时初始密码；已有密码不会因重装而清空或再次展示。首次密码在页面公开展示，终端不打印，请在受控网络立即改密。提供 Web 锁屏、密码／OTP／Passkey、持久登录和壁纸，Windows Web 支持页面一键配置电源服务。Linux/macOS 需部署独立控制服务；npm 更新限独立托管安装，停止会中断运行任务。认证内核改编自 xbzbing/dsh-auth-gateway（MIT），不能与其同装。
 - [flyhai/dsh-auto-approval-frame](https://github.com/flyhai/dsh-auto-approval-frame) — DSH 工具调用的自动审批（自动审核）与审计框架：四档规则表（拒绝／问人／AI 评审／放行）对命令审批、文件读写、网络访问与工具调用逐条拦截，能按规则自动放行或自动拒绝，疑难项交给 AI 审查或人工审批／授权；带权限档、工作区边界、敏感信息脱敏、秘密占位符回填、哈希链审计日志与台账、模拟审批设置页。目标文件只查元数据。
 - [gabrielbav/dsh-plugin-airlock](https://github.com/gabrielbav/dsh-plugin-airlock) — 安装前安全闸门：在禁用安装脚本的隔离区中检查每个插件、技能和子代理组合包，使用 Cisco Skill Scanner、SkillScan、Cisco MCP Scanner、OSV-Scanner、Trivy、Gitleaks 以及可选的 SARIF 工具或基于 DSH 模型的 LLM 判定进行扫描，然后放行、要求审查或阻止。需要 deepseek-ai/deepseek-harness#12999 中提议的 install-gate 钩子。
