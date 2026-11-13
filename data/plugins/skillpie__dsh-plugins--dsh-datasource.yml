@@ -1,0 +1,6 @@
+url: https://github.com/skillpie/dsh-plugins/tree/main/dsh-datasource
+name: skillpie/dsh-plugins#dsh-datasource
+category: tools
+description:
+  en: 'Connect SQLite, PostgreSQL, or MySQL databases in DeepSeek Harness: browse table structure and data, run SQL, and let the assistant query and edit data directly in the conversation.'
+  zh: '在 DeepSeek Harness 中连接 SQLite / PostgreSQL / MySQL 数据源：浏览表结构与数据、执行 SQL，也可以在对话里让助手直接查数和改数。'
