@@ -793,6 +793,9 @@ dsh plugin --profile web add dshmarket
 - [GeekRicardo/dsh-convmap](https://github.com/GeekRicardo/dsh-convmap) — 主对话区左缘的对话地图刻度列：每条刻度是一轮用户提问，刻度由宿主直读会话完整日志得来，不受客户端分页窗口限制，长会话也是全量覆盖。hover 时邻近刻度按像素距离连续展开，右侧浮出该轮提问与最后一次回复的预览卡（可进卡滚动看完）；点击跳转到该轮，老轮次尚未渲染时先自动分页加载再跳；滚动对话时当前轮次的刻度保持高亮。
 - [geguanming/dsh-office-plugin](https://github.com/geguanming/dsh-office-plugin) — 把多 agent 会话的实时活动渲染成 Web UI 侧边栏里的像素风办公室--每个会话是一名牛/马员工，忙时伏案敲键盘、闲时起身摸鱼，支持点击查看工位监控、就地处理审批。
 - [GEMLZC/dsh-font-studio](https://github.com/GEMLZC/dsh-font-studio) — 字体设置页：正文、代码与终端的字号和字体族，外加界面、会话与代码的文字颜色、字重、斜体、字间距与行高，带实时预览。
+- [Genesi599/dsh-plugins#hub-callout](https://github.com/Genesi599/dsh-plugins/tree/main/plugins/hub-callout) — 把消息里的 GitHub admonition 语法渲染成 alert 卡片，视觉对齐 Hermes 桌面端。
+- [Genesi599/dsh-plugins#hub-desktop-ui](https://github.com/Genesi599/dsh-plugins/tree/main/plugins/hub-desktop-ui) — 把 DSH 外壳改成紧凑形态：更密的会话侧栏、侧栏底部状态卡，以及按「在做什么」给会话分组的项目与任务线视图。
+- [Genesi599/dsh-plugins#project-room](https://github.com/Genesi599/dsh-plugins/tree/main/plugins/project-room) — 把侧栏变成项目视图，并给每个项目一个房间：公共看板、按消息归线填充的任务线分列，以及项目内的成员头像。
 - [genius-alray/dsh-model-picker](https://github.com/genius-alray/dsh-model-picker) — 需要 DSH 0.1.5-rc.2+。Web UI 模型选择器替换插件：对话框式选择，支持模糊搜索、供应商折叠分组、收藏与只看收藏过滤，以及思考档位下拉，复用官方组件库与 DSW 设计 token。
 - [GeniusHu-tgty/dsh-prompt-better](https://github.com/GeniusHu-tgty/dsh-prompt-better) — 在输入框加一个按钮，一键调用 LLM 把当前草稿改写成更清晰具体的提示词，支持一键恢复原文与取消。
 - [germyGao/dsh-select-assist](https://github.com/germyGao/dsh-select-assist) — 在任意 Windows 应用里划词，弹出解释 / 总结 / 翻译 / 朗读，结果以流式输出落在原生置顶浮窗里，菜单为横向胶囊条。
@@ -1767,6 +1770,7 @@ dsh plugin --profile web add dshmarket
 - [StarMoon-win/dsh-restart-plugin](https://github.com/StarMoon-win/dsh-restart-plugin) — 在 Windows 上的 DeepSeek Harness 桌面版侧边栏添加「重启」按钮：结束整个应用进程树并重新打开应用。
 - [StarsHarryZhu/dsh-intelligent-UI](https://github.com/StarsHarryZhu/dsh-intelligent-UI) — 渐进式交互：回复里的可交互卡片，由 31 个固定组件搭成（滑块、输入框、可排序表格、图表、函数图像、公式排版、分页、勾选清单、流程图、答题按钮、动画播放器）。调节控件在浏览器内重算，不再调用模型；模型不写任何 HTML 或 JavaScript。内置微积分引擎（定积分、导数、极限、求和、求根、泰勒多项式）和一个教模型何时用卡片的技能。
 - [stephenlzc/dsh-swarm-panel#dsh-swarm-plugin](https://github.com/stephenlzc/dsh-swarm-panel/tree/main/dsh-swarm-plugin) — DeepSeek Harness swarm 的 Conversation Flow 可观测性，支持查看拓扑、检查路由消息、HITL 暂停、Live 跟随和子会话导航。
+- [SternChiri/dsh-panel-tidy](https://github.com/SternChiri/dsh-panel-tidy) — 拖动左侧栏任意面板调整顺序，或把它拖到「更多」上收进二级菜单；顺序与收纳状态重启后保留。
 - [Stijnus/dsh-composer-predictions](https://github.com/Stijnus/dsh-composer-predictions) — 为 DeepSeek Harness 桌面端与 Web 界面的输入框提供 Tab 自动补全：下一条消息的灰色幽灵文本、草稿行内续写，以及 Alt+Up/Alt+Down 切换候选。
 - [Stijnus/dsh-moodboard](https://github.com/Stijnus/dsh-moodboard) — DeepSeek Harness 的可视化参考情绪板：拖入图片并打标签、写备注，固定风格指南，智能体在生成或改版界面之前先读取这些参考。
 - [Stijnus/dsh-prompt-optimizer](https://github.com/Stijnus/dsh-prompt-optimizer) — 在输入框发送按钮旁加上「优化提示词」控件，用当前会话模型把草稿流式改写为结构化提示词（plain、sections、role-task-goal 三种风格），并提供使用、撤销、复制与关闭。
