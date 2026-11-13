@@ -1,0 +1,6 @@
+url: https://github.com/roninni/dsh-central-editor
+name: roninni/dsh-central-editor
+category: ui
+description:
+  en: Workbench panel that browses, edits and reviews workspace files next to the chat, with per-hunk keep and rollback.
+  zh: 在对话旁浏览、修改并逐块审阅工作区文件的工作台面板，支持逐块保留与回滚。
