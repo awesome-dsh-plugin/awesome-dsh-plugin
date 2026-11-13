@@ -1,0 +1,7 @@
+url: https://github.com/junchangxie198-crypto/dsh-balance-context-ring
+name: junchangxie198-crypto/dsh-balance-context-ring
+category: usage
+description:
+  en: 'Adds a two-arc ring above the sidebar account avatar showing account balance, session context usage and a per-turn cost bubble.'
+  zh: '在侧边栏账号头像上方用两段圆环显示账户余额与当前会话上下文占用，并在每轮结束时弹出花费气泡。'
+icon: https://raw.githubusercontent.com/junchangxie198-crypto/dsh-balance-context-ring/main/assets/icon-180.png
