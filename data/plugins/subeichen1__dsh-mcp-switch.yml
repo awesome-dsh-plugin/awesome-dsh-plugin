@@ -1,0 +1,8 @@
+url: https://github.com/subeichen1/dsh-mcp-switch
+
+name: subeichen1/dsh-mcp-switch
+category: tools
+
+description:
+  en: "MCP panel for DSH: turn a whole server on or off, hide individual tools, and see how many context tokens each server's tool definitions use."
+  zh: "DSH 的 MCP 开关面板：可以按服务器整体开关，也可以只隐藏某个工具，还能看到每个服务器的工具定义占用了多少上下文 token。"
