@@ -1,0 +1,7 @@
+url: https://github.com/MountBatten718/dsh-session-handoff
+name: MountBatten718/dsh-session-handoff
+category: session
+description:
+  en: 'Session handoff for long conversations: /handoff summarizes recent turns with an LLM, opens a new session in the same workspace with the summary as its first message, and can trigger automatically when the context window or session size grows.'
+  zh: '长会话接力：/handoff 用 LLM 总结最近的对话轮次，在同一工作区新建会话并把总结作为首条消息注入后自动打开；上下文或会话体积变大时也可自动触发。'
+tarball: https://github.com/MountBatten718/dsh-session-handoff/releases/latest/download/dsh-session-handoff-0.3.1.tgz
