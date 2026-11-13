@@ -4644,6 +4644,7 @@ dsh plugin --profile web add dshmarket
 - [solstice621/dsh-plugin-projectless](https://github.com/solstice621/dsh-plugin-projectless) — 无需选择项目文件夹即可开始对话，为每次聊天分配持久工作目录，并沿用 Harness 原生会话存储。
 - [Som2233/dsh-session-task-tags](https://github.com/Som2233/dsh-session-task-tags) — 为每个会话标记长期任务或短期任务、记录创建时的 Agent 模式，并在你设定的归档时间窗结束后自动归档。
 - [SonettoGu14/dsh-session-smart-rename](https://github.com/SonettoGu14/dsh-session-smart-rename) — 把会话命名成「分类 · 主题」：侧边栏菜单读对话、让会话所用的模型给出分类与主题并预填可编辑的标题；另有一个 smart_rename_session 工具，让 agent 在话题切换时自己改名。
+- [SouthM/dsh-nanshan-session-manager](https://github.com/SouthM/dsh-nanshan-session-manager) — 浏览、筛选、按 ID 搜索、删除、恢复、导出和导入本机全部会话。
 - [southsnowL/dsh-bulletin#dsh-bulletin-dispatch](https://github.com/southsnowL/dsh-bulletin/tree/main/plugins/dsh-bulletin-dispatch) — 同一台电脑上会话之间的「单子」：会话用标题里的编号前缀表明自己属于哪张桌；单子投给某张桌，由那张桌最先开始干活的那个会话取走 —— 桌是地址，路过的会话不会收到它。
 - [SpaceRelay/dsh-subagent-control#dsh-find-session](https://github.com/SpaceRelay/dsh-subagent-control/tree/main/dsh-find-session) — 在当前对话或所有会话里按关键词查找，命中可高亮、可跳转。
 - [spike237/dsh-task-groups](https://github.com/spike237/dsh-task-groups) — 给侧边栏加上自定义任务分组和活动铃铛：把会话拖进拖出分组、手动排序、折叠分组，并在一处集中查看运行中、待确认和未读的会话。
@@ -10658,6 +10659,8 @@ dsh plugin --profile web add dshmarket
 - [Sivan757/dsh-agent-plugins-market](https://github.com/Sivan757/dsh-agent-plugins-market) — 把任意 Claude Code / Codex / Cursor / Kimi / agent-plugins.org 的 git 市场仓库加为源，套件的技能、MCP 服务器、hooks 与斜杠命令在运行时注入 DSH 会话，并自带 Web 市场页。
 - [songrui111/dsh-publisher-radar](https://github.com/songrui111/dsh-publisher-radar) — 面向 DSH 插件开发者的市场空白雷达。把目录拆到大类与方向，每档标出空位、稀少、有竞争或红海，空位最多的方向排在前面，动手前先知道该做什么；同时可浏览整个市场并一键复制安装命令。
 - [sorawithcat/dsh-settings-sync](https://github.com/sorawithcat/dsh-settings-sync) — 把插件清单与 profile 配置、选定的 $DSH_HOME 文件、浏览器 localStorage 导出成一份 JSON，按文件预览后导入，并可在 profile 目录执行 pnpm install 重装清单里的插件；格式与插件市场的 profile 备份互通。
+- [SouthM/dsh-nanshan-market-publish](https://github.com/SouthM/dsh-nanshan-market-publish) — 扫描本机正在开发的 DSH 组件（也可以手动添加组件文件夹），按官方 contributing.md 的要求分两条互相独立的轨道引导：把代码提交到 GitHub，以及向插件市场提收录 PR。逐项检查 dsh.bundle、仓库满 1 天、dsh-plugin topic、分类与描述规范，并生成 data/plugins/<owner>__<repo>.yml。在左侧栏点「插件市场发布助手」进入。需要连接一个有 public_repo 权限的 GitHub Token，Token 保存在 DSH 凭据服务里，PR 会用你自己的账号提交。
+- [SouthM/dsh-nanshan-publish-manager](https://github.com/SouthM/dsh-nanshan-publish-manager) — 把本机开发的 DSH 组件按 npm 官方形式发布：组件清单、发布设置、发布预检查、发布记录。
 - [springbrand-lab/dsh-plugin-market](https://github.com/springbrand-lab/dsh-plugin-market) — 设置页里的插件市场，可操作本机任意 profile 而不只是当前运行的那个：在 web、headless 及其他 profile 上安装、更新、卸载，带安装脚本风险提示，已装视图同时覆盖目录之外的 profile 依赖，改动当前 profile 时自动重启 DSH。
 - [stakeswky/awesome-dsh](https://github.com/stakeswky/awesome-dsh) — 把「我想让 DSH 做什么」直接变成选好的插件：技能查询覆盖整个 `dsh-plugin` topic 的目录（2600+ 仓库，每 6 小时重抓，简介由 Workers AI 译成中文）的相关度检索接口，再给出对应的 `dsh plugin add` 命令。
 - [suifei/dsh-market-lens](https://github.com/suifei/dsh-market-lens) — 寰镜股票看板：纯粹的摸鱼看股票插件——A股/港股/美股只读延迟行情、平面 LED 灯阵证券大厅、自选、K 线、股市资讯、财报与价格提醒。行情分析和交易请用专业软件，专业的人做专业的事；它就是给散户方便看看自己股票情况的插件，极致简单。
