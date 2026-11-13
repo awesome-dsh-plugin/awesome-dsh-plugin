@@ -1,0 +1,7 @@
+url: https://github.com/spankingsnail/dsh-quickjot
+name: spankingsnail/dsh-quickjot
+category: notify
+tarball: https://github.com/spankingsnail/dsh-quickjot/releases/download/v3.3.0/dsh-quickjot-3.3.0.tgz
+description:
+  en: 'Notes, to-dos and dated events kept as one JSON record per item in the local DSH profile and shared across conversations. Three tools list, create, update, complete and delete them, including adding and removing tags through conversation. A sidebar page groups events by day, remembers agenda navigation within the same Shanghai day, folds earlier unfinished events and lets you show completed events. An unfinished item with a due time raises an in-app reminder — including one missed while the app was not running. An optional WeChat push goes only to a target you have already saved, over the DSH-IM channel, and a successful send is recorded as the channel accepting it.'
+  zh: '把便签、待办与有具体时间的日程按每条一条 JSON 记录存在本机 DSH 配置里，跨对话共用。三个工具负责列出、创建、修改、完成与删除，也可通过会话增加或移除标签。侧栏页面按天分组日程，在同一上海日期内记住日程导航，折叠过去未完成项，并可显示完成项。未完成且填了到期时间的条目到时在应用内提醒（应用没运行时错过的，再次启动后补标）。可选的微信推送只发往你事先保存好的收件目标，通道来自 DSH-IM，发送成功只记为渠道已接受。'
