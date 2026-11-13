@@ -1,0 +1,7 @@
+url: https://github.com/sweet560/dsh-session-guardian
+name: sweet560/dsh-session-guardian
+category: notify
+description:
+  en: 'Notifies you with desktop popups, system notifications and a sound when a DSH session needs a choice or permission approval or finishes, and falls back to a WeChat message via the dsh-im bot after 30 seconds of no response. Bundles @xmanrui/dsh-im; ships its own settings page and ignores background delegated subagent sessions.'
+  zh: '会话需要手动选择、确认权限或跑完时用桌面弹窗、系统通知与提示音提醒；30 秒无响应经 dsh-im 微信机器人兜底。内含 @xmanrui/dsh-im，带设置页，并自动忽略后台委托子代理会话。'
+tarball: https://github.com/sweet560/dsh-session-guardian/releases/download/v1.6.0/dsh-session-guardian-1.6.0.tgz
