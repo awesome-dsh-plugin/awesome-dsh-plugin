@@ -1,0 +1,6 @@
+url: https://github.com/xiaoyuqinA/dsh-vercel-agent-browser
+name: xiaoyuqinA/dsh-vercel-agent-browser
+category: browser
+description:
+  en: 'Expose the Vercel agent-browser MCP toolset (core and mobile browser automation) to a dsh profile via a bundled MCP client entry.'
+  zh: '通过内置的 MCP client 条目，把 Vercel agent-browser 的浏览器自动化工具集（core 与 mobile）接入 dsh profile。'
