@@ -1,0 +1,7 @@
+url: https://github.com/Genesi599/dsh-plugins/tree/main/plugins/curator
+name: Genesi599/dsh-plugins#curator
+category: memory
+description:
+  en: 'Every few turns asks the model whether anything is worth keeping, then sorts the answer into memory, skill or hook.'
+  zh: '每几轮让模型判断是否有值得沉淀的经验，并把结论归入 memory、skill 或 hook 三类之一。'
+icon: https://raw.githubusercontent.com/Genesi599/dsh-plugins/main/plugins/curator/assets/icon-180.png
