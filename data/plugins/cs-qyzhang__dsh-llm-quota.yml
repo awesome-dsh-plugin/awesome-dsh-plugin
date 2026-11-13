@@ -1,0 +1,7 @@
+url: https://github.com/cs-qyzhang/dsh-llm-quota
+name: cs-qyzhang/dsh-llm-quota
+category: usage
+description:
+  en: Shows the balance or Coding Plan quota of the active model provider in the dsh status line, model menu and Current Model label, with background-collected history and trend charts.
+  zh: 在 dsh 状态行、模型菜单与「当前模型」标签显示当前模型供应商的余额或 Coding Plan 额度，后台采集历史数据并以趋势图展示变化。
+icon: https://raw.githubusercontent.com/cs-qyzhang/dsh-llm-quota/main/assets/icon-180.png
