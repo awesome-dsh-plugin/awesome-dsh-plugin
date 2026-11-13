@@ -1,0 +1,6 @@
+url: https://github.com/AgentTools-Cloud/agent-tools-dsh
+name: AgentTools-Cloud/agent-tools-dsh
+category: tools
+description:
+  en: 'Connects the hosted agent-tools.cloud MCP server through DSH''s own MCP client and adds a skill for using it: search x402 paid APIs, remote MCP servers and A2A agents by intent, read health and quality grades, and run a static malware / prompt-injection scan on an MCP server before connecting it. No key needed to search.'
+  zh: 通过 DSH 自带的 MCP 客户端接入 agent-tools.cloud 托管的 MCP 服务，并附带一个使用说明 skill：按意图搜索 x402 付费 API、远程 MCP 服务和 A2A 智能体，查看在线状态与质量评级，并在接入某个 MCP 服务前对它做恶意代码和提示词注入的静态扫描。搜索不需要 key。
