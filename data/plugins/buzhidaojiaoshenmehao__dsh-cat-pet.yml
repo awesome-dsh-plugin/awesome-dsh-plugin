@@ -1,0 +1,8 @@
+url: https://github.com/buzhidaojiaoshenmehao/dsh-cat-pet
+name: buzhidaojiaoshenmehao/dsh-cat-pet
+category: fun
+description:
+  en: A desktop cat for macOS and Windows that reacts to Harness tasks and displays DeepSeek balance, token usage, estimated costs, and the tariff countdown.
+  zh: 随 Harness 任务变化的 macOS 和 Windows 桌宠，显示 DeepSeek 余额、Token 用量、预估费用和峰谷倒计时。
+icon: https://raw.githubusercontent.com/buzhidaojiaoshenmehao/dsh-cat-pet/main/bin/assets/icon.png
+tarball: https://github.com/buzhidaojiaoshenmehao/dsh-cat-pet/releases/download/v0.6.1/dsh-cat-pet-0.6.1.tgz
