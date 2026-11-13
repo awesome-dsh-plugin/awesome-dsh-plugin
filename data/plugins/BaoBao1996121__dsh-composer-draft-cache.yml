@@ -1,0 +1,7 @@
+url: https://github.com/BaoBao1996121/dsh-composer-draft-cache
+name: BaoBao1996121/dsh-composer-draft-cache
+category: session
+description:
+  en: "Per-session composer draft cache that retains unsent text, pasted images and file attachments when switching DSH sessions; attachments remain in memory only, not across page reloads or application restarts."
+  zh: "dsh给我记住：切换 DSH 会话时独立保留未发送文字、粘贴图片和文件附件；附件仅在当前页面内存中缓存，不覆盖刷新页面或重启应用后的恢复。"
+tarball: https://github.com/BaoBao1996121/dsh-composer-draft-cache/releases/download/v0.1.0/dsh-composer-draft-cache-0.1.0.tgz
