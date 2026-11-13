@@ -1,0 +1,7 @@
+url: https://github.com/Linnnkkk/dsh-plugin-suggest-bar
+name: Linnnkkk/dsh-plugin-suggest-bar
+category: ui
+description:
+  en: Predicts up to three replies you may send next and shows them above the input box after each turn, with buttons to fill one in, send it directly, or dismiss them for the turn.
+  zh: 每回合结束后在输入框上方显示最多 3 条预测的下一句话，可填入、直接发送，或本回合不再显示。
+icon: https://raw.githubusercontent.com/Linnnkkk/dsh-plugin-suggest-bar/main/assets/icon-180.png
