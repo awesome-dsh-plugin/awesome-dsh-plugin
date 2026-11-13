@@ -1,0 +1,6 @@
+url: https://github.com/hunyu-feng/dsh-plugin-usage-pulse
+name: hunyu-feng/dsh-plugin-usage-pulse
+category: usage
+description:
+  en: 'Live DeepSeek peak / off-peak pricing in the composer dock: countdown to the next switch, when the next off-peak window starts, token spend in CNY and hourly usage bars.'
+  zh: '输入框下方的实时 DeepSeek 峰谷价格：下次切换倒计时、下一谷段开始时间、人民币 token 花费与近 24 小时用量柱状图。'
