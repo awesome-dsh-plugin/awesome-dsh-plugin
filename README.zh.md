@@ -652,6 +652,7 @@ dsh plugin --profile web add dshmarket
 - [DreamLoomStudio/dsh-primitive-pulse](https://github.com/DreamLoomStudio/dsh-primitive-pulse) — 悬浮面板：把当前这段回答点亮了哪些 HowNet 语义基元实时画出来——脑形节点网络、脑电样式的多导联曲线、构成指纹卡。
 - [dreammaker2016/dsh-file-menu](https://github.com/dreammaker2016/dsh-file-menu) — 为 DSH Web 界面补上右键菜单：文字与输入框可复制/剪切/粘贴/全选，文件引用与链接可复制路径、在文件管理器中定位、用默认应用打开。
 - [dreamxjy/dsh-settings-resizer](https://github.com/dreamxjy/dsh-settings-resizer) — 让 DeepSeek Harness 设置窗口可配置大小并可拖动缩放，提供尺寸预设，并把尺寸保存到 profile 配置。
+- [drliuhuan/dsh-plugin-agy-bg](https://github.com/drliuhuan/dsh-plugin-agy-bg) — 在 DSH Web 界面背后铺一层跟随鼠标的 WebGL 粒子场。配色跟随浅色/深色主题；设置 → 常规里有开关和可选帧率上限（30/60，显示器支持时增加 120）。不会向输入框或会话滚动树插入任何元素。
 - [drliuhuan/dsh-plugin-zoom](https://github.com/drliuhuan/dsh-plugin-zoom) — 在高 DPI 显示器上手动缩放 Harness Web UI（75%–200%）：设置行、Ctrl+滚轮与会话标题栏控件三种入口，让文字更清晰易读。
 - [drowsylazy/dsh-thinking-effort-rheostat](https://github.com/drowsylazy/dsh-thinking-effort-rheostat) — 借鉴 Claude Desktop 的思考强度滑块，在输入框中通过点击、拖拽或键盘调整模型推理档位。
 - [drscrewdriver/dsh-arrowkey-nav](https://github.com/drscrewdriver/dsh-arrowkey-nav) — DSH Web GUI 的方向键导航：上/下在当前工作区内切换会话，左/右切换工作区；会话身份来自客户端控制器而非 DOM；输入框存在草稿时把方向键交还给光标。
@@ -10580,6 +10581,7 @@ dsh plugin --profile web add dshmarket
 - [leoyoul/dsh-onekey-update](https://github.com/leoyoul/dsh-onekey-update) — 启动后检查已启用插件的新版本，在右下角列出并一键逐个升级，逐条给出成功或失败结果；通过解析应用自带的 dsh CLI 在 macOS、Windows、Linux 上执行更新，不假定 Windows 可执行文件。
 - [lihao178/dsh-plugin-steward](https://github.com/lihao178/dsh-plugin-steward) — DeepSeek-Harness 插件管家：查出所有插件的新版本并直接升级，升级前自动建快照，升级后重新体检，结果变差就自动还原。装任何插件前先静态扫描代码（动态执行、反弹 shell、翻密钥都会标出来），内置 8489 个插件的市场目录并带兼容性判定，装完/卸完/停用完自动重启宿主，不需要手动关软件。界面文案全白话，不写术语。
 - [liqichen/dsh-plugin-manager](https://github.com/liqichen/dsh-plugin-manager) — 在 DSH 设置面板内嵌的图形化管理器：开关/删除 MCP 服务、浏览并回收 Skills、查看内置插件包，改动热生效无需重启。
+- [LivXue/dsh-plugin-shop#dsh-plugin-shop](https://github.com/LivXue/dsh-plugin-shop/tree/main/packages/dsh-plugin-shop) — 从 npm 与 GitHub 每日采集的 DSH 插件目录：一键安装、启停、更新与卸载；装前就给出 dsh 会拒绝的原因与豁免命令；安装前的事实（engines.dsh、依赖数、bin 名、安装脚本）、回滚与收藏。
 - [ljh257110/dsh-local-installer](https://github.com/ljh257110/dsh-local-installer) — 本地插件安装器：DSH 网页设置页里的本地插件安装入口——文件选择器多选 .tgz 或输入本机完整路径，自动检测所在 profile 并执行官方 `dsh plugin add`，实时回显安装日志，无需终端。
 - [LKMeng2001/dsh-mcp-market](https://github.com/LKMeng2001/dsh-mcp-market) — DSH 的 MCP 服务器商场：浏览经过 npm 校验的精选目录，一键安装 MCP 服务器到当前 profile，免重启立即生效。
 - [loguhan/dsh-workshop](https://github.com/loguhan/dsh-workshop) — DSH Web UI 的 Steam 创意工坊式插件商店：浏览、搜索并一键安装社区插件，支持镜像加速、进度 UI、安全检测与中文描述。
@@ -10835,6 +10837,7 @@ dsh plugin --profile web add dshmarket
 - [Lucasli2018/totoro-pet](https://github.com/Lucasli2018/totoro-pet) — 桌面宠物插件，常驻悬浮层养一只龙猫，点击互动并可在待机、睡觉、开心、进食等状态间切换。
 - [lucky8197/dsh-devquest](https://github.com/lucky8197/dsh-devquest) — 把开发变成 RPG：回合/工具/todo 积累 XP、27+ 成就徽章、等级与赛季。事件流驱动、纯函数计分——你的工作就是游戏。
 - [lukeAyin/dsh-whalebook#dsh-whalebook](https://github.com/lukeAyin/dsh-whalebook/tree/main/dsh-whalebook) — 住在 DeepSeek Harness 里的蓝发桌宠「鲸事本」：点一下弹出待办面板，可点击编辑、到期渐进提醒；开启「待办建议」后，提醒还会按概率追加一句 AI 生成的简短下一步建议。基于 PC2005-cloud/dsh-pet（MIT），素材沿用其非商用条款。请替代 PC2005-cloud/dsh-pet 安装，不要与它同时安装。
+- [luo173176/dsh-simple-live](https://github.com/luo173176/dsh-simple-live) — DSH 聚合直播插件：在左侧栏面板聚合哔哩哔哩、斗鱼、虎牙、抖音、快手五平台直播，支持弹幕与模型工具。
 - [luumod/dsh-achievements](https://github.com/luumod/dsh-achievements) — 成就与游戏化插件：按回合、工具调用、会话、连续天数与编码行为（编辑/读取/测试）解锁徽章，带徽章墙、解锁 toast 与 ctx.achievements SDK。
 - [luweiyabo/dsh-whale-pet](https://github.com/luweiyabo/dsh-whale-pet) — DeepSeek Harness Web UI 的精致悬浮鲸鱼桌宠，拥有 95 个分类透明动画、状态感知事件回应、可自定义动作与触发规则，并支持点击互动、拖拽和屏幕漫游。
 - [lyhtakeashot/dsh-lucky-block](https://github.com/lyhtakeashot/dsh-lucky-block) — 给 DeepSeek Harness 网页界面加一个可拖拽的幸运方块按钮：单击放零成本小表演（弹窗、假蓝屏、今日抽签、冷知识、冷笑话、音乐和一组视觉小演出），长按 1.4 秒挖穿后开新会话随机写论文、读新闻、发明东西或编短篇小说。它还会给模型的问答题选项末尾加一个「幸运方块」随机替你决定，不满意说「回滚」即可撤销。方块外观与事件权重都能在设置里改。
