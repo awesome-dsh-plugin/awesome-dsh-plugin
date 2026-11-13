@@ -1,0 +1,7 @@
+url: https://github.com/openfcp/dsh-financial-skills
+name: openfcp/dsh-financial-skills
+category: market
+tarball: https://github.com/openfcp/dsh-financial-skills/releases/latest/download/dsh-financial-skills.tgz
+description:
+  en: "A Financial Skills entry in the DSH left sidebar that opens a full-page catalog of curated financial-industry skills, built from the openfcp/awesome-financial-skills catalog.json. Search, per-category filters and an installed view; the detail dialog renders the skill's SKILL.md and lists its files, size, license and source coordinates. Install fetches the body from the source declared in the catalog (SkillHub zip, or GitHub raw with API and jsDelivr fallbacks), enforces file-count and size limits, then stages and renames it into the skills directory; uninstall moves the directory into .trash instead of deleting it. Six loopback-only routes serve the page, the client can only pass a skill id, and an unreachable catalog falls back to a bundled snapshot that is labelled as a snapshot."
+  zh: "在 DSH 左侧栏加一个「金融业技能」入口，点开是整页精选金融行业技能目录，数据构建自 openfcp/awesome-financial-skills 的 catalog.json。支持搜索、按业务分类筛选和已安装视图；详情弹窗渲染技能的 SKILL.md，并列出文件清单、大小、许可证与来源坐标。安装按清单声明的来源取回正文（SkillHub zip，或 GitHub raw 并回退 API 与 jsDelivr），校验文件数与体积上限后先暂存再重命名落位；卸载把目录移进 .trash 而不是删除。页面由 6 条仅限本机回环的路由支撑，客户端只能传技能 id，目录不可达时回落到随包快照并如实标注为快照。"
