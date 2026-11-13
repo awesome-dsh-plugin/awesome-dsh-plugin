@@ -1,5 +1,5 @@
 url: https://github.com/dxxo77/dsh-plugin-quota-balance
-name: dxxo77/dsh-plugin-quota-balance
+name: 余额显示quota-balance
 category: usage
 description:
   en: "余额显示quota-balance — shows the DeepSeek account balance at the left of the composer status row; clicking it opens a panel with the normal and bonus wallet split, the refresh time and a top-up link. The chip and panel read the host surface tokens, so they follow the dsh-plugin-wallpaper-engine glass settings, theme and wallpaper changes."
