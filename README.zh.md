@@ -2755,6 +2755,7 @@ dsh plugin --profile web add dshmarket
 - [STao-Gee/dsh-token-curve](https://github.com/STao-Gee/dsh-token-curve) — 右栏 Token 曲线 + 账本：当前对话逐轮 token 与费用，本机全部会话按月/周汇总，逐轮明细可导出 Excel，顶部实时显示账户余额。只读会话日志，逐条按峰谷计价，分叉会话抄来的历史不重复计费。仅桌面端，仅在 Windows 上验证；实时余额需登录 DSH 账号。
 - [Starlight-bananice/dsh-status-bar](https://github.com/Starlight-bananice/dsh-status-bar) — 输入栏下可配置的 17 段会话状态栏，提供实时 TPS、按模型分别计价的费用估算，以及用量与费用弹窗。
 - [StarRob1n/dsh-account-balance](https://github.com/StarRob1n/dsh-account-balance) — 悬浮球显示已登录 DeepSeek 账户余额（OAuth），附带实时价格、今日价格走势与 token 消耗估算区间。
+- [stealthpro/dsh-composer-balance](https://github.com/stealthpro/dsh-composer-balance) — 在官方输入框统计栏中用一枚胶囊同时显示已登录 DeepSeek 账户的余额与当前的高峰/低谷计费时段；点击后弹出面板，显示各钱包余额、赠送余额、读取时间，以及按查看者本地时区呈现的两个计费时段。
 - [stevenx65/dsh-balance-plugin](https://github.com/stevenx65/dsh-balance-plugin) — dsh 网页侧边栏的 DeepSeek 余额与 token 用量监控：今日/累计切换，并按 provider 过滤其他厂商。
 - [Stmol/dsh-rub-cost](https://github.com/Stmol/dsh-rub-cost) — 在输入框坞区显示以卢布计的当前会话费用：当前时段与倒计时、该时段的 API 费用、央行汇率、含 subagent 的合计、缓存节省与 DeepSeek 平台余额。
 - [storyOuO/dsh-plugin-ds-balance](https://github.com/storyOuO/dsh-plugin-ds-balance) — DeepSeek 余额与逐次调用成本追踪：基于真实 usage 的持久化成本账本，支持官方高峰/低谷定价（北京时间 ×2），60 秒余额轮询，侧栏底部显示余额与今日消耗。
@@ -4771,6 +4772,7 @@ dsh plugin --profile web add dshmarket
 - [yuna78/dsh-plugin-multi-chat-windows](https://github.com/yuna78/dsh-plugin-multi-chat-windows) — 话分两头：把 AI 对话从「切来切去」变成「并排开火」——每个会话一枚原生小窗，贴着主对话随开随用；一键平铺所有窗口（顶对齐·同高·紧贴），最小化到带实时状态灯的底部停靠条（转圈=工作中·绿色=刚完成·黄色=待审批·灰色=空闲），真浏览器里还能把会话弹出成独立浏览器窗口。
 - [yunfong/dsh-session-md-export](https://github.com/yunfong/dsh-session-md-export) — 把当前会话导出为可读的 Markdown 文件，只保留对话正文：用户消息、助手文本与 ask_user_question 问答，通过会话标题栏按钮或 /md 命令触发。
 - [YunongDai2005/dsh-theone](https://github.com/YunongDai2005/dsh-theone) — 所有事在一个对话框（主聊天）里聊：每条消息自动分到所属话题，每个话题在后台有独立的会话和上下文；已有的 DSH 旧会话也会自动整理、分类成话题。
+- [Yutai233/dsh-daily-report](https://github.com/Yutai233/dsh-daily-report) — 把本机 DSH 会话日志整理成日报／周报／月报：三层阅读结构、工具调用统计、token 与花费估算、卡点与未完成待办，另有欢迎页鲸鱼上方的早晨卡片与可选的 Windows 键鼠空闲健康提醒。默认不调用模型即可生成摘要。
 - [yxv1203-collab/dsh-conversation-archive](https://github.com/yxv1203-collab/dsh-conversation-archive) — 在 Windows 上管理 DSH 已归档会话，支持搜索、批量取消归档与删除、AI 辅助文件保留，以及经过校验的本地或网络目录备份。
 - [yyfdfsyyf-source/dsh-context-fold](https://github.com/yyfdfsyyf-source/dsh-context-fold) — 把超长工具结果折叠为落盘副本并保留 head/tail 标记，为 compaction 摘要建立可检索账本，并按项目作用域抽取跨会话记忆；被折叠的内容可通过一次工具调用原样取回。
 - [Yyhy110421/dsh-broadcast](https://github.com/Yyhy110421/dsh-broadcast) — 群发：把一条指令一次发给自己选中的多个 DSH 会话，可带附件、收集回答，并额外拉起最多 8 个临时子代理。
@@ -4909,6 +4911,7 @@ dsh plugin --profile web add dshmarket
 - [Dayi-Z/dsh-learn-wiki](https://github.com/Dayi-Z/dsh-learn-wiki) — DSH 的纠错式补料知识库：agent 反复撞同一堵墙时，后台 worker 在限流下联网抓取、蒸馏结果先落暂存区，只有两段式 commit 才能进入召回——无来源的页面一律拒绝。
 - [dearbld/dsh-living-memory](https://github.com/dearbld/dsh-living-memory) — 单文件本地 SQLite 的自整理活记忆——夜巡引擎自动去重、合并、衰减、建链，七信号 RRF 混合检索（FTS5+jieba 中文优先分词、可选向量 KNN、图谱 PPR），带类型知识图谱，冲突检测标记矛盾而非静默覆写，Web 遥测面板。
 - [dennisrongo/dsh-plugins#dsh-memory](https://github.com/dennisrongo/dsh-plugins/tree/main/plugins/dsh-memory) — /remember 命令将事实写入 dsh 已加载的 AGENTS.md 指令层级，并配有 Memory 标签页，显示加载器在字节预算内实际保留了哪些指令。
+- [Derek-Y-JQ/knowledge-galaxy](https://github.com/Derek-Y-JQ/knowledge-galaxy) — DeepSeek Harness 的知识收录看板：把对话答案、论文与随手笔记收录进学习/学术/日常三种模式，用分组看板、时间轴或日历浏览，卡片之间可建立联系并在单星系星图里漫游；另提供 agent 工具与定时收录任务。
 - [detongz/dsh-client-ui-obsidian-memory](https://github.com/detongz/dsh-client-ui-obsidian-memory) — 基于本地 Obsidian/Codex 知识库的持久 AI 记忆：5 个 obsidian_memory_* 读写搜索工具，外加侧边栏知识库浏览器。
 - [diqierjia/StrataGate-AgentMemory](https://github.com/diqierjia/StrataGate-AgentMemory) — 近期对话保持清晰，久远记忆逐渐化为摘要，而不是消失。StrataGate 为 DeepSeek Harness 带来六层时间衰减记忆，并将长期事件与关系沉淀进知识图谱。还可以把其他 AI 中的已有记忆一起带过来，不必从头开始。
 - [djasdh/interest-memory](https://github.com/djasdh/interest-memory) — 由本地 Go 服务支撑的跨会话长期记忆（约 50MB 内存，SQLite-vec + 经验证增强的论断）：每条用户消息零延迟注入召回、会话结束时摄入对话记录，提供 memory_search / memory_logs / memory_ingest 工具。安装：`dsh plugin --profile web add @djasdh/interest-memory-dsh-bridge`。仅为协议桥：Go 主服务不随 `dsh plugin add` 安装，需先按仓库 README 安装并启动；服务未运行时工具静默返回空。
@@ -8094,6 +8097,7 @@ dsh plugin --profile web add dshmarket
 - [AngleZhang-ZhangJiao/dsh-orchestrator2#dsh-orchestrator2](https://github.com/AngleZhang-ZhangJiao/dsh-orchestrator2/tree/main/plugins/dsh-orchestrator2) — Agent 预设：单会话跑三阶段自动开发流水线——并行研究员子代理交互设计、goal 驱动审核/开发子代理开发（按包预算台账硬上限）、验收修复循环。
 - [AntheaLaffy/dsh-plugin-tomato-todo#plugin](https://github.com/AntheaLaffy/dsh-plugin-tomato-todo/tree/main/plugin) — 在 DSH 中管理番茄钟、任务与学习计划；对话中的学习助手可读写与界面相同的本地记录。需另行安装并运行项目发行包里的 tomato-runtime 本地服务（Linux 发行包，监听 127.0.0.1:43987）。
 - [apheli0os/deepseek-harness-orchestrate](https://github.com/apheli0os/deepseek-harness-orchestrate) — DSH 声明式任务 DAG 编排：校验依赖图，通过工作流子智能体并行执行拓扑任务层，并确定性传播失败。
+- [artaniszhou/dsh-atan-daily](https://github.com/artaniszhou/dsh-atan-daily) — DSH 定时任务：每个选题一个目录与任务细节文件，按 cron 或手动执行，渲染带时间戳的 PNG / PDF 报告，并可推送到飞书。
 - [ArtlexYoung/dsh-super-code](https://github.com/ArtlexYoung/dsh-super-code) — 提供一个更快、更节省、更准确的编码 Agent 预设。在按多维难度规则筛选的 SWE-bench Pro 高难度 100 题评测中，平均耗时减少 36%，平均每题输入 token 减少 17%，正确率提高 5 个百分点。
 - [Asif2BD/JARVIS-Mission-Control-DeepSeek#dsh-plugin-mission-control](https://github.com/Asif2BD/JARVIS-Mission-Control-DeepSeek/tree/main/integrations/deepseek-harness/dsh-plugin-mission-control) — 把 DeepSeek Harness 的会话、消息、工具活动与每轮结果实时推送到 JARVIS Mission Control 看板，附任务状态与人工复核。
 - [ayf-master/dsh-worklog](https://github.com/ayf-master/dsh-worklog) — 把 DSH 的会话日志还原成 Markdown 工作台账：日报、周报（ISO 周）或月报，按工作目录分组。每个会话列出需求、改动文件、工具用量与中断次数，末尾附「产物」清单：改动最多的文件、新生成的文档、关键命令。提供 /worklog 命令、worklog_generate 工具，以及一个设置页，用来调整存放目录、跨天合流、产物清单与每周定时生成。
