@@ -3461,7 +3461,7 @@ dsh plugin --profile web add dshmarket
 - [cuboteam/dsh-plugin-dit](https://github.com/cuboteam/dsh-plugin-dit) — DIT.ai 的 DeepSeek Harness 模型接入 bundle：使用一个 DIT_API_KEY 安装 29 个 OpenAI Chat Completions 模型和 10 个 Anthropic Messages 模型，并按协议配置 thinking。
 - [cv-superding/dsh-deepseek-web-login](https://github.com/cv-superding/dsh-deepseek-web-login) — 新增 deepseek-web provider，把 chat.deepseek.com 网页端模型接入 DSH：浏览器登录抓取、PoW 请求签名、SSE 流式传输与基于提示词的工具调用。
 - [cybtachyon/dsh-plugin-local-infer](https://github.com/cybtachyon/dsh-plugin-local-infer) — 一个 DeepSeek Harness 插件，用于管理本地推理引擎。
-- [CynthiaYX/dsh-plan-act-models](https://github.com/CynthiaYX/dsh-plan-act-models) — 简化RooCode和Cline在VSCode插件上的功能，为 Plan 与 Act 两种模式各绑定一套 provider、模型与思考复杂度，支持按工作区覆盖。
+- [CynthiaYX/dsh-plan-act-models](https://github.com/CynthiaYX/dsh-plan-act-models) — 在对话框里加一个模式下拉框，通过宿主自己的 session.selectModel 换模型：Plan、Act 与任意个自定义模式各自绑定 provider、模型、思考复杂度，并可各带一段在该模式生效时隐式加入系统提示词的指令；进入 plan 时软切换到 Plan，批准计划时强制切到 Act，Plan 与 Act 支持按工作区覆盖。
 - [CypherNaught-0x/DSH-Subagent-Model-Router](https://github.com/CypherNaught-0x/DSH-Subagent-Model-Router) — 借助别名、能力标签和使用说明，将每项委派任务自动智能路由到最合适的已配置模型——常规工作更快、更省，复杂任务则交给更强的专用模型。可通过 Web 设置页或引导流程组建模型团队，让多个专家并行工作并可靠汇总结果；所选模型会显示在子代理视图中，并以内联标签无缝融入 Better Sidebar 的 Tasks 任务树。
 - [dakouchiya/dsh-auto-router](https://github.com/dakouchiya/dsh-auto-router) — 按每轮请求的实际内容选择模型与推理等级：便宜的分类模型先判档，监督模型在工具报错和检查点中途改档，升到更强模型前会先弹窗确认。
 - [Dalizi2026/dsh-factory-provider](https://github.com/Dalizi2026/dsh-factory-provider) — 把 Factory (Droid) 订阅额度接入 DSH 的原生模型 provider：三条协议路由、用你自己的 API key 经本机回环网关认证，并提供设置页查看连接状态、订阅额度、按模型的 token 统计与切换 key。
