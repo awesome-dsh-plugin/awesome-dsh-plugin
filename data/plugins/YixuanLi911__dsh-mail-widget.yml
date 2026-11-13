@@ -1,0 +1,7 @@
+url: https://github.com/YixuanLi911/dsh-mail-widget
+name: YixuanLi911/dsh-mail-widget
+category: notify
+description:
+  en: 'Unread mail widget for DeepSeek Harness: 7-day and 30-day unread sections with senders, a local widget page and two agent tools, IMAP over TLS with no runtime dependencies.'
+  zh: 'DeepSeek Harness 的未读邮件挂件：按近 7 天 / 近一个月两段显示未读数量与发件人，带一个本地挂件页面和两个 agent 工具；纯内置模块实现 IMAP，无运行时依赖。'
+icon: https://raw.githubusercontent.com/YixuanLi911/dsh-mail-widget/main/assets/icon-180.png
