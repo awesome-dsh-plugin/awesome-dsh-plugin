@@ -1,0 +1,7 @@
+url: https://github.com/maximehu97/dsh-meeting-dd
+name: maximehu97/dsh-meeting-dd
+category: workflow
+description:
+  en: "DingTalk edition of dsh-meeting: each person's assistant negotiates meetings, weekend outings and bubble tea votes with colleagues' assistants through DingTalk direct messages sent as the owner, using the DingTalk Workspace CLI. Identity comes from the owner's DingTalk account after a QR sign-in, colleagues in the same organization are discovered automatically, and assistants share only availability and ask the owner before giving up protected time. Requires the dws CLI and a DingTalk account."
+  zh: "dsh-meeting 的钉钉版：每人一个助理，通过钉钉 CLI 以本人身份发钉钉单聊，和同事的助理协商排会、周末团建和奶茶投票。扫码登录后身份直接来自钉钉账号，自动发现同组织里装了插件的同事；对外只给忙闲不说原因，占用本人保护的时段前先问本人。需要 dws CLI 和钉钉账号。"
+tarball: https://github.com/maximehu97/dsh-meeting-dd/releases/latest/download/dsh-meeting-dd.tgz
