@@ -1,0 +1,8 @@
+url: https://github.com/Zekilou/dsh-sidebar-session-tabs
+name: Zekilou/dsh-sidebar-session-tabs
+category: ui
+description:
+  en: Filter tabs (all, running, needs me, pinned, and one per tag) plus per-session tags for the sidebar session list.
+  zh: 侧栏会话列表的筛选 Tab（全部、运行中、待我处理、已固定、每个标签一个）与会话标签。
+tarball: https://github.com/Zekilou/dsh-sidebar-session-tabs/releases/download/v0.1.0/dsh-sidebar-session-tabs.tgz
+icon: https://raw.githubusercontent.com/Zekilou/dsh-sidebar-session-tabs/main/assets/icon-180.png
