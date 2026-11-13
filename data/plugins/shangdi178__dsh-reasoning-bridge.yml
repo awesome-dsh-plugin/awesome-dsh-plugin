@@ -1,0 +1,6 @@
+url: https://github.com/shangdi178/dsh-reasoning-bridge
+name: shangdi178/dsh-reasoning-bridge
+category: workflow
+description:
+  en: 'Reasoning-bridge skill that sends a redacted Context Packet to ChatGPT or Arena in a browser (bundled zero-dependency CDP driver, or the DSH Browser Use provider) and validates the returned Result locally: contract-checked Packet and Result, a versioned consent gate enforced by the transport, pre-send credential-shape scanning, a deterministic handoff state machine, and SHA-256 run receipts. Local adoption of the web advice is a documented workflow step, not code enforcement.'
+  zh: '推理桥接技能：把脱敏上下文包经浏览器发给 ChatGPT 或 Arena（内置零依赖 CDP 驱动，或 DSH Browser Use provider），再在本地校验返回结果；含契约化 Packet/Result、由传输层强制执行的版本化授权门、发送前凭据形状扫描、确定性交接状态机与 SHA-256 运行回执。网页建议的本地采纳是文档约定的工作流步骤，不由代码强制。'
