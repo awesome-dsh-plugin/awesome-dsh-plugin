@@ -1,0 +1,7 @@
+url: https://github.com/finogeeks/finsafe/tree/main/integrations/dsh/windows
+name: finogeeks/finsafe#finshield
+category: security
+description:
+  en: Deleting files is dangerous, but agents can do much more. Your privacy, system and data need protection too. FinShield adds sandbox protection to DSH on Windows. Which security boundaries can agents cross, and which can FinShield defend? Let the test results speak.
+  zh: 删文件很危险，但Agent能做的远不止删文件。你的隐私、系统和数据，也需要保护。FinShield为Windows上的DSH加上沙箱防护。Agent能越过哪些安全边界？FinShield能守住哪些？让实测结果说话。
+icon: https://raw.githubusercontent.com/finogeeks/finsafe/main/integrations/dsh/windows/assets/finshield.png
