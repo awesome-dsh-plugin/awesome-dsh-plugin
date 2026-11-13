@@ -1,0 +1,6 @@
+url: https://github.com/AiCoderChenweishi/dsh-workspace-topbar
+name: AiCoderChenweishi/dsh-workspace-topbar
+category: ui
+description:
+  en: Adds a workspace (project) switcher to the window title bar; selecting a project filters the session list to that project's sessions.
+  zh: 把工作区（项目）切换器放到窗口标题栏；选中项目后，左侧会话列表只显示该项目的会话。
