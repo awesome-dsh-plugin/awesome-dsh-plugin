@@ -1,0 +1,6 @@
+url: https://github.com/zhizhuodemao/ai-reverse-resources/tree/main/dsh/reverse-plugin
+name: zhizhuodemao/ai-reverse-resources#reverse-plugin
+category: tools
+description:
+  en: 'Reverse-engineering preset for DeepSeek Harness: domain skills live inside one "reverse mode" and the model routes by target type (web/JS, Android, iOS). The JS domain ships three skills (AST deobfuscation, controlled iv8 execution, JSVMP recovery) and mounts the js-reverse-mcp browser forensics server as mcp__js-reverse__* tools.'
+  zh: 'DeepSeek Harness 的逆向工程预设：各领域技能装在同一个「逆向模式」里，由模型按目标类型（Web/JS、安卓、iOS）自行路由。当前 JS 领域包含三个技能（AST 解混淆、iv8 受控执行、JSVMP 恢复），并把 js-reverse-mcp 浏览器取证服务挂载为 mcp__js-reverse__* 工具。'
