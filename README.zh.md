@@ -2063,6 +2063,7 @@ dsh plugin --profile web add dshmarket
 - [xing-shuyin/dsh-ui-tools](https://github.com/xing-shuyin/dsh-ui-tools) — dsh Web UI 开发者工具面板：文件浏览/预览/编辑与路径式文件提及、多终端（快捷命令）、Git 面板（提交/推送/拉取/分支）与后台任务管理。UI 移植自 pi-web-ui。
 - [Xingkong42/dsh-open-workspace](https://github.com/Xingkong42/dsh-open-workspace) — 在工作区侧边栏会话行菜单和会话顶部标题栏提供「打开工作区」入口，用系统文件管理器打开当前会话所属工作区文件夹。
 - [Xingkong42/dsh-zh-labels](https://github.com/Xingkong42/dsh-zh-labels) — 每次启动自动将 DSH 界面英文工具与状态标签修补为中文，升级 DSH 后自动恢复，无需手动改文件。
+- [xingxing2013/dsh-prompt-history](https://github.com/xingxing2013/dsh-prompt-history) — 输入框里的提示词历史：↑/↓ 取回此浏览器中此前发过的提示词（由新到旧），↓ 往回走并在越过最新一条时恢复最初的草稿；输入框右上角的徽标可点开带编号的历史列表直接选取。只记录真正发送过的提示词（删字、取消组词不会写入），历史跨会话共享并自动去重，徽标大小可在「设置 → 通用」调整，Ctrl/Cmd+Shift+Backspace 清空。
 - [xingxingbk-git/dsh-deepseek-chat](https://github.com/xingxingbk-git/dsh-deepseek-chat) — 在 DSH 桌面版中提供 DeepSeek 网页聊天与 Harness 工作区之间的切换。
 - [xingyeai23/dsh-comfyui-studio](https://github.com/xingyeai23/dsh-comfyui-studio) — DSH 侧栏里的 ComfyUI 工作室：连接本机或局域网 ComfyUI，选择已保存的图片工作流，清理/改写提示词、编辑 LoRA 与节点、生成图片并预览结果，可复制种子。
 - [xingzhen199186/dsh-entry-drawer](https://github.com/xingzhen199186/dsh-entry-drawer) — 把 DSH 左侧栏入口列表的第一行变成开关，一键收起/展开其余入口，把空间还给会话历史。
@@ -2528,6 +2529,8 @@ dsh plugin --profile web add dshmarket
 - [Hmuer/dsh-deepseek-wallet](https://github.com/Hmuer/dsh-deepseek-wallet) — 在输入框工具栏实时显示 DeepSeek 账户余额，并在每轮完成对话的 token 用量旁显示按官方峰谷价计费的人民币金额：北京时间工作日上下午为高峰价，周末与法定节假日为空闲价。余额需要 DEEPSEEK_API_KEY 凭据，仅通过 DeepSeek OAuth 登录的账号不显示余额。
 - [hojas/dsh-price-tip](https://github.com/hojas/dsh-price-tip) — 在 Web 界面侧栏底部常驻一个价格时段标记，显示 DeepSeek API 当前处于 空闲时段还是高峰时段、距下次切换还有多久；点开是规则说明、当前生效的价目表，以及已登录 DeepSeek 账户的余额。
 - [Holdon2099/dsh-whale-girl-stats](https://github.com/Holdon2099/dsh-whale-girl-stats) — 读取本机 DSH 会话日志，展示真实 Token 总量、会话数、估算成本与预算、14 天消耗时间线、逐会话明细和 CPU 监控，并提供可拖动的 Token/成本状态小窗，以及随 Token 消耗干饭的鲸鱼娘。
+- [hongcha-dsh/dsh-cache-keepalive](https://github.com/hongcha-dsh/dsh-cache-keepalive) — 主会话空闲时自动重放最近一次请求，让上游提示词缓存保持命中，下一次真实请求按缓存命中价计费而不是冷启动重算；支持按窗口开关、按任务记录与估算净省。
+- [hongcha-dsh/dsh-model-speedtest](https://github.com/hongcha-dsh/dsh-model-speedtest) — 在插件详情页按同一环境串行跑 N 轮测速，输出逐轮表与中位数/最小/最大/MAD，并把每个批次留档（可重命名、删除）。
 - [Hongcheng-LI/dsh-magpie](https://github.com/Hongcheng-LI/dsh-magpie) — 一键查看本机 Magpie 网关下全部 AI 账号的额度，并支持按天/周/月查看用量明细。
 - [Hou-DL/dsh-token-pulse](https://github.com/Hou-DL/dsh-token-pulse) — DSH 设置内的本地 Token 用量热图：GitHub 风格周/月/季度/年视图、每日小时级展开、模型与供应商 Top 5，历史持久化，删除会话不丢数据。零联网、零计费。
 - [Hou-mingyuan/glm-coding-quota](https://github.com/Hou-mingyuan/glm-coding-quota) — 输入框下方实时显示 GLM Coding Plan 额度环 - 5 小时与每周额度窗口、等级、自动刷新与一键重试。需 GLM Coding Plan 订阅与 key，并配置 BigModel 的 organization 与 project ID（团队额度接口缺了它们会返回空）。
@@ -2977,7 +2980,7 @@ dsh plugin --profile web add dshmarket
 - [cngtn/dsh-cngtn-pond](https://github.com/cngtn/dsh-cngtn-pond) — 纸墨主题，提供暖色纸面、细描边和近方形圆角，并在整个界面后方绘制动态 ASCII 锦鲤池；主题不指定字体，沿用 DSH 自带字体栈（或设置中选择的字体）。
 - [cnhenaihui/dsh-theme-wallpaper](https://github.com/cnhenaihui/dsh-theme-wallpaper) — 配色主题与壁纸插件：62 套配色主题（37 套内置、源自 OpenCode 调色板，另有 25 套 IP 预设），每套自带 Markdown 与语法高亮配色，另有一层把低于 4.5:1 的语义色推回可读对比度，并支持本地背景图（铺满或平铺、模糊、遮罩、轮换）。取代此前的 cnhenaihui/dsh-ios-theme。
 - [codeMonkey-Pine/dsh-wallpaper](https://github.com/codeMonkey-Pine/dsh-wallpaper) — Wallpaper Engine 壁纸联动：把本机下载的 WE 壁纸（创意工坊 431960 + 本地 projects）设为 DSH Web GUI 页面背景（图片/视频/网页原样渲染，场景壁纸柔化为静态预览），侧边栏「壁纸设计」面板可调不透明度、作用范围、填充、模糊、暗角、帧率、视差、轮播与主题联动，附 wallpaper_scan/list/set/config 四个 agent 工具。
-- [CoolTea001/dsh-cool-theme](https://github.com/CoolTea001/dsh-cool-theme) — 主题插件 —— 支持深色/浅色外观切换，提供 34 款预设主题，支持创建/分享/导入自定义主题。
+- [CoolTea001/dsh-cool-plugins#dsh-cool-theme](https://github.com/CoolTea001/dsh-cool-plugins/tree/master/plugins/dsh-cool-theme) — 主题插件 —— 支持深色/浅色外观切换，提供 34 款预设主题，支持创建/分享/导入自定义主题。
 - [CoraxEldridge/dsh-win11-material](https://github.com/CoraxEldridge/dsh-win11-material) — 为 DSH 桌面窗口换上 Windows 11 的 Mica、Acrylic、Tabbed 系统材质，页面不透明度可调；随包附带的 app.asar 补丁让窗口透明，壁纸才会透出来。仅限 Windows。透明补丁是要你自己另外运行的一步（关闭 DSH 后执行 node tools/window-bridge.mjs apply）：它会修改已安装的 app.asar，并在旁边留一份备份，restore 可还原。
 - [CosmerHomura/dsh-yoimiya-theme](https://github.com/CosmerHomura/dsh-yoimiya-theme) — 《原神》宵宫主题：严格核算过对比度的明暗双色板、程序化生成的烟花粒子层，以及一个读取你自己本地文件的播放器——歌曲与封面不上传到任何地方。语法高亮为暖色，标识为自绘金鱼；除壁纸外所有画面都由 CSS 渐变与手写 SVG 生成。
 - [CosmoSail/dsh-bloomglass](https://github.com/CosmoSail/dsh-bloomglass) — DeepSeek Harness Web 主题：十套 OKLCH 中国传统色配色、明暗自适应；可选一张壁纸铺满窗口、界面以磨砂玻璃叠上去；已适配 DS Bot（Bot 团队）界面；配色与壁纸都本地持久化。
@@ -4603,6 +4606,7 @@ dsh plugin --profile web add dshmarket
 - [Sirius-rocco/dsh-agent-context-hub](https://github.com/Sirius-rocco/dsh-agent-context-hub) — 把本机所有 agent 的会话历史合并成一份按项目分组的只读索引，并附一块只追加的共享上下文板，让换 agent 时不丢结论。
 - [SkanderBog/dsh-context-manager](https://github.com/SkanderBog/dsh-context-manager) — 预览会话上下文，按对话分组选择保留、摘要或省略，确认后通过 Harness 会话服务持久化压缩结果。
 - [Sky-lll27/DSH-chat-keeper](https://github.com/Sky-lll27/DSH-chat-keeper) — DSH 对话管家：跨工作区总表与批量归档、正文搜索，以及可恢复的回收站式删除。
+- [skysstst/dsh-independent-task](https://github.com/skysstst/dsh-independent-task) — 一键创建时间戳工作区文件夹并开启新会话，支持任务目录下拉选择与会话标题自动同步。
 - [sleeepingbeee/dsh-workspace-cleaner](https://github.com/sleeepingbeee/dsh-workspace-cleaner) — 在设置页列出所有工作区及其对话，勾选后按勾选内容删除对话或整个工作区，并一并清理对应的会话日志、投影缓存与工作区注册。
 - [SLin-code/dsh-task-notice-board](https://github.com/SLin-code/dsh-task-notice-board) — 面向 DSH Web 的任务级 Workspace 到 Task 到 Session 协作控制台，提供 Session 看板、归档对话查看，以及在关联 Session 之间共享的有界长期记忆。
 - [sluminositys/dsh-nested-followups](https://github.com/sluminositys/dsh-nested-followups) — 从任意层级的已完成回答持续创建隔离分支，主会话始终不受影响。
@@ -4688,6 +4692,7 @@ dsh plugin --profile web add dshmarket
 - [weiVc/dsh-session-tidy](https://github.com/weiVc/dsh-session-tidy) — 删除整个 DSH 会话，或只删除会话中某一轮已完成的对话：带二次确认、运行中 Agent 安全停止、路径与身份校验、改写前备份，后续轮次自动顺延。
 - [wenhao4126/dsh-session-delete](https://github.com/wenhao4126/dsh-session-delete) — DSH 会话管理：可归档或删除单个会话，工作区行可归档全部、恢复已归档或删除全部会话，设置页可查看/恢复/删除已归档会话；归档时备份工作区信息，恢复时自动恢复原工作区，原工作区被删除时自动重建。
 - [WenhongPan/dsh-projects](https://github.com/WenhongPan/dsh-projects) — 项目与会话整理工具：支持多文件夹组合、待处理状态摘要、分组聊天搜索、原生目录选择、置顶、收藏、排序和归档中心。
+- [wfz2006/dsh-agent-bridge](https://github.com/wfz2006/dsh-agent-bridge) — 在 DeepSeek Harness 中浏览本机其他 AI Agent 的项目：筛选置顶、勾选记忆与 Skills、带上近期会话，然后在原工作目录用可编辑的交接草稿继续开发，或导出为 Markdown。
 - [whiteS18/dsh-handoff-button](https://github.com/whiteS18/dsh-handoff-button) — 为每条 AI 回复添加 Handoff 按钮，点击后由 LLM 将当前会话总结为交接文档，写入该会话工作区的 handoff/ 目录。
 - [whybebabo/dsh-recent-sessions](https://github.com/whybebabo/dsh-recent-sessions) — 跨所有工作目录的扁平会话列表：显示最后一句提问、按时间分组、全文搜索，并让随手记下的想法在重开会话时提醒。是 huangxp12/dsh-recent-sessions 的重写分支，界面按原生样式重做；两者注册同一个 recent-sessions 面板 id，不要与原版同装。
 - [whyihaveyou/dsh-suite#plugin-session-export](https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-session-export) — 把 append-only 会话日志导出为按轨迹来源分组的可读 Markdown 或 HTML。
@@ -5528,7 +5533,7 @@ dsh plugin --profile web add dshmarket
 - [ColdRainLab/dsh-feature-check](https://github.com/ColdRainLab/dsh-feature-check) — DSH 启动自检：每次启动对比上次健康基线，报告丢失的 Loader 条目、客户端模块与被兼容性跳过的插件，升级后尤其有用。
 - [ColdRainLab/dsh-workspace-sync](https://github.com/ColdRainLab/dsh-workspace-sync) — 把工作区、会话记录与自动化任务同步到你自己的云端目录（网盘同步文件夹，后端可扩展），换机器登录后拉取即见。云端目录里是明文会话日志；被 dsh-workspace-vault 隐藏或加锁的工作区不会上传。
 - [coolbreezecoin/dsh-wechat-mp](https://github.com/coolbreezecoin/dsh-wechat-mp) — 把 markdown 变成排好版的微信公众号草稿：样式逐条内联到元素上（编辑器会丢弃 `<style>` 块和 class 名），每张本地图片走微信自己的上传接口以免被过滤，然后创建草稿；不做群发。
-- [CoolTea001/dsh-cool-terminal](https://github.com/CoolTea001/dsh-cool-terminal) — 终端插件 — 真 shell、工作区同步、状态常驻、常用命令管理、命令补全。
+- [CoolTea001/dsh-cool-plugins#dsh-cool-terminal](https://github.com/CoolTea001/dsh-cool-plugins/tree/master/plugins/dsh-cool-terminal) — 终端插件 — 真 shell、工作区同步、状态常驻、常用命令管理、命令补全、命令自启动。
 - [CooperZhuang/dsh-plugins-cooper-custom#dsh-folder-path](https://github.com/CooperZhuang/dsh-plugins-cooper-custom/tree/main/packages/dsh-folder-path) — 粘贴复制来的文件夹时插入完整路径文本，而不是尝试上传（支持 Windows 与 macOS）。
 - [CooperZhuang/dsh-plugins-cooper-custom#dsh-open-in-dsh](https://github.com/CooperZhuang/dsh-plugins-cooper-custom/tree/main/packages/dsh-open-in-dsh) — 从系统里用 DeepSeek Harness 打开文件夹：Windows 资源管理器右键动词、macOS Finder 快速操作与 QSpace 服务，以及负责启动或交接桌面端的 dsh-open 启动器。系统菜单需在安装插件后运行一次注册脚本（Windows 用 install-menu.ps1，macOS 用 install-macos.sh）才会出现。
 - [CooperZhuang/dsh-plugins-cooper-custom#dsh-rtk-slim](https://github.com/CooperZhuang/dsh-plugins-cooper-custom/tree/main/packages/dsh-rtk-slim) — 把超大 bash / job_output 文本交给外部 rtk 二进制压缩，原文写入 spill 文件供模型按需取回；rtk 缺失或失败时保留原文。
@@ -8731,7 +8736,7 @@ dsh plugin --profile web add dshmarket
 - [cherrchen/dsh-plugin-git](https://github.com/cherrchen/dsh-plugin-git) — Git 服务 + 右侧边栏 UI：Changes 页（暂存/取消暂存、逐文件 diff、提交/修补、推送与 rebase 同步、二次确认的丢弃）、分页 canvas 提交图谱页、Worktrees 页（列出/进入/新建工作树）、输入框旁分支选择器，以及可选的 LLM 提交信息生成。
 - [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) — 会话修改审查插件：追踪会话内 write/edit 工具调用并展示 diff 对比；会话隔离、子代理聚合、SSE 实时推送、角标与颜色自定义。
 - [cnHuaShao/dsh-gitee-enterprise](https://github.com/cnHuaShao/dsh-gitee-enterprise) — 在 Harness 侧栏提供 Gitee 企业版工作台：浏览项目及任务、需求、缺陷，查看详情、子任务、评论与 Markdown，支持新建或编辑工作项，并可通过 @ 引用。
-- [CoolTea001/dsh-cool-git](https://github.com/CoolTea001/dsh-cool-git) — Git 插件 —— 会话 Tab 栏添加 Git 管理功能，支持 commit | pull | push | branch | diff 等基础功能。
+- [CoolTea001/dsh-cool-plugins#dsh-cool-git](https://github.com/CoolTea001/dsh-cool-plugins/tree/master/plugins/dsh-cool-git) — Git 插件 —— 会话 Tab 栏中添加 Git 管理面板，变更、提交、历史、分支、远端同步、合并冲突一站完成，Message 可 AI 生成。
 - [crystal-hang/dsh-branch-flow](https://github.com/crystal-hang/dsh-branch-flow) — 输入框内的分支面板：按规范从 production6 切分支，按 type(scope) 约定校验提交信息，一键提交、推送并合并到 stage。
 - [cyrusgogogo/dsh-git](https://github.com/cyrusgogogo/dsh-git) — Git 面板，支持提交图、文件差异、分支与工作树管理，以及 AI 辅助生成提交说明预览。
 - [DamonKoy/dsh-web-ui#dsh-git-graph](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-git-graph) — dsh web GUI 会话头部栏的 Git 分支选择器与提交图。
