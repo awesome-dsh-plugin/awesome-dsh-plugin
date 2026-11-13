@@ -1,0 +1,7 @@
+url: https://github.com/clair0314/dsh-repo-watcher
+name: clair0314/dsh-repo-watcher
+category: git
+description:
+  en: "Watches GitHub repositories you choose and lists new or updated issues and pull requests inside DeepSeek Harness, with unread markers and a /watch command."
+  zh: "盯住你选择的 GitHub 仓库，把新增或有变化的 issue / PR 收进 DSH，带未读标记和 /watch 命令。"
+tarball: https://github.com/clair0314/dsh-repo-watcher/releases/download/v0.1.0/dsh-repo-watcher-0.1.0.tgz
