@@ -900,6 +900,7 @@ dsh plugin --profile web add dshmarket
 - [Hocete/dsh-skill-card](https://github.com/Hocete/dsh-skill-card) — 技能卡库：把已安装的 DSH 技能渲染成游戏卡牌，支持四种轮播模式浏览、按分类/来源/标签筛选，并可可视化修改稀有度、星数、五维数值、标签与卡面；卡牌数据存在旁路文件里，不改动 SKILL.md，同时支持新建与删除技能目录。
 - [hongcha-dsh/dsh-watchlist](https://github.com/hongcha-dsh/dsh-watchlist) — 在侧边栏对话列表上方增加关注区：每行一个状态圆点（未读、待回复、运行中、失败），有新回复的置顶、运行中的置底，模型选择器左侧还有关注按钮。点圆点标未读会把该行顶到最前，点开一行会自动展开并滚动到下方工作区列表里对应的那一行；每一轮结束都算未读，直到你打开这个对话；派出的子代理还在跑时父会话继续算运行中，等最后一个子代理结束才转成未读。
 - [HongMing-Huang/dsh-file-upload](https://github.com/HongMing-Huang/dsh-file-upload) — Claude 风格拖拽/回形针文件上传：内容嗅探、文档转 Markdown（微软 MarkItDown，内置 JS 兜底）、文本直插输入框、read_document 工具。
+- [hongshunanhai/dsh-subor-startup](https://github.com/hongshunanhai/dsh-subor-startup) — 小霸王风格的 DSH 开机动画：显像管通电、蓝屏雪花、「小霸王」逐字落下，一句「啊哈，DeepSeek 其乐无穷啊」之后，108 个经典 FC 游戏窗口像贪吃蛇一样铺满全屏，最后闪白渐黑进入应用。自动播放、可跳过、零配置。
 - [hongxin/dsh-tvision](https://github.com/hongxin/dsh-tvision) — Turbo Vision 式字符窗口管理器：带投影的重叠窗口、Borland 菜单栏、功能键提示条、鼠标拖拽缩放、模态审批对话框，五套皮肤含经典 Borland 蓝。
 - [honlnk/dsh-input-assist](https://github.com/honlnk/dsh-input-assist) — 输入框 ghost 补全：停笔后 FIM 建议内联流式渐显（SSE，首 token 即上屏），Tab 逐词采纳、Shift+Tab 全量，重新输入或 Esc 会真正取消在途请求；错别字双层检查：浏览器本地词典扫描（中文错词、英文错拼与专名大小写、本浏览器自定义词条）叠加防抖 LLM 上下文校对，文中红波浪线标注、逐条导航、点击修正。
 - [Hope2023Dcr/dsh-gallery](https://github.com/Hope2023Dcr/dsh-gallery) — 把 DSH 右侧栏变成产出目录的实时画廊，专门解决 DSH「只在任务结束时才列出产出文件、过程不可见」的问题：直接盯磁盘产出目录，文件一生成就能看到，方便在任务进行中校验与纠正。图片缩略图自动刷新、支持缩放拖动；文档、代码、数据、压缩包与链接点击即调用 DSH 原生侧栏预览；支持按「本对话产出」筛选；支持多扫描目录，兼容工作目录不在默认产出目录下的会话。零依赖。
