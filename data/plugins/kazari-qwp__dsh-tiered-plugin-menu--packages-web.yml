@@ -2,6 +2,6 @@ url: https://github.com/kazari-qwp/dsh-tiered-plugin-menu/tree/master/packages/w
 name: kazari-qwp/dsh-tiered-plugin-menu#web
 category: market
 description:
-  en: Configure DSH plugins, MCP servers and skills per client, workspace and session in the desktop and Web UI, with separate settings, inheritance and child defaults.
-  zh: 在桌面和 Web 界面按客户端、工作区和会话分层配置 DSH 插件、MCP 与 Skill，支持独立开关、不同配置、逐级继承及下级默认。
+  en: Configure DSH plugins, MCP servers and skills per client, workspace and session in the desktop and Web UI, with separate settings, inheritance, child defaults and an independently updatable shared core.
+  zh: 在桌面和 Web 界面按客户端、工作区和会话分层配置 DSH 插件、MCP 与 Skill，支持独立配置、逐级继承、下级默认及共享核心独立升级。
 tarball: https://github.com/kazari-qwp/dsh-tiered-plugin-menu/releases/download/v0.8.0/dsh-tiered-plugin-menu-0.8.0.tgz
