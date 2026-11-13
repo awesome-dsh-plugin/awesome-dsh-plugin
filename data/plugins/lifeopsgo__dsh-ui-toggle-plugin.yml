@@ -1,0 +1,6 @@
+url: https://github.com/lifeopsgo/dsh-ui-toggle-plugin
+name: lifeopsgo/dsh-ui-toggle-plugin
+category: ui
+description:
+  en: 'Adds a Settings section with six live switches for the DSH WebUI chrome: hide the brand area, keep only Settings at the sidebar foot, lay panel icons out horizontally, hide the New Session and collapse-sidebar buttons, and hide the composer placeholder.'
+  zh: 在设置中新增一个分区，提供六个界面开关：隐藏品牌区、左下角只留设置按钮、面板图标横排、隐藏「新会话」与「收起侧边栏」按钮、隐藏输入框占位文案。
