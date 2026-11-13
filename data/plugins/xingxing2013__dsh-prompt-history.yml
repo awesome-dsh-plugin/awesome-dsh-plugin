@@ -1,0 +1,9 @@
+# Target path in the awesome-dsh-plugin repository:
+#   data/plugins/xingxing2013__dsh-prompt-history.yml
+# (one file is the whole submission; the two READMEs are generated from it)
+url: https://github.com/xingxing2013/dsh-prompt-history
+name: xingxing2013/dsh-prompt-history
+category: ui
+description:
+  en: 'Prompt history kept by the plugin itself in the composer: Up recalls prompts sent earlier in this browser (newest first, then older), Down walks back toward the newest and restores the draft you had before the first Up, and Ctrl/Cmd+Shift+Backspace clears the list. History is shared across sessions and deduplicated, and the keys stay out of the / command menu, the @ file picker and IME composition.'
+  zh: '插件自己在输入框里保存的提示词历史：↑ 取回此浏览器中此前发过的提示词（由新到旧），↓ 往回走并在越过最新一条时恢复最初的草稿，Ctrl/Cmd+Shift+Backspace 清空历史。历史跨会话共享并自动去重，且不抢占 / 命令菜单、@ 文件选择与输入法组字。'
