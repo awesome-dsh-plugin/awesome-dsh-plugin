@@ -1,0 +1,6 @@
+url: https://github.com/vicfei/dsh-weknora-ops
+name: vicfei/dsh-weknora-ops
+category: tools
+description:
+  en: "The WeKnora write path for your dsh agent: document ingest, double-gated deletes and tag trees under a three-layer safety model, complementing the official read-only plugin. Cite, don't recall."
+  zh: "在 dsh 智能体中操作 WeKnora 的写入路径:文档摄取、双重门禁删除、标签树,三重安全模型——补齐官方只读插件不做的部分。引用,而非回忆。"
