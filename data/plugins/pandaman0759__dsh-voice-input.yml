@@ -1,0 +1,7 @@
+url: https://github.com/pandaman0759/dsh-voice-input
+name: pandaman0759/dsh-voice-input
+category: voice
+description:
+  en: Doubao streaming speech-to-text button in the DSH composer — one API key and your words land in the draft.
+  zh: 给 DSH 输入框加一个麦克风按钮，用豆包流式语音识别把说的话直接变成草稿文字，只填一个 API Key 就能用。
+icon: https://raw.githubusercontent.com/pandaman0759/dsh-voice-input/main/assets/icon-180.png
