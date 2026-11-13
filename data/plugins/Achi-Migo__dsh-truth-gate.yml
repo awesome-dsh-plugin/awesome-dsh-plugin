@@ -1,0 +1,6 @@
+url: https://github.com/Achi-Migo/dsh-truth-gate
+name: Achi-Migo/dsh-truth-gate
+category: security
+description:
+  en: Verifies coding-agent claims (tests passed, files edited) against shell and edit tool receipts; default shadow mode records only and does not steer.
+  zh: 用 shell/编辑工具回执核对 Agent「测试通过/改了文件」等声明；默认影子模式只记账不弹回。
