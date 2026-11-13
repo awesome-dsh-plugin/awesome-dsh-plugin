@@ -1,5 +1,6 @@
 # One entry per file; the generated READMEs are not edited by hand.
 url: https://github.com/jjjjjjjjnnjnn/dsh-remedy/tree/main/packages/plugin
+tarball: https://github.com/jjjjjjjjnnjnn/dsh-remedy/releases/latest/download/dsh-remedy.tgz # prebuilt: this bundle lives in a workspace monorepo, and a github: install cannot resolve workspace:* or the built dist/
 name: jjjjjjjjnnjnn/dsh-remedy#dsh-remedy
 category: dev
 description:
