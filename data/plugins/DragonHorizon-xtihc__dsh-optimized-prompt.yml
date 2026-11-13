@@ -1,0 +1,6 @@
+url: https://github.com/DragonHorizon-xtihc/dsh-optimized-prompt
+name: DragonHorizon-xtihc/dsh-optimized-prompt
+category: tools
+description:
+  en: Adds a sparkle button beside the send action that rewrites the current draft into a structured eight-section prompt and fills it back into the input box.
+  zh: 在发送按钮旁加一个闪光图标按钮，点一下就把当前草稿改写为含八个板块的结构化提示词并回填输入框。
