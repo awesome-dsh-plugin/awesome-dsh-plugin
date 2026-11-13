@@ -888,7 +888,7 @@ dsh plugin --profile web add dshmarket
 - [hmr-BH/dsh-round-rightclick](https://github.com/hmr-BH/dsh-round-rightclick) — 在 DSH Web 对话轮次上点击右键弹出的圆盘菜单：从此轮分叉出新会话、打断生成、复制工作目录路径与会话 ID、打开工作目录、导出会话日志。
 - [Hobartoakes/dsh-model-shelf](https://github.com/Hobartoakes/dsh-model-shelf) — 把聊天模型选择器换成按服务商分组的可折叠列表（最大 640x720），每款模型显示名称、服务商名称、服务商 ID 与精确模型 ID，另有手动整理的「不常用」列表和独立的收藏列表。分类只由用户决定：不统计使用频率、不自动分类。搜索覆盖模型名称、模型 ID、服务商名称、服务商 ID 与账号备注。
 - [Hocete/dsh-skill-card](https://github.com/Hocete/dsh-skill-card) — 技能卡库：把已安装的 DSH 技能渲染成游戏卡牌，支持四种轮播模式浏览、按分类/来源/标签筛选，并可可视化修改稀有度、星数、五维数值、标签与卡面；卡牌数据存在旁路文件里，不改动 SKILL.md，同时支持新建与删除技能目录。
-- [hongcha-dsh/dsh-watchlist](https://github.com/hongcha-dsh/dsh-watchlist) — 在侧边栏对话列表上方增加关注区：每行一个状态圆点（未读、待回复、运行中、失败），有新回复的置顶、运行中的置底，模型选择器左侧还有关注按钮。
+- [hongcha-dsh/dsh-watchlist](https://github.com/hongcha-dsh/dsh-watchlist) — 在侧边栏对话列表上方增加关注区：每行一个状态圆点（未读、待回复、运行中、失败），有新回复的置顶、运行中的置底，模型选择器左侧还有关注按钮。点圆点标未读会把该行顶到最前，点开一行会自动展开并滚动到下方工作区列表里对应的那一行；每一轮结束都算未读，直到你打开这个对话；派出的子代理还在跑时父会话继续算运行中，等最后一个子代理结束才转成未读。
 - [HongMing-Huang/dsh-file-upload](https://github.com/HongMing-Huang/dsh-file-upload) — Claude 风格拖拽/回形针文件上传：内容嗅探、文档转 Markdown（微软 MarkItDown，内置 JS 兜底）、文本直插输入框、read_document 工具。
 - [hongxin/dsh-tvision](https://github.com/hongxin/dsh-tvision) — Turbo Vision 式字符窗口管理器：带投影的重叠窗口、Borland 菜单栏、功能键提示条、鼠标拖拽缩放、模态审批对话框，五套皮肤含经典 Borland 蓝。
 - [honlnk/dsh-input-assist](https://github.com/honlnk/dsh-input-assist) — 输入框 ghost 补全：停笔后 FIM 建议内联流式渐显（SSE，首 token 即上屏），Tab 逐词采纳、Shift+Tab 全量，重新输入或 Esc 会真正取消在途请求；错别字双层检查：浏览器本地词典扫描（中文错词、英文错拼与专名大小写、本浏览器自定义词条）叠加防抖 LLM 上下文校对，文中红波浪线标注、逐条导航、点击修正。
@@ -4617,7 +4617,7 @@ dsh plugin --profile web add dshmarket
 - [TianYa-DAO/dsh-pinned-sessions](https://github.com/TianYa-DAO/dsh-pinned-sessions) — 把运行中、跑完未点开和当前打开的会话固定在 DSH Web 侧栏工作区分组上方，并可从任意会话/工作区的「...」菜单里全局置顶。
 - [TiFu799/dsh-wake-up](https://github.com/TiFu799/dsh-wake-up) — 按需叫醒休眠的 DSH 会话：当前没活着的会话会带着它上次用的 provider/model 路由从磁盘 resume 回来，让 QQ 通道、定时任务、webhook、别的插件这类外部集成能正常投递，而不是撞上「那间会话现在没活着」。提供 HTTP 端点、wake_session 工具和 ctx.wakeUp 服务；resume 只把历史读回内存，本身不消耗模型请求。
 - [TiJun-Prime/dsh-turn-delete](https://github.com/TiJun-Prime/dsh-turn-delete) — 从 DSH 会话中删除一个已结束的轮次而不删除会话本身——最后一条助手回复旁的垃圾桶按钮会把该轮的提问、这条回复与工具记录从对话界面和模型上下文中移除，而 Session id、标题、之后的轮次与只追加日志保持不变；删除以持久 tombstone 记录，刷新后依然生效。
-- [timefarer/dsh-chat-search](https://github.com/timefarer/dsh-chat-search) — 按段落与文件名检索当前或全部会话，支持日期与轮次筛选，跳转后高亮命中词。默认只搜最近 14 天、每个会话最近 30 轮，清空某项限制即可不限。
+- [timefarer/dsh-chat-search](https://github.com/timefarer/dsh-chat-search) — DSH 全局搜索与会话搜索插件：在所有会话或当前会话中搜索聊天记录，同时检索正文段落与文件名——忘了内容、只记得文件名也能找到。支持按日期范围与每个会话的最近轮次筛选、过滤，结果按“会话 → 问题 → 段落”展开，跳转后自动定位并高亮命中词。默认只搜最近 14 天、每会话最近 30 轮，清空任一项即可不限范围。
 - [tingfeng-droid/dsh-compaction-vcc](https://github.com/tingfeng-droid/dsh-compaction-vcc) — 用确定性文本编译取代 LLM 摘要，压缩过程不调模型、只搬运原文，被省略的内容可凭 seq 指针取回。基于 TsFreddie/dsh-compaction-instant。
 - [tinyblckc0000al/dsh-deepworker](https://github.com/tinyblckc0000al/dsh-deepworker) — DSH 会话工作台：轮次操作、引用出处、本地笔记与摘要、会话内查找、专注锁和多工作区命令按钮。
 - [TLEWA/dsh-fastload](https://github.com/TLEWA/dsh-fastload) — 把长会话首次打开时的历史页缩小到默认最多 100 条消息、尽量保留最新 2 个 turn；缩小的记录短于视口时，Web 端在后台调用内置「加载更早」把视口补齐。
@@ -5364,7 +5364,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-subagent-antigravity](https://github.com/ALAMBICCO/dsh-subagent-antigravity) — 将 DeepSeek Harness 原生 subagent_fork 子智能体会话路由至 Google AI Pro (Antigravity) 订阅（支持 Gemini 3.8 Flash、Claude Sonnet 5.5、Claude Opus 5.5、GPT-OSS 120B）：零 API 费用、实时流式输出、完整工具调用、并行前缀缓存预热、200ms HTTPS 配额查询，以及聊天栏右上角配额按钮与侧滑模型/推理强度设置面板。
 - [albisjee25/albis-aipassport-homework](https://github.com/albisjee25/albis-aipassport-homework) — AI Passport 作业助手：把作业截图整理成清单，设备上逐项倒计时、按住说话，并提供家长后台。默认会在 0.0.0.0:8787 上开自己的 HTTP 服务，让同一 Wi-Fi 下的设备能连：家长后台只接受本机连接，设备要在你批准配对码后拿到令牌才能访问。
 - [aldveylor/dsh-intellisense](https://github.com/aldveylor/dsh-intellisense) — 一个用于管理工具集的命名空间管理工具，支持自动发现与集成，用于节省token的消耗还会在受限 Node 运行时执行 TypeScript 与 JavaScript，按需通过命名空间调用工具。
-- [Alec6636/dsh-portable-workspace](https://github.com/Alec6636/dsh-portable-workspace) — 移动工作区：把 DSH 的会话、插件、工程与交付完整放进移动硬盘 / U 盘，换电脑插上即用。独立便携 web 实例各自插件配置；盘符无关识别、脱机可用；scrypt 密码 + 一次性恢复密钥 + 密码提示；缺插件一键装、按清单重装；跨盘·本机会话双向迁移 + .zip 备份恢复 + 改名；升级友好、零依赖。可选「同步本机登录」。每台电脑都需安装 DSH 和本插件；仅在 Windows 上验证过（按盘符识别移动盘）。工作区密码只限制插件内的操作、并不加密盘上文件；可选的「同步本机登录」会把 DeepSeek 账号凭据以明文 YAML 复制到盘上。
+- [Alec6636/dsh-portable-workspace](https://github.com/Alec6636/dsh-portable-workspace) — 移动工作区：① 100% 不落本地， 会话、插件、工程与日志 全放在 移动盘/U盘。便携工作，不惧换电脑、不惧重装系统；②独立便携 web 实例，可多开、独立插件配置环境；③盘符无关识别 + 脱机；④密码防隐私、防误删， 不加密数据（安全）；⑤缺插件一键按清单重装，可剔除的清单；⑥跨盘·本机会话双向迁移 + .zip 备份恢复 + 改名；⑦升级友好、零依赖、离线可用。⑧可选的「同步本机登录」⑨自清理过期失效的cookie。
 - [alexltr/dsh-vba-bridge](https://github.com/alexltr/dsh-vba-bridge) — 通过真实 Excel COM 读写、导出并校验 Excel VBA 工程：模块、窗体代码、过程清单与 .frm/.frx 导出。仅 Windows：需安装桌面版 Excel、Python 3.10+（含 pywin32），并设置 AccessVBOM=1。
 - [Algorandius/dsh-disk-janitor](https://github.com/Algorandius/dsh-disk-janitor) — DSH 磁盘清理插件：看清磁盘占用都花在哪，只清理可以安全重建的部分，正在使用中的资源始终保留。
 - [Aliang-code/dsh-fusion-lean#fusion-lean](https://github.com/Aliang-code/dsh-fusion-lean/tree/master/packages/fusion-lean) — 把 Fusion 360 接进 DSH：桥接 Fusion 自带的 MCP 服务（读取、执行、更新、电子设计），上游 schema 逐字节保留而常驻工具面减少 70%，设置页可改端点，并把本地 hf.py 建模闭环包成九个 hf_* 工具（需要 Python 3.10+ 与 fusion-harness 工作区）。
@@ -7792,7 +7792,7 @@ dsh plugin --profile web add dshmarket
 - [konglong87/dsh-skills-input](https://github.com/konglong87/dsh-skills-input) — DSH composer 界面：搜索当前会话可手动调用的 Skill，并将宿主可识别的斜杠命令写入草稿，不自动发送。
 - [kouyichi/dsh-plugins#dsh-learn](https://github.com/kouyichi/dsh-plugins/tree/main/dsh-learn) — dsh 自我学习闭环：记录经验、生成并发布技能，定期审查修正、合并与退役技能。
 - [KratosLee-6/dsh-plugin-spark](https://github.com/KratosLee-6/dsh-plugin-spark) — 把两个技能契约本地组合成可追溯的未验证草案，列出缺口并保留双方约束；组合引擎在本机运行，不调用模型。
-- [kulebbb/dsh-context-optimize](https://github.com/kulebbb/dsh-context-optimize) — DSH 左侧栏「Skill 管理」：列出全局与项目级 skill 的调用次数、最近使用时间与估算占用 tokens，支持把 skill 目录移入同级可逆的 skill-archive 归档、以及一键还原。
+- [kulebbb/dsh-context-optimize](https://github.com/kulebbb/dsh-context-optimize) — DSH 左侧栏「Skill 管理」：列出全局与项目级 skill 的调用次数、最近使用时间与估算占用 tokens，支持把 skill 目录移入同级可逆的 skills-archived 归档、以及一键还原。
 - [lau4tin1/dsh-skill-router](https://github.com/lau4tin1/dsh-skill-router) — DeepSeek Harness 的 skill 路由插件：用本地模型为 skill 和用户任务生成向量，按基于分差的规则保留明确相关的 skill，并自动把它们的完整正文注入提示词。
 - [LayneChai/superpowers-dsh](https://github.com/LayneChai/superpowers-dsh) — DeepSeek Harness 版 Superpowers 技能包：移植自 obra/superpowers 的 TDD、调试、规划与协作技能，以 Cordis 插件安装并注册 14 个技能（零运行时依赖）。
 - [Liao199/dsh-medical-device-skills](https://github.com/Liao199/dsh-medical-device-skills) — 把 MedXpert 技能集合（zhaoxinghua09-cell/medxpert-skills，Apache-2.0）打包为 21 个医疗器械法规技能，覆盖 NMPA、FDA、EU MDR 与 PMDA；请勿重复安装同一套技能。
@@ -10077,7 +10077,7 @@ dsh plugin --profile web add dshmarket
 - [xiezouqu12/dsh-info-records](https://github.com/xiezouqu12/dsh-info-records) — 本机加密的 DeepSeek Harness 账密库：侧边栏管理记录，智能体登录前按站点取用；对话收录默认关闭，逐条可设仅手动；AES-256-GCM 加密，密钥由 Windows DPAPI / macOS 钥匙串 / Linux Secret Service 保护。
 - [xlennart/dsh-auto-review-jev](https://github.com/xlennart/dsh-auto-review-jev) — 面向 DSH ^0.2.2-rc.1 的 Jev Review 审批模式：通过 System One（Jev／D3）逐次审查原生及 PTC 内层工具调用，提供审计日志和设置页；需配套 Jev 宿主扩展。fork 自 gbthui/dsh-auto-review；请勿与上游同装，两者都会接管工具调用的审批判定。
 - [xtd1145/dsh-full-access-switch](https://github.com/xtd1145/dsh-full-access-switch) — 给 DeepSeek Harness 加 Full access 一次性开关：新工作区与新对话默认 danger-full-access 并跳过逐个确认；可作为 dsh bundle 安装，也可用脚本打补丁。
-- [xuanyuanchumo/dsh-recency-guard](https://github.com/xuanyuanchumo/dsh-recency-guard) — DeepSeek Harness 的插件崩溃恢复守护：记录插件的安装更新时序与声明的兼容元数据，崩溃后在下一次启动前拦下问题嫌疑插件，稳定后自动恢复。带可交互能力图谱、只观测不行动的预警指标、按项目分区隔离、归档重置与离线救援 CLI。
+- [xuanyuanchumo/dsh-recency-guard](https://github.com/xuanyuanchumo/dsh-recency-guard) — DeepSeek Harness 的插件崩溃恢复守护：记录插件的安装/更新时序与声明的兼容性元数据，崩溃后在下一次启动前拦下嫌疑插件；自动禁用升级到顶仍崩溃时，级联回滚到崩溃前的插件启动状态（仅保留头号嫌疑关闭）。附带可交互能力图谱与影响面分析、每次守护动作的执行操作记录、只观测不干预的早期预警指标、按项目分区隔离、归档重置与离线救援 CLI。
 - [YangHua-ovo/dsh-secure-memory](https://github.com/YangHua-ovo/dsh-secure-memory) — 跨工作区安全记忆：本地优先、加密的 DSH 跨工作区记忆插件，具备逐会话授权与提示词注入隔离功能。
 - [Yazzyk/dsh-file-shield](https://github.com/Yazzyk/dsh-file-shield) — 屏蔽 agent 对指定文件或目录的读取、搜索、写入与编辑，使其内容不进入对话——含敏感词的文件也在其中，避免它们的文字让之后的 provider 请求以 400 失败。规则在插件页面上点选。
 - [Yersi88/dsh-ollama-tool-guard](https://github.com/Yersi88/dsh-ollama-tool-guard) — 每次工具调用前由本机 Ollama 决策模型判定：可疑调用升级为确认提示，模型不可达时停止所有调用。需 DSH 0.2.x，并先装好本机 Ollama 0.35.1+、拉取默认约 6 GB 的 clef-flash 模型；否则所有工具调用都会被拒绝。
