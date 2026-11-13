@@ -1,0 +1,7 @@
+url: https://github.com/2031814001yuyue-tech/dsh-card-tree
+name: 2031814001yuyue-tech/dsh-card-tree
+category: session
+description:
+  en: Grows a conversation into an editable card tree where each card is one self-contained question and answer, with child cards, same-level branches and in-card follow-ups, and an overview for dragging, re-hanging, cross-referencing or pruning the graph.
+  zh: 把对话长成一棵可编辑的卡片树：每张卡片是独立成篇的一问一答，可以派生深入卡片、同层分支或卡内追问；全览里能拖动节点、改父级、连引用虚线、删节点或分支。
+icon: https://raw.githubusercontent.com/2031814001yuyue-tech/dsh-card-tree/main/docs/icon-512.png
