@@ -1,0 +1,6 @@
+url: https://github.com/Derek-Y-JQ/knowledge-galaxy
+name: Derek-Y-JQ/knowledge-galaxy
+category: memory
+description:
+  en: 'Knowledge collection board for DeepSeek Harness: file chat answers, papers and notes into per-mode boards (study, academic, daily), browse them as a grouped kanban, timeline or calendar, link cards to each other, and roam a per-mode star map; ships an agent tool for adding and linking cards and scheduled collection tasks.'
+  zh: 'DeepSeek Harness 的知识收录看板：把对话答案、论文与随手笔记收录进学习/学术/日常三种模式，用分组看板、时间轴或日历浏览，卡片之间可建立联系并在单星系星图里漫游；另提供 agent 工具与定时收录任务。'
