@@ -1,0 +1,6 @@
+url: https://github.com/feifandiv/dsh-unread-badge
+name: feifandiv/dsh-unread-badge
+category: notify
+description:
+  en: Unread awareness — a Dock badge count for replies you have not opened, plus one coloured dot per workspace row (red error, green unread, blue running) that stays visible while the group is collapsed.
+  zh: 未读提醒：Dock 图标数字角标，加上工作区标题行的彩色点（红=出错、绿=完成未读、蓝=运行中），折叠也可见；不出声，可与通知类插件共存。

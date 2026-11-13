@@ -1,0 +1,6 @@
+url: https://github.com/feifandiv/dsh-skill-cn
+name: feifandiv/dsh-skill-cn
+category: ui
+description:
+  en: Search skills by their Chinese name inside the `/` menu and insert the real English skill name (for example `/与神对话` → `ff-yushen-duihua`).
+  zh: 在 `/` 菜单里按中文技能名搜索：输入 `/与神对话` 命中 `ff-yushen-duihua`，选中插入真实英文技能名。
