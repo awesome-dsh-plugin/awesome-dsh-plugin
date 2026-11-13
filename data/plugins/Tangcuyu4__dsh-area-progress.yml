@@ -1,0 +1,6 @@
+url: https://github.com/Tangcuyu4/dsh-area-progress
+name: Tangcuyu4/dsh-area-progress
+category: tools
+description:
+  en: "Cross-workspace task progress viewer: an all-area overview, per-session progress details, and an exception and todo sweep across every workspace, reading session logs read-only with no writes and no network calls."
+  zh: "跨工作区任务进度查看器：全区概览、逐会话进度详情、异常与待办扫描，一个插件看遍所有工作区，只读会话日志，不改写不外发。"

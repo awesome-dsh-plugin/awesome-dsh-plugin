@@ -1,0 +1,6 @@
+url: https://github.com/Tangcuyu4/dsh-im-alive
+name: Tangcuyu4/dsh-im-alive
+category: notify
+description:
+  en: "Proactive IM messaging daemon: sends casual check-in messages on a jittered schedule with quiet hours, a daily budget and dedup, each message improvised by an LLM from persona, long-term memory and time context, delivered through the dsh-im plugin."
+  zh: "IM 主动消息守护进程：按抖动间隔不定时发家常主动消息（免打扰时段、日预算、防重复），内容由 LLM 结合人设、长期记忆与时间语境即兴生成，经 dsh-im 投递。"
