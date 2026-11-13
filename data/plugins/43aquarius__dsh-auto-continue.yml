@@ -1,0 +1,6 @@
+url: https://github.com/43aquarius/dsh-auto-continue
+name: 43aquarius/dsh-auto-continue
+category: session
+description:
+  en: 'Automatically resumes an interrupted session when a model request fails: probes a healthy fallback model, switches the session to it durably, and continues the task.'
+  zh: '模型请求失败（限流、用量耗尽等）时自动续接会话：探测可用的备选模型并持久切换，补发一条续接消息让任务原地继续。'
