@@ -1,0 +1,5 @@
+url: https://github.com/kuznecov-anatoliy/dsh-opencode-classic-sidebar
+name: kuznecov-anatoliy/dsh-opencode-classic-sidebar
+category: ui
+description:
+  en: 'Classic pre-redesign OpenCode sidebar layout: a project column next to the selected project''s session list with pin, rename, fork, copy id and archive, an archive view, Windows caption-strip panel buttons and an account balance chip.'
