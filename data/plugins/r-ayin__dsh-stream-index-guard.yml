@@ -1,0 +1,7 @@
+url: https://github.com/r-ayin/dsh-stream-index-guard
+name: r-ayin/dsh-stream-index-guard
+category: dev
+description:
+  en: 'Patches the LLM assistant-stream accumulator at runtime to clamp invalid chunk indices, downgrading hard stream failures to dropped or merged chunks; ships a stats tool.'
+  zh: 'LLM 流索引守卫：运行时补丁 AssistantStreamAccumulator.push，把非法 index 的流 chunk 钳到最近有效值，硬失败降级为丢弃/归并，附统计工具。'
+tarball: https://github.com/r-ayin/dsh-stream-index-guard/releases/download/v0.0.2/dsh-stream-index-guard-0.0.2.tgz

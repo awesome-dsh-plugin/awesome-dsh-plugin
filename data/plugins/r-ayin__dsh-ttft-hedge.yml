@@ -1,0 +1,7 @@
+url: https://github.com/r-ayin/dsh-ttft-hedge
+name: r-ayin/dsh-ttft-hedge
+category: dev
+description:
+  en: 'Hedged requests for streaming /v1/messages LLM calls: fires a second attempt when response headers miss a deadline and races them, retries immediately on 5xx/504, passes through 4xx/429, with statistics.'
+  zh: 'TTFT 对冲：对 /v1/messages 流式请求做 hedged request，deadline 内未收到响应头则并行第二请求先到先用；5xx/504 立即重抽，附统计。'
+tarball: https://github.com/r-ayin/dsh-ttft-hedge/releases/download/v0.0.2/dsh-ttft-hedge-0.0.2.tgz
