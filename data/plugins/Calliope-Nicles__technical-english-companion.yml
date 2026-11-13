@@ -1,0 +1,8 @@
+url: https://github.com/Calliope-Nicles/technical-english-companion
+name: Calliope-Nicles/technical-english-companion
+category: identity
+description:
+  en: 'Technical English Companion helps developers learn technical English in Chinese conversations. It introduces English terms with a Chinese gloss and reuses the English name within each reply. Supports Codex and macOS DSH 0.2.1-rc.3 or 0.2.2-rc.1.'
+  zh: '专业英语术语伴学帮助开发者在中文对话中学习专业英语。每条回答首次出现术语时附中文释义，随后沿用英文名称。支持 Codex 和 macOS 上的 DSH 0.2.1-rc.3 或 0.2.2-rc.1。'
+icon: https://raw.githubusercontent.com/Calliope-Nicles/technical-english-companion/v2.0.2/assets/pitaya-icon.png
+tarball: https://github.com/Calliope-Nicles/technical-english-companion/releases/download/v2.0.2/dsh-plugin-technical-english-companion-2.0.2.tgz
