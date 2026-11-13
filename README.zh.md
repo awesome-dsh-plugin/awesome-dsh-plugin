@@ -9588,6 +9588,7 @@ dsh plugin --profile web add dshmarket
 - [henrytian1998/dsh-doctor](https://github.com/henrytian1998/dsh-doctor) — 诊断 DSH home、残留进程、端口与过大 session，并生成可粘贴的 /doctor 报告。
 - [heyitaowml-ctrl/dsh-vscode-bridge#dsh-vscode-bridge](https://github.com/heyitaowml-ctrl/dsh-vscode-bridge/tree/master/dsh-vscode-bridge) — 把 VS Code 的选区或文件路径以 @路径（含行号范围）插入当前 DSH 对话的输入框，不自动发送；需安装随包附带的 VS Code 扩展（.vsix，可在输入框一键安装或手动安装）。
 - [hezhongtang/dsh-update-copilot](https://github.com/hezhongtang/dsh-update-copilot) — DeepSeek Harness 的更新助手：一次扫描覆盖 DeepSeek Harness 本体和每个 profile 的插件，说清改了什么、风险多大，只更新你确认过的那些。
+- [hg1048596-pixel/dsh-incremental](https://github.com/hg1048596-pixel/dsh-incremental) — 只读增量 AI 代码审查，声明任务依赖、复用符合条件的结果，并在输入变化后重跑受影响的任务。
 - [himi-li/dsh-reasoning-loop-guard](https://github.com/himi-li/dsh-reasoning-loop-guard) — 在推理流开始自我重复时提前中断本轮，避免长时间卡死：对推理文本做五条判据（周期单元、重复块、带占比下限的重复行、64-gram 密度、末尾超长标点或空白段），并附带 JSONL 触发日志、Web GUI 日志面板，以及可选的重试恢复（带纠正消息）。
 - [hjj345/dsh-sm-version-display](https://github.com/hjj345/dsh-sm-version-display) — 在侧边栏显示已安装的 DeepSeek Harness 版本，检查 npm 与 GitHub Releases 更新，并提供手动或确认后执行的更新命令。
 - [Hochan666/dsh-tiedan-update](https://github.com/Hochan666/dsh-tiedan-update) — 在 DSH 通用设置里加两行。版本更新到 npm 注册表查 @deepseek-ai/dsh 的新版本，以后台任务安装并把安装输出实时回显到设置行；重启 DSH 会停掉当前进程，交给它的守护进程重新拉起。重复的重启请求会被拒绝，systemd 单元取不到主进程时宁可拒绝执行，也不在旁边另起一个实例。设置行还会显示进程已运行时长与身份标识，用来区分「页面重连」和「服务真的重启了」。
