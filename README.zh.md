@@ -2236,6 +2236,7 @@ dsh plugin --profile web add dshmarket
 - [yuna78/dsh-quick-resume](https://github.com/yuna78/dsh-quick-resume) — 在 DSH 输入框底栏放一排可自定义的快捷语按钮：点一下发送「请继续」等快捷语，把卡住的 agent 一键叫醒，且不覆盖你写了一半的草稿。
 - [YunLiZeMeng/dsh-window-control](https://github.com/YunLiZeMeng/dsh-window-control) — 如果你嫌每次打开 Harness 都要手动全屏，这个插件可以帮你自动铺满：启动时自动最大化（保留右上角窗口按钮）或真全屏；随时可最大化／还原／最小化／窗口置顶；退出前弹原生确认框，快捷键可选 Esc、双击 Esc 或 Ctrl+Q，且全屏下 Esc 先退出全屏。窗口通道由插件自己安装，无需脚本或 Python，首次安装需重启两次 DSH 生效。
 - [yunxiao11xie/dsh-compact-header](https://github.com/yunxiao11xie/dsh-compact-header) — 收紧会话头部，宽窗口时把 View 标签行并入标题行，在角落显示本地时钟与会话统计，并隐藏输入框下方重复的统计气泡。
+- [yunxiao11xie/dsh-context-meter](https://github.com/yunxiao11xie/dsh-context-meter) — 把上下文用量圆环从输入卡片下方独占一行的位置搬进输入框工具行（闪电按钮旁）：同样的圆环与百分比（contextPressure 投影），生成回复期间也常驻不消失；点击展开「系统提示 / 工具 / 对话」占比明细与 ~已用/窗口 token 数。
 - [yunxiao11xie/dsh-prompt-chips](https://github.com/yunxiao11xie/dsh-prompt-chips) — 在输入框工具行加一个闪电按钮菜单，点击即可把常用提示词插入光标处；四条默认提示可自行编辑，只保存在浏览器里。
 - [yunxiao11xie/dsh-sidebar-compact](https://github.com/yunxiao11xie/dsh-sidebar-compact) — 侧栏紧凑化：宽栏模式下把全局面板行（插件 / 插件市场 / 自动化任务 / 上下文洞察 / Dream 记忆 / 更多）和底部功能入口（论文伴读、远程控制等）排成每行两个，把竖直空间还给工作区会话列表；收起成图标列时保持官方竖排布局。纯 CSS，不联网、不调模型。
 - [yunxiyang/dsh-wide-conversation](https://github.com/yunxiyang/dsh-wide-conversation) — 把 DSH Web 客户端对话列宽度设为其自身宽度的百分比（40–100，默认 100 即铺满整列），取代内置的 680–920px 阅读宽度，并在「设置 > 插件」中提供可折叠的调整卡片。
@@ -5931,6 +5932,8 @@ dsh plugin --profile web add dshmarket
 - [JOJO-Adam/dsh-opc-ops](https://github.com/JOJO-Adam/dsh-opc-ops) — DeepSeek Harness 的一人公司运营 SOP：8 字段建公司档案，晨报→两档执行→晚报的日循环，台账与现金流快照口径，报价/合同/日报形状，以及六条红线与待发池人审。
 - [jokerkenny00137/dsh-plugin-wallpaper-cleanup](https://github.com/jokerkenny00137/dsh-plugin-wallpaper-cleanup) — 对照“我的订阅壁纸”截图清理 Wallpaper Engine 工坊文件夹：识别蓝色勾选、OCR 磁贴标题并与 project.json 匹配，把非订阅壁纸移入回收站；带设置页与悬浮模态框，仅支持 Windows。
 - [jsoncode/dsh-jenkins](https://github.com/jsoncode/dsh-jenkins) — 管理多台 Jenkins 服务器，支持从设置页、模型工具或工作区级「执行 Jenkins Job」入口触发构建，宿主 + 浏览器双端、界面中英双语。
+- [jszjdyt/dsh-geobulk](https://github.com/jszjdyt/dsh-geobulk) — GEO 与 bulk 转录组分析工作台，后端为本地 Python 与 R 引擎：检索下载 GEO 系列、导入自有 counts/TPM 矩阵，再做质控、过滤、标准化、去批次、PCA、差异表达、GO/KEGG/GSEA 富集、免疫浸润、生存与预后分析、把分子签名映射到单细胞数据，以及 circRNA、miRNA、lncRNA、融合基因与可变剪接模块。
+- [jszjdyt/singlecell-full-workflow](https://github.com/jszjdyt/singlecell-full-workflow) — 单细胞 RNA-seq 分析工作台，界面按钮与 agent 工具共用同一套实现：导入 h5ad、10x、loom、Seurat RDS 与压缩包，跑质控、过滤、标准化、高变基因、PCA、邻居图、聚类、UMAP/t-SNE、标记基因与细胞类型注释，提供分辨率扫描与标记基因面板，并导出 h5ad、结果表与报告。
 - [JularDepick/dsh-question-timeout-protection](https://github.com/JularDepick/dsh-question-timeout-protection) — dsh提问超时保护插件: 一旦模型提问超时,将你的回答草稿保留在UI或上下文中,而不是直接丢弃。
 - [JularDepick/dsh-system-monitor-plugin](https://github.com/JularDepick/dsh-system-monitor-plugin) — 监控dsh进程及其派生子进程的资源占用,并以面板图表报告整机与各会话的CPU与内存占用
 - [JularDepick/dsh-wakatime-plugin](https://github.com/JularDepick/dsh-wakatime-plugin) — 将DSH的每一次Agent交互量化为可视化表现指标并自动同步至WakaTime,用数据展示你与Agent协作的生产力
@@ -8821,6 +8824,7 @@ dsh plugin --profile web add dshmarket
 - [caozeal/dsh-plugins#dsh-next-git](https://github.com/caozeal/dsh-plugins/tree/main/dsh-next-git) — DSH Web 右侧边栏的 Git tab，跟随当前会话的仓库：下拉切换本地/远程分支（带 ahead/behind），按 staged/unstaged/untracked/conflicted 分组暂存，提交、fetch、pull、push（无 upstream 时自动建跟踪分支），用默认模型按已暂存 diff 起草约定式提交信息（模型不可用时降级为普通 chore 文案），并以每条分支一种颜色的形式渲染 git log --graph 和词级高亮的 diff。
 - [Cerbur/clutch-dsh#clutch-dsh-worktree](https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-worktree) — 为 DSH Web UI 增加按 Git Worktree 组织 Session 的视角，同时继续由 DSH 管理原始 Project 和 Session 数据。
 - [cherrchen/dsh-plugin-git](https://github.com/cherrchen/dsh-plugin-git) — Git 服务 + 右侧边栏 UI：Changes 页（暂存/取消暂存、逐文件 diff、提交/修补、推送与 rebase 同步、二次确认的丢弃）、分页 canvas 提交图谱页、Worktrees 页（列出/进入/新建工作树）、输入框旁分支选择器，以及可选的 LLM 提交信息生成。
+- [choukin/sh-plugin-git-graph](https://github.com/choukin/sh-plugin-git-graph) — DSH 右侧栏的只读 Git 图谱标签页：彩色分支/合并泳道，HEAD / 分支 / 标签 / 远程徽标，提交详情含变更文件树与单文件 diff，行虚拟化、大量提交也翻页流畅；输入框里还有一枚分支胶囊，可搜索本地与远程分支并切换，切换前会检查未提交改动、已被其他 worktree 检出、进行中的 merge / rebase，会覆盖改动时直接拒绝。
 - [cirelir/dsh-change-review](https://github.com/cirelir/dsh-change-review) — 会话修改审查插件：追踪会话内 write/edit 工具调用并展示 diff 对比；会话隔离、子代理聚合、SSE 实时推送、角标与颜色自定义。
 - [cnHuaShao/dsh-gitee-enterprise](https://github.com/cnHuaShao/dsh-gitee-enterprise) — 在 Harness 侧栏提供 Gitee 企业版工作台：浏览项目及任务、需求、缺陷，查看详情、子任务、评论与 Markdown，支持新建或编辑工作项，并可通过 @ 引用。
 - [CoolTea001/dsh-cool-plugins#dsh-cool-git](https://github.com/CoolTea001/dsh-cool-plugins/tree/master/plugins/dsh-cool-git) — Git 插件 —— 会话 Tab 栏中添加 Git 管理面板，变更、提交、历史、分支、远端同步、合并冲突一站完成，Message 可 AI 生成。
