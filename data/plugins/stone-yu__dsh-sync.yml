@@ -1,6 +1,7 @@
 url: https://github.com/stone-yu/dsh-sync
 name: stone-yu/dsh-sync
 category: tools
+tarball: https://github.com/stone-yu/dsh-sync/releases/download/v1.0.0/dsh-sync-1.0.0.tgz
 description:
   en: 'Backs up and syncs DSH configuration, model routes, MCP rows, plugin inventory, skills, memory and chosen directories to a WebDAV server on a NAS. Each scope carries its own direction — off, push, pull or two-way — uploads are incremental by file content hash, and a two-way conflict keeps both copies instead of merging.'
   zh: '把 DSH 的配置、模型路由、MCP 装载行、插件清单、技能、记忆和自选目录备份到 NAS 的 WebDAV 目录。每个内容项可单独设置方向（关闭 / 上传备份 / 下载还原 / 双向同步），上传按文件内容哈希增量进行，双向冲突时保留双方副本而不做文本合并。'
