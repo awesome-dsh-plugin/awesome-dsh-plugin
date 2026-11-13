@@ -1,0 +1,6 @@
+url: https://github.com/Geang-yy/dsh-senses
+name: Geang-yy/dsh-senses
+category: voice
+description:
+  zh: "给 DSH 的 agent 装上三样感官，合成一个插件。眼睛：按需截一张屏（全屏/当前窗口/半个屏），能只取文字省 token，截图后清理旧图；嘴：把回复念出来，念之前先洗文字、把书面腔换成口头词，并按当天心情决定语气词和语速——开心带「呀」、难过先叹一口气；耳朵：常驻听唤醒词，用声纹只认主人的声音，自己说话时挂个牌子让耳朵闭嘴，挂了会自动重启。三样在设置页里各有开关，全程本地，不依赖云服务。"
+  en: "Three senses for a DSH agent in one plugin. Eyes: screenshot on demand (full screen / active window / half a widescreen), optional local OCR to return text instead of an image, and old shots cleaned up automatically. Mouth: reads replies aloud after normalizing written Chinese into spoken phrasing, and picks sentence-ending particles plus rate and pitch from the day's mood — bright up, low gets a sigh first. Ears: always-on wake word with speaker verification so only the owner's voice triggers it; a self-speech flag keeps it from hearing its own TTS, and the listener auto-restarts if it dies. Each sense has its own switch in the settings page. Runs entirely local, no cloud dependency."
