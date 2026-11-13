@@ -1,5 +1,5 @@
-url: https://github.com/skillpie/dsh-plugins/tree/main/dsh-market
-name: skillpie/dsh-plugins#dsh-market
+url: https://github.com/skillpie/dsh-plugins/tree/main/dsh-skillpie
+name: skillpie/dsh-plugins#dsh-skillpie
 category: skill
 description:
   en: 'Skill marketplace in the DSH sidebar: browse and search the SkillPie skill library, install agent skills into ~/.agents/skills with one click so new sessions can use them, plus a same-origin search/detail/install/installed API that conversation tools can reuse.'
