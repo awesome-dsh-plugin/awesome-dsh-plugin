@@ -1,0 +1,7 @@
+url: https://github.com/yuzhej523-maker/dsh-hongyi
+name: yuzhej523-maker/dsh-hongyi
+category: remote
+description:
+  en: Relay DSH status, task progress, commands and files to your phone through your own mailbox (IMAP/SMTP) with a silent drafts-folder channel.
+  zh: 通过你自己的邮箱（IMAP/SMTP）把 DSH 状态、任务进度、指令和文件中转到手机，草稿箱静默通道不弹提醒。
+icon: https://raw.githubusercontent.com/yuzhej523-maker/dsh-hongyi/main/assets/icon-180.png
