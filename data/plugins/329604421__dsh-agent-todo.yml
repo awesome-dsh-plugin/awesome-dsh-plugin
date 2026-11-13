@@ -1,0 +1,6 @@
+url: https://github.com/329604421/dsh-agent-todo
+name: 329604421/dsh-agent-todo
+category: workflow
+description:
+  en: 'A multi-project todo board inside DSH: capture notes in a global capsule overlay, group them into projects and mind maps, and export a todo into the composer as a task for the agent.'
+  zh: '把多项目待办工作台装进 DSH：全局胶囊浮层随手记想法，归到项目、拆成脑图，再把待办一键导出到输入框交给 Agent。'
