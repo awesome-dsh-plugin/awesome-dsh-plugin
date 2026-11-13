@@ -1838,6 +1838,7 @@ dsh plugin --profile web add dshmarket
 - [Theembers/dsh-quick-tasks](https://github.com/Theembers/dsh-quick-tasks) — 左侧栏「后台任务」面板：管理需要后台运行的本地服务，一键启动/停止/重启/删除，查看状态、端口、PID、运行时长与实时日志。任务在插件配置里描述，任何本地服务都能接管，删除任务同时把它从配置里移除。默认 attached 模式下 DSH 退出即停服务；另提供对话入口，新会话里预填插件维护说明，由 agent 接手新增服务。
 - [Theembers/dsh-workspace-icons](https://github.com/Theembers/dsh-workspace-icons) — 为 DeepSeek Harness 侧栏添加逐工作区图标与默认会话图标。工作区图标在原有的「重命名工作区」弹窗里选取；没有 IM 渠道的会话显示默认图标，画法与 IM 插件同源的标题伪元素一致、两者对齐，已有渠道 logo 的会话保持原样。会话行相对工作区多缩进一级并带一条竖直引导线。图标来自 73 个内置 Lucide 图标、上传的 SVG，或从官方目录关联的 Iconify 图标库；配色跟随主题，不提供自定义调色。
 - [TheGoodMorty/chat-pace](https://github.com/TheGoodMorty/chat-pace) — 可配置的聊天自动滚动——按节定速阅读（停顿时长与篇幅成比例）、平滑跟随、单步与固定模式，支持快捷键与按会话记忆打开位置。
+- [TheTao-xt/dsh-composer-shot](https://github.com/TheTao-xt/dsh-composer-shot) — DSH 输入框里的微信风格截屏按钮（Windows）：冻结屏幕拖选区域，截图作为附件直接进入当前草稿；旁边的眼睛开关可在截屏时隐藏 DSH 窗口、抓完立刻恢复。
 - [ThinkofRain1213/dsh-smooth-cursor-patched](https://github.com/ThinkofRain1213/dsh-smooth-cursor-patched) — DSH Web 输入框的彗星光标：发光拖尾随文字位置平滑滑动，可配置强调色、粗细、拖尾，并在静止 500ms 后呼吸。覆盖 ask-question 交互卡片的输入框，并修复空输入框或首次聚焦时光标消失、正向拖选不跟随鼠标、软换行按上一行测量、长内容滚动时光标绘制到输入框之外等问题。Lacquervii/smooth-cursor 的维护分支。
 - [thomasvvugt/dsh-wide-stats-footer](https://github.com/thomasvvugt/dsh-wide-stats-footer) — 解除输入框统计行的宽度限制：较长的轮次与 token 统计行横跨输入框全宽居中显示，不再以省略号截断。
 - [Thunderunruly/agent-office](https://github.com/Thunderunruly/agent-office) — 把 DeepSeek Harness 的所有会话画成一栋固定像素的办公楼：一层是一个工作区，一层里的每间办公室是一个会话；亮灯表示正在工作，点击楼层或角色可直接回到对应会话。
@@ -7648,6 +7649,7 @@ dsh plugin --profile web add dshmarket
 - [RyanZhangK/dsh-paper-translate](https://github.com/RyanZhangK/dsh-paper-translate) — DSH 的整篇 PDF 文献翻译：BabelDOC（Python CLI 及其 config.toml 里的 OpenAI 兼容 API Key）需自行安装配置；输出双语对照 PDF，跑之前先给 token 成本预估，按领域跨论文复用术语表，并关掉翻译环节服务端默认开启的 thinking 推理开销。
 - [s1lencewill/dsh-markdown-reader](https://github.com/s1lencewill/dsh-markdown-reader) — 在独立全屏阅读器中渲染工作区 Markdown 文件，支持 GFM、KaTeX、Mermaid、目录导航、文件更新同步以及浏览器打印和 PDF 导出。
 - [SamyiHu/dsh-visio](https://github.com/SamyiHu/dsh-visio) — 在 DSH 面板里打开和编辑 Visio（.vsdx）图纸：实时 SVG 预览、图形与连接线编辑、布局检查，另有一个让 Agent 直接读写图纸的 visio 工具。核心引擎为 Python 标准库，无需装 Visio 或 Office；需要 PATH 里有 Python 3.9+，PNG 导出、快照与模具预览另需 Pillow。
+- [Sanshui258/dsh-hwp-translate](https://github.com/Sanshui258/dsh-hwp-translate) — 把 .hwp/.hwpx（한글）文档翻成中文，保留表格、项目符号与缩进。注册两个离线工具：hwp_extract 返回文档段落 JSON，hwp_apply 按 {段落 id: 译文} 写回并返回输出路径。翻译由会话模型完成，不需要 API Key；翻译器随包分发。仅 Windows；旧版 .hwp 需要本机 한글，.hwpx 不需要。
 - [scccy/dsh-notes-board](https://github.com/scccy/dsh-notes-board) — 像 DSH 记录自己的决定那样记录工程决策：每次非平凡改动在 .agents/notes/<lifecycle>/<class>/ 下留一篇 Markdown，写清问题、决定、被否决的备选与后果，进 git、可以像代码一样 review。插件提供这套流程：note_search、note_read、note_write、note_verify、note_skip 五个工具，回合末钩子（改过代码的轮次要写笔记或记录一次显式跳过），树、格式、归档三项校验，以及随包分发、由插件挂载的 write-notes-like-deepseek 技能。另附把这些笔记渲染成四个视图（架构基线、演进时间线、避坑智库、决策清单）的侧边栏看板；笔记本体仍是普通 Markdown。
 - [scientificmaniac/dsh-code-highlight](https://github.com/scientificmaniac/dsh-code-highlight) — 报告代码高亮：一个 highlight_code 工具，68 种语言、15 套主题、11 种输出（内联 HTML、Word 可插 SVG/PNG、LaTeX 等），含 codeinword.com 同款 SyntaxHighlighter 经典主题。PNG 输出需 Python 3 与 Pillow，其他格式无额外依赖。
 - [sd0426301x-dotcom/dsh-knowledge-base](https://github.com/sd0426301x-dotcom/dsh-knowledge-base) — 本地优先的 DSH 工作区侧边栏知识库：索引项目、文档和插件，自动归类，支持搜索、文件预览和可编辑笔记；数据保存在工作区。
@@ -10325,6 +10327,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-remote/plugin](https://github.com/dsh-remote/plugin) — 在手机上审批工具调用、看流式输出、回答问题；载荷级端到端加密，中继可自托管。
 - [dsh-ssh/dsh-ssh#dsh-ssh](https://github.com/dsh-ssh/dsh-ssh/tree/main/packages/dsh-ssh) — SSH 远端工作区——在远端机器上执行 bash、文件读写、glob 与 grep（基于 sshd 的 exec + SFTP），远端零安装，纯附加。
 - [dualface/quicktui-dsh](https://github.com/dualface/quicktui-dsh) — 在 dsh 插件页配置 QuickTUI：在 macOS 与 Linux 上安装 QuickTUI server，扫码配对手机 App，并接入 dsh 会话，让 App 能查看会话、回应审批与提问、发送提示词、中断回合。
+- [ebhrz/dsh-relay#plugin](https://github.com/ebhrz/dsh-relay/tree/main/packages/plugin) — 通过自建中继从手机访问本机的 DeepSeek Harness：扫码配对、请求载荷端到端加密、本机无需开放入站端口。
 - [erty3244/dsh-feishu-bridge](https://github.com/erty3244/dsh-feishu-bridge) — 把 DSH 接到飞书自建应用的长连接：接收聊天消息投进指定会话，再把回复发回同一会话。带去重、白名单、回执文案与试运行开关。自触发已拆到 dsh-self-trigger。
 - [Eternalloveone/dsh-palm#dsh-palm](https://github.com/Eternalloveone/dsh-palm/tree/main/packages/dsh-palm) — dsh 的独立手机端界面：扫码配对设备信任、实时 SSE 同步、三通道完成通知（应用内 / Web Push / Server酱·Bark·Telegram）、离线发件箱、审批与提问面板、多提供方用量卡、PWA；从零为窄屏设计的原生手机 UI。
 - [evanfang0054/dsh-tailscale-console](https://github.com/evanfang0054/dsh-tailscale-console) — Tailscale 远程访问运维面板：健康检查、HTTPS 入口（tailscale serve）开关、macOS 代理绕过、中继服务器运维与 ACL 片段生成。
