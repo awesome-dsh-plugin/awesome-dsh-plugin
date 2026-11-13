@@ -1,0 +1,6 @@
+url: https://github.com/Wyy1972/dsh-shotcut
+name: Wyy1972/dsh-shotcut
+category: ui
+description:
+  en: 'Scissors screenshot button in the DSH chat composer. The DSH window is briefly hidden while the real desktop is captured, so the wallpaper, desktop icons and anything the window was covering are included; crop, annotate, then the result drops straight into the composer. Windows only.'
+  zh: '聊天输入框旁的剪刀截图：截图瞬间本窗口短暂隐藏，抓的是真实桌面，所以壁纸、桌面图标、被窗口挡住的内容都能截到；框选、标注后图片直接进输入框。仅支持 Windows。'
