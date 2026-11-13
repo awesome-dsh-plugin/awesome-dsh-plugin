@@ -1,0 +1,7 @@
+url: https://github.com/dbbdbdhdbxb-design/dsh-codex-effort-slider
+name: dbbdbdhdbxb-design/dsh-codex-effort-slider
+category: ui
+description:
+  en: Codex-style reasoning-effort slider for the DSH model menu - one colour per level, star dust at max, zero dependencies.
+  zh: Codex 风格的推理等级滑条：把 DSH 模型菜单里的推理档位换成一条可拖动的连续滑条，一档一色，最高档亮起紫色星云。
+icon: https://raw.githubusercontent.com/dbbdbdhdbxb-design/dsh-codex-effort-slider/main/preview/seat-color.png
