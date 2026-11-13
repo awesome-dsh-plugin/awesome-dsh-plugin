@@ -1,0 +1,6 @@
+url: https://github.com/stealthpro/dsh-composer-balance
+name: stealthpro/dsh-composer-balance
+category: usage
+description:
+  en: "Shows the signed-in DeepSeek account balance and the current peak or off-peak billing window as one pill in the shipped composer stats dock; clicking the pill opens a popover with each wallet, any bonus credit, the reading time, and both pricing windows in the viewer's local time zone."
+  zh: "在官方输入框统计栏中用一枚胶囊同时显示已登录 DeepSeek 账户的余额与当前的高峰/低谷计费时段；点击后弹出面板，显示各钱包余额、赠送余额、读取时间，以及按查看者本地时区呈现的两个计费时段。"
