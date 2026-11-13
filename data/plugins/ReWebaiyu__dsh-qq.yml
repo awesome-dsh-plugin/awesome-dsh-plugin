@@ -1,0 +1,6 @@
+url: https://github.com/ReWebaiyu/dsh-qq
+name: ReWebaiyu/dsh-qq
+category: notify
+description:
+  en: Sends and reads QQ messages and group chats through a local NapCat (OneBot 11) backend, with opt-in auto-replies written by the host model and a web admin panel.
+  zh: 通过本机 NapCat（OneBot 11）在 QQ 上收发消息、读群聊与未读，可让人设接话由宿主模型生成，并带网页管理面板。
