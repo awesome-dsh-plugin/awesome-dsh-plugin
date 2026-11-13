@@ -1,0 +1,6 @@
+url: https://github.com/zhizhuodemao/ai-reverse-resources/tree/main/dsh/js-reverse-plugin
+name: zhizhuodemao/ai-reverse-resources#js-reverse-plugin
+category: tools
+description:
+  en: 'JavaScript reverse-engineering bundle for DeepSeek Harness: three skills for AST deobfuscation, controlled iv8 execution and JSVMP recovery, the js-reverse-mcp browser forensics server mounted as mcp__js-reverse__* tools, and a "逆向模式" (reverse) agent preset that composes them.'
+  zh: 'DeepSeek Harness 的 JS 逆向工程插件：三个技能分别负责 AST 解混淆、iv8 受控执行与 JSVMP 恢复，把 js-reverse-mcp 浏览器取证服务挂载为 mcp__js-reverse__* 工具，并提供把它们组合起来的「逆向模式」Agent 预设。'
