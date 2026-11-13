@@ -1,0 +1,6 @@
+url: https://github.com/ityyq777/dsh-workbench/tree/main/packages/tasks
+name: ityyq777/dsh-workbench#tasks
+category: workflow
+description:
+  en: 'Task manager for DSH: a task tree, eight views, priorities, due dates, timeline/restart chains, batch merge and table moves.'
+  zh: 'DSH 任务管理：任务树、八个视图、优先级、截止日、时间线/重启链、批量归并与迁表。'

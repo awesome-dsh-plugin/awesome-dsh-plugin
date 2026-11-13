@@ -1,0 +1,6 @@
+url: https://github.com/elegant01/dsh-workbuddy-theme
+name: elegant01/dsh-workbuddy-theme
+category: theme
+description:
+  en: 'Recolours and re-lays-out the DSH Web GUI as Tencent WorkBuddy desktop does: mint brand #00c29a, gray sidebar, 24px composer with a single hairline border, 848px column. Values are read from WorkBuddy v5.0.2 asar tokens, not eyeballed; light mode only, pure CSS, restores by removal.'
+  zh: '把 DSH Web GUI 改成腾讯 WorkBuddy 桌面的样子：薄荷绿品牌色 #00c29a、灰阶侧栏、24px 圆角输入框配单层细描边、对话栏 848px。取值逐项取自 WorkBuddy v5.0.2 安装包里的设计令牌，不是照着照片调；只做浅色，纯 CSS，移除注入的样式即还原。'

@@ -1,0 +1,6 @@
+url: https://github.com/wangjianghu/dsh-composer-lists
+name: wangjianghu/dsh-composer-lists
+category: ui
+description:
+  en: 'Ordered and unordered list editing in the DSH composer: automatic numbering and renumbering, marker-aware caret moves, level promotion, and an undoable AI prompt-polish button.'
+  zh: '输入框有序/无序列表编排：自动续号与重排、标记感知的光标移动、层级升降，以及可撤销的 AI 提示词优化按钮。'

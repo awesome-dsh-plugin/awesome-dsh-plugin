@@ -1,0 +1,6 @@
+url: https://github.com/jhao0413/dsh-video-clip
+name: jhao0413/dsh-video-clip
+category: tools
+description:
+  en: 'Download only a time range of a video (yt-dlp segments; long videos fall back to HLS when the DASH URL cannot be seeked), verify the cut with ffprobe and sampled frame contact sheets, and serve the clip over a temporary LAN HTTP link with byte-range support. Exposes video_clip_download, video_clip_verify and file_share tools plus a video-clip skill; requires ffmpeg/ffprobe. Installs yt-dlp with pip into $DSH_HOME/cache/video-clip when it is missing; file_share serves a file or directory over unauthenticated HTTP bound to 0.0.0.0 (visible on the LAN) for 30 minutes by default.'
+  zh: '按时间区间下载视频片段（yt-dlp 分段；长视频的 DASH 直链无法定位时改用 HLS 分片），下载后用 ffprobe 与抽帧拼图核对起止边界，并把成片起成带 Range 的内网 HTTP 下载链接。提供 video_clip_download / video_clip_verify / file_share 三个工具和一个 video-clip skill；需要 ffmpeg/ffprobe。缺少 yt-dlp 时会用 pip 把它装到 $DSH_HOME/cache/video-clip；file_share 默认把文件或目录用无鉴权 HTTP 绑定在 0.0.0.0（局域网可见）上共享 30 分钟。'

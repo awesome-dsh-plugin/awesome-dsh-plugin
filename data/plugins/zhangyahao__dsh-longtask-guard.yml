@@ -1,0 +1,6 @@
+url: https://github.com/zhangyahao/dsh-longtask-guard
+name: zhangyahao/dsh-longtask-guard
+category: session
+description:
+  en: 'Externalizes oversized assistant and tool messages in long sessions into project files while keeping a recent window, and archives reasoning from empty turns as a visible message so long tasks do not stall on context size.'
+  zh: '把长会话里超长的助手与工具消息外化到项目文件并保留最近窗口；正文为空的回合把 reasoning 归档并补一条可见消息，避免长任务因上下文过大而中断。'

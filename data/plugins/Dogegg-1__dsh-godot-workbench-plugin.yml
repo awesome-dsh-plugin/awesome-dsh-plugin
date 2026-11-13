@@ -1,0 +1,7 @@
+url: https://github.com/Dogegg-1/dsh-godot-workbench-plugin
+name: Dogegg-1/dsh-godot-workbench-plugin
+category: dev
+tarball: https://github.com/Dogegg-1/dsh-godot-workbench-plugin/releases/download/v0.1.9/godot-workbench-0.1.9.tgz
+description:
+  en: 'Godot game development workbench for DeepSeek Harness. Windows only, preview release: plans a game (GDD, tasks, acceptance checks), changes project files through controlled read/write tools, diagnoses the project and runs it for evidence. Runtime and import checks launch your configured Godot as a normal process with your permissions (the AppContainer sandbox applies only in the restrictedProduction option); the official Godot 4 standard build can be downloaded on request after confirmation (SHA-256 checked), creating a project registers it in Godot''s project list, and the selected project context is sent to your configured model.'
+  zh: '在 DeepSeek Harness 中规划、制作和验证 Godot 独立游戏。仅限 Windows，预览版：整理方案（GDD、任务、验收条件），通过受控读写工具修改工程文件，诊断工程并运行游戏取证。运行与导入检查会以你的权限、作为普通进程启动你配置的 Godot（AppContainer 沙箱只在 restrictedProduction 选项下启用）；可在确认后按需下载 Godot 4 官方标准版（校验 SHA-256），新建工程会登记到 Godot 的项目列表，所选项目上下文会发给你配置的模型。'

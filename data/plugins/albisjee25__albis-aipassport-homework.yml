@@ -1,0 +1,6 @@
+url: https://github.com/albisjee25/albis-aipassport-homework
+name: albisjee25/albis-aipassport-homework
+category: tools
+description:
+  en: 'Homework helper for the AI Passport device: turns homework screenshots into a checklist with per-task countdown timers and push-to-talk, plus a parent dashboard. It runs its own HTTP server on 0.0.0.0:8787 by default so the device on the same Wi-Fi can reach it: the parent dashboard only accepts connections from this computer, and a device needs a token issued after you approve its pairing code.'
+  zh: 'AI Passport 作业助手：把作业截图整理成清单，设备上逐项倒计时、按住说话，并提供家长后台。默认会在 0.0.0.0:8787 上开自己的 HTTP 服务，让同一 Wi-Fi 下的设备能连：家长后台只接受本机连接，设备要在你批准配对码后拿到令牌才能访问。'

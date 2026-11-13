@@ -1,0 +1,8 @@
+url: https://github.com/Dreamaniax/dsh-model-effort-chips
+name: Dreamaniax/dsh-model-effort-chips
+category: ui
+tarball: https://github.com/Dreamaniax/dsh-model-effort-chips/releases/latest/download/dsh-model-effort-chips.tgz
+description:
+  en: 'Splits the composer model seat into a model chip and a reasoning-effort chip: the effort chip opens a draggable, wheel-adjustable slider, and the panel behind it animates 36 canvas effects across 12 categories.'
+  zh: '把输入框的模型档位拆成模型胶囊和思考强度胶囊：强度胶囊打开可拖动、可滚轮调整的滑条，面板里跑 36 个 Canvas 动效、分 12 个大类。'
+icon: https://raw.githubusercontent.com/Dreamaniax/dsh-model-effort-chips/main/docs/icon-180.png

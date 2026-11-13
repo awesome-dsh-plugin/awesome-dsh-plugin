@@ -1,0 +1,6 @@
+url: https://github.com/monagisa/dsh-plugin-shop-accounts
+name: monagisa/dsh-plugin-shop-accounts
+category: tools
+description:
+  en: "Keeps e-commerce merchant logins in one place: one isolated Chrome or ego lite browser profile per shop for Pinduoduo, Taobao/Tmall, Douyin, JD and 1688, so listing and data-collection scripts reuse a single sign-in; silent and scheduled login checks, automatic credential refill when signed out, scheduled collection jobs driven by a platform-to-metric catalog, and self-update that only deploys verified commits."
+  zh: "把拼多多、淘宝/天猫、抖音、京东、1688 的商家店铺登录态集中管起来：一店一份隔离的 Chrome / ego lite 浏览器档案，上架与采集脚本复用同一份登录态；支持静默与定时检测、掉线自动代填、按「平台→采集域→指标」目录执行定时采集作业，以及只部署经校验 commit 的自更新。"

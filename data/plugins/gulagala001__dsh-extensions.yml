@@ -2,6 +2,6 @@ url: https://github.com/gulagala001/dsh-extensions
 name: gulagala001/dsh-extensions
 category: skill
 description:
-  en: "Manage skills, MCP servers, instruction files, custom commands and hooks."
-  zh: "管理 Skill、MCP 服务器、指令文件、自定义命令和 Hooks。"
-tarball: https://github.com/gulagala001/dsh-extensions/releases/download/v0.1.5-dsh.0.2.2-rc.1/dsh-extensions-0.1.5-dsh.0.2.2-rc.1.tgz
+  en: 'Manage skills, MCP servers, instruction files, custom commands and hooks. Hooks run commands with your own account outside DSH''s sandbox and approval; the plugin asks you to confirm when you add one.'
+  zh: '管理 Skill、MCP 服务器、指令文件、自定义命令和 Hooks。Hook 会以你自己的账户在 DSH 沙箱和审批之外运行命令；添加时插件会要求你确认。'
+tarball: https://github.com/gulagala001/dsh-extensions/releases/download/v0.1.6-dsh.0.2.2-rc.2/dsh-extensions-0.1.6-dsh.0.2.2-rc.2.tgz

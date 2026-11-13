@@ -1,0 +1,8 @@
+url: https://github.com/zhounian6688-like/dsh-postman-desktop
+tarball: https://github.com/zhounian6688-like/dsh-postman-desktop/releases/download/v1.0.1/dsh-postman-desktop-1.0.1.tgz
+name: zhounian6688-like/dsh-postman-desktop
+category: tools
+description:
+  en: 'Postman-style HTTP workbench in the Harness Web GUI: collections and environments with {{var}} substitution, a request builder covering method, params, headers, body and auth, a response inspector, cURL import and export, and a CDN origin probe that fetches the same URL twice so a deleted file can be told apart from an edge cache. It also exposes an http_request_desktop agent tool that shares the panel send path, so a request debugged in the panel can be replayed by the agent. Zero runtime dependencies; state lives in $DSH_HOME/postman-desktop/store.json.'
+  zh: '长在 Harness Web GUI 里的 Postman 式 HTTP 调试台：集合与环境变量（{{变量}} 替换）、请求构建器（方法/参数/请求头/正文/认证）、响应查看器、cURL 导入导出，以及 CDN 源站探测——同一个 URL 抓两次，用来区分「文件真没了」和「边缘缓存骗你」。另提供 http_request_desktop agent 工具，与面板共用同一条发送链路，面板里调通的请求 agent 可以直接复现。零运行时依赖，数据落在 $DSH_HOME/postman-desktop/store.json。'
+icon: https://raw.githubusercontent.com/zhounian6688-like/dsh-postman-desktop/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/GIYN-S/dsh-mcloud
+name: GIYN-S/dsh-mcloud
+category: tools
+description:
+  en: 'China Mobile Cloud Drive (139) inside DSH: browse, upload, download and move files, plus 12 model tools. Its /api/dsh-mcloud routes (sign-in, list, download, move, delete) are mounted with webServer.register without DSH Host/Origin admission, so a web page open in your browser can act on the signed-in cloud drive through them.'
+  zh: '中国移动云盘（139）接入 DSH：浏览、上传、下载、转移网盘文件，并提供 12 个模型工具。它的 /api/dsh-mcloud 路由（登录、列目录、下载、移动、删除）通过 webServer.register 挂载，没有 DSH 的 Host/Origin 准入检查，所以浏览器里打开的任意网页都能经由它们操作已登录的云盘。'
