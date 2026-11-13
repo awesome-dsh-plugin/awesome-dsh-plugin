@@ -1,0 +1,6 @@
+url: https://github.com/mobius-2046/dsh-harmonyos-agent
+name: mobius-2046/dsh-harmonyos-agent
+category: dev
+description:
+  en: 'HarmonyOS (ArkTS) app development agent: one harmony tool with 15 actions — build, install, launch, hilog, screenshot, crash log, UI dump/tap/assert — plus a log panel in the web UI.'
+  zh: '鸿蒙（ArkTS）应用开发 agent：一个 harmony 工具 15 个动作——构建、装机、启动、日志、截图、崩溃日志、界面查询与操作——外加网页端 hilog 面板。'
