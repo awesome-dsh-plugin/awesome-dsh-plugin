@@ -1,0 +1,6 @@
+url: https://github.com/BurninIce/dsh-membubble
+name: BurninIce/dsh-membubble
+category: memory
+description:
+  en: Bounded-context memory for long-running dsh conversations and large group chats, with a focus-limited person pipeline, a fixed injection budget, and append-only event archives.
+  zh: 面向长期运行和大群聊的 dsh 对话记忆：焦点限制个人管线、固定注入预算、append-only 事件归档。
