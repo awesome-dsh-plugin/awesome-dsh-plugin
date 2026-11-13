@@ -1,0 +1,7 @@
+url: https://github.com/justinzyc271828-sys/dsh-baidu-netdisk
+name: dsh-baidu-netdisk
+category: tools
+description:
+  en: "Connects DeepSeek Harness to Baidu Netdisk's official MCP service for file search, file metadata, and storage quota. Requires Baidu account authorization after installation."
+  zh: "百度网盘 MCP 插件，支持在 DeepSeek Harness 中搜索网盘文件、查看文件信息和查询容量。安装后需授权百度账号。"
+tarball: https://github.com/justinzyc271828-sys/dsh-baidu-netdisk/releases/download/v0.1.0/dsh-baidu-netdisk-0.1.0.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/MaouXY/dsh-ai-session-title
+name: MaouXY/dsh-ai-session-title
+category: session
+description:
+  en: 'Generates a session title from the conversation with the session''s own model, either from the /ai-title command or from a button in the rename dialog. Four title shapes (subject, action, subject + outcome, custom prompt) and an optional MM-DD prefix, all editable on the plugin''s settings page.'
+  zh: '用会话自己的模型从对话内容生成会话标题，可走 /ai-title 命令，也可点重命名弹窗里的按钮。提供四种标题结构（主题、动作、主题 + 结论、自定义提示词）和可选的「月-日」前缀，均可在插件设置页调整。'

@@ -1,0 +1,7 @@
+url: https://github.com/baigeiy/dsh-windows-notifications
+name: baigeiy/dsh-windows-notifications
+category: notify
+description:
+  en: Native Windows question and completion notifications with customizable titles and icons, foreground suppression, acknowledgement, and activation of an existing DSH browser tab; requires one-time local setup.
+  zh: Windows 原生提问与完成通知，支持自定义标题和图标、聚焦免打扰、确认收到及切回已有 DSH 标签页，首次使用需本机初始化。
+icon: https://raw.githubusercontent.com/baigeiy/dsh-windows-notifications/main/official-whale.png

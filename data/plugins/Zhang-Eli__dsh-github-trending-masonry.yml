@@ -1,0 +1,7 @@
+url: https://github.com/Zhang-Eli/dsh-github-trending-masonry
+name: Zhang-Eli/dsh-github-trending-masonry
+category: tools
+description:
+  en: 'GitHub Trending masonry feed in the DSH sidebar: daily, weekly and monthly boards with category chips, concise project intros, and one-click starring that syncs to your GitHub account or saves to a local collection. It reads github.com and raw.githubusercontent.com, sends README excerpts to your current model and text to Google Translate when a translation is needed, and stars with the GitHub token you connect (or GITHUB_TOKEN / GH_TOKEN); its HTTP routes have no DSH access check.'
+  zh: '带侧边栏的 GitHub Trending 瀑布流：日/周/月三榜加分类标签，简明扼要的项目简介，一键加星可同步到 GitHub 账号或存入本地收藏。它会读取 github.com 与 raw.githubusercontent.com，把 README 摘录发给当前模型、需要翻译时把文本发给 Google Translate，并用你连接的 GitHub 令牌（或 GITHUB_TOKEN / GH_TOKEN）加星；它的 HTTP 路由没有 DSH 的访问检查。'
+icon: https://raw.githubusercontent.com/Zhang-Eli/dsh-github-trending-masonry/master/assets/icon-180.png

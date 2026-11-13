@@ -1,0 +1,7 @@
+url: https://github.com/simonguo/dsh-icons
+name: simonguo/dsh-icons
+category: theme
+description:
+  en: Replaces native DSH file-tree file and folder icons with locally bundled vscode-icons artwork and filename associations, preserving native tree interactions and expanded folder states.
+  zh: 使用本地打包的 vscode-icons 图标和文件名映射替换 DSH 原生文件树的文件与文件夹图标，保留原生交互及文件夹展开状态。
+tarball: https://github.com/simonguo/dsh-icons/releases/download/v1.0.1/dsh-icons.tgz

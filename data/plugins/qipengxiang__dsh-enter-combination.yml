@@ -1,0 +1,6 @@
+url: https://github.com/qipengxiang/dsh-enter-combination
+name: qipengxiang/dsh-enter-combination
+category: ui
+description:
+  en: Rebind which key sends a message and which key starts a new line in the DeepSeek Harness composer; Enter sends and Cmd/Ctrl+Enter breaks the line by default, and either chord can be re-recorded from a settings page.
+  zh: 自定义 DeepSeek Harness 输入框里哪个键发送消息、哪个键换行；默认 Enter 发送、Cmd/Ctrl+Enter 换行，两个组合键都可以在设置页里重新录制。

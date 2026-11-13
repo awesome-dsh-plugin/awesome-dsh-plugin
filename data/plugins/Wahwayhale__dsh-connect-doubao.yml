@@ -1,0 +1,7 @@
+url: "https://github.com/Wahwayhale/dsh-connect-doubao"
+name: "Wahwayhale/dsh-connect-doubao"
+category: model
+description:
+  en: 'Connects a Doubao account to DeepSeek Harness as a model provider after a single browser QR sign-in — live model discovery from Doubao web and desktop menus with inline composer billing multipliers and per-model thinking ladders, 「工作任务」 task-mode models spending paid quota, chain-of-thought reasoning streaming, Seedream image generation preferring original uncropped assets over watermarked variants, native DSH token usage and session stats tracking, and a live remaining-quota panel. Windows x64 only, since the session is sealed with DPAPI. Windows x64 only, since the session is sealed with DPAPI.'
+  zh: '浏览器扫码登录一次即可把豆包账号接入 DeepSeek Harness：实时读取豆包菜单与在线清单、在对话框模型选择器直接显示计费倍率并可对比、支持思考链（CoT）推理透传与逐模型思考档位、「工作任务」模型（走会员付费额度）、Seedream 生图（优先取无水印原图）、完整接入 DSH 原生 Token 用量与会话统计（含 TTFT、速率与上下文缓存），外加实时剩余额度看板。仅 Windows x64：会话用 DPAPI 密封在本机。仅限 Windows x64，因为会话用 DPAPI 封存。'
+icon: https://raw.githubusercontent.com/Wahwayhale/dsh-connect-doubao/main/docs/assets/dsh-connect-doubao-icon.png

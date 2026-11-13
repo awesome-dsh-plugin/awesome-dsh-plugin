@@ -1,0 +1,6 @@
+url: https://github.com/JayYuen666/dsh-ocr-review
+name: JayYuen666/dsh-ocr-review
+category: git
+description:
+  en: 'Wraps the external `ocr` (open-code-review) CLI in five model tools — one-shot review, whole-tree scan, deterministic scope/rule scaffolding and session lookup — and reports what OCR found separately from whether the run actually covered the selected files.'
+  zh: '把外部 `ocr`（open-code-review）CLI 包成五个模型工具——单次评审、全树扫描、确定性的范围与规则脚手架、会话查询——并把「OCR 发现了什么」与「这次跑有没有覆盖完选中的文件」分成两套口径回报。'

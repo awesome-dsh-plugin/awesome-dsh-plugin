@@ -1,0 +1,8 @@
+url: https://github.com/Linxi-1105/dsh-theme-cyrene
+name: Linxi-1105/dsh-theme-cyrene
+category: theme
+description:
+  en: A free, unofficial Cyrene-inspired theme for DeepSeek Harness with three palettes, a splash screen, and a chat watermark. Code is MIT; character fan art is excluded from MIT.
+  zh: 免费、非官方的「昔涟 / Cyrene」主题，含三套配色、开屏动画和对话水印；代码 MIT，角色同人素材不适用 MIT。
+icon: https://raw.githubusercontent.com/Linxi-1105/dsh-theme-cyrene/main/assets/icon-180.png
+tarball: https://github.com/Linxi-1105/dsh-theme-cyrene/releases/download/v0.37.0/dsh-theme-cyrene-0.37.0.tgz

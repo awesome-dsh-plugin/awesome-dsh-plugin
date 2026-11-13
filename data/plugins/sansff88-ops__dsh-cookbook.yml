@@ -1,0 +1,7 @@
+url: https://github.com/sansff88-ops/dsh-cookbook
+name: sansff88-ops/dsh-cookbook
+category: tools
+icon: https://raw.githubusercontent.com/sansff88-ops/dsh-cookbook/main/assets/icon.png
+description:
+  en: "Cooking recipes in DSH: a full panel in the Web GUI plus four recipe_* tools for the agent. 373 home-cooking recipes — mostly Chinese, with Western, Japanese and Korean dishes mixed in — bundled with 347 dish photos and three kitchen-tip illustrations; the dataset is derived from the open-source HowToCook project (Unlicense) and was cleaned, unit-repaired and re-typeset for this plugin. Browse by dish, category or the ingredients you already have, get a daily pick, keep favourites and cooked marks, and read kitchen tips. Everything ships inside the plugin: offline, no hotlinking, no telemetry."
+  zh: "菜谱面板 + 4 个 recipe_* 工具：373 道家常菜谱（以中式为主，兼收西式与日韩菜式），随包附带 347 张菜品图与 3 张厨房技巧插图，数据取自开源项目 HowToCook（Unlicense）并经清洗、单位修正与重排。按菜名、分类或手头食材找菜，每日推荐、收藏与「做过」标记、厨房技巧；数据随插件分发，离线可用，不热链、无遥测。"

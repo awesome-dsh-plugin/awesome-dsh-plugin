@@ -1,0 +1,7 @@
+url: https://github.com/lczment/dsh-window
+name: lczment/dsh-window
+category: ui
+tarball: https://github.com/lczment/dsh-window/releases/latest/download/dsh-window.tgz
+description:
+  en: 'Window close behaviour for DeepSeek Harness Desktop — ask, minimise to tray, or quit, with a remembered choice editable in Settings, plus per-session and per-workspace child windows. Windows only: requires DSH Desktop 0.2.1-rc.5+ and a PowerShell installer that patches the app shell (resources/app); re-run it after every DSH upgrade, otherwise closing keeps DSH default behaviour.'
+  zh: 'DeepSeek Harness 桌面端的窗口关闭行为——可选询问、最小化到托盘或完全退出，记住选择并可在设置中修改，还能把会话或工作区开进独立窗口。仅限 Windows：需要 DSH Desktop 0.2.1-rc.5+，并用 PowerShell 脚本给应用壳（resources/app）打补丁；每次升级 DSH 后需重跑，未装壳扩展时关闭行为仍是 DSH 默认。'

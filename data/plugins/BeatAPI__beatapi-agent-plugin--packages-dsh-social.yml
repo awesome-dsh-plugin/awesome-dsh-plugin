@@ -1,0 +1,6 @@
+url: https://github.com/BeatAPI/beatapi-agent-plugin/tree/main/packages/dsh-social
+name: BeatAPI/beatapi-agent-plugin#dsh-social
+category: tools
+description:
+  en: "Five native tools for Social Data discovery, pricing previews, approved reads, stored-result retrieval and source tables; requires a BeatAPI key for paid reads."
+  zh: "提供社媒能力发现、价格预览、确认后读取、历史结果取回及来源表格；付费读取需要 BeatAPI key。"

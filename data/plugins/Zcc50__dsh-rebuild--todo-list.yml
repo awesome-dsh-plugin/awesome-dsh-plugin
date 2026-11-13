@@ -1,0 +1,6 @@
+url: https://github.com/Zcc50/dsh-rebuild/tree/main/todo-list
+name: Zcc50/dsh-rebuild#todo-list
+category: workflow
+description:
+  en: 'Personal todo list as a right-Sidebar tab: categories, groups, five states, backup and export, stored per session.'
+  zh: 'DSH 待办列表：右侧栏常驻标签，分类 / 分组 / 五态 / 备份导出，数据按会话落盘。'

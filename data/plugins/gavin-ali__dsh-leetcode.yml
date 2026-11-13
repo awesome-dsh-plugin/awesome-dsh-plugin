@@ -1,0 +1,6 @@
+url: https://github.com/gavin-ali/dsh-leetcode
+name: gavin-ali/dsh-leetcode
+category: tools
+description:
+  en: 'LeetCode practice bench in the DSH sidebar: live problem bank fetched from leetcode.cn, Java editor with completion and one-tap submit, plus copy-to-chat AI coaching.'
+  zh: 'DSH 侧边栏刷题台：题库实时从 leetcode.cn 拉取，Java 编辑器带补全、一键提交看判题，还可把题目和代码复制到对话让 AI 讲解。'

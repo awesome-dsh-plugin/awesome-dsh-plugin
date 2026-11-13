@@ -1,0 +1,7 @@
+url: https://github.com/zhangcaiqian/zsxq-skill
+name: zhangcaiqian/zsxq-skill
+category: skill
+description:
+  en: 'Knowledge-planet (zsxq) knowledge base skill: sync posts and attachments, extract docx/PDF text, guide topic category, summary and quote enrichment, rebuild the index, and search. Requires Python ≥3.10 with the packages in requirements.txt plus your own zsxq account cookie.'
+  zh: '知识星球知识库 skill：同步帖子与附件、抽取 docx/pdf 正文、指导分类/摘要/金句富化、重建索引与检索。需要本机 Python ≥3.10 与 requirements.txt 里的依赖，以及你自己的知识星球账号 Cookie。'
+tarball: https://github.com/zhangcaiqian/zsxq-skill/releases/download/v0.1.0/dsh-skill-zsxq-0.1.0.tgz

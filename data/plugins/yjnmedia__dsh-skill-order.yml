@@ -1,0 +1,6 @@
+url: https://github.com/yjnmedia/dsh-skill-order
+name: yjnmedia/dsh-skill-order
+category: skill
+description:
+  en: 'Skill manager for DSH: drag rows into the order you want, pin any row straight to position 1, and rename a skill inline. Applying rewrites each directory name and the name field in SKILL.md. A skill that appears later is numbered and cleaned up automatically, and a description past 20 Chinese characters gets rewritten. Every change clears the host skill cache and notifies each session, so the slash menu follows at once without restarting DSH. Local-only and offline. Its HTTP routes have no DSH access check, so a page open in your browser could trigger a rename or reorder of your skill folders.'
+  zh: 'DSH 的技能管家：拖拽排序、一键置顶、行内改名。应用后同步改写目录名与 SKILL.md 的 name；新技能进来自动补编号、洗净名字，简介超过 20 个汉字的自动改写。改完清掉宿主技能缓存并通知每个会话，斜杠菜单当场跟着变，不用重启 DSH。纯本地离线运行。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以触发对你技能目录的重命名或重排。'

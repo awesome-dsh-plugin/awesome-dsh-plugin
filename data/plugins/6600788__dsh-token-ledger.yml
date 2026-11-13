@@ -1,0 +1,6 @@
+url: https://github.com/6600788/dsh-token-ledger
+name: 6600788/dsh-token-ledger
+category: usage
+description:
+  en: "Records token usage per turn into two ledgers, imported history before installation and new events after, and shows exact per-bucket totals, per-model and per-session breakdowns, and day/week/month filters in a sidebar panel."
+  zh: "按轮次记录 token 用量，分为安装前导入的历史账与安装后的新账两本，并在侧边栏展示精确的分桶合计、按模型和会话的明细，以及按日、周、月的筛选。"

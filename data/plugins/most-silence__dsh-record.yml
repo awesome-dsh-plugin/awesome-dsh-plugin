@@ -1,0 +1,7 @@
+url: https://github.com/most-silence/dsh-record
+name: most-silence/dsh-record
+category: voice
+tarball: https://github.com/most-silence/dsh-record/releases/latest/download/dsh-record.tgz
+description:
+  en: "Adds a composer microphone button that records audio as MP3 (default), WAV, or WebM and attaches it to the current prompt as a conversation file attachment. The format is chosen on the plugin's own detail page under Settings > Plugins; recordings are passed to the host through the conversation draft-attachment channel and are not written to disk by the plugin."
+  zh: 在输入框加一个麦克风按钮，录音按 MP3（默认）、WAV 或 WebM 编码，并作为会话附件挂进当前 Prompt；格式在「设置 → 插件」中该插件自己的详情页选择，录音经会话草稿附件通道交给宿主，插件不会把音频写入磁盘。

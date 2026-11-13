@@ -1,0 +1,7 @@
+url: https://github.com/do-nothing/media-suite/tree/main/packages/media-qwen
+name: do-nothing/media-suite#media-qwen
+category: voice
+description:
+  en: 'Qwen media tools: multimodal video and audio understanding, text-to-speech with preset voices, and scene audio generation, through Alibaba Cloud DashScope.'
+  zh: 'Qwen 媒体工具：通过阿里云百炼提供多模态视频音频理解、带预置音色的语音合成，以及场景音频生成。'
+icon: https://raw.githubusercontent.com/do-nothing/media-suite/main/assets/icon-180.png

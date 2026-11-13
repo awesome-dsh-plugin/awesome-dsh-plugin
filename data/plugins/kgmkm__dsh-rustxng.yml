@@ -1,0 +1,6 @@
+url: https://github.com/kgmkm/dsh-rustxng
+name: kgmkm/dsh-rustxng
+category: tools
+description:
+  en: 'Answers the built-in web_search from a self-hosted RustXNG metasearch instance, downloading and starting that binary on demand and stopping it after an idle timeout; an optional fetch provider also decodes pages whose charset is declared only in <meta>.'
+  zh: '用自托管的 RustXNG 元搜索引擎接管内置 web_search，按需下载并启动该二进制、空闲超时后停止；可选的抓取层还能解码仅在 <meta> 中声明编码的页面。'

@@ -1,0 +1,6 @@
+url: https://github.com/dcd887/dsh-memory-router
+name: dcd887/dsh-memory-router
+category: usage
+description:
+  zh: "在模型读取之前拦截 DSH 工具结果：重复调用去重、用声明式决策图把大输出换成结构化摘要、注入闸门去重，并记一本含负收益科目的诚实账本（压过头导致重读会记亏损）。实测单次命中省 1400—1600 token；累计净收益目前为负，仓库里写明了原因，也写明了它无法跳过模型回合。"
+  en: "Intercepts DSH tool results before the model reads them: dedupe cache for repeated calls, a declarative decision graph that replaces large outputs with structured digests, an injection gate, and an honest token ledger that includes a negative-return account for over-compression. Measured 1400-1600 tokens saved per hit; the cumulative ledger is currently negative and the README says why, including that it cannot skip model turns."

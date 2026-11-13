@@ -1,0 +1,21 @@
+url: https://github.com/FunnyDiodio/dsh-session-delete
+name: FunnyDiodio/dsh-session-delete
+category: session
+description:
+  en: >-
+    Adds a Delete Session row to every sidebar session '...' menu (the official
+    harness has archive/pin/rename/fork only, no durable delete). One-click
+    Force delete ejects the session from the host live catalog, stops its
+    background work, then removes the durable log, projection cache and
+    registry bookkeeping - no ghost rows on any connected desktop web UI.
+    Workspace files the session created are kept; conversation logs are
+    permanently deleted. Third-party cloud mirrors (e.g. phone apps via Agents
+    Anywhere) hold their own copies. Bilingual zh/en UI, trust-fenced local
+    route. Requires DSH >=0.2.1-rc.1.
+  zh: >-
+    给侧边栏每个会话的"…"菜单加上"删除会话"（官方只有归档/置顶/重命名/分叉，无持久
+    删除）。一键「强制删除」：逐出宿主内存态会话、停止后台工作后，彻底清除会话日志、
+    投影缓存与注册表记账，已连接的桌面 Web 端即时清行、不留幽灵。会话生成的工作区文件
+    保留，对话记录永久删除；第三方云端镜像（如经 Agents Anywhere 同步的手机 App）持有
+    各自副本、需在其 App 内管理。中英双语界面，本地回环路由带信任栅栏。需 DSH >=0.2.1-rc.1。
+icon: https://raw.githubusercontent.com/FunnyDiodio/dsh-session-delete/HEAD/assets/icon-180.png

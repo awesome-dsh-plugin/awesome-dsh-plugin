@@ -1,0 +1,6 @@
+url: https://github.com/cry-flu/dsh-session-rotate
+name: cry-flu/dsh-session-rotate
+category: session
+description:
+  en: 'Session rotation for long conversations: when a session reaches its step budget, at the end of the turn the plugin opens a new session in the same workspace, posts a handoff summary it assembles itself from local session events, and archives the old one immediately or after a retention window. Per-workspace step limits, a minimum-steps floor, a cooldown, a rotation cap and a dry-run switch are configurable in the settings page, and the summary is built with no model call.'
+  zh: '长会话的换新与交接：会话步数到达上限时，在轮末于同一工作区开新会话，把本地拼装的交接摘要作为首条消息投递，并按开关立即归档或延迟归档旧会话。可按工作区设步数上限，另有最低步数、冷却、连续触发上限与试运行开关，都能在设置页里改；摘要全程不调用模型。'

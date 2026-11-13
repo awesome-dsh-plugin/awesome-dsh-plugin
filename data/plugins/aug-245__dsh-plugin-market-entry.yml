@@ -1,0 +1,6 @@
+url: https://github.com/aug-245/dsh-plugin-market-entry
+name: aug-245/dsh-plugin-market-entry
+category: ui
+description:
+  en: Adds a plugin market entry button to the left sidebar that opens the installed market in a main panel.
+  zh: 在左侧栏添加插件市场入口按钮，点击后在主面板打开已安装的插件市场。

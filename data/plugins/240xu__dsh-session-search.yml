@@ -1,0 +1,6 @@
+url: https://github.com/240xu/dsh-session-search
+name: 240xu/dsh-session-search
+category: session
+description:
+  en: 'Cross-session full-text search over persisted DSH session logs: builds an incremental message-level index and returns sessionId, seq, and a short excerpt; exposes an agent tool and a standalone panel. Requires Node.js 23.5+.'
+  zh: '跨会话全文搜索：对持久化 DSH 会话日志建立增量消息级索引，返回 sessionId、seq 与摘录；提供 agent 工具和独立面板。需 Node.js 23.5+。'

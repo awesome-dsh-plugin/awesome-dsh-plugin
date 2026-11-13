@@ -1,0 +1,12 @@
+url: https://github.com/lilcandi/dsh-music-on
+name: lilcandi/dsh-music-on
+category: ui
+# Asset name is deliberately version-free, so `latest/download/` keeps resolving
+# to the newest release instead of 404ing the moment a versioned asset name is
+# cut. Every release must therefore carry an asset literally named
+# `dsh-music-on.tgz`. (A `…-1.1.1.tgz` name under latest/download/ is the exact
+# quiet rot the upstream contributing guide warns about.)
+tarball: https://github.com/lilcandi/dsh-music-on/releases/latest/download/dsh-music-on.tgz
+description:
+  en: 'A music dock for the DSH web GUI. A draggable capsule in the bottom-right corner opens into a player card with a queue, previous and next, a draggable progress bar, a volume knob driven by drag or mouse wheel, three loop modes and per-track cover art for resolved links (local files show a vinyl placeholder); audio files dropped onto the card play immediately. Paste a Bilibili, NetEase Cloud Music or QQ Music track or playlist link to resolve it: NetEase and QQ audio is signed by the host into an opaque HMAC token, so the browser never receives a plain CDN address and cannot forge one. A spectrum canvas along the page bottom reads a real AnalyserNode and draws in six styles (dots, bars, blocks, mirror, line, wave) with adjustable width, bar count, sensitivity, glow, height, frame rate and placement; the row is fitted to the container width, falling back to a slight overflow when the gaps would fall below half a pixel. Seven colour themes (whale blue-white, aurora, mint, sunset, rose, neon, mono). The settings section is grouped into interface, theme, playback, links and spectrum, and carries favorites and history tables.'
+  zh: 'DSH 网页端音乐台。右下角一枚可拖动的胶囊，点开是播放器卡片：播放列表与上一首/下一首、可拖动的进度条、音量旋钮（滚轮或拖动）、三种循环模式、逐曲封面（仅解析出的链接曲目，本地文件用黑胶占位）；音频文件拖到卡片上即播。粘贴 B 站、网易云、QQ 音乐的歌曲或歌单链接即可解析；网易云与 QQ 的音频由宿主签发不透明 HMAC 票据再交给浏览器，浏览器拿不到明文 CDN 地址，也无法伪造。页面底部一条频谱画布，数据来自真实 AnalyserNode，支持圆点/粗柱/方块阵列/对称声波/折线/时域波形六种画法，宽度、柱数、灵敏度、光晕、高度、帧率与位置均可调，整排按容器宽度铺排，间隙会压到半像素下限，再窄就如实略微溢出。另含七套配色主题（鲸鱼蓝白、极光青紫、薄荷绿、落日橙、玫瑰粉、霓虹赛博、极简灰白）。设置分区按界面 / 主题 / 播放 / 链接与频谱分组，并带收藏与历史两张表。'

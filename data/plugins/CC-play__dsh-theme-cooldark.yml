@@ -1,0 +1,7 @@
+url: https://github.com/CC-play/dsh-theme-cooldark
+name: CC-play/dsh-theme-cooldark
+category: theme
+description:
+  en: "Low-contrast dark theme that remaps DSH's alias tokens and adds its own chat bubble, code block banner and markdown heading colours."
+  zh: "低对比度深色主题，重映射 DSH 的 alias token，并自带聊天气泡、代码块语言条与 markdown 标题配色。"
+icon: https://raw.githubusercontent.com/CC-play/dsh-theme-cooldark/main/assets/icon-180.png

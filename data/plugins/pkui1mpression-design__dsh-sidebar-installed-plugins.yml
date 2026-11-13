@@ -1,0 +1,7 @@
+url: https://github.com/pkui1mpression-design/dsh-sidebar-installed-plugins
+name: pkui1mpression-design/dsh-sidebar-installed-plugins
+category: ui
+description:
+  en: Sidebar panel that lists every plugin installed in the current profile and gives each one an enable/disable switch.
+  zh: 侧边栏面板：列出当前 profile 已安装的插件，每行带一个启用/停用开关。
+icon: https://raw.githubusercontent.com/pkui1mpression-design/dsh-sidebar-installed-plugins/main/assets/icon-180.png

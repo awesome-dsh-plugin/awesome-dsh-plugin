@@ -1,0 +1,6 @@
+url: https://github.com/ptilroko/dsh-tool-picker
+name: ptilroko/dsh-tool-picker
+category: tools
+description:
+  en: Per-session switches for which tools a DSH conversation may call, plus a guest mode that keeps file tools inside the workspace and turns off shell and subagents.
+  zh: '按会话开关 DSH 工具，并提供让文件操作只落在工作区、同时关闭 shell 与子代理的访客模式。'

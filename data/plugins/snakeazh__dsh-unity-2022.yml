@@ -1,0 +1,7 @@
+url: https://github.com/snakeazh/dsh-unity-2022
+name: snakeazh/dsh-unity-2022
+category: dev
+description:
+  en: 'Unity 2022.3 editor control for the agent: 20 tools that read the scene hierarchy, create and edit GameObjects, components and serialized properties, drive Play mode, capture screenshots, evaluate C# inside the editor and start player builds.'
+  zh: '让 agent 直接操作 Unity 2022.3 编辑器：20 个工具可读写场景层级、增删改 GameObject 与组件及序列化属性、控制 Play 模式、截图、在编辑器内执行 C#、发起打包构建。'
+icon: https://raw.githubusercontent.com/snakeazh/dsh-unity-2022/main/assets/icon-180.png

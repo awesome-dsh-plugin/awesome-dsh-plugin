@@ -1,0 +1,7 @@
+url: https://github.com/YardonYan/dsh-plugin-netease-lyrics
+name: YardonYan/dsh-plugin-netease-lyrics
+category: ui
+icon: https://raw.githubusercontent.com/YardonYan/dsh-plugin-netease-lyrics/main/docs/icon-180.png
+description:
+  en: 'Windows-only stealth lyrics readout: reads the desktop Netease Cloud Music client through Windows SMTC (song, artist, play state), fetches its LRC and translation from the public Netease API, and renders the currently sung line directly beside the DSH activity line ("深度求索中，用时 X s") with font, size and color cloned from that line via computed style, so it reads as one longer sentence. The stopwatch-based progress freezes on pause and resets on track change; lyrics hide entirely when no activity line exists; an anchorText config retargets non-Chinese hosts; 1.0.5+ fails over between two Netease search endpoints when rate-limited. Needs the Netease "SMTC" toggle enabled.'
+  zh: '仅 Windows 的摸鱼歌词插件：通过 Windows SMTC 读取桌面网易云音乐客户端的歌名、歌手与播放状态，从网易云公开接口拉取 LRC 与翻译，并把当前演唱的那句歌词直接渲染在 DSH 状态行（"深度求索中，用时 X 秒"）右侧，字体、字号、颜色经 computed style 从状态行实时克隆，看起来只是那句话变长了。进度由宿主秒表推算，暂停停表、切歌归零；状态行不在时歌词整体隐藏；anchorText 配置可适配非中文界面；1.0.5 起搜索被限流时自动切换备用端点。需在网易云设置中开启"开启SMTC"开关。'

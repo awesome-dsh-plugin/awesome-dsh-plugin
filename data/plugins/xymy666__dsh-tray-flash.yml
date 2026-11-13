@@ -1,0 +1,7 @@
+url: https://github.com/xymy666/dsh-tray-flash
+name: xymy666/dsh-tray-flash
+category: notify
+description:
+  en: Blinks the Windows notification-area icon the way QQ and WeChat do for an unread message — the app's own icon alternating with a fully transparent frame — and flashes the taskbar button, when a turn finishes or a session waits for an approval or an answer.
+  zh: 任务完成、或有会话在等你审批/回答时，让 Windows 通知区域的图标像 QQ、微信收到消息那样一闪一闪（原图标与全透明帧交替），同时闪任务栏按钮。
+icon: https://raw.githubusercontent.com/xymy666/dsh-tray-flash/main/assets/icon-256.png

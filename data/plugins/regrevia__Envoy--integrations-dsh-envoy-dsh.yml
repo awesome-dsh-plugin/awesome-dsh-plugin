@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/Envoy/tree/main/integrations/dsh/envoy-dsh
+name: regrevia/Envoy#envoy-dsh
+category: browser
+description:
+  en: 'Paste a link; the agent reads it. Xiaohongshu, Douyin, Bilibili, WeChat, articles, PDFs and audio become citable Markdown for a wiki or knowledge base. On 60 turns with vs without: finishes reading 22% -> 92% (+70 points), times out 68% -> 0%, answer quotes a real source fact 23% -> 82% (the A/B is exploratory: different time caps, no human correctness review). On 123 live links 80% came back usable (93% of the pages that answered); an unreachable link reports in 26 s. Codex, Claude Code, DSH.'
+  zh: '贴一条链接，Agent 直接把内容读给你：小红书笔记、抖音与 B 站视频、微信公众号文章，连同文章、PDF、音频，都变成可引用的 Markdown，直接进你的知识库或 wiki。同一批题 60 轮对照：读完并作答 22% → 92%（+70 个百分点），跑到超时 68% → 0%，答案说中原文事实 23% → 82%（这组 A/B 是探索性的：两臂时限不同、未做人工正确性复核）。123 条真实链接里 80% 能直接当素材（能连上的页面里 93%），打不开的链接 26 秒就报。Codex / Claude Code / DSH 通用。'
+icon: https://raw.githubusercontent.com/regrevia/Envoy/main/integrations/dsh/envoy-dsh/icon.png

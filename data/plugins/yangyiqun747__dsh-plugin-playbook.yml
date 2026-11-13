@@ -1,0 +1,6 @@
+url: https://github.com/yangyiqun747/dsh-plugin-playbook
+name: yangyiqun747/dsh-plugin-playbook
+category: skill
+description:
+  en: 'Reusable experience for DeepSeek Harness: save a successful task as a structured playbook, recall it later as a native skill, and gate deliveries behind user-confirmed checks that require objective evidence before write actions are allowed.'
+  zh: 'DeepSeek Harness 的经验复用与交付闸门：把成功任务沉淀为结构化 playbook，同质任务自动作为原生 Skill 召回；交付闸门经用户确认后，写文件前必须逐项拿到客观证据，否则动作被硬拦截。'

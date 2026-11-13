@@ -1,0 +1,6 @@
+url: https://github.com/xiake-1/dsh-unity-mcp-bridge
+name: xiake-1/dsh-unity-mcp-bridge
+category: tools
+description:
+  en: 'Unity-MCP bridge for DSH: dormant from boot, /unity-mcp-tools connects the Unity editor MCP server (com.ivanmurzak.unity.mcp) and registers the tools currently enabled on the Unity side; ships a per-plugin-version command catalog plus /unity-mcp-install and /unity-mcp-check, and re-fetches tools/list itself after a tool-set change because DSH sessions never receive list_changed.'
+  zh: 'Unity-MCP 桥接：开机即休眠，/unity-mcp-tools 才连接 Unity 编辑器的 MCP 服务端（com.ivanmurzak.unity.mcp）并注册 Unity 侧当前已开启的工具；随包发布按插件版本生成的命令目录与 /unity-mcp-install、/unity-mcp-check 两个技能，工具集变更后桥接自行重拉 tools/list。'

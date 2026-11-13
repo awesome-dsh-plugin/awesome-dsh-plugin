@@ -1,0 +1,6 @@
+url: https://github.com/zhiqiangme/dsh-plugins/tree/main/dsh-magpie
+name: zhiqiangme/dsh-plugins#dsh-magpie
+category: model
+description:
+  en: 'Manages a Magpie model list and writes the checked models into a Magpie provider group: full sync from /v1/models, manual entries, per-model context, output limit, image input and reasoning efforts, sorting and drag reordering. On Windows x64/ARM64 it also downloads and upgrades Magpie from yetone/magpie-releases with SHA-256 verification and rollback, auto-upgrades once a release is 30 minutes old and all conversations are idle, starts Magpie in the tray with DSH, and toggles its lite mode and sleep prevention.'
+  zh: 在 DSH 中管理 Magpie 模型清单并写入 Magpie 模型分组：从 /v1/models 全量同步、手动添加，逐模型编辑上下文、输出限额、图片输入与思考档位，支持排序与拖动调整顺序。Windows x64/ARM64 上还可从 yetone/magpie-releases 下载、升级 Magpie（SHA-256 校验、失败回滚），新版发布满 30 分钟且对话全部空闲时自动升级，随 DSH 启动以托盘模式拉起 Magpie，并可切换其轻量模式与防止休眠。

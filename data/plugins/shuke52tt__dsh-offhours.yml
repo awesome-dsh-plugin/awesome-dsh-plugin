@@ -1,0 +1,6 @@
+url: https://github.com/shuke52tt/dsh-offhours
+name: shuke52tt/dsh-offhours
+category: workflow
+description:
+  en: 'Runs your kanban backlog during DeepSeek off-peak hours while the machine is idle: per-card git worktrees, evidence-gated completion, merge-back, and budget and idle gates. Linux or WSL only (needs bash, python3, git, jq, flock); initialise a git repo once with `npx dsh-offhours init`.'
+  zh: '在 DeepSeek 低谷时段、电脑空闲时自动跑看板待办：每卡独立 git worktree、证据门禁、合并回收、预算/空闲闸门。仅支持 Linux/WSL（需 bash、python3、git、jq、flock），首次需在 git 仓库执行 `npx dsh-offhours init`。'

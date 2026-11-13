@@ -1,0 +1,6 @@
+url: https://github.com/Elefseus/dsh-pet-progress
+name: Elefseus/dsh-pet-progress
+category: ui
+description:
+  en: 'Folds the durable todo and goal events the dsh pet ignores into a percentage bubble on the pet, and falls back to a one-line activity summary for a session that never wrote a todo list. Requires the dsh web pet plugin (@linxin666/dsh-pet >= 0.4.0).'
+  zh: '把 dsh 宠物忽略的 todo 与 goal 事件折成宠物气泡上的百分比进度；会话没有任务列表时退化为一行当前活动摘要。需先安装 dsh web pet 插件（@linxin666/dsh-pet >= 0.4.0）。'

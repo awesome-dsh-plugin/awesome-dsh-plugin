@@ -1,0 +1,6 @@
+url: https://github.com/violector/dsh-latex-studio
+name: violector/dsh-latex-studio
+category: docs
+description:
+  en: 'Windows desktop LaTeX workspace with 24 template presets, dsh AI writing and selection editing, managed TeX compilation, PDF preview, and BibTeX validation.'
+  zh: '面向 Windows 桌面版的 LaTeX 工作区，提供 24 个模板入口、dsh AI 写作与选区修改、受管 TeX 编译、PDF 预览和 BibTeX 校验。'

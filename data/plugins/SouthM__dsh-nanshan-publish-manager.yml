@@ -1,0 +1,6 @@
+url: 'https://github.com/SouthM/dsh-nanshan-publish-manager'
+name: SouthM/dsh-nanshan-publish-manager
+category: market
+description:
+  en: 'Publish locally developed DSH components as npm packages: component cards, release settings, publish pre-checks, and a publish history. Its HTTP routes have no DSH access check, and they can publish packages to npm with the token you give it.'
+  zh: '把本机开发的 DSH 组件按 npm 官方形式发布：组件清单、发布设置、发布预检查、发布记录。它的 HTTP 路由没有 DSH 的访问检查，而这些路由可以用你提供的令牌向 npm 发布包。'

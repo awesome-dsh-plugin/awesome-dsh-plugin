@@ -1,0 +1,6 @@
+url: https://github.com/kilbertert/dsh-herdr
+name: kilbertert/dsh-herdr
+category: remote
+description:
+  en: 'Adds a Herdr panel to the DSH sidebar that opens a host PTY running the `herdr` command and renders it with xterm.js. The connection list comes from the plugin config (`connections`, or the flat `remote`/`session`/`command` keys; with no config it runs plain `herdr`), so the panel can point at any machine. The startup command is typed once per terminal, so switching panels or reloading the page does not open a second session. Requires the Herdr CLI on the machine running DSH.'
+  zh: '在 DSH 侧栏新增 Herdr 面板，通过宿主 PTY 运行 `herdr` 命令并用 xterm.js 渲染。连接列表来自插件配置（`connections`，或扁平的 `remote`/`session`/`command`；不配置时只跑 `herdr`），可指向任意机器。启动命令每个终端只发送一次，切换面板或刷新页面不会重复开会话。需要本机已安装 Herdr CLI。'

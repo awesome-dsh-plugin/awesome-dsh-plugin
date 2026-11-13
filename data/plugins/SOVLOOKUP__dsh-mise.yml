@@ -1,0 +1,7 @@
+url: https://github.com/SOVLOOKUP/dsh-mise
+name: SOVLOOKUP/dsh-mise
+category: dev
+tarball: https://github.com/SOVLOOKUP/dsh-mise/releases/latest/download/dsh-mise.tgz
+description:
+  en: "Requires mise installed on the host. A mise-backed toolchain manager for the host machine — a settings page listing the active, installed and available versions, with .mise.toml-driven install, use, uninstall and prune, mise shims prepended to the host PATH on load, and nine agent tools for the same work (status, versions, PATH scan, install, use, prune, uninstall, activate, progress)."
+  zh: "需本机先安装 mise。用 mise 管理本机工具链 —— 设置页列出生效 / 已装 / 可用版本，按 .mise.toml 安装、切换、卸载与清理，加载时把 mise 的 shims 放进 Host PATH 最前，并给 agent 九个工具（状态、版本、PATH 扫描、安装、切换、清理、卸载、激活、进度）。"

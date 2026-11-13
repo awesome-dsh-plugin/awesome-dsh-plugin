@@ -1,0 +1,6 @@
+url: https://github.com/Yyhy110421/dsh-policy-linter
+name: Yyhy110421/dsh-policy-linter
+category: dev
+description:
+  en: 'Read-only linter for AGENTS.md, SKILL.md and plugin prompt files that reports conflicting rules, duplicates, vague qualifiers and dangerous commands with file and line suggestions.'
+  zh: '策略体检：只读扫描 AGENTS.md、SKILL.md 与插件提示，列出规则冲突、重复、模糊限定和危险命令，并给文件行号与修改建议。'

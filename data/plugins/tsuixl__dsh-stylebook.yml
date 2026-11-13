@@ -1,0 +1,7 @@
+url: https://github.com/tsuixl/dsh-stylebook
+name: tsuixl/dsh-stylebook
+category: theme
+description:
+  en: 'Interface and code typography, three-color themes, and named presets for DeepSeek Harness, tested on Windows Desktop 0.2.1-rc.5.'
+  zh: '为 DeepSeek Harness 提供界面和代码字体、三色主题及命名外观方案；已在 Windows 桌面版 0.2.1-rc.5 验证。'
+tarball: https://github.com/tsuixl/dsh-stylebook/releases/download/v0.1.0-beta.1/dsh-stylebook-0.1.0-beta.1.tgz

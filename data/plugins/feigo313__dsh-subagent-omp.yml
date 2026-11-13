@@ -1,0 +1,7 @@
+url: https://github.com/feigo313/dsh-subagent-omp
+name: feigo313/dsh-subagent-omp
+category: tools
+description:
+  en: 'One-shot OMP subagent provider for DeepSeek Harness — each delegation spawns the local `omp --print --mode json` CLI running with the user''s own ~/.omp configuration and model bindings, and delegations are serialized so a single-session local engine is never oversubscribed. Requires the OMP (oh-my-pi) CLI installed locally and DSH 0.2.2-rc.2.'
+  zh: 'DeepSeek Harness 的一次性子代理提供器——每次委派都会启动本地 `omp --print --mode json` CLI，沿用用户自己的 ~/.omp 配置与模型绑定运行，且委派串行执行，单会话本地引擎不会被并发压垮。需本机已安装 OMP（oh-my-pi）CLI，并要求 DSH 0.2.2-rc.2。'
+tarball: https://github.com/feigo313/dsh-subagent-omp/releases/download/v0.1.1/dsh-subagent-omp-0.1.1.tgz

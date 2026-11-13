@@ -1,0 +1,7 @@
+url: https://github.com/Ai-design-001/-DSH_mod-
+name: Ai-design-001/-DSH_mod-
+category: ui
+description:
+  en: Adds a delete entry to every session row in the dsh sidebar, including the blank New Session row, plus a settings section for font sizes and per-region colors. The entry archives the session (recoverable from Archive) rather than erasing it.
+  zh: 为 dsh 侧栏的每个会话行增加删除入口（含空白的「新会话」行），并提供字号与分区颜色的外观定制设置页。删除入口调用的是归档接口，会话仍可从归档恢复，并非彻底擦除。
+icon: https://raw.githubusercontent.com/Ai-design-001/-DSH_mod-/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/lirenjie95/IamChinese/tree/main/plugins/iamchinese
+name: lirenjie95/IamChinese#iamchinese
+category: identity
+tarball: https://github.com/lirenjie95/IamChinese/releases/latest/download/iamchinese.tgz
+description:
+  en: 'Treats the session as a mainland-China user (zh-Hans-CN, Asia/Shanghai, ISO dates, CNY currency) and generates a self-consistent test persona: five tools, six cross-checks, GB 11643 check digit, phone prefix matched to carrier ASN.'
+  zh: '把会话当作中国大陆用户（简体中文、Asia/Shanghai、ISO 日期、人民币），并生成彼此自洽的测试人设：五个工具、六项交叉校验，身份证校验位、号段与运营商 ASN、区划码与地址互相对得上。'

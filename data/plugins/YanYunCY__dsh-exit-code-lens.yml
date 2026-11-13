@@ -1,0 +1,6 @@
+url: https://github.com/YanYunCY/dsh-exit-code-lens
+name: YanYunCY/dsh-exit-code-lens
+category: tools
+description:
+  en: Annotates bash results whose exit code 1 is an answer rather than an error (grep with no match, diff with differences, false test) so the agent does not re-investigate them.
+  zh: 为 exit code 1 表示结果而非错误的 bash 输出（grep 无匹配、diff 有差异、test 为假）补充说明，避免 agent 反复排查。

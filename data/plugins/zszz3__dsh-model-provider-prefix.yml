@@ -1,0 +1,7 @@
+url: https://github.com/zszz3/dsh-model-provider-prefix
+name: zszz3/dsh-model-provider-prefix
+category: ui
+tarball: https://github.com/zszz3/dsh-model-provider-prefix/releases/download/v0.2.6/dsh-model-provider-prefix-0.2.6.tgz
+description:
+  en: 'Replaces the composer model control with an inline Provider/Model trigger — clicking it opens a two-column card with providers on the left and the hovered provider''s models on the right — and moves the reasoning effort into its own trigger beside it, unlike single-button model pickers.'
+  zh: '顶替输入框里的模型控件：一个内联的「供应商/模型」钮，点开是两栏卡片，左栏供应商、右栏列出鼠标所指供应商的模型；推理强度单独成一个钮放在旁边（与只有一个钮的模型选择器不同）。'

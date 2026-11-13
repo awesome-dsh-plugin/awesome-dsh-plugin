@@ -1,0 +1,6 @@
+url: https://github.com/Chaiyahang/dsh-scratchpad
+name: Chaiyahang/dsh-scratchpad
+category: ui
+description:
+  en: 'Scratchpad panel for DeepSeek Harness: tagged notes, image/file attachments, Markdown task lists, send-to-chat, a wake-up shortcut, JSON export/import, and Agent tools.'
+  zh: '给 DeepSeek Harness 的左栏便签插件：带标签的随手记、图片/文件附件、Markdown 待办、发到对话、唤起快捷键、JSON 导入导出，以及 Agent 工具。'

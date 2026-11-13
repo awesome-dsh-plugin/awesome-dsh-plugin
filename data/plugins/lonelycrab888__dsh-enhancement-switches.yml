@@ -1,0 +1,6 @@
+url: https://github.com/lonelycrab888/dsh-enhancement-switches
+name: lonelycrab888/dsh-enhancement-switches
+category: session
+description:
+  en: 'Adds switches for Ralph Loop, Agent Teams, and Codex Subagent above the DeepSeek Harness composer and saves their settings per conversation.'
+  zh: '在 DeepSeek Harness 对话输入框上方提供 Ralph Loop、Agent Teams 和 Codex Subagent 开关，并按对话保存设置。'

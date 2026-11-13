@@ -1,0 +1,7 @@
+url: https://github.com/Vito-Li-tech/dsh-plugin-bili-share
+name: Vito-Li-tech/dsh-plugin-bili-share
+category: tools
+description:
+  en: Turn Bilibili links into b23.tv short links with covers, with a tool, a /bili command, and a share-card panel.
+  zh: 把 B 站链接转成 b23.tv 短链并取封面，提供工具、/bili 命令和分享卡片面板。
+tarball: https://github.com/Vito-Li-tech/dsh-plugin-bili-share/releases/latest/download/dsh-plugin-bili-share.tgz

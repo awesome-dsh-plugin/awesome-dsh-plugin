@@ -1,0 +1,6 @@
+url: https://github.com/SilverLark257/move45clock
+name: SilverLark257/move45clock
+category: notify
+description:
+  en: 'Move45clock: a health clock for DeepSeek Harness. A 45-minute work timer (5–120 minutes), 12 guided 12–15 minute seated/standing break plans, a visual plan editor, reminder cards scalable to 200%, night reminders at 21:30/22:00/22:30, and optional action-name voice coaching. Window wake is Windows-only.'
+  zh: 'Move45clock · 健康钟：每工作 45 分钟弹出引导式休息卡片，内置 12 套 12～15 分钟坐/站计划；支持可视化编辑计划、弹窗放大、21:30/22:00/22:30 夜间提醒，以及可选的动作名语音播报；Windows 下可把托盘窗口叫回前台。'

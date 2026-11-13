@@ -1,0 +1,6 @@
+url: https://github.com/Minajka/dsh-todo-list
+name: Minajka/dsh-todo-list
+category: ui
+description:
+  en: "A to-do list that lives in the right sidebar instead of the conversation: add an item, tick it off, delete it, and drag rows to reorder them. Items are kept only in the browser's localStorage, and the plugin registers no model-facing tools; a button in the conversation header opens the panel."
+  zh: "放在右侧边栏、不进入对话的待办清单：添加、勾选完成、删除，拖动行即可排序。数据只保存在浏览器的 localStorage 里，插件不注册任何给模型用的工具；会话头部有个按钮可打开面板。"

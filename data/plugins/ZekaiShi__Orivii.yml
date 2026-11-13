@@ -1,0 +1,7 @@
+url: https://github.com/ZekaiShi/Orivii
+name: ZekaiShi/Orivii
+category: agi
+description:
+  en: 'Animated AI companion for DSH with image and file chat, shared memory, reminders and background work; reads Bilibili videos through an installed dsh-bili-watch or dsh-bili-scroll plugin.'
+  zh: '住进 DSH 的会动 AI 搭子：图片文件随聊随发，共享记忆、自然提醒和后台办事；B 站内容需另装 dsh-bili-watch 或 dsh-bili-scroll 插件后读取。'
+tarball: https://github.com/ZekaiShi/Orivii/releases/download/v1.0.2/dsh-orivii-1.0.2.tgz

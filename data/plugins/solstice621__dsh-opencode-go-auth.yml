@@ -1,0 +1,6 @@
+url: https://github.com/solstice621/dsh-opencode-go-auth
+name: solstice621/dsh-opencode-go-auth
+category: identity
+description:
+  en: "Connects OpenCode Go subscriptions to DSH Desktop, with API-key management, usage snapshots, automatic model synchronization, and model selection."
+  zh: "将 OpenCode Go 订阅接入 DSH 桌面版，提供 API key 管理、用量快照、模型自动同步和模型勾选。"

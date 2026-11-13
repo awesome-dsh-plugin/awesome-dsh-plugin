@@ -1,0 +1,6 @@
+url: https://github.com/wufeng0105/dsh-teammate-model-picker
+name: wufeng0105/dsh-teammate-model-picker
+category: model
+description:
+  en: 'Adds a model picker to teammate (continuable subagent) sessions: switch a quota-exhausted teammate to a model that still has quota and let it continue, without rebuilding it or touching the Lead session.'
+  zh: 给队友（continuable subagent）会话加一个模型选择器：队友额度用完时直接换个还有额度的模型让它继续跑，不用重建队友，也不影响主线会话与全局默认模型。

@@ -1,0 +1,6 @@
+url: https://github.com/docsor1212/dsh-aesthete-agent
+name: docsor1212/dsh-aesthete-agent
+category: tools
+description:
+  en: Frontend aesthetics engine as 17 native tools — a 118-palette evidence library matched by register, cross-register whole-page design directions, four mechanical gates (WCAG contrast, color-blind simulation, AI-slop detection, scorecard) with digest-bound verdicts, plus semantic design tokens, existing-page audit, CVD-checked chart palettes, CJK type scale, render-vs-tokens reconciliation and measured-numbers rationale. Fully local, zero network. Requires Python 3.8+.
+  zh: 前端美学引擎的 17 个原生工具：118 块实证色板按语域选板、跨语域整页方向对比、四道机械检查（对比度、色盲、AI 味、评分）带指纹绑定，另有设计令牌表、页面审计、图表色板、中文字阶、渲染对账与量化叙事。全部本地运行，零联网。需 Python 3.8+。

@@ -1,0 +1,8 @@
+url: https://github.com/TanPass/furina-dsh-theme
+name: TanPass/furina-dsh-theme
+category: theme
+description:
+  en: "Furina (Genshin Impact) theme for the DSH Web GUI: three palettes, switchable wallpapers, translucent glass, an in-Settings theme page, a themed startup splash and a replaceable Furina agent preset. Supports DSH 0.2.0–0.2.x (verified on 0.2.2)."
+  zh: "《原神》芙宁娜主题：三套配色、可独立切换的壁纸、半透明玻璃，设置页内切换皮肤/壁纸/玻璃强度，并附带主题化启动动画与可替换的芙宁娜人格预设；适配 DSH 0.2.0–0.2.x（已在 0.2.2 实测）。"
+icon: https://raw.githubusercontent.com/TanPass/furina-dsh-theme/main/assets/icon-180.png
+tarball: https://github.com/TanPass/furina-dsh-theme/releases/download/v1.2.8/furina-dsh-theme-1.2.8.tgz

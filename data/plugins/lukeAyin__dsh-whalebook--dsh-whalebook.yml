@@ -1,0 +1,8 @@
+url: https://github.com/lukeAyin/dsh-whalebook/tree/main/dsh-whalebook
+name: lukeAyin/dsh-whalebook#dsh-whalebook
+category: fun
+description:
+  en: 'Whale-themed desktop pet for DeepSeek Harness with a local todo list: click the pet to add or edit tasks inline, get reminders that get more frequent as a due date approaches, and optionally append one short AI-written next step to a reminder. Based on PC2005-cloud/dsh-pet (MIT); artwork keeps the upstream non-commercial terms. Install it instead of PC2005-cloud/dsh-pet, not alongside it.'
+  zh: '住在 DeepSeek Harness 里的蓝发桌宠「鲸事本」：点一下弹出待办面板，可点击编辑、到期渐进提醒；开启「待办建议」后，提醒还会按概率追加一句 AI 生成的简短下一步建议。基于 PC2005-cloud/dsh-pet（MIT），素材沿用其非商用条款。请替代 PC2005-cloud/dsh-pet 安装，不要与它同时安装。'
+tarball: https://github.com/lukeAyin/dsh-whalebook/releases/latest/download/dsh-whalebook.tgz
+icon: https://raw.githubusercontent.com/lukeAyin/dsh-whalebook/main/dsh-whalebook/assets/logo.png

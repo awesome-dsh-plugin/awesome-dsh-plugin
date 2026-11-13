@@ -1,0 +1,6 @@
+url: https://github.com/GnaneshKunal/dsh-menubar/tree/main/plugin
+name: GnaneshKunal/dsh-menubar#plugin
+category: ui
+description:
+  en: "The menu bar app itself is a separate AppKit build from the repo's app/ directory (swift build -c release on macOS); the plugin only provides the host bridge."
+  zh: "菜单栏应用不在插件里：需在 macOS 上用仓库 app/ 目录自行执行 swift build -c release 构建，插件只提供宿主桥。"

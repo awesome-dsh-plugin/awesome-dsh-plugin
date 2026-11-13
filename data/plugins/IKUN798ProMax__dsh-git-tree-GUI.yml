@@ -1,0 +1,7 @@
+url: https://github.com/IKUN798ProMax/dsh-git-tree-GUI
+name: IKUN798ProMax/dsh-git-tree-GUI
+category: git
+tarball: https://github.com/IKUN798ProMax/dsh-git-tree-GUI/releases/download/v0.2.0/dsh-git-tree-gui-0.2.0.tgz
+description:
+  en: 'Git panel for DSH workspaces: a branch tree with per-branch commit logs, a WebStorm-style Log / Commit / Stash window, right-click branch actions (checkout, new branch, update, fetch, push, merge, delete), whole-file side-by-side diffs with change navigation, and inline editing of uncommitted files. It also finds git repositories in subfolders when the workspace root is not a repository itself.'
+  zh: 'DSH 的 Git 面板：分支树与逐分支提交记录、WebStorm 风格的日志 / 提交 / 储藏窗口、分支右键菜单（签出、新建分支、更新、抓取、推送、合并、删除）、整文件的左右并排差异与差异块跳转，以及未提交文件的直接编辑；工作区根目录不是仓库时会扫描子目录里的仓库。'

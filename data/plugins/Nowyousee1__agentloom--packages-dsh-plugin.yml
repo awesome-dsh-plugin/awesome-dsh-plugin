@@ -1,0 +1,6 @@
+url: https://github.com/Nowyousee1/agentloom/tree/main/packages/dsh-plugin
+name: Nowyousee1/agentloom#dsh-agentloom
+category: memory
+description:
+  en: 'Bridges the shared ~/.agentloom store between DeepSeek Harness and Codex: injects the shared memories and the AGENTS.md entries the context budget truncates into the system prompt, and adds six loom_* tools for status, sync, memory search/list/add and skill listing. Requires the agentloom CLI installed and a one-time agentloom init; the seven-tool MCP bridge in the same repo is a separate package for MCP clients.'
+  zh: '把 DeepSeek Harness 与 Codex 接到共享的 ~/.agentloom：将共享记忆与被上下文预算截断的 AGENTS.md 条目注入系统提示，并提供 status、sync、记忆检索/列出/写入与技能列出的六个 loom_* 工具。需先安装 agentloom CLI 并执行一次 agentloom init；同仓库的七工具 MCP 桥是另一个包，供 MCP 客户端使用。'

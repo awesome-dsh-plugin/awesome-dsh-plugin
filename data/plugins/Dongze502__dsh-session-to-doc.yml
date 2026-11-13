@@ -1,0 +1,8 @@
+url: https://github.com/Dongze502/dsh-session-to-doc
+name: Dongze502/dsh-session-to-doc
+category: tools
+tarball: https://github.com/Dongze502/dsh-session-to-doc/releases/latest/download/dsh-session-to-doc.tgz
+icon: https://raw.githubusercontent.com/Dongze502/dsh-session-to-doc/main/assets/icon-180.png
+description:
+  en: "Reorganizes a DeepSeek Harness session transcript into a structured Markdown document with an outline and a table of contents instead of exporting the chat in chronological order. Exposed three ways: a model tool session_to_doc, a composer button, and a loopback-only Web endpoint."
+  zh: "把 DSH 当前会话的对话记录重组成带大纲、章节层级和目录的结构化 Markdown 文档，而不是按时间顺序原样导出。三种入口：模型工具 session_to_doc、输入框按钮、仅回环的 Web 接口。"

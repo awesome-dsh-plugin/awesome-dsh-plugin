@@ -1,0 +1,8 @@
+url: https://github.com/zmy1006-sudo/dsh-project-atlas
+name: zmy1006-sudo/dsh-project-atlas
+category: ui
+description:
+  en: 'A numbered tag wall of recent projects in the sidebar: each project is a colored tag with a type logo that unfolds into date, summary, hours, cost and next steps on hover.'
+  zh: '侧栏里的项目标签墙：每个项目是一枚带编号和类型图标的彩色标签，悬停展开日期、摘要、工时、费用与后续计划。'
+icon: https://raw.githubusercontent.com/zmy1006-sudo/dsh-project-atlas/main/assets/icon-180.png
+tarball: https://github.com/zmy1006-sudo/dsh-project-atlas/releases/latest/download/dsh-project-atlas.tgz

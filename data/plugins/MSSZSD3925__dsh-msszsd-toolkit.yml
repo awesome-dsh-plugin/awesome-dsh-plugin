@@ -1,0 +1,7 @@
+url: https://github.com/MSSZSD3925/dsh-msszsd-toolkit
+name: MSSZSD3925/dsh-msszsd-toolkit
+category: tools
+description:
+  en: 'Utilities for DSH sessions: ask another session a question with a context guard, pause the running turn from the UI, restart DSH on Windows and resume automatically (via the scheduled task that install-restart.ps1 creates), enforce peak-hour discipline and per-feature allowed time windows, and periodically scan session logs for interrupted turns.'
+  zh: 'DSH 会话小工具：向另一个会话提问（带上下文守卫）、从界面暂停当前回合、在 Windows 上重启 DSH 并自动续跑（依赖 install-restart.ps1 创建的计划任务）、贵时段纪律与按功能设定允许时段、定时巡检会话日志发现被中断的回合。插件详情页按模块分组开关。'
+tarball: https://github.com/MSSZSD3925/dsh-msszsd-toolkit/releases/download/v0.6.0/dsh-msszsd-toolkit-0.6.0.tgz

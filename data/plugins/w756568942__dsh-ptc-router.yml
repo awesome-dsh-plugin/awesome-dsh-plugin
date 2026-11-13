@@ -1,0 +1,6 @@
+url: https://github.com/w756568942/dsh-ptc-router
+name: w756568942/dsh-ptc-router
+category: tools
+description:
+  en: Picks PTC or native tool presentation per task and switches it at runtime for the model or the user.
+  zh: 按任务自动选择 PTC 或标准工具呈现，并支持模型或用户在任务中随时切换。

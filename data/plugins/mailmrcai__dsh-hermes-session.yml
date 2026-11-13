@@ -1,0 +1,6 @@
+url: https://github.com/mailmrcai/dsh-hermes-session
+name: mailmrcai/dsh-hermes-session
+category: session
+description:
+  en: 'Reads a local Hermes Agent session store read-only and imports sessions into the current conversation as bounded, untrusted background context: a composer button opens a searchable list across every profile, plus the hermes_sessions_list and hermes_session_import tools.'
+  zh: '只读读取本机 Hermes Agent 的会话库，把会话导入当前会话作为有界、不可信的背景上下文：输入框按钮可搜索全部 profile 的会话，另有 hermes_sessions_list 与 hermes_session_import 两个工具。'

@@ -1,0 +1,7 @@
+url: https://github.com/adithyanraj03/dsh-cite-lens
+name: adithyanraj03/dsh-cite-lens
+category: docs
+tarball: https://github.com/adithyanraj03/dsh-cite-lens/releases/latest/download/plugin.tgz
+description:
+  en: 'Cite Lens for dsh: select text in a PDF in the Files tab to quote or ask about it in the current chat, and turn the model''s [main.pdf p.7 "exact words"] citations into links that open the PDF and highlight the passage; /cite-links makes a chat cite every claim.'
+  zh: dsh 的 PDF 阅读：在文件选项卡里选中 PDF 中的文字，就能引用到当前对话或就它提问；把模型的引用变成链接，点开 PDF 并高亮被引用的那几句话；/cite-links 让一段对话为每条论断都附上引用。

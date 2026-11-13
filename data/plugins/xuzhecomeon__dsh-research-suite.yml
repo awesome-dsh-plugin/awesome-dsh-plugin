@@ -1,0 +1,6 @@
+url: https://github.com/xuzhecomeon/dsh-research-suite
+name: xuzhecomeon/dsh-research-suite
+category: skill
+description:
+  en: Research workflow suite that registers 10 domain skills and 15 tools, curates 450 bundled research skills into 103 capability cards with an auditable per-skill ledger, and takes over research requests automatically through a system-prompt section. Tools cover real R/Python execution (off by default, two-phase preview then confirm), data gates, figure and docx auditing, .docx generation in Chinese-journal style, live PubMed search, field-level DOI verification, and cross-session project memory.
+  zh: 科研全流程插件：注册 10 个领域技能与 15 个工具，把随包 450 条科研技能整理成 103 张能力卡并附 444 条可审计的判定账本，并通过系统提示段自动接管科研任务。工具覆盖真跑 R/Python（默认关闭，先预览再确认）、数据闸门、图片与 docx 核验、按中文期刊体例生成 .docx、PubMed 真检索、DOI 逐字段核对、跨会话项目记忆。

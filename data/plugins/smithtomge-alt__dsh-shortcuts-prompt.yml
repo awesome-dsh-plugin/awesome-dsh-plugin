@@ -1,0 +1,7 @@
+url: https://github.com/smithtomge-alt/dsh-shortcuts-prompt
+name: smithtomge-alt/dsh-shortcuts-prompt
+category: ui
+description:
+  en: 'Adds a strip of saved prompts above the composer: click a chip to insert its text at the draft caret, and manage the list — add, edit, reorder, delete — in an inline panel that opens in place. Prompts persist per profile and are also exposed to the agent as a quick_prompts tool; a fresh install starts with no entries.'
+  zh: '在会话输入框上方维护常用 prompt：点胶囊把内容插入草稿光标处，并可展开内联面板新增、编辑、排序、删除；条目按 profile 持久化，同时以 quick_prompts 工具提供给 agent，初始不预置任何条目。'
+icon: https://raw.githubusercontent.com/smithtomge-alt/dsh-shortcuts-prompt/main/assets/icon-180.png

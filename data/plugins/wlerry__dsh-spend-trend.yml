@@ -1,0 +1,7 @@
+url: https://github.com/wlerry/dsh-spend-trend
+name: wlerry/dsh-spend-trend
+category: usage
+description:
+  en: 'Sidebar badge showing the current DeepSeek peak/off-peak billing phase, the countdown to the next switch, the account balance and a 7-day CNY spend chart — with a voice alarm when off-peak starts.'
+  zh: '在侧边栏显示当前峰谷计费档位、切换倒计时、账户余额和近 7 天人民币花费柱状图；谷时开始时用语音提醒你开工。'
+icon: https://raw.githubusercontent.com/wlerry/dsh-spend-trend/main/assets/icon-180.png

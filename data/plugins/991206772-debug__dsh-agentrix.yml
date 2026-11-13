@@ -1,0 +1,8 @@
+url: https://github.com/991206772-debug/dsh-agentrix
+name: 991206772-debug/dsh-agentrix
+category: workflow
+description:
+  en: 'DSH Agentrix supports coordinator-led direct work or delegated tasks using configured execution models, dispatch-time coordinator models for review, progress and request usage tracking, and a read-only acceptance view with deliverables and verification evidence. Verified only on Windows with PowerShell 7 (pwsh) and Git; other systems are untested.'
+  zh: 'DSH Agentrix 由主控决定直接执行或委派，执行者使用配置模型，独立审查沿用分发者模型；展示进度、需求用量及当前需求的只读验收记录、交付物和验证证据。目前仅在 Windows + PowerShell 7（pwsh）+ Git 环境验证，其他系统未验证。'
+icon: https://raw.githubusercontent.com/991206772-debug/dsh-agentrix/main/assets/icon.png
+tarball: https://github.com/991206772-debug/dsh-agentrix/releases/download/v1.8.1/dsh-agentrix.tgz

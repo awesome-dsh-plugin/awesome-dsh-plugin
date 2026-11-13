@@ -1,0 +1,7 @@
+url: https://github.com/th3r-dev/th3-plug/tree/main/plugs/shell
+name: th3r-dev/th3-plug#shell
+category: tools
+description:
+  en: 'Runs a shell command on your machine from the chat box with !cmd or /sh cmd, without sending a model request. The output comes back as your message plus a terminal card with the exit code, run time and a Copy button. While a ! line is typed, a menu offers zsh completions from your own fpath and matching commands from your shell history. Commands run as a login shell in the session folder, outside the agent sandbox, with a 120 s default timeout.'
+  zh: '在聊天框用 !命令 或 /sh 命令 直接在本机运行 shell 命令，不发起模型请求。输出以你的消息加一张终端卡片显示，含退出码、耗时和复制按钮。输入 ! 行时弹出菜单，提供基于你自己 fpath 的 zsh 补全和 shell 历史中的匹配命令。命令以登录 shell 在会话目录中运行，不经过 agent 沙箱，默认超时 120 秒。'
+icon: https://raw.githubusercontent.com/th3r-dev/th3-plug/main/plugs/shell/assets/icon-180.png

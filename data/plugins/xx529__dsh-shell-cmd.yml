@@ -1,0 +1,7 @@
+url: https://github.com/xx529/dsh-shell-cmd
+name: xx529/dsh-shell-cmd
+category: ui
+icon: https://raw.githubusercontent.com/xx529/dsh-shell-cmd/main/icon.png
+description:
+  en: '/cmd <command> in the composer runs that shell command in the session working directory, sends the command and its output to the model as a user message, and renders the input as a terminal card with exit status, expandable output and copy buttons; a bare /cmd opens an interactive terminal whose transcript is sent to the model with Ctrl+Enter. Runs with its own terminal permissions (danger-full-access) by default; set useSessionPolicy: true to use the session sandbox.'
+  zh: '在输入框用 /cmd <命令> 执行当前会话工作目录里的 shell 命令，把命令与输出作为一条 user 消息交给模型，并把这次输入渲染成带退出状态、可展开输出与复制按钮的终端卡片；裸 /cmd 则打开交互终端，Ctrl+Enter 把整段终端内容发给模型。默认以终端自身权限（danger-full-access）执行，设 `useSessionPolicy: true` 改用会话沙箱。'

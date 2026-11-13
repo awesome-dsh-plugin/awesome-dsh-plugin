@@ -1,0 +1,6 @@
+url: https://github.com/m724523/dsh-deepseek-live-status
+name: m724523/dsh-deepseek-live-status
+category: ui
+description:
+  en: 'Sidebar footer widget that shows DeepSeek service health: a status dot plus the live latency of four probes (API, chat, docs, status page) run from this machine, with a popover listing official component statuses read from status.deepseek.com. Refresh cadence 15s-2min.'
+  zh: '左侧栏底部的一行状态挂件：绿点加本机四项探针（API、网页、文档、状态页）的实时延迟，点开弹出卡片看官方组件状态。刷新间隔 15 秒到 2 分钟可选。'

@@ -1,0 +1,7 @@
+url: https://github.com/lukeinx/dsh-workboard
+name: lukeinx/dsh-workboard
+category: ui
+description:
+  en: 'Adds a Workboard page with a configurable grid of built-in widgets, including agent sessions and jobs, to-dos, ICS calendar, weather, trending lists, RSS feeds, markets and a system monitor, plus sandboxed custom widgets the agent writes from a one-line request.'
+  zh: '新增工作台页面，可自由排布 内置 widget，包括会话与后台任务、待办、ICS 日历、天气、热榜、RSS 订阅、行情和系统监控；也可让 Agent 按一句话描述生成沙箱隔离的自定义 widget。'
+icon: https://raw.githubusercontent.com/lukeinx/dsh-workboard/main/docs/images/icon.png

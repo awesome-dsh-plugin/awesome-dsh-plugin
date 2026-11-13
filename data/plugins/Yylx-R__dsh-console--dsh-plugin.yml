@@ -1,0 +1,8 @@
+url: https://github.com/Yylx-R/dsh-console/tree/main/dsh-plugin
+name: Yylx-R/dsh-console#dsh-plugin
+category: remote
+description:
+  en: Drive the DSH on your own PC from your phone through a self-hosted relay - send text, images and files, read streamed replies, capture the desktop, and press Alt+Tab remotely.
+  zh: 通过自建中继，用手机远程操作电脑上的 DSH：发消息/图片/文件、看流式回复、截取桌面、远程 Alt+Tab。
+icon: https://raw.githubusercontent.com/Yylx-R/dsh-console/main/docs/icon.png
+tarball: https://github.com/Yylx-R/dsh-console/releases/download/v0.9.0/yylx-r-dsh-console-0.2.0.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/zhaohongxuan/dsh-weread
+name: zhaohongxuan/dsh-weread
+category: ui
+description:
+  en: 'WeChat Reading dashboard using its Skills API Key, with a bookshelf, daily journal, note calendar, reading statistics, yearly book walls, AI summaries, and links back to book passages.'
+  zh: '通过微信读书 Skills API Key 提供书架、今日阅读、笔记日历、阅读统计、年度书墙、AI 总结与原文跳转的 Web 面板。'
+tarball: https://github.com/zhaohongxuan/dsh-weread/releases/download/v0.3.0/dsh-weread-0.3.0.tgz

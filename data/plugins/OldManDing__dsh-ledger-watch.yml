@@ -1,0 +1,7 @@
+url: https://github.com/OldManDing/dsh-ledger-watch
+name: OldManDing/dsh-ledger-watch
+category: memory
+icon: https://raw.githubusercontent.com/OldManDing/dsh-ledger-watch/main/assets/icon-180.png
+description:
+  en: "Ships a minimal lesson ledger: brief.ps1 to look up past pitfalls, add-lesson.ps1 to record new ones, deployed into the skills directory and wired into AGENTS.md by the installer. The model checks it before working and turns what it hits into rules, so the same mistake is not made twice. This plugin watches whether that actually happens and shows the result in a tab and under the composer."
+  zh: "自带一套最小账本工具：brief.ps1 查过往踩过的坑，add-lesson.ps1 记新的，安装时自动部署到技能目录并接好 AGENTS.md。模型动手前查一遍、踩坑后记成规则，同一个坑不必踩第二次。本插件负责盯着它有没有真的这么做，并把「查了几次、记了哪几条」摆在面板和输入框下方。"

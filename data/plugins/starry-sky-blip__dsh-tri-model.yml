@@ -1,0 +1,6 @@
+url: https://github.com/starry-sky-blip/dsh-tri-model
+name: starry-sky-blip/dsh-tri-model
+category: model
+description:
+  en: 'Multi-model layered pipeline for DeepSeek Harness: a strong model plans, a fast one drafts, a third reviews, and a failed review is reworked automatically — endpoints, protocols, models and gates all configured from the DSH settings panel.'
+  zh: 'DSH 多模型分层协同插件：强模型规划、快模型执行、第三方模型审查，审查 FAIL 自动带问题清单返工；端点、协议、模型、层级全部在设置面板里配。'

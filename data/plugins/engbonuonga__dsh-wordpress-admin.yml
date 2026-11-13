@@ -1,0 +1,8 @@
+url: https://github.com/engbonuonga/dsh-wordpress-admin
+name: engbonuonga/dsh-wordpress-admin
+category: tools
+description:
+  en: Five agent tools that administer a WordPress and WooCommerce site over the REST API - posts, pages and custom post types; media uploads with alt text; products, variations, orders, coupons, customers and reviews; plugins, themes and block-theme templates; classic menus need the companion dsh-bridge WordPress plugin. Tool descriptions and error messages are bilingual English/Chinese.
+  zh: 通过 REST API 管理 WordPress 与 WooCommerce 站点的五个 Agent 工具：文章、页面与自定义内容类型；带替代文本的媒体上传；商品、变体、订单、优惠券、客户与评价；插件、主题与区块模板；经典菜单需另装配套的 dsh-bridge WordPress 插件。工具描述与错误提示支持中英双语。
+tarball: https://github.com/engbonuonga/dsh-wordpress-admin/releases/latest/download/dsh-wordpress-admin.tgz
+icon: https://raw.githubusercontent.com/engbonuonga/dsh-wordpress-admin/main/assets/icon-512.png

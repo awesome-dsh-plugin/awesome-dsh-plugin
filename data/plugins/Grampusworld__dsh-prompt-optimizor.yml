@@ -1,0 +1,9 @@
+url: https://github.com/Grampusworld/dsh-prompt-optimizor
+name: Grampusworld/dsh-prompt-optimizor
+category: ui
+description:
+  en: Rewrites the composer draft into a tighter prompt in one click and restores the
+    exact original in another, running on Harness's own models by default or any
+    OpenAI-compatible endpoint, with an editable polishing prompt.
+  zh: '一键把输入框草稿改写为更紧凑的提示词，再点一次还原原文；默认用 Harness 自带模型，也可接任意 OpenAI 兼容端点，润色提示词与长度、超时限制均可自行设置。'
+icon: https://raw.githubusercontent.com/Grampusworld/dsh-prompt-optimizor/main/assets/icon-180.png

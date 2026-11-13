@@ -1,0 +1,8 @@
+url: https://github.com/Mi-liu/dsh-desktop-notifier
+name: Mi-liu/dsh-desktop-notifier
+category: notify
+tarball: https://github.com/Mi-liu/dsh-desktop-notifier/releases/download/v1.6.0/dsh-desktop-notifier-1.6.0.tgz
+icon: https://raw.githubusercontent.com/Mi-liu/dsh-desktop-notifier/main/assets/icon.png
+description:
+  en: 'Windows-only DeepSeek Harness host plugin that shows Windows 11 style desktop cards in the bottom-right corner: a card when a turn completes — clicking anywhere on it brings Harness forward and switches back to that conversation — or fails, a native choice card for ask_user_question where clicking an option answers the tool and a free-text field accepts a typed answer, and an approval card for tool-permission requests. Cards follow the current Harness theme, open on the screen that hosts the main window, and the notification sound (including a custom .wav) plus notify timing, approval takeover and timeouts are configurable in the Harness settings page.'
+  zh: '仅支持 Windows 的 DeepSeek Harness 宿主插件：在屏幕右下角弹出 Windows 11 外观的桌面卡片——回合完成时弹通知卡（点卡片任意位置即把 Harness 窗口前置并切回该对话）、出错时弹红色强调的出错卡、把 ask_user_question 变成原生选择卡（点选项即作答，也可以手动输入自定义回答）、并把工具授权请求做成「允许一次 / 拒绝」审批卡。卡片配色跟随当前 Harness 外观，出现在主窗口所在的屏幕；提示音（含自定义 .wav）与通知时机、审批接管方式、各类超时都能在 Harness 设置页里配置。'

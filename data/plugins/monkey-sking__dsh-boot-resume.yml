@@ -1,0 +1,6 @@
+url: https://github.com/monkey-sking/dsh-boot-resume
+name: monkey-sking/dsh-boot-resume
+category: session
+description:
+  en: Reads stored sessions at host boot and resumes the one whose last turn a restart interrupted, sending a short follow-up so the work continues.
+  zh: 宿主启动时读取已存会话，找到被重启打断的最后一轮并补发一句「继续」，让中断的工作接着跑。

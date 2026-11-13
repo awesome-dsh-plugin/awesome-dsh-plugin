@@ -1,0 +1,7 @@
+url: https://github.com/ZSQBFan/dsh-chat-sessions
+name: ZSQBFan/dsh-chat-sessions
+category: session
+description:
+  en: Create a chat with its own workspace in one click, so everyday questions and small tasks can start without manually choosing a project directory.
+  zh: 一键新建自带独立工作区的会话，让日常问答和小型任务无需手动选择项目目录即可开始。
+tarball: https://github.com/ZSQBFan/dsh-chat-sessions/releases/download/v0.2.1/dsh-chat-sessions-0.2.1.tgz

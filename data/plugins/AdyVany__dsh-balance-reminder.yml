@@ -1,0 +1,8 @@
+url: https://github.com/AdyVany/dsh-balance-reminder
+name: AdyVany/dsh-balance-reminder
+category: usage
+description:
+  en: 'Bottom status bar showing the signed-in DeepSeek account combined recharge and bonus balance (no separate API key), refreshed every minute; it turns amber below ¥20, red below ¥5, and shows a dismissible low-balance reminder card.'
+  zh: '底部状态栏显示 DSH 已登录 DeepSeek 账户的充值余额与赠金合计（无需单独 API Key），每分钟自动刷新；低于 ¥20 变琥珀色、低于 ¥5 变红色，并弹出可关闭的低余额提醒卡。'
+icon: https://raw.githubusercontent.com/AdyVany/dsh-balance-reminder/main/assets/icon-180.png
+tarball: https://github.com/AdyVany/dsh-balance-reminder/releases/download/v0.1.0/dsh-balance-reminder-0.1.0.tgz

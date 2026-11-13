@@ -1,0 +1,7 @@
+url: https://github.com/wufeng0105/dsh-draft-studio
+name: wufeng0105/dsh-draft-studio
+category: usage
+tarball: https://github.com/wufeng0105/dsh-draft-studio/releases/latest/download/dsh-draft-studio.tgz
+description:
+  en: "One click beside the composer turns a half-formed draft into a structured prompt the AI can act on: goal, constraints, output format and acceptance criteria filled in, placeholders only where a real decision is missing. Rewritten in place and never sent — undo with one click or Ctrl+Z. Four editable presets (general / code / writing / translation), optional conversation context to resolve references, and a model that either follows the session or is pinned to a chosen provider and reasoning effort. Requests survive session switches and typing while a rewrite is in flight; a result that no longer matches the draft is kept for retry instead of overwriting it. Pure JS, no build, no bundled dependencies."
+  zh: "输入框旁一键，把想到一半的草稿变成 AI 真能照着干的结构化提示词：补齐目标、约束、输出格式与验收标准，只在缺关键决策时留占位符。原地改写、绝不替你发送，一键或 Ctrl+Z 还原。四套可编辑预设（通用/编程/写作/翻译），可选读取会话上下文消解指代，模型可跟随会话或固定到指定 provider 与思考强度。改写期间切会话、继续打字都不会中断；结果与当前草稿不匹配时保留待重试而不是覆盖。纯 JS、无构建、无自带依赖。"

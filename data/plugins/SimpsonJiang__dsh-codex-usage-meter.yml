@@ -1,0 +1,7 @@
+url: https://github.com/SimpsonJiang/dsh-codex-usage-meter
+name: SimpsonJiang/dsh-codex-usage-meter
+category: usage
+description:
+  en: 'DeepSeek Harness usage meter: a current-session cost status bar plus a Codex-style statistics page with token KPIs, a 53-week activity heatmap and weekly cell bars, priced with DeepSeek peak/off-peak rates.'
+  zh: 'DeepSeek Harness 用量统计：状态栏显示当前会话费用拆分，统计页提供 Codex 风格的 KPI 卡片、53 周活动热力图与每周柱状图，按 DeepSeek 峰谷价计费。'
+icon: https://raw.githubusercontent.com/SimpsonJiang/dsh-codex-usage-meter/main/assets/icon-180.png

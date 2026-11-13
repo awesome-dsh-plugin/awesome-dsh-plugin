@@ -1,0 +1,8 @@
+url: https://github.com/devzer0o0/dsh-grok-buddy
+name: devzer0o0/dsh-grok-buddy
+category: ui
+tarball: https://github.com/devzer0o0/dsh-grok-buddy/releases/download/v0.2.2/dsh-grok-buddy-0.2.2.tgz
+icon: https://raw.githubusercontent.com/devzer0o0/dsh-grok-buddy/main/assets/icon-180.png
+description:
+  en: "Puts Grok Bot's own face in the DSH sidebar session list: each row's status dot becomes a living GrokBot avatar whose six motions read as idle, working, waiting, blocked, thinking and done — color marks the project, motion marks the state."
+  zh: "把 Grok Bot 本人那张脸装进 DSH 侧栏会话列表：每行的状态圆点变成会动的 GrokBot 头像，六种动作分别对应空闲、处理中、等待、已阻止、思考与完成——颜色标记项目，动作标记状态。"

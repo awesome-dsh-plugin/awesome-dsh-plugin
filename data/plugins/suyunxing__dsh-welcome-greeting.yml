@@ -1,0 +1,7 @@
+url: https://github.com/suyunxing/dsh-welcome-greeting
+name: suyunxing/dsh-welcome-greeting
+category: ui
+description:
+  en: "Rewrites the New Session hero headline with a short greeting written by the model the session already uses, from the local time, the current city and the live weather; falls back to a local time-based greeting when no model is reachable."
+  zh: "用新会话已选定的模型，按当地时间、城市与实时天气写一句简短问候，替换首屏标题；没有可用模型时退回本地按小时计算的问候。"
+icon: https://raw.githubusercontent.com/suyunxing/dsh-welcome-greeting/main/icon-180.png

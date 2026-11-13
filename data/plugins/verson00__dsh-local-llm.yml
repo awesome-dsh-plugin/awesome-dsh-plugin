@@ -1,0 +1,6 @@
+url: https://github.com/verson00/dsh-local-llm
+name: verson00/dsh-local-llm
+category: model
+description:
+  en: "Runs the local llama.cpp Qwen3.5-4B from a Settings page — Windows only, NVIDIA GPU (8 GB VRAM handles the 4B Q4) — with start, stop and restart, launch parameters, deployment paths with a presence check, provider-route and compaction-policy sync in the profile patch, a loopback request-capture proxy, and a local_worker tool that hands translation, OCR and video-frame chores to the local model by file path. Needs llama-server.exe (verified on b12069) and Qwen3.5-4B GGUF + mmproj files on disk; video frames also need ffmpeg."
+  zh: "在设置页管理本机 llama.cpp 的 Qwen3.5-4B（仅 Windows + NVIDIA GPU，8 GB 显存可跑 4B Q4）：启停与重启、启动参数、部署路径与存在性检测、把模型路由与压缩策略同步进 profile patch、本机请求捕获代理，以及一个按文件路径把翻译/OCR/抽帧杂活交给本地模型的 local_worker 工具。需自备 llama-server.exe（在 b12069 验证）与 Qwen3.5-4B 的 GGUF 量化 + mmproj 文件，视频抽帧另需 ffmpeg。"

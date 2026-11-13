@@ -1,0 +1,6 @@
+url: https://github.com/zhujiuyi/dsh-leftpanel
+name: zhujiuyi/dsh-leftpanel
+category: ui
+description:
+  en: 'Lists every entry that can appear in the left sidebar and gives each panel entry its own hide/show switch from a section in Settings.'
+  zh: '列出所有可以出现在左侧菜单里的功能，并在设置中逐个隐藏或显示面板入口。'

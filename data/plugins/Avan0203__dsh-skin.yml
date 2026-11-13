@@ -1,0 +1,8 @@
+url: https://github.com/Avan0203/dsh-skin
+name: Avan0203/dsh-skin
+category: theme
+description:
+  en: 'Wallpaper layer behind the whole DeepSeek Harness Web UI, fed by image URLs, local files and folders, or a Wallpaper Engine workshop directory, with opacity, blur and translucent-panel sliders, a slideshow with random order and cross-fade, muted video playback, previous/next keyboard shortcuts, and a per-URL archive that keeps every fetched picture under "Loaded images".'
+  zh: '给整个 DeepSeek Harness Web 界面铺一层壁纸：来源可以是图床直链、本地文件或目录、Wallpaper Engine 下载目录，可调壁纸透明度、模糊程度与界面不透明度，支持轮播、随机播放、交叉淡入淡出与静音视频播放，带上一张/下一张快捷键，并把每次从图床取回的图片按地址存档到「已加载图片」里。'
+icon: https://raw.githubusercontent.com/Avan0203/dsh-skin/main/assets/icon-180.png
+tarball: https://github.com/Avan0203/dsh-skin/releases/download/v1.0.3/dsh-skin-bg-1.0.3.tgz

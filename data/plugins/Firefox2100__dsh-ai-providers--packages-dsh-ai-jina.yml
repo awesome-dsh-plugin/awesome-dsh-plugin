@@ -1,0 +1,6 @@
+url: https://github.com/Firefox2100/dsh-ai-providers/tree/main/packages/dsh-ai-jina
+name: Firefox2100/dsh-ai-providers#jina
+category: model
+description:
+  en: Jina provider for embeddings and reranking in DSH. Requires Firefox2100/dsh-ai-providers#runtime to be installed and enabled.
+  zh: 为 DSH 提供嵌入和重排序能力的 Jina 提供商。需要安装并启用 Firefox2100/dsh-ai-providers#runtime。

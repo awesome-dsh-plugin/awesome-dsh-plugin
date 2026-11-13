@@ -1,0 +1,6 @@
+url: https://github.com/Suibianlilili/dsh-always-on-top
+name: Suibianlilili/dsh-always-on-top
+category: ui
+description:
+  en: Adds a pin button to the DSH Desktop title bar that toggles always-on-top for the main window. Windows 10/11 only.
+  zh: 在 DSH Desktop 标题栏加一枚图钉，一键切换主窗口置顶。仅 Windows 10/11。

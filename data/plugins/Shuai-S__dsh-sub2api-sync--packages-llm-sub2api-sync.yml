@@ -1,0 +1,6 @@
+url: https://github.com/Shuai-S/dsh-sub2api-sync/tree/main/packages/llm/sub2api-sync
+name: Shuai-S/dsh-sub2api-sync#sub2api-sync
+category: model
+description:
+  en: Syncs the groups, keys and models of one sub2api instance into dsh-llm-pi-ai provider routes, with panel-driven login (password / OAuth) and one provider route per relay key.
+  zh: 将一个 sub2api 实例的分组、密钥与模型同步为 dsh-llm-pi-ai 的 provider 路由，支持面板登录（密码 / OAuth），一条中转密钥对应一条 provider 路由。

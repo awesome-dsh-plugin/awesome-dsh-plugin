@@ -1,0 +1,6 @@
+url: https://github.com/WJDdidi-1/ai-context-doctor/tree/main/plugin
+name: WJDdidi-1/ai-context-doctor#plugin
+category: usage
+description:
+  en: 'Adds an AIignore tab to the right sidebar: scores the open conversation and its folder across five dimensions, blocks reads of build output, lockfiles and logs before they reach the model, and writes the .aiignore rules for them one button at a time.'
+  zh: '在右侧栏新增 AIignore 标签页：按五个维度给当前对话和所在目录打分，在构建产物、锁文件、日志被读进模型之前把它们拦下，并能一键把这些规则写进 .aiignore。'

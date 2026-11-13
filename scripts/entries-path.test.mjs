@@ -3,7 +3,7 @@ import test from 'node:test'
 import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join, sep } from 'node:path'
-import { readEntries } from './lib/entries.mjs'
+import { readEntries, validateEntries } from './lib/entries.mjs'
 
 const ENTRY = [
   'url: https://github.com/owner/repo',
@@ -52,4 +52,14 @@ test('a relative plugins directory compares equal to the diff', t => {
   const [entry] = readEntries()
   assert.equal(entry.file, 'data/plugins/owner__repo.yml')
   assert.equal(new Set(['data/plugins/owner__repo.yml']).has(entry.file), true)
+})
+
+test('icon: a GitHub-hosted raster tile is accepted, foreign hosts and SVG are refused', () => {
+  const base = { url: 'https://github.com/owner/repo', name: 'owner/repo', category: 'ui', description: { en: 'One line.' } }
+  const ok = validateEntries([{ ...base, icon: 'https://raw.githubusercontent.com/owner/repo/main/assets/icon-180.png' }])
+  assert.deepEqual(ok, [])
+  const foreign = validateEntries([{ ...base, icon: 'https://evil.example/icon.png' }])
+  assert.equal(foreign.some((p) => p.includes('"icon" must be hosted on GitHub')), true, foreign.join('\n'))
+  const svg = validateEntries([{ ...base, icon: 'https://raw.githubusercontent.com/owner/repo/main/assets/icon.svg' }])
+  assert.equal(svg.some((p) => p.includes('raster image')), true, svg.join('\n'))
 })

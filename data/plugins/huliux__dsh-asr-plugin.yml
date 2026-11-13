@@ -2,6 +2,6 @@ url: https://github.com/huliux/dsh-asr-plugin
 name: huliux/dsh-asr-plugin
 category: voice
 description:
-  en: Local meeting transcription with microphone and system audio recording, speaker labels, and transcript export for DeepSeek Harness on Apple Silicon macOS.
-  zh: 为 Apple Silicon macOS 上的 DeepSeek Harness 提供本地会议转写、麦克风与系统音频录制、说话人标签及文本导出。
-tarball: https://github.com/huliux/dsh-asr-plugin/releases/download/v0.1.2/huliux-dsh-asr-plugin-0.1.2.tgz
+  en: 'Local meeting transcription for DeepSeek Harness on Apple Silicon macOS: dual-track recording, live transcript drafts with speaker labels, and @-referenced summaries into decisions and action items.'
+  zh: 为 Apple Silicon macOS 上的 DeepSeek Harness 提供本地会议转写、麦克风与系统音频录制、说话人标签及 @ 引用的总结、决策与待办。
+tarball: https://github.com/huliux/dsh-asr-plugin/releases/download/v0.1.6/huliux-dsh-asr-plugin-0.1.6.tgz

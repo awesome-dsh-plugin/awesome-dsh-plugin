@@ -1,0 +1,7 @@
+url: https://github.com/VanlxyG/dsh-hover-sidebar
+name: VanlxyG/dsh-hover-sidebar
+category: ui
+description:
+  en: 'Hover to reveal and leave to hide the left sidebar on Windows desktop and Web, with manual pinning, configurable delays and reduced-motion support.'
+  zh: 'Windows 桌面版与 Web 左侧栏悬停展开、移开收起，支持手动固定、自定义延迟和减少动态效果。'
+tarball: https://github.com/VanlxyG/dsh-hover-sidebar/releases/download/v0.2.0/dsh-hover-sidebar-0.2.0.tgz

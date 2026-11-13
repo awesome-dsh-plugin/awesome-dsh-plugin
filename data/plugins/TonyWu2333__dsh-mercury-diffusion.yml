@@ -1,0 +1,6 @@
+url: https://github.com/TonyWu2333/dsh-mercury-diffusion
+name: TonyWu2333/dsh-mercury-diffusion
+category: model
+description:
+  en: 'Plays Inception Mercury''s diffusion (denoising) stream live in the dsh Web UI answer bubble: for routes that support it, the request is re-sent with `diffusing: true` and the real frames are replayed from noise to final text, while only the converged answer reaches the session log. Support is detected per provider/model with a probe that is rejected before any token is generated, a floating per-model toggle turns it on, and attachments, auxiliary calls or unsupported routes fall back to the original adapter. Replaces the assistant-message renderer for all models while enabled.'
+  zh: '在 dsh Web UI 的回答气泡里实时播放 Inception Mercury 的扩散（去噪）过程：对支持的路由以 `diffusing: true` 重发请求，按真实帧从噪声播放到最终文本，会话日志只写入收敛后的答案。按 provider/model 用一个在生成前就被拒绝的探测请求判断是否支持，右侧浮动按钮按模型开关；带附件、辅助调用或不支持的路由一律回退原适配器。启用期间会接管所有模型的助手消息渲染。'

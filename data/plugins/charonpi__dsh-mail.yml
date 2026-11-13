@@ -1,0 +1,6 @@
+url: https://github.com/charonpi/dsh-mail
+name: charonpi/dsh-mail
+category: tools
+description:
+  en: IMAP/SMTP mail tools for listing, reading, searching, replying, sending and moving messages, with built-in provider presets (QQ, 163, 126, Gmail, Outlook, iCloud or a custom server), attachment upload and download, and a sidebar page for account setup.
+  zh: 通过 IMAP/SMTP 列出、读取、搜索、回复、发送和移动邮件的工具集，内置 QQ／163／126／Gmail／Outlook／iCloud 与自定义服务器预设，支持附件上传下载，并提供侧栏账号配置页。

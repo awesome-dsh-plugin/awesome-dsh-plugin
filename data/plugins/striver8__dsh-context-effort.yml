@@ -1,0 +1,7 @@
+url: https://github.com/striver8/dsh-context-effort
+name: striver8/dsh-context-effort
+category: ui
+description:
+  en: "A composer control: shows the current model's context window, the tokens in use and a rough system / tools / messages breakdown, switches the model's reasoning effort in one click (writing reasoningEfforts into the model config when the provider declares none), and edits the model's contextWindow from the same panel so custom-provider models stop silently inheriting the adapter default. Makes no model calls; reads only the official session projections, model directory and config-forms services."
+  zh: "对话输入区控件：显示当前模型的上下文上限、已用 token 与「系统 / 工具 / 消息」三段启发式构成；一键切换思考等级（provider 未声明等级时会把 reasoningEfforts 写进该模型配置）；并可在同一面板里改写模型的 contextWindow，免去自定义 provider 的模型静默沿用适配器默认值。不发起模型调用，只读官方的 session 投影、模型目录与 config-forms 服务。"
+tarball: https://github.com/striver8/dsh-context-effort/releases/download/v0.1.0/dsh-context-effort-0.1.0.tgz

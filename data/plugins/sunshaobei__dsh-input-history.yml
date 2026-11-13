@@ -2,5 +2,5 @@ url: https://github.com/sunshaobei/dsh-input-history
 name: sunshaobei/dsh-input-history
 category: ui
 description:
-  en: 'Standalone arrow-key input history for the DSH web composer: ↑/↓ recalls sent prompts from one global ring shared across all sessions and workspaces, persisted to localStorage with an overridable cap.'
-  zh: 'DSH 网页版输入框独立输入历史插件：↑/↓ 上下键即时召回已发送的提示词，所有会话与工作区共享一个全局历史环，localStorage 持久化、容量可配。'
+  en: Input history switcher for the DSH composer that locally persists every submitted prompt (text plus attachments, max 50) and re-fills the empty composer with ArrowUp/ArrowDown, re-attaching file references and image previews.
+  zh: DSH 输入框历史记录切换器：本地保存每条已提交的提示词（含附件，最多 50 条），空输入框时用上下方向键召回，并自动恢复文件引用与图片预览。

@@ -1,0 +1,6 @@
+url: https://github.com/VANuVANuu/dsh-plugin-undermind
+name: VANuVANuu/dsh-plugin-undermind
+category: tools
+description:
+  en: Undermind literature search inside DeepSeek Harness. The plugin owns the OAuth authorization-code + PKCE login the remote MCP server requires, refreshes the rotating refresh token before expiry, re-initializes the MCP session when the server drops it, and registers every tool Undermind tools/list returns as a mcp__undermind__* tool, alongside a permanent undermind_auth tool for status, login, logout and retry. Needs an Undermind account and a client id - Undermind accepts a Client ID Metadata Document URL (CIMD) or a pre-registered client id, and does not support dynamic client registration.
+  zh: 把 Undermind 的文献检索接进 DeepSeek Harness。插件自己维护远端 MCP 服务要求的 OAuth 授权码 + PKCE 登录，在到期前刷新并轮换 refresh token、在服务端丢弃会话时重新初始化，并把 Undermind tools/list 返回的每个工具注册成 mcp__undermind__* 工具，另加一个常驻的 undermind_auth 工具用于查状态、登录、登出与重试。需要一个 Undermind 账号和一个 client id：Undermind 接受 Client ID Metadata Document URL（CIMD）或预注册 client id，不支持动态客户端注册。

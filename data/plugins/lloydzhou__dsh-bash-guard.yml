@@ -1,0 +1,6 @@
+url: https://github.com/lloydzhou/dsh-bash-guard
+name: lloydzhou/dsh-bash-guard
+category: security
+description:
+  en: 'Permission guard for DSH: four scopes with read/write/execute bits in the native permission menu, plus an optional Jev semantic classifier for bash commands.'
+  zh: 'DSH 权限守卫：原生权限菜单里的四范围读写执行权限位，bash 命令可选 Jev 语义分类层。'

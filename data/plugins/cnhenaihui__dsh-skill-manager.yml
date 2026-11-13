@@ -1,0 +1,6 @@
+url: https://github.com/cnhenaihui/dsh-skill-manager
+name: cnhenaihui/dsh-skill-manager
+category: skill
+description:
+  en: 'Skill manager with content-addressed version history: snapshots, per-file and line-level diff, rollback, zip export and import, and per-skill enable or disable.'
+  zh: '带内容寻址版本历史的技能管理器：快照、逐文件与行级差异、回滚、zip 导入导出、按技能停用或启用。'

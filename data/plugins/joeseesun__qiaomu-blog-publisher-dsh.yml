@@ -1,0 +1,7 @@
+url: https://github.com/joeseesun/qiaomu-blog-publisher-dsh
+name: joeseesun/qiaomu-blog-publisher-dsh
+category: workflow
+description:
+  en: "Manage blog categories, save drafts, and upload images, audio, and video to R2 from Harness."
+  zh: "在 Harness 中管理博客分类、保存草稿，并将图片、音频和视频上传到 R2。"
+tarball: https://github.com/joeseesun/qiaomu-blog-publisher-dsh/releases/download/v0.1.3/qiaomu-blog-publisher-dsh-0.1.3.tgz

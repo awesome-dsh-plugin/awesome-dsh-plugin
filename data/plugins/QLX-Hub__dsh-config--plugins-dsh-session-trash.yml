@@ -1,0 +1,8 @@
+url: https://github.com/QLX-Hub/dsh-config/tree/main/plugins/dsh-session-trash
+name: QLX-Hub/dsh-config#dsh-session-trash
+category: session
+description:
+  en: Adds "Delete session (move to recycle bin)" and "Delete session permanently" to every session row's right-click menu, with an in-app recycle bin for restoring or purging entries.
+  zh: 在每个会话条目的右键菜单加入「删除会话（放入回收站）」和「彻底删除会话」，并提供可恢复的会话回收站。
+icon: https://raw.githubusercontent.com/QLX-Hub/dsh-config/main/plugins/dsh-session-trash/assets/icon-180.png
+tarball: https://github.com/QLX-Hub/dsh-config/releases/download/v0.1.0/dsh-session-trash-bin.tgz

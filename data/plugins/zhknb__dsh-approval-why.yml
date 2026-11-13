@@ -1,0 +1,6 @@
+url: https://github.com/zhknb/dsh-approval-why
+name: zhknb/dsh-approval-why
+category: security
+description:
+  en: 'Adds a “why does this need escalation?” button to every DSH approval card: it opens a panel with the permission requested, the risk, what refusing means, the exact tool arguments and whether the named paths fall outside the session workspace; the card also keeps a one-line risk and refusal consequence visible under it, and the model’s original reason is split into labelled paragraphs instead of a run-on block.'
+  zh: '在 DSH 的审批卡上就地解释「为什么需要越权」：按钮展开所需权限、风险、不授权的后果、系统真正要执行的参数，以及每个路径是否落在会话工作区之外；卡片下方常驻一行风险与拒绝后果，模型给出的原始理由按「需要的权限 / 风险 / 不授权」分段显示，而不是挤成一坨。'

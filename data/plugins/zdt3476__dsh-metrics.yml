@@ -1,0 +1,7 @@
+url: https://github.com/zdt3476/dsh-metrics
+name: zdt3476/dsh-metrics
+category: usage
+icon: https://raw.githubusercontent.com/zdt3476/dsh-metrics/main/assets/icon-180.png
+description:
+  en: "Token usage and cost dashboard: requests, tokens, RPM/TPM over the last 60 minutes, cache hit rate, per-model and per-provider breakdown, a 12-month activity heatmap, and cost estimated from OpenRouter prices. Data stays in a local ledger; no telemetry."
+  zh: "Token 用量与成本看板：请求数、Token、最近 60 分钟 RPM/TPM、缓存命中率、按模型与供应商拆分、12 个月活动热力图，成本按 OpenRouter 公开价目估算。数据只落在本地账本，无遥测。"

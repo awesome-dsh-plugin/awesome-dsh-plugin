@@ -1,0 +1,6 @@
+url: https://github.com/KimiChen2000/dsh-conversation-costs
+name: KimiChen2000/dsh-conversation-costs
+category: usage
+description:
+  en: 'Estimates recorded DeepSeek model spend per conversation and turn, with a cost-ranked overview. Built-in tariff table covers 2026-09-11 to 2026-12-31.'
+  zh: '按对话和每轮回复估算已记录的 DeepSeek 模型费用，并提供花费排序明细。内置价目表覆盖 2026-09-11 至 2026-12-31。'

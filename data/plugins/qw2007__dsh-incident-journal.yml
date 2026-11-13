@@ -1,0 +1,6 @@
+url: https://github.com/qw2007/dsh-incident-journal
+name: qw2007/dsh-incident-journal
+category: skill
+description:
+  en: 'Five skills for a reviewable engineering incident journal: record an event only when a counterfactual can be written, quiz yourself from the existing entries, audit the journal for decay, ingest outside material together with its provenance, and rename a layout directory while rewriting every reference to it.'
+  zh: 五个技能维护一本可复习的工程事故日志：写不出反事实就不记，从已有条目出题自测，体检条目腐化，按出处收外部资料，并能在改目录名的同时改掉全库引用。

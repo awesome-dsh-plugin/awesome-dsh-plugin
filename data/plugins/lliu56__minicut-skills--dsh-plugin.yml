@@ -1,0 +1,6 @@
+url: https://github.com/lliu56/minicut-skills/tree/main/dsh-plugin
+name: lliu56/minicut-skills#dsh-plugin
+category: vision
+description:
+  en: 'MiniCut tools for making multi-shot AI short films through the MiniCut CLI: status, next step, and run, with a price shown and the user''s yes required before any paid job.'
+  zh: 'MiniCut 工具：通过 MiniCut CLI 制作多镜头 AI 短片，提供状态、下一步与执行，任何付费任务前先显示价格并需用户确认。'

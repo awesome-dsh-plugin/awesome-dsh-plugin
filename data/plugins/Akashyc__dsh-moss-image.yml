@@ -1,0 +1,6 @@
+url: https://github.com/Akashyc/dsh-moss-image
+name: Akashyc/dsh-moss-image
+category: tools
+description:
+  en: "Moss text-to-image inside DSH — describe the picture in chat and get it back; needs a Moss API key from platform.moss.cn, and generation is billed to your own account."
+  zh: "DSH 的 Moss 文生图插件——在对话里说一句要画什么，就出一张图；需自备 platform.moss.cn 的 Moss API Key，生成费用由自己的账号承担。"

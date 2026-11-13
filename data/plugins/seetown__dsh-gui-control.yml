@@ -1,0 +1,7 @@
+url: https://github.com/seetown/dsh-gui-control
+name: seetown/dsh-gui-control
+category: tools
+description:
+  en: 'Windows desktop control for DeepSeek Harness: accessibility-tree snapshots, click by control name, delivery verdicts, and repeatable task files.'
+  zh: 'DeepSeek Harness 的 Windows 桌面操控：读无障碍树、按控件名点击、动作投递判定，以及可重复执行的任务文件。'
+icon: https://raw.githubusercontent.com/seetown/dsh-gui-control/main/assets/icon-180.png

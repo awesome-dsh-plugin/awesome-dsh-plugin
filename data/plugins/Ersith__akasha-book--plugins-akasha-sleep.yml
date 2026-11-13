@@ -1,6 +1,0 @@
-url: https://github.com/Ersith/akasha-book/tree/main/plugins/akasha-sleep
-name: Ersith/akasha-book#akasha-sleep
-category: memory
-description:
-  en: 'Schedules Akasha sleep distillation on idle or timer, and injects a wake note for new sessions plus a per-turn memory pulse; the optional idle-resume behaviour is off by default. Companions: Hindsight (repo memory), OpenViking (user memory), and the built-in session search (see repo README). Setup: clone the repo, copy core/ aside, then replace <AKASHA_DIR> in cordis.patch.yml with its absolute path (or set the AKASHA_DIR env var); plugins fail loudly while the placeholder remains.'
-  zh: '空闲或定时触发阿卡夏睡眠蒸馏，并为新会话注入唤醒条、每回合注入库脉搏；可选的空闲续行默认关闭。（配套：Hindsight 仓库记忆 / OpenViking 用户记忆 / 宿主会话检索；见仓库 README） 安装：clone 仓库并复制 core/，把 cordis.patch.yml 里的 <AKASHA_DIR> 换成实际路径（或设 AKASHA_DIR 环境变量）；占位符未替换时插件会明确报错。'

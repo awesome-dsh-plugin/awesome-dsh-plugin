@@ -1,0 +1,7 @@
+url: https://github.com/henry1996-yl/dsh-weather-badge
+name: henry1996-yl/dsh-weather-badge
+category: ui
+description:
+  en: 'Weather plugin for the sidebar account row: a serif clock dial and a weather dial sit beside the account, a one-line weather strip sits below it, and both dials switch between circle and square, six dial themes, five fonts and local or network time; a weather tool and a full forecast panel (current conditions, 24-hour chart, 7-day outlook) share three forecast sources that fail over automatically.'
+  zh: '侧栏账号旁常驻双表盘：衬线时钟盘加天气盘，账号下方一条天气横条；两枚表盘可在圆形/方形、六款表盘主题、五种字体、本机/网络时间之间切换，另有 weather 工具与完整预报面板（实况、24 小时图、7 天预报），预报源三级自动切换。'
+icon: https://raw.githubusercontent.com/henry1996-yl/dsh-weather-badge/main/docs/badge.png

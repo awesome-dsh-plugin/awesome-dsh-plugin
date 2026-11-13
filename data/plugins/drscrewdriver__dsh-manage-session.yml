@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-manage-session
+name: drscrewdriver/dsh-manage-session
+category: session
+description:
+  en: 'Session Manager for DSH (formerly Session Steward): one console over active and archived sessions — grouped by workspace, domain and title filters, favorites, and batch archive / unarchive / purge archived files (destructive steps ask twice) — plus a four-gate health checkup (log integrity, projection cache, lossless JSON, cold read) that ends in a reversible, backup-first prescription. Search and indexing live in dsh-search-index; this plugin builds no index and never rewrites session logs.'
+  zh: 'DSH 会话管理台（原名会话管家）：一屏管理活跃与归档会话——按工作区分组、检索域与标题筛选、收藏，批量归档 / 取消归档 / 清理归档文件（不可逆需二次确认），外加四门会话体检（日志完整性 / 投影缓存 / 无损 JSON / 冷读），给出可逆、先备份的处方。搜索与索引在 dsh-search-index；本插件不自建索引，也不改写会话日志。'

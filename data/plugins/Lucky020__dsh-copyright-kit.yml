@@ -1,0 +1,6 @@
+url: https://github.com/Lucky020/dsh-copyright-kit
+name: Lucky020/dsh-copyright-kit
+category: docs
+description:
+  en: 'Turns a repository and a software name into Chinese software copyright registration material - the 60-page source code excerpt (50 lines per page, auto-paginated), the software manual with screenshots, and the derived application-form fields (line count, language, completion date, function summary). Requires Python 3 with python-docx, and Google Chrome for screenshots.'
+  zh: '把代码仓库和软件名变成软件著作权登记材料：60 页源程序鉴别材料（每页 50 行自动分页）、带截图的软件说明书、以及申请表信息推导（源程序量、语言、完成日期、功能简介）。需 Python 3 与 python-docx，截图需 Google Chrome。'

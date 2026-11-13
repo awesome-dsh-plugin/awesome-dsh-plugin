@@ -1,0 +1,6 @@
+url: https://github.com/Astral-Yang/dsh-bark-push
+name: Astral-Yang/dsh-bark-push
+category: notify
+description:
+  en: 'Push notifications for DeepSeek Harness: the reply text itself plus approval and question prompts, delivered in parallel to Bark and optional Gotify, ntfy, PushDeer, ServerChan, PushPlus, extra Bark servers or a custom webhook, with per-workspace and per-session mute.'
+  zh: '面向 DeepSeek Harness 的推送通知：直接推送回复正文，以及授权与提问提醒；Bark 之外可并行投递到 Gotify、ntfy、PushDeer、Server酱、PushPlus、额外 Bark 服务器或自定义 Webhook，并支持工作区级与会话级静音。'

@@ -1,0 +1,7 @@
+url: https://github.com/skyzzq/dsh-ssh-mac
+name: skyzzq/dsh-ssh-mac
+category: remote
+description:
+  en: 'Fork of @linxin666/dsh-ssh (the two cannot be enabled at the same time): resolves an SSH host by its NIC MAC address before dialing, so DHCP address changes stop breaking saved hosts.'
+  zh: '基于 @linxin666/dsh-ssh 的二次开发（两者不能同时启用）：建链前先按网卡 MAC 把主机解析成当前 IP，DHCP 换号不用改配置。'
+tarball: https://github.com/skyzzq/dsh-ssh-mac/releases/latest/download/dsh-ssh-mac.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/kanchengw/dsh-collab
+name: kanchengw/dsh-collab
+category: workflow
+description:
+  en: 'Multi-user collaboration rooms for DeepSeek Harness: discuss work, coordinate tasks, propose changes, and review them from each participant''s local DSH. Requires DSH 0.2.0-rc.2 and a Git workspace.'
+  zh: 'DeepSeek Harness 多人协作房间：参与者在各自本地 DSH 中讨论、协调任务、提出并审阅变更。需要 DSH 0.2.0-rc.2 与一个 Git 工作区。'
+tarball: https://github.com/kanchengw/dsh-collab/releases/download/v0.1.0/dsh-collab-0.1.0.tgz

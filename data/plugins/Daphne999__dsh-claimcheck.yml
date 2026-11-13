@@ -1,0 +1,6 @@
+url: https://github.com/Daphne999/dsh-claimcheck
+name: Daphne999/dsh-claimcheck
+category: dev
+description:
+  en: 'Runs project check commands itself and records the real exit codes, pins the result to a git or file workspace fingerprint, expires the evidence when the tree changes, and reminds the agent to verify before claiming completion.'
+  zh: '由插件自己执行项目检查命令并记录真实退出码，把结果绑定到 git 或文件级工作区指纹；代码一变旧证据自动过期，收尾时提醒 agent 先取证再宣称完成。'

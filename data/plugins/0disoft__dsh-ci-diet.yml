@@ -1,0 +1,6 @@
+url: https://github.com/0disoft/dsh-ci-diet
+name: 0disoft/dsh-ci-diet
+category: usage
+description:
+  en: 'Finds wasted GitHub Actions runner time and proposes small, reviewable workflow patches, with explicit approval before any edit and a DSH settings page for analysis rules, history limits, storage, and cost estimation.'
+  zh: '找出被浪费的 GitHub Actions 运行时间，并提出小而可审查的工作流补丁；任何修改都需要明确批准，并提供用于分析规则、历史上限、存储和成本估算的 DSH 设置页面。'

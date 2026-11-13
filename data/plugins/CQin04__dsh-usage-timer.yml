@@ -1,0 +1,6 @@
+url: https://github.com/CQin04/dsh-usage-timer
+name: CQin04/dsh-usage-timer
+category: usage
+description:
+  en: Records how long DSH is open each time and the running total in a left-sidebar page; a restart within 3 minutes continues the same use.
+  zh: 记录 DSH 每次打开的使用时长与累计总时长（退出 3 分钟内重开并入同一次），在左侧栏页面展示。

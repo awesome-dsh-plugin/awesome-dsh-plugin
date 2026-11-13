@@ -2,5 +2,5 @@ url: https://github.com/elegant01/dsh-codearts
 name: elegant01/dsh-codearts
 category: model
 description:
-  en: 'Connects Huawei Cloud CodeArts to DeepSeek Harness: built-in Huawei Cloud OAuth2 sign-in (PKCE + DPoP) or a pasted token, after which CodeArts models are available in the DSH conversation window, with local per-account request and token usage.'
-  zh: '把华为云 CodeArts 接入 DeepSeek Harness：内置华为云 OAuth2 登录（PKCE + DPoP），也支持粘贴 token；登录后即可在 DSH 对话窗口使用 CodeArts 提供的模型，并展示本机按账号统计的请求数与 token 用量。'
+  en: 'Connects Huawei Cloud CodeArts to DeepSeek Harness with built-in OAuth2 sign-in (PKCE + DPoP) or a pasted token, after which CodeArts models are available in the DSH conversation window. Reads per-account credit balance, expiring credits and daily check-in from the CodeArts credit API, counts requests and tokens locally, and shows a per-account credits popover under the chat input box; the credits line and the upstream queue hint can each be turned off in settings.'
+  zh: '把华为云 CodeArts 接入 DeepSeek Harness：内置华为云 OAuth2 登录（PKCE + DPoP），也支持粘贴 token；登录后即可在 DSH 对话窗口使用 CodeArts 提供的模型。积分余额、即将过期额度与每日签到读 CodeArts 自己的积分接口，请求数与 token 用量按账号在本机统计；对话输入框下方那行积分可点开看逐号明细，积分与上游排队位置都能在设置里单独关掉。'

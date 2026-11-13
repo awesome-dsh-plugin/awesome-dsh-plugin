@@ -1,0 +1,6 @@
+url: https://github.com/xymy666/dsh-cache-probe
+name: xymy666/dsh-cache-probe
+category: usage
+description:
+  en: 'Channel test page for any configured provider/model: multi-round prompt-cache hit rate, streaming TTFT and tok/s, and a pelican SVG test.'
+  zh: '任意已配置渠道的测试页：多轮提示词缓存命中率、流式 TTFT 与 tok/s，以及鹈鹕 SVG 测试。'

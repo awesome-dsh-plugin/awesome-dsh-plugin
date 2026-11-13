@@ -1,0 +1,9 @@
+url: https://github.com/QGG4588/dsh-model-failover
+name: QGG4588/dsh-model-failover
+category: model
+description:
+  en: 'Model failover for DeepSeek Harness: pick one or more providers and the pool becomes every model inside them; when a request fails (rate limit, quota, timeout, server or transport error) the next untried model in the pool retries automatically, and the original error surfaces once the pool is exhausted. Configure from a seat beside the composer model picker or the model_failover tool, with no restart needed.'
+  zh: 'DeepSeek Harness 的模型故障自动转移：可选一个或多个供应商，池=所选供应商内的全部模型；请求失败（限流、配额、超时、服务端或传输错误）时自动用池中下一个未试过的模型重试，整池试尽则交还原错误。在输入框右下角模型选择器旁的「故障转移」面板或 model_failover 工具里配置，无需重启。'
+tarball: https://github.com/QGG4588/dsh-model-failover/releases/download/v1.2.2/dsh-model-failover-1.2.2.tgz
+
+

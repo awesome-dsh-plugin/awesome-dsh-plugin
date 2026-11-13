@@ -1,0 +1,7 @@
+url: https://github.com/tower666/dsh-checkpoints
+name: tower666/dsh-checkpoints
+category: session
+icon: https://raw.githubusercontent.com/tower666/dsh-checkpoints/master/assets/icon.png
+description:
+  en: 'Per-turn git checkpoints of a workspace: revert one turn’s changes (or go back to the end of an earlier turn), previewed file by file, and forget that part of the conversation from the model context.'
+  zh: '按轮次为工作区拍 git 检查点：撤销某一轮的改动，或回到某一轮结束时的状态，并把这些对话从模型上下文中遗忘；执行前展示差异预览。'

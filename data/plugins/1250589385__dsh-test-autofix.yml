@@ -1,0 +1,6 @@
+url: https://github.com/1250589385/dsh-test-autofix
+name: 1250589385/dsh-test-autofix
+category: dev
+description:
+  en: 'A run_tests tool that turns a failing test run into precise context instead of a raw dump. It detects the runner (pytest, jest, vitest, cargo, go, npm), extracts the file, line and assertion of each failure, and stops the loop when failures with an identical signature repeat. Output is decoded so Windows-encoded and non-Latin assertion text stays readable.'
+  zh: '提供一个 run_tests 工具，把失败的测试运行变成精确上下文，而不是原始大段输出。自动识别测试框架（pytest、jest、vitest、cargo、go、npm），提取每个失败的 file、line 与断言；同一失败签名反复出现时停止循环。输出经过解码，Windows 编码与非拉丁断言文字都能正常显示。'

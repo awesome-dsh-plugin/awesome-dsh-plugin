@@ -1,0 +1,6 @@
+url: https://github.com/prgrmrwy/dsh-session-id-copy
+name: prgrmrwy/dsh-session-id-copy
+category: session
+description:
+  en: 'Shows a six-character session id badge next to the conversation title in the DSH web UI; clicking it copies the full session id and shows a short confirmation.'
+  zh: '在 DSH Web 界面的对话标题旁显示 6 位 session id 徽标，点击即复制完整 session id 并给出短暂提示。'

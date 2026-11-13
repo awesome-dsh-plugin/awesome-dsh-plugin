@@ -1,0 +1,6 @@
+url: https://github.com/439436269-ctrl/dsh-preview-stl
+name: 439436269-ctrl/dsh-preview-stl
+category: ui
+description:
+  en: 'Open STL meshes in the right-Sidebar document preview: browser-side binary/ASCII parsing, a WebGL viewport, and size/volume/surface-area/watertightness statistics.'
+  zh: '在右侧栏文档预览里打开 STL：浏览器解析二进制/ASCII，WebGL 视口 + 尺寸/体积/表面积/水密统计。'

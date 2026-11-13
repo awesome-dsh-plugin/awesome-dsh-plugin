@@ -1,0 +1,6 @@
+url: https://github.com/Rainnnnnnny/lumina-dsh
+name: Rainnnnnnny/lumina-dsh
+category: vision
+description:
+  en: 'Drive local Adobe Photoshop for game screenshots and photos: layered HDR, multi-zone colour/person masks, SUPIR/Real-ESRGAN super-resolution, native 1:1 vision inspection. Requires Windows 10/11 and Adobe Photoshop 2025; the grading tools do not run on macOS or on earlier Photoshop versions.'
+  zh: '驱动本机 Adobe Photoshop 处理游戏截图与照片：分层 HDR、多区域颜色/人物蒙版、SUPIR/Real-ESRGAN 超分与原生 1:1 视觉检查。需要 Windows 10/11 与 Adobe Photoshop 2025；macOS 与更早的 Photoshop 版本无法运行调色工具。'

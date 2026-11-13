@@ -1,0 +1,6 @@
+url: https://github.com/wufengwind/dsh-plugin-dm-ops
+name: wufengwind/dsh-plugin-dm-ops
+category: tools
+description:
+  en: Requires JDK 11+, the DM JDBC driver and SSH access to the target instance. Inspect Dameng database instances, assess security and recovery conditions, and generate filterable reports with shared evidence.
+  zh: 需 JDK 11+、达梦 JDBC 驱动与目标实例的 SSH 访问。巡检达梦数据库实例、评估安全与恢复条件，生成支持筛选和共享证据的报告。

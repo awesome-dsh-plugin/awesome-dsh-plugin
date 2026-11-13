@@ -1,0 +1,6 @@
+url: https://github.com/dixieWithHeart/dsh-notify-chime
+name: dixieWithHeart/dsh-notify-chime
+category: notify
+description:
+  en: Plays a distinct chime when a turn finishes, is interrupted, fails, or asks a question, and can show a Windows toast for questions.
+  zh: 回合完成、中断、出错或 Agent 提问时播放可区分的提示音，提问时可弹 Windows 系统通知。

@@ -1,0 +1,6 @@
+url: https://github.com/ingk888766-cloud/dsh-manage-deletion
+name: ingk888766-cloud/dsh-manage-deletion
+category: session
+description:
+  en: 'Delete sessions, optionally with the files each session wrote; deletions go to a trash that lists them by time and restores one or many; a session with a running turn is refused and nothing outside that session folder is touched.'
+  zh: '删会话，可选择是否带上它写过的文件；删掉的进回收站，按时间列出，可单条或批量还原；正在跑的会话会被拒绝，会话目录以外的文件不动。'

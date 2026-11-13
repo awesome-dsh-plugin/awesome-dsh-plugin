@@ -1,0 +1,7 @@
+url: https://github.com/BeastyZ/dsh-remote-agent
+name: BeastyZ/dsh-remote-agent
+category: remote
+description:
+  en: 'SSH workbench for launching remote agent CLIs with durable sessions, terminal, file editing, Git worktrees and local port forwarding. It drives the local OpenSSH client (macOS/Linux; remote Linux with GNU coreutils, tmux optional) to run commands, edit files and forward ports on any host from ~/.ssh/config, with host-key checking defaulting to accept-new; the last 512K characters of each terminal''s output are saved under ~/.dsh/remote-agent/terminals. It uses the same package name and mount id as zbzbhs/dsh-remote-agent, so the two collide if installed together.'
+  zh: '连接 Linux 服务器的 Agent 工作台，支持持久会话、远程终端、文件编辑、Git worktree 和端口转发。通过本机 OpenSSH 客户端（macOS/Linux；远端为带 GNU coreutils 的 Linux，tmux 可选）在 ~/.ssh/config 里的任意主机上执行命令、编辑文件、做端口转发，主机密钥检查默认 accept-new；每个终端最近 512K 字符的输出会存到 ~/.dsh/remote-agent/terminals。与 zbzbhs/dsh-remote-agent 同包名、同挂载 id，两者同装会冲突。'
+tarball: https://github.com/BeastyZ/dsh-remote-agent/releases/latest/download/dsh-remote-agent.tgz

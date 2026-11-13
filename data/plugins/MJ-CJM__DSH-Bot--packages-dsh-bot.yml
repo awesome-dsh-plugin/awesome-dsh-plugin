@@ -1,0 +1,9 @@
+# Each latest stable Release includes the version-free dsh-bot.tgz asset.
+url: https://github.com/MJ-CJM/DSH-Bot/tree/main/packages/dsh-bot
+name: MJ-CJM/DSH-Bot#dsh-bot
+category: workflow
+description:
+  en: Personal agents with persistent memory, multi-Bot group collaboration and native background tasks for DeepSeek Harness.
+  zh: DeepSeek Harness 个人智能体插件，支持持久记忆、多 Bot 群聊协作和原生后台任务。
+icon: https://raw.githubusercontent.com/MJ-CJM/DSH-Bot/main/packages/dsh-bot/assets/icon-256.png
+tarball: https://github.com/MJ-CJM/DSH-Bot/releases/latest/download/dsh-bot.tgz

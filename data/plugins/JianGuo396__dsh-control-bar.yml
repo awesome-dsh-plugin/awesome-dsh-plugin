@@ -1,0 +1,8 @@
+# 提交到 https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+# 文件路径：data/plugins/JianGuo396__dsh-control-bar.yml
+url: https://github.com/JianGuo396/dsh-control-bar
+name: JianGuo396/dsh-control-bar
+category: ui
+description:
+  en: Pins an always-on-top progress bar while the agent runs a turn — the percentage is estimated from tool calls and filled to 100% when the turn ends — and badges the DeepSeek peak/off-peak pricing window so large token operations ask for confirmation only during peak hours. The bar runs as a separate Electron process and is skipped when no Electron binary is found.
+  zh: 模型跑一次回合时，屏幕顶部常驻一条进度栏（百分比按工具调用次数递增估算，回合结束才补到 100%），并标出当前是 DeepSeek 峰时还是谷时——大额 token 的操作只在峰时先问你一句。进度栏是独立 Electron 进程，找不到 Electron 二进制时会跳过。

@@ -1,0 +1,7 @@
+url: https://github.com/yujiajie01/dsh-sleep-countdown
+name: yujiajie01/dsh-sleep-countdown
+category: notify
+description:
+  en: 'Counts down to 23:30 on workdays in a strip under the composer of the DSH web UI, turning yellow under one hour and red under ten minutes, plays a three-chime alert at the deadline with snooze and dismiss buttons, and a mute toggle persisted in localStorage.'
+  zh: '在 DSH 网页端输入框下方显示工作日 23:30 的睡觉倒计时:不足 1 小时变黄、不足 10 分钟变红,到点播放三组钟声提醒,可再等 10 分钟或关闭,喇叭按钮可静音,设置存于 localStorage。'
+icon: https://raw.githubusercontent.com/yujiajie01/dsh-sleep-countdown/main/assets/icon-180.png

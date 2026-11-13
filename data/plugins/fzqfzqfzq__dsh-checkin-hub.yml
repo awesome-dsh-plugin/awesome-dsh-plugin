@@ -1,0 +1,14 @@
+url: https://github.com/fzqfzqfzq/dsh-checkin-hub
+name: fzqfzqfzq/dsh-checkin-hub
+category: usage
+description:
+  en: 'Sidebar hub for the WorkBuddy, Trae and Qoder connect plugins: one-click or
+    per-platform daily check-in across every pooled account, per-account credit balance
+    with today''s state and expiry, a credit-package breakdown, account add/remove
+    (WorkBuddy OAuth, Qoder PAT), and one-click joining the pool for an account that
+    is signed in but not yet enrolled. It stores no credential and calls no platform
+    API itself.'
+  zh: 侧边栏签到中心，聚合 WorkBuddy、Trae、Qoder 三个连接插件：一键或按平台为号池内每个账号签到，逐条展示积分余额、今日签到状态与到期时间，可展开积分包明细，支持添加/移除账号（WorkBuddy
+    走 OAuth、Qoder 粘贴 PAT），并可一键把已登录但未入池的账号加入号池。插件自身不保存凭证、不直接访问平台 API。
+icon: https://raw.githubusercontent.com/fzqfzqfzq/dsh-checkin-hub/main/assets/icon-180.png
+tarball: https://github.com/fzqfzqfzq/dsh-checkin-hub/releases/download/v1.1.1/dsh-checkin-hub-1.1.1.tgz

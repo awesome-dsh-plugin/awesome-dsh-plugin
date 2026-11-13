@@ -1,0 +1,6 @@
+url: https://github.com/yhan-sun/dsh-agy
+name: yhan-sun/dsh-agy
+category: model
+description:
+  en: 'Brings Google Antigravity (agy CLI) models into DSH with streaming, thinking and native tool cards, a manual multi-account pool with quota and proxy controls, and an optional experimental direct transport. Community fork of amlyczz/dsh-agy-link. Google''s Antigravity FAQ says personal plans do not support wrapping agy in third-party coding agents, so using it may put your Google account at risk of restriction. Needs Node.js 24 or newer and Google''s agy CLI on PATH; the experimental direct mode is off by default.'
+  zh: '通过官方 agy CLI 把 Google Antigravity 模型接入 DSH：流式输出、思考过程与原生工具卡片，默认手动的多账号池带额度与代理设置，另含可选的实验性直连传输。amlyczz/dsh-agy-link 的社区分支。Google 的 Antigravity FAQ 说明个人套餐不支持把 agy 包进第三方编码智能体，使用本插件可能使你的 Google 账号被限制。需要 Node.js 24 及以上和 PATH 里的 Google agy CLI；实验性的直连模式默认关闭。'

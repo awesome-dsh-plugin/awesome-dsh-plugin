@@ -1,0 +1,6 @@
+url: https://github.com/liufeicc/dsh-btw-command
+name: liufeicc/dsh-btw-command
+category: session
+description:
+  en: "Adds a /btw slash command that asks a side question or injects information into a running session without interrupting the main agent."
+  zh: "新增 /btw 斜杠命令：主 agent 运行中也能问一个旁支问题或补充一条信息，不打断当前任务。"

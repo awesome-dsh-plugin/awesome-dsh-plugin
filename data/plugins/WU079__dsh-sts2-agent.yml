@@ -1,0 +1,6 @@
+url: https://github.com/WU079/dsh-sts2-agent
+name: WU079/dsh-sts2-agent
+category: fun
+description:
+  en: 'Lets an AI play Slay the Spire 2: screenshot plus mouse/keyboard tools, a local card lookup, and a readable play log. Requires Windows and Python 3.10 or newer with Pillow.'
+  zh: '让 AI 自己玩《杀戮尖塔 2》：截图＋鼠标键盘工具、本地牌表速查，还有一份能读的游玩日志。需 Windows 与 Python 3.10 及以上版本并安装 Pillow。'

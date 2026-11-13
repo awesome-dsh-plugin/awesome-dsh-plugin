@@ -1,0 +1,7 @@
+url: https://github.com/BH8GCJ/dsh-xp-luna
+name: BH8GCJ/dsh-xp-luna
+category: theme
+description:
+  en: 'Windows XP Luna skin for the DeepSeek Harness Web UI: a blue taskbar sidebar, Luna title bars, translucent conversation and plugin windows with adjustable opacity and blur, and a settings page for importing a wallpaper. Light mode only: the skin removes itself when the host switches to dark.'
+  zh: '为 DeepSeek Harness Web UI 提供 Windows XP Luna 皮肤：蓝色任务栏侧栏、Luna 标题栏、可调节不透明度与模糊的半透明对话及插件窗口，以及可导入壁纸的设置页。仅浅色模式：宿主切到深色时皮肤自动移除。'
+icon: https://raw.githubusercontent.com/BH8GCJ/dsh-xp-luna/main/docs/icon-180.png

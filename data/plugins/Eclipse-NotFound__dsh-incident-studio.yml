@@ -1,0 +1,7 @@
+url: https://github.com/Eclipse-NotFound/dsh-incident-studio
+name: Eclipse-NotFound/dsh-incident-studio
+category: dev
+tarball: https://github.com/Eclipse-NotFound/dsh-incident-studio/releases/latest/download/dsh-incident-studio.tgz
+description:
+  en: 'Screen frames, log lines and (on Windows) key/mouse input on one millisecond timeline: record, mark the failing seconds, box the problem on the frame, then hand the agent a keyframe strip, an animated GIF and the aligned log slice.'
+  zh: '把屏幕画面、日志和（Windows 上）键鼠输入放在同一条毫秒时间轴上：录完标出问题区间、在画面上拖框标注，再把关键帧条带、动图和对齐后的日志切片连同描述一起交给 Agent。'

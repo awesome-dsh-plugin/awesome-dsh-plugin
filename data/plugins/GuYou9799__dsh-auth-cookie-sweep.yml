@@ -1,0 +1,6 @@
+url: https://github.com/GuYou9799/dsh-auth-cookie-sweep
+name: GuYou9799/dsh-auth-cookie-sweep
+category: security
+description:
+  en: "Serves a live /auth-cookie-sweep page showing how full the local Host's cookie jar is, how many random-port launches are left before the 431, and repairs the jar in one click, while stale dsh-auth-* cookies expire automatically and the rescue budget grows to four times the largest jar seen, with no ceiling; DSH 0.2.2-rc.2 fixed only the desktop shell, so browser jars and older releases still accumulate."
+  zh: "由本地 Host 直接渲染一个 /auth-cookie-sweep 体检页，随时看到 cookie 罐有多满、离 16KB 的 431 还能再启动几次，并一键清理；旧 dsh-auth-* cookie 会自动失效，救援额度按历史最大 jar 的 4 倍放大且不设上限。DSH 0.2.2-rc.2 只修了桌面版外壳，浏览器里的 jar 与旧版本仍会累积。"

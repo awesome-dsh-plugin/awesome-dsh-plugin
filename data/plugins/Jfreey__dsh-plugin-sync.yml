@@ -1,0 +1,7 @@
+url: https://github.com/Jfreey/dsh-plugin-sync
+name: Jfreey/dsh-plugin-sync
+category: market
+description:
+  en: 'Back up and restore DSH plugins through your own private GitHub repository — list, versions, configuration and local sources included.'
+  zh: '插件一键备份，换机一键还原：清单、版本、配置与本地插件源码存进自己的 GitHub 私有仓库。'
+icon: https://raw.githubusercontent.com/Jfreey/dsh-plugin-sync/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/wusoudiaowei/dsh-conversation-trash
+name: wusoudiaowei/dsh-conversation-trash
+category: session
+description:
+  en: Recycle bin for conversations - delete a session from the sidebar into a trash folder, undo within 8 seconds, restore or delete forever later.
+  zh: 对话回收站——侧边栏里删除的会话先进入回收站，8 秒内可撤销，之后可恢复或彻底删除。

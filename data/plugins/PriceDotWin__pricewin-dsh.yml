@@ -1,0 +1,7 @@
+url: https://github.com/PriceDotWin/pricewin-dsh
+name: PriceDotWin/pricewin-dsh
+category: tools
+description:
+  en: "Live hotel and flight prices from Booking.com, Agoda, Trip.com, Traveloka and other booking sites, through the remote PriceWin MCP server (no account or API key), plus a travel-search skill. In the Web UI the results show as cards: hotel photo, rating, stay total and one linked price per site; flights with times, stops and each site's fare. Search details are sent to mcp.price.win."
+  zh: "通过远程 PriceWin MCP 服务器（无需账号或 API key）实时比较 Booking.com、Agoda、Trip.com、Traveloka 等预订网站的酒店与机票价格，并附带旅行搜索 skill。在 Web 界面中结果以卡片呈现：酒店照片、评分、整段住宿总价及各网站带链接的价格；航班显示起降时间、经停与各网站票价。搜索条件会发送到 mcp.price.win。"
+icon: https://raw.githubusercontent.com/PriceDotWin/pricewin-dsh/main/assets/icon.png

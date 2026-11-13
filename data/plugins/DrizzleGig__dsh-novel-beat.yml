@@ -1,0 +1,6 @@
+url: https://github.com/DrizzleGig/dsh-novel-beat
+name: DrizzleGig/dsh-novel-beat
+category: workflow
+description:
+  en: 'Does AI sometimes take over your story and decide the plot for you? DSH Novel Beat pauses at key turning points while the AI writes, offers 2-4 distinct directions with their consequences, and waits for your call before continuing. Picks go into a book-wide ledger, and a post-chapter check flags drifted or missing changes.'
+  zh: 'AI 写着写着就替你决定了剧情？「拍板」会在 AI 写作途中遇到关键岔路时暂停，把 2–4 个走向及其代价交给你选；拍板写进全书账本，下一章接着用，写完再做结构核对。'

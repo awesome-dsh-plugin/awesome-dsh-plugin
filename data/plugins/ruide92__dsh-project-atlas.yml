@@ -1,0 +1,8 @@
+url: https://github.com/ruide92/dsh-project-atlas
+name: ruide92/dsh-project-atlas
+category: ui
+description:
+  en: 'Project Atlas: a local-first DSH workbench that gives every project a readable name and one-sentence intent, merges duplicate project folders after confirmation, and tidies stale projects without deleting files.'
+  zh: 'Project Atlas：本地优先的 DSH 项目工作台。给每个项目一个看得懂的名字和一句说明；重复项目确认后合并；久未活动项目一键收起，不删文件。'
+icon: https://raw.githubusercontent.com/ruide92/dsh-project-atlas/main/assets/icon-180.png
+tarball: https://github.com/ruide92/dsh-project-atlas/releases/download/v1.4.1/dsh-project-atlas-1.4.1.tgz

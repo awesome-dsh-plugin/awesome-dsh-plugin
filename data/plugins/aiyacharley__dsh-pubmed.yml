@@ -1,0 +1,6 @@
+url: https://github.com/aiyacharley/dsh-pubmed
+name: aiyacharley/dsh-pubmed
+category: tools
+description:
+  en: 'Literature research toolset registering 26 model tools over PubMed, Europe PMC, OpenAlex, PubTator3 and Semantic Scholar: field-syntax search, ID conversion, bibliographic lookup, citation formatting, MeSH and related-article walking, PubTator bioconcept resolution and relation queries, Europe PMC and Semantic Scholar paging, full-text retrieval, and open-access PDF discovery with optional download. A unified search deduplicates hits across sources and orders results by cross-source hits, then relevance, then citation count; a session knowledge graph with PubTator concept enrichment commits to a persistent user graph and renders as Mermaid. Most sources need no key.'
+  zh: '文献研究工具集，注册 26 个模型工具，覆盖 PubMed、Europe PMC、OpenAlex、PubTator3 与 Semantic Scholar：字段语法检索、ID 互换、残缺引文定位、引文格式化、MeSH 与相关文献追溯、PubTator 生物概念归一与关系查询、Europe PMC 与 Semantic Scholar 翻页检索、全文获取，以及开放获取 PDF 发现（可选下载）。统一检索会跨源去重，排序依次按跨源命中、相关度、被引数；会话知识图谱带 PubTator 概念富集，可提交为持久用户图谱并渲染为 Mermaid。多数数据源无需密钥。'

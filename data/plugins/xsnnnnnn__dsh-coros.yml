@@ -1,0 +1,7 @@
+url: https://github.com/xsnnnnnn/dsh-coros
+name: xsnnnnnn/dsh-coros
+category: tools
+description:
+  en: Bridges the official COROS MCP server into DeepSeek Harness with a self-contained local stdio-to-HTTP bridge and on-device OAuth login, exposing 34 COROS tools on the current endpoint for sleep, HRV, resting heart rate, recovery, training load, activities and FIT files, plus workout and training-plan CRUD and scheduling.
+  zh: 把高驰（COROS）官方 MCP 服务接入 DeepSeek Harness：自包含的本机 stdio↔HTTP 桥 + 本机 OAuth 登录，在当前端点上提供 34 个工具，覆盖睡眠、HRV、静息心率、恢复、训练负荷、活动与 FIT 文件，以及训练课程与训练计划的增删改查和排期。
+icon: https://raw.githubusercontent.com/xsnnnnnn/dsh-coros/main/assets/icon.png

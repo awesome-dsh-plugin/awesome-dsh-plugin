@@ -1,0 +1,6 @@
+url: https://github.com/WhAIthere/dsh-turn-usage
+name: WhAIthere/dsh-turn-usage
+category: usage
+description:
+  en: 'Per-turn cost in CNY, with 本轮 / 今日 / 会话 totals shown above the composer. Tokens are priced by model and by the moment they were spent (peak hours and holidays); native DeepSeek search spend can be folded in when the optional audit plugin is installed.'
+  zh: '按轮显示本轮花费（人民币），输入框上方常驻「本轮 / 今日 / 会话」合计；按模型与花费时刻计价（含峰谷与节假日），装了可选的搜索审计插件后可并入原生 DeepSeek 搜索费用。'

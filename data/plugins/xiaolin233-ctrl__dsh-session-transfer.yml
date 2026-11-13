@@ -1,0 +1,6 @@
+url: https://github.com/xiaolin233-ctrl/dsh-session-transfer
+name: xiaolin233-ctrl/dsh-session-transfer
+category: session
+description:
+  en: 'Adds a "Move to another workspace…" row to every conversation menu: copies the full event log into the target workspace under a new session id (header, title and model preset preserved, delivery markers retargeted), reads the copy back to verify it, attaches it, then archives the original unless you keep it.'
+  zh: '在每个对话的「⋯」菜单里加一行「转移到其他工作区…」：把完整事件日志复制成目标工作区下的新会话（保留 header、标题与模型预设，并改写投递标记），读回校验后挂载，默认归档原会话（可勾选保留）。'

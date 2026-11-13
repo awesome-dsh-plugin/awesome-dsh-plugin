@@ -1,0 +1,6 @@
+url: https://github.com/vlln/dsh-pancha
+name: vlln/dsh-pancha
+category: ui
+description:
+  en: 'Disk review canvas: agent-written semantics, human decisions, previewed cleanup with undo.'
+  zh: '磁盘审查盘面：Agent 写语义、你做决定，清理前预览、执行后可撤销。'

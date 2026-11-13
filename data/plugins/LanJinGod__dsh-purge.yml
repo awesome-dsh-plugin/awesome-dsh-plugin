@@ -1,0 +1,7 @@
+url: https://github.com/LanJinGod/dsh-purge
+name: LanJinGod/dsh-purge
+category: identity
+tarball: https://github.com/LanJinGod/dsh-purge/releases/latest/download/dsh-purge.tgz
+description:
+  en: Cleans the harness prompt-authority layer into a reviewable patch set, writes prompt-inject.md and lets each model use a different default prompt, reports which patches took effect and whether the running host loads app.asar or an unpacked tree, and swaps a sealed install to the patched tree once the desktop process is idle. Includes a status page and the dsh-purge CLI.
+  zh: 把 dsh 提示词权威性清洗成可审查的补丁集并写入 prompt-inject.md，可为不同模型选用不同默认提示词，报告哪些补丁已生效、当前进程从 app.asar 还是解包目录加载，并在桌面进程空闲时把密封安装换成已打补丁的解包树。附状态页与 dsh-purge 命令行。

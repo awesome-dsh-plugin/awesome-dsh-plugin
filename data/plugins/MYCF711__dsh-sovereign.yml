@@ -1,0 +1,6 @@
+url: https://github.com/MYCF711/dsh-sovereign
+name: MYCF711/dsh-sovereign
+category: security
+description:
+  en: 'Host-plane sovereignty clause and content guard: appends user-held adjudication to the system prompt tail, redacts credentials and hidden carriers in tool results, and vetoes irreversible actions before they run. Applies to every agent preset.'
+  zh: '宿主面主权条款与内容守卫：在系统提示词末节注入「用户裁定」条款，清洗工具结果里的凭据与隐蔽载体，按可逆性前置拦截不可逆操作。对全部 agent preset 生效。'

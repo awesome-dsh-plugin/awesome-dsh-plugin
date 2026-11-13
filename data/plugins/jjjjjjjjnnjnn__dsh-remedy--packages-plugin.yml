@@ -1,0 +1,7 @@
+# One entry per file; the generated READMEs are not edited by hand.
+url: https://github.com/jjjjjjjjnnjnn/dsh-remedy/tree/main/packages/plugin
+name: jjjjjjjjnnjnn/dsh-remedy#dsh-remedy
+category: dev
+description:
+  en: 'A patch set for DeepSeek Harness that repairs fused tool-call argument text at the llm/stream seam and re-throws whatever it cannot prove: a call is dispatched only when every fragment parses to a plain object, the first call keeps its id and synthesized ones are marked, and a stream that cannot be split keeps its original error instead of a success. It also listens on agent/request-error to name the deterministic refusals it will not retry, answers per failure class which patch covers it and whether that patch is switched on in the profile you point it at, and reads multi-frame zstd session logs offline to count every turn ending and every error code. Everything it claims is registered with the seam it touches and the limits it does not cross; the resolver never invents a value and never downgrades a configured setting.'
+  zh: 'DeepSeek Harness 的补丁集：在 llm/stream 接缝上修复粘连的工具调用参数，证不出来的原样抛回——只有每个片段都能解析成普通对象才派发，首个调用保留原 id、合成调用有标记，拆不开的流保留原始错误而不是伪装成功。它还挂在 agent/request-error 上命名那些不重试的确定性拒绝，按失败类回答哪个补丁覆盖它、以及它在你指定的 profile 里是否启用，并离线读取多帧 zstd 会话日志统计每种 turn 结束方式与每个错误码。它的每条断言都登记了接缝与不越过的边界；决策层从不凭空造值，也从不擅自降档。'

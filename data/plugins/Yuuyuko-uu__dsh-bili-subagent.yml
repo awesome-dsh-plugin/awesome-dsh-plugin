@@ -1,0 +1,6 @@
+url: https://github.com/Yuuyuko-uu/dsh-bili-subagent
+name: Yuuyuko-uu/dsh-bili-subagent
+category: tools
+description:
+  en: Lets the agent scan Bilibili through a subagent and report what is worth watching, with per-video notes, a card wall, and an inbox for mentions, replies and shared videos.
+  zh: 派子代理去刷 B站，回报值得看的视频，带每条视频的笔记、卡片墙，以及 @/回复/私信转发的收件箱。

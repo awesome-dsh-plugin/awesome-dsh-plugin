@@ -1,0 +1,8 @@
+url: https://github.com/KOGGUA-EDIT/dsh-pet-sayaka
+tarball: https://github.com/KOGGUA-EDIT/dsh-pet-sayaka/releases/download/v1.1.1/dsh-pet-sayaka-1.1.1.tgz
+name: KOGGUA-EDIT/dsh-pet-sayaka
+category: fun
+description:
+  en: 'Sayaka Miki desktop pet for the DeepSeek Harness Web UI: twelve hand-drawn sprites follow the live session state and swap instantly, with a tired slump after a turn, a furious second stage after ten pokes, and idle sword-polishing; repeated states change her line and a voice line plays every five to eight encounters.'
+  zh: '美树沙耶香桌宠：把会话状态映射成十二张立绘并啪地直接切换——一轮对话跑完会累倒、连点十下会气炸、闲着会擦剑吹口哨；同类状态连着来她会换话变脸，每种状态每碰 5~8 次播一次语音，台词还配了专属录音。'
+icon: https://raw.githubusercontent.com/KOGGUA-EDIT/dsh-pet-sayaka/main/assets/pet/shy.png

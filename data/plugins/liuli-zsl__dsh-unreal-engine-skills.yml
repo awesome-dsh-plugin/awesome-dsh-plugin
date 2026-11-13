@@ -1,0 +1,6 @@
+url: https://github.com/liuli-zsl/dsh-unreal-engine-skills
+name: liuli-zsl/dsh-unreal-engine-skills
+category: skill
+description:
+  en: Registers Epic's Unreal Engine skills (unreal-mcp, create-toolset, unreal-skill), injects Unreal project context, and connects the editor's ModelContextProtocol server with a port form on the Plugins page.
+  zh: 注册 Epic 的 Unreal Engine 三个技能（unreal-mcp、create-toolset、unreal-skill），注入 UE 工程上下文，接通编辑器的 ModelContextProtocol 服务器，并支持在插件页修改端口。

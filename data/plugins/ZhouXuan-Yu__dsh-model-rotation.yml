@@ -1,0 +1,6 @@
+url: https://github.com/ZhouXuan-Yu/dsh-model-rotation
+name: ZhouXuan-Yu/dsh-model-rotation
+category: model
+description:
+  en: 'Model rotation for DeepSeek Harness: groups each provider''s models by source, orders them by hand or by measured success rate and latency, stores model plus reasoning-effort presets, falls over to the next entry when a model hits its quota or is unavailable, resends the same step on the next model, and shows which model actually answered. Uses the models of whatever provider plugins are already installed (Antigravity accounts, Codex subscription, DeepSeek API keys); it does not provide model access itself.'
+  zh: '按来源分组的模型轮询：把每个 provider 的模型按来源分组，可手动排序，也可按成功率和延迟自动排序；支持「模型 + 思考强度」预设；某一档额度用尽或不可用时自动切到下一档，并用下一档把同一步重新发一次；会话头显示本次回答由哪个模型产出。使用已安装的 provider 插件（agy 账号池、Codex 订阅、DeepSeek API Key）提供的模型，插件本身不提供模型接入。'

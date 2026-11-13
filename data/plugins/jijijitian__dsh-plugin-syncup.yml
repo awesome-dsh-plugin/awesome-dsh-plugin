@@ -1,0 +1,6 @@
+url: https://github.com/jijijitian/dsh-plugin-syncup
+name: jijijitian/dsh-plugin-syncup
+category: dev
+description:
+  en: 'Keeps plugin inventories in sync across machines through a secret GitHub Gist, and updates installed plugins to their newest npm or GitHub release. Push shows a diff first: version conflicts default to the newer side, entries only the Gist has stay by default, and entries only the local machine has are pushed. Each update can pick the npm or the GitHub channel, and every install goes through the plugin manager with a live log.'
+  zh: '通过私有 GitHub Gist 在多台机器间同步插件清单，并把已装插件更新到 npm 或 GitHub 上的最新发布版。推送前先展示差异：版本冲突默认取较新一方，仅线上有的条目默认保留，仅本机有的直接推送。每次更新可逐项选择 npm 或 GitHub 通道，安装全程走插件管理器并输出实时日志。'

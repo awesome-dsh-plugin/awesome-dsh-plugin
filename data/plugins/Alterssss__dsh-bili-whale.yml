@@ -1,0 +1,6 @@
+url: https://github.com/Alterssss/dsh-bili-whale
+name: Alterssss/dsh-bili-whale
+category: fun
+description:
+  en: A Bilibili companion that keeps its own schedule. A 60-second tick in the plugin host wakes a dedicated agent session at a random moment inside the configured time windows (opting out of a day is a configurable chance), then hands it a bundled CLI of 38 subcommands — feed, subtitles, danmaku, comments, ffmpeg frame grabs, and two diaries. Shares at most N items a day by commenting on them and @-mentioning the owner (default 3, enforced from a written quota log, and it stops on rate-limit or captcha signals). Also polls comment replies, direct messages and live-room danmaku; replies to anyone but the owner are queued for approval in Settings. Settings → 养鱼 writes ~/.dsh/bili-whale.config.json; cookies live separately in ~/.bili-ai/credentials.json and are never echoed back. The HTTP routes are loopback-only behind DSH's trust fence. Needs Node 18+ and ffmpeg on PATH for frame extraction.
+  zh: 一条按自己作息过日子的 B 站插件：宿主里每 60 秒一次心跳，在设定的作息窗口里随机挑一个时刻叫醒专用会话（今天不想看是按概率跳过），再交给自带的 38 个子命令——信息流、字幕、弹幕、评论、ffmpeg 抽帧、两本日记。每天最多发 N 条评论/动态并 @ 主人（默认 3，按配额账本计数，撞到限流或验证码就停手）。同时轮询评论回复、私信和直播间弹幕；除主人以外的回复先入队，等主人在设置页批准。设置 → 养鱼 写 ~/.dsh/bili-whale.config.json；cookie 单独在 ~/.bili-ai/credentials.json，只写不回显。HTTP 路由只认回环地址并过 DSH 信任栅栏。抽帧需要 Node 18+ 与 ffmpeg。

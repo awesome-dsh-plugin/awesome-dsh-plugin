@@ -1,0 +1,8 @@
+url: https://github.com/CadilarcZhang/dsh-constitution
+name: CadilarcZhang/dsh-constitution
+category: session
+description:
+  en: 'A sidebar panel holding your personal global constitution: the text is kept in one Markdown file and injected into the system prompt of every session, the dsh counterpart of AGENTS.md and CLAUDE.md. An empty file contributes nothing.'
+  zh: '侧栏里的「全局宪法」：把跨会话生效的做事准则沉淀到一个 Markdown 文件，每次模型调用都会注入系统提示，相当于 dsh 里的 AGENTS.md／CLAUDE.md；文件为空时不注入任何内容。'
+icon: https://raw.githubusercontent.com/CadilarcZhang/dsh-constitution/main/assets/icon-180.png
+tarball: https://github.com/CadilarcZhang/dsh-constitution/releases/latest/download/dsh-constitution.tgz

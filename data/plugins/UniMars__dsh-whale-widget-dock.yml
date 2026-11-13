@@ -1,0 +1,6 @@
+url: https://github.com/UniMars/dsh-whale-widget-dock
+name: UniMars/dsh-whale-widget-dock
+category: ui
+description:
+  en: Docks the dsh-whale-widget desktop pet flush against the right sidebar edge, following sidebar width changes and collapse/expand, with a toggle in the widget menu.
+  zh: 让 dsh-whale-widget 桌宠紧贴右侧栏边缘：展开时贴其左缘、折叠时贴窗口右缘，右栏改宽时实时跟随，开关在挂件菜单里。

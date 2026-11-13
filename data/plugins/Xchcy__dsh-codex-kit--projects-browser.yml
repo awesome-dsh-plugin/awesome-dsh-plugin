@@ -1,0 +1,6 @@
+url: https://github.com/Xchcy/dsh-codex-kit/tree/main/projects-browser
+name: Xchcy/dsh-codex-kit#projects-browser
+category: ui
+description:
+  en: 'Replaces the sidebar workspace list with a Codex-style browser: sticky Pinned / Projects / Recent sections, status marks for working, awaiting approval, interrupted, and completed sessions, right-click sorting plus workspace rename and delete, and per-session pin and archive menus.'
+  zh: '把侧边栏的工作区列表替换成 Codex 风格的浏览器：置顶 / 项目 / 最近三个分区标题滚动时固定在顶部，行首标记正在工作、等待审批、意外停止和已完成四种状态，支持右键切换排序、重命名和删除工作区，以及会话行的置顶和归档菜单。'

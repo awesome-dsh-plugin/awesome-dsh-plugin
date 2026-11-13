@@ -1,0 +1,7 @@
+url: https://github.com/peilopielo/dsh-Visualization
+name: peilopielo/dsh-Visualization
+category: ui
+icon: https://raw.githubusercontent.com/peilopielo/dsh-Visualization/main/assets/icon-180.png
+description:
+  en: 'Turns a live session into a layered instrument: seven toggleable rings (session, steps, skills, tools, jobs, approvals, file changes), a per-turn timeline, hover and click on every ring node, and per-step ladders drawn beneath the rings. It reads the session log directly and updates as the conversation runs, in Chinese and English.'
+  zh: '把 DSH 会话画成分层仪表的插件：七层可开关的环（会话、步骤、技能、工具、任务、审批、文件变更）、逐轮时间线、环上任意节点可悬停看名称并点击看详情、连线画在环的下层；直接读会话日志，随对话实时演进，界面中英双语。'

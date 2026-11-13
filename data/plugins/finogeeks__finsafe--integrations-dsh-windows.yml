@@ -1,0 +1,7 @@
+url: https://github.com/finogeeks/finsafe/tree/main/integrations/dsh/windows
+name: finogeeks/finsafe#finshield
+category: security
+description:
+  en: 'Windows sandbox for DSH Desktop: once set up, the Host is launched through FinSAFE inside an AppContainer sandbox for protection against what agents can reach on the machine. Windows x64 only; on first activation it downloads and installs the matching FinSAFE native runtime (SHA256-checked, with Windows consent) and leaves an updater process running.'
+  zh: 'DSH Desktop 的 Windows 沙箱：设置完成后，Host 会经 FinSAFE 在 AppContainer 沙箱里启动，限制智能体能触及的本机范围。仅限 Windows x64；首次激活会下载并安装匹配的 FinSAFE 原生运行时（校验 SHA256，需 Windows 授权），并留下一个常驻的更新器进程。'
+icon: https://raw.githubusercontent.com/finogeeks/finsafe/main/integrations/dsh/windows/assets/finshield.png

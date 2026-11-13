@@ -1,0 +1,7 @@
+url: https://github.com/474885697-alt/dsh-kit/tree/main/plugins/dsh-auto-skill
+name: 474885697-alt/dsh-kit#dsh-auto-skill
+category: skill
+tarball: https://github.com/474885697-alt/dsh-kit/releases/download/v0.1.0/dsh-auto-skill-0.2.0.tgz
+description:
+  zh: "按当前任务自动挑选并注入最合适的技能，无需点名或手动插入；同一技能每次会话只注入一次，并可从有效操作中积累经验。"
+  en: "Matches each new task against installed skills with deterministic keyword scoring and injects the best one without being asked; records effective operations as per-skill notes for later runs."

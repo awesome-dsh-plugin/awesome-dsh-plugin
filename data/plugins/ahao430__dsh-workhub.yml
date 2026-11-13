@@ -1,0 +1,7 @@
+url: https://github.com/ahao430/dsh-workhub
+name: ahao430/dsh-workhub
+category: tools
+description:
+  en: 'Work-data hub for DingTalk and Yunxiao: syncs todos, logs, meeting notes, attendance, schedules, projects, requirements, commits and worklogs into local SQLite, then renders dashboards, a work calendar, project analysis and reports, with workhub_* agent tools over the same data. Requires the DWS CLI installed and logged in (`dws auth login`); the Yunxiao PAT is stored in the macOS Keychain only.'
+  zh: '钉钉与云效的个人工作数据中心：把待办、日志、AI 听记、考勤、日程、项目、需求、代码提交与报工同步到本地 SQLite，展示驾驶舱、工作日历、项目分析与智能报告，并向 Agent 提供 workhub_* 工具。需先安装并登录 DWS CLI（`dws auth login`）；云效 PAT 仅存 macOS 钥匙串。'
+icon: https://raw.githubusercontent.com/ahao430/dsh-workhub/main/assets/icon-180.png

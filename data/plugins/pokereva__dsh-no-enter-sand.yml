@@ -1,0 +1,7 @@
+url: https://github.com/pokereva/dsh-no-enter-sand
+name: pokereva/dsh-no-enter-sand
+category: ui
+description:
+  en: 'Takes Enter away from sending in the DSH composer: Enter inserts a line break, every Ctrl/Cmd/Alt+Enter variant is swallowed, and messages leave only from the send button. A gray hint in the input box says so before the first keystroke and stays beside the button while typing.'
+  zh: '让 Enter 不再发送：在 DSH 输入框里按 Enter 只换行，Ctrl/Cmd/Alt+Enter 一律吞掉，消息只能点发送按钮发出去。输入框灰字提示「已屏蔽Enter 发送」，空输入时接在占位符后面，开始打字后常驻发送按钮左侧。'
+icon: https://raw.githubusercontent.com/pokereva/dsh-no-enter-sand/main/assets/icon-180.png

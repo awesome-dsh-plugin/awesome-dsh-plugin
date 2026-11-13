@@ -1,0 +1,6 @@
+url: https://github.com/yiyunet/dsh-chatgpt-connect
+name: yiyunet/dsh-chatgpt-connect
+category: model
+description:
+  en: 'DSH plugin: bring your ChatGPT subscription into DeepSeek Harness — Codex models, GPT Image, quota and recovery checks, plus a per-plugin scoped HTTP(S) proxy. Community alpha fork of dsh-codex-connect, published on the alpha dist-tag; it registers the same openai-codex provider, so it cannot be installed alongside the upstream plugin; the image, quota and proxy features are opt-in and off by default.'
+  zh: 'DSH 插件：把你的 ChatGPT 订阅接进 DeepSeek Harness——Codex 模型、GPT Image、额度与恢复检查，以及按插件隔离的 HTTP(S) 代理。dsh-codex-connect 的社区 alpha 分支，npm 走 alpha 通道；它注册同一个 openai-codex provider，不能与上游插件同装；图像、额度与代理功能默认关闭，需在设置里开启。'

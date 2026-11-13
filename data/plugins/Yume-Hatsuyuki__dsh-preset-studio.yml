@@ -1,0 +1,6 @@
+url: https://github.com/Yume-Hatsuyuki/dsh-preset-studio
+name: Yume-Hatsuyuki/dsh-preset-studio
+category: ui
+description:
+  en: Create and edit your own Agent presets with a form in Settings, covering id, name, description, order, and the plugin composition.
+  zh: 在设置里用表单创建和修改自己的 Agent 预设，覆盖 id、名称、描述、顺序与插件组合。

@@ -1,0 +1,8 @@
+# Entry for the awesome-dsh-plugin list.
+url: https://github.com/zirscard/dsh-context-extract
+name: zirscard/dsh-context-extract
+category: tools
+description:
+  en: 'Registers one `context_extract` tool for DeepSeek Harness: it compresses a long raw document (financial report, contract, ledger) into dense structured Markdown plus JSON — key metrics, tables, numbered clauses, entities and cross-check alerts — so a downstream pipeline can work from the compressed form instead of re-reading the raw document. Financial statements, legal contracts and business ledgers are detected and handled differently; balance-sheet and cash tie-outs are run and mismatches are flagged as alerts rather than silently fixed. Read-only; never modifies the source file. Requires Python with openpyxl and python-docx.'
+  zh: '为 DeepSeek Harness 注册一个 `context_extract` 工具：把长篇原始文件（财报底稿、合同、台账）压成高密度结构化 Markdown + JSON——关键指标、表格、条款切分、实体与勾稽 alert，让下游流程直接基于压缩结果工作，而不是重读原文。财报 / 合同 / 台账分别走不同解析路径；资产负债表与现金勾稽不平只报 alert，不静默修正。只读，不改原文件。需 Python 并安装 openpyxl 与 python-docx。'
+tarball: https://github.com/zirscard/dsh-context-extract/releases/download/v0.1.0/dsh-context-extract.tgz

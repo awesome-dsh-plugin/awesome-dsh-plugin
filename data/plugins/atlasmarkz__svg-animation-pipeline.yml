@@ -1,0 +1,8 @@
+url: https://github.com/atlasmarkz/svg-animation-pipeline
+name: atlasmarkz/svg-animation-pipeline
+category: tools
+tarball: https://github.com/atlasmarkz/svg-animation-pipeline/releases/download/v1.1.2/svg-animation-pipeline-1.1.2.tgz
+description:
+  en: 'Renders an SVG with CSS, SMIL or keyframe animation into a deterministic animated GIF, MP4 or WebM, exposing one DSH tool for frame-accurate loops and diagrams.'
+  zh: '把带 CSS、SMIL 或关键帧的 SVG 渲染为确定性的 GIF、MP4 或 WebM，并提供一个 DSH 工具用于逐帧精确的循环动画与图表。'
+icon: https://raw.githubusercontent.com/atlasmarkz/svg-animation-pipeline/main/assets/icon-180.png

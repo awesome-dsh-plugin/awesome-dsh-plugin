@@ -1,0 +1,7 @@
+url: https://github.com/l246804/dsh-pstack
+name: l246804/dsh-pstack
+category: workflow
+description:
+  en: 'Ports the pstack agent workflow system to dsh: 58 pstack skills, 23 playbooks, four native tools and five agent presets, with skill routing, role-based model configuration and role-routed subagents.'
+  zh: '将 pstack 工作流体系移植到 dsh：58 个 pstack 技能、23 个 playbook、4 个原生工具与 5 个 agent preset，附带技能路由、按角色分配模型与按角色路由的子代理。'
+icon: https://raw.githubusercontent.com/l246804/dsh-pstack/main/assets/logo.png

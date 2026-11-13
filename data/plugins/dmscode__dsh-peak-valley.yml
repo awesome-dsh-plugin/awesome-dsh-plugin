@@ -1,0 +1,7 @@
+url: https://github.com/dmscode/dsh-peak-valley
+name: dmscode/dsh-peak-valley
+category: ui
+description:
+  en: Tints the strip above the composer green or red to match DeepSeek's off-peak and peak billing windows, shows the remaining time of the current window as a progress bar, and ships six themes plus a custom-CSS hook.
+  zh: 按 DeepSeek 峰谷计费时段给输入卡上方那条染色（谷绿峰红），以进度条显示当前时段剩余时长，带六套主题与自定义 CSS。
+icon: https://raw.githubusercontent.com/dmscode/dsh-peak-valley/main/assets/icon-512.png

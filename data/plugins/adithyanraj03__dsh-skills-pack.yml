@@ -1,0 +1,7 @@
+url: https://github.com/adithyanraj03/dsh-skills-pack
+name: adithyanraj03/dsh-skills-pack
+category: skill
+description:
+  en: 'Registers 36 bundled agent skills (research writing, LaTeX, experiments, design review, office documents, animation, Windows shell and dsh plugin conventions) as one host-only skill provider with no UI, no network calls and no telemetry of its own; skill scripts run with the user''s permissions only when invoked, local skills of the same name take priority, and uninstall removes all 36.'
+  zh: '把 36 个内置 agent 技能（科研写作、LaTeX、实验、设计评审、办公文档、动画、Windows shell 与 dsh 插件规范）注册为一个纯宿主侧的技能提供者：没有界面、没有网络请求，也没有自己的遥测；技能脚本以用户的权限运行。'
+tarball: https://github.com/adithyanraj03/dsh-skills-pack/releases/latest/download/plugin.tgz

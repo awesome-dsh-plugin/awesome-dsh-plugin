@@ -1,0 +1,6 @@
+url: https://github.com/Yuuyuko-uu/dsh-speak-up
+name: Yuuyuko-uu/dsh-speak-up
+category: workflow
+description:
+  en: Lets the agent start a conversation on its own, using a local dice roll on a set interval to decide whether to speak into a chosen session, with quiet hours and a dry-run mode.
+  zh: 让 AI 伙伴自己起个话头：按设定间隔掷一次本地骰子决定要不要往指定会话里说话，带安静时段与试运行。

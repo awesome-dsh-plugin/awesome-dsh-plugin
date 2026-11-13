@@ -1,0 +1,7 @@
+url: https://github.com/xiayifan1024/dsh-pdf-math-reader
+name: xiayifan1024/dsh-pdf-math-reader
+category: docs
+description:
+  en: 'Bilingual PDF reader for DeepSeek Harness that translates paragraph by paragraph: single-page, selected-text and full-document translation with a prompt that asks the model to keep formulas, citations and DOIs, a glossary that forces chosen terms, bilingual / translation-only / source-only views, per-paragraph notes with page highlights, document Q&A, and Markdown / printable HTML export.'
+  zh: 'DeepSeek Harness 的段落级双语 PDF 阅读器：支持单页、选中文本与全文翻译，提示词要求保留公式、引用与 DOI；术语表强制指定译名，提供双语/仅译文/仅原文三种视图，段落笔记带页面高亮，可基于文档提问，并导出 Markdown 与可打印 HTML。'
+icon: https://raw.githubusercontent.com/xiayifan1024/dsh-pdf-math-reader/main/assets/icon-512.png

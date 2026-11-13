@@ -1,0 +1,7 @@
+url: https://github.com/haaahhhis/MultiGameAssistant/tree/main/packages/dsh-plugin
+name: haaahhhis/MultiGameAssistant#dsh-plugin
+category: workflow
+description:
+  en: Manages game automation scripts from dsh on Windows. Installs and updates scripts such as MAA, runs them in scheduled pipelines, watches their logs and hands failures and stalls to an agent, and tracks game events.
+  zh: 在 dsh 里管理游戏自动化脚本（仅 Windows）：安装和更新 MAA 等脚本，按定时流水线运行，监看日志并把出错和卡住交给 agent 处理，还会记录游戏活动。
+tarball: https://github.com/haaahhhis/MultiGameAssistant/releases/latest/download/dsh-multigameassistant.tgz

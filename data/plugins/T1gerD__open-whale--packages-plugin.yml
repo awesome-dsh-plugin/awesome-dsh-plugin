@@ -1,0 +1,7 @@
+name: T1gerD/open-whale#dsh-openwhale
+url: https://github.com/T1gerD/open-whale/tree/main/packages/plugin
+category: remote
+description:
+  en: Turns a phone into a personal assistant for the DeepSeek Harness on your computer — pair once by QR code, then chat, send photos and files, watch replies stream, and collaborate from several phones at once over LAN, Tailscale or a public tunnel. Ships an Android app, an iOS build pipeline and a zero-install web/PWA client for HarmonyOS and iOS browsers.
+  zh: 把手机变成你这台电脑上 DeepSeek Harness 的个人助理——扫一次码即可远程聊天、收发图片与文件、看回复流式输出，多台手机还能在同一会话里协作；连接方式可选局域网 / Tailscale / 公网隧道。附带安卓安装包、iOS 构建流水线，以及鸿蒙和 iOS 浏览器可直接用的网页版客户端。
+tarball: https://github.com/T1gerD/open-whale/releases/latest/download/dsh-openwhale.tgz

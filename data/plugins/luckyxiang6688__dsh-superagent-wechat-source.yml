@@ -1,0 +1,6 @@
+url: https://github.com/luckyxiang6688/dsh-superagent-wechat-source
+name: luckyxiang6688/dsh-superagent-wechat-source
+category: remote
+description:
+  en: 'Connects personal WeChat direct messages as a dsh-superagent Source, so private-chat text becomes a trigger for the orchestrator, accepted tasks run as work orders, and results are replied to the same chat; group and non-text messages are dropped. Only WeChat users on the superagent policy''s allow-list are assessed; the list is empty by default, so every DM is ignored until you add your own ilink_user_id.'
+  zh: '把个人微信私聊接成 dsh-superagent 的来源：私聊文本变成 Trigger 交给主控裁定，接下的任务建成工单执行，结果回帖到同一个对话；群消息与非文本消息直接丢弃。只有 superagent 策略白名单里的微信用户会被裁定；白名单默认为空，在你填入自己的 ilink_user_id 之前所有私聊都会被忽略。'

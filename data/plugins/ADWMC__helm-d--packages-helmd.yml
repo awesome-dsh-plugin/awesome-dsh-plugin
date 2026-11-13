@@ -1,7 +1,7 @@
 url: https://github.com/ADWMC/helm-d/tree/main/packages/helmd
 name: ADWMC/helm-d#helmd
 category: security
-tarball: https://github.com/ADWMC/helm-d/releases/latest/download/helmd.tgz
+tarball: https://github.com/ADWMC/helm-d/releases/download/v0.5.2/helmd.tgz
 description:
-  en: 'Single-bundle reverse-engineering and pentest security plugin: first-turn tool narrowing, domain routing, and 33 tools covering APK, web, native binary, protocol, malware and LLM samples — with unpacking, license-bypass and anti-analysis case playbooks, an H-CoT evaluation engine (semantic routing, /hcot command), a web workbench with a ledger-driven tool shelf, an on-disk case workflow (auto-persisted evidence chain, E-numbered validated findings, post-compaction resume), GitHub-based external tool discovery, and 361 on-demand reference docs.'
-  zh: '单包逆向与渗透测试安全分析插件：首轮工具收敛、领域路由与 33 个工具，覆盖 APK、Web、原生二进制、协议、恶意样本与 LLM 场景的逆向分析、加壳脱壳与 License 破解绕过；内置 H-CoT 评估引擎（语义路由、/hcot 命令）、账本驱动的 Web 工作台与工具货架、磁盘案件工作区（证据链自动存证、E 编号结论校验、上下文压缩后恢复）、GitHub 工具检索与 361 篇按需参考文档。'
+  en: 'Security-analysis plugin for DeepSeek Harness: 33 tools spanning six security domains, evidence/reporting and toolbox, plus the case lifecycle, routing and tool ledger; a session-bound case workflow with an evidence chain, E-id validation and reproducible findings; 362 on-demand references; three hot-swappable persona profiles; and a four-tab workbench (armor / case / intercept / about) with case-state recovery after context compaction.'
+  zh: 'DeepSeek Harness 的安全分析插件：33 个工具覆盖六大安全域、证据/报告与工具集，并提供案件生命周期、路由和工具账本；按会话绑定的案件工作区支持证据链、E 编号校验与可复现结论（repro_cmd）；内置 362 篇按需参考、三档可热切换人设，以及带案件状态恢复的破甲 / Case / 拦截 / 关于四页工作台。'

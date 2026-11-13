@@ -1,0 +1,6 @@
+url: https://github.com/Wizoiz/dsh-skin-keymark
+name: Wizoiz/dsh-skin-keymark
+category: theme
+description:
+  zh: "DSH 壁纸皮肤：静态图/视频/生成式渐变，五种适配方式，模糊暗化对比度饱和度滑条，自动轮播与六种切换过场；「全窗铺开」把同一张壁纸推进侧栏、面板、菜单与窗口标题栏，而不只是对话画布。另对壁纸做 12×8 网格采样，据 WCAG 推导文字颜色与底板透明度，标注只写颜色不产生方框。"
+  en: "Wallpaper skin for DeepSeek Harness: static images, video and generative gradients with five fit modes, blur/dim/contrast/saturation sliders, rotation and six transition styles. A spread mode carries the same artwork into the sidebar, panels, menus and window chrome instead of only the conversation canvas. It also samples the artwork on a 12x8 grid to derive WCAG-checked text colours and surface opacity, and annotates replies with colour only, never boxes."

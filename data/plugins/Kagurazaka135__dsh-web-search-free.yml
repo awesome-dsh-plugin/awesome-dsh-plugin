@@ -1,0 +1,6 @@
+url: https://github.com/Kagurazaka135/dsh-web-search-free
+name: Kagurazaka135/dsh-web-search-free
+category: tools
+description:
+  en: 'A WebSearchProvider that falls back across backends instead of relying on one: Exa, then Bing HTML, then DuckDuckGo HTML, and only then the quota-limited SerpAPI, so the free tiers carry routine searching.'
+  zh: '多后端自动降级的 WebSearchProvider：依次尝试 Exa、Bing HTML、DuckDuckGo HTML，都失败后才动用有额度的 SerpAPI，日常搜索由免费档承担。'

@@ -1,0 +1,6 @@
+url: https://github.com/Lovenndme/dsh-skill-panel
+name: Lovenndme/dsh-skill-panel
+category: skill
+description:
+  en: 'Skill management panel inside DeepSeek Harness settings: lists global and per-project skills, marks whether the running DSH actually loads each one, offers one switch that controls both model and slash-command invocation, previews and edits SKILL.md with the chat UI markdown renderer, and creates, imports (folder or zip) or deletes skills into a recovery folder. It only reads and writes the local skill roots (~/.dsh/skills and <project>/.dsh/skills) through its own Host routes behind the DSH Connection trust fence; no telemetry, no outbound requests, no credentials.'
+  zh: 'DeepSeek Harness 的技能管理面板（设置 → 技能）：按全局 / 本项目两组列出技能，标注 DSH 是否真的加载了它；一个启用开关同时控制模型与 /命令 调用；用聊天界面同款 Markdown 渲染器预览并编辑 SKILL.md；支持新建、从文件夹或 zip 导入、删除到回收目录。只读写本机技能目录（~/.dsh/skills 与 <项目>/.dsh/skills），宿主路由走 DSH 的 Connection 信任围栏；不上报数据、无外发请求、不碰凭据。'

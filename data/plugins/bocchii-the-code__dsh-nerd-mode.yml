@@ -1,0 +1,6 @@
+url: https://github.com/bocchii-the-code/dsh-nerd-mode
+name: bocchii-the-code/dsh-nerd-mode
+category: skill
+description:
+  en: 'Turns an ordinary conversation into a guided study session, keeping progress and lectures as dated files that survive a restart. A Study tab shows how far you have got and which ideas are still shaky without writing anything, and a Lectures tab lists each course''s lectures as draft, dated, or archived.'
+  zh: '把一段普通对话变成会按你的回答调整的引导式学习。插件生成学习记录和讲义；学习进度标签页追踪你的进度和生疏概念；讲义页按课程列出讲义。这些文件持久化到工作区，重启后仍可读取。'

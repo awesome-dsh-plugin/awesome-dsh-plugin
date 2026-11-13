@@ -1,0 +1,6 @@
+url: https://github.com/zhuziddl/my
+name: zhuziddl/my
+category: tools
+description:
+  en: Windows NapCat deployment guide and read-only loopback port checks for DSH, with a user-initiated administrator launcher.
+  zh: Windows NapCat部署指南与本机端口只读检查，附用户手动运行的管理员启动入口。

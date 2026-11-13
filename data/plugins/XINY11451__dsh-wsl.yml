@@ -3,5 +3,5 @@ name: XINY11451/dsh-wsl
 category: wsl
 tarball: https://github.com/XINY11451/dsh-wsl/releases/latest/download/dsh-wsl.tgz
 description:
-  en: 'Linux-native DSH, extended to WSL. Commands run on a real kernel: exit codes, signals, timeouts. One long-lived shell for multi-step work, a clean one for everything else; subtasks stay visible above the composer. Your own terminal stays in the loop — commands in view, keyboard one click away. Path conversion, environment checks, background jobs; destructive commands ask first. Runs as you, below the DSH sandbox (it does not confine it); the in-view terminal exists up to DSH 0.2.0.'
-  zh: '对齐 Linux 原生 DSH 并加以扩展。真实内核之上执行 Linux 命令：退出码、信号、超时。多步任务用一个长期 shell，其余每次全新开始；子任务在输入框上方全程可见。已在使用的终端同样可以协同：命令可见，键盘一键收回。另有路径互转、环境体检、后台作业；危险命令先征得同意。始终以你的身份运行，位于 DSH 沙箱之下（不构成沙箱约束）；「命令可见」的终端仅到 DSH 0.2.0 为止。'
+  en: 'Extends the working range of DSH into WSL. Files in the distribution can be read, written, edited and searched by DSH directly. Depending on the task, the AI chooses for itself: run a one-off command, or open its own terminal and run several commands there to finish the job. Typing `dsh` in a WSL terminal calls DSH (type `dsh help` there for details), fusing WSL and DSH deeply. Every terminal you open can collaborate visually with the AI.'
+  zh: '将 DSH 的工作范围扩展到 WSL。插件支持了发行版中的文件直接被 DSH 读取、写入、编辑与搜索。面对不同任务需求，AI可根据任务需求自行选择执行一次性命令/自建终端执行多条命令以完成任务。支持在 WSL 终端中键入 dsh 命令调用 DSH(详情在 WSL 终端键入dsh help)，深度融合了 WSL 与 DSH。用户新建的所有终端支持与AI可视化协作。'

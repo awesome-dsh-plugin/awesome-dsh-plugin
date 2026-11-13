@@ -1,0 +1,6 @@
+url: https://github.com/aiyacharley/dsh-at-sider
+name: aiyacharley/dsh-at-sider
+category: ui
+description:
+  en: 'Enhances the native right-sidebar Files tab rather than replacing it: each row gets an @ reference button that inserts the canonical path mention into the composer, plus a size column, a sortable modification-time column, and a status dot for untracked, unstaged and staged files. Below the tree a git bar shows the branch with ahead/behind counts and expands upward into the 20 most recent commits, with a repository selector when a workspace has independent repositories in subdirectories. A header search box walks the workspace recursively and can open a result or expand the tree at it, preview tabs offer reveal-in-tree and one-click @, the tree is keyboard navigable with ARIA tree semantics, and a right-click entry on the Files tab switches back to the native tree at runtime.'
+  zh: '增强右侧栏原生的「文件」标签页而非替换它：每行带一个 @ 引用按钮，把规范路径提及插入输入框；另有大小列、可排序的修改时间列，以及按未跟踪/未暂存/已暂存着色的状态点。文件树下方有 git 栏，显示分支与领先/落后数量，并可向上展开最近 20 条提交；当工作区的子目录是独立仓库时提供仓库选择器。页头搜索框递归遍历工作区，可打开结果或在文件树中展开定位；预览页签提供「在文件树中定位」与一键 @；文件树支持键盘导航与 ARIA tree 语义；右键「文件」标签页可在运行时切回原生树。'

@@ -1,0 +1,7 @@
+url: https://github.com/chenqianyu486-sys/dsh-zju-lecture-note
+name: chenqianyu486-sys/dsh-zju-lecture-note
+category: docs
+description:
+  en: 'Turns Zhejiang University classroom replays (classroom.zju.edu.cn) into Markdown study notes plus a matching PDF typeset locally with Typst. Transcripts are public; slide capture is opt-in and needs a ZJU login. Scraping core: nzw806/zju-lecture-summerizer-. Optional fill-in notes use the MIT-licensed scholia Typst template.'
+  zh: '把浙大智云课堂（classroom.zju.edu.cn）回放整理成 Markdown 复习讲义，并在本地用 Typst 排成同名 PDF。字幕公开免登录；投影截图需在插件设置中开启，且需浙大登录态。抓取内核来自 nzw806/zju-lecture-summerizer-；可选填空笔记用 MIT 授权的 scholia 模板。'
+icon: https://raw.githubusercontent.com/chenqianyu486-sys/dsh-zju-lecture-note/main/icon.png

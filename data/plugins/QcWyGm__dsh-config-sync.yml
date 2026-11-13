@@ -1,0 +1,6 @@
+url: https://github.com/QcWyGm/dsh-config-sync
+name: QcWyGm/dsh-config-sync
+category: git
+description:
+  en: 'Tracks the DSH config repo against the copy on this machine (files changed, commits ahead or behind, sessions and skills not captured yet) and generates push, pull and restore scripts that run after the client exits. A blocked pull backs up both sides of every conflicting file so one side can be picked per file; every apply snapshots the profile first, and any snapshot can be restored later. Windows only: the generated sync scripts are PowerShell.'
+  zh: '对比本机与云端 DSH 配置仓库的差异（改了哪些文件、领先或落后几个提交、有没有新会话和新技能还没抓取），并生成客户端退出后执行的推送、拉取与还原脚本。拉取被本地改动挡住时两侧文件都会备份，面板里逐项选择保留哪边；每次应用前自动备份配置，之后可还原到任一份快照。仅限 Windows：生成的同步脚本是 PowerShell。'

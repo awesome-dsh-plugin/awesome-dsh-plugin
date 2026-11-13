@@ -1,7 +1,7 @@
 url: https://github.com/Zian-anson/dsh-prompt-seed
 name: Zian-anson/dsh-prompt-seed
 category: ui
-tarball: https://github.com/Zian-anson/dsh-prompt-seed/releases/download/v0.20.0/dsh-prompt-seed-0.20.0.tgz
+tarball: https://github.com/Zian-anson/dsh-prompt-seed/releases/download/v0.21.1/dsh-prompt-seed-0.21.1.tgz
 description:
   en: 'Rewrites drafts with one model call or predicts the next reply when empty; independent tasks, safe draft replacement, result previews, and original-text recovery.'
   zh: '输入框有内容时单次调用优化草稿，空白时预测下一句；两类任务独立，支持草稿保护、结果预览和原文恢复。'

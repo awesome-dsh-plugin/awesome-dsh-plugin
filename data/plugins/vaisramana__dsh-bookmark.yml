@@ -1,0 +1,6 @@
+url: https://github.com/vaisramana/dsh-bookmark
+name: vaisramana/dsh-bookmark
+category: ui
+description:
+  en: Select text or tables in conversations to bookmark, highlight, and annotate in the right sidebar, with a collapsible all-sessions bookmark page.
+  zh: 在对话中选中文本或表格右键收藏并高亮，在右侧边栏内联添加注释，并提供按会话分组折叠的全局书签页。

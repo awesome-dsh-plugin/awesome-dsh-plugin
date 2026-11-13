@@ -1,0 +1,7 @@
+url: https://github.com/joeseesun/qiaomu-publish-dsh
+name: joeseesun/qiaomu-publish-dsh
+category: docs
+description:
+  en: "Format Markdown with publishing themes, preview the result, and export HTML or long images."
+  zh: "使用发布主题排版 Markdown，预览效果并导出 HTML 或长图。"
+tarball: https://github.com/joeseesun/qiaomu-publish-dsh/releases/download/v0.1.3/qiaomu-publish-dsh-0.1.3.tgz

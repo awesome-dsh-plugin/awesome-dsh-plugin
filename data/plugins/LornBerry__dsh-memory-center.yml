@@ -1,0 +1,6 @@
+url: https://github.com/LornBerry/dsh-memory-center
+name: LornBerry/dsh-memory-center
+category: memory
+description:
+  en: 'Local long-term memory for DSH: browse, search (BM25 + synonyms) and edit entries in a panel; folders, archive and a recycle bin; choose per session what to inject; model-written memories need your approval; import/export backups; optionally sync across devices via your own Git or WebDAV.'
+  zh: 'DSH 的本地长期记忆库：面板里浏览、检索（BM25 + 同义词）、编辑；文件夹、归档、回收站；逐会话决定注入哪些；模型写入的记忆需你确认；可导入导出备份；可选同步到自己的 Git 或 WebDAV 实现多设备。'

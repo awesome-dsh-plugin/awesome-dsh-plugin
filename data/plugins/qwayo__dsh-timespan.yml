@@ -1,0 +1,6 @@
+url: https://github.com/qwayo/dsh-timespan
+name: qwayo/dsh-timespan
+category: usage
+description:
+  en: Tracks online, active and task time in DSH, with a day/week/month dashboard, per-workspace and per-session breakdowns, and a read-only `timespan_stats` tool for agents.
+  zh: 记录 DSH 的在线、活跃与任务三种时长，提供日/周/月仪表盘、按工作区与会话的明细，以及供 Agent 查询的只读 `timespan_stats` 工具。

@@ -1,0 +1,6 @@
+url: https://github.com/GEMJay118/dsh-file-integrity-check
+name: GEMJay118/dsh-file-integrity-check
+category: security
+description:
+  en: 'Right-sidebar panel that scans a DSH workspace on Windows for Low integrity labels on files and directories (quick or deep), restores them to Medium with verification, keeps a snapshot and restore script, and handles objects whose DACL does not grant the owner WRITE_OWNER.'
+  zh: '右侧栏面板：在 Windows 上扫描当前 DSH 工作区文件与目录的 Low 完整性标签（quick / deep），恢复为 Medium 并复扫验证；保留快照与恢复脚本，可处理 DACL 未给 owner WRITE_OWNER 的对象。'

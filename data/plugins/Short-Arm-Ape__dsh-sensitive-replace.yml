@@ -1,0 +1,6 @@
+url: https://github.com/Short-Arm-Ape/dsh-sensitive-replace
+name: Short-Arm-Ape/dsh-sensitive-replace
+category: tools
+description:
+  en: "Sensitive-character replacement for DeepSeek Harness: matches messages and tool results against a YAML blocklist you maintain (global, per provider id, or per model) before the model reads them, and scrubs the outgoing request again before dispatch, so blocked characters cannot trip the official API Content Exists Risk 400."
+  zh: 在模型读取内容之前，按用户维护的 YAML 屏蔽表（全局 / 按 Provider ID / 按模型）替换消息与工具结果中的敏感字符，出网前再清洗一次请求，避免 DeepSeek 官方 API 的 Content Exists Risk 400。

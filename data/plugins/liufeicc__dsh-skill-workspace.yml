@@ -1,0 +1,6 @@
+url: https://github.com/liufeicc/dsh-skill-workspace
+name: liufeicc/dsh-skill-workspace
+category: skill
+description:
+  en: "Moves skills into a configurable directory and lets each workspace choose which skills it enables, avoiding context spent on unused skills."
+  zh: "把技能集中到可配置目录，并按工作区勾选启用的技能，避免每个会话都为用不上的技能付出上下文。"

@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-stock-assistant
+name: mzzsfy/dsh-plugin#dsh-stock-assistant
+category: tools
+description:
+  en: 'Stock workspace for eight markets (Shanghai/Shenzhen A-share, Hong Kong, NYSE and NASDAQ, Tokyo, Korea, London): grouped watchlists with pinning, drag ordering, aliases and price marks, multi-market search, quotes, K-line charts with indicators, a floating ticker and a settings view for data-source and capability routing; the page keeps its state across session switches. No trading or portfolio management. The shared client library is a normal npm dependency of this package, loaded by its own patch line.'
+  zh: '股票工作台:沪/深 A 股、港股、美股 NYSE/NASDAQ、日经、韩证、伦敦八市场的自选(分组/置顶/拖拽排序/别名/价格标记)、多市场搜索、行情、K 线与指标、悬浮盯盘,以及数据源与能力路由设置;切换会话不清空页面状态。不做交易与持仓管理。公共 client 依赖是本包的普通 npm 依赖,由本包自带装载行引入。'
+icon: https://raw.githubusercontent.com/mzzsfy/dsh-plugin/main/assets/icons/png/dsh-stock-assistant.png

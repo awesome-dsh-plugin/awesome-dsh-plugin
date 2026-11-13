@@ -1,0 +1,8 @@
+url: https://github.com/Cluodwaters/dsh-paper-workbench/tree/main/plugins/dsh-paper-workbench
+name: Cluodwaters/dsh-paper-workbench#dsh-paper-workbench
+category: docs
+description:
+  en: 'A local literature workbench for Windows x64 with PDF reading and annotations, automatic initial reading, separate per-paper Harness conversations, and a library assistant that searches metadata and shared summaries.'
+  zh: 'Windows x64 本地文献工作台，支持 PDF 阅读与批注、导入后自动初读、每篇论文独立的 Harness 对话，以及按元数据和共享摘要检索的文献库助手。'
+tarball: https://github.com/Cluodwaters/dsh-paper-workbench/releases/latest/download/dsh-paper-workbench-windows-x64.tgz
+icon: https://raw.githubusercontent.com/Cluodwaters/dsh-paper-workbench/main/plugins/dsh-paper-workbench/assets/market/icon.png

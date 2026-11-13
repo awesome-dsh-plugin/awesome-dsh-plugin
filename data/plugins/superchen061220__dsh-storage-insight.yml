@@ -1,0 +1,7 @@
+url: https://github.com/superchen061220/dsh-storage-insight
+name: superchen061220/dsh-storage-insight
+category: dev
+icon: https://raw.githubusercontent.com/superchen061220/dsh-storage-insight/main/assets/icon-180.png
+description:
+  en: 'A Storage settings page for DeepSeek Harness: a donut of what dsh occupies on this machine (install, sessions, attachments, runtimes, plugins, temp), a drill-down that lists archived sessions and can delete them, and a clean action that only touches rebuildable caches. Deleting to the system Recycle Bin and Open folder are Windows-only; scanning works everywhere. Host routes accept loopback connections only and are CSRF-guarded; nothing leaves the machine.'
+  zh: '为 DeepSeek Harness 增加「存储空间」设置页：环形图展示本机 dsh 占用（程序本体、会话、附件、运行时、插件、临时目录），可按工作区/类型下钻、列出已归档会话并删除，清理只动可再生缓存。系统回收站与打开目录仅 Windows，扫描与统计跨平台可用；宿主路由只接受本机回环连接并有 CSRF 防护，不联网。'

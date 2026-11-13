@@ -1,0 +1,6 @@
+url: https://github.com/BlazeNebula/dsh-todo-notes
+name: BlazeNebula/dsh-todo-notes
+category: ui
+description:
+  en: A three-scope TODO board for DeepSeek Harness (user, workspace and session) with nested folders that can reference one item from several places, T0–T9 priorities, drag reordering, batch actions, a floating panel that also opens as a right-sidebar tab, Markdown preview windows that can stay open with autosaving title and body editing, and agent read/write tools, with every write gated by DSH approval.
+  zh: DeepSeek Harness 的三区 TODO 便签（用户 / 工作区 / 会话）：支持嵌套文件夹与同一条目多处引用、T0~T9 优先级、拖动排序、批量操作、可浮动也可作为右侧栏页签打开的面板、可保留且自动保存标题与正文的 Markdown 预览，以及智能体读工具与每次写入都经 DSH 审批的写工具。

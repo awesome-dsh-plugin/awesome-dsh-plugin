@@ -1,0 +1,6 @@
+url: https://github.com/CC19990113/dsh-plugin-dbgraph/tree/master/packages/bundle
+name: CC19990113/dsh-plugin-dbgraph
+category: dev
+description:
+  en: 'Database structure the agent already knows: dbgraph indexes a remote catalog into local SQLite, answering schema questions offline and fetching data in one query.'
+  zh: '把数据库结构提前索引好：dbgraph 将远端库的 catalog 索引到本地 SQLite，结构问题离线回答、取数只发一次查询。'

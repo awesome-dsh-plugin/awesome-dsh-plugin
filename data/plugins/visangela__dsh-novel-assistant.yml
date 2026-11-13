@@ -1,0 +1,7 @@
+url: https://github.com/visangela/dsh-novel-assistant
+name: visangela/dsh-novel-assistant
+category: workflow
+description:
+  en: 'Long-form fiction workflow for DSH: seven queryable bibles, edit-impact tracking, living relationship and plot maps, and a first-chapter tryout that picks your writer. Its /novel-panel routes, including save, archive and reconcile, are mounted with webServer.register and carry no DSH Host/Origin admission check, so a web page open in your browser can write to the novel project through them.'
+  zh: '长篇小说创作工作流：七份可查账的设定库、改稿影响追踪、活的图谱，以及用试笔稿选写手的机制。它的 /novel-panel 路由（含保存、归档、对账）通过 webServer.register 挂载，没有 DSH 的 Host/Origin 准入检查，所以浏览器里打开的任意网页都能经由它们写入小说项目。'
+tarball: https://github.com/visangela/dsh-novel-assistant/releases/download/v0.26.2/dsh-novel-assistant-0.26.2.tgz

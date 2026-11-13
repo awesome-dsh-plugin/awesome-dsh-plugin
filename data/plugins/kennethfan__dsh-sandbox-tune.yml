@@ -1,0 +1,7 @@
+url: https://github.com/kennethfan/dsh-sandbox-tune
+name: kennethfan/dsh-sandbox-tune
+category: dev
+tarball: https://github.com/kennethfan/dsh-sandbox-tune/releases/latest/download/dsh-sandbox-tune.tgz
+description:
+  en: 'Lets build commands run inside the DSH sandbox instead of asking for elevation on every invocation: redirects pure caches (GOCACHE, NPM_CONFIG_CACHE, BUN_INSTALL_CACHE_DIR, PIP_CACHE_DIR) to a temp root, or grants the real cache directories write access in place so they stay shared with the terminal. Dependency stores (GOMODCACHE, CARGO_HOME) are never redirected, only granted. Adds optional user-directory grants (~/.config and friends, all off by default) and a command allowlist that matches exact strings or per-segment after splitting on &&, ||, ; and |, while rejecting redirects that write files (fd duplication like 2>&1 and /dev/null are allowed), command substitution and backgrounding outright. Settings are per-profile or per-session; file edits apply without a restart.'
+  zh: '让构建命令直接在 DSH 沙箱内跑通，不再每次申请提权：把纯缓存（GOCACHE、NPM_CONFIG_CACHE、BUN_INSTALL_CACHE_DIR、PIP_CACHE_DIR）重定向到临时目录，或原地授权真实缓存目录以与终端共用。依赖仓库（GOMODCACHE、CARGO_HOME）永不重定向，只做授权。另提供可选的用户目录授权（~/.config 等，默认全关）与命令白名单：支持逐字符匹配，或按 &&、||、;、| 拆段后逐段匹配，写文件的重定向（fd 复制如 2>&1 与 /dev/null 除外）、命令替换与后台执行一律拒绝。配置支持按 profile 或按会话生效，改配置文件无需重启。'

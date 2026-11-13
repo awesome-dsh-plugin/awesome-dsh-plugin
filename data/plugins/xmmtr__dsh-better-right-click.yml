@@ -1,0 +1,6 @@
+url: https://github.com/xmmtr/dsh-better-right-click
+name: xmmtr/dsh-better-right-click
+category: ui
+description:
+  en: 'Better Right-Click: right-click menu on file references in the DSH transcript. Copies the absolute path, reveals the file selected in Explorer by reusing and focusing an existing window, and lists every app registered for that file type so you can open it with the one you want. Menu labels follow the DSH display language (Chinese and English). Windows only (Explorer reveal and the registered-apps list use PowerShell).'
+  zh: '给正文里的文件引用加右键菜单：复制绝对路径、在资源管理器中定位并选中文件（复用已打开的窗口并置前）、以及列出本机所有能打开该类型文件的程序让你自己选。菜单文案跟随 DSH 界面语言（中文/英文自动切换）。仅 Windows（资源管理器定位与程序列表依赖 PowerShell）。'

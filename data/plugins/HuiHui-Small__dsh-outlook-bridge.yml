@@ -1,0 +1,7 @@
+url: https://github.com/HuiHui-Small/dsh-outlook-bridge
+name: HuiHui-Small/dsh-outlook-bridge
+category: notify
+description:
+  en: 'Adds an Outlook mailbox and calendar to DeepSeek Harness, with unread badges and AI-assisted email drafts. Sign-in uses the Microsoft Entra app whose client ID you enter in settings; without one it falls back to Microsoft''s own Office client ID, which Microsoft can refuse (personal accounts get AADSTS65002). It requests read/write access to mail (including sending), calendar and To Do. Mail text goes to your configured model for the AI features; the welcome-page weather calls Open-Meteo, and BigDataCloud if you use your location.'
+  zh: '在 DeepSeek 助理中接入 Outlook 邮箱和日历，支持未读角标与 AI 邮件草稿。登录使用你在设置里填写客户端 ID 的 Microsoft Entra 应用；不填则回退到微软自己的 Office 客户端 ID，微软可能拒绝（个人账户会报 AADSTS65002）。申请的权限包括邮件读写与发信、日历和 To Do 读写。AI 功能会把邮件内容交给你配置的模型；欢迎页天气会请求 Open-Meteo，使用当前位置时还会请求 BigDataCloud。'
+tarball: https://github.com/HuiHui-Small/dsh-outlook-bridge/releases/download/v0.4.0/dsh-outlook-bridge-0.4.0.tgz

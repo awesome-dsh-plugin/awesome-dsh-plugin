@@ -1,0 +1,6 @@
+url: https://github.com/WilShi/dsh-astock
+name: WilShi/dsh-astock
+category: tools
+description:
+  en: 'A-share research tools for DeepSeek Harness: stock search, real-time quotes, daily K-line, financials with TTM folding, valuation and Markdown research notes, using key-free public endpoints.'
+  zh: DeepSeek Harness 的 A 股研究工具：个股检索、实时行情、日 K 线、含 TTM 折算的财报、估值测算与 Markdown 研报生成，数据源为免 API Key 的公开接口。

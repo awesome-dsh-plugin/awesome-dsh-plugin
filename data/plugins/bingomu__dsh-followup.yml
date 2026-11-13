@@ -1,0 +1,8 @@
+url: https://github.com/bingomu/dsh-followup
+name: 跟进清单（dsh-followup）
+category: workflow
+description:
+  en: 'Every conversation gets an ending: mark dev-done, release channel and version in the conversation header, see how many items still need attention in the sidebar, and read all unfinished conversations, tasks and schedules in the right-panel ledger.'
+  zh: '让每个对话都有收尾：在对话右上角标记开发完成、发布渠道与版本，左栏显示还有多少没处理，右侧账本列出所有未收尾的对话、任务与定时。'
+icon: https://raw.githubusercontent.com/bingomu/dsh-followup/main/assets/icon-180.png
+tarball: https://github.com/bingomu/dsh-followup/releases/download/v0.2.4/bingomu-dsh-followup-0.2.4.tgz

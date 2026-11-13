@@ -1,0 +1,6 @@
+url: https://github.com/Rearpoem/dsh-link-start
+name: Rearpoem/dsh-link-start
+category: ui
+description:
+  en: 'Replaces the DSH startup screen with an ~18 s anime-style Link Start dive whose check, language, log-in and confirmation scenes show your own DSH status (profile, plugins, default model, workspaces, sessions, UI language). Click or press any key to skip; plays a gentle ~10 s version under reduced motion and lowers effect quality on slow machines. Unofficial fan work.'
+  zh: '把 DSH 启动画面换成约 18 秒、动画风格的 Link Start 连线动画，检测、语言、登录和工作区确认几步显示你这台 DSH 的实际状态（profile、插件、默认模型、工作区、会话、界面语言）。点击或按任意键跳过；系统开启减少动态效果时播约 10 秒的平缓版，慢机器上自动降画质。非官方同人作品。'

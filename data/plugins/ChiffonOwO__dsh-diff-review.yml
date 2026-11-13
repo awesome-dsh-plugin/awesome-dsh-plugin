@@ -1,0 +1,7 @@
+url: https://github.com/ChiffonOwO/dsh-diff-review
+name: ChiffonOwO/dsh-diff-review
+category: ui
+tarball: https://github.com/ChiffonOwO/dsh-diff-review/releases/latest/download/dsh-diff-review.tgz
+description:
+  en: 'Change review for a turn''s edited files: a pill above the composer counts this turn''s files and lines and floats the file list up on hover, and a right-sidebar page shows each file''s diff with syntax highlighting and a one-click revert.'
+  zh: '本轮改动审查：输入框上方的气泡统计本回合改动文件数与行数，悬停时向上浮出文件清单；右侧边栏按标签页展示逐文件语法高亮 diff，并支持一键还原。'

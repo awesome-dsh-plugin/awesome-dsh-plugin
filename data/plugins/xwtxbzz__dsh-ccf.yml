@@ -1,0 +1,6 @@
+url: https://github.com/xwtxbzz/dsh-ccf
+name: xwtxbzz/dsh-ccf
+category: tools
+description:
+  en: "Looks up CCF conference paper deadlines with the ccf_deadlines, ccf_venue and ccf_update tools, the /ccf command and a desktop panel that exports the list as a calendar. Dates come from a live sync (CCFDDL as the main source, a second source cross-checked; a gap of 36 hours or more is flagged as a source conflict), so nothing is bundled and the next 30 days stay in the system prompt."
+  zh: "用 ccf_deadlines、ccf_venue、ccf_update 三个工具、/ccf 命令和可导出日历的桌面面板查 CCF 会议截稿：日期靠实时同步（CCFDDL 为主、另一个源交叉比对，差 36 小时以上标「来源冲突」），插件本身不内置任何日期，首次使用需先同步一次；未来 30 天的截稿会常驻系统提示。"

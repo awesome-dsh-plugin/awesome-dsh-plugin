@@ -1,0 +1,7 @@
+url: https://github.com/Genesi599/dsh-plugins/tree/main/plugins/tool-policy
+name: Genesi599/dsh-plugins#tool-policy
+category: security
+description:
+  en: 'Blocks risky tool-call shapes before execution: inline multi-line Python, forwarded content without a source, missing source labels, and memory writes past the character cap. It also asks for confirmation before shell commands, and one rule is specific to the author''s WeChat sending workflow.'
+  zh: '在执行前拦下高风险的调用形态：内联多行 Python、没有出处的转发内容、缺失来源标签，以及超出字数上限的 memory 写入。它还会在执行 shell 命令前要求确认，其中一条规则是针对作者自己的微信发送流程的。'
+icon: https://raw.githubusercontent.com/Genesi599/dsh-plugins/main/plugins/tool-policy/assets/icon-180.png

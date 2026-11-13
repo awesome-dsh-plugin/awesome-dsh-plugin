@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-take-sheet
+name: dingchenhui0618-arch/dsh-take-sheet
+category: tools
+description:
+  en: 'A conversation-view tab for turning one local reference video into a human-curated shot list. ffmpeg scdet finds shot boundaries, each shot gets one timecoded thumbnail, you untick what you do not need, and the export writes frames.csv (UTF-8 BOM), shots.json, numbered JPEG frames and a labelled contact sheet. Local-only, no upload, zero runtime dependencies, 39 node --test tests including a real-ffmpeg integration case. Requires ffmpeg 5.1+ (with ffprobe) installed separately.'
+  zh: '把一段本地参考视频变成人工策展过的镜头清单：ffmpeg scdet 找镜头切点，每镜一帧带毫秒时间码的缩略图，勾掉不要的帧后导出 frames.csv（UTF-8 BOM）、shots.json、编号 JPEG 和一张带时间码标签的联系表。全程本机处理、不上传，零运行时依赖，39 个 node --test 测试（含真实 ffmpeg 集成用例）。需自行安装 ffmpeg 5.1+（含 ffprobe）。'

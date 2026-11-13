@@ -1,0 +1,7 @@
+url: https://github.com/GinoXiang/dsh-dailyboard
+name: GinoXiang/dsh-dailyboard
+category: ui
+description:
+  en: 'DailyBoard — a daily work task board for the DSH Web GUI with a one-month calendar of colored timeline bars and day tasks, a daily checklist, a seven-day week view with completion checkboxes and drag-to-reschedule, a draggable 24-hour day timeline, ordered per-day subtasks, weekly and every-N-days recurring tasks with per-occurrence result records, a long-term progress view opened from the calendar header, per-day completion for long-term tasks, tasks that can be marked “For others” by choosing one of the added recipients (shown as note + email), a collapsible daily email reminder that can be pushed to WeChat and can remind other people such as partners or relatives (each extra recipient has an email, a note and its own send time), and AI task extraction from natural language with smart date parsing: a single date such as “today” becomes a day task, “this week/month” starts from today unless the text says the work already happened, and pressing Enter in the input box extracts immediately.'
+  zh: 'DailyBoard 是 DSH Web GUI 的日常工作任务板：单月日历（彩色时间条 + 当天任务）、日常清单、七天周视图（勾选完成、可拖动改期）与可拖拽的 24 小时时间轴，支持按天记录的有序子任务、按周几或每隔几天的周期任务及每次出现的结果记录、从日历标题栏打开的长期任务进展视图、长期任务按天完成标记、可从已添加的其他收件邮箱中选择（显示备注与邮箱）的「给他人」任务、可推到微信并提醒他人（如合作伙伴或亲属）的每日邮件提醒（每个其他收件邮箱可填备注和单独发送时间），以及能识别「今天/明天/周几/月日」并把单日任务正确归为当天任务、「本周/本月」默认从今天算起（提到已做/继续才整周整月）、输入框回车即可识别的 AI 自然语言提取。'
+tarball: https://github.com/GinoXiang/dsh-dailyboard/releases/latest/download/dsh-dailyboard.tgz

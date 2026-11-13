@@ -1,0 +1,8 @@
+url: https://github.com/zayyehtut/dsh-github-panel
+name: zayyehtut/dsh-github-panel
+category: ui
+icon: https://raw.githubusercontent.com/zayyehtut/dsh-github-panel/main/assets/icon-180.png
+description:
+  en: 'GitHub panel for DeepSeek Harness: connection status, repository dashboard, profile checklist, and safe metadata edits in one page.'
+  zh: 'DeepSeek Harness 的 GitHub 面板：连接状态、仓库概览、个人资料检查与安全元数据编辑，集中在一页。'
+tarball: https://github.com/zayyehtut/dsh-github-panel/releases/download/v1.0.2/dsh-github-panel-1.0.2.tgz

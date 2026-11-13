@@ -1,0 +1,6 @@
+url: https://github.com/Elefseus/dsh-default-workspace
+name: Elefseus/dsh-default-workspace
+category: session
+description:
+  en: 'Moves the default workspace off the system drive (DSH opens every new Session in <Documents>/deepseek-harness/default-workspace and never relocates it) while keeping stored sessions usable: rewrites the workspace record without a restart, offers the same three actions as a GUI panel, moves stored session logs together with their header cwd, and re-frames logs whose first frame is not exactly one header line. Requires the desktop host (workspaceRegistry and sessionPersistence).'
+  zh: '把默认工作区从系统盘挪走（DSH 把新会话一律开在 <文档>/deepseek-harness/default-workspace 且从不迁移），同时让已存会话继续可用：无需重启即可改写工作区记录，同一套动作也有图形面板可点，连同 header cwd 把已存会话日志一起搬走，并重帧化首帧不是恰好一行 header 的日志。需桌面版宿主（workspaceRegistry 与 sessionPersistence）。'

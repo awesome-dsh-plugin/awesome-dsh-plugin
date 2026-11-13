@@ -1,0 +1,6 @@
+url: https://github.com/gaoyinxin/dsh-mode-switcher
+name: gaoyinxin/dsh-mode-switcher
+category: ui
+description:
+  en: 'Adds a Plan/Build mode toggle to the composer, switched with the Tab key or a toolbar button, and remembers a separate model for each mode from the native model selector.'
+  zh: '在输入框中提供 Plan/Build 模式切换：按 Tab 键或点击工具栏按钮即可切换，并按模式分别记住右侧原生模型选择器中所选的模型。'

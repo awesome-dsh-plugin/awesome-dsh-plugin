@@ -1,0 +1,7 @@
+url: https://github.com/Nesarf/dsh-shell-surfaces
+name: Nesarf/dsh-shell-surfaces
+category: tools
+description:
+  en: 'One DSH tool that runs a command on any execution surface the machine has -- WSL, MSYS2, Git Bash, PowerShell, nushell, interpreters, throwaway containers, ssh, real terminal windows and a real console -- and reports the version each one gives and the capabilities it has.'
+  zh: '把机器上的执行面收成一个 DSH 工具：WSL、MSYS2、Git Bash、PowerShell、nushell、各语言解释器、一次性容器、ssh、真实终端窗口与真实控制台；每个面报出自己能给的版本，并标出它具备的能力。'
+icon: https://raw.githubusercontent.com/Nesarf/dsh-shell-surfaces/main/assets/icon.png

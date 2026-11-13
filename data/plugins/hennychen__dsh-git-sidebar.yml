@@ -1,0 +1,6 @@
+url: https://github.com/hennychen/dsh-git-sidebar
+name: hennychen/dsh-git-sidebar
+category: git
+description:
+  en: 'VS Code-style multi-repository Git panel in the DSH right sidebar: repository and branch pickers, staged/unstaged changes with inline diffs and per-file actions, commit, stash/tag/worktree menus, a connected SVG commit graph with branch multi-select, and fetch/pull/push/sync.'
+  zh: 'DSH 右侧边栏的 VS Code 式多仓库 Git 面板：存储库与分支选择、暂存/未暂存分组（行内 diff、逐文件暂存/放弃/还原）、提交、储藏/标记/工作树菜单、SVG 提交图形（分支多选与图例）、fetch/pull/push/sync。'

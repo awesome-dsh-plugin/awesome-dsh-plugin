@@ -1,0 +1,7 @@
+url: https://github.com/HandsYe/dsh-remote-status
+name: HandsYe/dsh-remote-status
+category: remote
+description:
+  en: Sidebar status chip that follows the visible session and shows local or remote with machine name, plus hover diagnostics; never modifies workspace titles.
+  zh: 侧边栏底部状态芯片：跟随当前显示的会话显示「本地」或「远程 · 机器名」，悬停显示诊断信息，绝不改动工作区标题。
+tarball: https://github.com/HandsYe/dsh-remote-status/releases/download/v0.2.0/dsh-remote-status-0.2.0.tgz

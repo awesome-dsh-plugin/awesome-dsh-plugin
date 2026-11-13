@@ -1,0 +1,6 @@
+url: https://github.com/DylanYeung0929/dsh-session-bridge
+name: DylanYeung0929/dsh-session-bridge
+category: session
+description:
+  en: 'Read, message and live-follow local DeepSeek Harness sessions from inside an agent: four tools (session_list, session_read, session_send, session_chat) plus a matching Python CLI, over the desktop app local RPC; transcripts also read offline. Requires Python 3.10+; offline transcript reads also need the zstd CLI.'
+  zh: '在 agent 里枚举、读取、发送并实时跟随本机 DeepSeek Harness 会话：四个工具（session_list、session_read、session_send、session_chat）加同功能 Python CLI，走桌面 App 本地 RPC，离线也能读转录。需要 Python 3.10+；离线读转录还需要 zstd 命令。'

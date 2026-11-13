@@ -1,0 +1,7 @@
+url: https://github.com/LIN-F1SH/dsh-prompt-lint
+name: LIN-F1SH/dsh-prompt-lint
+category: tools
+description:
+  en: 'Reads your past DSH conversations and surfaces recurring prompt gaps — missing paths or versions, an unstated output format, missing preconditions that break tool calls — each with a paste-ready rewrite. Adds a one-click rewrite next to the composer that applies those constraints to the draft in a shorter form.'
+  zh: '读你的历史会话，找出反复踩的提问坑（缺路径与版本、没定输出格式、漏说前置条件导致工具失败），每条给一段可直接粘贴的改写；输入框右侧一键把草稿改成更短的带约束版本。'
+icon: https://raw.githubusercontent.com/LIN-F1SH/dsh-prompt-lint/main/icon.png

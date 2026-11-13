@@ -1,0 +1,7 @@
+url: https://github.com/wdxtub/dsh-wdx-relief
+name: wdxtub/dsh-wdx-relief
+category: ui
+description:
+  en: 'Composer-side helpers for the DSH Web UI: next-message prediction shown as grey ghost text that Tab fills in, a one-line per-turn recap above the input (placeable below instead) that never enters the model context, a right-sidebar panel for follow-ups from past sessions, recap history and side questions with their own model picker, and config-driven reply length, style and actionable framing.'
+  zh: 'DSH Web 界面的一组顺手小件：输入框下方灰字预测下一句、Tab 填入；输入框上方逐轮一行摘要（也可以放到下方）、不进入模型上下文；右侧栏面板管待跟进、会话回顾与旁问，旁问可单独选模型；回复长度、风格与「便于行动」也在插件配置里调。'
+icon: https://raw.githubusercontent.com/wdxtub/dsh-wdx-relief/main/icon.png

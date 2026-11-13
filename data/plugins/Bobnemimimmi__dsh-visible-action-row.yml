@@ -1,0 +1,6 @@
+url: https://github.com/Bobnemimimmi/dsh-visible-action-row
+name: Bobnemimimmi/dsh-visible-action-row
+category: ui
+description:
+  en: "Pins each message's action row — copy/like/dislike/branch controls, timestamp, and third-party additions — so it stays visible without hovering."
+  zh: '让每条消息的操作栏（复制、点赞、点踩、分支按钮，时间，以及其他插件添加的内容）无需悬停即可常显。'

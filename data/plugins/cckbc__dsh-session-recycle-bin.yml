@@ -1,0 +1,7 @@
+url: https://github.com/cckbc/dsh-session-recycle-bin
+name: cckbc/dsh-session-recycle-bin
+category: session
+description:
+  en: 'Session recycle bin for DeepSeek Harness: deleting a session from its row menu (or in bulk from the sidebar header) moves it into a recycle bin kept for 15 days by default — 7, 15 or 30 in settings — and expired entries are purged automatically. The bin table shows the days left for each entry, restores it to its original workspace, and can delete an entry for good, one at a time or all at once.'
+  zh: 'DeepSeek Harness 会话回收站：从会话行菜单删除（或从侧栏标题栏批量移入）后，会话进入回收站，默认保留 15 天（设置里可选 7 / 15 / 30 天），到期条目自动清除；回收站表格显示每条还剩几天，可还原回原工作区，也可单条彻底删除或清空。'
+icon: https://raw.githubusercontent.com/cckbc/dsh-session-recycle-bin/main/icon.png

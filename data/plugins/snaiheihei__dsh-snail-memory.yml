@@ -1,0 +1,6 @@
+url: https://github.com/snaiheihei/dsh-snail-memory
+name: snaiheihei/dsh-snail-memory
+category: memory
+description:
+  en: Layered global and workspace memory for DeepSeek Harness, with a web panel to browse entries and tune distillation and consolidation, an index kept in context with records loaded on demand, and a per-session choice of layer.
+  zh: 为 DeepSeek Harness 提供分层的全局与工作区记忆：Web 面板中查看、控制条目并调整记忆整理与整合设置；索引常驻上下文、详情按需加载，每个对话手动选择要加载的记忆层。

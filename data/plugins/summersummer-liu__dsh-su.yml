@@ -1,0 +1,6 @@
+url: https://github.com/summersummer-liu/dsh-su
+name: summersummer-liu/dsh-su
+category: tools
+description:
+  en: SketchUp Pro 2023 bridge for DeepSeek Harness that lets the agent inspect a live model, run Ruby task scripts, save .skp files and capture viewport PNGs.
+  zh: SketchUp Pro 2023 桥接插件：让 Agent 检查实时模型、执行 Ruby 任务脚本、保存 .skp 并截取视口 PNG。

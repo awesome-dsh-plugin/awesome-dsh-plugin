@@ -1,0 +1,6 @@
+url: https://github.com/AhYi8/dsh-key-managment
+name: AhYi8/dsh-key-managment
+category: model
+description:
+  en: Per-provider API key pool for DeepSeek Harness with manual switching, background reachability probing and plan-usage adapters for DeepSeek, Kimi, MiniMax, Zhipu, OpenRouter and other providers.
+  zh: 面向 DeepSeek Harness 的分提供商 API 密钥池，支持手动切换、后台可达性探测与 DeepSeek、Kimi、MiniMax、智谱、OpenRouter 等多家服务商的套餐用量适配器。

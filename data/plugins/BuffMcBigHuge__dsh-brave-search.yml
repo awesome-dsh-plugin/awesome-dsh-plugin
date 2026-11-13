@@ -1,0 +1,6 @@
+url: https://github.com/BuffMcBigHuge/dsh-brave-search
+name: BuffMcBigHuge/dsh-brave-search
+category: tools
+description:
+  en: "Registers Brave as the web_search provider, resolving the API key from the DSH credential store, $DSH_HOME/.credentials.yaml, or the environment. No settings card and no fallback engine: one request to Brave's Web Search API per search."
+  zh: "把 Brave 注册为 web_search 的搜索提供方，API Key 依次从 DSH 凭证库、$DSH_HOME/.credentials.yaml 或环境变量读取。无设置卡片、无备用引擎：每次搜索向 Brave Web Search API 发起一次请求。"

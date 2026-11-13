@@ -1,0 +1,7 @@
+url: https://github.com/wzciczw/dsh-explainer
+name: wzciczw/dsh-explainer
+category: ui
+description:
+  en: "Zero-friction quick ask for DSH: select text in chat, Markdown/code, rendered HTML reports, or the better-sidebar editor. The default answer starts automatically (English prose is translated, a term is explained, a question is answered); typing cancels it. Answers stream from a one-shot completion on the main window's model, inherit a read-only conversation snapshot, read the selected file as context (up to 20,000 characters by default), and never write to the main session. One-line install; host routes, client slots, document renderers and the iframe selection bridge are separable extension points."
+  zh: "DSH 的零摩擦快问：对话、Markdown/代码、渲染后的 HTML 报告、better-sidebar 编辑器里都能划词。默认回答会自动开始（英文正文先翻译、术语解释概念、问句直接回答），输入即取消。答案由一次性 completion 流式产出，沿用主窗口模型，继承只读对话快照，把所选文件作为上下文读取（默认上限 2 万字符），且不写入主会话。一行命令安装；宿主路由、客户端插槽、文档 renderer、iframe 选区桥都是可分离的扩展点。"
+icon: https://raw.githubusercontent.com/wzciczw/dsh-explainer/main/assets/icon-180.png

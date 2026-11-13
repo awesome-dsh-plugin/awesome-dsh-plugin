@@ -1,0 +1,6 @@
+url: https://github.com/realchendahuang/dsh-provider-studio
+name: realchendahuang/dsh-provider-studio
+category: model
+description:
+  en: "Manage llm-pi-ai providers, API keys and models from one Settings page: add or edit providers, test a model, discover models from an endpoint, and start from 218 provider templates."
+  zh: "在一个设置页里管理 llm-pi-ai 供应商、API Key 与模型：新增或编辑供应商、测试模型连通性、从端点拉取模型，内置 218 个供应商模板。"

@@ -1,0 +1,6 @@
+url: https://github.com/dotdance/dsh-title-prefix
+name: dotdance/dsh-title-prefix
+category: session
+description:
+  en: 'Prefixes every session title with the name of its workspace or project, so a flat session list shows which project each conversation belongs to; titles you renamed yourself are left unchanged.'
+  zh: '给每条会话标题加上所属项目名前缀，会话列表平铺展示时不必点开就能看出它属于哪个项目；你自己手动改过的标题保持原样。'

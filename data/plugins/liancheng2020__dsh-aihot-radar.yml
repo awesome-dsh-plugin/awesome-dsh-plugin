@@ -1,0 +1,8 @@
+url: https://github.com/liancheng2020/dsh-aihot-radar
+name: liancheng2020/dsh-aihot-radar
+category: tools
+description:
+  en: 'Real-time Codex/Claude/Antigravity quota-reset alerts plus AIHOT news digest and agent tools. News comes from the AIHOT public API, which is free for personal non-commercial use only.'
+  zh: 'Codex/Claude/Antigravity 额度重置实时推送，外加 AIHOT 资讯日报与 Agent 工具。新闻来自 AIHOT 公开 API，仅限个人非商业使用免费。'
+icon: https://raw.githubusercontent.com/liancheng2020/dsh-aihot-radar/main/assets/icon-180.png
+tarball: https://github.com/liancheng2020/dsh-aihot-radar/releases/download/v0.2.0/dsh-aihot-radar-0.2.0.tgz

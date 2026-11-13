@@ -1,0 +1,6 @@
+url: https://github.com/JOJO-Adam/dsh-blender
+name: JOJO-Adam/dsh-blender
+category: tools
+description:
+  en: "Run Blender headless from DeepSeek Harness: execute bpy scripts, render scenes and export glTF assets, with modeling cookbook, 5.x pitfall list and asset-pipeline playbooks bundled as skills so the agent self-checks geometry before handing assets back."
+  zh: "在 DeepSeek Harness 里以 headless 方式跑 Blender：执行 bpy 脚本、渲染场景、导出 glTF 资产，并附带建模技法库、5.x 踩坑清单与资产管线手册（技能包），让 agent 在交付前自检几何。"
