@@ -1,0 +1,6 @@
+url: https://github.com/aishenkiki/dsh-go-exam-helper
+name: aishenkiki/dsh-go-exam-helper
+category: tools
+description:
+  en: "Works in both DSH Go (native phone app) and the DSH Web UI: watches the quiz screen and pushes each answer as a heads-up notification, using an optional local answer bank. In the Web UI you can import a bank by picking a local file (phone files on mobile, local files on desktop)."
+  zh: "同一个包同时支持 DSH Go 手机 App（原生界面）和 DSH 网页端：盯住答题页面，把每道题的答案弹成顶部通知，可导入本地题库优先命中。网页端可直接选本地文件导入题库——手机上选手机里的文件，电脑上选电脑里的文件。"
