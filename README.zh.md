@@ -7806,7 +7806,7 @@ dsh plugin --profile web add dshmarket
 - [liu-Daniel7/search-school-sci-skill](https://github.com/liu-Daniel7/search-school-sci-skill) — 统计某一所大学某个学院（二级单位）的科研产出：按作者单位串匹配学院的各种英文写法（并检测其他高校的同名院系），对只写到校名一级的论文用教师作者 ID 反查补全，再按期刊层级分类（中科院分区含 Top 标记、JCR 分区、CCF、经知网导出合并的中文核心），区分教师与学生一作，输出含看板页、可筛选论文清单、教师-方向矩阵和教师个人统计的工作簿。学生身份由单位与教师名单推定，未与学籍核对。需 Python 3.9+ 与 pandas、openpyxl（pip install -r requirements.txt）；题录走 OpenAlex 接口（按 IP 计的免费额度有限），中文期刊需人工从知网导出后合并。
 - [liufeicc/dsh-skill-workspace](https://github.com/liufeicc/dsh-skill-workspace) — 把技能集中到可配置目录，并按工作区勾选启用的技能，避免每个会话都为用不上的技能付出上下文。
 - [liuli-zsl/dsh-unreal-engine-skills](https://github.com/liuli-zsl/dsh-unreal-engine-skills) — 注册 Epic 的 Unreal Engine 三个技能（unreal-mcp、create-toolset、unreal-skill），注入 UE 工程上下文，接通编辑器的 ModelContextProtocol 服务器，并支持在插件页修改端口。
-- [LiYang-cyber/dsh-scholar-digest](https://github.com/LiYang-cyber/dsh-scholar-digest) — DeepSeek Harness 学术研究 preset 与 download-paper 技能：知网、arXiv、PubMed、Semantic Scholar 四路检索，知网空间链接在服务端换算为主站 kns.cnki.net 链接，并按交付契约把一个专题整理成同一目录下的离线 HTML 索引、XLSX 总表、BibTeX、RIS 与 arXiv 下载脚本。 需要 DSH 0.2.x、uv（知网、arXiv、Semantic Scholar 三个 MCP 源经它启动）与 Node.js（PubMed 源经 npx 启动）。
+- [LiYang-cyber/dsh-scholar-digest](https://github.com/LiYang-cyber/dsh-scholar-digest) — 补齐「用 Agent 批量检索知网文献」这一环：学术研究 preset 从知网空间取题录，在服务端把每条链接换算成可打开的 kns.cnki.net 主站文献页（不需要登录态与浏览器跳转脚本，全文能否打开取决于机构权限），并用 arXiv、PubMed / Europe PMC、Semantic Scholar 覆盖英文文献；download-paper 技能把结果整理成同一专题目录下的离线 HTML 索引、XLSX 总表、BibTeX、RIS 与 arXiv 批量下载脚本。需要 DSH 0.2.2-rc.1+、uv 与 Node.js。
 - [ljttt0824/dsh-career-kb](https://github.com/ljttt0824/dsh-career-kb) — 职业生涯知识库：六大模块 + 十项技能，支持全库巡检、存入与导入、JD 简历、面试准备与复盘，并对接飞书。
 - [lnsdlszsqxxx/dsh-courseware](https://github.com/lnsdlszsqxxx/dsh-courseware) — 拿用户自己的 .pptx 模板 + 一份课程大纲（教案/文档/纯文本），产出套用该模板背景、配色、字体、页面骨架的课件 .pptx。纯插件包，无内置密钥，图片后端需用户自行配置。
 - [Lohaslee/dsh-super-pm](https://github.com/Lohaslee/dsh-super-pm) — DeepSeek Harness 的产品思考助手：先明确负向边界，拆开事实与假设，经七套产品视角讨论取舍，并将确认的决策沉淀到项目记忆中。
@@ -10491,7 +10491,7 @@ dsh plugin --profile web add dshmarket
 - [Jfreey/dsh-plugin-sync](https://github.com/Jfreey/dsh-plugin-sync) — 插件一键备份，换机一键还原：清单、版本、配置与本地插件源码存进自己的 GitHub 私有仓库。
 - [jiang4wqy/dsh-dejaview](https://github.com/jiang4wqy/dsh-dejaview) — 在动手写 dsh 插件前，检索 awesome-dsh-plugin 注册表与 dsh-plugin GitHub topic，判断是否已有相似插件，并返回带证据的排序结果。
 - [jing-hy/dsh-unified-market](https://github.com/jing-hy/dsh-unified-market) — 面向 DSH Desktop（EAC）桌面壳的统一插件市场：聚合精选目录、GitHub dsh-plugin 生态与 npm registry 三源，提供来源白名单、冲突预检、试装安装验证、手动/批量/自动三档更新与功能包（.dshpack）管理。
-- [kazari-qwp/dsh-tiered-plugin-menu#web](https://github.com/kazari-qwp/dsh-tiered-plugin-menu/tree/master/packages/web) — 在桌面和 Web 界面按客户端、工作区和会话分层配置 DSH 插件、MCP 与 Skill，支持独立开关、不同配置、逐级继承及下级默认。
+- [kazari-qwp/dsh-tiered-plugin-menu#web](https://github.com/kazari-qwp/dsh-tiered-plugin-menu/tree/master/packages/web) — 按客户端、工作区和会话分层配置官方及第三方 DSH 插件、MCP 与 Skill，支持独立配置、逐级继承及下级默认；插件关闭时可保存配置，核心与 Web 界面在 Harness 中分别升级。
 - [kimiya1010/dsh-plugin-market](https://github.com/kimiya1010/dsh-plugin-market) — DeepSeek Harness 插件市场：在 Web 界面里搜索并一键安装 GitHub 上的 dsh-plugin 插件。
 - [kingOfSoySauce/dsh-skin-market](https://github.com/kingOfSoySauce/dsh-skin-market) — 原生皮肤市场与生命周期管理器，发现社区皮肤、展示预览与兼容状态，并提供已验证的一键安装或手动安装入口。
 - [kinmat-A/dsh-theme-switch](https://github.com/kinmat-A/dsh-theme-switch) — DSH 主题切换：自动检测已安装的皮肤/主题，在设置页一键互斥切换，全部停用时回退官方默认外观，切换即时生效并跨重启保留。
