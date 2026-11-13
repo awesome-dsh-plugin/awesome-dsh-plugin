@@ -5,5 +5,5 @@ url: https://github.com/xingxing2013/dsh-prompt-history
 name: xingxing2013/dsh-prompt-history
 category: ui
 description:
-  en: 'Prompt history kept by the plugin itself in the composer: Up recalls prompts sent earlier in this browser (newest first, then older), Down walks back toward the newest and restores the draft you had before the first Up, and Ctrl/Cmd+Shift+Backspace clears the list. History is shared across sessions and deduplicated, and the keys stay out of the / command menu, the @ file picker and IME composition.'
-  zh: '插件自己在输入框里保存的提示词历史：↑ 取回此浏览器中此前发过的提示词（由新到旧），↓ 往回走并在越过最新一条时恢复最初的草稿，Ctrl/Cmd+Shift+Backspace 清空历史。历史跨会话共享并自动去重，且不抢占 / 命令菜单、@ 文件选择与输入法组字。'
+  en: 'Prompt history in the composer: Up and Down recall prompts sent earlier in this browser (newest first), Down walks back and restores the draft you had before the first Up, and the badge in the composer corner opens a numbered list to pick one directly. Only prompts you actually send are recorded — never fragments left by deleting text or cancelling a composition — history is shared across sessions and deduplicated, its badge size is adjustable in Settings → General, and Ctrl/Cmd+Shift+Backspace clears it.'
+  zh: '输入框里的提示词历史：↑/↓ 取回此浏览器中此前发过的提示词（由新到旧），↓ 往回走并在越过最新一条时恢复最初的草稿；输入框右上角的徽标可点开带编号的历史列表直接选取。只记录真正发送过的提示词（删字、取消组词不会写入），历史跨会话共享并自动去重，徽标大小可在「设置 → 通用」调整，Ctrl/Cmd+Shift+Backspace 清空。'
