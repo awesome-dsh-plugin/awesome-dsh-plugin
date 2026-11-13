@@ -41,6 +41,18 @@ const RECHECK_DAYS = Number(process.env.PROBE_RECHECK_DAYS ?? 1)
 const PROBE_ALL = process.env.PROBE_ALL === '1'
 const CONCURRENCY = 8
 
+// A full pass asks raw.githubusercontent for a package.json per entry and the
+// registry for a packument per hit, in bursts of CONCURRENCY. GitHub answers
+// burst traffic with 429 (and occasionally 5xx or a reset socket); a probe that
+// gives up on that answers null, and a null for a URL we have never seen is
+// recorded as "no npm package" — which is what makes a card display the
+// host-requirement-unavailable fallback until the next night. Retry transient
+// failures with exponential backoff instead of turning them into a verdict.
+const ATTEMPTS = Math.max(1, Number(process.env.PROBE_ATTEMPTS ?? 4))
+const RETRY_BASE_MS = Math.max(0, Number(process.env.PROBE_RETRY_BASE_MS ?? 400))
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+const isRetryableStatus = (status) => status === 408 || status === 429 || status >= 500
+
 const map = fs.existsSync(MAP_FILE) ? JSON.parse(fs.readFileSync(MAP_FILE, 'utf8')) : {}
 
 const readme = fs.readFileSync(LOCALES[0].readme, 'utf8')
@@ -80,13 +92,31 @@ const pendingVersion = urls.filter((url) => !needsFullProbe(map[url]) && needsVe
 const pendingPublish = urls.filter((url) => !needsFullProbe(map[url]) && !needsVersionBackfill(map[url]) && needsPublishBackfill(map[url]))
 console.log(`${urls.length} listed, ${pendingFull.length} full probe(s), ${pendingVersion.length} version backfill(s), ${pendingPublish.length} publish-time backfill(s)`)
 
-async function fetchJson(url) {
-  const res = await fetch(url, {
-    headers: { accept: 'application/json', 'user-agent': 'awesome-dsh-plugin-npm-probe' },
-    signal: AbortSignal.timeout(10000),
-  })
-  if (!res.ok) throw new Error(`HTTP ${res.status}`)
-  return res.json()
+async function fetchJson(url, attempt = 1) {
+  try {
+    const res = await fetch(url, {
+      headers: { accept: 'application/json', 'user-agent': 'awesome-dsh-plugin-npm-probe' },
+      signal: AbortSignal.timeout(10000),
+    })
+    if (!res.ok) {
+      const err = new Error(`HTTP ${res.status}`)
+      err.status = res.status
+      throw err
+    }
+    return await res.json()
+  } catch (err) {
+    // Status-carrying errors retry only when the status is transient; a 404 is
+    // also a real answer ("this repo has no package.json"), just not a verdict
+    // this helper can draw, so it is handed back to the caller unchanged.
+    const transient =
+      err.status === undefined
+        ? err.name === 'TimeoutError' || err.name === 'AbortError' || err.name === 'TypeError'
+        : isRetryableStatus(err.status)
+    if (!transient || attempt >= ATTEMPTS) throw err
+    const backoff = RETRY_BASE_MS * 2 ** (attempt - 1)
+    await sleep(backoff + Math.floor(Math.random() * backoff))
+    return fetchJson(url, attempt + 1)
+  }
 }
 
 /**
@@ -133,8 +163,12 @@ async function probe(url) {
       ...publishFields(meta, latest),
       checkedAt: today,
     }
-  } catch {
-    return null // network failure or 404 chain — keep whatever we had
+  } catch (err) {
+    // A 404 on package.json is an answer: this repo publishes no package. Any
+    // other failure (network, retries exhausted) is not, so it stays null and
+    // the row is left for the next run to retry.
+    if (err?.status === 404) return { npm: null, version: null, checkedAt: today }
+    return null // network failure — keep whatever we had, retry next run
   }
 }
 
@@ -153,6 +187,8 @@ async function backfillVersion(url) {
   }
 }
 
+const failedProbes = []
+
 async function runBatch(label, pending, worker) {
   let done = 0
   for (let i = 0; i < pending.length; i += CONCURRENCY) {
@@ -160,7 +196,13 @@ async function runBatch(label, pending, worker) {
     const results = await Promise.all(batch.map(async (url) => [url, await worker(url)]))
     for (const [url, result] of results) {
       if (result !== null) map[url] = result
-      else if (map[url] === undefined) map[url] = { npm: null, version: null, checkedAt: today }
+      else if (map[url] === undefined) {
+        // No prior row and no answer: record the failure without a checkedAt,
+        // so needsFullProbe() retries it on the next run instead of caching
+        // "not on npm" for a whole day.
+        map[url] = { npm: null, version: null, checkedAt: null }
+        failedProbes.push(url)
+      }
     }
     done += batch.length
     console.log(`${label} ${done}/${pending.length}`)
@@ -179,3 +221,6 @@ fs.writeFileSync(MAP_FILE, JSON.stringify(sorted, null, 1) + '\n')
 const published = Object.values(sorted).filter((e) => e.npm !== null).length
 const withVersion = Object.values(sorted).filter((e) => typeof e.version === 'string').length
 console.log(`npm-map written: ${published}/${Object.keys(sorted).length} published on npm, ${withVersion} with version`)
+if (failedProbes.length > 0) {
+  console.log(`${failedProbes.length} probe(s) failed after retries and kept no verdict; the next run retries them`)
+}
