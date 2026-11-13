@@ -1,0 +1,6 @@
+url: https://github.com/JingYu-er/dsh-stm32
+name: JingYu-er/dsh-stm32
+category: tools
+description:
+  en: STM32 complete process tool - environment detection, .ico transactions, generating project, compiling, burning, debugging.
+  zh: STM32全流程工具--环境探测、.ico事务、生成工程、编译、烧录、调试。
