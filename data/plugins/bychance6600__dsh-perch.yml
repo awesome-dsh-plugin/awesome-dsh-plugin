@@ -2,5 +2,5 @@ url: https://github.com/bychance6600/dsh-perch
 name: bychance6600/dsh-perch
 category: identity
 description:
-  en: 'An event-stream driven personality that grows over time, not a configurable character card or assistant. Evolved from ssamurias/dsh-fish and registers the same tools (her_recall, growth_commit and others), so do not install it alongside dsh-fish.'
-  zh: '一个由事件流驱动、只能长大不能被设定的人格，而非可配置的角色卡或助手。由 ssamurias/dsh-fish 演进而来，注册同名工具（her_recall、growth_commit 等），因此不要与 dsh-fish 同装。'
+  en: 'An event-stream driven personality that grows over time, not a configurable character card or assistant. Registers the same tools as dsh-fish (her_recall, growth_commit and others), so do not install it alongside dsh-fish.'
+  zh: '一个由事件流驱动、只能长大不能被设定的人格，而非可配置的角色卡或助手。注册同名工具（her_recall、growth_commit 等），因此不要与 dsh-fish 同装。'
