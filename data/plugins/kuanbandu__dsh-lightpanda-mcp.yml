@@ -1,0 +1,6 @@
+url: https://github.com/kuanbandu/dsh-lightpanda-mcp
+name: kuanbandu/dsh-lightpanda-mcp
+category: tools
+description:
+  en: 'Lightpanda MCP server as a DSH plugin bundle — headless web automation tools for agents.'
+  zh: 'Lightpanda MCP 服务器 DSH 插件包，面向 agent 提供无头网页自动化能力。'
