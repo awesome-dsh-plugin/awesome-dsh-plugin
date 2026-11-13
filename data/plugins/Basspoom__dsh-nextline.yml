@@ -4,4 +4,3 @@ category: ui
 description:
   en: NextLine suggests a personalized next message in the DSH composer and lets you accept it as an editable draft.
   zh: NextLine 下一句在 DSH 输入框内显示个性化的下一条消息建议，按 Tab 或右方向键即可填入草稿。
-tarball: https://github.com/Basspoom/dsh-nextline/releases/download/v0.1.1/dsh-nextline-0.1.1.tgz
