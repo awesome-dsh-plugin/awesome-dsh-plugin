@@ -88,7 +88,7 @@ dsh plugin --profile web add dshmarket
 - [burning-frappuccino/dsh-turbo](https://github.com/burning-frappuccino/dsh-turbo) — DSH 输入区的按会话执行档位：OVERDRIVE 开关只对当前会话开启 Turbo，极速/极限两档替换 agent 的规划与验证策略、并按档位调整请求的 reasoningEffort；Host 持有权威状态，并记录每轮耗时、模型步骤、工具调用与是否跑过验证命令。
 - [dsh-answer-reviewer](https://github.com/bycall/dsh-answer-reviewer) — 智能体回答审查器：每一轮 agent 的最终输出由独立 LLM 重新打分（1-100），低于阈值时携带具体反馈引导 agent 自我修正；评分以角标形式展示在该回答的操作行上（通过=绿、未达标=红，悬停可见重试次数与原因）。闸值配置可从输入框上方视图栏的「Reviewer 配置」标签页（对话 / 轨迹 / 记忆系统 / Reviewer 配置）、本机 127.0.0.1 HTTP 服务或 dsh-better-sidebar 侧栏标签页实时修改。
 - [CAI-MH/dsh-quality-review](https://github.com/CAI-MH/dsh-quality-review) — 每轮回复结束时用独立审查模型审核输出，判定不合格则引导 agent 修复，每轮最多追问 2 次；可注入 SOP 文件夹标准作为额外审核维度。
-- [CanaryJing/dsh-big-fat-whale-maid-adaptive](https://github.com/CanaryJing/dsh-big-fat-whale-maid-adaptive) — 提供自适应工具呈现与环境适配 Shell 路由的智能体预设。复用了从 yjh051108/dsh-routing-suite 与 xiaobright/dsh-anchored-standard 移植的模块（前者已收录），不要与这两个预设同时启用。需要 DSH 0.2.2 及以上；在 0.2.2 上 high / max 两档会回落为原生工具呈现（不切 PTC）。
+- [CanaryJing/dsh-big-fat-whale-maid-adaptive](https://github.com/CanaryJing/dsh-big-fat-whale-maid-adaptive) — 提供自适应工具呈现与环境适配 Shell 路由的智能体预设。复用了从 yjh051108/dsh-routing-suite 与 xiaobright/dsh-anchored-standard 移植的模块（前者已收录），不要与这两个预设同时启用。需要 DSH 0.2.2 及以上；high 使用 PTC 与按需解锁，max 使用 PTC 与完整可用工具目录。
 - [ccll/dsh-advisor-flow](https://github.com/ccll/dsh-advisor-flow) — 移植自 pi-advisor-flow 的执行者/顾问工作流：执行者经 ask_advisor 工具按需请求第二意见（可附问题、草稿、仓库上下文档位与点名文件）；等价工具调用重复达到阈值时在执行前拦截，由顾问以 proceed/revise/blocked 三值裁决，硬模式下回合收口前强制评审；提供逐次 token 与成本台账、/advisor status 状态读数、仓库上下文与文件内容分级授权、六类密钥形状脱敏与 web 设置卡；advisor 失败不停摆主循环。
 - [Clearailhc/clearai-dsh](https://github.com/Clearailhc/clearai-dsh) — 以证据为准的研究用智能体预设：每一步只能靠系统核验过的观测推进，L3 以上的结论交给独立评估者，整场会话折成一份可重放的账本，并长成可浏览的领域本体。需要 DSH >=0.1.7-alpha.1。
 - [DDL095/dsh-moa-native](https://github.com/DDL095/dsh-moa-native) — 原生生成时 MoA：每轮参考模型并行预演同一会话上下文产出草稿，单一聚合模型带完整工具循环执行；配置即模型配方、F 镜像 / R 裁剪双视野、子会话门控（双形态会话目录索引，修复后实效）、按成分派生的配方级视觉（视觉参考路可为纯文本聚合转述图像）、节拍节奏（定调与巡检两套阵容、拍间冻结复用）、退化守卫（剔除退化的参考输出）、模型面匿名（失败提示零供应商身份）、缓存友好化注入（预演记录钉在产出它的那一步而非每步追加到请求末尾，缓存前缀覆盖它、每步只付新增量，缺省开启、全 cadence 档生效）。
@@ -196,7 +196,7 @@ dsh plugin --profile web add dshmarket
 - [3341284397-max/dsh-question-bubbles](https://github.com/3341284397-max/dsh-question-bubbles) — 把模型「没问出口的疑问」实时显示出来：气泡浮在鲸鱼挂件上方，从思考流里捕捉问句，你可以当场作答、温和并入下一步，而不打断任务。支持提示词标记协议（让模型自己标出疑问）、五种语言、跟随 DSH 深浅主题；气泡定位依赖 dsh-whale-widget。
 - [3361805598-gif/dsh-workspace-archive](https://github.com/3361805598-gif/dsh-workspace-archive) — 在侧栏面板或会话行菜单里批量归档/恢复整个工作区的全部会话；工作区会话全部归档后从侧栏隐藏，恢复任一会话即重新出现；并支持工作区置顶。隐藏不删除日志、不移动目录、不改会话归属。
 - [3450892121/dsh-task-monitor#dsh-task-monitor](https://github.com/3450892121/dsh-task-monitor/tree/main/dsh-task-monitor) — DSH 会话右侧独立监控面板：git 状态、后台进程、技能与 MCP、产出与网页查阅，附提交/推送对话框与一键发布到 GitHub。
-- [379385796-sys/dsh-chat-comfort](https://github.com/379385796-sys/dsh-chat-comfort) — 在已核验的 Windows Desktop RC2/RC3/RC5/0.2.2-rc.1 布局中调整聊天气泡和消息间距，支持舒适或紧凑密度，未知宿主指纹保留原生样式。
+- [379385796-sys/dsh-chat-comfort](https://github.com/379385796-sys/dsh-chat-comfort) — 在已核验的 Windows Desktop RC2/RC3/RC5/0.2.2-rc.1/0.2.2-rc.3 布局中调整聊天气泡和消息间距，支持舒适或紧凑密度，未知宿主指纹保留原生样式。
 - [3Tiga3/dsh-plugin-namecards](https://github.com/3Tiga3/dsh-plugin-namecards) — 给 DSH 插件换自定义图标、中文显示名和一句话说明；用文件夹与收藏整理，支持拖拽排序、按备注名拼音排序、列表与铺陈两种视图。所有已安装插件自动分配图标（可手动覆盖）；导入导出覆盖图标、备注名、说明、文件夹与排序。只改显示，不修改插件文件与 cordis 配置；启用开关转调官方插件管理器。
 - [439436269-ctrl/dsh-blend-preview](https://github.com/439436269-ctrl/dsh-blend-preview) — 在 DSH 右侧栏文档预览里打开 .blend：Blender headless 导出缓存 GLB 与场景统计，由零依赖 WebGL 视口渲染。需本机装有 Blender 3.6+（或在设置里指定 blenderPath）。
 - [439436269-ctrl/dsh-file-explorer](https://github.com/439436269-ctrl/dsh-file-explorer) — 侧栏文件浏览器与文件预览器：懒加载文件树，面板内预览文本 / Markdown（含表格）/ 图片，可把当前文件送进会话右侧文档预览，或交给系统默认程序打开；只读，路径限定在可浏览根内。
@@ -3841,7 +3841,7 @@ dsh plugin --profile web add dshmarket
 
 - [0xyxy/dsh-purge](https://github.com/0xyxy/dsh-purge) — kingcharleslzy-ai/dsh-purge 的社区分支（不要与上游同装——两者都以 `dsh-purge-community` 包名注册同一个 `dsh-purge` 行）：DSH 的社区「破甲 / 无限制模式」控件——宿主策略补丁、提示词与规则设置、诊断、校验更新与本机备份回滚，另加引擎层/代码层/提示词层三层 bootstrap 安装器及自带验证流程。
 - [2008BingYu/dsh-qq-stack](https://github.com/2008BingYu/dsh-qq-stack) — 给 DSH 提供 QQ 协议端（仅 Linux）：随引擎启动 LinuxQQ 与 NapCat（首次运行自动安装，约 250 MB），对外提供标准 OneBot 11 接口。
-- [379385796-sys/dsh-prompt-inject](https://github.com/379385796-sys/dsh-prompt-inject) — 基于 H1a3x 原作的 MIT 提示词模板管理维护版，支持默认与工作区继承、逐 Agent 预设指定模板或不注入、本地化设置及修订号保护的自动保存。已验证 Windows Desktop RC5 与 0.2.2-rc.1；不能与上游 H1a3x/dsh-prompt-inject 同装。
+- [379385796-sys/dsh-prompt-inject](https://github.com/379385796-sys/dsh-prompt-inject) — 基于 H1a3x 原作的 MIT 提示词模板管理维护版，支持默认与工作区继承、逐 Agent 预设指定模板或不注入、本地化设置及修订号保护的自动保存。已验证 Windows Desktop RC5 与 0.2.2-rc.1/0.2.2-rc.3；不能与上游 H1a3x/dsh-prompt-inject 同装。
 - [58fly/dsh-language-guard](https://github.com/58fly/dsh-language-guard) — 把模型的思考过程、回复与工具调用描述锁定为指定语言（默认简体中文）：在 system prompt 首、中、尾注入约束段落，提供基础、强化、周期三档强度，可跟随 DSH 界面语言自动选择，设置页显示当前生效语言，并带侧栏快速切换。
 - [dsh-affect](https://github.com/7gzgn/dsh-affect) — 把 AI 的情绪搬到模型外面：几条情绪轴各 0-100，按你说的话加减、随时间自己漂移，每轮把「现在处在哪一档 + 可用标签」注入系统提示。数值由插件维护：模型从注入的提示里读到当前值，只能通过插件自带的情绪工具调整，不能凭一句自报心情改数。默认空配置，一个轴都不替你定。
 - [dsh-profile-stylist](https://github.com/7gzgn/dsh-profile-stylist) — 你说想要什么样的人设，它把文案写出来并把资料页填好：昵称/简介/标语/链接由宿主模型生成，头像取本地素材库（或你给的路径），再由站点自己的上传控件完成头像入库。**默认 dry-run**，只写资料字段 —— 不碰密码、邮箱、安全设置。
