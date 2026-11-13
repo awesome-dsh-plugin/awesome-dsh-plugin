@@ -1,0 +1,7 @@
+url: https://github.com/likou123/DeepSeek-Balance-Whale-Magpie
+name: likou123/DeepSeek-Balance-Whale-Magpie
+category: ui
+description:
+  en: 'DeepSeek balance whale widget for DSH, with Magpie gateway support: DeepSeek balance and per-turn cost, plus Magpie token usage and remaining quota, with selectable and rotating display sources.'
+  zh: 'DSH 小鲸鱼余额挂件（Magpie 版）：显示 DeepSeek 余额与每轮消耗，并适配 Magpie 本机网关的 token 用量与剩余额度，主显示数据源可勾选、可轮换。'
+icon: https://raw.githubusercontent.com/likou123/DeepSeek-Balance-Whale-Magpie/main/icon.png
