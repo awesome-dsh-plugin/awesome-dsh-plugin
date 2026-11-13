@@ -1,0 +1,7 @@
+url: https://github.com/Genesi599/dsh-plugins/tree/main/plugins/project-room
+name: Genesi599/dsh-plugins#project-room
+category: ui
+description:
+  en: 'Turns the sidebar into a project view and gives each project a room with a shared board, task-line columns filled from message routing, and per-project member avatars.'
+  zh: '把侧栏变成项目视图，并给每个项目一个房间：公共看板、按消息归线填充的任务线分列，以及项目内的成员头像。'
+icon: https://raw.githubusercontent.com/Genesi599/dsh-plugins/main/plugins/project-room/assets/icon-180.png
