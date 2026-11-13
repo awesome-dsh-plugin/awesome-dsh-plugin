@@ -1,0 +1,7 @@
+url: https://github.com/thelittleshyboy/xd-to-html-mcp
+name: thelittleshyboy/xd-to-html-mcp
+category: docs
+description:
+  en: 'Adobe XD toolkit for DSH: reads .xd files without Adobe XD, renders artboards to PNG, and exports HTML that keeps text as selectable DOM nodes over transparent PNG layers, with hover and tap states plus artboard navigation taken from the XD prototype.'
+  zh: 'DSH 的 Adobe XD 工具集：无需安装 Adobe XD 即可读取 .xd，导出画板 PNG，并生成把文字保留为可选 DOM 节点、图形置于透明 PNG 图层之上的 HTML，同时按 XD 原型还原 hover/tap 状态与画板跳转。'
+icon: https://raw.githubusercontent.com/thelittleshyboy/xd-to-html-mcp/main/assets/icon-180.png
