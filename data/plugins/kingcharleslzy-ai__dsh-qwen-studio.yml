@@ -2,6 +2,6 @@ url: https://github.com/kingcharleslzy-ai/dsh-qwen-studio
 name: kingcharleslzy-ai/dsh-qwen-studio
 category: vision
 description:
-  en: 'Qwen Image 2.1 workspace for DSH: Apple Silicon MLX or your own NVIDIA server, native reference editing, LoRA, ControlNet, inpainting, shared presets, gallery and live agent progress. Includes verified updates and an agent setup guide.'
-  zh: 'DSH 的 Qwen Image 2.1 创作工作区：本机 MLX 或自己的 NVIDIA 服务器，支持原生参考编辑、LoRA、结构控制、蒙版、整套预设、图库与对话实时进度，提供校验更新和 Agent 安装指南。'
+  en: 'Qwen Image 2.1 editing, MiniMax H3 video and multi-shot filmmaking with character cards, shot review, narration and an MP4 master. Includes agent skills for self-hosted model setup and production.'
+  zh: '集成 Qwen Image 2.1 生图改图、MiniMax H3 有声视频和多镜头长片，支持角色卡、逐镜审片、旁白与母版导出，附本机或远程模型部署和对话创作技能。'
 tarball: https://github.com/kingcharleslzy-ai/dsh-qwen-studio/releases/latest/download/dsh-qwen-studio.tgz
