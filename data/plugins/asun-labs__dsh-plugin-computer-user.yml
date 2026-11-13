@@ -1,0 +1,6 @@
+url: https://github.com/asun-labs/dsh-plugin-computer-user
+name: asun-labs/dsh-plugin-computer-user
+category: tools
+description:
+  en: 'Adds Windows screenshots and a right-sidebar virtual pointer overlay, with optional real desktop mouse and keyboard control.'
+  zh: '提供 Windows 截图与右侧面板虚拟指针叠加层，并可切换为实际桌面的鼠标与键盘控制。'
