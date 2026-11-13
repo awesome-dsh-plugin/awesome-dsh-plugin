@@ -1,0 +1,7 @@
+url: https://github.com/Jimmeebingo/dsh-music-deck
+name: Jimmeebingo/dsh-music-deck
+category: ui
+description:
+  en: 'Floating music controls for players that publish Windows system media sessions.'
+  zh: '悬浮音乐控制卡片，读取并控制支持 Windows 系统媒体会话的播放器。'
+icon: https://raw.githubusercontent.com/Jimmeebingo/dsh-music-deck/main/assets/icon-180.png
