@@ -2,6 +2,6 @@ url: https://github.com/netbka/local-commander-plugins
 name: netbka/local-commander-plugins
 category: remote
 description:
-  en: Connects DeepSeek Harness to the hosted Local Commander MCP server at localcmd.app via mcp-remote with browser sign-in, to read files and Git, run the checks you approve and check local services on your Windows computers. Requires a Local Commander account and the paired agent running on the Windows PC.
-  zh: 通过 mcp-remote 把 DeepSeek Harness 接到 localcmd.app 上托管的 Local Commander MCP 服务（浏览器登录），在你的 Windows 电脑上读文件、查 Git、执行你批准的检查并探测本地服务。需 Local Commander 账号，且配对的 agent 要跑在那台 Windows 电脑上。
+  en: Give your AI hands on every computer you own. One chat, all your machines — even from your phone. Connects DeepSeek Harness to the hosted Local Commander MCP server at localcmd.app via mcp-remote with browser sign-in. Requires a Local Commander account and the agent on each computer.
+  zh: 让你的 AI 在你拥有的每台电脑上动手干活。一个对话管所有机器，手机上也能用。通过 mcp-remote 把 DeepSeek Harness 接到 localcmd.app 上托管的 Local Commander MCP 服务（浏览器登录）。需 Local Commander 账号，且每台电脑上都要运行 agent。
 tarball: https://github.com/netbka/local-commander-plugins/releases/download/v1.0.0/local-commander-dsh-1.0.0.tgz
