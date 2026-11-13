@@ -1,0 +1,6 @@
+url: https://github.com/mr-pounds/dsh-agent-team-policy
+name: mr-pounds/dsh-agent-team-policy
+category: workflow
+description:
+  en: 'Adds one system-prompt section that limits delegation to subagents and teammates to two cases: adversarial review of freshly produced output, and one-shot context reading that returns a summary.'
+  zh: '添加一段系统提示词，把对子智能体和队友的委派限制在两种情况：对刚写出的产出做对抗性审查，以及只回传摘要的一次性大量阅读。'

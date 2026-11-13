@@ -1,0 +1,6 @@
+url: https://github.com/salvare013/dsh-agents-md-presets
+name: salvare013/dsh-agents-md-presets
+category: ui
+description:
+  en: 'Named AGENTS.md presets for DSH: save instruction sets under $DSH_HOME/agents-md-presets, apply one to the current conversation workspace, edit bodies in your own editor, and keep one rolling backup of the file being overwritten.'
+  zh: '为 DSH 维护多套具名 AGENTS.md 预设：正文存在 $DSH_HOME/agents-md-presets，在会话里选一套写入该会话工作区的 AGENTS.md，正文用本机编辑器修改，覆盖前把原文件留一份最近备份。'

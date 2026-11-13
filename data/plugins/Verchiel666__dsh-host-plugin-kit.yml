@@ -1,0 +1,6 @@
+url: https://github.com/Verchiel666/dsh-host-plugin-kit
+name: Verchiel666/dsh-host-plugin-kit
+category: dev
+description:
+  en: Generates DSH host-side plugin skeletons — tool registration, an approval hook, a dsh.bundle manifest and three test layers — and registers a plugin_kit_new tool so the agent can scaffold a plugin from inside DSH without a shell.
+  zh: 一条命令生成 DSH host 侧插件骨架（工具注册 + 审批钩子 + dsh.bundle 清单 + 三层测试），并注册 plugin_kit_new 工具，让 agent 不开 shell 也能在 DSH 里搭骨架。

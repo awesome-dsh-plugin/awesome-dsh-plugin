@@ -1,0 +1,6 @@
+url: https://github.com/ScreamingMaggot/rcs-context
+name: ScreamingMaggot/rcs-context
+category: memory
+description:
+  en: 'Reversible context folding plus external memory for DeepSeek Harness: tool output collapses into expandable lines, session facts become auditable records.'
+  zh: '给 DeepSeek Harness 的可逆上下文折叠 + 外部记忆：工具输出与模型回复折叠成一行可展开的摘要（12 个长会话实测 52×），会话事实沉淀成可像文件一样浏览的带证据记录（rcs:// 寻址、L0/L1/L2 分层、每条事实可回查来源）。'

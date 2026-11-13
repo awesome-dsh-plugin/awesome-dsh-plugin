@@ -1,0 +1,6 @@
+url: https://github.com/tianxiaohei6/dsh-smarthome
+name: tianxiaohei6/dsh-smarthome
+category: tools
+description:
+  en: 'Home Assistant control for DSH: entity states, history, service calls, notifications, weather, and a live home dashboard card.'
+  zh: '在 DSH 里控制 Home Assistant：实体状态、历史、服务调用、通知、天气与实时家庭仪表盘卡片。'

@@ -1,0 +1,7 @@
+url: https://github.com/elsebit/dsh-deepseek-usage-extended
+name: elsebit/dsh-deepseek-usage-extended
+category: usage
+description:
+  en: 'A fork of dougen/dsh-deepseek-usage (the upstream repository has no license file; its manifest declares MIT) that adds IKunCode account balance queries alongside the upstream provider readers, subscription usage windows and model price snapshots. For IKunCode, your key is sent as a Bearer token to api.ikuncode.cc. It installs as @elsebit/dsh-deepseek-usage-extended from GitHub Releases with its own routes and settings, so disable the original usage plugin if you want a single card; the OAuth credential references it inherits are shared with the original.'
+  zh: 'dougen/dsh-deepseek-usage 的 fork（上游仓库没有许可证文件，manifest 声明 MIT），在上游的各家余额读取、订阅用量窗口和模型价格快照之外，增加 IKunCode 账户余额查询。查 IKunCode 时，你的密钥会以 Bearer 令牌发往 api.ikuncode.cc。它以 @elsebit/dsh-deepseek-usage-extended 的名字从 GitHub Release 安装，路由和设置独立，只想留一张用量卡片的话请停用原插件；继承来的 OAuth 凭据引用与原插件共用。'
+tarball: https://github.com/elsebit/dsh-deepseek-usage-extended/releases/latest/download/dsh-deepseek-usage-extended.tgz

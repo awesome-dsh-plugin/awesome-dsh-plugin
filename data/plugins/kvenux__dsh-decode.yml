@@ -1,0 +1,6 @@
+url: https://github.com/kvenux/dsh-decode
+name: kvenux/dsh-decode
+category: dev
+description:
+  en: 'Before you say yes to an agent, ask how the code works: answers come with an interactive UML diagram (8 types) linked to the text, so pointing at a paragraph highlights it in the diagram and clicking a step jumps to its paragraph. Code quotes are checked against the files.'
+  zh: 点 yes 之前先问清代码怎么运作：回答带一张和文字联动的交互式 UML 图（8 种），指向段落图上跟着高亮，点图里的一步文字跳到对应段落；代码引文回到文件里核对。
