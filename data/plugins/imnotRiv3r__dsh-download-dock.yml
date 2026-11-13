@@ -1,0 +1,7 @@
+url: https://github.com/imnotRiv3r/dsh-download-dock
+name: imnotRiv3r/dsh-download-dock
+category: ui
+icon: https://raw.githubusercontent.com/imnotRiv3r/dsh-download-dock/main/docs/icon-180.png
+description:
+  en: Observes detected background download commands and renders live cards with bytes, speed and ETA; silent downloads get a total from a HEAD probe.
+  zh: 观察识别到的后台下载命令并显示实时进度卡片（字节、速度、剩余时间）；静默下载用 HEAD 探测总量。
