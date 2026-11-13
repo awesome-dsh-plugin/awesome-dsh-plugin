@@ -1,0 +1,12 @@
+url: https://github.com/nobodyuan/dsh-balance-widget
+name: nobodyuan/dsh-balance-widget
+category: usage
+description:
+  en: A compact always-on-top desktop widget that launches with the dsh desktop
+ profile (alongside dsh-pet) and shows your WorkBuddy compute-credit balance
+ and DeepSeek platform balance side by side; 5-minute auto-refresh, six-level
+ color coding by remaining ratio, drag/topmost/save-position, single-instance
+ lock and cached fallback on API errors. Pure PowerShell+WPF, no compilation.
+  zh: 随 dsh 桌宠（desktop profile）一起启动的桌面余额悬浮窗：同屏显示 WorkBuddy
+ 算力余额与 DeepSeek 开放平台余额；5 分钟自动刷新、按余量六档变色、可拖动置顶、
+ 记住位置、单实例保护、接口异常时显示缓存值。纯 PowerShell+WPF 免编译实现。
