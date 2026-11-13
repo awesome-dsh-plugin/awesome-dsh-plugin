@@ -1,0 +1,7 @@
+url: https://github.com/vogtersea/dsh-worklog
+name: vogtersea/dsh-worklog
+category: workflow
+description:
+  en: Personal work tracking panel with dashboard, week and archive views, stored in a local SQLite file, plus five agent tools to list, add, complete and annotate work items.
+  zh: 个人工作跟踪面板，含仪表盘、周视图与归档，数据存本地 SQLite，并向 agent 提供列出、新建、完成、追加进展五个工具。
+icon: https://raw.githubusercontent.com/vogtersea/dsh-worklog/main/assets/icon-180.png
