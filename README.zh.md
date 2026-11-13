@@ -2495,6 +2495,7 @@ dsh plugin --profile web add dshmarket
 - [gaolin89898/dsh-usage-meter](https://github.com/gaolin89898/dsh-usage-meter) — 跟随会话当前服务的侧边栏小组件：显示 OpenCode GO 滚动、周、月用量与时间条，MiniMax 用量，以及 DeepSeek、OpenRouter、Moonshot 余额。
 - [gdy01/dsh-token-cost](https://github.com/gdy01/dsh-token-cost) — 在 DSH Web 侧边栏按项目展示 LLM Token 用量与人民币花费，分别统计输入（未命中）、命中与输出，并按模型标准价格自动计价。
 - [gejiaju/dsh-balance](https://github.com/gejiaju/dsh-balance) — 显示 DeepSeek API 余额，并判断当前是否为高峰时段，实时倒计时到下次切换。
+- [Genesi599/dsh-plugins#quota-panel](https://github.com/Genesi599/dsh-plugins/tree/main/plugins/quota-panel) — 侧栏底部的余额与用量卡片：DeepSeek 账号余额、今日 token（含输入、缓存、输出明细）、本会话 token，以及抓取失败时的最近错误。
 - [ghang/dsh-cache-helper](https://github.com/ghang/dsh-cache-helper) — 展示缓存命中、发送前确认请求前缀风险，并按调用步骤定位缓存失效。
 - [Ghost011118/dsh-balance-meter](https://github.com/Ghost011118/dsh-balance-meter) — 输入框 dock 显示 DeepSeek 账户余额与会话花费，自动拉取官方定价，支持高峰/低谷计价。
 - [GIN0076/dsh-token-usage](https://github.com/GIN0076/dsh-token-usage) — DSH 设置面板词元用量统计：从会话日志折叠出日/周/月 × 模型（或按厂商合并）的词元统计，storage-domain 持久化、经同源 /token-usage-rpc 路由出数；SVG 折线图（十字线悬浮按日拆到每个模型）+ 占比排行（含可选金额）+ 缓存命中率与缓存读写卡片 + 用户自备的每百万 token 价目表 + 日/月预算告警 + 当前区间导出 CSV/JSON + 可见时自动刷新 + 预设与自定义起止日期 + 重建（存储里存在日志已不存在的历史时先要一次确认）。
@@ -4230,6 +4231,7 @@ dsh plugin --profile web add dshmarket
 - [FunnyDiodio/dsh-session-delete](https://github.com/FunnyDiodio/dsh-session-delete) — 给侧边栏每个会话的"…"菜单加上"删除会话"（官方只有归档/置顶/重命名/分叉，无持久 删除）。一键「强制删除」：逐出宿主内存态会话、停止后台工作后，彻底清除会话日志、 投影缓存与注册表记账，已连接的桌面 Web 端即时清行、不留幽灵。会话生成的工作区文件 保留，对话记录永久删除；第三方云端镜像（如经 Agents Anywhere 同步的手机 App）持有 各自副本、需在其 App 内管理。中英双语界面，本地回环路由带信任栅栏。需 DSH >=0.2.1-rc.1。
 - [GallenShao/dsh-faster-compress](https://github.com/GallenShao/dsh-faster-compress) — 在后台准备上下文摘要并于安全步骤应用，保留原生压缩回退，并提供摘要内容、应用状态、耗时与用量的会话压缩历史。
 - [Gaudi-XIX/dsbot-session-create](https://github.com/Gaudi-XIX/dsbot-session-create) — 给会话加四个工具：create_session 在指定工作区或任意一个已存在的文件夹里开一个新会话，并把一段提示词投进去；session_message 给一个还在跑的会话再追加一条消息——请宿主立刻把它插进正在跑的那一轮，不再排队到本轮结束；已经闲下来的会话会被拒投，并指向 create_session；read_session_transcript 按会话 id 读回它说过什么、当前这一轮结束没有；list_dispatched_sessions 列出本插件派送过哪些会话、各自此刻什么状态。宿主半边插件，没有界面，调用的是宿主自己的建会话能力。装完需重启 DSH。
+- [Genesi599/dsh-plugins#branch](https://github.com/Genesi599/dsh-plugins/tree/main/plugins/branch) — 会话分支的四个斜杠命令：列出分支树、在已完成的轮次处 fork、把会话连同整个家族置顶、把子分支合并回父会话。
 - [GengDaPeng/dsh-agent-message](https://github.com/GengDaPeng/dsh-agent-message) — DeepSeek Harness 跨会话 Agent 通信：支持会话发现、离线投递、投递回执与发送方会话导航。
 - [glk1220/dsh-session-git](https://github.com/glk1220/dsh-session-git) — 把分叉会话里做完的工作合并回原会话：/merge 直接从分支的会话记录整理出摘要、不调用模型（每轮的提问与回复、改动的文件、执行的命令、你做的选择、待办和最终结论），随你的下一条消息交给 agent，或用 --wake 立即处理；同一分支再次合并只带新增的轮次。另有 /branches、带合并状态的右侧栏分支地图、输入框上方的未合并提醒，以及供 agent 使用的 session_branches / session_branch_merge 工具。
 - [GnaneshKunal/dsh-session-coldstore](https://github.com/GnaneshKunal/dsh-session-coldstore) — DSH 会话的分层冷存储：闲置会话移出实时根目录、转入磁盘冷层而不被删除；冷层上的 FTS5 索引让它们仍可检索，需要时可将会话恢复回实时根目录。默认为演练模式，在设置页关闭后才会真正移动会话。
@@ -4958,6 +4960,7 @@ dsh plugin --profile web add dshmarket
 - [freehul/sgme](https://github.com/freehul/sgme) — 拾光记忆引擎（SGME）桥接：多智能体共享长期记忆（HTTP）—— L0/L1/L1.5/L2 分层提炼、按场景注入、统一检索、主动关怀信号（memory_search / wiki_search / signal_pull / signal_claim / signal_ack），npm 包名 `dsh-sgme`。
 - [Frog755/dsh-hybrid-memory](https://github.com/Frog755/dsh-hybrid-memory) — DSH 本地混合记忆插件：L1 快照（MEMORY.md/USER.md，由 memory_* 工具按需读取）+ L2 可检索知识库（facts + SQLite FTS5，滑窗分词支持中文检索）+ L3 从 Hermes/Claude Code/Codex/WorkBuddy 以及 Agent Hub 已批准文档（memory/global、memory/projects、accepted decisions）导入，内容哈希去重。v0.2.0 已移除全部自动注入：记忆只在模型调用 12 个 memory_* 工具之一时才进入上下文，数据全部留在本地。
 - [Gao2612/relationship-notes](https://github.com/Gao2612/relationship-notes) — 私人关系手记：按消息级证据为每天的聊天打分，并跟踪一段关系的进展。聊天、档案与草稿只存在浏览器本机 IndexedDB，插件自身不运行服务器；但使用模型回复、资料整理或历史自动分析时，相应聊天上下文会交给 DSH 配置的模型服务。
+- [Genesi599/dsh-plugins#curator](https://github.com/Genesi599/dsh-plugins/tree/main/plugins/curator) — 每几轮让模型判断是否有值得沉淀的经验，并把结论归入 memory、skill 或 hook 三类之一。
 - [gezi-wen/sage-mem](https://github.com/gezi-wen/sage-mem) — 基于文件的跨会话记忆：纯 Markdown 记忆文件，检索结果自动注入；格式与 Claude Code 的 CLAUDE.md 及记忆文件兼容，迁移即手工复制文件。
 - [GIN0076/cross-session-memory](https://github.com/GIN0076/cross-session-memory) — 跨会话记忆「错题本」插件：每轮把 ≤2 KB 的记忆索引原文注入提示词；mem_recall / mem_save 模型工具，写入闸要求四段结构 + 可定位引用 + 人工批准才落盘；注册 /memory 命令；所有教训以零依赖 Markdown 条目存放在 .memory/ 目录。
 - [GIT121995/dsh-memory-gate](https://github.com/GIT121995/dsh-memory-gate) — 有界本地记忆 + CBDC 权威门控：SQLite + FTS5 claims，作用域召回并给出可解释的采用/核验/忽略决策与完整审计轨迹，/memory 命令，每次注入 ≤3 条/1200 字符，不增加额外模型调用。
@@ -7442,6 +7445,7 @@ dsh plugin --profile web add dshmarket
 - [underworld-oddball/dsh-volume-knob](https://github.com/underworld-oddball/dsh-volume-knob) — 输入框工具行里、模型选择框左边的扬声器按钮——单击翻到「你最新提问的开头」并闪烁光标，从那里读到最新回复结尾（走 dsh-tts，回退浏览器语音）；按住图标后在页面上单击即可挑选任意朗读起点；按住上滑调出竖式混音台，分别控制页内媒体音量与系统输出音量。
 - [Vansnc/dsh-feiyu-say](https://github.com/Vansnc/dsh-feiyu-say) — 调用阿里百炼 WebSocket TTS 合成语音，返回 WAV 文件与试听地址，并可按轮提示模型使用语音。需要百炼 API Key 与 ffmpeg，文本会发送到阿里云；插件本身不发消息，怎么发由当前会话的传输方式决定。
 - [wangzhanchao883/dsh-hold-to-talk](https://github.com/wangzhanchao883/dsh-hold-to-talk) — 输入框上的单手、免键盘输入：鼠标在输入框按住、说话、松手，文字直接进草稿；上滑取消，不留半句。不用去瞄麦克风按钮，也不用记快捷键，手始终不用离开输入区——另一只手正忙的时候，这一点才是关键。识别完全在本机完成（SenseVoice + sherpa-onnx），无需 API key，音频不出本机。
+- [Watchcats211/dsh-podwave](https://github.com/Watchcats211/dsh-podwave) — 本地优先的播客播放器与转写插件：播放磁盘音频，本地转写、双语字幕与 SRT/Markdown 导出。
 - [WayneYu430/dsh-voice-agent#voice-app](https://github.com/WayneYu430/dsh-voice-agent/tree/master/packages/voice-app) — dsh 的对话式语音前端 Agent：通过 ByteDance Duplex 自然对话，把语音请求委派给后台任务，并用语音回报异步结果。
 - [WizisCool/dsh-ears](https://github.com/WizisCool/dsh-ears) — 面向 DeepSeek Harness (dsh) 的语音输入插件：输入框的麦克风按钮把语音转成草稿文本，支持多种语音识别后端，可选经 dsh 自有 LLM 路由润色，并带原生设置页。
 - [wuyou0423/dsh-space-ptt](https://github.com/wuyou0423/dsh-space-ptt) — 按住空格录音、松手自动识别并发送，不用先点输入框。按 Esc 可取消，切换窗口自动取消。需先启用官方「语音输入」Bundle（`@deepseek-ai/dsh-experimental-voice-input-bundle`）并下载好语音模型，否则插件不接管空格。
@@ -8227,6 +8231,7 @@ dsh plugin --profile web add dshmarket
 - [gavinc-cn/touchstone-dsh](https://github.com/gavinc-cn/touchstone-dsh) — 面向 DeepSeek Harness（dsh）的 AI 智能体驱动自动化测试平台：以长期多轮会话驱动 agent 编写并执行 Markdown 用例、产出 bug 报告、修复代码并复验，配套按项目串行的统一队列、开发看板与内置压测。
 - [GEB-lab/dsh-codex-mcp](https://github.com/GEB-lab/dsh-codex-mcp) — 让 Codex 通过 dsh_env、dsh_run、dsh_resume 三个 MCP 工具启动和续跑 DSH headless 会话的桥。
 - [geml-spec/gemworks](https://github.com/geml-spec/gemworks) — 用 GEML 流程带 agent 干活：工作项按流程一步步走，做法记在它所属的那一步，右侧栏的看板页签显示每件事走到哪了。同时挂上 GEML 的 MCP 服务和技能；项目里有固化流程时，监督器按流程当前状态把关工具调用。需要 Node.js 22+；GEML MCP 服务器在会话启动时经 npx（@geml/geml）获取。
+- [Genesi599/dsh-plugins#reminders](https://github.com/Genesi599/dsh-plugins/tree/main/plugins/reminders) — 在会话事件上按白名单运行 Python hook 脚本，并把脚本返回的文本注入下一轮，让常驻规则写在可编辑的 .py 文件里而不是提示词里。
 - [genesis-agents/dsh-deep-insight](https://github.com/genesis-agents/dsh-deep-insight) — 提供原始资料归档、知识图谱、精确引文和可导出报告的循证研究工作区。处于 alpha 阶段。需要 Node 24.9 及以上、uv 和 Python 3.13，另有一步必须执行的安装脚本（setup-engine.mjs，复制引擎并按锁文件执行 uv sync）；pnpm 还需允许 onnxruntime-node 与 protobufjs 运行构建脚本。
 - [gezi-wen/dsh-subagent-delegation](https://github.com/gezi-wen/dsh-subagent-delegation) — 携带一份讲「什么该交给子 agent 做、而不是自己顺手做」的技能——哪些任务值得扇出、一次派几个、并行怎么发，以及子 agent 回来后怎么核对它真的做了什么，而不是信它的总结。
 - [github-yousen/dsh-novel-mode](https://github.com/github-yousen/dsh-novel-mode) — 用代码驱动的工作流把一个想法写成校验通过的小说：JavaScript 状态机推进各阶段（宪法、大纲、设计、写作、校验、批量、导出）和每章 15 步的循环，每道门禁由 PowerShell 脚本校验，版本化断点可在重启后从原章节续写；起草与评审由 9 个子代理角色完成。需要 PowerShell 7（pwsh）与 Python 3.7+；没有 pwsh 时门禁记为 DEGRADED，运行暂停。
@@ -9976,6 +9981,7 @@ dsh plugin --profile web add dshmarket
 - [gabrielbav/dsh-plugin-airlock](https://github.com/gabrielbav/dsh-plugin-airlock) — 安装前安全闸门：在禁用安装脚本的隔离区中检查每个插件、技能和子代理组合包，使用 Cisco Skill Scanner、SkillScan、Cisco MCP Scanner、OSV-Scanner、Trivy、Gitleaks 以及可选的 SARIF 工具或基于 DSH 模型的 LLM 判定进行扫描，然后放行、要求审查或阻止。需要 deepseek-ai/deepseek-harness#12999 中提议的 install-gate 钩子。
 - [GDWhisper/dsh-web-startup-auth](https://github.com/GDWhisper/dsh-web-startup-auth) — 替换 dsh web 启动器以允许绑定 0.0.0.0，并以账号密码登录为门槛：签名会话 cookie、/api 路由保护、设置面板认证标签页，以及轮换签名密钥使全部会话失效的重置 CLI。
 - [GEMJay118/dsh-file-integrity-check](https://github.com/GEMJay118/dsh-file-integrity-check) — 右侧栏面板：在 Windows 上扫描当前 DSH 工作区文件与目录的 Low 完整性标签（quick / deep），恢复为 Medium 并复扫验证；保留快照与恢复脚本，可处理 DACL 未给 owner WRITE_OWNER 的对象。
+- [Genesi599/dsh-plugins#tool-policy](https://github.com/Genesi599/dsh-plugins/tree/main/plugins/tool-policy) — 在执行前拦下高风险的调用形态：内联多行 Python、没有出处的转发内容、缺失来源标签，以及超出字数上限的 memory 写入。
 - [gengwg/dsh-kubectl-guard](https://github.com/gengwg/dsh-kubectl-guard) — 按 kubeconfig context 管控 kubectl 调用的策略插件：本地集群外硬拒绝不可逆操作，其余写操作请求人工确认。
 - [GooDAnDReaDY/dsh-agent-loop-guard](https://github.com/GooDAnDReaDY/dsh-agent-loop-guard) — 为 DeepSeek Harness 提供故障关闭式运行时工具调用循环防护。
 - [GooDAnDReaDY/dsh-dsml-artifact-guard](https://github.com/GooDAnDReaDY/dsh-dsml-artifact-guard) — 清理模型文本流中泄漏的 DeepSeek DSML 闭合标签。
