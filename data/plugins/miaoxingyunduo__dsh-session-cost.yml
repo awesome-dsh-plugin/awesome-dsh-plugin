@@ -1,0 +1,6 @@
+url: https://github.com/miaoxingyunduo/dsh-session-cost
+name: miaoxingyunduo/dsh-session-cost
+category: usage
+description:
+  en: 'Per-conversation token and money accounting: the session_cost and list_session_costs tools price every attempt from the session log against an editable per-model rate table (with DeepSeek peak/off-peak windows), the /cost command reads the same ledger, and a composer pill shows the live session total including delegated subagent sessions.'
+  zh: '逐对话的 Token 与金额核算：session_cost / list_session_costs 工具按可编辑的分模型单价表（支持 DeepSeek 峰谷时段）为会话日志里的每次调用计价，/cost 命令读取同一份账目，输入框药丸实时显示本会话合计（含派生的子代理会话）。'
