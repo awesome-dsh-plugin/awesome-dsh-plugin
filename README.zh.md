@@ -1159,6 +1159,7 @@ dsh plugin --profile web add dshmarket
 - [liguobao/dsh-file-viewer](https://github.com/liguobao/dsh-file-viewer) — Web 客户端只读文件预览面板，支持图片、PDF、CSV/TSV、文本、源代码、Markdown、JSON 与 YAML 渲染、大文件分段读取，以及面向非本地内容的 provider API。
 - [lihang-lh/dsh-moon-light](https://github.com/lihang-lh/dsh-moon-light) — DSH Web 界面边缘的跑马灯氛围光环：随会话状态自动变色（运行中绿色流动、完成粉色、有待处理黄色警告），设置面板可调颜色、光圈宽度、转速与闪动频率。
 - [lihang-lh/dsh-task-panel](https://github.com/lihang-lh/dsh-task-panel) — DSH Web 侧边栏任务面板：发布任务、自动蒸馏历史会话，由子代理分阶段（规划/开发/复核）执行，并在面板内验收。
+- [lihengxi20/dsh-session-tabs](https://github.com/lihengxi20/dsh-session-tabs) — 在 DSH 会话头部下方增加会话标签栏：打开过的会话按顺序显示为标签（工作区/标题与状态圆点），点击切换，可用悬停 × 或右键菜单关闭、重命名、关闭其他/全部关闭；标签列表持久化在 localStorage。纯插件实现，不改 DSH 核心，也不停止后台任务。
 - [LihiHe/dsh-thinking-slider](https://github.com/LihiHe/dsh-thinking-slider) — 把输入框右侧的「推理等级」从菜单点选换成可拖拽滑条，并接管官方那枚「模型 · 推理等级」chip。拖动中连续跟手，松手吸附到最近档位，且一次拖拽只提交一次会话更新。轨道内自绘填充、刻度点与白圆钮，只有最高档（xhigh/max/ultra）才铺品牌色流动渐变，两端标出最低与最高档名；同一张卡片可展开官方模型清单。方向键移动一档、PageUp/PageDown 移动两档、Home/End 跳到两端，每次移动都会提交。目录对象上的世代计数器丢弃迟到的响应，prefers-reduced-motion 下关闭动画。数据全部取自官方 modelDirectories，不新增任何能力。
 - [lihongxu0221/dsh-workspace-browser](https://github.com/lihongxu0221/dsh-workspace-browser) — 替换出厂侧边栏工作区浏览器，补上最近会话、可添加额外源文件夹的项目编辑器，以及置顶、重命名、派生和归档行操作。
 - [lijianbin2/dsh-subtitle-remover](https://github.com/lijianbin2/dsh-subtitle-remover) — 在 DSH 侧边栏里调用本机 video-subtitle-remover 引擎擦除视频硬字幕：画面帧按开始/结束时段预览、拖拽框选最多六个区域、自动识别字幕带并由 DSH 模型复核、处理中实时前后对比，成片可一键打开或定位到文件夹。需预先准备 video-subtitle-remover 仓库（含模型）与装有 torch、paddle、OpenCV 的 Python 环境。
@@ -1949,6 +1950,7 @@ dsh plugin --profile web add dshmarket
 - [Waverly-W/dsh-scratchpad](https://github.com/Waverly-W/dsh-scratchpad) — DeepSeek Harness Web GUI 临时对话工作区自动化管理插件。
 - [wdxtub/dsh-wdx-relief](https://github.com/wdxtub/dsh-wdx-relief) — DSH Web 界面的一组顺手小件：输入框下方灰字预测下一句、Tab 填入；输入框上方逐轮一行摘要（也可以放到下方）、不进入模型上下文；右侧栏面板管待跟进、会话回顾与旁问，旁问可单独选模型；回复长度、风格与「便于行动」也在插件配置里调。
 - [wefio/dsh-cache-miss](https://github.com/wefio/dsh-cache-miss) — 提示缓存未命中（cache miss）时，在重建缓存的 assistant 回复下方显示一条黄色缓存提示，展示未缓存（uncached）重新计费（re-billed）的输入 token、缓存命中 token 与首字延迟（TTFT）。
+- [weiaisuyan/dsh-sidebar-entry-manager](https://github.com/weiaisuyan/dsh-sidebar-entry-manager) — 在设置页逐个隐藏或显示 DSH 左侧边栏的插件入口，无需停用插件；带插件内更新。
 - [weiaisuyan/dsh-split-view](https://github.com/weiaisuyan/dsh-split-view) — 把 DSH 主区换成多栏标签工作区：最多四栏会话并排，每栏自带标签条、输入框和宿主视图切换条。不能与 luckybilly 的 dsh-split-view 同时启用；安装的包名是 dsh-multipane。
 - [weibaohui/dsh-dashboard](https://github.com/weibaohui/dsh-dashboard) — 使用量仪表盘：离线扫描会话日志，统计每日/每周/每月 token、估算费用、模型/工具/技能/命令榜、输出速度、工作时段与质量指标；gridstack+ECharts 卡片可拖拽编排，支持自定义公式与 AI 编排（提示词往返导入）。
 - [weibaohui/dsh-settings-ui](https://github.com/weibaohui/dsh-settings-ui) — 设置界面自定义：调整原生设置窗口大小（全屏/预置大尺寸/自定义宽高）、背景透明度与背景（主题/自定义颜色/图片），悬浮球即开即调，存本机浏览器。
