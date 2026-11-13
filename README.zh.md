@@ -415,6 +415,7 @@ dsh plugin --profile web add dshmarket
 - [BangBang-03/dsh-client-ui-quote](https://github.com/BangBang-03/dsh-client-ui-quote) — 把 DSH 里的任意选区变成可审阅的引用对象：正文、文件预览、终端、diff 都能引，代码引用带 path#line。发送后原句留下高亮与序号、可跳回；输入框上方「引用 ×N」可逐条编辑或移除；右侧栏引用清单可搜索、按状态与标签审阅、多选插入、导出 Markdown/JSON；侧边线程的结论可回流主会话；已发送的引用能追加修订，旧胶囊标「已修订」；模型可按「引用N」逐条回应。
 - [BaoBao1996121/dsh-huaci-pinglun](https://github.com/BaoBao1996121/dsh-huaci-pinglun) — dsh划词评论（dsh-huaci-pinglun）：基于 BangBang-03/dsh-client-ui-quote 0.11.1 的 MIT 修补分支，提供划词评论与引用对话，修复引用文本框在挂载并可见后测量、补齐边框高度与长文滚动。
 - [BaoBao1996121/dsh-restart-ui](https://github.com/BaoBao1996121/dsh-restart-ui) — 为 DSH Web 界面添加基于本机回环接口的重启按钮，按当前进程的可执行文件、参数和工作目录请求重新启动。
+- [Basspoom/dsh-nextline](https://github.com/Basspoom/dsh-nextline) — NextLine 下一句在 DSH 输入框内显示个性化的下一条消息建议，按 Tab 或右方向键即可填入草稿。
 - [dsh-keep-awake](https://github.com/bearice/dsh-keep-awake) — 任意 agent、subagent 或后台任务运行时持有系统唤醒锁，全部结束后按可配置宽限期释放；提供中英双语 Web 设置页，实时显示活动与唤醒锁状态，支持手动保持与阻止屏幕关闭。
 - [BeckChiang/dsh-rsa](https://github.com/BeckChiang/dsh-rsa) — 仅限 Windows 桌面版 DeepSeek Harness 的可配置启动动画（splash）：主进程真实启动画面、设置页实时预览、深浅色跟随。通过改写 app.asar 部署（会保留备份），退出 DSH 后下次启动生效；DSH 升级后需重新部署。
 - [Beellix-dev/beellix-dsh-ui](https://github.com/Beellix-dev/beellix-dsh-ui) — Beelli X UI 为 Windows 上的 DSH NEXT 提供一套可搜索的设置。左栏按用途导航，「外观」内分为主题、皮肤、字体、吉祥物和效果，「模型」单独管理服务连接。皮肤支持图片或 MP4 壁纸、磨砂面板与方案保存。桌宠可以添加多只、切换显示，并为每只上传默认和额外动作，右键播放。启动动画支持 MP4 或 GIF，可预览、设定时长和跳过。模型可用厂商预设或自定义接口，从服务获取型号后勾选，也能手动填写模型 ID。还支持按原工作区恢复或批量删除归档聊天，以及在插件页直接切换和添加市场。会替换内置设置页与侧栏（停用 ui-settings-general 与 ui-sidebar），请勿与其他接管设置页或侧栏的插件同装。
@@ -4952,7 +4953,8 @@ dsh plugin --profile web add dshmarket
 - [CeilCelia/dsh-eli-mode#packages/eli-mode](https://github.com/CeilCelia/dsh-eli-mode/tree/main/packages/eli-mode) — 知识库驱动的 Agent 预设：wiki 长期记忆、网页知识库、管理页、可选界面润色。
 - [Chance722/dsh-inbox](https://github.com/Chance722/dsh-inbox) — dsh 的个人收件箱：输入框的 /inbox 或侧栏面板把链接、图片、文本与账密收进本地仓库，先按本地规则、再由有每日上限的模型分类，可在面板里筛选、搜索与编辑；对话里让助手按需检索取回，账密正文加密落盘，可选 WebDAV 或 S3 远端同步记录与附件字节。目前只在 Windows 实测。
 - [chaos-miku/dsh-error-atlas](https://github.com/chaos-miku/dsh-error-atlas) — 把 DSH 的运行错误与编程任务复盘渲染成可交互的 GPU 图谱，并把记录下来的教训送回模型上下文。
-- [cheeseRatRat/dsh-buwang](https://github.com/cheeseRatRat/dsh-buwang) — 不忘 —— 主动记录的私人记忆库，内置可修改的人格，只在你开口时才写；读取时每轮自动注入人格与记忆，纯本机 Markdown 不联网。
+- [cheeseRatRat/dsh-benwo](https://github.com/cheeseRatRat/dsh-benwo) — 本我回响之核 —— 给 DSH 的本地优先「人格与记忆」插件。数据永不离开你的磁盘。
+- [cheeseRatRat/dsh-buwang](https://github.com/cheeseRatRat/dsh-buwang) — 不忘 —— 主动记录的私人记忆库，内置可修改的人格，只在你开口时才写、才读；读取时每轮自动注入人格与记忆，纯本机 Markdown 不联网。
 - [chenzheshushi-commits/dsh-evolve](https://github.com/chenzheshushi-commits/dsh-evolve) — 跨会话记忆，零 token 确定性召回（bigram-Jaccard 与 FTS5 BM25 经 RRF 融合，中文分词精确）；重复观察会强化已有理解而非堆叠重复；过程性知识结晶为 SKILL.md，就地精炼升级，走 active-stale-archived 生命周期治理，归档可逆、可回滚。摄入与处置各有一档用户可选的自治程度，冲突与高重要写入始终交人工复核，任何档位都不会自动删除。需要 Node 22.5+。
 - [Chess12333/dsh-ming-graph](https://github.com/Chess12333/dsh-ming-graph) — DSH 的记忆关系图：每条真实记忆一个点，每条边都得答得出「凭什么连」——引用、共词、归属、按时间补边，四种理由都能读出来。纯读盘、不过模型，读不到就报错，不拿假数据顶上。
 - [Chess12333/dsh-ming-memory](https://github.com/Chess12333/dsh-ming-memory) — DSH 的开场记忆插件：会话开在指定目录时，把人格文件与最近几篇日记注入系统提示词，这些源文件只读不改；它会在 <root>/live/feed.json 保存一小段跨会话的最近对话，并可写出 <root>/live/web-for-qq.md 交给 QQ 侧，不上传任何内容。会变的块（时间感、刚做过、别的会话）走每步刷新的上下文消息，系统提示逐字节稳定，前缀缓存不被打断。
