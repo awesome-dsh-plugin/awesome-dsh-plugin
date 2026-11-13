@@ -1,0 +1,6 @@
+url: https://github.com/sunshaobei/dsh-mcp-manager
+name: sunshaobei/dsh-mcp-manager
+category: tools
+description:
+  en: MCP server manager for the DSH web sidebar that groups servers by status and connects stdio and streamable-http servers through form or JSON import, with tool access limited to four middleware tools.
+  zh: DSH Web 侧边栏的 MCP 管理器：按状态分级展示服务器，支持表单与 JSON 导入接入 stdio / streamable-http 服务，工具仅通过四个中间件工具访问。

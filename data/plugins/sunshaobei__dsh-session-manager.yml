@@ -1,0 +1,6 @@
+url: https://github.com/sunshaobei/dsh-session-manager
+name: sunshaobei/dsh-session-manager
+category: session
+description:
+  en: Session recycle bin for DeepSeek Harness with archive entry in the conversation header, single and batch restore or permanent delete, and protection for live sessions.
+  zh: DSH 会话回收站：会话详情归档入口、回收站单条/批量还原或彻底删除，并对活跃会话进行保护。
