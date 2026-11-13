@@ -1,0 +1,8 @@
+url: https://github.com/Bennie96/dsh-quark
+name: Bennie96/dsh-quark
+category: tools
+tarball: https://github.com/Bennie96/dsh-quark/releases/latest/download/dsh-quark.tgz
+icon: https://raw.githubusercontent.com/Bennie96/dsh-quark/main/assets/icon-180.png
+description:
+  en: 'Quark Drive panel for DeepSeek Harness: browse, search, upload, download, move, share and rename netdisk files from a left panel or a session sidebar tab, reference a file into the conversation, and 15 agent tools that wrap the official quarkclouddrive CLI.'
+  zh: '夸克网盘面板：在左侧栏主面板或会话右侧栏标签页里浏览、搜索、上传、下载、移动、分享、重命名，可把文件引用到对话，并提供 15 个包装官方 quarkclouddrive CLI 的 agent 工具。'
