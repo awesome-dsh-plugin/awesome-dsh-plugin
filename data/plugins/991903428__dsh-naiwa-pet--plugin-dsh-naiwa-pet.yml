@@ -1,0 +1,7 @@
+url: https://github.com/991903428/dsh-naiwa-pet/tree/main/plugin/dsh-naiwa-pet
+name: 991903428/dsh-naiwa-pet#dsh-naiwa-pet
+category: fun
+description:
+  en: 'Windows desktop pet: a transparent, always-on-top Naiwa frog that laughs when clicked, with a DSH plugin that adds a pet tool (start/stop/status), a balance tool (reads the signed-in DeepSeek account), and a Naiwa page in Settings.'
+  zh: 'Windows 桌面桌宠：透明置顶的奶蛙，点一下会捧腹大笑；插件提供桌宠与余额两个工具（余额自动读取 DSH 已登录的 DeepSeek 账号），设置里还有一页「奶蛙」开关。'
+icon: https://raw.githubusercontent.com/991903428/dsh-naiwa-pet/main/plugin/dsh-naiwa-pet/icon.png
