@@ -1,0 +1,6 @@
+url: https://github.com/Martin-nothing/dsh-qq-bridge
+name: Martin-nothing/dsh-qq-bridge
+category: remote
+description:
+  en: Bridges QQ (NapCat / OneBot 11) messages into DeepSeek Harness agent sessions, so replies come from your real agent with its persona, memory and tools.
+  zh: 把 QQ（NapCat / OneBot 11）的消息接进 DeepSeek Harness 的 Agent 会话，回复由你自己的 Agent（人格、记忆、工具）生成。
