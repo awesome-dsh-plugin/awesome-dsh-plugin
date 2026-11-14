@@ -4,4 +4,4 @@ category: tools
 description:
   en: 'Adds a2a_list_agents and a2a_call: the model calls administrator-whitelisted external A2A agents by id over SSE, and remote human-confirmation requests are relayed to DSH native userQuestions so the model cannot answer for the user.'
   zh: '新增 a2a_list_agents 与 a2a_call 两个工具：模型只能按管理员白名单以 id 调用外部 A2A 智能体（SSE），远端的人工确认请求会转成 DSH 原生 userQuestions，模型无法代替用户作答。'
-tarball: https://github.com/ninetyhe-90/dsh-a2a-hitl/releases/download/v0.1.0/dsh-a2a-hitl-0.1.0.tgz
+tarball: https://github.com/ninetyhe-90/dsh-a2a-hitl/releases/download/v0.1.1/dsh-a2a-hitl-0.1.1.tgz
