@@ -1,0 +1,7 @@
+url: https://github.com/StudentBuilding-Studio/dsh-search-pull
+name: StudentBuilding-Studio/dsh-search-pull
+category: agi
+icon: https://raw.githubusercontent.com/StudentBuilding-Studio/dsh-search-pull/main/assets/icon-180.png
+description:
+  en: Adds a static prompt section that makes the agent call the built-in web_search before answering questions about existing libraries, versions, errors or selection, plus an optional JSONL audit trail.
+  zh: 加一条静态系统提示规则，让 agent 在回答选型、版本、报错这类问题前先调用内置 web_search；可选写一份 JSONL 审计记录。
