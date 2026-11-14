@@ -1,0 +1,6 @@
+url: https://github.com/hanhan9999999999999999999/dsh-plugins/tree/main/plugins/dsh-phone-bridge
+name: hanhan9999999999999999999/dsh-plugins#dsh-phone-bridge
+category: remote
+description:
+  en: Adds a switch to the DSH settings page that starts and stops the built-in phone-bridge service, so the phone chat page can reach this machine over your own tunnel. Ships the whole bridge (chat store, sessions, emotion and TTS pipeline) with the plugin and reuses it, no second server to run.
+  zh: 在 DSH 设置页加一个开关，一键启停自带的 phone-bridge 手机远程服务，手机端聊天页就能通过你自己的隧道访问这台电脑。桥接本体（会话存储、会话管理、情绪与 TTS 管线）随插件一起提供并复用，不额外跑第二个服务。
