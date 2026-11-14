@@ -8297,7 +8297,7 @@ dsh plugin --profile web add dshmarket
 - [alib8b8/dsh-plugin-aflare](https://github.com/alib8b8/dsh-plugin-aflare) — aflare 工作流工具：通过本地 aflare 二进制生成、校验并执行本地优先的确定性 YAML 工作流 DAG（WAL 崩溃恢复、Saga 补偿），内置 300+ 模板。
 - [Yugoo Design](https://github.com/alibaba-damo-academy/yugoo-design/tree/main/packages/dsh) — 将你的 AI 智能体应用升级为交互式构思设计工作台，通过可编辑面板、结构化知识与有目的的循环推荐，协作完成复杂任务。
 - [alpacachen/dsh-automation](https://github.com/alpacachen/dsh-automation) — 在全新的 DSH 会话中运行单次或 RFC 5545 周期 Agent 任务，支持可视化计划编辑和会话关联历史。
-- [alpacachen/dsh-kanban](https://github.com/alpacachen/dsh-kanban) — 一个由用户与 DSH Agent 共同维护的工作区看板，通过看板标签页和 kanban 工具管理任务。
+- [alpacachen/dsh-kanban](https://github.com/alpacachen/dsh-kanban) — 一个插件，两种工作方式：面向人的看板与面向 AI 的工作流。看板支持与 Agent 共同管理工作区任务，提供拖拽卡片、搜索、优先级、标签、截止日期，以及 Markdown、图片和评论。工作流支持在对话中创建和修改可复用流程、配置阶段模型，由 AI 沿用 DSH 工具与授权逐阶段执行；通过流程图跟踪进度、查看原生阶段会话，在人工审核点通过或反馈打回，并支持失败重试与任务终止。每个任务拥有独立产物目录，可原地预览文件，还能结合执行历史和审核意见优化后续流程。
 - [Andiii208/gzhflow](https://github.com/Andiii208/gzhflow) — 六阶段公众号内容发布工作流，带质检门工具与配套 skill。
 - [AngleZhang-ZhangJiao/dsh-orchestrator2#dsh-orchestrator2](https://github.com/AngleZhang-ZhangJiao/dsh-orchestrator2/tree/main/plugins/dsh-orchestrator2) — Agent 预设：单会话跑三阶段自动开发流水线——并行研究员子代理交互设计、goal 驱动审核/开发子代理开发（按包预算台账硬上限）、验收修复循环。
 - [AntheaLaffy/dsh-plugin-tomato-todo#plugin](https://github.com/AntheaLaffy/dsh-plugin-tomato-todo/tree/main/plugin) — 在 DSH 中管理番茄钟、任务与学习计划；对话中的学习助手可读写与界面相同的本地记录。需另行安装并运行项目发行包里的 tomato-runtime 本地服务（Linux 发行包，监听 127.0.0.1:43987）。
@@ -9238,7 +9238,7 @@ dsh plugin --profile web add dshmarket
 - [HughPython/dsh-tc-mail](https://github.com/HughPython/dsh-tc-mail) — 腾讯智能体邮箱（Agent Mail）客户端：侧边栏面板浏览收件箱与发件箱，HTML 正文在沙箱内渲染并默认拦截外链图片，支持写信、回复、转发、附件收发、搜索与永久删除，可调字体与界面透明度；另注册 5 个工具（mail_health、mail_list、mail_read、mail_search、mail_send），发信走已授权的 agently-cli 账号。需腾讯账号（设备码授权），面板可一键安装 agently-cli；仅在 Windows 上实测。
 - [HUHUhim/dsh-taskbar-badge](https://github.com/HUHUhim/dsh-taskbar-badge) — 在 Windows 任务栏图标上显示 DSH 未读会话数，并恢复上次关闭时的窗口大小和位置。
 - [huhui-tech/dsh-host-notify](https://github.com/huhui-tech/dsh-host-notify) — 宿主侧 macOS 系统通知：提问/审批/回复完成即时送达，免疫渲染层隐藏丢通知，带图标、提示音与点击抬窗。
-- [HuiHui-Small/dsh-outlook-bridge](https://github.com/HuiHui-Small/dsh-outlook-bridge) — 在 DeepSeek 助理中接入 Outlook 邮箱和日历，支持未读角标与 AI 邮件草稿。登录使用你在设置里填写客户端 ID 的 Microsoft Entra 应用；不填则回退到微软自己的 Office 客户端 ID，微软可能拒绝（个人账户会报 AADSTS65002）。申请的权限包括邮件读写与发信、日历和 To Do 读写。AI 功能会把邮件内容交给你配置的模型；欢迎页天气会请求 Open-Meteo，使用当前位置时还会请求 BigDataCloud。
+- [HuiHui-Small/dsh-outlook-bridge](https://github.com/HuiHui-Small/dsh-outlook-bridge) — 在 DeepSeek 助理中接入 Outlook 邮箱和日历，支持未读角标与 AI 邮件草稿。新授权需要在设置中填写自己的 Microsoft Entra 应用客户端 ID，微软登录页在 DeepSeek Harness 内置浏览器中打开。申请的权限包括邮件读写与发信、日历和 To Do 读写。AI 功能会把邮件内容交给你配置的模型；欢迎页天气会请求 Open-Meteo，使用当前位置时还会请求 BigDataCloud。
 - [iArxic/dsh-agents-notch](https://github.com/iArxic/dsh-agents-notch) — Windows 屏幕顶部始终置顶的刘海：每个会话一个小机器人，显示哪些在工作、哪些在等你、哪些已完成或失败；不抢焦点，全屏应用下自动隐藏，带独立设置页。
 - [idoall/dsh-notify](https://github.com/idoall/dsh-notify) — 带可折叠状态通知、提示音与会话跳转的页内任务通知插件。
 - [imetn/dsh-lark-bridge](https://github.com/imetn/dsh-lark-bridge) — DeepSeek Harness 的飞书/Lark 双向控制器，支持 Project 与 Session 路由、交互卡片、审批、附件和任务控制。
