@@ -1,0 +1,7 @@
+url: "https://github.com/yhm138/dsh-image-rescue"
+name: "yhm138/dsh-image-rescue"
+category: tools
+description:
+  en: "When an image over the 8192 px per-side limit (or 64 MP) would make the Host reject the whole prompt, stores it byte-for-byte as a generic file and hands the model the saved path — no resize, no re-encode — so it can still be viewed or converted, e.g. a long screenshot or a scan to PDF."
+  zh: "图片单边超过 8192px（或总像素超限）导致整条消息被拒收时，把超限图片按原始字节存为普通文件、把只读路径交给模型，不缩放不转码，便于无损查看或转换（如长截图、扫描件转 PDF）。"
+icon: "https://raw.githubusercontent.com/yhm138/dsh-image-rescue/main/assets/icon-180.png"
