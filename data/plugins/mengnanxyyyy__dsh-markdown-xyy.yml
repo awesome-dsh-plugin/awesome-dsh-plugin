@@ -1,6 +1,6 @@
 url: https://github.com/mengnanxyyyy/dsh-markdown-xyy
-name: mengnanxyyyy/dsh-markdown-xyy
+name: 对话快速阅读（dsh-markdown-xyy）
 category: theme
 description:
-  en: Markdown conversation theme plugin — 4 built-in themes with light and dark variants, user-editable CSS themes, system-aware auto-switching, an in-browser editor with syntax highlighting and save-time validation, and a theme selection that persists across reloads and tabs. Also ships a version-history panel. Windows and DSH Desktop supported.
-  zh: 对话 Markdown 主题插件——4 套内置主题（浅/深双档）、可自行编辑的 CSS 用户主题、跟随系统自动切换、内置编辑器（语法高亮 + 保存校验）、选中主题在刷新与新标签页后保持，并附带版本台账面板；支持 Windows 与 DSH Desktop。
+  en: 'Reads AI conversation text faster and makes key points easier to catch — clearer than the default theme. Chat text in DSH is flat by default: headings, quotes, emphasis, code and tables all sit at one level, so long conversations are hard to scan. This lightweight theme plugin separates those layers with color and typography: 4 built-in themes with light and dark variants that follow the system, your own theme as a CSS file dropped into a folder, and a built-in editor with syntax highlighting and save-time validation — the choice survives reloads and new tabs. Colors and Markdown hierarchy only — fonts and message spacing stay with DSH. Also ships a version-history panel. Windows and DSH Desktop supported.'
+  zh: 帮助你更快地阅读 AI 对话文本、更容易抓住重点信息，比原生主题更易读。原生对话是「平」的，标题、引述、重点、代码与表格挤在同一层，读起来费劲、效率低；本插件以轻量级主题把这些元素拉开层次与配色，长对话扫一眼就能分出主次——4 套内置主题（浅/深双档，随系统切换）；往 ~/.dsh/web-themes-xyy 放一个 CSS 就是新主题，或用内置编辑器（语法高亮 + 保存校验）直接改，选中主题刷新与新标签页后仍在。只调配色与 Markdown 排版，字体与消息间距仍交给 DSH。附版本台账面板；支持 Windows 与 DSH Desktop。
