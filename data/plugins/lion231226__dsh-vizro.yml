@@ -1,0 +1,12 @@
+url: https://github.com/lion231226/dsh-vizro
+name: lion231226/dsh-vizro
+category: tools
+description:
+  en: 'Vizro dashboards inside DeepSeek Harness: seven native tools for the model contract, production-path validation, data profiling, scaffolding, preview servers and health checks, six authoring skills, and a workbench panel. No MCP server.'
+  zh: '在 DeepSeek Harness 里构建 Vizro 仪表盘：七个原生工具（模型契约、生产路径校验、数据画像、脚手架、预览服务、体检）、六个写作技能与一个工作台面板；不经过 MCP server。'
+tarball: https://github.com/lion231226/dsh-vizro/releases/download/v0.4.1/dsh-vizro-0.4.1.tgz
+
+
+
+
+
