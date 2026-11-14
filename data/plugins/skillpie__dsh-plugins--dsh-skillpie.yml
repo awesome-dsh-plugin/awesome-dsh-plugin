@@ -1,0 +1,6 @@
+url: https://github.com/skillpie/dsh-plugins/tree/main/dsh-skillpie
+name: skillpie/dsh-plugins#dsh-skillpie
+category: skill
+description:
+  en: 'Skill marketplace in the DSH sidebar: browse and search the SkillPie skill library, install agent skills into ~/.agents/skills with one click so new sessions can use them, plus a same-origin search/detail/install/installed API that conversation tools can reuse.'
+  zh: '侧栏「技能市场」：浏览并搜索 SkillPie 技能库，一键把 Agent 技能安装到 ~/.agents/skills，新开会话即可使用；并提供同源的 search/detail/install/installed API 供对话工具复用。'
