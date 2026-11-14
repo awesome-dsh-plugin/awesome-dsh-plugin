@@ -1,0 +1,8 @@
+url: https://github.com/349840432m-dev/dsh-session-tidy
+name: 349840432m-dev/dsh-session-tidy
+category: session
+tarball: https://github.com/349840432m-dev/dsh-session-tidy/releases/latest/download/dsh-session-tidy.tgz
+icon: https://raw.githubusercontent.com/349840432m-dev/dsh-session-tidy/main/assets/icon-180.png
+description:
+  en: 'One-click tidy for the DSH session list: archive blank sessions and sessions inactive for N days, keep the newest N per workspace, clean truncated or instruction-prefixed titles, and disambiguate duplicate titles — with a preview sheet, selectable presets, and batch undo.'
+  zh: '一键整理 DSH 侧栏会话列表：归档空白会话与超过 N 天未活动的会话、每个工作区只保留最近 N 条、清洗被截断或带角色设定开头的标题、区分重名标题；带预览、档位选择与整批撤销。'
