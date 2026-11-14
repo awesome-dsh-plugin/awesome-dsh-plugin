@@ -665,6 +665,7 @@ dsh plugin --profile web add dshmarket
 - [dream-office/dsh-note-wall](https://github.com/dream-office/dsh-note-wall) — DSH 侧栏便签墙：随手记录灵感，用颜色和分类整理，支持链接与图片，数据只存本机。
 - [Dreamaniax/dsh-model-effort-chips](https://github.com/Dreamaniax/dsh-model-effort-chips) — 把输入框的模型档位拆成模型胶囊和思考强度胶囊：强度胶囊打开可拖动、可滚轮调整的滑条，面板里跑 36 个 Canvas 动效、分 12 个大类。
 - [dreamfarer-space/deepseek-harness-intelligent-ui](https://github.com/dreamfarer-space/deepseek-harness-intelligent-ui) — 为 DeepSeek Harness 提供生成式交互界面：模型每次回答自行在 26 个校验过的原生组件与沙箱流式 HTML widget 之间选择，可按组件 ID 就地修补已渲染的界面，标签页、排序、筛选与表单值在刷新后恢复，滑块与筛选的重算在浏览器本地完成，不回调模型。
+- [dreamlee0/dsh-sticky-notes](https://github.com/dreamlee0/dsh-sticky-notes) — 便利贴备忘录配月历：便签带日期、可选时间与五种纸色，打勾完成后移入「已完成」标签并保留完成时间；月历中日期数字放大居中，当天的便签以彩色小点环绕数字显示，今天用红笔手绘圈标出。
 - [DreamLoomStudio/dsh-primitive-pulse](https://github.com/DreamLoomStudio/dsh-primitive-pulse) — 悬浮面板：把当前这段回答点亮了哪些 HowNet 语义基元实时画出来——脑形节点网络、脑电样式的多导联曲线、构成指纹卡。
 - [dreammaker2016/dsh-file-menu](https://github.com/dreammaker2016/dsh-file-menu) — 为 DSH Web 界面补上右键菜单：文字与输入框可复制/剪切/粘贴/全选，文件引用与链接可复制路径、在文件管理器中定位、用默认应用打开。
 - [dreamxjy/dsh-settings-resizer](https://github.com/dreamxjy/dsh-settings-resizer) — 让 DeepSeek Harness 设置窗口可配置大小并可拖动缩放，提供尺寸预设，并把尺寸保存到 profile 配置。
@@ -857,6 +858,7 @@ dsh plugin --profile web add dshmarket
 - [gulagala001/dsh-intelligent-ui](https://github.com/gulagala001/dsh-intelligent-ui) — DSH 原生交互式回答、可编辑卡片与按需界面技能。
 - [guo-ziao/dsh-interrupt-button](https://github.com/guo-ziao/dsh-interrupt-button) — 发送按钮旁的绿色打断按钮：运行时一键静默中断 AI，AI 停止后总结进展并向你征求新要求，支持自定义打断提示词。
 - [guoliyuan97-png/dsh-game-hud](https://github.com/guoliyuan97-png/dsh-game-hud) — 游戏风格悬浮 HUD：余额血条、上下文蓝条、官方峰谷定价与切换倒计时、上下文不足5%自动压缩、携带记忆开启新对话。
+- [gushengsheng/dsh-conversation-overview](https://github.com/gushengsheng/dsh-conversation-overview) — 对话条目概览：右上角按钮把对话窗口变成轮次列表，支持点击跳转、勾选条目让 AI 重点关注、把条目分发到其他会话、浏览其他会话并让该会话阅读，以及多选会话合成任务发给新建会话。
 - [guyue55/dsh-disk-panel](https://github.com/guyue55/dsh-disk-panel) — DSH Web UI 左侧栏磁盘面板：各卷剩余空间、按工作区统计目录占用、把构建产物安全移入 macOS 废纸篓（带审计与恢复）、把扫描结果交给 Agent 分析，以及 Host 端低空间看门狗与系统通知。仅限 macOS 和 Linux；移入废纸篓只在 macOS 上可用，Linux 上有扫描、趋势和看门狗但没有清理。清理只限注册工作区根目录下一批固定名字的构建产物目录。
 - [H1Kariiiiiii/dsh-icon-console](https://github.com/H1Kariiiiiii/dsh-icon-console) — DSH 桌面端图标控制台：导入一个图标即可应用到桌面与开始菜单快捷方式（立即生效）、应用窗口图标与系统托盘图标（重启后生效），带官方图标自动备份、一键恢复、图标库管理，以及重启/退出控制。
 - [hadesybil-hub/dsh-restart-button](https://github.com/hadesybil-hub/dsh-restart-button) — 在 DSH 网页界面右下角"关机"按钮旁新增一个"重启"按钮，点击并确认后重启 dsh web，服务器自动拉起并重新打开浏览器。
@@ -2293,6 +2295,7 @@ dsh plugin --profile web add dshmarket
 - [zealot00/dsh-pet](https://github.com/zealot00/dsh-pet) — DSH Web UI 桌面宠物：精灵图动画、agent 状态联动、拖拽、闹钟（每天/一次）与番茄钟，皮肤下拉选择 + 预览。
 - [zeasonvan/Days-Are-Yours](https://github.com/zeasonvan/Days-Are-Yours) — 本地优先的侧边栏生活助手：退休与假期倒计时、年假与拼假、日历、可选天气、愿望清单、时间胶囊，以及一只时光团子。
 - [zebracmz/dsh-task-progress-tab](https://github.com/zebracmz/dsh-task-progress-tab) — 在会话顶部“上下文”标签右侧增加“任务进度”标签页，用进度条显示已完成与未完成的任务，已完成项按完成顺序排列。
+- [zeki520/dsh-boot-nexus](https://github.com/zeki520/dsh-boot-nexus) — 把片头视频、suite 六幕冷启动与屏保合进同一个开机动画：一层画面、一个状态机、一个时钟、一份配置，所有选项都在一张设置卡里。suite 引擎、模板与一套原画质片头/屏保素材（720p–4K 原片，约 197 MB）也随包发布，装完第一次开机就有动画，删掉原插件后仍能播放；启用它时不要再同时启用 dsh-boot-suite 或 dsh-boot-animation。
 - [zeme56/dsh-landmarks](https://github.com/zeme56/dsh-landmarks) — 左侧边栏加一个全屏 3D 展厅，看四座程序化建模的地标——埃菲尔铁塔、长城、紫禁城、泰姬陵——另带一个「五间安静的屋子」入口。
 - [zengchunhua-boost/dsh-cat-star](https://github.com/zengchunhua-boost/dsh-cat-star) — 给猫颜值打分的 DSH 插件：CFA 风格评分卡、国内市场参考价，可发布到公开榜单。
 - [zengxiangpeng123/dsh-sidebar-fold-zxp](https://github.com/zengxiangpeng123/dsh-sidebar-fold-zxp) — 把 DSH 左侧那排插件入口折成一行「插件列表」，支持按组归类与自定义顺序，把纵向空间还给工作区与会话列表；展开即恢复完整入口。
@@ -6585,6 +6588,7 @@ dsh plugin --profile web add dshmarket
 - [STARDUSTLC666/dsh-rss](https://github.com/STARDUSTLC666/dsh-rss) — RSS/Atom 订阅九工具（管理/校验/抓取解析/跨订阅搜索/增量抓取/OPML 导入导出/健康自检），游标增量抓取，订阅持久化到 settings。面板内置 3 步首次使用引导，看一次后不再出现。
 - [STARDUSTLC666/dsh-sql](https://github.com/STARDUSTLC666/dsh-sql) — 数据库工具：sql_list/query/exec/schema/stats/health，SQLite/MySQL/PostgreSQL 三引擎，词法级只读保护、行数钳制、CSV/JSON 查询输出与写审批门。
 - [stitchmaps/dsh-db-connect](https://github.com/stitchmaps/dsh-db-connect) — 管理 Oracle、PostgreSQL、MySQL、MariaDB、SQL Server 与 SQLite 连接，提供驱动诊断、字段默认值/注释和需显式授权的智能体元数据浏览；需另建 Python 3 环境并安装对应驱动（SQLite 仅需标准库）。
+- [stone-yu/dsh-sync](https://github.com/stone-yu/dsh-sync) — 把 DSH 的配置、模型路由、MCP 装载行、插件清单、技能、记忆和自选目录备份与同步到 WebDAV。每个内容项可单独设置方向（关闭 / 上传备份 / 下载还原 / 双向同步），上传按文件内容哈希增量进行，双向冲突时保留双方副本而不做文本合并。
 - [StvLi/dsh-ros2](https://github.com/StvLi/dsh-ros2) — 面向 DeepSeek Harness 的 ROS2 调试工具集与机器人状态视觉分析：节点/话题/服务/动作/接口/TF 枚举、全图拓扑 JSON、依赖检查，审批门控的构建与自定义消息骨架生成，GUI 截图与多模态视觉观察，以及无头 RViz2 离屏渲染（低模 + 直读像素 + GPU 直通，动作渲染 30Hz）与并行 VLM 实时分析。
 - [subeichen1/dsh-mcp-switch](https://github.com/subeichen1/dsh-mcp-switch) — DSH 的 MCP 开关面板：可以按服务器整体开关，也可以只隐藏某个工具，还能看到每个服务器的工具定义占用了多少上下文 token。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [SuCriss/dsh-leekbox](https://github.com/SuCriss/dsh-leekbox) — 韭菜盒子：A股看盘助手——实时行情与大盘指数、全市场搜索、同花顺式 K 线详情弹窗（日/周/月/5分/30分，含 F10 财务摘要）、股票/ETF/可转债/LOF 榜单、带持仓盈亏与价格预警的自选股、13 项技术信号选股与 7 个预设策略交叉、涨停情绪温度计、龙虎榜、三源 7×24 聚合快讯、AI 个股分析。
@@ -6644,6 +6648,7 @@ dsh plugin --profile web add dshmarket
 - [top10xiaowangzi-byte/dsh-plugins#dsh-ai-idle-shutdown](https://github.com/top10xiaowangzi-byte/dsh-plugins/tree/main/plugins/dsh-ai-idle-shutdown) — 仅 Windows 的右侧栏面板：按整棵进程树的 CPU / IO 判断 AI 桌面工具是否还在工作，全部安静指定分钟数后关机，带可取消倒计时、演练模式与活动记录；需要本机 Python 3.10+。
 - [toustifer/dsh-harvest](https://github.com/toustifer/dsh-harvest) — 多平台调研与深度搜索流水线：harvest_scout 并行发现（覆盖 GitHub、Web、推特、Reddit、小红书、B站、YouTube 等通道），harvest_deep_research 自动化长篇综合研报生成，外加穿透抓取、跨源交叉验证与五维来源可信度审计。
 - [toustifer/dshplugin](https://github.com/toustifer/dshplugin) — 调用 3Blue1Brown Manim 现做动画直观解释回答，配有右侧抽屉栏动画库及对话流多模态文件发布卡片。
+- [TPJHtpjh/dsh-mask](https://github.com/TPJHtpjh/dsh-mask) — 按 Agent 预设（模式）屏蔽宿主面的工具与技能，用勾选清单配置。勾上某项，它就退出该模式的提示词；取消勾选，受影响的现有会话在下一个 step 拿回来，不用重启。工具按精确名字或 MCP 服务前缀屏蔽，技能按名字、注册方或发现根屏蔽。技能这一层叠在 Skills Manager 的全局开关之上，所以只列出当前已启用的技能，指向已停用技能的规则保持待命，那边一启用就生效。没配置过的模式一概不动。
 - [tr1v3r/dsh-proxy](https://github.com/tr1v3r/dsh-proxy) — 在直连、手动 HTTP(S)/SOCKS5 代理和环境/系统代理模式间热切换 DSH 进程内 fetch 流量，支持免代理规则，并可为之后启动的子进程导出代理环境变量。
 - [traceur/dsh-plugin-writer](https://github.com/traceur/dsh-plugin-writer) — 写作工作台：引入多模型针对同一命题独立盲写，追加主审裁判交叉评审与去糟取精，支持 AI 命题扩写、视觉总览配图与 Markdown 文件预览导出。
 - [TreeCodeTyper/dsh-blender-mc](https://github.com/TreeCodeTyper/dsh-blender-mc) — 把 Minecraft Java 存档变成 Blender 封面或动画：在 .mca 区域文件里找大片平地，导出地形为 OBJ，无头驱动 Blender（MCprep 材质、BPS 角色骨架、三点布光）。每次渲染后用 OpenCV 检查朝向、接地、曝光、布光和构图，不合格就调整参数重渲。需 Blender 4.2 LTS 以上、Python 3.10+（opencv-python、numpy），首次使用运行 setup 装配 Minecraft 素材。
