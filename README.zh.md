@@ -3225,6 +3225,7 @@ dsh plugin --profile web add dshmarket
 - [ruijiaang-lab/dsh-wallpaper-engine](https://github.com/ruijiaang-lab/dsh-wallpaper-engine) — DSH Web 聊天背景壁纸。Windows：直接读取你的 Wallpaper Engine（Steam）库，把视频/网页壁纸渲染到聊天界面背后。macOS：自动扫描 WaifuX 下载目录和媒体文件夹——在 WaifuX 里保存的壁纸零配置即可成为 DSH 背景，支持视频与图片。带毛玻璃模糊、压暗、边框调节滑块。
 - [runcat-tommy/dsh-theme-manager](https://github.com/runcat-tommy/dsh-theme-manager) — DSH Web 两级主题管理器：先选文化 / 场景、国旗、开发者配色或强烈对比配色，再选具体风格，内置 58 套浅色 / 深色配色。
 - [RunhuaChen/dsh-claude-theme](https://github.com/RunhuaChen/dsh-claude-theme) — DSH Web GUI 的 Claude 风格配色与排版——纸白底色、近黑文字与赤陶强调色，在 Codex absolutely 主题基础上重新推导中性色阶与强调色阶，以 82 个原生颜色变量覆盖浅色与深色两套外观；使用 Anthropic Sans、Serif、Mono 三款字体排版，界面外框字号跟随正文设置缩放。字体不随插件分发，需自行安装，否则回退到系统字体。
+- [ruohan0713/dsh-theme-studio](https://github.com/ruohan0713/dsh-theme-studio) — 二十套原创文艺主题：每套含浅/深双调色板、116 个界面令牌与动态壁纸。
 - [S-anZZz/dsh-pink-bow-kitty](https://github.com/S-anZZz/dsh-pink-bow-kitty) — 粉嫩、简洁的 DeepSeek Harness 主题：手绘小猫印花壁纸、浅色与深色配色，以及两只小猫装饰；没有复杂配置和额外面板。
 - [sakuraaa667/dsh-wallpaper-engine](https://github.com/sakuraaa667/dsh-wallpaper-engine) — 将 Wallpaper Engine 中已下载的壁纸用作 DeepSeek Harness 的背景：视频壁纸原位播放，图片壁纸优先使用最高分辨率原图，支持铺满/完整显示适配与 0–100 面板暗化。
 - [SamizuHM/dsh-client-ui-theme-xp](https://github.com/SamizuHM/dsh-client-ui-theme-xp) — Windows XP Luna 桌面化主题：浮动窗口管理器（任务栏、桌面图标）加上还原度很高的 Luna 皮肤。
@@ -9521,6 +9522,7 @@ dsh plugin --profile web add dshmarket
 - [dragoncdj/dsh-devship](https://github.com/dragoncdj/dsh-devship) — 右栏控制台：识别工作区里带 Spring Boot 启动类的 Maven 模块与 Vite 前端，一键启动 / 停止（支持批量；「关 DSH 不停止」脱离模式默认开启，仅 Windows 可用）、Maven 或 pnpm 打包、经 SSH/SFTP 上传到可命名的多个发布环境（带进度条、每台独立远端目录）、重启对应 docker 容器并校验状态；受保护环境需二次确认。需本机装有 Maven、JDK 与 pnpm；SSH 密码以明文保存在 deploy.json。
 - [DreamPerday/dsh-team-toolkit#team-ext](https://github.com/DreamPerday/dsh-team-toolkit/tree/main/packages/team-ext) — DSH 智能体团队的纯观测审计：把每请求缓存用量与提示前缀重写事件落成 JSONL，不加工具、不改提示词。
 - [dreanzy/dsh-plg#dsh-plugin-pack](https://github.com/dreanzy/dsh-plg/tree/main/packages/dsh-plugin-pack) — 按工作区停用插件：停用后该插件不再向模型工具表提供工具、也不再向 system prompt 注入提示词段，减少每轮固定开销。插件按整包开关，pack 按工作区绑定值、再按 default 求值。
+- [Dried-Persimmon-JPG/dsh-plugin-publisher](https://github.com/Dried-Persimmon-JPG/dsh-plugin-publisher) — 把本地 DSH 插件一键发布到 GitHub：先做本地体检，再用 Git Data API 推送快照、加上 dsh-plugin 标签，并自动给插件市场开收录 PR。
 - [drliuhuan/dsh-plugin-pwsh7](https://github.com/drliuhuan/dsh-plugin-pwsh7) — 在 Windows 上替换 pwsh 执行器行，让模型侧 pwsh 工具运行 PowerShell 7，并提供 shell_router 工具做状态、诊断与用户级便携安装。
 - [drscrewdriver/dsh-mcp-registry](https://github.com/drscrewdriver/dsh-mcp-registry) — MCP 连接器（stdio / streamable-http）的受治理注册表：四级 fail-closed 授权、mcpServers JSON 导入对畸形 args 大声报错、输出边界全程脱敏、agent 桥接返回诚实 review 而非伪装放行，配 /mcp-reg 操作台与设置页。
 - [drscrewdriver/dsh-preset-doctor](https://github.com/drscrewdriver/dsh-preset-doctor) — Agent 预设医生：跨宿主线（0.1.0→0.2.0）扫描 home/profile `cordis.patch.yml` 声明与遗留 `.agent-presets/` 目录，把检测到的每个预设以官方同款卡片展示（来源/代际徽章、失效红边、逐条修复项明细、当前 DSH 版本与代际目录）；卡内「同步到当前版本」走显式确认框（.bak 备份 + 原子写，需人工裁决项永不写盘，启动扫描恒只报告）。npm 包名：`dsh-preset-doctor`。
@@ -10493,6 +10495,7 @@ dsh plugin --profile web add dshmarket
 - [polaris-smart/dsh-devices](https://github.com/polaris-smart/dsh-devices) — 去中心化多设备舰队：mDNS 同网发现、密钥配对、SSH 跨网直连指挥。
 - [qiaohelenjoe/dsh-app#dsh-mobile-tunnel](https://github.com/qiaohelenjoe/dsh-app/tree/main/dsh-mobile-tunnel) — DeepSeek Harness 移动端：用手机使用你电脑上的 DSH。安卓 App 用同一账号登录，在设备列表里选中这台电脑，就能在手机上打开并进入它的 DeepSeek Harness 界面。桌面端插件负责注册与连接，本机不用开公网端口；界面会自己适应屏幕——手机上变成适合手指操作的布局，折叠屏展开或窗口变大时回到桌面布局。PC 端面板可以看到登录态、设备配额、设备列表与 App 下载二维码。
 - [QIC-9821/dsh-pc-bridge](https://github.com/QIC-9821/dsh-pc-bridge) — 本机回环 HTTP 桥：让对端机器 ping 并执行 shell 命令，可选 ssh 反向隧道看守。
+- [qingshuiliuyun/dsh-node-monitor](https://github.com/qingshuiliuyun/dsh-node-monitor) — 多 DSH 节点监控与集中管控：逐节点状态与只读会话、UDP 发现零配置组网、一键/内嵌打开真实 DSH、跨网反向接入的远程主节点、无服务器接入码/IPv6，以及默认关闭的插件启停/重启（干跑、二次确认、JSONL 审计）。
 - [rainfish-home/dsh-mobi-web](https://github.com/rainfish-home/dsh-mobi-web) — 手机优先的 DeepSeek Harness 客户端，/m/ 页面提供紧凑的手机界面而不是代理完整桌面 UI；手机发起的 turn 审批留在手机，Mermaid 在设备上渲染。
 - [Raiyan007-gb/dsh-remote-tunnel-easy](https://github.com/Raiyan007-gb/dsh-remote-tunnel-easy) — 在设置中扫描二维码，通过 cloudflared 快速隧道在手机上于当前会话中打开 DeepSeek Harness 网页端。
 - [raven3005672/dsh-plugin-im-remote-control](https://github.com/raven3005672/dsh-plugin-im-remote-control) — 飞书机器人远程控制 DSH 会话——消息进入会话，回合结果回到飞书，ask 档的审批可以在飞书里批准或拒绝。
