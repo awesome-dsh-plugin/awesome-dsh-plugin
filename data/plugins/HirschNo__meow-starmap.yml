@@ -1,0 +1,7 @@
+url: https://github.com/HirschNo/meow-starmap
+name: HirschNo/meow-starmap
+category: memory
+description:
+  en: 'Star map of the meow-memory store: each memory a glowing star, project memories gathered around a galaxy core, edges from project membership and shared keywords, fading into galaxies when zoomed out. Read-only.'
+  zh: 把 meow-memory 的记忆库画成星图：一条记忆是一颗发光的星，项目聚成星系，连线来自项目归属和关键词共现，缩远时自动聚合成光团。只读。
+icon: https://raw.githubusercontent.com/HirschNo/meow-starmap/main/assets/icon-180.png
