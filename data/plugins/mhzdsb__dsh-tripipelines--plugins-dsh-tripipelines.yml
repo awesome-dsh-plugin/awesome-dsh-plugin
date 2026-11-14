@@ -1,0 +1,6 @@
+url: https://github.com/mhzdsb/dsh-tripipelines/tree/main/plugins/dsh-tripipelines
+name: mhzdsb/dsh-tripipelines#dsh-tripipelines
+category: workflow
+description:
+  en: "Three-tier model collaboration pipeline for DSH: the L1 you pick plans and accepts, long-lived L2 module leads write code, and cheap L3 executors handle tiny tasks, with strict adjacency, quality gates that run assertions, budget guards, and a live GUI board."
+  zh: "三级模型协作流水线：你选的模型负责规划与验收，长活二级写模块代码，便宜的三级干碎活；严格相邻、逐任务质量门（真跑断言）、预算护栏、GUI 看板。"
