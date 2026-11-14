@@ -1,0 +1,7 @@
+url: https://github.com/fl0-0wer/dsh-image-viewer-fl0wer
+name: fl0-0wer/dsh-image-viewer-fl0wer
+category: ui
+description:
+  en: "MIT fork of WSL043/dsh-image-viewer, adding per-image freehand drawing, composite clipboard copy, and original-image fallback."
+  zh: "基于 WSL043/dsh-image-viewer（MIT）的修改版，新增逐图手绘、合成图像剪贴板复制与原图候选回退。"
+tarball: https://github.com/fl0-0wer/dsh-image-viewer-fl0wer/releases/download/v0.1.17/dsh-image-viewer-fl0wer-0.1.17.tgz
