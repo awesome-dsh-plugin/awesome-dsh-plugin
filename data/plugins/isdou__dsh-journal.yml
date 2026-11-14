@@ -1,0 +1,7 @@
+url: https://github.com/isdou/dsh-journal
+name: isdou/dsh-journal
+category: session
+tarball: https://github.com/isdou/dsh-journal/releases/download/v0.1.3/isdou-dsh-journal-0.1.3.tgz
+description:
+  en: Generate editable daily, weekly, monthly, and custom work reports from DSH conversations and recorded file operations, with local report history and Markdown export.
+  zh: 按日、周、月或自定时间汇总 DSH 对话与已记录的文件操作，生成可编辑、保存在本地并可导出 Markdown 的工作报告。
