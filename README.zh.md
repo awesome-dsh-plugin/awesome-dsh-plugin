@@ -2151,6 +2151,7 @@ dsh plugin --profile web add dshmarket
 - [XXXXXQ-0206/dsh-prompt-for-me](https://github.com/XXXXXQ-0206/dsh-prompt-for-me) — 在输入栏添加按钮，可优化当前提示词，或结合会话与项目上下文设计下一步提示词。
 - [xxxyz/DeepSeekHarness-MCP-Manager](https://github.com/xxxyz/DeepSeekHarness-MCP-Manager) — DeepSeek Harness 的 MCP 服务管理器：在「设置 → MCP 管理」中新增/编辑/启停/重启/删除 MCP 服务，支持 JSON 导入导出、4 个 mcp_manager_* 模型工具与 HTTP API，可通过 npx、npm 或跨平台脚本安装。
 - [xyAxzy/dsh-conversation-map](https://github.com/xyAxzy/dsh-conversation-map) — DSH 对话地图：当前工作区全部会话的实时树状图，子代理谱系、运行状态一目了然，双击即跳转。
+- [XYZ0901/dsh-composer-markdown](https://github.com/XYZ0901/dsh-composer-markdown) — 在输入框上方或右侧栏标签页里实时渲染 Markdown 草稿，并提供可写回草稿的格式化工具条（粗体、斜体、列表、表格、代码块等）。
 - [xyzYaeMiko/dsh-deepsleep-progress](https://github.com/xyzYaeMiko/dsh-deepsleep-progress) — 在 DSH Web 对话流的阻塞型工具调用下方显示「已等待/预算」进度条与随进度移动的图片（可换成动图），并提供图形化设置页调整样式与工具列表。
 - [xyzYaeMiko/dsh-session-groups](https://github.com/xyzYaeMiko/dsh-session-groups) — 仿 Edge 标签页分组的 DSH 侧栏会话分组插件，支持 DSH Web / Desktop；提供最多三层的组内分组、工作区树、单列表、递归排序、RGB 自定义颜色、折叠状态汇总、子代理展开与状态联动，以及需要用户审核的 AI 会话整理工具。
 - [Y1X1n/dsh-prompt-optimizer](https://github.com/Y1X1n/dsh-prompt-optimizer) — 在输入框旁加「优化」按钮：流式分析并改写提示词草稿，支持会话上下文感知（模板/润色双策略）、跨编辑记忆链与撤回，模型路由带 fallback 与连通性测试。
