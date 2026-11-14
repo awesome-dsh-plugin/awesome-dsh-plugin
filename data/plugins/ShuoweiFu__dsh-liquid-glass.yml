@@ -1,0 +1,6 @@
+url: https://github.com/ShuoweiFu/dsh-liquid-glass
+name: ShuoweiFu/dsh-liquid-glass
+category: theme
+description:
+  en: 'A high-performance WebGL Liquid Glass plugin for DeepSeek Harness. Features FBM domain warp, chromatic dispersion, and a 5-layer GPU overheat guard.'
+  zh: '为 DeepSeek Harness 打造的高性能 WebGL 液态玻璃插件。内含域扭曲、色散折射与 5 层核显防过热机制。'
