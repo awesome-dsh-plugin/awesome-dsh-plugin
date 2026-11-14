@@ -8729,6 +8729,7 @@ dsh plugin --profile web add dshmarket
 - [SSRYLJRSS/dsh-token2biq](https://github.com/SSRYLJRSS/dsh-token2biq) — DSH 多代理编排控制器：在官方 Agent Teams 之上提供档位、分阶段回执、token 台账与运行面板。
 - [STARDUSTLC666/dsh-minimal-ptc](https://github.com/STARDUSTLC666/dsh-minimal-ptc) — 极简提示词 × Web PTC 能力：一句人格、run_code SDK、子代理、Ralph、网页搜索/抓取与 Windows Git Bash；通用 workflow 工具保持隐藏。
 - [STARDUSTLC666/dsh-suite](https://github.com/STARDUSTLC666/dsh-suite) — STARDUSTLC 插件全家桶·组合补丁：与 18 个组件插件配套，一条命令统一注入默认配置（办公流/媒体工坊/DevOps/通知/预设）；组件经一行 add 命令直装（扁平化设计，无 git 子依赖）。
+- [Starlit-Sky-code/dsh-experience-optimizer#plugin-recipe](https://github.com/Starlit-Sky-code/dsh-experience-optimizer/tree/main/packages/plugin-recipe) — DSH 工作流蓝图规划：把业务目标转成可校验的步骤、能力、权限、失败策略、验收标准与回滚，并可导出 Markdown/JSON。
 - [StarSpacePX/dsh-agent-team-roles](https://github.com/StarSpacePX/dsh-agent-team-roles) — 在 dsh 的 Web GUI 里管理 agent team 角色：每个角色是一枚独立可选的 agent preset，按角色开关工具、技能与 MCP。
 - [starwish-ai/xingyuan-dsh](https://github.com/starwish-ai/xingyuan-dsh) — 愿望与任务管理的 Agent Preset 组合包：在对话中创建愿望/任务、机会日打卡、微行动，并附带记忆存储与 Web 端进度图表。
 - [statedock/statedock-plugins#deepseek-harness](https://github.com/statedock/statedock-plugins/tree/main/adapters/deepseek-harness) — 通过 StateDock Remote MCP 提供共享计划、上下文恢复与进度更新 Skills，不执行任务或调度 Agent；适配 Harness 0.2.0-rc.2。
@@ -9941,6 +9942,7 @@ dsh plugin --profile web add dshmarket
 - [StanElka/dsh-vscode#dsh-door](https://github.com/StanElka/dsh-vscode/tree/main/packages/dsh-door) — 为正在运行的 DeepSeek Harness 内核提供仅监听本机回环地址的 ACP 接入点，供 VS Code 等本机客户端连接，共用模型、工具、记忆和会话，并支持历史查看、权限切换及调用 DSH 插件已注册的能力。
 - [STARDUSTLC666/dsh-flakefinder](https://github.com/STARDUSTLC666/dsh-flakefinder) — 测试稳定性工具：重复运行 vitest/jest/pytest/node:test，识别 flaky 用例，历史留档、隔离清单与健康自检。
 - [Starfie1d1272/dsh-builtin-toggles](https://github.com/Starfie1d1272/dsh-builtin-toggles) — DSH Web 内置 capability 的 evidence-backed 检查器：展示运行/配置溯源、兼容性与漂移诊断，并仅为 9 个经过审阅的 UI leaf 提供 fail-closed 控制。
+- [Starlit-Sky-code/dsh-experience-optimizer#plugin-trim](https://github.com/Starlit-Sky-code/dsh-experience-optimizer/tree/main/packages/plugin-trim) — DSH 插件减负与兼容性体检：扫描上下文成本与插件/运行时/Profile 冲突，只在确认后应用低风险、可回滚的精简项；带 Web 设置控制台。
 - [Starsky16/dsh-compat](https://github.com/Starsky16/dsh-compat) — DSH 兼容层（Termux/Linux）：可选的加载器补丁让单个坏插件不再整页白屏，弹层改实色渲染，装插件前用 doctor 体检清单与客户端依赖。加载器补丁仅锚定 DSH 0.2.2-rc.1。
 - [stayhpjinng/dsh-provider-proxy](https://github.com/stayhpjinng/dsh-provider-proxy) — DeepSeek Harness 的按 Provider HTTP/HTTPS 代理：为每个 LLM Provider 独立配置代理地址和启停开关，支持通过环境变量引用代理凭据，并让模型发现请求使用对应 Provider 的代理。
 - [strukto-ai/mirage#dsh](https://github.com/strukto-ai/mirage/tree/main/typescript/packages/dsh) — 把文件系统与 bash 提供者换成 mirage 虚拟工作区：文件工具与 shell 命令作用于挂载的资源（RAM、S3、Redis、Slack、Gmail、Notion、Postgres）而非宿主磁盘，支持按挂载点设置读/写/执行模式、按命令选择沙箱（进程内 monty、pyodide、quickjs；远程 docker、e2b、daytona），并可在虚拟终端中安装 CLI（git、gh、slack、linear、ntn、gws，或自行注册的程序树）作为命令头词。
@@ -10745,6 +10747,7 @@ dsh plugin --profile web add dshmarket
 - [Eray114514/dsh-find-plugins](https://github.com/Eray114514/dsh-find-plugins) — 跨多个社区目录并叠加 GitHub 与 npm 实时搜索来找 DSH 插件，按相关度、可信度、新鲜度与有界热度排序，而不是只看 star。
 - [Eveneve-night/dsh-plugin-steward](https://github.com/Eveneve-night/dsh-plugin-steward) — 插件管家：在对话输入框上加入插件面板，用来管理本机已装的 DSH 插件——列出全部插件、全局启停、逐个编辑插件设置、把某个插件的工具或 MCP 服务器只在这一个对话里对模型隐藏，还能让模型读插件自身的 README 与包信息生成中文标签。面板可拖动并记住位置。
 - [f-infinite-z/dsh-plugin-ops#dsh-plugin-ops-bundle](https://github.com/f-infinite-z/dsh-plugin-ops/tree/main/packages/bundle) — dsh 插件树的启动前体检与修复——十条跟随启动器运行时解析的静态规则、启动失败后的故障归因、先在隔离实例复验再落地的白名单可逆修复、点名目标版本会跳过哪些插件的升级预演，以及带插件行管理面板与历次故障 RAG 知识库的设置界面。
+- [fengzhiyushui/dsh-plugins-update](https://github.com/fengzhiyushui/dsh-plugins-update) — 第三方 DSH 插件检查与更新增强工具，启动后台探测并在侧边栏与已安装列表展示更新角标（原生弹窗更新完成后自动同步消隐），支持 GitHub 仓库及分支/标签（#ref）、固定 commit 解锁与 monorepo 子路径的 CDN 并发竞速检测与升级，提供 npm/npmmirror/自定义源切换与官方源回退、minimumReleaseAge 观察期绕过、快照与离线回滚对齐，以及默认让位原生与按需开启详情页更新按钮。
 - [FlameSky-S/dsh-plugin-porter](https://github.com/FlameSky-S/dsh-plugin-porter) — 将已安装的 DSH 插件连同依赖闭包与文档导出到移动介质，在隔离内网中扫描目录并离线安装或更新插件。
 - [flysusdjd/dsh-rank-board](https://github.com/flysusdjd/dsh-rank-board) — 对前 400 个候选按 npm 实时下载量排序、展示前 200 名，支持日榜、周榜、月榜。
 - [FrogFlaying/dsh-onshelf](https://github.com/FrogFlaying/dsh-onshelf) — 扫描本地插件、体检收录规则、生成投稿材料，一键开 PR 到 awesome-dsh-plugin。
