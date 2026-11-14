@@ -2090,6 +2090,7 @@ dsh plugin --profile web add dshmarket
 - [XenoPhonLau/dsh-activity-bar](https://github.com/XenoPhonLau/dsh-activity-bar) — 把 DeepSeek Harness 收起后的两侧栏变成 VS Code 那样的 44px 图标条：左条接管侧边栏导航与底部动作行，右条按 sidebarRightTabs 清单自动列出第三方面板，右侧面板可拖动改宽（300px 至窗口 60%）。设置里的「活动栏」两个开关，按浏览器保存。
 - [XHR666/dsh-mpkg-wallpaper](https://github.com/XHR666/dsh-mpkg-wallpaper) — 在浏览器里直接加载 Wallpaper Engine 的 .mpkg 作为 DSH 网页背景：内嵌视频、多时段切换、统一磨砂虚化、本地壁纸库与轮换。
 - [xi-zhao/OpenQuantum#openquantum-web-branding](https://github.com/xi-zhao/OpenQuantum/tree/main/packages/openquantum-web-branding) — 为 DeepSeek Harness 原生 Web 界面应用 OpenQuantum 品牌、浏览器元数据与 PWA 资产。
+- [xiaaoyun/dsh-vibe-desk](https://github.com/xiaaoyun/dsh-vibe-desk) — 给 Web 界面加一张氛围台：配色预设与 4K 壁纸、等宽字体、实时合成的氛围曲，以及网易云搜索和只含免费曲目的热歌榜。
 - [xiaheng1/dsh-turn-nav](https://github.com/xiaheng1/dsh-turn-nav) — DeepSeek Harness Web 对话轮次导航轨，支持 mixed / DeepSeek / Codex 三种视觉风格。
 - [xiamubumu/dsh-composer-launcher](https://github.com/xiamubumu/dsh-composer-launcher) — 启动器面板：统管能力组合、插件清单与 MCP 桥，并引导安装浏览器标签页扩展。
 - [XIANGDEEN/dsh-sidebar-video-player](https://github.com/XIANGDEEN/dsh-sidebar-video-player) — 右侧栏视频播放器：文件夹播放列表支持首帧缩略图、时长、按名称/时长/修改时间/大小排序、全屏，以及写权限文件夹下的重命名/复制/删除/刷新右键菜单；同时显示缓冲区间、解码帧率与丢帧，并只读解析 MP4/MOV 的编码档次/级别、精确帧数、每轨码率与旋转；不注册智能体工具，文件写入仅在用户以写权限选择文件夹后通过浏览器 File System Access API 执行。
@@ -5016,6 +5017,7 @@ dsh plugin --profile web add dshmarket
 - [bufan528/dsh-longterm-memory](https://github.com/bufan528/dsh-longterm-memory) — 为 DSH 提供本地 Markdown 长期记忆：Obsidian 兼容仓库、侧边栏管理页、四个记忆工具，以及按预算的每回合召回。
 - [BurninIce/dsh-membubble](https://github.com/BurninIce/dsh-membubble) — 面向长期运行和大群聊的 dsh 对话记忆：焦点限制个人管线、固定注入预算、append-only 事件归档。
 - [busabase/busabase-dsh-plugin](https://github.com/busabase/busabase-dsh-plugin) — 把 DeepSeek Harness 接入 Busabase：检索工作区知识、操作结构化记录与应用、将写入提交为可审阅的 ChangeRequest，并在实时卡片中查看结果。
+- [c505016310-maker/dsh-safety-memory](https://github.com/c505016310-maker/dsh-safety-memory) — 在每个 DSH 会话中注入可编辑的安全守则与项目记忆工作流，并自动读取项目的 MEMO.md。
 - [caimc21069065-prog/dsh-reflect](https://github.com/caimc21069065-prog/dsh-reflect) — 把对模型的纠正变成永久规则：remember: 显式触发与自动检测的纠正经确认条确认后写入 AGENTS.md 的标记段（全局或项目作用域，可编辑、可跳过），当前会话立即生效，新会话由 dsh 原生指令加载器读取；规则去重、版本守卫写入、疑似密钥拒绝落盘。
 - [calmzealA/dsh-km](https://github.com/calmzealA/dsh-km) — DeepSeek Harness 的本地知识库：工作区 Markdown 笔记，带来源、审核状态、BM25 检索与 4 个 km_* 工具。
 - [ccch713/deepddw#ddw-teams-panel](https://github.com/ccch713/deepddw/tree/main/plugins/ddw-teams-panel) — 为 DSH Web 客户端增加多用户设置面板：使用模式选择、成员管理与在线状态、一人多设备绑定，以及各成员记忆体和知识库的切换与共享。
@@ -5259,6 +5261,7 @@ dsh plugin --profile web add dshmarket
 - [plur-ai/dsh-plugin](https://github.com/plur-ai/dsh-plugin) — PLUR 记忆在每次组装时渲染进系统提示词，而非以工具调用形式暴露，因此记忆块是被替换而不是追加，整段会话的上下文长度保持不变。全本地混合检索（BM25 + BGE，RRF 融合）、可直接编辑的纯 YAML 存储、按工作区划分 scope，并提供 /plur-memory 浏览器界面。
 - [pokiimon/dsh-memory-eternal-fork](https://github.com/pokiimon/dsh-memory-eternal-fork) — dsh-memory-eternal 的维护版 fork：对话结束自动沉淀知识卡到本地 Markdown 记忆库并按需召回，修复 DSH 0.2.0-rc.x 兼容性。原项目由 EternalNight996 创建并维护（https://github.com/EternalNight996/dsh-memory-eternal），MIT。
 - [propzhang/dsh-memory-unlocked](https://github.com/propzhang/dsh-memory-unlocked) — 发送“大记忆恢复术”来让 AI 回想起忘记的对话。
+- [Psychic-Z/dsh-memory-assistant](https://github.com/Psychic-Z/dsh-memory-assistant) — 给 AI 一份不会随对话变长的长期记忆：对话压成记忆卡片，检索只读几张卡；检索开销与记忆库大小无关；定位不准或找不到时追问，不编。
 - [pzh-xsj/dsh-memory-with-soul](https://github.com/pzh-xsj/dsh-memory-with-soul) — 以纯 Markdown 加 git 存放长期记忆：每次会话开始按全局总册与各项目册渲染一段 memory-context（人格卡、用户档案、当前焦点、路由表、最近日志），记录代理读过哪些记忆文件，并在当天日志还没提炼时提醒收口；人格放在 roles/<role>/SOUL.md 角色卡里，附侧边栏七页签设置页与四个 skill。依赖 Python 3.10+。
 - [Q2667671398/lingshu-skill](https://github.com/Q2667671398/lingshu-skill) — 灵枢（lingshu-skill）：面向 AI 编程助手的类脑持久记忆、人格与成长系统。纯 Python 标准库、零依赖、本地优先，需 Python 3.9+。海马体/皮层分层记忆与遗忘曲线、做梦巩固、模糊联想回忆、情绪系统、人格漂移防护、知识库、技能自编辑，并带本地可视化面板。以 DSH bundled skill 形式安装；仓库另含可单独安装的 cordis 启动注入插件，仅在灵枢已安装到 ~/.dsh/skills/lingshu（或配置 brainPy）且 Python 3 可用时才会自动注入会话；可选的更新检查会访问 GitHub/Gitee.
 - [QIANLING-0831/dsh-memory-plus#dsh-memory-bundle](https://github.com/QIANLING-0831/dsh-memory-plus/tree/main/packages/dsh-memory-bundle) — 记忆 profile 组合：中文会话检索、混合召回、workspace 持久事实、用户固定规则与可复用原生技能。通过单条 dsh plugin add 命令安装版本化 Release 独立包。需 Node.js 24 与 PATH 上的 pnpm。
