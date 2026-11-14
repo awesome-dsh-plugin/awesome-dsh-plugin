@@ -1,0 +1,7 @@
+url: https://github.com/c505016310-maker/dsh-safety-memory
+name: c505016310-maker/dsh-safety-memory
+category: memory
+description:
+  en: Injects live-editable safety rules and a project-memory workflow into every DSH conversation, and auto-reads the project's MEMO.md.
+  zh: 在每个 DSH 会话中注入可编辑的安全守则与项目记忆工作流，并自动读取项目的 MEMO.md。
+tarball: https://github.com/c505016310-maker/dsh-safety-memory/releases/download/v1.0.0/dsh-safety-memory-1.0.0.tgz
