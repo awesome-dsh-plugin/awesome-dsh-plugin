@@ -1,0 +1,8 @@
+url: https://github.com/CarlCN2003/dsh-model-fallback
+name: CarlCN2003/dsh-model-fallback
+category: model
+description:
+  en: 'Primary and multi-level backup model failover router for DSH, with cross-provider reasoning-effort clamping, exponential cooldown, per-turn recovery, and a settings panel.'
+  zh: 'DeepSeek Harness 主力模型与多级备用模型自动故障转移插件，支持跨提供商推理强度自适应对齐、指数退避冷却、按轮次恢复及可视化设置面板。'
+icon: https://raw.githubusercontent.com/CarlCN2003/dsh-model-fallback/main/assets/icon-180.png
+tarball: https://github.com/CarlCN2003/dsh-model-fallback/releases/download/v1.0.1/dsh-model-fallback-1.0.1.tgz
