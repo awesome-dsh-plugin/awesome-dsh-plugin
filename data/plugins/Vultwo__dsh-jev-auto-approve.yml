@@ -1,7 +1,6 @@
 url: https://github.com/Vultwo/dsh-jev-auto-approve
 name: Vultwo/dsh-jev-auto-approve
 category: security
-npm: dsh-jev-auto-approve
 description:
   en: Reviews DeepSeek Harness approval requests with TypeSafe Jev and auto-approves low-risk, explicitly authorized actions; includes an English settings page for the key and token/cost usage.
 tarball: https://github.com/Vultwo/dsh-jev-auto-approve/releases/latest/download/dsh-jev-auto-approve.tgz
