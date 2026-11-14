@@ -1,0 +1,6 @@
+url: https://github.com/WanggIyanChenn/dsh-mihomo
+name: WanggIyanChenn/dsh-mihomo
+category: tools
+description:
+  en: 'Runs a mihomo kernel inside DSH and routes the process-wide outbound traffic through it, with automatic node selection, Japan-only routing, subscription refresh, and a status chip in the composer.'
+  zh: '在 DSH 进程里托管 mihomo 内核，把整进程出站流量导到本地代理：自动选点、日本站点分流、订阅定时刷新，输入框旁一枚状态胶囊。'
