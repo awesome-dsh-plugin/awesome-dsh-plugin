@@ -2,6 +2,6 @@ url: https://github.com/ymwang92/dsh-refkeeper
 name: ymwang92/dsh-refkeeper
 category: tools
 description:
-  en: 'Collects the references a DeepSeek Harness conversation cited, verifies each against Crossref, OpenAlex, arXiv, DataCite and PubMed, and exports them as BibTeX or RIS.'
+  en: 'Collects the references a conversation cited, verifies each against Crossref, OpenAlex, arXiv, DataCite and PubMed, exports BibTeX or RIS.'
   zh: 收集对话里引用过的文献，逐条到 Crossref、OpenAlex、arXiv、DataCite、PubMed 核对，通过核对的导出为 BibTeX 或 RIS。
 icon: https://raw.githubusercontent.com/ymwang92/dsh-refkeeper/main/docs/images/icon.png
