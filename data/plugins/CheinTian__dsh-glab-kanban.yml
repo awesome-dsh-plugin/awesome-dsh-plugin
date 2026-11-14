@@ -1,0 +1,6 @@
+url: https://github.com/CheinTian/dsh-glab-kanban
+name: CheinTian/dsh-glab-kanban
+category: git
+description:
+  en: 'GitLab issue kanban for DSH, driven by the glab CLI. Every label-backed list of a project issue board becomes a column; dragging a card swaps its status label. Adds a sidebar panel with a project picker, filters and a card detail drawer (Markdown description, comments and activity, comment, close, reopen), plus a session View tab that resolves the workspace origin remote, and one glab_kanban agent tool over the same operations.'
+  zh: '基于 glab 命令行的 GitLab Issue 看板：项目 Issue 看板的每个标签列变成一列，拖拽卡片即切换状态标签。提供侧边栏面板（项目选择、筛选、卡片详情抽屉：Markdown 描述、评论与动态、评论、关闭、重开），以及按工作区 origin 远程自动绑定项目的会话视图标签页，并通过同一个 glab_kanban 工具让 Agent 执行相同操作。'
