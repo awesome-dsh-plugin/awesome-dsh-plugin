@@ -1145,6 +1145,7 @@ dsh plugin --profile web add dshmarket
 - [LanFeng97/dsh-workspace-create-dialog](https://github.com/LanFeng97/dsh-workspace-create-dialog) — Codex 式的创建工作区对话框：填名称就自动建出目录，或者选文件夹——原生选择窗口会记得你上次在哪（原生选择窗口仅 Windows 可用，其它平台请直接填名称）。
 - [langyo/dsh-mobile-upgrade](https://github.com/langyo/dsh-mobile-upgrade) — 需要 DSH 0.1.5-rc.1。dsh web profile 的手机端体验修复：窄屏抽屉与设置标签、全宽模型菜单、卡住请求的网络状态芯片，以及把会话层级、subagent 与后台任务芯片收进一张可点开面板的窄屏头部收纳器。
 - [LaoganR/dsh-novel-reader](https://github.com/LaoganR/dsh-novel-reader) — DSH 右侧栏本地 TXT 小说阅读器：书架三种导入、章节目录跳转、点击翻页与上下滚动、重启后进度恢复、字体/行距/背景/夜间阅读主题。
+- [laowang5/ai-news-feed](https://github.com/laowang5/ai-news-feed) — AI 情报流侧边栏插件，支持 RSS/Atom 信源五轴量化打分、精选今日必看并一键导入对话追问。
 - [laoye666-6/dsh-plugin-media-wallpaper](https://github.com/laoye666-6/dsh-plugin-media-wallpaper) — 为 DSH 提供图片/视频壁纸背景：GIF/APNG/动图 WebP/PNG/JPEG/MP4/WebM 魔数自动识别，压暗/亮度/高斯模糊，界面色调与字体颜色自动跟随背景，各组件独立透明度，预置壁纸一键应用。
 - [Laplace-bit/dsh-smooth-stream](https://github.com/Laplace-bit/dsh-smooth-stream) — 为 DeepSeek Harness Web UI 提供流畅流式渲染和丝滑滚动。
 - [Larliers/dsh-skill-prompt-injector](https://github.com/Larliers/dsh-skill-prompt-injector) — 在右侧栏列出当前会话可用的 Skill，支持搜索与标签，可与自存提示词组合后一键追加到输入框；还能把 Skill 与提示词设为常驻，经系统提示注入每个新对话。
@@ -1774,6 +1775,7 @@ dsh plugin --profile web add dshmarket
 - [SivanCola/dsh-note](https://github.com/SivanCola/dsh-note) — 本地 Markdown 笔记库：三栏布局（导航栏、目录树、编辑器）、双栏实时预览、标签、收藏与置顶、聚合全库复选框并回写文件的待办中心、全文搜索、会话沉淀成笔记、把笔记插入对话、把回答保存为笔记、跳回来源回答的链接、笔记库目录与字号设置，以及四个 note_* 工具。
 - [sixzjd/dsh-folder-attach](https://github.com/sixzjd/dsh-folder-attach) — 在 DeepSeek Harness 网页版直接拖文件夹进输入框，不再提示「只有桌面端支持添加文件夹」。新增主机文件夹选择框、/folder 命令，拖入/粘贴自动解析为 @路径 引用。纯浏览器可用，无需桌面端。
 - [sjrslh/dsh-ui-zoom](https://github.com/sjrslh/dsh-ui-zoom) — Ctrl+滚轮整页缩放（60%–180%，记住比例），右下角常驻「设置」入口可打开宿主设置面板，Ctrl+0 复位。
+- [skillpie/dsh-plugins#dsh-termbar](https://github.com/skillpie/dsh-plugins/tree/main/dsh-termbar) — 终端栏：在 Web GUI 右上角工具区添加终端开关按钮，点按打开/关闭底部终端面板；PTY 引擎跑在 subprocess 服务上，同源控制 API + WebSocket I/O，支持会话列表与回滚缓冲。
 - [SkyblueeeLabs/dsh-iconic-launcher](https://github.com/SkyblueeeLabs/dsh-iconic-launcher) — 自定义 DeepSeek Harness 桌面快捷方式图标：选预设或上传图片，自动去除白底、生成多尺寸 ICO，一键写入桌面快捷方式。
 - [skyhancloud/dsh-client-ui-quote](https://github.com/skyhancloud/dsh-client-ui-quote) — 在网页聊天输入框上方为选中的 AI 回复内容添加可移除的引用横幅，随下一条消息一并发送。
 - [SkylerFee/dsh-sidebar-rail](https://github.com/SkylerFee/dsh-sidebar-rail) — 为 macOS Desktop 折叠侧栏添加自动隐藏的图标轨，支持工作区置顶，以及最近会话、定时任务、用户安装插件和账号信息浮层。
@@ -8139,6 +8141,7 @@ dsh plugin --profile web add dshmarket
 - [Signalight/law-thesis-review](https://github.com/Signalight/law-thesis-review) — DeepSeek Harness 技能插件：批改法学论文（国际经济法等）。读取学生 Word 论文，对照打包的常见问题清单逐项检查；可直接确定的错漏以 Word 修订模式修改，对部分整体问题、缺依据/缺澄清之处写 Word 批注；并输出简短、客观、以宏观点评为主的总体评语与待修改清单。
 - [sikadi233-hub/minecraft-dev](https://github.com/sikadi233-hub/minecraft-dev) — 面向 DeepSeek Harness（dsh）的 Minecraft 开发插件，覆盖 Minecraft 1.7.10 至 26.3：9 个技能（Paper/Spigot 插件、Fabric/Forge/NeoForge 模组、大型模组附属、分时代 Gradle/JDK 构建）、mc_scaffold 项目生成器与 mc_gradle 构建执行器、18 份由钉选工件生成且带 provenance 头的离线 API 签名索引，以及确定性分片流水线 mc_arbitrate（契约冻结、分片任务书、21 条高置信审计规则含 5 条跨分片检查、清单合并、编译错误定点路由），引擎内部不调用模型。Apache-2.0 + NOTICE。
 - [SJCxuanyi/dsh-ai-assistant](https://github.com/SJCxuanyi/dsh-ai-assistant) — 把 AMD ROSS 的 50 个 Vivado、Vitis HLS、Versal 分段配置、Vitis AI 与硬件调试技能装进 DeepSeek Harness，并在左侧栏提供可筛选、搜索、展开与复制的技能目录面板。
+- [skillpie/dsh-plugins#dsh-skillpie](https://github.com/skillpie/dsh-plugins/tree/main/dsh-skillpie) — 侧栏「技能市场」：浏览并搜索 SkillPie 技能库，一键把 Agent 技能安装到 ~/.agents/skills，新开会话即可使用；并提供同源的 search/detail/install/installed API 供对话工具复用。
 - [SLin-code/dsh-skill-manager](https://github.com/SLin-code/dsh-skill-manager) — 在 DSH Web 设置中查看本地 Skills，并编辑自动调用与 /name 调用策略；内置和软链接条目保持只读。
 - [SOH4C4759/dsh-plugin-skill-autoroute](https://github.com/SOH4C4759/dsh-plugin-skill-autoroute) — 对每条用户指令自动做一次确定性的技能路由，让技能目录在模型作答之前就被查阅，而不是等它自己想起来。宿主侧只依据指令关键词与目录元数据打分，不调用 LLM 也不做向量检索，然后向该步追加恰好一条带生产者标签的消息：默认是候选排名简报，分数过线时改注入冠军技能的 SKILL.md 正文，也可以只注入一句「立刻调用某个路由技能」。无关指令保持沉默。
 - [STARDUSTLC666/dsh-hyperframes](https://github.com/STARDUSTLC666/dsh-hyperframes) — 同步 HyperFrames by HeyGen 官方上游的二十一技能：HTML 写视频/动画/关键帧/音频与音乐转视频/CLI/注册表/幻灯片/口播重剪/网址·产品·PR 转视频/Studio 时间轴规范等，附随包资源完整性自检。面板内置 4 步首次使用引导，看一次后不再出现。
@@ -10653,6 +10656,7 @@ dsh plugin --profile web add dshmarket
 - [SilverKurali/dsh-mesh-access](https://github.com/SilverKurali/dsh-mesh-access) — 用手机远程控制电脑上的 DSH：在服务进程内部把端口开到组网网卡上，手机浏览器打开就是你在电脑上用的那个界面，同一实例、同一份会话，不用 SSH、不用第二个 dsh。顺带笔记本、NAS、电视盒子也能开。
 - [simonsxxs/dsh-aa-bridge-doctor](https://github.com/simonsxxs/dsh-aa-bridge-doctor) — 监测 Agents Anywhere 桥接卡死（进程存活但手机端离线）并弹窗提醒；Connector 进程退出时默认自动拉起（带护栏），卡死时的自动重启需手动开启。需已安装并登录 Agents Anywhere 桥接插件；macOS 已实测，Windows 未测。
 - [siqyka/dsh-ssh-workspace](https://github.com/siqyka/dsh-ssh-workspace) — 通过SSH方式，将远程主机的文件夹当成DSH的工作区，可以在本地DSH控制远程主机工作目录，不需要手动同步、不需要挂载驱动、不需要装任何第三方文件系统
+- [skillpie/dsh-plugins#dsh-remote-relay](https://github.com/skillpie/dsh-plugins/tree/main/dsh-remote-relay) — 凭 8 位码经中转服务器连接任意 DeepSeek Harness 主机：relay 前缀透传的 GUI 远程控制，按主机多路复用 WebSocket，访客侧 fetch/WebSocket shim 全量重写同源请求，属主 HTTP API 限定宿主角色，并可用 origin 级 Service Worker 隐藏 URL 中的码。默认关闭，需在属主侧栏面板主动开启。
 - [skyzzq/dsh-ssh-mac](https://github.com/skyzzq/dsh-ssh-mac) — 基于 @linxin666/dsh-ssh 的二次开发（两者不能同时启用）：建链前先按网卡 MAC 把主机解析成当前 IP，DHCP 换号不用改配置。
 - [soffits/dsh-desktop-view](https://github.com/soffits/dsh-desktop-view) — 在 DSH 网页界面中实时查看 Agent 所在机器的桌面（含声音），经 DSH 自身登录转发。遇到验证码或扫码登录时可接管，支持剪贴板与文件传输，手机上也能用。需要同一台机器上 Cua 桌面镜像自带的 cua-spacesd。
 - [solla-h/dsh-plugin-mobile-gateway](https://github.com/solla-h/dsh-plugin-mobile-gateway) — 让 DSH Mobile App 通过认证的 WebSocket 与自托管 DeepSeek Harness 宿主配对的手机网关插件。Clarklevis1995/dsh-plugin-mobile-gateway 的分支（包名相同，只能装其中一个），新增可选的加密地址簿（用 wrangler 部署成你自己 Cloudflare 账号下的 Worker）、实验性的 WebRTC P2P 传输，以及端点检查时回退到公共 DoH。
