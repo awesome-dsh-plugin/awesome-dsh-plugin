@@ -1,1 +1,6 @@
-
+url: https://github.com/deepestevan/dsh-delete-guard
+name: deepestevan/dsh-delete-guard
+category: security
+description:
+  en: Force every DSH file deletion through the Windows Recycle Bin by denying destructive shell calls and redirecting them to a file_trash tool.
+  zh: 强制 DSH 的文件删除走 Windows 回收站：拦截危险的 shell 删除命令，并引导改用 file_trash 工具。
