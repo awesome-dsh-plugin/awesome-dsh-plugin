@@ -19,3 +19,11 @@ test('the mapping does not override a future source-declared npm identity', () =
   assert.equal(publishedNpmName('Tests4gptplay/dsh-dots', '@tests4gptplay/dsh-dots'), '@tests4gptplay/dsh-dots')
   assert.equal(publishedNpmName('Tests4gptplay/dsh-dots', 'other-name'), 'other-name')
 })
+
+test('the classic root listing keeps its scoped npm package after main becomes Dot MCP', () => {
+  assert.equal(publishedNpmName('Tests4gptplay/dsh-dots', 'dsh-dot-mcp'), '@tests4gptplay/dsh-dots')
+})
+
+test('the independent Dot MCP subpackage resolves its own unscoped npm identity', () => {
+  assert.equal(publishedNpmName('Tests4gptplay/dsh-dots/tree/main/packages/dsh-dot-mcp', 'dsh-dot-mcp'), 'dsh-dot-mcp')
+})
