@@ -5758,7 +5758,6 @@ dsh plugin --profile web add dshmarket
 - [Fleey/dsh-workspace-folders](https://github.com/Fleey/dsh-workspace-folders) — 为工作区添加额外的工作目录，可设为读写或只读，可通过输入框旁的文件夹按钮或 `/add-dir`、`/remove-dir`、`/dirs` 命令管理；模型可在运行时上下文中看到这些目录，对读写目录的 `write` 与 `edit` 调用默认免去沙箱提权确认，终端命令仍会询问。
 - [FLL123-Arch/game-crash-doctor](https://github.com/FLL123-Arch/game-crash-doctor) — 仅限 Windows：从事件日志、WER 报告和崩溃转储诊断游戏崩溃，提供 diagnose_game_crash 工具和可选的后台通知。
 - [floydc-sz/dsh-serial-debugger](https://github.com/floydc-sz/dsh-serial-debugger) — DeepSeek Harness 的 Windows 串口调试面板：串口参数设置、文本/十六进制实时接收显示与数据发送。
-- [flymysql/dsh-remote](https://github.com/flymysql/dsh-remote) — 多机远程工作区：管理多台 SSH 主机，在原生「添加工作区」流程里选本机系统文件夹或远程目录，把远程工作区镜像成真实本地文件夹并用 rw_* 工具操作。选择器是居中弹窗，默认落在本机页签，远程路径自动预填 `/` 并逐级自动补全目录。
 - [Fnckerpoi/dsh-plugin-sirchmunk](https://github.com/Fnckerpoi/dsh-plugin-sirchmunk) — 在 DSH 设置中管理本地 Sirchmunk 知识库：图谱导出、聚类管理、审计历史、运行指标与隐私控制。
 - [FNOSP/fnos-dsh#dsh-failover-search-plugin](https://github.com/FNOSP/fnos-dsh/tree/main/plugins/dsh-failover-search-plugin) — 为 DeepSeek Harness 会话提供多来源网页搜索与抓取故障转移：接管会话的 searchProvider 与 fetchProvider 接缝，按可配置顺序尝试已配置来源——TinyFish、Tavily 与官方搜索，官方固定参与兜底、位置可调但不可移除。每平台可配多个 key 轮转分摊，基于用量快照做请求前账号排除，单请求超时与同平台重试控制转移粒度。网页抓取本地 HTTP 优先，失败后依次兜底 TinyFish Fetch 服务端渲染与 Tavily Extract，本机网络受限时代理或 DNS 拦不住页面抓取。插件页按平台展示各账号用量与套餐额度。npm 安装：`dsh plugin --profile web add @tnnevol/dsh-failover-search`。
 - [FNOSP/fnos-dsh#dsh-midscene-plugin](https://github.com/FNOSP/fnos-dsh/tree/main/plugins/dsh-midscene-plugin) — 让 Midscene 直接用 DeepSeek Harness 里已配置的模型，不再需要第三方模型 API Key：在 127.0.0.1 托管一个 OpenAI 兼容桥接服务（默认端口 8787，被占用时自动跳号），把流式与非流式的对话补全代理到 DSH 宿主模型层，DeepSeek 官方路由、CodeBuddy、Codex 与自定义 OpenAI/Anthropic 端点对 Midscene 全部可用；凭据留在各提供方插件内，桥不接触。`/v1/midscene-env` 端点直接生成四行 MIDSCENE_MODEL_* 环境变量并自动推断模型家族；浏览器、桌面、Android、iOS、鸿蒙自动化加 Vitest E2E 与 Midscene 知识参考共 7 个内置技能随装随用，无需 `npx skills add`。npm 安装：`dsh plugin --profile web add @tnnevol/dsh-midscene`。
@@ -8387,7 +8386,7 @@ dsh plugin --profile web add dshmarket
 - [Guard42/dsh-humanize](https://github.com/Guard42/dsh-humanize) — 把多阶段目标编排为可恢复 Flow 的 agent 预设：阶段带裁判、SHA-256 流锁身份、HMAC 终局评审门禁、事件溯源运行日志；附 15 个工具。
 - [gulagala001/dsh-workflow](https://github.com/gulagala001/dsh-workflow) — 可恢复的 JavaScript 工作流，支持原生子任务、共享预算与 worktree 隔离。
 - [gulagala001/oh-my-agents-above-all](https://github.com/gulagala001/oh-my-agents-above-all) — Codex、Grok Build、Cursor、Pi、ZCode 预设，提供原生会话、代码审阅、文档转换和工作流控制。
-- [gulagala001/oh-my-dsh](https://github.com/gulagala001/oh-my-dsh) — 长上下文预处理、Dream 记忆、任务验证、工作流与电脑操作。需要 DSH 0.2.2-rc.2 与 Node.js 24.9+。默认安装配置开放完整的文件与命令访问并关闭执行审批；已有 profile 的显式设置优先。
+- [gulagala001/oh-my-dsh](https://github.com/gulagala001/oh-my-dsh) — 长上下文预处理、Dream 记忆、任务验证、工作流与电脑操作。需要 DSH 0.2.2-rc.3 与 Node.js 24.9+。默认安装配置开放完整的文件与命令访问并关闭执行审批；已有 profile 的显式设置优先。
 - [haaahhhis/MultiGameAssistant#dsh-plugin](https://github.com/haaahhhis/MultiGameAssistant/tree/main/packages/dsh-plugin) — 在 dsh 里管理游戏自动化脚本（仅 Windows）：安装和更新 MAA 等脚本，按定时流水线运行，监看日志并把出错和卡住交给 agent 处理，还会记录游戏活动。
 - [hackernotfound/dsh-tacit](https://github.com/hackernotfound/dsh-tacit) — 从不顺的轮次和你自己的纠正中学习你在提示词里没说出口的东西，并把学到的指令注入每个新对话的系统提示；指令可在设置中编辑，输入框按钮可用它们改写当前草稿。
 - [halftin/dsh-codex-runner](https://github.com/halftin/dsh-codex-runner) — 在 Windows 的 DSH 中运行本机 Codex CLI 任务，支持后台执行、进度查询、追加指令、已完成聊天记录展示及可选监督；需要 Node 22.23.4+、DSH >=0.2.1-rc.3 <0.3.0，以及已安装并登录的 Codex CLI。
@@ -10440,6 +10439,7 @@ dsh plugin --profile web add dshmarket
 - [feng-yifan/dsh-plugins#dsh-enhancement](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-enhancement) — DSH 增强套件：为 Web GUI 提供独立的密码访问网关（可选 HTTPS，支持上传证书或由插件自签发本地 CA），无需 `?token=` 即可在局域网 / 远程登录；整合 PWA 安装与应用名 / 图标、桌面通知与手机 Web Push（任务完成、等待审批等事件），并可选地把当前会话的 session id 注入第三方 OpenAI 兼容路由的请求头，均在设置页统一配置。
 - [Firefox2100/dsh-proxy-trust](https://github.com/Firefox2100/dsh-proxy-trust) — 让 DSH Web UI 可在带身份验证的反向代理后运行，并分别控制受信任主机、跳过登录、跨站导航、本地页面信任和可选的网络监听器。
 - [flyhigao/dsh-produced-file-paths](https://github.com/flyhigao/dsh-produced-file-paths) — 在远程 Web 中显示并复制 DSH 每轮产出文件的绝对路径。
+- [flymysql/dsh-remote](https://github.com/flymysql/dsh-remote) — DSH 的 SSH 远程工作区：多主机项目并行、文件浏览与编辑、递归搜索、终端、Git 差异，以及 Agent 远程编辑、构建与测试；可选 IDE 布局。
 - [FORGE-131/dsh-lan-pair](https://github.com/FORGE-131/dsh-lan-pair) — 手机接入 DSH Web 界面：内网配对 + 通过自备隧道命令（如 cloudflared）或固定公网地址的远程访问，自带局域网到隧道的自动降级与 dshlanpair:// 深链接；手机端需侧载仓库自带的 Android App（APK，需 Android 8+）。
 - [framecy/dsh-ssh-shell](https://github.com/framecy/dsh-ssh-shell) — 用密码直连远程主机的 SSH 终端：ssh_remote 工具提供 connect/exec/close/status 四个动作，底层是 ControlMaster 常驻会话；另带浏览器浮动终端面板，跑真实 PTY。
 - [fzcohq/dsh-ipv6-gate](https://github.com/fzcohq/dsh-ipv6-gate) — DSH 的 IPv6 远程访问网关：带 PIN 保护的 HTTPS 反向代理（Let's Encrypt 证书，经 DuckDNS 做 DNS-01 验证）、扫码直达、设置页管理，数据不经中继。需要公网 IPv6（仅 Windows、Linux 能探测，macOS 不行）、免费的 DuckDNS 子域名与 Token，并在路由器放行入站 8787/8788；仅当插件配置里设了 ddns 或 tls 才会自动更新 AAAA 记录。
