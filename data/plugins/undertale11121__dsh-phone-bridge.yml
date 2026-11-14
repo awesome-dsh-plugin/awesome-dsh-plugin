@@ -1,0 +1,6 @@
+url: https://github.com/undertale11121/dsh-phone-bridge
+name: undertale11121/dsh-phone-bridge
+category: remote
+description:
+  en: "Pairs a DSH desktop host with a dsh-go phone over the LAN. A switch at the top of each session links that session to a phone conversation -- the phone side opens (and reuses) its own paired session per desktop session, so conversations from different desktop sessions never mix -- and the two models talk to each other directly, and 24 MCP tools let the desktop model read the phone screen, tap it, open apps, run shell commands, move files and hand tasks to the phone's own model."
+  zh: "通过局域网把 DSH 桌面端和一台 dsh-go 手机配对。会话顶部有一个开关，把这个会话和手机上的一个对话连起来：手机侧会为每个电脑会话自动开（并复用）一个配对会话，不同电脑会话的消息不会串到一起；两个模型可以像人一样直接说话；另有 24 个 MCP 工具：读手机屏幕、点按、打开应用、跑 shell、传文件，把任务交给手机自己的模型。"
