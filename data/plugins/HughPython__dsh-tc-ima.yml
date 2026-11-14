@@ -1,0 +1,6 @@
+url: https://github.com/HughPython/dsh-tc-ima
+name: HughPython/dsh-tc-ima
+category: docs
+description:
+  en: Browse and search Tencent ima knowledge bases, read files in an in-panel dock, and add links, files and notes via the ima OpenAPI.
+  zh: 在 Harness 面板中浏览与检索腾讯 ima 知识库，在内置分栏阅读文件，并通过 ima 开放接口添加网页链接、文件与笔记。

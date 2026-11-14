@@ -1,0 +1,6 @@
+url: https://github.com/philomelcc/dsh-status-monitor
+name: philomelcc/dsh-status-monitor
+category: tools
+description:
+  en: 'Disk, CPU/memory/GPU, listening-port and token-usage cards with a full-page zoom; runs as a workbench module or standalone. The port card works on Windows only and the GPU card needs nvidia-smi.'
+  zh: '磁盘、CPU/内存/GPU、监听端口与会话用量四张卡片，可放大到整页；既可作工作台模块，也能独立运行。端口卡片仅支持 Windows，GPU 卡片需要 nvidia-smi。'

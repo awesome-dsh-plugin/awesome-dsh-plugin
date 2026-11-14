@@ -1,0 +1,6 @@
+url: https://github.com/renlang119/dsh-web-mobile-pmsfh
+name: renlang119/dsh-web-mobile-pmsfh
+category: ui
+description:
+  en: 'Standalone mobile page for DeepSeek Harness served at /dsh-web-mobile-pmsfh/, with workspace-grouped sessions, streaming chat with markdown and collapsible reasoning, attachments via the official fileUploads API, read-only workspace file browsing, and login-gated static routes.'
+  zh: 'DSH 的独立移动端页面，挂在 /dsh-web-mobile-pmsfh/ 下，不是给官方界面做移动适配：会话按工作区分组，聊天支持流式输出、markdown 与思考过程折叠，附件走官方 fileUploads 接口，工作区文件只读浏览，静态路由需登录后访问。'

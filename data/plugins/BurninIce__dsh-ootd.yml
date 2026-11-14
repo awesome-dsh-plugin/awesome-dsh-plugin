@@ -1,0 +1,6 @@
+url: https://github.com/BurninIce/dsh-ootd
+name: BurninIce/dsh-ootd
+category: usage
+description:
+  en: A cached daily scene, real weather, schedule and outfit for dsh conversation agents, with three ootd_* tools and the /ootd command.
+  zh: 为 dsh 对话角色提供按天缓存的日常场景、实况天气、日程与着装，并提供三个 ootd_* 工具和 /ootd 命令。

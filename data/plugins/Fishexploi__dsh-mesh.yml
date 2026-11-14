@@ -1,0 +1,6 @@
+url: https://github.com/Fishexploi/dsh-mesh
+name: Fishexploi/dsh-mesh
+category: workflow
+description:
+  en: 'LAN task delegation between DSH hosts on one network: the parent dispatches a task to a child host, the child works in its own session and workspace, results and files return to the parent''s inbox, sensitive actions wait for the parent''s approval, and a finished task can be continued with one follow-up inside the child''s existing session. Since 0.4.0 a fresh host listens on loopback only and keeps its listener off until it is enabled, the six-digit pairing code is single-use and rotates with a lockout after repeated failures, tokens travel in an Authorization header and are stored hashed, and a dispatch with no grant or with a permission above the grant is refused before anything is sent. Transport is still plain HTTP with no TLS, so use it on a trusted LAN.'
+  zh: '局域网内的 DSH 多机任务委派：上级把任务派给子级主机，子级在自己的会话与工作区里执行，结果与文件回到上级收件箱，敏感动作等待上级审批，完成的任务还能在子级原会话里接着追问一轮。0.4.0 起，新装默认只监听本机且监听开关关闭；六位配对码单次可用，失败会自动换码并锁定来源；令牌放在 Authorization 头里传输、本地只存哈希；没有授权或权限不足的任务会在派发前被直接拒绝、不消耗对方的 token。传输仍是明文 HTTP、没有 TLS，请在可信局域网使用。'

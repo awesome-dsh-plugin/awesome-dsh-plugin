@@ -2,5 +2,5 @@ url: https://github.com/KeS1Ke/reminder-dsh
 name: KeS1Ke/reminder-dsh
 category: notify
 description:
-  en: 'Windows notifications for DeepSeek Harness with session titles, optional AI task summaries, quick replies and allow/reject approval buttons, plus an unread completion count on the taskbar. Modules are independently configurable in Settings; the taskbar badge defaults off and requires PowerShell 7 on PATH. Runs on the Windows backend machine.'
-  zh: '为 DeepSeek Harness 提供以会话名为标题的 Windows 通知、可选 AI 任务总结、通知内快速回复和允许/拒绝审批按钮，以及任务栏未查看完成数角标。两个模块可在设置中独立配置；角标默认关闭，需要 PATH 中有 PowerShell 7。提醒运行在 Windows 后端所在机器。'
+  en: 'Native Windows completion and approval notifications for DeepSeek Harness, with session titles, optional AI summaries, quick reply, and an opt-in taskbar completion badge. Toasts carry the original session route, subject to Windows activation. The badge requires PowerShell 7.'
+  zh: '为 DeepSeek Harness 提供带会话标题的 Windows 原生完成与审批通知，支持可选 AI 总结、通知内回复和可独立开启的任务栏完成角标。通知携带原会话路由，跳转取决于 Windows 激活。角标需要 PowerShell 7。'

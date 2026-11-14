@@ -1,0 +1,6 @@
+url: https://github.com/bricika/dsh-quota-dashboard
+name: bricika/dsh-quota-dashboard
+category: usage
+description:
+  en: 'DeepSeek Harness quota dashboard: current-model floating pill, DeepSeek balance and official usage charts, OpenCode Go monthly and per-model quota, and GLM / Xiaomi MiMo balances.'
+  zh: 'DeepSeek Harness 额度面板：跟随当前会话模型的悬浮胶囊，展示 DeepSeek 余额与官网用量图、OpenCode Go 总额度与分模型额度，以及 GLM / 小米 MiMo 余额。'

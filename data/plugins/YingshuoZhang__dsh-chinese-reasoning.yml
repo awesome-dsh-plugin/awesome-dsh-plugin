@@ -1,0 +1,7 @@
+url: https://github.com/YingshuoZhang/dsh-chinese-reasoning
+name: YingshuoZhang/dsh-chinese-reasoning
+category: agi
+description:
+  en: 'Makes a DeepSeek Harness agent reason in Simplified Chinese: each turn it appends one runtime-context instruction at the end of the conversation, and it can keep a stable declaration in the system prompt as well. Settings pick Simplified Chinese or off, and whether that declaration is included.'
+  zh: '让 DeepSeek Harness 的 agent 用简体中文推理：每轮在对话末尾追加一条运行时上下文指令，并可选在系统提示词里保留一条稳定声明。设置里可选简体中文或关闭，并决定是否保留该声明。'
+icon: https://raw.githubusercontent.com/YingshuoZhang/dsh-chinese-reasoning/main/assets/icon-180.png

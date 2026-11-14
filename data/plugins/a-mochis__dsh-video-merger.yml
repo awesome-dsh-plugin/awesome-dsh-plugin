@@ -1,0 +1,6 @@
+url: https://github.com/a-mochis/dsh-video-merger
+name: a-mochis/dsh-video-merger
+category: tools
+description:
+  en: "Merges every folder's videos into one file per folder, matching the first clip's resolution, frame rate, and codec; clips with identical specs are concatenated losslessly, while mismatched clips can be normalized first."
+  zh: "把每个文件夹下的视频合并成一个文件，输出规格对齐该文件夹第一个视频的分辨率、帧率和编码；同规格片段无损拼接，规格不一致时可先转码对齐。"

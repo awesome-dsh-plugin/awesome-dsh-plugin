@@ -1,0 +1,6 @@
+url: https://github.com/lmy060307/dsh-mail-bridge
+name: lmy060307/dsh-mail-bridge
+category: tools
+description:
+  en: 'SMTP/IMAP email bridge with five tools: send, list, read, download attachments, and list folders. Needs Python; the send tool sends real email from your account, and the mailbox authorization code is kept in the profile''s cordis.patch.yml.'
+  zh: '基于 SMTP/IMAP 的邮件桥，提供发信、列表、读信、附件下载、文件夹列表五个工具。需要 Python；发信工具会用你的账号真实发出邮件，邮箱授权码保存在 profile 的 cordis.patch.yml 里。'

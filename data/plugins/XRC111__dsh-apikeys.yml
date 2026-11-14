@@ -1,0 +1,6 @@
+url: https://github.com/XRC111/dsh-apikeys
+name: XRC111/dsh-apikeys
+category: tools
+description:
+  en: 'One credential store for many API platforms: keeps keys for GitHub, Cloudflare, Vercel, npm, Docker Hub, Hugging Face and custom platforms in the DSH credential store rather than in configuration or the session log, and gives the model three tools. apikey_call takes a path rather than a URL, so a key only reaches the host its platform fixes; apikey_platforms lists platforms and accounts without values; apikey_key gets, sets or clears one. Supports five auth shapes (bearer, custom header, x-api-key, basic, query string), verifies a key against the identity the platform returns, and reports transport failures as readable results instead of ending the turn. By default (exposeKeys on) the apikey_key tool can return a stored key''s value to the model, which puts it in the session log; turn exposeKeys off to keep keys inside the Host.'
+  zh: '统一管理多个平台 API Key 的凭据库：把 GitHub、Cloudflare、Vercel、npm、Docker Hub、Hugging Face 与自定义平台的 Key 存进 DSH 凭据库（而非配置文件或会话日志），并向模型提供三个工具。apikey_call 的参数是路径而非 URL，Key 只可能发往该平台固定的主机；apikey_platforms 列出平台与账号但不返回值；apikey_key 读取、写入或清除单个 Key。支持五种认证方式（Bearer、自定义头、x-api-key、Basic、查询串），会用平台返回的身份校验 Key，网络故障返回可读结果而不是中断对话。默认（exposeKeys 开启）时 apikey_key 工具可以把已存的密钥值返回给模型，从而进入会话日志；把 exposeKeys 关掉才能让密钥只留在宿主内。'

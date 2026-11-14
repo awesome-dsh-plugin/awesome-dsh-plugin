@@ -1,0 +1,7 @@
+url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-keep-working
+name: mzzsfy/dsh-plugin#dsh-keep-working
+category: session
+description:
+  en: 'Host-side continuation for turns that end without declaring completion: a closure rule (present, or a final (TASK_DONE) / (TASK_BLOCKED: reason) line) is injected into the system prompt, and a follow-up user message is sent on silent completion, retryable errors, truncation and restart-interrupted turns, with grace, cooldown and backoff; on cold start it rescans stored sessions and re-arms active goals the host disarmed. Main switches and timing live in the plugin settings card.'
+  zh: '回合未声明结案就静默结束时自动补一条用户消息把 AI 拉回:结案规则(present,或末行 (TASK_DONE) / (TASK_BLOCKED: 原因))经文提示词常驻注入,按静默结束、可恢复错误、输出截断、重启中断分类补发,等待/冷却/退避可控;冷启动扫描存储会话恢复未结案回合,并重新武装宿主重启后 disarm 的 active goal。主开关与节奏在插件设置卡片里。'
+icon: https://raw.githubusercontent.com/mzzsfy/dsh-plugin/main/assets/icons/png/dsh-keep-working.png

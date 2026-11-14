@@ -1,0 +1,6 @@
+url: https://github.com/komorebi-c9/dsh-skill-editor
+name: komorebi-c9/dsh-skill-editor
+category: skill
+description:
+  en: "Browses and edits the skills directory in a VSCode-style file tree and editor panel in the DSH web client sidebar: creates, renames and deletes files and directories, reads and saves text files under size caps, and switches the served root directory from the panel (persisted through the profile config editor)."
+  zh: "在 DSH Web 客户端侧边栏里用 VSCode 风格的文件树与编辑器面板浏览和编辑技能目录：新建、重命名、删除文件与目录，在大小上限内读写文本文件，并可在面板内切换所服务的根目录（通过 profile 配置编辑器持久化）。"
