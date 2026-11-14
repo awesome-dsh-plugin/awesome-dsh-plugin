@@ -1,0 +1,7 @@
+url: https://github.com/triagmas/smart-dictation-dsh/tree/main/packages/smart-dictation-bundle
+name: triagmas/smart-dictation-dsh#smart-dictation-bundle
+category: voice
+description:
+  en: 'Local Russian dictation for the DSH composer with GigaAM v3, English technical terms, punctuation, and a personal glossary that learns only after confirmation. Audio and transcripts never leave the machine.'
+icon: https://raw.githubusercontent.com/triagmas/smart-dictation-dsh/main/packages/smart-dictation-bundle/icon.png
+tarball: https://github.com/triagmas/smart-dictation-dsh/releases/download/v1.0.1/smart-dictation-dsh-bundle-1.0.1.tgz
