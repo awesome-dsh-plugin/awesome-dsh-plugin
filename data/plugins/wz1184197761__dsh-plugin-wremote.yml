@@ -1,0 +1,6 @@
+url: https://github.com/wz1184197761/dsh-plugin-wremote
+name: wz1184197761/dsh-plugin-wremote
+category: remote
+description:
+  en: Mirrors a single Windows desktop window into a DSH side panel over a bundled local capture service, with click, drag, scroll and keyboard passthrough, and six agent tools for status, screenshot, click, scroll, typing and key presses.
+  zh: 把 Windows 桌面上的单个窗口镜像到 DSH 侧栏面板，自带本地采集服务，支持点击、拖拽、滚动与键盘透传，并提供状态、截图、点击、滚动、输入文本、按键六个 agent 工具。
