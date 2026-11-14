@@ -15296,19 +15296,6 @@
     "scannedAt": "2026-09-24T17:41:52.360Z",
     "tool": "dsh-trust-check@0.1.13"
   },
-  "https://github.com/heyadhithya/fullstack-expert": {
-    "version": "0.1.1",
-    "spec": "github:heyadhithya/fullstack-expert",
-    "capabilities": [
-      "shell",
-      "fs-write",
-      "fs-read",
-      "env"
-    ],
-    "redLines": [],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
   "https://github.com/hezhongtang/dsh-capability-optimizer": {
     "version": "0.7.0",
     "spec": "github:hezhongtang/dsh-capability-optimizer",
