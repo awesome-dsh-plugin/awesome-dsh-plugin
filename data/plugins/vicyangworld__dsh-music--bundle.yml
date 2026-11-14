@@ -1,6 +1,6 @@
 url: https://github.com/vicyangworld/dsh-music/tree/main/bundle
 name: vicyangworld/dsh-music#bundle
-category: voice
+category: ui
 tarball: https://github.com/vicyangworld/dsh-music/releases/download/v0.3.0/vicyangorg-dsh-music-0.3.0.tgz
 description:
   en: 'Music plugin for DeepSeek Harness: scans local libraries, previews tracks online from YouTube Music (~128 kbps AAC; liking a track saves it to the library), recommends from listening history with taste preferences, shows artist pages with Wikipedia intros and cover art, tracks listening stats, and greets first-time users with a welcome flow plus a public-domain starter library. Listening history and caches stay local.'
