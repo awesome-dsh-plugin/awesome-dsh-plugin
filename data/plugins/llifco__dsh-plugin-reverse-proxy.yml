@@ -1,0 +1,8 @@
+url: https://github.com/llifco/dsh-plugin-reverse-proxy
+name: llifco/dsh-plugin-reverse-proxy
+category: remote
+description:
+  en: Reverse proxy for the DSH Web UI that forwards a LAN port to 127.0.0.1:3080 with Host/Origin rewriting and token-free login.
+  zh: DSH Web 界面反向代理：把局域网端口转发到 127.0.0.1:3080，改写 Host/Origin 并免 Token 登录。
+icon: https://raw.githubusercontent.com/llifco/dsh-plugin-reverse-proxy/main/assets/logo.jpg
+tarball: https://github.com/llifco/dsh-plugin-reverse-proxy/releases/download/v0.3.0/dsh-plugin-reverse-proxy-0.3.0.tgz
