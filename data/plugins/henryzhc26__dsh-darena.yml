@@ -1,0 +1,7 @@
+url: https://github.com/henryzhc26/dsh-darena
+name: henryzhc26/dsh-darena
+category: fun
+tarball: https://github.com/henryzhc26/dsh-darena/releases/download/v0.1.12/dsh-darena-0.1.12.tgz
+description:
+  en: 'Real-time PvP mini-game for DSH: cross-user matchmaking, both players call their own configured models to solve the same generated maze, best-of-three with an 11-step difficulty ladder, practice mode and a global win-difference leaderboard.'
+  zh: 'DSH 里的实时对战小游戏：跨用户匹配，双方各调自己 DSH 里配置的模型解同一张机关图，三局两胜、11 档难度阶梯，带练习模式和全球净胜榜。'
