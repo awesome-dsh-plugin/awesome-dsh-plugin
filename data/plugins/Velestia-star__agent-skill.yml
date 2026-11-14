@@ -3,18 +3,4 @@ name: Velestia-star/agent-skill
 category: agi
 description:
   en: Build named subagents and skills in a sidebar panel, then call any subagent by name in a conversation. Each subagent selects a model, reasoning effort, spawn or fork mode, a tool allowlist and skills; skills can be global, per workspace or per conversation.
-  zh: 鍦ㄤ晶鏍忛噷鍒涘缓鍏峰悕瀛愭櫤鑳戒綋鍜屾妧鑳斤紝骞跺湪瀵硅瘽涓寜鍚嶅瓧璋冪敤銆傚瓙鏅鸿兘浣撳彲閰嶇疆妯″瀷銆佹€濊€冨己搴︺€乻pawn/fork 鍚姩鏂瑰紡銆佸伐鍏风櫧鍚嶅崟涓庢妧鑳斤紱鎶€鑳藉彲鍏ㄥ眬銆佹寜宸ヤ綔鍖烘垨鎸夊崟涓細璇濈敓鏁堛€?'@
-
-$prBody = @'
-- [x] I added **one file** at `data/plugins/Velestia-star__agent-skill.yml` 鈥?that single file is the whole submission.
-- [x] My repo's `package.json` declares **`dsh.bundle`** (`dsh.bundle.patch: ./cordis.patch.yml`, plus `dsh.client` for the browser half).
-- [x] My repo is at least **1 day old** 鈥?created 2026-11-12T16:50:45Z.
-- [x] `category: agi` 鈥?it manages named subagents and skills and delegates work to them by name.
-- [x] Description states what the plugin does, no superlatives.
-- [x] My repo has the `dsh-plugin` topic.
-
-Plugin repository: https://github.com/Velestia-star/agent-skill
-
-The plugin adds a sidebar panel for creating named subagents and skills, plus a `delegate_agent` tool that calls a subagent by name in the current conversation. Each subagent chooses its model, reasoning effort, spawn/fork mode, tool allowlist and attached skills. Skills are ordinary `SKILL.md` bundles and can be global, per workspace, or limited to selected conversations. It also includes a read-only per-conversation agent tree in the session header.
-
-Verification: `node --check index.js`, `node --check client.js`, and `node --test test/host.test.mjs` (43/43 pass) in the repository; package version 0.3.0; DSH engines `>=0.2.2-rc.1`.
+  zh: 在侧栏里创建具名子智能体和技能，并在对话中按名字调用。子智能体可配置模型、思考强度、spawn/fork 启动方式、工具白名单与技能；技能可全局、按工作区或按单个会话生效。
