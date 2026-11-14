@@ -1,5 +1,5 @@
-url: https://github.com/hongxin-y/dsh-llm-router
-name: hongxin-y/dsh-llm-router
+url: https://github.com/hongxin-y/dsh-fallback-router
+name: hongxin-y/dsh-fallback-router
 category: model
 description:
   en: 'Per-model routing for DeepSeek Harness: fallback chains (official or loop), time-slot windows, per-provider retry policies, and failure rules by error code, regex, or structural markup detection.'
