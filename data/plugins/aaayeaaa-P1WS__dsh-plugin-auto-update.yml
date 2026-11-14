@@ -1,0 +1,6 @@
+url: https://github.com/aaayeaaa-P1WS/dsh-plugin-auto-update
+name: aaayeaaa-P1WS/dsh-plugin-auto-update
+category: market
+description:
+  en: "Keeps installed plugins up to date: checks the plugin market on every DSH launch, installs updates in the background, and pops up a short report of what was updated and what failed. The settings page holds the schedule and an update log; when a plugin is in use and cannot be replaced, the popup offers a one-click disable, update, and restart."
+  zh: "自动帮你更新插件：每次打开 DSH 就在后台检查市场里的新版本并安装，装完弹窗说清楚更新了什么、哪几个失败了；设置里能改检查时机、看更新日志；插件被占用装不上时，一键停用、更新并重启 DSH。"
