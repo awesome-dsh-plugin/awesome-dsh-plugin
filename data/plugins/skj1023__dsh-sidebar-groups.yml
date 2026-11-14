@@ -1,0 +1,6 @@
+url: https://github.com/skj1023/dsh-sidebar-groups
+name: skj1023/dsh-sidebar-groups
+category: ui
+description:
+  en: 'Collapse sidebar plugin entries into named groups, each group taking one row that expands and collapses its members in place like a two-level menu.'
+  zh: '把左侧侧边栏里的插件入口折叠成自定义分组：每个分组只占一行，点击即可像一二级菜单一样就地展开或收起成员。'
