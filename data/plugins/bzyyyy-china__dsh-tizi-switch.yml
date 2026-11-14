@@ -1,0 +1,6 @@
+url: https://github.com/bzyyyy-china/dsh-tizi-switch
+name: bzyyyy-china/dsh-tizi-switch
+category: tools
+description:
+  en: Switches this Harness instance's outbound proxy on and off at runtime, without restarting or changing the operating system proxy, and releases it automatically when the proxy client exits.
+  zh: 在 DSH 运行中随时开关出网代理，不用重启也不改动操作系统代理；代理客户端退出时自动释放回直连。
