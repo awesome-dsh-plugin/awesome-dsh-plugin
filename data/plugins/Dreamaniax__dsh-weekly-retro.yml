@@ -2,6 +2,6 @@ url: https://github.com/Dreamaniax/dsh-weekly-retro
 name: Dreamaniax/dsh-weekly-retro
 category: workflow
 description:
-  en: 'Weekly retro for DSH: sessions, repeats, candidate skills and a five-tab insights UI, all local.'
-  zh: DSH 周报复盘：会话画像、重复劳动、技能候选与五 Tab 洞察页，数据只在本机。
+  en: 'Weekly retro for DSH: sessions, repeats, candidate skills and a five-tab insights UI, all local. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 周报复盘：会话画像、重复劳动、技能候选与五 Tab 洞察页，数据只在本机。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
 icon: https://raw.githubusercontent.com/Dreamaniax/dsh-weekly-retro/main/assets/icon-180.png

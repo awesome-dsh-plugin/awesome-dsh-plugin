@@ -2,6 +2,6 @@ url: https://github.com/CY-W-2000/dsh-lan-access
 name: CY-W-2000/dsh-lan-access
 category: remote
 description:
-  en: 'LAN access gateway for the Web UI: serve DSH on localhost or 0.0.0.0 with password protection or an explicit no-password mode plus expiry presets, and open a separate chat-only port that other agents can drive over HTTP with selectable workspace, token or token-free auth, and its own expiry.'
-  zh: 'DSH 局域网/远程访问网关：把 Web 界面开放在本机或 0.0.0.0（密码保护或显式无密码模式，带过期快捷选项），并单独开放仅对话端口，供其他 Agent 通过 HTTP 接入，支持选择工作区、Token 或免 Token 认证与独立生效时间。'
+  en: 'LAN access gateway for the Web UI: serve DSH on localhost or 0.0.0.0 with password protection or an explicit no-password mode plus expiry presets, and open a separate chat-only port that other agents can drive over HTTP with selectable workspace, token or token-free auth, and its own expiry. LAN sharing is opt-in: it rebinds the Web UI port to 0.0.0.0, gives other devices the full DSH interface behind a password (the default), and an explicit no-password mode needs you to confirm a security warning.'
+  zh: 'DSH 局域网/远程访问网关：把 Web 界面开放在本机或 0.0.0.0（密码保护或显式无密码模式，带过期快捷选项），并单独开放仅对话端口，供其他 Agent 通过 HTTP 接入，支持选择工作区、Token 或免 Token 认证与独立生效时间。局域网分享需要主动开启：它把 Web UI 端口改绑到 0.0.0.0，让其他设备使用完整的 DSH 界面，默认需要密码；不设密码的模式要先确认安全警告。'
 icon: https://raw.githubusercontent.com/CY-W-2000/dsh-lan-access/main/assets/icon-180.png

@@ -2,5 +2,5 @@ url: 'https://github.com/Dried-Persimmon-JPG/dsh-plugin-publisher'
 name: 'Dried-Persimmon-JPG/dsh-plugin-publisher'
 category: dev
 description:
-  en: 'Publishes a local DSH plugin folder to GitHub: runs a local preflight, pushes a snapshot through the Git Data API, adds the dsh-plugin topic, and opens the awesome-dsh-plugin listing pull request.'
-  zh: '把本地 DSH 插件一键发布到 GitHub：先做本地体检，再用 Git Data API 推送快照、加上 dsh-plugin 标签，并自动给插件市场开收录 PR。'
+  en: 'Publishes a local DSH plugin folder to GitHub: runs a local preflight, pushes a snapshot through the Git Data API, adds the dsh-plugin topic, and opens the awesome-dsh-plugin listing pull request. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把本地 DSH 插件一键发布到 GitHub：先做本地体检，再用 Git Data API 推送快照、加上 dsh-plugin 标签，并自动给插件市场开收录 PR。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

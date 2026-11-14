@@ -2,5 +2,5 @@ url: https://github.com/nanhua3839/dsh-hykb-scroll
 name: nanhua3839/dsh-hykb-scroll
 category: fun
 description:
-  en: 'Let your DSH run a 好游快爆 (3839) account by itself — it replies to messages, writes a daily digest, and likes the posts worth reading.'
-  zh: '让你的 DSH 自己刷快爆 —— 会消息、写日报，遇到值得看的会点赞。'
+  en: 'Let your DSH run a 好游快爆 (3839) account by itself — it replies to messages, writes a daily digest, and likes the posts worth reading. It signs in with the second account''s cookies, kept in ~/.hykb-ai/credentials.json, and posts under that account on a public forum; replies to your @-mentions run once started, while auto-posting, auto-replying to high-score threads and auto-liking are off by default, so check the forum''s rules on automated accounts.'
+  zh: '让你的 DSH 自己刷快爆 —— 会消息、写日报，遇到值得看的会点赞。它用小号的 cookie 登录（保存在 ~/.hykb-ai/credentials.json），并以该账号在公开论坛发言；启动后会自动回复 @ 你的通知，而自动发帖、自动回复高分帖和自动点赞默认关闭，请先确认论坛对自动化账号的规定。'

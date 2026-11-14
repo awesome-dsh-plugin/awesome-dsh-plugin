@@ -2,5 +2,5 @@ url: https://github.com/taoziliyouchong/dsh-evolve-preset
 name: taoziliyouchong/dsh-evolve-preset
 category: agi
 description:
-  en: "Evolution mode in one package: a thinking mode that aligns on your goal and boundaries each turn plus the task tree, profile injection and panel, alignment-bar styling, self-check tools and plan-mode entry — install one package and you have the whole set. It helps the model understand requests more accurately, get noticeably better results at the same cost, and build a long-term profile of your preferences."
-  zh: 进化模式一包装全：一个每轮先对齐目标与边界的思维模式，连任务树、画像注入与面板、对齐栏样式、自查工具、计划模式入口一起装；装一个包就是整套。让模型更准确地理解你的需求、用相同的花费做出明显更好的效果，并长期积累你的偏好。
+  en: 'Evolution mode in one package: a thinking mode that aligns on your goal and boundaries each turn plus the task tree, profile injection and panel, alignment-bar styling, self-check tools and plan-mode entry — install one package and you have the whole set. It helps the model understand requests more accurately, get noticeably better results at the same cost, and build a long-term profile of your preferences. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '进化模式一包装全：一个每轮先对齐目标与边界的思维模式，连任务树、画像注入与面板、对齐栏样式、自查工具、计划模式入口一起装；装一个包就是整套。让模型更准确地理解你的需求、用相同的花费做出明显更好的效果，并长期积累你的偏好。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

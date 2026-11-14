@@ -2,6 +2,6 @@ url: https://github.com/lcy362/dsh-radeon-capacity
 name: lcy362/dsh-radeon-capacity
 category: model
 description:
-  en: "Shows AMD Radeon Cloud AI Capacity for every Radeon model — a per-model badge in the model picker, and the selected model's capacity on the same row as its name. The badges register only once a Radeon provider is configured, so they never displace the host's own model annotations. Quota is display-only, since AMD is currently free and unmetered. Its settings page can also write the provider into the DSH user layer, so the provider keeps working after the plugin is uninstalled."
-  zh: "显示 AMD Radeon Cloud 的 AI Capacity：模型选择器里每个模型一枚容量徽章，当前模型的容量与模型名同一行。徽章只在配好 Radeon provider 之后才注册，因此不会顶掉内核自带的模型标注。额度仅作展示（AMD 目前免费不限量）。设置页还可以把 provider 写进 DSH 用户层，卸载本插件后依然可用。"
+  en: 'Shows AMD Radeon Cloud AI Capacity for every Radeon model — a per-model badge in the model picker, and the selected model''s capacity on the same row as its name. The badges register only once a Radeon provider is configured, so they never displace the host''s own model annotations. Quota is display-only, since AMD is currently free and unmetered. Its settings page can also write the provider into the DSH user layer, so the provider keeps working after the plugin is uninstalled. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '显示 AMD Radeon Cloud 的 AI Capacity：模型选择器里每个模型一枚容量徽章，当前模型的容量与模型名同一行。徽章只在配好 Radeon provider 之后才注册，因此不会顶掉内核自带的模型标注。额度仅作展示（AMD 目前免费不限量）。设置页还可以把 provider 写进 DSH 用户层，卸载本插件后依然可用。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
 tarball: https://github.com/lcy362/dsh-radeon-capacity/releases/latest/download/dsh-radeon-capacity.tgz

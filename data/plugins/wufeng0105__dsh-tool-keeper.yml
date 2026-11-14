@@ -2,6 +2,6 @@ url: https://github.com/wufeng0105/dsh-tool-keeper
 name: wufeng0105/dsh-tool-keeper
 category: tools
 description:
-  en: "AI re-reads every tool's manual on every reply, including the tools you never use. Hide the ones you don't need and rewrite the manuals of the ones you keep — a tool's own manual or any single parameter's. Rewriting touches only the wording, never the schema, so a rewritten tool still works. Both the settings page and a model-callable tool write the same config; changes apply after a restart."
-  zh: "AI 每回答一次，都要把手上所有工具的说明书重读一遍，包括你从来用不到的那些。这个插件让你把用不上的收起来，并把留下的说明书改成你自己的话——工具本身的说明，或者任意一个参数的说明。改写只动文字、不碰参数格式，所以改过的工具照常能用。设置页和模型可调用的管理工具写的是同一份配置；改动重启后生效。"
+  en: 'AI re-reads every tool''s manual on every reply, including the tools you never use. Hide the ones you don''t need and rewrite the manuals of the ones you keep — a tool''s own manual or any single parameter''s. Rewriting touches only the wording, never the schema, so a rewritten tool still works. Both the settings page and a model-callable tool write the same config; changes apply after a restart. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'AI 每回答一次，都要把手上所有工具的说明书重读一遍，包括你从来用不到的那些。这个插件让你把用不上的收起来，并把留下的说明书改成你自己的话——工具本身的说明，或者任意一个参数的说明。改写只动文字、不碰参数格式，所以改过的工具照常能用。设置页和模型可调用的管理工具写的是同一份配置；改动重启后生效。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
 icon: https://raw.githubusercontent.com/wufeng0105/dsh-tool-keeper/main/icon.png

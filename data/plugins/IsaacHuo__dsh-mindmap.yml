@@ -2,5 +2,5 @@ url: https://github.com/IsaacHuo/dsh-mindmap
 name: IsaacHuo/dsh-mindmap
 category: docs
 description:
-  en: Outline notes with a live mind-map view in a sidebar page, stored as local JSON with autosave, daily backups and Markdown/OPML import and export.
-  zh: 侧边栏页面中的大纲笔记与思维导图双视图，数据以本地 JSON 保存，支持自动保存、每日备份以及 Markdown/OPML 导入导出。
+  en: 'Outline notes with a live mind-map view in a sidebar page, stored as local JSON with autosave, daily backups and Markdown/OPML import and export. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '侧边栏页面中的大纲笔记与思维导图双视图，数据以本地 JSON 保存，支持自动保存、每日备份以及 Markdown/OPML 导入导出。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

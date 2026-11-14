@@ -2,5 +2,5 @@ url: https://github.com/dbbdbdhdbxb-design/dsh-douyin-studio
 name: dbbdbdhdbxb-design/dsh-douyin-studio
 category: workflow
 description:
-  en: Douyin automation driven by CDP on your own Chrome — feed scan, replies, publishing and an event log; zero runtime dependencies.
-  zh: 用 CDP 驱动真 Chrome 的抖音自动化：刷推荐、回评论、发布作品、记事件；零运行时依赖。
+  en: 'Douyin automation driven by CDP on your own Chrome — feed scan, replies, publishing and an event log; zero runtime dependencies. It drives your own Chrome over CDP to scan, reply and publish on your Douyin account, so check the platform''s rules on automation; its HTTP routes have no DSH access check.'
+  zh: '用 CDP 驱动真 Chrome 的抖音自动化：刷推荐、回评论、发布作品、记事件；零运行时依赖。它通过 CDP 驱动你自己的 Chrome，在你的抖音账号上扫描、回复和发布，请先确认平台对自动化的规定；它的 HTTP 路由没有 DSH 的访问检查。'

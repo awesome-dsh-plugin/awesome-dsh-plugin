@@ -2,6 +2,6 @@ url: https://github.com/zwkit/dshweb
 name: zwkit/dshweb
 category: remote
 description:
-  en: Opens the DeepSeek Harness desktop UI from a phone or tablet browser over the LAN with password and pairing-code login, an HTTPS listener, and PWA support.
-  zh: 通过局域网在手机或平板浏览器中打开 DeepSeek Harness 桌面界面，支持口令与配对码登录、HTTPS 监听与 PWA。
+  en: 'Opens the DeepSeek Harness desktop UI from a phone or tablet browser over the LAN with password and pairing-code login, an HTTPS listener, and PWA support. By default the gateway listens on 0.0.0.0:3180 (HTTP, plus a self-signed HTTPS port 3181) and reverse-proxies the whole Web GUI to your LAN; sign-in needs a password or a short-lived pairing code, and a trustedHosts allow-list guards against DNS rebinding.'
+  zh: '通过局域网在手机或平板浏览器中打开 DeepSeek Harness 桌面界面，支持口令与配对码登录、HTTPS 监听与 PWA。网关默认监听 0.0.0.0:3180（HTTP，另有自签名的 3181 HTTPS 端口），把整个 Web GUI 反代到局域网；登录需要密码或限时配对码，并有 trustedHosts 白名单防 DNS 重绑定。'
 icon: https://raw.githubusercontent.com/zwkit/dshweb/main/assets/pwa-icons/icon-192.png

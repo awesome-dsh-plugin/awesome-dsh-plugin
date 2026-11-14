@@ -1,5 +1,5 @@
 url: https://github.com/1015677515/dsh-cyberegg
-name: dsh-cyberegg
+name: 1015677515/dsh-cyberegg
 category: usage
 description:
   en: 'One sidebar panel that shows the remaining credit balance and today''s check-in state of every freebie platform already configured on the machine (Loomy, MiniMax Code, Trae, Qoder, Raccoon, WorkBuddy, CodeArts, WPS Lingxi, MobileClaw), read through the plugins that own each platform plus two bundled read-only readers. Query and manual check-in only: no login UI, no stored tokens, and a manual check-in is reported as successful only when the measured balance actually increased.'

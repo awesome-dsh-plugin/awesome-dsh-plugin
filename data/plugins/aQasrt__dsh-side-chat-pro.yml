@@ -2,5 +2,5 @@ url: https://github.com/aQasrt/dsh-side-chat-pro
 name: aQasrt/dsh-side-chat-pro
 category: ui
 description:
-  en: Select text in a DSH conversation to ask it in a side chat, translate it with context-aware one-to-five candidate renderings, or explain the term, without touching the main transcript.
-  zh: 在 DSH 对话里选中文字，三选一：开侧边子会话提问、结合上下文给出 1-5 个候选译法、或解释该名词，都不会写入主对话。
+  en: 'Select text in a DSH conversation to ask it in a side chat, translate it with context-aware one-to-five candidate renderings, or explain the term, without touching the main transcript. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 对话里选中文字，三选一：开侧边子会话提问、结合上下文给出 1-5 个候选译法、或解释该名词，都不会写入主对话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

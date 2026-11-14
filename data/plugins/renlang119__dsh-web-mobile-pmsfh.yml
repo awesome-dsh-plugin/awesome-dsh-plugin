@@ -2,5 +2,5 @@ url: https://github.com/renlang119/dsh-web-mobile-pmsfh
 name: renlang119/dsh-web-mobile-pmsfh
 category: ui
 description:
-  en: 'A standalone mobile page for DeepSeek Harness with conversations, attachments, approvals and workspace file browsing. Desktop UI untouched.'
-  zh: 'DeepSeek Harness 的移动端页面插件，窄屏专用的独立对话界面，支持会话、附件、审批与工作区文件浏览，桌面端零改动。'
+  en: 'A standalone mobile page for DeepSeek Harness with conversations, attachments, approvals and workspace file browsing. Desktop UI untouched. It is served from the Host''s web server under its own route prefix, with login-gated static routes.'
+  zh: 'DeepSeek Harness 的移动端页面插件，窄屏专用的独立对话界面，支持会话、附件、审批与工作区文件浏览，桌面端零改动。由 Host 的 web 服务在自己的路由前缀下提供，静态路由需要登录。'

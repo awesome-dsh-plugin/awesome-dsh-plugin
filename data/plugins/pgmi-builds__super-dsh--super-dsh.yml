@@ -2,5 +2,5 @@ url: https://github.com/pgmi-builds/super-dsh/tree/master/super-dsh
 name: pgmi-builds/super-dsh#super-dsh
 category: agi
 description:
-  en: 'Multi-agent orchestration hub: bridges six foreign agent runtimes (Codex, Claude Code, OMP, Pi, Hermes, Antigravity) into the DSH Web UI — roster, session create/prompt/resume, exec/PTY/task/file lanes, local or cross-machine over SSH/Docker/Incus/Hub.'
-  zh: 'Multi-agent 编排中枢：把六个外部 agent 运行时（Codex、Claude Code、OMP、Pi、Hermes、Antigravity）接入 DSH Web UI——roster、会话 create/prompt/resume、exec/PTY/task/file 通道，本机或跨机（SSH/Docker/Incus/Hub）。'
+  en: 'Multi-agent orchestration hub: bridges six foreign agent runtimes (Codex, Claude Code, OMP, Pi, Hermes, Antigravity) into the DSH Web UI — roster, session create/prompt/resume, exec/PTY/task/file lanes, local or cross-machine over SSH/Docker/Incus/Hub. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'Multi-agent 编排中枢：把六个外部 agent 运行时（Codex、Claude Code、OMP、Pi、Hermes、Antigravity）接入 DSH Web UI——roster、会话 create/prompt/resume、exec/PTY/task/file 通道，本机或跨机（SSH/Docker/Incus/Hub）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

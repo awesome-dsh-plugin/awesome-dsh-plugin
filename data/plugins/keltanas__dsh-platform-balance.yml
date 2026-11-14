@@ -3,3 +3,4 @@ name: keltanas/dsh-platform-balance
 category: usage
 description:
   en: 'DeepSeek Platform wallet balances in USD and CNY, CBR RUB conversion with an 18:00 MSK rate cache, and current-session and current-day spend estimates in a floating card and session header pill.'
+  zh: '以美元和人民币显示 DeepSeek 开放平台的钱包余额，按 18:00 莫斯科时间缓存的俄央行汇率换算卢布，并在悬浮卡片和会话标题栏徽标里显示当前会话与当日的花费估算。'

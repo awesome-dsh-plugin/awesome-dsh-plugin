@@ -4,5 +4,5 @@ name: subeichen1/dsh-mcp-switch
 category: tools
 
 description:
-  en: "MCP panel for DSH: turn a whole server on or off, hide individual tools, and see how many context tokens each server's tool definitions use."
-  zh: "DSH 的 MCP 开关面板：可以按服务器整体开关，也可以只隐藏某个工具，还能看到每个服务器的工具定义占用了多少上下文 token。"
+  en: 'MCP panel for DSH: turn a whole server on or off, hide individual tools, and see how many context tokens each server''s tool definitions use. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 的 MCP 开关面板：可以按服务器整体开关，也可以只隐藏某个工具，还能看到每个服务器的工具定义占用了多少上下文 token。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
