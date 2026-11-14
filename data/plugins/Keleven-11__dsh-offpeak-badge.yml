@@ -1,0 +1,7 @@
+url: https://github.com/Keleven-11/dsh-offpeak-badge
+name: Keleven-11/dsh-offpeak-badge
+category: usage
+description:
+  en: Adds a peak/off-peak badge to the composer status row, using four switchable provider presets (DeepSeek API, OpenCode Go, WorkBuddy, custom) whose windows come from each vendor's own documentation, with a per-provider public-holiday switch.
+  zh: 在输入框下方状态栏显示当前供应商处于忙时还是闲时，内置四套可切换的供应商预设（DeepSeek 官方 API、OpenCode Go、WorkBuddy、自定义），时段取自各厂商官方文档，并可按供应商单独设置「法定节假日按闲时」。
+icon: https://raw.githubusercontent.com/Keleven-11/dsh-offpeak-badge/main/assets/icon-180.png
