@@ -1,0 +1,7 @@
+url: https://github.com/plasticmemories-0823/dsh-session-tree
+name: plasticmemories-0823/dsh-session-tree
+category: session
+description:
+  en: Attach existing conversations as visible subagents in the DSH sidebar, with task dependencies and execution receipts.
+  zh: 把已有会话挂载为 DSH 侧栏中的可见子代理，支持任务依赖和执行回执。
+tarball: https://github.com/plasticmemories-0823/dsh-session-tree/releases/download/v0.8.1/dsh-session-tree-0.8.1.tgz
