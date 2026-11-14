@@ -2845,6 +2845,7 @@ dsh plugin --profile web add dshmarket
 - [storyOuO/dsh-plugin-ds-balance](https://github.com/storyOuO/dsh-plugin-ds-balance) — DeepSeek 余额与逐次调用成本追踪：基于真实 usage 的持久化成本账本，支持官方高峰/低谷定价（北京时间 ×2），60 秒余额轮询，侧栏底部显示余额与今日消耗。
 - [Sttrevens/dsh-cost-meter](https://github.com/Sttrevens/dsh-cost-meter) — Web UI 美元成本徽标：头部显示会话总成本、每条回复结尾显示该轮成本，悬停看分项。
 - [SuLiuCanYing/dsh-billing-statistics](https://github.com/SuLiuCanYing/dsh-billing-statistics) — DSH 本地计费面板：多平台、按平台/模型明细汇总调用次数、token 与花费，支持峰谷/阶梯计价、CSV 人工导入价格（含峰时窗口）、官方账单对齐，以及 HTML/PDF/CSV 导出。
+- [sumingwang233/dsh-provider-quota-rings](https://github.com/sumingwang233/dsh-provider-quota-rings) — 在会话标题旁为已配置的提供商画订阅额度圆环，内环是短周期，外环是周周期。
 - [sumomok/dsh-plugins#balance](https://github.com/sumomok/dsh-plugins/tree/main/packages/balance) — 侧栏脚注显示 DeepSeek 账户余额，并按会话/今日/本月/累计统计花费，按可配置的分时价格表（按币种分表，内置 DeepSeek 人民币/美元默认表）计价。两个只读远程方法，无宿主路由，密钥每次经宿主凭据缝读取，只向配置的供应商域名出网。
 - [sunshaobei/dsh-balance-panel](https://github.com/sunshaobei/dsh-balance-panel) — DSH Web 端的供应商额度与余额状态小组件，在输入框底部的停靠区展示剩余额度、用量与限流窗口。wenzetan/dsh-quota-panel 的本地分叉。
 - [sunzhentao/dsh--prompt--enhance](https://github.com/sunzhentao/dsh--prompt--enhance) — DSH Web 界面提示词增强插件：基础/标准/专家三档模式，标准/专家模式结合项目上下文与最近会话历史重写草稿；网关拒绝推理档位参数时自动去参重试；增强结果支持对比确认与撤回。
@@ -7832,6 +7833,7 @@ dsh plugin --profile web add dshmarket
 - [zjsthmjialin/pdf-background-gray-codex-skill#dsh-pdf-background-gray](https://github.com/zjsthmjialin/pdf-background-gray-codex-skill/tree/main/dsh-pdf-background-gray) — 注册 remove-pdf-background-gray 技能：去除扫描 PDF 的灰色/米白底色，保持分辨率、页面几何与抗锯齿文字边缘（无损 Flate 写回），核心为单文件 Python 脚本（pypdf + Pillow + numpy）。
 - [zmz123612/dsh-plugin-book-deconstruct](https://github.com/zmz123612/dsh-plugin-book-deconstruct) — Host 插件：任意会话可用 /dsh-plugin-book-deconstruct 命令与 dsh-plugin-book-deconstruct 工具，输入书名与作者后讲透全书并给出一段深度思想。
 - [ZSX-114514/dsh-pptx-anim](https://github.com/ZSX-114514/dsh-pptx-anim) — 给已生成的 .pptx 批量写入 PowerPoint 进入动画与幻灯片切换——直接构造 python-pptx 未实现的 OOXML timing 树，并附带结构校验器。需本机 Python 3 且已安装 python-pptx（插件会自动探测 python / python3 / py）。
+- [zwh0714/dsh-resume-studio](https://github.com/zwh0714/dsh-resume-studio) — 简历工坊：一份 JSON 出 HTML / Word / PDF。三套预设可用主题 token（主色、字号、行高、分区样式）调整，不用手写 CSS；给定页数上限会自动收紧行距重排，并检查写作质量（数字覆盖、加粗密度、条目长度、时间格式）。Word 是母版、PDF 由它转出，两者分页一致；模块分条目 / 项目 / 列表 / 段落四种，标题可自定义，已有的 .doc/.docx/.odt 简历可先导入再重排。支持 A4 / Letter 与中英文。
 - [zx310610/dsh-plugin-thesis-format#dsh-plugin](https://github.com/zx310610/dsh-plugin-thesis-format/tree/main/packages/dsh-plugin) — 按 YAML 规范检查 .docx 和 .doc 毕业论文的格式，包括字体、行距、页边距、标题编号、图表题注和参考文献。内置蚌埠工商学院的一份规范，也可使用自定义规范。
 - [Zxy0902/dsh-notes-plugin](https://github.com/Zxy0902/dsh-notes-plugin) — 主面板内的笔记与目录阅读器：文件树与置顶、可关闭的标签页、Markdown 左编右渲与同步滚动、纯文本编辑、手动保存、拖拽移动文件。删除时移入系统回收站（macOS、Linux），系统回收站不可用时移入目录内的 dsh-notes-trash 目录；Windows 不提供删除入口。
 - [zz12hui/dsh-github-readme](https://github.com/zz12hui/dsh-github-readme) — 上传 GitHub 前优化仓库 README：扫描仓库事实、渲染首图与过程图（需 Pillow 与微软雅黑字体）、校验排版和编号，最后带重试提交推送。
@@ -8026,6 +8028,7 @@ dsh plugin --profile web add dshmarket
 - [linhut/gongwen-skill](https://github.com/linhut/gongwen-skill) — 中文公文全流程处理工具：GB/T 9704 格式检查、自动修复、内容修订（红色标注+删除线）、模板生成、Markdown 转公文、版头/版记/页码注入，覆盖通知/请示/报告/函/会议纪要等 24 类公文。
 - [linlin539/dsh-skill-writing-plans](https://github.com/linlin539/dsh-skill-writing-plans) — 添加 writing-plans 技能，在写代码前生成结构化实现计划文档，简单任务直接执行，复杂任务提供执行方式选择。
 - [linxichen/dsh-rigorquant](https://github.com/linxichen/dsh-rigorquant) — RigorQuant 预设与技能包：面向实证与计算数学（经济学、金融、组合）的无人值守隔离多智能体研究，内置四重实现前校验与 jacobian/Lean 升级通道。
+- [lion231226/dsh-skill-router](https://github.com/lion231226/dsh-skill-router) — DSH 技能路由器：检索被移出模型目录的长尾技能索引，按名加载任意技能正文（不受 invocation 策略限制），并用带哈希校验的账本归档/恢复技能、按需提升到项目级。
 - [lishuo4096/dsh-plugin-authoring](https://github.com/lishuo4096/dsh-plugin-authoring) — 给 agent 一套 DSH（Cordis）插件编写规范与 dsh 插件市场收录流程，从 bundle manifest、入口模块一直讲到提交 PR。
 - [LittleBlackTong/dsh-plugin-superpowers](https://github.com/LittleBlackTong/dsh-plugin-superpowers) — 将 obra/superpowers 方法论移植为 14 个原生 DSH 技能——头脑风暴、写计划、计划执行、subagent 驱动开发、TDD、系统化调试、并行派发、git worktree、代码评审、完成前验证、技能编写——经 DSH 技能注册表提供，脚本、参考资料与交叉引用原样保留（frontmatter 收进 manifest、前缀对齐 DSH 技能名）。要求 DSH session format v4（官方 DeepSeek Harness 0.1.7+）：/superpowers 斜杠命令使用 producer-owned source kind plugin:dsh-plugin-superpowers。
 - [liu-Daniel7/search-school-sci-skill](https://github.com/liu-Daniel7/search-school-sci-skill) — 统计某一所大学某个学院（二级单位）的科研产出：按作者单位串匹配学院的各种英文写法（并检测其他高校的同名院系），对只写到校名一级的论文用教师作者 ID 反查补全，再按期刊层级分类（中科院分区含 Top 标记、JCR 分区、CCF、经知网导出合并的中文核心），区分教师与学生一作，输出含看板页、可筛选论文清单、教师-方向矩阵和教师个人统计的工作簿。学生身份由单位与教师名单推定，未与学籍核对。需 Python 3.9+ 与 pandas、openpyxl（pip install -r requirements.txt）；题录走 OpenAlex 接口（按 IP 计的免费额度有限），中文期刊需人工从知网导出后合并。
