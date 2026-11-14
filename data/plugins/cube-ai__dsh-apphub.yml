@@ -1,7 +1,7 @@
-url: https://github.com/cube-ai/dsh-smart-home-simulator
-name: cube-ai/dsh-smart-home-simulator
-category: simulator
+url: https://github.com/cube-ai/dsh-apphub
+name: cube-ai/dsh-apphub
+category: dev
 description:
-  en: A draggable, resizable floating panel that simulates an air conditioner, light, curtain, and air purifier, with an agent-callable control tool.
-  zh: 在可拖动、可缩放的悬浮面板中演示空调、灯光、窗帘和空气净化器的状态，并允许大模型通过工具实时调节它们。
+  en: A multi-application aggregation DSH plugin. It currently includes applications such as Shennong Wenzhenon, Smart Home controller, Cloud Greenhouse, Coffee Workshop, Calculator, Snake, and more.
+  zh: 一个多应用聚合 DSH 插件。目前收录有神农问诊、智慧家庭、云上温室、咖啡工坊、计算器、贪吃蛇等应用。
   
