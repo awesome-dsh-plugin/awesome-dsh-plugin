@@ -1,0 +1,7 @@
+url: https://github.com/cube-ai/dsh-smart-home-simulator
+name: cube-ai/dsh-smart-home-simulator
+category: dev
+description:
+  en: A draggable, resizable floating panel that simulates an air conditioner, light, curtain, and air purifier, with an agent-callable control tool.
+  zh: 在可拖动、可缩放的悬浮面板中演示空调、灯光、窗帘和空气净化器的状态，并允许大模型通过工具实时调节它们。
+  
