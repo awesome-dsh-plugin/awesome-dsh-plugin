@@ -118,7 +118,7 @@ async function probe(url) {
     const pkg = await fetchJson(`https://raw.githubusercontent.com/${repo}/HEAD/${sub ? sub + '/' : ''}package.json`)
     const declaredName = typeof pkg.name === 'string' ? pkg.name : null
     if (declaredName === null) return { npm: null, version: null, checkedAt: today }
-    const name = publishedNpmName(repo, declaredName)
+    const name = publishedNpmName(repoPath, declaredName)
     const meta = await fetchJson(`https://registry.npmjs.org/${encodeURIComponent(name)}`)
     // Registry documents can retain repository metadata from the first
     // publication at the top level. Resolve the current `latest` manifest
