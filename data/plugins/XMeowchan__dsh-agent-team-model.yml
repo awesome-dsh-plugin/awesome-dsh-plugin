@@ -1,0 +1,7 @@
+url: https://github.com/XMeowchan/dsh-agent-team-model
+name: XMeowchan/dsh-agent-team-model
+category: model
+tarball: https://github.com/XMeowchan/dsh-agent-team-model/releases/latest/download/dsh-agent-team-model.tgz
+description:
+  en: Configure default and per-name provider, model, and reasoning effort for newly created Agent Teams teammates, with conversation-scoped live and restart-safe route views.
+  zh: 为新创建的 Agent Teams 队员配置默认或按名称指定的提供商、模型与推理强度，并按当前对话显示实时及重启后可恢复的路由视图。
