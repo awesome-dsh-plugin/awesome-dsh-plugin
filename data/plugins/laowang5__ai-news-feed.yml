@@ -4,3 +4,4 @@ category: ui
 description:
   en: AI news sidebar that scores RSS/Atom feeds on five axes, surfaces top items, and imports them into chat for follow-up.
   zh: AI 情报流侧边栏插件，支持 RSS/Atom 信源五轴量化打分、精选今日必看并一键导入对话追问。
+tarball: https://github.com/laowang5/ai-news-feed/releases/download/v1.0.0/ai-news-feed-1.0.0.tgz
