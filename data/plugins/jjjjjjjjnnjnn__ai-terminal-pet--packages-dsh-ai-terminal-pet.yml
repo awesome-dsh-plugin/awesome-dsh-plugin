@@ -2,7 +2,7 @@
 url: https://github.com/jjjjjjjjnnjnn/ai-terminal-pet/tree/main/packages/dsh-ai-terminal-pet
 name: jjjjjjjjnnjnn/ai-terminal-pet#dsh-ai-terminal-pet
 category: notify
-tarball: https://github.com/jjjjjjjjnnjnn/ai-terminal-pet/releases/download/dsh-plugin-v1.2.16/dsh-ai-terminal-pet-1.2.16.tgz
+tarball: https://github.com/jjjjjjjjnnjnn/ai-terminal-pet/releases/download/dsh-plugin-v1.2.17/dsh-ai-terminal-pet-1.2.17.tgz
 icon: https://raw.githubusercontent.com/jjjjjjjjnnjnn/ai-terminal-pet/main/packages/dsh-ai-terminal-pet/icon.png
 description:
   en: 'A floating always-on-top overlay for Windows that shows which of your terminals is waiting: it aggregates DeepSeek Harness, Claude Code, OpenCode and Antigravity session states (working, waiting for approval, failed, finished) over a named pipe, rings only on real events, and a click jumps to that terminal or copies its project path. Harness sessions appear on install; the other three need their own reporter from the repository, and approvals still happen in DSH.'
