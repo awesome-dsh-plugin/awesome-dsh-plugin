@@ -1,0 +1,6 @@
+url: https://github.com/a961282799-crypto/dsh-talent-tree
+name: a961282799-crypto/dsh-talent-tree
+category: ui
+description:
+  en: "A learning talent tree: give it a topic and the agent splits it into a prerequisite graph of knowledge points, each with a hook (the one formula, idea or question that makes it interesting), a plain-language summary and a symbol glossary; a point lights up bronze, silver or gold only after you explain it in your own words or answer a check question correctly. Adds a left-sidebar overview of every goal, a pannable and zoomable tree with learning routes and a recommended next point, a skip-ahead challenge, a due-review queue, light-up animations, KaTeX-rendered formulas and PNG export."
+  zh: "学习天赋树：说一个想学的目标，Agent 把它拆成带前置关系的知识点图，每个点配一句最能勾起兴趣的「钩子」、白话说明和符号表；只有你用自己的话讲清楚或答对检查题，节点才会点亮（铜 / 银 / 金）。左侧栏列出所有目标，树可拖动缩放，带学习路线、推荐的下一个点、跳级挑战、今日待复习、点亮动画、公式排版与 PNG 导出。"
