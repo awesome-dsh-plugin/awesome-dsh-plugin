@@ -1,0 +1,6 @@
+url: https://github.com/ruiyuanyisu/dsh-seed-of-memory
+name: ruiyuanyisu/dsh-seed-of-memory
+category: memory
+description:
+  en: Local-first memory for DSH — identity root, layered memories, beliefs, an emotion kernel and QQ chat continuity, all in one SQLite file.
+  zh: 本地优先的记忆插件——根身份、分层记忆、认知、情绪内核和 QQ 续聊，全都装在一个 SQLite 里。
