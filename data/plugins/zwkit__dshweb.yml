@@ -1,0 +1,7 @@
+url: https://github.com/zwkit/dshweb
+name: zwkit/dshweb
+category: remote
+description:
+  en: Opens the DeepSeek Harness desktop UI from a phone or tablet browser over the LAN with password and pairing-code login, an HTTPS listener, and PWA support.
+  zh: 通过局域网在手机或平板浏览器中打开 DeepSeek Harness 桌面界面，支持口令与配对码登录、HTTPS 监听与 PWA。
+icon: https://raw.githubusercontent.com/zwkit/dshweb/main/assets/pwa-icons/icon-192.png
