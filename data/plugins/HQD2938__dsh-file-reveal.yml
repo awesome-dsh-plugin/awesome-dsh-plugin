@@ -1,0 +1,7 @@
+url: https://github.com/HQD2938/dsh-file-reveal
+name: HQD2938/dsh-file-reveal
+category: ui
+description:
+  en: Click a file path in a DSH conversation to reveal it in the OS file manager; Alt+click opens it with the default app.
+  zh: 单击对话里的文件路径即可在系统文件管理器中定位；Alt+单击用默认应用打开。
+icon: https://raw.githubusercontent.com/HQD2938/dsh-file-reveal/main/assets/icon-180.png
