@@ -1,0 +1,6 @@
+url: https://github.com/SSRYLJRSS/dsh-token2biq
+name: SSRYLJRSS/dsh-token2biq
+category: workflow
+description:
+  en: Multi-agent orchestration controller for DSH — tiers, staged receipts, a token ledger and a run panel on top of the official Agent Teams.
+  zh: DSH 多代理编排控制器：在官方 Agent Teams 之上提供档位、分阶段回执、token 台账与运行面板。
