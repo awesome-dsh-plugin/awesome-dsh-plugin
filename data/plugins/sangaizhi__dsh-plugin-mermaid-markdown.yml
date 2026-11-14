@@ -1,0 +1,6 @@
+url: https://github.com/sangaizhi/dsh-plugin-mermaid-markdown
+name: sangaizhi/dsh-plugin-mermaid-markdown
+category: docs
+description:
+  en: 'Renders mermaid code blocks inside Markdown files as diagrams in the workspace file preview, with click-to-enlarge zoom.'
+  zh: '在工作区文件预览中把 Markdown 文件里的 mermaid 代码块渲染成图表，支持点击放大预览。'
