@@ -1,0 +1,7 @@
+url: https://github.com/Hankai233/dsh-mermaid-studio
+name: Hankai233/dsh-mermaid-studio
+category: ui
+description:
+  en: Renders mermaid and mmd code fences in DSH messages as diagram cards with zoom, pan, a full-screen viewer and SVG export, caching each render in memory and IndexedDB so the same diagram is not drawn twice.
+  zh: 把 DSH 消息里的 mermaid 与 mmd 围栏渲染成图表卡片，可缩放、平移、全屏查看并导出 SVG，渲染结果缓存在内存和 IndexedDB，同一张图不会重画。
+icon: https://raw.githubusercontent.com/Hankai233/dsh-mermaid-studio/main/assets/icons/icon-dark-1024.png
