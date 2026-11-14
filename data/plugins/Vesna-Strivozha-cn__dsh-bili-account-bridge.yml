@@ -1,0 +1,7 @@
+url: https://github.com/Vesna-Strivozha-cn/dsh-bili-account-bridge
+name: Vesna-Strivozha-cn/dsh-bili-account-bridge
+category: identity
+description:
+  en: Shares one Bilibili login between dsh-bili-whale and dsh-dafeiyu-life, scores each incoming message with a shared weighted lexicon to see which side it leans to, then lets per-side gates decide whether to act or stay silent, with a claim file so both never answer the same message.
+  zh: 让养鱼与大肥鱼共用一份 B站 登录态；每条消息先按共享词库定归属（偏养鱼归养鱼，其余归大肥鱼），再由两侧闸门决定动手还是静默，同一句只回一次。
+icon: https://raw.githubusercontent.com/Vesna-Strivozha-cn/dsh-bili-account-bridge/main/assets/icon-180.png
