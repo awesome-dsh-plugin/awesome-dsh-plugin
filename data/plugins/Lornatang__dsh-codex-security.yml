@@ -1,0 +1,5 @@
+url: https://github.com/Lornatang/dsh-codex-security
+name: Lornatang/dsh-codex-security
+category: security
+description:
+  en: Agent-native static security review workbench with scan artifacts, finding triage, and SARIF/JSON exports.
