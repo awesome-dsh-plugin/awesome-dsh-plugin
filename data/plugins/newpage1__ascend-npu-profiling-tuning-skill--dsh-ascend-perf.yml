@@ -1,7 +1,7 @@
 url: https://github.com/newpage1/ascend-npu-profiling-tuning-skill/tree/main/dsh-ascend-perf
 name: newpage1/ascend-npu-profiling-tuning-skill#dsh-ascend-perf
 category: dev
-tarball: https://github.com/newpage1/ascend-npu-profiling-tuning-skill/releases/download/v1.0.0/dsh-ascend-perf-1.0.0.tgz
+tarball: https://github.com/newpage1/ascend-npu-profiling-tuning-skill/releases/download/v1.1.0/dsh-ascend-perf-1.1.0.tgz
 description:
-  en: "Read-only Ascend NPU fleet monitor for DeepSeek Harness: environments are read from envs.json, npu-smi is collected locally or over SSH with one connection per environment, and the sidebar shows each environment's idle/partial/busy occupancy, running processes, per-card and per-chip details, five-minute background polling, manual refresh, and a field-by-field configuration modal. It never starts or stops services or containers and never writes to the remote host."
-  zh: "DeepSeek Harness 的昇腾 NPU 多环境占用看板：环境从 envs.json 读取，通过本机或 SSH 只读采集 npu-smi（每环境一条连接），在侧栏显示每个环境的空闲/部分/高负载占用、占用进程与逐卡逐 chip 详情，支持每 5 分钟静默采集、手动刷新与逐字段配置弹窗；不启停服务/容器，不写远端。"
+  en: "Ascend NPU fleet monitor plus controlled vLLM container deployment for DeepSeek Harness. Environments come from envs.json; npu-smi is collected locally or over SSH with one connection per environment. The sidebar shows idle/partial/busy occupancy, processes, and per-card/per-chip details, and lets you preview or start a vLLM container on selected idle NPU chips. Preview is read-only; real start requires deploy.allowRealExecution plus a confirmation token, only touches dsh-apf-svc-* containers, binds ports to 127.0.0.1, and never stops other users' containers."
+  zh: "DeepSeek Harness 的昇腾 NPU 多环境占用看板 + 受控 vLLM 容器服务：环境从 envs.json 读取，通过本机或 SSH 只读采集 npu-smi（每环境一条连接），侧栏显示空闲/部分/高负载、占用进程与逐卡逐 chip 详情；可在选定环境的空闲 NPU chip 上预览/启动 vLLM 容器。预览为只读，真实启动需 deploy.allowRealExecution + 确认令牌，只操作 dsh-apf-svc-* 自有容器，端口只绑 127.0.0.1，不停止他人容器。"
