@@ -1,6 +1,0 @@
-url: https://github.com/ABING1111/dsh-codex-model-effort-selector
-name: ABING1111/dsh-codex-model-effort-selector
-category: ui
-description:
-  en: Codex desktop-style model and reasoning-effort selector that replaces the compact model button above the composer with one trigger and a two-pane popover: a model list and a pixel-replica effort slider.
-  zh: Codex 桌面端风格的「模型 + 推理强度」选择器，把输入框上方的紧凑模型按钮换成单入口双面板弹层：模型列表与像素级复刻的推理强度滑杆。
