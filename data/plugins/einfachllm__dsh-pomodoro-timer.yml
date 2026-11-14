@@ -1,0 +1,6 @@
+url: https://github.com/einfachllm/dsh-pomodoro-timer
+name: einfachllm/dsh-pomodoro-timer
+category: ui
+description:
+  en: Pomodoro focus timer docked under the composer with long-break cycles, daily focus tracking, phase-change signals, and agent tools that read and control the timer.
+  zh: 停靠在输入框下方的番茄钟，支持长休息循环、每日专注统计、阶段切换提醒，以及供 Agent 读取和控制计时器的工具。
