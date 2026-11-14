@@ -1,0 +1,6 @@
+url: https://github.com/hanhan9999999999999999999/dsh-plugins/tree/main/plugins/dsh-prompt-inject
+name: hanhan9999999999999999999/dsh-plugins#dsh-prompt-inject
+category: tools
+description:
+  en: Injects the contents of prompt-inject.md as an extra system prompt section on every turn, so machine wide rules survive a safe-mode start where third-party injectors are absent. Reads a single local markdown file and changes nothing else.
+  zh: 把 prompt-inject.md 的内容作为系统提示词附加段每轮注入，让全机规则在安全模式启动、第三方注入器不在场时依然生效。只读一个本地 markdown 文件，不改动别的东西。
