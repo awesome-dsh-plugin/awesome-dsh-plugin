@@ -1,0 +1,6 @@
+url: https://github.com/reoanrudo/dsh-usage-panel
+name: reoanrudo/dsh-usage-panel
+category: usage
+description:
+  en: 'Usage panel for DeepSeek Harness: GLM, opencode go, Codex, Claude, DeepSeek and Command Code subscriptions in one popup, with quota-reset buttons and a peak-hour clock.'
+icon: https://raw.githubusercontent.com/reoanrudo/dsh-usage-panel/main/assets/icon-180.png
