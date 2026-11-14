@@ -1,0 +1,6 @@
+url: https://github.com/luckyxiang6688/dsh-superagent-wechat-source
+name: luckyxiang6688/dsh-superagent-wechat-source
+category: identity
+description:
+  en: "Personal WeChat DMs as a Super-agent Source over the iLink ClawBot channel: bind a WeChat bot by scanning a QR code in the plugin's settings page, then every DM is adjudicated by the intake rules — accepted ones become tickets and post an acknowledgement plus the final result back into the same chat, the rest are recorded as events without a ticket. Text only, one-to-one chats."
+  zh: "把个人微信私聊接成 Super-agent 的来源（iLink / 微信ClawBot 通道）：在插件设置页扫码绑定机器人后，每条私聊都交给接单规则裁定，通过的建单并回帖「接单确认 + 最终结果」，其余只记事件不建单。仅纯文本、仅一对一私聊。"
