@@ -1,0 +1,6 @@
+url: https://github.com/royrao2007/dsh-montagex
+name: royrao2007/dsh-montagex
+category: workflow
+description:
+  en: 'Full-pipeline video production harness: brief triage, shot planning, storyboard, image/video/audio generation, an infinite shot canvas, local ffmpeg editing and deterministic QC across 161 tools, plus roles, shot claiming and signing gates for team review.'
+  zh: '导演全流程视频制作：需求分诊、镜头排期、分镜、图像/视频/音频生成、无限分镜画布、本地 ffmpeg 剪辑与确定性质检，共 161 个工具；另含角色权限、镜头认领与签核闸，支持团队协作评审。'
