@@ -1,0 +1,10 @@
+url: https://github.com/lordraiden/dsh-mistral-pro
+name: lordraiden/dsh-mistral-pro
+category: model
+description:
+  en: 'Maintained fork of dsh-mistral-pro: Mistral subscription (Vibe Pro/Team) model route, multi-account failover, prompt-cache tuning, and a composer usage panel.'
+  zh: 'dsh-mistral-pro 的维护分支：接入 Mistral 订阅（Vibe Pro/Team），提供模型路由、多账号故障切换、提示缓存调优和输入框额度面板。'
+icon: https://raw.githubusercontent.com/lordraiden/dsh-mistral-pro/main/assets/icon-180.png
+# Only needed if the package is NOT published to npm. Attach the tarball to the
+# v0.4.0 release first, then uncomment:
+# tarball: https://github.com/lordraiden/dsh-mistral-pro/releases/download/v0.4.0/dsh-mistral-pro-0.4.0.tgz
