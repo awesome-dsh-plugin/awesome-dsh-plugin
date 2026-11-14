@@ -2,6 +2,6 @@ url: https://github.com/songliu1992-glitch/dsh-fenggu-time
 name: songliu1992-glitch/dsh-fenggu-time
 category: ui
 description:
-  en: Titlebar badge that shows one of two labels during Beijing office hours, with a statutory-holiday table refreshed from Settings.
-  zh: 标题栏徽章，按北京时间办公时段在两种文字间切换；法定节假日表可在设置里检查更新。
+  en: Titlebar badge showing the current DeepSeek API pricing period — peak hours in yellow, off-peak hours in green (off-peak rates are half of the peak rates) — with a refreshable table of Chinese public holidays.
+  zh: 标题栏徽章，显示 DeepSeek API 当前的高峰/空闲计费时段：高峰黄色、空闲绿色（空闲价格为高峰的一半），并内置可更新的中国法定节假日表。
 icon: https://raw.githubusercontent.com/songliu1992-glitch/dsh-fenggu-time/main/assets/icon-180.png
