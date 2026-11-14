@@ -1,0 +1,6 @@
+url: https://github.com/Study0915/dsh-scholar-board
+name: Study0915/dsh-scholar-board
+category: ui
+description:
+  en: 'Academic workbench for the dsh board: ten record cards (meeting notes, action items, papers, literature reading, research logs, thesis, industry projects, courses and errands), an arXiv feed, a research overview and shared record storage.'
+  zh: '面向科研的 dsh 看板：十张记录卡（组会记录、行动项、小论文、文献阅读、研究记录、毕业论文、横向项目、课程、其他事务、科研总览），外加 arXiv 文献订阅与共享记录存储。'
