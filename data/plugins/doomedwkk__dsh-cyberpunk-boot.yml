@@ -2,5 +2,5 @@ url: https://github.com/doomedwkk/dsh-cyberpunk-boot
 name: doomedwkk/dsh-cyberpunk-boot
 category: ui
 description:
-  en: A Cyberpunk-style boot sequence for the DSH web client and its desktop build. The first load of a window shows a full-window stencil DSH wordmark with a six-row boot log and a stuttering progress bar, then a sliced glitch-out onto the interface; the sound is a car radio synthesized in the page (dial sweep, station lock, a 96 BPM arpeggio bed) with no audio file and no network request. Any key or a click skips it, Ctrl+Alt+B replays it and Ctrl+Alt+M mutes the sound.
-  zh: 赛博朋克风格的 DSH 启动动画，Web 客户端与其桌面版都能用。窗口首次加载时铺满整窗显示模板字 DSH 标志、六行启动日志和抖动的进度条，最后以分层故障效果过渡露出界面；声音是页面内合成的车载电台（扫台、锁定电台、96 BPM 琶音铺底），不含音频文件、不联网。任意键或点击可跳过，Ctrl+Alt+B 重播，Ctrl+Alt+M 静音。
+  en: A Cyberpunk-style boot sequence for the DSH web client and its desktop build. The first load of a window shows a full-window stencil DSH wordmark with a six-row boot log and a stuttering progress bar, then a sliced glitch-out onto the interface; the soundtrack is a slow main-menu ambience synthesized in the page (sub impact, low D drone, air swell, opening D-minor pad, a sparse four-note motif) with no audio file and no network request. Any key or a click skips it, Ctrl+Alt+B replays it and Ctrl+Alt+M mutes the sound.
+  zh: 赛博朋克风格的 DSH 启动动画，Web 客户端与其桌面版都能用。窗口首次加载时铺满整窗显示模板字 DSH 标志、六行启动日志和抖动的进度条，最后以分层故障效果过渡露出界面；声音是页面内合成的主菜单氛围（低频冲击、D 持续音、空气层、缓缓打开的和声铺底、稀疏四音动机），不含音频文件、不联网。任意键或点击可跳过，Ctrl+Alt+B 重播，Ctrl+Alt+M 静音。
