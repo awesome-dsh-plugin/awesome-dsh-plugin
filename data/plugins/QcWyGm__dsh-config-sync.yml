@@ -2,9 +2,5 @@ url: https://github.com/QcWyGm/dsh-config-sync
 name: QcWyGm/dsh-config-sync
 category: git
 description:
-  en: 'Keeps the DSH setup on two machines in sync: settings, plugins, skills, workspaces and session records all travel through one Git repo, so a new machine needs no manual reconfiguration.
-
-Every sync shows the diff first - you see it before you commit to it. Workspaces and sessions follow the machine, so the session list works right after a sync. Configs with local paths become placeholders, confirmed item by item at sync time. A blocked sync backs up both sides and lets you pick per file. Each sync snapshots first, and any snapshot restores later. Any Git host, SSH or HTTPS. The real sync runs after the client exits - the app never does the heavy lifting. Windows only.'
-  zh: '让两台机器的 DSH 保持同步：设置、插件、skills、工作区与会话记录都经一个 Git 仓库中转，换机后不用手工重配。
-
-同步前先给差异，看得见才敢点；工作区与会话跟着机器走，同步完会话列表开箱可用；带本机路径的配置写成占位符，同步时逐条确认落地地址；被本地改动挡住时两侧都备份，逐项选保留哪边；每次同步前自动快照，随时还原。任意 Git 托管，SSH 与 HTTPS 都行。真正的同步在客户端退出后执行，应用内不跑重活。仅限 Windows。'
+  en: 'Keeps the DSH setup on two machines in sync: settings, plugins, skills, workspaces and session records all travel through one Git repo, so a new machine needs no manual reconfiguration. Every sync shows the diff first - you see it before you commit to it. Workspaces and sessions follow the machine, so the session list works right after a sync. Configs with local paths become placeholders, confirmed item by item at sync time. A blocked sync backs up both sides and lets you pick per file. Each sync snapshots first, and any snapshot restores later. Any Git host, SSH or HTTPS. The real sync runs after the client exits - the app never does the heavy lifting. Windows only.'
+  zh: '让两台机器的 DSH 保持同步：设置、插件、skills、工作区与会话记录都经一个 Git 仓库中转，换机后不用手工重配。同步前先给差异，看得见才敢点；工作区与会话跟着机器走，同步完会话列表开箱可用；带本机路径的配置写成占位符，同步时逐条确认落地地址；被本地改动挡住时两侧都备份，逐项选保留哪边；每次同步前自动快照，随时还原。任意 Git 托管，SSH 与 HTTPS 都行。真正的同步在客户端退出后执行，应用内不跑重活。仅限 Windows。'
