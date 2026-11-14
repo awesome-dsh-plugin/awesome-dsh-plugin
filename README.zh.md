@@ -859,6 +859,7 @@ dsh plugin --profile web add dshmarket
 - [hanbernate/dsh-save-button](https://github.com/hanbernate/dsh-save-button) — 在 DSH Web GUI 交付卡片上增加下载按钮，present 交付的文件可直接从浏览器下载。
 - [HandsYe/dsh-input-history](https://github.com/HandsYe/dsh-input-history) — DSH 对话框的持久输入历史：↑/↓ 回溯已发送内容（重启不丢），输入框有内容时按 ↑ 仅在前缀匹配项中翻找，清空未发送的草稿不会入历史。
 - [HandsYe/dsh-lock-screen](https://github.com/HandsYe/dsh-lock-screen) — 一键锁屏：侧栏按钮用当前 Windows 桌面壁纸铺满并遮住整个界面，连按两次 Esc 解锁。
+- [hanfang5057-byte/dsh-plugin-quote-comment](https://github.com/hanfang5057-byte/dsh-plugin-quote-comment) — 引用选区时先索要一条评论，再把引用与评论作为一个整体插入输入框。
 - [Hanmiao33/dsh-bubble-explain](https://github.com/Hanmiao33/dsh-bubble-explain) — 对话中框选任意文字后点击「解释」按钮，弹出 Markdown 实时流式解释气泡，支持递归追问。
 - [hanrr92/dsh-code-quote](https://github.com/hanrr92/dsh-code-quote) — 输入框代码引用折叠：粘贴「路径:行号 + 代码」时自动折叠为「文件图标+文件名:行号」引用芯片（Ctrl+Z 可还原），发送时由 agent/pre-step 钩子将完整代码快照作为独立上下文消息注入给模型。0.5 起支持侧边栏「添加到对话框」大段选区（仅插路径行时按会话工作目录读磁盘取代码），并在捕获阶段抢权接管 Ctrl+V 粘贴。
 - [HansHuang2683/dsh-quote-annotate](https://github.com/HansHuang2683/dsh-quote-annotate) — 在对话里划选任意一段文字即可就地批注：原文高亮并带编号角标，发送时把原文、出处（谁说的、第几轮）和你的批注一起折进消息，模型能对上每一句指代。
@@ -1875,6 +1876,7 @@ dsh plugin --profile web add dshmarket
 - [tommy00748-tech/dsh-adhd-noise](https://github.com/tommy00748-tech/dsh-adhd-noise) — DSH 输入框下方的 ADHD 友好专注声景：白/粉/棕噪与雨声、风扇五种程序化合成音色，实时波形声球、15–90 分钟定时淡出与液态玻璃浮层；无音频素材、无网络请求。
 - [tomowang/dsh-tui](https://github.com/tomowang/dsh-tui) — 基于 pi-tui 的 DeepSeek Harness 全屏终端客户端：会话回放/续接、流式响应、可折叠工具卡片、终端内审批与提问、模型/预设/权限/计划/目标管理、Shell 模式，以及轨迹（trajectory）事件台账。
 - [tonebean/dsh-inline-visualizer](https://github.com/tonebean/dsh-inline-visualizer) — 对话内联可视化：模型先按需加载设计契约，再把 SVG 或沙箱 HTML 卡片就地渲染在对话里，支持深浅色令牌与源码/下载切换。
+- [tonglingming-hue/dsh-novel-studio](https://github.com/tonglingming-hue/dsh-novel-studio) — 卡片式小说写作工作区：实时字数统计、章节管理、磨砂玻璃面板，选中一段即可让 AI 润色、续写或给出故事方向。
 - [tonyischen/ds_ask_graph](https://github.com/tonyischen/ds_ask_graph) — 把 DSH 会话历史整理成可下钻的专题/问题图谱，支持语义整理，并可导出 HTML、SVG 和 Bluepin vault。
 - [TonyKingWJX/dsh-thinking-bar](https://github.com/TonyKingWJX/dsh-thinking-bar) — 把输入框右下角的模型 / 推理等级选择器换成两级菜单，并提供六种滑杆视觉。
 - [Totoro-qaq/dsh-jot](https://github.com/Totoro-qaq/dsh-jot) — 提供可直接编辑的笔记空间，支持文件夹、全文搜索、富文本、核对清单、可调整列宽的表格、附件、导出和可选的 Agent 协作。
@@ -5634,6 +5636,7 @@ dsh plugin --profile web add dshmarket
 - [Deanyu148/dsh-import-newapi](https://github.com/Deanyu148/dsh-import-newapi) — 一键从new api站点导入复制的连接信息。
 - [DeepTrial/dsh-bash-rtk](https://github.com/DeepTrial/dsh-bash-rtk) — 将符合条件的 shell 命令路由给 rtk，压缩工具输出并节省 token。
 - [Delthin/dsh-plugins#tool-wrap](https://github.com/Delthin/dsh-plugins/tree/main/packages/tool-wrap) — 在 PTC 会话中把工具定义精简为插件级简介与工具名，模型以精确插件 ID 调用 unwrap 时返回当前可见的完整工具包，不改变作用域与调用权限。
+- [dengwei84/dsh-workspace-tidy](https://github.com/dengwei84/dsh-workspace-tidy) — 工作区自动整理插件：每轮结束时把根目录的临时文件、渲染产物和生成脚本收进隐藏的 .dsh 目录，不拦截、不删除，让工作区保持整洁。
 - [dff652/deepseek-harness-community-plugins#dsh-agent-mail](https://github.com/dff652/deepseek-harness-community-plugins/tree/main/packages/dsh-agent-mail) — DeepSeek Harness 中的 AI 协作邮箱，让 AI 工具互发消息、交接任务并查看收发回执。一个包包含 MCP 集成与邮箱界面；0.2.2 需要 DSH 0.2.0-rc.2，需要独立安装 Agent Mail 1.0.0-alpha.7；不提供自动唤醒模型或持续在线状态。
 - [dff652/deepseek-harness-community-plugins#dsh-ai-asset-hub](https://github.com/dff652/deepseek-harness-community-plugins/tree/main/packages/dsh-ai-asset-hub) — 将 DeepSeek Harness 连接到部署方管理的 AI Asset Hub MCP 服务，并提供八个经过审查的只读资产工具。
 - [dfycaly98931680/dsh-trajectory-governance](https://github.com/dfycaly98931680/dsh-trajectory-governance) — Agent 轨迹治理与异常诊断：把平铺会话日志重建为多分支轨迹树，识别循环死锁/无效重试/目标漂移，带成本归因的告警与一键中断/断点分支（官方 API），独立 GUI Tab。
@@ -6525,6 +6528,7 @@ dsh plugin --profile web add dshmarket
 - [STARDUSTLC666/dsh-sql](https://github.com/STARDUSTLC666/dsh-sql) — 数据库工具：sql_list/query/exec/schema/stats/health，SQLite/MySQL/PostgreSQL 三引擎，词法级只读保护、行数钳制、CSV/JSON 查询输出与写审批门。
 - [stitchmaps/dsh-db-connect](https://github.com/stitchmaps/dsh-db-connect) — 管理 Oracle、PostgreSQL、MySQL、MariaDB、SQL Server 与 SQLite 连接，提供驱动诊断、字段默认值/注释和需显式授权的智能体元数据浏览；需另建 Python 3 环境并安装对应驱动（SQLite 仅需标准库）。
 - [StvLi/dsh-ros2](https://github.com/StvLi/dsh-ros2) — 面向 DeepSeek Harness 的 ROS2 调试工具集与机器人状态视觉分析：节点/话题/服务/动作/接口/TF 枚举、全图拓扑 JSON、依赖检查，审批门控的构建与自定义消息骨架生成，GUI 截图与多模态视觉观察，以及无头 RViz2 离屏渲染（低模 + 直读像素 + GPU 直通，动作渲染 30Hz）与并行 VLM 实时分析。
+- [subeichen1/dsh-mcp-switch](https://github.com/subeichen1/dsh-mcp-switch) — DSH 的 MCP 开关面板：可以按服务器整体开关，也可以只隐藏某个工具，还能看到每个服务器的工具定义占用了多少上下文 token。
 - [SuCriss/dsh-leekbox](https://github.com/SuCriss/dsh-leekbox) — 韭菜盒子：A股看盘助手——实时行情与大盘指数、全市场搜索、同花顺式 K 线详情弹窗（日/周/月/5分/30分，含 F10 财务摘要）、股票/ETF/可转债/LOF 榜单、带持仓盈亏与价格预警的自选股、13 项技术信号选股与 7 个预设策略交叉、涨停情绪温度计、龙虎榜、三源 7×24 聚合快讯、AI 个股分析。
 - [sumingwang233/dsh-question-bridge](https://github.com/sumingwang233/dsh-question-bridge) — 让 DSH agent 提问而不阻塞回合：ask_interactive_question 工具立刻返回待答批次号，答案稍后以普通用户消息送回会话，待答批次显示在浏览器内的待答面板，可选系统通知。
 - [summersummer-liu/dsh-su](https://github.com/summersummer-liu/dsh-su) — SketchUp Pro 2023 桥接插件：让 Agent 检查实时模型、执行 Ruby 任务脚本、保存 .skp 并截取视口 PNG。
