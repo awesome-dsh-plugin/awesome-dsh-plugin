@@ -1,7 +1,7 @@
-url: https://github.com/crease123/deepseek-voice-conversation
-name: crease123/deepseek-voice-conversation
+url: https://github.com/crease123/voice-call
+name: crease123/voice-call
 category: voice
-tarball: https://github.com/crease123/deepseek-voice-conversation/releases/download/v0.3.1/voice-call-0.3.1.tgz
+tarball: https://github.com/crease123/voice-call/releases/download/v0.3.2/voice-call-0.3.2.tgz
 description:
   en: "Voice call for DeepSeek Harness: continuous microphone conversations with silence detection, streamed speech playback, interruption, five-bar microphone feedback, and editable call instructions; ASR and TTS independently select DeepSeek or Doubao, with user-owned credentials configured in settings."
   zh: "语音通话：在 DeepSeek Harness 中连续语音交流，支持自动断句、流式播报、打断、五段声条反馈与可编辑通话提示词；识别和合成可分别选择 DeepSeek 或豆包，用户在设置中配置自己的凭据。"
