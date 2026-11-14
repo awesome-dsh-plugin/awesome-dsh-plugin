@@ -1,0 +1,6 @@
+url: https://github.com/hanhan9999999999999999999/remote-connect-dsh/tree/main/plugins/dsh-remote-connect
+name: hanhan9999999999999999999/remote-connect-dsh#dsh-remote-connect
+category: remote
+description:
+  en: "Drive DSH on your computer from a phone browser (scan a code), and pair two computers to move plugins, skills, rules, config and sessions across in one click."
+  zh: "手机扫码即可在浏览器里操作电脑上的 DSH；两台电脑配对后能把插件、技能、规则、配置与会话一键搬过去。"
