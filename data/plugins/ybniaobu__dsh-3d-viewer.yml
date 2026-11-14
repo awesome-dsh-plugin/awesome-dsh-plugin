@@ -2,6 +2,6 @@ url: https://github.com/ybniaobu/dsh-3d-viewer
 name: ybniaobu/dsh-3d-viewer
 category: ui
 description:
-  en: 'Preview 3D models and textures from the session workspace in DSH''s right sidebar, with FBX, OBJ, glTF/GLB, DAE, and STL models plus PNG, JPEG, TGA, EXR, and HDR textures, embedded animation clips, and eight DSH languages.'
-  zh: '在 DSH 右侧边栏预览会话工作区中的 3D 模型和纹理，支持 FBX、OBJ、glTF/GLB、DAE、STL 模型和 PNG、JPEG、TGA、EXR、HDR 纹理，可播放内嵌动画片段并跟随 DSH 的八种界面语言。'
+  en: 'Preview 3D models and textures from the session workspace in DSH''s right sidebar. Supported formats include FBX, OBJ, glTF, GLB, DAE, and STL models, plus PNG, JPEG, TGA, EXR, and HDR textures.'
+  zh: '在 DSH 右侧边栏预览会话工作区中的 3D 模型和纹理。支持 FBX、OBJ、glTF、GLB、DAE、STL 模型，以及 PNG、JPEG、TGA、EXR、HDR 纹理。'
 icon: https://raw.githubusercontent.com/ybniaobu/dsh-3d-viewer/main/assets/icon-180.png
