@@ -508,6 +508,7 @@ dsh plugin --profile web add dshmarket
 - [ChenYichener/dsh-nce](https://github.com/ChenYichener/dsh-nce) — 新概念英语第一册学习面板：144 课在一页内读完课文、带音标的词汇、语法和配套视频，配 Anki 式间隔重复、错题本，以及由你自己的模型批改的可填写练习卷。
 - [ChenYiming-aaa/dsh-ui-ux-pro-max](https://github.com/ChenYiming-aaa/dsh-ui-ux-pro-max) — 为 DeepSeek Harness 提供离线可用的 UI/UX 设计智能库：内置 84 种设计风格、192 个配色、74 组字体、99 条 UX 规范、25 种图表与 22 个技术栈，提供 design_recommend / design_review / design_search 三个工具，中文优先、零运行依赖。
 - [ChiffonOwO/dsh-diff-review](https://github.com/ChiffonOwO/dsh-diff-review) — 本轮改动审查：输入框上方的气泡统计本回合改动文件数与行数，悬停时向上浮出文件清单；右侧边栏按标签页展示逐文件语法高亮 diff，并支持一键还原。
+- [ChimeSky/dsh-a2ui](https://github.com/ChimeSky/dsh-a2ui) — 在 DSH 对话内渲染 Google A2UI 1.0 界面（卡片、表格、图表、表单、滑块与函数图像）；本地交互不产生模型调用，按钮与表单把一次动作回传给 Agent。
 - [china-wkz/dsh-window-state](https://github.com/china-wkz/dsh-window-state) — 在 Windows 上记住 DSH 桌面窗口的位置、尺寸与最大化状态，下次启动时自动恢复。
 - [ChineseRyan/dsh-plugin-workspace-archive](https://github.com/ChineseRyan/dsh-plugin-workspace-archive) — 在工作区行菜单里加一项「归档工作区」：对该工作区下每个会话调用官方归档命令，当前正在查看的那条保持打开；组内有会话仍在运行时整批拒绝。官方会隐藏已归档的会话，却把清空后的工作区行留在侧栏——本插件把这一行也一并收起，并从底部面板按 $DSH_HOME/storages 里带跨进程锁写入的账本整组恢复。数量角标可设为常驻、仅新归档时、或隐藏。
 - [CHNAQW/dsh-app-row-brand](https://github.com/CHNAQW/dsh-app-row-brand) — 在 Windows 桌面端窗口标题栏显示自定义文字与图片，支持多条目轮播、每条独立字体/颜色/对齐/流光，并可在设置里编辑；非 Windows 桌面端不渲染。
@@ -736,6 +737,7 @@ dsh plugin --profile web add dshmarket
 - [ferrisching/dsh-prompt-predict](https://github.com/ferrisching/dsh-prompt-predict) — 助手回复结束后预测用户的下一句话，以灰色 ghost text 浮在输入框里；Tab 采纳、↓ 生成下一条、↑ 回到上一条、Esc 忽略。每次助手回复后会额外调用一次会话所用的模型，带上最近的用户与助手文本。
 - [fewoot/dsh-whale-particles](https://github.com/fewoot/dsh-whale-particles) — 给 DSH Web 加一层点阵背景:点阵可组成鲸鱼剪影,或导入透明 PNG 按 alpha 取主体;每颗粒子各自持有低频外力,手动模式下跟随光标扰动,自动屏保模式则用 360° 任意方向的扫波与全屏呼吸带动整幅图案;鼠标/自动与鲸鱼/照片在参数面板里切换,入口在 设置 → 插件。
 - [FFFFFFcn/dsh-intent-translator](https://github.com/FFFFFFcn/dsh-intent-translator) — 在输入框工具行增加「译」按钮：把口语草稿改写成结构清晰、术语准确的专业提示词，并把其中若干口语表达对照成专业术语、各附一句解释；「只查术语」模式只返回专业说法，不改写草稿。
+- [Fictional-Historians/dsh-villager-widget](https://github.com/Fictional-Historians/dsh-villager-widget) — 小鲸鱼记账挂件的社区分支：村民外观与音效由插件启动时从你本机的 Minecraft Java 版客户端现场生成（仓库不附带任何游戏素材）——绿衣村民与沼泽图书管理员两套外观，随 DeepSeek 峰谷价自动切换；点击角色会按「打招呼 → 受击 → 阵亡」六下一循环播放原版村民音效（各高 1Hz），并按 Minecraft 生物受击的方式整体泛红。需要本机安装 Minecraft Java 版，没装则不含村民外观与音效，其余功能与上游一致。
 - [FideFeiPlane/dsh-auto-maximize](https://github.com/FideFeiPlane/dsh-auto-maximize) — DSH 桌面版启动时自动最大化主窗口，等价于手动点一次最大化按钮。跨平台（Windows/macOS/Linux），尽力而为，host-only 插件。
 - [fightingFirefox/dsh-web-terminal](https://github.com/fightingFirefox/dsh-web-terminal) — DSH 网页版的 Claude 风格终端面板：agent 的 shell 命令跑在常驻真终端里（真提示符、真回显、真退出码），右侧栏自动弹出并按会话隔离；可选 live_terminal_* 工具用于读取、搜索与截屏。本项目是 Lancang-hzau/dsh-live-terminal（MIT）的衍生版，沿用同一套 live_terminal_* 工具与右侧栏面板，不能与上游插件装在同一 profile。
 - [Finalbingo/dsh-local-board](https://github.com/Finalbingo/dsh-local-board) — 本地优先的待办看板：左侧导航里的 Todo/Doing/Done 三列，按项目组织，所有数据都在你首次使用时自己选的文件夹里的一个 Markdown 文件中。卡片支持精确到分钟的截止时间、颜色标记、私密打码（默认遮罩，点击才显示）、备注与项目角色，可在列与项目之间拖拽；agent 另有 kanban 工具，可读写全部卡片（含已打码的）。macOS 上会安装三个 launchd 定时任务，由 /usr/bin/python3 运行并发系统通知（每天 09:00 摘要、每 30 分钟检查 2 小时内到期的卡片、每周一回顾），可在面板「自动化」标签里改时间或停用。
@@ -1314,6 +1316,7 @@ dsh plugin --profile web add dshmarket
 - [maqian1632/dsh-tray-restart](https://github.com/maqian1632/dsh-tray-restart) — 在 DSH 桌面端的 Windows 系统托盘菜单中只增加一个“重启 DeepSeek Harness”项，做法是原位修改已安装的 app.asar 并在桌面端每次更新后重打补丁；需要 DSH 安装目录可写，不添加其他托盘操作。
 - [MarchLiu/dsh-rich-editor](https://github.com/MarchLiu/dsh-rich-editor) — 为输入区提供富 Markdown 笔记本：工具行开关加 CodeMirror 编辑卡片，支持 Codex 风格列表编辑，经会话服务提交。
 - [MaRi23333/dsh-agent-instructions-editor](https://github.com/MaRi23333/dsh-agent-instructions-editor) — 在 DeepSeek Harness 设置页编辑全局 AGENTS.md 和项目 AGENTS.md / CLAUDE.md 个性化指令，提供项目指令链浏览、字节预算显示与保存冲突处理。
+- [markmuteki/dsh-session-prompt-optimizer](https://github.com/markmuteki/dsh-session-prompt-optimizer) — 在输入框里加一个按钮，借助当前会话的一小段上下文把草稿改写成更清楚的提示词（Shift 改成结构化任务书，Alt 压缩），结果先并排显示在草稿旁，确认后才替换。
 - [MarkTina/dsh-activity-heat](https://github.com/MarkTina/dsh-activity-heat) — 按距最后一次活动的时间给会话与工作区打 0–100% 热度分，并在侧边栏图标、会话标题前的小热度圆点、会话悬浮卡片和可筛选的会话/工作区面板中呈现；工作区卡片还汇总该工作区的轮次、步数、Token 与会话时长。
 - [Martlet-Tech/dsh-open-folder-fix](https://github.com/Martlet-Tech/dsh-open-folder-fix) — 修正 Windows 上「打开工作目录」的行为。官方调用 `explorer.exe "<file:// URI>"`，在某些主机上会报告成功却不弹窗口——因为成功判据是退出码，分不出「窗口开了」和「什么都没发生」。本插件把该操作改走 `explorer.exe /e,<目录>`，稳定新开窗口；菜单里其它应用仍走官方路径。
 - [MarushiruDonato/dsh-rgb](https://github.com/MarushiruDonato/dsh-rgb) — 为 DeepSeek Harness 提供 RGB 动效：消息输入框光环、侧边栏光条、活动会话指示器与品牌 Logo 矢量发光。
@@ -4036,6 +4039,7 @@ dsh plugin --profile web add dshmarket
 - [1010231693/dsh-prompt-bar](https://github.com/1010231693/dsh-prompt-bar) — 把当前会话的第一条提问常驻在对话区上方，滚动也不消失：一键复制，面板列出本会话发过的全部提问（点某一行直接跳到那条消息，够不着会自动往前翻页），另有十套外观可在面板里即选即换（含四套亮色）。
 - [111222cjyq/dsh-curate](https://github.com/111222cjyq/dsh-curate) — 面向 DSH 会话的人工上下文整理工作台：可为整轮或单条消息标记「重要（原文保留）／一般／次要」，不调用模型即可改写用户、助手、工具结果与注入上下文消息，再按标记区间用模型生成的摘要压缩，或调用官方 /compact（范围由官方压缩器决定）；每次写入前都会生成一份本地 JSON 备份。
 - [123dbl/dsh-side-session](https://github.com/123dbl/dsh-side-session) — 主会话进行中也能一键新开独立的可续聊旁会话：从输入框 ＋ 命令菜单选 side-chat 即开即用，主会话不受影响。
+- [1334104926/dsh-row-multiselect](https://github.com/1334104926/dsh-row-multiselect) — 侧栏会话多选，一次归档一批；走的是行内「归档」同一条接口。
 - [1420079678-ctrl/agent-body#dsh-zero-residence](https://github.com/1420079678-ctrl/agent-body/tree/main/workspace/plugins/dsh-zero-residence) — 零驻留上下文引擎：把体积大的工具输出从活跃上下文驱逐到可查询存储，只留下确定性指针，于是每轮的提示词 token 不再随对话长度增长。被遮蔽的内容可随时从会话日志逐字重建，按工具调用 id 或会话 seq 定位。
 - [1Lany2a/dsh-domain-role#dsh-domain-bridge](https://github.com/1Lany2a/dsh-domain-role/tree/main/plugins/dsh-domain-bridge) — 长周期 agent 会话的域身份层——声明优先的域寻址、会话工厂、四级暂停与模型分派，用于协调多个顶层会话。
 - [2026heshao/dsh-forget-session](https://github.com/2026heshao/dsh-forget-session) — 在会话行菜单加入「遗忘会话」（菜单内二次点击确认），把会话从侧栏与磁盘彻底移除：先停掉正在运行的工作，经官方通道解除工作区、归档与置顶记录，删除日志目录与投影缓存条目，并由复活守卫在一个窗口内补删迟到写入或句柄残留重建的文件；灵枢记忆、附件与其他会话不受影响。
