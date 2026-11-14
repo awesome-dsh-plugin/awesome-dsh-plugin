@@ -1,0 +1,7 @@
+url: https://github.com/person-clouds/dsh-context-guard
+name: person-clouds/dsh-context-guard
+category: tools
+description:
+  en: 'Keep DSH tool output within a context budget: archive full output to disk, deduplicate repeated results, show only bounded diffs, ask before risky shell commands, and provide read-only inspection scripts.'
+  zh: '控制 DSH 工具输出上下文预算：完整输出落盘、重复结果去重、只返回有界增量摘要、风险命令执行前确认，并提供只读固定调查脚本。'
+tarball: https://github.com/person-clouds/dsh-context-guard/releases/latest/download/dsh-context-guard.tgz
