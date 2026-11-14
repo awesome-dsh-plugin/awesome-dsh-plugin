@@ -1,0 +1,6 @@
+url: https://github.com/langyan1022/dsh-supreme-command
+name: langyan1022/dsh-supreme-command
+category: theme
+description:
+  en: 'Startup screen and matching UI theme for DeepSeek Harness. The boot sequence plays a HUD title, progress meter and status log, then scans and flips an ID badge (front: lab mark, ID band and barcode; back: name, role and code), and ends on an authorization banner. The skin repoints 125 --dsw-* tokens, adds a faint UEG watermark and agency marks, and exposes palette, texture, copy, voice and badge fields in one settings section.'
+  zh: 'DeepSeek Harness 的启动屏与同风格界面主题。启动序列依次播放 HUD 标题、进度条与状态日志，随后扫描并翻面一张工牌（正面：实验室标识、编号带与条码；背面：姓名、职务与编码），最后以授权横幅收尾。界面皮肤替换 125 枚 --dsw-* 令牌，叠加极淡的 UEG 水印与机构徽标，并在一个设置分区里提供配色、质感、文案、语音与工牌字段。'
