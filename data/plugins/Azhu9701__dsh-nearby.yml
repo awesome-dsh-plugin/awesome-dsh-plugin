@@ -1,0 +1,7 @@
+url: https://github.com/Azhu9701/dsh-nearby
+name: Azhu9701/dsh-nearby
+category: tools
+description:
+  en: 'Temporary sharing rooms in DSH: hand files, prompt cards and skill packs to people on the same Wi-Fi through a browser link, with nearby auto-discovery and an optional Cloudflare tunnel for remote hosts.'
+  zh: '在 DSH 里开一间临时分享房：同一 Wi-Fi 下的人用浏览器就能收发文件、提示词卡片和技能包；支持附近实例自动发现，远程宿主可选 Cloudflare 隧道。'
+icon: https://raw.githubusercontent.com/Azhu9701/dsh-nearby/main/assets/icon-180.png
