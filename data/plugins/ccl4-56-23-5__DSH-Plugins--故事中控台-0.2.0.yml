@@ -1,0 +1,8 @@
+url: https://github.com/ccl4-56-23-5/DSH-Plugins/tree/main/故事中控台/0.2.0
+name: ccl4-56-23-5/DSH-Plugins#storydeck
+category: memory
+description:
+  en: "Import RikkaHub lorebooks, select books and entries per conversation, and track story state with reversible events."
+  zh: "导入 RikkaHub 世界书，按对话选择书与条目，并通过可撤回事件记录剧情状态。"
+icon: https://raw.githubusercontent.com/ccl4-56-23-5/DSH-Plugins/main/故事中控台/0.2.0/lib/assets/icon.png
+tarball: https://github.com/ccl4-56-23-5/DSH-Plugins/releases/download/storydeck-v0.2.0/dsh-storydeck-0.2.0.tgz
