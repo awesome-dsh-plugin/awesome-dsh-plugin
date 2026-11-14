@@ -493,6 +493,7 @@ dsh plugin --profile web add dshmarket
 - [cgartlab/dsh-tac](https://github.com/cgartlab/dsh-tac) — 在原生右侧栏提供项目与会话看板，另有悬浮会话列表、键盘优先的命令面板（可搜索会话、项目与设置），以及任务通知。
 - [CH4ACKO3/dsh-turn-fold](https://github.com/CH4ACKO3/dsh-turn-fold) — 面向 DSH Web UI 的 Codex 风格回合折叠：保留最终答复，合并连续的推理与工具活动，并以多语言摘要展示可配置的实时耗时、工具调用和 token 指标。
 - [Chaiyahang/dsh-scratchpad](https://github.com/Chaiyahang/dsh-scratchpad) — 给 DeepSeek Harness 的左栏便签插件：带标签的随手记、图片/文件附件、Markdown 待办、发到对话、唤起快捷键、JSON 导入导出，以及 Agent 工具。
+- [chanyuenpang/dsh-better-file-viewer](https://github.com/chanyuenpang/dsh-better-file-viewer) — DSH 独立文件会话视图，提供树与层级列导航、图片网格、JSON 查看和文档预览，不替换原侧栏。
 - [chaochaokongbai/dsh-beginner-hub](https://github.com/chaochaokongbai/dsh-beginner-hub) — 面向 DSH 新手的说人话需求路由面板：用本地关键词引擎把一句大白话需求路由成可直接用的方案（提问话术变体、匹配技能、进阶玩法），选中的方案可一键填入新会话。
 - [charce526/dsh-logo-swap](https://github.com/charce526/dsh-logo-swap) — 替换 DeepSeek Harness 界面各处品牌元素——侧栏 Logo、品牌字标两半、对话页 Logo、欢迎语标语，预览版徽章开关。纯前端注入，不修改安装文件。
 - [chargeduck/xechat-dsh](https://github.com/chargeduck/xechat-dsh) — 可停靠的侧边面板，用一条 WebSocket 保持 XEChat 聊天在线：支持图片与表情的 Markdown 消息、通过 #showServer 与 #login 切换服务器、在线成员列表、全屏伪装覆盖层，停靠位置、宽度与可视状态持久化到 localStorage。
@@ -886,6 +887,7 @@ dsh plugin --profile web add dshmarket
 - [HERO476/dsh-sidecard-ask](https://github.com/HERO476/dsh-sidecard-ask) — 在 DSH Web 界面划词就地追问（浮出按钮，或 Alt+Q 快捷键）：答案由不继承父上下文的独立子代理流式产出到侧边卡片，承载面为原生右侧栏 / dsh-better-sidebar / 内置浮层，也可把问题改为落回主对话。
 - [HeShen-1/dsh-composer-enhance](https://github.com/HeShen-1/dsh-composer-enhance) — DSH Web 输入框提示词增强：✨ 按钮先判断歧义、再原地改写草稿；空草稿时以灰色 ghost 给出下一步建议，Tab 或点击填入草稿且不自动发送。
 - [heshuren371/dsh-music-player](https://github.com/heshuren371/dsh-music-player) — 本地音乐播放器：扫描目录中的音频与视频文件，在「音乐」标签页播放，支持交叉淡化、10 段均衡器与响度归一化，并可按歌手-歌名重命名回写标签、封面与文件名（原子替换）。
+- [hexuntt/dsh-gundam-0083](https://github.com/hexuntt/dsh-gundam-0083) — 把 DSH Web UI 变成阿鲁比昂号的 U.C.0083 全景座舱：舱门启动序列、七项 EFSF 自检、视差座舱框、三段式 MFD 仪表台、本地 BGM 与冷调深色主题。
 - [hffek/dsh-steer-note](https://github.com/hffek/dsh-steer-note) — 在输入框上方增加独立插话栏，支持文字、图片和普通文件，显示读取状态并可在未读取时取消，任务结束时救援未发送草稿。
 - [hg1048596-pixel/dsh-ppt-canvas](https://github.com/hg1048596-pixel/dsh-ppt-canvas) — DeepSeek Harness 的 PPT 工作台：拖入 PPTX，跨页批注对象或区域，在原画布检查 AI 修改，整批确认保存，支持撤销与重做。
 - [hg1048596-pixel/dsh-recall-unread](https://github.com/hg1048596-pixel/dsh-recall-unread) — 在输入框上方列出已发送但模型尚未读取的插话消息，可在模型读取前逐条或一次性撤回。
@@ -3136,6 +3138,7 @@ dsh plugin --profile web add dshmarket
 - [kleinklein0824/dsh-official-skin](https://github.com/kleinklein0824/dsh-official-skin) — 灵感来源于 DeepSeek 官网的 DSH Web 与 Desktop 皮肤：深色模式提供流体极光、粒子鲸鱼与星座背景，浅色模式采用蓝色玻璃质感，通过单一主题按钮切换并同步宿主外观设置，标题栏配色适配深浅色主题。
 - [kviiinh/dsh-whale-particles-bg](https://github.com/kviiinh/dsh-whale-particles-bg) — 为 DSH Web 界面加的一层动态鲸鱼背景：由鲸鱼剪影采样出的粒子场，加上一层点阵网格，两者都是挂在 shell.overlay 上的全屏点击穿透 canvas；粒子加载时聚合、空闲时呼吸、指针靠近时被推开，网格点靠近指针会放大，配色跟随页面明暗主题。
 - [L-eleven-1/dsh-wallpapers](https://github.com/L-eleven-1/dsh-wallpapers) — 应用奶皇新外观预设，支持设置备份与恢复。它是 elysia395/dsh-wallpaper-engine 1.4.0 的预设，需先装该插件并备好奶皇新壁纸（工坊 3808236079）。
+- [langyan1022/dsh-supreme-command](https://github.com/langyan1022/dsh-supreme-command) — DeepSeek Harness 的启动屏与同风格界面主题。启动序列依次播放 HUD 标题、进度条与状态日志，随后扫描并翻面一张工牌（正面：实验室标识、编号带与条码；背面：姓名、职务与编码），最后以授权横幅收尾。界面皮肤替换 125 枚 --dsw-* 令牌，叠加极淡的 UEG 水印与机构徽标，并在一个设置分区里提供配色、质感、文案、语音与工牌字段。
 - [leavestring/awesome-dsh-background-plugin](https://github.com/leavestring/awesome-dsh-background-plugin) — 为 DSH Web 设置背景：上传本地图片或选择预设氛围，实时预览且设置持久化。
 - [LeemanCheung/dsh-qq2007-skin](https://github.com/LeemanCheung/dsh-qq2007-skin) — DSH Web GUI 的 QQ 2007 风格皮肤：72 个原生主题 token、作用域三栏窗框、原创离线素材与像素伙伴、可选合成发送提示音、响应式/无障碍回退和可恢复设置开关。
 - [LeemanCheung/dsh-skin-studio](https://github.com/LeemanCheung/dsh-skin-studio) — 本地语义令牌主题编辑器，支持色板提取、WCAG 审计、预览和导出。
@@ -6113,6 +6116,7 @@ dsh plugin --profile web add dshmarket
 - [Looori/dsh-connector-hub#connector-hub](https://github.com/Looori/dsh-connector-hub/tree/main/packages/connector-hub) — DSH 的连接器市场：在「连接器」tab 里浏览 13 个精选远程 MCP 连接器，用 OAuth 或 API Key 授权，凭据保存在 macOS 钥匙串。MCP 工具挂在 profile 根目录，凭据只经 loopback 网关转发。
 - [lordraiden/dsh-9router-web-search](https://github.com/lordraiden/dsh-9router-web-search) — 9router 网页搜索与网页抓取 provider，为 DeepSeek Harness 提供搜索和抓取能力。
 - [Lornatang/dsh-atlassian](https://github.com/Lornatang/dsh-atlassian) — Connect Atlassian Cloud and self-hosted Jira and Confluence to DeepSeek Harness, with tools and a Jira issue board.
+- [Lornatang/dsh-notion](https://github.com/Lornatang/dsh-notion) — 通过 Notion 官方 MCP 将工作区工具和资源接入 DeepSeek Harness。
 - [lory69060/cn-intel-mcp-dsh](https://github.com/lory69060/cn-intel-mcp-dsh) — 中国硬科技供应链情报：33 条信号看板、中报验证追踪、命中率记录与问答，通过远程 MCP 接入（mcp__cn_intel__*）。
 - [Lostforest7/dsh-encoding](https://github.com/Lostforest7/dsh-encoding) — 编码正确的命令执行与乱码还原：encoding_run 自动识别 UTF-8/UTF-16LE/GBK 并正确解码子进程输出，encoding_decode 把乱码文本还原为正确 Unicode。
 - [dsh-loulan-mcp](https://github.com/loulangogogo/dsh-plugins-loulan/tree/main/packages/mcp) — 读取 .dsh 根目录与 agent 工作区里的 .mcp.json，把其中的 MCP server 挂载进 DSH；Web 界面增加「MCP」标签页，可查看、添加与卸载服务。
@@ -9490,6 +9494,7 @@ dsh plugin --profile web add dshmarket
 - [CH4ACKO3/dsh-render-engine#code-render](https://github.com/CH4ACKO3/dsh-render-engine/tree/main/packages/code-render) — 面向 DSH Web 插件的转义与主题响应 HTML 代码块渲染服务，基于结构化语法高亮 token，并保留源码换行符。
 - [CH4ACKO3/the-binding-of-dsh](https://github.com/CH4ACKO3/the-binding-of-dsh) — 通过原生 Connection 与 Typert Gateway 在 DSH Host 和 Client 之间提供双向 RPC，支持目标 Peer 调用、取消与连接生命周期处理。
 - [chai-yinfeng/dsh-macos-restart](https://github.com/chai-yinfeng/dsh-macos-restart) — 仅 macOS 桌面版：一键重启 DeepSeek Harness Electron 应用；重启前确认运行中的任务，插件安装/更新时拒绝，并记录重启阶段与日志。
+- [chanyuenpang/dsh-services-manager](https://github.com/chanyuenpang/dsh-services-manager) — 在 DSH Desktop/Web 中管理本地后台服务，支持持久启停策略、进程身份校验和需认证的服务登记 CLI。
 - [Chemiofitor4096/minecraft-dev-starter](https://github.com/Chemiofitor4096/minecraft-dev-starter) — 识别工作区里的 Minecraft 模组与插件工程（Fabric、Forge、NeoForge、Architectury、Paper），在会话标题栏运行 Gradle 的客户端或服务端任务，日志显示在侧栏标签；数据生成与 GameTest 这类会跑完的任务在结束时给出通过或失败的结论。
 - [Chengyunlai/dsh-workbench](https://github.com/Chengyunlai/dsh-workbench) — 从 DeepSeek Harness 对话点击源码链接，直接跳到指定行。在右侧工作台查看 Git 差异和断点变量，也可以把讲解保存为可搜索的 Markdown 记忆卡片。支持 Python 类关系图（Beta）。Go 和 Java 跳转需要语言服务器，断点调试需要调试适配器。
 - [chenkai2/dsh-daemon](https://github.com/chenkai2/dsh-daemon) — 将 DeepSeek Harness 的 web 服务（dsh web）注册为自启动、自愈的后台服务：LaunchAgent / systemd / cron 加 30 秒健康检查 watchdog，并提供 7 个 dsh_daemon_* 工具（安装/卸载/重装/状态/启动/停止/更新）。
@@ -10688,6 +10693,7 @@ dsh plugin --profile web add dshmarket
 - [kingOfSoySauce/dsh-skin-market](https://github.com/kingOfSoySauce/dsh-skin-market) — 原生皮肤市场与生命周期管理器，发现社区皮肤、展示预览与兼容状态，并提供已验证的一键安装或手动安装入口。
 - [kinmat-A/dsh-theme-switch](https://github.com/kinmat-A/dsh-theme-switch) — DSH 主题切换：自动检测已安装的皮肤/主题，在设置页一键互斥切换，全部停用时回退官方默认外观，切换即时生效并跨重启保留。
 - [kkkkkklze/dsh-plugin-manager](https://github.com/kkkkkklze/dsh-plugin-manager) — 在 DeepSeek Harness 网页内管理插件：分类列表、预设整合包一键切换与导入导出、失败自动回退、插件市场一键安装。
+- [ldq0102261819/dsh-market-seed](https://github.com/ldq0102261819/dsh-market-seed) — 启动时把插件市场索引源写入 dsh，装完这个包打开「发现」就能搜索并安装社区插件。
 - [LeemanCheung/dsh-vibe-pack](https://github.com/LeemanCheung/dsh-vibe-pack) — 仅数据的事务式配置包管理器，提供完整性、归属、预览、差异和回滚保护。
 - [leoyoul/dsh-onekey-update](https://github.com/leoyoul/dsh-onekey-update) — 启动后检查已启用插件的新版本，在右下角列出并一键逐个升级，逐条给出成功或失败结果；通过解析应用自带的 dsh CLI 在 macOS、Windows、Linux 上执行更新，不假定 Windows 可执行文件。
 - [lihao178/dsh-plugin-steward](https://github.com/lihao178/dsh-plugin-steward) — DeepSeek-Harness 插件管家：查出所有插件的新版本并直接升级，升级前自动建快照，升级后重新体检，结果变差就自动还原。装任何插件前先静态扫描代码（动态执行、反弹 shell、翻密钥都会标出来），内置 8489 个插件的市场目录并带兼容性判定，装完/卸完/停用完自动重启宿主，不需要手动关软件。界面文案全白话，不写术语。
