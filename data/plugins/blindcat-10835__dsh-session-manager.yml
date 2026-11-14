@@ -1,0 +1,26 @@
+# Catalog entry for https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+#
+# How to submit:
+#   1. Replace blindcat-10835 with the GitHub user or organization that owns the repo
+#      (the same value used in the `repository` field of package.json).
+#   2. Save this file as data/plugins/blindcat-10835__dsh-session-manager.yml in a fork of the
+#      catalog repository (the filename must be <owner>__<repo>.yml).
+#   3. Open one PR that adds only that file. One entry per PR; at most 3.
+#
+# Rules this entry follows (see the catalog's contributing.md):
+#   - `url` must match the repository exactly.
+#   - `category` is `session` (rendered as "Sessions & Messages").
+#   - `description.en` is required and must state what the plugin does, without
+#     superlatives. `zh` is optional; keep it when available.
+#   - Do not add an `npm:` key; npm mapping is collected from the registry.
+#   - Screenshots are declared by the plugin's own screenshots.json, which the
+#     catalog reads from beside package.json.
+#   - Values containing ": " are single-quoted so YAML does not read them as
+#     nested keys.
+
+url: https://github.com/blindcat-10835/dsh-session-manager
+name: blindcat-10835/dsh-session-manager
+category: session
+description:
+  en: 'A session manager panel for the DSH Web GUI: sessions are grouped by status (seven states), time bucket or tag, with a group order you can drag into place and a tag vocabulary you can create, rename and delete. Tag rules suggest tags from keywords, AI batch rename and AI tagging always preview before writing and run as cancellable background jobs, and the panel reuses the native sidebar context menu (appending a tag submenu) plus the native row seats to show a status dot and tag count on every sidebar row.'
+  zh: 'DSH Web 的会话管理面板：会话按状态（7 档）／时间桶／标签分组浏览，分组顺序可拖动调整，标签词表可新建、改名与删除。标签规则按关键词给出建议，AI 批量重命名与自动打标签一律先预览后写入并作为可取消的后台任务运行；面板复用原生左栏的右键菜单（追加「标签」子菜单）与行座位，在原生侧栏每行显示状态点与标签数。'
