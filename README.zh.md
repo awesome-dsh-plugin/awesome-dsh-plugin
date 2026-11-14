@@ -6685,7 +6685,7 @@ dsh plugin --profile web add dshmarket
 - [uckkk/dsh-live-data](https://github.com/uckkk/dsh-live-data) — 10 个实时数据工具，覆盖 8 个免密钥公开接口：汇率、天气、npm/PyPI 包版本、GitHub 仓库信息、B站视频数据、A股/大盘/金价行情、IP 归属地；默认参数可在设置面板配置。
 - [uckkk/dsh-pace-calc](https://github.com/uckkk/dsh-pace-calc) — 跑步配速计算：根据距离与时间换算配速（分/公里）与速度（公里/小时）。
 - [Uesccda/dsh-plugin-snapshot](https://github.com/Uesccda/dsh-plugin-snapshot) — DSH 插件的升级助手。自动检查已装插件哪些有新版本，可一键全部升级或定时自动升级；每次升级前自动打快照，装失败自动回滚到升级前，不会把环境弄坏。也能体检：列出插件冲突、兼容性未声明、依赖缺失，并给出检查优先级。支持按补丁/次版本/主版本三档控制自动升级范围，可排除不想动的插件。所有操作都能回退到任意历史快照。
-- [ulasarslan6262-ui/speedbot-agent-plugin](https://github.com/ulasarslan6262-ui/speedbot-agent-plugin) — 通过 MCP 将 DeepSeek Harness 连接到 Speedbot.dev，查找智能体服务、数字产品、付费任务和协作者。
+- [ulasarslan6262-ui/speedbot-agent-plugin](https://github.com/ulasarslan6262-ui/speedbot-agent-plugin) — 通过 MCP 将 DeepSeek Harness 连接到 Speedbot.dev，查找智能体服务、数字产品、付费任务和协作者。它把工具调用发到第三方远程 MCP 服务 https://speedbot.dev/mcp/core，本机不运行任何代码。
 - [unclecode/toolshrink](https://github.com/unclecode/toolshrink) — 按内容语义压缩工具结果：13 个 reducer 在 tools/post-execute 阶段按含义裁剪超长输出（保留失败的测试、丢弃 diff 上下文、对 JSON 与 CSV 抽样、lint 问题按规则归类、依赖库的调用栈帧折叠、文件过多的目录只给计数），完整原文落盘保存并留一个定位符可取回。
 - [unhurriedly/dsh-drone-planner](https://github.com/unhurriedly/dsh-drone-planner) — DeepSeek Harness 的无人机覆盖航线规划面板：绘制点、线、区域、斜面或圆柱体目标，设定航线预设（高度模式、速度、偏航模式、是否停留、结束动作、超视距裁切），生成弓字形扫描、沿路线布点或绕柱螺旋航线，并提供航点表、风险评估与逐点动作。
 - [universe-st/dsh-game-material-master](https://github.com/universe-st/dsh-game-material-master) — 基于 Seedream 生图与 MiniMax 图生视频，从参考图生成游戏素材，本地绿幕抠像后合成八方向精灵图、序列帧与骨骼动画。
@@ -8539,6 +8539,7 @@ dsh plugin --profile web add dshmarket
 - [kira905/dsh-task-board-local](https://github.com/kira905/dsh-task-board-local) — 自维护的 DSH 网页任务看板：带人工验收闸门、卡片类型与已执行卡片的可编辑备注。
 - [kkomia/dsh-code-team](https://github.com/kkomia/dsh-code-team) — DeepSeek Harness 的「项目开发模式」预设与聊天内开发看板：主对话只澄清需求并向 Agent Team 派活，悬浮看板把每个用户修改点按派单、执行、测试、验收追踪（含 7 个看板工具）。
 - [kongbai9420/dsh-boss-worker](https://github.com/kongbai9420/dsh-boss-worker) — 具备主控审查门禁、文件范围隔离与悬浮工作台的多模型主从协同插件。
+- [kp-z/dsh-plugins#dsh-feishu](https://github.com/kp-z/dsh-plugins/tree/main/packages/dsh-feishu) — DSH 的飞书任务桥：把受管飞书任务清单与监听文档同步成本地快照，把任务绑定到 DSH 会话，让进展、预期、依赖与完成状态写回飞书，并通过 DSH 自动化排期。右侧栏新增「飞书」页签（需 dsh-better-sidebar），宿主页面新增「任务」面板，含运行气泡、洞察图表与依赖画布。
 - [ktdhhc/dsh-custom-subagents](https://github.com/ktdhhc/dsh-custom-subagents) — 用设置页维护可复用的子代理定义，通过统一的 delegate_agent 工具委派；内置只读的 Explorer 预置与嵌套委派开关。
 - [kui123456789/dsh-codex-workflow](https://github.com/kui123456789/dsh-codex-workflow) — 协调 Codex 制定计划和独立审查，由 DSH 原会话完成代码修改与测试。
 - [kvmem/dsh-super-advisor](https://github.com/kvmem/dsh-super-advisor) — 通过 ask_advisor 按需求助顾问，支持编辑请求与逐次人工批准，由 DSH 中配置的模型返回文字建议。
@@ -9019,7 +9020,7 @@ dsh plugin --profile web add dshmarket
 - [KannaKuron/dsh-ide-git](https://github.com/KannaKuron/dsh-ide-git) — 侧边栏里的 JetBrains 风格 Git 工具窗口：带 ahead/behind 角标的分支树、可按文本/作者/日期/路径筛选的提交图谱、逐文件行级 diff、变更列表与提交框，以及分支、标签、贮藏操作和合并、变基、优选、重置、抓取/拉取/推送。
 - [kaziii/dsh-github-connector#github](https://github.com/kaziii/dsh-github-connector/tree/main/packages/github/github) — GitHub Device Flow 授权与对话内 PR 工作流：输入框上方的状态条支持创建 / AI 审查 / 合并 PR，另有 github_* 工具用于搜索、Issue 与 PR 读写。
 - [Kevin-McIsaac/dsh-workspace-git-badge#dsh-git-badge](https://github.com/Kevin-McIsaac/dsh-workspace-git-badge/tree/main/dsh-git-badge) — DSH 的 Git 状态徽章：侧边栏工作区行徽章与输入行徽章，显示当前会话工作区的 git 状态，通过 SSE 事件驱动保持实时。
-- [kp-z/dsh-dev-git-graph#dsh-dev-git-graph](https://github.com/kp-z/dsh-dev-git-graph/tree/main/packages/dsh-dev-git-graph) — DSH Web 的 vscode-git-graph 1.30.0 忠实移植：入驻 dsh-better-sidebar 右侧栏的原生 Git Graph 提交图 tab（前置依赖），自动绑定会话工作区，host 直跑全套 git 操作（checkout/merge/rebase/push/tag/stash），文件 diff 复用内置 DiffTab 打开。
+- [kp-z/dsh-plugins#dsh-dev-git-graph](https://github.com/kp-z/dsh-plugins/tree/main/packages/dsh-dev-git-graph) — DSH Web 的 vscode-git-graph 1.30.0 忠实移植：入驻 dsh-better-sidebar 右侧栏的原生 Git Graph 提交图 tab（前置依赖），自动绑定会话工作区，host 直跑全套 git 操作（checkout/merge/rebase/push/tag/stash），文件 diff 复用内置 DiffTab 打开。
 - [kulebbb/dsh-git-tree](https://github.com/kulebbb/dsh-git-tree) — 在 DSH 桌面端右侧栏显示当前工作区的 Git 提交图。
 - [LaoYueHanNi/dsh-git-worktree](https://github.com/LaoYueHanNi/dsh-git-worktree) — 在 Web 输入框切换分支、以真实工作区方式创建隔离的 git worktree。
 - [lehhair/dsh-diff-viewer](https://github.com/lehhair/dsh-diff-viewer) — PiUI 风格 diff 查看器，替换 write/edit 工具调用的默认 DiffBlock。
@@ -10656,7 +10657,7 @@ dsh plugin --profile web add dshmarket
 - [SilverKurali/dsh-mesh-access](https://github.com/SilverKurali/dsh-mesh-access) — 用手机远程控制电脑上的 DSH：在服务进程内部把端口开到组网网卡上，手机浏览器打开就是你在电脑上用的那个界面，同一实例、同一份会话，不用 SSH、不用第二个 dsh。顺带笔记本、NAS、电视盒子也能开。
 - [simonsxxs/dsh-aa-bridge-doctor](https://github.com/simonsxxs/dsh-aa-bridge-doctor) — 监测 Agents Anywhere 桥接卡死（进程存活但手机端离线）并弹窗提醒；Connector 进程退出时默认自动拉起（带护栏），卡死时的自动重启需手动开启。需已安装并登录 Agents Anywhere 桥接插件；macOS 已实测，Windows 未测。
 - [siqyka/dsh-ssh-workspace](https://github.com/siqyka/dsh-ssh-workspace) — 通过SSH方式，将远程主机的文件夹当成DSH的工作区，可以在本地DSH控制远程主机工作目录，不需要手动同步、不需要挂载驱动、不需要装任何第三方文件系统
-- [skillpie/dsh-plugins#dsh-remote-relay](https://github.com/skillpie/dsh-plugins/tree/main/dsh-remote-relay) — 凭 8 位码经中转服务器连接任意 DeepSeek Harness 主机：relay 前缀透传的 GUI 远程控制，按主机多路复用 WebSocket，访客侧 fetch/WebSocket shim 全量重写同源请求，属主 HTTP API 限定宿主角色，并可用 origin 级 Service Worker 隐藏 URL 中的码。默认关闭，需在属主侧栏面板主动开启。
+- [skillpie/dsh-plugins#dsh-remote-relay](https://github.com/skillpie/dsh-plugins/tree/main/dsh-remote-relay) — 凭 8 位码经中转服务器连接任意 DeepSeek Harness 主机：relay 前缀透传的 GUI 远程控制，按主机多路复用 WebSocket，访客侧 fetch/WebSocket shim 全量重写同源请求，属主 HTTP API 限定宿主角色，并可用 origin 级 Service Worker 隐藏 URL 中的码。默认关闭，需在属主侧栏面板主动开启。开启后会外连作者运营的中转站 dsh.skillpie.cn，拿到远程码的人就获得这台机器上完整的 GUI 控制权。
 - [skyzzq/dsh-ssh-mac](https://github.com/skyzzq/dsh-ssh-mac) — 基于 @linxin666/dsh-ssh 的二次开发（两者不能同时启用）：建链前先按网卡 MAC 把主机解析成当前 IP，DHCP 换号不用改配置。
 - [soffits/dsh-desktop-view](https://github.com/soffits/dsh-desktop-view) — 在 DSH 网页界面中实时查看 Agent 所在机器的桌面（含声音），经 DSH 自身登录转发。遇到验证码或扫码登录时可接管，支持剪贴板与文件传输，手机上也能用。需要同一台机器上 Cua 桌面镜像自带的 cua-spacesd。
 - [solla-h/dsh-plugin-mobile-gateway](https://github.com/solla-h/dsh-plugin-mobile-gateway) — 让 DSH Mobile App 通过认证的 WebSocket 与自托管 DeepSeek Harness 宿主配对的手机网关插件。Clarklevis1995/dsh-plugin-mobile-gateway 的分支（包名相同，只能装其中一个），新增可选的加密地址簿（用 wrangler 部署成你自己 Cloudflare 账号下的 Worker）、实验性的 WebRTC P2P 传输，以及端点检查时回退到公共 DoH。
