@@ -1,0 +1,8 @@
+url: https://github.com/LondonMoon/dsh-sandbox-approval-modal
+name: dsh-sandbox-approval-modal
+category: security
+description: >-
+  复用 DSH 现有审批链路的置顶沙盒越权审批弹窗：FIFO 排队计数、仅本次
+  allowed-once 放行、拒绝并附理由、宿主侧超时自动拒绝，并提供 Windows
+  原生置顶提醒/审批窗口与浏览器后台通知。
+icon: https://raw.githubusercontent.com/LondonMoon/dsh-sandbox-approval-modal/main/assets/icon.svg
