@@ -1,0 +1,6 @@
+url: https://github.com/gbn0219/dsh-ask-from-text
+name: gbn0219/dsh-ask-from-text
+category: session
+description:
+  en: Select text in a completed assistant answer to ask in a separate floating branch with colored marks, a stage, and a branch tree.
+  zh: 在已完成的 assistant 回答中划选文字，在独立浮窗分支中继续追问；支持彩色标记、舞台和分支树。
