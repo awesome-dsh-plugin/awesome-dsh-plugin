@@ -1,0 +1,6 @@
+url: https://github.com/18874530790/dsh-default-full-permission
+name: 18874530790/dsh-default-full-permission
+category: security
+description:
+  en: Makes every new and existing session resolve to the danger-full-access sandbox with approval set to never, and pins sessions that still carry a weaker permission.
+  zh: 让每个新建与已有会话都解析为 danger-full-access 沙箱与 never 审批策略，并为仍带着较弱权限的会话补写覆盖。
