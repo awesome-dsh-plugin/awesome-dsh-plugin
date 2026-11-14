@@ -9636,22 +9636,6 @@
     "scannedAt": "2026-09-24T17:41:52.360Z",
     "tool": "dsh-trust-check@0.1.13"
   },
-  "https://github.com/dk33333333/dsh-deepseek-quota-left": {
-    "version": "0.5.0",
-    "spec": "github:dk33333333/dsh-deepseek-quota-left",
-    "capabilities": [
-      "fs-write",
-      "fs-read",
-      "network",
-      "credentials",
-      "env"
-    ],
-    "redLines": [
-      "reads credentials/secrets AND has network access"
-    ],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
   "https://github.com/Dkrillex/dsh-macos-pet": {
     "version": "0.1.0",
     "spec": "github:Dkrillex/dsh-macos-pet",
@@ -16028,20 +16012,6 @@
     "scannedAt": "2026-09-24T17:02:46.730Z",
     "tool": "dsh-trust-check@0.1.13"
   },
-  "https://github.com/huasheng33991/dsh-power-button": {
-    "version": "1.0.0",
-    "spec": "github:huasheng33991/dsh-power-button",
-    "capabilities": [
-      "shell",
-      "fs-write",
-      "fs-read",
-      "network",
-      "env"
-    ],
-    "redLines": [],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
   "https://github.com/huashenglian/dsh-livechat": {
     "version": "0.4.10",
     "spec": "github:huashenglian/dsh-livechat",
@@ -20129,14 +20099,6 @@
     "redLines": [
       "uses plaintext http:// to y.qq.com"
     ],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
-  "https://github.com/Kenerlee/dsh-moments-aieo": {
-    "version": "0.1.0",
-    "spec": "github:Kenerlee/dsh-moments-aieo",
-    "capabilities": [],
-    "redLines": [],
     "scannedAt": "2026-09-24T17:02:46.730Z",
     "tool": "dsh-trust-check@0.1.13"
   },
@@ -28048,16 +28010,6 @@
       "fs-read",
       "network",
       "env"
-    ],
-    "redLines": [],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
-  "https://github.com/nengong-ai/dsh-keychain-credentials": {
-    "version": "0.1.0",
-    "spec": "github:nengong-ai/dsh-keychain-credentials",
-    "capabilities": [
-      "shell"
     ],
     "redLines": [],
     "scannedAt": "2026-09-24T17:02:46.730Z",
