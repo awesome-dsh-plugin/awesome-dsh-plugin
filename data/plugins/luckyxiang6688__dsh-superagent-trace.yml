@@ -1,0 +1,6 @@
+url: https://github.com/luckyxiang6688/dsh-superagent-trace
+name: luckyxiang6688/dsh-superagent-trace
+category: dev
+description:
+  en: "Read-only explorer for what the Super-agent did with each message: the sources page lists inbound events per source with where they went (admitted, decided into a ticket, filtered, or dropped at the source), and opening a ticket draws its Router/Worker swimlanes, evaluation, dispatch, tool calls and replies on a timeline. Reads orchestrator.sqlite and session logs; writes nothing."
+  zh: "把 Super-agent 对每条消息做了什么摊开看：来源页按来源列出入站事件及其去向（准入、裁定成工单、过滤、源头丢弃），点开工单按主控/执行器泳道画出裁定、派工、工具调用与回复的时序。只读 orchestrator.sqlite 与会话日志，不写任何东西。"
