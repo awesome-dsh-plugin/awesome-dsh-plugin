@@ -1,0 +1,6 @@
+url: https://github.com/Gladess1102/dsh-g-memory
+name: Gladess1102/dsh-g-memory
+category: memory
+description:
+  en: 'Cross-session semantic memory for DSH: indexes session history locally with EmbeddingGemma 2 embeddings and recalls relevant past context, injected as clearly-framed untrusted context. No npm runtime dependencies; synthesis is opt-in.'
+  zh: 'DeepSeek Harness 的跨会话语义记忆：用 EmbeddingGemma 2 在本地索引会话历史，按相关性召回过去上下文，并以明确标注为不可信上下文的框注注入；无 npm 运行时依赖，摘要合成默认关闭。'
