@@ -1,6 +1,7 @@
 url: https://github.com/zzm1234560621-prog/dsh-delegate/tree/main/plugin
 name: zzm1234560621-prog/dsh-delegate#plugin
 category: tools
+tarball: https://github.com/zzm1234560621-prog/dsh-delegate/releases/download/v1.3.0/dsh-delegate-plugin.tgz
 description:
   en: 'Wires Claude Desktop, Claude Code and Codex to a local DeepSeek Harness over MCP, and adds a status panel to the DSH web UI.'
   zh: '把 Claude 桌面版 / Claude Code / Codex 通过 MCP 接到本机 DeepSeek Harness，并在 DSH 页面内提供运行状态面板。'
