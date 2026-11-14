@@ -1,0 +1,7 @@
+url: https://github.com/cxywh/dsh-folder-access
+name: cxywh/dsh-folder-access
+category: security
+description:
+  en: 'Adds a folder button to the composer: pick any local directory and the current session may then write inside it, with a /folder command and clickable chips to list and revoke the grants.'
+  zh: '在输入框左侧加一个文件夹按钮：选中的本地目录授权给当前会话读写，另有 /folder 命令与可点击的授权标签，随时查看或撤销。'
+icon: https://raw.githubusercontent.com/cxywh/dsh-folder-access/main/assets/icon-180.png
