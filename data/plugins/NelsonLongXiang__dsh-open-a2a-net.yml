@@ -2,5 +2,5 @@ url: https://github.com/NelsonLongXiang/dsh-open-a2a-net
 name: NelsonLongXiang/dsh-open-a2a-net
 category: remote
 description:
-  en: 'Connects DSH sessions on one host or across linked hosts with visual teams, direct task routing, receipt tracking, and signed agent-card discovery without a central registry.'
-  zh: '把本机及已链接主机上的 DSH 会话组成可视化团队，支持任务直连路由、回执追踪与签名节点发现，无需中心注册服务。'
+  en: 'The opt-in 0.8 preview adds Superagent teams for request intake, ticket assignment, progress reports and owner decision cards, on an A2A network with signed peer discovery, linked-host routing and receipt tracking.'
+  zh: '0.8 预览版提供 Superagent 团队的需求受理、工单分派、进展汇报和属主决策卡；A2A 底座支持签名节点发现、已链接主机间路由及回执追踪。'
