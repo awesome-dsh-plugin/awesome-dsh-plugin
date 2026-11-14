@@ -1,0 +1,6 @@
+url: https://github.com/Lng-ux/dsh-nebula-mind
+name: Lng-ux/dsh-nebula-mind
+category: memory
+description:
+  en: 'Cross-session memory for DeepSeek Harness: three-way recall (BM25, dense vectors, and Personalized PageRank over a memory graph) fused with RRF, emotion as a modulation multiplier, power-law forgetting with five sinking layers, and an interactive memory star map.'
+  zh: 'DeepSeek Harness 的跨会话长期记忆：三路召回（BM25、稠密向量、记忆图上的 PPR）经 RRF 融合，情绪作调制乘子，幂律遗忘配五层沉海，另有一张可交互的记忆星图。'
