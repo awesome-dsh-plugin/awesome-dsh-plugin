@@ -1,0 +1,6 @@
+url: https://github.com/AdamsShen/dsh-autopilot-harness
+name: AdamsShen/dsh-autopilot-harness
+category: workflow
+description:
+  en: 'Adds a plan-then-execute loop to DSH: /autopilot-on runs grill rounds and writes brief, plan and checklist files, /autopilot-run works the checklist item by item, and after a product-code edit the plugin intercepts the turn boundary and steers the agent through rotating self-review rounds before advancing.'
+  zh: '给 DSH 加上「先规划再执行」的闭环：/autopilot-on 通过追问轮次产出 brief、plan、checklist 三个文件，/autopilot-run 按清单逐项执行；产品代码被修改后拦截回合边界，用 steer 让 agent 轮换多个自审视角再推进。'
