@@ -1,0 +1,6 @@
+url: https://github.com/Joseph2Young/dsh-connect-doubaowork
+name: Joseph2Young/dsh-connect-doubaowork
+category: model
+description:
+  en: Connect DSH to the Doubao web work-mode endpoint and route chats to its aggregated models (Doubao, DeepSeek, Kimi, GLM) through a local OpenAI-compatible gateway.
+  zh: 通过本机 OpenAI 兼容网关接入豆包工作模式，把豆包聚合的模型（豆包、DeepSeek、Kimi、GLM）路由给 DSH。
