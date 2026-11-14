@@ -149,6 +149,7 @@ dsh plugin --profile web add dshmarket
 - [Tests4gptplay/deepseek-servant](https://github.com/Tests4gptplay/deepseek-servant) — DSH 自主 AI 助理与多 Agent 协作：通过前台对话明确目标，后台规划、多 Worker 执行与结果验收，支持暂停接续、故障恢复、任务历史与成果记录、工作记忆和技能积累，提供标准本地模式及可选的实验性私有 Git 协作。
 - [Tisitan/dsh-my-go](https://github.com/Tisitan/dsh-my-go) — 多智能体编排预设：主编（Sisyphus）调度 + 内置工种名册 + 报告落板；读/写双泳道池化编排、按工种绑定模型，含 go_work/continue/need_help/forward 通信，以及 Web UI 树状图面板与设置页。
 - [tyr1105/dsh-buddy#dsh-buddy](https://github.com/tyr1105/dsh-buddy/tree/main/packages/plugin) — 带像素办公室的 AI 团队：显示每位队友当前的状态和当天做过的事。项目会话由负责人安排分工，队友互相 @；队友每天自己开工的次数和 token 有上限。仅支持 macOS 上的 DSH 桌面版。
+- [Velestia-star/agent-skill](https://github.com/Velestia-star/agent-skill) — 在侧栏里创建具名子智能体和技能，并在对话中按名字调用。子智能体可配置模型、思考强度、spawn/fork 启动方式、工具白名单与技能；技能可全局、按工作区或按单个会话生效。
 - [WDahah/portable-dsh-multi-agent-plugin](https://github.com/WDahah/portable-dsh-multi-agent-plugin) — 把任务派给一个模型、把评审交给另一个模型，并带有资格证据、故障转移与持久日志。
 - [ws1234567891011/dsh-interim-narration](https://github.com/ws1234567891011/dsh-interim-narration) — 让 agent 边做边说：每轮先用一两句说明怎么理解消息、准备怎么做、第一步是什么，并在工具调用批次之间写过程叙述；插件页可直接调整详略、句数上限与开关。
 - [wuanthony397-hash/dsh-codex-peer](https://github.com/wuanthony397-hash/dsh-codex-peer) — 让 DeepSeek Harness agent 与本机 Codex CLI 对等协作：把目标拆成共享工作清单、派活与交接、互相审查，并把每一步的提示词、事件流与回答留档在本地。
@@ -2443,6 +2444,7 @@ dsh plugin --profile web add dshmarket
 - [Assidefok/dsh-opencodego-status](https://github.com/Assidefok/dsh-opencodego-status) — 在 Harness Web UI 上悬浮显示 OpenCode Go 用量：5 小时滚动、每周与每月百分比、重置倒计时与续订日期，支持设备码登录与静默刷新。
 - [Astervolans/dsh-opencode-go-usage](https://github.com/Astervolans/dsh-opencode-go-usage) — 常驻侧边栏的 OpenCode GO 套餐额度组件：滚动/周/月三条用量条、每条下方一条已流逝与剩余时间条、同源用量代理、/opencode-go 命令，以及针对 GO 网关聊天请求的运行时 x-opencode-session 修复。fork 自 yumusb/dsh-opencode-go-usage。
 - [atlasmarkz/dsh-quota-meter](https://github.com/atlasmarkz/dsh-quota-meter) — 输入框下方显示余额与订阅用量：DeepSeek 钱包余额、OpenCode Go 的 5 小时 / 周 / 月窗口及重置时间，并按 DeepSeek 官方价格估算本次会话花费；数据来源可配置扩展，纯 JavaScript 无需构建。API 密钥依次从插件配置、环境变量（DEEPSEEK_API_KEY、OPENCODE_GO_API_KEY）、OpenCode 的 auth.json（仅 OpenCode Go）、DSH 凭据服务里查找；每个密钥只发给对应的服务商（api.deepseek.com、opencode.ai），数据会定时轮询。
+- [Avenger233/dsh-session-cost-board](https://github.com/Avenger233/dsh-session-cost-board) — 按会话统计 DeepSeek Harness 花费：只读本机会话日志，把每条 assistant 消息的 usage 按 DeepSeek 官方价目逐笔计价（峰谷时段、缓存命中 / 未命中 / 输出三个桶，web_search 与 web_fetch 成功调用按次计费），在「设置 → 会话花费」按金额列出每个会话，并在输入框下方显示当前会话的实时花费标签（可在同一页开关隐藏）。不联网、不上传。
 - [AwenJackson/dsh-volc-balance-card](https://github.com/AwenJackson/dsh-volc-balance-card) — 侧边栏常驻卡片，显示火山引擎账户充值余额与方舟 Coding/Agent 套餐窗口，内置 AK/SK 配置与逐项显示开关。
 - [AyahaShirane/dsh-deepseek-usage-meter](https://github.com/AyahaShirane/dsh-deepseek-usage-meter) — 在输入栏统计行、官方 token 用量条旁加一枚费用与余额胶囊：本次会话的 DeepSeek 估算费用、峰谷时段指示灯与已登录账号的剩余额度，明细里按计费项列出各自金额；仅在检测到 DeepSeek 官方渠道时激活。
 - [Ayelsh/dsh-zhipu-plan](https://github.com/Ayelsh/dsh-zhipu-plan) — 在 DeepSeek Harness 中登录智谱编程套餐，查看额度与用量并执行额度重置。
@@ -2817,7 +2819,7 @@ dsh plugin --profile web add dshmarket
 - [ShoTakujo/dsh-platform-usage#plugin](https://github.com/ShoTakujo/dsh-platform-usage/tree/main/plugin) — 在 DSH 设置页查看 DeepSeek 开放平台的账号级用量：52 周热力图、按 API Key 与模型的拆分、实时余额。
 - [Shuaige-Da/dsh-cost-pill](https://github.com/Shuaige-Da/dsh-cost-pill) — 把本次会话的估算费用直接写进输入框上方的 Token 用量胶囊，并在用量弹窗里为每个分项补上金额与预估合计，按 DeepSeek 官方高峰与空闲时段价（人民币）计算。
 - [SilverIodide42/dsh-usage-panel-plus](https://github.com/SilverIodide42/dsh-usage-panel-plus) — 独立的 DSH 用量统计面板，改自 HaoyueQin 的 dsh-usage-statistics-panel（MIT）：按会话拆分并可下钻模型、逐行缓存命中率、「全部」时间范围与 CSV 导出。
-- [SimpsonJiang/dsh-codex-usage-meter](https://github.com/SimpsonJiang/dsh-codex-usage-meter) — DeepSeek Harness 用量统计：状态栏显示当前会话费用拆分，统计页提供 Codex 风格的 KPI 卡片、53 周活动热力图与每周柱状图，按 DeepSeek 峰谷价计费。
+- [SimpsonJiang/dsh-codex-usage-meter](https://github.com/SimpsonJiang/dsh-codex-usage-meter) — DeepSeek Harness 用量统计：状态栏显示当前会话费用拆分，每轮对话完成后显示本轮费用并可点击查看缓存命中、缓存未命中与输出明细，统计页提供 Codex 风格的 KPI 卡片、53 周活动热力图与每周柱状图，按 DeepSeek 峰谷价计费。
 - [Six6stRINgs/dsh-thinking-token-stat](https://github.com/Six6stRINgs/dsh-thinking-token-stat) — 在底部 Dock 添加模型思考 token 统计信息的轻量化插件。
 - [sixzjd/dsh-usage-dash-board](https://github.com/sixzjd/dsh-usage-dash-board) — 本机跨会话用量汇总：把 qfmodel 这类不透明路由键解析为真实模型名，含逐请求明细表与可编辑的四桶价格表（无公开单价的模型标为未计价而非猜测），趋势柱状图按日历日补齐、数值仅在悬浮或键盘聚焦时显示。
 - [skyzhao1223/dsh-agent-token-stats](https://github.com/skyzhao1223/dsh-agent-token-stats) — 跨 Agent 的 token 用量看板:聚合 Claude Code、OpenCode、Cursor、DSH、OpenClaw、CodeWhale、Hermes 等本地对话日志,台账持久化(删除聊天记录后历史仍留存),提供缓存命中率、成本估算、环比对比与当日下钻分析的侧边栏面板。
@@ -5173,6 +5175,7 @@ dsh plugin --profile web add dshmarket
 - [ljsysfurryACE/dsh-compaction](https://github.com/ljsysfurryACE/dsh-compaction) — 压缩后端：用确定性语义提取器替换 LLM 摘要（保留代码/路径/命令，剔除闲聊），附带 28.4x KV 压缩记账。
 - [ljsysfurryACE/dsh-memory-director](https://github.com/ljsysfurryACE/dsh-memory-director) — LLM 驱动的记忆记/忘插件：每轮对话后由模型决定记住什么/忘记什么（MemoryDirector），请求前注入相关记忆，自动去重，跨会话持久化。
 - [LLL-lyh0/dsh-archived-digest](https://github.com/LLL-lyh0/dsh-archived-digest) — 把已归档的会话变成可用的记忆，而不是躺在磁盘上的死数据。每条归档提炼成可复用技能、带 ADD/UPDATE/NOOP 判定与 validUntil / supersededBy 时效的事实台账（旧事实会退场而不是无限堆积），以及用 single-linkage 相似度聚合的主题簇。还能对仍在进行中的会话做增量提炼——用只读的 seq 水位线，会话日志一个字节都不改；并能自检精简不断变脏的记忆：合并重复事实、清退失效事实、归并重复技能。自检默认只测量不动手，且从不硬删除，只做取代。
+- [Lng-ux/dsh-nebula-mind](https://github.com/Lng-ux/dsh-nebula-mind) — DeepSeek Harness 的跨会话长期记忆：三路召回（BM25、稠密向量、记忆图上的 PPR）经 RRF 融合，情绪作调制乘子，幂律遗忘配五层沉海，另有一张可交互的记忆星图。
 - [LornBerry/dsh-memory-center](https://github.com/LornBerry/dsh-memory-center) — DSH 的本地长期记忆库：面板里浏览、检索（BM25 + 同义词）、编辑；文件夹、归档、回收站；逐会话决定注入哪些；模型写入的记忆需你确认；可导入导出备份；可选同步到自己的 Git 或 WebDAV 实现多设备。
 - [LoserFox/distill](https://github.com/LoserFox/distill) — 自动对话蒸馏：后台 subagent 反省 + 技能 create/update。
 - [loveandbeepbrother/dsh-galatea#framework](https://github.com/loveandbeepbrother/dsh-galatea/tree/main/framework) — 加拉忒亚——塑造专属于你的 AI 助手。一个有自己人格和长期记忆（git 版本化的普通文件）的助手；聊得再久也会自己换到新对话、不失忆，你不在时它在后台整理记忆。会话跑在 DSH 里设的模型上，换模型记忆不丢；各模块都能单独关闭，也能用别的插件扩展。QQ/微信聊天与 Claude Code 会话由另外两个 Galatea 插件提供。预览版，需要 DSH 0.2.2-rc.1 或之后的 0.2.x。
