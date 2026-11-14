@@ -1,0 +1,7 @@
+url: https://github.com/Venompool888/dsh-plugin-voice-alert
+name: Venompool888/dsh-plugin-voice-alert
+category: voice
+tarball: https://github.com/Venompool888/dsh-plugin-voice-alert/releases/download/v1.0.1/dsh-plugin-voice-alert-1.0.1.tgz
+description:
+  en: "Spoken alerts on macOS that name the source and project: announces approval requests automatically and adds a voice-alert skill the agent uses for verification codes, finished long tasks or when it is stuck. DeepSeek TTS with your API key, falling back to the macOS system voice; a Settings → Voice page with text preview, 10 spoken languages and an away mode."
+  zh: "macOS 语音提醒，开头报来源和项目：等你批准时自动播报，并提供 voice-alert skill，供 AI 在要验证码、长任务结束或卡住时出声。云端用 DeepSeek TTS（需 API key），失败时改用 macOS 系统语音；「设置 → 语音」页可试听文字、选 10 种播报语言、开待命模式。"
