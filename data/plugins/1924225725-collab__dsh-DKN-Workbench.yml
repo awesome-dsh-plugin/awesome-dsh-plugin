@@ -4,4 +4,4 @@ category: workflow
 description:
   en: 'Connects CodeBuddy, Codex CLI, Qoder ACP and ZCode models to DSH, with native Codex projects, account quotas, daily reward claims for CodeBuddy China and Qoder International, and project collaboration.'
   zh: '在 DSH 中接入 CodeBuddy、Codex CLI、Qoder ACP、ZCode 模型，提供原生 Codex 项目、额度查询、CodeBuddy 国内与 Qoder 国际每日奖励领取及项目协作。'
-tarball: https://github.com/1924225725-collab/dsh-DKN-Workbench/releases/download/v2.1.5/dsh-dkn-agent-2.1.5.tgz
+tarball: https://github.com/1924225725-collab/dsh-DKN-Workbench/releases/download/v2.1.6/dsh-dkn-agent-2.1.6.tgz
