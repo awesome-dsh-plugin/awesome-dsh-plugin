@@ -2,5 +2,5 @@ url: https://github.com/Hjay1101/dsh-plugin-token-usage
 name: Hjay1101/dsh-plugin-token-usage
 category: usage
 description:
-  en: 'GitHub-style token usage heat map for DeepSeek Harness with day, week and month granularity, per-model breakdown, cache hit rate and a hover badge showing the current day total; read-only and fully local.'
-  zh: 'GitHub 风格的 token 用量热力图：日/周/月粒度切换、分模型明细与缓存命中率，侧边栏图标悬停即见今日用量；只读本地日志，数据不出本机。'
+  en: 'GitHub-style token usage heat map for DeepSeek Harness with day, week and month granularity, per-model breakdown, cache hit rate and a hover badge showing the current day total; read-only and fully local. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'GitHub 风格的 token 用量热力图：日/周/月粒度切换、分模型明细与缓存命中率，侧边栏图标悬停即见今日用量；只读本地日志，数据不出本机。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -2,5 +2,5 @@ url: https://github.com/cloudoyx/any-audio
 name: cloudoyx/any-audio
 category: voice
 description:
-  en: 'DSH has its own audio workstation too: real recordings, multiple TTS engines and genuine sound effects, with every generated sound landing as its own clip on one visible timeline that you can audition, balance and fine-tune track by track. Use it for scoring animation, producing audiobooks and radio drama, composing and mixing on your own, making ASMR, and whatever else you come up with.'
-  zh: 'DSH 也有自己的音频工作站！真实录音音源、多个 TTS 引擎、真实音效加持，生成的每个声音都以独立片段落到同一条可视化时间轴上，可逐轨试听、单独调节与微调。可用于给动画配音配乐、有声书和广播剧制作、独立作曲编曲与混音、ASMR 制作等，更多使用方式等你来开发！'
+  en: 'DSH has its own audio workstation too: real recordings, multiple TTS engines and genuine sound effects, with every generated sound landing as its own clip on one visible timeline that you can audition, balance and fine-tune track by track. Use it for scoring animation, producing audiobooks and radio drama, composing and mixing on your own, making ASMR, and whatever else you come up with. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 也有自己的音频工作站！真实录音音源、多个 TTS 引擎、真实音效加持，生成的每个声音都以独立片段落到同一条可视化时间轴上，可逐轨试听、单独调节与微调。可用于给动画配音配乐、有声书和广播剧制作、独立作曲编曲与混音、ASMR 制作等，更多使用方式等你来开发！它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

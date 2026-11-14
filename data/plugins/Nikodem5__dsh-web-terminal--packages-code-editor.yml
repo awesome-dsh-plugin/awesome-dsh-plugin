@@ -2,4 +2,5 @@ url: https://github.com/Nikodem5/dsh-web-terminal/tree/main/packages/code-editor
 name: "Nikodem5/dsh-web-terminal#code-editor"
 category: ui
 description:
-  en: "Code page for DeepSeek Harness: Monaco editor, git tools and markers for files an agent changed."
+  en: 'Code page for DeepSeek Harness: Monaco editor, git tools and markers for files an agent changed.'
+  zh: 'DeepSeek Harness 的代码页：Monaco 编辑器、git 工具，并标出智能体改动过的文件。'

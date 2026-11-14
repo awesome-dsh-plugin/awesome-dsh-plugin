@@ -3,5 +3,5 @@ name: TwinsEarth/dsh-fang
 category: dev
 tarball: https://github.com/TwinsEarth/dsh-fang/releases/download/v3.3.4/dsh-fang-3.3.4.tgz
 description:
-  en: 'Host-side control plane for DeepSeek Harness: isolated mother, essence, and fork workspaces, a shared decision inbox, restart guard, audit ledger, and pre-publish/install/deploy gates.'
-  zh: 'DeepSeek Harness 的宿主控制面：母体、元主、分身隔离工作区，共享决策收件箱、重启守卫、审计账本，以及发布、安装、部署前置门禁。'
+  en: 'Host-side control plane for DeepSeek Harness: isolated mother, essence, and fork workspaces, a shared decision inbox, restart guard, audit ledger, and pre-publish/install/deploy gates. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness 的宿主控制面：母体、元主、分身隔离工作区，共享决策收件箱、重启守卫、审计账本，以及发布、安装、部署前置门禁。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

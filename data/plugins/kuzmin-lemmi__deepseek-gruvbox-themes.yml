@@ -2,4 +2,5 @@ url: https://github.com/kuzmin-lemmi/deepseek-gruvbox-themes
 name: kuzmin-lemmi/deepseek-gruvbox-themes
 category: theme
 description:
-  en: Seven Gruvbox themes for DeepSeek Harness with live previews, persistent settings, automatic light/dark switching, and an agent tool.
+  en: 'Seven Gruvbox themes for DeepSeek Harness with live previews, persistent settings, automatic light/dark switching, and an agent tool.'
+  zh: '为 DeepSeek Harness 提供七套 Gruvbox 主题：实时预览、设置持久保存、自动切换明暗，并带一个智能体工具。'

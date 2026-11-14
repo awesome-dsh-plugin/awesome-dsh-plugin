@@ -3,5 +3,5 @@ name: Theflowyears/dsh-arknights-theme
 category: theme
 tarball: https://github.com/Theflowyears/dsh-arknights-theme/releases/download/v1.1.3/dsh-arknights-theme-1.1.3.tgz
 description:
-  en: 'Bring your own wallpaper: import a local picture and its glass and ink are solved on the spot; plus twelve built-in full-screen wallpapers whose edge blur, feathering and glass opacity are computed per image; ink solved in OKLCH to hold WCAG AA; Rhodes Island iconography; approval and question cards signed with operator autographs.'
-  zh: '自选壁纸：可导入本地图片，导入即按同一套算法解算玻璃浓度与文字色；另含 12 张整屏壁纸，边缘虚化、羽化与玻璃浓度按每张图分别计算；文字色以 OKLCH 求解并守住 WCAG AA 下限；界面图标换成罗德岛素材；授权卡与选项卡带干员签名。'
+  en: 'Bring your own wallpaper: import a local picture and its glass and ink are solved on the spot; plus twelve built-in full-screen wallpapers whose edge blur, feathering and glass opacity are computed per image; ink solved in OKLCH to hold WCAG AA; Rhodes Island iconography; approval and question cards signed with operator autographs. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '自选壁纸：可导入本地图片，导入即按同一套算法解算玻璃浓度与文字色；另含 12 张整屏壁纸，边缘虚化、羽化与玻璃浓度按每张图分别计算；文字色以 OKLCH 求解并守住 WCAG AA 下限；界面图标换成罗德岛素材；授权卡与选项卡带干员签名。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

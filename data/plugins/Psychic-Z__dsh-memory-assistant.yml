@@ -2,6 +2,6 @@ url: https://github.com/Psychic-Z/dsh-memory-assistant
 name: Psychic-Z/dsh-memory-assistant
 category: memory
 description:
-  en: Long-term memory for an agent. Conversations become memory cards; recall reads a few cards and answers in three explicit states (exact / related / none), so the token cost of remembering stays flat as the library grows, and it asks instead of guessing.
-  zh: 给 AI 一份不会随对话变长的长期记忆：对话压成记忆卡片，检索只读几张卡；检索开销与记忆库大小无关；定位不准或找不到时追问，不编。
+  en: 'Long-term memory for an agent. Conversations become memory cards; recall reads a few cards and answers in three explicit states (exact / related / none), so the token cost of remembering stays flat as the library grows, and it asks instead of guessing. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给 AI 一份不会随对话变长的长期记忆：对话压成记忆卡片，检索只读几张卡；检索开销与记忆库大小无关；定位不准或找不到时追问，不编。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
 icon: https://raw.githubusercontent.com/Psychic-Z/dsh-memory-assistant/main/icon-180.png

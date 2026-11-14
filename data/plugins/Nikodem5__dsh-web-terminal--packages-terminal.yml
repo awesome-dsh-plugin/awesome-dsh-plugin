@@ -2,4 +2,5 @@ url: https://github.com/Nikodem5/dsh-web-terminal/tree/main/packages/terminal
 name: "Nikodem5/dsh-web-terminal#terminal"
 category: ui
 description:
-  en: "Terminals page for DeepSeek Harness: a workspace of real PTY terminals with agent status for Claude Code and Antigravity CLI."
+  en: 'Terminals page for DeepSeek Harness: a workspace of real PTY terminals with agent status for Claude Code and Antigravity CLI.'
+  zh: 'DeepSeek Harness 的终端页：由真实 PTY 终端组成的工作区，并显示 Claude Code 与 Antigravity CLI 的智能体状态。'
