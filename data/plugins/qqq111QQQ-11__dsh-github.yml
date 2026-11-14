@@ -1,0 +1,7 @@
+url: https://github.com/qqq111QQQ-11/dsh-github
+name: qqq111QQQ-11/dsh-github
+category: git
+description:
+  en: 'GitHub client inside DeepSeek Harness: official OAuth device-flow sign-in, then browse your repositories, stars, notifications and issues/pull requests without leaving the app.'
+  zh: '在 DeepSeek Harness 里使用 GitHub：官方 OAuth 设备授权登录，之后直接浏览仓库、收藏、通知与议题／拉取请求。'
+icon: https://raw.githubusercontent.com/qqq111QQQ-11/dsh-github/main/assets/icon-180.png
