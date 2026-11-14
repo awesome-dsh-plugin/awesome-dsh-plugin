@@ -1,0 +1,7 @@
+url: https://github.com/HougeLangley/dsh-r-workbench
+name: HougeLangley/dsh-r-workbench
+category: tools
+icon: https://raw.githubusercontent.com/HougeLangley/dsh-r-workbench/main/assets/icon-180.png
+description:
+  en: 'R data workbench with six tools: ingest CSV/TSV/text, Excel and xlsx-compatible WPS .et, ODS, JSON/NDJSON and ZIP files; clean and infer types; score whether the data can support analysis (PROCEED, CONDITIONAL or STOP); run group comparisons, correlations, association tests and calendar-month trends with effect sizes and BH correction; and write self-contained HTML, Markdown, Quarto source or DOCX reports. STOP blocks analysis and reporting.'
+  zh: 'R 数据分析工作台，共六个工具：采集 CSV/TSV/文本、Excel 与 xlsx 兼容的 WPS .et、ODS、JSON/NDJSON 与 ZIP 文件；清洗并推断类型；评估数据能否支撑分析（PROCEED、CONDITIONAL 或 STOP）；执行组间对比、相关、分类关联与日历月趋势，报告效应量与 BH 校正；生成自包含 HTML、Markdown、Quarto 源文件或 DOCX 报告。STOP 会阻止分析与报告。'
