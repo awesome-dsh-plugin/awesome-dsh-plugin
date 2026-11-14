@@ -1,0 +1,6 @@
+url: https://github.com/imcaibaicai/dsh-auto-continue-inturn
+name: imcaibaicai/dsh-auto-continue-inturn
+category: session
+description:
+  en: 'When a turn is truncated by max-tokens, keeps the model writing inside the same turn instead of ending it with the warning bar and waiting for a manual continue; after a per-turn limit it hands over to cross-turn auto-continue plugins.'
+  zh: '被 max-tokens 截断时，让模型在同一轮内继续写下去，而不是弹出截断提示条、等你手动点继续；同轮次数达上限后交给跨轮续写插件。'
