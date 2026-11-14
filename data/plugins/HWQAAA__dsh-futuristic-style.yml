@@ -1,0 +1,8 @@
+url: https://github.com/HWQAAA/dsh-futuristic-style
+name: HWQAAA/dsh-futuristic-style
+category: theme
+description:
+  en: 'Cinematic 10-second cold-start animation with the original soundtrack, a 1.2 s dissolve into a looping anime chat background, and a frosted settings panel for DeepSeek Harness.'
+  zh: '为 DeepSeek Harness 提供带原声的 10 秒电影感冷启动动画、1.2 秒叠化转场，以及可循环的动漫聊天背景和毛玻璃设置面板。'
+icon: https://raw.githubusercontent.com/HWQAAA/dsh-futuristic-style/main/docs/icon.png
+# recheck after repository age requirement
