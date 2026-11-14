@@ -5064,6 +5064,7 @@ dsh plugin --profile web add dshmarket
 - [GIT121995/dsh-memory-gate](https://github.com/GIT121995/dsh-memory-gate) — 有界本地记忆 + CBDC 权威门控：SQLite + FTS5 claims，作用域召回并给出可解释的采用/核验/忽略决策与完整审计轨迹，/memory 命令，每次注入 ≤3 条/1200 字符，不增加额外模型调用。
 - [giter00/dsh-headroom](https://github.com/giter00/dsh-headroom) — 面向 DeepSeek Harness 的自动上下文压缩插件：在工具输出进入模型前压缩，并通过 CCR 检索工具保持所有有损压缩可逆。
 - [gjhhjfgh/mirror-dsh-adapter](https://github.com/gjhhjfgh/mirror-dsh-adapter) — 本地优先的记忆治理：把对话蒸馏成分类记忆，冲突交由人裁决，并预览下一轮会注入什么。
+- [Gladess1102/dsh-g-memory](https://github.com/Gladess1102/dsh-g-memory) — DeepSeek Harness 的跨会话语义记忆：用 EmbeddingGemma 2 在本地索引会话历史，按相关性召回过去上下文，并以明确标注为不可信上下文的框注注入；无 npm 运行时依赖，摘要合成默认关闭。
 - [GodCC6/dsh-claude-memory](https://github.com/GodCC6/dsh-claude-memory) — 只读桥接 Claude Code 已有项目记忆到 DSH：按 git 仓库根解析、注入前脱敏、按需检索工具，零依赖。
 - [GreatArrow-ai/dsh-greatarrow](https://github.com/GreatArrow-ai/dsh-greatarrow) — 通过 Streamable HTTP 将 dsh 连接到 GreatArrow.ai MCP 服务器，让智能体检索和保存与你其他 AI 客户端共享的工作区记忆、任务与决策；纯配置包，从 dsh 主目录的 great-arrow.token 读取令牌，从不读取环境变量。
 - [greyoak111/siyuan-codex-bridge](https://github.com/greyoak111/siyuan-codex-bridge) — 把 DeepSeek Harness 接到本机思源笔记桌面端：把笔记工具注册为 mcp__siyuan__<tool>，额外把思源里配置好的 AI 与其 agent 回路也做成一个工具（按档位门禁），附带笔记使用技能，并在每次调用上执行只读/创作/完整三级策略；思源关闭时工具列表依然可用。
@@ -10430,6 +10431,7 @@ dsh plugin --profile web add dshmarket
 - [cube-ai/dsh-feishu-channels](https://github.com/cube-ai/dsh-feishu-channels) — 把一个或多个飞书机器人应用接入本机 DeepSeek Harness（DSH）：每个机器人应用是一条频道，各自独立的模型、工作区、权限与私聊准入；频道下的每个私聊/群聊各有一条独立的 DSH 会话。基于 MichengAI/dsh-im-connect（Apache-2.0）改造，删去其它 IM 通道并重命名标识，因此可与上游同装。
 - [cube-ai/dsh-feishu-client](https://github.com/cube-ai/dsh-feishu-client) — DSH飞书客户端：1）用户（人）通过本插件提供UI访问远端智能体；2）本地DSH通过调用本插件提供工具访问远端智能体。支持的远端智能体包括且不限于：DSH、OpenClaw、WorkBuddy、Weknora等等。
 - [CWNU-Open-Source-Community/dsh-webgate](https://github.com/CWNU-Open-Source-Community/dsh-webgate) — Web GUI 远程访问：局域网二维码直连、cloudflared 快速隧道、frp 自有服务器反代，内置登录门户，并放行设置接口。
+- [CY-W-2000/dsh-lan-access](https://github.com/CY-W-2000/dsh-lan-access) — DSH 局域网/远程访问网关：把 Web 界面开放在本机或 0.0.0.0（密码保护或显式无密码模式，带过期快捷选项），并单独开放仅对话端口，供其他 Agent 通过 HTTP 接入，支持选择工作区、Token 或免 Token 认证与独立生效时间。
 - [cyuni1996/dsh-watch](https://github.com/cyuni1996/dsh-watch) — 在 Android 手表上继续 DeepSeek Harness 会话，支持通过电脑端向导安装手表应用。
 - [czp0312/dsh-ssh-workspace](https://github.com/czp0312/dsh-ssh-workspace) — 在当前 DSH 窗口的原生侧栏中管理 SSH / WSL / Docker 项目。目录按环境归组，每个项目独立选择全量远程后端或本机 Agent 轻量模式；共享全量连接统一管理，轻量连接独立控制，并可比较、选择性同步本机 Skill。主要面向 Windows 桌面客户端与装有 Python 3、Bash 的 Linux / WSL / Linux 容器远端（macOS / Linux 本机未实机验证）；轻量 SSH 需已有 SSHFS 挂载，Docker 尚未在真实守护进程上验收。
 - [DamonKoy/dsh-web-ui#dsh-remote-web-ui](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-remote-web-ui) — dsh web GUI 移动端远程控制：扫码配对 QR 入口、一次性配对 token。
