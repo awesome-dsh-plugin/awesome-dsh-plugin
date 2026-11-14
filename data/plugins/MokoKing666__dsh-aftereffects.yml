@@ -1,0 +1,7 @@
+url: https://github.com/MokoKing666/dsh-aftereffects
+name: MokoKing666/dsh-aftereffects
+category: workflow
+icon: https://raw.githubusercontent.com/MokoKing666/dsh-aftereffects/main/assets/icon.png
+description:
+  en: 'Drives Adobe After Effects from the chat: builds compositions from a declarative scene document or eleven built-in motion-graphics templates, then renders MP4, PNG sequences or stills. Adds ae_status, ae_compose, ae_template and ae_render, and boots a headless After Effects instance that exits when idle.'
+  zh: '在对话里直接驱动 Adobe After Effects：按声明式场景文档或十一个内置动效模板建合成，再渲染成 MP4、PNG 序列或静帧。提供 ae_status、ae_compose、ae_template、ae_render 四个工具，会拉起无界面 AE 实例并在空闲后自行退出。'
