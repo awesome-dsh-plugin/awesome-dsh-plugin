@@ -2315,7 +2315,7 @@ dsh plugin --profile web add dshmarket
 - [zhao-guang-ai/dsh-quote-annotate-pro](https://github.com/zhao-guang-ai/dsh-quote-annotate-pro) — DSH 会话与文档预览里的划词批注：带编号的引用块在输入框和已发送消息里始终可见、点一下跳回原文；docx / PDF / Markdown / 代码与 Excel 选区批注可攒起来一次性发送；批注框支持语音输入。
 - [zhaochengggg/dsh-a2ui-studio](https://github.com/zhaochengggg/dsh-a2ui-studio) — 受 A2UI 启发的模型生成应用卡片，提供持久机器目录、SSH 探测及经审阅授权的监控与控制操作。SSH 探测需 OpenSSH（ssh、ssh-keyscan、ssh-keygen）。
 - [zhaohongxuan/dsh-weread](https://github.com/zhaohongxuan/dsh-weread) — 通过微信读书 Skills API Key 提供书架、今日阅读、笔记日历、阅读统计、年度书墙、AI 总结与原文跳转的 Web 面板。
-- [zhaoqiminggg/dsh-approval-translator](https://github.com/zhaoqiminggg/dsh-approval-translator) — 在权限审批卡片下面加一个「解释这条操作」按钮：调用当前会话模型，把待批准的操作翻成大白话——做什么、碰哪些文件、会不会改动或删除、有没有隐私风险——再给出风险等级和允许或拒绝的建议。解释以简体中文生成。
+- [zhaoqiminggg/dsh-approval-translator](https://github.com/zhaoqiminggg/dsh-approval-translator) — 在权限审批弹窗下面加一个「解释这条操作」按钮：调用当前会话模型，把待批准的操作翻成大白话——做什么、碰哪些文件、会不会改动或删除、有没有隐私风险——再给出风险等级和允许或拒绝的建议。解释以简体中文生成；常见说法：审批解释、审批汉化、风险解释。
 - [zhaoxiagongsi001/dsh-prompt-forge](https://github.com/zhaoxiagongsi001/dsh-prompt-forge) — 输入框提示词优化：工具行一个按钮，用你已配置的模型渠道改写草稿，结果流式输出到贴着输入框上沿、不占布局的面板里。只有点「采纳」才会替换草稿，且生成中拒绝采纳——半截答案不会被写回；草稿含 @引用或附件时先确认一次，因为整段替换会把它们降级成纯文本。没有任何全局快捷键，密钥也不会进浏览器（模型调用在宿主半边完成）。
 - [ZhaoZeW/dsh-rollback](https://github.com/ZhaoZeW/dsh-rollback) — TRAE 式「回退到本轮对话发起前」：按轮次建立文件检查点，回滚工作区文件并在同一 session id 下原位截断模型上下文，已适配 DSH 0.1.7-rc.2。新增 /rollback doctor 契约自检、按当前磁盘状态实时计算的受影响文件 diff 预览（重启后依然准确）、一键「回退最近一轮」（快捷键 Ctrl+Shift+Z）、「回退后隐藏已回退消息」开关，以及英文界面文案。
 - [ZhaoZiyangShaanxi/dsh-netease-music](https://github.com/ZhaoZiyangShaanxi/dsh-netease-music) — 仅 Windows，需本机装有网易云音乐客户端。DSH Web 的网易云音乐播放器：收起是迷你播放条，点开是液态玻璃卡片（搜索 / 歌词 / 音量），点封面区切换成旋转黑胶视图；自动使用本机网易云客户端账号登录（cookie 仅在本机解密），VIP 曲目可播，并可把客户端正在播放的歌一键拉进来。
@@ -5812,7 +5812,7 @@ dsh plugin --profile web add dshmarket
 - [gitend/dsh-usd-brep](https://github.com/gitend/dsh-usd-brep) — NURBS BRep 实体建模工作台：自然语言输入、实时 3D 视口（测量/线框/适合）、STEP 导出，并通过托管 CPython venv 驱动 NVIDIA usd-brep 的 agent 工具。需要 CPython 3.12；usd-brep 仅有 64 位 Windows 与 Linux wheel。
 - [Github-CJX/dsh-tool-imagegen](https://github.com/Github-CJX/dsh-tool-imagegen) — 对话内联生图插件：模型在对话框直接出图，可基于参考图或上次生成结果连续图生图修改，附存储清理。
 - [gitroomhq/postiz-agent#dsh-postiz](https://github.com/gitroomhq/postiz-agent/tree/main/plugins/dsh-postiz) — 通过 MCP 将 DeepSeek Harness 连接到 Postiz：列出已连接的社交媒体渠道、获取各平台发帖规则，并向 X、LinkedIn、Instagram、Facebook、Threads、TikTok、YouTube、Reddit、Bluesky、Mastodon、Discord、Slack、Telegram 等平台排期、存草稿或发布帖子；附带 postiz 工作流技能。
-- [GIYN-S/dsh-mcloud](https://github.com/GIYN-S/dsh-mcloud) — 中国移动云盘（139）接入 DSH：浏览、上传、下载、转移网盘文件，并提供 12 个模型工具。它的 /api/dsh-mcloud 路由（登录、列目录、下载、移动、删除）通过 webServer.register 挂载，没有 DSH 的 Host/Origin 准入检查，所以浏览器里打开的任意网页都能经由它们操作已登录的云盘。
+- [GIYN-S/dsh-mcloud](https://github.com/GIYN-S/dsh-mcloud) — 中国移动云盘（139）接入 DSH：浏览、上传、下载、转移网盘文件，并提供 12 个模型工具。它的 /api/dsh-mcloud 路由会校验 Host 与 Origin，浏览器里打开的网页无法驱动已登录的云盘。
 - [goecho/dsh-generation](https://github.com/goecho/dsh-generation) — 提供 generation_fork 与 generation_run，用于拷贝 Agent preset 并在新会话上跑任务。
 - [gongyijie85/dsh-agent-frugality](https://github.com/gongyijie85/dsh-agent-frugality) — 多智能体防内耗防御插件：读取台账去重度量、免疫压缩规则区、完成机械门禁、低成本审查 lane。
 - [gongyijie85/dsh-repo-setup](https://github.com/gongyijie85/dsh-repo-setup) — 只读仓库体检引导工具（repo_setup_scan）：识别技术栈/测试/文档/git/数据库线索，给出插件、MCP 与卫生文件的安装建议。
@@ -8704,6 +8704,7 @@ dsh plugin --profile web add dshmarket
 - [shengyvself/dsh-autoresume](https://github.com/shengyvself/dsh-autoresume) — dsh 会话因 web 重启或上游瞬时故障（限流、5xx、余额/配额错误）中断时，自动注入「继续」让本轮接着跑，不需要手动点、不会丢上下文；带死循环守卫，重试没反应就把会话交回给你。
 - [shengyvself/narrative-prompt-polish](https://github.com/shengyvself/narrative-prompt-polish) — DSH 主输入框旁的 ✨ 一键提示词打磨：点击后 Agent 在侧边对话多轮改写草稿，你满意后再手动回填。
 - [shenhuanageshei/dsh-thincoder-suite](https://github.com/shenhuanageshei/dsh-thincoder-suite) — 导师评审逐轮收敛、工程模式写入需持设计令牌、把任务转交给更强的模型、并行多模型会诊；设置页可改各模型路由、超时与预算。
+- [shilaoban666/dsh-imperial-court](https://github.com/shilaoban666/dsh-imperial-court) — 把本机的 AI 编程命令行排成三省六部：一家工具拟方案，另一家审议或封驳，六部按依赖并行办差，御史逐件巡查，门下复核后由你批红。每道旨在独立的 git worktree 与分支里办，批红才合并。支持 Claude Code、Codex、Gemini CLI、Cursor CLI、OpenCode、Qwen Code、WorkBuddy 以及经 dsh headless 的 DSH 本体，内置列出安装命令的工具目录。另有把清单拆成多道旨的候旨队列、逐次调用的 token 与花销记账和预算，以及古罗马元老院英文版。
 - [shinerain1/dsh-evidence-lineage](https://github.com/shinerain1/dsh-evidence-lineage) — 通过 DSH 工具追踪网页摘录与结构化 Agent 汇报的来源关系，折叠有同源记录的重复正文，并导出可追溯证据。
 - [shinerain1/dsh-label-workbench](https://github.com/shinerain1/dsh-label-workbench) — 通过 DSH 工具管理可迭代文本标注，绑定规则版本、隔离旧任务结果、保留人工审核并导出可追溯数据集；需另行安装 Python 后端。
 - [shinerain1/dsh-ml-workbench](https://github.com/shinerain1/dsh-ml-workbench) — 将 MLflow 适配为 DSH 工具，管理本地 CSV 分类与回归实验的追踪、分支、比较和复现交付；需另行安装 Python 后端。默认情况下训练作为独立的本机工作进程运行，DSH 退出后仍会继续（executionMode 设为 dsh 则随 DSH 停止）；运行你自己的 Python 预处理或估计器代码要打开 allowCustomCode（默认关闭）；插件不发网络请求。
@@ -9792,7 +9793,7 @@ dsh plugin --profile web add dshmarket
 - [lucky01222/dsh-workbench-agent-studio](https://github.com/lucky01222/dsh-workbench-agent-studio) — DSH Web Agent 工作室：配置模型、提示词、按插件绑定的工具与 Skills；支持编辑工具结果的试运行和运行历史，保留会话能力快照，导出独立 Preset，并通过引导式创建预设生成 Agent 草稿。
 - [lucky8197/dsh-doc-guard](https://github.com/lucky8197/dsh-doc-guard) — 文档与代码一致性守护：版本号/更新记录表/结构树/模块清单/测试计数/交叉引用漂移审计与修复建议，全程只读。
 - [lucky8197/dsh-weekly-digest](https://github.com/lucky8197/dsh-weekly-digest) — 周报生成器：聚合最近 N 天的 git 提交、会话活动与每日记忆，自动生成 Markdown 周报，全程只读。
-- [Lumos-789/guster](https://github.com/Lumos-789/guster) — 按四个层级审计与治理 agent 上下文：单个仓库、一组相关仓库、知识中枢、整台机器。发现项目、指令文件、技能、工具、知识、项目状态、证据与凭据引用；报告漂移、同一事实多个家、断链、正文里不可验证的裸路径、预算超限、未索引知识、过期状态与未登记凭据；每个层级只算属于它的维度；并把问题转成可复核的迁移计划，每个文件移动前先备份。指标背后的格式契约落成了版本化规范（CTX 规则、markdownlint 式稳定编号），并遵循开源惯例——指令文件用 AGENTS.md 标准、索引用 llms.txt 形态链接列表。还能生成一个刻意保持精简的 Hub，承载长期知识与项目状态。包含零依赖 Python CLI 和两个 skill，凭据只引用路径、从不打印。需要 Python 3.9+（仅标准库）与 DSH 0.2.1-rc.2 或更新、低于 0.3.0 的版本。
+- [Lumos-789/guster](https://github.com/Lumos-789/guster) — 按四个层级审计与治理 agent 上下文：单个仓库、一组相关仓库、知识中枢、整台机器。发现项目、指令文件、技能、工具、知识、状态、证据与凭据引用；报告漂移、同一事实多个家、断链、预算超限、未索引知识、过期状态与未登记凭据；每个层级只算属于它的维度；并把问题转成可复核的迁移计划，每个文件移动前先备份。格式契约是版本化规范（CTX 规则、markdownlint 式稳定编号），遵循开源惯例——AGENTS.md 开放格式、llms.txt 形态索引、YAML front-matter 笔记头——现在附带对外发布的 JSON Schema 契约（draft 2020-12，覆盖 hub 清单与 plan JSON），编辑器 modeline 让 hub.yaml 零配置可校验。Hub 走声明式（schema 2、zones 支持 light 档、节可指向 hub 外），check 一条命令跑完 scan/doctor/score，状态写入原子且带锁；指标对缺失证据诚实——waiver 只让门禁变绿、不改分数。包含零依赖 Python CLI 和两个 skill，凭据只引用路径、从不打印。需要 Python 3.9+（仅标准库）与 DSH 0.2.1-rc.2 或更新、低于 0.3.0 的版本。
 - [luumod/dsh-desktop-lifecycle](https://github.com/luumod/dsh-desktop-lifecycle) — 在 Windows 上为 DeepSeek Harness Desktop 与 Web 提供「关闭程序」和「重启程序」控制，位于「设置 → 通用设置」。
 - [lw0129a/dsh-app-packager](https://github.com/lw0129a/dsh-app-packager) — uni-app x 项目打包流水线：读取本机 HBuilderX 版本，按版本推荐并一键配置对应的 iOS / Android / HarmonyOS 离线 SDK（面板卡片附官方下载入口），再按项目配置调用 HBuilderX CLI 打出、签名并上传；引擎同时以 list / doctor / check / build 四个工具暴露给 agent。
 - [lxp731/agents-plugins#dsh-service-control](https://github.com/lxp731/agents-plugins/tree/main/dsh-service-control) — 通过 `dsh --profile ctl` 管理 DSH 服务：systemd 生命周期（安装、启停、重启、自启、卸载）、持久化配置、健康探测与日志，附带 shell 补全与自更新。
@@ -9825,7 +9826,7 @@ dsh plugin --profile web add dshmarket
 - [mouyu6508-hue/dsh-fusion](https://github.com/mouyu6508-hue/dsh-fusion) — 检查 DeepSeek Harness 插件装配层的冲突：跨 bundle 重复的 loader 名（install-shadow）、同一个 id 被写成两个 name、一层要开一层要关、以及被后一层静默覆盖的配置键，并把覆盖合成终值补丁。带一条 DSH 起不来时也能跑的 CLI，另有一个会读运行时 loader 的 fusion_report 工具。
 - [mouyu6508-hue/dsh-preflight](https://github.com/mouyu6508-hue/dsh-preflight) — 管插件全生命周期的体检：装之前检查 dsh.bundle、引擎与 peer 兼容性、是否需要编译原生模块、平台限制，以及新插件的 patch 会不会挂出已存在的 loader 名（install-shadow 预判）；装之后把已装插件按能力分类；更新前对新版本跑同一套检查，只报这次更新引入的问题。带一条 DSH 起不来时也能跑的 CLI，和三个只读工具。
 - [Mowendao/dsh-win-proxy](https://github.com/Mowendao/dsh-win-proxy) — 为 DeepSeek Harness 提供 Windows 系统代理开关：写注册表并通知 WinINET 重载，同时切换 git、npm、pip 的代理配置，支持对话、/proxy 命令和设置页三个入口。
-- [Mr54233/dsh-restart-now](https://github.com/Mr54233/dsh-restart-now) — DSH 桌面版一键重启，五个入口可逐项开关：侧栏面板、侧栏底部、会话标题栏、设置 → 通用行、斜杠命令 /restart。只给主进程发关闭信号让宿主优雅退出（会话日志得以下盘），再由脱离进程树的助手自动拉起；可选守卫会等待进行中的任务或插件安装结束，重启结果写成回执，动作请求仅限本机同源，所有开关落 profile 配置文件。四个界面入口可单独关闭，斜杠命令始终可用。
+- [Mr54233/dsh-restart-now](https://github.com/Mr54233/dsh-restart-now) — DSH 桌面版一键重启（含仅关闭），六个入口：侧栏面板、侧栏底部、会话标题栏、Windows 顶部菜单项、设置 → 通用行、斜杠命令 /restart；五个界面入口可逐项开关，斜杠命令始终可用。停止前助手核验目标进程身份，可等待进行中的任务（插件安装中硬拦）；设置实时保存并有官方 toast 反馈，只读预检可查看重启将影响的状态，结果写成回执。支持 Windows 与 macOS。
 - [MrGnUm/dsh-image-webp-to-png](https://github.com/MrGnUm/dsh-image-webp-to-png) — 把 WebP 附件图片转码成 PNG，让带 alpha 通道的图能在无法解码 WebP 的 LLM 后端上加载（例如 llama.cpp）。
 - [MrYangyt/dsh-k8s](https://github.com/MrYangyt/dsh-k8s) — 基于本地 kubectl 的 Kubernetes 多集群管理面板：资源筛选、YAML 编辑、Pod 实时日志、交互式容器终端、工作负载重启与扩缩容，并同步 DSH 主题；支持侧栏入口和会话视图。需要 DSH 0.2.0-rc.2。
 - [multica-ai/dsh-multica-runtime](https://github.com/multica-ai/dsh-multica-runtime) — 让 dsh 运行时跑在 Multica 上。
