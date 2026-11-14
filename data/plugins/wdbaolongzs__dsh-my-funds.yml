@@ -1,0 +1,7 @@
+url: https://github.com/wdbaolongzs/dsh-my-funds
+name: wdbaolongzs/dsh-my-funds
+category: ui
+description:
+  en: 'Fund holdings panel for the sidebar: imports broker screenshots with Windows OCR, tracks daily P&L, holding return and DCA plans, and emails a morning estimate plus an evening settlement.'
+  zh: '侧边栏的基金持仓面板：用 Windows OCR 识别券商资产截图，跟踪每日盈亏、持有收益与定投计划，并每天早晚各发一封汇总邮件。'
+icon: https://raw.githubusercontent.com/wdbaolongzs/dsh-my-funds/main/assets/icon-180.png
