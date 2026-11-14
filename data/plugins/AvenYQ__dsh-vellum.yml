@@ -1,0 +1,7 @@
+url: https://github.com/AvenYQ/dsh-vellum
+name: AvenYQ/dsh-vellum
+category: ui
+icon: https://raw.githubusercontent.com/AvenYQ/dsh-vellum/main/assets/icon-180.png
+description:
+  en: 'Native cards inside DSH replies: when the model writes a vellum code block, it renders as a theme-following metrics, chart, comparison, checklist, steps, timeline, form, quiz or sortable table card; clicks, submits and answers come back to the conversation as the next message.'
+  zh: 'DSH 回复里的原生卡片：模型写一个 vellum 代码块，就渲染成跟随主题的指标、图表、方案对比、清单、步骤、时间线、表单、小测和可排序表格；点选、提交、答题的结果作为下一条消息回到对话。'
