@@ -1,0 +1,6 @@
+url: https://github.com/Avenger233/dsh-session-cost-board
+name: Avenger233/dsh-session-cost-board
+category: usage
+description:
+  en: 'Per-session cost board for DeepSeek Harness: reads the local session log, prices every assistant message usage at DeepSeek list rates (peak/off-peak windows, cache-hit, cache-miss and output buckets, plus web_search and web_fetch success fees), and lists each conversation by spend in Settings > 会话花费, with a live cost chip under the composer that can be hidden from the same settings page. Read-only local session data; no network calls, no uploads.'
+  zh: '按会话统计 DeepSeek Harness 花费：只读本机会话日志，把每条 assistant 消息的 usage 按 DeepSeek 官方价目逐笔计价（峰谷时段、缓存命中 / 未命中 / 输出三个桶，web_search 与 web_fetch 成功调用按次计费），在「设置 → 会话花费」按金额列出每个会话，并在输入框下方显示当前会话的实时花费标签（可在同一页开关隐藏）。不联网、不上传。'
