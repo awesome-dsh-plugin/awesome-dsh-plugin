@@ -1,0 +1,6 @@
+url: https://github.com/wangkohan/dsh-composer-draft-keeper
+name: wangkohan/dsh-composer-draft-keeper
+category: session
+description:
+  en: 'Keeps unsent composer text as a per-session draft in local storage, so it comes back after you switch sessions, switch pages, or restart the app; a sent or deliberately cleared draft does not come back.'
+  zh: 把未发送的文本草稿按会话存在本机，切会话、切页面、乃至重启应用之后回来仍在；已经发出或主动清空的草稿不会回灌。
