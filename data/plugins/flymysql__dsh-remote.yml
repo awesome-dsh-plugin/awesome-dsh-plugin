@@ -2,5 +2,5 @@ url: https://github.com/flymysql/dsh-remote
 name: flymysql/dsh-remote
 category: remote
 description:
-  en: 'SSH remote workspaces with an optional three-column IDE, highlighted editing, recursive search, terminals, Git diffs, and Agent tools for remote edits and builds.'
-  zh: 'SSH 远程开发工作区，支持可选三栏 IDE、高亮编辑、递归搜索、远程终端、Git 差异及 Agent 远程编辑与构建。'
+  en: 'SSH remote workspaces for DSH with parallel projects across hosts, file browsing and editing, recursive search, terminals, Git diffs, and Agent tools to edit, build and test remotely. Optional IDE layout.'
+  zh: 'DSH 的 SSH 远程工作区：多主机项目并行、文件浏览与编辑、递归搜索、终端、Git 差异，以及 Agent 远程编辑、构建与测试；可选 IDE 布局。'
