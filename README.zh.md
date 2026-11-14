@@ -3243,6 +3243,7 @@ dsh plugin --profile web add dshmarket
 - [student-jia/dsh-plugin-genshin-paimon-theme](https://github.com/student-jia/dsh-plugin-genshin-paimon-theme) — 把 DSH Web 界面换成原神白金风格：每次打开随机一张游戏内风景壁纸，全站使用原神界面字体，带派蒙风格菜单与运行状态元素环，可在派蒙/法涅斯两种人格间一键切换；仓库内置 262 张 1920x1080 壁纸，覆盖八个地区。
 - [sunshinezhi/dsh-scifi-splash](https://github.com/sunshinezhi/dsh-scifi-splash) — 浅色拟态主题：白色玻璃卡、大肥鱼水印、品牌渐变 logo，附带深色科技启动动画。
 - [SuperHercule985/Bleach](https://github.com/SuperHercule985/Bleach) — 井上织姬主题的暖金皮肤：两层插画背景、可调构图与清晰度的侧栏工作台、琥珀色消息气泡与奶油信纸输入框。
+- [superShen0916/dsh-work-skin](https://github.com/superShen0916/dsh-work-skin) — DSH 一键换肤提供 13 套插画主题，支持自适应壁纸、缩略图预览及恢复默认外观。
 - [suuuuunamei/dsh-kaze-tachinu-theme](https://github.com/suuuuunamei/dsh-kaze-tachinu-theme) — 宫崎骏《起风了》主题皮肤：全屏电影壁纸配毛玻璃界面，交互色统一为天蓝，侧边栏与首页改用自绘矢量徽标，输入卡重绘为主题化占位文案的云海蓝胶囊，并为消息列加 40px 底部渐隐。
 - [TABmk/dsh-theme-ascetic](https://github.com/TABmk/dsh-theme-ascetic) — 紧凑的 ASCII / 终端风格皮肤：19 套配色（可在状态栏切换）、3 档界面密度、vim 风格状态栏、空会话中的 ascii.rest 字符画，以及可自定义 Logo 文字的复古开机动画。
 - [TaiyakiOffical/claude-style-skin](https://github.com/TaiyakiOffical/claude-style-skin) — Claude 风格暖调编辑 DSH Web 皮肤：象牙白/暖黑双画布、陶烬橙点睛、衬线标题+无衬线界面+等宽标签、发丝线与胶囊 CTA，亮暗双主题跟随系统。
@@ -7497,6 +7498,7 @@ dsh plugin --profile web add dshmarket
 - [TaoruiLiu19/dsh-gsv](https://github.com/TaoruiLiu19/dsh-gsv) — 将本地高性能 TTS 引擎 GSV-TTS-Lite 实时接入 DeepSeek Harness：语音预设、自动朗读、引擎配置助手、朗读按钮与设置面板。
 - [小星辰任意语音](https://github.com/theskywilldawn/dsh-littlestar-anything-voice) — 点一下 Q 版立绘挂件，就用本机 IndexTTS 2.5 把助手回复念出来。一个角色 = 一段参考音频，谁的声音都能当角色；没有立绘也能用，挂件会提示「本角色暂无图片，请添加」。不含任何音色与立绘，角色库在用户自己机器上。需要本地已装 IndexTTS 2.5。
 - [toddpan/dsh-xiaozhi](https://github.com/toddpan/dsh-xiaozhi) — 把小智语音助手接入 DSH Web：DSH 作为 MCP 工具提供方，把 35 个 DSH Web 接口封装成 16 个语音友好工具，覆盖工作区、会话、对话、模型、设置与文件；默认出站 WebSocket 连到小智 MCP 接入点（无需公网 IP 和端口转发），可同时绑定多台设备，并自带实时刷新状态的 DSH 设置页。
+- [triagmas/smart-dictation-dsh#smart-dictation-bundle](https://github.com/triagmas/smart-dictation-dsh/tree/main/packages/smart-dictation-bundle) — Local Russian dictation for the DSH composer with GigaAM v3, English technical terms, punctuation, and a personal glossary that learns only after confirmation. Audio and transcripts never leave the machine.
 - [underworld-oddball/dsh-volume-knob](https://github.com/underworld-oddball/dsh-volume-knob) — 输入框工具行里、模型选择框左边的扬声器按钮——单击翻到「你最新提问的开头」并闪烁光标，从那里读到最新回复结尾（走 dsh-tts，回退浏览器语音）；按住图标后在页面上单击即可挑选任意朗读起点；按住上滑调出竖式混音台，分别控制页内媒体音量与系统输出音量。
 - [Vansnc/dsh-feiyu-say](https://github.com/Vansnc/dsh-feiyu-say) — 调用阿里百炼 WebSocket TTS 合成语音，返回 WAV 文件与试听地址，并可按轮提示模型使用语音。需要百炼 API Key 与 ffmpeg，文本会发送到阿里云；插件本身不发消息，怎么发由当前会话的传输方式决定。
 - [wangzhanchao883/dsh-hold-to-talk](https://github.com/wangzhanchao883/dsh-hold-to-talk) — 输入框上的单手、免键盘输入：鼠标在输入框按住、说话、松手，文字直接进草稿；上滑取消，不留半句。不用去瞄麦克风按钮，也不用记快捷键，手始终不用离开输入区——另一只手正忙的时候，这一点才是关键。识别完全在本机完成（SenseVoice + sherpa-onnx），无需 API key，音频不出本机。
