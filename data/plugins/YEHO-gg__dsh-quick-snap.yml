@@ -1,0 +1,6 @@
+url: https://github.com/YEHO-gg/dsh-quick-snap
+name: YEHO-gg/dsh-quick-snap
+category: tools
+description:
+  en: Feeds a screen capture or the clipboard image straight into the current conversation as an attachment, with no temp files or manual upload.
+  zh: 把屏幕截图或剪贴板里的图直接作为附件送进当前对话，不用另存文件、不用手动上传。
