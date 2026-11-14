@@ -1,0 +1,1 @@
+url: https://github.com/moldkey/dsh-calc-battery name: moldkey/dsh-calc-battery category: calc description:   en: 'DSH plugin dsh-calc-battery'   zh: '算设备电池能用多久。输入容量、功耗，或反推需要的电池容量。纯本地计算，不联网。'
