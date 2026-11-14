@@ -1,0 +1,7 @@
+url: https://github.com/aaron999-h/dsh-restart-account
+name: aaron999-h/dsh-restart-account
+category: ui
+description:
+  en: Adds a restart row to the DSH desktop sidebar account menu, below sign out, that closes the app and starts it again.
+  zh: 在 DSH 桌面端侧边栏账号菜单里，「退出登录」下方增加「重启 DSH」，点击后关闭应用并重新打开。
+icon: https://raw.githubusercontent.com/aaron999-h/dsh-restart-account/main/assets/icon-180.png
