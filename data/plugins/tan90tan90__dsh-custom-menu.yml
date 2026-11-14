@@ -1,0 +1,7 @@
+url: https://github.com/tan90tan90/dsh-custom-menu
+name: tan90tan90/dsh-custom-menu
+category: ui
+description:
+  en: 'Sidebar launcher: pin your own entries — one click opens a local folder in the file manager or a web page in a new tab. Can also group and hide the built-in entries. No embedded browser.'
+  zh: '侧栏启动器：钉上自己的入口，点一下直接打开本地文件夹（资源管理器）或网页（新标签页）；另可分组、隐藏自带菜单项。不做内嵌浏览。'
+icon: https://raw.githubusercontent.com/tan90tan90/dsh-custom-menu/main/assets/icon-180.png
