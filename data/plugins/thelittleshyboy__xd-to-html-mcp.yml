@@ -1,0 +1,8 @@
+url: https://github.com/thelittleshyboy/xd-to-html-mcp
+name: thelittleshyboy/xd-to-html-mcp
+category: tools
+description:
+  en: 'Read .xd artboards, layers, text, styles, images, components, and prototype links. Render artboards and individual layers using your local Chrome or Edge browser. Export full-height HTML featuring selectable DOM text, transparent PNG graphics, component state transitions, hover/click interactions, and artboard navigation.'
+  zh: '读取.xd画板、图层、文本、样式、图像、组件和原型链接。通过本地 Chrome/Edge 浏览器渲染画板和各个图层。导出具有可选 DOM 文本、透明 PNG 图形、组件状态过渡、悬停/点击交互和画板导航的全高 HTML。'
+tarball: https://github.com/thelittleshyboy/xd-to-html-mcp/releases/download/V0.1.2/xd-to-html-mcp-harness-0.1.2.tgz
+icon: https://raw.githubusercontent.com/thelittleshyboy/xd-to-html-mcp/main/assets/icon-180.png

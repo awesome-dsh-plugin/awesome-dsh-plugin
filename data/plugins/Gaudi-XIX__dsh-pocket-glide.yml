@@ -2,5 +2,5 @@ url: https://github.com/Gaudi-XIX/dsh-pocket-glide
 name: Gaudi-XIX/dsh-pocket-glide
 category: remote
 description:
-  zh: 把桌面 DSH 的电话面做成克制遥控器：白名单透传会话读写、发消息与权限审批，页面由宿主直接产出、无构建链，扫码配对，隧道地址变了自动推回手机。
-  en: 'A deliberately small phone remote for a running desktop DSH: allowlisted session read/write, message send and permission approval, host-rendered pages with no build step, QR pairing, and tunnel-URL recovery.'
+  zh: '把 DSH 的手机面做成拇指够得着的一列：宿主按窄屏直接产页面，零构建、零前端框架，不搬桌面像素。排序是响应速度 > 状态诚实 > 熟悉感 > 品牌感 > 美观。微信提醒点开进工作区，会话就在最上面；发送乐观上屏，流式不拽滚动，权限审批与排队在手机上完成；新建会话、换模型、传图片文件、看子代理都有。主页右下角可进 DS Bot 团队——成员私聊、群聊、工具审批卡。局域网扫码直连，或走出站 Cloudflare 临时隧道，换址后由下一条推送带回新地址。壳字节预算写进测试。'
+  en: 'Turn DSH''s phone side into one thumb-reachable column: the host renders pages for narrow screens, zero build, no front-end framework, no desktop pixels streamed. The order is responsiveness > honest state > familiarity > brand > looks. A WeChat push opens the workspace with the conversation on top; sends appear optimistically, streaming never steals your scroll, approvals and queued prompts happen on the phone, plus new sessions, model switching, image and file uploads, and sub-agent rows. The DS Bot team is a tap away with member DMs, group chat and tool-approval cards. Pair over LAN by QR, or go out through a Cloudflare quick tunnel; after a restart the next push carries the new address. A shell byte budget is asserted in tests.'

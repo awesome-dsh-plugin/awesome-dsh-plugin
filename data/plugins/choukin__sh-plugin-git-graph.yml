@@ -1,0 +1,6 @@
+url: https://github.com/choukin/sh-plugin-git-graph
+name: choukin/sh-plugin-git-graph
+category: git
+description:
+  en: "Read-only Git graph tab for the DSH right sidebar — colored branch/merge lanes, HEAD / branch / tag / remote badges, commit details with a changed-file tree and per-file diff, virtualized rows that page through large histories — plus a branch chip in the composer that searches local and remote branches and switches with guards against uncommitted changes, detached worktrees and in-progress merges or rebases."
+  zh: "DSH 右侧栏的只读 Git 图谱标签页：彩色分支/合并泳道，HEAD / 分支 / 标签 / 远程徽标，提交详情含变更文件树与单文件 diff，行虚拟化、大量提交也翻页流畅；输入框里还有一枚分支胶囊，可搜索本地与远程分支并切换，切换前会检查未提交改动、已被其他 worktree 检出、进行中的 merge / rebase，会覆盖改动时直接拒绝。"

@@ -1,0 +1,7 @@
+url: https://github.com/gongfpp/dsh-man-031
+name: gongfpp/dsh-man-031
+category: usage
+description:
+  en: 'Shows a Kobe iced-tea side popup and reports per-turn costs or token counts with bundled offline audio. Uses dsh-cost-meter first, or estimates each request from native usage and public prices. Includes twenty cost phrases, four token phrases, CNY/USD, three-decimal rounding and custom previews; no runtime TTS service or API key. The bundled voice clips are pre-synthesized offline and the portrait is a fan-made image; the package declares UNLICENSED. When it has to estimate a cost itself it fetches a public price table from raw.githubusercontent.com (Han-1413141/dsh-cost-meter) and the USD/CNY rate from open.er-api.com, at most once a day, and sends no session data.'
+  zh: '每轮结束弹出科比冰红茶人物，离线播报本轮费用或 Token 用量；费用优先使用 dsh-cost-meter，不可用时按各请求原生用量与公开单价估算并标明来源。含二十句金额台词、四句 Token 台词，支持人民币/美元、三位小数四舍五入及自定义试听；无需在线语音服务或 API Key。内置的语音片段是预先合成的离线音频，人物图是网络二创图；包的许可证声明为 UNLICENSED。需要自己估算费用时，它最多每天一次从 raw.githubusercontent.com（Han-1413141/dsh-cost-meter）取公开价格表、从 open.er-api.com 取美元兑人民币汇率，不发送会话数据。'
+icon: https://raw.githubusercontent.com/gongfpp/dsh-man-031/main/icon.png

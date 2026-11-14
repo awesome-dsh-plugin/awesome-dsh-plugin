@@ -1,0 +1,7 @@
+url: https://github.com/muhadif/dsh-wallet-tracker
+name: muhadif/dsh-wallet-tracker
+category: tools
+description:
+  en: 'Multi-chain wallet tracker: keep a named book of Solana, EVM and Bitcoin addresses, see balances, prices and estimated FIFO PnL per wallet or combined, and open any token for its chart, latest trades and top holders. Wallet addresses are sent to public data services (DexScreener, Jupiter, GeckoTerminal, Solscan and similar) to fetch balances, prices and trades.'
+  zh: '多链钱包追踪器：用命名账本记录 Solana、EVM 和 Bitcoin 地址，按单个钱包或合并查看余额、价格与按 FIFO 估算的盈亏，并可打开任一代币查看图表、最新成交和大户持仓。钱包地址会发给公开的数据服务（DexScreener、Jupiter、GeckoTerminal、Solscan 等）以获取余额、价格与成交。'
+icon: https://raw.githubusercontent.com/muhadif/dsh-wallet-tracker/main/docs/icon-180.png

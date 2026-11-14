@@ -1,0 +1,6 @@
+url: https://github.com/gosutry/dsh-conversation-float
+name: gosutry/dsh-conversation-float
+category: ui
+description:
+  en: Turns a DSH conversation into a floating window that stays usable over plugin and automation pages — on screen, minimised to a left-sidebar taskbar row, or docked into the right sidebar.
+  zh: 把 DSH 对话变成悬浮窗，在插件页与自动化页之上仍旧可用——浮在页面上、缩到左侧边栏任务栏行，或停靠进右侧边栏。

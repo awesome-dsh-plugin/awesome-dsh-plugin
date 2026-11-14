@@ -1,0 +1,6 @@
+url: https://github.com/jkm6221/dsh-workspace-folders
+name: jkm6221/dsh-workspace-folders
+category: tools
+description:
+  en: 'Attach extra folders to one sidebar workspace: attached folders become writable for the file tools and the shell, are listed to the agent in its runtime context, and are added or removed from the workspace row context menu or the workspace_folders tool; each workspace keeps its own list.'
+  zh: '给侧栏里的某个工作区附加额外文件夹：附加后文件工具与终端可读写这些目录，模型能在运行时上下文里看到它们，并可从工作区行右键菜单或 workspace_folders 工具增删；每个工作区各自维护自己的列表。'

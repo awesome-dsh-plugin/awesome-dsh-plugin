@@ -1,0 +1,7 @@
+url: https://github.com/Blacstar7/dsh-fps-workbench
+name: Blacstar7/dsh-fps-workbench
+category: ui
+description:
+  en: Four-pointed star (FPS) adds long-task status, tool summaries, session outputs, persistent attachment drafts, native voice integration, provider usage, compatibility checks, and optional image generation to DSH.
+  zh: Four-pointed star（FPS）为 DSH 增加长任务状态、工具摘要、会话产物、附件持久化、原生语音接入、服务商用量、兼容性自检和可选生图。
+tarball: https://github.com/Blacstar7/dsh-fps-workbench/releases/download/v0.1.80/fps-workbench-0.1.80.tgz

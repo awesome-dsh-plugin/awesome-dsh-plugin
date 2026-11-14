@@ -1,0 +1,7 @@
+url: https://github.com/echoVic/dsh-workspace-ide
+name: echoVic/dsh-workspace-ide
+category: ui
+description:
+  en: 'A VS Code-like workspace panel with a JetBrains-inspired editor: lazy file tree, TypeScript code viewer with syntax highlighting, soft-wrap, find & replace, Quick Open, multi-tab drafts, bracket matching/auto-pair, workspace-wide text search, git status/history with coloured diffs, six VS Code palettes plus follow-DSH, Markdown and image/SVG previews. Nine authenticated host routes serve the filesystem, images, git reads and a quick-open file index.'
+  zh: '类 VS Code 的工作区面板，编辑器对照 JetBrains 打磨：懒加载文件树、带语法高亮的 TypeScript 代码视图与软换行、文件内查找替换、Quick Open、多标签草稿、括号匹配/自动配对，全工作区文本搜索、Git 状态/历史与彩色 diff、六套 VS Code 配色并支持跟随 DSH 主题、Markdown 与图片/SVG 预览；Host 端九条鉴权路由提供文件系统、图片、Git 读取与 Quick Open 文件索引。'
+icon: https://raw.githubusercontent.com/echoVic/dsh-workspace-ide/main/assets/icon-180.png

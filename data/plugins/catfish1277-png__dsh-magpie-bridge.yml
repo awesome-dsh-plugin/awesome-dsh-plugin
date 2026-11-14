@@ -1,0 +1,7 @@
+url: https://github.com/catfish1277-png/dsh-magpie-bridge
+name: catfish1277-png/dsh-magpie-bridge
+category: model
+description:
+  en: Automatically discovers the local Magpie gateway to sync chat models, enables Codex and Gemini image generation, and configures image sources for eligible workbenches.
+  zh: 自动发现本机 Magpie 网关并同步聊天模型，支持 Codex 与 Gemini 生图并自动配置匹配的工作台生图来源。
+tarball: https://github.com/catfish1277-png/dsh-magpie-bridge/releases/download/v1.0.0/dsh-magpie-bridge-1.0.0.tgz

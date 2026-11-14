@@ -1,0 +1,6 @@
+url: https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-plan-tab-autoclose
+name: feng-yifan/dsh-plugins#dsh-plan-tab-autoclose
+category: usage
+description:
+  en: 'After you approve a plan review, automatically close every plan tab of that session in the right sidebar, including tabs left by earlier revision rounds.'
+  zh: '点「同意执行」批准计划、计划模式退出后，自动关闭该会话右侧边栏里的全部计划标签页，含多轮修订留下的多个。'

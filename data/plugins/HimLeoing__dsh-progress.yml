@@ -1,0 +1,7 @@
+url: https://github.com/HimLeoing/dsh-progress
+name: HimLeoing/dsh-progress
+category: ui
+description:
+  en: 'A draggable task progress panel with local estimates, independent teammate progress, optional AI observations, and built-in probe cost estimates. Release candidate for the Web profile only; requires Node >=24.9.0 and Harness >=0.2.2-rc.1, tested on 0.2.2-rc.3. AI assistance is off by default; enabling observations uses billable tokens from the current session provider. Renamed to dsh-progress; eligible legacy progress data is copied without removing the original files.'
+  zh: '可拖动的任务进度面板，展示本地估算、独立队友进度、可选 AI 评估与内置探针费用估算。候选版本，仅限 Web profile，需要 Node >=24.9.0 与 Harness >=0.2.2-rc.1，已验证 0.2.2-rc.3。AI 辅助默认关闭，开启评估后会消耗当前会话提供方的计费 token。已更名为 dsh-progress；可迁移的旧版进度数据会复制保留，原文件不删除。'
+tarball: https://github.com/HimLeoing/dsh-progress/releases/download/v0.1.1-rc3/dsh-progress-0.1.1-rc3.tgz

@@ -3,5 +3,5 @@ name: CynthiaYX/dsh-plan-act-models
 category: model
 tarball: https://github.com/CynthiaYX/dsh-plan-act-models/releases/latest/download/dsh-plan-act-models.tgz
 description:
-  en: A simplified version of the Plan/Act feature in the RooCode and Cline VS Code extensions, binding one provider, model and reasoning effort to plan mode and another to act mode, with per-workspace overrides.
-  zh: 简化RooCode和Cline在VSCode插件上的功能，为 Plan 与 Act 两种模式各绑定一套 provider、模型与思考复杂度，支持按工作区覆盖。
+  en: 'A mode dropdown in the composer that switches models through the host''s own session.selectModel — Plan, Act and any number of user-defined modes, each with its own provider, model, reasoning effort and optional instruction that joins the system prompt while that mode is active — plus a soft switch into Plan mode and a forced switch to Act when a plan is approved, with per-workspace overrides for Plan and Act.'
+  zh: 在对话框里加一个模式下拉框，通过宿主自己的 session.selectModel 换模型：Plan、Act 与任意个自定义模式各自绑定 provider、模型、思考复杂度，并可各带一段在该模式生效时隐式加入系统提示词的指令；进入 plan 时软切换到 Plan，批准计划时强制切到 Act，Plan 与 Act 支持按工作区覆盖。

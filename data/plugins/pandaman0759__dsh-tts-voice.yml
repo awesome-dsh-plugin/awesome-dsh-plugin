@@ -1,0 +1,7 @@
+url: https://github.com/pandaman0759/dsh-tts-voice
+name: pandaman0759/dsh-tts-voice
+category: voice
+description:
+  en: 'End-of-turn voice summary: the model calls voice_say once before finishing a reply so the conclusion is spoken through Breeze TTS, with Chinese bracket audio tags (laughter, sighs, pauses) and optional performance instructions. Audio is synthesized host-side and played from browser memory without ever touching disk; the character limit is a writing target for the model, not a cut-off, so long lines still play in full. The API key stays in the credential store, and an optional daily Breeze check-in is included. Needs a Breeze API key and sends the spoken text to the Breeze service; its HTTP routes (including the settings route that stores the key) have no DSH access check.'
+  zh: '每轮收尾语音：模型在最终回复前调用一次 voice_say，把结论经 Breeze TTS 念出来；支持中文方括号音频标签（轻笑、叹气、停顿）和可选表演指令。音频在 host 侧合成、浏览器内存里播放，全程不落盘；字数上限只是给模型的写作要求，不是截断线，超了照样整句播。API KEY 存凭据库，另带可选的 Breeze 每日签到。需要 Breeze API 密钥，朗读的文本会发给 Breeze 服务；它的 HTTP 路由（包括保存密钥的设置路由）没有 DSH 的访问检查。'
+icon: https://raw.githubusercontent.com/pandaman0759/dsh-tts-voice/main/assets/icon-180.png

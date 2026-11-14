@@ -1,0 +1,7 @@
+url: https://github.com/Sanshui258/dsh-hwp-translate
+name: Sanshui258/dsh-hwp-translate
+category: docs
+description:
+  en: 'Translates .hwp/.hwpx (Hangul) documents into Chinese while keeping tables, bullets and indentation. Registers two offline tools: hwp_extract returns the document segments as JSON, and hwp_apply writes {segment id: translation} back and returns the output path. Translation is done by the session model, so no API key is needed; the translator ships inside the package. Windows only; legacy .hwp needs Hangul installed, .hwpx does not.'
+  zh: '把 .hwp/.hwpx（한글）文档翻成中文，保留表格、项目符号与缩进。注册两个离线工具：hwp_extract 返回文档段落 JSON，hwp_apply 按 {段落 id: 译文} 写回并返回输出路径。翻译由会话模型完成，不需要 API Key；翻译器随包分发。仅 Windows；旧版 .hwp 需要本机 한글，.hwpx 不需要。'
+icon: https://raw.githubusercontent.com/Sanshui258/dsh-hwp-translate/main/icon.png

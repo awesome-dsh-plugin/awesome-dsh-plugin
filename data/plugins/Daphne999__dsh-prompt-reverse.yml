@@ -1,0 +1,6 @@
+url: https://github.com/Daphne999/dsh-prompt-reverse
+name: Daphne999/dsh-prompt-reverse
+category: tools
+description:
+  en: 'Reverse-engineer an image style into a reproducible prompt: measures palette, brightness, contrast, saturation, colour temperature, sharpness, grain and aspect with pure algorithms, fills only the semantic slots you confirm (subject, action, mood, camera, style), and reports which slots are still missing. Shipped with a negative prompt derived from the measured deviations.'
+  zh: '把一张图的风格反推成可复现的提示词：用纯算法测出配色、亮度、对比、饱和、色温、锐度、颗粒与画幅，语义槽（主体、动作、情绪、镜头、风格）只填你确认过的，缺的槽位会明确报出来；同时给出由测得偏差反推的负向提示词。'

@@ -1,0 +1,7 @@
+url: https://github.com/good-saltfish/dsh-novel-agent
+name: good-saltfish/dsh-novel-agent
+category: workflow
+tarball: https://github.com/good-saltfish/dsh-novel-agent/releases/download/v0.2.3/dsh-novel-agent-0.2.3.tgz
+description:
+  en: 'Right-sidebar novel studio that treats a chapter as a pipeline with checkable artefacts instead of one long prompt: scaffold a project, inspect the exact context pack a chapter gets, generate 2-6 parallel candidates and keep the one you pick, then run chapters in sequence with per-chapter progress on disk so it survives an engine restart. Length band, cross-chapter Jaccard and drift ratio are enforced in code rather than by model self-grading; rejections come back as repair evidence for up to two rewrites. AI-fingerprint metrics are reported against a 3956-chapter human baseline but never block, because the distributions overlap. Ships 7 agent tools. The writing engine is a separate Python package that the plugin installs on first use. Needs Python 3.10+ on PATH (or a path set in the plugin settings).'
+  zh: '右栏小说工作台，把「写一章」当成有可核对产物的流水线而不是一段长 prompt：生成骨架，先看清这一章会拿到什么上下文包，同一章一次生成 2–6 版候选挑中才落盘，再按章连写且进度写进磁盘，引擎重启不丢。字数区间、跨章 Jaccard、漂移比写在代码里而不靠模型自评，打回内容回灌为修复证据，最多重写两次；AI 指纹只对照 3956 章人类基线报数、故意不拦，因为两个分布本身重叠。带 7 个 agent 工具。写作引擎是独立 Python 包，首次使用时由插件自己装上。需要 PATH 里有 Python 3.10+（或在插件设置里填解释器路径）。'

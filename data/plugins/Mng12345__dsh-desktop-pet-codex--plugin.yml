@@ -1,5 +1,5 @@
 url: https://github.com/Mng12345/dsh-desktop-pet-codex/tree/main/plugin
-name: Mng12345/dsh-desktop-pet-codex#plugin
+name: Mng12345/dsh-desktop-pet-codex
 category: fun
 description:
   en: 'A desktop pet for DeepSeek Harness: an always-on-top character and a roster panel that show what the watched conversations are doing, with seven animations, Workspace grouping, subagents drawn under their parent, and one click to open a session. Ships Windows, macOS (Intel and Apple silicon) and Linux window binaries in the package, so installing runs no install scripts and needs no build step.'

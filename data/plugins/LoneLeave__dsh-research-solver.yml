@@ -1,0 +1,7 @@
+url: https://github.com/LoneLeave/dsh-research-solver
+icon: https://raw.githubusercontent.com/LoneLeave/dsh-research-solver/main/assets/icon.png
+name: LoneLeave/dsh-research-solver
+category: workflow
+description:
+  en: 'Research-style problem solving in four gated stages: record sources by retrieval tier with local before web, turn each shortfall of existing tools into a gap that needs evidence, score candidates against weighted metrics with a deterministic engine, fuse or improve the weak ones, then iterate on measured deltas. Also organizes a directory into human-facing and machine-facing trees.'
+  zh: '把解题当论文做：资料按检索阶梯登记（先本地后联网），别人的不足必须挂证据成为 gap，方案按加权指标交给确定性评分引擎打分，针对短板融合改进后用量化增量迭代；另附目录治理，把文件分成给人用与给 AI 用的两棵树。'

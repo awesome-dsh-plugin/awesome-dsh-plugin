@@ -1,0 +1,7 @@
+url: https://github.com/yjh248619/dsh-select-assist-plus
+name: yjh248619/dsh-select-assist-plus
+category: ui
+description:
+  en: Windows selection overlay for DSH that explains, summarizes or translates the selected text in any app; answers render in a native always-on-top panel with LaTeX formula support, multiple panels can stay open, and each can be folded or minimized to the taskbar.
+  zh: Windows 划词浮窗：在任意应用里选中文字后解释、总结或翻译，答案落在原生置顶浮窗里，支持 LaTeX 公式渲染、多窗口并存、折叠与最小化到任务栏。
+icon: https://raw.githubusercontent.com/yjh248619/dsh-select-assist-plus/main/assets/icon-180.png

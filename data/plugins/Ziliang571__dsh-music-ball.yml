@@ -1,0 +1,7 @@
+url: https://github.com/Ziliang571/dsh-music-ball
+name: Ziliang571/dsh-music-ball
+category: fun
+tarball: https://github.com/Ziliang571/dsh-music-ball/releases/download/v1.0.0/dsh-music-ball-1.0.0.tgz
+description:
+  en: 'Draggable music ball for the DSH Web UI with a local library, album covers, playlist, favorites, collections, cover zoom, auto-hide, and source-aware deletion.'
+  zh: 可拖动的 DSH Web UI 音乐悬浮球，支持本地音乐库、专辑封面、播放列表、收藏夹、封面缩放、半隐身与源文件删除提示。

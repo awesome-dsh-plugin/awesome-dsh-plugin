@@ -1,0 +1,7 @@
+url: https://github.com/litterbit/dsh-plugin-moss-tts
+name: litterbit/dsh-plugin-moss-tts
+category: voice
+description:
+  en: 'Reads Harness replies aloud with the MOSS-TTS-Nano-100M C++ CPU engine: fully offline with no API key, one-click engine download verified against the release sha256sums.txt, auto-read of settled replies plus a read button on every reply, and playback that starts while synthesis continues. The weights are installed once and shared with the companion CLI and web playground. Windows x64 only, because the engine ships for that platform only.'
+  zh: '用 MOSS-TTS-Nano-100M 的 C++ CPU 引擎朗读 Harness 回复：完全离线、不需要 API key，一键下载引擎并用发布页的 sha256sums.txt 校验，回复定稿自动朗读、每条回复也能单独朗读，边合成边播放。权重只装一份，与同项目的命令行和网页试听台共用。仅限 Windows x64，因为引擎只提供该平台的版本。'
+icon: https://raw.githubusercontent.com/litterbit/dsh-plugin-moss-tts/main/logo.png

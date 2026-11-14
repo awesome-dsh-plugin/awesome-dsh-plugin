@@ -1,0 +1,7 @@
+url: https://github.com/Niesc-F/dsh-fastfetch
+name: Niesc-F/dsh-fastfetch
+category: tools
+description:
+  en: 'A fastfetch-style system and DSH panel: one slash command (/fastfetch or /ff) and one simple agent tool render OS, kernel, host, CPU, GPU, memory, every disk and local IP address, plus DSH version, model, session mode, plugin and skill counts into a colored terminal card, with a settings page that edits every field.'
+  zh: 'fastfetch 风格的系统信息与 DSH 运行环境面板：/fastfetch 或 /ff 一条命令、一个简单的 Agent 工具，输出操作系统、内核、主机、CPU、显卡、内存、全部磁盘、本地 IP 地址，以及 DSH 版本、当前模型、会话模式、插件与技能数量，渲染成彩色终端卡片，所有字段都能在设置页里改。'
+icon: https://raw.githubusercontent.com/Niesc-F/dsh-fastfetch/master/assets/icon-512.png

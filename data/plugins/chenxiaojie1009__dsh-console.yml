@@ -1,0 +1,7 @@
+url: https://github.com/chenxiaojie1009/dsh-console
+name: chenxiaojie1009/dsh-console
+category: dev
+description:
+  en: 'Serial and SSH device console: the panel model turns a plain requirement into commands, asks before running them, and shows Chinese annotations plus output explanations.'
+  zh: '串口与 SSH 设备控制台：面板内模型按需求生成命令、执行前确认、中文注释与输出解读。'
+tarball: https://github.com/chenxiaojie1009/dsh-console/releases/download/v1.3.2/dsh-console-1.3.2.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/GuYou9799/dsh-turn-sieve
+name: GuYou9799/dsh-turn-sieve
+category: session
+description:
+  en: 'Prune low-value exchanges or single messages from a session: select them inline in the chat, drop them from the model-visible surface and the transcript, undo in one step.'
+  zh: 把会话里低价值的问答或单条消息筛除：在对话内原位选中，从模型可见内容与对话界面中移除，可一步撤销。

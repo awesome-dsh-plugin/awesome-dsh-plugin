@@ -1,0 +1,6 @@
+url: https://github.com/TacitSay/dsh-compact-arsenal
+name: TacitSay/dsh-compact-arsenal
+category: memory
+description:
+  en: 'Configurable context compaction with three independently switchable sections — whole-context checkpoint, reasoning compression and tool-output pruning — each with its own pressure threshold and method. Mechanical modes make no model calls; model modes summarize fragments in batches with a configurable provider and prompt. A left-sidebar panel exposes switches, method cards and editable parameters that save without a restart, and every rewrite is archived with its original text.'
+  zh: '可配置的上下文压缩，三个板块各自独立开关：总压缩（整段检查点）、思考压缩、工具输出压缩，每个板块有自己的触发阈值与方式。机械方式不调用模型，模型方式按批摘要且提供方与提示词可配。左栏面板提供开关、方式卡片与可编辑参数，保存后无需重启即生效；每次改写都会连同原文一起归档。'

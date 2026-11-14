@@ -1,0 +1,7 @@
+url: https://github.com/chaowei08/dsh-live-speak
+name: chaowei08/dsh-live-speak
+category: voice
+icon: https://raw.githubusercontent.com/chaowei08/dsh-live-speak/main/icon-180.png
+description:
+  en: 'Reads assistant replies aloud while they stream: sentence-by-sentence speech with highlighted lines in a sidebar player, pause, mute and stop controls, and automatic quieting for code blocks. Speech uses the operating system''s local voices; its HTTP routes have no DSH access check.'
+  zh: '边生成边把回复念出来：按句合成语音，侧栏播放器里当前句逐句滚动高亮，可暂停、静音、停止，遇到代码块自动静音。朗读用的是操作系统自带的本地语音；它的 HTTP 路由没有 DSH 的访问检查。'

@@ -1,0 +1,7 @@
+url: https://github.com/Donkey-Kurt/fullstack-pair
+name: Donkey-Kurt/fullstack-pair
+category: session
+description:
+  en: Give one session a mutable set of extra workspace directories, with cross-directory search and a header badge.
+  zh: 让一个会话把多个任意目录纳入同一检索范围，并在会话头部显示目录数与分支。
+tarball: https://github.com/Donkey-Kurt/fullstack-pair/releases/download/v1.2.2/local-fullstack-pair-1.2.2.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/minhaoli/dsh-session-tree
+name: minhaoli/dsh-session-tree
+category: session
+description:
+  en: 'Session tree with tag chips, group-by-tag, drag-to-move across workspaces, workspace ordering, favourite sessions, a four-state filter, and a delete action that backs sessions up first.'
+  zh: '会话树：标签芯片、按标签分组、跨工作区拖拽移动、工作区排序、收藏会话、四态筛选，以及可先备份再删除的删除动作。'

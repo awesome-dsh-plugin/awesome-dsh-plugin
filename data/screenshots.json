@@ -1,4 +1,12 @@
 {
+  "https://github.com/Aliboder/dsh-music-panel": [
+    "https://raw.githubusercontent.com/Aliboder/dsh-music-panel/main/docs/screenshots/v2-library-grid.png",
+    "https://raw.githubusercontent.com/Aliboder/dsh-music-panel/main/docs/screenshots/v2-online-recent.png",
+    "https://raw.githubusercontent.com/Aliboder/dsh-music-panel/main/docs/screenshots/v2-now-playing-lyrics.png",
+    "https://raw.githubusercontent.com/Aliboder/dsh-music-panel/main/docs/screenshots/v2-queue-compact.png",
+    "https://raw.githubusercontent.com/Aliboder/dsh-music-panel/main/docs/screenshots/v2-stats.png",
+    "https://raw.githubusercontent.com/Aliboder/dsh-music-panel/main/docs/screenshots/v2-settings.png"
+  ],
   "https://github.com/Lovenndme/dsh-profile-stats": [
     "https://raw.githubusercontent.com/Lovenndme/dsh-profile-stats/main/docs/preview.png"
   ],

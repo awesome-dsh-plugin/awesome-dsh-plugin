@@ -1,0 +1,6 @@
+url: https://github.com/Making-acid/dsh-codex-bridge
+name: Making-acid/dsh-codex-bridge
+category: remote
+description:
+  en: Runs authenticated batches of DeepSeek Harness tasks from Codex on the same Windows computer.
+  zh: 通过本机认证桥接，在 Windows 上从 Codex 批量调用 DeepSeek Harness。

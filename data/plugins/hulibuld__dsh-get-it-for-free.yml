@@ -1,0 +1,6 @@
+url: https://github.com/hulibuld/dsh-get-it-for-free
+name: hulibuld/dsh-get-it-for-free
+category: model
+description:
+  en: 'Connects free and check-in account channels to DeepSeek: Huawei Cloud CodeArts, Tencent CodeBuddy / WorkBuddy, Qoder, TRAE, Raccoon, LobsterAI, MiniMax, ZCode and iFlytek Loomy. Sign in to each channel in settings, claim the daily check-in where the channel offers one, sync the available model pool, and use those models as ordinary providers in the model picker, with a local usage dashboard that counts requests and tokens per account and model. Credentials stay in ~/.dsh/get-it-for-free/ on this machine; no telemetry and no requests to upstream repositories. Its optional LAN relay is off by default and listens on 0.0.0.0 when you enable it.'
+  zh: '把免费、签到型的模型账号渠道接进 DeepSeek：华为云 CodeArts、腾讯 CodeBuddy / WorkBuddy、Qoder、TRAE、Raccoon、LobsterAI、MiniMax、ZCode、讯飞 Loomy。在设置里逐渠道登录，能签到的渠道每日签到（也可开自动），同步可用模型池，模型以普通 provider 的形式出现在模型选择器里，并带本机用量看板按账号与模型统计请求数与 Token。凭据只写在本机 ~/.dsh/get-it-for-free/，无遥测，不向上游仓库发请求。可选的局域网中继默认关闭，开启后监听 0.0.0.0。'

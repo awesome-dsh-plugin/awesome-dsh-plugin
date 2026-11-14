@@ -1,0 +1,6 @@
+url: https://github.com/qrak/dsh-mode-switcher
+name: qrak/dsh-mode-switcher
+category: ui
+description:
+  en: 'Adds a Plan/Build switch to the composer chip and to the Tab key, keeping a separate model and reasoning effort per mode and restoring them on every toggle, /plan, and plan approval.'
+  zh: '在输入框的 chip 上用 Tab 键切换 Plan/Build，每个模式各自记住模型与 reasoning 强度，切换、/plan 与批准计划后自动恢复。'

@@ -1,0 +1,6 @@
+url: https://github.com/329604421/dsh-agent-todo
+name: 329604421/dsh-agent-todo
+category: workflow
+description:
+  en: 'A multi-project todo board inside DSH: capture notes in a global capsule overlay, group them into projects and mind maps, and export a todo into the composer as a task for the agent. Notes and todos are read and written on the author''s hosted service (todo.memorymap.cn) after you sign in; set config.apiBase to point it at your own backend. Its HTTP routes have no DSH access check.'
+  zh: '把多项目待办工作台装进 DSH：全局胶囊浮层随手记想法，归到项目、拆成脑图，再把待办一键导出到输入框交给 Agent。登录后，笔记与待办的读写都发生在作者托管的服务（todo.memorymap.cn）上；可用 config.apiBase 改指向你自己的后端。它的 HTTP 路由没有 DSH 的访问检查。'

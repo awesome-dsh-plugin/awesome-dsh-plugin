@@ -1,0 +1,8 @@
+url: https://github.com/jackdu2333/dsh-hermes-workspace
+name: jackdu2333/dsh-hermes-workspace
+category: ui
+description:
+  en: 'A DSH sidebar panel that talks to locally running Hermes TUI gateways over JSON-RPC: switch between bot profiles, resume their Bot Chat sessions, stream message and tool deltas, and embed the Hermes terminal view.'
+  zh: 'DSH 侧栏面板通过 JSON-RPC 直连本机运行的 Hermes TUI Gateway：切换 Bot profile、恢复各自的 Bot Chat 会话、流式显示消息与工具增量，并可内嵌 Hermes 终端视图。'
+icon: https://raw.githubusercontent.com/jackdu2333/dsh-hermes-workspace/main/assets/icon-180.png
+tarball: https://github.com/jackdu2333/dsh-hermes-workspace/releases/latest/download/dsh-hermes-workspace.tgz

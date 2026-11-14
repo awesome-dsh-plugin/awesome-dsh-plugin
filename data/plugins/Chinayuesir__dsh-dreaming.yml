@@ -1,0 +1,7 @@
+url: https://github.com/Chinayuesir/dsh-dreaming
+name: Chinayuesir/dsh-dreaming
+category: memory
+description:
+  en: 'Turn completed DSH conversations into a local, versioned memory wiki with a sidebar manager, memory map and run logs.'
+  zh: '将已完成的 DSH 会话整理为可追溯的本地记忆，提供侧边栏管理、记忆地图和运行日志。'
+tarball: https://github.com/Chinayuesir/dsh-dreaming/releases/download/v0.4.0/dsh-dreaming.tgz
