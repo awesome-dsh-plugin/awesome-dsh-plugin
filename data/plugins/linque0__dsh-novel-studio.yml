@@ -1,0 +1,7 @@
+url: https://github.com/linque0/dsh-novel-studio
+name: linque0/dsh-novel-studio
+category: ui
+description:
+  en: 'Novel Studio for DeepSeek Harness: a book library, an outline, character and lore cards and a manuscript editor in one workspace, plus studio_* tools that let the agent read a work, file review findings and save candidate text only after the author confirms. Experimental.'
+  zh: '小说工坊的 DSH 插件版：把作品库、大纲、人物与设定、正文编辑器放进同一个工作区，并提供 studio_* 工具，让 agent 读作品、提审稿意见、产出候选正文，经作者确认后才落库。实验性质。'
+icon: https://raw.githubusercontent.com/linque0/dsh-novel-studio/main/assets/icon-180.png
