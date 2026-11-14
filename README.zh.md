@@ -2064,6 +2064,7 @@ dsh plugin --profile web add dshmarket
 - [XIANGDEEN/dsh-sidebar-video-player](https://github.com/XIANGDEEN/dsh-sidebar-video-player) — 右侧栏视频播放器：文件夹播放列表支持首帧缩略图、时长、按名称/时长/修改时间/大小排序、全屏，以及写权限文件夹下的重命名/复制/删除/刷新右键菜单；同时显示缓冲区间、解码帧率与丢帧，并只读解析 MP4/MOV 的编码档次/级别、精确帧数、每轨码率与旋转；不注册智能体工具，文件写入仅在用户以写权限选择文件夹后通过浏览器 File System Access API 执行。
 - [xianrui69/dsh-quick-phrases](https://github.com/xianrui69/dsh-quick-phrases) — 为 DeepSeek Harness 增加可拖拽、位置会记住的快捷短语条，以及 `/` 触发的短语菜单；每条短语可单独设置置顶、斜杠菜单、是否上条和点击即发送。
 - [xiao-xiao-bai-ya/dsh-cn-menu-kit](https://github.com/xiao-xiao-bai-ya/dsh-cn-menu-kit) — 技能与命令的中文增强：菜单中的技能显示中文标题、支持中文搜索与悬浮详情，命令与技能的顺序可自由拖拽。
+- [xiaobaga281/dsh-effort-mosaic](https://github.com/xiaobaga281/dsh-effort-mosaic) — 把 DSH 模型菜单里的「推理等级」一行换成像素马赛克粒子滑轨：贴近滑块的一段是静止的密实墙，越往左方块越早脱离网格、漂移散开。滑块形状、尺寸、填充、强调色、最高档点亮样式与粒子越界动画都可在插件设置里调整。
 - [Xiaofei-fei/dsh-prompt-history](https://github.com/Xiaofei-fei/dsh-prompt-history) — 为 DSH Web 输入框提供终端式体验：↑/↓ 历史（前缀搜索、Ctrl+R）、Codex 风格的历史补全与下一句预测（Tab/→ 接受）、选中工具栏（复制/引用/侧聊追问）、右键直接粘贴、可拖动会话目录，以及能在右栏并行跑第二条 agent 线程的侧聊（fork 全上下文、浮动/分屏、双向桥接、并发写提醒）。
 - [xiaokaizhou/dsh-media-preview](https://github.com/xiaokaizhou/dsh-media-preview) — 在 DSH 聊天记录中自动将本地音视频路径渲染为可播放预览：将路径替换为同源 /api/media-preview/* 路由支持的 <audio>/<video> 播放器，并返回明确的错误状态码。
 - [xiaoluoli45/dsh-code-explainer](https://github.com/xiaoluoli45/dsh-code-explainer) — 在 DSH 工具卡的代码块上给每一行加中文行尾注释：输入侧是灰色「//」，输出侧的代码用蓝色箭头，规则能判的行即时给出、判不出的行用当前会话的模型补一版；顶部「注释：开/关」可关回纯代码，内容在发给模型与落盘前先做凭据掩码。
@@ -8045,6 +8046,7 @@ dsh plugin --profile web add dshmarket
 - [tetckx/deep-structural-analysis-skill](https://github.com/tetckx/deep-structural-analysis-skill) — 多视角深层结构分析技能：16 透镜 4 类别、10 个结构工具，先攻击默认立场，产出置信度校准、事实绑定的分层结论。
 - [TheFold060629/dsh-task-assist](https://github.com/TheFold060629/dsh-task-assist) — 在对话框发送键旁添加一个「辅助」按钮：扫描本会话可用的技能与 MCP 工具，按输入框里的当前草稿排序，并可把选中的技能作为 steering 消息注入正在运行的对话。
 - [tiger0012/dsh-we-wallpaper-sync](https://github.com/tiger0012/dsh-we-wallpaper-sync) — 可复用技能：批量浏览、搜索、下载 Wallpaper Engine（小红车，Steam 431960）创意工坊壁纸并接入 DSH 皮肤中心；含绕过 Steam HTTP 封锁与异地登录拦截（经出口 IP 与账号一致的 SOCKS 代理）。
+- [trevtravtrev/dsh-i-have-adhd](https://github.com/trevtravtrev/dsh-i-have-adhd) — 为 ADHD 读者组织回复：下一步操作放最前、步骤编号、状态复述、成果可见。/i-have-adhd 按需开启，/adhd on 全程开启。
 - [triagmas/dsh-project-evolution](https://github.com/triagmas/dsh-project-evolution) — 把已验证的项目工作保存为脱敏证据和可审核的技能提案；接受的技能会成为原生项目技能，并带有版本历史、差异、回滚和可选的全局发布。
 - [tuoLuoSuan/dsh-skill-center](https://github.com/tuoLuoSuan/dsh-skill-center) — 在 DSH Web GUI 里浏览、预览并安装公开的 Agent Skills，聚合五个来源（claudeskills.info、skillsmp.com、awesome-claude-skills 仓库坐标表、Anthropic 官方仓库、已装 DSH 插件自带的技能包）。安装按 commit 而不是分支名钉住，预览到的就是落地的；面板给出每个技能的来路、按整棵树比对的更新检查，删除是移进回收站而不是抹掉。落地之前先按 harness 实际执行的规则体检技能名与 frontmatter（名字不合法会被 harness 静默跳过），列出 SKILL.md 引用但没取回的文件，标出只取到一部分的情况，同名时给出覆盖、改名、跳过三个选项。
 - [turambarr/subagent-orchestrator-dsh](https://github.com/turambarr/subagent-orchestrator-dsh) — 实验编排 SOP 技能：顶层模型起草分解计划（子任务、每个的模型、带容差的验收基准、依赖顺序），经用户确认后才派工；每个子任务以自包含 prompt 交给轻量子智能体执行，回报限定为测量事实与基准差值，判读与裁决留在顶层。附一份分解计划模板、五类任务模板（采集/执行/一致性校验/只读审查/机械转换）、任务层与实验层两级验收门，以及三条防止把内部一致性证据说成独立或外部验证的规则。
@@ -8992,6 +8994,7 @@ dsh plugin --profile web add dshmarket
 - [ZIye1208/dsh-github-mcp-hint](https://github.com/ZIye1208/dsh-github-mcp-hint) — GitHub MCP 辅助面板：在「设置 → 插件 → GitHub MCP」展示可复制的示例提示（30 条示例池随机 4 条）、可视化公开仓库的星/fork/语言，并提供 gh_repo_stats / gh_current_user 模型工具。
 - [zjj1769404838/dsh-git-panel](https://github.com/zjj1769404838/dsh-git-panel) — 在输入框旁加一个 Git chip，点开是居中工作台（改动、历史、文件、标签、贮藏），设置页另有一个 Git 分节。支持多账号的 OAuth 设备码流程与 PAT，按仓库设三档权限（完整、只读、无权限），写操作受全局开关控制、读操作受允许目录白名单控制，推送目标远端不属于有写权限的账号时会被拒绝。差异就地预览，带行号、四档布局、词级强调、语法高亮与 Ctrl/⌘+F 查找；Markdown 与图片可内联渲染，提交信息可搜索，也能调用宿主 LLM 服务从暂存差异生成提交信息。提供 8 个 Agent 工具、51 个本地 HTTP 接口与 8 种语言，令牌以 AES-256-GCM 加密落盘。
 - [zsxh1990/pr-genius](https://github.com/zsxh1990/pr-genius) — PR 评估和改进顾问：基于历史反模式和成功模式评估 PR 成功率，一键评分并提供可操作的改进建议。
+- [Zymjason/DSH_Git_Workbench](https://github.com/Zymjason/DSH_Git_Workbench) — 多平台 Git 工作台：同时登录管理 Gitea、GitHub、GitLab、Gitee 账号，浏览仓库与分支图、审阅 PR/MR、查看贡献热力图，并把一次提交同步推送到多个平台。
 
 ### 🔔 通知与集成
 
