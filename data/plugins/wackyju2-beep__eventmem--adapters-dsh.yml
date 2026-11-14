@@ -2,5 +2,5 @@ url: https://github.com/wackyju2-beep/eventmem/tree/main/adapters/dsh
 name: wackyju2-beep/eventmem#dsh
 category: memory
 description:
-  en: 'Persistent event memory for DSH with recall injection, seven memory tools and a native console; requires a separately running eventmem daemon.'
-  zh: '为 DSH 提供持久化事件记忆、召回注入、七个记忆工具和原生管理台；需要单独运行 eventmem daemon。'
+  en: 'Local-first event memory for DSH: recall injection, seven memory tools and a native console. Install the eventmem daemon separately; SSH sharing is opt-in and no private host is a default.'
+  zh: '为 DSH 提供本地优先的事件记忆：召回注入、七个记忆工具和原生管理台。daemon 需单独安装；远程 SSH 共享需主动启用，默认不连接任何私人主机。'
