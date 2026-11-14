@@ -1,0 +1,8 @@
+url: https://github.com/ZhangZhengruiNUS/dsh-plugin-model-eval
+name: 模型坐标 · 模型评测与选型
+category: model
+description:
+  en: Evaluate your available models, compare capability and task time, and choose a configuration that fits your work.
+  zh: 评测你可用的模型，对比能力与耗时，选择适合当前任务的配置。
+icon: https://raw.githubusercontent.com/ZhangZhengruiNUS/dsh-plugin-model-eval/v0.1.0/assets/icon-180.png
+tarball: https://github.com/ZhangZhengruiNUS/dsh-plugin-model-eval/releases/download/v0.1.0/dsh-model-coordinates.tgz
