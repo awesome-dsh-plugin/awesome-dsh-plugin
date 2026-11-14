@@ -1,0 +1,6 @@
+url: https://github.com/imcaibaicai/dsh-conversation-log
+name: imcaibaicai/dsh-conversation-log
+category: session
+description:
+  en: 'Mirrors every session to a standalone readable Markdown file plus a JSONL twin whose name carries date, time and topic, keeps a searchable index beside them, and adds a settings-page search and a model recall tool.'
+  zh: '把每个会话镜像成一个可读的独立 Markdown 文件（附同名 JSONL），文件名带日期、时间与话题，旁边维护可检索索引，并提供设置页检索与模型召回工具。'
