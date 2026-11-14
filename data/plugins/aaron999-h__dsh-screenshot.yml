@@ -1,0 +1,8 @@
+url: https://github.com/aaron999-h/dsh-screenshot
+name: aaron999-h/dsh-screenshot
+category: ui
+description:
+  en: "Adds a screenshot row to the DSH composer + menu: drag a region anywhere on the desktop while DSH stays visible, and the crop is attached to the message draft."
+  zh: "在 DSH 输入框的「+」菜单里增加「截图提问」：DSH 窗口不隐藏，直接在整个桌面上框选区域，松手后截图作为附件进入输入框。"
+icon: https://raw.githubusercontent.com/aaron999-h/dsh-screenshot/main/assets/icon-180.png
+tarball: https://github.com/aaron999-h/dsh-screenshot/releases/latest/download/dsh-screenshot-1.0.0.tgz
