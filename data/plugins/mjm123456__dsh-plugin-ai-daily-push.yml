@@ -1,0 +1,6 @@
+url: https://github.com/mjm123456/dsh-plugin-ai-daily-push
+name: mjm123456/dsh-plugin-ai-daily-push
+category: notify
+description:
+  en: 'AI daily digest to WeChat: searches the last 24 hours of AI news, de-duplicates and picks five stories, writes an under-800-character Chinese Markdown brief, archives it by date, and pushes it through ServerChan, PushPlus, WxPusher or a WeCom group bot.'
+  zh: '每日 AI 新闻推微信：检索最近 24 小时 AI 新闻，去重挑选 5 条，写成 800 字以内中文 Markdown 简报并按日期归档，再经 Server酱、PushPlus、WxPusher 或企业微信群机器人推送到微信。'
