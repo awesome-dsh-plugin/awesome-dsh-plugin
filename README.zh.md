@@ -349,6 +349,7 @@ dsh plugin --profile web add dshmarket
 - [appthin/dsh-mcp-manager-plus](https://github.com/appthin/dsh-mcp-manager-plus) — DSH 设置中的 MCP 管理页：列出、启停、重启、删除 MCP 服务器，表单与 JSON 双模式编辑，展开可查看各服务器注册的工具，支持一次粘贴导入 Claude Code、Cursor、Codex、VS Code 等 14 种工具的 MCP 配置，并可把某个服务器绑定到指定项目目录——只有工作目录在其中的会话能看到并调用它的工具。
 - [AprilCrystal/dsh-client-ui-font-scale](https://github.com/AprilCrystal/dsh-client-ui-font-scale) — Web 界面的对话字号控制：输入区步进器、键盘快捷键与 Ctrl+滚轮缩放，统一走主题服务的 setFontSize。
 - [AprilCrystal/dsh-client-ui-gpt-helper](https://github.com/AprilCrystal/dsh-client-ui-gpt-helper) — ChatGPT 桌面风格的模型选择控件：思考档位滑杆带粒子拖尾，另有纯视觉的快速模式开关与长按锁定。
+- [aQasrt/dsh-side-chat-pro](https://github.com/aQasrt/dsh-side-chat-pro) — 在 DSH 对话里选中文字，三选一：开侧边子会话提问、结合上下文给出 1-5 个候选译法、或解释该名词，都不会写入主对话。
 - [Arc-huangjingtong/dsh-restart](https://github.com/Arc-huangjingtong/dsh-restart) — 在 macOS 版 DSH 桌面端侧栏添加重启按钮，一键完全退出并重新打开应用；其他平台按钮自动隐藏。
 - [ArcaneOrion/dsh-model-selector-search](https://github.com/ArcaneOrion/dsh-model-selector-search) — 搜索增强的会话模型选择器：两段式宽松匹配（先归一化子串，未命中再退子序列，glm53 命中 GLM-5.3、ds 命中 DeepSeek）、近七天成功调用过的供应商置顶，推理档位面板记住每个模型上次显式选择的档位。
 - [ArcaneOrion/dsh-teaching-board](https://github.com/ArcaneOrion/dsh-teaching-board) — 教学平面视图：agent 生成的自包含 HTML 投影进沙箱 iframe 当板书，可用画笔手写勾画（四色、橡皮、撤销）、在同一块板上增量续写，并把画面截图作为真实用户消息发回对话。
@@ -5745,6 +5746,11 @@ dsh plugin --profile web add dshmarket
 - [GDWhisper/dsh-ntr](https://github.com/GDWhisper/dsh-ntr) — 把任意支持 ACP 的 Agent 接进 DSH，用 DSH 一个入口管理所有会话和任务。模型、思考等级和权限模式由 Agent 自己提供；工具调用显示在主聊天区，diff 汇总到独立的 NTR 页，权限询问出现在输入框。使用前需在本机安装支持 ACP 的 Agent 命令行工具。
 - [gem-gti/dsh-scrcpy-mirror](https://github.com/gem-gti/dsh-scrcpy-mirror) — 用 scrcpy 把安卓手机画面投到 Windows 电脑（USB 或无线），并把启动、停止、状态、connect（手机重启后重连）、截图暴露为智能体工具与 /mirror 命令。需在本机装好 scrcpy 与 adb（winget install Genymobile.scrcpy），插件不打包这两个可执行文件。
 - [geml-spec/geml#integrations/dsh-plugin](https://github.com/geml-spec/geml/tree/main/integrations/dsh-plugin) — 按块寻址的文档读写：MCP server 提供 geml_get / geml_set / geml_check 等工具，Agent 只取回或改写 Markdown、GEML 文档中的某一个块，而不是整篇文件。另带 GEML 写作技能，以及把项目调用图构建为 GEML codemap 并浏览的代码图谱技能。
+- [geyaovip/zhixing-ark-dsh-plugins#crm](https://github.com/geyaovip/zhixing-ark-dsh-plugins/tree/main/packages/crm) — 知行方舟 CRM 跟进，查询客户、线索、商机、跟进记录和本人待办。
+- [geyaovip/zhixing-ark-dsh-plugins#erp](https://github.com/geyaovip/zhixing-ark-dsh-plugins/tree/main/packages/erp) — 知行方舟 ERP 履约，查询库存、补货量、采购单和销售合同。
+- [geyaovip/zhixing-ark-dsh-plugins#geo](https://github.com/geyaovip/zhixing-ark-dsh-plugins/tree/main/packages/geo) — 知行方舟 GEO 品牌可见度，查询已有项目和报告，查看样本口径、竞品和引用。
+- [geyaovip/zhixing-ark-dsh-plugins#manufacturing](https://github.com/geyaovip/zhixing-ark-dsh-plugins/tree/main/packages/manufacturing) — 知行方舟制造业进销存，按企业只读授权查询订单、缺料、库存预警、生产进度和批次追溯。
+- [geyaovip/zhixing-ark-dsh-plugins#mes](https://github.com/geyaovip/zhixing-ark-dsh-plugins/tree/main/packages/mes) — 知行方舟 MES 生产跟踪，查询生产进度、工单、报工和已有 BOM。
 - [gezi-wen/dsh-guikit](https://github.com/gezi-wen/dsh-guikit) — 以 DSH 原生工具形式提供的 Windows 桌面控制——整屏与单窗口截图（单窗口走 PrintWindow，窗口被遮住也能抓）、点击、拖动、打字、按键、滚动、窗口管理、像素与窗口轮询，以及可直接 invoke 控件或读取控件值的 UIA 查询（不必点坐标）。13 个工具，跑在 PowerShell 7 子进程上；不需要 MCP 服务器、无常驻进程、无 API key。
 - [Giauzihau/dsh-harness-zh](https://github.com/Giauzihau/dsh-harness-zh) — 把 DeepSeek Harness 发给模型的提示词——系统提示词各段、运行时上下文、工具描述与参数说明——翻译成简体中文。Cordis API 词典派生自 zjl1989-li/dsh-harness-zh-cn（MIT），后者同样在运行时翻译同一批提示词层；不要同时启用两者。
 - [gigaflw/dsh-fft-paper-trading](https://github.com/gigaflw/dsh-fft-paper-trading) — 在 DSH 中进行模拟交易，支持 A 股和商品期货，本地账本，内置 FTShare 数据源与 K 线，无需购买 API Key 也可使用日K收盘价练习
@@ -7855,6 +7861,7 @@ dsh plugin --profile web add dshmarket
 - [fxdfx/dsh-skill-quickpick](https://github.com/fxdfx/dsh-skill-quickpick) — 输入框技能快捷面板：按来源列出当前会话的技能，把 /技能名 插入草稿（绝不自动发送），并可逐技能禁用、卸载与统计使用次数。禁用技能（会改写 SKILL.md）、卸载技能（把目录移进回收站）、使用统计（读取本机会话日志）和用模型翻译技能名都默认关闭，要在面板设置里逐项开启。
 - [GanyuanRan/Aegis](https://github.com/GanyuanRan/Aegis) — 面向编码 Agent 的软件工程方法包，提供基线优先规划、系统化调试、提示词卫生、完成前验证，以及修复/退役双轨跟踪技能。
 - [gebi-one/dsh-hermes-recall](https://github.com/gebi-one/dsh-hermes-recall) — 自动识别本机 Hermes 当前使用的记忆工具，把技能与记忆实时接入 DSH，检索始终可用。需要 python3 与本机已装的 Hermes；对 Hermes 只读。
+- [geyaovip/zhixing-ark-dsh-plugins#product-video-script](https://github.com/geyaovip/zhixing-ark-dsh-plugins/tree/main/packages/product-video-script) — 知行方舟品牌短视频脚本，根据商品卖点生成分镜、口播和字幕，并提供品牌内容工作台入口。
 - [gezi-wen/dsh-plugin-development](https://github.com/gezi-wen/dsh-plugin-development) — 携带一份技能，讲怎么开发、调试、发布 DSH 插件——host/client 双半包骨架、把 fork 挂进丢弃式 profile 开发、发布到 GitHub 与 npm，以及发布过程中实际踩到的坑。安装插件即注册该技能。
 - [gezi-wen/dsh-skill-authoring](https://github.com/gezi-wen/dsh-skill-authoring) — 携带一份讲怎么写 DSH 技能的技能——SKILL.md 的 frontmatter 与技能根优先级、description 怎么写才会被触发、篇幅与拆分标准，以及「写完后怎么证明它真管用」的 A/B 验证。包里还带着供这份技能校验技能目录的检查脚本。
 - [Godners-Code/dao-zang-skill](https://github.com/Godners-Code/dao-zang-skill) — 道藏知识库离线检索与原文提取：对 28.5 万段经文进行关键词或语义检索，精确提取原文（带行号与命中标记），可从 Godners/DaoZang 数据集一键搭建工作区。
@@ -8064,6 +8071,7 @@ dsh plugin --profile web add dshmarket
 - [wangdapeng325/dsh-oi-coach](https://github.com/wangdapeng325/dsh-oi-coach) — DeepSeek Harness 信奥教练插件：教练规则提示词 + 学习路线图/知识点/命题/C++ 真评测（g++ 编译运行）+ ima 知识库检索与 4 笔记本归档，面向 GESP、CSP-J/S、NOIP、NOI 教学。需本机有 g++，并配置 ima 账号、ima-skill 与 4 个笔记本；回复默认附带公众号推广与二维码。
 - [wangdapeng325/dsh-oi-senior](https://github.com/wangdapeng325/dsh-oi-senior) — DeepSeek Harness 信奥学长插件：陪刷 + 三版 C++14 参考实现 + 解题说明，本地 g++ 真编译真评测（需 g++），做题记录可选归档到 ima 笔记本「信奥学长-题解复盘」，面向 GESP、CSP-J/S、NOIP、NOI。
 - [Wangxiaolu0716/ctf-solve-teach](https://github.com/Wangxiaolu0716/ctf-solve-teach) — 教学式 CTF 解题技能：每步讲清套路、工具选型与底层原理，收尾在 solves/<题目名>/ 生成可复现 Writeup，并用九章质量门校验。
+- [wangyanan520/dsh-skill-workbench](https://github.com/wangyanan520/dsh-skill-workbench) — 给 DSH 技能加中文显示层：`/` 菜单按中文分类显示中文名与简介，调用仍是英文 `/name`，不改任何 SKILL.md。还能从安装来源补简介，卸载个人技能时移入回收站。
 - [WangZW928/Career-PPTagent](https://github.com/WangZW928/Career-PPTagent) — 可编辑 PowerPoint 制作工作流（基于 icip-cas/PPTAgent 的 Skill 版本改造），包含简洁中文商业风格、HTML 幻灯片渲染与 PPTX 导出复查。仅 Linux/WSL 或 macOS（仅 Apple Silicon）；首次使用需先装 LibreOffice、中文字体、Node.js 22+ 与 uv，再执行一次 setup——它会用 uv 建 Python 3.12 环境并安装 Playwright Chromium。
 - [warm-flame-core/new-project-init](https://github.com/warm-flame-core/new-project-init) — 项目文档体系初始化 skill：提问驱动落实文档规范、固化 AI 协作工作流，跨 DSH / Reasonix / Claude Code / Codex 可用。
 - [wasteoneslife/scenes-skill-creator](https://github.com/wasteoneslife/scenes-skill-creator) — Web 界面上的技能创建面板：拉取官方 creator 技能，把需求交给华为云 / 通用 / REST API 三个 creator 之一执行创建，随后按 10 分制评测产物，未达 8.5 分就把逐项扣分交回 creator 修改直到通过。
