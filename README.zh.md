@@ -10003,7 +10003,7 @@ dsh plugin --profile web add dshmarket
 - [TNTD26/dsh-ide](https://github.com/TNTD26/dsh-ide) — 内置在 DeepSeek Harness 里的 IDE：文件树、多标签编辑器、AI 助手（模型选择/API Key）、Git 面板、PTY 终端和 Python/TypeScript LSP。
 - [tuogusa/dsh-skill-manager](https://github.com/tuogusa/dsh-skill-manager) — 在 Web 设置面板中浏览、搜索、删除/撤回并更新用户技能，支持从 GitHub/Gitee Release 检查技能更新。
 - [TwinsEarth/DSH-2Xray](https://github.com/TwinsEarth/DSH-2Xray) — 为 DSH 提供 Xray 受管内核与分流：VLESS 导入、全局/国内直连/白名单路由、三卡片实时面板与自更新。
-- [TwinsEarth/dsh-fang](https://github.com/TwinsEarth/dsh-fang) — 为 DeepSeek Harness 插件开发与测试提供母体、元主、分身隔离工作区，支持插件热更新与跨分身共享的决策收件箱。
+- [TwinsEarth/dsh-fang](https://github.com/TwinsEarth/dsh-fang) — DeepSeek Harness 的宿主控制面：母体、元主、分身隔离工作区，共享决策收件箱、重启守卫、审计账本，以及发布、安装、部署前置门禁。
 - [tyouter/dsh-recorder](https://github.com/tyouter/dsh-recorder) — 按脚本操作另一个 DSH 插件的真实界面，并把真实窗口录成 GIF。仅限 Windows。它的 /recorder 路由没有 DSH 的访问检查，而 run 路由可以让已打开的 DSH 页面点击和输入，所以你打开的任何网页都可能驱动它；录制会用 Pillow 截取屏幕的一块区域。
 - [unera/dsh-graceful-restart](https://github.com/unera/dsh-graceful-restart) — 在会话内部重启 DSH 宿主而不打断回答：dsh_restart 等到所有代理空闲，记录原因，并在重启后唤醒请求通知的会话。
 - [vamyane/dsh-skill-audit](https://github.com/vamyane/dsh-skill-audit) — 给 DeepSeek Harness 的技能与插件做体检的审核台：扫描本地技能目录和已安装插件，检查容易导致安装失败的打包规则，逐项打分并导出 Markdown 修复报告。
@@ -10613,6 +10613,7 @@ dsh plugin --profile web add dshmarket
 - [ook826092-cloud/dsh-mobile-css](https://github.com/ook826092-cloud/dsh-mobile-css) — DSH Web UI 移动端适配：紧凑排版、全宽输入卡（含光标修复）、抽屉式侧边栏（点击遮罩关闭）、两页式设置流程、响应式表格与统计、安全触控目标。
 - [opentandem/dsh-phone](https://github.com/opentandem/dsh-phone) — 在 dsh web 中新增「手机连接」页并显示二维码，用手机扫码、登录 OpenTandem 并点「允许」后，即可在 OpenTandem 里把任务发给这台电脑上的 dsh。首次使用会安装 OpenTandem 命令行和后台 Runner。
 - [OrderG-X/dsh-mobile](https://github.com/OrderG-X/dsh-mobile) — 在手机浏览器里用 DSH。点会话顶栏的手机按钮（或插件设置卡）打开手机访问、扫二维码，手机就打开电脑上 DSH 进程提供的官方网页界面，会话相同、实时同步，人不在电脑前也能跟进正在跑的任务、回消息、点批准。DSH 里内置一个网关（端口 18765）转发网页界面，并替手机处理桌面端登录。一个二维码在 Wi-Fi 和流量下都能扫：打开手机访问时顺带开 Cloudflare 免费快速隧道（没有 cloudflared 会从 Cloudflare 官方 GitHub 发布页下载），DSH 重启后地址不变，手机不用重扫。配对码一次性、10 分钟过期，每台手机一张凭证、可随时移除，顶栏按钮显示手机是否已连接，空闲连接自动保活。可选推送到手机：任务跑完（30 秒以上）、出错停下、等批准或等回答时，发到 Bark、ntfy、Server酱、飞书 / 企业微信 / 钉钉群机器人、Telegram 或任意 Webhook；通知只带会话标题和状态，批准仍在 DSH 里点。手机上网页界面的左右两栏改成盖在页面上，可以带图标添加到主屏幕。
+- [oscarka/deepseekharness-remotecontrol](https://github.com/oscarka/deepseekharness-remotecontrol) — DeepSeek Harness 的手机端 Web PWA 与飞书远程控制中心（可选接入本机 Antigravity、Codex、Claude Code、WorkBuddy 与豆包）：默认在 0.0.0.0:8788 启动受令牌与 6 位配对码保护的局域网网关，支持会话切换、文件浏览与媒体预览、工具审批、Web Push 推送，以及可选外连自建云端 Hub 或飞书机器人长连接。
 - [oxmumu3/dot-dsh-connector#dot-dsh-management](https://github.com/oxmumu3/dot-dsh-connector/tree/main/management-plugin) — 通过原生 Harness 工作台和本机网关，让 Dot 读取已保存项目与会话、派发原生任务、查看进度、继续或取消任务，并管理连接授权。
 - [pan17/dsh-wechat](https://github.com/pan17/dsh-wechat) — 将微信私聊消息桥接到 DSH，支持文本、图片、文件、音视频的双向传输，用 slash 命令管理会话、工作区、模型、权限等等，目标是在微信端还原 DSH 的原生体验。
 - [peng456/dsh-plugin-mesh](https://github.com/peng456/dsh-plugin-mesh) — 通过 UDP 组播或端口扫描发现局域网内的其他 DSH 实例，在侧栏面板中列出它们以及各自上报的能力，并可经局域网或自动下载的用户态 Tailscale 节点在两台机器之间双向派发任务。
