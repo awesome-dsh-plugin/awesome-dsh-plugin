@@ -5,3 +5,4 @@ description:
   en: Set plugins on or off per workspace and conversation, with inheritance and saved archives.
   zh: 在每个工作区、对话独立设置插件，并可选择继承与存档。
 icon: https://raw.githubusercontent.com/leafnewly/dsh-scope-plugins/main/assets/icon-180.png
+tarball: https://github.com/leafnewly/dsh-scope-plugins/releases/latest/download/dsh-scope-plugins.tgz
