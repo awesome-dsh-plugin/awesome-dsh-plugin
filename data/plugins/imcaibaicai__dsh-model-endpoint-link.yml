@@ -1,0 +1,6 @@
+url: https://github.com/imcaibaicai/dsh-model-endpoint-link
+name: imcaibaicai/dsh-model-endpoint-link
+category: model
+description:
+  en: 'Broadcasts the current session''s effective model selection as a window event at the moment it changes, for consumers that need the selection before the first request round, such as a balance widget switching its accounting endpoint.'
+  zh: '会话当前模型一改变就把选择结果作为 window 事件广播出去，供需要在首个请求回合之前就知道选择的消费者使用（例如余额挂件切换计费接入点）。'
