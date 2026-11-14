@@ -1,0 +1,7 @@
+url: https://github.com/msz3546/stl-to-editable-part
+name: msz3546/stl-to-editable-part
+category: workflow
+description:
+  en: Adds a DeepSeek Harness workbench and skill for rebuilding STL meshes as editable SolidWorks parts on Windows.
+  zh: 在 DeepSeek Harness 中提供工作台和技能，在 Windows 上调用本机 SolidWorks 将 STL 重建为可编辑零件。
+tarball: https://github.com/msz3546/stl-to-editable-part/releases/download/v0.2.0/dsh-stl-to-editable-part-0.2.0.tgz
