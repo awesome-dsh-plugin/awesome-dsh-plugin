@@ -4,4 +4,4 @@ category: ui
 description:
   en: 'Adds temporary sidebar chats to the native text-quote menu, with native-themed controls and a Save button to keep chats in their source workspace.'
   zh: '在原生文本引用菜单中加入临时侧边提问，使用原生主题控件，可保存聊天到来源工作区。'
-tarball: https://github.com/aadmin61-design/dsh-selection-chat/releases/download/v1.4.0/local-dsh-selection-chat-1.4.0.tgz
+tarball: https://github.com/aadmin61-design/dsh-selection-chat/releases/download/v1.4.1/local-dsh-selection-chat-1.4.1.tgz
