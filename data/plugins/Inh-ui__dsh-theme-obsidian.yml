@@ -1,0 +1,8 @@
+url: https://github.com/Inh-ui/dsh-theme-obsidian
+name: Inh-ui/dsh-theme-obsidian
+category: theme
+description:
+  en: 'Desktop-style client theme for DeepSeek Harness: translucent slate sidebar, #151517 main canvas and #2c2c2e composer dock, four palette presets (obsidian-origin, glacier-midnight, titanium-noir, sonoma-frost), a settings panel for blur, sidebar opacity, ambient glow and content radius, and three GPU performance tiers (ultra, balanced, eco).'
+  zh: 'DSH 客户端桌面级主题：冷灰蓝半透明侧栏、#151517 主画布与 #2c2c2e 输入坞，四套配色预设（深空曜石 / 极夜冰川 / 钛金灰羽 / 晨雾银砂），带模糊度、侧栏浓淡、微光与圆角设置面板，以及极致光影 / 均衡流畅 / 低功耗省电三档 GPU 流畅度。'
+icon: https://raw.githubusercontent.com/Inh-ui/dsh-theme-obsidian/main/assets/icon-180.png
+tarball: https://github.com/Inh-ui/dsh-theme-obsidian/releases/latest/download/dsh-theme-obsidian.tgz
