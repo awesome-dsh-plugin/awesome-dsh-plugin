@@ -1,0 +1,6 @@
+url: https://github.com/intelfabs/dsh-scheduled-message
+name: intelfabs/dsh-scheduled-message
+category: workflow
+description:
+  en: 'Schedule a message you are writing in the DSH composer — text, images and files — to be sent later; the Host delivers it after the tab closes, and a message that came due while DSH was closed is sent at the next start and marked late. Tick Repeat to create a DSH Automation task instead.'
+  zh: '给 DSH 输入框里正在写的消息（文本、图片、文件）设定发送时间，由 Host 投递，关掉标签页也会发；DSH 关闭期间到点的消息会在下次启动时发送并标记为延迟。勾选重复则改为创建 DSH Automation 任务。'
