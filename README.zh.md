@@ -2324,6 +2324,7 @@ dsh plugin --profile web add dshmarket
 - [zheshiyigehenchang/dsh-chat-typography](https://github.com/zheshiyigehenchang/dsh-chat-typography) — 设置DSH Harness对话流字体、字号行间距，以及对话文字到窗口边缘的留白。
 - [zhifengjiang/dsh-hover-archive](https://github.com/zhifengjiang/dsh-hover-archive) — Codex 风格会话归档：鼠标悬浮侧边栏会话行时，最右侧浮现 Archive 图标，一键归档会话。
 - [zhihuz123/dsh-todos](https://github.com/zhihuz123/dsh-todos) — DeepSeek Harness 的持久工作区待办面板：Plan/Backlog 两层、侧边栏看板、Agent 工具与 /todo 命令，跨会话不丢。
+- [zhileyo/dsh-workbase](https://github.com/zhileyo/dsh-workbase) — DeepSeekRuntime Web 端的工作台插件：宫格或列表管理项目（改名、置顶、收藏、归档与恢复），按项目浏览会话并预览正文、改名／归档／删除，待办支持优先级、Markdown 备注、图片与文件附件、搜索与筛选。状态存放在插件自己的宿主存储域 dsh_workbase。注册 11 个 Agent 工具，按版本校验读写会话所属项目的待办；同一面板还提供项目诊断、插件更新与加密备份恢复。
 - [zhishengplus/dsh-image-annotate](https://github.com/zhishengplus/dsh-image-annotate) — 在 DSH 的图片预览上圈选、画箭头、方框与文字，每一笔都能再选中拖动、缩放或改字，并把原分辨率的标注图作为附件放进输入框。
 - [zhougaoang/thought-constellation](https://github.com/zhougaoang/thought-constellation) — 把零散的思想片段编织成一张会生长的星图：主题、观点、关系与待补充的问题，并生成一份论证总结。
 - [zhouhaitao-cherry/ai-news-dsh](https://github.com/zhouhaitao-cherry/ai-news-dsh) — 在左侧边栏展示最新 AI 资讯，DeepSeek 相关排在前面。
@@ -4318,6 +4319,7 @@ dsh plugin --profile web add dshmarket
 - [FunnyDiodio/dsh-session-delete](https://github.com/FunnyDiodio/dsh-session-delete) — 给侧边栏每个会话的"…"菜单加上"删除会话"（官方只有归档/置顶/重命名/分叉，无持久 删除）。一键「强制删除」：逐出宿主内存态会话、停止后台工作后，彻底清除会话日志、 投影缓存与注册表记账，已连接的桌面 Web 端即时清行、不留幽灵。会话生成的工作区文件 保留，对话记录永久删除；第三方云端镜像（如经 Agents Anywhere 同步的手机 App）持有 各自副本、需在其 App 内管理。中英双语界面，本地回环路由带信任栅栏。需 DSH >=0.2.1-rc.1。
 - [GallenShao/dsh-faster-compress](https://github.com/GallenShao/dsh-faster-compress) — 在后台准备上下文摘要并于安全步骤应用，保留原生压缩回退，并提供摘要内容、应用状态、耗时与用量的会话压缩历史。
 - [Gaudi-XIX/dsbot-session-create](https://github.com/Gaudi-XIX/dsbot-session-create) — 给会话加四个工具：create_session 在指定工作区或任意一个已存在的文件夹里开一个新会话，并把一段提示词投进去；session_message 给一个还在跑的会话再追加一条消息——请宿主立刻把它插进正在跑的那一轮，不再排队到本轮结束；已经闲下来的会话会被拒投，并指向 create_session；read_session_transcript 按会话 id 读回它说过什么、当前这一轮结束没有；list_dispatched_sessions 列出本插件派送过哪些会话、各自此刻什么状态。宿主半边插件，没有界面，调用的是宿主自己的建会话能力。装完需重启 DSH。
+- [gbn0219/dsh-ask-from-text](https://github.com/gbn0219/dsh-ask-from-text) — 在已完成的 assistant 回答中划选文字，在独立浮窗分支中继续追问；支持彩色标记、舞台和分支树。
 - [Genesi599/dsh-plugins#branch](https://github.com/Genesi599/dsh-plugins/tree/main/plugins/branch) — 会话分支的四个斜杠命令：列出分支树、在已完成的轮次处 fork、把会话连同整个家族置顶、把子分支合并回父会话。
 - [GengDaPeng/dsh-agent-message](https://github.com/GengDaPeng/dsh-agent-message) — DeepSeek Harness 跨会话 Agent 通信：支持会话发现、离线投递、投递回执与发送方会话导航。
 - [glk1220/dsh-session-git](https://github.com/glk1220/dsh-session-git) — 把分叉会话里做完的工作合并回原会话：/merge 直接从分支的会话记录整理出摘要、不调用模型（每轮的提问与回复、改动的文件、执行的命令、你做的选择、待办和最终结论），随你的下一条消息交给 agent，或用 --wake 立即处理；同一分支再次合并只带新增的轮次。另有 /branches、带合并状态的右侧栏分支地图、输入框上方的未合并提醒，以及供 agent 使用的 session_branches / session_branch_merge 工具。
@@ -4673,6 +4675,7 @@ dsh plugin --profile web add dshmarket
 - [SaiSenBox/dsh-prompt-manager](https://github.com/SaiSenBox/dsh-prompt-manager) — 浏览器本地提示词库：在输入框选择器中同时注入多条会话级系统提示词，支持分支继承、中英界面、收藏与 JSON 备份。
 - [SaiSenBox/dsh-web-bridge](https://github.com/SaiSenBox/dsh-web-bridge) — 在 DSH 内浏览和继续 DeepSeek 网页会话，或将历史与附件导入工作区。
 - [Saolence/dsh-restart-handoff](https://github.com/Saolence/dsh-restart-handoff) — 改动需要重启时自动重启 DSH 桌面宿主（仅 macOS），重启后把模型写的交接话（为什么重启、下一步做什么）投回原会话继续。
+- [SAS-159/dsh-evidence-audit](https://github.com/SAS-159/dsh-evidence-audit) — 把 Agent 的结论对回同一会话里工具真实返回的内容：含路径、带单位数字、行内代码或 URL 的句子被判定为有据 / 部分有据 / 无据，并列出找不到的锚点。覆盖率显示在输入框胶囊上。纯本地启发式匹配，不调模型、不是日志存证、不上传任何内容。
 - [sbearbug/dsh-highlightpin](https://github.com/sbearbug/dsh-highlightpin) — 把已定稿的用户或助手消息里划选的一段原文钉住，让它在上下文压缩后仍留在模型输入中：每枚钉子默认按需补回，也可改为 resident（中性常驻系统提示词）或 highlight（强调常驻）。选区会以 source-exact、source-normalized 或 rendered 三级保真对回源文本，三个级别各有独立的字符预算。
 - [scottzx/session-reader](https://github.com/scottzx/session-reader) — 通过 1session 命令行或 DSH Web 历史浏览器搜索和读取 Claude Code、Codex、Antigravity、Grok 与 DSH 的本地编程会话。
 - [sdlhs/dsh-interject](https://github.com/sdlhs/dsh-interject) — 把排队中的消息提前到下一个 step 边界送达，而不是等整个 turn 结束；默认不打断已经在跑的模型调用，打断是显式开启的模式。
