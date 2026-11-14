@@ -1,7 +1,7 @@
 url: https://github.com/TwinsEarth/dsh-fang
 name: TwinsEarth/dsh-fang
 category: dev
-tarball: https://github.com/TwinsEarth/dsh-fang/releases/download/v3.1.28/dsh-fang-3.1.28.tgz
+tarball: https://github.com/TwinsEarth/dsh-fang/releases/download/v3.3.4/dsh-fang-3.3.4.tgz
 description:
-  en: 'Isolated mother, essence, and fork workspaces for developing and testing DeepSeek Harness plugins, with hot reload and a shared decision inbox across forks.'
-  zh: '为 DeepSeek Harness 插件开发与测试提供母体、元主、分身隔离工作区，支持插件热更新与跨分身共享的决策收件箱。'
+  en: 'Host-side control plane for DeepSeek Harness: isolated mother, essence, and fork workspaces, a shared decision inbox, restart guard, audit ledger, and pre-publish/install/deploy gates.'
+  zh: 'DeepSeek Harness 的宿主控制面：母体、元主、分身隔离工作区，共享决策收件箱、重启守卫、审计账本，以及发布、安装、部署前置门禁。'
