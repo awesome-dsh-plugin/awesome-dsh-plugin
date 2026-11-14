@@ -1,0 +1,7 @@
+url: https://github.com/ohmykreee/dsh-remote-control
+name: ohmykreee/dsh-remote-control
+category: remote
+description:
+  en: 'Phone console for DeepSeek Harness over the LAN: clock, weather, notifications, sessions, balance and media control, with token pairing, a QR code and optional HTTPS.'
+  zh: '把局域网里的手机变成 DSH 的触屏控制台：时钟、天气、通知、会话、余额与媒体控制，支持令牌配对、扫码连接和可选 HTTPS。'
+icon: https://raw.githubusercontent.com/ohmykreee/dsh-remote-control/main/icon-180.png
