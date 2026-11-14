@@ -1,0 +1,8 @@
+url: https://github.com/Starlit-Sky-code/dsh-experience-optimizer/tree/main/packages/plugin-trim
+name: Starlit-Sky-code/dsh-experience-optimizer#plugin-trim
+category: dev
+description:
+  en: 'Plugin diet and compatibility diagnostics for DeepSeek Harness: scans context cost and plugin/runtime/profile conflicts, then applies low-risk reversible trims only after confirmation; ships a Web settings console.'
+  zh: 'DSH 插件减负与兼容性体检：扫描上下文成本与插件/运行时/Profile 冲突，只在确认后应用低风险、可回滚的精简项；带 Web 设置控制台。'
+icon: https://raw.githubusercontent.com/Starlit-Sky-code/dsh-experience-optimizer/main/packages/plugin-trim/icon.png
+tarball: https://github.com/Starlit-Sky-code/dsh-experience-optimizer/releases/download/v0.2.4/dsh-plugin-trim-0.2.4.tgz
