@@ -1,0 +1,7 @@
+url: https://github.com/SpokAtom/dsh-status-lamp
+name: SpokAtom/dsh-status-lamp
+category: ui
+description:
+  en: 'Sidebar session-row status lamp: a blue dot for idle, a hollow ring for parked (manual, or automatic after 5 days without conversation), a solid grey dot for archived; native pending, running and unread lamps stay unchanged.'
+  zh: '侧栏会话行状态灯：空闲蓝点、挂起灰空心（手动或 5 天无对话）、归档灰实心；原生待审批、进行中、有新结果灯保持不变。'
+icon: https://raw.githubusercontent.com/SpokAtom/dsh-status-lamp/main/docs/icon-180.png
