@@ -2,6 +2,6 @@ url: https://github.com/shanhai-city-states/kaipu-dsh-plugin-site/tree/main/pack
 name: shanhai-city-states/kaipu-dsh-plugin-site#plugin-wisdom
 category: tools
 description:
-  en: "Companion sidebar panel for the Kaipu site plugin: shows the built-in advisory team and seat status. Install together with kaipu-platform — seat data comes from the site plugin's gateway endpoints; a standalone install honestly reports \"channel not ready\". Removable: uninstall it and the site plugin stays fully usable."
-  zh: "山海·开铺 智囊团插件：配套侧边面板，展示内置谋士团队与席位状态。需与 kaipu-platform 一起安装——灯位数据由开铺插件经网关提供，单独安装会如实显示「通道未就绪」。可摘除：卸掉它，开铺仍完整可用。"
+  en: "Sidebar panel for Kaipu: shows which reviewer seats a workspace has, which scenes they serve, and the history of past sessions. Installs on its own (no package dependency); it reads seat data from the Kaipu gateway, so with no Kaipu endpoint configured it honestly reports \"channel not ready\". Removable: uninstall it and nothing else is affected."
+  zh: "山海·开铺 智囊团插件：侧边面板，显示这个工位有哪些评审位、这些位子服务于哪些场景、以及过往会商的历史。可独立安装（无包依赖）；席位数据来自开铺网关，未配置服务端地址时会如实显示「通道未就绪」。可摘除：卸掉它不影响其他插件。"
 tarball: https://github.com/shanhai-city-states/kaipu-dsh-plugin-site/releases/latest/download/kaipu-wisdom-team.tgz
