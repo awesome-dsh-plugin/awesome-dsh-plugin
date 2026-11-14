@@ -2,5 +2,5 @@ url: https://github.com/CloudSen/dsh-browser-annotation
 name: CloudSen/dsh-browser-annotation
 category: browser
 description:
-  en: 'Annotates elements in the built-in Browser with a compact comment field beside the click; live attribute edits are recorded in the comment, and numbered hoverable tags are inserted into the composer without screenshots or provider replacement.'
-  zh: '在内置浏览器中批注页面元素：紧凑输入框贴着点击位置，属性修改会写入评论，编号标签带悬停预览插入输入框；不截图，也不替换官方 Provider。'
+  en: 'Annotates elements or dragged regions in the built-in Browser with a compact comment field beside the selection; live attribute edits are recorded in the comment, and numbered hoverable tags are inserted into the composer without screenshots or provider replacement.'
+  zh: '在内置浏览器中批注页面元素或拖拽框选的区域：紧凑输入框贴着选择位置，属性修改会写入评论，编号标签带悬停预览插入输入框；不截图，也不替换官方 Provider。'
