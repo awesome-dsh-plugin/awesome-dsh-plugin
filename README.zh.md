@@ -2670,6 +2670,7 @@ dsh plugin --profile web add dshmarket
 - [lcthe/dsh-usage-monitor](https://github.com/lcthe/dsh-usage-monitor) — DSH 用量监控：自动查询已配置 API Key 的供应商余额和时间窗口限制，支持输入框余量胶囊和自定义供应商。
 - [leecisen/dsh-token-bill](https://github.com/leecisen/dsh-token-bill) — 估算每个对话的费用：内置 16 家厂商的官方价格（含 DeepSeek 高峰/空闲时段和长上下文阶梯价），输入框下方可展开明细并切换币种，侧边栏显示每个对话的费用。
 - [LeemanCheung/dsh-token-usage](https://github.com/LeemanCheung/dsh-token-usage) — 本地优先的四 bucket Token 可观测性：持久会话/provider/model/日期仪表盘、趋势、预算与异常信号、公开费率估算、安全聚合导出，以及显式触发的用量/会话轨迹分析。
+- [leicheng42/dsh-task-time-cost](https://github.com/leicheng42/dsh-task-time-cost) — 为 DeepSeek Harness 提供剩余时间、实际用时、Token 预算与费用参考，支持本地路由校准，适用于 Windows DSH Desktop 0.2.2-rc.2。
 - [LemCAE/dsh-balance](https://github.com/LemCAE/dsh-balance) — 顶栏徽章与设置卡片展示 DeepSeek 账户余额与当前会话预估花费：暂停感知的自动刷新、可编辑官方价格表、`deepseek_balance` 模型工具与中英文界面。
 - [Leni-More/dsh-conv-calendar](https://github.com/Leni-More/dsh-conv-calendar) — Web 侧边栏的 GitHub 风格日历网格，按天展示你发出的对话条数，可切换为会话数、Token 总量或输出 Token。只统计你亲手发送的消息，注入的上下文不计入。
 - [LexVolkov/dsh-ledger-kitty](https://github.com/LexVolkov/dsh-ledger-kitty) — 窗台上的白猫记账助手：显示每条回答与会话的 token 和花费、提示缓存省下的钱、上下文占模型窗口的比例、下一次峰谷换价时间与实时 DeepSeek 余额；可摸头打呼噜，随 agent 工作状态做出反应，所有音效均为合成。
@@ -5507,7 +5508,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-subagent-antigravity](https://github.com/ALAMBICCO/dsh-subagent-antigravity) — 将 DeepSeek Harness 原生 subagent_fork 子智能体会话路由至 Google AI Pro (Antigravity) 订阅（支持 Gemini 3.8 Flash、Claude Sonnet 5.5、Claude Opus 5.5、GPT-OSS 120B）：零 API 费用、实时流式输出、完整工具调用、并行前缀缓存预热、200ms HTTPS 配额查询，以及聊天栏右上角配额按钮与侧滑模型/推理强度设置面板。
 - [albisjee25/albis-aipassport-homework](https://github.com/albisjee25/albis-aipassport-homework) — AI Passport 作业助手：把作业截图整理成清单，设备上逐项倒计时、按住说话，并提供家长后台。默认会在 0.0.0.0:8787 上开自己的 HTTP 服务，让同一 Wi-Fi 下的设备能连：家长后台只接受本机连接，设备要在你批准配对码后拿到令牌才能访问。
 - [aldveylor/dsh-intellisense](https://github.com/aldveylor/dsh-intellisense) — 一个用于管理工具集的命名空间管理工具，支持自动发现与集成，用于节省token的消耗还会在受限 Node 运行时执行 TypeScript 与 JavaScript，按需通过命名空间调用工具。
-- [Alec6636/dsh-portable-workspace](https://github.com/Alec6636/dsh-portable-workspace) — 移动工作区：① 100% 不落本地， 会话、插件、工程与日志 全放在 移动盘/U盘。便携工作，不惧换电脑、不惧重装系统；②独立便携 web 实例，可多开、独立插件配置环境；③盘符无关识别 + 脱机；④密码防隐私、防误删， 不加密数据（安全）；⑤缺插件一键按清单重装，可剔除的清单；⑥跨盘·本机会话双向迁移 + .zip 备份恢复 + 改名；⑦升级友好、零依赖、离线可用。⑧可选的「同步本机登录」⑨自清理过期失效的cookie。每台电脑都需安装 DSH 和本插件；仅在 Windows 上验证过。工作区密码只限制插件内的操作、并不加密盘上文件；可选的「同步本机登录」会把 DeepSeek 账号凭据以明文 YAML 复制到盘上。
+- [Alec6636/dsh-portable-workspace](https://github.com/Alec6636/dsh-portable-workspace) — 移动工作区：① 100% 不落本地， 会话、插件、工程与日志 全放在 移动盘/U盘。便携工作，不惧换电脑、不惧重装系统；②独立便携 web 实例，可多开、独立插件配置环境；③盘符无关识别 + 脱机；④密码防隐私、防误删， 不加密数据（安全）；⑤缺插件一键按清单重装，可剔除的清单；⑥跨盘·本机会话双向迁移 + .zip 备份恢复 + 改名；⑦升级友好、零依赖、离线可用。⑧可选的「同步本机登录」⑨自清理过期失效的cookie。使用前须知：需每台电脑装 DSH；仅在 Windows 验证；密码不加密盘上文件；「同步本机登录」会把账号凭据以明文 YAML 复制到盘上。
 - [alexltr/dsh-vba-bridge](https://github.com/alexltr/dsh-vba-bridge) — 通过真实 Excel COM 读写、导出并校验 Excel VBA 工程：模块、窗体代码、过程清单与 .frm/.frx 导出。仅 Windows：需安装桌面版 Excel、Python 3.10+（含 pywin32），并设置 AccessVBOM=1。
 - [Algorandius/dsh-disk-janitor](https://github.com/Algorandius/dsh-disk-janitor) — DSH 磁盘清理插件：看清磁盘占用都花在哪，只清理可以安全重建的部分，正在使用中的资源始终保留。
 - [Aliang-code/dsh-fusion-lean#fusion-lean](https://github.com/Aliang-code/dsh-fusion-lean/tree/master/packages/fusion-lean) — 把 Fusion 360 接进 DSH：桥接 Fusion 自带的 MCP 服务（读取、执行、更新、电子设计），上游 schema 逐字节保留而常驻工具面减少 70%，设置页可改端点，并把本地 hf.py 建模闭环包成九个 hf_* 工具（需要 Python 3.10+ 与 fusion-harness 工作区）。
@@ -8253,6 +8254,7 @@ dsh plugin --profile web add dshmarket
 - [abbaababa/dsh-workplan](https://github.com/abbaababa/dsh-workplan) — 为 DeepSeek Harness 提供持久化任务分解计划，并加入自我学习闭环：每个部门子任务按「计划→执行→验证」三阶段推进，验证阶段必须提交问题、弯路与解决方式的复盘，写入永久教训记忆文件，下次派发时按部门与关键词排序注入，避免重犯。新增只读 dsh_workplan_lessons 工具（共 11 个模型工具）、环形图/四段构成条/逐阶段步进条进度面板，以及按 ISO/IEC 15408:2026 结构编写的公开安全自评估——每条声明都可被读者核对，零运行时依赖。
 - [abworks-dev/dsh-hooks](https://github.com/abworks-dev/dsh-hooks) — DSH 的 Codex 风格生命周期命令钩子，支持工具参数显式共享、执行前拒绝，以及通知与本地审计示例。
 - [achenjins/dsh-runninghub-plugin](https://github.com/achenjins/dsh-runninghub-plugin) — 在 DSH 中调用你的 RunningHub ComfyUI 工作流生成图片、视频和音频，提供工作流配置面板、后台任务和多 Key 管理。
+- [AdamsShen/dsh-autopilot-harness](https://github.com/AdamsShen/dsh-autopilot-harness) — 给 DSH 加上「先规划再执行」的闭环：/autopilot-on 通过追问轮次产出 brief、plan、checklist 三个文件，/autopilot-run 按清单逐项执行；产品代码被修改后拦截回合边界，用 steer 让 agent 轮换多个自审视角再推进。
 - [adithyanraj03/dsh-schedule-later](https://github.com/adithyanraj03/dsh-schedule-later) — 把消息排进 dsh 会话稍后再发：消息框里带日期与时间选择器的「定时」按钮、跨会话列出待发消息的侧栏面板、浏览器关着也由宿主按时投递成一条普通用户消息，以及 schedule_message / list_scheduled_messages / cancel_scheduled_message 三个工具，模型因而能自己回到某个会话。
 - [Ados6666/dsh-review-note](https://github.com/Ados6666/dsh-review-note) — 给阶段交付做可批注的验收单：在正文上划词、逐条写意见，一次回传结构化结果；单次 ask_user_question 三题以上合并成一屏提交。
 - [advance-lion/dsh-history-plugin](https://github.com/advance-lion/dsh-history-plugin) — 按设备记录 DSH 插件成功安装历史，通过用户授权的百度网盘账号跨设备合并账本，并支持预检后的批量重装。
