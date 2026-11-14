@@ -1,0 +1,7 @@
+url: https://github.com/luorenyu/dsh-deepsearch
+name: luorenyu/dsh-deepsearch
+category: session
+description:
+  en: Local conversation full-text search with Chinese substring matching, highlighted previews, workspace filtering and native message navigation.
+  zh: 本地会话全文搜索，支持中文片段匹配、摘要高亮、工作区筛选和原生消息定位。
+tarball: https://github.com/luorenyu/dsh-deepsearch/releases/download/v0.1.12/dsh-deepsearch-0.1.12.tgz
