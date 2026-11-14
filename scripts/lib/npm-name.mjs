@@ -1,9 +1,12 @@
-/** Resolve a published npm identity where it differs from the source bundle name. */
-const publishedNameOverrides = new Map([
-  ['tests4gptplay/dsh-dots', { declared: 'dsh-dots', published: '@tests4gptplay/dsh-dots' }],
-])
+/** Resolve the Dots classic listing separately from the MCP subpackage in one GitHub repo. */
+const classicListing = 'tests4gptplay/dsh-dots'
 
-export function publishedNpmName(repo, declaredName) {
-  const override = publishedNameOverrides.get(repo.toLowerCase())
-  return override?.declared === declaredName ? override.published : declaredName
+export function publishedNpmName(entryPath, declaredName) {
+  // The classic market row points at the repo root, which now hosts Dot MCP on main.
+  // Its published distribution remains @tests4gptplay/dsh-dots@1.0.12.
+  if (entryPath.toLowerCase() === classicListing && (declaredName === 'dsh-dots' || declaredName === 'dsh-dot-mcp')) {
+    return '@tests4gptplay/dsh-dots'
+  }
+  // The new subpackage URL resolves to dsh-dot-mcp@1.0.0 via its own manifest.
+  return declaredName
 }
