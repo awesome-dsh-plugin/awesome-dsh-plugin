@@ -2,5 +2,5 @@ url: https://github.com/t1897/dsh-video-narrator
 name: t1897/dsh-video-narrator
 category: skill
 description:
-  en: Turns a video, article, PDF, or text into a narrated video with per-scene images, TTS, metadata, and ordered fallback across multiple text and image APIs.
-  zh: 把视频、文章、PDF 或文本转成带配图与配音的口播视频，支持多文本与生图 API 顺序回退。
+  en: Turns a video, article, PDF, or text into a narrated video, with an in-app workbench for settings and project history, per-scene images, TTS, metadata, and ordered API fallback.
+  zh: 把视频、文章、PDF 或文本转成带配图与配音的口播视频，内置参数/历史工作台，支持多文本与生图 API 顺序回退。
