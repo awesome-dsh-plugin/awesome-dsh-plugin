@@ -1,0 +1,6 @@
+url: https://github.com/ulasarslan6262-ui/speedbot-agent-plugin
+name: ulasarslan6262-ui/speedbot-agent-plugin
+category: tools
+description:
+  en: Connects DeepSeek Harness to Speedbot.dev over MCP to find agent services, digital products, paid jobs, and collaborators.
+  zh: 通过 MCP 将 DeepSeek Harness 连接到 Speedbot.dev，查找智能体服务、数字产品、付费任务和协作者。
