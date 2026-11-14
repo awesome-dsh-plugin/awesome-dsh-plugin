@@ -1,0 +1,6 @@
+url: https://github.com/suifei/dsh-pmo-button
+name: suifei/dsh-pmo-button
+category: workflow
+description:
+  en: Mounts a persistent PMO reviewer subagent that receives forwarded work turns and replies with a STATUS verdict (CONTINUE, DONE or NEED_HUMAN) to drive the review loop, optionally using a different model and thinking effort.
+  zh: 为会话挂载常驻 PMO 审查子代理：转发工作轮次给它，按 CONTINUE/DONE/NEED_HUMAN 的 STATUS 结论推进审查循环，可选用不同的模型与思考等级。
