@@ -1,0 +1,6 @@
+url: https://github.com/zhangqi423820-ai/dsh-spend-badge
+name: zhangqi423820-ai/dsh-spend-badge
+category: usage
+description:
+  en: "Appends what each turn cost to its usage row and the running session total to the composer status bar, priced on DeepSeek's published peak and off-peak rates."
+  zh: 在每条回复的用量行后面接上本轮花费，在输入框下方状态栏接上本会话累计花费，按 DeepSeek 官方峰谷价折算。
