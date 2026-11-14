@@ -2,5 +2,5 @@ url: https://github.com/skillpie/dsh-plugins/tree/main/dsh-remote-relay
 name: skillpie/dsh-plugins#dsh-remote-relay
 category: remote
 description:
-  en: 'Reach any DeepSeek Harness host by its 8-digit code through a relay origin: a browser-surface remote control with relay-prefixed GUI passthrough, per-host WebSocket muxing, a visitor fetch/WebSocket shim that rewrites same-origin calls, owner-only HTTP APIs, and optional concealment of the code in the URL via an origin-level Service Worker.'
-  zh: '凭 8 位码经中转服务器连接任意 DeepSeek Harness 主机：relay 前缀透传的 GUI 远程控制，按主机多路复用 WebSocket，访客侧 fetch/WebSocket shim 全量重写同源请求，属主 HTTP API 限定宿主角色，并可用 origin 级 Service Worker 隐藏 URL 中的码。'
+  en: 'Reach any DeepSeek Harness host by its 8-digit code through a relay origin: a browser-surface remote control with relay-prefixed GUI passthrough, per-host WebSocket muxing, a visitor fetch/WebSocket shim that rewrites same-origin calls, owner-only HTTP APIs, and optional concealment of the code in the URL via an origin-level Service Worker. Off by default; it must be enabled from the owner panel in the sidebar.'
+  zh: '凭 8 位码经中转服务器连接任意 DeepSeek Harness 主机：relay 前缀透传的 GUI 远程控制，按主机多路复用 WebSocket，访客侧 fetch/WebSocket shim 全量重写同源请求，属主 HTTP API 限定宿主角色，并可用 origin 级 Service Worker 隐藏 URL 中的码。默认关闭，需在属主侧栏面板主动开启。'
