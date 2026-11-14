@@ -253,6 +253,7 @@ dsh plugin --profile web add dshmarket
 - [aa2246740/dsh-better-display](https://github.com/aa2246740/dsh-better-display) — 更安静的 DeepSeek Harness 阅读视图：原生过程细节、实时推理，以及干净的最终回答。
 - [aa2246740/dsh-dragndrop-attachments](https://github.com/aa2246740/dsh-dragndrop-attachments) — 支持拖放本地文件、文件夹、ZIP 压缩包和 Office 文档作为附件。
 - [aa2246740/dsh-watcher](https://github.com/aa2246740/dsh-watcher) — 只读会话工作路径观察器：收起轮次看阶段数、执行数、耗时与 tok/s，展开看并行分支、工具结果与供应商可见推理。
+- [AAACherryCandy/dsh-stock-strip](https://github.com/AAACherryCandy/dsh-stock-strip) — 贴在 DeepSeek Harness 底边的一条常驻行情条，显示自选股价格与每只持仓的浮动盈亏，字段可勾选、放不下时自动变成两行。
 - [aadmin61-design/dsh-selection-chat](https://github.com/aadmin61-design/dsh-selection-chat) — 在原生文本引用菜单中加入临时侧边提问，使用原生主题控件，可保存聊天到来源工作区。
 - [Aafff623/dsh-callout](https://github.com/Aafff623/dsh-callout) — 把 DSH 助手 Markdown 里合格的 `> [!NOTE]`、TIP、IMPORTANT、WARNING、CAUTION 块引用渲染成跟随主题的 GitHub 风格提示卡片，不改会话存档。
 - [Aafff623/dsh-keyboard-manager](https://github.com/Aafff623/dsh-keyboard-manager) — 为 DSH Web UI 提供快捷键：Ctrl+Q 切换左侧栏，Ctrl+E 切换右侧栏，Ctrl+S 打开设置。物理键码可在 profile 补丁中覆盖。
@@ -1049,6 +1050,7 @@ dsh plugin --profile web add dshmarket
 - [JiayuREN1127/dsh-file-drag](https://github.com/JiayuREN1127/dsh-file-drag) — 把右侧文件区的文件和文件夹拖进输入框：落下的文件变成句中内嵌的小卡片、附件卡片或 @ 路径，可在设置里切换。
 - [jide315/dsh-reasoning-language](https://github.com/jide315/dsh-reasoning-language) — 通过可配置的系统提示词章节要求模型使用指定语言推理（默认简体中文），并默认展开思考行，同时保留用户手动折叠的状态。
 - [jidekaixin2dian/dsh-file-actions](https://github.com/jidekaixin2dian/dsh-file-actions) — 右键聊天里的任意文件引用，即可打开、用系统关联应用打开、在文件管理器中定位、复制路径或文件内容、另存为。
+- [Jimmeebingo/dsh-music-deck](https://github.com/Jimmeebingo/dsh-music-deck) — 悬浮音乐控制卡片，读取并控制支持 Windows 系统媒体会话的播放器。
 - [jin1254/dsh-annotations](https://github.com/jin1254/dsh-annotations) — 在官方 DSH 0.2.1-rc.2 Web 中选中已完成的助手回复添加评论，以紧凑批注标签发送并跳转原文，无需修改主体。
 - [Jingxuan-WH/dsh-model-rank](https://github.com/Jingxuan-WH/dsh-model-rank) — 侧栏大模型排行榜：LMArena 盲测评分、Artificial Analysis 智能指数、LiveBench 2.0 能力榜、OpenRouter 周榜/月榜与市场份额，附价格、速度与上下文；另有本机用量仪表盘（只读会话日志统计 tokens、估算花费与模型用量排行）、明细抽屉与 CSV 导出。数据由宿主每日快照，面板打开即显示，并高亮本机已接入的模型。
 - [JinYihang1011/dsh-plugins#dsh-refresh-button](https://github.com/JinYihang1011/dsh-plugins/tree/main/dsh-refresh-button) — 仅 Windows，需 PowerShell 与附带的 install.ps1。在模型选择左侧加一个「界面」菜单：刷新界面、重启 DSH、关闭 DSH，三项都即点即执行；Windows 版 DSH 没有内置的重载或重启入口，这里补上。
@@ -5112,6 +5114,7 @@ dsh plugin --profile web add dshmarket
 - [HERO476/dsh-instruction-memory](https://github.com/HERO476/dsh-instruction-memory) — 在 DSH 设置界面维护常驻指令，自动注入此后每一轮对话的系统提示词。
 - [HiAi-gg/docsmint#dsh-docsmint](https://github.com/HiAi-gg/docsmint/tree/main/packages/dsh-plugin) — DocsMint 工作区面板与智能体工具，支持文档搜索、读取、创建和更新，可连接 Cloud OAuth 或自托管 API 密钥。
 - [highland0971/dsh-native-memory](https://github.com/highland0971/dsh-native-memory) — 基于 DSH 原生接缝的按工作区记忆：事实与有界常驻档案落在 storage-domain 的 JSON 单元上，写入经人工审批并带 `(sessionId, seq)` 引证，确定性召回 + session-query 全文检索历史会话——无外部服务器、无自建 SQLite。
+- [HirschNo/meow-starmap](https://github.com/HirschNo/meow-starmap) — 把 meow-memory 的记忆库画成星图：一条记忆是一颗发光的星，项目聚成星系，连线来自项目归属和关键词共现，缩远时自动聚合成光团。只读。
 - [hmlyx/dsh-memory](https://github.com/hmlyx/dsh-memory) — 为 DeepSeek Harness 提供持久化对话记忆：记忆标签页、AI 自动命名、按 AI 隔离的隐私边界、侧栏显示 AI 名称与经验自动归档。以静态 profile 插件形式在所有预设中常驻，重启不丢。
 - [hr98w/dsh-memory](https://github.com/hr98w/dsh-memory) — 融合 Claude Code 的 Auto Memory 与 Codex 的 Session 记忆整理，为 DeepSeek Harness 提供简单、透明、上下文友好的长期记忆。
 - [htcqp802/dsh-knowledge-base](https://github.com/htcqp802/dsh-knowledge-base) — DSH 通用知识库插件：导入 md/txt/json/yml/docx/pdf、目录化管理、FTS5 全文检索（BM25）、Web 管理界面。
@@ -9871,6 +9874,7 @@ dsh plugin --profile web add dshmarket
 - [MiraculousGarfield/dsh-ops-health](https://github.com/MiraculousGarfield/dsh-ops-health) — 一键健康检查：侧边栏按钮经纯 HTTP 路由（独立于工具注册表）调用 check-health.ps1 并渲染结构化报告卡片；配色跟随当前主题，Windows/PowerShell。
 - [MjxUpUp/Forge#forge-dsh](https://github.com/MjxUpUp/Forge/tree/main/plugins/forge-dsh) — 为 DeepSeek Harness 提供 Forge 质量门禁：任务门禁、改前必读、危险命令拦截与质量评分，经 DSH 类型化拦截点由本地 forge CLI 执行。需本机安装 forge CLI，缺失时插件 fail-open 并在会话开始时尽力提示；任务门禁还要求项目已执行 forge init。
 - [mkiea/dsh-forge](https://github.com/mkiea/dsh-forge) — DeepSeek Harness 插件组合分析工具：依赖树、冲突检测、风险评估（含预测）、可视化与组合模拟。
+- [mobius-2046/dsh-harmonyos-agent](https://github.com/mobius-2046/dsh-harmonyos-agent) — 鸿蒙（ArkTS）应用开发 agent：一个 harmony 工具 15 个动作——构建、装机、启动、日志、截图、崩溃日志、界面查询与操作——外加网页端 hilog 面板。
 - [mogutofu/dsh-mc-server-ops](https://github.com/mogutofu/dsh-mc-server-ops) — 通过 RCON 进行 Minecraft 服务器运维，支持静态命令拦截、本地/Pterodactyl 可插拔适配器、可配置的群友投票，以及对 Paper、Forge、Fabric 和原版服务器的多层进程探测。QQ 群入口需先安装 @tencent-connect/dsh-qqbot 插件；local 适配器在 Windows 上依赖 PowerShell 5.1。
 - [Monter-code/dsh-live-reload](https://github.com/Monter-code/dsh-live-reload) — DSH 插件免重启热重载：清模块缓存、按 junction 路径匹配、失败时带版本号重新导入， 并在会话标题栏注册一颗刷新按钮，让页面立刻加载新的插件 bundle。
 - [moon16u/dsh-pouch#dsh-restart](https://github.com/moon16u/dsh-pouch/tree/main/packages/dsh-restart) — 安全的分离式 DSH 重启：/restart 与 /dsh-restart 斜杠命令（原生候选样式）加 dsh_restart Agent 工具；分离的 worker 在 3 秒后重启 DSH 且会话不冻结，Windows/macOS 走基于官方 appExit 服务的原生 Node helper。
