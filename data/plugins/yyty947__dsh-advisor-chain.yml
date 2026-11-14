@@ -1,0 +1,10 @@
+# awesome-dsh-plugin 收录投稿（最终提交时复制到
+# awesome-dsh-plugin 仓库的 data/plugins/yyty947__dsh-advisor-chain.yml，
+# 单独开一个只含这一个文件的 PR；本仓库已满足全部门槛）。
+url: https://github.com/yyty947/dsh-advisor-chain
+name: yyty947/dsh-advisor-chain
+category: agi
+description:
+  en: "Asks a configured advisor model chain for a second opinion on demand; the advisor inherits the full conversation, fails over along the chain, and logs consultations as replayable chat cards."
+  zh: 按需向配置好的顾问模型链征求第二意见；顾问自动继承完整对话，失败沿链顺延，咨询以卡片留痕可回放。
+icon: https://raw.githubusercontent.com/yyty947/dsh-advisor-chain/main/assets/icon-180.png
