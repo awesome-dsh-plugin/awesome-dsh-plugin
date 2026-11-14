@@ -1,0 +1,6 @@
+url: https://github.com/chen1pengvincent/dsh-archived-manager
+name: chen1pengvincent/dsh-archived-manager
+category: session
+description:
+  en: Manages archived DSH sessions with native unarchive, a recoverable quarantine, permanent purge, search, bulk actions up to 200 sessions, and 7/30/90-day or never-expiring quarantine retention, without deleting project files.
+  zh: 管理 DSH 归档会话：原生取消归档、可恢复隔离区、彻底删除、检索、单次最多 200 条的批量操作，以及 7/30/90 天或永不过期的隔离区保留策略，且不删除项目文件。
