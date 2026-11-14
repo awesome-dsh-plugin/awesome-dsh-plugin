@@ -1,0 +1,6 @@
+url: https://github.com/suiyideali/dsh-moongate
+name: suiyideali/dsh-moongate
+category: security
+description:
+  en: 'Learning approval gate for DeepSeek Harness: judges out-of-policy tool calls with Flash, reuses decisions within a session, promotes durable rules across sessions, and provides a manageable rule library.'
+  zh: '会从审批中学习的 DeepSeek Harness 审批门控：用 Flash 判定越界工具调用，会话内复用决定、跨会话晋升持久规则，并提供可管理的规则库。'
