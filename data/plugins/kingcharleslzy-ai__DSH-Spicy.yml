@@ -1,0 +1,7 @@
+url: https://github.com/kingcharleslzy-ai/DSH-Spicy
+name: DSH-Spicy
+category: vision
+description:
+  en: 'An NSFW content creation plugin for purge.'
+  zh: '完美适配 purge 的 nsfw content creation 插件。'
+tarball: https://github.com/kingcharleslzy-ai/DSH-Spicy/releases/latest/download/dsh-qwen-studio.tgz
