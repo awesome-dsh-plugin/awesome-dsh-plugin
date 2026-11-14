@@ -3331,7 +3331,7 @@ dsh plugin --profile web add dshmarket
 - [tszmzz1026/dsh-epindel-boot-animation#dsh-glass-aurum](https://github.com/tszmzz1026/dsh-epindel-boot-animation/tree/main/packages/dsh-glass-aurum) — 原创 CSS 金紫主题，支持本地头像上传与裁切、助手命名和阅读排版，不附带游戏素材。包名已从 dsh-glass-theme 改为 dsh-glass-aurum——旧名被另一位作者的无关插件占用；安装前请先停用旧包。
 - [tuibe/dsh-deepseek-theme-studio](https://github.com/tuibe/dsh-deepseek-theme-studio) — DSH Web GUI 客户端主题插件：流体背景、毛玻璃面板与量子化着色器效果，100 项参数可调并持久化到 JSON 文件。
 - [tuogusa/dsh-whale-background](https://github.com/tuogusa/dsh-whale-background) — Web UI 鲸鱼娘壁纸背景，应用表面半透明磨砂；支持在设置页自定义图片、透明度与 contain/cover 铺放方式，远程图片自动预检并 no-referrer 加载。
-- [Ultroncn/dsh-liquid-glass](https://github.com/Ultroncn/dsh-liquid-glass) — 一键让整个 DeepSeek Harness 界面通透起来：透明度滑块随心调，背景图自由换。
+- [Ultroncn/dsh-liquid-glass](https://github.com/Ultroncn/dsh-liquid-glass) — 主题背景：官方风格折叠设置、通透界面与本地图片/视频背景。
 - [undefineken/dsh-theme-matrix-glass](https://github.com/undefineken/dsh-theme-matrix-glass) — 黑客帝国式二进制数字雨（字形只有 0 与 1）：仅任务运行时生成数字，任务停止后停止生成并让已有数字落出屏幕、画面归空；配磨砂玻璃 token 层，数字与面板透明度均可调。
 - [Veagau/dsh-amadeus-skin](https://github.com/Veagau/dsh-amadeus-skin) — 添加 Amadeus 风格的浅色与深色配色及界面装饰。
 - [Vergil-long/dsh-custom-font](https://github.com/Vergil-long/dsh-custom-font) — 在设置页里像 Word 一样改界面字体、字号、加粗、颜色与版式，所见即所得、自动保存。自带两套开源字体（STIX2Text、Latin Modern Mono Light）与一套作者推荐排版，设置存在 ~/.dsh（换桌面外壳不丢）。
@@ -3801,6 +3801,7 @@ dsh plugin --profile web add dshmarket
 - [roclee2692/dsh-model-groups](https://github.com/roclee2692/dsh-model-groups) — DeepSeek Harness 的平台与厂家折叠模型选择器，保留 provider/model 路由与思考等级。
 - [Root-7-KHX/habit-hint](https://github.com/Root-7-KHX/habit-hint) — 《习惯提示小模型》：本地小模型每隔几轮读一次近期对话，生成「习惯 / 重点 / 提示语」并注入系统提示词，训练与模型数据都在本机。需要带 torch/transformers/peft 的 Python 虚拟环境，以及用户自备的 Qwen3-0.6B 基座与 LoRA 适配器（插件不打包）；默认只在开启伴侣记忆（companion-memory）的会话里工作，路径没配好时静默不注入。
 - [Sakana07X/dsh-plugin-team-subagent-control](https://github.com/Sakana07X/dsh-plugin-team-subagent-control) — 为 DeepSeek Desktop 的 Agent Teams 提供成员级模型与思考强度路由，并允许主理人释放（删除）团队成员的子智能体运行实例。
+- [sanmumu-325/dsh-doubao-client](https://github.com/sanmumu-325/dsh-doubao-client) — 非官方 Windows 集成：将本人已登录的本机豆包客户端以普通对话模式接入 DSH，提供已验证入口的图片输入、订阅额度查询、仅计数用量台账、严格 JSON 工具调用适配及有界跨会话并发，不启用豆包原生任务执行。
 - [sanmumu-325/dsh-qwenwork-models](https://github.com/sanmumu-325/dsh-qwenwork-models) — 把本机已登录的千问办公（QwenWork）桌面端对话模型接入 Harness 模型列表：多账号池、会话粘性与故障切换、凭证到期前自动续签、看护式保活、按模型独立开关/上下文窗口/输入类型，并展示账号状态与积分余额。非官方本地集成，复用使用者本人已登录客户端凭证，仅限本人账号自用。仅支持 Windows：需要千问办公桌面端已登录，账号池保存在 %LOCALAPPDATA% 下由 DPAPI 保护的文件里。作者提醒，复用客户端凭证可能违反厂商的服务条款。
 - [sanser9/dsh-opencode-connect](https://github.com/sanser9/dsh-opencode-connect) — 把本机已安装的 OpenCode CLI 免费模型接入 DSH：自动拉起或复用本地 opencode serve，读取实时模型目录并每五分钟刷新，再通过仅绑定回环、校验 Host 与 Origin 的 shim 把会话事件流转换为 OpenAI 兼容 SSE。
 - [Saretheya/dsh-lantern](https://github.com/Saretheya/dsh-lantern) — 把本机 DeepSeek Harness 已配置的全部模型，以 OpenAI / Anthropic 兼容接口开放给同一局域网；自带 API Key、按 Key 限流、熔断、模型过滤与用量报告。
@@ -10676,6 +10677,7 @@ dsh plugin --profile web add dshmarket
 - [Tuiltex-0216/dsh-wechat-share](https://github.com/Tuiltex-0216/dsh-wechat-share) — 把微信聊天记录转发进 DSH 会话：Windows 分享目标接收合并转发的 ZIP，GUI 浮层选择目标工作区与会话，ZIP 以文件附件用户消息到达，agent 解压并读取。按魔数纠正媒体扩展名（微信常把 PNG/HEIC 字节命名为 .jpg），投递失败时批次保留可重试。需 Windows 10/11 并开启开发者模式，先运行仓库安装脚本注册分享目标。
 - [TwinsEarth/dsh-windows2macos](https://github.com/TwinsEarth/dsh-windows2macos) — 一条指令同时下发给所有在线的 Windows 与 macOS 机器，可跨网络跨区域：零依赖中继只通过出站连接与各机通信（Tailscale 内网、公网 VPS + TLS、或隧道），各机在各自的项目副本上执行，结果连同 commit、工作区指纹与命令哈希一并回传，因此"环境不一致"会被判为 unverifiable，而不会被误当成结果分歧。下发指令需要独立于设备令牌的 operator token。
 - [TZHR-invest/dsh-plugins#dsh-lan-gateway](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-lan-access) — 完整的 Web GUI 局域网/远程访问方案：0.0.0.0 绑定、crypto.randomUUID polyfill、令牌门卫（401 登录页 + WebSocket 拦截，回环豁免）、特权围栏与设置持久化放行，附带幂等安装器与升级恢复。
+- [undertale11121/dsh-phone-bridge](https://github.com/undertale11121/dsh-phone-bridge) — 通过局域网把 DSH 桌面端和一台 dsh-go 手机配对。会话顶部有一个开关，把这个会话和手机上的一个对话连起来：手机侧会为每个电脑会话自动开（并复用）一个配对会话，不同电脑会话的消息不会串到一起；两个模型可以像人一样直接说话；另有 24 个 MCP 工具：读手机屏幕、点按、打开应用、跑 shell、传文件，把任务交给手机自己的模型。
 - [uumit-ai/dsh-uumit-remote](https://github.com/uumit-ai/dsh-uumit-remote) — 用 UUMit 账号在手机或其他电脑上打开这台电脑的 dsh web，不用自建服务器、不装其他程序：插件内置通道客户端连接 UUMit 托管的通道，侧栏里的面板负责配对和选择谁能用（仅自己、通过邀请链接或手机号授权的人、所有人），可随时撤销。需 dsh web 且 DSH >=0.2.1-rc.2。
 - [vantoo/dsh-share-webui](https://github.com/vantoo/dsh-share-webui) — 把当前实例的 Web 界面固定在一个端口上共享，支持设备配对与 Cloudflare Access 校验。
 - [Very12345/dsh-ssh-workspace](https://github.com/Very12345/dsh-ssh-workspace) — 面向 Linux/macOS 的 SSH 工作区，支持导入 SSH config、选择远端目录，文件工具、Bash 与持久远程终端沿用 DSH 原生会话权限。
