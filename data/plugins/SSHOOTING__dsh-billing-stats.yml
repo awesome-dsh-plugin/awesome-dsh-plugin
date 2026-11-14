@@ -1,0 +1,6 @@
+url: https://github.com/SSHOOTING/dsh-billing-stats
+name: SSHOOTING/dsh-billing-stats
+category: usage
+description:
+  en: Read-only DSH billing statistics with per-request, per-turn and session costs, equivalent public API pricing, optional bill calibration, and DeepSeek model support.
+  zh: 只读 DSH 计费统计：逐请求、逐轮与会话金额，公开 API 等价价格、可选账单校准，当前支持 DeepSeek 系列模型。
