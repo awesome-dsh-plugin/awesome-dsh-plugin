@@ -1,6 +1,0 @@
-url: https://github.com/aaarookie/dsh-bilibili_video-study_buddy
-name: aaarookie/dsh-bilibili_video-study_buddy
-category: tools
-description:
-  en: 'Bilibili course study buddy for DeepSeek Harness. Four tools: study_frame grabs a timestamped frame at 1080p with region cropping and a disk cache; study_scan samples a time range into one grid image for locating; study_subs extracts AI subtitles and scores three signals to detect contaminated subtitle tracks; study_asr transcribes a short window with surrounding context. Read-only; all data stays local.'
-  zh: 'B 站网课伴学：四个工具。study_frame 按时间点抽 1080P 帧，支持局部裁剪与磁盘缓存；study_scan 把一段区间抽成一张网格图用于定位；study_subs 取 AI 字幕并用覆盖度、术语命中、语速三个信号判定是否串台；study_asr 带上下文地局部转写。全程只读，数据留在本机。'
