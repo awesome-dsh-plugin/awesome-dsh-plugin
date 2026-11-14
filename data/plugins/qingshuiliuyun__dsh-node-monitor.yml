@@ -1,0 +1,7 @@
+url: https://github.com/qingshuiliuyun/dsh-node-monitor
+name: qingshuiliuyun/dsh-node-monitor
+category: remote
+description:
+  en: 'Multi-node DSH monitor and control hub: per-node status and read-only sessions, zero-config LAN networking via UDP discovery, one-click/embedded access to a real DSH UI, cross-network remote hub via outbound push, serverless invite links/IPv6, and opt-in plugin toggle/restart behind dry-run, confirmation and a JSONL audit log.'
+  zh: '多 DSH 节点监控与集中管控：逐节点状态与只读会话、UDP 发现零配置组网、一键/内嵌打开真实 DSH、跨网反向接入的远程主节点、无服务器接入码/IPv6，以及默认关闭的插件启停/重启（干跑、二次确认、JSONL 审计）。'
+icon: https://raw.githubusercontent.com/qingshuiliuyun/dsh-node-monitor/main/assets/icon-180.png
