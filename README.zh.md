@@ -970,6 +970,7 @@ dsh plugin --profile web add dshmarket
 - [HumXC/dsh-nestquay](https://github.com/HumXC/dsh-nestquay) — 为 DSH 侧栏提供工作区分组、组间导航和会话状态提示。
 - [huningsong/dsh-todos-diy](https://github.com/huningsong/dsh-todos-diy) — 侧边栏「工作待办」面板：未开始 / 进行中 / 已超期 / 已完成四阶段页签 + 循环任务与已暂停独立筛选，优先级按结束时间实时派生，置顶任务超期也不下沉，循环任务可随时启停。循环规则覆盖工作日（跟随中国法定节假日与调休）、指定星期、每月指定日期（月末顺延）与 5 段式 cron；单次任务在开始与结束两个时间点各提醒一次。提醒以页面浮层呈现，可选浏览器系统通知，支持稍后提醒与免打扰。提供 12 个 Agent 工具，支持周报/月报、自然语言快速新建与跨视图搜索；数据为本地单个 JSON 文件，已完成任务按季度归档。
 - [hunter118/dsh-s7r](https://github.com/hunter118/dsh-s7r) — 为 DeepSeek Harness 提供复古 macOS System 7 风格工作站界面，包含桌面窗口、工作区与 Agent 管理、Finder、终端、监视器、上下文工具和桌面附件。
+- [hutouji1124-hub/dsh-tool-progress](https://github.com/hutouji1124-hub/dsh-tool-progress) — 在输入框上方加一行，描述的是当前回合而非最后一次工具调用：工具名、参数摘要、已用时间，以及由回合记录推导的运行中/已完成/失败状态。展开后显示本轮最慢八次调用的条形图，并会在参数生成卡顿、连续调用同一目标、连续失败、以及明显慢于本回合同工具中位数时给出提示。
 - [Huuuuung/dsh-artifact-index](https://github.com/Huuuuung/dsh-artifact-index) — 为 dsh-artifacts 侧边栏补上缺失的后端，提供 /report 产物索引与预览所需的文件内容。
 - [huzhengcai471-crypto/dsh-startup-secret](https://github.com/huzhengcai471-crypto/dsh-startup-secret) — DSH 全屏长征机主题开机动画，包含六步授权流程、七款内置真声音色、两款可切换图案、五款可切换人物立绘，并支持可选的访问密码校验。
 - [HwFee/HwFee-dsh#genui](https://github.com/HwFee/HwFee-dsh/tree/master/plugins/genui) — 生成式 UI：模型调用 render_ui 写一段 React，回答就地渲染成可交互卡片。代码跑在 opaque origin 的沙箱 iframe 里，读不到宿主页面、存储与 cookie，帧内 CSP 挡掉网络；卡片要发消息必须由用户确认，卡片出错时显示原因、源码放在开关后面。
@@ -4719,6 +4720,7 @@ dsh plugin --profile web add dshmarket
 - [rhl88/dsh-session-delete](https://github.com/rhl88/dsh-session-delete) — 在侧边栏会话菜单里二次确认后删除会话：移除会话日志目录、投影缓存记录与工作区/置顶/归档记账；所有注册表调用带超时保护，工作区注册表卡住也能完成删除。
 - [Rice00/dsh-tree-view](https://github.com/Rice00/dsh-tree-view) — DSH 会话的树形视图：编辑一条旧消息即从那一刻分叉，所有版本住进同一棵树、侧栏始终只有一条，分支可以改名，也可以把某个分支提升为独立会话。
 - [Ricketts-Guo/dsh-off-peak-message#dsh-offpeak-send](https://github.com/Ricketts-Guo/dsh-off-peak-message/tree/main/dsh-offpeak-send) — 谷时发送调度器：开启谷时模式后输入框消息排队至 DeepSeek 谷时窗口（半价）自动注入会话并得到回复。原生外观输入条、快捷键（Enter 入队 / ⌘+Enter 立即发送 / Esc 退出）、按会话记忆的开关，重启不丢。
+- [RickT34/dsh-compaction-manager](https://github.com/RickT34/dsh-compaction-manager) — 压缩设置面板：排列不调用模型的压缩步骤（官方首尾裁剪、仿 Magic Compact 的输出省略、仿 DCP 的去重与出错清理、工具调用折叠），调整 compaction-basic 参数，在每个会话里增加「压缩」标签用于预览节省量和排队立即压缩，并提供 restore_context 工具取回被隐藏的内容。
 - [RickT34/dsh-super-leader](https://github.com/RickT34/dsh-super-leader) — Leader Agent 预设：澄清需求，将任务派发到工作区和会话，并汇总下属回报。
 - [robbywang25/dsh-codex-pins](https://github.com/robbywang25/dsh-codex-pins) — 把 DeepSeek Harness 侧边栏分成可独立滚动的置顶栏和最近栏，置顶过的会话不再出现在最近列表里。
 - [romantic123fly/dsh-session-folders](https://github.com/romantic123fly/dsh-session-folders) — 为工作区里的每个新对话在对应目录下创建以对话标题命名的文件夹，把该对话的工作目录切到其中；侧边栏会话菜单新增删除入口，文件夹内仍有文件时会先询问是否一并删除。它与 DieJob/dsh-session-folders 使用同一个 npm 包名、功能相近，两者只启用一个；它的 HTTP 路由没有 DSH 的访问检查。
@@ -4903,7 +4905,7 @@ dsh plugin --profile web add dshmarket
 - [xlxs123/dsh-session-multiselect](https://github.com/xlxs123/dsh-session-multiselect) — 为 DSH 对话加入可搜索、按工作区分组的多选面板，支持 Shift 范围选择与 Ctrl/Cmd 追加选择，然后批量删除、归档或置顶。
 - [xohmai/dsh-session-delete](https://github.com/xohmai/dsh-session-delete) — 真正删除会话：回收站可还原、归档清理、设置页批量删除。
 - [xqh-jason/dsh-sidebar-delete](https://github.com/xqh-jason/dsh-sidebar-delete) — 在 dsh 侧栏真正删除会话（连带本地日志与投影缓存，子代理与 fork 子会话级联）并管理工作区与未分组会话，可选每天定时清理未分组会话。
-- [xrn1997/dsh-session-delete](https://github.com/xrn1997/dsh-session-delete) — 给 DSH 会话加上回收站。增加删除会话、多选批量删除会话功能，删除的会话会被移至回收站。回收站内的会话可恢复，也可彻底删除；彻底删除就是永久删除，之后不可恢复，也不会自动过期。回收站内可以查看会话正文，方便区分会话。
+- [xrn1997/dsh-session-delete](https://github.com/xrn1997/dsh-session-delete) — 给 DSH 会话加上回收站——宿主原生只有归档、没有删除。单条删除或多选批量删除，都会把会话连同其子代理一起移入本机回收站；回收站里可读完整正文、恢复或彻底删除。面板另有「归档」档，可只读预览并一步解除归档。
 - [xuedipiaofei/dsh-session-title-stamp](https://github.com/xuedipiaofei/dsh-session-title-stamp) — 把 DSH 会话标题固定为「日期 | 分类 | 名称」，支持自动重算、标题语言、设置页，以及悬停查看耗时/估算成本/token。
 - [xuenann/dsh-workspace-purge](https://github.com/xuenann/dsh-workspace-purge) — 整块删除工作区及其对话：会话日志、投影缓存与工作区登记一次清掉，可选把工作区目录移入回收站（仅 Windows；其它平台直接永久删除）。
 - [XvBenny/dsh-chat-search](https://github.com/XvBenny/dsh-chat-search) — DSH 对话全文搜索：解压持久化的 session.v4.jsonl.zstd 会话日志，匹配用户与助手消息正文，点击结果跳转到对应会话并定位消息（归档会话会先取消归档）。支持 Ctrl+F 唤起。
