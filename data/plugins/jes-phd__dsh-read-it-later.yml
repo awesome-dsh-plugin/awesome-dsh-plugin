@@ -1,0 +1,7 @@
+url: https://github.com/jes-phd/dsh-read-it-later
+name: jes-phd/dsh-read-it-later
+category: notify
+description:
+  en: 'Send the prompt, reply and attachments of each conversation turn to your own Feishu or WeChat bot, for later reading, auto-send after a queued prompt, and cross-machine handoff.'
+  zh: '把每一轮对话的提示词、回复和附件发到你自己的飞书或微信机器人：稍后读、预处理后自动发送、跨设备会话接力。'
+icon: https://raw.githubusercontent.com/jes-phd/dsh-read-it-later/main/assets/coffee-cup.png
