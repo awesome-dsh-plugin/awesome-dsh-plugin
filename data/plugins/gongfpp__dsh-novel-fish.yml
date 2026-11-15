@@ -1,6 +1,7 @@
 url: https://github.com/gongfpp/dsh-novel-fish
 name: gongfpp/dsh-novel-fish
 category: fun
+icon: https://raw.githubusercontent.com/gongfpp/dsh-novel-fish/main/assets/icon.png
 tarball: https://github.com/gongfpp/dsh-novel-fish/releases/download/v1.0.1/gongfpp-dsh-novel-fish-1.0.1.tgz
 description:
   en: "Read local EPUB, TXT and Markdown novels below selected native DSH chat regions on explicit expansion, preserving real reasoning and tool output without sending novel text to the model. Requires DSH >=0.2.1-rc.2 <0.3.0-0."
