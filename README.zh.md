@@ -4188,6 +4188,7 @@ dsh plugin --profile web add dshmarket
 - [Asianfleet/dsh-message-copy-enhance](https://github.com/Asianfleet/dsh-message-copy-enhance) — 将助手消息中选中的内容复制为 Markdown，保留链接、LaTeX 源码与代码块语言信息。
 - [ayachinene285/dsh-run-sessions](https://github.com/ayachinene285/dsh-run-sessions) — 在 dsh-im-connect 提供的侧栏页签栏里增加「本次启动」，列出本次启动以来有活动的会话，支持高亮、右键移除/恢复与拖动排序。
 - [ayachinene285/dsh-session-move](https://github.com/ayachinene285/dsh-session-move) — 在侧栏工作区之上加一层可嵌套文件夹，支持工作区/文件夹/会话拖动排序，并能把会话连同工作目录移动到其它工作区。
+- [aymidasing/dsh-thinking-lang](https://github.com/aymidasing/dsh-thinking-lang) — 在设置 → 通用中新增「思考语言」选择器，并注入规则让智能体用简体中文、繁體中文或英文思考：规则用所选语言书写，每轮提醒一次。需要 DSH 0.2.0-rc.2 或更新版本；只支持这三种语言。
 - [ayuanxx-max/dsh-session-fork-tree](https://github.com/ayuanxx-max/dsh-session-fork-tree) — DSH 会话分叉树排列功能：分叉会话缩进排在父会话下方并绘制圆角连接线，有分叉的会话名字右侧带绿色“+”，默认收起、逐层展开，悬停子会话时祖先链高亮。
 - [ayuanxx-max/dsh-smooth](https://github.com/ayuanxx-max/dsh-smooth) — DSH 顺滑包：纯配置 bundle，装上即把对话与用量视图精简为 compact、字号 16、任务轮询放缓到 200ms；另附排障 SKILL.md 和需手动启用的可选配方（追加到自己的 cordis.patch.yml 或手改 profile）：去掉 Agents-Anywhere 的「重新连接」按钮、精简工具表、移除不兼容的旧子代理、让压缩阈值真正生效。用户自己的 patch 优先，移除 bundle 即回滚。
 - [azure5100/huahua-dsh-record-replay](https://github.com/azure5100/huahua-dsh-record-replay) — 功能完整的 DSH 录制回放插件（huahua 出品，Windows 实测可用）：会话时间线回放、回放包导出/导入、复刻会话重新执行、录屏自动生成可安装技能。基于 kangshifu1/dsh-record-replay 做 4 处 Windows/rc.5 适配（见 README 衍生声明）。
