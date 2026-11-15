@@ -1,0 +1,6 @@
+url: https://github.com/alitrack/dsh-duckdb
+name: alitrack/dsh-duckdb
+category: tools
+description:
+  en: 'DuckDB platform for DeepSeek Harness (dsh): seven tools (query, schema, attach aliases, catalog, convert, extensions gate, background pipelines) over the duckdb CLI — workspace-confined, read-only by default, fail-closed extension & network gates, multi-step SQL jobs on ctx.jobs.'
+  zh: 'DeepSeek Harness 的 DuckDB 平台：七工具（查询、schema、attach 别名、catalog、格式转换、扩展门、后台管道）跑在 duckdb CLI 上——workspace 隔离、默认只读、fail-closed 扩展与网络门、ctx.jobs 上的多步 SQL 作业。'
