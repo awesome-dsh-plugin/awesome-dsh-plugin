@@ -1,0 +1,7 @@
+url: https://github.com/yinqiang/dsh-plugins/tree/main/packages/dsh-theme-dracula-pack
+name: yinqiang/dsh-plugins#dsh-theme-dracula-pack
+category: theme
+description:
+  en: 'Dracula palette pack for dsh-theme-picker: 115 design tokens plus the shiki syntax colors.'
+  zh: 'dsh-theme-picker 的 Dracula 配色包，覆盖 115 个设计 token 与 shiki 代码高亮。'
+# tarball: https://github.com/yinqiang/dsh-plugins/releases/latest/download/dsh-theme-dracula-pack.tgz
