@@ -1,0 +1,6 @@
+url: https://github.com/LittleChenLiya/dsh-superagent
+name: LittleChenLiya/dsh-superagent
+category: workflow
+description:
+  en: 'Runs one goal as parallel subtasks and merges the reports into one answer; the run survives a host restart, spending is capped, and the cost is printed.'
+  zh: '把一个目标拆成并行子任务并合成一份报告，运行状态落盘、宿主重启后可继续；每个 run 有调用数与 token 硬上限，并打印成本。'
