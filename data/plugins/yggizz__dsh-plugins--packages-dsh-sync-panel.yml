@@ -1,0 +1,7 @@
+url: https://github.com/yggizz/dsh-plugins/tree/main/packages/dsh-sync-panel
+name: yggizz/dsh-plugins#dsh-sync-panel
+category: dev
+description:
+  en: 'Packs the local plugins a profile links plus its cordis patch, package manifest and lockfiles into one zip from a page in Settings, and restores that zip on another machine by rewriting the link paths, backing up the files it overwrites and optionally running the dependency install. Windows only, since the packing scripts shell out to PowerShell; it leaves node_modules, session data and credential files out of the archive.'
+  zh: '在设置页里把 profile 用 link: 引入的本地插件连同 cordis 补丁、package 清单与 lockfile 打成一个 zip，换台机器再用它还原：改写 link 路径、把要覆盖的文件备份成 .bak、可选跑依赖安装。仅 Windows（脚本调用 PowerShell）；node_modules、会话数据和凭据文件不进包。'
+icon: https://raw.githubusercontent.com/yggizz/dsh-plugins/main/packages/dsh-sync-panel/assets/icon-180.png
