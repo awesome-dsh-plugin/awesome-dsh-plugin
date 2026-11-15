@@ -108,11 +108,12 @@ export function extendHistory(previous, page) {
 
 /** Write per-repo public fragments. Only indicate a fragment in updates.json
  * after it has actually been written, and never embed history in that feed. */
-export function publishReleaseHistory(entries, histories, directory) {
-  const published = new Set()
-  for (const entry of entries) {
-    const repo = catalogRepo(entry.url)
-    if (repo === null || published.has(repo)) continue
+export function publishReleaseHistory(entries, histories, directory, budget) {
+  const repositories = new Set()
+  let publishedBytes = 0
+  let skipped = 0
+  for (const repo of new Set(entries.map(entry => catalogRepo(entry.url)))) {
+    if (repo === null) continue
     const history = histories[repo]
     const source = history?.fallback ?? history?.releases
     if (!Array.isArray(source) || source.length === 0) continue
@@ -125,12 +126,19 @@ export function publishReleaseHistory(entries, histories, directory) {
       releases.push(release)
     }
     if (releases.length === 0) continue
+    const complete = history.fallback === undefined && history.next === null && releases.length === source.length
+    const contents = JSON.stringify({ repo, complete, releases }) + '\n'
+    const length = Buffer.byteLength(contents)
+    if (publishedBytes + length > budget) {
+      skipped++
+      continue
+    }
     const [owner, name] = repo.split('/')
     const dir = join(directory, 'release-history', 'v1', owner)
     fs.mkdirSync(dir, { recursive: true })
-    const complete = history.fallback === undefined && history.next === null && releases.length === source.length
-    fs.writeFileSync(join(dir, `${name}.json`), JSON.stringify({ repo, complete, releases }) + '\n')
-    published.add(repo)
+    fs.writeFileSync(join(dir, `${name}.json`), contents)
+    repositories.add(repo)
+    publishedBytes += length
   }
-  return published
+  return { repositories, publishedBytes, skipped }
 }

@@ -93,8 +93,8 @@ test('publishes one bounded fragment for a listed repository, including mixed-ca
   const files = publishReleaseHistory(listed, {
     'owner/repo': { releases, next: null },
     'owner/removed': { releases: [release('v1.0.0')], next: null },
-  }, dir)
-  assert.deepEqual([...files], ['owner/repo'])
+  }, dir, 10_000_000)
+  assert.deepEqual([...files.repositories], ['owner/repo'])
   const base = join(dir, 'release-history', 'v1', 'owner')
   assert.deepEqual(fs.readdirSync(base), ['repo.json'])
   const bytes = fs.readFileSync(join(base, 'repo.json'))
@@ -103,4 +103,16 @@ test('publishes one bounded fragment for a listed repository, including mixed-ca
   assert.equal(document.repo, 'owner/repo')
   assert.equal(document.complete, false)
   assert.deepEqual(document.releases[0], releases[0])
+})
+
+test('respects the total artifact budget without claiming an unpublished fragment', (t) => {
+  const dir = fs.mkdtempSync(join(tmpdir(), 'history-site-budget-'))
+  t.after(() => fs.rmSync(dir, { recursive: true, force: true }))
+  const small = { releases: [release('v1.0.0')], next: null }
+  const rows = ['o/first', 'o/second'].map(repo => ({ url: 'https://github.com/' + repo }))
+  const result = publishReleaseHistory(rows, { 'o/first': small, 'o/second': small }, dir, 185)
+  assert.deepEqual([...result.repositories], ['o/first'])
+  assert.equal(result.skipped, 1)
+  assert.ok(result.publishedBytes <= 185)
+  assert.equal(fs.existsSync(join(dir, 'release-history/v1/o/second.json')), false)
 })

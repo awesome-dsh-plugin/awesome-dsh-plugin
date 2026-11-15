@@ -1224,7 +1224,12 @@ fs.writeFileSync('docs/plugins.json', JSON.stringify(registry, null, 1) + '\n')
 {
   const listed = new Set(ordered.map((e) => e.url))
   const history = updates[HISTORY_CACHE_KEY] ?? {}
-  const publishedHistory = publishReleaseHistory(ordered, history, 'docs')
+  // Pages limits the whole site to 1 GB. Keep space for the update manifest,
+  // sitemap and artifact metadata as well as the existing catalog pages.
+  const currentBytes = Object.keys(history).length === 0 ? 0
+    : fs.readdirSync('docs', { recursive: true, withFileTypes: true })
+      .reduce((bytes, file) => file.isFile() ? bytes + fs.statSync(`${file.parentPath}/${file.name}`).size : bytes, 0)
+  const { repositories: publishedHistory, publishedBytes, skipped } = publishReleaseHistory(ordered, history, 'docs', 900_000_000 - currentBytes)
   const payload = {
     name: 'awesome-dsh-plugin',
     url: ORIGIN,
@@ -1246,7 +1251,7 @@ fs.writeFileSync('docs/plugins.json', JSON.stringify(registry, null, 1) + '\n')
   }
   fs.writeFileSync('docs/updates.json', JSON.stringify(payload) + '\n')
   console.log(`updates.json: ${payload.count} entries, ${(fs.statSync('docs/updates.json').size / 1024).toFixed(0)} KB`)
-  console.log(`release history: ${publishedHistory.size} repository fragments`)
+  console.log(`release history: ${publishedHistory.size} repository fragments, ${publishedBytes} bytes, ${skipped} over the Pages budget`)
 }
 
 const lastAdded = [...ordered].map((e) => e.added).sort().pop()
