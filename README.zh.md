@@ -3538,7 +3538,7 @@ dsh plugin --profile web add dshmarket
 - [BaoBao1996121/dsh-chatgpt-subscription](https://github.com/BaoBao1996121/dsh-chatgpt-subscription) — 为 Windows 上的 DSH Desktop 0.2.0-rc.2 提供原生 Codex OAuth 登录、主 Agent 默认模型选择及直连或本地代理设置。
 - [Bazley13/dsh-multi-model-orchestrator](https://github.com/Bazley13/dsh-multi-model-orchestrator) — 多模型主脑编排器：主模型将复杂任务拆解，按各模型优劣分派给 GLM / Kimi / Qwen 子代理执行，并按模型统计 token 用量。
 - [beibing173/dsh-codex-gpt](https://github.com/beibing173/dsh-codex-gpt) — 通过 OpenAI OAuth 登录 ChatGPT Codex，把 ChatGPT 加为可选 LLM provider（流式、Off/Low/High/Max 思考强度、图片输入），并提供按会话授权的 codex 工具供 DeepSeek 升级调用，支持把轻任务委派回 DeepSeek，附带订阅用量与重置卡管理。
-- [beidou6972yh/dsh-bw-router](https://github.com/beidou6972yh/dsh-bw-router) — B&W（小棒 & 灰狼）——把任务拆成分段、按段挑模型，并在同一会话内切换模型而不丢上下文；成本要么给出依据、要么明示不可用，绝不编数。
+- [beidou6972yh/dsh-bw-router](https://github.com/beidou6972yh/dsh-bw-router) — B&W（小棒 & 灰狼）——把任务拆成分段、按段挑模型，并在同一会话内切换模型而不丢上下文；成本要么给出依据、要么明示不可用，绝不编数。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [beijingwahw/dsh-proactive](https://github.com/beijingwahw/dsh-proactive) — 主动式多模型协同调度插件：多源信号接入（去重与紧急度排序），execute/defer/dismiss/ask-user 四级决策引擎，DAG 计划生成与多模型并行执行，质量反思自动重试与切换模型，任务模式与经验教训长期记忆，以及遗传算法策略进化（沙盒评估、金丝雀发布）。
 - [betsunninda9-lgtm/dsh-model-groups](https://github.com/betsunninda9-lgtm/dsh-model-groups) — 适用于 DSH 0.2.2-rc.1 网页界面的分层模型选择与可折叠多密钥配置（不改 App 原生菜单）；在设置页手动启用、更新或还原宿主补丁，校验备份后需重启引擎。普通卸载不会还原补丁。
 - [bill277048-hash/DSH-model-router](https://github.com/bill277048-hash/DSH-model-router) — DeepSeek Harness 多供应商模型路由插件：规则路由 + 首 token 前无感故障切换 + cooldown 熔断 + 用量记账 + 状态接口。
@@ -8717,7 +8717,7 @@ dsh plugin --profile web add dshmarket
 - [LeemanCheung/dsh-task-dag](https://github.com/LeemanCheung/dsh-task-dag) — 由投影驱动的会话子代理与持久工作流实时 DAG：状态与节点导航、深层链路确定性布局、适应/平移画布，以及当前会话内节点拖动重排。
 - [leetom314/dsh-delivery-ledger](https://github.com/leetom314/dsh-delivery-ledger) — 周期性任务调度器 + 只追加的投递账本：按时间窗去重执行，记录失败／放弃行，同窗口重试可重投。
 - [leinaldo/dsh-routines](https://github.com/leinaldo/dsh-routines) — 定时提示词任务：每次运行新开一个对话，支持 cron、一次性与手动触发，可指定工作目录，运行记录不进左侧列表。
-- [leleou209/dsh-commander](https://github.com/leleou209/dsh-commander) — 给 DSH 会话配一位常驻指挥员：托管「算不算完成、能不能改目标、该不该问用户」三个判断点，全接管时按轮次驱动下一轮。
+- [leleou209/dsh-commander](https://github.com/leleou209/dsh-commander) — 给 DSH 会话配一位常驻指挥员：托管「算不算完成、能不能改目标、该不该问用户」三个判断点，全接管时按轮次驱动下一轮。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [lemoncat7/dsh-partner](https://github.com/lemoncat7/dsh-partner) — 提供隔离记忆、微信渠道、Skill、定时任务、伙伴挂念与依赖任务看板的长期 AI 伙伴。
 - [lengrufeng2008/dsh-science-legion](https://github.com/lengrufeng2008/dsh-science-legion) — 面向数学、物理、天文、工程与生物医药证据的分层多智能体科研战役技能包：共享黑板、独立验证与红队、群狼与迂回战术、token/时间预算、已知答案评测、四智能体单摆 pilot，以及一次抓到并修正评测答案键错误的六智能体四阶 pilot。不宣称解决开放难题。
 - [Leo-sail/dsh-plugin-agent-collaboration#agent-collaboration](https://github.com/Leo-sail/dsh-plugin-agent-collaboration/tree/main/packages/bundle/agent-collaboration) — DSH 里的常驻 Bot 与群聊房间。每个 Bot 有自己的模型、权限预设、工作区与重启后仍在的会话；Bot 也可以直接接管本机已安装的 agent CLI（Codex CLI、Claude Code、ACP agent），沿用该 CLI 自己的登录与模型。未点名消息可由群主判断，群内经验会自动积累，每次回答都是持久运行记录里的一条 run，侧栏面板据此回放。新建 Bot 的权限默认是完全权限（可执行任意命令、修改任意文件，表单会要求勾选风险确认），需要约束时请选「仅查看」或「工作区内」；完全权限的 Codex CLI / Claude Code Bot 会在没有各自沙箱和权限询问的情况下运行。
