@@ -5786,6 +5786,7 @@ dsh plugin --profile web add dshmarket
 - [engbonuonga/dsh-wordpress-admin](https://github.com/engbonuonga/dsh-wordpress-admin) — 通过 REST API 管理 WordPress 与 WooCommerce 站点的五个 Agent 工具：文章、页面与自定义内容类型；带替代文本的媒体上传；商品、变体、订单、优惠券、客户与评价；插件、主题与区块模板；经典菜单需另装配套的 dsh-bridge WordPress 插件。工具描述与错误提示支持中英双语。
 - [EPCN-fla/dsh-custom-headers](https://github.com/EPCN-fla/dsh-custom-headers) — 添加可配置的 HTTP 请求头配置档，并支持按模型选择。
 - [EPCN-fla/dsh-prompt-translation](https://github.com/EPCN-fla/dsh-prompt-translation) — 通过翻译 API 或 DSH 已配置的模型，在发送前翻译用户提示词，并将模型思考文本和回答译回用户语言，提供独立内容开关和输入框快捷菜单。
+- [ericenyan/dsh-yubagu](https://github.com/ericenyan/dsh-yubagu) — 开口之前先自查：把准备发出去的那段话，对着 38 条「把说话当交付」的口癖撞一遍，撞上就整句退回去重说，不是换个词。三档词表、每轮提示钩子、面板记账。
 - [EricWang1358/dsh-web-studyhub](https://github.com/EricWang1358/dsh-web-studyhub) — DSH 的学习工作台：导入自己的 PDF、DOCX、PPTX、Markdown 资料与课堂录音，生成带出处引用的卡片、测验与开放题，按 FSRS-6 安排间隔复习，自带网页面板。导入的录音需用自备的 SiliconFlow、Groq 或 Gemini 密钥转写；课堂实录可改用本机 SenseVoice 引擎，无需密钥（首次约下载 239 MB）；需要 DSH 0.2.0-rc.2 及以上、0.3 以下。
 - [errrepe/dsh-codegraph-plugin](https://github.com/errrepe/dsh-codegraph-plugin) — 将 Codegraph CLI 封装为 DSH 的八个代码智能工具：符号搜索、调用者/被调用者、影响分析、代码库探索、符号/文件读取、索引状态与同步。
 - [DSH Self Trigger](https://github.com/erty3244/dsh-self-trigger) — 宿主空闲时由 Agent 自己决定要不要往指定会话注入一轮：每日上限、活跃时段、按权重抽动作、单次预算，策略文件每次判定现读。默认关闭，不发任何网络请求。
