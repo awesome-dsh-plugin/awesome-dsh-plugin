@@ -1836,6 +1836,7 @@ dsh plugin --profile web add dshmarket
 - [StarMoon-win/dsh-restart-plugin](https://github.com/StarMoon-win/dsh-restart-plugin) — 在 Windows 上的 DeepSeek Harness 桌面版侧边栏添加「重启」按钮：结束整个应用进程树并重新打开应用。
 - [StarsHarryZhu/dsh-intelligent-UI](https://github.com/StarsHarryZhu/dsh-intelligent-UI) — 渐进式交互：回复里的可交互卡片，由 31 个固定组件搭成（滑块、输入框、可排序表格、图表、函数图像、公式排版、分页、勾选清单、流程图、答题按钮、动画播放器）。调节控件在浏览器内重算，不再调用模型；模型不写任何 HTML 或 JavaScript。内置微积分引擎（定积分、导数、极限、求和、求根、泰勒多项式）和一个教模型何时用卡片的技能。
 - [stephenlzc/dsh-swarm-panel#dsh-swarm-plugin](https://github.com/stephenlzc/dsh-swarm-panel/tree/main/dsh-swarm-plugin) — DeepSeek Harness swarm 的 Conversation Flow 可观测性，支持查看拓扑、检查路由消息、HITL 暂停、Live 跟随和子会话导航。
+- [StephenXiong001/dsh-task-mode-switch](https://github.com/StephenXiong001/dsh-task-mode-switch) — 在 DeepSeek Harness 输入框工具栏切换任务的 Agent 模式（预设），包括已经进行中的旧任务；另有 AUTO 按任务内容自动选择。
 - [SternChiri/dsh-panel-tidy](https://github.com/SternChiri/dsh-panel-tidy) — 拖动左侧栏任意面板调整顺序，或把它拖到「更多」上收进二级菜单；顺序与收纳状态重启后保留。
 - [Stijnus/dsh-composer-predictions](https://github.com/Stijnus/dsh-composer-predictions) — 为 DeepSeek Harness 桌面端与 Web 界面的输入框提供 Tab 自动补全：下一条消息的灰色幽灵文本、草稿行内续写，以及 Alt+Up/Alt+Down 切换候选。
 - [Stijnus/dsh-moodboard](https://github.com/Stijnus/dsh-moodboard) — DeepSeek Harness 的可视化参考情绪板：拖入图片并打标签、写备注，固定风格指南，智能体在生成或改版界面之前先读取这些参考。
@@ -5723,6 +5724,7 @@ dsh plugin --profile web add dshmarket
 - [clear0/dsh-sag-wiki](https://github.com/clear0/dsh-sag-wiki) — 通过本机 SAG CLI 提供四个工具查询 SAG Wiki 本地索引：语义检索、精确或正则匹配，以及索引状态查询与增删。需要 SAG CLI 在 PATH 里，语义检索还要在 SAG 里配好 JEV 模型；索引或移除哪个目录由模型决定（默认是会话工作目录）。
 - [clockclock1/dsh-nitro](https://github.com/clockclock1/dsh-nitro) — 按会话独立的极速交付模式，从输入框切换。新对话默认开启；对话运行期间拒绝切换，并在会话头部显示只读开/关徽标。一个开关驱动三个子系统：测试与构建命令断路器（不真正执行，直接返回成功回执）、按 SEARCH/REPLACE 冲突块原子写入的 apply_patch 工具（任一锚点未命中则整次回滚）、以及把终端输出脱水成一句通过或最后 15 行错误的脱水器。
 - [clrockrock/dsh-graphify](https://github.com/clrockrock/dsh-graphify) — 为 DeepSeek Harness 提供代码库知识图谱：7 个 graphify_* Agent 工具、/graphify 命令与 Graphify 页面，用本地 AST 解析构建并查询项目图谱（无需 API Key），支持路径 / 解释 / 枢纽节点查询与 wiki、HTML、SVG、GraphML、Obsidian 导出。需先安装 graphify CLI（graphifyy）；只有含文档 / PDF / 图片的完整抽取需要 LLM Key。
+- [Clusm/dsh-trading-workbench](https://github.com/Clusm/dsh-trading-workbench) — 面向 DeepSeek Harness 的交易工作台：AI 决策链与按日归档的轮次历史、Demo 执行与风控视图，数据来自本机 Python 交易服务，首次运行可一键初始化环境。
 - [cmm00100/dsh-autocad-bridge#bundle-autocad-ui](https://github.com/cmm00100/dsh-autocad-bridge/tree/main/bundle-autocad-ui) — 通过 COM 驱动本机安装的 AutoCAD，把它暴露成 18 个 mcp__autocad__ 工具：连接与状态、取消当前命令、列出本机注册的 ProgID、列出或新建文档、保存、新建与列出图层、绘制直线/圆/矩形/多段线/圆弧/文字、列出图元、缩放到范围，以及透传任意 AutoCAD 原生命令。侧边栏面板托管驱动它的 Python 桥进程——启动、停止、重启、安装依赖、实时日志与崩溃自动重启——所有路径在运行时解析，同一个 bundle 在 Web 版与桌面版都能用。仅 Windows，Python 3.10-3.12，文档覆盖 AutoCAD 2022-2024（默认 2024；其他版本需把 CAD_PROG_ID 设为对应 ProgID）。
 - [cndn/dsh-d1](https://github.com/cndn/dsh-d1) — Cloudflare D1 数据库工具：d1_list/query/exec/schema/stats/health，通过 D1 HTTP API 访问，默认只读（SQLite 语义的词法级只读保护）、LIMIT 行数上限、CSV/JSON 查询输出与写审批门。
 - [cny919191/dsh-123pan](https://github.com/cny919191/dsh-123pan) — 123 云盘客户端：支持手机号或邮箱密码登录，也支持粘贴 token；侧栏面板可浏览、拖拽上传与下载，并能对工作区做保留目录结构的增量备份；同时提供 15 个工具供 agent 列目录、上传、下载、重命名、移动和删除文件。网络请求、MD5、16MB 分片上传与 token 加密都由随包的静态链接 C++ 核心完成，不需要 Python 或其他运行时。仅 Windows 10/11 x64。
@@ -6989,6 +6991,7 @@ dsh plugin --profile web add dshmarket
 - [zhangweijian97/dsh-clamawake](https://github.com/zhangweijian97/dsh-clamawake) — 只要 DSH 宿主在运行就让 Mac 保持清醒，不论智能体是否在工作：启动 ClamAwake 的虚拟屏（镜像主屏）并挂 caffeinate -d，DSH 退出时一并停止，引擎崩溃自动重启。自包含（随包带 arm64 vd-engine，GPL-3.0）。需要 Apple Silicon 的 macOS。
 - [zhangxinleilyf/dsh-xixi-body](https://github.com/zhangxinleilyf/dsh-xixi-body) — 饮食 / 训练 / 身体记录：12 个工具在对话里记下吃了什么、练了什么、称了多少，左栏六页签面板看当天与本周、钠糖饮水、e1RM 和体重曲线。纯本地 SQLite，不联网，不依赖任何人设插件。
 - [zhaoolee/notes#dsh-plugin](https://github.com/zhaoolee/notes/tree/main/dsh-plugin) — 将 DSH 对话导出为锤子便签风格 PNG，或在配置的账号工作区中新建和更新 Markdown 便签。
+- [zhaoqiminggg/dsh-instruction-optimizer](https://github.com/zhaoqiminggg/dsh-instruction-optimizer) — 指令优化器：DSH 里的指令优化与提示词优化工具。把口语草稿整理成完整、可直接执行的指令，支持会话上下文、多轮修改以及附件和 @文件保留。
 - [ZhdanovDmitriy/dsh-pptx-builder](https://github.com/ZhdanovDmitriy/dsh-pptx-builder) — 面向 DeepSeek Harness 的 PowerPoint 演示文稿生成器：柔和色板、十种幻灯片模板、网络图片、Python 绘制的图表、高亮代码卡片、无需安装 TeX 的 LaTeX 公式（矩阵、积分、带上下限的求和）以及 Presentations 智能体模式。
 - [zhe97396-tech/dsh-lazy-mcp](https://github.com/zhe97396-tech/dsh-lazy-mcp) — dsh 的按需 MCP 网关：每个 server 首次使用时才连接、空闲后自动断开，工具列表缓存在磁盘，可导入现有的 mcpServers 配置，并对子进程环境变量做脱敏。
 - [zhengjy01/dsh-cubox](https://github.com/zhengjy01/dsh-cubox) — Cubox 收藏同步：定时同步收藏，按你的 prompt 用 LLM 生成今日收藏简报直接写入 Obsidian，可导出每张收藏为 Markdown。
