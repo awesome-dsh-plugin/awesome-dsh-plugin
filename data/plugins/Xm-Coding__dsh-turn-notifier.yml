@@ -1,0 +1,7 @@
+url: https://github.com/Xm-Coding/dsh-turn-notifier
+name: Xm-Coding/dsh-turn-notifier
+category: notify
+description:
+  en: 'Sends the final model reply summary to the macOS Notification Center at the end of each DeepSeek Harness session turn.'
+  zh: '在 DeepSeek Harness 每轮会话结束时，将最终模型回复摘要发送到 macOS 通知中心。'
+icon: https://raw.githubusercontent.com/Xm-Coding/dsh-turn-notifier/main/assets/deepseek.png
