@@ -4956,6 +4956,7 @@ dsh plugin --profile web add dshmarket
 - [yuan-source-666/dsh-ptc-discipline](https://github.com/yuan-source-666/dsh-ptc-discipline) — PTC 模式 agent preset：用 tools.guard 拒绝工具调用，直到会话里有进行中的目标和待办。
 - [yue7ye/dsh-Context-Drawer](https://github.com/yue7ye/dsh-Context-Drawer) — 会话上下文超过阈值时，先把较早的消息追加到按会话归档的文件夹，再把最早的已完成轮次移出模型可见上下文；聊天记录与会话日志保持原样。
 - [yuezengwu/dsh-explain](https://github.com/yuezengwu/dsh-explain) — 本地优先学习模式：跨会话全局学习线程、按来源讲解。
+- [yuhhhong/dsh-sidechat](https://github.com/yuhhhong/dsh-sidechat) — 在右侧栏基于主会话最近完成轮次的背景快照开展临时讨论，按需启动托管子代理，支持附件、技能及运行中的模型和权限切换，不自动向主会话回传回复。
 - [yuna78/dsh-plugin-multi-chat-windows](https://github.com/yuna78/dsh-plugin-multi-chat-windows) — 话分两头：把 AI 对话从「切来切去」变成「并排开火」——每个会话一枚原生小窗，贴着主对话随开随用；一键平铺所有窗口（顶对齐·同高·紧贴），最小化到带实时状态灯的底部停靠条（转圈=工作中·绿色=刚完成·黄色=待审批·灰色=空闲），真浏览器里还能把会话弹出成独立浏览器窗口。
 - [yunfong/dsh-session-md-export](https://github.com/yunfong/dsh-session-md-export) — 把当前会话导出为可读的 Markdown 文件，只保留对话正文：用户消息、助手文本与 ask_user_question 问答，通过会话标题栏按钮或 /md 命令触发。
 - [YunongDai2005/dsh-theone](https://github.com/YunongDai2005/dsh-theone) — 所有事在一个对话框（主聊天）里聊：每条消息自动分到所属话题，每个话题在后台有独立的会话和上下文；已有的 DSH 旧会话也会自动整理、分类成话题。
@@ -7549,7 +7550,7 @@ dsh plugin --profile web add dshmarket
 - [ysiguu/dsh-novelai](https://github.com/ysiguu/dsh-novelai) — 把 NovelAI 生图接进 DSH：`nai_image`（画风预设、画师串、按模型自动转权重、token 预算提醒，出图直接内联显示）、`nai_status`、`nai_prompt`（build / check / guide 三个动作），外加带逐帧草稿预览的画室页面、独立 studio 和一个从四份教程里提炼的提示词手册。用自己的 `pst-` token。
 - [ysr666/dsh-vision-router](https://github.com/ysr666/dsh-vision-router) — 为纯文本 Agent 提供视觉能力：内置免 Key 视觉链 + 像素级视觉工具（看图问答、定位、裁剪、像素对比、取色、OCR、矢量化、抠图、截图）；粘贴图片即可用。
 - [yupaoa/dsh-image-lite](https://github.com/yupaoa/dsh-image-lite) — DSH 生图插件，双模式：对话中由模型调用 image_generate_lite 工具出图，或在右侧栏「生图工作台」手动生图；最多 5 张参考图、支持 OpenAI images 接口格式，密钥存于 DSH 凭据服务。
-- [yxqfg/phone-lens#phone-lens](https://github.com/yxqfg/phone-lens/tree/main/packages/phone-lens) — 手机变 dsh 会话的全功能摄像头（需配合开源的 Android 手机 App——安装插件后扫插件提供的二维码即可下载 APK）：1. 局域网或 USB 直连实时取景，画面可直接注入对话框或保存到指定位置；2. 提供可调用工具，dsh 模型可在流式对话中按需主动拍照/变焦/切换镜头，便于全自动开发中模型主动"看见"物理世界；3. 提供完整的变焦/闪光灯、照片裁剪、标注等功能；4. 提供丰富的设置选项。
+- [yxqfg/phone-lens#phone-lens](https://github.com/yxqfg/phone-lens/tree/main/packages/phone-lens) — 手机变 dsh 会话的全功能摄像头与随身会话终端（需配合开源的 Android 手机 App——安装插件后扫插件提供的二维码即可下载 APK）：1. 局域网或 USB 直连实时取景，画面可直接注入对话框或保存到指定位置；2. 提供可调用工具，dsh 模型可在流式对话中按需主动拍照/变焦/切换镜头，便于全自动开发中模型主动"看见"物理世界；3. 提供完整的变焦/闪光灯、照片裁剪、标注等功能；4. 工作(Beta)：手机直接参与会话——实时对话（Markdown/LaTeX 渲染）、审批与提问卡片、斜杠命令、@ 引用、新建/fork/归档会话、工作文件下载，多台手机可同时在线协作；5. 提供丰富的设置选项。
 - [yzhclcl/dsh-omni-modal](https://github.com/yzhclcl/dsh-omni-modal) — 为 DeepSeek Harness 增加「全模态设置」分区：可把生图 / 生视频指向任意 OpenAI 兼容端点，多套配置档案可随时切换，图片与视频各自独立的接口地址、API Key、模型、路径与尺寸，支持自由填写额外请求参数、不消耗额度的连通性测试，并注册 generate_image / generate_video / check_video 三个模型可见工具，异步视频任务可跨重启保留。
 - [zhiwuli0228/dsh-image-router](https://github.com/zhiwuli0228/dsh-image-router) — 在准入前把提示词里的图片换成视觉模型的文字分析，因此任何模型（包括纯文本模型）都能读图且会话不切换模型；另提供 describe_image 工具处理图片路径。
 - [zirscard/dsh-ocr](https://github.com/zirscard/dsh-ocr) — 为 DeepSeek Harness 注册两个工具：`doc_ocr` 把扫描件 PDF 与图片转成结构化文本（逐页文本、带资产负债表平衡勾稽的财务报表行、合同条款命中），可用本机 RapidOCR 或智谱 GLM-OCR 云端引擎；`doc_preprocess` 用 7 阶段管线把一批原始文件整理成 Obsidian 可读知识库，含后端路由与 sha256 增量跳过。勾稽不平的数字只报出、不编造。本机引擎需 Python 3 并安装 rapidocr-onnxruntime、pypdfium2、Pillow（pip install -r requirements.txt）；GLM 引擎需设置 ZHIPU_API_KEY。
