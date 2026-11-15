@@ -7072,9 +7072,12 @@ dsh plugin --profile web add dshmarket
 - [ZiYuan258/dsh-mcp-control](https://github.com/ZiYuan258/dsh-mcp-control) — 面向 @deepseek-ai/dsh-mcp-client 注册的 MCP 服务器的面板：逐个开关服务器（即时生效），显示各服务器的已注册工具数与预估上下文 token 开销，并将选择持久化到主目录 cordis.patch.yml，每次写入前保留带时间戳的备份。面板本身可以放在设置里作为一节，也可以放在左侧边栏作为一行图标，任一时刻只保留一个入口，切换器在「设置 → 插件」的插件页里。dsh-mcp-toggle 的维护分支。
 - [ziz12138/dsh-lawcorpus](https://github.com/ziz12138/dsh-lawcorpus) — 法学论文框架语料库：内置 2024–2026 四本 CLSCI 期刊 850 篇题录（标题、作者、摘要、关键词、目录骨架），支持 BM25 检索、框架卡、期刊画像、投稿对标自查与导出。
 - [zjl1989-li/dsh-harness-zh-cn](https://github.com/zjl1989-li/dsh-harness-zh-cn) — DeepSeek Harness 中文汉化插件：通过 system-prompt/assemble 瀑布钩子在运行时把全部系统提示词、工具描述与运行时上下文翻译成中文（1788 条译文，零源码修改，卸载即还原英文）。
+- [zjukop3/dsh-verify-kit#dsh-citelint](https://github.com/zjukop3/dsh-verify-kit/tree/main/packages/dsh-citelint) — 交付报告的引用检查：编号断号、同一来源重复、列了却没被引用的来源——全部从 markdown 直接判定。
+- [zjukop3/dsh-verify-kit#dsh-hashcheck](https://github.com/zjukop3/dsh-verify-kit/tree/main/packages/dsh-hashcheck) — 交付文件的 SHA-256 清单：一次构建、随处校验，说清哪些字节真的动过，而不是「看起来没问题」。
 - [zjukop3/dsh-verify-kit#dsh-numberlint](https://github.com/zjukop3/dsh-verify-kit/tree/main/packages/dsh-numberlint) — 文档内数字一致性：同一数量既写 4,985 又写 4985、百分比空格不一致、区间连接号混用——写法比较而非数值比较。
 - [zjukop3/dsh-verify-kit#dsh-outline-lint](https://github.com/zjukop3/dsh-verify-kit/tree/main/packages/dsh-outline-lint) — 交付文档的结构检查：没有标题、多个一级标题、标题跳级、开头没有结论、没有任何读者能跑的复现命令。
 - [zjukop3/dsh-verify-kit#dsh-tablelint](https://github.com/zjukop3/dsh-verify-kit/tree/main/packages/dsh-tablelint) — 生成报告的 Markdown 表格检查：行列错位、分隔行与表头不符、表头重名、只有表头没有数据行。
+- [zjukop3/dsh-vertical-kit#dsh-agreement-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-agreement-check) — 中文合同的结构检查：甲乙方、日期、金额大小写一致、签署栏、争议解决、违约责任。
 - [zjukop3/dsh-vertical-kit#dsh-invoice-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-invoice-check) — 中文电子发票的字段检查：统一社会信用代码字符集、不含税+税额=价税合计的勾稽、大小写金额一致、发票号码位数。
 - [zjukop3/dsh-vertical-kit#dsh-listing-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-listing-check) — 电商商品信息的检查：标题长度、关键词堆砌、价格有效性、SKU 完整性与重复，输入 CSV/JSON。
 - [ZK-Andy/dsh-frecency](https://github.com/ZK-Andy/dsh-frecency) — 为 DeepSeek Harness 提供常驻索引 grep，以同名遮蔽内置 grep/glob 工具：重复内容检索命中按访问/修改 frecency 排序的内存索引，glob 在可用时对齐内置 ripgrep 语义、不可用时回退索引。
@@ -7656,7 +7659,7 @@ dsh plugin --profile web add dshmarket
 - [Chrono-rigger/dsh-voice-enhance](https://github.com/Chrono-rigger/dsh-voice-enhance) — 按住 Alt（默认，可在插件页改键）说话、松开插入修正后的转写文字，输入框左侧、模型选择器前的星标按钮可把草稿改写成更清晰的提示词；听写需启用 Harness 的语音输入插件并准备好 SenseVoice 模型。
 - [cilis/dsh-whale-tts](https://github.com/cilis/dsh-whale-tts) — 面向 DeepSeek Harness 的通用语音合成：把文本合成为本地音频文件，管理预置、克隆和设计音色，在双语设置卡里配置 provider，并可用朗读按钮或自动朗读播报助手回复。
 - [cloudoyx/any-audio](https://github.com/cloudoyx/any-audio) — DSH 也有自己的音频工作站！真实录音音源、多个 TTS 引擎、真实音效加持，生成的每个声音都以独立片段落到同一条可视化时间轴上，可逐轨试听、单独调节与微调。可用于给动画配音配乐、有声书和广播剧制作、独立作曲编曲与混音、ASMR 制作等，更多使用方式等你来开发！它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
-- [crease123/voice-call](https://github.com/crease123/voice-call) — 直接与当前 DSH Agent 语音交谈，无需切换预设：停顿后自动识别并发送，回复流式播报，支持说话打断与五段声条反馈。识别和合成可分别选择 DeepSeek 或豆包，在设置中配置自己的凭据，通话规则仅在通话期间注入；附图文安装与使用指南。
+- [crease123/voice-call](https://github.com/crease123/voice-call) — 推荐先看作者教学视频 https://www.bilibili.com/video/BV1t9sJ6NErV/ 。直接与当前 DSH Agent 语音交谈，无需切换预设：停顿后自动识别并发送，回复流式播报，支持说话打断与五段声条反馈。识别和合成可分别选择 DeepSeek 或豆包，在设置中配置自己的凭据，通话规则仅在通话期间注入；附 Bilibili 使用教学视频和电话按钮图解，通话提示词支持恢复默认。
 - [dennisyang1986/dsh-dafeiyu-voice-chat](https://github.com/dennisyang1986/dsh-dafeiyu-voice-chat) — 在 DeepSeek Harness 里和一条小鱼语音聊天：可拖动的浮标按住说话，走 DeepSeek 语音识别转写，由 deepseek-flash 回答（支持看图），再按句用 DeepSeek 语音合成边生成边播放。两种音色、连续对话开关，API Key 只留在 Host 侧。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [dingchenhui0618-arch/dsh-voice-memo](https://github.com/dingchenhui0618-arch/dsh-voice-memo) — 把口述变成仓库里的归档，而不是聊天里一闪而过的转写：按住说话（或导入 WAV）后，插件把 audio.wav、渲染好的 waveform.png、memo.md（frontmatter、逐段时码、可直接粘贴的引用块）与 meta.json 落到 voice-memos/<id>/。音频先在浏览器里重采样成 16 kHz 单声道再上传。转写全部本地完成——DSH 的 speechToText 服务（静音切窗补时间戳）或 faster-whisper 这类命令 worker；没有可用引擎时仍然归档，并写明状态与原因，绝不编造文本。带会话视图的「口述」Tab：点波形定位播放、逐段复制引用；另有三个 agent 工具（voice_memo_save / voice_memo_list / voice_memo_read）与 HTTP 路由。零运行时依赖，52 个 node:test 用例，docs/ 里有真实运行截图。
 - [do-nothing/media-suite#media-qwen](https://github.com/do-nothing/media-suite/tree/main/packages/media-qwen) — Qwen 媒体工具：通过阿里云百炼提供多模态视频音频理解、带预置音色的语音合成，以及场景音频生成。
