@@ -1,0 +1,5 @@
+url: https://github.com/soffits/dsh-fallback-models
+name: soffits/dsh-fallback-models
+category: model
+description:
+  en: 'Continues a turn on the next model in an ordered list when a request still fails after the built-in retries (rate limit, outage, used-up quota) or the model refuses to answer. Lists can differ per agent preset, each switch shows a banner in the conversation, and switches can also be sent through another plugin''s message service.'
