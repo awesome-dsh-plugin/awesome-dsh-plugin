@@ -101,6 +101,7 @@ dsh plugin --profile web add dshmarket
 - [ff66ccff/dsh-ATN](https://github.com/ff66ccff/dsh-ATN) — 面向 DeepSeek Harness 的自适应拓扑多智能体预设，提供点对点通信、任务交接和实时网络可视化。
 - [Funny1Potato/dsh-outsourcing-expert](https://github.com/Funny1Potato/dsh-outsourcing-expert) — 让领导不亲自干活的 agent preset：非管理类工具调用在 harness 边界一律被拒，任务只能外包给子智能体，选人前先一次性摸清可选子智能体模型、再按任务逐个选型；另一个 preset 故意挑最不适合该任务的模型。
 - [FuRongJun-1999/dsh-memory](https://github.com/FuRongJun-1999/dsh-memory) — 白箱AGI架构探索：元认知（自我认知循环）、持续学习（知识飞轮）、世界模型（条件空间+语义时空图）、自我改进（自举纪律）、零LLM白箱管线与可审计信任护栏。
+- [gluztm/dsh-chief](https://github.com/gluztm/dsh-chief) — 常驻右侧栏的多代理参谋面板（含 4 个 chief_* 工具）：金字塔子代理拓扑、跨会话信使联动、原生 /goal 与子代理分屏对接、四层懒加载冷存储档案柜、图钉全局边界与一键会话交接。
 - [highho/dsh-game-studio-presets](https://github.com/highho/dsh-game-studio-presets) — 11 套按工作流阶段切分的游戏开发 agent 预设——概念、设计、实现、美术与音频、QA、发布、叙事、关卡、引擎——外加一个跨阶段委派的总控，附带 37 个技能。把 Claude Code Game Studios（MIT）的 48 个智能体提示词按阶段重组，每个预设只加载本阶段需要的技能。用 dsh plugin add 安装，装完跑一次 node install.mjs 部署预设所引用的技能。
 - [HYClub/deepseek-harness-game-studios](https://github.com/HYClub/deepseek-harness-game-studios) — Claude Code Game Studios（CCGS v1.1.2，MIT）的 DeepSeek Harness 移植：76 个技能、49 个代理与钩子桥。
 - [icyaaaww/dsh-soul](https://github.com/icyaaaww/dsh-soul) — 在本地记录重复的任务纠正与工具错误，通过显式启动的演化将经验编译为八类运行组件的改动，经过基线与候选成对验证、影子试用和回滚，并提供预算与审计账本。需要 Node.js 24+ 及兼容的 DSH 0.2.1-rc.2 起的 0.2.x 宿主。
@@ -2832,6 +2833,7 @@ dsh plugin --profile web add dshmarket
 - [pythoner1984/dsh-plugin-openai-quota](https://github.com/pythoner1984/dsh-plugin-openai-quota) — 在 DSH 窗口顶部边缘用一行提示显示 DeepSeek 余额、ChatGPT/Codex 五小时与每周剩余额度及其重置时间、剩余额度重置卡数量与最近到期时间；重置卡那一段是链接，会用浏览器打开 ChatGPT 使用情况页。
 - [qcy-good/turn-cost-footer](https://github.com/qcy-good/turn-cost-footer) — 在 DeepSeek Harness 每条助手回复的页脚、时间之后显示本轮真实花费与今日累计：按会话日志里的用量和本地价目表折算，不调计费接口、不联网、也不额外消耗 token。
 - [qiyuexue-xiyu/dsh-tool-cost-hint](https://github.com/qiyuexue-xiyu/dsh-tool-cost-hint) — 每轮对话结束后在回复底部追加一行可折叠提示：列出这一轮调用了哪些工具、各几次、每个工具往上下文注入了多少 token（输入加输出），点开可看逐工具明细。
+- [QLNPLUS/dsh-opendesign-quota-card](https://github.com/QLNPLUS/dsh-opendesign-quota-card) — 在 DSH Web 侧栏底部显示 OpenDesign（AMR）套餐额度：每个额度窗口一条已用进度条，点开是仪表盘，还能登录官网控制台，用官方读数替换本机估算。
 - [qwayo/dsh-timespan](https://github.com/qwayo/dsh-timespan) — 记录 DSH 的在线、活跃与任务三种时长，提供日/周/月仪表盘、按工作区与会话的明细，以及供 Agent 查询的只读 `timespan_stats` 工具。
 - [qwert702/dsh-token-viewer](https://github.com/qwert702/dsh-token-viewer) — dsh 网页端 CC Switch 风格 Token 消耗统计：按请求的用量日志、真实消耗 Hero、按请求提交时间分桶的趋势图、按模型峰谷牌价计费、项目/模型统计与账户余额。
 - [Rannist/balance-dsh](https://github.com/Rannist/balance-dsh) — 在侧边栏底部和输入框上方显示你的 DeepSeek 账户余额与当前会话 token 及费用消耗，支持高峰/空闲峰谷计费与子代理消耗统计。
@@ -5679,6 +5681,7 @@ dsh plugin --profile web add dshmarket
 - [BeatAPI/beatapi-agent-plugin#dsh-geo](https://github.com/BeatAPI/beatapi-agent-plugin/tree/main/packages/dsh-geo) — 通过工作区权限受限的 MCP Key 连接已有本地 BeatGEO，操作品牌、AI 可见度证据和草稿；附带连接诊断与同品牌 SEO 页面操作 Skill。
 - [BeatAPI/beatapi-agent-plugin#dsh-social](https://github.com/BeatAPI/beatapi-agent-plugin/tree/main/packages/dsh-social) — 提供社媒能力发现、价格预览、确认后读取、历史结果取回及来源表格；付费读取需要 BeatAPI key。
 - [Beatther-c/dsh-api-client](https://github.com/Beatther-c/dsh-api-client) — DeepSeek Harness 的 Agent 原生 API Client：Postman 级调试 UI（右键菜单与完整键盘导航的请求树、可调宽侧栏、自动生成 Header 分层预览——逐项可停用、敏感值恒脱敏），六个 api_client_* Agent 工具与 Human UI 共用同一请求核心、脱敏与审计链，Postman Collection v2.1 导入附迁移报告，环境变量经 SecretRef 间接引用，SSRF 网络策略默认 fail-closed。
+- [BeckChiang/dsh-tool-budget](https://github.com/BeckChiang/dsh-tool-budget) — 会话级工具预算：按方案开关模型可见的工具、三种级别、切换前缀缓存的成本估算，以及基于本会话调用情况的调整建议。
 - [beijingwahw/dsh-nuke-plugin](https://github.com/beijingwahw/dsh-nuke-plugin) — 事务化卸载引擎：每个破坏性动作走 validate/preview/execute/undo 四段式并带 Saga 回滚，WAL 崩溃恢复、hash chain 审计、硬链接去重，提交前先知推演成功率。
 - [beings-labs/dsh-cloudflare-connector](https://github.com/beings-labs/dsh-cloudflare-connector) — 通过浏览器 OAuth 和官方 MCP 服务器为智能体与插件共享 Cloudflare 访问，提供上游工具、令牌自动刷新及带类型定义的插件服务。
 - [beings-labs/dsh-domain-manager](https://github.com/beings-labs/dsh-domain-manager) — 管理域名组合：从 Namecheap 与 Cloudflare 同步注册信息，跟踪到期日、自动续费与年度续费成本，并检查域名可用性。对注册商只读（不注册、不转移、不续费）。同步需要 Cloudflare API 令牌，或带 IP 白名单的 Namecheap API 密钥（也可用 Namecheap 的浏览器登录连接器，但读不到续费价格）。
@@ -7510,6 +7513,7 @@ dsh plugin --profile web add dshmarket
 - [MicroHEROX/dsh-koboldcpp-hands](https://github.com/MicroHEROX/dsh-koboldcpp-hands) — 给在线模型装上本地双手：koboldcpp_run 与 koboldcpp_vision 工具把重复的文本与视觉（OCR、图像分析、对比）劳动交给本地 KoboldCpp（llama.cpp）服务器，并按需拉起与管理服务器生命周期。
 - [MicroHEROX/dsh-unsloth-hands](https://github.com/MicroHEROX/dsh-unsloth-hands) — 把重复的文本与视觉（OCR、图像分析、对比）劳动交给本地运行的 Unsloth Desktop（Unsloth Studio）服务器：unsloth_run 与 unsloth_vision 两个工具，纯 HTTP 客户端，不拉起也不持有任何进程。
 - [MJorgin/dsh-media-skills](https://github.com/MJorgin/dsh-media-skills) — DSH 的生图与读图：侧边栏「图像」页面（英文界面显示 Images；按模型分行、10 种比例、1K–4K 尺寸、联系表 + 详情卡 + 放大 + 复用 + 删除），三个预设提供方外加自定义端点（其中一个完全免 Key），另有 vision-review 读图技能。粘进去的 Key 只写进本机 ~/.dsh/secrets/media-tools.env（权限 600），只发给你选的那家服务商。页面文案跟随 DSH 界面语言（中文 / 英文）。需要 Python 3.9+（生图由 scripts/generate.py 执行）；该页面需桌面版 DSH 0.2.1+。
+- [MokoKing666/dsh-jimeng](https://github.com/MokoKing666/dsh-jimeng) — 注册 `jimeng_image` 与 `jimeng_video` 工具，通过本机已登录的即梦 AI 桌面端生成图片和视频：读取桌面端会话 Cookie，并从两个网页端接口实时拉取账号的模型清单，所以即梦上新模型无需更新插件；`jimeng_models` 与 `jimeng_status` 免费列出模型与积分，`dryRun`、`minCreditsToKeep`、`allowSpend` 控制积分消耗。
 - [Monter-code/dsh-image-insight](https://github.com/Monter-code/dsh-image-insight) — 结构化图像识别：本地 sharp 感知 + 云端视觉模型，一次调用拿到描述、带坐标的 OCR、 目标定位与细粒度属性；图片指纹缓存让重复图片毫秒返回且不消耗模型额度。
 - [moon09300731/dsh-vision-tools](https://github.com/moon09300731/dsh-vision-tools) — DeepSeek Harness 视觉能力全家桶：vision_understand 工具（OpenAI 兼容视觉 API，默认免费智谱 GLM-4V-Flash）+ 粘贴/拖拽/按钮三入口识图。
 - [mujizi/dsh-video-prompt](https://github.com/mujizi/dsh-video-prompt) — 中文视频提示词参考库，提供交互图谱、时间线、题材 Wiki 和 AI 检索工具，内置保留作者与来源的 Wan3 示例。
@@ -7615,6 +7619,7 @@ dsh plugin --profile web add dshmarket
 - [ALittleLov/dsh-soundcheck](https://github.com/ALittleLov/dsh-soundcheck) — 把本地音频拆成速度、调性、动态、削波与编曲形状，合成一段人话结论，原始测量值另列；音频不出本机。
 - [AndyYang12345/dsh-dictation-hotkey](https://github.com/AndyYang12345/dsh-dictation-hotkey) — 输入框按住说话：按住快捷键录音，经 DSH 自带语音 Remote（本地 SenseVoice）识别后写入草稿，可选自动发送。
 - [anweat/dsh-voice-webspeech](https://github.com/anweat/dsh-voice-webspeech) — 浏览器 Web Speech API 语音输入：零服务端、零密钥、零模型下载（Edge=Azure 语音、Chrome=Google 语音）。
+- [Asya903/dsh-voice-deepseek](https://github.com/Asya903/dsh-voice-deepseek) — 每条助手回复的操作条里加一个朗读按钮，点击用 DeepSeek 官方 TTS 念出来；默认女声 stella，可切男声 tide。同一句重复播放走本地缓存、不重复计费。需要自备 DeepSeek API key，按现价五折约 1.5 元/万字符。
 - [baibiaowang/dsh-voice-input-wb-asr](https://github.com/baibiaowang/dsh-voice-input-wb-asr) — 输入框里的按住说话麦克风,走 WorkBuddy 云端识别，直接用本机已登录的账号。国际版与国内版分开设置，默认国际版。
 - [baisama-cloud/dsh-stt-input](https://github.com/baisama-cloud/dsh-stt-input) — Web UI 语音输入：输入框旁麦克风按钮语音转文字填入输入框；支持浏览器 Web Speech API 本地识别（零配置、无需密钥）与 OpenAI 兼容 Whisper API（OpenAI/Groq），模型与语言可在设置中选择。
 - [bbfang2025-cyber/dsh-pet-voice-fishy](https://github.com/bbfang2025-cyber/dsh-pet-voice-fishy) — 大肥鱼语音：让 DSH 网页桌宠开口说话。碎碎念气泡出现时自动朗读，左键点气泡朗读内容，右键/长按再读一遍，点桌宠回应「主人，小鱼在这呢」等互动台词。默认音色为本地离线复刻的「鱼鱼酱」，另有「鱼鱼姐（实验版）」，都不需要 API Key，音色包按需下载（约 58MB，国内加速线路）；自动朗读可设最小间隔（不限/30 秒/60 秒/3 分钟），同一 DSH 实例下多页面只由一个页面出声。插件本体约 35KB，推理在 worker 线程，不修改 dsh-pet 的任何文件。
