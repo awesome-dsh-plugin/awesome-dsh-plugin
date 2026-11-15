@@ -1,0 +1,7 @@
+url: https://github.com/1010231693/dsh-bat-runner
+name: 1010231693/dsh-bat-runner
+category: dev
+description:
+  en: 'A floating log panel for DeepSeek Harness: run local .bat / .cmd scripts from the panel and see their output verbatim (no timestamps, levels or colors), or receive logs forwarded by the BatRunner launcher. A running entry shows how long it has been up; the panel is draggable and resizable, with font, size, color, text effects and an outer border that follow the light or dark theme, optional auto-run on startup with a delay, and an option to stop scripts when DSH exits. Windows only.'
+  zh: '浮在 DSH 界面上的本地脚本日志面板：从面板直接运行 .bat / .cmd，输出逐字实时显示（不加时间戳、不分级、不着色），正在跑的条目旁边显示它已运行多久；也可接收 BatRunner 启动器转发的日志。面板可拖动、可改大小，字体 / 字号 / 颜色 / 文字特效 / 外边框跟随 DSH 浅深外观，支持启动延迟自动运行与退出即停。仅支持 Windows。'
+icon: https://raw.githubusercontent.com/1010231693/dsh-bat-runner/master/assets/icon-180.png
