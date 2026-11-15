@@ -2404,6 +2404,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 ### Usage & Billing
 
+- [MVPxll/dsh-usage-popup](https://github.com/MVPxll/dsh-usage-popup) - Peak / off-peak reminder at the start of every turn, then the turn's cost, average cache hit rate and daily total, with a live period badge in the composer status row. Practical and beautifully designed.
 - [01men/ybkkasi](https://github.com/01men/ybkkasi) - Asset governance console for self-hosted AI infrastructure. Registers MCP servers, skills, agents, AI apps, model channels, SaaS connectors and NAS storage in one ledger with a lifecycle state machine, per-tool RBAC permission points, department x agent x skill cost attribution, dependency topology and an append-only audit trail. Self-hosted, MIT, no hosted tier and no cloud contract.
 - [02Muller25/dsh-api-balance](https://github.com/02Muller25/dsh-api-balance) - Real-time DeepSeek API account balance in the composer dock with manual or custom-interval auto-refresh.
 - [0disoft/dsh-ci-diet](https://github.com/0disoft/dsh-ci-diet) - Finds wasted GitHub Actions runner time and proposes small, reviewable workflow patches, with explicit approval before any edit and a DSH settings page for analysis rules, history limits, storage, and cost estimation.
@@ -11324,4 +11325,3 @@ Listed here? Show it off:
 This is a community-maintained index. Plugins are developed and maintained by their respective authors; listing here is not an endorsement, and no guarantees are made about any plugin's safety, quality, or maintenance. Installing a plugin runs third-party code on your machine — review the source and install at your own risk. This project is not affiliated with DeepSeek.
 
 Issues here are for the list and its website only. Problems inside the plugin market UI go to [dsh-market](https://github.com/dsh-market/dsh-market/issues); problems with `dsh` itself go to [deepseek-harness](https://github.com/deepseek-ai/deepseek-harness/issues); a bug in a plugin goes to that plugin's own repository.
-
