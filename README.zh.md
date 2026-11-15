@@ -9933,6 +9933,7 @@ dsh plugin --profile web add dshmarket
 - [kennethfan/dsh-sandbox-tune](https://github.com/kennethfan/dsh-sandbox-tune) — 让构建命令直接在 DSH 沙箱内跑通，不再每次申请提权：把纯缓存（GOCACHE、NPM_CONFIG_CACHE、BUN_INSTALL_CACHE_DIR、PIP_CACHE_DIR）重定向到临时目录，或原地授权真实缓存目录以与终端共用。依赖仓库（GOMODCACHE、CARGO_HOME）永不重定向，只做授权。另提供可选的用户目录授权（~/.config 等，默认全关）与命令白名单：支持逐字符匹配，或按 &&、||、;、| 拆段后逐段匹配，写文件的重定向（fd 复制如 2>&1 与 /dev/null 除外）、命令替换与后台执行一律拒绝。配置支持按 profile 或按会话生效，改配置文件无需重启。
 - [keyiadiannao/dsh-power-button](https://github.com/keyiadiannao/dsh-power-button) — 一个小而自洽的 DSH 电源控制插件：侧边栏电源按钮 + 上拉「重启/关机」菜单 + Windows 关机风格过渡遮罩。自带重启/关机引擎（不依赖其它插件），动态端口适配。
 - [KhaosGx/dsh-stop-service](https://github.com/KhaosGx/dsh-stop-service) — DSH Web 设置页的服务控制面板：实时宿主信息（PID、版本、运行时长、内存/CPU 趋势、活跃会话）、npm 更新提醒，以及带确认的优雅停止——任务运行时发出警告，也可等待任务结束后自动停止。
+- [khglobal/dsh-nocco](https://github.com/khglobal/dsh-nocco) — 在对话里描述你要的网页系统，直接得到能用的成品：后台管理、手机应用、小游戏都可以。对话旁实时预览，点一下元素就能让 Agent 修改，可用 Excel 数据起步，每一步都能撤销。内置四种设计风格，自带登录和数据库。
 - [kialajin-l/DSH_Plus#dsh-agent-checkup](https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-agent-checkup) — Agent 体检：对近期本地会话日志跑重复率/错误可见性/工具失败率/上下文膨胀四个只读探针，输出 HTML 报告。
 - [kialajin-l/DSH_Plus#dsh-project-panel](https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-project-panel) — 项目进度面板：扫描配置根目录下的本地项目，按锚点与 git 证据推断活跃度，支持筛选、锚点标记与自包含深色 HTML 报告导出。
 - [Kide-Lee/dsh-locus-bridge](https://github.com/Kide-Lee/dsh-locus-bridge) — 让 DSH 扮演 Locus 客户端，来实现一站式的 Unity 开发体验。插件本身不依赖 Locus：可在设置界面为你的 Unity 项目安装 Locus 插件。功能包括通过 Locus 原生 broker 操作 Unity 编辑器；对 C# 代码进行语义分析和调试；对 prefab 和 3D 模型在侧栏预览。它的 Unity 工具可以在编辑器主线程上执行 C#，并修改资源与场景对象。
