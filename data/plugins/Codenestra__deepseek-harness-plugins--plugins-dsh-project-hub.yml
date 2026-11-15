@@ -1,0 +1,7 @@
+url: "https://github.com/Codenestra/deepseek-harness-plugins/tree/main/plugins/dsh-project-hub"
+name: "Codenestra/deepseek-harness-plugins#dsh-project-hub"
+category: ui
+description:
+  en: "Cross-workspace project overview, full-text session search, project notes, and quick switching."
+  zh: "跨工作区项目总览、会话全文搜索、项目笔记与快速切换。"
+tarball: "https://github.com/Codenestra/deepseek-harness-plugins/releases/download/v0.1.0/local-dsh-project-hub-0.1.0.tgz"
