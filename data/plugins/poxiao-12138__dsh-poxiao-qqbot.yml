@@ -1,0 +1,6 @@
+url: https://github.com/poxiao-12138/dsh-poxiao-qqbot
+name: poxiao-12138/dsh-poxiao-qqbot
+category: notify
+description:
+  en: "Connects the official QQ bot to DeepSeek Harness and adds BreezeBlue voice replies, Obsidian memory, and role-card updates based on chat feedback."
+  zh: "将 QQ 官方机器人接入 DeepSeek Harness，支持 BreezeBlue 语音回复、Obsidian 记忆和根据聊天反馈微调角色卡。"
