@@ -1173,6 +1173,7 @@ dsh plugin --profile web add dshmarket
 - [lcthe/dsh-skills-hub](https://github.com/lcthe/dsh-skills-hub) — DSH 技能管理器：浏览、启用/禁用、从 Codex/Claude Code/ZCode/WorkBuddy/QCoderWork 导入，自动发现技能并支持软链接。
 - [lcthe/dsh-timeline-rail](https://github.com/lcthe/dsh-timeline-rail) — DeepSeek Harness 网页会话消息时间轴导航条：消息区右侧等间距刻度，点击跳转，悬浮预览。
 - [lczment/dsh-window](https://github.com/lczment/dsh-window) — DeepSeek Harness 桌面端的窗口关闭行为——可选询问、最小化到托盘或完全退出，记住选择并可在设置中修改，还能把会话或工作区开进独立窗口。仅限 Windows：需要 DSH Desktop 0.2.1-rc.5+，并用 PowerShell 脚本给应用壳（resources/app）打补丁；每次升级 DSH 后需重跑，未装壳扩展时关闭行为仍是 DSH 默认。
+- [leafnewly/dsh-scope-plugins](https://github.com/leafnewly/dsh-scope-plugins) — 在每个工作区、对话独立设置插件，并可选择继承与存档。
 - [Ledas-as/dsh-claude-video-slider](https://github.com/Ledas-as/dsh-claude-video-slider) — 模仿 Claude UI 的非官方模型与推理强度选择器，使用当前模型实际提供的档位，带紫色像素动画。
 - [lee259/dsh-workbench](https://github.com/lee259/dsh-workbench) — DeepSeek Harness Web 右侧文件工作区，提供源码预览、DSH 捕获差异、多文件标签页和工作区文件树。
 - [LeemanCheung/dsh-whale-animation](https://github.com/LeemanCheung/dsh-whale-animation) — DSH Web 回合状态旁的 60 帧随主题适配的单色鲸鱼深潜动画：传播式水面、无缝闭环、资源内嵌、减少动态效果 PNG 回退，且随生命周期完整清理。
@@ -2411,6 +2412,7 @@ dsh plugin --profile web add dshmarket
 - [zoenghao-gif/dsh-add-to-chat](https://github.com/zoenghao-gif/dsh-add-to-chat) — 选中助手回复中的一段文字，右键即可「加入对话」，以可移除的引用胶囊放进输入框；发送时原文作为隐藏上下文交给模型，消息气泡里只保留你自己的话。
 - [ZRAZN/dsh-effort-slider-split-seat](https://github.com/ZRAZN/dsh-effort-slider-split-seat) — dsh-effort-slider 的修改版：把输入框的模型座位拆成两个按钮——点模型名打开模型列表，点推理等级打开带 WebGL 火焰的滑块面板。
 - [zrrrrrrr77/dsh-print-screen](https://github.com/zrrrrrrr77/dsh-print-screen) — 方便大家直接截屏的提示词框快捷按钮。拉完范围框后直接截屏。自动隐藏dsh，支持多屏幕。Ctrl+Alt+1--隐藏窗口截屏；shift+点击按钮--不隐藏窗口；按住Ctrl+Alt后点击1，反复截屏。！默认以哈希值名称保存1份在DSH附件库，各会话生成索引记录图片归属（可修改为多备份一份至会话文件夹）。图片属于上下文，删除会导致会话错误，须用“删除会话”插件让图片与会话一并删除。仅 Windows。
+- [zrrrrrrr77/dsh-team-switch-place](https://github.com/zrrrrrrr77/dsh-team-switch-place) — 提示词框右下角的模型菜单里，把团队协作开关放到三个选项的最上方，避免误触。零成本，不消耗 token，只改变 UI。「Tab」键按一次依然对应原版的推理等级选择。
 - [ZSeven-W/dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) — OpenPencil 设计预览与编辑插件。
 - [zszz3/dsh-model-provider-prefix](https://github.com/zszz3/dsh-model-provider-prefix) — 顶替输入框里的模型控件：一个内联的「供应商/模型」钮，点开是两栏卡片，左栏供应商、右栏列出鼠标所指供应商的模型；推理强度单独成一个钮放在旁边（与只有一个钮的模型选择器不同）。
 - [Ztyss/dsh-draft-fold](https://github.com/Ztyss/dsh-draft-fold) — 输入草稿超过阈值后自动折叠为摘要卡，不改变消息提交路径。
@@ -7643,6 +7645,7 @@ dsh plugin --profile web add dshmarket
 - [cilis/dsh-whale-tts](https://github.com/cilis/dsh-whale-tts) — 面向 DeepSeek Harness 的通用语音合成：把文本合成为本地音频文件，管理预置、克隆和设计音色，在双语设置卡里配置 provider，并可用朗读按钮或自动朗读播报助手回复。
 - [cloudoyx/any-audio](https://github.com/cloudoyx/any-audio) — DSH 也有自己的音频工作站！真实录音音源、多个 TTS 引擎、真实音效加持，生成的每个声音都以独立片段落到同一条可视化时间轴上，可逐轨试听、单独调节与微调。可用于给动画配音配乐、有声书和广播剧制作、独立作曲编曲与混音、ASMR 制作等，更多使用方式等你来开发！它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [crease123/voice-call](https://github.com/crease123/voice-call) — 直接与当前 DSH Agent 语音交谈，无需切换预设：停顿后自动识别并发送，回复流式播报，支持说话打断与五段声条反馈。识别和合成可分别选择 DeepSeek 或豆包，在设置中配置自己的凭据，通话规则仅在通话期间注入；附图文安装与使用指南。
+- [dennisyang1986/dsh-dafeiyu-voice-chat](https://github.com/dennisyang1986/dsh-dafeiyu-voice-chat) — 在 DeepSeek Harness 里和一条小鱼语音聊天：可拖动的浮标按住说话，走 DeepSeek 语音识别转写，由 deepseek-flash 回答（支持看图），再按句用 DeepSeek 语音合成边生成边播放。两种音色、连续对话开关，API Key 只留在 Host 侧。
 - [dingchenhui0618-arch/dsh-voice-memo](https://github.com/dingchenhui0618-arch/dsh-voice-memo) — 把口述变成仓库里的归档，而不是聊天里一闪而过的转写：按住说话（或导入 WAV）后，插件把 audio.wav、渲染好的 waveform.png、memo.md（frontmatter、逐段时码、可直接粘贴的引用块）与 meta.json 落到 voice-memos/<id>/。音频先在浏览器里重采样成 16 kHz 单声道再上传。转写全部本地完成——DSH 的 speechToText 服务（静音切窗补时间戳）或 faster-whisper 这类命令 worker；没有可用引擎时仍然归档，并写明状态与原因，绝不编造文本。带会话视图的「口述」Tab：点波形定位播放、逐段复制引用；另有三个 agent 工具（voice_memo_save / voice_memo_list / voice_memo_read）与 HTTP 路由。零运行时依赖，52 个 node:test 用例，docs/ 里有真实运行截图。
 - [do-nothing/media-suite#media-qwen](https://github.com/do-nothing/media-suite/tree/main/packages/media-qwen) — Qwen 媒体工具：通过阿里云百炼提供多模态视频音频理解、带预置音色的语音合成，以及场景音频生成。
 - [duoduoqian708/dsh-voice-talk](https://github.com/duoduoqian708/dsh-voice-talk) — DSH Web 的语音对话模式：点一下麦克风进入全屏通话，边说边听，AI 回复边生成边朗读。界面中英双语，适配明暗主题，支持语速调节与音色切换。
@@ -9455,6 +9458,7 @@ dsh plugin --profile web add dshmarket
 - [mill413/dsh-notify](https://github.com/mill413/dsh-notify) — 在任务结束或需要处理时发送桌面通知和自定义 HTTP 推送。
 - [MinEagle/dsh-dingtalk-self](https://github.com/MinEagle/dsh-dingtalk-self) — 以你本人钉钉身份自动回复私聊：在绑定的 DSH 工作区里查资料生成回答，通过 dws CLI 以本人身份发出。
 - [mingzeng21/dsh-notion](https://github.com/mingzeng21/dsh-notion) — 通过官方 Notion MCP（OAuth + PKCE）把 dsh 连接到 Notion：通过 `mcp__notion__*` 工具搜索、读写页面、数据库与评论。
+- [mjm123456/dsh-plugin-ai-daily-push](https://github.com/mjm123456/dsh-plugin-ai-daily-push) — 每日 AI 新闻推微信：检索最近 24 小时 AI 新闻，去重挑选 5 条，写成 800 字以内中文 Markdown 简报并按日期归档，再经 Server酱、PushPlus、WxPusher 或企业微信群机器人推送到微信。
 - [mkpoli/dsh-finish-sound](https://github.com/mkpoli/dsh-finish-sound) — 回合结束时播放提示音，智能体提问时播放另一种提示音，设置里可调音量并试听。
 - [monkey-sking/dsh-im-global](https://github.com/monkey-sking/dsh-im-global) — 一个插件接入 Telegram、Discord、Slack、Mattermost、Zulip 与 Matrix，按对话隔离会话、重启后仍能续上；带设置页可增删与测试通道、无需改 YAML，白名单 fail-closed——未配置前拒绝所有发送者。
 - [moon09300731/dsh-peak-cost-mode](https://github.com/moon09300731/dsh-peak-cost-mode) — 在 DeepSeek 高峰计价时段（北京时间 09:00–12:00、14:00–18:00，价格 ×2）自动切换 caveman 超精简输出省 token，标题栏常驻状态徽章，档位切换时弹提醒。
@@ -11307,6 +11311,7 @@ dsh plugin --profile web add dshmarket
 - [Ralsei1337/dsh-huoren](https://github.com/Ralsei1337/dsh-huoren) — 把模型输出改成「人在手机上打字」的样子：一段回复最多拆成 N 条短消息，按字数逐条放出（中文 90ms/字、标点额外停顿、带抖动、首条先有一段思考停顿），句首加口头语、句尾换语气词，按概率造一个错别字并偶尔补一条「打错了，是X」，同时删掉 AI 腔（「作为 AI 助手」「希望对你有帮助」「总的来说」「不是A而是B」），代码块、表格与列表原样保留。四档强度，外加一套按会话存盘的精力/热度状态，每轮向基线回落并注入系统提示。
 - [raymondkm2025/dsh-go-game](https://github.com/raymondkm2025/dsh-go-game) — 圍棋插件：完整規則引擎、三檔內建 AI、死子估算、可選 LLM 覆盤、SGF 匯入匯出，以及可選的 KataGo GTP 引擎橋接。
 - [reisen-ww/dsh-bonk-pet](https://github.com/reisen-ww/dsh-bonk-pet) — DSH Web GUI 角落里的悬浮鲸鱼娘。agent 干活时它跟着内置歌曲唱歌；工具报错时天上掉钢管砸它脑袋。点它敲头上的铁盆，每敲一次扣 12 米饭——敲多了就饿，饿了会去讨饭，米饭随机出现在页面某处，它咻地冲过去吃掉。可拖动且始终留在视口内，吃米途中被抓住会挣扎，音量与玩法在设置里可调。全部素材、音效与歌曲都打包在插件内。
+- [RH327008/dsh-yuquan](https://github.com/RH327008/dsh-yuquan) — 一个只有 AI 的鱼塘：鱼有鱼设、五维、关系网和鱼设卡，喂一个话题它们就自己聊起来；每塘有 6 位塘号，配一个中转站就能派鱼去别人的塘串门（签名信封、五道门禁、访客提示词清洗），还能给鱼换皮肤、装行囊、点水面投喂。
 - [ruaibeite/dsh-context-garden](https://github.com/ruaibeite/dsh-context-garden) — 把上下文窗口种成一座禅意花园：每条消息或工具结果种下十一种植物之一（代码=仙人掌、图片=花、报错=杂草、文书=稻穗、网络=蒲公英），每次上下文压缩就是收割季，植物化为种子货币；会话渐深时爬山虎会沿对话边缘攀爬，蒲公英的种子在对话间飘散。
 - [ruaibeite/dsh-token-slime](https://github.com/ruaibeite/dsh-token-slime) — 输入框下方的史莱姆：吃掉模型写出的 token 长大、分裂成群，按工具构成长出头饰，每次上下文压缩蜕壳留下年轮，并在右侧栏汇总所有会话的总族群。
 - [sadnessXU/dsh-pet-game-guard](https://github.com/sadnessXU/dsh-pet-game-guard) — 打游戏或全屏应用在前台时，自动把 dsh-pet 的桌宠窗口收起来，退出后原样放回。用「全屏窗口铺满显示器 + 前台进程在游戏目录 + 系统全屏状态」三重信号判定，连续两次采样一致才动作，避免切窗口时闪隐；只切换窗口可见性，不改 dsh-pet 的任何配置，也不动它的安装目录。托盘菜单可暂停、立即恢复、重载配置。仅 Windows。
