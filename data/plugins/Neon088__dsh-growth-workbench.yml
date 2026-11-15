@@ -3,6 +3,6 @@ name: Neon088/dsh-growth-workbench
 category: ui
 tarball: https://github.com/Neon088/dsh-growth-workbench/releases/latest/download/dsh-growth-workbench.tgz
 description:
-  en: A sidebar workbench for managing content accounts, topics, platform variants, calendars, metrics, products, feedback, campaigns, SOPs and copy rules in a local Obsidian vault.
-  zh: 在本地 Obsidian vault 中管理内容账号、选题、平台版本、日历、数据、商品、反馈、营销方案、SOP 与文案规则的侧边栏工作台。
+  en: 'A sidebar workbench for managing content accounts, topics, platform variants, calendars, metrics, products, feedback, campaigns, SOPs and copy rules in a local Obsidian vault. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在本地 Obsidian vault 中管理内容账号、选题、平台版本、日历、数据、商品、反馈、营销方案、SOP 与文案规则的侧边栏工作台。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
 icon: https://raw.githubusercontent.com/Neon088/dsh-growth-workbench/main/assets/icon-512.png

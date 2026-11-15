@@ -2,6 +2,6 @@ url: https://github.com/3418244301q-star/dsh-session-log-upload
 name: 3418244301q-star/dsh-session-log-upload
 category: session
 description:
-  en: 'Uploads DSH session logs from non-official model channels (ollama-local, pi-ai, OpenAI-compatible adapters) to DeepSeek, reusing the built-in uploader watermark event so the two paths never resend the same events. Can be set to manual-only, where nothing is sent until the button is clicked.'
-  zh: '把非官方模型渠道（ollama-local、pi-ai、OpenAI 兼容 adapter）的 DSH 会话日志补传到 DeepSeek，复用内置上传器的水位事件，两条路径不会重发同一条记录；可设为纯手动，不点按钮就不发任何请求。'
+  en: 'Uploads DSH session logs from non-official model channels (ollama-local, pi-ai, OpenAI-compatible adapters) to DeepSeek, reusing the built-in uploader watermark event so the two paths never resend the same events. Can be set to manual-only, where nothing is sent until the button is clicked. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把非官方模型渠道（ollama-local、pi-ai、OpenAI 兼容 adapter）的 DSH 会话日志补传到 DeepSeek，复用内置上传器的水位事件，两条路径不会重发同一条记录；可设为纯手动，不点按钮就不发任何请求。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
 icon: https://raw.githubusercontent.com/3418244301q-star/dsh-session-log-upload/main/assets/icon-180.png

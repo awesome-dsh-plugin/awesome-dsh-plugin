@@ -1,5 +1,5 @@
 url: https://github.com/Calliope-Nicles/technical-english-companion
-name: '专业英语术语伴学 · Technical English Companion'
+name: Calliope-Nicles/technical-english-companion
 category: identity
 description:
   en: 'Helps students and programming beginners learn technical English while working in Chinese, Spanish, Japanese, or Korean. Each reply gives terms a brief meaning in the reply language, then reuses the English name. On macOS, supports Codex and DSH 0.2.2-rc.1 or 0.2.2-rc.3. Verified with Flash/High: four languages via the dedicated entry on 0.2.2-rc.1; one Chinese reply via the default entry on 0.2.2-rc.3.'
