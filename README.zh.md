@@ -2758,6 +2758,7 @@ dsh plugin --profile web add dshmarket
 - [LL-cmyk-so/dsh-balance-widget](https://github.com/LL-cmyk-so/dsh-balance-widget) — DSH Web GUI 的余额与成本小部件：侧边栏底部卡片显示账户余额、剩余比例条与今日花费；点击展开四层级成本明细（最近提问 / 本会话 / 今日·本项目 / 今日·全部），带名词解释与一键充值入口。零依赖，兼容 Node 24。
 - [lninghaha/dsh-hub-oauth-gateway](https://github.com/lninghaha/dsh-hub-oauth-gateway) — DSH Web 用量中心：本地 SQLite 历史、HUD 与仪表盘、Hub 账户与额度快照、自定义定价与订阅费用账本、CSV/JSON 导出，并含 coding 计划 OAuth 与可选回环 OpenAI/Anthropic 网关。
 - [LobotomyCorporation/dsh-token-bar](https://github.com/LobotomyCorporation/dsh-token-bar) — 在每条回复的图标行里画一条单轮用量条：灰/黄/绿分段条配百分比图例，显示该轮未缓存输入、缓存读取与输出的拆分与各自占比。
+- [logghT/dsh-today-eat](https://github.com/logghT/dsh-today-eat) — DSH 饮食管家：口味与营养档案、九种目标/场景饮食阶段与子目标、饭点提醒、附近餐厅搜索、1000 道本地原创菜谱与采买清单、周计划，以及只存本机的饮食记录。
 - [Looriann/dsh-cost-ledger](https://github.com/Looriann/dsh-cost-ledger) — 「费用」标签页：按天、按模型统计 token 花费并折算成人民币，堆叠柱状图对齐 DeepSeek 官方控制台，悬停即可看到当天每个模型花了多少；内置阿里百炼官方价目表 142 个模型（千问、DeepSeek、Kimi、GLM、MiniMax），缓存命中按官方 10% 规则计价；查不到价的模型明确标为「未定价」并可一键手填，绝不静默算成 0。
 - [loshanvren/dsh-codex-reset-tracker](https://github.com/loshanvren/dsh-codex-reset-tracker) — 在 DSH composer 中报道 Codex 重置概率与排期，支持已完成重置的可选系统通知，并提供只读状态与历史记录工具。
 - [LoveDoLove/dsh-token-saver](https://github.com/LoveDoLove/dsh-token-saver) — DeepSeek Harness 插件，可裁剪工具输出并折叠 grep 结果，提供可选的 Caveman 和 Ponytail 提示词精简、本地即时响应、RTK 命令输出压缩、上下文压力处理、可选的 LLM 摘要压缩、稳定的提示缓存布局、Web 设置界面及持久化节省统计。
@@ -9211,6 +9212,7 @@ dsh plugin --profile web add dshmarket
 - [shenkonghui/dsh-worktree-manager](https://github.com/shenkonghui/dsh-worktree-manager) — dsh 的 Git worktree 管理——按仓库聚合工作区，创建与切换 worktree，并查看变更、提交历史与文件差异。
 - [shinchen6/dsh-git-view](https://github.com/shinchen6/dsh-git-view) — DeepSeek Harness 对话页里的 Git 标签页：列出会话工作目录下的每个仓库并各自独立提交，变更分组，整个文件 / 只看变动 / 并排三种差异看法，面板内直接编辑保存，以及推送前逐一列出将要发布的提交。
 - [Shyboy0499/dsh-git-tools](https://github.com/Shyboy0499/dsh-git-tools) — 为 DeepSeek Harness 提供四个零依赖本地 git 工具（status、diff、log、commit），作用于会话工作区。
+- [Si-xiyu/dsh-git-graph](https://github.com/Si-xiyu/dsh-git-graph) — DeepSeek Harness 的 Git 图谱：VS Code 风格的提交图，支持切换分支、合并、变基、标签、stash 与内嵌差异。
 - [simonguo/dsh-git-decorations](https://github.com/simonguo/dsh-git-decorations) — 在 DSH 原生文件树中显示只读 Git 状态颜色、文件标记和目录变更汇总，提供状态缓存及手动刷新按钮。
 - [skillpie/dsh-plugins#dsh-gitx](https://github.com/skillpie/dsh-plugins/tree/main/dsh-gitx) — DeepSeek Harness 的 Git 工作台：会话标题栏芯片常驻分支、改动数与同步状态，可就地切分支、看改动、拉取推送；完整窗口提供泳道提交图、逐块暂存、带恢复点的交互式变基与历史改写、批量 cherry-pick、三方冲突编辑器、行内 blame、worktree 管理与 Git LFS 迁入迁出。
 - [slowhiring/dsh-github-ops](https://github.com/slowhiring/dsh-github-ops) — 在 DSH 里真正管理 GitHub，而不只是只读浏览：建仓库、读写文件、用本机 git clone / 提交 / 推送真实代码、开 PR 和 issue、搜索。token 只进 DSH 的 credential store，不写进配置；git 认证走一次性 header，不会留在 remote URL 里。
@@ -9261,6 +9263,7 @@ dsh plugin --profile web add dshmarket
 - [zengxiaolou/dsh-github-link](https://github.com/zengxiaolou/dsh-github-link) — 把对话里的 GitHub / GitLab / Gitee 链接变成带缓存元数据的悬停卡片，点击在 DSH 右侧栏浏览器中打开；裸 URL 与 GenUI 块都覆盖，且不修改 GenUI 本体。
 - [zengxiaolou/dsh-pr-panel](https://github.com/zengxiaolou/dsh-pr-panel) — fork 自 ItQianChen/dsh-github-flow 并裁剪：本会话 PR 的浮窗与右列审阅面板，显示 CI 状态、评审意见与合并状态；同时注册 github_* 工具（含合并/评审 PR、密钥、原始 API），勿与原版同装。
 - [Zeppeli777/idea-git](https://github.com/Zeppeli777/idea-git) — IDEA 风格的 Git 工作台：提交图（泳道与引用标签）、日志筛选、提交详情、并排与统一差异、按 hunk 暂存、零上下文的细粒度模式、本地更改（含修补与 sign-off）、跟随重命名的文件历史、逐行注解、Stash、分支操作、比较、标签、交互式变基与冲突解决。按活跃会话盖上 Assisted-by trailer 记录提交由哪个模型产生，并把已有的 trailer 渲染成标签，让 AI 参与的历史可追溯。
+- [zhang6hk/dsh-codex](https://github.com/zhang6hk/dsh-codex) — 用本机 Codex CLI 审查改动，或把调查与修复任务交给它执行。
 - [zhaohaix/DeepSeek-GitHub](https://github.com/zhaohaix/DeepSeek-GitHub) — 在 DeepSeek Harness 内完成 GitHub 授权、仓库浏览、AI 生成项目介绍与 Release 发布，所有写操作先预览再确认。
 - [zhitiaojun/dsh-auto-git](https://github.com/zhitiaojun/dsh-auto-git) — 在 DSH 每次注册新工作区时自动 git init 并补一个空提交；已在工作树内的目录会被跳过。
 - [zhu1090093659/dsh-web#packages/dsh-git-graph](https://github.com/zhu1090093659/dsh-web/tree/main/packages/dsh-git-graph) — 输入框上方提供 Git 分支选择器，并把分支泳道与提交历史画成图谱，沿着时间线找到任意变更。作者已将其退役并改用官方 workspace-changes 插件；已发布的 npm 包仍可安装，但不再开发。
@@ -10826,6 +10829,7 @@ dsh plugin --profile web add dshmarket
 - [skyzzq/dsh-ssh-mac](https://github.com/skyzzq/dsh-ssh-mac) — 基于 @linxin666/dsh-ssh 的二次开发（两者不能同时启用）：建链前先按网卡 MAC 把主机解析成当前 IP，DHCP 换号不用改配置。
 - [soffits/dsh-desktop-view](https://github.com/soffits/dsh-desktop-view) — 在 DSH 网页界面中实时查看 Agent 所在机器的桌面（含声音），经 DSH 自身登录转发。遇到验证码或扫码登录时可接管，支持剪贴板与文件传输，手机上也能用。需要同一台机器上 Cua 桌面镜像自带的 cua-spacesd。
 - [soffits/dsh-telegram-bot](https://github.com/soffits/dsh-telegram-bot) — DSH 会话的 Telegram 客户端：每个会话对应一个论坛话题并与网页端共享，流式回答、其他客户端的轮次同步进来、工具审批与 ask_user_question 做成按钮、模型与权限控制、图片/文件/语音转写，并提供给脚本和其他插件用的发往话题的接口。是 Boobaw/dsh-telegram-bot 的维护分支。
+- [Solaris136/dsh-remote-go](https://github.com/Solaris136/dsh-remote-go) — 通过 SSH 在本地 DSH 的整窗里使用远端 DSH：侧边栏主机条在「本地」与各主机间切换，已连接的远端一点即回；远端由插件自托管的 Node 加 npx 按本机版本启动，数据留在远端用户自己的 ~/.dsh，含连接日志与诊断。
 - [solla-h/dsh-plugin-mobile-gateway](https://github.com/solla-h/dsh-plugin-mobile-gateway) — 让 DSH Mobile App 通过认证的 WebSocket 与自托管 DeepSeek Harness 宿主配对的手机网关插件。Clarklevis1995/dsh-plugin-mobile-gateway 的分支（包名相同，只能装其中一个），新增可选的加密地址簿（用 wrangler 部署成你自己 Cloudflare 账号下的 Worker）、实验性的 WebRTC P2P 传输，以及端点检查时回退到公共 DoH。
 - [somebdly/dsh-docker](https://github.com/somebdly/dsh-docker) — dsh-docker 是 DeepSeek Harness Web 的 Docker 管理面板插件：支持本机 CLI 与 SSH 远端多目标一键切换，统一管理 Docker MCP（部署/移除/搜索官方 Catalog/启停重启 Gateway/自定义部署）与容器镜像（启停/删除/日志/详情/交互式终端/新建/构建/导入）。凭据经 Windows DPAPI 加密存储，HTTP 仅限本机 loopback 访问，命令参数白名单防注入；免构建、纯 ESM、Client 零依赖。
 - [songofhawk/dsh-alpha](https://github.com/songofhawk/dsh-alpha) — DSH 的多机多 Agent 编排与控制平台：发现各设备上的 Agent 与工作区，按机器、仓库、能力和负载将任务路由到本地或远程 Agent Runtime，统一回传进度、审批与结果，并在断线后恢复持久任务。
