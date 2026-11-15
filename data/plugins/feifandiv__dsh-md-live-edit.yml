@@ -1,0 +1,6 @@
+url: https://github.com/feifandiv/dsh-md-live-edit
+name: feifandiv/dsh-md-live-edit
+category: docs
+description:
+  en: Edit Markdown right in the sidebar preview — click a block to edit it in place, ⌘/Ctrl+Enter writes it back to the file, and the built-in read-only view stays one menu pick away.
+  zh: 在右侧边栏的 Markdown 预览里直接编辑：点文本块就地改，⌘/Ctrl+Enter 保存写回文件；随时可切回内置只读渲染。
