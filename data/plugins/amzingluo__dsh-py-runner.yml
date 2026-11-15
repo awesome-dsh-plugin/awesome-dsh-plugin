@@ -1,0 +1,7 @@
+url: https://github.com/amzingluo/dsh-py-runner
+name: amzingluo/dsh-py-runner
+category: dev
+icon: https://raw.githubusercontent.com/amzingluo/dsh-py-runner/main/assets/icon.png
+description:
+  en: 'VSCode-style Python console in the DSH sidebar: it opens .py files in an editor with line numbers and Python syntax highlighting, lets you pick the interpreter, and runs the file with Run / Debug / Stop while stdout, stderr and the exit code stream into a terminal panel below. Debug launches the script under python -m pdb and forwards the commands you type, and stdin works during normal runs too. Ctrl+Enter runs, Ctrl+Shift+Enter debugs.'
+  zh: 'DSH 侧边栏里的 VSCode 风格 Python 控制台：用它打开 .py 文件就是一个带行号和 Python 语法高亮的编辑器，选好解释器后点「运行」「调试」「停止」，stdout、stderr 和退出码会实时流进下方的终端面板。调试通过 python -m pdb 启动并转发你输入的 pdb 命令，普通运行时也能向程序写标准输入。Ctrl+Enter 运行，Ctrl+Shift+Enter 调试。'
