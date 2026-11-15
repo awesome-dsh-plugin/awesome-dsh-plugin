@@ -1,0 +1,6 @@
+url: https://github.com/HekStudio2024/dsh-usage-kline
+name: HekStudio2024/dsh-usage-kline
+category: usage
+description:
+  en: Draws DeepSeek usage as a trading terminal, with daily K-line charts of spend and tokens, a live request tape, per-Workspace conversation rankings and the account balance.
+  zh: 把 DeepSeek 用量画成行情终端：每日消费与 Token 的 K 线、实时逐笔成交、按工作区的对话用量排名，以及账户余额。
