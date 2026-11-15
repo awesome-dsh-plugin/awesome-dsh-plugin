@@ -1,0 +1,8 @@
+url: https://github.com/daybreakcold/dsh-theme-nebula-glass
+name: daybreakcold/dsh-theme-nebula-glass
+category: theme
+description:
+  en: 'Dual-palette theme for the DeepSeek Harness Web client: indigo dark and frost light palettes with an original generated nebula wallpaper.'
+  zh: 为 DSH Web 客户端提供深浅双色主题：靛蓝暗色与霜白亮色两套配色，并带一张原创生成的星云壁纸。
+icon: https://raw.githubusercontent.com/daybreakcold/dsh-theme-nebula-glass/main/assets/icon-180.png
+tarball: https://github.com/daybreakcold/dsh-theme-nebula-glass/releases/latest/download/nebula-glass-theme.tgz
