@@ -2335,6 +2335,7 @@ dsh plugin --profile web add dshmarket
 - [zeasonvan/Days-Are-Yours](https://github.com/zeasonvan/Days-Are-Yours) — 本地优先的侧边栏生活助手：退休与假期倒计时、年假与拼假、日历、可选天气、愿望清单、时间胶囊，以及一只时光团子。
 - [zebracmz/dsh-task-progress-tab](https://github.com/zebracmz/dsh-task-progress-tab) — 在会话顶部“上下文”标签右侧增加“任务进度”标签页，用进度条显示已完成与未完成的任务，已完成项按完成顺序排列。
 - [zeki520/dsh-boot-nexus](https://github.com/zeki520/dsh-boot-nexus) — 把片头视频、suite 六幕冷启动与屏保合进同一个开机动画：一层画面、一个状态机、一个时钟、一份配置，所有选项都在一张玻璃面板设置卡里。suite 引擎、模板与一套原画质片头/屏保素材（720p–4K 原片，约 197 MB）也随包发布，装完第一次开机就有动画，删掉原插件后仍能播放；启用它时不要再同时启用 dsh-boot-suite 或 dsh-boot-animation。
+- [Zekilou/dsh-sidebar-session-tabs](https://github.com/Zekilou/dsh-sidebar-session-tabs) — 侧栏会话列表的筛选 Tab（全部、运行中、待我处理、已固定、每个标签一个、每个会话来源一个）与会话标签；插件可注册会话来源，把另一台机器的会话加入列表，或按来源筛选原生会话。
 - [zeme56/dsh-landmarks](https://github.com/zeme56/dsh-landmarks) — 左侧边栏加一个全屏 3D 展厅，看四座程序化建模的地标——埃菲尔铁塔、长城、紫禁城、泰姬陵——另带一个「五间安静的屋子」入口。
 - [zengchunhua-boost/dsh-cat-star](https://github.com/zengchunhua-boost/dsh-cat-star) — 给猫颜值打分的 DSH 插件：CFA 风格评分卡、国内市场参考价，可发布到公开榜单。
 - [zengxiangpeng123/dsh-sidebar-fold-zxp](https://github.com/zengxiangpeng123/dsh-sidebar-fold-zxp) — 把 DSH 左侧那排插件入口折成一行「插件列表」，支持按组归类与自定义顺序，把纵向空间还给工作区与会话列表；展开即恢复完整入口。
@@ -2575,7 +2576,7 @@ dsh plugin --profile web add dshmarket
 - [dixieWithHeart/dsh-context-usage-for-agent](https://github.com/dixieWithHeart/dsh-context-usage-for-agent) — 通过 context_usage 工具与每轮一行读数让 Agent 读懂自己的上下文占用，注入模板可编辑。
 - [DongHua3/dsh-tokenrhythm](https://github.com/DongHua3/dsh-tokenrhythm) — 基元律动费用中心：账户余额与限时额度、模型价格卡、近 30 天用量热力日历、连通检测与平台密钥管理，凭据只存本机 host。单渠道 fork 自 162568316/dsh-tokenrhythm-bill；包名、Cordis id 与路由前缀都与上游不同，可与上游同时安装。
 - [dougen/dsh-deepseek-usage](https://github.com/dougen/dsh-deepseek-usage) — 在侧边栏底部显示一张卡片：DeepSeek 账号余额（用 DSH 已保存的 API Key 调官方 /user/balance 接口获取），以及当前模型的档单价——输入、缓存读取、输出——取自内置的官方价格表快照。一个圆点标出当前计费时段，旁边是距离切换的倒计时：高峰为北京时间周一至周五 9:00–12:00、14:00–18:00（不含中国法定节假日），其余为空闲时段。档单价与圆点只对 DeepSeek 官方模型显示，其他模型只显示余额。卡片每 30 秒刷新一次，点击或切换模型时立即刷新，并跟随应用主题与 DSH 语言。
-- [dxxo77/dsh-plugin-quota-balance](https://github.com/dxxo77/dsh-plugin-quota-balance) — 余额显示quota-balance：在输入框下方的用量行最左侧显示账户余额，点开可查看普通余额与赠送额度的分项、更新时间，并可跳转充值；徽标与浮层读取宿主表面 token，可跟随 dsh-plugin-wallpaper-engine 的玻璃参数、明暗主题与壁纸切换。
+- [余额显示quota-balance](https://github.com/dxxo77/dsh-plugin-quota-balance) — 在输入框下方的用量行最左侧显示账户余额，点开可查看普通余额与赠送额度的分项、更新时间，并可跳转充值；徽标与浮层读取宿主表面 token，可跟随 dsh-plugin-wallpaper-engine 的玻璃参数、明暗主题与壁纸切换。
 - [eatone9254/dsh-balance-badge](https://github.com/eatone9254/dsh-balance-badge) — 在 DeepSeek Harness 主界面右下角常驻账户余额，60 秒自动刷新，点击即可立即查询。
 - [Eclipse-NotFound/dsh-usage-replay](https://github.com/Eclipse-NotFound/dsh-usage-replay) — 从 Harness 自身会话日志回放聚合的跨会话分模型 token 用量，含侧边栏用量面板（需安装 dsh-better-sidebar）与单对话按模型弹层。
 - [elsebit/dsh-deepseek-usage-extended](https://github.com/elsebit/dsh-deepseek-usage-extended) — dougen/dsh-deepseek-usage 的 fork（上游仓库没有许可证文件，manifest 声明 MIT），在上游的各家余额读取、订阅用量窗口和模型价格快照之外，增加 IKunCode 账户余额查询。查 IKunCode 时，你的密钥会以 Bearer 令牌发往 api.ikuncode.cc。它以 @elsebit/dsh-deepseek-usage-extended 的名字从 GitHub Release 安装，路由和设置独立，只想留一张用量卡片的话请停用原插件；继承来的 OAuth 凭据引用与原插件共用。
@@ -6444,6 +6445,7 @@ dsh plugin --profile web add dshmarket
 - [nidehogger/dsh-tool-compass](https://github.com/nidehogger/dsh-tool-compass) — 模型自动分类的工具罗盘：模型默认只看到功能类别，需要时检索并展开具体工具。
 - [NIDEXIANG/dwg-reader-plugin-20261029](https://github.com/NIDEXIANG/dwg-reader-plugin-20261029) — DSH 插件：直接读取 DWG/DXF 图纸、PDF 与图片，无需安装 AutoCAD 或 Tesseract；DXF 需本机安装 Python 3 与 ezdxf。
 - [Niesc-F/dsh-fastfetch](https://github.com/Niesc-F/dsh-fastfetch) — fastfetch 风格的系统信息与 DSH 运行环境面板：/fastfetch 或 /ff 一条命令、一个简单的 Agent 工具，输出操作系统、内核、主机、CPU、显卡、内存、全部磁盘、本地 IP 地址，以及 DSH 版本、当前模型、会话模式、插件与技能数量，渲染成彩色终端卡片，所有字段都能在设置页里改。
+- [ninetyhe-90/dsh-a2a-hitl](https://github.com/ninetyhe-90/dsh-a2a-hitl) — 新增 a2a_list_agents 与 a2a_call 两个工具：模型只能按管理员白名单以 id 调用外部 A2A 智能体（SSE），远端的人工确认请求会转成 DSH 原生 userQuestions，模型无法代替用户作答。
 - [ninetyhe-90/dsh-decision-review](https://github.com/ninetyhe-90/dsh-decision-review) — 让主模型把已形成的决策交给独立评审模型复核，支持 off、shadow、advisory 三种模式；需自备实现 POST /v1/decision 的复核服务。
 - [NingYuanLee/dsh-tavily-mcp](https://github.com/NingYuanLee/dsh-tavily-mcp) — 接入 Tavily 托管的 MCP 服务器并注册它公布的工具。API Key 从 TAVILY_API_KEY 凭据读取，不写入插件配置。
 - [NINKCH/dsh-artcraft](https://github.com/NINKCH/dsh-artcraft) — 从 DeepSeek Harness 驱动开源创作套件 ArtCraft（含 PhotoCraft、FilmCraft、PdfCraft 等 17 个应用）：提供代理工具、同源 HTTP API、内置 craft 技能包，以及插件页状态与自更新。不含 ArtCraft 应用本体：需另行安装各应用，插件通过自动探测、artcraft.config.json 或 PATH 找到它们的 CLI。
