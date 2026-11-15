@@ -1,5 +1,5 @@
-url: https://github.com/gabrielbav/dsh-plugin-aws
-name: gabrielbav/dsh-plugin-aws
+url: https://github.com/gabrielbav/dsh-workspace/tree/main/Plugins/dsh-plugin-aws
+name: gabrielbav/dsh-workspace#dsh-plugin-aws
 category: tools
 description:
   en: 'Gives every DSH session AWS''s official MCP servers: 59 servers in 14 groups (documentation, IaC, EKS and ECS, Lambda, DynamoDB and Aurora, CloudWatch, cost and billing, Bedrock and more), switched on from a Settings page by group or one at a time. Versions are pinned, servers start read-only where they support it, and secrets stay in the DSH credential store.'
