@@ -1,0 +1,6 @@
+url: https://github.com/zengxiangpeng123/dsh-sidebar-fold-zxp
+name: zengxiangpeng123/dsh-sidebar-fold-zxp
+category: ui
+description:
+  en: 'Folds the sidebar plugin launchers into collapsible groups whose names and order you set; pinned entries stay visible while the block is folded, each group collapses on its own, and the layout is saved on the local host.'
+  zh: '把左栏的插件入口收进可折叠的分组，分组名称与顺序由你决定；折叠时固定住的条目仍然显示，每组还能单独收起，配置保存在本机。'
