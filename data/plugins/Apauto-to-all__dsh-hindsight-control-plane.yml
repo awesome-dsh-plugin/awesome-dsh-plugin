@@ -1,0 +1,6 @@
+url: https://github.com/Apauto-to-all/dsh-hindsight-control-plane
+name: Apauto-to-all/dsh-hindsight-control-plane
+category: memory
+description:
+  en: 'Embed the Hindsight memory console in the DSH main panel: one sidebar button opens the full console, launched via npx and cleaned up with the plugin.'
+  zh: 把 Hindsight 记忆控制台嵌进 DSH 主面板：侧栏一键打开整块控制台，由 npx 拉起、随插件起停。

@@ -1,0 +1,6 @@
+url: https://github.com/tero0224-droid/dsh-locale-zh-tw
+name: tero0224-droid/dsh-locale-zh-tw
+category: ui
+description:
+  en: Adds a Traditional Chinese (Taiwan) interface language to the web GUI by converting the installed Simplified Chinese dictionaries when a string is looked up, so interface strings added later are covered without re-translation.
+  zh: 在網頁介面加入繁體中文（台灣），查詢字串時把內建簡體字典轉成正體，官方日後新增的字串也自動涵蓋，不需重新翻譯。

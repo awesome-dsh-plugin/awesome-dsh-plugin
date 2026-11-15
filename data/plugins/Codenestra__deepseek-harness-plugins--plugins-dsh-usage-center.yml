@@ -1,0 +1,7 @@
+url: "https://github.com/Codenestra/deepseek-harness-plugins/tree/main/plugins/dsh-usage-center"
+name: "Codenestra/deepseek-harness-plugins#dsh-usage-center"
+category: usage
+description:
+  en: "Provider-reported token usage analytics, configurable cost estimates, budgets, interactive charts, and data export."
+  zh: "供应商返回的 Token 用量统计、可配置花费估算、预算进度、交互图表与数据导出。"
+tarball: "https://github.com/Codenestra/deepseek-harness-plugins/releases/download/dsh-usage-center-v1.1.0/local-dsh-usage-center-1.1.0.tgz"

@@ -1,0 +1,7 @@
+url: https://github.com/xiduo-wang/dsh-datapilot
+name: xiduo-wang/dsh-datapilot
+category: tools
+description:
+  en: 'A persistent DSH sidebar workbench for local data analysis: nine chart types, column profiles, ONNX model graphs, uploads, structured reports, and built-in ML/DL training across multiple workspaces.'
+  zh: 'DSH 侧边栏常驻的数据分析工作台：九类图表、列画像、ONNX 模型结构图、上传、结构化报告与内置机器学习训练，跨多工作区查看本地数据。'
+icon: https://raw.githubusercontent.com/xiduo-wang/dsh-datapilot/main/docs/icon.png

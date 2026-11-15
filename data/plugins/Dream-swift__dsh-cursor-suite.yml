@@ -1,0 +1,6 @@
+url: https://github.com/Dream-swift/dsh-cursor-suite
+name: Dream-swift/dsh-cursor-suite
+category: model
+description:
+  en: 'Cursor subscription plus a read_image vision bridge for DeepSeek Harness: browser PKCE sign-in, model discovery, DSH-local tools, and image reading when the Cursor route drops pixels.'
+  zh: '在 DeepSeek Harness 中接入 Cursor 订阅，并附带 read_image 视觉桥：浏览器 PKCE 登录、模型发现、DSH 本地工具，以及 Cursor 路由丢弃像素时的读图能力。'
