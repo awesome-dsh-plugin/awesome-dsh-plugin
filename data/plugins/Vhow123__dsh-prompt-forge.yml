@@ -1,0 +1,6 @@
+url: https://github.com/Vhow123/dsh-prompt-forge
+name: Vhow123/dsh-prompt-forge
+category: ui
+description:
+  en: 'Image-generation prompt workshop in the sidebar panel list: choose a target dialect, a visual style and an aspect, write one rough sentence, and a chat model returns an 11-field shot breakdown that the plugin stitches into the syntax that dialect actually accepts — six dialects (natural English, natural Chinese, GPT-Image, Midjourney, Stable Diffusion, nano-banana), 18 style presets, negative prompts, filler-word stripping and local history. The same run is exposed as an `optimize_image_prompt` agent tool.'
+  zh: '侧边栏面板里的生图提示词工坊：选好目标方言、视觉风格与画幅，写一句人话，对话模型输出 11 字段的画面拆解，插件再拼成该方言真正认的语法——六种方言（自然英文、自然中文、GPT-Image、Midjourney、Stable Diffusion、nano-banana）、18 种风格预设、负向提示词、废词清理与本地历史。同一套流程也以 `optimize_image_prompt` 智能体工具提供。'
