@@ -7734,6 +7734,7 @@ dsh plugin --profile web add dshmarket
 - [HaoKuo/dsh-notebook-studio](https://github.com/HaoKuo/dsh-notebook-studio) — 把最多 30 篇上传的 PDF 文献变成提示词驱动的文献综述、关键信息提取、研究思路与研究设计，并导出带页码引用的报告（DOCX/PDF）或演示文稿（PPTX/PDF）。
 - [HaoKuo/DSH-Paper-DeepRead](https://github.com/HaoKuo/DSH-Paper-DeepRead) — 把文献精读库与 paper-deepread-html 精读技能打包成 dsh 插件：侧边栏浏览交互式报告、上传 PDF 到托管书库、由 Agent 或可选接入的站点自动精读 worker 精读、管理或重建书库；提供 paper_deepread、paper_deepread_uploads、paper_deepread_reports 三个模型工具。精读摄取与成稿需要 Python 3（内置技能首次会准备 PyMuPDF 解释器；重建索引会退化为纯 python3）。
 - [hesheng01/dsh-pele#plugin](https://github.com/hesheng01/dsh-pele/tree/main/plugin) — 通过 pele_draw 工具在 DSH 会话中绘制 Mermaid 图表，以内联 SVG 卡片渲染，支持缩放/拖动与 SVG/PNG 下载，跟随明暗主题。
+- [Hieupt1904/dsh-tvkt-vi](https://github.com/Hieupt1904/dsh-tvkt-vi) — Enforces a Vietnamese technical-writing standard on every agent: one prompt section applied to all modes, a skill with 30 writing rules and 70 terms, an agent mode with draft/review/rewrite discipline, and a bundled L001-L007 linter.
 - [HiSeax/dsh-agent-outputs-reader](https://github.com/HiSeax/dsh-agent-outputs-reader) — agent 产出文件的浮层阅读器：Markdown 渲染、PDF 面板预览、DOCX/XLSX/PPTX 文本提取与回复末尾文件 chips，支持搜索、大纲与位置记忆。
 - [huangfuren/dsh-outline](https://github.com/huangfuren/dsh-outline) — 在 DSH 对话中搜索、读取并安全读写用户自己的 Outline 知识库文档，写操作受白名单保护与审批约束。
 - [huangxicheng1/blog-manage](https://github.com/huangxicheng1/blog-manage) — 在 DSH 面板里管理 GitHub Pages 博客：按标签分组浏览 Markdown 文章，用表单填 front matter 并在分屏编辑器里修改，再通过 GitHub REST API 把改动作为一次 commit 发布。
