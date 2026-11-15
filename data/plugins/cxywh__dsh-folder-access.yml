@@ -2,6 +2,6 @@ url: https://github.com/cxywh/dsh-folder-access
 name: cxywh/dsh-folder-access
 category: security
 description:
-  en: 'Adds a folder button to the composer: pick any local directory and the agent may then write inside it in every conversation. Grants are remembered across restarts, listed as chips, and revoked with one click or the /folder command.'
-  zh: '在输入框左侧加一个文件夹按钮：选中本地目录后，所有对话都能在其中读写。授权会被记住（重启后依然生效），以标签形式展示，可一键取消或用 /folder 命令管理。'
+  en: 'Adds a folder button to the composer: pick any local directory and the agent may then write inside it in this conversation. The grant is injected into the model runtime context right away, so it never has to ask for the path or be reminded.'
+  zh: '在输入框左侧加一个文件夹按钮：选中本地目录后，当前对话即可在其中读写。授权会立刻注入模型的运行时上下文，模型无需追问路径，也不必由你提醒。'
 icon: https://raw.githubusercontent.com/cxywh/dsh-folder-access/main/assets/icon-180.png
