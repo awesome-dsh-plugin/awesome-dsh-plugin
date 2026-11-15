@@ -1,0 +1,6 @@
+url: https://github.com/zhang6hk/dsh-codex
+name: zhang6hk/dsh-codex
+category: git
+description:
+  en: Review changes or delegate investigation and fix tasks to the local Codex CLI.
+  zh: 用本机 Codex CLI 审查改动，或把调查与修复任务交给它执行。
