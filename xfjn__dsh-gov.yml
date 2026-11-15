@@ -1,0 +1,6 @@
+url: https://github.com/xfjn/dsh-gov
+name: xfjn/dsh-gov
+category: security
+description:
+  en: 'Tool-permission guard for DSH multi-agent sessions. The coordinator cannot call execution tools, teammates cannot spawn further teammates, and every dispatch is checked against a six-item brief and appended to a per-agent case file. Two enforcement layers: restricted tools disappear from a member''s tool list at resolution time, and guarded calls are rejected with a printed reason at prepare time. Modes are reject or log-only; the shipped default is log-only. Zero shell, zero network, zero model calls.'
+  zh: 'DSH 多智能体会话的代码层权限护栏。协调者不能调用执行类工具，成员不能再开成员，每次派活按 brief 六项自动核对并追加到 per-agent 案卷。两道强制层：受限工具在解析期从成员工具表里消失；被管辖的调用在准备期被拒并打印理由。模式可选拒绝或只记日志，包内默认只记日志。不碰 shell、不联网、不调模型。'
