@@ -9289,38 +9289,6 @@
     "scannedAt": "2026-09-24T17:02:46.730Z",
     "tool": "dsh-trust-check@0.1.13"
   },
-  "https://github.com/Devin-AXIS/deepseek-design/tree/main/packages/deepseek-idesign": {
-    "version": "0.2.2",
-    "spec": "github:Devin-AXIS/deepseek-design",
-    "capabilities": [
-      "dynamic-code",
-      "fs-write",
-      "fs-read",
-      "host-runtime"
-    ],
-    "redLines": [],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
-  "https://github.com/Devin-AXIS/deepseek-design/tree/main/packages/deepseek-ivideo": {
-    "version": "0.5.0",
-    "spec": "github:Devin-AXIS/deepseek-design",
-    "capabilities": [
-      "shell",
-      "dynamic-code",
-      "fs-write",
-      "fs-read",
-      "network",
-      "env",
-      "host-runtime"
-    ],
-    "redLines": [
-      "uses plaintext http:// to 169.254.169.254",
-      "uses literal IP 169.254.169.254 for network access"
-    ],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
   "https://github.com/dff652/deepseek-harness-community-plugins/tree/main/packages/dsh-agent-mail": {
     "version": "0.2.1",
     "spec": "github:dff652/deepseek-harness-community-plugins",

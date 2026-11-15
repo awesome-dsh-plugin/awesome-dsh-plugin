@@ -1,0 +1,6 @@
+url: https://github.com/BeckChiang/dsh-cost-meter
+name: BeckChiang/dsh-cost-meter
+category: usage
+description:
+  en: 'Prices each DeepSeek Harness step at the peak or off-peak rate in force when that request ran, then shows the cumulative cost split, this-turn cost, and whether context or budget says to hand off to a fresh session.'
+  zh: '把每一步都按请求发出时的峰谷价计价，历史金额不随后续时段或模型切换漂移；在输入框下方给出累计成本拆分、本轮成本，以及「上下文或预算是否到了该交接」的判据与预测。'

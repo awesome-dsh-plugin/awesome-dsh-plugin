@@ -1,0 +1,7 @@
+url: https://github.com/wangyanan520/dsh-skill-workbench
+name: wangyanan520/dsh-skill-workbench
+category: skill
+description:
+  en: 'Chinese display layer for DSH skills: the / menu groups skills under Chinese categories with Chinese names and summaries, while the invocation token stays the English /name and no SKILL.md is edited. Also fills missing summaries from install sources and moves uninstalled personal skills to a recycle bin.'
+  zh: 给 DSH 技能加中文显示层：`/` 菜单按中文分类显示中文名与简介，调用仍是英文 `/name`，不改任何 SKILL.md。还能从安装来源补简介，卸载个人技能时移入回收站。
+icon: https://raw.githubusercontent.com/wangyanan520/dsh-skill-workbench/main/assets/icon-180.png

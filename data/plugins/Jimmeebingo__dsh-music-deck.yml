@@ -1,0 +1,7 @@
+url: https://github.com/Jimmeebingo/dsh-music-deck
+name: Jimmeebingo/dsh-music-deck
+category: ui
+description:
+  en: 'Floating music controls for players that publish Windows system media sessions. Its HTTP routes (play/pause commands, cover art, state) have no DSH access check, so a web page open in your browser could call them. Windows only.'
+  zh: '悬浮音乐控制卡片，读取并控制支持 Windows 系统媒体会话的播放器。它的 HTTP 路由（播放/暂停命令、封面、状态）没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。仅限 Windows。'
+icon: https://raw.githubusercontent.com/Jimmeebingo/dsh-music-deck/main/assets/icon-180.png

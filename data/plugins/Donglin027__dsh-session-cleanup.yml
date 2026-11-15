@@ -1,0 +1,15 @@
+url: https://github.com/Donglin027/dsh-session-cleanup
+name: Donglin027/dsh-session-cleanup
+category: session
+description:
+  en: >-
+    Purges what DSH's "delete session" leaves behind: orphan attachments, session projection cache
+    entries, dsh-spill temp dirs, and cost-meter ledger rows of sessions that no longer exist on
+    disk. Ships as a Cordis plugin that reacts to api-session/removed (800 ms debounce plus one
+    startup sweep) and as a preview-first CLI; dry-run by default, and anything removed is moved to
+    DSH_HOME\trash\session-cleanup\<stamp>\ with a journal.json.
+  zh: >-
+    清理 DSH 删除会话后的残留：孤儿附件、会话投影缓存、dsh-spill 临时目录，以及 cost-meter 账本里
+    已不存在会话的行。宿主插件监听 api-session/removed 自动清理（去抖 800 ms，启动补扫一次），
+    另带预览优先的 CLI。默认 dry-run，真删只移入 DSH_HOME\trash\session-cleanup\<时间戳>\ 并写 journal.json。
+tarball: https://github.com/Donglin027/dsh-session-cleanup/releases/latest/download/dsh-session-residue-cleanup.tgz
