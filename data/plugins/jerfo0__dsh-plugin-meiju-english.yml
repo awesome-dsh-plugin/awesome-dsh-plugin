@@ -1,0 +1,14 @@
+{
+  "name": "meiju-english",
+  "owner": "jerfo0",
+  "url": "https://github.com/jerfo0/dsh-plugin-meiju-english",
+  "category": "tools",                    // 也可考虑 "voice" / "docs"
+  "description": {
+    "en": "Turn a US-TV episode + bilingual subtitles into trimmed audio, sentence clips, local-SenseVoice shadowing with word-level scoring, quizzes and a phone listening page.",
+    "zh": "把美剧视频和中英字幕变成去头尾音频、逐句片段、本地 SenseVoice 跟读评分、测试题和手机磨耳朵页面。"
+  },
+  "install": "dsh plugin --profile web add github:jerfo0/dsh-plugin-meiju-english",
+  "icon": "https://raw.githubusercontent.com/jerfo0/dsh-plugin-meiju-english/main/plugin/icon.svg",
+  "screenshots": ["https://raw.githubusercontent.com/jerfo0/dsh-plugin-meiju-english/main/docs/screenshots/main.png"],
+  "capabilities": ["shell", "fs-write", "fs-read", "network"]
+}
