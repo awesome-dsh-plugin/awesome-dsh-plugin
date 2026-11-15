@@ -8458,7 +8458,7 @@ dsh plugin --profile web add dshmarket
 - [Domush/dsh-plugin-grill-me](https://github.com/Domush/dsh-plugin-grill-me) — 添加 /grill-me 斜杠命令：把会话切到计划模式，并提示 agent 在规划前通过 ask_user_question 就你的目标提出 3 到 20 个结构化问题，每个问题带推荐选项和备选项。
 - [Dreamaniax/dsh-syn-config](https://github.com/Dreamaniax/dsh-syn-config) — 把 DSH 技能、profile 设置与 AGENTS.md 与私有 git 仓库对齐：状态灯、六节体检、拉取、密钥脱敏、快照后推送。默认演练，永不 rebase 或强推。
 - [Dreamaniax/dsh-weekly-retro](https://github.com/Dreamaniax/dsh-weekly-retro) — DSH 周报复盘：会话画像、重复劳动、技能候选与五 Tab 洞察页，数据只在本机。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
-- [DrizzleGig/dsh-novel-beat](https://github.com/DrizzleGig/dsh-novel-beat) — AI 写着写着就替你决定了剧情？「拍板」会在 AI 写作途中遇到关键岔路时暂停，把 2–4 个走向及其代价交给你选；拍板写进全书账本，下一章接着用，写完再做结构核对。
+- [DrizzleGig/dsh-novel-beat](https://github.com/DrizzleGig/dsh-novel-beat) — AI 写小说时，关键剧情不该由模型顺手决定。「拍板」会在影响故事走向的节点暂停，给出 2–4 个真正不同的选择，说明各自代价与后续影响。由你决定，结果写入全书账本，供后续章节沿用；写作按段推进、逐段登记，并在完成后核对剧情结构。默认关闭，不写正文。
 - [Drkoh-wz/team-craft#team-flowise](https://github.com/Drkoh-wz/team-craft/tree/main/packages/team-flowise) — DSH 的多角色团队编排插件：给每个角色各自的模型、人设与工具，按依赖跑节点图，带独立评审与有上限的返工，并在界面里看进度。
 - [drliuhuan/dsh-plugin-folder-trust](https://github.com/drliuhuan/dsh-plugin-folder-trust) — 仅 Windows：新增工作区时授权一次，补齐 workspace-write 沙箱所需的 NTFS 权限，并把授权与 Low 完整性标签铺进已有子目录；修复过程带实时进度与日志。
 - [dryw/dsh-egm](https://github.com/dryw/dsh-egm) — 面向 DeepSeek Harness 的设计评审闸门，移植自 Google 的 Elephant-Goldfish Model：具备完整上下文的“大象”起草设计，再由零上下文的只读“金鱼”评审者严格审查，通过后才进入实现。注册的插件 id 为 `egm`，同一 profile 请只安装一个 EGM 插件。
