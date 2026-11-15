@@ -1,0 +1,6 @@
+url: https://github.com/joythatway/dsh-screenshot
+name: joythatway/dsh-screenshot
+category: ui
+description:
+  en: 'Composer screenshot menu with three modes: region capture that hides the harness window, a window list with live hover previews, and full screen; captures land in the draft, and multi-image drafts open a keyboard gallery.'
+  zh: '输入框截图菜单，三种模式：框选（自动让开 DSH 窗口）、窗口列表（悬停实时预览）、整屏；图片直接进草稿，多张草稿图可用键盘画廊翻看。'
