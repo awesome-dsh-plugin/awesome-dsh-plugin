@@ -9377,6 +9377,7 @@ dsh plugin --profile web add dshmarket
 - [lanbaolu/dsh-wechat-bridge](https://github.com/lanbaolu/dsh-wechat-bridge) — 基于 iLink 协议的 DSH 微信双向桥：扫码绑定个人微信后在聊天框直接与本机 DSH Agent 对话（文字/图片/语音转文字/文件），Web 设置面板管理扫码绑定/启停/状态，支持绑定项目会话跨端续聊，agent 可主动 wechat_notify 推送（内置节流），纯 Node 守护进程，Windows/macOS/Linux 三端通用。
 - [Laplace-bit/dsh-bell-notify](https://github.com/Laplace-bit/dsh-bell-notify) — DeepSeek Harness 生命周期提示音：10 个可配置事件，默认只开启三项低打扰提示，可为每个事件更换自定义声音，内置音效不带音频资源。
 - [LapStdy/dsh-dingtalk-notify](https://github.com/LapStdy/dsh-dingtalk-notify) — 钉钉提醒：AI 需要你选择、审批或干完活时推送到钉钉群；有人正看着 DSH 页面就不发，没人看才提醒。
+- [LaynePeng/dsh-email](https://github.com/LaynePeng/dsh-email) — 邮件三件套：SMTP（465/587）或 Microsoft Graph 发信、只读收信（列表、带时间范围的关键词搜索、文件夹、读单封）、账号状态与 Hotmail/Outlook 设备码 OAuth2。Graph 失败自动回落 SMTP，SMTP 入口不可用自动换备用主机，发送前可在对话里预览草稿。零运行时依赖；附件只允许工作区文件。
 - [lecheng2018/dsh-qq-hub](https://github.com/lecheng2018/dsh-qq-hub) — 把 QQ 接入 DeepSeek Harness：经 OneBot v11（SnowLuma / NapCat）接私聊与群聊，按会话隔离记忆、按会话分流人格，文本模型收图时由辅助模型转述，多平台链接解析（大视频转群文件，图集以图片或合并转发发出），并提供网页管理面板。改自 aureth-labs/dsh-aurabot-qq，不能与上游同装。
 - [lediemquynh/dsh-ai-question-chime](https://github.com/lediemquynh/dsh-ai-question-chime) — 当 AI 询问澄清性问题时（带问号或调用 ask_user_question）播放提示音。Web Audio API 合成，零音频文件，跨 Windows/macOS/Linux。
 - [LeeeWM/dsh-session-toast](https://github.com/LeeeWM/dsh-session-toast) — DSH 会话每轮结束时在 Windows 11 右下角弹出系统通知；DSH 窗口在前台时自动跳过，避免打扰。
