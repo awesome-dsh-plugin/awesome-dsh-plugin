@@ -3539,6 +3539,7 @@ dsh plugin --profile web add dshmarket
 - [Delthin/dsh-plugins#fast](https://github.com/Delthin/dsh-plugins/tree/main/packages/fast) — 通过模型选择器或 `/fast` 命令在会话中按需切换 Standard 与 Fast 档位，在开启 Fast 时为符合配置的 Responses 请求附带 `priority` 档位并转发至目标端点。交互会话支持随时切换，团队角色则在启动时锁定所用档位；启用 Fast 且完成前置配置与上游接口支持时请求即按 `priority` 档位发送，实际响应速度与计费规则由上游服务商决定。需要先填齐 provider、源地址和目标地址；之后由本地回环代理把匹配的请求连同授权头一起转发到目标地址。
 - [dev-bravelo/dsh-hf-spaces](https://github.com/dev-bravelo/dsh-hf-spaces) — 将你自己的 Hugging Face GPU Space 中的模型加入模型选择器，发送消息时启动该 Space，显示启动进度，并在空闲或达到时限时将其暂停。需要 Hugging Face 账号、一个提供 OpenAI 兼容 API 的 GPU Space、在 DSH 凭据库中以 HF_TOKEN 保存的 Hugging Face token，以及 GPU 硬件所需的付费计划；GPU 机时由 Hugging Face 计费。
 - [dev-cmde/dsh-routerai-prices](https://github.com/dev-cmde/dsh-routerai-prices) — 列出 profile 里各模型的 RouterAI 提示、补全和缓存读取价格（每百万 token），并高亮当前在用的那个。需要配置键为 routerai 的模型 provider；缺了表格不显示数据。
+- [devhang/dsh-llm-sampling-params](https://github.com/devhang/dsh-llm-sampling-params) — 把按模型的採樣參數注入發往 OpenAI 相容閘道的 chat-completions 請求：在 transport 層包裹 fetch，用請求 body 的 model 別名查詢設定好的 models 表，對網址含 /v1/chat/completions 的請求設定 temperature、top_p、top_k、min_p、repeat_penalty、presence_penalty 與 frequency_penalty，並額外送 repetition_penalty 給 SGLang 與 vLLM。
 - [DeZhou123/dsh-model-orchestrator](https://github.com/DeZhou123/dsh-model-orchestrator) — 两级模型调度：先在模型层选最优模型组，再在该模型的渠道层选最佳渠道；失败时先换同模型的其它渠道，整个模型不可用才换模型。偏好模式把单个模型锁在它的各条渠道上，输入框下方的状态条实时显示当前模型、渠道健康与今日 token 用量，并可从测速/智力报告导入路由先验；另提供 model_orchestrator 工具与 /route 命令。
 - [DHLlib/online_model_discovery](https://github.com/DHLlib/online_model_discovery) — 为第三方 pi-ai 提供商提供在线模型列表发现与逐模型思考强度编辑。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [dingminhua/dsh-connect-qoder](https://github.com/dingminhua/dsh-connect-qoder) — 通过 PAT 将 Qoder（通义灵码国内版 / 国际版）模型接入 DSH，支持按区域的多账号池、每日签到、自动换号与只读积分展示。
@@ -4694,6 +4695,7 @@ dsh plugin --profile web add dshmarket
 - [rhl88/dsh-session-delete](https://github.com/rhl88/dsh-session-delete) — 在侧边栏会话菜单里二次确认后删除会话：移除会话日志目录、投影缓存记录与工作区/置顶/归档记账；所有注册表调用带超时保护，工作区注册表卡住也能完成删除。
 - [Rice00/dsh-tree-view](https://github.com/Rice00/dsh-tree-view) — DSH 会话的树形视图：编辑一条旧消息即从那一刻分叉，所有版本住进同一棵树、侧栏始终只有一条，分支可以改名，也可以把某个分支提升为独立会话。
 - [Ricketts-Guo/dsh-off-peak-message#dsh-offpeak-send](https://github.com/Ricketts-Guo/dsh-off-peak-message/tree/main/dsh-offpeak-send) — 谷时发送调度器：开启谷时模式后输入框消息排队至 DeepSeek 谷时窗口（半价）自动注入会话并得到回复。原生外观输入条、快捷键（Enter 入队 / ⌘+Enter 立即发送 / Esc 退出）、按会话记忆的开关，重启不丢。
+- [RickT34/dsh-super-leader](https://github.com/RickT34/dsh-super-leader) — Leader Agent 预设：澄清需求，将任务派发到工作区和会话，并汇总下属回报。
 - [robbywang25/dsh-codex-pins](https://github.com/robbywang25/dsh-codex-pins) — 把 DeepSeek Harness 侧边栏分成可独立滚动的置顶栏和最近栏，置顶过的会话不再出现在最近列表里。
 - [romantic123fly/dsh-session-folders](https://github.com/romantic123fly/dsh-session-folders) — 为工作区里的每个新对话在对应目录下创建以对话标题命名的文件夹，把该对话的工作目录切到其中；侧边栏会话菜单新增删除入口，文件夹内仍有文件时会先询问是否一并删除。它与 DieJob/dsh-session-folders 使用同一个 npm 包名、功能相近，两者只启用一个；它的 HTTP 路由没有 DSH 的访问检查。
 - [romany-saad/dsh-plugins#dsh-threads](https://github.com/romany-saad/dsh-plugins/tree/main/packages/dsh-threads) — 针对一句话提问，不打断主对话：在 Web 对话中选中一段文字发表评论，会话自己的模型在旁边的小线程里作答，主对话不受影响。回复者可以读取会话、工作目录，开启后也可联网，但不做任何修改。被评论的段落保持高亮，徽标提示未读回复；需要 Agent 动手时，「发送到对话」把线程交给它。
@@ -7645,6 +7647,7 @@ dsh plugin --profile web add dshmarket
 - [wangzhanchao883/dsh-hold-to-talk](https://github.com/wangzhanchao883/dsh-hold-to-talk) — 输入框上的单手、免键盘输入：鼠标在输入框按住、说话、松手，文字直接进草稿；上滑取消，不留半句。不用去瞄麦克风按钮，也不用记快捷键，手始终不用离开输入区——另一只手正忙的时候，这一点才是关键。识别完全在本机完成（SenseVoice + sherpa-onnx），无需 API key，音频不出本机。
 - [Watchcats211/dsh-podwave](https://github.com/Watchcats211/dsh-podwave) — 本地优先的播客播放器与转写插件：播放磁盘音频，本地转写、双语字幕与 SRT/Markdown 导出。
 - [WayneYu430/dsh-voice-agent#voice-app](https://github.com/WayneYu430/dsh-voice-agent/tree/master/packages/voice-app) — dsh 的对话式语音前端 Agent：通过 ByteDance Duplex 自然对话，把语音请求委派给后台任务，并用语音回报异步结果。
+- [whiplashf/dsh-voice-hotkey](https://github.com/whiplashf/dsh-voice-hotkey) — 官方「语音输入」的按键遥控：热键（默认 Alt+V）开关它的录音，短按是开关、按住 0.5 秒松手即停；录音中自带的能量 VAD 在静音 N 秒（0.5–10 秒可调）后自动结束；开录前把光标放回输入框末尾，所以转写结果落在那里、回车即可发送。另有可选的「说完自动发送」、「聚焦输入框」热键、输入框工具条里的识别服务切换器，两个热键都能重录或清空。录音、转写、写回仍由官方插件完成，音频只发到你自己的 DSH 服务器；无运行时依赖。
 - [WizisCool/dsh-ears](https://github.com/WizisCool/dsh-ears) — 面向 DeepSeek Harness (dsh) 的语音输入插件：输入框的麦克风按钮把语音转成草稿文本，支持多种语音识别后端，可选经 dsh 自有 LLM 路由润色，并带原生设置页。
 - [wuyou0423/dsh-space-ptt](https://github.com/wuyou0423/dsh-space-ptt) — 按住空格录音、松手自动识别并发送，不用先点输入框。按 Esc 可取消，切换窗口自动取消。需先启用官方「语音输入」Bundle（`@deepseek-ai/dsh-experimental-voice-input-bundle`）并下载好语音模型，否则插件不接管空格。
 - [wwweljf/dsh-plugins#dsh-ding-sound](https://github.com/wwweljf/dsh-plugins/tree/master/plugins/dsh-ding-sound) — DSH 对话结束提示音：内置网络热梗原声（你干嘛哎呦、鸡你太美、神鹰哥等），设置面板可试听/切换/随机，支持自定义音频目录。
@@ -11136,6 +11139,7 @@ dsh plugin --profile web add dshmarket
 - [Nanki-nn/dsh-answer-pet](https://github.com/Nanki-nn/dsh-answer-pet) — 可扩展回答状态宠物，内置蓝鲸、橘猫和银渐层猫主题；按会话实时展示回答进度、模型动作与工具调用轨迹、token、输出速率与耗时，并支持多会话状态卡片展开和收起。
 - [NattoCB/dsh-plugin-petdex-market](https://github.com/NattoCB/dsh-plugin-petdex-market) — 在设置中浏览 petdex.dev 宠物市集，并运行一只响应 agent 活动的 macOS 悬浮桌面宠物。
 - [Nekomeow114/dsh-tieba-dive](https://github.com/Nekomeow114/dsh-tieba-dive) — DSH 刷贴吧插件：读帖、写日报、签到，并从高赞回复里按吧建立风格库；回帖与楼中楼默认关闭，受每轮/每日限额。另带只读 MCP stdio server，支持 MCP 的客户端可尝试拉起；未逐客户端实测。
+- [Night-maze/dsh-desktop-pet-naiwa](https://github.com/Night-maze/dsh-desktop-pet-naiwa) — DSH 桌宠（Windows）：Cordis Host 插件通过带鉴权的回环通道驱动一个透明置顶的 WPF 子进程，把 turn、step、tool 事件投影成进度条与中文工具名，播放完成与失败音效，显示当日 Token 合计（按公开价格估算）与真实钱包余额，并支持加权点击互动、长按拖拽与贴边半隐藏、把文件拖到它身上放进回收站；侧边栏入口与设置面板可调缩放、音量、素材与阈值。仅 Windows，费用为估算值。
 - [nonefora11/dsh-genshin](https://github.com/nonefora11/dsh-genshin) — DSH 启动后自动打开《原神》官网并下载官方安装器。
 - [NoodleStormno/dsh-plugin-tic80](https://github.com/NoodleStormno/dsh-plugin-tic80) — DeepSeek Harness 的 TIC-80 虚拟游戏机插件：三栏嵌入式 Web 播放器、14 个 Agent 工具、实时热重载与原生 CLI 导出。
 - [novick1212/dsh-physics-lab](https://github.com/novick1212/dsh-physics-lab) — DSH 侧栏里的高中物理动态仿真实验室：24 个可调参数的互动模型（力学 / 电磁 / 光学 / 热学），按高一高二高三分组；每个模型配知识点讲解与跟随动画的分步解说、出题判分，其中 4 个电磁学模型支持拖动旋转的 3D 视角。纯客户端，解析式本地计算，不调模型、不联网、不上报数据。
