@@ -3470,7 +3470,7 @@ dsh plugin --profile web add dshmarket
 - [2239058652/dsh-loomy-connect](https://github.com/2239058652/dsh-loomy-connect) — 把讯飞 Loomy 桌面端内置的模型注册为 DSH 的 `loomy` 供应商，读取该应用的本地登录态而不使用 API Key。是 gdrpzym/dsh-loomy-connect 适配 DSH 0.2.1 的派生版本，新增逐模型启用/禁用开关。需本机安装并登录讯飞 Loomy 桌面端；与 gdrpzym/dsh-loomy-connect 注册同一个 `loomy` 供应商，不能同装。
 - [2404723600/dsh-router-loomy](https://github.com/2404723600/dsh-router-loomy) — 把讯飞 Loomy 云端通道作为 OpenAI 兼容供应商接入 dsh-router，提供模型列表与流式对话补全。
 - [2861292267/DSH-Official-WorkBuddy-Credit-Proxy](https://github.com/2861292267/DSH-Official-WorkBuddy-Credit-Proxy) — 把本机已登录的 WorkBuddy 账号汇成一个自动故障转移的模型池，同一池子对外提供 OpenAI Chat、OpenAI Responses 与 Anthropic Messages 三种协议，并支持模型别名、用量统计与积分自动化。
-- [43aquarius/dsh-auto-continue](https://github.com/43aquarius/dsh-auto-continue) — 模型请求失败时，按用户配置的模型链切到下一条可用的备选模型，并自动续接被打断的任务。
+- [43aquarius/dsh-auto-continue](https://github.com/43aquarius/dsh-auto-continue) — 模型请求失败时，按用户配置的模型链切到下一条可用的备选模型，并自动续接被打断的任务。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [474885697-alt/dsh-kit#dsh-kit-ai-gateway](https://github.com/474885697-alt/dsh-kit/tree/main/plugins/dsh-kit-ai-gateway) — 本机 AI 密钥池：密钥只存一处，通过仅限本机的接口按用量轮询借出，统计调用次数但不转发请求。
 - [643048695/dsh-auto-retry](https://github.com/643048695/dsh-auto-retry) — 模型请求失败自动重试：拦截每一次请求错误，按 2/5/10/20 秒的阶梯退避后重放同一个 step，中转站抖动与限流不再中断整轮对话。
 - [643048695/dsh-subagent-role-router](https://github.com/643048695/dsh-subagent-role-router) — 基于 dingminhua/dsh-subagent-default-model 的衍生作品（不要与上游同装）：按角色为子代理派发选路由，带候补池、跨供应商故障转移与 fork 活跃窗口切片；标题栏显示正在运行的子代理及其时长与 token；支持运行中与批量换模型，并给模型提供可调用的路由工具。子代理页另有上下文/用量统计条（上下文占用、输出速度、缓存命中、分桶 token），模型菜单只列该页白名单——选了名单外的模型会被替换成允许的模型，而不是照样跑起来。
