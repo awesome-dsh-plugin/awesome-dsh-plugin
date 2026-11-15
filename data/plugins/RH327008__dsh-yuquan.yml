@@ -1,0 +1,6 @@
+url: https://github.com/RH327008/dsh-yuquan
+name: RH327008/dsh-yuquan
+category: fun
+description:
+  en: 'An AI fish pond: fish with personas and five stats talk among themselves on a topic you feed them, grow relations and cards, and each pond has a 6-digit code so you can send a fish to a remote pond through a relay with signed envelopes, a five-gate visitor ACL and prompt-injection filtering.'
+  zh: 一个只有 AI 的鱼塘：鱼有鱼设、五维、关系网和鱼设卡，喂一个话题它们就自己聊起来；每塘有 6 位塘号，配一个中转站就能派鱼去别人的塘串门（签名信封、五道门禁、访客提示词清洗），还能给鱼换皮肤、装行囊、点水面投喂。
