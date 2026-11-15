@@ -1,0 +1,7 @@
+url: https://github.com/yitian951012/dsh-project-dev-flow
+name: yitian951012/dsh-project-dev-flow
+category: workflow
+description:
+  en: 'Project-development workflow preset for DeepSeek Harness: it maps the target repository to its own commands and docs, then routes intake, design, implementation, verification, delivery and retrospective through five skills, including document governance; agents draft evidence and humans sign off.'
+  zh: 提供「项目开发流程」模式与五个技能：先适配目标仓库自己的命令与文档，再按需求、设计、实现、验证、交付、复盘推进，并含文档治理；结论带证据，签认留给人类。
+tarball: https://github.com/yitian951012/dsh-project-dev-flow/releases/download/v2.0.1/local-dsh-project-dev-flow-2.0.1.tgz
