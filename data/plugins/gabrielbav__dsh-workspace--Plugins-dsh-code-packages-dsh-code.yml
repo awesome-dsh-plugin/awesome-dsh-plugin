@@ -1,5 +1,5 @@
-url: https://github.com/gabrielbav/dsh-code
-name: gabrielbav/dsh-code
+url: https://github.com/gabrielbav/dsh-workspace/tree/main/Plugins/dsh-code/packages/dsh-code
+name: gabrielbav/dsh-workspace#dsh-code
 category: dev
 description:
   en: 'Codex cloud–style coding sessions you host yourself: pick a GitHub repo and branch, and each session gets its own checkout and branch, a live preview of the app it builds and an Environment tab, inside a gVisor sandbox (non-root, no capabilities, no Docker socket) whose traffic passes an egress allowlist you extend host by host; your GitHub token never enters it. Runs on your computer or your own VM over SSH.'
