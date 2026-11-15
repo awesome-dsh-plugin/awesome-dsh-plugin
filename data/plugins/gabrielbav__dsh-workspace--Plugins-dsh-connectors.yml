@@ -1,5 +1,5 @@
-url: https://github.com/gabrielbav/dsh-connectors
-name: gabrielbav/dsh-connectors
+url: https://github.com/gabrielbav/dsh-workspace/tree/main/Plugins/dsh-connectors
+name: gabrielbav/dsh-workspace#dsh-connectors
 category: tools
 description:
   en: 'One Settings page that connects Linear, Jira & Confluence, GitHub, GitLab, Trello, Granola and Azure DevOps to every DSH session, including chats, subagents and automations, with OAuth or a token; add any remote MCP server by URL. Tokens stay in the DSH credential store, and OAuth tokens renew themselves.'
