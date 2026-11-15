@@ -1,0 +1,6 @@
+url: https://github.com/seally-web/dsh-r-runner
+name: seally-web/dsh-r-runner
+category: dev
+description:
+  en: "R in the sidebar: an RStudio-shaped workbench backed by a persistent R session over a loopback driver (6-9 s cold boot, then 12-84 ms per run). R syntax highlighting with a multi-buffer editor, file tree with extra folder mounts, environment pane you can edit in place, plot gallery with a floating viewer (zoom, resize, open original), five bottom tabs (console with prompt, persistent history, ?topic help, sortable data viewer, package manager with install.packages), completion / diagnostics / go-to-definition, .Rmd chunk runs, Rmd, Quarto and Shiny previews, and an agent-facing r_run tool. Requires a local R installation."
+  zh: "侧栏里的 R IDE：RStudio 形状的工作台，背后是常驻 R 会话（经 loopback 驱动，冷启动约 6–9 秒，之后单次运行 12–84 毫秒）。带 R 语法高亮的多标签编辑器、可挂载额外文件夹的文件树、可就地编辑的环境面板、带浮窗查看器（缩放/改尺寸/打开原图）的图形画廊、底部五个标签页（带提示符的控制台、持久历史、?topic 帮助、可排序数据查看器、含 install.packages 的包管理器）、补全 / 诊断 / 跳转定义、.Rmd 按 chunk 运行，以及 Rmd、Quarto、Shiny 预览，并给 agent 提供 r_run 工具。需要本机安装 R。"
