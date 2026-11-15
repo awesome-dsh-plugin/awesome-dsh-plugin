@@ -1,0 +1,7 @@
+url: https://github.com/yurin7/dsh-turn-alert
+name: yurin7/dsh-turn-alert
+category: notify
+description:
+  en: "Flash the Windows taskbar and raise a system notification when a turn finishes, with live switches in Settings."
+  zh: "一轮对话结束时闪烁 Windows 任务栏图标并弹出系统通知，开关在设置里实时可改。"
+tarball: https://github.com/yurin7/dsh-turn-alert/releases/download/v1.3.0/dsh-turn-alert-1.3.0.tgz
