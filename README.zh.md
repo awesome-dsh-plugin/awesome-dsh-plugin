@@ -486,6 +486,7 @@ dsh plugin --profile web add dshmarket
 - [caidows/dsh-codex-model-picker](https://github.com/caidows/dsh-codex-model-picker) — Codex 风格的输入框模型选择器：卡片显示当前模型，底部用可拖动的滑杆设置推理强度，每个档位都对应模型真实声明的推理等级（提供商支持时有 Off 档）。滑杆只停在整档上，拖动过程中推理强度文字即时更新；模型与档位的切换仍走会话的模型目录，与输入框其他部分保持同步。
 - [caimc21069065-prog/dsh-my-music](https://github.com/caimc21069065-prog/dsh-my-music) — 整页式网易云音乐播放器：每日推荐、按分类浏览歌单广场、排行榜、新碟上架、搜索、歌单/专辑/歌手页、扫码登录、逐行歌词、队列与下载，并提供搜索、歌曲直链、歌词、歌单曲目四个 agent 工具。
 - [caisiyang123/dsh-tick-rail](https://github.com/caisiyang123/dsh-tick-rail) — 会话刻度线导航条：你发的每条消息一格刻度，点亮峰值随鼠标移动、两侧均匀衰减，悬停预览消息摘要，点击或键盘跳转到对应位置。
+- [CalmAndFocused/dsh-prompt-template](https://github.com/CalmAndFocused/dsh-prompt-template) — 在输入框里用三种模式改写提示词草稿（系统提示词、用户提示词、迭代改进），{{变量}} 占位符逐字保留，同一操作也作为 optimize_prompt agent 工具提供。
 - [Canary-Builds/dsh-mobile-ui](https://github.com/Canary-Builds/dsh-mobile-ui) — 为 DeepSeek Harness 现有 Web 界面加上触屏友好的导航、布局微调与独立 PWA 样式。
 - [CAOGGL/dsh-port-token](https://github.com/CAOGGL/dsh-port-token) — 在 dsh Web 界面右下角放一个钥匙徽标，点开显示本实例的监听端口和 dsh web 启动时打印的远程访问令牌，每项都可一键复制；钥匙图标旋转成叉号，再点一次或点旁边空白即可收起。
 - [captainyufei/dsh-dock](https://github.com/captainyufei/dsh-dock) — 为 DeepSeek Harness 提供常驻可自定义的左侧 Dock、跨工作区置顶会话、先写草稿的首页、全局搜索、完成通知收件箱，以及右侧文件面板视频预览。
@@ -2919,7 +2920,7 @@ dsh plugin --profile web add dshmarket
 - [wjingshan/dsh-cost-gauge](https://github.com/wjingshan/dsh-cost-gauge) — 峰谷计费表盘：DSH Web 浮动窗按 DeepSeek 官方峰谷（高峰/空闲）费率对会话花费（token 费用）实时计费，指针配费率切换倒计时，余额环带低余额报警，支持拖拽缩放与最小化状态灯。
 - [wjw1-Evan/dsh-provider-usage](https://github.com/wjw1-Evan/dsh-provider-usage) — 一个可折叠的侧边栏组件，纵向堆叠 OpenCode GO、Command Code 与 GLM Code Plan 的套餐窗口，含重置倒计时、充值余额、插件设置页和 /provider-usage 命令。
 - [wkscc310/dsh-client-ui-cpa-quota](https://github.com/wkscc310/dsh-client-ui-cpa-quota) — 模型选择器旁的 CLIProxyAPI 额度圆环，设置面板仿 CPA 管理页列出全部账号的额度窗口、套餐与刷新时间。
-- [wlerry/dsh-spend-trend](https://github.com/wlerry/dsh-spend-trend) — 在侧边栏显示当前峰谷计费档位、切换倒计时、账户余额和近 7 天人民币花费柱状图；谷时开始时用语音提醒你开工。
+- [wlerry/dsh-spend-trend](https://github.com/wlerry/dsh-spend-trend) — 侧边栏实时显示峰谷档位、切换倒计时与提醒、余额与近 7 天花费；余额保护，余额预警，支持一键充值。
 - [woaiCarlos/dsh-minimax-quota](https://github.com/woaiCarlos/dsh-minimax-quota) — 在对话输入框下方显示 MiniMax 编程套餐剩余额度（5 小时窗口与周窗口），点击可查看详情；并把新发布的模型追加到配置的模型列表里。
 - [wojiao42/dsh-token-cost](https://github.com/wojiao42/dsh-token-cost) — 侧栏里实时显示 token 用量与估算费用：当前任务与全部会话合计、这份账目的截至时刻、逐会话时间明细（运行时长/轮步/首token/模型与工具耗时/解码速度），鼠标悬停某个对话还能看到逐轮用量与每轮费用。
 - [woodfood111/dsh-token-live](https://github.com/woodfood111/dsh-token-live) — DeepSeek Harness 输入框下方的实时草稿 token 数、按官方高峰/空闲费率计算的会话花费、上下文占用，以及同样的用量在最贵的另一个模型上会花多少；纯客户端，没有 host 半，不接触凭据。
@@ -3371,6 +3372,7 @@ dsh plugin --profile web add dshmarket
 - [wxj783428795/dsh-plugins#dsh-theme-black-hole](https://github.com/wxj783428795/dsh-plugins/tree/main/dsh-theme-black-hole) — 适用于 DeepSeek Harness Web UI 的可切换 WebGPU 黑洞主题：沿用内置深色配色，仅在新会话页面显示动态背景。
 - [Xian-JL/dsh-Kinich-theme](https://github.com/Xian-JL/dsh-Kinich-theme) — 面向 DeepSeek Harness Web 的 Kinich 与 Ajaw 主题，提供三种视觉风格、会话状态反馈、伙伴交互和可配置的动态环境效果。
 - [Xian-JL/dsh-Xiao-theme](https://github.com/Xian-JL/dsh-Xiao-theme) — 面向 DeepSeek Harness Web 与 Desktop 的魈角色主题，提供明暗配色、可切换立绘、可拖动伙伴、会话状态反馈及可选的官方 DeepSeek 余额展示。
+- [xiaobaga281/dsh-ink-splash](https://github.com/xiaobaga281/dsh-ink-splash) — 水墨开屏动画与配套主题：一条墨锋同时描绘 DeepSeek 字标并显影背景山水，提供夜山、宣纸两套皮肤，字标、运笔与画面三轴可独立选择。
 - [xiaotuchu/dsh-theme-eye-care](https://github.com/xiaotuchu/dsh-theme-eye-care) — 三套可切换的低刺激护眼配色（暖纸、豆绿、暖灰），每套都是完整的别名 token 层，含浅色与深色两副面貌。
 - [xiaozhe7772222/dsh-api-key-pool](https://github.com/xiaozhe7772222/dsh-api-key-pool) — 对话模型 API Key 轮换池：自动检测 settings 中的厂商，每个厂商下多 Key 轮询，401/403/429 自动切换，冷却恢复。
 - [xikan0/dsh-outerwilds-theme](https://github.com/xikan0/dsh-outerwilds-theme) — 以《星际拓荒》为主题，提供静态星空、篝火动效、外观设置和内置 Jost 与思源黑体。
@@ -4146,6 +4148,7 @@ dsh plugin --profile web add dshmarket
 - [290949841-gif/dsh-session-bar](https://github.com/290949841-gif/dsh-session-bar) — 侧栏会话状态条：会话跑起来时整行变成绿色卡片，底部一条带流动小点的进度条按估算时长推进，行首直接显示完成百分比，超时后改显示精确到秒的已用时长；跑完后整行转橙并一直亮着，直到你点开那条对话才熄灭。不用切过去看，瞄一眼侧栏就知道每条会话在干嘛。
 - [2JumpSinA/dsh-context-guard](https://github.com/2JumpSinA/dsh-context-guard) — 长会话越跑越贵，平台到点还会把上下文压掉。这个插件做三件事：在会话标题旁显示当前上下文占了多少，鼠标停上去能看到这个数是怎么来的；过 45% 时往工作目录的 HANDOVER.md 写一份交接草稿，记下改过哪些文件、花了多少钱、最近几轮在聊什么；到 60% 提醒你一次该收尾了。平台压缩发生时，它把压缩前的数字记一行，事后还查得到。不调用模型，也不改动对话内容。它不阻止压缩，拿不回已经被压掉的部分。
 - [3403473060/dsh-inline-images](https://github.com/3403473060/dsh-inline-images) — 对话内联图片：LLM 回复中输出的本地图片路径在消息正文直接渲染为图片（9 种格式、点击放大灯箱、可调尺寸）。
+- [3418244301q-star/dsh-session-log-upload](https://github.com/3418244301q-star/dsh-session-log-upload) — 把非官方模型渠道（ollama-local、pi-ai、OpenAI 兼容 adapter）的 DSH 会话日志补传到 DeepSeek，复用内置上传器的水位事件，两条路径不会重发同一条记录；可设为纯手动，不点按钮就不发任何请求。
 - [349840432m-dev/dsh-session-dashboard](https://github.com/349840432m-dev/dsh-session-dashboard) — 会话仪表盘，只读本机 ~/.dsh：侧栏总览全部会话（Token、估算成本、轮次、工具调用、模型构成、每日活动、可搜索可排序的会话表），并在会话内提供「仪表盘」视图，逐轮展示当前对话的 Token、成本、耗时与工具。零依赖、不联网。
 - [379385796-sys/dsh-ai-exporter](https://github.com/379385796-sys/dsh-ai-exporter) — 通过 Windows 原生保存窗口，将当前或历史 DSH 会话及选定轮次导出为 TXT、Markdown 和可搜索 PDF。
 - [439436269-ctrl/dsh-session-path](https://github.com/439436269-ctrl/dsh-session-path) — 复制会话日志路径（或可直接粘贴的接续块），并把多帧 zstd 会话日志转成可读文件，供另一个会话读取接续。
