@@ -1,0 +1,6 @@
+url: https://github.com/BeckChiang/dsh-tool-budget
+name: BeckChiang/dsh-tool-budget
+category: tools
+description:
+  en: Session-level tool budget for DeepSeek Harness — apply plans, hide tools in three tiers, and preview the cache-repay cost of the switch.
+  zh: 会话级工具预算：按方案开关模型可见的工具、三种级别、切换前缀缓存的成本估算，以及基于本会话调用情况的调整建议。
