@@ -1,0 +1,6 @@
+url: https://github.com/Aily-DSH/dsh-superagent-manager
+name: Aily-DSH/dsh-superagent-manager
+category: workflow
+description:
+  en: 'Manages several dsh-superagent projects from one DSH client: creates the GitHub repo, clones it, registers a workspace, runs each instance as its own dsh web process, and proxies its UI into a tabbed panel.'
+  zh: '在同一个 DSH 客户端里管理多个 dsh-superagent 项目：建仓、克隆、注册工作区，每个实例以独立的 dsh web 进程运行，并在标签页面板里代理其界面。'
