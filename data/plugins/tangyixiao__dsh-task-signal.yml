@@ -1,0 +1,8 @@
+url: https://github.com/tangyixiao/dsh-task-signal
+name: tangyixiao/dsh-task-signal
+category: notify
+description:
+  en: 'Task-completion sounds with Codex/ZCode styles, six synthesized tones and custom WAV; per-event controls, host-persisted settings, Windows native background playback, browser playback, quiet hours and subagent filtering.'
+  zh: '任务完成提示音：可选 Codex/ZCode 风格、六种合成音和自定义 WAV，逐事件开关，宿主保存设置，支持 Windows 系统后台播放、页面播放、免打扰与子代理过滤。'
+tarball: https://github.com/tangyixiao/dsh-task-signal/releases/download/v0.1.0/dsh-task-signal-0.1.0.tgz
+
