@@ -1,0 +1,7 @@
+url: https://github.com/Clusm/dsh-trading-workbench
+name: Clusm/dsh-trading-workbench
+category: tools
+description:
+  en: 'Trading workbench for DeepSeek Harness: an AI decision chain with a per-day round archive, Demo execution and risk views, backed by a local Python trading service that bootstraps itself on first run.'
+  zh: '面向 DeepSeek Harness 的交易工作台：AI 决策链与按日归档的轮次历史、Demo 执行与风控视图，数据来自本机 Python 交易服务，首次运行可一键初始化环境。'
+icon: https://raw.githubusercontent.com/Clusm/dsh-trading-workbench/main/assets/icon-180.png
