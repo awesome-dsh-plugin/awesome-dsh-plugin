@@ -1,0 +1,1 @@
+url: https://github.com/moldkey/dsh-calc-datediff name: moldkey/dsh-calc-datediff category: calc description:   en: 'DSH plugin dsh-calc-datediff'   zh: '算两个日期相差多少天/周/月/年，也可算「从今天起 N 天后是哪天」。纯本地计算，不联网。'

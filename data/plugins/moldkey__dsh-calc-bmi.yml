@@ -1,0 +1,1 @@
+url: https://github.com/moldkey/dsh-calc-bmi name: moldkey/dsh-calc-bmi category: calc description:   en: 'DSH plugin dsh-calc-bmi'   zh: '算身体质量指数，给出中国/WHO 两套标准的分级。附带标准体重区间。纯本地计算，不联网。'

@@ -1,0 +1,1 @@
+url: https://github.com/moldkey/dsh-calc-base name: moldkey/dsh-calc-base category: calc description:   en: 'DSH plugin dsh-calc-base'   zh: '2/8/10/16 进制互转，支持任意进制（2-36）。看内存、调协议、解编码时用。纯本地计算，不联网。'
