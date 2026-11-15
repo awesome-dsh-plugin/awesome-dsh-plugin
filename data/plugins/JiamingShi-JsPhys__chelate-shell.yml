@@ -1,0 +1,6 @@
+url: https://github.com/JiamingShi-JsPhys/chelate-shell
+name: JiamingShi-JsPhys/chelate-shell
+category: workflow
+description:
+  en: 'Nineteen research and engineering skills run as one gated pipeline: each skill occupies a fixed stage, and a gate that fails blocks the skills downstream of it instead of passing its output along. The gates are falsifiable checks rather than flow control — atom conservation for chemical equations, CAS and unit validation for formulas, DOI resolution against Crossref, leakage detection on ml datasets, element checks on OBJ meshes — so a failed run names what failed instead of producing a plausible document. The four tools it registers drive the CLI: list the registry, run one skill, run the pipeline (with a dry run), and audit results/ for files no promotion accounts for. Requires Python 3.10+ on the host.'
+  zh: '19 个科研与工程技能按固定阶段串成一条门控流水线：每个技能占一个阶段，某个门禁失败会阻断它下游的技能，而不是把结果继续往下传。门禁是可证伪的检查而非流程控制——化学方程式的原子守恒、公式的 CAS 与量纲校验、DOI 走 Crossref 核验、ML 数据集的泄漏检测、OBJ 网格的退化面检查——所以失败的运行会说清失败在哪，而不是产出一份看着像样的文档。注册的四个工具直接驱动 CLI：列出技能表、跑单个技能、跑流水线（可 dry run）、审 results/ 里没有 promotion 记录的文件。宿主需装 Python 3.10+。'
