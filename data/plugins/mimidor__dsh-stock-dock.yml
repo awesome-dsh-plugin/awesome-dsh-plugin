@@ -1,0 +1,6 @@
+url: https://github.com/mimidor/dsh-stock-dock
+name: mimidor/dsh-stock-dock
+category: ui
+description:
+  en: 'Configurable A-share, Hong Kong and US quote strip under the DSH composer: mini K-line per card, intraday, 5-minute, daily, weekly and monthly charts, five-level order book, A-share turnover and limit prices, session-aware polling and a Sina fallback source. Quotes come from public Tencent and Eastmoney endpoints; its HTTP routes have no DSH access check.'
+  zh: 'DSH 输入框下方的 A 股 / 港股 / 美股自选股行情条：卡片带迷你 K 线，点开有分时、5 分钟、日/周/月 K 线、五档盘口、A 股换手率与涨跌停价，按交易时段自动调节刷新，腾讯不可用时切新浪。行情来自腾讯和东方财富的公开接口；它的 HTTP 路由没有 DSH 的访问检查。'

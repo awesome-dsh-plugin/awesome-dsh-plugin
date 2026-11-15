@@ -1,0 +1,8 @@
+url: https://github.com/hongcha-dsh/dsh-model-speedtest
+name: hongcha-dsh/dsh-model-speedtest
+category: usage
+description:
+  en: 'Runs N serial speedtest rounds in one unchanged environment from the plugin detail page, then reports per-round tables with median, min, max and MAD, and keeps each batch as an archive that can be renamed or deleted.'
+  zh: '在插件详情页按同一环境串行跑 N 轮测速，输出逐轮表与中位数/最小/最大/MAD，并把每个批次留档（可重命名、删除）。'
+icon: https://raw.githubusercontent.com/hongcha-dsh/dsh-model-speedtest/main/assets/icon-180.png
+tarball: https://github.com/hongcha-dsh/dsh-model-speedtest/releases/latest/download/dsh-model-speedtest.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/ZzimaR/dsh-yanfield
+name: ZzimaR/dsh-yanfield
+category: ui
+description:
+  en: 'A long-form fiction writing desk inside DeepSeek Harness: a shelf of books, a three-column editor (chapter tree, prose, AI assistant), outlines, character/world/foreshadowing notes, story archives, and an AI assistant whose prose and note edits are reviewed before they are written. Interface and AI prompts are bilingual (Chinese and English), manuscripts stay local in SQLite, and the model uses the DeepSeek service already configured in Harness.'
+  zh: 'DeepSeek Harness 里的长篇小说写作台：书架、三栏编辑器（目录、正文、AI 助手）、大纲、角色 / 世界观 / 伏笔资料、故事档案，以及会先给出可审阅的正文与资料改动、确认后才写入的 AI 助手。界面与 AI 提示词支持中英双语，书稿保存在本地 SQLite，模型复用 Harness 中已配置的 DeepSeek 服务。'
+icon: https://raw.githubusercontent.com/ZzimaR/dsh-yanfield/main/docs/screenshots/market-icon.png

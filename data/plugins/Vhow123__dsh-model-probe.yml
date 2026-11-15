@@ -2,7 +2,7 @@ url: https://github.com/Vhow123/dsh-model-probe
 name: Vhow123/dsh-model-probe
 category: model
 description:
-  en: Test configured DSH models with connectivity, behavioral fingerprint, animated or custom SVG probes, optional quick SVG limits, concurrency controls, latency and token metrics, and sanitized previews.
-  zh: 检测 DSH 已配置模型的连接、行为指纹及动态或自定义 SVG 生成能力，支持 SVG 快速模式限制、并发控制、耗时与 Token 统计及安全清洗的预览。
+  en: Test configured DSH models with connectivity, behavioral fingerprint and a local 18-item weighted intelligence battery scoring 0-100 with a tier and per-question evidence, plus animated or custom SVG probes, quick SVG limits, concurrency controls, and latency and token metrics.
+  zh: 检测 DSH 已配置模型的连接、行为指纹，并用本地 18 题加权基准给出 0–100 智力值、档位与逐题证据；另支持动态或自定义 SVG 生成、SVG 快速模式限制、并发控制及耗时与 Token 统计。
 icon: https://raw.githubusercontent.com/Vhow123/dsh-model-probe/main/assets/icon-180.png
 tarball: https://github.com/Vhow123/dsh-model-probe/releases/latest/download/dsh-model-probe.tgz

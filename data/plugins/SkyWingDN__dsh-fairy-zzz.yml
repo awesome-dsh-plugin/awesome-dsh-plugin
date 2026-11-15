@@ -2,6 +2,6 @@ url: https://github.com/SkyWingDN/dsh-fairy-zzz
 name: SkyWingDN/dsh-fairy-zzz
 category: theme
 description:
-  en: 'Fork of AssassinVIX/fairy-zzz-plugin with its own npm package (@sky_wing_dn/dsh-fairy-zzz): repaints the DSH Web UI as a Wire-Net Terminal host skin, adds an always-on fee dock with balance, today spend and the peak/off-peak countdown, and lets an npm install update itself in one click. Keeps the H.D.D boot animation and voiced greeting, the docked eye badge with usage bubble, and optional local GPT-SoVITS voice; titles use a bundled Anton font instead of a system Impact dependency. Install this fork or the upstream package, not both.'
-  zh: 'AssassinVIX/fairy-zzz-plugin 的分支，使用独立 npm 包 @sky_wing_dn/dsh-fairy-zzz：把 DSH Web 界面重绘为 Wire-Net Terminal 宿主皮肤，新增常驻电费坞（余额、今日花费、峰谷倒计时），npm 安装后可一键自更新；保留 H.D.D 开机动画与语音问候、可停靠眼徽与用量气泡、可选本地 GPT-SoVITS 朗读，标题使用随包内置的 Anton 字体，不再依赖系统 Impact。本分支与上游包二选一安装，不要同时装。'
+  en: 'Started from AssassinVIX/fairy-zzz-plugin. The eye badge artwork and motion geometry come from Chengzhibense/Fairy-DSH. This plugin builds on that base with further changes and development, and delivers major performance optimizations. It repaints the DSH Web UI, adds an always-on fee dock, and supports one-click self-update after npm installation. It retains the H.D.D boot animation and voiced greeting, the dockable eye badge and usage bubble, optional local GPT-SoVITS narration, and titles using the bundled Anton font, among other features.'
+  zh: '起点是 AssassinVIX/fairy-zzz-plugin。眼徽的美术与动效几何来自 Chengzhibense/Fairy-DSH。本插件在此基础上进行改动和开发。对性能方面做出了极大的优化。重绘DSH Web 界面，新增常驻电费坞，npm 安装后可一键自更新，保留 H.D.D 开机动画与语音问候、可停靠眼徽与用量气泡、可选本地 GPT-SoVITS 朗读，标题使用随包内置的 Anton 字体等等'
 icon: https://raw.githubusercontent.com/SkyWingDN/dsh-fairy-zzz/main/assets/icon-180.png

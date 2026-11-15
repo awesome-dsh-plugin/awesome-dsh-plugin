@@ -1,0 +1,8 @@
+url: https://github.com/gluztm/DSHGuard/tree/main/packages/dsh-guard
+name: gluztm/DSHGuard#dsh-guard
+category: tools
+description:
+  en: "Read-only Web and Desktop profile health sidebar, masked credential readiness audit, and snapshot inspector for DSHGuard."
+  zh: "DSH 守护壳官方只读伴生插件，提供 Web 侧边栏双轨配置体检、凭据脱敏对账、变更前快照查看与桌面守护壳联动。"
+icon: https://raw.githubusercontent.com/gluztm/DSHGuard/main/packages/dsh-guard/assets/icon.png
+tarball: https://github.com/gluztm/DSHGuard/releases/download/2.4.0/dsh-guard-2.4.0.tgz

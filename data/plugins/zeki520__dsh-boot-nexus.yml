@@ -1,0 +1,8 @@
+url: https://github.com/zeki520/dsh-boot-nexus
+name: zeki520/dsh-boot-nexus
+category: ui
+tarball: https://github.com/zeki520/dsh-boot-nexus/releases/download/v0.5.4/dsh-boot-nexus-0.5.4.tgz
+icon: https://raw.githubusercontent.com/zeki520/dsh-boot-nexus/main/assets/icon/icon-256.png
+description:
+  en: 'Combines an intro video, the suite six-act cold start and a screensaver into one boot animation: a single overlay, state machine, clock and config file, with a settings card holding every option. The suite engine, its templates and a full-quality set of intro clips and screensavers (720p–4K originals, ~197 MB) ships inside the package, so a fresh install animates immediately and keeps playing after the original plugins are removed; enable it instead of dsh-boot-suite or dsh-boot-animation, not alongside them.'
+  zh: '把片头视频、suite 六幕冷启动与屏保合进同一个开机动画：一层画面、一个状态机、一个时钟、一份配置，所有选项都在一张设置卡里。suite 引擎、模板与一套原画质片头/屏保素材（720p–4K 原片，约 197 MB）也随包发布，装完第一次开机就有动画，删掉原插件后仍能播放；启用它时不要再同时启用 dsh-boot-suite 或 dsh-boot-animation。'

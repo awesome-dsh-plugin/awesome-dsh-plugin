@@ -1,4 +1,12 @@
 {
+  "https://github.com/Aliboder/dsh-music-panel": [
+    "https://raw.githubusercontent.com/Aliboder/dsh-music-panel/main/docs/screenshots/v2-library-grid.png",
+    "https://raw.githubusercontent.com/Aliboder/dsh-music-panel/main/docs/screenshots/v2-online-recent.png",
+    "https://raw.githubusercontent.com/Aliboder/dsh-music-panel/main/docs/screenshots/v2-now-playing-lyrics.png",
+    "https://raw.githubusercontent.com/Aliboder/dsh-music-panel/main/docs/screenshots/v2-queue-compact.png",
+    "https://raw.githubusercontent.com/Aliboder/dsh-music-panel/main/docs/screenshots/v2-stats.png",
+    "https://raw.githubusercontent.com/Aliboder/dsh-music-panel/main/docs/screenshots/v2-settings.png"
+  ],
   "https://github.com/Lovenndme/dsh-profile-stats": [
     "https://raw.githubusercontent.com/Lovenndme/dsh-profile-stats/main/docs/preview.png"
   ],
@@ -1226,11 +1234,6 @@
     "https://raw.githubusercontent.com/wqy8593521/dsh-model-pro/main/docs/screenshots/models.png",
     "https://raw.githubusercontent.com/wqy8593521/dsh-model-pro/main/docs/screenshots/test.png",
     "https://raw.githubusercontent.com/wqy8593521/dsh-model-pro/main/docs/screenshots/routes.png"
-  ],
-  "https://github.com/Kenerlee/dsh-moments-aieo": [
-    "https://raw.githubusercontent.com/Kenerlee/dsh-moments-aieo/master/assets/screenshot-dashboard.png",
-    "https://raw.githubusercontent.com/Kenerlee/dsh-moments-aieo/master/assets/screenshot-diagnosis-report.png",
-    "https://raw.githubusercontent.com/Kenerlee/dsh-moments-aieo/master/assets/screenshot-dashboard-mobile.png"
   ],
   "https://github.com/FeiZhuNiU-INFJA/dsh-stock-ticker": [
     "https://raw.githubusercontent.com/FeiZhuNiU-INFJA/dsh-stock-ticker/main/assets/screenshot.png"

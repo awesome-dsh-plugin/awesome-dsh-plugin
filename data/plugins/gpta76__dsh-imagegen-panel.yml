@@ -1,0 +1,6 @@
+url: https://github.com/gpta76/dsh-imagegen-panel
+name: gpta76/dsh-imagegen-panel
+category: vision
+description:
+  en: "Image-generation sidebar panel for DeepSeek Harness: works with any OpenAI-compatible image endpoint, supports reference-image edits, and ships presets for character sheets, turnarounds and expressions."
+  zh: "DeepSeek Harness 侧边栏生图面板：兼容任意 OpenAI 图像接口，支持参考图改图，内置角色档案板、三视图与表情特写预设，出图自动存盘。"

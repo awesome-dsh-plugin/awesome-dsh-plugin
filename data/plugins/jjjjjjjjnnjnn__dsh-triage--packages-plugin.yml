@@ -1,0 +1,6 @@
+url: https://github.com/jjjjjjjjnnjnn/dsh-triage/tree/main/packages/plugin
+name: jjjjjjjjnnjnn/dsh-triage#dsh-triage
+category: dev
+description:
+  en: 'Read-only judgment layer for DSH profiles: explains row by row why a plugin was refused admission or silently disappeared, pre-flights a runtime upgrade against the installed set in four buckets (would-be-denied, cannot-tell, improved, likely-fine), and can measure a candidate in an isolated DSH_HOME. Defaults to read-only; the two --apply verbs only write compatibility.json or dsh.profile.bundles, each after a backup, with a journal and a byte-exact --undo.'
+  zh: '只读的 DSH 插件判断层：逐行说明某个插件为什么被准入拒绝或静默失效，升级前对着已装集合预演四类结果（会被拒、判不了、会变好、像没事），并可把候选插件装进隔离的 DSH_HOME 实测。默认只读；两个 --apply 动词只写 compatibility.json 或 dsh.profile.bundles，各自先备份、写 journal、可逐字节 --undo。'

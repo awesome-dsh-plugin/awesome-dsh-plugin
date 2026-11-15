@@ -1,0 +1,7 @@
+url: https://github.com/ruaibeite/dsh-provenance
+name: ruaibeite/dsh-provenance
+category: git
+description:
+  en: "Line-level provenance and a decision ledger for agent edits: which session, model and tool wrote each change, with Markdown/JSON export."
+  zh: "Agent 代码改动的行级溯源与决策账本：哪次会话、哪个模型、哪个工具写了什么；可按工作区/文件浏览并导出 Markdown/JSON。"
+icon: https://raw.githubusercontent.com/ruaibeite/dsh-provenance/main/assets/icon-180.png

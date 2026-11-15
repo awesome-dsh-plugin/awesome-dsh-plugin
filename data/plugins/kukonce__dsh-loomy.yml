@@ -1,7 +1,0 @@
-url: https://github.com/kukonce/dsh-loomy
-name: kukonce/dsh-loomy
-category: model
-icon: https://raw.githubusercontent.com/kukonce/dsh-loomy/main/icon.png
-description:
-  en: 'Unofficial Loomy (iFlytek) model provider: signs in with an SMS code or by adopting the Loomy desktop app session already on the machine, registers one provider route per account from the live per-account catalog, and renews the daily 5000 free credits on startup and at local midnight. Unofficial: the endpoints and the desktop client''s own application key pair were reverse-engineered from the Loomy desktop app, and automated traffic may conflict with Loomy''s account terms. On first start it silently imports the login the desktop app keeps in a plain-text auth-session.json (on Windows it scans every C:\Users\Public\Loomy\*\userData folder and takes the most recently updated session), keeps sessions in $DSH_HOME/dsh-loomy/accounts.json, claims the daily credits at startup and every local midnight, and sends chat requests to loomyad.xunfei.cn.'
-  zh: '非官方 Loomy（讯飞）模型接入插件：用手机验证码登录，或直接复用本机 Loomy 桌面端已有的登录态；按账号实时拉取模型目录并注册独立路由；启动时与本地零点自动续领每日赠送的 5000 积分。非官方：接口和桌面端自带的应用密钥对都是从 Loomy 桌面端逆向得来，自动化流量可能与 Loomy 的账号条款冲突。首次启动会静默导入桌面端以明文保存在 auth-session.json 里的登录（Windows 上会扫描 C:\Users\Public\Loomy\*\userData 下所有目录，取最近更新的会话），会话存在 $DSH_HOME/dsh-loomy/accounts.json，启动时和每个本地零点领取每日积分，对话请求发往 loomyad.xunfei.cn。'

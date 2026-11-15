@@ -1,0 +1,6 @@
+url: https://github.com/lion231226/dsh-skill-router
+name: lion231226/dsh-skill-router
+category: skill
+description:
+  en: "Skill router for dsh: search an index of skills kept out of the model catalog, load any skill body regardless of its invocation policy, and archive or restore skills against a hash-checked ledger."
+  zh: "DSH 技能路由器：检索被移出模型目录的长尾技能索引，按名加载任意技能正文（不受 invocation 策略限制），并用带哈希校验的账本归档/恢复技能、按需提升到项目级。"

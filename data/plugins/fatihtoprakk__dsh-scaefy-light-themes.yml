@@ -1,0 +1,7 @@
+url: https://github.com/fatihtoprakk/dsh-scaefy-light-themes
+name: fatihtoprakk/dsh-scaefy-light-themes
+category: theme
+description:
+  en: '27 light color themes for the DSH Web GUI, ported from the Scaefy OpenCode light themes, with a Settings > General picker that shows a palette swatch per theme and restores the last choice after a restart.'
+  zh: '27 款 DSH Web GUI 浅色主题，移植自 Scaefy OpenCode 浅色主题；在 设置 > 通用 中提供带配色色块的选取器，重启后自动恢复上次选择。'
+icon: https://raw.githubusercontent.com/fatihtoprakk/dsh-scaefy-light-themes/master/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/jiahaozhang516-svg/caopazi-compact
+name: jiahaozhang516-svg/caopazi-compact
+category: session
+description:
+  en: 'Compacts a session at 70% context and appends mechanically extracted anchors — first user message, hard requirements, paths, commands, error codes and unresolved items — to the summary; it reuses DSH built-in compaction-basic and adds a /compact-status command.'
+  zh: '上下文到 70% 时自动压缩，并把机械抽取的锚点（第一条用户消息、硬性要求、路径/命令/错误码、未完成项）追加到摘要末尾；复用 DSH 原生 compaction-basic，附带 /compact-status 命令。'

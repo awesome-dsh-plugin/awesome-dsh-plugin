@@ -1,0 +1,6 @@
+url: https://github.com/unhurriedly/dsh-drone-planner
+name: unhurriedly/dsh-drone-planner
+category: tools
+description:
+  en: 'Drone coverage route planning panel for DeepSeek Harness: draw point, line, area, slope or cylinder targets, set route presets (altitude mode, speed, yaw mode, stay, end action, range cut), then generate boustrophedon scans, route-aligned lines or cylindrical spirals, with a waypoint table, risk checks and per-waypoint actions.'
+  zh: 'DeepSeek Harness 的无人机覆盖航线规划面板：绘制点、线、区域、斜面或圆柱体目标，设定航线预设（高度模式、速度、偏航模式、是否停留、结束动作、超视距裁切），生成弓字形扫描、沿路线布点或绕柱螺旋航线，并提供航点表、风险评估与逐点动作。'

@@ -2,6 +2,6 @@ url: https://github.com/hongcha-dsh/dsh-watchlist
 name: hongcha-dsh/dsh-watchlist
 category: ui
 description:
-  en: 'Follow list above the sidebar conversation list: a status dot per conversation (unread, waiting for you, running, failed), newest reply first, running ones last, and a follow toggle beside the model selector.'
-  zh: '在侧边栏对话列表上方增加关注区：每行一个状态圆点（未读、待回复、运行中、失败），有新回复的置顶、运行中的置底，模型选择器左侧还有关注按钮。'
+  en: 'Follow list above the sidebar conversation list: a status dot per conversation (unread, waiting for you, running, failed), newest reply first, running ones last, and a follow toggle beside the model selector. Marking a row unread lifts it to the top, opening one expands and scrolls to its row in the Workspace list below, a finished turn always counts as unread until the conversation is opened, and a conversation whose delegated subagents are still working keeps counting as running until the last child reports back.'
+  zh: '在侧边栏对话列表上方增加关注区：每行一个状态圆点（未读、待回复、运行中、失败），有新回复的置顶、运行中的置底，模型选择器左侧还有关注按钮。点圆点标未读会把该行顶到最前，点开一行会自动展开并滚动到下方工作区列表里对应的那一行；每一轮结束都算未读，直到你打开这个对话；派出的子代理还在跑时父会话继续算运行中，等最后一个子代理结束才转成未读。'
 icon: https://raw.githubusercontent.com/hongcha-dsh/dsh-watchlist/main/assets/icon-180.png

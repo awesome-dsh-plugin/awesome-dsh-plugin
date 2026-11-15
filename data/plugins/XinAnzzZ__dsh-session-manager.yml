@@ -1,0 +1,6 @@
+url: https://github.com/XinAnzzZ/dsh-session-manager
+name: XinAnzzZ/dsh-session-manager
+category: ui
+description:
+  en: 'Nested session folders for the DSH sidebar: create folders per workspace, nest them and drag to reorder, move sessions by drag or context menu, click a folder activity count to open the matching sessions, and tag sessions with a header tag filter. Undo, rename, archive, search and keyboard navigation work on the tree.'
+  zh: '在 DSH 侧栏用嵌套文件夹整理会话：按工作区新建、嵌套并拖动排序文件夹，用拖动或右键菜单移动会话，点击文件夹上的活动计数直达对应会话，会话标签可在顶部筛选；树上同样支持撤销、重命名、归档、搜索和键盘导航。'

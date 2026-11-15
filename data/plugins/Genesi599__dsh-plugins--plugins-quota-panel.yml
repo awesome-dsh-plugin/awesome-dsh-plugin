@@ -1,0 +1,7 @@
+url: https://github.com/Genesi599/dsh-plugins/tree/main/plugins/quota-panel
+name: Genesi599/dsh-plugins#quota-panel
+category: usage
+description:
+  en: 'A balance and usage card at the bottom of the sidebar: DeepSeek account balance, today token count with input, cache and output breakdown, this session tokens, and the last error when a fetch fails.'
+  zh: '侧栏底部的余额与用量卡片：DeepSeek 账号余额、今日 token（含输入、缓存、输出明细）、本会话 token，以及抓取失败时的最近错误。'
+icon: https://raw.githubusercontent.com/Genesi599/dsh-plugins/main/plugins/quota-panel/assets/icon-180.png
