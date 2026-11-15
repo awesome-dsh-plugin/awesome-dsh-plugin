@@ -3360,6 +3360,7 @@ dsh plugin --profile web add dshmarket
 - [tszmzz1026/dsh-epindel-boot-animation#dsh-glass-aurum](https://github.com/tszmzz1026/dsh-epindel-boot-animation/tree/main/packages/dsh-glass-aurum) — 原创 CSS 金紫主题，支持本地头像上传与裁切、助手命名和阅读排版，不附带游戏素材。包名已从 dsh-glass-theme 改为 dsh-glass-aurum——旧名被另一位作者的无关插件占用；安装前请先停用旧包。
 - [tuibe/dsh-deepseek-theme-studio](https://github.com/tuibe/dsh-deepseek-theme-studio) — DSH Web GUI 客户端主题插件：流体背景、毛玻璃面板与量子化着色器效果，100 项参数可调并持久化到 JSON 文件。
 - [tuogusa/dsh-whale-background](https://github.com/tuogusa/dsh-whale-background) — Web UI 鲸鱼娘壁纸背景，应用表面半透明磨砂；支持在设置页自定义图片、透明度与 contain/cover 铺放方式，远程图片自动预检并 no-referrer 加载。
+- [TyrusLabs-IO/dsh-panel-theme](https://github.com/TyrusLabs-IO/dsh-panel-theme) — DeepSeek Harness 侧边栏背景样式插件：可调基础色与不透明度、渐变、光晕、可读性蒙层，支持内置/自定义预设与 JSON 备份恢复；设置保存在浏览器本地。
 - [Ultroncn/dsh-liquid-glass](https://github.com/Ultroncn/dsh-liquid-glass) — 主题背景：官方风格折叠设置、通透界面与本地图片/视频背景。
 - [undefineken/dsh-theme-matrix-glass](https://github.com/undefineken/dsh-theme-matrix-glass) — 黑客帝国式二进制数字雨（字形只有 0 与 1）：仅任务运行时生成数字，任务停止后停止生成并让已有数字落出屏幕、画面归空；配磨砂玻璃 token 层，数字与面板透明度均可调。
 - [Veagau/dsh-amadeus-skin](https://github.com/Veagau/dsh-amadeus-skin) — 添加 Amadeus 风格的浅色与深色配色及界面装饰。
@@ -11078,6 +11079,7 @@ dsh plugin --profile web add dshmarket
 - [Free-swallow1/dsh-onmyoji-guide](https://github.com/Free-swallow1/dsh-onmyoji-guide) — 阴阳师游戏助手：五个工具，提供式神/御魂查询、技能全文、满暴与面板计算、网易大神攻略检索和介绍图卡路径。
 - [Gastronomicluna/Matrix-code](https://github.com/Gastronomicluna/Matrix-code) — 矩阵风格 CLI 对话页：Agent 思考过程化作绿色代码雨倾泻而下，回复照常流式显示。
 - [gavinff1990/fanggao-pet](https://github.com/gavinff1990/fanggao-pet) — 一只可拖拽的方糕萌宠：对话进行时奔跑、完成时睡觉、出错时生气。
+- [gezi-wen/dsh-naiwa-laugh](https://github.com/gezi-wen/dsh-naiwa-laugh) — 每轮 agent 回合结束，在 DSH Web UI 里随机播一段奶蛙笑声：七段自带 mp3 提前解码进内存，一轮笑一次，不用装桌宠、不联网，可在浏览器控制台开关。
 - [ghang/dsh-achievement-helper](https://github.com/ghang/dsh-achievement-helper) — 在本地记录 DeepSeek Harness 主题成就、勋章与角色收藏。
 - [GHSYES/dsh-whale-girl-pet](https://github.com/GHSYES/dsh-whale-girl-pet) — 把 DSH 会话状态变成 Windows 桌面上的像素鲸娘：按真实会话事件实时换动作，可戳脸、挠痒、按住 Ctrl 拖动，72–480 px 缩放，独立 Electron 透明置顶窗，随包附带 22 个动作。
 - [Gin-7/dsh-pet-remielle](https://github.com/Gin-7/dsh-pet-remielle) — 蕾米埃尔(绝区零)桌宠：随 DSH 工作状态切换动画表情。
