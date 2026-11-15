@@ -1,0 +1,6 @@
+url: https://github.com/IWHBIWHB/dsh-injection-manager
+name: IWHBIWHB/dsh-injection-manager
+category: usage
+description:
+  en: 'Shows and switches everything a new DSH session injects before its first request — prompt sections, runtime contexts, skills, tool schemas and workspace rules — clustered into suites so one switch can drop a whole MCP server, with presets and a token budget.'
+  zh: 'DSH 上下文注入管理：把新会话首轮请求注入的段落、运行时上下文、技能、工具 schema 与工作区规则逐条摊开并按套件聚类，一整套工具一个开关关掉，另给预设与 token 预算，只对之后新建的会话生效。'
