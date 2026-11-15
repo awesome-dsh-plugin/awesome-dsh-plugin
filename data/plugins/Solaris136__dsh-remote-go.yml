@@ -1,0 +1,6 @@
+url: https://github.com/Solaris136/dsh-remote-go
+name: Solaris136/dsh-remote-go
+category: remote
+description:
+  en: "Use a remote DSH over SSH in the whole window of the local DSH: one sidebar switcher moves between “Local” and each host, and a connected remote comes back instantly. The remote runs on a plugin-managed Node with npx pinned to the local version, keeps its data in the user’s own ~/.dsh, and ships the connect log and diagnostics."
+  zh: "通过 SSH 在本地 DSH 的整窗里使用远端 DSH：侧边栏主机条在「本地」与各主机间切换，已连接的远端一点即回；远端由插件自托管的 Node 加 npx 按本机版本启动，数据留在远端用户自己的 ~/.dsh，含连接日志与诊断。"
