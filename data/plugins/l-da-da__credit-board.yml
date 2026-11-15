@@ -1,0 +1,7 @@
+url: https://github.com/l-da-da/credit-board
+name: l-da-da/credit-board
+category: workflow
+description:
+  en: 'Daily auto check-in for WorkBuddy, Doubao (multi-account) and CodeArts, with a DSH sidebar board that shows balances and sign-in status for all four clients including AutoClaw.'
+  zh: '每天自动给 WorkBuddy、豆包（多账号）、CodeArts 签到，四家额度汇总到 DSH 侧边栏看板。'
+icon: https://raw.githubusercontent.com/l-da-da/credit-board/main/docs/social-preview.jpg
