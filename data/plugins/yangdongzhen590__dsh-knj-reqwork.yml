@@ -1,0 +1,6 @@
+url: https://github.com/yangdongzhen590/dsh-knj-reqwork
+name: yangdongzhen590/dsh-knj-reqwork
+category: ui
+description:
+  en: 'Requirement workbench for DSH: reads the Vue Router of a local frontend project and lists the real route pages inside the workspace, hands out a stable @page:<path> reference plus a read-only source inspector, and turns code quotes into a spec instead of redrawing a design file. Read-only M0, no vector editing and no collaboration. The sidebar entry uses the dsh-knj-menu slot, so install dsh-knj-menu too.'
+  zh: '需求工坊：读取本地前端工程的 Vue Router，在工作区里列出真实路由页面，提供稳定的 @page:<path> 引用与只读源码检查器，让 PM 直接引用真实代码产出规格，而不是重画设计稿。M0 只读，不做矢量编辑与协作。侧栏入口使用 dsh-knj-menu 的插槽，需一并安装。'
