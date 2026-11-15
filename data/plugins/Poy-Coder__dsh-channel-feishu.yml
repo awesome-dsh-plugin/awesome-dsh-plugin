@@ -1,0 +1,6 @@
+url: https://github.com/Poy-Coder/dsh-channel-feishu
+name: Poy-Coder/dsh-channel-feishu
+category: remote
+description:
+  en: 'Binds one Feishu (Lark) chat to one DSH session: inbound text is delivered verbatim, answers stream back as a card, and attachments go both ways.'
+  zh: '把一个飞书（Lark）会话绑到一段 DSH 会话：收到的消息按原话投递，回答以流式卡片回传，附件双向收发。'
