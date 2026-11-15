@@ -1,0 +1,6 @@
+url: https://github.com/THao712/dsh-session-cleaner
+name: THao712/dsh-session-cleaner
+category: session
+description:
+  en: 'Preview and permanently delete archived Sessions, per-conversation folders, attachments, and workspace files; keep out/ deliverables and clean orphan conversation folders.'
+  zh: '预览并永久删除已归档会话、会话专用目录、附件与工作区文件；可保留 out/ 终产物并清理残留对话目录。'
