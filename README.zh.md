@@ -2323,7 +2323,7 @@ dsh plugin --profile web add dshmarket
 - [zealot00/dsh-pet](https://github.com/zealot00/dsh-pet) — DSH Web UI 桌面宠物：精灵图动画、agent 状态联动、拖拽、闹钟（每天/一次）与番茄钟，皮肤下拉选择 + 预览。
 - [zeasonvan/Days-Are-Yours](https://github.com/zeasonvan/Days-Are-Yours) — 本地优先的侧边栏生活助手：退休与假期倒计时、年假与拼假、日历、可选天气、愿望清单、时间胶囊，以及一只时光团子。
 - [zebracmz/dsh-task-progress-tab](https://github.com/zebracmz/dsh-task-progress-tab) — 在会话顶部“上下文”标签右侧增加“任务进度”标签页，用进度条显示已完成与未完成的任务，已完成项按完成顺序排列。
-- [zeki520/dsh-boot-nexus](https://github.com/zeki520/dsh-boot-nexus) — 把片头视频、suite 六幕冷启动与屏保合进同一个开机动画：一层画面、一个状态机、一个时钟、一份配置，所有选项都在一张设置卡里。suite 引擎、模板与一套原画质片头/屏保素材（720p–4K 原片，约 197 MB）也随包发布，装完第一次开机就有动画，删掉原插件后仍能播放；启用它时不要再同时启用 dsh-boot-suite 或 dsh-boot-animation。
+- [zeki520/dsh-boot-nexus](https://github.com/zeki520/dsh-boot-nexus) — 把片头视频、suite 六幕冷启动与屏保合进同一个开机动画：一层画面、一个状态机、一个时钟、一份配置，所有选项都在一张玻璃面板设置卡里。suite 引擎、模板与一套原画质片头/屏保素材（720p–4K 原片，约 197 MB）也随包发布，装完第一次开机就有动画，删掉原插件后仍能播放；启用它时不要再同时启用 dsh-boot-suite 或 dsh-boot-animation。
 - [zeme56/dsh-landmarks](https://github.com/zeme56/dsh-landmarks) — 左侧边栏加一个全屏 3D 展厅，看四座程序化建模的地标——埃菲尔铁塔、长城、紫禁城、泰姬陵——另带一个「五间安静的屋子」入口。
 - [zengchunhua-boost/dsh-cat-star](https://github.com/zengchunhua-boost/dsh-cat-star) — 给猫颜值打分的 DSH 插件：CFA 风格评分卡、国内市场参考价，可发布到公开榜单。
 - [zengxiangpeng123/dsh-sidebar-fold-zxp](https://github.com/zengxiangpeng123/dsh-sidebar-fold-zxp) — 把 DSH 左侧那排插件入口折成一行「插件列表」，支持按组归类与自定义顺序，把纵向空间还给工作区与会话列表；展开即恢复完整入口。
@@ -2960,6 +2960,7 @@ dsh plugin --profile web add dshmarket
 - [xohmai/dsh-cpa-status](https://github.com/xohmai/dsh-cpa-status) — CPA 账号池状态面板：侧栏健康灯、配额进度、成功率刻度与网关密钥末四位一览。
 - [xraywu/dsh-service-monitor](https://github.com/xraywu/dsh-service-monitor) — 监控 AI Agents 常用的第三方服务余额，如 Tavily、SerpAPI、Firecrawl、博查、Tinyfish 等。可选支持将服务的余额注入 System Prompt，以便 Agent 合理使用相关服务。
 - [xtd1145/dsh-deepseek-cost-live](https://github.com/xtd1145/dsh-deepseek-cost-live) — DSH Web 实时显示 DeepSeek API 官方余额与今日花费(本机会话日志用量 x 分模型价格表的本地估算):输入框下方统计小条 + 右下角常驻悬浮徽标 + 设置页完整面板(近 7 日趋势、分模型花费、可编辑价格表/轮询、历史重扫)。API Key 不出宿主进程。
+- [xuanyuanchumo/dsh-kaogong](https://github.com/xuanyuanchumo/dsh-kaogong) — 离线公务员备考整合平台，整合 16 个上游开源题库（全量约 2.2 GB）：1,683 套真题卷支持限时模考/逐题学习/全卷自答对照三模式，提供 SRS 错题本、申论离线评改、花生十三体系方法论视图（25 篇）与 BM25 检索、学习计划智能排程、可交互知识图谱与白盒可观测。npm 包不含题库与语料数据：安装后由题库管理用 git 从上游克隆必选包（约 360 MB，需要 git）。
 - [xueccci/dsh-prompt-lab](https://github.com/xueccci/dsh-prompt-lab) — DeepSeek Harness 的 Agent 结构化提示词优化：将输入栏草稿改写为角色/任务/上下文/约束/格式，支持普通/精简/扩写，弹窗含评分与继续优化，引擎可选本地、hybrid、DSH 或云端 API。
 - [xuezhining/dsh-deepseek-balance](https://github.com/xuezhining/dsh-deepseek-balance) — 一个侧边栏挂件同时显示 DeepSeek API 账户余额与当前推理服务商的实时往返延迟，并可自定义余额告警阈值。读取余额需要在 DSH 凭据中配置 DEEPSEEK_API_KEY，未配置时挂件会提示缺少密钥。
 - [Xun-Prog/dsh-xdpool-billing](https://github.com/Xun-Prog/dsh-xdpool-billing) — XD Pool（WorkBuddy）积分计费面板：显示每个账号的剩余积分与积分包明细，按余额快照差值实测今日/本月/累计已消耗积分，并按 3/7/30 天分档预警即将过期积分。 数据来自 XD Pool 插件（XDTrees/dsh-xdpool）的本地路由，未安装该插件时面板显示「数据源不可用」，本插件不自行实现上游协议。
@@ -3673,6 +3674,7 @@ dsh plugin --profile web add dshmarket
 - [hpfs0/dsh-provider-proxy](https://github.com/hpfs0/dsh-provider-proxy) — 在设置里为每个已启用的 provider 单独配置正向代理（HTTP/HTTPS/SOCKS5），未配置的 provider 与其它流量保持直连。
 - [huhaodong/dsh-auto-driving](https://github.com/huhaodong/dsh-auto-driving) — DeepSeek Harness 模型故障自动回退与轮次保活：请求在产出任何可见内容前因模型错误失败时，沿所选供应商分组的模型（再到下一个供应商）逐个切换直到流式成功；瞬态失败按指数退避自动重试并有活性看门狗防假死，整轮任务失败后自动发送模板化「继续」唤醒续跑；可选全自动模式自动应答权限审批、确认提问与方案评审，每次自动决策追加到 AUTO-MODE.md 审计日志。
 - [hulibuld/dsh-get-it-for-free](https://github.com/hulibuld/dsh-get-it-for-free) — 把免费、签到型的模型账号渠道接进 DeepSeek：华为云 CodeArts、腾讯 CodeBuddy / WorkBuddy、Qoder、TRAE、Raccoon、LobsterAI、MiniMax、ZCode、讯飞 Loomy。在设置里逐渠道登录，能签到的渠道每日签到（也可开自动），同步可用模型池，模型以普通 provider 的形式出现在模型选择器里，并带本机用量看板按账号与模型统计请求数与 Token。凭据只写在本机 ~/.dsh/get-it-for-free/，无遥测，不向上游仓库发请求。可选的局域网中继默认关闭，开启后监听 0.0.0.0。
+- [hxgh776/dsh-connect-loomy](https://github.com/hxgh776/dsh-connect-loomy) — 将本机已登录的 Loomy（讯飞）桌面端账号接入 DeepSeek Harness：对话模型带思考链，结构化工具调用由 DSH 本地执行，附只读积分看板（总余额 / 每日额度 / 可用余额）。只读 Loomy 自身的登录态文件，不复制不存储凭据；含 doctor 与 probe 诊断命令。仅 Windows x64。
 - [hytime/dsh-thinking-effort](https://github.com/hytime/dsh-thinking-effort) — 为 DSH 自定义模型配置思考档位和子 agent 默认思考强度。
 - [hZsFN/dsh-default-model-lock](https://github.com/hZsFN/dsh-default-model-lock) — 锁定共享的默认模型：在聊天里切换模型不再改写全局默认值，也不会再被那次切换连带降档推理强度。
 - [Ianzhyh/workbuddy-to-dsh#dsh-plugin](https://github.com/Ianzhyh/workbuddy-to-dsh/tree/main/dsh-plugin) — 把本机的本地 OpenAI 兼容桥注册成 dsh 原生模型 provider：复用这台机器桌面端已登录的模型，管理桥与其本地控制台进程，并附带 5 个工具、/workbuddy 命令与 9 个标签页的设置面板。需同机已安装并登录该桌面端；桥只监听 127.0.0.1。
@@ -6891,7 +6893,6 @@ dsh plugin --profile web add dshmarket
 - [XRC111/dsh-apikeys](https://github.com/XRC111/dsh-apikeys) — 出站 API 调用的凭证代理：把 GitHub、Cloudflare、Vercel、npm、Docker Hub、Hugging Face 与自定义平台的 Key 存起来，并由 Host 侧发起调用，模型始终不持有 Key。apikey_call 的参数是路径而非 URL，主机由平台定义固定；apikey_platforms 列出账号但不返回值；apikey_key 读取、写入或清除单个 Key；apikey_upload 从白名单目录读取本地文件发 multipart。支持五种认证方式（Bearer、自定义头、x-api-key、Basic、查询串）。可选层默认关闭或不改变既有行为：用 scrypt 派生密钥、头部参与认证的 AES-256-GCM 加密保管库，只记录凭证操作、不记录任何 Key 值的 SHA-256 哈希链，针对本次实际所用 Key 的响应脱敏，以及按平台在 401/403/429 时故障转移。附带 CLI（list、verify、audit、call），无需 harness 即可读同一个保管库。默认（exposeKeys 开启）时 apikey_key 工具可以把已存密钥的值返回给模型，从而写进会话日志；关闭 exposeKeys 可让密钥只留在 Host 内。
 - [xsnnnnnn/dsh-coros](https://github.com/xsnnnnnn/dsh-coros) — 把高驰（COROS）官方 MCP 服务接入 DeepSeek Harness：自包含的本机 stdio↔HTTP 桥 + 本机 OAuth 登录，在当前端点上提供 34 个工具，覆盖睡眠、HRV、静息心率、恢复、训练负荷、活动与 FIT 文件，以及训练课程与训练计划的增删改查和排期。
 - [xtt-xt/dsh-custom-tool-studio](https://github.com/xtt-xt/dsh-custom-tool-studio) — 用 Python 在网页、对话或 dsh-go 手机 App 的原生面板里编写自定义工具，保存后免重启注册成 DSH 工具；危险工具每次执行都走内置审批，工具可分组成包，还可选「解锁模式」按对话逐步放出。需 PATH 中有 Python 3。
-- [xuanyuanchumo/dsh-kaogong](https://github.com/xuanyuanchumo/dsh-kaogong) — 离线公务员备考学习面板，整合 16 个上游开源题库，提供 SRS 错题本、整卷模考、申论离线评改、可交互知识图谱与白盒可观测，另有花生十三体系方法论视图（25 篇）与 BM25 检索。npm 包不含题库与语料数据：安装后由题库管理用 git 从上游克隆必选包（约 360 MB，需要 git），16 个上游仓库全量约 2.2 GB。
 - [xuedipiaofei/dsh-drawio-chat](https://github.com/xuedipiaofei/dsh-drawio-chat) — 聊天里画 draw.io：说一句需求，对话里直接出可交互图表；内置 12 个中文场景模板；可继续改图、撤销同一个 .drawio 文件；右侧栏预览不再是 XML。不登录 draw.io、不需要 MCP server、不用装编辑器。
 - [xuezuoys/dsh-blender-mcp-bridge](https://github.com/XuezuoYS/dsh-blender-mcp-bridge) — 此项目旨在桥接 Blender MCP Add-on，使 DSH 上的模型可便捷对接接入当前用户工作的 Blender 以辅助创作，且满足基础安全需要。
 - [XuRui2022/dsh-paper-manager](https://github.com/XuRui2022/dsh-paper-manager) — 面向学生与研究者的论文阅读与引用管理器：左侧栏论文库、原样 PDF 阅读器、六种引用格式、Word 文末参考文献，以及 AI 翻译/概括/思维导图/术语。基于 jypjypjypjyp/dsh-paper-reader（现名 dsh-vibe-reading，MIT）扩展，默认共用 `~/.paper_reading` 工作目录——不要与上游同装。需先安装 dsh-better-sidebar 插件。
