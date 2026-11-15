@@ -2008,6 +2008,7 @@ dsh plugin --profile web add dshmarket
 - [watershow666/dsh-sidebar-icon-row](https://github.com/watershow666/dsh-sidebar-icon-row) — 把 DSH 侧栏的面板入口与底部入口改成只显示图标的并排方块，悬停显示名称；提供四档图标大小、逐项显隐开关与上下排序，并在底部加一个设置入口。
 - [WatXtract-Luca/dsh-auto-open-sidebar](https://github.com/WatXtract-Luca/dsh-auto-open-sidebar) — 在宽屏上为顶层空白会话自动展开右侧栏，跳过包含标签页的已保存布局，不更改非空白会话。
 - [Waverly-W/dsh-scratchpad](https://github.com/Waverly-W/dsh-scratchpad) — DeepSeek Harness Web GUI 临时对话工作区自动化管理插件。
+- [wdbaolongzs/dsh-my-funds](https://github.com/wdbaolongzs/dsh-my-funds) — 侧边栏的基金持仓面板：用 Windows OCR 识别券商资产截图，跟踪每日盈亏、持有收益与定投计划，并每天早晚各发一封汇总邮件。
 - [wdxtub/dsh-wdx-relief](https://github.com/wdxtub/dsh-wdx-relief) — DSH Web 界面的一组顺手小件：输入框下方灰字预测下一句、Tab 填入；输入框上方逐轮一行摘要（也可以放到下方）、不进入模型上下文；右侧栏面板管待跟进、会话回顾与旁问，旁问可单独选模型；回复长度、风格与「便于行动」也在插件配置里调。
 - [wefio/dsh-cache-miss](https://github.com/wefio/dsh-cache-miss) — 提示缓存未命中（cache miss）时，在重建缓存的 assistant 回复下方显示一条黄色缓存提示，展示未缓存（uncached）重新计费（re-billed）的输入 token、缓存命中 token 与首字延迟（TTFT）。
 - [weiaisuyan/dsh-sidebar-entry-manager](https://github.com/weiaisuyan/dsh-sidebar-entry-manager) — 在设置页逐个隐藏或显示 DSH 左侧边栏的插件入口，无需停用插件；带插件内更新。
@@ -3586,6 +3587,7 @@ dsh plugin --profile web add dshmarket
 - [DragonHorizon-xtihc/dsh-connect-opencode-free](https://github.com/DragonHorizon-xtihc/dsh-connect-opencode-free) — 把 OpenCode Zen 免费模型接入 DeepSeek Harness，实时模型发现、设置页逐个启停、一键写入 provider，免 key；请求由本机 OpenCode 客户端代发。
 - [DragonHorizon-xtihc/dsh-connect-trae-models](https://github.com/DragonHorizon-xtihc/dsh-connect-trae-models) — 把本机多个 Trae 账号聚合成一个自动容错换号的模型供应商，附带手动与自动签到、积分与到期监控，以及模型配置设置卡片。
 - [DragonHorizon-xtihc/dsh-connect-workbuddy-models](https://github.com/DragonHorizon-xtihc/dsh-connect-workbuddy-models) — 把本机所有登录过的 WorkBuddy 账号聚合成一个模型池，带手动与自动签到、积分与到期监控、模型倍率，并可在输入框下方切换账号、查看剩余总积分。
+- [Dream-swift/dsh-cursor-suite](https://github.com/Dream-swift/dsh-cursor-suite) — 在 DeepSeek Harness 中接入 Cursor 订阅，并附带 read_image 视觉桥：浏览器 PKCE 登录、模型发现、DSH 本地工具，以及 Cursor 路由丢弃像素时的读图能力。
 - [dreanzy/dsh-plg#dsh-model-pack](https://github.com/dreanzy/dsh-plg/tree/main/packages/dsh-model-pack) — 按工作区指定模型：把 provider、model、reasoningEffort 与子智能体四档路由组合成具名 pack 绑定到目录，作用于该目录新建的会话；尚未开过轮次的空白会话在切换 pack 时也会跟随，已开过轮次的会话不受影响。
 - [drscrewdriver/dsh-llm-openai-completions](https://github.com/drscrewdriver/dsh-llm-openai-completions) — 面向自定义网关（vLLM / LM Studio / 自托管代理）的 OpenAI-completions 兼容适配器：始终 role:"system"、按模型配置驱动思考、Qwen 式 response 切分，并支持视觉模型图片输入（单图 / 多图）。
 - [drscrewdriver/dsh-thinking-levels](https://github.com/drscrewdriver/dsh-thinking-levels) — DSH 逐轮思考级别（reasoning_effort）控制：选择 Auto 即按近期工具调用历史自动调度 low/high/max，或手动固定线路档位（off/on/minimal/low/medium/high/xhigh/max），支持自定义线路映射、模型能力护栏与上下文窗口预设（64K–1M）；其逐模型能力卡片与另一独立插件 [dsh-llm-openai-completions](https://github.com/drscrewdriver/dsh-llm-openai-completions)（可在 dsh-market 安装）联动，让自定义 OpenAI 兼容网关（vLLM / LM Studio / 自托管）也能试用推理——卡片写入 llm-pi-ai 能力，适配器接管线路（compat.thinkingFormat），本插件自动维护接管列表。
@@ -5985,6 +5987,7 @@ dsh plugin --profile web add dshmarket
 - [hotheat/dsh-claude-codex-mode](https://github.com/hotheat/dsh-claude-codex-mode) — 讨论阶段只读，改仓库代码一律交给 Codex CLI（插件自带 MCP server）；在插件表单里可在 DSH 主模型与 Claude Code CLI 之间切换，带前置检查，并用写文件 guard 拦截对仓库文件的结构化写入。
 - [hotkong/dsh-home-assistant-panel](https://github.com/hotkong/dsh-home-assistant-panel) — DeepSeek Harness 的 Home Assistant 只读面板：完整状态总览、右侧栏速览卡、系统提示词环境块、一个只读 ha_status 工具，以及可选的 HA 不可用/恢复浏览器通知。配置一次实例地址与令牌；不控制设备，也不修改 Home Assistant 配置。
 - [HougeLangley/dsh-aosc-packaging](https://github.com/HougeLangley/dsh-aosc-packaging) — 面向 DeepSeek Harness 的 AOSC OS 打包工具箱：六个 Host 工具检查并 lint ABBS 包、在 ABBS 树内生成 spec 与 autobuild/defines 脚手架、校验源码 URL，并起草 topic 与 Ciel 构建计划，另带一个 aosc-packaging 技能；工具都不启动 shell，真正构建 .deb 仍需要 Linux、root 与 Ciel。
+- [HougeLangley/dsh-ubuntu-packaging](https://github.com/HougeLangley/dsh-ubuntu-packaging) — 面向 DeepSeek Harness 的 Ubuntu/Debian 源码包工具：检查 debian/、按 lintian 兼容标签静态检查、生成 debian/ 骨架、规划 dpkg-buildpackage 或 sbuild 构建与 lintian/autopkgtest 测试，并诊断构建日志。除 scaffold 外均为只读；不启动 shell，不联网。
 - [howie79794-sys/dsh-openfilm](https://github.com/howie79794-sys/dsh-openfilm) — 开源 OpenFilm AI 视频制作，针对 DeepSeek Harness 做了增强：内嵌 Studio、本地渲染 MP4、指着画布改片、后台渲染任务、支持截图与语音的面板对话。
 - [howpy/dragonfly_chatbot](https://github.com/howpy/dragonfly_chatbot) — 面向 DSH 0.2.1-rc.2（engines.dsh 精确钉版）。基于 Dragonfly 3D World 2027.1 帮助文档和本机安装源码的只读检索提供技术支持，未发现安装时明确提示仅帮助文档模式。
 - [hoyyang/dsh-android-pane](https://github.com/hoyyang/dsh-android-pane) — 在 DSH 对话旁打开 Android 设备实时画面：scrcpy H.264 串流，agent 可点按操作并用截图与控件树自证，截图 / 录屏 / 调试证据统一存进你指定的电脑目录；调试会话自带分段视频、全量 logcat 与逐动作前后帧。模拟器与 USB 真机通吃，人机共屏，仅限本机回环。
