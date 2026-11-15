@@ -5715,7 +5715,7 @@ dsh plugin --profile web add dshmarket
 - [DarbeChan/dsh-qizhoucnc-cam](https://github.com/DarbeChan/dsh-qizhoucnc-cam) — 数控程序（NC/CNC/G-code）刀路识别、三维显示与大界面编辑，支持代码引用到对话框，适用于 DeepSeek Harness。
 - [david-zdw/dsh-image-studio](https://github.com/david-zdw/dsh-image-studio) — DSH 侧边栏生图工作台：Agnes、OpenAI GPT Image、Grok、OpenAI 兼容接口各自独立 Key，支持文生图和最多 5 张参考图、本地历史、/image 工具，以及插件内 GitHub 更新按钮。
 - [DayuanJiang/next-ai-draw-io#dsh-plugin](https://github.com/DayuanJiang/next-ai-draw-io/tree/main/packages/dsh-plugin) — dsh 的 draw.io 绘图插件：通过 next-ai-drawio MCP 服务器作图，点回复里的链接在右侧栏打开实时预览，可以手动修改图，AI 的每次修改都是可以恢复的版本。需 Node.js 18+，首次使用由 npx 下载 MCP 服务器。
-- [DDL095/dsh-depth-tool-gate](https://github.com/DDL095/dsh-depth-tool-gate) — DeepSeek Harness 的工具面治理：六张作用域分开的名单经宿主 tools.restrict() API 逐 agent 裁剪工具可见性，新见工具名进待裁决闸门，dispatch_composed 按能力标签组装最小面——传 tasks 数组可并行跑子代理，续派的子代理保持原有工具面。每次决策写入 append-only 台账，超限轮转为带日期的归档档，历史一条不丢。
+- [DDL095/dsh-depth-tool-gate](https://github.com/DDL095/dsh-depth-tool-gate) — DeepSeek Harness 的工具面治理：作用域分开的名单经宿主 tools.restrict() API 逐 agent 裁剪工具可见性，新见工具名进待裁决闸门，dispatch_composed 按能力标签组装最小面——传 tasks 数组可并行跑子代理，续派的子代理保持原有工具面。每件工具还自动获得一句用途说明，agent 可查清「这件到底能干什么」而不靠截断短描述猜；只读的 explain_gate 报告被裁了哪些、被哪条规则裁。每次决策写入 append-only 台账，超限轮转为带日期的归档档，历史一条不丢。
 - [Deanyu148/dsh-balance-inquiry](https://github.com/Deanyu148/dsh-balance-inquiry) — 余额看板，可以添加多个按量计费/Token plan，同时查询余额。
 - [Deanyu148/dsh-import-newapi](https://github.com/Deanyu148/dsh-import-newapi) — 一键从new api站点导入复制的连接信息。
 - [DeepTrial/dsh-bash-rtk](https://github.com/DeepTrial/dsh-bash-rtk) — 将符合条件的 shell 命令路由给 rtk，压缩工具输出并节省 token。
