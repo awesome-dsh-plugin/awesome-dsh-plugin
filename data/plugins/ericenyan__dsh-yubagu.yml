@@ -1,0 +1,6 @@
+url: https://github.com/ericenyan/dsh-yubagu
+name: ericenyan/dsh-yubagu
+category: tools
+description:
+  en: 'Pre-send self-check for model prose: collides the exact sentence against a 38-phrase list of delivery-receipt tics, then asks for the whole sentence to be re-thought rather than reworded. Three tiers, a per-turn prompt hook, and a ledger panel.'
+  zh: '开口之前先自查：把准备发出去的那段话，对着 38 条「把说话当交付」的口癖撞一遍，撞上就整句退回去重说，不是换个词。三档词表、每轮提示钩子、面板记账。'
