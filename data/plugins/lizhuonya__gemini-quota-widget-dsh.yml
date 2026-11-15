@@ -2,6 +2,6 @@ url: https://github.com/lizhuonya/gemini-quota-widget-dsh
 name: lizhuonya/gemini-quota-widget-dsh
 category: ui
 description:
-  en: 'DSH Web catgirl companion and quota widget: tracks DSH balance and per-turn spend, syncs Gemini 5h/weekly quota via agy, Refresh Token, or OAuth, and adds a 1:1 sprite cropper, audio chimes, and custom dock positioning. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
-  zh: 'DSH Web 端猫娘桌面挂件：实时显示 DSH 账户余额与轮次花费，支持 agy / RT / OAuth 多源同步 Gemini 5h 与每周额度，内置 1:1 立绘裁剪器、和弦提示音及快捷互动条自定义相对位置。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+  en: 'DSH Web catgirl companion and quota widget: tracks DSH balance and per-turn spend, syncs Gemini 5h/weekly quota via agy, Refresh Token, or OAuth, and adds a 1:1 sprite cropper, audio chimes, and custom dock positioning.'
+  zh: 'DSH Web 端猫娘桌面挂件：实时显示 DSH 账户余额与轮次花费，支持 agy / RT / OAuth 多源同步 Gemini 5h 与每周额度，内置 1:1 立绘裁剪器、和弦提示音及快捷互动条自定义相对位置。'
 icon: https://raw.githubusercontent.com/lizhuonya/gemini-quota-widget-dsh/main/icon.png
