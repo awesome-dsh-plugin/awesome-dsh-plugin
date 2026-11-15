@@ -1,7 +1,0 @@
-url: https://github.com/zjukop3/dsh-vertical-kit
-name: zjukop3/dsh-vertical-kit
-category: tools
-description:
-  en: 'Industry-scenario checks for DeepSeek Harness deliverables: contract structure, invoice field arithmetic, and e-commerce listing hygiene. Same one-verb CLI shape with pipeline-gateable exit codes.'
-  zh: '行业场景的交付检查：合同结构、发票字段勾稽、电商商品信息。同一个动词形状的 CLI，出口码可接 CI，离线可跑。'
-icon: https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png
