@@ -1,0 +1,6 @@
+url: https://github.com/zzc2127882990-ship-it/dsh-desktop-notify
+name: zzc2127882990-ship-it/dsh-desktop-notify
+category: notify
+description:
+  en: Pops a Windows toast and lights a taskbar badge when DSH needs an approval, finishes a turn, or hits an error.
+  zh: DSH 需要你确认、跑完一轮或报错时，弹 Windows 通知并在任务栏图标上点亮徽标.
