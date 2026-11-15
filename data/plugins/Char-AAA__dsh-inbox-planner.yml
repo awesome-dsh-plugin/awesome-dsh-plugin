@@ -1,0 +1,6 @@
+url: https://github.com/Char-AAA/dsh-inbox-planner
+name: Char-AAA/dsh-inbox-planner
+category: workflow
+description:
+  en: 'Turns new mail from every dsh-email account into dated to-dos: drops codes, alerts and newsletters without a model call, extracts actions and deadlines with the DSH default model (rules fallback), skips CC-only mail, dedupes across mailboxes and flags time clashes. Items go to a built-in to-do panel with a month calendar (adapted from dsh-sidebar-todo, same data file), optionally mirrored to dsh-calendar; a refresh icon, /inbox-sync and an inbox_planner tool trigger a check.'
+  zh: '把所有 dsh-email 邮箱的新邮件变成带日期的待办：验证码、登录提醒、订阅推广不调用模型直接过滤；用 DSH 默认模型提取要做的事和截止时间（失败时退回规则）；仅抄送的邮件不建待办；跨邮箱去重并标注时间冲突。待办写入内置的待办面板（带月历，改编自 dsh-sidebar-todo，沿用同一数据文件），可选同步到 dsh-calendar；面板刷新图标、/inbox-sync 和 inbox_planner 工具可立即检查。'

@@ -1,0 +1,8 @@
+url: https://github.com/zhouzhou5210/dsh-star-prompt-enhance
+name: zhouzhou5210/dsh-star-prompt-enhance
+category: ui
+description:
+  en: 'A star button beside the composer that rewrites the current draft into a clearer, more complete prompt with the session default model; it reads up to five recent user prompts from the same session as read-only context, writes the result back into the composer, and never sends the message.'
+  zh: '在输入框旁加一颗星星按钮，用会话默认模型把当前草稿改写得更完整清晰；改写前会读取本会话最近最多 5 条用户提示词作为只读上下文，结果回填到输入框而不直接发送。'
+icon: https://raw.githubusercontent.com/zhouzhou5210/dsh-star-prompt-enhance/main/assets/icon-512.png
+tarball: https://github.com/zhouzhou5210/dsh-star-prompt-enhance/releases/download/v1.0.0/dsh-star-prompt-enhance-1.0.0.tgz

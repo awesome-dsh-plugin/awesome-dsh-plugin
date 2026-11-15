@@ -1,0 +1,7 @@
+url: https://github.com/leicheng42/dsh-task-time-cost
+name: leicheng42/dsh-task-time-cost
+category: usage
+description:
+  en: Local remaining-time, elapsed-time, Token-budget and reference-cost estimates for DeepSeek Harness, with local route calibration; for Windows DSH Desktop 0.2.2-rc.2.
+  zh: 为 DeepSeek Harness 提供剩余时间、实际用时、Token 预算与费用参考，支持本地路由校准，适用于 Windows DSH Desktop 0.2.2-rc.2。
+tarball: https://github.com/leicheng42/dsh-task-time-cost/releases/download/v0.3.0/dsh-task-time-cost-0.3.0.tgz
