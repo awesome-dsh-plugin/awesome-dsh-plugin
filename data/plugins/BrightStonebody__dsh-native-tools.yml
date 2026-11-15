@@ -1,0 +1,8 @@
+url: https://github.com/BrightStonebody/dsh-native-tools
+name: BrightStonebody/dsh-native-tools
+category: tools
+description:
+  en: Three native macOS tools in one plugin — drag-to-screenshot with annotation and OCR, clipboard history, and select-to-translate. All three features share a single AppKit helper process, are toggled independently, and apply setting changes without restarting the plugin or the process.
+  zh: 截图、剪贴板历史、划词翻译三合一的原生插件，三个功能共用一个 AppKit 进程；各自独立开关，改设置即时生效，不重启插件也不重拉进程。
+icon: https://raw.githubusercontent.com/BrightStonebody/dsh-native-tools/main/design/icon-1024.png
+tarball: https://github.com/BrightStonebody/dsh-native-tools/releases/latest/download/dsh-native-tools.tgz
