@@ -4843,7 +4843,7 @@ dsh plugin --profile web add dshmarket
 - [WiseXin/dsh-session-intent-title](https://github.com/WiseXin/dsh-session-intent-title) — 零 UI 侵入的 DeepSeek Harness 会话意图自动分类命名插件，新会话自动生成前缀图标与主题（优化、修复、功能、探索等 8 类意图）。
 - [wjj-8283/dsh-temp-workspace](https://github.com/wjj-8283/dsh-temp-workspace) — DSH web 临时工作区：一键创建一次性工作区，下次重启自动清空其全部对话（可立即/延迟删除，也可先弹确认框）。点击图钉可永久保留——文件移入所选文件夹、以文件夹名为标题、对话一并迁移，并触发真实的宿主级重启重新索引。
 - [wojiao42/dsh-space-optimizer](https://github.com/wojiao42/dsh-space-optimizer) — 侧栏里的每个任务磁盘占用账本，可勾选回收无主垃圾；会话日志绝不被裁剪。
-- [wpc0323/deepseek-web-import](https://github.com/wpc0323/deepseek-web-import) — 从设置页把 chat.deepseek.com 网页端对话导入为 DeepSeek Harness 会话，导入后可在其中继续对话。
+- [wpc0323/deepseek-web-import](https://github.com/wpc0323/deepseek-web-import) — 从设置页把 chat.deepseek.com 网页端对话导入为可在其中继续对话的 DeepSeek Harness 会话；自适应 Session 格式 v0–v4、可从 npm 安装，设置页跟随宿主语言（中/英）。
 - [WSL043/dsh-chat-manager](https://github.com/WSL043/dsh-chat-manager) — 管理 DSH 归档聊天，支持聊天记录搜索、恢复和二次确认的安全永久删除。
 - [WSNMM3/dsh-session-keeper](https://github.com/WSNMM3/dsh-session-keeper) — DeepSeek Harness 侧栏的会话管理插件：按工作区划分的分类树，支持拖拽排序；置顶会话可抬到分类上方，也可按开关留在所属分类内；另有归档分区，以及删除回收站——删掉的会话日志留存，可恢复或批量彻底清除。宿主半边掌管分类与回收站数据，网页半边负责渲染，两者作为一个插件一起发布。本插件是 ht719/dsh-session-categories 的维护分叉，已移植到当前 DSH 并新增置顶、归档分区与删除回收站；不能与原版同时安装。
 - [wsxwj123/dsh-plugins#dsh-session-manager](https://github.com/wsxwj123/dsh-plugins/tree/main/packages/dsh-session-manager) — 会话删除（5 秒可撤销 + 回收站）与归档视图（查看、取消归档）。npm 包名 `@wsxwj123/dsh-session-manager`。

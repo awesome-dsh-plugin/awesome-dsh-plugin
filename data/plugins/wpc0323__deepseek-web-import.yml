@@ -2,5 +2,5 @@ url: https://github.com/wpc0323/deepseek-web-import
 name: wpc0323/deepseek-web-import
 category: session
 description:
-  en: Imports chat.deepseek.com web conversations into DeepSeek Harness as resumable sessions, from a settings-page UI.
-  zh: 从设置页把 chat.deepseek.com 网页端对话导入为 DeepSeek Harness 会话，导入后可在其中继续对话。
+  en: Imports chat.deepseek.com web conversations into DeepSeek Harness as resumable sessions you can keep chatting in; adapts to Session format v0-v4, installs from npm, and its settings page follows the Host language (English/Chinese).
+  zh: 从设置页把 chat.deepseek.com 网页端对话导入为可在其中继续对话的 DeepSeek Harness 会话；自适应 Session 格式 v0–v4、可从 npm 安装，设置页跟随宿主语言（中/英）。
