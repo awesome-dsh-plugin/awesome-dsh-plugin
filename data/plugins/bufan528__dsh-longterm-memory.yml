@@ -1,0 +1,7 @@
+url: https://github.com/bufan528/dsh-longterm-memory
+name: bufan528/dsh-longterm-memory
+category: memory
+description:
+  en: 'Local Markdown long-term memory for DSH: an Obsidian-compatible vault, a seven-tab management page with a companion centre (persona, stickers, reminders, review-gated persona evolution), nine model tools, and budgeted per-turn recall.'
+  zh: '为 DSH 提供本地 Markdown 长期记忆：Obsidian 兼容仓库、含伙伴中心（人格 / 表情 / 提醒 / 待审人格进化）的七页签管理页、九个模型工具，以及按预算的每回合召回。'
+tarball: https://github.com/bufan528/dsh-longterm-memory/releases/latest/download/dsh-longterm-memory.tgz
