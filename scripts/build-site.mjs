@@ -21,6 +21,7 @@ import { buildMarketIndex } from './lib/market-index.mjs'
 import { firstAddedDate } from './lib/added-dates.mjs'
 import { slugOf, slugHref, termOf } from './lib/terms.mjs'
 import { releaseMetadataFor } from './lib/release-manifest.mjs'
+import { catalogRepo, HISTORY_CACHE_KEY, publishReleaseHistory } from './lib/release-history.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
@@ -1222,6 +1223,8 @@ fs.writeFileSync('docs/plugins.json', JSON.stringify(registry, null, 1) + '\n')
 // removes everything else about a plugin.
 {
   const listed = new Set(ordered.map((e) => e.url))
+  const history = updates[HISTORY_CACHE_KEY] ?? {}
+  const publishedHistory = publishReleaseHistory(ordered, history, 'docs')
   const payload = {
     name: 'awesome-dsh-plugin',
     url: ORIGIN,
@@ -1231,11 +1234,19 @@ fs.writeFileSync('docs/plugins.json', JSON.stringify(registry, null, 1) + '\n')
   }
   for (const [url, entry] of Object.entries(updates)) {
     if (!listed.has(url)) continue
-    payload.updates[url] = entry
+    payload.updates[url] = publishedHistory.has(catalogRepo(url))
+      ? { ...entry, releaseHistory: true }
+      : entry
+    payload.count++
+  }
+  for (const url of [...listed].sort()) {
+    if (payload.updates[url] || !publishedHistory.has(catalogRepo(url))) continue
+    payload.updates[url] = { releaseHistory: true }
     payload.count++
   }
   fs.writeFileSync('docs/updates.json', JSON.stringify(payload) + '\n')
   console.log(`updates.json: ${payload.count} entries, ${(fs.statSync('docs/updates.json').size / 1024).toFixed(0)} KB`)
+  console.log(`release history: ${publishedHistory.size} repository fragments`)
 }
 
 const lastAdded = [...ordered].map((e) => e.added).sort().pop()
