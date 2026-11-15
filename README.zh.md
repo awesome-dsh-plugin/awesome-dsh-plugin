@@ -2404,6 +2404,7 @@ dsh plugin --profile web add dshmarket
 
 ### 💰 用量与计费
 
+- [MVPxll/dsh-usage-popup](https://github.com/MVPxll/dsh-usage-popup) - 每轮对话弹出高峰/低谷期提醒，回复结束显示本轮花费、平均缓存命中率与今日累计，并在输入框状态栏常驻时段徽章。实用又美观！
 - [01men/ybkkasi](https://github.com/01men/ybkkasi) — 自托管 AI 基础设施的资产治理控制台。把 MCP 服务 / Skill / Agent / AI 应用 / 模型渠道 / SaaS 连接器 / NAS 存储登记进同一台账，带生命周期状态机、逐工具 RBAC 权限点、部门 x Agent x Skill 三维成本归因、依赖拓扑与只追加审计日志。完全自托管，MIT，无托管版无云端合约。
 - [02Muller25/dsh-api-balance](https://github.com/02Muller25/dsh-api-balance) — 输入框下方实时显示 DeepSeek API 账户余额，支持手动刷新与自定义间隔自动刷新。
 - [0disoft/dsh-ci-diet](https://github.com/0disoft/dsh-ci-diet) — 找出被浪费的 GitHub Actions 运行时间，并提出小而可审查的工作流补丁；任何修改都需要明确批准，并提供用于分析规则、历史上限、存储和成本估算的 DSH 设置页面。
