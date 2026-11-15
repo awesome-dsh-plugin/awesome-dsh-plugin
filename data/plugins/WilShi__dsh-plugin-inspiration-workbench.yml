@@ -1,0 +1,6 @@
+url: https://github.com/WilShi/dsh-plugin-inspiration-workbench
+name: WilShi/dsh-plugin-inspiration-workbench
+category: session
+description:
+  en: "Multi-session workbench: put many DSH sessions side by side as draggable, stackable cards on a free canvas, with turn folding, in-card search, cross-card quoting, batch grouping, kanban columns and a completion pipeline. 25+ Playwright regression checks; verified on dsh 0.2.1-rc.5 and 0.2.2-rc.1."
+  zh: "多会话工作台：把多个 DSH 会话同时摊在画布上，可拖动、缩放、叠放；支持轮次折叠、卡内搜索、跨卡引用、批量操作、看板分栏，以及"一轮跑完自动投递到另一张卡"的流水线。自带 25+ 项 Playwright 回归断言，在 dsh 0.2.1-rc.5 与 0.2.2-rc.1 上双版本验证。"
