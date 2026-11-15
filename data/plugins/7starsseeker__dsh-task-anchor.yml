@@ -1,0 +1,6 @@
+url: https://github.com/7starsseeker/dsh-task-anchor
+name: 7starsseeker/dsh-task-anchor
+category: session
+description:
+  en: 'Keeps the running plan when a mid-turn message arrives: open todos are written to disk, re-rendered into the system prompt as a suspended-work block until they are finished or cancelled, and a turn-closing guard makes leftover work explicit instead of silently dropped. It softens the attention drift rather than removing it - the interrupting message still owns the step it lands on.'
+  zh: '中途插话时把计划保住：未完成的 todo 落盘，之后以「挂起工作」段重新渲染进系统提示，直到完成或取消；回合收尾再兜底催一次，让剩余工作被明确交代，而不是被静默丢掉。它缓解注意力漂移，但不消除——插话仍然占据它落到的那个 step。'
