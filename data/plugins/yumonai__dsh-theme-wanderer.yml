@@ -1,0 +1,7 @@
+url: https://github.com/yumonai/dsh-theme-wanderer
+name: yumonai/dsh-theme-wanderer
+category: theme
+description:
+  en: 'Wanderer theme for the Harness Web UI: dynamic video wallpaper streamed with HTTP Range, iOS 27 liquid-glass panels, light/dark adaptation, wind particles, a Wanderer profile center, and an in-app self-check panel.'
+  zh: '《原神》流浪者主题：动态视频壁纸（HTTP Range 流式加载）、iOS 27 液态玻璃面板、浅深色自适应、风元素粒子、流浪者个人中心与界面内自检面板。'
+icon: https://raw.githubusercontent.com/yumonai/dsh-theme-wanderer/main/docs/icon-180.png
