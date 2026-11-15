@@ -1,0 +1,7 @@
+url: https://github.com/Vesna-Strivozha-cn/dsh-modpack-kit
+name: Vesna-Strivozha-cn/dsh-modpack-kit
+category: market
+description:
+  en: Pack several DeepSeek Harness plugins into one .dshpack and install them in one pass, with forced secret scanning before packing and integrity/compatibility checks before install. Works with or without the plugin market (installing dshmarket first is recommended, not required).
+  zh: 把多个 DeepSeek Harness 插件打成一个 .dshpack 一次装好；打包前强制查敏感信息与风险代码，安装前校验完整性与兼容性。与插件市场同源联动，建议先装插件市场（不装也能用）。
+icon: https://raw.githubusercontent.com/Vesna-Strivozha-cn/dsh-modpack-kit/main/assets/icon-180.png
