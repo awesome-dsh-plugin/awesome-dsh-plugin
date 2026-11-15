@@ -2,5 +2,5 @@ url: https://github.com/xrn1997/dsh-novel
 name: xrn1997/dsh-novel
 category: fun
 description:
-  en: 'Read web novels inside the DSH web GUI: import legado book sources, search across them, keep a bookshelf with reading progress, read in one continuous scroll, listen with text-to-speech (built-in engine, device system voices, legado HttpTTS subscriptions, optional host speech service) with follow-along highlighting and a floating player that keeps playing outside the reader, import local TXT and EPUB books, and let agent tools reach the same sources, shelf and text.'
-  zh: '在 DSH Web GUI 里读网络小说：导入 legado 书源、跨源搜索、带进度的书架、连续滚动阅读、听书（内置引擎、设备系统语音、legado HttpTTS 订阅、可选的宿主朗读服务），带跟读高亮与离开阅读器后继续播放的悬浮播放器，导入本地 TXT 与 EPUB，并让 AI 助手工具接到同一套书源、书架与正文上。'
+  en: 'Read web novels inside DSH: import legado book sources, search across them, keep a bookshelf with reading progress, read in one continuous scroll, listen with text-to-speech, import local TXT and EPUB books, and let agent tools reach the same sources, shelf and text.'
+  zh: '在 DSH 里读网络小说：导入 legado 书源、跨源搜索、带进度的书架、连续滚动阅读、听书、导入本地 TXT 与 EPUB，并让 AI 助手工具接到同一套书源、书架与正文上。'
