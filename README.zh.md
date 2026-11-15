@@ -1078,6 +1078,7 @@ dsh plugin --profile web add dshmarket
 - [JohnshyCY/dsh-multi-window](https://github.com/JohnshyCY/dsh-multi-window) — 仅 Windows 桌面版（Windows 10/11、DSH 桌面版 0.2.1-rc.5 及以上，`dsh web` 不适用）。把任意对话用独立原生窗口打开，从而同时显示多个对话。
 - [JosephHy/dsh-md-plus](https://github.com/JosephHy/dsh-md-plus) — DSH Web 会话的 Markdown 显示增强，在宿主渲染之上加样式与按钮而不替换渲染器：代码块变成带语言名和图标按钮（换行、复制）的卡片；超长的代码块、表格与 Mermaid 图会折叠，底部可展开收起；Mermaid 围栏渲染成 SVG，可在图形与代码间切换，支持全屏查看（滚轮缩放、拖拽、双击适应）以及导出 SVG 或 PNG；表格表头吸顶，并提供 CSV 或 Markdown 复制；设置面板可调图表配色、代码字号、图表默认视图和三类折叠阈值。
 - [joshua05100413-cmd/dsh-AcidCore-plugins#dsh-composer-meter](https://github.com/joshua05100413-cmd/dsh-AcidCore-plugins/tree/main/dsh-composer-meter) — dsh 输入框计量：输入框下方的 pill 显示草稿字数、预估 token 与本会话估算费用（内置 DeepSeek 官方价目，高峰/空闲与 Flash / Pro 自动换价，可自定义）；点开面板可看 token 明细、最近 6 份草稿快照（保险箱）与草稿清洗，写回只走宿主的 setDraft 接口。
+- [joythatway/dsh-screenshot](https://github.com/joythatway/dsh-screenshot) — 输入框截图菜单，三种模式：框选（自动让开 DSH 窗口）、窗口列表（悬停实时预览）、整屏；图片直接进草稿，多张草稿图可用键盘画廊翻看。
 - [Js2Hou/dsh-mcp-manager](https://github.com/Js2Hou/dsh-mcp-manager) — DSH 网页 MCP 可视化管理插件：在「设置 → MCP」中查看/新增/删除/启停 MCP 服务器，实时显示连接状态与工具数。
 - [jsdvjx/dsh-strata](https://github.com/jsdvjx/dsh-strata) — 滚动条槽位里的会话缩略图：按事件类型着色的等比色块、用户与失败锚点、滚到顶自动补载历史、悬停线索墙铺开全部发言，附近/中/全三档地图尺度切换。
 - [jue5hen/dsh-window-size](https://github.com/jue5hen/dsh-window-size) — 在设置页设置 DeepSeek Harness 桌面版启动时的窗口大小，内置 4:3、16:9、16:10 比例预设，支持保存最多 12 个自定义预设。
@@ -2340,6 +2341,7 @@ dsh plugin --profile web add dshmarket
 - [zhangyongshuai56-hub/dsh-model-picker-brand](https://github.com/zhangyongshuai56-hub/dsh-model-picker-brand) — 在 DSH 模型选择器中显示各提供商的 logo 与模型 ID：通过官方 conversation.input.model.label 插槽注册标签装饰器；按 token、显示名、模型 ID 与显式覆盖四级匹配，未知提供商回退为字母 monogram。
 - [zhao-guang-ai/dsh-quote-annotate-pro](https://github.com/zhao-guang-ai/dsh-quote-annotate-pro) — DSH 会话与文档预览里的划词批注：带编号的引用块在输入框和已发送消息里始终可见、点一下跳回原文；docx / PDF / Markdown / 代码与 Excel 选区批注可攒起来一次性发送；批注框支持语音输入。
 - [zhaochengggg/dsh-a2ui-studio](https://github.com/zhaochengggg/dsh-a2ui-studio) — 受 A2UI 启发的模型生成应用卡片，提供持久机器目录、SSH 探测及经审阅授权的监控与控制操作。SSH 探测需 OpenSSH（ssh、ssh-keyscan、ssh-keygen）。
+- [zhaochunqi/dsh-magpie-route](https://github.com/zhaochunqi/dsh-magpie-route) — 在输入框下方显示 magpie 路由组别名背后的真实上游模型，从本地网关的路由记录刷新；只读，不提供命令或工具。
 - [zhaohongxuan/dsh-weread](https://github.com/zhaohongxuan/dsh-weread) — 通过微信读书 Skills API Key 提供书架、今日阅读、笔记日历、阅读统计、年度书墙、AI 总结与原文跳转的 Web 面板。
 - [zhaoqiminggg/dsh-approval-translator](https://github.com/zhaoqiminggg/dsh-approval-translator) — 在权限审批弹窗下面加一个「解释这条操作」按钮：调用当前会话模型，把待批准的操作翻成大白话——做什么、碰哪些文件、会不会改动或删除、有没有隐私风险——再给出风险等级和允许或拒绝的建议。解释以简体中文生成；常见说法：审批解释、审批汉化、风险解释。
 - [zhaoxiagongsi001/dsh-prompt-forge](https://github.com/zhaoxiagongsi001/dsh-prompt-forge) — 输入框提示词优化：工具行一个按钮，用你已配置的模型渠道改写草稿，结果流式输出到贴着输入框上沿、不占布局的面板里。只有点「采纳」才会替换草稿，且生成中拒绝采纳——半截答案不会被写回；草稿含 @引用或附件时先确认一次，因为整段替换会把它们降级成纯文本。没有任何全局快捷键，密钥也不会进浏览器（模型调用在宿主半边完成）。
@@ -6161,6 +6163,7 @@ dsh plugin --profile web add dshmarket
 - [linfeicxy/dsh-idea-box](https://github.com/linfeicxy/dsh-idea-box) — 界面里一颗灯泡：写一句话或拖一张截图，回车就存成工作区里的 Markdown 文件。
 - [LINGTIAN303/dsh-agents-visualization](https://github.com/LINGTIAN303/dsh-agents-visualization) — 在 DSH 设置页查看、创建与编辑 AGENTS.md 等 AI 规则文件：项目级跟随工作区从项目根到 cwd 的目录链，全局级覆盖 ~/.dsh 与 ~/.agents，另含 25 个第三方 AI 工具的用户级规则文件。预览以渲染态展示并自动剥离 .mdc 的 frontmatter，就地编辑并带冲突检测，内容完全相同的跨工具文件会互相标注，内置清单之外的工具按目录特征自动发现。零运行时依赖。
 - [LinJohn8/dsh-local-Sub2api](https://github.com/LinJohn8/dsh-local-Sub2api) — 把一套本机私有的 Sub2API 网关（Sub2API + PostgreSQL + Redis，Docker 方式）内嵌到 DeepSeek Harness 侧栏，并自动本地登录。仅限 Windows，需已装好 Docker Desktop 与 WSL2 后端；首次启动要从 Docker Hub 拉取约 250 MB 镜像，并占用本机 18080、18081 端口。
+- [linlinxxy77-hue/dsh-paper-translate](https://github.com/linlinxxy77-hue/dsh-paper-translate) — 把英文论文 PDF 译成中文 DOCX 并按原版式重排（插图、图注、三线表、公式、参考文献位置不变，参考文献正文保留英文），并可生成文献总结。将 Python 流水线（解析、重建、校验）封装为 16 个 DeepSeek Harness 工具。
 - [linyu19872008/dsh-dr-panda-mcp](https://github.com/linyu19872008/dsh-dr-panda-mcp) — 通过 Streamable HTTP 将已部署的 DrPanda MCP 只读排查服务桥接入 DeepSeek Harness。需要你自己部署的 DrPanda MCP 服务及其 Bearer token（DR_PANDA_MCP_URL、DR_PANDA_MCP_TOKEN）。
 - [Lion-1209/dsh-plugin-wiki-tools](https://github.com/Lion-1209/dsh-plugin-wiki-tools) — Obsidian wiki vault 原生工具：wiki_query、wiki_write、wiki_rename、wiki_scaffold、wiki_archive、wiki_lint 覆盖 BM25 链接图检索、带 sha256 源追踪的簿记式写入、全库改名、模式化脚手架、源归档与健康检查，并内置跨进程锁与可选 git 自动提交。
 - [liqiming-whu/dsh-environment-context](https://github.com/liqiming-whu/dsh-environment-context) — 将实时的时间、天气、地点、电量和设备信息注入 DSH 系统提示，并提供双语设置页面。
@@ -7599,7 +7602,7 @@ dsh plugin --profile web add dshmarket
 - [Jesse-njx/dsh-voice](https://github.com/Jesse-njx/dsh-voice) — 语音输入、语音输出：把口述音频转写为用户消息（transcribe），让 agent 朗读回复（speak），本地优先，音频存于 ~/.dsh/voice。
 - [joeseesun/qiaomu-audio-dsh](https://github.com/joeseesun/qiaomu-audio-dsh) — 在 Harness 中朗读 Markdown、听写和转写音频，并导出配音媒体。
 - [Jstn-1g/dsh-live-voice](https://github.com/Jstn-1g/dsh-live-voice) — DSH Web 的会话绑定单轮语音预览：提供无需凭证的本地合成演示和可选的 Qwen Audio，保持精确会话隔离，并仅在明确操作后将转写写入草稿，不会自动提交。
-- [junarch/voice_for_dsh#voice-for-dsh](https://github.com/junarch/voice_for_dsh/tree/main/packages/voice-for-dsh) — 让 DSH 开口说话：每轮回答先改写成自然口语再朗读，代码、表格与 Markdown 自动处理；系统 TTS 开箱即用，豆包（第三方 API）提供方言与情感演绎，本地 Kokoro 引擎离线运行、内容不出本机；支持 DSH 桌面版与 dsh web。另附工作／完成／提问三种会话状态提示音——会话在跑、跑完了、等你回答各有提示，音色可换、也能上传自己的音频。
+- [junarch/voice_for_dsh#voice-for-dsh](https://github.com/junarch/voice_for_dsh/tree/main/packages/voice-for-dsh) — 用自然语言播报每轮回答，自动总结结构化内容（如表格和代码块），播报长度可调，支持接近原文长度的详细播报与极简播报。朗读引擎可选系统朗读、DeepSeek 官方 TTS、豆包（支持方言与情绪演绎）或本地 Kokoro（本机离线合成）。另提供三种会话提示音：工作音（处理期间循环播放）、完成音（本轮结束）、提问音（等待回答）；内置音色可切换，也支持上传自定义音频，素材仅保存在本机。
 - [jypjypjypjyp/dsh-music-studio](https://github.com/jypjypjypjyp/dsh-music-studio) — 在对话里作曲：模型按内置作曲规范写出乐谱 JSON，play_score 工具校验后渲染成对话内的卡片，含卷帘图、Web Audio 实时播放与 WAV/JSON 导出。
 - [KeinsteinNUS/dsh-speech-polish](https://github.com/KeinsteinNUS/dsh-speech-polish) — 给内置本地语音转写加一层术语纠错：沿用自带的麦克风与 SenseVoice 引擎（音频不出本机），在文字进入输入框前修正同音字、专业名词与数字写法。
 - [kekydream/dsh-meeting-room](https://github.com/kekydream/dsh-meeting-room) — 会议记录插件：一个会话对应一场会议，本机离线转写与发言人分离；要点、工作安排、手写笔记、复盘与月度评分都在面板里完成。可导出 SRT／Markdown／Word，也能打成「会议工程包」（zip）在另一台 dsh 导入；已确认的工作安排按设置一键推送到钉钉／企业微信。识别模型可更换（支持从本地文件导入更强的模型），云端识别默认关闭、未同意即零请求。导出 Word 需 Python 与 python-docx；首次使用会下载识别模型（28 MB 或 77 MB）。
@@ -9495,6 +9498,7 @@ dsh plugin --profile web add dshmarket
 - [xiaoshihou514/dsh-weixin](https://github.com/xiaoshihou514/dsh-weixin) — 通过微信远程控制 DeepSeek Harness，支持任意文件传输。
 - [xiaxingtianxia2-glitch/dsh-chime](https://github.com/xiaxingtianxia2-glitch/dsh-chime) — 为 DeepSeek Harness 复刻 opencode 的任务完成提示音，完成、提问、计划待审、出错四种场景播放原始音效，零外部依赖。
 - [xinyang920/dsh-caps-beacon](https://github.com/xinyang920/dsh-caps-beacon) — 把 MacBook 键盘的 Caps Lock 指示灯变成 agent 状态灯：干活时常亮，等你审批或回答时快闪，空闲时熄灭。
+- [Xm-Coding/dsh-turn-notifier](https://github.com/Xm-Coding/dsh-turn-notifier) — 在 DeepSeek Harness 每轮会话结束时，将最终模型回复摘要发送到 macOS 通知中心。
 - [xmanrui/dsh-feishu](https://github.com/xmanrui/dsh-feishu) — 通过扫码把飞书机器人接入DeepSeek Harness。
 - [xmanrui/dsh-im](https://github.com/xmanrui/dsh-im) — 通过二维码或机器人凭据将 IM 机器人接入 DeepSeek Harness（支持飞书、微信、钉钉、企业微信、QQ、Slack、Telegram、Discord 和 WhatsApp 共 9 种渠道）。
 - [xmanrui/dsh-weixin](https://github.com/xmanrui/dsh-weixin) — 通过微信扫码把微信机器人接入 DeepSeek Harness。
@@ -11288,6 +11292,7 @@ dsh plugin --profile web add dshmarket
 - [xxxiii/dsh-fish-dream](https://github.com/xxxiii/dsh-fish-dream) — 给 dsh-fish 里的她做梦：安静够久之后，从她真实的事件流里挑碎片，按六种梦理论之一拼成「梦的种子」，她自己把梦写完。提供三个工具（dream_recall、dream_record、dream_now），插件自己不调用模型，数据放在 ~/.dsh-fish-dream。梦只能用真实发生过的事重拼，理论只决定怎么拼。
 - [Yang-wudi/dsh-kun-like-pet#kunpet-dsh](https://github.com/Yang-wudi/dsh-kun-like-pet/tree/main/packages/kunpet-dsh) — 住在 DSH Web 界面右下角的坤坤桌宠：随 Agent 状态切换动作，任务完成时播放「你干嘛~哎哟」。
 - [yimeng-life/dsh-happy](https://github.com/yimeng-life/dsh-happy) — 给 DSH 对话区加十种整屏动效背景——星空、代码雨、电路、华山论剑、小猫、小女生、飞机大战、赛车、飘雪、肥皂泡；每回合随机一个，正文列有纱罩保证可读。
+- [yishan/dsh-synthesizer](https://github.com/yishan/dsh-synthesizer) — 多轨 Web Audio 合成器与 8 件套鼓机，提供钢琴卷帘步进编曲、调式与和弦生成、4 个 Agent 编曲工具与 /synth 命令、侧栏后台播放及 WAV/MIDI 导出。
 - [yizhuzhu-glitch/dsh-pet-mic-lite](https://github.com/yizhuzhu-glitch/dsh-pet-mic-lite) — 麦克风识别「摸摸」动作，只把今天被摸了几次写进本地 JSON 文件，供桌面宠物读取。
 - [Yuanawaqwq/dsh-columbina-pet](https://github.com/Yuanawaqwq/dsh-columbina-pet) — 哥伦比娅桌宠：桌面与网页面板上都有 2D live 形象，四套形象、76 句中日英原声台词、天气播报、表情包时刻、闲暇碎碎念，右键菜单可调动图切换间隔、形象、语言与大小。另有夜间勿扰、音量与一键静音、可搜索的待机动作勾选、省电模式。本插件是 PC2005-cloud/dsh-pet（MIT）的 2D 专用分支，去掉了上游的 3D 形象切换；使用独立插件 ID，可与 dsh-pet 同时安装。
 - [yuanzephyr920-oss/dsh-om-messiah](https://github.com/yuanzephyr920-oss/dsh-om-messiah) — 发送前把提示词改写成机械神教祷文，再让你选择发送祷文还是原文。
