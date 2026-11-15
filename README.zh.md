@@ -1613,6 +1613,7 @@ dsh plugin --profile web add dshmarket
 - [prettyfox/dsh-selection-quote-auto](https://github.com/prettyfox/dsh-selection-quote-auto) — 在 DeepSeek Harness 的助手消息里选中文字即自动复制，并弹出「注释」浮框，点开才是评论框；右键引用菜单与 ⌘L 仍然保留。
 - [prgrmrwy/dsh-sidebar-session-provider-icon](https://github.com/prgrmrwy/dsh-sidebar-session-provider-icon) — DeepSeek Harness 插件：在侧边栏为每个会话显示 provider 与 model 图标，跟随输入框选择器即时更新，历史会话回退到最近一次请求；聚合路由（如 opencode-go、traex）显示 provider 主图并叠加 10px model 小图标。
 - [PrismScopes/dsh-aide](https://github.com/PrismScopes/dsh-aide) — 在 DeepSeek Harness 中提供 VS Code 风格的本地 IDE：Monaco 编辑器、资源管理器、搜索、Git、终端与语言服务。用 pnpm 安装时需运行 `pnpm approve-builds --all`，允许 node-pty 的原生构建。
+- [prog656/dsh-one-click-new-session](https://github.com/prog656/dsh-one-click-new-session) — 侧边栏底部新增一键入口，直接打开可输入的空白对话，不需要选择工作区；专用工作区自动创建，已有空白会话自动复用，连点也不会堆出一串空对话。
 - [psychiiii/dsh-three-window#personal-web](https://github.com/psychiiii/dsh-three-window/tree/publish/packages/personal-web) — dsh web 的三窗工作台：每个工作区并排显示聊天、施工和只读审核三个窗口，各窗口独立配置 hook；审核窗提供匿名多模型评审，先确认再运行，按同一件事归组，报告为 Markdown。
 - [Pudge1996/dsh-composer-stretch](https://github.com/Pudge1996/dsh-composer-stretch) — 输入框全屏扩展按钮——内容达 3 行以上时出现，点击扩展至全屏高度，发送后自动折叠；扩展模式下 Enter 与 Shift+Enter 换行，Cmd/Ctrl+Enter 发送。
 - [pure-craft/dsh-actions](https://github.com/pure-craft/dsh-actions) — 人与 Agent 共用的确定性项目任务：一份 actions.json，右侧栏运行面板与 Agent 工具双入口。
@@ -1787,6 +1788,7 @@ dsh plugin --profile web add dshmarket
 - [SiriLee/dsh-approval-hotkeys](https://github.com/SiriLee/dsh-approval-hotkeys) — Web UI 面板快捷键：在审批、提问、计划审查等交互面板上，Enter 触发确认操作、Esc 触发取消操作。
 - [SiriusWJ/dsh-screenshot-button](https://github.com/SiriusWJ/dsh-screenshot-button) — 在 DSH 输入面板工具行加一个相机按钮，点击调起系统自带截图工具（Windows 截图工具已实测；macOS screencapture、Linux GNOME Screenshot / Spectacle / scrot 未实机验证，scrot 需 wl-copy 或 xclip），截图进剪贴板后按 Ctrl+V 粘贴；宿主路由只接受 Host 为本机回环地址的 POST。
 - [SivanCola/dsh-note](https://github.com/SivanCola/dsh-note) — 本地 Markdown 笔记库：三栏布局（导航栏、目录树、编辑器）、双栏实时预览、标签、收藏与置顶、聚合全库复选框并回写文件的待办中心、全文搜索、会话沉淀成笔记、把笔记插入对话、把回答保存为笔记、跳回来源回答的链接、笔记库目录与字号设置，以及四个 note_* 工具。
+- [Six6stRINgs/dsh-settings-sidebar-organizer](https://github.com/Six6stRINgs/dsh-settings-sidebar-organizer) — 通过拖拽调整 DSH 设置入口的顺序，并将入口整理为可折叠分组。
 - [sixzjd/dsh-folder-attach](https://github.com/sixzjd/dsh-folder-attach) — 在 DeepSeek Harness 网页版直接拖文件夹进输入框，不再提示「只有桌面端支持添加文件夹」。新增主机文件夹选择框、/folder 命令，拖入/粘贴自动解析为 @路径 引用。纯浏览器可用，无需桌面端。
 - [sjrslh/dsh-ui-zoom](https://github.com/sjrslh/dsh-ui-zoom) — Ctrl+滚轮整页缩放（60%–180%，记住比例），右下角常驻「设置」入口可打开宿主设置面板，Ctrl+0 复位。
 - [skillpie/dsh-plugins#dsh-termbar](https://github.com/skillpie/dsh-plugins/tree/main/dsh-termbar) — 终端栏：在 Web GUI 右上角工具区添加终端开关按钮，点按打开/关闭底部终端面板；PTY 引擎跑在 subprocess 服务上，同源控制 API + WebSocket I/O，支持会话列表与回滚缓冲。
@@ -3565,7 +3567,7 @@ dsh plugin --profile web add dshmarket
 - [dev-cmde/dsh-routerai-prices](https://github.com/dev-cmde/dsh-routerai-prices) — 列出 profile 里各模型的 RouterAI 提示、补全和缓存读取价格（每百万 token），并高亮当前在用的那个。需要配置键为 routerai 的模型 provider；缺了表格不显示数据。
 - [devhang/dsh-llm-sampling-params](https://github.com/devhang/dsh-llm-sampling-params) — 把按模型的採樣參數注入發往 OpenAI 相容閘道的 chat-completions 請求：在 transport 層包裹 fetch，用請求 body 的 model 別名查詢設定好的 models 表，對網址含 /v1/chat/completions 的請求設定 temperature、top_p、top_k、min_p、repeat_penalty、presence_penalty 與 frequency_penalty，並額外送 repetition_penalty 給 SGLang 與 vLLM。
 - [DeZhou123/dsh-model-orchestrator](https://github.com/DeZhou123/dsh-model-orchestrator) — 两级模型调度：先在模型层选最优模型组，再在该模型的渠道层选最佳渠道；失败时先换同模型的其它渠道，整个模型不可用才换模型。偏好模式把单个模型锁在它的各条渠道上，输入框下方的状态条实时显示当前模型、渠道健康与今日 token 用量，并可从测速/智力报告导入路由先验；另提供 model_orchestrator 工具与 /route 命令。
-- [DHLlib/online_model_discovery](https://github.com/DHLlib/online_model_discovery) — 为第三方 pi-ai 提供商提供在线模型列表发现与逐模型思考强度编辑。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [DHLlib/online_model_discovery](https://github.com/DHLlib/online_model_discovery) — 为第三方 pi-ai 提供商提供在线模型列表发现与逐模型思考强度编辑。
 - [dingminhua/dsh-connect-qoder](https://github.com/dingminhua/dsh-connect-qoder) — 通过 PAT 将 Qoder（通义灵码国内版 / 国际版）模型接入 DSH，支持按区域的多账号池、每日签到、自动换号与只读积分展示。
 - [dingminhua/dsh-connect-trae](https://github.com/dingminhua/dsh-connect-trae) — 将本机登录的 Trae 中国区模型接入 DSH，支持由 DSH 执行工具调用、账号切换，以及 Work/通用积分展示。
 - [dingminhua/dsh-connect-workbuddy](https://github.com/dingminhua/dsh-connect-workbuddy) — 将本机登录的 WorkBuddy 模型（国内版与国际版）接入 DSH，每次刷新按上游目录读取每个模型的积分倍率，支持逐模型图片输入开关、带自动换号的账号池、手动每日签到，以及卡片与输入框里的只读积分胶囊读数。
