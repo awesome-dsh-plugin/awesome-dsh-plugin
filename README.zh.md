@@ -2908,6 +2908,7 @@ dsh plugin --profile web add dshmarket
 - [Switcha57/dsh-mistral-spend](https://github.com/Switcha57/dsh-mistral-spend) — 在侧边栏实时显示 Mistral Vibe 与 API 预算使用情况，按模型追踪令牌成本与缓存令牌支出，并支持管理 API 密钥。需要配置 Mistral API key（默认环境变量 MISTRAL_API_KEY，或自定义 apiKeyEnv）。
 - [sxwer001/dsh-coding-plan-quota](https://github.com/sxwer001/dsh-coding-plan-quota) — DSH 模型选择器旁的额度圆环，读取 OpenCode Go 等 15 个 coding plan 的用量或余额，点击循环 5 小时、每周、每月窗口，按紧急程度着色。
 - [Synapse-ACh/dsh-subagent-cost](https://github.com/Synapse-ACh/dsh-subagent-cost) — 在输入框工具条上统计本会话派出的子智能体 token 用量与人民币花费，按 turn 分组。
+- [sys65/dsh-share-kit](https://github.com/sys65/dsh-share-kit) — 在每条回答的动作条上加一个导出按钮：复制为 Markdown（嵌套列表、表格、带语言标签的代码块、KaTeX），复制为内联计算样式的富文本直接粘进 Word 或飞书，或下载样式表与公式字体都已内嵌的自包含 .html。
 - [Balance & Quota · 余额与额度](https://github.com/takboo/dsh-usage-state) — 在输入框上方查看当前模型供应商的账户余额或套餐额度，显示已用比例和重置倒计时。
 - [tcmyxc/dsh-power-monitor](https://github.com/tcmyxc/dsh-power-monitor) — 在左侧边栏账号头像上方显示整机功耗、今日用电量与电费估算，支持电价与 CPU TDP 校准。
 - [teethyachi/dsh-usage-mini](https://github.com/teethyachi/dsh-usage-mini) — DSH Web 悬浮用量小窗，显示 Claude、Codex 订阅用量窗口与重置倒计时，以及 DeepSeek API 今日花费与余额；只展示，是 dsh-cost-meter 的伴侣。
@@ -7890,7 +7891,7 @@ dsh plugin --profile web add dshmarket
 - [logb-1/dsh-course-assistant](https://github.com/logb-1/dsh-course-assistant) — 把课程文件（PPTX、PDF、DOCX、Markdown）解析成目录、带原文引证的分章要点、B 站网课推荐与考纲覆盖检查，并可导出 Anki 卡片和 JSON。
 - [longbowzz/CodeGraph](https://github.com/longbowzz/CodeGraph) — 把代码流程变成可跳转源码的 Mermaid 图和交互式 CodeWalkthrough 讲解页。
 - [Lry722/dsh-humanize](https://github.com/Lry722/dsh-humanize) — 面向人类写入内容的行文审查。write 和 edit 调用需声明 human_facing，插件在后台按分层 PROSE.md 规则审查文本并暂存批注，再按全文核对已有批注，主会话照常推进；用 /humanize、/humanize-loop 或压缩后自动合并批注，/humanize-review 按需批量审查 git 管理的文件。
-- [ltmroberthk915/markpilot#dsh-markdown-editor-typora](https://github.com/ltmroberthk915/markpilot/tree/main/dsh-markdown-editor-typora) — MarkPilot · IDE 式 Markdown × AI 工作台：文件树、编辑器与对话并排，分栏可拖；选中文段一键把 Markdown 源码和文件路径送进对话，@mp 引用当前文档。按工作目录记住最近笔记，切项目不丢文档；空白稿首次保存落在原目录。Typora 式即时渲染，公式点哪改哪、表格格内编辑、离线 Mermaid 与 KaTeX、十套主题与透明外观；15 万字长文交给 Worker，输入不卡。保存走版本守卫与原子落盘，冲突给横幅而不覆盖；外部改写 1–2 秒自动采纳，有草稿时给可操作提示，草稿可恢复；消息里的 file:// 链接与 .md 路径芯片直接进工作台。2.0 增加持久文档状态、缺失/改名/只读生命周期横幅、恢复中心与另存为。全部资源离线、MIT、544 自动化测试。
+- [ltmroberthk915/markpilot#dsh-markdown-editor-typora](https://github.com/ltmroberthk915/markpilot/tree/main/dsh-markdown-editor-typora) — MarkPilot · IDE 式 Markdown × AI 工作台：文件树、编辑器与对话并排，分栏可拖；选中文段一键把 Markdown 源码和文件路径送进对话，@mp 引用当前文档。按工作目录记住最近笔记，切项目不丢文档；空白稿首次保存落在原目录。Typora 式即时渲染，公式点哪改哪、表格格内编辑、离线 Mermaid 与 KaTeX、十套主题与透明外观；15 万字长文交给 Worker，输入不卡。保存走版本守卫与原子落盘，冲突给横幅而不覆盖；外部改写 1–2 秒自动采纳，有草稿时给可操作提示，草稿可恢复；消息里的 file:// 链接与 .md 路径芯片直接进工作台。2.0 增加持久文档状态、缺失/改名/只读生命周期横幅、恢复中心与另存为。紧凑顶栏为正文留出更多空间，窄分栏的输入控件按可用宽度排列，拖动时收起的工具栏保持稳定。全部资源离线，MIT 许可。
 - [Lucky020/dsh-copyright-kit](https://github.com/Lucky020/dsh-copyright-kit) — 把代码仓库和软件名变成软件著作权登记材料：60 页源程序鉴别材料（每页 50 行自动分页）、带截图的软件说明书、以及申请表信息推导（源程序量、语言、完成日期、功能简介）。需 Python 3 与 python-docx，截图需 Google Chrome。
 - [Lucky020/dsh-delivery-kit](https://github.com/Lucky020/dsh-delivery-kit) — 把代码仓库与运行中的系统变成验收材料：数据库设计、概要设计、详细设计、带截图的使用说明书，以及测试报告、上线报告、验收报告。章节按 GB/T 8567-88 组织，无法核实的字段与结论一律留空，不编造。需 Python 3 与 python-docx 生成 .docx，自动截图需 Google Chrome。
 - [LuoShanHui/dsh-doc-ledger](https://github.com/LuoShanHui/dsh-doc-ledger) — 在 DSH 右侧栏按会话查看文档台账（仅 Windows，界面仅中文）：用过哪些文档、创建/修改了哪些，带时间排序、类型分组、搜索与两种预览。
