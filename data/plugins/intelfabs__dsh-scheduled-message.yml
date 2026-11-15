@@ -1,0 +1,6 @@
+url: https://github.com/intelfabs/dsh-scheduled-message
+name: intelfabs/dsh-scheduled-message
+category: workflow
+description:
+  en: 'Schedule a message you are writing in the DSH composer to be sent later by the Host, list and edit every scheduled message from one sidebar tab, or turn it into a repeating Automation task.'
+  zh: '给 DSH 输入框里正在写的消息设定发送时间，由 Host 到期投递；「Scheduled」标签页集中列出并编辑全部定时消息，勾选重复则改为 DSH Automation 任务。'
