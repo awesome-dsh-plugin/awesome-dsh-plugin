@@ -1,7 +1,0 @@
-url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-agreement-check'
-name: 'zjukop3/dsh-vertical-kit#dsh-agreement-check'
-category: 'tools'
-description:
-  en: 'Contract structure checks for Chinese agreements: parties, date, amount consistency (uppercase vs digits), signature blocks, dispute resolution, breach clauses.'
-  zh: '中文合同的结构检查：甲乙方、日期、金额大小写一致、签署栏、争议解决、违约责任。'
-icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'
