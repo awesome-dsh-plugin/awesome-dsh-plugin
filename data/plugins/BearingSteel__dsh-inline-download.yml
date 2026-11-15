@@ -1,0 +1,7 @@
+url: https://github.com/BearingSteel/dsh-inline-download
+name: BearingSteel/dsh-inline-download
+category: ui
+description:
+  en: 'Adds a download button to uploaded file attachments in user messages, and to present delivery cards, streaming the original file to the browser; attachment downloads resolve the file from the Session log and authenticated coordinates rather than a URL path.'
+  zh: '在用户消息里的上传文件气泡上添加下载按钮，同时覆盖 present 交付卡片，把原始文件流式下载到浏览器；附件下载通过会话日志与鉴权坐标定位文件，URL 中不携带路径。'
+icon: https://raw.githubusercontent.com/BearingSteel/dsh-inline-download/main/assets/icon-180.png
