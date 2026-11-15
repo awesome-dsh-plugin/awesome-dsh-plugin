@@ -2,5 +2,5 @@ url: https://github.com/zhaoqiminggg/dsh-instruction-optimizer
 name: zhaoqiminggg/dsh-instruction-optimizer
 category: tools
 description:
-  en: Turns rough, colloquial drafts into complete, executable instructions in a DSH sidebar, with session context, multi-round revision, and attachment preservation.
-  zh: 把口语草稿整理成完整、可直接执行的指令，支持会话上下文、多轮修改以及附件和 @文件保留。
+  en: 'An instruction optimizer for DSH: instruction and prompt optimization that turns rough, colloquial drafts into complete, executable instructions, with session context, multi-round revision, and attachment preservation.'
+  zh: '指令优化器：DSH 里的指令优化与提示词优化工具。把口语草稿整理成完整、可直接执行的指令，支持会话上下文、多轮修改以及附件和 @文件保留。'
