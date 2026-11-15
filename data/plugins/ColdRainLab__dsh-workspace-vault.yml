@@ -1,7 +1,7 @@
 url: https://github.com/ColdRainLab/dsh-workspace-vault
 name: ColdRainLab/dsh-workspace-vault
 category: ui
-tarball: https://github.com/ColdRainLab/dsh-workspace-vault/releases/download/v0.1.0/dsh-workspace-vault-0.1.0.tgz
+tarball: https://github.com/ColdRainLab/dsh-workspace-vault/releases/download/v0.1.1/dsh-workspace-vault-0.1.1.tgz
 
 description:
   en: 'Pin workspaces and tasks in the sidebar, with a password-protected hidden space and a workspace access lock. The lock only hides items in the interface and does not encrypt session files on disk; dsh-workspace-sync skips hidden and locked items.'
