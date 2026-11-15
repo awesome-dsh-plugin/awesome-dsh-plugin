@@ -1,0 +1,6 @@
+url: https://github.com/clair0314/dsh-inspiration-vault
+name: clair0314/dsh-inspiration-vault
+category: memory
+description:
+  en: 'A local idea vault: record one line, find it again by keyword, stored as plain markdown cards in your home directory.'
+  zh: '本地灵感库：一句话记下，按关键词搜回来，卡片存在自己电脑上的纯 markdown 文件里。'
