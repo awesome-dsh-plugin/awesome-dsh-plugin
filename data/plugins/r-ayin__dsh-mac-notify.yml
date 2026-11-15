@@ -1,0 +1,7 @@
+url: https://github.com/r-ayin/dsh-mac-notify
+name: r-ayin/dsh-mac-notify
+category: notify
+description:
+  en: 'macOS desktop notifications for dsh events, delivered over SSH to a small notifier HTTP listener running on the Mac.'
+  zh: '监听 DSH 事件（任务完成、出错、子agent结束等），经 SSH 在 Mac 上弹 macOS 桌面通知。'
+tarball: https://github.com/r-ayin/dsh-mac-notify/releases/download/v0.0.2/dsh-mac-notify-0.0.2.tgz

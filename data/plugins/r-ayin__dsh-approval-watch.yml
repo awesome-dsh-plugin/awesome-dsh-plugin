@@ -1,0 +1,7 @@
+url: https://github.com/r-ayin/dsh-approval-watch
+name: r-ayin/dsh-approval-watch
+category: ui
+description:
+  en: 'Floating overlay that surfaces pending approvals, plan reviews and user questions from any session, with click-through to the session.'
+  zh: '全局审批/问答提醒浮窗：任何会话出现待审批、计划待审或待回答问题时右下角常驻浮层，点击直达对应会话。'
+tarball: https://github.com/r-ayin/dsh-approval-watch/releases/download/v0.1.1/dsh-approval-watch-0.1.1.tgz

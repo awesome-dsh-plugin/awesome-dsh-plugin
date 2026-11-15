@@ -1,0 +1,7 @@
+url: https://github.com/r-ayin/dsh-resource-lease
+name: r-ayin/dsh-resource-lease
+category: dev
+description:
+  en: 'Resource lease governance: auto-registers browser tabs, background jobs, processes and ports as session-owned leases with TTL auto-reclaim, pinning and manual sweep.'
+  zh: '资源租约治理：浏览器tab/后台job/进程/端口打开即登记租约，会话结束或 TTL 到期自动回收，可固定豁免。'
+tarball: https://github.com/r-ayin/dsh-resource-lease/releases/download/v0.0.2/dsh-resource-lease-0.0.2.tgz

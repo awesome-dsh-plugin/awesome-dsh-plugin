@@ -1,0 +1,7 @@
+url: https://github.com/r-ayin/dsh-en2zh
+name: r-ayin/dsh-en2zh
+category: ui
+description:
+  en: 'Live English-to-Chinese translation of model output in the web UI - translation above, original kept aside - with an optional local MT engine and LLM fallback.'
+  zh: '模型输出英译中（沉浸式翻译）：译文在上原文在旁，支持本地 MT 引擎并自动回退 LLM。'
+tarball: https://github.com/r-ayin/dsh-en2zh/releases/download/v0.0.2/dsh-en2zh-0.0.2.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/r-ayin/dsh-skill-commands
+name: r-ayin/dsh-skill-commands
+category: skill
+description:
+  en: 'Smarter slash-command matching for skills: suffix, contains and alias matching (e.g. /studio finds autonomous-studio).'
+  zh: '技能斜杠命令智能匹配：后缀/包含/别名（如 /studio 命中 autonomous-studio）。'
+tarball: https://github.com/r-ayin/dsh-skill-commands/releases/download/v0.1.2/dsh-skill-commands-0.1.2.tgz

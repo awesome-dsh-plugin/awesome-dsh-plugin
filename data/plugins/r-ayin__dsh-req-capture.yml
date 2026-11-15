@@ -1,0 +1,7 @@
+url: https://github.com/r-ayin/dsh-req-capture
+name: r-ayin/dsh-req-capture
+category: dev
+description:
+  en: 'Diagnostic plugin: wraps global fetch to log requests and capture bodies whose URL matches a configurable substring to disk.'
+  zh: '诊断插件：包装全局 fetch，记录请求日志并把 URL 命中可配置子串的请求体落盘，用于离线分析。'
+tarball: https://github.com/r-ayin/dsh-req-capture/releases/download/v0.0.2/dsh-req-capture-0.0.2.tgz

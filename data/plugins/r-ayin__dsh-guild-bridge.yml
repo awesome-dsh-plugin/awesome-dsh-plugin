@@ -1,0 +1,7 @@
+url: https://github.com/r-ayin/dsh-guild-bridge
+name: r-ayin/dsh-guild-bridge
+category: remote
+description:
+  en: 'Bridges a guild expert-team board into dsh: routes guild tasks to one-shot dsh subagents, visible in the GUI.'
+  zh: 'guild 专家团看板与 DSH 执行层桥接：把 guild 任务路由为 DSH 一次性子代理执行。'
+tarball: https://github.com/r-ayin/dsh-guild-bridge/releases/download/v0.0.2/dsh-guild-bridge-0.0.2.tgz
