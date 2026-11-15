@@ -1,0 +1,6 @@
+url: https://github.com/leleou209/dsh-commander
+name: leleou209/dsh-commander
+category: workflow
+description:
+  en: A resident commander agent for DSH sessions that gates goal completion, goal edits and user questions, then drives the next turn in full mode.
+  zh: 给 DSH 会话配一位常驻指挥员：托管「算不算完成、能不能改目标、该不该问用户」三个判断点，全接管时按轮次驱动下一轮。
