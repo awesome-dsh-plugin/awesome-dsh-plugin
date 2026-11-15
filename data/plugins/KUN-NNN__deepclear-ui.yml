@@ -1,0 +1,7 @@
+url: https://github.com/KUN-NNN/deepclear-ui
+name: KUN-NNN/deepclear-ui
+category: theme
+description:
+  en: 'A dot-matrix welcome page for the DeepSeek Harness web UI: a halftone mascot portrait and a deepseek / harness wordmark, scaled to the window and sitting on the composer.'
+  zh: '新会话欢迎页的点阵装饰：半调点阵的鲸鱼娘人像与 deepseek / harness 点阵字标，随窗口缩放并贴住输入框。'
+icon: https://raw.githubusercontent.com/KUN-NNN/deepclear-ui/main/assets/icon-180.png
