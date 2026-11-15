@@ -1,0 +1,7 @@
+url: https://github.com/automagik-si/automagik/tree/dev/apps/locale-pt-br-dsh
+name: automagik-si/automagik#locale-pt-br-dsh
+category: ui
+description:
+  en: "Brazilian Portuguese for the Bot team plugin (automagik-si/automagik#bots-dsh): its interface strings, registered under DSH's own Português language entry, so Settings › General › Language keeps one Portuguese row; a pt-BR choice saved by an older version of this pack moves to DSH's pt."
+  zh: "为 Bot 团队插件（automagik-si/automagik#bots-dsh）提供巴西葡萄牙语界面文案，注册在 DSH 自带的 Português 语言条目下，因此在 设置 › 通用 › 语言 中仍只有一个葡萄牙语选项；本语言包旧版本保存的 pt-BR 选择会迁移到 DSH 的 pt。"
+tarball: https://github.com/automagik-si/automagik/releases/download/v3.130.0/automagik-locale-pt-br-dsh-3.130.0.tgz

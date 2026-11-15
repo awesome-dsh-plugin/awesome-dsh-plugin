@@ -1,0 +1,7 @@
+url: https://github.com/automagik-si/automagik/tree/dev/apps/acp-dsh
+name: automagik-si/automagik#acp-dsh
+category: model
+description:
+  en: "Claude Code, Codex, Hermes, Antigravity and omp as DSH models over the Agent Client Protocol (ACP), using each CLI already installed and signed in on the computer, with the models and reasoning efforts the agent reports. The agent's tool calls show as DSH tool cards and its permission asks go to DSH's approval dialog; by default Claude Code runs on DSH's own tools instead of its built-in ones, through a per-session MCP bridge whose calls DSH approves under the Session's permission level. Hermes, Antigravity and omp are off until enabled in settings, and the ACP adapters for Claude Code and Codex are installed from npm in the background."
+  zh: "通过 Agent Client Protocol（ACP）把 Claude Code、Codex、Hermes、Antigravity 和 omp 接入为 DSH 模型，使用各自在本机已安装并已登录的 CLI，模型与推理等级以 Agent 上报的为准。Agent 的工具调用显示为 DSH 工具卡片，权限请求走 DSH 的审批框；默认情况下 Claude Code 不用自带工具，而是通过每个会话独立的 MCP 桥使用 DSH 自己的工具，每次调用都按该会话的权限级别由 DSH 审批。Hermes、Antigravity 和 omp 默认关闭，需在设置中开启；Claude Code 与 Codex 的 ACP 适配器会在后台从 npm 安装。"
+tarball: https://github.com/automagik-si/automagik/releases/download/v3.130.0/automagik-acp-dsh-3.130.0.tgz
