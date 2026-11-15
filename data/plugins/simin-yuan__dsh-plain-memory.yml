@@ -1,0 +1,6 @@
+url: https://github.com/simin-yuan/dsh-plain-memory
+name: simin-yuan/dsh-plain-memory
+category: memory
+description:
+  en: 'Plain-Markdown memory for DeepSeek Harness, stored in a Git repository the user owns, with local cue-based recall; zero runtime dependencies and no model calls inside the plugin. Multi-window state cards are experimental and off by default.'
+  zh: 记忆是纯 Markdown，存在你自己的 Git 仓库里，按线索词在本地召回；插件零依赖、零模型调用。多窗口状态卡为实验功能，默认关闭。
