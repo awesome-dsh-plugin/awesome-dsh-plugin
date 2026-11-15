@@ -1,5 +1,5 @@
-url: https://github.com/gabrielbav/dsh-plugin-session-delete
-name: gabrielbav/dsh-plugin-session-delete
+url: https://github.com/gabrielbav/dsh-workspace/tree/main/Plugins/dsh-plugin-session-delete
+name: gabrielbav/dsh-workspace#dsh-plugin-session-delete
 category: session
 description:
   en: 'Delete sessions for good: DSH can only archive them, and deleting a workspace leaves its sessions behind. Adds a trash button and menu items to delete a session (with its subagent sessions) or a workspace with all its sessions, and never touches one that is still running or open in another process.'
