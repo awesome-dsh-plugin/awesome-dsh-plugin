@@ -1885,6 +1885,7 @@ dsh plugin --profile web add dshmarket
 - [syzke/dsh-translate-on-select](https://github.com/syzke/dsh-translate-on-select) — 在 DSH 里用鼠标选中外文，选区正下方就地浮出简体中文译文卡片。
 - [Takeoff0518/dsh-katex-inline-copy](https://github.com/Takeoff0518/dsh-katex-inline-copy) — 在 DSH 对话里复制含公式的内容时，剪贴板里得到 $...$ / $$...$$ 的 LaTeX 源码，而不是 KaTeX 渲染碎片；代码块与输入框保持原生复制。
 - [tan90tan90/dsh-custom-menu](https://github.com/tan90tan90/dsh-custom-menu) — 侧栏启动器：钉上自己的入口，点一下直接打开本地文件夹（资源管理器）或网页（新标签页）；另可分组、隐藏自带菜单项。不做内嵌浏览。它的“打开文件夹”路由没有 DSH 的访问检查，浏览器里打开的网页可以让它在文件管理器里打开本地文件夹。
+- [tangmanto98-VoV/dsh-screenshot-button](https://github.com/tangmanto98-VoV/dsh-screenshot-button) — 在输入框加一个相机按钮：截你选中的那台显示器、全部屏幕，或用鼠标跨屏拖出的任意大小一块，图片直接作为附件放进草稿（仅 Windows）。
 - [tangu2023/dsh-menu](https://github.com/tangu2023/dsh-menu) — 为侧边栏「工作区文件」树添加自定义右键菜单：新建文件夹、重命名、在文件管理器中显示、浏览器打开、VS Code 打开、复制路径、流式 ZIP 下载、删除。
 - [Tansukii/dsh-screenshot](https://github.com/Tansukii/dsh-screenshot) — 区域截图工具，支持标注、放大器取色与剪贴板输出，并跟随 DSH 界面语言。仅限 Windows。
 - [tao1020/dsh-global-pins](https://github.com/tao1020/dsh-global-pins) — 会话散落在不同工作区，重要内容不好找？全局置顶把你选中的会话集中到侧边栏顶部，支持拖拽排序和清晰的插入位置提示，也可按最近更新时间自动排序。会话完成后小绿点提醒。还有 Codex 同款行内操作：运行中的会话右侧持续转圈显示进度，支持归档/恢复、点开就全选标题的重命名，右键菜单可 Fork 和上下移动。侧边栏「全局置顶」旁的放大镜打开搜索浮层：先按会话标题和工作区名匹配，再查消息正文索引（部署开启内容索引时可用），结果按「会话」「内容」小标题分组，内容命中带摘要。右侧准星按钮可跨折叠工作区跳到当前打开的会话，每个分组标题带半透明灰底，会话行更紧凑，能放下更多条目。v1.0.6 新增「最近会话」：当天用过且未置顶的会话会从各个工作区集中到置顶下方，按时间从近到远排列，第二天自动回到原工作区；分组标题可折叠，折叠时视图不会跳到顶部。
@@ -9517,6 +9518,7 @@ dsh plugin --profile web add dshmarket
 - [pitetow/dsh-notify-on-complete](https://github.com/pitetow/dsh-notify-on-complete) — 系统桌面通知：运行结束、模型提问与审批请求即时提醒，三平台提示音，零运行时依赖。
 - [PlasmaPerfuma/dsh-notify-card](https://github.com/PlasmaPerfuma/dsh-notify-card) — DeepSeek Harness 的独立审批浮窗：离开应用时弹出，切回时把请求交还原生卡片。仅 Windows（WPF/PowerShell）；独立分支自 zeta987/dsh-notify-zeta（MIT），不能与上游同时运行。
 - [PlutoKeating/dsh-lark-bot](https://github.com/PlutoKeating/dsh-lark-bot) — 把 DeepSeek Harness 装进飞书的桥接插件：扫码绑定 PersonalAgent、流式卡片、git worktree 项目工作区、scope 并行任务、多角色 Agent、跨会话通知、对话内模型/密钥管理，以及 dsh 崩溃后仍在飞书应答的安全网守护。
+- [poxiao-12138/dsh-poxiao-qqbot](https://github.com/poxiao-12138/dsh-poxiao-qqbot) — 将 QQ 官方机器人接入 DeepSeek Harness，支持 BreezeBlue 语音回复、Obsidian 记忆和根据聊天反馈微调角色卡。
 - [Pudge1996/dsh-task-feedback](https://github.com/Pudge1996/dsh-task-feedback) — 浏览器标签页 Favicon 实时回显会话状态，并支持需介入/已完成时的音效提示。
 - [Qing45/dsh-body-clock](https://github.com/Qing45/dsh-body-clock) — 可拖动的悬浮小窗，分吃饭、喝水、站立三个 tab：随机决定三餐（每天各 3 次机会、不重复、可增删菜品），记录喝水与站立，每类提醒各用一种音色响约 3 秒；可收成 32px 悬浮球。
 - [Qing45/dsh-feishu-chat](https://github.com/Qing45/dsh-feishu-chat) — 基于飞书官方 WebSocket 长连接的 DSH 双向聊天桥：消息路由到所选工作区的最新会话并自动回复，可在设置页切换机器人凭证与工作区。
