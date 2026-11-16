@@ -1,0 +1,6 @@
+url: https://github.com/MelanthaCode/english-reading-analysis/tree/main/dsh-plugin
+name: MelanthaCode/english-reading-analysis#dsh-plugin
+category: skill
+description:
+  en: 'Turns English passages and exam papers into Chinese analysis — paragraph-by-paragraph translation, bilingual questions with answers traced to the source, error analysis, long-sentence syntax breakdown — rendered live in a sidebar panel inside DeepSeek Harness, with an optional A4 PDF export. Windows, macOS and Linux.'
+  zh: '把英语文章与试卷转成中文分析：逐段翻译、题目与选项中英对照并给出答案、作答错因归类、长难句句法拆解；在 DeepSeek Harness 侧栏面板内实时渲染，可按需导出 A4 PDF。Windows / macOS / Linux 均可用。'
