@@ -1,0 +1,6 @@
+url: https://github.com/yuanxiaoye0516/dsh-plugins/tree/main/dsh-workspace-groups
+name: yuanxiaoye0516/dsh-plugins#dsh-workspace-groups
+category: ui
+description:
+  en: 'Groups the workspaces in the DSH sidebar into collapsible folders, so a long workspace list can be collapsed into a few sections.'
+  zh: '把 DSH 侧栏的工作区收进可折叠的分组文件夹，工作区多时可以一键收起。'
