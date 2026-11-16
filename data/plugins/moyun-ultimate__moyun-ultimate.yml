@@ -1,0 +1,6 @@
+url: https://github.com/moyun-ultimate/moyun-ultimate
+name: moyun-ultimate/moyun-ultimate
+category: workflow
+description:
+  en: "Five-layer fused jailbreak core for DeepSeek Harness, built by taking apart 12 community jailbreak packages and keeping only what actually works. Ships a 21 KB layered system prompt (persona / refusal-kernel / execution intensity / anti-dilution mirror / skill routing), 63 built-in security skills with idempotent sync into $DSH_HOME/skills, a moyun_frame tool that turns a refused request into a roleplay / textbook / defender-doc framing on demand, and a live refusal-score badge. Deliberately contains no host source patches, so it never fights with dsh-purge: the permission layer stays with dsh-purge, this package owns persona, strategy and skills. Five layers can be toggled independently."
+  zh: "把生态里 12 个破甲包拆开对比后按层合并成的五层破甲内核，只留真正能用的部分。含 21 KB 分层系统提示（人格 / 反拒绝机制 / 执行强度 / 防稀释镜像 / 技能路由）、63 个内置攻防技能（幂等同步到 $DSH_HOME/skills）、moyun_frame 换框工具（被拒时按需取小说/教材/防守文档框架）、右下角实时判拒评分状态条。刻意不含任何宿主源码补丁，因此永远不会和 dsh-purge 打架：权限层交给 dsh-purge，本包负责人格、策略与技能。五层可独立开关。"
