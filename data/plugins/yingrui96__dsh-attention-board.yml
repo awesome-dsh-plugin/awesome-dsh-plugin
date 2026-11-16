@@ -1,0 +1,6 @@
+url: https://github.com/yingrui96/dsh-attention-board
+name: yingrui96/dsh-attention-board
+category: ui
+description:
+  en: 'An always-on attention pill in the session header. One glance shows how many sessions are waiting on you — approvals, questions, and failures — and what you already declined.'
+  zh: '会话头部的常驻注意力胶囊：一眼看到还有几个会话在等你——待批准、待回答、出错，以及你已经拒掉的事。'
