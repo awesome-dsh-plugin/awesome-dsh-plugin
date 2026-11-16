@@ -1,0 +1,6 @@
+url: https://github.com/AvenYQ/dsh-knowledge
+name: AvenYQ/dsh-knowledge
+category: memory
+description:
+  en: 'Sidebar knowledge base for DSH: indexes local Obsidian vaults and project folders into SQLite FTS5, re-indexes file changes automatically, shows source snippets while you type, and lets the agent answer with numbered citations that open the exact source file and line.'
+  zh: 'DSH 左侧栏知识库：把本地 Obsidian 库和项目文件夹建成 SQLite FTS5 索引，文件改动自动入库；边打字边出原文片段，也能让 AI 读完资料再回答，结论带 [n] 角标，点开就是原文与行号。'
