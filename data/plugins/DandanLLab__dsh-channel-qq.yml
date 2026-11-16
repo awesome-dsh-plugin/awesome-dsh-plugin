@@ -1,0 +1,6 @@
+url: https://github.com/DandanLLab/dsh-channel-qq
+name: DandanLLab/dsh-channel-qq
+category: identity
+description:
+  zh: "把 QQ 接进 DeepSeek Harness 的全功能个人号通道（OneBot v11，需本机跑 NapCat 等协议端）：群聊私聊、图片语音文件、戳一戳、空间动态、音乐点歌（网易云VIP/酷狗）、表情包完整管线（入库三闸+图库组件）、内置生活引擎（记忆状态机/睡眠巩固/KB 检索）与陌生人私聊门控（好友自动放行/陌生人待审+主人审计）。一次安装全都有，组件均可独立开关。"
+  en: "Full-featured personal-QQ channel for DeepSeek Harness over OneBot v11 (needs NapCat or similar running alongside): group and DM chat, images, voice and files, pokes, Qzone, music (NetEase VIP / KuGou), a complete sticker pipeline (three admission gates plus a bundled meme-pack component), a built-in life engine (memory state machine, sleep consolidation, KB search) and stranger-DM gating (friends auto-approved, strangers pending with master review). One install brings it all; every component can be toggled off."
