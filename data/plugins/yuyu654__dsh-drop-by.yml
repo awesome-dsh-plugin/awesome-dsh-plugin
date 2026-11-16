@@ -1,0 +1,6 @@
+url: https://github.com/yuyu654/dsh-drop-by
+name: yuyu654/dsh-drop-by
+category: notify
+description:
+  en: 'Restrained proactive companion gate for DSH that speaks like a real person instead of a cron bot: filters moments through quiet/busy windows with 2026 holiday awareness, a situation judge, and cold-response suppression; filters jargon, formulas, lecturing, and customer-service phrasing with burst delivery and reply hooks; bridges QQ and Douyin DMs into one shared workspace session with seamless switching and in-chat task dispatch, plus off-peak exploration and optional schedule, desktop, and phone health awareness.'
+  zh: '让 AI 像真人在聊天一样有分寸地主动开口的 DSH 陪伴插件：结合静默/忙碌时段、处境判断与冷落自动降温挑出真正值得说的一句，护栏过滤黑话、公式、说教与客服腔并带情绪底色和接话口子分段连发；支持 QQ 与抖音私信无缝切换、跨端防重答及聊天直接派活，并带谷时自主探索与可选课表/桌面/手机状态感知。'
