@@ -1,0 +1,6 @@
+url: https://github.com/yjnmedia/dsh-expert-role
+name: yjnmedia/dsh-expert-role
+category: skill
+description:
+  en: Turns a folder of research notes into loadable expert skills. Each expert is a directory with SKILL.md, a manifest and references; only its name and description sit in the skill catalog until the model loads it. Ships 12 tools for building and ingesting material, a research workflow (plan, per-step records, parallel dispatch to child sessions, standalone workspace), a five-star maturity score computed from structure, coverage, content, freshness and research closure, and a panel that lists which session loaded which expert and read which file, from a local trace file.
+  zh: 把一个文件夹的调研资料变成可加载的专家技能。每位专家是一个目录（SKILL.md + 清单 + references），平时只占技能目录里一行名字和简介，模型真要用时才读正文。带 12 个工具（建库、登记/搬入资料、查资料、派子会话调研、开独立工作区）；五星成熟度由结构、覆盖、内容、新鲜度、调研闭环算出；面板按会话列出「哪次加载了哪位专家、读了哪个文件」，读的是本地 trace 文件。
