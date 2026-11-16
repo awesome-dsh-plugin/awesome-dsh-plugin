@@ -1,0 +1,7 @@
+url: https://github.com/xxle2/dsh-remote-assist-lan
+name: xxle2/dsh-remote-assist-lan
+category: remote
+description:
+  en: 'LAN remote assistance for DeepSeek Harness: device code + alias, permanent/temporary password, approval popup, remote PowerShell exec, system status, screenshot, two-way file transfer and one-click remote plugin install — no public relay, private-network only.'
+  zh: '局域网 DSH 远程协助：设备代码+别名、永久/临时密码直连、异账号弹窗授权、远程执行 PowerShell、系统状态、截图、双向文件传输、一键远程装插件；无需公网中继，仅私网直连。'
+icon: https://raw.githubusercontent.com/xxle2/dsh-remote-assist-lan/main/icon.svg
