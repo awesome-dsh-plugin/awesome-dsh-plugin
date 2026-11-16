@@ -3,4 +3,4 @@ name: SamyiHu/dsh-visio
 category: docs
 description:
   en: 'Open and edit Visio (.vsdx) drawings in a DSH panel: live SVG preview, shapes, swimlanes and connectors with side-midpoint routing and no-through-shape checks, .vssx stencil import, layout audit, and a visio tool so the agent can read and modify the drawing. Python stdlib engine, no Visio or Office needed; Python 3.9+ on PATH, Pillow for PNG export and snapshots.'
-  zh: '鍦?DSH 闈㈡澘閲屾墦寮€鍜岀紪杈?Visio锛?vsdx锛夊浘绾革細瀹炴椂 SVG 棰勮锛屽浘褰€佹吵閬撲笌杩炴帴绾匡紙渚ч潰涓偣璧扮嚎銆佺姝㈢┛杩囧浘褰級缂栬緫锛屾敮鎸?.vssx 妯″叿瀵煎叆涓庡竷灞€妫€鏌ワ紝鍙︽湁 visio 宸ュ叿渚?Agent 鐩存帴璇诲啓鍥剧焊銆傚紩鎿庝负 Python 鏍囧噯搴擄紝鏃犻渶瀹夎 Visio 鎴?Office锛涢渶瑕?PATH 涓湁 Python 3.9+锛孭NG 瀵煎嚭涓庡揩鐓у彟闇€ Pillow銆?
+  zh: '在 DSH 面板里打开和编辑 Visio（.vsdx）图纸：实时 SVG 预览，图形、泳道与连接线（侧面中点走线、禁止穿过图形）编辑，支持 .vssx 模具导入与布局检查，另有 visio 工具供 Agent 直接读写图纸。引擎为 Python 标准库，无需安装 Visio 或 Office；需要 PATH 中有 Python 3.9+，PNG 导出与快照另需 Pillow。'
