@@ -3,5 +3,5 @@ name: tsd619124/dsh-connect-comate
 category: model
 icon: https://raw.githubusercontent.com/tsd619124/dsh-connect-comate/main/assets/icon-180.png
 description:
-  en: Registers the Comate (Zulu) models of a locally signed-in Comate CLI as a DSH provider, supervising a loopback `zulu serve` and translating its SSE into the DSH stream. A Settings section trims the model picker to the models you tick, and a `comate_usage` tool reports the daily credit, which public SaaS accounts return no figure for.
-  zh: 把本机已登录的 Comate CLI（Zulu）模型注册成 DSH 的 provider，监管一个仅回环的 `zulu serve` 并把它的 SSE 转成 DSH 流。设置页可以把模型选择器收窄到勾选的那几个，`comate_usage` 工具查询每日积分——公有云 SaaS 账号查不到数字。
+  en: Registers the Comate (Zulu) models of a locally signed-in Comate CLI as a DSH provider, supervising a loopback `zulu serve` and translating its SSE into the DSH stream. One Comate conversation is reused per DSH session, an interruption that waits for a choice becomes a visible question you can answer in the next turn, a Settings section trims the model picker to the models you tick, and a `comate_usage` tool reports real token usage plus the daily credit.
+  zh: 把本机已登录的 Comate CLI（Zulu）模型注册成 DSH 的 provider，监管一个仅回环的 `zulu serve` 并把它的 SSE 转成 DSH 流。一个 DSH 会话复用一个 Comate 会话；中途等你做选择时会变成一条可见提问，你答一句它就接着做；设置页可以把模型选择器收窄到勾选的那几个；`comate_usage` 工具报告真实 token 用量与每日积分。
