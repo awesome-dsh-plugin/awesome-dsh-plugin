@@ -1,5 +1,5 @@
 url: https://github.com/Anseya/flow-tower-context/tree/main/plugin/flow-tower
-name: Anseya/flow-tower-context#plugin/flow-tower
+name: Anseya/flow-tower-context#flow-tower
 category: memory
 description:
   en: 'Compaction-driven project memory for DeepSeek Harness: deterministic compilation of compaction deltas into a searchable cited dictionary, adaptive dual injection, and a portable compaction-takeover preset.'
