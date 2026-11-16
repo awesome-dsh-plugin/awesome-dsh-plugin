@@ -1,0 +1,6 @@
+url: https://github.com/oriliz/agent-crop
+name: oriliz/agent-crop
+category: workflow
+description:
+  en: Times AI coding sessions, nudges long-running turns, and keeps a local work ledger with a collector-health dashboard, so you can see where the time actually went.
+  zh: 给 AI 编码会话计时、催长任务、记工作台账，并提供采集健康度面板，看清时间到底花在哪。
