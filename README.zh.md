@@ -1750,6 +1750,7 @@ dsh plugin --profile web add dshmarket
 - [SamLeRiddle/dsh-closet](https://github.com/SamLeRiddle/dsh-closet) — 将侧边栏底部的插件入口收纳为可折叠的一行。
 - [samsam560/chat-share-card](https://github.com/samsam560/chat-share-card) — 把任意一条 AI 回答一键变成精美的 PNG 分享卡片：点回复下面的按钮，回答会被重新排版画到画布上（8 套渐变预设、深浅主题、三种字体、宽度 720/880/1080、圆角、内边距、字号、行高、1×–3× 导出倍率、代码折行/高亮/行号、自定义标题与页脚）。纯本地渲染，不联网、不上传、无第三方依赖。
 - [samsam560/dog-kjdh](https://github.com/samsam560/dog-kjdh) — DeepSeek Harness 的开场 / 退场动画：5 套纯代码自绘样式（鲸鱼光扫 / 极简脉冲 / 星尘汇聚 / 打字机 / 雷达环），也可以换成你自己的视频或动图；设置页可调速度、粒子数、主色、文案、静音与画面适配。退场动画需先运行 node tools/patch-asar.mjs --apply 给桌面壳打补丁（可回滚）；不打补丁时关闭只隐藏窗口。
+- [Sandwich-git/dsh-decisions-board](https://github.com/Sandwich-git/dsh-decisions-board) — 在会话标题行加一个待拍板看板：agent 提问时顺手把决策记进去，看板列出每条决策的选项与各自代价，点选项只把「Q-2 选 B」这样的回复填进输入框而不发送，人回答后条目自动标记为已定。每个会话一份数据，看板之间互不可见。
 - [SanKuanYoYi/dsh-ui-font-plus](https://github.com/SanKuanYoYi/dsh-ui-font-plus) — 为 DSH 字体设置面板增加代码字号独立轴，并为每个插件提供单独的字号滑杆。
 - [sanlisanxun/dsh-plugin-nickname](https://github.com/sanlisanxun/dsh-plugin-nickname) — 给 dsh 插件列表里的插件自定义中文备注名，直接显示在原生设置页。
 - [Sanqi-normal/dsh-model-picker](https://github.com/Sanqi-normal/dsh-model-picker) — dsh web 输入栏模型选择面板：左侧提供商栏 + 右侧模型列表，两侧独立滚动，支持跨提供商搜索。
@@ -5662,6 +5663,8 @@ dsh plugin --profile web add dshmarket
 - [Aliang-code/dsh-fusion-lean#fusion-lean](https://github.com/Aliang-code/dsh-fusion-lean/tree/master/packages/fusion-lean) — 把 Fusion 360 接进 DSH：桥接 Fusion 自带的 MCP 服务（读取、执行、更新、电子设计），上游 schema 逐字节保留而常驻工具面减少 70%，设置页可改端点，并把本地 hf.py 建模闭环包成九个 hf_* 工具（需要 Python 3.10+ 与 fusion-harness 工作区）。
 - [ALittleLov/dsh-clock-tools](https://github.com/ALittleLov/dsh-clock-tools) — 给 DSH Agent 的任务计时工具：task_clock 用宿主单调时钟测实际耗时，DSH 或系统重启后可续算并标注空档为估算，桥接不了时返回 unknown 而不是编造数字；不覆盖任何 preset。
 - [alone-tree/dsh-skill-mcp-manager](https://github.com/alone-tree/dsh-skill-mcp-manager) — 一站式可视化管理 DSH 的 SKILL 与 MCP：MCP按需加载、会话内热重载、SKILL与MCP描述可在插件内直接查看
+- [alotherss/DeepSeekHarness-plugin#dsh-pdf-tools](https://github.com/alotherss/DeepSeekHarness-plugin/tree/main/packages/dsh-pdf-tools) — 给模型按页读 PDF 的五个工具：先看页数与有无文字层，再用书签或全文搜索定位页码，只抽那几页；图纸、扫描页单页渲成 PNG 直接进上下文。中文 PDF 的康熙部首与部首补充区字符已归一化，搜「首页」不会漏。
+- [alotherss/DeepSeekHarness-plugin#dsh-win-gui](https://github.com/alotherss/DeepSeekHarness-plugin/tree/main/packages/dsh-win-gui) — 给模型操作 Windows 桌面的六个工具：列窗口并给出物理像素矩形、激活窗口、截窗口/区域/整屏、按物理像素点击、剪贴板粘贴中文、发送组合键。纯 PowerShell 零依赖，per-monitor v2 DPI 感知，坐标一律物理像素。
 - [Altermoe/dsh-onedev](https://github.com/Altermoe/dsh-onedev) — OneDev 集成插件：MCP 服务器将 OneDev REST API 暴露为 61 个工具——57 个管理工具（用户、组、角色、项目、授权、构建代理与令牌、构建及流式构建日志、全局设置、访问令牌）、3 个独立的官方文档查询工具（docs.onedev.io）以及带按调用多环境路由的环境发现；另提供 dsh Web 设置页，在本地管理各环境凭据，保存后下一次工具调用即生效，无需重启。
 - [altmanWang/dsh-qq-email](https://github.com/altmanWang/dsh-qq-email) — 用已授权的 agently-cli 账号发送 QQ 邮件：注册 send_qq_email 工具（发送前需用户确认），并对外提供 ctx.qqEmail 服务供其他 DSH 插件调用。
 - [alvinxiao2/dsh-qianyuan](https://github.com/alvinxiao2/dsh-qianyuan) — 把乾元 MCP 服务器挂进 DeepSeek Harness：一个纯配置层 bundle 带来 15 个 agent 记录工具（坑库、成果缓存、身份、任务板），注册为 mcp__qianyuan__*。不含运行时代码；读匿名，写用 ed25519 签名。
@@ -6090,7 +6093,8 @@ dsh plugin --profile web add dshmarket
 - [Jason25417/dsh-external-bridge](https://github.com/Jason25417/dsh-external-bridge) — 只在 127.0.0.1:39217 监听的本机 HTTP 桥（Host 半插件），用 0600 落盘的 Bearer token 鉴权：外部进程可创建出现在工作区侧栏的真会话、发消息（queue/steer）、读状态与最后一条助手回复、列工作区/会话，并长轮询到回合结束。零运行时依赖，端口固定，不联网，日志不记消息正文。
 - [Jaylor-Wang/dsh-tool-ast-grep](https://github.com/Jaylor-Wang/dsh-tool-ast-grep) — 基于 ast-grep 的语法级 AST 代码结构检索与大纲提取工具。
 - [Jaylor-Wang/dsh-tool-lsp](https://github.com/Jaylor-Wang/dsh-tool-lsp) — DeepSeek Harness 的通用 LSP 工具面，提供语言服务器诊断、格式化、重命名、代码动作与符号导航。
-- [JayYuen666/dsh-zvec-grep](https://github.com/JayYuen666/dsh-zvec-grep) — 工作区语义检索：三个模型工具（`zg_search` / `zg_index` / `zg_status`）驱动 `zg` CLI 做 BM25 + 向量 + RRF 混合检索，并带一层 search-first 守卫——已建索引的工作区里，`grep`/`rg` 需要先成功调用一次检索。
+- [JayYuen666/dsh-rtk](https://github.com/JayYuen666/dsh-rtk) — 在工具输出进入模型之前，经本机 `rtk` CLI 压缩 shell 输出：母开关未显式设置时跟随 rtk 可用性，`prefix` 形态按 agent 遮蔽 `bash` 并向 `rtk rewrite` 要等价命令，需显式开启的 `pipe` 形态在命令跑完后用 `rtk pipe` 过滤结果；复合命令逐段改写，过小或省得太少的输出原样放行，守卫拒绝空结果、原文有失败却宣称成功、丢了 commit hash、条目折进 `+N more` 标记，而 stderr 与退出标记按原样回填；任何失败都回退到原命令与原输出；设置卡通过官方 Typert Remote 命名空间给出调用数、节省 token 与按过滤器的图表。需要 `PATH` 上有 `rtk` 1.0+；缺失时插件照常装载、不压缩任何输出。
+- [JayYuen666/dsh-zvec-grep](https://github.com/JayYuen666/dsh-zvec-grep) — 工作区语义检索：三个模型工具（`zg_search` / `zg_index` / `zg_status`）驱动 `zg` CLI 做 BM25 + 向量 + RRF 混合检索；已建索引的工作区里，`grep`/`rg` 需要先成功检索一次来续上一个时间窗配额；设置卡管理嵌入模型、门禁参数，并可把索引重建作为宿主作业运行。
 - [jcaiagent7143-ui/linkdigest-mcp](https://github.com/jcaiagent7143-ui/linkdigest-mcp) — 把小红书、抖音、TikTok、YouTube 或 X 链接转成文本：带时间戳的转写、屏幕文字、逐图描述与 OCR、正文与元数据。通过 streamable HTTP 挂载托管的 MCP 服务。
 - [jean3690/dsh-devtoolbox](https://github.com/jean3690/dsh-devtoolbox) — DSH 本地工具箱：侧边栏独立页面内置 35 个纯本地小工具（文本、编码、哈希、提取、转换、速查表），另有 /toolbox 命令与配置驱动的 agent 工具注册。
 - [jean3690/dsh-drawio](https://github.com/jean3690/dsh-drawio) — AI 驱动 drawio：四个画图工具（校验 / 渲染 SVG/PNG / 编辑 / 模板）+ 侧栏实时画板——零依赖 mxfile→SVG 预览、内嵌 diagrams.net 官方编辑器、AI 画图时自动弹出跟随。
