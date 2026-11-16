@@ -1,0 +1,6 @@
+url: https://github.com/realRoc/dsh-screensaver/tree/main/themes/subspace
+name: realRoc/dsh-screensaver#subspace
+category: ui
+description:
+  en: 'Subspace Jump theme for dsh-screensaver: a three.js scene where three suns orbit until a Claude Code, Codex or DeepSeek Harness session starts running, then the camera jumps into a subspace tunnel and lists each live session (name, current step, running / waiting / done / stopped). Inside, the tunnel drifts between a nebula storm, a vortex of ocean waves and a tunnel of Gaussian splats. Requires dsh-screensaver.'
+  zh: 'dsh-screensaver 的「亚空间跃迁」主题：three.js 场景，三颗恒星绕转，一有 Claude Code、Codex 或 DeepSeek Harness 会话开始运行，镜头就跃迁进亚空间隧道，并列出每个会话的名称、当前步骤和状态（运行中 / 等你确认 / 已完成 / 已中断）。隧道里在星云风暴、海浪漩涡和高斯粒子三种画风之间切换。需要先装 dsh-screensaver。'
