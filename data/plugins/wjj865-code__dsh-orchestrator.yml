@@ -1,0 +1,6 @@
+url: https://github.com/wjj865-code/dsh-orchestrator
+name: wjj865-code/dsh-orchestrator
+category: agi
+description:
+  en: 'Coordinator plus child task sessions for DeepSeek Harness: the main session only splits the work, dispatches child sessions with task_create and reads their task_report results, while every task lives in a durable SQLite ledger with dependencies, groups, write scopes and a priority queue. A finished task lands in a delivered-but-unconfirmed state that keeps the follow-up window open until you confirm or the timeout closes it; on top sit a layered memory that distils lessons into later tasks, an inbox for tasks waiting on your decision, an optional daily digest, daily ledger snapshots and a browser task panel.'
+  zh: '给 DeepSeek Harness 加一位协调者和一组子任务会话：主会话只拆活、用 task_create 派子会话、读 task_report 回报；每条任务进持久 SQLite 台账，带依赖、分组、写域与优先级队列。子会话报 done 落「已交付待确认」，追问窗口保留到你确认或超时收尾；其上还有把经验蒸馏进后续任务的分层记忆、等用户拍板任务的收件箱、可选的每日日报、每日台账快照与浏览器任务面板。'
