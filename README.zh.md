@@ -4968,6 +4968,7 @@ dsh plugin --profile web add dshmarket
 - [xianshu-virtuous/dsh-whale-companion](https://github.com/xianshu-virtuous/dsh-whale-companion) — 接近上下文上限时自动创建新 Web 会话并只转移最后一个完整回合，同时提供可编辑的追加式鲸鱼娘人格与按需重读工具。
 - [xiaolin233-ctrl/dsh-session-transfer](https://github.com/xiaolin233-ctrl/dsh-session-transfer) — 在每个对话的「⋯」菜单里加一行「转移到其他工作区…」：把完整事件日志复制成目标工作区下的新会话（保留 header、标题与模型预设，并改写投递标记），读回校验后挂载，默认归档原会话（可勾选保留）。
 - [XiaoMa-PM/dsh-cross-session-agent-pre](https://github.com/XiaoMa-PM/dsh-cross-session-agent-pre) — 支持 DSH 跨工作区消息与发送方导航、同工作区受限上下文，以及可选的本机 Claude Code 双向通信。
+- [xiaopei-sd/dsh-rename-chats](https://github.com/xiaopei-sd/dsh-rename-chats) — 本地 DSH 宿主桥接与 Skill：通过官方 session-title 服务预览并批量重命名会话标题。
 - [xiaoshenming/dsh-session-surgeon](https://github.com/xiaoshenming/dsh-session-surgeon) — 修好打不开的 DeepSeek Harness 会话，侧栏「会话医生」可查看对话并默认 dry-run 修复。
 - [xiguazhiPrince/dsh-session-map](https://github.com/xiguazhiPrince/dsh-session-map) — 会话图谱：把 DSH 会话画成一张 fork 树画布，另在设置里加了一个「从 Git 克隆」页——填仓库地址、选存放目录（会记住上次选择、带原生目录选择器），按需打开浅克隆，克隆完自动添加为工作区。画布可从会话头部开关和右侧栏两个标签页打开，对话标签页默认关闭；默认只铺开当前会话所在的那棵树、自上而下生长，支持滚轮平移与 Ctrl/⌘ 滚轮缩放、隐藏子代理会话，另有一个会话概览页列出轮次、步骤、模型耗时、工具耗时、输出 token 与运行状态。
 - [xin505/dsh-task-shelf](https://github.com/xin505/dsh-task-shelf) — 整理任务资料，支持跨工作区的会话交接。
@@ -6543,6 +6544,7 @@ dsh plugin --profile web add dshmarket
 - [ouli-1242/dsh-plugin-tool-management](https://github.com/ouli-1242/dsh-plugin-tool-management) — 一个设置面板，统一管理 MCP、技能、记忆、子智能体、提示词和归档会话；可自定义搭配场景，一个场景即可切换整个环境；Agent也能帮你操作这个插件。
 - [OverDustD7/dsh-chat-digest](https://github.com/OverDustD7/dsh-chat-digest) — 把微信与 QQ 聊天记录里「必须做的、可以报名的、值得知道的」摘成一张面板：由一个常驻会话按计划或在你点 Fetch 时重读聊天记录并改写条目，每条可直链到原始文件或图片。
 - [ownduck/dsh-custom-env](https://github.com/ownduck/dsh-custom-env) — 在设置中管理 $DSH_HOME/.env，并同步到 Host 与 Windows/macOS 用户环境。
+- [Oyyyyyy-y/dsh-presets-plan-native-act-ptc](https://github.com/Oyyyyyy-y/dsh-presets-plan-native-act-ptc) — Agent 预设 + 路由插件：计划阶段使用原生工具，批准后把会话切回原始 PTC（只剩 run_code），让计划审批不再受程序预算约束。
 - [ozanstn1-stack/dsh-drive-backup](https://github.com/ozanstn1-stack/dsh-drive-backup) — 基于 rclone 的备份工具，含四个工具：目标清单、本地/远端状态、rclone check 校验，以及带预演与审计行的审批式 copy/sync 传输。需已安装 rclone 并用 `rclone config` 配好远端；插件不读取 rclone 配置或凭据。
 - [ozanstn1-stack/dsh-port-map](https://github.com/ozanstn1-stack/dsh-port-map) — 只读的 Linux 端口、服务与 Caddy 路由地图：监听套接字及其所属 unit 或容器、反向服务视图，以及 reverse_proxy 存活检查。需要 iproute2（ss），docker 与 Caddyfile 可选。
 - [ozanstn1-stack/dsh-vps-ops](https://github.com/ozanstn1-stack/dsh-vps-ops) — 先读后写的 VPS 运维工具：systemd 状态与操作、磁盘占用、Docker 状态、日志尾部、可配置备份与静默时段计划。
@@ -8874,6 +8876,7 @@ dsh plugin --profile web add dshmarket
 - [omdsh-dev/dsh-inspect](https://github.com/omdsh-dev/dsh-inspect) — 发现问题→修复交付→质量复查的对抗式闭环工具集。
 - [onesmash/dsh-reflex](https://github.com/onesmash/dsh-reflex) — 给 DS Bot 的反射弧：作为兄弟插件运行、不改 ds-bot，用低成本层持续采集事实并在本地决策模型上打分，只有越过阈值时才唤醒 Bot 的推理层。
 - [openfcp/dsh-fcp](https://github.com/openfcp/dsh-fcp) — 在 DSH 左侧栏加一个金融消保工作台，有独立首页：六位内置专家（政策研究、消保审查、投诉管理、金融教育、综合管理、销售管理），按任务关键词自动调度或手动点选；技能目录支持搜索、分类筛选、详情查看，安装状态保存在本机；知识源可配置 IMA、Obsidian 与本地 md / zip；另有思维方法卡片、模型设置与截图输入。本地 HTTP 路由带回环地址校验，配置保存在浏览器 localStorage 与本机状态文件。当前版本完成技能安装状态记录与知识源配置；技能文件下发到 skills 目录、知识检索注入上下文与切换会话模型尚未实现。
+- [oriliz/agent-crop](https://github.com/oriliz/agent-crop) — 给 AI 编码会话计时、催长任务、记工作台账，并提供采集健康度面板，看清时间到底花在哪。
 - [orion-nebula-dev/dsh-Dynamic-Workflow](https://github.com/orion-nebula-dev/dsh-Dynamic-Workflow) — 使用 /workflow 运行 JSON 工作流，查看进度、选择 Agent 模型、复用已有会话继续执行，并通过有次数上限的独立审查与修复控制交付。
 - [orziz/odai#odai-dsh-plugin](https://github.com/orziz/odai/tree/main/dsh/plugin) — 面向整个 DSH profile 的治理与路由 bundle，提供用于职责与证据检查的 Web Control Center，以及压缩、本地作用域语义记忆、安全连续性与真实验收；兼容 DSH 0.1.5-rc.1。
 - [OTTTTTO/dsh-scheduled-send](https://github.com/OTTTTTO/dsh-scheduled-send) — 定时发送：到点将拟好的消息以正常用户气泡发送到绑定的会话。调度在服务端执行，关闭浏览器不影响发送；会话隔离、重启自动补发。
@@ -9008,6 +9011,7 @@ dsh plugin --profile web add dshmarket
 - [Tkingxiao/dsh-novel-solo](https://github.com/Tkingxiao/dsh-novel-solo) — DeepSeek Harness 的「单核写作」插件：面向量化小模型做了充分的工具瘦身与输出加固，适合在本机用本地模型跑长篇小说流水线。
 - [tong-io/tongflow#dsh-tongflow](https://github.com/tong-io/tongflow/tree/main/packages/dsh-tongflow) — 基于 TongFlow 的“片场”插件，用于图片、配音、音乐与视频制作：agent 为每个资产生成 TongFlow 工作流文件（.tongflow.json）并通过 TongFlow 插件执行，内嵌工作流画布，按镜头/角色/take 组织项目，附漫剧模板；以 @tongflow 开头的会话进入 Studio 界面。
 - [toolclub/dsh-agent-team-gui](https://github.com/toolclub/dsh-agent-team-gui) — 持久化多模型小队在 Settings 中配置、从 Composer 选择，并支持逐成员模型与工具策略。默认由主 Agent 自行完成简单任务，需要已保存的小队时才派工；派工按有界 DAG 执行，并可进行有限的审核与返工。Run Center 展示重试和基于 Harness 官方 usage 事件的逐成员 token 用量。
+- [topmindspace/dsh-super-kanban](https://github.com/topmindspace/dsh-super-kanban) — 面向 DeepSeek Harness 的 AI 任务与项目看板：从多条会话提炼任务卡并跟踪进展、阻塞、验收条件与交付物，支持全局、右侧和悬浮三种形态以及基于 DSH 模型的快聊。
 - [toustifer/agentflow](https://github.com/toustifer/agentflow) — 基于 Git 工作树任务隔离、状态门禁交付与外置记忆的 AI 智能体软件生命周期编排引擎。
 - [truelove-dreamer/dsh-plugin-hooks](https://github.com/truelove-dreamer/dsh-plugin-hooks) — Claude Code 风格生命周期 hooks：工具调用前后自动执行 shell 命令（stdin 收 JSON payload），pre-tool 非零退出即阻断调用。
 - [tszmzz1026/dsh-epindel-boot-animation#dsh-productivity](https://github.com/tszmzz1026/dsh-epindel-boot-animation/tree/main/packages/dsh-productivity) — 为 DeepSeek Harness 提供搜索、检查点、上下文管理、主聊旁聊、长期记忆、目标待办与今日计划。
@@ -10887,6 +10891,7 @@ dsh plugin --profile web add dshmarket
 - [saya-ch/dsh-mobile](https://github.com/saya-ch/dsh-mobile) — 通过 Android App 或手机浏览器访问 DeepSeek Harness，支持安全局域网连接、远程访问、持久设备配对和可自定义移动界面。
 - [scarletkc/Hatoba#agent-plugin](https://github.com/scarletkc/Hatoba/tree/main/packaging/agent-plugin) — 添加 hatoba-cli 技能，让 agent 用 hatoba 命令在 Hatoba 桌面 SSH 客户端保存的 SSH 主机上运行命令、复制文件，用 Hatoba 保存的凭据登录。需要 Hatoba 已打开并解锁。
 - [scientificmaniac/dsh-ssh-vault](https://github.com/scientificmaniac/dsh-ssh-vault) — 把 SSH 主机存进 AES-256-GCM 加密保险库，智能体按别名执行命令，口令经 SSH_ASKPASS 交给 ssh 而不进入命令行。仅支持 Windows。
+- [scientificmaniac/dsh-vm-control](https://github.com/scientificmaniac/dsh-vm-control) — 管理本机 VMware Workstation / Player / Fusion 虚拟机：电源、快照、实时 CPU 与内存、网络配置与 VMX 参数，并可一键把 SSH 接入导入 dsh-ssh-vault。
 - [shaot92-del/dsh-job-board](https://github.com/shaot92-del/dsh-job-board) — DSH 多机作业板：14 个作业板工具、4 个命令工具、一个图形面板，并经 dsh-remote-agent 把排队任务派给多台机器。面板或 board_options 工具可选择目标机器与模型；机器可设显示名，任务归属仍按主机身份（machine）。失败任务可按原 goal/workspace/模型一键重派，面板也会检查 npm 上的新版本。单机使用时会自己在回环地址起一个板子；多机使用需要随包附带的 Python 作业板服务（tools/board_server.py，启动前设置 GP_BOARD_TOKEN，默认绑定 0.0.0.0）和 dsh-remote-agent 主机。sh_* 工具只能访问 allowedRoots 名单里的目录。
 - [Shr-CS/dsh-wechat-channel](https://github.com/Shr-CS/dsh-wechat-channel) — 微信公众号通道：微信消息触发 DSH 会话，回答经客服消息接口推回微信，回调带签名校验与 openid 白名单。
 - [siberiah2o/dsh-plugin-remote](https://github.com/siberiah2o/dsh-plugin-remote) — DSH Web 远程访问网关：登录鉴权 + 到本机服务的 HTTP/WebSocket 反向代理，无需 --trusted-host。
