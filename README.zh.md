@@ -1344,6 +1344,7 @@ dsh plugin --profile web add dshmarket
 - [LUgABeEEE/dsh-global-todo](https://github.com/LUgABeEEE/dsh-global-todo) — 侧边栏里的全局跨会话待办清单，人和 agent 共用同一份：十个 global_todo_* 工具可在任意会话中新增、批量抓取、修改、挂文档与链接、追加进展记录、标记完成；每条待办可按四种方式交给 agent 会话，派发结果记回条目本身。清单存成一个 JSON 文件。
 - [LUgABeEEE/dsh-sidebar-density](https://github.com/LUgABeEEE/dsh-sidebar-density) — 轻量级侧栏 UI：五个折叠开关、三档密度预设与三档宽度预设，入口收在底部一行与设置分区；无依赖、无后台服务。
 - [lukeinx/dsh-workboard](https://github.com/lukeinx/dsh-workboard) — 新增工作台页面，可自由排布 内置 widget，包括会话与后台任务、待办、ICS 日历、天气、热榜、RSS 订阅、行情和系统监控；也可让 Agent 按一句话描述生成沙箱隔离的自定义 widget。
+- [lukema95/dsh-news](https://github.com/lukema95/dsh-news) — 在 DSH 右侧栏和整页提供 ShellPulse AI 新闻流，包含新闻、热点、精选、教程与论文视图、中文摘要、AI 解读和 arXiv 论文阅读。
 - [LUMIAO9527/DSH-Focus](https://github.com/LUMIAO9527/DSH-Focus) — 把主页侧栏入口按工作区上方和下方重新分组，可逐个开关已安装插件的入口，改动即时保存。
 - [LUMIAO9527/DSH-suggestions](https://github.com/LUMIAO9527/DSH-suggestions) — 根据会话生成下一条消息建议并优化草稿，支持候选翻页、快捷键录制和配套 MCP 工具。
 - [lumine-423/dsh-session-popout](https://github.com/lumine-423/dsh-session-popout) — 把 DSH 侧边栏里的会话拖出来，即在独立的原生系统窗口中打开；窗口内是完整的标准会话界面（Markdown、工具栏、设置都在），只裁掉侧边栏，因此可以同时盯住多个会话，不必来回切换。Windows 已验证，macOS/Linux 未实测；需在 DSH 桌面端（Electron）中使用。
@@ -8010,6 +8011,7 @@ dsh plugin --profile web add dshmarket
 - [LuoShanHui/dsh-doc-ledger](https://github.com/LuoShanHui/dsh-doc-ledger) — 在 DSH 右侧栏按会话查看文档台账（仅 Windows，界面仅中文）：用过哪些文档、创建/修改了哪些，带时间排序、类型分组、搜索与两种预览。
 - [lvxianchao/dsh-video-preview](https://github.com/lvxianchao/dsh-video-preview) — DSH 侧边栏里的流式视频预览：mp4、webm、mov 就地播放，走带鉴权的字节范围路由（206 响应），拖动秒开、没有大小上限、无构建步骤。
 - [Mach1ne333/dsh-latex-delimiter-fixer](https://github.com/Mach1ne333/dsh-latex-delimiter-fixer) — 把 ChatGPT 风格的公式定界符（\(...\)、\[...\]）就地改成 Obsidian 能渲染的 $...$、$$...$$，并跳过代码块与正则示例。
+- [magicbaobaoli/dsh-getnote](https://github.com/magicbaobaoli/dsh-getnote) — 本地优先的得到大脑 / Get笔记 Markdown 面板：目录树、标签云、全文搜索，渲染表格、时间轴、Obsidian 双链与图片附件；录音笔记带可拖动进度条的播放器和按时间戳分条的逐字稿。笔记是磁盘上的纯 .md 文件，同步下来的库离线也能读；云端同步可选，删除的笔记进可恢复的回收站。
 - [maple-pwn/paperlab](https://github.com/maple-pwn/paperlab) — Overleaf 式 LaTeX 论文工作台：在渲染后的 PDF 上选中任意文字批注，由 dsh agent 改写源文件、编译验证并提交 git 修订。
 - [measureer/dsh-overleaf-sync](https://github.com/measureer/dsh-overleaf-sync) — 不走 Git 桥接，而是通过 Overleaf 自身的 Socket.IO + OT 通道在本地 LaTeX 文件夹与 Overleaf 项目之间双向同步：拉取后自动 git init、推送默认 dry-run、三方 diff、后台 watch，冲突永不覆盖而是另存副本。
 - [miaojinQWQ/dsh-docmate](https://github.com/miaojinQWQ/dsh-docmate) — 沉浸式研究区：md / docx / pdf 渲染在中间面板，右栏是每篇文档一条的普通 Harness 会话，已经读过全文、研究记忆和已有划线。划词即问；扫描件和图片没有文字层，拖一个框把区域发给识图模型，并带一层轮次级运行时刹车（最多 2 步、单步输出上限、工具调用在 dispatch 前拒绝、45 秒取消）。划线用字符偏移锚点 + CSS Custom Highlight API 绘制，刷新后仍在。另有 KaTeX 公式、目录、文档内搜索与三栏可拖拽。零运行时依赖：pdf.js 与 KaTeX 已 vendor 在仓库里。
@@ -8562,6 +8564,7 @@ dsh plugin --profile web add dshmarket
 - [aadmin61-design/dsh-codex-dots](https://github.com/aadmin61-design/dsh-codex-dots) — 由 DeepSeek 调度 Codex 与 DSH 任务，支持共享项目对话树、独立对话、可取消加载的 Markdown 历史和迁移至 DSH。
 - [abbaababa/dsh-workplan](https://github.com/abbaababa/dsh-workplan) — 为 DeepSeek Harness 提供持久化任务分解计划，并加入自我学习闭环：每个部门子任务按「计划→执行→验证」三阶段推进，验证阶段必须提交问题、弯路与解决方式的复盘，写入永久教训记忆文件，下次派发时按部门与关键词排序注入，避免重犯。新增只读 dsh_workplan_lessons 工具（共 11 个模型工具）、环形图/四段构成条/逐阶段步进条进度面板，以及按 ISO/IEC 15408:2026 结构编写的公开安全自评估——每条声明都可被读者核对，零运行时依赖。
 - [abworks-dev/dsh-hooks](https://github.com/abworks-dev/dsh-hooks) — DSH 的 Codex 风格生命周期命令钩子，支持工具参数显式共享、执行前拒绝，以及通知与本地审计示例。
+- [ACAneSe1/dsh-work-guard](https://github.com/ACAneSe1/dsh-work-guard) — 给编程 agent 的闸门与台账：没读过的源码文件拒绝写入，读过之后又被改动的也拒绝；每次写入与验证都记下真实退出码；修之前红着的那批测试，在它们真正变绿之前会一直显示出来；脚本改了源码却没申报会一直记在台账里。
 - [achenjins/dsh-runninghub-plugin](https://github.com/achenjins/dsh-runninghub-plugin) — 在 DSH 中调用你的 RunningHub ComfyUI 工作流生成图片、视频和音频，提供工作流配置面板、后台任务和多 Key 管理。
 - [AdamsShen/dsh-autopilot-harness](https://github.com/AdamsShen/dsh-autopilot-harness) — 给 DSH 加上「先规划再执行」的闭环：/autopilot-on 通过追问轮次产出 brief、plan、checklist 三个文件，/autopilot-run 按清单逐项执行；产品代码被修改后拦截回合边界，用 steer 让 agent 轮换多个自审视角再推进。
 - [adithyanraj03/dsh-schedule-later](https://github.com/adithyanraj03/dsh-schedule-later) — 把消息排进 dsh 会话稍后再发：消息框里带日期与时间选择器的「定时」按钮、跨会话列出待发消息的侧栏面板、浏览器关着也由宿主按时投递成一条普通用户消息，以及 schedule_message / list_scheduled_messages / cancel_scheduled_message 三个工具，模型因而能自己回到某个会话。
