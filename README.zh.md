@@ -1893,7 +1893,7 @@ dsh plugin --profile web add dshmarket
 - [syzke/dsh-translate-on-select](https://github.com/syzke/dsh-translate-on-select) — 在 DSH 里用鼠标选中外文，选区正下方就地浮出简体中文译文卡片。
 - [Takeoff0518/dsh-katex-inline-copy](https://github.com/Takeoff0518/dsh-katex-inline-copy) — 在 DSH 对话里复制含公式的内容时，剪贴板里得到 $...$ / $$...$$ 的 LaTeX 源码，而不是 KaTeX 渲染碎片；代码块与输入框保持原生复制。
 - [tan90tan90/dsh-custom-menu](https://github.com/tan90tan90/dsh-custom-menu) — 侧栏启动器：钉上自己的入口，点一下直接打开本地文件夹（资源管理器）或网页（新标签页）；另可分组、隐藏自带菜单项。不做内嵌浏览。它的“打开文件夹”路由没有 DSH 的访问检查，浏览器里打开的网页可以让它在文件管理器里打开本地文件夹。
-- [tangmanto98-VoV/dsh-screenshot-button](https://github.com/tangmanto98-VoV/dsh-screenshot-button) — 在输入框加一个相机按钮：截你选中的那台显示器、全部屏幕，或用鼠标跨屏拖出的任意大小一块，图片直接作为附件放进草稿（仅 Windows）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [tangmanto98-VoV/dsh-screenshot-button](https://github.com/tangmanto98-VoV/dsh-screenshot-button) — 在输入框加一个相机按钮：截你选中的那台显示器、全部屏幕，或用鼠标跨屏拖出的任意大小一块，图片直接作为附件放进草稿（仅 Windows）。
 - [tangu2023/dsh-menu](https://github.com/tangu2023/dsh-menu) — 为侧边栏「工作区文件」树添加自定义右键菜单：新建文件夹、重命名、在文件管理器中显示、浏览器打开、VS Code 打开、复制路径、流式 ZIP 下载、删除。
 - [Tansukii/dsh-screenshot](https://github.com/Tansukii/dsh-screenshot) — 区域截图工具，支持标注、放大器取色与剪贴板输出，并跟随 DSH 界面语言。仅限 Windows。
 - [tao1020/dsh-global-pins](https://github.com/tao1020/dsh-global-pins) — 会话散落在不同工作区，重要内容不好找？全局置顶把你选中的会话集中到侧边栏顶部，支持拖拽排序和清晰的插入位置提示，也可按最近更新时间自动排序。会话完成后小绿点提醒。还有 Codex 同款行内操作：运行中的会话右侧持续转圈显示进度，支持归档/恢复、点开就全选标题的重命名，右键菜单可 Fork 和上下移动。侧边栏「全局置顶」旁的放大镜打开搜索浮层：先按会话标题和工作区名匹配，再查消息正文索引（部署开启内容索引时可用），结果按「会话」「内容」小标题分组，内容命中带摘要。右侧准星按钮可跨折叠工作区跳到当前打开的会话，每个分组标题带半透明灰底，会话行更紧凑，能放下更多条目。v1.0.6 新增「最近会话」：当天用过且未置顶的会话会从各个工作区集中到置顶下方，按时间从近到远排列，第二天自动回到原工作区；分组标题可折叠，折叠时视图不会跳到顶部。
@@ -3716,7 +3716,7 @@ dsh plugin --profile web add dshmarket
 - [hpfs0/dsh-provider-proxy](https://github.com/hpfs0/dsh-provider-proxy) — 在设置里为每个已启用的 provider 单独配置正向代理（HTTP/HTTPS/SOCKS5），未配置的 provider 与其它流量保持直连。
 - [huhaodong/dsh-auto-driving](https://github.com/huhaodong/dsh-auto-driving) — DeepSeek Harness 模型故障自动回退与轮次保活：请求在产出任何可见内容前因模型错误失败时，沿所选供应商分组的模型（再到下一个供应商）逐个切换直到流式成功；瞬态失败按指数退避自动重试并有活性看门狗防假死，整轮任务失败后自动发送模板化「继续」唤醒续跑；可选全自动模式自动应答权限审批、确认提问与方案评审，每次自动决策追加到 AUTO-MODE.md 审计日志。
 - [hulibuld/dsh-get-it-for-free](https://github.com/hulibuld/dsh-get-it-for-free) — 把免费、签到型的模型账号渠道接进 DeepSeek：华为云 CodeArts、腾讯 CodeBuddy / WorkBuddy、Qoder、TRAE、Raccoon、LobsterAI、MiniMax、ZCode、讯飞 Loomy。在设置里逐渠道登录，能签到的渠道每日签到（也可开自动），同步可用模型池，模型以普通 provider 的形式出现在模型选择器里，并带本机用量看板按账号与模型统计请求数与 Token。凭据只写在本机 ~/.dsh/get-it-for-free/，无遥测，不向上游仓库发请求。可选的局域网中继默认关闭，开启后监听 0.0.0.0。
-- [hxgh776/dsh-connect-loomy](https://github.com/hxgh776/dsh-connect-loomy) — 将本机已登录的 Loomy（讯飞）桌面端账号接入 DeepSeek Harness：对话模型带思考链，结构化工具调用由 DSH 本地执行，附只读积分看板（总余额 / 每日额度 / 可用余额）。只读 Loomy 自身的登录态文件，不复制不存储凭据；含 doctor 与 probe 诊断命令。仅 Windows x64。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [hxgh776/dsh-connect-loomy](https://github.com/hxgh776/dsh-connect-loomy) — 将本机已登录的 Loomy（讯飞）桌面端账号接入 DeepSeek Harness：对话模型带思考链，结构化工具调用由 DSH 本地执行，附只读积分看板（总余额 / 每日额度 / 可用余额）。只读 Loomy 自身的登录态文件，不复制不存储凭据；含 doctor 与 probe 诊断命令。仅 Windows x64。
 - [hytime/dsh-thinking-effort](https://github.com/hytime/dsh-thinking-effort) — 为 DSH 自定义模型配置思考档位和子 agent 默认思考强度。
 - [hZsFN/dsh-default-model-lock](https://github.com/hZsFN/dsh-default-model-lock) — 锁定共享的默认模型：在聊天里切换模型不再改写全局默认值，也不会再被那次切换连带降档推理强度。
 - [Ianzhyh/workbuddy-to-dsh#dsh-plugin](https://github.com/Ianzhyh/workbuddy-to-dsh/tree/main/dsh-plugin) — 把本机的本地 OpenAI 兼容桥注册成 dsh 原生模型 provider：复用这台机器桌面端已登录的模型，管理桥与其本地控制台进程，并附带 5 个工具、/workbuddy 命令与 9 个标签页的设置面板。需同机已安装并登录该桌面端；桥只监听 127.0.0.1。
