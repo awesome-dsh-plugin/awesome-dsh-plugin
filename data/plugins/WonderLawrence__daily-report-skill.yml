@@ -1,0 +1,7 @@
+url: https://github.com/WonderLawrence/daily-report-skill
+name: WonderLawrence/daily-report-skill
+category: skill
+description:
+  en: Writes Chinese daily and weekly reports from the GitHub pull requests you took part in, keeping only your own commits inside the date range and adding Claude Code, Codex and DSH session evidence, with a JSON evidence snapshot saved beside the report so each claim can be traced back to a pull request, commit or session.
+  zh: 以本期参与的 GitHub PR 为线索，只保留本人落在日期区间内的提交，并汇总 Claude Code、Codex 与 DSH 会话证据，写出中文日报或周报，同时把可回溯到 PR、提交或会话的 JSON 证据快照与报告一起保存。
+icon: https://raw.githubusercontent.com/WonderLawrence/daily-report-skill/main/market/icon-180.png

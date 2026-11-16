@@ -1,0 +1,6 @@
+url: https://github.com/yishan/dsh-synthesizer
+name: yishan/dsh-synthesizer
+category: fun
+description:
+  en: Multi-track Web Audio synthesizer and 8-piece drum machine with a piano-roll sequencer, scale and chord generators, four agent composition tools and a /synth command, background sidebar playback, and WAV/MIDI export.
+  zh: 多轨 Web Audio 合成器与 8 件套鼓机，提供钢琴卷帘步进编曲、调式与和弦生成、4 个 Agent 编曲工具与 /synth 命令、侧栏后台播放及 WAV/MIDI 导出。

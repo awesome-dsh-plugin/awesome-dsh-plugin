@@ -1,0 +1,6 @@
+url: https://github.com/imcaibaicai/dsh-boot-guard
+name: imcaibaicai/dsh-boot-guard
+category: dev
+description:
+  en: 'Pre-boot guard that intercepts malformed client plugins before they break startup, names the offending plugin in the error instead of failing anonymously, isolates it in place so the app still boots, and ships an offline dsh-rescue CLI for profile recovery.'
+  zh: '启动前置守卫：在任何 Loader entry 创建前拦下畸形客户端插件，报错时点名是哪个插件（而不是匿名报错），就地兜底隔离保证仍能启动；另附脱机 dsh-rescue 急救 CLI 用于恢复 profile。'

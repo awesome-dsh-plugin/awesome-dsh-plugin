@@ -1,0 +1,6 @@
+url: https://github.com/ldq0102261819/dsh-market-seed
+name: ldq0102261819/dsh-market-seed
+category: market
+description:
+  en: 'Seed dsh plugin-market index sources on startup, so the Discover tab can search and install community plugins right after the bundle is installed.'
+  zh: '启动时把插件市场索引源写入 dsh，装完这个包打开「发现」就能搜索并安装社区插件。'

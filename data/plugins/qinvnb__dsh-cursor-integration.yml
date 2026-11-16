@@ -1,0 +1,8 @@
+url: https://github.com/qinvnb/dsh-cursor-integration
+name: qinvnb/dsh-cursor-integration
+category: model
+description:
+  en: Cursor SDK integration with multi-account scheduling, usage tracking, scoped proxies and conversation checkpoints.
+  zh: 集成 Cursor SDK，支持多账号调度、用量统计、专用代理和会话检查点。
+icon: https://raw.githubusercontent.com/qinvnb/dsh-cursor-integration/main/assets/icon.png
+tarball: https://github.com/qinvnb/dsh-cursor-integration/releases/download/v0.1.7/dsh-cursor-integration-0.1.7.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/winlin926/dsh-remote-connect
+name: winlin926/dsh-remote-connect
+category: remote
+description:
+  en: 'Continue the DeepSeek Harness sessions on your computer from a phone browser: scan a QR code, approve the device on the computer, then chat, answer tool approvals and preview workspace files in the host web interface itself, over the same Wi-Fi or a tunnel.'
+  zh: '用手机浏览器继续电脑上的 DeepSeek Harness 会话：扫码并在电脑上确认设备后，在宿主界面里对话、处理工具审批、预览工作区文件；支持同一 Wi-Fi 直连或经转发通道连接。'

@@ -2,6 +2,6 @@ url: https://github.com/finogeeks/finsafe/tree/main/integrations/dsh/windows
 name: finogeeks/finsafe#finshield
 category: security
 description:
-  en: 'Windows sandbox for DSH Desktop: once set up, the Host is launched through FinSAFE inside an AppContainer sandbox for protection against what agents can reach on the machine. Windows x64 only; on first activation it downloads and installs the matching FinSAFE native runtime (SHA256-checked, with Windows consent) and leaves an updater process running.'
-  zh: 'DSH Desktop 的 Windows 沙箱：设置完成后，Host 会经 FinSAFE 在 AppContainer 沙箱里启动，限制智能体能触及的本机范围。仅限 Windows x64；首次激活会下载并安装匹配的 FinSAFE 原生运行时（校验 SHA256，需 Windows 授权），并留下一个常驻的更新器进程。'
+  en: 'Provides privacy, interaction, system and data protection for DSH Desktop on Windows: protects camera, microphone and screen access, guards against desktop and input interference, protects system settings, services and other processes, and safeguards selected files and directories. Uses process-level sandbox isolation and permission controls within the existing DSH workflow, with evidence from 38 public comparison scenarios published by Finogeeks. Install through the DSH Desktop plugin manager. Windows x64 only; first activation downloads and installs the matching native runtime with SHA256 verification and Windows consent, and runs an updater process.'
+  zh: '为Windows上的DSH Desktop提供隐私、交互、系统和数据四项安全防护：保护摄像头、麦克风与屏幕隐私，防范桌面操控与输入干扰，保护系统配置、服务和其他进程，守护指定文件与目录。沿用DSH原有使用流程，通过进程级沙箱隔离与权限控制，为Agent执行任务提供安全保护。38项公开对照测评，防护效果有据可查。通过DSH桌面版插件管理器安装。仅支持Windows x64；首次激活会下载并安装匹配的原生运行时，校验SHA256并需Windows授权，同时运行更新器进程。'
 icon: https://raw.githubusercontent.com/finogeeks/finsafe/main/integrations/dsh/windows/assets/finshield.png

@@ -1,0 +1,6 @@
+url: https://github.com/runweok/dsh-auto-task
+name: runweok/dsh-auto-task
+category: workflow
+description:
+  en: 'One agent tool that builds and manages DSH scheduled tasks from plain schedule descriptions - once, daily, weekly, interval, cron or delayed - with batch creation, id-based editing (including rule changes, pause and resume) and one-click cleanup of ended tasks; no RRULE authoring needed.'
+  zh: '一句话自动构建 DSH 定时任务：确定性编译一次性/每天/每周/固定间隔/cron 等六种时间描述，无需手写 RRULE；支持批量创建、按 id 编辑（含时间规则修改与暂停恢复）与一键清理已结束任务。'

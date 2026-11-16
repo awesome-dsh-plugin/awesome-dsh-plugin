@@ -1,0 +1,8 @@
+url: https://github.com/MoJIeAIGC/dsh-mojie-model-provider
+name: MoJIeAIGC/dsh-mojie-model-provider
+category: model
+description:
+  en: Adds Mojie (mojieaigc.com) as a DSH model provider, so its models appear in the model picker, and registers the native image tools plus the /image command for generation and editing.
+  zh: 把 Mojie（mojieaigc.com）接入 DSH 的模型提供商，模型出现在模型下拉里，并注册原生图片工具与 /image 命令，用于生成与编辑图片。
+icon: https://raw.githubusercontent.com/MoJIeAIGC/dsh-mojie-model-provider/main/assets/icon-512.png
+tarball: https://github.com/MoJIeAIGC/dsh-mojie-model-provider/releases/download/v0.2.3/mojieai-dsh-mojie-model-provider-0.2.3.tgz
