@@ -4481,6 +4481,7 @@ dsh plugin --profile web add dshmarket
 - [guo120629-dotcom/dsh-send-timestamp](https://github.com/guo120629-dotcom/dsh-send-timestamp) — 在输入框工具栏加一个「时间戳」开关：开启后，你提交的每条消息后面会跟一条隐藏的上下文消息，携带发送时刻的本地时间，模型因此知道你是什么时候发的；开关按会话分别记住。
 - [guokecloud/dsh-session-janitor](https://github.com/guokecloud/dsh-session-janitor) — 在侧边栏页面里列出 DSH 的会话记录与归档缓存，删除先移入可恢复的回收站，最近 10 分钟仍在写入的会话会被拒绝。
 - [GuYou9799/dsh-turn-sieve](https://github.com/GuYou9799/dsh-turn-sieve) — 把会话里低价值的问答或单条消息筛除：在对话内原位选中，从模型可见内容与对话界面中移除，可一步撤销。
+- [gznofeng/dsh-session-note](https://github.com/gznofeng/dsh-session-note) — 对话视图里的备忘录标签页：每个会话在本机保存自己的一组手写备忘——添加、就地编辑、一键复制、删除前二次确认，最近改动排在最前。数据严格按会话 id 隔离（拿不到 id 就拒绝写入而不是猜一个），存于单个 plugin-data JSON，原子写入并兼容 v1 迁移；文件损坏时拒绝一切写入而不是清空。
 - [hagen666/dsh-topic-graph](https://github.com/hagen666/dsh-topic-graph) — 把会话按轮次聚合成话题与阶段，按话题统计 token / 工具 / 耗时，提供工作流、时间线、关系图谱三种视图和单轮 AI 分析。
 - [Hai-Story/dsh-conversation-tools](https://github.com/Hai-Story/dsh-conversation-tools) — 星标重点问答，在原生输入框中编辑任意已发送的用户消息，并保留旧对话版本。支持 DSH 0.2.2-rc.1。
 - [hajimimaodie8/DSH-Session-Sync](https://github.com/hajimimaodie8/DSH-Session-Sync) — 双向同步网页版与 DSH Desktop 桌面版之间的会话、工作区、设置与插件。
