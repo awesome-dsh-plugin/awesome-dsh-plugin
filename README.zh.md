@@ -612,6 +612,7 @@ dsh plugin --profile web add dshmarket
 - [Da0Mine/dsh-inline-image-ref](https://github.com/Da0Mine/dsh-inline-image-ref) — 把拖入/粘贴进输入框的图片当文件处理：光标处插 @路径 胶囊、不占附件栏，输入框与已发送消息里都能悬停看原图。
 - [dadazhangn/dsh-prompt-snippets](https://github.com/dadazhangn/dsh-prompt-snippets) — 保存带分类与 {{占位符}} 的可复用提示词片段：用 /snippet 命令（add/list/rm/optimize）管理，从输入框下方可拖拽面板一键插入草稿，并支持用默认模型一键 AI 优化。
 - [dadgrand/dsh-agent-teams-dashboard](https://github.com/dadgrand/dsh-agent-teams-dashboard) — 在侧边栏加一个「团队」面板，列出每个 Agent Teams 会话的成员与任务路线图、按时间段统计的 token 消耗与美元/卢布成本、总工时与在线时长，并可归档旧团队。需先安装 Agent Teams 插件。
+- [dadiaoliyaqiao-max/dsh-brand-logo](https://github.com/dadiaoliyaqiao-max/dsh-brand-logo) — 将 DSH 侧边栏左上角的品牌替换为言动方程（ACTION FORMULA）Logo，其余界面保持不变；关闭插件即可恢复原品牌。
 - [daetz-coder/dsh-multi-chat](https://github.com/daetz-coder/dsh-multi-chat) — 在 DSH Web 界面里并排运行、监控多个对话实例：多窗口墙 + 自动发现 + 单窗控制，内置带口令认证的局域网网关，手机/平板也能看。
 - [damlys99/dsh-morning-paper](https://github.com/damlys99/dsh-morning-paper) — 把跑着的会话排成一张报纸式头版，作为 Chat 与 Trajectory 旁的 Conversation View 标签页：逐轮时间线（耗时、步数、工具、token、结果）、按文件统计的改动热度、墙钟时间去向以及其中多少是模型而非工具、哪一轮吃掉了花费、无人重试的失败（附失败命令），以及对照该路由模型自报容量的上下文压力仪表。简报由持久会话日志折算而成、从不调用模型：零 token、不会编造、同一份日志与时钟下字节一致；不向会话追加任何内容、也不触达模型，只报告待批准项而绝不代为应答。仅在某一页有内容时才提供该页；标签页在轮次结束时自刷新，并用只读日志尾部的探针做两档轮询。
 - [damlys99/dsh-queue-reorder](https://github.com/damlys99/dsh-queue-reorder) — 在官方队列 dock 内直接重排忙碌时排队的消息：每一行带拖拽手柄与上下移动按钮，移动在宿主端以一次带并发校验的 inbox splice 完成。只装饰官方 dock 而不替换它，因此预览、行内编辑、插话、删除与附件保持原样。队列已变化、该行不是用户消息（例如目标轮次提示）、或队列属于子代理会话时，移动会被拒绝。
@@ -6487,6 +6488,7 @@ dsh plugin --profile web add dshmarket
 - [MeshTok/dsh-plugin-yuantoutao](https://github.com/MeshTok/dsh-plugin-yuantoutao) — 电商插件——一个 MCP 给你的 AI 加上商品搜索、比价与购买能力，覆盖淘宝/京东/拼多多，商品目录由源头淘 MCP 服务提供。
 - [Meteor-system/dsh-codegraph](https://github.com/Meteor-system/dsh-codegraph) — 将当前工作区索引为关系图，向 agent 暴露一个工具 codegraph_explore（可达性、调用者、影响面），并在 Web 右侧栏提供图形面板。
 - [micln/dsh-mcp-autoload](https://github.com/micln/dsh-mcp-autoload) — 自动加载项目级 MCP 服务器：项目在 `.agents/mcp.json` 中声明服务器（路径与根目录标记可配置），在项目内工作的每个会话各自的作用域里挂载——支持 stdio 与 Streamable HTTP，工具名为 `mcp__<server>__<tool>`——会话结束时断开连接。Web UI 面板列出本会话的服务器及其工具，并可在确认后启用或禁用项目条目，写入前备份并原子替换清单文件。
+- [mig-everything/phone-use-dsh#dsh](https://github.com/mig-everything/phone-use-dsh/tree/main/packages/dsh) — 操作已连接的鸿蒙、安卓和 iPhone 设备，提供原生控件读取、按需截图与 OCR，以及多设备侧栏。
 - [mimosa776/dsh-plugin-recommender](https://github.com/mimosa776/dsh-plugin-recommender) — 按职业/角色推荐 DSH 插件：询问用户是做什么的（程序员、设计师、写作、研究、运维、学生…），推荐适合的插件，并对每个插件做本地静态安全审计（危险代码模式 + 0-100 风险分）与口碑检查（npm 下载量 / GitHub 星数）。
 - [MingoYung/dsh-rea-gateway](https://github.com/MingoYung/dsh-rea-gateway) — 派生自 kirkchinese/dsh-capability-catalog 0.1.4（不能与上游能力目录 / @kirkchinese/dsh-rea 同装）：为 REA 提供按需 MCP 网关，通过三个固定的检索、参数查看与调用入口访问缓存工具定义，支持会话开关并复用 DSH 原生结果处理。需要 DSH 0.2.1-rc.4 或 0.2.2-rc.1，以及能运行 REA 的 Node/npm 环境。
 - [MingShi350/kiwix-wiki](https://github.com/MingShi350/kiwix-wiki) — 通过你自己运行的 kiwix-serve 离线查询维基百科等 ZIM 数据包：wiki_search / wiki_read / wiki_books 三个工具分别做带摘要片段的全文搜索、按精确标题读取全文、列出本地 ZIM 书库。
