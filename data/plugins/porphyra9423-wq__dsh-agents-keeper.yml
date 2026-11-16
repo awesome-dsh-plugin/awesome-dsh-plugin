@@ -1,0 +1,6 @@
+url: https://github.com/porphyra9423-wq/dsh-agents-keeper
+name: porphyra9423-wq/dsh-agents-keeper
+category: docs
+description:
+  en: 'Maintains a workspace AGENTS.md instead of only reading it: it fingerprints the working tree with git status (mtimes when there is no git), a subagent drafts a complete updated or compacted file, and you review the unified diff before the plugin backs the old file up and writes atomically. Four model tools, four slash commands, one settings section, and revert. It never creates AGENTS.md and never edits it unprompted. Its HTTP routes go through DSH connection authentication, so a page open in your browser cannot read or apply a proposal.'
+  zh: '维护工作区的 AGENTS.md 而不只是读取它：先用 git status（没有 git 时用 mtime）给工作树打指纹，再由子代理起草完整的新版或精简版，你确认 unified diff 后插件才备份旧文件、原子写入；带 4 个模型工具、4 条斜杠命令、设置页一节与回滚。不会自动创建 AGENTS.md，也不会未经确认就改它。它的 HTTP 路由走 DSH 的连接认证，浏览器里打开的网页既读不到也应用不了提案。'
