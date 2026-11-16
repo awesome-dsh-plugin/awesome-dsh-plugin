@@ -1046,7 +1046,7 @@ dsh plugin --profile web add dshmarket
 - [JasperPengC/dsh-mcp-skills-board](https://github.com/JasperPengC/dsh-mcp-skills-board) — DeepSeek Harness 的 MCP 服务器与技能管理面板：侧栏面板加插件页配置区，支持搜索、状态灯、逐行开关、详情，以及按 Codex mcp_servers 字段设计的添加服务器表单。
 - [JavaArthur/dsh-home](https://github.com/JavaArthur/dsh-home) — 一页个人工作台：待办、专注计时、Flomo 笔记时间流、快捷入口与壁纸。
 - [JAYCou/codex-history-rail](https://github.com/JAYCou/codex-history-rail) — CODEX 历史摘要条 —— 在 DSH 对话左侧留白处加入 Codex 风格回合时间轴，支持悬停预览、点击跳转与收藏。
-- [JayYuen666/dsh-dir-prep-organize](https://github.com/JayYuen666/dsh-dir-prep-organize) — 对话输入框旁的两个按钮：一个结合当前目录改写草稿，另一个插入角色模板——默认 85 条精选模板由随包携带的 `agents/` 角色库生成，设置卡可用自己的 `.md` 角色文件扩充。
+- [JayYuen666/dsh-dir-prep-organize](https://github.com/JayYuen666/dsh-dir-prep-organize) — 对话输入框旁的两个控件：拆分的「润色」按钮结合会话目录与真实对话轮次、用该会话的模型改写草稿（▾ 可选按角色风格）；「模板」下拉按部门分组，插入 85 条由随包 `agents/` 角色库生成的精选角色模板。设置卡编辑同一份清单，可整份恢复或导入内置库，也能按路径导入自己的 `.md` 角色。
 - [jcx3915-pixel/dsh-subtopic](https://github.com/jcx3915-pixel/dsh-subtopic) — 在 DSH 会话里选中一段文字按 Ctrl，就地开出子话题卡片：流式解答、追问树，还能把树行拖成引用卡片。
 - [jediliu005/dsh-fairy-zzz-for-jediliu](https://github.com/jediliu005/dsh-fairy-zzz-for-jediliu) — 《绝区零》Fairy Ⅲ 的 H.D.D 皮肤：开机动画、可沿纵轴拖动（X 轴固定）的常驻眼徽，用来避开正文；每天由模型生成 5 段时段问候台词（每句不超过 20 字），用本地 GPT-SoVITS 合成，取用顺序为「今日 → 最近一份 → 内置语音」，生成失败也有声音。回复可选朗读：末尾标记行优先于字数判断，长回复可先压成一句结论；朗读器对刚念过的句子做 MD5 去重，保证每条只念一次，切换会话保持安静。本仓库是 dsh-fairy-zzz 的个人定制分支，包名、路由与存储命名空间独立，并做了摘要接口限流、引擎启停改 POST、TTS 缓存与问候语定期清理。插件会在自身目录写两份本地诊断日志（客户端版本、决策追踪），只留本机、不外传。本仓库是 AssassinVIX/fairy-zzz-plugin（上游包名 dsh-fairy-zzz）的个人定制分支：与上游二选一安装，不要同时装——两者都会在相同的 DSH 界面挂载全屏皮肤。每日动态问候与朗读摘要需要 ~/.dsh/fairy-tts.json（或 DEEPSEEK_API_KEY）提供 DeepSeek 兼容 API key；未配置时只播放内置问候音频。
 - [jediliu005/dsh-sim-folder](https://github.com/jediliu005/dsh-sim-folder) — 文件夹式会话面板：把侧栏会话装进自建文件夹，支持拖拽归类、会话别名与归档变淡；只做显示，不改 DSH 自己的分组。
@@ -5247,7 +5247,7 @@ dsh plugin --profile web add dshmarket
 - [jackyytche/dsh-hindsight-memory](https://github.com/jackyytche/dsh-hindsight-memory) — 接入 Hindsight 长期记忆：每轮开始前自动注入相关记忆，回合结束后自动沉淀对话。需要 DSH ^0.2.0-rc.1（已在 0.2.0-rc.2 验证）。
 - [Jasery/dsh-workbuddy-memory](https://github.com/Jasery/dsh-workbuddy-memory) — 让 DSH 与 WorkBuddy 共用一套 Markdown 记忆文件：项目记忆、用户记忆与用户画像会注入会话上下文，当日笔记不进提示词，只通过工具读取、追加与归档。六个工具（status、read、search、append、edit、prune）写回时统一经过跨进程锁、修订号校验、备份与原子写；左侧栏与右侧边栏的面板可编辑条目、整节与整份文件。
 - [jayhchen/dsh-cc-auto-memory](https://github.com/jayhchen/dsh-cc-auto-memory) — Claude Code 兼容的持久记忆：每个会话开始时自动注入 MEMORY.md 索引，模型用普通 read/write/edit 文件工具维护记忆，Settings 内置记忆列表页。落盘格式与 Claude Code 完全一致，claude 模式直接共享同一记忆目录。
-- [JayYuen666/dsh-lesson-loop](https://github.com/JayYuen666/dsh-lesson-loop) — 把拦截拒绝、门禁失败与人工差评沉淀为项目教训，只把人工确认过的规则注入该项目之后的新会话；它不注册模型工具，通过设置卡评审规则。
+- [JayYuen666/dsh-lesson-loop](https://github.com/JayYuen666/dsh-lesson-loop) — 把拦截拒绝、门禁失败、异常续跑与人工差评沉淀为按项目归集的教训，合并成候选规则卡，只把人工确认过的规则注入该项目之后的新根会话；它不注册模型工具，机器不会自行把规则转正。
 - [Jesse-njx/dsh-memory](https://github.com/Jesse-njx/dsh-memory) — 基于 DSH 无损会话日志的引用式记忆：蒸馏出的事实带 `(sessionId, eventRange)` 引用，可随时展开回原始日志片段。
 - [JevonsCode/fuli#dsh-connector](https://github.com/JevonsCode/fuli/tree/main/packages/dsh-connector) — 把 DSH 接到本机安装的 FULI：每轮开头把 FULI 的任务入口（已保存的偏好与项目事实）作为一条上下文消息加入，本轮完成时收尾 FULI 任务，并挂上 FULI 的 MCP 工具。需要本机安装 FULI 0.27.0 及以上。
 - [jiayan-xu/dsh-memoria](https://github.com/jiayan-xu/dsh-memoria) — 向量+图记忆后端：observe/remember/search/recall 四个工具对接本地 memoria 服务，HNSW 语义召回 + FTS5 关键词 + 知识图谱信号经 RRF 融合排序，回合结束自动写入，按 Agent 命名空间隔离。
