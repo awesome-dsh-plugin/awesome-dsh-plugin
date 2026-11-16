@@ -1,0 +1,7 @@
+url: https://github.com/Mach1ne333/dsh-latex-delimiter-fixer
+name: Mach1ne333/dsh-latex-delimiter-fixer
+category: docs
+description:
+  en: 'Rewrite GPT-style LaTeX math delimiters (\(...\), \[...\]) into Obsidian-friendly $...$ and $$...$$ in Markdown notes, skipping code blocks and regex examples.'
+  zh: '把 ChatGPT 风格的公式定界符（\(...\)、\[...\]）就地改成 Obsidian 能渲染的 $...$、$$...$$，并跳过代码块与正则示例。'
+icon: https://raw.githubusercontent.com/Mach1ne333/dsh-latex-delimiter-fixer/main/assets/icon-180.png
