@@ -1,0 +1,6 @@
+url: https://github.com/cycocyco/alice-memory-llm
+name: cycocyco/alice-memory-llm
+category: memory
+description:
+  en: 'Long-term memory for DSH where an LLM decides what to keep: turns pool while the session is idle, then the main chat model distills them into one-line entries in a single batched call; vector dedup runs before insert, so near-duplicates and saturated topics are dropped; recall uses hybrid vector plus FTS5 search over tiered hot, warm and cold storage; ships remember, recall, forget and prune tools. Zero dependencies, Node only.'
+  zh: 'DSH 长期记忆插件，由 LLM 裁决什么值得记：会话空闲后把攒下的轮次一次性交给主对话模型提炼成一句话条目；入库前先做向量判重，近重复与同话题超量的条目不再进库；检索走向量 + FTS5 混合召回，热/温/冷分层存储；附记/回忆/忘/清理四个显式工具。零依赖，纯 Node。'

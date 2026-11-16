@@ -1,0 +1,7 @@
+url: https://github.com/Linnnkkk/dsh-plugin-suggest-bar
+name: Linnnkkk/dsh-plugin-suggest-bar
+category: ui
+description:
+  en: Predicts up to three candidate replies you may send next and shows them above the input box after each turn, cycling between them; adopting one appends it to the draft on a new line and leaves the rest in place, and any of them can also be sent directly or dismissed for the turn.
+  zh: 每回合结束后在输入框上方显示最多 3 条预测的下一句话，可循环切换；点「采用」会另起一行追加到输入框并保留其余几条（可连续采纳），也可直接发送或本回合不再显示。
+icon: https://raw.githubusercontent.com/Linnnkkk/dsh-plugin-suggest-bar/main/assets/icon-180.png

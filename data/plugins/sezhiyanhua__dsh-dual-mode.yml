@@ -1,0 +1,6 @@
+url: https://github.com/sezhiyanhua/dsh-dual-mode
+name: sezhiyanhua/dsh-dual-mode
+category: ui
+description:
+  en: 'Adds a top-left Harness/Chat switcher and a web-chat workspace that drives your own logged-in chat.deepseek.com session in a persistent headless browser, with one-click task extraction to a Harness session and results sent back to the web chat. Starts a persistent Chrome or Edge profile with remote debugging on 127.0.0.1:9410 that keeps your chat.deepseek.com login; its /dual-mode routes have no DSH access check and can create Harness tasks from the web chat.'
+  zh: '在左上角新增 Harness/Chat 双模式切换与网页对话工作区，通过持久化无头浏览器驱动你自己登录的 chat.deepseek.com，支持一键提取任务发送到 Harness 会话并把执行结果回传网页对话。会启动一个持久的 Chrome 或 Edge 配置，在 127.0.0.1:9410 开远程调试并保存你的 chat.deepseek.com 登录态；它的 /dual-mode 路由没有 DSH 的访问检查，并且可以从网页聊天创建 Harness 任务。'

@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-verify-kit/tree/main/packages/dsh-citelint'
+name: 'zjukop3/dsh-verify-kit#dsh-citelint'
+category: 'tools'
+description:
+  en: 'Citation lint for delivered reports: numbering gaps, duplicate sources, sources that are listed but never cited, and local links that do not exist. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '交付报告的引用检查：编号断号、同一来源重复、列了却没被引用的来源——全部从 markdown 直接判定。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-verify-kit/main/assets/icon-180.png'

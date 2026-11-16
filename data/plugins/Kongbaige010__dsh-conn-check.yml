@@ -1,0 +1,6 @@
+url: https://github.com/Kongbaige010/dsh-conn-check
+name: Kongbaige010/dsh-conn-check
+category: model
+description:
+  en: 'Model connectivity chips in the DSH session header: click one to send a single real request to that model (green reachable, red failed, hover for latency), and click its arrow to switch the current session to that model.'
+  zh: '在 DSH 会话头部常驻一排模型连通性标签：点一下即向该模型发一次真实请求（绿=通、红=不通，悬停可看耗时），点标签上的箭头可把当前会话切换到该模型。'

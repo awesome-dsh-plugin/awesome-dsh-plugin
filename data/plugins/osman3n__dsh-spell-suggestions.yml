@@ -1,0 +1,7 @@
+url: https://github.com/osman3n/dsh-spell-suggestions
+name: osman3n/dsh-spell-suggestions
+category: ui
+icon: https://raw.githubusercontent.com/osman3n/dsh-spell-suggestions/main/assets/icon-180.png
+description:
+  en: 'Right-click menu inside the message composer: for the word under the cursor it checks a bundled English frequency dictionary of about 30,000 words plus a curated list of 182 common misspellings, and offers corrections ranked by edit distance and then word frequency. The same menu keeps add-to-dictionary, cut, copy, paste, select all, undo and redo. The dictionary and the menu are local, so nothing is sent over the network.'
+  zh: '输入框右键菜单：对光标处的单词，用内置的约三万个英文高频词表加一份 182 条常见拼错清单做检查，按编辑距离、再按词频排序给出候选；同一个菜单保留加入词典、剪切、复制、粘贴、全选、撤销、重做。词表与菜单全部在本地，不联网。'

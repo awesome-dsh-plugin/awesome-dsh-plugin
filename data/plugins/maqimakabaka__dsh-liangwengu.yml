@@ -1,0 +1,7 @@
+url: https://github.com/maqimakabaka/dsh-liangwengu
+name: maqimakabaka/dsh-liangwengu
+category: usage
+description:
+  en: 'Off-peak scheduler for DeepSeek Harness: queue prompts to send automatically during DeepSeek off-peak hours, with peak/off-peak price fetching, low-balance alerts and a local usage ledger.'
+  zh: 'DSH 谷价调度器：把写好的指令排在 DeepSeek Harness谷价时段自动发送，附带峰谷价格与时段抓取、余额提醒与本机用量记账。'
+  

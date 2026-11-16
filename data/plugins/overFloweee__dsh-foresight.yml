@@ -1,0 +1,7 @@
+url: https://github.com/overFloweee/dsh-foresight
+name: overFloweee/dsh-foresight
+category: ui
+description:
+  en: 'Composer add-on for DSH: next-message prediction shown as ghost text, history prefix completion, a one-line recap after each turn, and ↑/↓ recall of earlier prompts.'
+  zh: 'DSH 输入框增强：回合结束后预测下一句并以灰字显示，输入时按会话历史补全，每轮结束追加一行回顾，草稿为空时 ↑/↓ 翻看之前发过的提示词。'
+icon: https://raw.githubusercontent.com/overFloweee/dsh-foresight/main/docs/icon-192.png

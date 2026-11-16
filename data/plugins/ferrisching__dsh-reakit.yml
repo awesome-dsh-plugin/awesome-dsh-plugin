@@ -1,0 +1,6 @@
+url: https://github.com/ferrisching/dsh-reakit
+name: ferrisching/dsh-reakit
+category: tools
+description:
+  en: 'Registers the REA reverse-engineering toolset in DSH and manages its Node and REA runtime, with a global tool switch, a live composer status indicator and in-place runtime upgrades. On first start it downloads a pinned Node and REA runtime (from nodejs.org and npm) into a managed location and registers REA''s full tool catalogue as mcp__rea__*; optional analyzers are set up only on request.'
+  zh: '把 REA 逆向分析工具集接入 DSH，并托管其 Node 与 REA 运行时：提供全局工具开关、输入框状态指示点和就地运行时升级。首次启动会从 nodejs.org 和 npm 下载固定版本的 Node 与 REA 运行时到受管目录，并把 REA 的全部工具注册为 mcp__rea__*；可选的分析器只在你要求时才配置。'

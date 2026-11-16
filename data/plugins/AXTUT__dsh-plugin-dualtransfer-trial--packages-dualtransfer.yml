@@ -1,0 +1,7 @@
+url: https://github.com/AXTUT/dsh-plugin-dualtransfer-trial/tree/main/packages/dualtransfer
+name: AXTUT/dsh-plugin-dualtransfer-trial#dualtransfer
+category: remote
+tarball: https://github.com/AXTUT/dsh-plugin-dualtransfer-trial/releases/download/market.3/dsh-plugin-dualtransfer-0.2.0-candidate.6.9.reboot.3.market.3.tgz
+description:
+  en: 'Cross-computer Harness Agent messaging and task handoff; pairing, binding and the receiver''s existing local authorization remain required. Not open source (UNLICENSED evaluation build, not for production); requires Node.js 24+, tested only on macOS arm64 and Windows 11 x64 build 22621+. Its last full install-and-run test was on DSH 0.2.1-rc.2; on 0.2.2-rc.1 only the version gate has been checked.'
+  zh: '跨电脑 DSH Agent 消息与任务交接，须先配对、绑定，并遵守接收端本机既有授权。非开源（UNLICENSED 评估试用版，勿用于生产）；需要 Node.js 24+，仅在 macOS arm64 与 Windows 11 x64 build 22621+ 上测试。最近一次完整的安装和运行测试是在 DSH 0.2.1-rc.2 上做的，0.2.2-rc.1 上目前只检查过版本门控。'

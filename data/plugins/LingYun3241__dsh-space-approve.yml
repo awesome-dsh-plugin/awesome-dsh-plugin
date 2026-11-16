@@ -1,0 +1,6 @@
+url: https://github.com/LingYun3241/dsh-space-approve
+name: LingYun3241/dsh-space-approve
+category: ui
+description:
+  en: 'Answers a pending DeepSeek Harness permission prompt with Space (allow once) or Escape (reject) without focusing the card first, and leaves typing untouched.'
+  zh: '不用先点审批卡：按空格允许一次、按 Esc 拒绝 DeepSeek Harness 的权限弹窗，且不会干扰输入。'

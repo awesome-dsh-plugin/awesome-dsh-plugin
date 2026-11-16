@@ -1,0 +1,8 @@
+url: https://github.com/trammels51/dsh-pause-button
+name: trammels51/dsh-pause-button
+category: session
+description:
+  en: 'Pause or resume the running task from a 28 px button beside the DSH composer: safe pause lets the current step finish, holds the next agent/pre-step boundary, and resumes the same turn without a continuation message; force pause cancels immediately, and the default granularity is configurable in Settings.'
+  zh: '在 DSH 输入框旁用一枚 28px 按钮暂停/恢复正在运行的任务：安全暂停会先跑完当前步骤，再挂在下一个 agent/pre-step 边界，恢复时原地继续同一轮且不插入续跑消息；强制暂停立即取消；默认粒度可在设置中配置。'
+tarball: https://github.com/trammels51/dsh-pause-button/releases/latest/download/dsh-pause-button.tgz
+icon: https://raw.githubusercontent.com/trammels51/dsh-pause-button/main/assets/icon-180.png

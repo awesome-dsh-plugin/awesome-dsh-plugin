@@ -1,0 +1,8 @@
+url: https://github.com/gluztm/dsh-chief
+name: gluztm/dsh-chief
+category: agi
+description:
+  en: 'Right-sidebar multi-agent command panel with 4 chief_* tools: pyramid subagent DAG, cross-session relay, native /goal and subagentchat integration, lazy-loaded 4-tier cold archive cabinet, global pinned boundaries, and session handoff.'
+  zh: '常驻右侧栏的多代理参谋面板（含 4 个 chief_* 工具）：金字塔子代理拓扑、跨会话信使联动、原生 /goal 与子代理分屏对接、四层懒加载冷存储档案柜、图钉全局边界与一键会话交接。'
+icon: https://raw.githubusercontent.com/gluztm/dsh-chief/main/assets/icon-256.png
+tarball: https://github.com/gluztm/dsh-chief/releases/download/v1.0.0/dsh-chief-1.0.0.tgz

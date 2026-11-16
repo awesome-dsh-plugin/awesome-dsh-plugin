@@ -1,0 +1,7 @@
+url: https://github.com/HuiKun-Yan/dsh-litbench/tree/main/plugin
+name: HuiKun-Yan/dsh-litbench#plugin
+category: docs
+description:
+  en: 'Literature reading workbench in the sidebar: import PDFs into a library that groups a paper with its supporting materials, read and annotate in a built-in viewer, and chat over your notes for summaries and insights.'
+  zh: '侧栏里的文献阅读工作台：把 PDF 导入文献库，正文与支撑材料归到同一篇下；内置阅读器可阅读批注；还能基于笔记对话做总结与洞察。'
+icon: https://raw.githubusercontent.com/HuiKun-Yan/dsh-litbench/main/plugin/icon.jpg

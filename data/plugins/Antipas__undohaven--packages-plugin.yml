@@ -1,0 +1,6 @@
+url: https://github.com/Antipas/undohaven/tree/main/packages/plugin
+name: Antipas/undohaven#dsh-undohaven
+category: dev
+description:
+  en: 'Takes AES-256-GCM encrypted snapshots of the dsh home on start, on a timer and on dispose, pins the last snapshot before a dsh version change as a pre-upgrade snapshot, and shows status and the restore command in a settings tab; restore runs from the undohaven CLI after dsh quits. Unofficial. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在启动时、定时以及插件卸载时给 dsh 家目录做 AES-256-GCM 加密快照，dsh 版本变化时把上一份快照固定为升级前快照，设置页显示状态和恢复命令；恢复在 dsh 退出后由 undohaven CLI 执行。第三方插件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

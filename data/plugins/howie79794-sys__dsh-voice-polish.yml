@@ -1,0 +1,6 @@
+url: https://github.com/howie79794-sys/dsh-voice-polish
+name: howie79794-sys/dsh-voice-polish
+category: voice
+description:
+  en: Composer mic button that transcribes speech locally with SenseVoice, then tidies the spoken transcript into clean text with your configured DeepSeek route before inserting it into the draft.
+  zh: 输入框麦克风按钮：本地 SenseVoice 转写，再用已配置的 DeepSeek 把口语整理成通顺文字，插入草稿前可对照原文。

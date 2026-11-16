@@ -1,0 +1,7 @@
+url: https://github.com/Hocete/dsh-skill-card
+name: Hocete/dsh-skill-card
+category: ui
+description:
+  en: 'Skill card gallery for DSH: every installed skill becomes a game-style card you can browse in four carousel modes, filter by category, source or tag, and edit — rarity, stars, five stats, tags and card art — while the card data lives in a side-car file, so SKILL.md is left untouched. Also creates and deletes skill folders.'
+  zh: '技能卡库：把已安装的 DSH 技能渲染成游戏卡牌，支持四种轮播模式浏览、按分类/来源/标签筛选，并可可视化修改稀有度、星数、五维数值、标签与卡面；卡牌数据存在旁路文件里，不改动 SKILL.md，同时支持新建与删除技能目录。'
+icon: https://raw.githubusercontent.com/Hocete/dsh-skill-card/main/assets/icon-180.png

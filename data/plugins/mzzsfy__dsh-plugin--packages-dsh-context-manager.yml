@@ -2,6 +2,6 @@ url: https://github.com/mzzsfy/dsh-plugin/tree/main/packages/dsh-context-manager
 name: mzzsfy/dsh-plugin#dsh-context-manager
 category: ui
 description:
-  en: 'Conversation enhancements: a history-input overlay (Alt+Up with workspace/session/global/prompt scopes), recall of unapplied interjected messages, conversation forking with fork-family version switching, and optional auto-resend after forking (off by default).'
-  zh: '对话增强：历史输入浮层（Alt+↑，workspace/session/global/prompts 四范围搜索回填）、未应用插话撤回、对话分叉与家族版本切换、分叉后自动重发（默认关）。'
+  en: 'Conversation enhancements: a history-input overlay (Alt+Up, with workspace/session/global/favorite-prompt scopes), recall of interjected messages that were not applied, rewrite-style forking (fork a child session from before a turn and backfill that turn input for editing, including turns whose reply is still running), optional auto-resend after forking (off by default), and a copy-session-id action in the title bar.'
+  zh: '对话增强:历史输入浮层(Alt+↑,workspace/session/global/常用提示词四范围)、未应用插话撤回、重写式分叉(在该轮之前分出新会话并回填该轮输入供编辑重发,回复进行中的轮也可分叉)、分叉后自动重发(默认关),以及标题栏复制 sessionId。'
 icon: https://raw.githubusercontent.com/mzzsfy/dsh-plugin/main/assets/icons/png/dsh-context-manager.png

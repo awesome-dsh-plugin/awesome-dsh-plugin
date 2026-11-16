@@ -1,0 +1,7 @@
+url: https://github.com/mewcoder/power-dsh
+name: mewcoder/power-dsh
+category: ui
+description:
+  en: 'A DSH Desktop enhancement plugin offering Skills/MCP management, global instructions, task notifications, and other practical features, with options to streamline built-in functionality as needed.'
+  zh: 'DSH 桌面增强插件，提供技能/MCP 管理、全局指令、任务通知等实用功能，支持按需精简内置功能。'
+tarball: https://github.com/mewcoder/power-dsh/releases/latest/download/power-dsh.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/ARustamA/dsh-strata-monitor
+name: ARustamA/dsh-strata-monitor
+category: ui
+description:
+  en: 'Live monitor of a local Strata model server inside the DeepSeek Harness GUI: state, token rate, VRAM, GPU and CPU temperatures, and the last request, next to the message composer.'
+  zh: '在 DeepSeek Harness 图形界面中实时监控本地 Strata 模型服务：状态、令牌速率、显存、GPU 与 CPU 温度以及上一次请求，显示在输入框旁。'
+icon: https://raw.githubusercontent.com/ARustamA/dsh-strata-monitor/main/assets/icon-180.png

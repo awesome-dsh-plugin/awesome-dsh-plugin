@@ -1,0 +1,6 @@
+url: https://github.com/wocwo/dsh-info-tools
+name: wocwo/dsh-info-tools
+category: tools
+description:
+  en: 'Cross-domain search and A-share data for DSH: arXiv, Crossref, GitHub, Hacker News, Hugging Face, Product Hunt, plus stock quotes, klines and announcements.'
+  zh: 'DSH 的跨领域信息与 A 股工具：arXiv、Crossref、GitHub、Hacker News、Hugging Face、Product Hunt，以及行情、走势与公告。'

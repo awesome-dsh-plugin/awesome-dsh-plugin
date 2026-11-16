@@ -1,0 +1,6 @@
+url: https://github.com/Apq/dsh-skill-author
+name: Apq/dsh-skill-author
+category: skill
+description:
+  en: Model-facing skill_manage tool that saves, replaces, or deletes Harness skills at user or project scope, with a standing system-prompt section that asks the model to evaluate skill retention before ending a reusable task.
+  zh: 模型侧的 skill_manage 工具，可在用户级或项目级保存、替换、删除 Harness 技能，并常驻一段系统提示督促模型在收尾时评估技能沉淀。

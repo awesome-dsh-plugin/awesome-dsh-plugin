@@ -1,0 +1,7 @@
+url: https://github.com/Azhu9701/dsh-nearby
+name: Azhu9701/dsh-nearby
+category: tools
+description:
+  en: 'Temporary sharing rooms in DSH: hand files, prompt cards and skill packs to people on the same Wi-Fi through a browser link, with nearby auto-discovery and an optional Cloudflare tunnel for remote hosts. Its HTTP routes have no DSH access check, so a web page open in your browser could call them. Opening a room starts a server on 0.0.0.0 on a random port, reachable from your local network through a link that carries a random token.'
+  zh: '在 DSH 里开一间临时分享房：同一 Wi-Fi 下的人用浏览器就能收发文件、提示词卡片和技能包；支持附近实例自动发现，远程宿主可选 Cloudflare 隧道。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。开启房间会在 0.0.0.0 的随机端口上起一个服务，局域网内持有带随机令牌链接的人都能访问。'
+icon: https://raw.githubusercontent.com/Azhu9701/dsh-nearby/main/assets/icon-180.png

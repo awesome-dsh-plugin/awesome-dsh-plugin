@@ -1,0 +1,6 @@
+url: https://github.com/imcaibaicai/dsh-todo-keeper
+name: imcaibaicai/dsh-todo-keeper
+category: agi
+description:
+  en: 'Counts the tool calls the agent makes without calling todo_write and injects an advisory reminder when it goes too long, and warns when the list is batch-checked at the end, so the Tasks panel stops showing a stale snapshot.'
+  zh: '统计智能体连续多少次工具调用没有更新 todo_write，超过阈值就插入一条提醒；到末尾一次性勾选时也会警告。目的是让「任务」面板不再长时间停在旧快照上。'

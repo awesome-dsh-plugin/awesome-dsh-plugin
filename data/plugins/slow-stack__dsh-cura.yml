@@ -1,0 +1,6 @@
+url: https://github.com/slow-stack/dsh-cura
+name: slow-stack/dsh-cura
+category: tools
+description:
+  en: 'A life-care layer for DSH: health log and cycle care in every session, saved coordinates so nearby-place questions do not need re-asking, Amap and Luckin MCP tools, plus a QQ companion layer that injects expression rules into replies.'
+  zh: '给 DSH 加一层生活关怀：每个会话都带健康日志与周期关怀，面板里存过的常用坐标省掉「你在哪」的反问，高德与瑞幸的 MCP 工具挂进所有会话；另附 QQ 伴生层，把表达规则注入回复。'

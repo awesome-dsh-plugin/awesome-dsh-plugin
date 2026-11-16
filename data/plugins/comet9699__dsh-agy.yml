@@ -1,0 +1,6 @@
+url: https://github.com/comet9699/dsh-agy
+name: comet9699/dsh-agy
+category: model
+description:
+  en: 'Connect a locally installed agy CLI to DeepSeek Harness 0.2.2-rc.1, with separate thinking levels, quota display, and Harness-owned tools. Community fork of dannndouglas/dsh-antigravity-acp, beta, verified on Windows x64 only. Needs the agy CLI signed in with your own Google account; installing makes new chats default to Agy models (messages go through agy to Google), switches web search to the agy provider and replaces the built-in compaction. Do not enable it alongside other forks that register the agy-local-acp provider.'
+  zh: '将本机 agy CLI 接入 DeepSeek Harness 0.2.2-rc.1，提供独立思考档位、额度显示和由 Harness 执行的工具调用。dannndouglas/dsh-antigravity-acp 的社区分支，测试版，仅在 Windows x64 上验证。需要本机 agy CLI 并用你自己的 Google 账号登录；安装后新对话默认走 Agy 模型（消息经 agy 发往 Google），网页搜索切到 agy 提供方，并替换内置的上下文压缩。不要与其他注册 agy-local-acp 提供方的分支同时启用。'

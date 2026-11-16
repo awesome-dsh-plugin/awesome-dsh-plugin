@@ -1,0 +1,6 @@
+url: https://github.com/FrozMN/dsh-session-adopt
+name: FrozMN/dsh-session-adopt
+category: session
+description:
+  en: 'Adopts DSH sessions created outside the running window (IDE/ACP clients, other processes) into their matching Workspace, and imports local sessions from other agent harnesses (pi) as native, resumable DSH sessions with sidebar sync/import actions and idempotent re-import.'
+  zh: '把在运行窗口之外（IDE/ACP 客户端、其他进程）创建的 DSH 会话归入对应工作区，并把本机其他 Agent Harness（如 pi）的会话导入为可续聊的 DSH 原生会话，提供侧边栏同步/导入入口与幂等重复导入。'

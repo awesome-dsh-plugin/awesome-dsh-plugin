@@ -1,0 +1,7 @@
+url: https://github.com/sunjay-lee/dsh-k-on-pet
+name: sunjay-lee/dsh-k-on-pet
+category: fun
+description:
+  en: 'Five animated K-ON! character pets for the DSH web interface, with dragging, voice playback, and a tea table.'
+  zh: '为 DSH Web 界面添加《轻音少女》五位角色桌宠，支持拖拽、语音播放和茶桌互动。'
+icon: https://raw.githubusercontent.com/sunjay-lee/dsh-k-on-pet/main/assets/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/svestar/dsh-readpilot
+name: svestar/dsh-readpilot
+category: docs
+description:
+  en: 'AI-assisted reading workspace for DSH with a local TXT/Markdown/EPUB/PDF library, annotations, prompt presets, long notes, memory, export and companion tools.'
+  zh: '面向 DSH 的 AI 辅助阅读工作区：本地 TXT/Markdown/EPUB/PDF 书库、批注、提示词预设、长笔记、记忆、导出与伴读工具。'

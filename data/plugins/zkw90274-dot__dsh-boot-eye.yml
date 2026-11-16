@@ -1,0 +1,8 @@
+url: https://github.com/zkw90274-dot/dsh-boot-eye
+name: zkw90274-dot/dsh-boot-eye
+category: ui
+description:
+  en: 'ASCII boot animation for the whole window: a DeepSeek-blue eye opens out of a glyph storm and the camera dives into the starfield inside its pupil. Runs 4.7 seconds on page load, skips on any click or keypress, and stays quiet for ten minutes after it has played.'
+  zh: '全窗口 ASCII 开机动画：字符风暴里睁开一只 DeepSeek 蓝的眼睛，镜头随后钻进瞳孔里的蓝色星空。页面加载时播放 4.7 秒，任意点击或按键立即跳过，播放后十分钟内重载不再重复。'
+icon: https://raw.githubusercontent.com/zkw90274-dot/dsh-boot-eye/main/assets/icon-180.png
+tarball: https://github.com/zkw90274-dot/dsh-boot-eye/releases/latest/download/dsh-boot-eye.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/osman3n/dsh-safe
+name: osman3n/dsh-safe
+category: dev
+description:
+  en: 'Windows recovery CLI and bundle for a DeepSeek Harness profile that no longer boots: test-boot a copy, disable selected plugins, restore a snapshot. Ships dsh_safe_status and dsh_safe_snapshot tools.'
+  zh: '面向 Windows 的进程外恢复工具兼插件包：为无法启动的 DeepSeek Harness profile 试启动副本、禁用选中的插件、回滚快照，并提供 dsh_safe_status 与 dsh_safe_snapshot 两个工具。'

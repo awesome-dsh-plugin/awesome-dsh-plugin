@@ -1,0 +1,6 @@
+url: https://github.com/yhy854/dsh-calc-tool
+name: yhy854/dsh-calc-tool
+category: tools
+description:
+  en: 'Calculator tool that evaluates arithmetic expressions with a hand-written recursive-descent parser. No eval or new Function; whitelisted identifiers, length and nesting limits, and structured error codes.'
+  zh: '计算器工具：手写递归下降解析器求值算术表达式，不使用 eval 或 new Function，标识符白名单、长度与嵌套上限、结构化错误码。'

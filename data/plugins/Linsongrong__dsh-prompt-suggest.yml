@@ -1,0 +1,6 @@
+url: https://github.com/Linsongrong/dsh-prompt-suggest
+name: Linsongrong/dsh-prompt-suggest
+category: ui
+description:
+  en: 'Inline next-message prediction in the DSH composer: a grey ghost line, Tab to accept, ArrowUp to recall sent prompts.'
+  zh: 'DSH 输入框内联预测：灰字预测下一句，Tab 接受，↑ 召回本会话发过的 prompt。'

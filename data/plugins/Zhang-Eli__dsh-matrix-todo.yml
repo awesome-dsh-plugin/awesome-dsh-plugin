@@ -1,0 +1,16 @@
+url: https://github.com/Zhang-Eli/dsh-matrix-todo
+name: Zhang-Eli/dsh-matrix-todo
+category: tools
+description:
+  en: >-
+    An Eisenhower-matrix to-do panel for the DSH sidebar: importance × urgency
+    quadrants that fill the panel, inline quick-add with a hand-drawn due-date
+    calendar, drag to reorder or move between quadrants, a draggable center
+    handle for quadrant proportions, one-click switch to the completed view, and
+    random encouragement toasts that tell praised on-time finishes apart from
+    overdue ones. Minimal styling uses only DSH theme tokens; bilingual UI.
+  zh: >-
+    DSH 侧栏的艾森豪威尔矩阵待办面板：重要 × 紧急四象限自动撑满面板，象限内
+    就地新增并自带自绘截止日期日历，拖动可在象限内排序或跨象限移动，拖动中心
+    圆点调整四象限比例，一键切换到「已完成」，完成时按按期/逾期给出不同的随机
+    鼓励浮窗。极简风，只用 DSH 主题 token，界面中英双语。

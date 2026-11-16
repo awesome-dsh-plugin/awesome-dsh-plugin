@@ -1,0 +1,6 @@
+url: https://github.com/LINGTIAN303/dsh-layout
+name: LINGTIAN303/dsh-layout
+category: ui
+description:
+  zh: "DSH 界面布局插件：自定义左栏、右栏、会话区与设置页的结构、顺序、宽度和显隐。三栏拖动排序与宽度调整，侧栏、会话区、右栏、设置页逐层拆解，槽位网格编排，画框式区域搬移，入口收纳进「更多」菜单，条件联动规则，多套命名布局方案，全屏布局白板四层结构树。配置持久化在宿主侧，危险配置有多层恢复入口。"
+  en: "Layout plugin for DSH: customize the structure, order, width and visibility of the left sidebar, right sidebar, conversation area and settings page. Drag-sort and resize the three columns, per-layer teardown of sidebar/conversation/right/settings, grid slot arrangement, draw-a-frame region relocation, entry consolidation into More menus, conditional linkage rules, multiple named layout schemes, and a fullscreen layout whiteboard with a four-layer structure tree. Config persists host-side; dangerous configs have multi-layer recovery entries."

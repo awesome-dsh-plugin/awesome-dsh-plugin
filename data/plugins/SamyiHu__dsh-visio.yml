@@ -1,0 +1,6 @@
+url: https://github.com/SamyiHu/dsh-visio
+name: SamyiHu/dsh-visio
+category: docs
+description:
+  en: 'Open and edit Visio (.vsdx) drawings in a DSH panel: live SVG preview, shape and connector editing, layout checks, and a visio tool so the agent can read and modify the drawing. The core engine is Python standard library and needs no Visio or Office; requires Python 3.9+ on PATH, and Pillow for PNG export, snapshots and stencil previews.'
+  zh: '在 DSH 面板里打开和编辑 Visio（.vsdx）图纸：实时 SVG 预览、图形与连接线编辑、布局检查，另有一个让 Agent 直接读写图纸的 visio 工具。核心引擎为 Python 标准库，无需装 Visio 或 Office；需要 PATH 里有 Python 3.9+，PNG 导出、快照与模具预览另需 Pillow。'

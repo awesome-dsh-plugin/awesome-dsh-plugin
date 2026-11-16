@@ -1,0 +1,6 @@
+url: https://github.com/chrischjh/dsh-copilotkit
+name: chrischjh/dsh-copilotkit
+category: dev
+description:
+  en: 'Official CopilotKit skills plus the docs MCP server for DSH, with a detail-page self-check that repairs the MCP row. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '为 DSH 提供官方 CopilotKit skills 与文档 MCP，详情页可一键自检并自动修复 MCP 行。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,8 @@
+url: https://github.com/knight02-bit/dsh-opencode-go-usage
+name: knight02-bit/dsh-opencode-go-usage
+category: usage
+description:
+  en: "OpenCode Go allowance bar under the DSH input box: the rolling, weekly and monthly percentages still left, plus a popover pace budget that turns each window into a per-day and per-week spend target and marks whether the current burn is ahead of that target or behind."
+  zh: "在 DSH 输入框下方显示 OpenCode Go 的 rolling、weekly、monthly 剩余百分比，并用浮层给出配速预算：每个窗口折算成每天、每周可花多少，再标出当前消耗是超前还是落后。"
+icon: https://raw.githubusercontent.com/knight02-bit/dsh-opencode-go-usage/main/assets/icon-180.png
+tarball: https://github.com/knight02-bit/dsh-opencode-go-usage/releases/latest/download/dsh-opencode-go-usage.tgz

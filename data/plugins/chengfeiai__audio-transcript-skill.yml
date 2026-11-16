@@ -1,0 +1,6 @@
+url: https://github.com/chengfeiai/audio-transcript-skill
+name: chengfeiai/audio-transcript-skill
+category: skill
+description:
+  en: 'Skill that transcribes local audio files into a timestamped transcript and an interactive two-column minutes page, with optional speaker separation. Transcription uses mlx-whisper in a Python 3.11 environment you set up yourself (the first run may download models); the renderer uses only the system python3. Given a public short-video share link, it can also drive a real browser through ego-browser and fetch the audio track with curl and ffmpeg, none of which ship with the package.'
+  zh: '把本地录音转成带时间戳的文字稿和双栏交互式纪要的技能，可选说话人分离。转写使用你自备的 Python 3.11 环境里的 mlx-whisper（首次运行可能下载模型），渲染只用系统 python3。给一条公开短视频分享链接时，还能通过 ego-browser 驱动真实浏览器、用 curl 与 ffmpeg 取音轨；这三者都不随包提供。'
