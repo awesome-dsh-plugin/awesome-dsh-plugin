@@ -1,0 +1,6 @@
+url: https://github.com/xiaojiuop/dsh-c4d
+name: xiaojiuop/dsh-c4d
+category: tools
+description:
+  en: 'C4D-style parametric 3D modeling: object-manager JSON scenes, 14 primitives, extrude/lathe/sweep/loft, MoGraph clones, booleans, quad-view software rendering, STL/OBJ/DXF/SVG export and an offline interactive panel. Standalone implementation that does not drive Cinema 4D.'
+  zh: 'C4D 风格参数化三维建模：对象管理器 JSON 场景、14 种图元、挤出/旋转/扫描/放样、MoGraph 克隆、布尔运算、四视图软件渲染、STL/OBJ/DXF/SVG 导出与离线交互面板；独立实现，不驱动 Cinema 4D。'
