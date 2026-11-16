@@ -1,0 +1,6 @@
+url: https://github.com/yuanxiaoye0516/dsh-plugins/tree/main/dsh-session-open
+name: yuanxiaoye0516/dsh-plugins#dsh-session-open
+category: session
+description:
+  en: 'Lets the agent or a local script create a new DSH session through a new_session agent tool and same-origin /session-open-api routes, restricted to configured allowed roots.'
+  zh: '让 agent 或本地脚本通过 new_session 工具和 /session-open-api 路由新建会话，并限制在配置的允许目录内。'
