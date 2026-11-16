@@ -4741,6 +4741,7 @@ dsh plugin --profile web add dshmarket
 - [misakalemon/dsh-session-backup](https://github.com/misakalemon/dsh-session-backup) — 把 DSH 会话日志、附件与存储快照增量备份到 WebDAV 或本地/共享目录：先按大小与修改时间快进、再按 SHA-256 清单复核，保留 N 份旧版本，支持排除规则、限速重试、四种调度触发，恢复前可先干跑。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Missher12/Missher-DSH-Context-Manager](https://github.com/Missher12/Missher-DSH-Context-Manager) — 查看会话上下文、用量记录，并按设置执行压缩。
 - [Missher12/Missher-DSH-Session-Bridge](https://github.com/Missher12/Missher-DSH-Session-Bridge) — 显示和复制完整会话 ID，提供跨会话查询、读取与消息投递，以及临时工作区。
+- [mizuki5101/dsh-refuse-compaction](https://github.com/mizuki5101/dsh-refuse-compaction) — 在自动压缩执行前拦下——四档（先问/推迟/禁止）+ 会话内占用仪表；手动 /compact 不受影响。为本地小窗口模型准备。
 - [mkpoli/dsh-continue-all](https://github.com/mkpoli/dsh-continue-all) — DSH 意外退出后，继续那些回合停在半途的会话。
 - [mkpoli/dsh-session-rename](https://github.com/mkpoli/dsh-session-rename) — 给智能体增加一个为当前会话改名的工具，标题在恢复与翻页后保留，并停止自动生成标题。
 - [Moeblack/dsh-message-edit](https://github.com/Moeblack/dsh-message-edit) — 基于分支的消息编辑、reroll、重试与版本时间线。
