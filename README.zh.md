@@ -8606,6 +8606,7 @@ dsh plugin --profile web add dshmarket
 - [bwndlct/dsh-codex-bridge#dsh-plugin](https://github.com/bwndlct/dsh-codex-bridge/tree/main/packages/dsh-plugin) — 通过本机鉴权桥接与配套 MCP 服务，将 Codex 任务委托给 Desktop 会话，支持工作区分组、模型与推理等级选择、事件跟踪、等待和取消。
 - [CAI-MH/dsh-sysbrief](https://github.com/CAI-MH/dsh-sysbrief) — 解析 PRD/PDF、分批追问澄清目标系统并沉淀 BRIEF.md，最终打包可上传交付物。
 - [callmesoul/deepseek-kanban-plugin](https://github.com/callmesoul/deepseek-kanban-plugin) — DSH 任务看板：任务状态机 + git 分支隔离，agent 自动执行、审核后自动合并回基础分支。
+- [caobanheitu/dsh-work-eta](https://github.com/caobanheitu/dsh-work-eta) — 在输入框下方实时显示本回合还要多久。有 todo 计划时，按本会话实测的每项耗时给整份计划定价，并随计划已用时间持续倒计时——工具调用不会冻结或重启读数；没有计划时按本会话已完成回合的平均时长推算，两者都没有时只显示已用时间。假设态带「估」标记，超出预估时如实说明。基于会话投影与一个 composer dock 槽位实现；宿主机不开定时器、不发额外模型请求、零运行时依赖、无构建步骤。
 - [cckyros/goal-acceptance](https://github.com/cckyros/goal-acceptance) — 验收标准驱动的目标完成：锁定可验证的验收标准、跟踪任务依赖，以 reviewer 正式验收作为完成门禁（18 个 MCP 工具）。
 - [Ceelog/dsh-plugins#dsh-plugin-scheduled-tasks](https://github.com/Ceelog/dsh-plugins/tree/main/src/plugins/dsh-plugin-scheduled-tasks) — 按项目调度提示词，在全新的无头 Agent 会话中执行，支持单次、固定间隔和 cron 计划，并持久化运行历史。
 - [ChangJiang326/dsh-codex-bridge](https://github.com/ChangJiang326/dsh-codex-bridge) — 在指定 Harness 会话中接入本机已安装并登录的 Codex CLI，提供方案、代码审查和可选图片识别；CLI 需另行安装并授权。已在 Windows 实机验证，macOS 与 Linux 走手动安装 CLI 的方式、尚未实机验收。
@@ -9557,6 +9558,7 @@ dsh plugin --profile web add dshmarket
 - [IvanWu2015/dsh-connect#connect](https://github.com/IvanWu2015/dsh-connect/tree/main/packages/connect) — 把 DeepSeek Harness 会话接入飞书/Lark、Telegram 与钉钉：每个聊天绑定一个可续接的 DSH 会话，回复以卡片流式回传，任务结束时用一张结果卡汇报模型、token 用量、步数与耗时。提问与权限审批可直接在聊天里作答，各渠道凭据在 Web 设置面板中配置。
 - [jackControls/dsh-telegram-control](https://github.com/jackControls/dsh-telegram-control) — Telegram 远程控制插件：会话列表（标题+工作目录）、按需恢复暂停的持久化会话（重挂 preset）、按回合精准回传回复、💭 思考摘要、✅/❌ 内联按钮审批（结果回写原消息）、bot 命令菜单。
 - [JamesYasR/dsh-email-push-master](https://github.com/JamesYasR/dsh-email-push-master) — 你不在电脑前时由 agent 邮件提醒你：稳定 SMTP（不重试 535）、连接与空闲超时，并带 --check 自检。
+- [jes-phd/dsh-read-it-later](https://github.com/jes-phd/dsh-read-it-later) — 把每一轮对话的提示词、回复和附件发到你自己的飞书或微信机器人：稍后读、预处理后自动发送、跨设备会话接力。
 - [Jesse-njx/dsh-chatnode-wechat](https://github.com/Jesse-njx/dsh-chatnode-wechat) — 通过 iLink 网关在微信里与 DSH agent 聊天、监控与审批：双向文本、会话切换、进度摘要与编号审批提示。
 - [jgao9906-droid/dsh-task-toast](https://github.com/jgao9906-droid/dsh-task-toast) — 右上角状态提示板，覆盖六种会话状态（完成、出错、待授权、待回答、会话打不开、子 agent 在跑），不在看 DSH 时发系统通知。
 - [JiayangSUNwinter/dsh-island-bridge](https://github.com/JiayangSUNwinter/dsh-island-bridge) — macOS 灵动岛桥接：运行中的会话与待审批操作浮在所有窗口之上，审批直接在岛上裁决，点一行可在桌面端打开对应会话。需 macOS 14+ 与 Xcode Command Line Tools。
