@@ -308,7 +308,7 @@ dsh plugin --profile web add dshmarket
 - [akilonewbility/dsh-workspace-optimize](https://github.com/akilonewbility/dsh-workspace-optimize) — 通过重绘左侧工作区侧栏，为工作区侧栏添加颜色高亮、排序、收藏、状态指示以及系统通知等功能。同时可切换回原版侧栏，也具有部分功能实现。
 - [AkiNoYo-desu/dsh-effort-slider-universal](https://github.com/AkiNoYo-desu/dsh-effort-slider-universal) — 在 DSH 模型菜单里提供推理等级滑条，未声明推理档位的 provider 与模型同样出现。基于 Microqian2th/dsh-codex-effort-slider 改造，不能与上游同装。
 - [AKIRACOD/dsh-drag-and-drop](https://github.com/AKIRACOD/dsh-drag-and-drop) — 拖放 fork：文档以可删除「文件芯片」挂在输入框上方，不打字也能发送。
-- [Akiyuki1130/dsh-observer](https://github.com/Akiyuki1130/dsh-observer) — 用另一个模型在悬浮窗或「观察」栏里实时播报主对话进度（做了什么、接下来做什么、是否卡住），不干涉主会话。
+- [Akiyuki1130/dsh-observer](https://github.com/Akiyuki1130/dsh-observer) — 用另一个模型在悬浮窗或「观察」栏里实时播报主对话进度（做了什么、接下来做什么、是否卡住），不干涉主会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [aklnaaw/dsh-xiaoke-widget](https://github.com/aklnaaw/dsh-xiaoke-widget) — 右下角的 Claude 拟人桌宠「小克」：显示余额、今日已用、峰谷定价与每轮消耗，泡泡内容可编辑（文本、余额、今日、峰谷、图片、随机语句与并列加权选择），支持逐行样式与字体、悬浮快捷编辑、音效与自定义角色/音效；内置会呼吸、会眨眼的动态角色，余额低于预警线时切换成哭脸，动图分 256/384 两档，并可在资源管理里安装 512 高清包；台词 63 条。二创自 MeteorNOX/DeepSeek-Balance-Whale-Widget（MIT）。
 - [AKS1st/dock](https://github.com/AKS1st/dock) — DSH Web 工作台基座插件：提供 VSCode 风格布局外壳（活动栏/侧边栏/编辑器区/面板/状态栏）和 ctx.workbench 开放注册表，供功能插件挂载面板、视图与命令。
 - [AKS1st/dock-editor](https://github.com/AKS1st/dock-editor) — dock 系列文本查看与编辑器：支持撤销重做、Ctrl+S 保存、未保存确认和二进制检测，作为 dock-files 的默认文本查看器。
@@ -625,7 +625,7 @@ dsh plugin --profile web add dshmarket
 - [DamonKoy/dsh-web-ui#dsh-web-ui-settings](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-web-ui-settings) — dsh 设置页的 Web UI 插件组卡片：dsh-web-ui 全家插件的开关与配置。
 - [Daneel0001/dsh-plugin-zh-cn](https://github.com/Daneel0001/dsh-plugin-zh-cn) — 把已安装插件的显示名与描述变成简体中文：启动时用 DSH 自带的模型服务翻译缓存尚未收录的插件，再投影 { en, zh } 元数据供 resolveText() 渲染——不改 DOM，也不调用第三方 API。
 - [DanZai233/dsh-webask](https://github.com/DanZai233/dsh-webask) — 在输入框旁加一个按钮，并提供全局快捷键（默认 mod+shift+k）浮层，把一次性的小问题交给网页版对话而不是送进 harness 上下文：草稿会从输入框取出、复制到剪贴板并打开模板 URL。内置目标站点预设（DeepSeek、Kimi、Qwen、豆包、腾讯元宝、GLM、Gemini），带本地问题历史（可重新打开、复制或回填到输入框），以及设置页（站点、URL 模板、快捷键、剪贴板、历史）。
-- [Darkhe55/dsh-plugin-middle-panel](https://github.com/Darkhe55/dsh-plugin-middle-panel) — 在对话旁增加一个文档面板，可预览 HTML、Markdown、PDF、图片、视频与 3D 模型，并把选中的文字、点选元素、框选区域与 3D 打点变成带编号的标注，一次性回填到对话。
+- [Darkhe55/dsh-plugin-middle-panel](https://github.com/Darkhe55/dsh-plugin-middle-panel) — 在对话旁增加一个文档面板，可预览 HTML、Markdown、PDF、图片、视频与 3D 模型，并把选中的文字、点选元素、框选区域与 3D 打点变成带编号的标注，一次性回填到对话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [darkneu/dsh-finesse-visualizer](https://github.com/darkneu/dsh-finesse-visualizer) — 在对话中自动把 Finesse 3 KatScript 渲染成光学构型图，并提供拖拽式光学设计器实时生成对应的 Finesse 模型。它会扫描每条用户和助手消息里的 KatScript 或 Finesse Python 单元，在后台用第一个能 import finesse 的 Python 解释器渲染（需要 Finesse 3、NumPy 和 Matplotlib，可用 FINESSE_VIZ_PYTHON 指定解释器），代码和图存在 ~/.dsh/finesse-vis。
 - [darlingsakurua/dsh-novels](https://github.com/darlingsakurua/dsh-novels) — 在对话旁边加一个书架面板，用来读本地 .txt 小说：导入文件后识别 UTF-8、带 BOM 的 UTF-8、UTF-16 或 GB18030 编码并自动分章，提供目录、上下章、字号、行距与版心宽度，每本书从上次读到的章节与位置继续。
 - [datit309/dsh-live-inspector](https://github.com/datit309/dsh-live-inspector) — DeepSeek Harness 右侧边栏实时文件变更检查器与文件树：根据智能体的读/写/编辑调用显示 M/A/R 标记与并排 diff，实时追踪智能体活动。
@@ -1077,8 +1077,8 @@ dsh plugin --profile web add dshmarket
 - [jianjianzhu/dsh-harness-ui](https://github.com/jianjianzhu/dsh-harness-ui) — 从侧栏打开的整页控制台面板，含八个标签：总览；从 sessions 服务读取的会话列表（标题、目录、运行状态、更新时间，带筛选）；从 pluginInventory 与 pluginManager 读取的已装 bundle 与 Loader 条目，每个 bundle 带启用开关；列出 GitHub 搜索 API 中 topic:dsh-plugin 公开仓库的插件市场；一个模型与供应商编辑器，通过 remote.settings.mutate 写入 llm-pi-ai 配置命名空间（切换会话模型、新增或编辑供应商及其模型列表、经 remote.credentials 保存 API Key，并以合并方式写入以免表单未暴露的字段被覆盖）；MCP 与技能两个标签；以及一个读取宿主回环 /api/dsh-usage/overview 文档的用量标签。所需服务通过 ctx.inject 声明，缺少任一服务的部署只是不挂载该面板，不会崩溃。
 - [jianlong-ww/dsh-explorer-editor](https://github.com/jianlong-ww/dsh-explorer-editor) — 在 DSH 的文件预览面板内直接编辑工作区文本文件，基于 Monaco 提供语法高亮与工程类型补全。
 - [JianYiAG/dsh-prompt-enhancer#dsh-prompt-enhancer](https://github.com/JianYiAG/dsh-prompt-enhancer/tree/main/dsh-prompt-enhancer) — 输入框提示词一键增强：模型选择器旁的按钮把草稿经一次辅助模型调用改写后直接写回输入框，输入框撤销不受影响；/prompt-enhance 命令把改写结果以命令结果行显示、不改动草稿；可在 profile 补丁里为增强调用单独固定 provider 和模型；改写忠实原文，保留意图、语言与信息量，代码、命令与路径原样保留，不编造事实、不输出占位文字。
-- [jiaxusummer/dsh-icon-changer](https://github.com/jiaxusummer/dsh-icon-changer) — 更换 DeepSeek Harness 桌面版的应用图标（窗口、任务栏、托盘）：可以换用自己的图，也可以恢复官方那套。换图标时 DSH 会退出并重启一次。
-- [jiaxusummer/dsh-window-mem](https://github.com/jiaxusummer/dsh-window-mem) — 记住 DeepSeek Harness 桌面版主窗口的位置、尺寸与最大化状态，下次启动时还原。仅支持 Windows；设置页有三个开关。
+- [jiaxusummer/dsh-icon-changer](https://github.com/jiaxusummer/dsh-icon-changer) — 更换 DeepSeek Harness 桌面版的应用图标（窗口、任务栏、托盘）：可以换用自己的图，也可以恢复官方那套。换图标时 DSH 会退出并重启一次。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [jiaxusummer/dsh-window-mem](https://github.com/jiaxusummer/dsh-window-mem) — 记住 DeepSeek Harness 桌面版主窗口的位置、尺寸与最大化状态，下次启动时还原。仅支持 Windows；设置页有三个开关。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [JiayuREN1127/dsh-file-drag](https://github.com/JiayuREN1127/dsh-file-drag) — 把右侧文件区的文件和文件夹拖进输入框：落下的文件变成句中内嵌的小卡片、附件卡片或 @ 路径，可在设置里切换。
 - [jide315/dsh-reasoning-language](https://github.com/jide315/dsh-reasoning-language) — 通过可配置的系统提示词章节要求模型使用指定语言推理（默认简体中文），并默认展开思考行，同时保留用户手动折叠的状态。
 - [jidekaixin2dian/dsh-file-actions](https://github.com/jidekaixin2dian/dsh-file-actions) — 右键聊天里的任意文件引用，即可打开、用系统关联应用打开、在文件管理器中定位、复制路径或文件内容、另存为。
@@ -3644,7 +3644,7 @@ dsh plugin --profile web add dshmarket
 - [CypherNaught-0x/DSH-Subagent-Model-Router](https://github.com/CypherNaught-0x/DSH-Subagent-Model-Router) — 借助别名、能力标签和使用说明，将每项委派任务自动智能路由到最合适的已配置模型——常规工作更快、更省，复杂任务则交给更强的专用模型。可通过 Web 设置页或引导流程组建模型团队，让多个专家并行工作并可靠汇总结果；所选模型会显示在子代理视图中，并以内联标签无缝融入 Better Sidebar 的 Tasks 任务树。
 - [dakouchiya/dsh-auto-router](https://github.com/dakouchiya/dsh-auto-router) — 按每轮请求的实际内容选择模型与推理等级：便宜的分类模型先判档，监督模型在工具报错和检查点中途改档，升到更强模型前会先弹窗确认。
 - [Dalizi2026/dsh-factory-provider](https://github.com/Dalizi2026/dsh-factory-provider) — 把 Factory (Droid) 订阅额度接入 DSH 的原生模型 provider：三条协议路由、用你自己的 API key 经本机回环网关认证，并提供设置页查看连接状态、订阅额度、按模型的 token 统计与切换 key。
-- [Darkhe55/dsh-plugin-models-fingerprint](https://github.com/Darkhe55/dsh-plugin-models-fingerprint) — 通过对比 DSH 会话中的协议指纹与行为统计，监控模型路由变化，提供逐轮卡片、路由等价性、官方基线和漂移/质量信号；指纹是证据，不是模型身份证明。
+- [Darkhe55/dsh-plugin-models-fingerprint](https://github.com/Darkhe55/dsh-plugin-models-fingerprint) — 通过对比 DSH 会话中的协议指纹与行为统计，监控模型路由变化，提供逐轮卡片、路由等价性、官方基线和漂移/质量信号；指纹是证据，不是模型身份证明。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [darkings/dsh-agy-provider](https://github.com/darkings/dsh-agy-provider) — 将本机已登录的 AGY CLI 接入 DSH 作为模型 Provider：支持 Gemini/Claude 模型发现、独立推理强度、DSH-owned 工具、受限上下文与工具结果管理、Windows 安全流式传输；如遇问题，请在 GitHub 提交 Issue：https://github.com/darkings/dsh-agy-provider/issues。
 - [dat-lequoc/dsh-kiro](https://github.com/dat-lequoc/dsh-kiro) — Kiro 模型提供商，支持 Builder ID、Identity Center、Google、GitHub 与凭据导入登录、token 和 profile 自动刷新、账户用量、实时模型发现、推理档位选择、流式工具调用、上游结束原因与上下文溢出处理；token 统计在 Kiro 提供精确计数时直接采用，否则用它确实会发送的上下文占用百分比乘以模型公布的窗口换算。
 - [DavidRm1911/dsh-llm-subscription](https://github.com/DavidRm1911/dsh-llm-subscription) — 在 DSH 原生模型选择器里加入 Claude、Gemini 与本地 Ollama 模型，复用你已有的 Claude Code / Antigravity CLI 登录态而不是按量计费的 API Key，并为 Claude 提供可用的推理强度选择。
@@ -7467,7 +7467,7 @@ dsh plugin --profile web add dshmarket
 - [miqian-nomad/dsh-browser-playwright-codex](https://github.com/miqian-nomad/dsh-browser-playwright-codex) — 浏览器自动化：让 AI 用你已经登录的账号，在真实网页上填表、抓取列表、多标签查后台。它跑在你桌面上的一个可见窗口里 —— 最小化它就不抢焦点、安静干活；遇到登录、验证码和原生弹窗会停下来等你，绝不替你点「确定」。登录一次一直记得（独立 profile + session cookie 回注）。23 个 Playwright 工具（20 个常驻、3 个默认关闭的强力工具），URL 白名单、弹窗挂起、CDP 方法白名单都是机制级且有测试钉住。
 - [mmyddd/dsh-element-lens](https://github.com/mmyddd/dsh-element-lens) — 在右侧栏浏览器里拾取元素，把它的选择器、计算样式与 HTML 以可逐条删除的胶囊插入对话草稿。
 - [moguiyu/dsh-tavily#packages/dsh-tavily](https://github.com/moguiyu/dsh-tavily/tree/main/packages/dsh-tavily) — Tavily 搜索、提取、站点地图与爬取工具：多 Key 轮换，HTTP 401/429/432/433 故障转移，并提供按账号限制并发请求的负载均衡模式；插件配置页含密钥与用量卡片。内置 web_search 永不替换。
-- [natgurlain/dsh-browser-agent#bridge-browser](https://github.com/natgurlain/dsh-browser-agent/tree/main/packages/browser/bridge-browser) — Browser bridge for DSH 0.2.2-rc.1+, used with its companion Chrome/Brave/Firefox extension: the agent reads and operates tabs in the user's own browser (snapshot, click, type, navigate, extract tables) and each page action waits for an approval card that names the element. A fork of omdsh-dev/dsh-browser. The extension is loaded separately and paired with a code typed into DSH.
+- [natgurlain/dsh-browser-agent#bridge-browser](https://github.com/natgurlain/dsh-browser-agent/tree/main/packages/browser/bridge-browser) — 浏览器桥接（需 DSH 0.2.2-rc.1+），配合 Chrome/Brave/Firefox 配套扩展使用：Agent 在你自己的浏览器里读取并操作标签页（快照、点击、输入、跳转、提取表格），每次页面操作都要先通过点名具体元素的确认卡。fork 自 omdsh-dev/dsh-browser。扩展需另行加载，并用在 DSH 里输入的配对码配对。
 - [newbeebnb/hermes-web-mcp](https://github.com/newbeebnb/hermes-web-mcp) — 免密钥上网 MCP server：web_search、基于双 CDP Chrome 的 JS 渲染抓取（代理自动互备），以及 7 个隔离上下文真实浏览器 page_* 工具。
 - [nhhc-lxr/dsh-web-tool-provider](https://github.com/nhhc-lxr/dsh-web-tool-provider) — 把 Tavily、Exa、Firecrawl 归一到同一层 web_search 与 web_fetch：厂商失败时按冷却链回退，配置是宿主的一段 Config 表单，桌面与 dsh-go 读写同一处。
 - [NingYuanLee/dsh-gui-auth-url](https://github.com/NingYuanLee/dsh-gui-auth-url) — 把当前 DSH Web GUI 的合法带 token 地址作为 agent 工具返回，浏览器自动化可直接打开 GUI，不再遇到 401。
