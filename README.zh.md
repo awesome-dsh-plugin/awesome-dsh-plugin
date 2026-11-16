@@ -9674,6 +9674,7 @@ dsh plugin --profile web add dshmarket
 - [yujiajie01/dsh-work-reminder](https://github.com/yujiajie01/dsh-work-reminder) — 按设定的多个时间点提醒休息（默认中午 12:10 与下午 18:00，可增删改，最多 12 个）：到点由宿主把 DSH 窗口真正拉到最前（最小化会先还原，即使正在别的应用里也会抢到前台），并全屏弹出动态提醒，可「延迟五分钟」或「知道了」。提醒可用自己的图片（支持 SVG、PNG、GIF、JPG、WebP，GIF 会动）替代默认时钟图标；时间、图片、静音与自动聚焦开关均存于 localStorage。
 - [YuMo226/dsh-task-notify](https://github.com/YuMo226/dsh-task-notify) — 任务完成时弹出 Windows 原生系统通知（通知中心横幅）：目标完成或 Agent 结束一轮。
 - [yunfengnobug/dsh-qq-bot](https://github.com/yunfengnobug/dsh-qq-bot) — 把 DSH 会话接到 QQ（OneBot/NapCat）的插件（fork 自 sj244/dsh-qq-bridge，MIT）。白名单默认全关；被 @、叫到昵称或被戳一定叫醒，其余消息按可调概率抽样。Cordis 插件 id 仍是 qq-bridge。它沿用上游的 Cordis id（qq-bridge）：安装前须先卸载 sj244/dsh-qq-bridge，两者不能同装；白名单为空时谁都不会被叫醒。
+- [YunJianFengYin/dsh-status-light](https://github.com/YunJianFengYin/dsh-status-light) — 工厂式三色信号灯：有对话在等你处理时亮红灯并蜂鸣，有对话在运行时亮黄灯，全部空闲时亮绿灯。
 - [yurin7/dsh-turn-alert](https://github.com/yurin7/dsh-turn-alert) — 一轮对话结束时闪烁 Windows 任务栏图标并弹出系统通知，开关在设置里实时可改。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [YUsaltyfish/dsh-notification-sound](https://github.com/YUsaltyfish/dsh-notification-sound) — 弹出选项卡提问时、请求工具权限时、一轮对话结束时，各播放一次提示音；支持自定义音频文件夹；另附 fish_beep 工具，可随时手动响一声。
 - [Yuuyuko-uu/dsh-qq-link](https://github.com/Yuuyuko-uu/dsh-qq-link) — 通过 NapCat HTTP 把 DSH 会话和 QQ 双向打通：AI 说完自动发到 QQ，你在 QQ 里说的话自动转进会话。
