@@ -1,0 +1,7 @@
+url: https://github.com/Ycet/dsh-awesome-hud
+name: Ycet/dsh-awesome-hud
+category: ui
+icon: https://raw.githubusercontent.com/Ycet/dsh-awesome-hud/main/icon.png
+description:
+  en: "Floating HUD panel on the chat page: session state, context usage with one-click compaction, git branch, changes, commit, revert and graph, subagent tasks, to-do and plan lists, MCP global toggles, per-workspace notes, and a settings dialog with per-profile module visibility."
+  zh: "聊天页右上角的悬浮 HUD 面板：会话状态、上下文占用与一键压缩、git 分支与变更（提交 / 回滚 / graph）、子代理任务、待办与计划清单、MCP 全局启停、按工作区共享的便笺，以及按 profile 持久化模块可见性的 HUD 设置。"

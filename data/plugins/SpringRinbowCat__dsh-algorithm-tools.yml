@@ -1,0 +1,6 @@
+url: https://github.com/SpringRinbowCat/dsh-algorithm-tools
+name: SpringRinbowCat/dsh-algorithm-tools
+category: tools
+description:
+  en: 'Training workbench for competitive programming — syncs Codeforces and AtCoder submissions, profiles weak tags, picks a daily three-band problem set, reviews contests, and keeps a check-in calendar. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '算法训练台：同步 Codeforces/AtCoder 刷题记录，分析弱项标签，每天生成三档训练题，支持比赛复盘与日历打卡。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

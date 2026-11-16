@@ -1,0 +1,6 @@
+url: https://github.com/loveandbeepbrother/dsh-galatea/tree/main/project-tasks
+name: loveandbeepbrother/dsh-galatea#project-tasks
+category: workflow
+description:
+  en: 'Talk to one assistant and let your projects do the long work. Tell your Galatea assistant what you need; it hands the job to that DSH project''s own session, which works in the project folder and reports back. The assistant checks the report against what you asked for (accept, send back for changes, or cancel) and tells you how it went. If the project is linked to a chat group, progress is posted there too. Requires the Galatea framework.'
+  zh: 你只跟一个助手说话，长的活交给项目去做。告诉 Galatea 助手要什么，它把活派给那个 DSH 项目自己的会话，在项目目录里做完交回报告；助手对照交付要求验收（接受、返修或取消），再告诉你结果。项目接着聊天群的话，进度也会发到群里。需要先装 Galatea 框架。

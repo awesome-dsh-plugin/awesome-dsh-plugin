@@ -1,0 +1,6 @@
+url: https://github.com/yeweiliang7063/dsh-tcm
+name: yeweiliang7063/dsh-tcm
+category: skill
+description:
+  en: 'A traditional Chinese medicine preset for DeepSeek Harness that explains pattern identification in seven plain-language sections, recommends acupoints, flags contraindications and safety warnings, and gives only reasoning rather than doses or prescriptions.'
+  zh: 'DeepSeek Harness 的中医经方预设（学习版）：先用一句大白话下结论，再按七段讲辨证定位、治法、方名与加减方向，推荐穴位，标出配伍禁忌、药量警示与就医提示；只讲思路，不给剂量，不出处方笺。'

@@ -1,0 +1,6 @@
+url: https://github.com/yukre/dsh-session-delete
+name: yukre/dsh-session-delete
+category: session
+description:
+  en: 'Delete a session and its transcript permanently from the sidebar menu, with a confirmation step and a refusal to touch a running session. Archive only hides a session; this removes it. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '从侧栏菜单永久删除会话及其对话日志，带二次确认，并拒绝删除正在运行的会话。归档只是隐藏，这个才真正删掉。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

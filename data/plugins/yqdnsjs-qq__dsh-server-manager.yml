@@ -1,0 +1,8 @@
+url: https://github.com/yqdnsjs-qq/dsh-server-manager
+name: yqdnsjs-qq/dsh-server-manager
+category: tools
+description:
+  en: Manage SSH servers and NAS web UIs from the DSH sidebar, including status probes, Docker control, PVE updates, and 1Panel app versions.
+  zh: 在 DSH 侧栏集中管理 SSH 服务器与 NAS，查看状态、控制 Docker、检查 PVE 更新与 1Panel 应用版本。
+icon: https://raw.githubusercontent.com/yqdnsjs-qq/dsh-server-manager/main/icon.png
+tarball: https://github.com/yqdnsjs-qq/dsh-server-manager/releases/latest/download/dsh-server-manager.tgz

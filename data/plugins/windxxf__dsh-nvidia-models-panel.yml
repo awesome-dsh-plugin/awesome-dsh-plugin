@@ -1,0 +1,6 @@
+url: https://github.com/windxxf/dsh-nvidia-models-panel
+name: windxxf/dsh-nvidia-models-panel
+category: model
+description:
+  en: Detects available NVIDIA NIM models, verifies each with a real streaming call, saves the API key in-panel, and one-click configures DeepSeek Harness settings.
+  zh: 检测可用的 NVIDIA NIM 模型、逐个真实试调用验证、面板内保存 API Key，一键配置进 DeepSeek Harness 设置。

@@ -1,0 +1,6 @@
+url: https://github.com/tendayst/dsh-wake-relay
+name: tendayst/dsh-wake-relay
+category: notify
+description:
+  en: 'External wake bridge for DSH sessions: an out-of-host watcher posts an event to a loopback endpoint, and a failed delivery records nothing so the caller can retry with the same event_id.'
+  zh: 'DSH 会话的外部唤醒桥：宿主外的 watcher 向本地端点投递事件；投递失败不记账，调用方可用同一个 event_id 重试。'

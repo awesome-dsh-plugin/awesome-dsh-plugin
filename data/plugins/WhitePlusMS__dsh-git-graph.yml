@@ -2,6 +2,6 @@ url: https://github.com/WhitePlusMS/dsh-git-graph
 name: WhitePlusMS/dsh-git-graph
 category: git
 description:
-  en: 'Read-only Git Graph in the native DSH Web sidebar, with commit history, branch and tag refs, file diffs, two-commit comparison, and full historical source.'
-  zh: 'DSH Web 原生右侧栏的只读 Git Graph，支持提交历史、分支与标签、文件 Diff、两提交比较和完整历史原文。'
+  en: 'Read-only Git Graph for the DSH Web sidebar, with direct submodule switching, commit history, file diffs, commit comparison, and full historical source.'
+  zh: 'DSH Web 原生右侧栏的只读 Git Graph，支持直接子模块切换、提交历史、文件 Diff、两提交比较和完整历史原文。'
 tarball: https://github.com/WhitePlusMS/dsh-git-graph/releases/latest/download/dsh-git-graph.tgz

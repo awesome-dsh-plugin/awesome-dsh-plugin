@@ -1,0 +1,6 @@
+url: https://github.com/Hjay1101/dsh-opencode-go-usage
+name: Hjay1101/dsh-opencode-go-usage
+category: usage
+description:
+  en: 'OpenCode Go subscription usage in a Settings sidebar section and a composer bolt button: 5h rolling, weekly and monthly windows with progress bars and reset times, a hover balance for DeepSeek official models, and model lists and caps that follow the official data live.'
+  zh: '在设置侧栏与输入框闪电按钮中查看 OpenCode Go 订阅用量：5 小时滚动/每周/每月窗口的进度条与重置时间，DeepSeek 官方模型悬停显示余额，模型清单与上限实时跟随官方数据。'

@@ -1,0 +1,8 @@
+url: https://github.com/Starlit-Sky-code/dsh-experience-optimizer/tree/main/packages/plugin-recipe
+name: Starlit-Sky-code/dsh-experience-optimizer#plugin-recipe
+category: workflow
+description:
+  en: 'Workflow blueprint planner for DeepSeek Harness: turns a business goal into validated steps, capabilities, permissions, failure handling, acceptance criteria and rollback, then exports Markdown or JSON.'
+  zh: 'DSH 工作流蓝图规划：把业务目标转成可校验的步骤、能力、权限、失败策略、验收标准与回滚，并可导出 Markdown/JSON。'
+icon: https://raw.githubusercontent.com/Starlit-Sky-code/dsh-experience-optimizer/main/packages/plugin-recipe/icon.png
+tarball: https://github.com/Starlit-Sky-code/dsh-experience-optimizer/releases/download/v0.2.4/dsh-plugin-recipe-0.2.4.tgz

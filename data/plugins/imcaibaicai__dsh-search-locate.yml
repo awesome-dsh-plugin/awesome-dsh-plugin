@@ -1,0 +1,6 @@
+url: https://github.com/imcaibaicai/dsh-search-locate
+name: imcaibaicai/dsh-search-locate
+category: ui
+description:
+  en: 'Clicking a sidebar search result opens the session, scrolls to the row that matches the search snippet and highlights it briefly.'
+  zh: '点击侧栏搜索结果后打开会话、滚动到与搜索片段对应的那一行，并短暂高亮。'

@@ -1,0 +1,6 @@
+url: https://github.com/lukeinx/dsh-remote-wecom
+name: lukeinx/dsh-remote-wecom
+category: remote
+description:
+  en: 'Control DeepSeek Harness Desktop sessions from WeCom on your phone, with session and model switching, tool approvals, task results and generated files, and QR setup in Desktop settings. Needs a dedicated WeCom smart bot; the first person to send it a direct message within 10 minutes of the QR scan (or the 6-digit code from the settings page) becomes the owner, and only the owner''s direct messages are accepted afterwards.'
+  zh: '在手机企业微信里遥控 DeepSeek Harness Desktop 会话，支持切换会话与模型、工具审批、结果与生成文件推送，并可在 Desktop 设置页扫码配置。需要一个专用的企业微信智能机器人；扫码后 10 分钟内第一个给它发单聊的人（或在设置页给出的 6 位绑定码）成为主人，此后只接受主人的单聊。'

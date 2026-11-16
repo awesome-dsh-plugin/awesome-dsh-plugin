@@ -1,0 +1,7 @@
+url: https://github.com/chanyuenpang/dsh-services-manager
+name: chanyuenpang/dsh-services-manager
+category: dev
+description:
+  en: 'Manage local background services in DSH Desktop/Web, with persistent start/stop policies, process identity checks, and an authenticated registration CLI.'
+  zh: '在 DSH Desktop/Web 中管理本地后台服务，支持持久启停策略、进程身份校验和需认证的服务登记 CLI。'
+tarball: https://github.com/chanyuenpang/dsh-services-manager/releases/download/v0.2.2/dsh-services-manager-0.2.2.tgz

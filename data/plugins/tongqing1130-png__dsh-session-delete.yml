@@ -1,0 +1,7 @@
+url: https://github.com/tongqing1130-png/dsh-session-delete
+name: tongqing1130-png/dsh-session-delete
+category: session
+tarball: https://github.com/tongqing1130-png/dsh-session-delete/releases/latest/download/dsh-session-delete.tgz
+description:
+  en: 'Adds a "Delete conversation" item to the DSH session sidebar menu: it removes the session from disk, from the in-memory session table and from workspace references instead of archiving it, behind a native confirmation modal. Refuses any target outside $DSH_HOME/sessions/<workspace>/<session-id>. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给 DSH 会话侧边栏菜单加一项「删除对话」：把会话从磁盘目录、内存会话表和工作区引用里一并删掉，而不是归档，确认框用 DSH 原生 Modal。只允许删 $DSH_HOME/sessions/<工作区>/<会话 id> 这一层。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

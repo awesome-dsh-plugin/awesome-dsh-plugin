@@ -1,0 +1,7 @@
+url: https://github.com/vamyane/dsh-ai-voice-cover
+name: vamyane/dsh-ai-voice-cover
+category: voice
+description:
+  en: "AI voice cover for DeepSeek Harness: give any song plus about 10 seconds of reference audio and get a cover sung in that voice — dry vocal and mixed final, with the melody aligned to the original because only timbre is swapped. Supports zero-shot covers and archived voice libraries, automatic semi-tone shift synced with the accompaniment, an isolated Python venv, and runs on GPU or CPU."
+  zh: "AI 翻唱合成：给一首歌加约 10 秒参考人声，产出用该音色翻唱的干声与成品；只换音色不写旋律，所以旋律严格对齐原唱。支持零样本即时出歌、音色库建档复用、自动半音移调并同步伴奏，自带隔离 venv，GPU 加速、纯 CPU 也能跑。"
+icon: https://raw.githubusercontent.com/vamyane/dsh-ai-voice-cover/main/assets/icon.png

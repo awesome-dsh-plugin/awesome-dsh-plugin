@@ -1,0 +1,8 @@
+url: https://github.com/creatjy/dsh-plugin-update-entry
+name: creatjy/dsh-plugin-update-entry
+category: ui
+tarball: https://github.com/creatjy/dsh-plugin-update-entry/releases/download/v1.0.0/dsh-plugin-update-entry-1.0.0.tgz
+icon: https://raw.githubusercontent.com/creatjy/dsh-plugin-update-entry/main/icon.png
+description:
+  zh: "在 DSH 插件页的每张可更新卡片上补一个更新入口：可选版本、悬停查看该版本的 GitHub 更新说明，工具栏还提供按钮把整批可更新插件按顺序更新，可随时停止。"
+  en: "Adds an update entry to every updatable card in the DSH plugin page: pick a version, hover to read that version's release notes, and update all updatable plugins in order from a toolbar button that can be stopped at any time."

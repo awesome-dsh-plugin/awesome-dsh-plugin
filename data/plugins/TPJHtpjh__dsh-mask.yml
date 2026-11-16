@@ -1,0 +1,7 @@
+url: "https://github.com/TPJHtpjh/dsh-mask"
+name: "TPJHtpjh/dsh-mask"
+category: "tools"
+description:
+  en: "Per-preset masking of host-plane tools and skills, set from a checklist panel. Tick a name and it leaves that mode's prompt; untick and live sessions get it back on their next step, no restart. Tools are denied by exact name or MCP server prefix; skills by name, by the provider that registered them, or by discovery root. The skill layer sits on top of Skills Manager's global switch, so only currently-enabled skills are offered and a rule aimed at a disabled one stays dormant until it is enabled there. Presets you never configure are untouched."
+  zh: "按 Agent 预设（模式）屏蔽宿主面的工具与技能，用勾选清单配置。勾上某项，它就退出该模式的提示词；取消勾选，受影响的现有会话在下一个 step 拿回来，不用重启。工具按精确名字或 MCP 服务前缀屏蔽，技能按名字、注册方或发现根屏蔽。技能这一层叠在 Skills Manager 的全局开关之上，所以只列出当前已启用的技能，指向已停用技能的规则保持待命，那边一启用就生效。没配置过的模式一概不动。"
+icon: "https://raw.githubusercontent.com/TPJHtpjh/dsh-mask/main/assets/icon-180.png"

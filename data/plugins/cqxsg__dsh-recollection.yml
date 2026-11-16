@@ -1,0 +1,6 @@
+url: https://github.com/cqxsg/dsh-recollection
+name: cqxsg/dsh-recollection
+category: memory
+description:
+  en: 'Lets DeepSeek Harness agents autonomously search and revisit original history from the current session that has been removed from the model''s context by compaction. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '让 DeepSeek Harness Agent 自主检索并回读当前会话中因上下文压缩而退出模型可见上下文的原始对话历史。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

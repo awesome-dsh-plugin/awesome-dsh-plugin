@@ -1,0 +1,6 @@
+url: https://github.com/yuhhhong/dsh-sidechat
+name: yuhhhong/dsh-sidechat
+category: session
+description:
+  en: 'Temporary right-sidebar conversations seeded from the latest completed main turn, using on-demand managed subagents with attachments, skills, and live model and permission selection, without automatically sending replies back to the main conversation.'
+  zh: '在右侧栏基于主会话最近完成轮次的背景快照开展临时讨论，按需启动托管子代理，支持附件、技能及运行中的模型和权限切换，不自动向主会话回传回复。'

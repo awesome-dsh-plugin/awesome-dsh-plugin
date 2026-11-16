@@ -1,0 +1,7 @@
+url: https://github.com/Genesi599/dsh-plugins/tree/main/plugins/branch
+name: Genesi599/dsh-plugins#branch
+category: session
+description:
+  en: 'Four slash commands for session branches: list the branch tree, fork at a completed turn, pin a session together with its whole family, and merge a child branch back into its parent.'
+  zh: '会话分支的四个斜杠命令：列出分支树、在已完成的轮次处 fork、把会话连同整个家族置顶、把子分支合并回父会话。'
+icon: https://raw.githubusercontent.com/Genesi599/dsh-plugins/main/plugins/branch/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/person-clouds/dsh-workflow-shortcuts
+name: person-clouds/dsh-workflow-shortcuts
+category: workflow
+description:
+  en: 'Adds /D and /G slash commands to DSH Web: discuss and write a plan first, then start a fresh implementation session from that plan.'
+  zh: '为 DSH Web 增加 /D 与 /G 快捷命令：先讨论并落成计划文档，再从该计划新建实施会话。'
+tarball: https://github.com/person-clouds/dsh-workflow-shortcuts/releases/latest/download/dsh-workflow-shortcuts.tgz

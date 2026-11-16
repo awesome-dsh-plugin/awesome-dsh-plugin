@@ -1,0 +1,7 @@
+url: https://github.com/ViolaTan55/dsh-whale-voyage
+name: ViolaTan55/dsh-whale-voyage
+category: fun
+description:
+  en: 'Adds a harbor page to the sidebar where a whale leaves on timed trips by itself, fetches public listings from GitHub, arXiv, Bilibili, Hacker News or V2EX, and returns with an illustrated postcard that introduces one item, written by the default model with a template fallback.'
+  zh: '在侧栏加一个港口页面，小鲸鱼会按时间自己出海，从 GitHub、arXiv、B 站、Hacker News 或 V2EX 的公开列表里取材，回港时带回一张插画明信片，只介绍一样东西；正文由默认模型写，模型不可用时用模板。'
+icon: https://raw.githubusercontent.com/ViolaTan55/dsh-whale-voyage/main/docs/icon.png

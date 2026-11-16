@@ -1,0 +1,6 @@
+url: https://github.com/dbbdbdhdbxb-design/dsh-douyin-studio
+name: dbbdbdhdbxb-design/dsh-douyin-studio
+category: workflow
+description:
+  en: 'A workbench for a single Douyin account: feed scanning, comment reading, threaded replies, DMs with images and stickers, image/video publishing, and growth stats. Runs entirely through your own logged-in Chrome - no password, no open-platform app, zero runtime dependencies; every write asks for confirmation twice, publishing defaults to a draft with private visibility.'
+  zh: '单个抖音号的工作台：刷推荐、读评论、回楼中楼、私信（可带图与表情包）、发图文和视频、看数据趋势。全部走你已登录的 Chrome，不碰密码也不用开放平台，零运行时依赖；每个写操作都要二次确认，发布默认存草稿、可见性默认仅自己可见。'
