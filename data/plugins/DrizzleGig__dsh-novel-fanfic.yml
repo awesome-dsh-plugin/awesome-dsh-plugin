@@ -1,0 +1,6 @@
+url: https://github.com/DrizzleGig/dsh-novel-fanfic
+name: DrizzleGig/dsh-novel-fanfic
+category: workflow
+description:
+  en: 'A fanfic writing studio: import the original and get a source-checkable canon (chapter, offset and quote for every fact), declare the changes this fic makes as Fic Canon, compile a scene contract before writing, and check the draft against both. Fic Canon outranks the original; checks never rewrite your prose. Off by default.'
+  zh: '同人工作室：导入原著得到可核 canon（每条事实带章节、偏移、引文），把这一版有意的二创改动声明为「本作设定」，写作前编译场景契约，写作后按原著与设定检查。本作优先于原著；只报冲突，不自动改稿。默认关闭。'
