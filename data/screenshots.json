@@ -1372,5 +1372,11 @@
     "https://raw.githubusercontent.com/LFY-bot/dsh-api-probe/main/assets/report-result.png",
     "https://raw.githubusercontent.com/LFY-bot/dsh-api-probe/main/assets/report-failure.png",
     "https://raw.githubusercontent.com/LFY-bot/dsh-api-probe/main/assets/report-metrics.png"
+  ],
+  "https://github.com/beyondgjc/dsh-agent-chat": [
+    "https://raw.githubusercontent.com/beyondgjc/dsh-agent-chat/main/assets/group-chat.png",
+    "https://raw.githubusercontent.com/beyondgjc/dsh-agent-chat/main/assets/group-create.png",
+    "https://raw.githubusercontent.com/beyondgjc/dsh-agent-chat/main/assets/discussion-detail.png",
+    "https://raw.githubusercontent.com/beyondgjc/dsh-agent-chat/main/assets/discussion-create.png"
   ]
 }
