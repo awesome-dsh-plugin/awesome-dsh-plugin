@@ -1386,6 +1386,7 @@ dsh plugin --profile web add dshmarket
 - [Makk9609/dsh-session-mark](https://github.com/Makk9609/dsh-session-mark) — 右键左侧会话列表中的会话，选择八档渐变或三个手绘线条图案（星星、猫、狗）；最后一条空白条清除。
 - [MannixHu/dsh-statusbar-config](https://github.com/MannixHu/dsh-statusbar-config) — 用 ${变量} 显示模板自定义输入框下方的会话统计行——显示哪些统计段、单位文案怎么写，全部由模板决定。
 - [mantonlove/dsh-margin-notes](https://github.com/mantonlove/dsh-margin-notes) — DSH 页边批注：在文档预览或助手回复里划词写批注，攒成一批后一次性写入输入框，让模型按编号逐条回应。
+- [maomaoxyz1/dsh-cpu-temp](https://github.com/maomaoxyz1/dsh-cpu-temp) — 在 DSH 输入框「技能」按钮右侧每秒显示温度胶囊，支持 Windows ACPI 热区、部分 Linux CPU hwmon 传感器或可选外部采样器快照。
 - [maqian1632/dsh-tray-restart](https://github.com/maqian1632/dsh-tray-restart) — 在 DSH 桌面端的 Windows 系统托盘菜单中只增加一个“重启 DeepSeek Harness”项，做法是原位修改已安装的 app.asar 并在桌面端每次更新后重打补丁；需要 DSH 安装目录可写，不添加其他托盘操作。
 - [MarchLiu/dsh-rich-editor](https://github.com/MarchLiu/dsh-rich-editor) — 为输入区提供富 Markdown 笔记本：工具行开关加 CodeMirror 编辑卡片，支持 Codex 风格列表编辑，经会话服务提交。
 - [MaRi23333/dsh-agent-instructions-editor](https://github.com/MaRi23333/dsh-agent-instructions-editor) — 在 DeepSeek Harness 设置页编辑全局 AGENTS.md 和项目 AGENTS.md / CLAUDE.md 个性化指令，提供项目指令链浏览、字节预算显示与保存冲突处理。
@@ -4794,6 +4795,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-session-sync](https://github.com/PerryLink/dsh-session-sync) — DeepSeek Harness 的跨设备会话同步：经 git 在多机之间同步会话与设置。
 - [PianoPrince/dsh-workspace-mover](https://github.com/PianoPrince/dsh-workspace-mover) — 拖拽跨工作区真迁移会话，找回失联与未记账会话，文件夹改名后一键原地重定向工作区；ID 与历史原样保留，步步备份回滚。
 - [pipipigu/dsh-workspace-tree](https://github.com/pipipigu/dsh-workspace-tree) — DSH 侧边栏虚拟会话分类树、点击式移动菜单与任务状态胶囊。
+- [plasticmemories-0823/dsh-session-tree](https://github.com/plasticmemories-0823/dsh-session-tree) — 把已有会话挂载为 DSH 侧栏中的可见子代理，支持任务依赖和执行回执。
 - [Player-MINEPIG/dsh-prompt-assembler](https://github.com/Player-MINEPIG/dsh-prompt-assembler) — 独立提示词装配插件，提供来源注册、自定义文本、策略编辑与预览，通过 DSH 公开钩子按会话应用策略快照。
 - [PluckSlugSorrow/dsh-session-history-search](https://github.com/PluckSlugSorrow/dsh-session-history-search) — 侧栏全局搜索历史对话：字面子串匹配（中文可用），结果按会话分组并高亮命中片段，点一下跳回那个会话。
 - [po-et/dsh-session-guard](https://github.com/po-et/dsh-session-guard) — 预防并发写导致的会话损坏：在会话开始及每一步获取按会话的咨询锁，第二个 dsh 进程会明确报错而非写出重复 seq 断层；死进程持有的锁自动接管。
@@ -11105,6 +11107,7 @@ dsh plugin --profile web add dshmarket
 - [863683348/dsh-plugin-scorecard](https://github.com/863683348/dsh-plugin-scorecard) — DSH 插件生态体检评分卡：同步 dsh-plugin 目录，对任意插件做质量与安全审计（0-100 分、A-D 等级、安全一票否决），榜单、搜索与历史评分曲线（目录持久化）。
 - [863683348/dsh-recipe](https://github.com/863683348/dsh-recipe) — 把 dsh 插件打包成场景配方（"插件界的 dotfiles"）：recipe 工具可列出、搜索、应用并组合现成插件环境，带有序安装序列。
 - [99galaxy/dsh-plugin-market](https://github.com/99galaxy/dsh-plugin-market) — 从 DSH 左侧栏打开独立的插件市场页面，浏览 awesome-dsh-plugin 目录。支持按分类或安装状态筛选、按名称或简介搜索，以及按 Star、下载量、名称或收录时间排序；三个标签分别显示全部插件、已安装插件和可更新插件，并单独提示无法判断更新状态的数量。自动识别当前 Web 或桌面 profile，使用 DSH 提供的包管理器一键安装和更新，保留其他插件的停用状态。支持通过 HMR 重载 profile，不可用时提示重启。各 profile 的安装状态独立，安装与重载互斥，分页保持已提交的搜索条件。目录与安装状态快照过期时先显示本地内容并在后台刷新。未指定版本的 npm 安装先解析官方 registry 的 latest，再按确切版本安装并核验落盘版本。npm 插件按目录目标版本精确更新，Git 插件强制重新解析来源。目录在本地缓存一小时，官方源不可达时依次回退到镜像、CDN 与 npm。
+- [aaayeaaa-P1WS/dsh-plugin-auto-update](https://github.com/aaayeaaa-P1WS/dsh-plugin-auto-update) — 自动帮你更新插件：每次打开 DSH 就在后台检查市场里的新版本并安装，装完弹窗说清楚更新了什么、哪几个失败了；设置里能改检查时机、看更新日志；插件被占用装不上时，一键停用、更新并重启 DSH。
 - [AIcivilization/dsh-pick](https://github.com/AIcivilization/dsh-pick) — DSH 插件选购顾问：说需求，从带 dsh-plugin 关键字的 npm 包里按去噪指标（日常基线、周环比、版本节奏、新鲜度）排出首选、备选和不推荐；提供右侧栏面板、4 个 AI 工具和一键安装。
 - [alex04130/dsh-forge](https://github.com/alex04130/dsh-forge) — DeepSeek Harness 扩展套件：跨会话邮箱与 wake 冷启动、代理团队（队长 + 成员 + 依赖任务板 + team_wait）、子代理派发策略（提权自动审批）、任务感知路由 preset、插件市场、技能管理器与运行时注入器。
 - [AlexYin-Tongji/dsh-plugin-console](https://github.com/AlexYin-Tongji/dsh-plugin-console) — 在 DeepSeek Harness 设置一级页面中浏览和管理社区插件目录，支持验证后安装与更新、删除、暂停与恢复、已安装状态查看及安全 README 预览。
