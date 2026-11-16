@@ -1,0 +1,6 @@
+url: https://github.com/realRoc/dsh-pet-workout
+name: realRoc/dsh-pet-workout
+category: fun
+description:
+  en: 'Workout companion for PC2005-cloud/dsh-pet: adds "work out together" items to the pet''s right-click More menu, and the Dafeiyu pet leads a 6-minute leg strength routine (or a 1-minute trial) with demonstration animations, bubble countdowns, rests and the occasional slacking-off gag; dragging or clicking the pet pauses it. Drives dsh-pet only through its public HTTP API; workout plans are JSON files. Requires dsh-pet 0.4.8 or later.'
+  zh: 'dsh-pet 的配套健身插件：在宠物右键「更多」里加上「一起锻炼」，由大肥鱼带你做 6 分钟腿部力量训练（或 1 分钟试练），有示范动画、气泡倒计时、休息和偶尔偷懒的小彩蛋；拖一下或点一下她就暂停。只通过 dsh-pet 公开的 HTTP 接口指挥宠物，训练计划是 JSON 文件。需要 dsh-pet 0.4.8 及以上。'
