@@ -1,0 +1,6 @@
+url: https://github.com/kochetkov-ma/brewpage-publish-plugins/tree/main/deepseek
+name: kochetkov-ma/brewpage-publish-plugins#deepseek
+category: tools
+description:
+  en: 'Publish HTML pages, static sites, Markdown, documents and AI artifacts to BrewPage and get a shareable HTTPS link; bundles the BrewPage skills and the brewpage-mcp server.'
+icon: https://raw.githubusercontent.com/kochetkov-ma/brewpage-publish-plugins/main/integrations/zapier-app/assets/brewpage-512.png
