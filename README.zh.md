@@ -2734,7 +2734,7 @@ dsh plugin --profile web add dshmarket
 - [kai-GitHubaccount/dsh-usage-panel](https://github.com/kai-GitHubaccount/dsh-usage-panel) — 会话头部显示 DeepSeek 余额与本会话 Token 用量：三级余额预警、自定义阈值、一键充值入口、分段 Token 条与缓存命中率，并采用可见时才轮询的省流策略。
 - [KAIXIN2006/dsh-qwen-coupon-balance](https://github.com/KAIXIN2006/dsh-qwen-coupon-balance) — 在 DSH 侧边栏显示阿里云代金券余额（抵扣千问 / 百炼调用的那笔钱），AccessKey 只保存在本机。
 - [kelearns/dsh-token-usage](https://github.com/kelearns/dsh-token-usage) — Token 用量热力图：日/周/累计视图，12 个月窗口，支持深浅色主题。
-- [Keleven-11/dsh-offpeak-badge](https://github.com/Keleven-11/dsh-offpeak-badge) — 在输入框下方状态栏显示当前供应商处于忙时还是闲时，内置四套可切换的供应商预设（DeepSeek 官方 API、OpenCode Go、WorkBuddy、自定义），时段取自各厂商官方文档，并可按供应商单独设置「法定节假日按闲时」。
+- [Keleven-11/dsh-offpeak-badge](https://github.com/Keleven-11/dsh-offpeak-badge) — 在输入框下方状态栏显示当前供应商处于忙时还是闲时，内置五套可切换的供应商预设（DeepSeek 官方 API、OpenCode Go、WorkBuddy、Ollama Cloud、自定义），时段取自各厂商官方文档，并可按供应商单独设置「法定节假日按闲时」。
 - [keltanas/dsh-platform-balance](https://github.com/keltanas/dsh-platform-balance) — 以美元和人民币显示 DeepSeek 开放平台的钱包余额，按 18:00 莫斯科时间缓存的俄央行汇率换算卢布，并在悬浮卡片和会话标题栏徽标里显示当前会话与当日的花费估算。
 - [kenz1117/dsh-ui-usage-billing](https://github.com/kenz1117/dsh-ui-usage-billing) — 侧边栏计费仪表盘：从会话日志聚合真实用量（按模型/按日统计调用、Token、缓存），按最新多厂商官方价格估算人民币费用，订阅套餐（coding/token/agent）通道豁免计费，并带各厂商健康状态圆点。
 - [dsh-usage-hub](https://github.com/KevenUnderwood/dsh-usage-hub) — 当前模型背后的大模型账户用量面板：额度窗口、账户余额与 token 用量，随模型自动切换，支持dsh中内置的主流大模型厂商，支持详情查看与页面左下角概览查看。
