@@ -1,0 +1,7 @@
+url: https://github.com/Hidden-Seed/dsh-ross-ai-assistant
+name: Hidden-Seed/dsh-ross-ai-assistant
+category: skill
+description:
+  en: 'Unofficial DSH fork of the AMD Ross AI Assistant. Upstream skills snapshot 2026.10.1; adds the DeepSeek Harness bundle, Settings page, and install docs.'
+  zh: 'AMD Ross AI 助手的非官方 DSH fork。上游技能快照 2026.10.1；仅增加 DeepSeek Harness bundle、设置页面和安装文档。'
+tarball: https://github.com/Hidden-Seed/dsh-ross-ai-assistant/releases/download/v0.1.0/dsh-ross-ai-assistant-0.1.0.tgz
