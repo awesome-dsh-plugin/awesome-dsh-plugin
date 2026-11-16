@@ -1,6 +1,6 @@
 url: https://github.com/Poy-Coder/dsh-channel-wechat-ilink
 name: Poy-Coder/dsh-channel-wechat-ilink
-category: notify
+category: remote
 description:
   en: 'WeChat (iLink / ClawBot) channel: one complete plain-text answer per turn, typing plus staged progress, media both ways, one workspace per channel, and it can run alongside the Feishu channel.'
   zh: '微信通道（ClawBot / iLink 协议）：一轮一条完整回答、输入中状态与阶段进度、图片文件双向收发，通道独占工作区，可与飞书通道并存。'
