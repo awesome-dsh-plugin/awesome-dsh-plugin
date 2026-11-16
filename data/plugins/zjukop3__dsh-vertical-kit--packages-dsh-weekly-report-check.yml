@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-weekly-report-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-weekly-report-check'
+category: 'tools'
+description:
+  en: 'Weekly-report hygiene from markdown: what was done separated from what is planned, risks and blockers named, and at least one quantified item so progress is tellable from motion.'
+  zh: '周报的结构检查：本周完成与下周计划分开写、风险与阻塞在场、至少一行带量化数字——让读者分得清进展和动作。空泛承诺按计划语句计数：在场可判定，空洞不可判定。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'
