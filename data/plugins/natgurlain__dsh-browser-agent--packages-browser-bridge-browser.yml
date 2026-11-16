@@ -1,0 +1,6 @@
+url: https://github.com/natgurlain/dsh-browser-agent/tree/main/packages/browser/bridge-browser
+name: natgurlain/dsh-browser-agent#bridge-browser
+category: browser
+tarball: https://github.com/natgurlain/dsh-browser-agent/releases/download/v0.2.0/dsh-bridge-browser-v0.2.0.tgz
+description:
+  en: 'Browser bridge for DSH 0.2.2-rc.1+, used with its companion Chrome/Brave/Firefox extension: the agent reads and operates tabs in the user''s own browser (snapshot, click, type, navigate, extract tables) and each page action waits for an approval card that names the element. A fork of omdsh-dev/dsh-browser. The extension is loaded separately and paired with a code typed into DSH.'
