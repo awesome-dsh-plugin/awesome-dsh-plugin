@@ -1,0 +1,6 @@
+url: https://github.com/DrizzleGig/dsh-novel-fade
+name: DrizzleGig/dsh-novel-fade
+category: memory
+description:
+  en: "A fading memory layer for AI-written long novels: after each chapter's text is committed through memo_digest it stores event cards and an archived copy of the chapter, and the next chapter asks for a 1,400-character brief instead of carrying earlier chapters. Recent plot stays readable, older events fade by accessibility, L0 hard contracts (death, identity reveal, promises, unresolved causality) do not decay, and chapter text is only fetched on demand. Ships seven memo_* tools and a right-sidebar page; off by default; it never writes prose."
+  zh: "给 DSH 加一层长篇小说的褪色记忆：每章正文通过 memo_digest 提交后，沉淀成事件卡并存档整章原文；写下一章时只取 1400 字简报，不再携带前面全部章节。近章读得清，旧事按可及性衰减，L0 硬契约（死亡、身份暴露、承诺、未解决因果）不衰减，原文只在核对时按需取用。提供七个 memo_* 工具和一个右栏面板；默认关闭，不写正文。"
