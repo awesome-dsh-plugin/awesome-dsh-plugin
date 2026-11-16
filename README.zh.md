@@ -153,6 +153,7 @@ dsh plugin --profile web add dshmarket
 - [tyr1105/dsh-buddy#dsh-buddy](https://github.com/tyr1105/dsh-buddy/tree/main/packages/plugin) — 带像素办公室的 AI 团队：显示每位队友当前的状态和当天做过的事。项目会话由负责人安排分工，队友互相 @；队友每天自己开工的次数和 token 有上限。仅支持 macOS 上的 DSH 桌面版。
 - [Velestia-star/agent-skill](https://github.com/Velestia-star/agent-skill) — 在侧栏里创建具名子智能体和技能，并在对话中按名字调用。子智能体可配置模型、思考强度、spawn/fork 启动方式、工具白名单与技能；技能可全局、按工作区或按单个会话生效。
 - [WDahah/portable-dsh-multi-agent-plugin](https://github.com/WDahah/portable-dsh-multi-agent-plugin) — 把任务派给一个模型、把评审交给另一个模型，并带有资格证据、故障转移与持久日志。
+- [wjj865-code/dsh-orchestrator](https://github.com/wjj865-code/dsh-orchestrator) — 给 DeepSeek Harness 加一位协调者和一组子任务会话：主会话只拆活、用 task_create 派子会话、读 task_report 回报；每条任务进持久 SQLite 台账，带依赖、分组、写域与优先级队列。子会话报 done 落「已交付待确认」，追问窗口保留到你确认或超时收尾；其上还有把经验蒸馏进后续任务的分层记忆、等用户拍板任务的收件箱、可选的每日日报、每日台账快照与浏览器任务面板。
 - [ws1234567891011/dsh-interim-narration](https://github.com/ws1234567891011/dsh-interim-narration) — 让 agent 边做边说：每轮先用一两句说明怎么理解消息、准备怎么做、第一步是什么，并在工具调用批次之间写过程叙述；插件页可直接调整详略、句数上限与开关。
 - [wuanthony397-hash/dsh-codex-peer](https://github.com/wuanthony397-hash/dsh-codex-peer) — 让 DeepSeek Harness agent 与本机 Codex CLI 对等协作：把目标拆成共享工作清单、派活与交接、互相审查，并把每一步的提示词、事件流与回答留档在本地。
 - [xfgil/dsh-second-opinion](https://github.com/xfgil/dsh-second-opinion) — 跨会话「第二意见」：一个会话卡住时，把问题交给另一个独立会话单独思考，把方案拿回来继续。不冒充用户发言，也不唤醒闲置会话。
@@ -307,6 +308,7 @@ dsh plugin --profile web add dshmarket
 - [akilonewbility/dsh-workspace-optimize](https://github.com/akilonewbility/dsh-workspace-optimize) — 通过重绘左侧工作区侧栏，为工作区侧栏添加颜色高亮、排序、收藏、状态指示以及系统通知等功能。同时可切换回原版侧栏，也具有部分功能实现。
 - [AkiNoYo-desu/dsh-effort-slider-universal](https://github.com/AkiNoYo-desu/dsh-effort-slider-universal) — 在 DSH 模型菜单里提供推理等级滑条，未声明推理档位的 provider 与模型同样出现。基于 Microqian2th/dsh-codex-effort-slider 改造，不能与上游同装。
 - [AKIRACOD/dsh-drag-and-drop](https://github.com/AKIRACOD/dsh-drag-and-drop) — 拖放 fork：文档以可删除「文件芯片」挂在输入框上方，不打字也能发送。
+- [Akiyuki1130/dsh-observer](https://github.com/Akiyuki1130/dsh-observer) — 用另一个模型在悬浮窗或「观察」栏里实时播报主对话进度（做了什么、接下来做什么、是否卡住），不干涉主会话。
 - [aklnaaw/dsh-xiaoke-widget](https://github.com/aklnaaw/dsh-xiaoke-widget) — 右下角的 Claude 拟人桌宠「小克」：显示余额、今日已用、峰谷定价与每轮消耗，泡泡内容可编辑（文本、余额、今日、峰谷、图片、随机语句与并列加权选择），支持逐行样式与字体、悬浮快捷编辑、音效与自定义角色/音效；内置会呼吸、会眨眼的动态角色，余额低于预警线时切换成哭脸，动图分 256/384 两档，并可在资源管理里安装 512 高清包；台词 63 条。二创自 MeteorNOX/DeepSeek-Balance-Whale-Widget（MIT）。
 - [AKS1st/dock](https://github.com/AKS1st/dock) — DSH Web 工作台基座插件：提供 VSCode 风格布局外壳（活动栏/侧边栏/编辑器区/面板/状态栏）和 ctx.workbench 开放注册表，供功能插件挂载面板、视图与命令。
 - [AKS1st/dock-editor](https://github.com/AKS1st/dock-editor) — dock 系列文本查看与编辑器：支持撤销重做、Ctrl+S 保存、未保存确认和二进制检测，作为 dock-files 的默认文本查看器。
@@ -5227,7 +5229,7 @@ dsh plugin --profile web add dshmarket
 - [cqxsg/dsh-recollection](https://github.com/cqxsg/dsh-recollection) — 让 DeepSeek Harness Agent 自主检索并回读当前会话中因上下文压缩而退出模型可见上下文的原始对话历史。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [crease123/dsh-journal-calendar](https://github.com/crease123/dsh-journal-calendar) — 推荐先看作者教学视频：https://www.bilibili.com/video/BV1jQsN6gEhQ/ 。助手主动维护的每日日志：它往系统提示词里注入一句话，把「记录用户做过的事和打算做的事」列为助手的职责，于是这些事被写成带日期的待办与记事（时间可省略），存放在 DSH home 下一天一个的 JSON 文件里，并画在右侧栏的月历上——有待办没做完的那天是空心圈，待办都做完是绿点，只记了记事的那天是蓝点；这句话可以直接在日历上改写，用它调整助手记忆的主动性与策略；每条记录带五个标签之一（工作 / 学习 / 生活 / 健康 / 其他）并显示为同色 chip，待办可以在卡片上勾选，全部日期的标题与标签都能搜索，点击一条记在对话里的记录会打开那次会话并停在对应轮次；月份标题旁的 ? 打开 GitHub 上的项目仓库。
 - [csyangwen/dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) — 为 DeepSeek Harness 带来「跨会话长期记忆 + 后台自我进化」能力的纯插件实现：五轨记忆 · git 分支感知 · 回合内自我审查 · 技能自我进化与技能管理器 · 四轨待办 · COI 调度 · 会话广播 · 会话搜索 · 提示词管理器 · 临时信息便签——零核心修改、零运行时依赖，随装随用、卸载即净。
-- [cup319/dsh-mmpl](https://github.com/cup319/dsh-mmpl) — 记忆宫殿 MCP 插件：DuckDB 向量记忆、技能库、遗忘曲线，并为 @cup319/mmpl MCP 服务器提供本地进程监督。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [cup319/dsh-mmpl](https://github.com/cup319/dsh-mmpl) — 记忆宫殿 MCP 插件：DuckDB 向量记忆、技能库、遗忘曲线，并为 @cup319/mmpl MCP 服务器提供本地进程监督。它的 Web 路由复用 DSH connection 的准入闸（Host/Origin + 浏览器会话），跨站网页无法调用。
 - [cwqXXX/dsh-mnemo](https://github.com/cwqXXX/dsh-mnemo) — 给 DeepSeek Harness 的跨会话长期记忆：规则和坑每轮注入，其余按 IDF 加权关键词召回；事实键去重、明文 JSON、设置页可增删改。
 - [cycocyco/alice-memory](https://github.com/cycocyco/alice-memory) — DSH 长期记忆插件：规则闸门从对话轮次里捕获值得长期记住的事实，存进带热/温/冷分层的单一 SQLite 库；每轮用向量 + FTS5 混合召回注入提示词；附记/回忆/忘/清冷记忆四个显式工具。零依赖，纯 Node。
 - [cycocyco/alice-memory-llm](https://github.com/cycocyco/alice-memory-llm) — DSH 长期记忆插件，由 LLM 裁决什么值得记：会话空闲后把攒下的轮次一次性交给主对话模型提炼成一句话条目；入库前先做向量判重，近重复与同话题超量的条目不再进库；检索走向量 + FTS5 混合召回，热/温/冷分层存储；附记/回忆/忘/清理四个显式工具。零依赖，纯 Node。
@@ -7634,7 +7636,7 @@ dsh plugin --profile web add dshmarket
 - [GXX182/dsh-vision-bridge](https://github.com/GXX182/dsh-vision-bridge) — 将会话图片转交可配置视觉服务，并向符合条件的 DeepSeek Harness 模型路由返回纯文本分析。
 - [haiziyao/dsh-vision-mix](https://github.com/haiziyao/dsh-vision-mix) — 把文本、识图和生图 API 组合成一个 Mix 模型并按对话内容自动路由：纯文本走聊天模型，用户图片和 Agent 截图走识图模型，后续可继续追问同一张图；还支持图片生成与编辑及会话级调用记录。
 - [hanhan9999999999999999999/dsh-see-world](https://github.com/hanhan9999999999999999999/dsh-see-world) — 让模型用摄像头看世界：多帧拼版并自动矫正曝光，可拖动面板里 30fps 的实时预览，以及可选定时把带帧的消息投进绑定的会话。
-- [Harm0ny-AI/DSH-Video2Agent#dsh-video2agent](https://github.com/Harm0ny-AI/DSH-Video2Agent/tree/main/packages/dsh-video2agent) — 你的 Agent 浏览了无数网页，现在该让它看视频了。Video2Agent 让 AI Agent 看懂视频、直接回答：B 站和本地视频都能问——讲了什么、哪条更好、值不值得看。跨视频检索返回视频与时间码，按时间码取帧作证据，一次批量分析 1-10 个视频；本地优先，云端 ASR/OCR 与 B 站登录可选。需要 Python 3.11+、FFmpeg 与 CLI（pip install video2agent），设置页可一键检查并安装环境。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [Harm0ny-AI/DSH-Video2Agent#dsh-video2agent](https://github.com/Harm0ny-AI/DSH-Video2Agent/tree/main/packages/dsh-video2agent) — 你的 Agent 浏览了无数网页，现在该让它看视频了。Video2Agent 让 AI Agent 看懂视频、直接回答：B 站和本地视频都能问——讲了什么、哪条更好、值不值得看。跨视频检索返回视频与时间码，按时间码取帧作证据，一次批量分析 1-10 个视频；本地优先，云端 ASR/OCR 与 B 站登录可选。需要 Python 3.11+、FFmpeg 与 CLI（pip install video2agent），设置页可一键检查并安装环境。
 - [Harvey-Will/dsh-vision-analysis](https://github.com/Harvey-Will/dsh-vision-analysis) — DeepSeek Harness 图像理解插件：8 种分析模式（描述、OCR、图表取数、UI 评审、目标检测、对比、代码生成、诊断），支持任意 OpenAI/Anthropic 兼容视觉 API，内置免费视觉模型与限流自动切换。
 - [Harzva/dsh-maclens](https://github.com/Harzva/dsh-maclens) — 苹果设备端 Vision 工具：本地 OCR（含中文）、图像分类、人脸检测、文档版面分析与综合描述，100% 离线、无需 API key，支持长截图切片。
 - [hawkhai/wechat-ocr](https://github.com/hawkhai/wechat-ocr) — DSH 的本地微信 OCR 工具：`wechat_ocr_recognize` 针对本地图片路径返回识别文本和引擎的结构化结果。
