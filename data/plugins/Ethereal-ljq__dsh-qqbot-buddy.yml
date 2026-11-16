@@ -1,0 +1,6 @@
+url: https://github.com/Ethereal-ljq/dsh-qqbot-buddy
+name: Ethereal-ljq/dsh-qqbot-buddy
+category: identity
+description:
+  en: 'QQ official-bot channel for DeepSeek Harness with its own admin console on 127.0.0.1:6198: several bots in one process, each with a separate workspace and credentials; layered profile configs bound per group scope; per-profile allow and deny lists for host tools and skills; SQLite FTS5 long-term memory and a text/URL knowledge base; a scheduled per-group daily report with card templates; and voice in both directions (TTS providers with a custom HTTP or local-command fallback, ASR for incoming voice). The tool allowlist defaults to empty, which passes every host tool through — fill it in before exposing the bot to strangers. An alternative to the official @tencent-connect/dsh-qqbot, so do not enable both.'
+  zh: '让 DeepSeek Harness 接入 QQ 官方机器人平台，自带管理控制台（127.0.0.1:6198）：一个进程管多个机器人、各自独立的工作目录与凭据；多层配置档按群作用域绑定；宿主工具与技能按配置档放行/屏蔽；SQLite FTS5 长期记忆与文本/URL 知识库；按群定时生成带卡片模板的日报；语音双向（TTS 供应商支持自定义 HTTP 或本地命令，入站语音可接 ASR）。工具白名单默认为空，此时不拦任何宿主工具——对外开放机器人前请先填好白名单。可替代官方 @tencent-connect/dsh-qqbot，请勿同时启用。'
