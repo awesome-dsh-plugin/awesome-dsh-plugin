@@ -7596,7 +7596,7 @@ dsh plugin --profile web add dshmarket
 - [dttGitHu/dsh-video-android](https://github.com/dttGitHu/dsh-video-android) — 安卓上的 DSH 视频工作台：分镜编辑、多供应商图像/视频生成与自动切换、FFmpeg 合成 MP4、提示词优化、手机窄屏工作台。
 - [dungcsnd1133/dsh-media](https://github.com/dungcsnd1133/dsh-media) — 增加三个会话工具——经 TLPro 网关调用 GPT Image 或 Gemini 的 create_image、edit_image，以及经 xAI 的文本转语音 speak——并在聊天界面里提供这些图片和音频的查看器。需自备 TLPRO_API_KEY 与 XAI_API_KEY，并在 profile 配置中设置 publicOrigin 与 mediaDir。
 - [Einskyle/dsh-llm-vision-bridge](https://github.com/Einskyle/dsh-llm-vision-bridge) — DeepSeek 视觉桥接：注册原生 LLM provider，聊天内粘贴的图片自动由视觉模型（pi-ai/llama.cpp 上的 Qwen3-VL）转成文字描述后交给纯文本 DeepSeek 作答——图片准入、路由与会话压缩全部走 harness 原生机制，带 LRU 描述缓存与 503 重试。
-- [Elgwia-dsh/dsh-comfy-suite](https://github.com/Elgwia-dsh/dsh-comfy-suite) — 把三个 MIT 许可的 ComfyUI 插件合并成一个 bundle：工作流库、经本机 ComfyUI 的本地出图与修图（出图、局部重绘、扩图、捏人、放大），外加服务启停、作品库、风格库与提示词衣柜。个人整合项目，非上游官方版本。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [Elgwia-dsh/dsh-comfy-suite](https://github.com/Elgwia-dsh/dsh-comfy-suite) — 把三个 MIT 许可的 ComfyUI 插件合并成一个 bundle：工作流库、经本机 ComfyUI 的本地出图与修图（出图、局部重绘、扩图、捏人、放大），外加服务启停、作品库、风格库与提示词衣柜。个人整合项目，非上游官方版本。
 - [Elohia/dsh-plugin-image-input](https://github.com/Elohia/dsh-plugin-image-input) — 图片转文字输入插件：粘贴/拖拽图片自动转为结构化文字描述发送，给纯文本 LLM 提供图片输入接管（OpenAI 兼容视觉 API）。
 - [Elohia/dsh-plugin-mm-vision](https://github.com/Elohia/dsh-plugin-mm-vision) — 通感编码器（Synesthesia Encoder）：调用视觉模型把图片翻译成紧凑的结构化空间文字（画布/元素/百分比坐标），让纯文本 LLM 获得像素级看图能力（`mm_vision` 工具）。
 - [ethanweave/dsh-vision-better](https://github.com/ethanweave/dsh-vision-better) — 为纯文本模型提供的图像识别转发：后台调用你配置的 GLM 兼容视觉接口分析图片，原模型在同一会话继续作答，你的消息、图片、模型与历史全程不变。需先运行仓库自带的 patches/apply-core-patch.cmd 给 DSH 打核心补丁，否则带图消息会在入库前被原版 DSH 拒绝（可用 restore 脚本还原）。
@@ -9931,7 +9931,7 @@ dsh plugin --profile web add dshmarket
 - [CH4ACKO3/dsh-render-engine#code-render](https://github.com/CH4ACKO3/dsh-render-engine/tree/main/packages/code-render) — 面向 DSH Web 插件的转义与主题响应 HTML 代码块渲染服务，基于结构化语法高亮 token，并保留源码换行符。
 - [CH4ACKO3/the-binding-of-dsh](https://github.com/CH4ACKO3/the-binding-of-dsh) — 通过原生 Connection 与 Typert Gateway 在 DSH Host 和 Client 之间提供双向 RPC，支持目标 Peer 调用、取消与连接生命周期处理。
 - [chai-yinfeng/dsh-macos-restart](https://github.com/chai-yinfeng/dsh-macos-restart) — 仅 macOS 桌面版：一键重启 DeepSeek Harness Electron 应用；重启前确认运行中的任务，插件安装/更新时拒绝，并记录重启阶段与日志。
-- [chanyuenpang/dsh-services-manager](https://github.com/chanyuenpang/dsh-services-manager) — 在 DSH Desktop/Web 中管理本地后台服务，支持持久启停策略、进程身份校验和需认证的服务登记 CLI。
+- [chanyuenpang/dsh-services-manager](https://github.com/chanyuenpang/dsh-services-manager) — 在 DSH Desktop/Web 中管理本地网页服务，支持持久启停策略、原生 Agent 工具，以及可在 DSH 内或系统浏览器打开服务的侧栏启动台。
 - [Chemiofitor4096/minecraft-dev-starter](https://github.com/Chemiofitor4096/minecraft-dev-starter) — 识别工作区里的 Minecraft 模组与插件工程（Fabric、Forge、NeoForge、Architectury、Paper），在会话标题栏运行 Gradle 的客户端或服务端任务，日志显示在侧栏标签；数据生成与 GameTest 这类会跑完的任务在结束时给出通过或失败的结论。
 - [Chengyunlai/dsh-workbench](https://github.com/Chengyunlai/dsh-workbench) — 从 DeepSeek Harness 对话点击源码链接，直接跳到指定行。在右侧工作台查看 Git 差异和断点变量，也可以把讲解保存为可搜索的 Markdown 记忆卡片。支持 Python 类关系图（Beta）。Go 和 Java 跳转需要语言服务器，断点调试需要调试适配器。
 - [chenkai2/dsh-daemon](https://github.com/chenkai2/dsh-daemon) — 将 DeepSeek Harness 的 web 服务（dsh web）注册为自启动、自愈的后台服务：LaunchAgent / systemd / cron 加 30 秒健康检查 watchdog，并提供 7 个 dsh_daemon_* 工具（安装/卸载/重装/状态/启动/停止/更新）。
