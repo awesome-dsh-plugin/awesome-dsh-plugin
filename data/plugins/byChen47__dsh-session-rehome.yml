@@ -1,0 +1,6 @@
+url: https://github.com/byChen47/dsh-session-rehome
+name: byChen47/dsh-session-rehome
+category: session
+description:
+  en: Move one conversation into another workspace in place: the session log is relocated and its header cwd rewritten, so the conversation keeps its id, history, title and archive state. A conversation that is mid-way through a turn is refused rather than moved.
+  zh: 把一条对话原地搬到另一个工作区：搬日志并改写头部 cwd，会话 id、历史、标题、归档状态都不变。正在跑一轮的对话会被拒绝，而不是冒险搬。
