@@ -1,0 +1,6 @@
+url: https://github.com/1250589385/dsh-vendor-quick-switch
+name: 1250589385/dsh-vendor-quick-switch
+category: ui
+description:
+  en: "Vendor-first model switching beside the shipped model menu: a side index stays attached while the menu is open, clicking a vendor jumps to that vendor inside the original model list, and an in-menu mode renders the same levels inside the menu. Surfaces reuse the shipped menu tokens, vision-derived routes are filtered out, and the original selector is never replaced or disabled."
+  zh: "在原模型菜单旁做厂商快速切换：侧挂模式下厂商索引常驻并跟随菜单，点厂商直接在原模型列表内跳到该厂商分组；另有菜单内展开模式。材质复用官方菜单令牌，自动过滤识图插件派生的路由，不替换也不停用原选择器。"
