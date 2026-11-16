@@ -1,0 +1,6 @@
+url: https://github.com/puffdog-git/dsh-discord-cyberfriend
+name: puffdog-git/dsh-discord-cyberfriend
+category: identity
+description:
+  en: 'Connects a DSH persona to Discord as a bot or an optional user account, with per-channel sessions, image and sticker understanding, reactions, voice-channel listening and speech, voice messages, music playback and confirm-first channel actions.'
+  zh: '把 DSH 人格接到 Discord，可用 Bot 或选用的个人账号；每个频道独立会话，能看图片与贴图、按表情、在语音房收听与说话、收发语音消息、播放音乐，频道操作先预览再确认。'
