@@ -1,0 +1,6 @@
+url: https://github.com/p33333333333333l/dsh-specialist-team
+name: p33333333333333l/dsh-specialist-team
+category: agi
+description:
+  en: 'Specialist assignments for DSH Agent Teams, with role-based tool access, file scopes, exact verifier commands, and per-specialist model preferences. Requires DSH 0.2.1-rc.3, Node.js 22+, and the upstream Agent Team profile. Replaces the Team service and tools while retaining its UI; disables ordinary subagent entry points.'
+  zh: '为 DSH Agent Teams 增加专家派工、按角色限制工具访问、文件范围、验证员精确命令校验和各专家的模型偏好。需要 DSH 0.2.1-rc.3、Node.js 22+ 和上游 Agent Team profile。替换团队服务与工具，保留原有界面，并禁用普通子代理入口。'
