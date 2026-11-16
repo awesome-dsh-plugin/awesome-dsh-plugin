@@ -32,6 +32,10 @@ concurrency:
 
 jobs:
   regate:
+    # A fork mirrors the catalog but has no upstream PRs to re-gate, so the job
+    # is skipped there to spare the fork owner's Actions quota. A manual
+    # dispatch still runs, for debugging.
+    if: github.repository_owner == 'awesome-dsh-plugin' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/github-script@v7

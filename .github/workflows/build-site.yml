@@ -72,6 +72,10 @@ concurrency:
 
 jobs:
   build:
+    # A fork mirrors the catalog but does not publish the site, so the job is
+    # skipped there to spare the fork owner's Actions minutes on a deploy
+    # nothing consumes. A manual dispatch still runs, for debugging.
+    if: github.repository_owner == 'awesome-dsh-plugin' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
