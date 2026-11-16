@@ -1184,6 +1184,7 @@ dsh plugin --profile web add dshmarket
 - [LCQ-1024/dsh-prompt-enhancer](https://github.com/LCQ-1024/dsh-prompt-enhancer) — 在 DSH 输入框添加提示词增强按钮，将草稿改写为可直接交给 Agent 执行的提示词。
 - [lcthe/dsh-skills-hub](https://github.com/lcthe/dsh-skills-hub) — DSH 技能管理器：浏览、启用/禁用、从 Codex/Claude Code/ZCode/WorkBuddy/QCoderWork 导入，自动发现技能并支持软链接。
 - [lcthe/dsh-timeline-rail](https://github.com/lcthe/dsh-timeline-rail) — DeepSeek Harness 网页会话消息时间轴导航条：消息区右侧等间距刻度，点击跳转，悬浮预览。
+- [lcy362/dsh-railkeeper](https://github.com/lcy362/dsh-railkeeper) — 接管 DSH 的左侧栏：拖拽排序、改名、换成 24 个内置图标之一、隐藏，以及把多个面板合并成一行（点开是成员菜单）。改动即时生效、重启后保留；可以一键导入已有的 dsh-panellist 配置。
 - [lczment/dsh-window](https://github.com/lczment/dsh-window) — DeepSeek Harness 桌面端的窗口关闭行为——可选询问、最小化到托盘或完全退出，记住选择并可在设置中修改，还能把会话或工作区开进独立窗口。仅限 Windows：需要 DSH Desktop 0.2.1-rc.5+，并用 PowerShell 脚本给应用壳（resources/app）打补丁；每次升级 DSH 后需重跑，未装壳扩展时关闭行为仍是 DSH 默认。
 - [leafnewly/dsh-scope-plugins](https://github.com/leafnewly/dsh-scope-plugins) — 在每个工作区、对话独立设置插件，并可选择继承与存档。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Ledas-as/dsh-claude-video-slider](https://github.com/Ledas-as/dsh-claude-video-slider) — 模仿 Claude UI 的非官方模型与推理强度选择器，使用当前模型实际提供的档位，带紫色像素动画。
@@ -5684,6 +5685,7 @@ dsh plugin --profile web add dshmarket
 - [Aik358/dsh-ark9canvas](https://github.com/Aik358/dsh-ark9canvas) — DSH 生图工作台与 Agent 生图工具：一个工具（ark9_generate_image）走任意 OpenAI 兼容图片 API 文生图/图生图。渠道完全由用户自行添加——默认零预置，自带 baseURL、Key 与模型名即可（支持手动输入任意模型名）。Agent 发起的生图默认需用户审批：请求进入浮窗审批页，批准才开始生成并计费；审批非阻塞——Agent 立即回复"等你审批"，结果、拒绝或超时以通知注入后续轮次并自动汇报。玻璃拟态浮窗五页签（生成/审批/提示词/记录/说明）、比例网格（质量预算+16px 对齐）、透明背景、批量最多 10 张（子任务聚合，部分成功也返回）、提示词库（自定义 JSON 来源经宿主代理拉取）、生成记录持久化与一键重试、多渠道聚合与逐渠道拉模型、中英双语界面、线性 SVG 图标、配置导入导出。安装 dsh-better-sidebar 自动注册侧栏页签；与 dsh-cua 共存时自动堆叠其悬浮按钮上方。
 - [Aik358/dsh-cua-pre](https://github.com/Aik358/dsh-cua-pre) — Windows 桌面自动化插件：无障碍优先的观察-动作回路（30 个标准工具，元素/坐标双目标与 auto/a11y/event 策略路由），写后作废与禁重放安全语义，持久急停开关，RuntimeId/矩形漂移防错位，对话卡片与悬浮面板（实况/画面/环境自检设置），面向低分辨率模型的分块识图，JSONL 审计与 pid 白名单。需 Windows 10+ 与 Python 3.9+，并安装 uiautomation 与 pillow（设置页可一键安装）。
 - [Aik358/dsh-literature](https://github.com/Aik358/dsh-literature) — DSH 内置文献库（可选导出到 Zotero）：通过 Unpaywall/arXiv/自定义 URL 模板获取全文 PDF，Crossref 候选式宽松搜索，APA/GB-T 7714/MLA/Chicago 引用生成，侧窗 PDF 阅读器（高亮与笔记），以及注入当前对话的 AI 问答/翻译。
+- [aik8s/cubesandbox-agent-adapter#dsh](https://github.com/aik8s/cubesandbox-agent-adapter/tree/main/plugins/dsh) — 通过 Adapter 添加在 CubeSandbox 中执行 Agent 任务的工具。
 - [aiml-kiki/dsh-disk-ops](https://github.com/aiml-kiki/dsh-disk-ops) — 用树图查看 macOS 磁盘占用，联动可清理建议，确认计划后移入废纸篓，并写入追加式审计日志。
 - [ainachoneko/dsh-ledger-wealth](https://github.com/ainachoneko/dsh-ledger-wealth) — 本地优先的记账插件，附带独立的理财持仓账本：文字记账与小票 OCR（可选本地 OCR 提供方）、running balance、严格降级的每日收益链，以及现金与理财永不合并的月末双节报告。
 - [aishenkiki/dsh-go-exam-helper](https://github.com/aishenkiki/dsh-go-exam-helper) — 同一个包同时支持 DSH Go 手机 App（原生界面）和 DSH 网页端：盯住答题页面，把每道题的答案弹成顶部通知，可导入本地题库优先命中。网页端可直接选本地文件导入题库——手机上选手机里的文件，电脑上选电脑里的文件。
@@ -8948,7 +8950,7 @@ dsh plugin --profile web add dshmarket
 - [PerryLink/dsh-travel-recon](https://github.com/PerryLink/dsh-travel-recon) — 差旅费用核对：导入订单、发票与卡流水，去重、三单匹配与只读政策校验后导出——5 个 `travel.*` 工具。
 - [ph1996-cn/dsh-BMAD-Method](https://github.com/ph1996-cn/dsh-BMAD-Method) — 把 BMAD-Method 塞进插件里：首次打开即铺好七个模块（不跑安装器、不下载），随包提供 90 个 agent 与工作流 skill，每个模块可通过写 profile 补丁里的 disabled 标记单独停用。
 - [Phocinae/dsh-batch-triage](https://github.com/Phocinae/dsh-batch-triage) — 确定性工单分诊：规则先处理明确案例，放不下的统一返回 needs_review，而不是猜。
-- [PhoenixQian/dsh-codex-bridge](https://github.com/PhoenixQian/dsh-codex-bridge) — 同舟：Codex 与 DSH 的本机具名讨论和只读会话阅读，提供 DSH 插件与可选的一键 Codex 技能接入。首版支持 macOS 和 DSH Desktop 0.2.2-rc.1。
+- [PhoenixQian/dsh-codex-bridge](https://github.com/PhoenixQian/dsh-codex-bridge) — 同舟：Codex 与 DSH 的本机具名讨论和只读会话阅读，提供 DSH 插件与可选的一键 Codex 技能接入。支持 macOS 与 DSH Desktop 0.2.2-rc.1、0.2.2-rc.3。
 - [PiedPiper911/dsh-workflow-canvas](https://github.com/PiedPiper911/dsh-workflow-canvas) — DSH 可视化工作流编排画布，基于 React Flow 拖拽编排工具调用、子智能体与条件分支。
 - [Platato-DA/dsh-task-center](https://github.com/Platato-DA/dsh-task-center) — 面向 DSH 0.2.1-rc.5 的定时 Agent 任务，支持按任务配置模型与工作目录、独立或持续会话、运行记录和文件产物。
 - [PPawnsir/dsh-notes-plugin#dsh-notes-plugin](https://github.com/PPawnsir/dsh-notes-plugin/tree/main/packages/dsh-notes-plugin) — DeepSeek Harness 的可治理 Agent 工作记忆层，沉淀为本地 Markdown 笔记：双模式编辑器（源码⇄富文本，支持图片），约定/资料笔记自动注入系统提示（敏感值自动脱敏），另有快照版本历史、回收站、可撤销归档、AI 整理、双链与全文搜索。兼容 DSH 0.1.7～0.2.x。
@@ -9454,7 +9456,7 @@ dsh plugin --profile web add dshmarket
 - [chenyuiyu/dsh-attention-reminder](https://github.com/chenyuiyu/dsh-attention-reminder) — 需要授权或确认时敲一记短音、把 DSH 窗口提到最前、在页面最上层浮出提醒卡片，并弹一条系统通知。声音与弹窗是会话头部上的两个独立开关，刷新与重启后仍然保持。
 - [chidaic/dsh-agent-notify](https://github.com/chidaic/dsh-agent-notify) — 任务完成或需要你输入/批准时弹出 Windows 系统通知（浏览器 Notification API）：完成/提问/审批/计划审阅提醒，点击气泡直达会话，支持后台模式，设置页在官方设置 → 任务提示。
 - [chintoleung/dsh-ping](https://github.com/chintoleung/dsh-ping) — 为 DeepSeek Harness 的提问、审批请求与回合完成发送 Telegram 通知。仅通知不改交互：单运行时文件、零运行时依赖、不自建问题卡片。
-- [chromoany/dsh-notify-me](https://github.com/chromoany/dsh-notify-me) — DSH 通知提醒插件：当审批、方案确认或提问需要你回应，或后台回复、任务跑完时，用系统通知、提示音和标签页标题提醒你；点击通知可回到对应会话，设置页可开关提醒、调节音量、切换中英通知语言。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [chromoany/dsh-notify-me](https://github.com/chromoany/dsh-notify-me) — DSH 通知提醒插件：当审批、方案确认或提问需要你回应，或后台回复、任务跑完时，用系统通知、提示音和标签页标题提醒你；点击通知可回到对应会话，设置页可开关提醒、调节音量、切换中英通知语言。
 - [Cloudto1/dsh-approval-chime](https://github.com/Cloudto1/dsh-approval-chime) — DSH 请求审批时响一声提示音；音色、音量与开关在「设置 → 通知提醒」里调。
 - [cmfok/dsh-feishucard](https://github.com/cmfok/dsh-feishucard) — 把 DeepSeek Harness 的 agent 会话接进飞书（Lark）：官方 SDK 长连接收发、流式回复卡片、单实例多 bot、群里 @ 才回复。
 - [CNranger1124/dsh-lane-bridge#dsh-lane-bridge](https://github.com/CNranger1124/dsh-lane-bridge/tree/main/packages/dsh-lane-bridge) — DeepSeek Harness 的多渠道 IM 桥：QQ（SnowLuma / OneBot v11、官方 QQ Bot）与 Discord 的每个群、每个私聊都对应一个独立的 agent 会话，会话绑定角色卡、角色卡背后的领域承载知识库（含草稿审批）、共享记忆、只读 GitHub 查询与群聊触发策略；内置客服与群聊两套人格，支持统一推送（含广播）与人工接管。
@@ -10449,6 +10451,7 @@ dsh plugin --profile web add dshmarket
 - [amwangfan/dsh-privacy-guard](https://github.com/amwangfan/dsh-privacy-guard) — DeepSeek Harness 本地凭据脱敏网关的控制面板：网关与小模型健康状态、审计指标、泄密探测沙箱、豁免白名单、加密密钥管理、凭据保护模型入口与部署控制。
 - [Anguis-L/dsh-plugin-trust-audit](https://github.com/Anguis-L/dsh-plugin-trust-audit) — 只读审计 DSH 插件的 HTTP 路由是否真的做了鉴权栅栏：读插件代码找出真正注册的路由，仅对回环地址发起探测。
 - [AntaresCorn/dsh-auto-reviewer](https://github.com/AntaresCorn/dsh-auto-reviewer) — Codex 风格自动审查权限模式：新增 auto-review 权限档，自动放行安全沙箱提权，危险或模糊操作转人工确认，未确认的致命操作直接拒绝。
+- [Antipas/undohaven#dsh-log-gate](https://github.com/Antipas/undohaven/tree/main/packages/log-gate) — 向内置会话日志插件注册排除规则，让选定会话跳过会话日志上传：可以拦住全部实时会话，也可以只拦 cwd 匹配项目名、目录或 glob 的会话；附带本机状态接口和 audit 体检命令。不改 dsh，不拦网络。第三方插件。
 - [apex-mochen/dsh-sandbox-arg-guard](https://github.com/apex-mochen/dsh-sandbox-arg-guard) — 让「同级或更窄的 sandbox_permissions」不再让工具调用直接失败。会升级的工具（pwsh、bash、write、edit）都广告完整的 sandbox_permissions 枚举，但 DSH 只接受严格更宽于当前生效级别的请求——其源码自称这是「deliberately not a schema constraint」。于是反射式带上该参数的模型往往填它已经在的那个级别，调用在执行前就死掉："sandbox escalation to \"workspace-write\" is not strictly wider than this call's current \"workspace-write\" mode"，某些模型还会为此烧掉一整轮重试。本插件只注册一个 tools/execute waterfall 监听器，且仅在那一条文档化拒绝上、且参数里确实带了升级字段时，把同一个调用去掉该参数重投一次。安全性由 DSH 自己的文档保证：拒绝发生在任何执行之前（"nothing has run"），且改过的参数无法再次匹配，因此重投在结构上不成环。已端到端复现并验证——改造前 isError 为 true 且命令从未执行；改造后拿到命令的真实输出、isError 为 false，会话里只有一个 tool/call 与一个 tool/result。零依赖。
 - [ArisuYuuko/dsh-approval-explainer](https://github.com/ArisuYuuko/dsh-approval-explainer) — 为 DSH 的每一次提权审批弹窗加一份由模型生成的注释：这段代码做什么、模型想达成什么、风险多大以及原因、每个选项意味着什么；并提供 /dsh-approval/history 历史授权查询（可搜索、可筛选、记录当时选了什么）与 /dsh-approval/diag 诊断页。
 - [arrow949/dsh-turn-approval](https://github.com/arrow949/dsh-turn-approval) — DSH「允许本次任务」临时授权：仅在当前任务内自动放行同类 `danger-full-access` 请求，任务结束自动失效。
@@ -10471,7 +10474,7 @@ dsh plugin --profile web add dshmarket
 - [COH2357/dsh-workspace-api-key](https://github.com/COH2357/dsh-workspace-api-key) — 为每个工作区或单个会话单独绑定一把 DeepSeek API key，生效 key 失效或服务商不匹配时提醒，且绝不自动替换 key。
 - [couldbeme/dsh-write-gate](https://github.com/couldbeme/dsh-write-gate) — 承诺写入闸门：由运营者编写的规则在工具调用执行前生效——先是一层确定性守卫，再是一层 LLM 裁判，默认失败即拒绝，每一次拦截都写进矛盾日志。
 - [cuddly-guacamole/dsh-auto-approval-llm](https://github.com/cuddly-guacamole/dsh-auto-approval-llm) — 为 DSH Auto 权限档提供 LLM 辅助自动审批：静态规则、LLM 复审、风险分档、人工倒计时兜底、熔断与文件级审计。
-- [cxywh/dsh-folder-access](https://github.com/cxywh/dsh-folder-access) — 在输入框左侧加一个文件夹按钮：选中本地目录后，当前对话即可在其中读写。授权会立刻注入模型的运行时上下文，模型无需追问路径，也不必由你提醒。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [cxywh/dsh-folder-access](https://github.com/cxywh/dsh-folder-access) — 在输入框左侧加一个文件夹按钮：选中本地目录后，当前对话即可在其中读写。授权会立刻注入模型的运行时上下文，模型无需追问路径，也不必由你提醒。它的 HTTP 路由先过 DSH 自带的准入校验（Host/Origin 围栏 + 已认证的浏览器 Peer）才会执行。
 - [DamonKoy/dsh-plugins#dsh-approve-for-me](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-approve-for-me) — 自动化审批审核：只读工具自动放行、危险命令自动拒绝，策略引擎 fail-closed。
 - [DamonKoy/dsh-plugins#dsh-secret-redactor](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-secret-redactor) — 工具结果敏感信息自动脱敏：模型看到前掩码 API key / token / JWT / 私钥与配置密钥。
 - [Daphne999/dsh-warden](https://github.com/Daphne999/dsh-warden) — 装插件前的安全体检：读 package.json、安装期脚本、原生依赖与源码，扫外联域名、危险 API、凭据路径，再交叉核对市场的能力声明与红线，给出 100 分制评级与逐条发现。只读，不执行被审计代码。
