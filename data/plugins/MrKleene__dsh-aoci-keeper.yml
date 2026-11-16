@@ -1,0 +1,6 @@
+url: https://github.com/MrKleene/dsh-aoci-keeper
+name: MrKleene/dsh-aoci-keeper
+category: dev
+description:
+  en: 'Runs aoci check against the session repository and adds one notice with the governance finding count to the model input at turn start, so the AOCI index is maintained before the task ends.'
+  zh: '在每轮开始时对会话所在仓库跑 aoci check，把治理 finding 数作为一条提示交给模型，让 AOCI 索引在任务结束前被维护。'
