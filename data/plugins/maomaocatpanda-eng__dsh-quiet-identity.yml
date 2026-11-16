@@ -1,0 +1,7 @@
+url: https://github.com/maomaocatpanda-eng/dsh-quiet-identity
+name: maomaocatpanda-eng/dsh-quiet-identity
+category: dev
+description:
+  en: Removes the fixed "You are an AI agent powered by DeepSeek Harness." opener from the assembled system prompt, for gateways that reject or rate-limit requests carrying it.
+  zh: 从组装后的系统提示词中移除固定的 “You are an AI agent powered by DeepSeek Harness.” 开场白，用于会拒绝或限流携带该句请求的网关。
+tarball: https://github.com/maomaocatpanda-eng/dsh-quiet-identity/releases/latest/download/dsh-quiet-identity.tgz
