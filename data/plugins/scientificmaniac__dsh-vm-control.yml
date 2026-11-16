@@ -1,5 +1,5 @@
 url: https://github.com/scientificmaniac/dsh-vm-control
-name: dsh-vm-control
+name: scientificmaniac/dsh-vm-control
 category: remote
 description:
   en: Control local VMware Workstation, Player and Fusion virtual machines — power, snapshots, live CPU and memory, network layout and VMX parameters, with one-step SSH import into dsh-ssh-vault.
