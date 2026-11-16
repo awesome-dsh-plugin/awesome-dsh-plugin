@@ -1,0 +1,6 @@
+url: https://github.com/msudustin/dsh-magpie-monitor
+name: msudustin/dsh-magpie-monitor
+category: usage
+description:
+  en: Sidebar footer widget for DeepSeek Harness that shows the local Magpie gateway in real time - live routing (requested route vs model actually served), usage totals and cost for today/7d/30d, per-provider quotas, and request history with latency and tokens. Read-only proxy to the Magpie gateway API, config for refresh interval, request limit, CNY rate.
+  zh: DeepSeek Harness 侧边栏底栏挂件，实时展示本机 Magpie 网关：最新请求路由（请求线路 vs 实际服务模型）、今日/7 天/30 天调用量与费用、各账号额度、最近请求历史（延迟与 token）。对网关 API 只读代理，可配置刷新间隔、请求条数与人民币汇率。
