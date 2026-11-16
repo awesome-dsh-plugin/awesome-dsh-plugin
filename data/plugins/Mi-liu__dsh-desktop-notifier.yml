@@ -1,7 +1,7 @@
 url: https://github.com/Mi-liu/dsh-desktop-notifier
 name: Mi-liu/dsh-desktop-notifier
 category: notify
-tarball: https://github.com/Mi-liu/dsh-desktop-notifier/releases/download/v1.6.0/dsh-desktop-notifier-1.6.0.tgz
+tarball: https://github.com/Mi-liu/dsh-desktop-notifier/releases/download/v1.6.1/dsh-desktop-notifier-1.6.1.tgz
 icon: https://raw.githubusercontent.com/Mi-liu/dsh-desktop-notifier/main/assets/icon.png
 description:
   en: 'Windows-only DeepSeek Harness host plugin that shows Windows 11 style desktop cards in the bottom-right corner: a card when a turn completes — clicking anywhere on it brings Harness forward and switches back to that conversation — or fails, a native choice card for ask_user_question where clicking an option answers the tool and a free-text field accepts a typed answer, and an approval card for tool-permission requests. Cards follow the current Harness theme, open on the screen that hosts the main window, and the notification sound (including a custom .wav) plus notify timing, approval takeover and timeouts are configurable in the Harness settings page.'
