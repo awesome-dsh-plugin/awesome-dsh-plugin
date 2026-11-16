@@ -1,0 +1,6 @@
+url: https://github.com/CoolrfulDARkness/resource-lease
+name: CoolrfulDARkness/resource-lease
+category: tools
+description:
+  en: 'Cross-process resource leases for parallel agents: one lock-file format shared by a CLI, an MCP server and a DSH plugin, so agents driven by different tools exclude each other; leases carry a TTL and a reason, and the current holders are injected into the model context each step.'
+  zh: '给并行 agent 用的跨进程资源租约：CLI、MCP server 与 DSH 插件共用同一套锁文件，所以不同工具驱动的 agent 也会互相排斥；租约带 TTL 和用途说明，当前持有者会注入每步的模型上下文。'
