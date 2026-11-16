@@ -34759,19 +34759,6 @@
     "scannedAt": "2026-09-24T17:41:52.360Z",
     "tool": "dsh-trust-check@0.1.13"
   },
-  "https://github.com/SiriusWJ/dsh-lite-memory": {
-    "version": "0.4.1",
-    "spec": "github:SiriusWJ/dsh-lite-memory",
-    "capabilities": [
-      "fs-write",
-      "fs-read",
-      "network",
-      "env"
-    ],
-    "redLines": [],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
   "https://github.com/SiriusWJ/dsh-updater-npm": {
     "version": "1.13.4",
     "spec": "github:SiriusWJ/dsh-updater-npm",
