@@ -1,0 +1,8 @@
+url: https://github.com/diudiu62/dsh-connect-loomy
+name: diudiu62/dsh-connect-loomy
+category: model
+icon: https://raw.githubusercontent.com/diudiu62/dsh-connect-loomy/main/icons/icon-180.png
+tarball: https://github.com/diudiu62/dsh-connect-loomy/releases/latest/download/dsh-connect-loomy.tgz
+description:
+  en: 'Registers the Loomy desktop app''s locally signed-in chat models as a `loomy` provider in DSH, adding a read-only credits readout in the composer, a settings section for account, per-model toggles and upstream diagnostics, and a status/doctor CLI. Shares the `loomy` provider id with 2239058652/dsh-loomy-connect, so the two cannot be installed together; this one differs by the credits readout, the diagnostics table and the CLI.'
+  zh: '把本机已登录的 Loomy（讯飞办公助手）聊天模型注册为 DSH 的 `loomy` 供应商，提供输入框只读积分读数、账户/逐模型开关/上游诊断三栏设置分区，以及 status/doctor 命令行。与 2239058652/dsh-loomy-connect 注册同一个 `loomy` 供应商，两者不能同装；区别在于积分读数、诊断表与命令行。'
