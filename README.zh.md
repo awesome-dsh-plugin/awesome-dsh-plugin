@@ -2139,6 +2139,7 @@ dsh plugin --profile web add dshmarket
 - [xiamubumu/dsh-composer-launcher](https://github.com/xiamubumu/dsh-composer-launcher) — 启动器面板：统管能力组合、插件清单与 MCP 桥，并引导安装浏览器标签页扩展。
 - [XIANGDEEN/dsh-sidebar-video-player](https://github.com/XIANGDEEN/dsh-sidebar-video-player) — 右侧栏视频播放器：文件夹播放列表支持首帧缩略图、时长、按名称/时长/修改时间/大小排序、全屏，以及写权限文件夹下的重命名/复制/删除/刷新右键菜单；同时显示缓冲区间、解码帧率与丢帧，并只读解析 MP4/MOV 的编码档次/级别、精确帧数、每轨码率与旋转；不注册智能体工具，文件写入仅在用户以写权限选择文件夹后通过浏览器 File System Access API 执行。
 - [xianrui69/dsh-quick-phrases](https://github.com/xianrui69/dsh-quick-phrases) — 为 DeepSeek Harness 增加可拖拽、位置会记住的快捷短语条，以及 `/` 触发的短语菜单；每条短语可单独设置置顶、斜杠菜单、是否上条和点击即发送。
+- [Xiao-53/dsh-mindmap](https://github.com/Xiao-53/dsh-mindmap) — 原生侧栏思维导图，支持 Markdown 详情、布局保存和离线 HTML 导出。
 - [xiao-xiao-bai-ya/dsh-cn-menu-kit](https://github.com/xiao-xiao-bai-ya/dsh-cn-menu-kit) — 技能与命令的中文增强：菜单中的技能显示中文标题、支持中文搜索与悬浮详情，命令与技能的顺序可自由拖拽。
 - [xiaobaga281/dsh-effort-mosaic](https://github.com/xiaobaga281/dsh-effort-mosaic) — 把 DSH 模型菜单里的「推理等级」一行换成像素马赛克粒子滑轨：贴近滑块的一段是静止的密实墙，越往左方块越早脱离网格、漂移散开。滑块形状、尺寸、填充、强调色、最高档点亮样式与粒子越界动画都可在插件设置里调整。
 - [Xiaofei-fei/dsh-prompt-history](https://github.com/Xiaofei-fei/dsh-prompt-history) — 为 DSH Web 输入框提供终端式体验：↑/↓ 历史（前缀搜索、Ctrl+R）、Codex 风格的历史补全与下一句预测（Tab/→ 接受）、选中工具栏（复制/引用/侧聊追问）、右键直接粘贴、可拖动会话目录，以及能在右栏并行跑第二条 agent 线程的侧聊（fork 全上下文、浮动/分屏、双向桥接、并发写提醒）。
@@ -5101,6 +5102,7 @@ dsh plugin --profile web add dshmarket
 - [amd47802574/dsh-hand-note](https://github.com/amd47802574/dsh-hand-note) — 随手笔记：本地 Markdown 笔记插件，默认存放在用户主目录 ~/dsh随手笔记（跨平台、无盘符依赖）。卡片式全新界面，回收站（删除 30 天内可恢复），自定义标签管理（可提前建标签、一处删除全局生效、同名标签固定配色），列表密度切换与字号/行宽调节，平铺速览列表，全文检索，Markdown 预览，自动保存，批量删除，Office 零依赖文本抽取，支持 AI 回写。由 dsh-knowledge-lite 深度改造而来；老用户可在状态栏「库位置」选回旧库自动迁移。
 - [AndyYang12345/dsh-butler-memory](https://github.com/AndyYang12345/dsh-butler-memory) — PostgreSQL 持久个人记忆：MCP 记忆工具 + 可查看记忆与候选的 Web 面板。
 - [annkun/dsh-memory](https://github.com/annkun/dsh-memory) — 分层 Claude Code 式记忆：用户级+项目级双作用域（项目记忆随 git 团队共享），MEMORY.md 索引会话启动自动注入，上下文护栏，纯文件零依赖。
+- [Anseya/flow-tower-context#flow-tower](https://github.com/Anseya/flow-tower-context/tree/main/plugin/flow-tower) — 面向 DeepSeek Harness 的压缩驱动项目记忆：把压缩增量确定性编译为可检索、带引文的项目词典，自适应双注入，并提供可移植的压缩接管预设。
 - [AntonyLang/dsh-memory-observer](https://github.com/AntonyLang/dsh-memory-observer) — 在后台把长会话提炼为观察与反思并注入系统提示，压缩时直接用预备记忆渲染摘要；提供设置页与可回溯原文的 memory_recall。
 - [aoyamabf-max/dsh-obsidian-memory](https://github.com/aoyamabf-max/dsh-obsidian-memory) — 把 agent 的长期记忆存成 Obsidian vault 里的普通 Markdown 笔记——每条记忆是一个带 YAML frontmatter 的 .md 文件，Obsidian 原生索引，可以直接读、改、链接和备份，不锁在数据库里。提供左侧栏面板（按标签筛选、按时间或重要度排序、就地编辑）、7 个 agent 工具、三档 token 预算的召回、BM25 排序（无需 embedding、无需 API key、离线可用、支持中文二元分词）、重要度衰减与归档（只移到 .archive/ 从不删除），以及可选的 GitHub Contents API 同步。含敏感串的记忆会被拒绝推送而不是打码，因为打码后的记忆读起来像完整的、实际关键信息已经丢了。零运行时依赖，依赖全部来自 DSH 宿主。
 - [Apauto-to-all/dsh-hindsight-control-plane](https://github.com/Apauto-to-all/dsh-hindsight-control-plane) — 把 Hindsight 记忆控制台嵌进 DSH 主面板：侧栏一键打开整块控制台，由 npx 拉起、随插件起停。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它通过 npx 启动 Hindsight 控制台（默认版本是 latest），控制台默认监听 0.0.0.0:9999，不设置主机名时整个局域网都能访问。
