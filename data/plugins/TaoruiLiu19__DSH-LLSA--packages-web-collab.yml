@@ -1,0 +1,6 @@
+url: https://github.com/TaoruiLiu19/DSH-LLSA/tree/main/packages/web-collab
+name: TaoruiLiu19/DSH-LLSA#web-collab
+category: workflow
+description:
+  en: 'Opt-in web consultation for DeepSeek Harness tasks: paste the material and a first-pass review, let a sub-agent check one specific doubt against a web chat, and keep the verification with the agent.'
+  zh: 'DeepSeek Harness 任务的按需网页咨询：贴入资料与初审建议，子 Agent 可就一个具体疑点问一次网页对话，核验仍由 Agent 负责。'
