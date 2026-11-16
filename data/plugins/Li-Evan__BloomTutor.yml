@@ -1,0 +1,7 @@
+url: https://github.com/Li-Evan/BloomTutor
+name: Li-Evan/BloomTutor
+category: skill
+description:
+  en: "Seven tutoring Skills. bloom-tutor writes a syllabus, then one Markdown lesson at a time in your workspace, and shapes each next lesson from your ??? marks and feedback; six learn-* Skills teach through analogies to what you know, deciding how deep to go, field maps, rough prototypes and explaining it back, with learn-deep running all five."
+  zh: "七个辅导 Skill。bloom-tutor 先写学习大纲，再在工作区里每次写一篇 Markdown 课文，下一篇按你标的 ??? 和反馈来调整；六个 learn-* Skill 分别用类比已会的知识、判断学多深、领域地图、粗糙原型和讲回来检验来帮你学，learn-deep 一次跑完这五种。"
+icon: https://raw.githubusercontent.com/Li-Evan/BloomTutor/main/integrations/deepseek-harness/icon-180.png
