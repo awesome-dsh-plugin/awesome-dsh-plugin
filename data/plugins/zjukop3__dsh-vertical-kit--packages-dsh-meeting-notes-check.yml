@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-meeting-notes-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-meeting-notes-check'
+category: 'tools'
+description:
+  en: 'Meeting-note hygiene from markdown: a date, the people in the room, recorded decisions, and every action item carrying an owner and a deadline.'
+  zh: '会议纪要的书记检查：日期、与会人、决定都有记录，每个行动项都有负责人和截止时间——只验记录格式，不判断会议质量。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'
