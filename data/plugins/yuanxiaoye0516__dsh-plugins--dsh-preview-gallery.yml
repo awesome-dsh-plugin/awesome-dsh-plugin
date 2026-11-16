@@ -1,0 +1,6 @@
+url: https://github.com/yuanxiaoye0516/dsh-plugins/tree/main/dsh-preview-gallery
+name: yuanxiaoye0516/dsh-plugins#dsh-preview-gallery
+category: ui
+description:
+  en: 'Shows a thumbnail overview of session files with multi-select compare, plus a one-click action in the right sidebar to close all previews.'
+  zh: '会话文件小图总览、多选对比，并在右侧栏提供一键关闭全部预览。'
