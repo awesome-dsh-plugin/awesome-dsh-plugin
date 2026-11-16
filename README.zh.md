@@ -4536,7 +4536,7 @@ dsh plugin --profile web add dshmarket
 - [jasonrale/dsh-archive-manager](https://github.com/jasonrale/dsh-archive-manager) — DSH Web UI 的归档会话管理器：重新打开已归档会话并继续对话、取消归档恢复原位、彻底删除会话，支持分组浏览、消息搜索与原生视图同步。
 - [Jaylor-Wang/dsh-tool-result-trimmer](https://github.com/Jaylor-Wang/dsh-tool-result-trimmer) — 即时、尾部加权、行吸附的工具输出修剪插件：挂载于执行流水线即时截断超大命令输出，内置语义提纯器与 ANSI 剥离。
 - [Jaylor-Wang/dsh-tool-session-delete](https://github.com/Jaylor-Wang/dsh-tool-session-delete) — 在侧栏上下文菜单中添加删除会话操作，删除前通过模态框实时展示日志大小与活跃状态，并完整清理日志文件、投影缓存与内存注册表杜绝复活。
-- [JayYuen666/dsh-session-rescue](https://github.com/JayYuen666/dsh-session-rescue) — 回合异常收尾时的自动补救：瞬时失败后续跑、输出截断后继续、待办未完成时重跑，另有一层请求级 429 兜底，以及带「改后重发 / 手动重试 / 停止并重问」的客户端停靠栏。
+- [JayYuen666/dsh-session-rescue](https://github.com/JayYuen666/dsh-session-rescue) — 回合异常收尾时的自动补救：瞬时失败后续跑、`max-tokens` 截断后继续、本回合自己写下的待办仍未完成时补跑；请求级限流重试先让官方策略决定，手动动作提供「改后重发 / 分叉重发 / 继续发送 / 手动重试 / 恢复被中断的回合 / 停止并重问」，另可选用同回合 steer 继续，在待办未完成时不关闭回合。
 - [jermaine123123/agent-context-editor#deepseek-harness](https://github.com/jermaine123123/agent-context-editor/tree/main/adapters/deepseek-harness) — Agent Context Editor 是一个可以手动排除、编辑和选择性压缩 AI 对话上下文的跨 Agent 插件，同时支持搜索、筛选、选择、隐藏、恢复和撤销对话内容，并保留原始 Session。
 - [Jesse-njx/dsh-crosstalk](https://github.com/Jesse-njx/dsh-crosstalk) — 跨会话消息：本机任意会话都可像 Claude Code 一样列出并互发消息，基于本地心跳注册表与收件箱。
 - [JessenReinhart/dsh-plugin-btw](https://github.com/JessenReinhart/dsh-plugin-btw) — 新增 /btw 与 /side 斜杠命令，在隔离的分叉子会话中回答临时旁问，不污染主会话上下文。
@@ -7313,7 +7313,7 @@ dsh plugin --profile web add dshmarket
 - [Jakcet/dsh-dschat](https://github.com/Jakcet/dsh-dschat) — 在 DSH 桌面版主面板里通过 Electron webview 嵌入 DeepSeek 网页版聊天（chat.deepseek.com），带后退/前进/刷新工具栏，并把登录相关的 localStorage 快照存在本地、下次打开时回填。
 - [jakehemmerle/dsh-web-search-exa](https://github.com/jakehemmerle/dsh-web-search-exa) — dsh-web 接缝的 Exa 搜索提供方：web_search 工具把查询发送到 Exa 的 /search API，并把结果作为来源返回，适用于 dsh web、dsh-TUI 和 headless 运行。需要 Exa API key（EXA_API_KEY、凭据存储，或每次搜索时读取的 key 文件）。web_fetch 不变，没有界面。
 - [jaychang1989/dsh-webchat](https://github.com/jaychang1989/dsh-webchat) — 在 DeepSeek Harness 内打开 chat.deepseek.com 官方网页版：点侧边栏入口，真实页面通过桌面端的原生浏览器访客渲染在中栏，并且重启后保持登录。模型选择、深度思考、智能搜索、历史记录、附件上传仍是官方那一套；宿主没有该访客桥接时降级为打开窗口。
-- [JayYuen666/dsh-scrapling](https://github.com/JayYuen666/dsh-scrapling) — 把 Scrapling Python 库包成最多十九个模型工具，按探测到的能力注册：为纯 JavaScript 页面上真实浏览器渲染、用 CSS/XPath 取出结构化数据而不是 Markdown、选择器自愈、可复用的登录态会话、XHR 抓取、页面截图、受部署门禁的浏览器动作，以及在官方作业后端上跑的限定域爬虫（content/sitemap/feed/Shopify 四种模式）。它还能顶替内置的 web_fetch / web_search，并把同一份工具表通过 MCP 端出。需要 Python 3.14+ 且装好 Scrapling；浏览器工具还需要 patchright 的 Chromium 引擎，可选的 CLI 只在 macOS arm64 上装得起来。
+- [JayYuen666/dsh-scrapling](https://github.com/JayYuen666/dsh-scrapling) — 把 Scrapling Python 库包成最多十九个模型工具，按探测到的能力注册：为纯 JavaScript 页面上真实浏览器渲染、用 CSS/XPath 取出结构化数据而不是 Markdown、选择器自愈、可复用且带 XHR 抓取与网络历史的登录态会话、页面读取、截图、下载、受部署门禁的浏览器动作、基于页面内容的回答工具，以及在官方作业后端上跑的限定域爬虫（content / sitemap / feed / Shopify 四种模式）。它能顶替内置的 web_fetch / web_search，把同一份工具表通过 MCP 端出，并对每个外发 URL 做公网地址校验。需要 Python 3.14+ 且装好 Scrapling；浏览器工具还需要 patchright 的 Chromium 引擎，可选的 CLI 只在 macOS arm64 上装得起来。
 - [jiaererw/dsh-plugin-chrome](https://github.com/jiaererw/dsh-plugin-chrome) — 每个 DSH 会话一个可见的 Chrome 窗口：16 个 chrome_* 工具（打开/状态/关闭/导航/标签/快照/截图/点击/坐标点击/填写/输入/按键/悬停/滚动/执行脚本/等待），Web GUI 的 Chrome 标签页提供实时画面流（静止页截图心跳兜底）、标签页管理、窗口控制与截图历史。
 - [jiewaigongxing/dsh-jiey-browser](https://github.com/jiewaigongxing/dsh-jiey-browser) — 通过 MCP 在 DeepSeek Harness 中驱动 Jiey 浏览器：导航、快照、操作、读取、截图与标签页管理，使用真实 Chromium 环境。
 - [joansgwjbsu/dsh-plugin-cdp](https://github.com/joansgwjbsu/dsh-plugin-cdp) — 通过自管 Chrome 实例驱动 CDP 的自动化插件：页内弹窗收集规则、简历与岗位匹配打分、岗位数据的文本视图，以及长驻 worker 的无停机热替换。
@@ -9187,7 +9187,7 @@ dsh plugin --profile web add dshmarket
 - [ItQianChen/dsh-github-flow](https://github.com/ItQianChen/dsh-github-flow) — 把本机 GitHub CLI (gh) 包装成 Agent 工具集（PR、Issue、Actions 运行、仓库检索与原始 API 调用），另提供 /gh status 与 /gh help 两个斜杠命令，以及全局仓库驾驶舱和会话工作区两个 Web 面板。
 - [jamen-jiang/dsh-qoder-worktree](https://github.com/jamen-jiang/dsh-qoder-worktree) — Qoder 风格的工作区模式与分支 chip，选择分支即挂起意图，发送第一条消息时自动创建独立 git worktree 并把会话迁入其中。仅 Windows：放行写入依赖 PowerShell Set-Acl，其他平台进 Worktree 会报错并留在主检出。
 - [JasonFreeLab/dsh-command-code-review](https://github.com/JasonFreeLab/dsh-command-code-review) — 注册 /code-review 斜杠命令，五个并行审查视角、逐发现置信度打分，同时支持拉取请求与本地代码审查。
-- [JayYuen666/dsh-ocr-review](https://github.com/JayYuen666/dsh-ocr-review) — 把外部 `ocr`（open-code-review）CLI 包成五个模型工具——单次评审、全树扫描、确定性的范围与规则脚手架、会话查询——并把「OCR 发现了什么」与「这次跑有没有覆盖完选中的文件」分成两套口径回报。
+- [JayYuen666/dsh-ocr-review](https://github.com/JayYuen666/dsh-ocr-review) — 把外部 `ocr`（open-code-review）CLI 包成七个模型工具——单次评审、全树扫描、确定性的文件选择与规则脚手架、带评论筛选 / 比较 / 导出的会话历史、规则诊断与只读 LLM 目录查询——参数形状、类型与枚举由插件自己把关，并把「OCR 发现了什么」与「这次跑有没有覆盖完选中的文件」分成两套口径回报；设置卡从宿主设置目录选择 provider/model、编辑该 CLI 的 `mcp_servers` JSON、报告 `ocr auth` 状态、切换 ChatGPT 模型并测量已装 CLI 的版本。外部 CLI 需要单独安装，插件自己从不安装或升级它。
 - [JFWaskin/dsh-git-nexus](https://github.com/JFWaskin/dsh-git-nexus) — DSH Web 的 Git 与 GitHub 面板：暂存/撤销/丢弃/差异、分支、提交、推送/拉取/同步、日志、文件浏览、工作流看板，以及带 PR 创建的 GitHub OAuth。
 - [jiayan-xu/dsh-ocr-review](https://github.com/jiayan-xu/dsh-ocr-review) — 本地 AI 代码评审门禁：对工作区/分支/commit diff 跑评审（托管 ocr.js），返回结构化 findings 与 token 统计；门禁模式发现问题即失败。
 - [JohnXu22786/adversarial-review](https://github.com/JohnXu22786/adversarial-review) — 对抗式多视角代码审查：正确性/安全性/可维护性透镜并行攻击 diff，确定性严重度定级、抑制规则与增量审查历史。
@@ -9949,7 +9949,7 @@ dsh plugin --profile web add dshmarket
 - [Jayden-X-L/forkprobe](https://github.com/Jayden-X-L/forkprobe) — 同一任务并行试跑多个技能，对比结果选出最优。
 - [JayDong9130/dsh-evolution-lab](https://github.com/JayDong9130/dsh-evolution-lab) — 带证据的 Skill 自进化：脱敏轨迹学习、隔离提案、竞技场验证、金丝雀监控与自动回滚。
 - [Jaylor-Wang/dsh-awesome-optimizer](https://github.com/Jaylor-Wang/dsh-awesome-optimizer) — DeepSeek Harness 的运行时策略防护（拦截重复失败的工具调用、超长 shell 命令、与本地命令串联的网络命令）、复合批处理工具（read_batch/edit_batch）、用你自己的 SYSTEM.md 替换官方系统提示词各段的模式、软收敛提醒和回合遥测。
-- [JayYuen666/dsh-quality-gate](https://github.com/JayYuen666/dsh-quality-gate) — 回合收口质量门禁：本回合改过代码或配置时，把改过的文件逐个上溯到项目根，从固定白名单里为该根跑一条检查（`pnpm check` / `cargo check` / `ruff check .` / `tsc --noEmit`）；只有真跑过且失败才带着输出开新轮修复，而不是让回合直接收尾。
+- [JayYuen666/dsh-quality-gate](https://github.com/JayYuen666/dsh-quality-gate) — 挂在 `agent/turn-stopping` 的回合收口质量门禁：本回合成功写过的文件逐个上溯到最近的项目根，每个根至多跑一条固定白名单里的检查（`pnpm check` / `cargo check` / `ruff check .` / `tsc --noEmit`），只有真跑过且失败才带着输出开新轮修复；没跑起来的记为未运行，绝不算通过。
 - [JesmonX/dsh-web-shell](https://github.com/JesmonX/dsh-web-shell) — 右侧停靠的可折叠 Web 终端（xterm.js），经 WebSocket 桥接宿主 PTY：支持 bash/zsh 切换、拖拽调宽，折叠时保留会话。
 - [Jesse-njx/dsh-tmuxctl](https://github.com/Jesse-njx/dsh-tmuxctl) — 掌控你的 tmux 面板：list/send-keys/capture、在面板中运行长任务并 watch，破坏性命令需审批。
 - [jetruan/dsh-tailtransit](https://github.com/jetruan/dsh-tailtransit) — 为 Harness 单独运行一个用户态 tailscaled：网页抓取、命令行、其他插件、大模型四类流量各自选择是否走 Tailscale 出口节点，系统路由与 DNS 不变。需要另行安装 Tailscale 的 tailscaled；它会再启动一个用户级守护进程，把所选流量经本机回环代理转发，并通过 ifconfig.me 查询出口 IP。若设置了 auth key，会保存在插件配置里。
