@@ -1,0 +1,5 @@
+url: https://github.com/iHatePostingOrg/iHatePosting-Agent/tree/main/plugins/dsh-ihateposting
+name: iHatePostingOrg/iHatePosting-Agent#dsh-ihateposting
+category: tools
+description:
+  en: 'Connects DeepSeek Harness to iHatePosting over MCP: lists connected social channels, reads the posting rules of each platform, and drafts, schedules or publishes posts across 15 platforms.'
