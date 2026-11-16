@@ -2823,6 +2823,7 @@ dsh plugin --profile web add dshmarket
 - [melt502/dsh-hotkey](https://github.com/melt502/dsh-hotkey) — 为 DSH Web GUI 提供可配置的 VS Code 风格键盘快捷键，内置设置页改键、冲突检测与 JSON 导入导出。
 - [menglian001/dsh-token-usage](https://github.com/menglian001/dsh-token-usage) — 逐请求 token 账本：四桶计量、53 周热力图与实时并发，并额外落一份 JSONL 账本——不受每会话 600 行投影窗口限制，启动时从全部会话日志回扫补齐。
 - [Mengshang-spec/dsh-third-party-api-balance-wallet](https://github.com/Mengshang-spec/dsh-third-party-api-balance-wallet) — 通用 Sub2API 第三方余额面板：使用 /v1/usage 和长期 API Key，自动发现 DSH provider，显示余额及今日用量。
+- [menzi11/dsh-session-cost](https://github.com/menzi11/dsh-session-cost) — 把本会话每个模型请求按它结算时生效的峰谷单价计价，并在对话右侧的平面卡片里给出总额、逐项账目、峰谷构成和当前价目表。
 - [Mikajin1206/dsh-glm-quota](https://github.com/Mikajin1206/dsh-glm-quota) — 显示 GLM Coding Plan 额度：提供 glm_quota 工具、左侧栏面板、常驻侧边栏底部额度条、设置分区与插件页卡片。请求 open.bigmodel.cn 或 api.z.ai 的 /api/monitor/usage/quota/limit，按剩余额度显示（100% 为未使用，0% 为已用尽），覆盖 5 小时与每周 Token 窗口、每月 MCP 额度，并附重置倒计时；上游 CREDIT_LIMIT（unit 3/6）与 TOKENS_LIMIT 两种形状都能解析。API Key 存入 DSH 凭据库，不写入配置文件。
 - [mike-lee0120/dsh-cost-dashboard](https://github.com/mike-lee0120/dsh-cost-dashboard) — 费用看板：汇总本机全部会话的模型输入/输出/缓存 token，按内置价格表计费（含 DeepSeek 峰谷），展示每日趋势与按模型/会话明细。
 - [miko-cn/dsh-commandcode-quota](https://github.com/miko-cn/dsh-commandcode-quota) — DSH 里的 Command Code 用量面板：套餐额度、5 小时 / 每周窗口、本期请求统计、套餐档位与内置 API key 编辑，包含设置页与可拖动浮窗。
@@ -4061,6 +4062,7 @@ dsh plugin --profile web add dshmarket
 - [Yunado/dsh-qwen38-local-qol](https://github.com/Yunado/dsh-qwen38-local-qol) — 本地 Qwen3.8 线（llama.cpp 或 NInfer）的逐请求 thinking 预算、压缩后端与设置 tab。
 - [Yutai233/dsh-selective-subagent](https://github.com/Yutai233/dsh-selective-subagent) — 在每个进程内子代理启动前询问要用的 provider / 模型，候选列表来自你已配置的 LLM Provider；60 秒内不做选择则子代理沿用 DSH 原本的路由。
 - [YV919/dmxapi-dsh](https://github.com/YV919/dmxapi-dsh) — 配置 DMXAPI Chat、Responses、Anthropic 和自定义服务商，并直接编辑已有预设服务商的模型。
+- [Z5-Bit/dsh-vertex-sa](https://github.com/Z5-Bit/dsh-vertex-sa) — 使用本地服务账号 JSON 接入 Vertex AI Gemini，提供原生模型设置卡片、自定义模型配置以及按模型的并发与冷却控制。
 - [ZChenW/dsh-codex-switch](https://github.com/ZChenW/dsh-codex-switch) — 通过 OAuth 连接 ChatGPT 账号，支持手动或自动切换，并为 DeepSeek Harness 添加带用量限额信息的 Codex 模型。
 - [zdt3476/dsh-subagent-routes](https://github.com/zdt3476/dsh-subagent-routes) — 按工作区目录给子智能体指定 provider、模型与思考等级的路由表：最长前缀匹配后注入子代理配置，支持全局默认策略、设置页规则编辑与会话输入区就地切换。
 - [zemyao7/dsh-totonai](https://github.com/zemyao7/dsh-totonai) — 在 DeepSeek Harness 里用账号接入 ToTonAI 中转站:设置面板里登录或注册,使用 65 个主流模型(GPT、Claude、Gemini、DeepSeek、豆包、Grok、GLM),并可在同一面板选档位、显示收款码、付款后申报开通。上游 API Key 只留在服务器上。
@@ -8202,6 +8204,7 @@ dsh plugin --profile web add dshmarket
 - [elither-gpt/pixiv-skill](https://github.com/elither-gpt/pixiv-skill) — 内置 Pixiv 技能，由 Python 命令行脚本实现：搜索插画、漫画、小说，查看日榜/周榜/月榜/新人榜/原创榜/AI 榜/R-18 榜，查询作品、小说系列和画师详情，下载原图，多页作品合成 PDF、动图转 GIF、小说系列合并成 TXT；需要 Python 3.9 以上并装好 requests / img2pdf / Pillow（pip install -r requirements.txt），R-18 内容需要自己的 Pixiv Cookie。
 - [eryi-lab/dsh-gsap](https://github.com/eryi-lab/dsh-gsap) — 把 GSAP 官方的 8 个 AI 技能注册进 DeepSeek Harness；技能正文随包分发，装完重启即可使用，无需配置、账号或密钥。
 - [eve1329/dsh-shared-handoff](https://github.com/eve1329/dsh-shared-handoff) — 共享交接套件的 dsh 版:handoff 与 task-id-bootstrap 技能 + host 侧自动化——基线状态注入、每轮快照与 Auto Log 轨迹、task=<id> 路由、续接关键词重注入、达阈值报警的压缩守护、子代理只读保护;与 Codex、Claude、pi 版写同一份 .agents/state/,一个仓库多代理共享交接。
+- [explorer-exe-bilibili/Plugin-shot#dsh-plugin-shot-dev](https://github.com/explorer-exe-bilibili/Plugin-shot/tree/main/dsh-plugin-shot-dev) — 注册 plugin-shot-dev 技能，在没有宿主源码的情况下开发 Plugin-shot 插件：下载官方离线 SDK、从模板生成工程、编写 C++、用 CMake 编译，并在安装前运行 `Plugin-shot.exe --test-plugin` 自检。
 - [fanghedeng/dsh-skill-gogo](https://github.com/fanghedeng/dsh-skill-gogo) — 技能面板：按来源浏览 skill，用彩色分类文件夹归类，预览文件，导出 zip、复制到项目、在磁盘上重命名，并在输入区菜单里插入 /skill 调用。
 - [FantastyQAQ/dsh-doxygen](https://github.com/FantastyQAQ/dsh-doxygen) — 为 C/C++（含 Qt）源码生成与维护 Doxygen 注释的工作流：文件头、函数、模块分组、行尾与简短注释，并扫描出签名指纹已过期、需要更新的注释。运行时需要 Python 3.10+ 并 `pip install tree-sitter tree-sitter-cpp`。
 - [Feahter/dsh-plugins#dsh-360](https://github.com/Feahter/dsh-plugins/tree/main/plugins/dsh-360) — 体检 DSH 配置：技能与 agent 说明书、子代理定义、预设共用一套 18 档 S~E 等级评分，带侧栏面板、四个 dsh360_* 工具，每次写入都有备份可撤销。
