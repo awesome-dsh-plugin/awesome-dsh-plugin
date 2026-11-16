@@ -1,0 +1,6 @@
+url: https://github.com/yutouaa/dsh-butler
+name: yutouaa/dsh-butler
+category: session
+description:
+  en: 'One butler per workspace, as four tools: list what the other sessions in the workspace are doing, digest their memory and skills in one call, name sessions by role, and dispatch a task to a session by role name, title or id. Dispatch uses the host in-process delivery with the scheduled-task service as fallback; a sidebar workspace menu turns the butler on or off per workspace; a bundled butler skill documents the workflow.'
+  zh: '每个工作区一个管家，提供四个工具：查看同工作区其它会话在做什么、一次汇总记忆与技能、给会话起岗位名、按岗位名/标题/id 把任务派给某个会话。派活走宿主进程内投递，定时任务服务作回退；侧边栏工作区菜单可按工作区开关；内置 butler 技能说明用法。'
