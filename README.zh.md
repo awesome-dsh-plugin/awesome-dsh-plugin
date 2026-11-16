@@ -7429,6 +7429,7 @@ dsh plugin --profile web add dshmarket
 - [yugasun/dsh-plugins#dsh-web-search](https://github.com/yugasun/dsh-plugins/tree/main/packages/dsh-web-search) — 向 ctx.web 注册百度、豆包、Tavily、Exa 后端供官方 web_search 使用，并在 Tavily 或 Exa 生效时将 web_fetch 转到对应提取接口。
 - [ywleeo/browser-mcp](https://github.com/ywleeo/browser-mcp) — 通过本地 MCP server 驱动你真实的 Chrome：可搜索 Google/Bing/搜狗、读取任意页面（含 JS 渲染与登录后内容）、在后台窗口自动化点击/滚动/输入/按键/选择，并为知乎、小红书、抖音、Bilibili、X、Reddit 提供平台级搜索/详情/评论/下载；评论断点续抓、下载 SHA-256 校验、不返回 cookie、仅本地回环。
 - [zaiwenJ/dsh-cdp-browser](https://github.com/zaiwenJ/dsh-cdp-browser) — 通过 CDP 连接已运行的 Chrome/Edge：为 DSH 提供截图、像素断言、DOM/CSS 检查与页面 JS 执行，全程 HTTP + WebSocket、零子进程、零 npm 依赖、无需逐次授权。
+- [zebbkira/dsh-browser-context](https://github.com/zebbkira/dsh-browser-context) — 在 DSH 桌面版中引用网页正文、企微文档选区、可访问的 B站字幕和截图，不自动发送消息。
 - [zengxiaolou/dsh-annotate-browser](https://github.com/zengxiaolou/dsh-annotate-browser) — DSH 右侧栏里的标注浏览器：通过 CDP 推流并转发输入的实时页面，点选元素或划选文字后，把源码位置、组件栈、样式与裁图带进聊天输入框。需本机 Chrome（Windows 须设置 chromePath）。
 - [zhiqiangme/dsh-plugins#dsh-tavily-search](https://github.com/zhiqiangme/dsh-plugins/tree/main/dsh-tavily-search) — 为内置网页搜索提供 Tavily 后端：在 DSH 进程内提供 127.0.0.1:8787/v1 接口，把搜索请求转成 Tavily 检索；最多 10 个 API Key 存在 DSH 凭据库，按请求轮换，遇鉴权、限流或额度错误自动换下一个；设置卡片可管理密钥、测试搜索并一键接入网页搜索。
 - [ZhongqiXiao/dsh-annotator](https://github.com/ZhongqiXiao/dsh-annotator) — 在 DeepSeek Harness 里拾取真实 Chrome / Edge / ego lite 页面上的元素，写评论、截元素图，再把标注插入对话输入框——agent 拿到 CSS 选择器、页面位置、评论与截图，照着你眼前的界面改前端。它用自己的用户目录和随机本地调试端口启动 Chrome 或 Edge，并在页面里注入一个悬浮层；选 ego lite 时会接入你已经开着的那个实例（把 DSH_VISUAL_ANNOTATOR_ADOPT_RUNNING 设为 0 可关闭）。
@@ -9738,6 +9739,7 @@ dsh plugin --profile web add dshmarket
 - [alice0721021-web/dsh-local-devkit](https://github.com/alice0721021-web/dsh-local-devkit) — 本地开发事实层：环境探测与运行时健康检查、git 状态/差异/历史/提交、写入前快照与逐版回退，以及 Node / Python / Go 项目检查。
 - [All3nCN/dsh-qa-suite-N23](https://github.com/All3nCN/dsh-qa-suite-N23) — 质控套件：agent 编辑 TypeScript 后自动回喂 tsc --noEmit 诊断，另含 /code-review 命令（五镜头并行审查 + 置信度评分）；吸收合并 dsh-code-check 与 dsh-command-code-review。
 - [AmethystLuna/dsh-model-everything](https://github.com/AmethystLuna/dsh-model-everything) — 把设计、计划或文档里的声称抽成模型再判定：UML 图渲染、读取与审查；状态机、协议与数据模型按模型判定；迁移检查覆盖与回滚对称；并发声称挖掘后分派给能判定它的工具；依赖图审查；报告对比。
+- [amzingluo/dsh-py-runner](https://github.com/amzingluo/dsh-py-runner) — DSH 侧边栏里的 VSCode 风格 Python 控制台：打开 .py 文件就是一个带行号和 Python 语法高亮的编辑器，选好解释器后点「运行」「调试」「停止」，stdout、stderr 和退出码实时流进下方面板。调试走 debugpy 的真 DAP 会话：点行号槽设断点，命中后可单步、暂停、看调用栈、展开变量、求值监视表达式；解释器缺 debugpy 时面板里一键安装。Ctrl+Enter 运行，Ctrl+Shift+Enter 调试。
 - [andyfan1094/dsh-codebase-memory](https://github.com/andyfan1094/dsh-codebase-memory) — 把 Codebase Memory MCP 代码知识图谱接入 DSH，并用防抖文件监视器自动保持索引新鲜。MCP 桥接部分仅支持 Windows（监视器跨平台）；首次启动会经 npx 自动安装所需 npm CLI。
 - [andyfan1094/dsh-devforge](https://github.com/andyfan1094/dsh-devforge) — 面向 DeepSeek Harness 的规范驱动服务工厂与本机智能体工作台。
 - [AngelosZou/dsh-homepage](https://github.com/AngelosZou/dsh-homepage) — 为 DSH 提供一个集成功能入口与信息浏览的个人主页：以卡片墙的形式内置一键更新 DSH 核心版本、审核外部插件安全性、管理本地 Skill、浏览会话状态等功能与信息展示。页面支持高度自定义，并可自由通过接口增加新的卡片。
@@ -11328,7 +11330,7 @@ dsh plugin --profile web add dshmarket
 - [Nanki-nn/dsh-answer-pet](https://github.com/Nanki-nn/dsh-answer-pet) — 可扩展回答状态宠物，内置蓝鲸、橘猫和银渐层猫主题；按会话实时展示回答进度、模型动作与工具调用轨迹、token、输出速率与耗时，并支持多会话状态卡片展开和收起。
 - [NattoCB/dsh-plugin-petdex-market](https://github.com/NattoCB/dsh-plugin-petdex-market) — 在设置中浏览 petdex.dev 宠物市集，并运行一只响应 agent 活动的 macOS 悬浮桌面宠物。
 - [Nekomeow114/dsh-tieba-dive](https://github.com/Nekomeow114/dsh-tieba-dive) — DSH 刷贴吧插件：读帖、写日报、签到，并从高赞回复里按吧建立风格库；回帖与楼中楼默认关闭，受每轮/每日限额。另带只读 MCP stdio server，支持 MCP 的客户端可尝试拉起；未逐客户端实测。
-- [Night-maze/dsh-desktop-pet-naiwa](https://github.com/Night-maze/dsh-desktop-pet-naiwa) — DSH 桌宠（Windows）：Cordis Host 插件通过带鉴权的回环通道驱动一个透明置顶的 WPF 子进程，把 turn、step、tool 事件投影成进度条与中文工具名，播放完成与失败音效，显示当日 Token 合计（按公开价格估算）与真实钱包余额，并支持加权点击互动、长按拖拽与贴边半隐藏、把文件拖到它身上放进回收站；侧边栏入口与设置面板可调缩放、音量、素材与阈值。仅 Windows，费用为估算值。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [Night-maze/dsh-desktop-pet-naiwa](https://github.com/Night-maze/dsh-desktop-pet-naiwa) — DSH 桌宠（Windows）：Cordis Host 插件通过带鉴权的回环通道驱动一个透明置顶的 WPF 子进程，把 turn、step、tool 事件投影成进度条与中文工具名，播放完成与失败音效，显示当日 Token 合计（按公开价格估算）与真实钱包余额，并支持加权点击互动、长按拖拽与贴边半隐藏、把文件拖到它身上放进回收站；侧边栏入口与设置面板可调缩放、音量、素材与阈值。仅 Windows，费用为估算值。
 - [nonefora11/dsh-genshin](https://github.com/nonefora11/dsh-genshin) — DSH 启动后自动打开《原神》官网并下载官方安装器。
 - [NoodleStormno/dsh-plugin-tic80](https://github.com/NoodleStormno/dsh-plugin-tic80) — DeepSeek Harness 的 TIC-80 虚拟游戏机插件：三栏嵌入式 Web 播放器、14 个 Agent 工具、实时热重载与原生 CLI 导出。
 - [novick1212/dsh-physics-lab](https://github.com/novick1212/dsh-physics-lab) — DSH 侧栏里的高中物理动态仿真实验室：24 个可调参数的互动模型（力学 / 电磁 / 光学 / 热学），按高一高二高三分组；每个模型配知识点讲解与跟随动画的分步解说、出题判分，其中 4 个电磁学模型支持拖动旋转的 3D 视角。纯客户端，解析式本地计算，不调模型、不联网、不上报数据。
