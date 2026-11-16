@@ -1,0 +1,5 @@
+url: https://github.com/Canary-Builds/dhs-connect
+name: Canary-Builds/dhs-connect
+category: model
+description:
+  en: Connects DeepSeek Harness to ChatGPT models through OAuth sign-in using the official Codex app-server, without requiring an OpenAI API key.
