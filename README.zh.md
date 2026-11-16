@@ -7732,7 +7732,7 @@ dsh plugin --profile web add dshmarket
 - [Jesse-njx/dsh-voice](https://github.com/Jesse-njx/dsh-voice) — 语音输入、语音输出：把口述音频转写为用户消息（transcribe），让 agent 朗读回复（speak），本地优先，音频存于 ~/.dsh/voice。
 - [joeseesun/qiaomu-audio-dsh](https://github.com/joeseesun/qiaomu-audio-dsh) — 在 Harness 中朗读 Markdown、听写和转写音频，并导出配音媒体。
 - [Jstn-1g/dsh-live-voice](https://github.com/Jstn-1g/dsh-live-voice) — DSH Web 的会话绑定单轮语音预览：提供无需凭证的本地合成演示和可选的 Qwen Audio，保持精确会话隔离，并仅在明确操作后将转写写入草稿，不会自动提交。
-- [junarch/voice_for_dsh#voice-for-dsh](https://github.com/junarch/voice_for_dsh/tree/main/packages/voice-for-dsh) — 用自然语言播报每轮回答，自动总结结构化内容（如表格和代码块），播报长度可调，支持接近原文长度的详细播报与极简播报。朗读引擎可选系统朗读、DeepSeek 官方 TTS、豆包（支持方言与情绪演绎）或本地 Kokoro（本机离线合成）。另提供三种会话提示音：工作音（处理期间循环播放）、完成音（本轮结束）、提问音（等待回答）；内置音色可切换，也支持上传自定义音频，素材仅保存在本机。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [junarch/voice_for_dsh#voice-for-dsh](https://github.com/junarch/voice_for_dsh/tree/main/packages/voice-for-dsh) — 用自然语言播报每轮回答，自动总结结构化内容（如表格和代码块），播报长度可调，支持接近原文长度的详细播报与极简播报。朗读引擎可选系统朗读、DeepSeek 官方 TTS、豆包（支持方言与情绪演绎）或本地 Kokoro（本机离线合成）。另提供三种会话提示音：工作音（处理期间循环播放）、完成音（本轮结束）、提问音（等待回答）；内置音色可切换，也支持上传自定义音频，素材仅保存在本机。
 - [jypjypjypjyp/dsh-music-studio](https://github.com/jypjypjypjyp/dsh-music-studio) — 在对话里作曲：模型按内置作曲规范写出乐谱 JSON，play_score 工具校验后渲染成对话内的卡片，含卷帘图、Web Audio 实时播放与 WAV/JSON 导出。
 - [KeinsteinNUS/dsh-speech-polish](https://github.com/KeinsteinNUS/dsh-speech-polish) — 给内置本地语音转写加一层术语纠错：沿用自带的麦克风与 SenseVoice 引擎（音频不出本机），在文字进入输入框前修正同音字、专业名词与数字写法。
 - [kekydream/dsh-meeting-room](https://github.com/kekydream/dsh-meeting-room) — 会议记录插件：一个会话对应一场会议，本机离线转写与发言人分离；要点、工作安排、手写笔记、复盘与月度评分都在面板里完成。可导出 SRT／Markdown／Word，也能打成「会议工程包」（zip）在另一台 dsh 导入；已确认的工作安排按设置一键推送到钉钉／企业微信。识别模型可更换（支持从本地文件导入更强的模型），云端识别默认关闭、未同意即零请求。导出 Word 需 Python 与 python-docx；首次使用会下载识别模型（28 MB 或 77 MB）。
