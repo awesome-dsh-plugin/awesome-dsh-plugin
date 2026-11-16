@@ -1,8 +1,0 @@
-url: https://github.com/zhan1024/dsh-repro
-name: zhan1024/dsh-repro
-category: browser
-description:
-  en: Record and replay frontend bugs, compare baseline and verification evidence against explicit acceptance conditions, and export reports and Playwright tests.
-  zh: 录制与重放前端缺陷，按明确验收条件对比基线和验证证据，并导出报告与 Playwright 测试。
-tarball: https://github.com/zhan1024/dsh-repro/releases/download/v0.1.0/dsh-repro-0.1.0.tgz
-icon: https://raw.githubusercontent.com/zhan1024/dsh-repro/main/docs/icon.png
