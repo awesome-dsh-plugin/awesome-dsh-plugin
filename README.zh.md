@@ -5153,6 +5153,7 @@ dsh plugin --profile web add dshmarket
 - [zchuxi/dsh-restart-task](https://github.com/zchuxi/dsh-restart-task) — 修复被打断的 DSH 回合：放大产品自带的重试预算并把等待渲染成同一步内的实时倒计时，输出被截断时在同一轮内续写，回合已结束时可选地新开一轮继续；输入框为空时把「继续」交给发送键。
 - [Zci514/dsh-nightwatch](https://github.com/Zci514/dsh-nightwatch) — 把这个会话一直续跑到指定钟点：输入框里一颗按钮选 22:30、+90m 或明天 07:00，之后每轮答完插件补一句继续，让你去睡觉时它接着干；到点之后不再发任何消息。另有三道提前收手的闸——轮次上限 400、连续 3 轮出错、连续 4 轮一个工具都没调；随时可以手动停。快到点时切成收尾语气，窗口最多为剩余时间的一半，免得短守夜整段都在收尾。守夜记录以原子写落到 $DSH_HOME/nightwatch.json，重启后自动认领。默认不注册任何 slash 指令（enableCommand 可开）；补的那句话 source.kind 是 cordis-host-runner 而不是 user。
 - [zdjmrq/dsh-compact-control](https://github.com/zdjmrq/dsh-compact-control) — 调整 DSH 原生自动上下文压缩的触发阈值：在插件管理器的插件页面用滑块设置上下文占满模型窗口多少百分比时压缩（1%–100%，默认 80%，方向键可 1% 微调）；阈值调低时保留的最近历史预算会随之缩小，以免提前压缩被抵消，压缩本身仍由原生引擎执行。
+- [ze579/dsh-session-delete](https://github.com/ze579/dsh-session-delete) — 会话右键菜单里的「删除会话」：两次确认后删除。会删掉会话目录、工作区账本（归档与置顶集合）和投影缓存，仍在运行的会话拒绝删除。适用 DSH >=0.2.2-rc.3 <0.3.0。
 - [zenghang25/dsh-session-delete](https://github.com/zenghang25/dsh-session-delete) — 在 DSH 侧栏会话菜单中加入一键「删除会话」：把会话日志与该对话的 .dsh-sessions 产出目录移入 Windows 回收站，没有确认弹窗。
 - [zengxiaolou/dsh-session-rail](https://github.com/zengxiaolou/dsh-session-rail) — DSH 右侧栏的进度页：会话每一轮的状态与长任务上报的进度集中在一个 tab 里，和对话并排看。
 - [ZeroKingHao/dsh-cleaner#plugin](https://github.com/ZeroKingHao/dsh-cleaner/tree/main/plugin) — 为 DeepSeek Harness 补上会话删除：侧边栏菜单项、按工作区分组的批量清理面板、默认 dry-run 的 session_delete 工具。删除会话日志、投影缓存、工作区注册表引用与派生搜索索引，并级联删除全部子代理会话。
@@ -7927,6 +7928,7 @@ dsh plugin --profile web add dshmarket
 - [jerryqx/dsh-ximalaya](https://github.com/jerryqx/dsh-ximalaya) — 在 DSH Web 界面收听喜马拉雅播客/有声书：搜索专辑、分页浏览曲目，播放条支持上下集/进度/音量/倍速；扫码登录后「我的」页可看收藏的声音（点击即播）、我的订阅（带最新一集提示）与关注的主播（含其公开专辑）；Host 端音频流代理支持 Range 拖动，并注册 `ximalaya_play` 模型工具让 agent 按需搜索播放。
 - [Jesse-njx/dsh-voice](https://github.com/Jesse-njx/dsh-voice) — 语音输入、语音输出：把口述音频转写为用户消息（transcribe），让 agent 朗读回复（speak），本地优先，音频存于 ~/.dsh/voice。
 - [joeseesun/qiaomu-audio-dsh](https://github.com/joeseesun/qiaomu-audio-dsh) — 在 Harness 中朗读 Markdown、听写和转写音频，并导出配音媒体。
+- [jqlong17/dsh-meeting-memo](https://github.com/jqlong17/dsh-meeting-memo) — 右侧栏会议纪要插件：本机录音、本地转写、声纹区分发言人，自动整理成背景、结论与待办，音频不出这台机器。
 - [Jstn-1g/dsh-live-voice](https://github.com/Jstn-1g/dsh-live-voice) — DSH Web 的会话绑定单轮语音预览：提供无需凭证的本地合成演示和可选的 Qwen Audio，保持精确会话隔离，并仅在明确操作后将转写写入草稿，不会自动提交。
 - [junarch/voice_for_dsh#voice-for-dsh](https://github.com/junarch/voice_for_dsh/tree/main/packages/voice-for-dsh) — 用自然语言播报每轮回答，自动总结结构化内容（如表格和代码块），播报长度可调，支持接近原文长度的详细播报与极简播报。朗读引擎可选系统朗读、DeepSeek 官方 TTS、豆包（支持方言与情绪演绎）或本地 Kokoro（本机离线合成）。另提供三种会话提示音：工作音（处理期间循环播放）、完成音（本轮结束）、提问音（等待回答）；内置音色可切换，也支持上传自定义音频，素材仅保存在本机。
 - [jypjypjypjyp/dsh-music-studio](https://github.com/jypjypjypjyp/dsh-music-studio) — 在对话里作曲：模型按内置作曲规范写出乐谱 JSON，play_score 工具校验后渲染成对话内的卡片，含卷帘图、Web Audio 实时播放与 WAV/JSON 导出。
