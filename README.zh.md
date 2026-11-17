@@ -1354,7 +1354,7 @@ dsh plugin --profile web add dshmarket
 - [LUgABeEEE/dsh-global-todo](https://github.com/LUgABeEEE/dsh-global-todo) — 侧边栏里的全局跨会话待办清单，人和 agent 共用同一份：十个 global_todo_* 工具可在任意会话中新增、批量抓取、修改、挂文档与链接、追加进展记录、标记完成；每条待办可按四种方式交给 agent 会话，派发结果记回条目本身。清单存成一个 JSON 文件。
 - [LUgABeEEE/dsh-sidebar-density](https://github.com/LUgABeEEE/dsh-sidebar-density) — 轻量级侧栏 UI：五个折叠开关、三档密度预设与三档宽度预设，入口收在底部一行与设置分区；无依赖、无后台服务。
 - [lukeinx/dsh-workboard](https://github.com/lukeinx/dsh-workboard) — 新增工作台页面，可自由排布 内置 widget，包括会话与后台任务、待办、ICS 日历、天气、热榜、RSS 订阅、行情和系统监控；也可让 Agent 按一句话描述生成沙箱隔离的自定义 widget。
-- [lukema95/dsh-news](https://github.com/lukema95/dsh-news) — 在 DSH 右侧栏和整页提供 ShellPulse AI 新闻流，包含新闻、热点、精选、教程与论文视图、中文摘要、AI 解读和 arXiv 论文阅读。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [lukema95/dsh-news](https://github.com/lukema95/dsh-news) — 在 DSH 右侧栏和整页提供 ShellPulse AI 新闻流，包含新闻、热点、精选、教程与论文视图、中文摘要、AI 解读和 arXiv 论文阅读。
 - [LUMIAO9527/DSH-Focus](https://github.com/LUMIAO9527/DSH-Focus) — 把主页侧栏入口按工作区上方和下方重新分组，可逐个开关已安装插件的入口，改动即时保存。
 - [LUMIAO9527/DSH-suggestions](https://github.com/LUMIAO9527/DSH-suggestions) — 根据会话生成下一条消息建议并优化草稿，支持候选翻页、快捷键录制和配套 MCP 工具。
 - [lumine-423/dsh-session-popout](https://github.com/lumine-423/dsh-session-popout) — 把 DSH 侧边栏里的会话拖出来，即在独立的原生系统窗口中打开；窗口内是完整的标准会话界面（Markdown、工具栏、设置都在），只裁掉侧边栏，因此可以同时盯住多个会话，不必来回切换。Windows 已验证，macOS/Linux 未实测；需在 DSH 桌面端（Electron）中使用。
@@ -4027,7 +4027,7 @@ dsh plugin --profile web add dshmarket
 - [Venshell/dsh-zcode-startplan](https://github.com/Venshell/dsh-zcode-startplan) — 把 ZCode 赠送的免费 plan 接进模型选择器：多账号池轮换、按账号的限流与额度展示、bigmodel/zai 双渠道设备登录。
 - [verneuil/dsh-ocg-session-head](https://github.com/verneuil/dsh-ocg-session-head) — 为以自定义供应商名接入的 OpenCode Go 路由，按会话注入 x-opencode-session 请求头：走宿主官方 llm-pi-ai/request-headers 瀑布；零依赖、不替换 fetch，且不覆盖他人已写入的同名头。
 - [verson00/dsh-local-llm](https://github.com/verson00/dsh-local-llm) — 在设置页管理本机 llama.cpp 的 Qwen3.5-4B（仅 Windows + NVIDIA GPU，8 GB 显存可跑 4B Q4）：启停与重启、启动参数、部署路径与存在性检测、把模型路由与压缩策略同步进 profile patch、本机请求捕获代理，以及一个按文件路径把翻译/OCR/抽帧杂活交给本地模型的 local_worker 工具。需自备 llama-server.exe（在 b12069 验证）与 Qwen3.5-4B 的 GGUF 量化 + mmproj 文件，视频抽帧另需 ffmpeg。
-- [Vhow123/dsh-model-probe](https://github.com/Vhow123/dsh-model-probe) — 检测 DSH 已配置模型的连接、行为指纹，并用本地 18 题加权基准给出 0–100 智力值、档位与逐题证据；另支持动态或自定义 SVG 生成、SVG 快速模式限制、并发控制及耗时与 Token 统计。
+- [Vhow123/dsh-model-probe](https://github.com/Vhow123/dsh-model-probe) — 不依赖端点自报 token 数的模型指纹：55 条分词器参考向量、4 项温度 0 身份探针、拒绝文案与停止词表探针，以及本地 18 题加权基准给出的 0–100 智力值、档位与逐题证据；另支持动态或自定义 SVG 与 HTML 绘图、SVG 快速模式限制、并发控制及耗时与 Token 统计。
 - [VICqiufeeng/dsh-minimax-connect](https://github.com/VICqiufeeng/dsh-minimax-connect) — 把本机已登录的 MiniMax Code（Mavis）订阅接入 DSH 作为模型 provider，自己完成 OAuth 续期所以桌面客户端可以一直关着，并提供积分、签到与订阅额度面板。
 - [Vikrant-Aleph/dsh-opencode-bridge](https://github.com/Vikrant-Aleph/dsh-opencode-bridge) — 在 DSH 中使用 OpenCode 免费模型，支持模型列表动态刷新与可选的代理出口轮换，并提供默认拒绝不安全转换的工具桥与离线、按 Agent 作用域的兼容性审计。
 - [vitas/dsh-model-pricing](https://github.com/vitas/dsh-model-pricing) — DSH 设置页中的模型价格表：约 7,250 个模型 / 213 个提供商（叠加本地路由目录），诚实的最低标价比较、按实际路由计价的会话成本、缓存泄漏归因，以及经验证的促销信息源。
@@ -9696,6 +9696,7 @@ dsh plugin --profile web add dshmarket
 - [mario841859784/dsh-onebot](https://github.com/mario841859784/dsh-onebot) — 给 dsh 加上 QQ 通道（OneBot 11，兼容 NapCat）：反向/正向 WS、私聊群聊、图片与语音转写、t2i 文字图卡片、合并转发、设置页可视化配置。
 - [MaybeMeibeMaybi/dsh-harmonyos-hiboard](https://github.com/MaybeMeibeMaybi/dsh-harmonyos-hiboard) — 把DSH的任务结果，以服务卡片形式推送到华为鸿蒙负一屏。安装后请在插件设置页输入授权码，位置：主页面左上角「插件」→ 「dsh-harmonyos-hiboard」。
 - [Meltllsy/dsh-session-attention](https://github.com/Meltllsy/dsh-session-attention) — 跑完 / 提问 / 需要审批时弹桌面通知与提示音（三类可分别开关），另附活动悬浮球，点会话行直接跳回该会话。
+- [meowdan/dsh-mastodon-toot](https://github.com/meowdan/dsh-mastodon-toot) — 部署在 Mastodon 的大肥鱼 bot：自己发 toot、自己回嘟文，带一个小本本，记下聊过的人和话。DeepSeek Harness 插件，按主人 / 好友 / 其他人分组回复（不掷骰子），按日期种子随机发帖。
 - [MerkurevSergei/dsh-notion-oauth-ui](https://github.com/MerkurevSergei/dsh-notion-oauth-ui) — 在图形界面中以 OAuth 2.0 + PKCE 连接 Notion —— 官方 Notion MCP，无需集成令牌。
 - [Mi-liu/dsh-desktop-notifier](https://github.com/Mi-liu/dsh-desktop-notifier) — 仅支持 Windows 的 DeepSeek Harness 宿主插件：在屏幕右下角弹出 Windows 11 外观的桌面卡片——回合完成时弹通知卡（点卡片任意位置即把 Harness 窗口前置并切回该对话）、出错时弹红色强调的出错卡、把 ask_user_question 变成原生选择卡（点选项即作答，也可以手动输入自定义回答）、并把工具授权请求做成「允许一次 / 拒绝」审批卡。卡片配色跟随当前 Harness 外观，出现在主窗口所在的屏幕；提示音（含自定义 .wav）与通知时机、审批接管方式、各类超时都能在 Harness 设置页里配置。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [michaelcode-wang/dsh-wecom](https://github.com/michaelcode-wang/dsh-wecom) — 企业微信智能机器人桥接：aibot WebSocket 双向对话（bot_id + secret），无需公网回调。
