@@ -1,0 +1,7 @@
+url: https://github.com/omdsh-dev/dsh-web-skin
+name: omdsh-dev/dsh-web-skin
+category: theme
+description:
+  en: Switch among six light and dark DSH Web themes with persistent selection and a first-frame bootstrap that prevents flashes.
+  zh: 在六套 DSH Web 明暗主题间即时切换，持久化选择并通过首帧引导避免启动闪色。
+tarball: https://github.com/omdsh-dev/dsh-web-skin/releases/latest/download/pkg.tgz
