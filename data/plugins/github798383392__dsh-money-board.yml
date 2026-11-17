@@ -1,0 +1,7 @@
+url: https://github.com/github798383392/dsh-money-board
+name: github798383392/dsh-money-board
+category: usage
+description: >-
+  Session cost board for DeepSeek Harness — prices save-token token counters with
+  the official DeepSeek price table and shows session spend, compression savings
+  and the peak/off-peak delta above the composer.
