@@ -1242,6 +1242,7 @@ dsh plugin --profile web add dshmarket
 - [lihengxi20/dsh-session-tabs](https://github.com/lihengxi20/dsh-session-tabs) — 在 DSH 会话头部下方增加会话标签栏：打开过的会话按顺序显示为标签（工作区/标题与状态圆点），点击切换，可用悬停 × 或右键菜单关闭、重命名、关闭其他/全部关闭；标签列表持久化在 localStorage。纯插件实现，不改 DSH 核心，也不停止后台任务。
 - [LihiHe/dsh-thinking-slider](https://github.com/LihiHe/dsh-thinking-slider) — 把输入框右侧的「推理等级」从菜单点选换成可拖拽滑条，并接管官方那枚「模型 · 推理等级」chip。拖动中连续跟手，松手吸附到最近档位，且一次拖拽只提交一次会话更新。轨道内自绘填充、刻度点与白圆钮，只有最高档（xhigh/max/ultra）才铺品牌色流动渐变，两端标出最低与最高档名；同一张卡片可展开官方模型清单。方向键移动一档、PageUp/PageDown 移动两档、Home/End 跳到两端，每次移动都会提交。目录对象上的世代计数器丢弃迟到的响应，prefers-reduced-motion 下关闭动画。数据全部取自官方 modelDirectories，不新增任何能力。
 - [lihongxu0221/dsh-workspace-browser](https://github.com/lihongxu0221/dsh-workspace-browser) — 替换出厂侧边栏工作区浏览器，补上最近会话、可添加额外源文件夹的项目编辑器，以及置顶、重命名、派生和归档行操作。
+- [lihongxu0221/dsh-workspace-ui](https://github.com/lihongxu0221/dsh-workspace-ui) — 工作区与会话 UI 增强：最近会话、项目源文件夹、分区、输入预测与历史、主题、设置工作台和移动端布局。
 - [lijianbin2/dsh-subtitle-remover](https://github.com/lijianbin2/dsh-subtitle-remover) — 在 DSH 侧边栏里调用本机 video-subtitle-remover 引擎擦除视频硬字幕：画面帧按开始/结束时段预览、拖拽框选最多六个区域、自动识别字幕带并由 DSH 模型复核、处理中实时前后对比，成片可一键打开或定位到文件夹。需预先准备 video-subtitle-remover 仓库（含模型）与装有 torch、paddle、OpenCV 的 Python 环境。
 - [lijinhao315/dsh-question-index](https://github.com/lijinhao315/dsh-question-index) — 提问索引：在会话右侧按序展示你提过的问题列表，可收起；点击某条即可把会话滚动跳转到对应位置。打开会话自动索引全部历史提问并本地持久保存；点击更早的提问会按需翻页加载后跳转。
 - [likaileave/dsh-direct-open](https://github.com/likaileave/dsh-direct-open) — 左键以系统默认程序打开交付文件、改动文件行和对话中的文件提及；右键接管方式可选：全部接管、只接管原生没有菜单的、或完全不接管。仅桌面端可用：Web 端没有系统打开能力，点击仍交给 DSH 原生行为。
