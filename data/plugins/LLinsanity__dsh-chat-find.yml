@@ -1,0 +1,7 @@
+url: https://github.com/LLinsanity/dsh-chat-find
+name: LLinsanity/dsh-chat-find
+category: ui
+description:
+  en: 'Ctrl+F find bar for the current conversation: matches only your messages and the assistant replies, highlights them with the CSS Highlight API (no DOM rewrites), jumps between matches, and loads earlier history on demand.'
+  zh: '当前对话内的 Ctrl+F 查找条：只匹配你的消息与助手回复，用 CSS Highlight API 高亮（不改写 DOM）、逐条跳转，命中较早内容时可按需加载更早的历史。'
+icon: https://raw.githubusercontent.com/LLinsanity/dsh-chat-find/main/assets/icon-180.png

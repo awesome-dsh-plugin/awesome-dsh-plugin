@@ -1,0 +1,6 @@
+url: https://github.com/yuyu654/dsh-drop-by
+name: yuyu654/dsh-drop-by
+category: notify
+description:
+  en: 'Decides on a timer whether a moment is worth one line, has the host model write it, and sends it to QQ or Douyin: quiet/busy windows with holiday awareness, situation judging, cooldowns after cold replies, phrasing guards against jargon, formulas, lecturing and service-desk tone with reply hooks and split delivery, QQ/Douyin DM bridging with switching and in-chat task dispatch, plus off-peak exploration and optional schedule, desktop-activity and phone-health inputs. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '定时判断此刻是否值得先说一句、交给宿主模型写成一句人话，再发到 QQ 或抖音私信：静默/忙碌时段与节假日避让、处境判断、被冷落后的冷却、措辞护栏（拦截黑话、公式、说教、客服腔并保留接话口子）与分段连发、QQ/抖音私信主通道切换与聊天内派活，以及谷时自主探索和可选课表、桌面活动、手机健康数据。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

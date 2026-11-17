@@ -1,0 +1,6 @@
+url: https://github.com/trmquang93/dsh-claude-code-account
+name: trmquang93/dsh-claude-code-account
+category: model
+description:
+  en: 'Uses a Claude Code (Claude Pro/Max) sign-in as a DSH anthropic model provider, keeping the pi-ai credential record and the Claude Code keychain on the same rotating OAuth chain.'
+  zh: '用 Claude Code（Claude Pro/Max）登录作为 DSH 的 anthropic 模型提供方，让 DSH 的 pi-ai 凭据记录与 Claude Code 钥匙串共用同一条轮换中的 OAuth 凭据链。'

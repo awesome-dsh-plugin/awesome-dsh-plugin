@@ -1,0 +1,6 @@
+url: https://github.com/YEHO-gg/dsh-mail-notify
+name: YEHO-gg/dsh-mail-notify
+category: notify
+description:
+  en: Lets the agent email you when a long task finishes or a scheduled check finds something, via a zero-dependency SMTP client.
+  zh: 让 AI 在你不在电脑前时发邮件叫你——长任务完成、定时巡检发现问题都行；零依赖手写 SMTP。

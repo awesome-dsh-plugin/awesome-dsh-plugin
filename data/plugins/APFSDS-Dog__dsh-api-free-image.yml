@@ -1,0 +1,6 @@
+url: https://github.com/APFSDS-Dog/dsh-api-free-image
+name: APFSDS-Dog/dsh-api-free-image
+category: tools
+description:
+  en: 'A DSH plugin that provides API-free image generation capabilities. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 免费 API 图像生成插件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
