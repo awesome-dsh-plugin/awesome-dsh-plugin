@@ -4,3 +4,4 @@ category: skill
 description:
   en: 'Manage agent skills from a Settings page and the composer: switch each skill between on, user-only, and off by writing its SKILL.md frontmatter, list every skill the host can see, and let the agent call a skill_manager tool.'
   zh: 在设置页和输入框里管理 agent 技能：按 SKILL.md frontmatter 切换「全开 / 仅用户 / 已关闭」，列出宿主可见的技能清单，并让 agent 调用 skill_manager 工具。
+icon: https://raw.githubusercontent.com/yyliucha/dsh-skill-manager/main/assets/icon-180.png
