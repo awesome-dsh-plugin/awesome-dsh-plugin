@@ -1,0 +1,7 @@
+url: https://github.com/ingk888766-cloud/dsh-anti-interrupt
+name: ingk888766-cloud/dsh-anti-interrupt
+category: session
+description:
+  en: Picks up a DSH turn that a crash or restart interrupted and wakes the session itself instead of waiting for you to type continue; on Windows one toggle also turns off the screensaver and display/sleep timeouts and restores the original values when switched back.
+  zh: 崩溃或重启打断的 DSH 回合，插件自己把会话叫醒接着跑，不用你再打一句「继续」；Windows 下同一处开关还能关掉屏保与关屏/睡眠超时，关掉时按原值还原。
+icon: https://raw.githubusercontent.com/ingk888766-cloud/dsh-anti-interrupt/main/assets/icon-180.png
