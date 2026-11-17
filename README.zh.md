@@ -1345,6 +1345,7 @@ dsh plugin --profile web add dshmarket
 - [lucagiftzek/dsh-workspace-rail](https://github.com/lucagiftzek/dsh-workspace-rail) — 用工作区栏替代 DSH 侧栏列表：置顶会话与文件夹；项目即带自有 AGENTS.md 和文件的文件夹；Recents 为按最后一次完成 turn 排序的虚拟列表；提供 project_search 工具、未读标记、带未读数的折叠图标栏，以及随会话实时更新的浏览器标签标题。
 - [lucas07814-hub/dsh-pet-guardian-dragon](https://github.com/lucas07814-hub/dsh-pet-guardian-dragon) — 面向 DSH Web 界面的可拖拽桌宠，支持互动动作与成长状态。
 - [lucky01222/dsh-workbench-shell](https://github.com/lucky01222/dsh-workbench-shell) — 为 DSH Web 提供 56px 紧凑应用导航栏、独立对话列表与侧栏展开/收起控制；并在对话模型菜单和 /model 中筛除向量、重排及生图/视频型号。
+- [LuckYur/completion-traffic-light](https://github.com/LuckYur/completion-traffic-light) — 输入框下方的红绿灯加桌面置顶小窗，显示 DSH 任务是运行中、等待你处理还是已完成。
 - [lucyVan/dsh-side-chat-slash](https://github.com/lucyVan/dsh-side-chat-slash) — DSH 网页版的侧聊面板与 /side 命令，基于 @flyer103/dsh-side-chat 0.7.0 的分支，新增宿主侧 /side 命令、开放请求桥接，并将审批固定为 never。不能与上游 @flyer103/dsh-side-chat 同装——两者注册相同的路由与侧聊标签页类型。
 - [LUgABeEEE/dsh-adapt-packs](https://github.com/LUgABeEEE/dsh-adapt-packs) — 第三方 DSH 插件面板的手机适配包：44px 触控地板、宽度回收、外壳命中区与浮动控件让位；由 dsh-mobile 插件从其 extensions 目录加载（须先装 dsh-mobile 才会生效），附设置页一键装/卸与插件兼容清单。
 - [LUgABeEEE/dsh-global-todo](https://github.com/LUgABeEEE/dsh-global-todo) — 侧边栏里的全局跨会话待办清单，人和 agent 共用同一份：十个 global_todo_* 工具可在任意会话中新增、批量抓取、修改、挂文档与链接、追加进展记录、标记完成；每条待办可按四种方式交给 agent 会话，派发结果记回条目本身。清单存成一个 JSON 文件。
@@ -10382,6 +10383,7 @@ dsh plugin --profile web add dshmarket
 - [Sumcam-L/dsh-ue-asset#plugin](https://github.com/Sumcam-L/dsh-ue-asset/tree/main/plugin) — 虚幻引擎（Unreal Engine 4/5，UE4/UE5）资产浏览器与导出器，仅 Windows x64：通过 CUE4Parse 浏览、预览并导出本地 PAK 归档中的烘焙资产，支持模型 3D 预览、动画播放与可搜索的资产索引。Oodle 压缩的归档需要 Epic 的 oo2core DLL，包内不含，可在设置页一键下载。
 - [sumingwang233/dsh-code-review-graph](https://github.com/sumingwang233/dsh-code-review-graph) — 基于 code-review-graph 引擎，为 DSH 提供代码图谱上下文、影响分析、审查工作流、交互式图谱和权限控制的重构。
 - [superchen061220/dsh-storage-insight](https://github.com/superchen061220/dsh-storage-insight) — 为 DeepSeek Harness 增加「存储空间」设置页：环形图展示本机 dsh 占用（程序本体、会话、附件、运行时、插件、临时目录），可按工作区/类型下钻、列出已归档会话并删除，清理只动可再生缓存。系统回收站与打开目录仅 Windows，扫描与统计跨平台可用；宿主路由只接受本机回环连接并有 CSRF 防护，不联网。
+- [SUZUNAMI/dsh-foreground-guard](https://github.com/SUZUNAMI/dsh-foreground-guard) — 拦截会让前台阻塞超出单回合预算的工具调用，改为弹一次手动授权，而不是默默等待。
 - [swaylq/dsh-genie](https://github.com/swaylq/dsh-genie) — 把 agent 现场造出来的插件留下来：将 `cordis_define` 的动态包固化成能跨重启存活的正式插件，写包并注册 profile 层的全过程不用 pnpm、不联网、不需要构建授权。
 - [swyaoguai/dsh-taptap-maker-dev](https://github.com/swyaoguai/dsh-taptap-maker-dev) — TapTap Maker 游戏开发工作台：内置 150+ 技能、自定义生图通道、ChatGPT 网页多账号轮换、CC0 音效库、网页 BGM，并强制"未经用户同意不花 Maker 额度"。
 - [tancheng33/dsh-spill-s3](https://github.com/tancheng33/dsh-spill-s3) — spill seam 的 S3 兼容后端：超长工具输出写入对象存储（S3、MinIO、R2），会话前缀经哈希、键不可猜测，而不是落在 agent 的本地磁盘上。
