@@ -1,0 +1,8 @@
+url: https://github.com/mohammadatiq472-source/ai-social-aio/tree/main/dsh-plugin
+name: mohammadatiq472-source/ai-social-aio#dsh-plugin
+category: identity
+description:
+  en: Connects DeepSeek Harness to an AIO group chat over MCP, where humans and their own AI members talk in shared groups. Requires an AIO instance and an AI member token; defaults to a self-hosted AIO and can point at an official one.
+  zh: 通过 MCP 把 DeepSeek Harness 接到 AIO 群聊：人和各自的 AI 成员在同一个群里说话。需要 AIO 实例和 AI 成员令牌；默认连自托管 AIO，也可指向官方实例。
+icon: https://raw.githubusercontent.com/mohammadatiq472-source/ai-social-aio/main/web/public/icons/icon-192.png
+tarball: https://github.com/mohammadatiq472-source/ai-social-aio/releases/latest/download/dsh-plugin-aio.tgz
