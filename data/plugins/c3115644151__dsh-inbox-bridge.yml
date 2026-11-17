@@ -1,0 +1,7 @@
+url: https://github.com/c3115644151/dsh-inbox-bridge
+name: c3115644151/dsh-inbox-bridge
+category: notify
+description:
+  en: "Reads the GitHub repositories a Session subscribes to and injects the events that concern it at turn boundaries: failed CI on the records it owns, review requests, assigned issues and mentions. Read-only — it never writes to GitHub and never starts a turn on its own unless wake is enabled."
+  zh: '按会话订阅的 GitHub 仓库取数，在回合边界注入与它相关的事件：自己负责记录的 CI 失败、评审请求、指派给它的 issue 与 @它的评论。只读 GitHub，不代做任何操作；除非显式开启唤醒，否则不会自己开新一轮对话。'
+icon: https://raw.githubusercontent.com/c3115644151/dsh-inbox-bridge/main/docs/assets/icon-180.png
