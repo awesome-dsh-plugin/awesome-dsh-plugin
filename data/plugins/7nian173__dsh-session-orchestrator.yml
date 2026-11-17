@@ -1,0 +1,6 @@
+url: https://github.com/7nian173/dsh-session-orchestrator
+name: 7nian173/dsh-session-orchestrator
+category: session
+description:
+  en: Create and hand off sessions, jump between them, and exchange stateful letters through a workspace mailbox.
+  zh: 建会话、交棒、在会话之间跳转，并用工作区信箱在会话之间来回通信。
