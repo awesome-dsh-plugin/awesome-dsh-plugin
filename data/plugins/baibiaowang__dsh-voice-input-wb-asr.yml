@@ -2,5 +2,5 @@ url: https://github.com/baibiaowang/dsh-voice-input-wb-asr
 name: baibiaowang/dsh-voice-input-wb-asr
 category: voice
 description:
-  en: 'Hold-to-talk microphone in the composer plus wb_transcribe, which turns long audio or video into one timestamped Markdown document (an 82-minute recording in 47 seconds in a measured run). Recognition runs through the WorkBuddy cloud with the accounts already signed in; WorkBuddy does not bill speech input. International and domestic builds are separate settings, international by default.'
-  zh: '输入框里的按住说话麦克风，外加 wb_transcribe：把长音频/视频转成一份带时间戳的 Markdown 文稿（实测 82 分钟录像 47 秒转完）。识别走 WorkBuddy 云端，直接用本机已登录的账号，WorkBuddy 对语音输入不计费。国际版与国内版分开设置，默认国际版。'
+  en: 'Hold-to-talk microphone in the composer. Text appears while you speak: the held audio is cut at pauses and each phrase is recognized as it lands, and releasing the button inserts one corrected transcript. Also ships wb_transcribe, which turns long audio or video into one timestamped Markdown document (an 82-minute recording in 47 seconds in a measured run). Recognition runs through the WorkBuddy cloud with the accounts already signed in; WorkBuddy does not bill speech input. International and domestic builds are separate settings, international by default.'
+  zh: '输入框里的按住说话麦克风。说话时逐句出字：按住期间的音频在停顿处切开，每句落下就立刻识别；松开后整段一次插入经过纠正的文稿。另带 wb_transcribe，把长音频/视频转成一份带时间戳的 Markdown 文稿（实测 82 分钟录像 47 秒转完）。识别走 WorkBuddy 云端，直接用本机已登录的账号，WorkBuddy 对语音输入不计费。国际版与国内版分开设置，默认国际版。'
