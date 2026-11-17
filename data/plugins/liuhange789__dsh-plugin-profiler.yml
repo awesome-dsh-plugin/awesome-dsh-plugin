@@ -1,5 +1,5 @@
 url: https://github.com/liuhange789/dsh-plugin-profiler
-name: DSH Plugin Tax (/diet)
+name: liuhange789/dsh-plugin-profiler
 category: usage
 description:
   en: "Plugin load audit for your installed set. `/diet` prints one card: context tokens per request, hot-path host time outside the tool body, listener fan-out per plugin, and which three plugins to look at first, plus per-tool context pricing. Reads the running event bus and tool registry only, never patches another plugin, writes no files and makes no network calls. The card states its boundary: rc.7 exposes no per-listener timing, so the cut list is fan-out, not per-plugin milliseconds."
