@@ -2896,6 +2896,7 @@ dsh plugin --profile web add dshmarket
 - [pan17/dsh-minimax-usage](https://github.com/pan17/dsh-minimax-usage) — 在 DSH Web UI 模型选择器旁显示 MiniMax Token Plan 用量，以紧凑的 5h/7d 进度条展示，支持点击刷新、空闲与心跳自动刷新及接口回退；复用「设置 → 模型」中的订阅 Key，且仅在 MiniMax Token Plan provider 下显示。
 - [Panther-w/dsh-opencode-go-usage-badge](https://github.com/Panther-w/dsh-opencode-go-usage-badge) — 侧栏底部的一行小徽标：显示 OpenCode Go 额度（5 小时 / 本周 / 本月窗口），切到 DeepSeek 官方模型时显示余额。只读，无遥测。OpenCode Go 额度需要在 DSH 中配置 OPENCODE_GO_API_KEY，或登录 OpenCode Console（会兜底读取其本地凭据文件）；DeepSeek 余额需要在 DSH 中配置 DEEPSEEK_API_KEY。
 - [ParticleLight/dsh-all-usage](https://github.com/ParticleLight/dsh-all-usage) — 统一分析多模型、多供应商、多工作区的用量与成本：任意起止日期、单日小时与跨日趋势、53 周热力图、缓存命中与模型/工作区占比，另有请求日志、CSV 导出与可跨会话恢复的持久账本。特点：多维用量分析，模型与工作区洞察，可配置成本与余额，完整历史与增量同步，可审计的日常操作。
+- [pcysanji/dsh-sidebar-density](https://github.com/pcysanji/dsh-sidebar-density) — 左侧栏密度调节：会话行高、插件按钮行高与间距、字号、Logo 尺寸、新会话按钮高度、插件双栏，拖动即时生效；另有顶栏高度/字号与左栏宽度上限三项，需配套 asar 补丁才生效。
 - [PerryLink/dsh-budget](https://github.com/PerryLink/dsh-budget) — 在 llm/stream 瀑布上做按插件粒度的用量预算与费用上限：按模型用量记账、会话与月度预算的预警/阻断、延迟窗口与碳足迹估算。
 - [Phant0Meow/dsh-meow-cachebilling](https://github.com/Phant0Meow/dsh-meow-cachebilling) — 点开输入框旁的上下文圆环即见本轮账单：缓存命中/未命中/输出各花多少钱（¥），官方峰谷价与模型分价自动判定；非 DeepSeek 官方路由不显示。
 - [phungthien269/dsh-token-stats](https://github.com/phungthien269/dsh-token-stats) — DSH Web GUI 的 Token 用量仪表盘 — 今日/本周/本月/累计汇总、按模型明细和堆叠柱状图，界面支持中/英/越/日。
@@ -5513,6 +5514,7 @@ dsh plugin --profile web add dshmarket
 - [renorai/dsh-renor](https://github.com/renorai/dsh-renor) — 通过 Streamable HTTP 把 DeepSeek Harness 连接到托管的 Renor 记忆 MCP 服务器，使用环境变量 RENOR_API_KEY 中的 Renor API Key，让模型能调用 Renor 的检索与保存工具。这是纯配置包，自身不含代码。
 - [reshuibuduo/tmcra-plugin-deepseek-harness](https://github.com/reshuibuduo/tmcra-plugin-deepseek-harness) — 面向 DeepSeek Harness 的跨应用项目记忆，支持角色分离写回、可视化知识工作台、确认后纠错、会话控制、本地 Writer 与整理模型设置，以及免账号 Windows 本地安装预览。
 - [dsh-memory](https://github.com/RestRegular/dsh-memory/tree/main/packages/dsh-memory) — 一体化本地记忆：按作用域（会话、项目、全局或自定义名）各一个 JSONL 文件、作用域内按内容去重，五个模型工具（memory_save / memory_search / memory_list / memory_get / memory_forget），自动召回与硬性规则注入 agent 的 pre-step，并带一个设置面板。检索是词法 IDF 与本地向量后端的组合，向量后端可由面板一键安装并托管。
+- [rj-yejianping/dsh-memtree](https://github.com/rj-yejianping/dsh-memtree) — DSH 长期记忆：以文件为记忆（MEMORY.md、每日笔记、digest 长期知识），Agent 在对话中自己记录笔记，夜间 Auto Dream 整理沉淀，BM25 + 向量混合检索并按 Wikilink 展开。
 - [rocco623/dsh-codex-memory](https://github.com/rocco623/dsh-codex-memory) — Codex V2 记忆流水线到 DeepSeek Harness 的移植：后台 agent 逐个抽取空闲会话，整合阶段在 git baseline diff 之后把它们合成一份 memory_summary.md，新会话注入这份摘要，被引用的记忆回流成使用计数。设置页可选模型、两个阶段的思考强度，以及空闲时长、保留天数、并发和超时等上限。
 - [RocoFish/deepseek-memory](https://github.com/RocoFish/deepseek-memory) — 带纵深加固的 dsh 长期记忆插件。两层存储（项目级 `.dsh-memory/` 与用户级 `$DSH_HOME/memory/`），每层就是一个可手改、可 diff 的纯 JSON 文件，条目与标签均有上限。写入原子（唯一临时文件 + rename，旧版本进入有上限的 history/ 备份），跨进程由带过期回收的 per-tier 锁串行化；磁盘 revision 校验拒绝丢失更新，绝不静默覆盖其他写入者。记忆文本以显式 untrusted-data 边界包装（伪造包装标签写入时剥除）以削弱记忆内容中的提示注入，加载时校验拒绝越界存储，tier 目录外的符号链接逃逸以 MEMORY_STORE_ESCAPE 拒绝。不做内容启发式过滤、不加确认步骤，无头自动巩固流程不受影响。安装：dsh plugin --profile web add github:RocoFish/deepseek-memory。
 - [Root-7-KHX/companion-memory](https://github.com/Root-7-KHX/companion-memory) — 《AI记忆》角色扮演伴侣记忆：每个对话独立的人格文档（每条设定可配 1~100 权重，默认允许 AI 小步润色角色性格与例句）、多人对话按说话人分开记录的好感度与羁绊、带 AI 打分的活跃记忆、每轮实时更新的九种情绪表、AI 自我演化的性格/喜好/习惯、最近 48 小时对话检索、伴侣式上下文压缩、空闲时后台预判下一轮话题的睡眠期预计算、按对话统计并注入的语气卡、把习惯小模型抽出的习惯写进「对话人习惯」的接入桥，以及按日期归档的本地知识库（支持按轮数或 tokens 自动打包）和统一「接入软件」页（收录精选插件并从 GitHub 下载发布包）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
@@ -8314,6 +8316,7 @@ dsh plugin --profile web add dshmarket
 - [ffseika0304/code-ownership-audit](https://github.com/ffseika0304/code-ownership-audit) — 判定 Python 代码是原创还是演绎作品：给出与上游最长相同表达片段、逐条豁免依据和风险清单。纯标准库 `ast` 分析——离线运行，不调用模型。
 - [Finderchangchang/brewreel#deepseek-harness](https://github.com/Finderchangchang/brewreel/tree/main/integrations/deepseek-harness) — 从分镜 JSON 生成 1080×1920 竖版宣传片，含 7 个工具（doctor、setup、catalog、guide、validate、render、verify），用 Remotion 本地渲染。
 - [fishzjp/qa-skills](https://github.com/fishzjp/qa-skills) — 软件测试全流程技能包：10 个技能覆盖需求分析、测试策略、用例编写与审查、E2E（Playwright）与 API 自动化、探索式测试、回归范围与 Bug 分析，共享知识库提供格式规范、风险模型与 Schema 校验脚本。
+- [flying-ovaltine/residency-history-taking-internal-medicine](https://github.com/flying-ovaltine/residency-history-taking-internal-medicine) — 住培结业考病史采集（内科）陪练：先当 SP 病人等你问诊，说「结束考试」就切考官，按官方 100 分表逐项打分并给可照抄的替换问句；内置 32 例内科病例脚本、4 份规则手册与自动落盘的训练记录。
 - [flyneth/dotnet-skills](https://github.com/flyneth/dotnet-skills) — 微软官方 .NET/C# AI 编码智能体技能的 fork，额外打包为 DeepSeek Harness 插件——覆盖开发、测试、诊断、迁移与 AI 集成。
 - [fnnas-labs/fnos-cli-skill](https://github.com/fnnas-labs/fnos-cli-skill) — 注册 fnOS CLI Skill 并提供匹配版本的 CLI，用于管理 fnOS 设备；首次登录由用户在浏览器授权后，将一次性 code 回传 Agent，无需交互式终端。
 - [frzzaxszz/dsh-skill-catalog#plugin](https://github.com/frzzaxszz/dsh-skill-catalog/tree/main/plugin) — DSH Web GUI 的技能面板：列出全部已安装技能并附中文备注，提供八类分类筛选、拼音与模糊搜索、置顶与最近使用排序，可原地管理每个技能（置顶、关闭、定位、卸载并可撤回）。随包自带一个维护技能。
@@ -8480,6 +8483,7 @@ dsh plugin --profile web add dshmarket
 - [redkiller79/deepseek-harness-fullstack](https://github.com/redkiller79/deepseek-harness-fullstack) — 把内置的全栈开发、前端设计与浏览器自动化三份技能文档注册为四个只读工具，用 focus 参数指定随技能正文一并返回的参考文档。
 - [RempleXI/word-docx-writer](https://github.com/RempleXI/word-docx-writer) — 用简单标记稿生成并排版中文 Word（.docx）文档，使用内置标题样式、宋体与 Times New Roman 字体，图表题注按章自动编号。
 - [RestRegular/dsh-skill-center](https://github.com/RestRegular/dsh-skill-center) — 当前会话的技能中心面板：列出可见技能及其提供方与来源根目录，阅读 SKILL.md，开关模型/用户调用，并可创建、软删除技能；随包附带 skill-authoring 技能与 skill_create 工具。
+- [rj-yejianping/dsh-skill-pool](https://github.com/rj-yejianping/dsh-skill-pool) — DSH 技能池：从文件 / ZIP / GitHub / GitLab 导入技能，按仓库自动归类，在设置面板里为每个技能设置 Agent 模式与工作区范围，支持按分组整体开关。
 - [royrao2007/mont-forge](https://github.com/royrao2007/mont-forge) — 注册 25 个软件工程工作流技能，覆盖规格、规划、构建、测试、评审与发布。镜像自 addyosmani/agent-skills（MIT）。
 - [rpegorov/harness-review#dsh-harness-review](https://github.com/rpegorov/harness-review/tree/main/plugins/dsh-harness-review) — 技能：回看最近两周的编程助手会话记录（仅 Claude Code 与 Codex，不支持 DSH 自身会话），报告哪些技能、钩子和规则有效、需要关注或从未使用。需要 Python 3。
 - [RrcoVer0/dsh-webnovel-writer](https://github.com/RrcoVer0/dsh-webnovel-writer) — 为现有 Agent 添加基于文件记忆的中文网文策划、逐章写作、一致性审校、回滚与文风画像技能。
@@ -11092,6 +11096,7 @@ dsh plugin --profile web add dshmarket
 - [reshdh/dsh-remote-hub](https://github.com/reshdh/dsh-remote-hub) — KyoMio/dsh-zen-remote 的社区分支（请勿与上游同时启用——复用 ~/.dsh/zen-remote 状态文件与 /_dsh/zen-remote/* 协议，检测到上游已激活时自动避让）：保留配对码手机 PWA（含 Web Push）与多服务端会话中继，新增桌面端「本机 / 远程主机 / 全部」工作区分栏切换器、远程目录树浏览与新建文件夹及工作区重命名/删除（/v1/workspace-manage）、自定义模型渠道与 API 密钥向配对主机的自动同步，以及跨机双向 @ 会话引用正文桥接（session-ref-bridge）。网关默认监听 127.0.0.1；局域网 / Tailscale 模式监听 0.0.0.0 并有私网源 IP 闸，已配对的桌面客户端以主机系统用户的权限运行终端与文件预览。
 - [RestRegular/dsh-pocket](https://github.com/RestRegular/dsh-pocket) — 为 DSH 单独做的窄屏移动端 Web 服务，不是把桌面 GUI 缩放塞进手机：自带会话列表与聊天流，随机访问令牌保护，可走局域网、cloudflared / localtunnel / localhost.run 隧道或自有服务器 SSH 反向转发。手机上流式看助手文本、思考、工具调用与结果，能发提示词、停止当前回合、回答阻塞提问与工具审批（含其它会话里等待的），切换模型 / 思考等级 / 权限预置，发送最多 4 张手机上压缩过的照片，并可一键让电脑常亮。
 - [rice-awa/dsh-lan-gateway](https://github.com/rice-awa/dsh-lan-gateway) — 把 DSH Web GUI 发布到局域网/公网，dsh 仍只绑定回环。除显式开启局域网免密外，所有来源均须登录换取 HMAC 会话 Cookie。提供自签名或自定义 TLS、用于明文 HTTP 代理的 secureCookies 覆盖项，以及让局域网纯 HTTP 来源正常打开工作区的 UUID shim。
+- [rj-yejianping/dsh-aiterm](https://github.com/rj-yejianping/dsh-aiterm) — DSH 右侧栏的 SSH / Telnet 终端，人和 AI 共用同一个真实终端：按会话设置 AI 权限（只读 / 只写 / 读写），单一控制权，省 token 的增量读，可检索历史，批量脚本与审计记录。
 - [RyensX/dsh-remote-gateway](https://github.com/RyensX/dsh-remote-gateway) — 提供安全的反向代理，使DeepSeek Harness可以远程访问，随时随地和AI对话。
 - [SAXEM1997/dsh-cherry-bridge](https://github.com/SAXEM1997/dsh-cherry-bridge) — 把 DeepSeek Harness 会话桥接到局域网内的 Cherry Studio 桌面端——二维码配对、15 个 cherry_* 工具（agent/会话/历史/交互，含把本地文件作为附件上传、把桌面端已上传的图片读成 image block）、设置页（设备管理、按工作区的工具启用范围），以及实验性子智能体（仿 DSH 官方 subagent / Claude Code · Codex 的委派方式，执行端换成 Cherry Studio 的 agent）。
 - [saya-ch/dsh-mobile](https://github.com/saya-ch/dsh-mobile) — 通过 Android App 或手机浏览器访问 DeepSeek Harness，支持安全局域网连接、远程访问、持久设备配对和可自定义移动界面。
