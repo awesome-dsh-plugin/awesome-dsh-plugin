@@ -1,0 +1,6 @@
+url: https://github.com/yh01010/dsh-mcp-tia
+name: yh01010/dsh-mcp-tia
+category: tools
+description:
+  en: 'Bridges a local TIA Portal Openness MCP server into DSH: project tree and block listings, cross references, block logic read back as text, and SCL/LAD document import and compile through mcp__tia__* tools. Requires Windows with TIA Portal and the Openness user group, a third-party Openness MCP server such as bulaofen0036-coder/TIA_Portal_Openness_MCP, and a path edit after install — the plugin on its own registers no tools.'
+  zh: '把本机的博途（TIA Portal）Openness MCP server 桥接进 DSH，提供 mcp__tia__* 工具：读取项目树与块、查交叉引用、把块逻辑读成文本，以及导入并编译 SCL/LAD 文档。需要 Windows 上的博途与 Openness 用户组、一个第三方 Openness MCP server（例如 bulaofen0036-coder/TIA_Portal_Openness_MCP），且安装后需填一次路径——只装插件不会出现工具。'
