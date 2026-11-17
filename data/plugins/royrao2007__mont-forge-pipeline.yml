@@ -1,0 +1,7 @@
+url: https://github.com/royrao2007/mont-forge-pipeline
+name: royrao2007/mont-forge-pipeline
+category: workflow
+description:
+  en: 'Registers 45 production-grade software engineering workflow skills covering spec, planning, build, verify, review and ship, plus 11 callable lifecycle tools for AI coding agents. The verify stage collects real git evidence and the review stage runs a three-channel gate before any code is written.'
+  zh: '注册 45 个工程级软件工程工作流技能，覆盖规格、规划、构建、验证、评审与发布，并提供 11 个可直接调用的生命周期工具。verify 阶段采集真实 git 证据，review 阶段在改码前先过三通道闸门评审。'
+icon: https://raw.githubusercontent.com/royrao2007/mont-forge-pipeline/main/assets/icon-180.png

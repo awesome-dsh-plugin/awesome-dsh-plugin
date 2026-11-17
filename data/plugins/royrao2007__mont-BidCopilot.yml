@@ -1,0 +1,7 @@
+url: https://github.com/royrao2007/mont-BidCopilot
+name: royrao2007/mont-BidCopilot
+category: tools
+description:
+  en: 'Dual-mode tender and bid drafting engine for DeepSeek Harness: 32 callable mont_* tools, code-enforced compliance rules (T-B1 to T-B5) that refuse to emit exclusionary clauses, an offline Chinese policy library, rejection-item and response-completeness checks, multi-lot outlines, task progress tracking, and human approval gates with a tamper-evident audit chain. Pure-JS .docx export.'
+  zh: '招投标双向起草引擎：32 个可直接调用的 mont_* 工具；代码层强制合规规则（T-B1~T-B5），命中即拒绝产出排斥性条款；内置离线中文政策依据库；废标项与响应完整性检查；多标段目录；任务进度跟踪；三道人工门禁配合防篡改审计链；纯 JS 生成 .docx。'
+icon: https://raw.githubusercontent.com/royrao2007/mont-BidCopilot/master/assets/icon-180.png
