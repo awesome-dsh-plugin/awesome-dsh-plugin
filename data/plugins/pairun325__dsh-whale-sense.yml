@@ -2,5 +2,5 @@ url: https://github.com/pairun325/dsh-whale-sense
 name: pairun325/dsh-whale-sense
 category: vision
 description:
-  en: 'Visual awareness for DSH: a background watcher that samples the screen and wakes the agent with a screenshot when something changes.'
-  zh: '给 DSH 装一双眼睛：后台按间隔采样屏幕，画面一变就带着截图叫醒 agent。'
+  en: 'Let the whale notice your screen: periodic captures with change detection, so it can wake up and comment instead of waiting to be asked.'
+  zh: '让鲸鱼娘自己看屏幕：定时截图并做变化检测，画面一变就叫醒她，而不是等你问。'
