@@ -1,6 +1,7 @@
 url: https://github.com/p33333333333333l/dsh-specialist-team
 name: p33333333333333l/dsh-specialist-team
 category: workflow
+tarball: https://github.com/p33333333333333l/dsh-specialist-team/releases/download/v0.2.1/dsh-specialist-team-0.2.1.tgz
 description:
-  en: 'Specialist assignments for DSH Agent Teams, with role-based tool access, file scopes, exact verifier commands, and per-specialist model preferences. Requires DSH 0.2.1-rc.3, Node.js 22+, and the upstream Agent Team profile. Replaces the Team service and tools while retaining its UI; disables ordinary subagent entry points. Keep the built-in agent-team and tool-agent-team disabled to avoid registration conflicts.'
-  zh: '为 DSH Agent Teams 增加专家派工、按角色限制工具访问、文件范围、验证员精确命令校验和各专家的模型偏好。需要 DSH 0.2.1-rc.3、Node.js 22+ 和上游 Agent Team profile。替换团队服务与工具，保留原有界面，并禁用普通子代理入口。请保持原版 agent-team 和 tool-agent-team 停用，避免同时启用造成注册冲突。'
+  en: Assign tasks to specialists with role-specific models, file scopes and tool permissions.
+  zh: 专家团队可按任务分派专家，并为各角色指定模型、文件范围和工具权限。
