@@ -1,0 +1,7 @@
+url: https://github.com/iamjager416/dsh-pixiv-autodownload
+name: iamjager416/dsh-pixiv-autodownload
+category: tools
+description:
+  en: 'Incremental Pixiv downloader for a fixed artist list: remembers the artist IDs and the files already downloaded, runs its own daily schedule inside DSH, and adds a settings section for artists, cookie, naming and manual sync.'
+  zh: '按指定画师做 Pixiv 增量下载：记住画师 ID 和已下载过的文件，自带每日定时，并在 DSH 设置里提供画师、cookie、命名和手动同步的界面。'
+tarball: https://github.com/iamjager416/dsh-pixiv-autodownload/releases/latest/download/dsh-pixiv-autodownload.tgz
