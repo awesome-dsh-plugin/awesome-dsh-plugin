@@ -1,0 +1,7 @@
+url: https://github.com/Jessicaisleep/dsh-source-inbox
+name: Jessicaisleep/dsh-source-inbox
+category: memory
+description:
+  en: 'Archives your own material from 28 platforms into one local knowledge base. Every row carries an official entry link where one exists (21 of 28) and step-by-step guidance for what to do after the login page (86 steps across all 28 rows). 8 rows take a pasted credential in a box that the plugin itself writes to $DSH_HOME/_secrets, showing only a masked preview afterwards. 7 rows (11 pages) are read directly by a controlled browser that the plugin launches with its own profile over CDP, so a logged-in page such as the Douyin creator centre can be archived without copy-paste; a page that is still a login wall is reported and never archived. Text is stored on disk, large media is kept as a pointer with a text shadow, archived records are indexed with a unified schema, and every record can be deleted again. Registers 13 agent tools.'
+  zh: '把你自己各平台账号的资料汇聚进本地知识库。28 条数据源中，有官方入口的 21 条带一键跳转按钮，28 条全部带「登录之后怎么做」的分步引导（共 86 步）。8 条源提供凭据粘贴框，保存由插件写进 $DSH_HOME/_secrets，之后只回显打码预览。7 条源共 11 个页面可由插件自己启动的受控浏览器读取——独立 profile、走 CDP，抖音创作者中心这类已登录页面不用再复制粘贴；读到的仍是登录墙会如实报告且不归档。文字资料落盘，大素材只存指针并生成文字影子，归档记录按统一 schema 索引，且每一条都能撤回删除。注册 13 个模型工具。'
+icon: https://raw.githubusercontent.com/Jessicaisleep/dsh-source-inbox/main/assets/icon-180.png
