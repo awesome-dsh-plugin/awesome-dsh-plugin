@@ -1,0 +1,6 @@
+url: https://github.com/zbh13782-lang/dsh-ask-reader
+name: zbh13782-lang/dsh-ask-reader
+category: ui
+description:
+  en: Pins an assistant reply into a right-sidebar tab rendered as Markdown, and sends a selected passage back to the composer as a quote for follow-up questions.
+  zh: 把某条助手回复钉进右侧栏标签页并以 Markdown 渲染显示，选中其中一段即可作为引用带回主聊天输入框继续提问。
