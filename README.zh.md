@@ -1001,7 +1001,7 @@ dsh plugin --profile web add dshmarket
 - [hytime/dsh-client-ui-shortcuts](https://github.com/hytime/dsh-client-ui-shortcuts) — 为 DSH Web 提供按 profile 管理的键盘快捷键：支持 Question 和 Approval 卡片、Standard/Vim/Custom 配置，并按能力提供 Session 与 Workspace 导航。
 - [hyzyn/dsh-plugin-kit#kit-settings](https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/kit-settings) — DSH Web GUI 中 kit 插件配置的宿主页：经官方 settings.section 扩展点在「设置」里注册一行与「通用设置」平级的「插件配置」页，并声明子 slot「settings.kit.item」，供 dsh-plugin-kit 各插件把自己的配置卡片渲染到该页。只装本包时该页显示「暂无可用配置项」，卡片随注册该 slot 的 kit 插件出现。
 - [hyzyn/dsh-plugin-kit#tty](https://github.com/hyzyn/dsh-plugin-kit/tree/main/packages/tty) — DSH Web GUI 的终端面板：侧边栏「终端」打开多标签页 xterm.js 全交互终端（node-pty 真实 PTY），支持 ssh2 原生 SSH 远程标签页（agent/key/password 三种认证），cwd 跟随当前会话，并提供 tty_list / tty_capture / tty_send 三个 agent 工具。
-- [hzlooolzh/ThinkBuilder#thinkbuilder](https://github.com/hzlooolzh/ThinkBuilder/tree/main/packages/editor-ui) — 画一张流程图，每个逻辑块填写该任务的输入、输出、处理与规范；导出为文件夹树，插件自带的工具让 AI 逐块读取并照图施工。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [hzlooolzh/ThinkBuilder#thinkbuilder](https://github.com/hzlooolzh/ThinkBuilder/tree/main/packages/editor-ui) — 画一张流程图，每个逻辑块填写该任务的输入、输出、处理与规范；导出为文件夹树，插件自带的工具让 AI 逐块读取并照图施工。
 - [hZsFN/dsh-sidebar-panel-visibility](https://github.com/hZsFN/dsh-sidebar-panel-visibility) — 在侧边栏「更多」菜单里给每个面板入口加一行显隐开关，右侧标出当前状态；选择存 localStorage，插件重载后自动回放。插件面板本身固定显示，不可隐藏。
 - [hzys7/dsh-prompt-expander](https://github.com/hzys7/dsh-prompt-expander) — 在模型选择器旁加一个 ✨ 按钮，把草稿改写成规模随草稿而变的执行规格（小请求只给两三条步骤，多部分请求才展开成清单），再按一次按钮恢复原文；问候与闲聊直接放行，不调用模型。
 - [I-WANNASLEEP/dsh-process-narration](https://github.com/I-WANNASLEEP/dsh-process-narration) — 往系统提示里加两段：一段让 agent 动手前先用一句人话说清这一步要做什么、把工具说明写成人话；一段提醒 dsh-diff-stat、dsh-shell-card-plus、dsh-auto-collapse 与 dsh-human-steps 抢同一个排号，装了必坏一个。
@@ -3981,6 +3981,7 @@ dsh plugin --profile web add dshmarket
 - [sunyifeisb-art/dsh-llm-chatgpt-web](https://github.com/sunyifeisb-art/dsh-llm-chatgpt-web) — 用本地 Chrome 驱动你自己已登录的 chatgpt.com 会话作答，消耗的是 ChatGPT 网页额度而非 Codex 额度；并用 JSON 工具调用协议让网页端模型可以调用 DSH 工具。
 - [superboy911/dsh-model-router](https://github.com/superboy911/dsh-model-router) — DSH 关键词路由与隔离生图插件：确定性关键词路由、白名单模型切换与隔离的 image_gen 生图通道。
 - [superfish058/dsh-llm-proxy](https://github.com/superfish058/dsh-llm-proxy) — 按模型给 LLM 请求分流代理：勾选的模型走代理（Clash 等），其余直连；传输错误、429、5xx 自动重试，设置页实时生效。
+- [sw503544488/dsh-opencode-go-session](https://github.com/sw503544488/dsh-opencode-go-session) — 通过 DSH 的请求头钩子，把每次发往 OpenCode 的 pi-ai 请求的 x-opencode-session 换成该会话自己的 id，让路由与提示缓存按会话生效。
 - [SYXliuliuliu/dsh-apply-model-all](https://github.com/SYXliuliuliu/dsh-apply-model-all) — 在输入框模型位旁边加一个控件，一键把当前会话的模型应用到其余所有会话。
 - [szluyu99/dsh-oneapi](https://github.com/szluyu99/dsh-oneapi) — pi-ai 提供方适配器里已有的 `oneapi` 路由的配置面板（需先在 llm-pi-ai 设置里声明该路由，api 选 openai-completions）：编辑显示名、Base URL、API Key 与默认模型，逐模型测试连通性并从网关同步模型列表，附带 6 个 Agent 工具与可选左侧边栏面板。最初为百度内部网关编写，Base URL 占位符与获取 Token 链接均指向内网，请改填你自己的 OneAPI 兼容网关。
 - [tafcear/kimi-tide#dsh-kimi-tide](https://github.com/tafcear/kimi-tide/tree/main/packages/dsh-kimi-tide) — 逐步模型路由器：以命名预设与带图/关键词组有序规则为每一步在全部已挂载模型间选路，附图像转述协作流、图像护栏、多 plan 配额面板与逐步决策可观测。
