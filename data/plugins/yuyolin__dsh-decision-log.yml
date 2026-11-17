@@ -1,0 +1,6 @@
+url: https://github.com/yuyolin/dsh-decision-log
+name: yuyolin/dsh-decision-log
+category: memory
+description:
+  en: "Decision log for DeepSeek Harness: record key decisions (chosen option + why) into a versionable DECISIONS.md via decision_log / decision_list / decision_audit tools, and auto-inject the summary into future sessions so decisions stay traceable and are never re-litigated."
+  zh: "DeepSeek Harness 决策日志：通过 decision_log / decision_list / decision_audit 工具把关键决策（选了什么 + 为什么）沉淀为可版本化的 DECISIONS.md，并在后续会话自动注入摘要，让决策可追溯、不重复、不推翻。"

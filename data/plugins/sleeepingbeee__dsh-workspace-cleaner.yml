@@ -1,0 +1,6 @@
+url: https://github.com/sleeepingbeee/dsh-workspace-cleaner
+name: sleeepingbeee/dsh-workspace-cleaner
+category: session
+description:
+  en: 'Lists every DSH workspace and its conversations on a settings page with checkboxes, and deletes the checked conversations or whole workspaces together with their session logs, projection caches and workspace registrations.'
+  zh: '在设置页列出所有工作区及其对话，勾选后按勾选内容删除对话或整个工作区，并一并清理对应的会话日志、投影缓存与工作区注册。'

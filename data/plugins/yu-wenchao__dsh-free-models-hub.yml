@@ -1,0 +1,6 @@
+url: https://github.com/yu-wenchao/dsh-free-models-hub
+name: yu-wenchao/dsh-free-models-hub
+category: ui
+description:
+  en: 'A drawer panel for the DSH web UI with a paginated list of free LLMs; one-click or batch writes each as a custom model provider into Settings, plus a local multi-key rotation proxy.'
+  zh: 'DSH Web UI 右侧的免费模型抽屉面板，分页浏览免费模型，可一键或整页批量把模型写入自定义提供方，并附带本地多 Key 轮换代理。'

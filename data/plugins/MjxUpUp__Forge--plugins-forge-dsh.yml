@@ -1,0 +1,6 @@
+url: https://github.com/MjxUpUp/Forge/tree/main/plugins/forge-dsh
+name: MjxUpUp/Forge#forge-dsh
+category: dev
+description:
+  en: 'Forge quality gates for DeepSeek Harness: task gates, read-before-edit, bash hazard interception and quality scoring, enforced by the local forge CLI through DSH''s typed interception points. Requires the forge CLI on PATH; without it the plugin fails open and says so with a best-effort notice at session start, and task gates also need forge init in the project.'
+  zh: '为 DeepSeek Harness 提供 Forge 质量门禁：任务门禁、改前必读、危险命令拦截与质量评分，经 DSH 类型化拦截点由本地 forge CLI 执行。需本机安装 forge CLI，缺失时插件 fail-open 并在会话开始时尽力提示；任务门禁还要求项目已执行 forge init。'

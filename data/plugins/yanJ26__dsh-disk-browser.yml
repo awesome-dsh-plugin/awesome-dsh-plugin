@@ -1,0 +1,6 @@
+url: https://github.com/yanJ26/dsh-disk-browser
+name: yanJ26/dsh-disk-browser
+category: tools
+description:
+  zh: DeepSeek Harness 侧边栏磁盘文件浏览插件：浏览服务器任意目录（含隐藏文件夹），支持文本预览、流式下载与上传（多选/拖拽、同名确认覆盖），桌面与移动端响应式适配。
+  en: Sidebar disk browser for DeepSeek Harness - browse any folder on the server (including hidden ones) with text preview, streaming download and upload (multi-select / drag-and-drop, overwrite confirm), responsive on desktop and mobile.

@@ -1,0 +1,6 @@
+url: https://github.com/wangbodbs/dsh-plugins/tree/main/packages/dsh-mcp-flapi
+name: wangbodbs/dsh-plugins#dsh-mcp-flapi
+category: tools
+description:
+  en: Registers FilmLight's official FLAPI MCP assistant (flapi-dev-mcp) as an MCP server in DSH, so an agent can write and run Baselight / Daylight FLAPI scripts.
+  zh: 把 FilmLight 官方的 FLAPI MCP（flapi-dev-mcp）注册成 DSH 里的 MCP 服务器，让 agent 能编写并运行 Baselight / Daylight 的 FLAPI 脚本。

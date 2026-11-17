@@ -1,0 +1,7 @@
+url: https://github.com/songshuhuoban/dsh-next-input
+name: songshuhuoban/dsh-next-input
+category: ui
+tarball: https://github.com/songshuhuoban/dsh-next-input/releases/latest/download/dsh-next-input.tgz
+description:
+  en: Suggests the next user reply in an empty composer after the assistant finishes, using the session model and rolling context summaries, with Tab to accept.
+  zh: 助手完成后，沿用会话模型与滚动上下文摘要，在空输入框中建议下一条用户回复，按 Tab 接受。

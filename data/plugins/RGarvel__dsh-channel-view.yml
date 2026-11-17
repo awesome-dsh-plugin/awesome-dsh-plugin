@@ -1,0 +1,6 @@
+url: https://github.com/RGarvel/dsh-channel-view
+name: RGarvel/dsh-channel-view
+category: session
+description:
+  en: "Channel-grouped session view injected into the sidebar — Workspace/Channels tabs with live-running dots, archived grouping, orphan tagging, built purely on official extension surfaces and serving as the RFC-0001 reference implementation."
+  zh: "侧边栏注入的按渠道分组会话视图——工作区/Channels 双标签、运行中绿点、归档折叠与孤儿工作区标注，完全基于官方扩展面实现，兼作 RFC-0001（discussion #3897）的参考实现。"

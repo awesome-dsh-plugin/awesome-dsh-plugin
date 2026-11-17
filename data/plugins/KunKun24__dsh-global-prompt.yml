@@ -1,0 +1,8 @@
+url: https://github.com/KunKun24/dsh-global-prompt
+name: KunKun24/dsh-global-prompt
+category: agi
+description:
+  en: Add one global prompt or persona that is injected into every new DeepSeek Harness conversation.
+  zh: 写一段全局提示词或人设，之后每条新对话都会自动带上。
+icon: https://raw.githubusercontent.com/KunKun24/dsh-global-prompt/main/assets/icon-180.png
+tarball: https://github.com/KunKun24/dsh-global-prompt/releases/download/v1.1.0/dsh-global-prompt-1.1.0.tgz

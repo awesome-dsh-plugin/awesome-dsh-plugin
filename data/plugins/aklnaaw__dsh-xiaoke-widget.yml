@@ -1,0 +1,6 @@
+url: https://github.com/aklnaaw/dsh-xiaoke-widget
+name: aklnaaw/dsh-xiaoke-widget
+category: ui
+description:
+  en: "A Claude-persona desktop pet pinned to the bottom-right corner of the DSH web GUI — shows balance, today's usage, peak/off-peak pricing and per-turn cost, with editable bubbles (text, balance, usage, pricing, images, random lines and weighted choices), per-line styles and fonts, a floating quick editor, sound effects, and custom character/audio. Ships animated roles that breathe and blink, plus a balance-alert variant that switches to a crying face when the balance falls below the alert line; 256/384 animation tiers and an optional 512 HD pack installed from the resource manager. 63 Claude-flavored lines. A derivative of MeteorNOX/DeepSeek-Balance-Whale-Widget (MIT)."
+  zh: "右下角的 Claude 拟人桌宠「小克」：显示余额、今日已用、峰谷定价与每轮消耗，泡泡内容可编辑（文本、余额、今日、峰谷、图片、随机语句与并列加权选择），支持逐行样式与字体、悬浮快捷编辑、音效与自定义角色/音效；内置会呼吸、会眨眼的动态角色，余额低于预警线时切换成哭脸，动图分 256/384 两档，并可在资源管理里安装 512 高清包；台词 63 条。二创自 MeteorNOX/DeepSeek-Balance-Whale-Widget（MIT）。"

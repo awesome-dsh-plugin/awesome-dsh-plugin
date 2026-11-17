@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-quality-scoring
+name: liuhange789/data-asset-inspector#data-quality-scoring
+category: tools
+description:
+  zh: "数据质量打分插件 — 多维度评分（完整性/准确性/一致性/时效性）"
+  en: "Data quality scoring plugin — multi-dimensional scoring (completeness/accuracy/consistency/timeliness)."

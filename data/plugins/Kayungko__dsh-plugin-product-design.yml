@@ -1,0 +1,6 @@
+url: https://github.com/Kayungko/dsh-plugin-product-design
+name: Kayungko/dsh-plugin-product-design
+category: workflow
+description:
+  en: Product Design workflow suite for DeepSeek Harness - a router plus nine pd-* skills carrying ideas from a minimum design brief through visual directions, evidence-grounded research and audits, URL cloning, frontend builds and a blocking design-QA gate.
+  zh: 产品设计工作流套件：一个路由加九个 pd-* 技能，把想法从最小设计简报推进到视觉方向、证据化调研与审计、URL 克隆、前端构建与阻断式设计 QA 闸门。

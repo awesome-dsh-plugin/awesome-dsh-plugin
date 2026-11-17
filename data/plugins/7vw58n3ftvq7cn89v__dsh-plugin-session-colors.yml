@@ -1,0 +1,6 @@
+url: https://github.com/7vw58n3ftvq7cn89v/dsh-plugin-session-colors
+name: 7vw58n3ftvq7cn89v/dsh-plugin-session-colors
+category: session
+description:
+  en: 'Per-session color tags for DeepSeek Harness: hover a sidebar session row to pick one of 12 colors, with a colored bar on tagged rows and host-side persistence.'
+  zh: '给 DeepSeek Harness 的每个会话标颜色：悬停侧栏会话行即可选色（12 色），被标色行显示同色竖条，宿主侧持久化。'

@@ -1,0 +1,6 @@
+url: https://github.com/Ghidorahchaos/dsh-cherry-quote
+name: Ghidorahchaos/dsh-cherry-quote
+category: ui
+description:
+  en: Quote selected text from a DSH message into the composer as a blue chip, hover to read the full quote, and remove it with X or Backspace; sent quotes reach the model as a blockquote.
+  zh: 划选 DSH 消息中的文字，右键引用为输入框里的蓝色小块；悬停查看全文，点 ✕ 或按 Backspace 删除；发送后引用以 blockquote 原文交给模型。

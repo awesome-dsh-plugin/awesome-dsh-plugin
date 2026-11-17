@@ -1,0 +1,6 @@
+url: https://github.com/LWLAymh/dsh-edit-guardian
+name: LWLAymh/dsh-edit-guardian
+category: security
+description:
+  en: File-change diff bar with keep/undo summary, plus dangerous-command approval and red highlighting for bash/pwsh.
+  zh: 文件修改 diff 栏与保留/撤销汇总，以及对 bash/pwsh 危险命令的审批与标红。

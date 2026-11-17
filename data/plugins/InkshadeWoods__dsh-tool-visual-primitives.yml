@@ -1,0 +1,6 @@
+url: https://github.com/InkshadeWoods/dsh-tool-visual-primitives
+name: InkshadeWoods/dsh-tool-visual-primitives
+category: vision
+description:
+  en: Analyzes conversation images through mode-specific prompts (caption, UI, document, grounding, topology, etc.) and injects structured evidence with coordinate primitives (boxes, points, refs) as text, with session-level caching for reuse across replay and compaction.
+  zh: 通过模式化提示分析对话图片（描述、UI、文档、定位、拓扑等），将含坐标原语（框、点、引用）的结构化证据以文本注入上下文，会话级缓存跨回放与压缩复用。

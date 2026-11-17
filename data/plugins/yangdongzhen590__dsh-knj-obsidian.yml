@@ -1,0 +1,6 @@
+url: https://github.com/yangdongzhen590/dsh-knj-obsidian
+name: yangdongzhen590/dsh-knj-obsidian
+category: memory
+description:
+  en: 'Built-in Obsidian-style knowledge base for DSH: agents distill conversations, documents and web sources into a structured .wiki graph, with retrieval, graph export, note editing, incremental builds and multi-vault management.'
+  zh: 'DSH 内置版 Obsidian 知识库：agent 把对话、文档与网页蒸馏为结构化 .wiki 知识图，支持检索、图谱导出、笔记编辑、增量构建与多库管理。'

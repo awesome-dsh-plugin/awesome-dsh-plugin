@@ -1,0 +1,6 @@
+url: https://github.com/Zoria-Lind/dsh-token-optimizer
+name: Zoria-Lind/dsh-token-optimizer
+category: usage
+description:
+  en: 'Token optimization for DeepSeek Harness with searchable MCP tool discovery and lazy loading, configurable compaction controls and status reporting, tool-output reduction, long-text vision summarization, and opt-in conversation archiving with paginated retrieval.'
+  zh: 'Token 优化：支持可搜索的 MCP 工具发现与懒加载、可配置的压缩控制与状态查看、工具输出精简、长文本视觉摘要，以及可选的对话原文归档与分页回查。'

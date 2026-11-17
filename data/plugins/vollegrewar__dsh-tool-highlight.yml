@@ -1,0 +1,6 @@
+url: https://github.com/vollegrewar/dsh-tool-highlight
+name: vollegrewar/dsh-tool-highlight
+category: ui
+description:
+  en: 'Layered syntax highlighting for bash/pwsh command and read code output in the DSH web GUI (VS Code Dark+ palette: keywords/strings/numbers/functions/comments each get a color); colors only what it recognizes, keeps tables/logs plain; pure frontend, zero token overhead.'
+  zh: DSH web 插件：给 bash/pwsh 命令与 read 的代码输出做分层语法染色（VS Code Dark+ 配色：关键字/字符串/数字/函数名/注释各一色）；认得出来才染，表格/日志保持原样；纯前端渲染，零 token 开销。

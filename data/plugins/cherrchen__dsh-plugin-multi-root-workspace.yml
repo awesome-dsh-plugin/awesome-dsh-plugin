@@ -1,0 +1,6 @@
+url: https://github.com/cherrchen/dsh-plugin-multi-root-workspace
+name: cherrchen/dsh-plugin-multi-root-workspace
+category: tools
+description:
+  en: Lets one session read, write and run bash across several folders, not just the primary root — additional roots are registered from a sidebar Folders panel or the /workspace-folders command (inherit/read-only/read-write) and share the primary root's file-fence + OS-sandbox authorization; adds no new tools.
+  zh: 让单个会话在多个文件夹中读写并运行 bash，而不限于主目录——附加根经侧栏 Folders 面板或 /workspace-folders 命令登记（inherit/read-only/read-write），与主根共享同一套文件围栏 + 内核沙箱授权；不新增工具。

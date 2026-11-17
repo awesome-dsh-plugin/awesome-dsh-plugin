@@ -1,0 +1,17 @@
+# Submission file for https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+#
+# Copy this file to `data/plugins/wuqiwenpk__dsh-custom-bg.yml` in that
+# repository and open a PR. Do not edit the generated READMEs: they are rebuilt
+# from `data/plugins/*.yml` after the merge.
+#
+# Prerequisites checked by their CI:
+#   - this repository declares `dsh.bundle` in package.json   (it does)
+#   - the repository is at least one day old
+#   - the repository carries the `dsh-plugin` GitHub topic
+url: https://github.com/wuqiwenpk/dsh-custom-bg
+name: wuqiwenpk/dsh-custom-bg
+category: ui
+description:
+  en: Bottom-left floating panel that uploads and switches your own background images, with scrim and blur sliders and three bundled wallpapers.
+  zh: 左下角浮窗，上传并切换自定义背景图片，带遮罩与模糊滑块，内置三张壁纸。
+icon: https://raw.githubusercontent.com/wuqiwenpk/dsh-custom-bg/master/docs/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/moonquake2004/dsh-doctor/tree/main/plugin
+name: moonquake2004/dsh-doctor#plugin
+category: dev
+description:
+  en: 'Offline diagnostic for DSH: 19 checks across env, profile, and session state, with a settings "Doctor" panel and a read-only JSON API.'
+  zh: 离线诊断工具：环境/Profile/会话共 19 项检查，带设置「诊断」面板与只读 JSON API。

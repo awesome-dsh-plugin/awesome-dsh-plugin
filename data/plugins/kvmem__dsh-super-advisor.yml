@@ -1,0 +1,7 @@
+url: https://github.com/kvmem/dsh-super-advisor
+name: kvmem/dsh-super-advisor
+category: workflow
+description:
+  en: On-demand second opinions through ask_advisor, with editable requests, per-call human approval, and text advice from a model configured in DSH.
+  zh: 通过 ask_advisor 按需求助顾问，支持编辑请求与逐次人工批准，由 DSH 中配置的模型返回文字建议。
+tarball: https://github.com/kvmem/dsh-super-advisor/releases/latest/download/dsh-super-advisor.tgz

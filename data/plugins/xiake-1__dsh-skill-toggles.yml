@@ -1,0 +1,6 @@
+url: https://github.com/xiake-1/dsh-skill-toggles
+name: xiake-1/dsh-skill-toggles
+category: skill
+description:
+  en: 'Grouped on/off switches for the skills a DSH profile exposes: the effective set is the union of the groups that are switched on, with a catalog-derived group for the skills shipped with the harness, a panel over the composer, and skill_toggles_* tools for agents.'
+  zh: '按分组开关 DSH 暴露的技能：生效集合是所有启用中分组的并集；含成员由当前目录判定的自带技能分组、输入框上的面板，以及给智能体的 skill_toggles_* 工具。'

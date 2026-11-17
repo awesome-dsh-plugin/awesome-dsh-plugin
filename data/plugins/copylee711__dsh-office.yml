@@ -1,0 +1,6 @@
+url: https://github.com/copylee711/dsh-office
+name: copylee711/dsh-office
+category: docs
+description:
+  en: 'Windows only: the agent edits documents inside the Word, Excel and PowerPoint (Microsoft Office or WPS Office) windows you have open, through the applications'' automation interface, so changes appear live and you can edit alongside; it reads structure, applies batches of edits, renders pages to images to check layout, and saves or exports PDF.'
+  zh: '仅 Windows：Agent 通过办公软件的自动化接口，直接在你打开的 Word、Excel、PowerPoint（微软 Office 或 WPS Office）窗口里改文档，改动实时出现，你可以同时编辑；可读取结构、批量修改、把页面渲染成图片核对排版、保存或导出 PDF。'

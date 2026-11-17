@@ -1,0 +1,7 @@
+url: https://github.com/yuan-source-666/dsh-ptc-discipline
+name: yuan-source-666/dsh-ptc-discipline
+category: session
+description:
+  en: PTC agent preset whose tools.guard refuses tool calls until the session holds an active goal and an in-progress todo.
+  zh: PTC 模式 agent preset：用 tools.guard 拒绝工具调用，直到会话里有进行中的目标和待办。
+icon: https://raw.githubusercontent.com/yuan-source-666/dsh-ptc-discipline/main/assets/icon-180.png

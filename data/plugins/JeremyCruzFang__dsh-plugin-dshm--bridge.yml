@@ -1,0 +1,6 @@
+url: https://github.com/JeremyCruzFang/dsh-plugin-dshm/tree/main/bridge
+name: JeremyCruzFang/dsh-plugin-dshm#bridge
+category: remote
+description:
+  en: 'Connect the DSHM iPhone/iPad companion to DeepSeek Harness over your local network or Tailscale, with device pairing, session control and file transfers; public TestFlight access to the companion app is pending Apple review.'
+  zh: '通过本地网络或 Tailscale，将 DSHM iPhone/iPad 配套应用连接到 DeepSeek Harness，支持设备配对、会话控制和文件传输；配套应用的公开 TestFlight 仍在等待 Apple 审核。'

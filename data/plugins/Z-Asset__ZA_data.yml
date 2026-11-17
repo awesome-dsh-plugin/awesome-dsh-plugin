@@ -1,0 +1,6 @@
+url: https://github.com/Z-Asset/ZA_data
+name: Z-Asset/ZA_data
+category: workflow
+description:
+  en: Data stage — data discovery and quality assessment for asset pricing and machine learning research. Ships one skill.
+  zh: 数据处理阶段——资产定价与机器学习研究的数据发现与质量评估。附带一个 skill。

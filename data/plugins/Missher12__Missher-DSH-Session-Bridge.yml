@@ -1,0 +1,7 @@
+url: https://github.com/Missher12/Missher-DSH-Session-Bridge
+name: Missher12/Missher-DSH-Session-Bridge
+category: session
+description:
+  en: "Displays and copies full session IDs, provides cross-session listing, reading and messaging, and creates scratch workspaces."
+  zh: "显示和复制完整会话 ID，提供跨会话查询、读取与消息投递，以及临时工作区。"
+tarball: https://github.com/Missher12/Missher-DSH-Session-Bridge/releases/download/v0.1.3-local.6/missher-dsh-session-bridge-0.1.3-local.6.tgz

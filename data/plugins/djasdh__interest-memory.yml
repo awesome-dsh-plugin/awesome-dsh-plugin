@@ -1,0 +1,6 @@
+url: https://github.com/djasdh/interest-memory
+name: djasdh/interest-memory
+category: memory
+description:
+  en: 'Cross-session long-term memory backed by a local Go service (~50MB RAM, SQLite-vec + verify-augmented claims): zero-lag recall injection on every user message, session-end transcript ingest, and memory_search / memory_logs / memory_ingest tools. Install with `dsh plugin --profile web add @djasdh/interest-memory-dsh-bridge`. Protocol bridge only: the Go service is not installed by `dsh plugin add` — install and start it per the repository README first; until it runs, the tools silently return nothing.'
+  zh: '由本地 Go 服务支撑的跨会话长期记忆（约 50MB 内存，SQLite-vec + 经验证增强的论断）：每条用户消息零延迟注入召回、会话结束时摄入对话记录，提供 memory_search / memory_logs / memory_ingest 工具。安装：`dsh plugin --profile web add @djasdh/interest-memory-dsh-bridge`。仅为协议桥：Go 主服务不随 `dsh plugin add` 安装，需先按仓库 README 安装并启动；服务未运行时工具静默返回空。'

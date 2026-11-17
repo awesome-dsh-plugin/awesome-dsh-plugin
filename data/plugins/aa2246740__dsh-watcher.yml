@@ -1,0 +1,6 @@
+url: https://github.com/aa2246740/dsh-watcher
+name: aa2246740/dsh-watcher
+category: ui
+description:
+  en: 'Read-only session work-path observer: fold turns into stage, run, duration and tok/s summaries, then expand parallel branches, tool results and vendor-visible reasoning.'
+  zh: 只读会话工作路径观察器：收起轮次看阶段数、执行数、耗时与 tok/s，展开看并行分支、工具结果与供应商可见推理。

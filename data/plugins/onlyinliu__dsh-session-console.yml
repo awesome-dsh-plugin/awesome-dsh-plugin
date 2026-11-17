@@ -1,0 +1,7 @@
+url: https://github.com/onlyinliu/dsh-session-console
+name: onlyinliu/dsh-session-console
+category: ui
+description:
+  en: 'Session Console: a sidebar dashboard over every conversation that shows run state, token spend, cache hit rate, context pressure and a heat score, resolves a plain-language sentence such as "how is the example project going" to the matching session, and dispatches that sentence as a queued task into it. Ships five agent tools (overview, find, tail, dispatch, cancel) over the same data.'
+  zh: '会话总控：给侧栏加一个覆盖全部对话的仪表盘，显示运行状态、token 消耗、缓存命中率、上下文压力与热度分数；说一句“示例项目怎么样了”即可定位到对应会话，并把这句话作为任务派发进去。同时提供 5 个 agent 工具（overview / find / tail / dispatch / cancel），与界面共用同一套数据。'
+icon: https://raw.githubusercontent.com/onlyinliu/dsh-session-console/main/assets/icon-180.png

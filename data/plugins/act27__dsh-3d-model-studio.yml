@@ -1,0 +1,6 @@
+url: https://github.com/act27/dsh-3d-model-studio
+name: act27/dsh-3d-model-studio
+category: ui
+description:
+  en: 'Previews GLB, glTF, FBX, OBJ, STL and PLY models in the right-sidebar document preview, and parses runtime-built three.js scenes from HTML pages or pasted code to export the full scene or per-object groups as model files.'
+  zh: '在 DSH 右侧栏文档预览里预览 GLB、glTF、FBX、OBJ、STL、PLY 模型；也能解析 HTML 页面或粘贴代码中运行时构建的 three.js 场景，支持完整场景导出和按个体分组导出为模型文件。'

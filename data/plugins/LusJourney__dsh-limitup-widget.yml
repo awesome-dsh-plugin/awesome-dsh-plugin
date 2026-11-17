@@ -1,0 +1,8 @@
+url: https://github.com/LusJourney/dsh-limitup-widget
+name: LusJourney/dsh-limitup-widget
+category: ui
+description:
+  en: 'Floating A-share limit-up card in the DSH overlay showing limit-up, broken-board and limit-down counts, break rate, consecutive-board height, previous-day limit-up premium, top themes and a localStorage watchlist; closable with no floating remnant (restore from the sidebar footer). Needs the separate Python dashboard backend from the repo''s dashboard/ folder (Python 3.9+, akshare; not shipped in the package), which the same-origin proxy can health-check and optionally autostart.'
+  zh: 'DSH 浮层里的 A 股涨停直播卡片：显示涨停/炸板/跌停数、炸板率、连板高度、昨日涨停溢价、热门题材与 localStorage 自选股；可关闭且浮层无残留（从侧边栏底部恢复）。数据来自仓库 dashboard/ 下需单独运行的 Python 看板后端（需 Python 3.9+ 与 akshare，不随安装包分发），同源代理可探活，配置 script 后可自动拉起。'
+icon: https://raw.githubusercontent.com/LusJourney/dsh-limitup-widget/main/assets/icon-180.png
+tarball: https://github.com/LusJourney/dsh-limitup-widget/releases/download/v0.2.1/dsh-limitup-widget-0.2.1.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/chenkui-luo/dsh-plugin-restart
+name: chenkui-luo/dsh-plugin-restart
+category: dev
+description:
+  en: 'Adds a Restart card to the harness settings: one click hands the restart to the DeepSeek Harness launcher (`Launch-DeepSeekHarness.ps1`), which replaces the running web process, and the page reconnects itself once the new instance answers. Windows only; without that launcher the button reports an error instead of restarting.'
+  zh: 在设置页增加「重启」卡片：一键把重启交给 DeepSeek Harness 启动器（`Launch-DeepSeekHarness.ps1`）替换正在为页面提供服务的 web 进程，新实例就绪后页面自行重连。仅支持 Windows；缺少该启动器时按钮会报错，而不是完成重启。

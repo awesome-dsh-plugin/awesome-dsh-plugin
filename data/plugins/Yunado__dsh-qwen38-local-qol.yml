@@ -1,0 +1,6 @@
+url: https://github.com/Yunado/dsh-qwen38-local-qol
+name: Yunado/dsh-qwen38-local-qol
+category: model
+description:
+  en: 'Per-request thinking budgets, a compaction backend, and a settings tab for the local Qwen3.8 line (llama.cpp or NInfer).'
+  zh: '本地 Qwen3.8 线（llama.cpp 或 NInfer）的逐请求 thinking 预算、压缩后端与设置 tab。'

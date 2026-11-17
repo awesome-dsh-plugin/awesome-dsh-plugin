@@ -1,0 +1,6 @@
+url: https://github.com/Fnckerpoi/dsh-plugin-sirchmunk
+name: Fnckerpoi/dsh-plugin-sirchmunk
+category: tools
+description:
+  en: 'DSH settings section for managing a local Sirchmunk knowledge backend: graph inspection, cluster management, audit history, runtime metrics, and privacy controls.'
+  zh: '在 DSH 设置中管理本地 Sirchmunk 知识库：图谱导出、聚类管理、审计历史、运行指标与隐私控制。'

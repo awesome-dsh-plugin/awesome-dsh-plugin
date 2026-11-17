@@ -1,0 +1,7 @@
+url: https://github.com/BaoBao1996121/dsh-huaci-pinglun
+name: BaoBao1996121/dsh-huaci-pinglun
+category: ui
+description:
+  en: "Selection comments and quoted conversations (dsh划词评论 / dsh-huaci-pinglun), based on the MIT-licensed BangBang-03/dsh-client-ui-quote 0.11.1 with attached textarea measurement, border-aware height and long-text scrolling."
+  zh: "dsh划词评论（dsh-huaci-pinglun）：基于 BangBang-03/dsh-client-ui-quote 0.11.1 的 MIT 修补分支，提供划词评论与引用对话，修复引用文本框在挂载并可见后测量、补齐边框高度与长文滚动。"
+tarball: https://github.com/BaoBao1996121/dsh-huaci-pinglun/releases/download/v0.1.0/dsh-huaci-pinglun-0.1.0.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/guyue211/dsh-gpt-niang-quota
+name: guyue211/dsh-gpt-niang-quota
+category: usage
+description:
+  en: Draggable companion widget by Tokyo with Codex quota monitoring, manual executable discovery, and editable replies. Requires the Codex CLI (codex app-server) and a ChatGPT login; API-key logins expose no subscription quota.
+  zh: Tokyo 的可拖动陪伴挂件，支持 Codex 额度监控、手动程序定位和可编辑回复。需安装 Codex CLI（codex app-server）并使用 ChatGPT 登录；API-key 登录不显示订阅额度。
+tarball: https://github.com/guyue211/dsh-gpt-niang-quota/releases/download/v1.5.1/dsh-gpt-niang-quota-1.5.1.tgz

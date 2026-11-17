@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-tray
+name: 173787247/dsh-wsl-tray
+category: wsl
+description:
+  en: 'Writes a Windows shortcut and tray launcher to start dsh web in WSL, with Health/Restart and the :3081 launch-token URL.'
+  zh: '生成 Windows 快捷方式与托盘启动器，在 WSL 中启动 dsh web，并提供 Health/Restart 与 :3081 launch token 地址。'

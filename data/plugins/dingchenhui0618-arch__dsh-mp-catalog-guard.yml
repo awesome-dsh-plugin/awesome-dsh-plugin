@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-mp-catalog-guard
+name: dingchenhui0618-arch/dsh-mp-catalog-guard
+category: tools
+description:
+  en: 'Content-catalog guard for WeChat mini-programs: validates catalog.json so every activity price is an integer amountFen, every template renders prices through money(), required fields / duplicate copy / image paths are checked, and the result is an issue list plus a unified diff that can be applied with patch -p1. 29 rules over five groups (catalog shape, required fields and uniqueness, amounts, rendering, images). Three fixes are automatic (legacy yuan amount, string Fen, absolute image path) and preserve the file''s own indent, EOL and trailing newline; everything else is reported with a hint instead of being guessed. Dry-run by default; apply re-checks the written file so the report describes what remains. One implementation serves a tool, a conversation panel and a CLI with exit codes 0/1/2. Zero runtime dependencies, no model call, no network.'
+  zh: '微信小程序内容目录守卫：校验 catalog.json，保证每条活动金额都是整数 amountFen、页面价格统一走 money()，必填字段 / 重复文案 / 图片路径逐项检查，输出问题清单与可直接 patch -p1 的 unified diff。29 条规则分五组（目录结构、必填与唯一性、金额、渲染、图片）；三条可自动修复（旧「元」金额、字符串分、绝对图片路径），写回保留原文件的缩进/行尾/结尾换行，其余只给修法提示不猜。默认 dry-run，apply 后会重查写回的文件，报告描述剩余问题。一份实现同时服务工具、会话面板与 CLI（退出码 0/1/2）。零运行时依赖，不调用模型、不联网。'

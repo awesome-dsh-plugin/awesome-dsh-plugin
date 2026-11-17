@@ -1,0 +1,6 @@
+url: https://github.com/lishuo4096/dsh-gowin
+name: lishuo4096/dsh-gowin
+category: tools
+description:
+  en: 'Gowin (高云) 1.9 FPGA toolchain control for dsh: 15 tools covering environment and license probe, .gprj/.cst project and constraint auditing against a real GW1N board pinout, gw_sh batch synthesis and place-and-route, pnr resource and timing report parsing, programmer_cli JTAG scan and flash, arbitrary gw_sh Tcl, and the GAO on-line logic analyzer capture chain — plus a bundled gowin-fpga skill and three field-note references. Pure JS, zero runtime dependencies.'
+  zh: '把高云 Gowin 1.9 FPGA 工具链交给 dsh：15 个工具覆盖环境与 License 探针、.gprj/.cst 工程与约束审计（对着真实 GW1N 板引脚表）、gw_sh 批量综合与布局布线、pnr 资源与时序报告解析、programmer_cli 扫描与烧录、任意 gw_sh Tcl 执行，以及 GAO 在线逻辑分析采集链路；另附内置 gowin-fpga 技能与三份实测手册。纯 JS，零运行时依赖。'

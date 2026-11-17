@@ -1,0 +1,6 @@
+url: https://github.com/AskTheWay/dsh-jev-interceptor
+name: AskTheWay/dsh-jev-interceptor
+category: security
+description:
+  en: 'Classifies pending tool calls with Jev (TypeSafe AI''s non-generative decision model) on tools/pre-execute — confident high-risk calls are denied, ambiguous ones escalated to approval — and auto-approves clearly-granted reversible calls on approval/request behind argument-evidence gating. Also subclasses the session-reference resolver so snapshots keep Jev-scored messages instead of dropping oldest-first. Degrades to stock behavior on any provider failure; shadow mode with a /jev-stats command; TypeSafe or OpenRouter endpoints; 64 tests.'
+  zh: '在 tools/pre-execute 上用 Jev（TypeSafe AI 的非生成式决策模型）对待执行的工具调用分类——高置信高危拒绝、存疑转审批——并在 approval/request 上对明确授权且可逆的调用做带参数证据门控的自动批准。另子类化 session-reference resolver，让引用快照按 Jev 打分保留消息而非最旧优先丢弃。任何 provider 故障均回退原生行为；提供 shadow 模式与 /jev-stats 统计命令；支持 TypeSafe 或 OpenRouter 入口；64 个测试。'

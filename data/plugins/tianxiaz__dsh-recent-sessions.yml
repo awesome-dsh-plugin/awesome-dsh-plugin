@@ -1,0 +1,7 @@
+url: https://github.com/tianxiaz/dsh-recent-sessions
+name: tianxiaz/dsh-recent-sessions
+category: ui
+description:
+  en: 'A Workspaces-native Recent sessions section for the DSH left sidebar: favorites, running, waiting-for-you and unread sessions at a glance, with a one-click ☆ on every session row, one-line collapse and in-section search. It takes over the sidebar shell (the shipped sidebar package is disabled) and renders the official workspace/session browser inside it; its recent-sessions panel id conflicts with huangxp12/whybebabo, so do not install them together.'
+  zh: '像官方「工作区」一样融入左侧栏的「最近会话」分区：收藏、运行中、等待你的回应、完成未读、最近活跃一屏直达；每个会话行 ☆ 一键收藏，可收起到一行、支持就地搜索。它会接管侧栏外壳（禁用官方侧栏包）并在其中原样渲染官方工作区/会话浏览区；其 recent-sessions 面板 id 与 huangxp12/whybebabo 冲突，不要同装。'
+icon: https://raw.githubusercontent.com/tianxiaz/dsh-recent-sessions/main/docs/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/philmingdao/anno/tree/main/adapters/dsh-native
+name: philmingdao/anno#dsh-native
+category: tools
+description:
+  en: 'Local-first HTML review and annotation workspace for coding agents: opens an isolated copy of a file in a browser editor, collects text edits, format changes and element/area comments, and returns a durable handoff the agent can claim and resolve.'
+  zh: '面向编码代理的本地优先 HTML 审阅与标注工作区：在浏览器编辑器中打开文件的隔离副本，收集文本修改、格式调整与元素/区域评注，并把持久的交接（handoff）交还给代理认领和落实。'

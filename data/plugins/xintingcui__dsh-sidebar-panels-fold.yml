@@ -1,0 +1,6 @@
+url: https://github.com/xintingcui/dsh-sidebar-panels-fold
+name: xintingcui/dsh-sidebar-panels-fold
+category: ui
+description:
+  en: 'Collapses the sidebar global-panel rows to a few visible entries and adds a picker for choosing which ones stay, so a long panel list stops squeezing the workspace and session area; rows are hidden only, never unregistered.'
+  zh: '把侧边栏的全局面板条目折叠成少量可见行，并提供勾选面板决定留哪几个，条目一多时不再挤压工作区与会话区；只隐藏显示，不注销条目。'

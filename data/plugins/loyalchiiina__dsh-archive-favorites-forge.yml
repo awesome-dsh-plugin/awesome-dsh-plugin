@@ -1,0 +1,6 @@
+url: https://github.com/loyalchiiina/dsh-archive-favorites-forge
+name: loyalchiiina/dsh-archive-favorites-forge
+category: session
+description:
+  en: 'Conversation management for DSH: bulk-archive idle conversations (archiving only marks them; by default it also sends their snapshot ledgers to the Windows Recycle Bin), permanently delete conversations after confirmation, star the ones worth keeping, undo the last reply with a per-turn snapshot, and clean up snapshots and archived files from one panel. Adapts DSH kernel 0.2.2-rc.1.'
+  zh: 'DSH 对话管理工具箱：按闲置批量归档（归档只做标记，默认顺带把快照账本送进 Windows 回收站），确认后可永久删除对话；收藏常看会话；按轮次撤销回复并保留轮次快照；一键清理快照与归档档案。适配 DSH 内核 0.2.2-rc.1。'

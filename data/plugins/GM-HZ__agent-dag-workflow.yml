@@ -1,0 +1,6 @@
+url: https://github.com/GM-HZ/agent-dag-workflow
+name: GM-HZ/agent-dag-workflow
+category: workflow
+description:
+  en: Host-neutral durable DAG workflows for Agents with CLI, MCP, on-demand Skills, triggers, replay, and a visual Canvas.
+  zh: 面向 Agent 的 Host-neutral 持久化 DAG 工作流，提供 CLI、MCP、按需 Skill、Trigger、重放和可视化 Canvas。

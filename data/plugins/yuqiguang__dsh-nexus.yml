@@ -1,0 +1,7 @@
+url: https://github.com/yuqiguang/dsh-nexus
+name: yuqiguang/dsh-nexus
+category: workflow
+description:
+  en: Personal coding assistant that schedules, follows up on and verifies local Codex or Claude Code tasks from DSH, with WeChat, WeCom and Feishu remote channels.
+  zh: 个人编码助理：在 DSH 中安排、跟进与验收本机 Codex 或 Claude Code 任务，并提供微信、企业微信与飞书远程渠道。
+tarball: https://github.com/yuqiguang/dsh-nexus/releases/download/install/dsh-nexus.tgz

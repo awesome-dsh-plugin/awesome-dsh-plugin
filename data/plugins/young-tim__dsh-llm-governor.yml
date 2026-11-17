@@ -1,0 +1,6 @@
+url: https://github.com/young-tim/dsh-llm-governor
+name: young-tim/dsh-llm-governor
+category: model
+description:
+  en: Governs multi-model access, monthly credits, manual/quality/credit/auto routing, failure rerouting, and usage auditing for DSH.
+  zh: 为 DSH 提供多模型访问控制、月度 Credits、手动/质量优先/额度优先/自动路由、失败重路由与 Usage 审计。

@@ -1,0 +1,6 @@
+url: https://github.com/curo22/dsh-wb400-guard
+name: curo22/dsh-wb400-guard
+category: dev
+description:
+  en: Rewrites the blocked at-sign and four channel fingerprints in system messages at the fetch layer, so WorkBuddy's China gateway stops answering DSH requests with HTTP 400 code 11128; dry-run mode only observes and never modifies the request.
+  zh: 在 fetch 层改写 system 消息里被拦截的 at 符号与四处渠道指纹，让 WorkBuddy 国内网关不再对 DSH 的请求返回 HTTP 400 / code 11128；dry-run 模式只观察、不改动请求。

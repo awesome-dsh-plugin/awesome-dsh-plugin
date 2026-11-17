@@ -1,0 +1,6 @@
+url: https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-agent-checkup
+name: kialajin-l/DSH_Plus#dsh-agent-checkup
+category: dev
+description:
+  en: "Read-only agent checkup with four probes (output repetition, error visibility, tool failure rate, context bloat) over recent local session logs, rendered as an HTML report."
+  zh: "Agent 体检：对近期本地会话日志跑重复率/错误可见性/工具失败率/上下文膨胀四个只读探针，输出 HTML 报告。"

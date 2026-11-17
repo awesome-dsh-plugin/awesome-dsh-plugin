@@ -1,0 +1,6 @@
+url: https://github.com/sunqing975/dsh-skills-hub
+name: sunqing975/dsh-skills-hub
+category: skill
+description:
+  en: Manage local skills across AI agents with version comparison, shared-directory consolidation, and recoverable migration and deletion.
+  zh: 管理多个 AI Agent 的本地技能，支持版本比较、合并到公用目录，以及可恢复的迁移和删除。

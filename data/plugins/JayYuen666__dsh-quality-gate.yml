@@ -1,0 +1,6 @@
+url: https://github.com/JayYuen666/dsh-quality-gate
+name: JayYuen666/dsh-quality-gate
+category: dev
+description:
+  en: 'Turn-end quality gate on `agent/turn-stopping`: successful edits of the turn are walked up to the nearest project root, at most one check from a fixed whitelist runs there (`pnpm check`, `cargo check`, `ruff check .`, `tsc --noEmit`), and only a check that really ran and failed opens a new turn carrying its output; a check that could not start is reported as not run and never counted as a pass.'
+  zh: '挂在 `agent/turn-stopping` 的回合收口质量门禁：本回合成功写过的文件逐个上溯到最近的项目根，每个根至多跑一条固定白名单里的检查（`pnpm check` / `cargo check` / `ruff check .` / `tsc --noEmit`），只有真跑过且失败才带着输出开新轮修复；没跑起来的记为未运行，绝不算通过。'

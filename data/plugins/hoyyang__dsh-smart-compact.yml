@@ -1,0 +1,7 @@
+url: https://github.com/hoyyang/dsh-smart-compact
+name: hoyyang/dsh-smart-compact
+category: session
+tarball: https://github.com/hoyyang/dsh-smart-compact/releases/download/v0.6.3/dsh-smart-compact-0.6.3.tgz
+description:
+  zh: "DeepSeek Harness 的上下文窗口自动管理：窗口快满时零模型调用换窗，旧对话整窗无损归档、可逐字回查；交接锚点带任务定向，工作笔记跨压缩存活，笔记滞后自动 STALE 警示；触发线按（窗口 − max_tokens）预算方程计算，中途切模型也按真实路由测量；一键换窗按钮与 /smart-compact 命令，三带自动换窗，锚点强制脱敏，开箱即用零配置。"
+  en: "Context window auto-management for DeepSeek Harness: when the window fills up it rolls over to a fresh one with zero summarization model calls, archiving the old window verbatim for line-by-line recall; handoff anchors carry task orientation, working notes survive compaction, and a stale-notes gate warns instead of vouching for outdated notes. The trigger follows the provider budget equation (window - max_tokens) and the real routed model even after a mid-session switch. One-click composer button plus /smart-compact, three-band automatic rollover, mandatory anchor sanitization; works out of the box."

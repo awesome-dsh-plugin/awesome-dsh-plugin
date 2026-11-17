@@ -1,0 +1,8 @@
+url: https://github.com/Mng12345/dsh-desktop-pet-codex/tree/main/plugin
+name: Mng12345/dsh-desktop-pet-codex
+category: fun
+description:
+  en: 'A desktop pet for DeepSeek Harness: an always-on-top character and a roster panel that show what the watched conversations are doing, with seven animations, Workspace grouping, subagents drawn under their parent, and one click to open a session. Ships Windows, macOS (Intel and Apple silicon) and Linux window binaries in the package, so installing runs no install scripts and needs no build step.'
+  zh: 'DeepSeek Harness 的桌面宠物：置顶角色加一块会话面板，显示受关注会话的实时状态；七套动画、按 Workspace 分组、子代理挂在父会话下面、点击一行即可打开会话。包内自带 Windows、macOS（Intel 与 Apple 芯片）和 Linux 的窗口可执行文件，安装时不跑脚本、无需构建。'
+icon: https://raw.githubusercontent.com/Mng12345/dsh-desktop-pet-codex/main/pet-app/public/pet.png
+tarball: https://github.com/Mng12345/dsh-desktop-pet-codex/releases/latest/download/dsh-desktop-pet-codex.tgz

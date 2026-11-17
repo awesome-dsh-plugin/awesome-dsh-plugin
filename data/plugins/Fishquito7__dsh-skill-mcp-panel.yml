@@ -1,0 +1,7 @@
+url: https://github.com/Fishquito7/dsh-skill-mcp-panel
+name: Fishquito7/dsh-skill-mcp-panel
+category: dev
+tarball: https://github.com/Fishquito7/dsh-skill-mcp-panel/releases/download/v2.0.2/dsh-skill-mcp-panel-2.0.2.tgz
+description:
+  en: 'Manages DSH skills and MCP servers from the web settings: skill cards with hot enable/disable, workspace scopes, groups, batch migration and drag-and-drop import, plus stdio/HTTP MCP CRUD with connection tests, secret redaction and the unified dsh-panel CLI.'
+  zh: '在 DSH Web 设置中管理技能与 MCP 服务器：技能卡片热启停、工作区作用域、分组、批量迁移与拖拽导入，以及 stdio/HTTP MCP 增删改查、连接测试、密钥脱敏，并附带统一 dsh-panel 命令行。'

@@ -1,0 +1,6 @@
+url: https://github.com/opdsh/unity-plugin
+name: opdsh/unity-plugin
+category: tools
+description:
+  en: "Drive the Unity Editor from DSH through the official unity CLI: live-Editor scene commands, in-Editor C# eval and runtime command discovery over a warm unity shell session, plus a raw CLI escape hatch for project creation, tests and builds. Mounts Unity's official skill collection alongside its own Unity workflow and Asset Store skills."
+  zh: "通过官方 unity CLI 在 DSH 中操作 Unity 编辑器：实时场景命令、编辑器内 C# 求值、运行时命令发现，均复用常驻的 unity shell 会话；另有原始 CLI 通道用于建工程、跑测试与构建。同时挂载 Unity 官方技能集，以及插件自带的 Unity 工作流与 Asset Store 技能。"

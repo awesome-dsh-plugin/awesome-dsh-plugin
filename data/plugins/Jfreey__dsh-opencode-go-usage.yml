@@ -1,0 +1,7 @@
+url: https://github.com/Jfreey/dsh-opencode-go-usage
+name: Jfreey/dsh-opencode-go-usage
+category: usage
+description:
+  en: Shows OpenCode Go usage (5-hour, weekly, monthly) in the DSH composer dock and a Settings page.
+  zh: 在 DSH 输入框底栏和设置页显示 OpenCode Go 的 5 小时、本周、本月用量。
+icon: https://raw.githubusercontent.com/Jfreey/dsh-opencode-go-usage/main/assets/icon-180.png

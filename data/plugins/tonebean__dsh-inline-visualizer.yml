@@ -1,0 +1,7 @@
+url: https://github.com/tonebean/dsh-inline-visualizer
+name: tonebean/dsh-inline-visualizer
+category: ui
+description:
+  en: "Inline visualizer for DSH: the model loads a design contract first, then renders an SVG or a sandboxed HTML card in place inside the conversation, with light/dark tokens and a source/download toggle."
+  zh: "对话内联可视化：模型先按需加载设计契约，再把 SVG 或沙箱 HTML 卡片就地渲染在对话里，支持深浅色令牌与源码/下载切换。"
+icon: https://raw.githubusercontent.com/tonebean/dsh-inline-visualizer/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/MichengAI/dsh-code-review
+name: MichengAI/dsh-code-review
+category: git
+description:
+  en: 'Adds /review, /review-status, and /review-cancel to spawn an independent native subagent that inspects a chosen Git scope (base branch, uncommitted changes, a commit, or custom instructions) and returns a findings report in the current conversation, with English or Chinese output from the host locale.'
+  zh: '提供 /review、/review-status 和 /review-cancel，用独立原生子 Agent 审查所选 Git 范围（基准分支、未提交更改、某次提交或自定义要求），并把发现报告返回当前会话；报告语言跟随宿主 locale，支持中英文。'

@@ -1,0 +1,6 @@
+url: https://github.com/MemTensor/MemOS/tree/main/apps/memos-local-plugin
+name: MemTensor/MemOS#memos-local-plugin
+category: memory
+description:
+  en: 'Local-first memory plugin for DeepSeek Harness: layered L1/L2/L3 memory with automatic capture, manual memos_* retrieval tools, and a built-in memory viewer.'
+  zh: 'DeepSeek Harness 本地记忆插件：分层 L1/L2/L3 记忆，自动沉淀与手动 memos_* 检索工具并存，内置记忆浏览器。'

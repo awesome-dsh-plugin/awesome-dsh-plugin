@@ -1,0 +1,6 @@
+url: https://github.com/MatriQ/rea-gp
+name: MatriQ/rea-gp
+category: skill
+description:
+  en: 'Find Android game packages and guide Google Play dependency analysis and modification. Needs Python 3 and the Android tools you pick (JADX/apktool/adb).'
+  zh: '查找 Android 游戏安装包，提供 Google Play 依赖分析与修改工作流。需要 Python 3 和你自选的 Android 工具（JADX/apktool/adb）。'

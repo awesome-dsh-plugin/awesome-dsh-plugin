@@ -1,0 +1,7 @@
+url: https://github.com/HandsYe/dsh-input-history
+name: HandsYe/dsh-input-history
+category: ui
+description:
+  en: Persistent prompt history for the DSH composer — Up/Down recalls sent prompts across restarts, Up with text typed filters by prefix, and cleared drafts are not recorded.
+  zh: DSH 对话框的持久输入历史：↑/↓ 回溯已发送内容（重启不丢），输入框有内容时按 ↑ 仅在前缀匹配项中翻找，清空未发送的草稿不会入历史。
+tarball: https://github.com/HandsYe/dsh-input-history/releases/download/v0.3.1/dsh-input-history-0.3.1.tgz

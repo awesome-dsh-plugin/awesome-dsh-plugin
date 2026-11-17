@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-translate
+name: PerryLink/dsh-translate
+category: tools
+description:
+  en: Tool-output repair layer for DeepSeek Harness — JSON schema enforcement, parameter mapping, and JSON repair for tool calls.
+  zh: DeepSeek Harness 的工具输出修复层：JSON Schema 校验、参数映射与 JSON 修复。

@@ -1,0 +1,7 @@
+url: https://github.com/longmiaoo/dsh-native-browser
+name: longmiaoo/dsh-native-browser
+category: browser
+icon: https://raw.githubusercontent.com/longmiaoo/dsh-native-browser/main/assets/icon-180.png
+description:
+  en: "Browser plugin for DSH (浏览器): Codex-style native browser control in your signed-in Chrome, with smooth virtual-cursor feedback, semantic page reads, form filling, screenshots and handoff; setup from the Browser sidebar. Requires macOS + Google Chrome (Chrome 125+) and a one-time unpacked load of the bundled MV3 extension; Edge, Windows and complete Linux installation are experimental."
+  zh: "DSH 浏览器插件（Browser）：以 Codex 浏览器操作为体验参考，直接使用已登录的 Chrome 浏览器，平滑虚拟鼠标，支持页面读取、填表、截图与控制交还；安装后从侧栏「浏览器」完成配置。需要 macOS + Google Chrome（125+），并一次性以解压加载方式安装随包的 MV3 扩展；Edge、Windows 与完整的 Linux 安装仍属实验。"

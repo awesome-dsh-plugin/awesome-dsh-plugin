@@ -1,0 +1,6 @@
+url: https://github.com/jaychang1989/dsh-webchat
+name: jaychang1989/dsh-webchat
+category: browser
+description:
+  en: 'Opens the official DeepSeek web app (chat.deepseek.com) inside DeepSeek Harness: one sidebar entry renders the real page in the center column through the desktop shell''s native browser guest, and keeps you signed in across restarts. The official client keeps its model picker, deep think, smart search, history and attachments. Falls back to opening a window where no guest bridge exists.'
+  zh: '在 DeepSeek Harness 内打开 chat.deepseek.com 官方网页版：点侧边栏入口，真实页面通过桌面端的原生浏览器访客渲染在中栏，并且重启后保持登录。模型选择、深度思考、智能搜索、历史记录、附件上传仍是官方那一套；宿主没有该访客桥接时降级为打开窗口。'

@@ -1,0 +1,6 @@
+url: https://github.com/CooperZhuang/dsh-plugins-cooper-custom/tree/main/packages/dsh-session-ops
+name: CooperZhuang/dsh-plugins-cooper-custom#dsh-session-ops
+category: session
+description:
+  en: 'Session operations for DeepSeek Harness: really delete persisted sessions (ungrouped, temp, archive and subagent filters; guards on running, live and workspace sessions) and move sessions between workspaces (log relocation, header.cwd rewrite, workspace registry follow). Ships the shared session-store library.'
+  zh: 'DeepSeek Harness 的会话运维：真正删除持久化会话（未分组、临时、归档、子代理四种筛选；运行中、仍在宿主加载中与属于工作区的会话默认拒绝删除），并在工作区之间搬迁会话（日志迁移、header.cwd 改写、workspace 注册表跟随）。内含共享的会话存储库。'

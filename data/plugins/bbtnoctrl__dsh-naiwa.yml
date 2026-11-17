@@ -1,0 +1,6 @@
+url: https://github.com/bbtnoctrl/dsh-naiwa
+name: bbtnoctrl/dsh-naiwa
+category: fun
+description:
+  en: 'Make the Naiwa desktop pet laugh whenever a DeepSeek Harness agent turn ends. Windows only; requires the Naiwa desktop pet installed.'
+  zh: '每轮 DeepSeek Harness 回答结束时，让奶蛙桌宠捧腹大笑一次。仅 Windows；需先安装奶蛙桌宠。'

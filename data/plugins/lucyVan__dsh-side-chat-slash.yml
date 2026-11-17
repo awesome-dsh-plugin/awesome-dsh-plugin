@@ -1,0 +1,6 @@
+url: https://github.com/lucyVan/dsh-side-chat-slash
+name: lucyVan/dsh-side-chat-slash
+category: ui
+description:
+  en: Side chat for the DSH Web GUI with a /side slash command, forked from @flyer103/dsh-side-chat 0.7.0 and adding a host /side command, an open-request bridge, and approval pinned to never. It cannot be installed alongside the upstream @flyer103/dsh-side-chat — both register the same routes and side-chat tab type.
+  zh: DSH 网页版的侧聊面板与 /side 命令，基于 @flyer103/dsh-side-chat 0.7.0 的分支，新增宿主侧 /side 命令、开放请求桥接，并将审批固定为 never。不能与上游 @flyer103/dsh-side-chat 同装——两者注册相同的路由与侧聊标签页类型。

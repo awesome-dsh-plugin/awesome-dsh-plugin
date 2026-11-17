@@ -1,0 +1,7 @@
+url: https://github.com/BuvkB/dsh-ugreen-nas
+name: BuvkB/dsh-ugreen-nas
+category: tools
+description:
+  en: 'UGREEN NAS connector for UGOS Pro: 59 agent tools covering all 70 access-token permissions over OpenCLI — files, storage, task metrics, Docker, downloads, app management, control panel and global search, auto-gated per category by what the token grants.'
+  zh: '绿联 NAS（UGOS Pro）连接器：通过访问令牌调用 OpenCLI，59 个工具覆盖全部 70 项令牌权限——文件、存储、任务指标、Docker、下载、应用管理、控制面板与全局搜索，按令牌实际授予自动增减。'
+icon: https://raw.githubusercontent.com/BuvkB/dsh-ugreen-nas/main/assets/icon-180.png

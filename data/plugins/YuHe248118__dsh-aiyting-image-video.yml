@@ -1,0 +1,6 @@
+url: https://github.com/YuHe248118/dsh-aiyting-image-video
+name: YuHe248118/dsh-aiyting-image-video
+category: tools
+description:
+  en: "Connects DeepSeek Harness to AIyting's image generation MCP endpoint and registers four tools: aiyting_image_catalog (models, routes and specs), aiyting_image_settings (read, quote and save parameters), aiyting_image_generate (return a quote first, and submit only with an explicit credit ceiling) and aiyting_image_task (task lookup, waiting, and a local per-account ledger for unfinished jobs). A sidebar page signs in with an AIyting access key, shows points, today's usage and daily quota, logs out, and keeps per-conversation defaults for model, route, aspect ratio, resolution and count."
+  zh: "把 DeepSeek Harness 接到 AIyting 的生图 MCP 端点，注册四个工具：aiyting_image_catalog（模型、线路与规格）、aiyting_image_settings（读取、报价与保存参数）、aiyting_image_generate（先返回报价，只有显式给出点数上限才提交）、aiyting_image_task（任务查询、等待，以及按账号保存在本机的未完成任务台账）。侧栏页面用 AIyting 接入密钥登录，显示点数、今日用量与每日上限，可退出登录，并按对话保存模型、线路、比例、分辨率与张数的默认值。"

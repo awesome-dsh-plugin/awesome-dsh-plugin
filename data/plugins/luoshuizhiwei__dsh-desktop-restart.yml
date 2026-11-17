@@ -1,0 +1,6 @@
+url: https://github.com/luoshuizhiwei/dsh-desktop-restart
+name: luoshuizhiwei/dsh-desktop-restart
+category: ui
+description:
+  en: 'Restarts the DeepSeek Harness desktop app from six places: sidebar top and bottom, conversation header, account menu, /restart-desktop and Settings. Ends only the main process so the host exits gracefully and sessions flush, asks before interrupting running work, and reports the downtime. Desktop app only.'
+  zh: '在桌面版六个位置加重启入口：侧栏上下、会话标题栏、账号菜单、/restart-desktop 与设置行。只结束 Electron 主进程，让宿主优雅退出、会话照常落盘；有任务在跑先问你，重启后报停机时长。仅适用于桌面版。'

@@ -1,0 +1,6 @@
+url: https://github.com/CREAIT-nl/dsh-plugins/tree/main/tool-disclosure
+name: CREAIT-nl/dsh-plugins#tool-disclosure
+category: tools
+description:
+  en: 'Progressive tool disclosure: a deferred tool group costs one catalog line instead of its full schemas until the model loads it with tool_search, with one switch per group in Settings and each group measured against the live registry.'
+  zh: '渐进式工具披露：被延后的工具组在每次请求中只占目录里的一行，模型用 tool_search 加载后才拿到完整 schema；设置页为每个组提供一个开关，各组开销按当前工具注册表实测。'

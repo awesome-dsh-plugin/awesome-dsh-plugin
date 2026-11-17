@@ -1,0 +1,7 @@
+url: https://github.com/khglobal/dsh-nocco
+name: khglobal/dsh-nocco
+category: dev
+description:
+  en: 'Describe a web system in chat and get a working one: admin panels, mobile apps, games. See it live beside the conversation, click any element to change it, start from your Excel data, and undo any step. Four design styles; sign-in and database built in.'
+  zh: '在对话里描述你要的网页系统，直接得到能用的成品：后台管理、手机应用、小游戏都可以。对话旁实时预览，点一下元素就能让 Agent 修改，可用 Excel 数据起步，每一步都能撤销。内置四种设计风格，自带登录和数据库。'
+icon: https://raw.githubusercontent.com/khglobal/dsh-nocco/main/assets/icon-180.png

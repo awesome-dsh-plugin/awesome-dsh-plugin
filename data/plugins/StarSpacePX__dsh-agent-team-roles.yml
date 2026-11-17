@@ -1,0 +1,6 @@
+url: https://github.com/StarSpacePX/dsh-agent-team-roles
+name: StarSpacePX/dsh-agent-team-roles
+category: workflow
+description:
+  en: "Manage agent-team roles in the dsh Web GUI: each role becomes its own selectable agent preset with per-role tool, skill and MCP switches."
+  zh: "在 dsh 的 Web GUI 里管理 agent team 角色：每个角色是一枚独立可选的 agent preset，按角色开关工具、技能与 MCP。"

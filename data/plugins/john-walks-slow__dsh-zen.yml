@@ -1,0 +1,6 @@
+url: https://github.com/john-walks-slow/dsh-zen
+name: john-walks-slow/dsh-zen
+category: ui
+description:
+  en: 'Zen Mode view tab and foreground time tracker for DeepSeek Harness: while the agent works, a calm conversation view shows running/done status, your latest user message, live activity hints and the final AI reply in markdown with one-line turn stats, plus screen-watching (focus) time tracking with daily/weekly Zen scores, a chat-hide toggle that hides tool calls and reasoning rows, auto enter/exit Zen on task start/complete, an Alt+Z shortcut and a Zen settings panel — pure client-side, stored in localStorage, no network.'
+  zh: '禅模式视图 + 前台盯屏时间统计插件：智能体后台运行时提供极简 Zen 标签页（进行中/结束状态文案、用户消息、动态提示、Markdown 渲染最终回复、单行轮次统计），统计前台盯屏时长并给出每日/每周禅值，支持一键隐藏中间过程（工具调用/推理行）、任务开始完成时自动进出禅、Alt+Z 快捷键与 Zen 设置面板——纯前端实现，数据存 localStorage，无网络请求。'

@@ -1,0 +1,7 @@
+url: https://github.com/xscanzm/dsh-hr-workbench
+name: xscanzm/dsh-hr-workbench
+category: ui
+description:
+  en: 'Runs a complete HR workbench inside DSH — a 3D office, recruiting pipeline (resume, interview, written test, score), employee roster, files, attendance, performance, training and analytics — with the site’s AI assistant answering through the model DSH already runs.'
+  zh: '在 DSH 里跑一整套 HR 工作台——3D 办公室、招聘流水线（简历、面试、笔试、综合成绩）、员工花名册、文件柜、考勤、绩效、培训与人事分析——站内 AI 助手直接用 DSH 的模型回答。'
+icon: https://raw.githubusercontent.com/xscanzm/dsh-hr-workbench/main/icon-180.png

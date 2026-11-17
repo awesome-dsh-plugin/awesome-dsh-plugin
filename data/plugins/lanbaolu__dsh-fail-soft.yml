@@ -1,0 +1,6 @@
+url: https://github.com/lanbaolu/dsh-fail-soft
+name: lanbaolu/dsh-fail-soft
+category: dev
+description:
+  en: 'Automatically disables a failing plugin so the rest of DSH keeps booting — by patching DSH’s own installed kernel (mount-time quarantine + self-healing), not preflight smoke-tests. Includes status tools and a one-click restore panel.'
+  zh: '自动隔离损坏插件、让 DSH 其余插件照常启动——通过补丁 DSH 自身已安装的内核实现（挂载期隔离 + 补丁自愈），而非 preflight 冒烟测试。附带状态工具与一键恢复面板。'

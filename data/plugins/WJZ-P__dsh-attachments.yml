@@ -1,0 +1,6 @@
+url: https://github.com/WJZ-P/dsh-attachments
+name: WJZ-P/dsh-attachments
+category: ui
+description:
+  en: Adds file and folder drag-and-drop attachments to the Web UI, with composer cards, persistent history, and workspace-backed paths.
+  zh: 为 Web UI 添加文件与文件夹拖放附件，提供输入栏卡片、持久化历史记录与工作区路径。

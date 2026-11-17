@@ -1,0 +1,6 @@
+url: https://github.com/JasonFreeLab/dsh-command-code-review
+name: JasonFreeLab/dsh-command-code-review
+category: git
+description:
+  en: 'Registers a /code-review slash command with five parallel review lenses and per-finding confidence scoring, for both pull requests and local code.'
+  zh: 注册 /code-review 斜杠命令，五个并行审查视角、逐发现置信度打分，同时支持拉取请求与本地代码审查。

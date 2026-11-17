@@ -1,0 +1,6 @@
+url: https://github.com/LeiSureYu/dsh-smart-download
+name: LeiSureYu/dsh-smart-download
+category: tools
+description:
+  en: 'Multi-threaded downloader plugin for DeepSeek Harness with bundled aria2: probes the target for Range support, then picks aria2 (4 or 8 connections by file size) or falls back to curl.'
+  zh: 'DSH 多线程下载插件，内置 aria2：先探测目标是否支持 Range，再按文件大小选择 aria2（4 或 8 连接）或回退 curl 单线程下载。'

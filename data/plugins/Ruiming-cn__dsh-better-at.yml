@@ -1,0 +1,6 @@
+url: https://github.com/Ruiming-cn/dsh-better-at
+name: Ruiming-cn/dsh-better-at
+category: ui
+description:
+  en: 'Fast `@` file/session reference caching for the DSH Web GUI: preloaded indexes, browser-local keystroke filtering and native mention serialization.'
+  zh: DSH Web 输入框 `@` 文件/会话引用加速：预加载索引、浏览器本地按键过滤、保留原生 mention 序列化。

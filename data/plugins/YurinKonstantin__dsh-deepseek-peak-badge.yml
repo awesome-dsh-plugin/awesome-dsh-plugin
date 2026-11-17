@@ -1,0 +1,7 @@
+url: https://github.com/YurinKonstantin/dsh-deepseek-peak-badge
+name: YurinKonstantin/dsh-deepseek-peak-badge
+category: usage
+description:
+  en: 'Composer-dock badge that shows whether DeepSeek peak pricing is active: red during peak hours, yellow in the 30 minutes before they start, green off-peak, hidden for non-DeepSeek providers.'
+  zh: '输入框下方的徽标：显示 DeepSeek 是否处于高峰计费时段——高峰时为红色，高峰开始前 30 分钟内为黄色，空闲为绿色；非 DeepSeek 来源时隐藏。'
+icon: https://raw.githubusercontent.com/YurinKonstantin/dsh-deepseek-peak-badge/main/assets/icon-180.png

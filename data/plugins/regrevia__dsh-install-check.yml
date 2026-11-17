@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/dsh-install-check
+name: regrevia/dsh-install-check
+category: market
+description:
+  en: 'No longer updated: folded into dsh-lifeguard (last release 0.2.2). It checked a plugin against what was installed and flagged only real conflicts.'
+  zh: '已停止更新：功能合并进 dsh-lifeguard（最后一版 0.2.2）。原来做的是：装插件前先跟已装的比一遍，真会撞上才说一句，先说原因再给动作，装还是照装。'
+icon: https://raw.githubusercontent.com/regrevia/dsh-install-check/main/icon.png

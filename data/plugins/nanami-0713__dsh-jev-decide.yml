@@ -1,0 +1,6 @@
+url: https://github.com/nanami-0713/dsh-jev-decide
+name: nanami-0713/dsh-jev-decide
+category: tools
+description:
+  en: 'TypeSafe Jev (System One decision model) as the jev_decide tool for DeepSeek Harness: noul, choice and score questions return calibrated probabilities; credentials reuse the DSH credential seam; 429/529 backoff retry built in.'
+  zh: '把 TypeSafe Jev（System One 决策模型）接入 DSH 的 jev_decide 工具：noul/choice/score 三种问题形状返回校准概率，凭证复用 DSH 凭证缝，内建 429/529 退避重试。'

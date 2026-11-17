@@ -1,0 +1,6 @@
+url: https://github.com/Minecraftbe/dsh-toolfold
+name: Minecraftbe/dsh-toolfold
+category: ui
+description:
+  en: Codex-style tool call folding, collapsing multiple tool calls into a single line.
+  zh: Codex 风格的工具调用折叠，将多个工具调用折叠到一行内。

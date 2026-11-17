@@ -1,0 +1,8 @@
+
+url: https://github.com/jalilahmad/deepseek-peak-indicator
+name: jalilahmad/deepseek-peak-indicator
+category: usage
+description:
+  en: Shows the current DeepSeek API peak or off-peak pricing period and a countdown to the next transition.
+  zh: 显示当前 DeepSeek API 高峰或非高峰计费时段，以及距离下一次切换的倒计时。
+icon: https://raw.githubusercontent.com/jalilahmad/deepseek-peak-indicator/main/assets/icon-180.png

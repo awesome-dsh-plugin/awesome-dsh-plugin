@@ -1,0 +1,6 @@
+url: https://github.com/kelunisi/dsh-neocortex
+name: kelunisi/dsh-neocortex
+category: memory
+description:
+  en: 'Markdown-authoritative second brain: layered memory, local recall, and a daily Bilibili feed that writes source pages and recent notes back to Obsidian.'
+  zh: 'Markdown 权威的本地第二大脑：分层记忆、本地回忆，以及每天自动看 B 站、把来源页与近况写回 Obsidian。'

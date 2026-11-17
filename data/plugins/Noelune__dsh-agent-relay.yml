@@ -1,0 +1,6 @@
+url: https://github.com/Noelune/dsh-agent-relay
+name: Noelune/dsh-agent-relay
+category: workflow
+description:
+  en: 'Loopback-first multi-agent message relay: HMAC-authenticated broker plus dsh plugin (relay_send/recv/peers/history), zero-dependency CLI and Python clients, wire protocol v1.0.'
+  zh: 本地优先的多 Agent 协作中继：HMAC 认证 broker + dsh 插件（relay_send/recv/peers/history）+ 零依赖 CLI 与 Python 客户端，wire protocol v1.0。

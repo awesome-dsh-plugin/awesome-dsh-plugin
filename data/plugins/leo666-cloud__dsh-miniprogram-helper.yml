@@ -1,0 +1,6 @@
+url: https://github.com/leo666-cloud/dsh-miniprogram-helper
+name: leo666-cloud/dsh-miniprogram-helper
+category: dev
+description:
+  en: 'WeChat Mini Program engineering tools: scan a project for pages missing from app.json, scaffold pages with automatic registration, fix orphan pages, manage subpackages, tabBar and components, and drive the WeChat DevTools CLI for preview QR codes and uploads.'
+  zh: '微信小程序工程工具：体检扫出没写进 app.json 的页面，建页面时自动注册，一键修复孤儿页，管理分包、tabBar 与组件，并可调用微信开发者工具出预览二维码、上传体验版。'

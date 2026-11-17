@@ -1,0 +1,6 @@
+url: https://github.com/zhang-tod/dsh-codebuddy
+name: zhang-tod/dsh-codebuddy
+category: model
+description:
+  en: Unofficial provider that connects Tencent CodeBuddy open platform models to DeepSeek Harness, with automatic model discovery and a settings page for the API key.
+  zh: 非官方 provider 插件：把腾讯 CodeBuddy 开放平台的模型接入 DeepSeek Harness，支持自动探测模型，并在设置页填写 API 密钥。

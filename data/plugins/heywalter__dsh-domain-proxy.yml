@@ -1,0 +1,6 @@
+url: https://github.com/heywalter/dsh-domain-proxy
+name: heywalter/dsh-domain-proxy
+category: model
+description:
+  en: 'Choose API hostnames from configured providers or add them manually to route matching DSH backend Fetch/Undici requests through an existing local HTTP(S) proxy, leaving other routes unchanged; optional in-memory records show actual dispatch paths, first-content wait, token throughput and usage without storing prompts, responses or API keys.'
+  zh: '从已配置的 Provider 选择 API 域名或手动添加，让命中的 DSH 后端 Fetch/Undici 请求通过已有本机 HTTP(S) 代理，其他请求沿用原有路线；可选开启内存调用记录，查看实际分发路线、首内容等待、token 速度与用量，不保存提示词、回答或 API Key。'

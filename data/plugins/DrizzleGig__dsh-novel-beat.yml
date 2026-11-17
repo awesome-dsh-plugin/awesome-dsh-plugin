@@ -1,0 +1,6 @@
+url: https://github.com/DrizzleGig/dsh-novel-beat
+name: DrizzleGig/dsh-novel-beat
+category: workflow
+description:
+  en: 'AI should not decide the key plot turns of your novel for you. Beat pauses at pivotal forks and presents 2-4 genuinely different directions, each with its own costs and consequences. You choose the direction, and the decision is recorded in a book-wide ledger for later chapters. Writing proceeds segment by segment, each segment recorded, and the story structure is checked when the chapter is done. Off by default; it never writes your prose.'
+  zh: 'AI 写小说时，关键剧情不该由模型顺手决定。「拍板」会在影响故事走向的节点暂停，给出 2–4 个真正不同的选择，说明各自代价与后续影响。由你决定，结果写入全书账本，供后续章节沿用；写作按段推进、逐段登记，并在完成后核对剧情结构。默认关闭，不写正文。'

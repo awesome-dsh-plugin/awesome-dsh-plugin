@@ -1,0 +1,6 @@
+url: https://github.com/liuming-dev/dsh-plugins/tree/main/annotation-rewind-scroll
+name: liuming-dev/dsh-plugins#annotation-rewind-scroll
+category: ui
+description:
+  en: Annotate replies and documents for the next message, edit past user messages and rerun from that point, and use keyboard shortcuts to navigate user messages or recall previous inputs in the composer.
+  zh: 为回复和文档添加随下一条消息发送的注释，编辑历史用户消息并从该处重新执行，使用快捷键浏览用户消息或在输入框调出历史输入。

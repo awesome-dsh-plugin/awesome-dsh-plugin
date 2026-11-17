@@ -1,0 +1,6 @@
+url: https://github.com/Phocinae/dsh-context-verdict
+name: Phocinae/dsh-context-verdict
+category: dev
+description:
+  en: 'Session-level verdict on whether compaction would lose unlanded state; structurally refuses per-block screening.'
+  zh: '会话级判定：compaction 是否会丢失未落地状态；结构上拒绝逐块筛选。'

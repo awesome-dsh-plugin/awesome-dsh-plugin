@@ -1,0 +1,7 @@
+url: https://github.com/9840333w/dsh-file-tracker
+name: 9840333w/dsh-file-tracker
+category: dev
+description:
+  en: 'Records the files and folders an AI agent creates, modifies, deletes, renames or moves, shows them in a draggable floating panel with unread counts, and persists the records as per-workspace JSONL logs.'
+  zh: '记录 AI 对文件与文件夹的新建、修改、删除、重命名与移动，在可拖拽悬浮窗中实时展示未读数，并按工作区持久化为 JSONL 日志。'
+icon: https://raw.githubusercontent.com/9840333w/dsh-file-tracker/main/assets/icon-180.png

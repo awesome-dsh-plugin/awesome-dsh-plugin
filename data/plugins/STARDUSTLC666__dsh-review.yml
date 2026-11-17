@@ -1,0 +1,6 @@
+url: https://github.com/STARDUSTLC666/dsh-review
+name: STARDUSTLC666/dsh-review
+category: git
+description:
+  en: Snapshot-bound multi-agent Git review with independent verification, majority voting, resolution tracking and an AI review gate.
+  zh: 绑定代码快照的多智能体 Git 审阅，支持独立复核、多数投票、问题处置追踪和 AI 审阅门禁。

@@ -1,0 +1,7 @@
+url: https://github.com/charovo0059/dsh-model-vision
+name: charovo0059/dsh-model-vision
+category: vision
+description:
+  en: Fills in the vision capability that DSH's "fetch models" step drops, so image-capable models stop being declared text-only, and marks them in the model name.
+  zh: 补上 DSH「获取可用模型」漏记的视觉能力，让能看图的模型不再被当成纯文本，并在模型名后标出「可看图」。
+icon: https://raw.githubusercontent.com/charovo0059/dsh-model-vision/main/assets/icon-180.png

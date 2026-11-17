@@ -1,0 +1,7 @@
+url: https://github.com/Ethan1999991231/dsh-sidebar-dock
+name: Ethan1999991231/dsh-sidebar-dock
+category: ui
+description:
+  en: Docks the workspace and session list to the left, right, top or bottom edge, optionally folding it into a 5px edge band that expands on hover, with the reveal zone and the left rail width adjustable in Settings → General; the plugin rail, brand row and settings button stay where they are.
+  zh: 把工作区与会话记录列表停靠到左、右、上、下任意一边，可收成 5px 贴边细条、鼠标靠近再展开，触发范围与左栏宽度都能在设置里的通用项中调整；插件图标条、品牌行和底部设置钮留在原位。
+icon: https://raw.githubusercontent.com/Ethan1999991231/dsh-sidebar-dock/main/icon.png

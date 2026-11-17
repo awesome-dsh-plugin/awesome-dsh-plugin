@@ -1,0 +1,6 @@
+url: https://github.com/moldkey/dsh-plugin-cadpop
+name: moldkey/dsh-plugin-cadpop
+category: tools
+description:
+  en: 'Read-only tools for cadpop.com: parametric template list, help-center pages and drawing-tools page, plus links to the DFM check and the online editor, across 5 tools. Network-only.'
+  zh: 'cadpop.com 只读工具：参数化模板清单、帮助中心页面与图纸工具页，另提供 DFM 检查与在线编辑器的入口链接，共 5 个工具。仅网络访问。'

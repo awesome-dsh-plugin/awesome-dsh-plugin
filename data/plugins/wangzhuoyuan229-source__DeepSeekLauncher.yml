@@ -1,0 +1,7 @@
+url: https://github.com/wangzhuoyuan229-source/DeepSeekLauncher
+name: DeepSeekLauncher
+category: tools
+tarball: https://github.com/wangzhuoyuan229-source/DeepSeekLauncher/releases/download/v1.0.0/dsh-deepseek-launcher-1.0.0.tgz
+description:
+  en: 'macOS desktop launcher with an installation skill: starts or reuses the local DeepSeek Harness web service and opens it in Google Chrome, with a transparent character and thought bubble icon.'
+  zh: macOS 桌面启动器与安装 skill：启动或复用本地 DeepSeek Harness Web 服务，固定使用 Google Chrome 打开，并提供透明人物与对话框图标。

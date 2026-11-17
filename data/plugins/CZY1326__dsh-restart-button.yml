@@ -1,0 +1,6 @@
+url: https://github.com/CZY1326/dsh-restart-button
+name: CZY1326/dsh-restart-button
+category: ui
+description:
+  en: 'Adds a circular restart button to the session header, plus an optional app.asar patch that also puts a Restart row in the tray menu.'
+  zh: '在会话标题栏加一枚圆形重启按钮；配合可选的 app.asar 等长补丁，还能在托盘菜单加一项「重启」，先结束进程再把应用拉起来。'

@@ -1,0 +1,17 @@
+# Submission for the curated list https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+#
+# Copy this file to data/plugins/sheilacraig__dsh-windows-mcp-lite.yml in a fork
+# of that repository and open one PR that adds that single file. Do not edit the
+# generated READMEs there.
+#
+# Before submitting:
+#   - the repository must be at least 1 day old (CI checks this), so submit the
+#     day after the first push;
+#   - the repository needs the `dsh-plugin` GitHub topic;
+#   - the PR must add at most 3 entries.
+url: https://github.com/sheilacraig/dsh-windows-mcp-lite
+name: sheilacraig/dsh-windows-mcp-lite
+category: tools
+description:
+  en: Config-only DeepSeek Harness bundle that mounts the in-box MCP client bridge against CursorTouch/Windows-MCP, excluding PowerShell, FileSystem, Registry, Process and Scrape by default (16 of the 21 tools upstream 0.8.8 publishes). Requires uv on PATH.
+  zh: 纯配置型 DeepSeek Harness 插件，用本体自带的 MCP 客户端桥接 CursorTouch/Windows-MCP，默认排除 PowerShell、FileSystem、Registry、Process、Scrape（上游 0.8.8 共 21 个工具，保留 16 个）。需要 uv 在 PATH 上。

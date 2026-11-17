@@ -1,0 +1,7 @@
+url: https://github.com/Signalight/law-thesis-review
+name: Signalight/law-thesis-review
+category: skill
+description:
+  en: 'DeepSeek Harness skill plugin that reviews law theses (international economic law and other legal topics): reads a student Word .docx, checks it against a bundled common-issue checklist, applies definite fixes as tracked changes, and adds Word comments for overall/section problems and missing-basis issues, then emits a short objective overall review plus a fix list.'
+  zh: 'DeepSeek Harness 技能插件：批改法学论文（国际经济法等）。读取学生 Word 论文，对照打包的常见问题清单逐项检查；可直接确定的错漏以 Word 修订模式修改，对部分整体问题、缺依据/缺澄清之处写 Word 批注；并输出简短、客观、以宏观点评为主的总体评语与待修改清单。'
+

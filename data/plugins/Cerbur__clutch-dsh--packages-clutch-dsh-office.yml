@@ -1,0 +1,6 @@
+url: https://github.com/Cerbur/clutch-dsh/tree/main/packages/clutch-dsh-office
+name: Cerbur/clutch-dsh#clutch-dsh-office
+category: ui
+description:
+  en: "Brings active DSH sessions into a 3D 'Overcooked' kitchen: AI agents work, whale-girls wander the kitchen, and you watch from the side; status bubbles show who's cooking, waiting, or done with one-click navigation — originally built to check progress, now you just can't stop watching the whales."
+  zh: "把活跃会话放进 3D 胡闹厨房：AI 在跑任务，鲸鱼娘在厨房溜达，你在旁边看鱼；常驻气泡一眼看清谁在干活、谁在等回应、谁已交作业，点击直达会话继续干活——本来是为了看进度，现在只想再看一眼鱼。"

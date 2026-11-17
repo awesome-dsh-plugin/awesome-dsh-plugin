@@ -1,0 +1,6 @@
+url: https://github.com/wzn16/dsh-auto-archive
+name: wzn16/dsh-auto-archive
+category: session
+description:
+  en: 'Auto-archives sessions idle beyond a configurable threshold, with safety guards (never touches live or running sessions), plus a full archived-session management UI: list, unarchive, safe delete and content preview.'
+  zh: '按闲置天数自动归档冷会话（带运行中、驻留会话安全护栏），并提供归档会话管理面板：查看、释放、安全删除与内容预览。'

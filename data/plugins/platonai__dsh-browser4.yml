@@ -1,0 +1,6 @@
+url: https://github.com/platonai/dsh-browser4
+name: platonai/dsh-browser4
+category: browser
+description:
+  en: 'Installs the browser4-cli runtime and registers the Browser4 skills (browser4-cli, browser4-experience, browser4-plugin, scent-miner) into the DSH skill registry, providing an AI-native browser engine for autonomous agents, intelligent extraction, and large-scale web automation.'
+  zh: '安装 browser4-cli 运行时，并将 Browser4 技能集（browser4-cli、browser4-experience、browser4-plugin、scent-miner）注册到 DSH 技能库，提供面向自主 Agent、智能提取与大规模网页自动化的 AI 原生浏览器引擎。'

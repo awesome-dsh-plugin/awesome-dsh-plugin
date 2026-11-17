@@ -1,0 +1,7 @@
+url: https://github.com/FlashPoint007/dsh-wecom-soul-bot
+name: FlashPoint007/dsh-wecom-soul-bot
+category: notify
+description:
+  en: 'WeCom smart bot over the official long connection (Bot ID + Secret, no public callback): persona, sender identity tags, three-layer memory with a forgetting curve, reminders, opt-in proactive chat, owner-only work mode guarded by tools.guard, auto-steer, image input and a wecomSoulBot host service; group chats answer when @-mentioned.'
+  zh: 企业微信智能机器人官方长连接接入（Bot ID + Secret，无需公网回调）：人设、发送者身份标记、带遗忘曲线的三层记忆、提醒、可选主动搭话、由 tools.guard 拦截的仅主人工作模式、运行中自动插话、图片输入和 wecomSoulBot 宿主服务；群聊 @ 时回复。
+tarball: https://github.com/FlashPoint007/dsh-wecom-soul-bot/releases/latest/download/dsh-wecom-soul-bot.tgz

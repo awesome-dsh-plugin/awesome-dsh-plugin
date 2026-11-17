@@ -1,0 +1,6 @@
+url: https://github.com/lhylhy2024/dsh-simple-cost
+name: lhylhy2024/dsh-simple-cost
+category: usage
+description:
+  en: DeepSeek account balance above the sidebar account area, the running cost of the open conversation, the cost of each turn beside its token count, and a one-click AI breakdown for any turn above a token threshold.
+  zh: 在侧边栏账户区上方显示 DeepSeek 账户余额、当前会话累计花费与逐轮费用，并对超出 token 阈值的单轮提供一键 AI 分析。

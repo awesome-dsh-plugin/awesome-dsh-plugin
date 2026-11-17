@@ -1,0 +1,6 @@
+url: https://github.com/TGWgulugu/dsh-wsl-bridge
+name: TGWgulugu/dsh-wsl-bridge
+category: wsl
+description:
+  en: Runs persistent bash and Linux-path file and search tools inside the current WSL distribution. A new conversation that selects WSL mode asks which of that distribution's folders to use as the workspace, and nothing is installed inside the distribution.
+  zh: 在当前 WSL 发行版里运行持久 bash 以及 Linux 路径的文件与搜索工具。新建对话选中 WSL 后，从该发行版的文件夹里指定工作区，且不会在发行版内安装任何东西。

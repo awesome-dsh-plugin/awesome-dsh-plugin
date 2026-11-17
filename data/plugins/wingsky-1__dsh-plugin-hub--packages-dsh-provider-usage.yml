@@ -1,0 +1,6 @@
+url: https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-provider-usage
+name: wingsky-1/dsh-plugin-hub#packages/dsh-provider-usage
+category: usage
+description:
+  en: 'Multi-provider usage stats framework (v2 adapter contract): persistent capsule plus detail panel; DeepSeek official (interval-bookkeeping daily usage derivation with a peak/valley countdown badge, working even without an official usage endpoint) and OpenCode Go built in; any other data source joins by dropping in a single mjs adapter file, hot-swappable from the settings page, with API keys kept on the host.'
+  zh: 多 provider 用量统计框架（v2 适配器契约）：常驻胶囊 + 详情面板；内置 DeepSeek 官方（区间记账法推算每日用量 + 峰谷倒计时徽标，官方无用量接口也能算）与 OpenCode Go；其他数据源只需放入一个 mjs 适配器文件即可接入，设置页热插拔，密钥只留在宿主端。

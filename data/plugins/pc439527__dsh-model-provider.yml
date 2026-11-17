@@ -1,0 +1,6 @@
+url: https://github.com/pc439527/dsh-model-provider
+name: pc439527/dsh-model-provider
+category: ui
+description:
+  en: 'Provider-first three-level model selector for the DSH Web model seat: pick a provider, then a model from that provider, with inline search on both levels, failed-provider retry rows, and a Model · Provider trigger.'
+  zh: 'Provider-first 三级模型选择器：先选供应商再选模型，两级均可行内搜索，失败供应商以可重试行展示，触发器显示 Model · Provider。'

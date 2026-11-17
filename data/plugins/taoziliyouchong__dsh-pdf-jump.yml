@@ -1,0 +1,7 @@
+url: https://github.com/taoziliyouchong/dsh-pdf-jump
+name: taoziliyouchong/dsh-pdf-jump
+category: docs
+description:
+  en: Reads local PDFs in the DSH sidebar — jump to any page and page through the whole document.
+  zh: 在 DSH 侧栏里看本地 PDF：跳到任意一页，整本连着看。
+icon: https://raw.githubusercontent.com/taoziliyouchong/dsh-pdf-jump/main/assets/icon-180.png

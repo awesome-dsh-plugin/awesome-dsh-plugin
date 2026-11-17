@@ -1,0 +1,7 @@
+url: https://github.com/Cui-chengyu/dsh-wechat-theme
+name: Cui-chengyu/dsh-wechat-theme
+category: theme
+description:
+  en: 'WeChat-style skin for the Harness web UI: grey chat list, green outgoing bubbles, white incoming bubbles, a green send button, and a 已归档 tag on archived sessions.'
+  zh: '把 Harness 界面换成微信风格：灰白配色、绿色气泡、绿色发送键、微信字体，已归档会话带「已归档」标签。'
+icon: https://raw.githubusercontent.com/Cui-chengyu/dsh-wechat-theme/main/assets/icon-180.png

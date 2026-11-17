@@ -1,0 +1,6 @@
+url: https://github.com/jjoni12/dsh-locale-ko
+name: jjoni12/dsh-locale-ko
+category: ui
+description:
+  en: Korean UI language pack that adds 한국어 to Settings → General → Language through the official language-pack API.
+  zh: 韩语界面语言包，通过官方语言包 API 在 设置 → 通用 → 语言 中添加韩语（한국어）。

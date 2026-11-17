@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-phocinae
+name: PerryLink/dsh-phocinae
+category: tools
+description:
+  en: 'Local non-generative decision layer: phocinae_ask and phocinae_gate return typed verdicts with calibrated confidence from a small decision model, with fail-closed escalation. Needs a local phocinae-server (pip install phocinae-server) with the Phocinae-Largha-150M-v1 model on loopback port 8155.'
+  zh: '本地非生成式决策层：phocinae_ask 与 phocinae_gate 由小型决策模型返回带校准置信度的类型化裁决，并对无法回答的情况 fail-closed 升级。需在本机 8155 端口运行 phocinae-server（pip 安装）并加载 Phocinae-Largha-150M-v1 模型。'

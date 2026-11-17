@@ -1,0 +1,7 @@
+url: https://github.com/oscarka/deepseekharness-remotecontrol
+name: oscarka/deepseekharness-remotecontrol
+category: remote
+description:
+  en: 'Mobile Web PWA and Feishu remote control hub for DeepSeek Harness (plus optional local adapters for Antigravity, Codex, Claude Code, WorkBuddy and Doubao): starts an embedded HTTP hub on 0.0.0.0:8788 gated by a bearer token and 6-character pairing code, with session switching, file browsing, media preview, tool approvals, Web Push notifications, and optional outbound relay to a self-hosted Cloud Hub or Feishu bot.'
+  zh: 'DeepSeek Harness 的手机端 Web PWA 与飞书远程控制中心（可选接入本机 Antigravity、Codex、Claude Code、WorkBuddy 与豆包）：默认在 0.0.0.0:8788 启动受令牌与 6 位配对码保护的局域网网关，支持会话切换、文件浏览与媒体预览、工具审批、Web Push 推送，以及可选外连自建云端 Hub 或飞书机器人长连接。'
+tarball: https://github.com/oscarka/deepseekharness-remotecontrol/releases/download/v0.7.2/deepseekharness-remotecontrol-0.7.2.tgz

@@ -1,0 +1,9 @@
+url: https://github.com/han8421/dsh-desktop-ball
+name: han8421/dsh-desktop-ball
+category: ui
+
+description:
+  en: "Windows-only desktop floating ball with a bilingual WebView2 quick-chat window, including in-window question and approval cards."
+  zh: "Windows 桌面悬浮球，内置中英文 WebView2 快捷聊天窗口，支持在窗口内回答提问和审批操作。"
+
+icon: https://raw.githubusercontent.com/han8421/dsh-desktop-ball/main/icon.png

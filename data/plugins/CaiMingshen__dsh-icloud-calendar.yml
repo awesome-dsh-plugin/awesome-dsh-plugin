@@ -1,0 +1,6 @@
+url: https://github.com/CaiMingshen/dsh-icloud-calendar
+name: CaiMingshen/dsh-icloud-calendar
+category: tools
+description:
+  en: "Read and write Apple iCloud Calendar over CalDAV through five tools: list calendars, read a window with recurring events expanded, create an event, and delete behind a dry run that must confirm the exact object count. Credentials come from DPAPI, Keychain or libsecret, or from an environment variable."
+  zh: "通过 CalDAV 读写苹果 iCloud 日历，提供五个工具：列出日历、按时间窗读取并展开重复日程、创建事件，以及先干跑、按对象数确认后再删除。凭据保存在 DPAPI／钥匙串／libsecret 或环境变量中。"

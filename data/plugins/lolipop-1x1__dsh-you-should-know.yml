@@ -1,0 +1,6 @@
+url: https://github.com/lolipop-1x1/dsh-you-should-know
+name: lolipop-1x1/dsh-you-should-know
+category: notify
+description:
+  en: Surfaces important facts and trade-offs from the current task, with on-demand explanations and optional discussion in the main session.
+  zh: 根据当前任务上下文提醒重要事实和方案取舍，支持展开解释并带入主会话讨论。

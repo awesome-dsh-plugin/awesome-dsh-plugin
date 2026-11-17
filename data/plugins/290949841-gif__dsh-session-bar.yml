@@ -1,0 +1,8 @@
+url: https://github.com/290949841-gif/dsh-session-bar
+name: 290949841-gif/dsh-session-bar
+category: session
+icon: https://raw.githubusercontent.com/290949841-gif/dsh-session-bar/main/docs/icon.png
+tarball: https://github.com/290949841-gif/dsh-session-bar/releases/download/v0.1.2/dsh-session-bar-0.1.2.tgz
+description:
+  zh: "侧栏会话状态条：会话跑起来时整行变成绿色卡片，底部一条带流动小点的进度条按估算时长推进，行首直接显示完成百分比，超时后改显示精确到秒的已用时长；跑完后整行转橙并一直亮着，直到你点开那条对话才熄灭。不用切过去看，瞄一眼侧栏就知道每条会话在干嘛。"
+  en: "A status bar for the DSH sidebar. While a session runs, its row becomes a green card with a progress bar driven by an estimate of how long the turn will take (drifting dotted track), plus a live percentage on the leading edge that switches to elapsed mm:ss once the estimate is exceeded. When the turn finishes the row turns orange and stays lit until you actually open that conversation. Pure client-side, no extra services, a few localStorage keys."

@@ -1,0 +1,6 @@
+url: https://github.com/ZilongYang/dsh-session-titler
+name: ZilongYang/dsh-session-titler
+category: session
+description:
+  en: 'Adds a manual, confirm-first title generator: a header button and a session-row menu entry ask a model to summarize the whole conversation, show the proposal in an editable dialog, and rename the session only after you confirm — without registering a title provider or changing automatic titling.'
+  zh: '手动触发的「先确认再改名」标题生成器：顶栏按钮与会话行菜单各一个入口，让模型总结整段会话给出标题，在可编辑弹窗里确认后才重命名会话；不注册标题 provider，不影响自带的自动标题。'

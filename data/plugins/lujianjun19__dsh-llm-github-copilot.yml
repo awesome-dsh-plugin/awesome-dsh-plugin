@@ -1,0 +1,6 @@
+url: https://github.com/lujianjun19/dsh-llm-github-copilot
+name: lujianjun19/dsh-llm-github-copilot
+category: model
+description:
+  en: 'GitHub Copilot LLM adapter: OAuth device-flow sign-in, live model discovery from the Copilot API, vision support for image-capable models (gpt-4.1, gpt-4o), and two wire protocols (Chat Completions and Responses API) with automatic endpoint routing per model.'
+  zh: 'GitHub Copilot LLM 适配器：OAuth 设备码登录、从 Copilot API 动态发现模型、视觉模型图片输入支持（gpt-4.1、gpt-4o），以及 Chat Completions 与 Responses 双协议，按模型自动路由。'

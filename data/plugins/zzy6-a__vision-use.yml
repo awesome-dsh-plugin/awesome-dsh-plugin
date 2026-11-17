@@ -1,0 +1,7 @@
+url: https://github.com/zzy6-a/vision-use
+name: zzy6-a/vision-use
+category: tools
+description:
+  en: 'Desktop computer-use for DSH: captures the Windows screen into the agent vision channel and drives mouse/keyboard through a Codex-style overlay with Esc abort; auto-detects Windows native or WSL hosts.'
+  zh: 'DSH 桌面操作插件：把 Windows 屏幕送进 Agent 视觉通道，并通过 Codex 风格覆盖层驱动鼠标/键盘，支持 Esc 中止；自动识别 Windows 原生或 WSL 宿主。'
+tarball: https://github.com/zzy6-a/vision-use/releases/download/v0.2.0/dsh-vision-0.2.0.tgz

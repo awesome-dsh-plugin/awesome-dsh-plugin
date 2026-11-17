@@ -1,0 +1,7 @@
+url: https://github.com/VeillessRose/dsh-ai-fastvideo
+name: VeillessRose/dsh-ai-fastvideo
+category: tools
+description:
+  en: 'Text-driven video generator for DSH: writes one Canvas page per scene from 341 bundled style prompts, renders frames with a headless browser, then adds TTS narration, music and sound effects with ffmpeg.'
+  zh: '文本驱动的视频生成器：按 341 条内置风格提示词逐屏生成 Canvas 页面，用无头浏览器渲帧，再用 ffmpeg 合成配音、配乐与音效。'
+icon: https://raw.githubusercontent.com/VeillessRose/dsh-ai-fastvideo/main/assets/icon-180.png

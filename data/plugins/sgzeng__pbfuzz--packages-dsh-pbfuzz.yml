@@ -1,0 +1,6 @@
+url: https://github.com/sgzeng/pbfuzz/tree/master/packages/dsh-pbfuzz
+name: sgzeng/pbfuzz#dsh-pbfuzz
+category: security
+description:
+  en: 'Directed fuzzing driven by an LLM agent: from a target repository and a bug (CVE description, patch, crash trace, or file:line), it runs a PLAN, IMPLEMENT, EXECUTE, REFLECT loop in which the model writes Python input generators, until an input triggers the campaign''s stderr-pattern oracle or the campaign stops.'
+  zh: '由 LLM 智能体驱动的定向模糊测试：给定目标仓库和一个缺陷（CVE 描述、补丁、崩溃调用栈或 file:line），它运行 PLAN、IMPLEMENT、EXECUTE、REFLECT 循环，由模型编写 Python 输入生成器，直到某个输入触发该 campaign 基于 stderr 模式匹配的 oracle，或 campaign 停止。'

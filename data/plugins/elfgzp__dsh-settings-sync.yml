@@ -1,0 +1,6 @@
+url: https://github.com/elfgzp/dsh-settings-sync
+name: elfgzp/dsh-settings-sync
+category: dev
+description:
+  en: 'Backs up and restores the whole DSH profile through a private Git repository: profile configuration, per-plugin settings, skills, installed plugins and MCP servers, with one-click backup and restore and a restore point written before anything is overwritten.'
+  zh: '通过一个私有 Git 仓库备份与恢复整个 DSH profile：profile 配置、各插件设置、技能、已装插件与 MCP 服务器，提供一键备份与恢复，并在覆盖任何内容之前先写一个还原点。'

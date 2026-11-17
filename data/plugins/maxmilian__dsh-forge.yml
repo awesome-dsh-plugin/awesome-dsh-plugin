@@ -1,0 +1,6 @@
+url: https://github.com/maxmilian/dsh-forge
+name: maxmilian/dsh-forge
+category: git
+description:
+  en: 'Read-only Gitea and Forgejo tools over the REST API both projects share: instance info, repository listing, issue and pull request search and read, PR diffs and changed files, and Actions runs, jobs and job logs. Tool metadata is available in English, Traditional Chinese, Simplified Chinese and Japanese.'
+  zh: '面向自建 Gitea / Forgejo 的只读工具，走两者共用的 REST API：实例信息、仓库列表、议题与 PR 搜索和读取、PR diff 与变更文件，以及 Actions 运行、任务与任务日志。工具元数据支持英文、繁体中文、简体中文与日文。'

@@ -1,0 +1,6 @@
+url: https://github.com/zilliztech/dsh-milvus
+name: zilliztech/dsh-milvus
+category: tools
+description:
+  en: 'Read-only DSH Web plugin for inspecting and searching Milvus or Zilliz Cloud collections from chat, including scalar, BM25, dense, and hybrid queries.'
+  zh: '只读 DSH Web 插件，可在对话中检查和搜索 Milvus 或 Zilliz Cloud Collection，支持标量、BM25、稠密向量与混合查询。'

@@ -1,0 +1,7 @@
+url: https://github.com/121212165/dsh-plugin-task-forge
+name: 121212165/dsh-plugin-task-forge
+category: workflow
+tarball: https://github.com/121212165/dsh-plugin-task-forge/releases/download/v0.2.0/dsh-plugin-task-forge-0.2.0.tgz
+description:
+  en: "Compiles a rough need into a versioned task book (goal / context / constraints / acceptance / decisions / open gaps, all numbered) and hands it to any AI window losslessly: the receiver must pass a read-back handshake — restate, list gaps, declare READY — before work starts; /answer closes gaps with an automatic version bump, /forge-list tracks which window holds which version."
+  zh: "把大白话编译成开源标准任务书（目标/约束/验收/决策/缺口全编号），再无损交接给任意窗口的 AI：接收方必须通过回读握手——复述理解、列出缺口、声明 READY——才被允许开工；缺口答案回填自动升版本，台账记录哪个窗口持有哪个版本。"

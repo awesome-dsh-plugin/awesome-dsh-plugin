@@ -1,0 +1,6 @@
+url: https://github.com/kendu76/dsh-music-player
+name: kendu76/dsh-music-player
+category: fun
+description:
+  en: 'Music, audiobook, radio and news player for DeepSeek Harness: streams your local music folder over HTTP, reads local .txt/.epub novels aloud with AI voices, plays online QQ/Kugou/Netease music and internet radio (HLS supported), and broadcasts daily news digests — all driven from the UI or by telling the agent through the music_play model tool.'
+  zh: 'DSH 音乐/小说播放器：在网页里听本地音乐（HTTP 流式）、用 AI 声音朗读本地小说（.txt/.epub）、播放在线 QQ/酷狗/网易云音乐与网络电台（支持 HLS 直播流）、定时播报每日新闻；可在面板操作，也可让 agent 通过 music_play 工具直接点播。'

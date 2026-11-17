@@ -1,0 +1,6 @@
+url: https://github.com/XvBenny/dsh-chat-search
+name: XvBenny/dsh-chat-search
+category: session
+description:
+  en: 'Full-text search over DSH conversation history: decompresses the persisted per-session session.v4.jsonl.zstd logs, matches user/assistant message text, and opens a hit at the matching message (archived sessions are unarchived first). Also binds Ctrl+F.'
+  zh: 'DSH 对话全文搜索：解压持久化的 session.v4.jsonl.zstd 会话日志，匹配用户与助手消息正文，点击结果跳转到对应会话并定位消息（归档会话会先取消归档）。支持 Ctrl+F 唤起。'

@@ -1,0 +1,7 @@
+url: https://github.com/Admilkk/dsh-sidechat
+name: Admilkk/dsh-sidechat
+category: ui
+description:
+  en: 'Temporary side conversations seeded from the main context, with quoted questions, main-task status updates, and replies returned to the main draft.'
+  zh: '继承创建时主线上下文的临时侧聊，支持引用提问、主线状态提醒与回复回传草稿。'
+tarball: https://github.com/Admilkk/dsh-sidechat/releases/download/v0.2.3/dsh-codex-sidechat-0.2.3.tgz

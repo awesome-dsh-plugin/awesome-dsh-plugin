@@ -1,0 +1,6 @@
+url: https://github.com/var-lin/dsh-plugin-layout-organizer
+name: var-lin/dsh-plugin-layout-organizer
+category: ui
+description:
+  en: 'Drag-and-drop reordering, official/third-party dividers and a stash panel for the buttons DSH renders in the sidebar, the sidebar footer, the conversation tabs, the composer dock and Settings. Only display position changes; the plugin registry is untouched.'
+  zh: '对 DSH 投放到侧边栏顶部、侧边栏底部、对话标签、输入框停靠行与设置页导航的插件按钮做拖拽排序、官方/第三方分隔线与按钮收纳。只改变显示位置，不改动插件注册表。'

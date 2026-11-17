@@ -1,0 +1,6 @@
+url: https://github.com/tianfangliu98-cpu/dsh-image-hub
+name: tianfangliu98-cpu/dsh-image-hub
+category: tools
+description:
+  en: 'Image generation through eight provider APIs (Labnana, OpenAI, Gemini, Seedream, DashScope, xAI, Zhipu, ComfyUI) with multiple saved profiles, a per-conversation gallery, and credit tracking on Labnana.'
+  zh: '多 API 生图：Labnana、OpenAI、Gemini、Seedream、DashScope、xAI、智谱、ComfyUI 八种接口，支持多套配置、对话画廊与 Labnana 积分计量。'

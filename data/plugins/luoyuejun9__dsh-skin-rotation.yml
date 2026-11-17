@@ -1,0 +1,7 @@
+url: https://github.com/luoyuejun9/dsh-skin-rotation
+name: luoyuejun9/dsh-skin-rotation
+category: theme
+tarball: https://github.com/luoyuejun9/dsh-skin-rotation/releases/latest/download/dsh-skin-rotation.tgz
+description:
+  en: 'Picks a random installed skin on every DeepSeek Harness launch and enables exactly that skin, with an on/off switch and a shuffle action inside the Skins settings page. Skins the running host would refuse to load are excluded, and a manual switch still applies until the next launch.'
+  zh: '每次启动 DeepSeek Harness 时随机启用一个已安装皮肤，并在「设置 → 皮肤」页内提供开关与「立即随机换一个」按钮。宿主会拒绝加载的皮肤自动排除；手动切换的皮肤一直有效到下次启动。'

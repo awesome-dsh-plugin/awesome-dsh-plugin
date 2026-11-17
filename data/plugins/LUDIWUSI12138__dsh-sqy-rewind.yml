@@ -1,0 +1,6 @@
+url: https://github.com/LUDIWUSI12138/dsh-sqy-rewind
+name: LUDIWUSI12138/dsh-sqy-rewind
+category: session
+description:
+  en: Rewinds a session to before a chosen user turn, from a button beside Copy under your own message — the model-visible surface is replaced in place and the interface hides the rewound turns, without patching DSH source or deleting the original session log.
+  zh: 在你自己的消息下方、与「复制」并排的回退按钮，把会话退回该轮发起之前——模型可见历史就地遮蔽，界面同步隐藏被回退的轮次，不改 DSH 本体源码、不删原始日志。

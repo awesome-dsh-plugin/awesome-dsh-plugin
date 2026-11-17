@@ -1,0 +1,7 @@
+url: https://github.com/xiaoxiaolelang-ai/dsh-next-steps
+name: xiaoxiaolelang-ai/dsh-next-steps
+category: ui
+description:
+  en: "Per-turn next-step suggestions under each reply: a 2x2 grid of up to four clickable actions, projected from that turn's own tool result instead of a shared per-session store."
+  zh: "在每轮回复下方按 2×2 给出最多四条可点的下一步建议；按轮次投影，不会把上一轮的建议带到下一轮。"
+tarball: https://github.com/xiaoxiaolelang-ai/dsh-next-steps/releases/download/v0.1.19/dsh-next-steps-0.1.19.tgz

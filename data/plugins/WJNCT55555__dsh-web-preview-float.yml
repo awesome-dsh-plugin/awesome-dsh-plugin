@@ -1,0 +1,6 @@
+url: https://github.com/WJNCT55555/dsh-web-preview-float
+name: WJNCT55555/dsh-web-preview-float
+category: ui
+description:
+  en: 'Google AI Studio-style floating preview for the Web UI: a draggable/resizable iframe preview with aspect-ratio and resolution presets, plus a VS Code-style code window with direct editing, confirmed writes, and session-log recording.'
+  zh: Web UI 悬浮预览与代码窗口：Google AI Studio 风格的 iframe 预览（宽幅比/分辨率预设、一键放大），VS Code 风格代码窗支持直接编辑，保存需确认并写入会话日志。

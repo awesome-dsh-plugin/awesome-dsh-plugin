@@ -1,0 +1,6 @@
+url: https://github.com/yutianliang/dsh-assistant-bubble
+name: yutianliang/dsh-assistant-bubble
+category: ui
+description:
+  en: Adds a configurable bubble behind assistant replies, with an optional liquid-glass material and matching chrome for process, tool-call and reasoning rows.
+  zh: 给助手回复加一层可调节的气泡底，可选液态玻璃材质，并让过程、工具调用与思考等周边行同步。

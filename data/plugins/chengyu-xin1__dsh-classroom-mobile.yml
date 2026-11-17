@@ -1,0 +1,7 @@
+url: https://github.com/chengyu-xin1/dsh-classroom-mobile
+name: chengyu-xin1/dsh-classroom-mobile
+category: tools
+description:
+  en: 'Record lecture audio in a phone browser and transcribe it locally with faster-whisper; generates summaries, mind maps and quizzes with a wrong-question gate plus a focus report, and serves the phone UI over a built-in HTTPS tunnel from any network. Transcription needs local Python, ffmpeg and faster-whisper (the setup script installs them plus a ~460 MB Whisper small model); the public HTTPS tunnel uses a Windows cloudflared build and has no access code by default, so anyone with the link can open it.'
+  zh: '手机浏览器录课堂音频，本机 faster-whisper 转写；生成总结、思维导图、由易到难的题与错题门控、专注报告；内置 HTTPS 隧道，手机在任何网络都能连。转写需本机 Python、ffmpeg 与 faster-whisper（setup 脚本会安装它们并下载约 460 MB 的 Whisper small 模型）；公网 HTTPS 隧道使用 Windows 版 cloudflared，默认不开访问码，拿到链接的人都能打开。'
+icon: https://raw.githubusercontent.com/chengyu-xin1/dsh-classroom-mobile/main/assets/icon-180.png

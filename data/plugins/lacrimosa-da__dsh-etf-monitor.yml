@@ -1,0 +1,6 @@
+url: https://github.com/lacrimosa-da/dsh-etf-monitor
+name: lacrimosa-da/dsh-etf-monitor
+category: tools
+description:
+  en: 'Side panel for DeepSeek Harness that tracks a 15-ETF national-team basket intraday from Eastmoney and Tencent quotes (pure Node, zero dependencies): capital flow, minute-level support pulses and a composite read.'
+  zh: 'DeepSeek Harness 侧边面板：纯 Node 直取东财与腾讯行情，盘中跟踪 15 只国家队 ETF 篮子，含资金流、分时护盘脉冲与综合判读。'

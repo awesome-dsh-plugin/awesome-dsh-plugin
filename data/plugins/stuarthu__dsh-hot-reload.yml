@@ -1,0 +1,6 @@
+url: https://github.com/stuarthu/dsh-hot-reload
+name: stuarthu/dsh-hot-reload
+category: dev
+description:
+  en: Reloads an upgraded plugin inside the running dsh process instead of restarting it, and rolls back to the old version when a reload fails.
+  zh: 插件升级后在运行中的 dsh 内直接重载，无需重启；重载失败时回滚到旧版本并提示手动重启。

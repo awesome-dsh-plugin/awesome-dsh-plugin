@@ -1,0 +1,6 @@
+url: https://github.com/huangfuren/dsh-conversation
+name: huangfuren/dsh-conversation
+category: ui
+description:
+  en: 'Conversation outline panel for the DSH web surface: user questions as root nodes (index, time, tool count and text volume per turn) with the Markdown headings of assistant replies hanging beneath them, plus level slider, search scope, bookmarks, copy and export as Markdown, section jump, keyboard navigation, a right-edge density rail and per-session reading-position memory. Read-only UI: it never touches prompts, tool results or provider traffic, and writes nothing outside its own localStorage keys.'
+  zh: 'Web 端会话大纲面板：用户提问为根节点（序号、提问时间、该轮工具数与正文量），助手回复的 Markdown 标题按层级挂在其下；带层级滑块、搜索范围、收藏、复制与导出 Markdown、节级跳转、键盘导航、右侧密度刻度条与按会话记忆的阅读位置。纯只读 UI：不接触提示词与工具结果，不向提供方发起请求，只写自己的 localStorage 键。'

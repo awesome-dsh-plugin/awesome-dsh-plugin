@@ -1,0 +1,6 @@
+url: https://github.com/callqh/dsh-codex-oauth
+name: callqh/dsh-codex-oauth
+category: model
+description:
+  en: Adds a Codex sign-in page to DSH settings, driving the built-in llm-pi-ai OAuth flow for browser or device-code login and showing masked account status without a separate provider or credential store.
+  zh: 在 DSH 设置页添加 Codex 登录入口，调用 llm-pi-ai 内置 OAuth 流程完成浏览器或设备码登录并展示脱敏账号状态，不另建模型适配器或凭证库。

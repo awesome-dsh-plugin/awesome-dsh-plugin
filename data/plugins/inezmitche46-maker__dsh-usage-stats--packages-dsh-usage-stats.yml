@@ -1,0 +1,7 @@
+url: https://github.com/inezmitche46-maker/dsh-usage-stats/tree/main/packages/dsh-usage-stats
+name: inezmitche46-maker/dsh-usage-stats#packages/dsh-usage-stats
+category: usage
+description:
+  en: 'All-session token usage dashboard in the sidebar: total and peak tokens, usage streaks, a 53-week activity heatmap, 7/30-day trend, per-model usage and a session ranking. Folded locally from the profile session projection cache, so sessions written by older session formats are counted too; no network access, and the read-only summary route refuses non-loopback peers.'
+  zh: 侧边栏里的全量会话 Token 用量仪表盘：累计/峰值 Token、连续使用天数、53 周活动热力图、7/30 天趋势、按模型用量与会话排行；在本地从 profile 的会话投影缓存汇总（旧会话格式的会话也能统计），不联网，只读汇总路由拒绝非本机请求。
+icon: https://raw.githubusercontent.com/inezmitche46-maker/dsh-usage-stats/main/assets/icon-256.png

@@ -1,0 +1,6 @@
+url: https://github.com/yicun0316/dsh-claude-slider
+name: yicun0316/dsh-claude-slider
+category: ui
+description:
+  en: 'Replaces the reasoning-effort dropdown with a draggable snapping slider, and draws 13 canvas effects across five style families (thrust, fluid, fantasy, tech, texture) with three tiers that unlock as the effort level rises. Custom mode combines 10 particle forms with 8 flow trajectories; 9 accent presets and a hex picker recolor every effect, and optional key sounds cover two voice clips, a synthesized duck squeak, a mechanical click and a local audio file.'
+  zh: '把推理强度下拉菜单换成可拖拽吸附的滑块，并提供 13 款 Canvas 动效，分属推进、流体、幻境、科技、质感五个家族；动效随推理档位分三阶递进解锁。客制动效可自由组合 10 种粒子形态与 8 种流动轨迹；9 款预设主题色与 Hex 拾色器让全部动效跟随变色，档位吸附音效支持两段语音、合成鸭子叫、机械微触感与本地音频文件。'

@@ -1,0 +1,7 @@
+url: https://github.com/huangziyuan-general/dsh-xuanji
+name: huangziyuan-general/dsh-xuanji
+category: fun
+description:
+  en: 'Fortune-telling toolkit: bazi, ziwei doushu, meihua yijing, liuyao (six-line coin oracle with najia), almanac, chenggu bone-weight, zodiac, date selection, qimen dunjia, fengshui, name scoring, compatibility, numerology, a life K-line chart, tarot and xiaoliuren — 16 tools whose ganzhi, stars, hexagrams and bone weights are all computed by deterministic local engines, with the model only interpreting results. Supports solar and lunar dates with leap months, China DST and true solar time correction, plus a ten-page read-only side panel.'
+  zh: 玄学算命插件：八字、紫微斗数、梅花易数、六爻纳甲、黄历、称骨、星座、择日、奇门遁甲、风水、起名、合婚、生命数字、人生K线、塔罗、小六壬共 16 个工具，干支、星曜、卦象、骨重全部由本地确定性引擎计算，模型只负责解读；支持公历/农历（含闰月）输入，自动校正中国夏令时与真太阳时，附带十页只读侧栏面板。
+icon: https://raw.githubusercontent.com/huangziyuan-general/dsh-xuanji/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/fengxiforcy/dsh-geo-toolkit
+name: fengxiforcy/dsh-geo-toolkit
+category: tools
+description:
+  en: "GIS/CAD analysis toolkit for dsh: read DXF, convert DWG to DXF, query layers/entities, export styled analysis maps (SVG/PNG/JPG/PDF, plus PSD on Windows x64), and run GIS summary/buffer/overlay on SHP/GeoJSON/KML — pure-JS parsing, no GDAL."
+  zh: "面向规划/测绘的 GIS/CAD 分析工具：读 DXF、DWG 转 DXF、按图层/文字查实体、出带版式的分析图（SVG/PNG/JPG/PDF，PSD 仅 Windows x64），并对 SHP/GeoJSON/KML 做按类汇总、缓冲与叠加——解析用纯 JS，不依赖 GDAL。"

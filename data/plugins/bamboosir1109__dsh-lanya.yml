@@ -1,0 +1,7 @@
+url: https://github.com/bamboosir1109/dsh-lanya
+name: bamboosir1109/dsh-lanya
+category: identity
+description:
+  en: 'Windows QQ character integration kit for DSH with NapCatQQ/SnowLuma, Bilibili, local GPT-SoVITS voice, revisable memory and a dashboard; development preview requiring companion-service setup.'
+  zh: 'Windows DSH QQ 角色集成包，连接 NapCatQQ / SnowLuma、B站、本地 GPT-SoVITS 语音、可塑记忆与控制台；开发预览，配套服务需另行配置。'
+icon: https://raw.githubusercontent.com/bamboosir1109/dsh-lanya/49ecf5b8af29023b485ae0ffca5f379fa8d36006/docs/assets/icon.png

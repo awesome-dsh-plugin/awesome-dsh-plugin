@@ -1,0 +1,6 @@
+url: https://github.com/BangBang-03/dsh-client-ui-quote
+name: BangBang-03/dsh-client-ui-quote
+category: ui
+description:
+  en: Turn any DSH selection into a reviewable quote — chat, file preview, terminal and diff; code quotes carry path#line. A sent quote keeps a source highlight and ordinal and jumps back, then joins a searchable review list with status, tags, multi-select insert, and Markdown/JSON export. Quotes collect above the composer as a 引用 ×N bar with per-chip edit and remove; side threads can bring their conclusion back to the main draft; a sent quote can be revised, with the old capsule marked superseded; replies can answer each quote by number.
+  zh: 把 DSH 里的任意选区变成可审阅的引用对象：正文、文件预览、终端、diff 都能引，代码引用带 path#line。发送后原句留下高亮与序号、可跳回；输入框上方「引用 ×N」可逐条编辑或移除；右侧栏引用清单可搜索、按状态与标签审阅、多选插入、导出 Markdown/JSON；侧边线程的结论可回流主会话；已发送的引用能追加修订，旧胶囊标「已修订」；模型可按「引用N」逐条回应。

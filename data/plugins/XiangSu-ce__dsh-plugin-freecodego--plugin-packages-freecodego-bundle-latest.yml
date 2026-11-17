@@ -1,0 +1,7 @@
+url: https://github.com/XiangSu-ce/dsh-plugin-freecodego/tree/main/plugin/packages/freecodego/bundle-latest
+name: XiangSu-ce/dsh-plugin-freecodego#bundle-latest
+category: model
+description:
+  en: 'Unofficial FreeCodeGo for DeepSeek Harness: DeepSeek, Codex and Claude engines over one session and toolchain, with a 0-token free access channel for deepseek-v4.1-flash, deepseek-v4-pro, deepseek-v4-flash-free, glm-5.3-flash, grok-4.6, kimi-k3, nemotron-3-ultra-free, muse-spark-1.3, Qwen 3.8 Flash and mimo-v2.6-flash-free, plus a keyless private-key gateway.'
+  zh: '面向 DeepSeek Harness 的 FreeCodeGo：DeepSeek、Codex、Claude 三套引擎共用同一条会话与工具链，并为以下模型提供 0 token 免费使用渠道：deepseek-v4.1-flash、deepseek-v4-pro、deepseek-v4-flash-free、glm-5.3-flash、grok-4.6、kimi-k3、nemotron-3-ultra-free、muse-spark-1.3、Qwen 3.8 Flash、mimo-v2.6-flash-free，另有零注册的私钥网关。'
+tarball: https://github.com/XiangSu-ce/dsh-plugin-freecodego/releases/download/freecodego-v0.2.0-rc.2/freecodego-0.2.0-rc.2.tgz

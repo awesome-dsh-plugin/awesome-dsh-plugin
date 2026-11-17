@@ -1,0 +1,6 @@
+url: https://github.com/yiyunet/dsh-proxy-egress
+name: yiyunet/dsh-proxy-egress
+category: security
+description:
+  en: 'DSH plugin: a local egress proxy bridge. Hands a credential-free HTTP(S) proxy URL to consumers that reject credentials, and injects the upstream auth on the hop that needs it. Fail-closed by default: if the upstream fails, traffic is refused rather than falling back to a direct connection. Zero build, zero runtime dependencies.'
+  zh: 'DSH 插件：本地出口代理（egress）桥——把只接受无凭据 HTTP(S) 代理地址的消费方，接到需要账号密码的上游代理上，凭据只在需要的那一跳注入；默认失败即断联，绝不降级为直连。零构建、零运行依赖。'

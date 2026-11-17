@@ -1,0 +1,6 @@
+url: https://github.com/Signalight/codex-to-dsh-pet/tree/main/packages/dsh-codex-pet
+name: Signalight/codex-to-dsh-pet#dsh-codex-pet
+category: fun
+description:
+  en: 'DSH web-GUI pet runtime that renders any Codex spritesheet-atlas pet (v1/v2) as a draggable overlay: drag/wave/jump, v2 mouse-tracking eyes that follow the active mouse, live agent-status poses, progress bubbles, and an in-GUI atlas importer; ships one original CC BY-NC demo pet (nastya), and user pets live in ~/.dsh/pets.'
+  zh: 'DSH 网页 GUI 实时桌宠：可把任何 Codex 桌宠图集（webp/png/gif，v1/v2 自动识别）转换为 DSH 中可拖拽的悬浮桌宠。支持拖拽/挥手/跳跃，v2 桌宠的眼睛实时追踪活动鼠标，随 agent 状态切换姿势；进度气泡反映工作状态；「设置 → 桌宠」图形界面可导入、切换与调整桌宠；内置一只原创示例桌宠（娜斯佳），用户桌宠存放在 ~/.dsh/pets。'

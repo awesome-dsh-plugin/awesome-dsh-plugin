@@ -1,0 +1,6 @@
+url: https://github.com/27Synthesis/dsh-go-fish-panel
+name: 27Synthesis/dsh-go-fish-panel
+category: ui
+description:
+  en: 'Native panel for the dsh-fish companion on DSH Go: one observatory page showing what she has been up to, plus rhythm, browsing, and speech-and-memory settings pages that write 57 config keys in place.'
+  zh: '大肥鱼在 DSH Go 手机上的原生面板：观测台看一眼她最近做了什么，另有作息、上网、说话与记忆三页设置，57 项配置可以直接改。'

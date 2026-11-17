@@ -1,0 +1,6 @@
+url: https://github.com/Nishikinov/dsh-sidebar-settings-button
+name: Nishikinov/dsh-sidebar-settings-button
+category: ui
+description:
+  en: Adds a Settings row to the sidebar header before Plugins, which opens the shell's Settings panel.
+  zh: 在侧边栏顶部 Plugins 之前新增「设置」一行，点击即打开原生设置面板。

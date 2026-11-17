@@ -1,0 +1,7 @@
+url: https://github.com/regrevia/dsh-pause-resume
+name: regrevia/dsh-pause-resume
+category: session
+description:
+  en: 'One header button stops running turns, goals and background jobs and writes the plan to disk; after a restart the same button picks the work up again.'
+  zh: '会话头一个按钮停掉回合、目标和后台任务，写盘；重启后同一个按钮把工作接回来。'
+icon: https://raw.githubusercontent.com/regrevia/dsh-pause-resume/main/icon.png

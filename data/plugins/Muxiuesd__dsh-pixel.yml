@@ -1,0 +1,7 @@
+url: https://github.com/Muxiuesd/dsh-pixel
+name: Muxiuesd/dsh-pixel
+category: ui
+description:
+  en: 'Pixel art editor in a DSH conversation tab: pencil, eraser, bucket fill and eyedropper on a grid canvas that zooms in whole steps around the cursor; up to eight layers with merge, reorder, rename and full undo; a 36-slot palette whose edits move the old colour to a free slot so existing pixels never change; PNG export written straight into the session directory.'
+  zh: 'DSH 会话页签里的像素画编辑器：在网格画布上用铅笔、橡皮、油漆桶与取色器作画，滚轮以光标为中心整档缩放；最多八层图层，支持合并、上下移、改名与完整撤销；36 色可编辑调色板，改色时把旧颜色搬到空闲槽，已有像素不会跟着变；PNG 直接导出到当前会话目录。'
+icon: https://raw.githubusercontent.com/Muxiuesd/dsh-pixel/main/icon.png

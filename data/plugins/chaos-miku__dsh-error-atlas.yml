@@ -1,0 +1,7 @@
+url: https://github.com/chaos-miku/dsh-error-atlas
+name: chaos-miku/dsh-error-atlas
+category: memory
+description:
+  en: Records DeepSeek Harness runtime errors and coding retrospectives as an interactive GPU graph, and feeds the recorded lessons back into the model's context.
+  zh: 把 DSH 的运行错误与编程任务复盘渲染成可交互的 GPU 图谱，并把记录下来的教训送回模型上下文。
+icon: https://raw.githubusercontent.com/chaos-miku/dsh-error-atlas/main/docs/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-mcp-tunnel
+name: 988hj7tczd-oss/dsh-mcp-tunnel
+category: tools
+description:
+  en: "Expose a local MCP server to remote agents through an outbound-only tunnel stack (mcp-proxy + cloudflared Quick Tunnel), then register the public URL into dsh-mcp-client streamable-http config."
+  zh: "把本机 MCP Server 通过出站-only 隧道栈（mcp-proxy + cloudflared Quick Tunnel）暴露给远程 Agent，并把公网 URL 注册进 dsh-mcp-client 的 streamable-http 配置。"

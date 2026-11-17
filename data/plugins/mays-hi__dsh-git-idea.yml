@@ -1,0 +1,6 @@
+url: https://github.com/mays-hi/dsh-git-idea
+name: mays-hi/dsh-git-idea
+category: git
+description:
+  en: "Git integration for DSH modelled on IDEA's VCS: a git icon beside the permission mode in the composer shows the current branch and the pending-change count, opens a branch switcher on hover and an IDEA-style VCS panel on click (branch tree, commit graph, changes and staging, commit detail, file diff), plus a settings page for commit identity, the git binary and the network flags. Registers no model tools with DSH."
+  zh: "照着 IDEA 的 VCS 做的 Git 集成，装进 DSH 会话：输入框「权限模式」旁边的 Git 图标显示当前分支与未提交改动数，悬停可切分支，点击弹出 IDEA 风格的面板（分支树、提交图、变更与暂存、提交详情、文件差异），另有一个设置页管提交身份、git 位置和网络参数。不向 DSH 注册任何模型工具。"

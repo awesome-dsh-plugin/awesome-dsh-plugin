@@ -1,0 +1,6 @@
+url: https://github.com/Jesse-njx/dsh-docker
+name: Jesse-njx/dsh-docker
+category: tools
+description:
+  en: 'Typed, guarded container control: ps/logs/inspect/exec/start/stop and compose up/down with JSON output, project-aware targeting, and approval-gated destructive ops.'
+  zh: 类型安全、带护栏的容器控制：ps/logs/inspect/exec/start/stop 与 compose up/down，JSON 输出、项目感知定位、破坏性操作需审批。

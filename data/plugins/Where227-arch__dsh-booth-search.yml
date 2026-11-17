@@ -1,0 +1,6 @@
+url: https://github.com/Where227-arch/dsh-booth-search
+name: Where227-arch/dsh-booth-search
+category: tools
+description:
+  en: 'Search BOOTH for VRChat avatar assets — clothing, shaders, base models, accessories, textures, animations and props — from a dedicated BOOTH tab beside the conversation or via two read-only tools, with Chinese keywords translated to Japanese before the request.'
+  zh: '在会话旁的 BOOTH 独立页或两个只读工具里搜 VRChat 素材（衣服、着色器、素体、配饰、贴图、动画、小物）；中文关键词在宿主侧转日文再检索，界面不出现日文词。'

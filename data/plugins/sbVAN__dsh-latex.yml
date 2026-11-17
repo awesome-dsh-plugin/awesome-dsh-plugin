@@ -1,0 +1,6 @@
+url: https://github.com/sbVAN/dsh-latex
+name: sbVAN/dsh-latex
+category: ui
+description:
+  en: 'Renders `latex` / `tex` code blocks in the chat as KaTeX formulae, and injects a system-prompt section that tells the model to write `$...$` and `$$...$$` instead of fenced code blocks.'
+  zh: '把对话里的 `latex` / `tex` 代码块渲染成 KaTeX 公式，并向系统提示词注入「用 `$...$` / `$$...$$` 写公式」的规范。'

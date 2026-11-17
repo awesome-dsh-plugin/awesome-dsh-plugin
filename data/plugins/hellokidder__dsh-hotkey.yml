@@ -1,0 +1,6 @@
+url: https://github.com/hellokidder/dsh-hotkey
+name: hellokidder/dsh-hotkey
+category: session
+description:
+  en: 'Keyboard navigation for the DSH Web GUI: hold Control for 1-9 conversation numbers in the sidebar, Control+Tab to cycle, Control+J to jump to any conversation from a panel that also lists collapsed and not-yet-rendered ones, double-tap Option for clickable hints, and Option+Enter to focus the composer.'
+  zh: '键盘流 DSH 会话导航：按住 Control 在侧边栏显示 1-9 编号、Control+Tab 轮转、Control+J 从覆盖全部会话（含折叠分组与未渲染行）的面板跳转；双击 Option 为可点击控件显示字母提示，Option+Enter 聚焦输入框。'

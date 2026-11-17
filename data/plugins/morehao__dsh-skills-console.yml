@@ -1,0 +1,7 @@
+url: https://github.com/morehao/dsh-skills-console
+name: morehao/dsh-skills-console
+category: skill
+description:
+  en: Lists the skills in the shared skills directory with their source and version, installs and updates them from a GitHub repo, removes them to a recycle bin kept for 7 days, and controls which agents can see each skill and whether the model may invoke it.
+  zh: 汇总共享技能目录里的技能并标注来源与版本，可从 GitHub 仓库安装与更新，删除时先进保留 7 天的回收站，并控制每个技能对各 Agent 的可见性与模型可调用性。
+icon: https://raw.githubusercontent.com/morehao/dsh-skills-console/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/sujingkpo/dsh-auto-pass
+name: sujingkpo/dsh-auto-pass
+category: security
+description:
+  en: "A continuation of simon300000/dsh-auto: the Auto Approve permission preset for the DSH Web UI reviews each approval with one single-shot model call instead of a reviewer subagent, auto-approves only the actions that pass and hands the rest to human approval, and remembers confirmed decisions as project- and global-scope allow/deny lists, with an approval timeline in the right sidebar."
+  zh: 延续 simon300000/dsh-auto 的 DSH WebUI 自动审批权限档位：每次审批只走一次单轮模型审查、不再起审查子代理，只自动放行审查通过的动作、其余全部转回人工审批；并会把用户确认过的决定记成项目级与全局级的允许/拒绝名单，右侧栏另有审批时间线。

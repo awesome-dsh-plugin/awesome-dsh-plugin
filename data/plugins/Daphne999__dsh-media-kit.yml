@@ -1,0 +1,6 @@
+url: https://github.com/Daphne999/dsh-media-kit
+name: Daphne999/dsh-media-kit
+category: tools
+description:
+  en: "Pull frames and audio out of a local video with ffmpeg and hand back plain file paths, so the agent can look at the frames with its own vision. Five tools: probe, evenly spaced frames, one frame at a timestamp, scene-change frames (the practical version of frame-by-frame), and audio extraction. No models, no uploads, no routing guesswork."
+  zh: '用 ffmpeg 从本地视频里抽帧、抽音轨，只返回文件路径，让 agent 用自己的视觉去看。五个工具：探测、均匀抽帧、指定时刻取帧、场景变化抽帧（逐帧分析的实用版）、抽音轨。不碰模型、不上传、不需要配任何 provider，所以不存在路由选错的问题。'

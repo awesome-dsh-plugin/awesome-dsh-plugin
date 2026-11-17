@@ -1,0 +1,7 @@
+url: https://github.com/shangshuo/dsh-sync
+name: shangshuo/dsh-sync
+category: tools
+description:
+  en: 'Encrypted, scheduled backup and restore of a DSH profile — plugins, settings, skills, UI preferences and optional MCP connector or API keys — to S3-compatible storage, WebDAV or a local folder.'
+  zh: '把 DSH 配置档案（插件、设置、技能、界面偏好与可选的 MCP 连接器或 API Key）加密定时备份到 S3 兼容存储、WebDAV 或本地目录，恢复时自动重装缺失的插件。'
+icon: https://raw.githubusercontent.com/shangshuo/dsh-sync/main/assets/icon-180.png

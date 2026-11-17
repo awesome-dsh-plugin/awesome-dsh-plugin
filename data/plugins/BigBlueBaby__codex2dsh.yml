@@ -1,0 +1,6 @@
+url: https://github.com/BigBlueBaby/codex2dsh
+name: BigBlueBaby/codex2dsh
+category: dev
+description:
+  en: "Migrate Codex (OpenAI Codex CLI / Desktop) MCP servers, skills, instructions, memory and session history into DeepSeek Harness with a visual panel or CLI, with dry-run previews and secrets migrated as-is."
+  zh: "把 Codex（OpenAI Codex CLI / Desktop）的 MCP 服务器、技能、全局指令、记忆与会话历史迁移进 DeepSeek Harness（DSH），支持可视化面板与命令行，带 dry-run 预览。"

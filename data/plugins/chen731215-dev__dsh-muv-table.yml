@@ -1,0 +1,6 @@
+url: https://github.com/chen731215-dev/dsh-muv-table
+name: chen731215-dev/dsh-muv-table
+category: ui
+description:
+  en: 'MUV variable table editor for DeepSeek Harness: a tree view of the variables being tracked, a macro test panel for random, pick and roll, a dice shortcut bar and pick-cache management. Companion plugin for dsh-muv-engine.'
+  zh: 'MUV 变量表格编辑器：树形变量面板、宏测试浮窗（random／pick／roll）、骰子快捷栏与 pick 缓存管理。dsh-muv-engine 的伴生插件。'

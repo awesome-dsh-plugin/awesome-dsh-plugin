@@ -1,0 +1,6 @@
+url: https://github.com/gzq44/dsh-usage-detail
+name: gzq44/dsh-usage-detail
+category: usage
+description:
+  en: 'Usage statistics inside Settings: a GitHub-style one-year conversation heatmap of your own daily messages, token usage totals by model and by day/week/month with stat cards, and a per-day list of files written or edited via write/edit tools. All computed locally from session history with incremental rescans; no data leaves the machine.'
+  zh: '设置面板内的使用统计：GitHub 风格一年对话热力图（按每天本人消息数着色，自动排除子代理与注入上下文）、按模型与按天/周/月汇总的 Token 用量（统计卡片 + 表格）、以及每天通过 write/edit 工具产出或修改的文件清单（日期选择）。全部本地扫描会话历史完成、增量更新，数据不出本机。'

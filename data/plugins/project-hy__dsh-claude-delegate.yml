@@ -1,0 +1,6 @@
+url: https://github.com/project-hy/dsh-claude-delegate
+name: project-hy/dsh-claude-delegate
+category: tools
+description:
+  zh: "把自包含的编码子任务委派给本机 Claude Code（官方 Agent SDK 驱动），结果回传主会话：19 个参数可按次控制模型、思考强度、权限模式、允许工具、轮次与预算上限；后台作业立即返回 jobId 并支持增量读取；结果附会话句柄，传回 resume 即可在同一会话续跑；预计超过 20 秒的命令经内置 mcp__dsh__shell 通道逐行实时输出，不占用模型上下文；会话内附 Claude Code 监控面板（任务列表、结构化过程视图、实时输出块、一键取消）；委派规程以运行时技能注册，安装插件即安装技能。"
+  en: "Delegates self-contained coding subtasks to the local Claude Code subscription through the official Agent SDK and returns the result to the host session. Nineteen per-call parameters control model, thinking effort, permission mode, allowed tools, turn count and budget cap; background jobs return a jobId immediately and stream incremental output; the result carries a session handle that can be passed back as resume to continue the same conversation; commands expected to run past ~20 seconds go through the built-in mcp__dsh__shell channel, which streams output line by line without consuming model context; a Claude Code monitor panel in the session lists jobs, renders the structured process, shows live output blocks and cancels a run; the delegation procedure ships as a runtime-registered skill, so installing the plugin installs the skill."

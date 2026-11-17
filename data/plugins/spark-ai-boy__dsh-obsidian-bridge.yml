@@ -1,0 +1,6 @@
+url: https://github.com/spark-ai-boy/dsh-obsidian-bridge
+name: spark-ai-boy/dsh-obsidian-bridge
+category: memory
+description:
+  en: 'Connect a local Obsidian vault to DeepSeek Harness: local Markdown indexing with keyword search by default and optional hybrid or semantic search through `obsidian_*` agent tools (hybrid and semantic need an OpenAI-compatible or Ollama embedding endpoint); agent access is off until you enable the conversation switch, and note writing is approval-gated, undoable and proposal-first; the index and vectors stay on your machine.'
+  zh: '把本地 Obsidian 知识库接入 DeepSeek Harness：本地 Markdown 索引，默认关键词检索，配置 OpenAI 兼容或 Ollama 的 Embedding 接口后可用混合与语义检索；obsidian_* 工具默认拒绝 agent 访问，需在首页打开会话开关；笔记写入为需人工批准、可撤销的「先提案后写入」；索引与向量均留在本机。'

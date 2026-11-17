@@ -1,0 +1,8 @@
+url: https://github.com/hanwang-ai/quantitativeTrading-source-reliable
+name: hanwang-ai/quantitativeTrading-source-reliable
+category: tools
+tarball: https://github.com/hanwang-ai/quantitativeTrading-source-reliable/releases/latest/download/quantitativeTrading-source-reliable.tgz
+icon: https://raw.githubusercontent.com/hanwang-ai/quantitativeTrading-source-reliable/main/assets/icon-180.png
+description:
+  en: 'Registry of 119 quant and crypto sources covering regulator filings, point-in-time fundamentals, macro series, exchange APIs and on-chain data, each tagged with an authority tier, verification state, five-state point-in-time, revision risk and dataset tags; ships qt_source_find and qt_source_audit tools for source lookup and for citation audits that redact credential-like URL parameters.'
+  zh: '内置 119 条量化与加密交易信源，涵盖监管原始文件、PIT 基本面、宏观序列、交易所 API 与链上数据，逐条标注权威等级、验证状态、PIT 五态、修订风险与数据集标签；提供 qt_source_find 与 qt_source_audit 两个工具，用于查源，以及对引用做审计并脱敏凭据类 URL 参数。'

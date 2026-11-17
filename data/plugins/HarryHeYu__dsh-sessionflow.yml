@@ -1,0 +1,6 @@
+url: https://github.com/HarryHeYu/dsh-sessionflow
+name: HarryHeYu/dsh-sessionflow
+category: session
+description:
+  en: 'Continues work across coding agents inside DeepSeek Harness: six sessionflow_* tools query a local session index built by sessionFlow to find past work, show where the current project left off, and hand the goal, files and open items to the next agent. Requires the separate sessionFlow core, installed from its GitHub repo. Everything stays local — no cloud, no telemetry.'
+  zh: '在 DeepSeek Harness 里跨编码 Agent 继续工作：六个 sessionflow_* 工具查询 sessionFlow 构建的本地会话索引，找回过去的工作、看清当前项目做到哪了，并把目标、涉及文件与未完成事项交给下一个 Agent。需要另行安装独立的 sessionFlow 核心（见其 GitHub 仓库）。全程本地运行——无云端、无遥测。'

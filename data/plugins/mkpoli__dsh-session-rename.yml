@@ -1,0 +1,7 @@
+url: https://github.com/mkpoli/dsh-session-rename
+name: mkpoli/dsh-session-rename
+category: session
+tarball: https://github.com/mkpoli/dsh-session-rename/releases/download/v0.1.0/dsh-session-rename.tgz
+description:
+  en: Adds one agent tool that renames the current session, keeps the title across resume and paging, and stops automatic titles for it.
+  zh: 给智能体增加一个为当前会话改名的工具，标题在恢复与翻页后保留，并停止自动生成标题。

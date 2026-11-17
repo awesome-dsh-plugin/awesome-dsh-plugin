@@ -1,0 +1,6 @@
+url: https://github.com/yeemio/dsh-owlrunkit
+name: yeemio/dsh-owlrunkit
+category: skill
+description:
+  en: 'Serves the OwlCoda RunKit skill in the DSH skill catalog: project-owned objectives, work items, candidate identity, verification receipts, handoffs and recovery stay in project artifacts. Installs instructions only; the project-local owlrunkit CLI is a separate setup step.'
+  zh: '把 OwlCoda RunKit 技能加入 DSH 技能目录：目标、WorkItem、候选身份、验证回执、交接和恢复保存在项目工件中。只安装指令；项目本地的 owlrunkit CLI 仍需单独安装。'

@@ -1,0 +1,6 @@
+url: https://github.com/cc1104666/dsh-plugins/tree/main/packages/dsh-grok-online
+name: cc1104666/dsh-plugins#dsh-grok-online
+category: model
+description:
+  en: 'Runs a local OpenAI-compatible relay that forwards DSH chat requests to grok.online, exposing its two chat models in the model picker without an API key.'
+  zh: '在本机跑一个 OpenAI 兼容反代，把 DSH 的对话请求转给 grok.online，无需 API key 即可在模型选择器里用它的两个对话模型。'

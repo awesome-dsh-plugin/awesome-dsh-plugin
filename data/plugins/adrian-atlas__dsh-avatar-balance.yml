@@ -1,0 +1,7 @@
+url: https://github.com/adrian-atlas/dsh-avatar-balance
+name: adrian-atlas/dsh-avatar-balance
+category: ui
+tarball: https://github.com/adrian-atlas/dsh-avatar-balance/releases/latest/download/dsh-avatar-balance.tgz
+description:
+  en: "DeepSeek account balance in the sidebar foot, directly above the account avatar. The row shows the top-up balance plus any bonus, turns amber with a warning mark below an adjustable threshold and green above it, and refreshes when a task finishes."
+  zh: "在侧边栏底部、账号头像正上方显示 DeepSeek 账户余额。整行显示充值余额（含赠金），低于可调阈值时变黄并显示告警标记，高于为绿色；任务结束后自动刷新。"

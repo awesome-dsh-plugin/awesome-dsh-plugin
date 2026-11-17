@@ -1,0 +1,6 @@
+url: https://github.com/JuntaoXiao/PDF-electronic-signature
+name: JuntaoXiao/PDF-electronic-signature
+category: docs
+description:
+  en: 'PDF electronic signing: generate a handwritten-style signature image, stamp images and typed blocks onto PDF pages, and apply a PKCS#7/CMS digital signature with a PKCS#12 certificate you supply. Stamping first keys an opaque background out to transparency - un-compositing each pixel so the ink keeps its original colour - and trims to the ink, so a seal stamped over a signature does not erase it.'
+  zh: 'PDF 电子签名：生成手写风格签名图、在 PDF 页面盖章（图片与文字块）、并用自备的 PKCS#12 证书施加 PKCS#7/CMS 数字签名。盖章前会先把不透明签名图/印章图的底色转为透明（通过反合成保留墨色）并裁掉留白，因此印章盖在签名上不会把签名擦掉。'

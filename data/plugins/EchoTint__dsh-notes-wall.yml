@@ -1,0 +1,7 @@
+url: https://github.com/EchoTint/dsh-notes-wall
+name: EchoTint/dsh-notes-wall
+category: ui
+description:
+  en: 'A sticky-notes wall pinned to the sidebar: one click opens a full-page wall, notes save as you type, and writing #tags in the text turns them into one-click filter chips. Six paper colors, pinning, search, JSON export and import.'
+  zh: '钉在侧栏的便签墙：一键打开整页墙面，边写边自动保存，正文里写 #标签 就会变成可点击的筛选胶囊。六种纸色、置顶、搜索，支持 JSON 导出与导入。'
+icon: https://raw.githubusercontent.com/EchoTint/dsh-notes-wall/main/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/veritaswiki/skill-evolution
+name: veritaswiki/skill-evolution
+category: skill
+description:
+  en: 'Reviews each finished turn, distills reusable skills as drafts, runs code-level checks over them, and holds each draft until the user approves or rejects it with a directive; every write is recorded in a SHA-256 ledger that supports rolling back a single entry. On by default, it reviews finished turns with the current session model (or an OpenAI-compatible endpoint set through DSH_EVOLUTION_BASE_URL), sending a bounded excerpt of the conversation, and writes drafts to ~/.dsh/skills/.staging until you promote them. Its bundle patch lowers DSH''s skill-catalog description limit from 500 to 80 characters for every skill, and it starts an unauthenticated HTTP server on 0.0.0.0:18890 (DSH_EVOLUTION_PORT) that can list and promote drafts, change settings and trigger reviews.'
+  zh: '回合结束后复盘会话，把经验蒸馏成技能草稿，经代码级检查后等你批示采纳或驳回；每次落盘都记入 SHA-256 账本，支持按单条回滚。默认开启，回合结束后用当前会话模型（或 DSH_EVOLUTION_BASE_URL 指定的 OpenAI 兼容接口）复盘一段有上限的会话摘录，草稿写在 ~/.dsh/skills/.staging，等你采纳才进正式技能库。随包补丁会把 DSH 全局技能目录的描述上限从 500 收紧到 80 字符（影响所有技能）；另外它在 0.0.0.0:18890（可用 DSH_EVOLUTION_PORT 改）启动一个没有鉴权的 HTTP 服务，可列出和采纳草稿、改设置、触发复盘。'
+icon: https://raw.githubusercontent.com/veritaswiki/skill-evolution/main/assets/icon-180.png

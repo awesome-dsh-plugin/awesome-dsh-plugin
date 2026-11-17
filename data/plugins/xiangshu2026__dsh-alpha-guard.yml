@@ -1,0 +1,6 @@
+url: https://github.com/xiangshu2026/dsh-alpha-guard
+name: xiangshu2026/dsh-alpha-guard
+category: security
+description:
+  en: "Policy-layer guard that checks tool calls before they run: a read whitelist, a sensitive-path deny list (credentials, browser profiles, chat history, other users' home directories), dangerous-command blocking, subagent isolation, and a static scan that quarantines executables. Every denial is appended to an audit log. It is a text-and-path filter, not a sandbox or antivirus: dynamically built paths, encoded payloads and packed binaries can get past it, and it does not replace the OS antivirus."
+  zh: "在工具调用真正执行之前做判定的策略层护栏：读取白名单、敏感路径拒绝（凭据、浏览器配置、聊天记录、其他用户目录）、危险命令拦截、子代理隔离，以及对可执行文件的静态扫描与隔离区。每次拒绝都写进审计日志。它是文本与路径过滤，不是沙箱也不是杀软：动态拼接的路径、编码载荷、加壳程序都可能绕过，也不能替代系统自带防护。"

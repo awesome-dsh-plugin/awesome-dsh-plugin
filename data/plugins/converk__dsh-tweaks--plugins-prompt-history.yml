@@ -1,0 +1,6 @@
+url: https://github.com/converk/dsh-tweaks/tree/main/plugins/prompt-history
+name: converk/dsh-tweaks#prompt-history
+category: ui
+description:
+  en: Recalls prompts sent earlier in the current session with the up and down keys in an empty composer, and shows a position badge while browsing.
+  zh: 在空输入框里用 ↑/↓ 翻出本会话之前发过的提示词，翻动时显示位置角标。

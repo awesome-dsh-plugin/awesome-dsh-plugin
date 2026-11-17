@@ -1,0 +1,6 @@
+url: https://github.com/dungcsnd1133/dsh-video-watch
+name: dungcsnd1133/dsh-video-watch
+category: tools
+description:
+  en: 'Downloads a video link, samples frames from it, and transcribes the speech with Groq Whisper so an agent can answer questions about what the video shows; long audio is split into 15-minute windows to stay under the upload limit, and frames still come back without a key, which only the transcript needs. Needs ffmpeg, ffprobe and yt-dlp on PATH.'
+  zh: '下载视频链接、从中抽帧，并用 Groq Whisper 转写语音，让 agent 能回答视频内容相关的问题；过长音频会切成 15 分钟片段以符合上传上限，没有 key 时仍会返回抽帧，只有转写需要该 key。需 PATH 中有 ffmpeg、ffprobe 与 yt-dlp。'

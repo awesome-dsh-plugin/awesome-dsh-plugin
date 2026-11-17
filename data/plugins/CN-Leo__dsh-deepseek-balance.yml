@@ -1,0 +1,6 @@
+url: https://github.com/CN-Leo/dsh-deepseek-balance
+name: CN-Leo/dsh-deepseek-balance
+category: usage
+description:
+  en: Real-time DeepSeek account balance in the composer dock, auto-refreshing every 15 seconds with hover details.
+  zh: 在 DSH Web 输入框下方实时显示 DeepSeek 账户余额，每 15 秒自动刷新，悬停查看总额、赠送与充值明细。

@@ -1,0 +1,6 @@
+url: https://github.com/mars401/dsh-session-batch-manager
+name: mars401/dsh-session-batch-manager
+category: session
+description:
+  en: 'Batch-manage DSH sessions: sidebar multi-select, a dashboard tree of main sessions and subagents with token/cache/context stats, bulk archive and cascade delete, and recall of ungrouped sessions into re-added workspaces.'
+  zh: 'DSH 会话批量管理：侧栏多选、主会话与子代理的树形看板（token／缓存／上下文统计）、批量归档与级联删除，以及把未分组会话召回重新添加的工作区。'

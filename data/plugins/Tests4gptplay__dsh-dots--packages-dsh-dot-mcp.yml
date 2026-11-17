@@ -1,0 +1,8 @@
+url: https://github.com/Tests4gptplay/dsh-dots/tree/main/packages/dsh-dot-mcp
+name: Tests4gptplay/dsh-dots#dsh-dot-mcp
+category: tools
+icon: https://raw.githubusercontent.com/Tests4gptplay/dsh-dots/main/assets/dots-market-icon.png
+tarball: https://github.com/Tests4gptplay/dsh-dots/releases/download/dsh-dot-mcp-v1.0.1/dsh-dot-mcp-1.0.1.tgz
+description:
+  en: 'Connect your ChatGPT Dot to DeepSeek Harness with 17 MCP tools for direct native API, plugin and tool execution, visible workspace conversations, Secure MCP Tunnel management, event notifications, and Dots web access with Desktop login persistence.'
+  zh: '通过 17 个 MCP 工具让 ChatGPT Dot 直接调用 DSH 原生 API、插件和工具，在对应工作区显示完整会话，支持 Secure MCP Tunnel 管理、事件通知、Dots 网页接入和 Desktop 登录保持。'

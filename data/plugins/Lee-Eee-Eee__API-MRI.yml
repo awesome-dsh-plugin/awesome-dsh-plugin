@@ -1,0 +1,8 @@
+url: https://github.com/Lee-Eee-Eee/API-MRI
+name: Lee-Eee-Eee/API-MRI
+category: tools
+description:
+  en: 'Inspect API latency, streaming output and model-response fingerprints from a native DSH panel, with classic-task previews and public benchmark rankings.'
+  zh: '从 DSH 原生侧栏检查 API 连接、流式速度与模型指纹，浏览经典题作品和公开能力榜单。'
+icon: https://raw.githubusercontent.com/Lee-Eee-Eee/API-MRI/main/docs/images/api-mri-icon.png
+tarball: https://github.com/Lee-Eee-Eee/API-MRI/releases/download/v0.9.5/dsh-api-mri-0.9.5.tgz

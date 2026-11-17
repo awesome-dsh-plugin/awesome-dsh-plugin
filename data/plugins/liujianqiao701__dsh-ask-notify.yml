@@ -1,0 +1,6 @@
+url: https://github.com/liujianqiao701/dsh-ask-notify
+name: liujianqiao701/dsh-ask-notify
+category: notify
+description:
+  en: Shows a reminder card in the bottom-right corner of the DSH web GUI whenever the agent is waiting for your answer, and adds a desktop notification plus a flashing tab title when you are on another tab or window.
+  zh: 当 agent 停下来等你作答时，在 DSH Web 界面右下角弹出提醒卡；若你切到了别的标签或窗口，再补一条系统通知并让标签标题闪烁。

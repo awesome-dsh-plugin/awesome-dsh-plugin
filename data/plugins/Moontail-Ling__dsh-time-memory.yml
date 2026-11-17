@@ -1,0 +1,6 @@
+url: https://github.com/Moontail-Ling/dsh-time-memory
+name: Moontail-Ling/dsh-time-memory
+category: memory
+description:
+  en: Chat memory that archives messages by time and recalls by stated period, widening twice before admitting it forgot.
+  zh: 按时间归档聊天，用户提到某段时间就先检索，未命中扩大两次，仍没有就如实说「我忘记了」。

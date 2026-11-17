@@ -1,0 +1,7 @@
+url: https://github.com/BruceXcluding/session-recap/tree/main/packages/dsh
+name: BruceXcluding/session-recap#session-recap
+category: session
+tarball: https://github.com/BruceXcluding/session-recap/releases/latest/download/dsh-session-recap.tgz
+description:
+  en: "Recap a session from dsh, Claude Code, Codex or OpenCode saved on this machine: the intent, key decisions and why, what changed, open threads and where to resume. Adds the session_recap tool, the /recap command and a right-sidebar panel that lists a project's sessions across agents. Uses the session's own model route, removes keys and tokens from transcripts before sending, and caches recaps locally. Needs python3 and zstd."
+  zh: '回顾本机保存的 dsh、Claude Code、Codex 或 OpenCode 会话：核心意图、关键决策及原因、改动、遗留问题、从哪里继续。提供 session_recap 工具、/recap 命令，以及列出项目内各代理会话的右侧栏面板。使用会话自身的模型路由，发送前去除记录中的密钥与令牌，回顾缓存在本地。需要 python3 和 zstd。'

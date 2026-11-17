@@ -1,0 +1,7 @@
+url: https://github.com/Flonger/dsh-balance-vision
+name: Flonger/dsh-balance-vision
+category: usage
+description:
+  en: DeepSeek balance and per-session cost in the DSH web composer dock, with official peak/off-peak pricing (peak hours Mon-Fri BJT 9-12 / 14-18, weekends off-peak) and built-in deepseek-v4-flash-vision-exp vision model rates billed at flash price (images billed as tokens, max 384 tokens each).
+  zh: 输入框下方实时显示 DeepSeek 余额与本会话消耗，内置官方工作日谷峰计价（周一至周五 9-12/14-18 峰时、周末全天谷时）与 deepseek-v4-flash-vision-exp 视觉模型（按 flash 同价计费，图片按 token 计费，单图最多 384 tokens）。
+tarball: https://github.com/Flonger/dsh-balance-vision/releases/download/v0.1.0/dsh-balance-vision-0.1.0.tgz

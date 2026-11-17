@@ -1,0 +1,6 @@
+url: https://github.com/SeveNOlogy7/oh-my-dsh
+name: SeveNOlogy7/oh-my-dsh
+category: workflow
+description:
+  en: 'Agent orchestration for DeepSeek Harness, aligned with oh-my-openagent 4.19.4: eleven agent roles, planning, delegation, adversarial review, and durable .omd state.'
+  zh: 'DeepSeek Harness 上的智能体编排系统，对齐 oh-my-openagent 4.19.4：11 个智能体角色，覆盖规划、委派、对抗式评审与 .omd 持久状态。'

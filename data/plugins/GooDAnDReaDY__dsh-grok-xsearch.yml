@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-grok-xsearch
+name: GooDAnDReaDY/dsh-grok-xsearch
+category: tools
+description:
+  en: "Adds an x_search tool for X/Twitter search to DeepSeek Harness, authenticated through a separate SuperGrok OAuth account so it does not consume the session provider quota."
+  zh: "为 DeepSeek Harness 增加用于 X/Twitter 搜索的 x_search 工具，通过独立的 SuperGrok OAuth 账号鉴权，不占用会话所用提供方的配额。"

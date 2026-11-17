@@ -1,0 +1,6 @@
+url: https://github.com/wang678678/dsh-local-plugins/tree/main/packages/dsh-market-autogroup
+name: wang678678/dsh-local-plugins#dsh-market-autogroup
+category: market
+description:
+  en: Automatically groups installed plugins in dsh-market on startup.
+  zh: 启动时自动把已安装插件归入 dsh-market 分组。

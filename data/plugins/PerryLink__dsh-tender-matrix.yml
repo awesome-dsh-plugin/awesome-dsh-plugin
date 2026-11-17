@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-tender-matrix
+name: PerryLink/dsh-tender-matrix
+category: tools
+description:
+  en: "Checks a bid evaluation scoring matrix for internal arithmetic consistency: that each factor's maximum, the scores recorded and the total agree with each other. Reports the differences it finds; it does not judge whether the evaluation itself was correct or fair."
+  zh: "核对评标因素评分矩阵的内部算术自洽性：各因素分值上限、所记分值与合计之间是否互相一致。只报告发现的差异，不评价评标本身是否正确或公正。"

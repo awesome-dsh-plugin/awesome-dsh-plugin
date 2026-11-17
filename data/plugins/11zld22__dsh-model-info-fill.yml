@@ -1,0 +1,6 @@
+url: https://github.com/11zld22/dsh-model-info-fill
+name: 11zld22/dsh-model-info-fill
+category: model
+description:
+  en: Fills missing context window, max tokens, thinking levels, and image input on custom DSH models from models.dev, and lists unmatched models for manual edits.
+  zh: 按模型名从 models.dev 补全自定义模型缺失的上下文、输出上限、思考档位和图片能力，并列出未匹配模型供手改。

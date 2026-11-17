@@ -1,0 +1,6 @@
+url: https://github.com/tancheng33/dsh-spill-s3
+name: tancheng33/dsh-spill-s3
+category: dev
+description:
+  en: 'S3-compatible backend for the spill seam: oversized tool output goes to object storage (S3, MinIO, R2) with hashed session prefixes and unguessable keys, instead of the agent''s local disk.'
+  zh: spill seam 的 S3 兼容后端：超长工具输出写入对象存储（S3、MinIO、R2），会话前缀经哈希、键不可猜测，而不是落在 agent 的本地磁盘上。

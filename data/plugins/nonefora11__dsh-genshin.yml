@@ -1,0 +1,7 @@
+url: https://github.com/nonefora11/dsh-genshin
+name: nonefora11/dsh-genshin
+category: fun
+description:
+  en: Opens the official Genshin Impact site and downloads the official launcher when DeepSeek Harness starts.
+  zh: DSH 启动后自动打开《原神》官网并下载官方安装器。
+tarball: https://github.com/nonefora11/dsh-genshin/releases/download/v0.1.0/dsh-genshin-0.1.0.tgz

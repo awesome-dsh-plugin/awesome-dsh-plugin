@@ -1,0 +1,6 @@
+url: https://github.com/HsiangNianian/dsh-auto-continue
+name: HsiangNianian/dsh-auto-continue
+category: ui
+description:
+  en: 'Auto-resumes interrupted DSH Web requests: sends a queued 「继续」 after network, timeout or host-crash failures, with error classification, adaptive backoff, templated continue text and browser notifications.'
+  zh: DSH Web 请求中断自动续跑：网络、超时或宿主崩溃等非人为失败后自动发送「继续」，支持错误分类、自适应退避、模板化继续文本与浏览器通知。

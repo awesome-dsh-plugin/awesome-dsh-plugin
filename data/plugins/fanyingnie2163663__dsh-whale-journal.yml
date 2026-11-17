@@ -1,0 +1,7 @@
+url: https://github.com/fanyingnie2163663/dsh-whale-journal
+name: fanyingnie2163663/dsh-whale-journal
+category: memory
+description:
+  en: 'Diary and narrative memory for companion agents: daily first-person entries scoped per group or private chat, refs that can be checked against that day''s messages, and a read-only journal page where hand-drawn doodles and photos follow the sentences they belong to.'
+  zh: '给陪伴型 agent 的日记 / 叙事记忆：按天、按 scope 写「自己视角」的话，每条尽量能回指到当天的消息；附带只读日记页（简笔画 / 照片跟着句子走）与接地审计。'
+icon: https://raw.githubusercontent.com/fanyingnie2163663/dsh-whale-journal/main/assets/icon-market.png

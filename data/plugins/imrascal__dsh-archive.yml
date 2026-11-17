@@ -1,0 +1,6 @@
+url: https://github.com/imrascal/dsh-archive
+name: imrascal/dsh-archive
+category: session
+description:
+  en: DeepSeek Harness plugin that manages archived sessions and the trash from the settings panel.
+  zh: DeepSeek Harness 存档会话管理插件：在设置面板管理归档会话（恢复/删除）与回收站。

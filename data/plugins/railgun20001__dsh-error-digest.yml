@@ -1,0 +1,6 @@
+url: https://github.com/railgun20001/dsh-error-digest
+name: railgun20001/dsh-error-digest
+category: dev
+description:
+  en: "Collects the failures recorded in DSH session logs — tool failures, turn failures and model retries — folds them into one table merged across sessions and sorted by frequency, showing category, source, error code, count, last-seen time and a summary per row. Each row can start a new session draft pre-filled for root-cause analysis or for prevention (sending still needs your confirmation), and ignoring a row only hides it in the panel without deleting logs."
+  zh: "把会话日志里的工具失败、回合失败与模型重试折叠成一张表，跨会话合并后按出现频次排序，每行显示类别 / 来源 / 错误码 / 出现次数 / 最近时间 / 摘要；每条错误可一键在新会话草稿框里预填「分析」或「防范」提示词（发送仍需用户确认），「忽略」只影响本面板显示、不删日志。"

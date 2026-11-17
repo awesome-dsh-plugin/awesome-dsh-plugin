@@ -1,0 +1,6 @@
+url: https://github.com/ZZZZZZZ-ZZZZZ/dsh-attachment-library
+name: ZZZZZZZ-ZZZZZ/dsh-attachment-library
+category: session
+description:
+  en: "Read-only attachment library: lists every image and file attachment stored on this machine, its size, and which conversations (including those in the session trash) still use it, with Show in Finder and Open in Preview."
+  zh: "只读附件库：列出本机保存的所有图片和文件附件及其占用空间，以及哪些对话（包括会话回收站中的）仍在使用它们，并可在访达中显示或用预览打开。"

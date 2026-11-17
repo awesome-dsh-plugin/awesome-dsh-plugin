@@ -1,0 +1,6 @@
+url: https://github.com/MythGreenLand/dsh-local-delegate
+name: MythGreenLand/dsh-local-delegate
+category: usage
+description:
+  en: Delegates mechanical text work (translate, summarize, extract, classify, rewrite) to an Ollama-native or OpenAI-compatible endpoint by file path, so the source text never enters the main model's context. Registers local_transform, local_batch and local_health; per-workspace local-AI levels (none/light/default/high/max) add a local_worker subagent and a plan-only mode; an opt-in SlaveAgentTeams switch discovers mounted model routes, runs parallel child agents with node-level failover, and registers the endpoint chain as llm-pi-ai routes. Configured from the Web GUI; requires a reachable endpoint.
+  zh: 把机械性文本工作（翻译、摘要、抽取、分类、改写）按文件路径交给 Ollama 原生或 OpenAI 兼容端点，正文不进入主模型上下文。注册 local_transform、local_batch、local_health；按项目工作区设置本地 AI 介入程度（无/轻度/默认/更高/最高），高等级下新增 local_worker 子 agent 与「只规划」模式；可选的 SlaveAgentTeams 开关会探测已挂载的模型路由、并行运行子 agent 并在节点失败时切换，同时把端点链注册为 llm-pi-ai 路由。配置在 Web GUI 内完成；需要可达的模型端点。

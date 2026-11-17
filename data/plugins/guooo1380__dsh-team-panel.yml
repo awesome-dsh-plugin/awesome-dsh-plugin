@@ -1,0 +1,6 @@
+url: https://github.com/guooo1380/dsh-team-panel
+name: guooo1380/dsh-team-panel
+category: usage
+description:
+  en: Counts token usage for one selected project per machine, syncs the totals to a self-hosted team server, and shows each member's project, spend and last active time in a sidebar panel.
+  zh: 每台机器只统计选定的那一个项目的 Token 用量并汇总到自建团队服务器，在侧栏面板中逐人显示所选项目、花费与最后消耗时间。

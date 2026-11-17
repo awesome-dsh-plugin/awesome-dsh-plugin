@@ -1,0 +1,6 @@
+url: https://github.com/sbearbug/dsh-highlightpin
+name: sbearbug/dsh-highlightpin
+category: session
+description:
+  en: 'Pins a selected passage of a finished user or assistant message as source text and keeps it in the model input across context compaction: each pin is recall-on-demand by default, or can be moved to a neutral resident system-prompt section or an emphasised highlighted one. Selections are aligned back to the source text with source-exact, source-normalized or rendered fidelity, and each of the three levels has its own character budget.'
+  zh: '把已定稿的用户或助手消息里划选的一段原文钉住，让它在上下文压缩后仍留在模型输入中：每枚钉子默认按需补回，也可改为 resident（中性常驻系统提示词）或 highlight（强调常驻）。选区会以 source-exact、source-normalized 或 rendered 三级保真对回源文本，三个级别各有独立的字符预算。'

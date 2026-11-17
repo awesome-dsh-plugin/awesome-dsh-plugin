@@ -1,0 +1,7 @@
+url: https://github.com/Yaronluo/dsh-plugin-git-workbench
+name: Yaronluo/dsh-plugin-git-workbench
+category: git
+tarball: https://github.com/Yaronluo/dsh-plugin-git-workbench/releases/latest/download/dsh-plugin-git-workbench.tgz
+description:
+  en: 'Local Git workbench for DeepSeek Harness: branch search and switching, hunk-level staging, commit graph, file history and blame, stash and worktree management, conflict resolution, and eight git tools for the agent.'
+  zh: '面向 DSH 的本地 Git 工作台：分支搜索与切换、hunk 级暂存、提交图谱、文件历史与 blame、储藏与工作树管理、冲突处理，以及 8 个供 agent 使用的 Git 工具。'

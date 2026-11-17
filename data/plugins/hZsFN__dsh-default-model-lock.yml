@@ -1,0 +1,6 @@
+url: https://github.com/hZsFN/dsh-default-model-lock
+name: hZsFN/dsh-default-model-lock
+category: model
+description:
+  en: Keeps the shared default model pinned, so switching the model inside a chat no longer rewrites the global default and no longer lowers that default's reasoning effort.
+  zh: 锁定共享的默认模型：在聊天里切换模型不再改写全局默认值，也不会再被那次切换连带降档推理强度。

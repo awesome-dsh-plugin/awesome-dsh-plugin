@@ -1,0 +1,6 @@
+url: https://github.com/redkiller79/dsh-libtv
+name: redkiller79/dsh-libtv
+category: tools
+description:
+  en: LibTV canvas and media tools for DeepSeek Harness, with three director skills bundled and one-time WeChat QR authorization.
+  zh: 把 LibTV 的画布与媒体生成能力接进 DeepSeek Harness，随包附带三个导演技能，首次使用微信扫码授权一次即可。

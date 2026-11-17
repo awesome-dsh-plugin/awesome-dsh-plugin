@@ -1,0 +1,6 @@
+url: https://github.com/LHF198/dsh-prompt-optimizer
+name: LHF198/dsh-prompt-optimizer
+category: ui
+description:
+  en: Improve the current chat draft before sending with a confirm-before-apply comparison.
+  zh: 在发送前优化当前聊天输入，采用前先对比原文与优化结果。

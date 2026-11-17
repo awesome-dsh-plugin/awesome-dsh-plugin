@@ -1,0 +1,7 @@
+url: https://github.com/xt765/dsh-context-window
+name: xt765/dsh-context-window
+category: workflow
+description:
+  en: 'Extends the composer model selector menu with a third Context window row, preset capacities (64K–2M), custom input, provider-wide sync, and adaptive compaction guard.'
+  zh: '在底部聊天输入框的模型选择弹窗中扩展第三行【上下文窗口】，支持 64K~2M 档位切换、自定义容量输入、提供商批量同步与自适应压缩防失败守卫。'
+tarball: https://github.com/xt765/dsh-context-window/releases/latest/download/dsh-context-window.tgz

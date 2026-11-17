@@ -1,0 +1,10 @@
+# 提交 awesome-dsh-plugin 市场的条目
+# 用法: fork https://github.com/awesome-dsh-plugin/awesome-dsh-plugin ,
+#       把本文件内容存为 data/plugins/kedeshuai__dsh-plugin.yml 后提 PR（一个文件即全部投稿）。
+# 注意: url 必须与仓库完全一致; 描述含 ": " 需加引号; 单 PR 最多 3 条; 描述只写功能不带营销词。
+url: https://github.com/kedeshuai/dsh-plugin
+name: kedeshuai/dsh-plugin
+category: skill
+description:
+  en: 'White-box testing workflow skill for embedded C: host-side stub harness, wb.py test driver with gcov coverage gating, and a control-logic study handbook template.'
+  zh: '嵌入式 C 白盒测试工作流技能：宿主机打桩 harness、wb.py 测试驱动与 gcov 覆盖率门禁、控制逻辑学习手册模板。'

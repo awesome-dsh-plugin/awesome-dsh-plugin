@@ -1,0 +1,6 @@
+url: https://github.com/pzc2004/dsh-frostfin
+name: pzc2004/dsh-frostfin
+category: dev
+description:
+  en: 'Use Kimi Code as the DSH agent loop over ACP, with approvals, slash commands, and local/remote (ssh+tmux) session attach.'
+  zh: '把 DSH 的 agent loop 换成 Kimi Code（ACP 直连）：审批、斜杠命令、本地与远程（ssh+tmux）会话接入。'

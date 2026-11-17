@@ -1,0 +1,6 @@
+url: https://github.com/liuyun2025/dsh-token-rmb
+name: liuyun2025/dsh-token-rmb
+category: usage
+description:
+  en: Appends the current turn's estimated token cost in CNY to the assistant action row, right after the usage/time indicator. Prices come from a built-in DeepSeek peak/off-peak CNY table (Beijing time, Monday-Friday 9:00-12:00 and 14:00-18:00) and can be overridden from the profile's cordis.patch.yml; a model without a configured price shows a dash instead of a made-up amount. Follows the shipped Performance & usage - Compact setting and hides together with the usage pill. Token cost only, per turn only.
+  zh: 在本轮对话的操作行「用量 / 时间」右侧追加该轮 token 费用估算（人民币）。单价来自内置的 DeepSeek 峰谷价目（北京时间，周一至周五 9:00–12:00、14:00–18:00），可在 profile 的 cordis.patch.yml 里整表覆盖；没有配置单价的模型显示「¥—」，不套用其它价格。跟随官方「性能与用量 = 简洁」设置一起隐藏。只算 token 费用、只显示本轮。

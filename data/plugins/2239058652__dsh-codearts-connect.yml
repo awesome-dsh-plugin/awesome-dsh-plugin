@@ -1,0 +1,6 @@
+url: https://github.com/2239058652/dsh-codearts-connect
+name: 2239058652/dsh-codearts-connect
+category: model
+description:
+  en: 'Huawei Cloud CodeArts provider for DeepSeek Harness with OAuth2 PKCE/DPoP sign-in, multi-account rotation, model discovery, and credits and usage views. A derivative of elegant01/dsh-codearts (MIT) with added account and image features; do not install it alongside the upstream - both register the same `codearts` provider.'
+  zh: '华为云 CodeArts 的 DeepSeek Harness 接入插件：内置 OAuth2（PKCE + DPoP）登录、多账号轮转、模型发现，以及积分与用量查看。本项目是 elegant01/dsh-codearts（MIT）的衍生版，补充了账号与图片相关能力；请勿与上游同时安装——两者注册同一个 `codearts` provider。'

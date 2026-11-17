@@ -1,0 +1,7 @@
+url: https://github.com/Howthemeaning/dsh-model-settings
+tarball: https://github.com/Howthemeaning/dsh-model-settings/releases/download/v0.2.2/dsh-model-settings-0.2.2.tgz
+name: Howthemeaning/dsh-model-settings
+category: model
+description:
+  en: 'Model settings panel for DeepSeek Harness: set the default model for new sessions, plus separate provider/model/reasoning-effort overrides for subagents and goal rounds, with live reload.'
+  zh: 'DeepSeek Harness 模型设置面板：设置新会话的默认模型，并为子代理与 goal 回合分别配置 provider、模型和推理强度，保存后热更新。'

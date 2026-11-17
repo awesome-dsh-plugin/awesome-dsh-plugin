@@ -1,0 +1,6 @@
+url: https://github.com/MaiMai0812/dsh-model-failover
+name: MaiMai0812/dsh-model-failover
+category: tools
+description:
+  en: Model failover router that queues every connected DSH model into priority templates, retries a failing candidate before switching, cools down rate limits briefly, quarantines failures per session, and auto-sends a continue message when a turn fails or hits the token ceiling.
+  zh: 模型接力路由器：把已接入 DSH 的全部模型排成优先级模板，失败时先原地重试再换下一个模型，限流只短暂冷却，故障按会话隔离，整轮失败或撞到 token 上限时自动补发「继续」。

@@ -1,0 +1,7 @@
+url: https://github.com/Voellin/dsh-deephub-share/tree/main/packages/dsh-deephub-share
+name: Voellin/dsh-deephub-share#dsh-deephub-share
+category: session
+description:
+  en: 'Turns a dsh session into a redacted idea and delivers it end-to-end encrypted to friends on DeepHub; received ideas land as new sessions.'
+  zh: '将一条 dsh 会话提炼为脱敏后的思路，端到端加密投递给 DeepHub 上的朋友；收到的思路落为一条新会话。'
+tarball: https://github.com/Voellin/dsh-deephub-share/releases/latest/download/dsh-deephub-share.tgz

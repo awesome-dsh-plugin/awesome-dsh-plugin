@@ -1,0 +1,6 @@
+url: https://github.com/dreamfarer-space/deepseek-harness-intelligent-ui
+name: dreamfarer-space/deepseek-harness-intelligent-ui
+category: ui
+description:
+  en: 'Generative, interactive UI for DeepSeek Harness: the agent picks per reply between 26 validated native components and sandboxed streaming HTML widgets, patches a rendered UI in place by component ID, restores tabs, sorts, filters and form values after a reload, and computes slider and filter changes in the browser without another model call.'
+  zh: '为 DeepSeek Harness 提供生成式交互界面：模型每次回答自行在 26 个校验过的原生组件与沙箱流式 HTML widget 之间选择，可按组件 ID 就地修补已渲染的界面，标签页、排序、筛选与表单值在刷新后恢复，滑块与筛选的重算在浏览器本地完成，不回调模型。'

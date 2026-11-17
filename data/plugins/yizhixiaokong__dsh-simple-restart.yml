@@ -1,0 +1,6 @@
+url: https://github.com/yizhixiaokong/dsh-simple-restart
+name: yizhixiaokong/dsh-simple-restart
+category: dev
+description:
+  en: 'Adds a restart row to Settings → General that relaunches dsh web with the same invocation through a detached helper, refuses under a detected systemd supervisor unless allowRestart is true, and tests whether the listening port is free by connecting to it rather than binding it.'
+  zh: '在「设置 → 通用」增加一行重启按钮：用相同启动参数、经分离的 helper 重新拉起 dsh web；检测到 systemd 监管时默认拒绝（除非 allowRestart 为 true）；判断端口是否空闲用连接探测而非绑定。'

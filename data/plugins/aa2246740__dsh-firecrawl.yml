@@ -1,0 +1,7 @@
+url: "https://github.com/aa2246740/dsh-firecrawl"
+name: "aa2246740/dsh-firecrawl"
+category: "browser"
+description:
+  en: "Adds a Firecrawl search provider with multi-account API-key settings."
+  zh: "提供 Firecrawl 搜索服务及多账户 API Key 设置。"
+tarball: "https://github.com/aa2246740/dsh-firecrawl/releases/download/v0.1.4/dsh-web-search-firecrawl-0.1.4.tgz"

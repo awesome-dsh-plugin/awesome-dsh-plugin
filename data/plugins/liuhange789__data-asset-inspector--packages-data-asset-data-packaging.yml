@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-packaging
+name: liuhange789/data-asset-inspector#data-packaging
+category: tools
+description:
+  zh: "数据封装插件 — 产品说明书生成+合规附件"
+  en: "Data packaging plugin for product manual generation and compliance attachments."

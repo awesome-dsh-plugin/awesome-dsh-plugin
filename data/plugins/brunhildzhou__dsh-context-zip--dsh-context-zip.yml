@@ -1,0 +1,6 @@
+url: https://github.com/brunhildzhou/dsh-context-zip/tree/main/dsh-context-zip
+name: brunhildzhou/dsh-context-zip#dsh-context-zip
+category: memory
+description:
+  en: Replaces the built-in DSH compaction summarizer with a five-section handoff summary and keeps every shadowed message readable in a segment directory.
+  zh: 接管 DSH 自带的压缩摘要器，改用五段式交接摘要，被压掉的每条消息都能在分段目录里读回。

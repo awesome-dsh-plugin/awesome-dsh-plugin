@@ -1,0 +1,6 @@
+url: https://github.com/thomasvvugt/dsh-kanban-flow
+name: thomasvvugt/dsh-kanban-flow
+category: workflow
+description:
+  en: 'Agent-driven kanban board: one board per workspace, per-task agent sessions, and a guarded human/agent workflow (Backlog → To Do → In Progress → Review → Done).'
+  zh: 'agent 驱动的看板：每个工作区一块看板、每个任务一个 agent 会话，以及带护栏的人机协作流程（Backlog → To Do → In Progress → Review → Done）。'

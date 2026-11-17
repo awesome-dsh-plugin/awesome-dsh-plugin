@@ -1,0 +1,6 @@
+url: https://github.com/Sanqi-normal/dsh-webui-market-plugin
+name: Sanqi-normal/dsh-webui-market-plugin
+category: market
+description:
+  en: 'In-harness plugin market for the dsh web GUI: browse the awesome-dsh-plugin.com catalog and install/uninstall plugins into a profile from Settings → Plugins → Plugin Market.'
+  zh: dsh Web GUI 内的社区插件市场：浏览 awesome-dsh-plugin.com 目录，从 设置 → 插件 → 插件市场 安装/卸载插件到 profile。

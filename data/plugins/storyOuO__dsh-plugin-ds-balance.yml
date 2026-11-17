@@ -1,0 +1,6 @@
+url: https://github.com/storyOuO/dsh-plugin-ds-balance
+name: storyOuO/dsh-plugin-ds-balance
+category: usage
+description:
+  en: "DeepSeek API balance + per-call cost tracker: durable per-call cost ledger from real usage chunks with official Beijing peak/off-peak (x2) pricing, 60 s balance polling, and a sidebar footer action showing balance and today's spend."
+  zh: "DeepSeek 余额与逐次调用成本追踪：基于真实 usage 的持久化成本账本，支持官方高峰/低谷定价（北京时间 ×2），60 秒余额轮询，侧栏底部显示余额与今日消耗。"

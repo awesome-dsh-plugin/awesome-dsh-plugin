@@ -1,0 +1,25 @@
+# Catalog entry for https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+#
+# How to submit:
+#   1. Replace 111222cjyq with the GitHub user or organization that owns the repo
+#      (the same value used in the `repository` field of package.json).
+#   2. Save this file as data/plugins/111222cjyq__dsh-curate.yml in a fork of the
+#      catalog repository (the filename must be <owner>__<repo>.yml).
+#   3. Open one PR that adds only that file. One entry per PR; at most 3.
+#
+# Rules this entry follows (see the catalog's contributing.md):
+#   - `url` must match the repository exactly.
+#   - `category` is `session` (rendered as "Sessions & Messages").
+#   - `description.en` is required and must state what the plugin does, without
+#     superlatives. `zh` is optional; keep it when available.
+#   - Do not add an `npm:` key; npm mapping is collected from the registry.
+#   - No screenshots are declared yet; storefronts fall back to README images.
+#   - Values containing ": " are single-quoted so YAML does not read them as
+#     nested keys.
+
+url: https://github.com/111222cjyq/dsh-curate
+name: 111222cjyq/dsh-curate
+category: session
+description:
+  en: 'A human-in-the-loop curation workbench inside a DSH session: mark whole turns or single messages to keep verbatim or to summarize, rewrite user, assistant, tool-result and injected-context messages in place without a model call, then compress the marked ranges with model-written summaries or the official /compact. A local JSON backup is written before every write to the session.'
+  zh: '面向 DSH 会话的人工上下文整理工作台：可为整轮或单条消息标记「重要（原文保留）／一般／次要」，不调用模型即可改写用户、助手、工具结果与注入上下文消息，再按标记区间用模型生成的摘要压缩，或调用官方 /compact（范围由官方压缩器决定）；每次写入前都会生成一份本地 JSON 备份。'

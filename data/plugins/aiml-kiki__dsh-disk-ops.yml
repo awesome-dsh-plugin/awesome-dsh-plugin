@@ -1,0 +1,8 @@
+url: https://github.com/aiml-kiki/dsh-disk-ops
+name: aiml-kiki/dsh-disk-ops
+category: tools
+description:
+  en: Treemap disk usage map with linked cleanup suggestions, a reviewed trash plan, and an append-only audit log on macOS.
+  zh: 用树图查看 macOS 磁盘占用，联动可清理建议，确认计划后移入废纸篓，并写入追加式审计日志。
+icon: https://raw.githubusercontent.com/aiml-kiki/dsh-disk-ops/main/assets/icon-512.png
+tarball: https://github.com/aiml-kiki/dsh-disk-ops/releases/download/v0.1.2/dsh-disk-ops-0.1.2.tgz

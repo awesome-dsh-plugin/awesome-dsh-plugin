@@ -1,0 +1,7 @@
+url: https://github.com/LeiYuXingZhou/dsh-preview-extra
+name: LeiYuXingZhou/dsh-preview-extra
+category: docs
+description:
+  en: Adds right-sidebar document previews for STL, OBJ, PLY, glTF and GLB models, zip/tar/gzip archives, audio and video, fonts, subtitles, TOML, Intel HEX, JCAMP-DX spectra, VCD waveforms, KiCad schematics and boards, and DFU firmware images.
+  zh: 在右侧栏文档预览中打开 STL、OBJ、PLY、glTF 与 GLB 模型，zip/tar/gzip 压缩包，音视频、字体、字幕，以及 TOML、Intel HEX、JCAMP-DX 谱图、VCD 波形、KiCad 原理图和电路板、DFU 固件。
+tarball: https://github.com/LeiYuXingZhou/dsh-preview-extra/releases/download/v0.1.0/dsh-preview-extra-0.1.0.tgz

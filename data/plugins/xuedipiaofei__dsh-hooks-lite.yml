@@ -1,0 +1,6 @@
+url: https://github.com/xuedipiaofei/dsh-hooks-lite
+name: xuedipiaofei/dsh-hooks-lite
+category: workflow
+description:
+  en: "Config-driven lifecycle hooks for DSH: block or observe tool calls, and react to completed turns, messages, and title changes with shell commands."
+  zh: "配置驱动的 DSH 生命周期 hooks：拦截或观察工具调用，并对回合完成、用户消息和标题变化执行 shell 命令。"

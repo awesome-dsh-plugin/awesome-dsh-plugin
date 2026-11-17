@@ -1,0 +1,6 @@
+url: https://github.com/lhuans/dsh-genui
+name: lhuans/dsh-genui
+category: ui
+description:
+  en: 'Renders OpenTiny GenUI charts, forms, calculators and mini apps inline in DSH replies via schemaJson fences, with user actions flowing back into the conversation.'
+  zh: 通过 schemaJson 代码块在 DSH 回复内渲染 OpenTiny GenUI 图表、表单、计算器等迷你应用，用户操作自动回传对话。

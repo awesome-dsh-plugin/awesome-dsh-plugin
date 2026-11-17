@@ -1,0 +1,7 @@
+url: https://github.com/ChimeSky/dsh-effort-keeper
+name: ChimeSky/dsh-effort-keeper
+category: model
+description:
+  en: Remembers the reasoning effort you explicitly chose for each provider and model and restores it when you switch back, without replacing DSH's own model picker.
+  zh: 按 Provider + Model 记住你最后一次明确选择的推理档位，切回该模型时用同一次原生选择调用恢复，不替换 DSH 原生模型选择器。
+tarball: https://github.com/ChimeSky/dsh-effort-keeper/releases/download/v1.0.5/dsh-effort-keeper-1.0.5.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/bookkeeping
+name: JohnXu22786/bookkeeping
+category: tools
+description:
+  en: "Conversational bookkeeping bundle for dsh: record expenses/income by chat with strict amount validation and natural-language dates, then query, report, export CSV/HTML, and track monthly budgets against a local SQLite ledger."
+  zh: "dsh 的对话式记账插件:聊天即可记账(严格金额校验、自然语言日期、自动分类),并支持查询、报表、CSV/HTML 导出和月度预算,数据存于本地 SQLite 账本。"

@@ -1,0 +1,6 @@
+url: https://github.com/huanlin-labs/dsh-skill-cockpit
+name: huanlin-labs/dsh-skill-cockpit
+category: skill
+description:
+  en: 'Skill cockpit page in the DSH app-level nav (sidebar.panellist seat): lists every skill this machine actually exposes across all six skill-root kinds, explains why a skill is invisible (dropped reason, missing root, or disabled), and toggles one skill by renaming only its entry file (SKILL.md and SKILL.md.disabled); project-level skill roots stay read-only.'
+  zh: 'DSH 应用级导航里的「技能中心」页（sidebar.panellist 席位）：列出本机实际暴露的全部技能（覆盖六类技能根），说明某技能为何不可见（被丢弃的原因、根目录缺失、已停用），只改入口文件名（SKILL.md 与 SKILL.md.disabled）即可单独启停；项目级技能根保持只读。'

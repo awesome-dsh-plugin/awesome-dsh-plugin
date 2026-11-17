@@ -1,0 +1,6 @@
+url: https://github.com/GuihaiHU/dsh-temp-note
+name: GuihaiHU/dsh-temp-note
+category: ui
+description:
+  en: A temp note in the DSH right sidebar with session, workspace, and global scopes, browser-local autosave, one-click copy, and one-click LLM polish through the default model.
+  zh: DSH 右侧边栏的临时笔记，支持会话级、工作区级与全局三种范围、自动保存、一键复制，以及用默认模型一键优化为 Markdown。

@@ -1,0 +1,6 @@
+url: https://github.com/EIGHTfs/dsh-theme-mediascape
+name: EIGHTfs/dsh-theme-mediascape
+category: theme
+description:
+  en: 'Media-scape theme for the DSH web UI: standing/character-art and video wallpapers (mp4/webm, local + online) with boot animation, base color schemes (single-source JSON + presets + picker), capsule host-element styling, ambient particles, background music player (covers/playlists/random), typing sound effects, and a draggable dock toolbar with a unified upload entry — wallpapers and music uploaded together (suffix-classified), mid-upload no-disk buffering, pause→.part snapshots with offset resume, filename+size dedup with "skipped" notices, and true-delete removal with list refreshes.'
+  zh: 'DSH Web UI 媒体景观主题：立绘/视频壁纸（mp4/webm，本地+在线）+ 开屏动画 + 基底配色（单真源 JSON + 预设包 + 取色器 + 胶囊宿主元素样式）+ 氛围粒子 + 背景音乐播放器（封面/歌单/随机）+ 打字音效 + 可拖动 dock 工具条；dock「传」统一上传壁纸与音乐（按文件后缀识别）——上传中途不落盘、暂停落 .part 快照可续传、文件名+大小去重预检「已跳过」、移除真实删除并前后刷新列表。'

@@ -1,0 +1,6 @@
+url: https://github.com/limingyao-xx/dsh-sidebar-mobile-browser
+name: limingyao-xx/dsh-sidebar-mobile-browser
+category: browser
+description:
+  en: "Mobile-viewport preview tab for the right sidebar, with nine preset sizes covering phones, tablets and a laptop plus a custom width/height, one-click URL copy, and the page URL inserted into the composer through an @ button or the /url command."
+  zh: "右侧边栏的移动端视口预览标签页：九种预设尺寸（手机、平板、笔记本）及自定义宽高，一键复制当前地址，并可通过 @ 按钮或 /url 指令把页面地址插入输入框。"

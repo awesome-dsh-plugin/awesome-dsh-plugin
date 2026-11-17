@@ -1,0 +1,6 @@
+url: https://github.com/runcat-tommy/dsh-windows-c-cleanup
+name: runcat-tommy/dsh-windows-c-cleanup
+category: tools
+description:
+  en: "Windows system-drive (C:) cleanup for DSH: rule-based scan, five-tier safety grading, a staging area with a rollback ledger, UAC elevation, and migration to another drive — a model tool plus a Web GUI panel."
+  zh: "DSH 的 Windows 系统盘（C 盘）清理能力：按规则库扫描、五级安全分级、带台账可回滚的暂存区、UAC 提权与迁移到其他盘 —— 既有模型工具，也有 Web 面板。"

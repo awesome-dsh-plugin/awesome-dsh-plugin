@@ -1,0 +1,7 @@
+url: https://github.com/talulra/dsh-wallpaper-glass
+name: talulra/dsh-wallpaper-glass
+category: theme
+description:
+  en: 'Shows the local desktop wallpaper behind a translucent DeepSeek Harness window: the image is pixel-aligned with the desktop (edge-snaps, partially off-screen and maximized windows included), follows wallpaper and slideshow changes, and adapts the readability veil to the image brightness; dialogs, menus, the embedded browser, the composer and search fields keep their original opaque palette.'
+  zh: '把本地系统壁纸显示在 DeepSeek Harness 主窗口背后并逐像素对齐桌面（贴边、移出屏幕、最大化都适用），跟随壁纸与幻灯片切换，按壁纸明暗自动调节可读性蒙层；对话框、菜单、内嵌浏览器、输入框与搜索框保持原本不透明配色。'
+icon: https://raw.githubusercontent.com/talulra/dsh-wallpaper-glass/main/assets/icon-180.png

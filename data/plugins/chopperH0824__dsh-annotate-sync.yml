@@ -1,0 +1,7 @@
+url: https://github.com/chopperH0824/dsh-annotate-sync
+name: chopperH0824/dsh-annotate-sync
+category: ui
+description:
+  en: 'In-place HTML document preview annotation: pick elements, leave notes saved per file, send batches to the conversation, and let the agent apply changes directly.'
+  zh: 'HTML 文档预览就地批注插件：点选元素写批注，按文件保存批注，可整批发送到当前对话，由 Agent 直接修改源文件。'
+icon: https://raw.githubusercontent.com/chopperH0824/dsh-annotate-sync/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/SilverIodide42/dsh-usage-panel-plus
+name: SilverIodide42/dsh-usage-panel-plus
+category: usage
+tarball: https://github.com/SilverIodide42/dsh-usage-panel-plus/releases/download/v0.1.2/dsh-usage-panel-plus-0.1.2.tgz
+description:
+  en: 'Standalone usage statistics panel for DSH, derived from HaoyueQin/dsh-usage-statistics-panel by HaoyueQin (MIT): per-session breakdowns with model drill-down, per-row cache hit rates, an all-time range and CSV export.'
+  zh: '独立的 DSH 用量统计面板，改自 HaoyueQin 的 dsh-usage-statistics-panel（MIT）：按会话拆分并可下钻模型、逐行缓存命中率、「全部」时间范围与 CSV 导出。'

@@ -1,0 +1,6 @@
+url: https://github.com/Mu-scorpio/token-usage-counter
+name: Mu-scorpio/token-usage-counter
+category: usage
+description:
+  en: Persistent provider-reported token usage totals with per-session, per-model, and daily activity statistics.
+  zh: 持久化 provider 上报的 Token 用量统计，支持按会话、按模型和按日活跃度查看。

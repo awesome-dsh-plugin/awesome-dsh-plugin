@@ -1,0 +1,6 @@
+url: https://github.com/MutaLucem/dsh-plugin-integration
+name: MutaLucem/dsh-plugin-integration
+category: dev
+description:
+  en: Discovers installed DSH plugins with tags, overlap and compatibility detection, one-click enable/disable, failure diagnosis, and update checking.
+  zh: 动态发现已装插件并打标分类，检测功能重叠与兼容冲突，一键启停切换、失效诊断与更新检测。

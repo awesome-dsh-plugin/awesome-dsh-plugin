@@ -1,0 +1,6 @@
+url: https://github.com/AprilCrystal/dsh-client-ui-font-scale
+name: AprilCrystal/dsh-client-ui-font-scale
+category: ui
+description:
+  en: 'Conversation font-size controls for the Web UI: a stepper in the composer row, keyboard shortcuts, and Ctrl+wheel zoom, all writing through the theme service setFontSize.'
+  zh: 'Web 界面的对话字号控制：输入区步进器、键盘快捷键与 Ctrl+滚轮缩放，统一走主题服务的 setFontSize。'

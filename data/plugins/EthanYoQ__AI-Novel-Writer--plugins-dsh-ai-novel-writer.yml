@@ -1,0 +1,6 @@
+url: https://github.com/EthanYoQ/AI-Novel-Writer/tree/master/plugins/dsh-ai-novel-writer
+name: EthanYoQ/AI-Novel-Writer#dsh-ai-novel-writer
+category: workflow
+description:
+  en: 'Installs a dedicated AI novel-writing preset and workbench: revisioned local project assets, a compact side drawer, and native approval-gated single-file changes.'
+  zh: 安装专用 AI 小说创作预设与工作台：提供带修订号的本地项目资产、紧凑侧边工作台，以及需要原生审批的逐文件变更。

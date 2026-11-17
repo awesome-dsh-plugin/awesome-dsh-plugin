@@ -1,0 +1,7 @@
+url: https://github.com/Cyberbolt/dsh-snapcompact
+name: Cyberbolt/dsh-snapcompact
+category: session
+description:
+  en: 'A DSH context-compaction plugin: when the route supports images, it renders the middle of a session history into locally generated 1-bit bitmap frames for the vision model, while the exact head and tail, a bounded exact-token index and a FILES index stay as text.'
+  zh: 'DSH 上下文压缩插件：路由支持图片时，把会话历史的中段在本地渲染成单色位图帧交给视觉模型阅读；精确的首尾文本、有上限的精确 token 索引与 FILES 文件索引仍以文字保留。'
+icon: https://raw.githubusercontent.com/Cyberbolt/dsh-snapcompact/main/assets/icon-180.png

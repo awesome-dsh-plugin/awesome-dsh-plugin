@@ -1,0 +1,6 @@
+url: https://github.com/hugo2046/dsh-ascii-sharks-skin/tree/main/plugin
+name: hugo2046/dsh-ascii-sharks-skin#dsh-sharks-skin
+category: theme
+description:
+  en: Adds animated ASCII sharks to new and existing chats with adjustable counts and named style presets.
+  zh: 在新会话和聊天正文中显示游动的 ASCII 鲨鱼，支持调整数量和保存命名样式。

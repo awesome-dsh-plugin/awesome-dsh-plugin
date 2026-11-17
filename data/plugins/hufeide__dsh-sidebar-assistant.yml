@@ -1,0 +1,6 @@
+url: https://github.com/hufeide/dsh-sidebar-assistant
+name: hufeide/dsh-sidebar-assistant
+category: ui
+description:
+  en: 'A sidebar assistant plugin for the Web interface, allows users to select any text, displays the model’s reasoning process and final answer in a floating panel.'
+  zh: 'Web 界面的侧边栏助手插件,在 Web 聊天界面里选中任意文本，在浮层面板里流式显示思考过程与最终答案。'

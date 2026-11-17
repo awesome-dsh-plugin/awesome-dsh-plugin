@@ -1,0 +1,13 @@
+url: https://github.com/dongsheng123132/xiapan-music
+name: dongsheng123132/xiapan-music
+category: skill
+description:
+  en: >-
+    Generates complete AI songs (vocals plus full arrangement) from a theme or from provided lyrics,
+    and instrumental BGM, through a bundled xiapan-music skill and a xiapan_music DSH tool;
+    also queries the Xiapan API balance. Uses a user-supplied Xiapan API key (BYOK), and saves the
+    generated mp3 files on the DSH host.
+  zh: >-
+    通过内置的 xiapan-music 技能与 xiapan_music 工具，按主题或已有歌词生成完整 AI 歌曲（人声与完整编曲）
+    以及纯音乐 BGM，并可查询虾盘云 API 余额；使用用户自带的虾盘云 Key（BYOK），生成的 mp3 保存在 DSH 主机上。
+icon: https://raw.githubusercontent.com/dongsheng123132/xiapan-music/main/assets/icon-180.png

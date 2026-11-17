@@ -1,0 +1,6 @@
+url: https://github.com/appthin/dsh-skills-manager-plus
+name: appthin/dsh-skills-manager-plus
+category: skill
+description:
+  en: "Manage DSH skills and commands from Settings: list, enable/disable, edit, delete and add skills across global and project scopes, and save reusable prompts as slash commands."
+  zh: "在 DSH 设置中管理技能与命令：跨全局与项目作用域查看、启用/停用、编辑、删除与添加技能，并把常用提示词保存为斜杠命令。"

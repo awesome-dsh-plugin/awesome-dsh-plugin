@@ -1,0 +1,7 @@
+url: https://github.com/azazo1/dsh-write-protect
+name: azazo1/dsh-write-protect
+category: security
+tarball: https://github.com/azazo1/dsh-write-protect/releases/latest/download/dsh-write-protect.tgz
+description:
+  en: Keep declared workspace subpaths (e.g. .git) read-only, honor a read-only rules file at the workspace root, grant extra writable roots under workspace-write, and let the model request session-scoped write access; enforced for sandboxed CLI commands and the write/edit tools.
+  zh: 为 DSH 沙箱增加工作区子路径只读保护 (例如 .git), 支持工作区根下的只读规则文件, 可在 workspace-write 下声明额外可写根, 并允许模型申请本会话的可写授权; 命令沙箱与 write/edit 工具都生效.

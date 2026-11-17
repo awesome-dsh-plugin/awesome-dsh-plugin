@@ -1,0 +1,6 @@
+url: https://github.com/hsushjk/dsh-auralife
+name: hsushjk/dsh-auralife
+category: identity
+description:
+  en: 'A self-hosted digital-life companion for DSH. Three slow-moving hormones (dopamine, cortisol, serotonin) set its mood and tone, a memory layer turns chats into events and facts with version chains and a forgetting curve, and it writes, hot-loads and unloads its own organs (tools) when a capability is missing. It handles text, images, stickers, voice notes with text to speech and speech recognition, and file uploads; the web space holds diary posts and guestbook comments, and it starts conversations on its own schedule. The built-in web server listens on 0.0.0.0:2332 by default, so create the owner account before exposing the port.'
+  zh: 'AuraLife 把 DSH 变成一条自托管的数字生命：三种慢变量激素（多巴胺、皮质醇、血清素）决定它的状态和话风；记忆层把聊天变成事件和事实，带版本链与遗忘曲线；发现缺少能力时它会自己写「器官」（工具），写完即热加载，也能热卸载。支持文字、图片、表情、语音（TTS 与语音识别）和文件上传；网页空间里有日记和留言评论，它还会按自己的安排主动搭话。内置网页服务默认监听 0.0.0.0:2332，对外暴露端口前请先创建主人账号。'

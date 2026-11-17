@@ -1,0 +1,6 @@
+url: https://github.com/FurinaEsE/dsh-ui-zoom-regions
+name: FurinaEsE/dsh-ui-zoom-regions
+category: ui
+description:
+  en: 'Per-region UI zoom for DeepSeek Harness — Ctrl + wheel sets independent zoom levels for the conversation header, the left sidebar, the conversation body and the right sidebar (sidebars 25%-300%), and dragging the header bottom edge makes that header shorter or taller, growing by height only so label size stays unchanged.'
+  zh: 'DeepSeek Harness 分区域缩放：Ctrl + 滚轮分别为会话顶栏、左侧栏、会话正文和右侧面板设置独立比例（侧栏 25%–300%）；拖动顶栏整条下边界可以把它调矮或调高，调高只增加高度、字大小不变。'

@@ -1,0 +1,7 @@
+url: https://github.com/OverToWind/dsh-todo
+name: OverToWind/dsh-todo
+category: ui
+description:
+  en: 'To-do list in the session header: the button cycles through unfinished items and is tinted red, amber or green by due time, and the floating panel adds, edits and ticks off tasks with an optional deadline, with a collapsible done section. Items persist in localStorage and follow the DSH theme.'
+  zh: '会话标题栏里的待办清单：按钮轮播未完成事项，按截止时间以红、黄、绿整块着色；浮动面板可新增、编辑、勾选待办并设置截止时间，已完成收进可折叠区域；数据存 localStorage，跟随 DSH 主题。'
+icon: https://raw.githubusercontent.com/OverToWind/dsh-todo/main/assets/icon-180.png

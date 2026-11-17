@@ -1,0 +1,6 @@
+url: https://github.com/AphyTOT/dsh-plugin-preflight
+name: AphyTOT/dsh-plugin-preflight
+category: dev
+description:
+  en: 'Preflight checks for a DeepSeek Harness plugin before submitting it to the community list: verifies the dsh.bundle manifest, cordis.patch.yml wiring, client bundle shape, and peer ranges that silently exclude prerelease harness builds. CLI plus one read-only agent tool.'
+  zh: '投稿社区精选列表前的插件自检：校验 dsh.bundle 清单、cordis.patch.yml 接线、客户端 bundle 形态，以及会静默排除预发布版 harness 的 peer 版本范围。提供 CLI 与一个只读的 agent 工具。'

@@ -1,0 +1,6 @@
+url: https://github.com/5aaee9/pi-agent-extensions/tree/main/dsh-autocompact
+name: 5aaee9/pi-agent-extensions#dsh-autocompact
+category: session
+description:
+  en: 'Set an earlier automatic-compaction threshold per model on DeepSeek Harness: /autocompact writes a session-only override keyed by exact provider/model (off falls back to the backend defaults, default clears it), a Settings → Autocompact page manages the persisted per-model thresholds every session inherits, and a composer status entry shows the current reading.'
+  zh: '为 DeepSeek Harness 按模型设置更早的自动压缩阈值：/autocompact 以精确 provider/model 为键写入仅本会话生效的覆盖值（off 回退后端默认、default 清除覆盖），设置页「自动压缩」管理所有会话继承的持久化逐模型阈值，输入框状态条目显示当前读数。'

@@ -1,0 +1,7 @@
+url: https://github.com/yxfvvv/dsh-labview
+name: yxfvvv/dsh-labview
+category: tools
+description:
+  en: Unlock password-protected LabVIEW VI and CTL block diagrams without LabVIEW or Python.
+  zh: 无需 LabVIEW 或 Python，直接解锁受密码保护的 LabVIEW VI/CTL 程序框图。
+icon: https://raw.githubusercontent.com/yxfvvv/dsh-labview/main/icon.png

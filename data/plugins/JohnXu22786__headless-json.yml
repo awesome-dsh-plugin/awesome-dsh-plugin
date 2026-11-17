@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/headless-json
+name: JohnXu22786/headless-json
+category: dev
+description:
+  en: 'Structured machine-readable CI output for DeepSeek Harness: JSON/NDJSON session reports, JUnit XML, semantic exit codes, artifact collection and privacy redaction - a dsh profile bundle plus a standalone CLI.'
+  zh: '为 DeepSeek Harness 提供结构化、机器可读的 CI 输出：JSON/NDJSON 会话报告、JUnit XML、语义化退出码、工件收集与隐私脱敏——一个 dsh profile bundle 外加独立 CLI。'

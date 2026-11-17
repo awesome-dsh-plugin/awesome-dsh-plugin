@@ -1,0 +1,6 @@
+url: https://github.com/1020252969/dsh-wallpaper
+name: 1020252969/dsh-wallpaper
+category: theme
+description:
+  en: "One image behind the whole DSH shell. The image layer sits at z-index -1 and the shell's two --dsw-* tokens are repointed at translucent tints, so the picture shows through the frame, sidebar and composer. Ships a bundled default picture so it works with zero configuration, plus a floating panel with five sliders, presets, upload, and an SSRF-guarded URL import; changes persist to a local settings.json and the client self-heals when the SPA replaces its stylesheet."
+  zh: "给整个 DSH 外壳铺一张背景图：图片层挂在 z-index -1，并把外壳的两个 --dsw-* 令牌改成半透明色，让背景透出侧栏、中栏和输入框。内置一张默认图，装完零配置就有；右下角浮动面板提供五个滑杆、预设档、上传与带 SSRF 防护的链接导入，改动写进本地 settings.json，样式表被 SPA 顶掉时会自动重画。"

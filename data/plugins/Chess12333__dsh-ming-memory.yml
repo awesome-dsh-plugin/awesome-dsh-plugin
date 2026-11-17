@@ -1,0 +1,6 @@
+url: https://github.com/Chess12333/dsh-ming-memory
+name: Chess12333/dsh-ming-memory
+category: memory
+description:
+  en: 'Read-only persona injection for DSH: when a session opens inside your workspace, your persona files and the latest diary entries are prepended to the system prompt, and those source files are never modified. It keeps a short cross-session feed of recent messages under <root>/live/feed.json and can write a QQ hand-off file at <root>/live/web-for-qq.md; nothing is uploaded. Variable blocks (clock, recent actions, other sessions) are delivered as a per-step context message, so the prompt prefix stays byte-stable and keeps its cache.'
+  zh: 'DSH 的开场记忆插件：会话开在指定目录时，把人格文件与最近几篇日记注入系统提示词，这些源文件只读不改；它会在 <root>/live/feed.json 保存一小段跨会话的最近对话，并可写出 <root>/live/web-for-qq.md 交给 QQ 侧，不上传任何内容。会变的块（时间感、刚做过、别的会话）走每步刷新的上下文消息，系统提示逐字节稳定，前缀缓存不被打断。'

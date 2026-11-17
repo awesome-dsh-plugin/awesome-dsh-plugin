@@ -1,0 +1,6 @@
+url: https://github.com/huhaodong/dsh-auto-driving
+name: huhaodong/dsh-auto-driving
+category: model
+description:
+  en: 'Model failover and turn keep-alive for DeepSeek Harness: a request that fails with a model error before any visible output falls through the models of the configured provider groups (then the next provider) until one streams; transient failures retry with backoff under a liveness watchdog, a dead turn self-resumes with templated 「继续」 wake-ups, and an optional full-auto mode auto-answers permission, question and plan approvals with every decision appended to an AUTO-MODE.md audit log.'
+  zh: 'DeepSeek Harness 模型故障自动回退与轮次保活：请求在产出任何可见内容前因模型错误失败时，沿所选供应商分组的模型（再到下一个供应商）逐个切换直到流式成功；瞬态失败按指数退避自动重试并有活性看门狗防假死，整轮任务失败后自动发送模板化「继续」唤醒续跑；可选全自动模式自动应答权限审批、确认提问与方案评审，每次自动决策追加到 AUTO-MODE.md 审计日志。'

@@ -1,0 +1,8 @@
+url: https://github.com/zhing99-hash/dsh-dafeiyu-jinrong
+name: zhing99-hash/dsh-dafeiyu-jinrong
+category: fun
+description:
+  en: 'Desktop BigFish companion for DeepSeek Harness with an editable bubble studio, action packs, IP weather, daily countdowns, named A/HK/US indices, stock quotes, market sentiment and a read-only dsh-meme gallery. Defaults: it checks your DeepSeek balance every minute with your API key (or the logged-in account) and shows it in the bubble; market sentiment is off until you enable it, and then polls Tencent and Eastmoney quote endpoints (Tushare too if you add a token). It installs from a release package of about 200 MB that bundles the desktop helper.'
+  zh: 'DeepSeek Harness 的桌面大肥鱼伙伴：可编辑气泡工坊、动作包、IP 天气、每日倒计时、上证/深证/创指等大盘指数、股票一行、行情情绪，以及只读的 dsh-meme 斗图图库。默认行为：每分钟用你的 DeepSeek API 密钥（或已登录的账户）查询一次余额并显示在气泡里；行情情绪默认关闭，开启后会轮询腾讯和东方财富的行情接口（填了 Tushare token 还会请求 Tushare）。它从约 200 MB 的发布包安装，里面带着桌面端助手程序。'
+icon: https://raw.githubusercontent.com/zhing99-hash/dsh-dafeiyu-jinrong/main/assets/icon-180.png
+tarball: https://github.com/zhing99-hash/dsh-dafeiyu-jinrong/releases/download/v0.5.0/dsh-dafeiyu-jinrong-0.5.0.tgz

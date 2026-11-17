@@ -1,0 +1,6 @@
+url: https://github.com/4444wjt/dsh-plugin-veriscope
+name: 4444wjt/dsh-plugin-veriscope
+category: tools
+description:
+  en: 'Release gate for AI answer quality. Two channels: replay an existing VeriScope archive through the original Python quality gate, or run a threshold gate over a Ragas per-row export with Node only — no VeriScope, Python or pandas. Returns PASS, FAIL or REVIEW with source evidence and a re-checkable receipt; supports per-row thresholds and exact decimal comparison. It never re-evaluates and never calls a model, and REVIEW never becomes PASS.'
+  zh: 'AI 回答质量的发布门禁。两条通道：用原 Python 门禁重放 VeriScope 归档，或仅用 Node 对 Ragas 逐条导出做阈值判定，后者不需要 VeriScope、Python 或 pandas。返回通过／失败／待复核，附出处与可复验回执；支持逐条阈值与精确十进制比较。不重新评测、不调用模型，待复核永不转为通过。'

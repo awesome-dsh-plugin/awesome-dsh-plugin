@@ -1,0 +1,6 @@
+url: https://github.com/ai-fu-cn/dsh-plugin-memos-code-retrospect
+name: ai-fu-cn/dsh-plugin-memos-code-retrospect
+category: memory
+description:
+  en: 'Coding retrospect distilled memory for DSH: distills rejected solutions, pitfalls and constraints from each turn via a local LLM, tags them into MemOS (type:rejected_solution), and boosts weighted recall on coding tasks via agent/pre-step.'
+  zh: '编码任务复盘记忆：每轮对话后用本地 LLM 蒸馏被否决方案/踩坑/工程约束，按 type:rejected_solution 写入 MemOS，编码任务时对这类记忆加权召回。'

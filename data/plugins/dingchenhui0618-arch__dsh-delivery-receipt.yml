@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-delivery-receipt
+name: dingchenhui0618-arch/dsh-delivery-receipt
+category: tools
+description:
+  en: 'A delivery receipt panel for a project hand-off. One trigger collects the branch and commit, the test and build results, screenshot dimensions with sha256, and the secret-scan verdict, then assigns every line to one of three zones by evidence alone — verified, local-only, or unverified. A claim in the unverified zone keeps its label and prints an explicitly empty slot instead of the claim itself, because a confidently worded sentence with nothing behind it is the exact thing the receipt exists to catch. Test failures and secret-scan hits are still evidence, so they land in the verified zone with a red tone rather than being quietly dropped.'
+  zh: '项目收尾用的交付回执面板。触发一次即汇总分支与 commit、测试与构建结果、截图的宽高与 sha256、密钥扫描结论，然后只按证据把每一条分进三区：已验证、仅本地、未验证。落在未验证区的声明只保留标签，正文位置显式留空而不是把声明印出来——措辞自信而背后什么都没有的句子，正是回执要防的东西。测试失败与密钥扫描命中同样是有证据的事实，因此进已验证区并带红色色调，而不是被悄悄丢掉。'

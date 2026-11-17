@@ -1,0 +1,6 @@
+url: https://github.com/amlyczz/dsh-agy-link
+name: amlyczz/dsh-agy-link
+category: model
+description:
+  en: 'Google Antigravity (agy CLI) models for DSH — streaming chat with Gemini/Claude/GPT-OSS subscriptions, native tool cards, thinking turns, and in-GUI Google OAuth login.'
+  zh: '将 Google Antigravity (agy CLI) 接入 DSH：无 API Key 使用 Gemini/Claude/GPT-OSS 订阅模型，支持流式对话、原生工具卡片、思考轮次注记及 Web 界面 Google OAuth 扫码登录。'

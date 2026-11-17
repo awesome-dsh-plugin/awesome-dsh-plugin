@@ -1,0 +1,21 @@
+# Paste-ready entry for the awesome-dsh-plugin catalog.
+#
+# Where it goes: the catalog repository
+#   https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+# path (one file per plugin; this ONE file is the whole submission):
+#   data/plugins/undefineken__dsh-theme-matrix-glass.yml
+#
+# Owner is filled in: the classic PAT already stored in Windows Credential Manager
+# authenticates against api.github.com as `undefineken` (GitHub has no user `undefinken`).
+# Do NOT add an `npm:` key - the catalog rejects hand-written npm keys and
+# picks the npm link up automatically from the package's `repository.url`.
+# Do NOT add `tarball:` unless the repo cannot be installed from source at all
+# (then it must be an https .tgz hosted on GitHub Releases).
+
+url: https://github.com/undefineken/dsh-theme-matrix-glass
+name: undefineken/dsh-theme-matrix-glass
+category: theme
+description:
+  en: 'Matrix-style binary (0/1) digital rain for the Harness interface: columns spawn only while a task is running, fall off screen when it stops, and leave a blank canvas; frosted-glass token layer with adjustable digit and panel opacity.'
+  zh: '黑客帝国式二进制数字雨（字形只有 0 与 1）：仅任务运行时生成数字，任务停止后停止生成并让已有数字落出屏幕、画面归空；配磨砂玻璃 token 层，数字与面板透明度均可调。'
+icon: https://raw.githubusercontent.com/undefineken/dsh-theme-matrix-glass/main/assets/icon-market.png

@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-az
+name: WODE25500/dsh-az
+category: dev
+description:
+  en: 'Azure resource management: query and show resources, deploy Bicep/ARM templates, and check the activity log.'
+  zh: 'Azure 资源管理：查询/展示资源、部署 Bicep/ARM 模板、查看活动日志。'

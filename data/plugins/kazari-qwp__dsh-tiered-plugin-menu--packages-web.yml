@@ -1,0 +1,7 @@
+url: https://github.com/kazari-qwp/dsh-tiered-plugin-menu/tree/master/packages/web
+name: kazari-qwp/dsh-tiered-plugin-menu#web
+category: market
+description:
+  en: Configure official and third-party DSH plugins, MCP servers and skills per client, workspace and session, with separate settings, inheritance and child defaults. Save plugin settings while disabled; update core and Web components independently in Harness.
+  zh: 按客户端、工作区和会话分层配置官方及第三方 DSH 插件、MCP 与 Skill，支持独立配置、逐级继承及下级默认；插件关闭时可保存配置，核心与 Web 界面在 Harness 中分别升级。
+tarball: https://github.com/kazari-qwp/dsh-tiered-plugin-menu/releases/download/v1.0.0/dsh-tiered-plugin-menu-1.0.0.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/ayingQAQ/dsh-web-launcher
+name: ayingQAQ/dsh-web-launcher
+category: ui
+description:
+  en: Windows desktop launcher bundle for DSH Web that creates a managed shortcut, then restarts DSH in the background and refreshes the existing browser page.
+  zh: DSH Web 的 Windows 桌面启动器插件，创建受管理的快捷方式，后续启动会在后台重启 DSH 并刷新已有浏览器页面。

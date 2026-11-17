@@ -1,0 +1,6 @@
+url: https://github.com/GeXiubinHelloWorld/dsh-qq-sounds
+name: GeXiubinHelloWorld/dsh-qq-sounds
+category: notify
+description:
+  en: 'QQ-style alert sounds for DSH: the QQ message tone when a turn finishes and the QQ system tone when approval or an answer is needed, reading your local QQ install on Windows and falling back to built-in tones.'
+  zh: 用本机 QQ 的音效提醒 DSH：任务完成响好友消息音，需要审批或回答问题时响系统消息音；Windows 下自动发现 QQ 目录，其它平台回落到内置音效。

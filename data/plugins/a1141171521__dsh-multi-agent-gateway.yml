@@ -1,0 +1,6 @@
+url: https://github.com/a1141171521/dsh-multi-agent-gateway
+name: a1141171521/dsh-multi-agent-gateway
+category: model
+description:
+  en: 'Adds six AI coding platforms to DSH — OpenCode, Qoder, Qoder CN, TRAE, WorkBuddy and WorkBuddy International — each as its own group in the native model picker, and manages their accounts from one settings page, with daily check-in where the platform has one, credit balance lookups, and retry on another account of the same platform when one is rate-limited. Models carry their credit multiplier where the platform declares one. OpenCode''s anonymous free tier works with no credential, and TRAE stays hidden by default until it is enabled in the settings.'
+  zh: '把六个 AI 编程平台接进 DSH——OpenCode、Qoder、Qoder CN、TRAE、WorkBuddy 与国际版——每个平台在原生模型选择器里各自成组；在一个设置页里统一管理账号，平台有签到接口就每日签到、可查积分余额，账号被限流时自动改用同平台其它账号。平台声明了积分倍率的模型会标注倍率。OpenCode 匿名免费层无需任何凭证；TRAE 默认隐藏，在设置里启用后才出现。'

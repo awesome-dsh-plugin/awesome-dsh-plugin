@@ -1,0 +1,6 @@
+url: https://github.com/weibaohui/hermes-loop
+name: weibaohui/hermes-loop
+category: memory
+description:
+  en: "Automatic session retrospective: after a conversation wraps up, distills useful experience into reusable skills stored in the skill library for the model to call, with signal-accelerated triggers, manual runs, an approval mode, and skill-library governance (archive/restore, never deletes directly)."
+  zh: 自动复盘：对话收尾后自动把有价值的经验蒸馏成可复用的技能（skill）存入技能库，支持信号加速触发、手动立即复盘、审批模式与技能库治理（归档/恢复，永不直接删除）。

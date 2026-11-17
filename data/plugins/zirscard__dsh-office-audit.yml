@@ -1,0 +1,8 @@
+# Entry for the awesome-dsh-plugin list.
+url: https://github.com/zirscard/dsh-office-audit
+name: zirscard/dsh-office-audit
+category: tools
+description:
+  en: 'Registers one `office_audit` tool for DeepSeek Harness: it recalculates formulas with the bundled LibreOffice Kit and then audits the recalculated values — formula errors, broken sheet references, formula-consistency, hardcoded constants, number-format and unit mismatches, balance-sheet balance, retained-earnings roll-forward, cash tie-out, cash-flow subtotals, ratio-table conventions and data-cleaning issues. Findings are severity-ranked with the offending cell, and an optional findings sheet can be written into a copy. The source workbook is never modified. Requires Python with openpyxl and the bundled LibreOffice Kit.'
+  zh: '为 DeepSeek Harness 注册一个 `office_audit` 工具：用内置 LibreOffice Kit 重算公式后审计计算结果——公式错误、断链引用、公式一致性、硬编码、数字格式与单位不符、三表勾稽、留存收益滚动、现金 tie-out、现金流量表加总、比率表口径与数据清洗问题。问题按严重度分级并给出具体单元格位置，可选把「模型审计」页写进副本。原工作簿永不被修改。需 Python 与 openpyxl，并使用随包的 LibreOffice Kit。'
+tarball: https://github.com/zirscard/dsh-office-audit/releases/download/v0.2.0/dsh-office-audit.tgz

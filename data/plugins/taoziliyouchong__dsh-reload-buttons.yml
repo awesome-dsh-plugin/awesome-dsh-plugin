@@ -1,0 +1,7 @@
+url: https://github.com/taoziliyouchong/dsh-reload-buttons
+name: taoziliyouchong/dsh-reload-buttons
+category: ui
+description:
+  en: Two buttons in the top-left of the DSH header — reload the UI and restart the app.
+  zh: 在 DSH 界面左上角放两个按钮：刷新界面、重启应用。
+icon: https://raw.githubusercontent.com/taoziliyouchong/dsh-reload-buttons/main/assets/icon-180.png

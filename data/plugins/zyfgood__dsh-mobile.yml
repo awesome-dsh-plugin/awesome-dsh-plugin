@@ -1,0 +1,7 @@
+url: https://github.com/zyfgood/dsh-mobile
+name: zyfgood/dsh-mobile
+category: remote
+description:
+  en: 'Mobile web UI for DeepSeek Harness: a token-protected LAN server that lists all sessions, streams replies over SSE, and lets a phone continue any conversation; the desktop GUI shows a QR entry and, with dsh-whale-girl 0.3.0+, a phone held by the pet opens the same panel.'
+  zh: 'DSH 手机端 Web UI：带令牌认证的局域网服务，手机可浏览全部会话、通过 SSE 实时查看回复并继续对话；桌面 GUI 提供二维码入口，配合 dsh-whale-girl 0.3.0+ 现在还可以点桌宠鳍里的小手机打开面板。'
+tarball: https://github.com/zyfgood/dsh-mobile/releases/download/v0.2.0/zyfgood-dsh-mobile-0.2.0.tgz

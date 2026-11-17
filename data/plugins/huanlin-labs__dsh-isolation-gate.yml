@@ -1,0 +1,6 @@
+url: https://github.com/huanlin-labs/dsh-isolation-gate
+name: huanlin-labs/dsh-isolation-gate
+category: security
+description:
+  en: 'Per-directory access gate for DSH: deny / read / full levels for names and paths, roster groups, per-session overrides and an audit log, plus seven model-facing `gate_*` tools whose widening requests must be approved by the owner in the panel. Installs with `dsh plugin --profile desktop add dsh-isolation-gate`; MIT, no network calls, state stays on disk.'
+  zh: 'DSH 的按目录访问门禁：对名字与路径给出 deny / read / full 三级权限、名册分组、按会话覆盖与审计日志，另有七个面向模型的 `gate_*` 工具，放宽权限必须由拥有者在面板里批准。用 `dsh plugin --profile desktop add dsh-isolation-gate` 安装；MIT、不联网、状态只落本地磁盘。'

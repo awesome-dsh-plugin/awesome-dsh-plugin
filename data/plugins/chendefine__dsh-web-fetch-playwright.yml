@@ -1,0 +1,6 @@
+url: https://github.com/chendefine/dsh-web-fetch-playwright
+name: chendefine/dsh-web-fetch-playwright
+category: browser
+description:
+  en: 'Playwright/CDP web-fetch provider for the built-in web_fetch tool: renders pages in a real browser, denoises them (Readability + DOMPurify) and returns markdown.'
+  zh: '为内置 web_fetch 工具提供 Playwright/CDP 后端：用真实浏览器渲染网页，经 Readability + DOMPurify 降噪后返回 Markdown。'

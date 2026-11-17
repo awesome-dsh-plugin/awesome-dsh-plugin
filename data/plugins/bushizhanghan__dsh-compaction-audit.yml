@@ -1,0 +1,19 @@
+url: https://github.com/bushizhanghan/dsh-compaction-audit
+name: bushizhanghan/dsh-compaction-audit
+category: dev
+description:
+  en: >-
+    Audit what context compaction actually lost. Reads the raw session event log and checks session-constraint
+    survival (the standing instructions the user gave — do-not-X, must-Y, only-in-Z — and whether the summary
+    still carries them; arXiv 2608.11242 measured ~17% survival across compactors), summary hallucination
+    (paths, versions, ports and identifiers the summary invents that were never in the history it replaced),
+    ghost references ("see above" pointing at removed text), token accounting (a summary nearly as large as
+    what it claims to free), and unaccounted prunes. Four agent tools including a cross-session sweep that
+    ranks conversations by how much compaction hurt them. Deterministic — no LLM, so a wrong answer is a
+    rule bug with a name.
+  zh: >-
+    压缩质量审计：审出上下文压缩到底丢了什么。读原始会话事件日志，检查会话约束幸存率（用户给的常驻指令——
+    不要X、必须Y、只准Z——摘要是否还带着；arXiv 2608.11242 实测各压缩器平均只保留 17%）、摘要幻觉（摘要里
+    出现了历史中从不存在的路径/版本/端口/标识符）、幽灵引用（"如上所述"指向已不在上下文的内容）、token
+    记账（摘要几乎和它声称释放的一样大）、无据裁剪。四个 agent 工具，含跨会话扫描并按受损程度排序。纯
+    确定性，不调 LLM——答错就是规则有 bug，有名字可查。

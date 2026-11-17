@@ -1,0 +1,6 @@
+url: https://github.com/cyh3436332528/dsh-float-chat
+name: cyh3436332528/dsh-float-chat
+category: ui
+description:
+  en: 'Pops the DSH side chat into a frameless, always-on-top Windows desktop window that can sit over any other application, with its own settings page for appearance, pinning, remembered geometry, opacity, ephemeral threads and cache cleanup.'
+  zh: '把 DSH 的侧边对话弹成一个无边框、可置顶的 Windows 独立浮窗，可覆盖在其他应用之上；自带设置页，可调外观、置顶、记忆窗口几何、不透明度、即用即焚与缓存清理。'

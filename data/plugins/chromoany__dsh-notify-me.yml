@@ -1,0 +1,6 @@
+url: https://github.com/chromoany/dsh-notify-me
+name: chromoany/dsh-notify-me
+category: notify
+description:
+  en: 'Sends a system notification, a sound and a tab-title marker when an approval, plan review or question needs your answer, or a background reply finishes; the settings page controls toggles, volume and the notification language, and clicking a notification returns you to the session.'
+  zh: 'DSH 通知提醒插件：当审批、方案确认或提问需要你回应，或后台回复、任务跑完时，用系统通知、提示音和标签页标题提醒你；点击通知可回到对应会话，设置页可开关提醒、调节音量、切换中英通知语言。'

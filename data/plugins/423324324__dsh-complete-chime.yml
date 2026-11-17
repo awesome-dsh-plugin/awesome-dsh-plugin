@@ -1,0 +1,7 @@
+url: https://github.com/423324324/dsh-complete-chime
+name: 423324324/dsh-complete-chime
+category: notify
+description:
+  en: Plays a chime or a short melody when an agent turn finishes, with five synthesized tones plus a custom audio upload, optional spoken announcement, optional system notification, and per-subagent control; settings are stored on the host.
+  zh: 一轮任务真正跑完时播放提示音或一小段旋律：五种合成音色加自定义音频上传，可选语音播报、可选系统通知，子代理任务可单独开关，设置持久化在宿主侧。
+tarball: https://github.com/423324324/dsh-complete-chime/releases/download/v1.0.0/dsh-complete-chime-1.0.0.tgz

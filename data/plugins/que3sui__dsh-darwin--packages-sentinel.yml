@@ -1,0 +1,6 @@
+url: https://github.com/que3sui/dsh-darwin/tree/main/packages/sentinel
+name: que3sui/dsh-darwin#sentinel
+category: session
+description:
+  en: 'Session health-check: mechanically mines session logs into structured problem tickets (retry loops, tool-error clusters, interrupted turns, token waste) over the official session-query seam; works standalone.'
+  zh: '会话体检：基于官方 session-query 接缝，机械挖掘会话日志为结构化问题工单（重试环/工具错误簇/中断回合/Token 浪费）；可独立安装使用。'

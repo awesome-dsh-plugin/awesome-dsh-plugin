@@ -1,0 +1,6 @@
+url: https://github.com/yaways/dsh-subagent-claude-code-wrapper
+name: yaways/dsh-subagent-claude-code-wrapper
+category: tools
+description:
+  en: 'Subagent delegation provider that runs any Claude-compatible CLI binary pointed at by a configurable executablePath field.'
+  zh: 子代理委派提供方：通过可配置的 executablePath 字段，运行任意 Claude 兼容 CLI 二进制。

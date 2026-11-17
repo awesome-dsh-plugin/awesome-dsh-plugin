@@ -1,0 +1,6 @@
+url: https://github.com/bestGi/dsh-rf-toolkit
+name: bestGi/dsh-rf-toolkit
+category: tools
+description:
+  en: 'Six RF calculators as agent tools: level conversion, link budget and maximum range, cascade noise figure, Shannon capacity, and impedance match.'
+  zh: '六个射频计算工具：电平换算、链路预算与最大距离、级联噪声系数、香农容量、阻抗匹配。'

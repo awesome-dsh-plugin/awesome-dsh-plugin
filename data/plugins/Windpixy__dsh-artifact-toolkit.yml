@@ -1,0 +1,7 @@
+url: https://github.com/Windpixy/dsh-artifact-toolkit
+name: Windpixy/dsh-artifact-toolkit
+category: ui
+description:
+  en: "Right-click menus on artifact cards and file links: copy the full or short path, show the file in its folder, or open it in its default app."
+  zh: "给会话里的产物卡片和文件链接加上右键菜单：复制完整或短路径、打开所在文件夹、用默认程序打开。"
+icon: https://raw.githubusercontent.com/Windpixy/dsh-artifact-toolkit/main/docs/images/icon-180.png

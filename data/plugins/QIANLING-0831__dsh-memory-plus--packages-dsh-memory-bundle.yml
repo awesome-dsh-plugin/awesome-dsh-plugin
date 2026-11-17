@@ -1,0 +1,7 @@
+url: https://github.com/QIANLING-0831/dsh-memory-plus/tree/main/packages/dsh-memory-bundle
+name: QIANLING-0831/dsh-memory-plus#dsh-memory-bundle
+category: memory
+tarball: https://github.com/QIANLING-0831/dsh-memory-plus/releases/download/v0.2.2/dsh-memory-bundle-0.2.2.tgz
+description:
+  en: 'Memory profile composition with Chinese session search, hybrid recall, persistent workspace facts, user-pinned rules and reusable native skills. Install the standalone versioned Release bundle with one dsh plugin add command. Requires Node.js 24 and pnpm on PATH.'
+  zh: '记忆 profile 组合：中文会话检索、混合召回、workspace 持久事实、用户固定规则与可复用原生技能。通过单条 dsh plugin add 命令安装版本化 Release 独立包。需 Node.js 24 与 PATH 上的 pnpm。'

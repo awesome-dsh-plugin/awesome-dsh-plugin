@@ -1,0 +1,6 @@
+url: https://github.com/Willmylife/dsh-event-gate
+name: Willmylife/dsh-event-gate
+category: workflow
+description:
+  en: "Event-driven trigger plugin (the doorbell beside dsh-proactive's alarm clock): recursive fs watchers with per-rule debounce windows and glob filters, plus a loopback-only local webhook endpoint with per-rule tokens, fire rules that wake a target session through the host agents service - live sessions get a direct follow-up, cold ones are resumed first - and inject a rendered prompt with template variables (paths, count, payload). Rules hot-reload from the event-gate rules file without restarting DSH, every trigger appends to an auditable JSONL history queryable via the trigger_list and trigger_history tools, and a loopback health route reports install and runtime status. Typical uses: auto-organizing a downloads folder, diagnosing CI or monitoring alarms posted from local scripts, and watching logs for errors. Pure JS, no build step, MIT."
+  zh: "事件驱动触发器插件（dsh-proactive 闹钟旁的门铃）：递归目录监视按规则防抖合并并支持 glob 过滤，本机回环 webhook 端点按规则 token 鉴权；规则命中后经宿主 agents 服务唤醒目标会话（活会话直接投递，冷会话先恢复再投递），并注入渲染后的 prompt（支持 paths、count、payload 模板变量）。规则文件保存即热更新，无需重启 DSH；每次触发追加 JSONL 审计历史，可通过 trigger_list / trigger_history 工具查询；另提供回环 health 路由报告安装与运行状态。典型用途：下载目录自动整理、CI/监控报警自动诊断、日志错误自动定位。纯 JS 免构建，MIT。"

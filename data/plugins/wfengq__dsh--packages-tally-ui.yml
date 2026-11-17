@@ -1,0 +1,6 @@
+url: https://github.com/wfengq/dsh/tree/main/packages/tally-ui
+name: wfengq/dsh#tally-ui
+category: usage
+description:
+  en: "Cost readouts for the composer, turns and sessions, a usage dashboard, daily/monthly budgets and settings, with DeepSeek balance from dsh-tally-balance-deepseek."
+  zh: "提供输入框费用条、每轮与会话费用详情、用量看板、日/月预算和设置，并通过 dsh-tally-balance-deepseek 显示 DeepSeek 余额。"

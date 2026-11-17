@@ -1,0 +1,6 @@
+url: https://github.com/duoduoqian708/dsh-voice-talk
+name: duoduoqian708/dsh-voice-talk
+category: voice
+description:
+  en: "Voice conversation mode for the DSH Web GUI: tap the mic to start a full-screen call, talk hands-free, and hear each reply read aloud as it streams. Bilingual (Chinese/English) UI, light and dark themes, adjustable speech rate, and switchable voices."
+  zh: "DSH Web 的语音对话模式：点一下麦克风进入全屏通话，边说边听，AI 回复边生成边朗读。界面中英双语，适配明暗主题，支持语速调节与音色切换。"

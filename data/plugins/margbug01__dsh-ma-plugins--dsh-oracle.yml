@@ -1,0 +1,6 @@
+url: https://github.com/margbug01/dsh-ma-plugins/tree/main/dsh-oracle
+name: margbug01/dsh-ma-plugins#dsh-oracle
+category: tools
+description:
+  en: Strongly read-only, secret-aware Oracle second-opinion subagent.
+  zh: 强制只读、会脱敏的第二意见子代理。

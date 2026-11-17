@@ -1,0 +1,6 @@
+url: https://github.com/Roarpeng/GraphFlow
+name: Roarpeng/GraphFlow
+category: tools
+description:
+  en: 'Local-first code knowledge graph for coding agents: 10 MCP tools for layered context compression, DAG planning, incremental AST indexing, a cross-session skill flywheel, diagnostics, and graph artifact import/export.'
+  zh: 面向编程 Agent 的本地代码知识图谱：提供 10 个 MCP 工具，覆盖分层上下文压缩、DAG 规划、增量 AST 建图、跨会话技能飞轮、诊断与图谱产物导入导出。

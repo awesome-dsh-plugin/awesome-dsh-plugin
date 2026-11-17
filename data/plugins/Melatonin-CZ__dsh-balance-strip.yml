@@ -1,0 +1,7 @@
+url: https://github.com/Melatonin-CZ/dsh-balance-strip
+name: Melatonin-CZ/dsh-balance-strip
+category: usage
+description:
+  en: 'Balance strip in the composer dock — a green-to-red OKLCH ramp driven by your DeepSeek balance, with a dynamic toggle, texture options and a built-in settings panel.'
+  zh: '输入框下方状态行里的余额状态条：色带随余额在绿与红之间变化，可关动态、换纹理，并带图形化设置面板。'
+icon: https://raw.githubusercontent.com/Melatonin-CZ/dsh-balance-strip/main/assets/icon-180.png

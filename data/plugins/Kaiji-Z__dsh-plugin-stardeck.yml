@@ -1,0 +1,6 @@
+url: https://github.com/Kaiji-Z/dsh-plugin-stardeck
+name: Kaiji-Z/dsh-plugin-stardeck
+category: workflow
+description:
+  en: 'An RTS-style orchestration dashboard where commands replace chats: a resident commander agent decomposes each order into task briefs with acceptance criteria, typed subagent troops (recon/engineer/medic/scribe) execute them across isolated workspaces, and every session is indexed by the order that started it.'
+  zh: 'RTS 风格编排看板：用命令取代会话——常驻大副 agent 把舰长命令拆成带验收标准的任务书，侦察/工程/医疗/书记四类小队在隔离工作区执行，所有会话按发起命令索引归队。'

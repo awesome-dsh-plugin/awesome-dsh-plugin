@@ -1,0 +1,6 @@
+url: https://github.com/Freakz2z/dsh-catgirl-plugin
+name: Freakz2z/dsh-catgirl-plugin
+category: identity
+description:
+  en: Token-efficient persona runtime for DeepSeek Harness with local catgirl rendering and progressive tool-schema disclosure.
+  zh: DeepSeek Harness 的省 token 人格运行时：本地渲染猫娘风味，并支持渐进式工具 schema 披露。

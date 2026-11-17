@@ -1,0 +1,6 @@
+url: https://github.com/nicecx/dsh-auto-approver
+name: nicecx/dsh-auto-approver
+category: dev
+description:
+  en: 'Auto-approval agent for DSH permission requests: rule layer (denyAlways/allowlist) plus Hermes Pro semantic adjudication with quick-fail retries, fail-closed to human when Hermes is unavailable, rejection feedback returned to the requesting session, and approve tasks enqueued into the task queue with a shared busy mutex.'
+  zh: 'DSH 权限请求自动审批代理：规则层（黑名单/白名单）+ Hermes Pro 语义裁决（快速失败重试），Hermes 不可用时 fail-closed 转人工；拒绝原因回传发起会话；审批任务入队并与消费端共用忙锁串行化。'

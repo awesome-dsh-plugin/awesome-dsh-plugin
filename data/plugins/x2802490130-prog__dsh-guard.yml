@@ -1,0 +1,6 @@
+url: https://github.com/x2802490130-prog/dsh-guard
+name: x2802490130-prog/dsh-guard
+category: dev
+description:
+  en: 'A development safety kit: rolling config snapshots, automatic rollback on plugin failures, boot-failure rescue, and an in-settings management panel.'
+  zh: 开发配套守护：滚动快照、插件失败自动回退、启动失败救援、设置页管理面板。

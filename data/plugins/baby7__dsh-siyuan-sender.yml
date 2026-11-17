@@ -1,0 +1,7 @@
+url: https://github.com/baby7/dsh-siyuan-sender
+name: baby7/dsh-siyuan-sender
+category: tools
+description:
+  en: 'Sends a Markdown file from the conversation into a self-hosted SiYuan notebook: a button on every delivered-file card and on the document-preview toolbar, or just ask the agent to send it, all through the SiYuan kernel HTTP API. Existing notes are never overwritten — a repeated title gets a timestamp suffix — and the API token stays in the host credential store rather than in settings files or the browser.'
+  zh: '把对话里交付的 Markdown 文件一键送进自建的思源笔记：交付文件卡片和文档预览工具栏各有一个按钮，也可以直接让智能体发送，统一走思源内核 HTTP API。已有笔记绝不覆盖——重名自动加时间戳——API token 只存在宿主凭据库里，不落设置文件、也不发给浏览器。'
+tarball: https://github.com/baby7/dsh-siyuan-sender/releases/download/v1.0.1/dsh-siyuan-sender-1.0.1.tgz

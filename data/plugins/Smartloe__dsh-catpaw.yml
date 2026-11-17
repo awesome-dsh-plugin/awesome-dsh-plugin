@@ -1,0 +1,7 @@
+url: https://github.com/Smartloe/dsh-catpaw
+name: Smartloe/dsh-catpaw
+category: model
+description:
+  en: 'Registers 12 CatPaw (妙手) models as a DeepSeek Harness provider, with per-model reasoning effort, harness-executed tool calls, and QR-code login. The bundled catpaw-cli is a macOS arm64 binary (other platforms must supply their own copy), and calls use the signed-in CatPaw account quota.'
+  zh: '把妙手（CatPaw）的 12 个模型接入 DeepSeek Harness，支持按模型区分的推理档位、由 Harness 执行的工具调用与扫码登录。内置 catpaw-cli 仅提供 macOS arm64 版本（其它平台需自备），调用消耗妙手账号额度。'
+icon: https://raw.githubusercontent.com/Smartloe/dsh-catpaw/main/assets/icon-512.png

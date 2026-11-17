@@ -1,0 +1,6 @@
+url: https://github.com/bowmark-ai/dsh-bowmark
+name: bowmark-ai/dsh-bowmark
+category: tools
+description:
+  en: 'Connects the Bowmark hosted MCP server and registers the tools it publishes, so the agent can search a library of typed functions for live websites and call them. The API key is read from the BOWMARK_API_KEY credential and is not stored in plugin config.'
+  zh: '接入 Bowmark 托管的 MCP 服务器并注册它公布的工具，让智能体搜索并调用面向实时网站的类型化函数库。API Key 从 BOWMARK_API_KEY 凭据读取，不写入插件配置。'

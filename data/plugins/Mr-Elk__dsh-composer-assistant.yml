@@ -1,0 +1,7 @@
+url: https://github.com/Mr-Elk/dsh-composer-assistant
+name: Mr-Elk/dsh-composer-assistant
+category: ui
+tarball: https://github.com/Mr-Elk/dsh-composer-assistant/releases/download/v0.4.1/dsh-composer-assistant-0.4.1.tgz
+description:
+  zh: '在 DSH 输入框中提供下一句预测、输入续写和提示词优化，并在设置页提供调用额度、请求统计和术语保护。基于 Somnus678/dsh-input-assistant 改造的分支，两者都在同一个输入框上加控件，不能与上游同装。'
+  en: 'Adds next-message prediction, inline draft completion, and prompt optimization to the DSH composer, with a call budget, request stats, and glossary protection in Settings. A fork of Somnus678/dsh-input-assistant; both put their controls on the same composer, so do not install the two together.'

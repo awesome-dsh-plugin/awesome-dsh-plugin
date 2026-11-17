@@ -1,0 +1,6 @@
+url: https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-verify-isolated
+name: wingsky-1/dsh-plugin-hub#packages/dsh-verify-isolated
+category: skill
+description:
+  en: 'Isolated-environment browser verification skill for DSH plugin development: a throwaway DSH_HOME, its own `verify_<random>` profile, its own port and its own browser instance in one command, cleaned up on exit, so the profile you are actually using is never touched; ships a zero-dependency raw-CDP driver (snapshot / click / screenshot / eval) and an optional isolation audit.'
+  zh: 面向 DSH 插件开发的隔离环境浏览器验证 skill：一条命令拉起临时 DSH_HOME、独立 `verify_<随机>` profile、独立端口与独立浏览器实例，退出自动清理，不污染正在使用的 profile；自带零依赖 raw-CDP 浏览器驱动（快照 / 点击 / 截图 / 求值）与可选隔离审计。

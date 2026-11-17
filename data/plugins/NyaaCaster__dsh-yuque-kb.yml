@@ -1,0 +1,6 @@
+url: https://github.com/NyaaCaster/dsh-yuque-kb
+name: NyaaCaster/dsh-yuque-kb
+category: memory
+description:
+  en: Yuque knowledge base as external memory for dsh — auto-injects matching document fragments into conversation, with catalogue search, cloud full-text search and online reading.
+  zh: 把语雀文档作为 dsh 的外部记忆：对话中自动检索并注入相关文档片段，支持目录快照检索、云端全文搜索与在线阅读。

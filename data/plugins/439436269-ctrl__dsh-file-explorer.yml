@@ -1,0 +1,6 @@
+url: https://github.com/439436269-ctrl/dsh-file-explorer
+name: 439436269-ctrl/dsh-file-explorer
+category: ui
+description:
+  en: 'Sidebar file explorer and file previewer for DeepSeek Harness: a lazy workspace tree with in-panel preview for text, Markdown (tables included) and images, an action that opens the file in the conversation''s right-hand document pane, and one that hands it to the system default app. Read-only, confined to configured roots.'
+  zh: '侧栏文件浏览器与文件预览器：懒加载文件树，面板内预览文本 / Markdown（含表格）/ 图片，可把当前文件送进会话右侧文档预览，或交给系统默认程序打开；只读，路径限定在可浏览根内。'

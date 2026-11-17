@@ -1,0 +1,7 @@
+url: https://github.com/Eva7788519/dsh-screenshot-tool
+name: Eva7788519/dsh-screenshot-tool
+category: vision
+description:
+  en: "Adds a screenshot tool that captures the Windows desktop to PNG and hands the path to the model, plus a composer camera button that previews, downloads or copies the capture."
+  zh: "在输入框加相机按钮（预览、下载、复制截图），并提供一个截图工具，把 Windows 桌面截成 PNG 交给模型读取。"
+icon: https://raw.githubusercontent.com/eva7788519/dsh-screenshot-tool/main/assets/icon-180.png

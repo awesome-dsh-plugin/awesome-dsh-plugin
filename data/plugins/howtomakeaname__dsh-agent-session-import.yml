@@ -1,0 +1,6 @@
+url: https://github.com/howtomakeaname/dsh-agent-session-import
+name: howtomakeaname/dsh-agent-session-import
+category: session
+description:
+  en: 'Imports local conversation history from Cursor, Codex, Claude Code, ZCode and Kimi into DeepSeek Harness sessions, with a read-only scan, a Faithful mode that keeps tool calls, and a Resume-safe text mode.'
+  zh: '把 Cursor、Codex、Claude Code、ZCode、Kimi 的本地历史导入为 DeepSeek Harness 会话：只读扫描来源，Faithful 模式保留工具调用，Resume-safe 模式转为可安全续聊的文本。'

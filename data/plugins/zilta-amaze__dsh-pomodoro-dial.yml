@@ -1,0 +1,6 @@
+url: https://github.com/zilta-amaze/dsh-pomodoro-dial
+name: zilta-amaze/dsh-pomodoro-dial
+category: ui
+description:
+  en: 'Floating Pomodoro dial pinned to the bottom-right of the Harness UI: custom focus, short-break and long-break lengths, a long break that can be switched off entirely, a round counter, and five Web Audio-synthesized alarm sounds with preview, volume and ring duration. No audio assets and no network requests; timer state survives a reload.'
+  zh: '常驻右下角的番茄钟圆盘：专注/短休/长休时长自定，长休可单独关闭，带轮次计数；闹铃为五种 Web Audio 实时合成的音效，支持试听、音量与响铃时长。无音频资源、无网络请求，计时状态刷新后继续。'

@@ -1,0 +1,7 @@
+url: https://github.com/Hai-Story/dsh-conversation-tools
+name: Hai-Story/dsh-conversation-tools
+category: session
+description:
+  en: 'Star conversation exchanges and edit any sent user message in the native composer while keeping previous conversation versions. Supports DSH 0.2.2-rc.1.'
+  zh: '星标重点问答，在原生输入框中编辑任意已发送的用户消息，并保留旧对话版本。支持 DSH 0.2.2-rc.1。'
+tarball: https://github.com/Hai-Story/dsh-conversation-tools/releases/download/v0.1.3/dsh-conversation-tools-0.1.3.tgz

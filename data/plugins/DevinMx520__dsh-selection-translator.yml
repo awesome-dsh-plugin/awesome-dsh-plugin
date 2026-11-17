@@ -1,0 +1,6 @@
+url: https://github.com/DevinMx520/dsh-selection-translator
+name: DevinMx520/dsh-selection-translator
+category: ui
+description:
+  en: "Adds a right-click menu to selected text in the Harness Web UI that replaces it with a Simplified Chinese translation in place, and restores the original on a second right-click."
+  zh: "在 Harness Web UI 中为选中文字添加右键翻译菜单，可就地替换为简体中文译文，再次右键还原原文。"

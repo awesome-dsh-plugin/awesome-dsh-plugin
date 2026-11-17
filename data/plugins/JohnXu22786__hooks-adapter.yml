@@ -1,0 +1,6 @@
+url: https://github.com/JohnXu22786/hooks-adapter
+name: JohnXu22786/hooks-adapter
+category: dev
+description:
+  en: Reuses hooks declared in Claude Code, Codex and opencode configs on dsh, executing shell, webhook, oracle and proxy handlers with zero runtime dependencies.
+  zh: 把 Claude Code、Codex、opencode 配置里声明的 hooks 原样复用到 dsh，执行 shell、webhook、oracle、proxy 四类 handler，零运行时依赖。

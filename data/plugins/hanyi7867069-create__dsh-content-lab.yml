@@ -1,0 +1,6 @@
+url: https://github.com/hanyi7867069-create/dsh-content-lab
+name: hanyi7867069-create/dsh-content-lab
+category: tools
+description:
+  en: Content workshop tools for DSH — topic, title, post and content-calendar generation through the built-in LLM.
+  zh: 内容工坊——选题、标题、文案与排期生成工具，直接调用内置 LLM。

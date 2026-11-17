@@ -1,0 +1,6 @@
+url: https://github.com/tancheng33/dsh-yogacara
+name: tancheng33/dsh-yogacara
+category: memory
+description:
+  en: Tracks the agent's state as Yogācāra mental factors over a durable seed store, and feeds it back into the prompt as first-person inclination.
+  zh: 以唯识心所与种子藏记录 agent 的状态，并以第一人称倾向写回提示词。

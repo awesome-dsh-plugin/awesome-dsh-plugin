@@ -1,0 +1,6 @@
+url: https://github.com/loveandbeepbrother/dsh-tts-service
+name: loveandbeepbrother/dsh-tts-service
+category: voice
+description:
+  en: 'Text-to-speech service with Doubao TTS 2.0, Alibaba Bailian and OpenAI-compatible providers and a user-chosen voice; the agent speaks through tts_service_say, split into segments with an optional tone each, and other plugins can reuse ctx.ttsService.'
+  zh: '多平台语音合成服务：豆包语音 2.0、阿里云百炼和 OpenAI 兼容接口，音色由用户选；助手用 tts_service_say 说话，可按语气分段、每段带一句语气描述，其他插件可复用 ctx.ttsService。'

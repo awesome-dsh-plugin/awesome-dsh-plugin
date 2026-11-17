@@ -1,0 +1,7 @@
+url: https://github.com/handsomeboy65/dsh-task-hub
+name: handsomeboy65/dsh-task-hub
+category: workflow
+description:
+  en: 'TAPD + ZenTao task hub for DSH: list assigned work in the sidebar and dispatch an agent on a branch you name.'
+  zh: 'DSH 的 TAPD 与禅道任务中心：在侧边栏查看分配给自己的需求或任务，并在手动指定的分支上派发 Agent。'
+icon: https://raw.githubusercontent.com/handsomeboy65/dsh-task-hub/main/assets/icon-512.png

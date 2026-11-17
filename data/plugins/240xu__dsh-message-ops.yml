@@ -1,0 +1,6 @@
+url: https://github.com/240xu/dsh-message-ops
+name: 240xu/dsh-message-ops
+category: session
+description:
+  en: 'Message-level rollback, single-message deletion, and replay-based restore for DSH sessions; operations are append-only surface replacements, with confirmation prompts and a running-session guard. Requires Node.js 23.5+.'
+  zh: 'DSH 会话消息级回滚、单条删除与重放式恢复；操作以 append-only surface replace 实现，带确认提示和运行中会话保护。需 Node.js 23.5+。'

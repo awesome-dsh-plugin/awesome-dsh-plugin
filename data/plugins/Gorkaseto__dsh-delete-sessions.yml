@@ -1,0 +1,6 @@
+url: https://github.com/Gorkaseto/dsh-delete-sessions
+name: Gorkaseto/dsh-delete-sessions
+category: session
+description:
+  en: 'Adds a "Delete session" option to the sidebar session menu that permanently removes the session from disk.'
+  zh: 在侧边栏会话菜单中添加“删除会话”选项，从磁盘上永久删除该会话。

@@ -1,0 +1,6 @@
+url: https://github.com/keyblues/dsh-fofatoto
+name: keyblues/dsh-fofatoto
+category: security
+description:
+  en: 'FOFA cyberspace mapping inside the conversation: check the account quota, run FOFA queries and export the full result set into CSV/JSON/TXT files in the session workspace by paging through a time cursor. A CSV or TXT export stopped by its time budget or by an upstream error continues into the same file from the saved cursor, so rows already fetched are kept. Results render as conversation cards (query, match count, file path), and the API key is saved from the plugin page into the Harness credential store.'
+  zh: '在对话里做 FOFA 网络空间测绘：查看账号额度、执行查询语句，并把全量结果按时间游标深翻页导出为 CSV／JSON／TXT 落到会话工作区；被时间预算或上游报错中断的 CSV／TXT 导出可凭游标续写同一文件，已拉取的行不丢。结果以对话卡片展示（语句、命中数、文件路径），API Key 在插件页保存到 Harness 凭据库。'

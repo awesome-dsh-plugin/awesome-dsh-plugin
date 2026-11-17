@@ -1,0 +1,6 @@
+url: https://github.com/f-e-n-g-0531/dsh-execution-bus
+name: f-e-n-g-0531/dsh-execution-bus
+category: workflow
+description:
+  en: Declarative DAG runtime for DSH tool plans with bounded parallel execution, read-only retries, per-step checkpoints, cancellation, and conservative crash recovery.
+  zh: DSH 工具计划的声明式 DAG 运行时，支持有界并行、只读重试、逐步落盘、取消及保守的崩溃恢复。

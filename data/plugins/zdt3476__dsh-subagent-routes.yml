@@ -1,0 +1,7 @@
+url: https://github.com/zdt3476/dsh-subagent-routes
+name: zdt3476/dsh-subagent-routes
+category: model
+icon: https://raw.githubusercontent.com/zdt3476/dsh-subagent-routes/main/assets/icon-180.png
+description:
+  en: "Route table assigning provider, model, and reasoning effort to subagents by workspace directory prefix; supports global default policy and in-composer session popover."
+  zh: "按工作区目录给子智能体指定 provider、模型与思考等级的路由表：最长前缀匹配后注入子代理配置，支持全局默认策略、设置页规则编辑与会话输入区就地切换。"

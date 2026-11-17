@@ -1,0 +1,6 @@
+url: https://github.com/stormbuf/dsh-tavily-pool
+name: stormbuf/dsh-tavily-pool
+category: browser
+description:
+  en: 'Takes over the built-in web_search and web_fetch providers with Tavily, each behind its own toggle: a key pool with balance-aware scheduling that reads real credit balances from /usage, failover with hard exclusion of cooling or exhausted keys, and call history with a 14-day credit chart.'
+  zh: '用 Tavily 接管内置的 web_search 与 web_fetch 提供方，两者各有一个开关：密钥池按余额调度（从 /usage 读取真实余额），失败自动切换，冷却中与额度耗尽的密钥硬排除，并记录调用历史与 14 天额度图表。'

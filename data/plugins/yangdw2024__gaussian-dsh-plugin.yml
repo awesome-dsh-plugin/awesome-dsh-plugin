@@ -1,0 +1,6 @@
+url: https://github.com/yangdw2024/gaussian-dsh-plugin
+name: yangdw2024/gaussian-dsh-plugin
+category: tools
+description:
+  en: 'DSH plugin for Gaussian 16: SMILES-to-3D, input generation, serial job management, output parsing, and Multiwfn/VMD post-processing (orbital/ESP/RDG).'
+  zh: Gaussian 16 计算辅助插件：SMILES→3D 建模、输入生成、串行任务管理、输出解析，以及 Multiwfn/VMD 后处理（轨道/ESP/RDG 出图）。

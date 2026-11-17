@@ -1,0 +1,6 @@
+url: https://github.com/borgez/dsh-project-mcp
+name: borgez/dsh-project-mcp
+category: tools
+description:
+  en: 'Per-project MCP servers: a project declares servers in its own documents (`.dsh/mcp.json` by default; the local and global file lists are settings), and they are mounted only for the sessions working in that project — on the first turn of a session, released when it goes idle. A right-sidebar tab and a Settings page list each project with a live session, the status of every server and the session holding each mount, with `Sync` / `Retry` / `Release`, an `enabled` switch and an editor over one existing entry; a per-project tool policy (`disclosure` / `direct` / `off`) with pins and `mcp_search_tools` decides what the model sees; `${VAR}` references resolve through the project `.env` files and the credentials file; per-server call counters outlive the sessions that produced them.'
+  zh: '按项目挂载 MCP 服务器：项目在自己的文档里声明服务器（默认 `.dsh/mcp.json`，本地与全局文件列表均为配置项），只对在该项目中工作的会话挂载——会话首个 turn 时挂载，空闲后释放。右侧栏标签页与设置页列出每个有活动会话的项目、各服务器状态以及持有挂载的会话，并提供 `Sync` / `Retry` / `Release`、`enabled` 开关和对某个既有条目的编辑器；按项目的工具策略（`disclosure` / `direct` / `off`）配合固定项与 `mcp_search_tools` 决定模型可见范围；`${VAR}` 引用依次从项目 `.env` 文件与凭据文件解析；按服务器统计的调用次数不随会话消失。'

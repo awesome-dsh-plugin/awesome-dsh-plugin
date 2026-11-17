@@ -1,0 +1,6 @@
+url: https://github.com/HwFee/HwFee-dsh/tree/master/plugins/cds-theme
+name: HwFee/HwFee-dsh#cds-theme
+category: theme
+description:
+  en: 'Claude Design System theme for DeepSeek Harness: warm-grey surfaces and a clay accent, refined composer, sidebar, code blocks and Markdown, localized edit/write cards with workspace-relative paths, and an ASCII ocean on the blank-session page with three whale colour modes.'
+  zh: 'DeepSeek Harness 的 Claude 设计系统主题：暖灰表面与陶土强调色，细化输入框、侧栏、代码块和 Markdown，编辑与写入卡片显示本地化状态及工作区相对路径，空白会话首页带三种鲸鱼配色的 ASCII 海洋。'

@@ -1,0 +1,6 @@
+url: https://github.com/zoe1nan/windowseat
+name: zoe1nan/windowseat
+category: browser
+description:
+  en: 'Windowseat bridge for DeepSeek Harness: a local host plugin exposing a loopback HTTP/SSE endpoint so the bundled Microsoft Edge side-panel extension can read the current page, search local files and talk to DSH; the Edge extension lives in the same repo and must be loaded separately. Windows 10/11 with desktop Edge required.'
+  zh: '临窗 Windowseat 的 DSH 宿主插件：在回环地址暴露 HTTP/SSE 端点，供同仓库的 Microsoft Edge 侧边栏扩展读取当前页面、检索本地文件并连接 DSH；扩展需在 Edge 中单独加载；需 Windows 10/11 与桌面版 Edge。'

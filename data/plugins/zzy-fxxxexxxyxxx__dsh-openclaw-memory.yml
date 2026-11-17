@@ -1,0 +1,6 @@
+url: https://github.com/zzy-fxxxexxxyxxx/dsh-openclaw-memory
+name: zzy-fxxxexxxyxxx/dsh-openclaw-memory
+category: memory
+description:
+  en: 'Share an existing OpenClaw Markdown workspace with DeepSeek Harness as bounded persona and memory context, with Sidebar browsing and editing.'
+  zh: '把现有 OpenClaw Markdown workspace 作为有界的人格与记忆上下文共享给 DeepSeek Harness，并提供 Sidebar 浏览与编辑。'

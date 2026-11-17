@@ -1,0 +1,6 @@
+url: https://github.com/oomol-lab/dsh-oomol
+name: oomol-lab/dsh-oomol
+category: tools
+description:
+  en: Connects DeepSeek Harness to OOMOL-managed apps and services, with progressive Connector Action discovery and execution plus an in-app panel for managing Provider connections.
+  zh: 将 DeepSeek Harness 接入由 OOMOL 管理的应用与服务，支持渐进式发现并执行 Connector Actions，并提供用于管理 Provider 连接的应用内面板。

@@ -1,0 +1,6 @@
+url: https://github.com/jiuyuechuwuhao/dsh-canvas-preview
+name: jiuyuechuwuhao/dsh-canvas-preview
+category: ui
+description:
+  en: 'Conversation Canvas tab: live-preview workspace HTML artifacts and export PNG/JPG/SVG locally (`npx dsh-canvas-preview`).'
+  zh: 'Conversation Canvas 标签页：实时预览工作区内的 HTML artifact，并支持本地导出 PNG/JPG/SVG（`npx dsh-canvas-preview`）。'

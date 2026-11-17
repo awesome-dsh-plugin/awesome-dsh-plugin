@@ -1,0 +1,11 @@
+url: https://github.com/Monter-code/dsh-live-reload
+name: Monter-code/dsh-live-reload
+category: dev
+description:
+  en: >-
+    Hot-reloads DSH plugin modules without restarting the app (module-cache purge,
+    junction-path matching, bust fallback) and registers a refresh button in the
+    session header so the browser page loads the new plugin bundles.
+  zh: >-
+    DSH 插件免重启热重载：清模块缓存、按 junction 路径匹配、失败时带版本号重新导入，
+    并在会话标题栏注册一颗刷新按钮，让页面立刻加载新的插件 bundle。

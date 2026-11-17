@@ -1,0 +1,6 @@
+url: https://github.com/hsthanb4/dsh-magpie-usage
+name: hsthanb4/dsh-magpie-usage
+category: ui
+description:
+  en: 'DeepSeek Harness (DSH) plugin: Embeds upstream quota and usage progress rings from your local Magpie gateway (127.0.0.1:3425) right beside the composer context meter, with session-aware active model tracking and 5-hour limit reset tooltips.'
+  zh: 'DeepSeek Harness (DSH) 插件：将 Magpie 本地网关（127.0.0.1:3425）的配额与用量进度圆环嵌入输入框底部状态栏（与上下文比例并列），支持各会话模型自动跟随嗅探、置顶卡片自动置顶与 5 小时重置倒计时微型面板。'

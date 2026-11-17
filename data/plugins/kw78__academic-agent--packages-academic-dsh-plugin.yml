@@ -1,0 +1,7 @@
+url: https://github.com/kw78/academic-agent/tree/main/packages/academic-dsh-plugin
+name: kw78/academic-agent#academic-dsh-plugin
+category: workflow
+description:
+  en: "Local-first academic assistant: event-sourced courses, tasks, plans, reminders, course materials and 23 DSH tools."
+  zh: "本地优先的学业助手：事件溯源的课程、任务、计划、提醒、课程资料与 23 个 DSH 工具。"
+tarball: https://github.com/kw78/academic-agent/releases/download/v0.1.0/academic-dsh-plugin-0.1.0.tgz

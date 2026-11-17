@@ -1,0 +1,7 @@
+url: https://github.com/The-five-stooges/dsh-deepseek-usage
+name: The-five-stooges/dsh-deepseek-usage
+category: usage
+description:
+  en: 'Shows the DeepSeek account balance as a row in the sidebar footer with a refresh button, and opens a popover with the balance card, daily token and estimated-cost charts over a 7/30-day window, a per-model table, and a link to the platform usage page. The balance comes from the official /user/balance endpoint; usage is aggregated from local DSH session logs and priced with the published peak/off-peak rate card in CNY, so it is labelled an estimate and its scope is stated on the panel.'
+  zh: '在侧边栏脚部显示一行 DeepSeek 账户余额（带刷新按钮），点击打开弹层：余额卡、7/30 天每日 Token 与估算费用图表、按模型明细表，以及平台用量页外链。余额取自官方 /user/balance 接口；用量由本机 DSH 会话日志聚合，按官方峰谷单价以人民币估算，因此界面明确标注为估算值并写明统计范围。'
+tarball: https://github.com/The-five-stooges/dsh-deepseek-usage/releases/latest/download/dsh-deepseek-usage.tgz

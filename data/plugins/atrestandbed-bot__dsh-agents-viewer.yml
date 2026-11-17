@@ -1,0 +1,6 @@
+url: https://github.com/atrestandbed-bot/dsh-agents-viewer
+name: atrestandbed-bot/dsh-agents-viewer
+category: ui
+description:
+  en: 'View and edit the AGENTS.md / CLAUDE.md instruction chain in a native right-sidebar tab — global, shared, and every project directory down to the session working directory — with in-place save that creates missing files, a chat-header toggle, and an /agents command that works without the panel.'
+  zh: '在右侧栏原生 tab 里查看并编辑 AGENTS.md / CLAUDE.md 指令链：全局、共享，以及从项目根到会话工作目录的每一层；就地保存，文件不存在时直接创建；另有聊天头部按钮，以及界面不可用时也能用的 /agents 命令。'

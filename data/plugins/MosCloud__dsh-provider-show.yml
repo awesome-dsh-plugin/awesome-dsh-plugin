@@ -1,0 +1,7 @@
+url: https://github.com/MosCloud/dsh-provider-show
+name: MosCloud/dsh-provider-show
+category: ui
+description:
+  en: Shows which provider the composer's currently selected model belongs to, and stays silent for providers another plugin already presents.
+  zh: 在 DSH 输入框展示当前所选模型所属的供应商；已被其他插件接管的供应商自动让位，不重复显示。
+icon: https://raw.githubusercontent.com/MosCloud/dsh-provider-show/main/assets/icon-180.png

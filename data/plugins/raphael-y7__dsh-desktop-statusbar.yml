@@ -1,0 +1,6 @@
+url: https://github.com/raphael-y7/dsh-desktop-statusbar
+name: raphael-y7/dsh-desktop-statusbar
+category: usage
+description:
+  en: Replaces the stats line under the message input in the DSH desktop app with a configurable status bar of ten optional fields, with live cost estimates at DeepSeek's official peak and off-peak rates, custom per-model prices, a CNY or USD switch and account balance.
+  zh: 把 DSH 桌面端对话区底部的统计行换成可配置状态栏：10 个字段可选可排序，按 DeepSeek 官方峰谷口径实时估算费用，支持自定义模型单价、CNY / USD 计价切换与账户余额显示。

@@ -1,0 +1,6 @@
+url: https://github.com/cmfok/dsh-feishucard
+name: cmfok/dsh-feishucard
+category: notify
+description:
+  en: Bridge DeepSeek Harness agent sessions into Feishu (Lark) chats over the official SDK long connection, with a streaming reply card, many bots per instance, and mention-gated group replies.
+  zh: 把 DeepSeek Harness 的 agent 会话接进飞书（Lark）：官方 SDK 长连接收发、流式回复卡片、单实例多 bot、群里 @ 才回复。

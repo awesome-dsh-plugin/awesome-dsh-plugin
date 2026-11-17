@@ -1,0 +1,6 @@
+url: https://github.com/zhengqiuyang/dsh-egress-gate
+name: zhengqiuyang/dsh-egress-gate
+category: security
+description:
+  en: 'Deterministic network egress gate: web fetches and searches are checked against a destination allowlist in tools/pre-execute and denied before they run; shell fetch-verbs are observed (enforcement opt-in).'
+  zh: '确定性网络出口门：网页抓取与搜索在 tools/pre-execute 按目的地白名单校验，越权即拒；shell 抓取动词默认观察，可选拦截。'

@@ -1,0 +1,6 @@
+url: https://github.com/shi-YangYang/dsh-token-dashboard
+name: shi-YangYang/dsh-token-dashboard
+category: usage
+description:
+  en: Read-only dashboard for token usage, cost, request speed, and first-token latency across local DSH sessions.
+  zh: 只读看板，汇总本机 DSH 会话的 Token 用量、费用、请求速度与首字耗时。

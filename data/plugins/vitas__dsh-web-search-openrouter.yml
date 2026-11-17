@@ -1,0 +1,6 @@
+url: https://github.com/vitas/dsh-web-search-openrouter
+name: vitas/dsh-web-search-openrouter
+category: browser
+description:
+  en: 'The built-in web_search bills a full model turn against DeepSeek''s own endpoint; this runs it on an OpenRouter-compatible gateway instead, so search is billed where your chat already is, at the model and price you pick.'
+  zh: '内置 web_search 每次搜索都要在 DeepSeek 自己的端点上消耗一整轮模型调用；本插件改为在 OpenRouter 兼容网关上执行搜索，与对话走同一个账户，模型和价格都由你决定。'

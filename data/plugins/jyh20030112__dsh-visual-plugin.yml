@@ -1,0 +1,6 @@
+url: https://github.com/jyh20030112/dsh-visual-plugin
+name: jyh20030112/dsh-visual-plugin
+category: vision
+description:
+  en: 'Gives text-only models vision: forwards user images to an OpenAI-compatible vision model and shows the descriptions in a Web UI right panel.'
+  zh: 给纯文本模型装上眼睛：把用户图片转发给任意 OpenAI 兼容的视觉模型生成描述，并在 Web UI 右侧面板展示结果。

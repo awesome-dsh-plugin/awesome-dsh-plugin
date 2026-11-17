@@ -1,0 +1,6 @@
+url: https://github.com/yangdcm/dsh-expert-team
+name: yangdcm/dsh-expert-team
+category: workflow
+description:
+  en: 'Role-based multi-agent team for DeepSeek Harness — your digital workforce. One goal assembles a team of product, architect, frontend, backend, reviewer and QA roles that deliver through a nine-phase gated pipeline, plus a persistent team you can keep directing across sessions. Zero runtime dependencies, no build step.'
+  zh: '角色化多智能体专家团 = 你的数字员工。一句目标即自动组建最多 12 个角色（产品、架构、前端、后端、审查、测试等），按九阶段门控流水线协作交付，并支持常驻团队反复指挥。零运行时依赖、无构建步骤。'

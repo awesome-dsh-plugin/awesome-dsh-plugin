@@ -1,0 +1,6 @@
+url: https://github.com/yanweiyi11/dsh-ponytail
+name: yanweiyi11/dsh-ponytail
+category: skill
+description:
+  en: "Lazy senior coding ruleset for DeepSeek Harness: injects minimal-code guidance, adds review, audit, debt, gain and help skills, and switches lite/full/ultra per session. Ships a script to sync rules from a pinned upstream commit."
+  zh: "给 DeepSeek Harness 注入极简编码规则，附 review、audit、debt、gain、help 五个技能，支持按会话切换 lite/full/ultra，并可按固定上游提交同步规则。"

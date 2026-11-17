@@ -1,0 +1,7 @@
+url: https://github.com/gezi-wen/dsh-naiwa-laugh
+name: gezi-wen/dsh-naiwa-laugh
+category: fun
+description:
+  en: 'Ends every agent turn with a random Naiwa laugh clip in the DSH Web UI: seven bundled mp3s decoded into memory ahead of time, one laugh per turn, no desktop pet or network needed, toggleable from the browser console. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '每轮 agent 回合结束，在 DSH Web UI 里随机播一段奶蛙笑声：七段自带 mp3 提前解码进内存，一轮笑一次，不用装桌宠、不联网，可在浏览器控制台开关。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/gezi-wen/dsh-naiwa-laugh/main/icon.png

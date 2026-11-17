@@ -1,0 +1,7 @@
+url: https://github.com/tonyzdev/dsh-language-bridge
+name: tonyzdev/dsh-language-bridge
+category: identity
+description:
+  en: 'Per-model working languages: ordered regex rules map model ids to BCP 47 language codes, your prompts are translated into the model''s language with DeepSeek Flash before sending and replies are translated back after each turn, with in-place toggles for the original reply and the text actually sent, a system-prompt rule that keeps bridged models in their working language, a warning under the message when translation fails, and no translation or cost when the languages already match.'
+  zh: '按模型设置工作语言：有序的正则规则把模型 id 映射到 BCP 47 语言代码，发送前用 DeepSeek Flash 把你的输入翻译成模型的工作语言，每轮结束后把回答翻译回你的语言，可原位切换查看原文和实际发送内容；对桥接模型加一条系统提示规则保持工作语言，翻译失败时在消息下方提示，语言相同时不翻译、不产生费用。'
+tarball: https://github.com/tonyzdev/dsh-language-bridge/releases/download/v2.0.0/dsh-language-bridge-2.0.0.tgz

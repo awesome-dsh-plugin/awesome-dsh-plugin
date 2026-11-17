@@ -1,0 +1,6 @@
+url: https://github.com/dxsdyhm/dsh-adb-logcat
+name: dxsdyhm/dsh-adb-logcat
+category: dev
+description:
+  en: Android Studio-style ADB logcat viewer with live filtering and level colors.
+  zh: Android Studio 风格 ADB logcat 查看器，支持实时过滤与等级配色。

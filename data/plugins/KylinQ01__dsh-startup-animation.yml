@@ -1,0 +1,6 @@
+url: https://github.com/KylinQ01/dsh-startup-animation
+name: KylinQ01/dsh-startup-animation
+category: ui
+description:
+  en: 'Startup splash for DeepSeek Harness: an animated avatar with aurora, stardust, pointer parallax and a module-assembly entrance, plus the same image as the main-UI wallpaper; both images can be swapped from a settings page that previews the animation live.'
+  zh: 'DSH 启动动画 + 主界面壁纸：头像、极光、星尘、指针视差与模块组装入场，同一张图兼作主界面壁纸；两张图都能在设置页里更换并实时预览。'

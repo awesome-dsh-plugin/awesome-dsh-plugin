@@ -1,0 +1,6 @@
+url: https://github.com/Octo-o-o-o/dsh-plugin-deploy
+name: Octo-o-o-o/dsh-plugin-deploy
+category: dev
+description:
+  en: 'Ship a project to Cloudflare and publish your plugin to npm — the first deploy needs no cloud account, and credentials never reach the model.'
+  zh: '一句话把项目部署到 Cloudflare、把做好的插件发布到 npm：首次部署零账号，凭据模型看不到。'

@@ -1,0 +1,6 @@
+url: https://github.com/zgrajdnhj7806-svg/dsh-deepseek-web
+name: zgrajdnhj7806-svg/dsh-deepseek-web
+category: model
+description:
+  en: "Calls your own chat.deepseek.com account as a second model from DSH: ask a question, analyze a file's line range, and check login state, plus a runtime skill and a settings-page login panel."
+  zh: "把你自己的 chat.deepseek.com 账号当作第二个模型接入 DSH：提问、按文件行区间分析、查看登录状态，附带运行时技能与设置页登录面板。"

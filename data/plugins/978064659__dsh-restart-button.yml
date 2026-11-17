@@ -1,0 +1,6 @@
+url: https://github.com/978064659/dsh-restart-button
+name: 978064659/dsh-restart-button
+category: ui
+description:
+  en: Adds a restart button to the Windows title bar, left of the minimize control, that stops and relaunches the desktop shell together with its Harness Host so a newly installed plugin takes effect.
+  zh: 在 Windows 标题栏最小化按钮左侧加一个重启按钮，结束并重新拉起桌面外壳与 Host，让刚装好的插件立即生效。

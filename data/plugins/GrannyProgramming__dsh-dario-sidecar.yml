@@ -1,0 +1,6 @@
+url: https://github.com/GrannyProgramming/dsh-dario-sidecar
+name: GrannyProgramming/dsh-dario-sidecar
+category: model
+description:
+  en: Harness-owned lifecycle for the dario proxy — starts it with your harness, readiness-gates it, and stops it when the harness stops, so subscription-backed (Claude/ChatGPT) model routes just work.
+  zh: 随 DSH 启动并管理 dario 代理（把 Claude/ChatGPT 订阅当 API 用），就绪门控、随停随止，订阅模型路由开箱即用。

@@ -1,0 +1,8 @@
+url: https://github.com/qibo30/dsh-worklog
+name: qibo30/dsh-worklog
+category: memory
+icon: https://raw.githubusercontent.com/qibo30/dsh-worklog/main/icon.png
+tarball: https://github.com/qibo30/dsh-worklog/releases/latest/download/dsh-worklog.tgz
+description:
+  en: 'Cross-session development worklog for the agent: worklog_add appends one line (optional tag) to today''s file, worklog_list reads a day back or lists the days on record. Entries are plain JSON under $DSH_HOME/worklog, so the next session can pick up where the last one stopped.'
+  zh: '给 agent 的跨会话开发日志：worklog_add 往当天文件追加一行（可带 tag），worklog_list 按天回读或列出有记录的日期。条目是 $DSH_HOME/worklog 下的纯 JSON，下一次会话能接上上一次停在哪。'

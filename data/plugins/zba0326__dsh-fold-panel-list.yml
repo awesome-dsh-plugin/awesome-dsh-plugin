@@ -1,0 +1,7 @@
+url: https://github.com/zba0326/dsh-fold-panel-list
+name: zba0326/dsh-fold-panel-list
+category: ui
+description:
+  en: 'A fold row is pinned at the top of the sidebar panel list and stays visible when folded, so the Plugins … More column collapses to that one row and the Workspaces section moves up; ⌥⌘P (Ctrl+Alt+P) toggles it too, and the state is kept in localStorage across reloads.'
+  zh: '在侧栏面板列表顶部固定一行开关，收起时这一行仍然留着，所以「插件 … 更多」整列（含末尾的「更多」）塌成一行、工作区随之上移；⌥⌘P（Windows/Linux 为 Ctrl+Alt+P）同样能切换，状态存 localStorage，重开保持。'
+icon: https://raw.githubusercontent.com/zba0326/dsh-fold-panel-list/main/assets/icon-180.png

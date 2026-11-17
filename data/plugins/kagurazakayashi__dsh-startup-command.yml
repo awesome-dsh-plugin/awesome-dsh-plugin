@@ -1,0 +1,6 @@
+url: https://github.com/kagurazakayashi/dsh-startup-command
+name: kagurazakayashi/dsh-startup-command
+category: workflow
+description:
+  en: A DeepSeek Harness Web plugin that runs a user-defined command after the web profile has started successfully.
+  zh: 在 dsh web 启动成功后运行用户自定义命令的 DeepSeek Harness Web 插件。

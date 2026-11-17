@@ -1,0 +1,8 @@
+# 提交到 awesome-dsh-plugin 的条目：data/plugins/yuna78__dsh-quick-resume.yml
+# 一个文件就是全部投稿，README 是生成物，不要手改。
+url: https://github.com/yuna78/dsh-quick-resume
+name: yuna78/dsh-quick-resume
+category: ui
+description:
+  en: 'A row of quick-phrase buttons in the DSH composer: one click sends "please continue" or any saved phrase, so a stalled agent keeps working without touching your draft.'
+  zh: '在 DSH 输入框底栏放一排可自定义的快捷语按钮：点一下发送「请继续」等快捷语，把卡住的 agent 一键叫醒，且不覆盖你写了一半的草稿。'

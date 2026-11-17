@@ -1,0 +1,6 @@
+url: https://github.com/erlingmijiang/dsh-lorebooklike-prompt-tool
+name: erlingmijiang/dsh-lorebooklike-prompt-tool
+category: session
+description:
+  en: 'SillyTavern-style prompt rules for DSH: layered system-prompt anchors, constant/keyword entries, reproducible probability gates and regex rewriting.'
+  zh: '类世界书的 DSH 提示词规则：分层系统提示锚点、蓝绿灯条目、可复现概率门与正则替换。'

@@ -1,0 +1,6 @@
+url: https://github.com/sensen-jo/dsh-plugin-goal-map
+name: sensen-jo/dsh-plugin-goal-map
+category: session
+description:
+  en: Goal Map shows a read-only goal-to-plan progress route, session mindmap and step list using reported plan progress, without starting tasks or model calls. Beta.2 supports DSH Web 0.2.0-rc.2 or 0.2.1-rc.2, with Node.js >=24.
+  zh: 目标进展图以只读流程图展示目标到计划的进展路线、会话思维导图与步骤列表，按已报告计划计算进度，不启动任务或模型调用。Beta.2 支持 DSH Web 0.2.0-rc.2 或 0.2.1-rc.2、Node.js >=24。

@@ -1,0 +1,22 @@
+# Submission for awesome-dsh-plugin
+#
+# Target path:
+#   data/plugins/Wahwayhale__dsh-connect-miaoshou.yml
+#
+# Rules this file satisfies (see MARKET-SUBMISSION.md §2.2):
+#   R1  `url` must match the repository URL EXACTLY (no `.git` suffix here)
+#   R2  `dsh.bundle` manifest is declared in package.json + repo root has cordis.patch.yml  [done]
+#   R11 official @deepseek-ai/* packages use peerDependencies                            [done]
+#   *   only `description.en` is required; `zh` is optional
+#   *   `description.en` must end with a period
+#   *   any value containing ": " MUST be quoted, or the YAML parser fails
+#
+# Validate locally before opening the PR:
+#   node scripts/validate-submission.mjs
+
+url: "https://github.com/Wahwayhale/dsh-connect-miaoshou"
+name: "Wahwayhale/dsh-connect-miaoshou"
+category: model
+description:
+  en: "Adds the Miaoshou (Meituan CatPaw) desktop client as a DeepSeek Harness model provider. The 12 models mirror the ones the Miaoshou app picker shows, each carrying its credit-cost multiplier; thinking levels are translated into the upstream modelParams; a read-only panel reports available credits and the current plan. Sign-in is a QR link, so the desktop client does not have to be running."
+  zh: '把妙手（美团 CatPaw）桌面客户端接入 DeepSeek Harness 作为模型 provider：12 个模型与 App 内模型选择器逐条对齐，含每个模型的积分消耗倍率；思考等级会翻译成上游的 modelParams；另附一块只读看板，显示可用积分与当前套餐。登录走扫码链接，妙手客户端不必常驻运行。'

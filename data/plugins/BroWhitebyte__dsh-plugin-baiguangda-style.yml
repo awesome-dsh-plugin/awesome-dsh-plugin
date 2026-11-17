@@ -1,0 +1,6 @@
+url: https://github.com/BroWhitebyte/dsh-plugin-baiguangda-style
+name: BroWhitebyte/dsh-plugin-baiguangda-style
+category: tools
+description:
+  en: 'Chinese writing-register plugin for the Gcores/机核 editor 白广大: registers a 40 KB style skill plus style_lint / style_audit / style_rules tools — 4 hard-error and 27 warning checks (banned connectives, slogan inflation, empty quantifiers, uniform paragraphs, unsourced statistics, AI clichés), with thresholds calibrated on 444 articles / 802k characters; a settings page adds an on/off switch, single and batch trial runs, and JSON threshold overrides.'
+  zh: '把机核网编辑白广大的中文文风做成可执行的判据：注册一份 40 KB 风格技能，并提供 style_lint / style_audit / style_rules 三个工具——4 条硬错误 + 27 条警告（空转转折、金句通胀、冗余量词、段落过于均匀、孤证数字、AI 口头禅等），阈值按 444 篇 / 80.2 万字语料标定；设置页带总开关、单篇与批量试跑、阈值 JSON 覆盖。'

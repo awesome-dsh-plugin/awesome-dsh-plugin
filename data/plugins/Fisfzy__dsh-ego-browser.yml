@@ -1,0 +1,6 @@
+url: https://github.com/Fisfzy/dsh-ego-browser
+name: Fisfzy/dsh-ego-browser
+category: browser
+description:
+  en: 'Drive a real Chrome/Chromium browser from DeepSeek Harness with 35 structured tools for navigation, snapshots, clicks, forms, JavaScript/CDP, screenshots, downloads and tabs; a live sidebar mirrors the page and accepts mouse and keyboard input. It ships a managed CDP runtime, keeps login state across calls, and can import cookies from your everyday Chrome through a companion extension.'
+  zh: '用 35 个结构化工具从 DeepSeek Harness 驱动真实 Chrome/Chromium：导航、语义快照、点击、表单、JavaScript/CDP、截图、下载与标签页管理；右侧边栏实时镜像页面，并支持鼠标键盘直接接管。插件自带受管 CDP 运行时，跨调用保留登录状态，并可通过配套 Chrome 扩展从日常浏览器导入 cookie。'

@@ -1,0 +1,6 @@
+url: https://github.com/AprilCrystal/dsh-client-ui-gpt-helper
+name: AprilCrystal/dsh-client-ui-gpt-helper
+category: ui
+description:
+  en: 'ChatGPT-desktop-style model picker whose thinking-level slider carries a particle trail, plus a visual-only fast-mode toggle and a hold-to-lock for it.'
+  zh: 'ChatGPT 桌面风格的模型选择控件：思考档位滑杆带粒子拖尾，另有纯视觉的快速模式开关与长按锁定。'

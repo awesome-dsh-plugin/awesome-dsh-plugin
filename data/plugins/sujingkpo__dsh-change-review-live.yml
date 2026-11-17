@@ -1,0 +1,6 @@
+url: https://github.com/sujingkpo/dsh-change-review-live
+name: sujingkpo/dsh-change-review-live
+category: ui
+description:
+  en: "Live change review for DeepSeek Harness: tracks write/edit tool calls per session, lists changed files above the composer and opens each file's line-level diff in a plugin-registered right-sidebar tab, with session-log / initial-version / Git comparison modes, per-change and per-file revert, subagent aggregation and SSE updates. A fork of cirelir/dsh-change-review rebuilt around the right sidebar."
+  zh: "实时审查插件：追踪会话内 write/edit 工具调用，改动列表常驻输入框上方，点开即在插件自注册的右侧栏标签页里查看行级 diff，支持「会话记录 / 初始版本 / Git 版本」三种对比、单项与整文件撤回、子代理聚合与 SSE 实时刷新，配色可自定义；fork 自 cirelir/dsh-change-review，审查界面整体重构到右侧栏。"

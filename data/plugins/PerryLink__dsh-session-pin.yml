@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-session-pin
+name: PerryLink/dsh-session-pin
+category: session
+description:
+  en: Pin sessions and workspaces to the top of the Web sidebar with per-pin row colors, a header toggle and a pinned panel; 0.4.0 adds a navigation organizer — pin groups (boards), tags and saved filter views, session health summaries, and /goto.
+  zh: 把会话与工作区置顶到 Web 侧边栏顶部：行级图钉与换色、会话头开关、已置顶面板；0.4.0 再加导航组织器——Pin 分组（boards）、标签与保存视图、会话健康摘要与 /goto。

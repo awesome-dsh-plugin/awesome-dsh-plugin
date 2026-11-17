@@ -1,0 +1,8 @@
+url: https://github.com/Jason25417/dsh-external-bridge
+name: Jason25417/dsh-external-bridge
+category: tools
+description:
+  en: 'Host-side HTTP bridge on 127.0.0.1:39217 with a Bearer token stored at 0600: external processes can create real DSH Desktop sessions that appear in the workspace sidebar, send prompts (queue or steer), read state and the last assistant reply, list workspaces and sessions, and long-poll until a turn finishes. Zero runtime dependencies; fixed loopback port; no outbound network; message bodies are never logged.'
+  zh: '只在 127.0.0.1:39217 监听的本机 HTTP 桥（Host 半插件），用 0600 落盘的 Bearer token 鉴权：外部进程可创建出现在工作区侧栏的真会话、发消息（queue/steer）、读状态与最后一条助手回复、列工作区/会话，并长轮询到回合结束。零运行时依赖，端口固定，不联网，日志不记消息正文。'
+icon: https://raw.githubusercontent.com/Jason25417/dsh-external-bridge/main/assets/icon-180.png
+tarball: https://github.com/Jason25417/dsh-external-bridge/releases/latest/download/dsh-external-bridge.tgz

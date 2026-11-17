@@ -1,0 +1,6 @@
+url: https://github.com/airenburen/dsh-windows-notify
+name: airenburen/dsh-windows-notify
+category: notify
+description:
+  en: 'Windows native toasts for DeepSeek Harness: pops a toast when a session needs you (approval, question, error, optional turn end), click to return to DSH, answer approvals with Allow/Deny buttons on the toast, plus a notify_user tool and an HTTP API.'
+  zh: '给 DeepSeek Harness 加 Windows 原生通知：会话需要你操作（要权限、提问、出错、可选回合结束）时弹 Toast，点通知回到 DSH，通知上可直接「允许/拒绝」审批，另提供 notify_user 工具与 HTTP 接口。'

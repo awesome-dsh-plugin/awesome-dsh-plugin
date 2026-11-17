@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/geo-data-quality-inspector
+name: liuhange789/data-asset-inspector#geo-data-quality-inspector
+category: tools
+description:
+  zh: "地理空间数据质量检查插件，检测高程精度、拓扑一致性与坐标系统合规性，输出加权质量评分报告，满足GB/T 24356-2023国家标准。"
+  en: "Geospatial data quality inspector: checks elevation accuracy, topology consistency and coordinate system compliance, outputs weighted quality scoring reports per GB/T 24356-2023."

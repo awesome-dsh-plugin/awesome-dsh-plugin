@@ -1,0 +1,7 @@
+url: https://github.com/KouzakiUmi/dsh-prompt-zh
+name: KouzakiUmi/dsh-prompt-zh
+category: identity
+description:
+  en: 'Localizes known DSH system instructions and runtime reminders into Simplified Chinese, trims tool-related guidance to visible tools, and provides editable translations and component toggles while preserving tool names and parameter schemas.'
+  zh: '将 DSH 已知系统指引与运行时提醒中文化，按可见工具裁剪相关指导，提供逐条译文编辑和组件开关，保留工具名与参数结构。'
+tarball: https://github.com/KouzakiUmi/dsh-prompt-zh/releases/latest/download/dsh-prompt-zh.tgz

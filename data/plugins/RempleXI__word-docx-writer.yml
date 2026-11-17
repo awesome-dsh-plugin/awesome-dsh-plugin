@@ -1,0 +1,7 @@
+url: https://github.com/RempleXI/word-docx-writer
+name: RempleXI/word-docx-writer
+category: skill
+description:
+  en: 'Generate and format Chinese Word (.docx) documents from a simple markup file, using built-in heading styles, SimSun and Times New Roman fonts, and per-chapter figure and table captions.'
+  zh: 用简单标记稿生成并排版中文 Word（.docx）文档，使用内置标题样式、宋体与 Times New Roman 字体，图表题注按章自动编号。
+tarball: https://github.com/RempleXI/word-docx-writer/releases/download/v1.0.0/dsh-plugin-word-docx-writer-1.0.0.tgz

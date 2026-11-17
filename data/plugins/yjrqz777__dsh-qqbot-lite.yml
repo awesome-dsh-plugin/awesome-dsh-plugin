@@ -1,0 +1,6 @@
+url: https://github.com/yjrqz777/dsh-qqbot-lite
+name: yjrqz777/dsh-qqbot-lite
+category: notify
+description:
+  en: 'Connects QQ Bot private and group chats to DeepSeek Harness Desktop, with per-chat personas, interactive questions, and optional image understanding.'
+  zh: '将 QQ 私聊和群聊接入 DeepSeek Harness Desktop，支持按会话切换人格、交互式提问和可选图片理解。'

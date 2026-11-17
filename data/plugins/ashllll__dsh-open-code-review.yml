@@ -1,0 +1,6 @@
+url: https://github.com/ashllll/dsh-open-code-review
+name: ashllll/dsh-open-code-review
+category: git
+description:
+  en: 'Review code with Open Code Review: deterministic scope and rule resolution, judged by your own DSH model, no API key.'
+  zh: '用 Open Code Review 评审代码：确定性的范围与规则解析，由你自己的 DSH 模型判断，无需 API Key。'

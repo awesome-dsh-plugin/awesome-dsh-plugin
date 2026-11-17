@@ -1,0 +1,6 @@
+url: https://github.com/Xiaocanglan-hub/dsh-whale-memory/tree/main/packages/dsh-memory-brain
+name: Xiaocanglan-hub/dsh-whale-memory#dsh-memory-brain
+category: memory
+description:
+  en: 'Object memory for DSH: each object is broken into fourteen kinds of smallest elements (shape, material, state, part, function...), observed links are stored apart from inferred ones, and analogies stay as questions until the user answers.'
+  zh: 'DSH 元素记忆库：把物体拆成十四类最简元素（形状、材质、状态、部位、功能等），观察到的边与推断出的边分开存放，猜想只作为问题等待用户回答。'

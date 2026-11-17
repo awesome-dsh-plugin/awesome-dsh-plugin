@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-dev/dsh-data-agent
+name: omdsh-dev/dsh-data-agent
+category: tools
+description:
+  en: Let the AI connect to databases and write SQL for you.
+  zh: 让 AI 帮你连数据库、写 SQL。

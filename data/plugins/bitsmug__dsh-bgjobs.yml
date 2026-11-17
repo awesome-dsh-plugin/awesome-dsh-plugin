@@ -1,0 +1,6 @@
+url: https://github.com/bitsmug/dsh-bgjobs
+name: bitsmug/dsh-bgjobs
+category: tools
+description:
+  en: 'Runs commands as background jobs that keep executing when DSH exits, with an optional sandbox to constrain file effects, plus a live web panel and offline CLI/GUI management. Windows only for now.'
+  zh: '将命令提交为独立于 DSH 进程的后台任务（可选沙箱），关闭 DSH 也不影响运行，并提供实时网页面板与离线 CLI/GUI 管理。当前仅支持Windows系统。'

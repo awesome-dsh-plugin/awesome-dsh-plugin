@@ -1,0 +1,7 @@
+url: https://github.com/adithyanraj03/dsh-mcp-summon
+name: adithyanraj03/dsh-mcp-summon
+category: tools
+tarball: https://github.com/adithyanraj03/dsh-mcp-summon/releases/latest/download/plugin.tgz
+description:
+  en: "Dormant-by-default MCP for dsh: one mcp_summon tool; summoning a server registers its tools as real native mcp__<server>__<tool> tools for the rest of the session, and release unregisters them and stops the process."
+  zh: 休眠式 MCP：只注册一个 mcp_summon 工具，召唤后该服务器的工具在本次会话内以原生 mcp__<server>__<tool> 名称注册，释放即注销并停止进程。

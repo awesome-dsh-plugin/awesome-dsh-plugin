@@ -1,0 +1,7 @@
+url: https://github.com/liwuzhan/cad-tool/tree/main/packages/dsh-cad-studio
+name: liwuzhan/cad-tool#dsh-cad-studio
+category: tools
+tarball: https://github.com/liwuzhan/cad-tool/releases/latest/download/dsh-cad-studio.tgz
+description:
+  en: Adds parametric CAD modeling, geometry validation, previews, design history, and STEP/STL export to DSH.
+  zh: 为 DSH 添加参数化 CAD 建模、几何验证、预览、设计历史和 STEP/STL 导出能力。

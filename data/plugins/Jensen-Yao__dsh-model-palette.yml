@@ -1,0 +1,6 @@
+url: https://github.com/Jensen-Yao/dsh-model-palette
+name: Jensen-Yao/dsh-model-palette
+category: model
+description:
+  en: 'Global Alt+M model command palette for DeepSeek Harness Web: fuzzy search over models and providers, favorites and recents, per-model reasoning effort, provider and model configuration, request retries, capacity presets, and optional OpenRouter image/video generation tools.'
+  zh: 'DeepSeek Harness Web 的全局 Alt+M 模型命令面板：模型与提供商的模糊搜索、收藏与最近使用、每模型思考档位、提供商与模型配置、请求重试、容量预设，以及可选的 OpenRouter 图片/视频生成工具。'

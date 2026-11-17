@@ -1,0 +1,6 @@
+url: https://github.com/Wisdoverse/dsh-inline-media-viewer-plugin
+name: Wisdoverse/dsh-inline-media-viewer-plugin
+category: session
+description:
+  en: Renders image, video, and audio paths and URLs from DSH conversations inline, with workspace-confined local reads and an optional ComfyUI proxy.
+  zh: 在 DSH 对话中内联显示图像、视频和音频路径及 URL，并提供工作区受限的本地读取与可选的 ComfyUI 代理。

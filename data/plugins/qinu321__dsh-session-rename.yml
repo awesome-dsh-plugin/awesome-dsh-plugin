@@ -1,0 +1,6 @@
+url: https://github.com/qinu321/dsh-session-rename
+name: qinu321/dsh-session-rename
+category: session
+description:
+  en: Adds a session_rename tool so an AI can retitle the DeepSeek Harness session it is running in.
+  zh: 新增 session_rename 工具，让 AI 能重命名自己所在的 DSH 会话。

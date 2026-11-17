@@ -1,0 +1,6 @@
+url: https://github.com/yankeguo/dsh-infini-goal/tree/main/packages/bundle
+name: yankeguo/dsh-infini-goal#bundle
+category: workflow
+description:
+  en: 'A goal mode for DeepSeek Harness with no round cap: a goal stays active until it is completed, paused, blocked, or cleared; the minimum interval between automatic rounds is configurable, and quiet windows suppress automatic rounds.'
+  zh: 'DSH 的无轮次上限目标模式：目标保持 active 直到被完成、暂停、阻塞或清除；自动轮次之间的最小间隔可配置，静默时段内不触发自动轮次。'

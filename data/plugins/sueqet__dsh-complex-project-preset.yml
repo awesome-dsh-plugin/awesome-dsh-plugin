@@ -1,0 +1,6 @@
+url: https://github.com/sueqet/dsh-complex-project-preset
+name: sueqet/dsh-complex-project-preset
+category: workflow
+description:
+  en: 'Agent preset for DeepSeek Harness: the standard tool stack plus four working rules written into the persona prompt — a project keeps at most four documents (intro, decisions, change log, current state and next steps), those documents describe only the current state with no AI edit history or superseded decisions, no git commit or push or pull request until the user explicitly asks, and a careful-coding workflow (restate the goal and done-criteria first, surgical diffs, evidence before claiming success) with plain-language reports.'
+  zh: 给 DSH 的 Agent 预设：标准模式的工具栈，外加写进人格提示的四条工作纪律——每个项目最多四个文档（项目介绍、方案设定、改动记录、现状与下一步）；文档只写当前状态，不记 AI 修改历史、不留被推翻的旧方案；用户没有明确指令就不提交、不推送、不开 PR；动手前先复述目标与验收标准、只做手术式最小改动、没验证不说已修复，汇报用大白话。

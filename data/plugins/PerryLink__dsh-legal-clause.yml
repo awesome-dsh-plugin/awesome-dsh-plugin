@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-legal-clause
+name: PerryLink/dsh-legal-clause
+category: workflow
+description:
+  en: 'Contract clause work: build the clause tree, map it against a 12-key playbook, register the playbook and export the unresolved report — 5 `legal.*` tools.'
+  zh: '合同条款处理：构建条款树、按 12 项 playbook 映射、登记 playbook 并导出未决清单——5 个 `legal.*` 工具。'

@@ -1,0 +1,6 @@
+url: https://github.com/MaYucong6/dsh-batch-uninstall
+name: MaYucong6/dsh-batch-uninstall
+category: market
+description:
+  en: 'Adds a Batch Uninstall page to the DSH settings dialog: a checklist of every installed bundle with multi-select, select-all, a confirmation dialog and per-plugin progress, where official bundles stay locked and each removal goes through the host pluginManager service.'
+  zh: '在 DSH 设置中新增「批量卸载」页面：勾选多个已安装插件批量移除，支持全选、二次确认与逐条进度，官方 bundle 自动锁定，删除统一走宿主 pluginManager 服务。'

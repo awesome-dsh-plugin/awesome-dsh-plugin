@@ -1,0 +1,6 @@
+url: https://github.com/fandc520/dsh-comfyui
+name: fandc520/dsh-comfyui
+category: vision
+description:
+  en: 'Drive a local or remote ComfyUI server from DeepSeek Harness: comfyui_run / comfyui_object_info / comfyui_workflow tools generate and edit images and videos, with a workflow library (graph extraction: per component / main flow / all), a load area with resolution auto-match, a live queue, SDXL and Wan 2.1 templates, a companion skill, and a same-origin media proxy.'
+  zh: '让 DeepSeek Harness 的 Agent 直接驱动本地或远程 ComfyUI：comfyui_run / comfyui_object_info / comfyui_workflow 工具生成与编辑图像、视频，附带工作流库（图工作流提取：按分量 / 主流程 / 整体）、加载区分辨率自动匹配、实时队列、SDXL 与 Wan 2.1 模板、配套 skill 与同源媒体代理。'

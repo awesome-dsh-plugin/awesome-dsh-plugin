@@ -1,0 +1,6 @@
+url: https://github.com/gezi-wen/sage-reminder
+name: gezi-wen/sage-reminder
+category: ui
+description:
+  en: 'A time module in the DSH session header: current time, time since your last message, reminders, and countdowns. Pure browser-side - data lives in localStorage and the host half registers nothing. Alerts are a border glow plus an in-app toast; no system notifications.'
+  zh: DSH 会话头部的时间模块：现在时间、距你上次发言、提醒与倒计时。纯前端插件——数据存浏览器 localStorage，host 半不注册任何东西；到点提示是边框呼吸灯加界面浮条，不发系统通知。

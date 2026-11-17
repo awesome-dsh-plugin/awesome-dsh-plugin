@@ -1,0 +1,6 @@
+url: https://github.com/PhysicalAI-0/dsh-paperforge
+name: PhysicalAI-0/dsh-paperforge
+category: docs
+description:
+  en: 'Paper reading workbench: a paper library, the PDF beside Markdown notes and one dedicated AI session per paper. Highlights and region screenshots go straight into notes; select-to-ask sends the passage with its page; notes are editable in place with autosave; sessions can be combined into a Summary.'
+  zh: '论文阅读工作台：论文库、PDF 与 Markdown 笔记并排、每篇论文一个专属 AI 会话。高亮与框选截图自动写入笔记；划词 Ask AI 附带页码与选段；笔记可原地编辑、自动保存；多个会话可汇总成 Summary。'

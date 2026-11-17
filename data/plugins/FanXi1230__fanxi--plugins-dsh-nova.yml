@@ -1,0 +1,8 @@
+url: https://github.com/FanXi1230/fanxi/tree/main/plugins/dsh-nova
+name: FanXi1230/fanxi#dsh-nova
+category: ui
+description:
+  en: A cosmic reasoning-effort slider for the DeepSeek Harness composer. Off, Low, High, and Max each have their own starfield and aurora, with smooth cross-fades and real per-session model selection.
+  zh: 把 DeepSeek Harness 输入框的推理强度滑轨做成一片小宇宙。Off、Low、High、Max 各有专属星场与极光，档位之间平滑过渡，并绑定真实的当前会话模型选择。
+icon: https://raw.githubusercontent.com/FanXi1230/fanxi/main/plugins/dsh-nova/assets/icon-180.png
+tarball: https://github.com/FanXi1230/fanxi/releases/latest/download/dsh-nova.tgz

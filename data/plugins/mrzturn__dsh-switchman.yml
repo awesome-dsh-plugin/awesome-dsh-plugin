@@ -1,0 +1,6 @@
+url: https://github.com/mrzturn/dsh-switchman
+name: mrzturn/dsh-switchman
+category: workflow
+description:
+  en: 'Workflow and automation (`workflow`): task dispatch, optional Agent Teams, and tiered verification; usage and billing (`usage`): session token tracking and automatic context folding (no bill calculation); sessions and messages (`session`): persistent fold state, protected recent messages, and watermark-triggered handoff; models and account access (`model`): six dispatch pools and optional intent-based routing (no account integration); skills (`skill`): read-only MySQL/Redis checks, commit-message generation, and requirements/design docs; development and runtime (`dev`): Host/Client settings UI and tool-call safeguards. Together, these features are designed to balance output quality with token efficiency and model-use costs.'
+  zh: '工作流与自动化（workflow）：任务派发、可选 Agent Teams 协作及分级验证；用量与计费（usage）：会话 token 用量统计和自动上下文折叠（不计算账单）；会话与消息（session）：折叠状态持久化、近期消息保护及水位触发交接；模型与账号接入（model）：六个模型派发池与可选意图路由（不提供账号接入）；技能包（skill）：MySQL/Redis 只读核验、提交信息生成及需求/设计文档；开发与运行时（dev）：Host/Client 设置界面及工具调用保护。这些能力协同运作，旨在兼顾结果质量与 token 使用效率，并控制不必要的模型调用成本。'

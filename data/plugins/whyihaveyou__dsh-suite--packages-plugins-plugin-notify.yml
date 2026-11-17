@@ -1,0 +1,6 @@
+url: https://github.com/whyihaveyou/dsh-suite/tree/main/packages/plugins/plugin-notify
+name: whyihaveyou/dsh-suite#plugin-notify
+category: notify
+description:
+  en: IM webhook and local notifications on turn completion, errors, or approval (Feishu/WeCom/DingTalk/Slack/Discord/custom).
+  zh: 回合完成、错误或待审批时推送 IM webhook（飞书/企微/钉钉/Slack/Discord/自定义）与本地通知。

@@ -1,0 +1,7 @@
+url: https://github.com/ltmroberthk915/dsh-session-telecom
+name: ltmroberthk915/dsh-session-telecom
+category: session
+description:
+  en: 'Call between DSH sessions in different working directories or projects: message any session (next-step delivery or a new turn), end a blocking tool call on request, and read transcripts and usage without waking the target.'
+  zh: '在不同目录 / 项目的 DSH 会话之间通话：向任意会话发消息（下一步直达或开新轮），可按需结束对方阻塞中的工具调用，并在不唤醒对方的情况下读取记录与用量。'
+tarball: https://github.com/ltmroberthk915/dsh-session-telecom/releases/download/v1.3.2/dsh-session-telecom-1.3.2.tgz

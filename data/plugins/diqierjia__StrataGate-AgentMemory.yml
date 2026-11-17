@@ -1,0 +1,7 @@
+url: https://github.com/diqierjia/StrataGate-AgentMemory
+tarball: https://github.com/diqierjia/StrataGate-AgentMemory/releases/latest/download/stratagate-dsh.tgz
+name: diqierjia/StrataGate-AgentMemory
+category: memory
+description:
+  en: 'Help your Agent pick up where you left off, with less repeated explanation and more useful memory. StrataGate brings cross-session memory to DeepSeek Harness: recent conversations retain their details, while older ones become more concise to save context and can be expanded to check the originals. Important decisions, preferences, and plans become long-term memories, organized by topic with traceable sources. Import memories from other AIs to carry your context into a new assistant.'
+  zh: '让 Agent 接着上次的进度继续工作，少一点重复解释，多一点有效记忆。StrataGate 为 DeepSeek Harness 提供跨会话记忆：近期对话保留细节，旧对话逐渐精简，节省上下文，需要时仍能展开核对原文；重要决定、偏好和计划沉淀为长期记忆，通过主题目录快速查找、追溯来源。还支持导入其他 AI 的已有记忆，换个助手也能接着聊。'

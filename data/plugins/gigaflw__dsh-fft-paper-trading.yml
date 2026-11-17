@@ -1,0 +1,7 @@
+url: https://github.com/gigaflw/dsh-fft-paper-trading
+name: gigaflw/dsh-fft-paper-trading
+category: tools
+description:
+  en: 'Paper trading in DSH: A-shares and commodity futures, local ledger, built-in FTShare data and K-line, and daily-close practice without buying an API key.'
+  zh: '在 DSH 中进行模拟交易，支持 A 股和商品期货，本地账本，内置 FTShare 数据源与 K 线，无需购买 API Key 也可使用日K收盘价练习'
+icon: https://raw.githubusercontent.com/gigaflw/dsh-fft-paper-trading/main/assets/icon-180.png

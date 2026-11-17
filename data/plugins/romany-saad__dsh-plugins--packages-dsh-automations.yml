@@ -1,0 +1,7 @@
+url: https://github.com/romany-saad/dsh-plugins/tree/main/packages/dsh-automations
+name: romany-saad/dsh-plugins#dsh-automations
+category: workflow
+description:
+  en: 'Keep your automation tasks in files you can version and review: write each task''s schedule, prompt, model, permission and working folder in YAML, JSON or JS, and DSH''s own Schedule is kept exactly in line, creating, updating, disabling and deleting tasks within a second of a save. Each task runs in its own conversation, persistent or fresh per run; /automations syncs on demand and names any file mistake; and a sync that finds no tasks never wipes the Schedule.'
+  zh: '把自动化任务放进可以版本管理、可以审阅的文件里：用 YAML、JSON 或 JS 写下每个任务的计划、提示词、模型、权限和工作目录，DSH 自带的 Schedule 会与文件保持完全一致，保存后一秒内完成创建、更新、停用和删除。每个任务在自己的会话中运行，可持续复用或每次新开；/automations 可随时同步并指出出错的文件；若同步时一个任务也没找到，绝不会清空 Schedule。'
+icon: https://raw.githubusercontent.com/romany-saad/dsh-plugins/main/packages/dsh-automations/docs/icon.png

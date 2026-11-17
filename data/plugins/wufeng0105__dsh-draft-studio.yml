@@ -1,0 +1,7 @@
+url: https://github.com/wufeng0105/dsh-draft-studio
+name: wufeng0105/dsh-draft-studio
+category: usage
+tarball: https://github.com/wufeng0105/dsh-draft-studio/releases/latest/download/dsh-draft-studio.tgz
+description:
+  en: "You type half a thought — \"make me a scraper for Douban\" — and the AI has to guess the rest. Click one button beside the input box and that line becomes a full instruction it can actually follow: what to build, what to output, what the limits are, how you'll know it's done. It never picks for you: where you haven't decided something (which library, which format), it lists the options instead of choosing one. The result is still a draft — never sent, and one click or Ctrl+Z puts your original back. Four presets (general / code / writing / translation), each one editable text you can rewrite to taste, and you choose which buttons appear. Optional: read the last few turns of the conversation so \"that thing I mentioned\" resolves correctly; use the current session's model or pin a specific one. Pure JS, no build, no bundled dependencies."
+  zh: "你随手打一句「帮我弄个爬虫抓豆瓣」，剩下的全靠 AI 猜。点一下输入框旁边那颗按钮，这句话就变成一份能照着干的完整指令：做什么、输出什么、有什么限制、怎么算做完了。而且它不替你拿主意——你没想好的地方（用哪个库、存成什么格式），它把选项列出来让你挑，不会自己拍板。改完还是草稿，绝不替你发送，一键或 Ctrl+Z 就能还原原话。四套预设（通用/编程/写作/翻译），每套都是一段可以自己改的文字，觉得改得不对味就直接改那段话；显示哪几颗按钮也由你定。还可以让它读当前对话最近几轮，把「刚才说的那个」对上号；用哪个模型，跟随当前对话或固定一个都行。纯 JS，不用构建，不带依赖。"

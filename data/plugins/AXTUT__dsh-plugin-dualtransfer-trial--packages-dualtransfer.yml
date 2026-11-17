@@ -1,0 +1,7 @@
+url: https://github.com/AXTUT/dsh-plugin-dualtransfer-trial/tree/main/packages/dualtransfer
+name: AXTUT/dsh-plugin-dualtransfer-trial#dualtransfer
+category: remote
+tarball: https://github.com/AXTUT/dsh-plugin-dualtransfer-trial/releases/download/project.3/dsh-plugin-dualtransfer-0.2.0-candidate.6.9.reboot.3.project.3.tgz
+description:
+  en: 'Cross-computer Harness Agent messaging, commit-specific task handoff and parallel-branch or shared-baseline Git project collaboration with diff and conflict previews. Pairing, binding and the receiver''s existing local authorization remain required. Not open source (UNLICENSED evaluation build, not for production); requires Node.js 24+ and Git 2.38+ for project collaboration, tested only on macOS arm64 and Windows 11 x64 build 22621+. The project.3 candidate passed 60 targeted checks per platform; full Host/browser, physical two-machine and model end-to-end validation remain pending. DSH 0.2.2-rc.1 has only limited gate/SDK checks, not full installation and runtime validation.'
+  zh: '跨电脑 Agent 通信、带精确 commit 的任务交接，以及分支并行或共同基线 Git 项目协作，提供差异与冲突预览。须先配对、绑定，并遵守接收端本机既有授权。非开源（UNLICENSED 评估试用版，勿用于生产）；需要 Node.js 24+，项目协作另需 Git 2.38+，仅在 macOS arm64 与 Windows 11 x64 build 22621+ 上测试。project.3 候选在两端各通过 60 项定向检查，完整 Host/浏览器、两台物理机与模型端到端仍待验证。DSH 0.2.2-rc.1 仅完成限定门控/SDK 检查，尚未完成完整安装运行验收。'

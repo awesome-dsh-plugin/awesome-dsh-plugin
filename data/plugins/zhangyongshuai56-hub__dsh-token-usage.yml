@@ -1,0 +1,6 @@
+url: https://github.com/zhangyongshuai56-hub/dsh-token-usage
+name: zhangyongshuai56-hub/dsh-token-usage
+category: usage
+description:
+  en: 'Token usage dashboard for DeepSeek Harness: daily totals per model, with a trend chart, a calendar heatmap and a table view.'
+  zh: 'DeepSeek Harness 的 Token 用量面板：按模型统计每日消耗，含趋势图、日历热力图与表格视图。'

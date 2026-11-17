@@ -1,0 +1,6 @@
+url: https://github.com/hhaosheng/dsh-desktop-toast
+name: hhaosheng/dsh-desktop-toast
+category: notify
+description:
+  en: 'Toasts from DeepSeek Harness when a turn finishes, and when it stops for approval, a question or a plan exit. Native on Windows, text and timing configurable.'
+  zh: 'DeepSeek Harness 的 Windows 桌面通知：任务完成时、或停下来等你审批/回答/确认计划时弹出系统通知。文案与触发时机可配置。'

@@ -1,0 +1,6 @@
+url: https://github.com/better-er/dsh-write-rule-guard
+name: better-er/dsh-write-rule-guard
+category: dev
+description:
+  en: 'Blocks edit/write writes that contain characters matching configurable regex rules, executed before the tool runs, with configurable messages and same-turn pwsh propagation; default rule matches full-width parentheses.'
+  zh: '在工具执行前拦截 edit/write 写入内容里匹配配置正则的字符，默认匹配全角圆括号，同一回合命中后连带拦截后续 pwsh，报错文案与正则均可配置。'

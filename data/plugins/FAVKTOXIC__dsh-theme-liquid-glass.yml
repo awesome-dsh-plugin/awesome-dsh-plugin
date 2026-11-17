@@ -1,0 +1,6 @@
+url: https://github.com/FAVKTOXIC/dsh-theme-liquid-glass
+name: FAVKTOXIC/dsh-theme-liquid-glass
+category: theme
+description:
+  en: 'Liquid-glass theme for DeepSeek Harness with SVG edge refraction on the composer, bubbles, queue dock, menus and sidebar, translucent token overrides driven by live sliders for tint, opacity, blur and refraction, custom or built-in animated wallpapers, and desktop chrome extras such as a session bar merged into the system title bar and a fullscreen button.'
+  zh: '适用于 DeepSeek Harness 的液态玻璃主题：输入卡片、气泡、队列坞、菜单与侧边栏带 SVG 边缘折射；半透明 token 覆盖，色调、不透明度、模糊与折射强度都有实时滑块；壁纸可自定义或使用内置动态壁纸；桌面版另把会话顶栏并入系统标题栏，并补了全屏按钮。'

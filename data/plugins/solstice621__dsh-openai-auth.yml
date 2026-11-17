@@ -1,0 +1,6 @@
+url: https://github.com/solstice621/dsh-openai-auth
+name: solstice621/dsh-openai-auth
+category: identity
+description:
+  en: "Connects a local Codex ChatGPT login to DSH Desktop, with account controls, quota snapshots, automatic model synchronization, and model selection."
+  zh: "将本机 Codex 的 ChatGPT 登录接入 DSH 桌面版，提供账号管理、额度快照、模型自动同步和模型勾选。"

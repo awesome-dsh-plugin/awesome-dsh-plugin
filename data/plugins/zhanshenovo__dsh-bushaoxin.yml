@@ -1,0 +1,6 @@
+url: https://github.com/zhanshenovo/dsh-bushaoxin
+name: zhanshenovo/dsh-bushaoxin
+category: fun
+description:
+  en: 'A conversation-style layer that rephrases trade-off warnings: when a shortcut is cheap but has a catch, the reply may say the fast road is the rival shop and the slow one keeps its rules. Ships a rewrite engine that turns any text into a fixed-format dialogue with five independent knobs (act count, catchphrase density, ending turn, seed, preset), a slider for four on/off intensity levels, and a /bushaoxin command that reports a joke "heartburn index" from the session tool-call log. Every rewrite ends with a real technical conclusion that cannot be disabled. Zero dependencies, no build step, engine is pure functions.'
+  zh: '一个对话文风层：谈到「便宜的路有坑」这类取舍时，把警告换成另一种说法——快而便宜的是隔壁黑心店，慢而可靠的老店在立规矩。附带改写引擎，可把任意文本拧成固定骨架的对白，有五个互相独立的旋钮（幕数、招牌台词密度、收尾走向、种子、预设档）；一个四档强度滑条；以及 /bushaoxin 命令，按会话的工具调用记录生成一份段子式的「烧心指数」病历。每篇改写末尾永远附一行真实技术结论，不可关闭。零依赖、无构建步骤，引擎是纯函数。'

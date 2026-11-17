@@ -1,0 +1,6 @@
+url: https://github.com/1122438/We-Plugin/tree/main/dsh-cosplay-script
+name: 1122438/We-Plugin#dsh-cosplay-script
+category: fun
+description:
+  en: "Session-scoped roleplay for DeepSeek Harness: seven fixed character slots in the system prompt, on-demand lore recall, a per-session author's note, a per-turn depth note, and injection preview. Zero runtime dependencies. Rewritten from ZelinW1/dsh-cosplay 0.5.1; do not install it alongside the upstream plugin — both register the same cosplay-core bundle row."
+  zh: "DeepSeek Harness 的会话级角色扮演插件：7 个固定槽位常驻系统提示词，长设定按需召回；支持每会话本场提示、每轮深度提示与注入预览。零运行时依赖。基于上游 ZelinW1/dsh-cosplay 0.5.1 重写；不能与上游插件同装——两者都注册 cosplay-core 这一 bundle 行。"

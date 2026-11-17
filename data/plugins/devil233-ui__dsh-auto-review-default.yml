@@ -1,0 +1,6 @@
+url: https://github.com/devil233-ui/dsh-auto-review-default
+name: devil233-ui/dsh-auto-review-default
+category: security
+description:
+  en: 'Puts sessions into the built-in Auto review permission preset: new sessions at creation, existing root sessions when they are restored.'
+  zh: '让会话进入内置的 Auto review 权限预设：新建会话在创建时进入，已有的根会话在重新打开时切过去。'

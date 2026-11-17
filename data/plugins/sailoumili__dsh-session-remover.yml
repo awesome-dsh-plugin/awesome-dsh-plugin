@@ -1,0 +1,7 @@
+url: https://github.com/sailoumili/dsh-session-remover
+name: sailoumili/dsh-session-remover
+category: session
+description:
+  en: 'Adds Delete conversation and Batch delete to the sidebar session menu; a deleted conversation and its subagent sessions are moved to the Windows recycle bin, from where they can be restored.'
+  zh: '在侧栏会话行菜单中增加「删除对话」与「批量删除」；删除的对话及其子代理会话移入 Windows 回收站，可从回收站还原。'
+tarball: https://github.com/sailoumili/dsh-session-remover/releases/download/v1.0.0/dsh-session-remover-1.0.0.tgz

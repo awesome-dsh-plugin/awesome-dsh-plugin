@@ -1,0 +1,7 @@
+url: https://github.com/TAsteroid/DSH-Email-Automation/tree/main/packages/dsh-mail-plugin
+name: TAsteroid/DSH-Email-Automation#dsh-mail-plugin
+category: tools
+description:
+  en: 'Mail automation for DSH: IMAP IDLE sync, a follow-up queue, agent summaries through DSH sessions, approval-gated sending, and per-account HTML signatures with inline images. Windows only: mailbox passwords are encrypted with Windows DPAPI, and the credential store refuses to operate on other platforms.'
+  zh: 'DSH 邮箱自动化：IMAP 实时同步、待跟进队列、通过 DSH 会话做 Agent 总结、审批发信，以及按账户配置的 HTML 内嵌图片签名。仅支持 Windows：邮箱密码用 Windows DPAPI 加密，其他平台无法保存凭据。'
+tarball: https://github.com/TAsteroid/DSH-Email-Automation/releases/download/v0.3.0/dsh-mail-plugin-0.3.0.tgz

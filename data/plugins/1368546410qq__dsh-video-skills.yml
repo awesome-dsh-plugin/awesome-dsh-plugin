@@ -1,0 +1,6 @@
+url: https://github.com/1368546410qq/dsh-video-skills
+name: 1368546410qq/dsh-video-skills
+category: skill
+description:
+  en: 'Browses the awesome-claude-video-skills catalog (373 entries) inside DSH settings and installs a chosen skill into ~/.claude/skills and/or ~/.dsh/skills: it downloads the GitHub archive of that repository and copies the skill directory, and executes no code from the repository. Installs run as background jobs with live progress (bytes downloaded, files copied) and can be cancelled; skills installed by the plugin can be uninstalled, while directories without its marker are left untouched. Rows show an approximate repository size reported by GitHub. The same actions are exposed to the agent as the video_skill_search, video_skill_install and video_skill_uninstall tools.'
+  zh: '在 DSH 设置里浏览 awesome-claude-video-skills 目录（373 条），把选中的技能装进 ~/.claude/skills 和/或 ~/.dsh/skills：下载该仓库的 GitHub 归档并复制技能目录，不执行仓库里的任何代码。安装以后台任务运行、显示实时进度（已下载字节与已复制文件数）并可取消；本插件装上的技能可以卸载，没有本插件标记的目录保持不动。列表显示 GitHub 报告的仓库体积近似值。同样的能力也以 video_skill_search、video_skill_install、video_skill_uninstall 三个工具暴露给智能体。'

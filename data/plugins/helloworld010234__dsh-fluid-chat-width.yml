@@ -1,0 +1,6 @@
+url: https://github.com/helloworld010234/dsh-fluid-chat-width
+name: helloworld010234/dsh-fluid-chat-width
+category: ui
+description:
+  en: 'Fluid conversation width for the DSH web UI: the chat column follows the window minus a 64px margin, capped at 1560px and floored at 640px, while the built-in drag handles still override it.'
+  zh: '让 DeepSeek Harness 网页界面的对话列自适应宽度：随窗口取「列宽 − 64px」，上限 1560px、下限 640px，内置拖拽把手仍然优先。'

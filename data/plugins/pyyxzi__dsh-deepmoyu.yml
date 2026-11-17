@@ -1,0 +1,7 @@
+url: https://github.com/pyyxzi/dsh-deepmoyu
+name: pyyxzi/dsh-deepmoyu
+category: fun
+description:
+  en: 'Let a pet whale girl browse Bilibili on her own: she picks videos, reads subtitles, posts comments and moments once you allow it, and writes daily digests with optional local video production. Maintained fork of c1overzz/dsh-bili-scroll (MIT) with per-action permissions, memories, stickers and local video production added; it registers the same bili_* tool names as the upstream, so the two cannot be installed together. Video production needs Python 3.11-3.13 (or uv); the media dependencies are installed on first use.'
+  zh: '让桌宠鲸鱼娘自主刷 B站：自己搜片、读字幕原文，经你允许后发评论、发动态，并写日报、做视频。c1overzz/dsh-bili-scroll（MIT）的维护分支，新增逐项授权、记忆、表情与本地视频制作；与上游注册同名的 bili_* 工具，不能与 dsh-bili-scroll 同装。视频制作需要 Python 3.11–3.13（或 uv），首次使用时自动安装媒体依赖。'
+icon: https://raw.githubusercontent.com/pyyxzi/dsh-deepmoyu/main/assets/pet/pet.png

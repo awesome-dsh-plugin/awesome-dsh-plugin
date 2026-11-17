@@ -1,0 +1,6 @@
+url: https://github.com/mhlywxl/dsh-coding-sound
+name: mhlywxl/dsh-coding-sound
+category: voice
+description:
+  en: 'Generative background music while the model streams, plus completion, approval and attention chimes: hear whether the agent is thinking, still working, or waiting for you without watching the screen.'
+  zh: '模型输出时演奏生成式背景音乐，完成、审批与等待操作各有独立提示音：不盯屏幕也能听出 Agent 在思考、仍在工作还是在等你。'

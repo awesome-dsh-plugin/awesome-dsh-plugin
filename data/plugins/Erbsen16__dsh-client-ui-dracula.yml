@@ -1,0 +1,6 @@
+url: https://github.com/Erbsen16/dsh-client-ui-dracula
+name: Erbsen16/dsh-client-ui-dracula
+category: theme
+description:
+  en: 'Dracula (VS Code) dark theme for the DSH Web GUI: the vampire palette mapped onto the product colour tokens, plus a denser type scale, a 1080px reading column and code blocks that scroll instead of re-wrapping. Dark mode only.'
+  zh: 'DSH Web GUI 的 Dracula（VS Code 吸血鬼）深色主题：把产品自身的配色令牌映射到德古拉调色板，并附更紧的字号阶梯、1080px 正文列宽与不折行的代码块。仅深色模式。'

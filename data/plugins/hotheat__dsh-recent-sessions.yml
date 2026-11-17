@@ -1,0 +1,6 @@
+url: https://github.com/hotheat/dsh-recent-sessions
+name: hotheat/dsh-recent-sessions
+category: session
+description:
+  en: 'Adds a collapsible Recent list to the bottom of the DSH Web sidebar: sessions from every workspace sorted by last activity, filtering empty, archived and subagent sessions, with the host status dots and ten more rows per click.'
+  zh: '在 DSH Web 侧栏底部加一块可折叠的「最近」列表：跨工作区按最后活动时间排序，过滤空白、已归档与 subagent 会话，复用宿主状态点，首屏 10 条、每次点击再多 10 条。'

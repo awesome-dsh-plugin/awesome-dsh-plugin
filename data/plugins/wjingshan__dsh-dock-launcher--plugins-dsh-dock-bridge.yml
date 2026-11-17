@@ -1,0 +1,7 @@
+url: https://github.com/wjingshan/dsh-dock-launcher/tree/main/plugins/dsh-dock-bridge
+name: wjingshan/dsh-dock-launcher#dsh-dock-bridge
+category: ui
+tarball: https://github.com/wjingshan/dsh-dock-launcher/releases/download/v0.15.0/dsh-dock-bridge-0.1.0.tgz
+description:
+  en: Publishes the running dsh Web server's PID, port and tokenized URL to a runtime file for the DeepSeek Harness Switch Dock app, and removes it on shutdown.
+  zh: 为「DeepSeek Harness 开关」程序坞应用写出运行中 dsh Web 服务的 PID、端口与带 token 的地址（运行时文件权限 0600），并在退出时删除。

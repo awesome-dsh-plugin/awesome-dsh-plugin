@@ -1,0 +1,6 @@
+url: https://github.com/zhou1736948757-cpu/dsh-auto-continue
+name: zhou1736948757-cpu/dsh-auto-continue
+category: session
+description:
+  en: Automatically sends a "continue" prompt when a reply is cut off at the output token limit, resuming long answers without manual input; aimed at self-hosted Ollama deployments with small output caps.
+  zh: 回答因达到单次输出 token 上限被截断时自动发送"继续"续写，无需手动操作；面向自部署 Ollama 等小输出上限场景。

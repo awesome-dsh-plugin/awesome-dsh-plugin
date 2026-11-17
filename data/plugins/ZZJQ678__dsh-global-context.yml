@@ -1,0 +1,6 @@
+url: https://github.com/ZZJQ678/dsh-global-context
+name: ZZJQ678/dsh-global-context
+category: session
+description:
+  en: 'Adds a Global Prompt tab to the conversation view: text you write there is prepended to the top of every session system prompt, and saving takes effect on the next message without a restart.'
+  zh: '全局提示词配置：在对话视图新增一个标签页，写进去的内容会加在每个会话系统提示词的最前面，保存后下一条消息即生效。'

@@ -1,0 +1,6 @@
+url: https://github.com/ktdhhc/dsh-custom-subagents
+name: ktdhhc/dsh-custom-subagents
+category: workflow
+description:
+  en: 'Reusable subagent definitions managed from a Settings page and dispatched through a single delegate_agent tool; ships with a built-in read-only Explorer preset and a nested-delegation policy toggle.'
+  zh: '用设置页维护可复用的子代理定义，通过统一的 delegate_agent 工具委派；内置只读的 Explorer 预置与嵌套委派开关。'

@@ -1,0 +1,6 @@
+url: https://github.com/hairyf/dsh-office-kit
+name: hairyf/dsh-office-kit
+category: docs
+description:
+  en: 'Creates, reads, and edits DOCX, PDF, PPTX, and XLSX through `/documents`, `/pdf`, `/presentations`, and `/spreadsheets`; renders pages to check layout, and turns selections in the sidebar preview into edit requests for the session. Python 3.10-3.13 required.'
+  zh: '通过 `/documents`、`/pdf`、`/presentations`、`/spreadsheets` 创建、读取与编辑 DOCX、PDF、PPTX、XLSX，把页面渲染出来核对排版，并将侧边栏预览中的选区变成发给会话的修改要求。需 Python 3.10–3.13。'

@@ -1,0 +1,6 @@
+url: https://github.com/laughmaker/dsh-enhance
+name: laughmaker/dsh-enhance
+category: ui
+description:
+  en: 'DeepSeek Harness UI polish: one Markdown style across every renderer, select-text annotations with numbered pins, a sidebar that drags down to 214px and remembers its width, a first launch that fills the screen, sidebar panel and plugin icons collected into one top row of five, and a colour-cycling marker for running sessions.'
+  zh: 'DeepSeek Harness 界面增强：统一各处 Markdown 排版、划词批注（带编号的段落标记）、可拖到 214px 并记住宽度的侧栏、首次启动铺满屏幕、侧栏面板与插件图标合并为顶部一行（每行 5 个），以及运行中会话的彩色状态环。'

@@ -1,0 +1,7 @@
+url: https://github.com/NanQing233/dsh-rimlight
+name: NanQing233/dsh-rimlight
+category: ui
+description:
+  en: Adds a comet-like light band that flows along the window edge of DeepSeek Harness — up to four in parallel, colored by each session's model, reversing direction while waiting for your reply, and returning to the composer or the workspace once the conversation ends.
+  zh: 为你的 DeepSeek Harness 添加沿窗口边缘流动的流星式光带 —— 最多四条并行、按会话模型配色、等待回复时反向流动，在对话结束后自行返回对话框或工作区。
+icon: https://raw.githubusercontent.com/NanQing233/dsh-rimlight/main/docs/icon-256.png

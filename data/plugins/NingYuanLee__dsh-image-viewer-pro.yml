@@ -1,0 +1,7 @@
+url: https://github.com/NingYuanLee/dsh-image-viewer-pro
+name: NingYuanLee/dsh-image-viewer-pro
+category: ui
+description:
+  en: 'In-chat image viewer for the web UI: takes over content image clicks (Markdown images, message attachments rendered as blob: URLs, and read_image results) and opens a dialog with pointer-centered wheel zoom and an editable percentage, drag pan, 90° rotation, download with progress, copy as PNG, open with the default app, and ←/→ gallery browsing across the conversation.'
+  zh: 'Web UI 的聊天图片查看器：接管内容图片点击（Markdown 图、以 blob: URL 渲染的消息附件图、read_image 结果），打开弹层后支持以指针为中心的滚轮缩放与可编辑百分比、拖动平移、90° 旋转、带进度下载、复制为 PNG、用默认应用打开，以及会话内 ←/→ 图集浏览。'
+tarball: https://github.com/NingYuanLee/dsh-image-viewer-pro/releases/latest/download/dsh-image-viewer-pro.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/baddying/dsh-geolibre
+name: baddying/dsh-geolibre
+category: tools
+description:
+  en: 'Render GeoJSON or vector data into an interactive GeoLibre map in a sidebar tab, and let agents operate the live map through tools: layers, styles, view, feature identification, GeoLibre processing algorithms, and the Whitebox toolbox (WASM in the browser).'
+  zh: '把 GeoJSON / 矢量数据渲染成侧边栏「地图」tab 里的交互地图，并让 Agent 通过工具实时操作地图：图层、样式、视图、要素识别、GeoLibre 处理算法与 Whitebox 工具箱（浏览器端 WASM 执行）。'
+tarball: https://github.com/baddying/dsh-geolibre/releases/download/v0.1.0/dsh-geolibre-0.1.0.tgz

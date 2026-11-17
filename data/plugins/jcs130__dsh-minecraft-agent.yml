@@ -1,0 +1,6 @@
+url: https://github.com/jcs130/dsh-minecraft-agent
+name: jcs130/dsh-minecraft-agent
+category: fun
+description:
+  en: 'Connect a DSH Agent to Minecraft Java servers with Mineflayer, a live game view alongside native reasoning and tools, configurable personas, server-scoped notebooks, and optional local survival knowledge retrieval. Reuses the host model; installation does not connect to a game or start inference.'
+  zh: '让 DSH Agent 通过 Mineflayer 进入 Minecraft Java 服务器，在实时游戏画面旁查看原生推理与工具，配置人格、按服务器隔离的笔记及可选本地生存知识检索；复用宿主模型，安装本身不连接游戏或启动推理。'

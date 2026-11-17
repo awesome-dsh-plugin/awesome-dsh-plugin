@@ -1,0 +1,7 @@
+url: https://github.com/ALAMBICCO/dsh-computer-use-en
+name: dsh-computer-use-en
+category: tools
+tarball: https://github.com/ALAMBICCO/dsh-computer-use-en/releases/download/v0.8.1/dsh-computer-use-en-0.8.1.tgz
+description:
+  en: 'English port of Windows Computer Use for DeepSeek Harness: 10 desktop tools (computer, computer_batch, open_application, windows, ui_elements, clipboard, switch_display, app_skill, request_access, list_granted_applications) with UI Automation, per-app access control, English settings UI and mini progress card overlay, Esc pause/resume, and DSH 0.2.1 unpacked koffi.node auto-discovery. Fork of copylee711/dsh-computer-use; it reuses the same plugin id and tool names, so the two cannot be installed together.'
+  zh: Windows 电脑控制插件（英文版）：提供 10 个桌面控制工具（截图、鼠标、键盘、UIA 界面元素读取、剪贴板、窗口管理、应用技能与按应用授权），全英文设置面板与右下角迷你进度卡片浮层，支持按 Esc 暂停或继续，并适配 DSH 0.2.1 的 koffi.node 自动发现。Fork 自 copylee711/dsh-computer-use，沿用同一插件 id 与工具名，两者不能同时安装。

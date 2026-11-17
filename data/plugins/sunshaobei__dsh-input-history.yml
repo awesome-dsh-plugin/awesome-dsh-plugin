@@ -1,0 +1,6 @@
+url: https://github.com/sunshaobei/dsh-input-history
+name: sunshaobei/dsh-input-history
+category: ui
+description:
+  en: Input history switcher for the DSH composer that locally persists every submitted prompt (text plus attachments, max 50) and re-fills the empty composer with ArrowUp/ArrowDown, re-attaching file references and image previews.
+  zh: DSH 输入框历史记录切换器：本地保存每条已提交的提示词（含附件，最多 50 条），空输入框时用上下方向键召回，并自动恢复文件引用与图片预览。

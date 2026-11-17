@@ -1,0 +1,8 @@
+url: https://github.com/HanYu-me/dsh-talk-pages
+name: HanYu-me/dsh-talk-pages
+category: session
+description:
+  en: 'Conversation map for the DeepSeek Harness web GUI: one page per workspace, conversation cards placed freely, links between cards, named and colored boxes that group conversations, high/medium/low priority marks, a picker for which conversations (archived ones included) are on the map, and a file-based API so another conversation can rearrange the map.'
+  zh: '对话地图：每个工作区一页，对话卡片自由摆放，卡片之间可以连线，可命名、着色的框用来把几段对话收在一起，支持高/中/低优先级标记，可以自己选择哪些对话（含已归档）放在地图上，并提供文件接口，让另一个对话来重新排布地图。'
+icon: https://raw.githubusercontent.com/HanYu-me/dsh-talk-pages/main/assets/icon-180.png
+tarball: https://github.com/HanYu-me/dsh-talk-pages/releases/latest/download/dsh-talk-pages.tgz

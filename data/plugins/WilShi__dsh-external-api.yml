@@ -1,0 +1,6 @@
+url: https://github.com/WilShi/dsh-external-api
+name: WilShi/dsh-external-api
+category: dev
+description:
+  en: 'Optional external HTTP API for DSH Desktop, off by default, bound to localhost unless widened, and authenticated with a Bearer token.'
+  zh: DSH Desktop 的可选外部 HTTP API，默认关闭、默认仅监听本机，扩大监听范围时使用 Bearer Token 鉴权。

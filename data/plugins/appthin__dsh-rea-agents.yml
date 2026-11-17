@@ -1,0 +1,6 @@
+url: https://github.com/appthin/dsh-rea-agents
+name: appthin/dsh-rea-agents
+category: tools
+description:
+  en: "Pinned-version REA for DeepSeek Harness: installs rea-agents locally, starts its MCP server from that pinned copy, and upgrades only when you press Update."
+  zh: "为 DeepSeek Harness 固定版本的 REA：把 rea-agents 安装到当前配置档的一个确切版本，从该副本启动其 MCP 服务，只有按下「更新」才升级。"

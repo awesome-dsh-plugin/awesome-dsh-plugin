@@ -1,0 +1,6 @@
+url: https://github.com/Golden2002/dsh-teaching-material-workbench
+name: Golden2002/dsh-teaching-material-workbench
+category: workflow
+description:
+  en: 'Evidence-gated teaching-material workbench with a Web UI: page model, per-page handout and slide editing, PAEG Chinese language checks, layered gates, checks center, version history, handout/deck/storyboard/Manim-script export and rights audit.'
+  zh: '按证据链生产教学物料的可视化工作台：页模型、逐页改讲义与课件、PAEG 中文检查、三层门禁、检查中心、版本回退、讲义/课件/分镜/Manim 脚本导出与版权审计。'

@@ -1,0 +1,6 @@
+url: https://github.com/Astervolans/dsh-opencode-go-usage
+name: Astervolans/dsh-opencode-go-usage
+category: usage
+description:
+  en: OpenCode GO quota widget pinned to the sidebar, with rolling/weekly/monthly usage bars, an elapsed-versus-remaining time bar under each, a same-origin usage proxy, an /opencode-go command, and the runtime x-opencode-session fix for GO gateway chat requests. Fork of yumusb/dsh-opencode-go-usage.
+  zh: 常驻侧边栏的 OpenCode GO 套餐额度组件：滚动/周/月三条用量条、每条下方一条已流逝与剩余时间条、同源用量代理、/opencode-go 命令，以及针对 GO 网关聊天请求的运行时 x-opencode-session 修复。fork 自 yumusb/dsh-opencode-go-usage。

@@ -1,0 +1,6 @@
+url: https://github.com/SZMY-haruhi/dsh-session-plus
+name: SZMY-haruhi/dsh-session-plus
+category: session
+description:
+  en: 'Sidebar archive directory for DSH Web: restore a session to its original workspace slot, delete the session log, or edit-and-branch a user message into a new conversation.'
+  zh: DSH Web 侧栏归档目录：将会话恢复到原工作区槽位、删除会话日志，或从用户消息修改并分支为新会话。

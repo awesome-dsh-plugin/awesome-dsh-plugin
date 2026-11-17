@@ -1,0 +1,6 @@
+url: https://github.com/jwang513/dsh-stuck-monitor
+name: jwang513/dsh-stuck-monitor
+category: session
+description:
+  en: Passive recorder that replays the main agent and every subagent on one timeline, flags repeated calls, loops, recurring errors and truncated output, and writes an AI cause-and-effect review on demand.
+  zh: 被动记录器，把主 agent 与所有 subagent 放在同一条时间线上回放，标出重复调用、循环、反复出现的错误和输出截断，并可按需生成 AI 前因后果复盘。

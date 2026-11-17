@@ -1,0 +1,6 @@
+url: https://github.com/dataelement/dsh-plugin-coaligne
+name: dataelement/dsh-plugin-coaligne
+category: skill
+description:
+  en: Installs the coaligne-workflow skill for CoAligne team collaboration; requires CoAligne Desktop (signed in) to provide the MCP connection - not usable without Desktop.
+  zh: 安装 CoAligne 团队协作的 coaligne-workflow skill；MCP 连接由登录后的 CoAligne Desktop 提供，不安装 Desktop 则无法使用。

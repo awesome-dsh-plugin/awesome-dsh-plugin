@@ -1,0 +1,8 @@
+url: https://github.com/OolongBlackCoffee/dsh-wuwa-pet
+name: OolongBlackCoffee/dsh-wuwa-pet
+category: ui
+description:
+  en: "Puts a WuwaTappo desktop pet's bubbles to work: shows the DeepSeek balance, today's spend and a per-turn cost bubble, and keeps an amber reminder bubble up while the agent waits for an answer or an approval. Talks to the pet over CDP, enabling its debug port with a one-time, revertible byte patch."
+  zh: "把 WuwaTappo 桌宠头顶的气泡用起来：显示 DeepSeek 余额、今日已用与每轮消耗，Agent 等待回答或授权时挂一个琥珀色常驻提醒气泡。通过 CDP 与桌宠通信，首次使用会给 WuwaTappo.exe 打一个可还原的等长字节补丁来开启调试端口。"
+icon: https://raw.githubusercontent.com/OolongBlackCoffee/dsh-wuwa-pet/main/assets/icon-256.png
+tarball: https://github.com/OolongBlackCoffee/dsh-wuwa-pet/releases/download/v1.3.0/dsh-wuwa-pet-1.3.0.tgz

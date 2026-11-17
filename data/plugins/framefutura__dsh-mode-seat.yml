@@ -1,0 +1,6 @@
+url: https://github.com/framefutura/dsh-mode-seat
+name: framefutura/dsh-mode-seat
+category: ui
+description:
+  en: 'Persistent agent-preset (mode) selector docked in the composer input bar: switch the mode for new tasks, and set the new-task default from any running session.'
+  zh: '对话框常驻的 Agent 预设（模式）选择条：新任务直接切换模式，运行中的会话可一键设为新任务默认。'

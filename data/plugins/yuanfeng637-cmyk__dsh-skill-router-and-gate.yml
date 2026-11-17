@@ -1,0 +1,6 @@
+url: https://github.com/yuanfeng637-cmyk/dsh-skill-router-and-gate
+name: yuanfeng637-cmyk/dsh-skill-router-and-gate
+category: skill
+description:
+  en: 'Router and artifact gate for DeepSeek Harness: a per-turn skill router that ranks the live catalog, plus a write gate enforcing read-before-write, dedupe and a four-line audit on every file write.'
+  zh: 'DSH 的技能路由与写入门禁：每回合对现有技能目录排序选择，另有一道写入门禁，强制先读后写、去重，并为每次写文件留下四行审计。'

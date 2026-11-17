@@ -1,0 +1,6 @@
+url: https://github.com/2033453490/dsh-plugin-supervisor
+name: 2033453490/dsh-plugin-supervisor
+category: market
+description:
+  en: 'Sidebar supervisor for installed DeepSeek Harness plugins: health, DSH compatibility, updates, usage frequency, per-plugin token cost, and local version backups with rollback.'
+  zh: 'DSH 已安装插件的侧栏监管面板：集中展示健康状态、DSH 兼容性、更新、使用频率与逐插件 Token 成本，并在更新前自动本地备份、支持回滚。'

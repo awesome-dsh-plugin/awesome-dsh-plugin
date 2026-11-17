@@ -1,0 +1,6 @@
+url: https://github.com/clarag0d/dsh-locale-multilingual
+name: clarag0d/dsh-locale-multilingual
+category: ui
+description:
+  en: 'Adds four extra UI locales to DeepSeek Harness — Traditional Chinese (zh-TW), Japanese, Korean and French. All translation data is bundled, so it works fully offline.'
+  zh: '为 DeepSeek Harness 增加四种界面语言（繁體中文、日本語、한국어、Français），语料随包内置，完全离线。'

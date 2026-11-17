@@ -1,0 +1,9 @@
+# 提交到 awesome-dsh-plugin 的条目：data/plugins/yuna78__dsh-plugin-token-burned.yml
+# 一个文件就是全部投稿，README 是生成物，不要手改。
+url: https://github.com/yuna78/dsh-plugin-token-burned
+name: yuna78/dsh-plugin-token-burned
+category: usage
+description:
+  en: "Floating Token Burn Dock for DSH that aggregates provider usage across every session: the collapsed capsule shows the live tokens/sec rate with an inline 60-second sparkline and today's total, while the expanded panel adds a large live-rate hero, per-model and per-hour breakdowns on a real left axis, and a 30-day commit-style heatmap. The sequence-frame flame burns only while tokens are actually flowing and goes out at rate 0; day and hour buckets follow the browser's UTC offset instead of the host process timezone, and the 31-day record store is written atomically after history load so a restart no longer wipes the numbers."
+  zh: "DSH 的悬浮 Token 燃烧指数 Dock：汇总全部 session 的 provider usage。收起时是一枚胶囊，显示实时燃烧速率（含 token/s 单位）、内嵌近 60 秒速率曲线和今日总 Token；展开后是完整面板，含大号实时速率 Hero、按模型 / 按小时两种粒度、带真实左侧纵轴的柱状图，以及按真实星期对齐的近 30 天热力图。火焰是 16 帧程序生成的序列帧动画，只在真的有 Token 在烧时播放、速率为 0 时熄灭；日 / 小时分桶按浏览器时区（客户端把 UTC 偏移传给 Host），31 天记录先加载再原子落盘，重启不会再把历史覆盖清空。"
+icon: https://raw.githubusercontent.com/yuna78/dsh-plugin-token-burned/main/assets/icon-256.png

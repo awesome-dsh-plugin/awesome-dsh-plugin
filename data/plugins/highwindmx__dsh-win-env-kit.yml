@@ -1,0 +1,6 @@
+url: https://github.com/highwindmx/dsh-win-env-kit
+name: highwindmx/dsh-win-env-kit
+category: skill
+description:
+  en: 'Windows host rules for DSH agents: one skill with nine individually switchable rules (UTF-8/BOM, CRLF-LF per file type, build output, SmartScreen, _scratch isolation, screenshot privacy gate, teardown, shared-doc lock, local trust marks) and six bundled dependency-free scripts.'
+  zh: '为 DSH Agent 提供 Windows 宿主规则：一个九条规则、可逐条开关的技能（UTF-8/BOM、按文件类型的 CRLF/LF、构建产物、SmartScreen、_scratch 隔离、截图隐私门禁、临时产物清理、共享文档锁、本地信任标记），附带六个零依赖脚本。'

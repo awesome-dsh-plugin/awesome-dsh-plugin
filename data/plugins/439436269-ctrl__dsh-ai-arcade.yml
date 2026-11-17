@@ -1,0 +1,6 @@
+url: https://github.com/439436269-ctrl/dsh-ai-arcade
+name: 439436269-ctrl/dsh-ai-arcade
+category: fun
+description:
+  en: 'Two games inside DeepSeek Harness where the model supplies intent and a local engine owns the rules: a twin-brain snake that periodically draws a strategy card, and Chinese chess where the model only comments on a move picked from locally generated legal candidates. Both keep running when the model is slow, offline or out of quota.'
+  zh: '在 DSH 界面里玩游戏，分工是模型负责「想」、本地引擎负责「动」：双脑贪吃蛇会周期性抽一张策略卡；中国象棋里模型只从本地生成的合法候选着法里挑一个并解说。模型变慢、断网或额度用尽时，两个游戏都照常运行。'

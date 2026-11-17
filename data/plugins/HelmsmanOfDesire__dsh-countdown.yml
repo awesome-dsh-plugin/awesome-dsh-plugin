@@ -1,0 +1,8 @@
+url: https://github.com/HelmsmanOfDesire/dsh-countdown
+name: HelmsmanOfDesire/dsh-countdown
+category: ui
+icon: https://raw.githubusercontent.com/HelmsmanOfDesire/dsh-countdown/main/assets/icon-180.png
+tarball: https://github.com/HelmsmanOfDesire/dsh-countdown/releases/download/v1.0.0/HelmsmanOfDesire-dsh-countdown-1.0.0.tgz
+description:
+  en: 'A workday countdown shown as an hourglass on every DSH page. The sand volume follows the elapsed fraction of the current work period; periods can be added, removed and edited, including ones that span midnight, and when the clock is outside every period the panel says so instead of counting.'
+  zh: '常驻 DSH 任意页面的下班倒计时沙漏。沙量按当前时段已过去的比例变化；工作时段可自由增删改，支持跨零点；当前时间不在任何时段内时面板显示未配置，而不是继续倒数。'

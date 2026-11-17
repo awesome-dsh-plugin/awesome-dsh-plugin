@@ -1,0 +1,8 @@
+# 提交到 awesome-dsh-plugin 的条目：data/plugins/yuna78__dsh-plugin-dock.yml
+# 一个文件就是全部投稿，README 是生成物，不要手改。
+url: https://github.com/yuna78/dsh-plugin-dock
+name: yuna78/dsh-plugin-dock
+category: ui
+description:
+  en: 'Collects every DSH plugin sidebar entry into one collapsible floating dock at the corner of the Web GUI, with a switch that hides the original icon column and a deep-linked list of installed plugins.'
+  zh: '把 DSH 左侧栏里所有插件的入口收进一张可折叠的浮动小卡片：顶部开关决定是否收起原侧栏图标列，点一行直达对应面板，另有全部已安装插件的深链列表。'

@@ -1,0 +1,6 @@
+url: https://github.com/liujianqiao701/dsh-cost-today
+name: liujianqiao701/dsh-cost-today
+category: usage
+description:
+  en: Shows today's, this month's and cumulative spend in the sidebar footer, under the message box and in the session header. Spend is metered by the plugin itself from session usage events using official DeepSeek unit prices (peak/off-peak, weekends and holidays treated as off-peak), with local-day aggregation and currency conversion. Also adds a cost_today tool and a /cost command.
+  zh: 在侧边栏底部、输入框下方与会话头部显示今日、本月与累计花费；金额由插件自记 —— 从会话用量事件按 DeepSeek 官方单价逐次累计（含 UTC 峰谷，周末与节假日按平时价），并按本地日汇总、换算币种。另提供 cost_today 工具与 /cost 命令。

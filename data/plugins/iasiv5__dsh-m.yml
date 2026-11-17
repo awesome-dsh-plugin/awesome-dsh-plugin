@@ -1,0 +1,6 @@
+url: https://github.com/iasiv5/dsh-m
+name: iasiv5/dsh-m
+category: market
+description:
+  en: "In-app plugin marketplace for DSH: plugin discovery, install, upgrade, toggle and uninstall in one panel for Web and Desktop host profiles, pairing a community catalog of 4,000+ entries with customizable curated lists, plus eight agent tools and a standalone dshm CLI, without a marketplace server or account."
+  zh: 'DSH 的应用内插件市场：插件发现、安装、升级、开关与卸载一站完成，跟随 Web / Desktop 宿主 profile；4,000+ 条社区目录搭配可自定义精选清单，附 8 个 agent 工具与独立 dshm CLI，无需市场服务器或账号。'

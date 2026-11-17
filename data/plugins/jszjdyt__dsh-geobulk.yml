@@ -1,0 +1,6 @@
+url: https://github.com/jszjdyt/dsh-geobulk
+name: jszjdyt/dsh-geobulk
+category: tools
+description:
+  en: 'GEO and bulk transcriptomics workbench backed by a local Python and R engine: search and download GEO series, import your own counts or TPM matrix, then run QC, filtering, normalisation, batch correction, PCA, differential expression, GO/KEGG/GSEA enrichment, immune infiltration, survival and prognosis, signature mapping onto single-cell data, and circRNA, miRNA, lncRNA, fusion and alternative-splicing modules.'
+  zh: 'GEO 与 bulk 转录组分析工作台，后端为本地 Python 与 R 引擎：检索下载 GEO 系列、导入自有 counts/TPM 矩阵，再做质控、过滤、标准化、去批次、PCA、差异表达、GO/KEGG/GSEA 富集、免疫浸润、生存与预后分析、把分子签名映射到单细胞数据，以及 circRNA、miRNA、lncRNA、融合基因与可变剪接模块。'

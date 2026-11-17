@@ -1,0 +1,6 @@
+url: https://github.com/honlnk/dsh-input-assist
+name: honlnk/dsh-input-assist
+category: ui
+description:
+  en: 'Ghost-text completion for the composer: FIM suggestions stream in inline after a typing pause (SSE, first token rendered immediately), Tab accepts one word at a time and Shift+Tab takes all, in-flight requests are truly cancelled on retyping or Esc. Plus two-layer typo checking: a browser-local dictionary scan (Chinese wrong phrases, English misspellings and proper-noun capitalization, user-defined per-browser entries) with a debounced LLM context pass, underlined in red in the text with per-item navigation and click-to-fix.'
+  zh: '输入框 ghost 补全：停笔后 FIM 建议内联流式渐显（SSE，首 token 即上屏），Tab 逐词采纳、Shift+Tab 全量，重新输入或 Esc 会真正取消在途请求；错别字双层检查：浏览器本地词典扫描（中文错词、英文错拼与专名大小写、本浏览器自定义词条）叠加防抖 LLM 上下文校对，文中红波浪线标注、逐条导航、点击修正。'

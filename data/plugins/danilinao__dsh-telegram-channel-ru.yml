@@ -1,0 +1,6 @@
+url: https://github.com/danilinao/dsh-telegram-channel-ru
+name: danilinao/dsh-telegram-channel-ru
+category: remote
+description:
+  en: Telegram remote for DeepSeek Harness — attach a live web session from your phone and answer its questions there, with a Russian UI. Russian fork of hi-wenw/dsh-telegram-channel (MIT).
+  zh: DeepSeek Harness 的 Telegram 遥控器：在手机上接续正在运行的 Web 会话并回答问题，界面为俄语。hi-wenw/dsh-telegram-channel 的俄语分支（MIT）。

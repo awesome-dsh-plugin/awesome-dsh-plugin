@@ -1,0 +1,6 @@
+url: https://github.com/ryasrk/dsh-awesome-skills
+name: ryasrk/dsh-awesome-skills
+category: skill
+description:
+  en: Installs a skill-router skill that semantically searches a local skill corpus on demand, keeping the corpus out of the per-turn model catalog.
+  zh: 安装一个 skill 路由技能：按需对本地技能库做语义检索，让庞大的技能库不占每轮的模型目录。

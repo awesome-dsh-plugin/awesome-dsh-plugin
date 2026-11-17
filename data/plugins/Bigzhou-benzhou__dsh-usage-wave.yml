@@ -1,0 +1,6 @@
+url: https://github.com/Bigzhou-benzhou/dsh-usage-wave
+name: Bigzhou-benzhou/dsh-usage-wave
+category: usage
+description:
+  en: 'Balance, remaining tokens and token/money usage waves for DeepSeek Harness: a sidebar footer card plus a panel docked in the empty gutter left of the conversation, with 1h/6h/24h/7d stacked token-or-currency waveforms, a live tok/s strip and a per-command cost breakdown.'
+  zh: '余额、剩余 tok 与用量面板：侧栏底部一张余额/剩余 token 卡片，点开是贴在对话栏左侧空白处的用量面板 —— 1h/6h/24h/7d 的 token/金额堆叠波形、实时 tok/s 曲线、逐指令消耗与花费；按最近 24h 实付均价折算「余额还能跑多少 tok」。'

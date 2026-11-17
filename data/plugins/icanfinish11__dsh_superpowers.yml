@@ -1,0 +1,6 @@
+url: https://github.com/icanfinish11/dsh_superpowers
+name: icanfinish11/dsh_superpowers
+category: skill
+description:
+  en: 'Bundles the 14 obra/superpowers skills for dsh from a recorded upstream tag (v6.3.0), re-syncable with drift reporting; the skills trigger automatically.'
+  zh: '把 obra/superpowers 的 14 个技能按已记录的上游 tag（v6.3.0）打包进 dsh，并可用带差异报告的命令重新同步；任务匹配时自动触发。'

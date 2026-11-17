@@ -1,0 +1,6 @@
+url: https://github.com/liushQAQ/dsh-weixin-plus
+name: liushQAQ/dsh-weixin-plus
+category: notify
+description:
+  en: WeChat bridge and native Web settings panel with QR scan login, live token health probe, and credential management.
+  zh: 微信双向通道与原生设置管理面板，支持扫码登录、实时连通性与过期探测、单实例选举锁及凭证管理。

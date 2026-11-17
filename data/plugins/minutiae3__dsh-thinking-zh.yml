@@ -1,0 +1,6 @@
+url: https://github.com/minutiae3/dsh-thinking-zh
+name: minutiae3/dsh-thinking-zh
+category: dev
+description:
+  en: 'Registers system-prompt sections that make the model reason in Simplified or Traditional Chinese, with strict/prefer modes and an optional reply-language policy. Adds a /thinking-zh command for per-session switching. Zero runtime dependencies.'
+  zh: '注册系统提示词段落，让模型的内部思考使用简体或繁体中文，支持严格/宽松两种强度，并可单独约束最终回复语言。提供 /thinking-zh 命令做会话级切换。零运行时依赖。'

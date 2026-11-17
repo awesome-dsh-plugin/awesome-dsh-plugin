@@ -1,0 +1,6 @@
+url: https://github.com/Applepinea/dsh-qq-access
+name: Applepinea/dsh-qq-access
+category: identity
+description:
+  en: 'Personal QQ channel for dsh: managed NapCat with QR login, private/group AI replies with batching and image understanding, local archive with polling backfill, in-group @ and self-recall, QQ Zone guestbook tools, and a sidebar panel. By default any QQ user who DMs the account (or @s it in a group) gets an AI reply; set access.privateMode / groupMode to allowlist to restrict. Owner-only commands stay owner-only.'
+  zh: 把 dsh 接到个人 QQ：NapCat 托管与扫码登录、私聊/群聊 AI 回复（含图片理解）与批量节流、本地归档与轮询补漏、群内 @ 与撤回自己刚发的消息、QQ 空间留言，并带左侧栏管理面板。默认任何 QQ 用户私聊该账号（或在群里 @ 它）都会得到 AI 回复；把 access.privateMode / groupMode 设为 allowlist 才限制。主人专属命令仍只对主人生效。

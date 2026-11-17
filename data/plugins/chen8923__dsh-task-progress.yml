@@ -1,0 +1,6 @@
+url: https://github.com/chen8923/dsh-task-progress
+name: chen8923/dsh-task-progress
+category: ui
+description:
+  en: 'Live progress for long-running DSH tasks: a script appends JSON lines to a per-session progress file, the Web UI draws them in a floating overlay and a right-sidebar tab that also lists background jobs which reported nothing, and `dsh-progress run -- <cmd>` wraps a command that cannot report for itself.'
+  zh: 'DSH 长任务的实时进度：脚本往该会话自己的进度文件追加 JSON 行，不能自报进度的命令可用 `dsh-progress run -- <cmd>` 包装，Web 界面用悬浮窗与右侧栏 tab 展示，未上报的后台任务也会列成任务行。'

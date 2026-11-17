@@ -1,0 +1,7 @@
+url: https://github.com/moyu474/dsh-qqbridge
+name: moyu474/dsh-qqbridge
+category: remote
+description:
+  en: 'Cheap enough to leave running in a QQ group all day. The lite reply mode bypasses the full agent loop and calls chat completions directly: about ¥0.0027 per turn, roughly ¥0.2 for 80 turns a day, around 75x cheaper than a full DSH session. Still includes switchable persona cards, image and video understanding, an auto-tagged image library built from group pictures, and keyword recall over archived chats. One-command SSH deploy with environment checks, credential-safe config generation, systemd units and a watchdog. Bundles a fork of Derpyu520/qq-bridge (MIT); do not deploy it to a host that is already running the upstream bridge.'
+  zh: '便宜到能天天泡在群里：lite 模式绕过完整 agent 会话、直连 chat completions，一轮约 ¥0.0027，一天 80 轮也就 ¥0.2 出头，比走完整 DSH 会话便宜约 75 倍。同时带可切换人格卡、图片与视频理解、自动打标签的群图素材库、群聊冷存储检索；SSH 一键部署到远程主机，含环境体检、不落密钥的配置生成、systemd 单元与看门狗。内置引擎 fork 自 Derpyu520/qq-bridge（MIT）；请勿在已运行上游桥接的主机上重复部署。'
+icon: https://raw.githubusercontent.com/moyu474/dsh-qqbridge/main/assets/icon-180.png

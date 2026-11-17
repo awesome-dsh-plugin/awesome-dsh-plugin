@@ -1,0 +1,7 @@
+url: https://github.com/suifei/dsh-market-lens
+name: suifei/dsh-market-lens
+category: market
+description:
+  en: 'HuanJing Stock Board - a pure "slacking-off" stock watcher: read-only delayed quotes for A-shares, HK and US, a flat dot-matrix LED exchange hall, watchlists, candlestick charts, news, financials and price alerts. For market analysis and trading use professional software - professionals do professional things; this is just a simple way for retail investors to glance at their own stocks.'
+  zh: 寰镜股票看板：纯粹的摸鱼看股票插件——A股/港股/美股只读延迟行情、平面 LED 灯阵证券大厅、自选、K 线、股市资讯、财报与价格提醒。行情分析和交易请用专业软件，专业的人做专业的事；它就是给散户方便看看自己股票情况的插件，极致简单。
+icon: https://raw.githubusercontent.com/suifei/dsh-market-lens/main/assets/icon-180.png

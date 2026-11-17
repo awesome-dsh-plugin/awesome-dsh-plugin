@@ -1,0 +1,6 @@
+url: https://github.com/lanscer/dsh-workspace-drag
+name: lanscer/dsh-workspace-drag
+category: session
+description:
+  en: Drag a conversation onto any workspace group in the sidebar to relocate it between DSH workspaces, updating its cwd, disk location and registry ownership.
+  zh: 把侧边栏中的对话拖到任意工作区分组，即可在 DSH 工作区之间迁移该对话，同步更新其 cwd、磁盘位置与工作区注册表归属。

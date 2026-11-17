@@ -1,0 +1,6 @@
+url: https://github.com/zmh2000829/DSH-agent-bridge
+name: zmh2000829/DSH-agent-bridge
+category: ui
+description:
+  en: Adds a Web composer switch between the native DSH agent and Grok Build, proxying Grok Build sessions and slash commands through ACP.
+  zh: 在 Web 输入框中切换原生 DSH Agent 与 Grok Build，并通过 ACP 代理 Grok Build 会话及斜杠命令。

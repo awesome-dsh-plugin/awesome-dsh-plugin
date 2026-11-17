@@ -1,0 +1,6 @@
+url: https://github.com/LzdqesjG/dsh-your-balance
+name: LzdqesjG/dsh-your-balance
+category: tools
+description:
+  en: 'Adds a balance-checking tool, injects a per-turn DeepSeek account balance snapshot with a low/critical power-saving and stop policy, and provides a settings page for thresholds and FX-linked currency conversion. Requires a signed-in DeepSeek account for balance reads; API-key-only profiles return an unreadable result.'
+  zh: '新增余额查询工具，在每轮对话中注入 DeepSeek 账户余额快照与低余额省电/严重不足停机策略，并提供阈值和汇率联动换算设置页。需要已登录的 DeepSeek 账号才能读取余额，仅配置 API key 的 profile 会返回无法读取。'

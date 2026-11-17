@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/harness-github
+name: 988hj7tczd-oss/harness-github
+category: git
+description:
+  en: "DSH GitHub connector: review PRs, triage issues, debug CI, prepare changes (18 tools, gh-first + REST fallback, approval-gated writes)."
+  zh: "DSH GitHub 连接器:检查 PR、分诊 issue、调试 CI、准备代码变更(18 个工具,gh 优先 + REST 回退,写操作人工审批)。"

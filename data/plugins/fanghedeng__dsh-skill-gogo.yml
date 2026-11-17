@@ -1,0 +1,7 @@
+url: https://github.com/fanghedeng/dsh-skill-gogo
+name: fanghedeng/dsh-skill-gogo
+category: skill
+description:
+  en: 'Skill panel: browse skills by source, group them into colored folders, preview files, export a skill as zip, copy one into the project, rename it on disk, and insert /skill calls from a composer menu.'
+  zh: '技能面板：按来源浏览 skill，用彩色分类文件夹归类，预览文件，导出 zip、复制到项目、在磁盘上重命名，并在输入区菜单里插入 /skill 调用。'
+tarball: https://github.com/fanghedeng/dsh-skill-gogo/releases/latest/download/dsh-skill-gogo.tgz

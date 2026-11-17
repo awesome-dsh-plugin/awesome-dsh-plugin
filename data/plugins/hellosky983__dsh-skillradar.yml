@@ -1,0 +1,6 @@
+url: https://github.com/hellosky983/dsh-skillradar
+name: hellosky983/dsh-skillradar
+category: memory
+description:
+  en: Scans the skills visible to the current session and ranks them by relevance to the recent conversation.
+  zh: 扫描当前会话可见的技能，按与最近对话的相关性排序推荐。

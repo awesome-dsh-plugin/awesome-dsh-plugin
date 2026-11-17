@@ -1,0 +1,6 @@
+url: https://github.com/ruiyukirin/dsh-douyin-oem-touliu-report
+name: ruiyukirin/dsh-douyin-oem-touliu-report
+category: skill
+description:
+  en: 'Douyin local-promotion OEM ad daily/weekly report automation (Author: Kirin): collects 3 data sources (laike leads, plan-level delivery, video analysis) via a one-time Edge login, computes metrics, builds A4-style docx reports, supports free-choice scheduled run times and email notifications.'
+  zh: 抖音本地推 OEM 广告日报/周报自动生成（作者：Kirin）：一次 Edge 登录后自动采集三大数据源（来客客资、计划级投放明细、视频分析），计算指标并生成 A4 排版 docx 报告，支持自由选择定时运行时间和邮件通知。

@@ -1,0 +1,7 @@
+url: https://github.com/yann9/dsh-git-workbench
+name: yann9/dsh-git-workbench
+category: git
+description:
+  en: 'JetBrains-style Git workbench for DSH: hunk and line-level staging, side-by-side diff with word-level highlighting, commit graph and branch operations, three-way conflict merge, and commit messages drafted with the host model.'
+  zh: 'DSH 的 JetBrains 风格 Git 工作台：按块与按行暂存、带词级高亮的并排 diff、提交图与分支操作、三方冲突合并，还能用宿主模型起草提交信息。'
+icon: https://raw.githubusercontent.com/yann9/dsh-git-workbench/main/assets/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/gordan-code/dsh-jev-advisor
+name: gordan-code/dsh-jev-advisor
+category: ui
+description:
+  en: 'Adds human-facing TypeSafe Jev advice to DSH multiple-choice prompts, on demand by default with optional automatic requests, recommendations, probabilities, confidence, close-call warnings, copyable suggestions, one-click adoption, profile-scoped card layouts, temporary decision preferences, optional request previews with common-credential masking, and local health checks with sanitized diagnostic exports.'
+  zh: '为 DSH 选择题提供面向用户的 TypeSafe Jev 第二意见，默认按需询问、可选自动获取，展示推荐、概率和置信度，支持分歧提示、复制建议、一键采纳、按 profile 保存卡片布局、临时决策偏好、可选发送前预览与常见凭证遮盖，并提供本地健康检查和脱敏诊断复制。'

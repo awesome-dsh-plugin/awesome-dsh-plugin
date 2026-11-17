@@ -1,0 +1,6 @@
+url: https://github.com/EliteOtaku/dsh-opendesign-go
+name: EliteOtaku/dsh-opendesign-go
+category: model
+description:
+  en: 'OpenDesign Go provider: 12 subscription models over Chat Completions, the real 5-hour and 7-day quota read from the local OpenDesign app, per-model parameters and switches, and multi-account failover.'
+  zh: 'OpenDesign Go 模型提供方：以 Chat Completions 协议接入 12 个订阅模型，从本机 OpenDesign 客户端读取真实的 5 小时 / 7 天额度，支持每模型参数与开关、多账号失败切换。'

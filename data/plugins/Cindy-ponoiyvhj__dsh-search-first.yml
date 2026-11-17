@@ -1,0 +1,6 @@
+url: https://github.com/Cindy-ponoiyvhj/dsh-search-first
+name: Cindy-ponoiyvhj/dsh-search-first
+category: workflow
+description:
+  en: Adds a system-prompt rule that makes DSH agents look for existing work before they build.
+  zh: 给 DSH 代理加一条系统提示规则，让它动手前先找现成方案，而不是闭门造车。

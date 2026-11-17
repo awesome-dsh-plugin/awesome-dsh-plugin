@@ -1,0 +1,6 @@
+url: https://github.com/1250589385/dsh-quick-send
+name: 1250589385/dsh-quick-send
+category: ui
+description:
+  en: 'Shortcut buttons in the composer row that send preset text into the current conversation in one click. Button label, size, opacity, shape and payload are editable in place, and the whole group moves left or right of the context meter by right-click dragging, persisted in localStorage. The group takes only the width it needs, so the context meter and the usage area stay clickable.'
+  zh: '在输入框一行放一组快捷按钮，点一下把预设文字发进当前对话。每个按钮的名称、大小、透明度、形状与发送内容都可就地编辑；右键拖动整组可在上下文进度左右换位，选择保存在本地。按钮组只占自身宽度，不会挤压上下文进度与用量区域。'

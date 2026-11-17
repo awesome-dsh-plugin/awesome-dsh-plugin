@@ -1,0 +1,7 @@
+url: https://github.com/nerv-base/dsh-theme-eva
+name: nerv-base/dsh-theme-eva
+category: theme
+description:
+  en: 'EVA Unit-02 theme with an entry-plug boot cinematic, a context-based sync meter, and configurable dark interface styling.'
+  zh: 'EVA 弐号机主题，提供插入栓启动演出、基于上下文余量的同步率表和可配置的深色界面样式。'
+tarball: https://github.com/nerv-base/dsh-theme-eva/releases/download/v0.1.0/dsh-theme-eva-0.1.0.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/leoriczhao/dsh-session-butler
+name: leoriczhao/dsh-session-butler
+category: session
+description:
+  en: Session management for DeepSeek Harness — an archived-chat list in Settings, permanent deletion from the session menu, and agent tools to list, inspect, create and fork sessions.
+  zh: DeepSeek Harness 的会话管家：设置里给已归档会话一个列表，会话菜单里给一个真正的删除，并提供列出、查看、新建、分叉会话的模型工具。

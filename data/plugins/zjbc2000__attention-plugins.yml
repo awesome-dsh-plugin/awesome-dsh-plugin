@@ -1,0 +1,8 @@
+url: https://github.com/zjbc2000/attention-plugins
+name: zjbc2000/attention-plugins
+category: notify
+icon: https://raw.githubusercontent.com/zjbc2000/attention-plugins/main/assets/icon.png
+tarball: https://github.com/zjbc2000/attention-plugins/releases/download/v0.2.2/attention-plugins-0.2.2.tgz
+description:
+  en: 'Task-tiered session notifications for DSH: marked main-line sessions alert as they finish, other sessions batch into one summary, plus balanced and silent modes; per-event sounds or uploaded audio, per-session mute, click-through notifications, and an option to wait for subagents.'
+  zh: "面向 DSH 的任务分级会话通知：标记的主线任务完成或失败时立即提醒，其余会话汇总为一声；另有逐条提醒的均衡模式与完全不响的静音模式（提问与权限请求仍提醒）。支持每类事件独立音效或自定义音频、按会话静音、点击通知直达会话，以及等待子代理结束再提醒。"

@@ -1,0 +1,6 @@
+url: https://github.com/Fishsb/dsh-voice-prompt-enhancer
+name: Fishsb/dsh-voice-prompt-enhancer
+category: voice
+description:
+  en: 'Rewrites a composer draft into a clearer, structured prompt (5 modes, model fallback chain, optional multi-round memory) and adds stop-on-silence, hotkey and filler-word cleanup to DSH voice input; transcription stays with the official speechToText, the plugin ships no engine.'
+  zh: '把输入框草稿改写为更清晰、结构化的提示词（5 模式·模型回退链·可选多轮记忆），并为 DSH 语音输入加上说完自动停、热键与口水词清理；识别仍由官方 speechToText 提供，插件不自带引擎。'

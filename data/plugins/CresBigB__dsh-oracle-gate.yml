@@ -1,0 +1,6 @@
+url: https://github.com/CresBigB/dsh-oracle-gate
+name: CresBigB/dsh-oracle-gate
+category: dev
+description:
+  en: 'Acceptance gate for DSH: freeze the acceptance criteria into an oracle ledger before work starts, then honor only real execution receipts — files changed after freezing are refused outright, and a failing hard gate overrides any human pass.'
+  zh: 'DSH 验收闸门：动手前把验收判据冻结成 oracle 账本，之后只认真实执行回执——冻结后被改过的文件直接拒绝执行，硬门失败时人工放行也无效。'

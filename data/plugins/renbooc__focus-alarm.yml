@@ -1,0 +1,6 @@
+url: https://github.com/renbooc/focus-alarm
+name: renbooc/focus-alarm
+category: ui
+description:
+  en: A draggable floating card for the DeepSeek Harness Web UI that combines a Pomodoro timer, an off-work countdown, and focus statistics. Each launch opens on a fresh focus phase; phase completion triggers a chime, card shake, and particle burst. Includes today's pomodoros, focus minutes, streak and a 7-day chart, rhythm reminders for wrapping up and eye rest, optional system notifications, tab-title timer, auto-start, +5 minutes, and a custom long-break interval.
+  zh: DeepSeek Harness Web 的悬浮卡片，集成番茄钟、下班倒计时与专注统计。每次启动默认进入专注时段；阶段结束有提示音、卡片抖动与粒子动画。含今日番茄数、专注时长、连续天数与近 7 天柱状图，下班收尾与护眼节律提醒，并可选系统通知、标签页倒计时、自动开始下一阶段、+5 分钟与自定义长休轮数。

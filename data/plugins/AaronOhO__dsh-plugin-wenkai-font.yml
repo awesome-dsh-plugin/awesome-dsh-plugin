@@ -1,0 +1,7 @@
+url: https://github.com/AaronOhO/dsh-plugin-wenkai-font
+name: AaronOhO/dsh-plugin-wenkai-font
+category: ui
+icon: https://raw.githubusercontent.com/AaronOhO/dsh-plugin-wenkai-font/main/assets/icon-180.png
+description:
+  en: 'Bundled LXGW WenKai (霞鹜文楷) typeface plugin: switches the Web GUI interface and conversation text to the kai-style font with no configuration, using a system-installed copy when present and otherwise serving the packaged offline web font.'
+  zh: '内置霞鹜文楷（LXGW WenKai）字体的插件：零配置把网页界面与对话文字切换为楷体风格，优先使用系统已安装字体，未安装时按需加载包内离线字体。'

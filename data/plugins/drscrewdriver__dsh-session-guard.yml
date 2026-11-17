@@ -1,0 +1,6 @@
+url: https://github.com/drscrewdriver/dsh-session-guard
+name: drscrewdriver/dsh-session-guard
+category: session
+description:
+  en: 'Peak-hour auto session gate: weekend mode + global peak auto-pause + session-level freeze/resume + backend auto-retry, auto-resume on off-peak.'
+  zh: 高峰自动会话门：周末模式 + 高峰自动暂停（全局）+ 会话级冻结/恢复 + 后端自动重试；错峰自动续跑。

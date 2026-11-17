@@ -1,0 +1,7 @@
+url: https://github.com/gznofeng/dsh-session-prompts
+name: gznofeng/dsh-session-prompts
+category: tools
+description:
+  en: 'Session-scoped system prompts: maintain a library of prompts in a settings page and tick them above the composer to inject into the current session only (subagent child sessions inherit via parentSession; empty tick list opts out), plus quick prompts that paste their text into the composer draft on click.'
+  zh: '会话级系统提示词：在设置页维护一组提示词，在输入框上方按会话勾选注入（子会话沿 parentSession 继承，空勾选表明确退出），另有一类快速提示词，点击即把正文填入输入框草稿。'
+icon: https://raw.githubusercontent.com/gznofeng/dsh-session-prompts/main/assets/icon-180.png

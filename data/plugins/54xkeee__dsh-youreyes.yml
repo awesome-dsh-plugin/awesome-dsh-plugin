@@ -1,0 +1,6 @@
+url: https://github.com/54xkeee/dsh-youreyes
+name: 54xkeee/dsh-youreyes
+category: vision
+description:
+  en: 'Vision toolkit for text-only DeepSeek: model-invokable `vision` tool, wrapper adapters for deepseek/opencode-go (v4 flash/pro), Antigravity IDE quota (default, flash/pro) / any OpenAI-compatible VLM / Gemini / local Ollama channels, evidence memory with compaction rehydration, content-hash cache, and a bilingual client panel.'
+  zh: 纯文本 DeepSeek 的识图工具包：模型可主动调用的 `vision` 工具、deepseek/opencode-go 包装适配器（v4 flash/pro）、反重力额度（默认，flash/pro）/ 任意 OpenAI 兼容 VLM / Gemini / 本地 Ollama 通道、证据记忆与会话压缩恢复、内容哈希缓存、双语客户端面板。

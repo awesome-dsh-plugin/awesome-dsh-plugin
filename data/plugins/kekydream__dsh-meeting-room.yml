@@ -1,0 +1,6 @@
+url: https://github.com/kekydream/dsh-meeting-room
+name: kekydream/dsh-meeting-room
+category: voice
+description:
+  zh: "会议记录插件：一个会话对应一场会议，本机离线转写与发言人分离；要点、工作安排、手写笔记、复盘与月度评分都在面板里完成。可导出 SRT／Markdown／Word，也能打成「会议工程包」（zip）在另一台 dsh 导入；已确认的工作安排按设置一键推送到钉钉／企业微信。识别模型可更换（支持从本地文件导入更强的模型），云端识别默认关闭、未同意即零请求。导出 Word 需 Python 与 python-docx；首次使用会下载识别模型（28 MB 或 77 MB）。"
+  en: "Meeting notes for dsh: one meeting per conversation, transcribed and speaker-separated on the machine itself, with points, assignments, handwritten notes, reviews and monthly scores in the same panel. Exports SRT/Markdown/Word and packs a meeting into a portable zip another dsh can import; confirmed assignments go to DingTalk/WeCom in one click, following your robot settings. Recognition models are swappable (a stronger local model can be imported from a file), and cloud recognition is off by default with no request made before consent. Word export needs Python and python-docx; the first run downloads a recognition model (28 or 77 MB)."

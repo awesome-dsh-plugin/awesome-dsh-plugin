@@ -1,0 +1,6 @@
+url: https://github.com/Dantwz7/dsh-doc-router
+name: Dantwz7/dsh-doc-router
+category: docs
+description:
+  en: 'Document intake for agents: doc_route sniffs a file''s real format by magic bytes and measures a PDF''s text layer and page column layout before any conversion, and pdf_markdown converts PDFs to Markdown in column reading order with PyMuPDF. The PDF path needs a Python 3 interpreter with PyMuPDF.'
+  zh: '面向 agent 的文档入口：doc_route 先按魔数嗅探真实格式，并测量 PDF 的文本层与分栏版面，再给出该走的提取管线；pdf_markdown 用 PyMuPDF 按分栏阅读顺序把 PDF 转成 Markdown。PDF 路径需要带 PyMuPDF 的 Python 3 解释器。'

@@ -1,0 +1,6 @@
+url: https://github.com/frozo-ai/dsh-worlds
+name: frozo-ai/dsh-worlds
+category: dev
+description:
+  en: Runs the agent's filesystem, bash and PTY terminals inside a Docker container by providing the `ctx.fs` and `ctx.subprocess` seams, so cwd, environment and background processes survive a harness restart.
+  zh: 通过提供 `ctx.fs` 与 `ctx.subprocess` 接缝，把 agent 的文件系统、bash 与 PTY 终端跑在 Docker 容器里；工作目录、环境变量与后台进程可在 harness 重启后存活。

@@ -1,0 +1,6 @@
+url: https://github.com/liuweibing7/dsh-plugin-inspector
+name: liuweibing7/dsh-plugin-inspector
+category: dev
+description:
+  en: Inspects a plugin's declarative patch entries and installed code files on its Plugins page.
+  zh: 在插件详情页查看插件的声明式 patch 与安装后的代码文件。

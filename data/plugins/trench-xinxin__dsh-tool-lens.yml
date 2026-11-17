@@ -1,0 +1,6 @@
+url: https://github.com/trench-xinxin/dsh-tool-lens
+name: trench-xinxin/dsh-tool-lens
+category: tools
+description:
+  en: 'Deterministic AST code graph and architecture intelligence tool for call hierarchies, blast radius, circular dependencies, domain slices, and full-stack API contracts.'
+  zh: '确定性 AST 代码图谱与架构治理分析工具：调用链消歧、重构爆炸半径、循环依赖审计、领域切片与全栈 API 契约追踪。'

@@ -1,0 +1,6 @@
+url: https://github.com/JingYu-er/dsh-rst
+name: JingYu-er/dsh-rst
+category: tools
+description:
+  en: 'Restart DSH with one /rst command: an external launcher shuts down the current process and starts a new one, then a receipt is written back to the session that issued the restart. Windows 10/11 only (relies on tasklist/taskkill).'
+  zh: '用 /rst 一条命令重启 DSH：由进程外启动器关掉当前进程并拉起新的，重启完成后把回执写回你发起重启的那条会话。仅支持 Windows 10/11（依赖 tasklist/taskkill）。'

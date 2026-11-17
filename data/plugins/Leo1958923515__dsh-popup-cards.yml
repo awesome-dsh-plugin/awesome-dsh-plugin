@@ -1,0 +1,7 @@
+url: https://github.com/Leo1958923515/dsh-popup-cards
+name: Leo1958923515/dsh-popup-cards
+category: notify
+description:
+  en: 'Bottom-right DSH-styled Windows cards for approvals, questions, plan reviews and finished runs: click to jump back to the app that started the session (DSH by default), close with the × button, or let it close when you return.'
+  zh: '工具请求审批、模型提问、计划待审阅或运行结束时，在右下角弹出 DSH 风格置顶卡片；点一下切回发起该会话的应用（默认 DSH），点 × 关闭，或切回时自动关闭。'
+icon: https://raw.githubusercontent.com/Leo1958923515/dsh-popup-cards/main/assets/icon-180.png

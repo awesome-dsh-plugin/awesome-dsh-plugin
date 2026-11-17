@@ -1,0 +1,6 @@
+url: https://github.com/bbtssama/dsh-webui-mobile
+name: bbtssama/dsh-webui-mobile
+category: remote
+description:
+  en: 'Mobile web shell for the DSH Web GUI: overlay drawers, draggable FAB, mobile composer fixes, and a floating image-upload button pinned above the composer (native gallery/camera, integrated with the validated add-images pipeline), zero desktop regression. Published on npm as dsh-webui-mobile.'
+  zh: 'DSH Web 界面的移动端外壳：抽屉式侧栏、可拖拽悬浮按钮、移动端输入框修复，以及悬浮在输入框上方的图片上传按钮（原生相册/拍照，走加图校验管线），桌面端零影响。已发布到 npm（dsh-webui-mobile）。'

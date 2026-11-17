@@ -1,0 +1,6 @@
+url: https://github.com/A8Chann/dsh-pet-live2d/tree/main/dsh-live2d-pet
+name: "A8Chann/dsh-pet-live2d#dsh-live2d-pet"
+category: fun
+description:
+  en: A draggable Live2D desktop pet for the DSH web GUI that tracks the pointer, changes motion, expression and outfit with the session phase, and opens a right-click control panel.
+  zh: DSH Web GUI 的 Live2D 桌宠：可拖动、跟随鼠标，跟着会话状态换动作、表情与装扮，右键呼出控制面板。

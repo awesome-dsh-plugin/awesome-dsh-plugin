@@ -1,0 +1,6 @@
+url: https://github.com/lavapapa/dsh-composer-layout
+name: lavapapa/dsh-composer-layout
+category: ui
+description:
+  en: 'Web Composer placement for long prompts: keep it at the bottom or dock it in a resizable right column beside a long answer.'
+  zh: 面向长提示词的 Web Composer 布局：输入框可保留在底部，也可停靠到可调宽度的右栏，与长回答并排阅读和写作。

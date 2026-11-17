@@ -1,0 +1,7 @@
+url: https://github.com/camik86/dsh-tarot-page
+tarball: https://github.com/camik86/dsh-tarot-page/releases/latest/download/dsh-tarot-page.tgz
+name: camik86/dsh-tarot-page
+category: fun
+description:
+  en: Tarot page for the DSH Web GUI with 78 public-domain Rider-Waite-Smith cards, four spreads (single, three-card, relationship, Celtic cross), shuffle and deal animation, local reading history, and an in-page AI reading streamed from the model configured in the user's DSH profile. Registers no model-facing tools, skills, slash commands, or system prompts.
+  zh: "DSH Web GUI 的塔罗牌整页：78 张公版 Rider-Waite-Smith 牌面、四种牌阵（单张、三张、关系、凯尔特十字）、洗牌与翻牌动画、本地历史记录，以及只存在于页面内的 AI 解读（走用户 DSH 配置的模型）。不注册任何面向模型的工具、skill、slash 命令或系统提示。"

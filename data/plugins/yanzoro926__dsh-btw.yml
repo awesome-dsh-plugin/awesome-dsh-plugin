@@ -1,0 +1,6 @@
+url: https://github.com/yanzoro926/dsh-btw
+name: yanzoro926/dsh-btw
+category: session
+description:
+  en: One-off btw side questions that inherit the current DSH session, with selectable context ranges and an optional compressed summary you review before sending it into the main session.
+  zh: 在当前 DSH 会话里发起一次性 btw 旁问，可选上下文范围；旁问默认不写入会话，可把压缩摘要预览确认后送入主会话。

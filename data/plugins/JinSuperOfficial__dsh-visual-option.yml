@@ -1,0 +1,6 @@
+url: https://github.com/JinSuperOfficial/dsh-visual-option
+name: JinSuperOfficial/dsh-visual-option
+category: ui
+description:
+  en: 'Renders ask-user-question as a previewable choice dialog: URL, local-path and inline HTML/PHP previews, per-option notes and hints, a quiz mode that only shows right/wrong scores, and six UI locales.'
+  zh: '把 ask-user-question 变成可预览的选择弹窗：支持 URL、本地路径、内联 HTML/PHP 预览，选项可写备注与查看提示，测验模式只显示对错和得分，界面支持六种语言。'

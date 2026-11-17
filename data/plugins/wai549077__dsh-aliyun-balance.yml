@@ -1,0 +1,6 @@
+url: https://github.com/wai549077/dsh-aliyun-balance
+name: wai549077/dsh-aliyun-balance
+category: usage
+description:
+  en: 'Floating one-line widget showing how much Alibaba Cloud credit is left (voucher balance + account balance), with voucher face value, used amount and earliest expiry on hover. Read-only BSS queries, no spend tracking.'
+  zh: '界面悬浮一行显示「还能花的钱」= 阿里云代金券余额 + 账户余额；悬停看券面值、已用与最早失效时间。只读 BSS 存量，不做消费统计。'

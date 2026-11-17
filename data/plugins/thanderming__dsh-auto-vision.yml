@@ -1,0 +1,6 @@
+url: https://github.com/thanderming/dsh-auto-vision
+name: thanderming/dsh-auto-vision
+category: vision
+description:
+  en: Reads images with a vision model on the same provider when the selected model cannot see them, and passes that description to the text model.
+  zh: 主模型不能识别图片时，自动改用同一 API 下可识别图片的模型读取图片，再把描述反馈给主模型。

@@ -1,0 +1,6 @@
+url: https://github.com/MichengAI/dsh-codex-ui
+name: MichengAI/dsh-codex-ui
+category: ui
+description:
+  en: Rebuilds the DeepSeek Harness web sidebar, workspace tree, search, and turn navigation in a Codex-style layout.
+  zh: 为 DeepSeek Harness 网页端重构 Codex 风格侧栏、工作区会话树、全局搜索和轮次导航。

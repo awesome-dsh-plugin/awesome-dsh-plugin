@@ -1,0 +1,6 @@
+url: https://github.com/ITDanZF/dsh-hr-plugin
+name: ITDanZF/dsh-hr-plugin
+category: docs
+description:
+  en: Provides a structured, per-session resume editor for DeepSeek Harness with shared chat and sidebar edits, A4 preview, and PDF export.
+  zh: 面向 DeepSeek Harness 的结构化简历编辑器；每个会话独立保存草稿，对话与侧栏共用内容，并提供 A4 预览和 PDF 导出。

@@ -1,0 +1,7 @@
+url: https://github.com/MyPanda-Hash/CHENGXIAO
+name: MyPanda-Hash/CHENGXIAO
+category: remote
+tarball: https://github.com/MyPanda-Hash/CHENGXIAO/releases/latest/download/dsh-peer-mcp.tgz
+description:
+  en: 'Pairs two DeepSeek Harness machines with a one-time code - directly on a LAN, or across networks through an end-to-end-encrypted relay with a zero-config official default - so one agent can run tasks and exchange files on the other while each machine keeps its own files in place.'
+  zh: '用一次性配对码把两台 DeepSeek Harness 机器连起来——局域网直连，或跨网络经端到端加密中继（默认自带官方中继，零配置）——让一边的 agent 在另一边执行任务、交换文件，各自文件都留在本机。'

@@ -1,0 +1,7 @@
+url: https://github.com/ly13277/DshRmbCostPer1Talk
+name: ly13277/DshRmbCostPer1Talk
+category: usage
+description:
+  en: "Shows the cost of the current session's latest exchange, meaning everything since your last message, as a CNY amount to the right of the permission control in the composer, calculated from provider-reported token usage at DeepSeek's peak and off-peak prices."
+  zh: "在输入框「权限」按钮右侧显示当前会话最新一次交互（自你上次发消息起）花了多少钱，按 DeepSeek 官方峰谷价由提供方上报的 token 用量折算成人民币。"
+icon: https://raw.githubusercontent.com/ly13277/DshRmbCostPer1Talk/main/assets/icon-180.png

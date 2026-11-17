@@ -1,0 +1,6 @@
+url: https://github.com/gbeta/dsh-token-speed
+name: gbeta/dsh-token-speed
+category: ui
+description:
+  en: Draggable ring gauge showing live model output speed (tok/s) with an expandable per-step detail panel (exact speed, TTFT, cache-hit rate, cache read/write, reasoning and input tokens, model, cumulative tokens).
+  zh: 可拖拽环形表盘，实时显示模型输出速度（tok/s），点击展开每步详情（精确速度、TTFT、缓存命中率、缓存读写、推理/输入 token、模型、累计 token）。

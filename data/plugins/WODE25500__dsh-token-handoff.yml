@@ -1,0 +1,6 @@
+url: https://github.com/WODE25500/dsh-token-handoff
+name: WODE25500/dsh-token-handoff
+category: skill
+description:
+  en: "Session context handoff for DeepSeek Harness — stop re-reading and re-deriving context every session. A single skill (layer ①) that keeps the next session warm."
+  zh: "DeepSeek Harness 的会话上下文交接——不再每会话重读/重建上下文。单个 skill(layer ①),让下一会话暖启动。"

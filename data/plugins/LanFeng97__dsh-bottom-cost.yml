@@ -1,0 +1,6 @@
+url: https://github.com/LanFeng97/dsh-bottom-cost
+name: LanFeng97/dsh-bottom-cost
+category: usage
+description:
+  en: 'Per-turn session cost chip in the composer stats row: each turn''s spend with the model it used, the conversation total split into cache-hit and cache-miss (CNY), priced from an official price table that refreshes on demand.'
+  zh: '输入框下方统计栏里的会话费用胶囊：逐轮列出每轮花费与所用模型，并把总额拆成缓存命中与未命中两笔（CNY）；价目表按需从官方定价页刷新。'

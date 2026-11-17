@@ -1,0 +1,6 @@
+url: https://github.com/NoneadChina/dsh-nonead-prompt-recall
+name: NoneadChina/dsh-nonead-prompt-recall
+category: ui
+description:
+  en: "Shell-style prompt history in the DSH composer: ↑ in an empty composer recalls the previous prompt and keeps walking back, ↓ walks forward to the empty draft; history is kept per workspace, persisted across restarts and records only human input, while typing or editing a draft returns ↑/↓ to normal caret movement. Adds a Settings page to export, import and clear the history."
+  zh: "在 DSH 输入框里提供 shell 风格的提示词历史：空输入框按 ↑ 取回上一条并继续向前翻，按 ↓ 向后回到空草稿；历史按工作区隔离、落盘并在重启后保留，且只记录人工输入，一旦手动输入或编辑草稿，↑/↓ 就恢复为正常的光标移动。另提供设置页可导出、导入和清空历史。"

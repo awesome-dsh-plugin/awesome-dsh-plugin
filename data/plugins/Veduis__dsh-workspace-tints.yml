@@ -1,0 +1,7 @@
+url: https://github.com/Veduis/dsh-workspace-tints
+name: Veduis/dsh-workspace-tints
+category: ui
+description:
+  en: Gives each Workspace a stable tint from a warm-to-cool ramp, sets its name as a section heading above indented Sessions, and turns a finished unread chat's row green.
+  zh: 为每个工作区分配稳定的暖到冷色调，把工作区名设为分组标题并把会话缩进其下，同时在会话完成未读时整行染绿。
+icon: https://raw.githubusercontent.com/Veduis/dsh-workspace-tints/main/assets/icon-180.png

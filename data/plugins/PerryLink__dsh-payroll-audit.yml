@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-payroll-audit
+name: PerryLink/dsh-payroll-audit
+category: tools
+description:
+  en: 'Checks a payroll sheet against published social-insurance, housing-fund and individual-income-tax parameters, with pass, pass_with_gaps, review and fail outcomes and parameters that carry their own review date.'
+  zh: '按公开的社保、公积金与个人所得税参数核对工资表，结果分为 pass、pass_with_gaps、review、fail 四档；参数本身带复核日期。'

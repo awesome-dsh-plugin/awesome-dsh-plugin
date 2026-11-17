@@ -1,0 +1,6 @@
+url: https://github.com/AgentDebugX/AgentDebugX/tree/main/integrations/dsh-agentdebugx
+name: AgentDebugX/AgentDebugX#dsh-agentdebugx
+category: dev
+description:
+  en: Diagnoses current and saved DeepSeek Harness trajectories with AgentDebugX and opens structured reports in its dashboard.
+  zh: 使用 AgentDebugX 诊断当前及已保存的 DeepSeek Harness 轨迹，并在其仪表盘中打开结构化报告。

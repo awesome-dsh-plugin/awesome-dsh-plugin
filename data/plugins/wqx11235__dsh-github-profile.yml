@@ -1,0 +1,6 @@
+url: https://github.com/wqx11235/dsh-github-profile
+name: wqx11235/dsh-github-profile
+category: ui
+description:
+  en: Read-only GitHub profile page inside DSH — repo cards with language and stars, plus a one-year contribution heatmap.
+  zh: 在 DSH 侧栏里看 GitHub 档案：仓库卡（语言与星标）与一年贡献热力图，只读公开信息。

@@ -1,0 +1,7 @@
+url: https://github.com/JularDepick/dsh-question-timeout-protection
+name: JularDepick/dsh-question-timeout-protection
+category: tools
+description:
+  en: 'A plugin for dsh: once ask_user_question times out, the content you entered will remain in the UI or model context.'
+  zh: 'dsh提问超时保护插件: 一旦模型提问超时,将你的回答草稿保留在UI或上下文中,而不是直接丢弃。'
+tarball: https://github.com/JularDepick/dsh-question-timeout-protection/releases/latest/download/dsh-question-timeout-protection-latest.tgz

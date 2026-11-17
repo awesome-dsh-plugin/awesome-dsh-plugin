@@ -1,0 +1,6 @@
+url: https://github.com/ltl0312/my-dsh-plugins/tree/main/packages/tlmemory
+name: ltl0312/my-dsh-plugins#tlmemory
+category: memory
+description:
+  zh: '跨会话、跨工程的长期记忆：turn/end 时非阻塞派发无感静默沉淀，写入本机 SQLite（FTS5 trigram 全文索引，含增删改同步触发器）供后续回合召回；记忆按项目作用域与全局树分层存储，并自带内嵌 Web 看板（插件自身起 HTTP 服务，非独立进程）用于浏览、图谱与受控删除。'
+  en: 'Cross-session and cross-project long-term memory: a non-blocking silent sedimentation dispatch on turn/end writes into a local SQLite store (FTS5 trigram full-text index with insert/update/delete sync triggers) that later turns recall from; entries are scoped per project alongside a global tree, and the plugin ships its own embedded web dashboard (it starts the HTTP server itself, no separate process) for browsing, graphing and controlled deletion.'

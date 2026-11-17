@@ -1,0 +1,7 @@
+url: https://github.com/lengmodkx/dsh-mimo-tts
+name: lengmodkx/dsh-mimo-tts
+category: voice
+description:
+  en: MiMo voice for DeepSeek Harness — reads each finished answer aloud, turns composer dictation into text, and offers nine built-in voices plus a cloned-voice slot.
+  zh: 给 DeepSeek Harness 的小米 MiMo 语音插件：把每段回答念出来、把输入框里的口述变成文字，带 9 个内置音色和一个克隆音色槽位。
+tarball: https://github.com/lengmodkx/dsh-mimo-tts/releases/latest/download/dsh-mimo-tts.tgz

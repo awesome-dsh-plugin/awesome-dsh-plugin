@@ -1,0 +1,6 @@
+url: https://github.com/Evantianyn123/docsuite
+name: Evantianyn123/docsuite
+category: docs
+description:
+  en: 'Document workspace that turns equipment manuals and past reports into proposals, research reports and bid files, then exports Markdown, Word, HTML, PDF and PPTX. Word/PPTX export and document parsing need Python 3 with pypdf, python-docx and python-pptx (installed from Settings), and PDF export needs Chrome or Edge at the standard Windows paths.'
+  zh: '文档工坊：把设备说明书与历史报告变成技术方案、调研报告和投标文件，支持导出 Markdown / Word / HTML / PDF / PPTX。Word / PPTX 导出与文档解析需要 Python 3 及 pypdf、python-docx、python-pptx（在设置页初始化），PDF 导出需要标准 Windows 路径下的 Chrome 或 Edge。'

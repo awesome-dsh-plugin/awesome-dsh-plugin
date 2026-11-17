@@ -1,0 +1,6 @@
+url: https://github.com/cyanfish-x/dsh-live2d-pets
+name: cyanfish-x/dsh-live2d-pets
+category: fun
+description:
+  en: 'Live2D desk pet overlay for the DSH web GUI: mirrors agent state (thinking, idle, error, done, awaiting approval) with motions and speech bubbles, per-part touch reactions, drag-to-dock, switchable personas, and custom models via URL or local path.'
+  zh: 'DSH Web GUI 的 Live2D 桌宠悬浮层：镜像 agent 思考/空闲/出错/完成/待审批状态，配动画与气泡，支持分部位触摸反应、拖动停靠、切换人设，以及通过 URL 或本地路径加载自定义模型。'

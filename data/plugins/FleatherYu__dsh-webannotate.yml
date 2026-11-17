@@ -1,0 +1,6 @@
+url: https://github.com/FleatherYu/dsh-webannotate
+name: FleatherYu/dsh-webannotate
+category: browser
+description:
+  en: 'Annotates pages inside the built-in browser: click an element, write a comment, and send the batch to the conversation as one message, with a cropped screenshot per note where the element can be located.'
+  zh: '在内置浏览器里给网页元素写批注，整批发进对话；每条批注附一张能定位到元素的裁剪截图。'

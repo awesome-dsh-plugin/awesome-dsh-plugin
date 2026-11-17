@@ -1,0 +1,6 @@
+url: https://github.com/pythoner1984/dsh-wechat-todo
+name: pythoner1984/dsh-wechat-todo
+category: workflow
+description:
+  en: 'Turns your local WeChat group chats into a followable todo board: a three-column kanban (todo / doing / needs you) with LLM summaries, automatic flagging of messages that @-mention or reply to you, drag-to-change status, and local-only storage. Needs a local Python 3 with sqlcipher3 and zstandard, plus the existing rion-wechat-reader config.json and keys.json for the WeChat databases; the plugin does not extract the keys itself, and summaries send the quoted chat text to the model you choose.'
+  zh: '把本地微信群聊变成可跟进的待办看板：三栏（待办 / 进行中 / 需要你）配模型总结、自动标出 @ 你或回复你的消息、拖拽改状态、仅本地存储。需本机 Python 3 并装好 sqlcipher3 与 zstandard，且已有 rion-wechat-reader 的 config.json 与 keys.json（插件不负责取密钥）；总结时会把群聊原文发给所选模型。'

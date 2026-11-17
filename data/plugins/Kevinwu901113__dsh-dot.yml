@@ -1,0 +1,6 @@
+url: https://github.com/Kevinwu901113/dsh-dot
+name: Kevinwu901113/dsh-dot
+category: fun
+description:
+  zh: "住在自己手机上的角色：插件自动安装并运行她的 Android 手机，任何 App 的新通知都能叫醒她；她自己装 App，逛小黑盒、B 站等并点赞评论；有自己的 QQ（NapCat / SnowLuma，分条回复、发表情包）；记忆含人物卡、每天 23:30 的日记和叫醒前的自动召回（默认本机 embedding，可切 SiliconFlow / DashScope）；两次对话之间的生活（幕间，按 HDS-Interlude）；可选 microVM 电脑带审批闸门。右侧栏有手机画面、虚拟机画面和 dot 面板；个人设置集中在 ~/.dsh/dsh-dot.json，六个组件都能单独关闭。只有 `/qq owner` 指定的 QQ 号算你本人，别人的消息按不可信通知处理。"
+  en: "A character who lives on her own phone: the plugin installs and runs her Android phone, and any app notification can wake her; she installs apps herself and browses, likes and comments in apps such as Xiaoheihe or Bilibili; she has her own QQ (NapCat / SnowLuma, multi-part replies, stickers); memory with people cards, a daily diary at 23:30 and automatic recall before each wake (local embeddings by default, SiliconFlow / DashScope optional); a life between conversations (after HDS-Interlude); and an optional microVM computer with approval gates. Sidebar tabs show her phone, her computer and a dot panel; personal settings live in ~/.dsh/dsh-dot.json, and each of the six components can be turned off. Only the QQ number set with /qq owner counts as you; other people's messages are treated as untrusted notifications."

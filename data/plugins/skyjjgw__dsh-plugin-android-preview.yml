@@ -1,0 +1,7 @@
+url: https://github.com/skyjjgw/dsh-plugin-android-preview
+name: skyjjgw/dsh-plugin-android-preview
+category: dev
+tarball: https://github.com/skyjjgw/dsh-plugin-android-preview/releases/download/v0.1.2/dsh-plugin-android-preview-0.1.2.tgz
+description:
+  en: 'Windows-only DSH sidebar preview and Dart hot reload for configured Starcompanion / Operit2-derived projects; requires the project preview scripts, a prebuilt debug APK, Android SDK, Flutter and scrcpy 3.3.3.'
+  zh: '在 Windows 的 DSH 侧栏预览已配置的星伴 / Operit2 衍生工程，操作真实安卓画面并在保存 Dart 后热重载；需要工程预览脚本、预构建调试 APK、Android SDK、Flutter 和 scrcpy 3.3.3。'

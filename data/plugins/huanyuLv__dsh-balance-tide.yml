@@ -1,0 +1,6 @@
+url: https://github.com/huanyuLv/dsh-balance-tide
+name: huanyuLv/dsh-balance-tide
+category: usage
+description:
+  en: DeepSeek account balance and session cost under the composer, with a live peak/off-peak pricing badge (Beijing time), a countdown to the next pricing switch, hover price tables, and usage advice.
+  zh: 输入框下方显示 DeepSeek 账户余额与本会话花费，余额前带峰/谷价格徽章（北京时间）与距切换倒计时，悬停看两档单价明细与使用建议。

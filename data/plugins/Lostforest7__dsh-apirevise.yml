@@ -1,0 +1,7 @@
+url: https://github.com/Lostforest7/dsh-apirevise
+name: Lostforest7/dsh-apirevise
+category: dev
+description:
+  en: 'API regression and acceptance workbench: snapshot the responses of the endpoints you register before the agent edits the backend, rerun them all after the edit, and review a structured field-level diff (status codes, added and removed fields, numeric old → new values with the delta) beside the captured source diff, accepting each endpoint one by one before exporting a Markdown or single-file HTML report.'
+  zh: 接口回归验收台：登记端点后先快照响应基线，模型改完后端一键重跑，把结构化字段级差异（状态码、字段增删、数值新旧值与差值）与源码 diff 并排展示，逐项验收后再导出 Markdown / 单文件 HTML 报告。
+tarball: https://github.com/Lostforest7/dsh-apirevise/releases/download/v0.1.0/dsh-apirevise-0.1.0.tgz

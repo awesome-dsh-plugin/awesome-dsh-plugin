@@ -1,0 +1,6 @@
+url: https://github.com/NattoCB/dsh-plugin-notifications
+name: NattoCB/dsh-plugin-notifications
+category: notify
+description:
+  en: Adds a Settings card that pops a system notification and optional chime when a conversation turn completes.
+  zh: 在设置中新增卡片，对话轮次完成时弹出系统通知与可选提示音。

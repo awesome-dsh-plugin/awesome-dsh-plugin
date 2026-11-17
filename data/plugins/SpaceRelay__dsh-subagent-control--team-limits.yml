@@ -1,0 +1,6 @@
+url: https://github.com/SpaceRelay/dsh-subagent-control/tree/main/team-limits
+name: SpaceRelay/dsh-subagent-control#team-limits
+category: dev
+description:
+  en: Adjust Agent Team's member count, task count, message size and teardown timeout.
+  zh: 调整 Agent Team 的人数、任务数、单条消息大小与清理超时。

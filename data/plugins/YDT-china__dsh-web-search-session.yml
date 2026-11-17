@@ -1,0 +1,6 @@
+url: https://github.com/YDT-china/dsh-web-search-session
+name: YDT-china/dsh-web-search-session
+category: session
+description:
+  en: Routes DSH web search through the current session's model and a self-hosted retrieval backend.
+  zh: 让 DSH 网页搜索改走当前会话模型加自建检索后端。

@@ -1,0 +1,6 @@
+url: https://github.com/Aliboder/dsh-prompt-forge
+name: Aliboder/dsh-prompt-forge
+category: ui
+description:
+  en: 'Composer prompt refinement: rewrite the draft through the harness LLM, preview the result, then apply or send it, with style presets, model-aware reasoning effort, cost estimate and a settings page.'
+  zh: '输入框一键提示词增强：通过宿主模型改写草稿，预览后再替换或发送；支持风格预设、按模型自适应思考档位、费用估算与设置页。'

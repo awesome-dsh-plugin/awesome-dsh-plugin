@@ -1,0 +1,8 @@
+url: https://github.com/kanmanJO/dsh-cross-session-ref
+name: kanmanJO/dsh-cross-session-ref
+category: session
+description:
+  en: 'Cross-session reference cards: drag a Q&A card out of any session into another one and it stays there; when you ask a question in the target session, the dragged cards'' question, the answer it got at the time and its attachments are injected into the prompt as earlier conversation context, so the model can quote them directly.'
+  zh: '跨会话引用卡片：把任意会话里的问答卡片拖到另一个会话并保留下来；在目标会话提问时，被拖入卡片的提问、当时的回答与附件会作为「本会话更早的对话记录」注入 Prompt，模型可直接引用。'
+icon: https://raw.githubusercontent.com/kanmanJO/dsh-cross-session-ref/main/assets/icon-180.png
+tarball: https://github.com/kanmanJO/dsh-cross-session-ref/releases/download/v0.2.1/dsh-cross-session-ref-0.2.1.tgz

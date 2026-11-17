@@ -1,0 +1,6 @@
+url: https://github.com/fzuleo/dsh-github-reuse
+name: fzuleo/dsh-github-reuse
+category: tools
+description:
+  en: Read-only GitHub research tools for the agent - repository search, repo health check (stars, license, last push, size, archived), dependency manifests, and single-file reads over the raw channel - plus an oss-reuse skill that makes the agent search GitHub and check real dependencies before writing code, so features are assembled from existing open-source projects instead of rewritten; nothing is cloned and no disk space is used.
+  zh: 面向 agent 的只读 GitHub 调研工具——仓库检索、候选体检（star、许可证、最近推送、体积、是否归档）、依赖清单读取、经 raw 通道读单个文件——并附一个 oss-reuse 技能，让 agent 先检索 GitHub、核对真实依赖，再用现成开源项目拼装功能而不是从零重写；全程不克隆、不占磁盘。

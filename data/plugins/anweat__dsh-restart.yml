@@ -1,0 +1,6 @@
+url: https://github.com/anweat/dsh-restart
+name: anweat/dsh-restart
+category: dev
+description:
+  en: 'Restart DSH: configurable restart method (Node native / legacy PowerShell), post-restart continue prompt, optional watchdog auto-relaunch.'
+  zh: DSH 重启插件：可配置的重启方式（Node 原生/旧 PowerShell 适配）、重启后自动继续的提示词、可选看门狗自动拉起。

@@ -1,0 +1,6 @@
+url: https://github.com/Chenamel/deterministic-pixel-art/tree/main/integrations/dsh
+name: Chenamel/deterministic-pixel-art#dsh
+category: skill
+description:
+  en: 'Describe what you want to draw in DSH, or provide a PNG and say what to change. Export a PNG and editable JSON, or recolor a selected area. Drawing needs Python 3.10+ with Pillow.'
+  zh: '在 DSH 对话中说出想画的内容，或提供 PNG 并说明要怎么改。可导出 PNG 和可编辑 JSON，也可按指定区域改色。绘制需要带 Pillow 的 Python 3.10+。'

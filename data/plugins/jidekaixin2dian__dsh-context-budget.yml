@@ -1,0 +1,7 @@
+url: https://github.com/jidekaixin2dian/dsh-context-budget
+name: jidekaixin2dian/dsh-context-budget
+category: tools
+tarball: https://github.com/jidekaixin2dian/dsh-context-budget/releases/latest/download/dsh-context-budget.tgz
+description:
+  en: Manage MCP servers and skills in DeepSeek Harness, and hide tool groups from the next prompt with token-cost estimates.
+  zh: 管理 MCP 服务器与 Skill，并可把工具组从下一轮 prompt 中隐藏，附 token 成本估算。

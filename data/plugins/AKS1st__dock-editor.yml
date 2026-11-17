@@ -1,0 +1,6 @@
+url: https://github.com/AKS1st/dock-editor
+name: AKS1st/dock-editor
+category: ui
+description:
+  en: 'Text viewer and editor for the dock workbench: undo/redo, Ctrl+S save, unsaved-change confirmation and binary detection, registered as the default file viewer.'
+  zh: dock 系列文本查看与编辑器：支持撤销重做、Ctrl+S 保存、未保存确认和二进制检测，作为 dock-files 的默认文本查看器。

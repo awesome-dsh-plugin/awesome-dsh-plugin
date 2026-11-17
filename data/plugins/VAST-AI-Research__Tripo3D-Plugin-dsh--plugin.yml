@@ -1,0 +1,6 @@
+url: https://github.com/VAST-AI-Research/Tripo3D-Plugin-dsh/tree/master/plugin
+name: VAST-AI-Research/Tripo3D-Plugin-dsh#plugin
+category: skill
+description:
+  en: 'Tripo 3D generation skills driving the tripo-cli through the shell: text-to-3D, image-to-3D, rigging with locomotion clips, decimation and LOD chains, and export to GLB/FBX/OBJ/STL/USDZ/3MF, with headless device login for both China-mainland and international accounts; installable as `tripo-dsh`.'
+  zh: 通过 shell 驱动 tripo-cli 的 Tripo 3D 生成 Skill：文生 3D、图生 3D、绑骨与走跑动画、减面与 LOD 链，导出 GLB/FBX/OBJ/STL/USDZ/3MF，支持国内站与海外站账号的无头设备码登录；npm 包名 `tripo-dsh`。

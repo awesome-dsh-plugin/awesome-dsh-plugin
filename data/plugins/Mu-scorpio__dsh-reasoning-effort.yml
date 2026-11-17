@@ -1,0 +1,6 @@
+url: https://github.com/Mu-scorpio/dsh-reasoning-effort
+name: Mu-scorpio/dsh-reasoning-effort
+category: model
+description:
+  en: 'Configures provider and model reasoning-effort mappings for DeepSeek Harness, with a grouped model picker and composer slider.'
+  zh: 为 DeepSeek Harness 配置 Provider 与模型的推理强度映射，并提供按 Provider 分组的模型选择器和输入框滑块。

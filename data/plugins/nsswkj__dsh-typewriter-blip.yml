@@ -1,0 +1,6 @@
+url: https://github.com/nsswkj/dsh-typewriter-blip
+name: nsswkj/dsh-typewriter-blip
+category: voice
+description:
+  en: 'Turns a streaming assistant reply into short blips, one per character at a configurable minimum spacing, for the reply text only, and keeps sounding when the window is minimized, covered, or in a background tab. Two built-in voices, or a custom one shaped by waveform, or loaded from an audio file.'
+  zh: '把流式输出的助手回复变成短促音效：按可调的最小间隔逐字发声，只对回复正文发声，窗口最小化、被遮挡或切到后台标签页时照常发声。内置两种音色，也可自调波形，或载入音频文件当音色。'

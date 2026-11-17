@@ -1,0 +1,6 @@
+url: https://github.com/sunzhentao/dsh--prompt--enhance
+name: sunzhentao/dsh--prompt--enhance
+category: usage
+description:
+  en: 'Prompt enhancer for the DSH web UI with basic/standard/expert modes: standard/expert modes rewrite drafts with project context and recent session history, retry gracefully when gateways reject reasoning-effort settings, and show a before/after review with undo.'
+  zh: 'DSH Web 界面提示词增强插件：基础/标准/专家三档模式，标准/专家模式结合项目上下文与最近会话历史重写草稿；网关拒绝推理档位参数时自动去参重试；增强结果支持对比确认与撤回。'

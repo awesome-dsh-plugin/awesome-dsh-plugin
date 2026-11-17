@@ -1,0 +1,7 @@
+url: https://github.com/Marco77Cl/dsh-plugin-conversation-delete
+name: Marco77Cl/dsh-plugin-conversation-delete
+category: session
+description:
+  en: Adds a Delete conversation action to the conversation menu that permanently removes the session log, projection cache, and sidebar entry; refuses while a turn, subagent, job, or reminder is running.
+  zh: 在对话的 ⋯ 菜单里永久删除对话，清理会话日志、投影缓存与侧栏条目；有回合、子代理、后台任务或定时提醒在跑时会拒绝。
+tarball: https://github.com/Marco77Cl/dsh-plugin-conversation-delete/releases/download/v0.1.0/dsh-plugin-conversation-delete-0.1.0.tgz

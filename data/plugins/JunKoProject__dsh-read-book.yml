@@ -1,0 +1,6 @@
+url: https://github.com/JunKoProject/dsh-read-book
+name: JunKoProject/dsh-read-book
+category: tools
+description:
+  en: 'Search four free libraries from one window: Project Gutenberg through its OPDS catalog, Shuge through its WordPress search plus the s.shuge.org short links on each book page, and NCPSSD through its Solr-backed endpoint. The Chinese Text Project is deliberately link-only, because its terms forbid automated access. Two tools: readbook_search and readbook_open; the second returns real download URLs for Gutenberg and Shuge, and only a page link for NCPSSD.'
+  zh: 一个窗口同时搜四家免费图书馆：Project Gutenberg 走 OPDS 目录，书格走 WordPress 检索再取每本书页面上的 s.shuge.org 下载短链，国家哲学社会科学文献中心走它的 Solr 检索接口。中国哲学书电子化计划刻意只给链接——它明令禁止程序化抓取。两个工具：readbook_search 与 readbook_open，后者给 Gutenberg 和书格的真实下载地址，NCPSSD 只给页面链接。

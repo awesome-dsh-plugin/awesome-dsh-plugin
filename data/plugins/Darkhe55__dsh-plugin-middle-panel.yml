@@ -1,0 +1,6 @@
+url: https://github.com/Darkhe55/dsh-plugin-middle-panel
+name: Darkhe55/dsh-plugin-middle-panel
+category: ui
+description:
+  en: 'Adds a document panel beside the conversation that previews HTML, Markdown, PDF, images, video and 3D models, and turns selected text, picked elements, marked regions and 3D spots into numbered annotations pasted back as one chat message. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在对话旁增加一个文档面板，可预览 HTML、Markdown、PDF、图片、视频与 3D 模型，并把选中的文字、点选元素、框选区域与 3D 打点变成带编号的标注，一次性回填到对话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

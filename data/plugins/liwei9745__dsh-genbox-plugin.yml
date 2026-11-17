@@ -1,0 +1,9 @@
+# Submission entry for the DSH community plugin catalog (awesome-dsh-plugin).
+# Format: https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md
+# One file per plugin, named <owner>__<repo>.yml - that one file is the whole submission.
+url: https://github.com/liwei9745/dsh-genbox-plugin
+name: liwei9745/dsh-genbox-plugin
+category: tools
+description:
+  en: Generate and edit images, generate video, and cut video locally through a GenBox server, with a zero-key test bench.
+  zh: 通过本地 GenBox 服务生图、改图、生视频，并用 ffmpeg 本地剪辑；自带零成本测试台。

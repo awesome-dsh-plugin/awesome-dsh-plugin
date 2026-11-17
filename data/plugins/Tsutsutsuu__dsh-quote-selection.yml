@@ -1,0 +1,7 @@
+url: https://github.com/Tsutsutsuu/dsh-quote-selection
+name: Tsutsutsuu/dsh-quote-selection
+category: ui
+description:
+  en: 'Select text in the chat transcript, right-click, and quote it into the composer. The quote travels as an atomic chip and renders as a collapsible card, while the model receives the full block with message role, turn, block index and character range.'
+  zh: '在对话里框选文字后右键引用：引用以原子标签进入输入框，发送后显示为可折叠的引用卡；模型拿到的始终是带消息角色、轮次、段落与字符区间的完整引用块。'
+icon: https://raw.githubusercontent.com/Tsutsutsuu/dsh-quote-selection/main/assets/icon-180.png

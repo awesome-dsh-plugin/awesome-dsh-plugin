@@ -1,0 +1,7 @@
+url: https://github.com/czcdr/dsh-plugin-rea
+name: czcdr/dsh-plugin-rea
+category: tools
+description:
+  en: 'Third-party adapter that registers the upstream REA (Reverse Engineer Anything) MCP server into DeepSeek Harness as mcp__rea__* tools. 2.x provisions its own runtime (Node, the REA CLI, a JDK, Ghidra) under <DSH_HOME>/plugins/rea-bundle and launches REA through a shim, so a machine with nothing pre-installed works after one setup run; 1.x (branch v1, npm 1.0.6) is configuration-only and expects REA and Ghidra to be installed already. Analysis is upstream''s: native binaries (Hopper/Ghidra/IDA), JavaScript/Electron apps, .NET assemblies, websites, Android APKs and adb devices, firmware, and process captures.'
+  zh: '第三方适配插件：把上游 REA（逆向一切，github.com/morluto/rea）的 MCP 服务接入 DeepSeek Harness，提供 mcp__rea__* 工具。2.x 自带供给：把 Node、REA CLI、JDK、Ghidra 装到 <DSH_HOME>/plugins/rea-bundle 下，再经 shim 启动 REA —— 干净机器跑一次 setup 即可用；1.x（v1 分支 / npm 1.0.6）是纯配置适配器，需要你自己装好 REA 与 Ghidra。逆向分析能力由 REA 提供，覆盖原生二进制（Hopper/Ghidra/IDA）、JavaScript/Electron 应用、.NET 程序集、网站、Android APK 与 adb 设备、固件与进程捕获。'
+tarball: https://github.com/czcdr/dsh-plugin-rea/releases/latest/download/dsh-plugin-rea.tgz

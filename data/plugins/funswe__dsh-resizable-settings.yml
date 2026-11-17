@@ -1,0 +1,6 @@
+url: https://github.com/funswe/dsh-resizable-settings
+name: funswe/dsh-resizable-settings
+category: ui
+description:
+  en: Makes the DSH Settings dialog resizable from its edges and corners and movable by its top strip, remembering the chosen size across opens.
+  zh: 让 DSH 设置弹窗可拖动边和角改变大小、按住顶部横带移动位置，并记住尺寸。

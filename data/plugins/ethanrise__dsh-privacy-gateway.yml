@@ -1,0 +1,7 @@
+url: https://github.com/ethanrise/dsh-privacy-gateway
+name: ethanrise/dsh-privacy-gateway
+category: security
+description:
+  en: Replaces personal data in conversation messages with placeholders before they reach the model (Chinese names found by context, mainland-China mobile and ID numbers, emails, bank card numbers, and terms from a user word list), shows the originals only in the local UI, and creates redacted copies of CSV/XLSX files.
+  zh: 在对话消息发给模型前，把个人信息替换为占位符（按上下文识别的中文姓名、大陆手机号与身份证号、邮箱、银行卡号，以及用户词库中的词），原文只在本机界面还原显示；并可生成 CSV/XLSX 的脱敏副本。
+tarball: https://github.com/ethanrise/dsh-privacy-gateway/releases/latest/download/dsh-privacy-gateway.tgz

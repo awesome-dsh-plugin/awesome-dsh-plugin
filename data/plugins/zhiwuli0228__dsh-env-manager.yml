@@ -1,0 +1,6 @@
+url: https://github.com/zhiwuli0228/dsh-env-manager
+name: zhiwuli0228/dsh-env-manager
+category: dev
+description:
+  en: 'File-based environment registry for DSH: manage environments, services, deployments and operation-to-Skill bindings through a panel and model-facing tools.'
+  zh: '基于文件的 DSH 环境注册表：通过面板和模型工具管理环境、服务、部署以及操作到 Skill 的绑定。'

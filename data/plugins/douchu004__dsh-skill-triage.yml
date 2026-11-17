@@ -1,0 +1,7 @@
+url: https://github.com/douchu004/dsh-skill-triage
+name: douchu004/dsh-skill-triage
+category: skill
+description:
+  en: 'Searches the installed skill catalog on a trigger word, requires a use-or-skip decision for every candidate, and blocks other tools until all selected skills are loaded.'
+  zh: 触发词命中后先检索本机已安装的 skill，要求对每个候选登记使用或弃用的理由，并拦住其它工具直到选定的 skill 全部加载。
+icon: https://raw.githubusercontent.com/douchu004/dsh-skill-triage/main/assets/icon-180.png

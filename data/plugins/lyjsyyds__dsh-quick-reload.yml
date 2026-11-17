@@ -1,0 +1,7 @@
+url: https://github.com/lyjsyyds/dsh-quick-reload
+name: lyjsyyds/dsh-quick-reload
+category: dev
+description:
+  en: 'One-click page refresh for the DSH Web UI: purges the rebuildable caches (Cache Storage, service workers, /plugins/** bundle bytes) and reloads the page, so a hot-injected client plugin appears without restarting the app.'
+  zh: DSH Web UI 的一键刷新：先清掉可重建的缓存（Cache Storage、Service Worker、/plugins/** 的 bundle 字节）再重载页面，热注入的客户端插件立刻生效，无需重启应用。
+tarball: https://github.com/lyjsyyds/dsh-quick-reload/releases/download/v0.1.1/dsh-quick-reload-lyjs-0.1.1.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/leeclouddragon/dsh-all-in
+name: leeclouddragon/dsh-all-in
+category: fun
+tarball: https://github.com/leeclouddragon/dsh-all-in/releases/download/v0.1.1/dsh-all-in-0.1.1.tgz
+description:
+  en: Adds a local-only six-seat Texas Hold'em table to the DSH Web UI with full betting streets, side pots, persistent Token stacks, and agent-status display.
+  zh: 在 DSH Web UI 中加入本地六人桌德州扑克，支持完整下注轮次、边池结算、Token 筹码持久化与 Agent 状态显示。

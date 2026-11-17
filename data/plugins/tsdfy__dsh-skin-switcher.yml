@@ -1,0 +1,6 @@
+url: https://github.com/tsdfy/dsh-skin-switcher
+name: tsdfy/dsh-skin-switcher
+category: theme
+description:
+  en: 'Skin switcher for the dsh web UI: one-click theme switching with auto-discovery of community skins.'
+  zh: '皮肤切换器：右上角一键切换主题，自动发现社区皮肤。'

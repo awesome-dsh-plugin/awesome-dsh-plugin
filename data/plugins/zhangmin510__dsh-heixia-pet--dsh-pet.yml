@@ -1,0 +1,8 @@
+url: https://github.com/zhangmin510/dsh-heixia-pet/tree/main/dsh-pet
+name: zhangmin510/dsh-heixia-pet#dsh-pet
+category: fun
+description:
+  en: 'HeiXia, a cat companion for DeepSeek Harness with actions based on photos and video, session-state reactions, chat, and balance display. A fork of PC2005-cloud/dsh-pet that uses the same plugin id, so it replaces the original — do not install both together.'
+  zh: 'DeepSeek Harness 宠物黑侠，动作以黑侠的照片和视频为主，支持会话状态联动、聊天和余额展示。基于 PC2005-cloud/dsh-pet 的分支，沿用同一插件 id，会替代原版，请勿与原版同时安装。'
+icon: https://raw.githubusercontent.com/zhangmin510/dsh-heixia-pet/heixia-v1.2.0/heixia/pet/heixia-avatar.png
+tarball: https://github.com/zhangmin510/dsh-heixia-pet/releases/download/heixia-v1.2.0/dsh-heixia-pet-1.2.0.tgz

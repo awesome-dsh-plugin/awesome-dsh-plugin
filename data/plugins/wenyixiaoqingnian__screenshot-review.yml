@@ -1,0 +1,6 @@
+url: https://github.com/wenyixiaoqingnian/screenshot-review
+name: wenyixiaoqingnian/screenshot-review
+category: skill
+description:
+  en: 'Screenshot-review skill for DeepSeek Harness: the agent opens a frontend page, screenshots it, views the screenshot itself, revises the code, then re-screenshots — iterating until the page visually matches the user''s requirements. Ships as a dsh.bundle, so it installs with `dsh plugin add`.'
+  zh: 截图审阅 skill：模型自己打开页面、截图、看图、改代码，反复迭代直到前端效果符合要求。以 dsh.bundle 打包，可用 `dsh plugin add` 一键安装。

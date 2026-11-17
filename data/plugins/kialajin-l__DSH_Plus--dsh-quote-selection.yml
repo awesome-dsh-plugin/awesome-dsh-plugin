@@ -1,0 +1,6 @@
+url: https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-quote-selection
+name: kialajin-l/DSH_Plus#dsh-quote-selection
+category: ui
+description:
+  en: "Floating toolbar on text selection in conversations: add the quote to the composer, start a new discussion from it, or copy it; quotes collapse into a card aligned to the composer and double-clicking jumps back to the quoted turn."
+  zh: "会话内选中文字即弹出工具条：添加到对话、新开讨论或复制；引用折叠为输入框旁的引用卡片，双击跳回被引用轮次。"

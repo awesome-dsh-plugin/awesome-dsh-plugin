@@ -1,0 +1,7 @@
+url: https://github.com/AWL-MC2/DSH-Plugin_awl
+name: AWL-MC2/DSH-Plugin_awl
+category: ui
+description:
+  en: 'Wallpaper-aware readability repair for the DSH Web GUI: it lifts the three low-contrast secondary text tokens with color-mix plus an adjustable text halo, adds content rules (bold, permanently underlined or recoloured links, tinted headings and body text) scoped to conversation Markdown only, offers adjustable rainbow-edge and gradient-fill heading effects, loads custom fonts from the plugin folder or the DSH home, and ships a draggable WYSIWYG preview with a WCAG contrast badge.'
+  zh: '面向 DSH Web 的「壁纸感知」可读性修复：用 color-mix 把三个低对比次级文字 token 向主文字靠拢，并叠加可调强度的文字光晕；提供仅作用于会话 Markdown 的内容规则（链接加粗 / 常驻下划线 / 变色、标题与正文变色）、可调的彩虹描边与渐变填充标题特效、从插件目录或 DSH_HOME 加载的自定义字体，以及带 WCAG 对比度徽标的可拖动 WYSIWYG 预览窗。'
+  

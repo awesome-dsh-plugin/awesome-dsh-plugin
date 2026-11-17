@@ -1,0 +1,6 @@
+url: https://github.com/UncleK/dsh-think-translate
+name: UncleK/dsh-think-translate
+category: ui
+description:
+  en: Translate DSH reasoning, tasks, answers and review reasons into 9 languages. Ollama, custom OpenAI/Anthropic APIs or Google/Bing; ordered fallback, local model memory controls, originals preserved.
+  zh: DSH Web 显示层翻译：思考链、任务、可选回答和审查拒绝理由，支持 9 种语言；本地 Ollama、自定义 OpenAI/Anthropic API、Google/Bing，按序回退与本地模型内存管理，原文保留。

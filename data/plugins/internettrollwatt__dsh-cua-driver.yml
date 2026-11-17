@@ -1,0 +1,6 @@
+url: https://github.com/internettrollwatt/dsh-cua-driver
+name: internettrollwatt/dsh-cua-driver
+category: tools
+description:
+  en: 'Self-contained DSH profile plugin that bridges the cua-driver 0.46.1 Windows kit into DSH as about 63 cua_* background desktop and browser automation tools (UIA observation, PostMessage input without focus stealing, CDP browser control, agent-cursor overlay, recording and diagnostics), with a bundled /cua-driver skill. Windows x64 only; bundles the prebuilt cua-driver.exe and starts it with --grant existing-profile, so the tools can attach to your already-running Edge or Chrome profile and act in its logged-in sessions.'
+  zh: '自包含的 DSH profile 插件：把 cua-driver 0.46.1（Windows x86_64）驱动套件桥接进 DSH，提供约 63 个 cua_* 后台桌面与浏览器自动化工具（UIA 观察、不抢焦点的 PostMessage 输入、CDP 浏览器控制、代理光标叠加层、录制与诊断），并内置 /cua-driver skill。仅限 Windows x64；随包带预编译的 cua-driver.exe，并以 --grant existing-profile 启动它，所以这些工具可以接入你正在运行的 Edge 或 Chrome 配置并在其已登录的会话里操作。'

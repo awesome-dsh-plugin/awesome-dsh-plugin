@@ -1,0 +1,6 @@
+url: https://github.com/huanghai-lab/dsh-custom-instructions
+name: huanghai-lab/dsh-custom-instructions
+category: ui
+description:
+  en: Manage global AGENTS.md in DSH Web with Markdown preview, reusable templates, version history, import/export, failed-import rollback, and revision-conflict protection.
+  zh: 在 DSH Web 中管理全局 AGENTS.md，支持 Markdown 预览、可复用模板、版本历史、导入导出、失败导入回滚与修订冲突保护。

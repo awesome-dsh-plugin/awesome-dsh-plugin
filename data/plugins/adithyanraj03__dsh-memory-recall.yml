@@ -1,0 +1,7 @@
+url: https://github.com/adithyanraj03/dsh-memory-recall
+name: adithyanraj03/dsh-memory-recall
+category: memory
+tarball: https://github.com/adithyanraj03/dsh-memory-recall/releases/latest/download/plugin.tgz
+description:
+  en: "Persistent memory for dsh in the style of Hermes Agent: a memory tool that keeps a user profile and the model's own notes, delivered to every chat as a logged context message — at the start, after a change and after compaction — and a session_search tool that reads earlier chats only after the user approves, with a Memory panel to see and edit what is kept."
+  zh: Hermes Agent 风格的 dsh 持久记忆：一个 memory 工具维护用户档案与模型自己的笔记，并在每段对话的开头、记忆变更后、压缩之后各投递一条带记录的消息；session_search 工具只在用户同意后才会读取更早的会话；另有 Memory 面板可查看和编辑已保存的内容。

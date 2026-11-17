@@ -1,0 +1,7 @@
+url: https://github.com/helo060228/dsh-chat-search
+name: helo060228/dsh-chat-search
+category: session
+tarball: https://github.com/helo060228/dsh-chat-search/releases/download/v1.0.1/dsh-chat-search-1.0.1.tgz
+description:
+  en: 'Cross-session and in-chat keyword search with context highlighting, keyboard navigation, and instant message jumping.'
+  zh: 'DSH 对话搜索插件：支持全局跨会话与当前对话内精准搜索，高亮定位并快速跳转。'

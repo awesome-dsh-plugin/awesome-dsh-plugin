@@ -1,0 +1,6 @@
+url: https://github.com/zhiwuli0228/dsh-image-router
+name: zhiwuli0228/dsh-image-router
+category: vision
+description:
+  en: 'Digests the images in a prompt with a vision model before admission, so any model — a text-only one included — can read them without the session ever switching models, and adds a describe_image tool for image paths.'
+  zh: '在准入前把提示词里的图片换成视觉模型的文字分析，因此任何模型（包括纯文本模型）都能读图且会话不切换模型；另提供 describe_image 工具处理图片路径。'

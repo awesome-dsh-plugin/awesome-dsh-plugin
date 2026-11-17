@@ -1,0 +1,6 @@
+url: https://github.com/linxuhao/AItelier/tree/main/integrations/dsh
+name: linxuhao/AItelier#integrations/dsh
+category: workflow
+description:
+  en: 'Runs AItelier pipelines from DSH over MCP: 39 tools (22 read, 17 write) to generate, run, inspect, edit, export and import multi-step SkillFlow pipelines. The steps execute in AItelier rather than in the DSH session and are polled by run_id, pause at engine-enforced checkpoints answered with answer_checkpoint, and leave per-step traces and step outputs to read afterwards; add_provider / map_model / edit_role point an individual role at a local or cheaper endpoint. Bundles an aitelier-pipelines skill.'
+  zh: '从 DSH 经 MCP 运行 AItelier 流水线：39 个工具（22 读、17 写），用于生成、运行、查看、编辑、导出与导入多步 SkillFlow 流水线。步骤在 AItelier 中执行而不占用 DSH 会话，按 run_id 轮询，在引擎强制的检查点暂停并由 answer_checkpoint 应答，事后可读取逐步 trace 与各步输出；add_provider / map_model / edit_role 可把单个角色指向本地或更便宜的端点。随包附带 aitelier-pipelines skill。'

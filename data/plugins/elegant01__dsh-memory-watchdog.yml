@@ -1,0 +1,6 @@
+url: https://github.com/elegant01/dsh-memory-watchdog
+name: elegant01/dsh-memory-watchdog
+category: dev
+description:
+  en: 'Windows commit-charge watchdog for DSH Desktop: samples committed memory every 5 seconds, attributes it to the DSH process tree and the largest consumers, blocks automatic restart when DSH is not the main committer, and adds read-only pagefile advice, a 7-day crash timeline and an event export; automatic restart and crash resume are both off by default.'
+  zh: 'DSH Desktop 的 Windows 提交内存看门狗：每 5 秒采样提交内存，把它归因到 DSH 进程树与占用最高的进程，在 DSH 不是主要占用者时阻止自动重启，并给出只读的分页文件建议、7 天崩溃时间线与事件导出；自动重启与崩溃后自动续接默认都是关闭的。'

@@ -1,0 +1,6 @@
+url: https://github.com/songzhiyin/dsh-local-model
+name: songzhiyin/dsh-local-model
+category: model
+description:
+  en: 'Registers a local LLM provider that routes model calls to an OpenAI-compatible endpoint or the Ollama native API, with a connection-test card in the Models settings page and no account sign-in.'
+  zh: '注册一个本地 LLM provider，把模型请求转发到 OpenAI 兼容端点或 Ollama 原生 API，并在「设置 → 模型」页提供连接测试卡片，无需登录账号。'

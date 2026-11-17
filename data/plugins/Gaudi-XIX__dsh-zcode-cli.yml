@@ -1,0 +1,6 @@
+url: https://github.com/Gaudi-XIX/dsh-zcode-cli
+name: Gaudi-XIX/dsh-zcode-cli
+category: model
+description:
+  en: 'Runs the locally installed ZCode CLI as a `zcode` model route in DSH: all traffic is signed by the official binary, the plugin never sends its own request, forges client requests or sends credentials off the machine (the plan token is decrypted in memory only to hand back to the official CLI), no API key is needed, and both a paid one-shot and a free app-server channel are supported. Since v0.3.0 it ships an HTTP MCP bridge so tool calls run through the DSH approval surface. Backed by a contract document and a node --test gate.'
+  zh: '把本机已安装的 ZCode CLI 接成 DSH 的 `zcode` 模型路由：流量全部由官方二进制签名，插件自身不发请求、不伪造客户端请求、不把凭据传出本机（plan token 只在内存中解密并交还官方 CLI），不需要 API Key，付费一次性与免费 app-server 两条通道并存；v0.3.0 起内建 HTTP MCP 工具桥，工具调用走 DSH 的审批面；有契约文档与 node --test 测试门禁背书。'

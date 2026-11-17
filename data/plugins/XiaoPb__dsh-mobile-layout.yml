@@ -1,0 +1,6 @@
+url: https://github.com/XiaoPb/dsh-mobile-layout
+name: XiaoPb/dsh-mobile-layout
+category: ui
+description:
+  en: 'Phone-portrait layout shell for the DSH Web UI: the sidebar becomes an off-canvas drawer opened by swiping from the left, a persistent 56px action bar sits under the composer, and the settings panel plus the model and permission pickers are reflowed for touch. Ships native, merged and floating layout presets, all scoped to html[data-dshm-mode="mobile"], so desktop, tablet and landscape keep the stock layout.'
+  zh: 'DSH Web UI 的手机竖屏布局壳：侧边栏变成左侧右滑打开的抽屉，输入区下方常驻一条 56px 操作栏，设置页与模型 / 权限选择器按触控重排；提供原生、融合、悬浮三套布局预设，全部样式受 html[data-dshm-mode="mobile"] 作用域保护，桌面、平板与横屏保持官方原样。'

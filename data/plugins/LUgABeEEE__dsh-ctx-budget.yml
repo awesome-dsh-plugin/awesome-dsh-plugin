@@ -1,0 +1,7 @@
+url: https://github.com/LUgABeEEE/dsh-ctx-budget
+name: LUgABeEEE/dsh-ctx-budget
+category: memory
+description:
+  en: 'Static-context audit for a DSH home: a six-layer baseline (rules, memory, skills, tool surface, sessions, KB), broken-path checks for a markdown capability map, memory duplicate/stale/over-limit reports, SKILL.md description compression, and tool-surface plus cold-start static-context estimates recovered from session logs. Four read-only DSH tools; writes require --apply and are backed up first. Requires Python 3.10+ on the host (stdlib only; all four tools shell out to the bundled CLI).'
+  zh: 'DSH 主目录的静态上下文审计：六层基线（规则/记忆/技能/工具面/会话/KB）、能力地图失效路径校验、记忆重复/过期/超限报告、SKILL.md 描述压缩，以及从会话日志推算的工具面与冷启动静态上下文。四个 DSH 工具全部只读；写操作需 --apply 且先备份。需要宿主上的 Python 3.10+（仅标准库；四个工具都调用随包附带的 CLI）。'
+tarball: https://github.com/LUgABeEEE/dsh-ctx-budget/releases/download/v0.2.0/dsh-ctx-budget-0.2.0.tgz

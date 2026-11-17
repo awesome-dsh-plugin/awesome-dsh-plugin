@@ -1,0 +1,7 @@
+url: https://github.com/xmlans/dsh-xmlans
+name: xmlans/dsh-xmlans
+category: ui
+tarball: https://github.com/xmlans/dsh-xmlans/releases/download/v0.1.0/dsh-xmlans-0.1.0.tgz
+description:
+  en: "Desktop pet for DSH: 兰酱, an angel-winged maid in a transparent always-on-top window who reacts to session states (thinking, working, waiting, done, error), shows task progress and DeepSeek balance, and responds to drags, head pats, pokes and wing touches."
+  zh: "DSH 桌宠兰酱：透明置顶窗口里的天使翅膀女仆，随会话状态（思考、工作、等待、完成、出错）做出动作，显示任务进度和 DeepSeek 余额，可以拖动、摸头、戳一下、碰翅膀。"

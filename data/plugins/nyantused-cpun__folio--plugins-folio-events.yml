@@ -1,0 +1,6 @@
+url: https://github.com/nyantused-cpun/folio/tree/main/plugins/folio-events
+name: nyantused-cpun/folio#plugins/folio-events
+category: workflow
+description:
+  en: 'Folio (兰亭) @nyantused/folio-dsh-events: session-protocol events — auto session-start reminder + auto-save on session close; pair with @nyantused/folio-dsh-tools.'
+  zh: Folio（兰亭）@nyantused/folio-dsh-events：会话协议事件插件——新会话入口提醒 + 会话关闭自动 save；与 @nyantused/folio-dsh-tools 配套使用。

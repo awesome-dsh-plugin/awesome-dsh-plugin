@@ -1,0 +1,6 @@
+url: https://github.com/memorax-ai/dsh-patchouli
+name: memorax-ai/dsh-patchouli
+category: memory
+description:
+  en: DeepSeek Harness memory and knowledge hub that routes update, retrieve, and subscribe calls across compatible plugins, with an optional transactional Rust backend.
+  zh: 面向 DeepSeek Harness 的记忆与知识中台：在兼容插件之间路由 update、retrieve 和 subscribe 调用，并提供可选的事务化 Rust 后端。

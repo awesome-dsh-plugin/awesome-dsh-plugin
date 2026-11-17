@@ -1,0 +1,6 @@
+url: https://github.com/Feahter/dsh-plugins/tree/main/plugins/dsh-360
+name: Feahter/dsh-plugins#dsh-360
+category: skill
+description:
+  en: 'Health check for a DSH profile: scores skills and agent instruction files, subagent definitions and presets on one shared 18-bucket S–E grade scale, with a sidebar panel, four dsh360_* tools, and a backup with undo for every write.'
+  zh: '体检 DSH 配置：技能与 agent 说明书、子代理定义、预设共用一套 18 档 S~E 等级评分，带侧栏面板、四个 dsh360_* 工具，每次写入都有备份可撤销。'

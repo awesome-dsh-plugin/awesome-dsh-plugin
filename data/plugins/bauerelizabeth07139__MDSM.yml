@@ -1,0 +1,6 @@
+url: https://github.com/bauerelizabeth07139/MDSM
+name: bauerelizabeth07139/MDSM
+category: theme
+description:
+  en: 'MDSM (Male DeepSeek Mascot) appearance layer for the DeepSeek Harness web GUI: wears the bundled mascot character as the GUI background (surface-token fade with opacity, blur, scrim and position controls), seats the matching square avatar as the sidebar and conversation brand mark, and edits it all from a Settings section; the host serves the artwork and config locally under /api/MDSM, and the config lives at $DSH_HOME/MDSM.json.'
+  zh: 'MDSM(DeepSeek 男性吉祥物)美化插件：把内置角色形象铺成界面背景（表面令牌淡出，配合不透明度、模糊、遮罩与位置调节），将方形头像换到侧栏与会话标题的品牌标识位，并在设置页统一配置；素材与配置由宿主在 /api/MDSM 下本地提供，配置文件位于 $DSH_HOME/MDSM.json。'

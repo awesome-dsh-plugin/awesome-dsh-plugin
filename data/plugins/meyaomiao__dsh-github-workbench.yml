@@ -1,0 +1,6 @@
+url: https://github.com/meyaomiao/dsh-github-workbench
+name: meyaomiao/dsh-github-workbench
+category: git
+description:
+  en: 'GitHub sidebar workbench for DSH: remote tree plus Issues, Pull requests and Actions tabs, with create/comment/edit/close, merge/squash/rebase, and rerun or cancel CI; mounts as a better-sidebar tab or a standalone right panel.'
+  zh: 'DSH 侧边栏 GitHub 工作台：远端目录树加 Issues / Pull requests / Actions 页签，支持建 Issue/PR、评论、编辑、关闭、merge/squash/rebase 与重跑或取消 CI；挂载为 better-sidebar 页签或独立右侧面板。'

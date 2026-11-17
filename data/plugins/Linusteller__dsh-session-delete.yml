@@ -1,0 +1,6 @@
+url: https://github.com/Linusteller/dsh-session-delete
+name: Linusteller/dsh-session-delete
+category: session
+description:
+  en: Adds a red "Delete session" item beneath "Archive" in the sidebar session menu, with a custom confirmation dialog, for real session deletion — stops the session's running work, detaches its workspace, archive and pin accounting, removes its projection cache and log directory, then broadcasts removal so the row disappears at once, instead of only archiving it. Session deletion removes the conversation from disk permanently and cannot be undone.
+  zh: 在侧栏会话菜单的「归档会话」下方新增红色「删除会话」项，配自定义确认对话框，实现真正的会话删除——停止会话进行中的工作、摘除工作区/归档/置顶记账、删除投影缓存与日志目录，然后广播移除事件让该行立即消失，而不是只能归档。会话删除会把对话从磁盘彻底移除且无法恢复；删除会话与会话删除是同一种操作的两种叫法，搜其中任意一种都可以找到本插件。

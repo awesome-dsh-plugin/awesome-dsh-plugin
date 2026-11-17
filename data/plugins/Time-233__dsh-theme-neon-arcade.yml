@@ -1,0 +1,8 @@
+url: https://github.com/Time-233/dsh-theme-neon-arcade
+name: Time-233/dsh-theme-neon-arcade
+category: theme
+description:
+  en: 'A neon pixel theme for DeepSeek Harness desktop with playable air-battle, pig-sling and fruit-slicing backgrounds, mouse controls and a day/night switch for the sling game.'
+  zh: 'DeepSeek Harness 桌面端霓虹像素主题，提供可参与的像素空战、愤怒的小猪和霓虹切水果背景，支持鼠标操作及小猪游戏昼夜切换。'
+icon: https://raw.githubusercontent.com/Time-233/dsh-theme-neon-arcade/main/assets/icon-180.png
+tarball: https://github.com/Time-233/dsh-theme-neon-arcade/releases/latest/download/dsh-theme-neon-arcade.tgz

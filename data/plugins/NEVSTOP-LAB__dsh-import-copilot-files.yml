@@ -1,0 +1,6 @@
+url: https://github.com/NEVSTOP-LAB/dsh-import-copilot-files
+name: NEVSTOP-LAB/dsh-import-copilot-files
+category: memory
+description:
+  en: 'Loads a workspace''s VSCode/Copilot AI configuration into every DSH session: `.github/copilot-instructions.md` is injected as standing instructions, `.github/instructions/**/*.instructions.md` are gated by their frontmatter `applyTo` and join once the session has touched a matching file, and `.github/skills/*/SKILL.md` are registered as DSH skills. Configuration directories outside the workspace, by default `~/.copilot`, are read as well, and a settings page edits that path list.'
+  zh: '把工作区里的 VSCode/Copilot 风格 AI 配置加载进每个 DSH 会话：`.github/copilot-instructions.md` 作为常驻指令注入，`.github/instructions/**/*.instructions.md` 按 frontmatter 的 `applyTo` 在会话碰过匹配文件后才加入，`.github/skills/*/SKILL.md` 注册为 DSH 技能。工作区之外的配置目录（默认 `~/.copilot`）同样读取，设置页可编辑这组路径。'

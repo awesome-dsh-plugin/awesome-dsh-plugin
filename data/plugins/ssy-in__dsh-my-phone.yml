@@ -1,0 +1,7 @@
+url: https://github.com/ssy-in/dsh-my-phone
+name: ssy-in/dsh-my-phone
+category: remote
+description:
+  en: Lets a phone reach the DeepSeek Harness desktop over a LAN address or a Cloudflare quick tunnel, with QR pairing, a live session feed, approval prompts and a floating desktop widget. Both entry points (LAN and the Cloudflare quick tunnel) start enabled by default; each phone pairs with its own token.
+  zh: 让手机连上本机的 DeepSeek Harness 桌面版：局域网或 Cloudflare 隧道二维码配对，实时消息列表与授权提醒，桌面悬浮球。局域网与 Cloudflare 隧道两个入口默认都开启；每台手机用自己的配对令牌。
+icon: https://raw.githubusercontent.com/ssy-in/dsh-my-phone/main/icon-256.png

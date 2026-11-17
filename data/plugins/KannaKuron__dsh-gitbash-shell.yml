@@ -1,0 +1,6 @@
+url: https://github.com/KannaKuron/dsh-gitbash-shell
+name: KannaKuron/dsh-gitbash-shell
+category: tools
+description:
+  en: "Windows plugin that swaps the host shell executor for Git for Windows bash across every agent mode, materializes Git Bash variants of the standard, minimal, PTC and Cordis presets (per-file sha256-marked, user edits preserved), and exposes a gitBash capability so companion presets pick Git Bash automatically; when dsh-better-sidebar is installed it also adopts that sidebar's terminal shell (UI tabs and the model-facing terminal_* tools) through its official settings seam."
+  zh: "Windows 插件：将宿主 shell 执行器换成 Git for Windows bash（全部 Agent 模式生效），并物化标准/极简/PTC/创造四个 Git Bash 预设变体（逐文件 sha256 标记、用户修改保留）；发布 gitBash 能力服务，让配套预设自动选用 Git Bash；若装有 dsh-better-sidebar，还会通过对方官方设置补丁口把其终端（UI 标签与模型 terminal_* 工具）一并切到 Git Bash。"

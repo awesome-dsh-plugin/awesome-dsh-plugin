@@ -1,0 +1,6 @@
+url: https://github.com/doncelee229-cmyk/dsh-plugin-approval-alert
+name: doncelee229-cmyk/dsh-plugin-approval-alert
+category: notify
+description:
+  en: 'Native OS notifications for approval and question/plan prompts: the toast names the workspace, click jumps to it, bilingual (zh-CN/zh-TW/en), with chime.'
+  zh: 审批与选择方案的系统级桌面通知：通知显示所属工作区、点击跳转到对应工作区，多语言（简中/繁中/英文），附提示音。

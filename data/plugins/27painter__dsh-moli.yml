@@ -1,0 +1,6 @@
+url: https://github.com/27painter/dsh-moli
+name: 27painter/dsh-moli
+category: browser
+description:
+  en: 'Drives a locally installed Moli headless browser from DeepSeek Harness: rendered fetch, JavaScript evaluation, Markdown, semantic trees, screenshots and PDFs. A CSS selector returns one container rather than the whole page (measured 40-80x fewer tokens on listing pages) and scroll triggers lazy loading. Installs Moli when it is missing; verified with a real engine on Windows, Linux and macOS.'
+  zh: '从 DeepSeek Harness 驱动本机安装的 Moli 无头浏览器：渲染抓取、JavaScript 求值、Markdown、语义树、截图与 PDF。用 CSS 选择器只取某个容器而不是整页（列表页实测省 40–80 倍 token），并支持滚动触发懒加载。Moli 缺失时自动安装；已在 Windows、Linux 与 macOS 上用真实引擎验证。'

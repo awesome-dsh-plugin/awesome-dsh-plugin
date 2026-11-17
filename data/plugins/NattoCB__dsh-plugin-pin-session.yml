@@ -1,0 +1,6 @@
+url: https://github.com/NattoCB/dsh-plugin-pin-session
+name: NattoCB/dsh-plugin-pin-session
+category: ui
+description:
+  en: Adds Pin/Unpin to the sidebar session-row menu and a collapsible Pinned Sessions group above the session list, with host-side persistence, hover quick-unpin, collapse memory, and live running-state dots.
+  zh: 在会话行菜单加入 Pin/Unpin，并在侧边栏列表上方提供可折叠的 Pinned Sessions 分组：主机端持久化、悬停快速取消置顶、折叠状态记忆与实时运行状态点。

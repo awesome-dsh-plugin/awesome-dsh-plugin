@@ -1,0 +1,6 @@
+url: https://github.com/wenjun81/dsh-vscode
+name: wenjun81/dsh-vscode
+category: dev
+description:
+  en: 'VS Code bridge for the DSH sidebar: launches VS Code, browses workspace files, sends files to the current conversation as attachments, and adds a floating multi-tab code workbench that auto-syncs saved changes.'
+  zh: 'DSH 侧边栏的 VS Code 桥接：启动 VS Code、浏览工作区文件、把文件作为附件发到当前对话，并内置一个可拖动缩放的多标签代码工作台，保存后自动同步改动。'

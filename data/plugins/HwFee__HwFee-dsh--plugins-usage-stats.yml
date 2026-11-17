@@ -1,0 +1,6 @@
+url: https://github.com/HwFee/HwFee-dsh/tree/master/plugins/usage-stats
+name: HwFee/HwFee-dsh#usage-stats
+category: usage
+description:
+  en: 'Usage panel on the blank-session hero: sessions, messages, total tokens, active days, peak hour, favourite model and a contribution heatmap, over all time, 30 days or 7 days.'
+  zh: 空白会话首页的用量面板：会话数、消息数、总 token、活跃天数、高峰时段、常用模型与热力图，范围可选全部、30 天或 7 天。

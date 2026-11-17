@@ -1,0 +1,6 @@
+url: https://github.com/mpinaev/dsh-context-governor
+name: mpinaev/dsh-context-governor
+category: usage
+description:
+  en: 'Context fullness bands, the per-session compaction threshold derived from the model window, per-step cost computed from cache read and cache write rates, cache-hit, DeepSeek balance with the peak/off-peak tariff, and a one-click handoff. It never calls a model and spends no tokens.'
+  zh: '上下文占用档位、按模型窗口推算的每会话压缩阈值、按缓存读取/写入费率计算的单步费用、缓存命中率、DeepSeek 余额与高峰/低谷费率，以及一键交接。它从不调用模型，也不消耗 token。'

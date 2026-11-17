@@ -1,0 +1,7 @@
+url: https://github.com/baisama-cloud/dsh-omni-bridge
+name: baisama-cloud/dsh-omni-bridge
+category: notify
+description:
+  en: 'Multi-channel IM bridge for DeepSeek Harness: route WeChat (ClawBot/iLink), QQ, and Feishu (Lark) chat messages to a DSH agent and relay its replies back, with per-channel sessions and reply dedup.'
+  zh: 多通道消息桥接插件：将微信 ClawBot / QQ / 飞书的消息接入 DSH agent，并把回复回传给发送者，按通道独立会话、回复去重。
+tarball: https://github.com/baisama-cloud/dsh-omni-bridge/releases/download/v0.2.0/dsh-omni-bridge-0.2.0.tgz

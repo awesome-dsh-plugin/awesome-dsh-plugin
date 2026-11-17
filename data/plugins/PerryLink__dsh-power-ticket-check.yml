@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-power-ticket-check
+name: PerryLink/dsh-power-ticket-check
+category: tools
+description:
+  en: "Checks an electrical work permit for the elements it must carry and for the issue and permission sequence the current electrical safety regulations require. Reports the differences it finds; it does not judge whether the work was safe or whether the permit was validly authorised."
+  zh: "依据现行电力安全工作规程，核对电力工作票应载明的要素，以及签发与许可的先后顺序。只报告发现的差异，不判定作业是否安全、许可是否有效。"

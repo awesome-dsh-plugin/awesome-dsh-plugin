@@ -1,0 +1,7 @@
+url: https://github.com/romany-saad/dsh-plugins/tree/main/packages/dsh-quote
+name: romany-saad/dsh-plugins#dsh-quote
+category: ui
+description:
+  en: 'Show the model exactly which part you mean: select passages in a Web conversation and they go into your next message as composer chips, each with an optional note you can edit. Quoted passages stay highlighted until you send, hovering a chip shows the full quote, and the sent message shows each quote as a card.'
+  zh: '让模型准确知道你指的是哪一段：在 Web 对话中选中段落，它们会作为引用条进入下一条消息，每条可附可编辑的备注。被引用的段落在发送前保持高亮，悬停引用条显示全文，发送后的消息把每条引用显示为卡片。'
+icon: https://raw.githubusercontent.com/romany-saad/dsh-plugins/main/packages/dsh-quote/docs/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/qwerty-k-de/dsh-attach-picker
+name: qwerty-k-de/dsh-attach-picker
+category: ui
+description:
+  en: 'Toolbar picture button in the DSH Web composer: click to pick multiple images through the native file dialog — they join the same draft-image rail as drag-and-drop and paste, with the host image-format, per-message-count and per-image-size limits enforced inline.'
+  zh: 'DSH Web 输入框工具栏图片按钮：点击调用系统文件选择器直接多选取图，进入与拖拽/粘贴相同的草稿图片栏，并内联校验宿主的图片格式、单条张数与单张大小限制。'

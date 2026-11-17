@@ -1,0 +1,6 @@
+url: https://github.com/JinSuperOfficial/dsh-proxy-switcher
+name: JinSuperOfficial/dsh-proxy-switcher
+category: tools
+description:
+  en: Hot-swap the outbound proxy in dsh between direct, system, and saved proxies without restarting.
+  zh: 在 dsh 运行过程中热切换出站代理（直连/系统/自定义），无需重启即可生效

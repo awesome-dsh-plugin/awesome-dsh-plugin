@@ -1,0 +1,6 @@
+url: https://github.com/domitor-syh/dsh-rollback
+name: domitor-syh/dsh-rollback
+category: session
+description:
+  en: 'TRAE-style conversation rollback — per-turn checkpoints (10-turn sliding window) roll back touched files and truncate model context in place, keeping the same session id. Human-initiated only: a /rollback command or a per-turn Web button (works on interrupted turns too), with a preview listing each affected file and its action — restore, recover, delete, or skip.'
+  zh: 'TRAE 式「回退到本轮对话发起前」插件：按轮次建立检查点（10 轮滑动窗口），同时回滚工作区文件与原位截断模型上下文，保持同一 session id。回退只能由人发起：/rollback 命令或每轮的 Web 回退按钮（被中断的轮次也可用），弹窗逐条列出受影响文件及其动作（恢复/找回/删除/跳过）。'

@@ -1,0 +1,6 @@
+url: https://github.com/montersy123/dsh-skill-market
+name: montersy123/dsh-skill-market
+category: skill
+description:
+  en: 'Browse, search and install skills from the public SkillHub catalogue, then enable, disable, update or remove them without leaving Harness. Category chips carry the upstream total for each category; the details drawer has tabs for the file tree, version history, permissions, third-party security-scan results and upstream metrics. An installed skill is written into the harness skill root as an ordinary local skill, and disabling one moves its directory out of that root rather than flagging it.'
+  zh: '浏览、搜索并安装公开的 SkillHub 技能库,启用、停用、更新或卸载都不必离开 Harness。分类按钮带该分类的上游总数;详情抽屉提供文件树、版本历史、权限、第三方安全扫描结论与上游指标等页签。装好的技能会作为一个普通本地技能写入 harness 的技能根目录,而「停用」是把它的目录移出该根目录,不是打标记。'

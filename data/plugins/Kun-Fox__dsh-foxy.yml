@@ -1,0 +1,6 @@
+url: https://github.com/Kun-Fox/dsh-foxy
+name: Kun-Fox/dsh-foxy
+category: identity
+description:
+  en: Adds the Foxy agent preset, sidebar entry, settings page, editable prompt suffix, and a small capability registry to DeepSeek Harness.
+  zh: 给 DeepSeek Harness 增加 Foxy 人设预设、侧栏入口、设置页、可编辑附加提示词和可扩展能力注册。

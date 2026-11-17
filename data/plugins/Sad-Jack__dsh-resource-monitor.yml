@@ -1,0 +1,7 @@
+url: https://github.com/Sad-Jack/dsh-resource-monitor
+name: Sad-Jack/dsh-resource-monitor
+category: ui
+description:
+  en: 'Compact macOS strip above the composer showing CPU, GPU, RAM, swap, memory pressure and local Ollama model ON/OFF status. Tested on Harness 0.2.1-rc.5.'
+  zh: '输入框上方的 macOS 资源指标行：显示 CPU、GPU、RAM、交换空间、内存压力及本地 Ollama 模型 ON/OFF 状态。已在 Harness 0.2.1-rc.5 上验证。'
+tarball: https://github.com/Sad-Jack/dsh-resource-monitor/releases/download/v0.1.1/dsh-resource-monitor-0.1.1.tgz

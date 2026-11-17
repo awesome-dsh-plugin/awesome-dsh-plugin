@@ -1,0 +1,7 @@
+url: https://github.com/king-shao/dsh-turn-notifier
+name: king-shao/dsh-turn-notifier
+category: notify
+tarball: https://github.com/king-shao/dsh-turn-notifier/releases/latest/download/dsh-turn-notifier.tgz
+description:
+  en: Shows a system notification when a turn finishes, carrying the session title and a summary of the reply.
+  zh: 每轮对话正常结束时弹出系统通知，标题是会话名，正文是本轮回答的摘要。

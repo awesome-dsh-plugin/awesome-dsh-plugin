@@ -1,0 +1,8 @@
+url: https://github.com/skyline66/dsh-family-budget
+name: skyline66/dsh-family-budget
+category: ui
+icon: https://raw.githubusercontent.com/skyline66/dsh-family-budget/main/assets/icon-180.png
+tarball: https://github.com/skyline66/dsh-family-budget/releases/latest/download/dsh-family-budget.tgz
+description:
+  en: 'Monthly household budget page in the sidebar: income, fixed and variable expenses, savings, emergency fund, debt and a month-by-month review, with totals, per-item budget differences and a savings, debt or home goal. Bookkeeping only, no investment advice.'
+  zh: '侧边栏月度家庭预算表：收入、固定支出、可变支出、储蓄、应急金、债务与按月复盘，含合计、逐项预算差额与储蓄／还债／买房目标。只做收支整理，不提供投资建议。'

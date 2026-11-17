@@ -1,0 +1,7 @@
+url: https://github.com/ajia1206/dsh-restart
+name: ajia1206/dsh-restart
+category: dev
+tarball: https://github.com/ajia1206/dsh-restart/releases/latest/download/dsh-restart.tgz
+description:
+  en: 'Restarts the running DSH process from a model tool or a bottom-right GUI control, with launchd KeepAlive detection, a detached-supervisor fallback that aborts the exit when its handshake fails, a macOS desktop restart path, and JSONL restart records correlated by arm id, pid and profile so a restart stays distinguishable from unrelated log activity.'
+  zh: 用模型工具或右下角 GUI 控件重启正在运行的 DSH 进程：探测 launchd KeepAlive，无托管时派 detached supervisor 兜底（握手失败即取消退出），桌面版走 macOS 应用重启路径，每次重启写入按 armId、pid 与 profile 关联的 JSONL 记录，使一次重启能与日志里的无关活动区分开。

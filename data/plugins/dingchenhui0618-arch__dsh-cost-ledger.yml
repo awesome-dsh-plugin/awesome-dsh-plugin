@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-cost-ledger
+name: dingchenhui0618-arch/dsh-cost-ledger
+category: tools
+description:
+  en: 'Auditable token-cost ledger for DeepSeek Harness: wraps the llm/stream waterfall and records every call with provider, model, input/output/cache-hit/cache-write tokens, usage source and integer nano-CNY cost from an explicit price table. Aggregates by hour, day and session; exports JSON or CSV with a no-write dry-run preview; keeps a manually entered official platform bill in a parallel column with actual-minus-estimate diff. Unknown provider/model routes stay explicitly unpriced. Zero runtime dependencies; no balance query, notifications or animations.'
+  zh: '可核对的 token 成本账：包住 llm/stream waterfall，逐次记录 provider、model、输入/输出/缓存命中/缓存写入 token、用量来源，以及按显式价目表算出的整数 nano-CNY 费用；按小时/日/会话聚合，支持 JSON/CSV 导出与不落盘的 dry-run 预览；手填官方平台账单与本地估算并列，给出 actual − estimated 差异。未知 provider/model 保持显式未定价。零运行时依赖；不查余额、不发通知、不做动画。'

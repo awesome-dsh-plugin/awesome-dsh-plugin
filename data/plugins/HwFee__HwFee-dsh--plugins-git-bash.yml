@@ -1,0 +1,6 @@
+url: https://github.com/HwFee/HwFee-dsh/tree/master/plugins/git-bash
+name: HwFee/HwFee-dsh#git-bash
+category: tools
+description:
+  en: Git Bash as the default shell on Windows. Resolves bash.exe from git --exec-path (never the WSL stub), exposes a run_shell tool, and degrades visibly instead of disappearing when Git Bash is missing.
+  zh: Windows 上的 Git Bash 默认 shell。从 git --exec-path 定位 bash.exe（不用 WSL 的 bash），提供 run_shell 工具；找不到 Git Bash 时明确降级，而不是让插件消失。

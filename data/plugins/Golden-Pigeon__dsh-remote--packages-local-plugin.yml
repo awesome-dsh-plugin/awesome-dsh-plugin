@@ -1,0 +1,6 @@
+url: https://github.com/Golden-Pigeon/dsh-remote/tree/main/packages/local-plugin
+name: Golden-Pigeon/dsh-remote#packages/local-plugin
+category: remote
+description:
+  en: 'Native SSH remote development for DSH: remote workspaces, mirrored sessions, terminal and file access, approvals, and a DSH UI. Requires DSH Desktop 0.2.1-rc.2 and a remote host running Linux or macOS.'
+  zh: '把 SSH 主机上的工作区接入 DSH：远程工作区、镜像会话、终端与文件访问、审批和原生 DSH 界面。需 DSH Desktop 0.2.1-rc.2，远端主机为 Linux 或 macOS。'

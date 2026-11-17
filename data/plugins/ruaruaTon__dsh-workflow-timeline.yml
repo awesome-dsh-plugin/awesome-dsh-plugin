@@ -1,0 +1,6 @@
+url: https://github.com/ruaruaTon/dsh-workflow-timeline
+name: ruaruaTon/dsh-workflow-timeline
+category: workflow
+description:
+  en: Show workflow stages and subagents on a timeline, configure model and concurrency for each stage, and reopen subagent conversations from the panel. Run names and stage settings persist under ~/.dsh.
+  zh: 在时间线中查看工作流阶段和子代理，为每个阶段配置模型与并发，并从面板打开子代理对话。运行名称与阶段设置保存在 ~/.dsh。

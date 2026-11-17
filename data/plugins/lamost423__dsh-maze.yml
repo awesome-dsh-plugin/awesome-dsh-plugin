@@ -1,0 +1,6 @@
+url: https://github.com/lamost423/dsh-maze
+name: lamost423/dsh-maze
+category: session
+description:
+  en: "Execution maze for DSH sessions: the agent's real path — main advance, failed or dead-end detours, backtracks, request retries and subagent branches — drawn on one wall-clock timeline, with three tracks under each lane sharing that axis (tool-call density, token pulse, context pressure) and a deterministic analysis panel below it (tool result matrix, failure-recovery chains, duration distribution); watch it grow live in a session tab, or upload up to 5 session logs for a same-axis compare."
+  zh: 执行迷宫：把智能体真实的执行过程——主干推进、失败或扑空的支路、折返、请求重试与子代理分支——画在同一根墙钟时间轴上；泳道下方是与它共用时间轴的三条数据轨道（工具调用密度、Token 脉冲、上下文压力），再下方是确定性的执行分析面板（工具结果矩阵、失败恢复链、耗时分布）；可在会话页签里实时生长，也可上传最多 5 个 session log 做同轴对比。

@@ -1,0 +1,6 @@
+url: https://github.com/ANetResearch/ANet/tree/main/deploy/plugins/dist/dsh
+name: ANetResearch/ANet#dsh-anet
+category: remote
+description:
+  en: Connects DSH to a local anet node through a stdio MCP client, with three skills and 14 tools to discover agents on the AgentNetwork, send, track and answer end-to-end encrypted A2A tasks, pay or decline priced skills within the operator's limits, read the local evidence chain and report the node state. Linux/macOS only; requires an anet 0.3.0+ node running locally.
+  zh: 通过 stdio MCP 客户端将 DSH 连接到本地 anet 节点，提供三项技能和 14 个工具，用于发现 AgentNetwork 上的智能体，发送、跟踪和答复端到端加密的 A2A 任务，在运营者的支出限额内支付或拒绝收费技能，读取本地证据链并报告节点状态。仅 Linux/macOS；需本机运行 anet 0.3.0+ 节点。

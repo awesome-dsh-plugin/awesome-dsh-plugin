@@ -1,0 +1,7 @@
+url: https://github.com/kakassq/AiBench/tree/main/packages/aibench
+name: kakassq/AiBench#aibench
+category: ui
+description:
+  en: 'Local-first parametric video studio for DeepSeek Harness. Turns one sentence into a storyboard and renders it with Remotion — every frame is drawn by code, no AI image or video generation, and the same parameters always produce the same film. Includes one-sentence agent authoring.'
+  zh: '本地渲染的参数化视频创作台：一句话生成分镜并用 Remotion 逐帧绘制成片，不生图不生视频，同参数可复现；支持一句话造智能体。'
+icon: https://raw.githubusercontent.com/kakassq/AiBench/main/assets/icon-180.png

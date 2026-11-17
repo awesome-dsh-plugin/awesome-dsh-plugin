@@ -1,0 +1,6 @@
+url: https://github.com/Lain-in-coding/dsh-grok-search
+name: Lain-in-coding/dsh-grok-search
+category: tools
+description:
+  en: 'Requires at least one search API key (Grok, or any one of the supplementary sources). A grok-search-rs-backed web search provider for DeepSeek Harness with configurable source fallback, visual settings, search log replay, and account quota queries.'
+  zh: '需至少配置一个搜索 API Key（Grok 或任一补充来源）。基于 grok-search-rs 的 DeepSeek Harness 搜索插件，提供可配置的来源回退、可视化设置、搜索日志回放和账户额度查询。'

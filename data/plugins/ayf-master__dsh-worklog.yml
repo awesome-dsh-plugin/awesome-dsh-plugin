@@ -1,0 +1,6 @@
+url: https://github.com/ayf-master/dsh-worklog
+name: ayf-master/dsh-worklog
+category: workflow
+description:
+  en: "Turns DSH session logs into Markdown work reports for a day, an ISO week or a month, grouped by working directory. Each session lists its requests, changed files, tool counts and interruptions, and a closing section names the most-changed files, generated documents and key commands. Adds the /worklog command, a worklog_generate tool and a settings page for the output folder, cross-day merging, the products list and an optional weekly timer."
+  zh: "把 DSH 的会话日志还原成 Markdown 工作台账：日报、周报（ISO 周）或月报，按工作目录分组。每个会话列出需求、改动文件、工具用量与中断次数，末尾附「产物」清单：改动最多的文件、新生成的文档、关键命令。提供 /worklog 命令、worklog_generate 工具，以及一个设置页，用来调整存放目录、跨天合流、产物清单与每周定时生成。"

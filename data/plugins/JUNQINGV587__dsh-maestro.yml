@@ -1,0 +1,6 @@
+url: https://github.com/JUNQINGV587/dsh-maestro
+name: JUNQINGV587/dsh-maestro
+category: model
+description:
+  en: 'Planner/executor delegation with named roles: a strong planner steers, disposable executor sub-agents (per-role routes and prompts) implement. Default role plus per-delegation override, a global reasoning-effort knob in the composer chip, and a settings page for role management.'
+  zh: 规划者/执行者委派调度：高阶模型（Planner）定方向，一次性低阶执行子代理（按角色的路由与提示词）干具体活；默认角色 + 单次委派覆盖，输入框芯片快速切换角色与全局思考等级，设置页管理执行角色。

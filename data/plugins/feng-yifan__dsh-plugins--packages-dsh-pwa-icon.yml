@@ -1,0 +1,6 @@
+url: https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-pwa-icon
+name: feng-yifan/dsh-plugins#dsh-pwa-icon
+category: ui
+description:
+  en: 'PWA icon: replaces the icon and app name used when the Web GUI is installed or added to the desktop, covering desktop browsers and the iOS home screen. Ships a ready-to-use bundled icon set and accepts your own image plus manifest overrides.'
+  zh: 'PWA 图标：把 Web GUI 安装 / 添加到桌面时使用的图标与应用名换成自定义内容，覆盖桌面浏览器与 iOS 主屏幕。包内自带开箱即用的图标集，也支持换成自己的图片并覆盖 manifest 字段。'

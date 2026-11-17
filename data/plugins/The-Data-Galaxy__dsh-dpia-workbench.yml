@@ -1,0 +1,6 @@
+url: https://github.com/The-Data-Galaxy/dsh-dpia-workbench
+name: The-Data-Galaxy/dsh-dpia-workbench
+category: workflow
+description:
+  en: Adds a versioned DPIA workbench to DeepSeek Harness for source-linked facts, follow-up answers, reassessment, and reviewable reports. Needs Python 3.9+ with `python-docx`, `pypdf`, and (for PDF templates) `reportlab` + `pdftoppm`.
+  zh: 为 DeepSeek Harness 添加带版本记录的 DPIA 工作台，关联材料来源、事实补正、补答、复评与待审阅报告。需 Python 3.9+ 及 `python-docx`、`pypdf`，PDF 模板还需 `reportlab` 与 `pdftoppm`。

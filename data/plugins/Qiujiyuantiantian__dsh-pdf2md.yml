@@ -1,0 +1,6 @@
+url: https://github.com/Qiujiyuantiantian/dsh-pdf2md
+name: Qiujiyuantiantian/dsh-pdf2md
+category: skill
+description:
+  en: "Turns PDF, Word, PowerPoint and Excel files into Markdown or plain text with heading levels preserved where the source allows it, and refuses scanned PDFs that have no text layer instead of writing an empty file, naming the OCR alternative instead. Requires Python 3.10+ and pip install -r requirements."
+  zh: "把 PDF、Word、PPT、Excel 转成保留标题层级的 Markdown 或纯文本；遇到没有文字层的扫描件会主动拒绝（退出码 2），不会写一个空文件骗过下游，并指明可改用 OCR（dsh-scan2md）。需 Python 3.10+ 并安装仓库 requirements。"

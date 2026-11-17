@@ -1,0 +1,6 @@
+url: https://github.com/lemoncat7/dsh-partner
+name: lemoncat7/dsh-partner
+category: workflow
+description:
+  en: Long-lived AI companions with isolated memory, WeChat channels, Skills, schedules, heartbeat concerns, and a dependency-aware task board.
+  zh: 提供隔离记忆、微信渠道、Skill、定时任务、伙伴挂念与依赖任务看板的长期 AI 伙伴。

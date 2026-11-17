@@ -1,0 +1,6 @@
+url: https://github.com/dolacmeo/dsh-restart-and-update
+name: dolacmeo/dsh-restart-and-update
+category: market
+description:
+  en: 'One-click plugin updates and restart from the sidebar: see every plugin''s current and new version with publish dates, update them through the profile''s own launcher, and keep the Desktop window where you left it across restarts. Windows desktop only.'
+  zh: '侧栏一键更新插件与重启：列出各插件的当前与新版本及发布时间，走 profile 自带安装器更新；完全重启后窗口回到上次的位置。仅限 Windows 桌面版。'

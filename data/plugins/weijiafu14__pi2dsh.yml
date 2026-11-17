@@ -1,0 +1,6 @@
+url: https://github.com/weijiafu14/pi2dsh
+name: weijiafu14/pi2dsh
+category: dev
+description:
+  en: 'Pi Host ABI compatibility engine: after one install, unmodified Pi extensions from npm mount as native DSH plugins with `dsh plugin add <pi-package>`. Verified end to end on stock DSH with pi-mcp-adapter (full MCP manager: OAuth, resources, prompts, MCP Apps, elicitation, sampling), @tintinweb/pi-subagents, pi-code, pi-hermes-memory and pi-background-tasks; `pi2dsh inspect` reports a package''s compatibility before installing.'
+  zh: 'Pi Host ABI 兼容引擎：装一次之后，npm 上的 Pi 扩展原包经 `dsh plugin add <pi-package>` 直接作为 DSH 原生插件挂载。已在官方 DSH 上端到端验证 pi-mcp-adapter（完整 MCP 管理面：OAuth、resources、prompts、MCP Apps、elicitation、sampling）、@tintinweb/pi-subagents、pi-code、pi-hermes-memory、pi-background-tasks；`pi2dsh inspect` 在安装前报告一个包的兼容情况。'

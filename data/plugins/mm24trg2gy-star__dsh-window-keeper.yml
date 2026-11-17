@@ -1,0 +1,7 @@
+url: https://github.com/mm24trg2gy-star/dsh-window-keeper
+name: mm24trg2gy-star/dsh-window-keeper
+category: ui
+icon: https://raw.githubusercontent.com/mm24trg2gy-star/dsh-window-keeper/main/docs/icon.png
+description:
+  en: 'Every DSH restart shrinks the window back to the hardcoded 1280x820? This plugin remembers the window position, size and maximized state and restores it on the next launch. The window logic lives in a standalone PowerShell script that does not depend on the client version; the plugin shell only installs it, keeps it autostarted and exposes a toggle. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '每次重启 DSH，窗口都缩回默认的 1280×820？这个插件记住窗口的位置、大小和最大化状态，下次启动回到你上次离开的样子。窗口逻辑放在独立的 PowerShell 脚本里，不依赖客户端版本；插件壳只负责安装、自启和开关。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

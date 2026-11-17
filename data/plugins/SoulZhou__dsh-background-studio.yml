@@ -1,0 +1,7 @@
+url: https://github.com/SoulZhou/dsh-background-studio
+name: SoulZhou/dsh-background-studio
+category: theme
+description:
+  en: Six switchable background palettes, a custom image, or any solid color for DeepSeek Harness, with adjustable opacity and a dedicated Background settings page.
+  zh: 为 DeepSeek Harness 提供六套可切换背景、自定义图片或任意纯色，可调节不透明度，并注册为独立的「背景」设置页。
+icon: https://raw.githubusercontent.com/SoulZhou/dsh-background-studio/main/assets/icon-512.png

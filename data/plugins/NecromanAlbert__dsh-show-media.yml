@@ -1,0 +1,6 @@
+url: https://github.com/NecromanAlbert/dsh-show-media
+name: NecromanAlbert/dsh-show-media
+category: ui
+description:
+  en: Shows a local image or short video in the current conversation card, with click-to-preview.
+  zh: 在当前对话卡片里展示本地图片或短视频，点击可预览。

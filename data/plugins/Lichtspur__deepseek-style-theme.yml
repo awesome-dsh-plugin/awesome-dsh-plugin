@@ -1,0 +1,12 @@
+url: https://github.com/Lichtspur/deepseek-style-theme
+name: Lichtspur/deepseek-style-theme
+category: theme
+description:
+  en: 'DeepSeek homepage-style theme skin for the dsh web GUI: fluid particle background, glass sidebar and composer, running-subagent progress panel, and DSTT peak-hour color modes.'
+  zh: '为 dsh web GUI 复刻 DeepSeek 官网风格的主题皮肤：流体粒子背景、玻璃拟态侧边栏与输入框、运行中子代理面板与 DSTT 高峰时段配色。'
+# 本条目刻意不声明 tarball:。包已发布到 npm（dsh-deepseek-style-theme），
+# 而 installTargetFor() 在 npm 命中时直接返回、根本不看 tarball ——
+# 留着它只是一条会腐烂的手工 URL（原值即 "latest + 写死 1.39.0"，新版一发布就 404）。
+# npm 映射由 probe-npm.mjs 自动探测：读仓库 HEAD 的 package.json 取包名，
+# 再要求 npm 上该包的 repository 指回本仓库（package.json 的 repository 因此是功能性的）。
+# 另：不要在这里手写 npm: 字段 —— entries.mjs 的 ENTRY_KEYS 不收它，会被判为非法键。

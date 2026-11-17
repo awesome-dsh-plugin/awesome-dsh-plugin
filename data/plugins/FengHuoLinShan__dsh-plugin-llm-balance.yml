@@ -1,0 +1,6 @@
+url: https://github.com/FengHuoLinShan/dsh-plugin-llm-balance
+name: FengHuoLinShan/dsh-plugin-llm-balance
+category: usage
+description:
+  en: 'DSH balance and quota card showing up to 3 recently used providers. Supports DeepSeek, Moonshot, Kimi For Coding, OpenAI Codex, and OpenCode Go, with auto-discovery, quota windows, reset times, color-coded status, dragging, and automatic refresh.'
+  zh: DSH 余额与配额悬浮卡片：常驻显示最近使用的最多 3 个 provider，支持 DeepSeek、Moonshot、Kimi For Coding、OpenAI Codex 和 OpenCode Go；自动发现配置，展示配额窗口与重置时间，并支持分档着色、拖动和自动刷新。

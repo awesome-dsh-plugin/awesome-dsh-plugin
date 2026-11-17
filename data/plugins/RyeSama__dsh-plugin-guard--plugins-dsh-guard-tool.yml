@@ -1,0 +1,6 @@
+url: https://github.com/RyeSama/dsh-plugin-guard/tree/main/plugins/dsh-guard-tool
+name: RyeSama/dsh-plugin-guard#dsh-guard-tool
+category: security
+description:
+  en: 'Registers one agent tool, plugin_guard, that statically scans a DSH plugin package before it is installed and reports a verdict with the reasons: a missing or broken dsh.bundle.patch, a missing dsh.permissions block, install scripts, dangerous APIs and obfuscation, dependency risk, and source that is not indexed and therefore cannot be verified. Read-only: the scanned code is never imported, installed, evaluated or run.'
+  zh: '注册一个 agent 工具 plugin_guard，在安装前对 DSH 插件包做静态扫描，给出判定与原因：缺少或损坏的 dsh.bundle.patch、未声明 dsh.permissions、安装脚本、危险 API 与代码混淆、依赖风险，以及未索引、无法核验的源码。只读：不导入、不安装、不求值、不运行被扫描的代码。'

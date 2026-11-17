@@ -1,0 +1,6 @@
+url: https://github.com/blkpne/dsh-database
+name: blkpne/dsh-database
+category: tools
+description:
+  en: Connect DeepSeek Harness Web to MySQL, MariaDB, PostgreSQL, SQL Server, Oracle and MongoDB for schema discovery and read-only queries through session-authorized MCP tools.
+  zh: DeepSeek Harness Web 数据库插件：统一管理 MySQL、MariaDB、PostgreSQL、SQL Server、Oracle 和 MongoDB 连接，让 Agent 按会话授权探索数据结构、执行只读查询并辅助数据分析。

@@ -1,0 +1,6 @@
+url: https://github.com/darkings/dsh-plugin-update-center
+name: darkings/dsh-plugin-update-center
+category: market
+description:
+  en: "A DSH-native plugin update center: check and update installed plugins from the sidebar with snapshots, rollback, queued updates and uninstall-leftover cleanup."
+  zh: "尊重 DSH 原始风格的插件更新插件：在侧边栏检查、排队更新已安装插件，支持快照回滚、安装后校验、卸载残留清理与离线恢复。"

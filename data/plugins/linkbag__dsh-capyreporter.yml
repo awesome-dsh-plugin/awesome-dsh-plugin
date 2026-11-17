@@ -1,0 +1,6 @@
+url: https://github.com/linkbag/dsh-capyreporter
+name: linkbag/dsh-capyreporter
+category: ui
+description:
+  en: 'Always-on-top capybara task reporter for DSH Web — a transparent floating pet that narrates each trajectory step in a speech bubble, names the project it reports for, and alerts you when a task completes while you work elsewhere.'
+  zh: '为 DSH Web 打造的永远置顶的水豚任务播报宠物——透明悬浮气泡逐条播报运行轨迹、标明所属项目，任务完成时提醒正在别处忙碌的你。'

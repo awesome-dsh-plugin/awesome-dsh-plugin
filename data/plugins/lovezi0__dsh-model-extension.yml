@@ -1,0 +1,6 @@
+url: https://github.com/lovezi0/dsh-model-extension
+name: lovezi0/dsh-model-extension
+category: model
+description:
+  en: 'Models+ settings page for the DSH web UI: per-model reasoning-effort tables, input modalities and compat flags saved through the official settings pipeline, with models.dev metadata prefill and API key management.'
+  zh: '模型+ 设置页:按模型声明推理挡位、输入模态与兼容参数(走官方 settings 管线保存),支持 models.dev 元数据预填与 API 密钥管理。'

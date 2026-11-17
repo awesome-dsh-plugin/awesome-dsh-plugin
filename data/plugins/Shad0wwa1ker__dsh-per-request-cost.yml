@@ -1,0 +1,6 @@
+url: https://github.com/Shad0wwa1ker/dsh-per-request-cost
+name: Shad0wwa1ker/dsh-per-request-cost
+category: usage
+description:
+  en: "Composer pill with the DeepSeek account balance, the live peak/off-peak pricing phase, and this session's spend priced request by request at the rate in effect when each request was sent. Subagent sessions' costs are aggregated into the parent session; Search and Fetch fees are charged only for DeepSeek's search engine, while third-party engines (Tavily, Bing, Exa, …) are counted but free. The balance refresh interval is configurable."
+  zh: "输入框下方的余额胶囊：显示 DeepSeek 账户余额、实时峰谷时段，以及本会话花费——每条请求都按发出时刻生效的峰谷单价计价，子智能体会话的花费汇总进父会话；Search 与 Fetch 只对 DeepSeek 搜索引擎计费，Tavily、Bing、Exa 等第三方引擎只计数不计费；余额刷新间隔可在插件设置页调整。"

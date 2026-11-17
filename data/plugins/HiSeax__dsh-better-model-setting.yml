@@ -1,0 +1,7 @@
+url: https://github.com/HiSeax/dsh-better-model-setting
+name: HiSeax/dsh-better-model-setting
+category: model
+description:
+  en: Replaces the official Models settings page with provider lifecycle management, per-model reasoning effort tiers, retry overrides, drag reorder and upstream model sync.
+  zh: 替代官方「模型」设置页：提供方生命周期管理、每模型思考档位、重试覆盖、拖动排序与上游模型同步。
+tarball: https://github.com/HiSeax/dsh-better-model-setting/releases/download/v0.3.1/dsh-better-model-setting-0.3.1.tgz

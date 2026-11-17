@@ -1,0 +1,8 @@
+url: https://github.com/KeinsteinNUS/dsh-speech-polish
+name: KeinsteinNUS/dsh-speech-polish
+category: voice
+description:
+  en: 'Adds a terminology-aware correction pass to the built-in local speech-to-text: keeps DSH''s own microphone and SenseVoice engine (audio never leaves the machine) and fixes homophones, domain terms and malformed numbers in the finished transcript.'
+  zh: '给内置本地语音转写加一层术语纠错：沿用自带的麦克风与 SenseVoice 引擎（音频不出本机），在文字进入输入框前修正同音字、专业名词与数字写法。'
+icon: https://raw.githubusercontent.com/KeinsteinNUS/dsh-speech-polish/main/assets/icon-180.png
+tarball: https://github.com/KeinsteinNUS/dsh-speech-polish/releases/download/v0.1.0/dsh-speech-polish-0.1.0.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/wmk66ds/dsh-vision-unlock
+name: wmk66ds/dsh-vision-unlock
+category: vision
+description:
+  zh: "移除拦截图片请求的多模态能力门禁：改写 llm.resolveModelInfo 的返回值与适配器模型表，为未声明 input 的路由补上 image 输入能力，使其可以发送和读取图片。不改 app.asar，也不改配置树。"
+  en: "Removes the model-capability gate that blocks image prompts: patches llm.resolveModelInfo results and adapter model tables to declare image input, so routes with no declared input modality can send and read images. No app.asar or config-tree edits."

@@ -1,0 +1,6 @@
+url: https://github.com/pyh-pan/dsh-openai-oauth
+name: pyh-pan/dsh-openai-oauth
+category: model
+description:
+  en: 'Use ChatGPT subscriptions in DeepSeek Harness Desktop via official Sign in with ChatGPT, with dynamic Agent registration and native model and reasoning selection.'
+  zh: '通过官方 Sign in with ChatGPT 授权在 DeepSeek Harness Desktop 使用 ChatGPT 订阅，支持动态 Agent 注册及原生模型和推理强度选择。'

@@ -1,0 +1,6 @@
+url: https://github.com/zzy-12345678/dsh-file-convert
+name: zzy-12345678/dsh-file-convert
+category: tools
+description:
+  en: 'Local image, PDF, data, audio/video and Office file conversion through agent tools and a drag-and-drop interface; v1.0.x targets DSH Desktop 0.2.1-rc.5, with external tools required for some conversions.'
+  zh: '通过 Agent 工具和拖拽界面在本地转换图片、PDF、数据、音视频及 Office 文件；v1.0.x 适配 DSH Desktop 0.2.1-rc.5，部分转换需要外部工具。'

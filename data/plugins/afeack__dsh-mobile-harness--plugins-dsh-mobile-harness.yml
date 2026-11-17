@@ -1,0 +1,7 @@
+url: https://github.com/afeack/dsh-mobile-harness/tree/main/plugins/dsh-mobile-harness
+name: afeack/dsh-mobile-harness#dsh-mobile-harness
+category: remote
+icon: https://raw.githubusercontent.com/afeack/dsh-mobile-harness/main/assets/icon.png
+description:
+  en: "Remote access gateway for DSH: a browser, or the optional 4 MB Android app, scans a QR code and joins the session already running on the desktop. One-time QR tickets (10 minutes, single use), a 6-digit pairing code matched on both screens, four network entries (SakuraFrp / Cloudflare quick tunnel / LAN / Tailscale), and per-device admission: an online-device limit, online devices pinned first with a green dot, and remove = disconnect plus revoke trust. The gateway listens on 127.0.0.1 only."
+  zh: "DSH 的远程访问网关：用浏览器或可选的 Android App 扫一个码，接入电脑上正在运行的同一个会话。一次性二维码票据（10 分钟、扫一次失效）、6 位配对码两端核对、四条网络入口（SakuraFrp / Cloudflare 快速隧道 / 局域网 / Tailscale）、逐台设备准入（在线上限、在线设备绿灯置顶、离线灰灯、移除即断开并撤销信任）。网关只监听 127.0.0.1。"

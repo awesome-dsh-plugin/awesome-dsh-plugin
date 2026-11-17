@@ -1,0 +1,6 @@
+url: https://github.com/WanchunLian/dsh-draft-polish
+name: WanchunLian/dsh-draft-polish
+category: tools
+description:
+  en: 'One-click draft polish for the DSH composer: rewrites your spoken draft into professional wording, sends only the draft snapshot (never conversation context), and never blocks sending if the LLM is unavailable.'
+  zh: 'DSH 输入框一键润色草稿：把口语化表达改写成专业措辞；只发送草稿快照、绝不夹带会话上下文；LLM 不可用时优雅降级，不阻塞发送。'

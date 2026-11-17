@@ -1,0 +1,7 @@
+url: https://github.com/lyingloong/dsh-llm-pool
+name: lyingloong/dsh-llm-pool
+category: model
+description:
+  en: Unified provider pools for DeepSeek Harness with session-sticky balancing, capability-aware model mapping, and automatic failover.
+  zh: DeepSeek Harness 的统一模型池：会话粘性、能力感知映射与自动故障切换。
+icon: https://raw.githubusercontent.com/lyingloong/dsh-llm-pool/main/docs/assets/icon.png

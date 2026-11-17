@@ -1,0 +1,6 @@
+url: https://github.com/jinwendijv/dsh-applauncher
+name: jinwendijv/dsh-applauncher
+category: tools
+description:
+  en: Scan installed Windows apps and launch them from a sidebar launcher above the settings icon.
+  zh: 扫描本机已安装的 Windows 应用，在侧边栏设置图标上方提供一键启动。

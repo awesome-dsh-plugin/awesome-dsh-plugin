@@ -1,0 +1,6 @@
+url: https://github.com/Aafff623/dsh-keyboard-manager
+name: Aafff623/dsh-keyboard-manager
+category: ui
+description:
+  en: 'Keyboard shortcuts for the DSH Web UI: Ctrl+Q toggles the left sidebar, Ctrl+E toggles the right panel, and Ctrl+S opens Settings. Physical key codes can be overridden in the profile patch.'
+  zh: 为 DSH Web UI 提供快捷键：Ctrl+Q 切换左侧栏，Ctrl+E 切换右侧栏，Ctrl+S 打开设置。物理键码可在 profile 补丁中覆盖。

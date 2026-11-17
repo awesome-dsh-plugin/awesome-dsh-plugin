@@ -1,0 +1,6 @@
+url: https://github.com/ZhaoCang-QWQ/dsh-session-cost
+name: ZhaoCang-QWQ/dsh-session-cost
+category: usage
+description:
+  en: Exact per-session spend for DeepSeek Harness, billed request by request at the peak or off-peak rate in force when that request was sent.
+  zh: 在会话状态栏精确显示本会话累计花费：按每次请求各自的时段价与所用模型分别计费。

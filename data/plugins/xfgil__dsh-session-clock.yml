@@ -1,0 +1,6 @@
+url: https://github.com/xfgil/dsh-session-clock
+name: xfgil/dsh-session-clock
+category: session
+description:
+  en: 'Per-session clock injection with durable idle-gap tracking: tells the agent how long it has been since this particular conversation last spoke, which the host''s time context (last message only) cannot.'
+  zh: '给指定会话授时，并给出「距上次对话过去多久」。补上宿主时间上下文只算「距上一条消息」、无法按会话开关的缺口。'

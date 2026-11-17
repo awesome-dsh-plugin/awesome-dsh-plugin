@@ -1,0 +1,6 @@
+url: https://github.com/pgjh/dsh-model-metadata
+name: pgjh/dsh-model-metadata
+category: model
+description:
+  en: 'DSH plugin: matches a model you declared on a custom gateway to the capability metadata it should have — context window, output cap, reasoning levels and image support — by looking the bare model name up at runtime; the plugin never writes your settings document.'
+  zh: 'DSH 插件：按模型名在运行时查一次目录，把你在自定义网关上声明的模型该有的能力元数据补上——上下文长度、输出上限、推理等级、能否看图；插件自己不写你的设置文档。'

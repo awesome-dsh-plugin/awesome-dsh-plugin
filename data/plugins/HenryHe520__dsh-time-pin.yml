@@ -1,0 +1,7 @@
+url: https://github.com/HenryHe520/dsh-time-pin
+name: HenryHe520/dsh-time-pin
+category: tools
+icon: https://raw.githubusercontent.com/HenryHe520/dsh-time-pin/main/docs/screenshots/icon-512.png
+description:
+  en: 'Gives one conversation a pinned as-of point and a dated evidence window on both sides — [as_of − before, as_of + after], past, future or BC. In restricted mode the agent is told the active window once per change, web_search results are filtered to dated sources inside the window and undated sources are rejected, and the first reply must echo the window (a missing echo gets one nudge). It also narrates long silent background jobs with deterministic [TIME FACT] facts and exposes a read-only time_pin_status tool; default mode injects nothing and filters nothing.'
+  zh: '为单个对话钉住 as_of 时间点与前后两侧的带日期证据窗口——[as_of − before, as_of + after]，支持过去、未来与公元前。在受限模式下，窗口变化时只告知一次当前窗口，web_search 结果按发布日期过滤到窗口内、无日期来源一律排除，首条回复必须确认窗口（缺失时纠正一次）。另对长时间静默的后台任务给出确定性 [TIME FACT] 播报，并提供只读的 time_pin_status 工具；默认模式不注入、不过滤。'

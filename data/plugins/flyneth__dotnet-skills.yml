@@ -1,0 +1,6 @@
+url: https://github.com/flyneth/dotnet-skills
+name: flyneth/dotnet-skills
+category: skill
+description:
+  en: A fork of Microsoft's official .NET/C# skills for AI coding agents, additionally packaged as a DeepSeek Harness plugin — covering development, testing, diagnostics, migration, and AI integration.
+  zh: 微软官方 .NET/C# AI 编码智能体技能的 fork，额外打包为 DeepSeek Harness 插件——覆盖开发、测试、诊断、迁移与 AI 集成。

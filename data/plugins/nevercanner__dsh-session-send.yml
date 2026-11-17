@@ -1,0 +1,6 @@
+url: https://github.com/nevercanner/dsh-session-send
+name: nevercanner/dsh-session-send
+category: session
+description:
+  en: 'Session bus for DSH: independent sessions in one project message each other by session id or registered name and wake the target, with a sidebar inbox, unread badges, a roster verification tool, and a per-project switch that stays off until .dsh-bus.json opts in.'
+  zh: 'DSH 会话总线：同一项目里的独立会话按 session id 或自注册名互相发消息并唤醒对方，带侧栏收件箱、未读标记、名册校对工具，以及默认关闭的项目级开关（由 .dsh-bus.json 开启）。'

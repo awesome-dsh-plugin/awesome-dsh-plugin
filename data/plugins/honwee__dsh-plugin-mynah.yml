@@ -1,0 +1,6 @@
+url: https://github.com/honwee/dsh-plugin-mynah
+name: honwee/dsh-plugin-mynah
+category: voice
+description:
+  en: "Give the agent a talking face: seven tools that drive a self-hosted Mynah realtime digital human — speak (queued or interrupting), play a gesture clip, interrupt, list live sessions and channels, check health, add text to its knowledge base."
+  zh: "给 Agent 一张会说话的脸：七个工具驱动自托管的 Mynah 实时数字人——开口说话（排队或打断）、播放动作片段、打断、查看在线会话与频道、健康检查、往知识库加文本。"

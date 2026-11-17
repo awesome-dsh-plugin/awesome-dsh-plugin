@@ -1,0 +1,7 @@
+url: https://github.com/fanrj3/dsh-presence
+name: fanrj3/dsh-presence
+category: remote
+description:
+  en: 'Work on any machine in your ssh config as if it were local: persistent connections, native file editing, search, exec and terminals, with nothing installed on the remote host.'
+  zh: '像操作本地一样使用 ssh config 中的任意远程机器：持久连接、原生文件编辑、搜索、命令执行与终端，远端无需安装任何东西。'
+tarball: https://github.com/fanrj3/dsh-presence/releases/latest/download/presence-plugin.tgz

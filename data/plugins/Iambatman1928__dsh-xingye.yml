@@ -1,0 +1,7 @@
+url: https://github.com/Iambatman1928/dsh-xingye
+name: Iambatman1928/dsh-xingye
+category: ui
+tarball: https://github.com/Iambatman1928/dsh-xingye/releases/latest/download/dsh-xingye.tgz
+description:
+  en: 'Chat agent for a DeepSeek Harness session: create characters and write their personas, keep several archive threads per character, undo or rewind the locally stored transcript, and record story beats in an event book.'
+  zh: '把 DSH 的一个会话变成聊天 agent：新建人物并写人设、为同一人物开多条档案线、本地保存的对话可撤销可回溯、剧情节点记进事件簿。'

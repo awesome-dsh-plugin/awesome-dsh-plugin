@@ -1,0 +1,6 @@
+url: https://github.com/tuogusa/dsh-session-tags
+name: tuogusa/dsh-session-tags
+category: session
+description:
+  en: Attach tags to sessions and search sessions by tag in the Web settings panel.
+  zh: 为会话添加标签，并在 Web 设置面板中按标签搜索会话。

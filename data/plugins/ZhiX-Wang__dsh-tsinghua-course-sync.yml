@@ -1,0 +1,7 @@
+url: https://github.com/ZhiX-Wang/dsh-tsinghua-course-sync
+name: ZhiX-Wang/dsh-tsinghua-course-sync
+category: workflow
+description:
+  en: Incrementally sync Tsinghua Learn course materials through a companion browser extension, with local file checks and per-run logs.
+  zh: 通过配套浏览器扩展增量同步清华网络学堂课程资料，校验本地文件并记录每次同步结果。
+tarball: https://github.com/ZhiX-Wang/dsh-tsinghua-course-sync/releases/download/v0.1.0/dsh-tsinghua-course-sync-0.1.0.tgz

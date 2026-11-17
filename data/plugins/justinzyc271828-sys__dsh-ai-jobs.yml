@@ -1,0 +1,7 @@
+url: https://github.com/justinzyc271828-sys/dsh-ai-jobs
+name: justinzyc271828-sys/dsh-ai-jobs
+category: tools
+description:
+  en: "Indexes public AI-company job boards (Greenhouse, Ashby, Lever, Workable, SmartRecruiters), scores postings for AI relevance, extracts the requirements from each job description, and produces a scheduled daily Markdown digest."
+  zh: "索引海外 AI 公司的公开招聘看板（Greenhouse、Ashby、Lever、Workable、SmartRecruiters），按 AI 相关性给岗位打分，从职位描述里提取招聘要求，并按计划每天生成 Markdown 摘要。"
+tarball: https://github.com/justinzyc271828-sys/dsh-ai-jobs/releases/latest/download/dsh-ai-jobs.tgz

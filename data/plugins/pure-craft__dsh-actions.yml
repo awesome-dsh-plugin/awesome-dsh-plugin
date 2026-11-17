@@ -1,0 +1,6 @@
+url: https://github.com/pure-craft/dsh-actions
+name: pure-craft/dsh-actions
+category: ui
+description:
+  en: 'Deterministic project actions shared by people and agents: one actions.json, a right-sidebar run panel, and agent tools.'
+  zh: '人与 Agent 共用的确定性项目任务：一份 actions.json，右侧栏运行面板与 Agent 工具双入口。'

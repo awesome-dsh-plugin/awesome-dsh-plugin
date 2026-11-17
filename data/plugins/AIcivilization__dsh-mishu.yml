@@ -1,0 +1,6 @@
+name: AIcivilization/dsh-mishu
+url: https://github.com/AIcivilization/dsh-mishu
+category: notify
+description:
+  en: 'DSH secretary: triages your unread GitHub notifications by their real state every 15 minutes (closing what is already resolved), remembers dated things you tell it (bills, renewals, document expiries, birthdays) and reminds you when due, and watches your inbox read-only; secrets live in the system keychain only.'
+  zh: 'DSH 小秘书：每 15 分钟按当前状态分诊 GitHub 未读通知（已解决的替你关掉），记住你交代的到期事项（账单、续费、证件、生日）到时提醒，只读盯着邮箱收件箱；密码只进系统钥匙串。'

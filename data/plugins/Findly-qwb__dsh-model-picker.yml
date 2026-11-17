@@ -1,0 +1,6 @@
+url: https://github.com/Findly-qwb/dsh-model-picker
+name: Findly-qwb/dsh-model-picker
+category: ui
+description:
+  en: Two-pane model picker that replaces the composer model menu with a searchable provider-grouped list on the left and a detail card on the right showing the selected model's context window, output cap, capability tags and reasoning-effort levels, all read from that model's own provider. The npm name dsh-model-picker belongs to another author; install through this GitHub source.
+  zh: 双栏模型选择器，替换输入框的模型菜单：左栏可搜索并按供应商分组，右栏详情卡显示所选模型的上下文窗口、输出上限、能力标签与推理档位，全部取自该模型自己的供应商。npm 上的 dsh-model-picker 属于另一位作者，请按本仓库的 GitHub 源安装。

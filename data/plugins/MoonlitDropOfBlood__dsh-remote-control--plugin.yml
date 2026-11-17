@@ -1,0 +1,6 @@
+url: https://github.com/MoonlitDropOfBlood/dsh-remote-control/tree/main/plugin
+name: MoonlitDropOfBlood/dsh-remote-control#plugin
+category: remote
+description:
+  en: 'Remote-control DeepSeek Harness from a HarmonyOS phone: list, switch and create sessions; send prompts (the phone follows the host''s busy-enter behaviour, queue or steer); stream assistant text, reasoning and tool steps; answer approval requests and questions; view session images as inline thumbnails with on-demand full-size fetch; switch model and reasoning effort; cancel running tasks; receive push notifications. Traffic is end-to-end encrypted (AES-256-GCM with HKDF-SHA256 key derivation) and travels through a dumb-pipe relay that only sees ciphertext; v1.1.3 adds a session-epoch anti-replay handshake and optional native TLS for the relay. The relay can be hosted on the local machine (managed by the plugin) or on a VPS; the phone app and the plugin ship in one repository. 5 Remote methods.'
+  zh: '用 HarmonyOS 手机遥控 DeepSeek Harness：浏览/切换/新建会话；发送提示词（手机跟随宿主的繁忙行为，排队或插话）；流式接收正文、思考与工具步骤；应答审批请求与提问；查看会话图片（缩略图内联 + 大图按需拉取）；切换模型与思考强度；取消运行中的任务；接收推送通知。流量端到端加密（HKDF-SHA256 派生密钥 + AES-256-GCM），经只转发密文的哑管道中继；v1.1.3 增加会话纪元抗重放握手与中继原生 TLS。中继可跑在本机（由插件托管）或 VPS 上；手机 App 与插件同仓库发布。5 个 Remote 方法。'

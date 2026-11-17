@@ -1,0 +1,6 @@
+url: https://github.com/yoinchen23-oss/dsh-message-branch
+name: yoinchen23-oss/dsh-message-branch
+category: session
+description:
+  en: Edit plain-text user prompts inline and resend them in a new DSH conversation branch.
+  zh: 原位编辑纯文本用户提问，并在新的 DSH 会话分支中重新发送。

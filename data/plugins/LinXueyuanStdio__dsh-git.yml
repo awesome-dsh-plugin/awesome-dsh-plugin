@@ -1,0 +1,6 @@
+url: https://github.com/LinXueyuanStdio/dsh-git
+name: LinXueyuanStdio/dsh-git
+category: git
+description:
+  en: 'Local Git plus the four GitHub remote tabs in the official DSH right sidebar: Changes (per-file staging, line diffs, and commit messages written by the model already configured in DSH), History, then Code, Issues, Pull requests and Actions proxied by the host half. The token stays in the host half through ctx.credentials and /dsh-git/* accepts loopback requests only.'
+  zh: 'DSH 官方右侧栏里的本地 Git 与四个 GitHub 远端页签：Changes（按文件暂存、逐行 diff、提交信息由 DSH 里已配好的模型生成）、History，以及由 host 半代理的 Code / Issues / Pull requests / Actions。令牌只存在 host 半（ctx.credentials），/dsh-git/* 只接受 loopback 请求。'

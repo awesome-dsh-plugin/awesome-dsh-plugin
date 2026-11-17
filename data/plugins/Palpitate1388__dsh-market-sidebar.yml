@@ -1,0 +1,6 @@
+url: https://github.com/Palpitate1388/dsh-market-sidebar
+name: Palpitate1388/dsh-market-sidebar
+category: market
+description:
+  en: Adds a dshmarket entry to the DSH sidebar footer, sharing a row with the Agents-Anywhere remote-control entry and sitting to its right, and opens the market panel in an overlay.
+  zh: 在 DSH 侧边栏底部加入 dshmarket 入口，与 Agents-Anywhere 的「远程控制」同处一行并位于其右侧，点击以浮层打开市场面板。

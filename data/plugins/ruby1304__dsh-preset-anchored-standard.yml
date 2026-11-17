@@ -1,0 +1,6 @@
+url: https://github.com/ruby1304/dsh-preset-anchored-standard
+name: ruby1304/dsh-preset-anchored-standard
+category: dev
+description:
+  en: 'Minimal-anchored agent preset: request #1 keeps the real bash + str_replace_editor pair with auto-injected context stripped, then promotion unlocks the full Standard catalog and posts a one-shot background-jobs notice against sleep-polling habits.'
+  zh: 'Minimal 锚定的 agent preset：request #1 仅保留真实 bash + str_replace_editor 工具对并剥离自动注入上下文，晋升后开放完整 Standard 工具目录，并注入一次性后台 job 提示纠正 sleep 前台轮询惯性。'

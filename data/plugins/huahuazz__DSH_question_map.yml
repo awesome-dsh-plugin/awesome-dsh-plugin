@@ -1,0 +1,6 @@
+url: https://github.com/huahuazz/DSH_question_map
+name: huahuazz/DSH_question_map
+category: ui
+description:
+  en: 'Select text in a conversation to ask a context-free side question in a floating card, and browse every question as a network graph.'
+  zh: '在对话里选中文字横向追问（空上下文的浮卡），所有追问连成一张可浏览的网状图，支持导出 PNG。'

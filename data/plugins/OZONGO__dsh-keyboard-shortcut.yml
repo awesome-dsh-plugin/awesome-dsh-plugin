@@ -1,0 +1,6 @@
+url: https://github.com/OZONGO/dsh-keyboard-shortcut
+name: OZONGO/dsh-keyboard-shortcut
+category: ui
+description:
+  en: 'Adds a Keyboard Shortcuts page to the DSH Settings panel with six rebindable commands — permission-mode cycling, reasoning-effort stepping, a status-page and a task-list shortcut — plus PgUp/PgDn input navigation and an optional composer Enter remap.'
+  zh: '为 DSH 设置面板增加「快捷键」页面：六个可改键命令（权限模式切换、思考强度调节、状态页、任务清单），并展示翻页键跳转与可选的输入框 Enter 重映射。'

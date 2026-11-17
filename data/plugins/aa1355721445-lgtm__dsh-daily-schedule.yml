@@ -1,0 +1,6 @@
+url: https://github.com/aa1355721445-lgtm/dsh-daily-schedule
+name: aa1355721445-lgtm/dsh-daily-schedule
+category: identity
+description:
+  en: "Every night generates the companion character's schedule for the next day with DSH's configured model, from the persona (AGENT.md by default) and a weighted day type (work, rest, outing, home, overtime, slacking, or your own); injects the date, time, current activity and what comes next into the system prompt, with a speaking-style note so the character does not recite a timetable; adds schedule_view and schedule_adjust tools and a /life command that turns the injection on or off per session. With aa1355721445-lgtm/dsh-image-studio installed, each entry gets an outfit, scene and props from its libraries. A settings page shows today's and tomorrow's timelines and edits day types."
+  zh: "每晚用 DSH 已配置的模型，按人设（默认读 AGENT.md）和按权重抽到的日程类型（上班、休息、外出、宅家、加班、摸鱼，也可自定义）生成陪伴角色第二天的全天日程；把日期、时间、此刻在做什么、接下来做什么注入系统提示，并附一段说话方式，避免角色念时间表；提供 schedule_view、schedule_adjust 工具和按会话开关注入的 /life 指令。装了生图工作室（aa1355721445-lgtm/dsh-image-studio）时，每段日程会配上素材库里的穿搭、场景和物品。设置页可查看今天和明天的时间线、编辑日程类型。"

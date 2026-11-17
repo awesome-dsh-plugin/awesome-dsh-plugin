@@ -1,0 +1,6 @@
+url: https://github.com/magicOF2/dsh-turn-marks
+name: magicOF2/dsh-turn-marks
+category: ui
+description:
+  en: 'Left-edge turn-marks strip in chat: one bar per user message, click to jump to that message, hover for a preview, active bar turns white.'
+  zh: 会话左侧消息标记条：每发一条消息多一根条条，点击跳转到该消息、悬停预览内容，当前消息对应的条条变白。

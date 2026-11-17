@@ -1,0 +1,6 @@
+url: https://github.com/intsig-textin/dsh-plugin-xparse
+name: intsig-textin/dsh-plugin-xparse
+category: tools
+description:
+  en: "Adds a structured TextIn xParse tool and document parsing skill to DeepSeek Harness, supporting document parsing, cached-content navigation and durable multi-document tasks, with AppKey or Device OAuth authentication, paid-operation approval and bundled cross-platform CLI binaries."
+  zh: "为 DeepSeek Harness 提供结构化的 TextIn xParse 工具与文档解析 Skill，支持文档解析、缓存内容导航和持久化多文档任务，并集成 AppKey 或 Device OAuth 认证、付费操作审批及跨平台内嵌 CLI。"

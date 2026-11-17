@@ -1,0 +1,6 @@
+url: https://github.com/NormanFxxkingRockwell/dsh-keyboard-history
+name: NormanFxxkingRockwell/dsh-keyboard-history
+category: ui
+description:
+  en: 'Minimal ↑/↓ input history for the DSH web composer: press ↑/↓ to walk back through sent messages. Nothing else.'
+  zh: 'DSH 会话输入框的极简输入历史：按 ↑/↓ 翻阅发过的消息。只有方向键，别无其他。'

@@ -1,0 +1,7 @@
+url: https://github.com/lg320531124/dsh-declutter-ui
+name: lg320531124/dsh-declutter-ui
+category: ui
+description:
+  en: 'Three client-only fixes for the web UI: unfolds the session list past its 5-row fold, collapses long tool-call runs behind one toggle, and restores the mobile sidebar drawer above its own mask.'
+  zh: '三个纯前端修复：把会话列表被折叠的 5 行展开、把长串工具调用收进一个开关、修好手机端侧边栏抽屉被自己的遮罩盖住。'
+tarball: https://github.com/lg320531124/dsh-declutter-ui/releases/download/v1.0.0/dsh-declutter-ui-1.0.0.tgz

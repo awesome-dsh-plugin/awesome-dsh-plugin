@@ -1,0 +1,7 @@
+url: https://github.com/TheLiudawei/dsh-codeflow-canvas
+name: TheLiudawei/dsh-codeflow-canvas
+category: workflow
+description:
+  en: 'Sidebar node canvas for DSH where each node is an agent task and each link a dataflow dependency. One deterministic import (no model calls) produces both a task pipeline and a file-level module graph; file nodes carry a coupling score, and every run is snapshotted so it can be undone as a whole.'
+  zh: 'DSH 侧边栏的节点画布：每个节点是一个 agent 任务，每条连线是一条数据流依赖。一次确定性导入（不调模型）同时生成任务流水线与文件级模块结构图，文件节点带耦合评分；每次运行前自动快照，可整次撤销。'
+icon: https://raw.githubusercontent.com/TheLiudawei/dsh-codeflow-canvas/main/assets/branding/logo-512.png

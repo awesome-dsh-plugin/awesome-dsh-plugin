@@ -1,0 +1,6 @@
+url: https://github.com/GoJo22/dsh-catalog
+name: GoJo22/dsh-catalog
+category: skill
+description:
+  en: Scans the skills DSH can load into one browsable catalog organized as collection, category and command, with a sidebar panel, click-to-insert into the composer, and custom categories and per-command notes saved outside the plugin directory.
+  zh: 把 DSH 能加载的技能扫成一份可浏览目录，按集合、分类、命令三级组织，提供侧边栏面板与点击插入输入框，自定义分类与命令说明保存在插件目录之外。

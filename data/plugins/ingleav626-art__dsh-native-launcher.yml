@@ -1,0 +1,6 @@
+url: https://github.com/ingleav626-art/dsh-native-launcher
+name: ingleav626-art/dsh-native-launcher
+category: notify
+description:
+  en: 'Windows desktop launcher for the DSH Web UI: desktop shortcut, silent start, system tray with open/full-exit (stop service, close app window, quit tray), PWA app window with focus-instead-of-relaunch, install prompt, and task-completion notifications.'
+  zh: DSH Web UI 桌面化启动器：桌面快捷方式、静默启动、系统托盘（打开 / 彻底退出＝停服务＋关应用窗口＋退托盘）、PWA 应用窗口（已运行则聚焦不重复弹窗）、安装引导、任务完成通知。

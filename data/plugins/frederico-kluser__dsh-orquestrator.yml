@@ -1,0 +1,6 @@
+url: https://github.com/frederico-kluser/dsh-orquestrator
+name: frederico-kluser/dsh-orquestrator
+category: model
+description:
+  en: Pick the model your subagents run on — with a reasoning-effort ceiling and an output-token cap — enforced in code on every child DSH starts, whichever tool starts it.
+  zh: 自己选定子代理运行的模型——附带推理力度上限和输出 token 上限——在代码层面对 DSH 启动的每一个子代理强制执行，无论它由哪个工具启动。

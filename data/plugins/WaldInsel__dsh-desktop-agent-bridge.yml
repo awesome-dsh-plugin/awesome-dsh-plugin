@@ -1,0 +1,6 @@
+url: https://github.com/WaldInsel/dsh-desktop-agent-bridge
+name: WaldInsel/dsh-desktop-agent-bridge
+category: workflow
+description:
+  en: 'Let external MCP agents delegate tasks to the existing DSH desktop, with visible sessions, user takeover, and optional approval handoff.'
+  zh: '让外部 MCP Agent 将任务交给现有 DSH 桌面端，并提供可见会话、用户接管与可选审批转交。'

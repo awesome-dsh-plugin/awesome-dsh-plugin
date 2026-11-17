@@ -1,0 +1,6 @@
+url: https://github.com/gengwg/dsh-kubectl-guard
+name: gengwg/dsh-kubectl-guard
+category: security
+description:
+  en: 'Policy plugin that gates kubectl by kubeconfig context: hard-deny irreversible verbs outside local clusters, ask for the rest.'
+  zh: '按 kubeconfig context 管控 kubectl 调用的策略插件：本地集群外硬拒绝不可逆操作，其余写操作请求人工确认。'

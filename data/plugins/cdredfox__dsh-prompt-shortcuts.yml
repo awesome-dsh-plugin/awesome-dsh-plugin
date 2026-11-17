@@ -1,0 +1,6 @@
+url: https://github.com/cdredfox/dsh-prompt-shortcuts
+name: cdredfox/dsh-prompt-shortcuts
+category: ui
+description:
+  en: 'Pinned prompt shortcuts in a single row above the composer — one click replaces the draft with the saved text — plus a searchable panel for pinning, editing and deleting prompts, overflow collapsed into a "More" menu, storage in a Host-side JSON file, and a prompt_shortcuts agent tool that reads and writes the same file.'
+  zh: '输入框上方的一行置顶提示词按钮，点击即替换草稿内容；另有可搜索的维护面板用于置顶、编辑、删除，放不下的按钮收进「更多」菜单，数据存于 Host 侧 JSON 文件，并注册 prompt_shortcuts 工具读写同一份数据。'

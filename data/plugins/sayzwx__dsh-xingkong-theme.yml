@@ -1,0 +1,7 @@
+url: https://github.com/sayzwx/dsh-xingkong-theme
+name: sayzwx/dsh-xingkong-theme
+category: theme
+tarball: https://github.com/sayzwx/dsh-xingkong-theme/releases/download/v1.13.0/dsh-xingkong-theme-1.13.0.tgz
+description:
+  en: "Deep-space theme for the Harness Web GUI: two fully designed light and dark palettes over a seamless cross-dissolve nebula wallpaper, plus a model probe that reports which configured models actually answer and their real context window."
+  zh: "深空观测站主题：浅色与深色两套完整设计，衬在无痕交叉溶解的星云动态壁纸之上；附带模型检验面板，告诉你哪些模型真的可用、真实上下文窗口有多大。"

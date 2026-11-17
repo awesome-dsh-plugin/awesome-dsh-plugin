@@ -1,0 +1,6 @@
+url: https://github.com/fengzhaoy/dsh-web-ide
+name: fengzhaoy/dsh-web-ide
+category: ui
+description:
+  en: "IDE tab in the dsh web client: a Monaco editor with the Dark Modern theme plus a file tree, git source control (stage/commit/push), an integrated xterm terminal and ripgrep workspace search, opened as a conversation view tab."
+  zh: "dsh Web 客户端里的 IDE 标签页：Dark Modern 主题的 Monaco 编辑器，配文件树、Git 源代码管理（暂存/提交/推送）、xterm 集成终端与 ripgrep 全工作区搜索，作为会话视图标签打开。"

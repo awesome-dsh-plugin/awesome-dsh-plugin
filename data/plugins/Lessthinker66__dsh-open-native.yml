@@ -1,0 +1,6 @@
+url: https://github.com/Lessthinker66/dsh-open-native
+name: Lessthinker66/dsh-open-native
+category: ui
+description:
+  en: Click a delivered-file card to open the file with the system default application instead of DSH's built-in sidebar preview; hold Shift to keep the original preview.
+  zh: 点击交付文件卡片时用系统默认程序打开文件，而不是在 DSH 侧边栏里预览；按住 Shift 保留原来的预览行为。

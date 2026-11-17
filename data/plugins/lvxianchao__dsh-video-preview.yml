@@ -1,0 +1,6 @@
+url: https://github.com/lvxianchao/dsh-video-preview
+name: lvxianchao/dsh-video-preview
+category: docs
+description:
+  en: Streaming video preview in the DSH sidebar — mp4, webm and mov play in place over an authenticated byte-range route, with 206 responses, instant seeking, no size cap and no build step.
+  zh: DSH 侧边栏里的流式视频预览：mp4、webm、mov 就地播放，走带鉴权的字节范围路由（206 响应），拖动秒开、没有大小上限、无构建步骤。

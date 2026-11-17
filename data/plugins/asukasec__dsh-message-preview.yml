@@ -1,0 +1,6 @@
+url: https://github.com/asukasec/dsh-message-preview
+name: asukasec/dsh-message-preview
+category: ui
+description:
+  en: Right-edge user-message navigator with an adaptive block layout that fits the available height, plus hover previews, keyboard controls, and click-to-jump navigation.
+  zh: 右侧用户消息导航条，根据消息数量与可用高度自适应排布导航块，并支持悬停预览、键盘操作与点击跳转。

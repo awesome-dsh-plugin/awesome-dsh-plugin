@@ -1,0 +1,7 @@
+url: https://github.com/Serenity-2026/dsh-treecom
+name: Serenity-2026/dsh-treecom
+category: session
+description:
+  en: 'A pannable conversation tree for DeepSeek Harness: inspect any turn in a side panel, return to its branch, and fork a new branch from any turn; continuous turns fold into a single node.'
+  zh: 'DeepSeek Harness 的可平移会话树：在侧栏查看任意一轮、回到该分支，并从任意一轮分叉；连续轮次会折叠成一个节点。'
+icon: https://raw.githubusercontent.com/Serenity-2026/dsh-treecom/main/assets/icon-180.png

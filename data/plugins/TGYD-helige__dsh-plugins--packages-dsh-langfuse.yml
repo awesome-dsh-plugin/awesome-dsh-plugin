@@ -1,0 +1,6 @@
+url: https://github.com/TGYD-helige/dsh-plugins/tree/main/packages/dsh-langfuse
+name: TGYD-helige/dsh-plugins#dsh-langfuse
+category: dev
+description:
+  en: 'Send dsh turn traces, LLM generations, tool spans, and subagent activity to Langfuse.'
+  zh: '将 dsh 的会话轮次、LLM 调用、工具调用及子 agent 活动记录到 Langfuse。'

@@ -1,0 +1,6 @@
+url: https://github.com/sjdhdbbf/dsh-drawai-vectorizer
+name: sjdhdbbf/dsh-drawai-vectorizer
+category: tools
+description:
+  en: 'Fork of fourzkw/dsh-drawai that keeps the editable .drawio canvas and its two agent tools, and adds a second vectorization engine beside the original tracer: hierarchical color clustering with Bezier spline fitting and per-channel color precision, selectable per drawing task in three fidelity levels (measured about 18, 38 and 46 dB PSNR on the same 1920x1080 frame (the upstream engine scores about 26 dB on that frame)), with worker parallelism raised to half the logical cores instead of a cap of four. The original tracer stays the default and remains the right choice for whole videos, where the new engine produces files hundreds of times larger.'
+  zh: 'fork 自 fourzkw/dsh-drawai，保留 .drawio 可编辑画布与两个模型工具，并在原版描边之外新增第二套矢量化引擎：分层颜色聚类 + 贝塞尔样条拟合 + 每通道色彩精度，绘制任务可选三档保真度（同一 1920×1080 帧实测约 18 / 38 / 46 dB PSNR（上游引擎同帧约 26 dB）），并行度提升为逻辑核心数的一半（不再封顶 4）。原版描边仍是默认引擎，也是整段视频的正确选择——新引擎在视频上产物会大出数百倍。'

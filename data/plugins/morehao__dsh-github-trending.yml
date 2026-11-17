@@ -1,0 +1,7 @@
+url: https://github.com/morehao/dsh-github-trending
+name: morehao/dsh-github-trending
+category: workflow
+description:
+  en: Schedules a daily, weekly or monthly GitHub Trending digest, has a local trendradar core write Chinese summaries and period recaps, commits them to your own repo and opens the pull request, and shows an overview, digest, run history, subscription and settings workbench.
+  zh: 按日 / 周 / 月周期定时生成 GitHub 趋势日报，由本地 trendradar 核心写中文简介与周期总结、提交到你自己的仓库并开 PR，内置概览 / 榜单 / 运行记录 / 订阅 / 设置工作台。
+icon: https://raw.githubusercontent.com/morehao/dsh-github-trending/main/assets/icon-180.png

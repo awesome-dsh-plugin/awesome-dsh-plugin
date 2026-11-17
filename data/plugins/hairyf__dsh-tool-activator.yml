@@ -1,0 +1,6 @@
+url: https://github.com/hairyf/dsh-tool-activator
+name: hairyf/dsh-tool-activator
+category: tools
+description:
+  en: Loads only the basic DSH tools by default and activates the rest on demand, with a per-tool switch list in the plugin settings.
+  zh: 默认只加载基础工具，其余工具按需激活，并在插件设置页以逐工具开关管理。

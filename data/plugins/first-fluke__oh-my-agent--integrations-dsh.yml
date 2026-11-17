@@ -1,0 +1,6 @@
+url: https://github.com/first-fluke/oh-my-agent/tree/main/integrations/dsh
+name: first-fluke/oh-my-agent#dsh
+category: dev
+description:
+  en: Runs project OMA checks before and after tool execution and when a turn tries to finish. Installs its OMA CLI dependency and initializes unconfigured projects on first use. Requires Node.js 22+; initial setup needs network access and project write access.
+  zh: 在工具执行前后以及尝试结束当前轮次时运行项目 OMA 检查。随插件安装 OMA CLI 依赖，并在首次使用时初始化未配置的项目。需要 Node.js 22+；首次初始化需要网络连接和项目目录写入权限。

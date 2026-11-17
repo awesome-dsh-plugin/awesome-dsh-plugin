@@ -1,0 +1,6 @@
+url: https://github.com/XWIDE/dsh-xwide-annotation
+name: XWIDE/dsh-xwide-annotation
+category: ui
+description:
+  en: 'Select text in a conversation to attach a numbered highlight with a colour stored per note, keep every mark in an outline panel that jumps back to its quote, and let a corner self-check badge report style, selector and saved-key problems without opening dev tools.'
+  zh: '在对话里划词加批注：编号高亮、每条各记自己的颜色，大纲面板列出全部标记并点一条跳回原文；右下角自检角标不开开发者工具就报出样式、越界选择器与本地存档键的问题。'

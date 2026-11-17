@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-remote-workspace
+name: GooDAnDReaDY/dsh-remote-workspace
+category: remote
+description:
+  en: 'SSH/SFTP remote workspaces with conflict-aware mirror sync, port forwarding, and a native Web UI.'
+  zh: '支持冲突感知镜像同步、端口转发和原生 Web UI 的 SSH/SFTP 远程工作区。'

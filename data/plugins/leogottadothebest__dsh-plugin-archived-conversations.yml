@@ -1,0 +1,6 @@
+url: https://github.com/leogottadothebest/dsh-plugin-archived-conversations
+name: leogottadothebest/dsh-plugin-archived-conversations
+category: session
+description:
+  en: 'Manage archived conversations in the Settings UI: unarchive them back to the sidebar, or permanently delete them with confirmation.'
+  zh: '在设置界面管理已归档对话：一键取消归档，或经确认后永久删除。'

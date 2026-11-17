@@ -1,0 +1,8 @@
+url: https://github.com/devzer0o0/dsh-prompt-optimizer
+name: devzer0o0/dsh-prompt-optimizer
+category: session
+tarball: https://github.com/devzer0o0/dsh-prompt-optimizer/releases/download/v0.1.2/feiyu999-dsh-prompt-optimizer-0.1.2.tgz
+icon: https://raw.githubusercontent.com/devzer0o0/dsh-prompt-optimizer/main/assets/icon-180.png
+description:
+  en: "Rewrites the message you type into the DSH composer into a precise prompt before the model ever sees it, with one cheap side call on the session's own route. The rewritten text is what gets logged and sent, so the transcript always shows exactly what the model received; hover the whale to compare before and after. Slash commands, very short or very long messages and image-only messages are left alone, and any failure sends your text untouched. The composer whale is the switch: dark silhouette when off, gold when on."
+  zh: "发送前把你打进 DSH 输入框的话改写成精确的提示词，用会话自己的路由跑一次很便宜的小调用。改写结果就是真正落盘、真正发出去的内容，所以对话记录里看到的就是模型收到的；悬停鲸鱼图标能对照改写前后。斜杠命令、过短或过长的消息、纯图片消息一律不动，任何失败都原样发送。输入框里那只鲸鱼就是开关：关闭时是深色剪影，开启时是金色。"

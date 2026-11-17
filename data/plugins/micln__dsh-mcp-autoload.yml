@@ -1,0 +1,6 @@
+url: https://github.com/micln/dsh-mcp-autoload
+name: micln/dsh-mcp-autoload
+category: tools
+description:
+  en: 'Project-level MCP servers loaded automatically: a project declares them in `.agents/mcp.json` (path and root markers configurable), and every session working inside that project mounts them in its own scope — stdio and Streamable HTTP, tools named `mcp__<server>__<tool>` — with the connections closed when the session ends. A Web UI panel lists the session''s servers and their tools, and can enable or disable a project entry after confirmation, backing up and atomically rewriting the manifest.'
+  zh: '自动加载项目级 MCP 服务器：项目在 `.agents/mcp.json` 中声明服务器（路径与根目录标记可配置），在项目内工作的每个会话各自的作用域里挂载——支持 stdio 与 Streamable HTTP，工具名为 `mcp__<server>__<tool>`——会话结束时断开连接。Web UI 面板列出本会话的服务器及其工具，并可在确认后启用或禁用项目条目，写入前备份并原子替换清单文件。'

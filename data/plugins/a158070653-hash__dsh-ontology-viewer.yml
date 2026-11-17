@@ -1,0 +1,8 @@
+url: https://github.com/a158070653-hash/dsh-ontology-viewer
+name: a158070653-hash/dsh-ontology-viewer
+category: docs
+description:
+  en: 'Renders .ttl, .owl, .rdf, .jsonld, .nt, .n3, .nq and .trig ontology files as an interactive graph in the DSH sidebar preview, with local Turtle, N-Triples, RDF/XML and JSON-LD parsing and no runtime dependencies.'
+  zh: '在 DSH 右侧栏预览中把 .ttl、.owl、.rdf、.jsonld、.nt、.n3 等本体/RDF 文件渲染为可交互图谱，本地解析 Turtle、N-Triples、RDF/XML 与 JSON-LD，无运行时依赖。'
+icon: https://raw.githubusercontent.com/a158070653-hash/dsh-ontology-viewer/main/assets/icon-180.png
+tarball: https://github.com/a158070653-hash/dsh-ontology-viewer/releases/latest/download/dsh-ontology-viewer.tgz

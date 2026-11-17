@@ -1,0 +1,7 @@
+url: https://github.com/yyjsdsg/dsh-redact
+name: yyjsdsg/dsh-redact
+category: security
+description:
+  zh: "把会话或文档里的密钥、本机路径、内网 IP、邮箱和手机号打码，再分享或提交。"
+  en: "Mask secrets, local paths, private IPs, emails and phone numbers in session text before you share or commit it."
+icon: https://raw.githubusercontent.com/yyjsdsg/dsh-redact/main/assets/icon-180.png

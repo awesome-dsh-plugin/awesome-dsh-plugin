@@ -1,0 +1,7 @@
+url: https://github.com/run666888/dsh-peak-hours
+name: run666888/dsh-peak-hours
+category: usage
+description:
+  en: 'Sidebar footer badge that shows whether DeepSeek is inside a peak-pricing window right now: a state dot, the current multiplier (x2 during peak, 5 zhe / half price off-peak), a countdown to the next switch, and a 24-hour schedule bar whose white line marks the current time. Peak windows are 09:00-12:00 and 14:00-18:00 Beijing time; weekends and Chinese public holidays count as off-peak. The holiday table currently covers 2026 only. Client-only, no network requests.'
+  zh: '侧栏底部角标，标注当前是否处于 DeepSeek 高峰计价时段：状态圆点、当前倍率（高峰 ×2、空闲 5 折）、距下次切换的倒计时，以及一条用白色竖线标出当前时刻的 24 小时日程条。高峰为北京时间 9:00–12:00 与 14:00–18:00，周末与中国法定节假日按空闲计费。节假日表目前只覆盖 2026 年。纯客户端插件，不发任何网络请求。'
+icon: https://raw.githubusercontent.com/run666888/dsh-peak-hours/main/assets/icon-180.png

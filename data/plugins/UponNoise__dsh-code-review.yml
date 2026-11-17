@@ -1,0 +1,7 @@
+url: https://github.com/UponNoise/dsh-code-review
+name: UponNoise/dsh-code-review
+category: git
+description:
+  en: 'Left-sidebar code review panel for DeepSeek Harness. Reviews local diffs, commits, or GitHub pull requests with the configured model using the Codex review rubric and P0-P3 findings. GitHub PR review requires a logged-in `gh` CLI.'
+  zh: 'DSH 左侧栏代码审查面板。用当前配置的模型审查本地 diff、提交或 GitHub PR，采用 Codex 的审查 rubric，输出 P0–P3 分级发现。GitHub PR 审查需本机已登录 `gh` CLI。'
+tarball: https://github.com/UponNoise/dsh-code-review/releases/latest/download/dsh-code-review.tgz

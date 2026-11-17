@@ -1,0 +1,7 @@
+url: https://github.com/yezitotempeace/dsh-auto-think
+name: yezitotempeace/dsh-auto-think
+category: ui
+tarball: https://github.com/yezitotempeace/dsh-auto-think/releases/latest/download/dsh-auto-think.tgz
+description:
+  en: 'Expands the assistant reasoning block while it streams and folds it back when done, animated in both directions; the sidebar switch only controls whether that happens automatically.'
+  zh: '思考时自动展开、结束时自动折叠，展开与收起都带高度与透明度过渡；侧边栏开关只控制是否自动，动画始终生效。'

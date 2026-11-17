@@ -1,0 +1,7 @@
+url: https://github.com/1052326311/dsh-plan-lattice
+name: 1052326311/dsh-plan-lattice
+category: workflow
+tarball: https://github.com/1052326311/dsh-plan-lattice/releases/download/v0.3.0/dsh-plan-lattice-0.3.0.tgz
+description:
+  en: Adds persistent execution contracts, recursive work graphs, critical clarification, and evidence gates for long or underspecified Harness tasks.
+  zh: 为长期或定义不完整的 Harness 任务提供持久执行合同、递归工作图、关键澄清与证据门禁。

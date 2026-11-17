@@ -1,0 +1,6 @@
+url: https://github.com/zbzbhs/dsh-remote-agent
+name: zbzbhs/dsh-remote-agent
+category: remote
+description:
+  en: 'Turn another computer into a remote Agent teammate: the worker runs its own DSH and a full Agent loop locally, so dispatched tasks keep running when the link drops and its model credentials never leave that machine. The hub dispatches through 8 remote_* tools, receives only a handoff summary plus an artifact manifest, and pulls finished products on demand — intermediate artifacts stay on the worker. Pairing-code onboarding, direct or relay transport for NAT, Web panel on both sides.'
+  zh: 把另一台电脑变成你的远程 Agent 同事：副机本地跑自己的 DSH 与完整 Agent 循环，所以链路断开时任务照常继续、模型凭证也永不离开那台机器。主机用 8 个 remote_* 工具派活，只收回 handoff 摘要与产物清单，成品按需拉取——中间产物留在副机。配对码接入，direct 或 relay 两种传输穿 NAT，两侧都有 Web 面板。

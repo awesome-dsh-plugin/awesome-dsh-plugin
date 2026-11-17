@@ -1,0 +1,6 @@
+url: https://github.com/penguin-oo/dsh-delegate-router
+name: penguin-oo/dsh-delegate-router
+category: model
+description:
+  en: 'Automatic Flash/Pro routing for DeepSeek Harness subagent calls: light tasks run on a cheap model (e.g. V4 Flash), heavy tasks stay on the strong model — with per-call overrides and /delegate session modes.'
+  zh: 给 DeepSeek Harness 的子代理调用做 Flash/Pro 自动分派：轻任务自动用便宜模型、重任务留在强模型，支持手动覆盖与 /delegate 会话模式。

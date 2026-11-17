@@ -1,0 +1,6 @@
+url: https://github.com/lznnnnn1998/dsh-artcraft/tree/main/dsh-plugins/plugin-wordcraft
+name: lznnnnn1998/dsh-artcraft#plugin-wordcraft
+category: tools
+description:
+  en: "Drive WordCraft from the agent: create documents, insert and style text, build tables and headers, track changes and comments, then save as DOCX or convert to PDF, ODT, RTF, Markdown and more. Exposes WordCraft's command ids and its MCP server. Requires the matching ArtCraft app CLI installed locally; it is not bundled."
+  zh: "让智能体驱动 WordCraft：新建文档、插入并排版文字、构建表格与页眉、跟踪修订与批注，并保存为 DOCX 或转换为 PDF、ODT、RTF、Markdown 等。暴露 WordCraft 的命令 id 与自带的 MCP server。需本机安装对应的 ArtCraft 应用 CLI，插件不附带应用本体。"

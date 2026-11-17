@@ -1,0 +1,6 @@
+url: https://github.com/SkanderBog/dsh-pdf-reader
+name: SkanderBog/dsh-pdf-reader
+category: docs
+description:
+  en: 'Read and search local PDFs with page citations, render pages as images, and use optional Tesseract OCR for scanned or mixed pages; requires Poppler.'
+  zh: '读取和搜索本地 PDF 并提供页码引用，将页面渲染为图片，可用 Tesseract 对扫描页或混合页面进行 OCR；需要 Poppler。'

@@ -1,0 +1,6 @@
+url: https://github.com/penghao73551/dsh-prompt-balance
+name: penghao73551/dsh-prompt-balance
+category: agi
+description:
+  en: "Measures what your assembled system prompt is actually made of - rules, identity, workspace policy, tool descriptions - in bytes and percentages, then moves the operating protocol ahead of the rule block so the model reads who it works for before it reads the prohibitions. Config-driven via ~/.dsh/prompt-balance.json; two hooks, no build step, no dependencies."
+  zh: "先按字节与占比量出组装后的系统提示词到底由什么构成——规则、身份、工作区策略、工具描述各占多少，再把操作规程提到规则块之前，让模型先读到「在为难干活」再读到一堆禁令。通过 ~/.dsh/prompt-balance.json 配置；两个钩子、无需构建、无依赖。"

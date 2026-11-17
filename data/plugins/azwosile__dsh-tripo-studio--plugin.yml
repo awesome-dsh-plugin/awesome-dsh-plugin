@@ -1,0 +1,6 @@
+url: https://github.com/azwosile/dsh-tripo-studio/tree/main/plugin
+name: azwosile/dsh-tripo-studio#plugin
+category: workflow
+description:
+  en: 'A visual workbench for reference-image generation, cropping and component-wise Tripo 3D modeling, with per-task paid-operation approval and local asset previews.'
+  zh: '用于参考图生成、裁剪、分件 Tripo 3D 建模与本地资产预览的可视化工作台，收费操作须逐次确认。'

@@ -1,0 +1,7 @@
+url: https://github.com/Eason-22/dsh-cua-driver-indicator
+name: Eason-22/dsh-cua-driver-indicator
+category: tools
+description:
+  en: "Visibility layer for DSH's built-in Cua Driver computer-control channel: a top banner names the controlling session and its goal, Esc truly stops the agent, and four precision tools click more accurately - they check that the point is not covered by another window, verify what the click changed, find a control by its name, click up to five controls in a row, and wait for a control to show up; a control can also be addressed by element id and run in the background when the application supports it. When the official channel is missing it asks whether to install it and can install it in one click. Windows only."
+  zh: "给 DSH 官方内置的 Cua Driver 电脑控制通道加一层可见提示与精度工具：顶部横幅显示是哪个会话、基于什么目标在控制电脑，按 Esc 真正停止；四件精度工具点得更准 —— 点前查落点有没有被别的窗口挡住、点后校验界面变了没有、按控件名字定位、最多连点 5 个控件、等某个控件出现；控件还可以按元素 ID 精确定位，应用支持时能在后台运行。官方通道没装时还会弹窗询问是否安装，并支持一键安装。仅支持 Windows。"
+icon: https://raw.githubusercontent.com/Eason-22/dsh-cua-driver-indicator/main/assets/icon-180.png

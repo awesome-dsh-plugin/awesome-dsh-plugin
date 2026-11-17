@@ -1,0 +1,6 @@
+url: https://github.com/CAI-MH/dsh-agent-group-panel
+name: CAI-MH/dsh-agent-group-panel
+category: ui
+description:
+  en: 'Feishu multi-agent robot console: start, stop and reconnect the daemon, view status and recent activity, and jump to the task workspace.'
+  zh: '飞书多助手机器人控制台：开启/关闭/重连守护进程、状态与最近动态、直达任务工作区。'

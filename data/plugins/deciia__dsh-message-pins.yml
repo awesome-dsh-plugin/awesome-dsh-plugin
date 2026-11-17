@@ -1,0 +1,6 @@
+url: https://github.com/deciia/dsh-message-pins
+name: deciia/dsh-message-pins
+category: session
+description:
+  en: 'Bookmark a whole assistant reply with the star on its action row, or bookmark any selected sentence with the icon beside the selection; pins are saved as Markdown to a local folder or an Obsidian vault, and the existing right sidebar lists, tags, searches, exports and jumps back to them.'
+  zh: '用回答操作行上的星标收藏整条回答，或用选区旁的星标收藏任意句子或段落；收藏以 Markdown 落盘到本地目录或 Obsidian 仓库，在 DSH 现有右侧栏中浏览、加笔记与标签、搜索、导出并跳回原文。'

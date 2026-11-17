@@ -1,0 +1,6 @@
+url: https://github.com/Lee-Hilex/dsh-mineru
+name: Lee-Hilex/dsh-mineru
+category: docs
+description:
+  en: Parse PDFs and documents into structured Markdown with MinerU. Uploads files to the MinerU cloud; no offline mode.
+  zh: 用 MinerU 把 PDF 与文档解析为结构化 Markdown。文件会上传到 MinerU 云端，无离线模式。

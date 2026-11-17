@@ -1,0 +1,6 @@
+url: https://github.com/xyzYaeMiko/dsh-deepsleep-progress
+name: xyzYaeMiko/dsh-deepsleep-progress
+category: ui
+description:
+  en: 'Shows an elapsed/budget progress bar with a moving head picture under blocking tool calls in the DSH Web conversation flow, and adds a graphical settings page for its style and tool list.'
+  zh: '在 DSH Web 对话流的阻塞型工具调用下方显示「已等待/预算」进度条与随进度移动的图片（可换成动图），并提供图形化设置页调整样式与工具列表。'

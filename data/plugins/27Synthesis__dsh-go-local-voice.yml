@@ -1,0 +1,6 @@
+url: https://github.com/27Synthesis/dsh-go-local-voice
+name: 27Synthesis/dsh-go-local-voice
+category: voice
+description:
+  en: 'Text-to-speech for the dsh-go native phone UI: long-press an assistant reply to read it aloud through Xiaomi MiMo TTS or ByteDance Doubao Seed TTS. The reply is segmented and pre-synthesized in the background after each turn, so one tap hands the app a single continuous MP3 instead of one short chunk per tap; playback has a stable lease so stop works, a status strip and progress bar give live feedback, and audio can be exported to phone storage. Keys stay on the device (0600) and are never rendered, committed, or sent to the model.'
+  zh: 'dsh-go 手机原生界面的语音朗读插件：长按回复即可用小米 MiMo TTS 或字节豆包 Seed TTS 念出来。回合结束后台自动分段预合成，点一次交给 App 的是一整段连续 MP3，而不是一次只念一小段；播放持有稳定的租约，所以「停止」真的停得住；输入框上方状态条与面板进度条提供实时反馈；支持把音频导出到手机存储。Key 只存本机（0600），不回显、不入库、不发给模型。'

@@ -1,0 +1,6 @@
+url: https://github.com/jiangyinluwei/dsh-plugInOne
+name: jiangyinluwei/dsh-plugInOne
+category: ui
+description:
+  en: Gathers custom plugin settings pages and cards into draggable top tabs under a unified Plugin settings navigation row.
+  zh: 在设置弹窗中增加「插件设置」导航，将各插件的设置页与卡片统一收纳到可拖拽排序的顶部标签页中。

@@ -1,0 +1,6 @@
+url: https://github.com/ccccwwwxx/dsh-bifenggang
+name: ccccwwwxx/dsh-bifenggang
+category: model
+description:
+  en: 'Time-based model routing: a settings panel defines weekday peak and off-peak windows and the provider/model each one uses, the choices are read from the harness registry (API keys and subscription logins alike), and a global switch decides whether that policy sets the model and reasoning effort of every request. The switch is independent per session, each session row carries a light showing its own state, and the settings panel names the model in force right now and why. A day no window matches — every weekend and holiday — uses the primary model of the first plan; the advanced thinking model is a separate axis, used only when a session itself asks for max reasoning.'
+  zh: '按时间做模型路由：在设置页定义工作日峰谷时段与各时段使用的 Provider/模型（候选来自 harness 已注册的 API 与订阅账号），打开开关后由该策略决定每次请求的模型与思考档。开关按会话独立，会话列表每行带指示灯显示各自状态，设置页顶部写明此刻生效的模型与原因。无任何时段命中的日子（周末、假期）使用第一个方案的主力模型；高级思考模型是另一根轴，只在会话自身要求 max 思考时使用。'

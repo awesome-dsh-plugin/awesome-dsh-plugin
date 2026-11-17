@@ -1,0 +1,6 @@
+url: https://github.com/cjjchina3088191870-sudo/dsh-plugin-ekko-skin-manager
+name: cjjchina3088191870-sudo/dsh-plugin-ekko-skin-manager
+category: ui
+description:
+  en: Legacy compatibility entry for the bundled Skirk, Rose Queen and Hatsune Miku themes; new users only need dsh-plugin-miku-theme.
+  zh: 丝柯克、玫瑰女王与初音未来主题套装的旧版管理器兼容入口；新用户只需安装 dsh-plugin-miku-theme。

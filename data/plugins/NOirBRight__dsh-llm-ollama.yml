@@ -1,0 +1,6 @@
+url: https://github.com/NOirBRight/dsh-llm-ollama
+name: NOirBRight/dsh-llm-ollama
+category: model
+description:
+  en: 'Ollama Cloud native chat adapter: direct NDJSON translation of the Ollama /api/chat wire format, model discovery with context windows and capabilities, and web search/fetch providers under the ollama-cloud id, plus a Web settings card.'
+  zh: Ollama Cloud 原生聊天适配器：直连 NDJSON 翻译 Ollama /api/chat 协议，模型发现带上下文窗口与能力信息，并注册 web 搜索/抓取 provider，附 Web 设置卡片。

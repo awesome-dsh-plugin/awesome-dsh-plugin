@@ -1,0 +1,7 @@
+url: https://github.com/HuYellow/specflow/tree/main/plugins/deepseek-specflow
+name: HuYellow/specflow#deepseek-specflow
+category: workflow
+description:
+  en: Provides a specification-driven engineering workbench with versioned requirements and documents, isolated Git workspaces, independent review, verification, and explicit human acceptance. Requires Node.js 24+ and Git.
+  zh: 提供规格驱动的工程工作台，支持需求和文档版本、隔离 Git 工作区、独立复核、验证与人工接纳。需 Node.js 24+ 与 Git。
+tarball: https://github.com/HuYellow/specflow/releases/download/dsh-plugin-specflow%400.1.0/dsh-plugin-specflow-0.1.0.tgz

@@ -1,0 +1,8 @@
+url: https://github.com/Blueteemo/dsh-smart-namer
+name: Blueteemo/dsh-smart-namer
+category: session
+description:
+  en: 'Smart naming for sessions and workspaces: one click asks the profile model for short name candidates from the item''s own content, then renames in place.'
+  zh: 会话与工作区的智能命名：点一下让模型基于条目自身内容给出短名候选，选中即改名。
+icon: https://raw.githubusercontent.com/Blueteemo/dsh-smart-namer/main/assets/icon-180.png
+tarball: https://github.com/Blueteemo/dsh-smart-namer/releases/latest/download/dsh-smart-namer.tgz

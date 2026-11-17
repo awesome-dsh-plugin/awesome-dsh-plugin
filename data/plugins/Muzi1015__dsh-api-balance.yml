@@ -1,0 +1,6 @@
+url: https://github.com/Muzi1015/dsh-api-balance
+name: Muzi1015/dsh-api-balance
+category: usage
+description:
+  en: DeepSeek API wallet balance in the composer dock with a popover showing topped-up and granted credit, the refresh time, and usage and top-up links, plus a /balance command and an api_balance tool; the Host reads a signed-in account wallet or the DEEPSEEK_API_KEY credential, so the browser only receives amounts.
+  zh: 输入框下方常驻 DeepSeek API 余额胶囊，点开显示充值额度、赠送额度、更新时间与用量/充值链接，另有 /balance 命令与 api_balance 工具；凭据只留在 Host（已登录账户钱包或 DEEPSEEK_API_KEY），浏览器只拿到金额。

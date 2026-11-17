@@ -1,0 +1,7 @@
+url: https://github.com/rezon-aki/dsh-streamfold
+name: rezon-aki/dsh-streamfold
+category: ui
+description:
+  en: 'Streaming fold for the DSH web transcript: the newest thinking window opens itself, older process rows fold into one summary, and a finished turn glides back to your prompt, which stays pinned while you read.'
+  zh: 'DSH Web 会话流式折叠：运行中只展开最新的思考小窗、其余过程行折成一条摘要，一轮结束滑回你提的那句话；读到哪一轮那轮提问就钉在顶部。'
+tarball: https://github.com/rezon-aki/dsh-streamfold/releases/latest/download/dsh-streamfold.tgz

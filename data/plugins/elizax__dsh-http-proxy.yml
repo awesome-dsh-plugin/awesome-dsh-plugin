@@ -1,0 +1,6 @@
+url: https://github.com/elizax/dsh-http-proxy
+name: elizax/dsh-http-proxy
+category: model
+description:
+  en: 'Wraps globalThis.fetch to route DeepSeek Harness model-API requests through an HTTP/SOCKS proxy by target domain, leaving all other requests on the direct connection, without modifying Harness source.'
+  zh: '把 globalThis.fetch 包一层，按目标域名让 DeepSeek Harness 的模型 API 请求走 HTTP/SOCKS 代理、其它请求保持直连，全程不改 Harness 源码。'

@@ -1,0 +1,6 @@
+url: https://github.com/CaiBai-Fish/dsh-continuechat
+name: CaiBai-Fish/dsh-continuechat
+category: session
+description:
+  en: 'Resume a conversation whose turn stopped early: /continue and an action-row button carry the interrupted reply on, covering manual stops, failed model requests, output-token cutoffs and crash recovery, and the continuation prompt is retired from the transcript once it has been answered.'
+  zh: '从断点继续对话：/continue 命令与消息操作行按钮让模型接着被打断的回答往下写，覆盖手动停止、模型请求失败、输出 token 上限截断与崩溃恢复四种情形，续写提示在被回答后从对话框中回收。'

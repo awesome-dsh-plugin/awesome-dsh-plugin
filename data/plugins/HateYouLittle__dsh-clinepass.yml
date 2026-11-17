@@ -1,0 +1,6 @@
+url: https://github.com/HateYouLittle/dsh-clinepass
+name: HateYouLittle/dsh-clinepass
+category: model
+description:
+  en: 'ClinePass provider for DeepSeek Harness: 15 bundled subscription and free models, a settings page with per-model capacity overrides, subscription usage for the 5-hour, weekly and monthly windows, and multi-account failover to a backup account.'
+  zh: 'DeepSeek Harness 的 ClinePass 模型提供方：内置 15 个订阅与免费模型，提供设置页与按模型容量覆盖、5 小时／每周／每月订阅用量，以及多账号与备用账号自动切换。'

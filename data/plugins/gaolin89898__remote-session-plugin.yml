@@ -1,0 +1,6 @@
+url: https://github.com/gaolin89898/remote-session-plugin
+name: gaolin89898/remote-session-plugin
+category: remote
+description:
+  en: 'Switches between local and remote DSH workspaces and sessions, with optional plugin sync; requires your own relay server.'
+  zh: '在本机与远程 DSH 工作区和会话间切换，并支持插件同步；需要自备中继服务器。'

@@ -1,0 +1,6 @@
+url: https://github.com/xuanke66/dsh-thinking-slider
+name: xuanke66/dsh-thinking-slider
+category: ui
+description:
+  en: 'Reasoning-effort slider that replaces the composer model seat: one rail over the levels the current model declares (off/low/high/max on DeepSeek), with a 241-frame portrait that evolves frame by frame as you drag and a per-model choice that survives restarts. Uninstall restores the shipped picker.'
+  zh: '替换输入框模型座位的推理档位滑杆：一根滑杆覆盖当前模型声明的档位（DeepSeek 为 off/low/high/max），拖动时 241 帧人像逐帧演变，按模型记忆所选档位且重启保留，卸载即恢复官方选择器。'

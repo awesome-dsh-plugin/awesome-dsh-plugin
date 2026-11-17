@@ -1,0 +1,6 @@
+url: https://github.com/Lostforest7/dsh-encoding
+name: Lostforest7/dsh-encoding
+category: tools
+description:
+  en: 'Correct-encoding command runner and mojibake recovery: encoding_run spawns a child process and decodes its raw output bytes (UTF-8/UTF-16LE/GBK auto-detected or forced), and encoding_decode recovers garbled text back to correct Unicode.'
+  zh: '编码正确的命令执行与乱码还原：encoding_run 自动识别 UTF-8/UTF-16LE/GBK 并正确解码子进程输出，encoding_decode 把乱码文本还原为正确 Unicode。'

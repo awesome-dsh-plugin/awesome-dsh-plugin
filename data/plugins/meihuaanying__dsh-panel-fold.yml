@@ -1,0 +1,6 @@
+url: https://github.com/meihuaanying/dsh-panel-fold
+name: meihuaanying/dsh-panel-fold
+category: ui
+description:
+  en: 'Folds the DSH sidebar''s global panel launchers into the More button it already renders, so the workspace and session list below regains up to seven 36px rows. A row in the More menu toggles the fold back, and the choice is kept in localStorage.'
+  zh: '把 DSH 侧边栏的全局面板入口收进它本来就有的『更多』按钮，下面的工作区与会话列表最多多出七行 36px 的高度；『更多』菜单里一行开关即可还原，选择记在 localStorage 里。'

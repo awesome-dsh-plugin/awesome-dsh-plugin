@@ -1,0 +1,6 @@
+url: https://github.com/jyao-SUSE-power-group/dsh-provider-rate-limit
+name: jyao-SUSE-power-group/dsh-provider-rate-limit
+category: model
+description:
+  en: 'Rate-limits LLM requests per provider and per model using a reservation-based token bucket, with queue or reject modes, plus gateway identity rules that rewrite user-agent and inject custom headers.'
+  zh: '按供应商与模型粒度限速 LLM 请求，预约式令牌桶支持排队或拒绝两种模式，附带网关身份规则（改写 User-Agent、注入自定义请求头）。'

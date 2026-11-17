@@ -1,0 +1,6 @@
+url: https://github.com/SleepEggTart/dsh-code-coverage
+name: SleepEggTart/dsh-code-coverage
+category: dev
+description:
+  en: 'Parses DSH session logs to attribute AI-written files, overlays c8 coverage, and reports AI vs human code coverage with a trust score, plus a check/fix/verify tool loop for closing test gaps.'
+  zh: '解析 DSH session 日志归因 AI 生成文件，叠加 c8 覆盖率，产出「AI vs 人工代码」覆盖率对比与信任分，并提供 check/fix/verify 三工具闭环补齐测试盲区。'

@@ -1,0 +1,6 @@
+url: https://github.com/ArcaneOrion/dsh-tavily-web
+name: ArcaneOrion/dsh-tavily-web
+category: browser
+description:
+  en: 'Tavily search and page fetch: tavily_search queries with a rotating pool of up to eight API keys that backs off per key on 401/403/429 so one exhausted account does not take the tool down, and web_fetch retrieves a single page through curl, returning its HTTP status with de-tagged text.'
+  zh: Tavily 检索与网页抓取：tavily_search 带最多八把 API key 的轮询池，按 key 对 401/403/429 退避，单个账号额度耗尽不再等于工具失效；web_fetch 经 curl 抓取单页，返回 HTTP 状态与去标签正文。

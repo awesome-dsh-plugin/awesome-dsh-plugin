@@ -1,0 +1,6 @@
+url: https://github.com/Astervolans/dsh-literature-search
+name: Astervolans/dsh-literature-search
+category: tools
+description:
+  en: 'Literature search for DeepSeek Harness: pubmed_search, pubmed_paper and pubmed_related over the official NCBI E-utilities (including elink related-article ranking), plus scholar_search and scholar_cite (MLA/APA/Chicago/Harvard/Vancouver/BibTeX via SerpApi). Both backends return one paper shape, and a settings card configures the API keys, the Scholar backend and the rate/result limits.'
+  zh: '面向 DeepSeek Harness 的文献检索：pubmed_search、pubmed_paper、pubmed_related 走官方 NCBI E-utilities（含 elink 相关文献排序），scholar_search、scholar_cite 走 Google Scholar（MLA/APA/Chicago/Harvard/Vancouver/BibTeX，需 SerpApi 后端）。两个后端统一为同一种 paper 结构，设置卡片可配置 API key、Scholar 后端与速率/条数上限。'

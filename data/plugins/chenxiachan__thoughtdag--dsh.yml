@@ -1,0 +1,6 @@
+url: https://github.com/chenxiachan/thoughtdag/tree/main/dsh
+name: chenxiachan/thoughtdag#dsh
+category: ui
+description:
+  en: Adds an editable conversation canvas to DeepSeek Harness, where graph connections select context for canvas requests, with branching, merging, and local agent session imports.
+  zh: 在 DeepSeek Harness 中嵌入可编辑对话画布，通过连线选择画布请求的上下文，支持分支、合并与本地 Agent 会话导入。

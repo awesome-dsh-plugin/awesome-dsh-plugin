@@ -1,0 +1,6 @@
+url: https://github.com/dcd887/dsh-record-search
+name: dcd887/dsh-record-search
+category: session
+description:
+  en: 'Full-text search over every DeepSeek Harness session, with a sidebar panel and a record_search tool.'
+  zh: '历史会话全文搜索，带侧边栏面板与 record_search 工具。'

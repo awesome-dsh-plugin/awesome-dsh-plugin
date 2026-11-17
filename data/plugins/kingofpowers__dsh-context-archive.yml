@@ -1,0 +1,16 @@
+url: https://github.com/kingofpowers/dsh-context-archive
+name: kingofpowers/dsh-context-archive
+category: tools
+description:
+  en: >-
+    Model-driven tool-result archiving for DeepSeek Harness. Results above a configurable size
+    carry a short inline id ([#a1b2c3d4]); the model archives the ones it no longer needs into
+    the session's own archives/ folder and the context keeps a small recoverable stub with the
+    file path. Originals stay in the append-only session log, so nothing is lost. Ships a
+    settings panel with per-size-bucket recovery stats, thresholds that apply without restart,
+    and a conditional reminder when results are waiting to be archived. Requires dsh-better-sidebar for the statistics panel.
+  zh: >-
+    模型驱动的工具结果归档插件。超过阈值的结果会带一个短内联编号（[#a1b2c3d4]），模型把不再需要的
+    结果归档进会话自己的 archives/ 目录，上下文里只留一个可回捞的小存根（含文件路径）。原文同时保留在
+    只增的会话日志中，不会丢失。附带设置面板：按大小分桶的回收统计、改完立即生效的阈值、以及有待归档
+    结果时的条件提醒。统计面板需 dsh-better-sidebar。

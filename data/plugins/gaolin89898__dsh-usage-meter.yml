@@ -1,0 +1,6 @@
+url: https://github.com/gaolin89898/dsh-usage-meter
+name: gaolin89898/dsh-usage-meter
+category: usage
+description:
+  en: Sidebar widget that follows the session's current service and shows its plan quota or balance — OpenCode GO rolling, weekly and monthly windows with time bars, MiniMax usage, and DeepSeek, OpenRouter or Moonshot balances.
+  zh: 跟随会话当前服务的侧边栏小组件：显示 OpenCode GO 滚动、周、月用量与时间条，MiniMax 用量，以及 DeepSeek、OpenRouter、Moonshot 余额。

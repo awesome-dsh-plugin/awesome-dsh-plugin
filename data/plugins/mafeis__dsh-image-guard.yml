@@ -1,0 +1,6 @@
+url: https://github.com/mafeis/dsh-image-guard
+name: mafeis/dsh-image-guard
+category: vision
+description:
+  en: Trims historical images in outgoing chat requests down to a recent-image count, learns the provider per-prompt image cap from HTTP 400 responses, and retries with fewer images so image-heavy sessions keep working.
+  zh: 发送前把请求中的历史图片裁剪至保留张数，并从上游 400 错误解析单次图片上限、按更少张数降级重试，保证含图会话不被图片数量限制打断。

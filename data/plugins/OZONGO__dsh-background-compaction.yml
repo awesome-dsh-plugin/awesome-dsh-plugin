@@ -1,0 +1,6 @@
+url: https://github.com/OZONGO/dsh-background-compaction
+name: OZONGO/dsh-background-compaction
+category: session
+description:
+  en: "Replaces the built-in compaction provider: at a configurable fraction of the context threshold (85% by default) a detached task summarizes everything up to the previous turn, and the next step boundary commits that held summary as a checkpoint with zero model calls, so the swap itself takes milliseconds. /bcompact [message] starts the same generation on demand and then sends the message. A settings page sets the trigger ratio, the summarization model, and how many consecutive failures stop background generation until a half-open probe gets through. Subagent sessions, a changed prefix or an expired summary fall back to the built-in synchronous path."
+  zh: "接管内置压缩 provider：默认在上下文达到阈值的 85%（比例可配）时，起一个游离任务把截至上一轮的历史总结成摘要；摘要就绪后的下一个回合边界直接把它提交为 checkpoint，这一步 0 次模型调用、耗时毫秒级。/bcompact [消息] 按需发起同样的生成，随后照常发送你的消息。设置页可改自动触发比例、摘要模型，以及连续失败多少次后停止后台生成（熔断打开后按冷却放行一次探针以自愈）。子代理会话、前缀已变动或摘要过期时，回退到内置的同步压缩路径。"

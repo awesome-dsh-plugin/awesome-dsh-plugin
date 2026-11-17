@@ -1,0 +1,6 @@
+url: https://github.com/eightHundreds/dsh-plannotator
+name: eightHundreds/dsh-plannotator
+category: workflow
+description:
+  en: Opens the official Plannotator app (plannotator.ai) so you can review the agent's plan — annotate, approve, or send it back.
+  zh: 打开官方 Plannotator 应用（plannotator.ai）审代理写好的计划：批注、批准，或打回重写。

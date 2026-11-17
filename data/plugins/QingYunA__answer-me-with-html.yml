@@ -1,0 +1,6 @@
+url: https://github.com/QingYunA/answer-me-with-html
+name: QingYunA/answer-me-with-html
+category: skill
+description:
+  en: 'Answers a question with a one-page visual HTML explainer: the model writes a short Markdown draft and the bundled `am` CLI builds the page, with flow, sequence, tree, timeline and ER diagrams, tables and callouts.'
+  zh: '把回答做成一页可视化 HTML：模型只写简短的 Markdown 草稿，随包附带的 `am` 命令行生成页面，支持流程图、时序图、树、时间线、ER 图、表格和提示框。'

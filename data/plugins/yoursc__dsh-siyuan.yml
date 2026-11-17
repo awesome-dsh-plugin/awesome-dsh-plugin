@@ -1,0 +1,6 @@
+url: https://github.com/yoursc/dsh-siyuan
+name: yoursc/dsh-siyuan
+category: tools
+description:
+  en: 'SiYuan (思源笔记) notes integration: 17 siyuan_* host tools covering notebook and document listing, full-text search, SQL query, reading documents and blocks, creating and appending content, moving and renaming documents, daily notes and block attributes, plus a Web settings page for the SiYuan URL, API token and per-tool switches.'
+  zh: '把思源笔记（SiYuan）接入 DeepSeek Harness：17 个 siyuan_* 宿主工具，覆盖笔记本与文档列表、全文检索、SQL 查询、读取文档与块、新建与追加内容、移动与重命名文档、日记与块属性，另提供一个 Web 设置页配置思源地址、API token 与逐工具开关。'

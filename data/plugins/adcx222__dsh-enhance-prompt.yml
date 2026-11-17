@@ -1,0 +1,6 @@
+url: https://github.com/adcx222/dsh-enhance-prompt
+name: adcx222/dsh-enhance-prompt
+category: ui
+description:
+  en: Adds a sparkle button to the DSH composer that rewrites the current draft into a clearer, more specific prompt with a single tool-free LLM call, then writes the result back into the input.
+  zh: 在 DSH 输入框工具栏加一个 ✨ 按钮，用一次无工具的单轮 LLM 调用把草稿改写成更清晰、更具体的提示词，再把结果写回输入框。

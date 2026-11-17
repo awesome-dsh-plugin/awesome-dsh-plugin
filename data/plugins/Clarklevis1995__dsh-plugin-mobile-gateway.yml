@@ -1,0 +1,6 @@
+url: https://github.com/Clarklevis1995/dsh-plugin-mobile-gateway
+name: Clarklevis1995/dsh-plugin-mobile-gateway
+category: remote
+description:
+  en: 'Authenticated mobile gateway for DeepSeek Harness: connects the companion native iOS client over WebSocket for sessions, live events, tasks, goals, approvals, commands, and file transfers, with QR pairing and device revocation.'
+  zh: 'DeepSeek Harness 的设备鉴权移动网关：通过 WebSocket 连接配套原生 iOS 客户端，支持会话、实时事件、任务、Goal、审批、命令和文件传输，并提供二维码配对与设备撤销。'

@@ -1,0 +1,6 @@
+url: https://github.com/13520rygvv/dsh-restart-button
+name: 13520rygvv/dsh-restart-button
+category: ui
+description:
+  en: "Restarts the DeepSeek Harness desktop app from three places: a Settings row, the account menu above Sign out, and a configurable keyboard shortcut. Asks before interrupting running tasks. If a newer update is already downloaded and waiting, restarting installs it first. Windows desktop app only."
+  zh: "从三处重启 DeepSeek Harness 桌面端：设置里的按钮、账号菜单「退出登录」上方的一项、以及可自定义的快捷键；有运行中的任务时会先确认；若新版本更新已下载并等待安装，重启时会先静默安装更新。仅支持 Windows 桌面版。"

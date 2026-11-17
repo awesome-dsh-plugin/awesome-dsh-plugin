@@ -1,0 +1,6 @@
+url: https://github.com/ACGsu/dsh-sidebar-panel-fold
+name: ACGsu/dsh-sidebar-panel-fold
+category: ui
+description:
+  en: Folds the DeepSeek Harness sidebar's global panel list into a single row, with a popover to switch panels.
+  zh: 把 DeepSeek Harness 侧边栏的全局面板列表收进一行，点击弹出浮层切换面板。

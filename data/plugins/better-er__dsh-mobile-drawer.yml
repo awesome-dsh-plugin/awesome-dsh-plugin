@@ -1,0 +1,6 @@
+url: https://github.com/better-er/dsh-mobile-drawer
+name: better-er/dsh-mobile-drawer
+category: ui
+description:
+  en: 'Below 1024px the sidebar collapses to a 44px floating square and expands into a 280px overlay drawer; picking a session collapses it again and the focus grab that would raise the soft keyboard after a session switch is suppressed.'
+  zh: '窄屏下侧栏收起为左上角 44 像素悬浮方块、展开为 280 像素覆盖式抽屉，点会话自动收起，并压掉切会话时自动抢焦点导致的软键盘顶起。'

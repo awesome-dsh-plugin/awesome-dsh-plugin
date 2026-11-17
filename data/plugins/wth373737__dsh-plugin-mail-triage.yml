@@ -1,0 +1,6 @@
+url: https://github.com/wth373737/dsh-plugin-mail-triage
+name: wth373737/dsh-plugin-mail-triage
+category: tools
+description:
+  en: 'IMAP mail triage and cleanup for DeepSeek Harness: incremental read-only scan, a hard-protection rule layer plus optional local-model classification, a Markdown report and a hashed manifest, an explicit approval card, and only then a move to the Trash mailbox — no expunge.'
+  zh: 'IMAP 邮件分拣与清理：增量只读扫描，先过硬保护规则层、再走可选的本地模型分类，产出报告与带哈希的清单，人工批准后才移动到回收站——全程不 expunge。'

@@ -1,0 +1,7 @@
+url: https://github.com/SuperChipper/dsh-dungeon-master
+name: SuperChipper/dsh-dungeon-master
+category: identity
+icon: https://raw.githubusercontent.com/SuperChipper/dsh-dungeon-master/main/docs/assets/icon.png
+description:
+  en: 'QQ Bot channel and D&D 5e Dungeon Master plugin for DeepSeek Harness (fork of @tencent-connect/dsh-qqbot; do not enable alongside upstream): /dnd runs turn-based campaigns with 19 `dnd_*` tools for dice, checks, grid positioning, fog and battle maps, story chronicles, snapshot rollbacks and an optional dedicated combat subagent, plus /persona per-chat switching with handoffs, shared Markdown notes, sticker collection, read-only Bilibili tools and per-chat tool-access gating. Direct and group chats default to open in cordis.patch.yml while non-allowlisted QQ chats are blocked from shell and subagents; requires QQBOT_APPID/QQBOT_SECRET or in-app QR binding, with optional sharp for rendered maps and ffmpeg for audio/video. Shared notes are visible to every session, so private-chat content may be recalled in groups.'
+  zh: '面向 DeepSeek Harness 的 QQ 机器人与 D&D 5e 跑团主持人插件（基于 @tencent-connect/dsh-qqbot 二次开发，勿与上游原版同时启用）：通过 /dnd 与 19 个 `dnd_*` 工具结算掷骰、检定、网格站位、迷雾与战斗地图、剧情账本、快照回滚及可选独立战斗子代理，并支持 /persona 分会话人设切换与交接、共享 Markdown 笔记、表情收藏、B 站只读工具与按会话工具权限拦截。默认补丁中私聊与群聊为开放模式，非白名单 QQ 会话默认禁用终端与子代理；需配置 QQBOT_APPID/QQBOT_SECRET 或端内扫码绑定，图片地图可选装 sharp、音视频需 ffmpeg。共享笔记对所有会话可见，私聊内容可能在群里被召回。'

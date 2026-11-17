@@ -1,0 +1,7 @@
+url: https://github.com/CodeIntegrity/dsh-semble
+name: CodeIntegrity/dsh-semble
+category: tools
+description:
+  en: 'Semantic code search for DeepSeek Harness: registers two native tools, semble_search (find code by describing its behaviour, returning ranked file:line hits) and semble_find_related (neighbours of a known location), which run the Semble CLI via uvx, plus one bundled routing skill. Requires uv on PATH; the first query on a repository builds its index.'
+  zh: '面向 DeepSeek Harness 的语义代码搜索：注册 semble_search（按行为描述检索代码，返回按相关度排序的 file:line 命中）与 semble_find_related（查找已知位置的相邻代码）两个原生工具，检索由 uvx 启动的 Semble CLI 完成，并附一个随包分发的路由技能。需要 PATH 中有 uv；对某个仓库的首次查询会建立索引。'
+icon: https://raw.githubusercontent.com/CodeIntegrity/dsh-semble/main/assets/icon-180.png

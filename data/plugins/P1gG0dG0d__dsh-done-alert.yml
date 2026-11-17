@@ -1,0 +1,7 @@
+url: https://github.com/P1gG0dG0d/dsh-done-alert
+name: P1gG0dG0d/dsh-done-alert
+category: notify
+tarball: https://github.com/P1gG0dG0d/dsh-done-alert/releases/latest/download/dsh-done-alert.tgz
+description:
+  en: "Paints a colored counter badge (green = unread completed sessions, orange = pending question or approval) on the DeepSeek Harness taskbar icon on Windows, and plays a chime when a session finishes. Fork of dthcle/dsh-badge-notify (MIT) with a completion chime and green/orange state colors; both draw the same taskbar badge, so the two cannot be enabled together."
+  zh: "在 Windows 任务栏的 DeepSeek Harness 图标上叠画彩色计数角标（绿=未读的已完成会话，橙=待回答提问或待批准权限），会话结束时播放提示音。基于 dthcle/dsh-badge-notify（MIT）二次开发，新增提示音与绿/橙状态色；两者都在同一个任务栏图标上叠画角标，不能同时启用。"

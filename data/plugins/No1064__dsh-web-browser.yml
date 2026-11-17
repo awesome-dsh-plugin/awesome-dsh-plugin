@@ -1,0 +1,7 @@
+url: https://github.com/No1064/dsh-web-browser
+name: No1064/dsh-web-browser
+category: browser
+description:
+  en: 'Human-only browser panel that opens as a full page in the DSH main content area: multiple tabs, an address bar, a context menu, a homepage with pinned shortcuts, and a history page stored in IndexedDB. Pages render in the webview bridge that ships with DSH Desktop, and the current page can be opened in your local Chrome.'
+  zh: '只交给人操作、不在 AI 侧注册任何工具的浏览器面板：在 DSH 右侧主内容区整页打开，提供多标签、地址栏、右键菜单、带钉住快捷入口的主页与 IndexedDB 永久保存的历史页。页面在 DSH Desktop 自带的 webview 桥里渲染，当前页可交给本地 Chrome 打开。'
+icon: https://raw.githubusercontent.com/No1064/dsh-web-browser/main/assets/icon-180.png

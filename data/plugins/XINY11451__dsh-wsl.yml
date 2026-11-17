@@ -1,0 +1,7 @@
+url: https://github.com/XINY11451/dsh-wsl
+name: XINY11451/dsh-wsl
+category: wsl
+tarball: https://github.com/XINY11451/dsh-wsl/releases/latest/download/dsh-wsl.tgz
+description:
+  en: 'Extends the working range of DSH into WSL. Files in the distribution can be read, written, edited and searched by DSH directly. Depending on the task, the AI chooses for itself: run a one-off command, or open its own terminal and run several commands there to finish the job. Typing `dsh` in a WSL terminal calls DSH (type `dsh help` there for details), fusing WSL and DSH deeply. Every terminal you open can collaborate visually with the AI.'
+  zh: '将 DSH 的工作范围扩展到 WSL。插件支持了发行版中的文件直接被 DSH 读取、写入、编辑与搜索。面对不同任务需求，AI可根据任务需求自行选择执行一次性命令/自建终端执行多条命令以完成任务。支持在 WSL 终端中键入 dsh 命令调用 DSH(详情在 WSL 终端键入dsh help)，深度融合了 WSL 与 DSH。用户新建的所有终端支持与AI可视化协作。'

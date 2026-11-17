@@ -1,0 +1,6 @@
+url: https://github.com/CH4ACKO3/dsh-render-engine/tree/main/packages/code-render
+name: CH4ACKO3/dsh-render-engine#code-render
+category: dev
+description:
+  en: 'Escaped, theme-aware HTML code-block rendering service for DSH Web plugins, built on structured syntax-highlight tokens with source line-ending preservation.'
+  zh: '面向 DSH Web 插件的转义与主题响应 HTML 代码块渲染服务，基于结构化语法高亮 token，并保留源码换行符。'

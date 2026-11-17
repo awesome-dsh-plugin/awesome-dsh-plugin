@@ -1,0 +1,6 @@
+url: https://github.com/apolenkov/dsh-provider-proxy
+name: apolenkov/dsh-provider-proxy
+category: model
+description:
+  en: Routes outbound model traffic per provider host or per model ID through chosen proxies, loopback or direct, configured from a Plugins settings page.
+  zh: 按提供商主机或模型 ID 将模型出站流量分流到指定代理、直连或继承进程策略，可在 Plugins 设置页配置。

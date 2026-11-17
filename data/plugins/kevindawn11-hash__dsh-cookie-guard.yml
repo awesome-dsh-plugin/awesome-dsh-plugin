@@ -1,0 +1,6 @@
+url: https://github.com/kevindawn11-hash/dsh-cookie-guard
+name: kevindawn11-hash/dsh-cookie-guard
+category: security
+description:
+  en: "Caps the lifetime of DSH desktop's dsh-auth-* session cookies at 7 days, so they stop piling up in the Cookie header until startup fails with HTTP 431."
+  zh: "把 DSH 桌面端 dsh-auth-* 会话 cookie 的寿命压到 7 天，避免它们越积越多撑爆请求头、导致启动时报 HTTP 431。"

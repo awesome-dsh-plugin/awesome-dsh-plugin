@@ -1,0 +1,7 @@
+url: https://github.com/zzy6-a/dsh-upgrade-guard
+name: zzy6-a/dsh-upgrade-guard
+category: dev
+description:
+  en: 'Audits installed plugin compatibility after a DeepSeek Harness upgrade, repairs or disables incompatible plugins, and keeps an out-of-host supervisor that rescues boot failures or rolls back to the previous host snapshot.'
+  zh: '在 DeepSeek Harness 升级后自动巡检已安装插件的兼容性，修复或禁用不兼容插件；宿主启动失败时由宿主外 supervisor 救援，必要时回滚到上一个宿主版本。'
+tarball: https://github.com/zzy6-a/dsh-upgrade-guard/releases/download/v0.2.0/dsh-upgrade-guard-0.2.0.tgz

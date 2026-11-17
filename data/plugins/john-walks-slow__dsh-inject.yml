@@ -1,0 +1,6 @@
+url: https://github.com/john-walks-slow/dsh-inject
+name: john-walks-slow/dsh-inject
+category: identity
+description:
+  en: 'Request-side injection and jailbreak plugin for DeepSeek Harness: rewrites only the request copy sent to the model — system-prompt sections, fabricated turns, and keyword or regex replacement — leaving the conversation log and host files untouched; ships unrestricted / nsfw / authority presets, imports the dsh-purge 破甲 prompt as an ordinary preset, enables per agent preset, always-on, or by model and agent preset, and records each injection as a collapsible row in the session.'
+  zh: '面向 DeepSeek Harness 的请求侧注入与破甲 / 越狱插件：只改写发给模型的请求副本（系统提示词系统段、构造回合、关键词与正则替换），不写入会话记录、不改动宿主文件；内置 unrestricted / nsfw / authority 三个预设，可把 dsh-purge 破甲稿作为普通预设导入，支持按模式自动生效、常驻启用，或按模型与 agent preset 限定，每次注入在会话里留一条可折叠记录。'

@@ -1,0 +1,6 @@
+url: https://github.com/laa1991/dsh-health
+name: laa1991/dsh-health
+category: tools
+description:
+  en: Turns declared health readings — source, criterion, verdict — into one read-only verdict; an unreadable source is reported as `unknown`, never as healthy.
+  zh: 把声明式的健康读数（来源、判据、结论）合成为一个只读的总判定；读不到的来源报 `unknown`，绝不报成健康。

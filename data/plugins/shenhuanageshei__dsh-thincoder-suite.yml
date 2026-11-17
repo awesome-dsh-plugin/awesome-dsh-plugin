@@ -1,0 +1,6 @@
+url: https://github.com/shenhuanageshei/dsh-thincoder-suite
+name: shenhuanageshei/dsh-thincoder-suite
+category: workflow
+description:
+  en: 'Advisor reviews that converge over rounds, an engineering mode whose writes require a design token, escalation of a task to a stronger model, and parallel multi-model consultation; a settings page edits the model routes, timeouts and budgets.'
+  zh: '导师评审逐轮收敛、工程模式写入需持设计令牌、把任务转交给更强的模型、并行多模型会诊；设置页可改各模型路由、超时与预算。'

@@ -1,0 +1,6 @@
+url: https://github.com/AHIOSUZ/dsh-workspace-tools
+name: AHIOSUZ/dsh-workspace-tools
+category: security
+description:
+  en: Applies per-workspace default Agent and permission presets to new root sessions automatically (Settings - Workspace defaults), using only official extension points.
+  zh: 按工作区规则为新建根会话自动应用 Agent 预设与权限预设（设置 - 工作区默认设置），仅使用官方扩展点。

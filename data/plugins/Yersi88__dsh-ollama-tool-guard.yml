@@ -1,0 +1,7 @@
+url: https://github.com/Yersi88/dsh-ollama-tool-guard
+name: Yersi88/dsh-ollama-tool-guard
+category: security
+icon: https://raw.githubusercontent.com/Yersi88/dsh-ollama-tool-guard/main/assets/icon.png
+description:
+  en: "Local tool guard that scores every DeepSeek Harness tool call with an Ollama decision model before it runs; risky calls come back as an approval prompt, and an unreachable model stops all calls. Requires DSH 0.2.x and a local Ollama 0.35.1+ with the default ~6 GB clef-flash model pulled first; without them every tool call is denied."
+  zh: "每次工具调用前由本机 Ollama 决策模型判定：可疑调用升级为确认提示，模型不可达时停止所有调用。需 DSH 0.2.x，并先装好本机 Ollama 0.35.1+、拉取默认约 6 GB 的 clef-flash 模型；否则所有工具调用都会被拒绝。"

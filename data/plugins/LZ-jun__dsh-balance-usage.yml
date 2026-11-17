@@ -1,0 +1,6 @@
+url: https://github.com/LZ-jun/dsh-balance-usage
+name: LZ-jun/dsh-balance-usage
+category: usage
+description:
+  en: Shows the DeepSeek account balance and the current peak / off-peak phase in the sidebar, and estimates per-session and per-turn cost using the official peak and off-peak rates.
+  zh: 在侧边栏显示 DeepSeek 账户余额与当前峰谷时段，并按官方高峰/空闲价估算每个会话与每一轮的花费。

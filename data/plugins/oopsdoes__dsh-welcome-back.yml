@@ -1,0 +1,6 @@
+url: https://github.com/oopsdoes/dsh-welcome-back
+name: oopsdoes/dsh-welcome-back
+category: session
+description:
+  en: Welcome-back card in the conversation you return to after an idle period, using only that conversation's last message.
+  zh: 闲置一段时间后回到会话时，在该会话里显示它的上一条消息，并提供断点恢复。

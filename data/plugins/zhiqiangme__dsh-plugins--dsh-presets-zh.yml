@@ -1,0 +1,6 @@
+url: https://github.com/zhiqiangme/dsh-plugins/tree/main/dsh-presets-zh
+name: zhiqiangme/dsh-plugins#dsh-presets-zh
+category: workflow
+description:
+  en: 'Four Chinese agent presets in one plugin, Standard, PTC, Minimal and Creation (standard-zh, ptc-zh, minimal-zh, cordis-zh), each keeping the matching built-in tool set; Standard, PTC and Creation translate known host instructions into Chinese while tool IDs, schemas and SDK declarations stay unchanged; a settings page enables each mode and edits its name, description and system prompt.'
+  zh: 一个插件提供四种中文 Agent 预设：中文标准、中文 PTC、中文极简、中文创造（standard-zh / ptc-zh / minimal-zh / cordis-zh），沿用对应内置模式的工具组合；标准、PTC 与创造模式将已知宿主说明汉化，工具 ID、schema 与 SDK 声明保持原样；设置页可逐个启停模式并编辑显示名称、描述与系统提示词。

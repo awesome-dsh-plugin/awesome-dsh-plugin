@@ -1,0 +1,6 @@
+url: https://github.com/zhang-guo-wen/dsh-mcp-manager
+name: zhang-guo-wen/dsh-mcp-manager
+category: tools
+description:
+  en: Manage MCP servers, load them on demand, and filter tools to reduce context usage.
+  zh: 管理 MCP 服务器，按需加载并筛选工具以减少上下文占用。

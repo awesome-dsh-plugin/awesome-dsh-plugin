@@ -1,0 +1,6 @@
+url: https://github.com/zhengqiuyang/dsh-pr-gate
+name: zhengqiuyang/dsh-pr-gate
+category: security
+description:
+  en: 'Deterministic write gate: scope policy denies out-of-scope write/edit calls before they touch the disk, residue rules scan the written text, and every decision lands in a content-hashed JSONL ledger; can reuse the repo''s agent-pr-gate.yaml so CI and session enforce one policy.'
+  zh: '确定性写入门禁：范围策略在落盘前拒绝越权写入，残留规则扫描所写文本，每个决定落入带内容哈希的 JSONL 台账；可复用仓库的 agent-pr-gate.yaml 让 CI 与会话共用同一策略。'

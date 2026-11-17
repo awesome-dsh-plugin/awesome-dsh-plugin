@@ -1,0 +1,6 @@
+url: https://github.com/Wang-Chuming/dsh-obsidian-file-opener
+name: Wang-Chuming/dsh-obsidian-file-opener
+category: ui
+description:
+  en: 'Plain click on an Obsidian vault file in the DSH conversation opens it in the right app: notes in the Obsidian app, configured types (for example .tex) in VS Code with their project folder as the workspace; Cmd/Ctrl-click keeps the in-app preview. The open_vault_file tool follows the same routing, and every open is confined to the configured vaultRoot.'
+  zh: '在 DSH 对话里普通点击 Obsidian 库内文件会打开到对应 App：笔记进 Obsidian，配置的类型（例如 .tex）进 VS Code 并以项目目录作为工作区；Cmd/Ctrl+点击保留内置预览。open_vault_file 工具走同一套路由，所有打开都限定在配置的 vaultRoot 内。'

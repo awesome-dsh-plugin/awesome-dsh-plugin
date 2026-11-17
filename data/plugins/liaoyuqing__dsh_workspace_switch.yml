@@ -1,0 +1,6 @@
+url: https://github.com/liaoyuqing/dsh_workspace_switch
+name: liaoyuqing/dsh_workspace_switch
+category: tools
+description:
+  en: "Per-workspace activation control: a dialog opened from the workspace row menu switches individual plugins, MCP servers, and skills on or off, and the host applies the choice in that workspace's own agent scope — a disabled skill leaves the model catalog, an MCP server has its mcp__<server>__ tools denied, and a plugin has the tool names its entry declares denied."
+  zh: "按工作区开关插件、MCP 服务器与 Skills：工作区行菜单里的弹窗写入选择，宿主机在该工作区自己的 Agent 作用域内应用——关闭的 Skill 从模型目录中消失，MCP 服务器被拒绝其 mcp__<server>__ 工具，插件被拒绝其条目声明的工具名。"

@@ -1,0 +1,6 @@
+url: https://github.com/0x7A7A6572/dsh-forge-studio/tree/main/packages/plugin-memory
+name: 0x7A7A6572/dsh-forge-studio#plugin-memory
+category: memory
+description:
+  en: 'Cross-session memory for DeepSeek Harness: agents save, search and update user preferences, facts and project decisions; important entries are injected into later sessions, and a Settings section lists, edits, archives or deletes them.'
+  zh: 'dsh 跨会话记忆：agent 保存、检索并更新用户偏好、事实与项目决策，重要条目自动注入后续会话，设置面板可浏览、编辑、归档与删除。'

@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-pnl-attribution
+name: dingchenhui0618-arch/dsh-pnl-attribution
+category: ui
+description:
+  en: 'A-share holdings contribution card for DeepSeek Harness: today''s P&L and portfolio return next to the Shanghai Composite, the top five contributors by P&L with each stock''s strength versus the index in pp, and a 15:00 close-summary PNG export with the contributor list, intraday chart and a numbers-only summary. Holdings come from a local holdings.csv/holdings.json and quotes from the public Tencent market-data API; the plugin never reads cookies or broker credentials. Requires DSH 0.2.x; the card and the export are covered by a test suite that runs in CI.'
+  zh: '给 DSH 的 A 股持仓贡献卡：今日盈亏与组合涨跌幅和上证指数并排，按金额列出贡献前五并标出个股相对上证的强弱（pp），15:00 后可一键导出含贡献榜、上证分时图与只陈述数字的自动摘要的收盘小结 PNG。持仓读本地 holdings.csv/holdings.json，行情取自腾讯公开行情接口，不读 Cookie、不碰券商凭据。要求 DSH 0.2.x；浮卡与导出都有 CI 跑的测试覆盖。'

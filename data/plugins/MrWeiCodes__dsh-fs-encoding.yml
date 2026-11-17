@@ -1,0 +1,6 @@
+url: https://github.com/MrWeiCodes/dsh-fs-encoding
+name: MrWeiCodes/dsh-fs-encoding
+category: tools
+description:
+  en: 'File encoding guard: byte-exact read/write/edit for GBK, Big5, Shift-JIS, EUC-KR, Windows-125x, UTF-16 and UTF-32 files, so editing a legacy file leaves it in its original encoding instead of silently rewriting it as UTF-8; UTF-8 BOM preserved exactly as it was, line endings (CRLF/LF/CR) kept, characters the encoding cannot represent refused rather than written as "?", and non-UTF-8 files listed with candidate encodings so the model can re-read them explicitly.'
+  zh: '文件编码守护：为 GBK、Big5、Shift-JIS、EUC-KR、Windows-125x、UTF-16、UTF-32 文件提供字节级无损读写与编辑，改完仍是原编码而不是被悄悄转成 UTF-8；UTF-8 BOM 原样保留，CRLF/LF/CR 换行符保持，编码表示不了的字符拒绝写入而不是写成「?」；非 UTF-8 文件会列出候选编码，模型可显式指定重读。'

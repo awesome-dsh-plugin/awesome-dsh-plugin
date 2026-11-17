@@ -1,0 +1,6 @@
+url: https://github.com/praystring/dsh-send-debounce
+name: praystring/dsh-send-debounce
+category: session
+description:
+  en: 'Buffers consecutive short messages from the composer and merges them into one turn: no model wake-up until the user stops for a configurable silence window; long messages and attachments bypass the buffer.'
+  zh: '把聊天框里连发的几条短消息缓冲合并成一轮再唤醒模型：停手若干秒后才回复一次；长消息和附件不延迟。'

@@ -1,0 +1,6 @@
+url: https://github.com/YanYunCY/dsh-gateway-notify
+name: YanYunCY/dsh-gateway-notify
+category: notify
+description:
+  en: Pushes a notification when a long agent turn finishes, a turn fails, or an approval waits too long, via ntfy, Bark, Gotify, ServerChan, Feishu, DingTalk, WeCom, Telegram or a webhook. Port of @magpie-community/gateway-notify (MIT); the upstream is a magpie API-gateway plugin that does not install into DSH, so the two never coexist in one host.
+  zh: 长任务结束、回合失败或审批等待过久时推送通知，支持 ntfy、Bark、Gotify、Server酱、飞书、钉钉、企业微信、Telegram 与 webhook。移植自 @magpie-community/gateway-notify（MIT）；上游是 magpie API 网关插件，无法装进 DSH，两者不会同装。

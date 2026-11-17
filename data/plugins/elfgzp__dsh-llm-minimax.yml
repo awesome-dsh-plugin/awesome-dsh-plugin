@@ -1,0 +1,6 @@
+url: https://github.com/elfgzp/dsh-llm-minimax
+name: elfgzp/dsh-llm-minimax
+category: model
+description:
+  en: 'Adds MiniMax open-platform models to the DSH model picker: paste the API key in Settings and MiniMax models become selectable, with the M Plan quota windows shown beside the composer.'
+  zh: '把 MiniMax 开放平台的模型加进 DSH 的模型选择：在设置里填 API Key 即可选到 MiniMax 模型，并在输入框旁显示 M Plan 的额度窗口。'

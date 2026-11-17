@@ -1,0 +1,6 @@
+url: https://github.com/YOUNG-FELIX/dsh-vision
+name: YOUNG-FELIX/dsh-vision
+category: vision
+description:
+  en: 'Ask a vision-capable model about a local image from any session, including sessions whose own model is text-only. On the default path the plugin calls the host''s route in-process with ctx.llm.stream(), so the host''s credentials stay inside its provider adapters; only the optional direct/custom OpenAI-compatible routes read one key (from the plugin config or an apiKeyRef into ~/.dsh/.credentials.yaml).'
+  zh: '任意会话都能让视觉模型读本地图片，包括会话本身用的是纯文本模型的情况。默认路径下插件通过 ctx.llm.stream() 在进程内调用宿主路线，宿主凭据留在 provider 适配器里；只有可选的 direct/自定义 OpenAI 兼容路线会读取密钥（来自插件配置或 apiKeyRef 指向的 ~/.dsh/.credentials.yaml）。'

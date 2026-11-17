@@ -1,0 +1,6 @@
+url: https://github.com/marsma-101/dsh-trae-connect
+name: marsma-101/dsh-trae-connect
+category: model
+description:
+  en: 'Connects Trae CN desktop app models to DeepSeek Harness with no OAuth flow: reuses the desktop sign-in, exposes 17 models (including deepseek-v4.1-flash) with consumption-rate badges and reasoning-effort mapping.'
+  zh: '将 Trae CN 桌面版的模型接入 DeepSeek Harness，无需单独 OAuth：复用桌面端登录，17 个模型（含 deepseek-v4.1-flash）带倍率标注与思考强度映射。'

@@ -1,0 +1,7 @@
+url: https://github.com/Sillykjs/dsh-share-import
+name: Sillykjs/dsh-share-import
+category: session
+description:
+  en: Import a public DeepSeek or Doubao chat share link into a DSH workspace as a static, resumable session.
+  zh: 把公开的 DeepSeek 或豆包对话分享链接导入 DSH 工作区，成为一个静态、可续聊的会话。
+tarball: https://github.com/Sillykjs/dsh-share-import/releases/latest/download/dsh-share-import.tgz

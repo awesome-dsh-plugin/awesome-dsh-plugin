@@ -1,0 +1,7 @@
+url: https://github.com/Shang-ZZ/dsh-diagram-design
+name: Shang-ZZ/dsh-diagram-design
+category: tools
+description:
+  en: Export diagram-design HTML diagrams to SVG/PNG, extract draw.io/Mermaid/Excalidraw structure, validate output, and browse 45 diagram types. Built on cathrynlavery/diagram-design (MIT); needs python3, and PNG export additionally needs Playwright.
+  zh: 将 diagram-design 图表导出为 SVG/PNG，提取 draw.io/Mermaid/Excalidraw 结构，校验输出，并浏览 45 种图表类型。基于 cathrynlavery/diagram-design（MIT），需 python3，导出 PNG 还需 Playwright。
+icon: https://raw.githubusercontent.com/Shang-ZZ/dsh-diagram-design/main/icon.png

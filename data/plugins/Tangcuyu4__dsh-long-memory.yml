@@ -1,0 +1,6 @@
+url: https://github.com/Tangcuyu4/dsh-long-memory
+name: Tangcuyu4/dsh-long-memory
+category: memory
+description:
+  en: "Cross-session long-term memory: a hybrid-retrieval memory store (BM25 plus CJK bigrams), chunked long-document search, chat-log extraction and distillation, and context-summary archiving and browsing, with important memories and the latest summaries auto-injected into the prompt."
+  zh: "跨会话长期记忆包：混合检索记忆库（BM25+中文二元分词）、长文切块检索、聊天记录提取精炼，外加上下文总结存档与翻阅，重要记忆与最新总结自动注入提示词。"

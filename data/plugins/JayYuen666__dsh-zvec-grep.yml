@@ -1,0 +1,6 @@
+url: https://github.com/JayYuen666/dsh-zvec-grep
+name: JayYuen666/dsh-zvec-grep
+category: tools
+description:
+  en: 'Semantic workspace search: three model tools (`zg_search`, `zg_index`, `zg_status`) drive the `zg` CLI for hybrid BM25 + vector + RRF retrieval, with a search-first gate that refuses `grep`/`rg` in an indexed workspace until a successful `zg_search` re-arms a time-windowed quota, and a settings card for embedding choice, gate values and job-backed index rebuilds.'
+  zh: '工作区语义检索：三个模型工具（`zg_search` / `zg_index` / `zg_status`）驱动 `zg` CLI 做 BM25 + 向量 + RRF 混合检索；已建索引的工作区里，`grep`/`rg` 需要先成功检索一次来续上一个时间窗配额；设置卡管理嵌入模型、门禁参数，并可把索引重建作为宿主作业运行。'

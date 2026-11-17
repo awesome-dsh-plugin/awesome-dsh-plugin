@@ -1,0 +1,6 @@
+url: https://github.com/xkk6663/dsh-live2d-mao/tree/main/packages/dsh-live2d-mao
+name: xkk6663/dsh-live2d-mao#dsh-live2d-mao
+category: fun
+description:
+  en: 'Connector only, it renders nothing itself: subscribes to DeepSeek Harness session events and folds them into a 12-phase work state (planning / thinking / executing-tool / streaming / waiting-input / voice / awaiting-approval / complete / error / paused / idle / heartbeat), then POSTs each phase to a desktop-pet backend at http://127.0.0.1:8000/api/plugin/dsh/ingest. It holds no window. No API key or token is needed. Requires the Mao Live2D pet application to be separately installed and running (that is a Windows Electron app with its own PowerShell 7 / Python 3.10+ / Node 18+ prerequisites); without it this plugin has nothing to push to.'
+  zh: '连接器，本身不渲染任何东西：订阅 DeepSeek Harness 的会话事件，折叠成 12 态工作状态（规划 / 思考中 / 执行工具 / 回复中 / 聆听中 / 语音播报 / 待确认 / 完成 / 出错 / 暂停 / 待机 / 在线），再逐条 POST 到桌宠后端的 /api/plugin/dsh/ingest。不持有窗口，无需 API Key 或 token。使用前须另行安装并启动 Mao Live2D 桌宠应用（该应用是 Windows Electron 程序，自身要求 PowerShell 7 / Python 3.10+ / Node 18+）；没有它，本插件没有可推送的对象。'

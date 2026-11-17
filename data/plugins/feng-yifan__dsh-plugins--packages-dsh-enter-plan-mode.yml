@@ -1,0 +1,6 @@
+url: https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-enter-plan-mode
+name: feng-yifan/dsh-plugins#dsh-enter-plan-mode
+category: tools
+description:
+  en: 'Enter-plan-mode tool: gives the model a callable `dsh_enter_plan_mode_enter_plan_mode` that switches the current session into plan mode for non-destructive exploration, pairing with the built-in `exit_plan_mode` to submit the plan for review. No settings.'
+  zh: '进入计划模式工具：给模型一个可调用的 `dsh_enter_plan_mode_enter_plan_mode`，把当前会话切进计划模式先做非破坏性探索，再配合内置的 `exit_plan_mode` 提交方案评审。无设置项。'

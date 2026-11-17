@@ -1,0 +1,6 @@
+url: https://github.com/HerTa-st/dsh-balance-card
+name: HerTa-st/dsh-balance-card
+category: usage
+description:
+  en: A draggable balance and usage card for the web UI. Clicking the character button slides the card out from the left side of the image and clicking it again retracts the card; it shows the official DeepSeek account balance split into granted credit and top-up, and token usage folded from local session logs for today, the last 7 days and the month, priced per call with the official peak/off-peak rates (cache hits, cache misses and output are priced separately).
+  zh: 可拖动的余额与用量浮层卡片：点一下角色图片，卡片从图片左侧滑出，再点一下缩回；显示官方 DeepSeek 余额（赠金 / 充值拆分），并按缓存命中、未命中、输出三段计价，汇总本地会话日志的今日 / 近 7 天 / 本月 token 用量与人民币估算花费（按官方峰谷时段逐次计价）。

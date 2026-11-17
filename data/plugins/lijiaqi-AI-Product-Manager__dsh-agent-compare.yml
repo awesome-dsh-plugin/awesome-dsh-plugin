@@ -1,0 +1,7 @@
+url: https://github.com/lijiaqi-AI-Product-Manager/dsh-agent-compare
+name: lijiaqi-AI-Product-Manager/dsh-agent-compare
+category: workflow
+description:
+  en: 'AgentCompare compares 2–4 answers, files or live pages in the DSH Desktop/Web main conversation, with Chinese/English UI, shared conversation context, blind or open picks and reviewed adoption. Requires a root-level Vite project in a Git repository with at least one commit.'
+  zh: '鲸挑细选 AgentCompare：在 DSH Desktop/Web 主对话中比较 2–4 版回答、文件或网页；中英双语，同步主对话上下文，保留选择理由并审查采用。需要 Git 仓库根目录下有 Vite 项目，且至少有一次提交。'
+icon: https://raw.githubusercontent.com/lijiaqi-AI-Product-Manager/dsh-agent-compare/v3.1.1/assets/icon.png

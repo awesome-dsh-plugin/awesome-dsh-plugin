@@ -1,0 +1,6 @@
+url: https://github.com/988hj7tczd-oss/dsh-lsp-packs/tree/main/dsh-lsp-go
+name: 988hj7tczd-oss/dsh-lsp-packs#dsh-lsp-go
+category: dev
+description:
+  en: 'Go LSP configuration plugin for DeepSeek Harness using gopls.'
+  zh: '基于 gopls 为 DeepSeek Harness 提供 Go 代码导航和语言服务配置。'

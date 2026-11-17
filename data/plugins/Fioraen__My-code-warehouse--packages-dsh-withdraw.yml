@@ -1,0 +1,6 @@
+url: https://github.com/Fioraen/My-code-warehouse/tree/main/packages/dsh-withdraw
+name: Fioraen/My-code-warehouse#dsh-withdraw
+category: session
+description:
+  en: 'Right-click a sent message to edit or withdraw it. The running answer is stopped first, then that message and everything after it are replaced in the conversation: withdrawing leaves a short withdrawn marker and stops there, while editing asks the model again with the new text.'
+  zh: '右键已发出的消息即可修改或撤回：先停住正在生成的回答，再把这条消息及其之后的内容替换掉——撤回只留下一条「已撤回」标记并就此停下，修改则按新正文重新提问。'

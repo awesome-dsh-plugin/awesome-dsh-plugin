@@ -1,0 +1,6 @@
+url: https://github.com/Jueze-2019/dsh-redteam-mode/tree/main/packages/redteam-bundle
+name: Jueze-2019/dsh-redteam-mode#packages/redteam-bundle
+category: security
+description:
+  en: "Red-team engagement mode: send one target organization name; a planner session runs five execution roles (recon, asset triage, vulnerability discovery, exploitation, internal pivot) with configurable concurrency; preflight checks skills/resources; scoring uses four stages (recon, internet, boundary, internal) with server-side caps and privilege-wins dedup; findings stay in a local SQLite fact base. The persistent right-side console has nine pages and includes asset mapping, agents, sessions/tunnels, findings, score targets, reports, POC knowledge base and skill library. v0.15.2 adds automatic HTTP evidence/action records, batch ingest, scope check, tunnel pivot probe, data proof, cleanup ledger and T0-T3 asset admission to prevent scope drift. 59 redteam_* tools; 38 bundled skills."
+  zh: "红队作战模式：只发一个靶标单位名称，主会话指挥五个执行角色（信息收集/资产梳理/漏洞发现/漏洞利用/内网渗透），并发可配置；开工前做技能与资源预检；得分按四阶段（信息收集/互联网/边界/内网），上限、权限取高、同服务去重由服务端判定；发现落本机 SQLite 事实库。右侧常驻控制台 9 个页面，含资产测绘、智能体、会话隧道、漏洞战果、得分目标、报告、POC 知识库与技能库。v0.15.2 增加 HTTP 证据/动作记录自动留痕、批量落库、范围校验、隧道内网探测、数据证明、清理台账与 T0–T3 资产准入，防止打偏靶标。59 个 redteam_* 工具，随 npm 包 38 个随包技能。"

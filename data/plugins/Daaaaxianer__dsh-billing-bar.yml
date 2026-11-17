@@ -1,0 +1,7 @@
+url: https://github.com/Daaaaxianer/dsh-billing-bar
+name: Daaaaxianer/dsh-billing-bar
+category: usage
+description:
+  en: "Adds a 12-hour peak/off-peak billing strip and the account balance above the composer, with today, 7-day and 30-day spend per model."
+  zh: 在输入框上方显示以当前为中心的 12 小时峰谷条形与账户余额，可切换今日、近 7 日、近 30 日查看各模型花费。
+icon: https://raw.githubusercontent.com/Daaaaxianer/dsh-billing-bar/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/errrepe/dsh-codegraph-plugin
+name: errrepe/dsh-codegraph-plugin
+category: tools
+description:
+  en: Codegraph CLI as eight code-intelligence tools for DSH — symbol search, callers/callees, impact analysis, codebase exploration, symbol/file reading, index status and sync.
+  zh: 将 Codegraph CLI 封装为 DSH 的八个代码智能工具：符号搜索、调用者/被调用者、影响分析、代码库探索、符号/文件读取、索引状态与同步。

@@ -1,0 +1,7 @@
+url: https://github.com/hoyin-law/dsh-feishu-cli
+name: hoyin-law/dsh-feishu-cli
+category: notify
+tarball: https://github.com/hoyin-law/dsh-feishu-cli/releases/latest/download/dsh-feishu-cli.tgz
+description:
+  en: 'Feishu/Lark integration for DeepSeek Harness through the official lark-cli: a sidebar panel for app setup and QR sign-in, a command console, and agent tools that run any lark-cli command across 18 business domains, 200+ high-level commands and the full OpenAPI; the official CLI is downloaded on first use on Windows, macOS or Linux.'
+  zh: '通过飞书官方 lark-cli 接入 DeepSeek Harness：侧边栏面板完成应用初始化与扫码登录，内置命令控制台，并提供 Agent 工具执行任意 lark-cli 命令，覆盖 18 大业务域、200+ 高层命令与全量 OpenAPI；首次使用时自动下载对应平台的官方 CLI（Windows / macOS / Linux）。'

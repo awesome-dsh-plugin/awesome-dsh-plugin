@@ -1,0 +1,6 @@
+url: https://github.com/lsqace-del/dsh-progress
+name: lsqace-del/dsh-progress
+category: tools
+description:
+  zh: "「进度」实验/项目进度管理：16 个 progress_* agent 工具（安排增删改查、画板页、每日记录、全局搜索、概览、甘特、留言、导入导出），并在 better-sidebar 注册「进度」侧边栏 tab 托管原版界面；数据存会话项目 .progress/progress.json，随项目目录走。"
+  en: "Lab/project progress management for DeepSeek Harness: 16 progress_* agent tools (item CRUD, day-board pages, daily records, global search, overview, gantt, comments, import/export) plus a 「进度」sidebar tab in better-sidebar hosting the original web UI; data lives in the session project's .progress/progress.json."

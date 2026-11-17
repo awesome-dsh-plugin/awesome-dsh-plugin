@@ -1,0 +1,7 @@
+url: https://github.com/pzr-Ryan/dsh-plugins/tree/main/dsh-always-on-top
+name: pzr-Ryan/dsh-plugins#dsh-always-on-top
+category: ui
+description:
+  en: Adds a pin button to the left of the Windows caption buttons that keeps the DSH window always on top of the desktop.
+  zh: 在 DSH 标题栏右上角的最小化键左侧新增图钉按钮，点击后窗口始终置于桌面最顶层。
+icon: https://raw.githubusercontent.com/pzr-Ryan/dsh-plugins/main/dsh-always-on-top/icon.png

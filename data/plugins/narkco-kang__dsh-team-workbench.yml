@@ -1,0 +1,6 @@
+url: https://github.com/narkco-kang/dsh-team-workbench
+name: narkco-kang/dsh-team-workbench
+category: ui
+description:
+  en: 'A named-agent-team chat workbench for DSH: per-member model routes with fallback and 3D mascot avatars; private and group chats with mention relay and bounded parallel lanes; a whole department as one agent whose lead dispatches sub-agents that run in parallel on their own models before the lead synthesizes; record search with hit highlighting and today/yesterday/earlier buckets; a four-layer memory system (raw chats → atomic facts → scene summary → user persona) recalled by hybrid BM25 + embedding RRF; plus an avatar library and local/cloud speech input. Hybrid recall needs an embedding endpoint (default: local Ollama qwen3-embedding:0.6b; otherwise BM25 only); speech input needs a local jianchang512/stt service or a cloud ASR key, otherwise it falls back to the browser speech API.'
+  zh: '把一支具名智能体团队做成聊天工作台：成员各有可回退的模型路由与 3D 头像；私聊/群聊支持点名接力与受限并行；整个部门可以是一个智能体，主管分派子智能体并行执行后汇总；记录检索带命中高亮与今天/昨天/更早分组；四层记忆（原始会话 → 原子事实 → 场景摘要 → 用户画像）用 BM25 + 向量 RRF 混合召回；另有头像素材库与本地/云端语音输入。混合召回需要 embedding 端点（默认本机 Ollama 的 qwen3-embedding:0.6b，否则只用 BM25）；语音输入需本地 jianchang512/stt 服务或云端 ASR key，否则退回浏览器语音。'

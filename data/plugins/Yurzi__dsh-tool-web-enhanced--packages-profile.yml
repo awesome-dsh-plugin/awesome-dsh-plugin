@@ -1,0 +1,6 @@
+url: https://github.com/Yurzi/dsh-tool-web-enhanced/tree/main/packages/profile
+name: Yurzi/dsh-tool-web-enhanced#profile
+category: tools
+description:
+  en: 'Switchable backends behind the native web_search and web_fetch, chosen per session from a composer menu or /setup-search and /setup-fetch: DeepSeek, Exa, Firecrawl, Tavily, Tinyfish, OpenAlex, Semantic Scholar and server-side model search for search; local HTTP with a private-network allowlist, the DeepSeek Fetch API, Exa, Firecrawl, Tavily and Tinyfish for fetch.'
+  zh: '为原生 web_search 与 web_fetch 提供可切换的后端，每个会话可在输入框菜单或 /setup-search、/setup-fetch 中选择：搜索支持 DeepSeek、Exa、Firecrawl、Tavily、Tinyfish、OpenAlex、Semantic Scholar 与模型服务端搜索；抓取支持带内网白名单的本机 HTTP、DeepSeek Fetch API 以及 Exa、Firecrawl、Tavily、Tinyfish。'

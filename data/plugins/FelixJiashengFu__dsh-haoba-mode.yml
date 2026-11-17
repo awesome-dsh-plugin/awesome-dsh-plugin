@@ -1,0 +1,6 @@
+url: https://github.com/FelixJiashengFu/dsh-haoba-mode
+name: FelixJiashengFu/dsh-haoba-mode
+category: model
+description:
+  en: A gold switch beside the composer that raises every model request to the strongest reasoning effort the current model declares and to its default max output tokens, and adds a system-prompt section asking for exhaustive, self-checked work.
+  zh: 输入框旁一枚金色开关：把每次模型请求的推理强度提到当前模型声明的最高档、输出上限提到其 defaultMaxTokens，并在系统提示里追加一段要求穷尽检索、逐条自检的工作纪律。

@@ -1,0 +1,7 @@
+url: https://github.com/mingzaily/dsh-balance-pill
+name: mingzaily/dsh-balance-pill
+category: usage
+description:
+  en: "Composer-dock capsule with this session's DeepSeek spend, account balance, daily/weekly/monthly ledger and the peak/off-peak price window."
+  zh: "输入框状态行里的本会话花费胶囊，点击查看账户余额、今日/近 7 天/本月账本与峰谷价格时段。"
+icon: https://raw.githubusercontent.com/mingzaily/dsh-balance-pill/master/assets/icon-180.png

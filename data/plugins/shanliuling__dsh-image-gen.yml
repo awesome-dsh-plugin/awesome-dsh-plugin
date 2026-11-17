@@ -1,0 +1,6 @@
+url: https://github.com/shanliuling/dsh-image-gen
+name: shanliuling/dsh-image-gen
+category: workflow
+description:
+  en: 'Native conversational image generation for DeepSeek Harness: ask the agent to create an image, and it handles generation and keeps the result directly in the conversation.'
+  zh: '为 DeepSeek Harness 提供原生对话生图能力：直接让 Agent 画图，插件自动完成生成并把结果保留在当前会话中。'

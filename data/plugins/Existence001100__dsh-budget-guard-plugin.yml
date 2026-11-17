@@ -1,0 +1,6 @@
+url: https://github.com/Existence001100/dsh-budget-guard-plugin
+name: Existence001100/dsh-budget-guard-plugin
+category: security
+description:
+  en: DSH plugin that enforces per-task budget caps by CNY amount or token count, with automatic interception to prevent runaway agent costs.
+  zh: 为 DSH 每次任务设置预算线，支持按金额或 Token 限制消耗，并在达到阈值时自动拦截，防止 Agent 过度消费。

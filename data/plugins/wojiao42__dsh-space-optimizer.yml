@@ -1,0 +1,6 @@
+url: https://github.com/wojiao42/dsh-space-optimizer
+name: wojiao42/dsh-space-optimizer
+category: session
+description:
+  en: Per-task disk-space ledger in the sidebar with opt-in reclamation of unowned junk; session logs are never trimmed.
+  zh: 侧栏里的每个任务磁盘占用账本，可勾选回收无主垃圾；会话日志绝不被裁剪。

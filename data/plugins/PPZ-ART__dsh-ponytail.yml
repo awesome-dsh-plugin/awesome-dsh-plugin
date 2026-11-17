@@ -1,0 +1,7 @@
+url: https://github.com/PPZ-ART/dsh-ponytail
+name: PPZ-ART/dsh-ponytail
+category: skill
+description:
+  en: 'Ponytail port: a DeepSeek Harness agent preset that makes the model finish tasks with the least tokens, with lite / full / ultra levels.'
+  zh: Ponytail 移植：让模型消耗最少的 token 完成任务，解决浪费，支持 lite / full / ultra 三档强度。deep seek harness 可用
+icon: https://raw.githubusercontent.com/PPZ-ART/dsh-ponytail/main/assets/icon-180.png

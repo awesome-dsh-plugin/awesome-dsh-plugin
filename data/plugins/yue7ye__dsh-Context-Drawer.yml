@@ -1,0 +1,6 @@
+url: https://github.com/yue7ye/dsh-Context-Drawer
+name: yue7ye/dsh-Context-Drawer
+category: session
+description:
+  en: "When a live session's context passes a threshold, append older messages to a per-conversation folder on disk, then release the oldest finished turns from the model-visible context; the chat transcript and the session log stay untouched."
+  zh: "会话上下文超过阈值时，先把较早的消息追加到按会话归档的文件夹，再把最早的已完成轮次移出模型可见上下文；聊天记录与会话日志保持原样。"

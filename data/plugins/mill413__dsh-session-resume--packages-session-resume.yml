@@ -1,0 +1,7 @@
+url: https://github.com/mill413/dsh-session-resume/tree/master/packages/session-resume
+name: mill413/dsh-session-resume#session-resume
+category: session
+description:
+  en: Adds a Continue button to resume tasks interrupted by a process exit or restart.
+  zh: 为进程退出或重启导致中断的任务提供继续按钮。
+icon: https://raw.githubusercontent.com/mill413/dsh-session-resume/master/packages/session-resume/assets/icon-256.png

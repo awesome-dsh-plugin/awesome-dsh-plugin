@@ -1,0 +1,6 @@
+url: https://github.com/que3sui/dsh-darwin/tree/main/packages/forge
+name: que3sui/dsh-darwin#forge
+category: workflow
+description:
+  en: 'Self-evolution actuator: consumes problem tickets mined from session logs, synthesizes skill candidates (zero-code tiers by default) behind an eval gate with hold-out canaries, then promotes to project .dsh/skills with human confirm and deterministic rollback.'
+  zh: '自进化执行器：消费会话日志挖掘出的问题工单，在评测门（hold-out canary 防作弊）下合成技能候选，人工确认晋级到项目 .dsh/skills 并支持确定性回滚。'

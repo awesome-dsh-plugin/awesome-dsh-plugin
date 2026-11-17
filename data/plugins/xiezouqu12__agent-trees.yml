@@ -1,0 +1,6 @@
+url: https://github.com/xiezouqu12/agent-trees
+name: xiezouqu12/agent-trees
+category: ui
+description:
+  en: Live multi-way tree of the current session's agents in the DeepSeek Harness conversation view and right sidebar, with status, plan progress, tokens, cost (requires dsh-cost-meter), and runtime on every card.
+  zh: 在 DeepSeek Harness 的对话页和右侧边栏中以多叉树展示当前会话的智能体工作流，每个卡片显示状态、计划进度、Token、费用（需挂载 dsh-cost-meter）和运行时间。

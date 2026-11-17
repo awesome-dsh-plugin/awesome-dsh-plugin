@@ -1,0 +1,6 @@
+url: https://github.com/TritiumWang/dsh-universal-worldbook
+name: TritiumWang/dsh-universal-worldbook
+category: tools
+description:
+  en: 'Request-level one-time prompt injection without further context pollution. SillyTavern-style UI and data compatibility, keyword/regex/constant triggers, and a lore_lookup tool for on-demand searching.'
+  zh: '酒馆风格的通用世界书，为最新用户消息附加一次性的提示词注入，无上下文污染。兼容酒馆世界书，关键词/正则/常驻触发，以及不污染上下文的 lore_lookup 单轮查询工具。'

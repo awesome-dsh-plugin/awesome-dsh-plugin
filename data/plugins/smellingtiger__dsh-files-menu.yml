@@ -1,0 +1,7 @@
+url: https://github.com/smellingtiger/dsh-files-menu
+name: smellingtiger/dsh-files-menu
+category: ui
+description:
+  en: 'Right-click menu for the DSH workspace file tree: open a file, expand or collapse a folder, copy the absolute path, relative path or name, and reveal the item in the file manager.'
+  zh: 'DSH 工作区文件树的右键菜单：打开文件、展开或折叠文件夹、复制绝对路径/相对路径/文件名，并在资源管理器中定位。'
+icon: https://raw.githubusercontent.com/smellingtiger/dsh-files-menu/main/assets/icon-180.png

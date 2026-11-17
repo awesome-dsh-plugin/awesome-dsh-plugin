@@ -1,0 +1,7 @@
+url: https://github.com/Fyerl/dsh-2d-model-picker
+name: Fyerl/dsh-2d-model-picker
+category: ui
+description:
+  en: Select a model and its reasoning effort in one drag with a two-dimensional grid.
+  zh: 使用二维网格，一次拖动同时选定模型与推理强度。
+icon: https://raw.githubusercontent.com/Fyerl/dsh-2d-model-picker/main/icon.png

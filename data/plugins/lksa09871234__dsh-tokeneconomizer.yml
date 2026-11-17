@@ -1,0 +1,7 @@
+url: https://github.com/lksa09871234/dsh-tokeneconomizer
+name: lksa09871234/dsh-tokeneconomizer
+category: usage
+description:
+  en: 'DSH port of TokenEconomizer with cross-session project knowledge, opt-in tool pruning, failure-loop redirection, and token usage records.'
+  zh: 'TokenEconomizer 的 DSH 移植版，提供跨会话项目知识、需主动应用的工具裁剪、失败循环引导与 token 用量记录。'
+tarball: https://github.com/lksa09871234/dsh-tokeneconomizer/releases/download/v0.1.0/dsh-tokeneconomizer-0.1.0.tgz

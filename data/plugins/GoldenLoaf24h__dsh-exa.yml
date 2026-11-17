@@ -1,0 +1,7 @@
+url: https://github.com/GoldenLoaf24h/dsh-exa
+name: GoldenLoaf24h/dsh-exa
+category: browser
+tarball: https://github.com/GoldenLoaf24h/dsh-exa/releases/latest/download/dsh-exa.tgz
+description:
+  en: 'Exa web search and fetch provider for DSH: replaces built-in web search and exposes multi-source research capabilities.'
+  zh: '基于 Exa 的 DSH 网页搜索与抓取插件：完全接管内置网络检索，并提供多源深度调研工具。'

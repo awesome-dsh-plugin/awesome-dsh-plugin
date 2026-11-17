@@ -1,0 +1,6 @@
+url: https://github.com/Akimiya-z/codex-guard/tree/main/dsh
+name: Akimiya-z/codex-guard#dsh
+category: git
+description:
+  en: 'Pre-submit pull-request hygiene checks inside DeepSeek Harness: scans the current diff for TODO leftovers, hardcoded secrets, and non-conventional commit subjects.'
+  zh: '在 DeepSeek Harness 内做提交前的 Pull Request 卫生检查：扫描当前改动中的 TODO 残留、硬编码密钥与非规范提交信息。'

@@ -1,0 +1,6 @@
+url: https://github.com/Jannchie/dsh-bill
+name: Jannchie/dsh-bill
+category: usage
+description:
+  en: 'Cost tracking priced from an online catalogue (models.dev + OpenRouter, 8000+ models, each call priced at its own instant): a per-turn cost line, a Cost tab attributing spend to tool output / model output / system prompt / commands, budget, monthly forecast, ~166 live-rate currencies, and a bill_stats agent tool.'
+  zh: 按在线价格目录计价的费用统计（models.dev + OpenRouter，8000+ 模型，每次调用按自身时刻定价）：每轮成本行、把花费归因到工具输出 / 模型输出 / 系统提示词 / 终端命令的「费用」标签页、预算、月度预测、约 166 种实时汇率货币，以及 bill_stats agent 工具。

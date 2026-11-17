@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-ps-preflight
+name: dingchenhui0618-arch/dsh-ps-preflight
+category: security
+description:
+  en: 'Grades every PowerShell command an agent is about to run before it runs: deletion, overwrite, network download and credential access are four required classes, plus dynamic execution, system and privilege changes. Verdicts are a pure deterministic rule function — no model call, no network, sub-millisecond — with two escalation rules (download+execute, credential+exfiltrate) that jump straight to high. High risk stops the tool call for a second confirmation (in-panel queue or the native approval), deny or timeout means it never runs; medium is logged but never blocked. Every command and its verdict, including the redacted command text, is appended to a local JSONL audit log. Quoted danger strings are treated as data, -WhatIf is respected, -EncodedCommand is decoded and analysed again. Host + client halves, zero runtime dependencies, 55 rules, 136 tests.'
+  zh: 'agent 要跑的每条 PowerShell 命令，执行前先分级：删除 / 覆盖 / 网络下载 / 触碰凭据四类必测，另加动态执行、系统改动、权限改动。判定是纯确定性规则函数——不调模型、不联网、亚毫秒，另有一条组合升级（下载+执行、凭据+外发直接判高危）。高危会停住这次工具调用等一次确认（面板队列或原生审批），拒绝或超时即不执行；中危只记录不拦。每条命令和它的判定（含脱敏后的命令原文）都追加到本地 JSONL 审计日志。引号里的危险字样当数据不当命令，-WhatIf 尊重空跑，-EncodedCommand 先解码再分析。host + client 双半、零运行时依赖、55 条规则、136 个测试。'

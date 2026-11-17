@@ -1,0 +1,6 @@
+url: https://github.com/Firefox2100/dsh-ai-providers/tree/main/packages/dsh-ai-openai
+name: Firefox2100/dsh-ai-providers#openai
+category: model
+description:
+  en: OpenAI provider for language models, embeddings, text-to-speech, speech-to-text, and image generation in DSH. Requires Firefox2100/dsh-ai-providers#runtime to be installed and enabled.
+  zh: 为 DSH 提供语言模型、嵌入、文本转语音、语音转文本和图像生成能力的 OpenAI 提供商。需要安装并启用 Firefox2100/dsh-ai-providers#runtime。

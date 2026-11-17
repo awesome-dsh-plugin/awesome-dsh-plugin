@@ -1,0 +1,6 @@
+url: https://github.com/yuehancn/dsh-tool-ocr
+name: yuehancn/dsh-tool-ocr
+category: tools
+description:
+  en: Extract text from an image or PDF, reading a born-digital text layer directly and falling through to a configured OCR engine for scans.
+  zh: 从图片或 PDF 中抽取文字，电子版直接读文字层，扫描件自动转交已配置的 OCR 引擎。

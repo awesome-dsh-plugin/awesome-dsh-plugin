@@ -1,0 +1,6 @@
+url: https://github.com/better-er/dsh-remote-file-system
+name: better-er/dsh-remote-file-system
+category: remote
+description:
+  en: 'Model-visible SSH file tools read_remote, write_remote and edit_remote: read a remote UTF-8 file with line-numbered paging, create a new remote file (an existing target is refused, there is no overwrite branch), and apply literal replacements with unique-match checking — all addressed through a single "alias:path" field whose alias comes from ~/.ssh/config.'
+  zh: '模型可直接调用的 ssh 远程文件三件套：read_remote 按行号分页读远端 UTF-8 文本，write_remote 只新建文件、目标已存在即拒绝且没有覆写分支，edit_remote 做唯一匹配的字面替换，三者共用取自 ~/.ssh/config 的「别名:路径」一个 file_path 字段。'

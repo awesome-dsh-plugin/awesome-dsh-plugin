@@ -1,0 +1,6 @@
+url: https://github.com/Pummelchen/TinyTitan/tree/main/plugins/dsh-tinytitan
+name: Pummelchen/TinyTitan#dsh-tinytitan
+category: model
+description:
+  en: 'Keeps a local TinyTitan model server reachable from the harness: refreshes the llm-pi-ai route from the installed models and mounts a compaction backend that does not think.'
+  zh: '把本机 TinyTitan 模型服务接入 Harness：按已安装模型刷新 llm-pi-ai 路由，并挂载一个不做思考的压缩后端。'

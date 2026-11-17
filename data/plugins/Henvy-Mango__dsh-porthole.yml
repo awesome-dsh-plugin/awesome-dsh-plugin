@@ -1,0 +1,7 @@
+url: https://github.com/Henvy-Mango/dsh-porthole
+name: Henvy-Mango/dsh-porthole
+category: remote
+description:
+  en: "LAN access portal for DeepSeek Harness running on a NAS or other always-on host, letting a phone browser reach the DSH instance on that device; intranet penetration is supported through external tunnels such as frps or EasyTier. Its HTTP/WebSocket reverse proxy is specifically optimized for subdomains, subpaths and second-level directories (login entry, Location and Cookie Path adapt automatically), and adds opt-in visitor/administrator password protection plus remote workspace registration. Derived from wenbin-wb/dsh-bridge v2.17.8 (MIT, several modules reused verbatim); both default to port 3082, so change one port before running both."
+  zh: 为运行在 NAS 等常开设备上的 DeepSeek Harness 提供局域网访问门户：手机浏览器即可访问该设备上的 DSH 实例，支持经 frps、EasyTier 等外部隧道进行内网穿透。其 HTTP/WebSocket 反向代理针对子域名、子路径和二级目录做了专门优化（登录入口、Location、Cookie Path 自动适配），并提供可选的访客/管理员双密码认证和远程工作区注册。派生自 wenbin-wb/dsh-bridge v2.17.8（MIT，部分模块逐字沿用）；两者默认端口均为 3082，同开前需修改其中一个的端口。
+tarball: https://github.com/Henvy-Mango/dsh-porthole/releases/download/v1.5.3/dsh-porthole-1.5.3.tgz

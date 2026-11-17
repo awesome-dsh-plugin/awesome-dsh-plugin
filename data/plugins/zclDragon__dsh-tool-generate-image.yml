@@ -1,0 +1,6 @@
+url: https://github.com/zclDragon/dsh-tool-generate-image
+name: zclDragon/dsh-tool-generate-image
+category: workflow
+description:
+  en: 'Model-facing `generate_image` tool for text-only models: the model asks for a picture in natural language, Gemini draws it via the Antigravity CLI, the image is saved to a configurable output directory, and the tool returns the file paths for the model to use in its work.'
+  zh: '给纯文本模型的 `generate_image` 工具：模型用自然语言要一张图，经 Antigravity CLI 让 Gemini 画出，保存到可配置输出目录并返回文件路径，供模型在任务中使用。'

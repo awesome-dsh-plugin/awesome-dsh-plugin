@@ -1,0 +1,6 @@
+url: https://github.com/ct-jaryn/dsh-plugin-baizhi-agent-toolkit
+name: ct-jaryn/dsh-plugin-baizhi-agent-toolkit
+category: tools
+description:
+  en: 'Optional DSH configuration bundle that connects the existing MCP client to hosted BaizhiCloud Agent Toolkit using a user-provided BAIZHI_API_KEY Bearer header; tool calls may incur charges.'
+  zh: '复用 DSH 现有 MCP 客户端连接百智云托管工具包的可选配置包，通过用户提供的 BAIZHI_API_KEY 生成 Bearer 请求头；工具调用可能计费。'

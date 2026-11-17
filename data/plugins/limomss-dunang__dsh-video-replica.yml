@@ -1,0 +1,7 @@
+url: https://github.com/limomss-dunang/dsh-video-replica
+name: limomss-dunang/dsh-video-replica
+category: workflow
+icon: https://raw.githubusercontent.com/limomss-dunang/dsh-video-replica/main/assets/icon-180.png
+description:
+  en: 'Six-step video-replica workbench: fetches a Douyin/Xiaohongshu/WeChat Channels/Kuaishou/Bilibili share link or a local file, breaks the source into shots with a vision model and optional ASR, writes three A/B/C storyboards, generates a first frame and a clip per shot, then stitches the final video with optional TTS narration, burned-in ASS subtitles and BGM. Needs Node 22.18+/24.11+, ffmpeg and ffprobe on PATH, and configured vision/chat/image/video model endpoints; share links go through a third-party parser service (or yt-dlp), or upload a local file.'
+  zh: '六步爆款视频复刻工作台：解析抖音/小红书/视频号/快手/B站分享链接或本地上传，用视觉模型逐镜拆解源片并可选 ASR 转写口播，仿写 A/B/C 三版分镜，逐镜生成首帧与视频片段，最后用 ffmpeg 拼接成片，可选 TTS 配音、ASS 字幕烧录与 BGM。需 Node 22.18+/24.11+、PATH 上的 ffmpeg 与 ffprobe，并配好视觉/文本/图片/视频模型接口；分享链接需第三方解析服务（或 yt-dlp），也可直接上传本地视频。'

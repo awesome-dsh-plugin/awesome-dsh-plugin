@@ -1,0 +1,7 @@
+url: https://github.com/LexVolkov/dsh-ledger-kitty
+name: LexVolkov/dsh-ledger-kitty
+category: usage
+icon: https://raw.githubusercontent.com/LexVolkov/dsh-ledger-kitty/main/assets/icon-512.png
+description:
+  en: 'White kitten accountant on the window sill: shows the tokens and money for each answer and for the whole session, the money the prompt cache saved, the context size against the model window, the next peak/off-peak price change and the live DeepSeek balance; it purrs when stroked, reacts while the agent works and synthesizes all of its sounds.'
+  zh: '窗台上的白猫记账助手：显示每条回答与会话的 token 和花费、提示缓存省下的钱、上下文占模型窗口的比例、下一次峰谷换价时间与实时 DeepSeek 余额；可摸头打呼噜，随 agent 工作状态做出反应，所有音效均为合成。'

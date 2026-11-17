@@ -1,0 +1,6 @@
+url: https://github.com/Verchiel666/dsh-aosp
+name: Verchiel666/dsh-aosp
+category: dev
+description:
+  en: 'Fetches AOSP source snapshots from codeload and searches them on the device with ripgrep through nine tools covering mirror listing, preset bundles, fetch, incremental update, cross-module regex search, a heuristic call-chain trace and line reads, with no git, no root and no build.'
+  zh: '从 codeload 拉 AOSP 源码快照，在本机用 ripgrep 检索，九个工具覆盖镜像列表、预设包、拉取、增量更新、跨模块正则搜索、启发式调用链追踪与按行读取，不需要 git、root 或编译。'

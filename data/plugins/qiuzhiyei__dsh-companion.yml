@@ -1,0 +1,7 @@
+url: https://github.com/qiuzhiyei/dsh-companion
+name: qiuzhiyei/dsh-companion
+category: ui
+description:
+  en: 'Desktop pet companion for DSH with live task HUD, token and cost stats, balance and peak-hour alerts, reasoning-effort control, current and history conversation search, and session management.'
+  zh: 'DSH 桌面伴侣：任务实时 HUD、Token 与费用统计、余额与峰谷提醒、推理等级切换、当前与历史对话搜索、会话管理。'
+icon: https://raw.githubusercontent.com/qiuzhiyei/dsh-companion/main/docs/images/pet.png

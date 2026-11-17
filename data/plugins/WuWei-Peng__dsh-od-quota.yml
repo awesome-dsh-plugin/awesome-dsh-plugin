@@ -1,0 +1,7 @@
+url: https://github.com/WuWei-Peng/dsh-od-quota
+name: WuWei-Peng/dsh-od-quota
+category: usage
+description:
+  en: 'OpenDesign subscription quota: a sidebar page for the 5-hour and 7-day allowance, with an adaptive quota meter in the session header.'
+  zh: OpenDesign 订阅额度：左栏额度页看 5 小时 / 7 天剩余额度，顶栏自适应额度条一眼可见。
+tarball: https://github.com/WuWei-Peng/dsh-od-quota/releases/latest/download/dsh-od-quota.tgz

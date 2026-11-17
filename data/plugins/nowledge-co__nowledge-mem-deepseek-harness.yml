@@ -1,0 +1,6 @@
+url: https://github.com/nowledge-co/nowledge-mem-deepseek-harness
+name: nowledge-co/nowledge-mem-deepseek-harness
+category: memory
+description:
+  en: 'One memory layer for every AI tool and agent: Context Bundle injection, prompt-time recall, MCP tools, and turn-end DSH thread capture.'
+  zh: 给所有 AI 工具和 Agent 共用的一层记忆：注入 Context Bundle、提示时检索、MCP 工具与回合结束 DSH 线程捕获。

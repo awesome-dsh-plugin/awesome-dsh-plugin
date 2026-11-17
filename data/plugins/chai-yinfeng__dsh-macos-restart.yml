@@ -1,0 +1,6 @@
+url: https://github.com/chai-yinfeng/dsh-macos-restart
+name: chai-yinfeng/dsh-macos-restart
+category: dev
+description:
+  en: 'macOS Desktop only: one-click restart of the DeepSeek Harness Electron app. Confirms before interrupting running turns, blocks during plugin install/update, and records restart phases/logs.'
+  zh: '仅 macOS 桌面版：一键重启 DeepSeek Harness Electron 应用；重启前确认运行中的任务，插件安装/更新时拒绝，并记录重启阶段与日志。'

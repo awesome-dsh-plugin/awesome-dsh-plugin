@@ -1,0 +1,6 @@
+url: https://github.com/a792883583/dsh-message-gateway
+name: a792883583/dsh-message-gateway
+category: notify
+description:
+  en: "Multi-platform message gateway and WeCom AI bot bridge with session context compression and smartsheet creation."
+  zh: "多平台消息网关与企微智能机器人桥接：会话自动压缩持久化与智能表格一键创建。"

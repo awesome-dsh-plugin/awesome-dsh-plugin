@@ -1,0 +1,6 @@
+url: https://github.com/SpookyWaste/dsh-plan-compact-execute
+name: SpookyWaste/dsh-plan-compact-execute
+category: workflow
+description:
+  en: Adds a "Compact and run" action to the DSH Web plan-review card, which compacts the history submitted before the plan into a checkpoint and then approves the plan.
+  zh: 在 DSH Web 的计划审批卡上增加「压缩后执行」：先把计划提交之前的历史压成检查点，再批准计划。

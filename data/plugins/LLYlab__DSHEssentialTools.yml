@@ -1,0 +1,6 @@
+url: https://github.com/LLYlab/DSHEssentialTools
+name: LLYlab/DSHEssentialTools
+category: dev
+description:
+  en: "A permanent DSH plugin that bundles a developer workbench, an in-session conversation tree, and a plugin manager: build and run an LVAL project, browse its code, and keep per-program version snapshots with rollback; edit, retry, or branch any message in place, with message micro-versions; a feature manager plus a global-plugin library whose entries each carry an enable tier; cross-dialogue memory, one-shot temporary chats, and model collaboration; five network-permission tiers, mixed-model routing, a security audit, and browser control through a companion extension."
+  zh: "DSH 永久插件工作台：LVAL 工程工具的编译/运行、代码查看与程序版本快照回退；会话内对话树（就地编辑 / 重新生成 / 分支）与消息小版本；DET 管理器，以及每条记录各带一档启停权限的全局插件库；跨对话记忆、一次性临时对话与模型合作；五档网络权限、混合模型路由、安全审计，以及经配套浏览器扩展的浏览器控制。"

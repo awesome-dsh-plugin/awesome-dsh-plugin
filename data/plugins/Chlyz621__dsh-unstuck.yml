@@ -1,0 +1,6 @@
+url: https://github.com/Chlyz621/dsh-unstuck
+name: Chlyz621/dsh-unstuck
+category: workflow
+description:
+  en: 'Keeps a DeepSeek Harness run going on its own: continues a turn that ended abnormally, and continues a turn logged as completed while the model tool call was emitted as plain text instead, which leaves the agent silently idle. Revives a model request that stops streaming. A wait on an approval or on a question is logged and notified, never answered.'
+  zh: '让 DeepSeek Harness 的回合自己接上：轮次异常结束时补一条继续；工具调用被中转站当成正文吐出、回合却仍记为正常结束时，补一条带指向性的继续，让它重新发起工具调用；模型请求不再出流时掐掉当前轮重来。卡在审批或提问只记录并提醒，不代为回答。'

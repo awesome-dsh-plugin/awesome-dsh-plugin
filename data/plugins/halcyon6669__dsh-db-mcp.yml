@@ -1,0 +1,6 @@
+url: https://github.com/halcyon6669/dsh-db-mcp
+name: halcyon6669/dsh-db-mcp
+category: tools
+description:
+  en: "Database workbench inside DSH: import the connections DBeaver already stores (data-sources.json, decrypting saved passwords locally) or register SQLite, PostgreSQL, MySQL and Oracle sources by hand, then hand them to the agent through eight mcp__db__ tools — list_datasources, list_tables, describe_table, sample_rows, execute_sql, explain_query, get_ddl and test_connection. Sources start read-only; one global switch enables INSERT/UPDATE/DDL, every call is row-capped and appended to a JSONL audit log. Also covers groups, bulk actions, a read-only schema browser and a bundled Python MCP server whose dependencies install from the panel. No DSH files to edit."
+  zh: "DSH 里的数据库工作台：可以直接导入 DBeaver 已有的连接（读 data-sources.json，本地解密已保存的口令），也可以手工登记 SQLite、PostgreSQL、MySQL、Oracle 数据源，然后交给智能体通过 8 个 mcp__db__ 工具使用——list_datasources、list_tables、describe_table、sample_rows、execute_sql、explain_query、get_ddl、test_connection。数据源默认只读，一个全局开关才放开 INSERT/UPDATE/DDL；每次调用都限制行数并写入 JSONL 审计日志。另有分组、批量操作、只读结构浏览，以及依赖可在面板一键安装的内置 Python MCP 服务。不需要改 DSH 的任何文件。"

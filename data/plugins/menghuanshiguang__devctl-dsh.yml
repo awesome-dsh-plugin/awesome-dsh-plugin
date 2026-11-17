@@ -1,0 +1,6 @@
+url: https://github.com/menghuanshiguang/devctl-dsh
+name: menghuanshiguang/devctl-dsh
+category: remote
+description:
+  en: 'Drive a DSH instance from another device: a host plugin opens a token-authenticated TCP port that a single-file Python CLI drives - listing and creating sessions, sending prompts with images, streaming replies, and switching models, permissions and workspaces.'
+  zh: '从另一台设备驱动 DSH：Host 插件开一个 token 鉴权的 TCP 端口，单文件 Python CLI 负责列会话、建会话、发带图消息、看流式回复，以及切模型、权限与工作区。'

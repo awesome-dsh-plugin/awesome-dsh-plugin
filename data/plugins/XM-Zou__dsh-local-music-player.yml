@@ -1,0 +1,8 @@
+url: https://github.com/XM-Zou/dsh-local-music-player
+name: XM-Zou/dsh-local-music-player
+category: ui
+description:
+  en: Local-first music player and playlist manager for the DSH Web UI.
+  zh: 面向 DSH Web UI 的本地音乐播放器与歌单管理插件。
+icon: https://raw.githubusercontent.com/XM-Zou/dsh-local-music-player/main/assets/icon-180.png
+tarball: https://github.com/XM-Zou/dsh-local-music-player/releases/download/v0.7.2/dsh-local-music-player-0.7.2.tgz

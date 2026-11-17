@@ -1,0 +1,6 @@
+url: https://github.com/QYF1999/dsh-session-alerts
+name: QYF1999/dsh-session-alerts
+category: notify
+description:
+  en: 'Badges the installed app icon with the number of finished, unread sessions, and pops an in-app badge or a Windows notification when a session fails or waits for your answer; each state has its own chime.'
+  zh: '会话干完活时在应用图标上显示未读数字角标；会话报错或等待回答时弹出红色感叹号角标、黄色问号角标或 Windows 通知，三种状态各有提示音。'

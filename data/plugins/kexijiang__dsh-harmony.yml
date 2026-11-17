@@ -1,0 +1,7 @@
+url: https://github.com/kexijiang/dsh-harmony
+name: kexijiang/dsh-harmony
+category: tools
+description:
+  en: "HarmonyOS device workbench for DSH NEXT Desktop on Windows x64 (tested with DSH NEXT 2.0.21-next and Better Sidebar 0.28.2); the floating mirror reuses DSH's Electron or downloads one (~140 MB) on first use."
+  zh: "面向 Windows x64 上的 DSH NEXT 桌面版（在 DSH NEXT 2.0.21-next + Better Sidebar 0.28.2 上验证）的鸿蒙设备工作台；悬浮投屏复用 DSH 的 Electron，没有时首次打开会下载约 140 MB 的 Electron。"
+tarball: https://github.com/kexijiang/dsh-harmony/releases/latest/download/dsh-plugin-harmony.tgz

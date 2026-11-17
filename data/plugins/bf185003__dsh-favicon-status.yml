@@ -1,0 +1,6 @@
+url: https://github.com/bf185003/dsh-favicon-status
+name: bf185003/dsh-favicon-status
+category: ui
+description:
+  en: 'Browser tab status indicator for dsh web: paints the document favicon from the session list (blue spinning while work runs, amber while waiting on the user, green when finished).'
+  zh: '为 dsh web 绘制浏览器页签状态指示：根据会话列表把 favicon 画成状态圆环（执行中蓝色旋转、等待用户琥珀色、完成绿色）。'

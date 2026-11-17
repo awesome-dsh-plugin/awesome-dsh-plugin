@@ -1,0 +1,7 @@
+url: https://github.com/Yuedalao/dsh-connect-minimax
+name: Yuedalao/dsh-connect-minimax
+category: model
+description:
+  en: Connects an existing local MiniMax Code sign-in to DeepSeek Harness through a loopback reverse proxy without storing an API key or signing out.
+  zh: 读取本机 MiniMax Code 登录态，经本地回环反向代理接入 DSH；不保存 API Key，也不会退出登录。
+tarball: https://github.com/Yuedalao/dsh-connect-minimax/releases/latest/download/dsh-connect-minimax.tgz

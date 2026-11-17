@@ -1,0 +1,6 @@
+url: https://github.com/imcaibaicai/dsh-github-push
+name: imcaibaicai/dsh-github-push
+category: git
+description:
+  en: 'Pushes a local folder to GitHub on one instruction: proxy autodetection, the token read from the OS credential store and scrubbed from every log line, a pre-push secret gate, and SHA read-back verification of the remote branch.'
+  zh: '一句话把本地目录推到 GitHub：自动探测代理，令牌从系统凭据管理器直读并从每行日志里清洗掉，推送前做敏感信息闸门，推送后回读远端分支 SHA 校验。'

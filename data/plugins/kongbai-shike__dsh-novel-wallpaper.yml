@@ -1,0 +1,6 @@
+url: https://github.com/kongbai-shike/dsh-novel-wallpaper
+name: kongbai-shike/dsh-novel-wallpaper
+category: ui
+description:
+  en: 'Renders a TXT novel as a dim text layer behind the DSH chat, with a draggable controller for table of contents, chapter paging, auto-scroll and reading settings.'
+  zh: '把 TXT 小说渲染成 DSH 聊天背后的淡色文字层，配一个可拖动的悬浮控件，用于目录、翻章、自动滚动与阅读设置。'

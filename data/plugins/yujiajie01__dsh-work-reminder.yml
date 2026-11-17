@@ -1,0 +1,7 @@
+url: https://github.com/yujiajie01/dsh-work-reminder
+name: yujiajie01/dsh-work-reminder
+category: notify
+description:
+  en: 'Reminds you to stop working at several times a day (default 12:10 and 18:00, up to 12 editable points): at each time the host raises the DSH window to the front — restoring it if minimized and taking the foreground even from another application — and a full-screen animated alert appears with a five-minute snooze and a dismiss button. The alert can show your own image (SVG, PNG, GIF, JPEG or WebP, with GIF animation) instead of the default clock icon; times, image, mute and the auto-focus switch persist in localStorage.'
+  zh: '按设定的多个时间点提醒休息（默认中午 12:10 与下午 18:00，可增删改，最多 12 个）：到点由宿主把 DSH 窗口真正拉到最前（最小化会先还原，即使正在别的应用里也会抢到前台），并全屏弹出动态提醒，可「延迟五分钟」或「知道了」。提醒可用自己的图片（支持 SVG、PNG、GIF、JPG、WebP，GIF 会动）替代默认时钟图标；时间、图片、静音与自动聚焦开关均存于 localStorage。'
+icon: https://raw.githubusercontent.com/yujiajie01/dsh-work-reminder/main/assets/icon-180.png

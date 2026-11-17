@@ -1,0 +1,6 @@
+url: https://github.com/liwangzimo/dsh-calendar-diary
+name: liwangzimo/dsh-calendar-diary
+category: ui
+description:
+  en: "A plain-notebook calendar in the DSH sidebar: a 70-day, Monday-first grid whose cells print that day's note; one note per day is stored in a .xlsx you choose, in the DesktopCal two-column layout (Excel date serial plus free text, newest date first). Clicking a day opens the editor for it, and import/export move that same format in and out, with a preview step and a conflict policy (keep, overwrite, concat or skip)."
+  zh: 'DSH 侧边栏里的纯记事本日历：周一起始的 70 天网格，格子里直接显示当天内容；每天一条，写进你自己指定的 .xlsx，沿用 DesktopCal 两列格式（Excel 日期序列号 + 自由文本，新日期在前）。点某天即打开该日编辑框；导入导出走同一格式，导入先预览，冲突可选保留、覆盖、拼接或跳过。'

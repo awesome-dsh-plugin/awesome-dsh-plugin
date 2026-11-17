@@ -1,0 +1,6 @@
+url: https://github.com/dhicoc/dsh-codex-web-search-mcp
+name: dhicoc/dsh-codex-web-search-mcp
+category: tools
+description:
+  en: 'Registers codex-web-search-mcp as native DSH MCP tools (mcp__codex-web-search__codex_web_search / codex_web_research / web_fetch) for model-independent Codex and Grok web search and deep research.'
+  zh: '将 codex-web-search-mcp 注册为 DSH 原生 MCP 工具（codex_web_search / codex_web_research / web_fetch），提供与模型无关的 Codex / Grok 联网搜索与深度研究。'

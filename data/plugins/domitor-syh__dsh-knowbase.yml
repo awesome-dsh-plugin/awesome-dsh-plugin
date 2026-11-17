@@ -1,0 +1,6 @@
+url: https://github.com/domitor-syh/dsh-knowbase
+name: domitor-syh/dsh-knowbase
+category: memory
+description:
+  en: 'Local-first knowledge base for DeepSeek Harness: each base is a folder of UTF-8 text, text PDFs and OCR-read images; the plugin retrieves from the session''s selected bases before every turn with Chinese n-gram and BM25, answers carry citations that open in a right-sidebar reader, and the agent gets five kb_* tools (list, search, read, stats, propose text) plus /kb commands for create, use, files, search and rescan.'
+  zh: 'DeepSeek Harness 的本地知识库：每个库对应一个本地文件夹，支持 UTF-8 文本、文本型 PDF 与图片 OCR 资料；每轮对话前用中文 n-gram 与 BM25 从本会话所选库中检索，回答带可在右侧阅读器打开原文的引用；并提供 kb_list、kb_search、kb_read、kb_stats、kb_propose_text 五个工具与 /kb 系列命令（新建、选用、文件、检索、重扫）。'

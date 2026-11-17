@@ -1,0 +1,6 @@
+url: https://github.com/zhihuz123/dsh-todos
+name: zhihuz123/dsh-todos
+category: ui
+description:
+  en: Durable workspace Plan/Backlog todos for DeepSeek Harness, with a sidebar board, agent tools, and /todo commands.
+  zh: DeepSeek Harness 的持久工作区待办面板：Plan/Backlog 两层、侧边栏看板、Agent 工具与 /todo 命令，跨会话不丢。

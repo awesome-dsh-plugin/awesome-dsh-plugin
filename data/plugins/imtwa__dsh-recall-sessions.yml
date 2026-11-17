@@ -1,0 +1,6 @@
+url: https://github.com/imtwa/dsh-recall-sessions
+name: imtwa/dsh-recall-sessions
+category: session
+description:
+  en: 'A lightweight plugin that decompresses and reads past sessions, so a new session can read what an earlier conversation contained, in milliseconds per read. `/recall` lists the sessions of the current project with title, last activity, turn count and first prompt; `/recall <number>` reads back the turns of that session; `/recall all` covers every project; the model can also be asked in natural language to query with the `recall_sessions` tool.'
+  zh: 轻量级解压并读取历史会话，让新会话读取之前会话的内容，单次操作毫秒级。`/recall` 列出当前项目的历史会话（标题、最后活动时间、轮次、首问）；`/recall <序号>` 读回该会话的轮次内容；`/recall all` 覆盖所有项目；也可用自然语言让模型调用 `recall_sessions` 工具查询。

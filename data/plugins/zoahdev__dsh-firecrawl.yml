@@ -1,0 +1,6 @@
+url: https://github.com/zoahdev/dsh-firecrawl
+name: zoahdev/dsh-firecrawl
+category: tools
+description:
+  en: Scrape URLs to LLM-ready Markdown and search the web via the Firecrawl Cloud API.
+  zh: 通过 Firecrawl Cloud API 把 URL 抓成 LLM 可用 Markdown，或搜索网页并返回结果内容。

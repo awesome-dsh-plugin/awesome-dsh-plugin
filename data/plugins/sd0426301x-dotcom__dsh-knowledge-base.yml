@@ -1,0 +1,6 @@
+url: https://github.com/sd0426301x-dotcom/dsh-knowledge-base
+name: sd0426301x-dotcom/dsh-knowledge-base
+category: docs
+description:
+  en: 'A local-first sidebar knowledge base for a DSH workspace: indexes projects, documents and plugins, classifies entries automatically, and provides search, file previews and editable notes. Data stays in the workspace.'
+  zh: '本地优先的 DSH 工作区侧边栏知识库：索引项目、文档和插件，自动归类，支持搜索、文件预览和可编辑笔记；数据保存在工作区。'

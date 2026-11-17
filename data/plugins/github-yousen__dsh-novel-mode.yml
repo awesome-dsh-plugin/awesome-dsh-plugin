@@ -1,0 +1,19 @@
+# ONE-FILE catalog submission for awesome-dsh-plugin/awesome-dsh-plugin.
+# Commit this file into the FORK at exactly:
+#   data/plugins/github-yousen__dsh-novel-mode.yml
+# Do NOT hand-edit the generated READMEs — this file is the whole submission.
+#
+# Standalone repository: https://github.com/github-yousen/dsh-novel-mode
+# Public, default branch `main`, MIT, topic `dsh-plugin`.
+# v2.1.0: deterministic workflow engine (code-executed state machine, not a prompt pack).
+url: https://github.com/github-yousen/dsh-novel-mode
+name: github-yousen/dsh-novel-mode
+category: workflow
+# Both descriptions are quoted: the en string contains ": " (colon + space),
+# which unquoted would be parsed as a nested YAML key.
+description:
+  en: 'Writes a novel from one idea to a validated manuscript with a code-driven workflow: a JavaScript state machine runs the stages (constitution, outline, design, writing, validation, batch, export) and a 15-step per-chapter loop, PowerShell scripts validate each gate, and versioned checkpoints let a restart resume at the exact chapter. Nine subagent roles do the drafting and review. Needs PowerShell 7 (pwsh) and Python 3.7+; without pwsh the gates record a DEGRADED verdict and the run pauses.'
+  zh: '用代码驱动的工作流把一个想法写成校验通过的小说：JavaScript 状态机推进各阶段（宪法、大纲、设计、写作、校验、批量、导出）和每章 15 步的循环，每道门禁由 PowerShell 脚本校验，版本化断点可在重启后从原章节续写；起草与评审由 9 个子代理角色完成。需要 PowerShell 7（pwsh）与 Python 3.7+；没有 pwsh 时门禁记为 DEGRADED，运行暂停。'
+icon: https://raw.githubusercontent.com/github-yousen/dsh-novel-mode/main/assets/icon-180.png
+# Prebuilt tarball pinned to the published release tag (no build-script approval
+# needed); the name is version-free so the URL never rots across releases.

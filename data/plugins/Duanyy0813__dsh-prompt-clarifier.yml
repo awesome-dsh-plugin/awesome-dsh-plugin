@@ -1,0 +1,6 @@
+url: https://github.com/Duanyy0813/dsh-prompt-clarifier
+name: Duanyy0813/dsh-prompt-clarifier
+category: ui
+description:
+  en: Adds a prompt-refine button to the DSH composer and, when auto mode is on, refines the prompt before the agent starts by rewriting the text with recent session context through a side-channel model call, asks on the native question card when the rewrite cannot be decided, reports each stage as a command card in the chat, and keeps the original text when analysis fails.
+  zh: 在 DSH 输入框添加「提示词优化」按钮；开启自动模式后，在助手开始执行前先用旁路模型结合最近会话上下文改写提示词，无法确定改写方式时先用原生提问卡片确认，各阶段以命令卡片在主对话中播报，分析失败时按原文继续。

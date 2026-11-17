@@ -1,0 +1,6 @@
+url: https://github.com/1Lany2a/dsh-domain-role/tree/main/plugins/dsh-domain-bridge
+name: 1Lany2a/dsh-domain-role#dsh-domain-bridge
+category: session
+description:
+  en: Domain-identity layer for long-running agent sessions — declaration-first domain addressing, a session factory, four-level pause, and model dispatch for coordinating multiple top-level sessions.
+  zh: 长周期 agent 会话的域身份层——声明优先的域寻址、会话工厂、四级暂停与模型分派，用于协调多个顶层会话。

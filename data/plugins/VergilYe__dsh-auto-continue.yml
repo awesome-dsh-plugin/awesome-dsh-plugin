@@ -1,0 +1,6 @@
+url: https://github.com/VergilYe/dsh-auto-continue
+name: VergilYe/dsh-auto-continue
+category: session
+description:
+  en: 'Keeps a turn from closing on an unfinished reply: a stream guard turns silent truncation into an in-step retry, and a completion protocol asks the model to declare how each turn ended.'
+  zh: '避免轮次停在「话没说完」或「只写了下一步计划」上关闭：把静默截断的流转成同一步内可重试的失败，并要求模型在每轮结束时声明收尾方式。'

@@ -1,0 +1,6 @@
+url: https://github.com/alice0721021-web/dsh-local-devkit
+name: alice0721021-web/dsh-local-devkit
+category: dev
+description:
+  en: 'Local development facts for Harness: environment and runtime-health probes, git status/diff/log/commit, write-time snapshots with version-by-version restore, and project checks for Node, Python and Go.'
+  zh: 本地开发事实层：环境探测与运行时健康检查、git 状态/差异/历史/提交、写入前快照与逐版回退，以及 Node / Python / Go 项目检查。

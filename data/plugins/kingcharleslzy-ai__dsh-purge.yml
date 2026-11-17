@@ -1,0 +1,7 @@
+url: https://github.com/kingcharleslzy-ai/dsh-purge
+name: kingcharleslzy-ai/dsh-purge
+category: identity
+description:
+  en: Community-maintained dsh-purge fork with host-policy patches, prompt and rule settings, diagnostics, separate update-check and install controls, and local backup/rollback.
+  zh: 独立维护的 dsh-purge 社区分支，提供宿主策略补丁、提示词与规则设置、诊断、独立的更新检查与安装控制，以及本机备份回滚。
+tarball: https://github.com/kingcharleslzy-ai/dsh-purge/releases/latest/download/dsh-purge-community.tgz

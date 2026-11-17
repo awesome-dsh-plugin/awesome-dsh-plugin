@@ -1,0 +1,7 @@
+url: https://github.com/vioeveann/dsh-avatar-frame
+name: vioeveann/dsh-avatar-frame
+category: ui
+description:
+  en: Shows a character avatar and an editable ID beside every assistant reply, and reads the reply aloud with the system voice or a local TTS service you point it at; includes presets, a playback bar with pause and sentence skipping, tone and speed controls, and one-click launching of that service.
+  zh: 在每轮回复左侧显示角色头像与可编辑 ID，并可用系统语音或你自己指定的本地 TTS 服务朗读回复；含预设、带暂停与上下句的播放控制条、语气与语速调节，以及一键启动该服务。
+icon: https://raw.githubusercontent.com/vioeveann/dsh-avatar-frame/main/assets/icon-180.png

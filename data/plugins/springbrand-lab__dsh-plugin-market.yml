@@ -1,0 +1,6 @@
+url: https://github.com/springbrand-lab/dsh-plugin-market
+name: springbrand-lab/dsh-plugin-market
+category: market
+description:
+  en: 'Plugin marketplace in Settings that targets any local profile, not just the running one: install, update and remove across web, headless and other profiles, with install-script warnings, an installed view that also covers non-catalog profile dependencies, and an automatic DSH restart when the current profile changes.'
+  zh: '设置页里的插件市场，可操作本机任意 profile 而不只是当前运行的那个：在 web、headless 及其他 profile 上安装、更新、卸载，带安装脚本风险提示，已装视图同时覆盖目录之外的 profile 依赖，改动当前 profile 时自动重启 DSH。'

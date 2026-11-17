@@ -1,0 +1,6 @@
+url: https://github.com/cherrchen/dsh-theme-studio
+name: cherrchen/dsh-theme-studio
+category: theme
+description:
+  en: Adds a Theme row to Settings → General between Appearance and Font size — 8 builtin palettes plus Default, hover previews without writing, click applies and is persisted by the host; imports/exports custom dsh-theme.json files, with an optional Theme Creator skill behind /dsh-theme-creator.
+  zh: 在「设置 → 通用」的官方「外观」与「字号」之间注入「主题」行：8 套内置配色 + 默认项，悬停预览不写盘、点击应用并由 Host 持久化；支持导入/导出自定义 dsh-theme.json 主题文件，另有可选的 Theme Creator skill（/dsh-theme-creator）。

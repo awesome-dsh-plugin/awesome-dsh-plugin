@@ -1,0 +1,7 @@
+url: https://github.com/AvenYQ/dsh-rigui
+name: AvenYQ/dsh-rigui
+category: ui
+description:
+  en: 'A personal life workbench as a sidebar panel: sleep, meals, workouts, spending, weight, schedule and to-dos share one page of cards that react to one another, and one sentence typed at the top is turned into structured records by the model configured in DSH. Records and card layout stay in local browser storage.'
+  zh: '侧边栏里的个人生活工作台：睡眠、饮食、运动、花销、体重、日程和待办放在同一页卡片上，彼此联动；在顶部说一句话，DSH 里配好的模型把它拆成结构化记录。记录与卡片版式只保存在本机浏览器存储里。'
+icon: https://raw.githubusercontent.com/AvenYQ/dsh-rigui/main/assets/icon-180.png

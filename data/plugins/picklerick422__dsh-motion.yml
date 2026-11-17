@@ -1,0 +1,8 @@
+url: https://github.com/picklerick422/dsh-motion
+name: picklerick422/dsh-motion
+category: ui
+description:
+  en: 'Popup and overlay motion for DeepSeek Harness: spring clip-morph entrances for nearby popups, fade-up far dialogs, coherent hover bubbles, image-zoom FLIP, and a live-preview settings page.'
+  zh: '为 DeepSeek Harness 的弹窗与浮层提供动效：近距浮层从触发按钮液态长出、远距弹窗从下方浮出、连贯气泡切换、图片放大 FLIP，并带可实时预览的设置页。'
+tarball: https://github.com/picklerick422/dsh-motion/releases/latest/download/dsh-motion.tgz
+icon: https://raw.githubusercontent.com/picklerick422/dsh-motion/main/assets/icon-180.png

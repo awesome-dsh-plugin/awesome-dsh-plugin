@@ -1,0 +1,8 @@
+url: https://github.com/JackWoods-code/dsh-bot-toggle
+name: JackWoods-code/dsh-bot-toggle
+category: ui
+icon: https://raw.githubusercontent.com/JackWoods-code/dsh-bot-toggle/main/assets/icon-180.png
+tarball: https://github.com/JackWoods-code/dsh-bot-toggle/releases/download/v0.4.1/dsh-bot-toggle-0.4.1.tgz
+description:
+  en: "A floating Bot / ADE switch for the DSH web UI. One click moves between ds-bot's Bot surface and the classic DSH Agent surface, while ds-bot keeps running with its data untouched."
+  zh: "悬浮在 DSH 界面上的 Bot / ADE 切换开关：一键在 ds-bot 的 Bot 界面与经典 DSH Agent 界面之间切换，ds-bot 保持加载、数据不受影响。"

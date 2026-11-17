@@ -1,0 +1,6 @@
+url: https://github.com/LeslieWylie/dsh-session-search-pro
+name: LeslieWylie/dsh-session-search-pro
+category: session
+description:
+  en: 'Search, list and read past and current sessions through the harness''s own `sessionQuery` service: uses the SQLite FTS5 index where a deployment enables it, and falls back to a bounded newest-first scan where it does not.'
+  zh: 通过 harness 自带的 `sessionQuery` 服务搜索、列出、读取历史与当前会话：部署启用了 SQLite FTS5 索引时走索引，未启用时回退到有上限的倒序扫描。

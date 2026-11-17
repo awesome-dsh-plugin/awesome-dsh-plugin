@@ -1,0 +1,6 @@
+url: https://github.com/a494359163-byte/dsh-multicad
+name: a494359163-byte/dsh-multicad
+category: tools
+description:
+  en: "Connects AutoCAD, ZWCAD, GstarCAD and BricsCAD to DeepSeek Harness over MCP, bundling the CAD server and building a private Python environment on first run. Requires Windows, one of those CAD applications installed, Python 3.10+ on PATH, and CAD running as the same Windows user and at the same privilege level as DSH."
+  zh: "通过 MCP 把 AutoCAD、中望、浩辰、BricsCAD 接入 DeepSeek Harness，内置 CAD 服务端，首次运行自动搭建私有 Python 环境。需要 Windows、本机已安装上述任一款 CAD、PATH 上有 Python 3.10+，且 CAD 与 DSH 以同一 Windows 用户、同一权限级别运行。"

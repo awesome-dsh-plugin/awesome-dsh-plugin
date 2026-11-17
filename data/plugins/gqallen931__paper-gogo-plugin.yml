@@ -1,0 +1,6 @@
+url: https://github.com/gqallen931/paper-gogo-plugin
+name: gqallen931/paper-gogo-plugin
+category: workflow
+description:
+  en: 'Exposes the Paper-gogo evidence-first paper workflow as native tools: all 18 phases and the seven G0-G6 gates become callable, gate results are normalised and advancement is refused while any gate fails, and claims are audited against the four evidence states SUPPORTED, INFERRED, VERIFY and MISSING. Ships the workflow text and 57 skills in its own directory, so it installs without a separate Paper-gogo package.'
+  zh: '把 Paper-gogo「审稿人倒推、证据优先」的论文工作流做成原生工具：18 个 Phase 与 7 道 G0-G6 门禁可直接调用，门禁结果会被归一化，任一门禁 FAIL 时拒绝推进；主张按 SUPPORTED、INFERRED、VERIFY、MISSING 四态证据审计。工作流正文与 57 个技能内置在自己的目录中，安装时无需另装 Paper-gogo 包。'

@@ -1,0 +1,6 @@
+url: https://github.com/goatliamia/dsh-plugin-maker
+name: goatliamia/dsh-plugin-maker
+category: dev
+description:
+  en: Plugin development toolkit for DeepSeek Harness with scaffolding, contract checks, plugin vetting, impact analysis, and upstream compatibility tracking.
+  zh: 面向 DeepSeek Harness 的插件开发工具集，提供骨架生成、契约检查、插件体检、影响面分析与上游兼容性追踪。

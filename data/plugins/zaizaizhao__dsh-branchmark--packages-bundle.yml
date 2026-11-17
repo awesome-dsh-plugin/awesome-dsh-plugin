@@ -1,0 +1,6 @@
+url: https://github.com/zaizaizhao/dsh-branchmark/tree/main/packages/bundle
+name: zaizaizhao/dsh-branchmark#dsh-branchmark
+category: session
+description:
+  en: While vibe coding, save an answer you may need later, use Side Chat for a question that suddenly comes up, or open a related conversation for deeper work without losing focus on the current task.
+  zh: Vibe Coding 时，如果突然想到另一个问题，或者看到一段以后还会用到的回答，可以先保存下来、在 Side Chat 里快速问清楚，或另开一个相关会话继续研究，不打断当前任务的开发思路和注意力。

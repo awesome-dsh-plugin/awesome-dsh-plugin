@@ -1,0 +1,6 @@
+url: https://github.com/Altermoe/dsh-onedev
+name: Altermoe/dsh-onedev
+category: tools
+description:
+  en: 'OneDev integration for dsh: an MCP server exposing the OneDev REST API as 61 tools — 57 administration tools (users, groups, roles, projects, authorizations, build agents and tokens, builds with streamed build logs, global settings, access tokens), 3 standalone documentation-query tools for docs.onedev.io, and environment discovery with per-call multi-environment routing — plus a dsh Web settings page that manages per-environment credentials locally and applies them on the next tool call without a restart.'
+  zh: 'OneDev 集成插件：MCP 服务器将 OneDev REST API 暴露为 61 个工具——57 个管理工具（用户、组、角色、项目、授权、构建代理与令牌、构建及流式构建日志、全局设置、访问令牌）、3 个独立的官方文档查询工具（docs.onedev.io）以及带按调用多环境路由的环境发现；另提供 dsh Web 设置页，在本地管理各环境凭据，保存后下一次工具调用即生效，无需重启。'

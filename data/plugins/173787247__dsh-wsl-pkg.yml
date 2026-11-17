@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-pkg
+name: 173787247/dsh-wsl-pkg
+category: wsl
+description:
+  en: 'Dependency tree summaries: npm / pip / cargo.'
+  zh: '依赖树摘要：npm / pip / cargo。'

@@ -1,0 +1,6 @@
+url: https://github.com/zhangjie-2007/dsh-voice
+name: zhangjie-2007/dsh-voice
+category: notify
+description:
+  en: 'Speaks a cue for DeepSeek Harness on Windows: a configurable phrase when an agent turn completes normally, a second phrase when the agent needs you to choose — a question, a plan approval, or a permission request — and a time-of-day greeting when a new conversation starts. A small bubble in the lower-left corner mutes and unmutes every cue with one click, with its own toggle chime. Phrases are synthesized with a Microsoft Edge neural voice (skipping aborted and errored turns, subagent turns, and rounds that a goal is still driving), cached under the DSH home directory and replayed locally, with the desktop SAPI voice as the offline fallback.'
+  zh: 'Windows 上的 DeepSeek Harness 语音提示：一轮对话正常结束时朗读一句可自定义的话（默认「已完成当前任务」），智能体需要你做选择时——提问、批准计划或权限确认——朗读第二句（默认「老大老大，等你做选择呢」），开始一个新对话时再按系统时间问候一句（默认「早上好／中午好／下午好／晚上好！有什么工作需要做吗？」）。页面左下角还有一个小悬浮泡，点一下就把所有播报静音或恢复（自带开关音效）。朗读用微软 Edge 神经语音合成（被中断或出错的回合、子代理回合、以及 goal 仍在续跑的回合不朗读），结果缓存在 DSH 主目录并本地播放，网络不可用时回退到系统 SAPI 桌面语音。'

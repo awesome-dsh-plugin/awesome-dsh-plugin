@@ -1,0 +1,6 @@
+url: https://github.com/quecai-niu/dsh-session-find
+name: quecai-niu/dsh-session-find
+category: session
+description:
+  en: 'Literal full-text search across every DSH session log (Chinese sentences work, where the built-in FTS5 tokenizer fails), as a right-sidebar panel that scrolls to the matching line, plus a session_find model tool.'
+  zh: '跨全部会话日志的字面检索（内置 FTS5 分词搜不到中文整句）；右侧栏面板可双击跳转并滚动到命中那一行，另提供 session_find 模型工具。'

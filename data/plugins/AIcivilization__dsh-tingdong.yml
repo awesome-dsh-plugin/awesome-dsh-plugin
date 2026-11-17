@@ -1,0 +1,6 @@
+url: https://github.com/AIcivilization/dsh-tingdong
+name: AIcivilization/dsh-tingdong
+category: tools
+description:
+  en: 'Turn English audiobooks (MP3) and documents into listening lessons: transcribe every sentence locally with the speech model DSH voice input already downloaded (about 241 MB, fetched on first use if missing; ffmpeg required), proofread and explain each sentence with your DSH model, then drill with blind listening, intensive listening and spaced repetition, with Chinese-dubbing export and offline Kokoro voices; ships a sidebar panel and four AI tools.'
+  zh: '把英文有声读物（MP3）和英文文档（PDF / Word / EPUB / 网页 / TXT）变成听力课：用 DSH 语音输入已下载的模型在本机识别每一句（缺失时首次使用自动下载约 241 MB；需 ffmpeg）、用你选的大模型逐句校对翻译讲解，再以精听、间隔复习、磨耳朵练到一听就懂；支持中文配音导出与离线 Kokoro 语音，提供右侧栏面板和 4 个 AI 工具。'

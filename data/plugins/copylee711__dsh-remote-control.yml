@@ -1,0 +1,6 @@
+url: https://github.com/copylee711/dsh-remote-control
+name: copylee711/dsh-remote-control
+category: remote
+description:
+  en: 'Continue the sessions on your computer from a phone browser: scan a QR code, approve the device on the computer, then chat, answer approvals, browse workspace files and manage settings in a mobile interface; connects over the same Wi-Fi or through a Cloudflare Quick Tunnel.'
+  zh: '用手机浏览器继续电脑上的会话：扫码并在电脑上确认设备后，在移动端界面里对话、处理审批、浏览工作区文件、管理设置；支持同一 Wi-Fi 直连或经 Cloudflare Quick Tunnel 连接。'

@@ -1,0 +1,8 @@
+url: https://github.com/qishuilalala/dsh-voice-mode/tree/main/plugin/dsh-voice-mode
+name: qishuilalala/dsh-voice-mode#dsh-voice-mode
+category: voice
+description:
+  en: 'Full-duplex voice mode for the DeepSeek Harness Web UI: toggle (2s-pause auto-send) or hold-to-talk dictation into an editable draft with zipformer2 streaming ASR, optional wake word; sentence-by-sentence Edge TTS read-aloud with live captions, and speaking interrupts playback and the running turn (true barge-in). On-device ASR, no API key.'
+  zh: 'DeepSeek Harness Web UI 全双工语音对话：按钮或 Ctrl+Shift+V 进入，持续聆听（停顿自动发送）或按住说话，zipformer2 流式识别入可编辑草稿、可选唤醒词；回复按句 Edge TTS 朗读并显示实时字幕，开口即打断播放与回合（真 barge-in）；识别模型本地推理、Edge TTS 在线合成，无需 API Key。'
+
+# submission gate retry (repo age now above 1 day)

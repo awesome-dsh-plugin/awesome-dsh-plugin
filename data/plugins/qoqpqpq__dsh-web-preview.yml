@@ -1,0 +1,6 @@
+url: https://github.com/qoqpqpq/dsh-web-preview
+name: qoqpqpq/dsh-web-preview
+category: browser
+description:
+  en: 'Embed a local web server in the DSH GUI through a remote-browser-safe same-origin proxy: any localhost port works, plus a Console/Network/Errors toolbox that captures what the iframe actually does.'
+  zh: '把本地网页服务安全地嵌进 DSH 界面：同源代理绕开远程浏览器的 localhost/混合内容限制，任意 localhost 端口可用，并附控制台/网络/错误工具箱，实时捕获 iframe 内真实行为。'

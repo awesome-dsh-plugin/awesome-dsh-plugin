@@ -1,0 +1,6 @@
+url: https://github.com/iasiv5/dsh-skip-browser-auth
+name: iasiv5/dsh-skip-browser-auth
+category: security
+description:
+  en: "Replaces the DSH Web connection provider to skip BrowserAuth entirely so the Web UI opens directly without pasting the random startup token, gated to nine verified DSH version pairs with strict host/client matching that sleeps automatically on unknown or mixed versions, and reverts fully on uninstall; web profiles only."
+  zh: '替换 DSH Web 的连接提供方以整体跳过 BrowserAuth，打开 Web 地址即可直接使用、无需抄写启动 URL 中的随机 token；按九个已验证的 DSH 版本对严格成对门控，遇到未知或混用版本自动休眠，卸载即完全恢复官方行为，仅限 Web profile。'

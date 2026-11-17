@@ -1,0 +1,6 @@
+url: https://github.com/kouyichi/dsh-plugins/tree/main/dsh-guard
+name: kouyichi/dsh-plugins#dsh-guard
+category: tools
+description:
+  en: 'Security and governance for dsh: rule-based tool denial, full tool-call audit trail, and governance reports.'
+  zh: 'dsh 安全治理：规则化工具拦截、完整工具调用审计轨迹与治理报告。'

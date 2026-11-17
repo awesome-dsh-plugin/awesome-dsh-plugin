@@ -1,0 +1,7 @@
+url: https://github.com/474885697-alt/dsh-kit/tree/main/plugins/dsh-kit-session-hygiene
+name: 474885697-alt/dsh-kit#dsh-kit-session-hygiene
+category: session
+tarball: https://github.com/474885697-alt/dsh-kit/releases/download/v0.1.0/dsh-kit-session-hygiene-0.1.0.tgz
+description:
+  zh: "会话打理：看清会话存储涨在哪、安全归档旧会话，只有明确确认令牌才真正删除。"
+  en: "Reports how much disk each project’s sessions use, archives old sessions into a dated folder, and deletes only after an explicit confirmation token."

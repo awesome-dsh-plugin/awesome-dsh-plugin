@@ -1,0 +1,6 @@
+url: https://github.com/elfgzp/dsh-session-bridge
+name: elfgzp/dsh-session-bridge
+category: session
+description:
+  en: 'Gives an agent tools to open foreground sessions, prompt them in queue or steer mode, read the transcript back, cancel a turn, and get the authenticated URL of the local web app.'
+  zh: '给 agent 一组工具：打开前台会话、以排队或插队方式发提示词、读回转录、取消回合，以及拿到本机 Web 应用带认证的地址。'

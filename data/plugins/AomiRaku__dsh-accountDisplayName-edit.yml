@@ -1,0 +1,6 @@
+url: https://github.com/AomiRaku/dsh-accountDisplayName-edit
+name: AomiRaku/dsh-accountDisplayName-edit
+category: ui
+description:
+  en: 'Customize the username (phone number or email) and avatar shown at the bottom-left account row — for personalization, or to keep screenshots from exposing them. The editor opens from the menu you get by clicking that row.'
+  zh: '自定义左下角账号处的用户名（手机号/邮箱）和头像，从而提升个性化或避免截图泄露隐私。编辑入口位于点击此处的菜单内。'

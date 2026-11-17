@@ -1,0 +1,7 @@
+url: https://github.com/wld007/dsh-medical-anonymizer
+name: wld007/dsh-medical-anonymizer
+category: security
+description:
+  en: 'Batch pseudonymization for medical text, CSV, JSON, and XLSX in DeepSeek Harness. Deterministic identifier rules run first; an optional OpenAI-compatible model pass adds discovery and verification. Exact-span replacement preserves file structure, tokens stay stable per value, and each batch produces an audit report plus a re-identification vault. DICOM images get header-only de-identification based on PS3.15 Annex E, with pixel data left byte-identical.'
+  zh: '在 DeepSeek Harness 中批量匿名化病历文本、CSV、JSON 与 XLSX：先跑确定性标识符规则，可选 OpenAI 兼容模型做发现与复核；按精确区间替换以保持文件结构，同一值保持同一假名，并输出审计报告与映射库。DICOM 影像按 PS3.15 附录 E 只处理头部元数据，像素数据逐字节保留。'
+icon: https://raw.githubusercontent.com/wld007/dsh-medical-anonymizer/main/assets/icon-180.png

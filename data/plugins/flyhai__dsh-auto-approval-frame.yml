@@ -1,0 +1,6 @@
+url: https://github.com/flyhai/dsh-auto-approval-frame
+name: flyhai/dsh-auto-approval-frame
+category: security
+description:
+  en: 'Automatic approval and audit frame for DSH tool calls: a four-outcome rule table (deny, ask, AI review, allow) over commands, file access, network and tool scope, with security rules, rule-based auto-approve/auto-deny, AI fast/deep review, human approval, permission tiers, workspace boundaries, secret redaction and placeholder restore, a hash-chained audit trail and a simulator. Target files are inspected by metadata only.'
+  zh: 'DSH 工具调用的自动审批（自动审核）与审计框架：四档规则表（拒绝／问人／AI 评审／放行）对命令审批、文件读写、网络访问与工具调用逐条拦截，能按规则自动放行或自动拒绝，疑难项交给 AI 审查或人工审批／授权；带权限档、工作区边界、敏感信息脱敏、秘密占位符回填、哈希链审计日志与台账、模拟审批设置页。目标文件只查元数据。'

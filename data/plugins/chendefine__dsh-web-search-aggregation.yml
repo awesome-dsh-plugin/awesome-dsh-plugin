@@ -1,0 +1,6 @@
+url: https://github.com/chendefine/dsh-web-search-aggregation
+name: chendefine/dsh-web-search-aggregation
+category: browser
+description:
+  en: 'Aggregated web-search provider for the built-in web_search tool: one prioritized queue over nine providers (AnySearch, TinyFish, Tavily, Brave, Exa, Firecrawl, Jina, SerpApi, Serper), with multi-key rotation per provider, ordered fallback on failed attempts, and a live settings card.'
+  zh: '聚合式网页搜索提供方：为内置 web_search 工具提供一条按优先级排序的搜索队列，覆盖 AnySearch、TinyFish、Tavily、Brave、Exa、Firecrawl、Jina、SerpApi、Serper 九家服务，每家支持多把 API Key 轮换，失败时逐级回退，并附带实时生效的设置卡片。'

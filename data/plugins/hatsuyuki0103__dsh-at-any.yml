@@ -1,0 +1,6 @@
+url: https://github.com/hatsuyuki0103/dsh-at-any
+name: hatsuyuki0103/dsh-at-any
+category: ui
+description:
+  en: 'Codex-style `@file` mentions for the web GUI: search and reference workspace files of every format (.java, .vue, PDF, images, extension-less, hidden) with no index truncation. Replaces dsh-at-file.'
+  zh: Codex 风格的 `@file` 文件引用：输入框里搜索并引用工作区所有格式的文件（.java、.vue、PDF、图片、无扩展名、隐藏文件），无索引上限。dsh-at-file 的替代品。

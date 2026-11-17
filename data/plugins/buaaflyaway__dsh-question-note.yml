@@ -1,0 +1,6 @@
+url: https://github.com/buaaflyaway/dsh-question-note
+name: buaaflyaway/dsh-question-note
+category: ui
+description:
+  en: Adds an optional note field under each selected option in the DSH Web UI ask_user_question popup; submitted notes travel to the model in the answer's custom field.
+  zh: 在 DSH 网页端 ask_user_question 弹窗中为每个选中选项增加可选的补充说明输入框，提交时补充内容随答案一并传给模型。

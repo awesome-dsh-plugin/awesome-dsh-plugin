@@ -1,0 +1,7 @@
+url: https://github.com/AstralHorizon4/dsh-shared-reading
+name: AstralHorizon4/dsh-shared-reading
+category: ui
+description:
+  en: 'Read books inside DSH: import EPUB, TXT, Markdown or HTML into a paginated reader, highlight a passage and ask about it in that book''s own agent session; four reading tools stop at unread chapters and everything stays in plain local files. Its routes are mounted with webServer.register and carry no DSH Host/Origin admission check, so a web page open in your browser can create reading sessions and change the library through them.'
+  zh: '在 DSH 里读书：导入 EPUB、TXT、Markdown、HTML 分页阅读，划出句子就在这本书专属的 agent 会话里追问；四个 reading_* 工具按已读到第几章拒绝未读内容，书、进度与对话都留在本地纯文件里。它的路由通过 webServer.register 挂载，没有 DSH 的 Host/Origin 准入检查，所以浏览器里打开的任意网页都能经由它们创建阅读会话、改动书库。'
+icon: https://raw.githubusercontent.com/AstralHorizon4/dsh-shared-reading/main/assets/icon-180.png

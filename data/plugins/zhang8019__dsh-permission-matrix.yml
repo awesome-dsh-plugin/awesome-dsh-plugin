@@ -1,0 +1,7 @@
+url: https://github.com/zhang8019/dsh-permission-matrix
+name: zhang8019/dsh-permission-matrix
+category: security
+tarball: https://github.com/zhang8019/dsh-permission-matrix/releases/latest/download/dsh-permission-matrix.tgz
+description:
+  en: 'Turns DSH permissions into 9 selectable presets (3 sandbox modes x 4 approval tiers), with rule plus LLM risk classification across four risk levels, password-gated approval for high-risk operations, and a JSONL audit log.'
+  zh: '把 DSH 权限拆成 9 个可选预设（3 种沙箱 × 4 种审批），规则 + LLM 双通道四档风险分级，高风险操作需输入批准密码才放行，附 JSONL 审计日志。'

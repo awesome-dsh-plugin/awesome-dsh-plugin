@@ -1,0 +1,7 @@
+url: https://github.com/lidaqi001/dsh-codex-claude-pipeline
+name: lidaqi001/dsh-codex-claude-pipeline
+category: workflow
+description:
+  en: 'A DeepSeek Harness agent preset where a Codex subagent analyses and decomposes the task, Claude Code subagents execute each work item, and the session only dispatches, checks and reports. Requires Codex installed and signed in locally, and Claude Code signed in locally.'
+  zh: '一个 Agent 预设：先让 Codex 子代理分析任务并拆出工作项，再交给 Claude Code 子代理逐项执行，会话只负责调度、核对与汇报。需要本机已安装并登录 Codex、已登录 Claude Code。'
+icon: https://raw.githubusercontent.com/lidaqi001/dsh-codex-claude-pipeline/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/my-0228/dsh-api-key-switch
+name: my-0228/dsh-api-key-switch
+category: security
+description:
+  en: 'API key switcher for DeepSeek Harness: save multiple API keys in Settings and switch the active one; the next model request uses it, with no DSH restart.'
+  zh: 'DSH 多 API Key 管理：在设置里保存多把 Key 并一键切换，下一次模型请求即生效，无需重启 DSH。'
+icon: https://raw.githubusercontent.com/my-0228/dsh-api-key-switch/main/assets/icon.png

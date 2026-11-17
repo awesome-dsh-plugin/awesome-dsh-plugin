@@ -1,0 +1,6 @@
+url: https://github.com/kanchengw/dsh-assembly.resume
+name: kanchengw/dsh-assembly.resume
+category: session
+description:
+  en: 'Import local Codex CLI/Desktop, Claude Code CLI, and Claude Desktop conversations into DSH with project grouping, semantic history, and tool activity; bind an existing or replacement workspace and continue with the DSH Agent.'
+  zh: 将本地 Codex CLI/Desktop、Claude Code CLI 和 Claude Desktop 会话导入 DSH：按项目分组，保留语义历史和工具活动，可绑定原工作区或新工作区，并由 DSH Agent 继续对话。

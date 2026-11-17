@@ -1,0 +1,7 @@
+url: https://github.com/Kseleven/dsh-pomodoro-timer
+name: Kseleven/dsh-pomodoro-timer
+category: ui
+description:
+  en: A pomodoro timer docked below the composer in DeepSeek Harness, with focus/short/long cycles, a resumable countdown, chime, optional system notifications and bilingual settings.
+  zh: 输入框下方的番茄钟：专注/短休息/长休息循环、可恢复倒计时、提示音、可选系统通知与中英双语设置。
+icon: https://raw.githubusercontent.com/Kseleven/dsh-pomodoro-timer/master/icon.png

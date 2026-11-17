@@ -1,0 +1,6 @@
+url: https://github.com/ChangJiang326/dsh-codex-bridge
+name: ChangJiang326/dsh-codex-bridge
+category: workflow
+description:
+  en: 'Connects a locally installed, signed-in Codex CLI to individual Harness sessions for planning, code review, and optional image analysis; the CLI must be installed and authenticated separately. Verified on Windows; macOS and Linux use the manual CLI install and are not hardware-verified.'
+  zh: '在指定 Harness 会话中接入本机已安装并登录的 Codex CLI，提供方案、代码审查和可选图片识别；CLI 需另行安装并授权。已在 Windows 实机验证，macOS 与 Linux 走手动安装 CLI 的方式、尚未实机验收。'

@@ -1,0 +1,6 @@
+url: https://github.com/superboy911/dsh-model-router
+name: superboy911/dsh-model-router
+category: model
+description:
+  en: Deterministic keyword routing, allowlisted model switching, and an isolated image_gen channel for DeepSeek Harness.
+  zh: DSH 关键词路由与隔离生图插件：确定性关键词路由、白名单模型切换与隔离的 image_gen 生图通道。

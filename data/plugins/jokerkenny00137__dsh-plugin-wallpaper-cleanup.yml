@@ -1,0 +1,7 @@
+url: https://github.com/jokerkenny00137/dsh-plugin-wallpaper-cleanup
+name: jokerkenny00137/dsh-plugin-wallpaper-cleanup
+category: tools
+description:
+  en: 'Cleans a Wallpaper Engine workshop folder against a screenshot of your subscriptions: it finds the blue check badges, OCRs the tile titles, matches them to each project.json title, and moves non-subscribed wallpapers to the Recycle Bin. Ships a settings page and a floating modal, and is Windows-only.'
+  zh: '对照“我的订阅壁纸”截图清理 Wallpaper Engine 工坊文件夹：识别蓝色勾选、OCR 磁贴标题并与 project.json 匹配，把非订阅壁纸移入回收站；带设置页与悬浮模态框，仅支持 Windows。'
+icon: https://raw.githubusercontent.com/jokerkenny00137/dsh-plugin-wallpaper-cleanup/main/assets/icon-180.png

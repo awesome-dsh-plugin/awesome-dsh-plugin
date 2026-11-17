@@ -1,0 +1,7 @@
+url: https://github.com/yezitotempeace/dsh-agent-team-roster
+name: yezitotempeace/dsh-agent-team-roster
+category: workflow
+tarball: https://github.com/yezitotempeace/dsh-agent-team-roster/releases/download/v0.2.0/dsh-agent-team-roster-0.2.0.tgz
+description:
+  en: 'Agent Teams roster plugin: newest-first ordering for the roster, task board and subagent catalog, plus bulk cleanup and teammate rename/delete.'
+  zh: 'Agent Teams 名册插件：名册、任务板与子智能体目录倒序显示（最新在最上），并提供批量清理与成员改名/删除。'

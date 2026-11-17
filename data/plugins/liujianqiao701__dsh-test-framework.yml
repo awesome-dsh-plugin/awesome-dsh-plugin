@@ -1,0 +1,6 @@
+url: https://github.com/liujianqiao701/dsh-test-framework
+name: liujianqiao701/dsh-test-framework
+category: workflow
+description:
+  en: 'Test work framework for DSH that scaffolds a product, module and version directory tree, registers seven test_framework_* tools and four runtime skills, and adds a prompt-level gate that reports which requirement-document splits, versions, related documents and environment credentials are still unrecorded before testing starts. Requires the playwright MCP server (no fallback).'
+  zh: 'DSH 测试工作框架：把空文件夹初始化为产品、模块、版本、报告与归档目录树，注册 7 个 test_framework_* 工具与 4 个运行时技能，并提供提示词级闸门——开测前报告需求文档拆分、版本、跨文档关联与环境账密中尚未登记的部分。需先配置 playwright MCP（无替代路径）。'

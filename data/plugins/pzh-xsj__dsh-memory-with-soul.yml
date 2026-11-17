@@ -1,0 +1,6 @@
+url: https://github.com/pzh-xsj/dsh-memory-with-soul
+name: pzh-xsj/dsh-memory-with-soul
+category: memory
+description:
+  zh: "以纯 Markdown 加 git 存放长期记忆：每次会话开始按全局总册与各项目册渲染一段 memory-context（人格卡、用户档案、当前焦点、路由表、最近日志），记录代理读过哪些记忆文件，并在当天日志还没提炼时提醒收口；人格放在 roles/<role>/SOUL.md 角色卡里，附侧边栏七页签设置页与四个 skill。依赖 Python 3.10+。"
+  en: "Long-term memory kept as plain Markdown plus git: each session opens with a generated memory-context block assembled from a global store and per-project books (role card, user profile, current focus, routing table, recent logs), the plugin records which memory files the agent read and reminds it to extract conclusions while the day's log is unextracted, personas live in roles/<role>/SOUL.md role cards, and it ships a seven-tab settings page in the sidebar plus four skills. Requires Python 3.10+."

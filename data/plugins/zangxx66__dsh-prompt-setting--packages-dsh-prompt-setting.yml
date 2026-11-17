@@ -1,0 +1,6 @@
+url: https://github.com/zangxx66/dsh-prompt-setting/tree/main/packages/dsh-prompt-setting
+name: zangxx66/dsh-prompt-setting#dsh-prompt-setting
+category: session
+description:
+  en: 'DeepSeek Harness Default System Prompt Management Plugin: Browse, search, and override the final system prompt assembled into each session round within the Web GUI "Settings".'
+  zh: 'DeepSeek Harness 默认 System Prompt 管理插件：在 Web GUI「设置」里浏览、检索并覆盖最终装配进每轮会话的系统提示词。'

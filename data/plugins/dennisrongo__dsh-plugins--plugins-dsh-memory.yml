@@ -1,0 +1,6 @@
+url: https://github.com/dennisrongo/dsh-plugins/tree/main/plugins/dsh-memory
+name: dennisrongo/dsh-plugins#dsh-memory
+category: memory
+description:
+  en: 'A /remember command that writes facts into the AGENTS.md instruction hierarchy dsh already loads, plus a Memory tab showing which instructions the loader kept within its byte budget.'
+  zh: '/remember 命令将事实写入 dsh 已加载的 AGENTS.md 指令层级，并配有 Memory 标签页，显示加载器在字节预算内实际保留了哪些指令。'

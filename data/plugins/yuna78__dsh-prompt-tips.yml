@@ -1,0 +1,9 @@
+# 提交到 awesome-dsh-plugin 的条目：data/plugins/yuna78__dsh-prompt-tips.yml
+# 一个文件就是全部投稿；README 是生成物，不要手改。
+url: https://github.com/yuna78/dsh-prompt-tips
+name: yuna78/dsh-prompt-tips
+category: fun
+description:
+  en: 'A desktop pet living in the corner of DSH: every hour it brings one official prompt technique from OpenAI or Anthropic — verbatim copy-ready EN template, 1:1 Chinese translation, personalised rationale, and 9 switchable skins.'
+  zh: '提示词精灵：住在 DSH 右下角的小宠物，每小时送你一条 OpenAI / Anthropic 官方提示词——EN 模板逐字可复制、中文 1:1 翻译、模型个性化「为什么值得抄」，9 套皮肤随便换。'
+icon: https://raw.githubusercontent.com/yuna78/dsh-prompt-tips/main/assets/icon-256.png

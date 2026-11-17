@@ -1,0 +1,6 @@
+url: https://github.com/NanmiCoder/dsh-auto-mode
+name: NanmiCoder/dsh-auto-mode
+category: security
+description:
+  en: 'Adds an Auto permission preset between Workspace Write and Full access: routine work stays in the official workspace-write sandbox while the current session model reviews escalation and destructive calls, granting one exact wider access once, asking when the intent is ambiguous, and denying critical paths.'
+  zh: '在 Workspace Write 与 Full access 之间增加 Auto 权限档：日常操作留在官方 workspace-write 沙箱内，由当前会话模型复核升权与破坏性调用，精确的越界访问按次放行一次，意图不明时询问，命中关键路径则拒绝。'

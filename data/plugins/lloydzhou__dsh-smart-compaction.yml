@@ -1,0 +1,6 @@
+url: https://github.com/lloydzhou/dsh-smart-compaction
+name: lloydzhou/dsh-smart-compaction
+category: session
+description:
+  en: 'Cache-first context compaction with an optional adaptive economic policy, observation-only by default, without cache-hit or cost-saving guarantees.'
+  zh: '缓存优先的上下文压缩，提供可选的自适应经济策略，默认仅观察，不保证缓存命中或费用节省。'

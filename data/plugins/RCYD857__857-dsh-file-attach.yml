@@ -1,0 +1,6 @@
+url: https://github.com/RCYD857/857-dsh-file-attach
+name: RCYD857/857-dsh-file-attach
+category: ui
+description:
+  en: Drag or paste files or pictures into the DSH Web composer as one scrolling row of chips, sent as @path references.
+  zh: 把文件或图片拖进 DSH Web 输入框，以一排小卡片展示，发送时以 @path 引用传给模型。

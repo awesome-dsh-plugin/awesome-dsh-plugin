@@ -1,0 +1,6 @@
+url: https://github.com/JKL-3484/dsh-drive-manager
+name: JKL-3484/dsh-drive-manager
+category: tools
+description:
+  en: "Windows multi-drive dashboard that labels cleanable, caution, and system space in green, yellow, and red, audits download folders, and suggests how to split data across drives."
+  zh: "Windows 多盘磁盘分工面板：用绿/黄/红标出可清理、需确认、系统占用，核对下载目录，并给出多盘分工与迁移建议。"

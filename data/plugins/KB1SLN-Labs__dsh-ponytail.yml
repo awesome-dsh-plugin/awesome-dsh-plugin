@@ -1,0 +1,7 @@
+url: https://github.com/KB1SLN-Labs/dsh-ponytail
+name: KB1SLN-Labs/dsh-ponytail
+category: identity
+tarball: https://github.com/KB1SLN-Labs/dsh-ponytail/releases/download/v5.3.3-dsh.6/kb1slnlabs-dsh-ponytail.tgz
+description:
+  en: "Unofficial port of Ponytail 5.3.3 (upstream: DietrichGebert/ponytail, MIT; not affiliated) for DeepSeek Harness: minimal-code rules, session modes, native settings, a composer status band, and a reported-usage dashboard. It cannot be installed alongside another DSH Ponytail adapter — remove @mengyuly/dsh-ponytail first."
+  zh: "Ponytail 5.3.3（上游 DietrichGebert/ponytail，MIT，与上游无关联）的 DSH 非官方移植：最小代码规则、会话模式、原生设置、输入框状态条与用量面板。不能与其他 DSH Ponytail 适配器同装，需先卸载 @mengyuly/dsh-ponytail。"

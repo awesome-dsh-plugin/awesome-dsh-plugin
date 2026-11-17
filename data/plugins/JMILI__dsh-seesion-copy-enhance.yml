@@ -1,0 +1,6 @@
+url: https://github.com/JMILI/dsh-seesion-copy-enhance
+name: JMILI/dsh-seesion-copy-enhance
+category: session
+description:
+  en: 'Copy a user message together with its images and files, then paste it into any session: the text lands in the composer and each attachment is rebuilt through the official createDrafts/addAttachments path, so it uploads and sends like a normal draft.'
+  zh: '复制用户消息时连同图片与文件一起捕获，粘贴到任意会话：文字进入输入框，每个附件经官方 createDrafts/addAttachments 通道重建为真实草稿，可正常上传并发送。'

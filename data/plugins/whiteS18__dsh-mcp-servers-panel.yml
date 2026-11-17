@@ -1,0 +1,6 @@
+url: https://github.com/whiteS18/dsh-mcp-servers-panel
+name: whiteS18/dsh-mcp-servers-panel
+category: ui
+description:
+  en: 'MCP server management panel in Settings: add, edit, enable/disable and delete servers across user and workspace scopes with form or JSON editing, and auto-register discovered MCP tools as native conversation tools.'
+  zh: '在设置中提供 MCP Servers 管理面板：新增、编辑、启停、删除服务器，支持用户/项目作用域与表单/JSON 双模式编辑，并自动把发现的 MCP 工具注册为对话原生工具。'

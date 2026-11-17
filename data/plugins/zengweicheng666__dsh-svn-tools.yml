@@ -1,0 +1,6 @@
+url: https://github.com/zengweicheng666/dsh-svn-tools
+name: zengweicheng666/dsh-svn-tools
+category: git
+description:
+  en: 'SVN (Subversion) toolset for DeepSeek Harness: 33 agent tools (status, diff, log, blame, commit, merge, props, lock, changelist...) plus a sidebar panel with side-by-side BASE/working-copy diff, conflict resolution and AI commit logs.'
+  zh: 'SVN（Subversion）工具集：33 个 agent 工具（status/diff/log/blame/commit/merge/props/lock/changelist 等），以及带 BASE/工作副本左右对比、冲突解决与 AI 提交日志的侧边栏面板。'

@@ -1,0 +1,6 @@
+url: https://github.com/comer2031/dsh-desktop-auto-restart
+name: comer2031/dsh-desktop-auto-restart
+category: dev
+description:
+  en: 'Restarts the DSH desktop app on Windows and wakes the sessions listed for it afterwards. The agent-facing restart tool is off by default and refuses while the host is busy.'
+  zh: '重启 Windows 上的 DSH 桌面端，并在重启后唤醒清单里指定的会话。面向 agent 的重启工具默认关闭，宿主繁忙时拒绝重启。'

@@ -1,0 +1,6 @@
+url: https://github.com/danshuyue/dsh-onebot-channel
+name: danshuyue/dsh-onebot-channel
+category: tools
+description:
+  en: 'Connects QQ private chats and groups to DSH over OneBot 11, adding qq_send and other tools so the agent can reply, send stickers and wait for follow-ups.'
+  zh: '经 OneBot 11 把 QQ 私聊和群聊接进 DSH，提供 qq_send 等工具，让 agent 能回消息、发表情、等待对方接话。'

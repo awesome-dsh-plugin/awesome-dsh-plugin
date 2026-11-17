@@ -1,0 +1,6 @@
+url: https://github.com/liushQAQ/dsh-prompt-optimizer
+name: liushQAQ/dsh-prompt-optimizer
+category: ui
+description:
+  en: Smart prompt optimization & dynamic thinking effort adaptation with composer capsule, DSH/custom models, undo/re-optimize, and native settings.
+  zh: 提示词智能优化与思考强度动态自适应插件，支持会话输入框胶囊控制条、DSH已配置/自定义第三方双模型来源、一键撤销与重新优化及原生配置面板。

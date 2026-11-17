@@ -1,0 +1,6 @@
+url: https://github.com/gehennawu/dsh-service
+name: gehennawu/dsh-service
+category: dev
+description:
+  en: 'Self-hosted DSH Web operations panel for safe restart and upgrade, health diagnostics, model-usage statistics and provider quota lookup, backup and session management, task notifications, skill controls, subagent model routing, and Linux permission maintenance.'
+  zh: '面向自托管 DSH Web 的运维面板：安全重启与升级、健康诊断、模型用量统计与供应商额度查询、备份和会话管理、任务通知、技能控制、子代理模型路由与 Linux 权限维护。'

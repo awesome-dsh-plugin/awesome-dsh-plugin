@@ -1,0 +1,6 @@
+url: https://github.com/173787247/dsh-wsl-obscura
+name: 173787247/dsh-wsl-obscura
+category: wsl
+description:
+  en: 'Optional Obscura headless-browser tools from WSL (obscura_status / obscura_fetch / obscura_mcp_hint). Not the same as dsh-wsl-browser win_open_url (Windows GUI browser), and not a replacement for dsh-wsl-fetch web_fetch.'
+  zh: '可选：在 WSL 中驱动 Obscura 无头浏览器（obscura_status / obscura_fetch / obscura_mcp_hint）。不同于 dsh-wsl-browser 的 win_open_url（打开 Windows 图形浏览器），也不替代 dsh-wsl-fetch 的 web_fetch。'

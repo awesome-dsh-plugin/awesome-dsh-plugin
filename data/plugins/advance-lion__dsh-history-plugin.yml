@@ -1,0 +1,6 @@
+url: https://github.com/advance-lion/dsh-history-plugin
+name: advance-lion/dsh-history-plugin
+category: workflow
+description:
+  en: Tracks successful DSH plugin installs per device, merges the ledger across devices through a user-authorized Baidu Netdisk account, and supports preflighted batch reinstalls.
+  zh: 按设备记录 DSH 插件成功安装历史，通过用户授权的百度网盘账号跨设备合并账本，并支持预检后的批量重装。

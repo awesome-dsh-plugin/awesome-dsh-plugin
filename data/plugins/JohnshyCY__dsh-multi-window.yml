@@ -1,0 +1,6 @@
+url: https://github.com/JohnshyCY/dsh-multi-window
+name: JohnshyCY/dsh-multi-window
+category: ui
+description:
+  en: 'Windows desktop only (Windows 10/11, DSH desktop 0.2.1-rc.5 or newer; not available in `dsh web`). Open any DSH conversation in its own native window, so several conversations can be shown at once.'
+  zh: '仅 Windows 桌面版（Windows 10/11、DSH 桌面版 0.2.1-rc.5 及以上，`dsh web` 不适用）。把任意对话用独立原生窗口打开，从而同时显示多个对话。'

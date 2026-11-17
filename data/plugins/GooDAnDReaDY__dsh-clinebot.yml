@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-clinebot
+name: GooDAnDReaDY/dsh-clinebot
+category: model
+description:
+  en: "ClineBot and ClinePass integration for DeepSeek Harness: dedicated settings page, live quota dashboard, in-UI key saving, curated and custom model selection, and a /cline command."
+  zh: "DeepSeek Harness 的 ClineBot/ClinePass 集成：专属设置页、实时配额仪表板、界面内密钥保存、精选与自定义模型选择，以及 /cline 命令。"

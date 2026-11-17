@@ -1,0 +1,8 @@
+url: https://github.com/liubaicai/dsh-qoder-link
+name: liubaicai/dsh-qoder-link
+category: model
+tarball: https://github.com/liubaicai/dsh-qoder-link/releases/download/v0.1.11/dsh-qoder-link-0.1.11.tgz
+description:
+  en: 'Connects Qoder models to DeepSeek Harness through the official Qoder CLI over native ACP stdio (no reverse-engineered model API), with qoderclicn (China) having a verified real ACP tool loop; qodercli (international) is selectable but its real inference path is not yet verified. Requires Node.js 22.18+ and the chosen Qoder CLI installed and logged in on the same machine; the plugin does not install or manage accounts.'
+  zh: '通过官方 Qoder CLI 以原生 ACP stdio 接入 Qoder 模型（无需逆向模型 API）；qoderclicn 中国版已通过真实 ACP 工具链路验证，qodercli 国际版可选但真实推理路径尚未验证。需 Node.js 22.18+，并在同一台机器上安装并登录所选 Qoder CLI；插件不安装 CLI、不管理账户。'
+icon: https://raw.githubusercontent.com/liubaicai/dsh-qoder-link/main/assets/qoder.png

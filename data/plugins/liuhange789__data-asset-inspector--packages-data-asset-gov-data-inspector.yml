@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/gov-data-inspector
+name: liuhange789/data-asset-inspector#gov-data-inspector
+category: tools
+description:
+  zh: "政务数据巡检工具，覆盖数据完整率、准确率、时效率等核心指标。"
+  en: "Government data inspector covering completeness, accuracy and timeliness metrics."

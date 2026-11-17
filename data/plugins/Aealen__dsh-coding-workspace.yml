@@ -1,0 +1,6 @@
+url: https://github.com/Aealen/dsh-coding-workspace
+name: Aealen/dsh-coding-workspace
+category: ui
+description:
+  en: 'Coding workbench for DSH: docked workspace panels, a grouped project sidebar, split editor tab groups with hibernate/resume, file preview and diff views — built on parallel git worktree development with cross-session collaboration primitives.'
+  zh: coding 工作台：停靠式工作区面板、项目分组侧栏、可休眠/恢复的分栏编辑器 TAB 组、文件预览与 DIFF 查看，以 git worktree 并行开发与跨会话协作为地基。

@@ -1,0 +1,7 @@
+url: https://github.com/2090003781/bridge/tree/main/packages/dsh-bridge-connector
+name: 2090003781/bridge#dsh-bridge-connector
+category: remote
+tarball: https://github.com/2090003781/bridge/releases/latest/download/dsh-bridge-connector.tgz
+description:
+  en: Loopback HTTP/SSE service that lets an Obsidian plugin drive DSH sessions and tells the model where you are reading (path, size, cursor line, heading, selection — coordinates only, the note body stays on disk); gives the agent its own separate cursor inside the editor; the companion plugin must be running in Obsidian.
+  zh: 让 Obsidian 插件驱动 DSH 会话、并把「你在读哪一篇、光标在哪」这类坐标交给模型的回环 HTTP/SSE 服务（只给坐标，正文留在磁盘上，需要时自己去读）；AI 在编辑器里有自己独立的光标；需要在 Obsidian 内配套运行插件。

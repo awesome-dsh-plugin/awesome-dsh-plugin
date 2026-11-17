@@ -1,0 +1,6 @@
+url: https://github.com/Refreshing-CZQ/dsh-xhs-style
+name: Refreshing-CZQ/dsh-xhs-style
+category: identity
+description:
+  en: "Adds a requirements-discovery gate before product selection, version choices and competitive analysis: 2–3 clarification rounds with 2–4 decision-changing questions, validation of real pain points and hard constraints, comparison of original, alternative and minimum-cost routes, and a confirmation card before research and copywriting. Confirmed reports keep the Xiaohongshu-style structure, concrete steps, audited images and source links. Ordinary lookups and explicit user skips bypass the questionnaire. Host-only static prompt sections with no config, client UI or dependencies."
+  zh: "在选品、版本选择与竞品分析前加入需求澄清门槛：默认进行 2–3 轮反问，每轮只问 2–4 个会改变选择的问题，验证真实痛点和硬约束，比较原方案、替代方案与最低成本路线，确认需求卡后再调研和成稿。正式报告保留小红书结构、具体步骤、逐张核验的配图与来源链接；普通查询和用户明确跳过时不拦截。纯 Host 静态提示词，无配置项、无前端 UI、无依赖。"

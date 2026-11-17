@@ -1,0 +1,6 @@
+url: https://github.com/Azerz/dsh-video-insight
+name: Azerz/dsh-video-insight
+category: ui
+description:
+  en: 'Video analysis panel in the DeepSeek Harness sidebar. Paste a YouTube or Bilibili link to fetch its subtitles and generate a summary, chapters, a mind map and citation-backed Q&A over the transcript, with an embedded player whose timestamps jump to that moment and keep playing. Videos without subtitles fall back to local Whisper / SenseVoice transcription (audio stays on the machine); silent videos fall back to frame OCR with macOS Vision, or to vision-model frame descriptions. Per-video analysis caching, a 20-item history, and two agent tools: video_digest and video. A Bilibili SESSDATA cookie, if you enter one, is stored in ~/.dsh/video-credentials.json (mode 0600), transcripts are sent to your current model, and its HTTP routes have no DSH access check.'
+  zh: 'DeepSeek Harness 侧边栏的视频解析面板。粘贴 YouTube / 哔哩哔哩链接即可抓取字幕，生成总结、章节、思维导图，以及带「依据」时间戳的转写稿问答；内置播放器，点时间戳会跳到对应位置并继续播放。没有字幕时用本机 Whisper / SenseVoice 转写兜底（音频不出本机），纯无声视频则用 macOS Vision 做画面文字识别，或让视觉模型描述画面。按视频缓存分析结果、保留最近 20 条历史，并注册 video_digest、video 两个 agent 工具。如果填了 B 站 SESSDATA Cookie，会保存在 ~/.dsh/video-credentials.json（权限 0600）；文字稿会发给当前模型；它的 HTTP 路由没有 DSH 的访问检查。'

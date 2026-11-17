@@ -1,0 +1,6 @@
+url: https://github.com/ycAlphi/dsh-dokuwiki
+name: ycAlphi/dsh-dokuwiki
+category: docs
+description:
+  en: 'DokuWiki integration for DeepSeek Harness: native tools to read, search, write and delete wiki pages and upload media files, with ACL-aware tool exposure and credentials stored by DSH.'
+  zh: '给 DeepSeek Harness 的 DokuWiki 集成：用原生工具读取、搜索、写入、删除 wiki 页面并上传媒体文件，按 ACL 开放工具，密码存入 DSH 凭据服务。'

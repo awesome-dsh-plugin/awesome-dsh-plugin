@@ -1,0 +1,7 @@
+url: https://github.com/shamanjin/dsh-image-studio
+name: shamanjin/dsh-image-studio
+category: vision
+description:
+  en: 'Image workbench for DSH: keep several OpenAI-compatible image services side by side, click a tile to make one active, fetch the model list from that service, and generate or edit images from chat. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 图片工作台：并排管理多套 OpenAI 兼容的生图服务，点方块切换当前使用，按地址与密钥拉取模型列表，可在对话里文生图与图生图。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/shamanjin/dsh-image-studio/releases/download/v1.0.0/dsh-image-studio-1.0.0.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/bauerelizabeth07139/mcp-simple-image
+name: bauerelizabeth07139/mcp-simple-image
+category: tools
+description:
+  en: 'Text-to-image through a StepFun-compatible endpoint: mounts a no-npm-dependency Python MCP server behind an NDJSON bridge as mcp__simple_image__simple_image and returns the generated image URLs. Needs Python 3.8+ on PATH and STEP_API_KEY.'
+  zh: '通过 StepFun 兼容接口文生图:把无 npm 依赖的 Python MCP 服务器挂在 NDJSON 桥后面,用 mcp__simple_image__simple_image 生成并返回图片 URL。需 PATH 上有 Python 3.8+ 并设置 STEP_API_KEY。'

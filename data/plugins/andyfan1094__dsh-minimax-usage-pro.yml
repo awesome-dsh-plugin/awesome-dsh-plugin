@@ -1,0 +1,7 @@
+url: https://github.com/andyfan1094/dsh-minimax-usage-pro
+name: andyfan1094/dsh-minimax-usage-pro
+category: usage
+tarball: https://github.com/andyfan1094/dsh-minimax-usage-pro/releases/download/v0.1.1/dsh-minimax-usage-pro-0.1.1.tgz
+description:
+  en: Shows MiniMax Token Plan usage in the Settings page through webServer routes and reads either subscription key name from environment or credentials file.
+  zh: 在设置页展示 MiniMax Token Plan 用量，走 webServer 路由，兼容环境变量或凭据文件中的两种订阅 key 名称。

@@ -1,0 +1,7 @@
+url: https://github.com/AlLHHH/dsh-perf-boost
+name: AlLHHH/dsh-perf-boost
+category: ui
+description:
+  en: 'Performance optimization and smoothness enhancement for DSH Desktop (renderer-side only; host code untouched, no on-disk config): skips offscreen message rendering, stops frames and timers while the window is hidden, lazily loads media, coalesces session-list repaints and pre-warms large session files; shows the measured main-thread saving in settings. A lightweight speed-up for lag, dropped frames, slow large-session opening and background CPU use.'
+  zh: 'DSH 桌面端性能优化与流畅度增强（纯客户端：只改渲染进程、不改宿主代码、不落盘配置）：长对话省渲染、窗口隐藏不排帧、后台暂停定时器、媒体懒加载、会话列表节流、大会话文件预热，设置页显示实测省下的主线程时间。遇到卡顿、掉帧、打开大会话慢、后台吃 CPU 时先试它，也可以当作轻量加速与渲染优化工具。'
+icon: https://raw.githubusercontent.com/AlLHHH/dsh-perf-boost/main/assets/icon-180.png

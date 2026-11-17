@@ -1,0 +1,6 @@
+url: https://github.com/lsdt45/dsh-plan-plus
+name: lsdt45/dsh-plan-plus
+category: ui
+description:
+  en: 'Plan review enhancement for DeepSeek Harness Web: reply to the plan-review card inline to have the model revise the plan, and browse, compare, edit and archive every plan version in a full-screen overlay.'
+  zh: 'DeepSeek Harness Web 的计划评审增强：在评审卡片内直接回复意见让模型修订计划，并在全屏浮层中回看、对比、编辑和留档每一版计划。'

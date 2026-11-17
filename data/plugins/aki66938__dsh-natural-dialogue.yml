@@ -1,0 +1,6 @@
+url: https://github.com/aki66938/dsh-natural-dialogue
+name: aki66938/dsh-natural-dialogue
+category: memory
+description:
+  en: Configurable personas, separate reply generation, and evidence-backed memory with review and correction for DeepSeek Harness.
+  zh: 为 DeepSeek Harness 提供可配置人格、独立回复生成，以及支持审核和修正的可追溯记忆。

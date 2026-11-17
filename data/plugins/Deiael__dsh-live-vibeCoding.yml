@@ -1,0 +1,7 @@
+url: https://github.com/Deiael/dsh-live-vibeCoding
+name: Deiael/dsh-live-vibeCoding
+category: fun
+description:
+  en: 'A fork of dsh-livestream (MIT) - install it instead of that plugin, not alongside it. Lets DSH host a Bilibili livestream: chat and gift replies, queued viewer video requests on a skinnable stage, Doubao TTS voice, and automatic OBS/Bilibili streaming setup; needs OBS Studio 28+ and a Bilibili live room, and the voice stays silent until you add a Doubao TTS API key (Python + faster-whisper optional for transcribing subtitle-less videos).'
+  zh: 'dsh-livestream（MIT）的分支，请替代原插件安装、不要与它同时安装。让 DSH 在 B 站当主播：回弹幕、谢礼物、观众点的视频排队上舞台、豆包 TTS 音色说话，并自动配置 OBS 与 B 站推流；前置需要 OBS Studio 28+ 和一个 B 站直播间，没填豆包 TTS API Key 时只有画面没有声音（无字幕视频转写可选装 Python + faster-whisper）。'
+icon: https://raw.githubusercontent.com/Deiael/dsh-live-vibeCoding/main/assets/icon-180.png

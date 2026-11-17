@@ -1,0 +1,6 @@
+url: https://github.com/orangeshinee/dsh-mem0
+name: orangeshinee/dsh-mem0
+category: memory
+description:
+  en: 'Agent tools for a self-hosted mem0 server: add, search, get, update, delete, history, reset and status memories, with a settings-panel configuration card.'
+  zh: 自托管 mem0 记忆读写插件：agent 直接读写自有 mem0 服务（增删查改、搜索、历史、重置、状态），并带设置面板配置卡片。

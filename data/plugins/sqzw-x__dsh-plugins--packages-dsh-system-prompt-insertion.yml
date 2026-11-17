@@ -1,0 +1,6 @@
+url: https://github.com/sqzw-x/dsh-plugins/tree/main/packages/dsh-system-prompt-insertion
+name: sqzw-x/dsh-plugins#dsh-system-prompt-insertion
+category: identity
+description:
+  en: 'Injects your own text into the DeepSeek Harness system prompt as real system sections from a sidebar editor: each section lands after the persona, after the tool docs, or at the very end of the prompt, can be switched on or off, and can resolve {{variables}}; a preview runs the host''s own assemble and render pass so you see the exact prompt the next request will send, with empty, duplicate, unknown-variable and oversize sections flagged.'
+  zh: '把你的文字作为真正的 system 段落注入 DeepSeek Harness 的系统提示词：侧栏编辑器里为每段选择落点（人格之后、工具说明之后，或提示词最末尾），逐段启停，可解析 {{变量}}；预览调用宿主真实的 assemble 与 render，看清下一个请求实际发出的提示词，并标出空段、重复行、未知变量与超长段落。'

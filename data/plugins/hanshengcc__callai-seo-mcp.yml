@@ -1,0 +1,6 @@
+url: https://github.com/hanshengcc/callai-seo-mcp
+name: hanshengcc/callai-seo-mcp
+category: tools
+description:
+  zh: "连接 CallAI SEO MCP 服务，提供 10 个 SEO 数据工具和 1 个 DataForSEO 通用请求工具：Google/Bing 搜索结果（含 AI Overview 引用来源）、关键词搜索量与难度、长尾词、竞品关键词差距、外链和页面审计。附带 callai-seo 技能。需要 CallAI API Key，按量付费。"
+  en: "Connects the CallAI SEO MCP server: 10 SEO data tools plus a generic DataForSEO request tool for Google/Bing SERP (with AI Overview sources), keyword volume and difficulty, long-tail ideas, competitor keyword gaps, backlinks and page audits. Includes a callai-seo skill. Requires a CallAI API key; pay as you go."

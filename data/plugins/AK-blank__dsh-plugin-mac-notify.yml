@@ -1,0 +1,6 @@
+url: https://github.com/AK-blank/dsh-plugin-mac-notify
+name: AK-blank/dsh-plugin-mac-notify
+category: notify
+description:
+  en: 'Sends a macOS Notification Center alert when a session finishes or the agent is blocked on an answer, an approval, or an error. The banner carries the last reply and plays your system alert sound, and clicking it returns you to the DSH page.'
+  zh: '会话结束、或 Agent 卡在等你回答／批准／排错时，发一条 macOS 系统通知；横幅带上最后一条回复并播放你的系统提示音，点击即可回到 DSH 页面。'

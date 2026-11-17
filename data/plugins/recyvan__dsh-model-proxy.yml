@@ -1,0 +1,6 @@
+url: https://github.com/recyvan/dsh-model-proxy
+name: recyvan/dsh-model-proxy
+category: model
+description:
+  en: Routes DeepSeek Harness model API requests through a system, custom or SOCKS proxy; requests outside the configured domains stay direct.
+  zh: 把 DeepSeek Harness 的模型 API 请求送进系统代理、自定义代理或 SOCKS 代理，清单之外的请求一律直连。

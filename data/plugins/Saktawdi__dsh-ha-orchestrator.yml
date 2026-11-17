@@ -1,0 +1,6 @@
+url: https://github.com/Saktawdi/dsh-ha-orchestrator
+name: Saktawdi/dsh-ha-orchestrator
+category: workflow
+description:
+  en: Model high-availability failover (quarantine, circuit breaking, probe recovery) and subagent orchestration (fanout/pipeline/supervisor) with bilingual settings UI.
+  zh: 模型高可用故障回退（隔离/熔断/探测恢复）与子智能体编排（fanout/pipeline/supervisor），附带双语设置界面。

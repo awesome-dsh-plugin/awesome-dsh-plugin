@@ -1,0 +1,6 @@
+url: https://github.com/researchrepo-backup/dsh-countup-pomodoro
+name: researchrepo-backup/dsh-countup-pomodoro
+category: ui
+description:
+  en: 'Count-up Pomodoro: focus counts up with no ceiling and never stops itself at 25 minutes, finishing drops straight into a short break, and a status board plus the four quadrants keep the task list in view.'
+  zh: 正计时番茄钟：专注时段不设上限，不会在 25 分钟自动停止，结束即进入短休息；附带状态看板与四象限任务管理。

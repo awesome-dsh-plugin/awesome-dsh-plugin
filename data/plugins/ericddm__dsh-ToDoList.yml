@@ -1,0 +1,6 @@
+url: https://github.com/ericddm/dsh-ToDoList
+name: ericddm/dsh-ToDoList
+category: workflow
+description:
+  en: 'Project board in the sidebar: a self-contained HTML Kanban and Gantt page served over a same-origin route, drag-and-drop columns, due-date timeline, JSON import/export, data kept in local storage.'
+  zh: '侧栏项目看板：同源路由托管的单文件 HTML 看板与甘特图，卡片可拖拽换列、按截止日期排时间轴，支持 JSON 导入导出，数据只存本机。'

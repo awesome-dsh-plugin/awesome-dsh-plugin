@@ -1,0 +1,8 @@
+url: https://github.com/lzyxczw-cyber/dafish-clean
+name: lzyxczw-cyber/dafish-clean
+category: tools
+description:
+  en: 'Big Fat Fish clean — unofficial graphical panel for the local Mole CLI on macOS: live system health, cleanup previews with explicit confirmation, disk analysis, app inventory, maintenance, cleanup history, and a guided Mole CLI install.'
+  zh: '大肥鱼 clean —— 非官方 Mole CLI 图形面板（macOS）：实时系统状态、清理预览与二次确认、磁盘分析、应用清单、系统维护、清理历史，并内置 Mole CLI 安装引导。'
+icon: https://raw.githubusercontent.com/lzyxczw-cyber/dafish-clean/main/icon.png
+tarball: https://github.com/lzyxczw-cyber/dafish-clean/releases/download/v1.0.3/dafish-clean-1.0.3.tgz

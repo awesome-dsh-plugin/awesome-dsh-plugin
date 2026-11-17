@@ -1,0 +1,6 @@
+url: https://github.com/ns-zzj/dsh-hos-scrcpy
+name: ns-zzj/dsh-hos-scrcpy
+category: vision
+description:
+  en: 'Control a HarmonyOS phone from the DSH web UI with AI: live H.264 screen mirroring, mouse touch and system keys, hilog streaming, and agentic tools that let the model read the screen, locate UI controls, then tap, long-press, press keys, or type.'
+  zh: 在 DSH 网页中用 AI 操控鸿蒙手机：实时 H.264 投屏、触控与系统按键、hilog 日志，并让模型读屏、定位 UI 控件，再执行点击/长按/按键/输入。

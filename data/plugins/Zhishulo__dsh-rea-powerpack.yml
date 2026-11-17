@@ -1,0 +1,6 @@
+url: https://github.com/Zhishulo/dsh-rea-powerpack
+name: Zhishulo/dsh-rea-powerpack
+category: tools
+description:
+  en: "Installs and verifies the reverse-engineering engines REA needs on Windows (Ghidra, JADX, apktool, adb, WABT, frida and more), pins the rea-agents MCP server version, and reports capability gaps in a settings card."
+  zh: "在 Windows 上安装并校验 REA 所需的逆向引擎（Ghidra、JADX、apktool、adb、WABT、frida 等），固定 rea-agents 的 MCP 服务版本，并在设置卡片里体检能力缺口。"

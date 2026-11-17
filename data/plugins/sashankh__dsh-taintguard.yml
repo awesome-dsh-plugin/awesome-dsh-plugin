@@ -1,0 +1,6 @@
+url: https://github.com/sashankh/dsh-taintguard
+name: sashankh/dsh-taintguard
+category: security
+description:
+  en: Taints the agent when tool results carry untrusted content, gates the privileged calls that follow, and refuses credentials passed to network-capable tools in every mode.
+  zh: 当工具结果包含不可信内容时将代理标记为已污染，对随后的高权限调用进行拦截，并在所有模式下拒绝将凭据传递给可联网的工具。

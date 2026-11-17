@@ -1,0 +1,7 @@
+url: https://github.com/luo0712yan0219-blip/dsh-whale-decor
+name: luo0712yan0219-blip/dsh-whale-decor
+category: theme
+tarball: https://github.com/luo0712yan0219-blip/dsh-whale-decor/releases/download/v0.1.0/dsh-whale-decor-0.1.0.tgz
+description:
+  en: "Deep-sea whale-blue reskin for the DSH Web GUI: 14 theme tokens in light and dark, five whale-tail-maid placements, a clock and weather card, and a collapsible hardware readout (CPU, memory, GPU, per-drive temperatures via HWiNFO). No backdrop image is bundled; drop your own in. MIT code, MIT character art."
+  zh: "给 DSH Web GUI 的深海鲸蓝换肤：亮/暗两套共 14 个主题 token、5 处鲸尾女仆角色元素、时钟与天气卡片，以及可上下伸缩的硬件状态悬浮窗（CPU / 内存 / GPU / 硬盘温度，温度需 HWiNFO 提供）。包内不含背景图，放一张你自己的即可。源码与角色素材均为 MIT。"

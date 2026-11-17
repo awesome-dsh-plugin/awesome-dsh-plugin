@@ -1,0 +1,8 @@
+# Submission for https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+# Target path in that repository: data/plugins/siml1169__ShyPie--plugins-dsh-privacy-gate.yml
+url: https://github.com/siml1169/ShyPie/tree/main/plugins/dsh-privacy-gate
+name: siml1169/ShyPie#dsh-privacy-gate
+category: security
+description:
+  en: 'DSH host bundle for the ShyPie privacy-first workflow: extracts attached images and PDF/Office files locally before they enter the session log (requires poppler pdftotext/pdftoppm on PATH and a local OCR engine — Windows OCR on Windows, optionally tesseract; without them attachments are rejected, not forwarded); default filter mode keeps text local (optional local masking); blocks unmaskable media/BLOB; provides local privacy_extract, privacy_ocr, privacy_scan and privacy_rehydrate tools; denies read_image and binary/document reads outside allowPaths; and enforces a fail-closed llm/stream egress guard before DSH dispatches a model request (the default provider allowlist is the local Magpie gateway).'
+  zh: 面向 ShyPie 隐私优先工作流的 DSH 主机插件：在写入会话日志前本地提取附件图片及 PDF/Office 文件（需 PATH 中有 poppler 的 pdftotext/pdftoppm 和本地 OCR 引擎，Windows 用系统 OCR、可选 tesseract；缺少时附件会被拒绝而不是转发）；默认 filter 模式保留本地文本（可选用本地掩码）；阻断无法掩码的媒体/BLOB；提供本地 privacy_extract、privacy_ocr、privacy_scan、privacy_rehydrate 工具；拒绝 read_image 及 allowPaths 之外的二进制/文档读取；并在 DSH 发出模型请求前执行失败关闭的 llm/stream 出口检查（默认只放行本地 Magpie 网关）。

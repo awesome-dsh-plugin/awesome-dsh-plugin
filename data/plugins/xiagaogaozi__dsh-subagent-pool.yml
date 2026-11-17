@@ -1,0 +1,6 @@
+url: https://github.com/xiagaogaozi/dsh-subagent-pool
+name: xiagaogaozi/dsh-subagent-pool
+category: workflow
+description:
+  en: 'Maintains reusable named subagent profiles for DeepSeek Harness and runs them with per-profile model, reasoning effort, and agent-preset settings.'
+  zh: '为 DeepSeek Harness 维护可复用的命名子代理配置，并按配置的模型、推理强度和 Agent 预设运行子代理。'

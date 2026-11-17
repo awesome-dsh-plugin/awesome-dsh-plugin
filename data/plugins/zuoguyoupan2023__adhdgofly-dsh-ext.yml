@@ -1,0 +1,6 @@
+url: https://github.com/zuoguyoupan2023/adhdgofly-dsh-ext
+name: zuoguyoupan2023/adhdgofly-dsh-ext
+category: ui
+description:
+  en: Highlights parts of speech (nouns green, verbs red, adjectives/adverbs purple) in rendered DSH Web Markdown, with light/dark palettes, toggles, and stream-aware updates.
+  zh: 在 DSH Web 已渲染的 Markdown 中做词性高亮：名词绿、动词红、形容/副词紫，支持深/浅色板、词性开关与流式防抖。

@@ -1,0 +1,6 @@
+url: https://github.com/xiebaiyuan/dsh-lead-mode
+name: xiebaiyuan/dsh-lead-mode
+category: workflow
+description:
+  en: 'Lead-mode agent preset plus two runtime skills for the official Agent Teams runtime: a delegate-wait-verify working method, and a wrap-up digest that merges several members'' output into one file. Ships no team runtime of its own.'
+  zh: '给官方 Agent Teams 运行时配的 Lead 模式预设与两个 runtime skill：一套拆活、派活、验收的工作法，以及收尾时把多个成员产出合并成一份文件的团队汇总。本身不带 Team 运行时。'

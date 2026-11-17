@@ -1,0 +1,7 @@
+url: https://github.com/theskywilldawn/dsh-stamina-pet
+name: theskywilldawn/dsh-stamina-pet
+category: fun
+description:
+  en: Adds a stamina-bar desktop pet to every DeepSeek Harness session — two bars in the session header for context and alertness, plus a draggable whale-girl who can be poked, petted and dressed up.
+  zh: 给 DSH 每个会话加一只体力条桌宠：会话头部显示上下文与清醒度两条，点一下就能把她放到桌面上，可以拖动、戳、摸头、换装。
+tarball: https://github.com/theskywilldawn/dsh-stamina-pet/releases/latest/download/dsh-stamina-pet.tgz

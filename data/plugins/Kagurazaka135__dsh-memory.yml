@@ -1,0 +1,6 @@
+url: https://github.com/Kagurazaka135/dsh-memory
+name: Kagurazaka135/dsh-memory
+category: memory
+description:
+  en: 'Layered cross-session memory kept as plain YAML: facts carry a version history instead of being overwritten, a briefing is injected at session start, and a nightly pass consolidates and shards by topic past a threshold. Zero runtime dependencies, so it also runs inside the dsh Android app (verified there).'
+  zh: '明文 YAML 的分层跨会话记忆：事实带版本链而非覆盖，会话开始注入简报，夜间整理并在超过阈值后按主题分片。零运行时依赖，在 dsh 安卓版实测可用。'

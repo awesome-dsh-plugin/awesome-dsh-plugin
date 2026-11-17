@@ -1,0 +1,6 @@
+url: https://github.com/dingchenhui0618-arch/dsh-changelog-zh
+name: dingchenhui0618-arch/dsh-changelog-zh
+category: git
+description:
+  en: Turns real git history into two Chinese changelog drafts (short for users, long for developers); every entry carries its commit SHA and an evidence-backed verified/unverified mark, and commit subjects are never translated.
+  zh: 从真实 git 历史生成两份中文变更日志（面向用户短版、面向开发者长版）；每条都带 commit SHA 与「已验证／未验证」标记，只有能引用到验证证据时才标「已验证」，提交主题不翻译。

@@ -1,0 +1,6 @@
+url: https://github.com/Eileenes/dsh-reel
+name: Eileenes/dsh-reel
+category: tools
+description:
+  en: 'Promo studio panel for DSH plugins: type a plugin name, match it to a case file, and render a 28-second real-UI film plus a poster locally. The V0.1 film pipeline renders on the local Chrome with its own frame renderer (shutter-interval sampling for motion blur, hard-cut handling) and ships the composition assets, so an npm install can render without an Onetake runtime. Needs Node.js 22+, Chrome or Chromium and ffmpeg; python3 for the sound mix.'
+  zh: 'DSH 插件宣传台面板：输入插件名称，匹配案例文件，在本机渲染 28 秒真机界面宣传片与封面。V0.1 真机片用自带的逐帧渲染器在本机 Chrome 上出帧（快门区间多采样得到运动模糊，并对硬切做保护），渲染所需的 comp 素材随包分发，因此 npm 安装后即可出片，不需要 Onetake 运行时。需要 Node.js 22+、Chrome 或 Chromium 与 ffmpeg，音效混音需要 python3。'

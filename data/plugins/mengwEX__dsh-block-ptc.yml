@@ -1,0 +1,6 @@
+url: https://github.com/mengwEX/dsh-block-ptc
+name: mengwEX/dsh-block-ptc
+category: session
+description:
+  en: 'AI-managed Auto Compact for DeepSeek Harness: in the Block PTC preset (DSH 0.2.2-rc.1 or newer), the agent decides when to organize context and what to retain as work progresses, without waiting for a fixed token threshold.'
+  zh: 'AI 自主管理上下文的 Auto Compact：在 Block PTC 预设会话中（需 DSH 0.2.2-rc.1 及以上），由 AI 根据任务进展决定何时整理上下文、保留哪些信息，不必等待固定 token 阈值触发。'

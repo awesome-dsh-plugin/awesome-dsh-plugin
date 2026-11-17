@@ -1,0 +1,7 @@
+url: https://github.com/Xiaxin1235/WhaleMaid/tree/master/packages/host
+name: WhaleMaid
+category: workflow
+description:
+  en: Project autopilot for DSH 0.2.1-rc.2 and 0.2.1-rc.3, with scoped authorization, independent verification, editable memories and companion chat, including automatic installation of the compatible desktop pet fork. The bundled pet is a fork of takboo/dsh-coopanion (AGPL-3.0-or-later); do not install the upstream pet alongside it.
+  zh: 支持 DSH 0.2.1-rc.2、0.2.1-rc.3，提供范围授权、独立验收、可编辑记忆和伙伴聊天的项目自动推进插件，自动安装配套桌宠 fork。配套桌宠是 takboo/dsh-coopanion 的 fork（AGPL-3.0-or-later），不能与上游桌宠同装。
+tarball: https://github.com/Xiaxin1235/WhaleMaid/releases/latest/download/dsh-whalemaid-full.tgz

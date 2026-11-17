@@ -1,0 +1,6 @@
+url: https://github.com/zengjunlin2022/dsh-basemind-plugin
+name: zengjunlin2022/dsh-basemind-plugin
+category: tools
+description:
+  en: "Starts a BaseMind MCP server for each session's workspace and registers the code-intelligence tools it advertises, with no MCP row to configure. Requires BaseMind installed and on PATH (basemind serve); without it no tools are registered."
+  zh: "按会话工作区启动 BaseMind MCP server，并注册其对外提供的代码智能工具，无需配置 MCP 行。需先安装 BaseMind 并在 PATH 上（basemind serve）；否则不会注册任何工具。"

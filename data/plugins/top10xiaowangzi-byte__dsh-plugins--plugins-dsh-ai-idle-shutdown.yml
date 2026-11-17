@@ -1,0 +1,7 @@
+url: https://github.com/top10xiaowangzi-byte/dsh-plugins/tree/main/plugins/dsh-ai-idle-shutdown
+name: top10xiaowangzi-byte/dsh-plugins#dsh-ai-idle-shutdown
+category: tools
+description:
+  en: 'Windows-only sidebar panel that watches the CPU and IO of your AI desktop apps'' process trees and shuts the machine down once all of them have been idle for a configurable time, with a cancellable countdown, a dry-run mode and an activity log; requires Python 3.10+.'
+  zh: '仅 Windows 的右侧栏面板：按整棵进程树的 CPU / IO 判断 AI 桌面工具是否还在工作，全部安静指定分钟数后关机，带可取消倒计时、演练模式与活动记录；需要本机 Python 3.10+。'
+icon: https://raw.githubusercontent.com/top10xiaowangzi-byte/dsh-plugins/main/plugins/dsh-ai-idle-shutdown/icon-192.png

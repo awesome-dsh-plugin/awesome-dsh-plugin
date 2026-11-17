@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-hazplan-check
+name: PerryLink/dsh-hazplan-check
+category: tools
+description:
+  en: 'HAZOP worksheet check: node, guide word, process parameter, deviation and cause, plus required fields and locally configured risk levels.'
+  zh: 'HAZOP 分析表核对：节点、引导词、工艺参数、偏差与原因，以及必填栏目与本机构风险等级口径。'

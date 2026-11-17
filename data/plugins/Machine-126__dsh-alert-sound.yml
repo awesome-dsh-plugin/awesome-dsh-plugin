@@ -1,0 +1,9 @@
+# awesome-dsh-plugin submission — copy this file to data/plugins/Machine-126__dsh-alert-sound.yml
+# in your fork of awesome-dsh-plugin, then regenerate READMEs and open a PR.
+# Only "description.en" is required; zh is provided because the author writes it.
+url: https://github.com/Machine-126/dsh-alert-sound
+name: Machine-126/dsh-alert-sound
+category: notify
+description:
+  en: 'Tone or voice alerts for DSH approvals, questions, completions, errors and stalls; reads out what is waiting and repeats until handled; no network requests.'
+  zh: 'DSH 提醒音：审批、提问、完成、错误、卡住各有音色；选「语音」会念出工具名、原因或问题原文；未处理会重复提醒，全程不联网。'

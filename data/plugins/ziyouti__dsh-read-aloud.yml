@@ -1,0 +1,6 @@
+url: https://github.com/ziyouti/dsh-read-aloud
+name: ziyouti/dsh-read-aloud
+category: voice
+description:
+  en: 'Reads assistant replies aloud with Microsoft Edge neural voices and highlights the sentence being spoken, so you can follow along while listening. The highlight is yours to style: background colour, text colour and opacity are each adjustable in settings. Also adds a sound-wave play button to every reply, pause plus previous and next sentence, adjustable speed, and an auto-read toggle.'
+  zh: '用微软 Edge 神经音色朗读助手回复，并高亮当前正在朗读的那一句，可以边听边看。高亮样式完全自定义：底色、文字颜色、浓淡三样都能在设置里调。另外每条回复下方有音浪播放键、暂停与上句/下句跳转、语速调节和自动朗读开关。'

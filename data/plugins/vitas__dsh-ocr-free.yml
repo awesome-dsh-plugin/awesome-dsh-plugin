@@ -1,0 +1,6 @@
+url: https://github.com/vitas/dsh-ocr-free
+name: vitas/dsh-ocr-free
+category: vision
+description:
+  en: 'Local OCR using Apple Vision on macOS: text from screenshots, photos, and scans, with no install, no network and no API key.'
+  zh: 在 macOS 上使用 Apple Vision 的本地 OCR：从截图、照片和扫描件中读取文字，无需安装、无需联网、无需 API 密钥。

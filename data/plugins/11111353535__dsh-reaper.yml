@@ -1,0 +1,6 @@
+url: https://github.com/11111353535/dsh-reaper
+name: 11111353535/dsh-reaper
+category: dev
+description:
+  en: 'Inventory every listening TCP endpoint and grade each holder as agent-spawned, workspace, dev-server, unattributed, system or protected; only the first two can be auto-selected, and a reap previews its descendant-closure plan unless confirmed.'
+  zh: '枚举本机全部监听端口，按「会话派生的 / 工作区内的 / 开发服务器 / 无法归属 / 系统 / 受保护」六级定性持有者；只有前两级可被自动选中，回收前默认只预览后代闭包计划。'

@@ -1,0 +1,8 @@
+url: https://github.com/skyline66/dsh-sticky-notes-wall
+name: skyline66/dsh-sticky-notes-wall
+category: ui
+icon: https://raw.githubusercontent.com/skyline66/dsh-sticky-notes-wall/main/assets/icon-180.png
+tarball: https://github.com/skyline66/dsh-sticky-notes-wall/releases/latest/download/dsh-sticky-notes-wall.tgz
+description:
+  en: 'Sticky-note wall in the sidebar with pasted images and text, due reminders, done state, shortcuts, a pin-on-top floating window, appearance skins, and a native always-on-top Windows desktop window.'
+  zh: '左侧栏便签墙：粘贴图片与文本、到期提醒、完成状态、快捷键、可置顶浮窗、外观皮肤，以及 Windows 桌面置顶窗口。'

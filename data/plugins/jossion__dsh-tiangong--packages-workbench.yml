@@ -1,0 +1,7 @@
+url: https://github.com/jossion/dsh-tiangong/tree/main/packages/workbench
+name: 天工（dsh-tiangong）
+category: workflow
+description:
+  en: 'Requirement-to-delivery workbench: paste or upload a requirement, and a plan-dispatch-verify loop delivers it with child agents and test evidence.'
+  zh: '需求驱动交付工作台：粘贴或上传需求后，规划-派发-验证闭环驱动子 agent 交付，并以测试证据判定完成。'
+icon: https://raw.githubusercontent.com/jossion/dsh-tiangong/main/packages/workbench/assets/icon-180.png

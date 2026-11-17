@@ -1,0 +1,7 @@
+url: https://github.com/Sirius-rocco/dsh-agent-context-hub
+name: Sirius-rocco/dsh-agent-context-hub
+category: session
+description:
+  en: One read-only index of every local AI-agent session (Codex, Claude Code, DSH, Trae, or any JSONL source) grouped by project, plus an append-only shared board for decisions and handoffs so switching agents leaves no context gap.
+  zh: 把本机所有 agent 的会话历史合并成一份按项目分组的只读索引，并附一块只追加的共享上下文板，让换 agent 时不丢结论。
+icon: https://raw.githubusercontent.com/Sirius-rocco/dsh-agent-context-hub/main/assets/icon-180.png

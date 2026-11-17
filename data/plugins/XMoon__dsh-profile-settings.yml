@@ -1,0 +1,6 @@
+url: https://github.com/XMoon/dsh-profile-settings
+name: XMoon/dsh-profile-settings
+category: tools
+description:
+  en: 'Per-profile settings overlay for DeepSeek Harness: global settings.yaml stays the baseline while each profile overrides any namespace through its own profiles/<name>/settings.patch.yml — object sections merge recursively, scalars and arrays replace wholesale, and !unset masks an inherited value. The overlay is transparent to existing plugins (they keep reading ctx.settings unchanged), writes land in the profile overlay only, and official schema validation, revision semantics, expectedRevision conflicts, watchers and events are untouched. Ships a settings command family (get/set/unset/mask/unmask/promote/demote/migrate/diff/layers) plus a Profile Settings section in the web Settings panel over a loopback RPC channel.'
+  zh: '为 DeepSeek Harness 提供按 profile 分层的设置覆盖：全局 settings.yaml 仍为基线，每个 profile 可用自己的 profiles/<name>/settings.patch.yml 覆盖任意设置命名空间——对象段递归合并，数组与标量整体替换，!unset 显式屏蔽继承值。覆盖层对现有插件透明（照常读 ctx.settings），写入只落在 profile 覆盖层；官方 schema 语义、revision、expectedRevision 冲突检测、watcher 与事件均不改动。附带 settings 命令族（get/set/unset/mask/unmask/promote/demote/migrate/diff/layers），并在 Web 设置面板经 loopback RPC 通道提供 Profile Settings 区块。'

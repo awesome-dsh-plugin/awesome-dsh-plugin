@@ -1,0 +1,6 @@
+url: https://github.com/hmlyx/dsh-notify
+name: hmlyx/dsh-notify
+category: notify
+description:
+  en: 'Reminder bubbles beside the input for DeepSeek Harness: any plugin or AI can push reminders (text/link) with chat-style stacking, drag-resize, AI summary, visual customization and random outfit presets. A static profile plugin available in every preset without disappearing on restart.'
+  zh: '在输入框右边加了一个泡泡窗口，你可以接入插件或者告诉 AI 什么时候使用它。'

@@ -1,0 +1,6 @@
+url: https://github.com/Doctor-Pan-code/dsh-useof-skill-panel
+name: Doctor-Pan-code/dsh-useof-skill-panel
+category: skill
+description:
+  en: Shows which skills each turn invoked and installs, updates or removes skills inside the app.
+  zh: 显示每轮对话实际调用了哪些技能，并可在应用内安装、更新与删除技能。

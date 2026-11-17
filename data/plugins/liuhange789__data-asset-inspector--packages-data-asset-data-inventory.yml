@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-inventory
+name: liuhange789/data-asset-inspector#data-inventory
+category: tools
+description:
+  zh: "数据目录盘点插件 — 目录扫描+价值评估+分类标注"
+  en: "Data inventory plugin — directory scan + value assessment + classification annotation."

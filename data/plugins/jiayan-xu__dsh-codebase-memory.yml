@@ -1,0 +1,6 @@
+url: https://github.com/jiayan-xu/dsh-codebase-memory
+name: jiayan-xu/dsh-codebase-memory
+category: tools
+description:
+  en: 'Code knowledge graph bridge for codebase-memory-mcp: semantic symbol search (BM25), source snippets, architecture overview with Leiden communities, call/data-flow/cross-service traces, graph-augmented grep.'
+  zh: codebase-memory-mcp 的代码知识图谱桥：语义符号搜索（BM25）、源码片段、Leiden 社区架构总览、调用/数据流/跨服务追踪、图增强 grep。

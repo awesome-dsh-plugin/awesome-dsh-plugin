@@ -1,0 +1,6 @@
+url: https://github.com/XIANGDEEN/dsh-sidebar-video-player
+name: XIANGDEEN/dsh-sidebar-video-player
+category: ui
+description:
+  en: "A right-Sidebar video player with a folder playlist (first-frame thumbnails, duration badges, sort by name/duration/modified/size, fullscreen, and a context menu for rename/copy/delete/refresh when the folder is opened with write access), live playback telemetry (buffered range, decoded FPS, dropped frames) and a read-only MP4/MOV reader for codec profile/level, exact frame count, per-track bitrate and rotation. Registers no agent tool; file writes use the browser File System Access API only after a write-permission folder choice."
+  zh: "右侧栏视频播放器：文件夹播放列表支持首帧缩略图、时长、按名称/时长/修改时间/大小排序、全屏，以及写权限文件夹下的重命名/复制/删除/刷新右键菜单；同时显示缓冲区间、解码帧率与丢帧，并只读解析 MP4/MOV 的编码档次/级别、精确帧数、每轨码率与旋转；不注册智能体工具，文件写入仅在用户以写权限选择文件夹后通过浏览器 File System Access API 执行。"

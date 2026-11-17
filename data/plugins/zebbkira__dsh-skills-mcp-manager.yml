@@ -1,0 +1,6 @@
+url: https://github.com/zebbkira/dsh-skills-mcp-manager
+name: zebbkira/dsh-skills-mcp-manager
+category: dev
+description:
+  en: 'Skills & MCP manager in the DSH web settings: browse/enable/import/delete skills across project and user roots, and manage stdio/streamable-http MCP servers with a real connection (tools registered as mcp__<server>__<tool>, config in ~/.dsh/mcp.json).'
+  zh: 'DSH Web 设置内的技能与 MCP 管理器：在项目级与用户级技能目录间浏览/启用/导入/删除技能，并管理 stdio/streamable-http 的 MCP 服务器（真实连接，工具注册为 mcp__<server>__<tool>，配置存 ~/.dsh/mcp.json）。'

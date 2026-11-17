@@ -1,0 +1,6 @@
+url: https://github.com/alpacachen/dsh-automation
+name: alpacachen/dsh-automation
+category: workflow
+description:
+  en: Runs one-time and RFC 5545 recurring Agent tasks in fresh DSH sessions, with visual schedule editing and session-linked history.
+  zh: 在全新的 DSH 会话中运行单次或 RFC 5545 周期 Agent 任务，支持可视化计划编辑和会话关联历史。

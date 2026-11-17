@@ -1,0 +1,6 @@
+url: https://github.com/omdsh-dev/dsh-inspect
+name: omdsh-dev/dsh-inspect
+category: workflow
+description:
+  en: Adversarial checkup → fix → review loop toolset.
+  zh: 发现问题→修复交付→质量复查的对抗式闭环工具集。

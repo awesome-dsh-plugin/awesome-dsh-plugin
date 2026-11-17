@@ -1,0 +1,6 @@
+url: https://github.com/ShawnKung/dsh-balance-monitor
+name: ShawnKung/dsh-balance-monitor
+category: usage
+description:
+  en: Shows selectable DeepSeek, Kimi, Zhipu GLM, and TeamoRouter balances in the DSH Web sidebar, with per-provider details, usage data, and refresh controls.
+  zh: 在 DSH Web 侧边栏展示可选的 DeepSeek、Kimi、智谱 GLM 和 TeamoRouter 余额，并提供渠道详情、用量数据与刷新控制。

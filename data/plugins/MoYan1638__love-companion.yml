@@ -1,0 +1,6 @@
+url: https://github.com/MoYan1638/love-companion
+name: MoYan1638/love-companion
+category: skill
+description:
+  en: "AI companion skill for DeepSeek Harness: persona configuration (8 presets + custom), six-type long-term memory, emotion recognition and feedback, and multi-turn emotional conversation with tone post-processing. The skill body must be placed in the agent's skills directory (~/.dsh/skills/love-companion/SKILL.md), and the persona/memory pipeline runs on a local Python 3 (standard library only)."
+  zh: "AI 陪伴技能：人设配置（8 种预设 + 自定义）、六类长时记忆、情绪识别与反馈、多轮情感对话及语气后处理。技能本体需放进 Agent 技能目录（~/.dsh/skills/love-companion/SKILL.md）；人设/记忆管线依赖本机 Python 3（仅标准库）。"

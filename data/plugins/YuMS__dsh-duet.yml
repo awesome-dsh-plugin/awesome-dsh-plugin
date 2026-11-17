@@ -1,0 +1,6 @@
+url: https://github.com/YuMS/dsh-duet
+name: YuMS/dsh-duet
+category: voice
+description:
+  en: 'Full-duplex Chinese voice interaction for DSH Web: dictate and edit tasks, submit requests, manage sessions, answer DSH questions, and hear concise task-completion announcements.'
+  zh: '基于全双工语音模型的 DSH 网页端中文语音交互：边听边说、随时插话，用语音输入和修改任务、提交请求、管理会话、回答 DSH 的问题，并简短播报任务完成结果。'

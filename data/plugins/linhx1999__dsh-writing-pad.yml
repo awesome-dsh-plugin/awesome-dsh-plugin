@@ -1,0 +1,6 @@
+url: https://github.com/linhx1999/dsh-writing-pad
+name: linhx1999/dsh-writing-pad
+category: ui
+description:
+  en: Session-scoped Markdown writing pad docked beside the conversation, with edit/preview modes, selection-based AI rewrites, diff review, undo, and draft recovery.
+  zh: 停靠在对话旁的会话级 Markdown 写作板，支持编辑/预览、选区 AI 改写、Diff 审核、撤销与草稿恢复。

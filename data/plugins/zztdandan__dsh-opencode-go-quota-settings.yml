@@ -1,0 +1,6 @@
+url: https://github.com/zztdandan/dsh-opencode-go-quota-settings
+name: zztdandan/dsh-opencode-go-quota-settings
+category: usage
+description:
+  en: "Shows OpenCode GO plan quota (rolling 5-hour, weekly, monthly) on a DSH Settings page, reading the official usage API through a same-origin proxy; registers no sidebar widget. A rework of Astervolans/dsh-opencode-go-usage (itself a fork of yumusb/dsh-opencode-go-usage) — remove that plugin first; both register their own OpenCode GO Settings section, so they cannot be installed together."
+  zh: "在 DSH 设置页显示 OpenCode GO 套餐额度（5 小时滚动、每周、每月），通过同源代理读取官方用量接口；不注册侧栏组件。本插件是 Astervolans/dsh-opencode-go-usage（上游为 yumusb/dsh-opencode-go-usage 的 fork）的改造分支，安装前请先卸载上游插件——两者会各自注册一份 OpenCode GO 设置页，不能同装。"

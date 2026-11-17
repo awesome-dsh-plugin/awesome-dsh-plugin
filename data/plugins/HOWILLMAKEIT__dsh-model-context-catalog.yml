@@ -1,0 +1,6 @@
+url: https://github.com/HOWILLMAKEIT/dsh-model-context-catalog
+name: HOWILLMAKEIT/dsh-model-context-catalog
+category: model
+description:
+  en: 'Match context windows for configured DSH models in one click, show capacity sources, and support selective bulk configuration, manual editing, and continuous synchronization.'
+  zh: '一键匹配 DSH 已配置模型的上下文窗口，展示容量来源，支持勾选批量配置、手动编辑和持续同步。'

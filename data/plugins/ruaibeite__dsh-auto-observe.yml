@@ -1,0 +1,6 @@
+url: https://github.com/ruaibeite/dsh-auto-observe
+name: ruaibeite/dsh-auto-observe
+category: dev
+description:
+  en: 'Records the version of the edit target as an observation when the agent inspected the file with bash instead of the read tool, so the filesystem observation policy stops rejecting edits with FS_NOT_OBSERVED. Applies to edits only; blind whole-file overwrites stay guarded.'
+  zh: '当 agent 用 bash（sed/awk/cat）看过文件而非 read 工具时，为编辑目标补登记一次真实版本的观察记录，使文件系统观察策略不再以 FS_NOT_OBSERVED 拒绝编辑；只作用于编辑，整文件盲覆盖仍受保护。'

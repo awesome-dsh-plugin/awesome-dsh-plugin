@@ -1,0 +1,9 @@
+# Submission entry for awesome-dsh-plugin.
+# File: data/plugins/HorusJiang__dsh-map-tools.yml
+# NOTE: requires repo age >= 1 day and >= 10 commits (CI-enforced) before PR.
+url: https://github.com/HorusJiang/dsh-map-tools
+name: HorusJiang/dsh-map-tools
+category: tools
+description:
+  en: 'Map and routing tools: driving/transit/walking/bicycling route planning, geocoding and POI search via free OSM/OSRM data by default, with an optional Amap (高德) key for better China coverage.'
+  zh: '地图与路径规划工具：驾车/公交/步行/骑行路线、地理编码与 POI 搜索。默认零 key 使用 OSM/OSRM 免费数据，可选配置高德 key 获得更优的国内覆盖。'

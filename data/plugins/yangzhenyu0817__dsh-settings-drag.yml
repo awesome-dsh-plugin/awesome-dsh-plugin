@@ -1,0 +1,6 @@
+url: https://github.com/yangzhenyu0817/dsh-settings-drag
+name: yangzhenyu0817/dsh-settings-drag
+category: ui
+description:
+  en: Moves and resizes the DeepSeek Harness settings panel; its position and size are remembered per browser.
+  zh: 让 DeepSeek Harness 的设置面板可以自由拖动与缩放，位置与尺寸按浏览器记忆。

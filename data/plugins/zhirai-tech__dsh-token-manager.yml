@@ -1,0 +1,7 @@
+url: https://github.com/zhirai-tech/dsh-token-manager
+name: zhirai-tech/dsh-token-manager
+category: usage
+description:
+  en: Token cost monitoring, call-efficiency analysis and reversible tool-output caching for DeepSeek Harness.
+  zh: DeepSeek Harness 的 Token 成本监控、调用效率分析与可逆工具输出缓存。
+icon: https://raw.githubusercontent.com/zhirai-tech/dsh-token-manager/main/icon.png

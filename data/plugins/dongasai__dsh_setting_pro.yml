@@ -1,0 +1,6 @@
+url: https://github.com/dongasai/dsh_setting_pro
+name: dongasai/dsh_setting_pro
+category: ui
+description:
+  en: "Enlarges the DSH web settings dialog (default 1180x920, 20px steps, remembered per browser) and adds an Advanced Settings page that resizes it and hosts Host operations: restart dsh with a 3-second delay and a busy confirmation, restart once all sessions have been idle for 10s (cancellable, repeat clicks idempotent), last start time with uptime, and a dsh version/update check that compares npm dist-tags across selectable channels without upgrading. The same bundle replaces the sidebar brand area with a machine name, adds a read-only provider, model and thinking-level cell beside the composer stats pills, and a switch that registers or unregisters the three dsh_restart_* agent tools at runtime. Zero dependencies, no build step; all routes sit behind the connection trust fence."
+  zh: "放大 DSH Web 设置弹窗（默认 1180×920，20px 一档，只记本浏览器），并新增「设置 → 高级设置」页：同一页调尺寸，也收进 Host 运维——延迟 3 秒重启 dsh（忙时二次确认）、所有会话空闲 10 秒后自动重启（可取消、重复点击幂等）、最后启动时间与已运行时长，以及按所选 npm dist-tag 通道比较的 dsh 版本/更新提示（只提示、不代升级）。同一插件还用机器名字顶替侧栏品牌区、在输入框下方「性能与用量」行旁加一格只读的「供应商 · 模型 · 思考档位」，并提供一个即时注册/注销三个 dsh_restart_* 模型工具的开关。零依赖、无构建；所有路由都过官方信任围栏。"

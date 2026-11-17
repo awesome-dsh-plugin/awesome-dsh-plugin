@@ -1,0 +1,6 @@
+url: https://github.com/Wonderow666/dsh-auto-update
+name: Wonderow666/dsh-auto-update
+category: dev
+description:
+  en: 'Windows only; the upgrade path needs DSH_AUTO_UPDATE_LAUNCH_CMD configured. Checks, installs and rolls back DeepSeek Harness CLI updates from the web settings page, switching the launcher pointer only after the new version passes a config-tree check and a health-checked restart, and reverting automatically when it does not boot.'
+  zh: '仅 Windows；升级路径需配置 DSH_AUTO_UPDATE_LAUNCH_CMD。在 Web 设置页检查、安装、回滚 DeepSeek Harness CLI 更新：新版本装上后先过配置树检查与健康重启，通过才切换启动指针，起不来就自动退回旧版本。'

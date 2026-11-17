@@ -1,0 +1,6 @@
+url: https://github.com/Aik358/dsh-anchored-monitor
+name: Aik358/dsh-anchored-monitor
+category: ui
+description:
+  en: 'A whip for DeepSeek V4 Pro: it watches the reasoning fingerprint of every thinking block and pulls the model back when it slips from focused "We will / I will" mode into scattered "let me" mode.'
+  zh: '给 DeepSeek V4 Pro 的鞭子：实时监听每个思维块的指纹，当模型从专注的 We will / I will 模式滑向发散的 let me 模式时把它拉回来。'

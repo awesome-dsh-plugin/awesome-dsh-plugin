@@ -1,0 +1,7 @@
+url: https://github.com/xiaohuangbo/dsh-root-bridge
+name: xiaohuangbo/dsh-root-bridge
+category: security
+icon: https://raw.githubusercontent.com/xiaohuangbo/dsh-root-bridge/main/icon-180.png
+description:
+  en: 'Session-level root privilege bridge for DeepSeek Harness: ask mode with per-request web approval, full root mode (polkit password entry in the web UI) and fakeroot mode, with sudo or run0 --empower escalation and a configurable subagent sudo policy. It escalates real commands with sudo or run0: in ask mode each request waits for your approval; in full root mode every bash command of the session runs elevated after one password entry in the web UI. Delegated subagents need per-request approval by default (subagentPolicy: request).'
+  zh: 'DeepSeek Harness 会话级 root 权限桥：申请制（逐次网页审批）、完整 root（网页内 polkit 密码输入）与 fakeroot 三种模式，支持 sudo 或 run0 --empower 提权，子代理 sudo 策略可配置。它用 sudo 或 run0 提升真实命令的权限：申请制下每次请求都等你批准；完全 root 模式下，在网页里输一次密码后整个会话的每条 bash 命令都以提权方式运行。委托的子代理默认逐次审批（subagentPolicy: request）。'

@@ -1,0 +1,6 @@
+url: https://github.com/yuexizhishang/dsh-ui-probe
+name: yuexizhishang/dsh-ui-probe
+category: dev
+description:
+  en: 'Drives a plugin page in the running DeepSeek Harness UI — opens the panel, reads real DOM and computed styles, clicks, types, waits for async effects, collects console errors, then returns to the original conversation.'
+  zh: '在运行中的 DeepSeek Harness 界面里驱动插件页面做验收：打开面板、读取真实 DOM 与计算样式、点击、输入、等待异步生效、抓取控制台报错，结束后自动回到原对话。'

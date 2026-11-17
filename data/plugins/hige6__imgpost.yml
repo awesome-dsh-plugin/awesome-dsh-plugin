@@ -1,0 +1,6 @@
+url: https://github.com/hige6/imgpost
+name: hige6/imgpost
+category: vision
+description:
+  en: Let the DSH assistant send local, web, and AI-generated images directly to users in chat, with external vision support for text-only models. On Windows it runs through PowerShell.
+  zh: 让 DSH 助手把本地、网页和 AI 生成的图片直接发到聊天里给用户看，并为文本模型提供识图能力；Windows 下经 PowerShell 运行。

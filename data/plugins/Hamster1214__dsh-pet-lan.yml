@@ -1,0 +1,6 @@
+url: https://github.com/Hamster1214/dsh-pet-lan
+name: Hamster1214/dsh-pet-lan
+category: fun
+description:
+  en: "LAN co-op for the dsh-pet desktop pet: see colleagues' pets on the same network, wave at them, and drag their desktop windows anywhere; an optional included patch adds live animation, bubble and meme sync. Requires dsh-pet 0.3.7."
+  zh: "给 dsh-pet 桌宠加局域网联机：同一网络下能看到同事的桌宠，可以打招呼、自由拖拽桌面窗口；可选补丁同步实时动作、气泡和表情包。需要 dsh-pet 0.3.7。"

@@ -1,0 +1,6 @@
+url: https://github.com/NattoCB/dsh-plugin-sidebar-views
+name: NattoCB/dsh-plugin-sidebar-views
+category: ui
+description:
+  en: Adds a Workspaces / Recent-sessions switcher above the sidebar list, with a pinned-sessions group, a per-row menu (pin/unpin, copy session id), title filtering, and browser-local pin storage with a one-shot migration from dsh-plugin-pin-session.
+  zh: 在侧栏列表上方加「工作区 / 最新会话」切换条，含固定会话分组、行级菜单（固定/取消固定、复制 Session ID）、标题过滤；pin 存于浏览器 localStorage，并对 dsh-plugin-pin-session 做一次性迁移与过渡双写。

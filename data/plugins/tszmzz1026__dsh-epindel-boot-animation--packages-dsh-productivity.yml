@@ -1,0 +1,7 @@
+url: https://github.com/tszmzz1026/dsh-epindel-boot-animation/tree/main/packages/dsh-productivity
+name: tszmzz1026/dsh-epindel-boot-animation#dsh-productivity
+category: workflow
+description:
+    en: Conversation search, checkpoints, context management, main and side chats, local long-term memory, tasks, and daily planning for DeepSeek Harness.
+    zh: 为 DeepSeek Harness 提供搜索、检查点、上下文管理、主聊旁聊、长期记忆、目标待办与今日计划。
+tarball: https://github.com/tszmzz1026/dsh-epindel-boot-animation/releases/download/suite-v2.0.0/dsh-productivity-1.3.1.tgz

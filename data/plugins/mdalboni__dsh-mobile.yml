@@ -1,0 +1,7 @@
+url: https://github.com/mdalboni/dsh-mobile
+name: mdalboni/dsh-mobile
+category: ui
+description:
+  en: 'Mobile viewport lock, overscroll containment, virtual keyboard resizing, and sidebar auto-retraction.'
+  zh: '移动端视口锁定、滚动溢出阻断、虚拟键盘自适应及侧边栏自动收起。'
+icon: https://raw.githubusercontent.com/mdalboni/dsh-mobile/main/assets/icon-180.png

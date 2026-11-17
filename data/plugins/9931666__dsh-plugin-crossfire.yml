@@ -1,0 +1,10 @@
+# awesome-dsh-plugin 收录条目：针锋 Crossfire
+# 用途：提交 PR 时作为 data/plugins/9931666__dsh-plugin-crossfire.yml
+# 规则依据 contributing.md：只允许 url / name / category / description 四个 key，
+# 不得手写 npm:（npm 名由 registry 按 repository 字段自动采集）。
+url: https://github.com/9931666/dsh-plugin-crossfire
+name: 9931666/dsh-plugin-crossfire
+category: workflow
+description:
+  en: 'Adversarial review for DeepSeek Harness: put one settled plan on the stand, send read-only red-team experts at it by dimension, then split their findings into single defects you endorse or reject one by one. It never rewrites the plan and never fixes code.'
+  zh: '对抗式评审：把一个已定稿的方案摆上台，让只读红队专家按维度分头攻击，再把发言拆成逐条可裁决的缺陷由你逐一认定或驳回。它不产出方案、不改代码、不自动修复。'

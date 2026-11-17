@@ -1,0 +1,7 @@
+url: https://github.com/WilShi/dsh-workflow-library
+name: WilShi/dsh-workflow-library
+category: workflow
+description:
+  en: 'Reusable workflows: orchestration scripts saved as files under .dsh/workflows, discovered from the project, and run by name with arguments, so they live in git and can be shared. Four tools: list, show, run, save.'
+  zh: '可复用的工作流库：编排脚本存成 .dsh/workflows 下的文件，从项目中自动发现，按名字带参数运行，可进 git、可团队共享。四个工具：list、show、run、save。'
+tarball: https://github.com/WilShi/dsh-workflow-library/releases/download/v0.2.0/dsh-workflow-library-0.2.0.tgz

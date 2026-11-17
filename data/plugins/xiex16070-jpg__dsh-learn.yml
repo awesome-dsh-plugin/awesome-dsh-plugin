@@ -1,0 +1,7 @@
+url: https://github.com/xiex16070-jpg/dsh-learn
+name: xiex16070-jpg/dsh-learn
+category: skill
+tarball: https://github.com/xiex16070-jpg/dsh-learn/releases/latest/download/dsh-learn.tgz
+description:
+  en: 'Reads the session event stream, with no extra model calls, and turns corrections, failures and fixes into pending lesson candidates. Every candidate is judged against written criteria and carries the reason it passed or was refused; only confirmation writes a skill, and only through the single validated writer `learn_skill_manage`. An idle curator marks unused skills stale and archives them by moving rather than deleting, and spares any skill that is still being loaded. Five tools: `learn`, `learn_review`, `learn_curator`, `learn_skill_manage`, `learn_skills`. Registers a prompt section stating the criteria, and a tool guard that refuses direct edits to skill files so the writer cannot be bypassed.'
+  zh: '读取会话自身的事件流（不额外发起模型调用），把纠正、失败与修法变成待确认的候选教训。每条候选按写死的标准逐项判定，并给出通过或被拒的理由；只有确认之后才写成技能，而且只能经过唯一的写入口 `learn_skill_manage`。闲置时由 curator 把长期不用的技能标为陈旧并归档（是移动，不是删除），仍在被加载的技能会被豁免。五个工具：`learn`、`learn_review`、`learn_curator`、`learn_skill_manage`、`learn_skills`。另外注册一段写明判定标准的提示词段落，并挂一个工具守卫，拒绝直接编辑技能文件，使写入口无法被绕过。'

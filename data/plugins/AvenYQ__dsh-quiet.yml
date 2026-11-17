@@ -1,0 +1,6 @@
+url: https://github.com/AvenYQ/dsh-quiet
+name: AvenYQ/dsh-quiet
+category: ui
+description:
+  en: 'A grey ASCII ocean behind the whole window: whales swim continuously across the sidebar and the chat area, so a creature can drift from one column into the other. Once a conversation starts, every creature leaves through its own edge — up, down, right, or left — while the sea calms, and the sidebar keeps one frosted surface whose height follows its content, so a passing whale becomes a soft shadow behind the labels; an empty conversation brings them back in from the edges. Streaming replies reveal from blur to clear, and reduced motion falls back to a still frame and the native renderer. Neutral ink only, with day and night palettes.'
+  zh: '整个窗口背后是一片灰色字符海洋：鲸群在侧栏与聊天区之间连续游动，能从一栏游进另一栏。开始对话后，生物各自向上、下、右或左侧边缘游走，海面缓缓平静，侧栏留一整片跟随内容高度的磨砂面，鲸鱼经过时只在文字背后留下模糊的影子；回到空白会话时，生物再从边缘游入。流式回复从模糊到清晰逐字浮现，开启减少动态效果时改用静态画面与原生渲染。只用中性墨色，日夜两套配色。'

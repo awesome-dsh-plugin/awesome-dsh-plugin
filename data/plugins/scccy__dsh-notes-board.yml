@@ -1,0 +1,7 @@
+url: https://github.com/scccy/dsh-notes-board
+name: scccy/dsh-notes-board
+category: docs
+icon: https://raw.githubusercontent.com/scccy/dsh-notes-board/main/assets/icon-180.png
+description:
+  en: "Writes engineering decisions down the way DSH documents its own — every non-trivial change leaves a Markdown note under .agents/notes/<lifecycle>/<class>/ holding the problem, the decision, the rejected alternatives and the consequences, committed to git and reviewable like code. It supplies the workflow for that: five tools (note_search, note_read, note_write, note_verify, note_skip), an end-of-turn hook that asks a code-changing turn to either write a note or record an explicit skip, the tree/format/archived checks, and the write-notes-like-deepseek skill bundled in the package and mounted by the plugin. A sidebar board that renders the notes into four views (architecture baseline, timeline, rejected proposals, decision list) comes with it; the notes themselves stay plain Markdown."
+  zh: "像 DSH 记录自己的决定那样记录工程决策：每次非平凡改动在 .agents/notes/<lifecycle>/<class>/ 下留一篇 Markdown，写清问题、决定、被否决的备选与后果，进 git、可以像代码一样 review。插件提供这套流程：note_search、note_read、note_write、note_verify、note_skip 五个工具，回合末钩子（改过代码的轮次要写笔记或记录一次显式跳过），树、格式、归档三项校验，以及随包分发、由插件挂载的 write-notes-like-deepseek 技能。另附把这些笔记渲染成四个视图（架构基线、演进时间线、避坑智库、决策清单）的侧边栏看板；笔记本体仍是普通 Markdown。"

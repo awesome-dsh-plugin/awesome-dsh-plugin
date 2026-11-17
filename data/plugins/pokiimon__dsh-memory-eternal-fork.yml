@@ -1,0 +1,6 @@
+url: https://github.com/pokiimon/dsh-memory-eternal-fork
+name: pokiimon/dsh-memory-eternal-fork
+category: memory
+description:
+  en: "Maintained fork of dsh-memory-eternal: auto-captures knowledge cards into a local Markdown vault and recalls them on demand, with DSH 0.2.0-rc.x compatibility fixes. Original project by EternalNight996 (https://github.com/EternalNight996/dsh-memory-eternal), MIT."
+  zh: "dsh-memory-eternal 的维护版 fork：对话结束自动沉淀知识卡到本地 Markdown 记忆库并按需召回，修复 DSH 0.2.0-rc.x 兼容性。原项目由 EternalNight996 创建并维护（https://github.com/EternalNight996/dsh-memory-eternal），MIT。"

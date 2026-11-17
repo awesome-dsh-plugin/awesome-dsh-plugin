@@ -1,0 +1,6 @@
+url: https://github.com/TinyNian/dsh-harness-os/tree/main/packages/dsh-harness-os
+name: TinyNian/dsh-harness-os#dsh-harness-os
+category: theme
+description:
+  en: Main UI skin that extends the dsh-startup-screen archive layout to the whole workspace, picking up from the boot animation when it hands off.
+  zh: 主界面皮肤：把 dsh-startup-screen 开机动画的技术档案版式延伸到整个工作台，揭幕时接住开机动画的常驻件。

@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-valuation
+name: liuhange789/data-asset-inspector#data-asset-valuation
+category: tools
+description:
+  zh: "数据资产估值插件 — 成本法（重置成本）+收益法两轨估值"
+  en: "Data asset valuation plugin with cost-based (replacement cost) and income-based valuation."

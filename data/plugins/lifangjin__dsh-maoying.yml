@@ -1,0 +1,6 @@
+url: https://github.com/lifangjin/dsh-maoying
+name: lifangjin/dsh-maoying
+category: agi
+description:
+  en: 'Web-novel writing assistant preset for DeepSeek Harness: the main agent acts as editor-in-chief and delegates outlining, drafting, review, lore-keeping and research to five helpers across a seven-phase workflow, with the whole novel kept as a structured markdown/YAML novel/ directory (character cards, a foreshadowing state machine, timeline, narrative memory), plus a sidebar creator panel and six zero-dependency CLI commands.'
+  zh: '网文创作辅助插件：主 agent 任主编，把大纲、写作、审校、设定维护、素材考据委派给五个帮手，按七阶段工作流推进；整部小说就是工作区里结构化的 novel/ 目录（角色卡、伏笔状态机、时间线、叙事记忆），另带侧栏创作台面板与六条零依赖 CLI 命令。'

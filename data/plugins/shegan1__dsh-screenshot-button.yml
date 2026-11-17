@@ -1,0 +1,7 @@
+url: https://github.com/shegan1/dsh-screenshot-button
+name: shegan1/dsh-screenshot-button
+category: tools
+description:
+  en: 'One-click screenshot for the DSH composer: a scissors button (Shift+click hides the window first) opens a native full-screen crop overlay with window detection, drag-to-move and 8-direction border resize, then attaches the cropped PNG through the composer paste pipeline. Windows only, DSH desktop app 0.2.1 or later.'
+  zh: 'DSH 输入框的截图插件：剪刀按钮（Shift+点击先隐藏窗口）唤起原生全屏裁剪遮罩，支持窗口识别、选区拖动与八向边缘缩放，裁剪结果经输入框粘贴管线自动附为图片。仅支持 Windows 上的 DSH 桌面端（0.2.1 及以上）。'
+icon: https://raw.githubusercontent.com/shegan1/dsh-screenshot-button/master/assets/icon-180.png

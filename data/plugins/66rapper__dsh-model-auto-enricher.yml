@@ -1,0 +1,7 @@
+url: https://github.com/66rapper/dsh-model-auto-enricher
+name: 66rapper/dsh-model-auto-enricher
+category: model
+tarball: https://github.com/66rapper/dsh-model-auto-enricher/releases/latest/download/dsh-model-auto-enricher.tgz
+description:
+  en: 'Model channel auto-enricher for DeepSeek Harness: eliminates manually configuring contextWindow, maxTokens, [text, image] multimodal input, and {low, high, max} reasoning effort tiers model by model after adding a provider channel, with live auto-enrichment on save, a Settings UI page, and timestamped backups.'
+  zh: 'DSH 模型补齐助手：解决添加新渠道后还要把几十个模型一个个手动点开调百万上下文、调最大输出、勾多模态发图（[text, image]）、配思考强度档位（{low, high, max}）的繁琐痛点，支持设置页添加模型保存后自动补齐与可视化一键补齐。'

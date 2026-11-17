@@ -1,0 +1,6 @@
+url: https://github.com/a961282799-crypto/dsh-region-edit
+name: a961282799-crypto/dsh-region-edit
+category: dev
+description:
+  en: "In the DSH desktop file preview, click an HTML element (with its source line and column) or lasso part of an image for the vision model to identify, then send your change request to the current session; local HTML edits keep a history with before/after previews, line diffs and rollback."
+  zh: "在 DSH 桌面端文件预览中点选 HTML 元素（附源码行列），或自由圈选图片区域由视觉模型识别目标，写下修改要求后发送到当前会话；本地 HTML 修改保留记录，支持前后预览、逐行对比与回滚。"

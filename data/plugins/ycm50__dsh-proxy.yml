@@ -1,0 +1,6 @@
+url: https://github.com/ycm50/dsh-proxy
+name: ycm50/dsh-proxy
+category: tools
+description:
+  en: 'Domain-routed proxy for DSH fetch traffic: hosts on a force-proxy list always go through the proxy, every other host tries direct first and fails over to the proxy within a second, the first channel to answer is pinned for the session, connections are reused for 120 seconds, and each attempt is logged. Can also route pnpm/git subprocesses used by plugin installs.'
+  zh: '按域名分流的 DSH 代理插件：列入「强制走代理」的域名（含子域名）永远走代理，其余域名先直连、1 秒内不通再换代理，先答上的通道在本会话定格，连接复用 120 秒，每次尝试都记录；可让插件安装用的 pnpm/git 子进程也走代理。'

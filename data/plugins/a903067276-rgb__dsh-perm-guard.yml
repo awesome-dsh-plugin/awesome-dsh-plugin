@@ -1,0 +1,6 @@
+url: https://github.com/a903067276-rgb/dsh-perm-guard
+name: a903067276-rgb/dsh-perm-guard
+category: security
+description:
+  en: 'Auto-approval permission guard: a middle tier between workspace-write and danger-full-access — auto-allows safe operations inside trust directories, always asks a human for destructive ones, with 11 per-category switches and an audit trail.'
+  zh: '自动审批权限守卫：介于 workspace-write 与 danger-full-access 之间的中间档——信任目录内安全操作自动放行，危险操作一律人工确认；11 个分类开关可调，自带审计记录。'

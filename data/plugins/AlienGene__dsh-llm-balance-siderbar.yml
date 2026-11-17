@@ -1,0 +1,6 @@
+url: https://github.com/AlienGene/dsh-llm-balance-siderbar
+name: AlienGene/dsh-llm-balance-siderbar
+category: usage
+description:
+  en: 'DeepSeek Harness plugin for querying LLM service provider usage: reads DeepSeek and Moonshot balances plus Kimi For Coding and OpenCode Go quota windows on the host and shows them in an always-visible card with three view modes, edge docking and a collapsed letter bubble.'
+  zh: 'DeepSeek Harness 服务提供商用量查询插件：在宿主侧读取 DeepSeek、Moonshot 余额与 Kimi For Coding、OpenCode Go 的配额窗口，在常驻卡片中展示，支持三种视图、边缘磁吸与收起为字母气泡。'

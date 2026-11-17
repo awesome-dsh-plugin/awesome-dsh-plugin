@@ -1,0 +1,7 @@
+url: "https://github.com/aa2246740/dsh-livevoice"
+name: "aa2246740/dsh-livevoice"
+category: "voice"
+description:
+  en: "Realtime WebRTC voice using Codex OAuth, with task delegation to a DSH session."
+  zh: "使用 Codex OAuth 的 WebRTC 实时语音，并可将任务交给 DSH 会话执行。"
+tarball: "https://github.com/aa2246740/dsh-livevoice/releases/download/v0.1.6/dsh-livevoice-0.1.6.tgz"

@@ -1,0 +1,6 @@
+url: https://github.com/TussalZeus18028/dsh-open-folder
+name: TussalZeus18028/dsh-open-folder
+category: ui
+description:
+  en: 'Adds an "Open folder" item to the session-row ⋯ menu in the DSH workspace sidebar, opening the session''s workspace folder with the host OS file manager.'
+  zh: '在工作区侧边栏的会话行 ⋯ 菜单中增加「打开文件夹」项，用系统文件管理器打开该会话所属工作区的文件夹。'

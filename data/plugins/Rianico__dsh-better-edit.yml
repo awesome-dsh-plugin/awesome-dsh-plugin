@@ -1,0 +1,6 @@
+url: https://github.com/Rianico/dsh-better-edit
+name: Rianico/dsh-better-edit
+category: tools
+description:
+  en: 'Hash-anchored read / edit / batch_edit / undo_last_edit tools: every line gets a unique 3-character content hash, edits target hashes instead of line numbers, and served-state verification rejects stale ranges with fresh anchors.'
+  zh: 基于哈希锚定的 read / edit / batch_edit / undo_last_edit 工具：每行分配唯一的 3 字符内容哈希，编辑按哈希而非行号定位；对已提供状态逐行校验，过期范围会被拒绝并回传新锚点。

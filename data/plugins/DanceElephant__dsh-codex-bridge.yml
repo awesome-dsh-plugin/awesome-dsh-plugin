@@ -1,0 +1,7 @@
+url: https://github.com/DanceElephant/dsh-codex-bridge
+name: DanceElephant/dsh-codex-bridge
+category: skill
+description:
+  en: 'Imports skills from a local Codex install into the DSH skill catalog without running them: scans ~/.codex/skills and the plugin cache, registers a skill by reference or as a snapshot copy (a snapshot rewrites the Codex home paths hard-coded in the copied body and keeps the upstream LICENSE/NOTICE), compresses oversized descriptions to a 220-character budget by default, and records every import in an atomic lockfile that is replayed at DSH startup. The same six operations ship as codex_scan, codex_inspect, codex_import, codex_list, codex_remove and codex_doctor tools plus a bridge CLI; zero runtime dependencies, no build step, Node.js 20 or newer.'
+  zh: '把本机 Codex 的技能导入 DSH 技能目录，且不执行其中代码：扫描 ~/.codex/skills 与插件缓存，按引用或快照两种方式登记（快照会改写副本正文里写死的 Codex 主目录路径，并保留上游 LICENSE/NOTICE），超长描述默认压到 220 字符预算，导入项记在原子锁文件里并在 DSH 启动时重放。同样六个操作以 codex_scan、codex_inspect、codex_import、codex_list、codex_remove、codex_doctor 工具和 bridge CLI 提供；零运行时依赖、无构建步骤，Node.js 20 或更新。'
+tarball: https://github.com/DanceElephant/dsh-codex-bridge/releases/download/v0.1.2/dsh-codex-bridge-0.1.2.tgz

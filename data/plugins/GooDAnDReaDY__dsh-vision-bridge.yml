@@ -1,0 +1,6 @@
+url: https://github.com/GooDAnDReaDY/dsh-vision-bridge
+name: GooDAnDReaDY/dsh-vision-bridge
+category: vision
+description:
+  en: "Routes images to a vision model of your choice - auto-rewrite, explicit tools, or hybrid - so a text-only chat model does not fail a turn that contains a picture."
+  zh: "将图片交给所选的视觉模型处理（自动改写、显式工具或混合模式），使纯文本聊天模型也能处理包含图片的对话。"

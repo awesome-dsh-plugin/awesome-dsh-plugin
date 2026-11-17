@@ -1,0 +1,7 @@
+url: https://github.com/picklerick422/dsh-conv-progress
+name: picklerick422/dsh-conv-progress
+category: ui
+description:
+  en: Live per-turn progress capsule with an empirical ETA table and a click-to-open turn history, docked under the composer.
+  zh: 在输入框下方常驻显示当前对话的进度与预估剩余时间，点击可回看该会话的历史任务记录。
+tarball: https://github.com/picklerick422/dsh-conv-progress/releases/latest/download/dsh-conv-progress.tgz

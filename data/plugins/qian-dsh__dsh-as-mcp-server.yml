@@ -1,0 +1,6 @@
+url: https://github.com/qian-dsh/dsh-as-mcp-server
+name: qian-dsh/dsh-as-mcp-server
+category: agi
+description:
+  en: "Exposes DSH as an MCP server so another agent can watch its thinking, tool calls and file writes in real time, share intent, take a floor lock that denies DSH's write/edit/git tools, inject mid-turn alerts, and delegate reviews."
+  zh: "把 DSH 变成一个 MCP server：让另一个 agent 实时看见它的思维、工具调用和文件改动，共享意图，持地板锁期间拒绝 DSH 的 write/edit/git 工具，插入中途提醒，并委托审查。"

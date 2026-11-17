@@ -1,0 +1,6 @@
+url: https://github.com/Contexera/dsh-agent-team
+name: Contexera/dsh-agent-team
+category: workflow
+description:
+  en: 'Agent Teams for DeepSeek Harness: hand work to a team of agents that carries it end to end while you set the direction and hold the gates. Agents claim Tasks, hand work to each other, and have someone other than the builder verify it.'
+  zh: 'DeepSeek Harness 的 Agent 团队：把工作交给一支 Agent 团队，它们把事做到底，你定方向、把关键的关。Agent 自己认领 Task、互相交接，由做的人以外的成员验收。'

@@ -1,0 +1,6 @@
+url: https://github.com/wjw99830/dsh-plugin-noema
+name: wjw99830/dsh-plugin-noema
+category: dev
+description:
+  en: Shows per-turn changes in cyclomatic complexity, cognitive complexity, and maximum nesting depth for TypeScript, Python, and Go in the Web UI, with expandable file and function summaries for code review.
+  zh: 在 Web UI 中展示每轮任务前后的圈复杂度、认知复杂度和最大嵌套深度变化，支持 TypeScript、Python 和 Go，可展开文件和函数查看详情，帮助确定代码审查重点。

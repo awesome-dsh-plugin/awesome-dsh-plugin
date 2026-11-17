@@ -1,0 +1,7 @@
+url: https://github.com/tengyinan1994/dsh-project-runner
+name: tengyinan1994/dsh-project-runner
+category: dev
+description:
+  en: 'Grouped run panel for DeepSeek Harness: one click starts a project''s services in a real PTY, streams live colored output, and keeps every run''s log on disk where the agent can read it.'
+  zh: 分组运行面板：在真 PTY 里一键启动项目服务，实时彩色输出，每次运行的日志落盘，代理可直接读取。
+tarball: https://github.com/tengyinan1994/dsh-project-runner/releases/latest/download/dsh-project-runner.tgz

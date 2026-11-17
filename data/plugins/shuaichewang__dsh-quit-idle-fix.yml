@@ -1,0 +1,6 @@
+url: https://github.com/shuaichewang/dsh-quit-idle-fix
+name: shuaichewang/dsh-quit-idle-fix
+category: dev
+description:
+  en: Clears four kinds of idle-only system notices (approval policy, working directory, plan mode, plugin changes) that DeepSeek Harness counts as active work, so quitting with no running tasks no longer warns about interrupted work.
+  zh: 清除四类被 DeepSeek Harness 误算为“有任务”的空闲系统通知（审批策略、工作目录、计划模式、插件变更），让没有任务运行时退出不再弹出“任务将会中断”的警告。

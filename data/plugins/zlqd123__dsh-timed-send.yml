@@ -1,0 +1,7 @@
+url: https://github.com/zlqd123/dsh-timed-send
+name: zlqd123/dsh-timed-send
+category: session
+description:
+  en: 'Timed send for the chat composer: pick a moment and the host delivers the message then. Inside an existing conversation tasks join that conversation; from the new-session screen each task gets its own pre-created session.'
+  zh: 聊天输入框的定时发送：选好时刻到点由 Host 真正发出。已有对话内任务排进当前对话；新会话界面每条任务各建一个独立会话。
+icon: https://raw.githubusercontent.com/zlqd123/dsh-timed-send/master/assets/icon.png

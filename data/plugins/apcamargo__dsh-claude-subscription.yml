@@ -1,0 +1,6 @@
+url: https://github.com/apcamargo/dsh-claude-subscription
+name: apcamargo/dsh-claude-subscription
+category: model
+description:
+  en: 'Use Claude models in DeepSeek Harness through Claude subscription accounts.'
+  zh: '在 DeepSeek Harness 中以 OAuth 登录的 Claude 订阅账号运行 Claude 模型，每个账号一条独立 provider 路由与一份可编辑的模型列表，提供 /claude-login、/claude-account、/claude-usage、/claude-logout 命令，并在输入框显示配额用量。'

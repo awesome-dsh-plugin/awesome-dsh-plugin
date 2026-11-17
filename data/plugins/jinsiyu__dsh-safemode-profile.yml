@@ -1,0 +1,6 @@
+url: https://github.com/jinsiyu/dsh-safemode-profile
+name: jinsiyu/dsh-safemode-profile
+category: tools
+description:
+  en: The dsh security mode plugin achieves a zero third-party plugin startup by constructing a blank profile.
+  zh: dsh安全模式插件，通过构建空白profile实现零第三方插件启动。

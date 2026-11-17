@@ -1,0 +1,7 @@
+url: https://github.com/BeatAPI/beatapi-agent-plugin/tree/main/packages/dsh-geo
+name: BeatAPI/beatapi-agent-plugin#dsh-geo
+category: tools
+description:
+  en: "Connects an existing local BeatGEO instance through its scoped MCP key for brands, AI visibility evidence and drafts; includes setup diagnostics and a Skill for the same brand's SEO dashboard."
+  zh: "通过工作区权限受限的 MCP Key 连接已有本地 BeatGEO，操作品牌、AI 可见度证据和草稿；附带连接诊断与同品牌 SEO 页面操作 Skill。"
+tarball: https://github.com/BeatAPI/beatapi-agent-plugin/releases/download/harness-workspaces-v0.1.0/beatapi-dsh-geo-0.1.0.tgz

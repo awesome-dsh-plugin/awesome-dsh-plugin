@@ -1,0 +1,6 @@
+url: https://github.com/dsh-plugins/dsh-thought-buddy
+name: dsh-plugins/dsh-thought-buddy
+category: theme
+description:
+  en: A GrokBot-style animated avatar with a synchronized typewriter status line — right in front of the "Deep diving..." indicator.
+  zh: 在「Deep diving...」状态提示前，放一只动态小伙伴——GrokBot 风格动画头像，状态文字还会同步打字机变换。

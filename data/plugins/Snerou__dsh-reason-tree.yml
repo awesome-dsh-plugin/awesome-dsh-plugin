@@ -1,0 +1,6 @@
+url: https://github.com/Snerou/dsh-reason-tree
+name: Snerou/dsh-reason-tree
+category: workflow
+description:
+  en: 'Reason tree: breaks a conclusion into a bottom-up argument tree, marks each branch as holds, fails or open, and jumps to the source file in Hippocampus.'
+  zh: '根源追溯：把结论拆成从下往上的论证树，每一支可标成立、不成立或待拆，并能跳到海马体看原文。'

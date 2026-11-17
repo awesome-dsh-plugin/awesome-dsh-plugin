@@ -1,0 +1,6 @@
+url: https://github.com/VioletScar-Hui/dsh-chat-history
+name: VioletScar-Hui/dsh-chat-history
+category: ui
+description:
+  en: 'CLI-style chat history recall for the DSH input box: press ArrowUp/ArrowDown to recall previously sent messages.'
+  zh: '给 DSH 聊天输入框加 CLI 风格历史记忆：按上下方向键召回之前发送过的消息。'

@@ -1,0 +1,6 @@
+url: https://github.com/berserk0501/dsh-soundscape
+name: berserk0501/dsh-soundscape
+category: voice
+description:
+  en: 'Dual-MediaPlayer daemon ($think loop + $fx one-shots) with volume ducking, mood-aware sounds (smooth/struggle/deep_think triggered by consecutive success/failure streaks and prolonged agent runtime), 15 built-in PCM WAV synthesised from sine/square waveforms, per-tool sound mapping with 51 categorised tools, custom WAV/MP3 drop-in with auto-conversion, and a full settings UI with dark-mode fix.'
+  zh: '双 MediaPlayer 守护进程（$think 思考循环 + $fx 一次性音效）支持音量闪避、情绪感知音效（连续成功/失败/长时间运行自动触发 smooth/struggle/deep_think）、15 种正弦/方波合成内置音、51 个工具分类映射、自定义 WAV/MP3 直替自动转换，以及完整设置页含深色模式修复。'

@@ -1,0 +1,6 @@
+url: https://github.com/liyy996/dsh-theme-windowsxp
+name: liyy996/dsh-theme-windowsxp
+category: theme
+description:
+  en: 'Windows XP (Luna) skin for the DSH web GUI: beige Luna panels, gradient buttons, #7F9DB9 input fields, rounded blue scrollbars and a CSS-drawn Bliss-style desktop, plus a chime when a turn finishes and a different cue when the agent stops for approval.'
+  zh: '把 DSH 换成 Windows XP：Luna 蓝皮肤（米色面板、渐变按钮、#7F9DB9 输入框、圆角蓝色滚动条、纯 CSS 绘制的 Bliss 风格桌面），外加一轮跑完时的提示音，以及智能体停下来等你批准时的另一种提示音。'

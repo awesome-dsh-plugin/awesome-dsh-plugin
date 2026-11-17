@@ -1,0 +1,6 @@
+url: https://github.com/aLIZELI/belief-merge/tree/main/belief-merge
+name: aLIZELI/belief-merge#belief-merge
+category: session
+description:
+  en: 'Merges other sessions'' context into the current turn: evidence-weighted conflict resolution, retraction of claims whose premises were retracted, trust labelling that resists cross-session prompt injection, and budget-bounded packing. Ships a benchmark.'
+  zh: '把其他会话的上下文合并进当前回合：按证据裁决冲突、前提被撤回时同步撤回结论、用信任格抵抗跨会话提示注入，并在 token 预算内打包。附带评测基准。'

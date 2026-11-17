@@ -1,0 +1,7 @@
+url: 'https://github.com/zou240/dsh-plugins/tree/main/plugins/steward'
+name: 'zou240/dsh-plugins#steward'
+category: workflow
+description:
+  en: 'Turns a stated rule into a checkable intake card and writes it into the right AGENTS.md, and keeps project plans, a rule ledger, project records, handoffs, a change log and a timeline.'
+  zh: '把一句话的要求做成可核对的规则卡并写进对应的 AGENTS.md，同时统管项目档案、计划、交接、改动账本与时间线。'
+icon: 'https://raw.githubusercontent.com/zou240/dsh-plugins/main/plugins/steward/icon-180.png'

@@ -1,0 +1,6 @@
+url: https://github.com/zxj0306/DSH-javadev-enhance
+name: zxj0306/DSH-javadev-enhance
+category: dev
+description:
+  en: Java efficient development plugin for DeepSeek Harness providing deterministic auto-fix for .java files, token-saving template intents, and cross-platform JDK/Gradle/Android SDK/FFmpeg/LWJGL/IDEA discovery with persistent caching.
+  zh: DeepSeek Harness 的 Java 高效开发插件，提供 .java 文件的决定性自动修复、节省 token 的模板意图、以及跨平台的 JDK/Gradle/Android SDK/FFmpeg/LWJGL/IDEA 自动发现与持久化缓存。
