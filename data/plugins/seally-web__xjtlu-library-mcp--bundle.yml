@@ -1,0 +1,6 @@
+url: https://github.com/seally-web/xjtlu-library-mcp/tree/main/bundle
+name: seally-web/xjtlu-library-mcp#bundle
+category: tools
+description:
+  en: Search XJTLU library holdings and e-books, look up journal articles, and fetch available full texts through the university elink proxy. Needs uv; holdings search needs the campus network or VPN.
+  zh: 检索西浦馆藏与电子书、查期刊论文、经学校 elink 代理取回可得的全文。需要本机装 uv；查馆藏需要校园网或 XJTLU VPN。
