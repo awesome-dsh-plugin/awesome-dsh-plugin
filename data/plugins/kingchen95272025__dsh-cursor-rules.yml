@@ -1,7 +1,0 @@
-url: https://github.com/kingchen95272025/dsh-cursor-rules
-name: kingchen95272025/dsh-cursor-rules
-category: agi
-description:
-  en: Loads the rules, skills, and MCP servers declared under .cursor into the agent context, with a panel that reads and switches each of them.
-  zh: 把 .cursor 下的规则、技能与 MCP server 接入 Agent 上下文，并提供查看与逐个开关它们的面板。
-icon: https://raw.githubusercontent.com/kingchen95272025/dsh-cursor-rules/main/assets/icon-180.png
