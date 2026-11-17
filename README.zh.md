@@ -688,6 +688,7 @@ dsh plugin --profile web add dshmarket
 - [dongsheng123132/dsh-workspace-plugins#dsh-workspace-move-top](https://github.com/dongsheng123132/dsh-workspace-plugins/tree/main/plugins/dsh-workspace-move-top) — 在工作区的「…」菜单里加一项「移到最上面」，只调整一次顺序，不做收藏、星标或自动重排。
 - [dongwenxiu83-web/dsh-friendly-steps](https://github.com/dongwenxiu83-web/dsh-friendly-steps) — 把 Think / 工具调用等过程行折叠成右下角摘要浮条，失败步骤红色计数，面向文字工作者的干净对话视图。
 - [donyue7/dsh-aoci-panel](https://github.com/donyue7/dsh-aoci-panel) — DSH 的 AOCI 认知面板：多工作区总览、单仓库索引与治理视图、MCP 绑定诊断，以及引导式/批量初始化。治理、校验与引导式/批量初始化需宿主机装有 aoci CLI；仅浏览索引不需要。
+- [doubility/dsh-open-with-control](https://github.com/doubility/dsh-open-with-control) — 把会话头部的「打开方式」分裂按钮换成可配置版本：可移除条目、调整顺序、设定默认应用，并把本机已安装的应用加入菜单（带真实图标）。偏好保存在主机上；应用探测覆盖 macOS 与 Windows，暂不支持 Linux。
 - [DQS-PUBLIC/dsh-price-chip](https://github.com/DQS-PUBLIC/dsh-price-chip) — 侧边栏价格小挂件：显示当前 DeepSeek 时段（高峰或空闲）、所选模型每百万 token 的缓存命中、未命中与输出价格，以及账户余额和今日消费。
 - [dream-office/dsh-note-wall](https://github.com/dream-office/dsh-note-wall) — DSH 侧栏便签墙：随手记录灵感，用颜色和分类整理，支持链接与图片，数据只存本机。
 - [Dreamaniax/dsh-model-effort-chips](https://github.com/Dreamaniax/dsh-model-effort-chips) — 把输入框的模型档位拆成模型胶囊和思考强度胶囊：强度胶囊打开可拖动、可滚轮调整的滑条，面板里跑 36 个 Canvas 动效、分 12 个大类。
@@ -1701,6 +1702,7 @@ dsh plugin --profile web add dshmarket
 - [qiweiii/dsh-brand-studio](https://github.com/qiweiii/dsh-brand-studio) — DSH 共享网页界面的自定义品牌：在「设置 → 品牌」中修改名称、徽章，选择本地 logo 和字标图片并调整大小与圆角、实时预览、可选自定义页面标题、一键恢复官方外观。
 - [qjcnmd/dsh-reasoning-slider](https://github.com/qjcnmd/dsh-reasoning-slider) — Codex 风格推理等级滑块，内嵌于模型选择器，拖动切换推理档位。
 - [QLNPLUS/dsh-workspace-groups](https://github.com/QLNPLUS/dsh-workspace-groups) — 把侧栏的工作区列表变成三层树：分组 → 项目 → 对话。项目可拖进拖出分组、分组可拖动排序；分组可改名，并在同一个对话框里选 10 个预设色和 20 个预设图标；支持置顶与归档；每个分组和项目的折叠状态重启后保持；搜索同时匹配分组名、项目名与对话标题。
+- [qq304379685/dsh-lanhu-dashboard-x](https://github.com/qq304379685/dsh-lanhu-dashboard-x) — 在 DSH 面板里直接浏览蓝湖产品原型（Axure），并把页面目录与文案通过四个工具提供给模型。
 - [qrak/dsh-mode-switcher](https://github.com/qrak/dsh-mode-switcher) — 在输入框的 chip 上用 Tab 键切换 Plan/Build，每个模式各自记住模型与 reasoning 强度，切换、/plan 与批准计划后自动恢复。
 - [qrxf/dsh-workspace-graph](https://github.com/qrxf/dsh-workspace-graph) — DSH Web 界面中的工作区与会话可拖动气泡图谱：大泡为工作区、小泡为会话，连线表示真实所属关系。画布支持平移、缩放与适应；筛选覆盖工作区、状态、类型和归档情况；搜索覆盖工作区名称、路径与会话标题；原生操作可打开或新建会话、重命名工作区、归档或恢复会话。布局保存在浏览器本地。
 - [qt9494/dsh-seeyon-workbench](https://github.com/qt9494/dsh-seeyon-workbench) — 致远工作台：把 OA 待办、会议、技能市场和 aTrust VPN 一键登录合成一个面板。内含模块替代作者的 dsh-seeyon-todo / dsh-skillhub / dsh-vpn，二选一，不可同装。需要致远 OA 账号；VPN 部分仅限 Windows，且需先安装深信服 aTrust 客户端。
@@ -6513,6 +6515,8 @@ dsh plugin --profile web add dshmarket
 - [liuhange789/data-asset-inspector#underground-pipeline-inspector](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/underground-pipeline-inspector) — 地下管线数据质量检查插件 — 检测覆盖率、接边精度、流向合理性，输出质量评分。默认规则取自国标与广东省导则（坐标系仅认 CGCS2000 及三度带 38–40 带，粗差率阈值 5%），可用配置 JSON 覆盖。
 - [liuhange789/data-asset-inspector#visibility-doctor](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/visibility-doctor) — 诊断 DSH 插件的可发现性（npm 关键词、README 安装写法、GitHub topics、市场收录）并生成改进建议；注册 diagnose_visibility 与 boost_exposure 两个工具。评分规则按作者自家 @liuhange 系列包调校，需联网访问 npm、GitHub API 与 dsh-plugin.org。
 - [liuhange789/dsh-cache-guard](https://github.com/liuhange789/dsh-cache-guard) — DSH 提示缓存健康度守卫与省钱教练：npm 包名是 dsh-prompt-cache-guard（与无关的 dsh-cache-guard 不是同一个包）。cache_guard_health 工具给出绿/黄/红健康度、一行干预建议与 PTC 切换提示，cache_guard_config 读写开关与灵敏度。
+- [liuhange789/dsh-clinic-intake](https://github.com/liuhange789/dsh-clinic-intake) — 诊前信息结构化：患者候诊时回答六个问题，插件把回答整理成 300 字内的就诊摘要（主诉部位/性质/病程、用药与频次、过敏史、既往史、就诊原因标签），可在 Web 界面会话头部的「候诊采集」向导线完成，也可生成一个离线单文件 HTML 填写页给候诊区平板使用。纯规则提取、本地处理，自动隐去手机号、身份证号、邮箱与姓名标签，不做诊断、分诊或用药建议。
+- [liuhange789/dsh-contract-redline](https://github.com/liuhange789/dsh-contract-redline) — 合同风险速查：粘贴采购/租赁/服务合同全文，逐条扫描出高风险条款、权利义务不对等条款与缺失的关键条款，每条附原文摘录和一句白话解释。纯规则匹配、本地处理，不联网、不做 OCR；只提示条款风险，不出具法律意见，不判断合同是否有效，也不建议签或不签。
 - [liuhange789/dsh-mcp-lazy](https://github.com/liuhange789/dsh-mcp-lazy) — MCP 工具按需加载。会话工具集里只保留 coreTools 白名单（最多 5 个）中的 mcp__* 工具，其余 MCP 工具定义经由会话级 tools.restrict() 真正从请求中移除，模型调用 lazy_load_tool 后才装回；tools/pre-execute 闸门把未加载工具的调用拒绝成「请先装载」的提示，会话结束自动重置。
 - [liuhange789/party-eco-agent](https://github.com/liuhange789/party-eco-agent) — 面向党建引领街道产业生态场景的轻量规则工具：生成企业画像卡片、按品类与数量匹配供需、规整政策记录字段（不解析原文）、按优先级给出诉求处理人角色与预计天数；不调用任何外部系统。
 - [LiuJiaCheng11/dsh-postman](https://github.com/LiuJiaCheng11/dsh-postman) — 用 9 个工具在 dsh 里管理 Postman 云端集合——列出、浏览、新增（单个或批量）、修改、删除接口，导出或整体覆盖集合。
@@ -6833,6 +6837,7 @@ dsh plugin --profile web add dshmarket
 - [qixin-ai-data/dsh-qixin-insight-mcp-oauth](https://github.com/qixin-ai-data/dsh-qixin-insight-mcp-oauth) — 通过 OAuth 2.1 + PKCE 授权接入启信慧眼 MCP 服务，以单条插件条目把它的工具挂载为 mcp__qixin_insight__*，token 到期前自动刷新，断开时吊销。
 - [qphotoai/dsh-computer-use-windows](https://github.com/qphotoai/dsh-computer-use-windows) — 适用于 Windows 的 DeepSeek Harness Computer Use 插件，支持 UIA、cua-driver 和可选 GLM 视觉。
 - [qq1003240666/dsh-qingshi-plugin](https://github.com/qq1003240666/dsh-qingshi-plugin) — 青史日记与族谱助手：读写生涯记录、按称谓倒推亲属关系，并在独立窗口里操作真实 H5 页面。
+- [qq304379685/dsh-zentao-dashboard-x](https://github.com/qq304379685/dsh-zentao-dashboard-x) — 在 DSH 面板中展示禅道缺陷、任务与需求并支持修改，同时注册 4 个助手工具供会话使用。
 - [QqiqiQ/dsh-calculator](https://github.com/QqiqiQ/dsh-calculator) — 为 agent 提供 calculate 工具，内置零依赖表达式解析器（不用 eval），支持批量求值与金额精确小数模式。
 - [QSWWLTN/dsh-UEAssetsOperator](https://github.com/QSWWLTN/dsh-UEAssetsOperator) — 通过 Unreal 内置 Python 提供 .uasset 检查与受限蓝图节点编辑。
 - [quality-up/dsh-quality-up](https://github.com/quality-up/dsh-quality-up) — 管理制造质量问题和 8D 改进项目，分析过程能力与 SPC 控制图，并从本地 SQLite 数据库导出报表。
@@ -8131,6 +8136,7 @@ dsh plugin --profile web add dshmarket
 - [feifandiv/dsh-md-live-edit](https://github.com/feifandiv/dsh-md-live-edit) — 在右侧边栏的 Markdown 预览里直接编辑：点文本块就地改，⌘/Ctrl+Enter 保存写回文件；随时可切回内置只读渲染。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Flan246/dsh-latex-guard](https://github.com/Flan246/dsh-latex-guard) — 为 DeepSeek Harness 提供的 LaTeX 与 BibTeX 检查工具：编译检查（自动识别 xelatex/lualatex），基于 Crossref 的 BibTeX 条目去重与字段补全，以及 \cite 键与 .bib 文件的一致性审计。
 - [fly233338/dsh-overleaf](https://github.com/fly233338/dsh-overleaf) — 通过 OverleafMCP 将多个 Overleaf 项目接入 DSH，支持浏览、分析和通过 Git 写回 LaTeX 文件。
+- [Fruneng/dsh-share-session](https://github.com/Fruneng/dsh-share-session) — 把一个 DSH 会话中选定的轮次生成可分享的长图，可选包含思考过程和工具调用。
 - [FSNH/dsh-plugin-knowledge-base](https://github.com/FSNH/dsh-plugin-knowledge-base) — 个人本地知识库：树状目录、Office / PDF / 图片的原版式阅读、中英文全文检索（可选向量融合）、用视觉模型把图片描述成文字后也能搜；模型可通过三个只读工具列出、检索并读取文件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [gavinff1990/dsh-context-map](https://github.com/gavinff1990/dsh-context-map) — 把对话上下文分层渲染成信息架构图：目标、决策、动作、产物、风险与待确认一次成图，可导出 SVG、交互式 HTML 与 Mermaid Markdown。
 - [genius-alray/dsh-mermaid-render](https://github.com/genius-alray/dsh-mermaid-render) — Web UI 对话 mermaid 渲染插件：将消息中的 mermaid 代码块渲染为可交互图表卡片（缩放 / 适应宽度 / 全屏查看 / 预览代码切换），复用官方组件原语，渲染失败时保留原代码块并内联展示错误。
@@ -8859,6 +8865,7 @@ dsh plugin --profile web add dshmarket
 - [Dreamaniax/dsh-syn-config](https://github.com/Dreamaniax/dsh-syn-config) — 把 DSH 技能、profile 设置与 AGENTS.md 与私有 git 仓库对齐：状态灯、六节体检、拉取、密钥脱敏、快照后推送。默认演练，永不 rebase 或强推。
 - [Dreamaniax/dsh-weekly-retro](https://github.com/Dreamaniax/dsh-weekly-retro) — DSH 周报复盘：会话画像、重复劳动、技能候选与五 Tab 洞察页，数据只在本机。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [DrizzleGig/dsh-novel-beat](https://github.com/DrizzleGig/dsh-novel-beat) — 让故事怎么发展，由你决定！「拍板」帮助小说作者掌控全书剧情走向。人物命运、关系变化、秘密揭晓、重大转折，每一个重要选择都由你做主。你可以决定故事走哪条路，也能随时回看全书做过的选择，了解当初还有哪些可能。想改变剧情？右栏「拍板台」让你一眼看清全书决策，提前预览改动会影响哪些正文、设定和后续剧情，再安全回退、重新选择。过去的故事路线依然可以查看，不必害怕推翻旧决定。默认关闭，不写正文，每个选择都有迹可循。
+- [DrizzleGig/dsh-novel-fanfic](https://github.com/DrizzleGig/dsh-novel-fanfic) — 同人工作室：导入原著得到可核 canon（每条事实带章节、偏移、引文），把这一版有意的二创改动声明为「本作设定」，写作前编译场景契约，写作后按原著与设定检查。本作优先于原著；只报冲突，不自动改稿。默认关闭。
 - [Drkoh-wz/team-craft#team-flowise](https://github.com/Drkoh-wz/team-craft/tree/main/packages/team-flowise) — DSH 的多角色团队编排插件：给每个角色各自的模型、人设与工具，按依赖跑节点图，带独立评审与有上限的返工，并在界面里看进度。
 - [drliuhuan/dsh-plugin-folder-trust](https://github.com/drliuhuan/dsh-plugin-folder-trust) — 仅 Windows：新增工作区时授权一次，补齐 workspace-write 沙箱所需的 NTFS 权限，并把授权与 Low 完整性标签铺进已有子目录；修复过程带实时进度与日志。
 - [dryw/dsh-egm](https://github.com/dryw/dsh-egm) — 面向 DeepSeek Harness 的设计评审闸门，移植自 Google 的 Elephant-Goldfish Model：具备完整上下文的“大象”起草设计，再由零上下文的只读“金鱼”评审者严格审查，通过后才进入实现。注册的插件 id 为 `egm`，同一 profile 请只安装一个 EGM 插件。
