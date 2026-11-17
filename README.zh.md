@@ -280,6 +280,7 @@ dsh plugin --profile web add dshmarket
 - [AcidGr/dsh-web-mobile-fix](https://github.com/AcidGr/dsh-web-mobile-fix) — Web UI 移动端布局修复：窄屏下设置面板全屏化、插件导航单行排满、侧边栏全屏、弹层居中、会话日志按钮图标化。
 - [act27/dsh-3d-model-studio](https://github.com/act27/dsh-3d-model-studio) — 在 DSH 右侧栏文档预览里预览 GLB、glTF、FBX、OBJ、STL、PLY 模型；也能解析 HTML 页面或粘贴代码中运行时构建的 three.js 场景，支持完整场景导出和按个体分组导出为模型文件。
 - [actcwlf/dsh-any-preview](https://github.com/actcwlf/dsh-any-preview) — 预览 DSH 未覆盖的格式，包括音视频、3D 模型、压缩包、SQLite 与模型权重，并可在超大 CSV、日志与 JSONL 中搜索。
+- [AD199-gif/dsh-nav-tidy](https://github.com/AD199-gif/dsh-nav-tidy) — 隐藏选定的侧栏面板入口，但不卸载它们背后的插件。
 - [adcx222/dsh-enhance-prompt](https://github.com/adcx222/dsh-enhance-prompt) — 在 DSH 输入框工具栏加一个 ✨ 按钮，用一次无工具的单轮 LLM 调用把草稿改写成更清晰、更具体的提示词，再把结果写回输入框。
 - [addie-ace/dsh-livebench-rankings](https://github.com/addie-ace/dsh-livebench-rankings) — DSH 内的 LiveBench 能力排行榜：识别官网当前发布的榜单版本，再读取其官方 CSV 与分类 JSON，在由输入框按钮打开的独立同源 iframe 中渲染模型排名。支持搜索、机构／开放权重／推理模型筛选、按能力维度排序、任务级明细、最多 4 个模型并排对比与 CSV 导出；默认每 60 秒同步（可配 30–3600），缓存只写入插件自身的 .cache/rankings.json。
 - [AdilAlmahmoud/dsh-rtl-chat](https://github.com/AdilAlmahmoud/dsh-rtl-chat) — 为对话回答区域提供从右到左的阅读模式，并提供按钮一键切回从左到右。
