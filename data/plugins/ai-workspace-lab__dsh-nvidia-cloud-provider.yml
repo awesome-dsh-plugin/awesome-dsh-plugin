@@ -1,0 +1,6 @@
+url: https://github.com/ai-workspace-lab/dsh-nvidia-cloud-provider
+name: ai-workspace-lab/dsh-nvidia-cloud-provider
+category: model
+description:
+  en: "NVIDIA NIM cloud provider for DeepSeek Harness with model discovery, tool calling and reasoning stream."
+  zh: "为 DeepSeek Harness 提供 NVIDIA NIM 云端模型接入，支持动态模型发现、工具调用与思考流。"
