@@ -818,7 +818,7 @@ dsh plugin --profile web add dshmarket
 - [FurinaEsE/dsh-ui-zoom-regions](https://github.com/FurinaEsE/dsh-ui-zoom-regions) — DeepSeek Harness 分区域缩放：Ctrl + 滚轮分别为会话顶栏、左侧栏、会话正文和右侧面板设置独立比例（侧栏 25%–300%）；拖动顶栏整条下边界可以把它调矮或调高，调高只增加高度、字大小不变。
 - [FurinaLiF/dsh-tab-complete](https://github.com/FurinaLiF/dsh-tab-complete) — 使用 DSH 已配置模型预测下一句，在输入框显示灰字，Tab 仅填入草稿；结合当前时间理解旧对话，并缓存建议。
 - [FuriousKinght/dsh-restart-button](https://github.com/FuriousKinght/dsh-restart-button) — 在侧边栏底部加一个按钮（仅 Windows），一键重启 DSH 桌面应用，应用回来后页面自动恢复。
-- [furkancak1r/dsh-composer-plus](https://github.com/furkancak1r/dsh-composer-plus) — 一个插件集成多项输入框与侧边栏增强，均可在设置中单独开关：git 改动面板、回合回退、AIProxy 中断后继续、项目记忆（按项目保存笔记，后续对话会读取，默认关闭）、任务看板（按实时状态排列对话的看板）、助理（一个名为 Damon 的长期保留的对话，用 dsh 定时任务设置提醒并读取其他对话；只有在获得批准后才会更改对话）及助理提示框、助理始终空闲（较长步骤交给后台子代理）和助理播报对话动态（默认关闭）、远程电脑（通过 Tailscale 打开另一台 Mac 的 dsh，默认关闭）、11 种额外界面语言和自动更新。
+- [furkancak1r/dsh-composer-plus](https://github.com/furkancak1r/dsh-composer-plus) — 一个插件集成多项输入框与侧边栏增强，均可在设置中单独开关：git 改动面板、回合回退、AIProxy 中断后继续、顾问模型（智能体向你选择的另一个模型征求建议，默认关闭）、项目记忆（按项目保存笔记，后续对话会读取，默认关闭）、任务看板（按实时状态排列对话的看板）、助理（一个名为 Damon 的长期保留的对话，用 dsh 定时任务设置提醒并读取其他对话；只有在获得批准后才会更改对话）及助理始终空闲（较长步骤交给后台子代理）、远程电脑（通过 Tailscale 打开另一台 Mac 的 dsh，默认关闭）、11 种额外界面语言和自动更新。
 - [FurryBear2025/dsh-session-drag-move](https://github.com/FurryBear2025/dsh-session-drag-move) — 在 DSH 左侧栏把会话拖到别的工作区，归属真的会变：改写会话日志 header 的 cwd 并把日志目录迁到目标项目下，迁移过程中显示进度条。
 - [future007s/dsh-peak-indicator](https://github.com/future007s/dsh-peak-indicator) — 会话头部徽标：显示 DeepSeek 高峰/闲时状态、当前模型 token 单价，并按真实用量统计会话与每轮费用。
 - [Fyerl/dsh-2d-model-picker](https://github.com/Fyerl/dsh-2d-model-picker) — 使用二维网格，一次拖动同时选定模型与推理强度。
@@ -833,6 +833,7 @@ dsh plugin --profile web add dshmarket
 - [garrisonz/dsh-sidebar-width](https://github.com/garrisonz/dsh-sidebar-width) — 调整 Web UI 左侧会话列表栏宽度：调低 264px 拖动下限，可选调整拖动上限与展开默认宽度，启动时自动修补 ui-layout bundle。
 - [gbeta/dsh-token-speed](https://github.com/gbeta/dsh-token-speed) — 可拖拽环形表盘，实时显示模型输出速度（tok/s），点击展开每步详情（精确速度、TTFT、缓存命中率、缓存读写、推理/输入 token、模型、累计 token）。
 - [gcolt888/dsh-screenshot-hotkey](https://github.com/gcolt888/dsh-screenshot-hotkey) — 微信式截图标注，直接插进 DSH 输入框；系统级热键截图时不会把 DSH 弹到前台。仅支持 Windows；首次使用时用系统自带的 csc.exe 把随包的 C# 源码编译成辅助可执行文件。
+- [gcwarmman/dsh-sidebar-narrator](https://github.com/gcwarmman/dsh-sidebar-narrator) — 右侧栏三行话，说清它干完什么、在干什么、下一步干什么；另有只读提问、不打断的提醒、以及把代价讲清楚再喊停。
 - [GeekRicardo/dsh-balance](https://github.com/GeekRicardo/dsh-balance) — 输入框下方按 provider 展示 DeepSeek、Kimi Coding、OpenCode Go、智谱、MiniMax、OpenRouter、OpenAI Codex 的余额/用量，2 秒轮询、5 分钟缓存。
 - [GeekRicardo/dsh-convmap](https://github.com/GeekRicardo/dsh-convmap) — 主对话区左缘的对话地图刻度列：每条刻度是一轮用户提问，刻度由宿主直读会话完整日志得来，不受客户端分页窗口限制，长会话也是全量覆盖。hover 时邻近刻度按像素距离连续展开，右侧浮出该轮提问与最后一次回复的预览卡（可进卡滚动看完）；点击跳转到该轮，老轮次尚未渲染时先自动分页加载再跳；滚动对话时当前轮次的刻度保持高亮。
 - [geguanming/dsh-office-plugin](https://github.com/geguanming/dsh-office-plugin) — 把多 agent 会话的实时活动渲染成 Web UI 侧边栏里的像素风办公室--每个会话是一名牛/马员工，忙时伏案敲键盘、闲时起身摸鱼，支持点击查看工位监控、就地处理审批。
@@ -1820,7 +1821,7 @@ dsh plugin --profile web add dshmarket
 - [shinelon/dsh-workspace-group-plugin](https://github.com/shinelon/dsh-workspace-group-plugin) — 在侧边栏以自定义分组组织工作目录 - 拖拽变更分组与顺序、组内会话浏览与内容搜索，可一键切回官方工作区列表。
 - [Shiro-umi/dsh-system-monitor](https://github.com/Shiro-umi/dsh-system-monitor) — 输入框底栏监控插件，含 5 枚可拖拽重排胶囊（Context、Tokens、CPU、GPU、MEM）：20x5 上下文方格矩阵、当轮净上传/下载 Token 分步柱图，以及 200ms 原生 macOS Mach/IOKit 滚动柱状图与前 5 进程列表。原生采样器首次启动时现场编译，需要 clang（Xcode 命令行工具）；没有则退回每秒一次的采样。
 - [shizhouyu/dsh-sidebar-notes](https://github.com/shizhouyu/dsh-sidebar-notes) — 右侧栏 Markdown 记事本，与聊天并排，带格式工具栏与本地自动保存。
-- [shushuiu/dsh-bookshelf](https://github.com/shushuiu/dsh-bookshelf) — 按豆瓣「想读」书单排出的书架：封面与评分、与本地电子书自动配对，可在面板内阅读 EPUB/PDF/TXT，并支持公版书下载。
+- [shushuiu/dsh-bookshelf](https://github.com/shushuiu/dsh-bookshelf) — 按豆瓣「想读」和「在读」书单排出的书架：封面与评分、与本地电子书自动配对，可在面板内阅读 EPUB/PDF/TXT，并支持公版书下载。
 - [shuuul/dsh-bioviewer](https://github.com/shuuul/dsh-bioviewer) — 向 dsh-better-sidebar 注册 Mol* 文件预览器，支持 PDB、mmCIF、MRC 密度图、小分子和 Chimera .cmm 标记（含 .gz），并提供 BioViewer 工作区标签以及 bio_open / bio_add 工具。
 - [shyuan-hub/dsh-compact-button](https://github.com/shyuan-hub/dsh-compact-button) — 在上下文计量面板中添加「压缩上下文」与「新建会话」两个按钮：压缩按钮通过与手敲 /compact 相同的通道提交命令，新建会话按钮在同一 workspace 中开启新会话。
 - [shZhang1614/dsh-float-lamp](https://github.com/shZhang1614/dsh-float-lamp) — 悬浮在 DSH 应用之外的 Windows 状态灯：无边框置顶发光圆灯，背景完全透明——绿灯光晕呼吸表示运行中、橙灯抖动待授权、蓝灯漂浮待你交互、灰灯空闲、暗灰宿主离线；悬停逐行列出各会话正在运行的任务，可拖动记忆位置，插件被关闭后数秒内自动熄灭。
@@ -2295,6 +2296,8 @@ dsh plugin --profile web add dshmarket
 - [yfwu2020/dsh-recent-sessions](https://github.com/yfwu2020/dsh-recent-sessions) — 在侧栏「设置」上方加一行入口，展开后最近会话以浮层压在工作区列表上方：按最后活动时间排序、每行带运行状态、高度可拖、滚动停下后自动对齐到整行。浮层不画自己的底色，展开后仍像侧栏的一部分。
 - [yfwu2020/dsh-selection-explain](https://github.com/yfwu2020/dsh-selection-explain) — 在 DSH Web 界面划词，小窗流式给出翻译，并结合这段文字所在的会话上下文解释它在这里的具体含义；面板带可回放的历史记录，也能一键升格为正式会话。
 - [yfwu2020/dsh-think-flow](https://github.com/yfwu2020/dsh-think-flow) — DSH Web 右侧栏的思维链面板：把每个会话的实时思考折成 turn → step 分组，每一步带该步的思考原文与工具调用。默认只展开最新一轮，更早的轮次收成一行；步骤按本地规则合并成阶段块，正在等工具的那一步单独标出，工具失败显示原因，思考原文按步按需取回，全轮目录在本地搜索轮次标题、用户原话与轮号，整轮可用一次模型调用生成中文标题。
+- [yggizz/dsh-plugins#dsh-artifact-copy](https://github.com/yggizz/dsh-plugins/tree/main/packages/dsh-artifact-copy) — 在对话里的文件右键菜单加三项：复制相对于该会话工作目录的路径、复制文本内容、以及把文件本体复制成原生剪贴板文件（Windows CF_HDROP、macOS 文件对象、Linux text/uri-list），可直接粘贴进资源管理器、访达、聊天窗口或邮件草稿。目录右键时第三项变成「复制文件夹」。交付卡片、行内文件引用和侧边栏文件树共用同一份菜单；后两项是浏览器页面自己做不到的事。插件只响应本机回环请求，局域网来源无法驱动剪贴板；内容复制上限 1 MiB，非文本文件该项置灰。
+- [yggizz/dsh-plugins#sidebar-pins](https://github.com/yggizz/dsh-plugins/tree/main/packages/sidebar-pins) — 记住你在左侧栏取消了哪些面板入口，每次启动重新应用同一个选择，收起来的入口不会又变回一排按钮。它不新增任何界面元素，只恢复侧栏本来的显示状态；不联网，也不写 profile 以外的文件。关掉插件后侧栏回到 DSH 默认行为，已保存的选择不会被删掉。它只管「取消过哪些」，面板排序、分组、搜索、拖拽这类完整侧栏管理是另一类插件。
 - [Ygritteee/dsh-ygritte-boot](https://github.com/Ygritteee/dsh-ygritte-boot) — 给 DSH 加一段「冰与火」全屏开机片头：冰霜→余烬的启动动画、双语打字机日志与发丝进度线，随后是 Ygritte 的五步身份授权。Esc 跳过，Enter/点击快进，设置页可切换关闭/简易/完整或随时重播；首帧由宿主半边在文档解析阶段就注入，DSH 自带的 Loading 卡片不会露脸。
 - [yhPrime/dsh-sidebar-guide-scroll](https://github.com/yhPrime/dsh-sidebar-guide-scroll) — 右侧栏「开始」页的工具卡片超出可视区域时让页面可滚动，并按需显示滚动条。
 - [yhPrime/dsh-sidebar-left-split](https://github.com/yhPrime/dsh-sidebar-left-split) — 把左侧栏「面板列表」与「工作区」之间的交接做成按行磁吸的可拖动分隔条，面板列表被压小时自动出滚动条。
@@ -3054,6 +3057,7 @@ dsh plugin --profile web add dshmarket
 - [ycm50/dsh-subscribe-meter#dsh-opendesign-go-meter](https://github.com/ycm50/dsh-subscribe-meter/tree/main/packages/dsh-opendesign-go-meter) — dsh-cost-meter 的 OpenDesign Cloud 定制版：本会话与当日费用、39 个 OpenDesign 模型价格目录、OpenDesign Cloud 额度（联动官方 funding-check 接口，5 小时 / 7 天两档已用/全部进度条）、Coding Plan 额度、自定义 Provider 余额、峰谷计价提醒，界面中英双语。 额度卡需要 OpenDesign Cloud 账号（插件内置登录），且它与 Han-1413141/dsh-cost-meter 及同仓库其它变体提供同一个 service:cost-meter，只能装一个费用统计插件：本条目替代 dsh-cost-meter 安装，不能与上游同装。
 - [Yeoksin/dsh-usage-wallet](https://github.com/Yeoksin/dsh-usage-wallet) — dougen/dsh-deepseek-usage 的非官方分支（基线 v0.16.0）：侧边栏余额与配额卡片，显示当前模型提供商的账户读数：DeepSeek、Moonshot、Z.ai、OpenRouter、Kimi、MiniMax、OpenCode；并为 qwen-token-plan 读取阿里云代金券余额（BSS OpenAPI + AccessKey），为小米 MiMo 读取控制台余额与套餐用量（控制台 Cookie）。另提供各提供商查询状态页与每 token 单价。不要与上游 dsh-deepseek-usage 同装：两者会渲染同一张侧边栏卡片。
 - [yflmq001/dsh-cost-tracker](https://github.com/yflmq001/dsh-cost-tracker) — 按模型追踪 token 成本：可配置缓存命中/未命中、输出与高峰时段单价，实时会话花费条，并标记未配置价格的模型。
+- [yggizz/dsh-plugins#dsh-workbuddy-turn-credits](https://github.com/yggizz/dsh-plugins/tree/main/packages/dsh-workbuddy-turn-credits) — 在每轮回复的动作行里显示这一轮实际花了多少：走 WorkBuddy 的会话显示 credits，走 DeepSeek 官方线路（账号登录或 API Key）的会话显示人民币金额。它是测量而不是估算——每轮开始与结束时各读一次对应余额，差值就是这一轮的扣费——因此每轮多两次只读余额查询（不消耗额度），并在结束时多等约 1 秒让上游结算。换号、并发请求或余额尚未结算时显示破折号而不是编造数字；不使用这几条线路的会话不显示这一行。它会读取 DeepSeek 余额接口与 WorkBuddy 的 credits 路由，Host 侧只响应本机回环请求。
 - [Yhx888/dsh-free-egg-credits](https://github.com/Yhx888/dsh-free-egg-credits) — 在 DSH 侧边栏看 WorkBuddy / Qoder 账号积分、今日额度、签到状态与每轮消耗（WorkBuddy 已知单价时按输入 / 缓存 / 输出分类型折算）；配置 new-api 后可一键切换优先消耗平台。需本机运行 WorkBuddy2API 或 Qoder 网关。
 - [yijiezhong/dsh-output-setting](https://github.com/yijiezhong/dsh-output-setting) — 自动展开思考与工具卡片，调整代码块字号与行距，并可选择模型输出语言（自动、中文或 English）。
 - [Yinxe/deepseek-harness-plugins#archive/token-meter](https://github.com/Yinxe/deepseek-harness-plugins/tree/main/archive/token-meter) — DSH 额度与用量统计统一视图：多供应商滚动/按量额度（侧边栏卡片 + 供应商运维），外加会话日志 token 聚合（趋势、热力图、按模型拆分）。已归档并冻结在固定版本：作者不再为它适配新版 DSH。
@@ -4925,6 +4929,7 @@ dsh plugin --profile web add dshmarket
 - [solstice621/dsh-plugin-projectless](https://github.com/solstice621/dsh-plugin-projectless) — 无需选择项目文件夹即可开始对话，为每次聊天分配持久工作目录，并沿用 Harness 原生会话存储。
 - [Som2233/dsh-session-task-tags](https://github.com/Som2233/dsh-session-task-tags) — 为每个会话标记长期任务或短期任务、记录创建时的 Agent 模式，并在你设定的归档时间窗结束后自动归档。
 - [SonettoGu14/dsh-session-smart-rename](https://github.com/SonettoGu14/dsh-session-smart-rename) — 把会话命名成「分类 · 主题」：侧边栏菜单读对话、让会话所用的模型给出分类与主题并预填可编辑的标题；另有一个 smart_rename_session 工具，让 agent 在话题切换时自己改名。
+- [soso-deepseek-harness-plugins/dsh-context-track](https://github.com/soso-deepseek-harness-plugins/dsh-context-track) — 把一次 agent 会话的上下文收成可展开的树：轮次、模型步骤、工具调用、子会话、会话命名、上下文压缩与检索，点开每个节点可看这次调用的输入、输出、token 用量、缓存命中率与耗时。
 - [SouthM/dsh-nanshan-session-manager](https://github.com/SouthM/dsh-nanshan-session-manager) — 浏览、筛选、按 ID 搜索、删除、恢复、导出和导入本机全部会话。它的 HTTP 路由没有 DSH 的访问检查，而这些路由可以删除和恢复本地会话。
 - [southsnowL/dsh-bulletin#dsh-bulletin-dispatch](https://github.com/southsnowL/dsh-bulletin/tree/main/plugins/dsh-bulletin-dispatch) — 同一台电脑上会话之间的「单子」：会话用标题里的编号前缀表明自己属于哪张桌；单子投给某张桌，由那张桌最先开始干活的那个会话取走 —— 桌是地址，路过的会话不会收到它。
 - [SpaceRelay/dsh-subagent-control#dsh-find-session](https://github.com/SpaceRelay/dsh-subagent-control/tree/main/dsh-find-session) — 在当前对话或所有会话里按关键词查找，命中可高亮、可跳转。
@@ -6868,6 +6873,7 @@ dsh plugin --profile web add dshmarket
 - [suomir1995/dsh-link-collect](https://github.com/suomir1995/dsh-link-collect) — 把收藏的链接存成你指定文件夹里的 Markdown 文件，带侧栏页面管理收藏夹与链接、全库搜索、自动抓取图标，以及三个 agent 工具。
 - [supart/DSH-FHL-Image-Plugin](https://github.com/supart/DSH-FHL-Image-Plugin) — 为 DeepSeek Harness 提供 FHL Images 生图与多参考图编辑，含三个 Agent 工具、最多十个 API Key Worker 的池，以及聊天内配置 Key。
 - [super-ding/dsh-influxdb](https://github.com/super-ding/dsh-influxdb) — DeepSeek Harness 的 InfluxDB 2.x 插件：6 个智能体工具加一个侧边面板，可执行 Flux 查询、查看 schema 与 bucket、管理连接、写入 line protocol。
+- [Super-QAQ/dsh-prompt-library](https://github.com/Super-QAQ/dsh-prompt-library) — 提示词库：保存常用提示词，在输入框旁的面板里搜索、按标签筛选、插入草稿或复制；可从链接用默认模型提取提示词，并为条目记录技能/插件依赖；Agent 通过 prompt_* 工具读写同一份数据。
 - [superdesigndev/treg](https://github.com/superdesigndev/treg) — 给 Agent 的工具目录：按「要做的事」检索约 2,600 个外部接口（SEO 与 SERP、外链、社交、人物与公司信息补全、广告库、抓取），查看参数与单次调用价格后直接调用，凭据由服务端注入。附带技能，MCP 行在未设置 TREG_TOKEN 前保持禁用。
 - [Sur-Cai/macos-computer-use-kit#dsh](https://github.com/Sur-Cai/macos-computer-use-kit/tree/main/packages/dsh) — DeepSeek Harness 的 macOS computer use：基于无障碍树的稳定 ref 定位、后台输入、Unicode 输入、菜单与应用、set-of-mark 截图、本地 OCR 与动作校验——11 个工具桥接 macos-cu CLI。
 - [suyunxing/dsh-draw-mode](https://github.com/suyunxing/dsh-draw-mode) — 把 ComfyUI 接给 agent：五个 draw_* 工具（状态、工作流、模型、生图、反推）与侧栏面板。插件本身不带任何工作流、也不假设你用什么模型：放进工作流目录的每个 API 格式 JSON 都会被自动检查，找出 prompt / 负向提示词 / 宽高 / steps / cfg / 种子 / LoRA 落位，可用同名 sidecar 文件覆盖检测结果；LoRA 能插进任意连线图。所有路径都可配置、可在面板里改并保存到设置文件，因此对着远程或已经开着的 ComfyUI 也能用。无头自动启动与空闲关闭默认关闭，需自行开启。
