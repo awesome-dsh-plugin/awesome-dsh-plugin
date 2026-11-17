@@ -1,0 +1,6 @@
+url: https://github.com/hexiao160705-dev/dsh-account-ring
+name: hexiao160705-dev/dsh-account-ring
+category: usage
+description:
+  en: 'Sidebar balance and quota ring: DeepSeek wallet, Codex plan windows, Volcengine Agent Plan AFP quota and cash balance through a local ve login, and live model-provider rows for LobeHub and other configured DSH providers; tokens and account identifiers stay in the host.'
+  zh: '侧栏余额与额度圆环：DeepSeek 钱包、Codex 套餐窗口、本机 ve 登录读取的火山方舟 Agent Plan AFP 额度与现金余额，以及按 DSH 模型目录实时增减的 LobeHub 等供应商行；令牌与账号标识只留在 Host。'
