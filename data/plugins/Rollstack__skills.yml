@@ -1,6 +1,6 @@
 url: https://github.com/Rollstack/skills
-name: Rollstack/skills
+name: Rollstack
 category: docs
 description:
-  en: Build decks from your company's data, and refresh, schedule and send reports, with Rollstack's MCP server and skills. Needs a Rollstack account and an API key in ROLLSTACK_API_KEY.
+  en: Build decks from your company's data, and refresh, schedule and send reports, with Rollstack's MCP server and skills. Requires a Rollstack account and a Rollstack API key.
 icon: https://raw.githubusercontent.com/Rollstack/skills/main/assets/icon.png
