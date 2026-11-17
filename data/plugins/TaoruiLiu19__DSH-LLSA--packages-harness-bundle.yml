@@ -1,0 +1,7 @@
+url: https://github.com/TaoruiLiu19/DSH-LLSA/tree/main/packages/harness-bundle
+name: TaoruiLiu19/DSH-LLSA#harness-bundle
+category: workflow
+description:
+  en: Run local multi-agent work orders in DeepSeek Harness with Super-agent delegation and review, LeanLink handoffs, and browsable evidence and usage history.
+  zh: 在 DeepSeek Harness 中运行本机多智能体工单，由 Super-agent 分派和验收，通过 LeanLink 精简回传并查看原始证据和用量。
+tarball: https://github.com/TaoruiLiu19/DSH-LLSA/releases/download/v0.4.2/dsh-llsa-harness-bundle-0.4.2.tgz
