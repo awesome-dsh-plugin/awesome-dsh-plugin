@@ -7102,6 +7102,7 @@ dsh plugin --profile web add dshmarket
 - [yffo/dsh-operator](https://github.com/yffo/dsh-operator) — 装一次、所有 DSH 会话可用的 Computer Use 插件：截屏、鼠标键盘、启动应用、计划与技能回放、审计日志、危险动作守卫、后台代码代理，以及面向无障碍树缺失应用的 OCR 工作流（文字与坐标）。仅 macOS 已验证：Windows 只有未验证的基础 GUI 后端，Linux 没有桌面后端（调用报 unsupported_platform），窗口/AX/浏览器/剪贴板工具只在 macOS 注册。
 - [ygunoil/dsh-va-studio](https://github.com/ygunoil/dsh-va-studio) — 接入 VA Studio：10 个工具，生成短剧、图片、视频、小说与剧本，并从图片或视频反推提示词。需运行中的 VA Studio 后端。
 - [yh01010/dsh-mcp-matlab](https://github.com/yh01010/dsh-mcp-matlab) — 将本地 MATLAB MCP server 桥接进 DSH，提供 mcp__matlab__* 工具：执行 MATLAB 代码、运行 .m 脚本与测试、查看已安装工具箱。需要自备 MATLAB 与 MathWorks 官方 MATLAB MCP Server 可执行文件，且安装后需填一次路径——只装插件不会出现工具。
+- [yh01010/dsh-mcp-tia](https://github.com/yh01010/dsh-mcp-tia) — 把本机的博途（TIA Portal）Openness MCP server 桥接进 DSH，提供 mcp__tia__* 工具：读取项目树与块、查交叉引用、把块逻辑读成文本，以及导入并编译 SCL/LAD 文档。需要 Windows 上的博途与 Openness 用户组、一个第三方 Openness MCP server（例如 bulaofen0036-coder/TIA_Portal_Openness_MCP），且安装后需填一次路径——只装插件不会出现工具。
 - [yhm138/dsh-image-rescue](https://github.com/yhm138/dsh-image-rescue) — 图片单边超过 8192px（或总像素超限）导致整条消息被拒收时，把超限图片按原始字节存为普通文件、把只读路径交给模型，不缩放不转码，便于无损查看或转换（如长截图、扫描件转 PDF）。
 - [yhy854/dsh-calc-tool](https://github.com/yhy854/dsh-calc-tool) — 计算器工具：手写递归下降解析器求值算术表达式，不使用 eval 或 new Function，标识符白名单、长度与嵌套上限、结构化错误码。
 - [Yijian-quiet/dsh-mol#dsh-bundle](https://github.com/Yijian-quiet/dsh-mol/tree/main/dsh-bundle) — 把 dsh-mol 的 stdio MCP 服务（基于 RDKit，不联网）接进 DSH profile。它提供 12 个工具：三级 SMILES 校验（人话诊断 + 字符定位）、分子性质、类药性与结构警报、结构图渲染（PNG/SVG）、多分子拼图、格式互转（SMILES/InChI/InChIKey/MOL/SDF/分子式）、标准化（逐步记录改了什么）、去重、SMARTS 子结构匹配、指纹相似度，以及逐条报告失败行的批量清洗。本 patch 只负责注册服务；工具实现在本仓库的 Python 包中，需先安装——README 给了 pip 与源码两条路线，包上架 PyPI 之前，源码那条是可用的。
@@ -10736,6 +10737,7 @@ dsh plugin --profile web add dshmarket
 - [taxueseek/dsh-plugin-guard](https://github.com/taxueseek/dsh-plugin-guard) — DSH 插件的静态安全闸门与诊所：安装前静态审计、安装后哈希与能力锁定、本机指纹库与 GitHub dsh-plugin 主题的同类搜索、机械式剥离清理；永不执行目标插件。
 - [TecFancy/dsh-auth-gate](https://github.com/TecFancy/dsh-auth-gate) — DSH 网页端登录门插件：账号口令或共享令牌认证、会话 cookie、登录限速，附用户管理 CLI（0.4.1 起声明 dsh.bundle manifest，`dsh plugin add` 一键挂载）。
 - [TGYD-helige/dsh-plugins#dsh-policy](https://github.com/TGYD-helige/dsh-plugins/tree/main/packages/dsh-policy) — 根据可配置的允许、拒绝和审批规则控制 dsh 工具调用，包括对 shell 命令的匹配。
+- [Tirpitz-39/dsh-no-guess](https://github.com/Tirpitz-39/dsh-no-guess) — 模型思考里承认在猜用户意图时，拦下工具调用，强制先问清「要干什么 + 要怎么干」。
 - [toby-bridges/api-relay-audit](https://github.com/toby-bridges/api-relay-audit) — 从 DeepSeek Harness 对 AI API 中转站和 LLM 代理运行本地安全审计，生成 Markdown 报告，覆盖提示词注入、模型替换信号、工具调用改写、错误泄漏、流完整性和按 profile 启用的 Web3 风险。
 - [Top-Celestial-Company-Ltd/dsh-dros-vajraclaw](https://github.com/Top-Celestial-Company-Ltd/dsh-dros-vajraclaw) — DSH 本機工具調用防護外掛：攔截高風險 Shell 指令模式與敏感憑證讀取，具備持久化哈希鏈 JSONL 審計記錄，可選配外部 Gateway 集中治理。
 - [truelove-dreamer/dsh-plugin-vetting](https://github.com/truelove-dreamer/dsh-plugin-vetting) — 为了您的电脑安全，装插件前先体检：静态扫描恶意模式（外传/凭据/混淆/持久化）与高权限误用，覆盖传递依赖与官方包哈希基线（防供应链篡改），可选插件工具调用闸。
