@@ -605,6 +605,7 @@ dsh plugin --profile web add dshmarket
 - [CVEO/dsh-digital-earth](https://github.com/CVEO/dsh-digital-earth) — 数字地球：在对话旁边打开三维地球，加载城市模型或实景三维数据就能浏览；量距离、截图、做淹没和日照分析，也可以一句话让 AI 代劳（支持 3D Tiles / 3DGS）。
 - [cxv117793-blip/dsh-sidebar-overflow](https://github.com/cxv117793-blip/dsh-sidebar-overflow) — 在侧边栏主导航列表末尾放一行「更多」，每个入口单独决定留在外面还是收进去：菜单列出全部入口，一行一个开关，两个方向的切换都只要点一下；入口多了能用搜索框筛，一个「全部恢复」把两类键一起清空。底部工具区的按钮也能收，插件入口锁死不可收；选择写进 profile 配置，DSH 重启后照样生效。
 - [CXZAAA/dsh-radio](https://github.com/CXZAAA/dsh-radio) — 在 composer 状态行加一条 24px 胶囊，播放 7 个预置网络电台；带实时频谱、Nightride FM 与 Radio Paradise 的当前曲目，并记住音量和上次电台。
+- [CYF736222347/dsh-workspace-status-board](https://github.com/CYF736222347/dsh-workspace-status-board) — 把 DSH 侧边栏工作区改成按「需要介入 → 执行中 → 已完成」排序的状态看板：提供工作区/任务搜索、同状态内拖拽排序、任务归档与恢复，并用三种醒目状态标识实时更新。
 - [cyh3436332528/dsh-float-chat](https://github.com/cyh3436332528/dsh-float-chat) — 把 DSH 的侧边对话弹成一个无边框、可置顶的 Windows 独立浮窗，可覆盖在其他应用之上；自带设置页，可调外观、置顶、记忆窗口几何、不透明度、即用即焚与缓存清理。
 - [cyjyyd/dsh-ssh-tui](https://github.com/cyjyyd/dsh-ssh-tui) — 跳板机与高延迟 SSH 上的 DeepSeek Harness 终端：纯 ANSI、增量重绘；SSH 掉线后会话不丢，可用 --resume 接回。
 - [cyrus123456/dsh-johari-cognition-quadrant-dialog-composer](https://github.com/cyrus123456/dsh-johari-cognition-quadrant-dialog-composer) — 乔哈里认知四象限对话梳理工具——在输入框上方添加按钮，弹出 2×2 象限面板（我知道/不知道 × AI知道/不知道），将对话上下文梳理为结构化 Prompt 并写回输入框。
@@ -6199,10 +6200,15 @@ dsh plugin --profile web add dshmarket
 - [it-glen/dsh-mcp-manager](https://github.com/it-glen/dsh-mcp-manager) — 面向 DSH 的 MCP 服务器管理器：在面板中增删改、启用或停用 Model Context Protocol 服务器，支持 stdio 与 streamable-HTTP 两种传输、按服务器设置工具调用超时、实时查看连接状态与工具数量，并持久化到项目级或主目录的 mcp.json。@wingsky-1/dsh-mcp-manager 的维护分支。
 - [iTanzhao/dsh-d365-kit](https://github.com/iTanzhao/dsh-d365-kit) — 面向 Dynamics 365 CE / Dataverse 的 DSH 工具箱：15 个工具，支持跨环境查询元数据与解决方案层、快照与差异、字段影响面反查、迁移风险评估、GitLab MR 检查、契约漂移、环境健康，以及需人工确认的元数据写入。
 - [ItLeLeYa/dsh-pdl-center](https://github.com/ItLeLeYa/dsh-pdl-center) — PDL 井数据整理加载中台：以批次工作台与六步向导驱动 PDL 引擎，把原始井资料按井归集、汇总成交付表，并导出 GeoEast 可直接导入的加载包，附带运行记录与参考库。
+- [ityyq777/dsh-workbench#calendar](https://github.com/ityyq777/dsh-workbench/tree/main/packages/calendar) — DSH 日历：本地日历、事件、参与人与提醒，工作台 agent 可搜索。
+- [ityyq777/dsh-workbench#connector](https://github.com/ityyq777/dsh-workbench/tree/main/packages/connector) — DSH 连接器：定义 RSS/Webhook 来源并同步条目进工作台，凭据留在本机，按来源查看运行记录。
+- [ityyq777/dsh-workbench#contacts](https://github.com/ityyq777/dsh-workbench/tree/main/packages/contacts) — DSH 联系人：本地通讯录，支持分组、多值字段、搜索与 vCard 导入导出。
 - [ityyq777/dsh-workbench#mail](https://github.com/ityyq777/dsh-workbench/tree/main/packages/mail) — DSH 邮件：IMAP 只抓最近邮件头，SMTP 发纯文本，账户密码由保险箱托管（只存 secretId）。
+- [ityyq777/dsh-workbench#message](https://github.com/ityyq777/dsh-workbench/tree/main/packages/message) — DSH 消息中心：给 agent 与其他插件统一的消息发送入口，收件箱、未读数、统计与可配置提示音。
 - [ityyq777/dsh-workbench#sites](https://github.com/ityyq777/dsh-workbench/tree/main/packages/sites) — DSH 站点收藏：目录树、每个站点多条链接、标签与筛选，支持按目录浏览。
 - [ityyq777/dsh-workbench#storage](https://github.com/ityyq777/dsh-workbench/tree/main/packages/storage) — DSH 储物：记录名称、品牌、位置、单位、库存文本与标签，本地 SQLite 保存，可选元数据同步。
 - [ityyq777/dsh-workbench#tags](https://github.com/ityyq777/dsh-workbench/tree/main/packages/tags) — DSH 标签管理：创建、搜索、删除标签，支持软删除与条目映射，供任务、站点与储物插件使用。
+- [ityyq777/dsh-workbench#vault](https://github.com/ityyq777/dsh-workbench/tree/main/packages/vault) — DSH 凭据保险箱：密码与 token 用 scrypt 派生密钥 + AES-256-GCM 加密，只存本机，agent 只见掩码。
 - [izwarm195/dsh-net-tools](https://github.com/izwarm195/dsh-net-tools) — 让沙箱里的 agent 通过你的本地代理联网：net_fetch 抓取网页，net_proxy_status 查看代理状态。
 - [Jack7510/ggb-plugins-dsh](https://github.com/Jack7510/ggb-plugins-dsh) — 把中英文二维数学题变成经核验、可交互的 GeoGebra 文件；核验失败不交付。
 - [jackheather/dsh-self-learn](https://github.com/jackheather/dsh-self-learn) — 把 B 站视频、网页、本地文件和直播变成可检索的学习库：本地转写、画面 OCR、抽取式摘要，每个来源交回约 1.5KB 文本，让模型读摘要而不是全文。
@@ -8854,6 +8860,7 @@ dsh plugin --profile web add dshmarket
 - [intelfabs/dsh-scheduled-message](https://github.com/intelfabs/dsh-scheduled-message) — 给 DSH 输入框里正在写的消息（文本、图片、文件）设定发送时间，由 Host 投递，关掉标签页也会发；DSH 关闭期间到点的消息会在下次启动时发送并标记为延迟。勾选重复则改为创建 DSH Automation 任务。选用 DeepSeek 模型、且所选时间落在其工作日高峰时段时，会多一行橙色价格提示。
 - [Intelli-Jungle/dsh-agentroom](https://github.com/Intelli-Jungle/dsh-agentroom) — Slack 风格共享聊天室，支持独立 DSH 原生会话、并行提及、有次数限制的 Agent 接力、文本附件和会话导出。
 - [ishuowang/dsh-agent-team-room](https://github.com/ishuowang/dsh-agent-team-room) — 在不合并对话历史的前提下，将多个独立 DSH Session 与 provider-backed 成员组成持久原生 Room，支持绑定精确成员身份的行首 `@` 提及、定向投递、广播和 Leader 权限控制。
+- [ityyq777/dsh-workbench#automation](https://github.com/ityyq777/dsh-workbench/tree/main/packages/automation) — DSH 自动化：按定时、域事件或手动触发白名单 action，含模板、条件、限频与运行记录。
 - [ityyq777/dsh-workbench#tasks](https://github.com/ityyq777/dsh-workbench/tree/main/packages/tasks) — DSH 任务管理：任务树、八个视图、优先级、截止日、时间线/重启链、批量归并与迁表。
 - [Jackywxsz/DSH-Creator](https://github.com/Jackywxsz/DSH-Creator) — 面向 DSH 的本地内容生产与运营工作台：管理灵感、脚本、媒体资产、档期、目标、发布状态和发布后复盘。
 - [jakehemmerle/dsh-aris-better](https://github.com/jakehemmerle/dsh-aris-better) — 新增一个 ARIS agent preset，加载 84 个 ARIS 研究工作流技能，并让评审者作为会话内子代理、使用与会话模型不同的模型族运行；其他 preset 不变。本插件是 wanshuiyin/Auto-claude-code-research-in-sleep 的 dsh-aris 分支的 fork：应当替代上游 dsh-aris 安装，不能与上游同装——两者注册同一组 mcp__codex__codex 评审工具和同名 ARIS 技能。
