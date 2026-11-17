@@ -1850,6 +1850,7 @@ dsh plugin --profile web add dshmarket
 - [siberiah2o/dsh-plugin-terminal](https://github.com/siberiah2o/dsh-plugin-terminal) — 底部多标签终端面板（node-pty + xterm.js）：贴底全宽，输入框始终在终端上方。
 - [Sillykjs/dsh-agents-md](https://github.com/Sillykjs/dsh-agents-md) — 在对话页签栏新增「智能体文档」页签：列出当前会话实际加载的 AGENTS.md / CLAUDE.md / AGENTS.local.md / CLAUDE.local.md 指令文件（~/.dsh 与 ~/.agents 两个全局根，以及项目根到工作区的每一级目录），以 Markdown 预览并显示各文件大小与 64 KiB 指令预算，点「编辑」可就地改写、保存前做 sha256 内容冲突校验，点击工作区路径会在文件管理器中打开；保存后从下一条消息生效。
 - [simmon-clap/dsh-intelligent-ui](https://github.com/simmon-clap/dsh-intelligent-ui) — 把 DeepSeek Harness 对话里的回答渲染成可交互卡片，内置 24 个白名单组件和回合尾部持久卡片。
+- [Sinales733/dsh-motion](https://github.com/Sinales733/dsh-motion) — 让 DeepSeek Harness 的运行指示器更灵动：鲸尾在原版摆尾、官方的旋转 / 转身 / 划水、举尾下潜、喷水之间无缝轮换，全程不停住；工具调用的图标让 DSH 原图标的部件动起来，完成时画一圈细环。
 - [SiriLee/dsh-approval-hotkeys](https://github.com/SiriLee/dsh-approval-hotkeys) — Web UI 面板快捷键：在审批、提问、计划审查等交互面板上，Enter 触发确认操作、Esc 触发取消操作。
 - [SiriusWJ/dsh-screenshot-button](https://github.com/SiriusWJ/dsh-screenshot-button) — 在 DSH 输入面板工具行加一个相机按钮，点击调起系统自带截图工具（Windows 截图工具已实测；macOS screencapture、Linux GNOME Screenshot / Spectacle / scrot 未实机验证，scrot 需 wl-copy 或 xclip），截图进剪贴板后按 Ctrl+V 粘贴；宿主路由只接受 Host 为本机回环地址的 POST。
 - [SivanCola/dsh-note](https://github.com/SivanCola/dsh-note) — 本地 Markdown 笔记库：两栏布局（目录树或列表 + 编辑器，视图菜单收在列表头）、分栏实时预览、标签、收藏与置顶、聚合全库复选框并回写文件的待办中心、全文搜索、右侧栏工作区笔记、会话沉淀成笔记、把笔记插入对话、把回答保存为笔记、跳回来源回答的链接、笔记库目录与字号设置，以及四个 note_* 工具。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
@@ -8044,6 +8045,7 @@ dsh plugin --profile web add dshmarket
 - [scarf1985566475-cloud/dsh-voice](https://github.com/scarf1985566475-cloud/dsh-voice) — 本机英译中同声传译：用 Qwen3-ASR 在本地识别中英文并生成双语字幕，同时存档会议记录、生成纪要与导出 Obsidian。
 - [Schumchanvi/dsh-voice-input-cn](https://github.com/Schumchanvi/dsh-voice-input-cn) — 国内可用的输入框语音输入。需要先启动本地 Python bridge（pip install dashscope websockets，运行 bridge/voice-bridge.py）——只装插件不可用。浏览器麦克风采集 16kHz PCM 流式转发给 bridge，由阿里云 DashScope ASR（paraformer-realtime-v2）识别；识别文字在光标处实时填入草稿，静音自动停止，可选识别后自动发送。
 - [shimingming520/dsh-audiogen](https://github.com/shimingming520/dsh-audiogen) — 面向 DeepSeek Harness Web 的 AI 音频插件 —— 多厂商 TTS、音乐、音效与音色设计，含侧边栏面板、模型对比、资源库与 Agent 工具。
+- [Sinales733/dsh-music](https://github.com/Sinales733/dsh-music) — 把你正在听的歌（Spotify、网易云音乐、QQ 音乐、酷狗等）带进 DeepSeek Harness：运行指示器和输入框下显示逐字点亮的歌词；封面小胶囊点一下播放或暂停，滚动滚轮切歌；输入框的光环和窗口边缘跟着节拍发光；窗口底下流动着封面颜色；鲸尾跟着鼓点摆；AI 等你批准时播放器音量自动调低。仅限 Windows；歌词来自网易云、QQ 音乐、酷狗和 LRCLIB。
 - [songshun1021/workfiles-assistant](https://github.com/songshun1021/workfiles-assistant) — 给 DeepSeek Harness 的 macOS 语音资料助手。只记录你勾选的应用最近 7 天的前台线索，只在你批准的资料文件夹里按名称和正文检索，说一句记得的内容就能找回并打开最近看过的文件或网页。窗口标题和 HTTPS 地址需逐应用额外同意；不截图、不做 OCR，也不读剪贴板或浏览器历史数据库。
 - [sorooy/dsh-read-aloud](https://github.com/sorooy/dsh-read-aloud) — 用 MiniMax 音色朗读 DeepSeek Harness 的回复，每条回复一个喇叭按钮，支持每轮自动朗读与发消息立即打断。
 - [STARDUSTLC666/dsh-voice](https://github.com/STARDUSTLC666/dsh-voice) — 语音五工具：edge-tts 免费微软神经语音合成、OpenAI 兼容 ASR 转写、音色清单、批量音色试听与健康自检。
@@ -9697,7 +9699,7 @@ dsh plugin --profile web add dshmarket
 - [br1nosense/dsh-wxauto-plugin](https://github.com/br1nosense/dsh-wxauto-plugin) — 基于 wxauto4 的微信自动化插件：任务进度微信推送、消息监听（关键词自动回复）、微信⇄DSH 双向桥，设置页开关与配置。
 - [bululuburuarua666/dsh-herald](https://github.com/bululuburuarua666/dsh-herald) — 三通道任务通知：页内浮层与提示音、浏览器系统横幅、宿主直发系统通知（浏览器关闭也送达），附铃铛面板与持久历史。
 - [c1overzz/dsh-bili-scroll](https://github.com/c1overzz/dsh-bili-scroll) — 让你的 DSH 自己刷 B站 —— 读字幕原文挑内容、写日报，遇到值得看的会发评论 @ 你。
-- [c3115644151/dsh-inbox-bridge](https://github.com/c3115644151/dsh-inbox-bridge) — 按会话订阅的 GitHub 仓库取数，在回合边界注入与它相关的事件：自己负责记录的 CI 失败、评审请求、指派给它的 issue 与 @它的评论、开着的依赖与代码告警、以及它与基分支冲突的 PR。只读 GitHub，不代做任何操作；唤醒可选，且只会叫到被指定负责该仓库的那个会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [c3115644151/dsh-inbox-bridge](https://github.com/c3115644151/dsh-inbox-bridge) — 让 DSH 的会话自己盯 GitHub：它提的 PR 被评审、CI 挂了、派给它的 issue 有人回，都会在下一轮自动进上下文；会话空闲时还能自己开一轮去修。只读，不改仓库。
 - [CAI-MH/dsh-agent-bridge](https://github.com/CAI-MH/dsh-agent-bridge) — 飞书机器人 → DSH 会话桥：在指定工作区开真会话，用 DSH 现有模型+插件执行任务并回传结论。
 - [CAI-MH/dsh-feishu-task-recorder](https://github.com/CAI-MH/dsh-feishu-task-recorder) — 通过 lark-cli 轮询飞书群聊与单聊，提取候选任务并逐条审核，与任务看板插件双向同步，含悬浮面板与一键授权。
 - [callmeocean1/dsh-taskbar-status](https://github.com/callmeocean1/dsh-taskbar-status) — 回合运行中在 Windows 任务栏显示进度条，等待审批或提问时变成琥珀色并闪烁，回合失败后保持红色。Joker2377/dsh-taskbar-status 的分支，打包上的改动是把 koffi 改成可选的 peer 依赖，使其在 DSH Desktop 上安装时不再需要原生构建脚本授权；不要与原版同时安装。
