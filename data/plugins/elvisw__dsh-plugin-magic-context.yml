@@ -1,0 +1,6 @@
+url: https://github.com/elvisw/dsh-plugin-magic-context
+name: elvisw/dsh-plugin-magic-context
+category: memory
+description:
+  zh: 'Magic Context 帮你在 DSH 的长会话中腾出上下文，也把重要的项目背景留到下一次对话。它将旧对话整理为摘要，回收暂时用不到的工具输出，需要时仍能按标签取回，减少重开会话后反复交代背景的麻烦。'
+  en: 'Magic Context frees up context in long DSH sessions and carries project knowledge into the next conversation. It summarizes older exchanges and reclaims tool output that can still be retrieved by tag, so starting a new session means less explaining from scratch.'
