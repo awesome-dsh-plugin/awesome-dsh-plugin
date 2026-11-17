@@ -2,6 +2,6 @@ url: https://github.com/meowdan/dsh-mastodon-toot
 name: meowdan/dsh-mastodon-toot
 category: notify
 description:
-  en: 'Mastodon bot for DSH: connect an account, reply by group (owner, mutuals, others — no dice rolls), keep a local notebook of people, promises and skipped replies, and post from weather, RSS, GitHub, blog, DSH plugin market and home timeline material on a seeded random schedule.'
-  zh: 把长毛象 bot 收进 DSH：接入账号，按主人/好友/其他人分组回复（不掷骰子），本地小本本记住人物、承诺和没回的原因，并用天气、RSS、GitHub、博客、DSH 插件市场和象上首页素材按日期种子随机发帖。
+  en: 'A Mastodon bot for DeepSeek Harness: it posts and replies on its own, and keeps a little notebook of the people it talks to — per-group reply rules (owner, mutuals, others) and a date-seeded posting plan.'
+  zh: 部署在 Mastodon 的大肥鱼 bot：自己发 toot、自己回嘟文，带一个小本本，记下聊过的人和话。DeepSeek Harness 插件，按主人 / 好友 / 其他人分组回复（不掷骰子），按日期种子随机发帖。
 tarball: https://github.com/meowdan/dsh-mastodon-toot/releases/download/v0.3.10/dsh-mastodon-toot-0.3.10.tgz
