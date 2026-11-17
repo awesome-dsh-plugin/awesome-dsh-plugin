@@ -5389,7 +5389,7 @@ dsh plugin --profile web add dshmarket
 - [ljsysfurryACE/dsh-compaction](https://github.com/ljsysfurryACE/dsh-compaction) — 压缩后端：用确定性语义提取器替换 LLM 摘要（保留代码/路径/命令，剔除闲聊），附带 28.4x KV 压缩记账。
 - [ljsysfurryACE/dsh-memory-director](https://github.com/ljsysfurryACE/dsh-memory-director) — LLM 驱动的记忆记/忘插件：每轮对话后由模型决定记住什么/忘记什么（MemoryDirector），请求前注入相关记忆，自动去重，跨会话持久化。
 - [LLL-lyh0/dsh-archived-digest](https://github.com/LLL-lyh0/dsh-archived-digest) — 把已归档的会话变成可用的记忆，而不是躺在磁盘上的死数据。每条归档提炼成可复用技能、带 ADD/UPDATE/NOOP 判定与 validUntil / supersededBy 时效的事实台账（旧事实会退场而不是无限堆积），以及用 single-linkage 相似度聚合的主题簇。还能对仍在进行中的会话做增量提炼——用只读的 seq 水位线，会话日志一个字节都不改；并能自检精简不断变脏的记忆：合并重复事实、清退失效事实、归并重复技能。自检默认只测量不动手，且从不硬删除，只做取代。
-- [Lng-ux/dsh-nebula-mind](https://github.com/Lng-ux/dsh-nebula-mind) — DeepSeek Harness 的跨会话长期记忆：三路召回（BM25、稠密向量、记忆图上的 PPR）经 RRF 融合，情绪作调制乘子，幂律遗忘配五层沉海，另有一张可交互的记忆星图。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [Lng-ux/dsh-nebula-mind](https://github.com/Lng-ux/dsh-nebula-mind) — DeepSeek Harness 的跨会话长期记忆：三路召回（BM25、稠密向量、记忆图上的 PPR）经 RRF 融合，情绪作调制乘子，幂律遗忘配五层沉海，另有一张可交互的记忆星图。
 - [LornBerry/dsh-memory-center](https://github.com/LornBerry/dsh-memory-center) — DSH 的本地长期记忆库：面板里浏览、检索（BM25 + 同义词）、编辑；文件夹、归档、回收站；逐会话决定注入哪些；模型写入的记忆需你确认；可导入导出备份；可选同步到自己的 Git 或 WebDAV 实现多设备。
 - [LoserFox/distill](https://github.com/LoserFox/distill) — 自动对话蒸馏：后台 subagent 反省 + 技能 create/update。
 - [loveandbeepbrother/dsh-galatea#framework](https://github.com/loveandbeepbrother/dsh-galatea/tree/main/framework) — 加拉忒亚——塑造专属于你的 AI 助手。一个有自己人格和长期记忆（git 版本化的普通文件）的助手；聊得再久也会自己换到新对话、不失忆，你不在时它在后台整理记忆。会话跑在 DSH 里设的模型上，换模型记忆不丢；各模块都能单独关闭，也能用别的插件扩展。QQ/微信聊天与 Claude Code 会话由另外两个 Galatea 插件提供。预览版，需要 DSH 0.2.2-rc.1 或之后的 0.2.x。
@@ -6037,6 +6037,7 @@ dsh plugin --profile web add dshmarket
 - [Free-LZJ/free-dsh-plugins#agent-import](https://github.com/Free-LZJ/free-dsh-plugins/tree/main/packages/agent-import) — 把 Codex 与 Claude Code 已声明的 MCP 服务器接入 dsh 的 mcp-client，把 22 个已知 Agent 技能目录的技能以符号链接（不复制文件）导入 ~/.dsh/skills，并提供设置页：列出本次实际挂载的服务器与技能、逐项启停技能、重名时改选来源。
 - [FrogFlaying/dsh-deskresume](https://github.com/FrogFlaying/dsh-deskresume) — 重启或断电后恢复 Windows 桌面：快照已打开的程序、文档、文件夹与窗口位置，可一键重开。仅支持 Windows 10 及以上；关机前自动抓取需先用 collector/install-tasks.ps1 注册两个计划任务。
 - [FrogFlaying/dsh-desktop-organizer](https://github.com/FrogFlaying/dsh-desktop-organizer) — Windows 桌面整理：归类桌面快捷方式、发现未建快捷方式的程序、检测失效链接（1 个模型工具 desktop_organize）。
+- [ftrans-cn/ft-ftp-mcp-stdio#dsh](https://github.com/ftrans-cn/ft-ftp-mcp-stdio/tree/main/integrations/dsh) — 通过本地 MCP 服务提供 14 个 FTP/SFTP 文件工具，需另行安装 FT FTP MCP 的 Python 3.12 产品运行时。
 - [FTShare-Lab/dsh_kline](https://github.com/FTShare-Lab/dsh_kline) — 面向 DeepSeek Harness 的交互式 K 线分析，支持多市场行情、技术指标、新闻和基本面信息。
 - [FTShare-Lab/dsh-plugin-fft-bundle#packages/dsh-fft-bundle](https://github.com/FTShare-Lab/dsh-plugin-fft-bundle/tree/dev/packages/dsh-fft-bundle) — 面向 DeepSeek Harness（DSH）的金融工作台：新会话默认进入金融模式，带 FTShare 股票行情、报价与财报数据，K线图表、蜡烛图与技术指标，内联出图，以及 A股/商品期货模拟交易（模拟盘）。
 - [Fucaplos/dsh-local-library](https://github.com/Fucaplos/dsh-local-library) — 本地资料库（仅 Windows，需用随包的 PowerShell 脚本安装）：文件传一次，之后每个对话都能用四个工具（library_list / library_search / library_read / library_save）检索、读取；上传、下载与打包下载在设置页完成。文件只保存在本机——除非你启用可选的视觉模型，它会把图片发到你配置的接口。
