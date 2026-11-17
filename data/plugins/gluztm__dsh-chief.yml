@@ -1,8 +1,8 @@
 url: https://github.com/gluztm/dsh-chief
 name: gluztm/dsh-chief
-category: agi
+category: session
 description:
-  en: 'Right-sidebar Chief cockpit with Wishing Box 4-tier agentic executor (4 chief_* tools): pyramid subagent DAG, 3-tier 0-token cold archive vaults with bidirectional diff, smart co-managed compaction, pinned redlines, and handoff.'
-  zh: '许愿式一站式实权参谋舱（含 4 档权限执行器与 4 个 chief_* 工具）：金字塔子代理拓扑、三层 0-Token 冷存储金库与双向差分、✦ 智选静默压缩、图钉全局红线与定住交接。'
+  en: 'Stop runaway loops from burning budget, rescue parameters before context compaction, keep zero-quota memory across windows, and stay safe behind read-only-by-default guardrails — an all-in-one sidebar command deck so long sessions never drift or forget.'
+  zh: '防死循环烧钱、上下文压缩前参数抢救、零额度跨窗记忆，加上默认只读护栏——一站式侧边栏指挥舱，长会话不再跑飞失忆。'
 icon: https://raw.githubusercontent.com/gluztm/dsh-chief/main/assets/icon-256.png
 tarball: https://github.com/gluztm/dsh-chief/releases/download/v1.2.0/dsh-chief-1.2.0.tgz
