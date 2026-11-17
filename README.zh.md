@@ -1893,6 +1893,7 @@ dsh plugin --profile web add dshmarket
 - [SpookySandwich/dsh-plugin-smooth-stream](https://github.com/SpookySandwich/dsh-plugin-smooth-stream) — 给 DeepSeek Harness 加入更好的流式文字动画。
 - [sqfcyily/dsh-workspace-files](https://github.com/sqfcyily/dsh-workspace-files) — 在DeepSeek Harness Web GUI 中浏览工作区的目录/文件，并结合 Git 显示文件改动。
 - [SSShooter/dsh-mindmap-live](https://github.com/SSShooter/dsh-mindmap-live) — DSH Web 实时双向思维导图：Agent 与用户共编同一棵树，改动即时互相同步，支持停靠分屏与全屏两种视图。
+- [stallenlu/dsh-freebie-radar](https://github.com/stallenlu/dsh-freebie-radar) — 把 ZiChuanLan/freebie-radar 做成 DSH 插件，提供 freebie_radar 智能体工具与复刻原站界面的侧边栏工作台面板，含频道资源流、搜索、详情抽屉与深浅色主题。
 - [stallenlu/dsh-huobao-drama](https://github.com/stallenlu/dsh-huobao-drama) — DSH 侧栏面板，将「火宝短剧」短视频创作工作台 Web UI 以 iframe 嵌入；另提供 19 个 huobao_* 桥接工具，对接本地后端（健康检查、短剧与模型增删改查、生成任务、配置与媒体接口）。
 - [stallenlu/dsh-sticky-notes](https://github.com/stallenlu/dsh-sticky-notes) — 一个 DSH 便签面板，支持可拖动悬浮窗、侧栏整页、Markdown 预览、粘贴图片与设置项，数据仅存于浏览器本地。
 - [starighterily-art/dsh-line-tight](https://github.com/starighterily-art/dsh-line-tight) — 调整对话正文的行高与段间距，两个数值在设置 → 通用里可改。
@@ -7088,6 +7089,7 @@ dsh plugin --profile web add dshmarket
 - [Wazy-XD/tabby-serial-mcp#dsh-bundle](https://github.com/Wazy-XD/tabby-serial-mcp/tree/main/dsh-bundle) — 接入 Tabby 串口 MCP 桥接服务并注册 tabby-serial 技能：agent 可以列出、新建、读写 Tabby 里已经打开的串口，同时你还能在同一个终端里继续敲键盘。需要在 Tabby 里安装 tabby-serial-mcp 插件。
 - [wbb316/dsh-novel](https://github.com/wbb316/dsh-novel) — 小说创作台：5 个 novel_* 工具（列目录、读文件、取上下文、存章节、管角色），外加侧栏开书向导、人物关系图与流式续写。
 - [wbin0001/dsh-comfyui-canvas](https://github.com/wbin0001/dsh-comfyui-canvas) — 从对话到画布再到作品——DSH 里驾驭 ComfyUI 的可视化工作流 IDE。把 ComfyUI（本地或云端）以画布分屏嵌入 DeepSeek Harness Web，agent 在对话里激发创意、书写提示词与脚本，实时落到你眼前的画布上，产出图像、音乐、视频、3D。从灵感到成品，全程不离开对话，不用切换任何前端工具：画布操作——搭建编排、读写工作流、修改节点、连线、运行、调整参数、工作流查错，所见即所得，实时落在你眼前的画布上；生产任务——批量扫参（batch_run）、自动取回出图（get_outputs）带回对话，实现图像、音乐、视频、3D 等多任务智能创作与批量生产；环境维护——一键启动 ComfyUI、一键升级核心与全部自定义节点（upgrade），省心维护不间断。本仓库集成了 DSH 侧插件（画布副驾）+ ComfyUI 侧桥接节点，无人值守/规模化执行时可配合官方 ComfyUI MCP 服务器使用。
+- [WBMGGGG/dsh-opticforge](https://github.com/WBMGGGG/dsh-opticforge) — KB-first 光学工程任务辅助。opticforge_assist 在任何联网检索之前，先把具体问题与 40 个板块、324 条知识库对齐。3.1.1 最多激活 3 张主题卡（16 张卡、98 条维度声明），按必需维度分别取证，并返回“维度×来源”覆盖矩阵、带 dimension_id 与交叉复核步骤的门禁计划、公式卡、五段报告骨架与验收清单。回答按“原理 → 公式/判据 → 思路 → 步骤”展开，不暴露知识库层级或条目编号；来源只写文献、标准、手册或 URL 名称。web_gate 仅在 KB 缺口、标准版本、厂商参数或价格时效条件下放行外部检索。opticforge_verify 检查 KB 对齐、仅引用 present 条目、维度证据、交叉关系、来源分级、KB 冲突、30 天时效与五段呈现，并给出采信闸门结论。包含 308 张概念卡、6 个通用维度、19 张公式卡与 opticforge-task DSH Skill；308 条可引用，16 条明示缺口仍限于 A03、C01、E01 的原始条文。共五个工具，零运行时依赖、无计算器；插件不联网、不执行动作。npm 暂不发布，从 GitHub 克隆后运行 node scripts/install-local.mjs 安装。
 - [webkubor/dsh-env-inspector](https://github.com/webkubor/dsh-env-inspector) — 环境自检与端口控制大屏：零依赖洞察系统架构、12 款核心 CLI 工具链、活跃监听端口与悬浮释放、模型凭据就绪状态。局域网主 IP 一键速查，零外联、零私有凭据明文。
 - [wee-b/disk-sentinel](https://github.com/wee-b/disk-sentinel) — 在 DSH Web 中分析 Windows 磁盘占用、对比扫描结果，并管理缓存清理与开发环境迁移。
 - [weibaohui/dsh-file-share](https://github.com/weibaohui/dsh-file-share) — 会话工作区文件管理：在对话区加「文件」tab，浏览当前会话工作区的目录树并就地管理（上传/下载/新建文件夹/改名/删除/搜索），文件可 @ 进对话框给 agent 处理。
@@ -7662,6 +7664,7 @@ dsh plugin --profile web add dshmarket
 - [zaiwenJ/dsh-cdp-browser](https://github.com/zaiwenJ/dsh-cdp-browser) — 通过 CDP 连接已运行的 Chrome/Edge：为 DSH 提供截图、像素断言、DOM/CSS 检查与页面 JS 执行，全程 HTTP + WebSocket、零子进程、零 npm 依赖、无需逐次授权。
 - [zebbkira/dsh-browser-context](https://github.com/zebbkira/dsh-browser-context) — 在 DSH 桌面版中引用网页正文、企微文档选区、可访问的 B站字幕和截图，不自动发送消息。
 - [zengxiaolou/dsh-annotate-browser](https://github.com/zengxiaolou/dsh-annotate-browser) — DSH 右侧栏里的标注浏览器：通过 CDP 推流并转发输入的实时页面，点选元素或划选文字后，把源码位置、组件栈、样式与裁图带进聊天输入框。需本机 Chrome（Windows 须设置 chromePath）。
+- [zhan1024/dsh-frontend-replay](https://github.com/zhan1024/dsh-frontend-replay) — 前端验修台，录制并回放前端故障，用相同步骤和明确条件验收修复，导出浏览器证据、报告与 Playwright 测试。
 - [zhiqiangme/dsh-plugins#dsh-tavily-search](https://github.com/zhiqiangme/dsh-plugins/tree/main/dsh-tavily-search) — 为内置网页搜索提供 Tavily 后端：在 DSH 进程内提供 127.0.0.1:8787/v1 接口，把搜索请求转成 Tavily 检索；最多 10 个 API Key 存在 DSH 凭据库，按请求轮换，遇鉴权、限流或额度错误自动换下一个；设置卡片可管理密钥、测试搜索并一键接入网页搜索。
 - [ZhongqiXiao/dsh-annotator](https://github.com/ZhongqiXiao/dsh-annotator) — 在 DeepSeek Harness 里拾取真实 Chrome / Edge / ego lite 页面上的元素，写评论、截元素图，再把标注插入对话输入框——agent 拿到 CSS 选择器、页面位置、评论与截图，照着你眼前的界面改前端。它用自己的用户目录和随机本地调试端口启动 Chrome 或 Edge，并在页面里注入一个悬浮层；选 ego lite 时会接入你已经开着的那个实例（把 DSH_VISUAL_ANNOTATOR_ADOPT_RUNNING 设为 0 可关闭）。
 - [zimai233/dsh-image-search](https://github.com/zimai233/dsh-image-search) — 多引擎反向识图聚合：Google Lens、百度、Yandex、TinEye、SauceNAO、IQDB、Ascii2d。
@@ -11269,6 +11272,7 @@ dsh plugin --profile web add dshmarket
 - [yu7777777777/dsh-server-toolbox](https://github.com/yu7777777777/dsh-server-toolbox) — 在侧栏登记 SSH 服务器、到期日期和服务网址，使用 Windows DPAPI 加密保存密码和导入私钥，支持显式核对主机指纹和登录测试；Agent SSH 命令默认逐次授权，也可改为跟随会话权限。
 - [yubi233/dsh-phone-remote](https://github.com/yubi233/dsh-phone-remote) — dsh 的 Host 侧插件：经自托管中继把手机配到 dsh 实例，一条出站连接承载会话列表、流式对话、审批、附件与文件预览，送达专用手机网页壳；设备用一次性二维码链接配对，可在 dsh 网页内的控制台随时撤销。
 - [yukre/dsh-session-api](https://github.com/yukre/dsh-session-api) — 在 DSH 自带 web server 上开一个仅限本机回环的 HTTP 接口：从页面外读取会话运行状态，并驱动输入框的操作——发消息或即时插话、切模型与权限档位、取消、改队列、裁决待办的审批与提问。Bearer 令牌鉴权，带 Host/Origin 准入，支持 JSON 与 Markdown 输出。
+- [yunhai89/dsh-clawbot](https://github.com/yunhai89/dsh-clawbot) — 把微信 ClawBot（腾讯 iLink）接入 DeepSeek Harness：在 DSH Web 里扫码登录，每个微信用户一个持久 DSH 会话，支持会话/模型/工作区指令，并把工具审批转发到微信。它通过 OpenClaw 宿主兼容层嵌入腾讯官方 openclaw-weixin 插件，而不是重写微信协议。
 - [yuunnn/dsh-on-imessage](https://github.com/yuunnn/dsh-on-imessage) — 在 iPhone 信息里直接和本机 DeepSeek Harness（dsh）对话：切换工作区/会话、开新会话、原生信息气泡回复，无需额外 App、服务器或云服务。
 - [Yylx-R/dsh-console#dsh-plugin](https://github.com/Yylx-R/dsh-console/tree/main/dsh-plugin) — 通过自建中继，用手机远程操作电脑上的 DSH：发消息/图片/文件、看流式回复、截取桌面、远程 Alt+Tab。
 - [Z-6354/dsh-mobile-hanui](https://github.com/Z-6354/dsh-mobile-hanui) — DSH Web 界面的移动端适配：窄屏下把桌面三栏布局改造成触屏友好的手机布局（覆盖式抽屉、可拖拽悬浮按钮、全屏弹窗、上滑加载历史），1024px 断点内生效，桌面端零影响。 — 基于 dsh-mobile-gate 的完整移动端 PWA：安全远程访问网关 + 可安装到主屏（manifest + service worker）+ 离线可用 + 触屏手势（下拉刷新/边缘返弹/捏合缩放字体）+ agent 完成推送 + 触屏优先布局，桌面零影响。
