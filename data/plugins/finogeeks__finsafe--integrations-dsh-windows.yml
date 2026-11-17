@@ -1,5 +1,5 @@
 url: https://github.com/finogeeks/finsafe/tree/main/integrations/dsh/windows
-name: finogeeks/finsafe#FinShield · Windows Sandbox · 安全沙箱
+name: finogeeks/finsafe#finshield
 category: security
 description:
   en: 'FinShield: Windows x64 sandbox and permission controls for DSH Desktop, protecting selected files, screen, camera, microphone and system processes. Uses process-level isolation within the existing DSH workflow; guards against desktop and input interference, protects system settings and services, and safeguards selected files and directories against unauthorized reading, overwriting and deletion. Evidence comes from 38 public comparison scenarios published by Finogeeks. Install through the DSH Desktop plugin manager. Windows x64 only; first activation downloads and installs the matching native runtime with SHA256 verification and Windows consent, and runs an updater process.'
