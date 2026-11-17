@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-resume-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-resume-check'
+category: 'tools'
+description:
+  en: 'Resume hygiene from markdown: a reachable contact block, valid email and phone shapes, a work timeline that never overlaps itself, and an education section. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '简历的书记检查：联系方式可达、邮箱电话形态合法、工作经历时间线不自相重叠、教育段在场——只验记录格式，不判断内容真伪。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

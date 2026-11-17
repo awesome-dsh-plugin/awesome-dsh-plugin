@@ -1,0 +1,6 @@
+url: https://github.com/Jack7510/ggb-plugins-dsh
+name: Jack7510/ggb-plugins-dsh
+category: tools
+description:
+  en: Turn Chinese or English 2D math problems into verified, interactive GeoGebra files; failed checks block delivery.
+  zh: 把中英文二维数学题变成经核验、可交互的 GeoGebra 文件；核验失败不交付。

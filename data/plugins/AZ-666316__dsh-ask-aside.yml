@@ -1,0 +1,6 @@
+url: https://github.com/AZ-666316/dsh-ask-aside
+name: AZ-666316/dsh-ask-aside
+category: ui
+description:
+  en: 'Highlight text in an answer and ask about it in a right-sidebar session that inherits the conversation context, with streaming answers and image/file attachments. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '划词提问：选中回答里的文字，在继承主对话上下文的右侧栏会话里追问，支持流式回答与图片、文件附件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,6 @@
+url: https://github.com/banzhangdeerfenzhiyi/dsh-wechat-deploy-plugin
+name: banzhangdeerfenzhiyi/dsh-wechat-deploy-plugin
+category: tools
+description:
+  en: 'Deploy and diagnose the local WeChat 4.1.10.27 hook from chat: status and health checks, plus prepare, launch, restart, build and managed-service actions, as DSH host tools.'
+  zh: 在对话里部署与体检本机微信 4.1.10.27 Hook：status / health 检查，以及 prepare、launch、restart、build 和托管服务操作，全部做成 DSH 宿主工具。

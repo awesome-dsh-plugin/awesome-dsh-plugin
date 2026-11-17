@@ -1,0 +1,8 @@
+url: https://github.com/diudiu62/dsh-connect-loomy
+name: diudiu62/dsh-connect-loomy
+category: model
+icon: https://raw.githubusercontent.com/diudiu62/dsh-connect-loomy/main/icons/icon-180.png
+tarball: https://github.com/diudiu62/dsh-connect-loomy/releases/latest/download/dsh-connect-loomy.tgz
+description:
+  en: 'Registers the Loomy desktop app''s locally signed-in chat models as a `loomy` provider in DSH. Several accounts can be signed in at once and switched from a drawer on the composer badge, with each account''s points shown per row, optional per-call rotation between healthy accounts, a settings section with per-model toggles and an upstream diagnostics table, and a status/doctor CLI. Shares the `loomy` provider id with 2239058652/dsh-loomy-connect, so the two cannot be installed together; this one differs by the account drawer, the per-account points breakdown and the CLI.'
+  zh: '把本机已登录的 Loomy（讯飞办公助手）聊天模型注册为 DSH 的 `loomy` 供应商。可同时登录多个账号，在输入框胶囊的抽屉里切换当前账号、查看各账号积分、按需开启「每次调用随机选健康账号」；另有逐模型开关与上游诊断设置分区，以及 status/doctor 命令行。与 2239058652/dsh-loomy-connect 注册同一个 `loomy` 供应商，两者不能同装；区别在于账号抽屉、各账号积分明细与命令行。'

@@ -1,0 +1,8 @@
+url: https://github.com/game25011/dsh-remote-access
+name: game25011/dsh-remote-access
+category: remote
+icon: https://raw.githubusercontent.com/game25011/dsh-remote-access/main/assets/icon-180.png
+description:
+  en: 'Remote-control the local DSH from a phone or tablet through Tailscale: the running Web UI is exposed to your own tailnet while it stays bound to 127.0.0.1. The settings page checks every prerequisite and verifies the real login end to end, then shows the login link and QR. Requires the Web UI running, a working Tailscale link and the PC powered on.'
+  zh: '通过 Tailscale 从手机或平板远程操控本机 DSH：运行中的 Web UI 只对本人 tailnet 开放，网页服务仍绑 127.0.0.1。设置页先逐项自检并验证真实登录链路，通过后才给出登录链接和二维码；前提是 Web UI 在运行、Tailscale 链路打通、个人 PC 保持开机唤醒。'
+tarball: https://github.com/game25011/dsh-remote-access/releases/latest/download/game25011-dsh-remote-access.tgz

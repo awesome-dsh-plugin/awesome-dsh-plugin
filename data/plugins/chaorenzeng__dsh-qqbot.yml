@@ -1,0 +1,6 @@
+url: https://github.com/chaorenzeng/dsh-qqbot
+name: chaorenzeng/dsh-qqbot
+category: notify
+description:
+  en: 'Fork of tencent-connect/dsh-qqbot that connects QQ Bot API v2 private and group chats to the DeepSeek Harness agent loop, adding a message-handling mode that either queues incoming messages until the running turn finishes or injects them into it right away with agent.followup(); also ships QR-code binding, per-chat session routing, slash commands, approval and question forwarding, and allowlist-based access control. Requires Node.js >= 20.3.0 and a QQ Bot AppID/AppSecret.'
+  zh: 'tencent-connect/dsh-qqbot 的 fork：通过 QQ 官方机器人 API 把私聊与群聊接入 DeepSeek Harness 的 agent loop，新增「消息处理方式」——排队（当前回合结束后合并处理新消息）或插话（通过 agent.followup() 立即补充到当前任务）；并包含扫码绑定、按会话路由、斜杠命令、审批与提问转发、白名单访问控制。需要 Node.js >= 20.3.0 与 QQ Bot AppID/AppSecret。'
