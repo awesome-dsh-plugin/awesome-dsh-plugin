@@ -1,0 +1,6 @@
+url: https://github.com/monta-6969/dsh-sw-3d-preview
+name: monta-6969/dsh-sw-3d-preview
+category: ui
+description:
+  en: Opens STEP/STP, STL and OBJ models in the file preview panel as meshes, with face, edge and point picking, three-point marking on a face, section cutting with caps, and a Markdown handoff sheet of the saved annotations.
+  zh: 在文件预览面板里把 STEP/STP、STL 和 OBJ 模型解析成网格打开，支持面/边/点拾取、在面上做三点法标注、带封盖的剖切，以及把已保存的标注汇总成一份 Markdown 交接单。
