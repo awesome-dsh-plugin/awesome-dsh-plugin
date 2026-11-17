@@ -1,6 +1,7 @@
 url: https://github.com/zbh13782-lang/dsh-ask-reader
 name: zbh13782-lang/dsh-ask-reader
 category: ui
+icon: https://raw.githubusercontent.com/zbh13782-lang/dsh-ask-reader/main/assets/icon-180.png
 tarball: https://github.com/zbh13782-lang/dsh-ask-reader/releases/latest/download/dsh-ask-reader.tgz
 description:
   en: Pins an assistant reply into a right-sidebar tab rendered as Markdown, and sends a selected passage back to the composer as a quote for follow-up questions.
