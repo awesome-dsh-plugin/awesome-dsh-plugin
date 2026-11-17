@@ -2,5 +2,5 @@ url: https://github.com/pairun325/dsh-whale-ear
 name: pairun325/dsh-whale-ear
 category: voice
 description:
-  en: 'Two ears for the whale: hear system audio and the microphone, and transcribe speech to text offline with Whisper.'
-  zh: '给鲸鱼娘两只耳朵：听系统声音和麦克风，用 Whisper 本地离线转写成文字。'
+  en: 'Two ears for the whale: hear system audio and the microphone, transcribe offline with Whisper, and speak back into the chat. 0.2.0 adds a one-click ear button in the GUI, trigger words, and noise-floor auto gain.'
+  zh: '给鲸鱼娘两只耳朵：听系统声音和麦克风，Whisper 本地离线转写，说完直接接回聊天。0.2.0 加了 GUI 一键开关、触发词和底噪自适应。'
