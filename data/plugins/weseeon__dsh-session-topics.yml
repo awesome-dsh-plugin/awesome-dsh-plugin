@@ -1,0 +1,6 @@
+url: https://github.com/weseeon/dsh-session-topics
+name: weseeon/dsh-session-topics
+category: session
+description:
+  en: 'LLM-organized topic navigation for a conversation: jump to a topic, return to the latest turn, keep talking from an older thread, and search topics across sessions by keyword or meaning.'
+  zh: '把会话整理成可导航的主题列表：跳到某个主题、一键回到最新、从旧话题继续讨论，并跨会话按关键词或语意搜索主题。'
