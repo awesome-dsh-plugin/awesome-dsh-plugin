@@ -1283,6 +1283,7 @@ dsh plugin --profile web add dshmarket
 - [liuhusk/dsh-status-card](https://github.com/liuhusk/dsh-status-card) — 内容区右上角的常驻状态卡片：一行写清本轮时间去向（模型/工具/等你），另列可折叠的任务与进度条、会话目标（可编辑/暂停/继续/清除）、已提交计划（可点开在右栏预览）、本次变更文件、带 token 与耗时数字的子智能体行，以及本会话的后台任务（运行中的行带两段确认的终止按钮，已结束的收进一行计数、默认收起）；内容区收窄时正文向左让位，推到极限自动收成一颗圆钮。
 - [liujia-io/dsh-image-picker](https://github.com/liujia-io/dsh-image-picker) — 在会话输入框添加 📎 选图按钮，通过系统文件选择器选取参考图并注入官方附件管线（缩略图、数量与大小校验、随消息上传），绕开拖拽环境问题。
 - [liujiangnanchenjbguo/dsh-gufa-code](https://github.com/liujiangnanchenjbguo/dsh-gufa-code) — 给 DeepSeek Harness 的 IDE 模式：点工作区「…」菜单一键把主面板变成 VS Code 风格工作台——左侧 Monaco 编辑器、文件树、Git 面板（提交图/推送/拉取/逐文件还原）、SSH 主机与真实 PTY 终端，右侧原样停靠官方 DSH 会话，写代码时工具调用、自动改文件、审批与会话历史照常可用。作者主张「古法编程」：亲手写、每个改动心中有数，AI 是助理，你是软件的第一责任人。
+- [liujianqiao701/dsh-small-mcp-server](https://github.com/liujianqiao701/dsh-small-mcp-server) — DSH 设置面板里的 MCP 服务管理器：列出 / 新增 / 编辑 / 删除 / 启停 mcp-client loader 条目；每个中间状态各自显示，且未保存的草稿不会被悄悄提交。
 - [liujuntao123/dsh-mobile-keys](https://github.com/liujuntao123/dsh-mobile-keys) — 为 DSH Web 输入框增加「移动端热键模式」：自动检测移动/触控设备后切换为 Ctrl+Enter 发送、裸 Enter 换行，桌面键位保持不变，并提供设置面板开关、/mobilekeys 命令与 window.__dshMobileKeys 控制台 API。
 - [liuke-zhu/dsh-toonflow-canvas](https://github.com/liuke-zhu/dsh-toonflow-canvas) — 在 DeepSeek Harness 侧边栏内嵌 Toonflow 无限画布面板。伴侣插件：需本机自备并运行 Toonflow（默认 http://127.0.0.1:6017）。支持地址自定义、连接/重载/新窗口打开。
 - [liuming-dev/dsh-plugins#annotation-rewind-scroll](https://github.com/liuming-dev/dsh-plugins/tree/main/annotation-rewind-scroll) — 为回复和文档添加随下一条消息发送的注释，编辑历史用户消息并从该处重新执行，使用快捷键浏览用户消息或在输入框调出历史输入。
@@ -7178,6 +7179,7 @@ dsh plugin --profile web add dshmarket
 - [xsnnnnnn/dsh-coros](https://github.com/xsnnnnnn/dsh-coros) — 把高驰（COROS）官方 MCP 服务接入 DeepSeek Harness：自包含的本机 stdio↔HTTP 桥 + 本机 OAuth 登录，在当前端点上提供 34 个工具，覆盖睡眠、HRV、静息心率、恢复、训练负荷、活动与 FIT 文件，以及训练课程与训练计划的增删改查和排期。
 - [xtt-xt/dsh-custom-tool-studio](https://github.com/xtt-xt/dsh-custom-tool-studio) — 用 Python 在网页、对话或 dsh-go 手机 App 的原生面板里编写自定义工具，保存后免重启注册成 DSH 工具；危险工具每次执行都走内置审批，工具可分组成包，还可选「解锁模式」按对话逐步放出。需 PATH 中有 Python 3。
 - [xuanyuanchumo/dsh-kaogong](https://github.com/xuanyuanchumo/dsh-kaogong) — 离线公务员备考整合平台，整合 16 个上游开源题库（全量约 2.2 GB）：1,683 套真题卷支持限时模考/逐题学习/全卷自答对照三模式，提供 SRS 错题本、申论离线评改、花生十三体系方法论视图（25 篇）与 BM25 检索、学习计划智能排程、可交互知识图谱与白盒可观测。npm 包不含题库与语料数据：安装后由题库管理用 git 从上游克隆必选包（约 360 MB，需要 git）。
+- [xuedipiaofei/dsh-ai-diagrams](https://github.com/xuedipiaofei/dsh-ai-diagrams) — 聊天里的编辑设计风图表：模型画出自包含 HTML/SVG 图（50 种类型，基于 cathrynlavery/diagram-design skill），对话内直接预览并可导出 SVG/PNG，可重画 draw.io/Mermaid/Excalidraw，能按网站品牌配色。不需要 Python，不需要 Playwright。
 - [xuedipiaofei/dsh-drawio-chat](https://github.com/xuedipiaofei/dsh-drawio-chat) — 聊天里画 draw.io：说一句需求，对话里直接出可交互图表；内置 12 个中文场景模板；可继续改图、撤销同一个 .drawio 文件；右侧栏预览不再是 XML。不登录 draw.io、不需要 MCP server、不用装编辑器。
 - [xuezuoys/dsh-blender-mcp-bridge](https://github.com/XuezuoYS/dsh-blender-mcp-bridge) — 此项目旨在桥接 Blender MCP Add-on，使 DSH 上的模型可便捷对接接入当前用户工作的 Blender 以辅助创作，且满足基础安全需要。
 - [XuRui2022/dsh-paper-manager](https://github.com/XuRui2022/dsh-paper-manager) — 面向学生与研究者的论文阅读与引用管理器：左侧栏论文库、原样 PDF 阅读器、六种引用格式、Word 文末参考文献，以及 AI 翻译/概括/思维导图/术语。基于 jypjypjypjyp/dsh-paper-reader（现名 dsh-vibe-reading，MIT）扩展，默认共用 `~/.paper_reading` 工作目录——不要与上游同装。需先安装 dsh-better-sidebar 插件。
@@ -11092,6 +11094,7 @@ dsh plugin --profile web add dshmarket
 - [JochenYang/dsh-remote#dsh-remote](https://github.com/JochenYang/dsh-remote/tree/main/dsh-remote) — 随时随地用手机操作 DSH：自托管中继 + 桌面 host 插件组成令牌认证隧道（保序 HTTP 反向代理 + WebSocket 桥接），扫码配对、管理台可管理设备与令牌，并自动注入移动适配层（聊天全宽、设置弹窗全屏、侧栏抽屉化）。
 - [jsdvjx/dshn#agent](https://github.com/jsdvjx/dshn/tree/main/packages/agent) — 把本地 dsh 网页通过带登录门禁的中继转发到公网 *.ds.hn 子域名(也可自托管到自己的域名),支持可选的端到端加密(PBKDF2 到 AES-256-GCM)。
 - [JUANWANG-BUAA/dsh-full-remote](https://github.com/JUANWANG-BUAA/dsh-full-remote) — 远程访问 DeepSeek Harness 且服务端 API 完整：转发时改写 Host/Origin，恢复其他方案必定 403 的 settings.* / credentials.* / host.listDirectory。令牌门、按设备会话、可选首访审批。
+- [Jun2030/dsh-chat-tu](https://github.com/Jun2030/dsh-chat-tu) — 为 DeepSeek Harness 提供局域网 WebRTC 聊天，支持频道、昵称、本地 SQLite 历史消息和自定义表情。
 - [Junkrat9527/dsh-desktop-automation](https://github.com/Junkrat9527/dsh-desktop-automation) — macOS 桌面控制插件：agent 像人一样操作非浏览器应用（剪映/PS/WPS/原生客户端）——14 个工具覆盖鼠标/键盘/滚动/应用/窗口/截图，并整合视觉闭环（desktop_see 识图 + desktop_locate UI 定位坐标，复用 dsh 既有视觉凭据）。服务 GUI 会话按需拉起，非登录自启。
 - [JUNQINGV587/dsh-ssh-hub](https://github.com/JUNQINGV587/dsh-ssh-hub) — DSH Web GUI 多服务器 SSH 终端面板：浮动终端窗口支持标签页、并排组合、广播、宿主侧持久会话，以及密码/私钥/SSH Agent 认证。
 - [jyb114/pocket-bridge](https://github.com/jyb114/pocket-bridge) — 在 DSH 设置里为 Pocket Bridge 提供本机手机配对、网关控制与诊断面板。
