@@ -1728,6 +1728,7 @@ dsh plugin --profile web add dshmarket
 - [rayafriandion/dsh-oc-tui](https://github.com/rayafriandion/dsh-oc-tui) — 受 opencode 启发的 DeepSeek Harness 终端界面，以 dsh profile 应用插件形式启动，提供会话侧栏、流式聊天、markdown 工具卡片、待办列表、斜杠命令建议、带上下文用量表的遥测底栏与内联审批提示。
 - [Rayle8/dsh-aside-note](https://github.com/Rayle8/dsh-aside-note) — 对话旁的会话级便笺：会话右上角入口用角标显示未完成数量，点开是可拖拽调宽高的右侧面板，便笺可添加、勾选完成、复制、编辑和一键转发到输入框，面板尺寸与草稿保存在浏览器本地。
 - [RCYD857/857-dsh-file-attach](https://github.com/RCYD857/857-dsh-file-attach) — 把文件或图片拖进 DSH Web 输入框，以一排小卡片展示，发送时以 @path 引用传给模型。
+- [RDYRD/dsh-drag-out](https://github.com/RDYRD/dsh-drag-out) — 把对话里交付的文件直接拖进微信、Word 等应用：拖出去的是磁盘上的真实文件，需在 DSH 桌面应用中使用。
 - [ReachGa0/dsh-desktop#plugin](https://github.com/ReachGa0/dsh-desktop/tree/main/plugin) — dsh 插件（dsh-desktop-launcher）：在对话中一键启动 dsh-desktop Windows Electron 桌面壳——双击即用、无需终端；支持选区截图提问（GPU 实时框选、自动粘贴到聊天框、配合识图插件 AI 直接看图回答）、系统托盘、会话管理、环境自动引导、可换端口、单实例锁。
 - [realguan/dsh-deepseek-chat-embed](https://github.com/realguan/dsh-deepseek-chat-embed) — 在 DeepSeek Harness 桌面端内嵌 chat.deepseek.com，提供双入口聊天面板与持久登录会话。
 - [realguan/dsh-mermaid-preview](https://github.com/realguan/dsh-mermaid-preview) — 在 Markdown 中将 Mermaid 围栏代码渲染为原生图表卡片，内置 8 套设计系统主题与自适应布局。
@@ -2344,6 +2345,7 @@ dsh plugin --profile web add dshmarket
 - [YONAN1269/dsh-sidebar-suite](https://github.com/YONAN1269/dsh-sidebar-suite) — 为 DeepSeek Harness 提供两种可切换的侧栏布局（标签页 / 浮层）与一个不改动布局的「官方默认」，以及默认全部展开的会话列表、默认在退出 DSH 时删除的临时会话和第三方 tab 注册接口，并在插件详情页设置默认布局与反馈入口。
 - [yongfanbeta/dsh-pomodoro](https://github.com/yongfanbeta/dsh-pomodoro) — DSH 番茄钟：经典 25/5/15 计时，可将每次专注关联当前会话任务或手动输入项目名，内置统计面板与全年热力图，配可拖动悬浮计时卡与角落迷你药丸，数据本地持久化并支持导出 CSV。
 - [YooRarely/dsh-open-explorer](https://github.com/YooRarely/dsh-open-explorer) — 在 DSH 会话标题和工作区菜单中添加按钮，用系统文件管理器打开当前 Workspace 根目录。
+- [YoungHarmony/dsh-lego-io-preview](https://github.com/YoungHarmony/dsh-lego-io-preview) — 在 DSH 侧栏预览 BrickLink Studio 的 .io 乐高模型：旋转缩放真实 LDraw 几何、显示件数，内置零件之外的部分按需从本机 Studio 安装读取。
 - [youqisibun/dsh-claude-effort-slider](https://github.com/youqisibun/dsh-claude-effort-slider) — 给 DeepSeek Harness 用的六档推理强度滑条，第六档 Ultracode 会在轨道上铺开一层向左流动的像素纹理，浮层与纹理跟随界面明暗自动切换。
 - [youyaemmm-pixel/dsh-custom-lists](https://github.com/youyaemmm-pixel/dsh-custom-lists) — 将输入框模型选择器按可自定义的官方、插件和中转来源分组，提供分层导航、Our Free Model 四类型目录及独立设置页。Our Free Model 目录需另装 dsh-our-free-model。
 - [YQing0123/dsh-artifact-center](https://github.com/YQing0123/dsh-artifact-center) — 产物中心：跨工作区检索、预览并打开对话产出的文件。
@@ -9484,6 +9486,7 @@ dsh plugin --profile web add dshmarket
 - [LiuQhahah/dsh-commit-review](https://github.com/LiuQhahah/dsh-commit-review) — 按仓库分组查看本工作区产生的提交，每个提交可展开查看文件级 diff。
 - [LLL-lyh0/dsh-github-manager](https://github.com/LLL-lyh0/dsh-github-manager) — 同一个账户库的两半：左侧「GitHub 仓库」面板是结构性只读（只有三个 GET 端点，任何非 GET 在路由前直接 405，请求体从不读取，令牌不出宿主），以及一个 github-manager 技能，只暴露两个工具 —— github_accounts 与 github_api —— 写入动作交给 Agent。登录走 GitHub Device Flow，账户库按 mtime 自动失效，后加进来的令牌无需重启即可生效。
 - [lonelymoon87/dsh-gitflow](https://github.com/lonelymoon87/dsh-gitflow) — 增加需要审批的 Git 状态、diff、日志、提交、分支和可选检查点工具。
+- [Lornatang/dsh-github](https://github.com/Lornatang/dsh-github) — 将 DeepSeek Harness 连接到 GitHub MCP，提供仓库、Issue、Pull Request 和 Actions 工具。
 - [LoserFox/dsh-git-identity](https://github.com/LoserFox/dsh-git-identity) — git 提交固定使用环境自身作者身份，环境变量注入压过一切 `git config` 设置。
 - [lucas-ward/dsh-ci-context](https://github.com/lucas-ward/dsh-ci-context) — 将白名单内的 GitHub Actions 与 GitLab CI 运行元数据注入 Agent 上下文，不读取日志、凭据或服务商 API。
 - [lucky8197/dsh-code-smell](https://github.com/lucky8197/dsh-code-smell) — 代码气味雷达：静态扫描 TODO/FIXME 债务、未实现桩、超长行、大文件与重复代码块，按严重度输出修复建议，全程只读。
@@ -11194,7 +11197,7 @@ dsh plugin --profile web add dshmarket
 - [sunChargedd/dsh-plugins#dsh-ssh-manage](https://github.com/sunChargedd/dsh-plugins/tree/main/dsh-ssh-manage) — DSH 的 SSH 主机管理插件：浏览 ~/.ssh/config，保存 AES-256-GCM 加密密码，执行批量命令与 SFTP，并在可保持的侧边栏标签页中打开交互式 PTY 终端。
 - [sunrulin123/dsh-community-web-ui](https://github.com/sunrulin123/dsh-community-web-ui) — DeepSeek Harness 独立远程 Web UI：适配手机视口、软键盘与触控热区，同时保持原生桌面端界面不变。
 - [swarm-apps/dsh-swarmdrop](https://github.com/swarm-apps/dsh-swarmdrop) — 在 agent 和你自己的手机之间开一条设备通道：agent 把刚产出的文件发过去，手机传回来的东西可以在输入框里 @ 引用。底层经 SwarmDrop CLI 走端到端加密的 P2P，不需要账号，也不需要公网 IP；节点状态、已配对设备与扫码配对都在侧边栏面板里。
-- [swswordholy-tech/AgentsChatProtocol#mcp-plugin](https://github.com/swswordholy-tech/AgentsChatProtocol/tree/main/mcp-plugin) — 通过 3 合 1 插件包将 DeepSeek Harness 接入 AgentsChat 共享房间：出站 MCP 工具、支持 @提及 与私信自动唤醒的本地回环桥接，以及按会话展示身份的输入框状态胶囊。
+- [swswordholy-tech/AgentsChat#mcp-plugin](https://github.com/swswordholy-tech/AgentsChat/tree/main/mcp-plugin) — 通过 3 合 1 插件包（出站 MCP 工具、支持 @提及 与私信自动唤醒的本地回环桥接、按会话展示身份的输入框状态胶囊）将 DeepSeek Harness 接入 AgentsChat 共享房间，支持跨宿主多 Agent 通信、代码互审、提案投票与 OKR 协同。
 - [Sycada/dsh-remote-ssh-tools](https://github.com/Sycada/dsh-remote-ssh-tools) — DeepSeek Harness 的 SSH 会话管理：连接档案、Agent 远程执行、交互终端与 SFTP；秘密仅存于 DSH 凭据中心。
 - [T1gerD/open-whale#dsh-openwhale](https://github.com/T1gerD/open-whale/tree/main/packages/plugin) — 把手机变成你这台电脑上 DeepSeek Harness 的个人助理——扫一次码即可远程聊天、收发图片与文件、看回复流式输出，多台手机还能在同一会话里协作；连接方式可选局域网 / Tailscale / 公网隧道。附带安卓安装包、iOS 构建流水线，以及鸿蒙和 iOS 浏览器可直接用的网页版客户端。
 - [taxah92/dsh-pve-vm](https://github.com/taxah92/dsh-pve-vm) — 在对话里控制 Proxmox VE 虚拟机：16 个工具，既能通过 VNC 操作 VM 控制台（截图、鼠标、键盘、批量动作、Unicode 文本与剪贴板），也能经 QEMU guest agent 执行命令、读写文件；全部走一条到节点的 ssh 连接，宿主无需 X11 或 Wayland。
