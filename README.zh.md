@@ -6199,6 +6199,7 @@ dsh plugin --profile web add dshmarket
 - [it-glen/dsh-mcp-manager](https://github.com/it-glen/dsh-mcp-manager) — 面向 DSH 的 MCP 服务器管理器：在面板中增删改、启用或停用 Model Context Protocol 服务器，支持 stdio 与 streamable-HTTP 两种传输、按服务器设置工具调用超时、实时查看连接状态与工具数量，并持久化到项目级或主目录的 mcp.json。@wingsky-1/dsh-mcp-manager 的维护分支。
 - [iTanzhao/dsh-d365-kit](https://github.com/iTanzhao/dsh-d365-kit) — 面向 Dynamics 365 CE / Dataverse 的 DSH 工具箱：15 个工具，支持跨环境查询元数据与解决方案层、快照与差异、字段影响面反查、迁移风险评估、GitLab MR 检查、契约漂移、环境健康，以及需人工确认的元数据写入。
 - [ItLeLeYa/dsh-pdl-center](https://github.com/ItLeLeYa/dsh-pdl-center) — PDL 井数据整理加载中台：以批次工作台与六步向导驱动 PDL 引擎，把原始井资料按井归集、汇总成交付表，并导出 GeoEast 可直接导入的加载包，附带运行记录与参考库。
+- [ityyq777/dsh-workbench#mail](https://github.com/ityyq777/dsh-workbench/tree/main/packages/mail) — DSH 邮件：IMAP 只抓最近邮件头，SMTP 发纯文本，账户密码由保险箱托管（只存 secretId）。
 - [ityyq777/dsh-workbench#sites](https://github.com/ityyq777/dsh-workbench/tree/main/packages/sites) — DSH 站点收藏：目录树、每个站点多条链接、标签与筛选，支持按目录浏览。
 - [ityyq777/dsh-workbench#storage](https://github.com/ityyq777/dsh-workbench/tree/main/packages/storage) — DSH 储物：记录名称、品牌、位置、单位、库存文本与标签，本地 SQLite 保存，可选元数据同步。
 - [ityyq777/dsh-workbench#tags](https://github.com/ityyq777/dsh-workbench/tree/main/packages/tags) — DSH 标签管理：创建、搜索、删除标签，支持软删除与条目映射，供任务、站点与储物插件使用。
@@ -9564,6 +9565,7 @@ dsh plugin --profile web add dshmarket
 - [br1nosense/dsh-wxauto-plugin](https://github.com/br1nosense/dsh-wxauto-plugin) — 基于 wxauto4 的微信自动化插件：任务进度微信推送、消息监听（关键词自动回复）、微信⇄DSH 双向桥，设置页开关与配置。
 - [bululuburuarua666/dsh-herald](https://github.com/bululuburuarua666/dsh-herald) — 三通道任务通知：页内浮层与提示音、浏览器系统横幅、宿主直发系统通知（浏览器关闭也送达），附铃铛面板与持久历史。
 - [c1overzz/dsh-bili-scroll](https://github.com/c1overzz/dsh-bili-scroll) — 让你的 DSH 自己刷 B站 —— 读字幕原文挑内容、写日报，遇到值得看的会发评论 @ 你。
+- [c3115644151/dsh-inbox-bridge](https://github.com/c3115644151/dsh-inbox-bridge) — 按会话订阅的 GitHub 仓库取数，在回合边界注入与它相关的事件：自己负责记录的 CI 失败、评审请求、指派给它的 issue 与 @它的评论、开着的依赖与代码告警、以及它与基分支冲突的 PR。只读 GitHub，不代做任何操作；唤醒可选，且只会叫到被指定负责该仓库的那个会话。
 - [CAI-MH/dsh-agent-bridge](https://github.com/CAI-MH/dsh-agent-bridge) — 飞书机器人 → DSH 会话桥：在指定工作区开真会话，用 DSH 现有模型+插件执行任务并回传结论。
 - [CAI-MH/dsh-feishu-task-recorder](https://github.com/CAI-MH/dsh-feishu-task-recorder) — 通过 lark-cli 轮询飞书群聊与单聊，提取候选任务并逐条审核，与任务看板插件双向同步，含悬浮面板与一键授权。
 - [callmeocean1/dsh-taskbar-status](https://github.com/callmeocean1/dsh-taskbar-status) — 回合运行中在 Windows 任务栏显示进度条，等待审批或提问时变成琥珀色并闪烁，回合失败后保持红色。Joker2377/dsh-taskbar-status 的分支，打包上的改动是把 koffi 改成可选的 peer 依赖，使其在 DSH Desktop 上安装时不再需要原生构建脚本授权；不要与原版同时安装。
