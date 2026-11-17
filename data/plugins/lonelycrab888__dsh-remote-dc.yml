@@ -1,0 +1,6 @@
+url: https://github.com/lonelycrab888/dsh-remote-dc
+name: lonelycrab888/dsh-remote-dc
+category: remote
+description:
+  en: 'Integrates Desktop Commander Remote MCP with DeepSeek Harness to browse files, search logs, and run commands on paired machines without a public IP, inbound ports, or SSH.'
+  zh: '将 Desktop Commander Remote MCP 接入 DeepSeek Harness，可在已配对的设备上浏览文件、搜索日志和运行命令，无需公网 IP、入站端口或 SSH。'

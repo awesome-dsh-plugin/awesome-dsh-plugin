@@ -1,0 +1,7 @@
+url: https://github.com/adithyanraj03/dsh-blender-preview
+name: adithyanraj03/dsh-blender-preview
+category: ui
+description:
+  en: 'Files-tab previews for DeepSeek Harness: .blend (headless local Blender export to a cached GLB), .glb/.gltf/.obj in a WebGL viewport, plus .svg, video and audio; depends on dsh-blender with a read-only boot self-check; no network calls, no telemetry, no postinstall; uninstall removes the row. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DeepSeek Harness 的 Files 标签中预览：.blend（经本机 Blender 无头导出为带缓存的 GLB）、.glb/.gltf/.obj 以 WebGL 视口呈现，另支持 .svg、视频与音频；依赖 dsh-blender 并附只读启动自检；无网络请求、无遥测、无 postinstall；卸载即移除该行。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/adithyanraj03/dsh-blender-preview/releases/latest/download/plugin.tgz

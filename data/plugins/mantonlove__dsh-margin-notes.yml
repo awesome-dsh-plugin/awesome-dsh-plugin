@@ -1,0 +1,8 @@
+url: https://github.com/mantonlove/dsh-margin-notes
+name: mantonlove/dsh-margin-notes
+category: ui
+description:
+  en: 'Margin annotations for DSH: select text in a document preview or an assistant reply, queue a note on each passage, then send the whole batch into the composer as one numbered block so the model answers item by item.'
+  zh: 'DSH 页边批注：在文档预览或助手回复里划词写批注，攒成一批后一次性写入输入框，让模型按编号逐条回应。'
+icon: https://raw.githubusercontent.com/mantonlove/dsh-margin-notes/main/assets/icon-180.png
+tarball: https://github.com/mantonlove/dsh-margin-notes/releases/download/v0.1.3/dsh-margin-notes.tgz

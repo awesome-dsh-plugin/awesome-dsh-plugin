@@ -1,0 +1,7 @@
+url: https://github.com/iceshard999/dsh-appview
+name: iceshard999/dsh-appview
+category: ui
+description:
+  en: Turns the DSH right sidebar into a searchable app launcher with drag ordering and saved layouts.
+  zh: 将 DeepSeek Harness 的右侧栏变成应用桌面，支持搜索和打开工具、拖拽排序，并自动保存排列顺序。
+tarball: https://github.com/iceshard999/dsh-appview/releases/download/v0.3.1/dsh-appview-0.3.1.tgz

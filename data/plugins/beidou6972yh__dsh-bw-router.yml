@@ -1,0 +1,7 @@
+url: https://github.com/beidou6972yh/dsh-bw-router
+name: beidou6972yh/dsh-bw-router
+category: model
+tarball: https://github.com/beidou6972yh/dsh-bw-router/releases/download/v0.2.0/dsh-bw-router-0.2.0.tgz
+description:
+  en: 'B&W v0.2.0 — plan a task into stages, assign the right model per stage, and switch models inside one session without losing context; costs are either stated or explicitly unavailable, never guessed. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'B&W（小棒 & 灰狼）——把任务拆成分段、按段挑模型，并在同一会话内切换模型而不丢上下文；成本要么给出依据、要么明示不可用，绝不编数。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

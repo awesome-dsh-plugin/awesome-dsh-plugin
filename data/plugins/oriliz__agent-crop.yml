@@ -1,0 +1,6 @@
+url: https://github.com/oriliz/agent-crop
+name: oriliz/agent-crop
+category: agi
+description:
+  en: 'Times AI coding sessions, nudges long-running turns, and keeps a local work ledger with a collector-health dashboard, so you can see where the time actually went. It also records retrospectives and routes each lesson back into agent instructions, skills, or tooling.'
+  zh: '给 AI 编码会话计时、催长任务、记工作台账，并提供采集健康度面板，看清时间到底花在哪；同时记录复盘结论，把每条经验回流到 agent 指令、技能或工具。'

@@ -1,0 +1,6 @@
+url: https://github.com/Threadripper123/dsh-plugin-workspace-backup
+name: Threadripper123/dsh-plugin-workspace-backup
+category: tools
+description:
+  en: "One-click workspace backup with per-source results and a durable job record."
+  zh: "DSH 工作区备份：一键把当前工作区备份到 G:/工作区备份，并报告每个来源的真实结果。"

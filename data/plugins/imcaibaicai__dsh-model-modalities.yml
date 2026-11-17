@@ -1,0 +1,6 @@
+url: https://github.com/imcaibaicai/dsh-model-modalities
+name: imcaibaicai/dsh-model-modalities
+category: model
+description:
+  en: 'Adds a model input modalities section to Settings that lists every model grouped by provider route and lets you declare text or image input per model, which is what lets a custom-route model accept image attachments.'
+  zh: '在设置页加入「模型输入模态」区块，按 provider 路由分组列出所有模型，可为每个模型勾选是否接受图片输入——自定义路由下的模型就是靠这一项才能收图片附件。'

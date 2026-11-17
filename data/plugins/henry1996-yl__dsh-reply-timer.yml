@@ -1,0 +1,6 @@
+url: https://github.com/henry1996-yl/dsh-reply-timer
+name: henry1996-yl/dsh-reply-timer
+category: ui
+description:
+  en: Shows a live reply timer under the composer with a three-segment ledger (first token / tools / generation) and a reference range from this machine's past turns of the same shape. The chip follows only the session it is mounted in and never shows a fabricated countdown.
+  zh: 在输入框下方显示回复计时：首字 / 工具 / 生成三段账本，并按本机同类历史回合给出参考用时区间。计时只跟随当前会话，样本不足时不会编造倒计时。

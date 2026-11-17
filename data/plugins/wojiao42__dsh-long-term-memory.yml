@@ -1,0 +1,6 @@
+url: https://github.com/wojiao42/dsh-long-term-memory
+name: wojiao42/dsh-long-term-memory
+category: memory
+description:
+  en: 'Long-term memory for DSH: injects your Markdown memory file at each session start, adds read/write/recall/undo tools with backup and audit, and lists your detailed profile files (interests / profile / project notes) with guidance on when to read them. Zero dependencies; never opens a network connection.'
+  zh: DSH 的长期记忆：每个会话开始注入你的 Markdown 记忆文件，提供带备份与撤销的读写/检索工具；注入时列出详细记忆文件（兴趣/画像/项目笔记）并提示何时该读。零依赖、不联网。

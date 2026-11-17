@@ -1,0 +1,6 @@
+url: https://github.com/linlinxxy77-hue/dsh-paper-translate
+name: linlinxxy77-hue/dsh-paper-translate
+category: tools
+description:
+  en: 'Translates English academic-paper PDFs into Chinese DOCX while preserving the original layout (figures, captions, three-line tables, formulas, and reference positions unchanged; reference text left in English) and produces a literature summary. Wraps a Python pipeline (parse, rebuild, verify) as 16 DeepSeek Harness tools.'
+  zh: '把英文论文 PDF 译成中文 DOCX 并按原版式重排（插图、图注、三线表、公式、参考文献位置不变，参考文献正文保留英文），并可生成文献总结。将 Python 流水线（解析、重建、校验）封装为 16 个 DeepSeek Harness 工具。'

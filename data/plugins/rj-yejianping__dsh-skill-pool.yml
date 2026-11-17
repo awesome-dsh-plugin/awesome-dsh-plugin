@@ -1,0 +1,6 @@
+url: https://github.com/rj-yejianping/dsh-skill-pool
+name: rj-yejianping/dsh-skill-pool
+category: skill
+description:
+  en: 'Skill pool for DSH: import skills from files, ZIP, GitHub or GitLab, auto-group them by repository, and set each skill''s Agent-mode and workspace scope from a settings panel, with a global switch per group. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 技能池：从文件 / ZIP / GitHub / GitLab 导入技能，按仓库自动归类，在设置面板里为每个技能设置 Agent 模式与工作区范围，支持按分组整体开关。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

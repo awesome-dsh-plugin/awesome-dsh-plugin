@@ -1,0 +1,6 @@
+url: https://github.com/QiuYeDx/dsh-rugu/tree/main/packages/dsh
+name: QiuYeDx/dsh-rugu#dsh
+category: memory
+description:
+  en: 'Persona memory for DeepSeek Harness: one memory shared by every entry point (DSH desktop, and QQ through the dsh-qq bridge) that records what the agent itself experienced. Raw messages are kept, five recall routes (vector, keyword, people and events, time, who is present) run before each reply, and a per-context check decides whether a remembered thing may be said. Adds memory_recall, memory_note, memory_fix and memory_look tools and a Settings page; embeddings are optional (local Ollama or an OpenAI-compatible endpoint).'
+  zh: 'DeepSeek Harness 的人设记忆：所有入口（DSH 桌面，以及经 dsh-qq 桥接的 QQ）共用一份记忆，记的是 Agent 自己经历过什么。保留原话，每次回话前按五路回想（向量、字面、人和事、时间、在场的人）取回相关内容，并按场合判断某件记得的事能不能说。提供 memory_recall、memory_note、memory_fix、memory_look 四个工具和设置页；嵌入可选（本机 Ollama 或 OpenAI 兼容服务）。'

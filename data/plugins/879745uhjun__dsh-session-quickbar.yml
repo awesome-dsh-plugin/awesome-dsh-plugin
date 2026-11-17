@@ -1,0 +1,6 @@
+url: https://github.com/879745uhjun/dsh-session-quickbar
+name: 879745uhjun/dsh-session-quickbar
+category: ui
+description:
+  en: 'Takes over the quick-action strip on the right of every sidebar session row: choose per session which buttons show and in what order, reuse built-in star, todo, pin, archive and copy-id actions, and keep a two-way channel with the sessions that author plugins. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '接管侧边栏每个会话行右侧的快捷按钮排：按会话决定显示哪些按钮与顺序，复用星标、待办、置顶、归档与复制 ID 等内置动作，并与制作插件的会话保持双向沟通。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

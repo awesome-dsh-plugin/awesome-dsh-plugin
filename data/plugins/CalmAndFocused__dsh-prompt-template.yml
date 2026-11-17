@@ -1,0 +1,6 @@
+url: https://github.com/CalmAndFocused/dsh-prompt-template
+name: CalmAndFocused/dsh-prompt-template
+category: ui
+description:
+  en: 'Rewrites the composer draft in three modes (system prompt, user prompt, iteration), keeps {{variable}} placeholders verbatim, and exposes the same operation as the optimize_prompt agent tool.'
+  zh: '在输入框里用三种模式改写提示词草稿（系统提示词、用户提示词、迭代改进），{{变量}} 占位符逐字保留，同一操作也作为 optimize_prompt agent 工具提供。'

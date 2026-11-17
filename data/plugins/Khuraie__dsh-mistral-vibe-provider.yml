@@ -1,0 +1,10 @@
+# Catalog entry for the DSH plugin market (awesome-dsh-plugin).
+# The market reads its catalog from this registry; the READMEs are generated.
+
+url: https://github.com/Khuraie/dsh-mistral-vibe-provider
+name: Khuraie/dsh-mistral-vibe-provider
+category: model
+description:
+  en: 'Mistral Vibe Code as a DSH provider route — PKCE browser sign-in, the live model catalogue with per-model prices, the Vibe Code and Studio/API budget meters in Settings and the sidebar, and a per-session cost figure in the composer.'
+  zh: '把 Mistral Vibe Code 接入 DSH 的模型路由——浏览器 PKCE 登录、带单价的实时模型目录、设置页与侧边栏的 Vibe Code / Studio 双额度表，以及输入框里的会话成本。'
+icon: https://raw.githubusercontent.com/Khuraie/dsh-mistral-vibe-provider/main/docs/icon.png

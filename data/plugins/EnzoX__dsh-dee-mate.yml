@@ -1,0 +1,6 @@
+url: https://github.com/EnzoX/dsh-dee-mate
+name: EnzoX/dsh-dee-mate
+category: ui
+description:
+  en: 'A functional betta desktop companion for the DeepSeek Harness Web UI: it follows several concurrent sessions at once, can switch a session to full access for the moment and restore the default permission automatically once the work is done, and adds a panel to send a line, stop a turn, or approve inline — size and colour are adjustable.'
+  zh: 'DeepSeek Harness 界面里的功能性斗鱼桌宠：可同时查看多个并行会话的进展，必要时一键临时提权到完全访问、任务完成自动恢复默认权限；面板可直接递话、喊停、就地报批，大小与配色可调。'

@@ -1,0 +1,6 @@
+url: https://github.com/sweet560/dsh-plugin-wechat-session
+name: sweet560/dsh-plugin-wechat-session
+category: notify
+description:
+  en: 'Session-interop reminder pack for DeepSeek Harness Desktop. On a pending question, a pending approval, or a finished turn it shows one in-app overlay card carrying the concrete question text plus a chime, with no system-notification permission needed; after a per-event timeout (60s for selection/approval, 30s for completion) it sends a minimal WeChat fallback through the dsh-im bot. Multiple parallel sessions are supervised independently, and an optional mode pushes every session status to one WeChat private chat with /session switching.'
+  zh: '面向 DeepSeek Harness 桌面端的会话互通提醒包。出现待选择、待确认或回合结束时弹一张带具体问题内容的应用内浮层卡片并响提示音，不依赖系统通知权限；超时（需选择/确认 60 秒、跑完 30 秒）后经 dsh-im 微信机器人发一条极简留底提醒。多条并行会话逐条监督，可选模式把所有会话状态实时推送到同一个微信私聊并支持 /session 切换。'

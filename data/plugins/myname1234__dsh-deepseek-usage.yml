@@ -1,0 +1,7 @@
+url: https://github.com/myname1234/dsh-deepseek-usage
+name: myname1234/dsh-deepseek-usage
+category: usage
+description:
+  en: 'Adds a left-sidebar DeepSeek usage page with account balance, token and cache totals, 7/14/30-day stacked charts, a model breakdown, and a seven-day table, with usage read from local DSH session logs.'
+  zh: '在左侧栏加入 DeepSeek 用量页面，显示账户余额、Token 与缓存统计、7/14/30 天堆叠图、模型分布和最近 7 天明细，用量读取自本机 DSH 会话日志。'
+icon: https://raw.githubusercontent.com/myname1234/dsh-deepseek-usage/main/assets/icon-180.png

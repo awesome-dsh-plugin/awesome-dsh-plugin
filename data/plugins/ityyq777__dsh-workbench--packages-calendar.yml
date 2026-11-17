@@ -1,0 +1,6 @@
+url: https://github.com/ityyq777/dsh-workbench/tree/main/packages/calendar
+name: ityyq777/dsh-workbench#calendar
+category: tools
+description:
+  en: 'Calendar for DSH: local calendars, events, participants and reminders, searchable from the workbench agent.'
+  zh: 'DSH 日历：本地日历、事件、参与人与提醒，工作台 agent 可搜索。'

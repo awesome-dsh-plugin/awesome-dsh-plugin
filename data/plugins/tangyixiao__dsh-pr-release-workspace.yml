@@ -2,7 +2,7 @@ url: https://github.com/tangyixiao/dsh-pr-release-workspace
 name: tangyixiao/dsh-pr-release-workspace
 category: git
 description:
-  en: Read-only GitHub pull request and release workspace for DSH with diffs, comments, CI checks and local review drafts. Reads GitHub through the GitHub CLI, which must be installed and signed in with gh auth login.
-  zh: 在 DSH 中只读查看 GitHub 拉取请求与发布状态，浏览差异、评论和 CI 检查，并保存本地评审草稿。所有 GitHub 读取都经由 GitHub CLI，需先安装并执行 gh auth login 登录。
-icon: https://raw.githubusercontent.com/tangyixiao/dsh-pr-release-workspace/v0.1.5/assets/logo.webp
-tarball: https://github.com/tangyixiao/dsh-pr-release-workspace/releases/download/v0.1.5/dsh-pr-release-workspace-0.1.5.tgz
+  en: Read-only GitHub pull request and release workspace for DSH with diffs, comments, CI checks and local review drafts. Reads GitHub through the GitHub CLI, which must be installed and signed in with gh auth login. Version 0.1.8 requires DSH >=0.2.2-rc.1 <0.3.0-0 with synchronous connection.requestRejection and connection.admit APIs; only an authenticated owner may use the host GitHub session or local drafts. Missing methods, failures and invalid or asynchronous verdicts fail closed.
+  zh: 在 DSH 中只读查看 GitHub 拉取请求与发布状态，浏览差异、评论和 CI 检查，并保存本地评审草稿。所有 GitHub 读取都经由 GitHub CLI，需先安装并执行 gh auth login 登录。 0.1.8 要求 DSH >=0.2.2-rc.1 <0.3.0-0 且提供同步 connection.requestRejection 与 connection.admit API，仅已认证 owner 可使用宿主 GitHub 会话或本地草稿；缺方法、异常、无效或异步返回均拒绝。
+icon: https://raw.githubusercontent.com/tangyixiao/dsh-pr-release-workspace/v0.1.8/assets/logo.webp
+tarball: https://github.com/tangyixiao/dsh-pr-release-workspace/releases/download/v0.1.8/dsh-pr-release-workspace-0.1.8.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/oh-dsh-plugins/dsh-gpt-adapter
+name: oh-dsh-plugins/dsh-gpt-adapter
+category: model
+description:
+  en: Adapts GPT model reasoning and context controls while reusing local Codex instructions, skills, plugin resources and MCP configuration.
+  zh: 适配 GPT 模型的推理等级与上下文设置，并复用本地 Codex 指令、技能、插件资源和 MCP 配置。

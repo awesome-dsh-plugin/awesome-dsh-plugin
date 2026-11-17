@@ -1,0 +1,6 @@
+url: https://github.com/gabrielbav/dsh-workspace/tree/main/Plugins/dsh-plugin-session-delete
+name: gabrielbav/dsh-workspace#dsh-plugin-session-delete
+category: session
+description:
+  en: 'Delete sessions for good: DSH can only archive them, and deleting a workspace leaves its sessions behind. Adds a trash button and menu items to delete a session (with its subagent sessions) or a workspace with all its sessions, and never touches one that is still running or open in another process.'
+  zh: '永久删除会话：DSH 只能归档会话，删除工作区也会留下其中的会话。本插件添加垃圾桶按钮和菜单项，可删除会话（连同其子代理会话）或删除工作区及其全部会话，且绝不动仍在运行或被其他进程打开的会话。'

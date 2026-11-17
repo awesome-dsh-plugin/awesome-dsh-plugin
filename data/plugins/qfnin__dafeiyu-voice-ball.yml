@@ -1,0 +1,6 @@
+url: https://github.com/qfnin/dafeiyu-voice-ball
+name: qfnin/dafeiyu-voice-ball
+category: voice
+description:
+  en: 'DaFeiYu Voice Ball: a floating desktop voice companion - click the ball, say one sentence, and it answers out loud. Local Whisper ASR + edge-tts synthesis over a live RuiC-2D animated character; ollama, DSH or DeepSeek LLM backends; standalone Electron window with first-run auto-setup (clones the character engine, creates a venv, installs dependencies).'
+  zh: '大肥鱼语音球：桌面悬浮语音伴侣——点一下球说一句话，它开口回答一句。本地 Whisper 识别 + edge-tts 合成，RuiC-2D 实时角色渲染；支持 ollama / DSH / DeepSeek 三种回答后端；独立 Electron 窗口，首次运行自动配置环境（克隆角色引擎、建 venv、装依赖）。'

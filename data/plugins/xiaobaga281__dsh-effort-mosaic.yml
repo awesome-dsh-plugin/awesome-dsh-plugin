@@ -1,0 +1,7 @@
+url: https://github.com/xiaobaga281/dsh-effort-mosaic
+name: xiaobaga281/dsh-effort-mosaic
+category: ui
+tarball: https://github.com/xiaobaga281/dsh-effort-mosaic/releases/latest/download/dsh-effort-mosaic.tgz
+description:
+  en: 'Replaces the reasoning-effort row in the DSH model menu with a pixel-mosaic particle track: the stretch next to the knob is a still, dense mosaic wall, and squares increasingly leave the grid and drift apart toward the left. Knob shape, size and fill, accent color, the highest-effort burst style and the out-of-track particle effect are all configurable in the plugin settings.'
+  zh: '把 DSH 模型菜单里的「推理等级」一行换成像素马赛克粒子滑轨：贴近滑块的一段是静止的密实墙，越往左方块越早脱离网格、漂移散开。滑块形状、尺寸、填充、强调色、最高档点亮样式与粒子越界动画都可在插件设置里调整。'

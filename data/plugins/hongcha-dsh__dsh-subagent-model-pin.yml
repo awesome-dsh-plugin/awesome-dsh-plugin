@@ -1,0 +1,6 @@
+url: https://github.com/hongcha-dsh/dsh-subagent-model-pin
+name: hongcha-dsh/dsh-subagent-model-pin
+category: model
+description:
+  en: 'Pins every subagent to one model: each step is checked against that route, a step that would run elsewhere is rejected, that subagent is aborted, and a warning is injected into the parent session — so a costly parent model can never be inherited and drain quota. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把所有子代理统一钉到指定模型：每一步都核对即将进入的路由，越界就拒绝该步、中止该子代理并向父会话注入提醒，避免子代理继承高价模型烧穿额度。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,6 @@
+url: https://github.com/ze579/dsh-session-delete
+name: ze579/dsh-session-delete
+category: session
+description:
+  en: 'Right-click a conversation and delete it after two confirmations. Removes the session directory, workspace accounting (archive and pin entries) and the projection cache; refuses while the conversation is still running. Supports DSH >=0.2.2-rc.3 <0.3.0. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '会话右键菜单里的「删除会话」：两次确认后删除。会删掉会话目录、工作区账本（归档与置顶集合）和投影缓存，仍在运行的会话拒绝删除。适用 DSH >=0.2.2-rc.3 <0.3.0。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,8 @@
+url: https://github.com/timxiang-948/dsh-composer-model-controls
+name: timxiang-948/dsh-composer-model-controls
+category: ui
+description:
+  en: Model and reasoning-effort controls in the DSH composer tool row, with a Pi-Harness-inspired effort slider whose track and composer border tint with the level, plus Shift+Tab cycling.
+  zh: 把模型与推理强度控件放进 DSH 输入框工具行：参考 Pi Harness 配色的自适应推理强度滑块，轨道与输入框描边随档位渐变，支持 Shift+Tab 快捷切换。
+icon: https://raw.githubusercontent.com/timxiang-948/dsh-composer-model-controls/main/assets/icon-180.png
+tarball: https://github.com/timxiang-948/dsh-composer-model-controls/releases/latest/download/dsh-composer-model-controls.tgz

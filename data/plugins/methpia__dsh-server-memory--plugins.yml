@@ -1,0 +1,7 @@
+url: https://github.com/methpia/dsh-server-memory/tree/main/plugins
+name: methpia/dsh-server-memory#plugins
+category: memory
+description:
+  en: 'Self-hosted project memory for DSH: a compact prompt index, search and save tools, and up to one consolidation per day written back to your own memoryd service, which runs on your laptop, a LAN box or a cloud server and never calls an LLM itself.'
+  zh: '为 DSH 提供的自托管项目记忆：紧凑的提示索引、检索与写入工具，以及每天至多一次写回自有 memoryd 的聚合；这个服务可以跑在笔记本、局域网机器或云服务器上，且自身不调用 LLM。'
+icon: https://raw.githubusercontent.com/methpia/dsh-server-memory/main/assets/icon-180.png

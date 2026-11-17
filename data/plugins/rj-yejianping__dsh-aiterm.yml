@@ -1,0 +1,6 @@
+url: https://github.com/rj-yejianping/dsh-aiterm
+name: rj-yejianping/dsh-aiterm
+category: remote
+description:
+  en: 'SSH and Telnet terminals in the DSH right sidebar where a human and an AI share the same real terminal: per-session AI permissions (read-only / write-only / read-write), a single control token, token-cheap delta reads, searchable history, batch scripts and an audit trail. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 右侧栏的 SSH / Telnet 终端，人和 AI 共用同一个真实终端：按会话设置 AI 权限（只读 / 只写 / 读写），单一控制权，省 token 的增量读，可检索历史，批量脚本与审计记录。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

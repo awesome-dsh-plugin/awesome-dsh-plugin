@@ -1,0 +1,8 @@
+url: https://github.com/aaron999-h/dsh-restart-account
+name: aaron999-h/dsh-restart-account
+category: ui
+description:
+  en: 'Adds a "Restart DSH" row below the sign-out item in the account menu, so a freshly installed or updated plugin can be loaded without hunting for the desktop shortcut. The restart is performed by a hidden helper launched through WMI, so the relaunch survives the current process exiting; if the app does not come back within 12 seconds a notice offers a retry.'
+  zh: '在左下角账户菜单的「退出登录」下面加一行「重启 DSH」：装完或更新插件后一键重启桌面端来加载新代码，不用再去找桌面快捷方式。重启由一个通过 WMI 拉起的隐藏 helper 完成，当前进程退出后仍能拉起新实例；12 秒没回来会弹出提示让你重试。'
+icon: https://raw.githubusercontent.com/aaron999-h/dsh-restart-account/main/assets/icon-180.png
+tarball: https://github.com/aaron999-h/dsh-restart-account/releases/latest/download/dsh-restart-account.tgz

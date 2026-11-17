@@ -1,0 +1,6 @@
+url: https://github.com/Si-xiyu/dsh-git-graph
+name: Si-xiyu/dsh-git-graph
+category: git
+description:
+  en: 'Git Graph for DeepSeek Harness: a VS Code-style commit graph with branch switching, merge, rebase, tags, stash and inline diffs.'
+  zh: 'DeepSeek Harness 的 Git 图谱：VS Code 风格的提交图，支持切换分支、合并、变基、标签、stash 与内嵌差异。'

@@ -1,0 +1,6 @@
+url: https://github.com/ACAneSe1/dsh-work-guard
+name: ACAneSe1/dsh-work-guard
+category: workflow
+description:
+  en: 'Gates and a ledger for coding agents: denies writes to source files that were not read in this session, or that changed after they were read; records every write and verification with the real exit code; keeps the tests that failed before a fix visible until that same set passes; and flags source files changed by shell commands that were never declared. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给编程 agent 的闸门与台账：没读过的源码文件拒绝写入，读过之后又被改动的也拒绝；每次写入与验证都记下真实退出码；修之前红着的那批测试，在它们真正变绿之前会一直显示出来；脚本改了源码却没申报会一直记在台账里。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

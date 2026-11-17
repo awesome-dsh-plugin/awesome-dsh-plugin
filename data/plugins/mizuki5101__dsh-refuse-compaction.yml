@@ -1,0 +1,7 @@
+url: https://github.com/mizuki5101/dsh-refuse-compaction
+name: mizuki5101/dsh-refuse-compaction
+category: session
+description:
+  en: 'Intercept auto context compaction before it runs — four tiers (ask first / delay / forbid) with an occupancy gauge; manual /compact untouched. Built for local small-window models.'
+  zh: '在自动压缩执行前拦下——四档（先问/推迟/禁止）+ 会话内占用仪表；手动 /compact 不受影响。为本地小窗口模型准备。'
+tarball: https://github.com/mizuki5101/dsh-refuse-compaction/releases/download/v0.2.12/dsh-refuse-compaction-0.2.12.tgz

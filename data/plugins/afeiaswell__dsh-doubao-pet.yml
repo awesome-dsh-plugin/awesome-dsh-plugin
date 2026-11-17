@@ -1,0 +1,7 @@
+url: https://github.com/afeiaswell/dsh-doubao-pet
+name: afeiaswell/dsh-doubao-pet
+category: ui
+description:
+  en: 'A draggable Doubao or SD-chan mascot in the corner of the web shell, with a hover card showing today''s image spend and the quota usage of both the Doubao desktop client and the Volcengine Ark plan; it also registers an Agent tool that generates images through the local Doubao work mode or the Volcengine Ark API. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'Web 界面角落的豆包 / sd娘 桌宠，可拖动缩放贴边，悬浮显示今日出图开销以及豆包客户端与火山引擎套餐两边的额度用量；同时注册 Agent 工具，可走本机豆包工作模式或火山引擎方舟 API 出图。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/afeiaswell/dsh-doubao-pet/main/assets/icon-180.png

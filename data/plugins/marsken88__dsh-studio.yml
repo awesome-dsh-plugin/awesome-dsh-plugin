@@ -1,0 +1,7 @@
+url: https://github.com/marsken88/dsh-studio
+name: marsken88/dsh-studio
+category: workflow
+description:
+  en: 'Role-based multi-agent board for the software lifecycle - product, architect, dev and QA agents pick up cards, a design-review gate blocks unreviewed work, regression suites run per card, and quality is reported per expert. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '角色化的多智能体研发生命周期看板：产品/架构/研发/测试各自认领卡片，设计评审闸门拦住未评审的开发，用例按套件回归，效能按专家度量。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/marsken88/dsh-studio/main/assets/icon-180.png

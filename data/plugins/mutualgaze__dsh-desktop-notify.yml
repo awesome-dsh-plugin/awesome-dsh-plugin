@@ -1,0 +1,6 @@
+url: https://github.com/mutualgaze/dsh-desktop-notify
+name: mutualgaze/dsh-desktop-notify
+category: notify
+description:
+  en: 'Pops a Windows toast and lights a taskbar badge when DSH needs an approval, finishes a turn, or hits an error. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 需要你确认、跑完一轮或报错时，弹 Windows 通知并在任务栏图标上点亮徽标。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

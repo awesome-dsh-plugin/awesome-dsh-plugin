@@ -1,0 +1,7 @@
+url: https://github.com/hemu996/smart-ppt-designer/tree/main/smart-ppt-studio
+name: hemu996/smart-ppt-designer#smart-ppt-studio
+category: ui
+description:
+  en: 'Sidebar workbench for the smart-ppt-designer PPT skill in DeepSeek Harness: browse design styles and red lines, look up the workflow, preview templates with inline thumbnails, and import local .pptx files that get a cover thumbnail automatically.'
+  zh: 'DeepSeek Harness 侧边栏设计台：检索视觉风格与红线、速查工作流、内联缩略图预览模板，导入本地 .pptx 自动抽取封面作预览。'
+icon: https://raw.githubusercontent.com/hemu996/smart-ppt-designer/main/smart-ppt-studio/icon-180.png
