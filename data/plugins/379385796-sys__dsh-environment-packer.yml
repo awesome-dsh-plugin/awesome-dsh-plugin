@@ -2,8 +2,8 @@ url: https://github.com/379385796-sys/dsh-environment-packer
 name: 379385796-sys/dsh-environment-packer
 category: tools
 description:
-  en: Private Windows DSH cold archives and guarded fresh-environment recovery. v0.7.3 classifies the known plugin Home directories `.dsh-paper-reader`, `dsham-move-backup` and `music` as captured plugin data, restores them as data-only, and resolves matching legacy pending-review entries during read-only planning; unknown or incomplete trees remain critical and blocking. Strict dependency, transaction and verify/commit gates remain. Verified ZIP integrity does not certify private business recovery.
-  zh: Windows DSH 私人冷备份与受门禁保护的新环境恢复。v0.7.3 将 `.dsh-paper-reader`、`dsham-move-backup`、`music` 三个已知插件 Home 目录归类为插件数据并以 data-only 方式恢复；只读规划可解析匹配的旧版待复核条目，未知或不完整目录仍保持 critical 并阻断恢复。保留严格依赖、事务及 verify/commit 门禁。ZIP 完整性不代表私人业务恢复认证。
-tarball: https://github.com/379385796-sys/dsh-environment-packer/releases/download/v0.7.3/dsh-environment-packer-0.7.3.tgz
-# TGZ SHA-256: 9c00bd1250b775be89b416f6cd8868408678a5ebde55a5213fb71abb9852fdd7
-# Checksums: https://github.com/379385796-sys/dsh-environment-packer/releases/download/v0.7.3/SHA256SUMS.txt
+  en: Private Windows DSH cold archives and guarded fresh-environment recovery. v0.7.4 fixes a false `PACKAGE_LINK_CYCLE` scan abort on NTFS volumes whose 64-bit file IDs exceed 2^53 (the ancestor stack now uses exact bigint identity), classifies the `dsh-chat-import` scan cache as captured plugin data by an in-file marker, and repaints the assistant success state so a verified archive no longer stops at step 4. True link cycles, reparse points and package links keep their existing refusals; unknown or incomplete trees remain critical and blocking. Strict dependency, transaction and verify/commit gates remain. Verified ZIP integrity does not certify private business recovery.
+  zh: Windows DSH 私人冷备份与受门禁保护的新环境恢复。v0.7.4 修复 NTFS 64 位文件编号超过 2^53 时扫描阶段误报 `PACKAGE_LINK_CYCLE` 导致的备份失败（祖先栈改用精确 bigint 身份），按文件内标记把 `dsh-chat-import` 扫描缓存归类为插件数据，并修正独立助手成功态重绘，使已验证归档不再停在第 4 步。真实链接环、重解析点与包链接仍按原语义拒绝；未知或不完整目录仍保持 critical 并阻断恢复。保留严格依赖、事务及 verify/commit 门禁。ZIP 完整性不代表私人业务恢复认证。
+tarball: https://github.com/379385796-sys/dsh-environment-packer/releases/download/v0.7.4/dsh-environment-packer-0.7.4.tgz
+# TGZ SHA-256: 8ed8c0aa35b1b89aa8a39ac07ef2833b7dc01a9ceb39d13cd9e927ac02e7bd48
+# Checksums: https://github.com/379385796-sys/dsh-environment-packer/releases/download/v0.7.4/SHA256SUMS.txt
