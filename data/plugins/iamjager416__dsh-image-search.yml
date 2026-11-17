@@ -2,5 +2,6 @@ url: https://github.com/iamjager416/dsh-image-search
 name: iamjager416/dsh-image-search
 category: browser
 description:
-  en: "Google Lens reverse image search: give it a public image URL or a local file and it uploads to Lens and returns the result page; with a SerpAPI key it also returns structured matches (title, link, source site)."
-  zh: "Google Lens 反图：给图片地址或本地文件，上传到 Lens 返回结果页；配了 SerpAPI key 还能拿到结构化匹配（标题、链接、来源站点）。"
+  en: "Google Lens reverse image search: pass an image URL or a local file to get the Lens result page; with a SerpAPI key it also returns structured matches."
+  zh: "用 Google Lens 反查图片来源：给图片地址或本地文件返回结果页，配 SerpAPI key 可拿到结构化匹配。"
+icon: https://raw.githubusercontent.com/iamjager416/dsh-image-search/main/assets/icon-180.png
