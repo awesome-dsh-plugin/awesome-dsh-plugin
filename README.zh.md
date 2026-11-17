@@ -1873,6 +1873,7 @@ dsh plugin --profile web add dshmarket
 - [SpokAtom/dsh-status-lamp](https://github.com/SpokAtom/dsh-status-lamp) — 侧栏会话行状态灯：空闲蓝点、挂起灰空心（手动标记，或 5 天无对话自动）、归档灰实心；「视图选项 → 筛选会话」第一项可一键隐藏归档与挂起。原生待审批、进行中、有新结果灯保持不变。
 - [SpookySandwich/dsh-plugin-smooth-stream](https://github.com/SpookySandwich/dsh-plugin-smooth-stream) — 给 DeepSeek Harness 加入更好的流式文字动画。
 - [sqfcyily/dsh-workspace-files](https://github.com/sqfcyily/dsh-workspace-files) — 在DeepSeek Harness Web GUI 中浏览工作区的目录/文件，并结合 Git 显示文件改动。
+- [ssesweb/dsh-deepseek-mode](https://github.com/ssesweb/dsh-deepseek-mode) — DeepSeek 网页版对齐模式：输入框深度思考与联网搜索开关、deepseek 预设、按会话门控 web_search。
 - [SSShooter/dsh-mindmap-live](https://github.com/SSShooter/dsh-mindmap-live) — DSH Web 实时双向思维导图：Agent 与用户共编同一棵树，改动即时互相同步，支持停靠分屏与全屏两种视图。
 - [stallenlu/dsh-sticky-notes](https://github.com/stallenlu/dsh-sticky-notes) — 一个 DSH 便签面板，支持可拖动悬浮窗、侧栏整页、Markdown 预览、粘贴图片与设置项，数据仅存于浏览器本地。
 - [starighterily-art/dsh-line-tight](https://github.com/starighterily-art/dsh-line-tight) — 调整对话正文的行高与段间距，两个数值在设置 → 通用里可改。
