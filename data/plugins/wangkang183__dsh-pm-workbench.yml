@@ -1,0 +1,7 @@
+url: https://github.com/wangkang183/dsh-pm-workbench
+name: wangkang183/dsh-pm-workbench
+category: ui
+description:
+  en: 'A right-sidebar memo workbench with tags, due dates, calendar, AI item parsing, a weekly digest, and host tools for conversational and WeChat todo management.'
+  zh: '右侧栏记事本式工作台：标签、截止日期、日历、AI 拆分、周报，以及对话/微信操作待办的 Host 工具。'
+icon: https://raw.githubusercontent.com/wangkang183/dsh-pm-workbench/main/assets/icon-180.png
