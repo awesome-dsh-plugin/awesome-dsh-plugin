@@ -1,0 +1,6 @@
+url: https://github.com/chenchangqings/dsh-session-clear
+name: chenchangqings/dsh-session-clear
+category: session
+description:
+  en: Adds a Delete session action to the DSH session-row menu and removes that session's local records.
+  zh: 在 DSH 会话行菜单加入「删除会话」，并删除该会话的本地记录。
