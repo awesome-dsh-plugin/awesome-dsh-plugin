@@ -1,0 +1,6 @@
+url: https://github.com/twentythreenineteen/dsh-context-mode
+name: twentythreenineteen/dsh-context-mode
+category: tools
+description:
+  en: 'DeepSeek Harness bundle plugin that mounts the context-mode MCP server, providing local sandboxed execution and SQLite FTS5 search that keep bulky tool output out of the agent context window.'
+  zh: '为 DeepSeek Harness 挂载 context-mode MCP 服务的 bundle 插件，通过本地沙箱执行与 SQLite FTS5 搜索，把大量工具输出挡在 agent 上下文窗口之外。'
