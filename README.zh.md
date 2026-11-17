@@ -9662,6 +9662,7 @@ dsh plugin --profile web add dshmarket
 - [Delthin/dsh-plugins#feishu-notify](https://github.com/Delthin/dsh-plugins/tree/main/packages/feishu-notify) — 通过飞书自建应用向私聊或群聊发送单向会话提醒，在离席时及时同步关键节点。插件会在出现审批请求、提问和计划确认时即时推送消息；当整体工作持续满 3 分钟进入完成或收尾阶段时，模型可主动调用工具发送完成摘要，并支持按需配置接收对象、免打扰时段与时区。
 - [dingyi222666/dsh-session-notification](https://github.com/dingyi222666/dsh-session-notification) — 会话完成等四种状态的通知响应，支持浏览器提示。
 - [dixieWithHeart/dsh-notify-chime](https://github.com/dixieWithHeart/dsh-notify-chime) — 回合完成、中断、出错或 Agent 提问时播放可区分的提示音，提问时可弹 Windows 系统通知。
+- [doncc/dsh-beacon](https://github.com/doncc/dsh-beacon) — DeepSeek Harness 的 Linux 系统托盘状态灯：绿=全部空闲，灰=有会话在跑，黄=有会话在等你回答或批准权限；中键点击跳到最早待确认的会话。托盘由 install.sh 安装，随包提供的 DSH 插件负责设置页开关与点击跳转。
 - [doncelee229-cmyk/dsh-plugin-approval-alert](https://github.com/doncelee229-cmyk/dsh-plugin-approval-alert) — 审批与选择方案的系统级桌面通知：通知显示所属工作区、点击跳转到对应工作区，多语言（简中/繁中/英文），附提示音。
 - [dsh-niao/dsh-niao-message](https://github.com/dsh-niao/dsh-niao-message) — DeepSeek Harness 的 macOS 系统通知插件：任务中止、超限、阻塞、中断、出错、等待提问或批准、完成或子代理结束等事件通过 terminal-notifier 弹系统横幅；点击横幅打开指定应用，回到页面自动清空。
 - [dsh-pulse/dsh-hermes-bridge](https://github.com/dsh-pulse/dsh-hermes-bridge) — DSH 的任务队列执行端点：需要自行部署独立的 Hermes Agent 网关并编写自己的微信入站脚本；仅在单一环境验证过，需要按你的环境适配。
@@ -11069,7 +11070,7 @@ dsh plugin --profile web add dshmarket
 - [jayantTang/DSH_Mobile#mobile-link](https://github.com/jayantTang/DSH_Mobile/tree/main/plugins/mobile-link) — DSH Mobile 的电脑侧连接器：连上可自建的公网 WSS 中转，手机在 4G/5G 下即可访问这台电脑上的 DSH 会话，电脑不需要公网 IP 也不用组网；中转只做鉴权与转发。
 - [JeremyCruzFang/dsh-plugin-dshm#bridge](https://github.com/JeremyCruzFang/dsh-plugin-dshm/tree/main/bridge) — 通过本地网络或 Tailscale，将 DSHM iPhone/iPad 配套应用连接到 DeepSeek Harness，支持设备配对、会话控制和文件传输；配套应用的公开 TestFlight 仍在等待 Apple 审核。
 - [Jiachi5533/dsh-remote-gateway](https://github.com/Jiachi5533/dsh-remote-gateway) — 带精确来源 IP 白名单的 HTTP/SSE/WebSocket 网关，让 DSH Web UI 在带认证反向代理后保持设置、插件与宿主机目录选择功能，并提供白名单健康检查。
-- [jiahui-huang1/dsh-linked-workspace](https://github.com/jiahui-huang1/dsh-linked-workspace) — 把 SSH 连接变成 DSH 远程目录与本地⇄远端联动工作区：远程目录只读浏览，联动工作区可编辑、双向传输、镜像同步，并提供 linked_workspace 工具。侧栏页面需配合 dsh-better-sidebar（v0.24+）；没有它只有设置页可用。
+- [dsh-local-remote-linked-workspace](https://github.com/jiahui-huang1/dsh-linked-workspace) — 把 SSH 连接变成 DSH 远程目录与本地⇄远端联动工作区：远程目录只读浏览，联动工作区可编辑、双向传输、镜像同步，并提供 linked_workspace 工具。侧栏页面需配合 dsh-better-sidebar（v0.24+）；没有它只有设置页可用。
 - [Jiangsubei/dsh-qqbot-bridge](https://github.com/Jiangsubei/dsh-qqbot-bridge) — 通过 QQ（官方 Bot API v2，仅单聊）远程控制 DeepSeek Harness 会话与工作区：列出/切换工作区、新建会话、压缩历史、切换模型，支持流式输出、Markdown 与审批转发。未做按用户门禁——任何能给该机器人发消息的人都能控制这些会话，消耗你的模型额度与文件权限。
 - [jixishi/dsh-adapter-qq](https://github.com/jixishi/dsh-adapter-qq) — QQ 官方单聊机器人适配器：支持交互操作板、工作区会话管理与 Web UI 实时双向同屏。
 - [JochenYang/dsh-remote#dsh-remote](https://github.com/JochenYang/dsh-remote/tree/main/dsh-remote) — 随时随地用手机操作 DSH：自托管中继 + 桌面 host 插件组成令牌认证隧道（保序 HTTP 反向代理 + WebSocket 桥接），扫码配对、管理台可管理设备与令牌，并自动注入移动适配层（聊天全宽、设置弹窗全屏、侧栏抽屉化）。
@@ -11226,7 +11227,7 @@ dsh plugin --profile web add dshmarket
 - [WilShi/dsh-ssh-workspace](https://github.com/WilShi/dsh-ssh-workspace) — 通过 SSH 与 SFTP 把服务器目录映射为受控的本地缓存工作区，模型、Agent、会话与记忆仍在本机运行。
 - [wingsky-1/dsh-plugin-hub#packages/dsh-lan-proxy](https://github.com/wingsky-1/dsh-plugin-hub/tree/main/packages/dsh-lan-proxy) — 局域网访问 dsh web UI：HTTP/HTTPS/WS 转发 + TLS（自签名/自定义证书）；HTTP 自适应 Brotli/gzip 与 WebSocket permessage-deflate 双压缩；WS 半开探活，移动端切后台不僵死；启动令牌自动注入，LAN 设备免手工拿 token；DNS 重绑定防护 + 回环-only 上游白名单。作者已退役：已发布的 npm 版本仍可安装，但不再适配新版 DSH（迁移说明见仓库 docs/migrations/dsh-lan-proxy.md）。
 - [WinKing-R/dsh-uniterminal](https://github.com/WinKing-R/dsh-uniterminal) — 在 DSH 右侧栏里提供 SSH 终端、SFTP 文件管理与端口转发（-L/-R/-D），支持跳板链，记住的密码交给操作系统密码箱保管。
-- [winlin926/dsh-remote-connect](https://github.com/winlin926/dsh-remote-connect) — 用手机浏览器远程控制电脑上的 DeepSeek Harness：扫码并在电脑上确认设备后，在宿主自己的网页界面里对话、处理工具审批、预览工作区文件；支持同一局域网（可配域名 HTTPS）或经自托管公网中转节点接入。
+- [dsh-carry](https://github.com/winlin926/dsh-carry) — 用手机浏览器远程控制电脑上的 DeepSeek Harness：扫码并在电脑上确认设备后，在宿主自己的网页界面里对话、处理工具审批、预览工作区文件；支持同一局域网（可配域名 HTTPS）或经自托管公网中转节点接入。
 - [WNLUO/dsh-mobile-plugin](https://github.com/WNLUO/dsh-mobile-plugin) — DeepSeek Harness App 让你在手机上使用这台电脑或服务器上的 DeepSeek Harness。手机和平板都能用，安卓和苹果都支持。在手机上可以继续对话、查看文件、管理插件，也可以从正在用的这一台连上其他几台上的 DeepSeek Harness，分别打开来用。
 - [WODE25500/dsh-ssh-pro](https://github.com/WODE25500/dsh-ssh-pro) — SSH 增强运维：连接测试、远程目录、ssh-config 导入、指纹检查与多主机批量执行。
 - [wsy320/dsh-ssh-exec](https://github.com/wsy320/dsh-ssh-exec) — 通过 SSH 在远程主机执行命令，支持密码认证，无需终端。远程主机的密码从本地 hosts 文件以明文读取（或从 passwordEnv 指定的环境变量读取）。
@@ -11248,7 +11249,7 @@ dsh plugin --profile web add dshmarket
 - [YE-ZINAN/dsh-lan-gate#plugin](https://github.com/YE-ZINAN/dsh-lan-gate/tree/main/plugin) — dsh-lan-gate 局域网网关的控制面：设置图标旁的一个按钮，显示网关是否在跑、有几台手机或平板在等批准；一次点击打开只认回环地址的批准页，省去手敲 URL；网关没在跑时先经计划任务把它拉起。在手机或平板界面上不渲染。
 - [yu7777777777/dsh-server-toolbox](https://github.com/yu7777777777/dsh-server-toolbox) — 在侧栏登记 SSH 服务器、到期日期和服务网址，使用 Windows DPAPI 加密保存密码和导入私钥，支持显式核对主机指纹和登录测试；Agent SSH 命令默认逐次授权，也可改为跟随会话权限。
 - [yubi233/dsh-phone-remote](https://github.com/yubi233/dsh-phone-remote) — dsh 的 Host 侧插件：经自托管中继把手机配到 dsh 实例，一条出站连接承载会话列表、流式对话、审批、附件与文件预览，送达专用手机网页壳；设备用一次性二维码链接配对，可在 dsh 网页内的控制台随时撤销。
-- [yukre/dsh-session-api](https://github.com/yukre/dsh-session-api) — 在 DSH 自带 web server 上开一个仅限本机回环的 HTTP 接口：从页面外读取会话运行状态，并驱动输入框的操作——发消息或即时插话、切模型与权限档位、取消、改队列、裁决待办的审批与提问。Bearer 令牌鉴权，支持 JSON 与 Markdown 输出。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [yukre/dsh-session-api](https://github.com/yukre/dsh-session-api) — 在 DSH 自带 web server 上开一个仅限本机回环的 HTTP 接口：从页面外读取会话运行状态，并驱动输入框的操作——发消息或即时插话、切模型与权限档位、取消、改队列、裁决待办的审批与提问。Bearer 令牌鉴权，带 Host/Origin 准入，支持 JSON 与 Markdown 输出。
 - [yuunnn/dsh-on-imessage](https://github.com/yuunnn/dsh-on-imessage) — 在 iPhone 信息里直接和本机 DeepSeek Harness（dsh）对话：切换工作区/会话、开新会话、原生信息气泡回复，无需额外 App、服务器或云服务。
 - [Yylx-R/dsh-console#dsh-plugin](https://github.com/Yylx-R/dsh-console/tree/main/dsh-plugin) — 通过自建中继，用手机远程操作电脑上的 DSH：发消息/图片/文件、看流式回复、截取桌面、远程 Alt+Tab。
 - [Z-6354/dsh-mobile-hanui](https://github.com/Z-6354/dsh-mobile-hanui) — DSH Web 界面的移动端适配：窄屏下把桌面三栏布局改造成触屏友好的手机布局（覆盖式抽屉、可拖拽悬浮按钮、全屏弹窗、上滑加载历史），1024px 断点内生效，桌面端零影响。 — 基于 dsh-mobile-gate 的完整移动端 PWA：安全远程访问网关 + 可安装到主屏（manifest + service worker）+ 离线可用 + 触屏手势（下拉刷新/边缘返弹/捏合缩放字体）+ agent 完成推送 + 触屏优先布局，桌面零影响。
