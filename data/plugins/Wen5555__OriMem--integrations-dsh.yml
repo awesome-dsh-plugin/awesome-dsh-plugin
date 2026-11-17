@@ -1,6 +1,7 @@
 url: https://github.com/Wen5555/OriMem/tree/main/integrations/dsh
 name: Wen5555/OriMem#dsh
 category: memory
+icon: https://raw.githubusercontent.com/Wen5555/OriMem/main/assets/icon.png
 tarball: https://github.com/Wen5555/OriMem/releases/download/v0.1.0/dsh-orimem-0.1.0.tgz
 description:
   en: 'Long-term memory in your own Obsidian vault over MCP: hybrid recall (E5 vectors, FTS5, wiki-links), verified write-back with receipts, and Stop-hook capture of dsh sessions into the vault. Requires the orimem CLI.'
