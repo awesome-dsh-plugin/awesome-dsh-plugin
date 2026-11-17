@@ -3922,6 +3922,7 @@ dsh plugin --profile web add dshmarket
 - [objectyan/dsh-model-picker-plus](https://github.com/objectyan/dsh-model-picker-plus) — 把输入框的模型下拉换成可搜索、按厂家分组的模型库：顶部全局搜索、左栏固定视图与全部厂家、右栏模型列表并在打开时定位到当前模型的厂家，支持能力筛选、收藏、最近使用、用量排序，并自动渲染官方模型菜单选项（如智能体团队协作开关）。
 - [oh-dsh-plugins/dsh-gpt-adapter](https://github.com/oh-dsh-plugins/dsh-gpt-adapter) — 适配 GPT 模型的推理等级与上下文设置，并复用本地 Codex 指令、技能、插件资源和 MCP 配置。
 - [omdsh-dev/dsh-llm-fallbacks](https://github.com/omdsh-dev/dsh-llm-fallbacks) — 基于角色的模型重试与备用策略。
+- [omdsh-dev/dsh-pi-models](https://github.com/omdsh-dev/dsh-pi-models) — 将 pi 的提供商、模型、API 密钥和思考等级投影到 DSH 模型选择器，并监听配置变化自动更新。
 - [omdsh-dev/Qwen-MM-Plugins](https://github.com/omdsh-dev/Qwen-MM-Plugins) — Qwen 多模态插件支持。
 - [OPaimon/dsh-model-gate](https://github.com/OPaimon/dsh-model-gate) — 提供模型粒度的启用禁用机制：从 DSH 模型目录隐藏被禁用的模型，以协议内错误块拦截直接分发请求，并提供UI设置界面。
 - [OpenTritium/dsh-codex-shim](https://github.com/OpenTritium/dsh-codex-shim) — 为选定的模型路由模拟 Codex 环境，以提升 GPT 系列模型的工具调用成功率。
@@ -5628,6 +5629,7 @@ dsh plugin --profile web add dshmarket
 - [woshishadowhunter/dsh-seed-society](https://github.com/woshishadowhunter/dsh-seed-society) — 面向 dsh-mneme 的记忆巩固调优（开启 autoDream、放大输出预算、deepseek-chat 路由）与 llm-deepseek 推理力度修复，附带可审计智能体运行时 seed-society 的 MCP 工具桥与六个唯识种子技能。
 - [wqx11235/dsh-experience](https://github.com/wqx11235/dsh-experience) — 本地优先的经验库：纯 markdown 条目按报错签名检索；开口前召回按「读回率」自动抬高阈值；失败→修复自动起稿，缺口队列一键认领/归档。自带脱敏起步库，不调模型、不联网。
 - [WsTe47/mylife](https://github.com/WsTe47/mylife) — 本地优先的个人状态档案与决策引擎：逐字保留你的原始输入并精确到行地溯源，给出结论前先生成"证伪项"反驳自己，为每个事实单独设置有效期，并指出这个决定正建立在哪些空白之上。
+- [wsy320/dsh-memory-vault](https://github.com/wsy320/dsh-memory-vault) — 个人记忆库：加权检索、受保护写入、frontmatter 自检、密钥脱敏与自动 git 同步。
 - [WU079/dsh-memory-keeper](https://github.com/WU079/dsh-memory-keeper) — 跨会话记忆：会话自动导出成能读的 Markdown（带出处），维护一份长期 MEMORY.md，新窗口醒来先看摘要。
 - [wu81313-lab/dsh-company-kb](https://github.com/wu81313-lab/dsh-company-kb) — DSH 本地文件夹知识库：把 Office、文本、PDF 与扫描件建成 SQLite FTS5 索引，提供 kb_search / kb_read / kb_list / kb_status / kb_session 五个工具与 Web 面板；仅在用户点名时检索，仅在手动触发时同步。
 - [wuwen837/dsh-companion](https://github.com/wuwen837/dsh-companion) — 在「工作」之外加一个「聊天」模式：使用自定义人设，每轮自动提炼长期记忆并按话题召回，还能保存和发送表情包。
@@ -6674,6 +6676,7 @@ dsh plugin --profile web add dshmarket
 - [ollamadou/dsh-downloader](https://github.com/ollamadou/dsh-downloader) — 支持断点续传、多连接加速、国内镜像/代理预置与 DeepSeek 资源发现的下载器。
 - [omdsh-dev/dsh-custom-tool](https://github.com/omdsh-dev/dsh-custom-tool) — 用 Monaco 编辑器创建和管理沙箱化的自定义 JavaScript 工具。
 - [omdsh-dev/dsh-data-agent](https://github.com/omdsh-dev/dsh-data-agent) — 让 AI 帮你连数据库、写 SQL。
+- [omdsh-dev/dsh-memos](https://github.com/omdsh-dev/dsh-memos) — 在 DSH 中搜索、浏览和读取自托管 usememos 笔记，并提供凭据设置面板。
 - [omdsh-dev/dsh-tool-calculator](https://github.com/omdsh-dev/dsh-tool-calculator) — 安全的数学表达式求值器，零依赖递归下降解析器。
 - [omdsh-dev/dsh-tool-csv](https://github.com/omdsh-dev/dsh-tool-csv) — CSV 解析/查询/统计/转换（RFC 4180），零依赖状态机解析器。
 - [omdsh-dev/dsh-tool-diff](https://github.com/omdsh-dev/dsh-tool-diff) — 文本/JSON/CSV/Markdown 结构化比较与 unified diff。
@@ -7100,6 +7103,7 @@ dsh plugin --profile web add dshmarket
 - [wodongx123/dsh-language-control](https://github.com/wodongx123/dsh-language-control) — 让 Agent 的思考过程也自动使用中文。在每步推理前向 System Prompt 最顶部注入语言约束，强制思维链、规划、工具调用推理全部使用中文，防止工具返回英文内容后发生语言漂移。支持在设置面板中实时编辑约束文本。
 - [wqx1999/dsh-litman](https://github.com/wqx1999/dsh-litman) — 把 litman（用 `lit` 命令管理的本地文献库）接入 DSH：侧栏入口列出你的 litman 文献库，点一下就在新会话里把它作为工作区打开；自带的 skill 在征得你同意后，用官方安装命令装好 litman，并接入 litman 自己的 skill。
 - [wsk114514/dsh-ark-wiki](https://github.com/wsk114514/dsh-ark-wiki) — 查询 PRTS Wiki 的《明日方舟》干员、物品、关卡、剧情与泰拉大典世界观条目，并基于剧情卡司统计与卡池历史预测未实装角色、异格与卡池排期。
+- [wsy320/dsh-embedded-workbench](https://github.com/wsy320/dsh-embedded-workbench) — 串口终端与 ZLG／CXCAN 的 CAN/UDS 工作台：实时收发、CSV 录制，并以只读方式把状态交给 agent。
 - [wth373737/dsh-plugin-mail-triage](https://github.com/wth373737/dsh-plugin-mail-triage) — IMAP 邮件分拣与清理：增量只读扫描，先过硬保护规则层、再走可选的本地模型分类，产出报告与带哈希的清单，人工批准后才移动到回收站——全程不 expunge。
 - [wu04186767/dsh-plugin-macos](https://github.com/wu04186767/dsh-plugin-macos) — 给 DeepSeek Harness 智能体的 21 个 macOS 原生工具，涵盖通知、剪贴板、截屏、朗读、防休眠、深色模式、Spotlight、快捷指令、AppleScript 与 Safari 标签页，零依赖。
 - [WU079/dsh-douyin-subagent](https://github.com/WU079/dsh-douyin-subagent) — 让子代理在谷时刷抖音、读评论并汇报；附带发作品/回评论的 dy_* 工具（评论从已登录页面带签名直发，不依赖 IM ticket）、每日配额定时，以及设置页「刷抖音」里的控制面板（总开关、自动模式、谷时窗口、每天轮数、报告详细度）。偏 Windows；搜索与评论依赖另装的 douyin-mcp 可执行文件（yunsur/douyin-mcp 的 Release，路径经 dy_config 的 mcpExe 设置）及 Edge/Chromium 登录；回评论需要开了 CDP 端口的已登录浏览器；发作品还需多数账号没有的额外凭据。
@@ -11643,6 +11647,7 @@ dsh plugin --profile web add dshmarket
 - [nzl153/dsh-pet-whale](https://github.com/nzl153/dsh-pet-whale) — 官方鲸鱼轮廓的桌宠，桌面端和网页端都能用：SVG 动画和表情随 agent 状态切换（思考／工作／完成／报错／等待确认），还能跟随其他在跑的会话并用角标显示个数；可戳可拖、能甩晕、按在屏幕边上会压扁，鼠标在头顶来回蹭就是摸头；7 套色板、4 档大小、合成音效，跟随亮暗主题，附网页预览可直接试玩。
 - [omdsh-dev/dsh-auto-chess](https://github.com/omdsh-dev/dsh-auto-chess) — 自走棋：人机对战或双 AI 对弈。
 - [omdsh-dev/dsh-gomoku](https://github.com/omdsh-dev/dsh-gomoku) — 与 AI 下五子棋，也可让 AI 对局比棋力。
+- [omdsh-dev/dsh-gonic](https://github.com/omdsh-dev/dsh-gonic) — 在 DSH Web 界面播放 Gonic/Subsonic 曲库，支持搜索、歌单、队列和 Agent 指令浏览器播放。
 - [oopsylol/dsh-waaagh-ork](https://github.com/oopsylol/dsh-waaagh-ork) — 给 DSH Web 加一个会眨眼的像素绿皮兽人：把模型思考与输出掩码成 Waaaaaaagh!（点击显示原文），并支持随机长度的输入掩码。
 - [Orchidroot/dsh-friends#plugin](https://github.com/Orchidroot/dsh-friends/tree/main/plugin) — DSH 好友浮窗，支持一对一聊天、自定义头像和状态词条；所需好友服务端在同一仓库，可用 npx dsh-friends-service 或 Docker 启动。
 - [OrenLin/dsh-grudge-book](https://github.com/OrenLin/dsh-grudge-book) — 记着你怎么跟 AI 说话——第 7 次「最后一版」红页加粗，半夜改需求红页画线，一句「谢谢」金页贴花，AGI 来了翻本子给你发清算判决书。纯本地规则引擎，中英双语。
