@@ -1,0 +1,6 @@
+url: https://github.com/TecFancy/dsh-lingualab
+name: TecFancy/dsh-lingualab
+category: ui
+description:
+  en: 'Intensive-listening study panel: a full page in the centre column, opened from the left rail''s More menu, that turns audio, video and subtitles already in the workspace into sentence-by-sentence practice — speed, looping, shadowing, recording, kept sentences with graded review, and notes written back to disk for the agent to read.'
+  zh: '精听学习面板：中栏整页，从左栏「更多」菜单打开，把工作区里已有的音频、视频与字幕变成逐句练习——变速、循环、跟读、录音、收藏句子与分级复习，笔记写回磁盘供 agent 读取。'
