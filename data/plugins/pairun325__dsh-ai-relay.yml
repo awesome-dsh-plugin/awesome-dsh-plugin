@@ -1,0 +1,6 @@
+url: https://github.com/pairun325/dsh-ai-relay
+name: pairun325/dsh-ai-relay
+category: productivity
+description:
+  en: 'Ask another model from inside DSH: every OpenAI-compatible endpoint you configure becomes ai_ask / ai_list, so a second opinion is one tool call away.'
+  zh: '在 DSH 里叫别的模型干活：把配置好的 OpenAI 兼容接口挂成 ai_ask / ai_list，随时要一份第二意见。'
