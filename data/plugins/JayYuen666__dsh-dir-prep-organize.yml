@@ -2,5 +2,5 @@ url: https://github.com/JayYuen666/dsh-dir-prep-organize
 name: JayYuen666/dsh-dir-prep-organize
 category: ui
 description:
-  en: 'Two buttons beside the chat input: one rewrites the draft with the current directory in view, the other inserts a role template from 85 curated entries generated from the bundled `agents/` role library, which the settings card can extend with your own `.md` role files.'
-  zh: '对话输入框旁的两个按钮：一个结合当前目录改写草稿，另一个插入角色模板——默认 85 条精选模板由随包携带的 `agents/` 角色库生成，设置卡可用自己的 `.md` 角色文件扩充。'
+  en: 'Two controls beside the chat input: a split Polish button that rewrites the draft with the session directory and the real conversation turns in view, optionally in a role style, using the session model; and a Template dropdown that inserts one of 85 curated role templates generated from the bundled `agents/` role library, grouped by department. The settings card edits that same list, restores or imports the whole built-in library, and imports your own `.md` roles by path.'
+  zh: '对话输入框旁的两个控件：拆分的「润色」按钮结合会话目录与真实对话轮次、用该会话的模型改写草稿（▾ 可选按角色风格）；「模板」下拉按部门分组，插入 85 条由随包 `agents/` 角色库生成的精选角色模板。设置卡编辑同一份清单，可整份恢复或导入内置库，也能按路径导入自己的 `.md` 角色。'

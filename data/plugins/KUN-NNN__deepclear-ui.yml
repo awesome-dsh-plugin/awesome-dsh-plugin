@@ -1,0 +1,7 @@
+url: https://github.com/KUN-NNN/deepclear-ui
+name: KUN-NNN/deepclear-ui
+category: theme
+description:
+  en: 'Dot-matrix appearance plugin for DeepSeek Harness: a halftone welcome page (portrait and deepseek/harness wordmark on one dot lattice), a dot-matrix launch splash, a reasoning-level badge printed in dots inside the composer (MAX in whale blue), a spinning dot sphere with an English status label while the model thinks, a fading caret dot trail, and a hover dot field with a whale-blue rail on sidebar buttons. Also re-inks the quieter chrome: frosted composer glass, a grey focus halo, whale-blue bold prose, whale-blue diffs, reading layout and a low-saturation code palette. Fifteen preferences live in the profile config and can be switched off one by one. Requires DSH >=0.2.2-rc.3.'
+  zh: 'DeepSeek Harness 的点阵外观插件：点阵欢迎页（人像与 deepseek/harness 字标共用一套网点）、点阵启动动画、输入框里用点阵印出的推理等级徽章（MAX 为鲸鱼蓝）、思考时旋转的点阵球与英文状态行、打字时的光标点阵拖尾，以及侧边栏按钮悬停点阵与鲸鱼蓝竖线。同时重绘了更安静的界面细节：磨砂输入框、灰色聚焦光环、鲸鱼蓝加粗文字、鲸鱼蓝 diff、阅读排版与低饱和代码配色。十五个偏好存在 profile 配置里，可逐项关闭。需要 DSH >=0.2.2-rc.3。'
+icon: https://raw.githubusercontent.com/KUN-NNN/deepclear-ui/main/assets/icon-180.png

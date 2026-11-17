@@ -1,0 +1,7 @@
+url: https://github.com/kelvin0304ykx-coder/dsh-task-readiness
+name: kelvin0304ykx-coder/dsh-task-readiness
+category: dev
+description:
+  en: 'Checks whether the current session can actually run a task before starting it: tool admission for the current step, model route, workspace write boundary, document engine and MCP visibility, reported per capability with evidence, plus an opt-in minimal probe and a recheck after an approved fix.'
+  zh: '开工前检查当前会话能否真正执行一项任务：本轮工具准入、模型路由、工作区写入边界、文档引擎与 MCP 可见性，逐项给出状态与依据；可选最小探测，并在经批准的处理后复检。'
+tarball: https://github.com/kelvin0304ykx-coder/dsh-task-readiness/releases/download/v0.1.1/dsh-task-readiness-0.1.1.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/Harm0ny-AI/DSH-Video2Agent/tree/main/packages/dsh-video2agent
+name: Harm0ny-AI/DSH-Video2Agent#dsh-video2agent
+category: vision
+description:
+  en: 'Your agent has browsed countless web pages — now let it watch video. Video2Agent lets an AI agent understand video and answer directly: ask Bilibili or local videos what was said, which one is better, whether it is worth watching. Cross-video search returns the video and timecode, exact-frame evidence at a timecode, and 1-10 video batch analysis; local-first, with optional cloud ASR/OCR and Bilibili login. Needs Python 3.11+, FFmpeg and the CLI (pip install video2agent); the plugin settings page checks and installs the environment.'
+  zh: '你的 Agent 浏览了无数网页，现在该让它看视频了。Video2Agent 让 AI Agent 看懂视频、直接回答：B 站和本地视频都能问——讲了什么、哪条更好、值不值得看。跨视频检索返回视频与时间码，按时间码取帧作证据，一次批量分析 1-10 个视频；本地优先，云端 ASR/OCR 与 B 站登录可选。需要 Python 3.11+、FFmpeg 与 CLI（pip install video2agent），设置页可一键检查并安装环境。'
+icon: https://raw.githubusercontent.com/Harm0ny-AI/DSH-Video2Agent/main/packages/dsh-video2agent/assets/icon-180.png

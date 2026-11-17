@@ -1,0 +1,6 @@
+url: https://github.com/Chriszzx/dsh-bookshelf
+name: Chriszzx/dsh-bookshelf
+category: ui
+description:
+  en: 'Local PDF and EPUB bookshelf with built-in readers, persistent progress, bookmarks, and EPUB page discussions in DeepSeek Harness. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DeepSeek Harness 中管理和阅读本地 PDF、EPUB，保存阅读进度与书签，并将 EPUB 当前页带入会话讨论。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

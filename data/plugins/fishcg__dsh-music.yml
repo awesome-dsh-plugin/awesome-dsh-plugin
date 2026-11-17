@@ -1,0 +1,6 @@
+url: https://github.com/fishcg/dsh-music
+name: fishcg/dsh-music
+category: fun
+description:
+  en: 'Embeds the acgay music site as a DSH side panel with search, a global mini player, and optional import of missing tracks into acgay when an import token is configured. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 acgay 音乐站嵌入 DSH 侧边栏，支持搜索、全局迷你播放器；配置导入 token 后可把站点缺的曲目导入 acgay。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
