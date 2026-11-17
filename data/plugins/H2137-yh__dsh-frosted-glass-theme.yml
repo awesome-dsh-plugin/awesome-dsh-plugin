@@ -1,0 +1,8 @@
+url: https://github.com/H2137-yh/dsh-frosted-glass-theme
+name: H2137-yh/dsh-frosted-glass-theme
+category: theme
+description:
+  en: 'Frosted-glass theme: translucent blurred panels over a soft colorful backdrop, with one shared glass layer for the chat, trajectory and stats views, light and dark variants, and an optional acrylic mode that lets the real desktop wallpaper show through.'
+  zh: '磨砂玻璃主题：半透明毛玻璃面板浮在柔和彩色玻璃底图上，对话/轨迹/统计页共用同一层透色，浅色/深色两套；可选开「真·透桌面」，让桌面壁纸实时透出来。'
+icon: https://raw.githubusercontent.com/H2137-yh/dsh-frosted-glass-theme/main/assets/icon-180.png
+tarball: https://github.com/H2137-yh/dsh-frosted-glass-theme/releases/latest/download/dsh-frosted-glass-theme.tgz
