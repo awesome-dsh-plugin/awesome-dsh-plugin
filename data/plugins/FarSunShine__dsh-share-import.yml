@@ -1,0 +1,7 @@
+url: https://github.com/FarSunShine/dsh-share-import
+name: FarSunShine/dsh-share-import
+category: session
+description:
+  en: Import a public DeepSeek chat share link as a stored, resumable Session in a workspace you pick.
+  zh: 把公开的 DeepSeek 对话分享链接导入成所选工作区里可续聊的会话。
+icon: https://raw.githubusercontent.com/FarSunShine/dsh-share-import/main/assets/icon-180.png
