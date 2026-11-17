@@ -1,0 +1,6 @@
+url: https://github.com/DrizzleGig/dsh-novel-voice
+name: DrizzleGig/dsh-novel-voice
+category: tools
+description:
+  en: "A local writing-style profile for AI-written novels: imported reference books and your own drafts are decoded, chapter-split and measured on your machine with no model call, and the measurements become a four-layer style profile (portrait, metric ranges, technique cards, scene modes) that the author confirms and can roll back. voice_brief compiles the profile for the current scene into a brief of at most 600 characters with 3-5 rules, at most 8 banned phrasings and one anchor excerpt; voice_check points at stock phrasing, negation-then-correction sentences, paragraph-end uplift, stated abstract emotions and 20-character overlaps with shelf works and gives no score; voice_polish rewrites only the matched span behind five validations and marks the span needs-author when one fails. Ships seven voice_* tools and a right-sidebar studio; off by default (/voice on)."
+  zh: "本地完成的小说文风档案：导入的参考小说和自己的旧稿在本机解码、分章、统计，不调用模型，统计结果整理成四层档案（画像、指标区间、技法卡、场景模式），由作者确认并可回滚。voice_brief 把当前场景的档案编译成不超过 600 字的简报（3–5 条写法、不超过 8 条禁语、1 条锚点原文）；voice_check 把套话、否定-修正句、段末升华、抽象情绪直述以及与自己书架作品 20 字连续重合定位到句，不给分数；voice_polish 只改命中片段并过五道校验，不过则回退并标 needs-author。提供七个 voice_* 工具和一个右栏「风格工作室」，默认关闭（/voice on）。"
