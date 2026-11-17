@@ -6693,6 +6693,7 @@ dsh plugin --profile web add dshmarket
 - [philomelcc/dsh-status-monitor](https://github.com/philomelcc/dsh-status-monitor) — 磁盘、CPU/内存/GPU、监听端口与会话用量四张卡片，可放大到整页；既可作工作台模块，也能独立运行。端口卡片仅支持 Windows，GPU 卡片需要 nvidia-smi。
 - [PicGo/dsh-plugin](https://github.com/PicGo/dsh-plugin) — 通过 PicGo 已有配置（PicGo Cloud、GitHub、S3、腾讯云 COS、七牛，或任意已安装的上传插件）把本地图片和文件上传到图床，提供 `picgo_upload` 工具与 `/picgo` 命令。
 - [PiedPiper911/dsh-video-tools](https://github.com/PiedPiper911/dsh-video-tools) — 基于 FFmpeg.wasm 的浏览器端音视频工具集，支持抽帧、截图、图片压缩与视频转 GIF。
+- [PilotHowe/dsh-plugin-buddy](https://github.com/PilotHowe/dsh-plugin-buddy) — 不用手动逛市场，也不用先想关键词：在对话里说出任务，插件搭子会用多组关键词自动检索 DSH 社区插件目录，按相关性与质量信号排序，并把匹配插件的 README 与包清单整理成有据可查的上手步骤；高置信度匹配时先询问是否切换。
 - [PipeDream941/dsh-subagent-antigravity](https://github.com/PipeDream941/dsh-subagent-antigravity) — 把 Google 官方 Antigravity CLI（agy）作为一次性编码子智能体接入 DeepSeek Harness，提供 subagent_antigravity 委派工具，可直接使用 Gemini 4 Argon 等 Antigravity 订阅模型。需安装并登录 Antigravity CLI（agy 1.4+）。
 - [pixelligue/mcpbids-plugins](https://github.com/pixelligue/mcpbids-plugins) — 使用个人 API 密钥，将 DeepSeek Harness 连接到 MCP Bids 的美国联邦公开采购机会、TED 公告和来源文件工具。
 - [pixelligue/mcptender-plugins](https://github.com/pixelligue/mcptender-plugins) — 使用个人服务 API 密钥，将 DeepSeek Harness 连接到 MCPTender 的俄罗斯公开采购记录、来源文件及已公布合同供应商。
@@ -6964,6 +6965,7 @@ dsh plugin --profile web add dshmarket
 - [w756568942/dsh-ptc-router](https://github.com/w756568942/dsh-ptc-router) — 按任务自动选择 PTC 或标准工具呈现，并支持模型或用户在任务中随时切换。
 - [wackyju2-beep/dsh-better](https://github.com/wackyju2-beep/dsh-better) — 归档会话管理、任务完成桌面通知、更新检查、模型路由（关键词规则 + 白名单门控 model_route）、多任务定时触发（心跳与定点任务），以及 DeepSeek 风格的消息滚动导航。
 - [wade20250715/dsh-pubmed](https://github.com/wade20250715/dsh-pubmed) — PubMed 深度科研工具集：文献检索、作者调查、同名消歧、机构统计与师承匹配。
+- [Wakis-kaf/dsh-agents-models](https://github.com/Wakis-kaf/dsh-agents-models) — 把 DSH 的智能体模式定义成真正的预设：每个模式有自己的角色设定、工具集与插件挂载，并提供一个完全不加载任何能力的 pure 模式。
 - [Walvez/dsh-codex-sync](https://github.com/Walvez/dsh-codex-sync) — Codex 与 DSH 双向桥接：挂载 ~/.codex/skills、带工作区绑定的会话导入、mcp_servers 实时镜像，以及 Codex 端反向 MCP 安装器。
 - [Walvez/dsh-search-failover](https://github.com/Walvez/dsh-search-failover) — 原生 web_search 的搜索池：8 个免费/付费后端自动故障转移与额度感知熔断，设置页管理 API Key、自定义 SearXNG 实例、failover/rotate 策略切换与 SerpApi 实时额度查询。
 - [WanchunLian/dsh-draft-polish](https://github.com/WanchunLian/dsh-draft-polish) — DSH 输入框一键润色草稿：把口语化表达改写成专业措辞；只发送草稿快照、绝不夹带会话上下文；LLM 不可用时优雅降级，不阻塞发送。
@@ -10684,6 +10686,7 @@ dsh plugin --profile web add dshmarket
 - [NekoErwin/dsh-auto-review-desktop](https://github.com/NekoErwin/dsh-auto-review-desktop) — 可配置的模型审批审查，支持工作区沙箱模式和审查记录。
 - [NekogamiJam/dsh-subagent-arg-guard](https://github.com/NekogamiJam/dsh-subagent-arg-guard) — 恢复 DSH subagent 与 subagent_fork 调用中已知的无效显式模型参数，移除完整覆盖后通过原有守卫管线重试一次。
 - [NEVSTOP-LAB/dsh-approval-mode](https://github.com/NEVSTOP-LAB/dsh-approval-mode) — 在权限下拉框旁增加「审批模式」开关：默认审批保留逐次确认，绕过审批自动放行所有工具调用，同时保持 Workspace Write 权限。
+- [odysseykernelt/dsh-dashcam](https://github.com/odysseykernelt/dsh-dashcam) — 在插件运行时记录它实际做了什么——读写哪些文件、连接哪些服务器、执行哪些命令——写进防篡改账本。只记录，不拦截。
 - [omdsh-dev/dsh-security-audit](https://github.com/omdsh-dev/dsh-security-audit) — 本机安全审计：配置/插件来源/会话/网络暴露面，只读脱敏风险报告。
 - [omdsh-dev/sandbox-micro](https://github.com/omdsh-dev/sandbox-micro) — microsandbox 沙箱支持。
 - [omdsh-dev/sandbox-mxc](https://github.com/omdsh-dev/sandbox-mxc) — 微软跨平台沙盒支持。
