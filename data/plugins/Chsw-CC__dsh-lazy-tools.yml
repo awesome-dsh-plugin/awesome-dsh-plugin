@@ -1,0 +1,6 @@
+url: https://github.com/Chsw-CC/dsh-lazy-tools
+name: Chsw-CC/dsh-lazy-tools
+category: tools
+description:
+  en: 'Replaces the standing tool schema catalog with a single toolbox entry: the model lists loaded tools and skills, fetches only the parameter schema it needs, then runs the call through the normal approval and guard pipeline. Tools can also be promoted to stay visible for one session and released again, and the per-agent narrowing fails open when the toolbox itself cannot register.'
+  zh: '把常驻的工具 schema 目录换成一个 toolbox 入口：模型先列出已加载的工具与技能，只取真正要用的参数 schema，再经正常的审批与 guard 管线执行调用；也能把工具提升为某个会话内常驻可见，用完再撤销。按 agent 的收窄在工具箱自身注册失败时会失败开放，不会让会话失去全部能力。'
