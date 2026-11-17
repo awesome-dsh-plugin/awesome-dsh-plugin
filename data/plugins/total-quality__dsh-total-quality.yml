@@ -1,0 +1,7 @@
+url: https://github.com/total-quality/dsh-total-quality
+name: total-quality/dsh-total-quality
+category: tools
+tarball: https://github.com/total-quality/dsh-total-quality/releases/download/v2.0.0/dsh-total-quality.tgz
+description:
+  en: Local manufacturing quality workspace with issue tracking, 8D projects, SPC and capability analysis, QMS documents, Word/Excel exports, and 16 Harness tools.
+  zh: 本地制造质量工作台，支持质量问题和 8D 项目管理、SPC 与过程能力分析、体系文件、Word/Excel 导出，并提供 16 个 Harness 工具。
