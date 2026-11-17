@@ -4349,6 +4349,7 @@ dsh plugin --profile web add dshmarket
 - [ami678-dev/session-manager](https://github.com/ami678-dev/session-manager) — 为 DeepSeek Harness Web 界面提供会话提醒、归档会话的安全删除（可选移入回收站）、批量清理和遗留文件清理。
 - [Angela-lwh/dsh-archive-purge](https://github.com/Angela-lwh/dsh-archive-purge) — 在已归档会话的行菜单里加入「删除会话」：永久移除会话日志目录、它启动的子代理会话日志、工作区归属、归档标记、投影缓存记录与 spill 溢出目录；宿主仍持有的会话先登记，下次启动或点「完成待删除清理」时完成。另外会清扫被放弃的空白占位、遗留的孤儿子代理与失效的投影缓存记录，并让空白占位不再出现在 @ 引用列表里。
 - [AngleNaris/slumberpavilion](https://github.com/AngleNaris/slumberpavilion) — 沉眠阁把 DSH 里已归档会话的日志与投影记录真正搬出加载路径，并提供归档、读取、还原、删除会话的工具。
+- [anheon/dsh-session-manager-delete](https://github.com/anheon/dsh-session-manager-delete) — 一次性彻底删除已归档的 DSH 会话：停掉正在跑的工作并注销宿主内存，删掉日志、投影缓存与 spill 目录，摘除工作区登记，清理浏览器端的草稿、页签与布局，最后重拉列表；只对已归档会话开放，每一步都有路径与同源校验，工作停不下来就拒删。
 - [Anionex/dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) — 对话回退：基于持久 Change Ledger 回滚会话与工作区状态。
 - [Anlerway/dsh-session-navigator](https://github.com/Anlerway/dsh-session-navigator) — 像 Windows 资源管理器那样管理 DSH 的会话：进行会话转移、删除、搜索、归档、收藏、待办等操作，对您的会话进行标签、备注，使用文件夹分组，方便地管理您的会话和工作区。同时也可以调用 AI 对您的会话进行一键总结、备注、修改标签。
 - [anweat/dsh-context-console](https://github.com/anweat/dsh-context-console) — 上下文控制台：通过轨迹墙与库存视图检查并模拟 DSH 上下文消费，并由内置消息锻造台创建、注入、导入或安全修复会话消息。
@@ -5226,6 +5227,7 @@ dsh plugin --profile web add dshmarket
 - [AllenWES365/dsh-local-memory](https://github.com/AllenWES365/dsh-local-memory) — 给 DeepSeek Harness 的跨项目长期记忆：每个项目各存各的库，另有一次性看遍全部的查询视图；还能不打开会话就直接从项目的 git 历史播种记忆。
 - [amd47802574/dsh-hand-note](https://github.com/amd47802574/dsh-hand-note) — 随手笔记：本地 Markdown 笔记插件，默认存放在用户主目录 ~/dsh随手笔记（跨平台、无盘符依赖）。卡片式全新界面，回收站（删除 30 天内可恢复），自定义标签管理（可提前建标签、一处删除全局生效、同名标签固定配色），列表密度切换与字号/行宽调节，平铺速览列表，全文检索，Markdown 预览，自动保存，批量删除，Office 零依赖文本抽取，支持 AI 回写。由 dsh-knowledge-lite 深度改造而来；老用户可在状态栏「库位置」选回旧库自动迁移。
 - [AndyYang12345/dsh-butler-memory](https://github.com/AndyYang12345/dsh-butler-memory) — PostgreSQL 持久个人记忆：MCP 记忆工具 + 可查看记忆与候选的 Web 面板。
+- [anheon/dsh-sift-kb](https://github.com/anheon/dsh-sift-kb) — 在 Windows 上把 DSH 接到用 sift-rag 单独安装的本机 sift 知识库：按需启停服务，侧栏面板支持混合/关键词/语义检索与带行号的全文阅读，课件经 courseware-to-sift 技能导入，Agent 可通过 sift_kb 工具与 sift MCP 工具访问。
 - [annkun/dsh-memory](https://github.com/annkun/dsh-memory) — 分层 Claude Code 式记忆：用户级+项目级双作用域（项目记忆随 git 团队共享），MEMORY.md 索引会话启动自动注入，上下文护栏，纯文件零依赖。
 - [Anseya/flow-tower-context#flow-tower](https://github.com/Anseya/flow-tower-context/tree/main/plugin/flow-tower) — 面向 DeepSeek Harness 的压缩驱动项目记忆：把压缩增量确定性编译为可检索、带引文的项目词典，自适应双注入，并提供可移植的压缩接管预设。
 - [AntonyLang/dsh-memory-observer](https://github.com/AntonyLang/dsh-memory-observer) — 在后台把长会话提炼为观察与反思并注入系统提示，压缩时直接用预备记忆渲染摘要；提供设置页与可回溯原文的 memory_recall。
@@ -8761,6 +8763,7 @@ dsh plugin --profile web add dshmarket
 - [cxv117793-blip/dsh-step-pause](https://github.com/cxv117793-blip/dsh-step-pause) — 按 agent 步骤计数，每满 N 步就在即将发出的那一批消息里追加一条汇报指令，让 agent 说明正在做什么、已完成什么、接下来做什么，说完继续，不停下来等你确认。间隔、提示词原文、以及「只在主智能体汇报」的默认值都能在设置页里改。
 - [Cyning12/SpecWave](https://github.com/Cyning12/SpecWave) — DeepSeek Harness 的 ICVO 编码规范套件（原 dsh-coding-kit）：bundle 插件加载时仅注册工具，须调用 apply_coding_standards 才注入规范；另附 P0 门禁 CLI（npx spec-wave），含 G1–G7 过程命令、skills install、host apply 与 IDE 块刷新。
 - [Dabouben/dsh-daily-tasks](https://github.com/Dabouben/dsh-daily-tasks) — 每日/每周任务管理：启动弹窗提醒、输入框上方滚动条、圆圈一键完成、任务卡片编辑、周日 AI 周总结；另附侧边栏 DeepSeek API 用量小部件（余额卡片、今日与累计 tokens 及费用、按模型明细、近 7 日柱状图）。数据以 JSON 存于 $DSH_HOME。
+- [Daphne999/dsh-auto-plugin-factory](https://github.com/Daphne999/dsh-auto-plugin-factory) — 需求雷达：每晚采集 Hacker News 与 GitHub 上「求工具 / 求插件」的帖子，归一化聚类去重，对两个插件市场查重，用固定公式打分，产出一份 Markdown 需求雷达日报（当天无达标需求也会出简报）。只做判断，不生成、不安装、不上架任何插件代码。
 - [Daphne999/dsh-daily-digest](https://github.com/Daphne999/dsh-daily-digest) — 给每日巡检回合提供事实层：对比插件市场注册表报新增条目，对比教育行业 SRC 页面（EDUSRC 众测、北京教育 SRC 赛季、常态化演习）报新一期活动。只报变化，首次调用只建基线、不报新增。
 - [Daphne999/dsh-safe-restart](https://github.com/Daphne999/dsh-safe-restart) — 重启 DSH 并告诉你到底成没成。Windows 上没有「从外部让 Electron 干净退出」的通道（发 WM_CLOSE 只会最小化窗口），所以这个插件不装优雅：强制结束宿主、带重试地重新拉起、再轮询宿主端口确认它真的在服务，最后把结果写进本地文件，并在 desktop profile 配好 qq-notify 凭据（appId/clientSecret/openid）时发一条 QQ 消息。2026-11-08 端到端实测通过。
 - [DarknessLED/dsh-loom](https://github.com/DarknessLED/dsh-loom) — 人在环的自我改进循环：给一个目标，工作链在子会话里一轮轮迭代，主 agent 始终保持空闲。
@@ -8816,6 +8819,7 @@ dsh plugin --profile web add dshmarket
 - [fcz20060311/dsh-life-planner](https://github.com/fcz20060311/dsh-life-planner) — 个人生活时间管理（基于 Meltllsy/dsh-todo-reminder 二次开发，不能与其同装：两者共用同一个 data-dsh-todo-css 样式节点）：待办与到期提醒、目标日倒计时、月历、正向专注计时、26 周活动热力图。
 - [february2015/dsh-taskswarm](https://github.com/february2015/dsh-taskswarm) — TaskPlane 的 DSH 移植版：按依赖分波、多 lane 并行执行（git worktree 隔离），任务包 + 跨模型评审 + 崩溃可恢复。
 - [FengHuoLinShan/novelAssist-dsh#novelcraft-dsh](https://github.com/FengHuoLinShan/novelAssist-dsh/tree/main/plugin) — 长篇小说写作插件：每本书一个 git 仓库，当前 39 个 DSH 领域工具 + Web 写作台；深度导入产候选草稿、AI 采用类写入正式资产前必过审批、确定性连续性检查（报告型）。独立开源（MIT），非 DeepSeek 官方产品；需 Node ≥ 24.11.0，当前适配 DSH 0.1.2-rc.1。
+- [fenglin233o/dsh-jingshen](https://github.com/fenglin233o/dsh-jingshen) — 精神（Spirit）个人助手：延续会话、记录经验、形成主动意向，并通过验证、检查点和回退改造自身源码。
 - [fengshenx/dsh-leader-agent](https://github.com/fengshenx/dsh-leader-agent) — 一个 leader 管多个 session：把目标告诉 leader，它拆成卡片、在后台跑常驻 worker 会话、收齐各自回报，任务事实落在右侧栏的按项目看板——几个 feature 并行推进，而不是逐个陪跑。项目级 LEADER.md 与 SLOTS.md 塑造每次请求的行为，`read_worker_session` 只读回放 worker 的会话过程、不唤醒它。
 - [fengt8291-lab/dsh-first-principles#plugin](https://github.com/fengt8291-lab/dsh-first-principles/tree/main/plugin) — 可机械核对的第一性原理台账：事实必须落回真实的 文件:行 并逐字引用那里的话，假设必须写明什么情况下它错了，结论不得依赖一个永不回来复查的假设；台账可带复查日期、置信度与止损条件。附带校验工具、/fp 命令族、不可逆命令前的可选闸门，以及列出每轮修掉哪些错误码的面板。
 - [FenrirCait/dsh-fail-guard](https://github.com/FenrirCait/dsh-fail-guard) — 同一工具连续失败达阈值时叫停。不是再试一次，而是推送一条四部分停手指令：试过什么、完整错误原文、初判原因、需要用户做什么。判定读真实工具结果（isError 或 shell 退出码非零），通过 agent.steer 回灌，让 agent 把它当成收到的消息而不是日志。
