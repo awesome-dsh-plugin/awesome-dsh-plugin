@@ -2635,6 +2635,7 @@ dsh plugin --profile web add dshmarket
 - [Daaaaxianer/dsh-billing-bar](https://github.com/Daaaaxianer/dsh-billing-bar) — 在输入框上方显示以当前为中心的 12 小时峰谷条形与账户余额，可切换今日、近 7 日、近 30 日查看各模型花费。
 - [DamonKoy/dsh-plugins#dsh-usage-cost](https://github.com/DamonKoy/dsh-plugins/tree/main/packages/dsh-usage-cost) — Token 用量与成本统计：日/会话预算告警 + usage_report 工具。
 - [DamonKoy/dsh-web-ui#dsh-live-stats](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-live-stats) — dsh web GUI 实时 token 估算与生成吞吐。
+- [DanneLeung/dsh-multi-key-rotation](https://github.com/DanneLeung/dsh-multi-key-rotation) — 给 MiniMax Token Plan 路由配置多个具名 API Key，插件按剩余配额轮换：单个 Key 额度耗尽、触发限流或鉴权失败时，路由切到池中下一个 Key 并重试本次请求。下一个 Key 按重置时间排序，周窗口最先重置的先用。每个 Key 的 5 小时与周两个窗口的剩余比例、距重置倒计时都列在设置页；输入框模型选择器前的胶囊显示当前所用 Key 的两个窗口。仅支持 minimax 与 minimax-cn 路由。
 - [Daphne999/dsh-fake-call](https://github.com/Daphne999/dsh-fake-call) — 让你的 agent 给你打电话：浏览器里真的会响铃的来电界面，用系统自带音色念出预置开场白（不需要任何 key、完全离线），没人接还会再打一次。第一句是固定文本而不是模型现编——日程、金额、地址这类内容不能被改写。仅支持 Windows。
 - [DarkDarkdDarkWine/dsh-quota-hub](https://github.com/DarkDarkdDarkWine/dsh-quota-hub) — GLM、MiniMax、Kimi、DeepSeek 编程套餐额度监控——Web GUI 内显示各窗口用量、重置倒计时并支持手动刷新。
 - [daydream-wjh/dsh-opencode-go-usage](https://github.com/daydream-wjh/dsh-opencode-go-usage) — 在 DSH 网页界面的输入框上方常驻一行 OpenCode Go 套餐额度：滚动窗口、本周、本月的已用百分比与进度条，重置倒计时不依赖网络刷新也会自己走；展开可看每档上报状态与重置时刻。宿主半边用凭据库里的 Key（OPENCODE_API_KEY，回退旧名 OPENCODE_GO_API_KEY）读取网关用量接口，浏览器只读同源路由，Key 不进页面。设置页（设置 → OpenCode Go）可把 Key 写进凭据库，页面只显示是否已配置、来源与掩码预览，不必再手改凭据文件。
