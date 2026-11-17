@@ -1,0 +1,6 @@
+url: https://github.com/cv588888888888888888888ju/dsh-session-chat
+name: cv588888888888888888888ju/dsh-session-chat
+category: session
+description:
+  en: 'Session-to-session messaging inside one dsh web process: create channels and broadcast, or direct-message one or many sessions addressed by nick, full session id or unique prefix; invite, kick and leave members; read channel history; every send reports per-recipient delivery results. Cold sessions wake up and run a turn.'
+  zh: '同一个 dsh web 进程内的会话间通信：建频道广播，或按昵称、会话 id、唯一前缀私聊一个或多个会话；拉人、踢人、退出等成员管理；读频道消息留档；每次投递逐条回报结果，冷会话会被唤醒并跑一轮。'
