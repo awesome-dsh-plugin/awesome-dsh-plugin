@@ -8906,7 +8906,7 @@ dsh plugin --profile web add dshmarket
 - [HMYDK/ai-native-sdlc-dsh#sdlc](https://github.com/HMYDK/ai-native-sdlc-dsh/tree/master/packages/sdlc) — 把 AI 原生 SDLC 落成 DeepSeek Harness bundle：任务状态机与制品链、带结构化裁决的独立验证、按问题编号的返工与复验、测试冻结、RSI 复盘与只读看板。
 - [hongyue0721/dsh-kimicode-swarm](https://github.com/hongyue0721/dsh-kimicode-swarm) — Kimi Code 风格 swarm：批量并行子 Agent 调度（自适应并发）、/swarm 命令与聊天内实时进度条。
 - [hoyyang/dsh-plan-board](https://github.com/hoyyang/dsh-plan-board) — 思维导图式项目规划与防跑偏：计划→模块→任务 DAG 与拓扑执行序号、Agent 站位、改图人审门、git 交叉核对与证据门禁。
-- [hoyyang/dsh-project-manager](https://github.com/hoyyang/dsh-project-manager) — 项目看板 + 任务日程（甘特图）+ 项目记忆：从卡片打开的会话自动带上项目最新记忆；一句话落盘不丢事实需要 python3，Windows 上不可用。
+- [hoyyang/dsh-project-manager](https://github.com/hoyyang/dsh-project-manager) — 项目看板 + 任务日程甘特图 + 项目记忆：从卡片开的会话自动加载落盘项目记忆，会话关联任务，过 00:00 自动记录执行。
 - [huaComPj/dsh-workflow-plugin](https://github.com/huaComPj/dsh-workflow-plugin) — 可配置的串行 Agent 团队工作流，提供 Manager、角色 Actor、独立 Judge 和可视化工作流编辑器。
 - [huajikano/claude-on-dsh](https://github.com/huajikano/claude-on-dsh) — 让 Claude Code 负责项目首问与规划，把任务交接给 DSH，并在回合结束后提供 Claude 验收选项。仅 Windows 可用，且需本机已安装 Claude Code CLI（未自动探测到时请填 claudeCliPath）。它交给 DSH 的新会话会被自动切到 danger-full-access。首次在某个项目目录调用 Claude 前，会在 ~/.claude.json 里为该目录写入 hasTrustDialogAccepted；可选的自动 Claude 验收受每日预算限制（默认 5 美元）。
 - [hualidan42-beep/dsh-plugin-gzh-studio](https://github.com/hualidan42-beep/dsh-plugin-gzh-studio) — 在一个工作台里写稿配图、留存每版出图，并把草稿推进公众号。
