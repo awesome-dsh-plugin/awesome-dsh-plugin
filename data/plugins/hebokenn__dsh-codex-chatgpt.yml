@@ -2,5 +2,5 @@ url: https://github.com/hebokenn/dsh-codex-chatgpt
 name: hebokenn/dsh-codex-chatgpt
 category: model
 description:
-  en: 'Adds a local Codex ChatGPT app-server adapter to the DSH model menu, exposing available GPT models and reasoning effort levels through the signed-in ChatGPT account.'
-  zh: '通过本机 Codex App Server 将已登录的 ChatGPT 账号接入 DSH 模型菜单，并列出可用 GPT 模型与推理档位。'
+  en: 'Adds models available to a locally signed-in Codex ChatGPT account to DSH’s model picker via Codex App Server; DSH retains tool execution and approvals, and the plugin does not show subscription quota.'
+  zh: '通过本机 Codex App Server 将已登录 ChatGPT 账号可用的模型接入 DSH 模型菜单；工具仍由 DSH 执行和审批，插件不显示订阅剩余额度。'
