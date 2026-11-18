@@ -2,5 +2,5 @@ url: https://github.com/qisisiqi/dsh-bili-banghui
 name: qisisiqi/dsh-bili-banghui
 category: workflow
 description:
-  en: A Bilibili reply inbox that groups replies to you by person and thread, drafts three options based on the other person's tone, and posts only after you confirm. Credentials, persona and API key stay in a local data folder.
-  zh: B站回复收件箱：把「回复我的」按人与楼层聚合成会话，AI 按对方态度出三条候选，确认后才发出；凭证、人设与 API Key 只存本地 data 目录。
+  en: 'Tired of the daft replies on Bilibili? This plugin answers them for you: it groups the replies you got by person and thread into conversations, lines up the original comment, their reply and yours on one screen, and when you tap the AI reply button it first reads whether the other person is agreeing, chatting or picking a fight (it will not argue back at someone friendly), then offers three options you can edit into your own voice. Nothing goes out until you confirm, and every send is logged. Sign-in, persona and the model API key live under the avatar menu in the top-right corner; credentials stay in your local data folder.'
+  zh: '杩樺湪涓哄洖B绔欑殑鍌荤娑堟伅鑰岃嫤鎭煎悧锛熻繖涓彃浠禔I甯綘鍥炴秷鎭紝鎶娿€屽洖澶嶆垜鐨勩€嶆寜浜轰笌妤煎眰鑱氬悎鎴愪細璇濓紝鍙充晶鎶?涓绘ゼ 鈫?浠?鈫?浣?鎷夋垚涓€鏉＄嚎锛屼笉鐢ㄥ啀缈昏瘎璁哄尯鎵句笂涓嬫枃锛涚偣銆孉I甯洖銆嶏紝瀹冨厛鐪嬪鏂规槸澶镐綘銆佽窡浣犺亰杩樻槸鍦ㄦ寫鍒猴紙璧炲悓/鍙嬪杽灏变笉璺熶綘鎶潬锛夛紝鍐嶇粰涓夋潯鍊欓€夛紝浣犳寫涓€鏉℃敼鎴愯嚜宸辩殑鍙ｆ皵锛岀‘璁や簡鎵嶅彂鍑哄幓锛屽彂瀹岃嚜鍔ㄨ涓€绗斻€傜櫥褰曘€佷汉璁俱€丄PI Key 閮藉湪闈㈡澘鍙充笂瑙掔殑澶村儚鑿滃崟閲岋紝鍑瘉鍙瓨鍦ㄦ湰鍦?data 鐩綍銆?
