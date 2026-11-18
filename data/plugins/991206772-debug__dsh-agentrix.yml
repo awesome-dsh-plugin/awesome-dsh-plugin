@@ -2,7 +2,7 @@ url: https://github.com/991206772-debug/dsh-agentrix
 name: 991206772-debug/dsh-agentrix
 category: workflow
 description:
-  en: 'DSH Agentrix supports coordinator-led direct or delegated work, configured worker models, dispatch-time coordinator models for independent review, progress and request usage tracking, registered requirements linked to verification evidence, and a read-only acceptance view that distinguishes plan completion from request coverage. Verified only on Windows with PowerShell 7 (pwsh) and Git; other systems are untested.'
-  zh: 'DSH Agentrix 由主控决定直接执行或委派，执行者使用配置模型，独立审查沿用分发者模型；展示进度和需求用量，将登记需求关联到验证证据，并在只读验收页区分计划验收与需求覆盖。目前仅在 Windows + PowerShell 7（pwsh）+ Git 环境验证，其他系统未验证。'
+  en: 'DSH Agentrix supports coordinator-led direct or delegated work, configured worker models, independent review, and requirement-linked verification evidence and acceptance records. Version 1.8.3 supports DSH 0.2.2-rc.1 and rc.3 activation contracts, tabbed live progress, and distinct current and historical decisions. Verified on Windows with PowerShell 7 (pwsh) and Git; other systems are untested.'
+  zh: 'DSH Agentrix 由主控决定直接执行或委派，支持配置执行模型、独立审查与按需求证据验收。1.8.3 兼容 DSH 0.2.2-rc.1 和 rc.3 的启动接口，用多页签展示实时进度、消息和判断，并区分当前与历史记录。仅在 Windows + PowerShell 7（pwsh）+ Git 环境验证，其他系统未验证。'
 icon: https://raw.githubusercontent.com/991206772-debug/dsh-agentrix/main/assets/icon.png
-tarball: https://github.com/991206772-debug/dsh-agentrix/releases/download/v1.8.2/dsh-agentrix.tgz
+tarball: https://github.com/991206772-debug/dsh-agentrix/releases/download/v1.8.3/dsh-agentrix.tgz
