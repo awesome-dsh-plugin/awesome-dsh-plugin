@@ -3272,6 +3272,7 @@ dsh plugin --profile web add dshmarket
 - [chouxiaohuai/dsh-uiskin-theme](https://github.com/chouxiaohuai/dsh-uiskin-theme) — DeepSeek Harness Web 的海洋幻想玻璃皮肤：清澈海洋背景、玻璃气泡、海洋侧边栏（金色渐变「HARNESS」字标 + 底部卡通角色）、鲸鱼设置按钮、渐变模型文字。
 - [Cicero010/dsh-whale-atelier](https://github.com/Cicero010/dsh-whale-atelier) — DSH Web 界面全屏鲸鱼皮肤包：多层壁纸、金/银描边、蕾丝蝴蝶结、随 Agent 状态反应的角落立绘与环境粒子，并支持可安装的第三方皮肤包格式。
 - [cjjchina3088191870-sudo/dsh-plugin-miku-theme](https://github.com/cjjchina3088191870-sudo/dsh-plugin-miku-theme) — 丝柯克、玫瑰女王与初音未来三主题套装，内置主题管理、手机布局、首页入场动画及自定义启动视频。
+- [CloudSen/dsh-umbrella-hive-theme](https://github.com/CloudSen/dsh-umbrella-hive-theme) — 生化危机「蜂巢」主题，明暗双外观，界面背后实时渲染一座 3D 蜂巢设施，侧栏为保护伞伞面标志。
 - [CloudSen/dsh-umbrella-theme](https://github.com/CloudSen/dsh-umbrella-theme) — 生化危机保护伞公司主题，提供明暗双外观、自转保护伞水印与 HUD 装饰。
 - [cngtn/dsh-cngtn-pond](https://github.com/cngtn/dsh-cngtn-pond) — 纸墨主题，提供暖色纸面、细描边和近方形圆角，并在整个界面后方绘制动态 ASCII 锦鲤池；主题不指定字体，沿用 DSH 自带字体栈（或设置中选择的字体）。
 - [cnhenaihui/dsh-theme-wallpaper](https://github.com/cnhenaihui/dsh-theme-wallpaper) — 配色主题与壁纸插件：62 套配色主题（37 套内置、源自 OpenCode 调色板，另有 25 套 IP 预设），每套自带 Markdown 与语法高亮配色，另有一层把低于 4.5:1 的语义色推回可读对比度，并支持本地背景图（铺满或平铺、模糊、遮罩、轮换）。取代此前的 cnhenaihui/dsh-ios-theme。
@@ -6052,6 +6053,7 @@ dsh plugin --profile web add dshmarket
 - [ChinXavier/dsh-gui-agent](https://github.com/ChinXavier/dsh-gui-agent) — 鼠标键盘代理操作 · 真人模拟。为 DSH 加一个按会话生效的开关，开启后注册 9 个工具，让代理做 computer-use 式的桌面自动化：截屏、鼠标点击与拖拽、键盘打字与快捷键、窗口切换、UI Automation 控件定位、窗口与账号映射、批量 prompt 队列、下载收集。输入走原生 Win32 SendInput，默认拟真节奏——贝塞尔光标轨迹与末端过冲回拉、真实 VK 击键、对数正态字符间隔并偶发打错重打、点击前犹豫——并提供仿真 / 便捷 / 自定义（0.2–8 倍）三档。适合让 AI 像人一样操作浏览器、聊天框与任何桌面程序。仅 Windows。默认关闭，由用户按会话开启；截图会发给模型；点到发送/支付/删除等控件时需另行确认才会执行。
 - [CHplus0/dsh-learning-mode#plugin](https://github.com/CHplus0/dsh-learning-mode/tree/main/plugin) — 学习模式（Learning Mode）Agent 预设：边做边教的编码 Agent——具体的情景化阐释、苏格拉底式引导、TODO(你) 留白练习，模拟 Claude Code 的 Learning 输出风格；可 `dsh plugin add` 安装（npm 包 dsh-learning-mode）。
 - [CHplus0/dsh-shell-command](https://github.com/CHplus0/dsh-shell-command) — Claude Code 风格的 shell 集成：/! 单命令分析 与 /terminal 交互式终端（带按需历史引用）。
+- [Chsw-CC/dsh-lazy-tools](https://github.com/Chsw-CC/dsh-lazy-tools) — 保留一小份核心工具原生可见，其余收进一个 toolbox 入口：模型先按参数签名列出已加载的工具，只取真正要用的 schema，再经正常的审批与 guard 管线执行调用。目录超预算时先截短签名、再降成前缀计数，让列表在 token 预算内仍然可调用。
 - [chunqing286/dsh-guard-degen](https://github.com/chunqing286/dsh-guard-degen) — 在模型输出边界检测并拦截退化符号流，并提供修复被污染工件与会话的工具。
 - [ciky20171114/dsh-plugin-midscene](https://github.com/ciky20171114/dsh-plugin-midscene) — 基于 Midscene 的 AI UI 自动化——android_ui 与 web_ui 工具，通过 ctx.midscene seam 在真实 Android 设备或已运行的 Chrome 上完成点击、输入、查询与断言。
 - [Cjrrrrrrrr/dsh-plugins#dsh-scholar](https://github.com/Cjrrrrrrrr/dsh-plugins/tree/main/packages/dsh-scholar) — DSH 学术检索工具：四个模型可用工具 paper_search / paper_get / paper_citations / book_search，覆盖 OpenAlex、arXiv、Crossref、Semantic Scholar、PubMed 五个库，并用 Unpaywall 解析开放获取 PDF。
@@ -9409,6 +9411,7 @@ dsh plugin --profile web add dshmarket
 - [SMPcosy/dsh-member-manager](https://github.com/SMPcosy/dsh-member-manager) — 把 DSH 的 agent 当公司跑：部门、派工、attempt 凭证、审计账本与成本核算，叠加工作网看板、组织架构图与 DAG 任务图并行派发，无需原生 team 层。
 - [Snerou/dsh-reason-tree](https://github.com/Snerou/dsh-reason-tree) — 根源追溯：把结论拆成从下往上的论证树，每一支可标成立、不成立或待拆，并能跳到海马体看原文。
 - [soffits/dsh-cron-jobs](https://github.com/soffits/dsh-cron-jobs) — 在宿主进程中运行的定时任务，支持 cron、RRULE 或一次性时间：只跑 shell 命令、不启动模型；先跑检查命令，有事才唤醒 Agent；或直接给 Agent 发提示词。附带让 Agent 创建任务的工具、Cron 任务页面，结果可交给任何提供 send 方法的插件发送。
+- [songsongs/dsh-plugin-maitian](https://github.com/songsongs/dsh-plugin-maitian) — 北山新媒体运营工作台：连接本机麦田服务，查询创作者数据、查看单期详情，并通过 Harness 审批调用本机分发工作流。
 - [spechenxin/jimu](https://github.com/spechenxin/jimu) — 积木：DSH 分域编排插件，domain_plan 分域确认 + 按域编排子代理（手递手）+ LLM 自动审计。
 - [spheritier/dsh-plugin-bulk-update](https://github.com/spheritier/dsh-plugin-bulk-update) — 检查已安装的 DSH registry 插件是否有兼容更新，并选择要应用的版本。
 - [SpookyWaste/dsh-plan-compact-execute](https://github.com/SpookyWaste/dsh-plan-compact-execute) — 在 DSH Web 的计划审批卡上增加「压缩后执行」：先把计划提交之前的历史压成检查点，再批准计划。
