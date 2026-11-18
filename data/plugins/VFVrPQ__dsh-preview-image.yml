@@ -1,0 +1,6 @@
+url: https://github.com/VFVrPQ/dsh-preview-image
+name: VFVrPQ/dsh-preview-image
+category: ui
+description:
+  en: 'Image preview with real zoom, pan, rotation and full screen in the right-Sidebar document preview and the conversation lightbox.'
+  zh: '给 DSH 的图片预览补上缩放、拖动、旋转与全屏：右侧栏文档预览和对话图片灯箱共用一套查看器。'
