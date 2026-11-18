@@ -7765,6 +7765,7 @@ dsh plugin --profile web add dshmarket
 - [710765989/dsh-sticker-dict](https://github.com/710765989/dsh-sticker-dict) — 维护一本按内容哈希索引的本地表情包字典，看过的图直接复用描述而不再重复识图；同时把 GIF 均匀抽帧拼成一张联系表，让视觉模型看清整段动作。
 - [aa1355721445-lgtm/dsh-image-studio](https://github.com/aa1355721445-lgtm/dsh-image-studio) — 提供 image_generate 与 image_library 工具：从本地四个参考库（人物、服饰、场景、道具）挑选参考图，把情境、神态、动作、镜头、光线关键词展开进提示词，调用 65535 异步任务接口或任意 OpenAI 兼容图像接口生图并在对话中显示；设置页可管理参考库，并能把上传的图片或一段文字描述生成三视图设定图。装了每日日程（dsh-daily-schedule）时，没指定服饰的图沿用角色此刻日程里的穿着。
 - [aa2246740/dsh-image-conatiner](https://github.com/aa2246740/dsh-image-conatiner) — 以对话内画廊和灯箱展示生成的图片。
+- [adithyanraj03/dsh-image-gen](https://github.com/adithyanraj03/dsh-image-gen) — 面向 DeepSeek Harness 的多提供商图像生成与编辑（OpenAI 兼容中转、自定义 /v1/images/generations 端点、Gemini、Seedream、DashScope、Grok、GLM、本地 ComfyUI、订阅账号），Excalidraw（MIT）无限画布工作台（点击放置、选区作为编辑参考），以及专业查看器（缩放/平移/捏合、区域备注、标注模式：把标记烙进像素并向模型发送归一化坐标）。
 - [adithyanraj03/dsh-video-gen-plugin](https://github.com/adithyanraj03/dsh-video-gen-plugin) — 通过你自己的 OpenAI 风格异步接口生成视频，并在对话里播放成品，带实时进度和取消。
 - [alaxrpg/dsh-vision-bridge](https://github.com/alaxrpg/dsh-vision-bridge) — 通过已配置的 DSH Provider 或 OpenAI 兼容端点提供图片输入与识别。
 - [algerkong/dsh-image-preview](https://github.com/algerkong/dsh-image-preview) — 统一接管 DSH 会话里的图片预览：read_image 缩略图，以及用户、助手、Markdown 和 present 图片，支持缩放、旋转、拖动、下载、侧栏和原生文件操作的 Lightbox。
@@ -11230,7 +11231,7 @@ dsh plugin --profile web add dshmarket
 - [kilbertert/dsh-herdr](https://github.com/kilbertert/dsh-herdr) — 在 DSH 侧栏新增 Herdr 面板，通过宿主 PTY 运行 `herdr` 命令并用 xterm.js 渲染。连接列表来自插件配置（`connections`，或扁平的 `remote`/`session`/`command`；不配置时只跑 `herdr`），可指向任意机器。启动命令每个终端只发送一次，切换面板或刷新页面不会重复开会话。需要本机已安装 Herdr CLI。
 - [kinderao/dsh-pocket-relay](https://github.com/kinderao/dsh-pocket-relay) — 手机与远程访问 DSH Web 界面：局域网扫码即用，或用自建 relay 中继服务端（替代 cloudflared 隧道）随时随地连回电脑；每台设备独立凭据，可配对、查看与单独撤销；多台电脑共用一个中继并自动热备。
 - [KKUCODES/dshm-plugin](https://github.com/KKUCODES/dshm-plugin) — 将 DSHM 安卓客户端连接到电脑上的 DeepSeek Harness 会话，支持远程续聊、模型切换、审批、设备配对与撤销。
-- [KyoMio/dsh-zen-remote](https://github.com/KyoMio/dsh-zen-remote) — 配对码远程访问 DSH：手机端可安装 PWA、带 Web Push 推送；另一台设备作为客户端，在原生 DSH 界面里直接操作主机共享的会话，经自建反代或 Cloudflare Tunnel 接入。
+- [KyoMio/dsh-zen-remote](https://github.com/KyoMio/dsh-zen-remote) — 集三种角色于一体的 DSH 远程访问与多机虚拟组网插件：节点端（peer）通过 zr-net:// 邀请加入自建中继网关，跨 NAT 双向发现并挂载共享会话（局域网直连、双 UDP STUN 打洞与 X25519 + AES-256-GCM 盲转发兜底，Ed25519 TOFU 身份校验），同时保留手机 PWA 与 Web Push 推送；主服务端（host）支持内置 Caddy、Cloudflare Tunnel、反代与局域网接入；桌面客户端（client）可在原生侧边栏同时接入最多 8 台主机，支持远程终端、0.2.2+ Forge 面板、Plugin Bridge（兼容 dsh-better-sidebar）与无头 CLI 向导。
 - [dsh-remote-dock](https://github.com/Lee-Eee-Eee/dsh-remote-dock) — 将 SSH 主机与 WSL 发行版接入远程 DSH 工作区，支持环境安装、模型配置移植与本地内嵌远程界面。
 - [Leon0555/dsh-lan-access](https://github.com/Leon0555/dsh-lan-access) — 局域网访问：Web GUI 绑定 0.0.0.0 + crypto.randomUUID polyfill（修复非安全上下文下 RPC 崩溃）。
 - [liaosiliangCodeLife/harness-mate-dsh](https://github.com/liaosiliangCodeLife/harness-mate-dsh) — 把跑在本机的 DeepSeek Harness 智能体接入 HarnessMate 平台：手机 / 浏览器即可对话、收发文件、审批工具调用。
