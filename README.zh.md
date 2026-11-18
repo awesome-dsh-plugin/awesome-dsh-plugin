@@ -10563,7 +10563,7 @@ dsh plugin --profile web add dshmarket
 - [kira905/dsh-ecosystem-panel](https://github.com/kira905/dsh-ecosystem-panel) — 只读生态面板：汇总实例的插件束、补丁插入、技能、升级健康与解耦健康。
 - [klT45/dsh-config-vault](https://github.com/klT45/dsh-config-vault) — 配置保险箱：为 DSH 配置创建快照、对比差异并安全回滚设置补丁、插件清单、技能与规则、工作区列表，凭据默认排除。
 - [kriskite/dsh-network-proxy](https://github.com/kriskite/dsh-network-proxy) — DeepSeek Harness 网络代理管理器：在设置界面即时切换跟随系统 / 手动 / 直连三种模式，立即生效。
-- [ksolodev/dsh-artel](https://github.com/ksolodev/dsh-artel) — 在项目的隔离副本里执行开发任务：Solo 模式一个 agent 独立完成，Swarm 模式三个 agent 在同一副本里通过 send_message/list_agents 互相通信；结果按文件展示 diff，只应用你批准的文件。
+- [ksolodev/dsh-artel](https://github.com/ksolodev/dsh-artel) — 在项目的隔离副本里执行开发任务：Solo 模式一个 agent 独立完成，Swarm 模式三个 agent 在同一副本里通过 send_message/list_agents 互相通信；结果按文件展示 diff，只应用你批准的文件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [kun2-5code/dsh-plugin-template](https://github.com/kun2-5code/dsh-plugin-template) — dsh 插件开发模板，覆盖配置、工具、事件、服务、钩子、浏览器 UI 插槽与斜杠命令。
 - [kute/dsh-keelwatch](https://github.com/kute/dsh-keelwatch) — 检查已装 DSH 插件的加载失败与依赖漂移，给反复失败的工具加冷却刹车，并按消息来源归因 token 成本。
 - [kuun993/dsh-loop-engine](https://github.com/kuun993/dsh-loop-engine) — Web 设置页的「循环引擎」开关，在五套引擎间切换驱动每个 dsh 会话的 agent 循环——内置 in-process 加托管的 Claude Code、Codex、Pi、Kimi Code——无需改动 harness；每个托管引擎都把思考与工具调用写入持久会话记录，接管命令、技能与 agent 预设，并经 dsh 子进程接缝沙箱运行。
