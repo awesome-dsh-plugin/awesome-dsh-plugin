@@ -2,5 +2,5 @@ url: https://github.com/Tera-Dark/dsh-desk-kit
 name: Tera-Dark/dsh-desk-kit
 category: ui
 description:
-  en: 'Scheduled check-in reminders, quick notes and an encrypted vault in one sidebar tab, plus 19 agent tools; data stays local in ~/.dsh/desk-kit.'
-  zh: '侧栏标签页里的定时签到提醒、随手便签、加密保险库三合一，另带 19 个 Agent 工具；数据只落在本机 ~/.dsh/desk-kit。'
+  en: 'Reminders, quick notes with screenshots, a bookmark grid and an encrypted vault in one sidebar tab, plus 27 agent tools, global search, and backup export/import; data stays local in ~/.dsh/desk-kit.'
+  zh: '侧栏标签页里的定时提醒、能贴截图的随手便签、网页收藏格子和加密保险库，另带 27 个 Agent 工具、全局搜索与备份导入；数据只落在本机 ~/.dsh/desk-kit。'
