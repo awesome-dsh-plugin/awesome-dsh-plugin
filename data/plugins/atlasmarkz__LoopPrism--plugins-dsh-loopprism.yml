@@ -1,0 +1,6 @@
+url: https://github.com/atlasmarkz/LoopPrism/tree/main/plugins/dsh-loopprism
+name: atlasmarkz/LoopPrism#dsh-loopprism
+category: usage
+description:
+  en: Sends DeepSeek Harness session start, prompt, tool result and stop events to the local LoopPrism app, and registers LoopPrism's session-review tools (the ones lpa mcp serves) as loopprism_* tools for the agent.
+  zh: 把 DeepSeek Harness 的会话开始、提示词、工具结果与停止事件发送到本机 LoopPrism 应用，并把 LoopPrism 的会话评审工具（即 lpa mcp 提供的那些）注册为 loopprism_* 工具供 agent 调用。
