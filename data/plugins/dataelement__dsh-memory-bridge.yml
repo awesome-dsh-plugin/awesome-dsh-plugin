@@ -1,0 +1,6 @@
+url: https://github.com/dataelement/dsh-memory-bridge
+name: dataelement/dsh-memory-bridge
+category: memory
+description:
+  en: 'Binds existing DSH workspaces and selected conversations to Memory groups for recall and feedback-based extraction; requires access to the companion intranet service and an API key.'
+  zh: '将 DSH 已有工作区和选定会话绑定到 Memory 记忆组，支持记忆读取与基于反馈的提炼；需要访问配套内网服务并配置访问密钥。'
