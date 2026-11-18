@@ -1,7 +1,7 @@
 url: https://github.com/Richology/dsh-starharbor
 name: Richology/dsh-starharbor
 category: tools
-tarball: https://github.com/Richology/dsh-starharbor/releases/download/v0.3.2/dsh-starharbor-0.3.2.tgz
+tarball: https://github.com/Richology/dsh-starharbor/releases/download/v0.4.0/dsh-starharbor-0.4.0.tgz
 description:
-  en: Recommends up to five GitHub repositories per day and saves selected repositories to categorized Markdown.
-  zh: 每天推荐最多 5 个 GitHub 仓库，支持将选中的仓库按分类保存到 Markdown。
+  en: Recommends up to ten GitHub repositories daily with a configurable count and saves selected repositories to categorized Markdown.
+  zh: 每天按配置推荐最多 10 个 GitHub 仓库，支持将选中的仓库按分类保存到 Markdown。
