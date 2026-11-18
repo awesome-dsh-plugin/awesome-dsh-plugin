@@ -421,7 +421,7 @@ dsh plugin --profile web add dshmarket
 - [ayachinene285/dsh-composer-resize](https://github.com/ayachinene285/dsh-composer-resize) — 给聊天输入框加一条拖动把手，任何内容长度下都能手动设定高度；双击恢复自动增高（上限 168px）。
 - [ayahunter/dsh-trail#bundle](https://github.com/ayahunter/dsh-trail/tree/main/packages/bundle) — 把 Web GUI 的轨迹页签替换为新手友好的回合故事线：工具名通俗中文化，支持类别筛选与模糊搜索。
 - [ayingQAQ/dsh-web-launcher](https://github.com/ayingQAQ/dsh-web-launcher) — DSH Web 的 Windows 桌面启动器插件，创建受管理的快捷方式，后续启动会在后台重启 DSH 并刷新已有浏览器页面。
-- [ayuanxx-max/dsh-session-accordion](https://github.com/ayuanxx-max/dsh-session-accordion) — 会话交互折叠：每次交互压成一行（时间胶囊 + 提问摘要），只保留最近一次展开；切换工作区/会话或产生新交互都会重置到最新一条；执行过程仅在单独点击时展开。
+- [ayuanxx-max/dsh-session-accordion](https://github.com/ayuanxx-max/dsh-session-accordion) — 会话交互折叠：每次交互压成一行（时间胶囊 + 提问摘要），只保留最近一次展开，产生新交互或切换会话都会重置到最新一条。3.0 新增：按轮钉住（钉住的那轮永不折叠，按会话记忆）、常驻搜索按钮（默认不打开，点击才开在发送箭头左侧，Enter 跳下一个命中、Esc 关闭还原）、折叠/展开/钉住三态配色可一眼分辨、日期吸头、分叉徽标，以及中英文案与 aria 无障碍和 j/k 导航。
 - [AZ-666316/dsh-ask-aside](https://github.com/AZ-666316/dsh-ask-aside) — 划词提问：选中回答里的文字，在继承主对话上下文的右侧栏会话里追问，支持流式回答与图片、文件附件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [AZ-666316/dsh-prompt-optimizer-button](https://github.com/AZ-666316/dsh-prompt-optimizer-button) — DSH 输入框内的提示词优化器。点一下就用当前选中的模型就地改写草稿：自动识别场景（论文 / 项目评估 / 派活 / 日常 / 英文），弹出三自检诊断面板（验收能否机器判定？缺信息还是缺能力？ 在抬深度还是扩范围？），并可手动钉住场景。改写进行中可随时停止，不会写回半截结果；也可以 只润色选中的片段；每一轮改写都能撤销，撤销历史按会话存在本机浏览器，最多 10 步。 改写结果直接替换输入框草稿，不新增对话轮次。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [azazo1/dsh-deep-diving-back](https://github.com/azazo1/dsh-deep-diving-back) — 恢复 DSH 0.1.6 及以前在对话流末尾显示的蓝色流光深度求索中回合状态行.
@@ -4978,7 +4978,7 @@ dsh plugin --profile web add dshmarket
 - [rongxingda/dsh-prompt-enhance](https://github.com/rongxingda/dsh-prompt-enhance) — 输入框一键提示词增强——把草稿改写为结构化提示词（角色与目标、可执行步骤、输出格式、验收标准、边界条件），支持前后对比、回填与一键撤销；不改变原意、不凭空编造需求。
 - [ruisenbai/dsh-annotation](https://github.com/ruisenbai/dsh-annotation) — 在主会话或侧栏选中文字，直接在原文旁写注解。也可标注文件和代码差异，将多条注解随消息一起发送，并从注解记录跳回原文。
 - [Rukawa15/dsh-session-monitor](https://github.com/Rukawa15/dsh-session-monitor) — 只读的本机 DSH 会话监视器：实时任务看板、会话事件尾随、阻塞等待回复、Markdown 导出，可选配合 dsh-im 推送 IM。需要 Python 3 与 zstandard 库；IM 推送需另装 dsh-im。
-- [rumengyihua/dsh-chat-editor-plus](https://github.com/rumengyihua/dsh-chat-editor-plus) — WZZNNE/DSH-CyberWorkStation 中 dsh-chat-editor（MIT）的二次开发版，包名/插件 id/slot 均带 -plus，可与原版并存安装。改写或删除模型读到的消息（正文、思考块、工具结果），消息本身仍留在会话表层、seq 不变；并可从任意一轮分叉会话。
+- [rumengyihua/dsh-chat-editor-plus](https://github.com/rumengyihua/dsh-chat-editor-plus) — 改掉模型已经记住的那句话：改写或删除模型读到的任意一条消息（正文、思考块、工具结果），或一次清空整轮助手输出；消息本身仍留在会话表层、seq 不变。改动可逆——关闭插件，原对话完整回来；也可从任意一轮分叉会话。
 - [RyanZeeee/dsh-chattree](https://github.com/RyanZeeee/dsh-chattree) — 把 DSH 会话画成一张对话画布：每轮问答是一个节点，任意节点都能分叉出真实的子会话，压缩过的上下文收成一个绿色节点、可以从它继续对话；左侧栏按 DSH 工作区分组列出画布，重命名与 DSH 自己的会话标题同步。
 - [RyensX/dsh-message-fold](https://github.com/RyensX/dsh-message-fold) — 为 DeepSeek Harness 提供 Codex 风格的会话消息折叠。
 - [Ryuu-64/dsh-session-tools](https://github.com/Ryuu-64/dsh-session-tools) — 在 DeepSeek Harness（DSH）对话之间分派任务：新建会话、发送后续消息、跟踪回复，并控制发送与接收。
