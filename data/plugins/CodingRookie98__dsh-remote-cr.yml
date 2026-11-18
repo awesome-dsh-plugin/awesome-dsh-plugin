@@ -1,0 +1,6 @@
+url: https://github.com/CodingRookie98/dsh-remote-cr
+name: CodingRookie98/dsh-remote-cr
+category: remote
+description:
+  en: 'Type-B remote host for DSH: the whole harness (agent loop, plugins, sessions) runs inside WSL2 or a remote Linux box over SSH, while the local GUI only projects workspaces and sessions and keeps real API keys on your machine.'
+  zh: 'B 型远端宿主：把整个 DSH 宿主（agent loop、插件、会话）搬进 WSL2 或远端 Linux（SSH），本地只做工作区/会话投影与凭据代理，真实 API key 不出本机。'
