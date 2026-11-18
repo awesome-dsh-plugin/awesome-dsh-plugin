@@ -9689,6 +9689,7 @@ dsh plugin --profile web add dshmarket
 - [andyfan1094/dsh-feishu](https://github.com/andyfan1094/dsh-feishu) — 接入飞书自建应用，把每个飞书会话映射到独立的 DSH Agent，经卡片 JSON 2.0 流式回复，不可用时回退纯文本。
 - [aokamoaki/dsh-notify](https://github.com/aokamoaki/dsh-notify) — 对话完成通知：回合完成/出错/目标完成/提问/审批时弹出 Windows toast 与提示音，仅后台提醒，会话头部铃铛即控制中心。
 - [Archaofan/dsh-notify-relay](https://github.com/Archaofan/dsh-notify-relay) — 把 DSH 的八类生命周期事件过去重、免打扰、摘要合批三道关后外发到七个通道。严重度映射到 Bark、ntfy、Telegram 和 webhook 真正支持的字段；失败投递带抖动退避重试并可跨重启恢复；单通道熔断避免反复敲一个已死的地址；自检发现中继降级时主动报告而不是静默。
+- [arrongao/dsh-turn-ding](https://github.com/arrongao/dsh-turn-ding) — 在 Windows 任务栏显示未读角标，并在 DeepSeek Harness 回合完成时播放提示音。
 - [Astral-Yang/dsh-bark-push](https://github.com/Astral-Yang/dsh-bark-push) — 面向 DeepSeek Harness 的推送通知：直接推送回复正文，以及授权与提问提醒；Bark 之外可并行投递到 Gotify、ntfy、PushDeer、Server酱、PushPlus、额外 Bark 服务器或自定义 Webhook，并支持工作区级与会话级静音。
 - [baisama-cloud/dsh-omni-bridge](https://github.com/baisama-cloud/dsh-omni-bridge) — 多通道消息桥接插件：将微信 ClawBot / QQ / 飞书的消息接入 DSH agent，并把回复回传给发送者，按通道独立会话、回复去重。
 - [bakkhos8/dsh-macos-share#dsh-macos-share](https://github.com/bakkhos8/dsh-macos-share/tree/main/plugins/dsh-macos-share) — macOS 分享菜单接收端：把分享的文件、图片、文本和链接追加到 DeepSeek Harness 当前会话的草稿附件（需先安装 DSH Share App）。
