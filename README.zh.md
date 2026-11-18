@@ -399,6 +399,7 @@ dsh plugin --profile web add dshmarket
 - [astelirons-ai/dsh-local-monitor](https://github.com/astelirons-ai/dsh-local-monitor) — Windows 上 Harness 网页界面的浮动可拖动传感器面板：左侧显示 GPU-Z 的 GPU 温度、频率和专用显存，右侧显示 CPU 温度、频率和系统内存。
 - [Asterlyra/dsh-panel-organizer](https://github.com/Asterlyra/dsh-panel-organizer) — 把左侧栏用不到的面板按来源分组收起；「更多」按钮变成一键展开/折叠全部面板的开关。
 - [Asteroid-Code-Channel/dsh-workspace-atlas](https://github.com/Asteroid-Code-Channel/dsh-workspace-atlas) — AGENTS & Skills 工作台：编辑 AGENTS.md，按 Agent Skills 规范创建 SKILL.md，管理和重命名技能文件夹，并从 Anthropic、OpenAI、Cursor、Matt Pocock 四源技能目录安装技能。
+- [Astral-Yang/dsh-preset-editor](https://github.com/Astral-Yang/dsh-preset-editor) — DSH 原生 Agent 预设可视化编辑器，支持人格自定义、插件组合管理、预设级工具过滤、自动备份与回滚。
 - [AstralHorizon4/dsh-shared-reading](https://github.com/AstralHorizon4/dsh-shared-reading) — 在 DSH 里读书：导入 EPUB、TXT、Markdown、HTML 分页阅读，划出句子就在这本书专属的 agent 会话里追问；四个 reading_* 工具按已读到第几章拒绝未读内容，书、进度与对话都留在本地纯文件里。它的路由通过 webServer.register 挂载，没有 DSH 的 Host/Origin 准入检查，所以浏览器里打开的任意网页都能经由它们创建阅读会话、改动书库。
 - [asukasec/dsh-message-preview](https://github.com/asukasec/dsh-message-preview) — 右侧用户消息导航条，根据消息数量与可用高度自适应排布导航块，并支持悬停预览、键盘操作与点击跳转。
 - [asun-labs/dsh-plugin-agent-switch](https://github.com/asun-labs/dsh-plugin-agent-switch) — 提供支持页签和网格布局的 agent-switch CLI 交互终端、Codex 委派任务卡片，以及右侧面板中的实时与历史任务输出。需 PATH 上有 agent-switch、至少一个目标编码 CLI，并在插件页放行 node-pty 原生构建；目前只在 Windows 验证过。
@@ -8764,7 +8765,7 @@ dsh plugin --profile web add dshmarket
 - [1225Sakura/oh-my-deepseekharness](https://github.com/1225Sakura/oh-my-deepseekharness) — DeepSeek Harness 的多智能体编排层——autopilot/ralph/team 三种执行模式、19 张角色卡、40 个双语技能与内置 MCP 状态服务，移植自 oh-my-claudecode。
 - [1264459640/dsh-trellis](https://github.com/1264459640/dsh-trellis) — 为 DeepSeek Harness 打造的 Trellis 风格工作流：基于 agent/pre-step 的每轮速记注入、内置技能提供方，以及带 git 清洁度护栏的 DSH 原生任务与相位状态管理。
 - [1344738825/ai-look-up](https://github.com/1344738825/ai-look-up) — AI 抬头：检测空跑（重复命令 / 连续失败 / 久跑零产出）并在运行中途注入自我审查提醒，同时定期注入真实本地时间，校准 AI 的时间感。
-- [1924225725-collab/dsh-DKN-Workbench](https://github.com/1924225725-collab/dsh-DKN-Workbench) — 接入 CodeBuddy、Codex CLI、Qoder ACP、ZCode，增加可配置的 Antigravity ACP 通道，集成原生 Codex 项目、统一 API 导出、可选后台常驻与自动签到、额度查询及项目协作。
+- [1924225725-collab/dsh-DKN-Workbench](https://github.com/1924225725-collab/dsh-DKN-Workbench) — 接入 TRAE CN 国内个人版、CodeBuddy、Codex CLI、Qoder ACP、ZCode 及可选 Antigravity ACP，提供原生 Codex 项目、统一 API、可选后台常驻与自动签到、额度、项目协作及可切换插画界面。
 - [1997liuyh-boop/dsh-studio-knowledge](https://github.com/1997liuyh-boop/dsh-studio-knowledge) — 学习计划追踪：本机进度、笔记与 JSON 进度备份，附带一条原创六节点示例路线；添加自己的路线需编辑 roadmaps.ts 并重新构建插件。需先安装 1997liuyh-boop/dsh-studio-library 的 dsh-studio-projects 运行时与 dsh-worktable 容器。
 - [219zhou/dsh-kickstart](https://github.com/219zhou/dsh-kickstart) — 引导式起步：先用开放问题了解你，把你说的和它推断的分两栏让你改，再给两三个一小时能做出雏形的小项目，选定后立刻陪你动手；中途退出后再回来会从上次停下的地方继续。
 - [240xu/verdict-engine#dsh-tech-lead](https://github.com/240xu/verdict-engine/tree/main/packages/dsh-tech-lead) — 单包 21 个只读生命周期治理工具：任务分级、状态/计划/证据校验、Gate 预检与聚合、发布与安装审计、上下文与推进分析、关键路径、续跑对账，以及始终拒绝执行的变更预览。npm 包名 @240xu/dsh-tech-lead。
