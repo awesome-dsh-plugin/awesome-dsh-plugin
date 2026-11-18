@@ -1,0 +1,7 @@
+url: https://github.com/adithyanraj03/dsh-image-gen
+name: adithyanraj03/dsh-image-gen
+category: vision
+description:
+  en: "Multi-provider image generation and editing for DeepSeek Harness (OpenAI-compatible relays with custom /v1/images/generations endpoints, Gemini, Seedream, DashScope, Grok, GLM, local ComfyUI, subscription accounts), an Excalidraw MIT infinite-canvas studio with click-to-place and selection-to-edit references, and a pro viewer with zoom/pan/pinch, region notes and a markup mode that bakes marks into the pixels and sends normalized coordinates to the model."
+  zh: "面向 DeepSeek Harness 的多提供商图像生成与编辑（OpenAI 兼容中转、自定义 /v1/images/generations 端点、Gemini、Seedream、DashScope、Grok、GLM、本地 ComfyUI、订阅账号），Excalidraw（MIT）无限画布工作台（点击放置、选区作为编辑参考），以及专业查看器（缩放/平移/捏合、区域备注、标注模式：把标记烙进像素并向模型发送归一化坐标）。"
+tarball: https://github.com/adithyanraj03/dsh-image-gen/releases/latest/download/plugin.tgz
