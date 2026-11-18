@@ -1,0 +1,7 @@
+url: https://github.com/tianacloud/dsh-tiana
+name: tianacloud/dsh-tiana
+category: tools
+description:
+  en: 'Tiana panel for DeepSeek Harness: deploy the web app, SQLite database or backend API built in a session to TianaCloud and get a public URL, browse and clone app templates with sandboxed preview and local hot reload, and manage published sites per space.'
+  zh: 'DSH 侧栏中的 Tiana 面板：把会话里做好的网页应用、SQLite 数据库或后端 API 部署到 TianaCloud 并拿到可访问网址；可浏览并克隆应用模板（沙箱 iframe 预览、本地热更新），并按空间管理已发布的站点。'
+icon: https://raw.githubusercontent.com/tianacloud/dsh-tiana/main/assets/icon-180.png
