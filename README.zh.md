@@ -1117,7 +1117,7 @@ dsh plugin --profile web add dshmarket
 - [JohnshyCY/dsh-multi-window](https://github.com/JohnshyCY/dsh-multi-window) — 仅 Windows 桌面版（Windows 10/11、DSH 桌面版 0.2.1-rc.5 及以上，`dsh web` 不适用）。把任意对话用独立原生窗口打开，从而同时显示多个对话。
 - [JosephHy/dsh-md-plus](https://github.com/JosephHy/dsh-md-plus) — DSH Web 会话的 Markdown 显示增强，在宿主渲染之上加样式与按钮而不替换渲染器：代码块变成带语言名和图标按钮（换行、复制）的卡片；超长的代码块、表格与 Mermaid 图会折叠，底部可展开收起；Mermaid 围栏渲染成 SVG，可在图形与代码间切换，支持全屏查看（滚轮缩放、拖拽、双击适应）以及导出 SVG 或 PNG；表格表头吸顶，并提供 CSV 或 Markdown 复制；设置面板可调图表配色、代码字号、图表默认视图和三类折叠阈值。
 - [joshua05100413-cmd/dsh-AcidCore-plugins#dsh-composer-meter](https://github.com/joshua05100413-cmd/dsh-AcidCore-plugins/tree/main/dsh-composer-meter) — dsh 输入框计量：输入框下方的 pill 显示草稿字数、预估 token 与本会话估算费用（内置 DeepSeek 官方价目，高峰/空闲与 Flash / Pro 自动换价，可自定义）；点开面板可看 token 明细、最近 6 份草稿快照（保险箱）与草稿清洗，写回只走宿主的 setDraft 接口。
-- [joythatway/dsh-screenshot](https://github.com/joythatway/dsh-screenshot) — 输入框截图菜单，三种模式：框选（自动让开 DSH 窗口）、窗口列表（悬停实时预览）、整屏；图片直接进草稿，多张草稿图可用键盘画廊翻看。
+- [joythatway/dsh-screenshot](https://github.com/joythatway/dsh-screenshot) — 输入框截图菜单，三种模式：框选（自动让开 DSH 窗口）、窗口列表（悬停实时预览）、整屏；截图可入草稿或存到磁盘（默认桌面），预览支持滚轮缩放，设置页可改快捷键、保存位置与自动隐藏。
 - [Js2Hou/dsh-mcp-manager](https://github.com/Js2Hou/dsh-mcp-manager) — DSH 网页 MCP 可视化管理插件：在「设置 → MCP」中查看/新增/删除/启停 MCP 服务器，实时显示连接状态与工具数。
 - [jsdvjx/dsh-strata](https://github.com/jsdvjx/dsh-strata) — 滚动条槽位里的会话缩略图：按事件类型着色的等比色块、用户与失败锚点、滚到顶自动补载历史、悬停线索墙铺开全部发言，附近/中/全三档地图尺度切换。
 - [jue5hen/dsh-window-size](https://github.com/jue5hen/dsh-window-size) — 在设置页设置 DeepSeek Harness 桌面版启动时的窗口大小，内置 4:3、16:9、16:10 比例预设，支持保存最多 12 个自定义预设。
@@ -4982,6 +4982,7 @@ dsh plugin --profile web add dshmarket
 - [shijiewang/dsh-workspace-session-filter](https://github.com/shijiewang/dsh-workspace-session-filter) — 侧边栏底部独占一行的四个筛选 chip，命中数量跟在按钮文字后面：正在运行、在等你确认（审批、计划审阅、待回答）、有未读内容（跑完没看，或最近有更新但没打开过）、以及本地零点之后有更新的今日会话。点开就在上方按工作区分组列出命中会话，点行直接打开。同一行行尾还有一颗 DeepSeek 服务状态灯（绿=正常、黄=部分异常或维护中、红=有进行中的故障、灰=取不到），它每分钟带 ETag 条件订阅一次 status.deepseek.com 的 Atom feed，悬浮显示当前结论、状态更新时间与最近三次故障，点击打开状态页。另有完整面板：多一个「全部」chip、「更多」菜单（最近一天、三天、一周、三十天），以及「管理」态——按标题或路径搜索、多选、右侧栏可列出并就地预览已导出的 Markdown 摘要（栏宽可拖动、可全屏），既能先导出摘要再把会话目录移入本地回收站，也能在二次确认后永久删除；当前打开的会话不会被勾选。面板里每行右侧还有一颗星（悬停显形，标星常亮），筛选行的「收藏」标签只列出标星会话，长列表可以靠它归档而不必再往侧栏底部加维度。
 - [Shiningstar521/dsh-chat-mode](https://github.com/Shiningstar521/dsh-chat-mode) — 聊天 / 工作模式开关：聊天模式隐藏全部工具，工作模式沿用该对话的工作区。
 - [shinji00222/dsh-incognito-chat](https://github.com/shinji00222/dsh-incognito-chat) — 为 DSH 添加内存无痕对话开关，桌面附件使用临时存储。
+- [shinji00222/dsh-persona-continuity](https://github.com/shinji00222/dsh-persona-continuity) — 为每个 DSH 人格提供独立的跨会话长期记忆（SQLite 持久化、旧对话检索与导入），内置问卷模拟与真人数据校准工作台。
 - [shipinlei/dsh-project-hub](https://github.com/shipinlei/dsh-project-hub) — DSH 项目工作台：按项目（工作区）组织会话，提供项目卡片与会话列表；新建会话自动套用该项目的默认 preset、模型与推理强度；可按项目隔离记忆；只读预览 AGENTS.md/CLAUDE.md；启动时把侧栏切为按项目分组。
 - [ShiTan-677/dsh-plugins#dsh-plugin-mark-unread](https://github.com/ShiTan-677/dsh-plugins/tree/main/packages/dsh-plugin-mark-unread) — 给工作区会话行补一个手动「标记为未读」；官方支持同能力后自动退休。
 - [shrekcg/dsh-turn-rail](https://github.com/shrekcg/dsh-turn-rail) — 对话区左缘的轮次刻度滑轨：每条真实提问一根短横线，悬停预览、点击跳转（目标未加载时自动翻页），带当前位置高亮与滚动进度条。
