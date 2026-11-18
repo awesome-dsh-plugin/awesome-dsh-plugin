@@ -2213,7 +2213,7 @@ dsh plugin --profile web add dshmarket
 - [xianrui69/dsh-quick-phrases](https://github.com/xianrui69/dsh-quick-phrases) — 为 DeepSeek Harness 增加可拖拽、位置会记住的快捷短语条，以及 `/` 触发的短语菜单；每条短语可单独设置置顶、斜杠菜单、是否上条和点击即发送。
 - [Xiao-53/dsh-mindmap](https://github.com/Xiao-53/dsh-mindmap) — 原生侧栏思维导图，支持 Markdown 详情、布局保存和离线 HTML 导出。
 - [xiao-xiao-bai-ya/dsh-cn-menu-kit](https://github.com/xiao-xiao-bai-ya/dsh-cn-menu-kit) — 技能与命令的中文增强：菜单中的技能显示中文标题、支持中文搜索与悬浮详情，命令与技能的顺序可自由拖拽。
-- [xiaobaga281/dsh-effort-mosaic](https://github.com/xiaobaga281/dsh-effort-mosaic) — 把 DSH 模型菜单里的「推理等级」一行换成像素马赛克粒子滑轨：贴近滑块的一段是静止的密实墙，越往左方块越早脱离网格、漂移散开。滑块形状、尺寸、填充、强调色、最高档点亮样式与粒子越界动画都可在插件设置里调整。
+- [xiaobaga281/dsh-effort-mosaic](https://github.com/xiaobaga281/dsh-effort-mosaic) — 把 DSH 模型菜单的「推理等级」一行换成连续滑轨。两种风格可选：贴近滑块处密实、向左逐渐脱离网格漂散的像素马赛克粒子墙，以及最高档用蓝盖板擦出蓝到紫渐变、带火星与漂移粒子的霓虹胶囊轨道。滑块形状、尺寸、填充、强调色、最高档点亮与光晕动画、粒子越界效果均可在插件设置中调整。
 - [Xiaofei-fei/dsh-prompt-history](https://github.com/Xiaofei-fei/dsh-prompt-history) — 为 DSH Web 输入框提供终端式体验：↑/↓ 历史（前缀搜索、Ctrl+R）、Codex 风格的历史补全与下一句预测（Tab/→ 接受）、选中工具栏（复制/引用/侧聊追问）、右键直接粘贴、可拖动会话目录，以及能在右栏并行跑第二条 agent 线程的侧聊（fork 全上下文、浮动/分屏、双向桥接、并发写提醒）。
 - [xiaokaizhou/dsh-media-preview](https://github.com/xiaokaizhou/dsh-media-preview) — 在 DSH 聊天记录中自动将本地音视频路径渲染为可播放预览：将路径替换为同源 /api/media-preview/* 路由支持的 <audio>/<video> 播放器，并返回明确的错误状态码。
 - [xiaoluoli45/dsh-code-explainer](https://github.com/xiaoluoli45/dsh-code-explainer) — 在 DSH 工具卡的代码块上给每一行加中文行尾注释：输入侧是灰色「//」，输出侧的代码用蓝色箭头，规则能判的行即时给出、判不出的行用当前会话的模型补一版；顶部「注释：开/关」可关回纯代码，内容在发给模型与落盘前先做凭据掩码。
@@ -2586,6 +2586,7 @@ dsh plugin --profile web add dshmarket
 - [Assidefok/dsh-opencodego-status](https://github.com/Assidefok/dsh-opencodego-status) — 在 Harness Web UI 上悬浮显示 OpenCode Go 用量：5 小时滚动、每周与每月百分比、重置倒计时与续订日期，支持设备码登录与静默刷新。
 - [Astervolans/dsh-opencode-go-usage](https://github.com/Astervolans/dsh-opencode-go-usage) — 常驻侧边栏的 OpenCode GO 套餐额度组件：滚动/周/月三条用量条、每条下方一条已流逝与剩余时间条、同源用量代理、/opencode-go 命令，以及针对 GO 网关聊天请求的运行时 x-opencode-session 修复。fork 自 yumusb/dsh-opencode-go-usage。
 - [atlasmarkz/dsh-quota-meter](https://github.com/atlasmarkz/dsh-quota-meter) — 输入框下方显示余额与订阅用量：DeepSeek 钱包余额、OpenCode Go 的 5 小时 / 周 / 月窗口及重置时间，并按 DeepSeek 官方价格估算本次会话花费；数据来源可配置扩展，纯 JavaScript 无需构建。API 密钥依次从插件配置、环境变量（DEEPSEEK_API_KEY、OPENCODE_GO_API_KEY）、OpenCode 的 auth.json（仅 OpenCode Go）、DSH 凭据服务里查找；每个密钥只发给对应的服务商（api.deepseek.com、opencode.ai），数据会定时轮询。
+- [atlasmarkz/LoopPrism#dsh-loopprism](https://github.com/atlasmarkz/LoopPrism/tree/main/plugins/dsh-loopprism) — 把 DeepSeek Harness 的会话开始、提示词、工具结果与停止事件发送到本机 LoopPrism 应用，并把 LoopPrism 的会话评审工具（即 lpa mcp 提供的那些）注册为 loopprism_* 工具供 agent 调用。
 - [Avenger233/dsh-session-cost-board](https://github.com/Avenger233/dsh-session-cost-board) — 按会话统计 DeepSeek Harness 花费：只读本机会话日志，把每条 assistant 消息的 usage 按 DeepSeek 官方价目逐笔计价（峰谷时段、缓存命中 / 未命中 / 输出三个桶，web_search 与 web_fetch 成功调用按次计费），在「设置 → 会话花费」按金额列出每个会话，并在输入框下方显示当前会话的实时花费标签（可在同一页开关隐藏）。不联网、不上传。
 - [AwenJackson/dsh-volc-balance-card](https://github.com/AwenJackson/dsh-volc-balance-card) — 侧边栏常驻卡片，显示火山引擎账户充值余额与方舟 Coding/Agent 套餐窗口，内置 AK/SK 配置与逐项显示开关。
 - [AyahaShirane/dsh-deepseek-usage-meter](https://github.com/AyahaShirane/dsh-deepseek-usage-meter) — 在输入栏统计行、官方 token 用量条旁加一枚费用与余额胶囊：本次会话的 DeepSeek 估算费用、峰谷时段指示灯与已登录账号的剩余额度，明细里按计费项列出各自金额；仅在检测到 DeepSeek 官方渠道时激活。
