@@ -7422,6 +7422,8 @@ dsh plugin --profile web add dshmarket
 - [zjukop3/dsh-verify-kit#dsh-tablelint](https://github.com/zjukop3/dsh-verify-kit/tree/main/packages/dsh-tablelint) — 生成报告的 Markdown 表格检查：行列错位、分隔行与表头不符、表头重名、只有表头没有数据行。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [zjukop3/dsh-vertical-kit#dsh-adr-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-adr-check) — 架构决策记录（ADR）的检查：状态、逼出选择的背景、那一句决定、包含代价的后果、落选的备选方案——后果只写好处的 ADR 通常没真正权衡过。
 - [zjukop3/dsh-vertical-kit#dsh-agreement-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-agreement-check) — 中文合同的结构检查：甲乙方、日期、金额大小写一致、签署栏、争议解决、违约责任。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [zjukop3/dsh-vertical-kit#dsh-api-doc-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-api-doc-check) — 接口文档的书记检查：每个端点带方法和路径、有请求或响应示例、鉴权说明在场、错误响应有交代——只有路径没有动词的行不算端点。
+- [zjukop3/dsh-vertical-kit#dsh-bug-report-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-bug-report-check) — 缺陷报告的书记检查：一行标题、环境信息、编号复现步骤、预期与实际的对照——没有编号步骤的散文不算复现步骤，散文无法重放。
 - [zjukop3/dsh-vertical-kit#dsh-commit-msg-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-commit-msg-check) — 提交信息的形状检查：类型前缀、主题不超过 git log 折行处、标题不写句号、正文前有空格、破坏性变更用 BREAKING CHANGE trailer。单文件判定，可直接挂 commit-msg 钩子。
 - [zjukop3/dsh-vertical-kit#dsh-dockerfile-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-dockerfile-check) — Dockerfile 的判定：基础镜像是否固定、是否以 root 收尾、有无密钥写进层、普通复制是否误用 ADD、装包后是否清理索引。反斜杠续行按一条指令算。
 - [zjukop3/dsh-vertical-kit#dsh-env-example-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-env-example-check) — 环境变量示例文件的检查：每个键只放占位符、没有真凭据顺手提交、没有重复键静默覆盖、有注释说明用途——认的占位符形态写在 README 里。
@@ -7436,6 +7438,7 @@ dsh plugin --profile web add dshmarket
 - [zjukop3/dsh-vertical-kit#dsh-release-notes-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-release-notes-check) — 发布说明的书记检查：版本号标题、发布日期、破坏性变更必须配升级/迁移说明、版本倒序排列——读者依赖的唯一惯例。只验书记层面，不验软件质量。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [zjukop3/dsh-vertical-kit#dsh-resume-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-resume-check) — 简历的书记检查：联系方式可达、邮箱电话形态合法、工作经历时间线不自相重叠、教育段在场——只验记录格式，不判断内容真伪。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [zjukop3/dsh-vertical-kit#dsh-spec-doc-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-spec-doc-check) — 方案文档的检查：问题背景、可被检查的验收标准、明确的范围外，以及验收标准不能写成愿望——「体验良好」无法通过也无法拒绝；带阈值的愿望词不算违规。
+- [zjukop3/dsh-vertical-kit#dsh-test-report-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-test-report-check) — 测试报告的书记检查：通过+失败+跳过必须等于总计（不平直接报出算式）、测试环境在场、有失败就要有失败详情。
 - [zjukop3/dsh-vertical-kit#dsh-weekly-report-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-weekly-report-check) — 周报的结构检查：本周完成与下周计划分开写、风险与阻塞在场、至少一行带量化数字——让读者分得清进展和动作。空泛承诺按计划语句计数：在场可判定，空洞不可判定。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [ZK-Andy/dsh-frecency](https://github.com/ZK-Andy/dsh-frecency) — 为 DeepSeek Harness 提供常驻索引 grep，以同名遮蔽内置 grep/glob 工具：重复内容检索命中按访问/修改 frecency 排序的内存索引，glob 在可用时对齐内置 ripgrep 语义、不可用时回退索引。
 - [zmh2000829/dsh-web-search-multi](https://github.com/zmh2000829/dsh-web-search-multi) — 为原生 web_search 工具提供可选的 SearXNG、Brave、Tavily、Gemini 搜索溯源或 Wikipedia 后端，支持 Web 设置且不进行隐式回退。
@@ -8685,6 +8688,7 @@ dsh plugin --profile web add dshmarket
 - [SAXEM1997/specpowers](https://github.com/SAXEM1997/specpowers) — 为 DeepSeek Harness 注册 6 个 SDD+TDD 工作流技能：把 OpenSpec 规格编写与 Superpowers 测试驱动纪律衔接为带审查 Gate 的 Phase 0-4 流水线，零运行时依赖。
 - [sbVAN/dsh-skill-mimo](https://github.com/sbVAN/dsh-skill-mimo) — 实时技能提供器：把小米 MiMo（MiMo Desktop / MiMoCode）的全部 skill 读进 DSH 会话技能目录——engine-config 下的引擎内置技能（该目录缺失时从 app.asar 解包）、MiMoCode 全局与项目根、extensions.json 里扩展贡献的技能目录，以及 MiMo 自己的 skillPathCompat 开关启用的品牌兼容根。
 - [Scodive/Paper-Agent-Skills](https://github.com/Scodive/Paper-Agent-Skills) — 面向 DeepSeek Harness 的科研写作技能包：依据提供的实验记录与文献修订论文、准备逐条 rebuttal、生成汇报 storyboard；每个技能内置 Python 工具，用于打包证据并在本地校验修改。
+- [sh-lsy/dsh-qwen-media](https://github.com/sh-lsy/dsh-qwen-media) — Token Plan 图像与视频生成技能：文生图、图像编辑、连贯组图、文生视频、图生视频与参考生视频，并提供按能力对比的模型与输出规格选择。
 - [shenhe3939-debug/local-solution-first](https://github.com/shenhe3939-debug/local-solution-first) — 给 DeepSeek Harness 的「先找本地现成方案、再用证据验证」技能：动手实现、移植、选依赖、排查工具之前，先在项目与本机分层检索已有方案，用可核对的证据判断能否复用，必要条件或风险不满足时明确拒绝复用，并写清哪些结论无法核实。以 DSH 组合包（dsh.bundle）注册到 ctx.skills。
 - [shuxidemosheng/dsh-skill-doctor](https://github.com/shuxidemosheng/dsh-skill-doctor) — 诊断技能为什么没被模型选中——简介被截断、文件头损坏、引用文件缺失——并检查已安装插件之间是否存在 loader 条目冲突；按 profile 自动保存体检病历、每次复诊对比上次差值，把重复出现的问题归并为同一根因，为超长简介生成改写工单，并列出改动了技能目录配置的插件 patch。
 - [Signalight/law-thesis-review](https://github.com/Signalight/law-thesis-review) — DeepSeek Harness 技能插件：批改法学论文（国际经济法等）。读取学生 Word 论文，对照打包的常见问题清单逐项检查；可直接确定的错漏以 Word 修订模式修改，对部分整体问题、缺依据/缺澄清之处写 Word 批注；并输出简短、客观、以宏观点评为主的总体评语与待修改清单。
@@ -9257,6 +9261,7 @@ dsh plugin --profile web add dshmarket
 - [nuaaweixinye/dsh-gme-test-generator](https://github.com/nuaaweixinye/dsh-gme-test-generator) — 在 Harness 内驱动 GME Test Agent：三个工具负责列出接口目录、在本地 Python 后端启动并修复自主测试生成、轮询任务直到待评审，并把创建 PR、跳过与清理等动作挡在用户显式同意之后。
 - [nyantused-cpun/folio#plugins/folio-events](https://github.com/nyantused-cpun/folio/tree/main/plugins/folio-events) — Folio（兰亭）@nyantused/folio-dsh-events：会话协议事件插件——新会话入口提醒 + 会话关闭自动 save；与 @nyantused/folio-dsh-tools 配套使用。
 - [nyantused-cpun/folio#plugins/folio-tools](https://github.com/nyantused-cpun/folio/tree/main/plugins/folio-tools) — Folio（兰亭）@nyantused/folio-dsh-tools：咨询/汇报材料生成引擎的 15 个 DSH 原生工具（记忆面 + 质量门禁）+ L0 守卫；与 @nyantused/folio-dsh-events 配套使用。
+- [Oak-liuhj/dsh-taskflow](https://github.com/Oak-liuhj/dsh-taskflow) — 由模型规划并持久保存任务树，执行时建立子会话，支持递归委派、可读的子任务执行记录、对话增量调整及直接父任务完成通知。
 - [oddeye4649/dsh-lab-assistant](https://github.com/oddeye4649/dsh-lab-assistant) — 面向高校实验课程的 DSH 桌宠式插件：保存实验档案、按软件累积经验、用真实步骤证据生成 Word/Markdown 实验报告，并提供黄色高框指引与「点一下自动判对错」的教学循环。桌宠与实验助手面板仅在 Windows 桌面端出现，其他环境只有对话工具可用。
 - [oh-my-engine/dsh-plugin-oh-my-engine](https://github.com/oh-my-engine/dsh-plugin-oh-my-engine) — 采用阶段审批门禁和会话隔离证据记录的 OME 工程交付 Agent 预设。
 - [oliverCJ/dsh-notice-hooks](https://github.com/oliverCJ/dsh-notice-hooks) — 为用户和项目配置自动化 Hook，在会话、工具调用、权限请求和上下文压缩等事件发生时运行命令。Hook 授权需在“Hooks 设置”中手动管理。
