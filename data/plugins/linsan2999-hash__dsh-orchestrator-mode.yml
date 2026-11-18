@@ -1,0 +1,6 @@
+url: https://github.com/linsan2999-hash/dsh-orchestrator-mode
+name: linsan2999-hash/dsh-orchestrator-mode
+category: agi
+description:
+  en: 'Orchestrator mode for DSH: in one session and turn, the model selected in the picker plans read-only behind a workspace-changing tool deny list, a configured executor model implements the plan, and two hand-off tools move control between the planning and execution phases. Supports PTC executors and is toggled per session with /orchestrate.'
+  zh: 'DSH 编排模式：在同一会话与同一 Turn 内，选择器中选中的模型在工具黑名单后只读规划，配置的执行模型按计划实现，两个交接工具在规划与执行阶段之间转移控制权。支持 PTC 执行器，用 /orchestrate 按会话开启。'
