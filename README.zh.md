@@ -1512,6 +1512,7 @@ dsh plugin --profile web add dshmarket
 - [moluotianshen/pro-202611#context-broom](https://github.com/moluotianshen/pro-202611/tree/main/plugins/context-broom) — 在 Web 输入框下方的上下文占用读数旁增加一枚扫帚按钮：外框直接画出当前占用比例，随占用升高由绿转黄再转红，提醒语气加重、呼吸与摆动频率加快；点击即压缩会话，已注册原生 compact 或 compress 命令时优先使用，否则由插件 Host 路由折叠最老旧且不含用户消息的区间。
 - [Mombrane/dsh-subagent-monitor](https://github.com/Mombrane/dsh-subagent-monitor) — Web UI 子代理实时监视面板：侧边栏底部入口 + 右上角常驻卡片面板，实时展示当前会话每个子代理的运行状态（运行中/耗时/终态）、树形缩进，一键跳转子代理会话并支持返回主会话，刷新自恢复、移动端默认隐藏。
 - [momijijin/dsh-session-grove](https://github.com/momijijin/dsh-session-grove) — 在 DSH 侧栏官方工作区管理之上增加一层独立自由分组：不同工作区的会话可归入同一多层分组，支持拖拽、搜索、恢复和可选 AI 控制，不改变原工作区归属与日志。
+- [monta-6969/dsh-sw-3d-preview](https://github.com/monta-6969/dsh-sw-3d-preview) — agent 经 sw-mcp 驱动 SOLIDWORKS 建模后的预览与反馈环节：把设计 deliver 出的 STEP/STL/OBJ 画进 DSH 文件预览面板，让人看出零件建得对不对，再拾取面/边/点、在面上做三点法取样、带封盖剖切，并把已保存的标注汇总成一份含面号与坐标的 Markdown 交接单交回 agent。
 - [Moolight/dsh-shader-workbench](https://github.com/Moolight/dsh-shader-workbench) — 节点式 GLSL 工作台：在画布上连节点图并实时预览，编译成 Shadertoy 兼容的 GLSL（支持 BufferA–D 多 Pass 反馈与热重载），可跨编译导出 HLSL / MSL / SPIR-V，并在本地工作区管理项目、材质、快照与资源（图片 / 音频 / 歌词）。内置 57 个节点、8 个自带示例与 11 个 agent 工具，无运行时依赖。
 - [Mooling0602/dsh-web-file-uploader](https://github.com/Mooling0602/dsh-web-file-uploader) — 为 DeepSeek Harness 设计的文件上传插件。
 - [MoonlitDropOfBlood/DSH-Desktop#whaleharbor-promo](https://github.com/MoonlitDropOfBlood/DSH-Desktop/tree/master/plugins/whaleharbor-promo) — 把浏览器里的 DSH 会话变成鲸港简版客户端：独立 --app 窗口、客户端顶栏与任务通知；后台多源下载完整桌面安装包（SHA-256 校验），完成后提示安装。
@@ -11075,6 +11076,7 @@ dsh plugin --profile web add dshmarket
 - [slywalker2006/dsh-passwords](https://github.com/slywalker2006/dsh-passwords) — 让 DeepSeek Harness 变成服务器级多租户平台：远程访问 + 自动 HTTPS、子用户权限与配额、沙盒强制、加密认证与审计日志。
 - [SodaZheng/dsh-totp](https://github.com/SodaZheng/dsh-totp) — 面向个人 DeepSeek Harness Web 实例的纯 TOTP 访问验证，支持设置内扫码绑定、一次性恢复码、动态启停保护和撤销所有页面授权。
 - [STARDUSTLC666/dsh-code-security](https://github.com/STARDUSTLC666/dsh-code-security) — 代码安全工作台与 10 个 secure_* 工具：对文件、目录或 Git 改动执行确定性规则与密钥熵检查，支持依赖清单离线或 OSV 漏洞审计、脱敏证据查看、同范围修复复查与 Markdown/SARIF 报告导出，可选接入 Betterleaks / Semgrep CE / OSV-Scanner，内置 5 套工作台主题。
+- [Stars-XK/dsh-bitwarden](https://github.com/Stars-XK/dsh-bitwarden) — 接入 Bitwarden / Vaultwarden 密码库：6 个 AI 工具只返回条目元数据，密码通过受控执行通道注入子进程使用、回显脱敏、不进对话，设置页另有 Bitwarden 风格的密码库页面。
 - [startime-ltk/dsh-mimavault](https://github.com/startime-ltk/dsh-mimavault) — 把本机 MimaVault 密码库接入 DSH，提供 7 个工具用于元数据检索、条目读取、剪贴板复制、动态验证码、口令生成、域名受限的 API 调用与需人工确认的清空请求。默认对接 MimaVault 桌面应用（需另行安装）；可选的内置模式以明文保存条目。
 - [SteelUnion/dsh-confirm-gate](https://github.com/SteelUnion/dsh-confirm-gate) — 按轮统计持久化操作，按总数逐级升级：先提醒，再给明确的停止指令，最后请求确认。每次调用都现读会话的沙箱模式，在 read-only 与 workspace-write 下保持沉默。
 - [SternChiri/dsh-auto-preset-guard](https://github.com/SternChiri/dsh-auto-preset-guard) — 让「自动审批」熬过重启：应用退出时，自动审查的卸载迁移不再把在用的自动审批会话改写成「完全权限」；集成缺席时，存留的自动审批会话也不会打不开。
