@@ -2502,6 +2502,7 @@ dsh plugin --profile web add dshmarket
 - [zhileyo/dsh-workbase](https://github.com/zhileyo/dsh-workbase) — DeepSeekRuntime Web 端的工作台插件：宫格或列表管理项目（改名、置顶、收藏、归档与恢复），按项目浏览会话并预览正文、改名／归档／删除，待办支持优先级、Markdown 备注、图片与文件附件、搜索与筛选。状态存放在插件自己的宿主存储域 dsh_workbase。注册 11 个 Agent 工具，按版本校验读写会话所属项目的待办；同一面板还提供项目诊断、插件更新与加密备份恢复。
 - [zhishengplus/dsh-image-annotate](https://github.com/zhishengplus/dsh-image-annotate) — 在 DSH 的图片预览上圈选、画箭头、方框与文字，每一笔都能再选中拖动、缩放或改字，并把原分辨率的标注图作为附件放进输入框。
 - [zhishengplus/dsh-project-bookshelf](https://github.com/zhishengplus/dsh-project-bookshelf) — 将已有项目显示为书封、会话显示为章节，支持实时工作状态、封面编辑、项目右键菜单和切回原版工作区。
+- [zhongdh7/dsh-pin-workspaces](https://github.com/zhongdh7/dsh-pin-workspaces) — 在侧栏工作区上右键即可置顶整个工作区：置顶项按最近置顶排在最前，行标题使用主题强调色，设置里新增「工作区置顶」页可逐条取消；重载或重启后自动恢复并重排。
 - [zhougaoang/thought-constellation](https://github.com/zhougaoang/thought-constellation) — 把零散的思想片段编织成一张会生长的星图：主题、观点、关系与待补充的问题，并生成一份论证总结。
 - [zhouhaitao-cherry/ai-news-dsh](https://github.com/zhouhaitao-cherry/ai-news-dsh) — 在左侧边栏展示最新 AI 资讯，DeepSeek 相关排在前面。
 - [zhousun55-byte/dsh-postman](https://github.com/zhousun55-byte/dsh-postman) — 把文件与文件夹直接传进对话——图片以真实图片块加入消息，文本内容写入输入框草稿，文件夹按目录结构落盘。
@@ -9084,6 +9085,7 @@ dsh plugin --profile web add dshmarket
 - [good-saltfish/dsh-novel-agent](https://github.com/good-saltfish/dsh-novel-agent) — 右栏小说工作台，把「写一章」当成有可核对产物的流水线而不是一段长 prompt：生成骨架，先看清这一章会拿到什么上下文包，同一章一次生成 2–6 版候选挑中才落盘，再按章连写且进度写进磁盘，引擎重启不丢。字数区间、跨章 Jaccard、漂移比写在代码里而不靠模型自评，打回内容回灌为修复证据，最多重写两次；AI 指纹只对照 3956 章人类基线报数、故意不拦，因为两个分布本身重叠。带 7 个 agent 工具。写作引擎是独立 Python 包，首次使用时由插件自己装上。需要 PATH 里有 Python 3.10+（或在插件设置里填解释器路径）。
 - [GooDAnDReaDY/dsh-cron](https://github.com/GooDAnDReaDY/dsh-cron) — 为 DeepSeek Harness 提供定时任务、后台自动化与 Agent 执行。
 - [GooDAnDReaDY/dsh-kanban](https://github.com/GooDAnDReaDY/dsh-kanban) — 为 DeepSeek Harness 提供可视化看板，支持 Gitea 任务、工作流列和每任务独立 Agent 会话。
+- [google-q-dot/dsh-workflow-zcode](https://github.com/google-q-dot/dsh-workflow-zcode) — 在 DeepSeek Harness 中运行 ZCode .dwf.ts 动态工作流：可持续对话的具名子代理、沙箱工作区能力、可续跑的 SQLite 运行日志，以及 ZCode 风格的右侧栏面板（实时轨迹、子代理、产物、配置与续跑）。
 - [gorwayne/dsh-gor-tasks](https://github.com/gorwayne/dsh-gor-tasks) — 把待办放进 DSH：左侧任务面板、项目分类、对话里增删任务，回答一键拆成任务。
 - [gothepharnayadlsos-cyber/dsh-fanwork](https://github.com/gothepharnayadlsos-cyber/dsh-fanwork) — 改写前先做逻辑体检：审原文风险、逐条裁决，再并行出多稿，每稿附六维审核报告。需要自备 OpenAI 兼容的接口地址与 API Key——插件不内置模型，未配置时生成类接口返回 403。
 - [gqallen931/paper-gogo-plugin](https://github.com/gqallen931/paper-gogo-plugin) — 把 Paper-gogo「审稿人倒推、证据优先」的论文工作流做成原生工具：18 个 Phase 与 7 道 G0-G6 门禁可直接调用，门禁结果会被归一化，任一门禁 FAIL 时拒绝推进；主张按 SUPPORTED、INFERRED、VERIFY、MISSING 四态证据审计。工作流正文与 57 个技能内置在自己的目录中，安装时无需另装 Paper-gogo 包。
@@ -9235,6 +9237,7 @@ dsh plugin --profile web add dshmarket
 - [LittleBlackTong/dsh-plugin-cron](https://github.com/LittleBlackTong/dsh-plugin-cron) — Agent 任务定时调度器：自然语言或侧栏 UI 创建任务，到点向新建/固定会话注入 user 消息触发完整 agent turn，带执行历史、手动触发与 SSE 实时同步。要求 DSH session format v4（官方 DeepSeek Harness 0.1.7+）：注入消息使用 producer-owned source kind plugin:cron。
 - [LittleBlackTong/dsh-plugin-heartbeat](https://github.com/LittleBlackTong/dsh-plugin-heartbeat) — 给每个根 agent 装一套自主神经心跳：静默拍会 diff 会话的待办 / 团队任务板 / 目标，只有出现信号才开口（L1 汇报 / L2 提问 / L4 升级），只问不做。每条消息带 why-now 行、可选的一行生理签名（距你上次说话多久、今天第几次找你）与紧凑任务快照（800 字符上限）；去重窗口、静默时段、每日预算、不应期 / 重启冷却与持久化生命体征共同限流，忙碌时 followup 注入排队不打断。它与 dsh-plugin-memory 共享一个建议性发言权（~/.dsh/proactive-cooldown.json，默认 180 秒）互不抢话，子 agent / teammate 仍在运行时保持静默，并在会话头部显示「子智能体执行中 · N」胶囊（标签页隐藏时暂停轮询）。v0.8 新增诊断面板（解释最近几次为何没开口并显示当前发言权持有者）与面板内可调的仲裁窗口 / 在场抑制 / 生理签名开关；设置区块带专属描边爱心标记（16×16 / stroke 1.3，与 dsh-plugin-memory 规格一致）。v0.8.1 兼容 DSH 0.2.2-rc.2：agent 注册表优先 agents.roots()、缺失时回退 agents.list()，所有 agent/created 监听器都做了异常保护——rc.2 下未保护的抛错会让 agent 注册被拒、无法新建会话，因此 rc.2 用户必须升级到 0.8.1 或更新版本。
 - [LittleChenLiya/dsh-superagent](https://github.com/LittleChenLiya/dsh-superagent) — 把一个目标拆成并行子任务并合成一份报告，运行状态落盘、宿主重启后可继续；每个 run 有调用数与 token 硬上限，并打印成本。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [liuhange789/dsh-patient-education](https://github.com/liuhange789/dsh-patient-education) — 把医生已经做出的决定排成患者看得懂的《您的就诊须知》：诊断一句话、用药表格（药名/怎么吃/吃多久/注意事项）、饮食与活动、复查、什么情况需要立即就医。模板硬编码、只填医生原话，不生成任何医学表述，不给建议、诊断或用药推荐；交付患者前须医生审核。
 - [liuhange789/dsh-sop-runner](https://github.com/liuhange789/dsh-sop-runner) — 门店 SOP 执行自检：把 SOP 写成工作区清单，显示今天该查什么，逐项记录通过/不通过/拍照（不通过必须写备注），按天追加 JSONL 记录，并生成含完成率、异常项和与上一周期对比的纯文本日报。输入框上方带自检条；照片只存档，不做识别。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [liujianqiao701/dsh-test-framework](https://github.com/liujianqiao701/dsh-test-framework) — DSH 测试工作框架：把空文件夹初始化为产品、模块、版本、报告与归档目录树，注册 7 个 test_framework_* 工具与 4 个运行时技能，并提供提示词级闸门——开测前报告需求文档拆分、版本、跨文档关联与环境账密中尚未登记的部分。需先配置 playwright MCP（无替代路径）。
 - [liweitan2046-cyber/dsh-wanfeng-studio](https://github.com/liweitan2046-cyber/dsh-wanfeng-studio) — 爆款短视频复刻工作台：原片、角色图（付费生成前必须人工过审）、换人、抽帧质检、成片五步；附素材库与三轨时间线，填 RunningHub 工作流 ID 即可接入任意工作流。
