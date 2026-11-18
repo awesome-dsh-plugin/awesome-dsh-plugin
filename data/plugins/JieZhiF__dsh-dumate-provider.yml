@@ -1,0 +1,7 @@
+url: https://github.com/JieZhiF/dsh-dumate-provider
+name: JieZhiF/dsh-dumate-provider
+category: model
+description:
+  en: 'Native Baidu DuMate provider for DeepSeek Harness: 22 models in the picker, cookie sign-in, multi-account failover, balance and daily check-in.'
+  zh: '百度搭子 DuMate 原生 provider：22 个模型进选择器，Cookie 登录、多账号故障切换、余额查询与每日签到。'
+icon: https://raw.githubusercontent.com/JieZhiF/dsh-dumate-provider/main/assets/icon-180.png
