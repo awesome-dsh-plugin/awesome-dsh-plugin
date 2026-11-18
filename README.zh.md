@@ -745,6 +745,7 @@ dsh plugin --profile web add dshmarket
 - [Elefseus/dsh-pet-progress](https://github.com/Elefseus/dsh-pet-progress) — 把 dsh 宠物忽略的 todo 与 goal 事件折成宠物气泡上的百分比进度；会话没有任务列表时退化为一行当前活动摘要。需先安装 dsh web pet 插件（@linxin666/dsh-pet >= 0.4.0）。
 - [eloimovo/better-dsh-codex-effort-slider](https://github.com/eloimovo/better-dsh-codex-effort-slider) — 接管 DSH 输入框的官方模型席按钮，点开是自建的两级面板（provider 列表 → 模型列表 + 搜索），核心是一条连续可拖动的推理等级滑条：填充由蓝渐变到紫罗兰，高档位带星云与星尘粒子，一档一色；拖动一档一格，点模型不关面板、滑条立刻落到该模型的中间档。
 - [Elycheng/dsh-article-annotator](https://github.com/Elycheng/dsh-article-annotator) — 在 DSH 原生右侧栏做逐句文稿批注：把 Markdown、Word、PowerPoint、PDF 变成可按句点选的文本，给任意一句写意见，并把待处理批注作为草稿交给 Agent。6 个 Agent 工具让模型读取每条意见、改稿（Markdown 直接改原文件，二进制格式写同名 .revised.md）、勾销批注，并把反复出现的表达偏好记入长期写作风格记忆、注入之后的提示。DOCX/PPTX 为零依赖解析；PDF 文本提取在本机走宿主 Python + pypdf（或 poppler 的 pdftotext），两者都没有时 PDF 不可用。不联网、无遥测。
+- [EndlessPoem/dsh-ip-info](https://github.com/EndlessPoem/dsh-ip-info) — 在输入框下方或悬浮窗里显示当前公网 IP、归属地、运营商、ASN 与本地网卡，字号跟随 Harness 设置。
 - [enteguo/dsh-plugin-quick-chat](https://github.com/enteguo/dsh-plugin-quick-chat) — 在侧边栏加入「快速会话」入口，打开一个小窗对话，可切换模型与思考强度、可选携带当前主会话全文，历史可继续、重命名、删除。
 - [enterhalf/dsh-session-colorful-unread-pin-jobs](https://github.com/enterhalf/dsh-session-colorful-unread-pin-jobs) — 按状态给 DSH 侧栏会话标题上色：未读（模型运行中＝蓝、已跑完＝绿）与置顶（黄，读取 DSH 官方置顶集合），两者合成一条从左到右的渐变。置顶、归档与排序由 DSH 官方提供，本插件不重复实现置顶、也不改写官方 bundle；另含列出全部未读会话的设置分节。
 - [EnzoX/dsh-dee-mate](https://github.com/EnzoX/dsh-dee-mate) — DeepSeek Harness 界面里的功能性斗鱼桌宠：可同时查看多个并行会话的进展，必要时一键临时提权到完全访问、任务完成自动恢复默认权限；面板可直接递话、喊停、就地报批，大小与配色可调。
@@ -3530,6 +3531,7 @@ dsh plugin --profile web add dshmarket
 - [soarGuo/dsh-skin-lab](https://github.com/soarGuo/dsh-skin-lab) — 皮肤作者工作台：官方 token 浏览器（169 个 --dsw-* 变量，带中文描述与模块标签）、实时试穿、皮肤持久保存、主题固化、7 套光谱预设与 SVG 背景图，以及自定义背景上传。
 - [SolvasHQ/dsh-theme](https://github.com/SolvasHQ/dsh-theme) — 为 DeepSeek Harness Web GUI 提供主题预设、DIY 调色与各模式强调色、加粗边框、字体与界面字号。
 - [Something11235/dsh-video-skin](https://github.com/Something11235/dsh-video-skin) — 把一段循环短片铺成聊天背景（可调透明度），启动时再播放一段有声片头动画。首次启动若为浅色主题，会一次性切到深色（附撤销提示）。
+- [sonruozimu/mbcc-console-wallpaper](https://github.com/sonruozimu/mbcc-console-wallpaper) — MBCC 终端风格皮肤：通过主题 token 重绘深浅两套配色并提供五档强调色；新增两段式开屏动画（可选视频片段 + 启动日志）；在侧栏底部新增壁纸库，可用本地图片替换聊天背景，支持幻灯片播放、透明度与填充方式调节，并内置一套深色主题。
 - [dsh-eva-mari-skin](https://github.com/SorenLorn/dsh-eva-mari-skin) — EVA真希波装甲HUD风格DSH皮肤，自带开场动画、组件顺序入场动效，毛玻璃UI
 - [SoulZhou/dsh-background-studio](https://github.com/SoulZhou/dsh-background-studio) — 为 DeepSeek Harness 提供六套可切换背景、自定义图片或任意纯色，可调节不透明度，并注册为独立的「背景」设置页。
 - [Soviet-Dreadnaught/dsh-theme-longmarch](https://github.com/Soviet-Dreadnaught/dsh-theme-longmarch) — 把 DeepSeek Harness Web GUI 换成黑底红字的磷光终端主题：红色数据雨与 CRT 扫描线，外加党务 / 国家政务 / 中央军委 / 国家安全四套部门预设，每套自带徽记、配色与背景纹样。
@@ -4627,6 +4629,7 @@ dsh plugin --profile web add dshmarket
 - [elfgzp/dsh-session-bridge](https://github.com/elfgzp/dsh-session-bridge) — 给 agent 一组工具：打开前台会话、以排队或插队方式发提示词、读回转录、取消回合，以及拿到本机 Web 应用带认证的地址。
 - [elk-9527/dsh-auto-archive](https://github.com/elk-9527/dsh-auto-archive) — 按可配置天数自动归档闲置的 DSH 会话，并清理已归档会话的投影缓存，不删除会话记录或附件。
 - [EmptyVessel-000/dsh-file-history](https://github.com/EmptyVessel-000/dsh-file-history) — 按轮次给整个工作区留检查点：每轮结束存一份快照，本轮改了哪些文件直接列在聊天里那一条下方，任意一轮都能还原——只还原文件、只还原对话，或者全部还原。捕获靠扫描整棵树，而不是挂钩 write/edit 工具，所以 shell 命令、外部编辑器、git 操作改出来的东西同样留痕。还原对话是从那一轮分叉出新会话，不切断原来的会话；还原本身也能撤销。历史存放在 DSH_HOME 里的影子 git 仓库中，不碰项目的 .git。需 Git >= 2.20 与 Node.js >= 20。
+- [EndlessPoem/dsh-session-delete](https://github.com/EndlessPoem/dsh-session-delete) — 在会话菜单加一行两次点击确认的「删除会话」：停止工作、归档、解除工作区归属、取消置顶，再删除日志与投影缓存；日志仍被占用时回滚前面每一步，不留半删除状态。
 - [Endorphin1203/dsh-side-chat](https://github.com/Endorphin1203/dsh-side-chat) — 把多次选中的文字攒进草稿区（计数、悬停预览、一键清除），再在只读的临时侧边聊天里追问：只放行 read/glob/grep/read_image，可单独选择模型与推理强度，关闭标签即归档。
 - [Enosensu/dsh-fork-relink](https://github.com/Enosensu/dsh-fork-relink) — DSH 的 fork 伴随插件:官方 fork 发生后,把原会话的直接子 agent 复制到 fork 出的新对话下(递归复制整棵子树,副本经官方 agent API 创建),每个副本留在磁盘上成为可被官方恢复路径唤醒的冷会话——新对话保留子代理面板,并能继续给这些子代理发消息;原件仍留在旧分支。
 - [erlingmijiang/dsh-lorebooklike-prompt-tool](https://github.com/erlingmijiang/dsh-lorebooklike-prompt-tool) — 类世界书的 DSH 提示词规则：分层系统提示锚点、蓝绿灯条目、可复现概率门与正则替换。
