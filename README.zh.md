@@ -2867,6 +2867,7 @@ dsh plugin --profile web add dshmarket
 - [Leni-More/dsh-conv-calendar](https://github.com/Leni-More/dsh-conv-calendar) — Web 侧边栏的 GitHub 风格日历网格，按天展示你发出的对话条数，可切换为会话数、Token 总量或输出 Token。只统计你亲手发送的消息，注入的上下文不计入。
 - [LexVolkov/dsh-ledger-kitty](https://github.com/LexVolkov/dsh-ledger-kitty) — 窗台上的白猫记账助手：显示每条回答与会话的 token 和花费、提示缓存省下的钱、上下文占模型窗口的比例、下一次峰谷换价时间与实时 DeepSeek 余额；可摸头打呼噜，随 agent 工作状态做出反应，所有音效均为合成。
 - [lhylhy2024/dsh-simple-cost](https://github.com/lhylhy2024/dsh-simple-cost) — 在侧边栏账户区上方显示 DeepSeek 账户余额、当前会话累计花费与逐轮费用，并对超出 token 阈值的单轮提供一键 AI 分析。
+- [liancheng2020/dsh-balance-sentinel](https://github.com/liancheng2020/dsh-balance-sentinel) — DeepSeek 余额监控与两级低余额告警，推送到飞书、钉钉、企微、Telegram 等 IM 通道；支持宿主账号免填 API Key（需已登录）。
 - [licyer/dsh-token-monitor](https://github.com/licyer/dsh-token-monitor) — 会话头部余量徽标 + 用量监控页签：实时展示各供应商余额/余量与重置倒计时，按会话/供应商/模型/客户端统计请求量、Token（输入/输出/缓存读/缓存写）、缓存命中率、预估费用与平均 TPS，本地 SQLite 留存历史，支持跨设备导入导出。
 - [likaileave/dsh-model-billing](https://github.com/likaileave/dsh-model-billing) — 在输入框右下角的模型选择器中自定义模型顺序，按每百万 tokens 设置缓存命中、缓存未命中与输出三档价格，并结合内置的 DeepSeek 峰谷价估算逐轮和本会话费用。
 - [like8995209-coder/dsh-tide-hint](https://github.com/like8995209-coder/dsh-tide-hint) — 侧边栏 DeepSeek 峰谷计费提示，显示北京时间倒计时、中国法定节假日与调休、每日定价规则刷新、官方充值优惠状态，以及按当前时段折算成输入 tokens 的账户余额（使用 DSH 里已保存的 DeepSeek 平台登录凭据读取）。
@@ -4350,6 +4351,7 @@ dsh plugin --profile web add dshmarket
 - [wxzjss/dsh-whale-loli](https://github.com/wxzjss/dsh-whale-loli) — 一个插件里放三个 Agent 预设，各自带一份互不相通的持久记忆文件。装上就在 Agent 预设列表里注册「鲸鱼娘Agent预设」「鲸鱼娘活人版Agent预设」和「鲸鱼娘涩涩版Agent预设」，直接在模式下拉里选用，不用手改 profile 配置。三者都沿用官方极简模式的组成——只有一个持久化 shell 终端——再加文件读写与 glob/grep 工具。第一个配的是鲸鱼娘陪伴人设（简体中文口语、称呼主人、黏人傲娇）；第二个换成「活人版」：允许怼人、敷衍、冷淡，甜味降为调味；第三个保留原版人设，但把「黏主人」写成第一行为驱动力，只在主人面前放开，群聊里照旧收着。每个预设都通过各自独立的提示变量（whale_memory、whale_memory_v2、whale_memory_v3）读取自己的记忆文件（whale-loli.md、whale-loli-v2-live.md、whale-loli-v3-naughty.md），三份记忆互不读写。上下文压缩交给 billion-context 插件；本插件只保留人设层的三条约定：压缩摘要也算依据、需要原文时自己去检索、看不到旧原文不等于记忆丢失。
 - [wysxxx/dsh-account-identity](https://github.com/wysxxx/dsh-account-identity) — 自定义 Harness 侧边栏名称与头像，支持本地裁切预览。
 - [xiachuyoufeng/dsh-soul-evolve](https://github.com/xiachuyoufeng/dsh-soul-evolve) — 人格状态与缓慢演化：五个状态维度（效价、激活、精力、亲近、专注）每轮对话后更新、随时间向基线衰减；四种场景（工作、技术求助、情绪支持、闲聊）只调回复长度与温度，不改状态本身；Soul 面板保存人格卡与带权重的演化条目，按权重排序注入系统提示词，总预算 4000 字，人格在前、状态在后。带浏览器面板：人格卡编辑 + 实时人格状态（五个指标与最近六条事件），并把轨迹以 JSONL 落盘；首次安装会种入一份可用的默认人格。
+- [xiaoge480/dsh-qzone-diary](https://github.com/xiaoge480/dsh-qzone-diary) — 定时发 QQ 空间日记：到点提醒当前会话写当天日记，然后连同配图一起通过 Ego 浏览器自动化发出去，复用浏览器已有的空间登录态（不碰密码和 cookie）。同文去重 + 幂等重试，重跑安全。另带评论扫描器，只把新评论列进待办文件，绝不代回。发布钟点、标题格式、评论检查时间都可配；附一份技能文档，写清正文格式、隐私红线、配图规格与失败处理。需要 Ego 浏览器；dsh-image-studio 可选，只有日记要配图时才需要。
 - [y258dd/dsh-hormone](https://github.com/y258dd/dsh-hormone) — 压力、精力、爽度三个状态随真实会话事件涨落、随时间衰减，越界时才往系统提示里写一句话。
 - [yimengsuper2432/dsh-agent-personality](https://github.com/yimengsuper2432/dsh-agent-personality) — 人格插件：随对话缓慢变化的情感值、独立世界观、每轮日记、关系网、主动找你说话，以及费用行右侧的一句心里话。
 - [yimengsuper2432/dsh-virtual-person](https://github.com/yimengsuper2432/dsh-virtual-person) — 一份 AGENT.md 同时管人格与记忆：整份注入每个会话的系统提示（上限 4 万字，超出按整行截断并在提示里注明），设置页直接编辑；每轮日记按相似度合并、按被提起的次数分节，只有到 2 MB 上限才淘汰。
