@@ -1,5 +1,5 @@
-url: https://github.com/Darianliu23/dsh-civ6-whale
-name: Darianliu23/dsh-civ6-whale
+url: https://github.com/Darianliu23/dsh-civ6
+name: Darianliu23/dsh-civ6
 category: fun
 description:
   en: 'Lets the session''s own model play Civilization VI through civ6-mcp (a fork of lmwilki/civ6-mcp, branch base-game-compat, installed separately), which reads state and issues commands over the game''s Tuner port. Registers three session presets: the AI plays on its own, an advisor limited to read-only tools, and co-op where it acts on request and the player can take over at any time. A civ6 gateway tool also works in every session, including ones already started. A config card sets the gateway mode, extra instructions, base-game mode (hides expansion-only tools) and the civ6-mcp folder.'
