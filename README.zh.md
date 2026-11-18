@@ -9717,6 +9717,7 @@ dsh plugin --profile web add dshmarket
 - [chaorenzeng/dsh-qqbot](https://github.com/chaorenzeng/dsh-qqbot) — tencent-connect/dsh-qqbot 的 fork：通过 QQ 官方机器人 API 把私聊与群聊接入 DeepSeek Harness 的 agent loop，新增「消息处理方式」——排队（当前回合结束后合并处理新消息）或插话（通过 agent.followup() 立即补充到当前任务）；并包含扫码绑定、按会话路由、斜杠命令、审批与提问转发、白名单访问控制。需要 Node.js >= 20.3.0 与 QQ Bot AppID/AppSecret。
 - [cheesehaqi/dsh-qq-onebot-bridge](https://github.com/cheesehaqi/dsh-qq-onebot-bridge) — 基于 OneBot v11 反向 WebSocket 的 QQ 双向桥：每群/每私聊用户独立会话、@引用语音转文字、私聊图片/动画表情识图、表情与贴纸工具。
 - [chendaleiQ/dsh-plugin-desktop-notify](https://github.com/chendaleiQ/dsh-plugin-desktop-notify) — 给 DeepSeek Harness 加桌面通知与应用图标未读角标：一轮结束、等待审批／回答／计划确认、以及这一轮出错时各弹一条横幅；角标显示有几个会话需要你，看过之后清零，点横幅切到对应会话。文案跟随 DSH 界面语言，子智能体会话默认不提醒，标题与正文长度可配置；宿主还在回环地址上开了一个 HTTP 接口，供脚本和其它工具发通知。
+- [chengzhi43/dsh-desktop-notify](https://github.com/chengzhi43/dsh-desktop-notify) — 回合结束或智能体等待你选择时发送桌面通知，点击即可回到对应会话。
 - [chenvinc/dsh-2-atoll-notice](https://github.com/chenvinc/dsh-2-atoll-notice) — 把 DeepSeek Harness 的任务状态（失败、等待你处理、已完成）镜像到 macOS Atoll 灵动岛上的同一枚状态灯，并显示三种状态的计数。
 - [chenvinc/dsh-task-settle-notify](https://github.com/chenvinc/dsh-task-settle-notify) — 任务看板卡片结算后，把标题、成败、耗时与下一步排队送进发起该卡的那个 DSH 会话；成功卡按可配置窗口合并（默认 30 秒），失败卡立即发送。卡片执行中提问时，问题也送回同一个会话，再由它把回答交回卡片。
 - [chenweigao/dsh-perch-notify](https://github.com/chenweigao/dsh-perch-notify) — dsh 会话的 Webhook 通知：审批被请求或回合结束时发送 POST，可发往 ntfy、Bark、Slack/钉钉/企微机器人地址或任意 HTTPS 端点。
