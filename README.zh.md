@@ -1907,6 +1907,7 @@ dsh plugin --profile web add dshmarket
 - [SpokAtom/dsh-status-lamp](https://github.com/SpokAtom/dsh-status-lamp) — 侧栏会话行状态灯：空闲蓝点、挂起灰空心（手动标记，或 5 天无对话自动）、归档灰实心；「视图选项 → 筛选会话」第一项可一键隐藏归档与挂起。原生待审批、进行中、有新结果灯保持不变。
 - [SpookySandwich/dsh-plugin-smooth-stream](https://github.com/SpookySandwich/dsh-plugin-smooth-stream) — 给 DeepSeek Harness 加入更好的流式文字动画。
 - [sqfcyily/dsh-workspace-files](https://github.com/sqfcyily/dsh-workspace-files) — 在DeepSeek Harness Web GUI 中浏览工作区的目录/文件，并结合 Git 显示文件改动。
+- [ssesweb/dsh-deepseek-mode](https://github.com/ssesweb/dsh-deepseek-mode) — DeepSeek 网页版对齐模式：输入框深度思考与联网搜索开关、deepseek 预设、按会话门控 web_search。
 - [SSShooter/dsh-mindmap-live](https://github.com/SSShooter/dsh-mindmap-live) — DSH Web 实时双向思维导图：Agent 与用户共编同一棵树，改动即时互相同步，支持停靠分屏与全屏两种视图。
 - [stallenlu/dsh-freebie-radar](https://github.com/stallenlu/dsh-freebie-radar) — 把 ZiChuanLan/freebie-radar 做成 DSH 插件，提供 freebie_radar 智能体工具与复刻原站界面的侧边栏工作台面板，含频道资源流、搜索、详情抽屉与深浅色主题。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [stallenlu/dsh-huobao-drama](https://github.com/stallenlu/dsh-huobao-drama) — DSH 侧栏面板，将「火宝短剧」短视频创作工作台 Web UI 以 iframe 嵌入；另提供 19 个 huobao_* 桥接工具，对接本地后端（健康检查、短剧与模型增删改查、生成任务、配置与媒体接口）。

@@ -1,0 +1,7 @@
+url: https://github.com/ssesweb/dsh-deepseek-mode
+name: ssesweb/dsh-deepseek-mode
+category: ui
+description:
+  en: 'DeepSeek web-style mode: composer toggles for deep think and web search, a DeepSeek agent preset, and per-session web_search gating.'
+  zh: 'DeepSeek 网页版对齐模式：输入框深度思考与联网搜索开关、deepseek 预设、按会话门控 web_search。'
+icon: https://raw.githubusercontent.com/ssesweb/dsh-deepseek-mode/main/assets/icon-180.png
