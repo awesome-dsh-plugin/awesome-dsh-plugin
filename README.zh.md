@@ -183,6 +183,7 @@ dsh plugin --profile web add dshmarket
 - [1186258278/dsh-zh-ui](https://github.com/1186258278/dsh-zh-ui) — 中文前端界面设计规范：注入 zh-ui-design 技能与系统提示，标题即功能、去除解释性占位文案、单一记忆点签名元素；附带 10 条界面文案/样式 lint 规则。
 - [1207291706/dsh-restart-foot](https://github.com/1207291706/dsh-restart-foot) — DSH Windows 桌面端侧栏底部的重启按钮，就在账号入口上方：点两次即结束应用进程并自动重启，全程不弹命令窗口。
 - [1250589385/dsh-quick-send](https://github.com/1250589385/dsh-quick-send) — 在输入框一行放一组快捷按钮，点一下把预设文字发进当前对话。每个按钮的名称、大小、透明度、形状与发送内容都可就地编辑；右键拖动整组可在上下文进度左右换位，选择保存在本地。按钮组只占自身宽度，不会挤压上下文进度与用量区域。
+- [1250589385/dsh-vendor-quick-switch](https://github.com/1250589385/dsh-vendor-quick-switch) — 在原版模型菜单旁常驻厂商索引：点厂商直达该厂商模型，可选显示按来源探测的剩余额度徽标。
 - [13071301808/dsh-composer-expand](https://github.com/13071301808/dsh-composer-expand) — Web UI 输入框展开/收起：composer 工具行新增 ⬆/⬇ 按钮，一键把输入框扩大到 70vh 高度，方便写长 prompt。
 - [1314521gjy/dsh-wujie-canvas](https://github.com/1314521gjy/dsh-wujie-canvas) — 在 DSH 左侧栏加入无界画布页面：内置画布前端、本机工作台状态与启动，并让 DSH Agent 通过工具读写当前画布；画布不再内置 Agent。需本机已安装无界工作台与 ComfyUI；插件不打包 ComfyUI、CUDA、模型或 API Key。
 - [1321928757/dsh-prompt-polish](https://github.com/1321928757/dsh-prompt-polish) — 输入栏提示词优化：6 种策略 × 3 种语言与自定义指令重写草稿，可选携带目标、任务清单、压缩摘要、工具结果与聊天上下文，附结果确认弹窗、最近 5 次历史与三级设置持久化。
@@ -2912,6 +2913,7 @@ dsh plugin --profile web add dshmarket
 - [LobotomyCorporation/dsh-token-bar](https://github.com/LobotomyCorporation/dsh-token-bar) — 在每条回复的图标行里画一条单轮用量条：灰/黄/绿分段条配百分比图例，显示该轮未缓存输入、缓存读取与输出的拆分与各自占比。
 - [logghT/dsh-today-eat](https://github.com/logghT/dsh-today-eat) — DSH 饮食管家：口味与营养档案、九种目标/场景饮食阶段与子目标、饭点提醒、附近餐厅搜索、1000 道本地原创菜谱与采买清单、周计划，以及只存本机的饮食记录。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Looriann/dsh-cost-ledger](https://github.com/Looriann/dsh-cost-ledger) — 「费用」标签页：按天、按模型统计 token 花费并折算成人民币，堆叠柱状图对齐 DeepSeek 官方控制台，悬停即可看到当天每个模型花了多少；内置阿里百炼官方价目表 142 个模型（千问、DeepSeek、Kimi、GLM、MiniMax），缓存命中按官方 10% 规则计价；查不到价的模型明确标为「未定价」并可一键手填，绝不静默算成 0。
+- [Lornatang/dsh-caveman](https://github.com/Lornatang/dsh-caveman) — 为 DeepSeek Harness 提供 Caveman 技能与工具：响应风格、可恢复的工具结果压缩、模型路由、浏览器工具和委派。
 - [loshanvren/dsh-codex-reset-tracker](https://github.com/loshanvren/dsh-codex-reset-tracker) — 在 DSH composer 中报道 Codex 重置概率与排期，支持已完成重置的可选系统通知，并提供只读状态与历史记录工具。
 - [LoveDoLove/dsh-token-saver](https://github.com/LoveDoLove/dsh-token-saver) — DeepSeek Harness 插件，可裁剪工具输出并折叠 grep 结果，提供可选的 Caveman 和 Ponytail 提示词精简、本地即时响应、RTK 命令输出压缩、上下文压力处理、可选的 LLM 摘要压缩、稳定的提示缓存布局、Web 设置界面及持久化节省统计。
 - [Lovenndme/dsh-command-context](https://github.com/Lovenndme/dsh-command-context) — 给 DeepSeek Harness 加一个 /context 命令：显示当前会话上下文窗口的占用、剩余空间，以及提示词各部分的占比（系统提示 / 记忆文件 / 技能 / 消息 / 工具结果）。只读、纯本地、不触发模型调用。
@@ -4992,6 +4994,7 @@ dsh plugin --profile web add dshmarket
 - [popu2do/dsh-call-session](https://github.com/popu2do/dsh-call-session) — 并排运行多个 DeepSeek Harness 会话，让它们互相交接任务，并在同一张只读看板上看清整场协作。
 - [praystring/dsh-send-debounce](https://github.com/praystring/dsh-send-debounce) — 把聊天框里连发的几条短消息缓冲合并成一轮再唤醒模型：停手若干秒后才回复一次；长消息和附件不延迟。
 - [prgrmrwy/dsh-session-id-copy](https://github.com/prgrmrwy/dsh-session-id-copy) — 在 DSH Web 界面的对话标题旁显示 6 位 session id 徽标，点击即复制完整 session id 并给出短暂提示。
+- [psyduck25/dsh-session-manager](https://github.com/psyduck25/dsh-session-manager) — 在「设置」里逐个删除会话，不必连整个工作区一起删：所有会话按工作区列出，每行带锁定和删除；删除要二次确认后进入删除缓冲站，且日志被移出会话目录，所以那一行是真正消失而不是变灰留在原地。被锁定的会话由宿主拒绝删除，不只是界面上禁用。缓冲期内可回档，窗口 0–720 小时可配；到期连同日志一起真正删除。
 - [ptrel1/dsh-interrupted-resume](https://github.com/ptrel1/dsh-interrupted-resume) — 轻量级的 dsh 崩溃恢复：重启后识别上一轮被强杀中断的会话，注入一条「先核实现状再动手」的续跑指令，避免盲目重做已有副作用的操作。只认真正的崩溃信号（turn/end 的 reason 为 interrupted，由 session repair 冷读时合成），因此不会把用户主动取消、限流或模型报错误判为可续，也就不需要错误分类、退避策略或配置界面。与通用自动续跑插件相比，它还覆盖「子代理执行中被中断」的盲区：此时父代理的轮次已正常结束（正在等待子代理），常规判定看不到任何可续对象，整棵子代理树会静默死掉；本插件会识别出被中断的子代理并唤醒父代理。单个宿主文件、零外部依赖、七个配置常量。
 - [PwnKY/dsh-session-link](https://github.com/PwnKY/dsh-session-link) — 复制、打开 `dsh://` 会话深链，或将其粘贴到另一对话中，注入被引用会话的受限只读快照。
 - [qiangweiliu/dsh-context#agent-embodiment](https://github.com/qiangweiliu/dsh-context/tree/main/agent-embodiment) — 为 DeepSeek Harness 提供上下文可观测性与控制：跨会话 token 分析、会话级预算/提示词/工具控制，以及可选的 Agent 脚手架。复用官方 tokenMeter、compaction、systemPrompt、tools.restrict seam；监控只读。
@@ -11054,6 +11057,7 @@ dsh plugin --profile web add dshmarket
 - [lonelymoon87/dsh-guardian](https://github.com/lonelymoon87/dsh-guardian) — 增加危险操作策略检查、输出脱敏和安全审查工作流。
 - [Lornatang/dsh-codex-security](https://github.com/Lornatang/dsh-codex-security) — 面向智能体的静态安全审查工作台：扫描产物、问题分级，以及 SARIF/JSON 导出。
 - [Lornatang/dsh-frontgate](https://github.com/Lornatang/dsh-frontgate) — DeepSeek Harness 网页界面的密码门与反向代理：默认只监听本机回环，没设置密码时首次启动会生成一个密码并只显示一次；需要远程访问时再把 listenHost 设为 0.0.0.0。
+- [Lornatang/dsh-security-audit](https://github.com/Lornatang/dsh-security-audit) — DeepSeek Harness 的安全审查技能：引导式审查、带覆盖账本的全库审计、结构化问题记录和报告校验器。
 - [lovezi0/dsh-workspace-acl-allow](https://github.com/lovezi0/dsh-workspace-acl-allow) — Windows 工作区预授权：为用户显式声明的工作区目录补一条完全控制的 DACL 授权项（含 dsh ≥0.1.7 沙箱启动所需的 WRITE_OWNER），消除反复出现的完全访问升权弹框。仅在新增工作区记录或插件设置页手动添加路径时授权，系统目录硬拒绝。仅支持 Windows。
 - [Luawig/dsh-cloudflare-access](https://github.com/Luawig/dsh-cloudflare-access) — 在 DSH Origin 校验 Cloudflare Access JWT，使 Settings、凭据、Agent Preset 管理与模型发现可在远程主机名下使用。
 - [luokexiaoguo/dsh-redact-gateway](https://github.com/luokexiaoguo/dsh-redact-gateway) — 在模型请求离开本机前，把身份证、手机号、银行卡、邮箱、地址、客户名与密钥替换成编号占位符，响应回来自动回填；映射表加密存本机，每次替换写入带哈希链的审计日志，可导出 CSV。
