@@ -1,0 +1,6 @@
+url: https://github.com/forfeeling/dsh-vault
+name: forfeeling/dsh-vault
+category: security
+description:
+  en: "Zero-knowledge secret console for dsh: a Settings-page GUI over the sops+age vault managed by the secretctl CLI, with entry, registration, recovery-challenge and audit views served over a same-origin RPC where plaintext never reaches the browser, the model context or command lines."
+  zh: "DSH 的零知识密钥库控制台：以 secretctl（sops+age）加密库为后端的设置页 GUI，条目、登记、密保挑战、审计四页签，同源 /vault RPC——明文不进浏览器，也不进模型上下文。"
