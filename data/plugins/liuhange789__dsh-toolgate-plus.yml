@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/dsh-toolgate-plus
+name: liuhange789/dsh-toolgate-plus
+category: usage
+description:
+  zh: "会话阶段感知的工具守卫：按最近工具调用判定探索/编辑/调试阶段，阶段切换时通过会话消息给出一行建议，并把阶段快照写入宿主日志。"
+  en: "Session-stage-aware tool guard: classifies explore/edit/debug phases from recent tool calls and sends a one-line suggestion through the session message stream when the stage changes, with a stage snapshot written to the host log."
