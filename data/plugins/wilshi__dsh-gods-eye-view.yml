@@ -1,0 +1,7 @@
+url: https://github.com/WilShi/dsh-gods-eye-view
+name: WilShi/dsh-gods-eye-view
+category: ui
+description:
+  en: Embed God’s Eye View in DeepSeek Harness with agent-controlled map views and process management.
+  zh: 在 DeepSeek Harness 主面板中嵌入完整 God’s Eye View，支持 Agent 地图控制、国内/国际地图源和进程托管。
+icon: https://raw.githubusercontent.com/WilShi/dsh-gods-eye-view/main/docs/images/icon-512.png
