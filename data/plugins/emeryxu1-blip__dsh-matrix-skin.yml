@@ -1,0 +1,7 @@
+url: https://github.com/emeryxu1-blip/dsh-matrix-skin
+name: emeryxu1-blip/dsh-matrix-skin
+category: theme
+description:
+  en: Matrix-inspired appearance for DeepSeek Harness Desktop and Web that preserves native typography and controls, with code rain confined to empty sessions.
+  zh: 为 DeepSeek Harness 桌面端与 Web 提供 Matrix 风格外观，保留原生字体和控件，并将代码雨限制在空会话界面。
+tarball: https://github.com/emeryxu1-blip/dsh-matrix-skin/releases/download/v0.3.0/dsh-matrix-skin.tgz
