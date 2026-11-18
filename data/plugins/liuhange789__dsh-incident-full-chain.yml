@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/dsh-incident-full-chain
+name: liuhange789/dsh-incident-full-chain
+category: tools
+description:
+  en: 'On-call incident full chain: `oncall_start` classifies an alert into a fault family (timeout / error-rate / resource / dependency / data) and returns ranked likely causes plus a branch-specific checklist; `mitigate` records every action and its result on a timeline and re-plans the next steps from that family, dropping steps already tried; `postmortem` writes postmortem.md (and an HTML copy) with a sorted timeline, key actions, and MTTR measured from the first effective mitigation. Rule-based and local-only: no network, no model call, state kept in incident.json next to the workspace.'
+  zh: "故障全链路：`oncall_start` 把告警归到故障族（超时/错误率/资源/依赖/数据），给出按可能性排序的根因与对该族的分支排查清单；`mitigate` 把每个动作与结果记进时间线，并按故障族重算下一步、自动剔除已经试过的动作；`postmortem` 生成 postmortem.md（同时输出一份 HTML），时间线按发生时间排序，MTTR 取「最早一次有效缓解」而不是最后一次动作。纯规则、本地运行，不联网、不调模型，状态落在工作区的 incident.json。"
