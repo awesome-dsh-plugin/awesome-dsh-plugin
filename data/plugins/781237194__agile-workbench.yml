@@ -1,6 +1,0 @@
-url: https://github.com/781237194/agile-workbench/tree/main/dsh-plugin
-name: 781237194/agile-workbench#dsh-plugin
-category: workflow
-description:
-  en: 'Agile Workbench bundle: one install brings the PM workbench launcher (pm_workbench_open), long-term memory, a controlled browser, web search, image vision, and a read-only safe-search MCP. The workbench mirrors a six-role agile team (PM / product / analyst / developers / tester) with owner-only requirement acceptance, full requirement and defect flows, evidence gates, and session rotation.'
-  zh: 'PM工作台套装：一次安装装齐工作台启动器（pm_workbench_open）、跨会话记忆、受控浏览器、联网搜索、图片视觉与只读安全搜索 MCP。工作台对应六角色敏捷团队（项目经理/产品/需求/程序员A/B/测试），需求与缺陷各有完整流程，需求验收只能 Owner 本人，带证据门与会话轮换。'
