@@ -183,7 +183,7 @@ dsh plugin --profile web add dshmarket
 - [1186258278/dsh-zh-ui](https://github.com/1186258278/dsh-zh-ui) — 中文前端界面设计规范：注入 zh-ui-design 技能与系统提示，标题即功能、去除解释性占位文案、单一记忆点签名元素；附带 10 条界面文案/样式 lint 规则。
 - [1207291706/dsh-restart-foot](https://github.com/1207291706/dsh-restart-foot) — DSH Windows 桌面端侧栏底部的重启按钮，就在账号入口上方：点两次即结束应用进程并自动重启，全程不弹命令窗口。
 - [1250589385/dsh-quick-send](https://github.com/1250589385/dsh-quick-send) — 在输入框一行放一组快捷按钮，点一下把预设文字发进当前对话。每个按钮的名称、大小、透明度、形状与发送内容都可就地编辑；右键拖动整组可在上下文进度左右换位，选择保存在本地。按钮组只占自身宽度，不会挤压上下文进度与用量区域。
-- [1250589385/dsh-vendor-quick-switch](https://github.com/1250589385/dsh-vendor-quick-switch) — 在原版模型菜单旁常驻厂商索引：点厂商直达该厂商模型，可选显示按来源探测的剩余额度徽标。
+- [1250589385/dsh-vendor-quick-switch](https://github.com/1250589385/dsh-vendor-quick-switch) — 在原版模型菜单旁常驻厂商索引：点厂商直达该厂商模型，可选显示按来源探测的剩余额度徽标。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [13071301808/dsh-composer-expand](https://github.com/13071301808/dsh-composer-expand) — Web UI 输入框展开/收起：composer 工具行新增 ⬆/⬇ 按钮，一键把输入框扩大到 70vh 高度，方便写长 prompt。
 - [1314521gjy/dsh-wujie-canvas](https://github.com/1314521gjy/dsh-wujie-canvas) — 在 DSH 左侧栏加入无界画布页面：内置画布前端、本机工作台状态与启动，并让 DSH Agent 通过工具读写当前画布；画布不再内置 Agent。需本机已安装无界工作台与 ComfyUI；插件不打包 ComfyUI、CUDA、模型或 API Key。
 - [1321928757/dsh-prompt-polish](https://github.com/1321928757/dsh-prompt-polish) — 输入栏提示词优化：6 种策略 × 3 种语言与自定义指令重写草稿，可选携带目标、任务清单、压缩摘要、工具结果与聊天上下文，附结果确认弹窗、最近 5 次历史与三级设置持久化。
@@ -3981,7 +3981,7 @@ dsh plugin --profile web add dshmarket
 - [loveandbeepbrother/dsh-galatea#agent-sdk](https://github.com/loveandbeepbrother/dsh-galatea/tree/main/agent-sdk) — 让 DSH 会话跑在本机 Claude Code 上（Opus、Sonnet），带着 Galatea 的记忆和工具；需在 profile 里选登录方式（推荐 Anthropic API key，或沿用本机 Claude Code 已有登录）。需要先装 Galatea 框架。
 - [lovezi0/dsh-model-extension](https://github.com/lovezi0/dsh-model-extension) — 模型+ 设置页:按模型声明推理挡位、输入模态与兼容参数(走官方 settings 管线保存),支持 models.dev 元数据预填与 API 密钥管理。
 - [loyalchiiina/dsh-deepseek-web-free](https://github.com/loyalchiiina/dsh-deepseek-web-free) — y-wi/dsh-deepseek-web 的 fork：1.0.44 起只保留悬浮球与侧边栏打开官方 chat.deepseek.com 网页面板，已移除在 DSH 中直接选 DeepSeek Web 模型对话的功能；选中文字右键投送到网页端输入框的功能保留。在网页面板里用官方页面登录一次即可。⚠️ 已出现真实账号封禁案例（作者测试账号因违反用户规范被禁言至 2026-11-20 16:21）；1.0.44 之前版本有较高封号风险，作者不承担任何责任。适配 DSH 内核 0.2.2-rc.1。不能与 y-wi/dsh-deepseek-web 同装。
-- [loyalchiiina/dsh-model-fold](https://github.com/loyalchiiina/dsh-model-fold) — 三级级联模型面板（来源 → 模型 → 思考强度），支持识图与思考强度一键开关、能力图标，以及逐模型真实测活并把结果持久化保存。适配 DSH 内核 0.2.2-rc.3。
+- [loyalchiiina/dsh-model-fold](https://github.com/loyalchiiina/dsh-model-fold) — 三级级联模型面板（来源 → 模型 → 思考强度），支持识图与思考强度一键开关、能力图标，以及逐模型真实测活并把结果持久化保存。适配 DSH 内核 0.2.2-rc.3。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [lsdt45/dsh-model-config](https://github.com/lsdt45/dsh-model-config) — 在 DSH 设置面板为 llm-pi-ai 与官方 DeepSeek 提供方按模型配置思考开关与思考等级，并为各模型配置多模态输入类型。
 - [lucagiftzek/dsh-request-image-cap](https://github.com/lucagiftzek/dsh-request-image-cap) — 把发给模型的每张图片按单边像素上限（默认 2000 px）压缩：通过包装 attachments.readImageRequest 实现，修复 Anthropic 多图请求报错，且不改动已存储的图片。
 - [lucagiftzek/dsh-subagent-tiering](https://github.com/lucagiftzek/dsh-subagent-tiering) — 为未指定 provider/model/effort 的 subagent 调用补上更便宜的同类路由（例如 Opus → Sonnet 5.5 @ medium、Qwen max → Qwen flash）；显式指定的选择与 subagent_fork 保持不动。需在设置里启用 subagent-model-selection 且目标路由在其 allowedModels 中，否则插件不产生任何效果。
@@ -4994,7 +4994,7 @@ dsh plugin --profile web add dshmarket
 - [popu2do/dsh-call-session](https://github.com/popu2do/dsh-call-session) — 并排运行多个 DeepSeek Harness 会话，让它们互相交接任务，并在同一张只读看板上看清整场协作。
 - [praystring/dsh-send-debounce](https://github.com/praystring/dsh-send-debounce) — 把聊天框里连发的几条短消息缓冲合并成一轮再唤醒模型：停手若干秒后才回复一次；长消息和附件不延迟。
 - [prgrmrwy/dsh-session-id-copy](https://github.com/prgrmrwy/dsh-session-id-copy) — 在 DSH Web 界面的对话标题旁显示 6 位 session id 徽标，点击即复制完整 session id 并给出短暂提示。
-- [psyduck25/dsh-session-manager](https://github.com/psyduck25/dsh-session-manager) — 在「设置」里逐个删除会话，不必连整个工作区一起删：所有会话按工作区列出，每行带锁定和删除；删除要二次确认后进入删除缓冲站，且日志被移出会话目录，所以那一行是真正消失而不是变灰留在原地。被锁定的会话由宿主拒绝删除，不只是界面上禁用。缓冲期内可回档，窗口 0–720 小时可配；到期连同日志一起真正删除。
+- [psyduck25/dsh-session-manager](https://github.com/psyduck25/dsh-session-manager) — 在「设置」里逐个删除会话，不必连整个工作区一起删：所有会话按工作区列出，每行带锁定和删除；删除要二次确认后进入删除缓冲站，且日志被移出会话目录，所以那一行是真正消失而不是变灰留在原地。被锁定的会话由宿主拒绝删除，不只是界面上禁用。缓冲期内可回档，窗口 0–720 小时可配；到期连同日志一起真正删除。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [ptrel1/dsh-interrupted-resume](https://github.com/ptrel1/dsh-interrupted-resume) — 轻量级的 dsh 崩溃恢复：重启后识别上一轮被强杀中断的会话，注入一条「先核实现状再动手」的续跑指令，避免盲目重做已有副作用的操作。只认真正的崩溃信号（turn/end 的 reason 为 interrupted，由 session repair 冷读时合成），因此不会把用户主动取消、限流或模型报错误判为可续，也就不需要错误分类、退避策略或配置界面。与通用自动续跑插件相比，它还覆盖「子代理执行中被中断」的盲区：此时父代理的轮次已正常结束（正在等待子代理），常规判定看不到任何可续对象，整棵子代理树会静默死掉；本插件会识别出被中断的子代理并唤醒父代理。单个宿主文件、零外部依赖、七个配置常量。
 - [PwnKY/dsh-session-link](https://github.com/PwnKY/dsh-session-link) — 复制、打开 `dsh://` 会话深链，或将其粘贴到另一对话中，注入被引用会话的受限只读快照。
 - [qiangweiliu/dsh-context#agent-embodiment](https://github.com/qiangweiliu/dsh-context/tree/main/agent-embodiment) — 为 DeepSeek Harness 提供上下文可观测性与控制：跨会话 token 分析、会话级预算/提示词/工具控制，以及可选的 Agent 脚手架。复用官方 tokenMeter、compaction、systemPrompt、tools.restrict seam；监控只读。
@@ -9992,7 +9992,7 @@ dsh plugin --profile web add dshmarket
 - [JMOKSZ/dsh-lark-bridge](https://github.com/JMOKSZ/dsh-lark-bridge) — 飞书入口插件：一条命令安装，流式进度卡片带工具面板、提问/审批按钮卡片、附件处理与 feishu_send 主动推送。
 - [john-walks-slow/dsh-hybrid-notify](https://github.com/john-walks-slow/dsh-hybrid-notify) — DeepSeek Harness 多通道通知插件：前台弹页面内 toast，后台按可用性切换 PWA 系统通知（Service Worker）或浏览器通知兜底；任务完成、审批请求、提问、计划评审、出错等事件可逐项开关，重要通知驻留不消失，并用 Web Audio 实时合成提示音效、零音频文件零网络上报。
 - [john-walks-slow/dsh-im-humanize](https://github.com/john-walks-slow/dsh-im-humanize) — @xmanrui/dsh-im 的拟人化分支（基于上游 4.21.2）：人化消息发送（发送延迟 + 输入中两阶段）、message_break 与 streaming 共存、状态表情、回复引用、per-bot 全量拟人化覆盖、no_reply 回收工具，覆盖微信/飞书/钉钉/企业微信/QQ/Telegram/Slack/WhatsApp 全通道。
-- [Johnson1662/dsh-inbox](https://github.com/Johnson1662/dsh-inbox) — DeepSeek Harness 的收件箱：Telegram、飞书、微信（经 wx-cli）与 GitHub 通知四路来源把新消息变成信封写进持久化的 SQLite 队列，投递循环交给指定的 Agent 会话，未确认就重试。来源是独立进程，数据库只有守护进程一个写者；设置面板覆盖各来源字段、会话白名单与仓库白名单。
+- [Johnson1662/dsh-inbox](https://github.com/Johnson1662/dsh-inbox) — DeepSeek Harness 的收件箱：Telegram、飞书、微信（经 wx-cli）与 GitHub 通知四路来源把新消息变成信封写进持久化的 SQLite 队列，投递循环交给指定的 Agent 会话，未确认就重试。来源是独立进程，数据库只有守护进程一个写者；设置面板覆盖各来源字段、会话白名单与仓库白名单。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Jxxxxx729/dsh-win-notify](https://github.com/Jxxxxx729/dsh-win-notify) — 等待授权、等待选择、对话完成或出错、需要登录时在 Windows 通知栏弹出提醒；点击通知直接跳回发出它的对话，通知以 DeepSeek Harness 应用身份显示。
 - [kaixinbaba/dsh-complete-notify](https://github.com/kaixinbaba/dsh-complete-notify) — 任务完成时播放提示音并弹出小通知：Web Audio 合成音效、页面内 toast、页面在后台时系统通知，纯浏览器方案、零系统依赖、跨平台。
 - [kanmanJO/dsh-task-sfx](https://github.com/kanmanJO/dsh-task-sfx) — 每轮回复结束随机播一声完成音效；之后若静默到设定秒数，再补响一次提醒；DSH 需要你出面（审批、提问、确认计划）时立刻响一声。三个独立开关：A/C 为可批量导入的音效池，B 为单个提醒音；设置全部落盘持久化。
