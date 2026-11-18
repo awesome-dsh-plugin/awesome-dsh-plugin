@@ -1,0 +1,7 @@
+url: https://github.com/Ernesto-yuan/dsh-theme-switcher
+name: Ernesto-yuan/dsh-theme-switcher
+category: theme
+description:
+  en: "A Personalization page for DSH, also pinned to the left sidebar: 20 light/dark palettes (five of them macaron gradients plus a rainbow), eight emoji tile backgrounds and a custom image, an overlay-gradient switch that blends the palette over that background, and frosted glass for menus and dialogs. Every choice is saved in the browser."
+  zh: "给 DSH 加一个「个性化」页，同时固定在左侧边栏：20 套明暗配色（含 5 套马卡龙渐变与彩虹）、8 套 Emoji 平铺背景与自定义图片背景、把配色渐变叠在背景上的开关，以及菜单与弹窗的毛玻璃材质。所有选择只存在浏览器本地。"
+icon: https://raw.githubusercontent.com/Ernesto-yuan/dsh-theme-switcher/main/assets/icon-256.png
