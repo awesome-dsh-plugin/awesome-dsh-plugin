@@ -1,0 +1,7 @@
+url: https://github.com/XLNC-L/dsh-connect-madao
+name: XLNC-L/dsh-connect-madao
+category: model
+description:
+  en: 'Brings Huawei Cloud CodeArts Agent (码道) models into DeepSeek Harness, with image input, tool calls, thinking levels and a daily check-in button. Speaks the gateway''s signed and SDK-HMAC-SHA256 authenticated, P-256 negotiated, SM4-GCM encrypted protocol directly, so the CodeArts desktop client does not need to be running.'
+  zh: '把华为云码道（CodeArts Agent）的模型接入 DeepSeek Harness，支持图片输入、工具调用、思考强度与每日签到。直接与网关的 SDK-HMAC-SHA256 签名、P-256 协商、SM4-GCM 加密协议对话，不需要码道客户端在运行。'
+icon: https://raw.githubusercontent.com/XLNC-L/dsh-connect-madao/main/icons/dsh-connect-madao-128.png
