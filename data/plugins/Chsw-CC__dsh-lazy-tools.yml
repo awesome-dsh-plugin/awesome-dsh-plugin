@@ -1,0 +1,6 @@
+url: https://github.com/Chsw-CC/dsh-lazy-tools
+name: Chsw-CC/dsh-lazy-tools
+category: tools
+description:
+  en: 'Keeps a small core set of tools native and puts the rest behind one toolbox entry: the model lists loaded tools with their parameter signatures, fetches only the schema it needs, and runs the call through the normal approval and guard pipeline. Large catalogs shorten each signature before collapsing to name prefixes, so a listing stays callable under a token budget.'
+  zh: '保留一小份核心工具原生可见，其余收进一个 toolbox 入口：模型先按参数签名列出已加载的工具，只取真正要用的 schema，再经正常的审批与 guard 管线执行调用。目录超预算时先截短签名、再降成前缀计数，让列表在 token 预算内仍然可调用。'
