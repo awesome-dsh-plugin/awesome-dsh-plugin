@@ -1,0 +1,7 @@
+url: https://github.com/huangtonghui/dsh-connect-raccoon
+name: huangtonghui/dsh-connect-raccoon
+category: model
+description:
+  en: 'Connect the locally signed-in SenseTime Raccoon desktop client models to the DeepSeek Harness model picker.'
+  zh: '把本机已登录的商汤小浣熊桌面客户端模型接入 DeepSeek Harness 模型选择器。'
+icon: https://raw.githubusercontent.com/huangtonghui/dsh-connect-raccoon/main/assets/icon-180.png
