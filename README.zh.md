@@ -212,7 +212,7 @@ dsh plugin --profile web add dshmarket
 - [3341284397-max/dsh-question-bubbles](https://github.com/3341284397-max/dsh-question-bubbles) — 把模型「没问出口的疑问」实时显示出来：气泡浮在鲸鱼挂件上方，从思考流里捕捉问句，你可以当场作答、温和并入下一步，而不打断任务。支持提示词标记协议（让模型自己标出疑问）、五种语言、跟随 DSH 深浅主题；气泡定位依赖 dsh-whale-widget。
 - [3361805598-gif/dsh-workspace-archive](https://github.com/3361805598-gif/dsh-workspace-archive) — 在侧栏面板或会话行菜单里批量归档/恢复整个工作区的全部会话；工作区会话全部归档后从侧栏隐藏，恢复任一会话即重新出现；并支持工作区置顶。隐藏不删除日志、不移动目录、不改会话归属。
 - [3450892121/dsh-task-monitor#dsh-task-monitor](https://github.com/3450892121/dsh-task-monitor/tree/main/dsh-task-monitor) — DSH 会话右侧独立监控面板：git 状态、后台进程、技能与 MCP、产出与网页查阅，附提交/推送对话框与一键发布到 GitHub。
-- [379385796-sys/dsh-chat-comfort](https://github.com/379385796-sys/dsh-chat-comfort) — 在已核验的 Windows Desktop RC2/RC3/RC5/0.2.2-rc.1/0.2.2-rc.3 布局中调整聊天气泡和消息间距，支持舒适或紧凑密度，未知宿主指纹保留原生样式。
+- [379385796-sys/dsh-chat-comfort](https://github.com/379385796-sys/dsh-chat-comfort) — 在已核验的 Windows Desktop RC2/RC3/RC5/0.2.2-rc.1/0.2.2-rc.3/0.2.2-rc.5 布局中调整聊天气泡和消息间距，支持舒适或紧凑密度，未知宿主指纹保留原生样式。
 - [3Tiga3/dsh-plugin-namecards](https://github.com/3Tiga3/dsh-plugin-namecards) — 给 DSH 插件换自定义图标、中文显示名和一句话说明；用文件夹与收藏整理，支持拖拽排序、按备注名拼音排序、列表与铺陈两种视图。所有已安装插件自动分配图标（可手动覆盖）；导入导出覆盖图标、备注名、说明、文件夹与排序。只改显示，不修改插件文件与 cordis 配置；启用开关转调官方插件管理器。
 - [439436269-ctrl/dsh-blend-preview](https://github.com/439436269-ctrl/dsh-blend-preview) — 在 DSH 右侧栏文档预览里打开 .blend：Blender headless 导出缓存 GLB 与场景统计，由零依赖 WebGL 视口渲染。需本机装有 Blender 3.6+（或在设置里指定 blenderPath）。
 - [439436269-ctrl/dsh-file-explorer](https://github.com/439436269-ctrl/dsh-file-explorer) — 侧栏文件浏览器与文件预览器：懒加载文件树，面板内预览文本 / Markdown（含表格）/ 图片，可把当前文件送进会话右侧文档预览，或交给系统默认程序打开；只读，路径限定在可浏览根内。
@@ -802,6 +802,7 @@ dsh plugin --profile web add dshmarket
 - [foooold/dsh-message-nav](https://github.com/foooold/dsh-message-nav) — 为 DeepSeek Harness Web UI 添加 Codex 风格的消息导航轨道，方便在长会话中快速定位历史提问。
 - [foreee/dsh-app-restart](https://github.com/foreee/dsh-app-restart) — 在桌面应用设置中新增「应用重启」区块，优雅退出并自动重启整个应用。
 - [foreee/dsh-net-dashboard](https://github.com/foreee/dsh-net-dashboard) — 侧边栏实时网络巡检看板：接口与 IP/MAC、流量速率、TCP/UDP 会话数、延迟曲线，每 3 秒刷新。仅限 macOS（采集依赖 ifconfig、netstat、scutil 与 /sbin/ping）。
+- [forfeeling/dsh-media-player](https://github.com/forfeeling/dsh-media-player) — DSH Web 对话里的原生内联媒体播放器：media_show 工具签发短时效本地链接，客户端直接渲染可播放卡片，支持 mp4、webm、gif 与动图 webp，生成的视频在会话内播放。
 - [ForsakenDelusion/dsh-branchnest](https://github.com/ForsakenDelusion/dsh-branchnest) — 为 DSH 项目提供会话画布，支持对话卡片连线、选中文字创建追问分支、笔记和文档式阅读。
 - [fountainhead-gq/dsh-weread-gather](https://github.com/fountainhead-gq/dsh-weread-gather) — 数字书房：把微信读书搬进 DSH 侧栏的私人书房，清爽的浅绿纸感配色。书架折叠成 10 大类并自带一层略深的纸色；划线与想法可分页、可单条复制，也能勾选导出成带 front-matter 的 Markdown（一本书一个文件，或跨书批量），存到你指定的目录；整间书房还能一键备份与恢复成一份 JSON。想法页按手记排版：行距更松、来源书名完整展示、长内容可一键展开，并能在卡片里展开同章的划线作参考。五档阅读热力图只画到今天，数据收在网格下方一行；上方是可切换年份的统计表盘。同步是增量的：靠本地账本与每本书的计数比对，数据没变化时 2~3 秒就完成，不用整库重拉；进度提示条会在完成后 8 秒自动消失。书架、书籍、划线、想法都能搜索并支持类型筛选。通过官方 agent 网关用你自己的 API Key 读取，全部落在本机 JSON，绝不写回。要求 DSH >=0.2.2-rc.1。
 - [FragrantLotus/dsh-plugin-chinese](https://github.com/FragrantLotus/dsh-plugin-chinese) — 给只提供英文简介的已安装 DSH 插件自动补上中文简介，启动时以及每次插件变动后各跑一次，插件名称一律不改。原本已导出语言包的插件刷新页面即生效，原本没有语言包导出的也会自动补上：内存注入层即时生效，写入磁盘的语言包需重启一次。
@@ -4182,7 +4183,7 @@ dsh plugin --profile web add dshmarket
 ### 🆔 身份与通信
 
 - [2008BingYu/dsh-qq-stack](https://github.com/2008BingYu/dsh-qq-stack) — 给 DSH 提供 QQ 协议端（仅 Linux）：随引擎启动 LinuxQQ 与 NapCat（首次运行自动安装，约 250 MB），对外提供标准 OneBot 11 接口。
-- [379385796-sys/dsh-prompt-inject](https://github.com/379385796-sys/dsh-prompt-inject) — 基于 H1a3x 原作的 MIT 提示词模板管理维护版，支持默认与工作区继承、逐 Agent 预设指定模板或不注入、本地化设置及修订号保护的自动保存。已验证 Windows Desktop RC5 与 0.2.2-rc.1/0.2.2-rc.3；不能与上游 H1a3x/dsh-prompt-inject 同装。
+- [379385796-sys/dsh-prompt-inject](https://github.com/379385796-sys/dsh-prompt-inject) — 基于 H1a3x 原作的 MIT 提示词模板管理维护版，支持默认与工作区继承、逐 Agent 预设指定模板或不注入、本地化设置及修订号保护的自动保存。已验证 Windows Desktop RC5 与 0.2.2-rc.1/0.2.2-rc.3/0.2.2-rc.5；不能与上游 H1a3x/dsh-prompt-inject 同装。
 - [58fly/dsh-language-guard](https://github.com/58fly/dsh-language-guard) — 把模型的思考过程、回复与工具调用描述锁定为指定语言（默认简体中文）：在 system prompt 首、中、尾注入约束段落，提供基础、强化、周期三档强度，可跟随 DSH 界面语言自动选择，设置页显示当前生效语言，并带侧栏快速切换。
 - [dsh-affect](https://github.com/7gzgn/dsh-affect) — 把 AI 的情绪搬到模型外面：几条情绪轴各 0-100，按你说的话加减、随时间自己漂移，每轮把「现在处在哪一档 + 可用标签」注入系统提示。数值由插件维护：模型从注入的提示里读到当前值，只能通过插件自带的情绪工具调整，不能凭一句自报心情改数。默认空配置，一个轴都不替你定。
 - [dsh-profile-stylist](https://github.com/7gzgn/dsh-profile-stylist) — 你说想要什么样的人设，它把文案写出来并把资料页填好：昵称/简介/标语/链接由宿主模型生成，头像取本地素材库（或你给的路径），再由站点自己的上传控件完成头像入库。**默认 dry-run**，只写资料字段 —— 不碰密码、邮箱、安全设置。
