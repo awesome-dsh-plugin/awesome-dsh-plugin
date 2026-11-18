@@ -1,0 +1,6 @@
+url: https://github.com/qing-gu-web/dsh-prompt-expansion
+name: qing-gu-web/dsh-prompt-expansion
+category: ui
+description:
+  en: A composer button, an /optimize command and an optimize_prompt tool that rewrite a prompt into a numbered specification, leaving variables, code blocks, URLs and numbers unchanged.
+  zh: 输入框按钮、/optimize 命令与 optimize_prompt 工具，把提示词改写成分层编号的规格说明，并保持变量、代码块、URL 与数字不变。
