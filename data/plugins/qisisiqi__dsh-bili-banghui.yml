@@ -1,0 +1,8 @@
+- [x] I added **one file** at `data/plugins/qisisiqi__dsh-bili-banghui.yml` — that single file is the whole submission.
+- [x] My repo's `package.json` declares **`dsh.bundle`** (`dsh.bundle.patch: ./cordis.patch.yml`, plus `dsh.client` for the browser half).
+- [ ] My repo is at least **1 day old** — created 2026-11-18T06:06:21Z, so this gate will clear on 2026-11-19.
+- [x] `category: workflow` — it is a reply-drafting and sending workflow.
+- [x] Description states what the plugin does, no superlatives.
+- [x] My repo has the `dsh-plugin` topic.
+
+The plugin is a Bilibili reply inbox: it pulls "replies to me", groups them by person and thread, shows the thread with the original post, drafts three options after classifying the other person's tone (agree / friendly / neutral / argumentative / hostile), and sends only after a confirmation dialog. It keeps credentials, persona and API key in a local `data/` folder and never uploads them. Built-in 62 Bilibili emoji; no runtime dependencies beyond Node/DSH.
