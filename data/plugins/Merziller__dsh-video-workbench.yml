@@ -1,0 +1,7 @@
+url: https://github.com/Merziller/dsh-video-workbench
+name: Merziller/dsh-video-workbench
+category: tools
+description:
+  en: 'Video workbench plugin for DeepSeek Harness: 24 tools spanning HTML5/Canvas and Remotion 4.x TSX rendering with bundled FFmpeg and Remotion runtime, BGM beat-sync mixing, multi-engine TTS (IndexTTS-2.5, GPT-SoVITS, custom OpenAI/HTTP/CLI), and transparent alpha avatar overlays.'
+  zh: 'DeepSeek Harness 视频创作工作台：集成 24 个工具，支持 HTML5/Canvas 与 Remotion 4.x TSX 双引擎出片，内置免配置 FFmpeg 与 Remotion 运行时、BGM 节拍踩点混音、IndexTTS-2.5 / GPT-SoVITS / 自定义多引擎配音与透明通道数字人口播。'
+tarball: https://github.com/Merziller/dsh-video-workbench/releases/download/v0.2.0/dsh-video-workbench-0.2.0.tgz

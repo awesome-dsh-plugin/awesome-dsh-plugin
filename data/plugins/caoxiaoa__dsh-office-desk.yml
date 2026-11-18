@@ -1,0 +1,7 @@
+url: https://github.com/caoxiaoa/dsh-office-desk
+name: caoxiaoa/dsh-office-desk
+category: docs
+description:
+  en: 'Office template shelf under the composer: 14 Chinese office briefs (request, notice, meeting minutes, weekly report, briefing outline) whose text is appended at the caret, keeping the draft you already typed. Each template names every hole to fill and tells the model to ask instead of inventing numbers.'
+  zh: '输入框下方的中文办公模板架：14 条请示、通知、会议纪要、周报、汇报提纲等模板，点一条就追加到草稿光标处，不覆盖已写内容。每条模板列出全部待填空位，并要求缺失信息先问、不许编数字。'
+icon: https://raw.githubusercontent.com/caoxiaoa/dsh-office-desk/main/assets/icon-180.png

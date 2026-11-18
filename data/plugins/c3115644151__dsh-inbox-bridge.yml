@@ -1,0 +1,7 @@
+url: https://github.com/c3115644151/dsh-inbox-bridge
+name: c3115644151/dsh-inbox-bridge
+category: notify
+description:
+  en: 'Give each DSH session its own GitHub watch: reviews on the PR it opened, failing CI, issues assigned to it and @mentions arrive in the next turn; an idle session can turn up on its own to fix them. Read-only. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '让 DSH 的会话自己盯 GitHub：它提的 PR 被评审、CI 挂了、派给它的 issue 有人回，都会在下一轮自动进上下文；会话空闲时还能自己开一轮去修。只读，不改仓库。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/c3115644151/dsh-inbox-bridge/main/docs/assets/icon-180.png

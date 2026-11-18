@@ -1,0 +1,6 @@
+url: https://github.com/byChen47/dsh-session-rehome
+name: byChen47/dsh-session-rehome
+category: session
+description:
+  en: 'Move one conversation into another workspace in place - the session log is relocated and its header cwd rewritten, so the conversation keeps its id, history, title and archive state. The files that conversation changed can travel with it, their recorded paths are rewritten to the new workspace, and the session working directory follows so later work lands there. A conversation that is mid-way through a turn is refused rather than moved. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把一条对话原地搬到另一个工作区：搬日志并改写头部 cwd，会话 id、历史、标题、归档状态都不变。对话改过的文件可以一起搬走，会话里记录的路径改写到新工作区，工作目录也随之切换，之后生成的产物直接落在新位置。正在跑一轮的对话会被拒绝，而不是冒险搬。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

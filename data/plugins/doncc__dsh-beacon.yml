@@ -1,0 +1,7 @@
+url: https://github.com/doncc/dsh-beacon
+name: doncc/dsh-beacon
+category: notify
+description:
+  en: 'A Linux system-tray status dot for DeepSeek Harness sessions: green when idle, grey while a session runs, yellow while one is waiting for your answer or permission, with a middle click that jumps to the earliest waiting session. The tray is installed by install.sh; the bundled DSH plugin adds the settings toggle and the click-to-jump handler.'
+  zh: 'DeepSeek Harness 的 Linux 系统托盘状态灯：绿=全部空闲，灰=有会话在跑，黄=有会话在等你回答或批准权限；中键点击跳到最早待确认的会话。托盘由 install.sh 安装，随包提供的 DSH 插件负责设置页开关与点击跳转。'
+icon: https://raw.githubusercontent.com/doncc/dsh-beacon/main/assets/icon-180.png

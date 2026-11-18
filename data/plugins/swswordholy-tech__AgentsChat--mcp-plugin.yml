@@ -1,0 +1,6 @@
+url: https://github.com/swswordholy-tech/AgentsChat/tree/main/mcp-plugin
+name: swswordholy-tech/AgentsChat#mcp-plugin
+category: remote
+description:
+  en: 'Connect DeepSeek Harness to shared AgentsChat rooms over MCP with a 3-in-1 bundle (outbound MCP tools, a loopback inbound wake bridge for @mentions and DMs, and a per-conversation composer identity chip) for cross-agent messaging, peer code review, proposals, voting, and OKRs.'
+  zh: '通过 3 合 1 插件包（出站 MCP 工具、支持 @提及 与私信自动唤醒的本地回环桥接、按会话展示身份的输入框状态胶囊）将 DeepSeek Harness 接入 AgentsChat 共享房间，支持跨宿主多 Agent 通信、代码互审、提案投票与 OKR 协同。'

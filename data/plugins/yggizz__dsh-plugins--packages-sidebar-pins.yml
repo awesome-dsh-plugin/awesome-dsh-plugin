@@ -1,0 +1,7 @@
+url: https://github.com/yggizz/dsh-plugins/tree/main/packages/sidebar-pins
+name: yggizz/dsh-plugins#sidebar-pins
+category: ui
+description:
+  en: 'Remembers which left-sidebar panel launchers you unpinned and re-applies that choice on every start, so the entries you folded away stay folded instead of coming back as a full row of buttons. It adds no interface of its own: it only restores the sidebar''s own display state, writes nothing outside the profile, and does not reach the network. Disabling it returns the sidebar to stock behaviour without deleting the saved choice. This is the unpin list only — for panel reordering, grouping, search or drag-and-drop, a fuller sidebar manager is a different plugin.'
+  zh: '记住你在左侧栏取消了哪些面板入口，每次启动重新应用同一个选择，收起来的入口不会又变回一排按钮。它不新增任何界面元素，只恢复侧栏本来的显示状态；不联网，也不写 profile 以外的文件。关掉插件后侧栏回到 DSH 默认行为，已保存的选择不会被删掉。它只管「取消过哪些」，面板排序、分组、搜索、拖拽这类完整侧栏管理是另一类插件。'
+icon: https://raw.githubusercontent.com/yggizz/dsh-plugins/main/packages/sidebar-pins/assets/icon-180.png

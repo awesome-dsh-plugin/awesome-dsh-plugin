@@ -1,0 +1,7 @@
+url: https://github.com/YoungHarmony/dsh-lego-io-preview
+name: YoungHarmony/dsh-lego-io-preview
+category: ui
+description:
+  en: '3D preview for BrickLink Studio .io LEGO models in the DSH sidebar: orbit and zoom the real LDraw geometry, see the part count, and load parts missing from the bundled set from a local Studio install on demand. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 侧栏预览 BrickLink Studio 的 .io 乐高模型：旋转缩放真实 LDraw 几何、显示件数，内置零件之外的部分按需从本机 Studio 安装读取。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/YoungHarmony/dsh-lego-io-preview/main/assets/icon-512.png

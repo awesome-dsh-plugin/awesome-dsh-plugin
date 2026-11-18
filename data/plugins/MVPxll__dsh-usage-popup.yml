@@ -1,0 +1,6 @@
+url: https://github.com/MVPxll/dsh-usage-popup
+name: MVPxll/dsh-usage-popup
+category: usage
+description:
+  en: 'Peak / off-peak reminder at the start of every turn, then the turn''s cost, average cache hit rate and daily total, with a live period badge in the composer status row. Practical and beautifully designed.'
+  zh: '每轮对话弹出高峰/低谷期提醒，回复结束显示本轮花费、平均缓存命中率与今日累计，并在输入框状态栏常驻时段徽章。实用又美观。'

@@ -1,0 +1,8 @@
+url: https://github.com/Ejinhouse/dsh-turn-timeline
+name: Ejinhouse/dsh-turn-timeline
+category: session
+tarball: https://github.com/Ejinhouse/dsh-turn-timeline/releases/latest/download/dsh-turn-timeline.tgz
+icon: https://raw.githubusercontent.com/Ejinhouse/dsh-turn-timeline/main/assets/icon.png
+description:
+  en: 'Left-sidebar timeline of the current session''s turns, showing each turn''s deliverables, ledger updates and file changes read from the session event log and the change ledger. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '左侧栏「任务时间线」面板：按 turn 展示当前会话的交付物、台账更新与文件改动，数据来自会话事件日志与变更台账。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

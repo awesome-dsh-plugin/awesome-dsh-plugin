@@ -1,0 +1,6 @@
+url: https://github.com/stallenlu/dsh-freebie-radar
+name: stallenlu/dsh-freebie-radar
+category: ui
+description:
+  en: 'DSH plugin for ZiChuanLan/freebie-radar with a freebie_radar agent tool and a sidebar workbench panel mirroring the original site, with channel feeds, search, detail drawer and dark/light themes. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 ZiChuanLan/freebie-radar 做成 DSH 插件，提供 freebie_radar 智能体工具与复刻原站界面的侧边栏工作台面板，含频道资源流、搜索、详情抽屉与深浅色主题。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

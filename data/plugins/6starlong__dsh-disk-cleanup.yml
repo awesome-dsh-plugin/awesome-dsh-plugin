@@ -1,0 +1,6 @@
+url: https://github.com/6starlong/dsh-disk-cleanup
+name: 6starlong/dsh-disk-cleanup
+category: tools
+description:
+  en: 'DSH plugin that routes shell temp dirs and pnpm/bun/uv/npm caches out of the workspace, grants the scratch dir write permission, points the model at the temp location via the system prompt, and cleans up expired temp files.'
+  zh: 'DSH 插件：为 shell 命令注入临时目录与依赖缓存变量，给 scratch 目录补齐写权限，在系统提示里说明临时文件落点，并自动清理过期的临时文件。'

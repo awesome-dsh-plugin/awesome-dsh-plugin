@@ -1,0 +1,7 @@
+url: https://github.com/CYF736222347/dsh-workspace-status-board
+name: CYF736222347/dsh-workspace-status-board
+category: ui
+description:
+  en: 'Status-first workspace board for the DSH sidebar: sorts workspaces and tasks by needs-input, running, then done; adds search, same-status drag ordering, task archive/restore, and three distinct status markers.'
+  zh: '把 DSH 侧边栏工作区改成按「需要介入 → 执行中 → 已完成」排序的状态看板：提供工作区/任务搜索、同状态内拖拽排序、任务归档与恢复，并用三种醒目状态标识实时更新。'
+icon: https://raw.githubusercontent.com/CYF736222347/dsh-workspace-status-board/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/879745uhjun/dsh-session-notify
+name: 879745uhjun/dsh-session-notify
+category: notify
+description:
+  en: 'Pops a bottom-right desktop card the moment a watched session finishes its turn: watch or unwatch any session from its sidebar right-click menu, preview the card with a test pop, and click it to jump into that conversation. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '盯着的会话一跑完就在屏幕右下角弹出提醒卡片：在侧边栏会话行右键即可开启或关闭提醒，可先弹示例卡预览，点击卡片直接跳到该会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,6 +1,7 @@
 url: https://github.com/stevenjj33/dsh-obsidian-skills
 name: stevenjj33/dsh-obsidian-skills
 category: skill
+icon: https://raw.githubusercontent.com/stevenjj33/dsh-obsidian-skills/main/assets/icon-180.png
 description:
   en: >-
     Agent skills for Obsidian, vendored verbatim from the official repository

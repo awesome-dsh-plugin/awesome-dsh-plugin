@@ -1,0 +1,6 @@
+url: https://github.com/dennisonbertram/dsh-free-pi-official
+name: dennisonbertram/dsh-free-pi-official
+category: model
+description:
+  en: 'FreePi model provider for DeepSeek Harness: adds a "freepi" provider and makes FreePi Auto the default model for new sessions; ad-supported, with one labelled ad in a bar above the composer. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness 的 FreePi 模型提供方：新增「freepi」提供方并把 FreePi Auto 设为新会话的默认模型；靠广告支持，输入框上方有一条带标注的广告。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

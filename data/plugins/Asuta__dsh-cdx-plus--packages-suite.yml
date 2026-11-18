@@ -1,0 +1,7 @@
+url: https://github.com/Asuta/dsh-cdx-plus/tree/main/packages/suite
+name: Asuta/dsh-cdx-plus#suite
+category: workflow
+description:
+  en: 'Codex-inspired upgrade for DeepSeek Harness in one npm package: 18 independently switchable plugins for selection quotes, side chats, Git worktree environments, code review and session management.'
+  zh: '把 Codex 的交互方式搬进 DSH：选中引用、侧边对话、Git 工作树环境、代码审查、会话整理等 18 项增强，可独立启停，一次装齐。'
+

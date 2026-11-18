@@ -1,0 +1,7 @@
+url: https://github.com/caidows/dsh-quick-model-switch
+name: caidows/dsh-quick-model-switch
+category: ui
+description:
+  en: 'Codex-style composer model picker: a card showing the current model and a draggable slider that sets reasoning effort, with one stop per level the model advertises and an Off stop when the provider supports it. The slider snaps only to whole stops and updates the effort label while dragging. Up to three configurable model+effort pairs sit beside it as one-click quick-switch chips, configured in the plugin''s own popover. Model and effort switches still go through the session model directory, so they stay in sync with the rest of the composer.'
+  zh: 'Codex 风格的输入框模型选择器：卡片显示当前模型，底部用可拖动的滑杆设置推理强度，每个档位都对应模型真实声明的推理等级（提供商支持时有 Off 档），滑杆只停在整档上，拖动过程中文字即时更新。旁边最多三个可配置的「模型+推理强度」快捷切换按钮，单击一次同时切换两者，在该插件自己的设置弹层里配置。模型与档位的切换仍走会话的模型目录，与输入框其他部分保持同步。'
+icon: https://raw.githubusercontent.com/caidows/dsh-quick-model-switch/main/assets/icon.png

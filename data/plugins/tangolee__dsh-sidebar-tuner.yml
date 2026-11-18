@@ -1,0 +1,8 @@
+url: https://github.com/tangolee/dsh-sidebar-tuner
+name: tangolee/dsh-sidebar-tuner
+category: ui
+icon: https://raw.githubusercontent.com/tangolee/dsh-sidebar-tuner/main/assets/icon-180.png
+tarball: https://github.com/tangolee/dsh-sidebar-tuner/releases/latest/download/dsh-sidebar-tuner.tgz
+description:
+  en: 'Sidebar and conversation typography for the DSH desktop UI: a two-column settings panel with a searchable font picker, separate Chinese, English and fallback font stacks with installed-font detection, flat font size, column scale, line height, row gap and letter spacing, a two-column icon-rail plus session-list layout with an optional folded rail and hover labels, separate content-area, code and terminal fonts, and a keep list that excludes widgets such as the billing card from font scaling. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 桌面端的侧栏与对话区排版：两栏式设置面板配可搜索的字体选择器；中英文字体分开设并检测本机是否安装，统一字号、整列缩放、行高、行距与字距，可排成图标列 + 会话列两栏、折叠时保留图标栏、图标悬停显示名称；对话区、代码与终端字体可单独设，排除列表里的控件（如计费卡）不跟随缩放。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

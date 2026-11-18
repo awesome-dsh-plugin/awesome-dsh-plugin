@@ -1,0 +1,7 @@
+url: https://github.com/zihangii/dsh-app-radar
+name: zihangii/dsh-app-radar
+category: dev
+description:
+  en: 'Lists the background processes DeepSeek Harness started and the ports they hold — uptime, memory and working directory — and force-stops them by process group. Inspired by laogou717/local-ops. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '列出 DSH 在后台启动的进程与它们占用的端口（运行时长、内存、工作目录），并按进程组强制停止。思路参考 laogou717/local-ops。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/zihangii/dsh-app-radar/main/assets/icon-180.png
