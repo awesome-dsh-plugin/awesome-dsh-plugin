@@ -3865,6 +3865,7 @@ dsh plugin --profile web add dshmarket
 - [HaydenSmith1121/dsh-opencode-go-plus](https://github.com/HaydenSmith1121/dsh-opencode-go-plus) — 把 OpenCode Go 订阅模型接入 DeepSeek Harness：每隔几分钟重新解析网关实时目录，内置表里没有的模型按同族自动适配，支持流式输出、工具调用、图片输入与订阅额度显示。这是 dsh-opencode-go 的维护分支：与上游包争用 llm-opencode-go 设置命名空间时安静退场，而不是让整棵插件树加载失败；opencode-go 路由已被占用时改用 opencode-go-plus 路由继续服务。
 - [HB00/dsh-llm-failover](https://github.com/HB00/dsh-llm-failover) — 限流或配额耗尽时自动切换模型提供方：可按提供方配置模型，带冷却机制与永久最终兜底。
 - [Headmaster218/dsh-llm-moe4all](https://github.com/Headmaster218/dsh-llm-moe4all) — 在 DSH 中运行 MoE4All 本地模型，支持引擎自动安装、模型发现与下载、推理参数配置和实时速度监控，也可连接已有服务。
+- [hebokenn/dsh-codex-chatgpt](https://github.com/hebokenn/dsh-codex-chatgpt) — 通过本机 Codex App Server 将已登录 ChatGPT 账号可用的模型接入 DSH 模型菜单；工具仍由 DSH 执行和审批，插件不显示订阅剩余额度。
 - [henrikdukefoss/dsh-standardcompute](https://github.com/henrikdukefoss/dsh-standardcompute) — 通过内置 pi-ai 适配器将 Standard Compute 添加为 OpenAI 兼容模型供应商，包含 standardcompute 路由模型和两个直连模型；仅配置，无代码。
 - [Henta111/dsh-more-models-thinking-level](https://github.com/Henta111/dsh-more-models-thinking-level) — 为 GPT、Codex、Gemini 与 OpenAI-compatible 模型提供按模型的推理等级（off/minimal/low/medium/high/xhigh）。装的是 helper 而不是运行时适配器：需按 profile 手动跑一次 enable-capabilities.ps1（Windows）并重启——它把等级声明写进 ~/.dsh/settings.yaml，附带还原脚本与备份。
 - [heywalter/dsh-domain-proxy](https://github.com/heywalter/dsh-domain-proxy) — 从已配置的 Provider 选择 API 域名或手动添加，让命中的 DSH 后端 Fetch/Undici 请求通过已有本机 HTTP(S) 代理，其他请求沿用原有路线；可选开启内存调用记录，查看实际分发路线、首内容等待、token 速度与用量，不保存提示词、回答或 API Key。
@@ -5241,6 +5242,7 @@ dsh plugin --profile web add dshmarket
 - [yoza10635/dsh-argp](https://github.com/yoza10635/dsh-argp) — DeepSeek Harness 守卫式上下文压缩——LLM 提议、确定性守卫裁决：逐原子缩放（verbatim 守卫下 extract/summary/false）+ 引用图延迟剪枝（0-LLM）+ append-only 日志逐字节精确召回。
 - [yuan-source-666/dsh-ptc-discipline](https://github.com/yuan-source-666/dsh-ptc-discipline) — PTC 模式 agent preset：用 tools.guard 拒绝工具调用，直到会话里有进行中的目标和待办。
 - [yue7ye/dsh-Context-Drawer](https://github.com/yue7ye/dsh-Context-Drawer) — 会话上下文超过阈值时，先把较早的消息追加到按会话归档的文件夹，再把最早的已完成轮次移出模型可见上下文；聊天记录与会话日志保持原样。
+- [yueyao/dsh-session-manager](https://github.com/yueyao/dsh-session-manager) — 在侧边栏面板里批量管理历史会话：多选后归档（移出列表、可恢复）、删除（需二次确认并标红不可恢复）、恢复已归档会话。
 - [yuezengwu/dsh-explain](https://github.com/yuezengwu/dsh-explain) — 本地优先学习模式：跨会话全局学习线程、按来源讲解。
 - [yuhhhong/dsh-sidechat](https://github.com/yuhhhong/dsh-sidechat) — 在右侧栏基于主会话最近完成轮次的背景快照开展临时讨论，按需启动托管子代理，支持附件、技能及运行中的模型和权限切换，不自动向主会话回传回复。
 - [yukre/dsh-session-delete](https://github.com/yukre/dsh-session-delete) — 从侧栏菜单永久删除会话及其对话日志，带二次确认，并拒绝删除正在运行的会话。归档只是隐藏，这个才真正删掉。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
