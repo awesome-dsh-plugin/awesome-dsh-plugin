@@ -1,0 +1,6 @@
+url: https://github.com/vicfei/dsh-WrenAI
+name: vicfei/dsh-WrenAI
+category: tools
+description:
+  en: 'Self-hosted semantic layer for DSH - ask data questions in natural language and every number comes back with its metric caliber attached (the line between governed analytics and raw text-to-SQL). Single-SELECT guard with self-heal SQL, SQLite or PostgreSQL execution via a zero-dependency stdlib wire client (SCRAM-SHA-256 verified), and a zero-config --weknora bridge: point it at a WeKnora deployment and ask "how many times was the test knowledge base queried in the past month?" - the caliber honestly states it counts retrieval-cited answers, because WeKnora only audits write-side actions.'
+  zh: '自托管语义层：自然语言问数，数字带着指标口径一起回来（受治理问数与裸 text-to-SQL 的分界线）。单条 SELECT 护栏+自愈重试，SQLite/PostgreSQL 双后端（零依赖 stdlib wire 客户端，SCRAM-SHA-256 校验），以及零配置的 --weknora 桥——指向一个 WeKnora 部署直接问"过去一个月 test 知识库被查了多少次"，口径会诚实声明它数的是"引用了该库的回答"（因为 WeKnora 审计日志只记写侧动作）。'
