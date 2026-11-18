@@ -1,0 +1,6 @@
+url: https://github.com/SonettoGu14/dsh-tokeneconomizer
+name: SonettoGu14/dsh-tokeneconomizer
+category: usage
+description:
+  en: 'A per-repository ledger that folds each DSH session''s usage into cache-weighted equivalent tokens and keeps a per-session history, plus two smaller mechanisms over the same state directory: it learns the command forms and environment-variable repairs a repository needs from tool results and injects at most four of them, once, when a task starts, and it can hide the tools that stayed idle across sessions — decided once per session and off by default; /te-cost, /te-facts and /te-prune print what has been recorded, and the files on disk hold command forms, counts and token totals, never output text.'
+  zh: '按仓库记账：把每个 DSH 会话的用量折算成缓存加权后的等效 token，并保留逐会话历史；同一份状态目录上还有两个更小的机制——从工具结果里学习该仓库需要的命令形式与环境变量修复，在任务开始时一次性注入至多四条；以及隐藏跨多个会话都未使用的工具（每个会话开始时决定一次，默认关闭）。/te-cost、/te-facts、/te-prune 打印已记录的内容，磁盘上只存命令形式、计数与 token 合计，不存任何输出文本。'
