@@ -1,0 +1,7 @@
+url: https://github.com/p33333333333333l/dsh-specialist-team
+name: p33333333333333l/dsh-specialist-team
+category: workflow
+tarball: https://github.com/p33333333333333l/dsh-specialist-team/releases/download/v0.2.2/dsh-specialist-team-0.2.2.tgz
+description:
+  en: Assign tasks to specialists with role-specific models, file scopes and tool permissions.
+  zh: 专家团队可按任务分派专家，并为各角色指定模型、文件范围和工具权限。

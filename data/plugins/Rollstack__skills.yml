@@ -1,0 +1,7 @@
+url: https://github.com/Rollstack/skills
+name: Rollstack/skills
+category: tools
+description:
+  en: Build decks from your company's data, and refresh, schedule and send reports, with Rollstack's MCP server and skills. Requires a Rollstack account and a Rollstack API key.
+  zh: '用 Rollstack 的 MCP 服务器和技能，基于公司数据生成演示文稿，并刷新、定时和发送报告。需要 Rollstack 账号和 API Key。'
+icon: https://raw.githubusercontent.com/Rollstack/skills/main/assets/icon.png

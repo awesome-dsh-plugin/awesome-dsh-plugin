@@ -1,0 +1,6 @@
+url: https://github.com/BeanPaste233/dsh-interaction-optimize
+name: BeanPaste233/dsh-interaction-optimize
+category: ui
+description:
+  en: 'Live added/deleted line badge above the composer with a right-Sidebar diff tab, completion toasts for any session that jump back to it, select-text annotations, and a right-click menu for file links. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '输入框上方的实时增删胶囊与右侧栏 diff、跨会话完成提醒（点击跳回对应对话）、划词注释、文件链接右键菜单。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

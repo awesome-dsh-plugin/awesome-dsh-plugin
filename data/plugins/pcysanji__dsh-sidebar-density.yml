@@ -1,0 +1,7 @@
+url: https://github.com/pcysanji/dsh-sidebar-density
+name: pcysanji/dsh-sidebar-density
+category: usage
+description:
+  en: 'Sidebar density controls for DeepSeek Harness: row height, spacing, font size, logo size, new-session height, double-column plugins, plus patch-gated caption height/font and unlocked sidebar width. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '左侧栏密度调节：会话行高、插件按钮行高与间距、字号、Logo 尺寸、新会话按钮高度、插件双栏，拖动即时生效；另有顶栏高度/字号与左栏宽度上限三项，需配套 asar 补丁才生效。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/pcysanji/dsh-sidebar-density/main/docs/icon-180.png

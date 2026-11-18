@@ -1,0 +1,7 @@
+url: https://github.com/yrsxy/dsh-simulink-mcp
+name: yrsxy/dsh-simulink-mcp
+category: dev
+description:
+  en: 'Builds, wires, compiles and simulates Simulink models inside the MATLAB session you already have open. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在你已经开着的 MATLAB 会话里建 Simulink 模型、连线、编译与仿真。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/yrsxy/dsh-simulink-mcp/main/assets/icon-180.png

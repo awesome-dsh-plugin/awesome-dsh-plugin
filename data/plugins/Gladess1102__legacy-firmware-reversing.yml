@@ -1,0 +1,6 @@
+url: https://github.com/Gladess1102/legacy-firmware-reversing
+name: Gladess1102/legacy-firmware-reversing
+category: skill
+description:
+  en: 'Agent Skill + DSH plugin distilling a 26-cycle live campaign against a 2004 Sharp MP-B300 (SigmaTel STMP3560 + Motorola DSP56004): black-box protocol RE with zero-brick flash gates, proprietary font/resource tree reconstruction with full GB2312 injection, heterogeneous DSP disassembly and PC JIT emulation, and single-variable falsification to separate software locks from physical hardware limits.'
+  zh: 'Agent Skill + DSH 插件：提炼自 2004 年夏普 MP-B300（SigmaTel STMP3560 + Motorola DSP56004）26 轮真机攻坚——黑盒协议逆向与零变砖刷写门、私有字库资源树重建与 GB2312 全量注入、异构 DSP 反汇编与 PC 端 JIT 仿真、单变量证伪以区分软件锁与物理硬件边界。'

@@ -1,0 +1,6 @@
+url: https://github.com/MeruSu/dsh-better-notice
+name: MeruSu/dsh-better-notice
+category: notify
+description:
+  en: 'Shows which session is waiting for you where you already look: a seat in the conversation tab row, a state glyph on each sidebar row, a pill in the Windows title bar, and per-state sounds and popout images. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把「哪个会话在等我」显示在你本来就会看的地方：对话页签行一个座位、侧栏每行一个状态图标、Windows 标题栏一个胶囊，状态变化时还有声音与弹出图。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

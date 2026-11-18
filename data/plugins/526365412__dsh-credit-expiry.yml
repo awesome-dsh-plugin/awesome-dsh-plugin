@@ -1,0 +1,6 @@
+url: https://github.com/526365412/dsh-credit-expiry
+name: 526365412/dsh-credit-expiry
+category: usage
+description:
+  en: 'Credit expiry panel for WorkBuddy, Trae, MiniMax Code and Qoder: one compact row in the left sidebar shows each pool balance and the nearest expiry, and the full page breaks down expiry buckets, credit spend and the sessions that consumed credits. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '积分到期面板：左侧边栏底栏一行显示 WorkBuddy、Trae、MiniMax Code、Qoder 四个积分池的余额与最近到期日，点开是完整页面（到期分布 + 积分消耗 + 积分会话）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

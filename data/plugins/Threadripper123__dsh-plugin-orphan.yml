@@ -1,0 +1,6 @@
+url: https://github.com/Threadripper123/dsh-plugin-orphan
+name: Threadripper123/dsh-plugin-orphan
+category: tools
+description:
+  en: "Run detached background processes that survive DSH shutdown, with status and log tools."
+  zh: "在 DSH 关闭后继续运行的独立后台进程：启动、查询状态与日志、停止。"
