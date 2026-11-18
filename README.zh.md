@@ -158,6 +158,7 @@ dsh plugin --profile web add dshmarket
 - [wjj865-code/dsh-orchestrator](https://github.com/wjj865-code/dsh-orchestrator) — 给 DeepSeek Harness 加一位协调者和一组子任务会话：主会话只拆活、用 task_create 派子会话、读 task_report 回报；每条任务进持久 SQLite 台账，带依赖、分组、写域与优先级队列。子会话报 done 落「已交付待确认」，追问窗口保留到你确认或超时收尾；其上还有把经验蒸馏进后续任务的分层记忆、等用户拍板任务的收件箱、可选的每日日报、每日台账快照与浏览器任务面板。
 - [ws1234567891011/dsh-interim-narration](https://github.com/ws1234567891011/dsh-interim-narration) — 让 agent 边做边说：每轮先用一两句说明怎么理解消息、准备怎么做、第一步是什么，并在工具调用批次之间写过程叙述；插件页可直接调整详略、句数上限与开关。
 - [wuanthony397-hash/dsh-codex-peer](https://github.com/wuanthony397-hash/dsh-codex-peer) — 让 DeepSeek Harness agent 与本机 Codex CLI 对等协作：把目标拆成共享工作清单、派活与交接、互相审查，并把每一步的提示词、事件流与回答留档在本地。
+- [wychmod/dsh-mini-superagent#dsh-mini-superagent](https://github.com/wychmod/dsh-mini-superagent/tree/main/dsh-mini-superagent) — 给 DeepSeek Harness 加任务派发与一个工作台：主会话把任务派给独立的后台子会话、立即返回，子会话的报告自动回流成本会话的一条消息；侧边栏「派发工作台」显示并发位、排队、批次进度与失败原因，每条任务可取消、重试、归档。新增 10 个 dispatch_* 工具。
 - [xfgil/dsh-second-opinion](https://github.com/xfgil/dsh-second-opinion) — 跨会话「第二意见」：一个会话卡住时，把问题交给另一个独立会话单独思考，把方案拿回来继续。不冒充用户发言，也不唤醒闲置会话。
 - [xingyanghaifu/dsh-reqtrace](https://github.com/xingyanghaifu/dsh-reqtrace) — DSH 会话的需求-证据审计：把每条需求对应到工具调用、文件和命令，逐条记录验证情况，并把缺失项退回给 agent。
 - [YingshuoZhang/dsh-chinese-reasoning](https://github.com/YingshuoZhang/dsh-chinese-reasoning) — 让 DeepSeek Harness 的 agent 用简体中文推理：每轮在对话末尾追加一条运行时上下文指令，并可选在系统提示词里保留一条稳定声明。设置里可选简体中文或关闭，并决定是否保留该声明。
@@ -3173,6 +3174,7 @@ dsh plugin --profile web add dshmarket
 - [zhuzichen362/dsh-call-shrink](https://github.com/zhuzichen362/dsh-call-shrink) — DeepSeek Harness 的极端 LLM 调用压缩：标题生成短路、飞行中请求去重、24 小时回放缓存，并用 `[[TASK n]]`/`[[ANSWER n]]` 分隔协议把 N 个并行请求批量合并为 1 次上游调用——更少 API 调用、更低开销、相同答案。
 - [zhxmt-xm/dsh-opencode-usage-dashboard](https://github.com/zhxmt-xm/dsh-opencode-usage-dashboard) — OpenCode 用量看板：在 DeepSeek Harness 侧栏查看额度与用量，支持 Go 订阅窗口、Console 花费、趋势、预测和模型拆分，以及多账户、服务账号筛选和中英界面。
 - [ZiOstudio/dsh-budget-handoff](https://github.com/ZiOstudio/dsh-budget-handoff) — 给 DeepSeek Harness 的会话设预算上限：按官方价目表实时算账，80% 预警、100% 拦停任务，并落盘一份交接快照，让下一个会话接着干。
+- [zkw90274-dot/dsh-dock-insight](https://github.com/zkw90274-dot/dsh-dock-insight) — 把底栏的上下文占用、会话耗时与 token 用量收进一个胶囊（点开是面板），并加上登录账号余额；加载时隐藏宿主自带的底栏读数。
 - [ZKY172/dsh-simple-balance](https://github.com/ZKY172/dsh-simple-balance) — 在 DeepSeek Harness 侧栏显示账户余额、当前时段单价与今日已用金额；今日已用读自本机 dsh-cost-meter 账本（~/.dsh/.dshw-usage.json），未安装 dsh-cost-meter 时该项显示为「—」。
 - [zmd12345/dsh-plugin-thinking-level](https://github.com/zmd12345/dsh-plugin-thinking-level) — 根据当前任务和最近几轮对话在本地判断合适的推理等级，一键切换；上下文过长时按占用提醒，并区分「换个话题」和「同一件事没做完」给出不同建议：简单任务不过度思考、节省 token，复杂任务给足推理。
 - [zmd12345/dsh-skill-dev-delivery-rules](https://github.com/zmd12345/dsh-skill-dev-delivery-rules) — 把一套实战打磨的《开发交付规则》注册为技能家族：1 个核心技能（需求澄清、交付自检、规则导航）+ 9 个专项技能（分层架构、证据驱动调试、最小变更、验证分级、迁移对等、UI 异步反馈、样式尺寸、命令行安全与清理、项目记录）。按任务场景只加载命中的技能，琐碎小任务（单文件、≤10 行、可回滚）整体豁免不加载，每个会话只为真正用到的规则付 token。
@@ -7404,6 +7406,7 @@ dsh plugin --profile web add dshmarket
 - [zjukop3/dsh-verify-kit#dsh-numberlint](https://github.com/zjukop3/dsh-verify-kit/tree/main/packages/dsh-numberlint) — 文档内数字一致性：同一数量既写 4,985 又写 4985、百分比空格不一致、区间连接号混用——写法比较而非数值比较。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [zjukop3/dsh-verify-kit#dsh-outline-lint](https://github.com/zjukop3/dsh-verify-kit/tree/main/packages/dsh-outline-lint) — 交付文档的结构检查：没有标题、多个一级标题、标题跳级、开头没有结论、没有任何读者能跑的复现命令。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [zjukop3/dsh-verify-kit#dsh-tablelint](https://github.com/zjukop3/dsh-verify-kit/tree/main/packages/dsh-tablelint) — 生成报告的 Markdown 表格检查：行列错位、分隔行与表头不符、表头重名、只有表头没有数据行。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [zjukop3/dsh-vertical-kit#dsh-adr-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-adr-check) — 架构决策记录（ADR）的检查：状态、逼出选择的背景、那一句决定、包含代价的后果、落选的备选方案——后果只写好处的 ADR 通常没真正权衡过。
 - [zjukop3/dsh-vertical-kit#dsh-agreement-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-agreement-check) — 中文合同的结构检查：甲乙方、日期、金额大小写一致、签署栏、争议解决、违约责任。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [zjukop3/dsh-vertical-kit#dsh-invoice-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-invoice-check) — 中文电子发票的字段检查：统一社会信用代码字符集、不含税+税额=价税合计的勾稽、大小写金额一致、发票号码位数。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [zjukop3/dsh-vertical-kit#dsh-listing-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-listing-check) — 电商商品信息的检查：标题长度、关键词堆砌、价格有效性、SKU 完整性与重复，输入 CSV/JSON。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
@@ -9045,6 +9048,7 @@ dsh plugin --profile web add dshmarket
 - [InoriMutsumi/dsh-grill-first](https://github.com/InoriMutsumi/dsh-grill-first) — 开工前先做需求访谈：判定任务是否说清楚，没说清就分轮追问；strict 档位下用户未在对话中确认四段需求清单前，拦截编辑类工具；确认过的偏好写入两层记忆。
 - [intelfabs/dsh-scheduled-message](https://github.com/intelfabs/dsh-scheduled-message) — 给 DSH 输入框里正在写的消息（文本、图片、文件）设定发送时间，由 Host 投递，关掉标签页也会发；DSH 关闭期间到点的消息会在下次启动时发送并标记为延迟。勾选重复则改为创建 DSH Automation 任务。选用 DeepSeek 模型、且所选时间落在其工作日高峰时段时，会多一行橙色价格提示。
 - [Intelli-Jungle/dsh-agentroom](https://github.com/Intelli-Jungle/dsh-agentroom) — Slack 风格共享聊天室，支持独立 DSH 原生会话、并行提及、有次数限制的 Agent 接力、文本附件和会话导出。
+- [InvisibleZero/dsh-gated-workflow](https://github.com/InvisibleZero/dsh-gated-workflow) — 带程序级门禁的四态工作流：讨论中拦写文件、实现中拦越界改动、验收打勾必须带证据。
 - [ishuowang/dsh-agent-team-room](https://github.com/ishuowang/dsh-agent-team-room) — 在不合并对话历史的前提下，将多个独立 DSH Session 与 provider-backed 成员组成持久原生 Room，支持绑定精确成员身份的行首 `@` 提及、定向投递、广播和 Leader 权限控制。
 - [ityyq777/dsh-workbench#automation](https://github.com/ityyq777/dsh-workbench/tree/main/packages/automation) — DSH 自动化：按定时、域事件或手动触发白名单 action，含模板、条件、限频与运行记录。
 - [ityyq777/dsh-workbench#tasks](https://github.com/ityyq777/dsh-workbench/tree/main/packages/tasks) — DSH 任务管理：任务树、八个视图、优先级、截止日、时间线/重启链、批量归并与迁表。
@@ -10736,7 +10740,7 @@ dsh plugin --profile web add dshmarket
 - [yminghua/dsh-plugin-compare](https://github.com/yminghua/dsh-plugin-compare) — 对比已有 DSH 会话，或在两套 Agent Preset 之间运行受控 A/B 试验，展示对齐时间线、配对指标差值、显式验收结果与可导出的报告。
 - [yongshuai0314/dsh-readcache](https://github.com/yongshuai0314/dsh-readcache) — 为 DSH read 工具提供版本令牌校验的进程内结果缓存：未变更文件的重复读取跳过文件 I/O 与行渲染，附带 readcache 工具查看统计与清空。
 - [young-tim/dsh-profile-lab](https://github.com/young-tim/dsh-profile-lab) — 运行可复现的 DSH Profile 与 Patch 实验，并提供引导式用例构建、断言、Web 对比报告、恢复和策略门禁。
-- [yrsxy/dsh-simulink-mcp](https://github.com/yrsxy/dsh-simulink-mcp) — 在你已经开着的 MATLAB 会话里建 Simulink 模型、连线、编译与仿真。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [yrsxy/dsh-simulink-mcp](https://github.com/yrsxy/dsh-simulink-mcp) — 在你已经开着的 MATLAB 会话里建 Simulink 模型、连线、编译与仿真。
 - [YTxue/dsh-skill-manager-ytxue](https://github.com/YTxue/dsh-skill-manager-ytxue) — 设置侧边栏的 Skill 管理器：池与启用目录启停、文件夹批量导入（重名询问）、状态驱动一键规范检查与自动修复、系统级/项目级来源标识。
 - [yuexizhishang/dsh-ui-probe](https://github.com/yuexizhishang/dsh-ui-probe) — 在运行中的 DeepSeek Harness 界面里驱动插件页面做验收：打开面板、读取真实 DOM 与计算样式、点击、输入、等待异步生效、抓取控制台报错，结束后自动回到原对话。
 - [YunaAloft/dsh-rtk-workbench](https://github.com/YunaAloft/dsh-rtk-workbench) — 把 Claude Code 里 rtk 的省 token 机制接进 DSH：能改写的命令交给 rtk 重写，改写够不着的构建、测试、日志也会被压缩；git、cargo、npm、pytest 等常见命令都有覆盖。压缩后会告诉模型省略了什么、怎么找回原文——读不到 rtk 存储时原文另存并给出路径；省了多少不用敲命令，输入框下方的浮标直接显示，`/rtk stats` 看明细。改写不可靠时原命令照常执行：rtk 跑不起来，或命令会丢参数，都不会失败。rtk 二进制随包，主流平台不用像多数其他 rtk 插件那样先自行安装。
