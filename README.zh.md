@@ -8054,6 +8054,7 @@ dsh plugin --profile web add dshmarket
 - [PhoenixYM0307/dsh-voice](https://github.com/PhoenixYM0307/dsh-voice) — 在输入框旁加一个麦克风按钮，把语音转成文字填进输入框；打开开关后，助手每轮回复自动朗读。语音识别与合成调用 DeepSeek 官方 ASR / TTS 接口，API Key 在插件设置页填写。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [PolinniZhong/dsh-omi-voice](https://github.com/PolinniZhong/dsh-omi-voice) — DeepSeek Harness 对话内朗读：点一下即可朗读、暂停、继续 AI 回复，豆包 TTS 自然音色（BYOK），只读最终回答并过滤代码、表格与图形，本地引擎，插件零 Key。
 - [ppy-web/dsh-plugin-xiaomi-mimo-tts](https://github.com/ppy-web/dsh-plugin-xiaomi-mimo-tts) — 为 DSH 提供小米 MiMo、豆包、Breeze 和浏览器语音，支持接入外部供应商与本地模型、文本过滤、实时流式朗读、音频下载、音效、桌宠及 QQ Bot、AI Passport 联动。
+- [puffdog-git/dsh-jukebox](https://github.com/puffdog-git/dsh-jukebox) — 音乐播放器与点歌来源。可直接播放本地音乐文件夹、YT Music 与 bilibili；可搜索 Spotify、KKBOX、Apple Music 并读取它们的链接，然后改播本地音乐库或 YouTube 上的同一首，或让同一台电脑上的官方播放器播放并实时转送声音。会登记成 dsh-discord-cyberfriend 插件的点歌来源。控制与转送官方播放器仅限 Windows，默认关闭。
 - [puffdog-git/dsh-sound-atelier](https://github.com/puffdog-git/dsh-sound-atelier) — 朗读助手回复，支持 Edge、云端与本机语音引擎，可为不同人格绑定音色，提供中日配音、云端音色管理、RVC 变声，以及供其他插件调用的语音接口。
 - [qfnin/dafeiyu-voice-ball](https://github.com/qfnin/dafeiyu-voice-ball) — 大肥鱼语音球：桌面悬浮语音伴侣——点一下球说一句话，它开口回答一句。本地 Whisper 识别 + edge-tts 合成，RuiC-2D 实时角色渲染；支持 ollama / DSH / DeepSeek 三种回答后端；独立 Electron 窗口，首次运行自动配置环境（克隆角色引擎、建 venv、装依赖）。
 - [QiNFPV/dsh-voice-dialog](https://github.com/QiNFPV/dsh-voice-dialog) — DSH 连续语音对话：自动断句、发送前 2 秒确认窗口、回复朗读且开口即打断。默认用 DSH 自带的语音识别（可在设置里改接本机 Whisper 桥或 OpenAI 兼容接口），识别结果再用 DSH 模型纠错一次；回复经微软 Edge 的在线朗读服务合成，回复文字会发给微软。默认每天检查一次 PyPI 与 Hugging Face 上的 faster-whisper 更新；设置与 API Key 明文存放在 ~/.dsh/voice-tutor-config.json。/voice-tutor 路由逐个请求做准入校验（需要已登录的 DSH 会话），API Key 不回传原文，执行更新需要一次性确认 token。
@@ -9065,6 +9066,7 @@ dsh plugin --profile web add dshmarket
 - [l246804/dsh-pstack](https://github.com/l246804/dsh-pstack) — 将 pstack 工作流体系移植到 dsh：58 个 pstack 技能、23 个 playbook、4 个原生工具与 5 个 agent preset，附带技能路由、按角色分配模型与按角色路由的子代理。
 - [L3n3L/dsh-resume](https://github.com/L3n3L/dsh-resume) — AI 写简历容易，但写完常会遇到模板不合适、排版溢出、页面留白过多，以及改一处导致全局变形等问题。dsh-resume 专注解决手动修改简历繁琐、低效的问题，让 DSH 覆盖从内容撰写、模板选择到排版调优的完整简历工作流，并支持针对不同求职场景产出合适的简历版本。
 - [l956615272-hub/dsh-weekly-report](https://github.com/l956615272-hub/dsh-weekly-report) — 按你给定的样例风格生成日报/周报/月报：按时间窗口挑选 DSH 会话并只取窗口内的回合，可选合并多个仓库中按作者过滤的 git 提交，再由新会话用只读采集脚本读取证据写出 Markdown 报告；成品进入本地报告库。
+- [LaoLiang-agent/HarnessKit](https://github.com/LaoLiang-agent/HarnessKit) — 面向个人开发者与小团队的多 Agent 工程流程框架：七个角色、四档流程、人工审批点、护栏，以及随任务归档持续沉淀规格与经验的共享资产仓库。
 - [lb290/dsh-zentao-ai-workbench](https://github.com/lb290/dsh-zentao-ai-workbench) — DSH 侧栏禅道工作台：粘贴禅道浏览页链接读取 Bug/任务/需求，多选后交给当前或新会话（带入描述、最近动态、截图转真实图片附件、其它附件落盘可读），AI 处理完把备注与状态（已解决、已关闭、重新激活、开始、完成等）单条或批量回写禅道，面板与 5 个 Agent 工具都能写；Bug 的备注与状态回写已实测通过，任务与需求表单走同一套代码路径。
 - [lchqi1998/dsh-n8n-plugin](https://github.com/lchqi1998/dsh-n8n-plugin) — DeepSeek Harness 的 n8n 工作流运维插件：多实例注册表、Agent 工具与设置页界面。
 - [LeemanCheung/dsh-task-dag](https://github.com/LeemanCheung/dsh-task-dag) — 由投影驱动的会话子代理与持久工作流实时 DAG：状态与节点导航、深层链路确定性布局、适应/平移画布，以及当前会话内节点拖动重排。
@@ -10187,6 +10189,7 @@ dsh plugin --profile web add dshmarket
 - [CH4ACKO3/the-binding-of-dsh](https://github.com/CH4ACKO3/the-binding-of-dsh) — 通过原生 Connection 与 Typert Gateway 在 DSH Host 和 Client 之间提供双向 RPC，支持目标 Peer 调用、取消与连接生命周期处理。
 - [chai-yinfeng/dsh-macos-restart](https://github.com/chai-yinfeng/dsh-macos-restart) — 仅 macOS 桌面版：一键重启 DeepSeek Harness Electron 应用；重启前确认运行中的任务，插件安装/更新时拒绝，并记录重启阶段与日志。
 - [chanyuenpang/dsh-services-manager](https://github.com/chanyuenpang/dsh-services-manager) — 在 DSH Desktop/Web 中管理本地网页服务，支持持久启停策略、原生 Agent 工具，以及可在 DSH 内或系统浏览器打开服务的侧栏启动台。
+- [Cheemsup/dsh-plugin-console](https://github.com/Cheemsup/dsh-plugin-console) — DSH 侧边栏插件控制台：查看 DSH 插件信息、会话来源与工具归属，预演上下文内容与插件禁用影响，并支持提示词/工具定制首次请求。
 - [Chemiofitor4096/minecraft-dev-starter](https://github.com/Chemiofitor4096/minecraft-dev-starter) — 识别工作区里的 Minecraft 模组与插件工程（Fabric、Forge、NeoForge、Architectury、Paper），在会话标题栏运行 Gradle 的客户端或服务端任务，日志显示在侧栏标签；数据生成与 GameTest 这类会跑完的任务在结束时给出通过或失败的结论。
 - [Chengyunlai/dsh-workbench](https://github.com/Chengyunlai/dsh-workbench) — 从 DeepSeek Harness 对话点击源码链接，直接跳到指定行。在右侧工作台查看 Git 差异和断点变量，也可以把讲解保存为可搜索的 Markdown 记忆卡片。支持 Python 类关系图（Beta）。Go 和 Java 跳转需要语言服务器，断点调试需要调试适配器。
 - [chenkai2/dsh-daemon](https://github.com/chenkai2/dsh-daemon) — 将 DeepSeek Harness 的 web 服务（dsh web）注册为自启动、自愈的后台服务：LaunchAgent / systemd / cron 加 30 秒健康检查 watchdog，并提供 7 个 dsh_daemon_* 工具（安装/卸载/重装/状态/启动/停止/更新）。
