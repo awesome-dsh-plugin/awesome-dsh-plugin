@@ -1,0 +1,6 @@
+url: https://github.com/ifrankwang/openspec-agents
+name: ifrankwang/openspec-agents
+category: workflow
+description:
+  en: 'OpenSpec process plugin: proposals clarify requirements up front and get a dedicated review pass; implementation runs in an isolated worktree, grouped by task unit per round, leaving the main repo untouched; development and review are split across two agents — a change cannot finish while functional or quality issues remain open, they loop back to the developer agent; bundled standards define the review baseline, with Vue frontend and Java backend kits included.'
+  zh: 'OpenSpec 流程插件：提案前先澄清需求，并对提案文档做一轮复核；实施在独立 worktree 中进行，不影响主仓库，每轮以一个任务组为单位推进；实施由开发与审核两个 Agent 分工，功能有问题或质量不通过时不允许结束，问题会退回开发 Agent 修复；内置多类规范 skill 作为质量审查基准，支持 Vue 前端与 Java 后端项目。'
