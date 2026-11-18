@@ -1,0 +1,7 @@
+url: https://github.com/jinchezuo/dsh-interpret
+name: jinchezuo/dsh-interpret
+category: voice
+tarball: https://github.com/jinchezuo/dsh-interpret/releases/download/v1.1.2/dsh-interpret-1.1.2-universal.tgz
+description:
+  en: 'A DeepSeek Harness plugin for live English-to-Chinese captions. Microphone or system audio is transcribed on-device by Parakeet, translated through the configured DSH LLM route with a 3,050-term, eight-domain terminology RAG pass, and shown as bilingual subtitles alongside a built-in reader for PDF, DOC/DOCX, XLSX, PPTX, CSV and Markdown. Sessions persist locally and export to bilingual SRT or Markdown; macOS arm64 and Windows x64.'
+  zh: 'DeepSeek Harness 的实时英中双语字幕插件。麦克风或系统音频由 Parakeet 在本机转写，经已配置的 DSH LLM 路由翻译，并用 3,050 条八学科术语做检索与定稿校正；英文原句与中文译文双语显示，右侧可同屏阅读 PDF、DOC/DOCX、XLSX、PPTX、CSV、Markdown 讲义；会话本地落盘，支持导出双语 SRT 或 Markdown。支持 macOS arm64 与 Windows x64。'
