@@ -1822,6 +1822,7 @@ dsh plugin --profile web add dshmarket
 - [runcat-tommy/dsh-panda-calendar](https://github.com/runcat-tommy/dsh-panda-calendar) — 会话页头的「熊猫日历」标签页：公历/农历、干支、生肖、24 节气、传统与外国节日、中国法定节假日（含调休）、多城市天气、时间戳转换（秒/毫秒 ↔ 年月日时分秒，可选时区）与内置离线的「历史上的今天」，数据免费、无需 API Key。
 - [runcat-tommy/dsh-view-manager](https://github.com/runcat-tommy/dsh-view-manager) — DSH 视图标签管理器（逃咪）：管理会话页头视图标签（对话/轨迹）——启停、隐藏、排序与重命名，文案随界面语言中英切换，并带 npm 更新提醒。
 - [rUrU516/dsh-quicktime-player](https://github.com/rUrU516/dsh-quicktime-player) — DSH 侧边栏视频播放器：注册自己的右侧栏页签类型，因此无论从文件页签、对话里的文件引用，还是其它侧边栏插件的文件树打开视频，都会落到这里。字节走宿主的 HTTP Range 路由流式下发（桌面端另有一条带令牌的回环源，进度条在桌面端也能拖得动），并提供滚轮缩放、拖拽平移、逐帧步进、倍速与音量弹出条，以及覆盖全部控件的内置说明。
+- [Ryuu-64/dsh-answered-questions](https://github.com/Ryuu-64/dsh-answered-questions) — 在 DeepSeek Harness（DSH）中回看已回答的问题：保留全部选项、已选答案和自由填写内容，并支持 dsh-choice 卡片。
 - [Ryuu-64/dsh-find-all](https://github.com/Ryuu-64/dsh-find-all) — 搜索 DeepSeek Harness（DSH）各工作区普通对话的标题和已保存正文，可包含归档；也可按 Ctrl+F / Cmd+F 查找当前对话。
 - [S-anZZz/dsh-deepseek-web-sync](https://github.com/S-anZZz/dsh-deepseek-web-sync) — 仅 Desktop。把 DeepSeek 网页版放进 Harness 右侧栏：同步主题、自动打开、网页登录一次即可保持，并一键把提问带入当前对话。
 - [s3yf1337/dsh-desktop#bundle](https://github.com/s3yf1337/dsh-desktop/tree/main/bundle) — dsh 桌面配置：原生 Tauri 窗口承载 harness Web 界面，支持托盘、原生通知、文件管理器面板与一键更新。
@@ -4146,6 +4147,7 @@ dsh plugin --profile web add dshmarket
 - [TikaFlow/dsh-model-fix](https://github.com/TikaFlow/dsh-model-fix) — 提供更好的模型使用体验，包括但不限于：多种方式填充模型参数、提升模型兼容性、记住推理级别、子智能体实时跟随模型和推理级别、AI 自主调节档位等。
 - [TINGOD2006/dsh-um-proxy-ondemand](https://github.com/TINGOD2006/dsh-um-proxy-ondemand) — 管理 DSH 的 um-genai provider 所連的本機 UM GenAI 反代（127.0.0.1:8788）的生命週期：llm/stream 請求進來時按需喚醒、閒置一段時間後關閉、提供健康檢查與唯讀狀態端點。另附 DSH 設定頁（埠號、常駐模式、閒置分鐘、解譯器與路徑、UM 帳號、代理金鑰），以及一顆按鈕：把 providers.um-genai 寫進 profile patch 並補上模型清單（全新 profile 沒有這段設定，模型選單本來會是空的）。續期看門狗在上游 token 過期時於隱藏 Windows 桌面完成校園 gateway 登入。反代本體是 um_opencode_setup.py（澳門大學校內發放的單檔工具），外掛在 vendor/ 自帶一份讓全新安裝即可運作，而 ~/.um-opencode/ 那份優先；它仍然不產生 token，token 由登入校園 gateway 取得。需要 Windows（進程發現與閒置關閉依賴 netstat/taskkill，續期依賴 PowerShell 與隱藏桌面）、Python 3.10+ 與澳門大學帳號。
 - [TinyBOOOOM/dsh-cliproxyapi-pro](https://github.com/TinyBOOOOM/dsh-cliproxyapi-pro) — 在 DeepSeek Harness（DSH）中接入 CLIProxyAPI（CPA），支持多账户、模型筛选、原生协议直连、额度查询、生图生视频，选好配置后自动出现在模型选择器中。
+- [titor-jz/dsh-dumate-gateway](https://github.com/titor-jz/dsh-dumate-gateway) — 把本机运行中的 DuMate 接入 DSH：模型选择器里的实时模型表、流式对话、只绑回环的 OpenAI 兼容网关，以及显示状态与本地用量的右侧栏仪表盘。
 - [tkaiz0406/dsh-subagent-route-pin](https://github.com/tkaiz0406/dsh-subagent-route-pin) — 注册一个包装 provider，让被委派的子代理走自己的 LLM 路由——单发子代理经 provider.start，Agent Teams 成员经 startActivation 上的钩子——主 agent 仍用自己的模型。附带设置页选择路由、按专家覆盖的配置文件、报告钩子挂在哪条缝上的能力标志，以及挂载时写下的就绪记录。
 - [TLEWA/dsh-opencode-go-router](https://github.com/TLEWA/dsh-opencode-go-router) — 为 OpenCode Go 的 DeepSeek 会话保持提示缓存命中：在请求发出前预测其缓存命中率，当该请求预计变冷且近期请求偏慢时轮换 x-opencode-session 路由 id，并把空闲的暖 id 放入池中供新会话复用。
 - [tonylee2022/dsh-xai-oauth](https://github.com/tonylee2022/dsh-xai-oauth) — 用设备码 OAuth 登录 xAI Grok 订阅，自动刷新访问令牌，并作为 xai 路由凭据使用，无需 API key。
