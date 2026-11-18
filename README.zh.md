@@ -4987,7 +4987,7 @@ dsh plugin --profile web add dshmarket
 - [romantic123fly/dsh-session-folders](https://github.com/romantic123fly/dsh-session-folders) — 为工作区里的每个新对话在对应目录下创建以对话标题命名的文件夹，把该对话的工作目录切到其中；侧边栏会话菜单新增删除入口，文件夹内仍有文件时会先询问是否一并删除。它与 DieJob/dsh-session-folders 使用同一个 npm 包名、功能相近，两者只启用一个；它的 HTTP 路由没有 DSH 的访问检查。
 - [romany-saad/dsh-plugins#dsh-threads](https://github.com/romany-saad/dsh-plugins/tree/main/packages/dsh-threads) — 针对一句话提问，不打断主对话：在 Web 对话中选中一段文字发表评论，会话自己的模型在旁边的小线程里作答，主对话不受影响。回复者可以读取会话、工作目录，开启后也可联网，但不做任何修改。被评论的段落保持高亮，徽标提示未读回复；需要 Agent 动手时，「发送到对话」把线程交给它。
 - [rongxingda/dsh-prompt-enhance](https://github.com/rongxingda/dsh-prompt-enhance) — 输入框一键提示词增强——把草稿改写为结构化提示词（角色与目标、可执行步骤、输出格式、验收标准、边界条件），支持前后对比、回填与一键撤销；不改变原意、不凭空编造需求。
-- [ruisenbai/dsh-annotation](https://github.com/ruisenbai/dsh-annotation) — 在主会话或侧栏选中文字，直接在原文旁写注解。也可标注文件和代码差异，将多条注解随消息一起发送，并从注解记录跳回原文。
+- [ruisenbai/dsh-annotation](https://github.com/ruisenbai/dsh-annotation) — 在原文旁批注聊天内容、文件和代码差异，汇总发送多条注解，也可在侧栏沿用主会话上下文单独讨论。
 - [Rukawa15/dsh-session-monitor](https://github.com/Rukawa15/dsh-session-monitor) — 只读的本机 DSH 会话监视器：实时任务看板、会话事件尾随、阻塞等待回复、Markdown 导出，可选配合 dsh-im 推送 IM。需要 Python 3 与 zstandard 库；IM 推送需另装 dsh-im。
 - [rumengyihua/dsh-chat-editor-plus](https://github.com/rumengyihua/dsh-chat-editor-plus) — 改掉模型已经记住的那句话：改写或删除模型读到的任意一条消息（正文、思考块、工具结果），或一次清空整轮助手输出；消息本身仍留在会话表层、seq 不变。改动可逆——关闭插件，原对话完整回来；也可从任意一轮分叉会话。
 - [RyanZeeee/dsh-chattree](https://github.com/RyanZeeee/dsh-chattree) — 把 DSH 会话画成一张对话画布：每轮问答是一个节点，任意节点都能分叉出真实的子会话，压缩过的上下文收成一个绿色节点、可以从它继续对话；左侧栏按 DSH 工作区分组列出画布，重命名与 DSH 自己的会话标题同步。
@@ -7419,8 +7419,11 @@ dsh plugin --profile web add dshmarket
 - [zjukop3/dsh-verify-kit#dsh-tablelint](https://github.com/zjukop3/dsh-verify-kit/tree/main/packages/dsh-tablelint) — 生成报告的 Markdown 表格检查：行列错位、分隔行与表头不符、表头重名、只有表头没有数据行。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [zjukop3/dsh-vertical-kit#dsh-adr-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-adr-check) — 架构决策记录（ADR）的检查：状态、逼出选择的背景、那一句决定、包含代价的后果、落选的备选方案——后果只写好处的 ADR 通常没真正权衡过。
 - [zjukop3/dsh-vertical-kit#dsh-agreement-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-agreement-check) — 中文合同的结构检查：甲乙方、日期、金额大小写一致、签署栏、争议解决、违约责任。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [zjukop3/dsh-vertical-kit#dsh-dockerfile-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-dockerfile-check) — Dockerfile 的判定：基础镜像是否固定、是否以 root 收尾、有无密钥写进层、普通复制是否误用 ADD、装包后是否清理索引。反斜杠续行按一条指令算。
+- [zjukop3/dsh-vertical-kit#dsh-env-example-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-env-example-check) — 环境变量示例文件的检查：每个键只放占位符、没有真凭据顺手提交、没有重复键静默覆盖、有注释说明用途——认的占位符形态写在 README 里。
 - [zjukop3/dsh-vertical-kit#dsh-incident-report-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-incident-report-check) — 事故复盘的检查：带时间的时间线、影响与时长、根因而非处置、每个后续行动项都挂负责人——「重启后恢复」是处置，不是原因。
 - [zjukop3/dsh-vertical-kit#dsh-invoice-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-invoice-check) — 中文电子发票的字段检查：统一社会信用代码字符集、不含税+税额=价税合计的勾稽、大小写金额一致、发票号码位数。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [zjukop3/dsh-vertical-kit#dsh-license-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-license-check) — LICENSE 文件的判定：正文是不是可识别的许可证（认得 12 种）、标题与正文是否一致、版权行有没有人和合理年份、模板占位符有没有填。识别按正文短语而非标题。
 - [zjukop3/dsh-vertical-kit#dsh-listing-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-listing-check) — 电商商品信息的检查：标题长度、关键词堆砌、价格有效性、SKU 完整性与重复，输入 CSV/JSON。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [zjukop3/dsh-vertical-kit#dsh-meeting-notes-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-meeting-notes-check) — 会议纪要的书记检查：日期、与会人、决定都有记录，每个行动项都有负责人和截止时间——只验记录格式，不判断会议质量。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [zjukop3/dsh-vertical-kit#dsh-onboarding-check](https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-onboarding-check) — 上手指南的检查：先装什么、一条能粘贴的命令、成功长什么样、失败去哪儿问、要花多久——没写耗时的文档不会被开始打开。代码块按内容判断，显示版本号的 text 块不算命令块。
@@ -9118,7 +9121,7 @@ dsh plugin --profile web add dshmarket
 - [kw12121212/strict-spec-driven#dsh-plugin-strict-spec](https://github.com/kw12121212/strict-spec-driven/tree/main/plugins/dsh-strict-spec) — 在 DeepSeek Harness 中查看和驱动严格规范与工作流文档的插件。
 - [kw78/academic-agent#academic-dsh-plugin](https://github.com/kw78/academic-agent/tree/main/packages/academic-dsh-plugin) — 本地优先的学业助手：事件溯源的课程、任务、计划、提醒、课程资料与 23 个 DSH 工具。
 - [kx121/dsh-github-digest](https://github.com/kx121/dsh-github-digest) — 到点把会话叫醒，翻你关注的 GitHub 仓库和主题，判断哪些变化值得跟，写成一份日报，顺手记下看过什么；侧边栏能翻历史、看 GitHub 热门榜单。只读，不写 GitHub。
-- [l246804/dsh-pstack](https://github.com/l246804/dsh-pstack) — 将 pstack 工作流体系移植到 dsh：58 个 pstack 技能、23 个 playbook、4 个原生工具与 5 个 agent preset，附带技能路由、按角色分配模型与按角色路由的子代理。
+- [l246804/dsh-pstack](https://github.com/l246804/dsh-pstack) — 将 pstack 智能体工作流体系移植到 dsh：随包提供上游技能、playbook 与参考文档，并加上技能路由、按角色配置模型与按角色路由的子代理。
 - [L3n3L/dsh-resume](https://github.com/L3n3L/dsh-resume) — AI 写简历容易，但写完常会遇到模板不合适、排版溢出、页面留白过多，以及改一处导致全局变形等问题。dsh-resume 专注解决手动修改简历繁琐、低效的问题，让 DSH 覆盖从内容撰写、模板选择到排版调优的完整简历工作流，并支持针对不同求职场景产出合适的简历版本。
 - [l956615272-hub/dsh-weekly-report](https://github.com/l956615272-hub/dsh-weekly-report) — 按你给定的样例风格生成日报/周报/月报：按时间窗口挑选 DSH 会话并只取窗口内的回合，可选合并多个仓库中按作者过滤的 git 提交，再由新会话用只读采集脚本读取证据写出 Markdown 报告；成品进入本地报告库。
 - [LaoLiang-agent/HarnessKit](https://github.com/LaoLiang-agent/HarnessKit) — 面向个人开发者与小团队的多 Agent 工程流程框架：七个角色、四档流程、人工审批点、护栏，以及随任务归档持续沉淀规格与经验的共享资产仓库。
