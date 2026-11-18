@@ -1,0 +1,6 @@
+url: https://github.com/CC2027MK2/dsh-watch-phone
+name: CC2027MK2/dsh-watch-phone
+category: voice
+description:
+  en: 'Hold-to-talk chat between an Android smartwatch and the DeepSeek Harness running on the phone it is paired with: the watch uploads a WAV recording to the bridge, which transcribes it locally with the speech-to-text service the host already has, answers through a real DSH session, and returns the reply as WAV for playback; the watch APK ships inside the package and is served at /watch/app.apk.'
+  zh: '安卓手表与手机上的 DeepSeek Harness 之间的按住说话对话：手表把 WAV 录音上传到网桥，网桥用主机自带的语音识别本地转写、经真实 DSH 会话作答，再把回复合成为 WAV 播回手表；手表 APK 随包分发，由 /watch/app.apk 直接下载。'
