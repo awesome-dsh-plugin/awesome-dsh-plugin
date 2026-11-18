@@ -2316,6 +2316,7 @@ dsh plugin --profile web add dshmarket
 - [xueyufu/dsh-sidebar-groups](https://github.com/xueyufu/dsh-sidebar-groups) — 提供本地自动分组、拖动整理、搜索与可配置紧凑底部组件的侧栏插件墙。会替换内置侧栏。
 - [xufu5438-netizen/dsh-boot-video](https://github.com/xufu5438-netizen/dsh-boot-video) — 视频开机片头：启动时全屏播放 mp4，点击或 Esc 跳过，可导入自己的视频，浏览器解不了的编码自动转成 H.264。
 - [xuguangyao/dsh-prompt-deck](https://github.com/xuguangyao/dsh-prompt-deck) — 把每次都得重打的那几句话做成输入框上方的胶囊。它们按使用次数自动重排，带 {{占位符}} 的会先弹框让你填，填完才插入草稿。点击是追加而不是替换，写到一半的草稿不会被冲掉。抽屉里可以搜索、分组、编辑，数据存在 Host 侧 JSON 文件里，可以直接手改。
+- [xuiyun/nqe](https://github.com/xuiyun/nqe) — 提问模式：AI 该问就问、动手前先确认理解，回答可带图、文件和指令。
 - [xwh5/dsh-diff-review](https://github.com/xwh5/dsh-diff-review) — DSH 会话修改审查：追踪 write/edit 工具调用，集成 diff2html 实现 VS Code 风格 side-by-side diff，自动跟随主题，支持子代理聚合与一键撤回。
 - [XWIDE/dsh-draft-keeper](https://github.com/XWIDE/dsh-draft-keeper) — 按会话保住输入框里的图片草稿：在浏览器本地留一份镜像，切回该对话或输入框重新挂载时经官方草稿通道放回去；消息一旦发出或你手动移除，就不再见它回来。
 - [XWIDE/dsh-picflow](https://github.com/XWIDE/dsh-picflow) — 粘贴即编号引用：Ctrl+V 的截图入库后拿到固定编号「图片N」，在输入框旁面板里以缩略图列出，可经 @图片 菜单插入引用；开着「自动插入」时粘贴后直接落到光标处。
@@ -2789,6 +2790,7 @@ dsh plugin --profile web add dshmarket
 - [helloworld1631/dsh-volcengine-usage](https://github.com/helloworld1631/dsh-volcengine-usage) — 一个使用本地控制台登录态、可拖动的 DeepSeek Harness Web 火山引擎 Coding Plan 用量卡片。
 - [HerTa-st/dsh-balance-card](https://github.com/HerTa-st/dsh-balance-card) — 可拖动的余额与用量浮层卡片：点一下角色图片，卡片从图片左侧滑出，再点一下缩回；显示官方 DeepSeek 余额（赠金 / 充值拆分），并按缓存命中、未命中、输出三段计价，汇总本地会话日志的今日 / 近 7 天 / 本月 token 用量与人民币估算花费（按官方峰谷时段逐次计价）。
 - [hgrh6268-lgtm/dsh-session-rate-cards](https://github.com/hgrh6268-lgtm/dsh-session-rate-cards) — 在输入框下方实时显示当前会话的人民币费用，每条消息按其自身时间戳与该条所用模型的峰谷单价计价；设置页可编辑每个模型的六项单价，未定价的模型按 Flash 单价估算并以 ~ 标注。
+- [hifengzy/dsh-plugin-deepseek-peak-hours](https://github.com/hifengzy/dsh-plugin-deepseek-peak-hours) — 输入框底部徽标：实时显示 DeepSeek API 当前按峰时还是闲时计费，点击弹出该时段的价目表——输入缓存命中、输入缓存未命中、输出，元/百万 tokens，分 FLASH 与 PRO 两列。位置在输入框下方统计行、内置「上下文已用」右侧，新会话时在输入框上方选项行。时段遵循官方定价页：北京时间周一至周五（法定节假日除外）09:00-12:00、14:00-18:00 为峰时，周末与法定节假日全天闲时；内置 2026、2027 年法定节假日数据。只在下一个时段边界装一个定时器，不做轮询。纯客户端插件，不发网络请求、无依赖。
 - [hiJoeLee/dsh-session-cost-daily](https://github.com/hiJoeLee/dsh-session-cost-daily) — 给走中转站的 DSH 用户做的费用条：输入框下方常驻本次与今日花费（今日累计含已关闭的会话），峰谷时段一眼可辨，不查官方余额接口。点开看分模型明细，窄窗口优先保留费用读数。改自 KIDLi1412/dsh-session-cost（MIT），与原版使用相同的插件 id 和 /api/session-cost/summary 路由，不能与原版同装。
 - [Hjay1101/dsh-opencode-go-usage](https://github.com/Hjay1101/dsh-opencode-go-usage) — 在设置侧栏与输入框闪电按钮中查看 OpenCode Go 订阅用量：5 小时滚动/每周/每月窗口的进度条与重置时间，DeepSeek 官方模型悬停显示余额，模型清单与上限实时跟随官方数据。
 - [Hjay1101/dsh-plugin-token-usage](https://github.com/Hjay1101/dsh-plugin-token-usage) — GitHub 风格的 token 用量热力图：日/周/月粒度切换、分模型明细与缓存命中率，侧边栏图标悬停即见今日用量；只读本地日志，数据不出本机。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
@@ -7646,6 +7648,7 @@ dsh plugin --profile web add dshmarket
 - [chendefine/dsh-web-search-aggregation](https://github.com/chendefine/dsh-web-search-aggregation) — 聚合式网页搜索提供方：为内置 web_search 工具提供一条按优先级排序的搜索队列，覆盖 AnySearch、TinyFish、Tavily、Brave、Exa、Firecrawl、Jina、SerpApi、Serper 九家服务，每家支持多把 API Key 轮换，失败时逐级回退，并附带实时生效的设置卡片。
 - [Chenghui-Liang/dsh-web-pick](https://github.com/Chenghui-Liang/dsh-web-pick) — 在 DSH 桌面版内置浏览器里加一个元素 / 区域选取层：悬停显示所指元素，点选记下元素、拖框记下矩形，每条当场在选取框旁弹小卡片写说明；整批会写成一段文字插进对话输入框，并把每条裁剪截图作为附件挂上，不会自动发送，检查、改完再自己按回车。仅桌面版可用：Web 版浏览器是 iframe，选取层不会出现。
 - [Chip-G0202/dsh-deepseek-search-account](https://github.com/Chip-G0202/dsh-deepseek-search-account) — 为聊天模型走第三方订阅或网关（例如 OpenCode Go）的 DeepSeek Harness 会话提供基于已登录 DeepSeek 账号的网页搜索与抓取：注册 deepseek-account-search 和 deepseek-account-fetch 两个提供方，用账号 token 调用官方 Search / Fetch API，无需 DEEPSEEK_API_KEY 也能让内置 web_search 与 web_fetch 继续可用。
+- [chnuuh/dsh-browser-annotation](https://github.com/chnuuh/dsh-browser-annotation) — 在 DSH Desktop 内嵌网页上快速引用元素、批量添加备注，并汇总到聊天草稿。
 - [CJYLZS/dsh-browser](https://github.com/CJYLZS/dsh-browser) — 让 agent 在一台真实 Chrome 或 Edge 里干活，侧栏同步镜像，你能看着，也能随时接手：每个对话一台独立的浏览器进程，各自的 profile 与 CDP 端口，登录态不会在对话之间串。它驱动机器上已有的 Chrome 或 Edge，不下载浏览器，不需要配套应用或扩展；侧栏镜像开着时，另一个 Playwright 或 DevTools 也能附加到同一个 CDP 端口。
 - [CloudSen/dsh-browser-annotation](https://github.com/CloudSen/dsh-browser-annotation) — 在内置浏览器中批注页面元素或拖拽框选的区域：紧凑输入框贴着选择位置，属性修改会写入评论，编号标签带悬停预览插入输入框；不截图，也不替换官方 Provider。
 - [clusterstar1229/dsh-sidebar-control](https://github.com/clusterstar1229/dsh-sidebar-control) — 控制 DSH 右栏内置 Browser 的 Agent 插件：快照返回编号控件，支持点击/输入/按键/选择/滚动，按问题检索阅读与变化对比，一次调用最多 12 步，并可切换和关闭多个标签。
@@ -10821,6 +10824,7 @@ dsh plugin --profile web add dshmarket
 - [xiaoxin3309/dsh-backup-rescue](https://github.com/xiaoxin3309/dsh-backup-rescue) — 备份与恢复整个 $DSH_HOME：支持一键或定时生成 ZIP 归档（可选密码加密，仅限手动与智能体发起的备份，定时备份不加密）、提供设置页、给智能体的创建/列出/恢复/清理备份工具，并附带无需安装 DSH 也能运行的独立恢复器（Windows .bat 或 POSIX .sh）。
 - [xiaoyuyu6420/dsh-backup](https://github.com/xiaoyuyu6420/dsh-backup) — 一条命令备份、恢复与迁移 DSH 全部用户数据（~/.dsh），附可视化设置面板：定时自动备份与每日/每周分级保留、sha256 校验、失败自动回滚并回执的加固恢复、分类型子集备份（--types）、凭据脱敏进本机 vault、GitHub 私有仓库同步跨机迁移、宿主起不来也能用的进程外救援通道（备份目录内置零依赖救援网页）。/backup doctor 从已知良好备份体检并定点修复损坏会话日志、轮换前先隔离；migrate-check 迁移预检在升级前静态扫描，预测哪些会话会被新宿主拒绝（冻结清单、文件名代际不匹配、硬链接、旧版凭据布局等）；凭据哨兵在宿主改写前自动存底；智能备份在宿主升级前快照；/backup check-update 与 /backup update 感知并一键更新（先留快照）。恢复链路支持含附件硬链接的归档与超大归档（清单走原始流逐行校验）。当前 npm 版本 0.13.4；覆盖 DSH 0.1.1-rc.2–0.2.0-rc.1，含 0.2.0 起的安装期 peer 闸门。macOS/Linux/Windows。
 - [xiaxingtianxia2-glitch/dsh-auto-exit](https://github.com/xiaxingtianxia2-glitch/dsh-auto-exit) — 关闭 DSH Web UI 后自动退出 CLI 进程（等效 Ctrl+C），支持可配置宽限期与试运行模式。
+- [xin070710/dsh-mc-instances](https://github.com/xin070710/dsh-mc-instances) — 藏在 DSH 右侧栏里的 PCL2 风格 Minecraft 模组测试实例管理器：自动检测 run/<名字>/ 实例，一键启动/停止 Gradle 客户端或服务端，开关 mod 不删文件，查看游戏与 Gradle 日志，新建/删除实例，并生成 IntelliJ 运行配置。
 - [xingyingyuzhui/dsh-updater-ui](https://github.com/xingyingyuzhui/dsh-updater-ui) — 设置页中的 DSH 自助更新器：一键检查/拉取（git pull --ff-only）、自动后台检查、版本对比与更新说明预览，带红点提醒。
 - [xingzhen199186/dsh-insight-tree](https://github.com/xingzhen199186/dsh-insight-tree) — DeepSeek Harness 的运行可观测与插件运维面板：展示 Profile 插件树、Loader 真实 fiber 状态、能力/依赖/兼容性、本轮会话插件活动与上游来源/版本核验，支持一键关闭/启用/更新/卸载，并提供 DSH 未运行时也能打开的独立启动失败诊断页。
 - [xinspark/dsh-win-pwsh7](https://github.com/xinspark/dsh-win-pwsh7) — 报告 DSH 的 pwsh 执行器实际运行的 PowerShell（只认启用中的行，带版本号的商店路径不会被推荐为 pin），并通过脚本点击商店页面或手动商店路径安装由商店管理的 PowerShell 7。只有实际执行器解析到 PowerShell 7+ 时才放行 pwsh 工具；检测到 dsh-ops 时启用其 Compatibility 模式，保留原生 pwsh 与 ops_bash 并存，并隐藏重复的官方工具。Web 界面提供原生状态卡片和配置开关；仅 Windows，零运行时依赖。
