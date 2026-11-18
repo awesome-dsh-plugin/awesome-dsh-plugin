@@ -1,0 +1,6 @@
+url: https://github.com/PIDust/dsh-novel-proofread
+name: PIDust/dsh-novel-proofread
+category: skill
+description:
+  en: 'Offline Chinese web-novel proofreading tool: scans ads, blocked words, garbled text, chapter structure, duplicate paragraphs, punctuation and typos, and runs fully locally with no network access.'
+  zh: 中文网络小说一站式校对：检查广告、屏蔽字、乱码、章节结构、重复段落、标点与错别字，纯本地运行、不上传数据。
