@@ -1,0 +1,7 @@
+url: https://github.com/hexiaobai2012/gongwen-writer
+name: hexiaobai2012/gongwen-writer
+category: docs
+description:
+  en: "Chinese official-document writing assistant for DeepSeek Harness: first-turn research and three outline candidates, GB/T 9704 Word rendering, live polished DOCX, paragraph and sentence review, official-source fact checking, official WeChat accounts, and project memory."
+  zh: "面向 DeepSeek Harness 的中文公文写作助手：首轮检索并给出三个框架候选，按 GB/T 9704 生成 Word，实时《题目_打磨版.docx》，逐段逐句推敲，官方来源事实核查、官方微信公众号与项目记忆。"
+icon: https://raw.githubusercontent.com/hexiaobai2012/gongwen-writer/main/assets/icon-180.png
