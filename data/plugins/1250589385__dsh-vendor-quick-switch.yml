@@ -1,0 +1,6 @@
+url: https://github.com/1250589385/dsh-vendor-quick-switch
+name: 1250589385/dsh-vendor-quick-switch
+category: ui
+description:
+  en: 'A vendor index beside the shipped model menu: click a vendor to jump to its models, with optional remaining-credit badges. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在原版模型菜单旁常驻厂商索引：点厂商直达该厂商模型，可选显示按来源探测的剩余额度徽标。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
