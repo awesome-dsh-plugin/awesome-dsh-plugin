@@ -1,5 +1,5 @@
-url: https://github.com/Zhang-Eli/dsh-github-trending-masonry
-name: Zhang-Eli/dsh-github-trending-masonry
+url: https://github.com/wzvx/dsh-github-trending-masonry
+name: wzvx/dsh-github-trending-masonry
 category: tools
 description:
   en: 'GitHub Trending masonry feed in the DSH sidebar: daily, weekly and monthly boards with category chips, concise project intros, and one-click starring that syncs to your GitHub account or saves to a local collection. It reads github.com and raw.githubusercontent.com, sends README excerpts to your current model and text to Google Translate when a translation is needed, and stars with the GitHub token you connect (or GITHUB_TOKEN / GH_TOKEN); its HTTP routes have no DSH access check.'
