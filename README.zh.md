@@ -1118,6 +1118,7 @@ dsh plugin --profile web add dshmarket
 - [JinYihang1011/dsh-plugins#dsh-refresh-button](https://github.com/JinYihang1011/dsh-plugins/tree/main/dsh-refresh-button) — 仅 Windows，需 PowerShell 与附带的 install.ps1。在模型选择左侧加一个「界面」菜单：刷新界面、重启 DSH、关闭 DSH，三项都即点即执行；Windows 版 DSH 没有内置的重载或重启入口，这里补上。
 - [JinYihang1011/dsh-plugins#dsh-ui-tweaks](https://github.com/JinYihang1011/dsh-plugins/tree/main/dsh-ui-tweaks) — 一张样式表加两个很小的 DOM 补丁，把第三方侧栏入口拉回与宿主一致：行高、内边距与图标尺寸对齐，选中底色统一，并让定时任务面板与宿主面板互斥、不再互相覆盖。
 - [jiongboy/dsh-table-copy](https://github.com/jiongboy/dsh-table-copy) — 给 DSH Web 里每张 Markdown 表格加一条悬停工具条：一个按钮把表格复制成 Markdown，另一个按钮把它按当前主题背景截成 2 倍图 PNG。
+- [jiqinga/dsh-folding-Windows](https://github.com/jiqinga/dsh-folding-Windows) — 独立折叠 DeepSeek Harness 侧边栏的功能区与工作区，两个区域各自记住展开状态。
 - [JiuRiWu/dsh-restart](https://github.com/JiuRiWu/dsh-restart) — 给 DSH Desktop 侧边栏底部加一个「重启」按钮：弹出与托盘「退出 DeepSeek Harness」完全相同的原生确认框，确认后优雅关闭并重新拉起。注意：本插件只负责画这个按钮，必须同时应用同一仓库 shell-patch/ 里的外壳补丁，且该补丁要在 DSH 关闭时由 DSH 之外的脚本执行。单独安装插件时按钮为禁用状态，悬停提示会说明原因。配套外壳补丁仅支持 Windows，会改写已安装的 app.asar。
 - [jiuyuechuwuhao/dsh-canvas-preview](https://github.com/jiuyuechuwuhao/dsh-canvas-preview) — Conversation Canvas 标签页：实时预览工作区内的 HTML artifact，并支持本地导出 PNG/JPG/SVG（`npx dsh-canvas-preview`）。
 - [Jiyr0119/dsh-workspace-explorer](https://github.com/Jiyr0119/dsh-workspace-explorer) — 独立单功能的工作区文件树面板：会话头部图标打开当前工作区目录树的动画弹窗；点击或拖拽文件即可把引用插入输入框；自带搜索、行内预览、实时设置与中英双语；零配置，一条命令即装即用。
@@ -2841,6 +2842,7 @@ dsh plugin --profile web add dshmarket
 - [jakehemmerle/dsh-usage-limits](https://github.com/jakehemmerle/dsh-usage-limits) — 在 DSH 中显示 OpenAI 与 Codex 的用量配额：Web 端用环形表与面板展示 5 小时 / 7 天窗口，dst 端在状态行显示同样的窗口。
 - [jalilahmad/deepseek-peak-indicator](https://github.com/jalilahmad/deepseek-peak-indicator) — 显示当前 DeepSeek API 高峰或非高峰计费时段，以及距离下一次切换的倒计时。
 - [Jannchie/dsh-bill](https://github.com/Jannchie/dsh-bill) — 按在线价格目录计价的费用统计（models.dev + OpenRouter，8000+ 模型，每次调用按自身时刻定价）：每轮成本行、把花费归因到工具输出 / 模型输出 / 系统提示词 / 终端命令的「费用」标签页、预算、月度预测、约 166 种实时汇率货币，以及 bill_stats agent 工具。
+- [jasocheung/dsh-qwen-plan-usage](https://github.com/jasocheung/dsh-qwen-plan-usage) — 在 DSH 侧边栏显示千问 AI 平台 Token Plan 剩余 Credits、用量百分比与重置时间，并引导模型自动从浏览器获取控制台 cookie。
 - [jeff072333/dsh-live-spend](https://github.com/jeff072333/dsh-live-spend) — 输入框上方浮动一张卡片，显示本次对话花费、账户余额与当前峰谷时段，并在每条回答末尾显示该轮消耗。
 - [jerodji/dsh-plugin-turn-cost](https://github.com/jerodji/dsh-plugin-turn-cost) — 在每轮对话底部显示本轮（含子代理）与累计会话花费（人民币或美元），并在输入框工具行提供会话预算按钮、余额提醒、全部会话计费统计与 Excel 导出。
 - [JessenReinhart/dsh-tokenslash](https://github.com/JessenReinhart/dsh-tokenslash) — 基于 Jev System One 分流、动态工具裁剪与子代理路由的智能 Token 优化插件。
@@ -6648,6 +6650,7 @@ dsh plugin --profile web add dshmarket
 - [liuhange789/dsh-clinic-intake](https://github.com/liuhange789/dsh-clinic-intake) — 诊前信息结构化：患者候诊时回答六个问题，插件把回答整理成 300 字内的就诊摘要（主诉部位/性质/病程、用药与频次、过敏史、既往史、就诊原因标签），可在 Web 界面会话头部的「候诊采集」向导线完成，也可生成一个离线单文件 HTML 填写页给候诊区平板使用。纯规则提取、本地处理，自动隐去手机号、身份证号、邮箱与姓名标签，不做诊断、分诊或用药建议。
 - [liuhange789/dsh-contract-redline](https://github.com/liuhange789/dsh-contract-redline) — 合同风险速查：粘贴采购/租赁/服务合同全文，逐条扫描出高风险条款、权利义务不对等条款与缺失的关键条款，每条附原文摘录和一句白话解释。纯规则匹配、本地处理，不联网、不做 OCR；只提示条款风险，不出具法律意见，不判断合同是否有效，也不建议签或不签。
 - [liuhange789/dsh-mcp-lazy](https://github.com/liuhange789/dsh-mcp-lazy) — MCP 工具按需加载。会话工具集里只保留 coreTools 白名单（最多 5 个）中的 mcp__* 工具，其余 MCP 工具定义经由会话级 tools.restrict() 真正从请求中移除，模型调用 lazy_load_tool 后才装回；tools/pre-execute 闸门把未加载工具的调用拒绝成「请先装载」的提示，会话结束自动重置。
+- [DSH MCP Tool Schema Diff](https://github.com/liuhange789/dsh-mcp-tool-schema-diff) — MCP 工具契约的破坏性变更预警。从运行中的 tools/change 注册表里，为每个 MCP server 记住最近三代工具定义并做结构化 diff：工具删除、参数删除、可接受类型收窄、新增必填、枚举收窄记为 breaking；默认值与约束变化记为 warning；新增工具/可选参数记为 info。静默窗口防抖吸收 mcp-client 的重新同步抖动，首次连接和重连都不会误报。通过会话通知加 `/mcp-diff` 输出，快照存 `$DSH_HOME/mcp-schema-cache`（每个 server 保留 3 个版本），只读注册表，不写其他状态。
 - [liuhange789/party-eco-agent](https://github.com/liuhange789/party-eco-agent) — 面向党建引领街道产业生态场景的轻量规则工具：生成企业画像卡片、按品类与数量匹配供需、规整政策记录字段（不解析原文）、按优先级给出诉求处理人角色与预计天数；不调用任何外部系统。
 - [LiuJiaCheng11/dsh-postman](https://github.com/LiuJiaCheng11/dsh-postman) — 用 9 个工具在 dsh 里管理 Postman 云端集合——列出、浏览、新增（单个或批量）、修改、删除接口，导出或整体覆盖集合。
 - [liwei9745/dsh-genbox-plugin](https://github.com/liwei9745/dsh-genbox-plugin) — 通过本地 GenBox 服务生图、改图、生视频，并用 ffmpeg 本地剪辑；自带零成本测试台。
@@ -7666,6 +7669,7 @@ dsh plugin --profile web add dshmarket
 - [BuyukBang/dsh-browser-bookmarks](https://github.com/BuyukBang/dsh-browser-bookmarks) — 侧边栏浏览器的书签管理器：工具栏星标按钮，下拉列表一键打开书签，支持就地编辑与排序。
 - [cfanmaoli/kimi-webbridge-dsh](https://github.com/cfanmaoli/kimi-webbridge-dsh) — 自动安装并启动 kimi-webbridge 桥接守护进程（含 SHA-256 校验），注册一套 25 个动作的技能，通过本地桥接驱动用户的真实浏览器。
 - [Chaos-Paradox/dsh-search-proxy](https://github.com/Chaos-Paradox/dsh-search-proxy) — 提供 SearXNG 网页搜索，支持托管本地运行环境、连接已有实例、Web 设置及可选的 DSH 进程代理。
+- [chendaleiQ/dsh-chrome](https://github.com/chendaleiQ/dsh-chrome) — 本地 Chrome 操控：标签页列表、页面快照、导航、截图、填表与 JS 取值，走回环桥。
 - [chendefine/dsh-web-fetch-playwright](https://github.com/chendefine/dsh-web-fetch-playwright) — 为内置 web_fetch 工具提供 Playwright/CDP 后端：用真实浏览器渲染网页，经 Readability + DOMPurify 降噪后返回 Markdown。
 - [chendefine/dsh-web-search-aggregation](https://github.com/chendefine/dsh-web-search-aggregation) — 聚合式网页搜索提供方：为内置 web_search 工具提供一条按优先级排序的搜索队列，覆盖 AnySearch、TinyFish、Tavily、Brave、Exa、Firecrawl、Jina、SerpApi、Serper 九家服务，每家支持多把 API Key 轮换，失败时逐级回退，并附带实时生效的设置卡片。
 - [Chenghui-Liang/dsh-web-pick](https://github.com/Chenghui-Liang/dsh-web-pick) — 在 DSH 桌面版内置浏览器里加一个元素 / 区域选取层：悬停显示所指元素，点选记下元素、拖框记下矩形，每条当场在选取框旁弹小卡片写说明；整批会写成一段文字插进对话输入框，并把每条裁剪截图作为附件挂上，不会自动发送，检查、改完再自己按回车。仅桌面版可用：Web 版浏览器是 iframe，选取层不会出现。
@@ -7909,6 +7913,7 @@ dsh plugin --profile web add dshmarket
 - [ConsoleSun/Gemini-Eyes](https://github.com/ConsoleSun/Gemini-Eyes) — 接入 gemini.google.com 的 MCP 桥：图片/视频视觉识别、Imagen 生图、Veo 生视频与历史对话管理，复用浏览器登录态，无需 API Key。
 - [copylee711/dsh-image-gen](https://github.com/copylee711/dsh-image-gen) — 图像生成：侧边栏画廊页面和三个 Agent 工具（paint_image、paint_images、edit_painting）；预置 ModelScope、Google Gemini、OpenAI、硅基流动、火山方舟 Seedream、阿里云百炼、xAI、智谱等服务商，也可接入任意 OpenAI 兼容端点，每个服务商可单独设置代理。
 - [corrinehu/dsh-chat-imagine](https://github.com/corrinehu/dsh-chat-imagine) — 在 DSH 聊天窗口自动调用生图工具（API 渠道，或本机 CLI：已支持 mmx / codex / agy）并展示图片，也支持利用对应 CLI 识别图片。
+- [cv588888888888888888888ju/dsh-image-read](https://github.com/cv588888888888888888888ju/dsh-image-read) — 不接视觉模型的确定性截图读取：把有框图表里的曲线拟合成方程、R² 与数据点（另出 CSV 表、重绘 SVG、overlay），定位滑块验证码缺口并给出匹配分，用特征估计旋转角，把单条曲线取成有序点列，并做链式图片算子。
 - [Daive1119/local-ocr](https://github.com/Daive1119/local-ocr) — 为纯文本模型注册一个 `ocr` 工具：调用仓库自带的离线脚本识别单张图片或 PDF 并返回文字——Windows 原生 OCR 优先，其次 RapidOCR，最后 Tesseract；识别过程在本机完成，不发网络请求、不需要 API key。需自备 PATH 上的 Python 3.11 并 `pip install winocr pillow`（winocr 为首选引擎，RapidOCR 与 Tesseract 为兜底）。图片返回逐行结果，PDF 返回逐页结果。
 - [dami9527/dsh-image-pathify](https://github.com/dami9527/dsh-image-pathify) — 让纯文本模型也能处理聊天贴图，提供原生视觉体验，支持批量看图，走内置 OpenAI 兼容识图工具 analyze_image；具备视觉能力的模型不受影响。
 - [DamonKoy/dsh-web-ui#dsh-tool-describe-image](https://github.com/DamonKoy/dsh-web-ui/tree/main/packages/dsh-tool-describe-image) — describe_image 模型工具：让纯文本模型通过视觉语言模型获得图像理解能力。
@@ -9514,6 +9519,7 @@ dsh plugin --profile web add dshmarket
 - [upJiang/dsh-cron-job](https://github.com/upJiang/dsh-cron-job) — DeepSeek Harness Agent 定时任务：创建前强制完成端到端测试，提供运行历史，并通过九种通讯渠道双向收发消息。
 - [usersx/dsh-automation-center](https://github.com/usersx/dsh-automation-center) — 面向 Workspace 调度 Agent 任务，每次运行创建全新 Result Session 并持久保留审计历史；原版 DSH 使用会话标签，存在对应 Slot 时使用全局 Shell 页面。
 - [vaniawang/dsh-trigger-hub](https://github.com/vaniawang/dsh-trigger-hub) — DeepSeek Harness 的事件源插件：cron、webhook、文件监听与确定性 procedure，带账本、控制台和并发上限。
+- [vicfei/dsh-TradingAgents#npm](https://github.com/vicfei/dsh-TradingAgents/tree/main/npm) — 多智能体投研议院：分析师→多方→空方→风控→组合经理辩论，主张全带证据标签、PASS 弃权一等公民，巴菲特/芒格/林奇/伍德客座评辩（会真实分裂），零 key 行情（CBOE 报价/K线/期权隐含波动 + SEC 10-K + nasdaq 新闻，绕开雅虎限流）喂给可审计的 IC-MEMO——一场 6-10 次调用约 40 秒。
 - [vicTop-cw/FIST-Mbt](https://github.com/vicTop-cw/FIST-Mbt) — 把 FIST 指挥官任务编排做成 MCP 服务：七态任务生命周期、层级拆解、DAG 排程、自驱闭环与 Omega 强验证，账本落在一个 SQLite 里；自带预构建 CLI，安装无需构建；需 Node 24+。
 - [victorzhong0110/dsh-code-reference](https://github.com/victorzhong0110/dsh-code-reference) — 在开发前检索本地代码与 GitHub/npm 的可复用实现，评估复用与重写成本，并检查架构耦合。
 - [victorzhong0110/dsh-outcome-loop](https://github.com/victorzhong0110/dsh-outcome-loop) — 为 DSH 保存本地任务结果账本，依据确定性证据验证验收标准，记录用户处置与 token 用量，并支持摘要绑定导出。
