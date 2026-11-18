@@ -1,0 +1,7 @@
+url: https://github.com/TecFancy/dsh-lingualab
+name: TecFancy/dsh-lingualab
+category: tools
+description:
+  en: 'Intensive-listening practice for media already in the workspace: sentence-by-sentence drills with speed, looping, shadowing and recording, kept sentences with three grades, and a notes.md per episode written back to disk.'
+  zh: '把工作区里已有的音视频变成逐句精听练习：变速、循环、跟读与录音，收藏的句子按三档评级，每集写一份 notes.md 回磁盘。'
+icon: https://raw.githubusercontent.com/TecFancy/dsh-lingualab/main/assets/icon-512.png
