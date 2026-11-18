@@ -1,8 +1,6 @@
-- [x] I added **one file** at `data/plugins/qisisiqi__dsh-bili-banghui.yml` — that single file is the whole submission.
-- [x] My repo's `package.json` declares **`dsh.bundle`** (`dsh.bundle.patch: ./cordis.patch.yml`, plus `dsh.client` for the browser half).
-- [ ] My repo is at least **1 day old** — created 2026-11-18T06:06:21Z, so this gate will clear on 2026-11-19.
-- [x] `category: workflow` — it is a reply-drafting and sending workflow.
-- [x] Description states what the plugin does, no superlatives.
-- [x] My repo has the `dsh-plugin` topic.
-
-The plugin is a Bilibili reply inbox: it pulls "replies to me", groups them by person and thread, shows the thread with the original post, drafts three options after classifying the other person's tone (agree / friendly / neutral / argumentative / hostile), and sends only after a confirmation dialog. It keeps credentials, persona and API key in a local `data/` folder and never uploads them. Built-in 62 Bilibili emoji; no runtime dependencies beyond Node/DSH.
+url: https://github.com/qisisiqi/dsh-bili-banghui
+name: qisisiqi/dsh-bili-banghui
+category: workflow
+description:
+  en: A Bilibili reply inbox that groups replies to you by person and thread, drafts three options based on the other person's tone, and posts only after you confirm. Credentials, persona and API key stay in a local data folder.
+  zh: B站回复收件箱：把「回复我的」按人与楼层聚合成会话，AI 按对方态度出三条候选，确认后才发出；凭证、人设与 API Key 只存本地 data 目录。
