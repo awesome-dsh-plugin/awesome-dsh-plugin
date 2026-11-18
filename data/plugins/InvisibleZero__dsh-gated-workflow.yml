@@ -1,0 +1,6 @@
+url: https://github.com/InvisibleZero/dsh-gated-workflow
+name: InvisibleZero/dsh-gated-workflow
+category: workflow
+description:
+  en: 'A four-state workflow with program-level gates for DSH agents: discussion blocks file writes, implementation blocks out-of-scope edits, and verification requires evidence before checkmarks.'
+  zh: '带程序级门禁的四态工作流：讨论中拦写文件、实现中拦越界改动、验收打勾必须带证据。'
