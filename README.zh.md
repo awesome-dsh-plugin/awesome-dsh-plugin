@@ -5109,6 +5109,7 @@ dsh plugin --profile web add dshmarket
 - [WangLemna/dsh-recycle-bin](https://github.com/WangLemna/dsh-recycle-bin) — 把 DSH 会话删入可恢复的回收站——子会话随其父会话作为一棵树处理，支持批量归档、恢复与彻底删除，只有彻底清除才会真正销毁数据。
 - [wangxiaocuo/dsh-session-trash](https://github.com/wangxiaocuo/dsh-session-trash) — DeepSeek Harness 的会话回收站：把冷会话从侧边栏移入可恢复的回收站，保留期（默认 30 天）内可恢复，也可以永久删除日志。含隐藏 subagent 子会话的条目按整树移入、整树恢复；移入后 DSH 共享 Toast 提供撤销；设置页支持搜索、排序、勾选批量恢复与清空回收站。
 - [waning-sun/dsh-session-wake](https://github.com/waning-sun/dsh-session-wake) — 按需唤醒 DSH 里的对话并给它派活：可以挑一个或几个会话在 DSH 启动时自动唤醒，为每间会话单独指定 provider、模型与思考强度，还能用 session_task 工具叫醒另一个对话——把内容递过去、等它干完、再把答复原文带回来；另外提供 list_sessions、wake_session 两个工具和一个「会话唤醒」设置页，不依赖 QQ 或任何桥接。三个工具对所有 agent 开放，能触达 profile 里的任意会话；自动唤醒列表默认为空，每次 DSH 启动都会向对应会话投递其开机提示词；session_task 默认最多等待 300 秒。
+- [Wanqiu12345/dsh-session-matrix](https://github.com/Wanqiu12345/dsh-session-matrix) — 最多四栏原生会话并排运行，梳理子代理关系，在上下文自行压缩前把工作交接出去。
 - [weibaohui/dsh-continue](https://github.com/weibaohui/dsh-continue) — 自动续跑：agent 会话中断后自动续上，规则表按失败类型（限流/额度/鉴权/上下文超限/崩溃孤儿）路由——自动退避重试、换模型继续、压缩上下文后继续或止损通知，规则可视化编辑，全程活动日志。
 - [weibaohui/dsh-favorites](https://github.com/weibaohui/dsh-favorites) — 会话收藏夹：把任意会话收藏进浏览器收藏夹式的管理面板——左侧会话行一键收藏/星标，主面板支持文件夹分门别类、备注、自定义显示名、一键继续会话、Fork 新会话、会话基本统计，外加一张清晰展示会话派生关系的 fork 关系图。
 - [weibaohui/dsh-smart-title](https://github.com/weibaohui/dsh-smart-title) — 会话智能标题：每轮对话结束后用一次独立的辅助 LLM 调用对「用户消息+助手回答」的完整转写做总结，标题跟随会话真实主题而不是复述第一句话；首条消息即时出题、内置标题失败在后续轮次自动重试、用户手动改名绝不被覆盖、自动跳过子代理与 fork 会话。
@@ -9571,6 +9572,7 @@ dsh plugin --profile web add dshmarket
 - [IKUN798ProMax/dsh-git-tree-GUI](https://github.com/IKUN798ProMax/dsh-git-tree-GUI) — DSH 的 Git 面板：分支树与逐分支提交记录、WebStorm 风格的日志 / 提交 / 储藏窗口、分支右键菜单（签出、新建分支、更新、抓取、推送、合并、删除）、整文件的左右并排差异与差异块跳转，以及未提交文件的直接编辑；工作区根目录不是仓库时会扫描子目录里的仓库。
 - [imcaibaicai/dsh-github-push](https://github.com/imcaibaicai/dsh-github-push) — 一句话把本地目录推到 GitHub：自动探测代理，令牌从系统凭据管理器直读并从每行日志里清洗掉，推送前做敏感信息闸门，推送后回读远端分支 SHA 校验。
 - [ItQianChen/dsh-github-flow](https://github.com/ItQianChen/dsh-github-flow) — 把本机 GitHub CLI (gh) 包装成 Agent 工具集（PR、Issue、Actions 运行、仓库检索与原始 API 调用），另提供 /gh status 与 /gh help 两个斜杠命令，以及全局仓库驾驶舱和会话工作区两个 Web 面板。
+- [jacky-aj/dsh-plugin-daily-report](https://github.com/jacky-aj/dsh-plugin-daily-report) — 按天汇总多个 Git 仓库与分支的提交和本地文档，可由 AI 生成摘要，并导出 XLSX、Markdown、CSV 或 HTML 日报。
 - [jamen-jiang/dsh-qoder-worktree](https://github.com/jamen-jiang/dsh-qoder-worktree) — Qoder 风格的工作区模式与分支 chip，选择分支即挂起意图，发送第一条消息时自动创建独立 git worktree 并把会话迁入其中。仅 Windows：放行写入依赖 PowerShell Set-Acl，其他平台进 Worktree 会报错并留在主检出。
 - [JasonFreeLab/dsh-command-code-review](https://github.com/JasonFreeLab/dsh-command-code-review) — 注册 /code-review 斜杠命令，五个并行审查视角、逐发现置信度打分，同时支持拉取请求与本地代码审查。
 - [JayYuen666/dsh-ocr-review](https://github.com/JayYuen666/dsh-ocr-review) — 把外部 `ocr`（open-code-review）CLI 包成七个模型工具——单次评审、全树扫描、确定性的文件选择与规则脚手架、带评论筛选 / 比较 / 导出的会话历史、规则诊断与只读 LLM 目录查询——参数形状、类型与枚举由插件自己把关，并把「OCR 发现了什么」与「这次跑有没有覆盖完选中的文件」分成两套口径回报；设置卡从宿主设置目录选择 provider/model、编辑该 CLI 的 `mcp_servers` JSON、报告 `ocr auth` 状态、切换 ChatGPT 模型并测量已装 CLI 的版本。外部 CLI 需要单独安装，插件自己从不安装或升级它。
