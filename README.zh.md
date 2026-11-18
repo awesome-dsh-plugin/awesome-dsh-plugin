@@ -3979,7 +3979,7 @@ dsh plugin --profile web add dshmarket
 - [loveandbeepbrother/dsh-galatea#agent-sdk](https://github.com/loveandbeepbrother/dsh-galatea/tree/main/agent-sdk) — 让 DSH 会话跑在本机 Claude Code 上（Opus、Sonnet），带着 Galatea 的记忆和工具；需在 profile 里选登录方式（推荐 Anthropic API key，或沿用本机 Claude Code 已有登录）。需要先装 Galatea 框架。
 - [lovezi0/dsh-model-extension](https://github.com/lovezi0/dsh-model-extension) — 模型+ 设置页:按模型声明推理挡位、输入模态与兼容参数(走官方 settings 管线保存),支持 models.dev 元数据预填与 API 密钥管理。
 - [loyalchiiina/dsh-deepseek-web-free](https://github.com/loyalchiiina/dsh-deepseek-web-free) — y-wi/dsh-deepseek-web 的 fork：1.0.44 起只保留悬浮球与侧边栏打开官方 chat.deepseek.com 网页面板，已移除在 DSH 中直接选 DeepSeek Web 模型对话的功能；选中文字右键投送到网页端输入框的功能保留。在网页面板里用官方页面登录一次即可。⚠️ 已出现真实账号封禁案例（作者测试账号因违反用户规范被禁言至 2026-11-20 16:21）；1.0.44 之前版本有较高封号风险，作者不承担任何责任。适配 DSH 内核 0.2.2-rc.1。不能与 y-wi/dsh-deepseek-web 同装。
-- [loyalchiiina/dsh-model-fold](https://github.com/loyalchiiina/dsh-model-fold) — 三级级联模型面板（来源 → 模型 → 思考强度），支持识图与思考强度一键开关、能力图标，以及逐模型真实测活并把结果持久化保存。适配 DSH 内核 0.2.2-rc.1。
+- [loyalchiiina/dsh-model-fold](https://github.com/loyalchiiina/dsh-model-fold) — 三级级联模型面板（来源 → 模型 → 思考强度），支持识图与思考强度一键开关、能力图标，以及逐模型真实测活并把结果持久化保存。适配 DSH 内核 0.2.2-rc.3。
 - [lsdt45/dsh-model-config](https://github.com/lsdt45/dsh-model-config) — 在 DSH 设置面板为 llm-pi-ai 与官方 DeepSeek 提供方按模型配置思考开关与思考等级，并为各模型配置多模态输入类型。
 - [lucagiftzek/dsh-request-image-cap](https://github.com/lucagiftzek/dsh-request-image-cap) — 把发给模型的每张图片按单边像素上限（默认 2000 px）压缩：通过包装 attachments.readImageRequest 实现，修复 Anthropic 多图请求报错，且不改动已存储的图片。
 - [lucagiftzek/dsh-subagent-tiering](https://github.com/lucagiftzek/dsh-subagent-tiering) — 为未指定 provider/model/effort 的 subagent 调用补上更便宜的同类路由（例如 Opus → Sonnet 5.5 @ medium、Qwen max → Qwen flash）；显式指定的选择与 subagent_fork 保持不动。需在设置里启用 subagent-model-selection 且目标路由在其 allowedModels 中，否则插件不产生任何效果。
@@ -4299,7 +4299,6 @@ dsh plugin --profile web add dshmarket
 - [HerTa-st/Herta-dsh](https://github.com/HerTa-st/Herta-dsh) — 把 Herta（黑塔）作为 DeepSeek Harness 智能体装入：携带人格与记忆提示词段的 preset、六个记忆与语音工具、区分内心与发言的叙述层、80 条随包语音、本地与 MiniMax 两条语音合成链路，以及两个用她自己的组件渲染会话的对话视图。
 - [HH56715/qq-bridge#qq-persona-switch](https://github.com/HH56715/qq-bridge/tree/main/plugins/qq-persona-switch) — 在 qq-bridge 角色卡与 dsh-persona-dafeiyu 人设之间切换，保证只生效一个；可全局生效，也可每个 QQ 会话各配一个。需 qq-bridge 已运行。
 - [hj9178/dsh-ottosmother](https://github.com/hj9178/dsh-ottosmother) — 给模型一份私密黑话词表：用户写「滚木」按「没有」理解、写「棍母」按「不存在」理解；模型要表达这些含义时，自己判断是否用词表里的词把整句组织得自然通顺。只注入一个 system prompt 段落，不改写输入输出；词表按分类存在 YAML（moba/fps/comments/ai/dev/private），设置页里可开关词表、切换提醒强度、直达词表目录。
-- [hsushjk/dsh-aurachat](https://github.com/hsushjk/dsh-aurachat) — 让 agent 以人设住进自建网页，分主人和客人两种账号：会随着时间回落到平常值的心情、可查看可修改的记忆、表情库、客人能评论的空间动态、闲置搭话、语音条、语音识别与朗读。内置网页服务默认监听 0.0.0.0:2332；对外暴露端口前请先创建主人账号，客人账号只能由主人创建。
 - [hsushjk/dsh-auralife](https://github.com/hsushjk/dsh-auralife) — AuraLife 把 DSH 变成一条自托管的数字生命：三种慢变量激素（多巴胺、皮质醇、血清素）决定它的状态和话风；记忆层把聊天变成事件和事实，带版本链与遗忘曲线；发现缺少能力时它会自己写「器官」（工具），写完即热加载，也能热卸载。支持文字、图片、表情、语音（TTS 与语音识别）和文件上传；网页空间里有日记和留言评论，它还会按自己的安排主动搭话。内置网页服务默认监听 0.0.0.0:2332，对外暴露端口前请先创建主人账号。
 - [huaizhuanghub/dsh-persona-dafeiyu](https://github.com/huaizhuanghub/dsh-persona-dafeiyu) — 把选中的人设注入系统提示词的 DeepSeek Harness 插件：内置三套人设，支持从文件导入或粘贴自定义人设，并可按 profile 全局生效或按会话单独选择（输入框上方有切换条）。
 - [huajikano/bibao#bibao-brain](https://github.com/huajikano/bibao/tree/main/bibao-brain) — 一个按计算神经科学定律运行的拟人认知内核：全局工作空间、情感评估、双系统记忆与夜间归纳，可接管 QQ 群聊（需自备 snowluma 客户端，默认关闭）。
