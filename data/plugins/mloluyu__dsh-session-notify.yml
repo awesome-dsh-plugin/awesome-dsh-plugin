@@ -1,0 +1,6 @@
+url: https://github.com/mloluyu/dsh-session-notify
+name: mloluyu/dsh-session-notify
+category: notify
+description:
+  en: 'Focus-aware notifications for top-level sessions: turn ends (complete, error, cancelled, waiting for input, output limit) and mid-run approval or question requests — silent while you watch the session that triggered it, a top-right in-app card when the page is focused elsewhere, a system notification only when the page is unfocused.'
+  zh: '面向顶层会话的焦点感知通知：回合结束（完成、出错、取消、等待输入、达到输出上限）与运行中的授权、提问请求——正看着触发会话时不打扰，页面聚焦但开着别处时右上角弹应用内卡片，页面失焦才发系统通知。'
