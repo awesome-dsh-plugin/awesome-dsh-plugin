@@ -3,4 +3,4 @@ name: kiritoko1029/dsh-multi-agent
 category: workflow
 description:
   en: 'Route independent tasks to DSH, Codex, Kimi Code, or Antigravity subagents using configurable natural-language rules, with resumable sessions and a shared task panel. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
-  zh: '按可配置的自然语言规则将独立任务派发给 DSH、Codex、Kimi Code 或 Antigravity 子代理，支持会话续接和统一任务面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+  zh: '按可配置的自然语言规则将独立任务派发给 DSH、Codex、Kimi Code 或 Antigravity 子代理，支持会话续接和统一任务面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
