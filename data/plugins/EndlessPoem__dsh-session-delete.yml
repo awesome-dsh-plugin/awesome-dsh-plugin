@@ -1,0 +1,6 @@
+url: https://github.com/EndlessPoem/dsh-session-delete
+name: EndlessPoem/dsh-session-delete
+category: session
+description:
+  en: 'Adds a two-click Delete session row to the session menu: stops the work, archives, detaches the session from every workspace, unpins it, then deletes the log and projection cache; when the log is still held open, the earlier steps are rolled back so no half-deleted session is left behind.'
+  zh: '在会话菜单加一行两次点击确认的「删除会话」：停止工作、归档、解除工作区归属、取消置顶，再删除日志与投影缓存；日志仍被占用时回滚前面每一步，不留半删除状态。'
