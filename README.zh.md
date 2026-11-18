@@ -2568,6 +2568,7 @@ dsh plugin --profile web add dshmarket
 - [02Muller25/dsh-api-balance](https://github.com/02Muller25/dsh-api-balance) — 输入框下方实时显示 DeepSeek API 账户余额，支持手动刷新与自定义间隔自动刷新。
 - [0disoft/dsh-ci-diet](https://github.com/0disoft/dsh-ci-diet) — 找出被浪费的 GitHub Actions 运行时间，并提出小而可审查的工作流补丁；任何修改都需要明确批准，并提供用于分析规则、历史上限、存储和成本估算的 DSH 设置页面。
 - [0x7A7A6572/dsh-forge-studio#plugin-usage-billing](https://github.com/0x7A7A6572/dsh-forge-studio/tree/main/packages/plugin-usage-billing) — dsh 用量与费用视图：从既有会话日志聚合真实 token 用量，按事件发生时刻的价格写时锁定费用；侧栏卡片或输入框胶囊展示本月/今日花费与预算进度，设置页另有概览、趋势、明细三页。
+- [1010231693/dsh-api-costbar](https://github.com/1010231693/dsh-api-costbar) — 一个可以快速查看云端模型api费用的插件，支持手动切换厂商，支持调节刷新频率。
 - [1015677515/dsh-cyberegg](https://github.com/1015677515/dsh-cyberegg) — 一个侧栏面板，显示本机已配置的全部白嫖平台的剩余积分与今日签到状态（Loomy、MiniMax Code、Trae、Qoder、Raccoon、WorkBuddy、CodeArts、WPS 灵犀、MobileClaw）；数据通过各平台既有的插件读取，另带两个只读读取器。只做查询与手动签到：不提供登录界面、不保存凭据，且手动签到只有在实测余额确实增加时才显示成功。
 - [121212165/dsh-plugin-quota](https://github.com/121212165/dsh-plugin-quota) — 实时用量仪表：每回合向系统提示注入一行 token/花费仪表，含下一步预估，以及模型可以自刹的两条预测——第几步撑满上下文、第几步烧穿预算。/qm 面板自查，零配置即用，价格表可选，并向家族发布 summary.json 预算契约供兄弟插件读取。
 - [133563825as-ai/dsh-api-dashboard](https://github.com/133563825as-ai/dsh-api-dashboard) — DSH Web GUI 的多平台 API 余额与用量看板：在输入框下方显示 DeepSeek、智谱 GLM、Kimi、阶跃星辰、硅基流动、MiniMax、OpenRouter、Novita、xAI 的余额，估算本会话与子代理消耗并按 DeepSeek 峰谷计价，自动发现 DSH 设置里已配置的中转站，另有一个可拖拽的大肥鱼挂件。
@@ -6935,6 +6936,7 @@ dsh plugin --profile web add dshmarket
 - [Qingzhou-Joshua/dsh-dev-toolbox](https://github.com/Qingzhou-Joshua/dsh-dev-toolbox) — 侧边栏开发者工具箱，内置 13 组共 65 个纯浏览器端工具，覆盖 JSON、代码格式化、URL、编码解码、哈希、加密、文本与数字日期处理，零网络请求；面板以页签形式挂在 dsh-better-sidebar 上，需先安装该插件。
 - [Qinling-Melon-Farmers/dsh-tutorloop](https://github.com/Qinling-Melon-Farmers/dsh-tutorloop) — 面向自选资料的学习陪练，使用当前 DSH 会话模型，提供引导练习、证据反馈、Leitner 间隔复习、18 个教师工具与中英双语学生面板；要求 DSH >=0.2.1-rc.2 <0.3.0-0、Python 3.11+ 及 Python 运行时依赖。
 - [qinyongliang/resource-map](https://github.com/qinyongliang/resource-map) — 给它一个 URL，它自己把整条链路查完——域名解析、反向代理、上游服务、容器、宿主机与依赖逐层核对，最后给出带证据的根因，让故障排查和日常运维不再依赖某个人记得机器和日志在哪。链路信息来自它在你的工作区里建立并维护的资源记录；默认只读，任何改动都需要你明确授权。
+- [qinyuan1017/dsh-wechat-filehelper](https://github.com/qinyuan1017/dsh-wechat-filehelper) — 让 agent 把文件和文字直接发到你自己的微信文件传输助手。扫一次码，之后说句话就能发；全程走 HTTP，不用打开网页版或浏览器。
 - [QIU-KKKK/DeepSeek-Harness-BT-](https://github.com/QIU-KKKK/DeepSeek-Harness-BT-) — 在左侧栏提供 BT / 磁力资源搜索面板，聚合 磁力猫 与 动漫花园（动漫花园、蜜柑计划、萌番组、ANi）两个来源，支持广泛/精准匹配、类型筛选、排序、搜索历史与收藏。
 - [qixin-ai-data/dsh-qixin-insight-mcp-oauth](https://github.com/qixin-ai-data/dsh-qixin-insight-mcp-oauth) — 通过 OAuth 2.1 + PKCE 授权接入启信慧眼 MCP 服务，以单条插件条目把它的工具挂载为 mcp__qixin_insight__*，token 到期前自动刷新，断开时吊销。
 - [qphotoai/dsh-computer-use-windows](https://github.com/qphotoai/dsh-computer-use-windows) — 适用于 Windows 的 DeepSeek Harness Computer Use 插件，支持 UIA、cua-driver 和可选 GLM 视觉。
@@ -10054,6 +10056,7 @@ dsh plugin --profile web add dshmarket
 - [pandaman0759/dsh-schedule-send](https://github.com/pandaman0759/dsh-schedule-send) — 在当前会话里排一条定时发送的消息：本轮结束后发、每隔 X 小时 Y 分钟发 N 次，或按选定的日期时间发（不重复 / 每天 / 每周几 / 每月几号）。消息以用户自己的口吻送达，走与手动输入 prompt 同一条通道；输入框上方有待发送卡片和倒计时。另注册 schedule_send / schedule_cancel 工具，让 Agent 也能给自己定闹钟：过 N 分钟回来复查、指定时刻提醒、或本轮结束后再动手。
 - [panqing0313/dsh-plugin-weixin](https://github.com/panqing0313/dsh-plugin-weixin) — 微信（个人微信，iLink Bot API）通道：在微信里直接对话 DSH agent，支持图片、文件收发与语音转写。一个微信会话可挂多条 DSH 会话（/new、/list、/use 切换，切走不销毁），全部配置项都能在设置页里查看和修改。已上架 npm（dsh-plugin-weixin）。
 - [pany0593/dsh-ui-notifications](https://github.com/pany0593/dsh-ui-notifications) — DSH Web 界面系统通知：回合结束或 agent 等待授权/回答/计划审核时，页面在后台也弹出系统级提醒。
+- [Paradox1278/session-mail-notifier](https://github.com/Paradox1278/session-mail-notifier) — 被监控的会话每完成一轮任务就发一封结构化汇报邮件，包含做了什么、token 用量、耗时、失败专报与重试。
 - [Pasumao/dsh-plugin-notify](https://github.com/Pasumao/dsh-plugin-notify) — 为 dsh 添加 Windows 原生 Toast 通知与系统托盘图标：agent 完成、停止或出错时弹通知，托盘菜单可重新打开网页或退出后台进程。
 - [pc439527/dsh-notify-bark](https://github.com/pc439527/dsh-notify-bark) — Bark 推送通知到 iPhone：回合完成、等待回答、等待授权等事件由 Host 端发送。
 - [PeterBon/dsh-hooks](https://github.com/PeterBon/dsh-hooks) — 配置驱动生命周期 hooks：在 cordis.patch.yml 声明事件→命令，附飞书卡片通知与扫码一键创建机器人。
@@ -11979,6 +11982,7 @@ dsh plugin --profile web add dshmarket
 - [tonyous/DSH-AMP-Radio](https://github.com/tonyous/DSH-AMP-Radio) — 可拖动的收音机胶囊，带实时可视化、电台搜索、收藏与自更新检查，面向 DSH Web。
 - [Big Fat Fish Girl](https://github.com/troodon/dsh-big-fat-fish-girl) — macOS 桌面动画伴宠：跟随各个会话的工作进展，对审批与报错做出反应，长时间运行时吃点零食，空闲时打盹。需另装一个独立的桌面壳应用。
 - [TryDing-T/dsh-Plugin--ChineseChess](https://github.com/TryDing-T/dsh-Plugin--ChineseChess) — DSH 侧边栏中国象棋棋盘：用户执红，当前 DSH 模型执黑，Host 负责棋规与局面版本校验。
+- [tuoqie/dsh-livestream-douyin#dsh-livestream-douyin](https://github.com/tuoqie/dsh-livestream-douyin/tree/main/packages/dsh-livestream) — 为 DeepSeek Harness 提供实验性抖音直播插件，只读采集网页弹幕并提供 AI 主播、角色舞台、字幕和语音；平台开播由外部直播软件处理。
 - [txlznbzsdj-collab/dsh-deepseek-pet](https://github.com/txlznbzsdj-collab/dsh-deepseek-pet) — 浮动在 DSH Web 页面上的 DeepSeek 蓝色小鲸鱼桌宠：可拖拽，说话气泡与心情姿势随互动切换，模型可调用 pet_say 工具让它开口，对话开始/结束时自动进入思考与庆祝状态。
 - [uceqi114/dsh-ice-probe](https://github.com/uceqi114/dsh-ice-probe) — 在模型写出的每句话结尾（含思维链）补一个小冰块标记，并为每次补冰播放一声短促的合成音效。
 - [ukkyo1/dsh-novel-reader](https://github.com/ukkyo1/dsh-novel-reader) — 在对话窗口里阅读本地 txt 小说：自动识别章节，正文在助手思考块里分页显示，可点「下一章」在同一条回复里继续读，会记住阅读进度，可见回复是固定总结。
