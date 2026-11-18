@@ -8177,6 +8177,7 @@ dsh plugin --profile web add dshmarket
 - [DynaMyhome/dsh-notes](https://github.com/DynaMyhome/dsh-notes) — 右侧栏的笔记工作区：笔记树 + 实时预览的 Markdown 编辑器（标签 / 分屏 / 大纲 / 回收站），笔记是普通 .md 文件，索引是按工作区的薄映射，Agent 侧只用一个 `knowledge` 工具整理；`embed` 围栏把可交互网页演示嵌进笔记（沙箱 iframe，脚本可跑、断网、拿不到宿主）。
 - [ECNU/EduWork#dsh-knowledge-studio](https://github.com/ECNU/EduWork/tree/main/packages/dsh-knowledge-studio) — 基于工作区资料的 Studio，复用 DSH 模型与共享成果服务，制作报告、演示文稿、表格、思维导图、测验、闪卡及音视频。Office 生成需 Python 3.12+ 及相关依赖，并配置 DSH_OFFICE_PYTHON；媒体渲染需 Chromium；本地语音转写另需 whisper.cpp 和模型。
 - [Edsenpai/page-between](https://github.com/Edsenpai/page-between) — 贴一个链接，把文章读成结构导图、加粗要点、逐段精读与读后评论；任意一句可收成拍立得便签（可拖动、缩放、改字），全文可一键复制成 Notion 版，简/繁/英三种语言可随时切换。导图图片依赖本机 Edge/Chrome，Windows、macOS、Linux 都会自动识别（装在别处可设环境变量 DSH_MINDMAP_BROWSER），不影响其余功能。
+- [EliasRookie66/dsh-inspiration](https://github.com/EliasRookie66/dsh-inspiration) — 中长篇小说写作工作台，支持章节与设定卡管理、AI 起草和由作者确认的行内修改。
 - [Evantianyn123/docsuite](https://github.com/Evantianyn123/docsuite) — 文档工坊：把设备说明书与历史报告变成技术方案、调研报告和投标文件，支持导出 Markdown / Word / HTML / PDF / PPTX。Word / PPTX 导出与文档解析需要 Python 3 及 pypdf、python-docx、python-pptx（在设置页初始化），PDF 导出需要标准 Windows 路径下的 Chrome 或 Edge。
 - [fangchenghao/latex-look](https://github.com/fangchenghao/latex-look) — 让 Agent 真正看见编译后的页面：把任意一页渲染成图片，用 SyncTeX 把页面坐标或文字锚点解析成源码 file:line（并指出某条横线是宏包画的而不是正文画的——这正是朴素定位最容易出错的地方），把这一页与上一次构建做像素对比，逐页审计本次修改新引入的空洞，并检查图表编号是否仍然顺序正确。
 - [feifandiv/dsh-md-live-edit](https://github.com/feifandiv/dsh-md-live-edit) — 在右侧边栏的 Markdown 预览里直接编辑：点文本块就地改，⌘/Ctrl+Enter 保存写回文件；随时可切回内置只读渲染。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
@@ -8916,7 +8917,7 @@ dsh plugin --profile web add dshmarket
 - [Dreamaniax/dsh-syn-config](https://github.com/Dreamaniax/dsh-syn-config) — 把 DSH 技能、profile 设置与 AGENTS.md 与私有 git 仓库对齐：状态灯、六节体检、拉取、密钥脱敏、快照后推送。默认演练，永不 rebase 或强推。
 - [Dreamaniax/dsh-weekly-retro](https://github.com/Dreamaniax/dsh-weekly-retro) — DSH 周报复盘：会话画像、重复劳动、技能候选与五 Tab 洞察页，数据只在本机。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [DrizzleGig/dsh-novel-beat](https://github.com/DrizzleGig/dsh-novel-beat) — 让故事怎么发展，由你决定！「拍板」帮助小说作者掌控全书剧情走向。人物命运、关系变化、秘密揭晓、重大转折，每一个重要选择都由你做主。你可以决定故事走哪条路，也能随时回看全书做过的选择，了解当初还有哪些可能。想改变剧情？右栏「拍板台」让你一眼看清全书决策，提前预览改动会影响哪些正文、设定和后续剧情，再安全回退、重新选择。过去的故事路线依然可以查看，不必害怕推翻旧决定。默认关闭，不写正文，每个选择都有迹可循。
-- [DrizzleGig/dsh-novel-fanfic](https://github.com/DrizzleGig/dsh-novel-fanfic) — 同人工作室：导入原著得到可核 canon（每条事实带章节、偏移、引文），把这一版有意的二创改动声明为「本作设定」，写作前编译场景契约，写作后按原著与设定检查。本作优先于原著；只报冲突，不自动改稿。默认关闭。
+- [DrizzleGig/dsh-novel-fanfic](https://github.com/DrizzleGig/dsh-novel-fanfic) — 把原著导入，就能拥有一套专属的同人创作资料库。人物关系、剧情经历、世界规则，随时查阅；你想改写的人物命运、关系和剧情，也能按本作设定记录下来。写作时帮你理清人物知情、时间线和场景细节，写完还能检查人物 OOC、设定冲突和剧情前后矛盾。原著只是参考，你的故事由你决定。
 - [Drkoh-wz/team-craft#team-flowise](https://github.com/Drkoh-wz/team-craft/tree/main/packages/team-flowise) — DSH 的多角色团队编排插件：给每个角色各自的模型、人设与工具，按依赖跑节点图，带独立评审与有上限的返工，并在界面里看进度。
 - [drliuhuan/dsh-plugin-folder-trust](https://github.com/drliuhuan/dsh-plugin-folder-trust) — 仅 Windows：新增工作区时授权一次，补齐 workspace-write 沙箱所需的 NTFS 权限，并把授权与 Low 完整性标签铺进已有子目录；修复过程带实时进度与日志。
 - [dryw/dsh-egm](https://github.com/dryw/dsh-egm) — 面向 DeepSeek Harness 的设计评审闸门，移植自 Google 的 Elephant-Goldfish Model：具备完整上下文的“大象”起草设计，再由零上下文的只读“金鱼”评审者严格审查，通过后才进入实现。注册的插件 id 为 `egm`，同一 profile 请只安装一个 EGM 插件。
