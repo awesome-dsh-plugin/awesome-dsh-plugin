@@ -1,0 +1,6 @@
+url: https://github.com/cv588888888888888888888ju/dsh-image-read
+name: cv588888888888888888888ju/dsh-image-read
+category: vision
+description:
+  en: 'Deterministic screenshot reading that never calls a vision model: fits the curves in a framed chart into equations, R² and data points (plus a CSV table, a redrawn SVG and an overlay), locates a slider-captcha gap with a match score, estimates a rotation angle from features, traces a single curve into ordered points, and chains basic image ops.'
+  zh: '不接视觉模型的确定性截图读取：把有框图表里的曲线拟合成方程、R² 与数据点（另出 CSV 表、重绘 SVG、overlay），定位滑块验证码缺口并给出匹配分，用特征估计旋转角，把单条曲线取成有序点列，并做链式图片算子。'
