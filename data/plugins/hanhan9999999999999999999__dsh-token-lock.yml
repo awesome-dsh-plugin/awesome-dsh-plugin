@@ -1,0 +1,7 @@
+url: https://github.com/hanhan9999999999999999999/dsh-token-lock
+name: hanhan9999999999999999999/dsh-token-lock
+category: usage
+description:
+  en: 'Token guard for DSH sessions: weighs what each request spends against what it produced (files written, tests green, tool calls that succeeded), names the cause in a settings panel, and can hold new requests at a budget you set — by default it only records and advises.'
+  zh: 'DSH 会话的 token 护栏：把每次请求花掉的 token 和它换来的产出（写了文件、测试转绿、工具调用成功）放在一起量，在设置面板里指出成因，可按你设的预算暂缓新请求——默认只记账、只提示，不拦。'
+tarball: https://github.com/hanhan9999999999999999999/dsh-token-lock/releases/latest/download/dsh-token-lock.tgz
