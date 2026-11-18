@@ -1,0 +1,6 @@
+url: https://github.com/SLZ2025/dsh-del-chat
+name: SLZ2025/dsh-del-chat
+category: session
+description:
+  en: 'Adds a Delete archive item to the sidebar Session menu for archived Sessions. A confirmation dialog shows the JSONL log size and projection cache state first; confirming removes the Session JSONL log, projection cache and Workspace record from disk. Unarchived Sessions never offer it, and attachments plus the cost ledger stay untouched. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在侧栏会话右键菜单里加「删除归档」：确认框先显示日志体积与投影缓存状态，确认后把已归档会话的 JSONL 日志、投影缓存和工作区记录从磁盘删除。未归档的会话不显示这一项；附件（跨会话共享）与成本账本不动。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

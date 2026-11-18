@@ -1,0 +1,7 @@
+url: https://github.com/pcysanji/dsh-context-ruler
+name: pcysanji/dsh-context-ruler
+category: usage
+description:
+  en: 'Shows the live payload size of the current conversation on the answer action row, with warn and danger colors and a one-click handoff that writes a handoff document and leaves a prompt in a new session. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在每条回答的动作行显示当前会话的上下文体积，越线变色，并可一键写交接文档、新建会话并把指令预填进输入框（不自动发送）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/pcysanji/dsh-context-ruler/main/docs/icon-180.png

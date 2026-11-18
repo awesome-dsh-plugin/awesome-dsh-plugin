@@ -1,0 +1,6 @@
+url: https://github.com/odysseykernelt/dsh-dashcam
+name: odysseykernelt/dsh-dashcam
+category: security
+description:
+  en: 'Records what installed plugins actually do at runtime — file access, network endpoints, and commands — in a tamper-evident ledger. It records only and does not block. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在插件运行时记录它实际做了什么——读写哪些文件、连接哪些服务器、执行哪些命令——写进防篡改账本。只记录，不拦截。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

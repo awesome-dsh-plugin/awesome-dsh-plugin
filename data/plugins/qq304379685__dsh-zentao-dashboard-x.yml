@@ -1,0 +1,7 @@
+url: https://github.com/qq304379685/dsh-zentao-dashboard-x
+name: qq304379685/dsh-zentao-dashboard-x
+category: tools
+description:
+  en: 'Shows ZenTao bugs, tasks and stories in a DSH panel and can update them; also registers four tools for the assistant. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 面板中展示禅道缺陷、任务与需求并支持修改，同时注册 4 个助手工具供会话使用。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/qq304379685/dsh-zentao-dashboard-x/main/assets/icon-180.png

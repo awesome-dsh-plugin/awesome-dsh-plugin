@@ -1,0 +1,6 @@
+url: https://github.com/ityyq777/dsh-workbench/tree/main/packages/automation
+name: ityyq777/dsh-workbench#automation
+category: workflow
+description:
+  en: 'Automation for DSH: run whitelisted actions on a schedule, on domain events or manually, with templates, conditions, rate limits and run history.'
+  zh: 'DSH 自动化：按定时、域事件或手动触发白名单 action，含模板、条件、限频与运行记录。'

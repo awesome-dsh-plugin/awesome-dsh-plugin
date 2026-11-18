@@ -1,0 +1,6 @@
+url: https://github.com/879745uhjun/dsh-session-transfer
+name: 879745uhjun/dsh-session-transfer
+category: session
+description:
+  en: 'Packs any DSH session into a portable .dshpack — full log, subagent sessions and referenced attachments — and imports it into another DSH installation, choosing the target workspace and resolving id and path conflicts automatically. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把任意 DSH 会话连同子会话与引用附件打包成便携的 .dshpack，再导入另一台 DSH，可自选目标工作区并自动处理 id 与路径冲突。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

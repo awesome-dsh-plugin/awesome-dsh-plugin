@@ -1,0 +1,6 @@
+url: https://github.com/879745uhjun/dsh-session-boxes
+name: 879745uhjun/dsh-session-boxes
+category: session
+description:
+  en: 'Organizes sessions in the DSH workspace sidebar into custom named, colored boxes without moving them between workspaces: multi-box membership with mirrored rows, collapse, drag or menu assignment, and a box manager in the workspace header. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 DSH 工作区侧栏里的会话归入自定义命名与配色的盒子，不改变所属工作区：一个会话可属于多个盒子并显示镜像行，支持折叠、拖拽或菜单归类，以及工作区标题栏的盒子管理器。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

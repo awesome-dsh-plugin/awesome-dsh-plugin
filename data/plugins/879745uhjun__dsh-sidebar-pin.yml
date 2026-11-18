@@ -1,0 +1,6 @@
+url: https://github.com/879745uhjun/dsh-sidebar-pin
+name: 879745uhjun/dsh-sidebar-pin
+category: ui
+description:
+  en: 'Pins the sidebar''s global panel rows — Plugins, Token usage, Todos and any panel later plugins add — to the top of the sidebar so they stay reachable while a long session list scrolls, with a pin toggle above Settings.'
+  zh: '把侧栏的全局面板入口（插件、Token 用量、待办以及后续插件新增的面板）固定在侧栏顶部，会话列表再长也能随时点到，设置上方有图钉按钮可开关。'

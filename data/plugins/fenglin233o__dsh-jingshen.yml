@@ -1,0 +1,6 @@
+url: "https://github.com/fenglin233o/dsh-jingshen"
+name: "fenglin233o/dsh-jingshen"
+category: workflow
+description:
+  en: 'Spirit (精神): personal assistant with persistent conversations, experience memory, autonomous intentions, and checked, reversible source changes. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '精神（Spirit）个人助手：延续会话、记录经验、形成主动意向，并通过验证、检查点和回退改造自身源码。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

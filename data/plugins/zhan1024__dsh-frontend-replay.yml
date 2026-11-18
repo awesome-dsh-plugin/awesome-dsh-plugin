@@ -1,0 +1,8 @@
+url: https://github.com/zhan1024/dsh-frontend-replay
+name: zhan1024/dsh-frontend-replay
+category: browser
+description:
+  en: Frontend Replay records and replays frontend bugs, verifies fixes against explicit acceptance conditions, and exports browser evidence and Playwright tests.
+  zh: 前端验修台，录制并回放前端故障，用相同步骤和明确条件验收修复，导出浏览器证据、报告与 Playwright 测试。
+tarball: https://github.com/zhan1024/dsh-frontend-replay/releases/download/v0.2.0/dsh-frontend-replay-0.2.0.tgz
+icon: https://raw.githubusercontent.com/zhan1024/dsh-frontend-replay/main/docs/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/qq304379685/dsh-lanhu-dashboard-x
+name: qq304379685/dsh-lanhu-dashboard-x
+category: ui
+description:
+  en: 'Opens Lanhu (蓝湖) Axure product prototypes inside a DSH panel and exposes page outlines and copy to the agent through four tools. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 面板里直接浏览蓝湖产品原型（Axure），并把页面目录与文案通过四个工具提供给模型。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

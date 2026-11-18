@@ -1,0 +1,7 @@
+url: https://github.com/reoanrudo/dsh-usage-panel/tree/main/bundle
+name: reoanrudo/dsh-usage-panel#bundle
+category: usage
+description:
+  en: 'Usage panel for DeepSeek Harness: GLM, opencode go, Codex, Claude, DeepSeek and Command Code subscriptions in one popup, with quota-reset buttons and a peak-hour clock.'
+  zh: 'DeepSeek Harness 用量面板：GLM、opencode go、Codex、Claude、DeepSeek、Command Code 订阅用量集中在一个弹窗里，带额度重置按钮和高峰时段时钟。'
+icon: https://raw.githubusercontent.com/reoanrudo/dsh-usage-panel/main/assets/icon-180.png

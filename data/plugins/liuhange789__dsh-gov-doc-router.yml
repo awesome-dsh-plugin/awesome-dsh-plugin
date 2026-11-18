@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/dsh-gov-doc-router
+name: liuhange789/dsh-gov-doc-router
+category: docs
+description:
+  en: Checks Chinese government document drafts against GB/T 9704 formatting rules, auto-fixes deterministic issues, and exports a compliant .docx.
+  zh: 校验中文公文草稿的 GB/T 9704 格式，自动修复可以确定的问题，并导出排版规范的 .docx。

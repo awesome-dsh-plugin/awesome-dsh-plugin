@@ -1,0 +1,7 @@
+url: https://github.com/Tulipe1735/dsh-plugin-paper-reader
+name: Tulipe1735/dsh-plugin-paper-reader
+category: docs
+description:
+  en: 'Bilingual reading library for papers, tech blogs and long reads: paste a link, read the English original with a Simplified-Chinese translation in one shared scrollbar, keep headings, lists, code blocks and inline images, filter the shelf by paper/blog/article, edit card metadata, and ask a DSH-model chat rail that sees the text. Translation is cached per block; a static demo-snapshot gallery can be attached to scroll-driven pages, and the Original button opens the live page. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '论文、技术博客与长文共用的双语阅读库：粘贴链接即可阅读英文原文与简体中文对照（共用一个滚动条），保留标题、列表、代码块与正文插图，支持按论文/博客/文章筛选、编辑卡片元数据，并可在右侧让 DSH 模型基于正文回答问题。翻译按块缓存；滚动驱动的页面可附加静态演示快照，原文按钮打开实时页面。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Tulipe1735/dsh-plugin-paper-reader/main/docs/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/wsy320/dsh-embedded-workbench
+name: wsy320/dsh-embedded-workbench
+category: tools
+description:
+  en: 'UART terminal plus ZLG and CXCAN CAN/UDS workbench with live traffic, CSV recording, and a read-only agent snapshot tool. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '串口终端与 ZLG／CXCAN 的 CAN/UDS 工作台：实时收发、CSV 录制，并以只读方式把状态交给 agent。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

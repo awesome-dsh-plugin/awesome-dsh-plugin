@@ -1,0 +1,6 @@
+url: https://github.com/CatBox215/dsh-safety-remove
+name: CatBox215/dsh-safety-remove
+category: security
+description:
+  en: 'Moves every shell-deletion target into a per-Session staging folder and refuses the original command, keeps one pre-write copy of each file the first time it is overwritten, and adds a right-Sidebar tab that previews, restores, recycles or permanently deletes staged items. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把每条 shell 删除命令的目标移入本 Session 暂存夹并拒绝原命令，文件首次被覆写时保留一份副本，右侧栏分页可预览、还原、送入回收站或永久删除。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,8 @@
+url: https://github.com/BillyWang-7/dsh-turn-bell
+name: BillyWang-7/dsh-turn-bell
+category: notify
+description:
+  en: "Native DeepSeek Harness notifications, in the app's own icon and sound, on macOS, Windows and Linux, when a turn finishes or the agent needs your confirmation. Clicking one opens that conversation."
+  zh: "macOS、Windows、Linux 通用的 DeepSeek Harness 原生通知：一轮回答结束、或需要你确认权限时，用应用自己的图标和声音提醒，点一下直接跳到对应会话。"
+icon: https://raw.githubusercontent.com/BillyWang-7/dsh-turn-bell/main/assets/icon-180.png
+tarball: https://github.com/BillyWang-7/dsh-turn-bell/releases/latest/download/dsh-turn-bell.tgz
