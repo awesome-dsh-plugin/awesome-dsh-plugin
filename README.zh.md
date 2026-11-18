@@ -1958,6 +1958,7 @@ dsh plugin --profile web add dshmarket
 - [sunshaobei/dsh-file-mention](https://github.com/sunshaobei/dsh-file-mention) — Codex 式 @文件/@文件夹提及插件：输入框弹出工作区文件与文件夹选择菜单，通过平台词法扫描插入纯文本着色提及 token，内置嵌套 git 感知的文件索引。
 - [sunshaobei/dsh-input-history](https://github.com/sunshaobei/dsh-input-history) — DSH 输入框历史记录切换器：本地保存每条已提交的提示词（含附件，最多 50 条），空输入框时用上下方向键召回，并自动恢复文件引用与图片预览。
 - [Sunshine334419520/smart-selection-translate](https://github.com/Sunshine334419520/smart-selection-translate) — 在 DSH 的对话或侧栏文件预览里选中英文就地翻译——单词出词典条目（英/美音标、按词性分组的释义、网络释义、真人发音），句子走机器翻译。
+- [Sunshow/dsh-quick-actions](https://github.com/Sunshow/dsh-quick-actions) — 在任何界面用快捷键执行工作区操作：在当前工作区拉取或抓取代码、运行自定义 shell 命令、用可搜索的工作区面板在指定工作区开新会话、收起或展开侧栏；所有绑定都在分组设置页里录制。
 - [suntianc/dsh-ui-settings-icons](https://github.com/suntianc/dsh-ui-settings-icons) — 为 DSH 设置侧边栏添加自定义图标，并开放 keyed `settings.section.icon` 槽位供第三方设置分区注册图标。
 - [sunxiuguo/dsh-a2ui](https://github.com/sunxiuguo/dsh-a2ui) — A2UI v0.9/v0.9.1 对话界面开发预览，使用官方 schema 与渲染器，提供会话内表单动作及不重放动作的历史恢复；仅在 DSH 0.2.0-rc.2 的有界合成流程中验证。
 - [sunyuhuirong/fsviewer](https://github.com/sunyuhuirong/fsviewer) — Codex 式右侧工作区：文件树 + 预览页签（Markdown/源码）、嵌入式浏览器（直连/代理 iframe）、侧边聊天（直连 host LLM 流式对话），全部收敛为原生 details 右栏的页签，可开关多开。
@@ -5068,6 +5069,7 @@ dsh plugin --profile web add dshmarket
 - [sumingwang233/dsh-auto-title](https://github.com/sumingwang233/dsh-auto-title) — 给 DSH 会话自动起名：首轮问答结束后用「项目｜具体任务」命名，而不是把提问截断。通过 bundle patch 顶替内置标题 provider，在会话行「…」菜单里加「AI 重命名」（先预览再应用），设置页可改 provider/model、命名规则并查看诊断日志。49 个单元测试。
 - [SunsetRNE/dsh-session-relay](https://github.com/SunsetRNE/dsh-session-relay) — 由一个主会话协调多个平级会话：/relay 命令与 15 个 peer_* 工具，支持合并汇报、版本线公告、任务看板认领、交接与唤醒、仓库守候、只读查看会话，并带 Web 面板；手机通知需要 DSHA 设备桥。
 - [SunshineR04/dsh-session-manager](https://github.com/SunshineR04/dsh-session-manager) — 在设置页管理已归档会话：恢复或彻底删除（直接物理删除，无备份层）。会话菜单新增红色彻底删除项，附三个 agent 工具。已打开的会话也能立即删除，残留内存副本以归档墓碑隐藏、重启后自动清理。
+- [Sunshow/dsh-recent-sessions](https://github.com/Sunshow/dsh-recent-sessions) — 在 DSH 侧栏「设置」上方加一行「最近会话」：浮层可按标题、工作区、Session ID 或状态搜索，按最后活动时间列出各工作区的会话；子代理会话可折叠进主会话、隐藏或单独列出，并可选 1/7/30 天范围；入口行用黄点/绿点提示有待确认或已完成未打开的会话。
 - [sunyuhuirong/shl-session-history](https://github.com/sunyuhuirong/shl-session-history) — 会话历史迷你滑轨：对话区左侧垂直居中的短横线，每条横线代表一条真实用户请求，悬停预览请求内容，点击跳转到对应轮次。
 - [svgop/dsh-rich-indexing](https://github.com/svgop/dsh-rich-indexing) — 分级压缩中枢：把单一的 80% 压缩阈值换成可配置的阶梯（默认 30/50/70/90），逐级加强压缩力度；每次检查点都折叠入确定性关键词索引，让事实跨周期累积；摘要走模型链——主模型加最多 3 个回退，各自独立推理档位。附带 Compaction 模块子标签页与设置卡片；关闭插件始终恢复原版压缩。
 - [SZMY-haruhi/dsh-session-plus](https://github.com/SZMY-haruhi/dsh-session-plus) — DSH Web 侧栏归档目录：将会话恢复到原工作区槽位、删除会话日志，或从用户消息修改并分支为新会话。
@@ -9813,7 +9815,7 @@ dsh plugin --profile web add dshmarket
 - [br1nosense/dsh-wxauto-plugin](https://github.com/br1nosense/dsh-wxauto-plugin) — 基于 wxauto4 的微信自动化插件：任务进度微信推送、消息监听（关键词自动回复）、微信⇄DSH 双向桥，设置页开关与配置。
 - [bululuburuarua666/dsh-herald](https://github.com/bululuburuarua666/dsh-herald) — 三通道任务通知：页内浮层与提示音、浏览器系统横幅、宿主直发系统通知（浏览器关闭也送达），附铃铛面板与持久历史。
 - [c1overzz/dsh-bili-scroll](https://github.com/c1overzz/dsh-bili-scroll) — 让你的 DSH 自己刷 B站 —— 读字幕原文挑内容、写日报，遇到值得看的会发评论 @ 你。
-- [c3115644151/dsh-inbox-bridge](https://github.com/c3115644151/dsh-inbox-bridge) — 让 DSH 的会话自己盯 GitHub：它提的 PR 被评审、CI 挂了、派给它的 issue 有人回，都会在下一轮自动进上下文；会话空闲时还能自己开一轮去修。只读，不改仓库。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [c3115644151/dsh-inbox-bridge](https://github.com/c3115644151/dsh-inbox-bridge) — 让 DSH 的会话自己盯 GitHub：它提的 PR 被评审、CI 挂了、派给它的 issue 有人回，都会在下一轮自动进上下文；会话空闲时还能自己开一轮去修。只读，不改仓库。
 - [CAI-MH/dsh-agent-bridge](https://github.com/CAI-MH/dsh-agent-bridge) — 飞书机器人 → DSH 会话桥：在指定工作区开真会话，用 DSH 现有模型+插件执行任务并回传结论。
 - [CAI-MH/dsh-feishu-task-recorder](https://github.com/CAI-MH/dsh-feishu-task-recorder) — 通过 lark-cli 轮询飞书群聊与单聊，提取候选任务并逐条审核，与任务看板插件双向同步，含悬浮面板与一键授权。
 - [callmeocean1/dsh-taskbar-status](https://github.com/callmeocean1/dsh-taskbar-status) — 回合运行中在 Windows 任务栏显示进度条，等待审批或提问时变成琥珀色并闪烁，回合失败后保持红色。Joker2377/dsh-taskbar-status 的分支，打包上的改动是把 koffi 改成可选的 peer 依赖，使其在 DSH Desktop 上安装时不再需要原生构建脚本授权；不要与原版同时安装。
