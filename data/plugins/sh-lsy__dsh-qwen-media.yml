@@ -1,0 +1,6 @@
+url: https://github.com/sh-lsy/dsh-qwen-media
+name: sh-lsy/dsh-qwen-media
+category: skill
+description:
+  en: 'Token Plan image and video generation skill: text-to-image, image editing, sequential image sets, text-to-video, image-to-video and reference-to-video, with capability-guided model and spec selection.'
+  zh: 'Token Plan 图像与视频生成技能：文生图、图像编辑、连贯组图、文生视频、图生视频与参考生视频，并提供按能力对比的模型与输出规格选择。'
