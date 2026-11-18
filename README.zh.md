@@ -1994,6 +1994,7 @@ dsh plugin --profile web add dshmarket
 - [tcgbp/dsh-flash](https://github.com/tcgbp/dsh-flash) — DSH Web 快捷控制面板核心：可独立浮动的快捷面板，开关项由其它插件通过 quickControl 服务注册，内置皮肤系统与中英文 i18n；dock-base 工作台集成由 dock-flash 适配器单独提供。
 - [TecFancy/dsh-mobile](https://github.com/TecFancy/dsh-mobile) — DSH Web 移动端适配插件：侧边栏/详情抽屉浮层化、输入栏与设置页响应式适配，桌面零回归。
 - [TelethaMithril/dsh-hot-restart-row](https://github.com/TelethaMithril/dsh-hot-restart-row) — 在 DSH 账号菜单「退出登录」下面加一行「热重启」：原地对账 profile 插件树并刷新页面，不重启 DSH 进程，当前对话不丢。0.2.7 起该行改为由 index.html 注入的普通脚本（不再是 dsh.client 条目），因此本插件不会再导致启动时出现「web boot: N entries did not activate」。
+- [Tera-Dark/dsh-desk-kit](https://github.com/Tera-Dark/dsh-desk-kit) — 侧栏标签页里的定时提醒、能贴截图的随手便签、网页收藏格子和加密保险库，另带 27 个 Agent 工具、全局搜索与备份导入；数据只落在本机 ~/.dsh/desk-kit。
 - [tero0224-droid/dsh-locale-zh-tw](https://github.com/tero0224-droid/dsh-locale-zh-tw) — 在網頁介面加入繁體中文（台灣），查詢字串時把內建簡體字典轉成正體，官方日後新增的字串也自動涵蓋，不需重新翻譯。
 - [Testiphi/dsh-stage-prose](https://github.com/Testiphi/dsh-stage-prose) — 借鉴 Codex 的进度播报方式，让 DSH 在长任务中简短说明进展，并在「标准」视图折叠回合后保留这些正文。
 - [Teyvat0/dsh-sidebar-compact](https://github.com/Teyvat0/dsh-sidebar-compact) — 为 DeepSeek Harness 左侧栏加上收起/展开、248px 紧凑模式与面板列表折叠。
@@ -3357,6 +3358,7 @@ dsh plugin --profile web add dshmarket
 - [iShawnWang/dsh-theme-neon](https://github.com/iShawnWang/dsh-theme-neon) — 给 DeepSeek Harness 的三套霓虹配色——青、粉、黄，在「设置 → 通用设置」的「外观」下面一行三个色块里点选切换，每套配色各自带明暗两套 token；深浅仍由内置的「外观」开关决定。
 - [Isilsolme/dsh-anthropic-fonts](https://github.com/Isilsolme/dsh-anthropic-fonts) — Anthropic Sans/Serif/Mono 字体：界面 Sans、对话 Serif、代码 Mono，中文回退思源字体。
 - [iStarryDust/dsh-ui-liquid-glass](https://github.com/iStarryDust/dsh-ui-liquid-glass) — 可折射的液态玻璃皮肤 UI：可自定义壁纸、多个可调折射液态玻璃面、随时段轮换的壁纸、四档主题色、选中项带水滴状高亮飞镜、右下可自定义每个控件参数。
+- [italycalibur2019/dsh-mera-theme](https://github.com/italycalibur2019/dsh-mera-theme) — MERA 拟人主题：玫红、珍珠白与墨蓝配色，面板半透明、侧栏磨砂，浅色外观配白天晴朗壁纸，深色外观配雨夜壁纸。
 - [jiangsuyuan/dsh-theme-550C](https://github.com/jiangsuyuan/dsh-theme-550C) — 流浪地球 550C 控制台配色的 DSH 界面皮肤，含暗色 2px 边框与琥珀选中态。
 - [jiangwangyang/dsh-theme-blackhole](https://github.com/jiangwangyang/dsh-theme-blackhole) — DeepSeek Harness（dsh）Web UI 的黑洞主题插件。
 - [Jimmyzwang-cloud/dsh-inkscreen-theme](https://github.com/Jimmyzwang-cloud/dsh-inkscreen-theme) — 墨水纸质感的苹果风 DSH 网页主题，侧栏使用手写 jimmy 字标与小狗头像。
@@ -5875,6 +5877,7 @@ dsh plugin --profile web add dshmarket
 - [activeing123/dsh-mcptoon](https://github.com/activeing123/dsh-mcptoon) — 把 mcptoon 作为一条 stdio MCP 服务接入，让 agent 通过 mcptoon 的压缩视图发现已配置 MCP server 的工具，而非每轮支付完整 JSON schema。附带 doctor CLI：校验 mcptoon 可执行文件能否解析，不能时打印精确的 command/args 覆盖配置。
 - [acttk/dsh-bili-interactor](https://github.com/acttk/dsh-bili-interactor) — 替你在 B 站上真的动手：搜视频、点赞、投币、发弹幕、发评论、回别人的评论，别人回了还能接着聊。会读视频的 B 站 AI 字幕（没有字幕时可本地转写），所以评论说的是视频里真正讲了什么；挑该回谁之前也会先看一遍视频内容。它不抄别人的句子，而是总结「怎么说话才像真人」的规律，跑得越多 AI 味越淡。会跳过刷过的视频、同一楼不重复回复；跟同一个人在同一个评论区来回聊太多轮时会先审查这段对话有没有营养 —— 如果像两个机器人在互相捧场，就说最后一句、之后不再回复他。还能查每条评论是真公开了还是只有你自己看得见，可以按任意时间范围（最近 1 小时 / 24 小时 / 3 天 / 全部）批量扫描并列出别人看不到的那些，总览上直接告警有多少条被折叠。六页签设置面板，改任何一项立刻生效、不用重启；手动「跑一轮」撞上后台监听会排队而不是被拒；自带环境自检，缺什么直接告诉你。B 站操作需要 Python 3，内置自检会列出缺少的依赖。
 - [AcuteSZW/dsh-rea-pro](https://github.com/AcuteSZW/dsh-rea-pro) — 把 REA 的逆向工程 MCP 工具集接进 DeepSeek Harness，输入框工具条上一个开关，装好默认关闭；点开即挂载，关掉后工具全部撤走、MCP 子进程退出，不需要它的会话就不花这份上下文。
+- [adengou/dsh-kumquat](https://github.com/adengou/dsh-kumquat) — DSH 的媒体转换面板：视频/音频格式互转、裁剪片段、取段做 GIF，每件产物核对分辨率、编码、帧率、时长、声道与采样率。
 - [AdenXie/dsh-vercel](https://github.com/AdenXie/dsh-vercel) — 通过 OAuth 把 DeepSeek Harness 连接到 Vercel 官方 MCP 服务，支持按 Agent 按需加载工具、精简工具 schema、长结果分页，并附带 34 个 Vercel 技能。
 - [adithyanraj03/dsh-graft-plugin](https://github.com/adithyanraj03/dsh-graft-plugin) — 显示当前 dsh 会话所用的 graft 索引、以及它是否仍与代码一致，并把 graft_ask、graft_grep、graft_callers、graft_skeleton、graft_map 作为原生工具交给模型。
 - [adithyanraj03/dsh-mcp-summon](https://github.com/adithyanraj03/dsh-mcp-summon) — 休眠式 MCP：只注册一个 mcp_summon 工具，召唤后该服务器的工具在本次会话内以原生 mcp__<server>__<tool> 名称注册，释放即注销并停止进程。
@@ -7023,6 +7026,7 @@ dsh plugin --profile web add dshmarket
 - [sojo-negai/dsh-prompt-refine](https://github.com/sojo-negai/dsh-prompt-refine) — 发送按钮左侧的 ✨ 按钮：读取草稿与最近若干轮对话，向已配置的模型要三条建议（每条都是「问题 + 改法」），可逐条勾选并实时预览合并后的提示词，结果写回输入框但不发送。
 - [somnusovis/dsh-multi-workspace](https://github.com/somnusovis/dsh-multi-workspace) — 多工作区沙箱：自动赋予所有已注册工作区的文件写入权限——添加工作区后即可直接写入，无需配置或提权。
 - [songer522/dsh-launcher](https://github.com/songer522/dsh-launcher) — DSH Web 服务的 macOS 菜单栏应用，以及它所读取的 Host 插件：插件把运行中服务的端口、PID 与带 token 的 URL 写入 ~/.config/dsh-launcher/runtime.json，并在停止时删除，因此即使服务器是从终端启动的，也能在状态栏完成启动、打开、重启与停止。
+- [songsenand/yingzao#dsh-cad-harness](https://github.com/songsenand/yingzao/tree/main/dsh-cad-harness) — dsh 的机械 CAD 插件：Agent 负责生成，插件负责闭环——验收前做配合、运动与可制造性检查，最终判断留给你。
 - [SongZijianlove/dsh-phone-drop](https://github.com/SongZijianlove/dsh-phone-drop) — 局域网手机直传：电脑屏幕上出一个二维码，手机扫开就能拍照或扫描，文件直接落进电脑文件夹，全程局域网直连，不经过隧道也不经过云端。文档模式在手机浏览器里本地做自适应二值化、去噪、裁边，把普通照片变成黑白扫描件。插件会在 DSH 侧边栏底部加一个「手机直传」入口，点开就是二维码页；另有 phone_drop 工具供助手调用，同一个 CLI 也能脱离 DSH 独立运行。
 - [sorchk/dsh-linux-desktop-use](https://github.com/sorchk/dsh-linux-desktop-use) — 用 DeepSeek Harness 直接操控本机 Linux 桌面，提供 19 个工具：截图、鼠标、键盘、滚动、窗口、应用、显示器与状态校验，基于原生 X11 + XTEST 会话，并可选读取 AT-SPI 无障碍树与直接给控件赋值，不适用于 Wayland。需要宿主安装 xdotool（XTEST 注入）；截图与窗口控制还需 scrot、ffmpeg、wmctrl、xrandr、xprop，AT-SPI 工具另需 python3-gi、at-spi2-core、libatk-adaptor。缺失的软件包可在插件详情页的依赖面板用 sudo 一键补装。
 - [SpaceRelay/dsh-subagent-control](https://github.com/SpaceRelay/dsh-subagent-control) — 三个工具，让任意智能体（包括团队成员）能列出、追问并中止自己派出的子代理。
@@ -7075,6 +7079,7 @@ dsh plugin --profile web add dshmarket
 - [taxueseek/argo#dsh-plugin](https://github.com/taxueseek/argo/tree/main/packages/dsh-plugin) — 面向 agent 的统一搜索与证据核验：120+ 引擎多语言路由，垂直域与结构化模态卡，10 个 MCP 工具与 wide_research 编排，fetch 核验回填证据分的证据闭环。
 - [taxueseek/dsh-snippets](https://github.com/taxueseek/dsh-snippets) — DSH 极简片段/命令工具箱：5 个工具，一个可手工编辑的 JSONL 文件，零 UI、零数据库、零网络，只有明确说存才存。
 - [TecFancy/dsh-deeptutor](https://github.com/TecFancy/dsh-deeptutor) — DeepTutor 学习辅导桥接插件：通过 deeptutor_run / deeptutor_kb / deeptutor_note 工具为 agent 接入深度讲解、自测题、学习路径规划、个人知识库检索（RAG）与笔记归档。
+- [TecFancy/dsh-lingualab](https://github.com/TecFancy/dsh-lingualab) — 把工作区里已有的音视频变成逐句精听练习：变速、循环、跟读与录音，收藏的句子按三档评级，每集写一份 notes.md 回磁盘。
 - [tedcriss/dsh-matlab](https://github.com/tedcriss/dsh-matlab) — MathWorks 官方 MATLAB Agentic Toolkit 技能包 + MATLAB MCP Server 连接器。要求本机版本为 MATLAB R2021a 及以上。支持在设置页自定义开启技能组。该技能包由 MathWorks 官方仓库 https://github.com/matlab/matlab-agentic-toolkit 提供，MATLAB 相关操作触发率达到 90% 以上，可以调用原生 MCP 服务器，让你的 AI 完全规范化工作。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。默认（autoProvision）会在首次使用时下载 MathWorks MCP Server 二进制和最新的 Agentic Toolkit；MathWorks 遥测默认关闭。
 - [Tencent/WeKnora#dsh-weknora](https://github.com/Tencent/WeKnora/tree/main/packages/dsh-weknora) — 把 WeKnora 知识库接入 dsh 的四个只读工具：列出知识库、混合检索原文片段、按顺序还原单篇文档，以及直接取用 WeKnora 自己带引用的 RAG 或 ReAct agent 回答（含可续聊的 session id）。
 - [TencentCloudBase/CloudBase-AI-Toolkit#dsh-plugin](https://github.com/TencentCloudBase/CloudBase-AI-Toolkit/tree/main/dsh-plugin) — 把腾讯云 CloudBase 后端接入 DeepSeek Harness——在对话里搭好并部署全栈应用，查询结果渲染为表格卡片（分页、排序、导出 CSV），部署后可预览真实域名，并提供 CloudBase MCP 工具集（`mcp__cloudbase__*`），登录走 device-code 流程。
@@ -10232,6 +10237,7 @@ dsh plugin --profile web add dshmarket
 - [aokamoaki/dsh-startup-guard](https://github.com/aokamoaki/dsh-startup-guard) — 启动守卫：修复会话日志、预检插件组合、校验客户端工件、冒烟宿主 apply() 并隔离崩溃源，让坏插件再也无法砖掉启动。
 - [AphyTOT/dsh-plugin-preflight](https://github.com/AphyTOT/dsh-plugin-preflight) — 投稿社区精选列表前的插件自检：校验 dsh.bundle 清单、cordis.patch.yml 接线、客户端 bundle 形态，以及会静默排除预发布版 harness 的 peer 版本范围。提供 CLI 与一个只读的 agent 工具。
 - [Areium/dsh-fail-logger](https://github.com/Areium/dsh-fail-logger) — 全模式调用工具失败自动实录：把原生工具 / PTC run_code / 代码内嵌工具调用的失败错因去重计数后写入 skill，越用越少错。
+- [arfarfgit/dsh-ram-meter](https://github.com/arfarfgit/dsh-ram-meter) — 实时内存与堆上限监控：侧边栏小条显示常驻内存、占 V8 堆上限的百分比，以及上限本身。它直接读取宿主进程，因此原版宿主显示约 4 GB 上限，高内存宿主则显示启动时的真实上限。
 - [Arlenman/dsh-backup-sync](https://github.com/Arlenman/dsh-backup-sync) — DSH 的备份 / 恢复 / 换机迁移：把技能（技能目录在 ~/.dsh 之外的 ~/.agents/skills）、插件清单、核心配置、记忆、待办、以及可选的会话打成一个带 sha256 边车的 tar.gz，再在另一台机器上以「带基线的三方合并」导入 —— 逐文件列出差异，而不是直接覆盖对方改过的东西。凭据永不进包（27 个文件名 + 7 个私钥后缀的黑名单，外加内容特征闸，导入侧再过一遍），每次导入前先写一份可原样还原的快照；归档可以推到任意 WebDAV 服务（绿联 NAS / 群晖 / 坚果云 / Nextcloud）并在新机器上下载回来。另含定时备份、单文件只读查看、面板内的云端卡片；零 npm 运行时依赖（打包用系统 tar）。
 - [Arthas1in/dsh-net-hosts](https://github.com/Arthas1in/dsh-net-hosts) — 看清本机每个软件在连哪些 host：经本地 Clash/mihomo 还原真实域名，并给出精确到秒的首次/最近时间。
 - [asdf17128/dsh-doctor](https://github.com/asdf17128/dsh-doctor) — 注册 `config_doctor` 工具，检查 harness 自身配置里那些会静默通过启动的问题：patch 整体替换 config 而丢失的字段、指向不存在 entry id 的 patch、工具重名冲突。只读。
