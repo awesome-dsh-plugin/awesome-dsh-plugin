@@ -2198,6 +2198,7 @@ dsh plugin --profile web add dshmarket
 - [wwumit/dsh-phone#client](https://github.com/wwumit/dsh-phone/tree/main/client) — 苹果风格智能体手机：双面板电话/短信、RCS 群聊（信任门禁）、跨设备智能体消息（registry 收件箱桥）、L0–L4 信任徽章与证据审计。实验性：信任摘要非安全保证，短信/信令经运营方收件箱中继（运营方可见）；E2E 加密为演进方向。
 - [www02310/dsh-go](https://github.com/www02310/dsh-go) — DSH 启动画面：亮白跑马灯点亮后一笔写出 DeepSeek Harness，主窗口就绪后淡出。以运行时注入的插件形态安装；仓库另附可选的原生补丁版。
 - [wwwangzilin/dsh-role-cards](https://github.com/wwwangzilin/dsh-role-cards) — 把新建会话界面的选择器换成组合面板：角色预设卡与工作区卡各自成排，折叠时是胶囊按钮，展开后是两行可滚动的紧凑卡片。
+- [wwyking123/VibeGuide](https://github.com/wwyking123/VibeGuide) — 增加 VibeGuide 模式，为主对话加上白话沟通规则；并提供侧栏，查看进展和项目结构、就对话内容提问。
 - [wx-98/DSH-folder](https://github.com/wx-98/DSH-folder) — DeepSeek Harness 右侧栏的文件夹资源管理器：打开任意本地文件夹、按类型显示彩色图标、重命名/新建/删除/复制文件与文件夹，并可把文件作为 @ 引用添加到对话。
 - [wx-yss/dsh-message-rail](https://github.com/wx-yss/dsh-message-rail) — Codex 风格左侧消息导航轨道：每条用户消息一个刻度，悬停预览、点击跳转，全历史一次索引。
 - [wydddddcool/dsh-hover-approve](https://github.com/wydddddcool/dsh-hover-approve) — DSH Web 侧边栏锚定气泡：会话待授权、提问、计划确认、目标阻断时在会话行旁自动弹出并一键处理，无需点进会话。
@@ -3279,6 +3280,7 @@ dsh plugin --profile web add dshmarket
 - [elegant01/dsh-workbuddy-theme](https://github.com/elegant01/dsh-workbuddy-theme) — 把 DSH Web GUI 改成腾讯 WorkBuddy 桌面的样子：薄荷绿品牌色 #00c29a、灰阶侧栏、24px 圆角输入框配单层细描边、对话栏 848px。取值逐项取自 WorkBuddy v5.0.2 安装包里的设计令牌，不是照着照片调；只做浅色，纯 CSS，移除注入的样式即还原。
 - [elong16/dsh-skin-xuyuanwu](https://github.com/elong16/dsh-skin-xuyuanwu) — 许愿屋古风主题皮肤：暖灯琥珀色调、今日真实月相与轨迹、字落生辉打字萤火、纯原生风铃音效与每日许愿签。
 - [elysia395/dsh-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine) — 前置要求：DeepSeek Harness 0.1.5-rc.1+（DSH Desktop ≥ 2.0.7）且 dsh-better-sidebar ≥ 0.19.0，安装或更新本插件前请先更新两者。把本机 Wallpaper Engine 的 Video/Web 壁纸实时播放到聊天界面后方，Scene 壁纸由内置渲染器输出完整场景帧，支持内容分级/类型过滤、自定义壁纸上传与 iOS 液态玻璃设置窗口。
+- [emeryxu1-blip/dsh-matrix-skin](https://github.com/emeryxu1-blip/dsh-matrix-skin) — 为 DeepSeek Harness 桌面端与 Web 提供会话驱动的 Matrix 代码雨，日常使用时持续播放动画，通过内容遮罩保留文字与控件的清晰度。
 - [EnderBull/dsh-mist-ink-theme](https://github.com/EnderBull/dsh-mist-ink-theme) — 低对比度石墨灰深色主题，侧边栏、输入区与弹层使用可调强度的毛玻璃。
 - [Erbsen16/dsh-client-ui-dracula](https://github.com/Erbsen16/dsh-client-ui-dracula) — DSH Web GUI 的 Dracula（VS Code 吸血鬼）深色主题：把产品自身的配色令牌映射到德古拉调色板，并附更紧的字号阶梯、1080px 正文列宽与不折行的代码块。仅深色模式。
 - [ethanchen669/dsh-plugin-fly-skins](https://github.com/ethanchen669/dsh-plugin-fly-skins) — DeepSeek Harness Web UI 的四套配色：实心 / 玻璃 / 体积 / 霓虹，各含明暗两半。霓虹版在整窗场景光场上叠 46px 电路网格，并在模型运行时让一条激光扫描线扫过对话列（停止即消失）；侧栏工作区名为青色 HUD 标牌，界面拉丁字体内置 MiSans，侧栏字号固定 125% 且不随对话区缩放。
@@ -6970,6 +6972,7 @@ dsh plugin --profile web add dshmarket
 - [shuxidemosheng/dsh-plan-mode-plus](https://github.com/shuxidemosheng/dsh-plan-mode-plus) — dsh 计划模式的 ZCode 式增强：模型可主动调用 enter_plan_mode 进入计划模式，计划期间写类工具在分发前被硬拦截，并注入「探索 → 设计 → 评审 → 退出」四阶段工作流提示词；复用官方 plan/mode 状态机与退出评审流，只做增量。
 - [shuxidemosheng/dsh-skill-compat-plus](https://github.com/shuxidemosheng/dsh-skill-compat-plus) — 技能兼容层：把 Claude Code / Codex / ZCode 的技能目录挂载为 dsh 的只读技能提供方——支持 frontmatter 字段映射、名称 slug 规范化与热重载。
 - [shuxidemosheng/dsh-todolist](https://github.com/shuxidemosheng/dsh-todolist) — 官方 todo_write 的增强 fork：任务项支持优先级标签、会话内完整清单渲染，并提供可拖动的会话内浮动任务面板（位置记忆 / 双击复位 / 当前动作显示）。
+- [Si-xiyu/dsh-BiliBridge](https://github.com/Si-xiyu/dsh-BiliBridge) — DeepSeek Harness 的 B 站工具：27 个工具，覆盖账号读取、预览后才写入的操作，以及分两阶段的视频证据（字幕、弹幕、画面、ASR）。
 - [SilverlingFox/dsh-pixelbar](https://github.com/SilverlingFox/dsh-pixelbar) — 把花再 Halo PixelBar 桌面像素屏变成 DSH 工具：经 HID 推短文字、切场景、设屏色、调氛围灯与音量，并可按需切回时钟。需 USB 连接设备；仅在 Windows 上验证；需要 Python 3.8+ 与 hidapi（pip install hidapi）。
 - [SIMON-WORLD/dsh-eco-indicator](https://github.com/SIMON-WORLD/dsh-eco-indicator) — 世界银行开放数据经济指标查询：GDP、通胀、贸易、人口等，无需 API 密钥。
 - [SIMON-WORLD/dsh-journal-monitor](https://github.com/SIMON-WORLD/dsh-journal-monitor) — 经济学优先的期刊/工作论文监控插件：NBER RSS + arXiv 经济学（4 类目）+ 中文经管期刊（世界经济-玛格泰克平台，中国农村观察/财贸经济/中国人口科学/经济管理-ajcass 平台）抓取、关键词过滤、dry-run/Webhook 推送、去重持久化、定时简报（schedule_create 兼容）。
@@ -8983,6 +8986,7 @@ dsh plugin --profile web add dshmarket
 - [gorwayne/dsh-gor-tasks](https://github.com/gorwayne/dsh-gor-tasks) — 把待办放进 DSH：左侧任务面板、项目分类、对话里增删任务，回答一键拆成任务。
 - [gothepharnayadlsos-cyber/dsh-fanwork](https://github.com/gothepharnayadlsos-cyber/dsh-fanwork) — 改写前先做逻辑体检：审原文风险、逐条裁决，再并行出多稿，每稿附六维审核报告。需要自备 OpenAI 兼容的接口地址与 API Key——插件不内置模型，未配置时生成类接口返回 403。
 - [gqallen931/paper-gogo-plugin](https://github.com/gqallen931/paper-gogo-plugin) — 把 Paper-gogo「审稿人倒推、证据优先」的论文工作流做成原生工具：18 个 Phase 与 7 道 G0-G6 门禁可直接调用，门禁结果会被归一化，任一门禁 FAIL 时拒绝推进；主张按 SUPPORTED、INFERRED、VERIFY、MISSING 四态证据审计。工作流正文与 57 个技能内置在自己的目录中，安装时无需另装 Paper-gogo 包。
+- [GrounzerLiu/dsh-plan-steps](https://github.com/GrounzerLiu/dsh-plan-steps) — 两级计划与唯一签核路径：plan_write 记录阶段与子步骤，complete_step 逐项签核，wait_for_user 声明等待，abandon_plan 放弃列表，面板实时显示当前项。
 - [gsh150801/dsh-bioinf-verify](https://github.com/gsh150801/dsh-bioinf-verify) — 面向科研报告的整篇校验工作流：逐条核对 Crossref、PubMed（含撤稿扫描）、ClinicalTrials.gov、UniProtKB、GEO/SRA 和 PatentsView，核验 URL 可访问性与标题一致性，以温度 0 判定声明与原文含义一致，输出可恢复的审计账本与标注版校验报告。
 - [Guard42/dsh-humanize](https://github.com/Guard42/dsh-humanize) — 把多阶段目标编排为可恢复 Flow 的 agent 预设：阶段带裁判、SHA-256 流锁身份、HMAC 终局评审门禁、事件溯源运行日志；附 15 个工具。
 - [gulagala001/dsh-workflow](https://github.com/gulagala001/dsh-workflow) — 可恢复的 JavaScript 工作流，支持原生子任务、共享预算与 worktree 隔离。
@@ -9075,6 +9079,7 @@ dsh plugin --profile web add dshmarket
 - [KelaoHu/dsh-lowtide#dsh-lowtide](https://github.com/KelaoHu/dsh-lowtide/tree/main/packages/dsh-lowtide) — lowtide（退潮）插件能够实现闲时自动批量跑任务——任务框架高度自定义，四种执行策略，L1–L3 半自动/全自动裁决，支持任务编辑与预检，Cordis 微内核集成，桌面网页端通用。
 - [Kippythisway/dsh-team-v3](https://github.com/Kippythisway/dsh-team-v3) — AgentTeams 的团队预置：内置 audit6 / impl5 / lite2 三套编制与 seed 任务 DAG（每个角色带回报合同），并注入一段 captain 开团纪律——新会话一次批准就开出结构正确的团队，不用再贴提示词。需要先把引擎 @nanmicoder/dsh-agent-teams 装进同一个 profile；团队补丁按 id 指向该引擎，并会整段替换其 agent-teams 配置。
 - [kira905/dsh-task-board-local](https://github.com/kira905/dsh-task-board-local) — 自维护的 DSH 网页任务看板：带人工验收闸门、卡片类型与已执行卡片的可编辑备注。
+- [kiritoko1029/dsh-multi-agent](https://github.com/kiritoko1029/dsh-multi-agent) — 按可配置的自然语言规则将独立任务派发给 DSH、Codex、Kimi Code 或 Antigravity 子代理，支持会话续接和统一任务面板。
 - [kkomia/dsh-code-team](https://github.com/kkomia/dsh-code-team) — DeepSeek Harness 的「项目开发模式」预设与聊天内开发看板：主对话只澄清需求并向 Agent Team 派活，悬浮看板把每个用户修改点按派单、执行、测试、验收追踪（含 7 个看板工具）。
 - [kongbai9420/dsh-boss-worker](https://github.com/kongbai9420/dsh-boss-worker) — 具备主控审查门禁、文件范围隔离与悬浮工作台的多模型主从协同插件。
 - [kp-z/dsh-plugins#dsh-feishu](https://github.com/kp-z/dsh-plugins/tree/main/packages/dsh-feishu) — DSH 的飞书任务桥：把受管飞书任务清单与监听文档同步成本地快照，把任务绑定到 DSH 会话，让进展、预期、依赖与完成状态写回飞书，并通过 DSH 自动化排期。右侧栏新增「飞书」页签（需 dsh-better-sidebar），宿主页面新增「任务」面板，含运行气泡、洞察图表与依赖画布。
