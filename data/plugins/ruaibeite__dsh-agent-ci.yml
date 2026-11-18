@@ -1,0 +1,7 @@
+url: https://github.com/ruaibeite/dsh-agent-ci
+name: ruaibeite/dsh-agent-ci
+category: dev
+description:
+  en: 'Turn real sessions into regression cases, replay them in isolated git worktrees, and verify tests, changed files, step and token limits. Fully local. Replays run each case''s test commands in a git worktree; its HTTP route has no DSH access check.'
+  zh: '把真实会话固化为回归用例，在隔离的 git worktree 中重放，并校验测试命令、改动文件、步数与 token 上限；全部本地执行。重放会在 git worktree 里运行每个用例的测试命令；它的 HTTP 路由没有 DSH 的访问检查。'
+icon: https://raw.githubusercontent.com/ruaibeite/dsh-agent-ci/main/assets/icon-180.png

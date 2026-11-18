@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-verify-kit/tree/main/packages/dsh-hashcheck'
+name: 'zjukop3/dsh-verify-kit#dsh-hashcheck'
+category: 'tools'
+description:
+  en: 'SHA-256 manifests for delivered files: build once, verify anywhere, and say exactly which bytes moved instead of ''looks fine''. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '交付文件的 SHA-256 清单：一次构建、随处校验，说清哪些字节真的动过，而不是「看起来没问题」。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-verify-kit/main/assets/icon-180.png'

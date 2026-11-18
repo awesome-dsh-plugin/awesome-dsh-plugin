@@ -1,0 +1,7 @@
+url: https://github.com/TheTao-xt/dsh-composer-shot
+name: TheTao-xt/dsh-composer-shot
+category: ui
+description:
+  en: 'WeChat-style screenshot button in the DSH composer on Windows: freeze the screen, drag a region, and the crop lands in the current draft as an attachment; an eye switch hides the DSH window during the capture and restores it right after.'
+  zh: DSH 输入框里的微信风格截屏按钮（Windows）：冻结屏幕拖选区域，截图作为附件直接进入当前草稿；旁边的眼睛开关可在截屏时隐藏 DSH 窗口、抓完立刻恢复。
+icon: https://raw.githubusercontent.com/TheTao-xt/dsh-composer-shot/main/assets/icon-180.png

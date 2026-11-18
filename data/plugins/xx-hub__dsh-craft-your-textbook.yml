@@ -1,0 +1,7 @@
+url: https://github.com/xx-hub/dsh-craft-your-textbook
+name: xx-hub/dsh-craft-your-textbook
+category: workflow
+description:
+  en: 'Workbench that turns textbook PDFs into a teaching blueprint an AI tutor can teach from, or a readable textbook, through a six-stage pipeline whose checkpoints wait for the user. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把教材 PDF 加工成 AI 老师能直接拿去上课的教学蓝本，或一本能读的教材；六阶段流水线，关键决定停下来等用户拍板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/xx-hub/dsh-craft-your-textbook/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/cup319/dsh-mmpl
+name: cup319/dsh-mmpl
+category: memory
+description:
+  en: 'Memory Palace MCP plugin: DuckDB vector memory, skill library, forgetting curve, and a local-server supervisor for the @cup319/mmpl MCP server. Its web routes reuse the DSH connection admission fence (Host/Origin + browser session), so a cross-site page cannot call them.'
+  zh: '记忆宫殿 MCP 插件：DuckDB 向量记忆、技能库、遗忘曲线，并为 @cup319/mmpl MCP 服务器提供本地进程监督。它的 Web 路由复用 DSH connection 的准入闸（Host/Origin + 浏览器会话），跨站网页无法调用。'

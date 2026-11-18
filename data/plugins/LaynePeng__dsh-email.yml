@@ -1,0 +1,7 @@
+url: https://github.com/LaynePeng/dsh-email
+name: LaynePeng/dsh-email
+category: notify
+tarball: https://github.com/LaynePeng/dsh-email/releases/download/v0.1.0/laynepeng-dsh-email-0.1.0.tgz
+description:
+  en: 'Mail in three tools: send over SMTP (465 or 587) or Microsoft Graph, read the inbox read-only (list, keyword search with date ranges, folders, read one message), and account status with Hotmail/Outlook device-code OAuth2. A failing Graph call falls back to SMTP automatically, a dead SMTP entry point moves to a second host, and a draft can be previewed in the chat before sending. Zero runtime dependencies; attachments are limited to the workspace. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '邮件三件套：SMTP（465/587）或 Microsoft Graph 发信、只读收信（列表、带时间范围的关键词搜索、文件夹、读单封）、账号状态与 Hotmail/Outlook 设备码 OAuth2。Graph 失败自动回落 SMTP，SMTP 入口不可用自动换备用主机，发送前可在对话里预览草稿。零运行时依赖；附件只允许工作区文件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

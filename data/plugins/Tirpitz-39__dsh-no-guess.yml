@@ -1,0 +1,6 @@
+url: https://github.com/Tirpitz-39/dsh-no-guess
+name: Tirpitz-39/dsh-no-guess
+category: security
+description:
+  en: 'Blocks the first tool call when the model''s own reasoning admits it is guessing the user''s intent, and forces a clarifying question instead. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '模型思考里承认在猜用户意图时，拦下工具调用，强制先问清「要干什么 + 要怎么干」。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

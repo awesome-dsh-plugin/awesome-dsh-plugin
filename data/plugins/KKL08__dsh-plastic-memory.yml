@@ -1,0 +1,7 @@
+url: https://github.com/KKL08/dsh-plastic-memory
+name: KKL08/dsh-plastic-memory
+category: memory
+icon: https://raw.githubusercontent.com/KKL08/dsh-plastic-memory/main/assets/icon-180.png
+description:
+  en: Long-term memory for dsh that goes beyond the usual saving and recall with a built-in system for governing and maintaining memories. Checkups find redundant, conflicting or outdated memories and suggest how to handle them, and key changes only happen once you approve them. Saving, recall and checkups run in the background without interrupting the chat, and anything that needs you is sorted by priority. Scenes and memory types can be freely combined, and per-type injection, retrieval and source lookup, health reminder sensitivity, the injection budget and more are all quick to adjust from the GUI settings page, so what gets remembered and how is yours to decide and shape.
+  zh: dsh 长期记忆插件。除了常规的记忆写入和检索，还带一套记忆治理与维护机制，会给记忆内容做体检，找出重复冗长、矛盾冲突、过时陈旧的记忆并给出处理建议，关键改动经你确认才会执行。日常的写入、检索和体检都在后台进行，不打断对话，需要你处理的事项会按优先级排好。此外，场景和记忆类型可以自由组合，各类记忆的注入方式、检索溯源策略、健康提醒灵敏度和注入预算等，都能在 GUI 设置页里快捷调整，记什么、怎么记由你决定和塑造。

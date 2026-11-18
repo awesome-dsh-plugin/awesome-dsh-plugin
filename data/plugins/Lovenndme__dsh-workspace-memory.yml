@@ -1,0 +1,6 @@
+url: https://github.com/Lovenndme/dsh-workspace-memory
+name: Lovenndme/dsh-workspace-memory
+category: memory
+description:
+  en: 'Workspace-scoped persistent memory for DSH, laid out like Claude Code''s auto-memory: one English-slug Markdown file per memory beside a MEMORY.md index under ~/.dsh/projects/, with hybrid vector+keyword recall, three automatic triggers (index injected every turn, file-path hints appended to tool results, per-message prefetch), a review queue for low-confidence writes so nothing enters the library silently, and global preferences written as numbered chapters into ~/.dsh/AGENTS.md under a byte budget. Everything is read from and written to local files; the optional leanvec embedder (~85 MB, installed locally by the bundled script) powers semantic recall but runs in-process, so the plugin itself opens no network connections and uploads nothing. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '工作区级持久记忆，布局仿 Claude Code 的 auto-memory：一条记忆一个英文 slug 的 Markdown 文件，平铺在 MEMORY.md 索引旁，存放在 ~/.dsh/projects/ 下；检索是向量加关键词混合，三个触发点全自动（每轮注入索引、工具结果里按文件路径附提示、用户发消息时预取），低置信度的写入先进待确认队列，不会静默入库；跨项目偏好则按编号章节写进 ~/.dsh/AGENTS.md 并受字节预算约束。数据全部读写本地文件；可选的 leanvec 嵌入模型（约 85 MB，由随包脚本本地安装）负责语义召回，但只在进程内运行，插件本身不发起网络请求、不上报任何数据。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

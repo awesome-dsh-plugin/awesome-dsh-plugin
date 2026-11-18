@@ -1,0 +1,7 @@
+url: https://github.com/AzureKyrielight/dsh-mingyuanhu
+name: AzureKyrielight/dsh-mingyuanhu
+category: tools
+tarball: https://github.com/AzureKyrielight/dsh-mingyuanhu/releases/download/v0.1.0/dsh-mingyuanhu.tgz
+description:
+  en: "Sichuan University campus services for DeepSeek Harness, with account sign-in and read-only grades, timetables, and bound-room electricity queries."
+  zh: "面向 DeepSeek Harness 的四川大学校园服务，支持账号登录以及成绩、课表和已绑定房间电费的只读查询。"

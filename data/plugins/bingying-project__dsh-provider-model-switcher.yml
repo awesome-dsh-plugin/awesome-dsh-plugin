@@ -1,0 +1,15 @@
+# Submission entry for https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+#
+# Destination path in that repository:
+#   data/plugins/bingying-project__dsh-provider-model-switcher.yml
+#
+# The file name must be <owner>__<repo>.yml and url must match the repository
+# exactly. Only description.en is required; description.zh is provided here
+# because it is accurate, not because CI demands it.
+url: https://github.com/bingying-project/dsh-provider-model-switcher
+name: bingying-project/dsh-provider-model-switcher
+category: ui
+description:
+  en: 'Groups the composer model picker by provider, labels the native model button with the owning provider, and links each provider row to Settings → Models.'
+  zh: '按供应商分组输入框的模型选择器，在原生模型按钮上标出所选模型归属的供应商，并为每个供应商行提供直达「设置 → 模型」的入口。'
+icon: https://raw.githubusercontent.com/bingying-project/dsh-provider-model-switcher/main/assets/icon-180.png

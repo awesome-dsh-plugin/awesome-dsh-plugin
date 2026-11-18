@@ -1,0 +1,6 @@
+url: https://github.com/kimaky/dsh-copy-as
+name: kimaky/dsh-copy-as
+category: ui
+description:
+  en: Copy an assistant message as Markdown, plain text, rich text for Word, TSV, LaTeX or a JSON block tree, from a per-message button or the chat context menu.
+  zh: 从消息操作栏按钮或聊天右键菜单，把助手消息复制为 Markdown、纯文本、可直接粘到 Word 的富文本、TSV、LaTeX 或 JSON 块树。

@@ -1,0 +1,8 @@
+url: https://github.com/msudustin/dsh-magpie-monitor
+name: msudustin/dsh-magpie-monitor
+category: usage
+description:
+  en: 'Sidebar footer widget for DeepSeek Harness: live routing (session, group/route, provider, served model, status, latency, TTFT, tokens, cache hit, cost), usage totals and cost for today/7d/30d/all, quota windows with reset countdowns, per-model throughput, and a DSH -> gateway -> provider flight strip, plus a task done alert that rings a Windows system tone of your choice and blinks the DSH taskbar button when a long task finishes (same turnDoneAlert rule and default sound as Magpie). Adds a settings page with three display styles, per-block switches and amount/account masking; data comes from a read-only proxy to the local Magpie gateway behind a same-machine gate. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness 侧边栏底栏挂件：实时路由（会话、分组/线路、供应商、实际服务模型、状态、耗时、TTFT、token、缓存命中、成本）、今日/7 天/30 天/全部用量与费用、额度窗口与重置倒计时、各模型速率，以及 DSH→网关→供应商的飞线；长任务完成时按 Magpie 同一条 turnDoneAlert 规则、同一种默认系统提示音提醒，并闪烁 DSH 任务栏按钮。带设置页：三种展示样式、逐块开关、金额与账号打码；数据来自对本地 Magpie 网关的只读代理，并带同机访问校验。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/msudustin/dsh-magpie-monitor/main/docs/icon-180.png
+tarball: https://github.com/msudustin/dsh-magpie-monitor/releases/latest/download/dsh-magpie-monitor.tgz

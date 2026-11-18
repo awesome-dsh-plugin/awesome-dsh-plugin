@@ -1,0 +1,6 @@
+url: https://github.com/lzlrt/dsh-cross-session
+name: lzlrt/dsh-cross-session
+category: session
+description:
+  en: 'Four tools that let DSH sessions message each other: send to another session (waking it if closed), reply to the sender, list sessions with stable cs_ aliases, and read recent messages without waking. Delivery goes through the host sessionController.prompt, so a cold-woken session gets the same capabilities as one opened in the GUI.'
+  zh: '四个工具让 DSH 会话之间互发消息：给另一会话发消息（关着会自动叫醒）、回信给发起方、列出会话并给出稳定的 cs_ 别名、只读查看最近消息而不唤醒。投递统一走宿主的 sessionController.prompt，冷唤醒的会话能力集与 GUI 打开的完全一致。'

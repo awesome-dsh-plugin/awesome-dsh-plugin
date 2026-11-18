@@ -2,5 +2,5 @@ url: https://github.com/xrn1997/dsh-session-delete
 name: xrn1997/dsh-session-delete
 category: session
 description:
-  en: 'Adds a trash for DSH sessions: nothing expires automatically. Delete or batch delete moves sessions there, where you can read, restore, or permanently delete them.'
-  zh: '给 DSH 会话加上回收站。增加删除会话、多选批量删除会话功能，删除的会话会被移至回收站。回收站内的会话可恢复，也可彻底删除；彻底删除就是永久删除，之后不可恢复，也不会自动过期。回收站内可以查看会话正文，方便区分会话。'
+  en: 'Adds a trash for DSH sessions: the host natively offers archive but no delete. Deleting one session or batch-deleting several moves each session together with its subagent children into a local trash; there you can read the full conversation, restore it, or permanently delete it. The panel has an archived tab as well, with read-only preview and one-step unarchive. Permanent delete cannot be undone, and nothing expires on its own.'
+  zh: '给 DSH 会话加上回收站——宿主原生只有归档、没有删除。单条删除或多选批量删除，都会把会话连同其子代理一起移入本机回收站；回收站里可读完整正文、恢复或彻底删除。面板另有「归档」档，可只读预览并一步解除归档。彻底删除后不可恢复，也不会自动过期。'

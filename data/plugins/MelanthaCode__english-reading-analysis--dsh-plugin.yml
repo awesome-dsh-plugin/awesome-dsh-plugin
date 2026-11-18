@@ -1,0 +1,6 @@
+url: https://github.com/MelanthaCode/english-reading-analysis/tree/main/dsh-plugin
+name: MelanthaCode/english-reading-analysis#英语阅读分析
+category: skill
+description:
+  en: 'English article and exam-paper analysis: paragraph-by-paragraph translation, answer keys, and long-sentence syntax breakdown, exportable as a print-ready PDF. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '英语文章或试卷分析，包括逐段翻译、参考答案、长难句解析等，可以作为 PDF 下载打印。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

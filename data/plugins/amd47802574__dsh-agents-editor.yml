@@ -1,0 +1,7 @@
+url: https://github.com/amd47802574/dsh-agents-editor
+name: amd47802574/dsh-agents-editor
+category: tools
+description:
+  en: 'A settings-panel editor for the host-wide global rules file ~/.dsh/AGENTS.md: Ctrl+S save with automatic pre-save backups, external-change conflict detection (409), backup preview and one-click restore. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在设置面板里直接查看和编辑宿主全局规则文件 ~/.dsh/AGENTS.md 的可视化编辑器：Ctrl+S 保存并自动备份、外部修改冲突检测（409 提示）、备份预览与一键恢复。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/amd47802574/dsh-agents-editor/main/assets/icon.png

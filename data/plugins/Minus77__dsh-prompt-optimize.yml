@@ -1,0 +1,7 @@
+url: https://github.com/Minus77/dsh-prompt-optimize
+name: Minus77/dsh-prompt-optimize
+category: ui
+description:
+  en: 'Rewrites the composer draft in place: the panel streams a structured rewrite above the input, a line diff confirms the replacement, and a nine-second undo takes it back. Local-only history, version compare, seven templates and variable extraction.'
+  zh: '在输入框里就地改写提示词：浮层在输入区上方流式生成结构化改写，替换前逐行 diff 确认，替换后 9 秒内可撤销；附带本地历史、版本对比、7 套模板与变量抽取。'
+icon: https://raw.githubusercontent.com/Minus77/dsh-prompt-optimize/main/assets/icon-180.png

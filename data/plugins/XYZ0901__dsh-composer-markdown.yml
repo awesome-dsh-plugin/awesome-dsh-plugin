@@ -1,0 +1,6 @@
+url: https://github.com/XYZ0901/dsh-composer-markdown
+name: XYZ0901/dsh-composer-markdown
+category: ui
+description:
+  en: 'Markdown preview of the composer draft, rendered above the input or in a right-sidebar tab, with a formatting toolbar that writes bold, italic, lists, tables and code fences back into the draft.'
+  zh: '在输入框上方或右侧栏标签页里实时渲染 Markdown 草稿，并提供可写回草稿的格式化工具条（粗体、斜体、列表、表格、代码块等）。'

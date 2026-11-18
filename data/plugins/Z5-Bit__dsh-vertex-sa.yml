@@ -1,0 +1,7 @@
+url: https://github.com/Z5-Bit/dsh-vertex-sa
+name: Z5-Bit/dsh-vertex-sa
+category: model
+description:
+  en: 'Vertex AI Gemini provider using local service-account JSON, with a native model-settings card, custom model entries, and per-model concurrency and cooldown.'
+  zh: '使用本地服务账号 JSON 接入 Vertex AI Gemini，提供原生模型设置卡片、自定义模型配置以及按模型的并发与冷却控制。'
+tarball: https://github.com/Z5-Bit/dsh-vertex-sa/releases/download/v0.1.4/dsh-vertex-sa-0.1.4.tgz

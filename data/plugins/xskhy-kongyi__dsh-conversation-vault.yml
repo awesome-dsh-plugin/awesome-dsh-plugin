@@ -1,0 +1,6 @@
+url: https://github.com/xskhy-kongyi/dsh-conversation-vault
+name: xskhy-kongyi/dsh-conversation-vault
+category: session
+description:
+  en: 'Tuck conversations out of a workspace so they stop appearing in every list, manage archived ones in one panel (grouped by workspace, collapsible, bulk clear), delete only the conversation log without touching any file, and distill long sessions into editable Markdown memory cards that any later session can read, search or append to through a memory_card tool. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把没用的对话从工作区彻底收起，集中在一个面板里管理归档（按工作区分组、可折叠、可整组清空），删除时只移除对话记录而不动任何文件；并把长对话蒸馏成可编辑的 Markdown 记忆卡，供后续会话通过 memory_card 工具读取、检索与追加。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

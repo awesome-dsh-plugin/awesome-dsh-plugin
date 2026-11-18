@@ -1,0 +1,7 @@
+url: https://github.com/chanchanxue/dsh-audio-extract
+name: chanchanxue/dsh-audio-extract
+category: usage
+description:
+  en: 'Adds an "Audio extraction" view to the session view switcher that stream-copies a video''s audio track into m4a without re-encoding, optionally trims the start and end, and writes title, artist, cover art and lyrics tags. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在会话视图切换条中新增一个「音频提取」页：把视频音轨流复制成 m4a（不重编码），可裁剪开头与结尾，并写入歌名、歌手、封面与歌词标签。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+# resubmitted after the repository age bar cleared

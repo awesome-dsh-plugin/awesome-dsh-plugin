@@ -1,0 +1,6 @@
+url: https://github.com/huanlin-labs/dsh-computer-browser
+name: huanlin-labs/dsh-computer-browser
+category: browser
+description:
+  en: 'Desktop and browser automation in one tool surface. Background CDP page reads and clicks escalate to foreground keyboard and mouse; screen observation and application control are in the same surface. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '桌面与浏览器合一的工具面：后台 CDP 读页与点击，必要时升到前台真实键鼠；屏幕观察与应用控制同在这一个工具面里。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

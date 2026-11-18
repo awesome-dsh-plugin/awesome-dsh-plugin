@@ -1,0 +1,7 @@
+url: https://github.com/geyaovip/zhixing-ark-dsh-plugins/tree/main/packages/mes
+name: geyaovip/zhixing-ark-dsh-plugins#mes
+category: tools
+description:
+  en: Query MES production progress, work orders, reports, and existing bills of materials with read-only Zhixing Ark authorization.
+  zh: 知行方舟 MES 生产跟踪，查询生产进度、工单、报工和已有 BOM。
+tarball: https://github.com/geyaovip/zhixing-ark-dsh-plugins/releases/download/apps-v1.0.0/dsh-plugin-zhixing-ark-mes-1.0.0.tgz

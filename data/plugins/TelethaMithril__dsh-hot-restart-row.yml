@@ -4,5 +4,5 @@ url: https://github.com/TelethaMithril/dsh-hot-restart-row
 name: TelethaMithril/dsh-hot-restart-row
 category: ui
 description:
-  en: Adds a "Hot restart" row under "Sign out" in the DSH account menu; it reconciles the profile plugin tree in place and reloads the page, without restarting the DSH process or dropping the current conversation.
-  zh: 在 DSH 账号菜单「退出登录」下面加一行「热重启」：原地对账 profile 插件树并刷新页面，不重启 DSH 进程，当前对话不丢。
+  en: 'Adds a "Hot restart" row under "Sign out" in the DSH account menu; it reconciles the profile plugin tree in place and reloads the page, without restarting the DSH process or dropping the current conversation. Fixed since 0.2.7 - the row is now a plain script injected from index.html instead of a dsh.client entry, so this plugin can no longer cause "web boot: N entries did not activate" on startup.'
+  zh: '在 DSH 账号菜单「退出登录」下面加一行「热重启」：原地对账 profile 插件树并刷新页面，不重启 DSH 进程，当前对话不丢。0.2.7 起该行改为由 index.html 注入的普通脚本（不再是 dsh.client 条目），因此本插件不会再导致启动时出现「web boot: N entries did not activate」。'

@@ -1,0 +1,6 @@
+url: https://github.com/Poy-Coder/dsh-channel-feishu
+name: Poy-Coder/dsh-channel-feishu
+category: remote
+description:
+  en: 'Binds one Feishu (Lark) chat to one DSH session: inbound text is delivered verbatim, answers stream back as a card, and attachments go both ways. Inbound is off by default; once on, an empty allowedUsers means the first person to message the bot is bound as the owner and everyone else is refused.'
+  zh: '把一个飞书（Lark）会话绑到一段 DSH 会话：收到的消息按原话投递，回答以流式卡片回传，附件双向收发。入站默认关闭；开启后 allowedUsers 留空时，第一个给机器人发消息的人会被绑定为主人，其他人一律被拒。'

@@ -1,0 +1,7 @@
+url: https://github.com/NightFrost42/dsh-compaction-weave
+name: NightFrost42/dsh-compaction-weave
+category: session
+description:
+  en: 'Incremental context compaction plugin for long conversations in DeepSeek Harness, condensing earlier dialogue into structured checkpoint summaries, retaining user requirements and task progress, and archiving original messages and attachments locally for history search and reading as needed. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '面向 DeepSeek Harness 长对话的增量式上下文压缩插件，将较早对话整理为结构化检查点摘要，保留用户要求与任务进度，并将原始消息与附件归档到本地以供按需历史搜索与读取。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/NightFrost42/dsh-compaction-weave/releases/download/v0.3.2-rc.4/dsh-compaction-weave-0.3.2-rc.4.tgz

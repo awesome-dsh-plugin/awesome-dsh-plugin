@@ -1,0 +1,8 @@
+url: https://github.com/gcwarmman/dsh-sidebar-narrator
+name: gcwarmman/dsh-sidebar-narrator
+category: ui
+description:
+  en: 'A right-sidebar narrator for DeepSeek Harness that says what the agent finished, is doing, and will do next, plus a read-only explain channel, a non-interrupting steer, and a stop that reports what it kept. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '右侧栏三行话，说清它干完什么、在干什么、下一步干什么；另有只读提问、不打断的提醒、以及把代价讲清楚再喊停。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/gcwarmman/dsh-sidebar-narrator/main/docs/icon.png
+tarball: https://github.com/gcwarmman/dsh-sidebar-narrator/releases/latest/download/dsh-sidekick-lens.tgz

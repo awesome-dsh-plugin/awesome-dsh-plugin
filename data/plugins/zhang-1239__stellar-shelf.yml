@@ -1,0 +1,7 @@
+url: https://github.com/zhang-1239/stellar-shelf
+name: zhang-1239/stellar-shelf
+category: ui
+description:
+  en: 'A local-first bookshelf rendered as a 3D starfield: galaxies group books by genre, star colour shows unread, reading and finished, and cover art appears as you approach. Imports EPUB, PDF, TXT, MOBI, AZW3, DOCX and Markdown, opens them in a full-screen reader with six display modes and eight Chinese fonts, and stores highlights and notes in local SQLite.'
+  zh: 把书架渲染成可以漂进去的 3D 星空：星系按题材分组，星的颜色表示未读 / 在读 / 已读完，靠近时才显示出封面。支持导入 EPUB、PDF、TXT、MOBI、AZW3、DOCX、Markdown，全屏阅读器提供六种显示模式与八种中文字体，摘录与笔记保存在本地 SQLite。
+icon: https://raw.githubusercontent.com/zhang-1239/stellar-shelf/main/icon-512.png

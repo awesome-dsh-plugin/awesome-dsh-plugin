@@ -1,0 +1,8 @@
+url: https://github.com/yubudong/dsh-time-desk
+name: yubudong/dsh-time-desk
+category: workflow
+description:
+  en: 'A local-first DSH time desk for projects, habits, lunar schedules, focus timers and a scoped AI assistant.'
+  zh: 'DSH 原生时间工作台，管理项目、习惯、农历日程与专注计时，内置时间精灵助手。'
+icon: https://raw.githubusercontent.com/yubudong/dsh-time-desk/c5084cd2ce582a56e9cd48640e7ce7928577305d/assets/time-spirit-a.png
+tarball: https://github.com/yubudong/dsh-time-desk/releases/download/v0.9.5/dsh-time-desk-0.9.5.tgz

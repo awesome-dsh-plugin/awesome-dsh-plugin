@@ -1,0 +1,7 @@
+url: https://github.com/jjjjjjjjnnjnn/dsh-triage/tree/main/packages/plugin
+name: jjjjjjjjnnjnn/dsh-triage#dsh-triage
+category: dev
+description:
+  en: 'Judges one DSH profile: why a plugin was refused or silently disappeared, what an upgrade would break, and a candidate measured in a throwaway DSH_HOME. Read-only by default; --apply backs up first and --undo restores the bytes. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给一个 DSH 组合做判断：插件为什么被拒或悄悄消失、升级会坏什么、候选在一次性 DSH_HOME 里实测。默认只读，`--apply` 先备份，`--undo` 逐字节还原。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/jjjjjjjjnnjnn/dsh-triage/main/docs/market/icon.png

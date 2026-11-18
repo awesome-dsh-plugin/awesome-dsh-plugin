@@ -1,0 +1,6 @@
+url: https://github.com/Jun2030/dsh-chat-tu
+name: Jun2030/dsh-chat-tu
+category: remote
+description:
+  en: Local WebRTC chat for DeepSeek Harness with channels, nicknames, SQLite history, and custom emojis.
+  zh: 为 DeepSeek Harness 提供局域网 WebRTC 聊天，支持频道、昵称、本地 SQLite 历史消息和自定义表情。

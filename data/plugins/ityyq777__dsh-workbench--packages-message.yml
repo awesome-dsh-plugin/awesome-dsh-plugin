@@ -1,0 +1,6 @@
+url: https://github.com/ityyq777/dsh-workbench/tree/main/packages/message
+name: ityyq777/dsh-workbench#message
+category: tools
+description:
+  en: 'Message center for DSH: one send entry for agents and other plugins, inbox with unread counts, stats and a configurable notification sound.'
+  zh: 'DSH 消息中心：给 agent 与其他插件统一的消息发送入口，收件箱、未读数、统计与可配置提示音。'

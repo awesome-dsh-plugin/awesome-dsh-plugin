@@ -1,0 +1,6 @@
+url: https://github.com/sweet560/dsh-plugin-yanyan-toolkit
+name: sweet560/dsh-plugin-yanyan-toolkit
+category: tools
+description:
+  en: 'A DeepSeek Harness toolkit bundling four independently toggleable plugins: a plugin update checker that also covers local git/file sources, session archiving and deletion reusing @linxin666/dsh-session-archive, a subagent manager with physical delete plus session-log retirement, and a plugin-icon generator. It adds its own host route to read component versions from each package and exposes three agent tools for listing, deleting and cleaning up idle subagents.'
+  zh: 'DeepSeek Harness 工具包，聚合四个可独立开关的插件：插件更新（覆盖本地 git/file 源）、会话归档与删除（复用 @linxin666/dsh-session-archive）、子智能体管理（物理删除 + 会话日志根除）与插件图标生成。自带 host 路由从各组件读取版本，并暴露三个 Agent 工具用于列出、删除与清理空闲子智能体。'

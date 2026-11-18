@@ -1,0 +1,7 @@
+url: https://github.com/ruaibeite/dsh-preflight
+name: ruaibeite/dsh-preflight
+category: usage
+description:
+  en: "Predict a task's steps, tokens, duration and cost from this machine's local session history, with a local price table for cost estimates. Read-only, local-only."
+  zh: "基于本机历史会话预检任务的步数、token、时长与费用（P25/P50/P75 区间），本地价格表用于费用估算；只读本地数据，无网络。"
+icon: https://raw.githubusercontent.com/ruaibeite/dsh-preflight/main/assets/icon-180.png

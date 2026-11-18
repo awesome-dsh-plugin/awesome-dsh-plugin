@@ -2,7 +2,7 @@ url: https://github.com/winditer/dsh-intertidal
 name: winditer/dsh-intertidal
 category: ui
 icon: https://raw.githubusercontent.com/winditer/dsh-intertidal/main/assets/icon-180.png
-tarball: https://github.com/winditer/dsh-intertidal/releases/download/v0.2.0/dsh-intertidal-0.2.0.tgz
+tarball: https://github.com/winditer/dsh-intertidal/releases/download/v0.2.1/dsh-intertidal-0.2.1.tgz
 description:
   en: 'Adds a full-screen sea overlay that appears on a schedule (3 minutes every 120 minutes by default) and fades out on its own. The phase, sky colours and moon come from the solar position computed on the host from a city table, so the light matches the real time and place. The water is either drawn procedurally on a canvas from a perspective noise field (random patches that grow toward the viewer, with sun glitter, near-field whitecaps and daytime gulls; at night a moon) or taken from images and videos in a folder you choose, or from web links fetched once into a local cache and graded to the current light. Includes quiet hours, deferring while you type, skip-today, a draggable corner-window form and an optional synthesised surf sound. No telemetry; the only network requests are the links you paste.'
   zh: '给 DSH 加一个按间隔浮现的整屏海：默认每 120 分钟浮现 3 分钟，到点自己淡出。时段、天色与月相由宿主按城市表算出的太阳位置决定，所以光和真实的时间地点对得上。海面可以是 canvas 程序化绘制（按透视随机分布的水面斑块，近处大、远处细碎，带碎光、近岸白浪与白天掠过的海鸥；夜里有一轮月亮），也可以是自选目录里的图片/视频，或从网页链接抓取一次后缓存的素材，再按此刻天光着色。包含静默时段、输入中推迟、今天跳过、可拖拽的右下角小窗与可选的合成海浪声。不采集数据；唯一的网络请求是你自己填的链接。'

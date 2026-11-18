@@ -1,0 +1,6 @@
+url: https://github.com/MrKleene/dsh-aoci-keeper
+name: MrKleene/dsh-aoci-keeper
+category: dev
+description:
+  en: 'Keeps an AOCI cognition index from drifting: each turn the model sees the finding count and the maintenance command, so index debt is paid before the task ends. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '让 AOCI 认知索引不再悄悄漂移：每轮开始时把 finding 数与维护命令交给模型，让索引债在任务结束前还清。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

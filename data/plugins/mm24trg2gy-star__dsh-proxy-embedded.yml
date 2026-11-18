@@ -1,0 +1,7 @@
+url: https://github.com/mm24trg2gy-star/dsh-proxy-embedded
+name: mm24trg2gy-star/dsh-proxy-embedded
+category: tools
+icon: https://raw.githubusercontent.com/mm24trg2gy-star/dsh-proxy-embedded/main/docs/icon.png
+description:
+  en: 'Paste a subscription link and go: the plugin ships an embedded mihomo core, starts the proxy and routes DSH outbound traffic (including web_fetch) through it, so no separate Clash client is needed. Supports Clash / V2Ray / Shadowrocket / sing-box / Surge subscriptions. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '粘贴订阅链接即用：插件自带 mihomo 内核，自动起代理并把 DSH 出站（含 web_fetch）接管过去，不用再单独开 Clash。支持 Clash / V2Ray / Shadowrocket / sing-box / Surge 订阅。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

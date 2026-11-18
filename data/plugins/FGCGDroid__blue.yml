@@ -2,5 +2,5 @@ url: https://github.com/FGCGDroid/blue
 name: FGCGDroid/blue
 category: security
 description:
-  en: 'Blue-team defense mode for CTF and incident response: 36 defensive tools, six worker roles, SQLite findings and tasks, an optional decoy server, deception/honeypot workflows, and a standalone console with full view.'
-  zh: 'CTF 网络攻防蓝队防御模式：36 个防御工具、六个执行角色、SQLite 事实库与任务队列，可选诱饵程序、欺骗防御与蜜罐闭环，以及带全面浏览的独立控制台。'
+  en: 'Blue-team defense mode for CTF and incident response: 66 defensive tools, 12 console tabs, 17 SQLite fact tables, six worker roles, MITRE ATT&CK rule mapping, high-risk task approval and audit, a timeline hash chain with Ed25519 evidence, decoy/deception workflows, JSONL and OTLP telemetry, a CVE defense pack and an asset-risk graph, plus a standalone console with full view. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'CTF 网络攻防蓝队防御模式：66 个防御工具、12 个控制台页签、17 张 SQLite 事实库表、六个执行角色，MITRE ATT&CK 规则映射、高风险任务审批与审计、timeline 哈希链与 Ed25519 证据、诱饵/欺骗防御、JSONL 与 OTLP 遥测、CVE 防御包与资产—风险图谱，以及带全面浏览的独立控制台。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

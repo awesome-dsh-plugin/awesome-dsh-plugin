@@ -1,0 +1,7 @@
+url: https://github.com/Akiyuki1130/dsh-observer
+name: Akiyuki1130/dsh-observer
+category: ui
+description:
+  en: 'Sidecar model narrates the main conversation''s progress in a floating panel or an Observer tab, without touching the main session. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '用另一个模型在悬浮窗或「观察」栏里实时播报主对话进度（做了什么、接下来做什么、是否卡住），不干涉主会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/Akiyuki1130/dsh-observer/releases/download/v0.7.5/dsh-observer-0.7.5.tgz

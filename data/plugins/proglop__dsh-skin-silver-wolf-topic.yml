@@ -1,0 +1,7 @@
+url: https://github.com/proglop/dsh-skin-silver-wolf-topic
+name: proglop/dsh-skin-silver-wolf-topic
+category: theme
+description:
+  en: 'Silver Wolf theme skin for DSH Desktop, with a built-in multi-skin manager. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '面向 DSH Desktop 的银狼主题皮肤，内置多皮肤管理器。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/proglop/dsh-skin-silver-wolf-topic/main/assets/icons/silver-wolf.png

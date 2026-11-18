@@ -1,0 +1,7 @@
+url: https://github.com/KKhxr/dsh-plugin-bilibili
+name: KKhxr/dsh-plugin-bilibili
+category: tools
+description:
+  en: Query Bilibili public data from a DeepSeek Harness agent — account stats, upload lists, video stats, and user search.
+  zh: 在 DeepSeek Harness 中查询 B 站公开数据：账号粉丝、投稿列表、单视频互动数据与用户搜索。
+icon: https://raw.githubusercontent.com/KKhxr/dsh-plugin-bilibili/main/assets/icon-180.png

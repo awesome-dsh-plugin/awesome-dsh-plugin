@@ -1,0 +1,7 @@
+url: https://github.com/lcy362/dsh-railkeeper
+name: lcy362/dsh-railkeeper
+category: ui
+description:
+  en: 'Takes over the left rail of DeepSeek Harness: reorder panels by dragging, rename them, swap in one of 24 built-in icons, hide them, and merge several into one group row that opens a member menu. Configuration applies instantly and survives restarts, and an existing dsh-panellist configuration can be imported in one click.'
+  zh: '接管 DSH 的左侧栏：拖拽排序、改名、换成 24 个内置图标之一、隐藏，以及把多个面板合并成一行（点开是成员菜单）。改动即时生效、重启后保留；可以一键导入已有的 dsh-panellist 配置。'
+tarball: https://github.com/lcy362/dsh-railkeeper/releases/latest/download/dsh-railkeeper.tgz

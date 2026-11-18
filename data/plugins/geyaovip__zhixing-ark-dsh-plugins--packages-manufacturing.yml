@@ -1,0 +1,7 @@
+url: https://github.com/geyaovip/zhixing-ark-dsh-plugins/tree/main/packages/manufacturing
+name: geyaovip/zhixing-ark-dsh-plugins#manufacturing
+category: tools
+description:
+  en: Query manufacturing orders, shortages, stock alerts, production progress, and lot traceability with read-only Zhixing Ark authorization.
+  zh: 知行方舟制造业进销存，按企业只读授权查询订单、缺料、库存预警、生产进度和批次追溯。
+tarball: https://github.com/geyaovip/zhixing-ark-dsh-plugins/releases/download/v1.0.0/dsh-plugin-zhixing-ark-manufacturing-1.0.0.tgz

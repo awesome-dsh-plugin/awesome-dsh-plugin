@@ -1,0 +1,8 @@
+url: https://github.com/yggizz/dsh-plugins/tree/main/packages/theme-toggle
+name: yggizz/dsh-plugins#theme-toggle
+category: theme
+description:
+  en: 'Adds a button beside the DeepSeek logo in the window title bar that switches DSH between the light and dark appearance, and shows the sun or the moon for the appearance it will switch to. It keeps no state of its own and does not reach the network; disabling it leaves the button gone and the appearance settable in Settings. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在窗口标题栏 DeepSeek 标志旁加一个按钮，点一下在浅色与深色外观之间切换，图标显示点击后会变成哪一种。插件自己不保存状态、不联网；关掉后按钮消失，外观仍在 DSH 设置里可改。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/yggizz/dsh-plugins/main/packages/theme-toggle/assets/icon-180.png
+# nudge: retrigger gate after the repository crossed 24h

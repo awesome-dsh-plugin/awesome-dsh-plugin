@@ -1,0 +1,6 @@
+url: https://github.com/zwh0714/dsh-resume-studio
+name: zwh0714/dsh-resume-studio
+category: docs
+description:
+  en: 'Resume workshop: one JSON renders HTML, DOCX and PDF through three presets that can be restyled with theme tokens (accent, font size, line height, section style) instead of hand-written CSS. It fits the page count you ask for and checks the writing (number coverage, bold density, entry length, date format). DOCX is the master and the PDF is converted from it, so both paginate identically; sections can be timeline, project, list or paragraph, named anything you like, and existing .doc/.docx/.odt resumes can be imported first. A4 or Letter, Chinese or English.'
+  zh: '简历工坊：一份 JSON 出 HTML / Word / PDF。三套预设可用主题 token（主色、字号、行高、分区样式）调整，不用手写 CSS；给定页数上限会自动收紧行距重排，并检查写作质量（数字覆盖、加粗密度、条目长度、时间格式）。Word 是母版、PDF 由它转出，两者分页一致；模块分条目 / 项目 / 列表 / 段落四种，标题可自定义，已有的 .doc/.docx/.odt 简历可先导入再重排。支持 A4 / Letter 与中英文。'

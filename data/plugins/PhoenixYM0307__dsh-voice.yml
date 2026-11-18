@@ -1,0 +1,6 @@
+url: https://github.com/PhoenixYM0307/dsh-voice
+name: PhoenixYM0307/dsh-voice
+category: voice
+description:
+  en: 'Adds a mic button to the chat composer that turns speech into text in the input box, and optionally reads each assistant reply aloud. Speech recognition and synthesis call DeepSeek''s official ASR and TTS endpoints, with the API key entered in the plugin settings page. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在输入框旁加一个麦克风按钮，把语音转成文字填进输入框；打开开关后，助手每轮回复自动朗读。语音识别与合成调用 DeepSeek 官方 ASR / TTS 接口，API Key 在插件设置页填写。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,6 @@
+url: https://github.com/Baimacao/dsh-pipem
+name: Baimacao/dsh-pipem
+category: memory
+description:
+  en: 'Error ledger and long-term memory for DSH: records each mistake as a searchable guard, injects it before you retry, auto-reminds on tool failure, detects reasoning loops, and ships bash plus a persona/journal system.'
+  zh: 'DSH 的错误账本与长期记忆：把每次踩的坑记成可检索的 guard，重试前先查；工具失败自动提醒；检测思考复读；内置 bash 工具与人格/心事本。'

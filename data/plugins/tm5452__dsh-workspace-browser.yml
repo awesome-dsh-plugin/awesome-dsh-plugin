@@ -1,0 +1,6 @@
+url: https://github.com/tm5452/dsh-workspace-browser
+name: tm5452/dsh-workspace-browser
+category: ui
+description:
+  en: 'Folder browsing for the workspace sidebar, offered next to the group-by modes in the view-options menu: workspaces become folders and sessions become files, with a path bar over the title, large-icon and list layouts, session status aggregated per folder, and right-drag gestures that go back, forward or one level up. Layout and current directory persist across session switches, and sorting, archive filters and search keep using the native settings.'
+  zh: 工作区侧栏的文件夹浏览：在「视图选项」里与分组方式并列，工作区变成文件夹、会话变成文件，标题区可展开路径栏，支持大图标与列表两种布局、按文件夹汇总会话状态，按住右键拖动可后退、前进或返回上一级。所选布局与当前目录保存在客户端、切换会话不丢失，排序、归档筛选与搜索沿用原生设置。

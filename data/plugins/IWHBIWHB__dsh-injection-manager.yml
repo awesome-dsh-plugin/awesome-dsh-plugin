@@ -1,0 +1,6 @@
+url: https://github.com/IWHBIWHB/dsh-injection-manager
+name: IWHBIWHB/dsh-injection-manager
+category: usage
+description:
+  en: 'Sees and switches everything a new DSH session injects before its first request, with a content browser, cross-session injection trend, event log, health checks, presets and a token budget.'
+  zh: 'DSH 上下文注入管理：把新会话首轮注入的提示词段落、运行时上下文、技能目录、工具 schema 与工作区规则逐条摊开，一键关整套件；支持查看每一项原文、跨会话首轮趋势、注入事件与健康检查，另给预设和 token 预算。'

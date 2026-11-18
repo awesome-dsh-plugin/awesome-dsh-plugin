@@ -2,6 +2,6 @@ url: https://github.com/spartawhy117/dsh-token-dash
 name: spartawhy117/dsh-token-dash
 category: usage
 description:
-  en: 'Token dashboard for DeepSeek Harness: per-provider monthly budgets, subscription quotas (GLM / Kimi Coding), account balances, and time-range cost and real-Token breakdowns — plus local JSON export and import for backup.'
-  zh: 'DSH Token 看板：按供应商的月度预算、订阅配额（GLM / Kimi Coding）、账户余额，支持当天 / 7 天 / 30 天 / 全部范围查看费用与真实 Tokens，并可本地导出 / 导入备份。'
+  en: 'Token and cost dashboard for DeepSeek Harness: per-provider budgets, subscription quotas (GLM / Kimi Coding) and account balances, with a composer pill, a popover and a full dashboard showing time-range cost, real tokens, cache hit rate and usage trend; works with any custom or local OpenAI-compatible provider, never prices an unpriced model as zero, and backs up to local JSON.'
+  zh: 'DSH Token 与费用看板：按供应商查看预算、订阅配额（GLM / Kimi Coding）与账户余额，输入框旁 Pill + 浮层 + 整页看板三处展示时间范围的费用、真实 Tokens、缓存命中率与用量趋势；支持自建 / 中转 / 本地等任意 OpenAI 兼容供应商，未定价模型不会按 0 元计，可导出 / 导入本地 JSON 备份。'
 icon: https://raw.githubusercontent.com/spartawhy117/dsh-token-dash/main/docs/pic/icon.png
