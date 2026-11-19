@@ -4222,6 +4222,7 @@ dsh plugin --profile web add dshmarket
 - [xiean676/dsh-freemodels-opencode](https://github.com/xiean676/dsh-freemodels-opencode) — 接入 OpenCode Zen 匿名免费车道：可刷新上游模型清单、勾选由 provider opencode 暴露的模型、逐个发真实请求得出七档结论，并用人工 S/A/B/C 评级让设置卡片与模型选择器按能力同序。
 - [xingzhen199186/dsh-advisor-group](https://github.com/xingzhen199186/dsh-advisor-group) — 主模型在专业/长尾/高风险或不确定问题上召集多个专家顾问模型，以复古 CRT 聊天组卡片展示：一次 ask_advisors 自动跑满自动深挖流水线（驱动模型追问、顾问接力、综合结论），真流式 SSE、26 个供应商预设、可配置每日配额、停止/继续，以及可选的顾问工具调用。
 - [xingzhen199186/dsh-subagent-custom](https://github.com/xingzhen199186/dsh-subagent-custom) — 子代理模型管控：由 Jev 判定本轮任务类别，再把子代理自身的请求改写为该类别对应的 provider、model 与推理强度（在 agent/request 钩子上执行）；会话内可用继承/自动/手动三种方式指定模型，每个角色可带一条先于任务注入的前置提示词，并可离线回放历史判定。
+- [XLNC-L/dsh-connect-madao](https://github.com/XLNC-L/dsh-connect-madao) — 把华为云码道（CodeArts Agent）的模型接入 DeepSeek Harness —— 12 个模型（GLM-5.2、GLM-5.3、DeepSeek-V4.1、Kimi-K3 等），支持图片输入、工具调用、思考强度与每日签到。直接与网关的签名 + SM4-GCM 加密协议对话，不需要码道客户端在运行。
 - [xqpsec/dsh-jailbreak](https://github.com/xqpsec/dsh-jailbreak) — 在请求边界重写出站的 /chat/completions 请求体，注入进化出的九维思维链支架（精英保留、片段交叉、一次确定性复评），用固定 20 目标基线打分，每次改写追加一行到插件数据根目录下的 live-requests.jsonl（默认 <cwd>/.aecot，可用 AECOT_ROOT 覆盖）。
 - [xuan666-lab/dsh-openrouter-provider-advisor](https://github.com/xuan666-lab/dsh-openrouter-provider-advisor) — 按量化、速度、缓存重度价格、上下文和可用率为当前 DSH 模型推荐 OpenRouter 供应商，并支持一键切换以帮助降低 token 成本。
 - [YangShen-SWE/dsh-plugin-simple-pet](https://github.com/YangShen-SWE/dsh-plugin-simple-pet) — Windows 二次元桌宠：查看 DeepSeek 余额与 Codex 额度，内置 Codex 多账号 OAuth 管理、逐账号额度与模型接入，支持简洁模式和设置自动保存。可选面板一键切号及逐账号授权的每日预热；多账号启动/5h满额触发暂不可用。
@@ -7974,7 +7975,7 @@ dsh plugin --profile web add dshmarket
 - [GXX182/dsh-vision-bridge](https://github.com/GXX182/dsh-vision-bridge) — 将会话图片转交可配置视觉服务，并向符合条件的 DeepSeek Harness 模型路由返回纯文本分析。
 - [haiziyao/dsh-vision-mix](https://github.com/haiziyao/dsh-vision-mix) — 把文本、识图和生图 API 组合成一个 Mix 模型并按对话内容自动路由：纯文本走聊天模型，用户图片和 Agent 截图走识图模型，后续可继续追问同一张图；还支持图片生成与编辑及会话级调用记录。
 - [hanhan9999999999999999999/dsh-see-world](https://github.com/hanhan9999999999999999999/dsh-see-world) — 让模型用摄像头看世界：多帧拼版并自动矫正曝光，可拖动面板里 30fps 的实时预览，以及可选定时把带帧的消息投进绑定的会话。
-- [Harm0ny-AI/DSH-Video2Agent#dsh-video2agent](https://github.com/Harm0ny-AI/DSH-Video2Agent/tree/main/packages/dsh-video2agent) — 你的 Agent 浏览了无数网页，现在该让它看视频了。Video2Agent 让 AI Agent 看懂视频、直接回答：B 站和本地视频都能问——讲了什么、哪条更好、值不值得看。跨视频检索返回视频与时间码，按时间码取帧作证据，一次批量分析 1-10 个视频；本地优先，云端 ASR/OCR 与 B 站登录可选。需要 Python 3.11+、FFmpeg 与 CLI（pip install video2agent），设置页可一键检查并安装环境。
+- [Harm0ny-AI/DSH-Video2Agent#dsh-video2agent](https://github.com/Harm0ny-AI/DSH-Video2Agent/tree/main/packages/dsh-video2agent) — B站/抖音收藏夹吃灰？想要Agent获得视频检索和理解能力？欢迎选择Video2Agent！一键安装，让Agent获取顶尖视频理解能力，并获取网络视频作为信息源。无论你是想调研社会趋势，还是自媒体工作者，只要需要你看视频完成的工作，现在统统交给Video2Agent即可！本地优先，云端 ASR/OCR 可选；B 站/抖音登录可选，解锁收藏夹/历史与 CC/AI 字幕。
 - [Harvey-Will/dsh-vision-analysis](https://github.com/Harvey-Will/dsh-vision-analysis) — DeepSeek Harness 图像理解插件：8 种分析模式（描述、OCR、图表取数、UI 评审、目标检测、对比、代码生成、诊断），支持任意 OpenAI/Anthropic 兼容视觉 API，内置免费视觉模型与限流自动切换。
 - [Harzva/dsh-maclens](https://github.com/Harzva/dsh-maclens) — 苹果设备端 Vision 工具：本地 OCR（含中文）、图像分类、人脸检测、文档版面分析与综合描述，100% 离线、无需 API key，支持长截图切片。
 - [hawkhai/wechat-ocr](https://github.com/hawkhai/wechat-ocr) — DSH 的本地微信 OCR 工具：`wechat_ocr_recognize` 针对本地图片路径返回识别文本和引擎的结构化结果。
@@ -10585,7 +10586,7 @@ dsh plugin --profile web add dshmarket
 - [kira905/dsh-ecosystem-panel](https://github.com/kira905/dsh-ecosystem-panel) — 只读生态面板：汇总实例的插件束、补丁插入、技能、升级健康与解耦健康。
 - [klT45/dsh-config-vault](https://github.com/klT45/dsh-config-vault) — 配置保险箱：为 DSH 配置创建快照、对比差异并安全回滚设置补丁、插件清单、技能与规则、工作区列表，凭据默认排除。
 - [kriskite/dsh-network-proxy](https://github.com/kriskite/dsh-network-proxy) — DeepSeek Harness 网络代理管理器：在设置界面即时切换跟随系统 / 手动 / 直连三种模式，立即生效。
-- [ksolodev/dsh-artel](https://github.com/ksolodev/dsh-artel) — 在项目的隔离副本里执行开发任务：Solo 模式一个 agent 独立完成，Swarm 模式三个 agent 在同一副本里通过 send_message/list_agents 互相通信；结果按文件展示 diff，只应用你批准的文件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [ksolodev/dsh-artel](https://github.com/ksolodev/dsh-artel) — 在项目的隔离副本里执行开发任务：Solo 模式一个 agent 独立完成，Swarm 模式三个 agent 在同一副本里通过 send_message/list_agents 互相通信，Conductor 模式增加一个指挥，负责分配份额、回答卡住的 agent 并整体验收成果（最多两轮返工）；结果按文件展示 diff，只应用你批准的文件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [kun2-5code/dsh-plugin-template](https://github.com/kun2-5code/dsh-plugin-template) — dsh 插件开发模板，覆盖配置、工具、事件、服务、钩子、浏览器 UI 插槽与斜杠命令。
 - [kute/dsh-keelwatch](https://github.com/kute/dsh-keelwatch) — 检查已装 DSH 插件的加载失败与依赖漂移，给反复失败的工具加冷却刹车，并按消息来源归因 token 成本。
 - [kuun993/dsh-loop-engine](https://github.com/kuun993/dsh-loop-engine) — Web 设置页的「循环引擎」开关，在五套引擎间切换驱动每个 dsh 会话的 agent 循环——内置 in-process 加托管的 Claude Code、Codex、Pi、Kimi Code——无需改动 harness；每个托管引擎都把思考与工具调用写入持久会话记录，接管命令、技能与 agent 预设，并经 dsh 子进程接缝沙箱运行。
@@ -11174,6 +11175,7 @@ dsh plugin --profile web add dshmarket
 - [slow-stack/euthyna](https://github.com/slow-stack/euthyna) — 面向 AI 编码代理的确定性安全审计事实与结论门禁：euthyna history 把每行被删代码归因到提交并标记安全修复类删除（--origins 追到最初引入者），euthyna coverage 报告哪些改动符号从未被测试调用，euthyna gate 用六道门禁逐条校验结论，拿不出证据的一律降级为观察。
 - [slywalker2006/dsh-passwords](https://github.com/slywalker2006/dsh-passwords) — 让 DeepSeek Harness 变成服务器级多租户平台：远程访问 + 自动 HTTPS、子用户权限与配额、沙盒强制、加密认证与审计日志。
 - [SodaZheng/dsh-totp](https://github.com/SodaZheng/dsh-totp) — 面向个人 DeepSeek Harness Web 实例的纯 TOTP 访问验证，支持设置内扫码绑定、一次性恢复码、动态启停保护和撤销所有页面授权。
+- [SSHOOTING/dsh-plugin-safe-route](https://github.com/SSHOOTING/dsh-plugin-safe-route) — 只读 DSH 命令，审计会话使用过的模型路由，并标记白名单之外的调用。
 - [STARDUSTLC666/dsh-code-security](https://github.com/STARDUSTLC666/dsh-code-security) — 代码安全工作台与 10 个 secure_* 工具：对文件、目录或 Git 改动执行确定性规则与密钥熵检查，支持依赖清单离线或 OSV 漏洞审计、脱敏证据查看、同范围修复复查与 Markdown/SARIF 报告导出，可选接入 Betterleaks / Semgrep CE / OSV-Scanner，内置 5 套工作台主题。
 - [Stars-XK/dsh-bitwarden](https://github.com/Stars-XK/dsh-bitwarden) — 接入 Bitwarden / Vaultwarden 密码库：6 个 AI 工具只返回条目元数据，密码通过受控执行通道注入子进程使用、回显脱敏、不进对话，设置页另有 Bitwarden 风格的密码库页面。
 - [startime-ltk/dsh-mimavault](https://github.com/startime-ltk/dsh-mimavault) — 把本机 MimaVault 密码库接入 DSH，提供 7 个工具用于元数据检索、条目读取、剪贴板复制、动态验证码、口令生成、域名受限的 API 调用与需人工确认的清空请求。默认对接 MimaVault 桌面应用（需另行安装）；可选的内置模式以明文保存条目。
