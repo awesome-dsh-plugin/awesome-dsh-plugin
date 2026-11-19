@@ -1058,7 +1058,7 @@ dsh plugin --profile web add dshmarket
 - [imcaibaicai/dsh-search-locate](https://github.com/imcaibaicai/dsh-search-locate) — 点击侧栏搜索结果后打开会话、滚动到与搜索片段对应的那一行，并短暂高亮。
 - [imkingjh999/dsh-shorts-wall](https://github.com/imkingjh999/dsh-shorts-wall) — 在 DSH Web UI 中加入默认贴边的竖屏短视频墙：YouTube Shorts 与 B站双源、关键词轮换、四角缩放及 Alt+S/Alt+M 快捷键。
 - [Imnotndesh/dsh-peak-pricing-warning](https://github.com/Imnotndesh/dsh-peak-pricing-warning) — 在模型选择器旁以行内文字显示 DeepSeek 峰谷定价状态、距下一次调价的倒计时，以及本次会话的预估费用。
-- [imnotRiv3r/dsh-transfer-dock](https://github.com/imnotRiv3r/dsh-transfer-dock) — 观察识别到的后台下载命令并显示实时进度卡片（字节、速度、剩余时间）；静默下载用 HEAD 探测总量。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [imnotRiv3r/dsh-transfer-dock](https://github.com/imnotRiv3r/dsh-transfer-dock) — 观察识别到的后台下载命令并显示实时进度卡片（字节、速度、剩余时间）；静默下载用 HEAD 探测总量。
 - [imwhatiam/dsh-mosaic](https://github.com/imwhatiam/dsh-mosaic) — 把回答里的 dsh-view 围栏渲染成卡片——文本、表格、图表、Mermaid 图与沙箱 HTML 组件——并提供可编辑的模型提示、render_view 工具和内置技能。
 - [inaflash123/dsh-ui-placement](https://github.com/inaflash123/dsh-ui-placement) — 把提问卡的「跳过」「提交」从贴右边收到中间偏右，并让输入区整列左移，避开右下角的桌面宠物。
 - [IndieXiaoLong/DSH-Enhance](https://github.com/IndieXiaoLong/DSH-Enhance) — 为 DSH Web GUI 增加对话命名、文件拖拽引用、编辑重发、消息时间线和悬浮设置面板。
@@ -2253,7 +2253,7 @@ dsh plugin --profile web add dshmarket
 - [Xchcy/dsh-codex-kit#projects-browser](https://github.com/Xchcy/dsh-codex-kit/tree/main/projects-browser) — 把侧边栏的工作区列表替换成 Codex 风格的浏览器：置顶 / 项目 / 最近三个分区标题滚动时固定在顶部，行首标记正在工作、等待审批、意外停止和已完成四种状态，支持右键切换排序、重命名和删除工作区，以及会话行的置顶和归档菜单。
 - [Xchcy/DSH-Reflex](https://github.com/Xchcy/DSH-Reflex) — 在 DSH 消息里右键链接或文件引用，弹出类似 ChatGPT 的菜单：默认打开方式、打开方式…、在文件管理器中打开、复制文件地址、复制文件名、复制文件内容、另存为…
 - [XcodeFish/dsh-file-link-menu](https://github.com/XcodeFish/dsh-file-link-menu) — 为聊天输出中的文件引用添加右键菜单，列出系统关联应用（带图标）供选择打开，在文件管理器中定位文件，并复制基于会话工作区解析的绝对或相对路径；代码块、普通文本与外部链接保持原生菜单。
-- [XDeemoH/PULSE](https://github.com/XDeemoH/PULSE) — dsh 运行面板，用于技能管理与 Skill 调用可视化：实时显示技能调用和工具调用；技能目录占用的 token 预算，预算线随模型上下文窗口变化；技能装配窗口可批量启用、停用技能，带预演和撤销；另有目标与灵感、对话收藏。应用技能装配会在共享的 ~/.agents/skills 与 ~/.agents/skills-parked 之间移动技能目录（先预演、可撤销），其他应用也会受影响；自动翻译、目标推断和灵感收集只有在首次打开时选择开启后，才会调用你的默认模型。
+- [XDeemoH/PULSE](https://github.com/XDeemoH/PULSE) — dsh 运行面板，用于技能管理与 Skill 调用可视化：实时显示技能调用和工具调用；技能目录占用的 token 预算，预算线随模型上下文窗口变化；技能装配窗口可批量启用、停用技能，带预演和撤销；输入框左侧的技能推荐栏会根据你正在写的内容推荐技能（本机打分，不调用模型），确认后可直接启用已停用的技能；另有目标与灵感、对话收藏。应用技能装配或从推荐栏启用技能，会在共享的 ~/.agents/skills 与 ~/.agents/skills-parked 之间移动技能目录（先确认、可撤销），其他应用也会受影响；自动翻译、目标推断和灵感收集只有在首次打开时选择开启后，才会调用你的默认模型。
 - [XenoPhonLau/dsh-activity-bar](https://github.com/XenoPhonLau/dsh-activity-bar) — 把 DeepSeek Harness 收起后的两侧栏变成 VS Code 那样的 44px 图标条：左条接管侧边栏导航与底部动作行，右条按 sidebarRightTabs 清单自动列出第三方面板，右侧面板可拖动改宽（300px 至窗口 60%）。设置里的「活动栏」两个开关，按浏览器保存。
 - [XHR666/dsh-mpkg-wallpaper](https://github.com/XHR666/dsh-mpkg-wallpaper) — 在浏览器里直接加载 Wallpaper Engine 的 .mpkg 作为 DSH 网页背景：内嵌视频、多时段切换、统一磨砂虚化、本地壁纸库与轮换。
 - [xi-zhao/OpenQuantum#openquantum-web-branding](https://github.com/xi-zhao/OpenQuantum/tree/main/packages/openquantum-web-branding) — 为 DeepSeek Harness 原生 Web 界面应用 OpenQuantum 品牌、浏览器元数据与 PWA 资产。
@@ -6579,6 +6579,7 @@ dsh plugin --profile web add dshmarket
 - [kexuejin/dsh-zhihu-dashboard](https://github.com/kexuejin/dsh-zhihu-dashboard) — 知乎面板：热榜（带趋势标记）、关注动态（收藏/创作/关注的人）、帖子追踪（问题/关键词/关注的人，支持自动创意简报），并提供 5 个对话工具（zhihu_search / hot / answer / global_search / followees）。
 - [keyblues/dsh-fengniao-company-search](https://github.com/keyblues/dsh-fengniao-company-search) — 在对话里直接查中国企业：说出公司名就能拿到工商基本信息、股东、高管、对外投资、工商变更，以及被执行、失信、限制高消费、经营异常、严重违法、行政处罚等司法与经营风险（共 11 类维度）；结果以对话卡片呈现，展开可看字段与原始数据，API Key 在插件页保存到 Harness 凭据库。
 - [keyblues/dsh-plugin-everything](https://github.com/keyblues/dsh-plugin-everything) — Windows 全盘文件搜索：按文件名、路径、扩展名、大小或修改时间检索，毫秒级从本机 voidtools Everything 索引返回匹配的文件与文件夹（完整路径、大小、修改时间）；另一张卡片显示 Everything 是否可达与索引条目数。内置官方 Everything SDK，不需要 es.exe 或 HTTP 服务；需安装并运行 Everything 1.4 以上（插件可自动拉起）。
+- [keyblues/dsh-tool-exposure](https://github.com/keyblues/dsh-tool-exposure) — 按 DSH 角色管理工具可见性，支持整组开关和逐工具设置，并为每个已注册工具的全局 MCP 服务器单独分组。
 - [kezan31/dsh-copy-tool](https://github.com/kezan31/dsh-copy-tool) — 提供按行复制工具，可替换或插入文件片段，并支持缩进控制和 diff 预览。
 - [kgmkm/dsh-genspark](https://github.com/kgmkm/dsh-genspark) — 将 Genspark 能力接入 DeepSeek Harness：网页搜索、抓取、图片/视频/音频生成、媒体理解、X/Instagram/Reddit 搜索与模型列表，提供 17 个工具和 18 个 /genspark-* 命令。需安装并登录 @genspark/cli（gsk login），或设置 GSK_API_KEY。
 - [kgmkm/dsh-rustxng](https://github.com/kgmkm/dsh-rustxng) — 用自托管的 RustXNG 元搜索引擎接管内置 web_search，按需下载并启动该二进制、空闲超时后停止；可选的抓取层还能解码仅在 <meta> 中声明编码的页面。
@@ -9556,6 +9557,7 @@ dsh plugin --profile web add dshmarket
 - [tangzheng202202/dsh-sparkos](https://github.com/tangzheng202202/dsh-sparkos) — 自媒体工作台插件：8 tab 看板（今日简报/叙事主线/选题/草稿/知识卡蒸馏审核/信息源/发布表现/系统建议），五守卫硬执行，VAULT 数据与代码分离，intel 模块只读接入并遵守四条红线。
 - [TaoruiLiu19/DSH-LLSA#web-collab](https://github.com/TaoruiLiu19/DSH-LLSA/tree/main/packages/web-collab) — DeepSeek Harness 任务的按需网页咨询：贴入资料与初审建议，子 Agent 可就一个具体疑点问一次网页对话，核验仍由 Agent 负责。所有 HTTP 路由现在都先过 DSH 的连接栅栏（Host/Origin 准入 + 已认证的活动 Peer）。
 - [TBTNCT/dsh-task-planning-mode#task-planning-bundle](https://github.com/TBTNCT/dsh-task-planning-mode/tree/main/presets/task-planning-bundle) — 为 DSH 增加「任务规划」模式：按版本迭代逐轮提问把需求问清楚，再产出可逐条执行的规划与提示词，自身不实现代码。
+- [tbx709/dsh-prompt-gate](https://github.com/tbx709/dsh-prompt-gate) — 你只打了一句话，剩下的全靠模型猜——这个插件先把这句话改写成一份完整提示词（目标、范围、验收标准），动手之前先交给你过目：你可以确认、提出修改、或直接按原话发送；如果 15 分钟不处理，它也会按原话继续。
 - [TCY07/dsh-dont-stop](https://github.com/TCY07/dsh-dont-stop) — 保证智能体长时间持续工作：设定一个截止时间，若提前完成任务，Dont-Stop 会自动督促它继续迭代、自主推进下一步任务。
 - [tensor-x/dsh-tauri-monitor](https://github.com/tensor-x/dsh-tauri-monitor) — DSH Desktop 通用监控插件：HTTP 轮询规则引擎。按规则定时轮询任意接口（多步骤、变量提取、JS 条件表达式），条件命中才唤醒一个可见的 agent 会话执行任务；未命中零模型调用、零 token 消耗。规则通过导航栏 GUI 面板配置：新建/编辑/启停/测试/立即触发/执行记录，与定时任务插件同款交互体验。
 - [The-Data-Galaxy/dsh-dpia-workbench](https://github.com/The-Data-Galaxy/dsh-dpia-workbench) — 为 DeepSeek Harness 添加带版本记录的 DPIA 工作台，关联材料来源、事实补正、补答、复评与待审阅报告。需 Python 3.9+ 及 `python-docx`、`pypdf`，PDF 模板还需 `reportlab` 与 `pdftoppm`。
