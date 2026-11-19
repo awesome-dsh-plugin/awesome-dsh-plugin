@@ -4,4 +4,3 @@ category: model
 description:
   en: 'Pins reasoning effort to the highest level every model offers, and keeps it pinned for agents created after the plugin loads.'
   zh: '把每个模型的推理档位钉在它支持的最高档，并且对插件加载后新建的 agent 继续生效。'
-tarball: https://github.com/devzer0o0/dsh-max-reasoning-effort/releases/download/v1.0.1/dsh-max-reasoning-effort-1.0.1.tgz
