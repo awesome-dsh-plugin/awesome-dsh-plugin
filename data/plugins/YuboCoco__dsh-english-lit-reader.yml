@@ -1,0 +1,7 @@
+url: https://github.com/YuboCoco/dsh-english-lit-reader
+name: YuboCoco/dsh-english-lit-reader
+category: ui
+icon: https://raw.githubusercontent.com/YuboCoco/dsh-english-lit-reader/main/docs/icon-180.png
+description:
+  en: 'English paper reader inside DeepSeek Harness: drag in a PDF and select a sentence to get its translation in the card column beside the page, with the model called only when you press Translate. Generates a five-section Chinese analysis of the background, the innovations, the technical approach, the experiments and the limitations, resolves the bibliography through Crossref, explains a formula through KaTeX typesetting or a selected term against the paper text, records highlights and annotations as two independent kinds that do not overwrite each other, and searches inside the document. Six interface tones, three paper colours applied as a darken-blended layer above the page canvas so only the white sheet is recoloured and text, figures and tables keep their own colours, one-two-three page layouts, zoom with Ctrl+wheel, two-way panning, and a per-paper recent list kept in IndexedDB.'
+  zh: '装在 DeepSeek Harness 里的英文文献阅读器：拖入 PDF，选中句子即可在页面旁的功能卡片里得到译文，点「翻译」才调用模型。按「研究背景与问题 / 核心创新点 / 技术方案 / 实验与结论 / 局限与可借鉴之处」五段生成中文分析，逐条通过 Crossref 查参考文献地址，用 KaTeX 真排版解释公式、结合论文原文解释选中术语，高亮与批注是两条互不覆盖的独立记录，并支持文内搜索。六套界面配色与三套页面配色（纸色是画布之上的一层 darken 混合，只改白纸，文字、图片与表格保持原色），单页/双页/三页布局，Ctrl+滚轮缩放，双向拖动，以及按论文保存在 IndexedDB 的近期阅读列表。'
