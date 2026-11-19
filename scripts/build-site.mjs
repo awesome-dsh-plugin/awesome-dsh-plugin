@@ -21,6 +21,7 @@ import { buildMarketIndex } from './lib/market-index.mjs'
 import { firstAddedDate } from './lib/added-dates.mjs'
 import { slugOf, slugHref, termOf } from './lib/terms.mjs'
 import { releaseMetadataFor } from './lib/release-manifest.mjs'
+import { catalogRepo, HISTORY_CACHE_KEY, publishReleaseHistory } from './lib/release-history.mjs'
 
 const ORIGIN = 'https://awesome-dsh-plugin.com'
 const DATES_FILE = 'data/added-dates.json'
@@ -1222,6 +1223,13 @@ fs.writeFileSync('docs/plugins.json', JSON.stringify(registry, null, 1) + '\n')
 // removes everything else about a plugin.
 {
   const listed = new Set(ordered.map((e) => e.url))
+  const history = updates[HISTORY_CACHE_KEY] ?? {}
+  // Pages limits the whole site to 1 GB. Keep space for the update manifest,
+  // sitemap and artifact metadata as well as the existing catalog pages.
+  const currentBytes = Object.keys(history).length === 0 ? 0
+    : fs.readdirSync('docs', { recursive: true, withFileTypes: true })
+      .reduce((bytes, file) => file.isFile() ? bytes + fs.statSync(`${file.parentPath}/${file.name}`).size : bytes, 0)
+  const { repositories: publishedHistory, publishedBytes, skipped } = publishReleaseHistory(ordered, history, 'docs', 900_000_000 - currentBytes)
   const payload = {
     name: 'awesome-dsh-plugin',
     url: ORIGIN,
@@ -1231,11 +1239,19 @@ fs.writeFileSync('docs/plugins.json', JSON.stringify(registry, null, 1) + '\n')
   }
   for (const [url, entry] of Object.entries(updates)) {
     if (!listed.has(url)) continue
-    payload.updates[url] = entry
+    payload.updates[url] = publishedHistory.has(catalogRepo(url))
+      ? { ...entry, releaseHistory: true }
+      : entry
+    payload.count++
+  }
+  for (const url of [...listed].sort()) {
+    if (payload.updates[url] || !publishedHistory.has(catalogRepo(url))) continue
+    payload.updates[url] = { releaseHistory: true }
     payload.count++
   }
   fs.writeFileSync('docs/updates.json', JSON.stringify(payload) + '\n')
   console.log(`updates.json: ${payload.count} entries, ${(fs.statSync('docs/updates.json').size / 1024).toFixed(0)} KB`)
+  console.log(`release history: ${publishedHistory.size} repository fragments, ${publishedBytes} bytes, ${skipped} over the Pages budget`)
 }
 
 const lastAdded = [...ordered].map((e) => e.added).sort().pop()
