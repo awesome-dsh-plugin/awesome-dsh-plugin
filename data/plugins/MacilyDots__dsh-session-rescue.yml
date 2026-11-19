@@ -1,0 +1,6 @@
+url: https://github.com/MacilyDots/dsh-session-rescue
+name: MacilyDots/dsh-session-rescue
+category: session
+description:
+  en: 'Session reliability kit: detects reasoning repetition loops and cancels the step, retries reasoning-only empty turns, records raw upstream streams on demand, hands off to a clean session after repeated degeneration, and reloads the renderer with Ctrl+Shift+R.'
+  zh: '会话可靠性套件：检测推理重复循环并中止该步、重试只有思考的空轮、按需记录上游原始流、连续退化后交接到干净会话，以及 Ctrl+Shift+R 重载前端。'
