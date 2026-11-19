@@ -1,0 +1,6 @@
+url: https://github.com/mumu1001ai-jpg/dsh-zhixun
+name: mumu1001ai-jpg/dsh-zhixun
+category: tools
+description:
+  en: Search public job listings by role and city, filter by freshness, save a resume locally, and rank jobs with the DSH model configured by each user.
+  zh: 按岗位与城市搜索公开职位，按时间范围筛选，本地保存简历，并使用每位用户自己的 DSH 模型进行岗位匹配。
