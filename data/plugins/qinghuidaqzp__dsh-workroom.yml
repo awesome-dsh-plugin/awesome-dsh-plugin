@@ -1,0 +1,6 @@
+url: https://github.com/qinghuidaqzp/dsh-workroom
+name: qinghuidaqzp/dsh-workroom
+category: security
+description:
+  en: 'Right-sidebar Workroom tab with a three-level autonomy switch (hands-off, normal, ask every step) that adds approval prompts on tools/pre-execute and never allows a call the rest of dsh would ask about or deny; git push, publish, sudo and similar high-risk commands ask in every level. A 176×50 pixel room under a WebGL2 glass knob shows whether your sessions are running, waiting for you, done or failed, with an optional chime.'
+  zh: '右侧栏"小书房"标签页：三档自主程度开关（放手跑、常规、每步确认），在 tools/pre-execute 上按档位增加确认提示，从不放行 dsh 本来会询问或拒绝的调用；git push、发布、sudo 等高风险命令在任何档位都要确认。WebGL2 玻璃旋钮下的 176×50 像素房间显示会话在运行、等你处理、已完成还是出错，可开提示音。'
