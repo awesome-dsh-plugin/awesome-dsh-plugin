@@ -2,6 +2,6 @@ url: https://github.com/yugyq/dsh-composer-quill
 name: yugyq/dsh-composer-quill
 category: ui
 description:
-  en: Predicts your next message after each turn and completes the half-typed sentence as grey text in the DSH composer. Tab accepts, Esc dismisses, and nothing is ever sent automatically.
-  zh: 回合结束时预测下一句，打字时以灰字补完半句话。按 Tab 采纳、Esc 关闭，绝不自动发送。
+  en: Suggests your next message after each turn and finishes the half-typed sentence inside the DSH composer, tidying typos and punctuation as it goes.
+  zh: 回合结束后给出下一句，打字时补完后半句，顺手修好错字和标点。
 icon: https://raw.githubusercontent.com/yugyq/dsh-composer-quill/main/assets/icon-180.png
