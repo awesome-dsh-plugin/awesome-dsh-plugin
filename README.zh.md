@@ -4060,6 +4060,7 @@ dsh plugin --profile web add dshmarket
 - [poloniumn/dsh-model-panel](https://github.com/poloniumn/dsh-model-panel) — 把输入框的模型选择位换成可搜索的服务商与模型表格，含逐模型折扣倍率、实时余额与套餐进度、渠道积分，以及每会话的启用子任务开关。
 - [prgrmrwy/dsh-auto-model-routing](https://github.com/prgrmrwy/dsh-auto-model-routing) — 通过 Jev 调整主会话推理投入而不换模型，为 fresh 子任务独立选择并应用能力与投入，展示决策分布并收集逐回复资源分配反馈。
 - [prgrmrwy/dsh-magpie-connector](https://github.com/prgrmrwy/dsh-magpie-connector) — 把自托管 Magpie 网关按上游归属接入为多个 provider route，原版模型选择器即显示 Magpie (Claude)、Magpie (Codex) 等分组；支持多线路自动切换、只读用量卡片、逐模型默认 effort、priority 档模型的会话级快速切换和可选 Cloudflare Access。
+- [pscly/dsh-sub2api](https://github.com/pscly/dsh-sub2api) — 在设置页用邮箱和密码登录 Sub2API 中转站，不用手动粘贴密钥：插件自动创建密钥、同步模型目录，并把余额、用量与充值放在同一个面板。自带 deepseek-flash 并设为默认模型。
 - [Pummelchen/TinyTitan#dsh-tinytitan](https://github.com/Pummelchen/TinyTitan/tree/main/plugins/dsh-tinytitan) — 把本机 TinyTitan 模型服务接入 Harness：按已安装模型刷新 llm-pi-ai 路由，并挂载一个不做思考的压缩后端。
 - [puppy-bai/dsh-quota-takeover](https://github.com/puppy-bai/dsh-quota-takeover) — 额度接力：在 Our Free Model 之上按你设定的平台顺序与模型档编排一条有序接力链，缺该模型、平台冷却、额度耗尽的格子自动跳过，结果写回 OFM 的 combos；因额度或限流中断后重新编排并向中断的会话补一条「继续」，让回合在下一个平台接着跑，链尾可选聚合渠道兜底模型或 DeepSeek 官方额度。
 - [pure-cow-horse/dsh-model-pool](https://github.com/pure-cow-horse/dsh-model-pool) — 把已配置、运行时注册、本地缓存的模型合并进一个面板，做探测与最小请求测试，一键拉每家渠道的上游 /v1/models 目录，再把要留的模型串成命名方案。虚拟 provider ModelPool 在请求发起时顺延，带按模型冷却、指数退避、图片请求避开纯文本模型、被拒思考档位记忆 10 分钟。另有按天与模型的 token 台账（可导 CSV）和 21 个回归探针。不是 dsh-llm-fallbacks 的 fork。
@@ -4900,6 +4901,7 @@ dsh plugin --profile web add dshmarket
 - [lzlrt/dsh-cross-session](https://github.com/lzlrt/dsh-cross-session) — 四个工具让 DSH 会话之间互发消息：给另一会话发消息（关着会自动叫醒）、回信给发起方、列出会话并给出稳定的 cs_ 别名、只读查看最近消息而不唤醒。投递统一走宿主的 sessionController.prompt，冷唤醒的会话能力集与 GUI 打开的完全一致。
 - [Mabinogi-Cichol/dsh-progress-beat](https://github.com/Mabinogi-Cichol/dsh-progress-beat) — 让 agent 在长工具链中途说明进度，而不是一路静默到最终答复：一条随每次请求下发的常驻系统提示词规则，加上每 N 次工具调用后注入的一条提醒。插件页内的面板可调整步频、提醒上限与两段文本，保存即热生效。
 - [MacilyDots/dsh-session-inherit](https://github.com/MacilyDots/dsh-session-inherit) — 会话菜单新增「继承」：把长会话里的具体锚点（任务原文、最近的用户指令、改过的文件、最近的失败、命令、待办）机械提取成交接单，在干净的新会话里接着干——预设默认一并继承，不复制历史，也不调用模型。
+- [MacilyDots/dsh-session-rescue](https://github.com/MacilyDots/dsh-session-rescue) — 会话可靠性套件：检测推理重复循环并中止该步、重试只有思考的空轮、按需记录上游原始流、连续退化后交接到干净会话，以及 Ctrl+Shift+R 重载前端。
 - [mailmrcai/dsh-hermes-session](https://github.com/mailmrcai/dsh-hermes-session) — 只读读取本机 Hermes Agent 的会话库，把会话导入当前会话作为有界、不可信的背景上下文：输入框按钮可搜索全部 profile 的会话，另有 hermes_sessions_list 与 hermes_session_import 两个工具。
 - [majia007/dsh-session-context-config](https://github.com/majia007/dsh-session-context-config) — 为新会话选择注入的工具集合与系统提示词：档位表逐组切换工具、system 段逐项开关，被延迟的工具保留名字与功能摘要占位，工具表和前缀缓存保持稳定。
 - [Manbaout-08/dsh-purge](https://github.com/Manbaout-08/dsh-purge) — 在会话菜单中加入彻底删除：把会话日志文件从磁盘移除，或经宿主注册表删除整个工作区及其全部会话；另提供 /purge 命令。与本列表中其他同名 dsh-purge（提示词补丁类）插件无关，但使用相同的 dsh-purge 行 id 和 /purge 命令，请勿同装。
@@ -9894,6 +9896,7 @@ dsh plugin --profile web add dshmarket
 - [AIcivilization/dsh-mishu](https://github.com/AIcivilization/dsh-mishu) — DSH 小秘书：每 15 分钟按当前状态分诊 GitHub 未读通知（已解决的替你关掉），记住你交代的到期事项（账单、续费、证件、生日）到时提醒，只读盯着邮箱收件箱；密码只进系统钥匙串。
 - [airenburen/dsh-windows-notify](https://github.com/airenburen/dsh-windows-notify) — 给 DeepSeek Harness 加 Windows 原生通知：会话需要你操作（要权限、提问、出错、可选回合结束）时弹 Toast，点通知回到 DSH，通知上可直接「允许/拒绝」审批，另提供 notify_user 工具与 HTTP 接口。
 - [AK-blank/dsh-plugin-mac-notify](https://github.com/AK-blank/dsh-plugin-mac-notify) — 会话结束、或 Agent 卡在等你回答／批准／排错时，发一条 macOS 系统通知；横幅带上最后一条回复并播放你的系统提示音，点击即可回到 DSH 页面。
+- [AmazarashiEnduerRain/dsh-unread](https://github.com/AmazarashiEnduerRain/dsh-unread) — Codex 风格未读提醒：会话任务运行完成或审批待处理时，在 Windows 任务栏图标上显示黑底白字数字角标，并在会话侧栏提供未读圆点与标记已读/未读。
 - [amlyczz/dsh-lark-link](https://github.com/amlyczz/dsh-lark-link) — DeepSeek Harness 的高可靠飞书/Lark 桥接：扫码一键认证、卡片化命令与意图确认、at-least-once 零丢失出站队列、多媒体出入站、/doctor 会话日志 ZIP，并复用 DSH Web GUI 把会话归入正确工作区。
 - [andyfan1094/dsh-feishu](https://github.com/andyfan1094/dsh-feishu) — 接入飞书自建应用，把每个飞书会话映射到独立的 DSH Agent，经卡片 JSON 2.0 流式回复，不可用时回退纯文本。
 - [aokamoaki/dsh-notify](https://github.com/aokamoaki/dsh-notify) — 对话完成通知：回合完成/出错/目标完成/提问/审批时弹出 Windows toast 与提示音，仅后台提醒，会话头部铃铛即控制中心。
@@ -11892,6 +11895,7 @@ dsh plugin --profile web add dshmarket
 - [jy78-hsd/dsh-coke](https://github.com/jy78-hsd/dsh-coke) — dsh-coke（小猫coke）：DSH 桌面上的猫桌宠。左键点它按权重抽 7 句台词并 Q 弹蹦一下；右键能「对话」（用当前模型回答，可配表情包）、「唱歌」（掏麦克风）、「形态展示」（头顶随机形态卡片）、「自定义装扮」（绿幕检测后换形象）、「枪击小猫」；脚下按钮查 DeepSeek 余额（需 DeepSeek API Key）；默认随 DSH 自动启动，找不到 Electron 时先下载约 100MB 到 ~/.dsh/electron（期间可用页面内模式）。
 - [kakabuxiangdong/qq-bot-pro](https://github.com/kakabuxiangdong/qq-bot-pro) — 给 DSH 的官方 QQ 机器人通道（@tencent-connect/dsh-qqbot 0.5.3/0.5.4）补上表情包工具、冷场主动发言、长期记忆和「设置 → 插件」页。安装需手动：先运行 lib/patch-host.mjs 给已安装通道打 6 处补丁（自动备份、可 --revert），再用 --register 登记进 profile；另需 QQ 开放平台机器人（appId/appSecret），并由群管开启「接收所有消息」。通道 access 默认 open（任何能给机器人发消息的人都能用），对外暴露前请改成 allowlist 或 disabled。
 - [kanoonak/dsh-whale-catcher](https://github.com/kanoonak/dsh-whale-catcher) — DSH Web 界面里的两分钟小游戏：抓到的数字累加到身上，比自身大的鱼会掉一颗心，白饭回血，鲸元券让下一钩无视大小。单文件 HTML，不联网，无数据上报。
+- [Kapozux/dsh-xiaobenben](https://github.com/Kapozux/dsh-xiaobenben) — 住在 DSH Web 右下角的鲸鱼娘桌宠：点她一下，她翻出一件你和 agent 一起干过的真事，带你的原话；台词默认来自本机模板，你同意后可以用自己配置的模型来写。另带一个 agent 年度回顾页。
 - [kendu76/dsh-music-player](https://github.com/kendu76/dsh-music-player) — DSH 音乐/小说播放器：在网页里听本地音乐（HTTP 流式）、用 AI 声音朗读本地小说（.txt/.epub）、播放在线 QQ/酷狗/网易云音乐与网络电台（支持 HLS 直播流）、定时播报每日新闻；可在面板操作，也可让 agent 通过 music_play 工具直接点播。
 - [Kevinwu901113/dsh-dot](https://github.com/Kevinwu901113/dsh-dot) — 住在自己手机上的角色：插件自动安装并运行她的 Android 手机，任何 App 的新通知都能叫醒她；她自己装 App，逛小黑盒、B 站等并点赞评论；有自己的 QQ（NapCat / SnowLuma，分条回复、发表情包）；记忆含人物卡、每天 23:30 的日记和叫醒前的自动召回（默认本机 embedding，可切 SiliconFlow / DashScope）；两次对话之间的生活（幕间，按 HDS-Interlude）；可选 microVM 电脑带审批闸门。右侧栏有手机画面、虚拟机画面和 dot 面板；个人设置集中在 ~/.dsh/dsh-dot.json，六个组件都能单独关闭。只有 `/qq owner` 指定的 QQ 号算你本人，别人的消息按不可信通知处理。
 - [KhalilWong/dsh-plugin-touchline-football#plugin](https://github.com/KhalilWong/dsh-plugin-touchline-football/tree/main/plugin) — 为 DSH 提供足球比分小窗、事件推演球场和本地追踪回放。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
