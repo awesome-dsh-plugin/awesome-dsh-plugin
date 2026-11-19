@@ -1,0 +1,7 @@
+url: https://github.com/zhou200310/dsh-imessage
+name: zhou200310/dsh-imessage
+category: notify
+tarball: https://github.com/zhou200310/dsh-imessage/releases/download/v0.3.0/dsh-imessage-0.3.0.tgz
+description:
+  en: 'DSH 0.2.2 adaptation of photon-hq/dsh-imessage: the same Photon-hosted two-way iMessage channel, fixed for the 0.2.2 host line — settings registration, session-persistence reads, message source kind, listener auto-restart after a cold boot, and workspace attachment for plugin-created sessions — with attachments carried both ways: inbound images land in the model context as ImageBlocks, and images or files the agent produces are sent back to the phone as native iMessage attachments. Installs prebuilt from the release tarball.'
+  zh: 'photon-hq/dsh-imessage 的 DSH 0.2.2 适配版：同样是 Photon 托管的双向 iMessage 通道，修好了在 0.2.2 上的断层——settings 注册方式、会话持久化读取、消息 source kind、冷启动后 listener 自动恢复、插件新建会话的工作区挂载；附件双向打通：收到的图片以 ImageBlock 进模型上下文，agent 产出的图片与文件按原生 iMessage 附件发回手机。从 release 预构建包安装，无需自行构建。'
