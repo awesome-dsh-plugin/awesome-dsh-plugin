@@ -1,0 +1,6 @@
+url: https://github.com/a4223091/dsh-memory-book
+name: a4223091/dsh-memory-book
+category: memory
+description:
+  en: 'Per-project local memory for DSH: global, primary and transient libraries; seven project documents (brief, planning, plan, status, handover, decisions, experience) with version history on the five versioned ones; engine-enforced maintenance rounds after substantive changes.'
+  zh: 'DSH 的按项目本地记忆：全局、主项目、临时项目三库；7 类项目文档（说明及目标、策划、计划、状态、交接、决策历史、项目经验），其中 5 类保留版本历史；实质变化后由引擎强制追加补更轮。'

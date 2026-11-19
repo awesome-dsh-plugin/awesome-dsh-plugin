@@ -1,0 +1,6 @@
+url: https://github.com/jiangnanquan/dsh-uxexo
+name: jiangnanquan/dsh-uxexo
+category: ui
+description:
+  en: 'DSH Web UI enhancement plugin with a dedicated live-toggle settings page: 25 terminal-aesthetics themes (supporting 0.2.x glass menus), 3 light-theme ink modes, CJK-first 0.5-narrow monospace typography schemes with live font detection, compact layout, collapsible think and tool-chain capsules, account balance and session cost with a 30-day chart, official peak/off-peak pricing hints with auto-updated holiday calendar, and host-side settings persistence. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH Web 界面增强插件，提供独立「界面增强」实时开关设置页：25 套《终端美学》配色主题（适配 0.2.x 玻璃菜单）、浅色三档文字墨色、中文优先 0.5 窄体等宽字体方案与实时字体探测、紧凑布局、思考/工具链折叠胶囊、官方余额/本轮成本与 30 天用量图表、峰谷计费徽标（自动拉取年度法定节假日），以及宿主侧 settings.json 持久化。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

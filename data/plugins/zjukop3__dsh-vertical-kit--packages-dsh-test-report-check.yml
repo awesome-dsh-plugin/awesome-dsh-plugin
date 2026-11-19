@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-test-report-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-test-report-check'
+category: 'tools'
+description:
+  en: 'Test-report hygiene from markdown: the counts must add up (passed + failed + skipped = total), the environment must be stated, and each failure needs somewhere to start. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '测试报告的书记检查：通过+失败+跳过必须等于总计（不平直接报出算式）、测试环境在场、有失败就要有失败详情。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

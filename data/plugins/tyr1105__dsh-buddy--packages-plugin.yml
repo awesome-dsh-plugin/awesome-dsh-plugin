@@ -2,7 +2,7 @@ url: https://github.com/tyr1105/dsh-buddy/tree/main/packages/plugin
 name: tyr1105/dsh-buddy#dsh-buddy
 category: agi
 description:
-  en: "AI team with a pixel-art office showing each teammate's status and daily trail. A lead runs project sessions; daily caps per teammate. DSH Desktop, macOS only."
-  zh: '带像素办公室的 AI 团队：显示每位队友当前的状态和当天做过的事。项目会话由负责人安排分工，队友互相 @；队友每天自己开工的次数和 token 有上限。仅支持 macOS 上的 DSH 桌面版。'
+  en: "AI team with a pixel-art office. Tell the chief what you need: it drafts an agreement (scope, done criteria, estimated cost) and work starts only after you confirm. Results are checked item by item before you accept, with a cost receipt. The office shows each staff member's status and daily trail. DSH Desktop, macOS only."
+  zh: '带像素办公室的 AI 团队：对总管说一件事，总管先给出约定（范围、怎样算做完、预计消耗），确认后才开工；员工执行，结果逐条核对后交给你验收，并给出消耗回执。办公室显示每位员工当前的状态和当天做过的事。仅支持 macOS 上的 DSH 桌面版。'
 icon: https://raw.githubusercontent.com/tyr1105/dsh-buddy/main/packages/plugin/assets/icon.png
 tarball: https://github.com/tyr1105/dsh-buddy/releases/latest/download/dsh-buddy.tgz

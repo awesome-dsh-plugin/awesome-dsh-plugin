@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/dsh-clinic-intake
+name: liuhange789/dsh-clinic-intake
+category: tools
+description:
+  en: 'Pre-visit intake structuring for clinics: six patient questions become a structured intake summary (chief complaint location / character / duration, medications with frequency, allergies, past history, reason-category tag) capped at 300 Chinese characters. Rule-based and local-only, it redacts phone numbers, ID numbers, emails and name labels, and never suggests a diagnosis, triage decision or medication. Ships two host tools, a web-UI intake wizard in the session header, and an offline single-file HTML form for the waiting room.'
+  zh: "诊前信息结构化：患者候诊时回答六个问题，插件把回答整理成 300 字内的就诊摘要（主诉部位/性质/病程、用药与频次、过敏史、既往史、就诊原因标签），可在 Web 界面会话头部的「候诊采集」向导线完成，也可生成一个离线单文件 HTML 填写页给候诊区平板使用。纯规则提取、本地处理，自动隐去手机号、身份证号、邮箱与姓名标签，不做诊断、分诊或用药建议。"

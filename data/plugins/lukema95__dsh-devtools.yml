@@ -1,0 +1,7 @@
+url: https://github.com/lukema95/dsh-devtools
+name: lukema95/dsh-devtools
+category: dev
+description:
+  en: 'Connects GitHub, Figma, Vercel, DigitalOcean, Notion and Linear as MCP servers, then manages their tools, permissions and activity from one DSH panel.'
+  zh: '将 GitHub、Figma、Vercel、DigitalOcean、Notion 和 Linear 接入 DSH，并在一个面板中管理工具、权限和调用活动。'
+icon: https://raw.githubusercontent.com/lukema95/dsh-devtools/main/assets/icon-180.png

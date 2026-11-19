@@ -1,0 +1,7 @@
+url: https://github.com/zhangfac-888/personal-memory
+name: zhangfac-888/personal-memory
+category: memory
+tarball: https://github.com/zhangfac-888/personal-memory/releases/download/v0.1.0-preview.20261104/zhangfac-888-personal-memory-dsh-0.1.0.tgz
+description:
+  en: 'Connects DeepSeek Harness to a locally installed Personal Memory service over HTTP, exposing memory search and retrieval tools.'
+  zh: '把 DeepSeek Harness 连接到本机安装的 Personal Memory 服务，通过 HTTP 暴露记忆检索工具。'

@@ -1,0 +1,7 @@
+url: https://github.com/chuilian/dsh-session-trash
+name: chuilian/dsh-session-trash
+category: session
+icon: https://raw.githubusercontent.com/chuilian/dsh-session-trash/main/assets/icon-180.png
+description:
+  en: 'Session deletion for the DSH sidebar: a menu entry moves the session into a recoverable recycle bin, with batch selection, search, a permanent-delete step, and an audit log. The confirmation dialog only asks when there is a real cost — a session with running work, or one that scheduled tasks point at — and it names which of the two it is. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给 DSH 侧栏补上会话删除：菜单里的删除把会话移进可恢复的回收站，另有批量多选与搜索、彻底删除与审计日志。确认弹窗只在真有代价时才出现——会话有正在跑的工作，或有定时任务指向它——并写明是哪种情况。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

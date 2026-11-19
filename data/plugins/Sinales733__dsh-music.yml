@@ -1,0 +1,7 @@
+url: https://github.com/Sinales733/dsh-music
+name: Sinales733/dsh-music
+category: voice
+description:
+  en: 'Brings the song you are playing (Spotify, NetEase Cloud Music, QQ Music, KuGou and more) into DeepSeek Harness: the line being sung in the running indicator and under the composer, lit word by word; a cover capsule to play or pause, and scroll on to skip; a ring of light on the composer and the window''s edge glowing with the beat; the cover flowing behind the window; the whale tail moving to the beat; and the player''s volume stepping back while the AI waits for your approval. Windows only; lyrics from NetEase, QQ Music, KuGou and LRCLIB.'
+  zh: '把你正在听的歌（Spotify、网易云音乐、QQ 音乐、酷狗等）带进 DeepSeek Harness：运行指示器和输入框下显示逐字点亮的歌词；封面小胶囊点一下播放或暂停，滚动滚轮切歌；输入框的光环和窗口边缘跟着节拍发光；窗口底下流动着封面颜色；鲸尾跟着鼓点摆；AI 等你批准时播放器音量自动调低。仅限 Windows；歌词来自网易云、QQ 音乐、酷狗和 LRCLIB。'
+icon: https://raw.githubusercontent.com/Sinales733/dsh-music/main/assets/icon-256.png

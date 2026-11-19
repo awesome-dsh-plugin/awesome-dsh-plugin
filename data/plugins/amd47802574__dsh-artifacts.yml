@@ -1,0 +1,6 @@
+url: https://github.com/amd47802574/dsh-artifacts
+name: amd47802574/dsh-artifacts
+category: ui
+description:
+  en: 'Artifact manager for DSH: a sidebar entry and central panel to browse and manage the files DSH generates, with colored card / list views, cross-directory search, image and text previews, sorting and filtering, and file management (open, reveal in Explorer, rename, new folder, delete). The artifact root is configurable in-panel and defaults to ~/.dsh/artifacts.'
+  zh: '产物管家：在左侧栏新增入口，集中浏览和管理 DSH 生成的产物文件，支持彩色卡片/列表两种视图、跨子目录全局搜索、图片与文本预览、排序筛选，以及打开/在资源管理器中显示/重命名/新建文件夹/删除等文件管理操作；产物根目录可在面板内设置，默认 ~/.dsh/artifacts。'

@@ -1,0 +1,6 @@
+url: https://github.com/Tera-Dark/dsh-desk-kit
+name: Tera-Dark/dsh-desk-kit
+category: ui
+description:
+  en: 'Reminders, quick notes with screenshots, a bookmark grid and an encrypted vault in one sidebar tab, plus 27 agent tools, global search, and backup export/import; data stays local in ~/.dsh/desk-kit. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '侧栏标签页里的定时提醒、能贴截图的随手便签、网页收藏格子和加密保险库，另带 27 个 Agent 工具、全局搜索与备份导入；数据只落在本机 ~/.dsh/desk-kit。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

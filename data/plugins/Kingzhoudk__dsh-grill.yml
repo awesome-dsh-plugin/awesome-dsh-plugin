@@ -1,0 +1,8 @@
+url: https://github.com/Kingzhoudk/dsh-grill
+name: Kingzhoudk/dsh-grill
+category: agi
+icon: https://raw.githubusercontent.com/Kingzhoudk/dsh-grill/main/assets/icon-180.png
+tarball: https://github.com/Kingzhoudk/dsh-grill/releases/latest/download/dsh-grill.tgz
+description:
+  en: 'Per-conversation Grill switch in the composer tool row (also /grill on and /grill off): while it is on, the agent analyzes every request for ambiguity, missing information and contradictions, asks focused questions with 2-4 concrete options and a repair proposal, and plans or executes only after every blocking question is resolved. Trivial work is done directly with a one-line reading; non-trivial work is planned and stopped for approval. State is folded from the session log, so reload, resume and fork restore it, and a delegated subagent reports unresolved questions instead of asking.'
+  zh: '输入框工具行里的按会话开关（也可用 /grill on、/grill off）：开启后 Agent 先分析每条请求中的模糊、缺失与矛盾信息，用 ask_user_question 给出 2–4 个具体选项与修复方案，等所有阻塞问题澄清后才规划或执行；琐碎工作直接做并附一行说明，非琐碎工作先给计划、停下等批准。状态从会话日志折叠得出，刷新、恢复与分叉都会还原；被委派的子代理不提问，而是把未决问题写进最终结果。'
