@@ -5999,6 +5999,7 @@ dsh plugin --profile web add dshmarket
 - [a1121611810/dsh-media-converter](https://github.com/a1121611810/dsh-media-converter) — DeepSeek Harness 的本地多媒体工具箱：27 种视频/音频/图片格式互转、裁剪、不重编码地剥离音轨或画面、导出内嵌字幕为 .srt、带前后对比预览的图片压缩、元数据查看与改写、Base64 编解码——全部走本机已装的 ffmpeg，文件不出本机；同一引擎也注册为 agent 可调用的 media_toolbox 工具。
 - [a23842/dsh-waste-market](https://github.com/a23842/dsh-waste-market) — DeepSeek Harness A 股行情面板：实时大盘指数、技术选股（13 项信号 + 多策略交叉）、7×24 多源快讯聚合、自选股分组管理、市场情绪温度计（连板梯队/涨跌家数）、K 线图（MA/EXPMA/BOLL 叠加）、板块榜/涨停池/龙虎榜。
 - [a494359163-byte/dsh-multicad](https://github.com/a494359163-byte/dsh-multicad) — 通过 MCP 把 AutoCAD、中望、浩辰、BricsCAD 接入 DeepSeek Harness，内置 CAD 服务端，首次运行自动搭建私有 Python 环境。需要 Windows、本机已安装上述任一款 CAD、PATH 上有 Python 3.10+，且 CAD 与 DSH 以同一 Windows 用户、同一权限级别运行。
+- [a903067276-rgb/dsh-tomatronic-child-raise](https://github.com/a903067276-rgb/dsh-tomatronic-child-raise) — 问问 / Ask & Grow：育儿档案插件——每个孩子一份普通 Markdown 档案，覆盖孕期到 3 岁，附只读生长曲线与汇总。
 - [aa2246740/dsh-cuadrive-mac](https://github.com/aa2246740/dsh-cuadrive-mac) — 通过插件独立管理的 Cua Driver 运行时提供 macOS 电脑操作工具。
 - [AAAlenwow/dsh-ai-armor](https://github.com/AAAlenwow/dsh-ai-armor) — 五个生产级 DSH 工具合一的 bundle（共 8 个 tool slot）：git 回归定位（引入者反查、最近改动、二分定位、blame 年龄）、带本地代码上下文的堆栈解码器、YAML/ENV/properties 配置校验器（带近似键名提示）、跨平台 shell 转义（POSIX/PowerShell/cmd）、MyBatis Plus SQL 静态审计器（N+1、缺 @Transactional、LIKE 前导 %、SELECT *、缺 WHERE）。零 npm 依赖，全离线；除 bisect 工具（dsh-when-broke）外并发安全。每个子插件也可单独安装（AAAlenwow/dsh-when-broke、dsh-stackdecoder、dsh-config-guard、dsh-cmd-shield、dsh-mp-auditor）。
 - [AAAlenwow/dsh-weknora-archive](https://github.com/AAAlenwow/dsh-weknora-archive) — 把 DeepSeek Harness 会话归档进自建 WeKnora 知识库，含提取、总结与增量去重。
@@ -9192,7 +9193,7 @@ dsh plugin --profile web add dshmarket
 - [duhu2000/dsh-pre-duediligence](https://github.com/duhu2000/dsh-pre-duediligence) — 访前尽调智能体：面向拜访前调查，提供企业尽调、客户尽调、客户背景调查、工商核验与风险信息整理；使用企查查 MCP，设有调用预算授权和主体确认。
 - [duhu2000/dsh-tender-workbench](https://github.com/duhu2000/dsh-tender-workbench) — 招投标智能体：支持招投标搜索、招标查询、投标查询、标讯查询、拟建项目与项目筛选，辅助商机发现、人工复核及 Excel/PDF 导出，使用客户自备授权的企查查 MCP。
 - [dylan9707/dsh-questtree](https://github.com/dylan9707/dsh-questtree) — 任务树：把长任务维护成一条主线加分支树，侧边栏展示状态、进度、markdown 备注与「你在这」标记，防止跑偏。
-- [ECCVIK/lmtagent](https://github.com/ECCVIK/lmtagent) — 软件研发与安全审计多智能体工作流：内置 8 个角色预设（Captain 主控与 CEO、Designer、Eng Manager、Reviewer/CSO、Builder、QA Lead、Release 七个执行预设）、默认 6 并发槽（1-12 可调）的 4-Wave DAG 调度、PostgreSQL Wire v3 与 SQLite WAL 双模事实库、29 个随包技能及右侧常驻 Web 控制台。是 Jueze-2019/dsh-redteam-mode 的分支，沿用其包名、挂载 id 与 redteam_* 工具名，不能与原版同时安装。环境变量里设了 REDTEAM_PG_URL、DSH_PG_URL、DATABASE_URL 或 PGHOST 时事实库用 PostgreSQL，否则用 $DSH_HOME/redteam 下的本地 SQLite；角色预设写入 $DSH_HOME/.agent-presets/redteam。
+- [ECCVIK/LMTAgent](https://github.com/ECCVIK/LMTAgent) — 多智能体全栈研发编排工作台（dsh-lmtagent v1.1.0）：一句话需求自动拆解为并行开发分片，支持脱离 DSH 的独立弹出窗口、8 角色协同编码、防并发覆盖、越界一键 Git 回滚与预算熔断，内置全双语可视化控制台。
 - [Eclipse-NotFound/dsh-flow-queue](https://github.com/Eclipse-NotFound/dsh-flow-queue) — 右侧栏可视化流程编辑器：把提示词、切换模型、命令、条件分支与循环连成一张图，只在轮次边界执行，在途请求与断连重试保持原模型。
 - [eightHundreds/dsh-plannotator](https://github.com/eightHundreds/dsh-plannotator) — 打开官方 Plannotator 应用（plannotator.ai）审代理写好的计划：批注、批准，或打回重写。
 - [elfgzp/dsh-agent-team-playbook](https://github.com/elfgzp/dsh-agent-team-playbook) — 通过一条有序的 system-prompt 段落把 Agent Teams 的隐性操作规则注入 Lead 会话：先规划名额再派员、名额不可回收、写入范围只是约定、没有同伴在跑时 wait_agent 会立刻返回。
