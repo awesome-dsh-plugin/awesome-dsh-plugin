@@ -1,0 +1,6 @@
+url: https://github.com/wangjianghu/weread-dsh
+name: wangjianghu/weread-dsh
+category: tools
+description:
+  en: 'WeRead notes wired into the AI workbench: one-click incremental sync to Markdown (highlights, thoughts, reviews), full-text search, reading insights with monthly report, and SM-2 spaced-repetition note roaming. Recent reading is injected into every model turn, an in-session weread agent tool drives sync/search/insights, @微信读书 picks a book from the composer, tool results render as clickable cards, and a bundled MCP server (9 tools) feeds the same notes to Claude, Cursor and other hosts. Host-caller authenticated loopback API, fail-closed; single-reader window with ask-DSH capture that ships the selected text straight into a DSH session. Requires DSH >=0.2.0.'
+  zh: '微信读书笔记 × AI 工作台：一键增量同步导出 Markdown（划线/想法/书评）、全文搜索、阅读洞察与月报、SM-2 间隔复习漫游。近期阅读自动注入每轮模型上下文，会话内 weread 工具直驱同步/搜索/洞察，@微信读书 输入触发器直接选书，工具结果渲染为可点卡片，并内置标准 MCP server（9 工具）把同一份笔记喂给 Claude、Cursor 等宿主。本地 API 全量宿主调用方认证、fail-closed；单例阅读窗口的「问 DSH」划线即捕获，选中文本直接送进 DSH 会话。要求 DSH >=0.2.0。'
