@@ -1,0 +1,6 @@
+url: https://github.com/ChenJun25/dsh-console-hm
+name: ChenJun25/dsh-console-hm
+category: remote
+description:
+  en: "DSH Console: a pairing panel inside DSH settings — scan the QR code or type the six-digit code to connect your phone to this computer's DSH, then send messages, browse history and transfer files from the phone app. Everything runs locally on this machine."
+  zh: DSH 控制台面板：在 DSH 设置里显示扫码配对面板，手机扫一下二维码（或输入 6 位码）就连上这台电脑的 DSH，之后在手机 App 里收发会话、看历史、传文件。全部能力都在本机跑，局域网内不依赖云端。
