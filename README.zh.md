@@ -1459,6 +1459,7 @@ dsh plugin --profile web add dshmarket
 - [Makk9609/dsh-session-mark](https://github.com/Makk9609/dsh-session-mark) — 右键左侧会话列表中的会话，选择八档渐变或三个手绘线条图案（星星、猫、狗）；最后一条空白条清除。
 - [MannixHu/dsh-statusbar-config](https://github.com/MannixHu/dsh-statusbar-config) — 用 ${变量} 显示模板自定义输入框下方的会话统计行——显示哪些统计段、单位文案怎么写，全部由模板决定。
 - [mantonlove/dsh-margin-notes](https://github.com/mantonlove/dsh-margin-notes) — DSH 页边批注：在文档预览或助手回复里划词写批注，攒成一批后收进输入框里的一个内联批注块，发送时才展开成编号块，方便继续输入其他指令。
+- [mantonlove/dsh-saynext](https://github.com/mantonlove/dsh-saynext) — 在 DSH 输入框里给你写下「下一句」：每轮回答正常结束后，宿主拿这段对话调一次模型，猜出你接下来最可能说的那句话。输入框为空时，它显示在输入框内部、原占位符的位置上，一行灰字，不额外占高度，也不会和目标条、待办面板打架；按第一次 Enter 只把它填进草稿、不发送，按第二次 Enter 才发出去。回答流式输出中或输入框里已有文字时自动隐藏，多条会话各存各的，互不串台。（输入预测 / 提示词建议 / 下一句 / 灰字补全）
 - [maomaoxyz1/dsh-cpu-temp](https://github.com/maomaoxyz1/dsh-cpu-temp) — 在 DSH 输入框「技能」按钮右侧每秒显示温度胶囊，支持 Windows ACPI 热区、部分 Linux CPU hwmon 传感器或可选外部采样器快照。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [maqian1632/dsh-tray-restart](https://github.com/maqian1632/dsh-tray-restart) — 在 DSH 桌面端的 Windows 系统托盘菜单中只增加一个“重启 DeepSeek Harness”项，做法是原位修改已安装的 app.asar 并在桌面端每次更新后重打补丁；需要 DSH 安装目录可写，不添加其他托盘操作。
 - [MarchLiu/dsh-rich-editor](https://github.com/MarchLiu/dsh-rich-editor) — 为输入区提供富 Markdown 笔记本：工具行开关加 CodeMirror 编辑卡片，支持 Codex 风格列表编辑，经会话服务提交。
@@ -2438,7 +2439,7 @@ dsh plugin --profile web add dshmarket
 - [yishengjun8/dsh-workspace-studio](https://github.com/yishengjun8/dsh-workspace-studio) — 三栏工作区布局，提供文件树浏览、编辑文件、非线性会话导图视图，并且支持手机模式。
 - [YizhouLouisLu/dsh-math-copy](https://github.com/YizhouLouisLu/dsh-math-copy) — 在对话中复制渲染后的数学公式时，剪贴板里得到的是公式的 LaTeX 源码，而不是 KaTeX 的字形文本。
 - [YizhouLouisLu/dsh-select-ask](https://github.com/YizhouLouisLu/dsh-select-ask) — 在对话里划词引用进输入框（显示为「N 条注释」小框），或在侧栏一次性小窗里就这段内容提问（不留任何记录）。
-- [yjh248619/dsh-floating-assistant](https://github.com/yjh248619/dsh-floating-assistant) — 悬浮助手：在 Windows 应用里选中文字即可解释、总结或翻译，答案流式落在原生置顶浮窗（支持 LaTeX 公式、多窗口并存、折叠与最小化到任务栏）；翻译默认 Bing 机译、可选 Google，机译失败/超时或文本含公式时自动回退 AI 模型；DSH 页面内另提供划词浮条与多卡并存的侧卡。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [yjh248619/dsh-floating-assistant](https://github.com/yjh248619/dsh-floating-assistant) — 悬浮助手：在 Windows 应用里选中文字即可解释、总结或翻译，也可以就这段文字连续追问；答案流式落在原生置顶卡里，支持自由输入、连续追问、LaTeX 公式、多窗口并存、折叠与最小化到任务栏。翻译默认 Bing 机译（可选 Google），失败/超时/含公式时自动回退 AI 模型；DSH 页面内另提供划词浮条与侧卡，并带文档出处（路径/行/页）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [YL404/dsh-sidebar-shelves](https://github.com/YL404/dsh-sidebar-shelves) — 侧栏两行会话卡片：按工作区显示项目图标（字母、emoji、颜色或图片）、置顶、手动或定时归档与可折叠归档架、运行/等待状态标记、按会话的后台任务与子代理计数、按最近输入排序。面向 Web GUI，需要 DSH 0.2.1-rc.5 及以上。
 - [ylw-ux/dsh-pins-fixtool](https://github.com/ylw-ux/dsh-pins-fixtool) — 把对话中划选的段落固定到按对话隔离的右侧栏面板，在正文里留下持久标记并可点击跳回原文；可从划选浮条或输入框 @ 把已固定的段落引用进消息，片段支持标签，面板可搜索、筛选并导出 Markdown 提纲。
 - [Yocaihua8/dsh-prompt-improver](https://github.com/Yocaihua8/dsh-prompt-improver) — 按需结合对话、记忆和项目片段增强草稿，支持对照预览、专用模型与恢复原文，不会自动发送消息。
@@ -4348,6 +4349,7 @@ dsh plugin --profile web add dshmarket
 - [AgentConnect/dsh-awiki](https://github.com/AgentConnect/dsh-awiki) — 为 DeepSeek Harness 智能体提供基于开放协议ANP的原生身份，以及基于该身份的私聊、群聊、邮件和智能体间通信能力。
 - [Anarrogantcat/dsh-identity](https://github.com/Anarrogantcat/dsh-identity) — DSH 身份系统：可编辑内核、证据制 traits、按需召回的记忆、心情、关系、精力控频、自主提议与共情；QQ 只是一个可选通道。
 - [Applepinea/dsh-qq-access](https://github.com/Applepinea/dsh-qq-access) — 把 dsh 接到个人 QQ：NapCat 托管与扫码登录、私聊/群聊 AI 回复（含图片理解）与批量节流、本地归档与轮询补漏、群内 @ 与撤回自己刚发的消息、QQ 空间留言，并带左侧栏管理面板。默认任何 QQ 用户私聊该账号（或在群里 @ 它）都会得到 AI 回复；把 access.privateMode / groupMode 设为 allowlist 才限制。主人专属命令仍只对主人生效。
+- [ArthurZhu1992/dsh-zh-yayan](https://github.com/ArthurZhu1992/dsh-zh-yayan) — 所思所言，皆成中文。DSH 起笔即中文，一线到底——主 agent、子智能体、团队与后台任务的推理与思考一律简体中文；说得出，就查得到。
 - [AshenSeeker/dsh-mind](https://github.com/AshenSeeker/dsh-mind) — 给 DeepSeek Harness 加一套心情系统：33 种心情，每 3~6 小时一次周期判定，并随消息小幅增减；另有跨会话记忆、审美品味库、加密日记。心情、记忆、品味、日记四个工具都可由模型调用，五个模块各有独立开关。心情底分全为 0，平静的日子就显示平静，不会永远挂着某个心情在跑。日记只由模型自己写，不生成系统总结模板。本插件是 JMX-4869/dsh-mood 的精简 fork：二者注册同名的心情 / 日记 / 品味 / 记忆工具，不能同时安装，只能二选一。
 - [aureth-labs/dsh-aurabot-qq](https://github.com/aureth-labs/dsh-aurabot-qq) — 通过 SnowLuma（OneBot v11）让 agent 以人设角色住进 QQ：私聊与群聊、语音条、表情包、QQ 空间日记、刷 B 站、翻唱、生图、长期记忆与心情。每项本事都是模块，可关闭、替换或在本地扩展——热重载的扩展模块还能改写群聊回不回、提示词、最终发出的消息和每个聊天用的模型。默认安全（总开关关、试运行开）。
 - [Awoodwhale/dsh-agent-persona](https://github.com/Awoodwhale/dsh-agent-persona) — 按工作区路径或会话 ID 分发 system prompt 人设（完全一致 / 前缀 / 包含 / 正则），可指定一条默认人设兜底；会话页有「人设」页签，能看到实际发出去的提示词；人设列表可导入导出；另有一个开关拒绝工具写入人设存储。
