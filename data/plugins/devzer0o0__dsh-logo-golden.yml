@@ -1,0 +1,6 @@
+url: https://github.com/devzer0o0/dsh-logo-golden
+name: devzer0o0/dsh-logo-golden
+category: ui
+description:
+  en: 'Paints the sidebar brand lockup (whale mark, deepseek wordmark and HARNESS plate) in polished gold, with a travelling light sweep on a WebGPU canvas and static fallbacks when motion or WebGPU is unavailable.'
+  zh: 把侧栏品牌组合（鲸鱼图标、deepseek 字标与 HARNESS 铭牌）绘成抛光金色，附带横掠高光，并在减少动态或没有 WebGPU 时退回静态金面。
