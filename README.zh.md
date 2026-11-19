@@ -5633,7 +5633,7 @@ dsh plugin --profile web add dshmarket
 - [mengxiaoxian/lookover#dsh-expmem](https://github.com/mengxiaoxian/lookover/tree/main/dsh-expmem) — 个人经验记忆：把真实解决过的问题存为带来源、可纠正、有适用条件的案例，新任务中自动召回复用，纠正与删除会级联影响后续召回。
 - [menotbobbybrown/dsh-plugin-memory](https://github.com/menotbobbybrown/dsh-plugin-memory) — DeepSeek Harness 的长期持久记忆：以 JSON 保存事实／偏好／实体／规则／经历等分类条目，注册为 memory_remember 与 memory_recall 两个 agent 工具；召回按关键词重叠、重要度与访问频次排序。
 - [mess1103/dsh-inner-life](https://github.com/mess1103/dsh-inner-life) — 给 agent 的私人日记本：八个零依赖工具负责写、改、翻、导出，正文按日期哈希散落在看似随机的目录里，索引不记路径（需要时由 inner_find 按日给出路径）。
-- [methpia/dsh-server-memory#plugins](https://github.com/methpia/dsh-server-memory/tree/main/plugins) — 为 DSH 提供的自托管项目记忆：紧凑的提示索引、检索与写入工具，以及每天至多一次写回自有 memoryd 的聚合；这个服务可以跑在笔记本、局域网机器或云服务器上，且自身不调用 LLM。
+- [methpia/dsh-server-memory#dsh-server-memory](https://github.com/methpia/dsh-server-memory/tree/main/dsh-server-memory) — 为 DSH 提供的自托管项目记忆：紧凑的提示索引、检索与写入工具，以及每天至多一次写回自有 memoryd 的聚合；这个服务可以跑在笔记本、局域网机器或云服务器上，且自身不调用 LLM。
 - [meyaomiao/dsh-graphmemory](https://github.com/meyaomiao/dsh-graphmemory) — DSH 知识图谱记忆：better-sidebar「记忆图谱」页签与独立看板 /graph-memory/app；抽取任务/技能/事件节点并跨会话召回，npm 包名为 dsh-graphmemory。
 - [MiHjy12138/dsh-memory-lite](https://github.com/MiHjy12138/dsh-memory-lite) — 给 DeepSeek Harness 的按需记忆库：会话日志提炼成分层 markdown（总览、索引与分主题明细），mem_query 只回命中条目而非整份索引。不每轮注入、零依赖，每条记忆都保留指回原对话的溯源标记。
 - [mihomooo/dsh-persona-panel](https://github.com/mihomooo/dsh-persona-panel) — 按工作区分开的记忆面板：人设卡、用户画像、事件与模型自述日记各存一份，每条都带原话与改动史、可以撤回；工作区之间能共用同一份记忆并随时切断；可选按人记录的他人画像；事件有上限、可标 ★。纯本地、不联网、零依赖。
@@ -8954,7 +8954,7 @@ dsh plugin --profile web add dshmarket
 - [1225Sakura/oh-my-deepseekharness](https://github.com/1225Sakura/oh-my-deepseekharness) — DeepSeek Harness 的多智能体编排层——autopilot/ralph/team 三种执行模式、19 张角色卡、40 个双语技能与内置 MCP 状态服务，移植自 oh-my-claudecode。
 - [1264459640/dsh-trellis](https://github.com/1264459640/dsh-trellis) — 为 DeepSeek Harness 打造的 Trellis 风格工作流：基于 agent/pre-step 的每轮速记注入、内置技能提供方，以及带 git 清洁度护栏的 DSH 原生任务与相位状态管理。
 - [1344738825/ai-look-up](https://github.com/1344738825/ai-look-up) — AI 抬头：检测空跑（重复命令 / 连续失败 / 久跑零产出）并在运行中途注入自我审查提醒，同时定期注入真实本地时间，校准 AI 的时间感。
-- [1924225725-collab/dsh-DKN-Workbench](https://github.com/1924225725-collab/dsh-DKN-Workbench) — 接入 TRAE CN 国内个人版、CodeBuddy、Codex CLI、Qoder ACP、ZCode 及可选 Antigravity ACP，提供原生 Codex 项目、统一 API、可选后台常驻与自动签到、额度、项目协作及可切换插画界面。
+- [1924225725-collab/dsh-DKN-Workbench](https://github.com/1924225725-collab/dsh-DKN-Workbench) — 接入 TRAE CN 国内个人版、CodeBuddy、Codex CLI、Qoder ACP、ZCode 及可选 Antigravity ACP，提供原生 Codex 项目、统一 API、可选后台常驻与自动签到、额度、项目协作及可切换的简洁与插画界面。
 - [1997liuyh-boop/dsh-studio-knowledge](https://github.com/1997liuyh-boop/dsh-studio-knowledge) — 学习计划追踪：本机进度、笔记与 JSON 进度备份，附带一条原创六节点示例路线；添加自己的路线需编辑 roadmaps.ts 并重新构建插件。需先安装 1997liuyh-boop/dsh-studio-library 的 dsh-studio-projects 运行时与 dsh-worktable 容器。
 - [219zhou/dsh-kickstart](https://github.com/219zhou/dsh-kickstart) — 引导式起步：先用开放问题了解你，把你说的和它推断的分两栏让你改，再给两三个一小时能做出雏形的小项目，选定后立刻陪你动手；中途退出后再回来会从上次停下的地方继续。
 - [240xu/verdict-engine#dsh-tech-lead](https://github.com/240xu/verdict-engine/tree/main/packages/dsh-tech-lead) — 单包 21 个只读生命周期治理工具：任务分级、状态/计划/证据校验、Gate 预检与聚合、发布与安装审计、上下文与推进分析、关键路径、续跑对账，以及始终拒绝执行的变更预览。npm 包名 @240xu/dsh-tech-lead。
