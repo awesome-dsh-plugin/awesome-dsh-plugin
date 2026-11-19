@@ -2,5 +2,5 @@ url: https://github.com/DDDMUC/dsh-free-search
 name: DDDMUC/dsh-free-search
 category: browser
 description:
-  en: 'Free, keyless web search for DSH: 7 engines (DuckDuckGo/Bing/SearXNG free + Exa/Perplexity/DeepSeek paid), auto-failover, settings-page UI with API key inputs and official links, web_fetch, and an engine test tool.'
-  zh: DSH 免费搜索插件：7 个引擎（DuckDuckGo/Bing/SearXNG 免费 + Exa/Perplexity/DeepSeek 付费）、自动回退、设置页 UI（API key 输入 + 官网链接）、web_fetch、引擎测试工具。
+  en: 'Free web search for DSH with 42 engines: 6 keyless (DuckDuckGo, Bing, SearXNG, Degoog, AnySearch), 6 key-or-keyless tiers (Exa, Tavily, Keenable, Firecrawl, Parallel, You.com), 5 HTML search pages, and keyed providers from Brave and Baidu to Zhihu, OpenAI and Claude. Failure-classified failover with cooldown and key rotation, allowlist switching, an editable fallback chain, zh/en language pools, Multi concurrent merge, 12 MCP tools and a standalone stdio server, with per-engine keys in settings.'
+  zh: 'DSH 免费搜索插件，共 42 个引擎：6 个免 key 引擎（DuckDuckGo、Bing、SearXNG、Degoog、AnySearch）、6 个 key 与免 key 双档引擎（Exa、Tavily、Keenable、Firecrawl、Parallel、You.com）、5 个 HTML 搜索页，以及从 Brave、百度到知乎、OpenAI、Claude 的各类需 key 供应商。支持失败分类回退与冷却、多 key 轮换、引擎白名单、可增删的回退链、中英语言池、Multi 并发合并、12 个 MCP 工具与独立 stdio server，设置页可按引擎填写 key。'
