@@ -1976,6 +1976,7 @@ dsh plugin --profile web add dshmarket
 - [suntianc/dsh-ui-settings-icons](https://github.com/suntianc/dsh-ui-settings-icons) — 为 DSH 设置侧边栏添加自定义图标，并开放 keyed `settings.section.icon` 槽位供第三方设置分区注册图标。
 - [sunxiuguo/dsh-a2ui](https://github.com/sunxiuguo/dsh-a2ui) — A2UI v0.9/v0.9.1 对话界面开发预览，使用官方 schema 与渲染器，提供会话内表单动作及不重放动作的历史恢复；仅在 DSH 0.2.0-rc.2 的有界合成流程中验证。
 - [sunyuhuirong/fsviewer](https://github.com/sunyuhuirong/fsviewer) — Codex 式右侧工作区：文件树 + 预览页签（Markdown/源码）、嵌入式浏览器（直连/代理 iframe）、侧边聊天（直连 host LLM 流式对话），全部收敛为原生 details 右栏的页签，可开关多开。
+- [Super-QAQ/dsh-hide-workspaces](https://github.com/Super-QAQ/dsh-hide-workspaces) — 把工作区从侧栏隐藏而不删除注册，并在同一个管理器里恢复已隐藏的工作区或已归档的会话。
 - [superltmajor-pixel/dsh-minimal-ui](https://github.com/superltmajor-pixel/dsh-minimal-ui) — 调整 DeepSeek Harness 界面布局并减少常驻按钮，以突出阅读内容。针对 DSH 0.2.2-rc.1 的 Web 界面制作，其他版本未验证。
 - [Surtr-crimson/dsh-turn-dial](https://github.com/Surtr-crimson/dsh-turn-dial) — 把对话右侧的轮次导航画成带刻度的半轮盘：一轮一根刻度，每第五根是紫色，细蓝色指针指向当前轮次。
 - [suyunxing/dsh-compact-sidebar](https://github.com/suyunxing/dsh-compact-sidebar) — 把侧栏导航在所有视口下都重画成紧凑双列网格；窄屏、矮窗口或粗指针设备上再加一层限制——导航最高 34vh 并允许滚动，给工作区与会话历史留出 38vh 下限。同时修复浏览器把 dsh-resource:// 记录协议判空导致的资源不可用。
