@@ -1,0 +1,6 @@
+url: https://github.com/twentythreenineteen/dsh-serena
+name: twentythreenineteen/dsh-serena
+category: tools
+description:
+  en: DeepSeek Harness bundle plugin that mounts Serena's semantic coding tools via MCP.
+  zh: 通过 MCP 挂载 Serena 语义化编码工具的 DeepSeek Harness 插件。
