@@ -1,0 +1,7 @@
+url: https://github.com/zhang-astronaut/dsh-ofm-credit-dock
+name: zhang-astronaut/dsh-ofm-credit-dock
+category: usage
+description:
+  en: 'Lists every Our Free Model (EAC router) channel you are signed in to, with its remaining credit, at the bottom of the DSH sidebar; the channel behind your current model is highlighted and balances refresh live. Requires dsh-our-free-model with at least one channel signed in.'
+  zh: '在 DSH 侧栏底部列出你在 Our Free Model（EAC router）中已登录的每个渠道及其剩余 credit，当前模型所属渠道高亮显示，余额实时刷新。需先安装 dsh-our-free-model 并登录至少一个渠道。'
+icon: https://raw.githubusercontent.com/zhang-astronaut/dsh-ofm-credit-dock/main/assets/icon-180.png
