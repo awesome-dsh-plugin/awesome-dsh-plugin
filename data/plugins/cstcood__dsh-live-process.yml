@@ -1,0 +1,7 @@
+url: https://github.com/cstcood/dsh-live-process
+name: cstcood/dsh-live-process
+category: ui
+description:
+  en: Drives the official disclosure rows so thinking, tool, command and context-injection rows unfold while they run and fold when they settle; adds elapsed badges to thinking, tool and command rows, a choice between folding on end or on arrival of the next row, per-block overrides, and separate dark and light colour schemes.
+  zh: 驱动官方折叠行，让思考、工具、命令、上下文注入行在运行时展开、结束后折叠；为思考、工具与命令行加上耗时徽章，并提供折叠时机选择、每块独立策略，以及暗色与浅色两套配色。
+icon: https://raw.githubusercontent.com/cstcood/dsh-live-process/main/assets/icon-180.png

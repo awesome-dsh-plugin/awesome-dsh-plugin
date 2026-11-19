@@ -1,0 +1,6 @@
+url: https://github.com/CuberSome/dsh-auto-archive-echo
+name: CuberSome/dsh-auto-archive-echo
+category: session
+description:
+  en: 'Idle-based automatic session archiving for DeepSeek Harness: archive sessions nobody has touched for N hours, with cooldown between re-archives, dry-run preview, pinned and subagent-session protection, an exclusion list for working directories, and a persisted per-session audit trail.'
+  zh: '按闲置时间自动归档 DSH 会话：可配置闲置阈值与扫描周期，带冷却期、dry-run 预览、置顶与子代理会话豁免、目录排除清单，并把每个会话的归档时间持久化下来。'

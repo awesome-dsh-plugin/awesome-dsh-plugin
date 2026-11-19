@@ -1,0 +1,7 @@
+url: https://github.com/AXTUT/dsh-gesture-control
+name: dsh-gesture-control
+category: vision
+tarball: https://github.com/AXTUT/dsh-gesture-control/releases/download/v0.1.6/dsh-gesture-control-0.1.6.tgz
+description:
+  en: 'Experimental one-hand gesture control for DSH sessions; requires the Windows Desktop 0.12.1 media-permission patch and Harness 0.2.1-rc.2.'
+  zh: '用单手手势操作 DSH 会话的实验插件；需 Windows Desktop 0.12.1 媒体权限补丁和 Harness 0.2.1-rc.2。'

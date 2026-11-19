@@ -1,0 +1,6 @@
+url: https://github.com/rj-yejianping/dsh-memtree
+name: rj-yejianping/dsh-memtree
+category: memory
+description:
+  en: 'Long-term memory for DSH: memory-as-file with MEMORY.md, daily notes and digest knowledge, notes the agent writes itself, nightly Auto Dream consolidation, and hybrid BM25 + vector search with wikilink expansion.'
+  zh: 'DSH 长期记忆：以文件为记忆（MEMORY.md、每日笔记、digest 长期知识），Agent 在对话中自己记录笔记，夜间 Auto Dream 整理沉淀，BM25 + 向量混合检索并按 Wikilink 展开。'

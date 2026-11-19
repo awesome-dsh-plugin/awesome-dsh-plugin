@@ -1,0 +1,7 @@
+url: https://github.com/RDYRD/dsh-drag-out
+name: RDYRD/dsh-drag-out
+category: ui
+description:
+  en: 'Drag a delivered file from the chat straight into WeChat, Word or any app — the real file from disk, via the DSH desktop app.'
+  zh: '把对话里交付的文件直接拖进微信、Word 等应用：拖出去的是磁盘上的真实文件，需在 DSH 桌面应用中使用。'
+icon: https://raw.githubusercontent.com/RDYRD/dsh-drag-out/main/assets/icon.png

@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-ops-runbook-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-ops-runbook-check'
+category: 'tools'
+description:
+  en: 'Ops runbook hygiene: prerequisites you must have in hand, numbered steps followable under stress, a rollback path, and a way to verify it worked — plus a warning beside every destructive command. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '运维手册的检查：前置条件、编号步骤、回滚路径、验证方式，以及每个危险命令必须在同一行带警告（警告写在三段之前，复制单行到终端时就不在了）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

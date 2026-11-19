@@ -1,0 +1,6 @@
+url: https://github.com/SShiRkiT/dsh-orchestrator
+name: SShiRkiT/dsh-orchestrator
+category: workflow
+description:
+  en: Disables main-agent tools to enforce planning and review, with parallel delegate, multi-stage orchestrate pipelines, writeScope checks, and log patrol.
+  zh: 禁用主代理工具以强制其仅做规划与审查，支持并行 delegate、多阶段 orchestrate 流水线、writeScope 冲突检测及会话日志巡检。

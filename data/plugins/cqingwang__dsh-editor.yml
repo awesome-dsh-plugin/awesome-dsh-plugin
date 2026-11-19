@@ -1,0 +1,6 @@
+url: https://github.com/cqingwang/dsh-editor
+name: cqingwang/dsh-editor
+category: ui
+description:
+  en: Adds an editor workspace with file tree, Monaco editor, terminal, Git changes, and find/replace beside the Harness chat.
+  zh: 在 Harness 聊天旁提供文件树、Monaco 编辑器、终端、Git 更改和查找替换工作台。

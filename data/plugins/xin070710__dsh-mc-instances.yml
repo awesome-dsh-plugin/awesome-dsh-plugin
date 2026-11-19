@@ -1,0 +1,8 @@
+url: https://github.com/xin070710/dsh-mc-instances
+name: xin070710/dsh-mc-instances
+category: dev
+tarball: https://github.com/xin070710/dsh-mc-instances/releases/download/v1.0.4/dsh-mc-instances-1.0.4.tgz
+description:
+  en: 'PCL2-style Minecraft mod-testing instance manager in the DSH right sidebar: detects run/<name>/ profiles, launches and stops Gradle clients/servers, toggles mods without deleting jars, tails game and Gradle logs, creates/deletes instances, and writes IntelliJ run configurations. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '藏在 DSH 右侧栏里的 PCL2 风格 Minecraft 模组测试实例管理器：自动检测 run/<名字>/ 实例，一键启动/停止 Gradle 客户端或服务端，开关 mod 不删文件，查看游戏与 Gradle 日志，新建/删除实例，并生成 IntelliJ 运行配置。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/xin070710/dsh-mc-instances/main/assets/icon-180.png

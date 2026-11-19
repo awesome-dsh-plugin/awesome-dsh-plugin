@@ -1,0 +1,7 @@
+url: https://github.com/Sinales733/dsh-motion
+name: Sinales733/dsh-motion
+category: ui
+description:
+  en: 'A livelier running indicator for DeepSeek Harness: the whale tail rotates through seamless loops (the original wag, the official spin, turn and stroke, a fluke dive and a spout) and never stands still, and tool-call icons animate the parts of DSH''s own icons, finishing with a thin ring.'
+  zh: '让 DeepSeek Harness 的运行指示器更灵动：鲸尾在原版摆尾、官方的旋转 / 转身 / 划水、举尾下潜、喷水之间无缝轮换，全程不停住；工具调用的图标让 DSH 原图标的部件动起来，完成时画一圈细环。'
+icon: https://raw.githubusercontent.com/Sinales733/dsh-motion/main/assets/icon-256.png

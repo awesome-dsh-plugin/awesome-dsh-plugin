@@ -1,0 +1,7 @@
+url: https://github.com/QianChang927/dsh-quotaline
+name: QianChang927/dsh-quotaline
+category: usage
+description:
+  en: 'Composer-dock strip: the selected model''s balance (topped-up plus granted) or its rolling 5-hour, weekly and monthly windows across DeepSeek account and API, Moonshot, Kimi Coding, Zhipu and GLM Coding — read from DSH credentials, with the key never leaving the Host. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '输入框上方额度条：跟随当前模型显示余额（充值 + 赠金）或 5 小时 / 每周 / 每月用量窗口，覆盖 DeepSeek 账号与 API、Moonshot、Kimi Coding、智谱、GLM Coding；数据取自 DSH 本地凭据，密钥不出 Host。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/QianChang927/dsh-quotaline/main/icon.png

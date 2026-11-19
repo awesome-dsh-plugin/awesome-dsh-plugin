@@ -1,0 +1,6 @@
+url: https://github.com/PilotHowe/dsh-plugin-buddy
+name: PilotHowe/dsh-plugin-buddy
+category: tools
+description:
+  en: 'No manual browsing or keyword guessing: describe a task in chat and Plugin Buddy searches the DSH community plugin catalog for you with multiple keyword groups, ranks matches by relevance and quality signals, and turns a matching plugin README and manifest into grounded onboarding steps. On a high-confidence match it asks before switching to a plugin.'
+  zh: '不用手动逛市场，也不用先想关键词：在对话里说出任务，插件搭子会用多组关键词自动检索 DSH 社区插件目录，按相关性与质量信号排序，并把匹配插件的 README 与包清单整理成有据可查的上手步骤；高置信度匹配时先询问是否切换。'
