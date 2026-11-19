@@ -7139,6 +7139,7 @@ dsh plugin --profile web add dshmarket
 - [redkiller79/dsh-disk-space](https://github.com/redkiller79/dsh-disk-space) — 只读扫描 Windows 与 macOS 磁盘占用，生成带三级清理建议的交互式 HTML 报告。需要本机装有 Python 3；包内的扫描脚本以子进程方式离线运行。
 - [redkiller79/dsh-libtv](https://github.com/redkiller79/dsh-libtv) — 把 LibTV 的画布与媒体生成能力接进 DeepSeek Harness，随包附带三个导演技能，首次使用微信扫码授权一次即可。
 - [refkitjs/dsh-plugin](https://github.com/refkitjs/dsh-plugin) — DeepSeek Harness 的参考素材检索插件：refkit_search 在 24 个开放来源中检索图片、视频、音频和文本参考素材，为每条结果标注规范化的许可证和针对用途的可用性判定；refkit_rights 针对另一种用途复核单条许可证。来源 key 与检索参数在设置页配置。24 个来源中 11 个需要 API key；仅在传入用途时返回可用性判定。支持 DSH ^0.1.7-rc.2 || ^0.2.1-rc.2（实测 0.1.7-rc.2 与 0.2.1-rc.2）。
+- [regrevia/dsh-pianochart#dsh-bundle](https://github.com/regrevia/dsh-pianochart/tree/main/dsh-bundle) — 带一个 piano_score 工具：给一条音频链接，产出钢琴谱，含五线谱 PNG、简谱、MusicXML、MIDI。只转录背景音乐、去掉人声；鼓组和非旋律声部并入左手。三档共享一套编配，只差调号，所以 easy 黑键最少，回放恢复原调。长音频可以用 seconds 先出一段预览。
 - [residenthiago2011/DSH-Tool-Router](https://github.com/residenthiago2011/DSH-Tool-Router) — 通过决策模型 API 把工具 schema 从模型 prefill 中隐藏，每次按需揭示一个工具。需运行决策模型 API 端点，且 PATH 中有 pnpm。
 - [Rexopia/dsh-plugin-knowra](https://github.com/Rexopia/dsh-plugin-knowra) — 接入 Knowra 托管 MCP：无需账号即可按主题、作者或精确 UTC 日期检索 arXiv 论文；在插件页用 OAuth 登录后可读取 Scout 报告（方法、证据与局限）。
 - [Rianico/dsh-better-edit](https://github.com/Rianico/dsh-better-edit) — 基于哈希锚定的 read / edit / batch_edit / undo_last_edit 工具：每行分配唯一的 3 字符内容哈希，编辑按哈希而非行号定位；对已提供状态逐行校验，过期范围会被拒绝并回传新锚点。
