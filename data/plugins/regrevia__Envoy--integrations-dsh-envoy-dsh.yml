@@ -1,5 +1,5 @@
 url: https://github.com/regrevia/Envoy/tree/main/integrations/dsh/envoy-dsh
-name: Envoy
+name: regrevia/Envoy#dsh-envoy
 category: browser
 description:
   en: 'Distill any link into Markdown, a wiki or a knowledge base. Installs per host: DSH -> envoy-dsh; Claude Code/Codex -> envoy@envoy. Douyin/Bilibili video, image posts, WeChat, Xiaohongshu, PDFs, podcasts. Video is read on its own timeline with keyframes and ASR transcripts locatable to [mm:ss], so the context carries what was said and shown instead of the title and the recommendation rail. On 60 turns with vs without: ends normally with the gaps named 22% -> 92%, times out 68% -> 0% (the A/B is exploratory: different time caps, no human correctness review). On 123 live links 80% came back usable (93% of the pages that answered).'
