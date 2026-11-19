@@ -6067,6 +6067,9 @@ dsh plugin --profile web add dshmarket
 - [Altermoe/dsh-onedev](https://github.com/Altermoe/dsh-onedev) — OneDev 集成插件：MCP 服务器将 OneDev REST API 暴露为 61 个工具——57 个管理工具（用户、组、角色、项目、授权、构建代理与令牌、构建及流式构建日志、全局设置、访问令牌）、3 个独立的官方文档查询工具（docs.onedev.io）以及带按调用多环境路由的环境发现；另提供 dsh Web 设置页，在本地管理各环境凭据，保存后下一次工具调用即生效，无需重启。
 - [altmanWang/dsh-qq-email](https://github.com/altmanWang/dsh-qq-email) — 用已授权的 agently-cli 账号发送 QQ 邮件：注册 send_qq_email 工具（发送前需用户确认），并对外提供 ctx.qqEmail 服务供其他 DSH 插件调用。
 - [alvinxiao2/dsh-qianyuan](https://github.com/alvinxiao2/dsh-qianyuan) — 把乾元 MCP 服务器挂进 DeepSeek Harness：一个纯配置层 bundle 带来 15 个 agent 记录工具（坑库、成果缓存、身份、任务板），注册为 mcp__qianyuan__*。不含运行时代码；读匿名，写用 ed25519 签名。
+- [AmahaHanasaki/dsh-mtrans](https://github.com/AmahaHanasaki/dsh-mtrans) — 四个 DSH 工具，用于翻译 MTool 格式的游戏文本：mtrans_info 分析 ManualTransFile.json，mtrans_prepare 把文本键拆成块文件，mtrans_apply 合并译文回写，mtrans_translate 通过已注册的大模型服务整篇翻译（日译中或英译中）。
+- [AmahaHanasaki/dsh-ra2-csf](https://github.com/AmahaHanasaki/dsh-ra2-csf) — 读写并保存红色警戒 2／尤里的复仇 CSF 字符串表（含 RA2 补码编码），并可直接用 RA2CStrEditor 打开文件。
+- [AmahaHanasaki/dsh-ra2-mix](https://github.com/AmahaHanasaki/dsh-ra2-mix) — 读取红色警戒 2／尤里的复仇 MIX 归档（含 Blowfish 加密的条目表），按文件名、序号或文件 ID 提取条目。
 - [amd47802574/dsh-agents-editor](https://github.com/amd47802574/dsh-agents-editor) — 在设置面板里直接查看和编辑宿主全局规则文件 ~/.dsh/AGENTS.md 的可视化编辑器：Ctrl+S 保存并自动备份、外部修改冲突检测（409 提示）、备份预览与一键恢复。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Ame-Choo/dsh-study-coach](https://github.com/Ame-Choo/dsh-study-coach) — DSH 的学习教练：把一门课拆成知识地图（大类 / 模块 / 最小单元），逐单元记六档掌握度，按资料索引排每日任务，带错题本与记忆卡，并自带一个网页面板。
 - [AMeYunCloud/renpy-toolkit](https://github.com/AMeYunCloud/renpy-toolkit) — Ren'Py 汉化工具集：为只有 .rpyc 的成品游戏生成完整翻译骨架，移植旧译本并校验译文。
@@ -8014,6 +8017,7 @@ dsh plugin --profile web add dshmarket
 - [adithyanraj03/dsh-video-gen-plugin](https://github.com/adithyanraj03/dsh-video-gen-plugin) — 通过你自己的 OpenAI 风格异步接口生成视频，并在对话里播放成品，带实时进度和取消。
 - [alaxrpg/dsh-vision-bridge](https://github.com/alaxrpg/dsh-vision-bridge) — 通过已配置的 DSH Provider 或 OpenAI 兼容端点提供图片输入与识别。
 - [algerkong/dsh-image-preview](https://github.com/algerkong/dsh-image-preview) — 统一接管 DSH 会话里的图片预览：read_image 缩略图，以及用户、助手、Markdown 和 present 图片，支持缩放、旋转、拖动、下载、侧栏和原生文件操作的 Lightbox。
+- [Amesawa-000/dsh-ppt-image-studio](https://github.com/Amesawa-000/dsh-ppt-image-studio) — 在设置页配置 OpenAI Images 兼容或 Gemini 生图接口，并提供 agent 工具：编写提示词、为幻灯片生成配图，返回原始图片的本地路径。
 - [AngelosZou/dsh-pdf-reader](https://github.com/AngelosZou/dsh-pdf-reader) — 面向视觉模型的内容感知 PDF 读取插件：逐页分析图（矢量与栅格）、表格、公式风险与双栏排版，基于内容识别进行混合提取，图表/公式页渲染成高 DPI 区域裁切。提供低清预览以理解页面概况并支持指定选区获取高清渲染。功能包装为多个工具供Agent使用。
 - [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) — 让纯文本模型处理视觉任务：粘贴图片后自动切换到 Vision Toolkit 变体，支持图片问答、多图比较、长截图 OCR、截图还原前端 UI、元素定位与像素对比。默认无需 API Key——图片经作者自建的免费服务处理，每台机器每天 100 张；也可改为指向自己的服务商。
 - [ankye/dsh-client-vision#tool-vision](https://github.com/ankye/dsh-client-vision/tree/main/packages/tool-vision) — 屏幕截图与外部视觉识别：take_screenshot、list_windows、analyze_image、view_image 四个工具，可配置 GPT 视觉通道（gpt-5.5 / gpt-5.6-sol / gpt-5.6-terra），API Key 经凭据服务存储，带设置卡片；view_image 在 Web 对话中显示截图，模型上下文只保留文字。
@@ -8671,6 +8675,7 @@ dsh plugin --profile web add dshmarket
 - [bjzkhy/dsh-multiplatform-balance](https://github.com/bjzkhy/dsh-multiplatform-balance) — 多平台余额 Agent 技能与工具：查询 DeepSeek、豆包 / 火山引擎、千问 / 阿里云百炼、混元 / 腾讯云以及自定义 HTTP 接口的账户余额；只读，内置 60 秒缓存。
 - [bocchii-the-code/dsh-nerd-mode](https://github.com/bocchii-the-code/dsh-nerd-mode) — 把一段普通对话变成会按你的回答调整的引导式学习。插件生成学习记录和讲义；学习进度标签页追踪你的进度和生疏概念；讲义页按课程列出讲义。这些文件持久化到工作区，重启后仍可读取。
 - [caigou114/dsh-teleagent-skill-builder](https://github.com/caigou114/dsh-teleagent-skill-builder) — 把 TeleAgent 技能制作规范装成 DSH 技能：规范全文、复刻平台校验的校验器（含 .pyc 直接判失败）、脚手架、打包器、TeleAgent 安装器。
+- [carlslin/dsh-skill-eval](https://github.com/carlslin/dsh-skill-eval) — 用真实执行遥测（加载成败、后续工具报错、用户纠正、被忽略与成本）给每个技能打 0-100 分并附 95% 置信区间，再把证据转成 agent 可直接执行的修复建议。
 - [Cavan-Ou/hermes-dsh-collab](https://github.com/Cavan-Ou/hermes-dsh-collab) — 把 DeepSeek Harness 接进 Hermes 管线：派单 spec 模板、模型档位路由、质量门、git 唯一写者约定，SKILL.md 技能包（bundle 可安装）。
 - [cccuuuhhh/dsh-skill-groups](https://github.com/cccuuuhhh/dsh-skill-groups) — 把技能归入具名分组，自由勾选组合切换，拖拽排序，并预览每组的目录 token 成本。
 - [cenglin123/ocsr](https://github.com/cenglin123/ocsr) — 提供 `ocsr` 技能与 `ocsr_dispatch` 工具，把 headless `opencode run` 当作 fresh-context、跨厂商的 worker 后端；超时看门狗与每 worker 产物文件由 Python driver 负责。仅支持 Windows（需 Windows PowerShell）；需本机安装 OpenCode CLI、Python 3，并在 `~/.ocsr/allowed-models.json` 配置模型白名单。
