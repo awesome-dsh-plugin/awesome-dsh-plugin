@@ -1,5 +1,5 @@
-url: https://github.com/methpia/dsh-server-memory/tree/main/plugins
-name: methpia/dsh-server-memory#plugins
+url: https://github.com/methpia/dsh-server-memory/tree/main/dsh-server-memory
+name: methpia/dsh-server-memory#dsh-server-memory
 category: memory
 description:
   en: 'Self-hosted project memory for DSH: a compact prompt index, search and save tools, and up to one consolidation per day written back to your own memoryd service, which runs on your laptop, a LAN box or a cloud server and never calls an LLM itself.'
