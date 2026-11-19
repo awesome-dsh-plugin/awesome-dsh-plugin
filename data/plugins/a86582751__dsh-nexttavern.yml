@@ -2,6 +2,6 @@ url: https://github.com/a86582751/dsh-nexttavern
 name: a86582751/dsh-nexttavern
 category: fun
 description:
-  en: 'Long-form roleplay for DeepSeek Harness 0.2.2-rc.5+ on Web and official Windows Desktop, with community card openings, authored interfaces, structured Worldbooks, presets, worldlines, hybrid retrieval, and card and manuscript export.'
-  zh: '面向 DeepSeek Harness 0.2.2-rc.5+（Web 与官方 Windows Desktop）的长篇角色扮演插件，支持社区卡导入与开场选择、作者界面、结构化世界书、社区预设、世界线、混合检索及角色卡和小说导出。'
+  en: 'Long-form roleplay for DeepSeek Harness 0.2.2-rc.5+ on Web and official Windows Desktop. Import community cards, choose an opening, and use author interfaces, MVU state, Ruby analysis, EJS, Worldbooks, community presets, regex, and side chat.'
+  zh: 'NextTavern 是长篇角色扮演插件。可导入社区卡并选择作者开场，操作卡内界面，使用 MVU 数值状态、Ruby 分析、EJS、结构化世界书、社区预设与正则及侧边聊天。最低 DeepSeek Harness 0.2.2-rc.5，支持 Web 与官方 Windows 桌面版。'
 tarball: https://github.com/a86582751/dsh-nexttavern/releases/download/v0.3.0-rc.1/dsh-nexttavern.tgz
