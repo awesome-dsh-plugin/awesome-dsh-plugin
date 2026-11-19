@@ -1267,6 +1267,7 @@ dsh plugin --profile web add dshmarket
 - [liaoangbo-droid/dsh-notewall](https://github.com/liaoangbo-droid/dsh-notewall) — 侧边栏便签墙：富文本、图片、手写、拖动排序、便签闹钟，以及把便签定时投递到会话。只读的 /state 和 /media 路由没有鉴权。
 - [liaohongrao/dsh-session-dates](https://github.com/liaohongrao/dsh-session-dates) — 在 DSH 侧边栏的每个工作区内把会话按日期分组、标注具体日期，并保留运行中状态灯与按日期搜索。
 - [liaoyuqing/dsh-shutdown-idle](https://github.com/liaoyuqing/dsh-shutdown-idle) — 会话全部结束、后台任务也安静下来后自动执行电源动作（关机 / 重启 / 休眠 / 睡眠 / 锁定 / 注销）：插件每秒采样进程内会话，运行中的会话始终算「在忙」；后台任务检测是可配置项 considerJobs（默认开启，设置页直接显示当前计数）；确认窗口后进入可取消倒计时，右下角浮窗卡片显示当前阶段与剩余秒数并支持拖动；开关不会随宿主重启保留（重启后一律回到关闭），任何会话新启动或点取消都会中止倒计时；拿不到 agents 服务时一律按「在忙」处理，绝不触发。仅支持 Windows（使用系统自带 shutdown / rundll32），其他平台除 none 外均降级为 none。
+- [Liatos233/dsh-session-status-filter](https://github.com/Liatos233/dsh-session-status-filter) — 在工作区工具栏下方加一排状态 chip，按「运行中 / 待确认 / 未读」筛选会话，列出全部匹配项（工作区·标题·时间）并可直接打开；会话行尾同时显示状态圆点。
 - [liaty8/dsh-muteki-preset#muteki-workbench](https://github.com/liaty8/dsh-muteki-preset/tree/main/plugins/muteki-workbench) — Muteki CTF 蜂群预设（同仓库）的右侧栏控制台：档位按钮一键切靶场批量并设并发池/令牌回填/成本墙，运行时生效不用重启；按题显示派单次数与估算成本的人民币/美元账本，派单自动打开子代理实时 pane；派单与账本数据来自需另装（install.ps1）的预设 orchestrator。
 - [lidongbei/dsh-session-view](https://github.com/lidongbei/dsh-session-view) — DSH 的会话优先左侧栏：置顶、活跃、最近分区，工作区分组，专注模式，搜索与会话回收站。
 - [liggest/dsh-alt-enter-newline](https://github.com/liggest/dsh-alt-enter-newline) — 给 dsh 的网页输入框加上 Alt+Enter 换行。
@@ -5612,6 +5613,7 @@ dsh plugin --profile web add dshmarket
 - [joymitu/xuyi-memory-release#dsh-adapter](https://github.com/joymitu/xuyi-memory-release/tree/main/dsh-adapter) — 续忆（Xuyi），QQ 陪伴聊天的本地长期记忆：把 QQ 私聊和群聊消息存进本机 SQLite，通过自动召回和 `xuyi_recall` 工具带原话找回以前说过的事，每天写一篇日记，支持备份导出与恢复，附 11 套人设和首次安装引导。
 - [JunNanLYS/dsh-layered-memory](https://github.com/JunNanLYS/dsh-layered-memory) — dsh 长期记忆：对话自动蒸馏为原子事实、场景摘要与用户画像，每步模型调用前自动注入相关记忆。开箱零配置——BM25 + 向量混合检索，可选本地离线嵌入，chat/work 双族隔离。
 - [Kagurazaka135/dsh-memory](https://github.com/Kagurazaka135/dsh-memory) — 明文 YAML 的分层跨会话记忆：事实带版本链而非覆盖，会话开始注入简报，夜间整理并在超过阈值后按主题分片。零运行时依赖，在 dsh 安卓版实测可用。
+- [kaveys/agent-user-profile](https://github.com/kaveys/agent-user-profile) — 把「你是谁」记成一份持久画像——从红线、口味到沟通习惯共十类，每轮任务前先读一遍，偏好不用反复交代。候选事实先进待审队列，确认后才进画像；注入前过相关性闸门，可以要求某一轮不读画像。写入时自动合并近义条目，别家 AI 导出的画像文本能整段搬进来并拆成条目；另带七页签面板、`profile` 命令行与 14 个 MCP 工具，覆盖审阅、修改、置顶、软失效、快照、恢复与加密备份。
 - [kelunisi/dsh-neocortex](https://github.com/kelunisi/dsh-neocortex) — Markdown 权威的本地第二大脑：分层记忆、本地回忆，以及每天自动看 B 站、把来源页与近况写回 Obsidian。
 - [kentzjh-cmd/tmem](https://github.com/kentzjh-cmd/tmem) — 面向 DSH 的项目级确定性执行轨迹记忆与零额外 token 历史会话摘要插件（v0.3.0），通过时间因果切片与 AST 符号归因将会话提炼为带守卫条件的 L0/L1/L2 执行剧本及内联 session_id 溯源摘要。注册 /tmem 命令（status、list、forget、gc、telemetry、bench、evaluate、inspect、replay、diff、sync），在 agent/pre-step 仅基于显式文件路径或报错锚点召回记忆（跳过输入未变的重复步骤），并在 tools/post-execute 对报错和代码修改提供同源 L2 修复、死循环熔断警告、统计 L1 共变搭档提醒与采纳率遥测（空闲时跳过常规读取工具）。需要 PATH 中有 Python 3（或设置 TMEM_PYTHON），通过异步子进程调用 python3 -m tmem.cli（超时 5 秒）；所有数据仅存于各项目 .tmem/ 目录（无 ~/.tmem/ 全局存储），不发任何网络请求。需要 PATH 里有 Python 3（或设置 TMEM_PYTHON），并在每个 agent 步骤和每条工具结果上同步运行 python3 -m tmem。
 - [kialajin-l/DSH_Plus#dsh-nexus-memory](https://github.com/kialajin-l/DSH_Plus/tree/main/dsh-nexus-memory) — 基于本地 SQLite 的长期记忆：新会话自动注入项目相关记忆（噪声过滤），支持轻量规则或模型辅助提取，写入去重与反馈加权排序。Python 桥默认使用 $NEXUS_PYTHON 或 <DSH home>/dsh-runtimes/dsh-primary-runtime/dependencies/python/ 下的解释器（需 3.8+）。
@@ -6757,6 +6759,7 @@ dsh plugin --profile web add dshmarket
 - [LoKiGGo/dsh-tools](https://github.com/LoKiGGo/dsh-tools) — 面向 dsh web profile 的个人工具箱，各功能可单独开关：任务完成桌面通知、一键重启、会话删除、插件启停、更新检查，以及若干界面小工具。
 - [LoneLeave/aiplug](https://github.com/LoneLeave/aiplug) — 把 Claude Code、Codex、WorkBuddy、Cursor、Trae 的历史对话导入 DeepSeek Harness 成可续聊的会话，自动起可读标题，每个来源一个工作区。
 - [lonelycrab888/dsh-molecular-viewer](https://github.com/lonelycrab888/dsh-molecular-viewer) — 让 DeepSeek Harness 的 Agent 能独立查看、对齐和测量蛋白质结构。你也可以在对话中的 Mol* 三维视图里旋转结构、点选残基，并针对选中的部位继续提问。
+- [lonelycrab888/dsh-sequence-viewer](https://github.com/lonelycrab888/dsh-sequence-viewer) — 为 DeepSeek Harness 添加交互式生物序列工作台，可浏览序列、比较比对结果和查看 Sanger 测序峰图，也能让 Agent 打开文件、分析序列，并回答与当前选区相关的问题。
 - [lonelymoon87/dsh-code-intel](https://github.com/lonelymoon87/dsh-code-intel) — 用 Tree-sitter 建立工作区符号索引，提供词法或可选 embedding 辅助的代码检索。
 - [Looori/dsh-connector-hub#connector-hub](https://github.com/Looori/dsh-connector-hub/tree/main/packages/connector-hub) — DSH 的连接器市场：在「连接器」tab 里浏览 13 个精选远程 MCP 连接器，用 OAuth 或 API Key 授权，凭据保存在 macOS 钥匙串。MCP 工具挂在 profile 根目录，凭据只经 loopback 网关转发。
 - [lordraiden/dsh-9router-web-search](https://github.com/lordraiden/dsh-9router-web-search) — 9router 网页搜索与网页抓取 provider，为 DeepSeek Harness 提供搜索和抓取能力。
@@ -9693,6 +9696,7 @@ dsh plugin --profile web add dshmarket
 - [xt765/dsh-milestone-guard](https://github.com/xt765/dsh-milestone-guard) — 阶段性结论软强制守卫：常驻注入系统提示词规范，并在模型调用工具漏发可见结论时自动附加软强制纠偏提醒，支持 Web 设置表单。
 - [xuanyuanchumo/dsh-anic](https://github.com/xuanyuanchumo/dsh-anic) — AI 原生迭代循环：24 个 anic_* 工具与 77 个 HTTP 路由驱动跨项目评估、收敛门禁与自动修复循环，附带实时白盒面板（可交互工作流图、调用流、自主级仪表带、门禁账本、HITL 队列）与可内联安装的 SKILL.md 工作流套件。
 - [xuedipiaofei/dsh-hooks-lite](https://github.com/xuedipiaofei/dsh-hooks-lite) — 配置驱动的 DSH 生命周期 hooks：拦截或观察工具调用，并对回合完成、用户消息和标题变化执行 shell 命令。
+- [xuexue61/dsh-task-queue](https://github.com/xuexue61/dsh-task-queue) — 以会话视图形式出现的任务清单：按项目隔离的列表，每条可设优先级与「这个对话 / 全部」范围，一键把事项发给当前会话，自动执行按对话独立生效，并逐条显示待发送、执行中、已完成或发送失败。
 - [xx-hub/dsh-craft-your-textbook](https://github.com/xx-hub/dsh-craft-your-textbook) — 把教材 PDF 加工成 AI 老师能直接拿去上课的教学蓝本，或一本能读的教材；六阶段流水线，关键决定停下来等用户拍板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [yakoylp/dsh-md-convert](https://github.com/yakoylp/dsh-md-convert) — 将 Office 文档与 PDF（含扫描件）转换为保留结构的 Markdown，采用 CPU 优先的路由 OCR 流水线（RapidOCR/SLANet/FormulaNet）。
 - [yangdcm/dsh-expert-team](https://github.com/yangdcm/dsh-expert-team) — 角色化多智能体专家团 = 你的数字员工。一句目标即自动组建最多 12 个角色（产品、架构、前端、后端、审查、测试等），按九阶段门控流水线协作交付，并支持常驻团队反复指挥。零运行时依赖、无构建步骤。
@@ -9739,6 +9743,7 @@ dsh plugin --profile web add dshmarket
 - [zenghaili0901/dsh-bot-mode](https://github.com/zenghaili0901/dsh-bot-mode) — DeepSeek Harness 的 Bot 模式：把子 Agent 变成一群有头像、有人格的 Bot，每个 Bot 拥有独立对话，由一个持久的 continuable 子 Agent 会话支撑，跨轮次保留记忆。
 - [Zevin-Labs/task-workbench](https://github.com/Zevin-Labs/task-workbench) — 本地优先的任务工作台：今日/本周/任务总表、当天与跨周期任务（可选时间）、四态想法池，以及日/周/月复盘；复盘正文只能人写，AI 只读。
 - [zhairy/dsh-agent-swarm](https://github.com/zhairy/dsh-agent-swarm) — 中文多智能体工作流，支持按角色配置模型回退、版本化 Mermaid 任务规划、独立 Agent 与 Jev 审核、专家持久化协作和纯函数计算工具。
+- [zhan1024/dsh-zentao-buglens](https://github.com/zhan1024/dsh-zentao-buglens) — 禅图 BugLens，根据截图圈选和页面证据，通过推荐问答补全故障材料，建议前后端排查分工和最近指派人，并附图提交禅道 Bug。
 - [zhangasdfr/codexskill](https://github.com/zhangasdfr/codexskill) — 在输入框下方加一个 Codex 开关：点亮后该会话的编码需求交给本机 Codex CLI 理解、写实现提示词并验收，实现由 dsh-baton 派给 Harness 会话执行，最后回报改动文件、测试结果和逐条需求对照。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [zhangyong0010/dsh-handshake](https://github.com/zhangyong0010/dsh-handshake) — 在 Codex 与 DeepSeek Harness 间接力本地开发任务，保留原始要求、项目共识、代码状态检查及接力记录。需要 Codex 桌面应用（或在设置里指定 codexBinary 路径）；仅在 macOS 上验证过。
 - [zhaochengbiao005/dsh-gcua](https://github.com/zhaochengbiao005/dsh-gcua) — 智能体状态机插件：任务台账、停滞熔断、相位轨迹与进程隔离的步级 Python 执行器，带 GUI 自动化车道。仅限 Windows；需 PATH 中有 Python 3.10+，GUI 车道另需 pyautogui、mss、pywinauto。
