@@ -1,0 +1,6 @@
+url: https://github.com/qinghuidaqzp/dsh-night-shift
+name: qinghuidaqzp/dsh-night-shift
+category: workflow
+description:
+  en: 'Queue non-urgent tasks during the day in a right-sidebar tab, run them automatically in fresh sessions during DeepSeek''s off-peak half-price window (configurable Beijing start time outside weekday peak hours, serial or bounded concurrency), and read a morning report with per-task status, changed files, commands run, token cost, savings versus peak hours, and steps skipped because they required user approval.'
+  zh: '在右侧栏提供「夜班鲸」面板：白天把不急的任务（指令与工作区/目录）加入夜班清单，到 DeepSeek 空闲半价时段（可配北京时间开始时间，自动避开工作日高峰双倍价，支持串行或限并发）自动为每个任务开新会话执行，次日给出晨报卡片，汇总完成/失败/卡住状态、改动文件、执行命令、token 与费用、相比高峰省下的钱，以及无人值守时因需人工确认而未执行的步骤。'
