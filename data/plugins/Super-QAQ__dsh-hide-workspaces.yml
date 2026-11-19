@@ -1,0 +1,6 @@
+url: https://github.com/Super-QAQ/dsh-hide-workspaces
+name: Super-QAQ/dsh-hide-workspaces
+category: ui
+description:
+  en: 'Hide a workspace from the sidebar without deleting it, and restore hidden workspaces or archived sessions from one manager.'
+  zh: '把工作区从侧栏隐藏而不删除注册，并在同一个管理器里恢复已隐藏的工作区或已归档的会话。'
