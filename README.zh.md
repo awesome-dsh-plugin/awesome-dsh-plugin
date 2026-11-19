@@ -7204,6 +7204,7 @@ dsh plugin --profile web add dshmarket
 - [SPYQWER1/dsh-codex-tools](https://github.com/SPYQWER1/dsh-codex-tools) — 基于 Codex 的 `web_search`、`image_gen` 与 `image_vision` 工具，复用 ChatGPT OAuth 登录态为 DeepSeek Harness 提供网页搜索、生图与识图能力。
 - [sryimnoob123/dsh-tool-pwsh-safe](https://github.com/sryimnoob123/dsh-tool-pwsh-safe) — 把 PowerShell 脚本 base64 编码后执行，引号、$、反斜杠、中文全部原样传递，免去转义地狱。走与内置 pwsh 工具相同的沙箱通道。
 - [stallenlu/dsh-disk-cleaner](https://github.com/stallenlu/dsh-disk-cleaner) — 面向 DeepSeek Harness 的 Windows 磁盘清理插件，扫描已知的安全缓存目录、显示占用大小，在 Web 面板中回收空间，并对无法自动清理的部分提供只读审计。
+- [stallenlu/dsh-research-desk](https://github.com/stallenlu/dsh-research-desk) — 在 DSH 内提供科研工作台：免密钥检索 arXiv、Europe PMC 与 OpenAlex，保存文献库与全文，提问时逐条比对原文校验引用，再生成选题假设与草稿，按五个视角产出多视角综述，在受限工作目录内运行用户提供的 Python 或 Node 脚本做验证计算，并把文献库导出为 Markdown、BibTeX 或 JSON。
 - [stallenlu/dsh-scihub](https://github.com/stallenlu/dsh-scihub) — 为 DSH 注册四个工具：scihub_pdf / scihub_batch 按 DOI 或文章 URL 经 Sci-Hub 镜像下载论文并逐条如实返回状态；libgen_search / libgen_download 用关键词检索 Library Genesis 并按 MD5 下载，保留 pdf / epub / djvu 等真实扩展名。文件按引用元数据经可配置的 fileNameTemplate 生成人类可读名，原子写入、同名不覆盖。所有请求支持 HTTP/HTTPS CONNECT 代理（config.proxy 或环境变量，尊重 NO_PROXY）。批量有界并发、跳过死镜像，并拒绝截断文件与人机验证页。
 - [STARDUSTLC666/deepseek-computer-use](https://github.com/STARDUSTLC666/deepseek-computer-use) — 通过 UI Automation、窗口截图和鼠标键盘操作 Windows 桌面软件，支持会话独立应用授权和操作审批。
 - [STARDUSTLC666/dsh-calendar](https://github.com/STARDUSTLC666/dsh-calendar) — CalDAV 日历工作台与 7 个 calendar_* 工具（查/建/改/删/搜/找空闲时段/自检），支持 iCloud、Google、Nextcloud 与自建端点：提供月/周/议程视图、空闲时段查找与邀约文案复制、周视图拖拽改期与撤销、RRULE 重复展开、连接先测后存、ICS 导入去重冲突预览及 5 套工作台主题。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
@@ -9355,6 +9356,7 @@ dsh plugin --profile web add dshmarket
 - [l246804/dsh-pstack](https://github.com/l246804/dsh-pstack) — 将 pstack 智能体工作流体系移植到 dsh：随包提供上游技能、playbook 与参考文档，并加上技能路由、按角色配置模型与按角色路由的子代理。
 - [L3n3L/dsh-resume](https://github.com/L3n3L/dsh-resume) — AI 写简历容易，但写完常会遇到模板不合适、排版溢出、页面留白过多，以及改一处导致全局变形等问题。dsh-resume 专注解决手动修改简历繁琐、低效的问题，让 DSH 覆盖从内容撰写、模板选择到排版调优的完整简历工作流，并支持针对不同求职场景产出合适的简历版本。
 - [l956615272-hub/dsh-weekly-report](https://github.com/l956615272-hub/dsh-weekly-report) — 按你给定的样例风格生成日报/周报/月报：按时间窗口挑选 DSH 会话并只取窗口内的回合，可选合并多个仓库中按作者过滤的 git 提交，再由新会话用只读采集脚本读取证据写出 Markdown 报告；成品进入本地报告库。
+- [lanechenhku/dsh-post-draft-auto](https://github.com/lanechenhku/dsh-post-draft-auto) — 本地出稿工作台（DSH 插件）：post_facts 先把带 sourceUrl 的事实抓回来（bioRxiv/medRxiv DOI 元数据、npm 包、线上版本与发行说明、任意网页），模型再写英文主推与中文回复（各自标 280 计权字数）并生成 1200×675 卡片（出 PNG 需本机 headless Chrome，没有只给 SVG）。右侧栏「出稿」页签与本地工作台可列出草稿、按纯文本复制两稿、标记已发；标记只追加本地台账，真正发到 X 仍由你手动完成——没有 X API、不碰凭据、零依赖。post_save 拒绝没有 facts 的稿子，正文里出现事实中查不到的数字会被记成 blocker。
 - [LaoLiang-agent/HarnessKit](https://github.com/LaoLiang-agent/HarnessKit) — 面向个人开发者与小团队的多 Agent 工程流程框架：七个角色、四档流程、人工审批点、护栏，以及随任务归档持续沉淀规格与经验的共享资产仓库。
 - [lb290/dsh-zentao-ai-workbench](https://github.com/lb290/dsh-zentao-ai-workbench) — DSH 侧栏禅道工作台：粘贴禅道浏览页链接读取 Bug/任务/需求，多选后交给当前或新会话（带入描述、最近动态、截图转真实图片附件、其它附件落盘可读），AI 处理完把备注与状态（已解决、已关闭、重新激活、开始、完成等）单条或批量回写禅道，面板与 5 个 Agent 工具都能写；Bug 的备注与状态回写已实测通过，任务与需求表单走同一套代码路径。
 - [lchqi1998/dsh-n8n-plugin](https://github.com/lchqi1998/dsh-n8n-plugin) — DeepSeek Harness 的 n8n 工作流运维插件：多实例注册表、Agent 工具与设置页界面。
