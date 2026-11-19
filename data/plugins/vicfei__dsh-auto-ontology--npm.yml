@@ -1,0 +1,7 @@
+url: https://github.com/vicfei/dsh-auto-ontology/tree/main/npm
+name: vicfei/dsh-auto-ontology#npm
+category: tools
+description:
+  en: 'Auto ontology construction for DSH - feed documents, get a typed knowledge graph (TBox schema + ABox assertions) where every entity and relation carries its verbatim evidence quote; no-evidence assertions never land, unknown types are flagged instead of silently dropped; two-pass LLM pipeline in a zero-infra stdlib CLI (no Docker, no database), outputs typed JSON, a zero-dep SVG cluster graph and a markdown digest.'
+  zh: '面向 DSH 的自动本体构建：喂文档，得带类型的知识图谱（TBox 模式 + ABox 断言）——每条实体/关系带原文证据引文；无证据不落库、未知类型拦截不静默；双 pass LLM 管线，零基建 stdlib CLI（免 Docker 免数据库），产出带证据的 JSON、零依赖 SVG 分簇图与 markdown 摘要。'
+icon: https://raw.githubusercontent.com/vicfei/dsh-auto-ontology/main/ontologies/20261118-1441.svg
