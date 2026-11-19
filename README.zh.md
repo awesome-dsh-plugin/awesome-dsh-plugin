@@ -9560,7 +9560,7 @@ dsh plugin --profile web add dshmarket
 - [Punky971210/dsh-punky-swarm#dsh-punky-swarm](https://github.com/Punky971210/dsh-punky-swarm/tree/main/packages/dsh-punky-swarm) — dsh 单机多子 Agent 集群治理：引擎级质量门禁拒收半成品、崩溃断点续跑不重来——给 AI 团队装上"跑不坏"的工程护栏。
 - [pythoner1984/dsh-wechat-todo](https://github.com/pythoner1984/dsh-wechat-todo) — 把本地微信群聊变成可跟进的待办看板：三栏（待办 / 进行中 / 需要你）配模型总结、自动标出 @ 你或回复你的消息、拖拽改状态、仅本地存储。需本机 Python 3 并装好 sqlcipher3 与 zstandard，且已有 rion-wechat-reader 的 config.json 与 keys.json（插件不负责取密钥）；总结时会把群聊原文发给所选模型。
 - [Q00/ouroboros#integrations/dsh-plugin](https://github.com/Q00/ouroboros/tree/main/integrations/dsh-plugin) — 通过 DSH MCP 客户端挂载 Ouroboros 的纯配置包，在 DSH 中提供 36 个涵盖需求访谈、Seed、执行、评估与演化流程的工具。
-- [qiqll/dsh-task-suite](https://github.com/qiqll/dsh-task-suite) — DeepSeek Harness 的文件制任务池与调度器：用 Markdown 维护 P0–P3 待办，每次只把一个任务交给后台 subagent，重跑项目测试命令做机器验收，并按 git 提交或文件快照核对结果；git 与非 git 目录都能用。
+- [qiqll/dsh-task-suite](https://github.com/qiqll/dsh-task-suite) — 把单个 DSH Agent 变成一支工程团队：Markdown 任务池、主 Agent 调度、后台 worker 交付、机器验收；需求可异步投递，附实时面板。
 - [qisisiqi/dsh-bili-banghui](https://github.com/qisisiqi/dsh-bili-banghui) — 还在为回B站的傻福消息而苦恼吗？这个插件AI帮你回消息，把「回复我的」按人与楼层聚合成会话，右侧把 主楼 → 他 → 你 拉成一条线，不用再翻评论区找上下文；点「AI帮回」，它先看对方是夸你、跟你聊还是在挑刺（赞同/友善就不跟你抬杠），再给三条候选，你挑一条改成自己的口气，确认了才发出去，发完自动记一笔。登录、人设、API Key 都在面板右上角的头像菜单里，凭证只存在本地 data 目录。
 - [QlzqQlzq/dsh-dual-agent-presets](https://github.com/QlzqQlzq/dsh-dual-agent-presets) — 安装两个可选 Agent Preset：默认不暴露 Shell 的通用 Agent，以及面向真实代码仓库的 Coding Pro。
 - [quaner1234-cmd/dsh-subagent-watchdog](https://github.com/quaner1234-cmd/dsh-subagent-watchdog) — 当原生可续接 DSH 子代理因明确的 max-tokens 终止时自动续接一次，然后停止介入。
