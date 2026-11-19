@@ -5006,6 +5006,7 @@ dsh plugin --profile web add dshmarket
 - [ozjxnxh/dsh-session-trash](https://github.com/ozjxnxh/dsh-session-trash) — 在侧栏会话菜单新增删除与多选批量删除，连聊天记录一起删除（删前自动备份、可一键撤销），不改动工作区项目文件。
 - [OZONGO/dsh-background-compaction](https://github.com/OZONGO/dsh-background-compaction) — 接管内置压缩 provider：默认在上下文达到阈值的 85%（比例可配）时，起一个游离任务把截至上一轮的历史总结成摘要；摘要就绪后的下一个回合边界直接把它提交为 checkpoint，这一步 0 次模型调用、耗时毫秒级。/bcompact \[消息] 按需发起同样的生成，随后照常发送你的消息。设置页可改自动触发比例、摘要模型，以及连续失败多少次后停止后台生成（熔断打开后按冷却放行一次探针以自愈）。子代理会话、前缀已变动或摘要过期时，回退到内置的同步压缩路径。
 - [p2coder/dsh-task-control](https://github.com/p2coder/dsh-task-control) — 在输入区暂停/恢复/取消正在运行的对话任务：强制暂停立即中断并记住被中断的工具，安全暂停等工具/推理完成后再落地，恢复时需确认；默认暂停粒度可在设置中配置（出厂 safe wait）。
+- [pawsey0319/dsh-project-journal](https://github.com/pawsey0319/dsh-project-journal) — 把 DSH 一个项目下所有会话归纳成阶段链（阶段总结、带用户原话的问题与处理、下一步）；可在某阶段开分支，用分叉会话继承该阶段之前的对话重做；会话可在项目间迁移；删除阶段进回收站并裁剪其产物。
 - [penguin-oo/dsh-bookmarks](https://github.com/penguin-oo/dsh-bookmarks) — 收藏 AI 回复（备注/标签），跨会话收藏中心（搜索/筛选/跳回会话），一键导出 Markdown。
 - [Penguin-SAMA/dsh-conversation-links](https://github.com/Penguin-SAMA/dsh-conversation-links) — 在当前对话里引用别的对话：输入 @ 附加某段对话的记录，从左侧栏把对话拖进输入框，或打开任意对话、勾选其中几条消息插入到另一个对话中。
 - [PerryLink/dsh-claude-move](https://github.com/PerryLink/dsh-claude-move) — 四合一迁移向导：把 Claude Code、Codex、OpenCode、Hermes 的会话、记忆、技能、指令与斜杠命令迁入 DSH（/move 向导，审批门 + 幂等 move.json，会话可续聊）。
@@ -8181,6 +8182,7 @@ dsh plugin --profile web add dshmarket
 - [flyinghouse-ma/dsha-tts-bridge](https://github.com/flyinghouse-ma/dsha-tts-bridge) — 宿主侧语音桥：用 Edge TTS 协议合成语音并以 MP3 同源提供，解决容器无声卡、WebView 念不出中文的问题。
 - [FuzzySoul/dsh-chatvoice](https://github.com/FuzzySoul/dsh-chatvoice) — Web UI 免费语音闭环：浏览器语音识别输入（实时中间结果上屏）+ 助手回复朗读与自动朗读，零配置、免 API key。
 - [FYZB2020/dsh-voice-doubao](https://github.com/FYZB2020/dsh-voice-doubao) — 给 DeepSeek Harness 的语音输入加入两个豆包云端识别器，可选再用大模型把口语顺成通顺的书面句子。
+- [Gladess1102/dsh-ace-music](https://github.com/Gladess1102/dsh-ace-music) — 把 ACE Music 的 MCP 服务器接进 DSH：用自己账号走 OAuth 登录一次，之后写完整的歌、按 MusicXML 或 ABC 谱续写旋律、上传音频自动转写、查曲库与下载成品都成为原生 acemusic_* 工具。内置零依赖的 MusicXML→ABC 转换器，以及 ACE Music 官方写作规范的离线副本。
 - [glowwan/dsh-bluetooth-earbuds](https://github.com/glowwan/dsh-bluetooth-earbuds) — Windows 桌面级蓝牙耳机快捷键：左侧耳机音量减手势启动/停止 Windows 语音输入（Win+H），右侧耳机音量加手势发送 Backspace 回删；设置页支持手动映射、测试、回删次数、音量手势检测与 1.6 秒冷却，确保一次三击只执行一次。助手由随包 C# 源码在本机编译；插件本身不录音、不上传音频，语音由 Windows 语音输入按其隐私设置处理。
 - [GooDAnDReaDY/dsh-tts](https://github.com/GooDAnDReaDY/dsh-tts) — 在 DeepSeek Harness 网页 UI 中朗读智能体回复，采用服务商回退链（OpenAI、ElevenLabs、Google、Azure、Groq、Deepgram、OpenRouter、Edge、Piper、eSpeak），某个服务商失败或被限流时自动切换到下一个，而不是直接静音。
 - [GooDAnDReaDY/dsh-voice](https://github.com/GooDAnDReaDY/dsh-voice) — Web UI 语音输入：按停顿分段的听写与语音消息，各自拥有独立的服务商回退链（Deepgram、Groq、HuggingFace、本地 whisper.cpp 或 OpenAI 兼容接口）。
@@ -10118,6 +10120,7 @@ dsh plugin --profile web add dshmarket
 - [mingzeng21/dsh-notion](https://github.com/mingzeng21/dsh-notion) — 通过官方 Notion MCP（OAuth + PKCE）把 dsh 连接到 Notion：通过 `mcp__notion__*` 工具搜索、读写页面、数据库与评论。
 - [mjm123456/dsh-plugin-ai-daily-push](https://github.com/mjm123456/dsh-plugin-ai-daily-push) — 每日 AI 新闻推微信：检索最近 24 小时 AI 新闻，去重挑选 5 条，写成 800 字以内中文 Markdown 简报并按日期归档，再经 Server酱、PushPlus、WxPusher 或企业微信群机器人推送到微信。
 - [mkpoli/dsh-finish-sound](https://github.com/mkpoli/dsh-finish-sound) — 回合结束时播放提示音，智能体提问时播放另一种提示音，设置里可调音量并试听。
+- [mloluyu/dsh-session-notify](https://github.com/mloluyu/dsh-session-notify) — 面向顶层会话的焦点感知通知：回合结束（完成、出错、取消、等待输入、达到输出上限）与运行中的授权、提问请求——正看着触发会话时不打扰，页面聚焦但开着别处时右上角弹应用内卡片，页面失焦才发系统通知。
 - [monkey-sking/dsh-im-global](https://github.com/monkey-sking/dsh-im-global) — 一个插件接入 Telegram、Discord、Slack、Mattermost、Zulip 与 Matrix，按对话隔离会话、重启后仍能续上；带设置页可增删与测试通道、无需改 YAML，白名单 fail-closed——未配置前拒绝所有发送者。
 - [moon09300731/dsh-peak-cost-mode](https://github.com/moon09300731/dsh-peak-cost-mode) — 在 DeepSeek 高峰计价时段（北京时间 09:00–12:00、14:00–18:00，价格 ×2）自动切换 caveman 超精简输出省 token，标题栏常驻状态徽章，档位切换时弹提醒。
 - [MosesMuxiXie/dsh-daily-brief](https://github.com/MosesMuxiXie/dsh-daily-brief) — 为 DeepSeek Harness 提供每日简报：汇总关注的 X 账号、RSS/Atom/JSON/ICS 订阅与网页、YouTube 与 Bilibili 更新、Steam 动态、Minecraft 服务器与状态页、邮箱（IMAP）与日历，按人设排版。YouTube 与 Bilibili 不只看标题：会读取每条视频的真实评论数，挑出评论最多的那条放在简报顶部做成「今日热议」卡片，附上点赞最高的几条热评。面向 Windows 10/11：默认注册每日 Windows 计划任务（07:30），到点用 Edge/Chrome 应用窗口弹出简报；邮箱与 Cookie 凭据用 Windows DPAPI 加密保存；默认会把条目标题（含邮件主题）交给 DSH 模型润色文案（在 config.json 里把 ai.polish 设为 off 可关闭）。
