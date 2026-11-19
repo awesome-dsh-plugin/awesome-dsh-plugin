@@ -657,6 +657,8 @@ dsh plugin --profile web add dshmarket
 - [darlingsakurua/dsh-novels](https://github.com/darlingsakurua/dsh-novels) — 在对话旁边加一个书架面板，用来读本地 .txt 小说：导入文件后识别 UTF-8、带 BOM 的 UTF-8、UTF-16 或 GB18030 编码并自动分章，提供目录、上下章、字号、行距与版心宽度，每本书从上次读到的章节与位置继续。
 - [datit309/dsh-live-inspector](https://github.com/datit309/dsh-live-inspector) — DeepSeek Harness 右侧边栏实时文件变更检查器与文件树：根据智能体的读/写/编辑调用显示 M/A/R 标记与并排 diff，实时追踪智能体活动。
 - [day-day-dream/dsh-page-refresh#dsh-page-refresh](https://github.com/day-day-dream/dsh-page-refresh/tree/main/plugins/dsh-page-refresh) — 在 DeepSeek Harness 会话头部加一个刷新按钮和一个电源菜单（重启 / 关闭 DeepSeek Harness）。纯客户端、零 token、零依赖。电源菜单目前仅支持 Windows。
+- [DaYangtuo247/dsh-composer-display](https://github.com/DaYangtuo247/dsh-composer-display) — Claude 风格输入框：单行输入并实时高亮 Markdown、运行中输入的消息收进排队托盘、模式与模型菜单、字符间平滑滑动的光标，以及输入框上方固定的回到底部按钮。
+- [DaYangtuo247/dsh-conversation-enhancer](https://github.com/DaYangtuo247/dsh-conversation-enhancer) — 对话视图增强：工作过程与工具调用重新分组、内联计划卡片、用户消息按 Markdown 渲染、滚到顶部自动加载更早消息，以及统一的阅读排版与命令行语法配色。
 - [dayutech/dsh-handy](https://github.com/dayutech/dsh-handy) — 为每个会话增加自动保存的笔记本和可拖动关键信息面板，面板支持条目折叠与队列注入；原生分叉和 /fork 会继承笔记本与关键信息；另提供工作区会话组、会话高亮、运行工作区置顶与蓝色转圈指示，以及右侧边栏任意标签的关闭当前/左侧/右侧/全部操作。
 - [dbcaskml183-dotcom/dsh-prelude](https://github.com/dbcaskml183-dotcom/dsh-prelude) — 在 DSH 输入框里优化提示词：发现草稿中没说清的要求，从 90 张方法卡中选一句补进去，或对照原稿编辑整段改写。由你决定采用和发送。
 - [dcrzsy/dsh-enhance-tool](https://github.com/dcrzsy/dsh-enhance-tool) — DeepSeek Harness Web 一站式界面增强：提示词库（快选+管理）、两步 AI 润色、预测回复栏（点击直接发送）、MCP 工具管理、定时自动化、智能会话标题、对话宽度可调、AI 回复占满无灰底、超长用户消息自动折叠（带平滑展开/收起动效），以及各面板的场景化入场动效。
@@ -2748,6 +2750,7 @@ dsh plugin --profile web add dshmarket
 - [DanneLeung/dsh-multi-key-rotation](https://github.com/DanneLeung/dsh-multi-key-rotation) — 给 MiniMax Token Plan 路由配置多个具名 API Key，插件按剩余配额轮换：单个 Key 额度耗尽、触发限流或鉴权失败时，路由切到池中下一个 Key 并重试本次请求。下一个 Key 按重置时间排序，周窗口最先重置的先用。每个 Key 的 5 小时与周两个窗口的剩余比例、距重置倒计时都列在设置页；输入框模型选择器前的胶囊显示当前所用 Key 的两个窗口。仅支持 minimax 与 minimax-cn 路由。
 - [Daphne999/dsh-fake-call](https://github.com/Daphne999/dsh-fake-call) — 让你的 agent 给你打电话：浏览器里真的会响铃的来电界面，用系统自带音色念出预置开场白（不需要任何 key、完全离线），没人接还会再打一次。第一句是固定文本而不是模型现编——日程、金额、地址这类内容不能被改写。仅支持 Windows。
 - [DarkDarkdDarkWine/dsh-quota-hub](https://github.com/DarkDarkdDarkWine/dsh-quota-hub) — GLM、MiniMax、Kimi、DeepSeek 编程套餐额度监控——Web GUI 内显示各窗口用量、重置倒计时并支持手动刷新。
+- [DaYangtuo247/dsh-context-monitor](https://github.com/DaYangtuo247/dsh-context-monitor) — 上下文明细：输入框状态行的用量环，弹层按消息、工具、系统提示、技能与记忆文件拆分上下文；「上下文透视」页签列出每个类别、节点、工具与增长趋势。
 - [daydream-wjh/dsh-opencode-go-usage](https://github.com/daydream-wjh/dsh-opencode-go-usage) — 在 DSH 网页界面的输入框上方常驻一行 OpenCode Go 套餐额度：滚动窗口、本周、本月的已用百分比与进度条，重置倒计时不依赖网络刷新也会自己走；展开可看每档上报状态与重置时刻。宿主半边用凭据库里的 Key（OPENCODE_API_KEY，回退旧名 OPENCODE_GO_API_KEY）读取网关用量接口，浏览器只读同源路由，Key 不进页面。设置页（设置 → OpenCode Go）可把 Key 写进凭据库，页面只显示是否已配置、来源与掩码预览，不必再手改凭据文件。
 - [dcd887/dsh-memory-router](https://github.com/dcd887/dsh-memory-router) — 在模型读取之前拦截 DSH 工具结果：重复调用去重、用声明式决策图把大输出换成结构化摘要、注入闸门去重，并记一本含负收益科目的诚实账本（压过头导致重读会记亏损）。实测单次命中省 1400—1600 token；累计净收益目前为负，仓库里写明了原因，也写明了它无法跳过模型回合。
 - [Dclef/dsh-coding-time](https://github.com/Dclef/dsh-coding-time) — 本地编码活动计时：按项目统计墙钟活跃区间并集、基于真实 diff 元数据的 AI 增删行、按文件时长占比、设置页仪表盘与 CSV 导出。
@@ -3357,6 +3360,7 @@ dsh plugin --profile web add dshmarket
 - [d0ublecl1ck/dsh-csdn-theme](https://github.com/d0ublecl1ck/dsh-csdn-theme) — 把 CSDN 博文的配色与正文排版搬进 DeepSeek Harness 网页端：标题层级、引用块、实线网格表格、行内代码与 Atom One 语法高亮，浅色深色各一套。
 - [dataizu/dsh-whale-aqua-theme](https://github.com/dataizu/dsh-whale-aqua-theme) — DeepSeek Harness Web 界面的 macOS 风格皮肤：水中鲸鱼动态背景与点阵鲸鱼发送按钮，明暗双主题。
 - [DawnCHL/dsh-islands-ui](https://github.com/DawnCHL/dsh-islands-ui) — 为 DeepSeek Harness 设计的浮岛式界面皮肤，包含常驻左侧栏、置顶聚合与可调强调色。
+- [DaYangtuo247/dsh-whale-theme](https://github.com/DaYangtuo247/dsh-whale-theme) — DeepSeek 官网风格皮肤：三套可切换的 WebGL 鲸鱼底纹、穿透式外壳面板、统一的液态玻璃材质，以及带界面 / 回复 / 代码字体设置的「主题」设置页。
 - [daybreakcold/dsh-theme-nebula-glass](https://github.com/daybreakcold/dsh-theme-nebula-glass) — 为 DSH Web 客户端提供深浅双色主题：靛蓝暗色与霜白亮色两套配色，并带一张原创生成的星云壁纸。
 - [Ddamage/dsh-shunshun-wallpaper](https://github.com/Ddamage/dsh-shunshun-wallpaper) — 以网络主播张顺飞为主题的粉丝同人二创壁纸插件：彩色飞马高清旋转动图全屏壁纸，支持主题融合与突出度调节；附带 B站音乐播放器，可粘贴链接添加歌曲、删除、调音量、拖进度条、切换单曲/列表/随机循环，并有侧栏迷你播放器。
 - [ddbj-hub/dsh-wallpaper-skin](https://github.com/ddbj-hub/dsh-wallpaper-skin) — dsh Web 界面的持久化壁纸皮肤：静态图片或静音循环视频作为应用背景，面板半透明化，右下角悬浮面板一键换壁纸。
@@ -11255,6 +11259,7 @@ dsh plugin --profile web add dshmarket
 - [my-0228/dsh-api-key-switch](https://github.com/my-0228/dsh-api-key-switch) — DSH 多 API Key 管理：在设置里保存多把 Key 并一键切换，下一次模型请求即生效，无需重启 DSH。
 - [MYCF711/dsh-sovereign](https://github.com/MYCF711/dsh-sovereign) — 宿主面主权条款与内容守卫：在系统提示词末节注入「用户裁定」条款，清洗工具结果里的凭据与隐蔽载体，按可逆性前置拦截不可逆操作。对全部 agent preset 生效。
 - [MyRemme/dsh-computer-use-guard](https://github.com/MyRemme/dsh-computer-use-guard) — 给 computer-use（cua-driver）工具族加三档「禁止 / 询问 / 自动授权」闸门：每个工具类别在设置里各占一个分段控件，另可用放行名单或拒绝名单按工具名覆盖档位。
+- [mysterycode-liwen/dsh-credential-vault](https://github.com/mysterycode-liwen/dsh-credential-vault) — DeepSeek Harness 的侧边栏凭据保险箱，在本地保存账号、密码和 API Key，支持访问密码锁定与 Agent 读取工具，密钥默认脱敏。
 - [NanmiCoder/dsh-auto-mode](https://github.com/NanmiCoder/dsh-auto-mode) — 在 Workspace Write 与 Full access 之间增加 Auto 权限档：日常操作留在官方 workspace-write 沙箱内，由当前会话模型复核升权与破坏性调用，精确的越界访问按次放行一次，意图不明时询问，命中关键路径则拒绝。
 - [NattoCB/dsh-safe-delete](https://github.com/NattoCB/dsh-safe-delete) — 工具守卫将 agent 执行的 rm 目标移入 macOS 废纸篓而非直接删除，shell 感知词法器覆盖复合与伪装命令；设置页通用设置中可随时关闭。
 - [NekoErwin/dsh-auto-review-desktop](https://github.com/NekoErwin/dsh-auto-review-desktop) — 可配置的模型审批审查，支持工作区沙箱模式和审查记录。
