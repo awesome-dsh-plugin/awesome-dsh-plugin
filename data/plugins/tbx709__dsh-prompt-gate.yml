@@ -2,5 +2,5 @@ url: https://github.com/tbx709/dsh-prompt-gate
 name: tbx709/dsh-prompt-gate
 category: workflow
 description:
-  en: 'First-message gate for new sessions: the model rewrites the opening message into a task brief, shows it in the host question card for approval, and keeps bash, write and edit denied until the user approves; the open review is derived from the session log, with a 15 minute timeout.'
-  zh: '新会话首条消息闸门：模型把这句话改写成任务简报，用宿主原生卡片请用户确认，确认前 bash、write、edit 等工具一律被拒绝；闸门状态由会话日志推导，等待 15 分钟超时后自动放行。'
+  en: 'You type one line and the agent guesses the rest; this rewrites that line into a complete prompt with goal, scope and acceptance criteria, keeps file edits and shell commands blocked until you approve, and lets you send the original as-is — if you stay idle for 15 minutes, it also proceeds with the original on its own.'
+  zh: '你只打了一句话，剩下的全靠模型猜——这个插件先把这句话改写成完整提示词（目标、范围、验收标准），你确认之前不让它改文件、不让它跑命令；也可以按原话直接发，如果 15 分钟不操作，也会自动按原话继续。'
