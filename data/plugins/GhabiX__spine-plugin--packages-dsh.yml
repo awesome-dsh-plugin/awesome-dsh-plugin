@@ -1,0 +1,6 @@
+url: https://github.com/GhabiX/spine-plugin/tree/main/packages/dsh
+name: GhabiX/spine-plugin#dsh
+category: session
+description:
+  en: 'Subtask-tree context manager for DeepSeek Harness (@spinejit/dsh-spinejit): adds spine_open, spine_close, spine_next and spine_spawn tools so the agent works on a persistent SpineTree, replaces closed subtasks with their submitted memories while keeping active work and earlier prefix tokens intact, and renders the live tree in the Web/Desktop input dock and dsh-tui status rows.'
+  zh: 'DSH 子任务树上下文管理插件（@spinejit/dsh-spinejit）：提供 spine_open、spine_close、spine_next 与 spine_spawn 工具维护持久化 SpineTree，在保留当前活跃步骤与前序前缀不变的同时将已闭合子任务折叠为提交结论，并在 Web/Desktop 输入栏与 dsh-tui 状态行实时展示任务树。'

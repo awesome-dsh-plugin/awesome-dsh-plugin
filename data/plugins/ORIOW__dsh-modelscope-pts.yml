@@ -1,0 +1,6 @@
+url: https://github.com/ORIOW/dsh-modelscope-pts
+name: ORIOW/dsh-modelscope-pts
+category: ui
+description:
+  en: Shows your ModelScope account's remaining magicubes (points) balance in the DSH model selector and plugin page, with token-first and session-cookie fallback.
+  zh: 在 DSH 模型选择器与插件页展示 ModelScope 账号剩余魔粒（积分）余额，支持访问令牌优先、会话 Cookie 回退。

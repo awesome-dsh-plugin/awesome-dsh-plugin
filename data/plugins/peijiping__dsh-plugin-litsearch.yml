@@ -1,0 +1,6 @@
+url: https://github.com/peijiping/dsh-plugin-litsearch
+name: peijiping/dsh-plugin-litsearch
+category: tools
+description:
+  en: 'Search ten free literature sources from DSH: the model runs and refines the search while the sidebar shows results, rounds and full-text availability, and you can download PDFs, export citations or save papers to Zotero from either side.'
+  zh: '在 DSH 里检索十家免费文献库：模型主导检索并改条件重搜，右侧栏同步展示结果、轮次与全文可用性，对话或界面都能下载 PDF、导出引文、存入 Zotero。'

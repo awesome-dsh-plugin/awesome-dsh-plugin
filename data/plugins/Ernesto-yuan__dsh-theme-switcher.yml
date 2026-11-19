@@ -1,0 +1,7 @@
+url: https://github.com/Ernesto-yuan/dsh-theme-switcher
+name: Ernesto-yuan/dsh-theme-switcher
+category: theme
+description:
+  en: "Personalization for DSH, also pinned to the left sidebar, in six modules: 20 light/dark palettes (15 solid plus five macaron/rainbow gradients); custom backdrops of four kinds (solid color, 2–5 stop gradient with an angle, your own emoji set rendered into a local 1024 tile, and a local image kept up to 3840 px and stored in IndexedDB); fourteen built-in emoji scene walls (sweet, summer, spring, autumn, winter, forest, night sky, galaxy, seaside, coffee break, rainbow, party, smileys, moods); My backgrounds for named saves you can switch, rename and delete; an overlay-gradient switch that lays the palette over that backdrop as a 50% filter; frosted glass for menus, dialogs, the composer card and the sidebar New session button; and the sidebar page itself sharing state with Settings. Everything stays in the browser."
+  zh: "给 DSH 的「个性化」分六个模块，并固定在左侧边栏：20 套明暗配色（15 套纯色 + 5 套马卡龙/彩虹渐变）；四种自定义背景（纯色、2–5 色可调角度的渐变、自由组合 Emoji 在本地生成 1024 贴图、长边最高 3840 像素且存 IndexedDB 的本地图片）；14 套内置 Emoji 场景墙（甜心、夏日、春日、秋日、冬日、森林、夜空、星空、海边、咖啡时光、彩虹、派对、黄脸、表情）；「我的背景」命名保存后可切换/重命名/删除；把配色渐变当成 50% 滤镜叠在背景上的开关；菜单、弹窗、输入框卡片与侧边栏「新会话」按钮的毛玻璃；以及与设置页共用状态的侧边栏页面。所有选择只存在浏览器本地。"
+icon: https://raw.githubusercontent.com/Ernesto-yuan/dsh-theme-switcher/main/assets/icon-256.png

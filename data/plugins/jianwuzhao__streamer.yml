@@ -1,0 +1,7 @@
+url: https://github.com/jianwuzhao/streamer
+name: jianwuzhao/streamer
+category: fun
+description:
+  en: 'Local-first AI livestream console with character previews, Douyin interactions, governed memory and training, and configuration backup.'
+  zh: '本地优先的 AI 直播控制台，支持角色预览、抖音互动、受控记忆与训练及配置备份。'
+tarball: https://github.com/jianwuzhao/streamer/releases/download/v0.20.0/dsh-dafeiyu-evolve-0.20.0.tgz

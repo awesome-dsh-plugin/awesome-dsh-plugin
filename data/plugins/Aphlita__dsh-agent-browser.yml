@@ -1,0 +1,6 @@
+url: https://github.com/Aphlita/dsh-agent-browser
+name: Aphlita/dsh-agent-browser
+category: browser
+description:
+  en: 'A Chrome/Edge session that the agent and the user share: the right sidebar shows the live page while the agent works from accessibility-tree snapshots (iframe support, stale ref retried automatically), a single-writer lease lets the user take over at any time, and uploads, JavaScript dialogs and risky navigations require approval, with domain allow/block lists and credential redaction. Ships an MCP stdio server that exposes the same tools outside DSH.'
+  zh: '人与智能体共用的 Chrome/Edge 会话：右栏显示实时画面，智能体基于可访问性树快照操作（支持 iframe，引用失效自动重试），单写者租约允许用户随时接管；上传、JS 对话框与危险导航需审批，并受域名白/黑名单与凭据脱敏约束。另带一个 MCP stdio 出口，在 DSH 之外也能用同一套工具。'
