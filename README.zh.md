@@ -1440,6 +1440,7 @@ dsh plugin --profile web add dshmarket
 - [mackwan84/dsh-ui-mockup#ui-mockup](https://github.com/mackwan84/dsh-ui-mockup/tree/main/bundle/ui-mockup) — 在 DeepSeek Harness 中使用可切换的阿里云百炼与火山方舟图像服务生成 UI 线框图和高保真设计稿。
 - [magian1127/deepseek-harness-zh_pro](https://github.com/magian1127/deepseek-harness-zh_pro) — DSH 网页 UI 综合增强：中文补全、统计单行显示、思考自动展开、对话宽度、会话归档与删除，并可选的提示词注入（默认关闭）。
 - [magic-tab-01/dsh-notes](https://github.com/magic-tab-01/dsh-notes) — 富文本笔记：支持图片、链接、符号、分类、背景、标题折叠与导出。
+- [magiccyclingz/dsh-design-leapavid](https://github.com/magiccyclingz/dsh-design-leapavid) — 侧栏设计风格库：集 84 套品牌设计语言，每套都按该品牌 DESIGN.md 的 token 现场渲染；挑一套并写清需求，就会把一份带完整 token 与交付规范的提示词发进当前会话，由对话模型按这套风格产出网页、五页幻灯片或信息图。还可把选中的风格导出为 CSS 变量、tokens.json 或 Tailwind 配置。
 - [magicOF2/dsh-autoload-history](https://github.com/magicOF2/dsh-autoload-history) — 打开会话时自动加载全部历史消息，免去反复点击「加载更早」。
 - [magicOF2/dsh-chat-width-customizer](https://github.com/magicOF2/dsh-chat-width-customizer) — 会话标题栏按钮循环切换对话宽度（748–1600px），消息区、输入框、用户气泡同步加宽。
 - [magicOF2/dsh-schedule](https://github.com/magicOF2/dsh-schedule) — 本地长期日程面板:顶栏「日程」文字按钮、今天/本周/历史月历统计视图、完成打勾(按天记录历史)、日程↔会话链接点击跳转、重复日程(每天/每周)、一次性日程可选未完成自动顺延,以及 dailytask_* agent 工具。
@@ -3384,6 +3385,7 @@ dsh plugin --profile web add dshmarket
 - [frank-fan-818/dsh-f1-skin](https://github.com/frank-fan-818/dsh-f1-skin) — 一款适用于 DSH Web 的 F1 赛事控制中心主题，提供四支车队皮肤、赛事摄影背景、浅色与深色模式及原生外观设置。
 - [fuguang12123/dsh-theme-inkstone](https://github.com/fuguang12123/dsh-theme-inkstone) — 墨白：参考 Obsidian Minimal E-ink 的黑白主题，提供侧栏黑白反色、彩色 Markdown 标题及本机霞鹜文楷字体回退，保留原生字体与外观设置，适用于 DSH 0.2.1-rc.2。
 - [Fwkkk666/dsh-za-warudo](https://github.com/Fwkkk666/dsh-za-warudo) — 在 DSH 侧栏加入“外观”开关，切换明暗主题时播放三秒时停转场与同步音效。
+- [FYTG-Sprite/dsh-shenhai-skin](https://github.com/FYTG-Sprite/dsh-shenhai-skin) — 把 1440p 深海视频循环播放为 DeepSeek Harness 的半透明玻璃壁纸，内置夜光珊瑚、深海极光、极光潮汐三套配色，中英双语控制面板、背景音乐和账号隐私开关。
 - [Galaxy-2001/Rhine-Lab-Codex-Theme#dsh](https://github.com/Galaxy-2001/Rhine-Lab-Codex-Theme/tree/main/dsh) — 为 DeepSeek Harness 提供莱茵生命 Pioneer 终端主题，包含奶油白与石墨黑配色、空白会话折片动画、阅读时的静态水印和设置页网格。
 - [gaopengpian/dsh-custom-ui-theme](https://github.com/gaopengpian/dsh-custom-ui-theme) — DeepSeek Harness 桌面端界面主题自定义：按界面区域配置背景、边框与文本样式，支持元素拾取器，优先级覆盖其他主题插件。
 - [GGBond2424648901/deep-whale-day-night-theme](https://github.com/GGBond2424648901/deep-whale-day-night-theme) — 面向官方 Harness rc.7 的非商业鲸鱼娘昼夜皮肤：当前无整屏边框布局、白昼水晶工坊与夜晚月潮观测室双场景、Q 版侧栏伙伴、透明花边与轻量氛围。
@@ -3510,6 +3512,7 @@ dsh plugin --profile web add dshmarket
 - [MicroSharpAnt/dsh-theme-presets](https://github.com/MicroSharpAnt/dsh-theme-presets) — 在 DSH Web GUI 的主题选择中加入 Nord、Dracula、Catppuccin、Tokyo Night、One Dark、Gruvbox、Solarized、GitHub、Everforest、Kanagawa、Rosé Pine 十一套配色预设，与内置的浅色/深色/跟随系统正交叠加。
 - [milkly909-code/dsh-plugin-starlight-protocol](https://github.com/milkly909-code/dsh-plugin-starlight-protocol) — DeepSeek Harness 外观套件：深空动态天体背景、赛博朋克 2077 HUD 主题、开机认证序列，以及无边框窗口下的侧栏折叠按钮。
 - [MilkySnowWay123/dsh-client-ui-skin-tianlight](https://github.com/MilkySnowWay123/dsh-client-ui-skin-tianlight) — DeepSeek Harness 的「天光」主题皮肤：全屏视频/图片壁纸（支持上传、轮播、URL 与 ShaderToy GLSL 代码来源）、可选 WebWallGL 场景壁纸、液态玻璃，以及可拖拽的薄荷猫桌宠（严格权限的 AI 对话、本地对话历史、每个形象的动作包）；Alt+W 打开壁纸面板。
+- [MiraculousGu/dsh-ui-studio](https://github.com/MiraculousGu/dsh-ui-studio) — 毛玻璃外观工作室：可调透明度与模糊度、图片或视频背景、六套浅色/深色表面配色、正文/代码/终端字号，以及可选的品牌标记。
 - [MistyRain-field/dsh-hu-tao-skin](https://github.com/MistyRain-field/dsh-hu-tao-skin) — 原神胡桃（往生堂）主题皮肤：14 个主题令牌的墨黑、绯红与琥珀金配色，飘落梅花瓣与流光蝴蝶，梅花徽记，以及会跟随侧栏收放的浮动开关。
 - [MitterMeierGithub/dsh-darksoft-theme](https://github.com/MitterMeierGithub/dsh-darksoft-theme) — dsh web 暗色主题插件（移植自 Obsidian things-soft-colorful-headings）：通过 --dsw-alias-label-* token 覆盖实现暖灰调暗文本，配合柔和的彩色 h1-h6 标题，零依赖。
 - [more-nico/dsh-nico-theme](https://github.com/more-nico/dsh-nico-theme) — 可切换的 DSH 网页端液态玻璃主题——14 个面板在流体背景上变成磨砂玻璃，材质参数有滑杆，悬停时玻璃与面板内容一起倾斜。
@@ -8477,6 +8480,7 @@ dsh plugin --profile web add dshmarket
 - [minhaoli/dsh-zotero-reader](https://github.com/minhaoli/dsh-zotero-reader) — 在 DSH 右侧栏里阅读 Zotero 的本地 PDF，并让模型直接基于原文工作。需要 Zotero 10 及以上版本并开启本地 API（Zotero 7/8 只能读、不能写入批注）。插件向模型提供三个工具：search_zotero_library 搜索文献库、read_zotero_paper 按页或按关键词读正文、ask_zotero_paper 做带页码依据的问答。批注操作与 Zotero 自带阅读器一致：点击批注弹出卡片，显示页码、原文引用、评论框与标签；右上角三点菜单可改色或删除；跨行选中只画一个外围长方形，不再每行一个框。评论、标签、颜色与删除都通过 Zotero 本地 API 写回，因此在 Zotero 里能看到，在 Zotero 里做的批注这里也能看到。划词动作包括翻译、解释、询问与高亮；阅读器按论文记住精确阅读位置（页加页内偏移）与缩放比例，已打开的 PDF 保持挂载，切换标签不会重新加载。扫描件或文本层损坏时可用 MinerU 重新解析，默认关闭。
 - [morefreeze/dsh-plugin-rss-pal](https://github.com/morefreeze/dsh-plugin-rss-pal) — 本地优先的 RSS/Atom 阅读器，支持全文搜索、批量标记已读、按需 AI 总结和原生伴读。依赖原生模块 better-sqlite3，安装器询问时需要批准它的原生构建。
 - [MrmoLabs/dsh-mermaid](https://github.com/MrmoLabs/dsh-mermaid) — 将 Mermaid 代码围栏渲染为 SVG 图表，支持流式输出、图形/代码切换、全屏缩放与拖拽、SVG 导出，以及内置的同源运行时。
+- [naliehu/outbreak-report-writing](https://github.com/naliehu/outbreak-report-writing) — 传染病现场流行病学调查报告（流调）生成：把不完整的事件 YAML 或个案 CSV 生成初次、进程、结案、结案申请单或单例报告，输出 Markdown、Word、PDF；缺项按 P0/P1/P2 标注并给时限，流行曲线按病种潜伏期自动分箱，一次同时产出未脱敏与脱敏两版。
 - [Nancy0-0/dsh-code-nav#symbol-links](https://github.com/Nancy0-0/dsh-code-nav/tree/main/packages/symbol-links) — 让聊天里行内代码中的标识符可点击：按定义、包装函数、顺序出现三级回退解析，在右侧预览打开文件并定位到对应行。
 - [NoneFire/drender#dsh-drender-plugin](https://github.com/NoneFire/drender/tree/main/plugins/hosts/dsh) — 为 DeepSeek Harness 提供 md-report/1 报告的校验与渲染工具：把 Markdown 与声明的 SQLite/CSV 数据集生成单个离线可交互 HTML 报告或仪表盘，图表默认用 AntV G2、复杂图表回退 ECharts，并提供图表/数据/SQL 与数据表/数据/SQL 视图。
 - [omdsh-dev/dsh-tool-markdown](https://github.com/omdsh-dev/dsh-tool-markdown) — HTML↔Markdown 转换、GFM 表格规范化、目录生成。
