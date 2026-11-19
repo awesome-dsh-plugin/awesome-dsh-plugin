@@ -1562,7 +1562,7 @@ dsh plugin --profile web add dshmarket
 - [nanshang328/dsh-power](https://github.com/nanshang328/dsh-power) — 仅支持 Windows：注入 DSH 页面的电源卡片，图案左右各带一块命中区（左关机、右重启），第一次点击只把卡片变成一句是否确认，第二次点击才执行；重启引擎只停本实例的进程树，等待端口释放后在宿主 Job Object 之外重新拉起，并用插件自己的状态路由确认新实例已经应答。
 - [naofu233/dsh-panel-nav-fold](https://github.com/naofu233/dsh-panel-nav-fold) — 在 DSH 左侧边栏加一个可折叠的「面板导航栏」标题行，收起全局面板行和插件侧边栏入口，点击原位展开。
 - [narkco-kang/dsh-team-workbench](https://github.com/narkco-kang/dsh-team-workbench) — 把一支具名智能体团队做成聊天工作台：成员各有可回退的模型路由与 3D 头像；私聊/群聊支持点名接力与受限并行；整个部门可以是一个智能体，主管分派子智能体并行执行后汇总；记录检索带命中高亮与今天/昨天/更早分组；四层记忆（原始会话 → 原子事实 → 场景摘要 → 用户画像）用 BM25 + 向量 RRF 混合召回；另有头像素材库与本地/云端语音输入。混合召回需要 embedding 端点（默认本机 Ollama 的 qwen3-embedding:0.6b，否则只用 BM25）；语音输入需本地 jianchang512/stt 服务或云端 ASR key，否则退回浏览器语音。
-- [Naskita/shadow-bilingual](https://github.com/Naskita/shadow-bilingual) — 你用母语写、发出去的是英文：输入框、插话框与消息队列里都显示一行英文影子译文，助手每段英文下方再补所选语言（18 种）的对照。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [Naskita/shadow-bilingual](https://github.com/Naskita/shadow-bilingual) — 你用母语写、发出去的是英文：输入框、插话框与消息队列里都显示一行英文影子译文，助手每段英文下方再补所选语言（18 种）的对照。
 - [NativeDog1/dsh-boot-animation](https://github.com/NativeDog1/dsh-boot-animation) — 打开新对话、或每次打开你钉住的那个会话时，铺满窗口播放一段片头动画。插件自带四段片头，直接内嵌在代码里（不带独立的视频文件）；界面里的片库可切换、可预览，也能随时换成你自己的片子；设置旁一键钉住会话。
 - [Natsubrei/dsh-comfyui-panel](https://github.com/Natsubrei/dsh-comfyui-panel) — 把真正的 ComfyUI 编辑器作为侧栏标签嵌进 DeepSeek Harness，每会话的工具直接读写屏幕上那张工作流，面板可启停 ComfyUI，且不向 ComfyUI 安装任何东西。
 - [Natsubrei/dsh-mermaid-panel](https://github.com/Natsubrei/dsh-mermaid-panel) — 把当前对话里的 Mermaid 图表渲染成右侧栏的一个页面，一图一卡片；点击卡片可全屏查看并缩放、拖动，对话里的原始代码块保持不动，因此复制或引用源码照常可用。
