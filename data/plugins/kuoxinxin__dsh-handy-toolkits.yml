@@ -1,0 +1,7 @@
+url: https://github.com/kuoxinxin/dsh-handy-toolkits
+name: kuoxinxin/dsh-handy-toolkits
+category: ui
+description:
+  en: 'Three GUI toolkits in one bundle: whole-page zoom (Cmd/Ctrl + Shift + =, - and 0, with a coordinate shim so anchored menus stay on their buttons), copy-on-select in the chat transcript (copies the dragged text and tells you how many characters, with an execCommand fallback), and Mermaid fences in replies drawn as diagrams with a full-screen viewer (wheel zoom anchored at the pointer, drag to pan) and PNG, SVG or source copy. The Mermaid engine ships inside the bundle, so nothing is fetched at runtime.'
+  zh: '一个包里三个界面工具：整页缩放（Cmd/Ctrl + Shift + =、-、0，并带有坐标补偿，缩放后菜单仍贴着触发按钮）；聊天记录划词即复制（复制拖选的文字并提示字符数，带 execCommand 兜底）；回复里的 Mermaid 围栏直接画成图，可全屏查看（滚轮以指针为锚点缩放、拖动平移），并支持复制 PNG / SVG / 源码。Mermaid 引擎随包内置，运行时不发起任何网络请求。'
+tarball: https://github.com/kuoxinxin/dsh-handy-toolkits/releases/latest/download/dsh-handy-toolkits.tgz
