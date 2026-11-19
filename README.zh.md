@@ -159,7 +159,7 @@ dsh plugin --profile web add dshmarket
 - [wjj865-code/dsh-orchestrator](https://github.com/wjj865-code/dsh-orchestrator) — 给 DeepSeek Harness 加一位协调者和一组子任务会话：主会话只拆活、用 task_create 派子会话、读 task_report 回报；每条任务进持久 SQLite 台账，带依赖、分组、写域与优先级队列。子会话报 done 落「已交付待确认」，追问窗口保留到你确认或超时收尾；其上还有把经验蒸馏进后续任务的分层记忆、等用户拍板任务的收件箱、可选的每日日报、每日台账快照与浏览器任务面板。
 - [ws1234567891011/dsh-interim-narration](https://github.com/ws1234567891011/dsh-interim-narration) — 让 agent 边做边说：每轮先用一两句说明怎么理解消息、准备怎么做、第一步是什么，并在工具调用批次之间写过程叙述；插件页可直接调整详略、句数上限与开关。
 - [wuanthony397-hash/dsh-codex-peer](https://github.com/wuanthony397-hash/dsh-codex-peer) — 让 DeepSeek Harness agent 与本机 Codex CLI 对等协作：把目标拆成共享工作清单、派活与交接、互相审查，并把每一步的提示词、事件流与回答留档在本地。
-- [wychmod/dsh-mini-superagent#dsh-mini-superagent](https://github.com/wychmod/dsh-mini-superagent/tree/main/dsh-mini-superagent) — 给 DeepSeek Harness 加任务派发与一个工作台：主会话把任务派给独立的后台子会话、立即返回，子会话的报告自动回流成本会话的一条消息；侧边栏「派发工作台」显示并发位、排队、批次进度与失败原因，每条任务可取消、重试、归档。新增 10 个 dispatch_* 工具。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [wychmod/dsh-mini-superagent#dsh-mini-superagent](https://github.com/wychmod/dsh-mini-superagent/tree/main/dsh-mini-superagent) — 给 DeepSeek Harness 加任务派发与一个工作台：主会话把任务派给独立的后台子会话、立即返回，子会话的报告自动回流成本会话的一条消息；侧边栏「派发工作台」显示并发位、排队、批次进度与失败原因，每条任务可取消、重试、归档。新增 10 个 dispatch_* 工具。
 - [xfgil/dsh-second-opinion](https://github.com/xfgil/dsh-second-opinion) — 跨会话「第二意见」：一个会话卡住时，把问题交给另一个独立会话单独思考，把方案拿回来继续。不冒充用户发言，也不唤醒闲置会话。
 - [xingyanghaifu/dsh-reqtrace](https://github.com/xingyanghaifu/dsh-reqtrace) — DSH 会话的需求-证据审计：把每条需求对应到工具调用、文件和命令，逐条记录验证情况，并把缺失项退回给 agent。
 - [YingshuoZhang/dsh-chinese-reasoning](https://github.com/YingshuoZhang/dsh-chinese-reasoning) — 让 DeepSeek Harness 的 agent 用简体中文推理：每轮在对话末尾追加一条运行时上下文指令，并可选在系统提示词里保留一条稳定声明。设置里可选简体中文或关闭，并决定是否保留该声明。
