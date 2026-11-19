@@ -1,0 +1,6 @@
+url: https://github.com/SSHOOTING/dsh-plugin-session-archive
+name: SSHOOTING/dsh-plugin-session-archive
+category: session
+description:
+  en: 'Read-only DSH command that exports the current session as redacted Markdown or JSON.'
+  zh: '只读 DSH 命令，把当前会话导出为脱敏的 Markdown 或 JSON。'
