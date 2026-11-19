@@ -2,5 +2,5 @@ url: https://github.com/HiSeax/dsh-superagent/tree/main/packages/dsh-superagent
 name: HiSeax/dsh-superagent#dsh-superagent
 category: workflow
 description:
-  en: 'Route work across agent teammates: policy-gated acceptance, ticket dispatch with an audit ledger, WeChat and Feishu channels, and a board panel.'
-  zh: '在多个 agent 成员之间派活：策略化接收、工单派发与台账、微信/飞书通道、任务看板。'
+  en: 'Route work across agent teammates: policy-gated acceptance, ticket dispatch with an audit ledger, WeChat and Feishu channels, a board panel, and click-to-answer grilling cards.'
+  zh: '在多个 agent 成员之间派活：策略化接收、工单派发与台账、微信/飞书通道、任务看板，以及点选作答的拷问（grill）选择卡。'
