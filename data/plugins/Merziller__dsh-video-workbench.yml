@@ -2,6 +2,6 @@ url: https://github.com/Merziller/dsh-video-workbench
 name: Merziller/dsh-video-workbench
 category: tools
 description:
-  en: 'Video workbench plugin for DeepSeek Harness (v0.3.5): 25 tools with hardware preflight & low-spec protection (min 4-core CPU / 8 GB RAM / iGPU), Remotion 4.x TSX & HTML5/Canvas dual engines, unrestricted open-genre freeform Three.js/SVG/Canvas coding (custom genreLabel pass-through & freeform-stage), light-mode 2x tutorial primitives, meta-guard prompt isolation, semantic subtitle/TTS split, LLM 8D emotional voice casting, and Windows pure-CPU TTS.'
-  zh: 'DeepSeek Harness 视频创作工作台 (v0.3.5)：集成 25 个工具，支持硬件预检与低配电脑保护模式（最低 4 核 CPU / 8 GB 内存 / 核显）、Remotion 4.x TSX 与 HTML5/Canvas 双引擎、全品类不限题材自由编程（自创体裁标签全链路透传 + freeform-stage 零模板约束）、亮色 2x 交互教程原语、指令词隔离、字幕发音分离、AI 语义选音与 8 维情绪驱动及 Windows 纯 CPU 配音。'
-tarball: https://github.com/Merziller/dsh-video-workbench/releases/download/v0.3.5/dsh-video-workbench-0.3.5.tgz
+  en: 'Video workbench plugin for DeepSeek Harness (v0.3.6): 25 tools with hardware preflight & low-spec protection (min 4-core CPU / 8 GB RAM / iGPU), Remotion 4.x TSX & HTML5/Canvas dual engines, unrestricted open-genre freeform Three.js/SVG coding, pixel-exact UI FocusShot & 4-protocol multimodal vision/DOM anchor grounding, anti-PPT live interaction & OffthreadVideo EOF freeze guard, meta-guard prompt isolation, semantic subtitle/TTS split, LLM 8D emotional voice casting, and Windows pure-CPU TTS.'
+  zh: 'DeepSeek Harness 视频创作工作台 (v0.3.6)：集成 25 个工具，支持硬件预检与低配电脑保护模式（最低 4 核 CPU / 8 GB 内存 / 核显）、Remotion 4.x TSX 与 HTML5/Canvas 双引擎、全品类无上限自由编程、像素级精准 UI 聚焦与 4 协议多模态视觉/DOM 锚点定位、实操录屏去 PPT 化与视频尾帧防崩溃保护、指令词隔离、字幕发音分离、AI 语义选音与 8 维情绪驱动及 Windows 纯 CPU 配音。'
+tarball: https://github.com/Merziller/dsh-video-workbench/releases/download/v0.3.6/dsh-video-workbench-0.3.6.tgz
