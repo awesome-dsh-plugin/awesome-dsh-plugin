@@ -1424,6 +1424,7 @@ dsh plugin --profile web add dshmarket
 - [Lzh3070/dsh-file-review-tab](https://github.com/Lzh3070/dsh-file-review-tab) — 把 agent 的文件改动审查放进 dsh-better-sidebar 侧边栏 Tab 或对话尾部行，支持行级 diff 与撤销。
 - [lzpway-jpg/dsh-plugin-brand-custom](https://github.com/lzpway-jpg/dsh-plugin-brand-custom) — 自定义 DSH Web 侧边栏与会话页的品牌图标和名称，插件详情页内置设置卡片，保存即生效。
 - [Lzz2133/dsh-manutd-fixtures](https://github.com/Lzz2133/dsh-manutd-fixtures) — 在侧边栏查看曼联 2026/27 赛季赛程，开球时间按你的本地时区显示，已结束比赛带 W/L/D 比分结果。
+- [M0rningBreeze/dsh-selection-followup](https://github.com/M0rningBreeze/dsh-selection-followup) — 在对话里选中一段文字，右键就在它旁边浮出追问卡片；答案只留在卡片里，不写进主对话，上下文深浅一点即切。
 - [m724523/dsh-deepseek-live-status](https://github.com/m724523/dsh-deepseek-live-status) — 左侧栏底部的一行状态挂件：绿点加本机四项探针（API、网页、文档、状态页）的实时延迟，点开弹出卡片看官方组件状态。刷新间隔 15 秒到 2 分钟可选。
 - [mackwan84/dsh-ui-mockup#ui-mockup](https://github.com/mackwan84/dsh-ui-mockup/tree/main/bundle/ui-mockup) — 在 DeepSeek Harness 中使用可切换的阿里云百炼与火山方舟图像服务生成 UI 线框图和高保真设计稿。
 - [magian1127/deepseek-harness-zh_pro](https://github.com/magian1127/deepseek-harness-zh_pro) — DSH 网页 UI 综合增强：中文补全、统计单行显示、思考自动展开、对话宽度、会话归档与删除，并可选的提示词注入（默认关闭）。
@@ -2493,6 +2494,7 @@ dsh plugin --profile web add dshmarket
 - [zenro21/dsh-open-card](https://github.com/zenro21/dsh-open-card) — 调整 DSH 界面里任意块的长宽：点选后拖八个手柄改尺寸，还能收起、滚动内容、平移、置前，尺寸与位置会被记住并在刷新后恢复。
 - [zenvertao/dsh-inline-comments](https://github.com/zenvertao/dsh-inline-comments) — 选中即批注，刷新亦留存；随消息发送，模型逐条回应。
 - [Zephinel/dsh-intelligent-ui](https://github.com/Zephinel/dsh-intelligent-ui) — 在 DSH 对话中把 OpenUI Lang 答案渲染成交互卡片或阅读式文章，支持地图、图表、表单、PNG 图片导出和独立交互 HTML 导出。
+- [Zephinel/dsh-power-suite](https://github.com/Zephinel/dsh-power-suite) — 为 DSH Web 提供会话产物与快速预览、动态工作区、提示历史、草稿附件记忆、中断会话恢复、同步侧栏宽度和 UI 元素标注的一体化插件。
 - [zerorigin-studio/dsh-deepseek-chat](https://github.com/zerorigin-studio/dsh-deepseek-chat) — 网页对话入口插件：侧边栏一键打开 chat.deepseek.com 独立窗口（dsh-desktop 桥接），纯网页环境自动回退内嵌打开。
 - [zerorigin-studio/dsh-desktop-shell](https://github.com/zerorigin-studio/dsh-desktop-shell) — 把 dsh web 界面封装成原生 Windows 桌面窗口，内置桌面客户端，带系统托盘、开机自启与协议文件分发。
 - [zeusxx/dsh-composer-live](https://github.com/zeusxx/dsh-composer-live) — 打 Markdown，边打边渲染——给 DeepSeek Harness（DSH）Web 输入框带来 Open WebUI 风格的实时编辑体验，代码块语法高亮、任务列表、格式工具栏、智能粘贴。
@@ -7576,6 +7578,7 @@ dsh plugin --profile web add dshmarket
 - [Zoria-Lind/dsh-behavior-enhancer](https://github.com/Zoria-Lind/dsh-behavior-enhancer) — 工具调用纪律：提供行为提示、失败后降低并行度与重试提醒、写后检查及备份回滚、高风险命令闸门、变更摘要与验证提醒、项目记忆建议性检查、可配置的项目纪律周期重述与压缩后补充，以及遵守度统计。
 - [zp-home/dsh-recommend](https://github.com/zp-home/dsh-recommend) — DSH 插件透明排行与推荐：每日自动抓取 `dsh-plugin` 话题生态，公开评分模型，提供 rank/search/recommend 工具与设置页榜单。
 - [ZRui-C/dsh-computer-use](https://github.com/ZRui-C/dsh-computer-use) — DSH 电脑控制：Playwright/CDP 后台操作 Chromium，Accessibility 优先控制 macOS；动作锁定到正确进程与窗口，不抢前台、不移动鼠标，提供已签名公证的 Universal 2 DMG 安装包。
+- [Zsimeon/dsh-stocklab](https://github.com/Zsimeon/dsh-stocklab) — A股行情分析工作台。左侧栏面板内嵌本地 stocklab 网页工作台（行情、LLM 个股分析、大盘复盘、今日热点），带服务状态灯与一键启动；另含 stocklab 对话工具、FastAPI 服务守护，并通过 DSH 凭据服务安全注入 API Key。
 - [zt8989/dsh-agentmail](https://github.com/zt8989/dsh-agentmail) — 通过已授权的 agently-cli 账号收发 QQ Agent Mail 邮件：发送、列表、阅读、搜索、回复、轮询共六个工具，主题自动嵌入会话/线程标记，后台轮询把回信路由回所属 DSH 会话并唤醒它，HTML 正文渲染为简洁的 Markdown。
 - [zuihouye/dsh-agnes-tools](https://github.com/zuihouye/dsh-agnes-tools) — 把 Agnes AI 的生图 / 生视频接成 DSH 原生工具，长视频任务可稍后续查。需设置 Agnes API Key（AGNES_API_KEY）。
 - [zxmqq1234/dsh-auto-retry](https://github.com/zxmqq1234/dsh-auto-retry) — 在 dsh 内置重试之上追加重试、回合自动继续与无响应看门狗，提供实时倒计时横幅、通知弹窗与统计看板。
