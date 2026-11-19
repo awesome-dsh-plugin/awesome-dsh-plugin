@@ -1,0 +1,6 @@
+url: https://github.com/wellsoren/dsh-atomcode
+name: wellsoren/dsh-atomcode
+category: model
+description:
+  en: Connects the AtomGit AtomCode CodingPlan models to DSH through a loopback proxy that signs each gateway request, reusing the existing atomcode CLI login, with a sidebar panel for plan status, quota windows and 60-day usage.
+  zh: 把 AtomGit AtomCode 的 CodingPlan 模型接进 DSH：本机回环代理为每次网关请求做签名，直接复用 atomcode CLI 的登录态，侧边栏面板显示套餐状态、额度窗口与近 60 天用量。
