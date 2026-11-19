@@ -5113,7 +5113,7 @@ dsh plugin --profile web add dshmarket
 - [PwnKY/dsh-session-link](https://github.com/PwnKY/dsh-session-link) — 复制、打开 `dsh://` 会话深链，或将其粘贴到另一对话中，注入被引用会话的受限只读快照。
 - [qiangweiliu/dsh-context#agent-embodiment](https://github.com/qiangweiliu/dsh-context/tree/main/agent-embodiment) — 为 DeepSeek Harness 提供上下文可观测性与控制：跨会话 token 分析、会话级预算/提示词/工具控制，以及可选的 Agent 脚手架。复用官方 tokenMeter、compaction、systemPrompt、tools.restrict seam；监控只读。
 - [qiesh-cn/dsh-huiyou](https://github.com/qiesh-cn/dsh-huiyou) — 把 DSH 会话删除到可搜索的回收站，再从侧栏恢复或彻底删除。仅限 DSH Desktop：需装进 Desktop profile，且只支持 Desktop 的 Web GUI。
-- [Qing8-Max/dsh-session-overview](https://github.com/Qing8-Max/dsh-session-overview) — 在 DSH 会话视图切换器中增加「概览」页签，显示当前会话的回合数、墙面时间、令牌用量、缓存命中率与生成速度。
+- [Qing8-Max/dsh-session-overview](https://github.com/Qing8-Max/dsh-session-overview) — 在 DSH 会话视图切换器中增加「概览」页签，显示当前会话的回合数、墙面时间、令牌用量、缓存命中率与生成速度。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [qingmomo233/dsh-thinking-language](https://github.com/qingmomo233/dsh-thinking-language) — 切换智能体思考过程（推理/链式思考）的语言：支持简体中文、英文、俄语、法语、德语、西班牙语、日语、韩语等，或跟随系统界面语言（自动）。新增「设置 → 通用」中的思考语言选择行、系统提示词注入（每次组装提示词时求值，新会话生效）与 /thinking-language 命令。
 - [qingyou002/dsh-auto-handoff](https://github.com/qingyou002/dsh-auto-handoff) — DSH 插件：通过 /handoff 或会话累计 Token 阈值把长会话交接给同工作区的新会话，并继承 preset、模型、权限与 Plan 模式；交接简报由会话自身的模型撰写，切换在 Step 边界发生，不中断正在执行的步骤。
 - [qinu321/dsh-archive-viewer](https://github.com/qinu321/dsh-archive-viewer) — 已归档 DSH 会话的只读查看器：按工作区筛选、按标题/ID 搜索，不取消归档即可阅读从完整日志折出的对话——包括上下文压缩前的原文与工具调用。
@@ -8070,7 +8070,7 @@ dsh plugin --profile web add dshmarket
 - [CAI-MH/dsh-gpt-image](https://github.com/CAI-MH/dsh-gpt-image) — 控制已登录的网页版 ChatGPT 生成图片并下载到本地。
 - [cctv2333/dsh-vidlens](https://github.com/cctv2333/dsh-vidlens) — 按人看片的顺序取样，而不是下载整片：先元数据与章节，再按时间码抽帧看画面、字幕优先转录（平台没有字幕才走本地 ASR）、AudioSet 527 类声音事件标签与高赞评论——21 个工具共用一个磁盘缓存，并带跨进程锁。需要 Python 3.10+、ffmpeg 与 vidlens 包（pip install vidlens-mcp）；缺依赖时回给你的是两种修法，而不是一句 ImportError。
 - [charovo0059/dsh-model-vision](https://github.com/charovo0059/dsh-model-vision) — 补上 DSH「获取可用模型」漏记的视觉能力，让能看图的模型不再被当成纯文本，并在模型名后标出「可看图」。
-- [chddydwd/dsh-eye](https://github.com/chddydwd/dsh-eye) — 给 DeepSeek Harness 装一双「看得见刚才」的眼睛：屏幕帧按内存环保留最近约 45 秒，能倒带「刚才发生了什么」、按格子回取 1:1 原像素；读窗口文字走 Windows 无障碍接口（不是 OCR 猜）；按名字找控件只报坐标、从不代点；隐私打码让所有给出去的图一起挡。仅支持 Windows，全程本机、不上传。
+- [chddydwd/dsh-eye](https://github.com/chddydwd/dsh-eye) — 给 DeepSeek Harness 装一双「看得见刚才」的眼睛：屏幕帧按内存环保留最近约 45 秒，能倒带「刚才发生了什么」、按格子回取 1:1 原像素；读窗口文字走 Windows 无障碍接口（不是 OCR 猜）；按名字找控件只报坐标、从不代点；隐私打码让所有给出去的图一起挡。仅支持 Windows，全程本机、不上传。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Cheng-cheng9669/dsh-deepseek-vision](https://github.com/Cheng-cheng9669/dsh-deepseek-vision) — 复用 DeepSeek 网页端识图模式给纯文本模型补上看图能力：deepseek_vision 工具调用本地 deepseek-vision-cli 浏览器自动化（手动登录助手、自动开启深度思考、用后自动关窗），把图片描述以文字返回给模型。
 - [chenyth/dsh-image-designer](https://github.com/chenyth/dsh-image-designer) — 神火设计师：连接神火 AI 完成图片设计，支持个人账号 OAuth、素材上传、需求匹配、设计提案、积分报价确认与作品下载。
 - [chenyth/dsh-image-editor](https://github.com/chenyth/dsh-image-editor) — 神火图层编辑器：通过神火 MCP 上传并分离图片，确认积分后生成可编辑图层，在默认浏览器编辑，按需导出并下载 PSD。
@@ -9593,7 +9593,7 @@ dsh plugin --profile web add dshmarket
 - [Punky971210/dsh-punky-swarm#dsh-punky-swarm](https://github.com/Punky971210/dsh-punky-swarm/tree/main/packages/dsh-punky-swarm) — dsh 单机多子 Agent 集群治理：引擎级质量门禁拒收半成品、崩溃断点续跑不重来——给 AI 团队装上"跑不坏"的工程护栏。
 - [pythoner1984/dsh-wechat-todo](https://github.com/pythoner1984/dsh-wechat-todo) — 把本地微信群聊变成可跟进的待办看板：三栏（待办 / 进行中 / 需要你）配模型总结、自动标出 @ 你或回复你的消息、拖拽改状态、仅本地存储。需本机 Python 3 并装好 sqlcipher3 与 zstandard，且已有 rion-wechat-reader 的 config.json 与 keys.json（插件不负责取密钥）；总结时会把群聊原文发给所选模型。
 - [Q00/ouroboros#integrations/dsh-plugin](https://github.com/Q00/ouroboros/tree/main/integrations/dsh-plugin) — 通过 DSH MCP 客户端挂载 Ouroboros 的纯配置包，在 DSH 中提供 36 个涵盖需求访谈、Seed、执行、评估与演化流程的工具。
-- [Qing8-Max/dsh-dev-modes](https://github.com/Qing8-Max/dsh-dev-modes) — 一次安装新增三个 Agent 预设：软件开发、游戏开发、只读讨论，并带每会话的隔离与静默运行开关；随包附带交付流程与 Godot / Unity / Unreal / Cocos 引擎工作流技能。
+- [Qing8-Max/dsh-dev-modes](https://github.com/Qing8-Max/dsh-dev-modes) — 一次安装新增三个 Agent 预设：软件开发、游戏开发、只读讨论，并带每会话的隔离与静默运行开关；随包附带交付流程与 Godot / Unity / Unreal / Cocos 引擎工作流技能。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [qiqll/dsh-task-suite](https://github.com/qiqll/dsh-task-suite) — 把单个 DSH Agent 变成一支工程团队：Markdown 任务池、主 Agent 调度、后台 worker 交付、机器验收；需求可异步投递，附实时面板。
 - [qisisiqi/dsh-bili-banghui](https://github.com/qisisiqi/dsh-bili-banghui) — 还在为回B站的傻福消息而苦恼吗？这个插件AI帮你回消息，把「回复我的」按人与楼层聚合成会话，右侧把 主楼 → 他 → 你 拉成一条线，不用再翻评论区找上下文；点「AI帮回」，它先看对方是夸你、跟你聊还是在挑刺（赞同/友善就不跟你抬杠），再给三条候选，你挑一条改成自己的口气，确认了才发出去，发完自动记一笔。登录、人设、API Key 都在面板右上角的头像菜单里，凭证只存在本地 data 目录。
 - [QlzqQlzq/dsh-dual-agent-presets](https://github.com/QlzqQlzq/dsh-dual-agent-presets) — 安装两个可选 Agent Preset：默认不暴露 Shell 的通用 Agent，以及面向真实代码仓库的 Coding Pro。
@@ -9660,7 +9660,7 @@ dsh plugin --profile web add dshmarket
 - [Snerou/dsh-reason-tree](https://github.com/Snerou/dsh-reason-tree) — 根源追溯：把结论拆成从下往上的论证树，每一支可标成立、不成立或待拆，并能跳到海马体看原文。
 - [soffits/dsh-cron-jobs](https://github.com/soffits/dsh-cron-jobs) — 在宿主进程中运行的定时任务，支持 cron、RRULE 或一次性时间：只跑 shell 命令、不启动模型；先跑检查命令，有事才唤醒 Agent；或直接给 Agent 发提示词。附带让 Agent 创建任务的工具、Cron 任务页面，结果可交给任何提供 send 方法的插件发送。
 - [songsongs/dsh-plugin-maitian](https://github.com/songsongs/dsh-plugin-maitian) — 北山新媒体运营工作台：连接本机麦田服务，查询创作者数据、查看单期详情，并通过 Harness 审批调用本机分发工作流。
-- [Sophia-DuoDuo/dsh-smart-planner](https://github.com/Sophia-DuoDuo/dsh-smart-planner) — 面向 DeepSeek Harness 的任务规划助手：把项目拆成每日任务，支持缓冲日、容量看板、晚间复盘、置顶助手会话，以及每个对话标题前的小鱼任务浮层。
+- [Sophia-DuoDuo/dsh-smart-planner](https://github.com/Sophia-DuoDuo/dsh-smart-planner) — 面向 DeepSeek Harness 的任务规划助手：把项目拆成每日任务，支持缓冲日、容量看板、晚间复盘、置顶助手会话，以及每个对话标题前的小鱼任务浮层。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [spechenxin/jimu](https://github.com/spechenxin/jimu) — 积木：DSH 分域编排插件，domain_plan 分域确认 + 按域编排子代理（手递手）+ LLM 自动审计。
 - [spheritier/dsh-plugin-bulk-update](https://github.com/spheritier/dsh-plugin-bulk-update) — 检查已安装的 DSH registry 插件是否有兼容更新，并选择要应用的版本。
 - [SpookyWaste/dsh-plan-compact-execute](https://github.com/SpookyWaste/dsh-plan-compact-execute) — 在 DSH Web 的计划审批卡上增加「压缩后执行」：先把计划提交之前的历史压成检查点，再批准计划。
@@ -12058,7 +12058,7 @@ dsh plugin --profile web add dshmarket
 - [flyinghouse-ma/dsh-pet-android-community](https://github.com/flyinghouse-ma/dsh-pet-android-community) — 安卓桌宠社区补丁：需先装上游 dsh-pet（≥0.3.7），另装自签名壳 APK（Android 11+），并在本机常驻 3080→38019 转发；修好悬浮窗无法聚焦导致键盘不弹、聊天发不出去、回复被窗口裁掉三个问题。
 - [food211/chubby-fish-studio](https://github.com/food211/chubby-fish-studio) — 右侧栏里一张会混色的画布：agent 看得见画面、一笔一笔落笔，并能读出精确像素色值。
 - [Free-swallow1/dsh-onmyoji-guide](https://github.com/Free-swallow1/dsh-onmyoji-guide) — 阴阳师游戏助手：五个工具，提供式神/御魂查询、技能全文、满暴与面板计算、网易大神攻略检索和介绍图卡路径。
-- [Frost-wu/dsh-token-saver-100](https://github.com/Frost-wu/dsh-token-saver-100) — 拦下每一次对话模型调用，直接流回「恭喜你，又省下了token！」，于是一轮对话不花任何 token；设置页累计显示已拦下的调用次数。带 purpose 的后台请求（标题生成、上下文压缩等）不受影响。
+- [Frost-wu/dsh-token-saver-100](https://github.com/Frost-wu/dsh-token-saver-100) — 拦下每一次对话模型调用，直接流回「恭喜你，又省下了token！」，于是一轮对话不花任何 token；设置页累计显示已拦下的调用次数。带 purpose 的后台请求（标题生成、上下文压缩等）不受影响。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Gastronomicluna/Matrix-code](https://github.com/Gastronomicluna/Matrix-code) — 矩阵风格 CLI 对话页：Agent 思考过程化作绿色代码雨倾泻而下，回复照常流式显示。
 - [gavinff1990/fanggao-pet](https://github.com/gavinff1990/fanggao-pet) — 一只可拖拽的方糕萌宠：对话进行时奔跑、完成时睡觉、出错时生气。
 - [gezi-wen/dsh-naiwa-laugh](https://github.com/gezi-wen/dsh-naiwa-laugh) — 每轮 agent 回合结束，在 DSH Web UI 里随机播一段奶蛙笑声：七段自带 mp3 提前解码进内存，一轮笑一次，不用装桌宠、不联网，可在浏览器控制台开关。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
@@ -12140,7 +12140,7 @@ dsh plugin --profile web add dshmarket
 - [lilulj/dsh-dafeiyu-pet](https://github.com/lilulj/dsh-dafeiyu-pet) — DSH 桌宠：蓝色鲸鱼娘，自带 104 个动作与内置语音。插件独立，但桌宠运行时基于 dsh-dafeiyu 改造——安装前需先禁用上游 dsh-dafeiyu，否则两只同开会抢控制口；仅支持 Windows x64，首次启动需下载约 580MB 素材。
 - [linconz/agentduel-dsh](https://github.com/linconz/agentduel-dsh) — AgentDuel 是一款代码对战游戏，通过这款插件，在 DSH 内部完成整个游戏过程，实现死斗角色与夺旗团队、提交 Agent 代码、发起战斗、观看回放，并通过 DSH 会话依据战果继续优化 Agent。
 - [Link258QAQ/dsh-plugin-genshin-launch](https://github.com/Link258QAQ/dsh-plugin-genshin-launch) — 仅 Windows。打开 DSH 先探测本机《原神》：装了直接启动本体（秒退改起米哈游启动器），没装才下载安装包到桌面；与预期 224MB 相差超 15MB 的链接会被拒绝，失败则打开官方下载页。
-- [linkl-ike/my-fish](https://github.com/linkl-ike/my-fish) — 在 DSH 里养一条鱼：人格、长期记忆（摘要 / 体检 / Markdown 导出）、QQ/B站/抖音聊天、语音、日记与备份，外加本地 ComfyUI 画图和 12 个标签页的一体化面板。
+- [linkl-ike/my-fish](https://github.com/linkl-ike/my-fish) — 在 DSH 里养一条鱼：人格、长期记忆（摘要 / 体检 / Markdown 导出）、QQ/B站/抖音聊天、语音、日记与备份，外加本地 ComfyUI 画图和 12 个标签页的一体化面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [lintwosix-beep/dsh-pet-chat](https://github.com/lintwosix-beep/dsh-pet-chat) — 带聊天面板的桌宠：QQ 风格的历史记录、收藏，以及聊完会以合并转发卡片回到历史的支线对话；面板停靠在小女仆右侧，可从边缘与四角拖拽改大小。基于 PC2005-cloud/dsh-pet（MIT）的二次修改版，请勿与原版同时安装。
 - [Little-Star888/dsh-pelican](https://github.com/Little-Star888/dsh-pelican) — 右下角鹈鹕环海骑行 SVG 动画，随代理状态在思考/完成间切换，回复完成时播放提示音并可选发送系统通知。
 - [liuwenji007/dsh-muyu](https://github.com/liuwenji007/dsh-muyu) — 右下角电子木鱼，默认是鲸鱼娘图包：敲头记功德，模型忙碌时自动敲；功德按会话存本机，可换自定义图源。
