@@ -1,0 +1,6 @@
+url: https://github.com/Abulfadl-Ahmadi/dsh-plugin-persian-vazirmatn
+name: Abulfadl-Ahmadi/dsh-plugin-persian-vazirmatn
+category: ui
+description:
+  en: Persian Vazirmatn typography with unicode-range script isolation and strict LaTeX / Computer Modern math protection.
+  zh: DeepSeek Harness 波斯语 Vazirmatn 字体优化与 LaTeX / Computer Modern 数学公式保护插件。
