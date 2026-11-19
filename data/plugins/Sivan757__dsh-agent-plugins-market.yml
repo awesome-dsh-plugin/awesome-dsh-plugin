@@ -2,5 +2,6 @@ url: https://github.com/Sivan757/dsh-agent-plugins-market
 name: Sivan757/dsh-agent-plugins-market
 category: market
 description:
-  en: Install suites from any Claude Code, Codex, Cursor, Kimi or agent-plugins.org git marketplace repo — skills, MCP servers, hooks and slash commands are injected into DSH sessions at runtime, with a market page in the Web GUI.
-  zh: 把任意 Claude Code / Codex / Cursor / Kimi / agent-plugins.org 的 git 市场仓库加为源，套件的技能、MCP 服务器、hooks 与斜杠命令在运行时注入 DSH 会话，并自带 Web 市场页。
+  en: Skills and extensions manager that installs Claude Code, Codex, Cursor and Kimi plugin repositories as they are, with no conversion, manages skills, commands, MCP servers and hooks in one Web GUI workspace, and lets each session choose which extensions it carries.
+  zh: 技能与扩展管理器：Claude Code、Codex、Cursor、Kimi 的插件仓库原样安装、无需转换，在同一个图形界面工作区里管理技能、命令、MCP 服务与 hooks，并用扩展预设决定每个会话带哪些扩展。
+icon: https://raw.githubusercontent.com/Sivan757/dsh-agent-plugins-market/main/assets/dsh-agent-plugins.png
