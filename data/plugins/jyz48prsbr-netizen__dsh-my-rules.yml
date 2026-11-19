@@ -2,5 +2,5 @@ url: https://github.com/jyz48prsbr-netizen/dsh-my-rules
 name: jyz48prsbr-netizen/dsh-my-rules
 category: workflow
 description:
-  en: 'Personal rule files, one Markdown file per rule, injected into every session's system prompt; editable on disk, via /myrules, or through an Agent tool.'
+  en: 'Personal rule files, one Markdown file per rule, injected into the system prompt of every session; editable on disk, via /myrules, or through an Agent tool.'
   zh: '个人规则文件，每条规则一个 Markdown 文件并注入每个会话的系统提示词；可直接改文件、用 /myrules 命令或让 Agent 代管。'
