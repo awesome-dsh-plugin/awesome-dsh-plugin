@@ -2841,6 +2841,7 @@ dsh plugin --profile web add dshmarket
 - [HellGodX/dsh-ark-usage](https://github.com/HellGodX/dsh-ark-usage) — 火山方舟 Coding Plan 用量挂件：右下角一只可拖动的小鲸鱼，点开看 5 小时 / 周 / 月三档请求配额，再往下是本机 token 折算的今日、近 7 天、本月与累计花费。需要先安装并登录火山方舟 CLI：npm i -g @volcengine/ark-cli，然后 arkcli auth login。
 - [helloworld1631/dsh-volcengine-usage](https://github.com/helloworld1631/dsh-volcengine-usage) — 一个使用本地控制台登录态、可拖动的 DeepSeek Harness Web 火山引擎 Coding Plan 用量卡片。
 - [HerTa-st/dsh-balance-card](https://github.com/HerTa-st/dsh-balance-card) — 可拖动的余额与用量浮层卡片：点一下角色图片，卡片从图片左侧滑出，再点一下缩回；显示官方 DeepSeek 余额（赠金 / 充值拆分），并按缓存命中、未命中、输出三段计价，汇总本地会话日志的今日 / 近 7 天 / 本月 token 用量与人民币估算花费（按官方峰谷时段逐次计价）。
+- [hexiao160705-dev/dsh-account-ring](https://github.com/hexiao160705-dev/dsh-account-ring) — 侧栏余额与额度圆环：优先读取 Magpie 网关的额度接口（DeepSeek 钱包、Codex 套餐窗口，以及 Magpie 报告的其他供应商），读不到时回退到本机 ve 读火山方舟 Agent Plan AFP 与现金余额、以及 LobeHub；账号邮箱在进入页面前已脱敏。
 - [hgrh6268-lgtm/dsh-session-rate-cards](https://github.com/hgrh6268-lgtm/dsh-session-rate-cards) — 在输入框下方实时显示当前会话的人民币费用，每条消息按其自身时间戳与该条所用模型的峰谷单价计价；设置页可编辑每个模型的六项单价，未定价的模型按 Flash 单价估算并以 ~ 标注。
 - [hifengzy/dsh-plugin-deepseek-peak-hours](https://github.com/hifengzy/dsh-plugin-deepseek-peak-hours) — 输入框底部徽标：实时显示 DeepSeek API 当前按峰时还是闲时计费，点击弹出该时段的价目表——输入缓存命中、输入缓存未命中、输出，元/百万 tokens，分 FLASH 与 PRO 两列。位置在输入框下方统计行、内置「上下文已用」右侧，新会话时在输入框上方选项行。时段遵循官方定价页：北京时间周一至周五（法定节假日除外）09:00-12:00、14:00-18:00 为峰时，周末与法定节假日全天闲时；内置 2026、2027 年法定节假日数据。只在下一个时段边界装一个定时器，不做轮询。纯客户端插件，不发网络请求、无依赖。
 - [hiJoeLee/dsh-session-cost-daily](https://github.com/hiJoeLee/dsh-session-cost-daily) — 给走中转站的 DSH 用户做的费用条：输入框下方常驻本次与今日花费（今日累计含已关闭的会话），峰谷时段一眼可辨，不查官方余额接口。点开看分模型明细，窄窗口优先保留费用读数。改自 KIDLi1412/dsh-session-cost（MIT），与原版使用相同的插件 id 和 /api/session-cost/summary 路由，不能与原版同装。
@@ -8282,6 +8283,7 @@ dsh plugin --profile web add dshmarket
 - [hangyesite/dsh-shortvideo-export](https://github.com/hangyesite/dsh-shortvideo-export) — 下载抖音和小红书无水印视频，用本地或云端语音识别转成文字、按术语表校正，并从设置面板或 agent 工具导出 Markdown、DOCX、SRT、VTT 等格式。需自备 Python 3.10+（pip 安装 playwright、python-docx、numpy，默认的本地 SenseVoice 引擎另需 sherpa-onnx 并在首次使用时下载约 228 MB 模型）、PATH 中的 ffmpeg，以及 Chrome 或 Edge。
 - [Hao0311/dsh-mimo-tts](https://github.com/Hao0311/dsh-mimo-tts) — 通过小米 MiMo TTS 为 DSH 提供语音合成，需要 XIAOMI_API_KEY：mimo_tts 工具落盘音频、回答的「播报」按钮、自动播报，以及侧边栏语音设置（内置音色、文字描述生成音色、样本克隆）。与 lengmodkx/dsh-mimo-tts 包名相同，不能同装。
 - [haoku123/dsh-voice](https://github.com/haoku123/dsh-voice) — Web UI 全双工语音对话：点按切换或按住说话（发送键或 `Ctrl`）并显示实时字幕，宿主端 SenseVoice（sherpa-onnx）转写，回复按句流式朗读，开口说话即打断播放与正在运行的回合（真 barge-in），无需 API key。
+- [hexiao160705-dev/dsh-read-aloud-edge](https://github.com/hexiao160705-dev/dsh-read-aloud-edge) — 在每条助手回复上加一个喇叭按钮：用本机安装的 edge-tts 合成语音，并在小播放器里以 1 倍到 4 倍速播放；音频按内容哈希缓存在本地，回复正文不经过付费接口。
 - [honwee/dsh-plugin-mynah](https://github.com/honwee/dsh-plugin-mynah) — 给 Agent 一张会说话的脸：七个工具驱动自托管的 Mynah 实时数字人——开口说话（排队或打断）、播放动作片段、打断、查看在线会话与频道、健康检查、往知识库加文本。
 - [howie79794-sys/dsh-voice-polish](https://github.com/howie79794-sys/dsh-voice-polish) — 输入框麦克风按钮：本地 SenseVoice 转写，再用已配置的 DeepSeek 把口语整理成通顺文字，插入草稿前可对照原文。
 - [huguangyu666/dsh-plugin-notify](https://github.com/huguangyu666/dsh-plugin-notify) — 通知出口：agent 主动通过桌面通知 / 中文语音 / 音效（炸裂、胜利、警报）联系你，60 秒确认窗口后语音呼叫，音量增强，设置面板。
@@ -10133,6 +10135,7 @@ dsh plugin --profile web add dshmarket
 - [hawkongz/dsh-task-reminder](https://github.com/hawkongz/dsh-task-reminder) — 对话任务停止时弹一条 Windows 通知并响一声提示音：完成、等你审批或回答、出错都会提醒。点通知回到那个会话，落在你上次提问的位置；桌面端还会把窗口拉到前台。
 - [henrytang2011win-coder/dsh-task-sounds](https://github.com/henrytang2011win-coder/dsh-task-sounds) — 任务完成与提问提示音：Agent 完成回合时播放一声轻快提示音，向你提问（普通提问/计划评审/权限确认）时播放叮咚声。Web Audio 实时合成、零资源零网络，会话头部带静音开关，设置页可调音量。
 - [hexa-center/dsh-octagon-alerts](https://github.com/hexa-center/dsh-octagon-alerts) — 会话需要你选择、需要你授权，或你不在看时任务完成，就播放合成提示音；三种时机可各选一种音效并调整音量。
+- [hexiao160705-dev/dsh-system-notifications](https://github.com/hexiao160705-dev/dsh-system-notifications) — 为 DeepSeek Harness 提供系统通知：回合完成、请求审批、问题或方案评审等待时弹出原生通知，支持独立开关、测试按钮和点击聚焦。
 - [hgl011091/dsh-rss-monitor](https://github.com/hgl011091/dsh-rss-monitor) — DeepSeek Harness 原生 RSS 订阅监控插件：多源订阅、关键词过滤、定时检查去重、新条目邮件通知（缩略图 HTML 模板），SMTP 密码走凭据库永不落盘，原生设置页四页签体验。
 - [hhaosheng/dsh-desktop-toast](https://github.com/hhaosheng/dsh-desktop-toast) — DeepSeek Harness 的 Windows 桌面通知：任务完成时、或停下来等你审批/回答/确认计划时弹出系统通知。文案与触发时机可配置。
 - [hi-wenw/dsh-telegram-channel](https://github.com/hi-wenw/dsh-telegram-channel) — Telegram 手机遥控器：附着本机正在跑的 Web 会话，支持 /sessions 工作区→会话选择、/last 查看上次问答、/model 切换模型，以及原生 Rich Message 回复。
