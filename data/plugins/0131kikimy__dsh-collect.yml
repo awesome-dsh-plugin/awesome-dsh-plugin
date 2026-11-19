@@ -1,0 +1,6 @@
+url: https://github.com/0131kikimy/dsh-collect
+name: 0131kikimy/dsh-collect
+category: tools
+description:
+  en: 'Collect web pages into your workspace as Markdown plus downloaded images, then export them as docx, xlsx, pptx, pdf, md, html, txt, csv or json, from a sidebar panel or through three agent tools, with computer-control tools blocked until you enable them.'
+  zh: '把网页正文与图片采集到工作目录，再从侧边栏面板或三个 agent 工具导出 docx、xlsx、pptx、pdf、md、html、txt、csv、json，桌面操控类工具默认被拦截。'

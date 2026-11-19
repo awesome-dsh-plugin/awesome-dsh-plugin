@@ -5861,6 +5861,8 @@ dsh plugin --profile web add dshmarket
 
 ### 🛠️ 工具与能力
 
+- [0131kikimy/dsh-collect](https://github.com/0131kikimy/dsh-collect) — 把网页正文与图片采集到工作目录，再从侧边栏面板或三个 agent 工具导出 docx、xlsx、pptx、pdf、md、html、txt、csv、json，桌面操控类工具默认被拦截。
+- [0131kikimy/dsh-ima](https://github.com/0131kikimy/dsh-ima) — 通过 16 个 ima_* 工具把腾讯 ima 知识库接给 agent：列知识库与文档、检索、读文档正文、写笔记、上传文件，在侧边栏面板里配置。
 - [0xRabit/dsh-crypto-portfolio](https://github.com/0xRabit/dsh-crypto-portfolio) — 自托管加密资产仪表盘：BTC、EVM（DeBank 73 条链）、Solana、狗狗币、艾达币、Hyperliquid L1、五家交易所（Binance / Bybit / Backpack / OKX / Bitget）与代币化股票统一视图；多数据源自动切换、自定义资产类别标签、可调阈值的资产健康度报告、可分享的 PNG 卡片、每个数据源独立连通性测试、多 Profile 配置、定时刷新、零依赖图表（Python 标准库 + 原生 JS，无 CDN）。
 - [111xjyuan/dsh-desktop-sidecar](https://github.com/111xjyuan/dsh-desktop-sidecar) — 原生 Windows 桌面控制，共 21 个工具：UIA 控件树 + 离线 OCR 看屏幕、按控件名字点击、不占剪贴板地打中文，微信 / Office / 浏览器 / 网课都能操作。不抢你的鼠标键盘（你在用它会等）、从不改你的窗口大小，侧边栏「指挥台」可随时打字纠正，每步操作后都会回头核对屏幕并如实说明结果。内置持久登录的网页通道，无需驱动、无额外运行时。
 - [1321928757/dsh-mysql](https://github.com/1321928757/dsh-mysql) — DeepSeek Harness 的 MySQL 连接插件：在设置页配置多套连接（每连接可配表白名单与写权限），输入栏一键切换当前会话的连接，并为所有 Agent 预设提供 mysql_query / mysql_tables / mysql_execute 工具。
@@ -8925,6 +8927,7 @@ dsh plugin --profile web add dshmarket
 ### 🔁 工作流与自动化
 
 - [0-0-user/dsh-plan-note](https://github.com/0-0-user/dsh-plan-note) — 给 DSH 计划评审加选区批注：选中计划原文、逐条写意见，一次性把结构化反馈发回给 agent。
+- [0131kikimy/dsh-council](https://github.com/0131kikimy/dsh-council) — 用六个 council_* 工具把可检验的活交给 Leader、执行者与检验者三份独立上下文，完成与否由检验者按既定标准判定，而不是 agent 自评。
 - [0x7A7A6572/dsh-forge-studio#plugin-daily-log](https://github.com/0x7A7A6572/dsh-forge-studio/tree/main/packages/plugin-daily-log) — dsh 工作报告：汇总 Git 提交与本地 agent 对话（DeepSeek/Claude/Codex），按自定义模板生成日报/周报/月报，agent 工具按需注入。
 - [1052326311/dsh-plan-lattice](https://github.com/1052326311/dsh-plan-lattice) — 为长期或定义不完整的 Harness 任务提供持久执行合同、递归工作图、关键澄清与证据门禁。
 - [11111353535/dsh-folderwatch](https://github.com/11111353535/dsh-folderwatch) — 监视目录，在文件树安静后投递批量合并、去重的变更清单，并过滤掉本会话自己的写入；投递方式按监视器选择，可起新回合或排队到下一步。
