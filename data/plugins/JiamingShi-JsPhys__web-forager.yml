@@ -1,0 +1,6 @@
+url: https://github.com/JiamingShi-JsPhys/web-forager
+name: JiamingShi-JsPhys/web-forager
+category: browser
+description:
+  en: 'Robots-aware web information gathering for agents and analysts: multi-engine search over 360, Bing, Sogou and WeChat, HTML/PDF/Office/EPUB/RSS converted to clean Markdown, Bilibili/Zhihu/Xiaohongshu/WeChat pages read through dedicated adapters, sitemap discovery, and resumable link-by-link surfing. A browser mode drives a real browser through eight read-only playbooks for rendered pages and login-state sites. Fetched text is marked untrusted, instruction-shaped content is flagged, robots.txt is respected by default at one request per second per origin. Ships a CLI, two MCP servers and a Claude Code skill.'
+  zh: '给 Agent 与分析者的 robots-aware 网页信息抓取：360 / Bing / 搜狗 / 微信多引擎搜索，HTML/PDF/Office/EPUB/RSS 转成干净的 Markdown，B 站 / 知乎 / 小红书 / 公众号走专门适配器阅读，sitemap 发现，以及可续跑的逐链 surf。浏览器模式通过八个只读剧本驱动真实浏览器，处理渲染页与登录态站点。抓回的正文标记为不可信，指令形状的内容会被标出；默认遵守 robots.txt，每站点每秒一个请求。含 CLI、两个 MCP 服务和一个 Claude Code 技能。'
