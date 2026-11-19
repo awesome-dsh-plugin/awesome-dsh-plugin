@@ -1,7 +1,7 @@
 url: https://github.com/ksolodev/dsh-artel
 name: ksolodev/dsh-artel
 category: dev
-tarball: https://github.com/ksolodev/dsh-artel/releases/download/v0.1.0/dsh-artel-0.1.0.tgz
+tarball: https://github.com/ksolodev/dsh-artel/releases/download/v0.2.0/dsh-artel-0.2.0.tgz
 description:
-  en: 'Runs a development task in an isolated copy of the project: Solo runs one agent, Swarm runs three agents in the same copy that message each other via send_message/list_agents; the resulting diff is shown per file and only the files you approve are applied. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
-  zh: '在项目的隔离副本里执行开发任务：Solo 模式一个 agent 独立完成，Swarm 模式三个 agent 在同一副本里通过 send_message/list_agents 互相通信；结果按文件展示 diff，只应用你批准的文件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+  en: 'Runs a development task in an isolated copy of the project and leaves the real project untouched until you apply: Solo runs one agent, Swarm runs three agents that share the copy and message each other via send_message/list_agents. The run page shows every agent reply as a chat message, the resulting diff is shown per file, and Apply writes the changed files into the project after a conflict check. Its Host API is loopback-only and every request is checked (local socket, Host header, same-origin Origin).'
+  zh: '在项目的隔离副本里执行开发任务，在你应用之前不会改动真实项目：Solo 模式一个 agent，Swarm 模式三个 agent 共享同一副本，并通过 send_message/list_agents 互相通信。运行页把每个 agent 的回复作为聊天消息展示，结果按文件展示 diff，Apply 在冲突检查后把改动的文件写回项目。Host API 仅限回环地址，并且每个请求都会校验（本地套接字、Host 头、同源 Origin）。'
