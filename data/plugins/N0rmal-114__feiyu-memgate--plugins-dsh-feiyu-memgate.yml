@@ -1,0 +1,7 @@
+url: https://github.com/N0rmal-114/feiyu-memgate/tree/main/plugins/dsh-feiyu-memgate
+name: N0rmal-114/feiyu-memgate#dsh-feiyu-memgate
+category: memory
+description:
+  en: 'Long-term memory through the bundled feiyu-memgate gateway, which the plugin starts on 127.0.0.1 (needs Python 3.11 or newer, nothing to pip install): recalls related memories at the start of each user turn and appends them after the user message as a marked data block, gives the model memgate_remember and memgate_search tools, and adds a /memgate command and a settings page where each feature can be switched off. By default memories are written only when the model calls the remember tool. Keyword retrieval over SQLite by default, with no model and no download; an OpenAI-compatible embeddings endpoint or the optional dsh-feiyu-memgate-embed add-on (local CPU embedding models, downloaded on request) adds semantic retrieval. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '通过自带的 feiyu-memgate 网关提供长期记忆，网关由插件在 127.0.0.1 上启动（需要 Python 3.11 或更新，不用 pip 安装任何东西）：每轮用户发言开始时召回相关记忆，作为标明是资料的块接在用户消息之后；给模型 memgate_remember 和 memgate_search 两个工具；带 /memgate 命令和设置页面，每项功能都能单独关掉。默认只在模型调用记住工具时写入。默认用 SQLite 关键词检索，不需要模型，也不下载任何东西；接 OpenAI 兼容的向量接口，或装可选的 dsh-feiyu-memgate-embed 附加插件（本机 CPU 运行向量模型，点击后才下载），可以按语义检索。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/N0rmal-114/feiyu-memgate/main/plugins/dsh-feiyu-memgate/assets/icon-180.png

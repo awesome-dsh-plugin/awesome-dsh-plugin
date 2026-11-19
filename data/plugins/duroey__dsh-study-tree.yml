@@ -1,0 +1,7 @@
+url: https://github.com/duroey/dsh-study-tree
+name: duroey/dsh-study-tree
+category: session
+description:
+  en: 'A learning chat tree for branching chat: fork selected text with inherited context, continue each native session, and return to your reading position.'
+  zh: '学习树与学习分支：划词分叉并继承上下文，每个节点都是可持续聊天的原生会话，返回主线时恢复阅读位置。'
+tarball: https://github.com/duroey/dsh-study-tree/releases/download/v0.1.6/dsh-study-tree-0.1.6.tgz

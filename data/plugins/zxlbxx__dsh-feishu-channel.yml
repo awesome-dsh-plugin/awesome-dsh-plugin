@@ -1,0 +1,6 @@
+url: https://github.com/zxlbxx/dsh-feishu-channel
+name: zxlbxx/dsh-feishu-channel
+category: notify
+description:
+  en: 'Feishu/Lark channel that pushes finished or failed turns to a phone and delivers group messages back into the workspace session. Group messages are delivered into the session as user messages, so anyone who can post in a chat listed under task.chats can instruct the agent with that session''s tool permissions; no chat is listed by default. The app secret is stored in plain text in ~/.dsh/feishu/app.json.'
+  zh: '飞书/Lark 通道：把会话完成或出错的结果推到手机，并把群里的消息回投给工作区会话。群里的消息会作为用户消息投递进会话，所以能在 task.chats 所列群里发言的人都能以该会话的工具权限指挥 agent；默认没有列出任何群。应用密钥明文存放在 ~/.dsh/feishu/app.json。'

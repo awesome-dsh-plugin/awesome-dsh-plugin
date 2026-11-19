@@ -1,0 +1,6 @@
+url: https://github.com/PerryLink/dsh-sherlock
+name: PerryLink/dsh-sherlock
+category: security
+description:
+  en: 'Public-username checks over a pinned 481-site Sherlock manifest; six states, random negative-sample verification for claimed results, default core 41, all capped at 120, NSFW off by default.'
+  zh: 基于固定 481 站点 Sherlock 清单检查公开用户名，返回六态结果，对 claimed 做随机负样本校验；默认 core 41，all 单次最多 120，NSFW 默认关闭。

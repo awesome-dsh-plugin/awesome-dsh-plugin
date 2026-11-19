@@ -1,0 +1,6 @@
+url: https://github.com/KhalilJar/Remu-desktop-shortcuts
+name: KhalilJar/Remu-desktop-shortcuts
+category: session
+description:
+  en: 'Keyboard shortcuts for DSH Desktop: return to the conversation, focus the composer, switch pages, open DevTools, and an Alt+Tab style session switcher that previews sessions while Alt is held and switches on release (DSH NEXT on Windows).'
+  zh: '面向 DSH Desktop 的快捷键插件：返回会话、聚焦输入框、切换功能页、打开 DevTools，以及 Alt+Tab 风格的会话轮切板——按住 Alt 预览会话，松开即切换（DSH NEXT + Windows）。'

@@ -1,0 +1,6 @@
+url: https://github.com/NakliTechie/parallax
+name: NakliTechie/parallax
+category: session
+description:
+  en: 'Conversations that message each other and delegate tasks with six tools: send, ask and wait for the reply, receipts (queued, claimed, answered), a bounded peer summary, and a delegated child conversation whose permissions never exceed its parent''s; every inbound message is stamped as carrying no authority.'
+  zh: '让会话之间互发消息并委派任务，共六个工具：发送消息、提问并等待回复、送达回执（排队、已领取、已回答）、有长度上限的对方会话摘要，以及权限不超过父会话的子会话委派；每条收到的消息都标记为不具备任何权限。'

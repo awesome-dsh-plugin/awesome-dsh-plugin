@@ -1,0 +1,7 @@
+url: https://github.com/yu7777777777/dsh-server-toolbox
+name: yu7777777777/dsh-server-toolbox
+category: remote
+description:
+  en: 'Sidebar registry for SSH servers, expiry dates and service URLs, with Windows DPAPI-encrypted password and private-key storage, explicit host-key verification, login tests, and agent SSH execution that asks per command by default or can follow the session permission.'
+  zh: '在侧栏登记 SSH 服务器、到期日期和服务网址，使用 Windows DPAPI 加密保存密码和导入私钥，支持显式核对主机指纹和登录测试；Agent SSH 命令默认逐次授权，也可改为跟随会话权限。'
+icon: https://raw.githubusercontent.com/yu7777777777/dsh-server-toolbox/main/assets/icon.png

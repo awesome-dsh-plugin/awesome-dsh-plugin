@@ -1,0 +1,7 @@
+url: https://github.com/HougeLangley/dsh-ubuntu-packaging
+name: HougeLangley/dsh-ubuntu-packaging
+category: tools
+description:
+  en: 'Ubuntu and Debian source-package tools for DeepSeek Harness: inspect debian/, lint with lintian-compatible codes, scaffold a debian/ directory, plan dpkg-buildpackage or sbuild builds and lintian/autopkgtest runs, and diagnose build logs. Read-only except scaffold; no shell execution and no network access.'
+  zh: '面向 DeepSeek Harness 的 Ubuntu/Debian 源码包工具：检查 debian/、按 lintian 兼容标签静态检查、生成 debian/ 骨架、规划 dpkg-buildpackage 或 sbuild 构建与 lintian/autopkgtest 测试，并诊断构建日志。除 scaffold 外均为只读；不启动 shell，不联网。'
+tarball: https://github.com/HougeLangley/dsh-ubuntu-packaging/releases/download/v0.1.1/dsh-ubuntu-packaging-0.1.1.tgz

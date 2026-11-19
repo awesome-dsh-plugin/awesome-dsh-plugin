@@ -1,0 +1,7 @@
+url: https://github.com/morefreeze/dsh-plugin-rss-pal
+name: morefreeze/dsh-plugin-rss-pal
+category: docs
+description:
+  en: 'Local-first RSS/Atom reader with full-text search, bulk read marking, on-demand AI summaries and native reading companion. Uses the native better-sqlite3 module, so approve its native build when the installer asks.'
+  zh: '本地优先的 RSS/Atom 阅读器，支持全文搜索、批量标记已读、按需 AI 总结和原生伴读。依赖原生模块 better-sqlite3，安装器询问时需要批准它的原生构建。'
+tarball: https://github.com/morefreeze/dsh-plugin-rss-pal/releases/download/v0.1.1/rss-pal-dsh-0.1.1.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/AAxium/dsh-usage
+name: AAxium/dsh-usage
+category: usage
+description:
+  en: 'Model quota and account balance gauges with quota grouping and configurable usage thresholds. A fork of dougen/dsh-deepseek-usage that keeps its plugin row id and /api/deepseek-usage route, so it cannot be installed alongside the upstream.'
+  zh: '模型额度与账户余额表盘，支持额度分组和自定义用量阈值。基于 dougen/dsh-deepseek-usage 的分支，沿用上游的插件行 id 与 /api/deepseek-usage 路由，不能与上游同装。'
+tarball: https://github.com/AAxium/dsh-usage/releases/download/v1.0.2/dsh-usage-1.0.2.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/2039108952x-lab/image-scout
+name: 2039108952x-lab/image-scout
+category: skill
+description:
+  en: "Search Wikimedia Commons and Openverse for real photos, download them, and verify provenance, magic bytes and dimensions before they reach your agent."
+  zh: "在 Wikimedia Commons 与 Openverse 搜索真实照片，下载后校验来源、魔数与尺寸，再交给 Agent 使用。"

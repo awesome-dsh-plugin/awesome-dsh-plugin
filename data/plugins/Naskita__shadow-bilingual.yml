@@ -1,0 +1,7 @@
+url: https://github.com/Naskita/shadow-bilingual
+name: Naskita/shadow-bilingual
+category: ui
+description:
+  en: 'Sends in English while you write in your own language: a shadow English translation sits under the composer draft, steering box and message queue, and each assistant block gains a line in one of 18 display languages. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '你用母语写、发出去的是英文：输入框、插话框与消息队列里都显示一行英文影子译文，助手每段英文下方再补所选语言（18 种）的对照。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Naskita/shadow-bilingual/master/docs/icon.png

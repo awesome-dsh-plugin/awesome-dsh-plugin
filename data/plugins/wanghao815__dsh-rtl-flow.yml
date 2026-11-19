@@ -1,0 +1,6 @@
+url: https://github.com/wanghao815/dsh-rtl-flow
+name: wanghao815/dsh-rtl-flow
+category: workflow
+description:
+  en: Guides RTL design and verification in DeepSeek Harness, with project scaffolding, evidence checks, and OpenROAD/ORFS setup.
+  zh: 为 DeepSeek Harness 提供 RTL 设计与验证指导、工程脚手架、证据核对和 OpenROAD/ORFS 环境准备。

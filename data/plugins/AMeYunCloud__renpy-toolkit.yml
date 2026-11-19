@@ -1,0 +1,7 @@
+url: https://github.com/AMeYunCloud/renpy-toolkit
+name: AMeYunCloud/renpy-toolkit
+category: tools
+tarball: https://github.com/AMeYunCloud/renpy-toolkit/releases/download/v1.0.0/dsh-renpy-toolkit-1.0.0.tgz
+description:
+  en: Ren'Py localization toolkit that generates a full translation skeleton from compiled games, ports existing translations, and validates them.
+  zh: Ren'Py 汉化工具集：为只有 .rpyc 的成品游戏生成完整翻译骨架，移植旧译本并校验译文。

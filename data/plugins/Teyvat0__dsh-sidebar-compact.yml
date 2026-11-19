@@ -1,0 +1,7 @@
+url: https://github.com/Teyvat0/dsh-sidebar-compact
+name: Teyvat0/dsh-sidebar-compact
+category: ui
+description:
+  en: 'Adds sidebar collapse, a 248px compact mode, and panel-list folding to the DeepSeek Harness sidebar.'
+  zh: '为 DeepSeek Harness 左侧栏加上收起/展开、248px 紧凑模式与面板列表折叠。'
+icon: https://raw.githubusercontent.com/Teyvat0/dsh-sidebar-compact/main/assets/icon-180.png

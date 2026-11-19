@@ -1,0 +1,6 @@
+url: https://github.com/Jimmy-20100728/dsh-token-usage
+name: Jimmy-20100728/dsh-token-usage
+category: usage
+description:
+  en: 'Imports DeepSeek usage exports (ZIP, CSV, JSON) locally and renders token and cost trends, per-model and per-API-key breakdowns, cache savings, input/output composition and usage spikes. The interface is Chinese only.'
+  zh: '本地导入 DeepSeek 用量导出（ZIP、CSV、JSON），渲染 Token 与费用趋势、按模型与 API Key 的用量对比、缓存节省、输入输出构成与异常突增检测。界面目前仅中文。'

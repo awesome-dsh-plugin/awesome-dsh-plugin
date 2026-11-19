@@ -1,0 +1,6 @@
+url: https://github.com/szluyu99/dsh-oneapi
+name: szluyu99/dsh-oneapi
+category: model
+description:
+  en: 'Configuration panel for an existing `oneapi` route of the pi-ai provider adapter (declare that route in the llm-pi-ai settings first, with api: openai-completions): edit display name, Base URL, API key and default model, test connectivity per model and sync the model list from the gateway, with six agent tools and an optional left-sidebar panel. Written for a Baidu-internal gateway: the Base URL placeholder and token link point there, so set your own OneAPI-compatible gateway.'
+  zh: 'pi-ai 提供方适配器里已有的 `oneapi` 路由的配置面板（需先在 llm-pi-ai 设置里声明该路由，api 选 openai-completions）：编辑显示名、Base URL、API Key 与默认模型，逐模型测试连通性并从网关同步模型列表，附带 6 个 Agent 工具与可选左侧边栏面板。最初为百度内部网关编写，Base URL 占位符与获取 Token 链接均指向内网，请改填你自己的 OneAPI 兼容网关。'

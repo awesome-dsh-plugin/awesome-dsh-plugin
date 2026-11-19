@@ -1,0 +1,6 @@
+url: https://github.com/ayuanxx-max/dsh-smooth
+name: ayuanxx-max/dsh-smooth
+category: session
+description:
+  en: 'DSH SMOOTH: config-only bundle for a lighter DSH UI - compact transcript and usage views, 16 px font and 200 ms job polling out of the box - plus a troubleshooting SKILL.md and opt-in recipes (appended by hand to your own cordis.patch.yml or the profile) to remove the Agents-Anywhere "Reconnect" button, slim the tool list, drop legacy sub-agent bundles and make compaction thresholds take effect. User patches still win; rollback = remove the bundle.'
+  zh: 'DSH 顺滑包：纯配置 bundle，装上即把对话与用量视图精简为 compact、字号 16、任务轮询放缓到 200ms；另附排障 SKILL.md 和需手动启用的可选配方（追加到自己的 cordis.patch.yml 或手改 profile）：去掉 Agents-Anywhere 的「重新连接」按钮、精简工具表、移除不兼容的旧子代理、让压缩阈值真正生效。用户自己的 patch 优先，移除 bundle 即回滚。'

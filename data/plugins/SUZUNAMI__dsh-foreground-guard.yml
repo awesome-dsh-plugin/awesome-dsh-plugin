@@ -1,0 +1,6 @@
+url: https://github.com/SUZUNAMI/dsh-foreground-guard
+name: SUZUNAMI/dsh-foreground-guard
+category: dev
+description:
+  en: Denies tool calls that would block the foreground beyond a per-turn budget and offers one-time manual approval instead of silently waiting.
+  zh: 拦截会让前台阻塞超出单回合预算的工具调用，改为弹一次手动授权，而不是默默等待。

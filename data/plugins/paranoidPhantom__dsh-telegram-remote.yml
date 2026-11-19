@@ -1,0 +1,6 @@
+url: https://github.com/paranoidPhantom/dsh-telegram-remote
+name: paranoidPhantom/dsh-telegram-remote
+category: remote
+description:
+  en: "Owner-only Telegram remote control for DSH: each session gets its own private-chat topic, opened on demand or started with the native New Topic action; answers stream as animated drafts with the Stop button and typing indicators, tool logs stay compact and collapsed, and approvals and model choice happen in the chat. Finished messages and stopped partial answers stay put, and files are delivered as native photo, video, audio or document."
+  zh: 'DSH 的所有者专属 Telegram 远程控制：每个会话对应一个私聊话题，可按需打开，也可用 Telegram 原生「新建话题」创建；回复以动画草稿流式呈现，带 Stop 按钮与输入状态，工具日志紧凑折叠，审批与模型选择都在聊天内完成。已完成消息与中断后的部分回复保留，文件以原生图片、视频、音频或文档发送。'

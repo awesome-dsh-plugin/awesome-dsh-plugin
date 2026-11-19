@@ -1,0 +1,6 @@
+url: https://github.com/lpeixin/dsh-project-compass
+name: lpeixin/dsh-project-compass
+category: dev
+description:
+  en: 'Static codebase analysis for onboarding: scans a project, builds a dependency graph, and writes evidence-cited architecture, module, key-flow and getting-started docs, plus project-level Q&A over a local retrieval index (no network or LLM by default; LLM narrative is optional and off unless enabled).'
+  zh: '项目罗盘 — 静态扫描代码库并构建依赖图，生成带 path:line 证据引用的架构、模块、调用链与上手指南，并基于本地检索索引提供项目级问答（默认不联网、不调用 LLM，LLM 叙事为可选项，需手动开启）。'

@@ -1,0 +1,7 @@
+url: https://github.com/gushengsheng/dsh-conversation-overview
+name: gushengsheng/dsh-conversation-overview
+category: ui
+icon: https://raw.githubusercontent.com/gushengsheng/dsh-conversation-overview/main/docs/icon.png
+description:
+  zh: '对话条目概览：右上角按钮把对话窗口变成轮次列表，支持点击跳转、勾选条目让 AI 重点关注、把条目分发到其他会话、浏览其他会话并让该会话阅读，以及多选会话合成任务发给新建会话。'
+  en: 'Conversation turn overview: a header button turns the chat into a per-turn list with jump-to-turn, focus selection, cross-session distribution, browsing other sessions for that agent to read, and multi-session task composition into a brand new session.'

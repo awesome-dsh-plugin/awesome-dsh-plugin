@@ -1,0 +1,6 @@
+url: https://github.com/yukre/dsh-session-api
+name: yukre/dsh-session-api
+category: remote
+description:
+  en: 'Loopback-only HTTP surface on the DSH web server for reading session run state and driving the composer from outside the page: send or steer a message, switch model and permission preset, cancel, edit the queue, and decide pending approvals and questions. Bearer token, Host/Origin fence, JSON or Markdown output. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 自带 web server 上开一个仅限本机回环的 HTTP 接口：从页面外读取会话运行状态，并驱动输入框的操作——发消息或即时插话、切模型与权限档位、取消、改队列、裁决待办的审批与提问。Bearer 令牌鉴权，带 Host/Origin 准入，支持 JSON 与 Markdown 输出。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

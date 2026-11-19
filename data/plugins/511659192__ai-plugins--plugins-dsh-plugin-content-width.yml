@@ -1,0 +1,7 @@
+url: https://github.com/511659192/ai-plugins/tree/main/plugins/dsh-plugin-content-width
+name: 511659192/ai-plugins#dsh-plugin-content-width
+category: ui
+description:
+  en: Switches the answer area between default, wide and full width from the session header, and opens in-conversation web links and file references in a dialog with copy, open actions and an in-dialog file preview instead of the side panel.
+  zh: 在会话头部切换问答区宽度（默认、较宽、全宽），并把对话里的网页链接与文件引用改为弹窗打开：显示地址、可复制、可在浏览器或侧边栏打开，文件引用还能在弹窗里预览内容。
+icon: https://raw.githubusercontent.com/511659192/ai-plugins/main/plugins/dsh-plugin-content-width/assets/icon-180.png

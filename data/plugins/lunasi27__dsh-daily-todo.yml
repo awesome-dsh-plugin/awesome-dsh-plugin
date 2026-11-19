@@ -1,0 +1,6 @@
+url: https://github.com/lunasi27/dsh-daily-todo
+name: lunasi27/dsh-daily-todo
+category: ui
+description:
+  en: Daily todo board in the main panel with one list per calendar day split into Work and Life; local midnight archives the day and carries unfinished tasks into the new day.
+  zh: 主面板里的每日待办：一天一份清单，分「工作 / 生活」两段，打勾即划掉；本机零点自动归档当天清单，未完成项带进新的一天。

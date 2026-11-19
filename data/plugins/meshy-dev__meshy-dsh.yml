@@ -1,0 +1,6 @@
+url: https://github.com/meshy-dev/meshy-dsh
+name: meshy-dev/meshy-dsh
+category: skill
+description:
+  en: 'Meshy 3D generation and 3D printing skills driving meshy-cli through the shell: text-to-3D and image-to-3D, texturing, remeshing, rigging and animation, format conversion, and print-ready 3MF/STL with printability repair and slicer handoff. Bundles the CLI and keeps the sign-in on the host side, with a Meshy sidebar page, a Settings → Meshy page and an interactive GLB preview in Web and Desktop; installable as `meshy-dsh`. Needs a Meshy account; generation spends Meshy credits after you confirm the cost.'
+  zh: '通过 shell 驱动 meshy-cli 的 Meshy 3D 生成与 3D 打印 Skill：文生 3D、图生 3D、贴图、重拓扑、绑骨与动画、格式转换，以及带可打印检查与修复的 3MF/STL 打印文件和切片软件交接。插件自带 CLI 并在宿主侧保持登录，在 Web 和 Desktop 中提供 Meshy 侧边栏页面、设置 → Meshy 页面和可交互的 GLB 预览；npm 包名 `meshy-dsh`。需要 Meshy 账号；生成会消耗 Meshy 点数，花费前先让你确认。'

@@ -1,0 +1,7 @@
+url: https://github.com/ViolaTan55/dsh-year-report
+name: ViolaTan55/dsh-year-report
+category: usage
+description:
+  en: 'Year-in-review page in the DSH sidebar, built from this machine''s session logs through ctx.sessionQuery. Nine slides cover the first day, sessions and turns, characters typed, an hour-of-day chart, tool calls, tokens with cache hit rate and an off-peak savings estimate at DeepSeek list prices, and a persona picked by 11 usage rules; the last slide renders a 1080×1440 share card to save or copy as PNG. Whale illustrations are drawn in code as SVG, with 13 persona outfits. Read-only and local, with no outbound requests and nothing written to disk. UI text is Chinese only. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 侧栏里的年度回顾，数据全部来自本机会话日志（经 ctx.sessionQuery 读取）。九页依次是相遇日期、会话与轮次、你说了多少字、一天 24 小时分布、工具调用、token 与缓存命中率及按 DeepSeek 官方价估算的错峰节省、按 11 条用法规则选出的人格标签；最后一页生成 1080×1440 的分享图，可保存或复制为 PNG。鲸鱼插画全部用代码画成 SVG，13 种人格各有造型。只读、全程本地，不发外部请求，不写任何文件。界面文案目前只有中文。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/ViolaTan55/dsh-year-report/main/assets/icon-180.png

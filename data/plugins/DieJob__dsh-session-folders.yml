@@ -1,0 +1,6 @@
+url: https://github.com/DieJob/dsh-session-folders
+name: DieJob/dsh-session-folders
+category: session
+description:
+  en: Creates summary-named per-session folders in a workspace on each session's first message, lets a new session inherit an existing session folder, and can be toggled per workspace.
+  zh: 在工作区中为每个会话的首次对话自动创建摘要命名的文件夹，支持新会话继承已有会话的文件夹，可按工作区开关。

@@ -1,0 +1,6 @@
+url: https://github.com/zhangasdfr/codexskill
+name: zhangasdfr/codexskill
+category: workflow
+description:
+  en: 'Adds a Codex switch under the chat input: with it on, a session hands coding requests to the local Codex CLI, which writes the implementation prompt and reviews the result, while dsh-baton runs the work in a Harness session and returns the changed files, test results and a requirement checklist. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在输入框下方加一个 Codex 开关：点亮后该会话的编码需求交给本机 Codex CLI 理解、写实现提示词并验收，实现由 dsh-baton 派给 Harness 会话执行，最后回报改动文件、测试结果和逐条需求对照。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

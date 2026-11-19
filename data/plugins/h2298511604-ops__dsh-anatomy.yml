@@ -1,0 +1,6 @@
+url: https://github.com/h2298511604-ops/dsh-anatomy
+name: h2298511604-ops/dsh-anatomy
+category: dev
+description:
+  en: 'Live architecture map of DeepSeek Harness: renders plugins, services, tools, sessions, models and MCP as a five-layer diagram of 14 component domains, and animates the real tool/model/session call flow as moving dots along the connecting curves.'
+  zh: 'DeepSeek Harness 运行时架构透视：把插件、服务、工具、会话、模型与 MCP 画成 5 层、14 个组件域的实时架构图，并用沿连线移动的圆点动画展示真实的工具 / 模型 / 会话调用流。'

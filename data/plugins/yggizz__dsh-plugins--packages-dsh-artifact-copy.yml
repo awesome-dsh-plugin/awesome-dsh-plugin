@@ -1,0 +1,7 @@
+url: https://github.com/yggizz/dsh-plugins/tree/main/packages/dsh-artifact-copy
+name: yggizz/dsh-plugins#dsh-artifact-copy
+category: ui
+description:
+  en: 'Adds three entries to the file right-click menu in a conversation: copy the path relative to that session''s working directory, copy the text contents, and copy the file itself as a native clipboard file list (CF_HDROP on Windows, a file object on macOS, text/uri-list on Linux) so it pastes into Explorer, Finder, a chat window or a mail draft. On a folder the third entry becomes Copy folder. Delivered-file cards, inline file mentions and the sidebar file tree share the same menu; the two copy-the-file entries are things the page cannot do on its own. Only loopback requests are answered, so a LAN origin cannot drive the clipboard; contents copy stops at 1 MiB and is disabled for non-text files. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在对话里的文件右键菜单加三项：复制相对于该会话工作目录的路径、复制文本内容、以及把文件本体复制成原生剪贴板文件（Windows CF_HDROP、macOS 文件对象、Linux text/uri-list），可直接粘贴进资源管理器、访达、聊天窗口或邮件草稿。目录右键时第三项变成「复制文件夹」。交付卡片、行内文件引用和侧边栏文件树共用同一份菜单；后两项是浏览器页面自己做不到的事。插件只响应本机回环请求，局域网来源无法驱动剪贴板；内容复制上限 1 MiB，非文本文件该项置灰。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/yggizz/dsh-plugins/main/packages/dsh-artifact-copy/assets/icon-180.png

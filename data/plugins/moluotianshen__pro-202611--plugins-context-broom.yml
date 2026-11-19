@@ -1,0 +1,6 @@
+url: https://github.com/moluotianshen/pro-202611/tree/main/plugins/context-broom
+name: moluotianshen/pro-202611#context-broom
+category: ui
+description:
+  en: 'A broom button beside the context-usage readout under the web composer. Its frame draws the current occupancy, shifting green to yellow to red as the session fills, with stronger wording and a faster pulse as pressure rises; clicking it compacts the session, preferring a native compact or compress command when one is registered and otherwise folding the oldest ranges that contain no user message through the plugin host route.'
+  zh: '在 Web 输入框下方的上下文占用读数旁增加一枚扫帚按钮：外框直接画出当前占用比例，随占用升高由绿转黄再转红，提醒语气加重、呼吸与摆动频率加快；点击即压缩会话，已注册原生 compact 或 compress 命令时优先使用，否则由插件 Host 路由折叠最老旧且不含用户消息的区间。'

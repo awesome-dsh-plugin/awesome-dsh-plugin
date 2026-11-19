@@ -1,0 +1,6 @@
+url: https://github.com/Old-Friends-Gathering/sedimem/tree/main/plugin/dsh-sedimem
+name: Old-Friends-Gathering/sedimem#dsh-sedimem
+category: memory
+description:
+  zh: "sedimem 记忆中心：把本地跨客户端记忆层 sedimem 的只读观察台装进 DSH——侧边栏一行进入中列整页（今日变化 / 可手转 3D 记忆图谱 / 卫生趋势三页，可切分库）。宿主优先复用已在运行的观察台（observerUrl 指向即纯代理、零新进程），探测不到才 spawn 内嵌副本兜底，数据始终是同一份 ~/.memo；只读、仅回环，路由再叠一层防跨站栅栏。记忆写入链路（MCP memory_* 工具）与 DSH/Codex/Claude Code 三端共用配置不受影响。零依赖。"
+  en: "Memory center for sedimem, a local cross-client memory layer: one sidebar entry opens the read-only observer as a full page — today's changes, a hand-rotatable 3D memory graph, and 30-day hygiene trends, with a scope picker. The host reuses an already-running observer when observerUrl points at one (pure proxy, no extra process) and spawns an embedded copy as fallback, both reading the same ~/.memo; read-only, loopback-only, with an extra cross-site fence on the routes. The write path (MCP memory_* tools) shared by DSH/Codex/Claude Code is untouched. Zero dependencies."

@@ -1,0 +1,6 @@
+url: https://github.com/cycocyco/alice-memory
+name: cycocyco/alice-memory
+category: memory
+description:
+  en: 'Long-term memory for DSH: rule gates capture durable facts from conversation turns into a single SQLite database with tiered hot, warm and cold storage; recall injects hybrid vector plus FTS5 hits into the prompt each turn; ships remember, recall, forget and cold-memory prune tools. Zero dependencies, Node only.'
+  zh: 'DSH 长期记忆插件：规则闸门从对话轮次里捕获值得长期记住的事实，存进带热/温/冷分层的单一 SQLite 库；每轮用向量 + FTS5 混合召回注入提示词；附记/回忆/忘/清冷记忆四个显式工具。零依赖，纯 Node。'

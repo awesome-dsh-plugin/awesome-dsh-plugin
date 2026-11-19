@@ -1,0 +1,6 @@
+url: https://github.com/tingfeng-droid/dsh-compaction-vcc
+name: tingfeng-droid/dsh-compaction-vcc
+category: session
+description:
+  en: 'Replaces LLM summarization with deterministic text compilation, so compaction makes no model calls and keeps original tokens; elided content stays retrievable through seq pointers. Based on TsFreddie/dsh-compaction-instant.'
+  zh: '用确定性文本编译取代 LLM 摘要，压缩过程不调模型、只搬运原文，被省略的内容可凭 seq 指针取回。基于 TsFreddie/dsh-compaction-instant。'

@@ -1,0 +1,7 @@
+url: https://github.com/yangyangxia2-lab/dsh-wallpaper-player
+name: yangyangxia2-lab/dsh-wallpaper-player
+category: ui
+description:
+  en: 'Plays local Wallpaper Engine video wallpapers in a DSH settings page playlist, with previews for scene and web wallpapers. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 设置页的播放列表中直接播放本地 Wallpaper Engine 视频壁纸，场景与网页壁纸显示预览图。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/yangyangxia2-lab/dsh-wallpaper-player/main/assets/icon-180.png

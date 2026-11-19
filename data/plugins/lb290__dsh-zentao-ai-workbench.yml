@@ -1,0 +1,8 @@
+url: https://github.com/lb290/dsh-zentao-ai-workbench
+name: lb290/dsh-zentao-ai-workbench
+category: workflow
+description:
+  en: 'ZenTao workbench for DSH: load a ZenTao browse-page URL into a panel, multi-select bugs, tasks and stories, and hand them to the current or a new session with description, recent comments, screenshots as real image attachments and other files saved locally; when the agent is done it writes comments and status transitions (resolve, close, activate, start, finish and so on) back into ZenTao, one item or a batch, from the panel or through five registered agent tools (bug write-back verified end to end, task and story forms share the same code path).'
+  zh: 'DSH 侧栏禅道工作台：粘贴禅道浏览页链接读取 Bug/任务/需求，多选后交给当前或新会话（带入描述、最近动态、截图转真实图片附件、其它附件落盘可读），AI 处理完把备注与状态（已解决、已关闭、重新激活、开始、完成等）单条或批量回写禅道，面板与 5 个 Agent 工具都能写；Bug 的备注与状态回写已实测通过，任务与需求表单走同一套代码路径。'
+# optional — GitHub-hosted raster image (png/jpg/webp); falls back to the owner avatar.
+icon: https://raw.githubusercontent.com/lb290/dsh-zentao-ai-workbench/main/assets/icon-180.png

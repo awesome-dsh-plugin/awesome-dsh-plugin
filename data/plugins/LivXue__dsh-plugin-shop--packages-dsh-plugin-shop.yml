@@ -1,0 +1,7 @@
+url: https://github.com/LivXue/dsh-plugin-shop/tree/main/packages/dsh-plugin-shop
+name: LivXue/dsh-plugin-shop#dsh-plugin-shop
+category: market
+description:
+  en: 'A browsable daily catalog of DeepSeek Harness plugins harvested from npm and GitHub: one-click install, enable/disable, update and uninstall, the reason dsh would refuse an install shown before you press it, prepurchase facts (engines.dsh, dependency count, bin names, install scripts), rollback and favorites.'
+  zh: '从 npm 与 GitHub 每日采集的 DSH 插件目录：一键安装、启停、更新与卸载；装前就给出 dsh 会拒绝的原因与豁免命令；安装前的事实（engines.dsh、依赖数、bin 名、安装脚本）、回滚与收藏。'
+icon: https://raw.githubusercontent.com/LivXue/dsh-plugin-shop/main/packages/dsh-plugin-shop/assets/icon.png

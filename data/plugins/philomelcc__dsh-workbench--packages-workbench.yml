@@ -1,0 +1,6 @@
+url: https://github.com/philomelcc/dsh-workbench/tree/main/packages/workbench
+name: philomelcc/dsh-workbench#workbench
+category: ui
+description:
+  en: 'Workbench shell: mirrors native sidebar entries into a fixed system bar, adds a second row of page tabs for modules, and exposes a small module API for full-page plugins. The restart button needs an external supervisor (DSH_RESTART_CMD or a scheduled task named by DSH_RESTART_TASK).'
+  zh: '工作台外壳：把原生侧栏项镜像成固定的系统栏，给模块加第二行页面标签，并提供一套给整页插件用的模块 API；重启按钮需要外部管理器（DSH_RESTART_CMD 或 DSH_RESTART_TASK 指定的计划任务）。'

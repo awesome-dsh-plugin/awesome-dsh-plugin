@@ -1,0 +1,8 @@
+url: https://github.com/liancheng2020/dsh-balance-sentinel
+name: liancheng2020/dsh-balance-sentinel
+category: usage
+description:
+  en: 'DeepSeek balance monitoring with two-tier low-balance alerts pushed to Feishu, DingTalk, WeCom, Telegram and other IM channels; key-free host accounts are supported when the built-in account service is available and signed in.'
+  zh: 'DeepSeek 余额监控与两级低余额告警，推送到飞书、钉钉、企微、Telegram 等 IM 通道；支持宿主账号免填 API Key（需已登录）。'
+icon: https://raw.githubusercontent.com/liancheng2020/dsh-balance-sentinel/main/assets/icon-180.png
+tarball: https://github.com/liancheng2020/dsh-balance-sentinel/releases/download/v0.1.3/dsh-balance-sentinel-0.1.3.tgz

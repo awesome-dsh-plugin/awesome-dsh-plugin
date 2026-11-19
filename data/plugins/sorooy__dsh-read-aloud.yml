@@ -1,0 +1,6 @@
+url: https://github.com/sorooy/dsh-read-aloud
+name: sorooy/dsh-read-aloud
+category: voice
+description:
+  en: Reads DeepSeek Harness replies aloud with MiniMax voices, with a per-message speaker button, optional auto-read and barge-in when you send a new message.
+  zh: 用 MiniMax 音色朗读 DeepSeek Harness 的回复，每条回复一个喇叭按钮，支持每轮自动朗读与发消息立即打断。

@@ -1,0 +1,6 @@
+url: https://github.com/xiaotianya14/apk-reverse-skill
+name: xiaotianya14/apk-reverse-skill
+category: skill
+description:
+  en: 'Mobile-first Android APK reverse-engineering skill for DSH and DSH Go — decode with jadx/apktool, locate ad SDKs and entitlement logic, patch smali or values, repack/align/sign, then verify on a real device. Installs the apk-reverse skill; all tooling runs locally in proot Ubuntu on the phone or on PC Linux.'
+  zh: '手机端 Android APK 逆向技能（支持 DSH Go）：jadx/apktool 解码、广告 SDK 与权益逻辑定位、smali/数值补丁、重打包对齐签名、真机验证；安装为 apk-reverse 技能，工具链在手机 proot Ubuntu 或电脑 Linux 本地运行。'

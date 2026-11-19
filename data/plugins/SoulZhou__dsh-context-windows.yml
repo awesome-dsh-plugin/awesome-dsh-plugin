@@ -1,0 +1,7 @@
+url: https://github.com/SoulZhou/dsh-context-windows
+name: SoulZhou/dsh-context-windows
+category: model
+description:
+  en: Adds a Settings section to adjust the advertised context window of each connected WorkBuddy and Trae model, writing the override into the connector's context budgets.
+  zh: 为 WorkBuddy 和 Trae 的每个已接入模型提供可视化上下文窗口调节设置页，并通过宿主设置服务写入覆盖值。
+icon: https://raw.githubusercontent.com/SoulZhou/dsh-context-windows/main/assets/icon-512.png

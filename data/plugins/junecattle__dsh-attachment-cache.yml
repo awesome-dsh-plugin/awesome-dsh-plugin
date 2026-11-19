@@ -1,0 +1,7 @@
+url: https://github.com/junecattle/dsh-attachment-cache
+name: junecattle/dsh-attachment-cache
+category: tools
+description:
+  en: 'Attachment store manager: per-conversation inventory, impact-aware deletion, and relocation of ~/.dsh/attachments to another disk (relocation tested on Windows 11 only).'
+  zh: '附件存储管理：按对话盘点、删除前说明影响，并可将 ~/.dsh/attachments 迁移到其他磁盘（迁移仅在 Windows 11 上测试）。'
+icon: https://raw.githubusercontent.com/junecattle/dsh-attachment-cache/main/assets/icon-180.png

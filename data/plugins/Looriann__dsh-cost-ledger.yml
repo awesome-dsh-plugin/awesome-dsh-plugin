@@ -1,0 +1,6 @@
+url: https://github.com/Looriann/dsh-cost-ledger
+name: Looriann/dsh-cost-ledger
+category: usage
+description:
+  en: 'Cost ledger tab for DSH: per-turn token accounting converted to CNY, stacked daily charts styled after the DeepSeek console, and a built-in Alibaba Bailian price book covering 142 models (Qwen, DeepSeek, Kimi, GLM, MiniMax). Models no catalogue covers stay explicitly unpriced instead of being counted as zero, and a manual price fills them in with one click.'
+  zh: '「费用」标签页：按天、按模型统计 token 花费并折算成人民币，堆叠柱状图对齐 DeepSeek 官方控制台，悬停即可看到当天每个模型花了多少；内置阿里百炼官方价目表 142 个模型（千问、DeepSeek、Kimi、GLM、MiniMax），缓存命中按官方 10% 规则计价；查不到价的模型明确标为「未定价」并可一键手填，绝不静默算成 0。'

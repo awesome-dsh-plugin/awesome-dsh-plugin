@@ -1,0 +1,6 @@
+url: https://github.com/titor-jz/dsh-dumate-gateway
+name: titor-jz/dsh-dumate-gateway
+category: model
+description:
+  en: Lists the running DuMate desktop app's live model table in the DSH model selector, streams chat through it, and adds a loopback OpenAI-compatible gateway with a sidebar dashboard for status and local usage.
+  zh: 把本机运行中的 DuMate 接入 DSH：模型选择器里的实时模型表、流式对话、只绑回环的 OpenAI 兼容网关，以及显示状态与本地用量的右侧栏仪表盘。

@@ -1,0 +1,6 @@
+url: https://github.com/z-imagine/dsh-free-light-search
+name: z-imagine/dsh-free-light-search
+category: tools
+description:
+  en: 'Lightweight fork of DDDMUC/dsh-free-search: multi-engine web search and fetch with automatic fallback, failure cooldown and API key rotation; takes over DSH''s default web_search/web_fetch providers. Cannot be installed alongside DDDMUC/dsh-free-search (same package name and bundle row).'
+  zh: 'DDDMUC/dsh-free-search 的精简分叉：多引擎网页搜索与抓取，自动回退、失败冷却、API 密钥轮换，接管 DSH 默认的 web_search/web_fetch 提供者；不能与 DDDMUC/dsh-free-search 同装（包名与 bundle 行相同）。'

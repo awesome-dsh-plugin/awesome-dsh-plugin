@@ -1,7 +1,7 @@
 url: https://github.com/Theflowyears/dsh-arknights-theme
 name: Theflowyears/dsh-arknights-theme
 category: theme
-tarball: https://github.com/Theflowyears/dsh-arknights-theme/releases/download/v1.0.4/dsh-arknights-theme-1.0.4.tgz
+tarball: https://github.com/Theflowyears/dsh-arknights-theme/releases/download/v1.1.8/dsh-arknights-theme-1.1.8.tgz
 description:
-  en: 'Arknights theme for the DSH Web GUI: twelve full-screen wallpapers whose edge blur, feathering and glass opacity are computed per image; ink solved in OKLCH to hold WCAG AA; Rhodes Island iconography throughout; and approval and question cards signed with operator autographs.'
-  zh: '明日方舟主题：12 张整屏壁纸，边缘虚化、羽化与玻璃浓度按每张图分别计算；文字色以 OKLCH 求解并守住 WCAG AA 下限；界面图标换成罗德岛素材；授权卡与选项卡带干员签名。'
+  en: 'An Arknights theme pack made for the players of 明日方舟: every Amiya wallpaper and every operator signature in the details says one thing — Doctor, there is still work on your desk, and you cannot rest yet. Import a local picture as your wallpaper and its glass and ink are solved on the spot; twelve built-in full-screen wallpapers whose edge blur, feathering and glass opacity are computed per image; ink solved in OKLCH to hold WCAG AA; Rhodes Island iconography; approval and question cards signed with operator autographs. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '一款专为粥批定制的明日方舟主题拓展包，旨在为每一位明日方舟提供最沉浸式的DSH体验，无论是背景里的阿米娅还是各处细节中的干员签名，都在提醒你一件事：博士，您还有许多事情需要处理。 现在还不能休息哦。功能：支持导入本地图片作壁纸（导入即按同一套算法解算玻璃浓度与文字色）；内置 12 张整屏壁纸，边缘虚化、羽化与玻璃浓度按每张图分别计算；文字色以 OKLCH 求解并守住 WCAG AA 下限；界面图标换成罗德岛素材；授权卡与选项卡带干员签名。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,7 @@
+url: https://github.com/mujizi/dsh-video-prompt
+name: mujizi/dsh-video-prompt
+category: vision
+description:
+  en: Chinese video-prompt reference library with an interactive graph, timeline, topic wiki, and agent tools for browsing and retrieving attributed Wan3 examples.
+  zh: 中文视频提示词参考库，提供交互图谱、时间线、题材 Wiki 和 AI 检索工具，内置保留作者与来源的 Wan3 示例。
+tarball: https://github.com/mujizi/dsh-video-prompt/releases/download/v0.3.2/dsh-video-prompt-0.3.2.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/Eray114514/dsh-exec
+name: Eray114514/dsh-exec
+category: dev
+description:
+  en: 'Run DeepSeek Harness from a shell, a script, CI or another agent with one command: the session is created inside the desktop host, so it appears live in the sidebar and can be continued there, stdout carries only the final answer unless the NDJSON stream is requested, and all four agent presets (standard, ptc, minimal, cordis) can be picked per run. It serves loopback HTTP routes that require a bearer token; the settings route additionally accepts a same-origin request from the app page. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在终端、脚本、CI 或另一个 agent 里一行调用 DeepSeek Harness：会话由桌面宿主进程创建，因此会实时出现在侧边栏并能继续；stdout 默认只有最终回答（可选 NDJSON 事件流），四个 Agent 预设（standard / ptc / minimal / cordis）可按次选择。它提供需要 bearer token 的回环 HTTP 路由，设置路由另外接受来自应用页面的同源请求。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,6 @@
+url: https://github.com/lt123456b/dsh-global-fonts
+name: lt123456b/dsh-global-fonts
+category: docs
+description:
+  en: 'Pin a fixed Source Han font table into the DSH system prompt so the model stops re-detecting, comparing, or asking about fonts; a settings panel remaps every role for CJK and Latin text. Requires the Source Han fonts to be installed on the machine. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把本机思源字体的用途表钉进系统提示词，模型不再查、不比、不追问字体；设置页面板可按用途 × 中文/西文换成任意本机字体。需要本机已安装思源黑体 / 思源宋体。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

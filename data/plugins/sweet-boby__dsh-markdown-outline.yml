@@ -1,0 +1,6 @@
+url: https://github.com/sweet-boby/dsh-markdown-outline
+name: sweet-boby/dsh-markdown-outline
+category: ui
+description:
+  en: Adds a Markdown outline and full-reply search to conversations, with section references, reversible turn hiding, and new sessions from selected turns.
+  zh: 为会话提供 Markdown 目录与回复全文搜索，支持章节引用、可逆隐藏轮次及从所选轮次创建新会话。

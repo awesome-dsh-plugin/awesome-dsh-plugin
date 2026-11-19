@@ -1,0 +1,7 @@
+url: https://github.com/p33333333333333l/dsh-mcp-servers
+name: p33333333333333l/dsh-mcp-servers
+category: ui
+description:
+  en: 'Adds a /mcp command that opens a panel to view, add, edit and remove MCP servers, writing the profile patch for you instead of hand-editing cordis.patch.yml.'
+  zh: '添加 /mcp 命令，弹出面板查看、新增、编辑和删除 MCP 服务器，自动写入 profile 配置，不必手改 cordis.patch.yml。'
+icon: https://raw.githubusercontent.com/p33333333333333l/dsh-mcp-servers/master/assets/icon-180.png

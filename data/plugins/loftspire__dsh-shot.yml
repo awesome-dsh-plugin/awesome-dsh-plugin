@@ -1,0 +1,8 @@
+url: https://github.com/loftspire/dsh-shot
+name: loftspire/dsh-shot
+category: ui
+description:
+  en: 'Windows-only screenshot button for the DSH composer: freezes the desktop and dims it, selects a whole window by hovering or a region by dragging, marks it up with rectangles, ellipses, arrows and pen strokes, then puts the cropped PNG straight into the draft attachments.'
+  zh: '给 DSH 输入框左侧加一个相机按钮（仅 Windows）：冻结整块桌面并压暗，鼠标悬停即选中整个窗口，或直接拖框选区，可用矩形、椭圆、箭头、画笔标注，确认后把裁好的 PNG 直接放进草稿附件。'
+icon: https://raw.githubusercontent.com/loftspire/dsh-shot/main/docs/icon-180.png
+tarball: https://github.com/loftspire/dsh-shot/releases/download/v0.2.6/loftspire-dsh-shot-0.2.6.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/foolfu86/dsh-agnes-image
+name: foolfu86/dsh-agnes-image
+category: vision
+description:
+  en: 'Adds the agnes_image host tool for generating and editing images with Agnes Image 2.5 Flash. Text-to-image takes a detailed prompt; image editing and multi-image composition accept local workspace paths or public URLs through reference_images. Output size, aspect ratio, and model are configurable, and results are saved into the session working directory and shown inline as attachments. The plugin has no runtime dependencies and no build step. Requires your own Agnes API key (AGNES_API_KEY in the environment or ~/.dsh/.credentials.yaml). Uses the same agnes_image tool name and loader id as zhp282515-wq/dsh-plugin-agnes-image, so do not install both.'
+  zh: '为 DeepSeek Harness 增加 agnes_image 宿主工具，使用 Agnes Image 2.5 Flash 生成与编辑图片。文生图接受详细提示词；图生图与多图合成通过 reference_images 接受工作区本地路径或公开 URL。可配置输出尺寸、宽高比与模型，结果保存在会话工作目录并作为附件内联展示。无运行时依赖，无构建步骤。需自备 Agnes API Key（环境变量 AGNES_API_KEY 或 ~/.dsh/.credentials.yaml）。与 zhp282515-wq/dsh-plugin-agnes-image 的工具名 agnes_image 和 loader id 相同，不能同装。'

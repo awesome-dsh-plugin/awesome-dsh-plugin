@@ -2,5 +2,5 @@ url: https://github.com/Delthin/dsh-plugins/tree/main/packages/feishu-notify
 name: Delthin/dsh-plugins#feishu-notify
 category: notify
 description:
-  en: "Sends DSH task summaries and host event alerts (approval, question, plan confirmation) to a saved Feishu recipient, with an enable switch, quiet hours, and status/test/configure tools."
-  zh: "把 DSH 任务摘要和宿主事件提醒（审批、提问、计划确认）发送到已保存的飞书接收方，提供启用开关、免打扰时段以及状态查询、测试与配置工具。"
+  en: "Send one-way session notifications to Feishu direct messages or group chats via a custom app so you can keep track of key checkpoints while away from your desk. It pushes alerts for approval requests, questions, and plan confirmations, allows the model to actively send a completion summary when overall work lasting at least three minutes wraps up, and supports custom recipients along with Do Not Disturb time windows and timezones."
+  zh: "通过飞书自建应用向私聊或群聊发送单向会话提醒，在离席时及时同步关键节点。插件会在出现审批请求、提问和计划确认时即时推送消息；当整体工作持续满 3 分钟进入完成或收尾阶段时，模型可主动调用工具发送完成摘要，并支持按需配置接收对象、免打扰时段与时区。"

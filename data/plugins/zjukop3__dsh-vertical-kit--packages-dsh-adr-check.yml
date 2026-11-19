@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-adr-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-adr-check'
+category: 'tools'
+description:
+  en: 'Architecture decision record hygiene: a status, the context that forced a choice, the decision itself, consequences that include the cost, and the alternatives that lost. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '架构决策记录（ADR）的检查：状态、逼出选择的背景、那一句决定、包含代价的后果、落选的备选方案——后果只写好处的 ADR 通常没真正权衡过。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

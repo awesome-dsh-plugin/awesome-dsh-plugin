@@ -1,0 +1,6 @@
+url: https://github.com/puffdog-git/dsh-sound-atelier
+name: puffdog-git/dsh-sound-atelier
+category: voice
+description:
+  en: 'Reads assistant replies aloud using Edge, cloud and local speech engines, with per-persona voices, Chinese/Japanese dubbing, cloud voice management, RVC voice conversion and a speech API other plugins can call.'
+  zh: '朗读助手回复，支持 Edge、云端与本机语音引擎，可为不同人格绑定音色，提供中日配音、云端音色管理、RVC 变声，以及供其他插件调用的语音接口。'

@@ -1,0 +1,6 @@
+url: https://github.com/Feahter/dsh-plugins/tree/main/plugins/archive-rsi
+name: Feahter/dsh-plugins#archive-rsi
+category: session
+description:
+  en: 'Session archive with tags, notes and per-session metrics, plus a Plan-Do-Check-Act loop over the archived sessions that produces prompt and AGENTS.md rules and re-measures them on later sessions. Runs locally without calling a model.'
+  zh: '会话归档：标签、备注与会话指标；对归档语料跑 Plan-Do-Check-Act，产出 prompt 与 AGENTS.md 规则，采纳后在后续会话上重新度量。纯本地运行，不调用模型。'

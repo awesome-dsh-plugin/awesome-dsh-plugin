@@ -1,0 +1,6 @@
+url: https://github.com/Yangluo-2021/dsh-restart-button
+name: Yangluo-2021/dsh-restart-button
+category: ui
+description:
+  en: "Adds a persistent restart button to the top-right corner of the DeepSeek Harness desktop client. It gracefully shuts down and relaunches the Electron shell and host, and asks for confirmation only when a task is running. Windows + DSH Desktop only."
+  zh: "在 DeepSeek Harness 桌面客户端右上角添加常驻重启按钮，优雅关停并重新拉起 Electron 外壳与宿主；有任务在跑时才弹出确认。仅支持 Windows + DSH Desktop 桌面端。"

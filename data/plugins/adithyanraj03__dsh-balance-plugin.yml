@@ -1,0 +1,8 @@
+url: https://github.com/adithyanraj03/dsh-balance-plugin
+name: adithyanraj03/dsh-balance-plugin
+category: usage
+description:
+  en: 'Provider-aware account balance chip for the DeepSeek Harness composer dock: DeepSeek, OpenRouter, Moonshot/Kimi, Zhipu/GLM, MiniMax and Alibaba Cloud Token Plan, with peak/off-peak and night-discount countdowns.'
+  zh: '输入框下方按供应商显示账户余额的芯片：支持 DeepSeek、OpenRouter、Moonshot/Kimi、智谱/GLM、MiniMax 和阿里云 Token Plan，并带高峰/低谷与夜间折扣倒计时。'
+tarball: https://github.com/adithyanraj03/dsh-balance-plugin/releases/latest/download/plugin.tgz
+icon: https://raw.githubusercontent.com/adithyanraj03/dsh-balance-plugin/master/assets/icon.png

@@ -1,0 +1,6 @@
+url: https://github.com/Poy-Coder/dsh-channel-feishu
+name: Poy-Coder/dsh-channel-feishu
+category: remote
+description:
+  en: 'Feishu/Lark channel for DeepSeek Harness: one chat bound to one DSH session, streaming CardKit answers, the native reasoning process, interactive question cards, attachments, and reconnect/dedupe hardening for unattended use. Inbound is off until you turn it on; once on, an empty allowedUsers lets the first sender become the owner, and the channel''s sessions run under the danger-full-access preset unless you change it.'
+  zh: '飞书通道：一个飞书私聊绑定一个 DSH 会话，流式卡片回答、原生思考过程、交互式问答卡、附件双向收发，并针对无人值守做了断线自愈与消息去重。入站默认关闭；开启后 allowedUsers 留空时第一个发消息的人被绑定为主人，且该通道的会话默认使用 danger-full-access 权限预设（可改）。'

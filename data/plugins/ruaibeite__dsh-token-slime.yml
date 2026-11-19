@@ -1,0 +1,7 @@
+url: https://github.com/ruaibeite/dsh-token-slime
+name: ruaibeite/dsh-token-slime
+category: fun
+description:
+  en: A composer slime that grows on the output tokens your agent writes, splits into a colony, wears a breed hat from the tool mix, molts on every context compaction, and totals the colony across sessions in a sidebar tab.
+  zh: 输入框下方的史莱姆：吃掉模型写出的 token 长大、分裂成群，按工具构成长出头饰，每次上下文压缩蜕壳留下年轮，并在右侧栏汇总所有会话的总族群。
+icon: https://raw.githubusercontent.com/ruaibeite/dsh-token-slime/main/assets/icon-180.png

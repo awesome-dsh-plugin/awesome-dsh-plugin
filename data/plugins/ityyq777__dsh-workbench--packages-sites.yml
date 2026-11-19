@@ -1,0 +1,6 @@
+url: https://github.com/ityyq777/dsh-workbench/tree/main/packages/sites
+name: ityyq777/dsh-workbench#sites
+category: tools
+description:
+  en: 'Site bookmark manager for DSH: a folder tree, multiple links per site, tags and filtering, with per-folder views.'
+  zh: 'DSH 站点收藏：目录树、每个站点多条链接、标签与筛选，支持按目录浏览。'

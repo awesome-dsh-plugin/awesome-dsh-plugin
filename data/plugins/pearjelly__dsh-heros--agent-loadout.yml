@@ -1,0 +1,8 @@
+url: https://github.com/pearjelly/dsh-heros/tree/main/agent-loadout
+name: pearjelly/dsh-heros#agent-loadout
+category: ui
+icon: https://raw.githubusercontent.com/pearjelly/dsh-heros/main/agent-loadout/art/icon.png
+tarball: https://github.com/pearjelly/dsh-heros/releases/latest/download/dsh-heros-bundle.tgz
+description:
+  en: 'DSH-Heros adds a bilingual loadout screen for Agent Presets, tools, and plugins. Preview capability changes, open the selected loadout in a DSH session, and earn XP and cosmetic rewards from completed work.'
+  zh: '深度荣耀为 DSH 提供中英文出装界面，可选择 Agent Preset、工具和插件，预览能力变化，再用所选阵容开局。完成工作可获得经验和外观奖励。'

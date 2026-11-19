@@ -1,0 +1,7 @@
+url: https://github.com/ukkyo1/dsh-novel-reader
+name: ukkyo1/dsh-novel-reader
+category: fun
+description:
+  en: 'Reads local txt novels inside the chat dialog: chapters are detected automatically, the novel text is paginated in the assistant thinking block, a next-chapter button continues in the same reply, progress is remembered, and visible replies are fixed summaries.'
+  zh: '在对话窗口里阅读本地 txt 小说：自动识别章节，正文在助手思考块里分页显示，可点「下一章」在同一条回复里继续读，会记住阅读进度，可见回复是固定总结。'
+tarball: https://github.com/ukkyo1/dsh-novel-reader/releases/download/v0.9.4/dsh-novel-reader-0.9.4.tgz

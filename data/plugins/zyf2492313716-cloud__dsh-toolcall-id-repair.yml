@@ -1,0 +1,6 @@
+url: https://github.com/zyf2492313716-cloud/dsh-toolcall-id-repair
+name: zyf2492313716-cloud/dsh-toolcall-id-repair
+category: dev
+description:
+  en: 'Stops session lockups from OpenAI-compatible gateways that stream empty tool-call ids: intercepts llm/stream chunks in memory to synthesize consistent call_<sha256> ids across tool-call-delta and block-end, plus offline session repair/verify scripts under tools/.'
+  zh: '修复并预防 OpenAI 兼容网关流式返回空 tool_call id 导致的 DSH v4 会话锁死：在 llm/stream 拦截点纯内存合成一致的 call_<sha256> ID 补全 tool-call-delta 与 block-end，并在仓库 tools/ 下附带离线会话修复与校验脚本。'

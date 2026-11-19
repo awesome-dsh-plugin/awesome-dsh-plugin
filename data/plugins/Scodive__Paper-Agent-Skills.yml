@@ -1,0 +1,6 @@
+url: https://github.com/Scodive/Paper-Agent-Skills
+name: Scodive/Paper-Agent-Skills
+category: skill
+description:
+  en: 'Evidence-aware research writing skills for DeepSeek Harness: academic paper revision against supplied experiment records and references, rebuttal preparation, and presentation storyboarding, each with bundled Python tools that package the evidence and check the edits locally.'
+  zh: '面向 DeepSeek Harness 的科研写作技能包：依据提供的实验记录与文献修订论文、准备逐条 rebuttal、生成汇报 storyboard；每个技能内置 Python 工具，用于打包证据并在本地校验修改。'

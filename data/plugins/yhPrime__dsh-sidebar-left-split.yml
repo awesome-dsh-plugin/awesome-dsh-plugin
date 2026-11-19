@@ -1,0 +1,6 @@
+url: https://github.com/yhPrime/dsh-sidebar-left-split
+name: yhPrime/dsh-sidebar-left-split
+category: ui
+description:
+  en: 'Turn the seam between the sidebar panel list and the workspace list into a divider you can drag, snapping one row at a time, with the panel list scrolling when squeezed.'
+  zh: '把左侧栏「面板列表」与「工作区」之间的交接做成按行磁吸的可拖动分隔条，面板列表被压小时自动出滚动条。'

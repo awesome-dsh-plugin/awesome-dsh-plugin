@@ -1,0 +1,6 @@
+url: https://github.com/nidehogger/dsh-tool-compass
+name: nidehogger/dsh-tool-compass
+category: tools
+description:
+  en: 'Model-classified tool compass for DeepSeek Harness: the agent sees functional categories and pulls specific tools on demand.'
+  zh: '模型自动分类的工具罗盘：模型默认只看到功能类别，需要时检索并展开具体工具。'

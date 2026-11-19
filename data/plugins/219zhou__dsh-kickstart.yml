@@ -1,0 +1,8 @@
+url: https://github.com/219zhou/dsh-kickstart
+name: 219zhou/dsh-kickstart
+category: workflow
+description:
+  en: 'Guided first-project harness: asks open questions about your day, shows what it heard versus what it only infers for you to correct, proposes 2-3 projects that reach a runnable prototype in one to two hours, and starts the one you pick — resuming from saved progress if you come back later.'
+  zh: '引导式起步：先用开放问题了解你，把你说的和它推断的分两栏让你改，再给两三个一小时能做出雏形的小项目，选定后立刻陪你动手；中途退出后再回来会从上次停下的地方继续。'
+icon: https://raw.githubusercontent.com/219zhou/dsh-kickstart/main/assets/icon-512.png
+tarball: https://github.com/219zhou/dsh-kickstart/releases/latest/download/dsh-kickstart.tgz

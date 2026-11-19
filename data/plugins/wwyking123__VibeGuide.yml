@@ -1,0 +1,7 @@
+url: https://github.com/wwyking123/VibeGuide
+name: wwyking123/VibeGuide
+category: ui
+description:
+  en: Adds a VibeGuide mode with plain-language communication rules for the main agent, and a sidebar that shows progress and project structure and answers questions about the conversation.
+  zh: 增加 VibeGuide 模式，为主对话加上白话沟通规则；并提供侧栏，查看进展和项目结构、就对话内容提问。
+tarball: https://github.com/wwyking123/VibeGuide/releases/latest/download/vibeguide-dsh-bundle.tgz

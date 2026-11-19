@@ -1,0 +1,6 @@
+url: https://github.com/Hakuno410/dsh-wide-chat
+name: Hakuno410/dsh-wide-chat
+category: ui
+description:
+  en: Drag the right edge of the chat column to widen it, between 520 and 2400 pixels; double-click the handle to reset to the default. The width is saved in localStorage and restored on the next open. It sets a single CSS custom property that the conversation column, the composer card and the user bubbles all derive from, so nothing in the DOM is rebuilt. Pure front-end, no build step, no host services and no tools.
+  zh: 拖动聊天列的右缘就能把列调宽，范围 520 到 2400 像素，双击把手复位到默认宽度。宽度存在 localStorage 里，下次打开自动恢复。只设置一个 CSS 自定义变量，会话列、输入框和用户气泡都从它派生，不重建任何 DOM。纯前端，无需构建，不注册服务、不加工具。

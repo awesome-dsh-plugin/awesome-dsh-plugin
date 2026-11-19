@@ -1,0 +1,6 @@
+url: https://github.com/mouse985/dsh-context-cap
+name: mouse985/dsh-context-cap
+category: usage
+description:
+  en: "Caps the routed model's context window from a chip on the right of the composer (32k / 64k / 128k / 256k / 512k / 1M, plus a revert) by writing the provider's own contextWindow setting, so automatic compaction fires earlier and a long conversation stops pushing each request to the full window."
+  zh: 在对话框右侧加一枚控件，把当前模型的上下文窗口限制在 32k / 64k / 128k / 256k / 512k / 1M（可一键恢复默认），写入提供方自己的 contextWindow 设置，于是自动压缩提前触发，长对话不再把单次请求顶到满窗口。

@@ -1,0 +1,7 @@
+url: https://github.com/isdou/dsh-asset-library
+name: isdou/dsh-asset-library
+category: ui
+tarball: https://github.com/isdou/dsh-asset-library/releases/download/v0.2.2/isdou-dsh-asset-library-0.2.2.tgz
+description:
+  en: 'Local reference image library for DSH, allowing fast @keyword image search and attachment directly from the conversation input.'
+  zh: '专为多模态 UI 开发打造的跨项目本地图库，在对话框输入 @关键词 即可快速检索并追加设计参考图附件。'

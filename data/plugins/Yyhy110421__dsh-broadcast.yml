@@ -1,0 +1,6 @@
+url: https://github.com/Yyhy110421/dsh-broadcast
+name: Yyhy110421/dsh-broadcast
+category: session
+description:
+  en: 'Sends one instruction to a chosen group of existing DSH sessions at once, with attachments, optional answer collection and up to eight temporary subagents.'
+  zh: '群发：把一条指令一次发给自己选中的多个 DSH 会话，可带附件、收集回答，并额外拉起最多 8 个临时子代理。'

@@ -1,0 +1,6 @@
+url: https://github.com/Lornatang/dsh-frontgate
+name: Lornatang/dsh-frontgate
+category: security
+description:
+  en: 'Password gate and reverse proxy for the DeepSeek Harness web interface.'
+  zh: 'DeepSeek Harness 网页界面的密码门与反向代理：默认只监听本机回环，没设置密码时首次启动会生成一个密码并只显示一次；需要远程访问时再把 listenHost 设为 0.0.0.0。'

@@ -1,0 +1,7 @@
+url: https://github.com/CoraxEldridge/dsh-message-cite
+name: CoraxEldridge/dsh-message-cite
+category: session
+description:
+  en: 'Cites one specific message from another conversation: the @ menu inserts a chip, and at send time the quoted text is injected as untrusted background; a conversation_history tool also lets the model search and read other sessions of the same workspace. The @ menu searches the indexed sessions of every workspace (only the model tool is limited to the current one), and its HTTP routes (/dsh-message-cite/api/…) are guarded only by a marker header, not by a DSH access check.'
+  zh: '引用另一段对话里的某一条具体消息：在输入框 @ 菜单里选中后插入 chip，发送时把原文作为不可信背景注入本轮；另有一个 conversation_history 工具，让模型自己搜索并读取本工作区内的其他对话。@ 菜单会搜索所有工作区里已建索引的会话（只有给模型用的工具限定在当前工作区）；插件的 HTTP 路由（/dsh-message-cite/api/…）只靠一个标记头把关，没有 DSH 的访问检查。'
+icon: https://raw.githubusercontent.com/CoraxEldridge/dsh-message-cite/main/assets/icon-180.png

@@ -1,0 +1,8 @@
+url: https://github.com/iswalterwu/agent-site/tree/main/packages/dsh-plugin
+name: iswalterwu/agent-site#dsh-plugin
+category: ui
+tarball: https://github.com/iswalterwu/agent-site/releases/download/v0.1.0/dsh-agent-site-0.1.0.tgz
+description:
+  en: 'Opens a separately downloaded Windows desktop pixel monitor for pi, Claude Code and DSH sessions. DSH monitoring is read-only.'
+  zh: '从本机 DSH 打开 Windows 桌面像素会话监控，查看 pi、Claude Code 和 DSH；桌面组件需单独解压，DSH 为只读。'
+icon: https://raw.githubusercontent.com/iswalterwu/agent-site/main/packages/dsh-plugin/assets/logo-192.png

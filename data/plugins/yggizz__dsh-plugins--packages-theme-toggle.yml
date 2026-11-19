@@ -1,0 +1,7 @@
+url: https://github.com/yggizz/dsh-plugins/tree/main/packages/theme-toggle
+name: yggizz/dsh-plugins#theme-toggle
+category: theme
+description:
+  en: 'Adds a one-click light/dark switch in two places: the window title bar beside the DeepSeek logo on the Windows and macOS desktop clients, and the sidebar foot on the Web, where it is a labeled row while the sidebar is wide and a centered icon once the sidebar collapses to its 56 px rail. Both placements are registered at once and CSS shows only the one the platform can draw, so the button never sits at a fixed coordinate. It keeps no state of its own and does not reach the network; disabling it removes both buttons and leaves the appearance settable in Settings.'
+  zh: '一键切换深浅色，按钮放在两处：Windows / macOS 桌面客户端的窗口标题栏 DeepSeek 标志旁，以及浏览器里的左侧栏底部——侧栏展开时是带文字的一整行，收起成 56px 图标条时是居中的图标。两个位置同时注册，CSS 只显示当前平台能画的那一个，所以按钮不会钉在某个固定坐标上。插件自己不保存状态、不联网；关掉后两个按钮都消失，外观仍在 DSH 设置里可改。'
+icon: https://raw.githubusercontent.com/yggizz/dsh-plugins/main/packages/theme-toggle/assets/icon-180.png

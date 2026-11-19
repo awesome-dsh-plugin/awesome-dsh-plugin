@@ -1,0 +1,6 @@
+url: https://github.com/HelloWorldGitHub114/dsh-codex-default-workspace
+name: HelloWorldGitHub114/dsh-codex-default-workspace
+category: session
+description:
+  en: 'Codex-style project-free sessions: each new session in the default workspace creates and enters a date-grouped folder (default-workspace/YYYY-MM-DD/session-id) via native working-directory events, with a toggleable work/ and outputs/ directory convention.'
+  zh: '仿照 Codex 的无项目会话：默认工作区中的每段新会话首次运行时自动创建并进入按日期分组的独立文件夹（默认工作区/YYYY-MM-DD/会话ID），内置可开关的 work/ 与 outputs/ 目录约定。'

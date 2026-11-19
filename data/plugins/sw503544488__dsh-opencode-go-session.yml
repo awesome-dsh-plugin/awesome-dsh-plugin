@@ -1,0 +1,7 @@
+url: https://github.com/sw503544488/dsh-opencode-go-session
+name: sw503544488/dsh-opencode-go-session
+category: model
+description:
+  en: 'Sends a stable per-conversation x-opencode-session header on every pi-ai call to OpenCode through the harness header hook, so routing and prompt caching stay per conversation. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '通过 DSH 的请求头钩子，把每次发往 OpenCode 的 pi-ai 请求的 x-opencode-session 换成该会话自己的 id，让路由与提示缓存按会话生效。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/sw503544488/dsh-opencode-go-session/main/assets/icon-180.png

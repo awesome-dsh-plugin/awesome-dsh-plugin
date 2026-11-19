@@ -1,0 +1,6 @@
+url: https://github.com/cnhenaihui/dsh-session-export
+name: cnhenaihui/dsh-session-export
+category: session
+description:
+  en: 'Export a DSH session tree (lead plus subagent fleet) to two Markdown files from one frozen snapshot: a readable narrative summary and a complete raw archive. Target directories are checked against the session file policy, and a blocked location falls back to the workspace exports folder.'
+  zh: '把一次会话及其智能体编队从同一份冻结快照导出为两份 Markdown：可读叙事摘要与完整原始存档。导出位置按会话文件策略校验，不可写时自动改存工作区 exports 目录。'

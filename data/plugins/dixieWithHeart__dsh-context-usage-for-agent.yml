@@ -1,0 +1,6 @@
+url: https://github.com/dixieWithHeart/dsh-context-usage-for-agent
+name: dixieWithHeart/dsh-context-usage-for-agent
+category: usage
+description:
+  en: Gives the agent its own context usage through a context_usage tool plus one reading line per turn, with an editable template.
+  zh: 通过 context_usage 工具与每轮一行读数让 Agent 读懂自己的上下文占用，注入模板可编辑。

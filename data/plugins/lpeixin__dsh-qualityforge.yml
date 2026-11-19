@@ -1,0 +1,6 @@
+url: https://github.com/lpeixin/dsh-qualityforge
+name: lpeixin/dsh-qualityforge
+category: dev
+description:
+  en: 'A QA plugin for DeepSeek Harness that runs end-to-end checks on a project (build, typecheck, lint, tests, coverage, dependency audit, secret scan) and writes a tickable report with P0–P3 severities and quality gates; execution is limited to preset commands and probing to loopback addresses.'
+  zh: 'DeepSeek Harness 的 QA 插件：对项目运行端到端检查（构建、类型检查、lint、测试、覆盖率、依赖审计、密钥扫描），输出可勾选的报告，按 P0–P3 分级并带质量门禁；执行范围限于预设命令，探测只到回环地址。'
