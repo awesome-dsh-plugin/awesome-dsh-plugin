@@ -1,6 +1,0 @@
-url: https://github.com/781237194/agile-workbench/tree/main/dsh-plugin
-name: 781237194/agile-workbench#dsh-plugin
-category: workflow
-description:
-  en: 'PM Workbench: multi-role project workbench inside DSH — role cards, dispatch and receipts, requirement/bug ledger, gates and an Owner review board; the Windows launcher also installs the local Electron workbench.'
-  zh: 'PM 工作台：在 DSH 里跑多角色项目工作台——角色卡、派单与回执、需求/缺陷台账、门禁与 Owner 评审看板；Windows 下由启动器安装本地 Electron 工作台。'
