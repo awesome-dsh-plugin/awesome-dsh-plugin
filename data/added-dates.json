@@ -227,7 +227,6 @@
  "https://github.com/ishuowang/dsh-sideband": "2026-08-15T01:06:37.661Z",
  "https://github.com/itr-del/dsh-feishu": "2026-08-14",
  "https://github.com/jeremy9682/dsh-skill-pack": "2026-08-15T01:06:37.661Z",
- "https://github.com/jiangnanquan/dsh-ux": "2026-08-14",
  "https://github.com/jiayan-xu/dsh-codebase-memory": "2026-08-14",
  "https://github.com/jiayan-xu/dsh-memoria": "2026-08-14",
  "https://github.com/jiayan-xu/dsh-memoria-extra": "2026-08-14",
@@ -623,5 +622,7 @@
  "https://github.com/caidows/dsh-quick-model-switch": "2026-11-11",
  "https://github.com/gabrielbav/dsh-workspace/tree/main/Plugins/dsh-connectors": "2026-11-14",
  "https://github.com/gabrielbav/dsh-workspace/tree/main/Plugins/dsh-plugin-airlock": "2026-11-12",
- "https://github.com/swswordholy-tech/AgentsChat/tree/main/mcp-plugin": "2026-10-28"
+ "https://github.com/swswordholy-tech/AgentsChat/tree/main/mcp-plugin": "2026-10-28",
+ "https://github.com/jiangnanquan/dsh-uxexo": "2026-08-14",
+ "https://github.com/QIU-KKKK/DeepSeek-Harness-BT-": "2026-11-18"
 }

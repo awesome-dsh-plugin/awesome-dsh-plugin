@@ -1,0 +1,6 @@
+url: https://github.com/BunnySakura/dsh-model-capability-detector
+name: BunnySakura/dsh-model-capability-detector
+category: model
+description:
+  zh: '为 DSH 第三方 API 渠道补全模型上下文、输出、识图和推理参数。'
+  en: 'Fills model context, output, vision and reasoning settings for third-party API providers in DSH.'

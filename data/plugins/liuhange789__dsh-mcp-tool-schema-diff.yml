@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/dsh-mcp-tool-schema-diff
+name: DSH MCP Tool Schema Diff
+category: tools
+description:
+  en: "Breaking-change watchdog for MCP tool contracts. Remembers the last three tool generations per MCP server from the live tools/change registry and diffs them: removed tools, dropped parameters, accepted-type changes, new required fields and narrowed enums are graded breaking; default and constraint changes are warnings; additions are info. A quiet-window debounce absorbs mcp-client re-sync churn, so first connections and reconnects never false-alarm. Reports through a transcript notice plus `/mcp-diff`, caches snapshots under `$DSH_HOME/mcp-schema-cache` (last 3 versions), reads the registry only and writes no other state."
+  zh: "MCP 工具契约的破坏性变更预警。从运行中的 tools/change 注册表里，为每个 MCP server 记住最近三代工具定义并做结构化 diff：工具删除、参数删除、可接受类型收窄、新增必填、枚举收窄记为 breaking；默认值与约束变化记为 warning；新增工具/可选参数记为 info。静默窗口防抖吸收 mcp-client 的重新同步抖动，首次连接和重连都不会误报。通过会话通知加 `/mcp-diff` 输出，快照存 `$DSH_HOME/mcp-schema-cache`（每个 server 保留 3 个版本），只读注册表，不写其他状态。"

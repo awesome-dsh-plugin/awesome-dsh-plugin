@@ -1,0 +1,7 @@
+url: https://github.com/KevinMKRL/dsh-windows-screenshot
+name: KevinMKRL/dsh-windows-screenshot
+category: ui
+description:
+  en: 'Adds a Windows-native screenshot button to the DSH composer with area, window and full-screen modes, an optional delay, and automatic import into the current chat draft. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 输入框工具栏加一个 Windows 原生截图按钮，支持区域、窗口、全屏与延迟，截完自动加入当前聊天草稿。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/KevinMKRL/dsh-windows-screenshot/main/docs/icon-180.png

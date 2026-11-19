@@ -1,6 +1,7 @@
 url: https://github.com/STARDUSTLC666/dsh-hyperframes
 name: STARDUSTLC666/dsh-hyperframes
 category: skill
+icon: https://raw.githubusercontent.com/STARDUSTLC666/dsh-hyperframes/master/assets/plugin-icon.webp
 description:
-  en: 'Twenty-one official HyperFrames by HeyGen skills synced from the official upstream (HTML video authoring, animation, keyframes, audio/music-to-video, CLI, registry, slideshow, talking-head recut, website/product/PR-to-video, Studio timeline conventions and more), plus a bundled-resource health check. A step-by-step first-run guide (4 steps) now opens inside its settings panel.'
-  zh: '同步 HyperFrames by HeyGen 官方上游的二十一技能：HTML 写视频/动画/关键帧/音频与音乐转视频/CLI/注册表/幻灯片/口播重剪/网址·产品·PR 转视频/Studio 时间轴规范等，附随包资源完整性自检。面板内置 4 步首次使用引导，看一次后不再出现。'
+  en: 'HTML video creation workbench and official HyperFrames skills (7 current skills plus 14 compatibility aliases, with bundled-resource health check): title-card, product-intro and carousel templates in landscape/portrait/square, asset upload and ordering, official Studio preview, local MP4 and editable project export, and 5 switchable workbench themes.'
+  zh: 'HTML 视频创作工作台与 HyperFrames 官方技能（7 个当前技能及 14 个兼容旧名入口，含随包资源自检）：提供横屏/竖屏/方形标题卡、产品介绍与图文轮播模板，支持素材上传排序、官方 Studio 预览、本机 MP4 与可编辑工程备份导出及 5 套工作台主题。'

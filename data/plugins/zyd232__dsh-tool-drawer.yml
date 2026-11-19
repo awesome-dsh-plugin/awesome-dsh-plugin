@@ -1,0 +1,6 @@
+url: https://github.com/zyd232/dsh-tool-drawer
+name: zyd232/dsh-tool-drawer
+category: tools
+description:
+  en: 'Puts every tool in a drawer: everyday tools stay on the desk, and everything else is fetched on demand through find_tool, describe_tool and use_tool.'
+  zh: '把工具都收进抽屉：常用工具留在桌面，其余需要时再通过 find_tool、describe_tool、use_tool 取出。'

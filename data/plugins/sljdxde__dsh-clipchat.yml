@@ -1,0 +1,7 @@
+url: https://github.com/sljdxde/dsh-clipchat
+name: sljdxde/dsh-clipchat
+category: ui
+description:
+  en: 'Select a passage in a DSH reply to ask about it in place, keep a threaded Q&A beside the passage, and save green-underline highlights that survive reloads; records can be searched across sessions and located back to the original turn.'
+  zh: '在 DSH 回复里划词就地提问，答案留在原文旁并可连续追问；高亮与记录随会话持久化，支持跨会话搜索与一键定位回原文。'
+icon: https://raw.githubusercontent.com/sljdxde/dsh-clipchat/main/docs/icon-180.png

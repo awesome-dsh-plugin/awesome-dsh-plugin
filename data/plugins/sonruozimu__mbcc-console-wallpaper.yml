@@ -1,0 +1,7 @@
+url: https://github.com/sonruozimu/mbcc-console-wallpaper
+name: sonruozimu/mbcc-console-wallpaper
+category: theme
+tarball: https://github.com/sonruozimu/mbcc-console-wallpaper/releases/download/v0.2.1/dsh-theme-mbcc-console-ext-0.2.1.tgz
+description:
+  en: 'MBCC console skin for the DSH Web UI: repaints the interface through theme tokens in dark and light with five accent colors; adds a two-stage opening animation (an optional video clip, then a boot log); and adds a wallpaper library in the sidebar footer where local images replace the chat background, with slideshow, opacity and fit controls, plus a built-in dark theme. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'MBCC 终端风格皮肤：通过主题 token 重绘深浅两套配色并提供五档强调色；新增两段式开屏动画（可选视频片段 + 启动日志）；在侧栏底部新增壁纸库，可用本地图片替换聊天背景，支持幻灯片播放、透明度与填充方式调节，并内置一套深色主题。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
