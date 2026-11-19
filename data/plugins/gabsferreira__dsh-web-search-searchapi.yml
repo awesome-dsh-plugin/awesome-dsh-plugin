@@ -1,0 +1,5 @@
+url: https://github.com/gabsferreira/dsh-web-search-searchapi
+name: gabsferreira/dsh-web-search-searchapi
+category: browser
+description:
+  en: 'SearchApi search provider for the built-in web_search tool: one GET to SearchApi''s Google engine per search, organic results mapped to sources (title, snippet, ISO publication date), and Google''s goto redirect links followed one hop so sources cite the real page. Key from the credentials service or SEARCHAPI_API_KEY; no UI, web_fetch unchanged.'
