@@ -1,0 +1,6 @@
+url: https://github.com/qwased/dsh-niubash-windows
+name: qwased/dsh-niubash-windows
+category: wsl
+description:
+  en: Runs bash commands on Windows through Niubash as a DSH tool alongside the built-in pwsh, with a bundled troubleshooting skill.
+  zh: 通过 Niubash 在 Windows 上以 DSH 工具运行 bash 命令，与内置 pwsh 共存，并随包内置排障技能。
