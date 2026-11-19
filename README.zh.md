@@ -4821,6 +4821,7 @@ dsh plugin --profile web add dshmarket
 - [imshz6669/dsh-split-chat](https://github.com/imshz6669/dsh-split-chat) — 把任意会话作为第二个完整对话开在右侧栏（独立记录与输入框），主区对话保持不动；右栏分栏后最多可同时对话 3 个会话。
 - [imtwa/dsh-recall-sessions](https://github.com/imtwa/dsh-recall-sessions) — 轻量级解压并读取历史会话，让新会话读取之前会话的内容，单次操作毫秒级。`/recall` 列出当前项目的历史会话（标题、最后活动时间、轮次、首问）；`/recall <序号>` 读回该会话的轮次内容；`/recall all` 覆盖所有项目；也可用自然语言让模型调用 `recall_sessions` 工具查询。
 - [Imzl-zl/dsh-redo](https://github.com/Imzl-zl/dsh-redo) — 给你发出的每条消息加上「重新生成」和「编辑重发」：重新生成一键用同样的文字重新回答，不经过输入框；编辑重发就地撤回这条消息及其之后的内容——从时间线和模型上下文里一起消失，不新建会话也不开新分支——再把文字和图片放回输入框，改完发送就从那一条重写对话。带文件（非图片）的消息两个操作置灰。
+- [ingk888766-cloud/dsh-anti-interrupt](https://github.com/ingk888766-cloud/dsh-anti-interrupt) — 回合被崩溃或重启打断后，自动恢复会话并让它继续跑，不用你再补一句「继续」；Windows 上还能关掉系统自带的屏保、关屏和睡眠超时（第三方软件的屏保管不到），并可选装一个每分钟一次的计划任务，让 App 被杀后自己回来。
 - [ingk888766-cloud/dsh-manage-deletion](https://github.com/ingk888766-cloud/dsh-manage-deletion) — 删会话，可选择是否带上它写过的文件；删掉的进回收站，按时间列出，可单条或批量还原；正在跑的会话会被拒绝，会话目录以外的文件不动。
 - [isdou/dsh-journal](https://github.com/isdou/dsh-journal) — 从会话足迹与文件改动中一键提炼工作成果与待办项，生成结构化日报周报，支持本地留存与 Markdown 导出。
 - [ishuowang/dsh-rolehub-bridge](https://github.com/ishuowang/dsh-rolehub-bridge) — 发现并校验可移植的 RoleHub 角色，固定其精确 bundle，再将提示词和随角色打包的 Skills 加载到独立、可续聊的 DSH Session，以 Host 批准的工具绑定限制能力，并可选接入 Agent Team Room。
@@ -12005,6 +12006,7 @@ dsh plugin --profile web add dshmarket
 - [hellosz/dsh-pets](https://github.com/hellosz/dsh-pets) — Codex Pets 风格浮动像素桌宠：内置 10 只 Petdex 兼容宝可梦伙伴，9 状态 agent 状态机（空闲/思考/等待/审查/出错 + 客户端挥手/跳跃/方向动画），可拖拽悬浮、宠物切换与缩放设置、通知气泡，以及 agent 可用的 `pet_say` 工具。
 - [Helly0000/dsh-life-game](https://github.com/Helly0000/dsh-life-game) — 给 DeepSeek Harness 的康威生命游戏：侧栏一行面板入口，打开一块可绘制的中央棋盘，含四套规则、七个可盖章的图案与一条种群曲线。
 - [henryzhc26/dsh-darena](https://github.com/henryzhc26/dsh-darena) — DSH 里的实时对战小游戏：跨用户匹配，双方各调自己 DSH 里配置的模型解同一张机关图，三局两胜、11 档难度阶梯，带练习模式和全球净胜榜。
+- [heqi698/dsh-go-kugimiya-voice](https://github.com/heqi698/dsh-go-kugimiya-voice) — 把 kugimiya-rainbow-fart 语音包的 60 条钉宫理惠日文配音、台词对照和 20 组关键词规则接到 dsh-go 手机 App：输入框胶囊随机念一句，长按回答按关键词挑一句，两个面板列出全部台词。
 - [heswy/dsh-game-market](https://github.com/heswy/dsh-game-market) — DSH 的游戏市场与运行时。Agent 跑长任务时，游戏铺满主工作区，右下角的小鲸鱼显示 Agent 状态（运行中、等你、完成、出错）；进度自动保存，下次接着玩。内置五款游戏，提供游戏 SDK 与 CLI，并可从市场安装社区游戏。
 - [hmhm2333/dsh-braingames](https://github.com/hmhm2333/dsh-braingames) — 等 Agent 执行任务时，玩几分钟像素风认知训练小游戏。
 - [hongxin-y/codex-pet-Astra-Yao](https://github.com/hongxin-y/codex-pet-Astra-Yao) — 把 Astra Yao（耀嘉音）的 Codex 桌宠图集搬进 DSH Web 界面：随会话状态切换到构思、执行、候场、破音等动作，头顶气泡显示正在跑的工具和余额（默认开启，可关），空闲时轮播她的官方台词。
