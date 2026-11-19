@@ -1,6 +1,0 @@
-url: https://github.com/FragrantLotus/dsh-sidebar-entries
-name: FragrantLotus/dsh-sidebar-entries
-category: ui
-description:
-  en: "Plugin rail for the DSH sidebar. Caps the rail to a whole number of rows with its own scrollbar, folds the whole list behind one chevron, and reorders entries by dragging them. Footer entries are pulled up into the same rail. Every subsystem is guarded, so one failure cannot take the page down."
-  zh: "整理 DSH 左侧插件栏：高度上限按整行取整，栏内单独滚动；一个箭头折叠整栏；长按拖拽调整顺序；页脚入口并入同一栏。各子系统独立守卫，单个失败不会拖垮整页。"
