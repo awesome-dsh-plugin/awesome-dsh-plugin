@@ -4365,7 +4365,7 @@ dsh plugin --profile web add dshmarket
 - [menghuanshiguang/dsh-frontline](https://github.com/menghuanshiguang/dsh-frontline) — 一条提示词行装两半，各自可单独关闭。身份层：开头、末尾（一切其它分区之后）与运行时快照三处固定同一段自述，并要求把与之冲突的说法当作过时缓存。纪律层：十条规则，每条附一句评审用来判断是否违反的判据——收工前拿出外部证据、改动面等于评审面、正确性来自命名调用点而非时序、一个事实一个家、通过注册的接缝扩展、只在真实边界做运行时校验、失败要响而不是静默跳过、正交的结果分开报告、测试走已交付的入口、答复先给结论且篇幅跟改动走。
 - [menghuanshiguang/dsh-sunder](https://github.com/menghuanshiguang/dsh-sunder) — 用自带的提示词包替换宿主身份块：identity、rules、footer 三个系统提示词分区，full/concise/dev 三档预设，每轮把一张规则卡片作为真实用户消息追加，公告源离线时回退到内置副本，检查 GitHub Releases 并可用命令应用更新，五个 `sunder_*` 工具，设置页里一个只读状态分区。
 - [MengYuil/dsh-ponytail](https://github.com/MengYuil/dsh-ponytail) — ponytail 移植：常驻的「懒惰资深开发者」编码人设，带强度档位与 review、audit、debt、gain、help 技能，适用于 DeepSeek Harness。
-- [mohammadatiq472-source/ai-social-aio#dsh-plugin](https://github.com/mohammadatiq472-source/ai-social-aio/tree/main/dsh-plugin) — 通过 MCP 把 DeepSeek Harness 接到 AIO 群聊：人和各自的 AI 成员在同一个群里说话。需要 AIO 实例和 AI 成员令牌；默认连自托管 AIO，也可指向官方实例。
+- [mohammadatiq472-source/ai-social-aio#dsh-plugin](https://github.com/mohammadatiq472-source/ai-social-aio/tree/main/dsh-plugin) — 让你的 AI 在群里有个座位：通过 MCP 把 DeepSeek Harness 接到自托管的 AIO 群聊，人和各自的 AI 成员在同一个群里说话。每个 AI 有自己的号码、性格和每日额度；一个 AI 一个令牌，模型与密钥都在你手里，平台不托管你的 AI。
 - [moon-lzy/dsh-starpost](https://github.com/moon-lzy/dsh-starpost) — 星邮是给 AI bot 用的社交平台：一个 bot 一个账号，能加好友、建群、发动态评论、逛广场、扔漂流瓶、约一局预约制狼人杀，还带每日聊天额度和重复句式限制。本包是星邮在 DeepSeek Harness 上的客户端：17 个工具覆盖上面这些功能，收到的事件按可配置间隔（默认 20 秒）合并成一条提示注入会话，回复走同一套工具。需要自备星邮账号，首次运行在插件面板里注册。由 hth768 的 MIT 项目 cortico-world-starpost 移植而来（源码在 vendor/ 下），不能与上游 Coo 扩展同装。
 - [Muninn-and-Zmx/dsh-subtext](https://github.com/Muninn-and-Zmx/dsh-subtext) — 日常对话里读字面底下那一层，一进工作就自动让位。
 - [muretai/muretai-dsh-skill](https://github.com/muretai/muretai-dsh-skill) — 让智能体加入 Muretai 网络：拥有自己的身份，通过邀请相识，与属于其他人的智能体进行签名、端到端加密的通信；来信唤醒后可自行回复。
@@ -4602,6 +4602,7 @@ dsh plugin --profile web add dshmarket
 - [CuberSome/dsh-auto-archive-echo](https://github.com/CuberSome/dsh-auto-archive-echo) — 按闲置时间自动归档 DSH 会话：可配置闲置阈值与扫描周期，带冷却期、dry-run 预览、置顶与子代理会话豁免、目录排除清单，并把每个会话的归档时间持久化下来。
 - [Cui-CN/dsh-session-md-purge](https://github.com/Cui-CN/dsh-session-md-purge) — 在会话右键菜单加入可恢复的“删除会话”：归档会话、解除项目归属，并把会话目录连同该会话写过的 Markdown 文件移入 $DSH_HOME/session-trash；有运行中任务的会话会被拒绝。
 - [Curiouslv/dsh-session-board](https://github.com/Curiouslv/dsh-session-board) — 会话看板：悬浮球一览所有工作区会话，实时显示思考与工具进展、任务耗时、上下文用量，支持近 12h/30 天用量统计，点击直达会话。
+- [cxydaizihao520/dsh-session-coordinator](https://github.com/cxydaizihao520/dsh-session-coordinator) — 在 DeepSeek Harness 中查找、读取和新建独立会话，向一个或多个会话分享上下文，并在审批范围内协作。
 - [Cyberbolt/dsh-snapcompact](https://github.com/Cyberbolt/dsh-snapcompact) — DSH 上下文压缩插件：路由支持图片时，把会话历史的中段在本地渲染成单色位图帧交给视觉模型阅读；精确的首尾文本、有上限的精确 token 索引与 FILES 文件索引仍以文字保留。
 - [CyberYui/dsh-workspace-isolate](https://github.com/CyberYui/dsh-workspace-isolate) — DSH 工作区级插件与技能门控。锁定一个工作区的插件/技能集合后，其它工作区会自动失去该工作区不使用的部分。
 - [cyh3436332528/dsh-plugin-session-purge#plugin](https://github.com/cyh3436332528/dsh-plugin-session-purge/tree/main/plugin) — 永久删除 DSH 会话（而非仅归档），级联清理它的日志目录、投影缓存、工作区记账与子会话（子代理）。提供设置页面板：按工作区分组，显示体积、时间与「打开中 / 已归档 / 子会话 N / 无工作区」标记，支持筛选与批量删除，每条删除都在行下方内联二次确认。
