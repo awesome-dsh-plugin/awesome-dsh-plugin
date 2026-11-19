@@ -1,0 +1,7 @@
+url: https://github.com/oh-wang/dsh-tools-deepseek-media
+name: oh-wang/dsh-tools-deepseek-media
+category: tools
+description:
+  en: 'Agent tools for DeepSeek OCR, ASR and TTS: recognize text in PDF and image files, transcribe WAV audio, and synthesize speech to a local file.'
+  zh: '把 DeepSeek 的 OCR、语音识别与语音合成做成 agent 工具：识别 PDF 与图片文字、转写 WAV 音频、把文本合成为本地音频文件。'
+icon: https://raw.githubusercontent.com/oh-wang/dsh-tools-deepseek-media/main/assets/icon-180.png
