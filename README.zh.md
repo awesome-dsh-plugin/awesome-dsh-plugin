@@ -2135,7 +2135,7 @@ dsh plugin --profile web add dshmarket
 - [wang6077/dsh-ide-vscode](https://github.com/wang6077/dsh-ide-vscode) — DSH 右侧栏里的工作区文件树与代码编辑器：跟随所在会话的工作区，新建 / 重命名 / 删除文件与文件夹（默认进回收站），带行号与语法高亮地编辑、Ctrl+S 保存、Ctrl+D 复制当前行，可预览图片、播放音频视频、查看并解压压缩包或用系统 tar 打包成 zip，能按文件名搜索或粘贴路径跳转，Windows 下图标用系统自己那套（SHGetFileInfo）。
 - [wang678678/dsh-local-plugins#dsh-kb-picker](https://github.com/wang678678/dsh-local-plugins/tree/main/packages/dsh-kb-picker) — 在 DSH 输入框中加入知识库选择器与原生附件回形针。
 - [wang678678/dsh-local-plugins#dsh-workspace-flow](https://github.com/wang678678/dsh-local-plugins/tree/main/packages/dsh-workspace-flow) — 把添加工作区的目录对话框换成路径输入、盘符快捷和系统文件夹选择。
-- [wangjianghu/dsh-composer-lists](https://github.com/wangjianghu/dsh-composer-lists) — 输入框有序/无序列表编排：自动续号与重排、标记感知的光标移动、层级升降、自然的空行编排，以及可撤销的 AI 提示词优化按钮。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [wangjianghu/dsh-composer-lists](https://github.com/wangjianghu/dsh-composer-lists) — 输入框有序/无序列表编排：自动续号与重排、标记感知的光标移动、层级升降、自然的空行编排，以及可撤销的 AI 提示词优化按钮。
 - [wangkang183/dsh-pm-workbench](https://github.com/wangkang183/dsh-pm-workbench) — 右侧栏工作台：记事本式备忘、项目甘特图、QQ 邮箱只读收件箱、日历、AI 拆分、周报，以及对话/微信操作待办的 Host 工具。
 - [wangsrGit119/dsh-nanny-calendar](https://github.com/wangsrGit119/dsh-nanny-calendar) — 育儿嫂日历看板：记录上户、下户、休假与工资发放，按月汇总，并统计从首次上户到今天的累计在岗与休假天数，同时按 30 天周期在日历上自动标出发薪日。
 - [wangtheme-coder/dsh-greeting](https://github.com/wangtheme-coder/dsh-greeting) — 给 DSH 主页 / 新会话 hero 区加一行按时段变化的问候语：按本地时间分 7 个时段随机抽句、内置傲娇鲸鱼娘台词、可用 ~/.dsh/greeting.json 覆盖任意时段，并顺手把 Ctrl+R / F5 接回页面刷新。
@@ -2967,6 +2967,7 @@ dsh plugin --profile web add dshmarket
 - [maqimakabaka/dsh-liangwengu](https://github.com/maqimakabaka/dsh-liangwengu) — DSH 谷价调度器：把写好的指令排在 DeepSeek Harness谷价时段自动发送，附带峰谷价格与时段抓取、余额提醒与本机用量记账。
 - [MaudieHakimi/dsh-entry-shaper](https://github.com/MaudieHakimi/dsh-entry-shaper) — 代理 provider：每次出网前按类别跑 op 链重塑 payload 再转交上游，使 prompt 前缀在回合之间保持单调、未变的历史不必按全价重付；op 名只表示传输方式（exec / http / inline），可接入用户自定义算法。
 - [Max-Samson/dsh-usage-chart](https://github.com/Max-Samson/dsh-usage-chart) — 输入框下方的用量/成本/余额仪表盘：实时指标指示器 + 零依赖 SVG 用量图表，按轮次统计用量、估算成本并实时查询 DeepSeek 账户余额。
+- [maxlee/dsh-token-receipt](https://github.com/maxlee/dsh-token-receipt) — Token 账单：把日、周、月、近 30 天、近 90 天与全部周期的 Token 用量及预估模型费用打印成小票，支持复制图片与保存 PNG。
 - [Melatonin-CZ/dsh-balance-strip](https://github.com/Melatonin-CZ/dsh-balance-strip) — 输入框下方状态行里的余额状态条：色带随余额在绿与红之间变化，可关动态、换纹理，并带图形化设置面板。
 - [melt502/dsh-hotkey](https://github.com/melt502/dsh-hotkey) — 为 DSH Web GUI 提供可配置的 VS Code 风格键盘快捷键，内置设置页改键、冲突检测与 JSON 导入导出。
 - [menglian001/dsh-token-usage](https://github.com/menglian001/dsh-token-usage) — 逐请求 token 账本：四桶计量、53 周热力图与实时并发，并额外落一份 JSONL 账本——不受每会话 600 行投影窗口限制，启动时从全部会话日志回扫补齐。
@@ -9296,6 +9297,7 @@ dsh plugin --profile web add dshmarket
 - [KasenRi/dsh-orbit](https://github.com/KasenRi/dsh-orbit) — DeepSeek Harness 的确定性工程编排运行时：orbit_controller 工具与 OrbitService 以 Commander / Executor / Smart Watchdog 子代理执行 PLAN、EXECUTE、EVALUATE、有界修正与运行时恢复，持久状态保存在 <project>/.cx/state.json。
 - [Kayungko/dsh-plugin-product-design](https://github.com/Kayungko/dsh-plugin-product-design) — 产品设计工作流套件：一个路由加九个 pd-* 技能，把想法从最小设计简报推进到视觉方向、证据化调研与审计、URL 克隆、前端构建与阻断式设计 QA 闸门。
 - [Kayungko/dsh-plugin-task-coordinator](https://github.com/Kayungko/dsh-plugin-task-coordinator) — 总控式工作流编排：确认闸门批量派发、团队编组、向运行中任务纠偏、等待收口与模型路线发现——11 个 task_* 工具加 /tasks 斜杠命令。
+- [KazeLiu/codex-dsh-dispatch](https://github.com/KazeLiu/codex-dsh-dispatch) — 让 Codex 向 DeepSeek Harness 派单、等待结果，并在原 DSH 对话中继续派单。
 - [KelaoHu/dsh-lowtide#dsh-lowtide](https://github.com/KelaoHu/dsh-lowtide/tree/main/packages/dsh-lowtide) — lowtide（退潮）插件能够实现闲时自动批量跑任务——任务框架高度自定义，四种执行策略，L1–L3 半自动/全自动裁决，支持任务编辑与预检，Cordis 微内核集成，桌面网页端通用。
 - [Kippythisway/dsh-team-v3](https://github.com/Kippythisway/dsh-team-v3) — AgentTeams 的团队预置：内置 audit6 / impl5 / lite2 三套编制与 seed 任务 DAG（每个角色带回报合同），并注入一段 captain 开团纪律——新会话一次批准就开出结构正确的团队，不用再贴提示词。需要先把引擎 @nanmicoder/dsh-agent-teams 装进同一个 profile；团队补丁按 id 指向该引擎，并会整段替换其 agent-teams 配置。
 - [kira905/dsh-task-board-local](https://github.com/kira905/dsh-task-board-local) — 自维护的 DSH 网页任务看板：带人工验收闸门、卡片类型与已执行卡片的可编辑备注。
@@ -11787,7 +11789,7 @@ dsh plugin --profile web add dshmarket
 - [sandbaseai/dsh-plugin-store](https://github.com/sandbaseai/dsh-plugin-store) — 在 DSH 设置中加入原生插件商店，支持目录搜索、标签筛选、排序、安装与已安装插件管理。
 - [Sanqi-normal/dsh-webui-market-plugin](https://github.com/Sanqi-normal/dsh-webui-market-plugin) — dsh Web GUI 内的社区插件市场：浏览 awesome-dsh-plugin.com 目录，从 设置 → 插件 → 插件市场 安装/卸载插件到 profile。
 - [Scorp1o117/dsh-plugin-marketplace](https://github.com/Scorp1o117/dsh-plugin-marketplace) — 在 Web UI 设置页浏览和搜索 GitHub dsh-plugin 仓库，按 Star 排序，并通过 DSH CLI 安装插件。
-- [Sivan757/dsh-agent-plugins-market](https://github.com/Sivan757/dsh-agent-plugins-market) — 把任意 Claude Code / Codex / Cursor / Kimi / agent-plugins.org 的 git 市场仓库加为源，套件的技能、MCP 服务器、hooks 与斜杠命令在运行时注入 DSH 会话，并自带 Web 市场页。
+- [Sivan757/dsh-agent-plugins-market](https://github.com/Sivan757/dsh-agent-plugins-market) — 技能与扩展管理器：Claude Code、Codex、Cursor、Kimi 的插件仓库原样安装、无需转换，在同一个图形界面工作区里管理技能、命令、MCP 服务与 hooks，并用扩展预设决定每个会话带哪些扩展。
 - [songrui111/dsh-publisher-radar](https://github.com/songrui111/dsh-publisher-radar) — 面向 DSH 插件开发者的市场空白雷达。把目录拆到大类与方向，每档标出空位、稀少、有竞争或红海，空位最多的方向排在前面，动手前先知道该做什么；同时可浏览整个市场并一键复制安装命令。
 - [sorawithcat/dsh-settings-sync](https://github.com/sorawithcat/dsh-settings-sync) — 把插件清单与 profile 配置、选定的 $DSH_HOME 文件、浏览器 localStorage 导出成一份 JSON，按文件预览后导入，并可在 profile 目录执行 pnpm install 重装清单里的插件；格式与插件市场的 profile 备份互通。
 - [SouthM/dsh-nanshan-market-publish](https://github.com/SouthM/dsh-nanshan-market-publish) — 扫描本机正在开发的 DSH 组件（也可以手动添加组件文件夹），按官方 contributing.md 的要求分两条互相独立的轨道引导：把代码提交到 GitHub，以及向插件市场提收录 PR。逐项检查 dsh.bundle、仓库满 1 天、dsh-plugin topic、分类与描述规范，并生成 data/plugins/<owner>__<repo>.yml。在左侧栏点「插件市场发布助手」进入。需要连接一个有 public_repo 权限的 GitHub Token，Token 保存在 DSH 凭据服务里，PR 会用你自己的账号提交。它的 HTTP 路由没有 DSH 的访问检查，而这些路由可以用你提供的令牌向 GitHub 推送代码并创建 PR。
