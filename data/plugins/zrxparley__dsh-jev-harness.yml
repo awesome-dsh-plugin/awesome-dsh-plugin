@@ -1,8 +1,8 @@
 url: https://github.com/zrxparley/dsh-jev-harness
 name: zrxparley/dsh-jev-harness
 category: model
-tarball: https://github.com/zrxparley/dsh-jev-harness/releases/download/v1.0.0/zrxparley-dsh-jev-harness-1.0.0.tgz
+tarball: https://github.com/zrxparley/dsh-jev-harness/releases/download/v1.4.0/zrxparley-dsh-jev-harness-1.4.0.tgz
 description:
-  en: 'Tiered LLM harness for DeepSeek Harness: routes decision/quality tasks to Kimi K3.1Pro and routine execution to DeepSeek4.1Flash101 through OpenAI-compatible gateways. Includes tier classification, a second-model quality gate, and connectivity probing. Self-contained HTTP tools, no provider or route configuration needed.'
-  zh: '为 DeepSeek Harness 提供按任务分级的模型调度：决策/高质量任务走 Kimi K3.1Pro，常规执行走 DeepSeek4.1Flash101，均通过 OpenAI 兼容网关。含分层判定、第二模型质量闸门与连通性探测。自包含 HTTP 工具，无需配置 provider 或路由。'
+  en: 'One switch decides who does the work in DeepSeek Harness. OFF steps aside and uses the DSH model gateway; ON sends every instruction to a JEV judge first, which routes judgment tasks to Kimi K3.1Pro and routine execution to DeepSeek4.1Flash101 through OpenAI-compatible gateways. Includes a left-sidebar settings page, a composer switch, harness_call/harness_classify/harness_review/harness_probe, and no user-facing tier choice. Self-contained HTTP tools, no provider or route configuration needed.'
+  zh: '一个开关决定 DSH 会话由谁干活：关 = 插件让位、走 DSH 自身模型网关；开 = 每条指令先交给 JEV 判定器，再由它自动把判断类任务分给 Kimi K3.1Pro、执行类任务分给 DeepSeek4.1Flash101（OpenAI 兼容网关）。含左侧栏设置页、输入框开关、harness_call/harness_classify/harness_review/harness_probe，不向用户暴露分层选择。自包含 HTTP 工具，无需配置 provider 或路由。'
 icon: https://raw.githubusercontent.com/zrxparley/dsh-jev-harness/main/docs/icon-96.png
