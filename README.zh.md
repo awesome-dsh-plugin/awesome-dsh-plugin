@@ -2446,6 +2446,7 @@ dsh plugin --profile web add dshmarket
 - [YuanJiangDev123/dsh-job-monitor](https://github.com/YuanJiangDev123/dsh-job-monitor) — 跨会话的后台任务面板：进度按「任务自报 / 输出解析 / 历史耗时估算」三档显示，可按状态、用途、会话或类型分组，支持实时输出、输出内搜索与本地历史台账。
 - [yuanyiHY/deepseek-media-gallery](https://github.com/yuanyiHY/deepseek-media-gallery) — 侧边栏按钮打开半透明弹窗，浏览、预览、下载和删除生成的图片与视频；设置页可改图片目录、记录目录与下载目录。
 - [yuanyiHY/dsh-rail-equalizer](https://github.com/yuanyiHY/dsh-rail-equalizer) — 轮次导航导轨的系统声音可视化：导轨实时跟随默认播放设备正在渲染的声音律动，提供频谱 / 脉动 / 摆动 / 行波四种运动方式，宿主端用 2048 点 FFT 切出 16 段对数频谱，灵敏度、强度、低频冲击与波速均可实时调节。音频走宿主端 WASAPI 回环采集，因此没有授权弹窗、不用麦克风、不录屏。浏览器半只添加一个属性、一张样式表、若干 CSS 变量和侧栏一行控件，绝不 patch 官方组件；关闭时移除属性、样式表与变量，导轨完全恢复默认样式。仅 Windows。
+- [yuanyuanzhang0815/dsh-quick-prompts](https://github.com/yuanyuanzhang0815/dsh-quick-prompts) — 输入框工具行的快捷提示词：选中一条即插入到光标处并把焦点交回输入框，可直接回车发送。支持就地编辑、新增、带撤销的删除、拖拽排序。
 - [yuanzephyr920-oss/dsh-idle-crt](https://github.com/yuanzephyr920-oss/dsh-idle-crt) — DSH 待机显像管屏保：没有会话在运行、且页面上十分钟（可调）没有鼠标键盘输入时，盖上一块带扫描线与循环反色扫掠的 CRT 板；窗口内点一下或按个键即消失，滚轮只锁滚动，画面随指针轻微视差偏移，逐帧全 GPU 合成。改自 justawebsite/dsh-splash-crt（MIT），把开屏动画改成待机屏保。
 - [yuanzhenqi/dsh-mobile-ui](https://github.com/yuanzhenqi/dsh-mobile-ui) — 为 DSH Web 做成真正的手机壳：会话列表收成抽屉，点会话自动收起且不弹键盘，设置页改为全宽 sheet。
 - [Yue-Lyu123/dsh-as-macOS](https://github.com/Yue-Lyu123/dsh-as-macOS) — 把 DSH 的 Web 界面变成 macOS 风格桌面，并把对话藏到桌面后面：Sonoma 壁纸、菜单栏、可放大的程序坞、F4 启动台、⌘Space 聚焦搜索、控制中心、时钟/日历小组件、F3 调度中心，以及一颗能把原生对话浮出来的桌面悬浮球。访达、终端（/bin/bash 会话）、设置随插件自带；浏览器、代码、Office、笔记四个窗口由另装的配套插件解锁（dsh-ego-browser、dsh-code-workbench、dsh-univer-office、dsh-obsidian-notes），未安装时显示占位窗口；浏览器窗口另会以无头方式启动本机 Chromium（默认在 /usr/bin 下查找，或设置 DSH_MACOS_CHROME）。agent 可通过 /api/macos-desktop/* 路由与页面内 window.__macos 操作整个桌面。
@@ -3063,6 +3064,7 @@ dsh plugin --profile web add dshmarket
 - [ryanyang7899/dsh-workbuddy-pool](https://github.com/ryanyang7899/dsh-workbuddy-pool) — 对接自建 workbuddy2api 面板的侧栏计量：一眼看到号池剩余总积分，点击展开正在被调用的账号、模型、实时生成速度与今日消耗。
 - [Rycbartbad/dsh-key-manager](https://github.com/Rycbartbad/dsh-key-manager) — 在设置 → API 密钥中为每个提供商管理多个 API 密钥：密钥池加备注、一键切换当前使用密钥，切换后下一次模型调用立即生效。
 - [sakanamaru/dsh-minato](https://github.com/sakanamaru/dsh-minato) — 可选的只读桥接插件：把 dsh 的会话与 token 实时统计写成一份 JSON 快照，供独立的 dsh-minato 工具箱读取.
+- [saltfish060/dsh-opendesign-runway](https://github.com/saltfish060/dsh-opendesign-runway) — 输入框旁胶囊加设置页显示 OpenDesign（AMR）额度：Design Plan 的 5 小时与 7 天窗口剩余百分比、精确数额、重置时间，两个窗口都给速率推算；另有钱包余额、今日 token、套餐周期结束日，以及最近最多 20 条调用记录。设置页可选胶囊显示哪个窗口、要不要显示圆环或圆点（两者都关时胶囊隐藏），并可选 1 到 10 分钟的刷新间隔。读数走本机 controlKey，或在你登录后从临时 Chrome 窗口取浏览器会话。
 - [SAS-159/dsh-session-recap](https://github.com/SAS-159/dsh-session-recap) — 在输入框下方为当前会话生成复盘卡：轮次、步数、按名称聚合的工具调用、未缓存 / 缓存读 / 缓存写 / 输出四段 Token、缓存命中率，以及按官网 Flash 峰谷挂牌价折算的花费区间；同一张卡可导出为 Markdown 或独立 HTML。
 - [savasana168/dsh-token-usage-heatmap](https://github.com/savasana168/dsh-token-usage-heatmap) — 在 DeepSeek Harness 的网页界面上查看 Token 用量：顶栏小标记点开一块面板，含 26 周每日用量热力图（按当日峰值的四档蓝色）、逐模型的柱状图，以及全部 / 30 天 / 7 天三个区间的 token、会话、调用、活跃天数、高峰时段与最常用模型；全部读本地会话日志，不联网。
 - [SavaStone/dsh-provider-limits](https://github.com/SavaStone/dsh-provider-limits) — 在 DSH 侧栏底部显示供应商额度：OpenRouter 剩余余额，以及 OpenCode Go 滚动 5 小时、每周和每月的配额窗口，以进度条或百分比展示，可切换「剩余 / 已用」；当前供应商不受支持时，还会提供 Creator 模式请求。
@@ -5238,6 +5240,7 @@ dsh plugin --profile web add dshmarket
 - [walksls/dsh-degeneration-kit#auto-checkpoint](https://github.com/walksls/dsh-degeneration-kit/tree/main/auto-checkpoint) — 压缩前先落档：会话接近 token 阈值时先要求模型把项目状态写进工作区的检查点文件，再按需开新会话接力、把旧会话停用。落档必须写于本次压缩周期内，且「这一轮定下的结论」那节正文确实变了——旧档、或用 cat 追加一行刷时间戳的档都过不了关。
 - [wangkohan/dsh-composer-draft-keeper](https://github.com/wangkohan/dsh-composer-draft-keeper) — 把未发送的文本草稿按会话存在本机，切会话、切页面、乃至重启应用之后回来仍在；已经发出或主动清空的草稿不会回灌。
 - [WangLemna/dsh-recycle-bin](https://github.com/WangLemna/dsh-recycle-bin) — 把 DSH 会话删入可恢复的回收站——子会话随其父会话作为一棵树处理，支持批量归档、恢复与彻底删除，只有彻底清除才会真正销毁数据。
+- [WangShuangTong/dsh-chat-history-cleaner](https://github.com/WangShuangTong/dsh-chat-history-cleaner) — 安全清理 DSH 历史会话：按项目筛选、可恢复回收站，并从会话菜单和设置页删除、恢复或彻底清空。
 - [wangxiaocuo/dsh-session-trash](https://github.com/wangxiaocuo/dsh-session-trash) — DeepSeek Harness 的会话回收站：把冷会话从侧边栏移入可恢复的回收站，保留期（默认 30 天）内可恢复，也可以永久删除日志。含隐藏 subagent 子会话的条目按整树移入、整树恢复；移入后 DSH 共享 Toast 提供撤销；设置页支持搜索、排序、勾选批量恢复与清空回收站。
 - [waning-sun/dsh-session-wake](https://github.com/waning-sun/dsh-session-wake) — 按需唤醒 DSH 里的对话并给它派活：可以挑一个或几个会话在 DSH 启动时自动唤醒，为每间会话单独指定 provider、模型与思考强度，还能用 session_task 工具叫醒另一个对话——把内容递过去、等它干完、再把答复原文带回来；另外提供 list_sessions、wake_session 两个工具和一个「会话唤醒」设置页，不依赖 QQ 或任何桥接。三个工具对所有 agent 开放，能触达 profile 里的任意会话；自动唤醒列表默认为空，每次 DSH 启动都会向对应会话投递其开机提示词；session_task 默认最多等待 300 秒。
 - [Wanqiu12345/dsh-session-matrix](https://github.com/Wanqiu12345/dsh-session-matrix) — 最多四栏原生会话并排运行，梳理子代理关系，在上下文自行压缩前把工作交接出去。
