@@ -1,5 +1,5 @@
-url: https://github.com/HiSeax/dsh-superagent/tree/main/packages/dsh-superagent
-name: HiSeax/dsh-superagent#dsh-superagent
+url: https://github.com/HiSeax/dsh-windows-superagent/tree/main/packages/dsh-windows-superagent
+name: HiSeax/dsh-windows-superagent#dsh-windows-superagent
 category: workflow
 description:
   en: 'Route work across agent teammates: policy-gated acceptance, ticket dispatch with an audit ledger, WeChat and Feishu channels, a board panel, and click-to-answer grilling cards.'
