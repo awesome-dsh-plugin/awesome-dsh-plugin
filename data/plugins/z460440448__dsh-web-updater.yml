@@ -1,0 +1,6 @@
+url: https://github.com/z460440448/dsh-web-updater
+name: z460440448/dsh-web-updater
+category: ui
+description:
+  en: Adds an edge tab that checks @deepseek-ai/dsh releases and updates the profile after a confirmation, with backup, verification and automatic rollback; scheduled updates run inside a configurable window.
+  zh: 在页面边缘添加竖直标签，检查 @deepseek-ai/dsh 的新版本，确认后更新 profile（含备份、校验与失败回滚）；定时自动更新可按设置的时段执行。
