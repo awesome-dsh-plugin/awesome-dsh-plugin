@@ -5261,7 +5261,7 @@ dsh plugin --profile web add dshmarket
 - [xuedipiaofei/dsh-session-title-stamp](https://github.com/xuedipiaofei/dsh-session-title-stamp) — 一键重新生成标题：会话头 ↻ 或会话菜单「自动生成标题」都可触发；回答后自动重算，标题固定为「日期 | 分类 | 名称」；设置页可改格式和标题语言；悬停看耗时/成本/token。
 - [xuenann/dsh-workspace-purge](https://github.com/xuenann/dsh-workspace-purge) — 整块删除工作区及其对话：会话日志、投影缓存与工作区登记一次清掉，可选把工作区目录移入回收站（仅 Windows；其它平台直接永久删除）。
 - [XvBenny/dsh-chat-search](https://github.com/XvBenny/dsh-chat-search) — DSH 对话全文搜索：解压持久化的 session.v4.jsonl.zstd 会话日志，匹配用户与助手消息正文，点击结果跳转到对应会话并定位消息（归档会话会先取消归档）。支持 Ctrl+F 唤起。
-- [XWIDE/dsh-xwide-handoff](https://github.com/XWIDE/dsh-xwide-handoff) — 用 /handoff 生成交接卡，让快满的对话在全新零上下文会话里接着跑：标题按会话线自动编号、卡片在侧栏置顶、接近阈值时自动备好新会话，也能按可配置阈值（50-95%，默认 90%）自动执行 /handoff。
+- [XWIDE/dsh-xwide-handoff](https://github.com/XWIDE/dsh-xwide-handoff) — 结构化 /handoff 交接卡让快满的对话接着跑：卡片落盘存档、新会话按会话线自增编号并侧栏置顶。v0.3 新增：原地交接（在当前会话压摘要接着干，上下文占比经零 LLM 毫秒级翻篇当场下降）、免手打自动交接（阈值可配，默认 45%）、手动/自动共享 10 分钟冷却闸根治连环触发、上传积压守卫自愈网关 413。
 - [XXXXXQ-0206/dsh-session-delete](https://github.com/XXXXXQ-0206/dsh-session-delete) — 在原生会话操作菜单中加入「删除」，并提供支持搜索、排序、工作区分组、消息预览、批量恢复与按工作区彻底清除的会话回收站；活跃会话受到保护。
 - [xypang33-sketch/dsh-save-chat](https://github.com/xypang33-sketch/dsh-save-chat) — 把整轮问答（问题 + 完整回答）存成工作区里的纯 Markdown；把值得留的提升进跨项目个人知识库，模型可按需检索。无数据库、零运行时依赖。
 - [Xzl21/dsh-session-files](https://github.com/Xzl21/dsh-session-files) — 按会话展开的文件树：把一次对话碰过的文件按轮次排成从左到右的列，分成交付、过程、输入、临时四道；点击卡片可预览、改分类、写备注；临时文件可一键移入可恢复的回收站，回收站支持整批或单文件恢复、清空整批，以及可选的按天数自动清理。另带 session_files 工具，让 agent 可以自己收拾。
