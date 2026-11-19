@@ -3544,6 +3544,7 @@ dsh plugin --profile web add dshmarket
 - [MicroSharpAnt/dsh-theme-presets](https://github.com/MicroSharpAnt/dsh-theme-presets) — 在 DSH Web GUI 的主题选择中加入 Nord、Dracula、Catppuccin、Tokyo Night、One Dark、Gruvbox、Solarized、GitHub、Everforest、Kanagawa、Rosé Pine 十一套配色预设，与内置的浅色/深色/跟随系统正交叠加。
 - [milkly909-code/dsh-plugin-starlight-protocol](https://github.com/milkly909-code/dsh-plugin-starlight-protocol) — DeepSeek Harness 外观套件：深空动态天体背景、赛博朋克 2077 HUD 主题、开机认证序列，以及无边框窗口下的侧栏折叠按钮。
 - [MilkySnowWay123/dsh-client-ui-skin-tianlight](https://github.com/MilkySnowWay123/dsh-client-ui-skin-tianlight) — DeepSeek Harness 的「天光」主题皮肤：全屏视频/图片壁纸（支持上传、轮播、URL 与 ShaderToy GLSL 代码来源）、可选 WebWallGL 场景壁纸、液态玻璃，以及可拖拽的薄荷猫桌宠（严格权限的 AI 对话、本地对话历史、每个形象的动作包）；Alt+W 打开壁纸面板。
+- [Mingtian-Lii/dsh-wechat-skin](https://github.com/Mingtian-Lii/dsh-wechat-skin) — 微信风格主题：微信绿强调色与发送按钮、绿色用户气泡、浅灰聊天画布、绿色鲸鱼图标、当前会话的「当前」徽标，上下文使用率状态点，以及醒目的上下文压缩卡片。
 - [MiraculousGu/dsh-ui-studio](https://github.com/MiraculousGu/dsh-ui-studio) — 毛玻璃外观工作室：可调透明度与模糊度、图片或视频背景、六套浅色/深色表面配色、正文/代码/终端字号，以及可选的品牌标记。
 - [MistyRain-field/dsh-hu-tao-skin](https://github.com/MistyRain-field/dsh-hu-tao-skin) — 原神胡桃（往生堂）主题皮肤：14 个主题令牌的墨黑、绯红与琥珀金配色，飘落梅花瓣与流光蝴蝶，梅花徽记，以及会跟随侧栏收放的浮动开关。
 - [MitterMeierGithub/dsh-darksoft-theme](https://github.com/MitterMeierGithub/dsh-darksoft-theme) — dsh web 暗色主题插件（移植自 Obsidian things-soft-colorful-headings）：通过 --dsw-alias-label-* token 覆盖实现暖灰调暗文本，配合柔和的彩色 h1-h6 标题，零依赖。
@@ -3674,6 +3675,7 @@ dsh plugin --profile web add dshmarket
 - [Xian-JL/dsh-Kinich-theme](https://github.com/Xian-JL/dsh-Kinich-theme) — 面向 DeepSeek Harness Web 的 Kinich 与 Ajaw 主题，提供三种视觉风格、会话状态反馈、伙伴交互和可配置的动态环境效果。
 - [Xian-JL/dsh-Xiao-theme](https://github.com/Xian-JL/dsh-Xiao-theme) — 面向 DeepSeek Harness Web 与 Desktop 的魈角色主题，提供明暗配色、可切换立绘、可拖动伙伴、会话状态反馈及可选的官方 DeepSeek 余额展示。
 - [xiaobaga281/dsh-ink-splash](https://github.com/xiaobaga281/dsh-ink-splash) — 水墨开屏动画与配套主题：一条墨锋同时描绘 DeepSeek 字标并显影背景山水，提供夜山、宣纸两套皮肤，字标、运笔与画面三轴可独立选择。
+- [xiaojiuop/dsh-wallpaper-studio](https://github.com/xiaojiuop/dsh-wallpaper-studio) — 把上传的图片、视频文件、直链 URL 或 6 套内置渐变铺到整个 DSH 界面背后，支持填充/适应/平铺、壁纸可见度、背景模糊与遮罩暗度；覆盖主色/底色/面板色三类设计令牌（深浅模式各一套），并可分别调整面板、输入框、弹层的透明度。素材只留在本机浏览器（IndexedDB），不上传任何服务器。
 - [xiaotuchu/dsh-theme-eye-care](https://github.com/xiaotuchu/dsh-theme-eye-care) — 三套可切换的低刺激护眼配色（暖纸、豆绿、暖灰），每套都是完整的别名 token 层，含浅色与深色两副面貌。
 - [xiaozhe7772222/dsh-api-key-pool](https://github.com/xiaozhe7772222/dsh-api-key-pool) — 对话模型 API Key 轮换池：自动检测 settings 中的厂商，每个厂商下多 Key 轮询，401/403/429 自动切换，冷却恢复。
 - [xikan0/dsh-outerwilds-theme](https://github.com/xikan0/dsh-outerwilds-theme) — 以《星际拓荒》为主题，提供静态星空、篝火动效、外观设置和内置 Jost 与思源黑体。
@@ -5524,6 +5526,7 @@ dsh plugin --profile web add dshmarket
 - [CDeZT/better-basicfun](https://github.com/CDeZT/better-basicfun) — 原生 DSH 基础插件：注册持久化默认工作区，分页只读查看插件、skills、memory、会话、storage、settings、credentials 与 DSH_HOME 文件，并将 CLIProxyAPI 的模型能力同步到原生 Provider 设置。
 - [CeilCelia/dsh-eli-mode#packages/eli-mode](https://github.com/CeilCelia/dsh-eli-mode/tree/main/packages/eli-mode) — 知识库驱动的 Agent 预设：wiki 长期记忆、网页知识库、管理页、可选界面润色。
 - [Chance722/dsh-inbox](https://github.com/Chance722/dsh-inbox) — dsh 的个人收件箱：输入框的 /inbox 或侧栏面板把链接、图片、文本与账密收进本地仓库，先按本地规则、再由有每日上限的模型分类，可在面板里筛选、搜索与编辑；对话里让助手按需检索取回，账密正文加密落盘，可选 WebDAV 或 S3 远端同步记录与附件字节。目前只在 Windows 实测。
+- [changmingjuebumaimeng3666/dsh-metabolism](https://github.com/changmingjuebumaimeng3666/dsh-metabolism) — 上下文代谢：每次压缩掉的原文都归档到本地，只留一行指针；需要细节时按关键词或日期把原话捞回来。
 - [chaos-miku/dsh-error-atlas](https://github.com/chaos-miku/dsh-error-atlas) — 把 DSH 的运行错误与编程任务复盘渲染成可交互的 GPU 图谱，并把记录下来的教训送回模型上下文。
 - [cheeseRatRat/dsh-benwo](https://github.com/cheeseRatRat/dsh-benwo) — 本我回响之核 —— 给 DSH 的本地优先「人格与记忆」插件。数据永不离开你的磁盘。
 - [cheeseRatRat/dsh-buwang](https://github.com/cheeseRatRat/dsh-buwang) — 不忘 —— 主动记录的私人记忆库，内置可修改的人格，只在你开口时才写、才读；读取时每轮自动注入人格与记忆，纯本机 Markdown 不联网。
@@ -8067,6 +8070,7 @@ dsh plugin --profile web add dshmarket
 - [CAI-MH/dsh-gpt-image](https://github.com/CAI-MH/dsh-gpt-image) — 控制已登录的网页版 ChatGPT 生成图片并下载到本地。
 - [cctv2333/dsh-vidlens](https://github.com/cctv2333/dsh-vidlens) — 按人看片的顺序取样，而不是下载整片：先元数据与章节，再按时间码抽帧看画面、字幕优先转录（平台没有字幕才走本地 ASR）、AudioSet 527 类声音事件标签与高赞评论——21 个工具共用一个磁盘缓存，并带跨进程锁。需要 Python 3.10+、ffmpeg 与 vidlens 包（pip install vidlens-mcp）；缺依赖时回给你的是两种修法，而不是一句 ImportError。
 - [charovo0059/dsh-model-vision](https://github.com/charovo0059/dsh-model-vision) — 补上 DSH「获取可用模型」漏记的视觉能力，让能看图的模型不再被当成纯文本，并在模型名后标出「可看图」。
+- [chddydwd/dsh-eye](https://github.com/chddydwd/dsh-eye) — 给 DeepSeek Harness 装一双「看得见刚才」的眼睛：屏幕帧按内存环保留最近约 45 秒，能倒带「刚才发生了什么」、按格子回取 1:1 原像素；读窗口文字走 Windows 无障碍接口（不是 OCR 猜）；按名字找控件只报坐标、从不代点；隐私打码让所有给出去的图一起挡。仅支持 Windows，全程本机、不上传。
 - [Cheng-cheng9669/dsh-deepseek-vision](https://github.com/Cheng-cheng9669/dsh-deepseek-vision) — 复用 DeepSeek 网页端识图模式给纯文本模型补上看图能力：deepseek_vision 工具调用本地 deepseek-vision-cli 浏览器自动化（手动登录助手、自动开启深度思考、用后自动关窗），把图片描述以文字返回给模型。
 - [chenyth/dsh-image-designer](https://github.com/chenyth/dsh-image-designer) — 神火设计师：连接神火 AI 完成图片设计，支持个人账号 OAuth、素材上传、需求匹配、设计提案、积分报价确认与作品下载。
 - [chenyth/dsh-image-editor](https://github.com/chenyth/dsh-image-editor) — 神火图层编辑器：通过神火 MCP 上传并分离图片，确认积分后生成可编辑图层，在默认浏览器编辑，按需导出并下载 PSD。
