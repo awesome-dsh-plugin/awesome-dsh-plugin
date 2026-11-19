@@ -1,0 +1,7 @@
+url: https://github.com/iamjager416/dsh-pixiv-autodownload
+name: iamjager416/dsh-pixiv-autodownload
+category: usage
+description:
+  en: Downloads new works from the Pixiv artists you choose, skips anything already downloaded, and can push each sync result to QQ.
+  zh: 按你指定的画师增量下载 Pixiv 新作品，下过的自动跳过，每轮同步结果可推送到 QQ。
+icon: https://raw.githubusercontent.com/iamjager416/dsh-pixiv-autodownload/main/assets/icon-180.png
