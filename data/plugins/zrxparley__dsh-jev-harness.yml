@@ -1,8 +1,8 @@
 url: https://github.com/zrxparley/dsh-jev-harness
 name: zrxparley/dsh-jev-harness
 category: model
-tarball: https://github.com/zrxparley/dsh-jev-harness/releases/download/v1.4.0/zrxparley-dsh-jev-harness-1.4.0.tgz
+tarball: https://github.com/zrxparley/dsh-jev-harness/releases/download/v1.5.0/zrxparley-dsh-jev-harness-1.5.0.tgz
 description:
-  en: 'One switch decides who does the work in DeepSeek Harness. OFF steps aside and uses the DSH model gateway; ON sends every instruction to a JEV judge first, which routes judgment tasks to Kimi K3.1Pro and routine execution to DeepSeek4.1Flash101 through OpenAI-compatible gateways. Includes a left-sidebar settings page, a composer switch, harness_call/harness_classify/harness_review/harness_probe, and no user-facing tier choice. Self-contained HTTP tools, no provider or route configuration needed.'
-  zh: '一个开关决定 DSH 会话由谁干活：关 = 插件让位、走 DSH 自身模型网关；开 = 每条指令先交给 JEV 判定器，再由它自动把判断类任务分给 Kimi K3.1Pro、执行类任务分给 DeepSeek4.1Flash101（OpenAI 兼容网关）。含左侧栏设置页、输入框开关、harness_call/harness_classify/harness_review/harness_probe，不向用户暴露分层选择。自包含 HTTP 工具，无需配置 provider 或路由。'
+  en: 'One switch decides who does the work in DeepSeek Harness. OFF steps aside and uses the DSH model gateway; ON sends every instruction to a JEV judge first, which routes judgment tasks to Kimi K3.1Pro and routine execution to DeepSeek4.1Flash101 through OpenAI-compatible gateways. Includes a left-sidebar settings page, a composer switch, and a skill router that asks the same JEV judge which of the 39 mattpocock/skills fits the task and mounts it into the call. Tools: harness_call/harness_classify/harness_review/harness_probe/harness_skill. No user-facing tier choice. Self-contained HTTP tools, no provider or route configuration needed.'
+  zh: '一个开关决定 DSH 会话由谁干活：关 = 插件让位、走 DSH 自身模型网关；开 = 每条指令先交给 JEV 判定器，再由它自动把判断类任务分给 Kimi K3.1Pro、执行类任务分给 DeepSeek4.1Flash101（OpenAI 兼容网关）。含左侧栏设置页、输入框开关，以及技能路由：同一个 JEV 判定器会从 mattpocock/skills 的 39 个技能里挑出最合适的一个挂进调用。工具：harness_call/harness_classify/harness_review/harness_probe/harness_skill。不向用户暴露分层选择。自包含 HTTP 工具，无需配置 provider 或路由。'
 icon: https://raw.githubusercontent.com/zrxparley/dsh-jev-harness/main/docs/icon-96.png
