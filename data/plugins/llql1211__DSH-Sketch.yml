@@ -1,0 +1,6 @@
+url: https://github.com/llql1211/DSH-Sketch
+name: llql1211/DSH-Sketch
+category: tools
+description:
+  en: 'Renders flowcharts, hand-drawn illustrations and teaching diagrams from structured JSON in DSH conversations, plus interactive function plots; tables stay as Markdown.'
+  zh: '在 DSH 对话中根据结构化 JSON 渲染流程图、手绘插画与教学示意图，并提供可交互函数图像；表格使用 Markdown。'
