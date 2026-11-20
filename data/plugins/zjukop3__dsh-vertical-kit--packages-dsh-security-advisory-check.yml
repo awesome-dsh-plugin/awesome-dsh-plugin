@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-security-advisory-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-security-advisory-check'
+category: 'security'
+description:
+  en: 'Security-advisory hygiene: an identifier (CVE or GHSA), a stated severity level, the affected version range, the fixed version, and a mitigation or an explicit "no workaround" — plus the reporting channel and the disclosure date. A "serious issue" in prose is not a severity, and "please upgrade" with no version is not a fix. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '安全公告的检查：漏洞编号（CVE 或 GHSA）、写死的严重程度、受影响版本范围、修复版本、缓解办法（或显式写"暂无可用缓解"），加上报告渠道与披露日期。散文里的"严重"不是等级，只给发布页链接的"请升级"不是修复版本。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'
