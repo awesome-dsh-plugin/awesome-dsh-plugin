@@ -1,0 +1,6 @@
+url: https://github.com/N006Unnamed/dsh-xhs
+name: N006Unnamed/dsh-xhs
+category: tools
+description:
+  en: 'Xiaohongshu (RED) note collector for DeepSeek Harness. Drives a dedicated browser instance through CDP and reads the responses the site itself produces, so it works with the user logged in through the normal browser instead of reproducing the request signing. Searches notes by keyword, opens note detail (body text, images, tags), and reads comments. Exposes five model tools (xhs_search, xhs_note, xhs_draft, xhs_login, xhs_status), provides an xhs Cordis service, and adds a settings panel card for login, search and an optional draft writer that uses the host model to compose a publishable note from search results.'
+  zh: '小红书笔记采集插件。通过 CDP 驱动一个专用浏览器实例，监听网站自身发出的请求响应，因此只需在浏览器里正常登录即可工作，无需复现请求签名。支持按关键词搜索笔记、打开笔记详情（正文、图片、标签）以及读取评论。提供五个模型工具（xhs_search、xhs_note、xhs_draft、xhs_login、xhs_status），通过 xhs 服务供其他插件调用，并在设置面板提供登录、搜索，以及可选地调用宿主模型把搜索结果写成一篇可发布笔记的草稿功能。'
