@@ -1,0 +1,8 @@
+url: https://github.com/hailinsu-create/dsh-factory-cli
+name: hailinsu-create/dsh-factory-cli
+category: model
+icon: https://raw.githubusercontent.com/hailinsu-create/dsh-factory-cli/main/assets/icon-512.png
+tarball: https://github.com/hailinsu-create/dsh-factory-cli/releases/download/v0.1.0/dsh-factory-cli-0.1.0.tgz
+description:
+  en: Runs the Factory Droid CLI as a model provider, so Droid models answer from the session directory using Droid's own file, search and shell tools.
+  zh: 把 Factory Droid CLI 注册为模型提供方，Droid 模型在当前会话目录里回答，并使用 Droid 自带的文件、搜索和终端工具。
