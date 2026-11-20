@@ -3287,6 +3287,7 @@ dsh plugin --profile web add dshmarket
 - [Zenjibad/llmtrim-stats-plugin](https://github.com/Zenjibad/llmtrim-stats-plugin) — 在 DSH 内实时展示 llmtrim 节省统计：设置页金额卡片（已支付、未压缩应付、今日与本周节省）与按模型明细，输入区可配置轮播或静态统计条。
 - [zer0zio-stack/dsh-opencode-go-quota](https://github.com/zer0zio-stack/dsh-opencode-go-quota) — DSH Web 右下角「余额」徽标：展开时读取当前所选提供方，显示 OpenCode Go 计划限额或 DeepSeek 预充值余额，并附本机 token 用量与按定价表估算的消费金额。
 - [zh667/TokenLedger](https://github.com/zh667/TokenLedger) — 侧边栏用量面板：把 Token 归属到实际服务该请求的中转站，站点从已有的 provider 配置中读出，无需额外配置；含今日/本月/累计三窗口、按站点与模型下钻、一年活跃度热力图，以及 New API / Sub2API / DeepSeek 余额。
+- [zhang-astronaut/dsh-ofm-credit-dock](https://github.com/zhang-astronaut/dsh-ofm-credit-dock) — 在 DSH 侧栏底部列出你在 Our Free Model（EAC router）中已登录的每个渠道及其剩余 credit，当前模型所属渠道高亮显示，余额实时刷新。需先安装 dsh-our-free-model 并登录至少一个渠道。
 - [zhang-jiazhi/dsh-stats-panel](https://github.com/zhang-jiazhi/dsh-stats-panel) — DeepSeek Harness Token 用量统计。按渠道区分统计，官方渠道自动显示余额，套餐渠道显示 5 小时/7 天/30 天用量余量，人民币计费估算，含每日图表与模型分布，集成在设置页侧边菜单。
 - [zhangqi423820-ai/dsh-spend-badge](https://github.com/zhangqi423820-ai/dsh-spend-badge) — 在每条回复的用量行后面接上本轮花费，在输入框下方状态栏接上本会话累计花费，按 DeepSeek 官方峰谷价折算。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [zhangyongshuai56-hub/dsh-token-usage](https://github.com/zhangyongshuai56-hub/dsh-token-usage) — DeepSeek Harness 的 Token 用量面板：按模型统计每日消耗，含趋势图、日历热力图与表格视图。
