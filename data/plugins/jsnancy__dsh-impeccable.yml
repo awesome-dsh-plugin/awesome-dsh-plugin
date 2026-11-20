@@ -1,0 +1,6 @@
+url: https://github.com/jsnancy/dsh-impeccable
+name: jsnancy/dsh-impeccable
+category: ui
+description:
+  en: 'Design review desk in the sidebar: scans a project path or URL with the impeccable engine already installed on the machine (62 deterministic rules, no model calls), groups the findings by rule, and turns each of the 24 skill commands into a one-click prompt that copies itself or starts a new conversation. Says which of the skill or engine is missing instead of offering a scan that cannot run.'
+  zh: '侧栏里的设计审校台：调用本机已装的 impeccable 引擎扫描项目路径或网址（62 条确定性规则，不调模型），按规则分组列出问题位置，并把 24 条技能命令变成点一下就复制、或直接开新对话的提示词。技能或引擎缺失时直接说明缺哪个，而不是给一个跑不起来的扫描框。'
