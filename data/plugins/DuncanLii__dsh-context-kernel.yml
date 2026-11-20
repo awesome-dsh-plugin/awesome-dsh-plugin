@@ -1,0 +1,6 @@
+url: https://github.com/DuncanLii/dsh-context-kernel
+name: DuncanLii/dsh-context-kernel
+category: session
+description:
+  en: 'Context management for long agent sessions: projects older history into one structured working-context message, prunes oversized tool results deterministically, and gates task completion on execution evidence rather than the model''s own claims. Ships two tools and defaults to shadow mode (records what it would do, changes nothing).'
+  zh: '面向长会话的上下文管理：把较早历史投影成一条结构化工作上下文消息、对超大工具结果做确定性裁剪、并用执行证据而非模型自述来判定任务能否结束。提供两个工具，默认以影子模式运行（只记录不改变）。'
