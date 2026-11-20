@@ -1,0 +1,6 @@
+url: https://github.com/Oreo2408/dsh-workspace-plugin-manager
+name: Oreo2408/dsh-workspace-plugin-manager
+category: ui
+description:
+  en: "Per-workspace plugin sets: a floating plugin table with folders and a not-added pool, and a prompt to apply a workspace's set when you switch to it."
+  zh: 每个工作区一套插件：浮窗插件表、文件夹与未启用池；切换工作区时提示应用。
