@@ -1,0 +1,6 @@
+url: https://github.com/TardisBooo/tigang-plugin
+name: TardisBooo/tigang-plugin
+category: notify
+description:
+  en: Shows a Kegel break reminder at the end of a DSH headless turn after a successful Git commit or push.
+  zh: DSH headless 回合结束时，若 Git 提交或推送成功，则显示提肛运动提醒。
