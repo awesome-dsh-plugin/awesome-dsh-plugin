@@ -1,0 +1,6 @@
+url: https://github.com/Heroicus/dsh-thread-tools
+name: Heroicus/dsh-thread-tools
+category: session
+description:
+  en: 'Ten thread tools for DeepSeek Harness matching the set Codex exposes: list_threads, list_archived_threads, read_thread, wait_threads, send_message_to_thread, create_thread, fork_thread, set_thread_title, set_thread_archived and delete_thread. A message is delivered through the same Host path a human client uses, so a cold session is resumed and an idle one starts a turn; wait_threads waits on up to eight sessions at once, and turns are read back with harness-injected reminder blocks stripped.'
+  zh: '为 DeepSeek Harness 提供十个与 Codex 对齐的线程工具：list_threads、list_archived_threads、read_thread、wait_threads、send_message_to_thread、create_thread、fork_thread、set_thread_title、set_thread_archived、delete_thread。消息走宿主与人类客户端相同的投递路径，冷会话会自动恢复、空闲会话因此开始新一轮；wait_threads 可同时等待最多八个会话，读取轮次时会剥掉注入的提醒块。'
