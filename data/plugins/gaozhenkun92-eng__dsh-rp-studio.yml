@@ -1,0 +1,6 @@
+url: https://github.com/gaozhenkun92-eng/dsh-rp-studio
+name: gaozhenkun92-eng/dsh-rp-studio
+category: fun
+description:
+  en: "Roleplay console for DeepSeek Harness: character cards, classified worldbooks, an image gallery and per-agent tool switches in the conversation tab bar, with the persona injected through a deployment-level system-prompt section."
+  zh: "DeepSeek Harness 的角色扮演控制台：对话顶栏里的角色卡、分类世界书、图库与逐会话工具开关，人格通过部署层系统提示段注入。"
