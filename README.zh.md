@@ -3089,6 +3089,7 @@ dsh plugin --profile web add dshmarket
 - [pythoner1984/dsh-plugin-openai-quota](https://github.com/pythoner1984/dsh-plugin-openai-quota) — 在 DSH 窗口顶部边缘用一行提示显示 DeepSeek 余额、ChatGPT/Codex 五小时与每周剩余额度及其重置时间、剩余额度重置卡数量与最近到期时间；重置卡那一段是链接，会用浏览器打开 ChatGPT 使用情况页。
 - [qcy-good/turn-cost-footer](https://github.com/qcy-good/turn-cost-footer) — 在 DeepSeek Harness 每条助手回复的页脚、时间之后显示本轮真实花费与今日累计：按会话日志里的用量和本地价目表折算，不调计费接口、不联网、也不额外消耗 token。
 - [QianChang927/dsh-quotaline](https://github.com/QianChang927/dsh-quotaline) — 输入框上方额度条：跟随当前模型显示余额（充值 + 赠金）或 5 小时 / 每周 / 每月用量窗口，覆盖 DeepSeek 账号与 API、Moonshot、Kimi Coding、智谱、GLM Coding；数据取自 DSH 本地凭据，密钥不出 Host。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [qinghuidaqzp/dsh-cache-doctor](https://github.com/qinghuidaqzp/dsh-cache-doctor) — 在右侧栏解释 DeepSeek 提示词缓存为什么没命中：旁观 system-prompt/assemble 和 llm/stream，把每次请求和同一会话的上一次逐段比较，指出第一个变化的地方：系统提示词的哪一段（前后内容并排，标出变了的字）、工具列表、被改写的历史、缓存过期或上下文压缩。显示今日命中率、缓存省下的钱、按 DeepSeek 峰谷价算出的可避免花费、最近的请求和近 7 天统计。
 - [qiyuexue-xiyu/dsh-tool-cost-hint](https://github.com/qiyuexue-xiyu/dsh-tool-cost-hint) — 每轮对话结束后在回复底部追加一行可折叠提示：列出这一轮调用了哪些工具、各几次、每个工具往上下文注入了多少 token（输入加输出），点开可看逐工具明细。
 - [QLNPLUS/dsh-opendesign-quota-card](https://github.com/QLNPLUS/dsh-opendesign-quota-card) — 在 DSH Web 侧栏底部显示 OpenDesign（AMR）套餐额度：每个额度窗口一条已用进度条，点开是仪表盘，还能登录官网控制台，用官方读数替换本机估算。
 - [qwayo/dsh-timespan](https://github.com/qwayo/dsh-timespan) — 记录 DSH 的在线、活跃与任务三种时长，提供日/周/月仪表盘、按工作区与会话的明细，以及供 Agent 查询的只读 `timespan_stats` 工具。
@@ -3784,6 +3785,7 @@ dsh plugin --profile web add dshmarket
 - [aa2246740/dsh-model-fusion](https://github.com/aa2246740/dsh-model-fusion) — 提供由 Lead 规划与审查、Sidekick 执行代码修改的组合模型线路。
 - [aa2246740/dsh-oauth-login](https://github.com/aa2246740/dsh-oauth-login) — 通过 Pi 适配器接入订阅 OAuth 和厂商 Plan API Key 登录，使用独立的 DSH 凭据存储。
 - [aaabrli/dsh-thu-automad](https://github.com/aaabrli/dsh-thu-automad) — 面向 DSH 的清华 MadModel 接入：自动续期校园 token，按网络在校内直连与校外 WebVPN 之间切换，经本地回环转发模型请求并按模型排队。
+- [ACGNnsj/dsh-jev-tools-continued](https://github.com/ACGNnsj/dsh-jev-tools-continued) — 把 Jev 判定模型接进 DeepSeek Harness：精简超长工具输出、筛查抓取页面、推荐技能，另带显式 ask/gate 判定工具与本地累计台账。
 - [AdonisSheldon/dsh-openai-oauth](https://github.com/AdonisSheldon/dsh-openai-oauth) — 通过浏览器 PKCE 或设备码 OAuth 将 ChatGPT 账户接入 DeepSeek Harness 的 Codex 模型，并支持自动刷新令牌以及 Web 或无头登录。
 - [advance-lion/dsh-feishu-subscription](https://github.com/advance-lion/dsh-feishu-subscription) — 通过飞书账号在 DSH 中使用豆包工作的企业订阅模型，支持流式文本、账号切换、用量明细与可选任务归档。
 - [aerince/dsh-models-dev-reasoning](https://github.com/aerince/dsh-models-dev-reasoning) — 为未配置的第三方 DeepSeek Harness 模型添加 models.dev 推理级别支持。
@@ -12375,6 +12377,7 @@ dsh plugin --profile web add dshmarket
 - [tianyingAquila/minecraft-native-mcp](https://github.com/tianyingAquila/minecraft-native-mcp) — 在 Windows x64 上打开浏览器控制台准备 Minecraft Java 环境，通过原生玩家 MCP 工具让 DeepSeek 自主生存，提供空间观察与（需另装扩展的）可选直播挂件。需已安装 Minecraft Java 1.21 系列正式版，并准备余额不少于 ¥1 的官方 DeepSeek API 密钥。
 - [ting-good/dsh-cook-pet](https://github.com/ting-good/dsh-cook-pet) — 桌面宠物「照照」：透明置顶窗悬浮于所有应用之上，镜像 DeepSeek Harness 状态——待机、颠锅、上菜、托腮等你回话，支持点击回应、拖拽、右键调大小，Electron 运行时自动下载。
 - [Tisitan/dsh-live2d-companion](https://github.com/Tisitan/dsh-live2d-companion) — DSH 的 Live2D 桌宠：8 态 AI 状态灯 + 网页挂件 + 置顶透明 Electron 桌宠窗，表情/动作/气泡齐全，换模型自动适配。
+- [tlxqgj/dsh-yy-gamebox](https://github.com/tlxqgj/dsh-yy-gamebox) — 把本机游戏收进 DeepSeek Harness 面板里原生运行：窗口按视口尺寸摆放、不占任务栏、管理员游戏只需确认一次。
 - [TongY1n/ui-muyu](https://github.com/TongY1n/ui-muyu) — 一个赛博木鱼：可拖拽、点击敲击、累积功德的 Web 悬浮小摆件。
 - [tonyous/DSH-AMP-Radio](https://github.com/tonyous/DSH-AMP-Radio) — 可拖动的收音机胶囊，带实时可视化、电台搜索、收藏与自更新检查，面向 DSH Web。
 - [Big Fat Fish Girl](https://github.com/troodon/dsh-big-fat-fish-girl) — macOS 桌面动画伴宠：跟随各个会话的工作进展，对审批与报错做出反应，长时间运行时吃点零食，空闲时打盹。需另装一个独立的桌面壳应用。
