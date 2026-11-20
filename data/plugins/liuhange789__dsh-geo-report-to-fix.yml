@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/dsh-geo-report-to-fix
+name: liuhange789/dsh-geo-report-to-fix
+category: tools
+description:
+  en: 'GEO audit to fix pack: fetch one URL with the platform fetch (10s timeout, redirects, charset-aware decoding, 2MB cap) and score 11 weighted checks — title length, meta description, single H1 plus H2s, Organization and WebSite JSON-LD, `/llms.txt`, canonical, `<html lang>`, image alt coverage, page-level structured data, robots indexability — then write the two files the site is missing: `llms.txt` built from the page outline and `jsonld.html` with ready-to-paste Organization/WebSite JSON-LD, alongside an HTML audit report with the fix list ordered by weight. No browser, no third-party dependency.'
+  zh: "GEO 体检与自动修复：输入一个网址，用原生 fetch 抓取（10 秒超时、跟随重定向、按 content-type 解码、2MB 截断）并做 11 项加权体检——title 长度、meta description、唯一 H1 与 H2、Organization/WebSite JSON-LD、根目录 `/llms.txt`、canonical、`<html lang>`、图片 alt 覆盖率、页面级结构化数据、robots 是否允许索引——然后直接产出站点缺的两个文件：由页面大纲生成的 `llms.txt` 与可直接粘贴的 `jsonld.html`，另附按权重排序的 HTML 体检报告。不启浏览器、零第三方依赖。"

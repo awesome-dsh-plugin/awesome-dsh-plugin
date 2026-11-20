@@ -1,0 +1,7 @@
+url: https://github.com/YinkaiYu/chat-in-dsh
+name: YinkaiYu/chat-in-dsh
+category: ui
+description:
+  en: 'Embeds the official DeepSeek web chat (chat-demo) as a DSH sidebar panel and reuses the DSH DeepSeek account, so no API key is needed. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 侧栏面板中嵌入官方 DeepSeek 网页版聊天（chat-demo），复用 DSH 的 DeepSeek 账号，无需填写 API Key。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/YinkaiYu/chat-in-dsh/main/assets/icon-180.png

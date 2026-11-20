@@ -1,0 +1,6 @@
+url: https://github.com/lioez/dsh-ops-console
+name: lioez/dsh-ops-console
+category: remote
+description:
+  en: 'Read-only operations console for DSH: GitHub and Cloudflare connection status, SSH server health, and website checks from the local machine plus mainland-China and overseas Globalping probes.'
+  zh: 'DSH 只读运维台：查看 GitHub、Cloudflare 与 SSH 服务器状态，并从本机及 Globalping 中国大陆/海外节点检测网站连通性、延迟与 TLS。'

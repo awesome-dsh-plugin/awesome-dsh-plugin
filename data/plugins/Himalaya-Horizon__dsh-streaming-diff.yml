@@ -1,0 +1,6 @@
+url: https://github.com/Himalaya-Horizon/dsh-streaming-diff
+name: Himalaya-Horizon/dsh-streaming-diff
+category: ui
+description:
+  en: Replays the diff of the edit that just landed in a right-sidebar tab, revealing it line by line behind a moving scan line, with a second tab that lists every file the last round changed. What is replayed is the finished edit, not live model output. Unified or side-by-side layout, wrapping and copying the diff text.
+  zh: 在右侧栏标签页里把刚落地的编辑逐行回放，扫描线经过处才显示改动；另一页列出最近一轮改过的全部文件。回放的是已完成的编辑，不是模型的实时输出。支持单栏或左右对比、自动换行与复制 diff 文本。

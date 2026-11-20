@@ -1,0 +1,6 @@
+url: https://github.com/LinYonghang/dsh-page-images/tree/main/packages/dsh-pdf-pages
+name: LinYonghang/dsh-page-images#dsh-pdf-pages
+category: docs
+description:
+  en: Renders a PDF attached to a message into one PNG per page and posts the pages back as a conversation message; a pdf_pages tool renders explicit page ranges at a chosen DPI.
+  zh: 把消息附件里的 PDF 逐页渲染成 PNG 并发回对话；pdf_pages 工具可按页码与 DPI 指定取图。

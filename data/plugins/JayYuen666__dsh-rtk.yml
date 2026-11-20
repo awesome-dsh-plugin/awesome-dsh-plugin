@@ -1,0 +1,6 @@
+url: https://github.com/JayYuen666/dsh-rtk
+name: JayYuen666/dsh-rtk
+category: tools
+description:
+  en: 'Compresses shell output before the model sees it via the local `rtk` CLI: the master switch follows rtk readiness unless set, `prefix` shadows `bash` per agent and asks `rtk rewrite` for an equivalent command, and the opt-in `pipe` form filters a finished result through `rtk pipe`; compound commands are rewritten segment by segment, small or low-gain output passes through, and a guard refuses an empty result, success claimed over failures, a dropped commit hash and `+N more` folded listings, with stderr and the exit marker reattached; every failure falls back to the original command and output, and a settings card reports command counts, saved tokens and a per-filter chart via the official Typert Remote namespace. Requires `rtk` 1.0+ on `PATH`; without it the plugin loads and compresses nothing.'
+  zh: '在工具输出进入模型之前，经本机 `rtk` CLI 压缩 shell 输出：母开关未显式设置时跟随 rtk 可用性，`prefix` 形态按 agent 遮蔽 `bash` 并向 `rtk rewrite` 要等价命令，需显式开启的 `pipe` 形态在命令跑完后用 `rtk pipe` 过滤结果；复合命令逐段改写，过小或省得太少的输出原样放行，守卫拒绝空结果、原文有失败却宣称成功、丢了 commit hash、条目折进 `+N more` 标记，而 stderr 与退出标记按原样回填；任何失败都回退到原命令与原输出；设置卡通过官方 Typert Remote 命名空间给出调用数、节省 token 与按过滤器的图表。需要 `PATH` 上有 `rtk` 1.0+；缺失时插件照常装载、不压缩任何输出。'

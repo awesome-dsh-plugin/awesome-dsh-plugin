@@ -1,0 +1,6 @@
+url: https://github.com/topmindspace/dsh-super-kanban
+name: topmindspace/dsh-super-kanban
+category: workflow
+description:
+  en: 'AI project board for DeepSeek Harness: turns sessions into tasks, tracking progress, blockers, acceptance criteria, and deliverables across full-page, sidebar, and floating views. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '面向 DeepSeek Harness 的 AI 任务与项目看板：从多条会话提炼任务卡并跟踪进展、阻塞、验收条件与交付物，支持全局、右侧和悬浮三种形态以及基于 DSH 模型的快聊。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

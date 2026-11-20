@@ -1,0 +1,6 @@
+url: https://github.com/chen1pengvincent/dsh-model-sync-plugin
+name: chen1pengvincent/dsh-model-sync-plugin
+category: model
+description:
+  en: Discovers the model providers actually configured in DSH, surfaces unread catalog changes from eight official platforms, and applies only the selection you confirm, with a version check and a pre-write backup.
+  zh: 发现 DSH 实际配置的模型供应商，显示八家官方平台的目录未读变化，只应用你确认的勾选结果，并在写入前做版本校验与备份。

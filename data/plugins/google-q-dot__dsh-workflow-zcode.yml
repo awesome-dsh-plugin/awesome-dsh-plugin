@@ -1,0 +1,6 @@
+url: https://github.com/google-q-dot/dsh-workflow-zcode
+name: google-q-dot/dsh-workflow-zcode
+category: workflow
+description:
+  en: 'Runs ZCode .dwf.ts dynamic workflows in DeepSeek Harness with persistent named subagents, sandboxed workspace helpers, a resumable SQLite run journal, and a ZCode-style sidebar panel for live traces, subagents, artifacts, configuration and resume.'
+  zh: '在 DeepSeek Harness 中运行 ZCode .dwf.ts 动态工作流：可持续对话的具名子代理、沙箱工作区能力、可续跑的 SQLite 运行日志，以及 ZCode 风格的右侧栏面板（实时轨迹、子代理、产物、配置与续跑）。'

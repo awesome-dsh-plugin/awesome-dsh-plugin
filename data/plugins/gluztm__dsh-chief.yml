@@ -1,0 +1,8 @@
+url: https://github.com/gluztm/dsh-chief
+name: gluztm/dsh-chief
+category: workflow
+description:
+  en: 'Let AI manage AI and take the day off. It minds the flow itself, stops a runaway before it costs you, keeps working while you are away, and asks before touching your workspace.'
+  zh: 'AI 管 AI，你当甩手掌柜 —— 它自己盯流程，跑崩了先拦住。不用守着屏幕，越权改工作区会先问你。'
+icon: https://raw.githubusercontent.com/gluztm/dsh-chief/main/assets/icon-256.png
+tarball: https://github.com/gluztm/dsh-chief/releases/download/v1.4.0/dsh-chief-1.4.0.tgz

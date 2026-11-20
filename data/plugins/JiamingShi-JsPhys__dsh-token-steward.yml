@@ -1,0 +1,6 @@
+url: https://github.com/JiamingShi-JsPhys/dsh-token-steward
+name: JiamingShi-JsPhys/dsh-token-steward
+category: model
+description:
+  en: 'Local OpenAI-compatible gateway that pools several upstreams behind one base URL and routes each request by task profile: hard filters drop models that lack a capability tag, cannot fit the context, or were switched off, then a scorer ranks the rest and an ordered fallback chain takes over. Handles 429 cooling, 5xx breakers, 401 delisting and context-overflow re-routing inside a single client request, caches replayable requests locally by SHA-256, and keeps a per-route token and cost ledger. Vendors, keys and prices are edited in a settings page or by the agent through its manage tool and skill.'
+  zh: '本机 OpenAI 兼容网关：把多个上游池化到同一个 baseURL，按任务属性选路——硬过滤先淘汰缺能力标签、窗口放不下、已被下线的型号，打分器再在剩下里排序，首个失败时按降级链顶上。429 冷却、5xx 熔断、401 下线、上下文超限换大窗口都在一次客户端请求内完成；可回放的请求按 SHA-256 在本地缓存；每次调用按路由维度记录 token 与费用。厂家、密钥与价目在设置页维护，也可以让 Agent 通过管理工具和同名技能改。'

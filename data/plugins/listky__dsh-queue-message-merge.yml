@@ -1,0 +1,6 @@
+url: https://github.com/listky/dsh-queue-message-merge
+name: listky/dsh-queue-message-merge
+category: session
+description:
+  en: "Merges plain-text messages from the current DSH session's ordinary queue into one queued message using a semicolon, without submitting it."
+  zh: "将当前 DSH 会话普通队列中的纯文本消息用英文分号（;）合并为一条排队消息，不会提交发送。"

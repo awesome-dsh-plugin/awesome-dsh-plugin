@@ -1,0 +1,6 @@
+url: https://github.com/ityyq777/dsh-workbench/tree/main/packages/connector
+name: ityyq777/dsh-workbench#connector
+category: tools
+description:
+  en: 'Content connector for DSH: define RSS or webhook sources, sync items into the workbench, keep credentials local and review per-source run logs.'
+  zh: 'DSH 连接器：定义 RSS/Webhook 来源并同步条目进工作台，凭据留在本机，按来源查看运行记录。'

@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-env-example-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-env-example-check'
+category: 'tools'
+description:
+  en: 'Env example hygiene: every key carries a placeholder rather than a real value, no committed credential, no duplicate key, and the file says what each key is for. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '环境变量示例文件的检查：每个键只放占位符、没有真凭据顺手提交、没有重复键静默覆盖、有注释说明用途——认的占位符形态写在 README 里。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

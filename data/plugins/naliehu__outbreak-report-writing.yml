@@ -1,0 +1,6 @@
+url: https://github.com/naliehu/outbreak-report-writing
+name: naliehu/outbreak-report-writing
+category: docs
+description:
+  en: 'Report generator for Chinese CDC field epidemiology: turns an incomplete event YAML or case line-list CSV into a first, progress, final, closure or single-case report as Markdown, Word and PDF, marks missing fields as P0/P1/P2 with deadlines, bins the epidemic curve by the disease''s incubation period, and writes a raw and a de-identified version in one run.'
+  zh: '传染病现场流行病学调查报告（流调）生成：把不完整的事件 YAML 或个案 CSV 生成初次、进程、结案、结案申请单或单例报告，输出 Markdown、Word、PDF；缺项按 P0/P1/P2 标注并给时限，流行曲线按病种潜伏期自动分箱，一次同时产出未脱敏与脱敏两版。'

@@ -1,0 +1,6 @@
+url: https://github.com/stallenlu/dsh-huobao-drama
+name: stallenlu/dsh-huobao-drama
+category: ui
+description:
+  en: 'A DSH sidebar panel that embeds the Huobao Drama short-video studio Web UI in an iframe, plus 19 huobao_* bridge tools for the local backend (health, drama and model CRUD, generation tasks, config and media APIs).'
+  zh: 'DSH 侧栏面板，将「火宝短剧」短视频创作工作台 Web UI 以 iframe 嵌入；另提供 19 个 huobao_* 桥接工具，对接本地后端（健康检查、短剧与模型增删改查、生成任务、配置与媒体接口）。'

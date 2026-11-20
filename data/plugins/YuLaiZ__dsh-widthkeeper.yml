@@ -1,0 +1,7 @@
+url: https://github.com/YuLaiZ/dsh-widthkeeper
+name: YuLaiZ/dsh-widthkeeper
+category: ui
+description:
+  en: 'Set a fixed width for the main conversation in DeepSeek Harness on web and desktop using a slider or an exact pixel value, then hide the controls while keeping your width setting.'
+  zh: '在 DeepSeek Harness 网页版和桌面版中，用滑杆或精确像素值固定主会话正文宽度，设好后可隐藏控件并保留宽度设置。'
+icon: https://raw.githubusercontent.com/YuLaiZ/dsh-widthkeeper/main/icon.png

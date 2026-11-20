@@ -1,0 +1,6 @@
+url: https://github.com/xiao-hans/dsh-rtk
+name: xiao-hans/dsh-rtk
+category: tools
+description:
+  en: 'Rewrites DSH shell tool commands through `rtk rewrite` on tools/pre-execute, exposes `rtk` and `rtk_stats` tools, and compresses their results through `rtk pipe`.'
+  zh: '在 tools/pre-execute 阶段经 `rtk rewrite` 改写 DSH 的 shell 工具命令，提供 `rtk` 与 `rtk_stats` 工具，并用 `rtk pipe` 压缩结果。'

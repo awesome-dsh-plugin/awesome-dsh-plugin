@@ -1,0 +1,7 @@
+url: https://github.com/github798383392/dsh-money-board
+name: github798383392/dsh-money-board
+category: usage
+description:
+  en: 'Session cost board for DeepSeek Harness: reads save-token''s token counters and prices them with the official DeepSeek table, showing session spend, compression savings and the peak/off-peak delta above the composer.'
+  zh: '给 DeepSeek Harness 用的会话花费看板：读取 save-token 的 token 统计，按官方价表折成金额，在输入框上方显示本次会话花费、压缩省下的钱与错峰差价。'
+icon: https://raw.githubusercontent.com/github798383392/dsh-money-board/main/icons/dsh-money-board-128.png

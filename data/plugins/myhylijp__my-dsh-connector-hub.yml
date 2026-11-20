@@ -1,0 +1,7 @@
+url: https://github.com/myhylijp/my-dsh-connector-hub
+name: myhylijp/my-dsh-connector-hub
+category: tools
+description:
+  en: 'Connectors panel: list, add, edit and delete the MCP (Streamable HTTP or stdio) and REST services of a deployment, with a connection test that lists the tools an MCP server exposes.'
+  zh: '连接器面板：列出并可新增、编辑、删除本部署的 MCP（流式 HTTP 或 stdio）与 REST 服务；MCP 连接器可测试连接并读出工具清单。'
+icon: https://raw.githubusercontent.com/myhylijp/my-dsh-connector-hub/main/assets/icon-180.png

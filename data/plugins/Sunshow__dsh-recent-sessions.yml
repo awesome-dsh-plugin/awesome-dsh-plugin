@@ -1,0 +1,7 @@
+url: https://github.com/Sunshow/dsh-recent-sessions
+name: Sunshow/dsh-recent-sessions
+category: session
+description:
+  en: 'Adds a Recent sessions row above Settings in the DSH sidebar: a sheet searchable by title, workspace, session ID or state lists sessions from every workspace by last activity, with subagent sessions folded under their main session, hidden, or listed separately, a 1/7/30-day range, and yellow/green dots on the entry row for sessions waiting on you or finished unopened. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在 DSH 侧栏「设置」上方加一行「最近会话」：浮层可按标题、工作区、Session ID 或状态搜索，按最后活动时间列出各工作区的会话；子代理会话可折叠进主会话、隐藏或单独列出，并可选 1/7/30 天范围；入口行用黄点/绿点提示有待确认或已完成未打开的会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Sunshow/dsh-recent-sessions/main/assets/icon-180.png

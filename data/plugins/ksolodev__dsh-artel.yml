@@ -1,0 +1,7 @@
+url: https://github.com/ksolodev/dsh-artel
+name: ksolodev/dsh-artel
+category: dev
+tarball: https://github.com/ksolodev/dsh-artel/releases/latest/download/dsh-artel.tgz
+description:
+  en: 'Runs a development task in an isolated copy of the project: Solo runs one agent, Swarm runs three agents in the same copy that message each other via send_message/list_agents, and Conductor adds a lead that hands out the shares, answers stuck agents and accepts the work as a whole (up to two rework rounds); the resulting diff is shown per file and only the files you approve are applied. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在项目的隔离副本里执行开发任务：Solo 模式一个 agent 独立完成，Swarm 模式三个 agent 在同一副本里通过 send_message/list_agents 互相通信，Conductor 模式增加一个指挥，负责分配份额、回答卡住的 agent 并整体验收成果（最多两轮返工）；结果按文件展示 diff，只应用你批准的文件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

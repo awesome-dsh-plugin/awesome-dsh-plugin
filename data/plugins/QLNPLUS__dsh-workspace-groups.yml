@@ -1,0 +1,6 @@
+url: https://github.com/QLNPLUS/dsh-workspace-groups
+name: QLNPLUS/dsh-workspace-groups
+category: ui
+description:
+  en: 'Turns the sidebar workspace list into a three-level tree — groups holding projects holding conversations — with drag-and-drop regrouping and reordering, per-group name plus 10 preset colours and 20 preset icons chosen in one dialog, pin and archive, fold state kept for every group and project across restarts, and search that matches group names, project names and conversation titles.'
+  zh: '把侧栏的工作区列表变成三层树：分组 → 项目 → 对话。项目可拖进拖出分组、分组可拖动排序；分组可改名，并在同一个对话框里选 10 个预设色和 20 个预设图标；支持置顶与归档；每个分组和项目的折叠状态重启后保持；搜索同时匹配分组名、项目名与对话标题。'

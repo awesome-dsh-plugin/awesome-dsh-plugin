@@ -1,0 +1,7 @@
+url: https://github.com/yggizz/dsh-plugins/tree/main/packages/dsh-plugin-suite
+name: yggizz/dsh-plugins#dsh-plugin-suite
+category: ui
+description:
+  en: 'One bundle that adds six independent features plus a Settings page that switches each of them: copy a file from the conversation right-click menu, a light/dark button, per-turn spend, hiding the branch action, remembering which sidebar panels you unpinned, and opening the right sidebar by default. Each feature is mounted on its own runtime fiber, so a switch is a real uninstall rather than a hidden element — turning one off releases the menu entries, listeners and HTTP routes it registered, with no reload. The switch document lives in the Host profile directory and is served over a loopback-only route; the Host half answers only local requests. It ships its own code and its own settings surface rather than only depending on other plugins. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '一个包加六个独立功能，并自带一个逐项开关的设置页：对话里右键复制文件、深浅色切换按钮、每轮花费、隐藏「分支到新会话」、记住你取消固定的侧栏面板、右侧栏默认展开。每个功能挂在自己的运行时 fiber 上，所以开关是真正的卸载而不是把元素藏起来——关掉一个会释放它注册的菜单项、监听与 HTTP 路由，不需要刷新。开关文档存在 Host 的 profile 目录里，通过只应答本机回环的路由读写。它自带代码与设置界面，不只是依赖别的插件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/yggizz/dsh-plugins/main/packages/dsh-plugin-suite/assets/icon-180.png

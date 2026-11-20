@@ -1,0 +1,6 @@
+url: https://github.com/zhongdh7/dsh-pin-workspaces
+name: zhongdh7/dsh-pin-workspaces
+category: ui
+description:
+  en: 'Pins whole workspaces from the sidebar right-click menu: pinned workspaces move to the top in pin order, their sidebar rows take the theme accent color, and a Pinned workspaces page in Settings lists them so any one can be unpinned. Pins are persisted and re-applied when DSH starts. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在侧栏工作区上右键即可置顶整个工作区：置顶项按最近置顶排在最前，行标题使用主题强调色，设置里新增「工作区置顶」页可逐条取消；重载或重启后自动恢复并重排。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

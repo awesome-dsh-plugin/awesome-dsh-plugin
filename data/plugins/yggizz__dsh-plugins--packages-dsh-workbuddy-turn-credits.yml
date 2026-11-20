@@ -1,0 +1,7 @@
+url: https://github.com/yggizz/dsh-plugins/tree/main/packages/dsh-workbuddy-turn-credits
+name: yggizz/dsh-plugins#dsh-workbuddy-turn-credits
+category: usage
+description:
+  en: 'Shows what each completed turn actually cost, on that reply''s action row: WorkBuddy sessions show credits, sessions on the official DeepSeek routes (account login or API key) show an amount in CNY. It measures instead of estimating — the matching balance is read at the start and again at the end of every turn, and the difference is that turn''s charge — so each turn costs two read-only balance queries (no credits spent) plus about a second of settle time before the number appears. A switched account, overlapping requests, or an unsettled balance shows an em dash rather than a guessed figure, and a session that uses none of these routes shows no row at all. It reads the DeepSeek balance endpoint and the WorkBuddy credits route; the Host side answers only loopback requests. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在每轮回复的动作行里显示这一轮实际花了多少：走 WorkBuddy 的会话显示 credits，走 DeepSeek 官方线路（账号登录或 API Key）的会话显示人民币金额。它是测量而不是估算——每轮开始与结束时各读一次对应余额，差值就是这一轮的扣费——因此每轮多两次只读余额查询（不消耗额度），并在结束时多等约 1 秒让上游结算。换号、并发请求或余额尚未结算时显示破折号而不是编造数字；不使用这几条线路的会话不显示这一行。它会读取 DeepSeek 余额接口与 WorkBuddy 的 credits 路由，Host 侧只响应本机回环请求。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/yggizz/dsh-plugins/main/packages/dsh-workbuddy-turn-credits/assets/icon-180.png

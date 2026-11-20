@@ -1,0 +1,6 @@
+url: https://github.com/Luoqiaocong/dsh-answer-style
+name: Luoqiaocong/dsh-answer-style
+category: ui
+description:
+  en: 'Restyles only the model answers in the DSH Web UI: font family, body and heading weight, and a color for bold runs, with a one-click reset. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '只给 DSH 的模型回答换字体、调正文与标题字重、给加粗片段上色，随时一键恢复默认。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

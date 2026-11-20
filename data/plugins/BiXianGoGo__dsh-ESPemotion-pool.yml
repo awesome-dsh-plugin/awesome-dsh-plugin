@@ -1,0 +1,7 @@
+url: https://github.com/BiXianGoGo/dsh-ESPemotion-pool
+name: BiXianGoGo/dsh-ESPemotion-pool
+category: identity
+description:
+  en: "Adds a three-axis (E/S/P) emotional state to DSH conversations: each turn is split into baseline, fluctuation, trend and jump, then grouped by shape under names you define."
+  zh: "给 DSH 对话加一套三轴（E/S/P）情绪状态：每轮先分基线、波动、趋势、跳变，再按形状归到你起的名字下。"
+icon: https://raw.githubusercontent.com/BiXianGoGo/dsh-ESPemotion-pool/main/docs/images/card-axes.png

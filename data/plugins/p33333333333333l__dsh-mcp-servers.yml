@@ -1,0 +1,7 @@
+url: https://github.com/p33333333333333l/dsh-mcp-servers
+name: p33333333333333l/dsh-mcp-servers
+category: ui
+description:
+  en: Open the /mcp panel to manage local and remote MCP servers. Import server configurations from JSON in batches, add, edit and remove servers, and see their load status and registered tools.
+  zh: 输入 /mcp 管理本地和远程 MCP 服务器。支持从 JSON 批量导入、新增、编辑和删除服务器，也能查看加载状态和已注册工具。
+icon: https://raw.githubusercontent.com/p33333333333333l/dsh-mcp-servers/master/assets/icon-180.png

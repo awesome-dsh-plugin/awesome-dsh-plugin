@@ -1,0 +1,6 @@
+url: https://github.com/bigbrain-work/shiliu-ai/tree/main/npm/dsh-plugin-shiliu-ai
+name: bigbrain-work/shiliu-ai#dsh-plugin-shiliu-ai
+category: tools
+description:
+  en: Connects Shiliu AI's remote MCP tools for public short-video lookup, transcript extraction, and account balance checks.
+  zh: 将石榴 AI 的远程 MCP 工具接入 DSH，支持公开短视频解析、文案提取和账户余额查询。

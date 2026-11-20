@@ -1,0 +1,6 @@
+url: https://github.com/zrrrrrrr77/dsh-team-switch-place
+name: zrrrrrrr77/dsh-team-switch-place
+category: ui
+description:
+  en: "Puts the Agent Teams switch above the model and reasoning rows in the composer menu, out of mis-tap range. UI-only, no tokens; Tab lands on the reasoning row."
+  zh: "提示词框右下角的模型菜单里，把团队协作开关放到三个选项的最上方，避免误触。零成本，不消耗 token，只改变 UI。「Tab」键按一次依然对应原版的推理等级选择。"

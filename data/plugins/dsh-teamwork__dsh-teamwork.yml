@@ -1,0 +1,7 @@
+url: https://github.com/dsh-teamwork/dsh-teamwork
+name: dsh-teamwork/dsh-teamwork
+category: workflow
+description:
+  en: 'Sync team models, agent presets, and approved plugins into DeepSeek Harness, with team-scoped assistant operations.'
+  zh: '将团队模型、智能体预设和审批后的插件同步到 DeepSeek Harness，并提供绑定团队的助理操作。'
+icon: https://raw.githubusercontent.com/dsh-teamwork/dsh-teamwork/main/assets/readme/icon-256.png

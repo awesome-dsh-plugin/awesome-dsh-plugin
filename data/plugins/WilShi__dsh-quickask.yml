@@ -1,0 +1,6 @@
+url: https://github.com/WilShi/dsh-quickask
+name: WilShi/dsh-quickask
+category: ui
+description:
+  en: 'DeepSeek QuickAsk: a DeepSeek-native floating assistant for Harness with a global hotkey, workspace/session/model/permission controls, session-aware main-window navigation, optional floating ball, and local image attachments.'
+  zh: 'DeepSeek 随手问：DeepSeek 原生风格的 Harness 悬浮助手。支持全局快捷键、工作区/会话/模型/权限控制、跳转到对应主窗口会话、可选悬浮球，以及本地图片选择、拖入和粘贴。'

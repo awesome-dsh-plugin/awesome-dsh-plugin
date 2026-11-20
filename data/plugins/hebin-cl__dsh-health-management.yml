@@ -1,0 +1,8 @@
+url: https://github.com/hebin-cl/dsh-health-management
+name: hebin-cl/dsh-health-management
+category: tools
+description:
+  en: 'Family health workspace for DeepSeek Harness: record vitals, labs and body composition for up to 8 family members, track metabolic goals against reference ranges and target gaps plus a 12-week lean-muscle season with a weekly ledger, keep a health archive of trends, photos, condition tags and medical documents, and browse a Hangzhou Yuhang venue pilot. Records only; no diagnosis, treatment or medication advice.'
+  zh: 'DeepSeek Harness 的家庭健康工作台：为最多 8 位家庭成员记录体征、化验与体成分，按参考区间与目标差距跟踪代谢管理目标，12 周薄肌赛季含周对账，归档趋势、照片、疾病标签与病历，并内置杭州余杭区场馆试点。仅做记录，不提供诊断、治疗或用药建议。'
+icon: https://raw.githubusercontent.com/hebin-cl/dsh-health-management/main/assets/icon-180.png
+tarball: https://github.com/hebin-cl/dsh-health-management/releases/latest/download/dsh-health-management.tgz

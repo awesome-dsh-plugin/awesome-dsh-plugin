@@ -1,0 +1,6 @@
+url: https://github.com/zhengjy273/dsh-subagent-governor
+name: zhengjy273/dsh-subagent-governor
+category: session
+description:
+  en: Caps a session's subagent count, including finished children, asks or denies when the cap is reached, and reuses a similar finished child instead of spawning a new one.
+  zh: 限制会话内子智能体总量（存活 + 已运行结束），达上限时询问或拒绝，并在任务相似时复用旧子智能体。

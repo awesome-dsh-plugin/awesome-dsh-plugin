@@ -1,0 +1,6 @@
+url: https://github.com/imcaibaicai/dsh-zh-language-policy
+name: imcaibaicai/dsh-zh-language-policy
+category: agi
+description:
+  en: 'Re-anchors two contracts at the very top of the system prompt before every model step: English chain-of-thought with Simplified-Chinese user-facing prose, and final summaries that carry every fact the user saw.'
+  zh: '在每一步请求前把两条契约重新钉到系统提示最顶部：内部推理用英文、面向用户的文字用简体中文；最终总结必须自包含、包含用户在过程中看到过的所有关键信息。'

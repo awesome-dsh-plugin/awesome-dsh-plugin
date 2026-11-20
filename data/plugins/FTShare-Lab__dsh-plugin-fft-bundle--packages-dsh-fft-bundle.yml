@@ -1,0 +1,6 @@
+url: https://github.com/FTShare-Lab/dsh-plugin-fft-bundle/tree/dev/packages/dsh-fft-bundle
+name: FTShare-Lab/dsh-plugin-fft-bundle#packages/dsh-fft-bundle
+category: tools
+description:
+  en: 'Financial workbench for DeepSeek Harness (DSH): turns new sessions into a finance-mode assistant with FTShare China stock market data, quotes and financial statements, Kline (K-line) candlestick charts with technical indicators, inline plotting, and a paper trading simulator for A-share stocks and commodity futures.'
+  zh: '面向 DeepSeek Harness（DSH）的金融工作台：新会话默认进入金融模式，带 FTShare 股票行情、报价与财报数据，K线图表、蜡烛图与技术指标，内联出图，以及 A股/商品期货模拟交易（模拟盘）。'

@@ -1,0 +1,8 @@
+url: https://github.com/markthc/dsh-caidazi-boards
+name: markthc/dsh-caidazi-boards
+category: tools
+description:
+  en: Investment research boards for memory, AI infrastructure, PCB/CCL and US data-center
+    policy, with Caidazi MCP data, Yahoo price charts and versioned research snapshots.
+  zh: 投资研究看板，覆盖存储、AI基建、PCB/CCL及美国数据中心政策，结合财搭子MCP数据、Yahoo行情图表和版本化研究快照。
+tarball: https://github.com/markthc/dsh-caidazi-boards/releases/download/v0.3.2/caidazi-dsh-boards-0.3.2.tgz

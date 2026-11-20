@@ -1,0 +1,7 @@
+url: https://github.com/Kapozux/dsh-xiaobenben
+name: Kapozux/dsh-xiaobenben
+category: fun
+description:
+  en: 'A whale-girl desktop pet in the corner of DSH Web: click her and she recalls one real thing you and your agents did, quoting your own words; lines come from local templates, or from your own configured model if you opt in. Also adds an agent year-in-review page.'
+  zh: 住在 DSH Web 右下角的鲸鱼娘桌宠：点她一下，她翻出一件你和 agent 一起干过的真事，带你的原话；台词默认来自本机模板，你同意后可以用自己配置的模型来写。另带一个 agent 年度回顾页。
+icon: https://raw.githubusercontent.com/Kapozux/dsh-xiaobenben/main/assets/xiaobenben/head.png

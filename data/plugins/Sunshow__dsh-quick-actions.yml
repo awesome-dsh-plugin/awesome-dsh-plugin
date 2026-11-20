@@ -1,0 +1,7 @@
+url: https://github.com/Sunshow/dsh-quick-actions
+name: Sunshow/dsh-quick-actions
+category: ui
+description:
+  en: 'Keyboard shortcuts that run workspace actions from any screen, pulling or fetching the current workspace, running a custom shell command in it, opening a searchable workspace picker that starts a session in the workspace you pick, and toggling the sidebar, with every binding recorded in a grouped settings page. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在任何界面用快捷键执行工作区操作：在当前工作区拉取或抓取代码、运行自定义 shell 命令、用可搜索的工作区面板在指定工作区开新会话、收起或展开侧栏；所有绑定都在分组设置页里录制。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/Sunshow/dsh-quick-actions/main/assets/icon-180.png

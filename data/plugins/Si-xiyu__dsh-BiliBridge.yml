@@ -1,0 +1,6 @@
+url: https://github.com/Si-xiyu/dsh-BiliBridge
+name: Si-xiyu/dsh-BiliBridge
+category: tools
+description:
+  en: 'Bilibili tools for DeepSeek Harness: 27 tools for account reads, preview-gated writes, and two-stage video evidence (subtitles, danmaku, frames, ASR). Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DeepSeek Harness 的 B 站工具：27 个工具，覆盖账号读取、预览后才写入的操作，以及分两阶段的视频证据（字幕、弹幕、画面、ASR）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -1,0 +1,6 @@
+url: https://github.com/mrr061119/windows-topmost-widget/tree/main/src/plugin
+name: mrr061119/windows-topmost-widget#dsh-widget-status
+category: notify
+description:
+  en: 'Pushes DSH session state (working, done, waiting for your answer) to an always-on-top widget on Windows. The same window can also show download progress from any script.'
+  zh: '把 DSH 会话状态（干活中/已完成/等你选择）推到 Windows 桌面置顶小窗，同一个小窗也能显示任意脚本的下载进度。'

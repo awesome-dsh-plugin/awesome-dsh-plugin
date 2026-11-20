@@ -2,5 +2,6 @@ url: https://github.com/rumengyihua/dsh-chat-editor-plus
 name: rumengyihua/dsh-chat-editor-plus
 category: session
 description:
-  en: 'An edited fork of dsh-chat-editor from WZZNNE/DSH-CyberWorkStation (MIT), with -plus ids so it can be installed alongside the original. Rewrite or delete messages the model reads — text, reasoning blocks and tool results — without replacing the message on the session surface, and branch a session from any turn.'
-  zh: 'WZZNNE/DSH-CyberWorkStation 中 dsh-chat-editor（MIT）的二次开发版，包名/插件 id/slot 均带 -plus，可与原版并存安装。改写或删除模型读到的消息（正文、思考块、工具结果），消息本身仍留在会话表层、seq 不变；并可从任意一轮分叉会话。'
+  en: 'Rewrite or delete what the model remembers: any message the model reads — its text, its reasoning blocks, a tool result — plus clearing a whole turn in one click, while the message keeps its place and seq on the session surface. Reversible: disable the plugin and the original conversation is back. Branch a session from any turn. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '改掉模型已经记住的那句话：改写或删除模型读到的任意一条消息（正文、思考块、工具结果），或一次清空整轮助手输出；消息本身仍留在会话表层、seq 不变。改动可逆——关闭插件，原对话完整回来；也可从任意一轮分叉会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/rumengyihua/dsh-chat-editor-plus/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/Zheqiu2023/dsh-skill-catalog-refresh
+name: Zheqiu2023/dsh-skill-catalog-refresh
+category: ui
+description:
+  en: 'Keeps the slash skill menu of open sessions in sync with the skills installed on disk, so a new skill appears without starting a new conversation.'
+  zh: '让已打开会话的斜杠技能菜单与磁盘上的技能实时同步，新装技能无需新开会话即可出现。'
+icon: https://raw.githubusercontent.com/Zheqiu2023/dsh-skill-catalog-refresh/main/docs/icon.png

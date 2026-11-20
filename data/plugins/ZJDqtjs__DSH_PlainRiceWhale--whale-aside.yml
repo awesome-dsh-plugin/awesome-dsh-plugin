@@ -1,0 +1,6 @@
+url: https://github.com/ZJDqtjs/DSH_PlainRiceWhale/tree/main/whale-aside
+name: ZJDqtjs/DSH_PlainRiceWhale#whale-aside
+category: fun
+description:
+  en: 'Whale-girl persona for DeepSeek Harness: a `whale_aside` tool turns one short inner monologue per new task into a chat bubble, with an optional mood sticker and Edge TTS voice line.'
+  zh: '鲸鱼娘人设插件：`whale_aside` 工具把每个新任务开始时的一句内心独白渲染成聊天气泡，可带情绪贴图，并用 Edge TTS 朗读。'
