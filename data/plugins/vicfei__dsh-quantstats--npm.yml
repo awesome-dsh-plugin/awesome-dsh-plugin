@@ -1,0 +1,6 @@
+url: https://github.com/vicfei/dsh-quantstats
+name: vicfei/dsh-quantstats
+category: tools
+description:
+  en: 'Performance tearsheets for DSH — zero-dependency, and every metric rides with its caliber (all trade statistics are period-based, disclosed in-band). The honesty trio (annualization factor / VaR method / sample-size alerts) is structural in every saved artifact, not a footnote. Ships the upstream vocabulary (Sharpe/Sortino/Calmar/VaR/CVaR/ulcer/tail ratio/payoff/profit factor), inline-SVG tearsheets, benchmark-relative mode — and the family data plane: a dsh-TradingAgents settled ledger becomes the committee scorecard in one command, and any {date, ret} series from family engines tears directly. In a pandas notebook, use quantstats; in a DSH session, use dsh-quantstats. Not investment advice.'
+  zh: 'DSH 的绩效 tearsheet：零依赖，每个指标自带口径（所有交易统计为 period-based，随行披露）。诚实件三则（年化因子/VaR 方法/样本量警报）结构化存在于每个保存的工件里而非脚注。内置上游词表（Sharpe/Sortino/Calmar/VaR/CVaR/ulcer/tail/payoff/profit factor）、内联 SVG tearsheet、基准相对模式——以及家族数据面：dsh-TradingAgents 结算台账一条命令变议院成绩单，家族引擎的任意 {date, ret} 序列直接出表。notebook 里用 quantstats；DSH 会话里用 dsh-quantstats。非投资建议。'
