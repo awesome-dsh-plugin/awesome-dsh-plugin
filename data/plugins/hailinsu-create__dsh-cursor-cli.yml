@@ -1,0 +1,8 @@
+url: https://github.com/hailinsu-create/dsh-cursor-cli
+name: hailinsu-create/dsh-cursor-cli
+category: model
+icon: https://raw.githubusercontent.com/hailinsu-create/dsh-cursor-cli/main/assets/icon-512.png
+tarball: https://github.com/hailinsu-create/dsh-cursor-cli/releases/download/v0.1.0/dsh-cursor-cli-0.1.0.tgz
+description:
+  en: Runs the Cursor Agent CLI as a model provider, so Cursor models answer from the session directory using Cursor's own file, search and shell tools.
+  zh: 把 Cursor Agent CLI 注册为模型提供方，Cursor 模型在当前会话目录里回答，并使用 Cursor 自带的文件、搜索和终端工具。
