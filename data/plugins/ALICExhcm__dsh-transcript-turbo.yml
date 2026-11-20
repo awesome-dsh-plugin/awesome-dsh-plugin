@@ -1,0 +1,6 @@
+url: https://github.com/ALICExhcm/dsh-transcript-turbo
+name: ALICExhcm/dsh-transcript-turbo
+category: ui
+description:
+  en: 'Render acceleration for long, formula-heavy chat transcripts: CSS content-visibility containment plus spinner quieting, with live config switches in the Plugin Manager.'
+  zh: '转录渲染加速：CSS content-visibility 包含 + 加载动画降噪，插件页带实时生效的配置开关。'
