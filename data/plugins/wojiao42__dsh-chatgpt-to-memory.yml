@@ -1,0 +1,6 @@
+url: https://github.com/wojiao42/dsh-chatgpt-to-memory
+name: wojiao42/dsh-chatgpt-to-memory
+category: memory
+description:
+  en: 'Turns your official ChatGPT data export into memory candidates for DSH: scans the export, dedupes against previous imports, writes a distillation dataset and audit report, and hands candidates to dsh-long-term-memory. Never writes memory files, never opens a network connection.'
+  zh: 把 ChatGPT 官方导出变成记忆候选：扫描导出、按历史去重、产出蒸馏数据集与审计报告，交给 dsh-long-term-memory 落库。不写记忆文件、不联网。
