@@ -130,6 +130,7 @@ dsh plugin --profile web add dshmarket
 - [MichengAI/dsh-pua](https://github.com/MichengAI/dsh-pua) — 提供 /pua，在 Agent 失败后促使其换方法，并在宣称完成前核验收据；含 15 种公司风格、角色模式、全局与会话设置，以及可选验收循环（直到验收命令通过、达到迭代上限或用户取消）。
 - [NEINC1/muche-dsh-plugin](https://github.com/NEINC1/muche-dsh-plugin) — 连接小沐的 dsh 插件：和有持续状态的小沐聊天，小沐可调用本机 dsh 执行任务。
 - [nlflora/dsh-empty-turn-guard](https://github.com/nlflora/dsh-empty-turn-guard) — 识别「整轮只有思考、既无正文也无工具调用」的空回合，让同一轮再走一步；纯结构判定，不额外调用模型。
+- [oh-dsh-plugins/dsh-agentdeck](https://github.com/oh-dsh-plugins/dsh-agentdeck) — 提供场景智能体的原生 DSH 委派、显式模型选择、作用域工具和双语管理页面。
 - [oriliz/agent-crop](https://github.com/oriliz/agent-crop) — 给 AI 编码会话计时、催长任务、记工作台账，并提供采集健康度面板，看清时间到底花在哪；同时记录复盘结论，把每条经验回流到 agent 指令、技能或工具。
 - [panando/dsh-pua](https://github.com/panando/dsh-pua) — 基于 @michengai/dsh-pua 的修订版：解除上游「全局总闸」，让入口恒常显示、功能默认关闭并可按会话开关；入口改为下拉菜单（打开 / 关闭 / 选项），选项面板更紧凑。
 - [penghao73551/dsh-prompt-balance](https://github.com/penghao73551/dsh-prompt-balance) — 先按字节与占比量出组装后的系统提示词到底由什么构成——规则、身份、工作区策略、工具描述各占多少，再把操作规程提到规则块之前，让模型先读到「在为难干活」再读到一堆禁令。通过 ~/.dsh/prompt-balance.json 配置；两个钩子、无需构建、无依赖。
@@ -5005,6 +5006,7 @@ dsh plugin --profile web add dshmarket
 - [LeslieWylie/dsh-session-search-pro](https://github.com/LeslieWylie/dsh-session-search-pro) — 通过 harness 自带的 `sessionQuery` 服务搜索、列出、读取历史与当前会话：部署启用了 SQLite FTS5 索引时走索引，未启用时回退到有上限的倒序扫描。
 - [LeslieWylie/dsh-task-relay](https://github.com/LeslieWylie/dsh-task-relay) — 跨会话任务队列与交接摘要：会话与子 agent 在共享的文件队列上投递、认领、完成、取消任务，并留下交接摘要供后续会话查看。
 - [let-mi-think/wechat-agent-router](https://github.com/let-mi-think/wechat-agent-router) — 按群名把每个微信群会话路由到不同的 Agent 预设，不改动 dsh-wechat-assistant 的任何代码。
+- [Lhy220402/traceless](https://github.com/Lhy220402/traceless) — 历史回传不再携带旧回合的思考过程，会话日志完整保留，需要时模型可召回原始思考。
 - [liangmianya/dsh-synapse](https://github.com/liangmianya/dsh-synapse) — DeepSeek Harness 的可视化非线性对话工作区：把会话、追问与分支变成可浏览、可拖拽的对话地图。
 - [lieang-git/dsh-quote-cards](https://github.com/lieang-git/dsh-quote-cards) — 对话摘记：选中文字即可收藏原话并加标签、说明和收藏时间；用可拖动的画廊面板浏览、按对话筛选，一键定位回原文并高亮，回收箱支持批量恢复与永久删除。
 - [lifeopsgo/dsh-lark-session-monitor-plugin](https://github.com/lifeopsgo/dsh-lark-session-monitor-plugin) — 以用户本人身份监听飞书会话，把新消息作为 prompt 投递到指定的 DeepSeek Harness 会话：每个监听支持发送者过滤、@机器人提及与关键词黑白名单，可自动创建并固定目标会话，游标式轮询在投递失败后会重读消息。
@@ -6630,7 +6632,6 @@ dsh plugin --profile web add dshmarket
 - [ityyq777/dsh-workbench#vault](https://github.com/ityyq777/dsh-workbench/tree/main/packages/vault) — DSH 凭据保险箱：密码与 token 用 scrypt 派生密钥 + AES-256-GCM 加密，只存本机，agent 只见掩码。
 - [izwarm195/dsh-net-tools](https://github.com/izwarm195/dsh-net-tools) — 让沙箱里的 agent 通过你的本地代理联网：net_fetch 抓取网页，net_proxy_status 查看代理状态。
 - [Jack7510/ggb-plugins-dsh](https://github.com/Jack7510/ggb-plugins-dsh) — 把中英文二维数学题变成经核验、可交互的 GeoGebra 文件；核验失败不交付。
-- [jackheather/dsh-self-learn](https://github.com/jackheather/dsh-self-learn) — 把 B 站视频、网页、本地文件和直播变成可检索的学习库：本地转写、画面 OCR、抽取式摘要，每个来源交回约 1.5KB 文本，让模型读摘要而不是全文。
 - [Jamailar/beav-deepseek-harness](https://github.com/Jamailar/beav-deepseek-harness) — 将 DSH 连接到本机 Beav，面向小红书（RED/RedNote）、社交媒体运营和自媒体 AI 创作，覆盖选题研究、知识库、文案、图片、音频与短视频工作流，并保留审批和产物追踪。
 - [James-web11/dsh-matlab-mcp](https://github.com/James-web11/dsh-matlab-mcp) — 把 MathWorks MATLAB/Simulink MCP 服务器注册进 dsh profile，让会话获得 mcp__matlab__* 工具，用于运行 MATLAB 代码以及读取、编辑与测试 Simulink 模型。
 - [janehk416-alt/dsh-FocusCapture](https://github.com/janehk416-alt/dsh-FocusCapture) — Windows 截图与标注插件，支持自定义全局快捷键、置顶贴图和添加到当前 DSH 聊天附件草稿；需要兼容的 Python 运行环境。随包带有预编译的 Windows 可执行文件（native/DualCtrlSnip.exe）和一个只轮询所选快捷键状态的 Python 辅助程序。
@@ -10265,6 +10266,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-niao/dsh-niao-message](https://github.com/dsh-niao/dsh-niao-message) — DeepSeek Harness 的 macOS 系统通知插件：任务中止、超限、阻塞、中断、出错、等待提问或批准、完成或子代理结束等事件通过 terminal-notifier 弹系统横幅；点击横幅打开指定应用，回到页面自动清空。
 - [dsh-pulse/dsh-hermes-bridge](https://github.com/dsh-pulse/dsh-hermes-bridge) — DSH 的任务队列执行端点：需要自行部署独立的 Hermes Agent 网关并编写自己的微信入站脚本；仅在单一环境验证过，需要按你的环境适配。
 - [dshbot-by-TingXia/dsh-tg-tools](https://github.com/dshbot-by-TingXia/dsh-tg-tools) — 给 DSH 会话用的 Telegram 工具：列 chat、看缓存消息、发文字/图片/贴纸/GIF/骰子、加 reaction、转发/编辑/删除、typing、查成员；可选开启 getUpdates 轮询，只接收并缓存白名单 chat 的消息，也只对白名单 chat 唤醒目标会话。只走 Bot API，不依赖 MTProto。
+- [Dvva/dsh-alert](https://github.com/Dvva/dsh-alert) — DSH 需要你批准操作、回答提问或审批计划时，弹出 Windows 系统通知并播放提示音；原生通知失败时退回自绘卡片。
 - [EagleClark/dsh-genshin-lisa-notice](https://github.com/EagleClark/dsh-genshin-lisa-notice) — 回合完成、需要你输入或执行失败时播放语音提醒并发送浏览器通知，还可把同样的摘要以卡片推送到飞书机器人 webhook。
 - [Echo-Cry/dsh-intel-pulse](https://github.com/Echo-Cry/dsh-intel-pulse) — 仅 Windows。离席或持续自主资讯全网检索与多端推送，精选二次元/色图插画画廊与点图搜图，以及会话状态全局系统原生桌面弹窗通知，支持投递至 DSH 会话与 IM 机器人。
 - [EviMing/dsh-qq-approval-notify](https://github.com/EviMing/dsh-qq-approval-notify) — 通过本机 NapCat（OneBot）在 DSH 弹出权限申请时给主人发 QQ 私信，先校验机器人 QQ；需要配置主人/机器人 QQ 号与 NapCat 地址、token，NapCat 不可用时回退 Windows 通知。
