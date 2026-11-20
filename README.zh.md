@@ -4362,6 +4362,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-affect](https://github.com/7gzgn/dsh-affect) — 把 AI 的情绪搬到模型外面：几条情绪轴各 0-100，按你说的话加减、随时间自己漂移，每轮把「现在处在哪一档 + 可用标签」注入系统提示。数值由插件维护：模型从注入的提示里读到当前值，只能通过插件自带的情绪工具调整，不能凭一句自报心情改数。默认空配置，一个轴都不替你定。
 - [dsh-profile-stylist](https://github.com/7gzgn/dsh-profile-stylist) — 你说想要什么样的人设，它把文案写出来并把资料页填好：昵称/简介/标语/链接由宿主模型生成，头像取本地素材库（或你给的路径），再由站点自己的上传控件完成头像入库。**默认 dry-run**，只写资料字段 —— 不碰密码、邮箱、安全设置。
 - [aa1355721445-lgtm/dsh-daily-schedule](https://github.com/aa1355721445-lgtm/dsh-daily-schedule) — 每晚用 DSH 已配置的模型，按人设（默认读 AGENT.md）和按权重抽到的日程类型（上班、休息、外出、宅家、加班、摸鱼，也可自定义）生成陪伴角色第二天的全天日程；把日期、时间、此刻在做什么、接下来做什么注入系统提示，并附一段说话方式，避免角色念时间表；提供 schedule_view、schedule_adjust 工具和按会话开关注入的 /life 指令。装了生图工作室（aa1355721445-lgtm/dsh-image-studio）时，每段日程会配上素材库里的穿搭、场景和物品。设置页可查看今天和明天的时间线、编辑日程类型。
+- [ADBdad/dsh-qq-identity](https://github.com/ADBdad/dsh-qq-identity) — 每轮把 agent 自己在群里的群名片与群角色、以及私聊对方是谁，自动注入系统提示词。基于 OneBot 11 只读查询。
 - [AgentConnect/dsh-awiki](https://github.com/AgentConnect/dsh-awiki) — 为 DeepSeek Harness 智能体提供基于开放协议ANP的原生身份，以及基于该身份的私聊、群聊、邮件和智能体间通信能力。
 - [Anarrogantcat/dsh-identity](https://github.com/Anarrogantcat/dsh-identity) — DSH 身份系统：可编辑内核、证据制 traits、按需召回的记忆、心情、关系、精力控频、自主提议与共情；QQ 只是一个可选通道。
 - [Applepinea/dsh-qq-access](https://github.com/Applepinea/dsh-qq-access) — 把 dsh 接到个人 QQ：NapCat 托管与扫码登录、私聊/群聊 AI 回复（含图片理解）与批量节流、本地归档与轮询补漏、群内 @ 与撤回自己刚发的消息、QQ 空间留言，并带左侧栏管理面板。默认任何 QQ 用户私聊该账号（或在群里 @ 它）都会得到 AI 回复；把 access.privateMode / groupMode 设为 allowlist 才限制。主人专属命令仍只对主人生效。
@@ -7637,6 +7638,7 @@ dsh plugin --profile web add dshmarket
 - [zhtx2024/dsh-skin-switcher](https://github.com/zhtx2024/dsh-skin-switcher) — 设置面板皮肤管理器：自动扫描已安装的 Web UI 皮肤并一键切换，profile 补丁自动维护。
 - [Zhuang-A/dsh-go-sensei](https://github.com/Zhuang-A/dsh-go-sensei) — 围棋复盘教练：解析 SGF 棋谱，用自带 KataGo 引擎补算胜率与目差，在对话里逐手讲解问题手，并把讲解写回 SGF 副本；Web 面板用棋盘展示问题手、AI 首选与变化图。
 - [zhujiuyi/dsh-mcpserver-manager](https://github.com/zhujiuyi/dsh-mcpserver-manager) — 管理 DeepSeek Harness profile 的 MCP 服务：列出每个服务的连接状态与它注册的工具；保存前预检配置（可执行文件缺失、把包名当命令、变量未展开、URL 缺少路径）；粘贴 dsh 配置片段或 Claude Code 的 mcpServers 块即可新增，并自动转换为 dsh 格式。
+- [zhuwencong/xianyu-smart-monitor#dsh](https://github.com/zhuwencong/xianyu-smart-monitor/tree/main/plugins/dsh) — 把本机运行的闲鱼监控服务接入 DSH：十个 xianyu_* 工具通过 127.0.0.1:8000 读取候选商品、任务、运行记录与待处理问题，并可启动、停止或新建任务。
 - [ZhuYw3927/dsh-ai-collab](https://github.com/ZhuYw3927/dsh-ai-collab) — 给仓库里的各个 AI 工具共用一份项目记忆：只追加的 .ai/ 工作日志、当前状态快照，以及自动化永不覆盖用户区的分区 AGENTS.md。当前仅支持 Windows。
 - [zhuzhaoyun/Molio#dsh-plugin-molio](https://github.com/zhuzhaoyun/Molio/tree/main/packages/dsh-plugin-molio) — Molio 本地知识库只读工具集：列知识库、浏览文件树、全文搜索、读取原文，经本机 Molio daemon HTTP API 取数（需 daemon 常驻运行）。npm 包名 dsh-plugin-molio，dsh plugin add 即装。
 - [zhuziddl/my](https://github.com/zhuziddl/my) — Windows NapCat部署指南与本机端口只读检查，附用户手动运行的管理员启动入口。
