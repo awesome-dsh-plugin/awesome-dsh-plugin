@@ -1,0 +1,7 @@
+url: https://github.com/keerzzz/dsh-wechat-ro/tree/main/plugin
+name: keerzzz/dsh-wechat-ro#plugin
+category: tools
+tarball: https://github.com/keerzzz/dsh-wechat-ro/releases/download/v0.2.2-rc.3/dsh-wechat-ro-0.2.2-rc.3.tgz
+description:
+  en: 'Imports a local copy of your own WeChat history on Linux and exposes it to a DSH session: contact, date and keyword search with original-text citations and Beijing time, a sidebar with daily message and text counts, a 7-day trend, per-conversation highlights and to-dos you confirm as your own, plus six read-only history sources. Linux WeChat 4.1.13.26 only; Windows and macOS collection is not implemented.'
+  zh: '在 Linux 上导入本人微信历史的本地副本，供 DSH 会话检索：按联系人、日期和关键词查询并给出原文引用与北京时间，侧栏展示每日消息与文字数、近 7 天趋势、按会话归类的重点，以及由本人确认归属的待办，另有六个只读历史来源。仅支持 Linux 微信 4.1.13.26；Windows 与 macOS 采集尚未实现。'
