@@ -31,6 +31,10 @@ concurrency:
 
 jobs:
   check:
+    # A fork mirrors the catalog but publishes no site, so there is no site
+    # health to check; the job is skipped there to spare the fork owner's
+    # Actions quota. A manual dispatch still runs, for debugging.
+    if: github.repository_owner == 'awesome-dsh-plugin' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
