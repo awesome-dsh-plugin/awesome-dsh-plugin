@@ -1,0 +1,8 @@
+url: https://github.com/hailinsu-create/dsh-antigravity-cli
+name: hailinsu-create/dsh-antigravity-cli
+category: model
+icon: https://raw.githubusercontent.com/hailinsu-create/dsh-antigravity-cli/main/assets/icon-512.png
+tarball: https://github.com/hailinsu-create/dsh-antigravity-cli/releases/download/v0.1.0/dsh-antigravity-cli-0.1.0.tgz
+description:
+  en: Runs the Antigravity CLI as a model provider, so Antigravity models answer from the session directory using its own file, search and shell tools.
+  zh: 把 Antigravity CLI 注册为模型提供方，Antigravity 模型在当前会话目录里回答，并使用它自带的文件、搜索和终端工具。
