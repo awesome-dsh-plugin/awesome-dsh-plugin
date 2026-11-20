@@ -1,0 +1,7 @@
+url: https://github.com/IvesCheung/dsh-sidebar-shrink
+name: IvesCheung/dsh-sidebar-shrink
+category: ui
+description:
+  en: 'Moves rarely used sidebar panels into the More menu and remembers the choice across reloads; adds a panel manager dialog and a fold-all button for workspace groups.'
+  zh: '把不常用的侧栏面板收进「更多」并记住选择，刷新后仍然收起；另加面板管理浮层与工作区分组一键折叠。'
+icon: https://raw.githubusercontent.com/IvesCheung/dsh-sidebar-shrink/main/assets/icon-180.png
