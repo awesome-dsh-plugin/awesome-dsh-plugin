@@ -1,0 +1,7 @@
+url: https://github.com/Beeasy-L/DSH-plugin-market/tree/main/plugins/dsh-watchman
+name: Beeasy-L/DSH-plugin-market#dsh-watchman
+category: notify
+description:
+  en: 'Pushes DSH approval requests, task errors and task completions to your phone over Server酱, Bark or a WeCom group bot, with a settings panel for channels, event filters and deduplication.'
+  zh: '把 DeepSeek Harness 的待审批、任务报错与任务结束推送到手机（Server酱 / Bark / 企业微信群机器人），并在设置页配置通道、事件过滤与去重。'
+icon: https://raw.githubusercontent.com/Beeasy-L/DSH-plugin-market/main/plugins/dsh-watchman/icon-180.png
