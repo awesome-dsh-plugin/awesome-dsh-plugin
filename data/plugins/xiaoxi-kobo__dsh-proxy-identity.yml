@@ -1,5 +1,5 @@
-url: https://github.com/xiaoxi-ai/dsh-proxy-identity
-name: xiaoxi-ai/dsh-proxy-identity
+url: https://github.com/xiaoxi-kobo/dsh-proxy-identity
+name: xiaoxi-kobo/dsh-proxy-identity
 category: identity
 description:
   en: 'Adds fixed identity headers to model requests so a shared gateway or memory proxy recognizes the client instead of asking it to choose a team and an agent every session.'
