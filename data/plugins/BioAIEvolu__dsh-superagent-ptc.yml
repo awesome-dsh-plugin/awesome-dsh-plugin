@@ -1,7 +1,7 @@
 url: https://github.com/BioAIEvolu/dsh-superagent-ptc
 name: BioAIEvolu/dsh-superagent-ptc
 category: workflow
-tarball: https://github.com/BioAIEvolu/dsh-superagent-ptc/releases/download/v0.1.0/dsh-superagent-ptc-0.1.0.tgz
+tarball: https://github.com/BioAIEvolu/dsh-superagent-ptc/releases/download/v0.1.7/dsh-superagent-ptc-0.1.7.tgz
 description:
   en: "Long-task supervision preset for DeepSeek Harness: versioned anchors, bounded delegation contracts, an independent read-only reviewer, typed evidence gates and proof-based recovery.",
   zh: "DSH 长任务监督预设：版本化目标锚点、有界委派合同、独立只读验收、分型证据门与可恢复的 SnapshotProof。",
