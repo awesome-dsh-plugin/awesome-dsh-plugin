@@ -1,0 +1,6 @@
+url: https://github.com/surfishs/dsh-prompt-enhance
+name: surfishs/dsh-prompt-enhance
+category: ui
+description:
+  en: 'Rewrites the composer draft into a structured prompt through the harness LLM service and shows it in a card docked above the composer to fill back, copy, regenerate or undo; also adds a /enhance command, a settings page and a right-click quick-settings card for routing, reasoning effort, context and limits.'
+  zh: '把输入框草稿经 DSH 的模型服务改写为结构化提示词，结果显示在输入框上方的停靠卡中，可回填、复制、重新生成或撤销；另含 /enhance 命令、设置页与右键快捷设置卡，覆盖模型路由、推理档位、上下文与限额。'
