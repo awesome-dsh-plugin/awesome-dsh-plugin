@@ -946,6 +946,7 @@ dsh plugin --profile web add dshmarket
 - [hanbernate/dsh-save-button](https://github.com/hanbernate/dsh-save-button) — 在 DSH Web GUI 交付卡片上增加下载按钮，present 交付的文件可直接从浏览器下载。
 - [HandsYe/dsh-input-history](https://github.com/HandsYe/dsh-input-history) — DSH 对话框的持久输入历史：↑/↓ 回溯已发送内容（重启不丢），输入框有内容时按 ↑ 仅在前缀匹配项中翻找，清空未发送的草稿不会入历史。
 - [HandsYe/dsh-lock-screen](https://github.com/HandsYe/dsh-lock-screen) — 一键锁屏：侧栏按钮用当前 Windows 桌面壁纸铺满并遮住整个界面，连按两次 Esc 解锁。
+- [handy-git/dsh-workspace-active-top](https://github.com/handy-git/dsh-workspace-active-top) — 发消息时，把当前工作区移到它所在分区（置顶 / 项目）的最前面；未安装 codex 侧边栏时兜底为全部工作区置顶。
 - [hanfang5057-byte/dsh-plugin-quote-comment](https://github.com/hanfang5057-byte/dsh-plugin-quote-comment) — 引用选区时先索要一条评论，再把引用与评论作为一个整体插入输入框。
 - [Hankai233/dsh-mermaid-studio](https://github.com/Hankai233/dsh-mermaid-studio) — 把 DSH 消息里的 mermaid 与 mmd 围栏渲染成图表卡片，可缩放、平移、全屏查看并导出 SVG，渲染结果缓存在内存和 IndexedDB，同一张图不会重画。
 - [Hanmiao33/dsh-bubble-explain](https://github.com/Hanmiao33/dsh-bubble-explain) — 对话中框选任意文字后点击「解释」按钮，弹出 Markdown 实时流式解释气泡，支持递归追问。
@@ -4989,6 +4990,7 @@ dsh plugin --profile web add dshmarket
 - [listky/dsh-queue-message-merge](https://github.com/listky/dsh-queue-message-merge) — 将当前 DSH 会话普通队列中的纯文本消息用英文分号（;）合并为一条排队消息，不会提交发送。
 - [LittleGreyy/dsh-session-archaeology](https://github.com/LittleGreyy/dsh-session-archaeology) — 把一段历史会话离线蒸馏成可复用的 Skill：提取跑通的步骤、改过的文件、失败与修正、验证命令，并标注各自的会话事件序号。
 - [littleyellowbicycle/dsh-atc](https://github.com/littleyellowbicycle/dsh-atc) — 左侧栏一个面板看全本机 coding agent 的会话（DSH/codex/opencode/WorkBuddy/Gemini/ZCode/MiniMax），标题和状态都取自各自的本地记录，只读本地、零 token。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [liubaibuliuyan/dsh-session-delete](https://github.com/liubaibuliuyan/dsh-session-delete) — 一步删掉 DSH 里的对话：日志进可还原的回收站，投影缓存、工作区记账与侧边栏列表同步清理；只有真的有一轮在跑时才拒绝。
 - [liufeicc/dsh-btw-command](https://github.com/liufeicc/dsh-btw-command) — 新增 /btw 斜杠命令：主 agent 运行中也能问一个旁支问题或补充一条信息，不打断当前任务。
 - [liufeicc/dsh-clear-command](https://github.com/liufeicc/dsh-clear-command) — 新增 /clear 命令：清空某个会话的模型可见上下文，同时保留会话本身。
 - [liufeicc/dsh-session-delete](https://github.com/liufeicc/dsh-session-delete) — 在侧边栏会话菜单里新增「删除会话」，带确认弹窗，并由宿主动作彻底移除会话日志。
@@ -10600,7 +10602,7 @@ dsh plugin --profile web add dshmarket
 - [AngelosZou/graphlint#integrations/dsh](https://github.com/AngelosZou/graphlint/tree/main/integrations/dsh) — 面向 AI 生成代码的死代码检测：graphlint 构建依赖图，定位从任何入口不可达的代码，以实现代码库清理和功能有效性理解，并为 DSH 智能体提供 graphlint_query / graphlint_build / graphlint_config 工具与 graphlint 技能。
 - [anime-fan-5903/dsh-sync](https://github.com/anime-fan-5903/dsh-sync) — 通过 Microsoft OneDrive 跨设备同步 DSH 原生指令、用户 Skills 和经过审核的可迁移设置，支持可选云端加密与明确的冲突处理；不同步会话和凭据。
 - [Ankali-Aylina/code-rag#dsh-code-rag-index-panel](https://github.com/Ankali-Aylina/code-rag/tree/main/plugins/dsh-code-rag-index-panel) — Code RAG 语义索引面板与设置卡片：输入框上方的实时索引条（开始/全量重建/取消），以及一键检测与配置（Qdrant/Ollama/预设/ignore）。
-- [Antipas/undohaven#dsh-undohaven](https://github.com/Antipas/undohaven/tree/main/packages/plugin) — 在启动时、定时以及插件卸载时给 dsh 家目录做 AES-256-GCM 加密快照，dsh 版本变化时把上一份快照固定为升级前快照，设置页显示状态和恢复命令；恢复在 dsh 退出后由 undohaven CLI 执行。第三方插件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [Antipas/undohaven#dsh-undohaven](https://github.com/Antipas/undohaven/tree/main/packages/plugin) — 在启动时、定时以及插件卸载时给 dsh 家目录做 AES-256-GCM 加密快照，dsh 版本变化时把上一份快照固定为升级前快照，设置页显示状态和恢复命令；恢复在 dsh 退出后由 undohaven CLI 执行。第三方插件。
 - [anweat/dsh-restart](https://github.com/anweat/dsh-restart) — DSH 重启插件：可配置的重启方式（Node 原生/旧 PowerShell 适配）、重启后自动继续的提示词、可选看门狗自动拉起。
 - [anweat/dsh-substrate#plugin](https://github.com/anweat/dsh-substrate/tree/master/plugin) — 在 DSH 启动前诊断重复的 loader entry ID，通过只读设置卡片报告版本锁定的修复状态，并使用外部 CLI 应用或撤销经过审计的 loader 修复。
 - [aokamoaki/dsh-startup-guard](https://github.com/aokamoaki/dsh-startup-guard) — 启动守卫：修复会话日志、预检插件组合、校验客户端工件、冒烟宿主 apply() 并隔离崩溃源，让坏插件再也无法砖掉启动。
