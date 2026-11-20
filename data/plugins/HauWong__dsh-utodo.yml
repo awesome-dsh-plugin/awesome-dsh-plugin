@@ -1,0 +1,7 @@
+url: https://github.com/HauWong/dsh-utodo
+name: HauWong/dsh-utodo
+category: ui
+description:
+  en: 'Sidebar todo and idea panel: tasks with a single date or a date range, overdue, important and due-soon views, and notes with colour-coded tags.'
+  zh: '侧栏待办与想法面板：待办支持单日或日期区间，提供逾期、重要、临期视图；想法可加彩色标签。'
+icon: https://raw.githubusercontent.com/HauWong/dsh-utodo/main/assets/icon-180.png
