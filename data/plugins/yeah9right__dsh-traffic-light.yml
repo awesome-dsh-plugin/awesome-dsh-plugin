@@ -1,0 +1,7 @@
+url: https://github.com/yeah9right/dsh-traffic-light
+name: yeah9right/dsh-traffic-light
+category: ui
+description:
+  en: 'A draggable traffic light in the window overlay: red while an agent is running, yellow while an agent waits for your answer or approval, green when nothing is running. It reads one state endpoint on this machine once a second and sends nothing off the machine; on Windows it also opens an always-on-top desktop window so the light stays visible over other applications.'
+  zh: '窗口浮层里常驻一盏可拖动的红绿灯：有任务在跑亮红灯，等你回答或确认亮黄灯，没有任务在跑亮绿灯。每秒读取本机一个状态接口，不外发任何数据；Windows 上还会另开一个置顶桌面小窗，被别的应用压住时也能看到。'
+tarball: https://github.com/yeah9right/dsh-traffic-light/releases/latest/download/dsh-traffic-light.tgz
