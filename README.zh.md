@@ -881,6 +881,7 @@ dsh plugin --profile web add dshmarket
 - [gbeta/dsh-token-speed](https://github.com/gbeta/dsh-token-speed) — 可拖拽环形表盘，实时显示模型输出速度（tok/s），点击展开每步详情（精确速度、TTFT、缓存命中率、缓存读写、推理/输入 token、模型、累计 token）。
 - [gcolt888/dsh-screenshot-hotkey](https://github.com/gcolt888/dsh-screenshot-hotkey) — 微信式截图标注，直接插进 DSH 输入框；系统级热键截图时不会把 DSH 弹到前台。仅支持 Windows；首次使用时用系统自带的 csc.exe 把随包的 C# 源码编译成辅助可执行文件。
 - [gcwarmman/dsh-sidebar-narrator](https://github.com/gcwarmman/dsh-sidebar-narrator) — 右侧栏三行话，说清它干完什么、在干什么、下一步干什么；另有只读提问、不打断的提醒、以及把代价讲清楚再喊停。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [Geekhyt/dsh-genui-a2ui](https://github.com/Geekhyt/dsh-genui-a2ui) — Google A2UI 1.0 生成式界面插件：在对话内流式渲染 57 种原生交互组件、19 类 ECharts 图表、Mermaid 流程图、图表与表格 0ms 交叉筛选及回合内阻塞确认卡。
 - [GeekRicardo/dsh-balance](https://github.com/GeekRicardo/dsh-balance) — 输入框下方按 provider 展示 DeepSeek、Kimi Coding、OpenCode Go、智谱、MiniMax、OpenRouter、OpenAI Codex 的余额/用量，2 秒轮询、5 分钟缓存。
 - [GeekRicardo/dsh-convmap](https://github.com/GeekRicardo/dsh-convmap) — 主对话区左缘的对话地图刻度列：每条刻度是一轮用户提问，刻度由宿主直读会话完整日志得来，不受客户端分页窗口限制，长会话也是全量覆盖。hover 时邻近刻度按像素距离连续展开，右侧浮出该轮提问与最后一次回复的预览卡（可进卡滚动看完）；点击跳转到该轮，老轮次尚未渲染时先自动分页加载再跳；滚动对话时当前轮次的刻度保持高亮。
 - [geguanming/dsh-office-plugin](https://github.com/geguanming/dsh-office-plugin) — 把多 agent 会话的实时活动渲染成 Web UI 侧边栏里的像素风办公室--每个会话是一名牛/马员工，忙时伏案敲键盘、闲时起身摸鱼，支持点击查看工位监控、就地处理审批。
@@ -8741,7 +8742,7 @@ dsh plugin --profile web add dshmarket
 - [bjzkhy/dsh-multiplatform-balance](https://github.com/bjzkhy/dsh-multiplatform-balance) — 多平台余额 Agent 技能与工具：查询 DeepSeek、豆包 / 火山引擎、千问 / 阿里云百炼、混元 / 腾讯云以及自定义 HTTP 接口的账户余额；只读，内置 60 秒缓存。
 - [bocchii-the-code/dsh-nerd-mode](https://github.com/bocchii-the-code/dsh-nerd-mode) — 把一段普通对话变成会按你的回答调整的引导式学习。插件生成学习记录和讲义；学习进度标签页追踪你的进度和生疏概念；讲义页按课程列出讲义。这些文件持久化到工作区，重启后仍可读取。
 - [caigou114/dsh-teleagent-skill-builder](https://github.com/caigou114/dsh-teleagent-skill-builder) — 把 TeleAgent 技能制作规范装成 DSH 技能：规范全文、复刻平台校验的校验器（含 .pyc 直接判失败）、脚手架、打包器、TeleAgent 安装器。
-- [carlslin/dsh-skill-eval](https://github.com/carlslin/dsh-skill-eval) — 用真实执行遥测（加载成败、后续工具报错、用户纠正、被忽略与成本）给每个技能打 0-100 分并附 95% 置信区间，再把证据转成 agent 可直接执行的修复建议。
+- [carlslin/dsh-skill-eval](https://github.com/carlslin/dsh-skill-eval) — 用真实执行遥测（加载成败、后续工具报错、用户纠正、被忽略与成本）给每个技能打 0-100 分并附 95% 置信区间，把证据转成 agent 可直接执行的修复建议，并支持从看板把单个技能的当前问题一键复制成可粘贴的 Markdown 修复任务。
 - [Cavan-Ou/hermes-dsh-collab](https://github.com/Cavan-Ou/hermes-dsh-collab) — 把 DeepSeek Harness 接进 Hermes 管线：派单 spec 模板、模型档位路由、质量门、git 唯一写者约定，SKILL.md 技能包（bundle 可安装）。
 - [cccuuuhhh/dsh-skill-groups](https://github.com/cccuuuhhh/dsh-skill-groups) — 把技能归入具名分组，自由勾选组合切换，拖拽排序，并预览每组的目录 token 成本。
 - [cenglin123/ocsr](https://github.com/cenglin123/ocsr) — 提供 `ocsr` 技能与 `ocsr_dispatch` 工具，把 headless `opencode run` 当作 fresh-context、跨厂商的 worker 后端；超时看门狗与每 worker 产物文件由 Python driver 负责。仅支持 Windows（需 Windows PowerShell）；需本机安装 OpenCode CLI、Python 3，并在 `~/.ocsr/allowed-models.json` 配置模型白名单。
