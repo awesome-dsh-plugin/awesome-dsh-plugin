@@ -1,0 +1,6 @@
+url: https://github.com/JiamingShi-JsPhys/3d-fabric
+name: JiamingShi-JsPhys/3d-fabric
+category: tools
+description:
+  en: 'Natural-language CAD and a printable-mesh toolchain in one plugin. The local SolidCraft CLI turns a prompt or an edit into a design; seven actions (probe, model, measure, snapshot, script, inspect, repair) then measure it, render a snapshot, and export a printable mesh through one gate record with the same exit codes. Thirty Blender skills cover what never has a dimensioned part: organic modelling, materials, lighting, cameras, rendering, UV and animation. Mesh inspection reports winding, degenerate faces and bounds before a part reaches a printer, and a missing SolidCraft yields an explicit UNVERIFIED instead of a silent pass. Every action returns typed JSON byte-identical to the file on disk.'
+  zh: '一句话建模加可打印网格的一体化插件。本地 SolidCraft CLI 把提示词或修改变成设计；七个动作（probe、model、measure、snapshot、script、inspect、repair）随后测量、出快照、导出可打印网格，全部走同一份门记录与同一套退出码。三十个 Blender 技能覆盖那些没有尺寸零件的工作：有机建模、材质、灯光、相机、渲染、UV 与动画。网格检查会在零件送去打印前报出绕序、退化面与包围盒；SolidCraft 缺失时明确给出 UNVERIFIED，而不是静默通过。每个动作返回的 JSON 与磁盘上的文件逐字节一致。'

@@ -1,0 +1,6 @@
+url: https://github.com/chddydwd/dsh-eye
+name: chddydwd/dsh-eye
+category: vision
+description:
+  en: 'Local screen ring for DeepSeek Harness: keeps the last ~45 seconds of screen frames in memory so the model can rewind what just happened, recalls any frame at 1:1 pixels, reads window text through the Windows accessibility API instead of OCR, locates controls by name and reports coordinates only (never clicks), and masks private regions in every capture. Windows only; everything stays on the machine. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '给 DeepSeek Harness 装一双「看得见刚才」的眼睛：屏幕帧按内存环保留最近约 45 秒，能倒带「刚才发生了什么」、按格子回取 1:1 原像素；读窗口文字走 Windows 无障碍接口（不是 OCR 猜）；按名字找控件只报坐标、从不代点；隐私打码让所有给出去的图一起挡。仅支持 Windows，全程本机、不上传。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

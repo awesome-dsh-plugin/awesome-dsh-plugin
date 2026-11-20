@@ -1,0 +1,7 @@
+url: https://github.com/JackGuogit/dsh-oo-spec
+name: JackGuogit/dsh-oo-spec
+category: skill
+description:
+  en: 'Object-oriented design work run through four gates and nine judgement cards: one skill routes requirement, domain, design and implementation tasks; five tools search and read the bundled spec, resolve original-text anchors, build the ≤5-question block with defaults, and check a deliverable for missing slots, use-case parts, relation multiplicities, change windows and design↔code class parity with line-number evidence; a composer control opens the spec in-app. The gate checks are text heuristics.'
+  zh: '把面向对象四段流程（需求→领域→设计→实现）做成可执行工作流：一个 skill 按任务路由到九张判定卡；五个工具检索与读取规范、取原文锚点、生成 ≤5 题合规提问块、按闸门判据核对交付物的槽位/用例/重数/变化时间窗与设计↔代码类集合一致性（带行号证据）；输入框工具行按钮可直接翻开规范全文。闸门检查为文本启发式。'
+icon: https://raw.githubusercontent.com/JackGuogit/dsh-oo-spec/main/assets/icon-180.png

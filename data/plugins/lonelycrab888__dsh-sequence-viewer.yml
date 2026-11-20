@@ -1,0 +1,6 @@
+url: https://github.com/lonelycrab888/dsh-sequence-viewer
+name: lonelycrab888/dsh-sequence-viewer
+category: tools
+description:
+  en: 'Adds an interactive sequence workbench to DeepSeek Harness for exploring biological sequences, comparing alignments, and viewing Sanger chromatograms. Agents can open files, analyze sequences, and answer questions about the current selection.'
+  zh: '为 DeepSeek Harness 添加交互式生物序列工作台，可浏览序列、比较比对结果和查看 Sanger 测序峰图，也能让 Agent 打开文件、分析序列，并回答与当前选区相关的问题。'

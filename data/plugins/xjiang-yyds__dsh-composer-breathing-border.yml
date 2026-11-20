@@ -1,0 +1,7 @@
+url: https://github.com/xjiang-yyds/dsh-composer-breathing-border
+name: xjiang-yyds/dsh-composer-breathing-border
+category: ui
+description:
+  en: Adds a breathing glow border around the message composer, with six selectable colors.
+  zh: 为消息输入区添加呼吸光晕边框，内置六种可选颜色。
+icon: https://raw.githubusercontent.com/xjiang-yyds/dsh-composer-breathing-border/main/assets/icon.png

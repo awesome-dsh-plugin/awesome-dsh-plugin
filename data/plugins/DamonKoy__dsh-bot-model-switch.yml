@@ -1,0 +1,7 @@
+url: https://github.com/DamonKoy/dsh-bot-model-switch
+name: DamonKoy/dsh-bot-model-switch
+category: model
+tarball: https://github.com/DamonKoy/dsh-bot-model-switch/releases/download/v0.3.0/dsh-bot-model-switch-0.3.0.tgz
+description:
+  en: 'Batch and per-Bot model switching for DS Bot teams: move every Bot to one model at once, or set one row per Bot, through DS Bot own api/bot update-bot endpoint instead of writing state.json.'
+  zh: '给 DS Bot 团队批量或逐个切换模型：一次把全队切到同一模型，或每个 Bot 单独一行设置；写入走 DS Bot 自己的 api/bot update-bot 端点，不直接改 state.json。'

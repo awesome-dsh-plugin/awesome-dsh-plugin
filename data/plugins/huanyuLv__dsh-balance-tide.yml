@@ -2,5 +2,5 @@ url: https://github.com/huanyuLv/dsh-balance-tide
 name: huanyuLv/dsh-balance-tide
 category: usage
 description:
-  en: DeepSeek account balance and session cost under the composer, with a live peak/off-peak pricing badge (Beijing time), a countdown to the next pricing switch, hover price tables, and usage advice.
-  zh: 输入框下方显示 DeepSeek 账户余额与本会话花费，余额前带峰/谷价格徽章（北京时间）与距切换倒计时，悬停看两档单价明细与使用建议。
+  en: 'DeepSeek account balance and estimated session cost on a line below the composer status row, with a live peak/off-peak badge (Beijing time, weekends and Chinese public holidays off-peak), when the current window ends, the start and end of the next window, and hover price tables. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在输入框下方状态行的下一行显示 DeepSeek 账户余额与本会话估算花费，并实时标出当前是高峰还是低峰（北京时间，周末与法定节假日全天低峰）、当前时段何时结束、下个时段的起止时间，悬停可看两档单价表。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

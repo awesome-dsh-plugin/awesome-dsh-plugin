@@ -1,0 +1,6 @@
+url: https://github.com/philomelcc/dsh-interaction
+name: philomelcc/dsh-interaction
+category: ui
+description:
+  en: Branching multi-step questions with back-navigation, cross-session messaging, and audio and image previews in the file sidebar.
+  zh: 分支式多步提问（可返回上一题）、跨会话消息，以及文件侧边栏的音频与图片预览。

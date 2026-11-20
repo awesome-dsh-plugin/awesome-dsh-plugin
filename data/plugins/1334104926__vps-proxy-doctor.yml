@@ -1,0 +1,6 @@
+url: https://github.com/1334104926/vps-proxy-doctor
+name: 1334104926/vps-proxy-doctor
+category: skill
+description:
+  en: 'Troubleshooting skill for self-hosted VPS proxies: it triages by symptom, then checks port reachability, firewall, clock skew, DNS and routing rules layer by layer, with read-only scripts for the VPS and for Windows or macOS clients.'
+  zh: '自建 VPS 代理排障技能：先按症状分诊，再逐层检查端口连通、防火墙、时间偏差、DNS 和分流规则，附带 VPS 端与 Windows/macOS 客户端的只读检查脚本。'

@@ -1,0 +1,6 @@
+url: https://github.com/ZhuYw3927/dsh-ai-collab
+name: ZhuYw3927/dsh-ai-collab
+category: tools
+description:
+  en: 'Gives every AI tool in a repository one shared project memory: an append-only .ai/ work log, a current-state snapshot, and a zoned AGENTS.md whose user zone automation never overwrites. Windows only.'
+  zh: '给仓库里的各个 AI 工具共用一份项目记忆：只追加的 .ai/ 工作日志、当前状态快照，以及自动化永不覆盖用户区的分区 AGENTS.md。当前仅支持 Windows。'

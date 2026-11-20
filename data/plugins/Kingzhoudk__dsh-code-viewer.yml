@@ -1,0 +1,8 @@
+url: https://github.com/Kingzhoudk/dsh-code-viewer
+name: Kingzhoudk/dsh-code-viewer
+category: ui
+icon: https://raw.githubusercontent.com/Kingzhoudk/dsh-code-viewer/main/assets/icon-180.png
+tarball: https://github.com/Kingzhoudk/dsh-code-viewer/releases/latest/download/dsh-code-viewer.tgz
+description:
+  en: 'VS Code-style tab in the right Sidebar: workspace file tree, a multi-tab editor with syntax highlighting that saves with mtime conflict checks, whole-workspace search and replace, quick open and a command palette, a read-only Git graph with per-commit diffs, an embedded terminal, and a shortcut that inserts the current file or its selected lines as an @file reference in the composer.'
+  zh: '右侧栏的 VS Code 风格标签页：工作区文件树、带语法高亮且按 mtime 校验冲突的多标签编辑器、全工作区搜索替换、快速打开与命令面板、只读 Git 图谱与单次提交 diff、内嵌命令行，以及把当前文件或选区作为 @文件 引用插入输入框的快捷键。'

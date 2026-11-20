@@ -1,0 +1,7 @@
+url: https://github.com/goodjin/dsh-codex
+name: goodjin/dsh-codex
+category: model
+tarball: https://github.com/goodjin/dsh-codex/releases/download/v0.1.0/dsh-codex-0.1.0.tgz
+description:
+  en: 'Adds Codex (ChatGPT subscription) models to DeepSeek Harness as a model row, calling the Codex /responses endpoint directly with the local Codex CLI OAuth credential, and shows the official usage windows as a quota pill under the composer. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把 Codex（ChatGPT 订阅）模型作为模型行接入 DeepSeek Harness：直接调用 Codex /responses 端点、复用本机 Codex CLI 的 OAuth 凭据，并在输入框下方显示官方返回的用量窗口胶囊。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

@@ -3,5 +3,5 @@ name: STARDUSTLC666/dsh-ppt
 category: docs
 icon: https://raw.githubusercontent.com/STARDUSTLC666/dsh-ppt/master/assets/plugin-icon.webp
 description:
-  en: 'Presentation workbench and 9 ppt_* tools: generate and edit offline HTML slideshows, editable PPTX decks and project bundles across 24 presentation themes, 6 master skeletons and 20 scenario blueprints, with reference .pptx style/layout absorption (ppt_absorb), click-to-edit slides, undo, quality checks and 5 switchable workbench themes.'
-  zh: '演示文稿工作台与 9 个 ppt_* 工具：从文本、大纲或参考 .pptx（ppt_absorb 样式与版式解析）生成离线 HTML 放映、可编辑 PPTX 与工程包，内置 24 套演示主题、6 套母版骨架与 20 套场景蓝图，支持点选改字、撤销、排版检查及 5 套工作台主题切换。'
+  en: 'Presentation workbench and 13 ppt_* tools: generate offline HTML slideshows and editable PPTX decks with 24 themes, 6 master skeletons, 20 scenario blueprints and 20 built-in exemplars; import PPTX/Word/Excel/CSV, absorb reference layouts, edit slides with undo, check layout and source evidence, and export Remotion storyboards; PDF/PNG rendering requires the optional official LibreOffice engine.'
+  zh: '演示文稿工作台与 13 个 ppt_* 工具：生成离线 HTML 放映及可编辑 PPTX，含 24 套主题、6 套母版骨架、20 套场景蓝图与 20 套内置标杆范本；支持导入 PPTX/Word/Excel/CSV、吸收参考版式、点选改字与撤销、排版及事实出处检查、Remotion 分镜导出；PDF/PNG 渲染需可选官方 LibreOffice 引擎。'

@@ -1,0 +1,8 @@
+url: https://github.com/zbh13782-lang/dsh-ask-reader
+name: zbh13782-lang/dsh-ask-reader
+category: ui
+icon: https://raw.githubusercontent.com/zbh13782-lang/dsh-ask-reader/main/assets/icon-180.png
+tarball: https://github.com/zbh13782-lang/dsh-ask-reader/releases/latest/download/dsh-ask-reader.tgz
+description:
+  en: Pins an assistant reply into a right-sidebar tab rendered as Markdown with syntax-coloured code, marks each pinned turn with a longer, thicker, brighter tick on the turn navigator, and quotes a selected passage back to the composer for follow-up questions. A star action pins without opening the column, and clicking it again unpins.
+  zh: 把助手回复收藏进右侧栏标签页并以 Markdown 渲染（代码块带语法着色）；被收藏的轮次在右侧轮次导航上显示为更长、更粗、带亮色的横线；选中其中一段即可作为引用带回主聊天输入框继续提问。回复下方的星星只收藏、不展开侧栏，再点一次即取消收藏。

@@ -1,0 +1,6 @@
+url: https://github.com/newbieQQ/workspace-groups-remote
+name: newbieQQ/workspace-groups-remote
+category: ui
+description:
+  en: 'A merged bundle of the workspace-groups sidebar and the Remote-SSH plugin for the DSH web client, wiring both together at runtime with a shared shell wrapper and the dsh-remote-ssh settings namespace.'
+  zh: 'DSH Web 客户端的分组工作区侧栏与远程 SSH 插件的合并包，用共享 shell wrapper 与 dsh-remote-ssh 设置命名空间在运行时把两者接在一起。'

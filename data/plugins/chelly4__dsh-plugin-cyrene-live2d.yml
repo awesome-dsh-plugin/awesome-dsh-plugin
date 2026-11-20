@@ -1,0 +1,7 @@
+url: https://github.com/chelly4/dsh-plugin-cyrene-live2d
+name: chelly4/dsh-plugin-cyrene-live2d
+category: theme
+description:
+  en: 'A pink-white Cyrene (HSR) Live2D desktop pet for DeepSeek Harness (Windows only): full-page theme, persona and worldbook injection, relationship memory, plus reminder and notes subplugins.'
+  zh: 昔涟（星穹铁道）Live2D 桌面伙伴（仅 Windows）：整页主题、人设与世界书注入、关系记忆，以及提醒与便签副插件。
+icon: https://raw.githubusercontent.com/chelly4/dsh-plugin-cyrene-live2d/main/assets/icon.webp

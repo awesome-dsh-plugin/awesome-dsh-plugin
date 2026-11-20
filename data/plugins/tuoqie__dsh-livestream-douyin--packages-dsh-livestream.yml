@@ -1,0 +1,7 @@
+url: https://github.com/tuoqie/dsh-livestream-douyin/tree/main/packages/dsh-livestream
+name: tuoqie/dsh-livestream-douyin#dsh-livestream-douyin
+category: fun
+description:
+  en: 'Experimental read-only Douyin browser chat capture and an AI livestream host stage with subtitles and speech for DeepSeek Harness; platform broadcasting uses external livestream software. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '为 DeepSeek Harness 提供实验性抖音直播插件，只读采集网页弹幕并提供 AI 主播、角色舞台、字幕和语音；平台开播由外部直播软件处理。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+tarball: https://github.com/tuoqie/dsh-livestream-douyin/releases/download/v0.0.2-douyin.1/dsh-livestream-douyin-0.0.2-douyin.1.tgz

@@ -1,0 +1,7 @@
+url: https://github.com/cxv117793-blip/dsh-bibibobo
+name: cxv117793-blip/dsh-bibibobo
+category: voice
+description:
+  en: "Speaks DSH replies aloud with the bibibobo synthesizer: one sawtooth wave and two band-pass filters, no samples and no TTS model. The control sits in the answer's own action row beside Copy, with a progress bar and a scrolling subtitle while it plays. Each turn keeps its own control, but it reads only that turn's closing reply, so a multi-step answer never restarts mid-sentence and intermediate steps get no control. Deterministic by design: a character always yields the same pitch and mouth shape. Markdown is stripped before speaking, replies are capped at 1200 characters, and playback can be paused, resumed or stopped. Zero dependencies, MIT, no network access."
+  zh: "用 bibibobo 合成器把 DSH 的回答念出来：一条锯齿波加两个带通滤波器，不用采样也不用 TTS 模型。控件长在回答自己那排按钮里，与「复制」同排；播放时有进度条和滚动字幕。每一轮都有自己的控件，但只念该轮的收尾回复，所以多步回答不会念到一半重来，中间步骤也不出现控件。同一个字永远是同一声（哈希决定音高与口型）。朗读前自动剥离 Markdown，超长回复截断到 1200 字，可暂停、继续、结束。零依赖、MIT、不联网。"
+tarball: https://github.com/cxv117793-blip/dsh-bibibobo/releases/latest/download/dsh-bibibobo.tgz

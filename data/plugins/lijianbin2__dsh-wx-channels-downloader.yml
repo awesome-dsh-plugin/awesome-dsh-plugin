@@ -1,0 +1,6 @@
+url: https://github.com/lijianbin2/dsh-wx-channels-downloader
+name: lijianbin2/dsh-wx-channels-downloader
+category: ui
+description:
+  en: 'Left-sidebar workbench for WeChat Channels. Pasting a share link starts the wx_channels_download helper, which briefly points the system proxy at itself so the Channels page loads through it; the plugin then verifies the downloaded file, restores the previous proxy settings and stops the helper. Windows only.'
+  zh: '侧边栏工作台：粘贴视频号分享链接即可下载视频。插件启动 wx_channels_download 并由它临时接管系统代理加载视频号页面，下载完成后校验文件、还原原有代理设置并关闭下载器。仅支持 Windows。'

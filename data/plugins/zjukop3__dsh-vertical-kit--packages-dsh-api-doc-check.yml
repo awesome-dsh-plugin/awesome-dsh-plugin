@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-api-doc-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-api-doc-check'
+category: 'tools'
+description:
+  en: 'API documentation hygiene from markdown: every endpoint with a method and a path, a request or response example, the auth model stated once, and a documented error shape. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '接口文档的书记检查：每个端点带方法和路径、有请求或响应示例、鉴权说明在场、错误响应有交代——只有路径没有动词的行不算端点。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

@@ -1,0 +1,6 @@
+url: https://github.com/sixzjd/dsh-workbuddy-connect
+name: sixzjd/dsh-workbuddy-connect
+category: model
+description:
+  en: 'Brings WorkBuddy (international and China) subscription models into DSH through an in-process loopback shim, with a settings card for accounts and a live model catalog.'
+  zh: '通过进程内 loopback shim 把 WorkBuddy（国际版与国内版）订阅模型接入 DSH，提供账号管理设置卡片与实时模型目录。'

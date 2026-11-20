@@ -1,0 +1,6 @@
+url: https://github.com/saltfish060/dsh-opendesign-runway
+name: saltfish060/dsh-opendesign-runway
+category: usage
+description:
+  en: 'OpenDesign (AMR) quota in a composer pill and a settings page: the Design Plan 5-hour and 7-day windows with remaining percentage, exact credits, reset time and a rate outlook for both cycles, plus wallet balance, today token total, plan period end and a call history of up to 20 entries. Settings choose what the pill shows - one window or both, ring, dot or nothing, with both off hiding the pill - and how often to refresh. Reads the vendor console over a local controlKey or a browser session collected in a temporary Chrome window after you sign in.'
+  zh: '输入框旁胶囊加设置页显示 OpenDesign（AMR）额度：Design Plan 的 5 小时与 7 天窗口剩余百分比、精确数额、重置时间，两个窗口都给速率推算；另有钱包余额、今日 token、套餐周期结束日，以及最近最多 20 条调用记录。设置页可选胶囊显示哪个窗口、要不要显示圆环或圆点（两者都关时胶囊隐藏），并可选 1 到 10 分钟的刷新间隔。读数走本机 controlKey，或在你登录后从临时 Chrome 窗口取浏览器会话。'

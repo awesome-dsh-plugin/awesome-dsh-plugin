@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-license-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-license-check'
+category: 'tools'
+description:
+  en: 'LICENSE hygiene: a recognized license body, a title that agrees with it, a copyright line with a holder and a plausible year, and no leftover template placeholders. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'LICENSE 文件的判定：正文是不是可识别的许可证（认得 12 种）、标题与正文是否一致、版权行有没有人和合理年份、模板占位符有没有填。识别按正文短语而非标题。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

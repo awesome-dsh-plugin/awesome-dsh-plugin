@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-incident-report-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-incident-report-check'
+category: 'tools'
+description:
+  en: 'Incident postmortem hygiene from markdown: a timestamped timeline, a stated impact and duration, a root cause rather than a symptom, and every follow-up carrying an owner. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '事故复盘的检查：带时间的时间线、影响与时长、根因而非处置、每个后续行动项都挂负责人——「重启后恢复」是处置，不是原因。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'

@@ -18139,19 +18139,6 @@
     "scannedAt": "2026-09-24T17:41:52.360Z",
     "tool": "dsh-trust-check@0.1.13"
   },
-  "https://github.com/jiangnanquan/dsh-ux": {
-    "version": "1.0.0",
-    "spec": "github:jiangnanquan/dsh-ux",
-    "capabilities": [
-      "network",
-      "credentials"
-    ],
-    "redLines": [
-      "reads credentials/secrets AND has network access"
-    ],
-    "scannedAt": "2026-09-24T17:02:46.730Z",
-    "tool": "dsh-trust-check@0.1.13"
-  },
   "https://github.com/jiangwangyang/dsh-theme-blackhole": {
     "version": "0.1.0",
     "spec": "github:jiangwangyang/dsh-theme-blackhole",

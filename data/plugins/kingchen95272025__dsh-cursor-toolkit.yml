@@ -1,0 +1,8 @@
+url: https://github.com/kingchen95272025/dsh-cursor-toolkit
+name: kingchen95272025/dsh-cursor-toolkit
+category: agi
+description:
+  en: Ships the Cursor agent preset plus the rules, skills, and MCP servers declared under .cursor, with a panel that reads and switches each of them.
+  zh: 自带「Cursor 模式」预设，并把 .cursor 下的规则、技能与 MCP server 接入 Agent 上下文，另提供查看与逐个开关它们的面板。
+icon: https://raw.githubusercontent.com/kingchen95272025/dsh-cursor-toolkit/main/assets/icon-180.png
+tarball: https://github.com/kingchen95272025/dsh-cursor-toolkit/releases/latest/download/dsh-cursor-toolkit.tgz
