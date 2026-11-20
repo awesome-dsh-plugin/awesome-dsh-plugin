@@ -2,5 +2,5 @@ url: https://github.com/adengou/dsh-kbar
 name: adengou/dsh-kbar
 category: ui
 description:
-  en: 'Command palette for the DSH web UI: one shortcut searches sessions and runs registered shortcut commands such as new session, settings, sidebar, terminal and files.'
-  zh: 'DSH 命令面板：一个快捷键搜索会话并执行已注册的快捷键命令（新建会话、设置、侧栏、终端、文件等）。'
+  en: 'Command palette for the DSH web UI: one shortcut searches sessions, slash commands, skills, models and installed bundles, and runs registered shortcut commands.'
+  zh: 'DSH 命令面板：一个快捷键搜索会话、斜杠命令、技能、模型与已装插件，并执行已注册的快捷键命令。'
