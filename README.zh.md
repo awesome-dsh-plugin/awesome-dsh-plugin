@@ -2896,6 +2896,7 @@ dsh plugin --profile web add dshmarket
 - [Hou-mingyuan/glm-coding-quota](https://github.com/Hou-mingyuan/glm-coding-quota) — 输入框下方实时显示 GLM Coding Plan 额度环 - 5 小时与每周额度窗口、等级、自动刷新与一键重试。需 GLM Coding Plan 订阅与 key，并配置 BigModel 的 organization 与 project ID（团队额度接口缺了它们会返回空）。
 - [hoyyang/dsh-agent-billing](https://github.com/hoyyang/dsh-agent-billing) — dsh web 的 Agent 计费与用量可观测：会话日志直扫记账（zstd 解压、逐事件时间戳入账、水位+lastSeq 双防双计）、多账号按 provider/模型费率档案、per-window 实时徽标（React fiber 读窗口会话 id，切会话即切账单）、玻璃拟态面板（14 天趋势/预算告警/中转站余额/332 模型官方价库）。
 - [HScoffeeK/dsh-opencode-quota](https://github.com/HScoffeeK/dsh-opencode-quota) — 在 DSH 右侧边栏查看 OpenCode Go 各模型的月度上限与共享 5 小时／每周／每月额度剩余，并在对话中提供 opencode_quota 工具。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [hseons/dsh-usage-peak](https://github.com/hseons/dsh-usage-peak) — DeepSeek Harness 用量峰谷仪表盘：侧栏胶囊显示当前峰谷与倒计时、今日花费和 tokens，可下钻项目与模型、编辑价目表、配置预算预警、查看余额可撑天数、导出 CSV，并按节假日与调休在 7/14/30 天窗口内计价。
 - [hsushjk/dsh-traffic-statistics](https://github.com/hsushjk/dsh-traffic-statistics) — DSH 进程树的公网流量统计：把 TCP/UDP 字节按聊天 / 工具 / 插件 / 其它四类分账，排除局域网流量，并给出各产生者的用量。仅支持 Linux。
 - [huangfuren/dsh-client-ui-balance](https://github.com/huangfuren/dsh-client-ui-balance) — 会话标题栏里的 DeepSeek 账户余额胶囊。由本包自带的 host 半注册同源路由，从凭据服务解析 API Key 后查询 api.deepseek.com/user/balance，Key 始终不进页面；胶囊每 60 秒轮询，可展开明细面板，显示分币种总额、赠送与充值部分、更新时间与手动刷新。纯只读 UI：不接触提示词、工具结果与模型流量。
 - [huangyuheng/dsh-token-use](https://github.com/huangyuheng/dsh-token-use) — 设置中的 Token 用量面板：总量（输入/输出/缓存读/缓存写/推理/调用次数），按模型、按天、按月、按项目的明细，以及最近 30 天的按日趋势折线图；历史在 Worker 线程上一次性重建，之后由会话事件实时累加。
@@ -3275,6 +3276,7 @@ dsh plugin --profile web add dshmarket
 - [Yeoksin/dsh-usage-wallet](https://github.com/Yeoksin/dsh-usage-wallet) — dougen/dsh-deepseek-usage 的非官方分支（基线 v0.16.0）：侧边栏余额与配额卡片，显示当前模型提供商的账户读数：DeepSeek、Moonshot、Z.ai、OpenRouter、Kimi、MiniMax、OpenCode；并为 qwen-token-plan 读取阿里云代金券余额（BSS OpenAPI + AccessKey），为小米 MiMo 读取控制台余额与套餐用量（控制台 Cookie）。另提供各提供商查询状态页与每 token 单价。不要与上游 dsh-deepseek-usage 同装：两者会渲染同一张侧边栏卡片。
 - [yflmq001/dsh-cost-tracker](https://github.com/yflmq001/dsh-cost-tracker) — 按模型追踪 token 成本：可配置缓存命中/未命中、输出与高峰时段单价，实时会话花费条，并标记未配置价格的模型。
 - [Yhx888/dsh-free-egg-credits](https://github.com/Yhx888/dsh-free-egg-credits) — 在 DSH 侧边栏看 WorkBuddy / Qoder 账号积分、今日额度、签到状态与每轮消耗（WorkBuddy 已知单价时按输入 / 缓存 / 输出分类型折算）；配置 new-api 后可一键切换优先消耗平台。需本机运行 WorkBuddy2API 或 Qoder 网关。
+- [YIFUHEYAN-5/dsh-work-process-3d](https://github.com/YIFUHEYAN-5/dsh-work-process-3d) — 把正在进行的 DSH 会话渲染成一座 3D 精密工厂：燃料罐里是 token 余额，引擎上是生成速度，十座工位各对应一类工具调用，坞站里是子智能体，每一轮都在成品库里和它的花费对在一起。
 - [yijiezhong/dsh-output-setting](https://github.com/yijiezhong/dsh-output-setting) — 自动展开思考与工具卡片，调整代码块字号与行距，并可选择模型输出语言（自动、中文或 English）。
 - [Yinxe/deepseek-harness-plugins#archive/token-meter](https://github.com/Yinxe/deepseek-harness-plugins/tree/main/archive/token-meter) — DSH 额度与用量统计统一视图：多供应商滚动/按量额度（侧边栏卡片 + 供应商运维），外加会话日志 token 聚合（趋势、热力图、按模型拆分）。已归档并冻结在固定版本：作者不再为它适配新版 DSH。
 - [yishan/dsh-burn](https://github.com/yishan/dsh-burn) — 在回复操作栏显示单次 token 费用、会话顶部显示累计消费与 DeepSeek 账号余额，并支持可自定义的峰谷分时模型计价设置。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
@@ -6292,6 +6294,7 @@ dsh plugin --profile web add dshmarket
 - [CHplus0/dsh-shell-command](https://github.com/CHplus0/dsh-shell-command) — Claude Code 风格的 shell 集成：/! 单命令分析 与 /terminal 交互式终端（带按需历史引用）。
 - [Chsw-CC/dsh-lazy-tools](https://github.com/Chsw-CC/dsh-lazy-tools) — 保留一小份核心工具原生可见，其余收进一个 toolbox 入口：模型先按参数签名列出已加载的工具，只取真正要用的 schema，再经正常的审批与 guard 管线执行调用。目录超预算时先截短签名、再降成前缀计数，让列表在 token 预算内仍然可调用。
 - [chunqing286/dsh-guard-degen](https://github.com/chunqing286/dsh-guard-degen) — 在模型输出边界检测并拦截退化符号流，并提供修复被污染工件与会话的工具。
+- [chuuu4536-gh/dsh-jp-vocab](https://github.com/chuuu4536-gh/dsh-jp-vocab) — 日语生词日汇总：读取配套 Edge 扩展收藏的当日单词（JSONL），按词性分组生成 Markdown 汇总（读音、音调、词性、释义、例句），日界、模板与输出目录均可配置。
 - [ciky20171114/dsh-plugin-midscene](https://github.com/ciky20171114/dsh-plugin-midscene) — 基于 Midscene 的 AI UI 自动化——android_ui 与 web_ui 工具，通过 ctx.midscene seam 在真实 Android 设备或已运行的 Chrome 上完成点击、输入、查询与断言。
 - [ciskonc/dsh-skillmcp-gate](https://github.com/ciskonc/dsh-skillmcp-gate) — 按会话与全局管控 skill 与 MCP 工具的暴露集——在侧栏面板与设置页勾选，停用项在下一条消息从模型目录移除；支持批量应用、草稿差异预览与会话级持久化。需 DSH 0.2.0+。
 - [Cjrrrrrrrr/dsh-plugins#dsh-scholar](https://github.com/Cjrrrrrrrr/dsh-plugins/tree/main/packages/dsh-scholar) — DSH 学术检索工具：四个模型可用工具 paper_search / paper_get / paper_citations / book_search，覆盖 OpenAlex、arXiv、Crossref、Semantic Scholar、PubMed 五个库，并用 Unpaywall 解析开放获取 PDF。
@@ -6530,6 +6533,7 @@ dsh plugin --profile web add dshmarket
 - [Haitang-Hub/dsh-infinite-canvas](https://github.com/Haitang-Hub/dsh-infinite-canvas) — 无限画布右侧栏插件——在画布上编排文本、图片、视频、音频节点，用 AI 生成媒体内容，Agent 经 MCP 工具直接操作画布；自带本地桥服务，安装后离线可用。
 - [halcyon6669/dsh-db-mcp](https://github.com/halcyon6669/dsh-db-mcp) — DSH 里的数据库工作台：可以直接导入 DBeaver 已有的连接（读 data-sources.json，本地解密已保存的口令），也可以手工登记 SQLite、PostgreSQL、MySQL、Oracle 数据源，然后交给智能体通过 8 个 mcp__db__ 工具使用——list_datasources、list_tables、describe_table、sample_rows、execute_sql、explain_query、get_ddl、test_connection。数据源默认只读，一个全局开关才放开 INSERT/UPDATE/DDL；每次调用都限制行数并写入 JSONL 审计日志。另有分组、批量操作、只读结构浏览，以及依赖可在面板一键安装的内置 Python MCP 服务。不需要改 DSH 的任何文件。
 - [Han-1413141/dsh-codex-computer-use](https://github.com/Han-1413141/dsh-codex-computer-use) — 让 DSH 当前模型通过已安装的 Codex Computer Use 运行时读取和操作 Windows 应用，并保留每个会话的应用授权。
+- [HanQing404/dsh-liuyao](https://github.com/HanQing404/dsh-liuyao) — 六爻纳甲解卦：铜钱或蓍草起卦，八宫世应、纳甲六亲、六神、伏神、旬空、月建日辰与动变，按用神旺衰断吉凶、定应期，并附《周易》经传原文；含侧栏面板与三个 agent 工具。
 - [hanshengcc/callai-seo-mcp](https://github.com/hanshengcc/callai-seo-mcp) — 连接 CallAI SEO MCP 服务，提供 10 个 SEO 数据工具和 1 个 DataForSEO 通用请求工具：Google/Bing 搜索结果（含 AI Overview 引用来源）、关键词搜索量与难度、长尾词、竞品关键词差距、外链和页面审计。附带 callai-seo 技能。需要 CallAI API Key，按量付费。
 - [hanwang-ai/cs-source-reliable](https://github.com/hanwang-ai/cs-source-reliable) — 内置 119 条计算机信源（教材、官方文档、标准、预印本），覆盖 17 个 CS2023 知识领域，逐条标注权威等级、证据类型与刷新周期；提供 cs_source_find 与 cs_source_audit 两个工具，用于查源和审计草稿中的引用。
 - [hanwang-ai/quantitativeTrading-source-reliable](https://github.com/hanwang-ai/quantitativeTrading-source-reliable) — 内置 119 条量化与加密交易信源，涵盖监管原始文件、PIT 基本面、宏观序列、交易所 API 与链上数据，逐条标注权威等级、验证状态、PIT 五态、修订风险与数据集标签；提供 qt_source_find 与 qt_source_audit 两个工具，用于查源，以及对引用做审计并脱敏凭据类 URL 参数。
