@@ -3774,6 +3774,7 @@ dsh plugin --profile web add dshmarket
 - [aa2246740/dsh-oauth-login](https://github.com/aa2246740/dsh-oauth-login) — 通过 Pi 适配器接入订阅 OAuth 和厂商 Plan API Key 登录，使用独立的 DSH 凭据存储。
 - [aaabrli/dsh-thu-automad](https://github.com/aaabrli/dsh-thu-automad) — 面向 DSH 的清华 MadModel 接入：自动续期校园 token，按网络在校内直连与校外 WebVPN 之间切换，经本地回环转发模型请求并按模型排队。
 - [AdonisSheldon/dsh-openai-oauth](https://github.com/AdonisSheldon/dsh-openai-oauth) — 通过浏览器 PKCE 或设备码 OAuth 将 ChatGPT 账户接入 DeepSeek Harness 的 Codex 模型，并支持自动刷新令牌以及 Web 或无头登录。
+- [advance-lion/dsh-feishu-subscription](https://github.com/advance-lion/dsh-feishu-subscription) — 通过飞书账号在 DSH 中使用豆包工作的企业订阅模型，支持流式文本、账号切换、用量明细与可选任务归档。
 - [aerince/dsh-models-dev-reasoning](https://github.com/aerince/dsh-models-dev-reasoning) — 为未配置的第三方 DeepSeek Harness 模型添加 models.dev 推理级别支持。
 - [AhYi8/dsh-key-managment](https://github.com/AhYi8/dsh-key-managment) — 面向 DeepSeek Harness 的分提供商 API 密钥池，支持手动切换、后台可达性探测与 DeepSeek、Kimi、MiniMax、智谱、OpenRouter 等多家服务商的套餐用量适配器。
 - [ai-workspace-lab/dsh-nvidia-cloud-provider](https://github.com/ai-workspace-lab/dsh-nvidia-cloud-provider) — 为 DeepSeek Harness 提供 NVIDIA NIM 云端模型接入，支持动态模型发现、工具调用与思考流。
@@ -11583,6 +11584,7 @@ dsh plugin --profile web add dshmarket
 - [CREAIT-nl/dsh-plugins#tailnet-gateway](https://github.com/CREAIT-nl/dsh-plugins/tree/main/tailnet-gateway) — 在 dsh 仍绑定回环地址的前提下，为 Web 界面提供基于身份的 Tailscale 访问：由 `tailscale serve` 对外发布的 127.0.0.1 代理，仅当其标记的 Tailscale 登录账号在允许列表内时才放行请求，并可另按设备白名单限制；这样受回环检查保护的特权 /api 方法（设置、模型、插件）无需让 dsh 信任远程主机即可正常响应。
 - [cube-ai/dsh-feishu-channels](https://github.com/cube-ai/dsh-feishu-channels) — 把一个或多个飞书机器人应用接入本机 DeepSeek Harness（DSH）：每个机器人应用是一条频道，各自独立的模型、工作区、权限与私聊准入；频道下的每个私聊/群聊各有一条独立的 DSH 会话。基于 MichengAI/dsh-im-connect（Apache-2.0）改造，删去其它 IM 通道并重命名标识，因此可与上游同装。
 - [cube-ai/dsh-feishu-client](https://github.com/cube-ai/dsh-feishu-client) — DSH飞书客户端：1）用户（人）通过本插件提供UI访问远端智能体；2）本地DSH通过调用本插件提供工具访问远端智能体。支持的远端智能体包括且不限于：DSH、OpenClaw、WorkBuddy、Weknora等等。
+- [cube-ai/dsh-weixin-channel](https://github.com/cube-ai/dsh-weixin-channel) — DSH微信频道：把个人微信机器人接入本机 DeepSeek Harness，在微信里随时驱动本机智能体。基于 MichengAI/dsh-im-connect（Apache-2.0）改造，删去其它 IM 通道、定制化界面开发并重命名标识，因此可与上游同装。
 - [CWNU-Open-Source-Community/dsh-webgate](https://github.com/CWNU-Open-Source-Community/dsh-webgate) — Web GUI 远程访问：局域网二维码直连、cloudflared 快速隧道、frp 自有服务器反代，内置登录门户，并放行设置接口。
 - [CY-W-2000/dsh-lan-access](https://github.com/CY-W-2000/dsh-lan-access) — DSH 局域网/远程访问网关：把 Web 界面开放在本机或 0.0.0.0（密码保护或显式无密码模式，带过期快捷选项），并单独开放仅对话端口，供其他 Agent 通过 HTTP 接入，支持选择工作区、Token 或免 Token 认证与独立生效时间。局域网分享需要主动开启：它把 Web UI 端口改绑到 0.0.0.0，让其他设备使用完整的 DSH 界面，默认需要密码；不设密码的模式要先确认安全警告。
 - [cyuni1996/dsh-watch](https://github.com/cyuni1996/dsh-watch) — 在 Android 手表上继续 DeepSeek Harness 会话，支持通过电脑端向导安装手表应用。
