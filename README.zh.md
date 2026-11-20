@@ -1828,7 +1828,7 @@ dsh plugin --profile web add dshmarket
 - [raven3005672/dsh-plugin-highlight-notes](https://github.com/raven3005672/dsh-plugin-highlight-notes) — 在回答里标出任意一段文字、写上备注，再把引用放回输入框当作带上下文的指令发出。
 - [Ravi666688/dsh-screen-glow](https://github.com/Ravi666688/dsh-screen-glow) — 为 DeepSeek Harness 加光：模型接管键盘鼠标时屏幕四边亮蓝光、提问时琥珀、等你批准时红色，并在屏幕中上方显示正在做什么。仅桌面端：覆盖层是独立 Electron 进程（从 DSH 桌面版或 dsh-pet 自动查找，可用 DSH_ELECTRON_PATH 覆盖），没有 Electron 时不会亮。
 - [rayafriandion/dsh-oc-tui](https://github.com/rayafriandion/dsh-oc-tui) — 受 opencode 启发的 DeepSeek Harness 终端界面，以 dsh profile 应用插件形式启动，提供会话侧栏、流式聊天、markdown 工具卡片、待办列表、斜杠命令建议、带上下文用量表的遥测底栏与内联审批提示。
-- [Rayle8/dsh-aside-note](https://github.com/Rayle8/dsh-aside-note) — 对话旁的会话级便笺：会话右上角入口用角标显示未完成数量，点开是可拖拽调宽高的右侧面板，便笺可添加、勾选完成、复制、编辑和一键转发到输入框，面板尺寸与草稿保存在浏览器本地。
+- [Rayle8/dsh-aside-note](https://github.com/Rayle8/dsh-aside-note) — 旁边记（AsideNote）是对话旁的轻量便笺（便签）与待办清单：会话右上角入口带未完成角标，点开是可拖拽调宽高的右侧面板。默认同一工作区共享一份清单，也能切回当前会话；便笺保存在 DSH 宿主文件里，刷新、重启、换浏览器都不丢。支持勾选完成、已完成回看、清除已完成、复制、编辑、删除，一键把便笺转发到当前输入框（前缀可自定义、不自动发送），草稿按工作区保存，跟随明暗主题与 DSH 的 8 种官方语言。
 - [RCYD857/857-dsh-file-attach](https://github.com/RCYD857/857-dsh-file-attach) — 把文件或图片拖进 DSH Web 输入框，以一排小卡片展示，发送时以 @path 引用传给模型。
 - [RDYRD/dsh-drag-out](https://github.com/RDYRD/dsh-drag-out) — 把对话里交付的文件直接拖进微信、Word 等应用：拖出去的是磁盘上的真实文件，需在 DSH 桌面应用中使用。
 - [ReachGa0/dsh-desktop#plugin](https://github.com/ReachGa0/dsh-desktop/tree/main/plugin) — dsh 插件（dsh-desktop-launcher）：在对话中一键启动 dsh-desktop Windows Electron 桌面壳——双击即用、无需终端；支持选区截图提问（GPU 实时框选、自动粘贴到聊天框、配合识图插件 AI 直接看图回答）、系统托盘、会话管理、环境自动引导、可换端口、单实例锁。
