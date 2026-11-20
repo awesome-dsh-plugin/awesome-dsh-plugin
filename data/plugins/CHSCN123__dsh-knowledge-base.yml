@@ -1,0 +1,6 @@
+url: https://github.com/CHSCN123/dsh-knowledge-base
+name: CHSCN123/dsh-knowledge-base
+category: memory
+description:
+  en: 'Local Markdown knowledge base: drop files into the Settings card to extract their text as notes, with in-card preview, two-click delete and an auto-rebuilt index.'
+  zh: '本地 Markdown 知识库：把文件拖进设置卡片即提取为笔记，支持卡内预览、两击删除与自动重建索引。'
