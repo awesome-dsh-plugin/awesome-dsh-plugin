@@ -1,5 +1,5 @@
-url: https://github.com/khglobal/dsh-universe/tree/dev/plugin
-name: khglobal/dsh-universe#plugin
+url: https://github.com/khglobal/dsh-universe
+name: khglobal/dsh-universe
 category: usage
 description:
   en: 'Real-time AI agent monitor that draws DSH sessions, agents and scheduled tasks across all workspaces as a live pixel city: sessions are buildings, agents are people, with views for failed calls, token use per model, call volume, schedules and agents waiting on you, a timeline replay of the day and a screen-reader list view. Since 0.3.0, Claude (Claude Code and the Claude app), ChatGPT (Codex) and WorkBuddy sessions on the same device appear as neighbouring cities; each source can be turned off. Metadata only, nothing leaves the device. Published on npm as @khglobal/dsh-universe; source-available licence.'
