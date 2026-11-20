@@ -1,0 +1,13 @@
+# Entry for the curated catalog behind DSH Market and awesome-dsh-plugin.
+# Submission: fork github.com/awesome-dsh-plugin/awesome-dsh-plugin and copy
+# this file to data/plugins/daoyan2142__dsh-repot.yml
+url: https://github.com/daoyan2142/dsh-repot
+name: daoyan2142/dsh-repot
+category: dev
+
+description:
+  en: 'Carries a DSH environment between machines through one private GitHub or Gitee repository: third-party plugins (reinstalled from a version, or carried as a tarball or source tree), the four profile configuration files, and folder snapshots. A restore resolves each folder through an absolute path, a registered root, or a confirmed new path, compares file by file, leaves locally edited files alone, backs up anything it replaces, and refuses writes that escape a root, cross a junction, or land on a directory the plugin does not own. Configuration files and folder contents are uploaded as they are (no secret scrubbing) and the plugin does not check that the repository is private; the access token stays in the credentials service, and on first start a GIT_SYNC_* token left by dsh-plugin-git-sync is copied over. Needs Node 22.12 or later.'
+  zh: '通过一个私有 GitHub / Gitee 仓库在机器之间搬运 DSH 环境：第三方插件（按版本重装，或携带 tarball / 源码目录）、四个 profile 配置文件、以及文件夹快照。还原时逐文件比对，本机改过的文件不覆盖，被替换的文件先备份，并按绝对路径、已登记的根、或显式确认三级解析落点；逃出根、穿越 junction、覆盖非本插件目录的写入一律拒绝。配置文件和文件夹内容原样上传（不做密钥脱敏），插件也不检查仓库是否私有；访问令牌保存在凭据服务里，首次启动会把 dsh-plugin-git-sync 留下的 GIT_SYNC_* 令牌复制过来。需要 Node 22.12 及以上。'
+
+# Storefront tile: GitHub-hosted raster, drawn at ~96 px.
+icon: https://raw.githubusercontent.com/daoyan2142/dsh-repot/main/assets/icon.png

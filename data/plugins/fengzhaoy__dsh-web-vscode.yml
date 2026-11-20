@@ -1,0 +1,6 @@
+url: https://github.com/fengzhaoy/dsh-web-vscode
+name: fengzhaoy/dsh-web-vscode
+category: ui
+description:
+  en: 'VS Code tabs for the dsh web client: one after the chat view and one in the right sidebar, both an embedded code-server workbench on the current session''s directory; the iframe stays mounted outside React so switching tabs only hides it, one code-server process per session on 127.0.0.1 with no auth, and a missing code-server shows the probed paths with install commands and a retry button. Each code-server runs with --auth none on 127.0.0.1, so anything on this machine that can reach that port gets the workbench, including its integrated terminal.'
+  zh: 'dsh Web 客户端的 VS Code 标签页：会话视图里（对话之后）和右侧栏各一个，内嵌 code-server 工作区，工作区跟随当前会话目录；iframe 挂载在 React 之外，切走只是隐藏、切回不重载，每个会话在 127.0.0.1 上独享一个免认证的 code-server 进程；未安装 code-server 时列出探测过的路径并给出安装命令与重试按钮。每个 code-server 以 --auth none 监听 127.0.0.1，本机上任何能访问该端口的程序都能使用这套工作台，包括其集成终端。'

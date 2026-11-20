@@ -1,0 +1,6 @@
+url: https://github.com/zhangxinleilyf/dsh-xixi-body
+name: zhangxinleilyf/dsh-xixi-body
+category: tools
+description:
+  en: 'Diet, workout and body-metric tracker for DeepSeek Harness: 12 agent tools log meals, sets, water and weigh-ins from plain chat, and a six-tab left-sidebar panel shows the day, the week, sodium/sugar intake, e1RM and the body-weight trend. Local SQLite only, no network, works without any persona plugin.'
+  zh: '饮食 / 训练 / 身体记录：12 个工具在对话里记下吃了什么、练了什么、称了多少，左栏六页签面板看当天与本周、钠糖饮水、e1RM 和体重曲线。纯本地 SQLite，不联网，不依赖任何人设插件。'

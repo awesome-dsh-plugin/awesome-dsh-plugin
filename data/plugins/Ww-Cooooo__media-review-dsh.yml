@@ -1,0 +1,7 @@
+url: https://github.com/Ww-Cooooo/media-review-dsh
+name: Ww-Cooooo/media-review-dsh
+category: workflow
+description:
+  en: 'A Windows Harness adaptation of [Media Review Skill](https://github.com/Ww-Cooooo/media-review) for AI video feedback: annotate frame regions or time ranges and jump to recognized speech or imported subtitle cues; other Agents with local file and command access can use the original Skill. Windows only and built for DSH 0.2.2-rc.1 (a 0.1.0 release candidate). Waveforms use an existing FFmpeg/ffprobe and transcripts an existing Whisper; without them, manual annotation and subtitle import still work.'
+  zh: '让 AI 视频改稿反馈更直接：框选画面、拖选时间段或定格写意见，点击识别台词或导入字幕定位；基于 [Media Review Skill](https://github.com/Ww-Cooooo/media-review) 改造的 Windows Harness 插件，其他支持本机文件访问与命令执行的 Agent 可用原版 Skill。仅限 Windows，适配 DSH 0.2.2-rc.1（0.1.0 预发布版）。波形用本机已有的 FFmpeg / ffprobe，语音识别用已有的 Whisper；缺少时仍可手动标注和导入字幕。'
+tarball: https://github.com/Ww-Cooooo/media-review-dsh/releases/download/v0.1.0-rc.8/media-review-dsh-0.1.0-rc.8.tgz

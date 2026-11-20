@@ -1,0 +1,7 @@
+url: https://github.com/Lone-Jade/dsh-side-chat
+name: Lone-Jade/dsh-side-chat
+category: ui
+description:
+  en: 'Parallel side chat in the right sidebar: reads the main conversation as background and stays read-only, without interrupting it.'
+  zh: '右侧栏并行侧边聊天：读取主对话最近文本作为背景，围绕当前任务答疑，只读、不打断主对话。'
+icon: https://raw.githubusercontent.com/Lone-Jade/dsh-side-chat/main/assets/icon-180.png

@@ -1,0 +1,7 @@
+url: https://github.com/Wanqiu12345/dsh-session-matrix
+name: Wanqiu12345/dsh-session-matrix
+category: session
+description:
+  en: Run up to four native sessions side by side, trace how subagents connect, and hand work over before context compaction.
+  zh: 最多四栏原生会话并排运行，梳理子代理关系，在上下文自行压缩前把工作交接出去。
+icon: https://raw.githubusercontent.com/Wanqiu12345/dsh-session-matrix/main/assets/icon-180.png

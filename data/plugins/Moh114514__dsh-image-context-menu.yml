@@ -1,0 +1,7 @@
+url: https://github.com/Moh114514/dsh-image-context-menu
+name: Moh114514/dsh-image-context-menu
+category: ui
+description:
+  en: 'Adds a right-click menu with five original-image actions — open in a tab, copy the PNG, add to the composer without sending, reveal the file, download — to Codex-generated images and to images you send yourself, as a companion to dsh-codex-subscription.'
+  zh: 'dsh-codex-subscription 的配套插件，为 Codex 生成的图片和你自己发送的图片添加右键菜单，提供在新标签页打开、复制原图、加入输入框（不自动发送）、显示文件位置和下载原图五项操作。'
+tarball: https://github.com/Moh114514/dsh-image-context-menu/releases/download/v0.1.3/dsh-image-context-menu-0.1.3.tgz

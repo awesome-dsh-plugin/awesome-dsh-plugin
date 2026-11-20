@@ -1,0 +1,6 @@
+url: https://github.com/mimidor/dsh-stock-dock
+name: mimidor/dsh-stock-dock
+category: ui
+description:
+  en: 'Configurable A-share, Hong Kong and US quote strip under the DSH composer, with watchlist groups and drag reordering, search, logos, mini charts, intraday 1/3/5-day, 5-60 minute and daily/weekly/monthly K-lines, custom MA periods and a colour legend, on-demand historical intraday from a daily bar, volume alerts, a narrow five-level order book, compare overlay, session-aware polling, and a settings page with full-history warm-up. Minute history is cached (A-share up to 5001 bars, 4111 for 60m; Hong Kong/US 640); data comes from public Tencent, Sina and Eastmoney endpoints. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 'DSH 输入框下方的 A 股、港股、美股自选股行情条：分组拖拽排序、搜索、标的 logo、迷你图、分时 1/3/5 日、5–60 分钟和日/周/月 K 线、自定义均线与颜色图例、点日 K 按需查看当日分时、放量提醒、右侧五档盘口、叠加对比、交易时段轮询，以及带全量加载进度的设置页。分钟历史落盘缓存（A 股最多 5001 根，60 分钟 4111 根；港美股 640 根）；数据来自腾讯、新浪、东财公开接口。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

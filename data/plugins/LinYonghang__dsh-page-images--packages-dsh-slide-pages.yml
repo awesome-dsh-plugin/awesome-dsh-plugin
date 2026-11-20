@@ -1,0 +1,6 @@
+url: https://github.com/LinYonghang/dsh-page-images/tree/main/packages/dsh-slide-pages
+name: LinYonghang/dsh-page-images#dsh-slide-pages
+category: docs
+description:
+  en: Renders a .pptx/.ppt/.odp attachment into one PNG per slide by exporting the deck to PDF first, posts the slides with the deck text outline, and exposes a slide_pages tool.
+  zh: 把 .pptx/.ppt/.odp 附件逐页渲染成图片（先导出 PDF 再栅格化）并发回对话，附带整份 deck 的文字大纲，另提供 slide_pages 工具。

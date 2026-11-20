@@ -1,0 +1,6 @@
+url: https://github.com/SonettoGu14/dsh-tokeneconomizer/tree/master/packages/cost
+name: SonettoGu14/dsh-tokeneconomizer#packages/cost
+category: usage
+description:
+  en: 'Per-repository and per-session ledger of cache-weighted equivalent tokens: it folds each DSH session into one number, keeps the recent sessions as history, prices an unknown model with the default weights instead of refusing to run, and prints the totals through /te-cost.'
+  zh: '按仓库与会话记录缓存加权后的等效 token：把每个 DSH 会话折算成一个数字，保留最近若干会话的历史，遇到未知模型时用默认权重兜底而不是拒绝运行，并通过 /te-cost 打印合计。'

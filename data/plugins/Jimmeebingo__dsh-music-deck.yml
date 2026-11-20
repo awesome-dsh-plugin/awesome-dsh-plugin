@@ -1,0 +1,7 @@
+url: https://github.com/Jimmeebingo/dsh-music-deck
+name: Jimmeebingo/dsh-music-deck
+category: ui
+description:
+  en: 'Floating music controls that only show QQ Music, NetEase Cloud Music, and Spotify when they publish Windows system media sessions. Windows only.'
+  zh: '悬浮音乐控制卡片，只显示向系统发布媒体会话的 QQ音乐、网易云音乐和 Spotify。仅限 Windows。'
+icon: https://raw.githubusercontent.com/Jimmeebingo/dsh-music-deck/main/assets/icon-180.png

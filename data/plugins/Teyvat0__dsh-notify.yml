@@ -1,0 +1,7 @@
+url: https://github.com/Teyvat0/dsh-notify
+name: Teyvat0/dsh-notify
+category: notify
+description:
+  en: 'Shows a Windows toast notification when a DeepSeek Harness run finishes, a tool approval is requested, or a question is waiting for an answer.'
+  zh: 'DeepSeek Harness 任务跑完、需要批准工具调用或等你回答问题的时候，弹出 Windows 系统通知。'
+icon: https://raw.githubusercontent.com/Teyvat0/dsh-notify/main/assets/icon-180.png

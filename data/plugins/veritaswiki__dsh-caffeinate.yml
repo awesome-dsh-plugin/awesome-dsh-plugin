@@ -1,0 +1,7 @@
+url: https://github.com/veritaswiki/dsh-caffeinate
+name: veritaswiki/dsh-caffeinate
+category: tools
+description:
+  en: 'Runs macOS caffeinate with -w bound to the DSH host process id, so the sleep-prevention process exits when the host exits, and exposes /keepawake to report status and switch sleep-prevention modes. macOS only and on by default: from startup it keeps the Mac from idle sleep (and from system sleep on AC power) until DSH exits, while the display may still sleep; /keepawake running or off narrows it.'
+  zh: '以 -w 把 macOS caffeinate 绑定到 DSH 宿主进程 pid，宿主退出即随之退出；并提供 /keepawake 指令查看状态与切换防休眠模式。仅限 macOS，默认开启：DSH 启动后就阻止 Mac 空闲休眠（接交流电时也阻止整机休眠），直到 DSH 退出，屏幕仍可息屏；用 /keepawake running 或 off 可收窄。'
+icon: https://raw.githubusercontent.com/veritaswiki/dsh-caffeinate/main/assets/icon-180.png

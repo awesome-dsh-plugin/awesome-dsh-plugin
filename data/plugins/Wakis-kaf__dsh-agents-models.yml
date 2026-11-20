@@ -1,0 +1,6 @@
+url: https://github.com/Wakis-kaf/dsh-agents-models
+name: Wakis-kaf/dsh-agents-models
+category: tools
+description:
+  en: 'Defines DSH agent modes as real presets, each with its own persona, tool set and mounted plugins, including a pure mode that starts with no capability at all.'
+  zh: '把 DSH 的智能体模式定义成真正的预设：每个模式有自己的角色设定、工具集与插件挂载，并提供一个完全不加载任何能力的 pure 模式。'

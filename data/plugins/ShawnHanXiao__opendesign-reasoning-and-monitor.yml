@@ -1,0 +1,6 @@
+url: https://github.com/ShawnHanXiao/opendesign-reasoning-and-monitor
+name: ShawnHanXiao/opendesign-reasoning-and-monitor
+category: usage
+description:
+  en: 'OpenDesign in DeepSeek Harness: fills in the reasoning-effort levels an OpenDesign model API is missing, leaving any the user already set alone, and shows the used percentage of the 5-hour and weekly quotas as a pill in the conversation header, visible only while the session runs an OpenDesign model.'
+  zh: '为 OpenDesign 模型 API 自动补齐缺失的思考深度档位（用户已设的不动），并在对话右上角显示 5 小时与 1 周额度的已用百分比；只在当前会话使用 OpenDesign 模型时出现。'

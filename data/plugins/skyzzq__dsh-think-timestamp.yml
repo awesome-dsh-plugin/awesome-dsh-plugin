@@ -1,0 +1,7 @@
+url: https://github.com/skyzzq/dsh-think-timestamp
+name: skyzzq/dsh-think-timestamp
+category: ui
+tarball: https://github.com/skyzzq/dsh-think-timestamp/releases/latest/download/dsh-think-timestamp.tgz
+description:
+  en: High-precision East-8 thinking timestamp and duration counter for DeepSeek Harness desktop without prompt modification.
+  zh: 纯前端交互的 DSH 思考输出东八区时间戳与耗时引擎，脱离提示词且思考完成后完整保留耗时。

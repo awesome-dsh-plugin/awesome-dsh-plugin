@@ -1,0 +1,6 @@
+url: https://github.com/shamojun/workmemory/tree/main/packages/workmemory
+name: shamojun/workmemory#packages/workmemory
+category: memory
+description:
+  en: 'Workspace long-term memory for DSH: records rationale, lessons and constraints that files never capture, then injects them into later sessions automatically.'
+  zh: 'DSH 工作区长期记忆：记录文件里不会写的取舍理由、失败教训与边界约束，并在后续会话中自动注入。'

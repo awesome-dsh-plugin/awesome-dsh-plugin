@@ -2,6 +2,6 @@ url: https://github.com/Oak-liuhj/dsh-session-rollover
 name: Oak-liuhj/dsh-session-rollover
 category: session
 description:
-  en: 'Automatically split long DSH conversations into volumes (every 10 user messages by default) with todo handoff snapshots, source navigation and read-only archives.'
-  zh: '长会话默认每 10 条用户消息自动分卷，携带待办交接快照继续工作，支持来源回溯与归档只读。'
+  en: 'Split long DSH conversations every 10 user messages by default, with todo handoff snapshots, source links and read-only archives; declares DSH 0.2.1-rc.5 or >=0.2.2-rc.1 <0.3.0-0 compatibility.'
+  zh: '长会话默认每 10 条用户消息自动分卷，支持待办快照续接、来源回溯及归档只读；声明兼容 DSH 0.2.1-rc.5 或 >=0.2.2-rc.1 <0.3.0-0。'
 icon: https://raw.githubusercontent.com/Oak-liuhj/dsh-session-rollover/main/assets/icon.png

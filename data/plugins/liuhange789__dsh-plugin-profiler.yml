@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/dsh-plugin-profiler
+name: liuhange789/dsh-plugin-profiler
+category: usage
+description:
+  en: "Plugin load audit for your installed set. `/diet` prints one card: context tokens per request, hot-path host time outside the tool body, listener fan-out per plugin, and which three plugins to look at first, plus per-tool context pricing. Reads the running event bus and tool registry only, never patches another plugin, writes no files and makes no network calls. The card states its boundary: rc.7 exposes no per-listener timing, so the cut list is fan-out, not per-plugin milliseconds."
+  zh: "DSH 插件税体检。`/diet` 输出一张卡片：每次请求的工具定义占多少 token、热路径上工具体之外的宿主耗时、每个插件在热路径上挂了多少监听器、先看哪三个插件，另附逐工具上下文成本。只读运行中的事件总线与工具注册表，不修改其他插件，不写文件，不发网络请求。卡片写明边界：rc.7 没有逐监听器耗时接口，“先拆谁”给的是监听器扇出，不是逐插件毫秒数。"

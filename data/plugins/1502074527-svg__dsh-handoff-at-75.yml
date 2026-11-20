@@ -1,0 +1,7 @@
+url: https://github.com/1502074527-svg/dsh-handoff-at-75
+name: 1502074527-svg/dsh-handoff-at-75
+category: session
+description:
+  en: 'Hands off a conversation when context usage reaches a configured threshold: writes a handoff document into the project and continues the task in a new session in the same workspace, with the new title carrying a -N suffix, an optional translucent four-color status tint on sidebar session rows, and a configurable model + reasoning effort for the handoff conversation (also selectable in a prompt at handoff time).'
+  zh: '上下文用量达到设定阈值时自动交接：把交接文档写入项目目录，并在同一工作区的新会话中续接任务，新会话标题带 -N 后缀，并可为侧栏会话行叠加半透明四色状态染色（可开关）；新会话的模型与推理强度可预先设定，也可在交接时弹卡现选。'
+icon: https://raw.githubusercontent.com/1502074527-svg/dsh-handoff-at-75/main/assets/icon-180.png

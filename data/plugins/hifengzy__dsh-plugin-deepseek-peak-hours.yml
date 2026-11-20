@@ -1,0 +1,7 @@
+url: https://github.com/hifengzy/dsh-plugin-deepseek-peak-hours
+name: hifengzy/dsh-plugin-deepseek-peak-hours
+category: usage
+description:
+  en: 'A composer badge that shows whether DeepSeek API usage bills at the peak or off-peak rate right now, and on click the price table for that window: input cache hit, input cache miss and output, in CNY per million tokens, for FLASH and PRO. It sits in the statistics row under the composer right of the context meter, and in the New Session options row. The schedule follows the official pricing page — Beijing time, Monday to Friday except Chinese statutory holidays, 09:00-12:00 and 14:00-18:00 peak, weekends and holidays off-peak all day — with statutory holiday data for 2026 and 2027. One timer fires at the next boundary instead of polling. Client-only, no network requests, no dependencies.'
+  zh: '输入框底部徽标：实时显示 DeepSeek API 当前按峰时还是闲时计费，点击弹出该时段的价目表——输入缓存命中、输入缓存未命中、输出，元/百万 tokens，分 FLASH 与 PRO 两列。位置在输入框下方统计行、内置「上下文已用」右侧，新会话时在输入框上方选项行。时段遵循官方定价页：北京时间周一至周五（法定节假日除外）09:00-12:00、14:00-18:00 为峰时，周末与法定节假日全天闲时；内置 2026、2027 年法定节假日数据。只在下一个时段边界装一个定时器，不做轮询。纯客户端插件，不发网络请求、无依赖。'
+icon: https://raw.githubusercontent.com/hifengzy/dsh-plugin-deepseek-peak-hours/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/sezhiyanhua/dsh-dual-mode
+name: sezhiyanhua/dsh-dual-mode
+category: ui
+description:
+  en: Run your own chat.deepseek.com web account inside DeepSeek Harness - chat with the real web model and turn the conversation into a Harness task with one click, then send the result back to the web chat. Starts a persistent Chrome or Edge profile with remote debugging on 127.0.0.1:9410 that keeps your chat.deepseek.com login.
+  zh: 在 DeepSeek Harness 里直接使用你自己的 chat.deepseek.com 网页账号聊天，对话可一键变成 Harness 任务，执行结果也能一键回传网页模型继续讨论。会启动一个持久的 Chrome 或 Edge 配置，在 127.0.0.1:9410 开远程调试并保存你的 chat.deepseek.com 登录态。

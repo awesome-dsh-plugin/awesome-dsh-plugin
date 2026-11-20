@@ -1,0 +1,7 @@
+url: https://github.com/JokesLin/dsh-moonstyle
+name: JokesLin/dsh-moonstyle
+category: theme
+description:
+  en: 'Moonlight theme: cool-white light and navy dark palettes, rounded Latin type in light mode, assistant replies in bubbles or plain flow, minimal sidebar chrome, stepless body and sidebar ink weight, a 4-12 character sidebar title cap, and optional idle timestamps. Clicking the 工作区 label reveals archived sessions; Up/Down step through sessions.'
+  zh: '月光主题：冷白浅色与海军蓝深色两套配色，浅色下用圆润拉丁字体，助手回复可选气泡或平铺，侧栏可精简，正文与侧栏字重各自无级可调，侧栏标题长度 4–12 字可调，空闲时间戳可隐藏；点侧栏「工作区」展开已归档会话，上下方向键切换会话。'
+icon: https://raw.githubusercontent.com/JokesLin/dsh-moonstyle/main/assets/icon-512.png

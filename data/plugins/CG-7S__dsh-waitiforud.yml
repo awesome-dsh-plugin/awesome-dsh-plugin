@@ -1,0 +1,6 @@
+url: https://github.com/CG-7S/dsh-waitiforud
+name: CG-7S/dsh-waitiforud
+category: workflow
+description:
+  en: 'In a folder that has already been used for a task, the model still reads its contents when the next task starts, which can mix up the context, add thinking overhead and spend extra tokens. This plugin creates a fresh empty folder after every completed task, pins it to the top of the workspace for the next task, and renames the finished folder after the task content. Everything runs locally and is safe and reliable.'
+  zh: '在一个文件夹里执行过任务后，开始下一个任务时模型仍会查看该文件夹内的内容，可能造成上下文混乱、思考量过多、额外消耗 token 等；本插件在每次完成任务后生成一个新的空文件夹并置顶在工作区等待调用，原文件夹会根据任务内容命名，全程在本地执行，安全可靠。'

@@ -1,0 +1,7 @@
+url: https://github.com/changmingjuebumaimeng3666/dsh-metabolism
+name: changmingjuebumaimeng3666/dsh-metabolism
+category: memory
+description:
+  en: 'Context metabolism for DSH: every span a compaction removes is archived to local files and replaced with a one-line pointer, so the original words can be recalled later by keyword or date.'
+  zh: '上下文代谢：每次压缩掉的原文都归档到本地，只留一行指针；需要细节时按关键词或日期把原话捞回来。'
+icon: https://raw.githubusercontent.com/changmingjuebumaimeng3666/dsh-metabolism/main/assets/icon-180.png

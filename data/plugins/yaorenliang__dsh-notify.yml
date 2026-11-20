@@ -1,0 +1,6 @@
+url: https://github.com/yaorenliang/dsh-notify
+name: yaorenliang/dsh-notify
+category: notify
+description:
+  en: 'Conversation notifications for DSH in one plugin: browser system notifications with per-kind sound and Bark push to the phone, classified once on the Host so both channels always agree. Quiet while the session is on screen, 900 ms debounce so a queued continuation cancels the card, one alert per happening, with per-kind sounds and an optional tap-through to the session.'
+  zh: '一个插件管两种通知：浏览器系统通知（按类型配声音）与手机 Bark 推送，事件在 Host 侧只分类一次，两个通道永远一致。正在看这个会话时不打扰，900 毫秒去抖让连续追问只响一次，同一件事只提醒一次，可按事件类型配置声音，点击通知可跳回会话。'

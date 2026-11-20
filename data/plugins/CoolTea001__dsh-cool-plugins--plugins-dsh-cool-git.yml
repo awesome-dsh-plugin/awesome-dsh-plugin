@@ -1,0 +1,6 @@
+url: https://github.com/CoolTea001/dsh-cool-plugins/tree/master/plugins/dsh-cool-git
+name: CoolTea001/dsh-cool-plugins#dsh-cool-git
+category: git
+description:
+  en: 'Git plugin — adds a Git panel to the session tab bar: changes, commits, history, branches, remote sync, and merge-conflict resolution in one place, with AI-written commit messages.'
+  zh: 'Git 插件 —— 会话 Tab 栏中添加 Git 管理面板，变更、提交、历史、分支、远端同步、合并冲突一站完成，Message 可 AI 生成。'

@@ -1,0 +1,6 @@
+url: https://github.com/180lisilence/dsh-floating-ball
+name: 180lisilence/dsh-floating-ball
+category: ui
+description:
+  en: A draggable quick-action floating ball above the DSH harness shell, with shortcuts for new session, sidebar toggle, theme switch, and back-to-chat.
+  zh: 一颗挂在 DSH 外壳最上层的可拖拽快捷悬浮球，一键新建会话、切换侧栏、切主题、回到对话。

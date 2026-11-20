@@ -1,0 +1,6 @@
+url: https://github.com/liuhange789/dsh-patient-education
+name: liuhange789/dsh-patient-education
+category: workflow
+description:
+  en: 'Turns decisions a doctor has already made into a patient-readable after-visit guide: one-sentence diagnosis, medication table (name / how to take / for how long / caution), diet & activity, follow-up, and when to seek urgent care. A hard-coded template filled with the input verbatim: no model-written medical text, no advice, no diagnosis, no medication recommendation; a doctor must review the output before it reaches a patient.'
+  zh: '把医生已经做出的决定排成患者看得懂的《您的就诊须知》：诊断一句话、用药表格（药名/怎么吃/吃多久/注意事项）、饮食与活动、复查、什么情况需要立即就医。模板硬编码、只填医生原话，不生成任何医学表述，不给建议、诊断或用药推荐；交付患者前须医生审核。'

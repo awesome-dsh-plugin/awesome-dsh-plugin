@@ -1,0 +1,7 @@
+url: https://github.com/Leica-Shen/deepseek-harness-group-chat
+name: Leica-Shen/deepseek-harness-group-chat
+category: session
+description:
+  en: 'Turns existing DeepSeek Harness sessions into a group that works like colleagues: message members with @alias, #role or *, while each session keeps its own context, model and workspace. Adds role assignment, audited notes, human-priority delivery, unread and nudge, plus fan-out caps, cooldown, dedupe and daily token budgets; group state stays on the local machine.'
+  zh: '把 DeepSeek Harness 里已经开着的多个会话拉进一个群，像同事一样按角色分工协作：用 @别名、#角色 或 * 发消息，各会话保留自己的上下文、模型和工作区，不合并上下文，默认不打断当前回合。支持角色分工、审计笔记、人类优先投递、未读与催复，以及 fan-out 上限、冷却、去重和每日 Token 预算；群记录与配置只保存在本机。'
+icon: https://raw.githubusercontent.com/Leica-Shen/deepseek-harness-group-chat/main/assets/icon-180.png

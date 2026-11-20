@@ -1,0 +1,7 @@
+url: https://github.com/Mianbier/dsh-mimo-web-login
+name: Mianbier/dsh-mimo-web-login
+category: model
+tarball: https://github.com/Mianbier/dsh-mimo-web-login/releases/download/v1.9.1/dsh-mimo-web-login-1.9.1.tgz
+description:
+  en: 'Xiaomi MiMo AI Studio web models as a DSH provider, authenticating with browser login cookies instead of an API key. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把小米 MiMo AI Studio 网页端接入 DSH 作为模型 provider，用浏览器登录态鉴权，而不是 API Key。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

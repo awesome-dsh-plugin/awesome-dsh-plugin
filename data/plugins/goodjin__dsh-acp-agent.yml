@@ -1,0 +1,7 @@
+url: https://github.com/goodjin/dsh-acp-agent
+name: goodjin/dsh-acp-agent
+category: model
+tarball: https://github.com/goodjin/dsh-acp-agent/releases/download/v0.3.2/dsh-acp-agent-0.3.2.tgz
+description:
+  en: 'Adds external agents to DeepSeek Harness as model rows - seven presets covering GLM (ZCode), MiniMax, Claude, Codex, Grok, Cursor and Qoder - together with the browser-side roster, per-provider quota pills and a self-report health route. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '把外部 agent 以模型行的方式接进 DeepSeek Harness：七条预设覆盖 GLM（ZCode）、MiniMax、Claude、Codex、Grok、Cursor 与 Qoder，并附带浏览器侧的名册、各家配额胶囊和一个自报健康路由。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

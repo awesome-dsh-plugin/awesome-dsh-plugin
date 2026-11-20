@@ -1,0 +1,6 @@
+url: https://github.com/rifat-h/dsh-peak-hours
+name: rifat-h/dsh-peak-hours
+category: usage
+description:
+  en: Adds a status pill to the DSH Web UI that shows whether DeepSeek API peak pricing is active, with a countdown to the next peak or off-peak switch, the official rule in a tooltip, and Chinese public holidays excluded from peak.
+  zh: 在 DSH Web 界面右下角常驻一个状态挂件，显示 DeepSeek API 当前是否为高峰时段，倒计时到下次高峰/低峰切换；悬停可看官方规则，高峰判定已排除中国法定节假日。

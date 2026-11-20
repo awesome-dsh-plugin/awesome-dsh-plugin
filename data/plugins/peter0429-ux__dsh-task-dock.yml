@@ -1,0 +1,6 @@
+url: https://github.com/peter0429-ux/dsh-task-dock
+name: peter0429-ux/dsh-task-dock
+category: ui
+description:
+  en: 'A draggable dock in the top-left corner of the DSH window that stacks three groups in one fixed order: sessions blocked on a person (a tool waiting for approval or the model waiting on an answer), then sessions running right now, then results that finished while you were not looking. Each row opens its session, the collapsed chip shows one count per group, dragging the chip or the title bar moves it anywhere while rows stay clickable, and a single Settings row can switch the whole dock off. It observes only: the Host half records the two blocking paths and hands the request straight to the real answerer without changing the decision.'
+  zh: '贴在 DSH 窗口左上角的可拖动任务坞，三组按固定顺序排列：先是要人处理的会话（工具等待批准，或模型等待回答），再是此刻正在执行的会话，最后是你没看时跑完的结果。点任意一行直接打开对应会话，收起态的小胶囊显示三组各自的计数；拖胶囊或标题栏可以把它挪到任意位置，行依然可点；设置里一行开关能整体关掉。它只观察不干预：Host 侧记下两条阻塞路径的请求后原样交给真正的应答方，不改变任何判定。'

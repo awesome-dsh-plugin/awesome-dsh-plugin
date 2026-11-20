@@ -1,0 +1,6 @@
+url: https://github.com/majia007/dsh-remote-web-ui
+name: majia007/dsh-remote-web-ui
+category: remote
+description:
+  en: "Password-protected entry to the local DSH Web UI: an independent loopback reverse proxy with its own login, no relay server, no account system and no built-in public channel; bring your own tunnel and TLS. It also pins the in-page workspace directory dialog, so creating workspaces works from a remote browser."
+  zh: "本机 DSH Web UI 的密码保护入口：独立回环反向代理自带登录，不提供公网渠道、不经过中转服务器、没有账号体系；公网隧道与 TLS 由你自己接。另把工作区目录选择器固定为页内对话框，远端浏览器也能创建工作区。"

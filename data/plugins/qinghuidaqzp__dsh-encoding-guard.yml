@@ -1,0 +1,6 @@
+url: https://github.com/qinghuidaqzp/dsh-encoding-guard
+name: qinghuidaqzp/dsh-encoding-guard
+category: tools
+description:
+  en: 'Reads and edits GBK/GB18030, Big5, Shift_JIS, EUC-KR and UTF-16 files in their own encoding with encoded_read, encoded_edit and encoded_write; restores the UTF-8 BOM that edit, write and apply_patch drop and keeps CRLF files CRLF on write; appends the detected encoding to invalid-UTF-8 errors; and denies writes that introduce mojibake (U+FFFD, 锟斤拷, UTF-8 read as GBK or Latin-1).'
+  zh: '用 encoded_read、encoded_edit、encoded_write 按原编码读写 GBK/GB18030、Big5、Shift_JIS、EUC-KR 和 UTF-16 文件；补回 edit、write、apply_patch 删掉的 UTF-8 BOM，write 覆盖 CRLF 文件时保持 CRLF；在非 UTF-8 报错后附上检测到的编码；并拒绝会引入乱码（U+FFFD、锟斤拷、UTF-8 被当成 GBK 或 Latin-1）的写入。'

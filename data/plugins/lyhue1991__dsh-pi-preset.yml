@@ -1,0 +1,6 @@
+url: https://github.com/lyhue1991/dsh-pi-preset
+name: lyhue1991/dsh-pi-preset
+category: workflow
+description:
+  en: 'Pi agent preset with a Pi-style prompt, Pi coding tools, non-blocking Bash, and DSH skills and goals, running with full access.'
+  zh: 'Pi 智能体预设，提供 Pi 风格提示词、Pi 编程工具、非阻塞 Bash 和 DSH 技能及目标工具，以 Full access 权限运行。'

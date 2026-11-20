@@ -1,0 +1,6 @@
+url: 'https://github.com/SouthM/dsh-nanshan-session-manager'
+name: SouthM/dsh-nanshan-session-manager
+category: session
+description:
+  en: 'Browse, filter, search by ID, delete, restore, export, and import every local session. Its HTTP routes have no DSH access check, and they can delete and restore local sessions.'
+  zh: '浏览、筛选、按 ID 搜索、删除、恢复、导出和导入本机全部会话。它的 HTTP 路由没有 DSH 的访问检查，而这些路由可以删除和恢复本地会话。'

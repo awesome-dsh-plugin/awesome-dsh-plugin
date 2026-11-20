@@ -1,0 +1,7 @@
+url: https://github.com/zhuanglaihong/dsh-router-worker
+name: zhuanglaihong/dsh-router-worker
+category: workflow
+tarball: https://github.com/zhuanglaihong/dsh-router-worker/releases/latest/download/dsh-router-worker.tgz
+description:
+  en: "Draws a parent session's subagent sessions as an indented subtree in the left sidebar, and ships a Router/Worker mode: the coordinator hands out work as tickets, tickets persist to SQLite, queue against the host's concurrency limit, deliver results back to the parent conversation, and get swept when a worker goes silent. The subtree reads only the host's data-row-key and parent/child relation, never modifies the host row, and sizes itself from the theme font token."
+  zh: "在左侧会话列表里把子代理会话画成父会话的缩进子树，并自带「Router 项目经理模式」：协调者按工单派活，工单落 SQLite、按宿主并发上限排队、结果回流到主会话、worker 静默卡死时自动收尾。子树只读宿主的 data-row-key 与父子关系，不修改宿主行，缩进按主题字号计算。"

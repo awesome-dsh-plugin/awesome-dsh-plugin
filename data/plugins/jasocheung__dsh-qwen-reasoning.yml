@@ -1,0 +1,6 @@
+url: https://github.com/jasocheung/dsh-qwen-reasoning
+name: jasocheung/dsh-qwen-reasoning
+category: model
+description:
+  en: 'Auto-enhances manually-declared Qwen models with the full reasoning-effort levels (off/minimal/low/medium/high/xhigh/max) and defaults to max. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '为手动声明的千问（Qwen）模型自动补全推理强度档位（off/minimal/low/medium/high/xhigh/max），默认 max。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

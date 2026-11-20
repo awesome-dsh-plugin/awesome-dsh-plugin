@@ -1,0 +1,7 @@
+url: https://github.com/charce526/dsh-logo-swap
+name: charce526/dsh-logo-swap
+category: ui
+description:
+  en: Customize DeepSeek Harness branding — swap the sidebar and hero logos, rebuild the DeepSeek and Harness wordmark halves, edit the welcome headline, and toggle the preview badge.
+  zh: 替换 DeepSeek Harness 界面各处品牌元素——侧栏 Logo、品牌字标两半、对话页 Logo、欢迎语标语，预览版徽章开关。纯前端注入，不修改安装文件。
+icon: https://raw.githubusercontent.com/charce526/dsh-logo-swap/master/icon.png

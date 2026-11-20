@@ -1,0 +1,6 @@
+url: https://github.com/Frost-wu/dsh-token-saver-100
+name: Frost-wu/dsh-token-saver-100
+category: fun
+description:
+  en: 'Refuses every conversation model call and streams back “恭喜你，又省下了token！” instead, so a turn spends no tokens; a settings page counts how many calls it has refused. Requests that declare a purpose, such as chat titles and compaction, are left alone. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '拦下每一次对话模型调用，直接流回「恭喜你，又省下了token！」，于是一轮对话不花任何 token；设置页累计显示已拦下的调用次数。带 purpose 的后台请求（标题生成、上下文压缩等）不受影响。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'

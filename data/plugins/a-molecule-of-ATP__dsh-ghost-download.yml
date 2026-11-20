@@ -1,0 +1,7 @@
+url: https://github.com/a-molecule-of-ATP/dsh-ghost-download
+name: a-molecule-of-ATP/dsh-ghost-download
+category: tools
+description:
+  en: 'Drives Ghost Downloader through its official ghd CLI as eight tools sharing the desktop queue, with five checksum algorithms and an actionable next step when a download fails.'
+  zh: '通过 Ghost Downloader 官方 ghd 命令行提供八个工具，与桌面端共用同一队列；支持五种校验和，失败时给出可直接执行的下一步。'
+icon: https://raw.githubusercontent.com/a-molecule-of-ATP/dsh-ghost-download/main/assets/icon-180.png

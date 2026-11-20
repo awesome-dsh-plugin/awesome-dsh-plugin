@@ -1,0 +1,7 @@
+url: https://github.com/Night-maze/dsh-desktop-pet-naiwa
+name: Night-maze/dsh-desktop-pet-naiwa
+category: fun
+description:
+  en: 'Windows desktop pet for DSH: a Cordis host plugin drives a transparent, always-on-top WPF subprocess over an authenticated loopback bridge, projecting turn, step and tool events into a progress bar with localized tool labels, playing completion and failure sounds, showing daily token totals with a list-price cost estimate plus the real wallet balance, and accepting weighted click interactions, long-press drag with edge half-hide, and file drops to the Windows Recycle Bin; a sidebar entry and settings panel configure scale, volume, assets and thresholds. Windows only, and the cost figure is an estimate.'
+  zh: 'DSH 桌宠（Windows）：Cordis Host 插件通过带鉴权的回环通道驱动一个透明置顶的 WPF 子进程，把 turn、step、tool 事件投影成进度条与中文工具名，播放完成与失败音效，显示当日 Token 合计（按公开价格估算）与真实钱包余额，并支持加权点击互动、长按拖拽与贴边半隐藏、把文件拖到它身上放进回收站；侧边栏入口与设置面板可调缩放、音量、素材与阈值。仅 Windows，费用为估算值。'
+icon: https://raw.githubusercontent.com/Night-maze/dsh-desktop-pet-naiwa/main/assets/icon-180.png

@@ -1,0 +1,6 @@
+url: https://github.com/N006Unnamed/dsh-toutiao
+name: N006Unnamed/dsh-toutiao
+category: tools
+description:
+  en: 'Toutiao hot-list and keyword-search collector for DeepSeek Harness. Fetches the 50-item hot board, runs keyword searches, and pulls full article text over plain HTTP without login or request signing. Exposes five model tools (toutiao_hot, toutiao_search, toutiao_article, toutiao_digest, toutiao_draft), provides a toutiao Cordis service other plugins can call, and adds a settings panel card with configurable limits and keywords, a scheduled fetch, and an optional draft writer that uses the host model to turn search results into a publishable article.'
+  zh: '今日头条热榜与关键词搜索采集插件。免登录、免签名，用纯 HTTP 抓取 50 条热榜、做关键词搜索、并抓取文章全文。提供五个模型工具（toutiao_hot、toutiao_search、toutiao_article、toutiao_digest、toutiao_draft），通过 toutiao 服务供其他插件调用，并在设置面板提供可配置条数与关键词、定时抓取，以及可选地调用宿主模型把搜索结果写成一篇可发布文章的草稿功能。'

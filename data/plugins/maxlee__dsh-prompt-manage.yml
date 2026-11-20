@@ -1,0 +1,7 @@
+url: https://github.com/maxlee/dsh-prompt-manage
+name: maxlee/dsh-prompt-manage
+category: ui
+description:
+  en: 'Reuse prompts you have typed across DeepSeek Harness conversations: a searchable palette beside the model selector in the composer, a magic-wand optimizer that rewrites the current draft with the session model through an editable system prompt, and a searchable sidebar page over the full prompt history.'
+  zh: '复用你在 DeepSeek Harness 各会话中输入过的提示词：输入框模型选择器旁的可搜索面板、用当前会话模型和可编辑的系统提示词改写草稿的魔法棒按钮，以及侧边栏里可搜索的全量提示词历史页。'
+icon: https://raw.githubusercontent.com/maxlee/dsh-prompt-manage/main/assets/icon-512.png

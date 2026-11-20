@@ -1,0 +1,7 @@
+url: https://github.com/kaust-ark/ARK/tree/main/integrations/dsh
+name: kaust-ark/ARK#Idea2Paper
+category: workflow
+description:
+  en: Runs experiments and writes a paper in one persistent DSH session, with a separate reviewer that checks the rendered manuscript against sources and measurements.
+  zh: 在一个持续的 DSH 会话中做实验、写论文，由独立评审对照来源和实测数据检查渲染后的稿件。
+tarball: https://github.com/kaust-ark/ARK/releases/download/dsh-bundle-0.2.0-alpha.29/idea2paper-dsh-0.2.0-alpha.29.tgz

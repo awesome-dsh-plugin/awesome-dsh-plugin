@@ -1,0 +1,6 @@
+url: https://github.com/guiwowow/dsh-reply-notify
+name: guiwowow/dsh-reply-notify
+category: notify
+description:
+  en: 'Windows toast when a turn finishes, with one setting in Settings → General: Never, Only when unfocused, or Always.'
+  zh: '回合结束时弹出 Windows 通知；在 设置 → 通用设置 里可选 从不 / 仅窗口不在前台时 / 始终。'

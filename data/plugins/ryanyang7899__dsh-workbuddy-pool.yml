@@ -1,0 +1,7 @@
+url: https://github.com/ryanyang7899/dsh-workbuddy-pool
+name: ryanyang7899/dsh-workbuddy-pool
+category: usage
+description:
+  en: "Sidebar meter for a self-hosted workbuddy2api panel: remaining pool credits at a glance, one click for the account currently in flight, its model, live tokens per second and today's spend."
+  zh: "对接自建 workbuddy2api 面板的侧栏计量：一眼看到号池剩余总积分，点击展开正在被调用的账号、模型、实时生成速度与今日消耗。"
+icon: https://raw.githubusercontent.com/ryanyang7899/dsh-workbuddy-pool/main/assets/icon-180.png

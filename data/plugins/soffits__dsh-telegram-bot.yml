@@ -1,0 +1,6 @@
+url: https://github.com/soffits/dsh-telegram-bot
+name: soffits/dsh-telegram-bot
+category: remote
+description:
+  en: 'Telegram client for DSH sessions, one forum topic per session shared with the Web UI: streamed answers, turns from other clients mirrored in, tool approvals and ask_user_question as buttons, model and permission controls, photos, files and transcribed voice messages, and a send-to-topic API for scripts and other plugins. Maintained fork of Boobaw/dsh-telegram-bot.'
+  zh: 'DSH 会话的 Telegram 客户端：每个会话对应一个论坛话题并与网页端共享，流式回答、其他客户端的轮次同步进来、工具审批与 ask_user_question 做成按钮、模型与权限控制、图片/文件/语音转写，并提供给脚本和其他插件用的发往话题的接口。是 Boobaw/dsh-telegram-bot 的维护分支。'

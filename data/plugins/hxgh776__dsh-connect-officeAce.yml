@@ -1,0 +1,6 @@
+url: https://github.com/hxgh776/dsh-connect-officeAce
+name: hxgh776/dsh-connect-officeAce
+category: model
+description:
+  en: Connects a locally signed-in Huawei OfficeAce desktop account to DSH as an OpenAI-compatible chat provider that reuses the stored login instead of an API key, with streaming, reasoning and tool-call passthrough.
+  zh: 把本机已登录的华为果办（OfficeAce）账号接入 DSH，复用本机登录态免填 API Key，支持流式、思考链与工具调用透传。

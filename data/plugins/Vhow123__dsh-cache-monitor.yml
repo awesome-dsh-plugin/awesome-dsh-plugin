@@ -1,0 +1,6 @@
+url: https://github.com/Vhow123/dsh-cache-monitor
+name: Vhow123/dsh-cache-monitor
+category: usage
+description:
+  en: "Shows the current conversation's cache hit rate and per-request token details in a fixed DSH sidebar entry."
+  zh: '在固定的 DSH 侧边栏入口显示当前对话的缓存命中率与逐请求 Token 明细。'

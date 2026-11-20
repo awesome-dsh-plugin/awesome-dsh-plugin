@@ -1,0 +1,6 @@
+url: https://github.com/fengzhiyushui/dsh-plugins-update
+name: fengzhiyushui/dsh-plugins-update
+category: market
+description:
+  en: Update checker and installer companion for third-party DSH plugins with startup sidebar and row badges that reconcile after native updates, concurrent CDN checks and upgrades for GitHub branch/tag (#ref) and monorepo subpath specs, npm/npmmirror/custom registry switching with official fallback, minimumReleaseAge bypass, snapshot rollback with offline lockfile alignment, and an optional detail-page toggle.
+  zh: 第三方 DSH 插件检查与更新增强工具，启动后台探测并在侧边栏与已安装列表展示更新角标（原生弹窗更新完成后自动同步消隐），支持 GitHub 仓库及分支/标签（#ref）、固定 commit 解锁与 monorepo 子路径的 CDN 并发竞速检测与升级，提供 npm/npmmirror/自定义源切换与官方源回退、minimumReleaseAge 观察期绕过、快照与离线回滚对齐，以及默认让位原生与按需开启详情页更新按钮。

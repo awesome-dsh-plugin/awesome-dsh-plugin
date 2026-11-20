@@ -1,0 +1,7 @@
+url: https://github.com/Naskita/shadow-bilingual
+name: Naskita/shadow-bilingual
+category: ui
+description:
+  en: 'Write in your own language while the AI works in English: preview a live English translation under your draft and auto-send in English across the composer, steering box, and message queue, with a per-paragraph translation in your chosen language (18 supported) under every reply.'
+  zh: '你用母语写，AI 只读英文：输入时在草稿下方实时预览英文译文，发送时自动译成英文发出（涵盖主输入框、插话与队列消息）；助手的英文回复会在每段下方附上你的母语对照，支持 18 种语言。'
+icon: https://raw.githubusercontent.com/Naskita/shadow-bilingual/master/docs/icon.png

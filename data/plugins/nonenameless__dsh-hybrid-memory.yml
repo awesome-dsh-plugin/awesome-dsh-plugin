@@ -1,0 +1,6 @@
+url: https://github.com/nonenameless/dsh-hybrid-memory
+name: nonenameless/dsh-hybrid-memory
+category: memory
+description:
+  en: 'Transparent Markdown long-term memory for DeepSeek Harness: tiered facts, background extraction, BM25 search, persona editing, and a heartbeat.'
+  zh: '为 DeepSeek Harness 提供透明的 Markdown 长期记忆：分层事实、后台提炼、BM25 检索、人格编辑与心跳。'

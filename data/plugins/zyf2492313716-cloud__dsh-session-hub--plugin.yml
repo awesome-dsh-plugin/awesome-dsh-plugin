@@ -1,0 +1,6 @@
+url: https://github.com/zyf2492313716-cloud/dsh-session-hub/tree/main/plugin
+name: zyf2492313716-cloud/dsh-session-hub#plugin
+category: session
+description:
+  en: 'Cross-agent session browser for DeepSeek Harness: mounts /session-hub/api/* and a Settings > General status row to read and search OpenCode SQLite, Claude Code JSONL, Antigravity, Qoder CN and DSH zstd logs, plus explicit continue-in-DSH and export. Its /session-hub/api routes are mounted without DSH''s access check, and on startup it registers the workspaces found in those other agents'' histories into DSH.'
+  zh: '跨工具会话浏览中心：挂载 /session-hub/api/* 路由与通用设置状态行，只读浏览与搜索 OpenCode SQLite、Claude Code JSONL、Antigravity、Qoder CN 与 DSH zstd 会话日志，并支持显式触发接续进 DSH 或导出。/session-hub/api 路由没有 DSH 的访问检查；启动时还会把在那些其他助手历史里找到的工作区登记进 DSH。'

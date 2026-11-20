@@ -1,0 +1,6 @@
+url: https://github.com/scientificmaniac/dsh-vm-control
+name: scientificmaniac/dsh-vm-control
+category: remote
+description:
+  en: Control local VMware Workstation, Player and Fusion virtual machines — power, snapshots, live CPU and memory, network layout and VMX parameters, with one-step SSH import into dsh-ssh-vault.
+  zh: 管理本机 VMware Workstation / Player / Fusion 虚拟机：电源、快照、实时 CPU 与内存、网络配置与 VMX 参数，并可一键把 SSH 接入导入 dsh-ssh-vault。

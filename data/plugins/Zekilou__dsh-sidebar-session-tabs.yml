@@ -1,0 +1,8 @@
+url: https://github.com/Zekilou/dsh-sidebar-session-tabs
+name: Zekilou/dsh-sidebar-session-tabs
+category: ui
+description:
+  en: Filter tabs (all, running, needs me, pinned, one per tag, one per session source) and per-session tags for the sidebar session list; plugins can register sources to add rows from another machine or to filter native sessions by origin.
+  zh: 侧栏会话列表的筛选 Tab（全部、运行中、待我处理、已固定、每个标签一个、每个会话来源一个）与会话标签；插件可注册会话来源，把另一台机器的会话加入列表，或按来源筛选原生会话。
+tarball: https://github.com/Zekilou/dsh-sidebar-session-tabs/releases/download/v0.3.0/dsh-sidebar-session-tabs.tgz
+icon: https://raw.githubusercontent.com/Zekilou/dsh-sidebar-session-tabs/main/assets/icon-180.png

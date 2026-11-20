@@ -1,0 +1,6 @@
+url: https://github.com/sychorn-BOT/dsh-updater
+name: sychorn-BOT/dsh-updater
+category: dev
+description:
+  en: Checks npm for a newer @deepseek-ai/dsh and shows it under the composer. On Windows, one click runs a self-check (powershell, npm, a dry run of the updater script, and a plugin compatibility gate against the target core), then stops DSH, backs up the core manifests, installs the release, upgrades the plugins that need a newer release for that core — a plugin that only supports the new core cannot be installed while the old core is still running, so both happen in the window where DSH is down — and restarts DSH; if a step fails it rolls back to the previous version and starts that. The update runs with a per-step progress bar, real steps while the host is alive and the steps the updater script recorded on disk after the restart. Also registers the dsh_check_update and dsh_update_doctor tools.
+  zh: 检查 npm 上是否有更新的 @deepseek-ai/dsh，结果显示在输入框下方。在 Windows 上点一下会先自检（powershell、npm、更新脚本试跑、插件兼容闸门），再停止 DSH、备份核心树清单、安装新版本、把需要新核心的插件一并升级——只认新核心的插件在旧核心还跑着的时候装不上，所以两件事都放在 DSH 停着的那段窗口里——最后重启 DSH；任一步失败都会回滚到旧版本并把它启动起来。更新过程有分步进度条，宿主存活时是真实步骤，重启后读回更新脚本写在磁盘上的步骤记录。另提供 dsh_check_update 与 dsh_update_doctor 工具。

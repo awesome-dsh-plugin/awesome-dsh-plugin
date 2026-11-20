@@ -1,0 +1,6 @@
+url: https://github.com/dcd887/dsh-browser-ops
+name: dcd887/dsh-browser-ops
+category: browser
+description:
+  en: 'Self-managed persistent browser for DSH automation — launches its own Chrome/Edge profile, navigates, switches tabs, snapshots with semantic refs, acts by ref, evaluates JS, screenshots, and uploads files. Does not bypass CAPTCHAs by design.'
+  zh: '自带浏览器的自动化插件：起自己的 Chrome/Edge 持久 profile，导航、切标签、语义快照、按 ref 操作、执行 JS、截图、塞文件。按设计不绕过验证码。'

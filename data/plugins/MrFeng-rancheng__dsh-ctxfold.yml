@@ -1,0 +1,7 @@
+url: https://github.com/MrFeng-rancheng/dsh-ctxfold
+name: MrFeng-rancheng/dsh-ctxfold
+category: tools
+description:
+  en: Assembles code context as guarded state so long coding sessions cost fewer input tokens, with doctor, ask and status tools and the CLI bundled in the package.
+  zh: 把代码上下文装配成带守卫的状态，让长会话少付输入 token；提供 doctor、ask、status 三个工具，命令行工具随包分发。
+icon: https://raw.githubusercontent.com/MrFeng-rancheng/dsh-ctxfold/main/assets/icon-180.png
