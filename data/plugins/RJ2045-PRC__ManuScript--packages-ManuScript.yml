@@ -1,0 +1,7 @@
+url: https://github.com/RJ2045-PRC/ManuScript/tree/main/packages/ManuScript
+name: RJ2045-PRC/ManuScript#manuscript
+category: docs
+description:
+  en: A local research-writing workspace that saves manuscript drafts, follows citations to source PDF pages, and matches Word review comments to earlier drafts.
+  zh: 本地论文写作工作台，保存稿件版本，按引文打开来源 PDF 页，并把 Word 审阅意见对回对应的旧稿。
+tarball: https://github.com/RJ2045-PRC/ManuScript/releases/download/v0.13.1/manuscript-0.13.1.tgz
