@@ -1,0 +1,7 @@
+url: https://github.com/xiaoBai8512/dsh-ai-radar
+name: xiaoBai8512/dsh-ai-radar
+category: ui
+tarball: https://github.com/xiaoBai8512/dsh-ai-radar/releases/download/v0.1.0/dsh-ai-radar-0.1.0.tgz
+description:
+  en: 'Sidebar AI digest that filters posts from X and Hacker News on time window, dedupe, novelty and discussion signals, keeps the ones a model editor judges worth opening, and lists the questions that repeat across their public replies.'
+  zh: '侧栏 AI 日报：从 X 与 Hacker News 按时间窗、去重、新颖度与讨论度筛选候选帖，由模型编辑判断哪条值得点开，并整理公开评论里反复出现的实操问题。'
