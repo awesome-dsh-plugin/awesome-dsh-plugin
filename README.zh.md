@@ -1988,6 +1988,7 @@ dsh plugin --profile web add dshmarket
 - [SpookySandwich/dsh-plugin-smooth-stream](https://github.com/SpookySandwich/dsh-plugin-smooth-stream) — 给 DeepSeek Harness 加入更好的流式文字动画。
 - [sqfcyily/dsh-workspace-files](https://github.com/sqfcyily/dsh-workspace-files) — 在DeepSeek Harness Web GUI 中浏览工作区的目录/文件，并结合 Git 显示文件改动。
 - [ssesweb/dsh-deepseek-mode](https://github.com/ssesweb/dsh-deepseek-mode) — DeepSeek 网页版对齐模式：输入框深度思考与联网搜索开关、deepseek 预设、按会话门控 web_search。
+- [SSHOOTING/dsh-think-twice](https://github.com/SSHOOTING/dsh-think-twice) — 只提问、不代写的 DSH 输入框表达审查，最多给出两个带原文依据的问题。
 - [SSShooter/dsh-mindmap-live](https://github.com/SSShooter/dsh-mindmap-live) — DSH Web 实时双向思维导图：Agent 与用户共编同一棵树，改动即时互相同步，支持停靠分屏与全屏两种视图。
 - [stallenlu/dsh-freebie-radar](https://github.com/stallenlu/dsh-freebie-radar) — 把 ZiChuanLan/freebie-radar 做成 DSH 插件，提供 freebie_radar 智能体工具与复刻原站界面的侧边栏工作台面板，含频道资源流、搜索、详情抽屉与深浅色主题。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [stallenlu/dsh-huobao-drama](https://github.com/stallenlu/dsh-huobao-drama) — DSH 侧栏面板，将「火宝短剧」短视频创作工作台 Web UI 以 iframe 嵌入；另提供 19 个 huobao_* 桥接工具，对接本地后端（健康检查、短剧与模型增删改查、生成任务、配置与媒体接口）。
@@ -5090,6 +5091,7 @@ dsh plugin --profile web add dshmarket
 - [No-ni/billion-context-patched](https://github.com/No-ni/billion-context-patched) — ranxianglei/billion-context（MIT）的补丁构建，并内置作者的模型请求加速器：快照复用校验、fork 继承父会话、出站请求体压缩、图片看过一次即折叠。
 - [Noeau-AI/dsh-history-search](https://github.com/Noeau-AI/dsh-history-search) — 跨全部会话归档的全文历史搜索：中文整段即可查，不用分词；有侧栏面板，也能在工作区放大镜里加一段全历史；点一条命中会打开对应会话并落到那段文字上。只读、全程离线。
 - [NoiraBaka/dsh-compact-suite](https://github.com/NoiraBaka/dsh-compact-suite) — 接管所有已挂载压缩引擎的触发阈值：把 headroomTokens 强制成 −1e6，使比值成为触发点的唯一决定项；在每条下发路径上保证保留量低于触发点；把压缩调用改派到指定模型；并提供一键立即压缩与本会话压缩记录面板。
+- [nomadop/session-watcher#dsh](https://github.com/nomadop/session-watcher/tree/main/dsh) — 显示继续携带会话上下文何时比重启更贵，并支持只带选定的文件与技能原地交接。
 - [NoneadChina/dsh-nonead-prompt-rewind](https://github.com/NoneadChina/dsh-nonead-prompt-rewind) — DSH 对话回退：一键就地回退到任意更早的用户消息（也可用 /rewind、/undo 命令），无需新建分支或切换窗口，并可一并还原被写类工具修改过的工作区文件；设置页按工作区列出最近的回退记录，可撤销最新一次回退的文件改动。基于 SiriLee/dsh-rewind 派生并独立维护，不能与上游同装（共用 /rewind、/undo 命令和 rewind-snapshots 备份目录）。
 - [nonefora11/dsh-intent-debt-radar](https://github.com/nonefora11/dsh-intent-debt-radar) — 把聊天里被顺口搁置的“回头再说”记成一份带利息的账本：每句承诺是一张卡，搁得越久排名越靠前，点一下回到当初那句话所在的会话。
 - [Noob-stupid/dsh-connection-card-host](https://github.com/Noob-stupid/dsh-connection-card-host) — 把两个 DSH 会话之间的「连接」做成一等对象：从输入框锚点或会话行拖拽建连，两个方向各自设权限，并可在连接上装载卡片。两端各获得五个宿主工具，用于按指定紧急度传话、读取对端工作状态、共用公约盒；感知为拉取式，空闲连接不占上下文。
