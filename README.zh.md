@@ -6044,6 +6044,8 @@ dsh plugin --profile web add dshmarket
 - [988hj7tczd-oss/dsh-pr-description](https://github.com/988hj7tczd-oss/dsh-pr-description) — 分析当前分支 diff，生成符合 Conventional Commits 的 PR 标题与动机/方案/影响/测试/风险描述和自审清单，输出 PR_DESCRIPTION.md，可选直接调用 gh 提 PR。
 - [988hj7tczd-oss/dsh-receipts](https://github.com/988hj7tczd-oss/dsh-receipts) — 从本地 DSH 会话日志（JSONL）挖掘「使用与影响」报告：Markdown 日/周/月报 + 自包含 HTML receipt，交叉本机 git log；零联网、隐私优先。
 - [a-mochis/dsh-video-merger](https://github.com/a-mochis/dsh-video-merger) — 把每个文件夹下的视频合并成一个文件，输出规格对齐该文件夹第一个视频的分辨率、帧率和编码；同规格片段无损拼接，规格不一致时可先转码对齐。
+- [a-molecule-of-ATP/dsh-bandizip](https://github.com/a-molecule-of-ATP/dsh-bandizip) — 把本机已安装的 Bandizip 命令行（bz.exe）封装成智能体的一个工具，含八个压缩包操作；roundtrip 校验会把包解回来逐文件比对。
+- [a-molecule-of-ATP/dsh-ghost-download](https://github.com/a-molecule-of-ATP/dsh-ghost-download) — 通过 Ghost Downloader 官方 ghd 命令行提供八个工具，与桌面端共用同一队列；支持五种校验和，失败时给出可直接执行的下一步。
 - [a1121611810/dsh-media-converter](https://github.com/a1121611810/dsh-media-converter) — DeepSeek Harness 的本地多媒体工具箱：27 种视频/音频/图片格式互转、裁剪、不重编码地剥离音轨或画面、导出内嵌字幕为 .srt、带前后对比预览的图片压缩、元数据查看与改写、Base64 编解码——全部走本机已装的 ffmpeg，文件不出本机；同一引擎也注册为 agent 可调用的 media_toolbox 工具。
 - [a23842/dsh-waste-market](https://github.com/a23842/dsh-waste-market) — DeepSeek Harness A 股行情面板：实时大盘指数、技术选股（13 项信号 + 多策略交叉）、7×24 多源快讯聚合、自选股分组管理、市场情绪温度计（连板梯队/涨跌家数）、K 线图（MA/EXPMA/BOLL 叠加）、板块榜/涨停池/龙虎榜。
 - [a494359163-byte/dsh-multicad](https://github.com/a494359163-byte/dsh-multicad) — 通过 MCP 把 AutoCAD、中望、浩辰、BricsCAD 接入 DeepSeek Harness，内置 CAD 服务端，首次运行自动搭建私有 Python 环境。需要 Windows、本机已安装上述任一款 CAD、PATH 上有 Python 3.10+，且 CAD 与 DSH 以同一 Windows 用户、同一权限级别运行。
@@ -6227,6 +6229,7 @@ dsh plugin --profile web add dshmarket
 - [Chsw-CC/dsh-lazy-tools](https://github.com/Chsw-CC/dsh-lazy-tools) — 保留一小份核心工具原生可见，其余收进一个 toolbox 入口：模型先按参数签名列出已加载的工具，只取真正要用的 schema，再经正常的审批与 guard 管线执行调用。目录超预算时先截短签名、再降成前缀计数，让列表在 token 预算内仍然可调用。
 - [chunqing286/dsh-guard-degen](https://github.com/chunqing286/dsh-guard-degen) — 在模型输出边界检测并拦截退化符号流，并提供修复被污染工件与会话的工具。
 - [ciky20171114/dsh-plugin-midscene](https://github.com/ciky20171114/dsh-plugin-midscene) — 基于 Midscene 的 AI UI 自动化——android_ui 与 web_ui 工具，通过 ctx.midscene seam 在真实 Android 设备或已运行的 Chrome 上完成点击、输入、查询与断言。
+- [ciskonc/dsh-skillmcp-gate](https://github.com/ciskonc/dsh-skillmcp-gate) — 按会话与全局管控 skill 与 MCP 工具的暴露集——在侧栏面板与设置页勾选，停用项在下一条消息从模型目录移除；支持批量应用、草稿差异预览与会话级持久化。需 DSH 0.2.0+。
 - [Cjrrrrrrrr/dsh-plugins#dsh-scholar](https://github.com/Cjrrrrrrrr/dsh-plugins/tree/main/packages/dsh-scholar) — DSH 学术检索工具：四个模型可用工具 paper_search / paper_get / paper_citations / book_search，覆盖 OpenAlex、arXiv、Crossref、Semantic Scholar、PubMed 五个库，并用 Unpaywall 解析开放获取 PDF。
 - [cl2458228286-creator/dsh-plugin-workbuddy-checkin](https://github.com/cl2458228286-creator/dsh-plugin-workbuddy-checkin) — 用独立 Chrome 登录态自动签到并领取 WorkBuddy 积分，无需令牌。
 - [ClaireXi99/dsh-data-insight](https://github.com/ClaireXi99/dsh-data-insight) — 数据分析工具包：CSV/TSV/JSON 数据画像、IQR 与 z-score 异常检测、带质量问题提示的结构化摘要、以及无需写代码的筛选/分组/聚合查询。
@@ -7231,6 +7234,7 @@ dsh plugin --profile web add dshmarket
 - [SIMON-WORLD/dsh-eco-indicator](https://github.com/SIMON-WORLD/dsh-eco-indicator) — 世界银行开放数据经济指标查询：GDP、通胀、贸易、人口等，无需 API 密钥。
 - [SIMON-WORLD/dsh-journal-monitor](https://github.com/SIMON-WORLD/dsh-journal-monitor) — 经济学优先的期刊/工作论文监控插件：NBER RSS + arXiv 经济学（4 类目）+ 中文经管期刊（世界经济-玛格泰克平台，中国农村观察/财贸经济/中国人口科学/经济管理-ajcass 平台）抓取、关键词过滤、dry-run/Webhook 推送、去重持久化、定时简报（schedule_create 兼容）。
 - [SIMON-WORLD/dsh-toolkit#dsh-at-file](https://github.com/SIMON-WORLD/dsh-toolkit/tree/main/packages/dsh-at-file) — DSH 的 @ 文件引用工具：注册 at_file_read 工具，把工作区内文件内容注入会话，含目录穿越防护与 50KB 截断（MIT）。
+- [Singapo/deepseek-harness-plugins#evidence-ledger](https://github.com/Singapo/deepseek-harness-plugins/tree/main/evidence-ledger) — 较真核对本地原表或世界银行人口发布值，重算数值，核验未通过时拦截交付。
 - [SiriLee/dsh-edit-approval](https://github.com/SiriLee/dsh-edit-approval) — 每次 edit 与 bash 调用前都会询问：编辑前展示红绿行级 diff，命令前展示描述与命令面板——同意一次或拒绝，两个 gate 各带独立总开关（Settings → General）。
 - [SiriusYANG91/dsh-astro-plan](https://github.com/SiriusYANG91/dsh-astro-plan) — 星野摄影计划：按 18 类天象与深空目标、全国 173 站检索，结合光污染、方位、月相、星历事件与 7 天天气给出推荐排序、焦段与曝光，并附 Stellarium 风格 3D 天球画面模拟。7 天天气来自 Open-Meteo，需要联网；其余功能离线运行。
 - [siruignaw-sys/dsh-tool-bandit-search](https://github.com/siruignaw-sys/dsh-tool-bandit-search) — 使用上下文赌博机算法（Thompson 采样）学习何时使用快速搜索、何时使用深度搜索的 `search` 工具。 
@@ -7270,6 +7274,7 @@ dsh plugin --profile web add dshmarket
 - [STARDUSTLC666/dsh-ffmpeg](https://github.com/STARDUSTLC666/dsh-ffmpeg) — 视频处理十工具（探测/剪辑/拼接/转码/字幕烧录/抽帧/批量抽帧/GIF/调整/健康自检）：探测摘要、变速/音量/静音/旋转调整、官方 subprocess 服务、argv 无 shell 注入、零运行时依赖。
 - [STARDUSTLC666/dsh-rss](https://github.com/STARDUSTLC666/dsh-rss) — RSS/Atom 订阅九工具（管理/校验/抓取解析/跨订阅搜索/增量抓取/OPML 导入导出/健康自检），游标增量抓取，订阅持久化到 settings。面板内置 3 步首次使用引导，看一次后不再出现。
 - [STARDUSTLC666/dsh-sql](https://github.com/STARDUSTLC666/dsh-sql) — 数据库工具：sql_list/query/exec/schema/stats/health，SQLite/MySQL/PostgreSQL 三引擎，词法级只读保护、行数钳制、CSV/JSON 查询输出与写审批门。
+- [steelunicorn/dsh-mcp-tool](https://github.com/steelunicorn/dsh-mcp-tool) — 按工作文件夹管理 MCP 服务器：一份全局服务器清单，由预设决定每个文件夹允许哪些服务器，自己持有的服务器按需启动与停止（mcp_load / mcp_release，空闲十分钟后停止）。
 - [stitchmaps/dsh-db-connect](https://github.com/stitchmaps/dsh-db-connect) — 管理 Oracle、PostgreSQL、MySQL、MariaDB、SQL Server 与 SQLite 连接，提供驱动诊断、字段默认值/注释和需显式授权的智能体元数据浏览；需另建 Python 3 环境并安装对应驱动（SQLite 仅需标准库）。
 - [stone-yu/dsh-sync](https://github.com/stone-yu/dsh-sync) — DSH 备份与同步：支持配置备份、技能备份、记忆备份和自选目录的多端同步。当前使用 WebDAV，每项独立选择上传备份或双向同步，文件类备份支持选择来源并确认覆盖的一次性还原。
 - [StvLi/dsh-ros2](https://github.com/StvLi/dsh-ros2) — 面向 DeepSeek Harness 的 ROS2 调试工具集与机器人状态视觉分析：节点/话题/服务/动作/接口/TF 枚举、全图拓扑 JSON、依赖检查，审批门控的构建与自定义消息骨架生成，GUI 截图与多模态视觉观察，以及无头 RViz2 离屏渲染（低模 + 直读像素 + GPU 直通，动作渲染 30Hz）与并行 VLM 实时分析。
@@ -9662,6 +9667,7 @@ dsh plugin --profile web add dshmarket
 - [shuxidemosheng/dsh-tool-workflow-plus](https://github.com/shuxidemosheng/dsh-tool-workflow-plus) — 官方 workflow 工具的 drop-in 增强版：在逐字 fork 的官方工具之上，用 ctx.storageDomain 提供持久化的 saved workflow 库（workflow_save / workflow_list / workflow_get / workflow_delete / workflow_run_saved），可把编排脚本存库、检索并带新参数重跑。
 - [Sieuno/dsh-native-collab](https://github.com/Sieuno/dsh-native-collab) — DSH原生子代理和团队增强。提供持久子代理功能，及子代理消息增强。额外支持指定团队成员模型。与原生功能相比，无附加工具及上下文。
 - [SilenZerOrz/taskboard-workbench](https://github.com/SilenZerOrz/taskboard-workbench) — 面向 DeepSeek Harness 的智能体团队任务工作台：侧栏看板与需求视图跟踪任务从待办、执行、评审到完成，把工作派发给编码智能体，并用本地 SQLite 承载多角色团队编排。
+- [Singapo/deepseek-harness-plugins#task-lens](https://github.com/Singapo/deepseek-harness-plugins/tree/main/task-lens) — 再改一版从带证据的任务标注中统计首次交付、人工纠正与最终完成情况。
 - [SivanCola/dsh-subagent-reasonix](https://github.com/SivanCola/dsh-subagent-reasonix) — 通过 Agent Client Protocol 把一次性任务从 DeepSeek Harness 委派给本机已安装的 Reasonix，沿用 Reasonix 自己的模型、凭据与沙箱设置，对外暴露为 `subagent_reasonix` 工具。自动批准 Reasonix 的全部权限请求。
 - [SivanCola/dsh-zentao-hub](https://github.com/SivanCola/dsh-zentao-hub) — DSH 的禅道面板：通过 REST v1/v2 或官方 zentao-cli 读取指派给你的需求、任务与 Bug，在你指定的分支上派发 Agent，并在展示请求原文后把状态流转回写禅道。
 - [sjh9714/routinekit](https://github.com/sjh9714/routinekit) — 把选定的 DSH、本地 MCP 或原生 WebMCP 调用捕获为经过评审的参数化例程，暴露为带类型的工具，重放时重新请求批准。
@@ -10421,6 +10427,7 @@ dsh plugin --profile web add dshmarket
 - [xianglifei/dsh-lark-minutes-dashboard](https://github.com/xianglifei/dsh-lark-minutes-dashboard) — 自动发现飞书妙记，为每条录音生成完整会议纪要与标题并写入飞书文档，并用一篇索引文档维护妙记与纪要的对应关系。
 - [xiaoshihou514/dsh-weixin](https://github.com/xiaoshihou514/dsh-weixin) — 通过微信远程控制 DeepSeek Harness，支持任意文件传输。
 - [xiaxingtianxia2-glitch/dsh-chime](https://github.com/xiaxingtianxia2-glitch/dsh-chime) — 为 DeepSeek Harness 复刻 opencode 的任务完成提示音，完成、提问、计划待审、出错四种场景播放原始音效，零外部依赖。
+- [xin505/dsh-xin505-notify](https://github.com/xin505/dsh-xin505-notify) — 为 Windows 上的 DeepSeek Harness 提供任务完成或失败、等待授权或回答，以及可识别的额度或登录错误提醒。
 - [xinyang920/dsh-caps-beacon](https://github.com/xinyang920/dsh-caps-beacon) — 把 MacBook 键盘的 Caps Lock 指示灯变成 agent 状态灯：干活时常亮，等你审批或回答时快闪，空闲时熄灭。
 - [Xm-Coding/dsh-turn-notifier](https://github.com/Xm-Coding/dsh-turn-notifier) — 在 DeepSeek Harness 每轮会话结束时，将最终模型回复摘要发送到 macOS 通知中心。
 - [xmanrui/dsh-feishu](https://github.com/xmanrui/dsh-feishu) — 通过扫码把飞书机器人接入DeepSeek Harness。
@@ -11166,6 +11173,7 @@ dsh plugin --profile web add dshmarket
 - [863683348/dsh-gov](https://github.com/863683348/dsh-gov) — Agent 治理套件：基于策略的工具门禁（allow/deny/ask，支持通配符与优先级）、结构化 JSONL 审计日志、基于宿主 token 计量的按 agent 配额，状态存于 $DSH_HOME/gov。
 - [863683348/dsh-plugin-gate](https://github.com/863683348/dsh-plugin-gate) — DSH 插件的安装安全闸门：在 "dsh plugin add" 前对本地目录或 npm 包做"杀毒"式扫描（安装脚本、权限、密钥、网络回连），给出 BLOCK/WARN/PASS 判定。
 - [940842546/dsh-permissions](https://github.com/940842546/dsh-permissions) — Claude Code 风格权限规则引擎：hard/deny/ask/allow 四级规则（hard 高于全访问、不可豁免）、workspace 作用域、通配符路径保护、可视化草稿式编辑器，规则持久化于 settings.yaml。
+- [a-molecule-of-ATP/dsh-subagent-model-guard](https://github.com/a-molecule-of-ATP/dsh-subagent-model-guard) — 用 DSH 官方的模型白名单校验子智能体派发，并可选替换派发与模型发现工具，使会话快照不会挡住新上架的模型。
 - [a903067276-rgb/dsh-perm-guard](https://github.com/a903067276-rgb/dsh-perm-guard) — 自动审批权限守卫：介于 workspace-write 与 danger-full-access 之间的中间档——信任目录内安全操作自动放行，危险操作一律人工确认；11 个分类开关可调，自带审计记录。
 - [aa2246740/dsh-auto-review](https://github.com/aa2246740/dsh-auto-review) — 为 DSH 工具调用提供 Auto-review 和 Approve for me 模式。
 - [accpowered/dsh-auto-review](https://github.com/accpowered/dsh-auto-review) — 沙箱越权审批的 LLM 应答器：先过确定性正则过滤，再交给干净上下文的审核模型；拿不准才转人工。需要随附的核心补丁。
