@@ -1,0 +1,7 @@
+url: https://github.com/BullyHigh/dsh-side-ask
+name: BullyHigh/dsh-side-ask
+category: session
+description:
+  en: 'Opens a read-only side question in the right sidebar: it forks the current conversation at its latest durable event, including a turn still running, carries over the unsent draft, and archives the side session when the tab closes.'
+  zh: '在右侧栏开一个只读的「侧边提问」：从当前对话最新的持久事件处 fork（含正在执行的那一轮），把没发送的草稿一并带过去，关闭标签即静默归档。'
+tarball: https://github.com/BullyHigh/dsh-side-ask/releases/download/v1.1.1/dsh-side-ask-1.1.1.tgz
