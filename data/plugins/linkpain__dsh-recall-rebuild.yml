@@ -1,0 +1,6 @@
+url: https://github.com/linkpain/dsh-recall-rebuild
+name: linkpain/dsh-recall-rebuild
+category: memory
+description:
+  en: 'Enhances DSH memory plugins by reconstructing retrieved memory fragments into contextual, emotionally-toned recollections with an LLM before injection, instead of quoting raw text; read-only to the underlying memory store, with multi-source support, per-user IM isolation, sleep consolidation and a JSONL audit log.'
+  zh: '增强 DSH 记忆插件：把检索到的记忆碎片经 LLM 重建为带语境与情绪的回忆片段再注入，而非念原文；对底层记忆库只读，支持多记忆源、IM 用户级隔离、睡眠巩固与 JSONL 审计日志。'
