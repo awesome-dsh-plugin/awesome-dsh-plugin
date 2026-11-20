@@ -1,0 +1,6 @@
+url: https://github.com/laiyinyizao007/dsh-desktop-responsive
+name: laiyinyizao007/dsh-desktop-responsive
+category: ui
+description:
+  en: 'Adapts the Harness layout to phone width: the expanded sidebar becomes a floating drawer, the composer follows the keyboard, and the settings dialog becomes a full-screen tab page on hosts built with the bundled upstream patches.'
+  zh: '把 Harness 布局适配到手机宽度：展开的侧栏变成浮层抽屉，输入区跟随键盘；在用随包上游补丁构建的宿主上，设置对话框还会变成全屏标签页。'
