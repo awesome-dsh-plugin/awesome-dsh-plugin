@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-contributing-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-contributing-check'
+category: 'docs'
+description:
+  en: 'CONTRIBUTING-guide hygiene: a dev setup that can be followed, a test command that actually runs, what a pull request is expected to look like, the style the code is held to, where to ask, how commits should read, and whether a CLA or DCO applies. The test-command rule is the point: every guide says "make sure the tests pass"; the ones that work say `pnpm test`, and a guessed invocation is how a first PR arrives red. A file that only points at another guide is reported as a single pointer warning naming the target instead of being judged section by section. Measured on five public guides (nodejs/node, vitejs/vite, rust-lang/rust, kubernetes/kubernetes, django/django): vite passes clean, the other four are pointers. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '贡献指南的检查：能照着做的开发环境、一条真能执行的测试命令、PR 该长什么样、代码风格要求、到哪提问、提交信息约定，以及 CLA/DCO。重点是测试命令那条：每份指南都说"请确保测试通过"，能照做的才会写 `pnpm test`，而猜一条命令正是第一个 PR 变红的原因。只写「真正的指南在别处」的文档会被判成指路型，给一条 warn 并点出目标，而不是逐节评它。实测 5 份公开指南（nodejs/node、vitejs/vite、rust-lang/rust、kubernetes/kubernetes、django/django）：vite 零发现，其余四份都是指路型。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'
