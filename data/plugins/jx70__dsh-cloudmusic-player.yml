@@ -1,0 +1,6 @@
+url: https://github.com/jx70/dsh-cloudmusic-player
+name: jx70/dsh-cloudmusic-player
+category: voice
+description:
+  en: 'Floating mini player in DSH that controls your already-running local NetEase Cloud Music client: prev/next, play/pause, separate NetEase-process and system volume, smoothly interpolated scrolling lyrics with translation, real seeking through the client protocol, and one-click daily recommendations from the client login; also adds a cloudmusic_player agent tool for the same actions. Windows only; requires the NetEase Cloud Music desktop client installed and running.'
+  zh: 'DSH 里的悬浮小播放器，控制你本已打开的本地网易云音乐客户端：上一首/下一首、播放暂停、网易云进程音量与系统音量两路独立、连续插值的滚动歌词（含译文）、经客户端协议真跳进度、借客户端登录态一键播放今日推荐；同时给模型加一个 cloudmusic_player 工具执行同样动作。仅 Windows，需本机安装并运行网易云桌面客户端。'
