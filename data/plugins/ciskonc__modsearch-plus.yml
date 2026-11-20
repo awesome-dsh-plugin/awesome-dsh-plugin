@@ -1,0 +1,6 @@
+url: https://github.com/ciskonc/modsearch-plus
+name: ciskonc/modsearch-plus
+category: browser
+description:
+  en: 'Fork of liustack/modsearch: a web-search bridge for text-only agents that adds MiniMax and Zhipu GLM engines (coding-plan MCP and balance REST) to a parallel multi-engine chain with per-engine failover, health lights and a Plugins-page settings card.'
+  zh: 'liustack/modsearch 的分支：为纯文本模型的 agent 桥接网页搜索，在并行多引擎链上新增 MiniMax 与智谱 GLM 引擎（编程套餐 MCP 与余额 REST），带逐引擎故障转移、健康状态灯与插件页设置卡片。'
