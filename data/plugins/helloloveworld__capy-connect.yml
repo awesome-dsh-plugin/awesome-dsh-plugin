@@ -1,0 +1,6 @@
+url: https://github.com/helloloveworld/capy-connect
+name: helloloveworld/capy-connect
+category: model
+description:
+  en: 'Brings Capy models into DSH as a tool-capable provider: a local OpenAI-compatible gateway plus a device tunnel, so tool calls run inside DSH under its own permissions.'
+  zh: '把 Capy 模型接入 DSH 的可执行提供方：本地 OpenAI 兼容网关加设备隧道，工具调用由 DSH 按自身权限执行。'
