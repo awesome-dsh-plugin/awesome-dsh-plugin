@@ -2,5 +2,6 @@ url: https://github.com/cxydaizihao520/dsh-session-coordinator
 name: cxydaizihao520/dsh-session-coordinator
 category: session
 description:
-  en: 'Find, read, and create independent DeepSeek Harness sessions, share context with one or more sessions, and coordinate within an approved scope.'
-  zh: '在 DeepSeek Harness 中查找、读取和新建独立会话，向一个或多个会话分享上下文，并在审批范围内协作。'
+  en: 'Give independent DeepSeek Harness sessions separate tasks, have them review each other’s work, and share context within an approved scope while each session keeps its own history.'
+  zh: '在 DeepSeek Harness 中，让各自保留历史的独立会话分工、交叉复核，并在批准的范围内共享上下文。'
+tarball: https://github.com/cxydaizihao520/dsh-session-coordinator/releases/download/v0.2.20/dsh-session-coordinator-0.2.20.tgz
