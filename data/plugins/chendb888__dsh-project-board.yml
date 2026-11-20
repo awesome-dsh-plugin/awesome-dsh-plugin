@@ -1,0 +1,6 @@
+url: https://github.com/chendb888/dsh-project-board
+name: chendb888/dsh-project-board
+category: ui
+description:
+  en: Domain-agnostic whitebox project board with blueprint-driven layout, real-time task progress and ETA, code drill-down, edit cards, dependency DAG, critical path and burndown.
+  zh: 领域无关项目白盒看板：蓝图驱动布局、实时任务进度与ETA、代码下钻、编辑卡、依赖DAG、关键路径与燃尽图。
