@@ -1,0 +1,6 @@
+url: https://github.com/carlslin/dsh-skill-eval
+name: carlslin/dsh-skill-eval
+category: skill
+description:
+  en: Scores every skill 0-100 from real execution telemetry (load success, follow-up tool errors, user corrections, ignored loads and cost) with 95% confidence intervals, and turns that evidence into fixes the agent can act on.
+  zh: 用真实执行遥测（加载成败、后续工具报错、用户纠正、被忽略与成本）给每个技能打 0-100 分并附 95% 置信区间，再把证据转成 agent 可直接执行的修复建议。

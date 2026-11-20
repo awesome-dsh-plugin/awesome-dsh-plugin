@@ -1,0 +1,6 @@
+url: https://github.com/Panther-w/dsh-inline-attachments
+name: Panther-w/dsh-inline-attachments
+category: ui
+description:
+  en: "Composer enhancement: put images or files where you mean them and the model reads each one at that exact position."
+  zh: "输入框增强：把图片或文件放在你想要的位置，模型就在该位置读到它。"

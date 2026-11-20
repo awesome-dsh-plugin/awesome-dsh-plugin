@@ -1,0 +1,6 @@
+url: https://github.com/tong174/dsh-enhance-prompt
+name: tong174/dsh-enhance-prompt
+category: ui
+description:
+  en: 'One-click prompt enhancer: rewrite a rough composer draft into a clear, specific prompt without changing the ask, with one-click revert — reverse-engineered from WorkBuddy and benchmarked ahead of it.'
+  zh: '输入框右侧一键增强提示词：把草稿改写成更清晰具体的版本而不改原意，并可一键恢复原文——逆向复刻 WorkBuddy 且实测优于原版。'

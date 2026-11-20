@@ -1,0 +1,7 @@
+url: https://github.com/fiatlux2333/dsh-Cicada/tree/main/packages/dsh-cicada
+name: fiatlux2333/dsh-Cicada#dsh-cicada
+category: security
+description:
+  en: 'Cicada is a Windows privacy watchdog for DeepSeek Harness that uses manual check-ins to time staged browser history cleanup, synthetic history insertion, deletion of selected folders, Windows usage-trace cleanup, and selected application uninstallation after owner authorization. Dry-run mode is enabled by default. Requires DSH 0.2.2-rc.5.'
+  zh: '蝉蜕 Cicada 是面向 Windows 的 DeepSeek Harness 隐私维护插件，按未手动打卡的时长分级触发浏览记录清理、假历史补位、指定文件夹删除、Windows 使用记录清理与指定软件卸载，真实动作需所有者授权。默认使用演练模式，当前支持 DSH 0.2.2-rc.5。'
+tarball: https://github.com/fiatlux2333/dsh-Cicada/releases/download/v0.1.3/dsh-cicada-0.1.3.tgz

@@ -1,0 +1,6 @@
+url: https://github.com/vaspike/dsh-usage-stat
+name: vaspike/dsh-usage-stat
+category: usage
+description:
+  en: "Folds session events into a durable per-day ledger of requests, input/output/total tokens, cache hit rate, and TPS per provider/model route, with a GitHub-style heatmap in 90/180/365-day windows and time, provider, model, and session filters in a sidebar panel."
+  zh: "将会话事件折叠为按天持久化的账本，按供应商/模型路由统计请求数、输入/输出/总 tokens、缓存命中率与 TPS，在侧边栏面板提供 GitHub 风格热力图（90/180/365 天窗口）及时间、供应商、模型、会话筛选。"

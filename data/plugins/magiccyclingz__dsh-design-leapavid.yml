@@ -1,0 +1,6 @@
+url: https://github.com/magiccyclingz/dsh-design-leapavid
+name: magiccyclingz/dsh-design-leapavid
+category: ui
+description:
+  en: 'Sidebar design library: browse 84 brand design languages, each rendered live from that brand''s own DESIGN.md tokens, then describe what you need and it posts a spec-complete prompt into the current conversation that builds a web page, a five-page deck or an infographic in that style. Also exports the picked style as CSS variables, tokens.json or a Tailwind config.'
+  zh: '侧栏设计风格库：集 84 套品牌设计语言，每套都按该品牌 DESIGN.md 的 token 现场渲染；挑一套并写清需求，就会把一份带完整 token 与交付规范的提示词发进当前会话，由对话模型按这套风格产出网页、五页幻灯片或信息图。还可把选中的风格导出为 CSS 变量、tokens.json 或 Tailwind 配置。'

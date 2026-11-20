@@ -1,0 +1,7 @@
+url: https://github.com/ShawThua/dsh-web-updater
+name: ShawThua/dsh-web-updater
+category: dev
+description:
+  en: 'Update a web-only DSH host from its own web GUI on Windows: read the nightly feed, download the installer, verify its sha512, install it with a detached script, and start the host again.'
+  zh: 'Windows 上从网页界面更新只跑 Web 的 DSH 宿主：读 nightly 更新源、下载安装包、校验 sha512、用独立脚本静默安装，再把宿主重新拉起。'
+icon: https://raw.githubusercontent.com/ShawThua/dsh-web-updater/main/assets/icon.png

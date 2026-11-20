@@ -1,0 +1,7 @@
+url: https://github.com/ZY-WANG-0304/dsh-bundle-presets
+name: ZY-WANG-0304/dsh-bundle-presets
+category: dev
+description:
+  en: 'Named bundle-set presets for the Plugins page: save the active bundle list, edit a preset with switches, preview the difference before applying, switch through the plugin manager, and undo the last switch. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '在插件页给 bundle 组合起名：保存当前组合、用开关编辑预设、套用前先看差异，切换由插件管理器执行，并可撤销上一次切换。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: https://raw.githubusercontent.com/ZY-WANG-0304/dsh-bundle-presets/main/assets/icon-180.png

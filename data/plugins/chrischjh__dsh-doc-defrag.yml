@@ -1,0 +1,6 @@
+url: https://github.com/chrischjh/dsh-doc-defrag
+name: chrischjh/dsh-doc-defrag
+category: docs
+description:
+  en: 'Turns a fragmented Markdown docs folder into a few authoritative documents and archives the rest; never deletes files and rolls back byte-for-byte via a per-run journal, with or without git.'
+  zh: '一句话把碎片化的 Markdown 文档收束成少数权威文档，其余归档——永不删除，不依赖 git 也能一键逐字节回滚。'

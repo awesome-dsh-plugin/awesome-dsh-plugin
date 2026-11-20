@@ -1,0 +1,7 @@
+url: https://github.com/XiaoFeng7418/dsh-plugin-chat-mode
+name: XiaoFeng7418/dsh-plugin-chat-mode
+category: session
+description:
+  en: 'Adds a tool-free Chat preset for everyday conversation: no tool schemas are sent, the system prompt is one short tone line or empty, and no OS, git or file-tree snapshot is injected. Measured on a plugin-heavy install, one message costs about 1.9K instead of 36K input tokens (roughly 19x fewer); thinking starts off unless you turn it on; verified on Android DSH Go too.'
+  zh: '新增零工具的「Chat（轻量对话）」模式，用来做日常聊天：不发送任何工具 schema，系统提示只剩一句极简语气提示或完全留空，也不注入系统、git 与文件树快照。在插件较多的环境实测，单条消息的输入 token 从约 36K 降到约 1.9K（约 19 倍）；思考默认关闭，需要时可在界面里打开；已在安卓 DSH Go 上实机验证。'
+tarball: https://github.com/XiaoFeng7418/dsh-plugin-chat-mode/releases/download/v0.1.3/dsh-plugin-chat-mode-0.1.3.tgz

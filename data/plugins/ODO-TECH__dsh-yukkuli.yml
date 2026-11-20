@@ -1,0 +1,7 @@
+url: https://github.com/ODO-TECH/dsh-yukkuli
+name: ODO-TECH/dsh-yukkuli
+category: voice
+description:
+  en: "Yukkuri voice for DeepSeek Harness: reads assistant replies aloud locally through AquesTalk, with no network calls."
+  zh: "油库里朗读：用 AquesTalk 在本地把助手的回复念出来，不联网，Web 与 TUI 两端都能出声。"
+tarball: https://github.com/ODO-TECH/dsh-yukkuli/releases/download/v0.3.0/dsh-yukkuri-tts-0.3.0.tgz

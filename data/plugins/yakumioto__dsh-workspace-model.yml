@@ -1,0 +1,6 @@
+url: https://github.com/yakumioto/dsh-workspace-model
+name: yakumioto/dsh-workspace-model
+category: model
+description:
+  en: Sets a default model per workspace, so new sessions start from the workspace's own model; workspaces without one keep the deployment default.
+  zh: 给每个工作区单独设置默认模型：新会话按工作区设置启动，没设置的工作区沿用全局默认模型。

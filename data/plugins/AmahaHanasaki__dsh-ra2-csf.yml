@@ -1,0 +1,6 @@
+url: https://github.com/AmahaHanasaki/dsh-ra2-csf
+name: AmahaHanasaki/dsh-ra2-csf
+category: tools
+description:
+  en: "Reads, edits and saves Red Alert 2 and Yuri's Revenge CSF string tables, decoding the RA2 complement encoding, and can launch RA2CStrEditor on a file."
+  zh: "读写并保存红色警戒 2／尤里的复仇 CSF 字符串表（含 RA2 补码编码），并可直接用 RA2CStrEditor 打开文件。"

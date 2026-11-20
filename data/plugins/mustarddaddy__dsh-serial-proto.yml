@@ -1,0 +1,6 @@
+url: https://github.com/mustarddaddy/dsh-serial-proto
+name: mustarddaddy/dsh-serial-proto
+category: tools
+description:
+  en: 'Serial-port debugger in the DSH right sidebar that cuts a UART byte stream into frames using a JSON protocol model, verifies the checksum the model declares, decodes command and status codes, and composes frames from the model to send. Fork of dsh-serial-debugger with the protocol layer added.'
+  zh: 'DSH 右侧栏的串口调试面板：按 JSON 协议模型把串口字节流切成帧、按模型声明的算法校验，解码命令与状态码，也能按模型组帧发送；在 dsh-serial-debugger 的串口界面上新增了协议层。'
