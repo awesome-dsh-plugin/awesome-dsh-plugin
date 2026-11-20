@@ -1,0 +1,7 @@
+url: https://github.com/OldQin-Family/GitHub-ShipGo/tree/main/packages/dsh-shipgo
+name: OldQin-Family/GitHub-ShipGo#dsh-shipgo
+category: workflow
+description:
+  en: "ShipGo release checklist panel for DSH: track pre-release gates for GitHub tags, releases, package assets, and delivery. Progress stays in the browser; it does not run scripts or publish anything."
+  zh: "DSH 发布检查单面板：按 ShipGo 的发版闸门逐项确认 GitHub 标签、Release、发布件与交付检查；进度保存在浏览器，不执行脚本、不代发版。"
+icon: https://raw.githubusercontent.com/OldQin-Family/GitHub-ShipGo/main/icon.png
