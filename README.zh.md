@@ -903,6 +903,7 @@ dsh plugin --profile web add dshmarket
 - [gitByteFree/dsh-pomodoro-pet](https://github.com/gitByteFree/dsh-pomodoro-pet) — 番茄钟搭配四象限任务：专注轮次可绑定任务，桌宠随经验成长并解锁成就，Agent 可开始专注或提议任务。
 - [gjj-star/dsh-conversation-navigator](https://github.com/gjj-star/dsh-conversation-navigator) — 会话导航面板：按轮折叠的当前会话大纲与步次类型徽标（助手/工具/命令/压缩/出错），悬停气泡显示用户提问全文，可隐藏轮次号的极简徽标视图，仅检索提问与助手回复的关键词过滤，点击跳转与阅读位置跟踪，支持加载更早/加载全部历史分页。宿主 ≥ 0.1.2-rc.1，旧宿主装 @legacy/0.2.5。
 - [GLFzr/dsh-file-upload](https://github.com/GLFzr/dsh-file-upload) — Codex 式拖拽：把任意文件拖入 DSH Web 界面，文件存入 ~/.dsh-dropbox，路径以整块蓝色 chip 插入输入框。
+- [GMLZYQZS/dsh-browser-favorites](https://github.com/GMLZYQZS/dsh-browser-favorites) — 对话标题栏右端的五角星：收藏常看的网址，点一下就在右侧栏的浏览器里打开，每行还能用系统浏览器打开（应对禁止内嵌的站点）。列表存在本机浏览器里，同一个 profile 的每个对话都能用；没有打开对话时按钮不显示。
 - [GnaneshKunal/dsh-menubar#plugin](https://github.com/GnaneshKunal/dsh-menubar/tree/main/plugin) — 菜单栏应用不在插件里：需在 macOS 上用仓库 app/ 目录自行执行 swift build -c release 构建，插件只提供宿主桥。
 - [golddream-y/ratel-dsh-lumina](https://github.com/golddream-y/ratel-dsh-lumina) — 让开发，有趣一点。为 DeepSeek Harness 添一层恰到好处的动效，支持效果调整并跟随系统「减少动态效果」。
 - [GoldenLoaf24h/dsh-prompt-suggestion](https://github.com/GoldenLoaf24h/dsh-prompt-suggestion) — 每轮结束后预测你的下一句话，以灰色 ghost text 显示在输入框：Tab 整条采纳、Alt+→ 逐词采纳、Enter 采纳并发送、Esc 忽略、Alt+R 换一条且不重复旧的那条；输入几个字时用本会话发过的提示做前缀补全，空输入框按 ↑ 回填上一条；插件页可设置服务商、模型、思考强度、各按键开关与生成参数。
@@ -1667,6 +1668,7 @@ dsh plugin --profile web add dshmarket
 - [Num86/dsh-functions](https://github.com/Num86/dsh-functions) — 给 DSH 顶端加一个可扩展的「功能」栏：插件注册的一键动作都在这里，支持分级确认与二级菜单。0.4.0 起自带了「重启 DSH」功能，不再需要单独安装重启插件。
 - [Nyco1d/dsh-prompt-optimizer](https://github.com/Nyco1d/dsh-prompt-optimizer) — 输入框旁的一键提示词优化器，带左右对比面板与模式设置。输出长度跟着你的话走：说「简洁」就写 350–650 字的精简版，不说才展开到最多 1400 字。提示词模板为原创；「官方模板对照」模式需要本机已装 Prompt Optimizer。
 - [NYSM803/dsh-restart-button](https://github.com/NYSM803/dsh-restart-button) — 给 dsh Web GUI 的悬浮重启按钮（仅 Windows，需 dsh >= 0.2.2-rc.1）：拖动改位置、点击确认后一键重启应用与 Host，可中途取消、超时会自动收手并说明原因；图标（4 个自带矢量图或上传图片）、底色、位置锁定都在设置里改。
+- [dsh-rainbow-activity](https://github.com/nzlov/dsh-rainbow-activity) — 为 DSH Web 原生活动汇总添加按执行顺序排列的彩虹条和分类计数，不改变消息或折叠行为。
 - [Oak-liuhj/dsh-todo-progress](https://github.com/Oak-liuhj/dsh-todo-progress) — DeepSeek Harness Web / 桌面客户端的任务进度侧栏：从右上角“任务”查看完成比例、当前步骤、状态筛选与详情；声明兼容 DSH 0.2.1-rc.5 或 >=0.2.2-rc.1 <0.3.0-0。
 - [objectivex666/dsh-settings-search](https://github.com/objectivex666/dsh-settings-search) — 通过关键词、拼音、意图或 AI 一键搜索 DSH 设置面板，并直达目标设置页、标签或选项。
 - [Odefined/dsh-mobile-webui](https://github.com/Odefined/dsh-mobile-webui) — 修复 dsh web GUI 的手机视口体验：抽屉式侧栏与滑动手势、纯图标 composer 与「权限·模型·思考深度」状态行、浮窗居中、横向溢出与滚动条挤压居中修复。
@@ -1753,7 +1755,7 @@ dsh plugin --profile web add dshmarket
 - [poluce/dsh-chat-embed](https://github.com/poluce/dsh-chat-embed) — 桌面版的多标签 AI 聊天面板：七个服务（DeepSeek、豆包、ChatGPT、MiniMax、Kimi、Gemini、Grok）各自在独立 webview 与独立登录分区中运行，聊天页可放在左栏主面板或右栏标签里——哪边点开就由哪边承载。仅限桌面版；登录态只在本次运行内有效，要跨重启保持需给桌面版的 resources/app.asar 打可选补丁（tools/shell-patch），面板可以自检补丁状态并给出确切命令。
 - [polychromate/dsh-sidebar-footer-rows](https://github.com/polychromate/dsh-sidebar-footer-rows) — 把侧边栏底部的动作按钮改成一行一个、铺满整行，并让各行的图标落在同一条竖线上。
 - [pomelo-ccc/dsh-pi-composer](https://github.com/pomelo-ccc/dsh-pi-composer) — 把输入框的模型控件换成 PI-Desktop 风格的选择器：双栏菜单（搜索、按 provider 分组、上下文窗口与能力徽标）、推理强度滑块、↑/↓ 提示词历史回溯，以及带撤销的提示词改写按钮。
-- [Poy-Coder/dsh-im-indicator](https://github.com/Poy-Coder/dsh-im-indicator) — 在左侧会话列表标出「哪个会话正被 IM 通道驱动」：一行胶囊加一个实时状态点；零依赖、约 7 kB。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [Poy-Coder/dsh-im-indicator](https://github.com/Poy-Coder/dsh-im-indicator) — 在左侧会话列表标出「哪个会话正被 IM 通道驱动」：一行胶囊加一个实时状态点；零依赖、约 7 kB。它的 HTTP 路由通过 DSH 的 connection.requestRejection 鉴权，跨站请求返回 401/403 且无响应体。
 - [PPsz-qqq/dsh-restart-button](https://github.com/PPsz-qqq/dsh-restart-button) — 会话标题栏右端的重启按钮，可重启整个客户端：Windows 桌面版（Electron 外壳与 Host，走 Host 自身的优雅关闭流程）或 dsh web 服务。可等正在运行的回合与后台作业结束后再重启；重启后回到原会话，被中断的会话可一键继续；提示需重启才生效的插件更新；悬停显示 Host 运行时长与内存。
 - [prettyfox/dsh-selection-quote-auto](https://github.com/prettyfox/dsh-selection-quote-auto) — 在 DeepSeek Harness 的助手消息里选中文字即自动复制，并弹出「注释」浮框，点开才是评论框；右键引用菜单与 ⌘L 仍然保留。
 - [prgrmrwy/dsh-sidebar-session-provider-icon](https://github.com/prgrmrwy/dsh-sidebar-session-provider-icon) — DeepSeek Harness 插件：在侧边栏为每个会话显示 provider 与 model 图标，跟随输入框选择器即时更新，历史会话回退到最近一次请求；聚合路由（如 opencode-go、traex）显示 provider 主图并叠加 10px model 小图标。
@@ -2449,7 +2451,7 @@ dsh plugin --profile web add dshmarket
 - [yingqi-studio/dsh-panel-compact](https://github.com/yingqi-studio/dsh-panel-compact) — 插件装多了，侧栏的面板列表会把下面的工作区挤没：这里只留三个入口，鼠标拖动排序，其余全部收进「更多」菜单——点名字直接打开，✓/＋ 决定去留，顺序和选择记在 localStorage，重启后不变。
 - [yingqi-studio/md2chat-dsh-share](https://github.com/yingqi-studio/md2chat-dsh-share) — 在每条回复下加一个「分享到聊天」：把回答转成能直接粘贴进微信/企微的内容——纯文本、分几段发，或一张长图；也能导出可编辑的 Word（表格、代码、公式保持原生结构）或邮件用的表格 HTML。转换全部在本机完成，正文不上传。
 - [yingrui96/dsh-attention-board](https://github.com/yingrui96/dsh-attention-board) — 会话头部的常驻注意力胶囊：一眼看到还有几个会话在等你——待批准、待回答、出错，以及你已经拒掉的事。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
-- [YinkaiYu/chat-in-dsh](https://github.com/YinkaiYu/chat-in-dsh) — 在 DSH 侧栏面板中嵌入官方 DeepSeek 网页版聊天（chat-demo），复用 DSH 的 DeepSeek 账号，无需填写 API Key。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [YinkaiYu/chat-in-dsh](https://github.com/YinkaiYu/chat-in-dsh) — 在 DSH 侧栏面板中嵌入官方 DeepSeek 网页版聊天（chat-demo），复用 DSH 的 DeepSeek 账号，无需填写 API Key。它的 HTTP 路由要求 DSH 浏览器登录，并拒绝跨站请求。
 - [YinniCoding/momolulu](https://github.com/YinniCoding/momolulu) — DSH Web UI 的悬浮照片陪伴插件：15/25/45/60 分钟专注计时、喝水与站立提醒、Open-Meteo 天气，以及可一键跳转的会话雷达（运行中、刚结束、等待输入、请求权限）。
 - [YinqiSY/dsh-session-folders](https://github.com/YinqiSY/dsh-session-folders) — 将侧边栏工作区里的会话进行会话分类并可折叠，便于会话的分类收纳。把侧边栏对话收进可折叠、可拖动排序的文件夹，只装饰官方会话列表而不替换它。
 - [Yinxe/deepseek-harness-plugins#archive/file-change-viewer](https://github.com/Yinxe/deepseek-harness-plugins/tree/main/archive/file-change-viewer) — 接管对话流的 edit/write 行：外壳与折叠沿用官方原生行，展开后每个文件一张代码卡片——文件类型图标、增删统计、块级折叠、高亮/±差异切换、语法高亮统一 diff（行号为文件真实行号），改动两侧多显示可调的上下文行。另带 patch 工具（测试版，默认关）：一次调用把多处零散修改/多文件补丁原子化应用（*** Begin Patch 信封，全有或全无）。已归档并冻结在固定版本：作者不再为它适配新版 DSH。
@@ -10543,7 +10545,7 @@ dsh plugin --profile web add dshmarket
 
 ### 🧑‍💻 开发与运行时
 
-- [1010231693/dsh-bat-runner](https://github.com/1010231693/dsh-bat-runner) — 浮在 DSH 界面上的本地脚本日志面板：从面板直接运行 .bat / .cmd，输出逐字实时显示（不加时间戳、不分级、不着色），正在跑的条目旁边显示它已运行多久；也可接收 BatRunner 启动器转发的日志。面板可拖动、可改大小，字体 / 字号 / 颜色 / 文字特效 / 外边框跟随 DSH 浅深外观，支持启动延迟自动运行与退出即停。仅支持 Windows。
+- [1010231693/dsh-bat-runner](https://github.com/1010231693/dsh-bat-runner) — 一个可以在DSH中运行任何bat脚本的插件，终端日志直接显示在DSH主界面，可控制启停，可设置日志面板外观，可任意拖动/缩放。
 - [1020252969/dsh-dev-runner](https://github.com/1020252969/dsh-dev-runner) — 一个地方管起整套开发环境：扫描目录发现项目并匹配各自的启动命令，按依赖顺序启动、以端口探测确认就绪，日志带彩色显示在侧栏。
 - [11111353535/dsh-reaper](https://github.com/11111353535/dsh-reaper) — 枚举本机全部监听端口，按「会话派生的 / 工作区内的 / 开发服务器 / 无法归属 / 系统 / 受保护」六级定性持有者；只有前两级可被自动选中，回收前默认只预览后代闭包计划。
 - [11111353535/dsh-which](https://github.com/11111353535/dsh-which) — 命令解析取证：一条命令实际会跑哪个文件、PATH 哪一条胜出、遮蔽了谁、有多少重复与死条目，以及同名副本报的版本是否一致。
@@ -11757,8 +11759,8 @@ dsh plugin --profile web add dshmarket
 - [peng456/dsh-plugin-mesh](https://github.com/peng456/dsh-plugin-mesh) — 通过 UDP 组播或端口扫描发现局域网内的其他 DSH 实例，在侧栏面板中列出它们以及各自上报的能力，并可经局域网或自动下载的用户态 Tailscale 节点在两台机器之间双向派发任务。
 - [PerryLink/dsh-reach](https://github.com/PerryLink/dsh-reach) — 把 DSH 的审批卡与提问卡推送到 IM 渠道（先支持微信），可在聊天里直接作答，带会话控制台、逐渠道安全与开放推送服务。
 - [polaris-smart/dsh-devices](https://github.com/polaris-smart/dsh-devices) — 去中心化多设备舰队：mDNS 同网发现、密钥配对、SSH 跨网直连指挥。
-- [Poy-Coder/dsh-channel-feishu](https://github.com/Poy-Coder/dsh-channel-feishu) — 飞书通道：一个飞书私聊绑定一个 DSH 会话，流式卡片回答、原生思考过程、交互式问答卡、附件双向收发，并针对无人值守做了断线自愈与消息去重。入站默认关闭；开启后 allowedUsers 留空时第一个发消息的人被绑定为主人，且该通道的会话默认使用 danger-full-access 权限预设（可改）。
-- [Poy-Coder/dsh-channel-wechat-ilink](https://github.com/Poy-Coder/dsh-channel-wechat-ilink) — 微信通道（ClawBot / iLink 协议）：一轮一条完整回答、输入中状态与阶段进度、图片文件双向收发，通道独占工作区，可与飞书通道并存。入站默认关闭；开启后只有登录的微信账号（或 allowedUsers 里的人）能驱动它，且该通道的会话默认使用 danger-full-access 权限预设（可改）。
+- [Poy-Coder/dsh-channel-feishu](https://github.com/Poy-Coder/dsh-channel-feishu) — 飞书通道：一个飞书私聊绑定一个 DSH 会话，流式卡片回答、原生思考过程、交互式问答卡、附件双向收发，并针对无人值守做了断线自愈与消息去重。入站默认关闭；开启后 allowedUsers 留空时第一个发消息的人被绑定为主人；通道会话默认使用 workspace-write 权限预设（写入限制在工作区内，可改）。
+- [Poy-Coder/dsh-channel-wechat-ilink](https://github.com/Poy-Coder/dsh-channel-wechat-ilink) — 微信通道（ClawBot / iLink 协议）：一轮一条完整回答、输入中状态与阶段进度、图片文件双向收发，通道独占工作区，可与飞书通道并存。入站默认关闭；开启后只有登录的微信账号（或 allowedUsers 里的人）能驱动它；通道会话默认使用 workspace-write 权限预设（可改）。
 - [qiaohelenjoe/dsh-app#dsh-mobile-tunnel](https://github.com/qiaohelenjoe/dsh-app/tree/main/dsh-mobile-tunnel) — DeepSeek Harness 移动端：用手机使用你电脑上的 DSH。安卓 App 用同一账号登录，在设备列表里选中这台电脑，就能在手机上打开并进入它的 DeepSeek Harness 界面。桌面端插件负责注册与连接，本机不用开公网端口；界面会自己适应屏幕——手机上变成适合手指操作的布局，折叠屏展开或窗口变大时回到桌面布局。PC 端面板可以看到登录态、设备配额、设备列表与 App 下载二维码。
 - [QIC-9821/dsh-pc-bridge](https://github.com/QIC-9821/dsh-pc-bridge) — 本机回环 HTTP 桥：让对端机器 ping 并执行 shell 命令，可选 ssh 反向隧道看守。
 - [qingshuiliuyun/dsh-node-monitor](https://github.com/qingshuiliuyun/dsh-node-monitor) — 多 DSH 节点监控与集中管控：逐节点状态与只读会话、UDP 发现零配置组网、一键/内嵌打开真实 DSH、跨网反向接入的远程主节点、无服务器接入码/IPv6，以及默认关闭的插件启停/重启（干跑、二次确认、JSONL 审计）。默认监听 :: / 0.0.0.0 用于局域网发现，状态与控制路由由令牌保护；它的 HTTP 路由没有 DSH 的访问检查。
