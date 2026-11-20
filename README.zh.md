@@ -1282,7 +1282,7 @@ dsh plugin --profile web add dshmarket
 - [liaohongrao/dsh-session-dates](https://github.com/liaohongrao/dsh-session-dates) — 在 DSH 侧边栏的每个工作区内把会话按日期分组、标注具体日期，并保留运行中状态灯与按日期搜索。
 - [liaoyuqing/dsh-shutdown-idle](https://github.com/liaoyuqing/dsh-shutdown-idle) — 会话全部结束、后台任务也安静下来后自动执行电源动作（关机 / 重启 / 休眠 / 睡眠 / 锁定 / 注销）：插件每秒采样进程内会话，运行中的会话始终算「在忙」；后台任务检测是可配置项 considerJobs（默认开启，设置页直接显示当前计数）；确认窗口后进入可取消倒计时，右下角浮窗卡片显示当前阶段与剩余秒数并支持拖动；开关不会随宿主重启保留（重启后一律回到关闭），任何会话新启动或点取消都会中止倒计时；拿不到 agents 服务时一律按「在忙」处理，绝不触发。仅支持 Windows（使用系统自带 shutdown / rundll32），其他平台除 none 外均降级为 none。
 - [Liatos233/dsh-session-status-filter](https://github.com/Liatos233/dsh-session-status-filter) — 在工作区工具栏下方加一排状态 chip，按「运行中 / 待确认 / 未读」筛选会话，列出全部匹配项（工作区·标题·时间）并可直接打开；会话行尾同时显示状态圆点。
-- [liaty8/dsh-muteki-preset#muteki-workbench](https://github.com/liaty8/dsh-muteki-preset/tree/main/plugins/muteki-workbench) — Muteki CTF 蜂群预设（同仓库）的右侧栏控制台：档位按钮一键切靶场批量并设并发池/令牌回填/成本墙，运行时生效不用重启；按题显示派单次数与估算成本的人民币/美元账本，派单自动打开子代理实时 pane；派单与账本数据来自需另装（install.ps1）的预设 orchestrator。
+- [liaty8/dsh-muteki-preset#muteki-workbench](https://github.com/liaty8/dsh-muteki-preset/tree/main/plugins/muteki-workbench) — Muteki CTF 蜂群预设（同仓库）的右侧栏控制台：档位按钮一键切靶场批量并设并发池/令牌回填/成本墙，运行时生效不用重启；按题显示派单次数与估算成本的人民币/美元账本，派单自动打开子代理实时 pane；派单与账本数据来自需另装（install.ps1）的预设 orchestrator。可选「首解即报」横幅在 worker 写回 flag 的瞬间亮旗，支持一键复制（仅 flag 值）、逐条删除与全部删除（工作台内确认模态）。
 - [lidongbei/dsh-session-view](https://github.com/lidongbei/dsh-session-view) — DSH 的会话优先左侧栏：置顶、活跃、最近分区，工作区分组，专注模式，搜索与会话回收站。
 - [liggest/dsh-alt-enter-newline](https://github.com/liggest/dsh-alt-enter-newline) — 给 dsh 的网页输入框加上 Alt+Enter 换行。
 - [LighghtEeloo/dsh-next-actions](https://github.com/LighghtEeloo/dsh-next-actions) — 在回复下方给出至多 3 条可点击的下一步建议；点击只填入输入框，不会自动发送。
@@ -6669,6 +6669,7 @@ dsh plugin --profile web add dshmarket
 - [kdcadmin/dsh_douyin_tools](https://github.com/kdcadmin/dsh_douyin_tools) — 抖音助手插件：每天刷一轮视频、读评论、写带日期的日报，可点赞、评论并 @ 你（默认均关闭），还能发布你自己 ComfyUI 出的片子。仅限 Windows；需 Python 3 与系统 Chrome，首次使用要先点「装主依赖」并扫码登录。
 - [kdcadmin/dsh_qzone_sticker](https://github.com/kdcadmin/dsh_qzone_sticker) — QQ 空间发说说插件（仓库 dsh_qzone_sticker）：手机 QQ 扫一次码登录，之后由模型按心情挑表情包发说说，支持每天条数上限，静默 Chrome 不占屏。
 - [keer1024/dsh-native#packages/dsh-rust-exec](https://github.com/keer1024/dsh-native/tree/main/packages/dsh-rust-exec) — Windows 上的常驻 Rust 伴生进程，把散落的 shell 调用收进一个暖 worker：11 个工具（10 个 rust_* 工具外加 native_help 入口；5 个常驻、6 个按需激活）覆盖命令执行、带 sha256 校验的文件读写、代码索引与搜索、会话日志投影与资源采样，由带通道池和 RSS/CPU 软限额的 worker 提供，并暴露 8 条 HTTP 路由。
+- [keerzzz/dsh-wechat-ro#plugin](https://github.com/keerzzz/dsh-wechat-ro/tree/main/plugin) — 在 Linux 上导入本人微信历史的本地副本，供 DSH 会话检索：按联系人、日期和关键词查询并给出原文引用与北京时间，侧栏展示每日消息与文字数、近 7 天趋势、按会话归类的重点，以及由本人确认归属的待办，另有六个只读历史来源。仅支持 Linux 微信 4.1.13.26；Windows 与 macOS 采集尚未实现。
 - [kenny2077/dsh-web-search-zai](https://github.com/kenny2077/dsh-web-search-zai) — DeepSeek Harness 的 Z.ai / 智谱网页搜索插件，支持 Coding Plan MCP 套餐额度和 REST API 余额两种计费模式，提供原生中英文设置卡片，可复用现有 ZAI_API_KEY。
 - [kentleenot/dsh-trading-toolkit](https://github.com/kentleenot/dsh-trading-toolkit) — DSH agent 的 A股/美股交易工具箱：实时行情、OHLCV K线、ADX 三状态市场分类信号与简易回测预览，数据源东方财富。只读设计，永不下单。
 - [Keridium/dsh-gopeed-downloader](https://github.com/Keridium/dsh-gopeed-downloader) — 把本机 Gopeed 下载器接进 DSH 的 agent 工具：新建、查看、暂停、继续、删除下载任务，诊断或启动 Gopeed 进程，并通过 DSH 后台任务接收下载完成事件（空闲的 agent 会被唤醒）。进程诊断与启动仅支持 Windows，下载相关工具跨平台可用。
