@@ -1,0 +1,6 @@
+url: https://github.com/alitrack/dsh-duckdb-skills
+name: alitrack/dsh-duckdb-skills
+category: skill
+description:
+  en: 'DuckDB query methodology skill pack for dsh: schema-first workflow, alias reuse, safe aggregation and conversion patterns, bundled as a Cordis skill provider (companion to dsh-duckdb).'
+  zh: 'dsh 的 DuckDB 查询方法学技能包：schema 优先工作流、别名复用、安全聚合与转换模式，以 Cordis skill provider 形式打包（dsh-duckdb 的配套件）。'
