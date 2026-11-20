@@ -4,3 +4,4 @@ category: browser
 description:
   en: 'Quick and batch webpage annotations added to chat drafts in DSH Desktop.'
   zh: '在 DSH Desktop 内嵌网页上快速引用元素、批量添加备注，并汇总到聊天草稿。'
+tarball: https://github.com/chnuuh/dsh-browser-annotation/releases/download/v0.1.1/dsh-browser-annotation-0.1.1.tgz
