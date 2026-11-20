@@ -1,0 +1,6 @@
+url: https://github.com/pordlm/py-academic-fig-skill
+name: pordlm/py-academic-fig-skill
+category: skill
+description:
+  en: A matplotlib skill that renders Chinese academic figures — data plots, framework diagrams, field maps and flowcharts — in a white-background ink-line style with low-saturation accents, exporting PNG and PDF, plus a CLI that checks figure size, dpi, palette, PNG/PDF pairing and CJK glyph coverage.
+  zh: 基于 matplotlib 的中文论文插图 skill：数据图、框架图、场量图与流程图统一为白底墨线、低饱和强调的风格，PNG 与 PDF 双出；附 CLI 体检尺寸、dpi、配色、PNG/PDF 齐备与中文字形覆盖。
