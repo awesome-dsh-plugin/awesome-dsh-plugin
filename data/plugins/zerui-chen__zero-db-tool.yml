@@ -1,0 +1,8 @@
+url: https://github.com/zerui-chen/zero-db-tool
+name: zerui-chen/zero-db-tool
+category: tools
+description:
+  en: 'Database workbench for DeepSeek Harness: connection dropdown, object tree, data/schema/SQL tabs, read-only-first sql_* tools for SQLite, PostgreSQL and MySQL.'
+  zh: DeepSeek Harness 数据库工作台：连接下拉、对象树、数据/结构/SQL 页签，只读优先的 sql_* 工具，支持 SQLite/PostgreSQL/MySQL。
+icon: https://raw.githubusercontent.com/zerui-chen/zero-db-tool/main/assets/icon.png
+tarball: https://github.com/zerui-chen/zero-db-tool/releases/download/v1.0.0/zero-db-tool-1.0.0.tgz
