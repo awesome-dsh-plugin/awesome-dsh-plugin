@@ -632,6 +632,7 @@ dsh plugin --profile web add dshmarket
 - [CTX666666/dsh-prompt-polish](https://github.com/CTX666666/dsh-prompt-polish) — 输入框润色按钮：用当前会话正在使用的模型改写草稿，四种风格，代码层保真校验确保数字、版本、路径、URL、引号内容与代码标识符逐字保留，支持一键还原，无需自备 API Key。
 - [cuhaitiang0405-collab/dsh-indexbookmark](https://github.com/cuhaitiang0405-collab/dsh-indexbookmark) — DSH 对话问题索引：列出会话中你提过的所有问题，支持搜索、分页与一键定位。
 - [cv588888888888888888888ju/dsh-gallery](https://github.com/cv588888888888888888888ju/dsh-gallery) — 对话里的图片收藏夹：本地文件、网图 URL、对话附件一键收进专辑（按内容哈希去重），打标签、按关键词或分类找图，并以原生 markdown 图片直接发出；带设置面板、输入框选图器，以及带 SHA-256 校验的图包市场与 ZIP 导入导出。由 yyh-001/dsh-meme（MIT）通用化改造而来，LICENSE 与 README 均保留上游署名。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [cv588888888888888888888ju/dsh-think-flow](https://github.com/cv588888888888888888888ju/dsh-think-flow) — dsh-think-flow 侧栏思维链面板的中文增强 fork：上游把每个会话的实时思考折成 turn → step 分组；本 fork 再把每一步交给另一个可配置的模型（titleProvider/titleModel），在步骤行下面写一行 8~18 字中文标题与 20~60 字中文解释，整轮写一条中文标题。主模型完全不动——不注入系统提示词、不新增工具、不改上下文，插件只是自己多发一次请求。autoTitlesOn 让面板一连上就自动补标题；超过 10 步的批次会切段生成，100+ 步的长轮也不会整批返回空；只调工具、没有思考的步骤按工具调用本身给解读，某段失败会退避重试最多三次。
 - [CVEO/dsh-digital-earth](https://github.com/CVEO/dsh-digital-earth) — 数字地球：在对话旁边打开三维地球，加载城市模型或实景三维数据就能浏览；量距离、截图、做淹没和日照分析，也可以一句话让 AI 代劳（支持 3D Tiles / 3DGS）。
 - [cxv117793-blip/dsh-sidebar-overflow](https://github.com/cxv117793-blip/dsh-sidebar-overflow) — 在侧边栏主导航列表末尾放一行「更多」，每个入口单独决定留在外面还是收进去：菜单列出全部入口，一行一个开关，两个方向的切换都只要点一下；入口多了能用搜索框筛，一个「全部恢复」把两类键一起清空。底部工具区的按钮也能收，插件入口锁死不可收；选择写进 profile 配置，DSH 重启后照样生效。
 - [CXZAAA/dsh-radio](https://github.com/CXZAAA/dsh-radio) — 在 composer 状态行加一条 24px 胶囊，播放 7 个预置网络电台；带实时频谱、Nightride FM 与 Radio Paradise 的当前曲目，并记住音量和上次电台。
@@ -5012,7 +5013,7 @@ dsh plugin --profile web add dshmarket
 - [LIQiang-IT/dsh-session-delete](https://github.com/LIQiang-IT/dsh-session-delete) — 在「归档会话」之后新增「删除会话」：彻底删除该会话的日志目录、回退快照与投影缓存条目、工作区/归档/置顶登记、绑定它的定时任务，以及聊天索引与用量账本中的对应行；删除前先列出全部目标，同一操作也以 session_delete 工具（支持 dryRun）提供给 Agent。
 - [listky/dsh-queue-message-merge](https://github.com/listky/dsh-queue-message-merge) — 将当前 DSH 会话普通队列中的纯文本消息用英文分号（;）合并为一条排队消息，不会提交发送。
 - [LittleGreyy/dsh-session-archaeology](https://github.com/LittleGreyy/dsh-session-archaeology) — 把一段历史会话离线蒸馏成可复用的 Skill：提取跑通的步骤、改过的文件、失败与修正、验证命令，并标注各自的会话事件序号。
-- [littleyellowbicycle/dsh-atc](https://github.com/littleyellowbicycle/dsh-atc) — 左侧栏一个面板看全本机 coding agent 的会话（DSH/codex/opencode/WorkBuddy/Gemini/ZCode/MiniMax），标题和状态都取自各自的本地记录，只读本地、零 token。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [littleyellowbicycle/dsh-atc](https://github.com/littleyellowbicycle/dsh-atc) — 左侧栏一个面板看全本机 coding agent 的会话（DSH/codex/opencode/WorkBuddy/Gemini/ZCode/MiniMax），标题和状态取自各自的本地记录，只读本地、零 token。点卡片回到那条会话：DSH 在宿主内切换，其它工具把它的窗口提到前台；在跑的卡会写它当前在做什么，详情抽屉能看到最近几次工具调用。HTTP 路由走 DSH 自己的准入检查，浏览器里打开的网页调不到它。
 - [liubaibuliuyan/dsh-session-delete](https://github.com/liubaibuliuyan/dsh-session-delete) — 一步删掉 DSH 里的对话：日志进可还原的回收站，投影缓存、工作区记账与侧边栏列表同步清理；只有真的有一轮在跑时才拒绝。
 - [liufeicc/dsh-btw-command](https://github.com/liufeicc/dsh-btw-command) — 新增 /btw 斜杠命令：主 agent 运行中也能问一个旁支问题或补充一条信息，不打断当前任务。
 - [liufeicc/dsh-clear-command](https://github.com/liufeicc/dsh-clear-command) — 新增 /clear 命令：清空某个会话的模型可见上下文，同时保留会话本身。
