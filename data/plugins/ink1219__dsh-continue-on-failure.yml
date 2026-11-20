@@ -1,0 +1,6 @@
+url: https://github.com/ink1219/dsh-continue-on-failure
+name: ink1219/dsh-continue-on-failure
+category: session
+description:
+  en: 'Shows a Continue card above the composer after a model request fails, so one click resumes the turn without retyping; keeps a per-message Retry action on finalized replies.'
+  zh: '模型请求失败后在输入框上方出现「继续」卡片，点一下即可接着跑，不用手动重新输入；另为已完成的回复保留逐条「重试」按钮。'
