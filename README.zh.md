@@ -4328,6 +4328,7 @@ dsh plugin --profile web add dshmarket
 - [Yuedalao/dsh-connect-minimax](https://github.com/Yuedalao/dsh-connect-minimax) — 读取本机 MiniMax Code 登录态，经本地回环反向代理接入 DSH；不保存 API Key，也不会退出登录。
 - [Yuer6327/ModelTester](https://github.com/Yuer6327/ModelTester) — 在 dsh 网页端挂载模型归属面板，用纯本地、零联网的结构指纹匹配（模板特殊 token 泄漏、glitch 金丝雀、tokenizer usage 向量比对）判断当前会话的回答最像 29 家 AI 厂商中的哪一家，每个结论附带可展开的证据账本，另附 12 探针主动取证电池。
 - [YUEYUEXYS/dsh-think-ultra](https://github.com/YUEYUEXYS/dsh-think-ultra) — 将每个请求固定到原生 max effort 档位，并提供按模型与模式隔离的推理深度面板：0-20 能力滑块、独立的迅流（Velocity）/极境（Apex）配置档与离线推理工具箱。以混淆构建交付，允许商用，禁止逆向。
+- [yuhhhong/dsh-model-meta-fill](https://github.com/yuhhhong/dsh-model-meta-fill) — 为 DSH 中已配置的模型匹配 models.dev 资料，预览并确认后填入上下文窗口、最大输出 token 数、输入类型和思考等级。
 - [yuioi666/dsh-plugin-model-capability](https://github.com/yuioi666/dsh-plugin-model-capability) — DSH 网页端模型能力管理插件：控制推理档位、上下文与输出上限、输入模态及网关兼容预设，双语界面。
 - [Yunado/dsh-qwen38-local-qol](https://github.com/Yunado/dsh-qwen38-local-qol) — 本地 Qwen3.8 线（llama.cpp 或 NInfer）的逐请求 thinking 预算、压缩后端与设置 tab。
 - [Yutai233/dsh-selective-subagent](https://github.com/Yutai233/dsh-selective-subagent) — 在每个进程内子代理启动前询问要用的 provider / 模型，候选列表来自你已配置的 LLM Provider；60 秒内不做选择则子代理沿用 DSH 原本的路由。
@@ -6342,6 +6343,7 @@ dsh plugin --profile web add dshmarket
 - [dungcsnd1133/dsh-reach](https://github.com/dungcsnd1133/dsh-reach) — 用四个只读工具覆盖九个公开渠道——网页、GitHub、V2EX、YouTube、Bilibili、雪球、LinkedIn、Reddit 与 Twitter——提供 reach_search、reach_read、reach_run、reach_channels，并注明每个渠道哪些路径无需登录即可读取。YouTube 渠道需 PATH 中有 yt-dlp。
 - [dungcsnd1133/dsh-video-watch](https://github.com/dungcsnd1133/dsh-video-watch) — 下载视频链接、从中抽帧，并用 Groq Whisper 转写语音，让 agent 能回答视频内容相关的问题；过长音频会切成 15 分钟片段以符合上传上限，没有 key 时仍会返回抽帧，只有转写需要该 key。需 PATH 中有 ffmpeg、ffprobe 与 yt-dlp。
 - [Duoasa/DSH-to-Figma](https://github.com/Duoasa/DSH-to-Figma) — 让 DSH 用自然语言读取、创建和编辑 Figma UI，支持参考图比对、设计参考、组件与变量、动效、素材和局部恢复。默认走本地配套插件，保留官方 MCP 接入；需 Figma 桌面版并导入 DSH 生成的配套插件。
+- [Dushiqi1987/dsh-sweeper](https://github.com/Dushiqi1987/dsh-sweeper) — 审计工具执行在你工作区里留下的文件：把 write/edit 写过的每个路径、以及 DSH 的溢出文件，与会话日志、磁盘和 git 三方对账。所有一周内没被任何工具再用过、且未被 git 跟踪的文件分两档列出，只有你勾选的那一档才会被移入可整批恢复的回收站。默认只做报告；模型可以额外推荐候选，但每条建议都要过五道服务端校验。
 - [dxxCaO/wincu](https://github.com/dxxCaO/wincu) — 给 DeepSeek Harness 用的 Windows 计算机操作插件：常驻 PowerShell UIA 后端，对外只有 16 个合并入口（读取/点击/输入/观测/验证）；带加固的策略层（红线拒绝、显式审批、观测绑定、落点归属与前台焦点守卫）与一轮性能优化（后端预热、缓存、像素哈希稳定探测）。fork 自 dsh-computer-use-win。
 - [DYF-zs/dsh-qboson-ising-solver](https://github.com/DYF-zs/dsh-qboson-ising-solver) — 将 QBoson Kaiwu 的 Ising 矩阵求解能力作为 solve_ising Agent Tool 接入 DeepSeek Harness。
 - [Eason-22/dsh-cua-driver-indicator](https://github.com/Eason-22/dsh-cua-driver-indicator) — 给 DSH 官方内置的 Cua Driver 电脑控制通道加一层可见提示与精度工具：顶部横幅显示是哪个会话、基于什么目标在控制电脑，按 Esc 真正停止；四件精度工具点得更准 —— 点前查落点有没有被别的窗口挡住、点后校验界面变了没有、按控件名字定位、最多连点 5 个控件、等某个控件出现；控件还可以按元素 ID 精确定位，应用支持时能在后台运行。官方通道没装时还会弹窗询问是否安装，并支持一键安装。仅支持 Windows。
