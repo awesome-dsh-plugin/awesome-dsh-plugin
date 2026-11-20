@@ -6148,6 +6148,7 @@ dsh plugin --profile web add dshmarket
 - [AMeYunCloud/renpy-toolkit](https://github.com/AMeYunCloud/renpy-toolkit) — Ren'Py 汉化工具集：为只有 .rpyc 的成品游戏生成完整翻译骨架，移植旧译本并校验译文。
 - [Andyfree-98/dsh-checkin-workbuddy](https://github.com/Andyfree-98/dsh-checkin-workbuddy) — 常驻输入框工具行的 WorkBuddy 每日签到按钮，一键调用 dsh-connect-workbuddy 的签到路由为当前选中账号签到，并在按钮旁显示结果：已签到、签到成功加分或连签天数。已签状态通过本地日期戳跨会话保留，加载时与上游状态对账，跨天后自动复位。
 - [angelky7/dsh-origin-bridge](https://github.com/angelky7/dsh-origin-bridge) — 通过 27 个 MCP 工具在对话里驱动本机 Origin/OriginPro：导入 .dat/.csv/.txt 与 CHI 工作站 .bin，绘图、改样式、拟合，交付 PNG/TIF/SVG/PDF 图片和可继续编辑的 .opju 工程；绘图、样式、导出都带读回验证。需要 Windows、Origin/OriginPro 2021+ 与 Python 3.10+，并把 `pip install originpro numpy` 装进 dsh 启动的那个解释器：缺包时每个工具都会返回 `missing_originpro`，PATH 上没有解释器时工具完全不注册。
+- [angelomadara/dsh-plugin-jira](https://github.com/angelomadara/dsh-plugin-jira) — Jira integration for DSH: a Settings page stores the site, email and API token, /jira-do fetches the ticket and branches it for the agent, /jira-comment posts a comment or summarizes the branch changes, and the jira_ticket and jira_comment tools read and write issues.
 - [AngelosZou/dsh-multi-folder](https://github.com/AngelosZou/dsh-multi-folder) — 为 DSH 项目提供副工作目录：agent 保持主工作区为 cwd，同时对已配置的副目录获得同等读写/执行权限，可在会话头部与新会话页配置。
 - [AngLi1997/dsh-plugin-sync](https://github.com/AngLi1997/dsh-plugin-sync) — 将已安装的 DeepSeek Harness 插件清单同步到 GitHub Gist（OAuth 登录、一键导出/导入并自动安装依赖）。
 - [Anionex/dsh-computer-use](https://github.com/Anionex/dsh-computer-use) — macOS 电脑控制：Accessibility 观测、过期状态拒绝、作用域权限与安全输入。
@@ -7668,6 +7669,7 @@ dsh plugin --profile web add dshmarket
 - [zengjunlin2022/dsh-basemind-plugin](https://github.com/zengjunlin2022/dsh-basemind-plugin) — 按会话工作区启动 BaseMind MCP server，并注册其对外提供的代码智能工具，无需配置 MCP 行。需先安装 BaseMind 并在 PATH 上（basemind serve）；否则不会注册任何工具。
 - [zerui-chen/zero-db-tool](https://github.com/zerui-chen/zero-db-tool) — DeepSeek Harness 数据库工作台：连接下拉、对象树、数据/结构/SQL 页签，只读优先的 sql_* 工具，支持 SQLite/PostgreSQL/MySQL。
 - [ZF3373/dsh-algo-trainer](https://github.com/ZF3373/dsh-algo-trainer) — 算法学习工具：同步 Codeforces 与 AtCoder 提交记录，分析弱项画像， AI 生成训练计划，间隔复习排期，覆盖 114 课算法模板库。
+- [zhang-1239/dsh-positions](https://github.com/zhang-1239/dsh-positions) — 持仓成本台：记录自己的买卖，并在下单前预览这笔交易会把成本、仓位、保本价变成多少。只在本机读写，不含行情、不联网。
 - [zhang-bin-98/sci-fork](https://github.com/zhang-bin-98/sci-fork) — 基于文献和实验结果的生物医学研究图谱，拆分假设，连接证据，推进研究。
 - [Zhang-Eli/dsh-github-trending-masonry](https://github.com/Zhang-Eli/dsh-github-trending-masonry) — 带侧边栏的 GitHub Trending 瀑布流：日/周/月三榜加分类标签，简明扼要的项目简介，一键加星可同步到 GitHub 账号或存入本地收藏。它会读取 github.com 与 raw.githubusercontent.com，把 README 摘录发给当前模型、需要翻译时把文本发给 Google Translate，并用你连接的 GitHub 令牌（或 GITHUB_TOKEN / GH_TOKEN）加星；它的 HTTP 路由没有 DSH 的访问检查。
 - [Zhang-Eli/dsh-one-pack](https://github.com/Zhang-Eli/dsh-one-pack) — 把整套 DSH 环境（已装插件、DSH 与插件设置、技能、会话、显式登记的工作区文件） 打包同步到一个私有 GitHub 仓库。多台设备共用同一仓库时各写自己的设备命名空间、 互不覆盖，拉取可选本设备、最新备份或指定设备；推送前先只读预览计划，拉取前自动 备份本地数据；疑似密钥字段写成掩码、密钥文件硬排除，GitHub token 只保存在 Host 本地。它会用面板里保存的 token 访问 api.github.com；HTTP 路由 （/one-pack/api/…）要求 DSH 浏览器鉴权。
@@ -12330,6 +12332,7 @@ dsh plugin --profile web add dshmarket
 - [pyyxzi/dsh-deepmoyu](https://github.com/pyyxzi/dsh-deepmoyu) — 让桌宠鲸鱼娘自主刷 B站：自己搜片、读字幕原文，经你允许后发评论、发动态，并写日报、做视频。c1overzz/dsh-bili-scroll（MIT）的维护分支，新增逐项授权、记忆、表情与本地视频制作；与上游注册同名的 bili_* 工具，不能与 dsh-bili-scroll 同装。视频制作需要 Python 3.11–3.13（或 uv），首次使用时自动安装媒体依赖。
 - [单机游戏内 AI 同伴「小汤圆」](https://github.com/qimidandapigu/dsh-xiaotangyuan-game/tree/main/apps/harness-plugin) — 单机游戏内 AI 同伴「小汤圆」：理解游戏画面，支持文字或按住说话交流并语音回复；现已支持《星露谷物语》，《饥荒联机版》和《缺氧》正在迁移接入。
 - [qinghuidaqzp/dsh-pixel-report](https://github.com/qinghuidaqzp/dsh-pixel-report) — 在右侧栏把 Agent 今天或本周的活做成一张 1080×1632 复古像素风战报卡片：旁观 llm/stream、tools/result、session/event 和 workspace/changes，真实统计改动文件与增删行数、执行命令、会话与轮次、按 DeepSeek 峰谷价估算的花费与缓存省钱、24 小时（或近 7 天）像素活跃柱状图、像素鲸角色以及确定性 RPG 评级称号。内置深海、掌机、街机三套配色，支持一键隐藏文件名、下载 PNG 和复制图片分享。
+- [qinghuidaqzp/dsh-workroom](https://github.com/qinghuidaqzp/dsh-workroom) — 右侧栏里一间会看 Agent 脸色的 176×50 像素小书房：会话在跑时显示器敲代码，等你确认时灯牌闪黄、猫坐起来，跑完亮绿灯，出错变红，可开提示音。WebGL2 玻璃旋钮把房间拨到白天、黄昏或深夜，同时通过 tools/pre-execute 决定 Agent 改文件、跑命令、装依赖前要不要先问你（每步确认、常规、放手跑）；git push、发布、sudo 在任何一档都要确认。
 - [qinu321/dsh-werewolf-dealer](https://github.com/qinu321/dsh-werewolf-dealer) — 在 DSH 里组织《新版一夜狼人杀》：确定性发牌、夜序、换卡、投票与结算，自带房间界面与夜间私聊提示。包内是 baixianger/dsh-chat 与 baixianger/dsh-bridge 的修改版快照；请先卸载这两个上游插件，同时启用会重复注册 dshChat / dshBridge 服务。
 - [qiqibabyy/dsh-pet-desktop](https://github.com/qiqibabyy/dsh-pet-desktop) — 独立置顶窗口的桌面宠物：直接导入 ~/.codex/pets 的 Codex 宠物，含亲密度段位、会话活动气泡、贴边吸附拖拽、右键可达的智能鼠标穿透；已装 dsh-usage 时自动对齐其当日 token 台账。
 - [Rain-Shuoyu/dsh-client-deep-sneak](https://github.com/Rain-Shuoyu/dsh-client-deep-sneak) — 摸鱼伴侣：右下角小窗播放 B站视频（原生播放器/弹幕/评论/搜索），agent 需要你时自动暂停提醒，处理完从原位置精确续播。
