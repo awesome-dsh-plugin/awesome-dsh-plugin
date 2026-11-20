@@ -1,0 +1,7 @@
+url: 'https://github.com/zjukop3/dsh-vertical-kit/tree/main/packages/dsh-privacy-notice-check'
+name: 'zjukop3/dsh-vertical-kit#dsh-privacy-notice-check'
+category: 'docs'
+description:
+  en: 'Privacy-notice hygiene: what is collected, what it is used for, how long it is kept, who else sees it, who to ask, the effective date, and the rights a reader can exercise. Retention is the rule it exists for: most notices state collection and purpose, then leave the retention column empty, and that is the column that decides whether "delete my account" means anything. "We collect nothing" and "we keep nothing" are accepted as answers. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: '隐私声明的检查：收集什么、用来干什么、保留多久、还给谁看、找谁问，加上生效日期与读者能行使的权利。保留期限是它存在的理由：绝大多数声明写了收集与用途，然后在这一格留白，而"注销账号"到底意味着什么就看这一格。"不收集""不保留"都算答案。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。'
+icon: 'https://raw.githubusercontent.com/zjukop3/dsh-vertical-kit/main/assets/icon-180.png'
