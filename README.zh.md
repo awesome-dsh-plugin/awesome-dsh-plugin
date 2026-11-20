@@ -1236,6 +1236,7 @@ dsh plugin --profile web add dshmarket
 - [L-aim/dsh-plugin-screenshot-ask](https://github.com/L-aim/dsh-plugin-screenshot-ask) — Windows 端的圈选截图：在任意界面上拖框，用八个把手微调，确认或复制后图片直接进入输入框附件，补一句问题即可发送。
 - [l541402398/dsh-file-uploads](https://github.com/l541402398/dsh-file-uploads) — 从 Web 输入框上传任意本地文件，以待发送卡片展示，并在设置中管理已存文件。
 - [Lacquervii/smooth-cursor](https://github.com/Lacquervii/smooth-cursor) — 为 DSH Web 输入框提供流畅的彗星光标：以发光的彗星拖尾取代原生闪烁光标，随输入平滑滑动，可配置强调色、粗细与拖尾，并适配中文等 IME 输入。
+- [laiyinyizao007/dsh-desktop-responsive](https://github.com/laiyinyizao007/dsh-desktop-responsive) — DeepSeek Harness 网页界面的手机宽度布局：侧栏变成浮层抽屉，输入区跟随键盘，表格横向滚动，底部工作台占满整屏。插件需要宿主带一个标记 data-dsh-sidebar-root：DSH Desktop 的构建有，npm 上发布的包没有。没有它插件找不到可适配的东西，并在控制台说明。宿主若还带 data-dsh-region 标记（本仓库的 patches/ 会给从源码构建的宿主补上），表头会折进一个菜单、用量行展开成面板、消息气泡铺满屏幕、设置对话框变成全屏标签页。插件绝不按哈希类名选择，卸载时全部还原。
 - [lakabuji-arch/dsh-model-accordion](https://github.com/lakabuji-arch/dsh-model-accordion) — 为 DSH Web 输入栏提供按 provider 折叠的模型选择器，并使用模型目录中的真实推理档位。
 - [lalalaleo/dsh-draft](https://github.com/lalalaleo/dsh-draft) — 基于 Markdown 的 dsh 草稿板插件，支持实时预览编辑，本地持久化。
 - [lamp23333/dsh-balance-simple](https://github.com/lamp23333/dsh-balance-simple) — 在 DSH 侧边栏集中显示 DeepSeek 余额、用量和峰谷倒计时，简约直观。需要 DSH Web 界面并已登录 DeepSeek 账户。
