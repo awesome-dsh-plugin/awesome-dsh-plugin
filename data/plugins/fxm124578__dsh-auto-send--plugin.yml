@@ -1,0 +1,7 @@
+url: https://github.com/fxm124578/dsh-auto-send/tree/main/plugin
+name: fxm124578/dsh-auto-send#plugin
+category: ui
+description:
+  en: 'Queues the composer draft for 12:00 / 18:00 presets or any later hour and has the Host deliver it into the same session; editing the draft afterwards updates what gets delivered.'
+  zh: '把输入框草稿排到 12:00 / 18:00 两个快选时刻或任意时刻，到点由 Host 投递进同一会话；之后改草稿会自动同步，发出的是最后那段。'
+tarball: https://github.com/fxm124578/dsh-auto-send/releases/latest/download/dsh-auto-send.tgz
