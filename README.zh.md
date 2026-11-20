@@ -11587,7 +11587,6 @@ dsh plugin --profile web add dshmarket
 
 - [01men/kizuna](https://github.com/01men/kizuna) — Kizuna Agent 信箱：四个工具让 Agent 读自己的信箱（信箱状态、待处理信件、读一封信全文），并以 completed / failed / input-required / working 状态回信。Kizuna 是带可靠投递的 Agent 通讯录：同一台机器上的 kizuna-box 持有信箱，对无人签收的信按 3 / 10 / 30 / 60 / 120 分钟重试，每次投递尝试都写入只增不改的留痕。插件只连本机回环信箱，不持有任何凭证。
 - [1032740078/dsh-web-url-view](https://github.com/1032740078/dsh-web-url-view) — 在设置页新增「查看 URL」：显示当前会话的临时访问地址，以及一个长期不变、局域网内其他设备也能直接打开的固定地址。
-- [2090003781/bridge#dsh-bridge-connector](https://github.com/2090003781/bridge/tree/main/packages/dsh-bridge-connector) — 让 Obsidian 插件驱动 DSH 会话、并把「你在读哪一篇、光标在哪」这类坐标交给模型的回环 HTTP/SSE 服务（只给坐标，正文留在磁盘上，需要时自己去读）；AI 在编辑器里有自己独立的光标；需要在 Obsidian 内配套运行插件。
 - [2710586329/dsh-qq](https://github.com/2710586329/dsh-qq) — 把 QQ 接进 DeepSeek Harness：私聊群聊、本地语音转文字、看图，以及十个互动工具（戳一戳、贴表情、点赞、发图、发文件、撤回等）。需要本机另跑一个 OneBot 11 实现（如 NapCat）。
 - [452926826/dsh-feishu-bot](https://github.com/452926826/dsh-feishu-bot) — 通过 WebSocket 将飞书聊天连接到 DeepSeek Harness 的项目、对话、回复和限定范围的工具审批。
 - [452926826/dsh-ssh-logs](https://github.com/452926826/dsh-ssh-logs) — 根据配置的权限通过 SSH 读取和搜索日志，并运行允许的命令。
@@ -11636,6 +11635,7 @@ dsh plugin --profile web add dshmarket
 - [cccodder/dsh-remote-console](https://github.com/cccodder/dsh-remote-console) — DSH 右侧栏的 SSH 远程终端：你和 agent 共用一个 PTY，16 个 agent 工具，传输上限可调，终端按会话隔离，配置页支持一键热更新。
 - [CCYellowStar2/dsh-astrbot-ingress](https://github.com/CCYellowStar2/dsh-astrbot-ingress) — 把本机 DeepSeek Harness agent 接到 AstrBot，从 QQ 等 IM 渠道驱动它：用 /dsh 派活、引用或 @ 机器人续聊、在聊天里回答审批与 ask_user_question（与 DSH 网页并行），结果、内联图片与文件卡片发回。含会话 / 工作区 / 模型 / 权限命令、/compact 与 /last 找回、三档过程显示、整群共用或按人隔离的会话范围。
 - [chanyuenpang/dsh-cindy-host](https://github.com/chanyuenpang/dsh-cindy-host) — Host 侧插件：将 Cindy 手机客户端接入 DSH，提供会话、消息、审批、todo、goal 的手机通道，以及配套的设置卡片。
+- [Charliewhale/bridge#dsh-bridge-connector](https://github.com/Charliewhale/bridge/tree/main/packages/dsh-bridge-connector) — 让 Obsidian 插件驱动 DSH 会话、并把「你在读哪一篇、标记了哪里」这类坐标交给模型的回环 HTTP/SSE 服务（只给坐标，正文留在磁盘上，需要时自己去读）；AI 在编辑器里有自己独立的光标；需要在 Obsidian 内配套运行插件。
 - [chenacc1/agentbridge#dsh-phone](https://github.com/chenacc1/agentbridge/tree/main/integrations/dsh-phone) — 把手机控制台接到当前这条 DSH Desktop 会话：执行 /phone 出现一次性二维码，扫码后可从手机发消息、审批工具调用、切换模型和停止任务，电脑仍是唯一执行端。需本机运行 AgentBridge。
 - [ChenJun25/dsh-console-hm](https://github.com/ChenJun25/dsh-console-hm) — DSH 控制台面板：在 DSH 设置里显示扫码配对面板，手机扫一下二维码（或输入 6 位码）就连上这台电脑的 DSH，之后在手机 App 里收发会话、看历史、传文件。全部能力都在本机跑，局域网内不依赖云端。
 - [chinahhy/DSH-plugins#dsh-tether-ios](https://github.com/chinahhy/DSH-plugins/tree/main/packages/dsh-tether-ios) — 面向 macOS Apple Silicon 上 DSH Desktop 0.2.0-rc.2 的 iOS 远程控制插件，支持配对、审批通知与设备撤销。
