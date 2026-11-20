@@ -2,5 +2,5 @@ url: https://github.com/JinYihang1011/dsh-plugins/tree/main/dsh-ui-tweaks
 name: JinYihang1011/dsh-plugins#dsh-ui-tweaks
 category: ui
 description:
-  en: 'One stylesheet plus two small DOM patches that line third-party sidebar entries up with the host: matching row height, padding and icon size, one consistent active background, and mutual exclusion so the cron panel and the host panels never overlap.'
-  zh: '一张样式表加两个很小的 DOM 补丁，把第三方侧栏入口拉回与宿主一致：行高、内边距与图标尺寸对齐，选中底色统一，并让定时任务面板与宿主面板互斥、不再互相覆盖。'
+  en: 'A stylesheet and small DOM patches that align third-party sidebar entries with the host: matching row height, padding and icon size, a consistent active background, and mutual exclusion so the cron panel and host panels never overlap. It also hides the duplicate cyrene theme shortcut in the sidebar footer while keeping the settings entry and theme features available.'
+  zh: '通过样式表和少量 DOM 补丁统一第三方侧栏入口与宿主的行高、内边距和图标尺寸，统一选中底色，并避免定时任务面板与宿主面板重叠；同时隐藏侧栏底部重复的昔涟主题入口，设置页入口及主题功能仍可使用。'
