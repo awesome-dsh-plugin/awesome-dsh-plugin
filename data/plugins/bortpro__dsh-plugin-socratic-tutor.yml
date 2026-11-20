@@ -1,0 +1,6 @@
+url: https://github.com/bortpro/dsh-plugin-socratic-tutor
+name: bortpro/dsh-plugin-socratic-tutor
+category: tools
+description:
+  en: Socratic tutor with topic-specific curricula, diagnostic questions, a saved skill map, spaced review, and a final assessment.
+tarball: https://github.com/bortpro/dsh-plugin-socratic-tutor/releases/download/v1.0.0/dsh-plugin-socratic-tutor-1.0.0.tgz
