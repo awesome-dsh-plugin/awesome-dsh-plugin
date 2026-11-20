@@ -1,0 +1,7 @@
+url: https://github.com/d289532296/dsh-inkstone-balance
+name: d289532296/dsh-inkstone-balance
+category: usage
+description:
+  en: Shows the remaining Intern Inkstone (书生·端砚) token-plan credits and usage windows in a floating widget on the DSH web UI.
+  zh: 在 DSH 界面右下角用浮标显示书生·端砚墨点套餐的剩余额度与用量窗口。
+icon: https://raw.githubusercontent.com/d289532296/dsh-inkstone-balance/main/icon.png
