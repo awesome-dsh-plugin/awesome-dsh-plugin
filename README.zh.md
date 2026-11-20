@@ -1533,7 +1533,7 @@ dsh plugin --profile web add dshmarket
 - [mimidor/dsh-stock-dock](https://github.com/mimidor/dsh-stock-dock) — DSH 输入框下方的 A 股、港股、美股自选股行情条：分组拖拽排序、搜索、标的 logo、迷你图、分时 1/3/5 日、5–60 分钟和日/周/月 K 线、自定义均线与颜色图例、点日 K 按需查看当日分时、放量提醒、右侧五档盘口、叠加对比、交易时段轮询，以及带全量加载进度的设置页。分钟历史落盘缓存（A 股最多 5001 根，60 分钟 4111 根；港美股 640 根）；数据来自腾讯、新浪、东财公开接口。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [Minajka/dsh-todo-list](https://github.com/Minajka/dsh-todo-list) — 放在右侧边栏、不进入对话的待办清单：添加、勾选完成、删除，拖动行即可排序。数据只保存在浏览器的 localStorage 里，插件不注册任何给模型用的工具；会话头部有个按钮可打开面板。
 - [Minecraftbe/dsh-toolfold](https://github.com/Minecraftbe/dsh-toolfold) — Codex 风格的工具调用折叠，将多个工具调用折叠到一行内。
-- [MingoYung/dsh-awakening](https://github.com/MingoYung/dsh-awakening) — 启动动画选择器，内置DeepSeek、Codex和Claude Code三套主题，支持本地MP4/WebM导入和插件内社区动画库；已支持的Windows DSH NEXT构建可选安装和恢复首屏兼容层。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [MingoYung/dsh-awakening](https://github.com/MingoYung/dsh-awakening) — 启动动画选择器，内置DeepSeek、Codex和Claude Code三套主题，支持本地MP4/WebM导入和插件内社区动画库；已支持的Windows DSH NEXT构建可选安装和恢复首屏兼容层。
 - [MingoYung/dsh-superagent-power](https://github.com/MingoYung/dsh-superagent-power) — 在 Windows 输入栏添加全局 Sup 开关，按需启动或正常关闭独立的 Super-agent 后台进程，关闭后释放其占用的内存。前置条件：已装好 DSH NEXT、Node 24+、独立 DSH CLI，且 Super-agent 已在独立 profile 中配置好（已在 DSH 0.2.1-rc.4/rc.5 验证）；还需在 Super-agent profile 中注册包内的 bridge.js——只安装桌面包并不能完成整套安装。
 - [minhaoli/dsh-ui-reload](https://github.com/minhaoli/dsh-ui-reload) — 在会话头部一键重载整个前端。点击后先读取下一个文档并等待其 bundle 地址可解析，避免客户端 bundle 重建后重载进入无法启动的图。
 - [minivv/dsh-activity-bell](https://github.com/minivv/dsh-activity-bell) — 侧边栏活动铃铛：会话跑完后铃铛显示红色角标，点一下把工作区列表换成按天分组的最近活动列表，尚未打开过的完成项带绿点。
@@ -2433,9 +2433,7 @@ dsh plugin --profile web add dshmarket
 - [yfwu2020/dsh-recent-sessions](https://github.com/yfwu2020/dsh-recent-sessions) — 在侧栏「设置」上方加一行入口，展开后最近会话以浮层压在工作区列表上方：按最后活动时间排序、每行带运行状态、高度可拖、滚动停下后自动对齐到整行。浮层不画自己的底色，展开后仍像侧栏的一部分。
 - [yfwu2020/dsh-selection-explain](https://github.com/yfwu2020/dsh-selection-explain) — 在 DSH Web 界面划词，小窗流式给出翻译，并结合这段文字所在的会话上下文解释它在这里的具体含义；面板带可回放的历史记录，也能一键升格为正式会话。
 - [yfwu2020/dsh-think-flow](https://github.com/yfwu2020/dsh-think-flow) — DSH Web 右侧栏的思维链面板：把每个会话的实时思考折成 turn → step 分组，每一步带该步的思考原文与工具调用。默认只展开最新一轮，更早的轮次收成一行；步骤按本地规则合并成阶段块，正在等工具的那一步单独标出，工具失败显示原因，思考原文按步按需取回，全轮目录在本地搜索轮次标题、用户原话与轮号，整轮可用一次模型调用生成中文标题。
-- [yggizz/dsh-plugins#dsh-artifact-copy](https://github.com/yggizz/dsh-plugins/tree/main/packages/dsh-artifact-copy) — 在对话里的文件右键菜单加三项：复制相对于该会话工作目录的路径、复制文本内容、以及把文件本体复制成原生剪贴板文件（Windows CF_HDROP、macOS 文件对象、Linux text/uri-list），可直接粘贴进资源管理器、访达、聊天窗口或邮件草稿。目录右键时第三项变成「复制文件夹」。交付卡片、行内文件引用和侧边栏文件树共用同一份菜单；后两项是浏览器页面自己做不到的事。插件只响应本机回环请求，局域网来源无法驱动剪贴板；内容复制上限 1 MiB，非文本文件该项置灰。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [yggizz/dsh-plugins#dsh-plugin-suite](https://github.com/yggizz/dsh-plugins/tree/main/packages/dsh-plugin-suite) — 一个包加六个独立功能，并自带一个逐项开关的设置页：对话里右键复制文件、深浅色切换按钮、每轮花费、隐藏「分支到新会话」、记住你取消固定的侧栏面板、右侧栏默认展开。每个功能挂在自己的运行时 fiber 上，所以开关是真正的卸载而不是把元素藏起来——关掉一个会释放它注册的菜单项、监听与 HTTP 路由，不需要刷新。开关文档存在 Host 的 profile 目录里，通过只应答本机回环的路由读写。它自带代码与设置界面，不只是依赖别的插件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
-- [yggizz/dsh-plugins#sidebar-pins](https://github.com/yggizz/dsh-plugins/tree/main/packages/sidebar-pins) — 记住你在左侧栏取消了哪些面板入口，每次启动重新应用同一个选择，收起来的入口不会又变回一排按钮。它不新增任何界面元素，只恢复侧栏本来的显示状态；不联网，也不写 profile 以外的文件。关掉插件后侧栏回到 DSH 默认行为，已保存的选择不会被删掉。它只管「取消过哪些」，面板排序、分组、搜索、拖拽这类完整侧栏管理是另一类插件。
 - [Ygritteee/dsh-ygritte-boot](https://github.com/Ygritteee/dsh-ygritte-boot) — 给 DSH 加一段「冰与火」全屏开机片头：冰霜→余烬的启动动画、双语打字机日志与发丝进度线，随后是 Ygritte 的五步身份授权。Esc 跳过，Enter/点击快进，设置页可切换关闭/简易/完整或随时重播；首帧由宿主半边在文档解析阶段就注入，DSH 自带的 Loading 卡片不会露脸。
 - [yhPrime/dsh-sidebar-guide-scroll](https://github.com/yhPrime/dsh-sidebar-guide-scroll) — 右侧栏「开始」页的工具卡片超出可视区域时让页面可滚动，并按需显示滚动条。
 - [yhPrime/dsh-sidebar-left-split](https://github.com/yhPrime/dsh-sidebar-left-split) — 把左侧栏「面板列表」与「工作区」之间的交接做成按行磁吸的可拖动分隔条，面板列表被压小时自动出滚动条。
@@ -10826,7 +10824,7 @@ dsh plugin --profile web add dshmarket
 - [kira905/dsh-ecosystem-panel](https://github.com/kira905/dsh-ecosystem-panel) — 只读生态面板：汇总实例的插件束、补丁插入、技能、升级健康与解耦健康。
 - [klT45/dsh-config-vault](https://github.com/klT45/dsh-config-vault) — 配置保险箱：为 DSH 配置创建快照、对比差异并安全回滚设置补丁、插件清单、技能与规则、工作区列表，凭据默认排除。
 - [kriskite/dsh-network-proxy](https://github.com/kriskite/dsh-network-proxy) — DeepSeek Harness 网络代理管理器：在设置界面即时切换跟随系统 / 手动 / 直连三种模式，立即生效。
-- [ksolodev/dsh-artel](https://github.com/ksolodev/dsh-artel) — 在项目的隔离副本里执行开发任务：Solo 模式一个 agent 独立完成，Swarm 模式三个 agent 在同一副本里通过 send_message/list_agents 互相通信，Conductor 模式增加一个指挥，负责分配份额、回答卡住的 agent 并整体验收成果（最多两轮返工）；结果按文件展示 diff，只应用你批准的文件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
+- [ksolodev/dsh-artel](https://github.com/ksolodev/dsh-artel) — 在项目的隔离副本里执行开发任务：Solo 模式一个 agent 独立完成，Swarm 模式三个 agent 在同一副本里通过 send_message/list_agents 互相通信，Conductor 模式增加一个指挥，负责分配份额、回答卡住的 agent 并整体验收成果（最多两轮返工），Fusion 模式让三个模型在只读沙箱里同时回答同一问题，由裁判模型把答案合并成一个决定，再由一个实现模型完成工作；结果按文件展示 diff，只应用你批准的文件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。
 - [kun2-5code/dsh-plugin-template](https://github.com/kun2-5code/dsh-plugin-template) — dsh 插件开发模板，覆盖配置、工具、事件、服务、钩子、浏览器 UI 插槽与斜杠命令。
 - [kute/dsh-keelwatch](https://github.com/kute/dsh-keelwatch) — 检查已装 DSH 插件的加载失败与依赖漂移，给反复失败的工具加冷却刹车，并按消息来源归因 token 成本。
 - [kuun993/dsh-loop-engine](https://github.com/kuun993/dsh-loop-engine) — Web 设置页的「循环引擎」开关，在五套引擎间切换驱动每个 dsh 会话的 agent 循环——内置 in-process 加托管的 Claude Code、Codex、Pi、Kimi Code——无需改动 harness；每个托管引擎都把思考与工具调用写入持久会话记录，接管命令、技能与 agent 预设，并经 dsh 子进程接缝沙箱运行。
