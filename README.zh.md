@@ -3522,6 +3522,7 @@ dsh plugin --profile web add dshmarket
 - [jungenius-stack/dsh-zcode-ui](https://github.com/jungenius-stack/dsh-zcode-ui) — 把 DSH Web 界面换成 ZCode 视觉语言的皮肤：Zai 明暗主题、侧栏工作区会话树、全局搜索、带悬停波的轮次导航、对齐 ZCode 的审批卡与消息键帽样式，每个视觉值都有契约断言守护。本项目是 MichengAI/dsh-codex-ui 的分支，请勿与上游同装——两者都会重绘同一套侧栏与会话界面。
 - [Juryorca/dsh-custom-theme-import](https://github.com/Juryorca/dsh-custom-theme-import) — DSH Web 皮肤管理器：支持主流 DSH 皮肤包本地/GitHub 导入、扫描已安装皮肤、预览/使用/禁用/刷新/删除，宿主持久化。
 - [JYT-copy/dsh-minecraft-ui](https://github.com/JYT-copy/dsh-minecraft-ui) — 给 DSH Web 界面用的 Minecraft 风格主题：方块化像素组件、可自动轮换与本地导入的照片壁纸库、Minecraft 界面音效，以及可导入本地曲目的 BGM 播放器。
+- [jyz48prsbr-netizen/dsh-llm-effort-zh](https://github.com/jyz48prsbr-netizen/dsh-llm-effort-zh) — 在模型选择器中把推理等级名称显示为中文，仅改显示文本，发给模型的 reasoning_effort 参数不变。
 - [kang200862/dsh-firefly-spring-skin](https://github.com/kang200862/dsh-firefly-spring-skin) — 流萤「春日手信」主题皮肤。覆盖 74 个 --dsw-alias-* 官方设计令牌（明暗两套），绘制春日橱窗背景与飘落花瓣、萤火；布局两侧各放一张人物立绘，中央用径向聚光遮罩保证文字对比度；在设置里注册分区，提供皮肤与立绘两个开关，选择存在 localStorage。
 - [keke050/dsh-wallpaper](https://github.com/keke050/dsh-wallpaper) — DSH Web 壁纸皮肤：预设 / 图片 URL / 本地上传，透明度滑块让整面界面透出壁纸。
 - [kiive357q/dsh-nekojishi-vn](https://github.com/kiive357q/dsh-nekojishi-vn) — 视觉小说主题，提供响应式人物、任务状态表情、角色表达技能与音乐播放器，附原创演示资源并支持可选的本机游戏导入。
@@ -10890,6 +10891,7 @@ dsh plugin --profile web add dshmarket
 - [jorinyang/dsh-doctor](https://github.com/jorinyang/dsh-doctor) — DSH 环境诊断、分级修复与一键回滚，附带运行时自愈服务。
 - [Joshua1ya/dsh-tray-restart](https://github.com/Joshua1ya/dsh-tray-restart) — 仅支持 Windows 的 DeepSeek Harness 桌面端重启开关。会话头部按钮与系统托盘图标都会结束应用及其 Host 进程、等待完全退出、清理残留的 profile 锁，然后重新拉起应用，装好新插件后不必手动退出再进。
 - [jyhn-hunao/dsh-idea-launcher](https://github.com/jyhn-hunao/dsh-idea-launcher) — 在 DeepSeek Harness 里读取 IDEA 运行配置，启动 Java / Spring Boot / Vue 项目并查看彩色日志，支持快速启动（java -cp 直启）。
+- [jyz48prsbr-netizen/dsh-plugin-autoupdate](https://github.com/jyz48prsbr-netizen/dsh-plugin-autoupdate) — 通过官方 pluginManager 服务定时原地更新已安装的 profile 插件，可配置间隔与排除列表，重启 DSH 后加载新代码。
 - [k0ndrateff/dsh-plugins#sentry](https://github.com/k0ndrateff/dsh-plugins/tree/main/packages/sentry) — 把 Sentry 接进 DeepSeek Harness：提供 Sentry MCP 服务器的工具、结果卡片，以及可解决、忽略与指派的问题面板。
 - [kaine380/dsh-mcp-unified-panel](https://github.com/kaine380/dsh-mcp-unified-panel) — 一站式 MCP 与技能管理中心，支持特征识别与原生 OAuth 2.1 浏览器鉴权。
 - [kanneiren/dsh-network-settings](https://github.com/kanneiren/dsh-network-settings) — 可视化 DSH 进程在 Windows 或 WSL 上的网络链路（DNS/TCP/TLS/HTTP 分层探测），检测失效的代理配置，并提供带快照回滚的安全修复。
