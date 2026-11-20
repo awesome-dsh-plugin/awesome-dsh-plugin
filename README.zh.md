@@ -1466,6 +1466,7 @@ dsh plugin --profile web add dshmarket
 - [magicOF2/dsh-chat-width-customizer](https://github.com/magicOF2/dsh-chat-width-customizer) — 会话标题栏按钮循环切换对话宽度（748–1600px），消息区、输入框、用户气泡同步加宽。
 - [magicOF2/dsh-schedule](https://github.com/magicOF2/dsh-schedule) — 本地长期日程面板:顶栏「日程」文字按钮、今天/本周/历史月历统计视图、完成打勾(按天记录历史)、日程↔会话链接点击跳转、重复日程(每天/每周)、一次性日程可选未完成自动顺延,以及 dailytask_* agent 工具。
 - [magicOF2/dsh-turn-marks](https://github.com/magicOF2/dsh-turn-marks) — 会话左侧消息标记条：每发一条消息多一根条条，点击跳转到该消息、悬停预览内容，当前消息对应的条条变白。
+- [maikaojai/dsh-plugin-reading-os](https://github.com/maikaojai/dsh-plugin-reading-os) — DeepSeek Harness 专属 ReadingOS：读取 macOS 苹果图书划线与批注，提供年阅读足迹热力图、跨书主题对照、Markdown 导出以及一键直通 DeepSeek 展开研读探讨。
 - [maimaiqwe/prompt-enhancer#dsh-prompt-enhance-cn](https://github.com/maimaiqwe/prompt-enhancer/tree/main/dsh-plugin) — 输入框四档提示词增强——系统档无条件输出 # Role / Profile / Skills / Rules / Workflows / Initialization 的 LangGPT 结构化系统提示词（任务型草稿升格为对应智能体），其余三档改写为轻度整理、单段或五段任务书；迭代工作台以可编辑基准加可选要求继续改写，支持回填与撤销；不改变原意、不凭空编造需求。
 - [Makk9609/dsh-find-viewer](https://github.com/Makk9609/dsh-find-viewer) — 侧边栏文本预览的查找栏：纯文本与代码按整份文件计数，命中高亮并可逐处跳转。
 - [Makk9609/dsh-send-lock](https://github.com/Makk9609/dsh-send-lock) — 调整 DSH Web 的消息发送方式：Enter 只换行，发送用 Cmd（macOS）或 Ctrl。
@@ -4518,6 +4519,7 @@ dsh plugin --profile web add dshmarket
 
 ### 💬 会话与消息
 
+- [08mamba24/dsh-subagent-compactor](https://github.com/08mamba24/dsh-subagent-compactor) — 手动压缩直接子智能体历史，支持恢复已结算的可续接子智能体后再压缩。
 - [1010231693/dsh-auto-compaction#dsh-auto-compaction](https://github.com/1010231693/dsh-auto-compaction/tree/master/packages/dsh-auto-compaction) — 本地模型友好的 DSH 会话自动压缩插件（理论上云端模型压缩时间也大大缩短为秒级）；空闲时用摘要替换最旧历史，避免本地模型全量 prefill；触发点可调，压缩后可随时回滚，任务中途也能按余量提前压缩（默认关闭）。
 - [1010231693/dsh-prompt-bar](https://github.com/1010231693/dsh-prompt-bar) — 把当前会话的第一条提问常驻在对话区上方，滚动也不消失：一键复制，面板列出本会话发过的全部提问（点某一行直接跳到那条消息，够不着会自动往前翻页），另有十套外观可在面板里即选即换（含四套亮色）。
 - [111222cjyq/dsh-curate](https://github.com/111222cjyq/dsh-curate) — 面向 DSH 会话的人工上下文整理工作台：可为整轮或单条消息标记「重要（原文保留）／一般／次要」，不调用模型即可改写用户、助手、工具结果与注入上下文消息，再按标记区间用模型生成的摘要压缩，或调用官方 /compact（范围由官方压缩器决定）；每次写入前都会生成一份本地 JSON 备份。
@@ -4693,7 +4695,7 @@ dsh plugin --profile web add dshmarket
 - [CuberSome/dsh-auto-archive-echo](https://github.com/CuberSome/dsh-auto-archive-echo) — 按闲置时间自动归档 DSH 会话：可配置闲置阈值与扫描周期，带冷却期、dry-run 预览、置顶与子代理会话豁免、目录排除清单，并把每个会话的归档时间持久化下来。
 - [Cui-CN/dsh-session-md-purge](https://github.com/Cui-CN/dsh-session-md-purge) — 在会话右键菜单加入可恢复的“删除会话”：归档会话、解除项目归属，并把会话目录连同该会话写过的 Markdown 文件移入 $DSH_HOME/session-trash；有运行中任务的会话会被拒绝。
 - [Curiouslv/dsh-session-board](https://github.com/Curiouslv/dsh-session-board) — 会话看板：悬浮球一览所有工作区会话，实时显示思考与工具进展、任务耗时、上下文用量，支持近 12h/30 天用量统计，点击直达会话。
-- [cxydaizihao520/dsh-session-coordinator](https://github.com/cxydaizihao520/dsh-session-coordinator) — 在 DeepSeek Harness 中查找、读取和新建独立会话，向一个或多个会话分享上下文，并在审批范围内协作。
+- [cxydaizihao520/dsh-session-coordinator](https://github.com/cxydaizihao520/dsh-session-coordinator) — 在 DeepSeek Harness 中，让各自保留历史的独立会话分工、交叉复核，并在批准的范围内共享上下文。
 - [Cyberbolt/dsh-snapcompact](https://github.com/Cyberbolt/dsh-snapcompact) — DSH 上下文压缩插件：路由支持图片时，把会话历史的中段在本地渲染成单色位图帧交给视觉模型阅读；精确的首尾文本、有上限的精确 token 索引与 FILES 文件索引仍以文字保留。
 - [CyberYui/dsh-workspace-isolate](https://github.com/CyberYui/dsh-workspace-isolate) — DSH 工作区级插件与技能门控。锁定一个工作区的插件/技能集合后，其它工作区会自动失去该工作区不使用的部分。
 - [cyh3436332528/dsh-plugin-session-purge#plugin](https://github.com/cyh3436332528/dsh-plugin-session-purge/tree/main/plugin) — 永久删除 DSH 会话（而非仅归档），级联清理它的日志目录、投影缓存、工作区记账与子会话（子代理）。提供设置页面板：按工作区分组，显示体积、时间与「打开中 / 已归档 / 子会话 N / 无工作区」标记，支持筛选与批量删除，每条删除都在行下方内联二次确认。
@@ -9368,7 +9370,7 @@ dsh plugin --profile web add dshmarket
 - [haaahhhis/MultiGameAssistant#dsh-plugin](https://github.com/haaahhhis/MultiGameAssistant/tree/main/packages/dsh-plugin) — 在 dsh 里管理游戏自动化脚本（仅 Windows）：安装和更新 MAA 等脚本，按定时流水线运行，监看日志并把出错和卡住交给 agent 处理，还会记录游戏活动。
 - [hackernotfound/dsh-tacit](https://github.com/hackernotfound/dsh-tacit) — 从不顺的轮次和你自己的纠正中学习你在提示词里没说出口的东西，并把学到的指令注入每个新对话的系统提示；指令可在设置中编辑，输入框按钮可用它们改写当前草稿。
 - [halftin/dsh-codex-runner](https://github.com/halftin/dsh-codex-runner) — 在 Windows 的 DSH 中运行本机 Codex CLI 任务，支持后台执行、进度查询、追加指令、已完成聊天记录展示及可选监督；需要 Node 22.23.4+、DSH >=0.2.1-rc.3 <0.3.0，以及已安装并登录的 Codex CLI。
-- [HAN102300/dsh-bot](https://github.com/HAN102300/dsh-bot) — 常驻 AI 队友：一句自然语言交给它长期值守；默认演习、执行前后双快照、一键整单回滚、人民币预算熔断、逐轮费用透明。
+- [HAN102300/dsh-bot](https://github.com/HAN102300/dsh-bot) — 常驻 AI 队友 + 全新管理界面：一句自然语言交给它长期值守；四页签控制台（Bot / 运行记录 / 设置 / 诊断）与输入框上方的一行快捷条（Bot 切换 / 模型快切 / 执行 / 管理中心）、默认演习、执行前后双快照、一键整单回滚、人民币预算熔断、逐轮费用透明、通知可按 Bot 覆盖。
 - [handsomeboy65/dsh-task-hub](https://github.com/handsomeboy65/dsh-task-hub) — DSH 的 TAPD 与禅道任务中心：在侧边栏查看分配给自己的需求或任务，并在手动指定的分支上派发 Agent。
 - [hanshanyike/dsh-yolo](https://github.com/hanshanyike/dsh-yolo) — 面向 DeepSeek Harness 的个人助手：从对话中整理跨会话事项与计划，通过提醒和可审计的助手看板持续跟进。
 - [hanxuanliang/dsh-chaos](https://github.com/hanxuanliang/dsh-chaos) — 面向 DeepSeek Harness 的持久化多 Agent 协作插件，提供频道、话题、任务与可恢复的 Agent 会话。
@@ -11731,7 +11733,7 @@ dsh plugin --profile web add dshmarket
 - [ook826092-cloud/dsh-mobile-css](https://github.com/ook826092-cloud/dsh-mobile-css) — DSH Web UI 移动端适配：紧凑排版、全宽输入卡（含光标修复）、抽屉式侧边栏（点击遮罩关闭）、两页式设置流程、响应式表格与统计、安全触控目标。
 - [opentandem/dsh-phone](https://github.com/opentandem/dsh-phone) — 在 dsh web 中新增「手机连接」页并显示二维码，用手机扫码、登录 OpenTandem 并点「允许」后，即可在 OpenTandem 里把任务发给这台电脑上的 dsh。首次使用会安装 OpenTandem 命令行和后台 Runner。
 - [OrderG-X/dsh-mobile](https://github.com/OrderG-X/dsh-mobile) — 在手机浏览器里用 DSH。点会话顶栏的手机按钮（或插件设置卡）打开手机访问、扫二维码，手机就打开电脑上 DSH 进程提供的官方网页界面，会话相同、实时同步，人不在电脑前也能跟进正在跑的任务、回消息、点批准。DSH 里内置一个网关（端口 18765）转发网页界面，并替手机处理桌面端登录。一个二维码在 Wi-Fi 和流量下都能扫：打开手机访问时顺带开 Cloudflare 免费快速隧道（没有 cloudflared 会从 Cloudflare 官方 GitHub 发布页下载），DSH 重启后地址不变，手机不用重扫。配对码一次性、10 分钟过期，每台手机一张凭证、可随时移除，顶栏按钮显示手机是否已连接，空闲连接自动保活。可选推送到手机：任务跑完（30 秒以上）、出错停下、等批准或等回答时，发到 Bark、ntfy、Server酱、飞书 / 企业微信 / 钉钉群机器人、Telegram 或任意 Webhook；通知只带会话标题和状态，批准仍在 DSH 里点。手机上网页界面的左右两栏改成盖在页面上，可以带图标添加到主屏幕。
-- [oscarka/deepseekharness-remotecontrol](https://github.com/oscarka/deepseekharness-remotecontrol) — DeepSeek Harness 的手机端 Web PWA 与飞书远程控制中心（可选接入本机 Antigravity、Codex、Claude Code、WorkBuddy 与豆包）：默认在 0.0.0.0:8788 启动受令牌与 6 位配对码保护的局域网网关，支持会话切换、文件浏览与媒体预览、工具审批、Web Push 推送，以及可选外连自建云端 Hub 或飞书机器人长连接。
+- [oscarka/pocketagents](https://github.com/oscarka/pocketagents) — PocketAgents（原 deepseekharness-remotecontrol）：DeepSeek Harness 的开源自托管手机端 Web PWA 与飞书远程总控台（同时支持本机 Antigravity IDE、Codex、Claude Code、WorkBuddy 与豆包），支持滑卡批阅审批、多选弹窗交互回复、微信式按住说话插话、回复语音播报、HLS/WebRTC 文件视频流预览、多主机置顶同步、锁屏 Web Push 推送与 5 秒终端二维码免密配对。
 - [oxmumu3/dot-dsh-connector#dot-dsh-management](https://github.com/oxmumu3/dot-dsh-connector/tree/main/management-plugin) — 通过原生 Harness 工作台和本机网关，让 Dot 读取已保存项目与会话、派发原生任务、查看进度、继续或取消任务，并管理连接授权。
 - [pan17/dsh-wechat](https://github.com/pan17/dsh-wechat) — 将微信私聊消息桥接到 DSH，支持文本、图片、文件、音视频的双向传输，用 slash 命令管理会话、工作区、模型、权限等等，目标是在微信端还原 DSH 的原生体验。
 - [paranoidPhantom/dsh-telegram-remote](https://github.com/paranoidPhantom/dsh-telegram-remote) — DSH 的所有者专属 Telegram 远程控制：每个会话对应一个私聊话题，可按需打开，也可用 Telegram 原生「新建话题」创建；回复以动画草稿流式呈现，带 Stop 按钮与输入状态，工具日志紧凑折叠，审批与模型选择都在聊天内完成。已完成消息与中断后的部分回复保留，文件以原生图片、视频、音频或文档发送。
