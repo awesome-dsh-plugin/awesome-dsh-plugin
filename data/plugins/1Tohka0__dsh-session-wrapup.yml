@@ -1,0 +1,6 @@
+url: https://github.com/1Tohka0/dsh-session-wrapup
+name: 1Tohka0/dsh-session-wrapup
+category: session
+description:
+  en: 'Lists the files a conversation produced, groups them into five kinds, moves the ticked ones into a 3-day trash, and retires the session log on the next launch.'
+  zh: '对话收尾：把一次对话产生的文件分成五类列出，勾选删除的文件先进回收站保留 3 天，下次启动时清掉这个会话的日志。'
