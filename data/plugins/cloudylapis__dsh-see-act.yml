@@ -1,0 +1,7 @@
+url: https://github.com/cloudylapis/dsh-see-act
+name: cloudylapis/dsh-see-act
+category: tools
+description:
+  en: 'Looks, acts and looks again in one tool call: real mouse and keyboard input with an annotated before and after frame, aimed with 0..1 screen coordinates across monitors, and it hides the dsh-see-now floating window when a click would land on it.'
+  zh: '一次工具调用里看、做、再看：真的鼠标键盘动作前后各返回一张带网格、准星和 3× 放大插图的帧，用 0..1 比例坐标跨多屏瞄准；落点压到 dsh-see-now 浮窗时先把它藏起来，点完再放回。'
+icon: https://raw.githubusercontent.com/cloudylapis/dsh-see-act/main/assets/icon-180.png
