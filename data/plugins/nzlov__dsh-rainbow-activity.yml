@@ -1,5 +1,5 @@
 url: https://github.com/nzlov/dsh-rainbow-activity
-name: dsh-rainbow-activity
+name: nzlov/dsh-rainbow-activity
 category: ui
 description:
   en: Adds ordered colour strips and step counts to native DSH Web activity summaries without changing messages or folding.
