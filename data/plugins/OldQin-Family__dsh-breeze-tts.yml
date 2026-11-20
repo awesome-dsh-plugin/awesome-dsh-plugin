@@ -1,0 +1,7 @@
+url: https://github.com/OldQin-Family/dsh-breeze-tts
+name: OldQin-Family/dsh-breeze-tts
+category: voice
+description:
+  en: "Local text-to-speech for DSH: AI auto-read plus a voice workshop for designing, cloning, and managing voices. Speech data stays on the local machine."
+  zh: "DSH 本地语音合成插件：AI 自动朗读，以及用于设计、克隆和管理音色的声音工坊；语音数据不出本机。"
+icon: https://raw.githubusercontent.com/OldQin-Family/dsh-breeze-tts/main/icon.png
