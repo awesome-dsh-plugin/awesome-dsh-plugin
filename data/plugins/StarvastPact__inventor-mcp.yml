@@ -1,7 +1,7 @@
 url: https://github.com/StarvastPact/inventor-mcp
 name: StarvastPact/inventor-mcp
 category: tools
-icon: https://raw.githubusercontent.com/StarvastPact/inventor-mcp/main/icon.svg
+icon: https://raw.githubusercontent.com/StarvastPact/inventor-mcp/main/icon.png
 description:
-  en: 'Connects DeepSeek Harness to a local Autodesk Inventor 2025 through an MCP server with 66 tools: parametric part modeling, fully constrained sketches driven by user parameters, circular and rectangular patterns, drawings with section and detail views, and STEP/IGES/DXF export. Windows only; needs an Inventor 2025 desktop install that has run at least once, Python 3.12+ and pywin32, and loads inventor-mcp-server from PyPI. The modeling engine is the upstream cenitu/inventor-mcp-server package; this bundle is the DSH wiring: cordis.patch.yml registers a dsh-mcp-client stdio server, install.ps1 detects the local Python interpreter and replaces command with its absolute path, and the server stderr is mirrored into runtime/logs so a failed connection can be diagnosed.'
-  zh: '把本机 Autodesk Inventor 2025 接进 DeepSeek Harness：注册一个带 66 个工具的 MCP 服务器，覆盖参数化零件建模、由用户参数驱动的全约束草图、圆形与矩形阵列、带剖视与局部放大的工程图，以及 STEP/IGES/DXF 导出。仅 Windows；需已至少启动过一次的 Inventor 2025 桌面版、Python 3.12+ 与 pywin32，运行时从 PyPI 加载 inventor-mcp-server。建模引擎是上游 cenitu/inventor-mcp-server 包，本插件只负责接线：cordis.patch.yml 注册 dsh-mcp-client 的 stdio 服务器，install.ps1 探测本机 Python 解释器并把 command 换成它的绝对路径，服务器 stderr 同时镜像到 runtime/logs，连接失败时便于排查。'
+  en: 'Autodesk Inventor 2025 as an MCP server for DeepSeek Harness: parametric parts, fully constrained sketches driven by user parameters, circular and rectangular patterns, drawings with section and detail views, and STEP/IGES/DXF export.'
+  zh: '把本机 Autodesk Inventor 2025 接进 DeepSeek Harness：参数化零件、由用户参数驱动的全约束草图、圆形与矩形阵列、带剖视与局部放大的工程图，以及 STEP/IGES/DXF 导出。'
