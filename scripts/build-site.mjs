@@ -445,6 +445,11 @@ const shotsMap = fs.existsSync(SCREENSHOTS_FILE) ? JSON.parse(fs.readFileSync(SC
   if (dropped) console.log(`screenshots: dropped ${dropped} image(s) confirmed 404/410 by probe-screenshots.mjs`)
 }
 
+function releaseTarballCmd(tarball) {
+  // The DSH profile is itself a pnpm workspace root.
+  return tarball ? `dsh plugin --profile web add -w "${tarball}"` : null
+}
+
 // derive repo/subdir install specs and the detail-page slug once
 for (const e of ordered) {
   const repoPath = e.url.replace('https://github.com/', '')
@@ -458,7 +463,7 @@ for (const e of ordered) {
   // Some plugins ship only a built tarball and are not installable from
   // source at all, so `github:owner/repo` would hand users a broken command.
   e.tarball = tarballMap[e.url] ?? null
-  e.cmdTarball = e.tarball ? `dsh plugin --profile web add "${e.tarball}"` : null
+  e.cmdTarball = releaseTarballCmd(e.tarball)
   e.stars = starsMap[e.url]?.stars ?? null
   e.releaseMetadata = releaseMetadataFor(e, releasesMap[e.url])
   // Last-30-days npm downloads (probe-downloads.mjs), null for the ~60% of
@@ -1167,7 +1172,7 @@ const registry = {
         capabilityRedLines: capabilitiesMap[e.url].redLines,
         capabilityCheckedAt: capabilitiesMap[e.url].scannedAt,
       }),
-      install: e.npm ? `dsh plugin --profile web add ${e.npm}` : (e.cmdTarball ?? e.cmdGit),
+      install: cardCmd(e),
       added: e.added,
       // Optional, author-declared storefront tile; omitted when absent so the
       // payload stays lean and a consumer falls back to the owner avatar.
