@@ -2,5 +2,5 @@ url: https://github.com/JiangXingchen4210/Davinci_MCP_DSH_Demo
 name: JiangXingchen4210/Davinci_MCP_DSH_Demo
 category: tools
 description:
-  en: 'DaVinci Resolve color console (DEMO, 0.13.0): Vibe Color single entry, Panasonic V-Log detection, per-clip input color space audit, LUT input-domain validation, 3-layer grade, 10 styles, delivery approval; macOS only.'
-  zh: '达芬奇调色控制台（DEMO，0.13.0）：Vibe Color 单入口、Panasonic V-Log 识别、片段级输入色彩空间审计、LUT 输入域校验、三层节点调色、10 个风格、交付审批；仅支持 macOS。'
+  en: 'DaVinci Resolve color console (DEMO, 0.13.1): Vibe Color single entry, Panasonic V-Log detection, per-clip input color space audit, LUT input-domain validation, 3-layer grade, 10 styles, delivery approval; macOS only.'
+  zh: '达芬奇调色控制台（DEMO，0.13.1）：Vibe Color 单入口、Panasonic V-Log 识别、片段级输入色彩空间审计、LUT 输入域校验、三层节点调色、10 个风格、交付审批；仅支持 macOS。'
